@@ -1,0 +1,1071 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Judá y el Imperio medopersa de 539 a.e.c. a Nehemías y Malaquías",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-babilonia": {
+      "titulo": "Babilonia",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000530",
+      "nivel": 1
+    },
+    "it-ciro": {
+      "titulo": "Ciro",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001102",
+      "nivel": 1
+    },
+    "it-dario": {
+      "titulo": "Darío",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001124",
+      "nivel": 1
+    },
+    "it-asuero": {
+      "titulo": "Asuero",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000142",
+      "nivel": 1
+    },
+    "it-artajerjes": {
+      "titulo": "Artajerjes",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000389",
+      "nivel": 1
+    },
+    "it-persia": {
+      "titulo": "Persia, persas",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003447",
+      "nivel": 1
+    },
+    "it-medos": {
+      "titulo": "Medos, Media",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002956",
+      "nivel": 1
+    },
+    "it-daniel": {
+      "titulo": "Daniel",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001117",
+      "nivel": 1
+    },
+    "it-zorobabel": {
+      "titulo": "Zorobabel",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004716",
+      "nivel": 1
+    },
+    "it-sesbazar": {
+      "titulo": "Sesbazar",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004025",
+      "nivel": 1
+    },
+    "it-josue": {
+      "titulo": "Josué",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002523",
+      "nivel": 1
+    },
+    "it-ageo": {
+      "titulo": "Ageo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001812",
+      "nivel": 1
+    },
+    "it-zacarias": {
+      "titulo": "Zacarías",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004681",
+      "nivel": 1
+    },
+    "it-ester": {
+      "titulo": "Ester",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001430",
+      "nivel": 1
+    },
+    "it-ester-libro": {
+      "titulo": "Ester, Libro de",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001431",
+      "nivel": 1
+    },
+    "it-mardoqueo": {
+      "titulo": "Mardoqueo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003111",
+      "nivel": 1
+    },
+    "it-esdras": {
+      "titulo": "Esdras",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001475",
+      "nivel": 1
+    },
+    "it-nehemias": {
+      "titulo": "Nehemías",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003212",
+      "nivel": 1
+    },
+    "it-malaquias-libro": {
+      "titulo": "Malaquías, Libro de",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002861",
+      "nivel": 1
+    },
+    "wp-asedio-587": {
+      "titulo": "Siege of Jerusalem (587 BC)",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    }
+  },
+  "pregunta": "¿Quién había en Israel en la época de los medos y persas?",
+  "ventana": {
+    "desde": -538,
+    "hasta": -442,
+    "texto": "de la caída de Babilonia (539 a.e.c.) a Nehemías y Malaquías (después de 443 a.e.c.)"
+  },
+  "antecedente": {
+    "id": "destruccion-de-jerusalen",
+    "titulo": "Destrucción de Jerusalén y del templo",
+    "fecha": {
+      "desde": -606,
+      "hasta": -606,
+      "precision": "mes",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "607 a.e.c. (quinto mes, Ab)"
+    },
+    "fecha_secular": {
+      "desde": -586,
+      "hasta": -585,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "secular",
+      "texto": "587/586 a.e.c.",
+      "fuentes": [
+        "wp-asedio-587"
+      ]
+    },
+    "nota": "La cronología TNM es la principal; la secular se muestra como nota. Los 70 años de desolación van de 607 a 537 a.e.c.",
+    "fuentes": [
+      "si-3"
+    ],
+    "verificado": true
+  },
+  "periodos_reyes": [
+    {
+      "id": "nabonido-belsasar",
+      "nombre": "Nabonido y Belsasar (último rey caldeo y su corregente)",
+      "fecha": {
+        "desde": null,
+        "hasta": -538,
+        "precision": "día",
+        "aprox": false,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "hasta el 5 de octubre de 539 a.e.c. (calendario gregoriano)"
+      },
+      "nota": "Belsasar muere la noche de la caída de Babilonia; Daniel interpreta la escritura en la pared.",
+      "fuentes": [
+        "it-babilonia"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "dario-el-medo",
+      "nombre": "Darío el medo",
+      "fecha": {
+        "desde": -538,
+        "hasta": null,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "desde 539 a.e.c.; fin sin fecha"
+      },
+      "nota": "Sucede a Belsasar con unos 62 años. No aparece en inscripciones extrabíblicas; en su primer año Daniel recibe la profecía de las setenta semanas.",
+      "fuentes": [
+        "it-dario"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "ciro",
+      "nombre": "Ciro el Grande (sobre Babilonia)",
+      "fecha": {
+        "desde": -538,
+        "hasta": -529,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "539-530 a.e.c."
+      },
+      "nota": "Toma Babilonia en 539; su decreto (finales de 538 o principios de 537) permite el regreso de los judíos. Muere en 530.",
+      "fuentes": [
+        "it-ciro",
+        "it-persia"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "cambises",
+      "nombre": "Cambises II",
+      "fecha": {
+        "desde": -529,
+        "hasta": -521,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "530-522 a.e.c. (Perspicacia “Asuero” da 529-522)"
+      },
+      "nota": "Probablemente el “Asuero” de Esdras 4:6, ante quien se presenta la primera acusación contra los judíos.",
+      "fuentes": [
+        "it-persia",
+        "it-asuero"
+      ],
+      "verificado": true,
+      "nombre_en_la_biblia": "Asuero (Esd 4:6)"
+    },
+    {
+      "id": "bardiya-gaumata",
+      "nombre": "Bardiya o Gaumata",
+      "fecha": {
+        "desde": -521,
+        "hasta": -521,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "522 a.e.c. (siete meses)"
+      },
+      "nota": "Probablemente el “Artajerjes” de Esdras 4:7-24, que prohíbe la obra del templo.",
+      "fuentes": [
+        "it-artajerjes",
+        "it-persia"
+      ],
+      "verificado": true,
+      "nombre_en_la_biblia": "Artajerjes (Esd 4:7)"
+    },
+    {
+      "id": "dario-i",
+      "nombre": "Darío I (Histaspes, el Grande)",
+      "fecha": {
+        "desde": -521,
+        "hasta": -485,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "522-486 a.e.c."
+      },
+      "nota": "Levanta la prohibición en su segundo año (520); el templo se termina en su sexto año (515). Derrota en Maratón en 490.",
+      "fuentes": [
+        "it-persia",
+        "it-dario"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "jerjes-i",
+      "nombre": "Jerjes I",
+      "fecha": {
+        "desde": -495,
+        "hasta": -474,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "corregente desde 496; solo de 486 a 475 a.e.c."
+      },
+      "nota": "El Asuero del libro de Ester. Su primer año reinante contado desde la corregencia es 495.",
+      "fuentes": [
+        "it-asuero",
+        "it-persia"
+      ],
+      "verificado": true,
+      "nombre_en_la_biblia": "Asuero (libro de Ester)",
+      "fecha_secular": {
+        "desde": -485,
+        "hasta": -464,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "486-465 a.e.c.",
+        "fuentes": [
+          "it-persia"
+        ],
+        "nota": "Perspicacia expone la fecha habitual y por qué la descarta."
+      }
+    },
+    {
+      "id": "artajerjes-i",
+      "nombre": "Artajerjes I Longimano",
+      "fecha": {
+        "desde": -474,
+        "hasta": -423,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "ascenso en 475; primer año 474; año 51.º en 424 a.e.c."
+      },
+      "nota": "Autoriza el viaje de Esdras (año 7.º, 468) y el de Nehemías (año 20.º, 455).",
+      "fuentes": [
+        "it-artajerjes",
+        "it-persia"
+      ],
+      "verificado": true,
+      "nombre_en_la_biblia": "Artajerjes (Esd 7; Ne 2)",
+      "fecha_secular": {
+        "desde": -464,
+        "hasta": -423,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "ascenso en 465 a.e.c.",
+        "fuentes": [
+          "it-persia"
+        ],
+        "nota": "Diferencia de diez años; afecta al cálculo de Daniel 9:25."
+      }
+    },
+    {
+      "id": "dario-ii",
+      "nombre": "Darío II (Ocos, Notos)",
+      "fecha": {
+        "desde": -422,
+        "hasta": -404,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "423-405 a.e.c."
+      },
+      "nota": "Probablemente el “Darío el persa” de Nehemías 12:22.",
+      "fuentes": [
+        "it-dario",
+        "it-persia"
+      ],
+      "verificado": true,
+      "nombre_en_la_biblia": "Darío el persa (Ne 12:22)"
+    }
+  ],
+  "personas": [
+    {
+      "id": "daniel",
+      "nombre": "Daniel",
+      "lugar": {
+        "nombre": "Babilonia",
+        "tipo": "ciudad",
+        "lat": 32.54333,
+        "lon": 44.42222,
+        "coord_fuente": "openbible:a217d18",
+        "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+      },
+      "activo": {
+        "desde": -616,
+        "hasta": -535,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "llevado a Babilonia en 617; al menos hasta el tercer año de Ciro (536 a.e.c.)"
+      },
+      "nota": "Vive para ver el regreso de 537, pero no se dice que volviera.",
+      "fuentes": [
+        "it-daniel",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "zorobabel",
+      "nombre": "Zorobabel",
+      "alias": [
+        {
+          "nombre": "Sesbazar",
+          "estado": "identidad probable según Perspicacia",
+          "fuentes": [
+            "it-sesbazar"
+          ]
+        }
+      ],
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -536,
+        "hasta": -514,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "guía el regreso en 537; termina el templo en 515 a.e.c."
+      },
+      "fuentes": [
+        "it-zorobabel",
+        "si-3"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "josue-sumo-sacerdote",
+      "nombre": "Josué, hijo de Jehozadaq (Jesúa en Esdras y Nehemías)",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -536,
+        "hasta": -514,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "narrativa",
+        "cronologia": "tnm",
+        "texto": "primer sumo sacerdote tras el regreso (537 a.e.c.); activo en tiempos de Ageo y Zacarías"
+      },
+      "desambiguacion": "No es Josué hijo de Nun (siglo XV a.e.c.).",
+      "fuentes": [
+        "it-josue",
+        "it-zorobabel"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "ageo",
+      "nombre": "Ageo",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -519,
+        "hasta": -519,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "cuatro mensajes en unos cuatro meses del segundo año de Darío (520 a.e.c.)"
+      },
+      "fuentes": [
+        "it-ageo",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "zacarias",
+      "nombre": "Zacarías (el profeta)",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -519,
+        "hasta": -517,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "520-518 a.e.c."
+      },
+      "desambiguacion": "Perspicacia recoge más de veinte Zacarías distintos.",
+      "fuentes": [
+        "it-zacarias",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "ester",
+      "nombre": "Ester (Hadassá)",
+      "lugar": {
+        "nombre": "Susa",
+        "tipo": "ciudad",
+        "lat": 32.18922,
+        "lon": 48.25778,
+        "coord_fuente": "openbible:a033b84",
+        "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+      },
+      "activo": {
+        "desde": -492,
+        "hasta": -474,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "el libro abarca de 493 a c. 475 a.e.c."
+      },
+      "fuentes": [
+        "it-ester",
+        "it-ester-libro",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "mardoqueo",
+      "nombre": "Mardoqueo",
+      "lugar": {
+        "nombre": "Susa",
+        "tipo": "ciudad",
+        "lat": 32.18922,
+        "lon": 48.25778,
+        "coord_fuente": "openbible:a033b84",
+        "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+      },
+      "activo": {
+        "desde": -492,
+        "hasta": -474,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "en la puerta del rey; luego primer ministro; completa el libro c. 475 a.e.c."
+      },
+      "desambiguacion": "Hay otro Mardoqueo que regresó con Zorobabel en 537 (Esd 2:2).",
+      "fuentes": [
+        "it-mardoqueo",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "esdras",
+      "nombre": "Esdras",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -467,
+        "hasta": -454,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "llega en 468; completa sus libros c. 460; enseña la Ley junto a Nehemías después de terminar los muros (455 a.e.c.)"
+      },
+      "fuentes": [
+        "it-esdras",
+        "si-3",
+        "it-nehemias"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "nehemias",
+      "nombre": "Nehemías, hijo de Hacalías",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -455,
+        "hasta": -442,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "en Susa en kislev de 456; muros en 455; vuelve a la corte en 443 a.e.c."
+      },
+      "desambiguacion": "Hay al menos otros dos Nehemías en la Biblia.",
+      "fuentes": [
+        "it-nehemias",
+        "it-artajerjes",
+        "tnm-tabla"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "malaquias",
+      "nombre": "Malaquías",
+      "lugar": {
+        "nombre": "Jerusalén",
+        "tipo": "ciudad",
+        "lat": 31.77667,
+        "lon": 35.23417,
+        "coord_fuente": "openbible:a15257a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+      },
+      "activo": {
+        "desde": -442,
+        "hasta": null,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "escribe después de 443 a.e.c."
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "it-malaquias-libro"
+      ],
+      "verificado": true
+    }
+  ],
+  "hechos": [
+    {
+      "id": "caida-de-babilonia",
+      "nivel": 1,
+      "titulo": "Cae Babilonia",
+      "resumen": "Ciro toma la ciudad; Medopersia pasa a ser la potencia mundial.",
+      "fecha": {
+        "desde": -538,
+        "hasta": -538,
+        "precision": "día",
+        "aprox": false,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "5 de octubre de 539 a.e.c. (gregoriano)"
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "it-babilonia",
+        "si-3"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "decreto-de-ciro",
+      "nivel": 1,
+      "titulo": "Decreto de Ciro y regreso",
+      "resumen": "Los judíos regresan y están en sus ciudades para el séptimo mes (tisri) de 537; terminan los 70 años de desolación.",
+      "fecha": {
+        "desde": -536,
+        "hasta": -536,
+        "precision": "mes",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "tisri de 537 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        },
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "it-ciro",
+        "si-3"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "fundamento-del-templo",
+      "nivel": 1,
+      "titulo": "Se pone el fundamento del templo",
+      "resumen": "Bajo Zorobabel y Josué.",
+      "fecha": {
+        "desde": -535,
+        "hasta": -535,
+        "precision": "mes",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "536 a.e.c. (segundo mes)"
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-zorobabel"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "obra-prohibida",
+      "nivel": 1,
+      "titulo": "Se prohíbe la obra del templo",
+      "resumen": "",
+      "fecha": {
+        "desde": -521,
+        "hasta": -521,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "522 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "ageo-y-zacarias",
+      "nivel": 1,
+      "titulo": "Ageo y Zacarías animan a reanudar la obra",
+      "resumen": "",
+      "fecha": {
+        "desde": -519,
+        "hasta": -517,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "520-518 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-ageo"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "templo-terminado",
+      "nivel": 1,
+      "titulo": "Zorobabel termina el segundo templo",
+      "resumen": "",
+      "fecha": {
+        "desde": -514,
+        "hasta": -514,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "515 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-persia"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "ester-reina",
+      "nivel": 1,
+      "titulo": "Ester es elegida reina",
+      "resumen": "En el séptimo año de Asuero.",
+      "fecha": {
+        "desde": -488,
+        "hasta": -488,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "489 a.e.c. (cálculo nuestro: año 7.º contando 495 como año 1.º)"
+      },
+      "lugares": [
+        {
+          "nombre": "Susa",
+          "tipo": "ciudad",
+          "lat": 32.18922,
+          "lon": 48.25778,
+          "coord_fuente": "openbible:a033b84",
+          "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+        }
+      ],
+      "fuentes": [
+        "it-ester",
+        "it-asuero"
+      ],
+      "verificado": false,
+      "nota": "Derivado: la fuente da “año séptimo” y “primer año reinante 495”; ninguna publicación da 489 literalmente."
+    },
+    {
+      "id": "decreto-de-haman",
+      "nivel": 1,
+      "titulo": "Decreto de Hamán contra los judíos",
+      "resumen": "En el año duodécimo de Asuero.",
+      "fecha": {
+        "desde": -483,
+        "hasta": -483,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "484 a.e.c. (cálculo nuestro)"
+      },
+      "lugares": [
+        {
+          "nombre": "Susa",
+          "tipo": "ciudad",
+          "lat": 32.18922,
+          "lon": 48.25778,
+          "coord_fuente": "openbible:a033b84",
+          "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+        }
+      ],
+      "fuentes": [
+        "it-ester",
+        "it-asuero"
+      ],
+      "verificado": false,
+      "nota": "Derivado del mismo modo que el anterior."
+    },
+    {
+      "id": "regreso-de-esdras",
+      "nivel": 1,
+      "titulo": "Esdras y sacerdotes regresan a Jerusalén",
+      "resumen": "Año séptimo de Artajerjes.",
+      "fecha": {
+        "desde": -467,
+        "hasta": -467,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "468 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        },
+        {
+          "nombre": "Ahavá",
+          "tipo": "río",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a6c3859",
+          "coord_url": "https://www.openbible.info/geo/ancient/a6c3859/ahava",
+          "coord_nota": "OpenBible registra 5 identificaciones; se usa la de mayor puntuación (708/1000)."
+        },
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-artajerjes"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "muros-de-nehemias",
+      "nivel": 1,
+      "titulo": "Nehemías reedifica los muros",
+      "resumen": "Año vigésimo de Artajerjes; empiezan las setenta semanas de Daniel 9:24.",
+      "fecha": {
+        "desde": -454,
+        "hasta": -454,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "455 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Susa",
+          "tipo": "ciudad",
+          "lat": 32.18922,
+          "lon": 48.25778,
+          "coord_fuente": "openbible:a033b84",
+          "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+        },
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-artajerjes"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "nehemias-vuelve-a-la-corte",
+      "nivel": 1,
+      "titulo": "Nehemías vuelve a la corte",
+      "resumen": "Año 32.º de Artajerjes; completa su libro después.",
+      "fecha": {
+        "desde": -442,
+        "hasta": -442,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "443 a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        },
+        {
+          "nombre": "Susa",
+          "tipo": "ciudad",
+          "lat": 32.18922,
+          "lon": 48.25778,
+          "coord_fuente": "openbible:a033b84",
+          "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+        }
+      ],
+      "fuentes": [
+        "si-3",
+        "it-artajerjes"
+      ],
+      "verificado": true
+    }
+  ],
+  "capitales_persas": [
+    {
+      "nombre": "Susa",
+      "tipo": "ciudad",
+      "lat": 32.18922,
+      "lon": 48.25778,
+      "coord_fuente": "openbible:a033b84",
+      "coord_url": "https://www.openbible.info/geo/ancient/a033b84/susa"
+    },
+    {
+      "nombre": "Ecbatana",
+      "tipo": "ciudad",
+      "lat": 34.8065,
+      "lon": 48.51625,
+      "coord_fuente": "openbible:a212ef7",
+      "coord_url": "https://www.openbible.info/geo/ancient/a212ef7/ecbatana",
+      "nota": "Capital meda tomada por Ciro en 550 a.e.c.",
+      "fuentes": [
+        "it-persia"
+      ]
+    },
+    {
+      "nombre": "Babilonia",
+      "tipo": "ciudad",
+      "lat": 32.54333,
+      "lon": 44.42222,
+      "coord_fuente": "openbible:a217d18",
+      "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+    }
+  ]
+}

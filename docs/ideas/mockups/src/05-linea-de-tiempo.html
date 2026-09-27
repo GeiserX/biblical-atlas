@@ -1,0 +1,331 @@
+<!doctype html>
+<!--
+  05 · Línea de tiempo rediseñada: una sola línea con niveles (era → episodio → evento), densidad, minimapa, carriles y tres zooms.
+  Fuentes (comprobadas en wol.jw.org):
+  - Hitos TNM: Adán 4026, Diluvio 2370, Abrahán cruza el Éufrates 1943, éxodo 1513, entrada en Canaán 1473, Saúl 1117, división del reino 997,
+    caída de Samaria 740, destrucción de Jerusalén 607, caída de Babilonia 539, regreso 537, muros 455 a.e.c.; Jesús nace en 2 a.e.c.,
+    bautismo 29, muerte y Pentecostés 33, Jerusalén destruida 70, Apocalipsis c. 96, Evangelio y cartas de Juan c. 98 e.c.
+    Estudio 3 de "Toda Escritura" · https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+  - Nota secular 587/586 a.e.c.: https://wol.jw.org/es/wol/d/r4/lp-s/2011736
+  - Babilonia: nueva dinastía caldea c. 645; somete a Asiria en 632; cae el 5 de octubre de 539 a.e.c. (gregoriano); Alejandro la toma en 331 a.e.c.
+    Perspicacia «Babilonia» · https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+  - Época medopersa (reyes, personas y hechos, incluida la nota secular de Jerjes y Artajerjes, Nehemías en Susa en kislev de 456): data/israel-medos-y-persas.json.
+    Años de Ester (489) y del decreto de Hamán (484) son cálculo nuestro: se marcan "sin verificar".
+  - Semana final: 8 de nisán llega a Betania (Jn 11:55-12:1); 9 de nisán entra en Jerusalén (Mt 21:1-11) · B12-A https://wol.jw.org/es/wol/d/r4/lp-s/1001070232
+    14 de nisán muerte; 16 de nisán resucitado; 25 de iyar sube al cielo (Hch 1:9-12) · A7-H https://wol.jw.org/es/wol/d/r4/lp-s/1001070214
+    6 de siván Pentecostés: data/ y notas de estudio de Hechos 2 · https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2
+  - Densidad: se cuenta en el navegador a partir de las fechas "desde" de data/*.json (hechos con fecha de los datos de muestra).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>05 · Línea de tiempo</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  body { background: var(--paper); }
+  .page { height: 100vh; display: flex; flex-direction: column; }
+  .stage { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 12px 16px 12px; position: relative; }
+  .state { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-1); overflow: hidden; }
+  .state__head { display: flex; align-items: center; gap: 10px; padding: 7px 14px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+  .state__n { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font: 700 12px/1 var(--font-sans); flex: none; }
+  .state__t { font-weight: 700; font-size: var(--fs-md); white-space: nowrap; }
+  .state__s { font-size: var(--fs-xs); color: var(--ink-3); }
+  .state .be-timeline { border-top: 0; }
+  #tA { height: 190px; } #tC { height: 160px; }
+  .rowB { display: grid; grid-template-columns: 1fr 292px; }
+  #tB { height: 250px; }
+  .be-timeline__labels .be-lane-label { font-size: var(--fs-xs); }
+  /* densidad */
+  .hist { position: absolute; left: 0; right: 0; bottom: 2px; height: 26px; pointer-events: none; }
+  .hist rect { fill: rgba(47, 111, 115, .55); }
+  .be-lane.dense { background: linear-gradient(transparent, rgba(47,111,115,.05)); }
+  /* agrupación de etiquetas (T-03) */
+  .cluster { position: absolute; top: 5px; transform: translateX(-50%); height: 20px; padding: 0 8px; border-radius: 999px; background: var(--ink); color: #fff; font: 700 10px/20px var(--font-sans); white-space: nowrap; z-index: 3; box-shadow: 0 0 0 2px #fff; }
+  .cluster small { font-weight: 700; color: #f0d9a6; margin-left: 4px; }
+  /* etiqueta suelta a la izquierda de un tramo estrecho */
+  .outlabel { position: absolute; top: 6px; transform: translateX(calc(-100% - 6px)); font: 600 10.5px/18px var(--font-sans); color: var(--ink-2); white-space: nowrap; }
+  /* ventana del zoom medio sobre el estado 1 */
+  .window { position: absolute; top: 26px; bottom: 0; border: 2px solid var(--gold); background: rgba(184,137,47,.12); border-radius: 4px; z-index: 5; }
+  .lens { position: absolute; pointer-events: none; z-index: 1; }
+  .lens path { fill: rgba(184,137,47,.08); stroke: rgba(184,137,47,.55); stroke-width: 1.2; stroke-dasharray: 4 3; }
+  /* marcas numeradas que remiten a la leyenda de abajo */
+  .mk { position: absolute; z-index: 8; width: 18px; height: 18px; border-radius: 50%; background: var(--gold); color: #fff; font: 800 10px/18px var(--font-sans); text-align: center; box-shadow: 0 0 0 2px #fff, var(--shadow-1); }
+  /* tarjeta lateral del estado 2 */
+  .now { border-left: 1px solid var(--line); background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; }
+  .now__h { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+  .now__date { font: 600 22px/1.1 var(--font-serif); }
+  .now__row { display: grid; grid-template-columns: 70px 1fr; gap: 8px; font-size: var(--fs-sm); line-height: 1.35; }
+  .now__row > span:first-child { color: var(--ink-3); font-size: var(--fs-xs); font-weight: 600; padding-top: 1px; }
+  .jump { display: flex; gap: 6px; margin-top: 2px; }
+  .jump .be-btn { font-size: 11px; padding: 0 8px; gap: 4px; border: 1px solid var(--line); }
+  .now__foot { margin-top: auto; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .sec-mark { position: absolute; top: 5px; height: 20px; transform: translateX(-50%); z-index: 3; }
+  .unv { position: absolute; top: 6px; font: 700 10px/1 var(--font-sans); color: var(--unverified); background: var(--unverified-soft); border: 1px dashed #d9a3b5; border-radius: 999px; padding: 3px 7px; white-space: nowrap; transform: translateX(-50%); z-index: 3; }
+  .be-point-label { font-size: 10.5px; }
+  .ctx { font-size: var(--fs-xs); color: var(--ink-2); display: flex; gap: 6px; align-items: center; white-space: nowrap; }
+  .be-cursor__flag { z-index: 6; }
+  /* leyenda */
+  .legend { flex: 1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 11px 16px; box-shadow: var(--shadow-1); align-content: start; }
+  .legend__title { grid-column: 1 / -1; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+  .li { display: grid; grid-template-columns: 20px 1fr; gap: 8px; font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.38; }
+  .li b { color: var(--ink); }
+  .li .mk { position: static; box-shadow: none; }
+  .li code { font: 600 10px/1 var(--font-sans); color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>455 a.e.c.</b> · ¿quién había en Israel con los medos y persas?</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">455 a.e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <div class="stage" id="stage">
+    <section class="state" id="sA">
+      <div class="state__head"><span class="state__n">1</span><span class="state__t">Milenios · toda la historia</span><span class="state__s">Los nombres van dentro de la propia línea: no hay una banda de episodios aparte.</span></div>
+      <div id="tA"></div>
+    </section>
+    <section class="state" id="sB">
+      <div class="state__head"><span class="state__n">2</span><span class="state__t">Décadas · época medopersa</span><span class="state__s">Un clic en la era «Regreso bajo Persia» la abre en reyes, personas y hechos, en los mismos carriles.</span></div>
+      <div class="rowB">
+        <div id="tB"></div>
+        <aside class="now" id="now">
+          <div class="now__h"><i class="be-i be-i--sm" data-icon="clock"></i>Ahora mismo · respuesta directa</div>
+          <div class="now__date">455 a.e.c.</div>
+          <div class="now__row"><span>Jerusalén</span><div><b>Nehemías</b> reconstruye los muros; <b>Esdras</b> enseña la Ley</div></div>
+          <div class="now__row"><span>Corte</span><div>Año 20 de <b>Artajerjes I</b></div></div>
+          <div class="now__row"><span>Profeta</span><div>Malaquías, después de 443</div></div>
+          <div class="jump"><span class="be-btn be-btn--sm be-btn--ghost" id="prev"><i class="be-i be-i--sm" data-icon="step-back"></i>468 · Esdras</span><span class="be-btn be-btn--sm be-btn--ghost">443 · a la corte<i class="be-i be-i--sm" data-icon="step-forward"></i></span></div>
+          <div class="now__foot"><a class="be-ref">Ne 2:1</a><a class="be-ref">Ne 6:15</a><span class="be-spacer"></span><a class="be-wol" style="font-size:var(--fs-xs)">Perspicacia</a></div>
+        </aside>
+      </div>
+    </section>
+    <section class="state" id="sC">
+      <div class="state__head"><span class="state__n">3</span><span class="state__t">Días · primavera del 33 e.c.</span><span class="state__s">Cuando el texto da fechas de día, la escala pasa a los meses hebreos.</span></div>
+      <div id="tC"></div>
+    </section>
+    <div class="legend">
+      <div class="legend__title">Cómo se lee · qué mejora respecto a una banda de episodios encima del deslizador</div>
+      <div class="li"><span class="mk">1</span><div><b>Una sola línea con niveles.</b> Las eras son la propia línea. Las estrechas (desierto, exilio, Jesús) se abren al acercarse. <code>T-02</code></div></div>
+      <div class="li"><span class="mk">2</span><div><b>Etiquetas que no se pisan.</b> Lo que no cabe se agrupa en una píldora; «+2» se abre con un clic. <code>T-03</code></div></div>
+      <div class="li"><span class="mk">3</span><div><b>Densidad.</b> Barras con cuántos hechos fechados hay. Un hueco es «sin datos todavía», no «no pasó nada». <code>T-05</code></div></div>
+      <div class="li"><span class="mk">4</span><div><b>Minimapa y lupa.</b> El marco dorado es lo que enseña el zoom siguiente; se arrastra para moverse. <code>T-04</code></div></div>
+      <div class="li"><span class="mk">5</span><div><b>Lo incierto, a la vista.</b> Rayado para años que calculamos nosotros, bordes difuminados para fechas «c.». <code>T-16 · C-03</code></div></div>
+      <div class="li"><span class="mk">6</span><div><b>Nota secular.</b> Cuando otra cronología difiere, sale su año en gris azulado, sin mover el cursor. <code>C-02</code></div></div>
+      <div class="li"><span class="mk">7</span><div><b>Respuesta directa.</b> El panel resume quién está dónde en la fecha del cursor, con sus citas. <code>T-09 · T-23</code></div></div>
+      <div class="li"><span class="mk">8</span><div><b>Meses hebreos.</b> Con fechas de día, el eje usa nisán, iyar y siván, como el texto. <code>T-19</code></div></div>
+      <div class="li"><span class="mk">9</span><div><b>Velocidad según el zoom.</b> 20 años, 1 año o 1 día por segundo: la reproducción nunca salta ni se arrastra. <code>T-10</code></div></div>
+      <div class="li"><span class="mk">10</span><div><b>De evento en evento.</b> Las flechas saltan al hecho anterior o siguiente, no al año siguiente. <code>T-13</code></div></div>
+      <div class="li"><span class="mk">11</span><div><b>Tramo sin fecha de día.</b> Los 40 días de apariciones se ven como tramo hueco: sabemos el principio y el fin, no cada día. <code>T-17</code></div></div>
+      <div class="li"><span class="mk">12</span><div><b>Nombre fuera del tramo.</b> Si un imperio o una vida es muy corta a esta escala, el nombre sale al lado y no se corta. <code>T-03</code></div></div>
+    </div>
+    <svg class="lens" id="lens"></svg>
+  </div>
+</div>
+
+<script>
+// Etiquetas del eje en años redondos a.e.c. (el año cero no existe para el lector: «500 a.e.c.» es el año astronómico −499)
+function roundTicks(el, from, to) {
+  const span = to - from;
+  el.querySelectorAll('.be-tick:not(.be-tick--minor), .be-gridline').forEach((t) => {
+    const yy = Math.round(from + parseFloat(t.style.left) / 100 * span);
+    if (yy > 0) return;
+    t.style.left = `${((yy + 1 - from) / span * 100).toFixed(3)}%`;
+    const lab = t.querySelector('span'); if (lab) lab.textContent = yy === 0 ? '1 e.c.' : `${-yy} a.e.c.`;
+  });
+}
+const pctOf = (y, from, to) => (y - from) / (to - from) * 100;
+function histo(lane, ys, from, to, step) {
+  lane.classList.add('dense');
+  const bins = {}; ys.filter((y) => y >= from && y < to).forEach((y) => { const b = Math.floor(y / step) * step; bins[b] = (bins[b] || 0) + 1; });
+  const mx = Math.max(...Object.values(bins)); const w = lane.clientWidth, H = 24;
+  let s = `<svg class="hist" width="${w}" height="${H}" viewBox="0 0 ${w} ${H}">`;
+  for (const [b, n] of Object.entries(bins)) {
+    const x0 = pctOf(+b, from, to) / 100 * w, x1 = pctOf(+b + step, from, to) / 100 * w, h = Math.max(2, n / mx * (H - 2));
+    s += `<rect x="${x0.toFixed(1)}" y="${(H - h).toFixed(1)}" width="${Math.max(2, x1 - x0 - 1.2).toFixed(1)}" height="${h.toFixed(1)}" rx="1"/>`;
+  }
+  lane.insertAdjacentHTML('beforeend', s + '</svg>');
+}
+function mark(n, el, dx, dy) {
+  const st = document.getElementById('stage').getBoundingClientRect(), r = el.getBoundingClientRect();
+  const m = document.createElement('span'); m.className = 'mk'; m.textContent = n;
+  m.style.left = `${r.left - st.left + dx}px`; m.style.top = `${r.top - st.top + dy}px`;
+  document.getElementById('stage').appendChild(m);
+}
+
+BE.ready(async () => {
+  // ---------- Datos para la densidad: fechas «desde» de data/*.json ----------
+  const files = ['babilonia-en-tiempos-de-jesus', 'cartas-de-pablo', 'israel-medos-y-persas', 'lugares-inciertos', 'pedro', 'viajes-de-pablo'];
+  const years = [];
+  const walk = (o) => { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === 'object') { if (o.fecha && typeof o.fecha.desde === 'number') years.push(o.fecha.desde); Object.values(o).forEach(walk); } };
+  for (const f of files) walk(await (await fetch(`../data/${f}.json`)).json());
+
+  // ---------- Estado 1: milenios ----------
+  const A = { from: -4150, to: 160 };
+  BE.timeline(document.getElementById('tA'), {
+    ...A, tick: 500, minor: 100, cursor: -454, cursorLabel: '455 a.e.c.',
+    bar: `<div class="be-play"><span class="be-play__main"><i data-icon="play"></i></span></div>
+      <span class="be-speed">20 años por segundo</span>
+      <span class="be-zoomscale"><span class="on">Milenios</span><span>Siglos</span><span>Décadas</span><span>Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="ctx"><i class="be-i be-i--sm" data-icon="info"></i>Pulsa una era o arrastra sobre la línea para acercarte</span>
+      <span class="be-spacer"></span><span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Eras', icon: 'hourglass', color: 'var(--node-periodo)', items: [
+        { from: -4025, to: -2369, label: 'De Adán al Diluvio', color: '#8c7aa8' },
+        { from: -2369, to: -1942, label: 'Diluvio → Abrahán', color: '#7c6b98' },
+        { from: -1942, to: -1512, label: 'Patriarcas y Egipto', color: '#8c7aa8' },
+        { from: -1512, to: -1472, label: '', color: '#6a5a8c' },
+        { from: -1472, to: -1116, label: 'Jueces', color: '#7c6b98' },
+        { from: -1116, to: -996, label: 'Reino', color: '#8c7aa8' },
+        { from: -996, to: -606, label: 'Reino dividido', color: '#7c6b98' },
+        { from: -606, to: -536, label: '', color: '#5d4e7c' },
+        { from: -536, to: -442, label: '', color: '#8c7aa8', active: true },
+        { from: -442, to: -1, label: 'Entre Malaquías y Mateo', soft: true, color: '#8c7aa8' },
+        { from: -1, to: 33, label: '', color: '#6a5a8c' },
+        { from: 33, to: 98, label: '', color: '#7c6b98' } ] },
+      { label: 'Imperio (Dn 2)', icon: 'crown', color: 'var(--emp-babilonia)', items: [
+        { from: -631, to: -538, label: '', color: 'var(--emp-babilonia)' },
+        { from: -538, to: -330, label: 'Medopersia', color: 'var(--emp-persia)' },
+        { from: -330, to: -110, label: 'Grecia', fuzzy: 'end', color: 'var(--emp-grecia)' },
+        { from: -150, to: 160, label: 'Roma', fuzzy: 'start', color: 'var(--emp-roma)' } ] },
+      { label: 'Hitos', icon: 'event', color: 'var(--node-evento)', items: [
+        { at: -4025, label: 'Adán' }, { at: -2369, label: 'Diluvio' }, { at: -1942, label: 'Abrahán' }, { at: -1116, label: 'Saúl', labelLeft: true } ] },
+      { label: 'Densidad', icon: 'layers', color: 'var(--node-lugar)', items: [] },
+    ],
+  });
+  const tA = document.getElementById('tA');
+  roundTicks(tA, A.from, A.to);
+  const lanesA = tA.querySelectorAll('.be-lane');
+  // Babilonia: tramo demasiado estrecho a esta escala; la etiqueta sale fuera, a su izquierda
+  lanesA[1].insertAdjacentHTML('beforeend', `<div class="outlabel" style="left:${pctOf(-631, A.from, A.to)}%">Babilonia · desde 632</div>`);
+  // Hitos agrupados donde no caben (T-03)
+  const addCluster = (lane, y, html, rng) => { const c = document.createElement('div'); c.className = 'cluster'; c.style.left = `${pctOf(y, rng.from, rng.to)}%`; c.innerHTML = html; lane.appendChild(c); return c; };
+  const cEx = addCluster(lanesA[2], -1492, 'Éxodo 1513 · Canaán 1473', A);
+  addCluster(lanesA[2], -868, 'Reinos 997 · 740', A);
+  const c607 = addCluster(lanesA[2], -555, '607 · 539<small>+2</small>', A);
+  addCluster(lanesA[2], -5, '2 a.e.c. – 70 e.c.<small>+4</small>', A);
+  // Densidad (hechos con fecha en los datos de muestra), cubetas de 50 años
+  histo(lanesA[3], years, A.from, A.to, 50);
+  lanesA[3].insertAdjacentHTML('beforeend', `<div class="be-point-label" style="left:${pctOf(-4000, A.from, A.to)}%;top:7px;color:var(--ink-3);margin-left:0">${years.length} hechos con fecha en los datos de muestra · barras de 50 años · vacío = todavía sin datos</div>`);
+  // Ventana del zoom medio (575-425 a.e.c.)
+  const B = { from: -574, to: -424 };
+  const trackA = tA.querySelector('.be-timeline__track');
+  const win = document.createElement('div'); win.className = 'window';
+  win.style.left = `${pctOf(B.from, A.from, A.to)}%`; win.style.width = `${pctOf(B.to, A.from, A.to) - pctOf(B.from, A.from, A.to)}%`;
+  trackA.appendChild(win);
+
+  // ---------- Estado 2: décadas, época medopersa ----------
+  BE.timeline(document.getElementById('tB'), {
+    ...B, tick: 10, minor: 1, cursor: -454, cursorLabel: '455 a.e.c. · muros',
+    uncertain: [{ from: -488, to: -483 }],
+    bar: `<div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 año por segundo</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span class="on">Décadas</span><span>Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="be-spacer"></span>
+      <div class="be-minimap" style="max-width:200px"><div class="be-minimap__win" style="left:41%;width:4%"></div></div>`,
+    lanes: [
+      { label: 'Rey', icon: 'crown', color: 'var(--emp-persia)', items: [
+        { from: -574, to: -538, label: 'Nabonido y Belsasar', color: 'var(--emp-babilonia)' },
+        { from: -538, to: -529, label: 'Ciro', color: 'var(--emp-persia)' },
+        { from: -529, to: -521, label: 'Cambises', color: '#8a6d9c' },
+        { from: -521, to: -485, label: 'Darío I', color: 'var(--emp-persia)' },
+        { from: -485, to: -474, label: 'Jerjes I', color: '#8a6d9c' },
+        { from: -474, to: -424, label: 'Artajerjes I', color: 'var(--emp-persia)', active: true } ] },
+      { label: 'Babilonia y Susa', icon: 'place', color: 'var(--node-lugar)', items: [
+        { from: -574, to: -535, label: 'Daniel en Babilonia · desde 617', fuzzy: 'end', color: '#6f9a9d' },
+        { from: -492, to: -474, label: 'Ester y Mardoqueo', color: 'var(--node-lugar)' },
+        { at: -455.2, label: 'Nehemías · Ne 1:1', labelLeft: true, color: 'var(--node-lugar)' } ] },
+      { label: 'Jerusalén', icon: 'temple', color: 'var(--node-persona)', items: [
+        { from: -536, to: -514, label: 'Zorobabel y Josué', color: 'var(--node-persona)' },
+        { at: -514, label: 'Templo terminado · 515', color: 'var(--node-evento)' },
+        { from: -467, to: -454, label: 'Esdras · 468', color: '#b8705a' },
+        { from: -454, to: -442, label: 'Nehemías', color: 'var(--node-persona)', active: true } ] },
+      { label: 'Profetas', icon: 'scroll', color: 'var(--node-texto)', items: [
+        { at: -519.5, label: 'Ageo · 520', labelLeft: true, color: 'var(--node-texto)' },
+        { at: -517, label: 'Zacarías · 520-518', color: 'var(--node-texto)' },
+        { from: -442, to: -424, label: 'Malaquías · tras 443', fuzzy: 'end', soft: true, color: 'var(--node-texto)' } ] },
+      { label: 'Hechos', icon: 'event', color: 'var(--node-evento)', items: [
+        { at: -521, label: 'Obra prohibida · 522' },
+ { at: -454, label: '' }, { at: -442, label: 'Vuelve a la corte · 443' } ] },
+      { label: 'Densidad', icon: 'layers', color: 'var(--node-lugar)', items: [] },
+    ],
+  });
+  const tB = document.getElementById('tB');
+  roundTicks(tB, B.from, B.to);
+  const lanesB = tB.querySelectorAll('.be-lane');
+  const cB = addCluster(lanesB[4], -541, '539 · 537 · 536<small>+0</small>', B); cB.innerHTML = 'Cae Babilonia · regreso<small>+1</small>';
+  const unv = document.createElement('div'); unv.className = 'unv'; unv.style.left = `${pctOf(-485.5, B.from, B.to)}%`; unv.textContent = '? 489-484 · cálculo nuestro'; lanesB[4].appendChild(unv);
+  // Nota secular de Artajerjes: marca en 465
+  const sm = document.createElement('div'); sm.className = 'sec-mark';
+  sm.style.left = `${pctOf(-464, B.from, B.to)}%`; sm.innerHTML = '<span class="be-chrono be-chrono--secular" style="height:20px;font-size:10px">secular: 465</span>';
+  lanesB[0].appendChild(sm);
+  histo(lanesB[5], years, B.from, B.to, 5);
+  // Artajerjes I: etiqueta a la derecha para dejar sitio a la nota secular
+  const art = lanesB[0].querySelectorAll('.be-span')[5]; art.style.textAlign = 'right'; art.textContent = 'Artajerjes I · desde 475';
+  // Tramos estrechos: menos relleno para que quepa el nombre
+  [...lanesA[0].querySelectorAll('.be-span'), ...lanesA[1].querySelectorAll('.be-span'), ...lanesB[0].querySelectorAll('.be-span')].forEach((e) => { if (!e.classList.contains('be-span--fuzzy-start')) { e.style.paddingLeft = '6px'; e.style.paddingRight = '4px'; } });
+  [...lanesA[1].querySelectorAll('.be-span'), ...lanesB[0].querySelectorAll('.be-span')].forEach((e) => { e.style.fontSize = '10px'; e.style.paddingLeft = '4px'; e.style.paddingRight = '2px'; });
+  lanesB[0].querySelectorAll('.be-span')[5].style.paddingRight = '8px';
+
+  // ---------- Estado 3: días, año 33 ----------
+  // Índice 0 = 1 de nisán; nisán 30 días, iyar 29, siván 30. Los sucesos van a mitad de su día (+0.5).
+  const mday = (d) => d < 30 ? `${d + 1} nisán` : d < 59 ? `${d - 29} iyar` : `${d - 58} siván`;
+  BE.timeline(document.getElementById('tC'), {
+    from: 0, to: 70, tick: 7, minor: 1, cursor: 13.5, cursorLabel: '14 de nisán de 33 e.c.', fmt: mday,
+    bar: `<div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 día por segundo</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span>Décadas</span><span>Años</span><span>Meses</span><span class="on">Semanas</span></span>
+      <span class="ctx">Meses del texto; la equivalencia con nuestro calendario es aproximada</span>
+      <span class="be-spacer"></span><div class="be-minimap" style="max-width:200px"><div class="be-minimap__win" style="left:95.6%;width:1.2%"></div></div>`,
+    lanes: [
+      { label: 'Mes hebreo', icon: 'calendar', color: 'var(--ink-3)', items: [
+        { from: 0, to: 30, label: 'Nisán', color: '#9d8f7c' }, { from: 30, to: 59, label: 'Iyar', color: '#b3a693' }, { from: 59, to: 70, label: 'Siván', color: '#9d8f7c' } ] },
+      { label: 'Jesús', icon: 'person', color: 'var(--node-persona)', items: [
+        { at: 7.5, label: 'Llega a Betania · Jn 12:1', labelLeft: true, color: 'var(--node-persona)' },
+        { at: 8.5, label: 'Entra en Jerusalén', color: 'var(--node-persona)' },
+        { at: 54.5, label: 'Sube al cielo · 25 de iyar · Hch 1:9-12', color: 'var(--node-persona)' } ] },
+      { label: 'Hechos', icon: 'event', color: 'var(--node-evento)', items: [
+        { at: 13.5, label: 'Muerte · 14 de nisán', labelLeft: true }, { at: 15.5, label: 'Resucitado · 16 de nisán' },
+        { at: 64.5, label: 'Pentecostés · 6 de siván', labelLeft: true } ] },
+    ],
+  });
+  const tC = document.getElementById('tC');
+  // Los 40 días: tramo suave entre la resurrección y la subida
+  tC.querySelectorAll('.be-lane')[1].insertAdjacentHTML('beforeend', `<div class="be-span be-span--soft" style="left:${pctOf(15.5, 0, 70)}%;width:${pctOf(54.5, 0, 70) - pctOf(15.5, 0, 70)}%;color:var(--node-persona);opacity:.8;left:calc(${pctOf(15.5, 0, 70)}% + 0px)"></div>`);
+  const soft = tC.querySelectorAll('.be-lane')[1].lastElementChild;
+  soft.style.left = `calc(${pctOf(15.5, 0, 70)}% + 9px)`; soft.style.width = `calc(${pctOf(54.5, 0, 70) - pctOf(15.5, 0, 70)}% - 18px)`; soft.textContent = '40 días de apariciones · Hch 1:3'; soft.style.textAlign = 'center';
+
+  // ---------- Lupa entre el estado 1 y el 2 ----------
+  const stage = document.getElementById('stage').getBoundingClientRect();
+  const wr = win.getBoundingClientRect(), bB = tB.querySelector('.be-timeline__track').getBoundingClientRect(), sA = document.getElementById('sA').getBoundingClientRect(), sB = document.getElementById('sB').getBoundingClientRect();
+  const lens = document.getElementById('lens');
+  Object.assign(lens.style, { left: 0, top: 0, width: '100%', height: '100%' });
+  const y0 = sA.bottom - stage.top, y1 = sB.top - stage.top;
+  lens.innerHTML = `<path d="M${wr.left - stage.left},${y0} L${wr.right - stage.left},${y0} L${bB.right - stage.left},${y1} L${bB.left - stage.left},${y1} Z"/>`;
+
+  // ---------- Marcas numeradas ----------
+  const erasN = lanesA[0].querySelectorAll('.be-span');
+  mark(1, erasN[7], 8, -12);
+  mark(2, cEx, -12, -9);
+  mark(3, lanesA[3], 4, 4);
+  mark(4, win, -9, -9);
+  mark(5, unv, -12, -9);
+  mark(6, sm, -12, -9);
+  mark(7, document.getElementById('now'), document.getElementById('now').offsetWidth - 28, 8);
+  mark(9, tB.querySelector('.be-speed'), -8, -9);
+  mark(10, tC.querySelectorAll('.be-play__btn')[1], 14, -9);
+  mark(11, soft, -9, -9);
+  mark(12, lanesA[1].querySelector('.outlabel'), -24, 1);
+  mark(8, tC.querySelectorAll('.be-lane')[0].querySelector('.be-span'), -9, -9);
+});
+</script>
+</body>
+</html>

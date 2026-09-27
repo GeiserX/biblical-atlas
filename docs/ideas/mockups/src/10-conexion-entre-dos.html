@@ -1,0 +1,386 @@
+<!doctype html>
+<!--
+  10 · ¿Cómo se relaciona X con Y? Camino entre dos nodos, explicado paso a paso.
+  Ejemplo principal: Loida → Eunice → Timoteo → Pablo. Ejemplo secundario: Pedro ↔ Babilonia.
+  Fuentes de los datos (comprobadas en wol.jw.org el 27-09-2026):
+  - Perspicacia "Loida": abuela de Timoteo, probablemente por parte de madre; la familia al parecer vivía en Listra;
+    2Ti 1:5 y 3:15: https://wol.jw.org/es/wol/d/r4/lp-s/1200002768
+  - Nota de estudio de 2Ti 1:5: Loida y Eunice probablemente se hicieron cristianas en la primera visita de Pablo a Listra,
+    hacia 47-48; el padre de Timoteo, griego, al parecer no compartía su fe: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/1
+  - Perspicacia "Timoteo": madre judía (Eunice), padre griego, abuela Loida, Listra: https://wol.jw.org/es/wol/d/r4/lp-s/1200004416
+  - Hch 16:1-3 y su nota: Pablo en Derbe y Listra a finales del 49 o principios del 50; los hermanos de Listra e Iconio
+    hablaban bien de Timoteo: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  - Hch 14:6-20: primera visita a Listra, curación del cojo, apedrean a Pablo (v. 19), salen hacia Derbe (v. 20):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14 ; primer viaje c. 47-48: Perspicacia "Pablo" 1200003406
+  - 2 Timoteo, desde Roma c. 65: Tabla de los libros https://wol.jw.org/es/wol/d/r4/lp-s/1001070071
+  - Perspicacia "Pedro, Cartas de": 1 Pedro desde Babilonia (la ciudad del Éufrates, no Roma), c. 62-64, Silvano y Marcos;
+    comunidad judía numerosa en Babilonia: https://wol.jw.org/es/wol/d/r4/lp-s/1200003452
+  - Gál 2:7-9: a Pedro se le confían las buenas noticias para los circuncisos: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/2
+  - Hch 2:9, 14: habitantes de Mesopotamia en Pentecostés; Pedro se pone de pie con los Once:
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2 ; 6 de siván de 33: data/pedro.json (estudio 3)
+  - Babilonia está en Mesopotamia, junto al Éufrates: Perspicacia "Babilonia" 1200000530
+  - La identificación de la Babilonia de 1Pe 5:13 con Roma (OpenBible, 917/1000) sale de data/pedro.json; sólo se cita
+    como lectura que no seguimos.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>10 · Conexión entre dos</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .c-app { width: 100vw; height: 100vh; overflow: hidden; display: grid; background: var(--paper);
+    grid-template-columns: 1fr 470px; grid-template-rows: var(--topbar-h) 62px 1fr 238px;
+    grid-template-areas: "top top" "q q" "path side" "other other"; }
+  .c-app > .be-topbar { grid-area: top; }
+
+  /* Pregunta: dos casillas */
+  .c-q { grid-area: q; display: flex; align-items: center; gap: 12px; padding: 0 22px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .c-q__t { font: 600 21px/1 var(--font-serif); color: var(--ink); }
+  .c-slot { display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 5px; border-radius: 999px; background: var(--surface-2); border: 1.5px solid var(--line-2); font: 600 19px/1 var(--font-serif); color: var(--ink); }
+  .c-slot .be-node { width: 28px; height: 28px; font-size: 13px; }
+  .c-slot .be-i { width: 14px; height: 14px; color: var(--ink-3); }
+  .c-swap { width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); }
+  .c-swap .be-i { width: 16px; height: 16px; }
+  .c-found { font-size: 12.5px; color: var(--ink-3); font-weight: 500; }
+  .c-found b { color: var(--ink); }
+
+  /* Zona del camino */
+  .c-path { grid-area: path; position: relative; display: flex; flex-direction: column; min-height: 0; padding: 14px 22px 0; }
+  .c-tabs { display: flex; gap: 8px; }
+  .c-tab { display: flex; flex-direction: column; gap: 2px; padding: 8px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); min-width: 0; }
+  .c-tab__t { font-size: 13px; font-weight: 700; color: var(--ink-2); display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+  .c-tab__m { font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+  .c-tab--on { background: var(--surface); border-color: var(--gold); box-shadow: 0 0 0 2px rgba(184,137,47,.18), var(--shadow-1); }
+  .c-tab--on .c-tab__t { color: var(--ink); }
+  .c-tab--weak { border-style: dashed; }
+  .c-badge { font-size: 10px; font-weight: 700; letter-spacing: .04em; padding: 1px 7px; border-radius: 999px; background: var(--paper-2); color: var(--ink-3); text-transform: uppercase; }
+  .c-badge--gold { background: var(--gold-soft); color: #6d4f15; }
+  .c-badge--tier { background: var(--tier1-soft); color: var(--tier1); }
+  .c-badge--zone { background: #ece5f2; color: var(--zone); }
+
+  .c-chain { position: relative; height: 196px; flex: none; margin-top: 6px; }
+  .c-chain > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .c-edge { fill: none; stroke-width: 3.5; stroke-linecap: round; }
+  .c-edge--text { stroke: var(--accent); }
+  .c-edge--ded { stroke: var(--accent); stroke-dasharray: 9 7; opacity: .75; }
+  .c-edge--short { stroke: #cdbfa8; stroke-width: 2; stroke-dasharray: 3 6; }
+  .c-n { position: absolute; width: 0; height: 0; }
+  .c-dot { position: absolute; transform: translate(-50%, -50%); width: 70px; height: 70px; border-radius: 50%; background: var(--node-persona); color: #fff; display: flex; align-items: center; justify-content: center; font: 600 30px/1 var(--font-serif); box-shadow: 0 0 0 4px #fffdf8, var(--shadow-2); }
+  .c-n--end .c-dot { box-shadow: 0 0 0 4px #fffdf8, 0 0 0 7px var(--gold), var(--shadow-3); }
+  .c-num { position: absolute; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 12.5px/26px var(--font-sans); text-align: center; box-shadow: 0 0 0 3px #fffdf8; z-index: 2; }
+  .c-name { position: absolute; top: 44px; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+  .c-name b { display: block; font: 600 21px/1.15 var(--font-serif); color: var(--ink); }
+  .c-name span { font-size: 11.5px; color: var(--ink-3); font-weight: 500; }
+  .c-el { position: absolute; transform: translate(-50%, -100%); display: flex; flex-direction: column; align-items: center; gap: 4px; white-space: nowrap; }
+  .c-el__verb { font-size: 12.5px; font-weight: 700; color: var(--ink); background: #fffdf8; border: 1px solid var(--line-2); border-radius: 999px; padding: 3px 10px; box-shadow: var(--shadow-1); display: flex; align-items: center; gap: 6px; }
+  .c-el__verb--ded { border-style: dashed; border-color: #c9a79c; color: var(--ink-2); }
+  .c-el__when { font-size: 10.5px; font-weight: 600; color: #6d4f15; background: var(--gold-soft); padding: 1px 8px; border-radius: 6px; }
+  .c-el__when--none { background: var(--paper-2); color: var(--ink-3); }
+  .c-short { position: absolute; transform: translate(-50%, -50%); font-size: 11px; font-weight: 600; color: var(--ink-3); background: var(--paper); padding: 1px 8px; border-radius: 999px; white-space: nowrap; display: flex; gap: 6px; align-items: center; }
+
+  .c-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 4px; }
+  .c-step { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow-1); display: flex; flex-direction: column; }
+  .c-step__pad { padding: 12px 14px 10px; }
+  .c-step__head { display: flex; align-items: center; gap: 8px; }
+  .c-step__n { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 11.5px/22px var(--font-sans); text-align: center; flex: none; }
+  .c-step__t { font: 600 17px/1.2 var(--font-serif); color: var(--ink); }
+  .c-step__body { font-size: 12.5px; line-height: 1.5; color: var(--ink-2); margin-top: 7px; }
+  .c-step__body b { color: var(--ink); }
+  .c-step__refs { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .c-step__foot { margin-top: auto; border-top: 1px solid var(--line); padding: 7px 14px; display: flex; align-items: center; gap: 8px; font-size: 11.5px; }
+  .c-step__foot .be-wol { font-size: 11.5px; }
+  .c-kind { font-size: 10.5px; font-weight: 700; padding: 1px 7px; border-radius: 6px; }
+  .c-kind--text { background: var(--accent-soft); color: var(--accent); }
+  .c-kind--ded { background: #f1e8e4; color: #8a5a4c; border: 1px dashed #c9a79c; }
+
+  /* Columna derecha: dónde y cuándo */
+  .c-side { grid-area: side; border-left: 1px solid var(--line); background: var(--surface-2); display: flex; flex-direction: column; min-height: 0; }
+  .c-map { height: 300px; flex: none; position: relative; border-bottom: 1px solid var(--line); }
+  .c-mapcap { position: absolute; top: 12px; left: 12px; z-index: 3; padding: 6px 10px; font-size: 11.5px; font-weight: 600; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
+  .c-tag { position: absolute; transform: translate(-50%, 0); background: var(--gold); color: #fff; font-size: 10.5px; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-1); }
+  .c-ring { position: absolute; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; border: 2.5px solid var(--gold); box-shadow: 0 0 0 6px rgba(184,137,47,.18); }
+  .c-when { padding: 12px 18px 0; }
+  .c-when h3 { margin: 0 0 8px; font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 7px; }
+  .c-w { display: grid; grid-template-columns: 112px 16px 1fr; gap: 0 8px; position: relative; padding-bottom: 9px; }
+  .c-w__d { font: 600 13.5px/1.25 var(--font-serif); color: var(--ink); text-align: right; }
+  .c-w__d small { display: block; font: 500 10.5px/1.3 var(--font-sans); color: var(--ink-3); }
+  .c-w__rail { position: relative; }
+  .c-w__rail::before { content: ""; position: absolute; left: 7px; top: 4px; bottom: -9px; border-left: 2px solid var(--line-2); }
+  .c-w:last-child .c-w__rail::before { display: none; }
+  .c-w__rail i.dot { position: absolute; left: 2px; top: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--surface-2); }
+  .c-w__rail i.dot--soft { background: #fffdf8; border: 2px dashed var(--accent); box-sizing: border-box; }
+  .c-w__t { font-size: 12.5px; line-height: 1.45; color: var(--ink-2); }
+  .c-w__t b { color: var(--ink); }
+  .c-w__t .be-ref { font-size: 10.5px; }
+
+  /* Banda inferior: otra conexión */
+  .c-other { grid-area: other; border-top: 1px solid var(--line); background: var(--surface); display: grid; grid-template-columns: 250px 1fr 1.08fr 360px; }
+  .c-o { padding: 14px 18px; border-left: 1px solid var(--line); position: relative; min-width: 0; }
+  .c-o:first-child { border-left: 0; background: var(--surface-2); }
+  .c-o h4 { margin: 0 0 4px; font-size: 10.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 7px; }
+  .c-o__big { font: 600 23px/1.2 var(--font-serif); color: var(--ink); display: flex; align-items: center; gap: 8px; margin: 6px 0 8px; }
+  .c-o__big .be-node { width: 30px; height: 30px; font-size: 14px; }
+  .c-o__big .arrow { color: var(--ink-3); font: 400 20px/1 var(--font-sans); }
+  .c-o__p { font-size: 12.5px; line-height: 1.5; color: var(--ink-2); }
+  .c-o__p b { color: var(--ink); }
+  .c-mini { position: relative; height: 102px; margin-top: 6px; }
+  .c-mini > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .c-mn { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .c-mn .be-node { width: 34px; height: 34px; font-size: 15px; box-shadow: 0 0 0 3px #fffdf8, var(--shadow-1); }
+  .c-mn .be-node .be-i, .c-mn .be-node svg { width: 17px !important; height: 17px !important; color: #fff; }
+  .c-mn b { font-size: 12px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .c-mn .c-sub { font-size: 10.5px; color: var(--ink-3); white-space: nowrap; margin-top: -4px; }
+  .c-ml { position: absolute; transform: translate(-50%, -50%); font-size: 10.5px; font-weight: 600; color: var(--ink-2); background: #fffdf8; border: 1px solid var(--line-2); border-radius: 999px; padding: 1px 8px; white-space: nowrap; display: flex; gap: 5px; align-items: center; }
+  .c-ml .be-ref { font-size: 10px; padding: 0 5px; }
+  .c-ml--geo { border-style: dashed; color: var(--ink-3); }
+  .c-sum { margin-top: 14px; display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 14px; background: var(--gold-soft); border: 1px solid #e6d3a8; }
+  .c-sum__t { font: 500 16.5px/1.4 var(--font-serif); color: #3d2f12; flex: 1; }
+  .c-sum__t b { font-weight: 700; }
+  .c-acts { display: flex; gap: 8px; margin-top: 12px; align-items: center; }
+  .c-acts .be-btn { font-size: 12.5px; }
+  .c-acts__hint { font-size: 11.5px; color: var(--ink-3); margin-left: 6px; }
+  .c-foot { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 11.5px; }
+  .c-foot .be-wol { font-size: 11.5px; }
+</style>
+</head>
+<body>
+<div class="c-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Loida y Pablo</b> · escribe «X y Y» o «X ↔ Y» para ver cómo se relacionan</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-seg"><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="map"></i>Mapa</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="graph"></i>Grafo</span><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="link-out"></i>Conexión</span></div>
+    <div class="be-date"><span class="be-date__value">c. 47 – 65 e.c.</span><span class="be-date__hint">lo que abarca el camino</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <!-- Pregunta -->
+  <section class="c-q">
+    <i class="be-i" data-icon="question" style="color:var(--ink-3)"></i>
+    <span class="c-q__t">¿Cómo se relaciona</span>
+    <span class="c-slot"><span class="be-node be-node--persona">L</span>Loida<i data-icon="chevron-down"></i></span>
+    <span class="c-q__t">con</span>
+    <span class="c-slot"><span class="be-node be-node--persona">P</span>Pablo<i data-icon="chevron-down"></i></span>
+    <span class="c-q__t">?</span>
+    <span class="c-swap"><i class="be-i" data-icon="swap"></i></span>
+    <div class="be-spacer"></div>
+    <span class="c-found"><b>3 caminos</b> · ordenados por solidez, no sólo por número de pasos</span>
+    <span class="be-chip be-chip--active"><i class="be-i be-i--sm" data-icon="filter"></i>Incluir deducciones</span>
+    <span class="be-chip"><i class="be-i be-i--sm" data-icon="place"></i>Incluir lugares compartidos</span>
+  </section>
+
+  <!-- Camino elegido -->
+  <main class="c-path">
+    <div class="c-tabs">
+      <div class="c-tab c-tab--on">
+        <span class="c-tab__t">Por la familia <span class="c-badge c-badge--gold">3 pasos</span></span>
+        <span class="c-tab__m">2 dichos por el texto · 1 deducido por Perspicacia</span>
+      </div>
+      <div class="c-tab">
+        <span class="c-tab__t">El más corto <span class="c-badge c-badge--tier">2 pasos</span></span>
+        <span class="c-tab__m">Loida → Timoteo → Pablo · todo en el texto</span>
+      </div>
+      <div class="c-tab c-tab--weak">
+        <span class="c-tab__t">Por un lugar <span class="c-badge c-badge--zone">2 pasos · débil</span></span>
+        <span class="c-tab__m">Loida → Listra ← Pablo · «al parecer»</span>
+      </div>
+    </div>
+
+    <div class="c-chain" id="chain">
+      <svg id="chainsvg"></svg>
+    </div>
+
+    <div class="c-steps">
+      <article class="c-step">
+        <div class="c-step__pad">
+          <div class="c-step__head"><span class="c-step__n">1</span><span class="c-step__t">Loida → Eunice</span><span class="be-spacer"></span><span class="c-kind c-kind--ded">deducido</span></div>
+          <div class="c-step__body">El texto llama a Loida <b>abuela</b> de Timoteo, pero no dice de qué lado. Perspicacia la considera <b>probablemente la madre de Eunice</b>. Por eso esta línea es discontinua.</div>
+          <div class="c-step__refs"><a class="be-ref">2Ti 1:5</a></div>
+        </div>
+        <div class="c-step__foot"><span class="be-tier be-tier--1" data-n="1">Perspicacia · «Loida»</span><span class="be-spacer"></span><a class="be-wol">Leer en wol.jw.org</a></div>
+      </article>
+      <article class="c-step">
+        <div class="c-step__pad">
+          <div class="c-step__head"><span class="c-step__n">2</span><span class="c-step__t">Eunice → Timoteo</span><span class="be-spacer"></span><span class="c-kind c-kind--text">lo dice el texto</span></div>
+          <div class="c-step__body"><b>Madre</b> de Timoteo: judía creyente casada con un griego. Con Loida, le enseñó las Escrituras <b>desde niño</b>.</div>
+          <div class="c-step__refs"><a class="be-ref">Hch 16:1</a><a class="be-ref">2Ti 1:5</a><a class="be-ref">2Ti 3:15</a></div>
+        </div>
+        <div class="c-step__foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><span class="be-spacer"></span><a class="be-wol">Leer en wol.jw.org</a></div>
+      </article>
+      <article class="c-step">
+        <div class="c-step__pad">
+          <div class="c-step__head"><span class="c-step__n">3</span><span class="c-step__t">Timoteo → Pablo</span><span class="be-spacer"></span><span class="c-kind c-kind--text">lo dice el texto</span></div>
+          <div class="c-step__body">En su segundo viaje, al volver a Listra, Pablo lo <b>elige como compañero de viaje</b>. Los hermanos de Listra e Iconio hablaban bien de él.</div>
+          <div class="c-step__refs"><a class="be-ref">Hch 16:1-3</a></div>
+        </div>
+        <div class="c-step__foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><span class="be-spacer"></span><a class="be-wol">Leer Hechos 16</a></div>
+      </article>
+    </div>
+
+    <div class="c-sum">
+      <i class="be-i be-i--lg" data-icon="people" style="color:var(--gold)"></i>
+      <div class="c-sum__t">En una frase: <b>tres generaciones de fe</b>. Loida y Eunice enseñan las Escrituras a Timoteo desde niño, y Pablo lo lleva consigo desde <b>fines del 49 o principios del 50</b>.</div>
+    </div>
+    <div class="c-acts">
+      <span class="be-btn be-btn--primary be-btn--sm"><i class="be-i be-i--sm" data-icon="play"></i>Recorrer el camino en la línea de tiempo</span>
+      <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="graph"></i>Abrir en el grafo</span>
+      <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="map"></i>Ver en el mapa</span>
+      <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="share"></i>Copiar enlace</span>
+      <span class="c-acts__hint">Pulsa un nodo o una arista para abrir su ficha</span>
+    </div>
+  </main>
+
+  <!-- Dónde y cuándo -->
+  <aside class="c-side">
+    <div class="c-map" id="map">
+      <div class="c-mapcap be-float"><i class="be-i be-i--sm" data-icon="place"></i>Dónde se cruzan los cuatro</div>
+    </div>
+    <div class="c-when">
+      <h3><i class="be-i be-i--sm" data-icon="clock"></i>Cuándo se cumple cada paso</h3>
+      <div class="c-w">
+        <div class="c-w__d">c. 47-48<small>1.er viaje</small></div>
+        <div class="c-w__rail"><i class="dot"></i></div>
+        <div class="c-w__t">Pablo y Bernabé predican en <b>Listra</b>; allí apedrean a Pablo. <a class="be-ref">Hch 14:6-20</a></div>
+      </div>
+      <div class="c-w">
+        <div class="c-w__d">c. 47-48<small>probable</small></div>
+        <div class="c-w__rail"><i class="dot dot--soft"></i></div>
+        <div class="c-w__t">Loida y Eunice <b>probablemente</b> se hacen cristianas en esa visita, según la nota de estudio. <a class="be-ref">2Ti 1:5</a></div>
+      </div>
+      <div class="c-w">
+        <div class="c-w__d">fines del 49<small>o principios del 50</small></div>
+        <div class="c-w__rail"><i class="dot"></i></div>
+        <div class="c-w__t"><b>Timoteo se une a Pablo</b> en su segundo viaje. <a class="be-ref">Hch 16:1-3</a></div>
+      </div>
+      <div class="c-w">
+        <div class="c-w__d">c. 65<small>desde Roma</small></div>
+        <div class="c-w__rail"><i class="dot"></i></div>
+        <div class="c-w__t">En <b>2 Timoteo</b>, Pablo recuerda la fe de Loida y de Eunice. <a class="be-ref">2Ti 1:5</a></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Otra conexión: Pedro ↔ Babilonia -->
+  <section class="c-other">
+    <div class="c-o">
+      <h4><i class="be-i be-i--sm" data-icon="link-out"></i>Otra pregunta</h4>
+      <div class="c-o__big"><span class="be-node be-node--persona">P</span>Pedro <span class="arrow">↔</span> Babilonia</div>
+      <div class="c-o__p">También sirve entre una <b>persona y un lugar</b>. Salen 2 caminos; el tercero es una lectura que no seguimos.</div>
+    </div>
+    <div class="c-o">
+      <h4><span class="c-badge c-badge--tier">2 pasos</span>Por su carta · lo dice el texto</h4>
+      <div class="c-mini" id="mini1"><svg></svg></div>
+      <div class="c-foot"><span class="be-tier be-tier--1" data-n="1">Tabla de los libros · Perspicacia</span><span class="be-spacer"></span><a class="be-wol">Leer 1 Pedro 5</a></div>
+    </div>
+    <div class="c-o">
+      <h4><span class="c-badge c-badge--gold">3 pasos</span>Por Pentecostés · 33 e.c.</h4>
+      <div class="c-mini" id="mini2"><svg></svg></div>
+      <div class="c-foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><span class="be-spacer"></span><a class="be-wol">Leer Hechos 2</a></div>
+    </div>
+    <div class="c-o">
+      <h4><i class="be-i be-i--sm" data-icon="info"></i>Lectura que no seguimos</h4>
+      <div class="be-note be-note--uncertain" style="font-size:12.5px;line-height:1.5;margin-top:6px"><div>Algunos datos abiertos leen esta «Babilonia» como <b>Roma</b>. Perspicacia la identifica con la <b>ciudad del Éufrates</b>: allí vivía una gran comunidad judía, y a Pedro se le confió predicar a los circuncisos.</div></div>
+      <div class="c-step__refs"><a class="be-ref">1Pe 5:13</a><a class="be-ref">Gál 2:7-9</a></div>
+      <div class="c-foot"><span class="be-tier be-tier--1" data-n="1">Perspicacia · «Pedro, Cartas de»</span><span class="be-spacer"></span><a class="be-wol">Leer</a></div>
+    </div>
+  </section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const icon = (n) => `<i class="be-i" data-icon="${n}"></i>`;
+
+  // ---------- Cadena principal ----------
+  const chain = document.getElementById('chain'), svg = document.getElementById('chainsvg');
+  const W = chain.clientWidth, Y = 100;
+  const xs = [0.09, 0.365, 0.635, 0.91].map((f) => f * W);
+  const people = [
+    { l: 'L', n: 'Loida', m: 'abuela de Timoteo' },
+    { l: 'E', n: 'Eunice', m: 'madre de Timoteo' },
+    { l: 'T', n: 'Timoteo', m: 'de Listra' },
+    { l: 'P', n: 'Pablo', m: 'apóstol' },
+  ];
+  let paths = '';
+  // Atajo del camino más corto (Loida → Timoteo), en gris por detrás
+  paths += `<path class="c-edge c-edge--short" d="M${xs[0]},${Y + 36} C${xs[0] + 60},${Y + 92} ${xs[2] - 60},${Y + 92} ${xs[2]},${Y + 36}"/>`;
+  paths += `<line class="c-edge c-edge--ded" x1="${xs[0] + 40}" y1="${Y}" x2="${xs[1] - 40}" y2="${Y}"/>`;
+  paths += `<line class="c-edge c-edge--text" x1="${xs[1] + 40}" y1="${Y}" x2="${xs[2] - 40}" y2="${Y}"/>`;
+  paths += `<line class="c-edge c-edge--text" x1="${xs[2] + 40}" y1="${Y}" x2="${xs[3] - 40}" y2="${Y}"/>`;
+  svg.innerHTML = paths;
+
+  let h = '';
+  people.forEach((p, i) => {
+    const end = i === 0 || i === 3;
+    h += `<div class="c-n${end ? ' c-n--end' : ''}" style="left:${xs[i]}px;top:${Y}px"><div class="c-dot">${p.l}</div>` +
+         `<div class="c-name"><b>${p.n}</b><span>${p.m}</span></div></div>`;
+  });
+  const edges = [
+    { verb: 'probablemente su madre', when: 'sin fecha', none: true, ded: true },
+    { verb: 'madre de', when: 'desde la infancia de Timoteo', none: false },
+    { verb: 'Pablo lo elige', when: 'fines del 49 o principios del 50', none: false },
+  ];
+  edges.forEach((e, i) => {
+    const mx = (xs[i] + xs[i + 1]) / 2;
+    h += `<div class="c-el" style="left:${mx}px;top:${Y - 16}px"><span class="c-el__verb${e.ded ? ' c-el__verb--ded' : ''}">${e.verb}</span>` +
+         `<span class="c-el__when${e.none ? ' c-el__when--none' : ''}">${e.when}</span></div>`;
+    h += `<div class="c-num" style="left:${mx}px;top:${Y}px">${i + 1}</div>`;
+  });
+  const sx = (xs[0] + xs[2]) / 2;
+  h += `<div class="c-short" style="left:${sx}px;top:${Y + 83}px">atajo: «abuela», el camino más corto <a class="be-ref">2Ti 1:5</a></div>`;
+  chain.insertAdjacentHTML('beforeend', h);
+
+  // ---------- Mapa: Listra y su entorno ----------
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [29.2, 35.9, 35.6, 39.4], fit: 'cover' });
+  map.label('Licaonia', 33.2, 38.25, { kind: 'region', size: 11 });
+  map.label('Pisidia', 30.9, 37.55, { kind: 'region', size: 11 });
+  map.label('Mar Mediterráneo', 32.2, 36.25, { kind: 'sea', size: 13 });
+  map.route(['atalia', 'antioquia-de-pisidia'], { kind: 'ghost', curve: 0.1 });
+  map.route(['antioquia-de-pisidia', 'iconio', 'listra', 'derbe'], { kind: 'ghost', curve: [0.08, 0.1, 0.1] });
+  map.route(['derbe', 'listra'], { kind: 'done', curve: 0.35 });
+  map.city('antioquia-de-pisidia', { variant: ['visited', 'minor'], side: 'top' });
+  map.city('iconio', { variant: ['visited', 'minor'], side: 'top' });
+  map.city('derbe', { variant: ['visited', 'minor'] });
+  map.city('atalia', { variant: ['visited', 'minor'], side: 'bottom' });
+  map.city('listra', { variant: 'current', label: '' });
+  const [lx, ly] = map.at('listra');
+  const ring = document.createElement('div'); ring.className = 'c-ring'; ring.style.left = lx + 'px'; ring.style.top = ly + 'px'; map.html.appendChild(ring);
+  const tag = document.createElement('div'); tag.className = 'c-tag'; tag.textContent = 'Listra · su hogar, «al parecer»'; tag.style.left = lx + 'px'; tag.style.top = (ly + 26) + 'px'; map.html.appendChild(tag);
+  const lg = document.createElement('div');
+  lg.className = 'be-mapctl be-mapctl--tr';
+  lg.innerHTML = `<div class="be-legend be-float" style="font-size:11px;padding:7px 10px">
+      <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px dashed #b9ad98"></span>1.er viaje · c. 47-48</div>
+      <div class="be-legend__row"><span class="be-legend__line"></span>2.º viaje · Timoteo se une</div></div>`;
+  map.el ? map.el.appendChild(lg) : document.getElementById('map').appendChild(lg);
+
+  // ---------- Mini caminos: Pedro ↔ Babilonia ----------
+  function mini(id, nodes, links) {
+    const el = document.getElementById(id), W2 = el.clientWidth, s = el.querySelector('svg');
+    const pos = nodes.map((n, i) => (nodes.length === 1 ? 0.5 : 0.1 + i * (0.8 / (nodes.length - 1))) * W2);
+    let p = '', o = '';
+    for (let i = 0; i < nodes.length - 1; i++) {
+      p += `<line class="c-edge ${links[i].geo ? 'c-edge--short' : 'c-edge--text'}" style="stroke-width:${links[i].geo ? 2 : 3}" x1="${pos[i] + 22}" y1="30" x2="${pos[i + 1] - 22}" y2="30"/>`;
+      o += `<div class="c-ml${links[i].geo ? ' c-ml--geo' : ''}" style="left:${(pos[i] + pos[i + 1]) / 2}px;top:${links[i].low ? 58 : 6}px">${links[i].t}</div>`;
+    }
+    s.innerHTML = p;
+    nodes.forEach((n, i) => {
+      o += `<div class="c-mn" style="left:${pos[i]}px;top:${n.span ? 55 : 48}px"><span class="be-node be-node--${n.k}">${n.l.length > 2 ? window.BE_icon(n.l) : n.l}</span><b>${n.n}</b>${n.span ? `<span class="c-sub">${n.span}</span>` : ''}</div>`;
+    });
+    el.insertAdjacentHTML('beforeend', o);
+    window.BE_hydrateIcons(el);
+  }
+  mini('mini1',
+    [{ k: 'persona', l: 'P', n: 'Pedro' }, { k: 'texto', l: 'letter', n: '1 Pedro', span: 'c. 62-64' }, { k: 'lugar', l: 'place', n: 'Babilonia', span: 'ciudad del Éufrates' }],
+    [{ t: 'escribe <a class="be-ref">1Pe 1:1</a>' }, { t: 'desde <a class="be-ref">1Pe 5:13</a>' }]);
+  mini('mini2',
+    [{ k: 'persona', l: 'P', n: 'Pedro' }, { k: 'evento', l: 'event', n: 'Pentecostés', span: '6 de siván de 33' }, { k: 'persona', l: 'people', n: 'De Mesopotamia', span: 'judíos que oyen' }, { k: 'lugar', l: 'place', n: 'Babilonia' }],
+    [{ t: 'habla <a class="be-ref">Hch 2:14</a>' }, { t: 'lo oyen <a class="be-ref">Hch 2:9</a>' }, { t: 'región de', geo: true }]);
+});
+</script>
+</body>
+</html>

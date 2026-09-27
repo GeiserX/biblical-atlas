@@ -1,0 +1,5 @@
+{
+  "mundo":   {"lon0": -10, "lon1": 72, "lat0": 12, "lat1": 50, "phi": 35, "width": 3000, "zoom": 6, "zfac": 9},
+  "mediterraneo": {"lon0": 10, "lon1": 44, "lat0": 28, "lat1": 44, "phi": 36, "width": 4000, "zoom": 8, "zfac": 3.2},
+  "israel":  {"lon0": 33.9, "lon1": 36.9, "lat0": 29.4, "lat1": 33.7, "phi": 31.5, "width": 2000, "zoom": 10, "zfac": 1.6}
+}

@@ -1,0 +1,281 @@
+<!doctype html>
+<!--
+  08 · Ficha de lugar en el tiempo: Babilonia, con el cursor en 30 e.c.
+  Fuentes de los datos (comprobadas en wol.jw.org el 27-09-2026):
+  - Perspicacia "Babilonia": https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+    Nemrod la funda a finales del III milenio a.e.c. (Gé 10:10; 11:9); Hammurabi la agranda (sin fecha);
+    Nabopolasar funda la dinastía caldea c. 645; Nabucodonosor II toma el gobierno en 625 (Carquemis, Jer 46:1, 2) y muere
+    en octubre de 582; Joaquín cautivo en 617 (2Re 24:12); Jerusalén destruida en 607; cae ante Ciro el 5 de octubre de 539
+    (gregoriano); decreto de Ciro y regreso; Alejandro la toma en 331 y muere allí en 323; Nicátor la conquista en 312 y se
+    lleva materiales para Seleucia; los partos la controlan desde mediados del siglo II a.e.c. (Mitrídates I); colonia judía
+    en tiempos cristianos; Pedro escribe desde allí (1Pe 5:13); templo de Bel en pie en 75 e.c.; en ruinas en el siglo IV.
+    Unos 870 km al este de Jerusalén, en la llanura de Sinar.
+  - 607 a.e.c. frente a 587/586 (secular): estudio 3 de "Toda Escritura", https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+  - Pentecostés de 33 (Hch 2:9): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2
+  - Astrólogos "de Oriente" (Mt 2:1): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  - Ministerio de Jesús c. octubre de 29 – 14 de nisán de 33; nacimiento en 2 a.e.c.: data/pedro.json y estudio 3.
+  - 1 Pedro desde Babilonia c. 62-64: Tabla de los libros, https://wol.jw.org/es/wol/d/r4/lp-s/1001070071
+  - Daniel en Babilonia al menos hasta el tercer año de Ciro (536): Perspicacia "Daniel", https://wol.jw.org/es/wol/d/r4/lp-s/1200001117
+  Nivel 2 (data/babilonia-en-tiempos-de-jesus.json): reyes partos Fraates V, Artabano II y Vologases I; Anilai y Asinai
+  (Josefo, Antigüedades XVIII, 9); capital parta en Ctesifonte; diarios astronómicos hasta 61 a.e.c.; última tablilla
+  cuneiforme conocida, almanaque de Uruk de 79/80 e.c. (Wikipedia, sólo hechos).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>08 · Babilonia en tiempos de Jesús</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --emp-partos: #8a6a45; }
+  .b-app { width: 100vw; height: 100vh; overflow: hidden; display: grid;
+    grid-template-rows: var(--topbar-h) 92px 132px 1fr 250px; background: var(--paper); }
+
+  /* Cabecera de la ficha */
+  .b-head { display: flex; align-items: center; gap: 18px; padding: 0 22px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .b-thumb { width: 150px; height: 70px; border-radius: 10px; overflow: hidden; flex: none; position: relative; }
+  .b-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .b-thumb span { position: absolute; left: 0; right: 0; bottom: 0; font-size: 8.5px; line-height: 1.25; color: #fff; padding: 10px 6px 3px; background: linear-gradient(transparent, rgba(20,14,6,.75)); }
+  .b-title { font: 600 34px/1.05 var(--font-serif); letter-spacing: -.01em; }
+  .b-sub { font-size: 13px; color: var(--ink-3); margin-top: 3px; }
+  .b-homs { display: flex; gap: 6px; align-items: center; margin-top: 6px; }
+  .b-homs .be-chip { height: 22px; font-size: 11px; }
+
+  /* Tira de toda la historia */
+  .b-strip { position: relative; background: var(--surface-2); border-bottom: 1px solid var(--line); padding: 0 22px; }
+  .b-strip__cap { position: absolute; left: 22px; top: 10px; }
+  .b-band { position: absolute; top: 58px; height: 24px; border-radius: 5px; color: #fff; font-size: 11px; font-weight: 700; line-height: 24px; padding: 0 8px; white-space: nowrap; overflow: hidden; letter-spacing: .02em; }
+  .b-fold { position: absolute; top: 52px; height: 36px; border: 1.5px dashed var(--line-2); border-radius: 8px; background: repeating-linear-gradient(135deg, rgba(168,156,139,.14) 0 5px, transparent 5px 10px); font-size: 10.5px; color: var(--ink-2); line-height: 1.25; padding: 3px 8px; font-weight: 600; }
+  .b-fold small { display: block; color: var(--ink-3); font-weight: 500; }
+  .b-mark { position: absolute; top: 47px; width: 2px; height: 11px; margin-left: -1px; background: var(--ink); border-radius: 1px; }
+  .b-mark::after { content: ""; position: absolute; left: -3px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: #fff; border: 2px solid var(--ink); }
+  .b-mark--down { top: 82px; }
+  .b-mark--down::after { top: -5px; }
+  .b-lab { position: absolute; font-size: 11px; line-height: 1.25; color: var(--ink-2); white-space: nowrap; font-weight: 500; }
+  .b-lab b { color: var(--ink); font-weight: 700; margin-right: 3px; }
+  .b-lab--up { top: 30px; transform: translateX(-8px); }
+  .b-lab--down { top: 94px; transform: translateX(-8px); }
+  .b-axis { position: absolute; top: 112px; font-size: 10px; color: var(--ink-3); font-weight: 600; transform: translateX(-50%); }
+  .b-cursor { position: absolute; top: 30px; bottom: 6px; width: 0; border-left: 2px solid var(--gold); z-index: 3; }
+  .b-cursor span { position: absolute; top: -2px; left: 0; transform: translateX(-50%); background: var(--gold); color: #fff; font-size: 10.5px; font-weight: 700; padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
+  .b-lens { position: absolute; top: 50px; height: 40px; border: 2px solid var(--gold); border-radius: 7px; background: rgba(184,137,47,.12); z-index: 2; }
+  .b-lens__tag { position: absolute; top: 94px; font-size: 10.5px; font-weight: 700; color: #6e4f15; white-space: nowrap; transform: translateX(-50%); }
+
+  /* Fila central */
+  .b-mid { display: grid; grid-template-columns: 1fr 510px 470px; gap: 14px; padding: 14px 22px; min-height: 0; }
+  .b-mapwrap { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-1); }
+  .b-mapwrap .be-map { position: absolute; inset: 0; }
+  .b-card { display: flex; flex-direction: column; min-height: 0; }
+  .b-card .be-card__pad { padding: 12px 16px 8px; }
+  .b-tierhead { display: flex; align-items: center; gap: 8px; margin: 10px 0 4px; }
+  .b-li { display: grid; grid-template-columns: 14px 1fr; gap: 0 8px; padding: 5px 0; font-size: 12.8px; line-height: 1.42; color: var(--ink-2); border-top: 1px solid var(--line); }
+  .b-li:first-of-type { border-top: 0; }
+  .b-li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; margin-top: 7px; background: var(--tier1); }
+  .b-li--2::before { background: var(--tier2); }
+  .b-li b { color: var(--ink); font-weight: 600; }
+  .b-li .be-ref, .b-li .be-chrono { font-size: 10.5px; height: 18px; vertical-align: 1px; }
+  .b-block { border-radius: 10px; padding: 4px 12px 6px; }
+  .b-block--1 { background: #f3f8f5; border: 1px solid #d9e8df; }
+  .b-block--2 { background: #fbf5e8; border: 1px solid #efe0bf; margin-top: 8px; }
+
+  .b-conn { padding: 12px 16px; display: flex; flex-direction: column; gap: 0; }
+  .b-grp { font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 8px 0 2px; display: flex; align-items: center; gap: 8px; }
+  .b-grp::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+  .b-row { display: flex; align-items: center; gap: 10px; padding: 5px 0; }
+  .b-row .be-node { width: 26px; height: 26px; font-size: 12px; }
+  .b-row .be-node .be-i { width: 13px; height: 13px; }
+  .b-row__t { font-size: 13px; font-weight: 600; line-height: 1.25; color: var(--ink); }
+  .b-row__m { font-size: 11px; color: var(--ink-3); line-height: 1.3; }
+  .b-row__end { margin-left: auto; display: flex; align-items: center; gap: 6px; flex: none; }
+  .b-rel { font-size: 10.5px; font-weight: 700; padding: 2px 7px; border-radius: 999px; background: var(--paper-2); color: var(--ink-3); white-space: nowrap; }
+  .b-rel--now { background: var(--gold-soft); color: #6e4f15; }
+  .b-row .be-ref { font-size: 10.5px; }
+</style>
+</head>
+<body>
+<div class="b-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Babilonia</b> · ¿qué pasaba en Babilonia en tiempos de Jesús?</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">30 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <!-- Cabecera de la ficha de lugar -->
+  <section class="b-head">
+    <span class="be-node be-node--lugar be-node--lg"><i data-icon="place"></i></span>
+    <div>
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="place"></i>Lugar a lo largo del tiempo</div>
+      <div class="b-title">Babilonia</div>
+      <div class="b-sub">Ciudad a orillas del Éufrates, en la llanura de Sinar, a unos 870 km al este de Jerusalén. Hoy, ruinas cerca de Hilla (Irak).</div>
+    </div>
+    <div class="be-spacer"></div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+      <div class="b-homs"><span class="be-muted" style="font-size:11px;font-weight:600">Mismo nombre:</span>
+        <span class="be-chip be-chip--active">La ciudad</span><span class="be-chip">La región (Babilonia, Sinar)</span><span class="be-chip">Babilonia la Grande · símbolo</span></div>
+      <div style="display:flex;gap:8px;align-items:center"><span class="be-tier be-tier--1" data-n="1">Perspicacia · «Babilonia»</span><a class="be-wol" href="https://wol.jw.org/es/wol/d/r4/lp-s/1200000530">Leer en wol.jw.org</a><span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="graph"></i>Ver en el grafo</span></div>
+    </div>
+    <figure class="b-thumb" style="margin:0"><img src="../kit/photos/puerta-istar.jpg" alt=""><span>Puerta de Istar, reconstruida en Berlín · Foto: Kurt Kaiser · CC0</span></figure>
+  </section>
+
+  <!-- Tira de toda la historia -->
+  <section class="b-strip" id="strip">
+    <div class="b-strip__cap be-caps be-muted">Toda la historia de la ciudad · escala plegada donde no hay hechos</div>
+  </section>
+
+  <!-- Mapa · qué pasaba aquí · conexiones -->
+  <section class="b-mid">
+    <div class="b-mapwrap">
+      <div class="be-map" id="map">
+        <div class="be-mapctl be-mapctl--bl">
+          <div class="be-float be-legend">
+            <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px dashed #8f8373"></span>Dentro de 3 años: Pentecostés (Hch 2:9)</div>
+            <div class="be-legend__row"><span style="width:26px;text-align:center;font-weight:700;color:var(--ink-3)">?</span>Seleucia del Tigris y Ctesifonte: sin coordenada<br>comprobada, no las dibujamos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <article class="be-card b-card">
+      <div class="be-card__pad">
+        <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="clock"></i>Qué pasaba aquí ahora</div>
+        <h2 class="be-card__title" style="font-size:22px">Babilonia en 30 e.c.</h2>
+        <div class="b-block b-block--1">
+          <div class="b-tierhead"><span class="be-tier be-tier--1" data-n="1">Biblia y Perspicacia</span></div>
+          <div class="b-li"><span><b>Gobiernan los partos</b>, desde mediados del siglo II a.e.c.</span></div>
+          <div class="b-li"><span><b>Una ciudad venida a menos.</b> En 312 a.e.c. Nicátor se llevó gran parte de sus materiales para construir Seleucia, junto al Tigris.</span></div>
+          <div class="b-li"><span><b>Vive aquí una colonia de judíos</b>, y hay más comunidades judías en el país.</span></div>
+          <div class="b-li"><span><b>El templo de Bel sigue en pie</b>: hay inscripciones de 75 e.c.</span></div>
+        </div>
+        <div class="b-block b-block--2">
+          <div class="b-tierhead"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted" style="font-size:11px">acompaña, nunca corrige</span></div>
+          <div class="b-li b-li--2"><span><b>Reina Artabano II</b>, rey de reyes parto, de 12 a 38/41 e.c.</span></div>
+          <div class="b-li b-li--2"><span><b>Anilai y Asinai</b>, dos hermanos judíos, dominan una zona de Babilonia con permiso del rey parto (c. 18-33, según Josefo).</span></div>
+          <div class="b-li b-li--2"><span><b>La capital parta está en Ctesifonte</b>, junto al Tigris.</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="be-card b-conn">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="graph"></i>Conectado con Babilonia · visto desde 30 e.c.</div>
+      <div class="b-grp">Antes</div>
+      <div class="b-row"><span class="be-node be-node--persona">D</span><div><div class="b-row__t">Daniel</div><div class="b-row__m">Aquí hasta al menos 536 a.e.c.</div></div><div class="b-row__end"><span class="b-rel">hace 565 años</span></div></div>
+      <div class="b-row"><span class="be-node be-node--evento"><i data-icon="crown"></i></span><div><div class="b-row__t">Cae ante Ciro</div><div class="b-row__m">5 de octubre de 539 a.e.c. · Da 5</div></div><div class="b-row__end"><span class="b-rel">hace 568 años</span></div></div>
+      <div class="b-grp">Mientras tanto</div>
+      <div class="b-row"><span class="be-node be-node--persona">J</span><div><div class="b-row__t">Jesús predica en Judea y Galilea</div><div class="b-row__m">Ministerio: c. octubre de 29 – nisán de 33</div></div><div class="b-row__end"><span class="b-rel b-rel--now">ahora</span></div></div>
+      <div class="b-grp">Después</div>
+      <div class="b-row"><span class="be-node be-node--evento"><i data-icon="people"></i></span><div><div class="b-row__t">Pentecostés en Jerusalén</div><div class="b-row__m">Oyen partos, medos, elamitas y gente de Mesopotamia</div></div><div class="b-row__end"><a class="be-ref">Hch 2:9</a><span class="b-rel">en 3 años</span></div></div>
+      <div class="b-row"><span class="be-node be-node--texto"><i data-icon="letter"></i></span><div><div class="b-row__t">Pedro escribe 1 Pedro desde aquí</div><div class="b-row__m">c. 62-64 e.c.</div></div><div class="b-row__end"><a class="be-ref">1Pe 5:13</a><span class="b-rel">en ~33 años</span></div></div>
+      <div class="b-grp">Lo que el texto no dice</div>
+      <div class="be-note be-note--uncertain" style="font-size:12px;padding:8px 10px"><i class="be-i be-i--sm" data-icon="info"></i><span>Los astrólogos «de Oriente» (Mt 2:1) no están unidos a Babilonia: el texto no dice de qué país venían.</span></div>
+    </article>
+  </section>
+
+  <!-- Lupa: la línea de tiempo alrededor del cursor -->
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  // ---------- Tira de toda la historia (escala plegada) ----------
+  const strip = document.getElementById('strip');
+  const W = strip.clientWidth;
+  const X0 = 262, X1 = 1370;               // tramo lineal: 650 a.e.c. → 100 e.c.
+  const Y0 = -649, Y1 = 100;
+  const x = (y) => X0 + (y - Y0) / (Y1 - Y0) * (X1 - X0);
+  const add = (cls, html, style) => { const d = document.createElement('div'); d.className = cls; d.innerHTML = html || ''; Object.assign(d.style, style); strip.appendChild(d); return d; };
+
+  add('b-fold', 'Nemrod la funda<small>finales del III milenio a.e.c. · Gé 10:10</small>', { left: '22px', width: '228px' });
+  add('b-fold', 'Siglo IV e.c.: en ruinas<small>Jer 51:37</small>', { left: (X1 + 10) + 'px', width: (W - X1 - 32) + 'px' });
+  const bands = [
+    [-644, -538, 'Imperio babilonio', 'var(--emp-babilonia)'],
+    [-538, -330, 'Medopersia', 'var(--emp-persia)'],
+    [-330, -150, 'Grecia y seléucidas', 'var(--emp-grecia)'],
+    [-150, 100, 'Partos', 'var(--emp-partos)'],
+  ];
+  for (const [a, b, t, c] of bands) add('b-band', t, { left: x(a) + 'px', width: (x(b) - x(a) - 2) + 'px', background: c });
+  const marks = [
+    [-624, 'up', '625', 'Nabucodonosor II'],
+    [-606, 'down', '607', 'Jerusalén destruida'],
+    [-538, 'up', '539', 'cae ante Ciro'],
+    [-330, 'up', '331', 'la toma Alejandro'],
+    [-311, 'down', '312', 'Nicátor · Seleucia'],
+    [-150, 'up', 's. II a.e.c.', 'la controlan los partos'],
+    [62, 'up', 'c. 62-64', 'Pedro escribe'],
+  ];
+  for (const [y, pos, yr, t] of marks) {
+    add('b-mark b-mark--' + pos, '', { left: x(y) + 'px' });
+    add('b-lab b-lab--' + pos, `<b>${yr}</b>${t}`, { left: x(y) + 'px' });
+  }
+  // Nota secular de 607
+  add('b-lab b-lab--down', '<span class="be-chrono be-chrono--secular" style="height:17px;font-size:10px;padding:0 6px">secular: 587/586</span>', { left: (x(-606) + 128) + 'px', top: '92px' });
+  // Eje
+  for (const y of [-599, -499, -399, -299, -199, -99, 1]) add('b-axis', BE.fmtYear(y).replace(' a.e.c.', '').replace(' e.c.', '') + (y > 0 ? ' e.c.' : ''), { left: x(y) + 'px' });
+  add('b-axis', 'a.e.c. →', { left: (x(-649) + 18) + 'px' });
+  // Lupa y cursor
+  add('b-lens', '', { left: x(-9) + 'px', width: (x(80) - x(-9)) + 'px' });
+  add('b-lens__tag', 'lupa abajo ↓', { left: (x(-9) + x(80)) / 2 + 'px' });
+  add('b-cursor', '<span>30 e.c.</span>', { left: x(30) + 'px' });
+
+  // ---------- Mapa ----------
+  const map = BE.createMap(document.getElementById('map'), { base: 'mundo', style: 'antiguo', bounds: [33.4, 29.2, 50.8, 38.2], fit: 'contain' });
+  map.label('Imperio<br>romano', 36.3, 34.9, { kind: 'empire', size: 14 });
+  map.label('Imperio parto', 46.2, 37.3, { kind: 'empire', size: 14 });
+  map.label('Mesopotamia', 40.6, 35.6, { kind: 'region', size: 12 });
+  map.label('Media', 48.4, 34.3, { kind: 'region', size: 12 });
+  map.label('Elam', 48.9, 31.4, { kind: 'region', size: 12 });
+  map.label('Judea', 35.3, 30.9, { kind: 'province', size: 13 });
+  // Procedencia de los oyentes de Pentecostés (dentro de 3 años)
+  map.route(['media', 'jerusalen'], { kind: 'ghost', curve: 0.12 });
+  map.route(['elam', 'jerusalen'], { kind: 'ghost', curve: 0.18 });
+  map.route([[39.03278, 36.86444], 'jerusalen'], { kind: 'ghost', curve: 0.1 });
+  map.city('jerusalen', { variant: 'major', side: 'bottom' });
+  map.city('babilonia', { variant: 'current', side: 'bottom' });
+  map.city('susa', { variant: 'minor' });
+  map.city('ecbatana', { variant: 'minor' });
+  map.city('ninive', { variant: ['minor', 'past'], label: 'Nínive (ruinas)', side: 'left' });
+  map.label('Éufrates', 41.6, 33.9, { kind: 'sea', rotate: 30, size: 12 });
+  map.label('Tigris', 44.9, 34.2, { kind: 'sea', rotate: 55, size: 12 });
+
+  // ---------- Lupa: 10 a.e.c. – 80 e.c. ----------
+  BE.timeline(document.getElementById('timeline'), {
+    from: -9, to: 81, tick: 10, minor: 1, cursor: 30, cursorLabel: '30 e.c.',
+    fmt: (y) => BE.fmtYear(y),
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 año por segundo</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span class="on">Décadas</span><span>Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">Lupa · 10 a.e.c. – 80 e.c.</span>
+      <span class="be-spacer"></span>
+      <span class="be-tier be-tier--1" data-n="1">nivel 1</span><span class="be-tier be-tier--2" data-n="2">nivel 2</span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Babilonia', color: 'var(--node-lugar)', icon: 'place', items: [
+        { from: -9, to: 81, label: 'Bajo los partos · colonia judía · templo de Bel en pie (inscripciones de 75 e.c.)', color: 'var(--node-lugar)' } ] },
+      { label: 'Jesús', color: 'var(--node-persona)', icon: 'person', items: [
+        { at: -1, label: 'Nace · 2 a.e.c.' },
+        { from: 29.8, to: 33.3, label: '', active: true, color: 'var(--node-persona)' },
+        { at: 33.3, label: 'Ministerio c. oct. 29 – nisán 33', color: 'var(--node-persona)' } ] },
+      { label: 'Pedro', color: 'var(--node-persona)', icon: 'person', items: [
+        { at: 33.4, label: 'Pentecostés: oyen gente de Mesopotamia (Hch 2:9)' },
+        { at: 63, label: '1 Pedro, desde Babilonia · c. 62-64', color: 'var(--node-texto)' } ] },
+      { label: 'Reyes partos ²', color: 'var(--emp-partos)', icon: 'crown', items: [
+        { from: -1, to: 4, label: 'Fraates V', color: '#a8865c' },
+        { from: 12, to: 41, label: 'Artabano II · 12 – 38/41', fuzzy: 'end', color: 'var(--emp-partos)' },
+        { from: 51, to: 78, label: 'Vologases I · 51-78', color: '#a8865c' } ] },
+      { label: 'Judíos de la región ²', color: 'var(--tier2)', icon: 'people', items: [
+        { from: 18, to: 33, label: 'Anilai y Asinai · c. 18-33', fuzzy: 'both', color: 'var(--tier2)' } ] },
+      { label: 'Cuneiforme ²', color: 'var(--tier2)', icon: 'scroll', items: [
+        { at: 79.5, label: 'Última tablilla conocida · 79/80', labelLeft: true, color: 'var(--tier2)' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

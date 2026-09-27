@@ -1,0 +1,231 @@
+<!doctype html>
+<!--
+  03 · Cartas de Pablo: arcos desde el lugar de escritura a los destinatarios, en su fecha. Seleccionada: 1 Corintios (Éfeso → Corinto, c. 55 e.c.).
+  Fuentes de los datos (comprobadas en wol.jw.org; ver data/cartas-de-pablo.json, revisado el 26-09-2026):
+  - Lugar y fecha de escritura de cada carta: Tabla de los libros de la Biblia · https://wol.jw.org/es/wol/d/r4/lp-s/1001070071
+  - Contexto de 1 Corintios (casa de Cloe; ambiente de Corinto; juegos ístmicos): Perspicacia, «Corintios, Cartas a los» · https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  - 1Co 16:8 (se queda en Éfeso hasta Pentecostés) y 1Co 16:19 (Áquila y Prisca saludan): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16
+  - Hch 19:9-10 (dos años en la sala de Tirano) y Hch 19:29 (la multitud entra en el teatro): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  - Estancias de Pablo (Éfeso de 52-53 a 55; Macedonia; Corinto; custodia 56-58; Roma 59-61; 2 Timoteo c. 65): data/viajes-de-pablo.json · https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  - Gálatas: «Corinto o Antioquía de Siria», c. 50-52; 2 Timoteo: sin destino indicado; 2 Corintios, 1 Timoteo y Tito: sólo «Macedonia».
+  - Claudio (41-54) y Nerón (54-68): cronología secular (nivel 2).
+  Fotos: Dennis G. Jarvis (CC BY-SA 2.0) y George E. Koronaios (CC0), kit/photos/CREDITS.md. Coordenadas: OpenBible.info (CC BY 4.0).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>03 · Cartas de Pablo</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 228px; --panel-w: 452px; }
+  .be-route--letter.written { opacity: .55; stroke-width: 2.2; }
+  .be-route--letter.sel { stroke-width: 4.2; stroke-dasharray: 9 5; }
+  .be-route.future { stroke: #8a7f70; stroke-width: 1.6; stroke-dasharray: 3 5; opacity: .75; }
+  .be-route.alt { stroke-dasharray: 2 5; opacity: .5; }
+  .arc-tag { position: absolute; transform: translate(-50%, -50%); font: 700 10.5px/1 var(--font-sans); padding: 3px 7px; border-radius: 999px; white-space: nowrap; z-index: 2; }
+  .arc-tag--written { background: #f4ead3; color: #6e4f15; border: 1px solid #e3cf9f; }
+  .arc-tag--sel { background: var(--gold); color: #fff; font-size: 12px; padding: 5px 10px; box-shadow: var(--shadow-2); }
+  .arc-tag--future { background: rgba(255,253,248,.9); color: var(--ink-3); border: 1px dashed var(--line-2); }
+  .arc-tag--nodest { background: var(--unverified-soft); color: #7a3048; border: 1px dashed #d9a3b5; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+  .endcard { border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; background: var(--surface); display: flex; flex-direction: column; }
+  .endcard .be-photo { height: 92px; }
+  .endcard .be-photo figcaption { padding: 14px 8px 5px; }
+  .endcard__pad { padding: 9px 11px 10px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+  .endcard__label { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+  .endcard__place { font-family: var(--font-serif); font-size: 21px; font-weight: 600; line-height: 1; }
+  .endcard__text { font-size: var(--fs-sm); line-height: 1.4; color: var(--ink-2); }
+  .endcard__refs { display: flex; gap: 5px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; }
+  .endcard--from { box-shadow: inset 0 3px 0 var(--accent); }
+  .endcard--to { box-shadow: inset 0 3px 0 var(--gold); }
+  .arrowbig { position: absolute; left: 50%; top: 140px; transform: translate(-50%, -50%); width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #fff; display: grid; place-items: center; box-shadow: 0 0 0 3px var(--surface), var(--shadow-2); z-index: 2; font-weight: 700; }
+  .sec-title { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+  .filters { position: absolute; z-index: 3; left: 14px; top: 14px; padding: 8px; display: flex; gap: 6px; align-items: center; }
+  .tier-mini { font-size: 9px; font-weight: 800; color: var(--tier2); background: var(--tier2-soft); border-radius: 999px; padding: 1px 5px; margin-left: 2px; }
+  .be-photo figcaption b { font-size: var(--fs-xs); }
+</style>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Cartas de Pablo</b> · 14 cartas · 1 Corintios</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">c. 55 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div style="display:flex;gap:5px;margin-bottom:4px"><span class="be-chip">Todas 14</span><span class="be-chip be-chip--active">Hasta esta fecha</span><span class="be-chip">A personas</span></div>
+        <div class="be-caps be-muted">Cartas de Pablo · c. 55 e.c.</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="border-top-width:4px"></span>Carta seleccionada</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="opacity:.55"></span>Ya escrita en esta fecha</div>
+        <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px dotted #8a7f70"></span>Aún no escrita (se ve al avanzar)</div>
+        <div class="be-legend__row"><span class="be-legend__zone"></span>Origen o destino sin ciudad concreta</div>
+      </div>
+    </div>
+    <div class="be-mapctl be-mapctl--br" id="scale"></div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Pablo</span><span class="be-sep">›</span><span>Cartas</span><span class="be-sep">›</span><span>1 Corintios</span></div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:10px">
+        <span class="be-node be-node--texto be-node--lg"><i data-icon="letter"></i></span>
+        <div style="flex:1">
+          <div class="be-serif" style="font-size:27px;font-weight:600;line-height:1.05">1 Corintios</div>
+          <div class="be-muted" style="font-size:var(--fs-sm);margin-top:3px">4.ª de 14 por fecha · a la congregación de Corinto</div>
+        </div>
+        <span class="be-chrono be-chrono--tnm">c. 55 e.c.</span>
+      </div>
+      <div class="be-tabs"><span class="be-tab be-tab--on">Los dos extremos</span><span class="be-tab">Personas<b>9</b></span><span class="be-tab">Fuentes<b>4</b></span></div>
+    </div>
+    <div class="be-panel__body" style="position:relative">
+      <div class="sec-title"><i class="be-i be-i--sm" data-icon="clock"></i>Qué pasaba en cada extremo en esta fecha</div>
+      <div class="two" style="position:relative">
+        <div class="endcard endcard--from">
+          <figure class="be-photo">
+            <img src="../kit/photos/efeso-teatro.jpg" alt="Gran teatro de Éfeso">
+            <figcaption><b>Teatro de Éfeso, hoy</b><span class="be-photo__credit">D. G. Jarvis · CC BY-SA 2.0</span></figcaption>
+          </figure>
+          <div class="endcard__pad">
+            <div class="endcard__label">Desde · escrita en</div>
+            <div class="endcard__place">Éfeso</div>
+            <div class="endcard__text">Tercer viaje. Pablo lleva tiempo aquí y la familia de Cloe le informa de divisiones en Corinto. Piensa quedarse hasta Pentecostés.</div>
+            <div class="endcard__refs"><a class="be-ref">1Co 1:11</a><a class="be-ref">1Co 16:8</a><a class="be-ref">Hch 19:10</a></div>
+          </div>
+        </div>
+        <div class="arrowbig">→</div>
+        <div class="endcard endcard--to">
+          <figure class="be-photo">
+            <img src="../kit/photos/corinto-bema.jpg" alt="Tribuna del foro de Corinto">
+            <figcaption><b>Tribuna de Corinto, hoy</b><span class="be-photo__credit">G. E. Koronaios · CC0</span></figcaption>
+          </figure>
+          <div class="endcard__pad">
+            <div class="endcard__label">Para · destino</div>
+            <div class="endcard__place">Corinto</div>
+            <div class="endcard__text">Capital de Acaya, de ambiente muy inmoral. Cerca se celebraban los juegos ístmicos, que Pablo usa como ilustración.</div>
+            <div class="endcard__refs"><a class="be-ref">1Co 1:10-12</a><a class="be-ref">1Co 9:24</a></div>
+          </div>
+        </div>
+      </div>
+      <article class="be-card be-card--compact" style="margin-top:12px">
+        <div class="be-card__pad" style="padding:10px 12px">
+          <div class="sec-title"><i class="be-i be-i--sm" data-icon="people"></i>Une los dos extremos</div>
+          <div style="font-size:var(--fs-sm);color:var(--ink-2);margin-top:6px;line-height:1.45"><b style="color:var(--ink)">Áquila y Prisca</b> conocieron a Pablo en Corinto (c. 50) y ahora saludan desde Asia, con la congregación que se reúne en su casa.</div>
+          <div style="display:flex;gap:6px;margin-top:8px;align-items:center"><a class="be-ref">Hch 18:2</a><a class="be-ref">1Co 16:19</a><span class="be-spacer"></span><span class="be-btn be-btn--sm be-btn--ghost"><i class="be-i be-i--sm" data-icon="graph"></i>Ver en el grafo</span></div>
+        </div>
+      </article>
+      <div style="display:flex;align-items:center;gap:8px;margin-top:12px">
+        <span class="be-tier be-tier--1" data-n="1">Tabla de los libros · Perspicacia</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/d/r4/lp-s/1200001039">Leer en wol.jw.org</a>
+      </div>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [11.4, 30.4, 37.1, 43.3], fit: 'contain' });
+
+  map.label('Macedonia', 22.0, 41.75, { kind: 'region' });
+  map.label('Acaya', 21.7, 38.25, { kind: 'region' });
+  map.label('Asia', 28.6, 38.9, { kind: 'region' });
+  map.label('Italia', 15.6, 41.4, { kind: 'region' });
+  map.label('Judea', 35.95, 31.45, { kind: 'region' });
+  map.label('Mar Mediterráneo', 20.5, 34.6, { kind: 'sea', size: 20 });
+
+  // Zonas: destinatarios de Gálatas y origen «Macedonia»
+  map.zone(['antioquia-de-pisidia', 'iconio', 'listra', 'derbe'], { padKm: 34, label: 'Galacia', labelAt: [32.3, 38.95] });
+  map.zone(['filipos', 'tesalonica', 'berea'], { padKm: 30, soft: true, label: 'Macedonia · sin ciudad', labelAt: [23.3, 41.35], candidates: false });
+
+  const GAL = [32.5, 37.72], MAC = [23.25, 40.8], CRETA = [24.89, 35.31];
+  const tag = (path, text, cls, t = 0.5, dx = 0, dy = 0) => {
+    const L = path.getTotalLength(), p = path.getPointAtLength(L * t);
+    const n = document.createElement('div'); n.className = 'arc-tag arc-tag--' + cls; n.textContent = text;
+    n.style.left = `${p.x + dx}px`; n.style.top = `${p.y + dy}px`; map.html.appendChild(n);
+  };
+  const arc = (a, b, state, curve, text, t, dx, dy, extra) => {
+    const kind = state === 'future' ? 'todo' : 'letter';
+    const r = map.route([a, b], { kind, curve, trim: 9, arrows: state !== 'future' });
+    r.paths.forEach((p) => { p.classList.add(state); if (extra) p.classList.add(extra); });
+    r.group.querySelectorAll('.be-route--casing').forEach((c) => { if (state !== 'sel') c.remove(); });
+    if (text) tag(r.paths[0], text, state === 'future' ? 'future' : state, t, dx, dy);
+    return r;
+  };
+
+  // Aún no escritas en c. 55 (se ven tenues)
+  arc('roma', 'efeso', 'future', -0.1, 'Ef · c. 60-61', 0.45, 0, -2);
+  arc('roma', 'filipos', 'future', -0.14, 'Flp', 0.55);
+  arc('roma', 'colosas', 'future', -0.02, 'Col · Flm', 0.3, 0, 10);
+  arc('roma', 'jerusalen', 'future', 0.02, 'Heb · a Judea', 0.62, 0, 10);
+  arc('corinto', 'roma', 'future', 0.12, 'Ro · c. 56', 0.68);
+  arc(MAC, 'corinto', 'future', -0.25, '2Co', 0.42, -14, 0);
+  arc(MAC, 'efeso', 'future', -0.12, '1Ti', 0.55, 0, -10);
+  arc(MAC, CRETA, 'future', 0.18, 'Tit', 0.82, -12, 0);
+  // Ya escritas
+  arc('corinto', 'tesalonica', 'written', -0.25, '1Te · 2Te', 0.5, -44, 0);
+  arc('corinto', GAL, 'written', -0.16, 'Gál', 0.5, 0, -2);
+  arc('antioquia-de-siria', GAL, 'written', 0.12, 'Gál ?', 0.5, 0, 12, 'alt');
+  // Seleccionada
+  arc('efeso', 'corinto', 'sel', 0.28, '1 Corintios · c. 55', 0.5, 0, -4);
+
+  // Ciudades
+  map.city('roma', { variant: 'major', side: 'bottom' });
+  map.city('corinto', { variant: ['dest'], side: 'left' });
+  map.city('efeso', { variant: 'current', side: 'right' });
+  map.city('tesalonica', { variant: 'minor', side: 'left' });
+  map.city('filipos', { variant: 'minor', side: 'right', label: '' });
+  map.city('colosas', { variant: 'minor', side: 'bottom' });
+  map.city('antioquia-de-siria', { variant: 'minor', side: 'left', label: 'Antioquía de Siria' });
+  map.city('jerusalen', { variant: 'minor', side: 'right' });
+  map.city(CRETA, { variant: 'minor', label: 'Creta', side: 'bottom' });
+
+  // 2 Timoteo: sin destino indicado
+  const [rx, ry] = map.at('roma');
+  const nd = document.createElement('div'); nd.className = 'arc-tag arc-tag--nodest';
+  nd.innerHTML = '2Ti · c. 65 · destino no indicado'; nd.style.left = `${rx + 112}px`; nd.style.top = `${ry - 20}px`;
+  map.html.appendChild(nd);
+
+  document.getElementById('scale').appendChild(map.scaleBar(110));
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 49, to: 66, tick: 1, minor: 0.25, cursor: 55.3, cursorLabel: 'c. 55 e.c. · Éfeso',
+    lanes: [
+      { label: 'Dónde está Pablo', color: 'var(--node-lugar)', icon: 'place', items: [
+        { from: 50.75, to: 52.3, label: 'Corinto', color: '#8fb1b3' },
+        { from: 52.9, to: 55.45, label: 'Éfeso · unos 3 años', fuzzy: 'start', active: true, color: 'var(--node-lugar)' },
+        { from: 55.45, to: 55.9, label: '', color: '#8fb1b3' },
+        { from: 55.9, to: 56.2, label: '', color: '#8fb1b3' },
+        { from: 56.45, to: 58.5, label: 'Custodia · Cesarea', color: '#8fb1b3' },
+        { from: 59, to: 61, label: 'Roma', fuzzy: 'both', color: '#8fb1b3' },
+        { from: 61, to: 64, label: 'Hechos no lo narra', soft: true, color: 'var(--ink-3)' },
+        { from: 64.7, to: 65.6, label: 'Roma', fuzzy: 'both', color: '#8fb1b3' } ] },
+      { label: 'Cartas', color: 'var(--node-evento)', icon: 'letter', items: [
+        { at: 50, label: '1 Tes' }, { at: 55, label: '1 Corintios', color: 'var(--accent)' }, { at: 56.1, label: 'Romanos' }, { at: 61, label: 'Hebreos' }, { at: 65, label: '2 Timoteo' } ] },
+      { label: 'Más cartas', color: 'var(--node-evento)', icon: 'letter', items: [
+        { at: 51, label: '2 Tes' }, { at: 55.75, label: '2 Corintios' }, { from: 60, to: 61, label: 'Roma · 4', color: 'var(--node-evento)' }, { from: 61.1, to: 64, label: '1 Timoteo · Tito · c. 61-64', soft: true, color: 'var(--node-evento)' } ] },
+      { label: 'Incierto', color: 'var(--zone)', icon: 'hourglass', items: [
+        { from: 50, to: 52.9, label: 'Gálatas · Corinto o Antioquía', soft: true, color: 'var(--zone)' } ] },
+      { label: 'Emperador <span class="tier-mini">N2</span>', color: 'var(--emp-roma)', icon: 'crown', items: [
+        { from: 41, to: 54, label: 'Claudio · 41-54', color: '#b35a4c' },
+        { from: 54, to: 68, label: 'Nerón · 54-68', color: 'var(--emp-roma)' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

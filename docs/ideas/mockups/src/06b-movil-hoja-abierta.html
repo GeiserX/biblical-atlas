@@ -1,0 +1,135 @@
+<!doctype html>
+<!--
+  06b · Móvil (430x932): la hoja inferior abierta del todo; el viaje como línea de tiempo vertical (T-22) con el cursor en Filipos.
+  Datos: data/viajes-de-pablo.json (segundo viaje, 21 paradas, comprobado en wol.jw.org el 26-09-2026):
+  - Sale de Antioquía de Siria a finales del verano de 49; Troas en la primavera de 50; Corinto del otoño de 50 a la primavera de 52 (18 meses);
+    vuelve a Antioquía probablemente en el verano de 52. Resto de paradas: tiempo narrativo (orden cierto, fecha aproximada).
+    https://wol.jw.org/es/wol/d/r4/lp-s/1101990130 · https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  - Hch 15:35-41, 16, 17, 18 (TNM, notas de estudio): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15 · …/44/16 · …/44/17 · …/44/18
+  - Timoteo se une en Listra (Hch 16:1-3); Lucas desde Troas (el relato pasa a "nosotros", nota de Hch 16:10).
+  - Galión, procónsul del verano de 51 al verano de 52: Perspicacia «Galión» https://wol.jw.org/es/wol/d/r4/lp-s/1200001603
+  - Hch 18:22: el texto no nombra la ciudad donde saluda a la congregación; Perspicacia lo entiende como Jerusalén (it «Pablo» https://wol.jw.org/es/wol/d/r4/lp-s/1200003406).
+  Coordenadas: OpenBible.info (CC BY 4.0).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>06b · Móvil, hoja abierta</title>
+<meta name="mockup-mobile" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .be-phone > .be-map { bottom: auto; height: 190px; }
+  .meanwhile { position: relative; }
+  .meanwhile::before { content: ""; position: absolute; left: -20px; top: -4px; bottom: -6px; width: 2px; background: repeating-linear-gradient(180deg, #9b86b3 0 4px, transparent 4px 8px); opacity: .45; }
+  .be-phone .be-attrib { bottom: auto; top: 155px; font-size: 6.5px; padding: 1px 6px; }
+  .be-sheet { top: 172px; padding: 8px 0 22px; display: flex; flex-direction: column; }
+  .heights { position: absolute; right: 14px; top: 8px; display: flex; gap: 3px; }
+  .heights i { width: 6px; height: 6px; border-radius: 50%; background: var(--line-2); }
+  .heights i.on { background: var(--ink-3); }
+  .head { display: flex; align-items: center; gap: 10px; padding: 2px 16px 0; }
+  .head h2 { font: 600 23px/1.1 var(--font-serif); margin: 0; }
+  .head .sub { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+  .play { width: 42px; height: 42px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; margin-left: auto; flex: none; }
+  .mtabs { display: flex; gap: 16px; border-bottom: 1px solid var(--line); padding: 10px 16px 0; }
+  .mtabs span { font-size: 13px; font-weight: 600; color: var(--ink-3); padding: 2px 0 8px; }
+  .mtabs span b { font-weight: 600; color: var(--ink-4); margin-left: 3px; }
+  .mtabs .on { color: var(--ink); box-shadow: inset 0 -2px 0 var(--ink); }
+  .mtabs .on b { color: var(--ink-3); }
+  .key { display: flex; gap: 12px; align-items: center; padding: 8px 16px 4px; font-size: 10.5px; color: var(--ink-3); font-weight: 600; }
+  .key i.a { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); display: inline-block; margin-right: 4px; vertical-align: -1px; }
+  .key i.n { width: 5px; height: 12px; display: inline-block; margin-right: 4px; vertical-align: -2px; background: repeating-linear-gradient(180deg, #9b86b3 0 3px, transparent 3px 6px); }
+  .key i.s { width: 12px; border-top: 2px dashed var(--sea); display: inline-block; margin-right: 4px; vertical-align: 3px; }
+  /* lista vertical */
+  .vt { position: relative; padding: 2px 16px 0 0; }
+  .st { position: relative; display: grid; grid-template-columns: 82px 22px 1fr auto; align-items: center; min-height: 38px; }
+  .st__date { text-align: right; padding-right: 8px; font-size: 10.5px; line-height: 1.2; font-weight: 700; color: var(--accent); }
+  .st__rail { position: relative; align-self: stretch; }
+  .st__rail::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--accent); }
+  .st--narr .st__rail::before { background: repeating-linear-gradient(180deg, #9b86b3 0 4px, transparent 4px 8px); }
+  .st--sea .st__rail::before { background: repeating-linear-gradient(180deg, var(--sea) 0 5px, transparent 5px 9px); }
+  .st--fut .st__rail::before { opacity: .45; }
+  .st--first .st__rail::before { top: 50%; }
+  .st--last .st__rail::before { bottom: 50%; }
+  .dot { position: absolute; left: 5px; top: 50%; margin-top: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2.5px solid var(--accent); box-sizing: border-box; z-index: 1; }
+  .st--anch .dot { background: var(--accent); }
+  .st--narr .dot { border-color: #8a74a3; }
+  .st--fut .dot { border-color: var(--ink-4); }
+  .st--fut.st--anch .dot { background: var(--ink-4); }
+  .st__name { font: 600 15.5px/1.2 var(--font-serif); color: var(--ink); padding-left: 6px; }
+  .st--fut .st__name { color: var(--ink-3); }
+  .st__name small { display: block; font: 500 11px/1.3 var(--font-sans); color: var(--ink-3); margin-top: 1px; }
+  .st__ref { font-size: 10.5px; font-weight: 600; color: var(--tier1); background: var(--tier1-soft); border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
+  .st--fut .st__ref { opacity: .7; }
+  .tag { display: inline-block; font: 700 9px/1 var(--font-sans); color: #5d4674; border: 1px dashed #b9a6cc; border-radius: 999px; padding: 2px 5px; margin-left: 4px; vertical-align: 2px; }
+  .st--now { background: var(--gold-soft); border-radius: 0 12px 12px 0; margin-right: -6px; padding-right: 6px; min-height: 52px; }
+  .st--now .dot { width: 18px; height: 18px; left: 2px; margin-top: -9px; background: var(--accent); box-shadow: 0 0 0 4px rgba(163,67,43,.2); border-color: #fff; }
+  .st--now .st__name { font-size: 18px; }
+  .now-chip { font: 700 9.5px/1 var(--font-sans); letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--gold); border-radius: 999px; padding: 3px 6px; margin-left: 6px; vertical-align: 3px; }
+  .cursorline { position: absolute; left: 0; right: 0; height: 0; border-top: 2px solid var(--gold); z-index: 2; }
+  .cursorline span { position: absolute; left: 6px; top: -9px; font: 700 9.5px/16px var(--font-sans); background: var(--gold); color: #fff; padding: 0 6px; border-radius: 4px; }
+  .meanwhile { margin: 2px 0 4px 110px; padding: 6px 10px; border-left: 3px solid var(--node-evento); background: var(--surface-2); border-radius: 0 8px 8px 0; font-size: 11.5px; color: var(--ink-2); line-height: 1.35; }
+  .meanwhile b { color: var(--ink); }
+  .meanwhile em { font-style: normal; color: var(--ink-3); font-weight: 700; font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; display: block; }
+  .mtop2 { position: absolute; top: 54px; left: 12px; right: 12px; display: flex; gap: 8px; z-index: 5; align-items: center; }
+  .pillsm { height: 40px; border-radius: 12px; background: rgba(255,253,248,.96); box-shadow: var(--shadow-2); display: flex; align-items: center; gap: 8px; padding: 0 12px; font-size: 13.5px; }
+  .pillsm b { font: 600 17px/1 var(--font-serif); }
+</style>
+</head>
+<body>
+<div class="be-phone">
+  <main class="be-map" id="map"></main>
+  <div class="be-statusbar"><span>9:41</span><span><i data-icon="wifi"></i> <i data-icon="battery"></i></span></div>
+  <div class="mtop2">
+    <span class="pillsm" style="width:40px;padding:0;justify-content:center"><i data-icon="search"></i></span>
+    <span class="pillsm"><b>c. 50 e.c.</b><span style="color:var(--gold);font-weight:700;font-size:11px">TNM</span></span>
+    <span class="be-spacer"></span>
+    <span class="pillsm" style="font-weight:600;font-size:12.5px"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span>
+  </div>
+
+  <div class="be-sheet">
+    <div class="be-sheet__grip"></div>
+    <div class="heights"><i></i><i></i><i class="on"></i></div>
+    <div class="head">
+      <div><h2>2.º viaje de Pablo</h2><div class="sub">c. 49-52 e.c. · 21 paradas · Hch 15:36–18:22</div></div>
+      <span class="play"><i data-icon="pause"></i></span>
+    </div>
+    <div class="mtabs"><span>Aquí y ahora</span><span class="on">Viaje<b>21</b></span><span>Conexiones<b>12</b></span><span>Fuentes<b>5</b></span></div>
+    <div class="key"><span><i class="a"></i>fecha que da la fuente</span><span><i class="n"></i>tiempo narrativo</span><span><i class="s"></i>por mar</span></div>
+
+    <div class="vt" id="vt">
+      <div class="st st--anch st--first"><div class="st__date">final del<br>verano de 49</div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Antioquía de Siria<small>Sale con Silas</small></div><span class="st__ref">Hch 15:35-40</span></div>
+      <div class="st st--narr"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Cilicia <span class="tag">región</span> · Derbe</div><span class="st__ref">Hch 15:41–16:1</span></div>
+      <div class="st st--narr"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Listra<small>Timoteo se une</small></div><span class="st__ref">Hch 16:1-3</span></div>
+      <div class="st st--narr"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Frigia y Galacia · Misia<small>Ruta sin trazado conocido</small></div><span class="st__ref">Hch 16:6-8</span></div>
+      <div class="st st--anch"><div class="st__date">primavera<br>de 50</div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Troas<small>Visión del macedonio · Lucas se une</small></div><span class="st__ref">Hch 16:8-10</span></div>
+      <div class="st st--sea"><div class="st__date"></div><div class="st__rail"><span class="dot" style="border-color:var(--sea)"></span></div><div class="st__name">Samotracia · Neápolis</div><span class="st__ref">Hch 16:11</span></div>
+      <div class="st st--narr st--now" id="now"><div class="st__date" style="color:var(--gold)">c. 50</div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Filipos<span class="now-chip">aquí</span><small>Lidia · cárcel y terremoto</small></div><span class="st__ref">Hch 16:12-40</span></div>
+      <div class="meanwhile"><em>Mientras tanto · Roma</em>Claudio expulsa a los judíos (49 o principios de 50). Áquila y Priscila irán a Corinto · <b>Hch 18:2</b></div>
+      <div class="st st--narr st--fut"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Anfípolis · Apolonia · Tesalónica</div><span class="st__ref">Hch 17:1-9</span></div>
+      <div class="st st--narr st--fut"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Berea · Atenas<small>Areópago</small></div><span class="st__ref">Hch 17:10-34</span></div>
+      <div class="st st--anch st--fut"><div class="st__date" style="color:var(--ink-3)">otoño 50 –<br>primavera 52</div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Corinto · 18 meses<small>Áquila y Priscila · Galión, procónsul 51-52</small></div><span class="st__ref">Hch 18:1-17</span></div>
+      <div class="st st--sea st--fut"><div class="st__date"></div><div class="st__rail"><span class="dot" style="border-color:var(--ink-4)"></span></div><div class="st__name">Cencreas · Éfeso · Cesarea</div><span class="st__ref">Hch 18:18-22</span></div>
+      <div class="st st--narr st--fut"><div class="st__date"></div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Jerusalén <span class="tag">según Perspicacia</span></div><span class="st__ref">Hch 18:22</span></div>
+      <div class="st st--anch st--fut st--last"><div class="st__date" style="color:var(--ink-3)">verano de 52<br>(probable)</div><div class="st__rail"><span class="dot"></span></div><div class="st__name">Antioquía de Siria</div><span class="st__ref">Hch 18:22</span></div>
+    </div>
+  </div>
+  <div class="be-homebar"></div>
+</div>
+<script>
+BE.ready(async () => {
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [22.4, 40.3, 26.8, 42.3] });
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'sea', curve: [-0.12, -0.1] });
+  map.route(['neapolis', 'filipos'], { kind: 'done', arrows: false });
+  map.route(['filipos', 'anfipolis', 'apolonia', 'tesalonica'], { kind: 'todo', curve: [0.05, 0, 0.05], arrows: false });
+  map.city('troas', { variant: 'visited', side: 'left' });
+  map.city('neapolis', { variant: 'visited', side: 'right' });
+  map.city('filipos', { variant: 'current', side: 'left' });
+  map.city('tesalonica', { variant: 'future', side: 'bottom' });
+});
+</script>
+</body>
+</html>

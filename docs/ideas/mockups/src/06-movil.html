@@ -1,0 +1,190 @@
+<!doctype html>
+<!--
+  06 · Móvil (430x932): pantalla principal del segundo viaje de Pablo, Pablo en Filipos (c. 50 e.c.), hoja inferior a media altura.
+  Mismos datos que 01-principal.html (comprobados en wol.jw.org el 27-09-2026):
+  - Segundo viaje c. 49-52 e.c.; Troas en la primavera de 50; Corinto desde el otoño de 50:
+    data/viajes-de-pablo.json · https://wol.jw.org/es/wol/d/r4/lp-s/1101990130 · https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  - Filipos, colonia romana y ciudad principal del distrito de Macedonia (Hch 16:12); lugar de oración junto al río (Hch 16:13);
+    Lidia, de Tiatira, vendedora de púrpura (Hch 16:14); cárcel y terremoto (Hch 16:23-26); "alrededor del año 50" (nota de Hch 16:14):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  - Timoteo se une en Listra (Hch 16:1-3); Lucas se une en Troas y se queda en Filipos (nota de Hch 16:10); Silas sale con Pablo (Hch 15:40).
+  - Claudio expulsa a los judíos de Roma en 49 o a principios de 50; Áquila y Priscila en Corinto (nota de Hch 18:2):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  - Siguiente parada: Anfípolis, Apolonia, Tesalónica (Hch 17:1): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  Coordenadas: OpenBible.info (CC BY 4.0). Foto: Carole Raddato, CC BY-SA 2.0 (kit/photos/CREDITS.md).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>06 · Móvil</title>
+<meta name="mockup-mobile" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .be-mtop { align-items: center; }
+  .be-mtop .be-search { flex: 1; font-size: 14px; }
+  .be-mtop .be-search b { font-weight: 700; }
+  .rbtn { width: 46px; height: 46px; border-radius: 14px; background: rgba(255,253,248,.96); box-shadow: var(--shadow-2); display: grid; place-items: center; color: var(--ink-2); flex: none; }
+  .mrow2 { position: absolute; top: 110px; left: 12px; right: 12px; display: flex; gap: 8px; align-items: center; z-index: 5; }
+  .datechip { display: flex; align-items: baseline; gap: 6px; height: 34px; padding: 0 12px; border-radius: 999px; background: rgba(255,253,248,.96); box-shadow: var(--shadow-1); border: 1px solid var(--gold-soft); }
+  .datechip b { font: 600 18px/34px var(--font-serif); color: var(--ink); }
+  .datechip span { font-size: 11px; color: var(--gold); font-weight: 700; }
+  .mseg { display: flex; background: rgba(255,253,248,.96); border-radius: 999px; padding: 3px; box-shadow: var(--shadow-1); margin-left: auto; }
+  .mseg span { height: 28px; padding: 0 10px; border-radius: 999px; font-size: 12px; font-weight: 600; color: var(--ink-3); display: flex; align-items: center; gap: 5px; }
+  .mseg .on { background: var(--ink); color: #fff; }
+  .flag-next { position: absolute; z-index: 3; display: flex; align-items: center; gap: 6px; padding: 5px 10px 5px 7px; font-size: 12px; font-weight: 600; color: var(--ink-2); border-radius: 999px; white-space: nowrap; }
+  .flag-next b { color: var(--accent); }
+  .fab { position: absolute; right: 12px; z-index: 4; display: flex; flex-direction: column; gap: 8px; }
+  .fab span { width: 40px; height: 40px; border-radius: 12px; background: rgba(255,253,248,.96); box-shadow: var(--shadow-2); display: grid; place-items: center; color: var(--ink-2); }
+  .be-phone .be-attrib { bottom: auto; top: 452px; left: 0; right: auto; max-width: 100%; font-size: 7.5px; white-space: normal; border-radius: 0 6px 6px 0; }
+  .mattrib { position: absolute; left: 10px; z-index: 3; font-size: 8.5px; color: var(--ink-3); background: rgba(250,245,233,.8); padding: 1px 5px; border-radius: 4px; }
+
+  /* hoja inferior a media altura */
+  .be-sheet { top: 474px; padding: 8px 14px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .be-sheet__grip { margin-bottom: 0; }
+  .heights { position: absolute; right: 14px; top: 8px; display: flex; gap: 3px; }
+  .heights i { width: 6px; height: 6px; border-radius: 50%; background: var(--line-2); }
+  .heights i.on { background: var(--ink-3); }
+  /* línea de tiempo compacta */
+  .mtl { border: 1px solid var(--line); border-radius: 14px; padding: 8px 10px 8px; background: var(--surface-2); }
+  .mtl__bar { display: flex; align-items: center; gap: 8px; }
+  .mtl__play { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; flex: none; }
+  .mtl__step { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; color: var(--ink-2); flex: none; }
+  .mtl__date { font: 600 19px/1 var(--font-serif); }
+  .mtl__hint { font-size: 10.5px; color: var(--ink-3); line-height: 1.25; }
+  .mtl__speed { margin-left: auto; font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; white-space: nowrap; }
+  .track { position: relative; height: 60px; margin-top: 8px; }
+  .axis { position: absolute; left: 0; right: 0; top: 0; height: 14px; }
+  .axis span { position: absolute; transform: translateX(-50%); font-size: 9.5px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+  .gl { position: absolute; top: 14px; bottom: 0; border-left: 1px solid var(--line); }
+  .row { position: absolute; left: 0; right: 0; height: 20px; }
+  .sp { position: absolute; height: 18px; border-radius: 5px; color: #fff; font-size: 10px; font-weight: 700; line-height: 18px; padding: 0 7px; white-space: nowrap; overflow: hidden; }
+  .sp--fz { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22px, #000 calc(100% - 22px), transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 22px, #000 calc(100% - 22px), transparent 100%); padding-left: 20px; }
+  .sp--soft { background: transparent !important; border: 1.5px solid currentColor; line-height: 15px; color: var(--node-evento); }
+  .dia { position: absolute; width: 11px; height: 11px; margin-left: -5.5px; top: 4px; transform: rotate(45deg); border-radius: 2px; background: var(--gold); box-shadow: 0 0 0 2px #fff; }
+  .dlab { position: absolute; top: 2px; font-size: 10px; font-weight: 600; color: var(--ink-2); white-space: nowrap; margin-left: 10px; }
+  .cur { position: absolute; top: 14px; bottom: -2px; border-left: 2px solid var(--gold); z-index: 3; }
+  .cur::after { content: ""; position: absolute; top: -6px; left: -6px; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 2px #fff; }
+  .unc { position: absolute; top: 14px; bottom: 0; background: repeating-linear-gradient(135deg, rgba(122,92,142,.10) 0 5px, transparent 5px 10px); border-left: 1px dashed rgba(122,92,142,.4); border-right: 1px dashed rgba(122,92,142,.4); }
+  /* pestañas y ficha */
+  .mtabs { display: flex; gap: 16px; border-bottom: 1px solid var(--line); }
+  .mtabs span { font-size: 13px; font-weight: 600; color: var(--ink-3); padding: 2px 0 8px; }
+  .mtabs span b { font-weight: 600; color: var(--ink-4); margin-left: 3px; }
+  .mtabs .on { color: var(--ink); box-shadow: inset 0 -2px 0 var(--ink); }
+  .stop { display: grid; grid-template-columns: 96px 1fr; gap: 12px; }
+  .thumb { position: relative; width: 96px; height: 104px; border-radius: 10px; overflow: hidden; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .thumb figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 5px 4px; font-size: 7.5px; line-height: 1.25; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.72)); }
+  .eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+  .stop h2 { font: 600 25px/1.05 var(--font-serif); margin: 3px 0 2px; }
+  .stop .sub { font-size: 12px; color: var(--ink-3); line-height: 1.3; }
+  .stop p { font-size: 13px; line-height: 1.42; color: var(--ink-2); margin: 6px 0 0; }
+  .refs { display: flex; gap: 6px; align-items: center; flex-wrap: nowrap; }
+  .refs .be-ref { font-size: 11.5px; }
+  .narr { display: inline-flex; align-items: center; gap: 5px; height: 22px; padding: 0 8px; border-radius: 999px; font-size: 10.5px; font-weight: 600; color: #5d4674; border: 1px dashed #b9a6cc; background: repeating-linear-gradient(135deg, rgba(122,92,142,.10) 0 5px, transparent 5px 10px); white-space: nowrap; }
+  .foot { display: flex; align-items: center; gap: 8px; }
+  .foot .be-wol { font-size: 12.5px; margin-left: auto; }
+  .with { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--ink-3); }
+  .with .pp { display: flex; align-items: center; gap: 5px; padding: 3px 9px 3px 3px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="be-phone">
+  <main class="be-map" id="map"></main>
+  <div class="be-statusbar"><span>9:41</span><span><i data-icon="wifi"></i> <i data-icon="battery"></i></span></div>
+  <div class="be-mtop">
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Pablo</b> · 2.º viaje · Hch 15:36–18:22</span></div>
+    <span class="rbtn"><i data-icon="bookmark"></i></span>
+  </div>
+  <div class="mrow2">
+    <div class="datechip"><b>c. 50 e.c.</b><span>TNM</span></div>
+    <div class="mseg"><span class="on"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span><span><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+  </div>
+  <div class="fab" style="top:162px"><span><i data-icon="layers"></i></span><span><i data-icon="locate"></i></span></div>
+
+  <div class="be-sheet">
+    <div class="be-sheet__grip"></div>
+    <div class="heights"><i></i><i class="on"></i><i></i></div>
+
+    <div class="mtl">
+      <div class="mtl__bar">
+        <span class="mtl__step"><i data-icon="step-back"></i></span>
+        <span class="mtl__play"><i data-icon="pause"></i></span>
+        <span class="mtl__step"><i data-icon="step-forward"></i></span>
+        <div><div class="mtl__date">c. 50 e.c.</div><div class="mtl__hint">Roma bajo Claudio</div></div>
+        <span class="mtl__speed">1 mes/s · Años</span>
+      </div>
+      <div class="track" id="track"></div>
+    </div>
+
+    <div class="mtabs"><span class="on">Aquí y ahora</span><span>Viaje<b>21</b></span><span>Conexiones<b>12</b></span><span>Fuentes<b>5</b></span></div>
+
+    <div class="stop">
+      <figure class="thumb" style="margin:0">
+        <img src="../kit/photos/filipos.jpg" alt="Foro romano de Filipos">
+        <figcaption>Foro de Filipos, hoy<br>C. Raddato<br>CC BY-SA 2.0</figcaption>
+      </figure>
+      <div>
+        <div class="eyebrow">Parada 10 de 21 · Pablo está en</div>
+        <h2>Filipos</h2>
+        <div class="sub">Colonia romana · Macedonia</div>
+        <p>Predica junto al río. Lidia, de Tiatira, se bautiza con su casa. Encarcelan a Pablo y a Silas; un terremoto abre las puertas.</p>
+      </div>
+    </div>
+    <div class="refs"><a class="be-ref">Hch 16:12-15</a><a class="be-ref">Hch 16:23-26</a><span class="narr"><i class="be-i be-i--sm" data-icon="hourglass"></i>fecha aproximada</span></div>
+    <div class="with">Con él:<span class="pp"><span class="be-node be-node--persona be-node--sm">S</span>Silas</span><span class="pp"><span class="be-node be-node--persona be-node--sm">T</span>Timoteo</span><span class="pp"><span class="be-node be-node--persona be-node--sm">L</span>Lucas</span></div>
+    <div class="foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16">Leer en wol.jw.org</a></div>
+  </div>
+  <div class="be-homebar"></div>
+</div>
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [21.35, 34.55, 26.55, 43.95] });
+  map.label('Macedonia', 22.9, 41.45, { kind: 'region' });
+  map.label('Tracia', 25.4, 41.55, { kind: 'region' });
+  map.label('Mar Egeo', 24.6, 39.75, { kind: 'sea', rotate: -50 });
+
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'sea', curve: [-0.12, -0.1] });
+  map.route(['neapolis', 'filipos'], { kind: 'done', arrows: false });
+  map.route(['filipos', 'anfipolis', 'apolonia', 'tesalonica', 'berea'], { kind: 'todo', curve: [0.05, 0, 0.05, 0.05], arrows: false });
+  map.route(['berea', [22.6, 40.33]], { kind: 'todo', arrows: false });
+  map.route([[22.6, 40.33], [23.25, 39.8], [24.1, 39.15]], { kind: 'sea-todo', smooth: true, arrows: false });
+
+  map.city('troas', { variant: 'visited', side: 'left' });
+  map.city('samotracia', { variant: 'minor', side: 'top' });
+  map.city('neapolis', { variant: 'visited', side: 'right' });
+  map.city('filipos', { variant: 'current', side: 'top' });
+  map.city('anfipolis', { variant: 'future', label: '' });
+  map.city('apolonia', { variant: 'future', label: '' });
+  map.city('tesalonica', { variant: 'future', side: 'top' });
+  map.city('berea', { variant: 'future', side: 'left' });
+
+  const [ax, ay] = map.at('anfipolis');
+  const nx = document.createElement('div');
+  nx.className = 'be-float flag-next';
+  nx.innerHTML = `<i class="be-i be-i--sm" data-icon="step-forward" style="color:var(--accent)"></i>Próxima: <b>Anfípolis</b> · Hch 17:1`;
+  nx.style.left = `12px`; nx.style.top = `${ay - 150}px`;
+  mapEl.appendChild(nx);
+
+
+  // Línea de tiempo compacta: 48 → 54 e.c.
+  const from = 47.6, to = 53.4, pct = (y) => `${((y - from) / (to - from) * 100).toFixed(2)}%`;
+  const tr = document.getElementById('track');
+  let h = '';
+  for (let y = 48; y <= 53; y++) h += `<div class="axis"><span style="left:${pct(y)}">${y} e.c.</span></div><div class="gl" style="left:${pct(y)}"></div>`;
+  h += `<div class="unc" style="left:${pct(50.3)};width:calc(${pct(50.72)} - ${pct(50.3)})"></div>`;
+  h += `<div class="row" style="top:20px"><div class="sp sp--fz" style="left:${pct(47.6)};width:calc(${pct(49.1)} - ${pct(47.6)});background:#c98f7c">1.er viaje</div>
+         <div class="sp sp--fz" style="left:${pct(49.65)};width:calc(${pct(52.55)} - ${pct(49.65)});background:var(--accent);box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--gold)">Pablo · 2.º viaje · c. 49-52</div>
+         <div class="sp sp--fz" style="left:${pct(52.55)};width:calc(${pct(53.4)} - ${pct(52.55)});background:#c98f7c">3.er</div></div>`;
+  h += `<div class="row" style="top:44px"><div class="sp sp--soft" style="left:${pct(49)};width:calc(${pct(50.2)} - ${pct(49)})">Expulsión</div>
+         <div class="dia" style="left:${pct(50.78)}"></div><div class="dlab" style="left:${pct(50.78)}">Áquila y Priscila · Hch 18:2</div></div>`;
+  h += `<div class="cur" style="left:${pct(50.42)}"></div>`;
+  tr.innerHTML = h;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+<!--
+  11 · Búsqueda «Pedro»: desplegable por tipos y resultado aplicado (nodo + vecinos, resto atenuado).
+  Datos: mockups/data/pedro.json (revisado el 26-09-2026). Fuentes comprobadas en wol.jw.org:
+  - Perspicacia «Pedro»: https://wol.jw.org/es/wol/d/r4/lp-s/1200003451
+      otros nombres (Simón, Symeón, Cefas), Betsaida y Capernaúm, Roma = tradiciones dudosas.
+  - Perspicacia «Pedro, Cartas de»: https://wol.jw.org/es/wol/d/r4/lp-s/1200003452 (1 Pedro desde Babilonia, destinatarios 1Pe 1:1)
+  - Tabla de los libros: https://wol.jw.org/es/wol/d/r4/lp-s/1001070071 (1 Pedro c. 62-64; 2 Pedro c. 64)
+  - Estudio 3 de «Toda Escritura»: https://wol.jw.org/es/wol/d/r4/lp-s/1101990130 (33, 36, 44, 49)
+  - Apéndice A7-B a A7-E: https://wol.jw.org/es/wol/d/r4/lp-s/1001070208 … 1001070211 (29-32)
+  - Hch 8, 9, 10, 12, 15: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/<cap>
+  - Desambiguación (Simón el curtidor Hch 9:43; Simón el mago Hch 8:9): pedro.json.
+  Sin verificar (acotado por nosotros, verificado:false en pedro.json): Samaria y Lida/Jope entre 33 y 36; Antioquía después de 49.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>11 · Búsqueda: Pedro</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 282px; --panel-w: 420px; }
+  /* Desplegable de búsqueda */
+  .be-topbar { overflow: visible; }
+  .srch { position: relative; flex: 1; max-width: 540px; }
+  .srch .be-search { max-width: none; }
+  .res { left: 0; top: 46px; width: 540px; padding: 6px 6px 0; }
+  .res .be-results__group { display: flex; align-items: center; gap: 8px; padding: 10px 10px 4px; }
+  .res .be-results__group .be-caps { color: var(--ink-3); }
+  .res .be-results__group b { font-weight: 600; color: var(--ink-4); font-size: var(--fs-2xs); }
+  .res .be-result { padding: 7px 10px; gap: 11px; }
+  .res .be-result__title { font-size: var(--fs-md); line-height: 1.2; }
+  .res .be-result__sub { font-size: var(--fs-xs); color: var(--ink-3); line-height: 1.3; }
+  .res .be-result__meta { font-size: var(--fs-xs); text-align: right; line-height: 1.3; white-space: nowrap; }
+  .res mark { background: #f1dfae; color: inherit; border-radius: 2px; padding: 0 1px; }
+  .res .be-result--active { box-shadow: inset 3px 0 0 var(--gold); }
+  .res .hint { display: flex; gap: 14px; align-items: center; padding: 9px 12px; margin: 6px -6px 0; border-top: 1px solid var(--line); background: var(--surface-2); border-radius: 0 0 var(--r-lg) var(--r-lg); font-size: var(--fs-2xs); color: var(--ink-3); font-weight: 600; }
+  .res .hint .be-kbd { margin-right: 4px; }
+  .ref-mini { font-size: var(--fs-2xs); font-weight: 600; color: var(--tier1); background: var(--tier1-soft); border-radius: var(--r-pill); padding: 1px 7px; }
+  .homonym { font-size: var(--fs-2xs); font-weight: 700; color: var(--unverified); background: var(--unverified-soft); border-radius: var(--r-pill); padding: 1px 7px; margin-left: 6px; }
+  /* Filtro activo en la barra superior */
+  .filter-pill { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 6px 0 10px; border-radius: var(--r-pill); background: var(--ink); color: #fbf7ef; font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; }
+  .filter-pill .x { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,.18); display: grid; place-items: center; }
+  .filter-pill .x .be-i { width: 12px; height: 12px; }
+  /* Mapa: el resto se atenúa */
+  .be-map .be-map__base { filter: saturate(.55) brightness(1.04) contrast(.92); }
+  .be-city.dim { opacity: .38; filter: grayscale(1); }
+  .be-city.dim .be-city__label { font-size: 12.5px; font-weight: 500; }
+  .edge { position: absolute; display: flex; align-items: center; gap: 8px; padding: 6px 10px 6px 12px; background: rgba(255, 253, 248, .96); border: 1px solid var(--line); border-radius: var(--r-pill); box-shadow: var(--shadow-2); font-size: var(--fs-xs); font-weight: 600; color: var(--ink); white-space: nowrap; z-index: 2; }
+  .edge small { color: var(--ink-3); font-weight: 500; }
+  .edge .be-i { color: var(--accent); }
+  .cluster { position: absolute; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 6px; padding: 3px 9px 3px 4px; background: var(--accent); color: #fff; border-radius: var(--r-pill); border: 2px solid #fff; box-shadow: var(--shadow-2); font-size: var(--fs-xs); font-weight: 700; white-space: nowrap; }
+  .cluster span { width: 20px; height: 20px; border-radius: 50%; background: #fff; color: var(--accent); display: grid; place-items: center; font-size: 11px; }
+  .inset { position: absolute; left: 12px; bottom: 26px; width: 172px; z-index: 3; overflow: hidden; padding: 0; }
+  .inset__head { display: flex; align-items: center; gap: 6px; padding: 7px 10px; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .inset__map { position: relative; height: 196px; }
+  .inset__map .be-city__label { font-size: 12.5px; }
+  .inset__map .be-city--minor .be-city__label { font-size: 11.5px; }
+  .inset .be-attrib { display: none; }
+  .legend-sm { font-size: var(--fs-2xs); }
+  .be-legend .be-city--current::before { width: 24px; height: 24px; margin: -12px 0 0 -12px; }
+  /* Panel */
+  .who { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+  .who h1 { font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.05; margin: 0; }
+  .who p { margin: 2px 0 0; font-size: var(--fs-sm); color: var(--ink-3); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 8px 10px; }
+  .stat b { display: block; font-family: var(--font-serif); font-size: 22px; line-height: 1; }
+  .stat span { font-size: var(--fs-2xs); color: var(--ink-3); font-weight: 600; }
+  .moments .be-row { align-items: flex-start; padding: 7px 2px; }
+  .moments .yr { width: 64px; flex: none; font-size: var(--fs-xs); font-weight: 700; color: #6e4f15; font-variant-numeric: tabular-nums; padding-top: 1px; }
+  .moments .be-row__title { font-size: var(--fs-sm); }
+  .moments .be-row--now { background: var(--gold-soft); border-radius: var(--r-sm); margin: 0 -8px; padding: 7px 10px; border-top-color: transparent; }
+  .moments .be-row--now + .be-row { border-top-color: transparent; }
+  .moments .be-ref { font-size: 10.5px; }
+  .noafirm { font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.45; margin: 6px 0 0; padding-left: 16px; }
+  .noafirm li { margin-bottom: 4px; }
+  /* Línea de tiempo: carriles atenuados */
+  .lane-dim { opacity: .33; filter: grayscale(.6); }
+</style>
+</head>
+<body>
+<div class="be-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="srch">
+      <div class="be-search be-search--focus"><i data-icon="search"></i><span class="be-search__text" style="color:var(--ink)">pedro<span style="display:inline-block;width:1.5px;height:17px;background:var(--ink);vertical-align:-3px;margin-left:1px"></span></span><span class="be-kbd">Esc</span></div>
+
+      <div class="be-results res">
+        <div class="be-results__group"><span class="be-caps">Personas</span><b>3</b></div>
+        <div class="be-result be-result--active">
+          <span class="be-node be-node--persona">P</span>
+          <div><div class="be-result__title"><mark>Pedro</mark>, apóstol</div><div class="be-result__sub">también Simón, Symeón, Cefas · Betsaida y Capernaúm</div></div>
+          <div class="be-result__meta"><b style="color:var(--ink-2)">29 – c. 64 e.c.</b><br>18 sucesos · 12 lugares</div>
+        </div>
+        <div class="be-result">
+          <span class="be-node be-node--persona" style="opacity:.75">S</span>
+          <div><div class="be-result__title">Simón el curtidor<span class="homonym">otro Simón</span></div><div class="be-result__sub">aloja a <mark>Pedro</mark> en Jope</div></div>
+          <div class="be-result__meta"><span class="ref-mini">Hch 9:43</span></div>
+        </div>
+        <div class="be-result">
+          <span class="be-node be-node--persona" style="opacity:.75">S</span>
+          <div><div class="be-result__title">Simón el mago<span class="homonym">otro Simón</span></div><div class="be-result__sub">Samaria · <mark>Pedro</mark> lo reprende</div></div>
+          <div class="be-result__meta"><span class="ref-mini">Hch 8:9-24</span></div>
+        </div>
+
+        <div class="be-results__group"><span class="be-caps">Cartas</span><b>2</b></div>
+        <div class="be-result">
+          <span class="be-node be-node--texto"><i data-icon="letter"></i></span>
+          <div><div class="be-result__title">1 <mark>Pedro</mark></div><div class="be-result__sub">desde Babilonia → Ponto, Galacia, Capadocia, Asia y Bitinia</div></div>
+          <div class="be-result__meta">c. 62-64 e.c.</div>
+        </div>
+        <div class="be-result">
+          <span class="be-node be-node--texto"><i data-icon="letter"></i></span>
+          <div><div class="be-result__title">2 <mark>Pedro</mark></div><div class="be-result__sub">lugar: Babilonia (?) según la tabla de libros</div></div>
+          <div class="be-result__meta">c. 64 e.c.</div>
+        </div>
+
+        <div class="be-results__group"><span class="be-caps">Lugares de su vida</span><b>12</b></div>
+        <div class="be-result" style="flex-wrap:wrap;gap:6px;padding-top:4px">
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Capernaúm</span>
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Jerusalén</span>
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Jope</span>
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Cesarea</span>
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Antioquía de Siria</span>
+          <span class="be-chip"><i class="be-i be-i--sm" data-icon="place" style="color:var(--node-lugar)"></i>Babilonia</span>
+          <span class="be-chip">+ 6</span>
+        </div>
+
+        <div class="be-results__group"><span class="be-caps">Pasajes</span><b>9</b></div>
+        <div class="be-result">
+          <span class="be-node be-node--evento"><i data-icon="book"></i></span>
+          <div><div class="be-result__title">Hch 10:1–11:18 · Cornelio</div><div class="be-result__sub">primeros gentiles incircuncisos · Jope y Cesarea</div></div>
+          <div class="be-result__meta">36 e.c.</div>
+        </div>
+        <div class="be-result">
+          <span class="be-node be-node--evento"><i data-icon="book"></i></span>
+          <div><div class="be-result__title">Hch 12:1-17 · Cárcel y liberación</div><div class="be-result__sub">Herodes Agripa I lo encarcela en Jerusalén</div></div>
+          <div class="be-result__meta">Pascua de 44</div>
+        </div>
+        <div class="hint"><span><span class="be-kbd">↑</span><span class="be-kbd">↓</span>moverse</span><span><span class="be-kbd">↵</span>abrir ficha</span><span><span class="be-kbd">Tab</span>fijar carril</span><span class="be-spacer"></span><span>El mapa y la línea ya muestran la vista previa</span></div>
+      </div>
+    </div>
+    <span class="filter-pill"><i class="be-i be-i--sm" data-icon="filter"></i>Pedro y sus vecinos<span class="x"><i data-icon="x"></i></span></span>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">36 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+    </div>
+    <div class="be-mapctl" style="left:740px;bottom:26px;flex-direction:row;align-items:flex-end">
+      <div class="be-float be-legend legend-sm" style="grid-auto-flow:column;gap:14px">
+        <div class="be-legend__row"><span class="be-city be-city--visited" style="position:static;transform:none;width:26px;justify-content:center"><span class="be-city__dot"></span></span>Lugar de Pedro</div>
+        <div class="be-legend__row"><span class="be-city be-city--current" style="position:relative;transform:none;width:34px;height:20px;justify-content:center"><span class="be-city__dot" style="width:12px;height:12px"></span></span>En 36 e.c.</div>
+        <div class="be-legend__row"><span class="be-city" style="position:static;transform:none;width:26px;justify-content:center;opacity:.4;filter:grayscale(1)"><span class="be-city__dot"></span></span>Fuera de la búsqueda</div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Búsqueda</span><span class="be-sep">›</span><span>Pedro</span></div>
+      <div class="who">
+        <span class="be-node be-node--persona be-node--lg">P</span>
+        <div><h1>Pedro</h1><p>Apóstol · también Simón, Symeón y Cefas</p></div>
+      </div>
+      <div class="be-tabs"><span class="be-tab be-tab--on">Resumen</span><span class="be-tab">Conexiones<b>24</b></span><span class="be-tab">Lugares<b>12</b></span><span class="be-tab">Fuentes<b>9</b></span></div>
+    </div>
+    <div class="be-panel__body">
+      <div class="stats">
+        <div class="stat"><b>18</b><span>sucesos con fecha</span></div>
+        <div class="stat"><b>12</b><span>lugares en el mapa</span></div>
+        <div class="stat"><b>2</b><span>cartas</span></div>
+      </div>
+
+      <article class="be-card">
+        <div class="be-card__pad" style="padding-bottom:8px">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="clock"></i>Su vida en seis momentos</div>
+          <div class="be-list moments" style="margin-top:6px">
+            <div class="be-row"><span class="yr">fin de 29</span><div><div class="be-row__title">Conoce a Jesús; recibe el nombre Cefas</div><div class="be-row__meta">Betania del otro lado del Jordán · <a class="be-ref">Jn 1:35-42</a></div></div></div>
+                        <div class="be-row"><span class="yr">33</span><div><div class="be-row__title">Portavoz en Pentecostés</div><div class="be-row__meta">Jerusalén · <a class="be-ref">Hch 2:1-41</a></div></div></div>
+            <div class="be-row be-row--now"><span class="yr">36</span><div><div class="be-row__title">Predica a Cornelio</div><div class="be-row__meta">Jope → Cesarea · <a class="be-ref">Hch 10</a></div></div></div>
+            <div class="be-row"><span class="yr">44</span><div><div class="be-row__title">Cárcel en la Pascua y liberación</div><div class="be-row__meta">Jerusalén · <a class="be-ref">Hch 12:1-17</a></div></div></div>
+            <div class="be-row"><span class="yr">c. 49</span><div><div class="be-row__title">Habla en la reunión de Jerusalén</div><div class="be-row__meta"><a class="be-ref">Hch 15:7-11</a></div></div></div>
+            <div class="be-row"><span class="yr">c. 62-64</span><div><div class="be-row__title">Escribe 1 Pedro desde Babilonia</div><div class="be-row__meta">con Silvano y Marcos · <a class="be-ref">1Pe 5:12, 13</a></div></div></div>
+          </div>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">Perspicacia · «Pedro»</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/d/r4/lp-s/1200003451">Leer en wol.jw.org</a></div>
+      </article>
+
+      <article class="be-card be-card--compact">
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="question"></i>Lo que no afirmamos</div>
+          <ul class="noafirm">
+            <li>Que estuviera en Roma: Perspicacia lo atribuye a tradiciones dudosas.</li>
+            <li>El año y el lugar de su muerte: <a class="be-ref">Jn 21:18, 19</a> la anuncia, pero no hay fecha.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  // Encuadre por densidad: los lugares de Israel a la derecha del desplegable.
+  // Antioquía, Babilonia y los destinatarios de 1 Pedro quedan fuera y se señalan en el borde.
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [30.1, 31.15, 36.9, 34.0] });
+
+  map.label('Mar Mediterráneo', 33.0, 32.3, { kind: 'sea', size: 19 });
+  map.label('Galilea', 35.62, 33.05, { kind: 'region' });
+  map.label('Samaria', 35.45, 32.45, { kind: 'region' });
+  map.label('Judea', 35.35, 31.45, { kind: 'region' });
+
+  // Fuera de la búsqueda: atenuado
+  for (const [id, side] of [['sidon', 'left'], ['gaza', 'left'], ['nazaret', 'left'], ['belen', 'bottom'], ['tolemaida', 'left']]) {
+    map.city(id, { variant: ['minor'], side }).classList.add('dim');
+  }
+
+  // Suceso en la fecha del cursor: Jope → Cesarea (Hch 10)
+  map.route(['jope', 'cesarea'], { kind: 'done', curve: -0.3 });
+  // Rastro tenue de lo ya vivido (29-33): Galilea → Jerusalén
+  map.route(['capernaum', 'jerusalen'], { kind: 'ghost', curve: -0.12 });
+
+  map.city('jerusalen', { variant: ['major', 'visited'], side: 'right', sub: '33 · 44 · c. 49' });
+  map.city('getsemani', { variant: ['minor'], label: '' });
+  map.city('samaria', { variant: ['visited'], side: 'right', sub: 'entre 33 y 36 · sin fecha exacta' });
+  map.city('lida', { variant: ['visited', 'minor'], side: 'bottom', sub: 'Eneas' });
+  map.city('jope', { variant: ['visited'], side: 'left', sub: 'Dorcas' });
+  map.city('cesarea', { variant: 'current', side: 'left', sub: '36 · casa de Cornelio' });
+  map.city('capernaum', { variant: ['visited'], side: 'left', sub: '30 · suegra de Simón' });
+  map.city('betsaida', { variant: ['visited', 'minor'], side: 'right' });
+  map.city('cesarea-de-filipo', { variant: ['visited'], side: 'left', sub: '32 · confesión de Pedro' });
+  map.city('monte-hermon', { variant: ['visited', 'minor'], side: 'right', label: 'Hermón', sub: '32 · ¿transfiguración?' });
+
+  const pill = (html, css) => { const e = document.createElement('div'); e.className = 'edge'; e.innerHTML = html; Object.assign(e.style, css); mapEl.appendChild(e); return e; };
+  pill('<i class="be-i be-i--sm" data-icon="arrow-right" style="transform:rotate(-90deg)"></i>Antioquía de Siria<small>· después de 49 · Gál 2:11</small>', { left: '740px', top: '14px' });
+  pill('<i class="be-i be-i--sm" data-icon="arrow-right" style="transform:rotate(-90deg)"></i>Destinatarios de 1 Pedro<small>· Ponto, Galacia, Capadocia, Asia, Bitinia</small>', { left: '740px', top: '56px' });
+  pill('<i class="be-i be-i--sm" data-icon="letter"></i>Babilonia<small>· 1 Pedro · a 870 km</small><i class="be-i be-i--sm" data-icon="arrow-right"></i>', { right: '14px', top: '446px' });
+
+  const sc = map.scaleBar(90); Object.assign(sc.style, { position: 'absolute', right: '14px', bottom: '80px', zIndex: 2 }); mapEl.appendChild(sc);
+
+  const TL = BE.timeline(document.getElementById('timeline'), {
+    from: 24, to: 70, tick: 5, minor: 1, cursor: 36.5, cursorLabel: '36 e.c. · Cornelio',
+    uncertain: [{ from: 33.4, to: 36.4 }],
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">Saltar de suceso en suceso</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span class="on">Décadas</span><span>Años</span><span>Meses</span></span>
+      <span class="be-chip be-chip--active"><i class="be-i be-i--sm" data-icon="target"></i>Encuadre: vida de Pedro · 29 – c. 64 e.c.</span>
+      <span class="be-spacer"></span>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">Lo demás, atenuado</span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pedro', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: 25.5, to: 29.8, label: '', fuzzy: 'start', color: '#c98f7c' },
+        { from: 29.8, to: 64.9, label: 'Pedro · de c. 29 a c. 64 e.c. con fecha · nacimiento y muerte sin fecha', active: true },
+        { from: 64.9, to: 69.5, label: '', fuzzy: 'end', color: '#c98f7c' } ] },
+      { label: 'Sucesos', icon: 'event', color: 'var(--node-evento)', items: [
+        { at: 29.8 }, { at: 30.4 }, { at: 31.4 }, { at: 32.3 }, { at: 32.7 },
+        { at: 33.3, label: 'Pentecostés' },
+        { at: 36.5 },
+        { at: 44.25, label: 'Cárcel · 44' },
+        { at: 49.5, label: 'Reunión · c. 49' } ] },
+      { label: 'Lugares', icon: 'place', color: 'var(--node-lugar)', items: [
+        { from: 29.8, to: 33.3, label: 'Galilea y Judea', color: 'var(--node-lugar)' },
+        { from: 36.2, to: 37, label: '', color: 'var(--node-lugar)' },
+        { from: 49.5, to: 52.5, label: 'Antioquía', soft: true, fuzzy: 'end', color: 'var(--node-lugar)' },
+        { from: 62, to: 64.9, label: 'Babilonia', color: 'var(--node-lugar)' } ] },
+      { label: 'Sin fecha exacta', icon: 'hourglass', color: 'var(--unverified)', items: [
+        { from: 33.4, to: 36.4, label: 'Hch 8:14–9:43', soft: true, color: 'var(--unverified)' } ] },
+      { label: 'Cartas', icon: 'letter', color: 'var(--gold)', items: [
+        { from: 61.6, to: 64.1, label: '1 Pedro', color: 'var(--gold)', fuzzy: 'start' },
+        { at: 64.6, label: '2 Pedro · c. 64' } ] },
+      { label: 'Jesús', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: 29.8, to: 33.3, label: 'Ministerio', color: '#8c6a5e' } ] },
+      { label: 'Pablo', icon: 'person', color: 'var(--ink-3)', items: [
+        { from: 47, to: 61.9, label: 'Pablo · viajes, custodia y Roma · c. 47-61', color: 'var(--ink-3)' } ] },
+    ],
+  });
+  // Carriles fuera de la búsqueda: atenuados (Pablo)
+  const lanes = TL.querySelectorAll('.be-lane'), labels = TL.querySelectorAll('.be-lane-label');
+  lanes[6].classList.add('lane-dim'); labels[6].classList.add('lane-dim');
+  labels[6].insertAdjacentHTML('beforeend', '<small style="font-weight:500;color:var(--ink-4);margin-left:auto">vecino lejano</small>');
+});
+</script>
+</body>
+</html>

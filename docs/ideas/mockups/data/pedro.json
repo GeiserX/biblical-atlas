@@ -1,0 +1,777 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Pedro: sucesos con fecha y lugar",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-pedro": {
+      "titulo": "Pedro",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003451",
+      "nivel": 1
+    },
+    "it-pedro-cartas": {
+      "titulo": "Pedro, Cartas de",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003452",
+      "nivel": 1
+    },
+    "it-pablo": {
+      "titulo": "Pablo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003406",
+      "nivel": 1
+    },
+    "a7-b": {
+      "titulo": "A7-B La vida de Jesús en la tierra: El principio del ministerio de Jesús",
+      "obra": "TNM (edición de estudio), apéndice A7",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070208",
+      "nivel": 1
+    },
+    "a7-c": {
+      "titulo": "A7-C El gran ministerio de Jesús en Galilea (Parte 1)",
+      "obra": "TNM (edición de estudio), apéndice A7",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070209",
+      "nivel": 1
+    },
+    "a7-d": {
+      "titulo": "A7-D El gran ministerio de Jesús en Galilea (Parte 2)",
+      "obra": "TNM (edición de estudio), apéndice A7",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070210",
+      "nivel": 1
+    },
+    "a7-e": {
+      "titulo": "A7-E El gran ministerio de Jesús en Galilea (Parte 3) y en Judea",
+      "obra": "TNM (edición de estudio), apéndice A7",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070211",
+      "nivel": 1
+    },
+    "hch-8": {
+      "titulo": "Hechos 8",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8",
+      "nivel": 1
+    },
+    "hch-9": {
+      "titulo": "Hechos 9",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9",
+      "nivel": 1
+    },
+    "hch-10": {
+      "titulo": "Hechos 10",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/10",
+      "nivel": 1
+    },
+    "hch-11": {
+      "titulo": "Hechos 11",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/11",
+      "nivel": 1
+    },
+    "hch-12": {
+      "titulo": "Hechos 12",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12",
+      "nivel": 1
+    },
+    "hch-15": {
+      "titulo": "Hechos 15",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15",
+      "nivel": 1
+    },
+    "1pe-5": {
+      "titulo": "1 Pedro 5",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/5",
+      "nivel": 1
+    }
+  },
+  "persona": {
+    "id": "pedro",
+    "nombre": "Pedro",
+    "otros_nombres": [
+      "Simón",
+      "Symeón",
+      "Cefas",
+      "Simón Pedro"
+    ],
+    "padre": "Juan (o Jonás)",
+    "hermano": "Andrés",
+    "residencias": [
+      {
+        "nombre": "Betsaida",
+        "tipo": "ciudad",
+        "lat": 32.91038,
+        "lon": 35.63096,
+        "coord_fuente": "openbible:a91b732",
+        "coord_url": "https://www.openbible.info/geo/ancient/a91b732/bethsaida-1",
+        "coord_nota": "OpenBible registra 4 identificaciones; se usa la de mayor puntuación (466/1000).",
+        "rol": "residencia inicial"
+      },
+      {
+        "nombre": "Capernaúm",
+        "tipo": "ciudad",
+        "lat": 32.88111,
+        "lon": 35.575,
+        "coord_fuente": "openbible:af2161c",
+        "coord_url": "https://www.openbible.info/geo/ancient/af2161c/capernaum",
+        "coord_nota": "OpenBible registra 2 identificaciones; se usa la de mayor puntuación (842/1000).",
+        "rol": "residencia posterior"
+      }
+    ],
+    "desambiguacion": "No confundir con Simón el zelote, Simón el curtidor de Jope (Hch 9:43), ni Simón el mago de Samaria (Hch 8:9).",
+    "fuentes": [
+      "it-pedro",
+      "hch-8",
+      "hch-9"
+    ]
+  },
+  "items": [
+    {
+      "id": "conoce-a-jesus",
+      "titulo": "Andrés lo lleva a Jesús; recibe el nombre Cefas",
+      "referencia": "Jn 1:35-42",
+      "lugares": [
+        {
+          "nombre": "Betania del otro lado del Jordán",
+          "tipo": "ciudad",
+          "lat": null,
+          "lon": null,
+          "coord_nota": "Ubicación incierta; sin coordenada. Dibujar como zona junto al Jordán."
+        }
+      ],
+      "fecha": {
+        "desde": 29,
+        "hasta": 29,
+        "precision": "estación",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "finales de 29 e.c. (poco después del bautismo de Jesús, c. octubre de 29)"
+      },
+      "fuentes": [
+        "a7-b",
+        "it-pedro"
+      ],
+      "verificado": true,
+      "nota": "El apéndice A7-B sitúa estos primeros discípulos en Betania del otro lado del Jordán."
+    },
+    {
+      "id": "llamado-pescador",
+      "titulo": "Jesús lo llama a dejar la pesca y seguirlo, junto a Andrés, Santiago y Juan",
+      "referencia": "Mt 4:18-22; Mr 1:16-20; Lu 5:1-11",
+      "lugares": [
+        {
+          "nombre": "Mar de Galilea",
+          "tipo": "agua",
+          "lat": 32.81891,
+          "lon": 35.59003,
+          "coord_fuente": "openbible:a562fcc",
+          "coord_url": "https://www.openbible.info/geo/ancient/a562fcc/sea-of-galilee"
+        }
+      ],
+      "fecha": {
+        "desde": 30,
+        "hasta": 30,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "año 30 e.c."
+      },
+      "fuentes": [
+        "a7-c",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "suegra",
+      "titulo": "Jesús cura a la suegra de Simón",
+      "referencia": "Mr 1:29-31",
+      "lugares": [
+        {
+          "nombre": "Capernaúm",
+          "tipo": "ciudad",
+          "lat": 32.88111,
+          "lon": 35.575,
+          "coord_fuente": "openbible:af2161c",
+          "coord_url": "https://www.openbible.info/geo/ancient/af2161c/capernaum",
+          "coord_nota": "OpenBible registra 2 identificaciones; se usa la de mayor puntuación (842/1000)."
+        }
+      ],
+      "fecha": {
+        "desde": 30,
+        "hasta": 30,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "año 30 e.c."
+      },
+      "fuentes": [
+        "a7-c",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "apostol",
+      "titulo": "Elegido entre los 12 apóstoles",
+      "referencia": "Mr 3:13-19; Lu 6:12-16",
+      "lugares": [
+        {
+          "nombre": "Capernaúm",
+          "tipo": "ciudad",
+          "lat": 32.88111,
+          "lon": 35.575,
+          "coord_fuente": "openbible:af2161c",
+          "coord_url": "https://www.openbible.info/geo/ancient/af2161c/capernaum",
+          "coord_nota": "OpenBible registra 2 identificaciones; se usa la de mayor puntuación (842/1000).",
+          "rol": "cerca de"
+        }
+      ],
+      "fecha": {
+        "desde": 31,
+        "hasta": 31,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "31 e.c. (después de la Pascua de 31)"
+      },
+      "fuentes": [
+        "a7-c",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "camina-sobre-el-agua",
+      "titulo": "Camina sobre el agua y empieza a hundirse",
+      "referencia": "Mt 14:22-33",
+      "lugares": [
+        {
+          "nombre": "Mar de Galilea",
+          "tipo": "agua",
+          "lat": 32.81891,
+          "lon": 35.59003,
+          "coord_fuente": "openbible:a562fcc",
+          "coord_url": "https://www.openbible.info/geo/ancient/a562fcc/sea-of-galilee"
+        }
+      ],
+      "fecha": {
+        "desde": 32,
+        "hasta": 32,
+        "precision": "estación",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "cerca de la Pascua de 32"
+      },
+      "fuentes": [
+        "a7-d",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "confesion",
+      "titulo": "Reconoce a Jesús como el Cristo; llaves del Reino",
+      "referencia": "Mt 16:13-19",
+      "lugares": [
+        {
+          "nombre": "Cesarea de Filipo",
+          "tipo": "ciudad",
+          "lat": 33.24611,
+          "lon": 35.69333,
+          "coord_fuente": "openbible:ab7bf48",
+          "coord_url": "https://www.openbible.info/geo/ancient/ab7bf48/caesarea-philippi",
+          "rol": "por"
+        }
+      ],
+      "fecha": {
+        "desde": 32,
+        "hasta": 32,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "después de la Pascua de 32"
+      },
+      "fuentes": [
+        "a7-e",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "transfiguracion",
+      "titulo": "Testigo de la transfiguración con Santiago y Juan",
+      "referencia": "Mt 17:1-13",
+      "lugares": [
+        {
+          "nombre": "Monte Hermón",
+          "tipo": "monte",
+          "lat": 33.4,
+          "lon": 35.85,
+          "coord_fuente": "openbible:a341fe8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a341fe8/mount-hermon",
+          "nota": "El apéndice dice “probablemente monte Hermón”."
+        }
+      ],
+      "fecha": {
+        "desde": 32,
+        "hasta": 32,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "32 e.c."
+      },
+      "fuentes": [
+        "a7-e",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "getsemani-y-negacion",
+      "titulo": "Se duerme en Getsemaní y niega tres veces a Jesús",
+      "referencia": "Mt 26:36-75",
+      "lugares": [
+        {
+          "nombre": "Getsemaní",
+          "tipo": "ciudad",
+          "lat": 31.77942,
+          "lon": 35.23942,
+          "coord_fuente": "openbible:a42418f",
+          "coord_url": "https://www.openbible.info/geo/ancient/a42418f/gethsemane"
+        },
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 33,
+        "hasta": 33,
+        "precision": "día",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "14 de nisán de 33 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "pentecostes",
+      "titulo": "Portavoz de los apóstoles en Pentecostés; usa la primera de las llaves",
+      "referencia": "Hch 2:1-41",
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 33,
+        "hasta": 33,
+        "precision": "día",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "6 de siván de 33 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "samaria",
+      "titulo": "Va con Juan a Samaria; los creyentes reciben espíritu santo",
+      "referencia": "Hch 8:14-25",
+      "lugares": [
+        {
+          "nombre": "Samaria",
+          "tipo": "ciudad",
+          "lat": 32.27611,
+          "lon": 35.195,
+          "coord_fuente": "openbible:a041bb3",
+          "coord_url": "https://www.openbible.info/geo/ancient/a041bb3/samaria-1"
+        }
+      ],
+      "fecha": {
+        "desde": 33,
+        "hasta": 36,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "narrativa",
+        "cronologia": "tnm",
+        "texto": "entre 33 y 36 e.c. (después de la muerte de Esteban; la fuente no da año)"
+      },
+      "fuentes": [
+        "hch-8",
+        "it-pedro"
+      ],
+      "verificado": false,
+      "nota": "Fecha acotada por nosotros entre dos anclas; ninguna fuente da el año."
+    },
+    {
+      "id": "lida-y-jope",
+      "titulo": "Sana a Eneas en Lida y resucita a Dorcas en Jope",
+      "referencia": "Hch 9:32-43",
+      "lugares": [
+        {
+          "nombre": "Lida",
+          "tipo": "ciudad",
+          "lat": 31.95,
+          "lon": 34.9,
+          "coord_fuente": "openbible:a2c5cc7",
+          "coord_url": "https://www.openbible.info/geo/ancient/a2c5cc7/lod"
+        },
+        {
+          "nombre": "Jope",
+          "tipo": "ciudad",
+          "lat": 32.05448,
+          "lon": 34.75304,
+          "coord_fuente": "openbible:ae023a9",
+          "coord_url": "https://www.openbible.info/geo/ancient/ae023a9/joppa"
+        }
+      ],
+      "fecha": {
+        "desde": 33,
+        "hasta": 36,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "narrativa",
+        "cronologia": "tnm",
+        "texto": "antes de la visita a Cornelio (36); la fuente no da año"
+      },
+      "fuentes": [
+        "hch-9",
+        "it-pedro"
+      ],
+      "verificado": false,
+      "nota": "Fecha acotada por nosotros; ninguna fuente da el año."
+    },
+    {
+      "id": "cornelio",
+      "titulo": "Predica a Cornelio: primeros gentiles incircuncisos",
+      "referencia": "Hch 10:1–11:18",
+      "lugares": [
+        {
+          "nombre": "Jope",
+          "tipo": "ciudad",
+          "lat": 32.05448,
+          "lon": 34.75304,
+          "coord_fuente": "openbible:ae023a9",
+          "coord_url": "https://www.openbible.info/geo/ancient/ae023a9/joppa"
+        },
+        {
+          "nombre": "Cesarea",
+          "tipo": "ciudad",
+          "lat": 32.5,
+          "lon": 34.89167,
+          "coord_fuente": "openbible:a58735e",
+          "coord_url": "https://www.openbible.info/geo/ancient/a58735e/caesarea"
+        },
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 36,
+        "hasta": 36,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "36 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pedro",
+        "hch-10",
+        "hch-11"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "visita-de-pablo",
+      "titulo": "Pablo pasa quince días con Cefas",
+      "referencia": "Gál 1:18, 19",
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 36,
+        "hasta": 36,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "quizás 36 e.c."
+      },
+      "fuentes": [
+        "it-pablo",
+        "it-pedro"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "carcel-44",
+      "titulo": "Herodes Agripa I lo encarcela; un ángel lo libera",
+      "referencia": "Hch 12:1-17",
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 44,
+        "hasta": 44,
+        "precision": "estación",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "Pascua de 44 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pedro",
+        "hch-12"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "reunion-49",
+      "titulo": "Habla en la reunión de apóstoles y ancianos sobre la circuncisión",
+      "referencia": "Hch 15:7-11",
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fecha": {
+        "desde": 49,
+        "hasta": 49,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 49 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pedro",
+        "hch-15"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "antioquia",
+      "titulo": "Pablo lo corrige en Antioquía",
+      "referencia": "Gál 2:11-14",
+      "lugares": [
+        {
+          "nombre": "Antioquía de Siria",
+          "tipo": "ciudad",
+          "lat": 36.22669,
+          "lon": 36.17174,
+          "coord_fuente": "openbible:ae41ab4",
+          "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+        }
+      ],
+      "fecha": {
+        "desde": 49,
+        "hasta": 52,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "narrativa",
+        "cronologia": "tnm",
+        "texto": "después de 49; la fuente no da año"
+      },
+      "fuentes": [
+        "it-pedro",
+        "it-pablo"
+      ],
+      "verificado": false,
+      "nota": "Fecha acotada por nosotros."
+    },
+    {
+      "id": "1-pedro",
+      "titulo": "Escribe 1 Pedro desde Babilonia, con Silvano y Marcos",
+      "referencia": "1Pe 5:12, 13",
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1",
+          "nota": "Perspicacia: la ciudad junto al Éufrates, no Roma."
+        }
+      ],
+      "fecha": {
+        "desde": 62,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 62-64 e.c."
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "it-pedro-cartas",
+        "1pe-5"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "2-pedro",
+      "titulo": "Escribe 2 Pedro, posiblemente desde Babilonia",
+      "referencia": "2Pe 1:1, 14",
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1",
+          "nota": "La tabla pone “Babilonia (?)”."
+        }
+      ],
+      "fecha": {
+        "desde": 64,
+        "hasta": 64,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 64 e.c."
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "it-pedro-cartas"
+      ],
+      "verificado": true
+    }
+  ],
+  "destinatarios_1_pedro": {
+    "referencia": "1Pe 1:1",
+    "lugares": [
+      {
+        "nombre": "Ponto",
+        "tipo": "región",
+        "lat": 40.68,
+        "lon": 37.83,
+        "coord_fuente": "openbible:a83a43e",
+        "coord_url": "https://www.openbible.info/geo/ancient/a83a43e/pontus"
+      },
+      {
+        "nombre": "Galacia",
+        "tipo": "región",
+        "lat": 39.26667,
+        "lon": 32.98333,
+        "coord_fuente": "openbible:a0f440a",
+        "coord_url": "https://www.openbible.info/geo/ancient/a0f440a/galatia"
+      },
+      {
+        "nombre": "Capadocia",
+        "tipo": "región",
+        "lat": 38.67056,
+        "lon": 34.83917,
+        "coord_fuente": "openbible:a33fbde",
+        "coord_url": "https://www.openbible.info/geo/ancient/a33fbde/cappadocia"
+      },
+      {
+        "nombre": "Asia",
+        "tipo": "región",
+        "lat": 38.4,
+        "lon": 28.3,
+        "coord_fuente": "openbible:a197f19",
+        "coord_url": "https://www.openbible.info/geo/ancient/a197f19/asia"
+      },
+      {
+        "nombre": "Bitinia",
+        "tipo": "región",
+        "lat": 40.5,
+        "lon": 31.0,
+        "coord_fuente": "openbible:a5c0cb0",
+        "coord_url": "https://www.openbible.info/geo/ancient/a5c0cb0/bithynia"
+      }
+    ],
+    "fuentes": [
+      "it-pedro-cartas"
+    ],
+    "verificado": true
+  },
+  "no_afirmamos": [
+    "Que Pedro estuviera en Roma: Perspicacia lo atribuye a tradiciones dudosas.",
+    "Fecha y lugar de su muerte: Jn 21:18, 19 la anuncia, pero ninguna fuente de nivel 1 da año ni lugar."
+  ]
+}

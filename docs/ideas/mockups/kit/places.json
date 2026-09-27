@@ -1,0 +1,4201 @@
+{
+ "descripcion": "Lugares clave para las maquetas de biblical-earth. Coordenadas: OpenBible.info Bible Geocoding Data (CC BY 4.0) y Wikidata (CC0) para los lugares extrabíblicos. Nombres en español comprobados en la Traducción del Nuevo Mundo (wol.jw.org); cada lugar guarda el capítulo donde se comprobó. País actual: Natural Earth (dominio público).",
+ "licencia": "CC BY 4.0 (OpenBible.info). Atribución: \"Bible geocoding data by OpenBible.info, CC BY 4.0\".",
+ "campos": {
+  "confianza": "alta (>=800), media (>=500) o baja según la puntuación de OpenBible de la identificación principal; desconocida si no hay coordenadas",
+  "candidatos": "otras identificaciones propuestas, para dibujar la incertidumbre como zona o abanico",
+  "pais_aprox": "el punto cae en el mar o en la costa; país más cercano",
+  "pais": "país actual según Natural Earth, que refleja el control de facto; no es una postura política"
+ },
+ "lugares": [
+  {
+   "id": "jerusalen",
+   "nombre": "Jerusalén",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "jesus",
+    "israel"
+   ],
+   "referencia": "Hch 21:17",
+   "lon": 35.2342,
+   "lat": 31.7767,
+   "moderno": "Jerusalén",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:17)."
+   },
+   "openbible_id": "a15257a"
+  },
+  {
+   "id": "damasco",
+   "nombre": "Damasco",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 9:3",
+   "lon": 36.3064,
+   "lat": 33.5111,
+   "moderno": "Damasco",
+   "pais": "Siria",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9",
+    "nota": "Nombre comprobado en la TNM (Hch 9:3)."
+   },
+   "openbible_id": "a69c1d4"
+  },
+  {
+   "id": "tarso",
+   "nombre": "Tarso",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 9:11",
+   "lon": 34.8921,
+   "lat": 36.913,
+   "moderno": "Tarso (Tarsus)",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9",
+    "nota": "Nombre comprobado en la TNM (Hch 9:11)."
+   },
+   "openbible_id": "a666ea0"
+  },
+  {
+   "id": "antioquia-de-siria",
+   "nombre": "Antioquía de Siria",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:1",
+   "lon": 36.1717,
+   "lat": 36.2267,
+   "moderno": "Antakya",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:1)."
+   },
+   "openbible_id": "ae41ab4"
+  },
+  {
+   "id": "seleucia",
+   "nombre": "Seleucia",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:4",
+   "lon": 35.922,
+   "lat": 36.124,
+   "moderno": "Çevlik (Samandağ)",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:4)."
+   },
+   "openbible_id": "a6d306d"
+  },
+  {
+   "id": "salamina",
+   "nombre": "Salamina",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:5",
+   "lon": 33.9019,
+   "lat": 35.1849,
+   "moderno": "ruinas de Salamina, cerca de Famagusta",
+   "pais": "República Turca del Norte de Chipre",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:5)."
+   },
+   "openbible_id": "afa863b"
+  },
+  {
+   "id": "pafos",
+   "nombre": "Pafos",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:6",
+   "lon": 32.4042,
+   "lat": 34.7557,
+   "moderno": "Kato Pafos",
+   "pais": "Chipre",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:6)."
+   },
+   "openbible_id": "a314765"
+  },
+  {
+   "id": "perga",
+   "nombre": "Perga",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:13",
+   "lon": 30.8537,
+   "lat": 36.9604,
+   "moderno": "ruinas de Perge, cerca de Aksu",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:13)."
+   },
+   "openbible_id": "aff04b8"
+  },
+  {
+   "id": "atalia",
+   "nombre": "Atalia",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:25",
+   "lon": 30.7036,
+   "lat": 36.8813,
+   "moderno": "Antalya",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:25)."
+   },
+   "openbible_id": "ac744c1"
+  },
+  {
+   "id": "antioquia-de-pisidia",
+   "nombre": "Antioquía de Pisidia",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:14",
+   "lon": 31.1892,
+   "lat": 38.3061,
+   "moderno": "ruinas cerca de Yalvaç",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:14)."
+   },
+   "openbible_id": "a6c704a"
+  },
+  {
+   "id": "iconio",
+   "nombre": "Iconio",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:1",
+   "lon": 32.4923,
+   "lat": 37.8722,
+   "moderno": "Konya",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:1)."
+   },
+   "openbible_id": "ae425aa"
+  },
+  {
+   "id": "listra",
+   "nombre": "Listra",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:6",
+   "lon": 32.3384,
+   "lat": 37.6017,
+   "moderno": "Hatunsaray (Klistra)",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:6)."
+   },
+   "openbible_id": "af0719d"
+  },
+  {
+   "id": "derbe",
+   "nombre": "Derbe",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:6",
+   "lon": 33.3615,
+   "lat": 37.3486,
+   "moderno": "Kerti Hüyük, cerca de Karaman",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 860,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:6)."
+   },
+   "openbible_id": "aa401a9"
+  },
+  {
+   "id": "troas",
+   "nombre": "Troas",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:8",
+   "lon": 26.1586,
+   "lat": 39.7519,
+   "moderno": "ruinas de Alejandría de Tróade, cerca de Dalyan",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:8)."
+   },
+   "openbible_id": "a91c509"
+  },
+  {
+   "id": "samotracia",
+   "nombre": "Samotracia",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:11",
+   "lon": 25.5833,
+   "lat": 40.45,
+   "moderno": "Samotracia",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:11)."
+   },
+   "openbible_id": "a68750d"
+  },
+  {
+   "id": "neapolis",
+   "nombre": "Neápolis",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:11",
+   "lon": 24.415,
+   "lat": 40.935,
+   "moderno": "Kavala",
+   "pais": "Grecia",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:11)."
+   },
+   "openbible_id": "a6a7150"
+  },
+  {
+   "id": "filipos",
+   "nombre": "Filipos",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:12",
+   "lon": 24.2846,
+   "lat": 41.0121,
+   "moderno": "ruinas cerca de Krinides",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:12)."
+   },
+   "openbible_id": "a49e1d0"
+  },
+  {
+   "id": "anfipolis",
+   "nombre": "Anfípolis",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 17:1",
+   "lon": 23.8472,
+   "lat": 40.8202,
+   "moderno": "Anfípolis",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+    "nota": "Nombre comprobado en la TNM (Hch 17:1)."
+   },
+   "openbible_id": "a4bdea7"
+  },
+  {
+   "id": "apolonia",
+   "nombre": "Apolonia",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 17:1",
+   "lon": 23.4697,
+   "lat": 40.6237,
+   "moderno": "Apolonia (Macedonia Central)",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+    "nota": "Nombre comprobado en la TNM (Hch 17:1)."
+   },
+   "openbible_id": "ab20df9"
+  },
+  {
+   "id": "tesalonica",
+   "nombre": "Tesalónica",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 17:1",
+   "lon": 22.9458,
+   "lat": 40.6378,
+   "moderno": "Salónica",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+    "nota": "Nombre comprobado en la TNM (Hch 17:1)."
+   },
+   "openbible_id": "afa9d8e"
+  },
+  {
+   "id": "berea",
+   "nombre": "Berea",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 17:10",
+   "lon": 22.2,
+   "lat": 40.5183,
+   "moderno": "Veria",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+    "nota": "Nombre comprobado en la TNM (Hch 17:10)."
+   },
+   "openbible_id": "a62fe31"
+  },
+  {
+   "id": "atenas",
+   "nombre": "Atenas",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 17:15",
+   "lon": 23.7267,
+   "lat": 37.9719,
+   "moderno": "Atenas",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+    "nota": "Nombre comprobado en la TNM (Hch 17:15)."
+   },
+   "openbible_id": "a1fe6e7"
+  },
+  {
+   "id": "corinto",
+   "nombre": "Corinto",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 18:1",
+   "lon": 22.8787,
+   "lat": 37.9058,
+   "moderno": "Corinto Antiguo",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:1)."
+   },
+   "openbible_id": "a6f437a"
+  },
+  {
+   "id": "cencreas",
+   "nombre": "Cencreas",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 18:18",
+   "lon": 22.9968,
+   "lat": 37.8843,
+   "moderno": "Kechries",
+   "pais": "Grecia",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:18)."
+   },
+   "openbible_id": "aa31dd3"
+  },
+  {
+   "id": "efeso",
+   "nombre": "Éfeso",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 18:19",
+   "lon": 27.3407,
+   "lat": 37.9391,
+   "moderno": "ruinas cerca de Selçuk",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:19)."
+   },
+   "openbible_id": "a5feb15"
+  },
+  {
+   "id": "cesarea",
+   "nombre": "Cesarea",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 18:22",
+   "lon": 34.8917,
+   "lat": 32.5,
+   "moderno": "Cesarea (Qesarya)",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:22)."
+   },
+   "openbible_id": "a58735e"
+  },
+  {
+   "id": "ason",
+   "nombre": "Asón",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 20:13",
+   "lon": 26.3367,
+   "lat": 39.4906,
+   "moderno": "Behramkale",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+    "nota": "Nombre comprobado en la TNM (Hch 20:13)."
+   },
+   "openbible_id": "a0a2ca7"
+  },
+  {
+   "id": "mitilene",
+   "nombre": "Mitilene",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 20:14",
+   "lon": 26.547,
+   "lat": 39.1105,
+   "moderno": "Mitilene (Lesbos)",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+    "nota": "Nombre comprobado en la TNM (Hch 20:14)."
+   },
+   "openbible_id": "a33910d"
+  },
+  {
+   "id": "quios",
+   "nombre": "Quíos",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 20:15",
+   "lon": 26.1375,
+   "lat": 38.3725,
+   "moderno": "Quíos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+    "nota": "Nombre comprobado en la TNM (Hch 20:15)."
+   },
+   "openbible_id": "a4c2c75"
+  },
+  {
+   "id": "samos",
+   "nombre": "Samos",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 20:15",
+   "lon": 26.8333,
+   "lat": 37.75,
+   "moderno": "Samos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+    "nota": "Nombre comprobado en la TNM (Hch 20:15)."
+   },
+   "openbible_id": "acf6ec0"
+  },
+  {
+   "id": "mileto",
+   "nombre": "Mileto",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 20:15",
+   "lon": 27.2756,
+   "lat": 37.5311,
+   "moderno": "ruinas cerca de Balat",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+    "nota": "Nombre comprobado en la TNM (Hch 20:15)."
+   },
+   "openbible_id": "a55027d"
+  },
+  {
+   "id": "cos",
+   "nombre": "Cos",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 21:1",
+   "lon": 27.1103,
+   "lat": 36.8153,
+   "moderno": "Cos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:1)."
+   },
+   "openbible_id": "a398e5d"
+  },
+  {
+   "id": "rodas",
+   "nombre": "Rodas",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 21:1",
+   "lon": 28.2109,
+   "lat": 36.4402,
+   "moderno": "Rodas",
+   "pais": "Grecia",
+   "confianza": "baja",
+   "puntuacion_openbible": 471,
+   "candidatos": [
+    {
+     "lon": 28.2109,
+     "lat": 36.4402,
+     "identificacion": "Rhodes",
+     "puntuacion": 471
+    },
+    {
+     "lon": 28.2109,
+     "lat": 36.4402,
+     "identificacion": "Acropolis of Rhodes",
+     "puntuacion": 464
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:1)."
+   },
+   "openbible_id": "a4218ee"
+  },
+  {
+   "id": "patara",
+   "nombre": "Pátara",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 21:1",
+   "lon": 29.3142,
+   "lat": 36.2603,
+   "moderno": "Gelemiş",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:1)."
+   },
+   "openbible_id": "ade301b"
+  },
+  {
+   "id": "tiro",
+   "nombre": "Tiro",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 21:3",
+   "lon": 35.1961,
+   "lat": 33.2708,
+   "moderno": "Tiro (Sur)",
+   "pais": "Líbano",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:3)."
+   },
+   "openbible_id": "a160272"
+  },
+  {
+   "id": "tolemaida",
+   "nombre": "Tolemaida",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 21:7",
+   "lon": 35.0692,
+   "lat": 32.9214,
+   "moderno": "Acre (Akko)",
+   "pais": "Israel",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+    "nota": "Nombre comprobado en la TNM (Hch 21:7)."
+   },
+   "openbible_id": "abc2af0"
+  },
+  {
+   "id": "sidon",
+   "nombre": "Sidón",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 27:3",
+   "lon": 35.3719,
+   "lat": 33.561,
+   "moderno": "Sidón (Saida)",
+   "pais": "Líbano",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:3)."
+   },
+   "openbible_id": "a98e4d7"
+  },
+  {
+   "id": "mira",
+   "nombre": "Mira",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:5",
+   "lon": 29.9853,
+   "lat": 36.2592,
+   "moderno": "Demre",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:5)."
+   },
+   "openbible_id": "aa4b3e2"
+  },
+  {
+   "id": "cnido",
+   "nombre": "Cnido",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:7",
+   "lon": 27.375,
+   "lat": 36.6858,
+   "moderno": "ruinas cerca de Datça",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:7)."
+   },
+   "openbible_id": "ab793ce"
+  },
+  {
+   "id": "bellos-puertos",
+   "nombre": "Bellos Puertos",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:8",
+   "lon": 24.8003,
+   "lat": 34.9297,
+   "moderno": "Kali Limenes",
+   "pais": "Grecia",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:8)."
+   },
+   "openbible_id": "aae626a"
+  },
+  {
+   "id": "lasea",
+   "nombre": "Lasea",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:8",
+   "lon": 24.8111,
+   "lat": 34.9406,
+   "moderno": "ruinas cerca de Kali Limenes",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:8)."
+   },
+   "openbible_id": "a56788c"
+  },
+  {
+   "id": "fenice",
+   "nombre": "Fenice",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:12",
+   "lon": 24.0722,
+   "lat": 35.2,
+   "moderno": "Loutro (probable)",
+   "pais": "Grecia",
+   "confianza": "media",
+   "puntuacion_openbible": 521,
+   "candidatos": [
+    {
+     "lon": 24.0722,
+     "lat": 35.2,
+     "identificacion": "Finikas",
+     "puntuacion": 521
+    },
+    {
+     "lon": 24.0786,
+     "lat": 35.2,
+     "identificacion": "Loutro",
+     "puntuacion": 333
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:12)."
+   },
+   "openbible_id": "a9ee958"
+  },
+  {
+   "id": "cauda",
+   "nombre": "Cauda",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:16",
+   "lon": 24.0833,
+   "lat": 34.8333,
+   "moderno": "Gavdos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:16)."
+   },
+   "openbible_id": "aca2b0a"
+  },
+  {
+   "id": "malta",
+   "nombre": "Malta",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:1",
+   "lon": 14.4117,
+   "lat": 35.9335,
+   "moderno": "Malta",
+   "pais": "Malta",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:1)."
+   },
+   "openbible_id": "a57835d"
+  },
+  {
+   "id": "siracusa",
+   "nombre": "Siracusa",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:12",
+   "lon": 15.2931,
+   "lat": 37.0639,
+   "moderno": "Siracusa",
+   "pais": "Italia",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:12)."
+   },
+   "openbible_id": "a1e3697"
+  },
+  {
+   "id": "regio",
+   "nombre": "Regio",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:13",
+   "lon": 15.6441,
+   "lat": 38.1088,
+   "moderno": "Reggio de Calabria",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:13)."
+   },
+   "openbible_id": "a63bb26"
+  },
+  {
+   "id": "puteoli",
+   "nombre": "Puteoli",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:13",
+   "lon": 14.1206,
+   "lat": 40.8261,
+   "moderno": "Pozzuoli",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:13)."
+   },
+   "openbible_id": "a4488e9"
+  },
+  {
+   "id": "plaza-del-mercado-de-apio",
+   "nombre": "Plaza del Mercado de Apio",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:15",
+   "lon": 12.9975,
+   "lat": 41.4664,
+   "moderno": "Borgo Faiti, cerca de Latina",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:15)."
+   },
+   "openbible_id": "a121d5e"
+  },
+  {
+   "id": "tres-tabernas",
+   "nombre": "Tres Tabernas",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:15",
+   "lon": 12.8739,
+   "lat": 41.5619,
+   "moderno": "cerca de Cisterna di Latina",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:15)."
+   },
+   "openbible_id": "afef438"
+  },
+  {
+   "id": "roma",
+   "nombre": "Roma",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 28:16",
+   "lon": 12.4852,
+   "lat": 41.8922,
+   "moderno": "Roma",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+    "nota": "Nombre comprobado en la TNM (Hch 28:16)."
+   },
+   "openbible_id": "afc8e7a"
+  },
+  {
+   "id": "jope",
+   "nombre": "Jope",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 9:36",
+   "lon": 34.753,
+   "lat": 32.0545,
+   "moderno": "Jaffa (Tel Aviv-Yafo)",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9",
+    "nota": "Nombre comprobado en la TNM (Hch 9:36)."
+   },
+   "openbible_id": "ae023a9"
+  },
+  {
+   "id": "lida",
+   "nombre": "Lida",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 9:32",
+   "lon": 34.9,
+   "lat": 31.95,
+   "moderno": "Lod",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9",
+    "nota": "Nombre comprobado en la TNM (Hch 9:32)."
+   },
+   "openbible_id": "a2c5cc7"
+  },
+  {
+   "id": "azoto",
+   "nombre": "Azoto",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 8:40",
+   "lon": 34.6578,
+   "lat": 31.7572,
+   "moderno": "Asdod",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8",
+    "nota": "Nombre comprobado en la TNM (Hch 8:40)."
+   },
+   "openbible_id": "a30c937"
+  },
+  {
+   "id": "gaza",
+   "nombre": "Gaza",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "israel"
+   ],
+   "referencia": "Hch 8:26",
+   "lon": 34.4644,
+   "lat": 31.504,
+   "moderno": "Gaza",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8",
+    "nota": "Nombre comprobado en la TNM (Hch 8:26)."
+   },
+   "openbible_id": "aa8edd2"
+  },
+  {
+   "id": "samaria",
+   "nombre": "Samaria",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel",
+    "jesus"
+   ],
+   "referencia": "Hch 8:5",
+   "lon": 35.195,
+   "lat": 32.2761,
+   "moderno": "Sebastia",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8",
+    "nota": "Nombre comprobado en la TNM (Hch 8:5)."
+   },
+   "openbible_id": "a041bb3"
+  },
+  {
+   "id": "alejandria",
+   "nombre": "Alejandría",
+   "tipo": "puerto",
+   "grupos": [
+    "pablo",
+    "egipto"
+   ],
+   "referencia": "Hch 18:24",
+   "lon": 29.8965,
+   "lat": 31.1825,
+   "moderno": "Alejandría",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:24)."
+   },
+   "openbible_id": "aee7248"
+  },
+  {
+   "id": "colosas",
+   "nombre": "Colosas",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "cartas"
+   ],
+   "referencia": "Col 1:2",
+   "lon": 29.2599,
+   "lat": 37.7866,
+   "moderno": "ruinas cerca de Honaz",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1",
+    "nota": "Nombre comprobado en la TNM (Col 1:2)."
+   },
+   "openbible_id": "a4e5a69"
+  },
+  {
+   "id": "laodicea",
+   "nombre": "Laodicea",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "cartas"
+   ],
+   "referencia": "Col 4:13",
+   "lon": 29.1075,
+   "lat": 37.8358,
+   "moderno": "ruinas cerca de Denizli",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4",
+    "nota": "Nombre comprobado en la TNM (Col 4:13)."
+   },
+   "openbible_id": "a83fb1e"
+  },
+  {
+   "id": "hierapolis",
+   "nombre": "Hierápolis",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "cartas"
+   ],
+   "referencia": "Col 4:13",
+   "lon": 29.1274,
+   "lat": 37.9266,
+   "moderno": "Pamukkale",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4",
+    "nota": "Nombre comprobado en la TNM (Col 4:13)."
+   },
+   "openbible_id": "a11bbbe"
+  },
+  {
+   "id": "pergamo",
+   "nombre": "Pérgamo",
+   "tipo": "ciudad",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:11",
+   "lon": 27.1842,
+   "lat": 39.1322,
+   "moderno": "Bergama",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:11)."
+   },
+   "openbible_id": "a75d2c1"
+  },
+  {
+   "id": "esmirna",
+   "nombre": "Esmirna",
+   "tipo": "ciudad",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:11",
+   "lon": 27.1378,
+   "lat": 38.4189,
+   "moderno": "Esmirna (İzmir)",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:11)."
+   },
+   "openbible_id": "a2e65fb"
+  },
+  {
+   "id": "tiatira",
+   "nombre": "Tiatira",
+   "tipo": "ciudad",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:11",
+   "lon": 27.8365,
+   "lat": 38.9202,
+   "moderno": "Akhisar",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:11)."
+   },
+   "openbible_id": "a94b661"
+  },
+  {
+   "id": "sardis",
+   "nombre": "Sardis",
+   "tipo": "ciudad",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:11",
+   "lon": 28.0403,
+   "lat": 38.4883,
+   "moderno": "Sart",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:11)."
+   },
+   "openbible_id": "aab4a5f"
+  },
+  {
+   "id": "filadelfia",
+   "nombre": "Filadelfia",
+   "tipo": "ciudad",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:11",
+   "lon": 28.5167,
+   "lat": 38.35,
+   "moderno": "Alaşehir",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:11)."
+   },
+   "openbible_id": "a1c7cc1"
+  },
+  {
+   "id": "patmos",
+   "nombre": "Patmos",
+   "tipo": "isla",
+   "grupos": [
+    "cartas"
+   ],
+   "referencia": "Apo 1:9",
+   "lon": 26.5417,
+   "lat": 37.325,
+   "moderno": "Patmos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1",
+    "nota": "Nombre comprobado en la TNM (Apo 1:9)."
+   },
+   "openbible_id": "a8f60f3"
+  },
+  {
+   "id": "nicopolis",
+   "nombre": "Nicópolis",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo",
+    "cartas"
+   ],
+   "referencia": "Tit 3:12",
+   "lon": 20.7374,
+   "lat": 39.0235,
+   "moderno": "ruinas cerca de Préveza",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/3",
+    "nota": "Nombre comprobado en la TNM (Tit 3:12)."
+   },
+   "openbible_id": "af43cde"
+  },
+  {
+   "id": "galacia",
+   "nombre": "Galacia",
+   "tipo": "región",
+   "grupos": [
+    "pablo",
+    "cartas"
+   ],
+   "referencia": "Hch 16:6",
+   "lon": 32.9833,
+   "lat": 39.2667,
+   "moderno": "Galatia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:6)."
+   },
+   "openbible_id": "a0f440a"
+  },
+  {
+   "id": "macedonia",
+   "nombre": "Macedonia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:9",
+   "lon": 22.54,
+   "lat": 41.6,
+   "moderno": "Macedonia",
+   "pais": "Macedonia del Norte",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:9)."
+   },
+   "openbible_id": "a69e1b8"
+  },
+  {
+   "id": "acaya",
+   "nombre": "Acaya",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 18:12",
+   "lon": 22.54,
+   "lat": 38.72,
+   "moderno": "Achaia",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+    "nota": "Nombre comprobado en la TNM (Hch 18:12)."
+   },
+   "openbible_id": "aef4242"
+  },
+  {
+   "id": "asia",
+   "nombre": "Asia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:6",
+   "lon": 28.3,
+   "lat": 38.4,
+   "moderno": "Asia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:6)."
+   },
+   "openbible_id": "a197f19"
+  },
+  {
+   "id": "frigia",
+   "nombre": "Frigia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:6",
+   "lon": 31.0,
+   "lat": 39.0,
+   "moderno": "Phrygia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:6)."
+   },
+   "openbible_id": "ab8ae56"
+  },
+  {
+   "id": "cilicia",
+   "nombre": "Cilicia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 15:41",
+   "lon": 34.8921,
+   "lat": 36.913,
+   "moderno": "Cilicia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15",
+    "nota": "Nombre comprobado en la TNM (Hch 15:41)."
+   },
+   "openbible_id": "ad63819"
+  },
+  {
+   "id": "panfilia",
+   "nombre": "Panfilia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:13",
+   "lon": 31.0,
+   "lat": 37.0,
+   "moderno": "Pamphylia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:13)."
+   },
+   "openbible_id": "aa95188"
+  },
+  {
+   "id": "licaonia",
+   "nombre": "Licaonia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:6",
+   "lon": 33.0,
+   "lat": 38.0,
+   "moderno": "Lycaonia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:6)."
+   },
+   "openbible_id": "a3668b6"
+  },
+  {
+   "id": "pisidia",
+   "nombre": "Pisidia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 14:24",
+   "lon": 31.1892,
+   "lat": 38.3061,
+   "moderno": "Pisidia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+    "nota": "Nombre comprobado en la TNM (Hch 14:24)."
+   },
+   "openbible_id": "a55aded"
+  },
+  {
+   "id": "bitinia",
+   "nombre": "Bitinia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:7",
+   "lon": 31.0,
+   "lat": 40.5,
+   "moderno": "Bithynia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:7)."
+   },
+   "openbible_id": "a5c0cb0"
+  },
+  {
+   "id": "misia",
+   "nombre": "Misia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 16:7",
+   "lon": 28.5,
+   "lat": 40.0,
+   "moderno": "Mysia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+    "nota": "Nombre comprobado en la TNM (Hch 16:7)."
+   },
+   "openbible_id": "a2d9bc8"
+  },
+  {
+   "id": "ponto",
+   "nombre": "Ponto",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 2:9",
+   "lon": 37.83,
+   "lat": 40.68,
+   "moderno": "Pontus",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2",
+    "nota": "Nombre comprobado en la TNM (Hch 2:9)."
+   },
+   "openbible_id": "a83a43e"
+  },
+  {
+   "id": "capadocia",
+   "nombre": "Capadocia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 2:9",
+   "lon": 34.8392,
+   "lat": 38.6706,
+   "moderno": "Cappadocia",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2",
+    "nota": "Nombre comprobado en la TNM (Hch 2:9)."
+   },
+   "openbible_id": "a33fbde"
+  },
+  {
+   "id": "chipre",
+   "nombre": "Chipre",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 13:4",
+   "lon": 33.0,
+   "lat": 35.0,
+   "moderno": "Cyprus",
+   "pais": "Chipre",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+    "nota": "Nombre comprobado en la TNM (Hch 13:4)."
+   },
+   "openbible_id": "a2e7601"
+  },
+  {
+   "id": "creta",
+   "nombre": "Creta",
+   "tipo": "isla",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:7",
+   "lon": 24.8933,
+   "lat": 35.3097,
+   "moderno": "Crete",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:7)."
+   },
+   "openbible_id": "a26aa94"
+  },
+  {
+   "id": "ilirico",
+   "nombre": "Ilírico",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Ro 15:19",
+   "lon": 16.4831,
+   "lat": 43.5394,
+   "moderno": "Illyricum",
+   "pais": "Croacia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15",
+    "nota": "Nombre comprobado en la TNM (Ro 15:19)."
+   },
+   "openbible_id": "ac405c0"
+  },
+  {
+   "id": "italia",
+   "nombre": "Italia",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Hch 27:1",
+   "lon": 12.4852,
+   "lat": 41.8922,
+   "moderno": "Italy",
+   "pais": "Italia",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+    "nota": "Nombre comprobado en la TNM (Hch 27:1)."
+   },
+   "openbible_id": "a7184a7"
+  },
+  {
+   "id": "espana",
+   "nombre": "España",
+   "tipo": "región",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": "Ro 15:24",
+   "lon": -4.35,
+   "lat": 40.21,
+   "moderno": "Hispania",
+   "pais": "España",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15",
+    "nota": "Nombre comprobado en la TNM (Ro 15:24)."
+   },
+   "openbible_id": "a3f0f69"
+  },
+  {
+   "id": "belen",
+   "nombre": "Belén",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus",
+    "israel"
+   ],
+   "referencia": "Mt 2:1",
+   "lon": 35.2076,
+   "lat": 31.7043,
+   "moderno": "Belén",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2",
+    "nota": "Nombre comprobado en la TNM (Mt 2:1)."
+   },
+   "openbible_id": "a112427"
+  },
+  {
+   "id": "nazaret",
+   "nombre": "Nazaret",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 2:23",
+   "lon": 35.2977,
+   "lat": 32.7021,
+   "moderno": "Nazaret",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2",
+    "nota": "Nombre comprobado en la TNM (Mt 2:23)."
+   },
+   "openbible_id": "af5884f"
+  },
+  {
+   "id": "capernaum",
+   "nombre": "Capernaúm",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 4:13",
+   "lon": 35.575,
+   "lat": 32.8811,
+   "moderno": "Kfar Nahum",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 842,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4",
+    "nota": "Nombre comprobado en la TNM (Mt 4:13)."
+   },
+   "openbible_id": "af2161c"
+  },
+  {
+   "id": "cana",
+   "nombre": "Caná",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Jn 2:1",
+   "lon": 35.3027,
+   "lat": 32.8222,
+   "moderno": "Horbat Qana",
+   "pais": "Israel",
+   "confianza": "media",
+   "puntuacion_openbible": 690,
+   "candidatos": [
+    {
+     "lon": 35.3027,
+     "lat": 32.8222,
+     "identificacion": "Horbat Qana",
+     "puntuacion": 690
+    },
+    {
+     "lon": 35.3392,
+     "lat": 32.7465,
+     "identificacion": "Kefr Kenna",
+     "puntuacion": 80
+    },
+    {
+     "lon": 35.32,
+     "lat": 32.7131,
+     "identificacion": "Ain Qana",
+     "puntuacion": 6
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/2",
+    "nota": "Nombre comprobado en la TNM (Jn 2:1)."
+   },
+   "openbible_id": "a031bda"
+  },
+  {
+   "id": "betania",
+   "nombre": "Betania",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Jn 11:1",
+   "lon": 35.2559,
+   "lat": 31.7717,
+   "moderno": "Al-Eizariya",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 889,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11",
+    "nota": "Nombre comprobado en la TNM (Jn 11:1)."
+   },
+   "openbible_id": "a4f35bc"
+  },
+  {
+   "id": "betsaida",
+   "nombre": "Betsaida",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 11:21",
+   "lon": 35.631,
+   "lat": 32.9104,
+   "moderno": "At Tell",
+   "pais": "Israel",
+   "confianza": "baja",
+   "puntuacion_openbible": 466,
+   "candidatos": [
+    {
+     "lon": 35.631,
+     "lat": 32.9104,
+     "identificacion": "At Tell",
+     "puntuacion": 466
+    },
+    {
+     "lon": 35.619,
+     "lat": 32.8935,
+     "identificacion": "Al Araj",
+     "puntuacion": 172
+    },
+    {
+     "lon": 35.6308,
+     "lat": 32.8842,
+     "identificacion": "El Mess’adiyye",
+     "puntuacion": 53
+    },
+    {
+     "lon": 35.549,
+     "lat": 32.8737,
+     "identificacion": "Tabgha",
+     "puntuacion": 36
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/11",
+    "nota": "Nombre comprobado en la TNM (Mt 11:21)."
+   },
+   "openbible_id": "a91b732"
+  },
+  {
+   "id": "corazin",
+   "nombre": "Corazín",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 11:21",
+   "lon": 35.5639,
+   "lat": 32.9114,
+   "moderno": "Khirbet Karraza",
+   "pais": "Israel",
+   "confianza": "media",
+   "puntuacion_openbible": 786,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/11",
+    "nota": "Nombre comprobado en la TNM (Mt 11:21)."
+   },
+   "openbible_id": "a593a48"
+  },
+  {
+   "id": "jerico",
+   "nombre": "Jericó",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus",
+    "israel"
+   ],
+   "referencia": "Lu 19:1",
+   "lon": 35.4446,
+   "lat": 31.8717,
+   "moderno": "Tell es-Sultan, junto a Jericó",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/19",
+    "nota": "Nombre comprobado en la TNM (Lu 19:1)."
+   },
+   "openbible_id": "a231f80"
+  },
+  {
+   "id": "nain",
+   "nombre": "Naín",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Lu 7:11",
+   "lon": 35.3501,
+   "lat": 32.6307,
+   "moderno": "Nein",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/7",
+    "nota": "Nombre comprobado en la TNM (Lu 7:11)."
+   },
+   "openbible_id": "aee679c"
+  },
+  {
+   "id": "sicar",
+   "nombre": "Sicar",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Jn 4:5",
+   "lon": 35.289,
+   "lat": 32.2178,
+   "moderno": "Askar",
+   "pais": "Palestina",
+   "confianza": "media",
+   "puntuacion_openbible": 620,
+   "candidatos": [
+    {
+     "lon": 35.289,
+     "lat": 32.2178,
+     "identificacion": "Askar",
+     "puntuacion": 620
+    },
+    {
+     "lon": 35.2819,
+     "lat": 32.2136,
+     "identificacion": "another name for Shechem",
+     "puntuacion": 224
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/4",
+    "nota": "Nombre comprobado en la TNM (Jn 4:5)."
+   },
+   "openbible_id": "a27b472"
+  },
+  {
+   "id": "cesarea-de-filipo",
+   "nombre": "Cesarea de Filipo",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 16:13",
+   "lon": 35.6933,
+   "lat": 33.2461,
+   "moderno": "Banias",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/16",
+    "nota": "Nombre comprobado en la TNM (Mt 16:13)."
+   },
+   "openbible_id": "ab7bf48"
+  },
+  {
+   "id": "emaus",
+   "nombre": "Emaús",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Lu 24:13",
+   "lon": 35.1642,
+   "lat": 31.7929,
+   "moderno": "Qalunya",
+   "pais": "Israel",
+   "confianza": "baja",
+   "puntuacion_openbible": 338,
+   "candidatos": [
+    {
+     "lon": 35.1642,
+     "lat": 31.7929,
+     "identificacion": "Qalunya",
+     "puntuacion": 338
+    },
+    {
+     "lon": 34.9895,
+     "lat": 31.8393,
+     "identificacion": "Emmaus Nicopolis",
+     "puntuacion": 240
+    },
+    {
+     "lon": 35.1369,
+     "lat": 31.8399,
+     "identificacion": "El Qubeibeh",
+     "puntuacion": 60
+    },
+    {
+     "lon": 35.1861,
+     "lat": 31.6892,
+     "identificacion": "Artas",
+     "puntuacion": -18
+    },
+    {
+     "lon": 35.1082,
+     "lat": 31.7064,
+     "identificacion": "Khirbet Khamasa",
+     "puntuacion": -18
+    },
+    {
+     "lon": 35.1075,
+     "lat": 31.8074,
+     "identificacion": "Abu Ghosh",
+     "puntuacion": -22
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/24",
+    "nota": "Nombre comprobado en la TNM (Lu 24:13)."
+   },
+   "openbible_id": "ae7274b"
+  },
+  {
+   "id": "tiberiades",
+   "nombre": "Tiberíades",
+   "tipo": "ciudad",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Jn 6:23",
+   "lon": 35.5442,
+   "lat": 32.7736,
+   "moderno": "Tiberíades",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/6",
+    "nota": "Nombre comprobado en la TNM (Jn 6:23)."
+   },
+   "openbible_id": "ac9adc9"
+  },
+  {
+   "id": "magadan",
+   "nombre": "Magadán",
+   "tipo": "región",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 15:39",
+   "lon": 35.5136,
+   "lat": 32.8271,
+   "moderno": null,
+   "pais": "Israel",
+   "confianza": "media",
+   "puntuacion_openbible": 616,
+   "candidatos": [
+    {
+     "lon": 35.5136,
+     "lat": 32.8271,
+     "identificacion": "another name for Magdala",
+     "puntuacion": 616
+    },
+    {
+     "lon": 35.6464,
+     "lat": 32.8604,
+     "identificacion": "along the eastern side of the Sea of Galilee",
+     "puntuacion": 59
+    },
+    {
+     "lon": 35.5136,
+     "lat": 32.8271,
+     "identificacion": "Majdal",
+     "puntuacion": 45
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/15",
+    "nota": "Nombre comprobado en la TNM (Mt 15:39)."
+   },
+   "openbible_id": "ad14067"
+  },
+  {
+   "id": "mar-de-galilea",
+   "nombre": "mar de Galilea",
+   "tipo": "agua",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 4:18",
+   "lon": 35.59,
+   "lat": 32.8189,
+   "nombre_alt": "mar de Tiberíades",
+   "moderno": "Sea of Galilee",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4",
+    "nota": "Nombre comprobado en la TNM (Mt 4:18)."
+   },
+   "openbible_id": "a562fcc"
+  },
+  {
+   "id": "rio-jordan",
+   "nombre": "río Jordán",
+   "tipo": "agua",
+   "grupos": [
+    "jesus",
+    "israel"
+   ],
+   "referencia": "Mt 3:13",
+   "lon": 35.5583,
+   "lat": 31.7614,
+   "moderno": "Jordan River",
+   "pais": "Jordania",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3",
+    "nota": "Nombre comprobado en la TNM (Mt 3:13)."
+   },
+   "openbible_id": "ae686c9"
+  },
+  {
+   "id": "mar-salado",
+   "nombre": "mar Salado",
+   "tipo": "agua",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Gé 14:3",
+   "lon": 35.5,
+   "lat": 31.5,
+   "nombre_alt": "mar Muerto",
+   "moderno": "Dead Sea",
+   "pais": "Jordania",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/14",
+    "nota": "Nombre comprobado en la TNM (Gé 14:3)."
+   },
+   "openbible_id": "abed304"
+  },
+  {
+   "id": "monte-de-los-olivos",
+   "nombre": "monte de los Olivos",
+   "tipo": "monte",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 24:3",
+   "lon": 35.2457,
+   "lat": 31.7779,
+   "moderno": "Mount of Olives",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/24",
+    "nota": "Nombre comprobado en la TNM (Mt 24:3)."
+   },
+   "openbible_id": "ac2c4c5"
+  },
+  {
+   "id": "getsemani",
+   "nombre": "Getsemaní",
+   "tipo": "lugar",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 26:36",
+   "lon": 35.2394,
+   "lat": 31.7794,
+   "moderno": "Gethsemane",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26",
+    "nota": "Nombre comprobado en la TNM (Mt 26:36)."
+   },
+   "openbible_id": "a42418f"
+  },
+  {
+   "id": "golgota",
+   "nombre": "Gólgota",
+   "tipo": "lugar",
+   "grupos": [
+    "jesus"
+   ],
+   "referencia": "Mt 27:33",
+   "lon": 35.2298,
+   "lat": 31.7784,
+   "moderno": "Church of the Holy Sepulchre",
+   "pais": "Israel",
+   "confianza": "baja",
+   "puntuacion_openbible": 426,
+   "candidatos": [
+    {
+     "lon": 35.2298,
+     "lat": 31.7784,
+     "identificacion": "Church of the Holy Sepulchre",
+     "puntuacion": 426
+    },
+    {
+     "lon": 35.2307,
+     "lat": 31.7766,
+     "identificacion": "Taylor Golgotha",
+     "puntuacion": 31
+    },
+    {
+     "lon": 35.2301,
+     "lat": 31.784,
+     "identificacion": "Gordon’s Calvary",
+     "puntuacion": -24
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27",
+    "nota": "Nombre comprobado en la TNM (Mt 27:33)."
+   },
+   "openbible_id": "a631d35"
+  },
+  {
+   "id": "monte-guerizim",
+   "nombre": "monte Guerizim",
+   "tipo": "monte",
+   "grupos": [
+    "israel",
+    "jesus"
+   ],
+   "referencia": "Dt 11:29",
+   "lon": 35.2728,
+   "lat": 32.1994,
+   "moderno": "Mount Gerizim",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/11",
+    "nota": "Nombre comprobado en la TNM (Dt 11:29)."
+   },
+   "openbible_id": "a30e967"
+  },
+  {
+   "id": "hebron",
+   "nombre": "Hebrón",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Gé 13:18",
+   "lon": 35.1022,
+   "lat": 31.5251,
+   "moderno": "Hebrón",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/13",
+    "nota": "Nombre comprobado en la TNM (Gé 13:18)."
+   },
+   "openbible_id": "a85151a"
+  },
+  {
+   "id": "siquem",
+   "nombre": "Siquem",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Gé 12:6",
+   "lon": 35.2819,
+   "lat": 32.2136,
+   "moderno": "Tell Balata, junto a Nablus",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/12",
+    "nota": "Nombre comprobado en la TNM (Gé 12:6)."
+   },
+   "openbible_id": "adf74d4"
+  },
+  {
+   "id": "betel",
+   "nombre": "Betel",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Gé 12:8",
+   "lon": 35.2414,
+   "lat": 31.9228,
+   "moderno": "Beitin",
+   "pais": "Palestina",
+   "confianza": "media",
+   "puntuacion_openbible": 716,
+   "candidatos": [
+    {
+     "lon": 35.2414,
+     "lat": 31.9228,
+     "identificacion": "Beitin",
+     "puntuacion": 716
+    },
+    {
+     "lon": 35.215,
+     "lat": 31.9051,
+     "identificacion": "Al Bira",
+     "puntuacion": 99
+    },
+    {
+     "lon": 35.2455,
+     "lat": 31.9219,
+     "identificacion": "Burj Beitin",
+     "puntuacion": 5
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/12",
+    "nota": "Nombre comprobado en la TNM (Gé 12:8)."
+   },
+   "openbible_id": "a64f355"
+  },
+  {
+   "id": "silo",
+   "nombre": "Siló",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Jos 18:1",
+   "lon": 35.2895,
+   "lat": 32.0557,
+   "moderno": "Khirbet Seilun",
+   "pais": "Palestina",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18",
+    "nota": "Nombre comprobado en la TNM (Jos 18:1)."
+   },
+   "openbible_id": "aa4680a"
+  },
+  {
+   "id": "dan",
+   "nombre": "Dan",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Jue 20:1",
+   "lon": 35.652,
+   "lat": 33.249,
+   "moderno": "Tel Dan",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20",
+    "nota": "Nombre comprobado en la TNM (Jue 20:1)."
+   },
+   "openbible_id": "a513646"
+  },
+  {
+   "id": "beer-seba",
+   "nombre": "Beer-Seba",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Jue 20:1",
+   "lon": 34.8408,
+   "lat": 31.2447,
+   "moderno": "Tel Beer Sheva",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 823,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20",
+    "nota": "Nombre comprobado en la TNM (Jue 20:1)."
+   },
+   "openbible_id": "ad2f6c2"
+  },
+  {
+   "id": "meguido",
+   "nombre": "Meguidó",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Jue 5:19",
+   "lon": 35.1844,
+   "lat": 32.5853,
+   "moderno": "Tel Meguido",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5",
+    "nota": "Nombre comprobado en la TNM (Jue 5:19)."
+   },
+   "openbible_id": "a8554e3"
+  },
+  {
+   "id": "monte-carmelo",
+   "nombre": "monte Carmelo",
+   "tipo": "monte",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "1Re 18:19",
+   "lon": 35.0233,
+   "lat": 32.6725,
+   "moderno": "Mount Carmel",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18",
+    "nota": "Nombre comprobado en la TNM (1Re 18:19)."
+   },
+   "openbible_id": "a3e21c6"
+  },
+  {
+   "id": "monte-tabor",
+   "nombre": "monte Tabor",
+   "tipo": "monte",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Jue 4:6",
+   "lon": 35.3929,
+   "lat": 32.6863,
+   "moderno": "Jebel et Tur",
+   "pais": "Israel",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4",
+    "nota": "Nombre comprobado en la TNM (Jue 4:6)."
+   },
+   "openbible_id": "acd63ee"
+  },
+  {
+   "id": "monte-hermon",
+   "nombre": "monte Hermón",
+   "tipo": "monte",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Dt 3:8",
+   "lon": 35.85,
+   "lat": 33.4,
+   "moderno": "Mount Hermon",
+   "pais": "Siria",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3",
+    "nota": "Nombre comprobado en la TNM (Dt 3:8)."
+   },
+   "openbible_id": "a341fe8"
+  },
+  {
+   "id": "raba",
+   "nombre": "Rabá",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "2Sa 11:1",
+   "lon": 35.9343,
+   "lat": 31.9547,
+   "moderno": "Amán",
+   "pais": "Jordania",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/11",
+    "nota": "Nombre comprobado en la TNM (2Sa 11:1)."
+   },
+   "openbible_id": "ae067b5"
+  },
+  {
+   "id": "guebal",
+   "nombre": "Guebal",
+   "tipo": "puerto",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Eze 27:9",
+   "lon": 35.6458,
+   "lat": 34.1192,
+   "moderno": "Biblos (Jbeil)",
+   "pais": "Líbano",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 939,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/26/27",
+    "nota": "Nombre comprobado en la TNM (Eze 27:9)."
+   },
+   "openbible_id": "a9a2541"
+  },
+  {
+   "id": "hamat",
+   "nombre": "Hamat",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "2Re 18:34",
+   "lon": 36.75,
+   "lat": 35.1365,
+   "moderno": "Hama",
+   "pais": "Siria",
+   "confianza": "alta",
+   "puntuacion_openbible": 957,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18",
+    "nota": "Nombre comprobado en la TNM (2Re 18:34)."
+   },
+   "openbible_id": "ac62cbc"
+  },
+  {
+   "id": "ribla",
+   "nombre": "Riblá",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "2Re 25:6",
+   "lon": 36.5726,
+   "lat": 34.4595,
+   "moderno": "Rableh",
+   "pais": "Siria",
+   "confianza": "alta",
+   "puntuacion_openbible": 948,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25",
+    "nota": "Nombre comprobado en la TNM (2Re 25:6)."
+   },
+   "openbible_id": "ab2bde8"
+  },
+  {
+   "id": "cades-barnea",
+   "nombre": "Cadés-Barnea",
+   "tipo": "ciudad",
+   "grupos": [
+    "israel",
+    "egipto"
+   ],
+   "referencia": "Nú 32:8",
+   "lon": 34.4222,
+   "lat": 30.6483,
+   "moderno": "Ain el Qudeirat",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 864,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32",
+    "nota": "Nombre comprobado en la TNM (Nú 32:8)."
+   },
+   "openbible_id": "ac2cef0"
+  },
+  {
+   "id": "ezion-gueber",
+   "nombre": "Ezión-Guéber",
+   "tipo": "puerto",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "1Re 9:26",
+   "lon": 34.8601,
+   "lat": 29.4628,
+   "moderno": "Jezirat Faraun",
+   "pais": "Egipto",
+   "pais_aprox": true,
+   "confianza": "baja",
+   "puntuacion_openbible": 360,
+   "candidatos": [
+    {
+     "lon": 34.8601,
+     "lat": 29.4628,
+     "identificacion": "Jezirat Faraun",
+     "puntuacion": 360
+    },
+    {
+     "lon": 34.9803,
+     "lat": 29.5472,
+     "identificacion": "Tell el Kheleifeh",
+     "puntuacion": 239
+    },
+    {
+     "lon": 35.0,
+     "lat": 29.5307,
+     "identificacion": "another name for Elath",
+     "puntuacion": 27
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9",
+    "nota": "Nombre comprobado en la TNM (1Re 9:26)."
+   },
+   "openbible_id": "a8e53d5"
+  },
+  {
+   "id": "monte-sinai",
+   "nombre": "monte Sinaí",
+   "tipo": "monte",
+   "grupos": [
+    "egipto",
+    "israel"
+   ],
+   "referencia": "Éx 19:11",
+   "lon": 33.9733,
+   "lat": 28.5397,
+   "moderno": "Jebel Musa",
+   "pais": "Egipto",
+   "confianza": "baja",
+   "puntuacion_openbible": 465,
+   "candidatos": [
+    {
+     "lon": 33.9733,
+     "lat": 28.5397,
+     "identificacion": "Jebel Musa",
+     "puntuacion": 465
+    },
+    {
+     "lon": 34.75,
+     "lat": 30.2833,
+     "identificacion": "Har Karkom",
+     "puntuacion": 103
+    },
+    {
+     "lon": 32.961,
+     "lat": 29.671,
+     "identificacion": "Jebel Sin Bishar",
+     "puntuacion": 89
+    },
+    {
+     "lon": 33.9672,
+     "lat": 28.5556,
+     "identificacion": "Ras es Safsafeh",
+     "puntuacion": 55
+    },
+    {
+     "lon": 33.6517,
+     "lat": 28.6464,
+     "identificacion": "Jebel Serbal",
+     "puntuacion": 54
+    },
+    {
+     "lon": 33.9553,
+     "lat": 28.5108,
+     "identificacion": "Jebel Katherina",
+     "puntuacion": 28
+    },
+    {
+     "lon": 34.6334,
+     "lat": 29.6692,
+     "identificacion": "Jebel Hashem el Tarif",
+     "puntuacion": 20
+    },
+    {
+     "lon": 34.0289,
+     "lat": 30.6531,
+     "identificacion": "Jebel Halal",
+     "puntuacion": 12
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19",
+    "nota": "Nombre comprobado en la TNM (Éx 19:11)."
+   },
+   "openbible_id": "abfba2a"
+  },
+  {
+   "id": "monte-nebo",
+   "nombre": "monte Nebo",
+   "tipo": "monte",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Dt 34:1",
+   "lon": 35.75,
+   "lat": 31.7667,
+   "moderno": "Jabal al Naba",
+   "pais": "Jordania",
+   "confianza": "baja",
+   "puntuacion_openbible": 413,
+   "candidatos": [
+    {
+     "lon": 35.75,
+     "lat": 31.7667,
+     "identificacion": "Jabal al Naba",
+     "puntuacion": 413
+    },
+    {
+     "lon": 35.7256,
+     "lat": 31.7678,
+     "identificacion": "Rujm Siyaghah",
+     "puntuacion": 365
+    },
+    {
+     "lon": 35.7086,
+     "lat": 32.0715,
+     "identificacion": "Jebel Osha",
+     "puntuacion": 39
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34",
+    "nota": "Nombre comprobado en la TNM (Dt 34:1)."
+   },
+   "openbible_id": "aefaa2d"
+  },
+  {
+   "id": "babilonia",
+   "nombre": "Babilonia",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia",
+    "persia"
+   ],
+   "referencia": "2Re 25:1",
+   "lon": 44.4222,
+   "lat": 32.5433,
+   "moderno": "ruinas cerca de Hilla",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25",
+    "nota": "Nombre comprobado en la TNM (2Re 25:1)."
+   },
+   "openbible_id": "a217d18"
+  },
+  {
+   "id": "ninive",
+   "nombre": "Nínive",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Jon 1:2",
+   "lon": 43.1528,
+   "lat": 36.3594,
+   "moderno": "ruinas junto a Mosul",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1",
+    "nota": "Nombre comprobado en la TNM (Jon 1:2)."
+   },
+   "openbible_id": "a70fd5d"
+  },
+  {
+   "id": "ur",
+   "nombre": "Ur",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 11:28",
+   "lon": 46.1044,
+   "lat": 30.9622,
+   "moderno": "Tell el-Muqayyar",
+   "pais": "Irak",
+   "confianza": "media",
+   "puntuacion_openbible": 703,
+   "candidatos": [
+    {
+     "lon": 46.1044,
+     "lat": 30.9622,
+     "identificacion": "another name for Ur 2",
+     "puntuacion": 703
+    },
+    {
+     "lon": 38.7844,
+     "lat": 37.1478,
+     "identificacion": "Urfa",
+     "puntuacion": 53
+    },
+    {
+     "lon": 40.226,
+     "lat": 40.2546,
+     "identificacion": "another name for Ura",
+     "puntuacion": 22
+    },
+    {
+     "lon": 44.3004,
+     "lat": 39.7028,
+     "identificacion": "Urartu",
+     "puntuacion": 12
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11",
+    "nota": "Nombre comprobado en la TNM (Gé 11:28)."
+   },
+   "openbible_id": "a6cf75c"
+  },
+  {
+   "id": "haran",
+   "nombre": "Harán",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 11:31",
+   "lon": 39.0328,
+   "lat": 36.8644,
+   "moderno": "Harran",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 922,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11",
+    "nota": "Nombre comprobado en la TNM (Gé 11:31)."
+   },
+   "openbible_id": "a6d9af3"
+  },
+  {
+   "id": "calah",
+   "nombre": "Cálah",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 10:11",
+   "lon": 43.3289,
+   "lat": 36.0981,
+   "moderno": "Nimrud",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10",
+    "nota": "Nombre comprobado en la TNM (Gé 10:11)."
+   },
+   "openbible_id": "ae1f807"
+  },
+  {
+   "id": "erec",
+   "nombre": "Erec",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 10:10",
+   "lon": 45.6361,
+   "lat": 31.3222,
+   "moderno": "Uruk (Warka)",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10",
+    "nota": "Nombre comprobado en la TNM (Gé 10:10)."
+   },
+   "openbible_id": "a5db1a6"
+  },
+  {
+   "id": "akkad",
+   "nombre": "Akkad",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 10:10",
+   "lon": 44.3919,
+   "lat": 33.0256,
+   "moderno": "Tell Sheshubar",
+   "pais": "Irak",
+   "confianza": "baja",
+   "puntuacion_openbible": 241,
+   "candidatos": [
+    {
+     "lon": 44.3919,
+     "lat": 33.0256,
+     "identificacion": "Tell Sheshubar",
+     "puntuacion": 241
+    },
+    {
+     "lon": 44.2983,
+     "lat": 33.0998,
+     "identificacion": "Tell ed Der",
+     "puntuacion": 134
+    },
+    {
+     "lon": 44.4222,
+     "lat": 32.5433,
+     "identificacion": "another name for Babylon 1",
+     "puntuacion": 106
+    },
+    {
+     "lon": 44.2248,
+     "lat": 34.0328,
+     "identificacion": "Dhuluiya",
+     "puntuacion": 45
+    },
+    {
+     "lon": 44.5559,
+     "lat": 32.5913,
+     "identificacion": "Ishan Mizyad",
+     "puntuacion": 45
+    },
+    {
+     "lon": 43.9596,
+     "lat": 34.0955,
+     "identificacion": "Qadisiyah",
+     "puntuacion": 45
+    },
+    {
+     "lon": 44.4682,
+     "lat": 33.3006,
+     "identificacion": "Tell Muhammad",
+     "puntuacion": 45
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10",
+    "nota": "Nombre comprobado en la TNM (Gé 10:10)."
+   },
+   "openbible_id": "a8b7a6b"
+  },
+  {
+   "id": "carquemis",
+   "nombre": "Carquemis",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Jer 46:2",
+   "lon": 38.015,
+   "lat": 36.8297,
+   "moderno": "Jerablus / Karkamış",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 880,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/46",
+    "nota": "Nombre comprobado en la TNM (Jer 46:2)."
+   },
+   "openbible_id": "af6c730"
+  },
+  {
+   "id": "susa",
+   "nombre": "Susa",
+   "tipo": "ciudad",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Est 1:2",
+   "lon": 48.2578,
+   "lat": 32.1892,
+   "moderno": "Shush",
+   "pais": "Irán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/1",
+    "nota": "Nombre comprobado en la TNM (Est 1:2)."
+   },
+   "openbible_id": "a033b84"
+  },
+  {
+   "id": "ecbatana",
+   "nombre": "Ecbátana",
+   "tipo": "ciudad",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Esd 6:2",
+   "lon": 48.5162,
+   "lat": 34.8065,
+   "moderno": "Hamadán",
+   "pais": "Irán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6",
+    "nota": "Nombre comprobado en la TNM (Esd 6:2)."
+   },
+   "openbible_id": "a212ef7"
+  },
+  {
+   "id": "rio-kebar",
+   "nombre": "río Kebar",
+   "tipo": "agua",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Eze 1:1",
+   "lon": 45.2308,
+   "lat": 32.1269,
+   "moderno": "Shatt en Nil",
+   "pais": "Irak",
+   "confianza": "media",
+   "puntuacion_openbible": 696,
+   "candidatos": [
+    {
+     "lon": 45.2308,
+     "lat": 32.1269,
+     "identificacion": "Shatt en Nil",
+     "puntuacion": 696
+    },
+    {
+     "lon": 40.4273,
+     "lat": 35.1303,
+     "identificacion": "another name for the Habor",
+     "puntuacion": -12
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/26/1",
+    "nota": "Nombre comprobado en la TNM (Eze 1:1)."
+   },
+   "openbible_id": "a3d2f0a"
+  },
+  {
+   "id": "tel-abib",
+   "nombre": "Tel-Abib",
+   "tipo": "ciudad",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Eze 3:15",
+   "lon": 45.2308,
+   "lat": 32.1261,
+   "moderno": null,
+   "pais": "Irak",
+   "confianza": "media",
+   "puntuacion_openbible": 585,
+   "candidatos": [
+    {
+     "lon": 45.2308,
+     "lat": 32.1261,
+     "identificacion": "within 50 km of Nippur",
+     "puntuacion": 585
+    },
+    {
+     "lon": 45.2308,
+     "lat": 32.1269,
+     "identificacion": "within 50 km of the Chebar",
+     "puntuacion": 254
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/26/3",
+    "nota": "Nombre comprobado en la TNM (Eze 3:15)."
+   },
+   "openbible_id": "a10147d"
+  },
+  {
+   "id": "ararat",
+   "nombre": "Ararat",
+   "tipo": "región",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 8:4",
+   "lon": 44.3004,
+   "lat": 39.7028,
+   "moderno": "Urartu",
+   "pais": "Turquía",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/8",
+    "nota": "Nombre comprobado en la TNM (Gé 8:4)."
+   },
+   "openbible_id": "ab89be9"
+  },
+  {
+   "id": "eden",
+   "nombre": "Edén",
+   "tipo": "lugar",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 2:8",
+   "lon": null,
+   "lat": null,
+   "moderno": null,
+   "pais": null,
+   "confianza": "desconocida",
+   "puntuacion_openbible": 447,
+   "candidatos": [
+    {
+     "lon": 44.95,
+     "lat": 40.3833,
+     "identificacion": "in Armenia",
+     "puntuacion": 178
+    },
+    {
+     "lon": 44.4222,
+     "lat": 32.5433,
+     "identificacion": "in Babylonia",
+     "puntuacion": 131
+    },
+    {
+     "lon": 46.1044,
+     "lat": 30.9622,
+     "identificacion": "within 200 km of Ur 2",
+     "puntuacion": 100
+    },
+    {
+     "lon": 35.3333,
+     "lat": 32.7667,
+     "identificacion": "in Canaan",
+     "puntuacion": 13
+    },
+    {
+     "lon": 31.3075,
+     "lat": 30.1294,
+     "identificacion": "in Egypt",
+     "puntuacion": 13
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2",
+    "nota": "Nombre comprobado en la TNM (Gé 2:8)."
+   },
+   "openbible_id": "af3daeb"
+  },
+  {
+   "id": "rio-eufrates",
+   "nombre": "río Éufrates",
+   "tipo": "agua",
+   "grupos": [
+    "babilonia",
+    "persia"
+   ],
+   "referencia": "Gé 2:14",
+   "lon": 47.442,
+   "lat": 31.0043,
+   "moderno": "Euphrates River",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2",
+    "nota": "Nombre comprobado en la TNM (Gé 2:14)."
+   },
+   "openbible_id": "a62dec4"
+  },
+  {
+   "id": "rio-tigris",
+   "nombre": "río Tigris",
+   "tipo": "agua",
+   "grupos": [
+    "babilonia",
+    "persia"
+   ],
+   "referencia": "Da 10:4",
+   "lon": 47.4421,
+   "lat": 31.0043,
+   "moderno": "Tigris River",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/10",
+    "nota": "Nombre comprobado en la TNM (Da 10:4)."
+   },
+   "openbible_id": "a38ebfd"
+  },
+  {
+   "id": "media",
+   "nombre": "Media",
+   "tipo": "región",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Est 1:3",
+   "lon": 48.5162,
+   "lat": 34.8065,
+   "moderno": "Media",
+   "pais": "Irán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/1",
+    "nota": "Nombre comprobado en la TNM (Est 1:3)."
+   },
+   "openbible_id": "ad2fadf"
+  },
+  {
+   "id": "persia",
+   "nombre": "Persia",
+   "tipo": "región",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Est 1:3",
+   "lon": 48.5162,
+   "lat": 34.8065,
+   "moderno": "Persia",
+   "pais": "Irán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/1",
+    "nota": "Nombre comprobado en la TNM (Est 1:3)."
+   },
+   "openbible_id": "ab9696f"
+  },
+  {
+   "id": "elam",
+   "nombre": "Elam",
+   "tipo": "región",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Da 8:2",
+   "lon": 48.2578,
+   "lat": 32.1892,
+   "moderno": "Elam",
+   "pais": "Irán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/8",
+    "nota": "Nombre comprobado en la TNM (Da 8:2)."
+   },
+   "openbible_id": "a7e3a59"
+  },
+  {
+   "id": "asiria",
+   "nombre": "Asiria",
+   "tipo": "región",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "2Re 17:6",
+   "lon": 43.1528,
+   "lat": 36.3594,
+   "moderno": "Assyria",
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17",
+    "nota": "Nombre comprobado en la TNM (2Re 17:6)."
+   },
+   "openbible_id": "a3d1321"
+  },
+  {
+   "id": "sinar",
+   "nombre": "Sinar",
+   "tipo": "región",
+   "grupos": [
+    "babilonia"
+   ],
+   "referencia": "Gé 11:2",
+   "lon": 44.4222,
+   "lat": 32.5433,
+   "moderno": null,
+   "pais": "Irak",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11",
+    "nota": "Nombre comprobado en la TNM (Gé 11:2)."
+   },
+   "openbible_id": "af725b1"
+  },
+  {
+   "id": "india",
+   "nombre": "India",
+   "tipo": "región",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": "Est 1:1",
+   "lon": 67.4308,
+   "lat": 23.9944,
+   "moderno": "India",
+   "pais": "Pakistán",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/1",
+    "nota": "Nombre comprobado en la TNM (Est 1:1)."
+   },
+   "openbible_id": "a878481"
+  },
+  {
+   "id": "etiopia",
+   "nombre": "Etiopía",
+   "tipo": "región",
+   "grupos": [
+    "persia",
+    "egipto"
+   ],
+   "referencia": "Est 1:1",
+   "lon": 33.7507,
+   "lat": 16.9351,
+   "moderno": "Cush 1",
+   "pais": "Sudán",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/1",
+    "nota": "Nombre comprobado en la TNM (Est 1:1)."
+   },
+   "openbible_id": "ac5a1ec"
+  },
+  {
+   "id": "nof",
+   "nombre": "Nof",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Jer 44:1",
+   "lon": 31.253,
+   "lat": 29.8488,
+   "nombre_alt": "Menfis",
+   "moderno": "Mit Rahina (Menfis)",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/44",
+    "nota": "Nombre comprobado en la TNM (Jer 44:1)."
+   },
+   "openbible_id": "a8ec269"
+  },
+  {
+   "id": "no-amon",
+   "nombre": "No-Amón",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Na 3:8",
+   "lon": 32.6103,
+   "lat": 25.7206,
+   "nombre_alt": "Tebas",
+   "moderno": "Luxor (Tebas)",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/3",
+    "nota": "Nombre comprobado en la TNM (Na 3:8)."
+   },
+   "openbible_id": "a9674fc"
+  },
+  {
+   "id": "zoan",
+   "nombre": "Zoan",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Nú 13:22",
+   "lon": 31.88,
+   "lat": 30.9769,
+   "moderno": "Tanis",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13",
+    "nota": "Nombre comprobado en la TNM (Nú 13:22)."
+   },
+   "openbible_id": "ac31fee"
+  },
+  {
+   "id": "rameses",
+   "nombre": "Ramesés",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Éx 12:37",
+   "lon": 31.8342,
+   "lat": 30.7994,
+   "moderno": "Qantir",
+   "pais": "Egipto",
+   "confianza": "media",
+   "puntuacion_openbible": 509,
+   "candidatos": [
+    {
+     "lon": 31.8342,
+     "lat": 30.7994,
+     "identificacion": "Qantir",
+     "puntuacion": 509
+    },
+    {
+     "lon": 31.8225,
+     "lat": 30.7862,
+     "identificacion": "Tell el Daba",
+     "puntuacion": 270
+    },
+    {
+     "lon": 32.5461,
+     "lat": 31.0425,
+     "identificacion": "another name for Pelusium",
+     "puntuacion": 13
+    },
+    {
+     "lon": 31.88,
+     "lat": 30.9769,
+     "identificacion": "Tanis",
+     "puntuacion": -207
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/12",
+    "nota": "Nombre comprobado en la TNM (Éx 12:37)."
+   },
+   "openbible_id": "a079b21"
+  },
+  {
+   "id": "pitom",
+   "nombre": "Pitom",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Éx 1:11",
+   "lon": 31.9636,
+   "lat": 30.5475,
+   "moderno": "Tell er Retaba",
+   "pais": "Egipto",
+   "confianza": "baja",
+   "puntuacion_openbible": 419,
+   "candidatos": [
+    {
+     "lon": 31.9636,
+     "lat": 30.5475,
+     "identificacion": "Tell er Retaba",
+     "puntuacion": 419
+    },
+    {
+     "lon": 32.099,
+     "lat": 30.5527,
+     "identificacion": "Tell el Maskhuta",
+     "puntuacion": 171
+    },
+    {
+     "lon": 31.3075,
+     "lat": 30.1294,
+     "identificacion": "another name for Heliopolis",
+     "puntuacion": 16
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1",
+    "nota": "Nombre comprobado en la TNM (Éx 1:11)."
+   },
+   "openbible_id": "a3870fe"
+  },
+  {
+   "id": "on",
+   "nombre": "On",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Gé 41:45",
+   "lon": 31.3075,
+   "lat": 30.1294,
+   "nombre_alt": "Heliópolis",
+   "moderno": "Ain Shams (El Cairo)",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41",
+    "nota": "Nombre comprobado en la TNM (Gé 41:45)."
+   },
+   "openbible_id": "acd9137"
+  },
+  {
+   "id": "tahpanhes",
+   "nombre": "Tahpanhés",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Jer 43:7",
+   "lon": 32.1714,
+   "lat": 30.8606,
+   "moderno": "Tell Defenneh",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/43",
+    "nota": "Nombre comprobado en la TNM (Jer 43:7)."
+   },
+   "openbible_id": "adb008c"
+  },
+  {
+   "id": "migdol",
+   "nombre": "Migdol",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Jer 44:1",
+   "lon": 32.4929,
+   "lat": 30.9648,
+   "moderno": "Tell el Herr",
+   "pais": "Egipto",
+   "confianza": "baja",
+   "puntuacion_openbible": 227,
+   "candidatos": [
+    {
+     "lon": 32.4929,
+     "lat": 30.9648,
+     "identificacion": "Tell el Herr",
+     "puntuacion": 227
+    },
+    {
+     "lon": 32.4755,
+     "lat": 30.9833,
+     "identificacion": "Tell Qedua",
+     "puntuacion": 102
+    },
+    {
+     "lon": 32.4126,
+     "lat": 30.9234,
+     "identificacion": "Tell el Borg",
+     "puntuacion": 21
+    },
+    {
+     "lon": 32.3833,
+     "lat": 30.8833,
+     "identificacion": "Tell Ahmar",
+     "puntuacion": 16
+    },
+    {
+     "lon": 32.4929,
+     "lat": 30.9648,
+     "identificacion": "another name for Migdol 1",
+     "puntuacion": -43
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/44",
+    "nota": "Nombre comprobado en la TNM (Jer 44:1)."
+   },
+   "openbible_id": "aa6d1bd"
+  },
+  {
+   "id": "siene",
+   "nombre": "Siene",
+   "tipo": "ciudad",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Eze 29:10",
+   "lon": 32.8997,
+   "lat": 24.0889,
+   "moderno": "Asuán",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/26/29",
+    "nota": "Nombre comprobado en la TNM (Eze 29:10)."
+   },
+   "openbible_id": "a8a6a5b"
+  },
+  {
+   "id": "gosen",
+   "nombre": "Gosén",
+   "tipo": "región",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Gé 47:1",
+   "lon": 31.8342,
+   "lat": 30.7994,
+   "moderno": "Goshen 1",
+   "pais": "Egipto",
+   "confianza": "alta",
+   "puntuacion_openbible": 1020,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/47",
+    "nota": "Nombre comprobado en la TNM (Gé 47:1)."
+   },
+   "openbible_id": "a60f092"
+  },
+  {
+   "id": "rio-nilo",
+   "nombre": "río Nilo",
+   "tipo": "agua",
+   "grupos": [
+    "egipto"
+   ],
+   "referencia": "Gé 41:1",
+   "lon": 30.3667,
+   "lat": 31.4653,
+   "moderno": "Nile River",
+   "pais": "Egipto",
+   "pais_aprox": true,
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41",
+    "nota": "Nombre comprobado en la TNM (Gé 41:1)."
+   },
+   "openbible_id": "a012705"
+  },
+  {
+   "id": "tarsis",
+   "nombre": "Tarsis",
+   "tipo": "lugar",
+   "grupos": [
+    "otros"
+   ],
+   "referencia": "Jon 1:3",
+   "lon": -6.9442,
+   "lat": 37.2719,
+   "moderno": null,
+   "pais": "España",
+   "confianza": "baja",
+   "puntuacion_openbible": 418,
+   "candidatos": [
+    {
+     "lon": -6.9442,
+     "lat": 37.2719,
+     "identificacion": "another name for Tartessos",
+     "puntuacion": 418
+    },
+    {
+     "lon": 9.0833,
+     "lat": 40.05,
+     "identificacion": "Sardinia",
+     "puntuacion": 165
+    },
+    {
+     "lon": 10.3235,
+     "lat": 36.8526,
+     "identificacion": "another name for Carthage",
+     "puntuacion": 51
+    },
+    {
+     "lon": -6.2937,
+     "lat": 36.5283,
+     "identificacion": "Cádiz",
+     "puntuacion": 26
+    },
+    {
+     "lon": 34.8921,
+     "lat": 36.913,
+     "identificacion": "another name for Tarsus",
+     "puntuacion": 25
+    },
+    {
+     "lon": 33.0,
+     "lat": 35.0,
+     "identificacion": "another name for Cyprus",
+     "puntuacion": 21
+    },
+    {
+     "lon": 28.2109,
+     "lat": 36.4402,
+     "identificacion": "another name for Rhodes 2",
+     "puntuacion": 13
+    },
+    {
+     "lon": 11.8389,
+     "lat": 42.2279,
+     "identificacion": "another name for Etruria",
+     "puntuacion": -3
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1",
+    "nota": "Nombre comprobado en la TNM (Jon 1:3)."
+   },
+   "openbible_id": "a5f43dd"
+  },
+  {
+   "id": "ofir",
+   "nombre": "Ofir",
+   "tipo": "lugar",
+   "grupos": [
+    "otros"
+   ],
+   "referencia": "1Re 9:28",
+   "lon": 42.5,
+   "lat": 18.2167,
+   "moderno": "southwestern Arabia",
+   "pais": "Arabia Saudita",
+   "confianza": "baja",
+   "puntuacion_openbible": 283,
+   "candidatos": [
+    {
+     "lon": 42.5,
+     "lat": 18.2167,
+     "identificacion": "southwestern Arabia",
+     "puntuacion": 283
+    },
+    {
+     "lon": 43.1481,
+     "lat": 11.595,
+     "identificacion": "another name for Punt",
+     "puntuacion": 176
+    },
+    {
+     "lon": 72.7952,
+     "lat": 19.4142,
+     "identificacion": "Sopara",
+     "puntuacion": 163
+    },
+    {
+     "lon": 77.0714,
+     "lat": 8.3175,
+     "identificacion": "Poovar",
+     "puntuacion": 30
+    },
+    {
+     "lon": 34.7366,
+     "lat": -20.1557,
+     "identificacion": "Sofala",
+     "puntuacion": 30
+    },
+    {
+     "lon": 81.0,
+     "lat": 7.0,
+     "identificacion": "Sri Lanka",
+     "puntuacion": 30
+    },
+    {
+     "lon": 74.0433,
+     "lat": 15.4019,
+     "identificacion": "Goa",
+     "puntuacion": 30
+    },
+    {
+     "lon": 102.0,
+     "lat": 0.0,
+     "identificacion": "Sumatra",
+     "puntuacion": 27
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9",
+    "nota": "Nombre comprobado en la TNM (1Re 9:28)."
+   },
+   "openbible_id": "a104820"
+  },
+  {
+   "id": "saba",
+   "nombre": "Saba",
+   "tipo": "región",
+   "grupos": [
+    "otros"
+   ],
+   "referencia": "1Re 10:1",
+   "lon": 44.2064,
+   "lat": 15.3483,
+   "moderno": "Sheba",
+   "pais": "Yemen",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/10",
+    "nota": "Nombre comprobado en la TNM (1Re 10:1)."
+   },
+   "openbible_id": "a81ab85"
+  },
+  {
+   "id": "edom",
+   "nombre": "Edom",
+   "tipo": "región",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Nú 20:14",
+   "lon": 35.6039,
+   "lat": 30.7458,
+   "moderno": "Edom",
+   "pais": "Jordania",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20",
+    "nota": "Nombre comprobado en la TNM (Nú 20:14)."
+   },
+   "openbible_id": "a2735ff"
+  },
+  {
+   "id": "moab",
+   "nombre": "Moab",
+   "tipo": "región",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Nú 22:1",
+   "lon": 35.7014,
+   "lat": 31.1806,
+   "moderno": "Moab 1",
+   "pais": "Jordania",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22",
+    "nota": "Nombre comprobado en la TNM (Nú 22:1)."
+   },
+   "openbible_id": "aa0b1d6"
+  },
+  {
+   "id": "madian",
+   "nombre": "Madián",
+   "tipo": "región",
+   "grupos": [
+    "israel"
+   ],
+   "referencia": "Éx 2:15",
+   "lon": 35.0122,
+   "lat": 28.4947,
+   "moderno": "Midian",
+   "pais": "Arabia Saudita",
+   "confianza": "alta",
+   "puntuacion_openbible": 1000,
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2",
+    "nota": "Nombre comprobado en la TNM (Éx 2:15)."
+   },
+   "openbible_id": "acc6d8e"
+  },
+  {
+   "id": "uz",
+   "nombre": "Uz",
+   "tipo": "región",
+   "grupos": [
+    "otros"
+   ],
+   "referencia": "Job 1:1",
+   "lon": 35.6039,
+   "lat": 30.7458,
+   "moderno": "in Edom",
+   "pais": "Jordania",
+   "confianza": "baja",
+   "puntuacion_openbible": 384,
+   "candidatos": [
+    {
+     "lon": 35.6039,
+     "lat": 30.7458,
+     "identificacion": "in Edom",
+     "puntuacion": 384
+    },
+    {
+     "lon": 37.75,
+     "lat": 31.0,
+     "identificacion": "Wadi Sirhan",
+     "puntuacion": 262
+    },
+    {
+     "lon": 36.3681,
+     "lat": 32.7301,
+     "identificacion": "another name for Hauran",
+     "puntuacion": 205
+    },
+    {
+     "lon": 34.8408,
+     "lat": 31.2447,
+     "identificacion": "another name for the Negeb",
+     "puntuacion": 54
+    },
+    {
+     "lon": 36.035,
+     "lat": 32.8358,
+     "identificacion": "about 30 km around Al Shaykh Saad",
+     "puntuacion": 49
+    },
+    {
+     "lon": 35.6039,
+     "lat": 30.7458,
+     "identificacion": "another name for Edom",
+     "puntuacion": 17
+    }
+   ],
+   "verificacion": {
+    "estado": "verificado",
+    "fuente": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1",
+    "nota": "Nombre comprobado en la TNM (Job 1:1)."
+   },
+   "openbible_id": "a324c4d"
+  },
+  {
+   "id": "persepolis",
+   "nombre": "Persépolis",
+   "tipo": "ciudad",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": null,
+   "lon": 52.89,
+   "lat": 29.935,
+   "moderno": "Persépolis (Marvdasht)",
+   "pais": "Irán",
+   "confianza": "alta",
+   "extrabiblico": true,
+   "verificacion": {
+    "estado": "no aplica",
+    "fuente": "https://www.wikidata.org/wiki/Q129072",
+    "nota": "Lugar de contexto histórico; no aparece por nombre en la Biblia."
+   }
+  },
+  {
+   "id": "pasargada",
+   "nombre": "Pasargada",
+   "tipo": "ciudad",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": null,
+   "lon": 53.1794,
+   "lat": 30.2,
+   "moderno": "Pasargada",
+   "pais": "Irán",
+   "confianza": "alta",
+   "extrabiblico": true,
+   "verificacion": {
+    "estado": "no aplica",
+    "fuente": "https://www.wikidata.org/wiki/Q230025",
+    "nota": "Lugar de contexto histórico; no aparece por nombre en la Biblia."
+   }
+  },
+  {
+   "id": "delfos",
+   "nombre": "Delfos",
+   "tipo": "ciudad",
+   "grupos": [
+    "pablo"
+   ],
+   "referencia": null,
+   "lon": 22.5,
+   "lat": 38.4833,
+   "moderno": "Delfos",
+   "pais": "Grecia",
+   "confianza": "alta",
+   "extrabiblico": true,
+   "verificacion": {
+    "estado": "no aplica",
+    "fuente": "https://www.wikidata.org/wiki/Q75459",
+    "nota": "Lugar de contexto histórico; no aparece por nombre en la Biblia."
+   }
+  },
+  {
+   "id": "inscripcion-de-behistun",
+   "nombre": "Inscripción de Behistún",
+   "tipo": "lugar",
+   "grupos": [
+    "persia"
+   ],
+   "referencia": null,
+   "lon": 47.4359,
+   "lat": 34.3904,
+   "moderno": "Bisotun",
+   "pais": "Irán",
+   "confianza": "alta",
+   "extrabiblico": true,
+   "verificacion": {
+    "estado": "no aplica",
+    "fuente": "https://www.wikidata.org/wiki/Q180012",
+    "nota": "Lugar de contexto histórico; no aparece por nombre en la Biblia."
+   }
+  }
+ ]
+}

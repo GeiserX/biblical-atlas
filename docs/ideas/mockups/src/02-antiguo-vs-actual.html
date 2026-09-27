@@ -1,0 +1,192 @@
+<!doctype html>
+<!--
+  02 · Mapa antiguo frente a mapa actual, con cortina. Fecha: c. 96 e.c., Juan en Patmos.
+  Fuentes de los datos (comprobadas en wol.jw.org el 27-09-2026):
+  - Juan en la isla de Patmos (Ap 1:9); las siete congregaciones de la provincia de Asia (Ap 1:4, 11):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1
+  - Juan escribe Apocalipsis c. 96 e.c.; completa su Evangelio y sus cartas c. 98 e.c.; destrucción de Jerusalén en 70 e.c.:
+    estudio 3 de "Toda Escritura" · https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+  - Congregaciones fundadas por Pablo en Macedonia y Acaya (Hch 16-18): data/viajes-de-pablo.json.
+  - Nombres y países actuales: kit/places.json (OpenBible.info CC BY 4.0 y Wikidata CC0; nivel 2).
+  - Emperadores (nivel 2, cronología secular): Nerón 54-68, Vespasiano 69-79, Tito 79-81, Domiciano 81-96, Nerva 96-98, Trajano 98-117.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>02 · Mapa antiguo y mapa actual</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 134px; --panel-w: 392px; }
+  .names { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); }
+  .names th { text-align: left; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); padding: 0 0 6px; }
+  .names td { padding: 6px 0; border-top: 1px solid var(--line); vertical-align: top; line-height: 1.25; }
+  .names td:first-child { font-family: var(--font-serif); font-size: 16px; font-weight: 600; padding-right: 8px; white-space: nowrap; }
+  .names td:nth-child(2) { color: var(--ink); font-weight: 500; }
+  .names td small { display: block; color: var(--ink-3); font-size: var(--fs-2xs); font-weight: 600; margin-top: 1px; }
+  .names tr.hl td { background: var(--gold-soft); }
+  .names tr.hl td:first-child { box-shadow: inset 3px 0 0 var(--gold); padding-left: 8px; }
+  .sec-title { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+  .modes { display: flex; gap: 6px; margin: 10px 0 2px; flex-wrap: wrap; }
+  .tier-mini { font-size: 9px; font-weight: 800; color: var(--tier2); background: var(--tier2-soft); border-radius: 999px; padding: 1px 5px; margin-left: 2px; }
+  .be-curtain__tag { font-size: var(--fs-sm); padding: 5px 12px; }
+  .be-curtain__handle { width: 44px; height: 44px; left: -23px; margin-top: -22px; border: 2px solid var(--gold); color: var(--gold); }
+  /* etiqueta doble en la mitad actual: nombre de hoy arriba, nombre bíblico debajo */
+  .be-city__label small.anc { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; font-weight: 600; color: #7a4b1f; letter-spacing: 0; }
+  .country-tag { font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #5f5474; }
+</style>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Ap 1:11</b> · las siete congregaciones</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">c. 96 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="curtain"></i>Cortina</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+      <div class="be-float be-zoombtns"><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">c. 96 e.c.</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--letter"></span>Apocalipsis, de Patmos a las 7 congregaciones</div>
+        <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px solid rgba(123,111,96,.45)"></span>Rastro: viajes de Pablo (c. 49-56)</div>
+        <div class="be-legend__row"><span class="be-city be-city--dest" style="position:relative;transform:none;width:26px;justify-content:center"><span class="be-city__dot"></span></span>Congregación destinataria</div>
+      </div>
+    </div>
+    <div class="be-mapctl be-mapctl--br" id="scale"></div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Mapa</span><span class="be-sep">›</span><span>Nombres de este encuadre</span></div>
+      <div class="modes">
+        <span class="be-chip">Sólo antiguos</span><span class="be-chip">Sólo actuales</span><span class="be-chip be-chip--active">Los dos donde ayuda</span>
+      </div>
+    </div>
+    <div class="be-panel__body">
+      <article class="be-card">
+        <div class="be-card__pad">
+          <div class="sec-title"><i class="be-i be-i--sm" data-icon="swap"></i>Nombre bíblico → lugar de hoy</div>
+          <table class="names" style="margin-top:8px">
+            <tr><th>TNM</th><th>Hoy</th></tr>
+            <tr class="hl"><td>Patmos</td><td>Patmos<small>Grecia · isla</small></td></tr>
+            <tr><td>Éfeso</td><td>ruinas cerca de Selçuk<small>Turquía</small></td></tr>
+            <tr><td>Esmirna</td><td>İzmir<small>Turquía</small></td></tr>
+            <tr><td>Pérgamo</td><td>Bergama<small>Turquía</small></td></tr>
+            <tr><td>Tiatira</td><td>Akhisar<small>Turquía</small></td></tr>
+            <tr><td>Sardis</td><td>Sart<small>Turquía</small></td></tr>
+            <tr><td>Filadelfia</td><td>Alaşehir<small>Turquía</small></td></tr>
+            <tr><td>Laodicea</td><td>ruinas cerca de Denizli<small>Turquía</small></td></tr>
+            <tr><td>Tesalónica</td><td>Salónica<small>Grecia</small></td></tr>
+            <tr><td>Neápolis</td><td>Kavala<small>Grecia</small></td></tr>
+          </table>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--2" data-n="2">OpenBible · Wikidata</span><span class="be-spacer"></span><span class="be-muted" style="font-size:var(--fs-xs)">Coordenadas CC BY 4.0</span></div>
+      </article>
+      <div class="be-note be-note--uncertain" style="margin-top:12px"><i class="be-i" data-icon="info"></i><div>La provincia de <b>Asia</b> (Ap 1:4) no es el continente asiático: es el oeste de la actual Turquía. Las provincias romanas no coinciden con los países de hoy; por eso no las traducimos, las superponemos.</div></div>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [20.3, 36.25, 30.2, 41.55] });
+  const CUT = 0.47;                           // posición de la cortina (fracción del ancho)
+  const cutX = mapEl.clientWidth * CUT;
+  map.curtain(CUT, { leftLabel: '<i class="be-i be-i--sm" data-icon="scroll"></i> Mapa antiguo · provincias romanas', rightLabel: 'Mapa actual · países de hoy <i class="be-i be-i--sm" data-icon="globe"></i>' });
+
+  // Mitad antigua: regiones de época
+  map.label('Macedonia', 22.3, 41.15, { kind: 'region' });
+  map.label('Acaya', 21.75, 38.55, { kind: 'region' });
+  map.label('Mar Egeo', 24.25, 38.75, { kind: 'sea', rotate: -62, size: 18 });
+  // Mitad actual: países
+  map.label('<span class="country-tag">Turquía</span>', 28.7, 39.55, { kind: 'country' });
+  map.label('<span class="country-tag">Grecia</span>', 25.65, 38.95, { kind: 'country' });
+
+  // Rastro tenue: Pablo en Macedonia y Acaya (c. 49-56)
+  map.route(['neapolis', 'filipos', 'anfipolis', 'apolonia', 'tesalonica', 'berea'], { kind: 'ghost', curve: [0, 0.05, 0, 0.05, 0.05] });
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'ghost', curve: [-0.12, -0.1] });
+  map.route(['atenas', 'corinto'], { kind: 'ghost', curve: 0.12 });
+  map.route(['cencreas', 'efeso'], { kind: 'ghost', curve: 0.1 });
+
+  // Apocalipsis: de Patmos a las siete congregaciones (Ap 1:11)
+  const seven = ['efeso', 'esmirna', 'pergamo', 'tiatira', 'sardis', 'filadelfia', 'laodicea'];
+  const curv = [0.12, -0.12, -0.14, -0.14, -0.1, -0.08, -0.08];
+  seven.forEach((id, i) => map.route(['patmos', id], { kind: 'letter', curve: curv[i], trim: 10, arrows: i === 6 || i === 2 }));
+
+  // Ciudades: en la mitad antigua, nombre bíblico (con el actual debajo donde ayuda); en la actual, nombre de hoy con el bíblico debajo
+  const P = (id) => BE.place(id);
+  const city = (id, o = {}) => {
+    const p = P(id); const [x] = map.project(p.lon, p.lat);
+    const modern = o.modern || p.moderno;
+    if (x > cutX) { const n = map.city(id, { ...o, label: modern, sub: '' }); if (modern !== p.nombre) tagAncient(id, p.nombre); return n; }
+    return map.city(id, { ...o, sub: o.sub !== undefined ? o.sub : '' });
+  };
+  function tagAncient(id, anc) {
+    const n = [...map.html.querySelectorAll('.be-city')].pop();
+    const l = n.querySelector('.be-city__label');
+    if (l) l.insertAdjacentHTML('beforeend', `<small class="anc">${anc}</small>`);
+    return n;
+  }
+  // mitad antigua
+  city('tesalonica', { variant: 'visited', side: 'top', sub: 'hoy Salónica' });
+  city('berea', { variant: 'visited', side: 'left', sub: 'hoy Veria' });
+  city('filipos', { variant: 'visited', side: 'top' });
+  city('neapolis', { variant: 'visited', side: 'right', labelDy: 12, sub: 'hoy Kavala' });
+  city('anfipolis', { variant: ['visited', 'minor'], label: '' });
+  city('atenas', { variant: 'visited', side: 'right' });
+  city('corinto', { variant: 'visited', side: 'left' });
+  city('cencreas', { variant: ['minor'], label: '' });
+  // mitad actual
+  city('samotracia', { variant: 'minor', side: 'top' });
+  city('troas', { variant: 'minor', side: 'right', modern: 'Dalyan (ruinas)' });
+  city('mitilene', { variant: 'minor', side: 'left', modern: 'Mitilene' });
+  city('quios', { variant: 'minor', side: 'left' });
+  city('samos', { variant: 'minor', side: 'left' });
+  city('patmos', { variant: 'current', side: 'left' });
+  city('efeso', { variant: 'dest', side: 'right', modern: 'Selçuk (ruinas)' });
+  city('esmirna', { variant: 'dest', side: 'left', modern: 'İzmir' });
+  city('pergamo', { variant: 'dest', side: 'top' });
+  city('tiatira', { variant: 'dest', side: 'right' });
+  city('sardis', { variant: 'dest', side: 'right' });
+  city('filadelfia', { variant: 'dest', side: 'bottom' });
+  city('laodicea', { variant: 'dest', side: 'bottom', modern: 'Denizli (ruinas)' });
+
+  document.getElementById('scale').appendChild(map.scaleBar(110));
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 50, to: 110, tick: 5, minor: 1, cursor: 96, cursorLabel: 'c. 96 e.c.',
+    zoomLevel: 'Décadas', speed: '1 año por segundo',
+    lanes: [
+      { label: 'Juan', color: 'var(--node-persona)', icon: 'person', items: [
+        { at: 70, label: 'Destrucción de Jerusalén · 70', color: 'var(--node-evento)' },
+        { at: 96, label: 'Apocalipsis · Patmos', labelLeft: true },
+        { at: 98, label: 'Evangelio y cartas · c. 98' } ] },
+      { label: 'Emperador <span class="tier-mini">N2</span>', color: 'var(--emp-roma)', icon: 'crown', items: [
+        { from: 50, to: 54, label: 'Claudio', color: '#b35a4c' },
+        { from: 54, to: 68, label: 'Nerón · 54-68', color: 'var(--emp-roma)' },
+        { from: 69, to: 79, label: 'Vespasiano', color: '#b35a4c' },
+        { from: 79, to: 81, label: '', color: 'var(--emp-roma)' },
+        { from: 81, to: 96, label: 'Domiciano · 81-96', color: '#b35a4c' },
+        { from: 96, to: 98, label: '', color: 'var(--emp-roma)' },
+        { from: 98, to: 110, label: 'Trajano · desde 98', color: '#b35a4c' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<!--
+  Fuentes de los datos de esta maqueta (comprobadas en wol.jw.org):
+  - Llegada a Corinto en el otoño del 50, Áquila y Priscila, un año y seis meses, Corinto capital de Acaya:
+    nota de estudio de Hch 18 · https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  - 1 Tesalonicenses: escrita en Corinto, c. 50 e.c.; persecución desde el principio (1Te 1:6):
+    https://wol.jw.org/es/wol/bibledocument/r4/lp-s/nwtsty/52/introduction
+  - Gálatas: Corinto o Antioquía de Siria, c. 50-52 e.c.; 2 Tesalonicenses hacia el 51:
+    https://wol.jw.org/es/wol/bibledocument/r4/lp-s/nwtsty/48/introduction
+  - Ruta aproximada Listra → Troas (Frigia, Galacia, Misia, sin trazado exacto): Hch 16:6-8 ·
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  - Fechas de los viajes (c. 47-48, c. 49-52, c. 52-56): ver data/viajes-de-pablo.json.
+  - Claudio (41-54) y Nerón (54-68): cronología secular de los emperadores.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>00 · Demostración del kit</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 226px; }
+  .photo-h { height: 92px; }
+  .be-panel__body { gap: 10px; padding-top: 12px; }
+  .ends-note { font-size: var(--fs-2xs); color: var(--ink-3); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="be-app">
+
+  <!-- Barra superior -->
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Pablo</b> · persona, lugar, capítulo (Hch 16) o año (607 a.e.c.)</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">Otoño del 50 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <!-- Mapa -->
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+      <div class="be-float be-zoombtns"><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">Segundo viaje · Hch 15:36–18:22</div>
+        <div class="be-legend__row"><span class="be-legend__line"></span>Recorrido hasta esta fecha</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--sea"></span>Tramo por mar</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta aproximada (Hch 16:6-8)</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--letter"></span>Carta escrita en esta fecha</div>
+        <div class="be-legend__row"><span class="be-legend__zone"></span>Lugar sin punto exacto</div>
+      </div>
+    </div>
+    <div class="be-mapctl be-mapctl--br" id="scale"></div>
+  </main>
+
+  <!-- Panel lateral -->
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Pablo</span><span class="be-sep">›</span><span>2.º viaje</span><span class="be-sep">›</span><span>Corinto</span></div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:10px">
+        <span class="be-node be-node--persona be-node--lg">P</span>
+        <div>
+          <div class="be-serif" style="font-size:26px;font-weight:600;line-height:1.1">Pablo</div>
+          <div class="be-muted" style="font-size:var(--fs-sm)">Apóstol · en <b style="color:var(--ink)">Corinto</b> en esta fecha</div>
+        </div>
+      </div>
+      <div class="be-tabs"><span class="be-tab be-tab--on">Aquí y ahora</span><span class="be-tab">Conexiones<b>14</b></span><span class="be-tab">Fuentes<b>6</b></span></div>
+    </div>
+    <div class="be-panel__body">
+      <article class="be-card">
+        <figure class="be-photo photo-h">
+          <img src="../kit/photos/corinto-bema.jpg" alt="">
+          <span class="be-photo__badge be-tier be-tier--2" data-n="2">Arqueología</span>
+          <figcaption><b>Tribuna (bema) del foro de Corinto</b>Estado actual<span class="be-photo__credit">Foto: George E. Koronaios · CC0 · Wikimedia Commons</span></figcaption>
+        </figure>
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="place"></i>Dónde está Pablo</div>
+          <h2 class="be-card__title">Corinto</h2>
+          <div class="be-card__sub">Capital de la provincia romana de Acaya</div>
+          <div class="be-card__body">Llega desde Atenas en el otoño del 50. Vive con Áquila y Priscila; se queda un año y seis meses.</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">
+            <a class="be-ref">Hch 18:1-3</a><a class="be-ref">Hch 18:11</a><span class="be-chrono be-chrono--tnm">otoño del 50 e.c.</span>
+          </div>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18">Leer en wol.jw.org</a></div>
+      </article>
+
+      <article class="be-card be-card--accent">
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="letter"></i>Carta escrita aquí · c. 50 e.c.</div>
+          <h2 class="be-card__title" style="font-size:var(--fs-xl)">1 Tesalonicenses</h2>
+          <div class="be-ends">
+            <div class="be-end"><div class="be-end__label">Desde</div><div class="be-end__place">Corinto</div><div class="be-end__text">Con Silas y Timoteo.</div></div>
+            <div class="be-ends__arrow">→</div>
+            <div class="be-end"><div class="be-end__label">Para</div><div class="be-end__place">Tesalónica</div><div class="be-end__text">Sufre persecución.</div></div>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center"><a class="be-ref">Hch 18:5</a><a class="be-ref">1Te 1:6</a><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/bibledocument/r4/lp-s/nwtsty/52/introduction">Sobre el libro</a></div>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+  <!-- Línea de tiempo -->
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [20.6, 31.0, 37.2, 42.0], fit: 'contain' });
+
+  // Regiones y mares (texto nuestro; los nombres de región siguen la TNM)
+  map.label('Macedonia', 21.75, 40.05, { kind: 'region' });
+  map.label('Acaya', 22.1, 38.45, { kind: 'region' });
+  map.label('Asia', 28.3, 38.3, { kind: 'region' });
+  map.label('Galacia', 33.4, 39.9, { kind: 'region' });
+  map.label('Cilicia', 34.5, 37.35, { kind: 'region' });
+  map.label('Mar Egeo', 25.2, 38.9, { kind: 'sea', rotate: -62 });
+  map.label('Mar Mediterráneo', 28.6, 34.2, { kind: 'sea', size: 20 });
+
+  // Zona incierta: destinatarios de Gálatas (nota de estudio de Gál 1:2)
+  map.zone(['antioquia-de-pisidia', 'iconio', 'listra', 'derbe'], { padKm: 38, label: 'Destinatarios de Gálatas<br>sin ciudad única', labelAt: [34.75, 38.45] });
+
+  // Recorrido hecho (otoño del 50)
+  map.route(['antioquia-de-siria', 'derbe', 'listra'], { kind: 'done', curve: [0.08, 0] });
+  map.route(['listra', 'troas'], { kind: 'approx', curve: 0.16 });
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'sea', curve: [-0.12, -0.1] });
+  map.route(['neapolis', 'filipos', 'anfipolis', 'apolonia', 'tesalonica', 'berea'], { kind: 'done', curve: [0, 0.05, 0, 0.05, 0.05], arrows: false });
+  // Berea → la costa (Hch 17:14) y por mar hasta Atenas, bordeando Eubea
+  map.route(['berea', [22.6, 40.33]], { kind: 'done', arrows: false });
+  map.route([[22.6, 40.33], [23.25, 39.8], [24.1, 39.15], [24.6, 38.55], [24.35, 37.85], [24.05, 37.5], [23.62, 37.92]], { kind: 'sea', smooth: true, arrowEvery: 170 });
+  map.route([[23.62, 37.92], 'atenas'], { kind: 'done', arrows: false, trim: 5 });
+  map.route(['atenas', 'corinto'], { kind: 'done', curve: 0.12 });
+  // Lo que falta del viaje (Hch 18:18-22)
+  map.route(['cencreas', 'efeso', 'cesarea'], { kind: 'sea-todo', curve: [0.1, 0.1] });
+  map.route(['cesarea', 'antioquia-de-siria'], { kind: 'todo', curve: 0.1 });
+  // Carta escrita en esta fecha: Corinto → Tesalónica
+  map.route(['corinto', 'tesalonica'], { kind: 'letter', curve: -0.28, trim: 12 });
+
+  // Ciudades
+  map.city('antioquia-de-siria', { variant: ['major', 'visited'], side: 'left', label: 'Antioquía de Siria' });
+  map.city('derbe', { variant: 'visited', side: 'bottom' });
+  map.city('listra', { variant: 'visited', side: 'left' });
+  map.city('iconio', { variant: 'minor' });
+  map.city('antioquia-de-pisidia', { variant: 'minor', side: 'left' });
+  map.city('troas', { variant: 'visited', side: 'left' });
+  map.city('samotracia', { variant: ['minor'], side: 'top' });
+  map.city('neapolis', { variant: 'visited', label: '' });
+  map.city('filipos', { variant: 'visited', side: 'top' });
+  map.city('anfipolis', { variant: ['visited', 'minor'], label: '' });
+  map.city('tesalonica', { variant: ['visited', 'dest'], side: 'top' });
+  map.city('berea', { variant: 'visited', side: 'left' });
+  map.city('atenas', { variant: 'visited', side: 'right' });
+  map.city('corinto', { variant: 'current', side: 'left' });
+  map.city('cencreas', { variant: 'future', label: '' });
+  map.city('efeso', { variant: 'future' });
+  map.city('tarso', { variant: 'minor', side: 'top' });
+  map.city('cesarea', { variant: 'future', side: 'left' });
+  map.city('jerusalen', { variant: ['major'], side: 'right' });
+  map.city('pafos', { variant: 'minor', side: 'left' });
+
+  document.getElementById('scale').appendChild(map.scaleBar(110));
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 45, to: 58, tick: 1, minor: 0.25, cursor: 50.8, cursorLabel: 'otoño del 50 e.c.',
+    uncertain: [{ from: 50, to: 52 }],
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="rewind"></i></span><span class="be-play__btn"><i data-icon="step-back"></i></span>
+      <span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 mes por segundo</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span>Décadas</span><span class="on">Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="be-spacer"></span>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">4000 a.e.c.</span>
+      <div class="be-minimap"><div class="be-minimap__win" style="left:93.4%;width:1.6%"></div></div>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">100 e.c.</span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pablo', color: 'var(--node-persona)', icon: 'person', items: [
+        { from: 46.6, to: 49, label: '1.er viaje · c. 47-48', fuzzy: 'both', color: '#c98f7c' },
+        { from: 49, to: 52.4, label: '2.º viaje · c. 49-52', fuzzy: 'both', active: true },
+        { from: 52.4, to: 56.6, label: '3.er viaje · c. 52-56', fuzzy: 'both', color: '#c98f7c' } ] },
+      { label: 'Lugar de Pablo', color: 'var(--node-lugar)', icon: 'place', items: [
+        { from: 50, to: 50.75, label: 'Macedonia', color: '#8fb1b3' },
+        { from: 50.75, to: 52.25, label: 'Corinto · 1 año y 6 meses', fuzzy: 'end', color: 'var(--node-lugar)' } ] },
+      { label: 'Cartas', color: 'var(--node-evento)', icon: 'letter', items: [
+        { at: 50.85, label: '1 Tesalonicenses', labelLeft: true },
+        { at: 51.5, label: '2 Tesalonicenses', color: '#d6b46f' } ] },
+      { label: 'Fecha incierta', color: 'var(--zone)', icon: 'hourglass', items: [
+        { from: 50, to: 52.9, label: 'Gálatas · c. 50-52 · desde Corinto o Antioquía de Siria', soft: true, color: 'var(--zone)' } ] },
+      { label: 'Emperador', color: 'var(--emp-roma)', icon: 'crown', items: [
+        { from: 41, to: 54, label: 'Claudio · 41-54', color: 'var(--emp-roma)' },
+        { from: 54, to: 68, label: 'Nerón · 54-68', color: '#c0786d' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

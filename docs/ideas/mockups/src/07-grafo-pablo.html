@@ -1,0 +1,365 @@
+<!doctype html>
+<!--
+  07 · Grafo centrado en Pablo, mediados del 51 e.c., con la rama de Timoteo abierta.
+  Fuentes de los datos (comprobadas en wol.jw.org el 27-09-2026):
+  - Corinto: llega en el otoño del 50, vive con Áquila y Priscila; Silas y Timoteo bajan de Macedonia (Hch 18:5);
+    Ticio Justo, Crispo, Sóstenes; Galión procónsul de Acaya; Claudio expulsó a los judíos de Roma "en algún momento
+    del año 49 o a principios del año 50"; inscripción de Galión en Delfos:
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  - Galión: procónsul del verano de 51 al verano de 52 (data/cartas-de-pablo.json, estudio 3 de "Toda Escritura"):
+    https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+  - Timoteo: hijo de judía creyente y padre griego; Listra; Pablo vuelve a Listra a finales del 49 o principios del 50:
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16  ·  Perspicacia "Timoteo": https://wol.jw.org/es/wol/d/r4/lp-s/1200004416
+  - Loida abuela, Eunice madre (2Ti 1:5); la familia parece vivir en Listra:
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/1  ·  Perspicacia "Loida": https://wol.jw.org/es/wol/d/r4/lp-s/1200002768
+  - Timoteo enviado a Tesalónica y de vuelta con buenas noticias (1Te 3:1-6); saludo "De Pablo, Silvano y Timoteo" (1Te 1:1):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/3  ·  https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/1
+  - Cartas y fechas (1Te c. 50, 2Te c. 51, Gál c. 50-52 desde Corinto o Antioquía de Siria): Tabla de los libros
+    https://wol.jw.org/es/wol/d/r4/lp-s/1001070071
+  - Bernabé se separa de Pablo antes del segundo viaje (Hch 15:36-41): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  - Éfeso, parada futura del segundo viaje (Hch 18:19-21): data/viajes-de-pablo.json
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>07 · Grafo centrado en Pablo</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .g-app { width: 100vw; height: 100vh; overflow: hidden; display: grid;
+    grid-template-columns: 1fr 520px; grid-template-rows: var(--topbar-h) 1fr 196px;
+    grid-template-areas: "top top" "graph side" "time time"; background: var(--paper); }
+  .g-app > .be-topbar { grid-area: top; }
+  .g-app > .be-timeline { grid-area: time; }
+
+  /* Lienzo del grafo */
+  .g-canvas { grid-area: graph; position: relative; overflow: hidden;
+    background: radial-gradient(circle at 57% 50%, #fffdf8 0, #faf6ee 42%, #f3ecdf 100%); }
+  .g-canvas > #edges { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .g-ring { fill: none; stroke: #e2d7c3; stroke-width: 1.2; stroke-dasharray: 3 6; }
+  .g-sector { font: 700 10.5px/1 var(--font-sans); letter-spacing: .16em; fill: #a89c8b; text-transform: uppercase; }
+  .g-e { fill: none; stroke-linecap: round; }
+  .g-e--text { stroke: #8f8373; stroke-width: 2; }
+  .g-e--strong { stroke: var(--accent); stroke-width: 3; }
+  .g-e--past { stroke: #c9bda9; stroke-width: 1.6; stroke-dasharray: 2 5; }
+  .g-e--future { stroke: #c9bda9; stroke-width: 1.6; stroke-dasharray: 8 6; }
+  .g-e--deduced { stroke: #8f8373; stroke-width: 1.8; stroke-dasharray: 6 5; }
+  .g-e--branch { stroke: var(--gold); stroke-width: 2.4; }
+  .g-e--branch-cross { stroke: var(--gold); stroke-width: 2; stroke-dasharray: 7 5; }
+  .g-e--uncertain { stroke: var(--zone); stroke-width: 2; stroke-dasharray: 7 5; }
+
+  .g-n { position: absolute; width: 0; height: 0; z-index: 2; --r: 21px; }
+  .g-dot { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); width: calc(var(--r) * 2); height: calc(var(--r) * 2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 0 0 3px #fffdf8, var(--shadow-1); font: 600 17px/1 var(--font-serif); }
+  .g-dot > .be-i, .g-dot svg { width: 19px !important; height: 19px !important; }
+  .g-txt { position: absolute; left: 0; top: calc(var(--r) + 5px); transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .g-n--persona .g-dot { background: var(--node-persona); }
+  .g-n--lugar .g-dot { background: var(--node-lugar); }
+  .g-n--evento .g-dot { background: var(--node-evento); }
+  .g-n--texto .g-dot { background: var(--node-texto); }
+  .g-n--periodo .g-dot { background: var(--node-periodo); }
+  .g-n--hallazgo .g-dot { background: var(--node-hallazgo); }
+  .g-lbl { font-size: 13px; font-weight: 650; color: var(--ink); background: rgba(255,253,248,.95); padding: 1px 8px; border-radius: 999px; white-space: nowrap; line-height: 1.35; }
+  .g-meta { font-size: 10.5px; color: var(--ink-3); white-space: nowrap; margin-top: 1px; font-weight: 500; background: rgba(255,253,248,.85); padding: 0 6px; border-radius: 6px; }
+  .g-n--center { --r: 42px; z-index: 4; }
+  .g-n--center .g-dot { font-size: 38px; box-shadow: 0 0 0 5px #fffdf8, 0 0 0 7.5px var(--gold), var(--shadow-3); }
+  .g-n--center .g-txt { top: calc(var(--r) + 10px); }
+  .g-n--center .g-lbl { font: 600 22px/1.2 var(--font-serif); padding: 2px 12px; }
+  .g-n--center .g-meta { font-size: 12px; }
+  .g-n--sel { --r: 25px; z-index: 3; }
+  .g-n--sel .g-dot { box-shadow: 0 0 0 3px #fffdf8, 0 0 0 5.5px var(--gold), var(--shadow-2); font-size: 20px; }
+  .g-n--sel .g-lbl { background: var(--gold); color: #fff; }
+  .g-n--past { opacity: .55; }
+  .g-n--past .g-dot { filter: grayscale(.6); }
+  .g-n--future .g-dot { background: #fffdf8 !important; color: var(--ink-3); border: 2px dashed #b9ad98; box-shadow: none; }
+  .g-n--future .g-lbl { color: var(--ink-3); font-weight: 550; }
+  .g-n--uncertain .g-dot { background: #fffdf8 !important; color: var(--zone); border: 2px dashed var(--zone); box-shadow: none; }
+  .g-n--small { --r: 16px; }
+  .g-n--small .g-dot { font-size: 14px; }
+  .g-n--small .g-dot > .be-i, .g-n--small .g-dot svg { width: 15px !important; height: 15px !important; }
+  .g-n--small .g-lbl { font-size: 12px; }
+  .g-n--new .g-dot { box-shadow: 0 0 0 3px #fffdf8, 0 0 0 5px rgba(184,137,47,.55); }
+  .g-n--left .g-txt { left: auto; right: calc(var(--r) + 9px); top: 0; transform: translateY(-50%); align-items: flex-end; text-align: right; }
+  .g-n--right .g-txt { left: calc(var(--r) + 9px); top: 0; transform: translateY(-50%); align-items: flex-start; text-align: left; }
+  .g-group .g-dot { background: #fffdf8 !important; color: var(--node-persona); border: 1.5px solid #e2c3b8; font: 700 13px/1 var(--font-sans); }
+
+  /* Etiqueta de arista (verbo · fecha · referencia) */
+  .g-el { position: absolute; transform: translate(-50%, -50%); z-index: 3; display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px; background: #fffdf8; border: 1px solid var(--line-2); box-shadow: var(--shadow-1); font-size: 11px; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+  .g-el b { color: var(--ink); font-weight: 700; }
+  .g-el .be-ref { font-size: 10.5px; padding: 0 6px; }
+  .g-el--gold { border-color: #e6d3a8; background: #fdf8ec; }
+  .g-el--wrap { white-space: normal; display: block; text-align: center; border-radius: 12px; line-height: 1.45; padding: 5px 10px; }
+  .g-el--hover { padding: 8px 12px; border-radius: 12px; flex-direction: column; align-items: flex-start; gap: 4px; box-shadow: var(--shadow-3); border-color: var(--line); }
+  .g-el--hover .g-el__row { display: flex; gap: 6px; align-items: center; }
+
+  /* Controles superpuestos */
+  .g-top { position: absolute; top: 14px; left: 18px; right: 18px; display: flex; align-items: center; gap: 10px; z-index: 5; }
+  .g-crumbs { display: flex; align-items: center; gap: 4px; background: rgba(255,253,248,.95); border: 1px solid var(--line); border-radius: 999px; padding: 4px 6px; box-shadow: var(--shadow-1); }
+  .g-crumb { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--ink-3); padding: 2px 8px 2px 3px; border-radius: 999px; }
+  .g-crumb--on { background: var(--gold-soft); color: #5a4212; }
+  .g-crumb .be-node { width: 20px; height: 20px; font-size: 10px; }
+  .g-legend { position: absolute; left: 18px; right: 18px; bottom: 12px; z-index: 5; padding: 7px 14px; display: flex; align-items: center; gap: 18px; font-size: 11.5px; color: var(--ink-2); }
+  .g-legend__row { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  .g-legend svg { width: 30px; height: 8px; overflow: visible; }
+  .g-note { position: absolute; right: 18px; bottom: 16px; z-index: 5; width: 290px; padding: 10px 12px; font-size: 12px; line-height: 1.45; color: var(--ink-2); }
+  .g-note b { color: var(--ink); }
+
+  /* Columna derecha */
+  .g-side { grid-area: side; display: flex; flex-direction: column; border-left: 1px solid var(--line); background: var(--surface-2); min-height: 0; }
+  .g-map { height: 360px; flex: none; position: relative; border-bottom: 1px solid var(--line); }
+  .g-mapcap { position: absolute; top: 12px; left: 12px; z-index: 3; padding: 6px 10px; font-size: 11.5px; font-weight: 600; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
+  .g-card { margin: 12px 14px 0; }
+  .g-rel { display: grid; grid-template-columns: 92px 1fr auto; gap: 0 10px; align-items: baseline; padding: 6px 0; border-top: 1px solid var(--line); font-size: 12.5px; }
+  .g-rel:first-child { border-top: 0; }
+  .g-rel dt { color: var(--ink-3); font-weight: 500; }
+  .g-rel dd { margin: 0; color: var(--ink); font-weight: 600; }
+  .g-rel dd small { display: block; font-weight: 500; color: var(--ink-3); font-size: 11px; }
+  .g-rel .be-ref { font-size: 10.5px; }
+  .g-ring-pulse { position: absolute; width: 42px; height: 42px; margin: -21px 0 0 -21px; border-radius: 50%; border: 2.5px solid var(--gold); box-shadow: 0 0 0 6px rgba(184,137,47,.18); }
+  .g-maptag { position: absolute; transform: translate(-50%, 0); background: var(--gold); color: #fff; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-1); }
+</style>
+</head>
+<body>
+<div class="g-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Pablo</b> · persona, lugar, capítulo (Hch 18) o año (51 e.c.)</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-seg"><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="map"></i>Mapa</span><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="graph"></i>Grafo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="menu"></i>Lista</span></div>
+    <div class="be-date"><span class="be-date__value">Mediados del 51 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <!-- Grafo -->
+  <main class="g-canvas" id="canvas">
+    <div class="g-top">
+      <div class="g-crumbs">
+        <span class="g-crumb"><span class="be-node be-node--persona">P</span>Pablo</span><span class="be-muted">›</span>
+        <span class="g-crumb g-crumb--on"><span class="be-node be-node--persona">T</span>Timoteo · rama abierta</span>
+      </div>
+      <span class="be-spacer"></span>
+      <span class="be-chip"><span class="be-chip__dot" style="background:var(--node-persona)"></span>Personas 8</span>
+      <span class="be-chip"><span class="be-chip__dot" style="background:var(--node-lugar)"></span>Lugares 4</span>
+      <span class="be-chip"><span class="be-chip__dot" style="background:var(--node-texto)"></span>Cartas 3</span>
+      <span class="be-chip"><span class="be-chip__dot" style="background:var(--node-evento)"></span>Hechos 3</span>
+      <span class="be-chip be-chip--active"><i class="be-i be-i--sm" data-icon="clock"></i>Sólo lo vigente en esta fecha</span>
+    </div>
+    <svg id="edges"></svg>
+
+    <div class="be-float g-legend">
+      <div class="be-caps be-muted">Líneas</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--text"/></svg>Lo dice el texto</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--deduced"/></svg>Deducido por nosotros</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--uncertain"/></svg>Fecha o lugar inciertos</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--past"/></svg>Ya pasó</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--future"/></svg>Aún no ocurre</div>
+      <div class="g-legend__row"><svg><line x1="0" y1="4" x2="30" y2="4" class="g-e g-e--branch"/></svg>Rama nueva (Timoteo)</div>
+    </div>
+
+  </main>
+
+  <!-- Mapa sincronizado + ficha de la rama abierta -->
+  <aside class="g-side">
+    <div class="g-map" id="map">
+      <div class="be-float g-mapcap"><i class="be-i be-i--sm" data-icon="eye"></i>Mapa sincronizado · pasa el ratón por un nodo</div>
+    </div>
+    <article class="be-card g-card">
+      <div class="be-card__pad" style="padding-bottom:10px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="be-node be-node--persona" style="width:44px;height:44px;font-size:20px">T</span>
+          <div style="flex:1">
+            <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="person"></i>Rama abierta · en esta fecha</div>
+            <h2 class="be-card__title" style="font-size:22px;margin:2px 0 0">Timoteo</h2>
+          </div>
+          <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="target"></i>Poner en el centro</span>
+        </div>
+        <dl style="margin:10px 0 0">
+          <div class="g-rel"><dt>Madre</dt><dd>Eunice<small>judía creyente</small></dd><a class="be-ref">2Ti 1:5</a></div>
+          <div class="g-rel"><dt>Abuela</dt><dd>Loida<small>probablemente por parte de madre</small></dd><a class="be-ref">2Ti 1:5</a></div>
+          <div class="g-rel"><dt>Padre</dt><dd>Griego, sin nombre en el texto</dd><a class="be-ref">Hch 16:1</a></div>
+          <div class="g-rel"><dt>Hogar</dt><dd>Listra<small>«al parecer», según Perspicacia</small></dd><a class="be-ref">Hch 16:1, 2</a></div>
+          <div class="g-rel"><dt>Con Pablo</dt><dd>Desde fines del 49 o principios del 50</dd><a class="be-ref">Hch 16:3</a></div>
+          <div class="g-rel"><dt>Ahora</dt><dd>En Corinto, tras ir a Tesalónica</dd><a class="be-ref">1Te 3:6</a></div>
+        </dl>
+      </div>
+      <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">TNM · Perspicacia</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/d/r4/lp-s/1200004416">Leer en wol.jw.org</a></div>
+    </article>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const cv = document.getElementById('canvas');
+  const svg = document.getElementById('edges');
+  const NS = 'http://www.w3.org/2000/svg';
+  const C = [590, 356];
+  const nodes = {};
+
+  // Guía de anillo y rótulos de sector (cada tipo, siempre en el mismo sitio)
+  const ring = document.createElementNS(NS, 'circle');
+  Object.entries({ cx: C[0], cy: C[1], r: 232, class: 'g-ring' }).forEach(([k, v]) => ring.setAttribute(k, v));
+  svg.appendChild(ring);
+  const sector = (t, x, y) => { const e = document.createElementNS(NS, 'text'); e.setAttribute('x', x); e.setAttribute('y', y); e.setAttribute('text-anchor', 'middle'); e.setAttribute('class', 'g-sector'); e.textContent = t; svg.appendChild(e); };
+  sector('Lugares', C[0], 86);
+  sector('Hechos', 1010, 360);
+  sector('Cartas', 866, 648);
+  sector('Personas', 150, 652);
+
+  function node(id, x, y, o) {
+    const n = document.createElement('div');
+    n.className = ['g-n', 'g-n--' + o.type].concat((o.cls || '').split(' ').filter(Boolean).map((c) => 'g-n--' + c)).join(' ') + (o.group ? ' g-group' : '');
+    n.style.left = x + 'px'; n.style.top = y + 'px';
+    const dot = o.letter ? o.letter : `<i data-icon="${o.icon}"></i>`;
+    n.innerHTML = `<span class="g-dot">${dot}</span><span class="g-txt"><span class="g-lbl">${o.label}</span>${o.meta ? `<span class="g-meta">${o.meta}</span>` : ''}</span>`;
+    cv.appendChild(n); nodes[id] = [x, y];
+  }
+  function edge(a, b, cls, curve = 0) {
+    const [x1, y1] = nodes[a], [x2, y2] = nodes[b];
+    const dx = x2 - x1, dy = y2 - y1;
+    const cx = (x1 + x2) / 2 - dy * curve, cy = (y1 + y2) / 2 + dx * curve;
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', `M${x1},${y1} Q${cx},${cy} ${x2},${y2}`);
+    p.setAttribute('class', 'g-e ' + cls.split(' ').map((c) => 'g-e--' + c).join(' '));
+    svg.appendChild(p);
+    return [(x1 + 2 * cx + x2) / 4, (y1 + 2 * cy + y2) / 4];
+  }
+  function elabel(x, y, html, cls = '') {
+    const d = document.createElement('div'); d.className = 'g-el ' + cls; d.innerHTML = html;
+    d.style.left = x + 'px'; d.style.top = y + 'px'; cv.appendChild(d);
+  }
+
+  // Centro
+  node('pablo', C[0], C[1], { type: 'persona', cls: 'center', letter: 'P', label: 'Pablo', meta: 'en Corinto · 2.º viaje' });
+
+  // LUGARES (arriba)
+  node('tesalonica', 432, 184, { type: 'lugar', icon: 'place', label: 'Tesalónica', meta: 'destino de 1 y 2 Tes.' });
+  node('corinto', C[0], 130, { type: 'lugar', icon: 'place', label: 'Corinto', meta: 'vive aquí' });
+  node('atenas', 770, 216, { type: 'lugar', icon: 'place', cls: 'past small', label: 'Atenas', meta: 'estuvo antes · Hch 17' });
+  node('efeso', 880, 300, { type: 'lugar', icon: 'place', cls: 'future small', label: 'Éfeso', meta: 'aún no · Hch 18:19' });
+
+  // HECHOS (derecha)
+  node('claudio', 842, 406, { type: 'evento', icon: 'crown', label: 'Claudio expulsa a los judíos de Roma', meta: '49 o principios del 50 · Hch 18:2' });
+  node('galion', 768, 508, { type: 'evento', icon: 'columns', label: 'Juicio ante Galión', meta: 'procónsul de Acaya · Hch 18:12-17' });
+  node('delfos', 960, 488, { type: 'hallazgo', icon: 'shovel', cls: 'small', label: 'Inscripción de Galión', meta: 'Delfos · ayuda a fecharlo' });
+
+  // CARTAS (abajo)
+  node('1te', 458, 600, { type: 'texto', icon: 'letter', label: '1 Tesalonicenses', meta: 'c. 50 · desde aquí' });
+  node('2te', C[0], 634, { type: 'texto', icon: 'letter', label: '2 Tesalonicenses', meta: 'c. 51 · desde aquí' });
+  node('gal', 712, 598, { type: 'texto', icon: 'letter', cls: 'uncertain', label: 'Gálatas', meta: 'c. 50-52 · ¿Corinto o Antioquía?' });
+
+  // PERSONAS (izquierda)
+  node('silas', 404, 286, { type: 'persona', letter: 'S', label: 'Silas', meta: 'compañero · Hch 18:5' });
+  node('timoteo', 340, 406, { type: 'persona', letter: 'T', cls: 'sel', label: 'Timoteo', meta: 'compañero · Hch 18:5' });
+  node('aquila', 478, 488, { type: 'persona', icon: 'people', label: 'Áquila y Priscila', meta: 'lo hospedan · Hch 18:2, 3' });
+  node('grupo', 262, 582, { type: 'persona', group: true, letter: '+3', label: 'En Corinto', meta: 'Ticio Justo, Crispo, Sóstenes' });
+  node('bernabe', 262, 196, { type: 'persona', letter: 'B', cls: 'past small', label: 'Bernabé', meta: 'se separaron en 49 · Hch 15:39' });
+
+  // Rama de Timoteo (a la izquierda del todo)
+  node('loida', 152, 288, { type: 'persona', letter: 'L', cls: 'small new left', label: 'Loida', meta: 'abuela · 2Ti 1:5' });
+  node('eunice', 138, 380, { type: 'persona', letter: 'E', cls: 'small new left', label: 'Eunice', meta: 'madre · 2Ti 1:5' });
+  node('listra', 138, 468, { type: 'lugar', icon: 'place', cls: 'small new left', label: 'Listra', meta: 'hogar · Hch 16:1, 2' });
+  node('padre', 160, 548, { type: 'persona', icon: 'person', cls: 'small new left', label: 'Padre griego', meta: 'sin nombre · Hch 16:1' });
+
+  // Aristas de Pablo
+  edge('pablo', 'corinto', 'strong');
+  edge('pablo', 'tesalonica', 'text', 0.05);
+  edge('pablo', 'atenas', 'past', -0.05);
+  edge('pablo', 'efeso', 'future', -0.05);
+  edge('pablo', 'claudio', 'deduced', 0.03);
+  edge('pablo', 'galion', 'text', -0.05);
+  edge('galion', 'delfos', 'text', 0.1);
+  edge('pablo', '1te', 'text', -0.05);
+  edge('pablo', '2te', 'text');
+  edge('pablo', 'gal', 'uncertain', 0.05);
+  edge('pablo', 'silas', 'text', 0.05);
+  const mT = edge('pablo', 'timoteo', 'strong', 0.03);
+  edge('pablo', 'aquila', 'text', -0.05);
+  edge('pablo', 'grupo', 'text', -0.08);
+  edge('pablo', 'bernabe', 'past', 0.08);
+
+  // Rama de Timoteo
+  edge('timoteo', 'loida', 'branch', -0.05);
+  edge('timoteo', 'eunice', 'branch', -0.02);
+  edge('timoteo', 'listra', 'branch', 0.02);
+  edge('timoteo', 'padre', 'branch', 0.06);
+  const mLE = edge('loida', 'eunice', 'deduced', -0.4);
+  edge('timoteo', 'tesalonica', 'branch-cross', -0.3);
+  const m1te = edge('timoteo', '1te', 'branch-cross', 0.25);
+
+  // Etiquetas de arista (verbo · fecha · referencia)
+  elabel(462, 400, `<b>Viaja con él</b> <a class="be-ref">Hch 16:1-3</a>`, 'g-el--gold');
+  elabel(292, 520, `<b>Firma el saludo</b> <a class="be-ref">1Te 1:1</a>`, 'g-el--gold');
+  elabel(mLE[0] + 44, mLE[1], `<span class="be-muted">probablemente su hija</span>`, '');
+
+  // Ficha emergente de una arista (al pasar el ratón): Pablo — Corinto
+  const hv = document.createElement('div');
+  hv.className = 'g-el g-el--hover';
+  hv.style.left = '790px'; hv.style.top = '126px';
+  hv.innerHTML = `<div class="g-el__row"><span class="be-caps be-muted">Arista</span><b>Pablo vive en Corinto</b></div>
+    <div class="g-el__row"><span class="be-chrono be-chrono--tnm" style="height:20px">otoño del 50 – primavera del 52</span><a class="be-ref">Hch 18:1-11</a></div>
+    <div class="g-el__row"><span class="be-tier be-tier--1" data-n="1">nota de estudio · Hch 18</span></div>`;
+  cv.appendChild(hv);
+
+  // ---------- Mapa sincronizado ----------
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [20.7, 35.7, 34.3, 41.8], fit: 'contain' });
+  map.label('Macedonia', 23.75, 41.4, { kind: 'region', size: 12 });
+  map.label('Acaya', 22.25, 37.0, { kind: 'region', size: 12 });
+  map.label('Galacia', 31.6, 39.5, { kind: 'region', size: 12 });
+  map.label('Mar Egeo', 25.3, 38.7, { kind: 'sea', rotate: -60, size: 14 });
+  map.zone(['antioquia-de-pisidia', 'iconio', 'listra', 'derbe'], { padKm: 30, candidates: false, soft: true });
+  map.route(['listra', 'troas'], { kind: 'ghost', curve: 0.16 });
+  map.route(['troas', 'neapolis'], { kind: 'ghost', curve: -0.1 });
+  map.route(['neapolis', 'filipos', 'tesalonica', 'berea'], { kind: 'ghost', curve: [0, 0.05, 0.05] });
+  map.route(['berea', 'atenas'], { kind: 'ghost', curve: 0.2 });
+  map.route(['atenas', 'corinto'], { kind: 'done', curve: 0.12 });
+  map.route(['corinto', 'tesalonica'], { kind: 'letter', curve: -0.3, trim: 12 });
+  map.route(['corinto', 'efeso'], { kind: 'sea-todo', curve: 0.08 });
+  map.city('corinto', { variant: 'current', side: 'bottom' });
+  map.city('tesalonica', { variant: 'dest', side: 'top' });
+  map.city('atenas', { variant: ['visited', 'minor'] });
+  map.city('berea', { variant: ['visited', 'minor'], label: '' });
+  map.city('filipos', { variant: ['visited', 'minor'], label: '' });
+  map.city('troas', { variant: ['visited', 'minor'], side: 'left' });
+  map.city('efeso', { variant: 'future', side: 'bottom' });
+  map.city('iconio', { variant: 'minor', label: '' });
+  map.city('derbe', { variant: 'minor', label: '' });
+  map.city('antioquia-de-pisidia', { variant: 'minor', label: '' });
+  map.city('listra', { variant: ['visited'], label: '' });
+  // Resaltado al pasar por el nodo «Listra» de la rama de Timoteo
+  const [lx, ly] = map.at('listra');
+  const pulse = document.createElement('div'); pulse.className = 'g-ring-pulse'; pulse.style.left = lx + 'px'; pulse.style.top = ly + 'px'; map.html.appendChild(pulse);
+  const tag = document.createElement('div'); tag.className = 'g-maptag'; tag.textContent = 'Listra · hogar de Timoteo'; tag.style.left = lx + 'px'; tag.style.top = (ly + 26) + 'px'; map.html.appendChild(tag);
+
+  // ---------- Línea de tiempo ----------
+  BE.timeline(document.getElementById('timeline'), {
+    from: 45, to: 58, tick: 1, minor: 0.25, cursor: 51.5, cursorLabel: 'mediados del 51 e.c.',
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 mes por segundo</span>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">Al mover el cursor, las aristas aparecen y desaparecen en su fecha</span>
+      <span class="be-spacer"></span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pablo', color: 'var(--node-persona)', icon: 'person', items: [
+        { from: 46.6, to: 49, label: '1.er viaje · c. 47-48', fuzzy: 'both', color: '#c98f7c' },
+        { from: 49.6, to: 52.5, label: '2.º viaje · c. 49-52', fuzzy: 'both', active: true },
+        { from: 52.5, to: 56.6, label: '3.er viaje · c. 52-56', fuzzy: 'both', color: '#c98f7c' } ] },
+      { label: 'Pablo y Timoteo', color: 'var(--gold)', icon: 'people', items: [
+        { from: 49.8, to: 58, label: 'Juntos desde fines del 49 o principios del 50 (Hch 16:1-3)', fuzzy: 'start', color: 'var(--gold)' } ] },
+      { label: 'Cartas', color: 'var(--node-texto)', icon: 'letter', items: [
+        { at: 50.85, label: '1 Tesalonicenses', labelLeft: true, color: 'var(--node-texto)' },
+        { at: 51.25, label: '2 Tesalonicenses', color: 'var(--node-texto)' } ] },
+      { label: 'Fecha incierta', color: 'var(--zone)', icon: 'hourglass', items: [
+        { from: 50, to: 52.9, label: 'Gálatas · c. 50-52 · desde Corinto o Antioquía de Siria', soft: true, color: 'var(--zone)' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

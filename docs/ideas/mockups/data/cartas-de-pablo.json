@@ -1,0 +1,962 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Cartas de Pablo: lugar de escritura, fecha y destinatarios",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-pablo": {
+      "titulo": "Pablo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003406",
+      "nivel": 1
+    },
+    "it-galatas": {
+      "titulo": "Gálatas, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001595",
+      "nivel": 1
+    },
+    "it-corintios": {
+      "titulo": "Corintios, Cartas a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001039",
+      "nivel": 1
+    },
+    "it-tesalonicenses": {
+      "titulo": "Tesalonicenses, Cartas a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004378",
+      "nivel": 1
+    },
+    "it-romanos": {
+      "titulo": "Romanos, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003762",
+      "nivel": 1
+    },
+    "it-efesios": {
+      "titulo": "Efesios, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001386",
+      "nivel": 1
+    },
+    "it-filipenses": {
+      "titulo": "Filipenses, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003468",
+      "nivel": 1
+    },
+    "it-colosenses": {
+      "titulo": "Colosenses, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001011",
+      "nivel": 1
+    },
+    "it-filemon": {
+      "titulo": "Filemón",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003463",
+      "nivel": 1
+    },
+    "it-hebreos": {
+      "titulo": "Hebreos, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001954",
+      "nivel": 1
+    },
+    "it-timoteo": {
+      "titulo": "Timoteo, Cartas a",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004417",
+      "nivel": 1
+    },
+    "it-tito": {
+      "titulo": "Tito, Carta a",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004432",
+      "nivel": 1
+    }
+  },
+  "items": [
+    {
+      "id": "1-tesalonicenses",
+      "libro": "1 Tesalonicenses",
+      "referencia": "1Te 1:1",
+      "escrita_en": [
+        {
+          "nombre": "Corinto",
+          "tipo": "ciudad",
+          "lat": 37.90579,
+          "lon": 22.87874,
+          "coord_fuente": "openbible:a6f437a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 50,
+        "hasta": 50,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 50 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Tesalónica",
+        "lugares": [
+          {
+            "nombre": "Tesalónica",
+            "tipo": "ciudad",
+            "lat": 40.63777,
+            "lon": 22.94577,
+            "coord_fuente": "openbible:afa9d8e",
+            "coord_url": "https://www.openbible.info/geo/ancient/afa9d8e/thessalonica",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Pablo está en Corinto con Silas y Timoteo durante su estancia de unos 18 meses (otoño de 50 a primavera de 52).",
+        "fuentes": [
+          "si-3",
+          "it-tesalonicenses"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Congregación joven y perseguida desde el principio: una chusma arrastró a Jasón ante los gobernantes de la ciudad.",
+        "fuentes": [
+          "it-tesalonicenses"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-tesalonicenses"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "2-tesalonicenses",
+      "libro": "2 Tesalonicenses",
+      "referencia": "2Te 1:1",
+      "escrita_en": [
+        {
+          "nombre": "Corinto",
+          "tipo": "ciudad",
+          "lat": 37.90579,
+          "lon": 22.87874,
+          "coord_fuente": "openbible:a6f437a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 51,
+        "hasta": 51,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 51 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Tesalónica",
+        "lugares": [
+          {
+            "nombre": "Tesalónica",
+            "tipo": "ciudad",
+            "lat": 40.63777,
+            "lon": 22.94577,
+            "coord_fuente": "openbible:afa9d8e",
+            "coord_url": "https://www.openbible.info/geo/ancient/afa9d8e/thessalonica",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Sigue en Corinto; Galión fue procónsul de Acaya del verano de 51 al verano de 52.",
+        "fuentes": [
+          "si-3"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "La misma congregación perseguida de la primera carta.",
+        "fuentes": [
+          "it-tesalonicenses"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "galatas",
+      "libro": "Gálatas",
+      "referencia": "Gál 1:1, 2",
+      "escrita_en": [
+        {
+          "nombre": "Corinto",
+          "tipo": "ciudad",
+          "lat": 37.90579,
+          "lon": 22.87874,
+          "coord_fuente": "openbible:a6f437a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+          "rol": "lugar de escritura (candidato preferido)",
+          "peso": "preferido"
+        },
+        {
+          "nombre": "Antioquía de Siria",
+          "tipo": "ciudad",
+          "lat": 36.22669,
+          "lon": 36.17174,
+          "coord_fuente": "openbible:ae41ab4",
+          "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1",
+          "rol": "lugar de escritura (candidato alternativo)",
+          "peso": "alternativo"
+        }
+      ],
+      "fecha": {
+        "desde": 50,
+        "hasta": 52,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 50-52 e.c."
+      },
+      "destinatarios": {
+        "texto": "a las congregaciones de Galacia (Gál 1:2)",
+        "lugares": [
+          {
+            "nombre": "Galacia",
+            "tipo": "región",
+            "lat": 39.26667,
+            "lon": 32.98333,
+            "coord_fuente": "openbible:a0f440a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a0f440a/galatia",
+            "rol": "destino",
+            "nota": "Provincia romana; incluía Iconio, Listra, Derbe (y Antioquía de Pisidia)."
+          },
+          {
+            "nombre": "Iconio",
+            "tipo": "ciudad",
+            "lat": 37.8722,
+            "lon": 32.49233,
+            "coord_fuente": "openbible:ae425aa",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae425aa/iconium",
+            "rol": "destino posible"
+          },
+          {
+            "nombre": "Listra",
+            "tipo": "ciudad",
+            "lat": 37.6017,
+            "lon": 32.3384,
+            "coord_fuente": "openbible:af0719d",
+            "coord_url": "https://www.openbible.info/geo/ancient/af0719d/lystra",
+            "rol": "destino posible"
+          },
+          {
+            "nombre": "Derbe",
+            "tipo": "ciudad",
+            "lat": 37.34857,
+            "lon": 33.36145,
+            "coord_fuente": "openbible:aa401a9",
+            "coord_url": "https://www.openbible.info/geo/ancient/aa401a9/derbe",
+            "coord_nota": "OpenBible registra 3 identificaciones; se usa la de mayor puntuación (860/1000).",
+            "rol": "destino posible"
+          },
+          {
+            "nombre": "Antioquía de Pisidia",
+            "tipo": "ciudad",
+            "lat": 38.30611,
+            "lon": 31.18917,
+            "coord_fuente": "openbible:a6c704a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6c704a/antioch-2",
+            "rol": "destino posible"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "La tabla da “Corinto o Antioquía de Siria”. Perspicacia cree más probable Corinto, durante el año y medio de 50-52.",
+        "fuentes": [
+          "tnm-tabla",
+          "it-galatas"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Pablo ya había visitado las ciudades del sur de Galacia dos veces (47-48 y 49). Algunos judaizantes presionaban para imponer la circuncisión.",
+        "fuentes": [
+          "it-galatas"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-galatas"
+      ],
+      "verificado": true,
+      "incertidumbre": "Dos lugares de escritura posibles: dibujar dos arcos, el preferido sólido y el alternativo discontinuo."
+    },
+    {
+      "id": "1-corintios",
+      "libro": "1 Corintios",
+      "referencia": "1Co 16:8",
+      "escrita_en": [
+        {
+          "nombre": "Éfeso",
+          "tipo": "ciudad",
+          "lat": 37.93912,
+          "lon": 27.3407,
+          "coord_fuente": "openbible:a5feb15",
+          "coord_url": "https://www.openbible.info/geo/ancient/a5feb15/ephesus",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 55,
+        "hasta": 55,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 55 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Corinto",
+        "lugares": [
+          {
+            "nombre": "Corinto",
+            "tipo": "ciudad",
+            "lat": 37.90579,
+            "lon": 22.87874,
+            "coord_fuente": "openbible:a6f437a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Tercer viaje: Pablo lleva tiempo en Éfeso y la familia de Cloe le informa de divisiones en Corinto.",
+        "fuentes": [
+          "it-corintios"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Ciudad de ambiente muy inmoral; cerca se celebraban los juegos ístmicos, que Pablo usa como ilustración.",
+        "fuentes": [
+          "it-corintios"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-corintios"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "2-corintios",
+      "libro": "2 Corintios",
+      "referencia": "2Co 2:12, 13",
+      "escrita_en": [
+        {
+          "nombre": "Macedonia",
+          "tipo": "región",
+          "lat": 41.6,
+          "lon": 22.54,
+          "coord_fuente": "openbible:a69e1b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a69e1b8/macedonia",
+          "rol": "lugar de escritura",
+          "nota": "La fuente sólo dice “Macedonia”: dibujar la región, no una ciudad."
+        }
+      ],
+      "fecha": {
+        "desde": 55,
+        "hasta": 55,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 55 e.c. (final del verano o principios del otoño)"
+      },
+      "destinatarios": {
+        "texto": "Congregación de Corinto",
+        "lugares": [
+          {
+            "nombre": "Corinto",
+            "tipo": "ciudad",
+            "lat": 37.90579,
+            "lon": 22.87874,
+            "coord_fuente": "openbible:a6f437a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Pablo salió de Éfeso, no encontró a Tito en Troas y siguió a Macedonia, donde Tito le trajo noticias de Corinto.",
+        "fuentes": [
+          "it-corintios",
+          "it-pablo"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Tito había ido a Corinto para ayudar en la colecta para los santos de Judea.",
+        "fuentes": [
+          "it-corintios"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-corintios"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "romanos",
+      "libro": "Romanos",
+      "referencia": "Ro 16:1, 22",
+      "escrita_en": [
+        {
+          "nombre": "Corinto",
+          "tipo": "ciudad",
+          "lat": 37.90579,
+          "lon": 22.87874,
+          "coord_fuente": "openbible:a6f437a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 56,
+        "hasta": 56,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 56 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Roma",
+        "lugares": [
+          {
+            "nombre": "Roma",
+            "tipo": "ciudad",
+            "lat": 41.8922,
+            "lon": 12.4852,
+            "coord_fuente": "openbible:afc8e7a",
+            "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Dictada a Tercio en Corinto; la portadora pudo ser Febe, de Cencreas, el puerto de Corinto.",
+        "fuentes": [
+          "it-romanos"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Congregación de judíos y gentiles. Muchos judíos habían vuelto a Roma después de que Claudio los desterrara. Pablo aún no había estado allí.",
+        "fuentes": [
+          "it-romanos"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-romanos"
+      ],
+      "verificado": true,
+      "portador_posible": {
+        "nombre": "Cencreas",
+        "tipo": "ciudad",
+        "lat": 37.88434,
+        "lon": 22.99682,
+        "coord_fuente": "openbible:aa31dd3",
+        "coord_url": "https://www.openbible.info/geo/ancient/aa31dd3/cenchreae",
+        "rol": "origen de Febe"
+      }
+    },
+    {
+      "id": "efesios",
+      "libro": "Efesios",
+      "referencia": "Ef 3:1; 6:21, 22",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 60,
+        "hasta": 61,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 60-61 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Éfeso (la llevó Tíquico)",
+        "lugares": [
+          {
+            "nombre": "Éfeso",
+            "tipo": "ciudad",
+            "lat": 37.93912,
+            "lon": 27.3407,
+            "coord_fuente": "openbible:a5feb15",
+            "coord_url": "https://www.openbible.info/geo/ancient/a5feb15/ephesus",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Primer encarcelamiento en Roma (c. 59-61), en una casa alquilada y custodiado por un soldado.",
+        "fuentes": [
+          "it-pablo"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "La ciudad más importante de la provincia de Asia, rica, a la sombra del templo de Ártemis; la zona de asilo del templo atraía delincuentes.",
+        "fuentes": [
+          "it-efesios"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-efesios"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "filipenses",
+      "libro": "Filipenses",
+      "referencia": "Flp 1:13; 4:22",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 60,
+        "hasta": 61,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 60-61 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Filipos",
+        "lugares": [
+          {
+            "nombre": "Filipos",
+            "tipo": "ciudad",
+            "lat": 41.01207,
+            "lon": 24.28458,
+            "coord_fuente": "openbible:a49e1d0",
+            "coord_url": "https://www.openbible.info/geo/ancient/a49e1d0/philippi",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Preso en Roma: su caso se conoce entre la guardia del pretorio y envían saludos cristianos de la casa del emperador.",
+        "fuentes": [
+          "it-filipenses"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Congregación fundada por Pablo c. 50 en la provincia de Macedonia; Epafrodito viajó desde allí para ayudarle.",
+        "fuentes": [
+          "it-filipenses"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-filipenses"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "colosenses",
+      "libro": "Colosenses",
+      "referencia": "Col 1:2; 4:7-9",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 60,
+        "hasta": 61,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 60-61 e.c."
+      },
+      "destinatarios": {
+        "texto": "Congregación de Colosas (la llevaron Tíquico y Onésimo)",
+        "lugares": [
+          {
+            "nombre": "Colosas",
+            "tipo": "ciudad",
+            "lat": 37.78664,
+            "lon": 29.25994,
+            "coord_fuente": "openbible:a4e5a69",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4e5a69/colossae",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Hacia el final del primer encarcelamiento en Roma; Epafras le informó del estado de la congregación.",
+        "fuentes": [
+          "it-colosenses"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Pablo no había predicado en la ciudad. Unos maestros promovían una filosofía engañosa y el ascetismo.",
+        "fuentes": [
+          "it-colosenses",
+          "it-filemon"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-colosenses"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "filemon",
+      "libro": "Filemón",
+      "referencia": "Flm 1, 2, 10-12",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 60,
+        "hasta": 61,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 60-61 e.c."
+      },
+      "destinatarios": {
+        "texto": "Filemón, dueño de Onésimo; en su casa se reunía la congregación",
+        "lugares": [
+          {
+            "nombre": "Colosas",
+            "tipo": "ciudad",
+            "lat": 37.78664,
+            "lon": 29.25994,
+            "coord_fuente": "openbible:a4e5a69",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4e5a69/colossae",
+            "rol": "destino",
+            "nota": "El destinatario es una persona que vivía en Colosas."
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Onésimo, esclavo fugitivo de Filemón, estaba con Pablo en Roma y volvía a Colosas con esta carta.",
+        "fuentes": [
+          "it-colosenses",
+          "it-filemon"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Colosas, ciudad del suroeste de Asia Menor; Filemón pudo conocer el cristianismo durante los dos años de Pablo en Éfeso.",
+        "fuentes": [
+          "it-filemon"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-filemon"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "hebreos",
+      "libro": "Hebreos",
+      "referencia": "Heb 13:24",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 61,
+        "hasta": 61,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 61 e.c."
+      },
+      "destinatarios": {
+        "texto": "Cristianos hebreos de Judea",
+        "lugares": [
+          {
+            "nombre": "Judea",
+            "tipo": "región",
+            "lat": 31.77667,
+            "lon": 35.23417,
+            "coord_fuente": "openbible:a149f13",
+            "coord_url": "https://www.openbible.info/geo/ancient/a149f13/judea-1",
+            "rol": "destino",
+            "nota": "OpenBible sitúa el punto representativo en Jerusalén."
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Final del primer encarcelamiento en Roma.",
+        "fuentes": [
+          "si-3"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "El templo seguía en pie con su sacerdocio. Unos cinco años después las tropas de Cestio Galo atacaron Jerusalén.",
+        "fuentes": [
+          "it-hebreos"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-hebreos"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "1-timoteo",
+      "libro": "1 Timoteo",
+      "referencia": "1Ti 1:3",
+      "escrita_en": [
+        {
+          "nombre": "Macedonia",
+          "tipo": "región",
+          "lat": 41.6,
+          "lon": 22.54,
+          "coord_fuente": "openbible:a69e1b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a69e1b8/macedonia",
+          "rol": "lugar de escritura",
+          "nota": "“Al parecer” desde Macedonia."
+        }
+      ],
+      "fecha": {
+        "desde": 61,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 61-64 e.c."
+      },
+      "destinatarios": {
+        "texto": "Timoteo, a quien Pablo dejó en Éfeso",
+        "lugares": [
+          {
+            "nombre": "Éfeso",
+            "tipo": "ciudad",
+            "lat": 37.93912,
+            "lon": 27.3407,
+            "coord_fuente": "openbible:a5feb15",
+            "coord_url": "https://www.openbible.info/geo/ancient/a5feb15/ephesus",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Entre el primer y el segundo encarcelamiento en Roma; Hechos no narra este periodo.",
+        "fuentes": [
+          "it-timoteo",
+          "it-pablo"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "En Éfeso la enseñanza falsa se había vuelto un problema serio, como Pablo advirtió a los ancianos en Mileto c. 56.",
+        "fuentes": [
+          "it-timoteo"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-timoteo"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "tito",
+      "libro": "Tito",
+      "referencia": "Tit 1:5",
+      "escrita_en": [
+        {
+          "nombre": "Macedonia",
+          "tipo": "región",
+          "lat": 41.6,
+          "lon": 22.54,
+          "coord_fuente": "openbible:a69e1b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a69e1b8/macedonia",
+          "rol": "lugar de escritura (con interrogación en la fuente)",
+          "nota": "La tabla pone “Macedonia (?)”."
+        }
+      ],
+      "fecha": {
+        "desde": 61,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 61-64 e.c."
+      },
+      "destinatarios": {
+        "texto": "Tito, a quien Pablo dejó en Creta",
+        "lugares": [
+          {
+            "nombre": "Creta",
+            "tipo": "isla",
+            "lat": 35.30972,
+            "lon": 24.89333,
+            "coord_fuente": "openbible:a26aa94",
+            "coord_url": "https://www.openbible.info/geo/ancient/a26aa94/crete",
+            "rol": "destino"
+          }
+        ]
+      },
+      "contexto_origen": {
+        "resumen": "Pablo estuvo en Creta con Tito entre su liberación y su último encarcelamiento.",
+        "fuentes": [
+          "it-tito"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "Tito debía corregir lo defectuoso y nombrar ancianos en las ciudades de Creta, frente a gente rebelde que causaba problemas.",
+        "fuentes": [
+          "it-tito"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-tito"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "2-timoteo",
+      "libro": "2 Timoteo",
+      "referencia": "2Ti 1:16; 4:6-8",
+      "escrita_en": [
+        {
+          "nombre": "Roma",
+          "tipo": "ciudad",
+          "lat": 41.8922,
+          "lon": 12.4852,
+          "coord_fuente": "openbible:afc8e7a",
+          "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome",
+          "rol": "lugar de escritura"
+        }
+      ],
+      "fecha": {
+        "desde": 65,
+        "hasta": 65,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 65 e.c."
+      },
+      "destinatarios": {
+        "texto": "Timoteo",
+        "lugares": []
+      },
+      "contexto_origen": {
+        "resumen": "Segundo encarcelamiento en Roma, tras el gran incendio de julio de 64 y la persecución de Nerón; Pablo espera morir pronto.",
+        "fuentes": [
+          "it-timoteo",
+          "si-3"
+        ]
+      },
+      "contexto_destino": {
+        "resumen": "La fuente no dice dónde estaba Timoteo al recibirla: no dibujamos destino.",
+        "fuentes": [
+          "it-timoteo"
+        ]
+      },
+      "fuentes": [
+        "tnm-tabla",
+        "si-3",
+        "it-timoteo"
+      ],
+      "verificado": true,
+      "incertidumbre": "Destino desconocido: mostrar la carta sin arco, con la etiqueta “destino no indicado”."
+    }
+  ]
+}

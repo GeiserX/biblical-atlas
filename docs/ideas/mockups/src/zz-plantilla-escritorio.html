@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>NN · Título de la maqueta</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text">Busca persona, lugar, capítulo o año</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">49 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+  </header>
+
+  <main class="be-map" id="map"></main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head"><div class="be-crumbs"><span>Pablo</span><span class="be-sep">›</span><span>Filipos</span></div></div>
+    <div class="be-panel__body">
+      <article class="be-card">
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="place"></i>Lugar</div>
+          <h2 class="be-card__title">Filipos</h2>
+          <div class="be-card__body">Resumen escrito por nosotros, nunca texto copiado de la TNM.</div>
+          <div style="display:flex;gap:6px;margin-top:10px"><a class="be-ref">Hch 16:12</a></div>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">TNM</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16">Leer en wol.jw.org</a></div>
+      </article>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+<script>
+BE.ready(async () => {
+  // bounds: [oeste, sur, este, norte] en grados
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [21, 38.5, 28, 41.7], fit: 'contain' });
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'sea', curve: -0.1 });
+  map.route(['neapolis', 'filipos'], { kind: 'done' });
+  map.city('troas', { variant: 'visited', side: 'left' });
+  map.city('filipos', { variant: 'current', side: 'top' });
+  BE.timeline(document.getElementById('timeline'), {
+    from: 45, to: 58, tick: 1, cursor: 49.8, cursorLabel: '49 e.c.',
+    lanes: [{ label: 'Pablo', icon: 'person', color: 'var(--node-persona)', items: [{ from: 49, to: 52.4, label: '2.º viaje · c. 49-52', fuzzy: 'both', active: true }] }],
+  });
+});
+</script>
+</body>
+</html>

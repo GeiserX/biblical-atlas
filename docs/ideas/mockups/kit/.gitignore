@@ -1,0 +1,5 @@
+# Temporales del kit: nunca al repo
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp.png

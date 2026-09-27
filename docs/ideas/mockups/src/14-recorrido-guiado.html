@@ -1,0 +1,264 @@
+<!doctype html>
+<!--
+  14 · Recorrido guiado «De Babilonia a Jerusalén: el regreso de 537 a.e.c.», parada 4 de 8.
+  Toda la narrativa es nuestra; ningún texto de la TNM. Comprobado el 27-09-2026 en wol.jw.org:
+  - Esdras 1 (TNM): https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/1  (Esd 1:1-4 decreto; 1:7-11 utensilios, «en total 5.400»)
+  - Esdras 2: https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/2  (2:2 con Zorobabel y Jesúa; 2:64 42.360 personas; 2:65 7.337 esclavos y 200 cantores)
+  - Esdras 3: https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/3  (3:1 séptimo mes, ya en sus ciudades; 3:2 Jesúa hijo de Jehozadac; 3:8 segundo año, segundo mes)
+  - Esdras 4:24, 5:1-2, 6:2 (Ecbátana), 6:15 (sexto año de Darío): https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/4 … /6
+  - Esdras 7:9 (el viaje de Esdras: del 1.er día del 1.er mes al 1.er día del 5.º mes): https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/7
+  - Daniel 5:30, 31: https://wol.jw.org/es/wol/b/r4/lp-s/nwt/27/5
+  - Perspicacia «Ciro»: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
+      decreto a finales de 538 o principios de 537; viaje que «pudo durar unos cuatro meses, según Esd 7:9»;
+      en sus ciudades para tisri de 537; fin de los 70 años; Isaías lo nombra (Isa 44:28; 45:1); menciona el Cilindro de Ciro.
+  - Perspicacia «Zorobabel»: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716 (guía el regreso en 537; altar en el 7.º mes; templo en el 2.º mes de 536)
+  - Perspicacia «Babilonia»: https://wol.jw.org/es/wol/d/r4/lp-s/1200000530 (5 de octubre de 539, gregoriano)
+  - Estudio 3 de «Toda Escritura»: https://wol.jw.org/es/wol/d/r4/lp-s/1101990130 (607, 539, 537; 522 prohibición; 520 Ageo; 515 templo)
+  - Esdras llega en 468 a.e.c.: data/israel-medos-y-persas.json (it-esdras, si-3).
+  La ruta NO la da la Biblia: se dibuja como aproximada y se dice en pantalla.
+  Foto: kit/photos/cilindro-ciro.jpg · Daderot · CC0 · Wikimedia Commons (Museo Británico).
+  Coordenadas: OpenBible.info (CC BY 4.0).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>14 · Recorrido guiado: de Babilonia a Jerusalén</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .tour { width: 100vw; height: 100vh; overflow: hidden; display: grid; background: var(--paper);
+    grid-template-columns: 560px 1fr; grid-template-rows: 64px 1fr 214px;
+    grid-template-areas: "top top" "story map" "time time"; }
+  .tour > .be-topbar { grid-area: top; }
+  .tour > .story { grid-area: story; }
+  .tour > .be-map { grid-area: map; }
+  .tour > .be-timeline { grid-area: time; }
+
+  .mode { display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 12px; border-radius: var(--r-pill); background: var(--tier1-soft); color: var(--tier1); font-size: var(--fs-sm); font-weight: 600; white-space: nowrap; }
+  .tt { font-family: var(--font-serif); font-size: 21px; font-weight: 600; white-space: nowrap; }
+  .tt small { font-family: var(--font-sans); font-size: var(--fs-sm); color: var(--ink-3); font-weight: 500; margin-left: 8px; }
+
+  /* Columna de la historia */
+  .story { background: var(--surface); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  .story__head { padding: 18px 26px 14px; border-bottom: 1px solid var(--line); }
+  .kick { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; gap: 8px; align-items: center; }
+  .prog { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; margin-top: 12px; }
+  .prog span { height: 6px; border-radius: 3px; background: var(--paper-2); }
+  .prog .done { background: var(--tier1); }
+  .prog .now { background: var(--gold); box-shadow: 0 0 0 3px var(--gold-soft); }
+  .prog-lbl { display: grid; grid-template-columns: repeat(8, 1fr); gap: 5px; margin-top: 7px; font-size: 10px; color: var(--ink-3); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .prog-lbl span { text-align: left; white-space: nowrap; }
+  .prog-lbl .now { color: #6e4f15; }
+
+  .story__body { flex: 1; min-height: 0; overflow: hidden; padding: 18px 26px 0; display: flex; flex-direction: column; gap: 14px; }
+  .stop-eyebrow { display: flex; align-items: center; gap: 8px; }
+  .stopn { width: 26px; height: 26px; border-radius: 50%; background: var(--gold); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+  .when { font-size: var(--fs-xs); font-weight: 700; color: #6e4f15; background: var(--gold-soft); border-radius: var(--r-pill); padding: 3px 10px; }
+  h1.st { font-family: var(--font-serif); font-size: 32px; line-height: 1.05; font-weight: 600; margin: 8px 0 0; }
+  .narr { font-family: var(--font-serif); font-size: 17.5px; line-height: 1.5; color: var(--ink-2); margin: 0; }
+  .narr b { color: var(--ink); font-weight: 600; }
+  .nums { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .num { border: 1px solid var(--line); background: var(--surface-2); border-radius: var(--r-md); padding: 9px 10px 8px; }
+  .num b { display: block; font-family: var(--font-serif); font-size: 24px; line-height: 1; font-weight: 600; }
+  .num span { display: block; font-size: 10.5px; color: var(--ink-3); font-weight: 600; margin-top: 4px; line-height: 1.25; }
+  .num .be-ref { font-size: 10px; margin-top: 6px; }
+  .num--unc { border: 1.5px dashed #b9a6c9; background: #f4eff7; }
+  .num--unc b { color: #5c4677; }
+  .refs { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+
+  .quiz { border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); padding: 13px 14px 12px; }
+  .quiz__q { font-size: var(--fs-md); font-weight: 600; margin: 6px 0 9px; }
+  .opts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .opt { display: flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: var(--r-md); border: 1px solid var(--line-2); font-size: var(--fs-sm); font-weight: 600; color: var(--ink-2); background: var(--surface); }
+  .opt--ok { border-color: var(--tier1); background: var(--tier1-soft); color: var(--tier1); }
+  .opt--ok .be-i { color: var(--tier1); }
+  .fb { margin-top: 9px; font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.45; }
+  .fb b { color: var(--tier1); }
+
+  .nav { margin-top: auto; display: flex; gap: 10px; align-items: center; padding: 14px 0 16px; border-top: 1px solid var(--line); }
+  .nav .be-btn { height: 44px; }
+  .nav .next { flex: 1; justify-content: space-between; padding: 0 16px; font-size: var(--fs-md); }
+  .nav .next small { display: block; font-size: 10.5px; opacity: .7; font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-caps); margin-bottom: 2px; }
+
+  /* Mapa */
+  .stopgrp { position: absolute; transform: translate(-50%, -50%); display: flex; gap: 3px; z-index: 4; }
+  .sp { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font: 700 11.5px/1 var(--font-sans); color: #fff; background: var(--tier1); border: 2px solid #fff; box-shadow: var(--shadow-2); }
+  .sp--todo { background: #fff; color: var(--ink-3); border-color: var(--line-2); }
+  .sp--now { background: var(--gold); width: 30px; height: 30px; font-size: 14px; box-shadow: 0 0 0 6px rgba(184,137,47,.25), var(--shadow-2); }
+  .here { position: absolute; z-index: 5; transform: translate(-50%, 0); background: var(--ink); color: #fbf7ef; font-size: var(--fs-xs); font-weight: 600; padding: 5px 10px; border-radius: var(--r-pill); white-space: nowrap; box-shadow: var(--shadow-2); }
+  .unk { position: absolute; z-index: 3; width: 238px; padding: 9px 11px; font-size: var(--fs-xs); line-height: 1.4; color: #4d3f62; }
+  .unk b { display: flex; align-items: center; gap: 6px; font-size: var(--fs-2xs); letter-spacing: var(--tracking-caps); text-transform: uppercase; margin-bottom: 3px; }
+  .seen { position: absolute; z-index: 3; width: 250px; overflow: hidden; padding: 0; }
+  .seen .be-photo { height: 116px; }
+  .seen .be-photo img { object-position: 50% 50%; }
+  .seen__b { padding: 8px 11px 10px; font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.4; }
+  .seen__b .k { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+  .be-timeline .be-point-label { font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="tour">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <span class="mode"><i class="be-i be-i--sm" data-icon="compass"></i>Recorrido guiado</span>
+    <span class="tt">De Babilonia a Jerusalén<small>el regreso de 537 a.e.c. · 8 paradas</small></span>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">537 a.e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--ghost"><i class="be-i be-i--sm" data-icon="x"></i>Salir y explorar</span>
+  </header>
+
+  <section class="story">
+    <div class="story__head">
+      <div class="kick"><span>Parada 4 de 8</span><span class="be-muted">·</span><span class="be-muted">Esdras 1-6 · Daniel 5</span></div>
+      <div class="prog"><span class="done"></span><span class="done"></span><span class="done"></span><span class="now"></span><span></span><span></span><span></span><span></span></div>
+      <div class="prog-lbl"><span>607</span><span>539</span><span>538/537</span><span class="now">537</span><span>tisri 537</span><span>536</span><span>522</span><span>520-515</span></div>
+    </div>
+
+    <div class="story__body">
+      <div>
+        <div class="stop-eyebrow"><span class="stopn">4</span><span class="when">537 a.e.c. · antes de tisri</span><span class="be-tier be-tier--1" data-n="1">TNM</span></div>
+        <h1 class="st">Un largo camino de vuelta</h1>
+      </div>
+
+      <p class="narr">Con el permiso de Ciro, un gran grupo sale de Babilonia hacia Judá. Lo guían <b>Zorobabel</b> y el sumo sacerdote <b>Jesúa</b>. Llevan de vuelta los utensilios del templo que Nabucodonosor se había llevado. Tienen que estar en sus ciudades antes del séptimo mes.</p>
+
+      <div class="nums">
+        <div class="num"><b>42.360</b><span>personas en el grupo</span><a class="be-ref">Esd 2:64</a></div>
+        <div class="num"><b>7.337</b><span>esclavos, aparte; y 200 cantores</span><a class="be-ref">Esd 2:65</a></div>
+        <div class="num"><b>5.400</b><span>utensilios de oro y plata devueltos</span><a class="be-ref">Esd 1:11</a></div>
+        <div class="num num--unc"><b>¿4 meses?</b><span>No se dice. El viaje de Esdras duró unos cuatro</span><a class="be-ref">Esd 7:9</a></div>
+      </div>
+
+      <div class="refs"><span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">Lee el relato:</span><a class="be-ref">Esd 1:1-11</a><a class="be-ref">Esd 2:1, 2, 64-70</a><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwt/15/2">Leer Esdras 2 en wol.jw.org</a></div>
+
+      <div class="quiz">
+        <div class="kick"><i class="be-i be-i--sm" data-icon="question"></i>Pregunta de repaso · 1 de 2</div>
+        <div class="quiz__q">¿Quién guió a este primer grupo de vuelta a Jerusalén?</div>
+        <div class="opts">
+          <span class="opt">Esdras</span>
+          <span class="opt opt--ok"><i class="be-i be-i--sm" data-icon="check"></i>Zorobabel</span>
+          <span class="opt">Nehemías</span>
+        </div>
+        <div class="fb"><b>Correcto.</b> Es fácil confundirlos: Esdras llegó <b>69 años después</b>, en 468 a.e.c., y Nehemías en 455. En la línea de tiempo están a la derecha.</div>
+      </div>
+
+      <div class="nav">
+        <span class="be-btn"><i class="be-i be-i--sm" data-icon="chevron-left"></i>3 · El decreto de Ciro</span>
+        <span class="be-btn be-btn--primary next"><span><small>Parada 5 · tisri de 537</small>En sus ciudades: el altar</span><i class="be-i" data-icon="arrow-right"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-legend__row"><span class="sp" style="width:18px;height:18px;font-size:9.5px">1</span>Parada vista</div>
+        <div class="be-legend__row"><span class="sp sp--todo" style="width:18px;height:18px;font-size:9.5px">5</span>Parada por ver</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta aproximada: la Biblia no la da</div>
+        <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px dashed var(--ink-4)"></span>607 a.e.c.: deportación (parada 1)</div>
+      </div>
+    </div>
+  </main>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mundo', style: 'antiguo', bounds: [31.8, 27.6, 50.2, 38.4] });
+
+  map.label('Imperio persa', 46.9, 30.3, { kind: 'empire', size: 19 });
+  map.label('Judá', 35.0, 30.7, { kind: 'region' });
+  map.label('Media', 47.9, 35.9, { kind: 'region' });
+  map.label('Desierto de Arabia', 39.6, 30.6, { kind: 'region' });
+  map.label('Mar Mediterráneo', 33.4, 33.7, { kind: 'sea' });
+  map.label('Éufrates', 41.1, 34.55, { kind: 'sea', size: 13, rotate: 33 });
+  map.label('Tigris', 44.35, 34.9, { kind: 'sea', size: 13, rotate: 62 });
+
+  // Parada 1 (607): deportación, como rastro tenue del pasado
+  map.route(['jerusalen', [36.9, 34.6], [39.9, 35.3], 'babilonia'], { kind: 'ghost', smooth: true });
+  // Parada 4: el regreso. Ruta no indicada en la Biblia: trazado aproximado por el valle del Éufrates.
+  const back = [ 'babilonia', [42.2, 34.2], [40.1, 35.1], [37.9, 35.0], [36.3, 33.4], 'jerusalen' ];
+  map.route(back, { kind: 'approx', smooth: true, arrowEvery: 190 });
+
+  map.city('jerusalen', { variant: ['dest'], side: 'bottom', sub: 'destino · templo en ruinas' });
+  map.city('babilonia', { variant: ['major', 'visited'], side: 'bottom', sub: 'salida' });
+  map.city('susa', { variant: ['minor'], side: 'right', sub: 'capital persa' });
+  map.city('ecbatana', { variant: ['minor'], side: 'right', label: 'Ecbátana', sub: 'Esd 6:2' });
+  map.city('damasco', { variant: ['minor', 'past'], side: 'right' });
+  map.city('tiro', { variant: ['minor', 'past'], side: 'left' });
+
+  // Paradas numeradas agrupadas por lugar
+  const grp = (ref, html, dx = 0, dy = 0) => {
+    const [x, y] = map.at(ref); const n = document.createElement('div');
+    n.className = 'stopgrp'; n.innerHTML = html; n.style.left = (x + dx) + 'px'; n.style.top = (y + dy) + 'px'; mapEl.appendChild(n); return n;
+  };
+  grp('jerusalen', '<span class="sp">1</span><span class="sp sp--todo">5</span><span class="sp sp--todo">6</span><span class="sp sp--todo">7</span><span class="sp sp--todo">8</span>', 0, -30);
+  grp('babilonia', '<span class="sp">2</span><span class="sp">3</span>', 4, -28);
+  // Parada 4: el grupo, en camino (posición ilustrativa)
+  const [hx, hy] = map.project(38.6, 35.12);
+  grp([38.6, 35.12], '<span class="sp sp--now">4</span>');
+  const here = document.createElement('div'); here.className = 'here';
+  here.innerHTML = 'En camino · posición ilustrativa';
+  here.style.left = hx + 'px'; here.style.top = (hy + 24) + 'px'; mapEl.appendChild(here);
+
+  // Nota de incertidumbre sobre la ruta
+  const [ux, uy] = map.project(39.2, 32.6);
+  const unk = document.createElement('div'); unk.className = 'be-float unk';
+  unk.style.left = ux + 'px'; unk.style.top = uy + 'px';
+  unk.innerHTML = '<b><i class="be-i be-i--sm" data-icon="question"></i>Qué no sabemos</b>Ni la ruta ni la fecha de salida. Dibujamos un camino posible por el valle del Éufrates, sin verificar, y lo marcamos como aproximado.';
+  mapEl.appendChild(unk);
+
+  // Lo visto en la parada 3: el Cilindro de Ciro (nivel 2)
+  const [sx, sy] = map.project(45.4, 37.95);
+  const seen = document.createElement('div'); seen.className = 'be-float seen';
+  seen.style.right = '72px'; seen.style.top = '14px';
+  seen.innerHTML = `
+    <figure class="be-photo"><img src="../kit/photos/cilindro-ciro.jpg" alt="Cilindro de Ciro">
+      <span class="be-photo__badge"><span class="be-tier be-tier--2" data-n="2">Arqueología</span></span>
+      <figcaption><b>Cilindro de Ciro</b><span class="be-photo__credit">Foto: Daderot · CC0 · Wikimedia Commons · Museo Británico</span></figcaption></figure>
+    <div class="seen__b"><div class="k">Visto en la parada 3</div>Muestra la política tolerante de Ciro con los pueblos vencidos. El decreto sobre los judíos está en <a class="be-ref">Esd 1:1-4</a>.</div>`;
+  mapEl.appendChild(seen);
+
+  const sc = map.scaleBar(120); Object.assign(sc.style, { position: 'absolute', right: '14px', bottom: '26px', zIndex: 2 }); mapEl.appendChild(sc);
+
+  const Y = (aec) => 1 - aec;
+  BE.timeline(document.getElementById('timeline'), {
+    from: Y(612), to: Y(444), tick: 10, minor: 2, roundBCE: true, cursor: Y(537) + 0.35, cursorLabel: '537 a.e.c. · parada 4',
+    fmt: (y) => BE.fmtYear(y),
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="pause"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-chip">El recorrido mueve el cursor en cada parada</span>
+      <span class="be-spacer"></span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Paradas', icon: 'compass', color: 'var(--gold)', items: [
+        { at: Y(607) + 0.4, label: '1 · 607' },
+        { at: Y(539) + 0.76, label: '2 · 3 · 539-538', labelLeft: true },
+        { at: Y(537) + 0.35, label: '' },
+        { at: Y(536) + 0.35, label: '5 · 6 · 537-536' },
+        { at: Y(522) + 0.5, label: '7 · 522' },
+        { at: Y(515) + 0.5, label: '8 · 520-515' } ] },
+      { label: 'Desolación', icon: 'hourglass', color: 'var(--gold)', items: [
+        { from: Y(607) + 0.55, to: Y(537) + 0.55, label: '70 años de desolación · 607 → tisri de 537 a.e.c.', color: 'var(--gold)', active: true } ] },
+      { label: 'Guían el regreso', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: Y(537) + 0.2, to: Y(515) + 0.5, label: 'Zorobabel y Jesúa · 537-515', color: 'var(--accent)' },
+        { at: Y(468) + 0.3, label: 'Esdras · 468', labelLeft: true },
+        { at: Y(455) + 0.3, label: 'Nehemías · 455', labelLeft: true } ] },
+      { label: 'Potencia mundial', icon: 'crown', color: 'var(--emp-persia)', items: [
+        { from: Y(612), to: Y(539) + 0.76, label: 'Babilonia', color: 'var(--emp-babilonia)', fuzzy: 'start' },
+        { from: Y(539) + 0.76, to: Y(444), label: 'Medopersia · Ciro, Cambises, Darío I, Jerjes I, Artajerjes I', color: 'var(--emp-persia)', fuzzy: 'end' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

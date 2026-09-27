@@ -1,0 +1,184 @@
+<!doctype html>
+<!--
+  13b · Cronología TNM principal y fecha secular como nota: destrucción de Jerusalén (607 frente a 587/586 a.e.c.).
+  Comprobado el 27-09-2026 en wol.jw.org:
+  - Estudio 3 de «Toda Escritura es inspirada de Dios y provechosa»: https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+      625 Nabucodonosor sube al trono; 617 primeros cautivos (Dan 1:1-4) y Sedequías rey; 613 Ezequiel empieza a profetizar;
+      609 empieza el sitio (2 Re 25:1, 2); 607 quinto mes (Ab) templo arrasado (2 Re 25:8-10; Jer 52:12-14);
+      séptimo mes los judíos abandonan Judá (2 Re 25:25, 26); 539 cae Babilonia (Dan 5:30, 31);
+      537 decreto de Ciro y fin de los 70 años; regreso para tisri de 537 (Esd 3:1); c. 536 Daniel completa su libro.
+  - La Atalaya 1/10/2011, «¿Cuándo fue destruida Jerusalén? Primera parte»: https://wol.jw.org/es/wol/d/r4/lp-s/2011736
+      muchos historiadores dicen 586 o 587; 70 años de Jer 25:11 y 29:10; fin en 537, luego inicio en 607;
+      la fecha 587 se apoya en historiadores clásicos y el Canon de Tolomeo;
+      la cronología extrabíblica habla de un dominio babilónico de unos 70 años, de c. 609 a 539.
+  - Perspicacia «Ciro»: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102 (los 70 años empezaron en tisri de 607)
+  - Nivel 2, sólo para la fecha secular: https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)
+  Datos: data/israel-medos-y-persas.json (antecedente «destruccion-de-jerusalen»).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>13b · Cronología TNM y fecha secular: 607 a.e.c.</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --panel-w: 450px; --timeline-h: 258px; }
+  .ttl h1 { font-family: var(--font-serif); font-size: 26px; font-weight: 600; line-height: 1.1; margin: 8px 0 0; }
+  .ttl p { margin: 3px 0 0; font-size: var(--fs-sm); color: var(--ink-3); }
+  .big { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dcard { border-radius: var(--r-md); padding: 10px 12px; }
+  .dcard--tnm { background: var(--gold-soft); border: 1px solid #ead9b3; }
+  .dcard--sec { background: var(--secular-soft); border: 1.5px dashed #b8c2cf; }
+  .dcard small { display: block; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+  .dcard--tnm small { color: #8a6a2a; }
+  .dcard--sec small { color: var(--secular); }
+  .dcard b { display: block; font-family: var(--font-serif); font-size: 30px; line-height: 1.05; margin: 4px 0 2px; }
+  .dcard--tnm b { color: #5a4212; }
+  .dcard--sec b { color: var(--secular); font-size: 26px; }
+  .dcard span { font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.35; display: block; }
+  .steps { counter-reset: s; margin: 8px 0 0; padding: 0; list-style: none; }
+  .steps li { position: relative; padding: 0 0 8px 30px; font-size: var(--fs-sm); line-height: 1.4; color: var(--ink-2); }
+  .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 0; top: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; display: grid; place-items: center; }
+  .steps li b { color: var(--ink); font-weight: 600; }
+  .srcline { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-top: 1px solid var(--line); font-size: var(--fs-sm); }
+  .srcline:first-child { border-top: 0; }
+  .srcline .t { flex: 1; font-weight: 600; line-height: 1.25; }
+  .srcline .t small { display: block; font-weight: 500; color: var(--ink-3); font-size: var(--fs-2xs); }
+  .gap { position: absolute; transform: translate(-50%, 0); font-size: var(--fs-2xs); font-weight: 700; color: var(--secular); background: rgba(255,253,248,.95); border: 1px dashed #b8c2cf; border-radius: var(--r-pill); padding: 1px 8px; white-space: nowrap; z-index: 5; }
+  .ghost-mark { position: absolute; top: 8px; width: 14px; height: 14px; margin-left: -7px; border-radius: 3px; transform: rotate(45deg); background: #fff; border: 2px dashed var(--secular); z-index: 3; }
+  .ghost-label { position: absolute; top: 6px; margin-left: 12px; font-size: var(--fs-2xs); font-weight: 700; color: var(--secular); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>607 a.e.c.</b> · persona, lugar, capítulo o año</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">Ab de 607 a.e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">Año 607 a.e.c.</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Deportados a Babilonia (ruta sin trazado exacto)</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>7.º mes: huida a Egipto</div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Jerusalén</span><span class="be-sep">›</span><span>607 a.e.c.</span></div>
+      <div class="ttl"><h1>Destrucción de Jerusalén y del templo</h1><p>Nabucodonosor II · <a class="be-ref">2 Re 25:8-10</a> <a class="be-ref">Jer 52:12-14</a></p></div>
+      <div class="be-tabs"><span class="be-tab">Resumen</span><span class="be-tab be-tab--on">Fecha<b>2</b></span><span class="be-tab">Fuentes<b>5</b></span><span class="be-tab">Conexiones<b>11</b></span></div>
+    </div>
+    <div class="be-panel__body">
+      <div class="big">
+        <div class="dcard dcard--tnm"><small>Cronología TNM · la usamos</small><b>607 a.e.c.</b><span>Quinto mes (Ab). En el séptimo empiezan los 70 años de desolación.</span></div>
+        <div class="dcard dcard--sec"><small>Fecha secular · nota</small><b>587/586 a.e.c.</b><span>La de muchos historiadores. Se apoya en historiadores clásicos y en el Canon de Tolomeo. 20 años después.</span></div>
+      </div>
+
+      <article class="be-card">
+        <div class="be-card__pad" style="padding:12px 14px">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="calendar"></i>Por qué 607</div>
+          <ol class="steps">
+            <li>Jeremías anuncia <b>70 años</b> de desolación. <a class="be-ref">Jer 25:11</a> <a class="be-ref">Jer 29:10</a></li>
+            <li>Terminan cuando los judíos vuelven, en el <b>otoño de 537</b> a.e.c. <a class="be-ref">Esd 3:1</a></li>
+            <li>537 + 70 años hacia atrás: <b>607 a.e.c.</b></li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="be-card">
+        <div class="be-card__pad" style="padding:8px 14px">
+          <div class="srcline"><span class="be-tier be-tier--1" data-n="1">TNM</span><span class="t">Estudio 3 · «Toda Escritura»<small>tabla de fechas: 609, 607, 537</small></span><a class="be-wol" style="font-size:var(--fs-xs)">Leer</a></div>
+          <div class="srcline"><span class="be-tier be-tier--1" data-n="1">TNM</span><span class="t">¿Cuándo fue destruida Jerusalén?<small>La Atalaya, 1 de octubre de 2011</small></span><a class="be-wol" style="font-size:var(--fs-xs)">Leer</a></div>
+          <div class="srcline"><span class="be-tier be-tier--2" data-n="2">Secular</span><span class="t">Siege of Jerusalem (587 BC)<small>Wikipedia · sólo como fuente de la otra fecha</small></span><a class="be-wol" style="font-size:var(--fs-xs)">Ver</a></div>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mundo', style: 'antiguo', bounds: [27.5, 25.5, 50.5, 39.5] });
+
+  map.label('Imperio babilónico', 44.6, 30.4, { kind: 'empire', size: 20 });
+  map.label('Judá', 35.35, 31.25, { kind: 'region' });
+  map.label('Egipto', 30.6, 28.3, { kind: 'region' });
+  map.label('Mar Mediterráneo', 31.2, 33.3, { kind: 'sea' });
+  map.label('Éufrates', 41.3, 33.9, { kind: 'sea', size: 13, rotate: 38 });
+
+  // Deportación a Babilonia: la Biblia no da el trazado; se dibuja como aproximado
+  map.route(['jerusalen', [37.3, 34.9], [40.2, 35.0], 'babilonia'], { kind: 'approx', smooth: true, arrowEvery: 220 });
+  // Séptimo mes: los que quedaban huyen a Egipto (2 Re 25:25, 26)
+  map.route(['jerusalen', [33.2, 30.6], [31.6, 30.4]], { kind: 'todo', smooth: true });
+
+  map.city('jerusalen', { variant: 'current', side: 'right', sub: 'ciudad y templo arrasados' });
+  map.city('babilonia', { variant: ['major', 'visited'], side: 'right', sub: 'Nabucodonosor · Daniel desde 617' });
+  map.city('ninive', { variant: ['minor', 'past'], side: 'right' });
+  map.city('damasco', { variant: ['minor'], side: 'right' });
+  map.city('tiro', { variant: ['minor'], side: 'left' });
+
+  map.pop('jerusalen', `
+    <div class="be-card__pad" style="padding:12px 14px">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="event"></i>Qué pasó aquí · Ab de 607 a.e.c.</div>
+      <div style="font-family:var(--font-serif);font-size:19px;font-weight:600;margin-top:3px">Cae Jerusalén tras el sitio</div>
+      <div style="font-size:var(--fs-sm);color:var(--ink-2);margin-top:4px">El sitio empezó en 609. Los babilonios arrasan la ciudad y el templo, y deportan a muchos a Babilonia.</div>
+      <div style="display:flex;gap:6px;margin-top:8px;align-items:center;flex-wrap:wrap"><a class="be-ref">2 Re 25:1-10</a><span class="be-chrono be-chrono--secular" style="height:22px">secular: 587/586</span></div>
+    </div>`, { dx: -40, dy: -24, width: 300 });
+
+  const sc = map.scaleBar(120); Object.assign(sc.style, { position: 'absolute', right: '14px', bottom: '26px', zIndex: 2 }); mapEl.appendChild(sc);
+
+  const Y = (aec) => 1 - aec; // año a.e.c. → astronómico
+  const TL = BE.timeline(document.getElementById('timeline'), {
+    from: Y(632), to: Y(525), tick: 10, minor: 1, roundBCE: true, cursor: Y(607) + 0.4, cursorLabel: 'Ab de 607 a.e.c.',
+    fmt: (y) => BE.fmtYear(y),
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-zoomscale"><span>Siglos</span><span class="on">Décadas</span><span>Años</span></span>
+      <span class="be-spacer"></span>
+      <span class="be-chrono be-chrono--secular"><span style="display:inline-block;width:10px;height:10px;border:1.5px dashed currentColor;border-radius:2px;transform:rotate(45deg)"></span>Fechas seculares como nota</span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Sucesos', icon: 'event', color: 'var(--node-evento)', items: [
+        { at: Y(617) + 0.5, label: '617 · primeros cautivos', labelLeft: true },
+        { at: Y(609) + 0.5, label: '609 · sitio', labelLeft: true },
+        { at: Y(607) + 0.4, label: '' },
+        { at: Y(539) + 0.75, label: '539 · cae Babilonia', labelLeft: true },
+        { at: Y(537) + 0.7, label: '537 · regreso' } ] },
+      { label: 'Desolación', icon: 'hourglass', color: 'var(--gold)', items: [
+        { from: Y(607) + 0.55, to: Y(537) + 0.55, label: '70 años de desolación de Judá · tisri de 607 → tisri de 537 a.e.c.', color: 'var(--gold)', active: true } ] },
+      { label: 'Lectura secular', icon: 'columns', color: 'var(--secular)', items: [
+        { from: Y(609), to: Y(539) + 0.75, label: 'c. 609-539 · los 70 años como dominio babilónico', soft: true, color: 'var(--secular)' } ] },
+      { label: 'Judá', icon: 'crown', color: 'var(--emp-israel)', items: [
+        { from: Y(617) + 0.5, to: Y(607) + 0.4, label: 'Sedequías', color: 'var(--emp-israel)' } ] },
+      { label: 'Babilonia', icon: 'crown', color: 'var(--emp-babilonia)', items: [
+        { from: Y(625), to: Y(582) + 0.8, label: 'Nabucodonosor II · 625-582', color: 'var(--emp-babilonia)' },
+        { from: Y(582) + 0.8, to: Y(539) + 0.75, label: 'sus sucesores, hasta Belsasar', soft: true, color: 'var(--emp-babilonia)' },
+        { from: Y(539) + 0.75, to: Y(525), label: 'Medopersia', color: 'var(--emp-persia)' } ] },
+      { label: 'Profetas', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: Y(617) + 0.5, to: Y(536), label: 'Daniel en Babilonia · 617 – c. 536', color: '#b86c55' } ] },
+    ],
+  });
+  // Marca secular fantasma en 587/586 y el hueco de 20 años
+  const track = TL.querySelector('.be-timeline__track'), lane0 = TL.querySelectorAll('.be-lane')[0];
+  const span = Y(525) - Y(632), pct = (y) => ((y - Y(632)) / span * 100) + '%';
+  lane0.insertAdjacentHTML('beforeend', `<div class="ghost-mark" style="left:${pct(Y(587))}"></div><div class="ghost-label" style="left:${pct(Y(587))}">587/586 · fecha secular, 20 años después</div>`);
+});
+</script>
+</body>
+</html>

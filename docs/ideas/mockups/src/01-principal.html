@@ -1,0 +1,244 @@
+<!doctype html>
+<!--
+  01 · Pantalla principal: segundo viaje de Pablo en reproducción, Pablo en Filipos (c. 50 e.c.).
+  Fuentes de los datos (comprobadas en wol.jw.org el 27-09-2026):
+  - Segundo viaje c. 49-52 e.c.; sale a finales del verano de 49; Troas en la primavera de 50; Corinto desde el otoño de 50:
+    data/viajes-de-pablo.json · https://wol.jw.org/es/wol/d/r4/lp-s/1101990130 · https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  - Filipos, colonia romana y ciudad principal del distrito de Macedonia (Hch 16:12); lugar de oración junto al río (Hch 16:13);
+    Lidia, de Tiatira, vendedora de púrpura (Hch 16:14); cárcel (Hch 16:23-24) y terremoto (Hch 16:26); "alrededor del año 50" (nota de Hch 16:14):
+    https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  - Timoteo se une en Listra, a finales de 49 o principios de 50 (Hch 16:1-3 y su nota); Lucas se une en Troas hacia el año 50 y no acompaña a Pablo
+    al salir de Filipos (nota de Hch 16:10): misma URL.
+  - Silas sale con Pablo desde Antioquía (Hch 15:40): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  - Silas y Timoteo llegan a Corinto (Hch 18:5); Pablo en Corinto desde el otoño de 50; Claudio expulsa a los judíos de Roma en 49 o a principios de 50
+    (nota de Hch 18:2): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  - Siguiente parada: Anfípolis, Apolonia, Tesalónica (Hch 17:1): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  - Claudio (41-54) y Nerón (54-68): cronología secular de los emperadores (nivel 2).
+  Coordenadas: OpenBible.info (CC BY 4.0). Foto: Carole Raddato, CC BY-SA 2.0 (kit/photos/CREDITS.md).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>01 · Pantalla principal</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 266px; --panel-w: 404px; }
+  .photo-h { height: 118px; }
+  .who3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+  .who3 > div { display: flex; gap: 8px; align-items: flex-start; }
+  .who3 b { display: block; font-size: var(--fs-md); line-height: 1.2; }
+  .who3 small { display: block; font-size: var(--fs-2xs); color: var(--ink-3); line-height: 1.35; margin-top: 2px; }
+  .who { display: flex; flex-direction: column; gap: 0; margin-top: 4px; }
+  .who .be-row { padding: 7px 0; }
+  .who .be-row__meta b { color: var(--ink-2); font-weight: 600; }
+  .sec-title { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); margin: 2px 0 2px; display: flex; align-items: center; gap: 6px; }
+  .next { display: flex; align-items: center; gap: 10px; padding: 10px 12px; }
+  .next__route { font-family: var(--font-serif); font-size: 17px; font-weight: 600; }
+  .next__route span { color: var(--ink-4); font-family: var(--font-sans); font-size: 13px; margin: 0 4px; }
+  .narr { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px; border-radius: 999px; font-size: var(--fs-xs); font-weight: 600; color: #5d4674; border: 1px dashed #b9a6cc; background: repeating-linear-gradient(135deg, rgba(122,92,142,.10) 0 5px, transparent 5px 10px); }
+  /* Globo "próxima parada" y "mientras tanto" sobre el mapa */
+  .flag-next { position: absolute; z-index: 3; display: flex; align-items: center; gap: 8px; padding: 6px 10px 6px 8px; font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); border-radius: 999px; }
+  .flag-next b { color: var(--accent); }
+  .meanwhile { position: absolute; z-index: 3; width: 268px; padding: 10px 12px; }
+  .meanwhile__eyebrow { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+  .meanwhile__title { font-family: var(--font-serif); font-size: 17px; font-weight: 600; margin: 4px 0 2px; }
+  .meanwhile__body { font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.4; }
+  .ctxline { display: flex; align-items: center; gap: 8px; font-size: var(--fs-xs); color: var(--ink-2); font-weight: 500; }
+  .ctxline b { font-weight: 700; color: var(--ink); }
+  .ctxline .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--ink-4); }
+  .be-play__main.is-playing { background: var(--accent); }
+  .tier-mini { font-size: 9px; font-weight: 800; color: var(--tier2); background: var(--tier2-soft); border-radius: 999px; padding: 1px 5px; margin-left: 2px; }
+</style>
+</head>
+<body>
+<div class="be-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Pablo</b> · 2.º viaje misional · Hch 15:36–18:22</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">c. 50 e.c.</span><span class="be-date__hint">tiempo narrativo · TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="curtain"></i>Cortina</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="bookmark"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+      <div class="be-float be-zoombtns"><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">Segundo viaje · c. 49-52 e.c.</div>
+        <div class="be-legend__row"><span class="be-legend__line"></span>Recorrido hasta esta fecha</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--sea"></span>Tramo por mar</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta sin trazado conocido (Hch 16:6-8)</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>
+        <div class="be-legend__row"><span class="be-legend__line" style="border-top:2px solid rgba(123,111,96,.45)"></span>Rastro del 1.er viaje (c. 47-48)</div>
+      </div>
+    </div>
+    <div class="be-mapctl be-mapctl--br" id="scale"></div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Pablo</span><span class="be-sep">›</span><span>2.º viaje</span><span class="be-sep">›</span><span>Filipos</span></div>
+      <div class="be-tabs"><span class="be-tab be-tab--on">Aquí y ahora</span><span class="be-tab">Viaje<b>21</b></span><span class="be-tab">Conexiones<b>12</b></span><span class="be-tab">Fuentes<b>5</b></span></div>
+    </div>
+    <div class="be-panel__body">
+      <article class="be-card">
+        <figure class="be-photo photo-h">
+          <img src="../kit/photos/filipos.jpg" alt="Foro romano de Filipos">
+          <span class="be-photo__badge be-tier be-tier--2" data-n="2">Arqueología</span>
+          <figcaption><b>Foro romano de Filipos</b>Estado actual<span class="be-photo__credit">Foto: Carole Raddato · CC BY-SA 2.0 · Wikimedia Commons</span></figcaption>
+        </figure>
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="place"></i>Parada 10 de 21 · Dónde está Pablo</div>
+          <h2 class="be-card__title">Filipos</h2>
+          <div class="be-card__sub">Colonia romana · ciudad principal del distrito de Macedonia</div>
+          <div class="be-card__body">Predica junto al río, en un lugar de oración. Lidia, vendedora de púrpura de Tiatira, se bautiza con su casa. Después encarcelan a Pablo y a Silas, y un terremoto abre las puertas.</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">
+            <a class="be-ref">Hch 16:12-15</a><a class="be-ref">Hch 16:23-26</a><span class="be-chrono be-chrono--tnm">c. 50 e.c.</span><span class="narr"><i class="be-i be-i--sm" data-icon="hourglass"></i>orden seguro, fecha aproximada</span>
+          </div>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">TNM · nota de estudio</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16">Leer en wol.jw.org</a></div>
+      </article>
+
+      <article class="be-card be-card--compact">
+        <div class="be-card__pad">
+          <div class="sec-title"><i class="be-i be-i--sm" data-icon="people"></i>Con Pablo en esta fecha</div>
+          <div class="who3">
+            <div><span class="be-node be-node--persona be-node--sm">S</span><div><b>Silas</b><small>de Antioquía<br>Hch 15:40</small></div></div>
+            <div><span class="be-node be-node--persona be-node--sm">T</span><div><b>Timoteo</b><small>desde Listra<br>Hch 16:1-3</small></div></div>
+            <div><span class="be-node be-node--persona be-node--sm">L</span><div><b>Lucas</b><small>desde Troas<br>nota Hch 16:10</small></div></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [20.6, 34.9, 37.0, 42.9], fit: 'contain' });
+
+  map.label('Macedonia', 22.6, 41.25, { kind: 'region' });
+  map.label('Acaya', 21.9, 38.2, { kind: 'region' });
+  map.label('Asia', 28.4, 38.75, { kind: 'region' });
+  map.label('Frigia', 30.9, 39.1, { kind: 'region' });
+  map.label('Galacia', 33.3, 39.75, { kind: 'region' });
+  map.label('Misia', 27.6, 39.95, { kind: 'region' });
+  map.label('Cilicia', 34.55, 37.3, { kind: 'region' });
+  map.label('Siria', 36.55, 35.3, { kind: 'region' });
+  map.label('Mar Egeo', 25.1, 38.6, { kind: 'sea', rotate: -62 });
+  map.label('Mar Mediterráneo', 30.4, 35.55, { kind: 'sea', size: 18 });
+
+  // Rastro tenue del primer viaje (c. 47-48)
+  map.route(['antioquia-de-siria', 'seleucia', 'salamina', 'pafos', 'perga', 'antioquia-de-pisidia', 'iconio', 'listra', 'derbe'], { kind: 'ghost', curve: [0.05, 0.08, 0.06, 0.1, 0.05, 0.05, 0, 0] });
+
+  // Recorrido hecho hasta esta fecha
+  map.route(['antioquia-de-siria', 'derbe', 'listra'], { kind: 'done', curve: [0.1, 0] });
+  map.route(['listra', 'troas'], { kind: 'approx', curve: 0.16 });
+  map.route(['troas', 'samotracia', 'neapolis'], { kind: 'sea', curve: [-0.12, -0.1] });
+  map.route(['neapolis', 'filipos'], { kind: 'done', arrows: false });
+
+  // Lo que falta del viaje
+  map.route(['filipos', 'anfipolis', 'apolonia', 'tesalonica', 'berea'], { kind: 'todo', curve: [0.05, 0, 0.05, 0.05], arrows: false });
+  map.route(['berea', [22.6, 40.33]], { kind: 'todo', arrows: false });
+  map.route([[22.6, 40.33], [23.25, 39.8], [24.1, 39.15], [24.6, 38.55], [24.35, 37.85], [24.05, 37.5], [23.62, 37.92]], { kind: 'sea-todo', smooth: true, arrows: false });
+  map.route([[23.62, 37.92], 'atenas'], { kind: 'todo', arrows: false, trim: 5 });
+  map.route(['atenas', 'corinto'], { kind: 'todo', curve: 0.12, arrows: false });
+  map.route(['cencreas', 'efeso', 'cesarea'], { kind: 'sea-todo', curve: [0.1, 0.1], arrows: false });
+  map.route(['cesarea', 'jerusalen'], { kind: 'todo', arrows: false });
+  map.route(['jerusalen', 'antioquia-de-siria'], { kind: 'todo', curve: 0.12, arrows: false });
+
+  // Ciudades
+  map.city('antioquia-de-siria', { variant: ['major', 'visited'], side: 'left', label: 'Antioquía de Siria' });
+  map.city('tarso', { variant: 'minor', side: 'top' });
+  map.city('derbe', { variant: 'visited', side: 'bottom' });
+  map.city('listra', { variant: 'visited', side: 'left' });
+  map.city('iconio', { variant: ['minor', 'past'] });
+  map.city('antioquia-de-pisidia', { variant: ['minor', 'past'], side: 'left' });
+  map.city('perga', { variant: ['minor', 'past'], side: 'bottom' });
+  map.city('salamina', { variant: ['minor', 'past'], side: 'right' });
+  map.city('pafos', { variant: ['minor', 'past'], side: 'left' });
+  map.city('troas', { variant: 'visited', side: 'left' });
+  map.city('samotracia', { variant: 'minor', side: 'top' });
+  map.city('neapolis', { variant: 'visited', side: 'right', labelDy: 12 });
+  map.city('filipos', { variant: 'current', side: 'top' });
+  map.city('anfipolis', { variant: 'future', label: '' });
+  map.city('apolonia', { variant: 'future', label: '' });
+  map.city('tesalonica', { variant: 'future', side: 'top' });
+  map.city('berea', { variant: 'future', side: 'left' });
+  map.city('atenas', { variant: 'future', side: 'right' });
+  map.city('corinto', { variant: 'future', side: 'left' });
+  map.city('efeso', { variant: 'future' });
+  map.city('cesarea', { variant: 'future', side: 'left' });
+  map.city('jerusalen', { variant: ['future'], side: 'right' });
+
+  // "Mientras tanto" en Roma (fuera del encuadre): tarjeta flotante con flecha
+  const mw = document.createElement('div');
+  mw.className = 'be-float meanwhile';
+  mw.innerHTML = `<div class="meanwhile__eyebrow"><i class="be-i be-i--sm" data-icon="clock"></i>Mientras tanto · Roma ←</div>
+    <div class="meanwhile__title">Claudio expulsa a los judíos de Roma</div>
+    <div class="meanwhile__body">En 49 o a principios de 50. Así llegan Áquila y Priscila a Corinto, donde Pablo los conocerá.</div>
+    <div style="display:flex;gap:6px;align-items:center;margin-top:8px"><a class="be-ref">Hch 18:2</a><span class="be-spacer"></span><a class="be-wol" style="font-size:var(--fs-xs)">Nota de estudio</a></div>`;
+  const [mx, my] = map.project(30.2, 42.75); mw.style.left = `${mx}px`; mw.style.top = `${Math.max(14, my)}px`;
+  mapEl.appendChild(mw);
+
+  // Etiqueta de la próxima parada junto a Anfípolis
+  const [ax, ay] = map.at('anfipolis');
+  const nx = document.createElement('div');
+  nx.className = 'be-float flag-next';
+  nx.innerHTML = `<i class="be-i be-i--sm" data-icon="step-forward" style="color:var(--accent)"></i>Próxima: <b>Anfípolis</b> · Hch 17:1`;
+  nx.style.left = `${ax - 95}px`; nx.style.top = `${ay + 30}px`;
+  mapEl.appendChild(nx);
+
+  document.getElementById('scale').appendChild(map.scaleBar(110));
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 46, to: 58, tick: 1, minor: 0.25, cursor: 50.42, cursorLabel: 'c. 50 e.c. · Filipos',
+    uncertain: [{ from: 50.3, to: 50.72 }],
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="rewind"></i></span><span class="be-play__btn"><i data-icon="step-back"></i></span>
+      <span class="be-play__main is-playing"><i data-icon="pause"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-speed">1 mes por segundo</span>
+      <span class="be-zoomscale"><span>Milenios</span><span>Siglos</span><span>Décadas</span><span class="on">Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="ctxline"><b>c. 50 e.c.</b><span class="dot"></span>Roma bajo Claudio<span class="dot"></span>Pablo, Silas, Timoteo y Lucas en Filipos</span>
+      <span class="be-spacer"></span>
+      <div class="be-minimap" style="max-width:200px"><div class="be-minimap__win" style="left:94.6%;width:2%"></div></div>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pablo', color: 'var(--node-persona)', icon: 'person', items: [
+        { from: 46.6, to: 49, label: '1.er viaje · c. 47-48', fuzzy: 'both', color: '#c98f7c' },
+        { at: 49.3, label: '', color: '#c98f7c' },
+        { from: 49.65, to: 52.55, label: '2.º viaje · c. 49-52', fuzzy: 'both', active: true },
+        { from: 52.55, to: 56.5, label: '3.er viaje · c. 52-56', fuzzy: 'both', color: '#c98f7c' },
+        { from: 56.5, to: 58, label: 'Custodia · Cesarea', fuzzy: 'start', color: '#b98a7c' } ] },
+      { label: 'Silas', color: '#b2604a', icon: 'person', items: [
+        { from: 49.65, to: 51.6, label: 'Con Pablo · Hch 15:40 → 18:5', fuzzy: 'end', color: '#b2604a' } ] },
+      { label: 'Timoteo', color: '#b2604a', icon: 'person', items: [
+        { from: 49.85, to: 52.3, label: 'Se une en Listra · Hch 16:1-3', fuzzy: 'both', color: '#b2604a' } ] },
+      { label: 'Lucas', color: '#b2604a', icon: 'person', items: [
+        { from: 50.25, to: 50.5, label: '', color: '#b2604a' },
+        { from: 50.5, to: 53.2, label: 'Se queda en Filipos · nota de Hch 16:10', soft: true, fuzzy: 'end', color: '#b2604a' } ] },
+      { label: 'Mientras tanto', color: 'var(--node-evento)', icon: 'clock', items: [
+        { from: 49, to: 50.2, label: 'Roma: expulsión', soft: true, color: 'var(--node-evento)' },
+        { at: 50.78, label: 'Pablo conoce a Áquila y Priscila en Corinto · Hch 18:2', color: 'var(--node-evento)' } ] },
+      { label: 'Emperador <span class="tier-mini">N2</span>', color: 'var(--emp-roma)', icon: 'crown', items: [
+        { from: 41, to: 54, label: 'Roma · Claudio · 41-54', color: 'var(--emp-roma)' },
+        { from: 54, to: 68, label: 'Nerón · 54-68', color: '#c0786d' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

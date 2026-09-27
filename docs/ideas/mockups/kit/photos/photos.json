@@ -1,0 +1,110 @@
+{
+ "efeso-teatro": {
+  "archivo": "efeso-teatro.jpg",
+  "descripcion": "Gran teatro de Éfeso (Selçuk, Turquía), estado actual.",
+  "autor": "Dennis G. Jarvis",
+  "licencia": "CC BY-SA 2.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:The_Great_Theatre_in_Ephesus,_Turkey.jpg",
+  "tamano": "900x675"
+ },
+ "corinto-bema": {
+  "archivo": "corinto-bema.jpg",
+  "descripcion": "Tribuna (bema) del foro romano de Corinto Antiguo (Grecia), estado actual.",
+  "autor": "George E. Koronaios",
+  "licencia": "CC0",
+  "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "origen": "https://commons.wikimedia.org/wiki/File:The_rostra_(Bema)_in_the_Roman_forum_of_the_Ancient_Corinth_on_6_April_2019.jpg",
+  "tamano": "900x600"
+ },
+ "filipos": {
+  "archivo": "filipos.jpg",
+  "descripcion": "Foro romano de Filipos y restos de la basílica B al fondo (Grecia), estado actual.",
+  "autor": "Carole Raddato",
+  "licencia": "CC BY-SA 2.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:The_Forum,_Philippi_(7272553128).jpg",
+  "tamano": "900x675"
+ },
+ "antioquia-pisidia": {
+  "archivo": "antioquia-pisidia.jpg",
+  "descripcion": "Decumano máximo de Antioquía de Pisidia (cerca de Yalvaç, Turquía), estado actual.",
+  "autor": "Dosseman",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:Antioch_in_Pisida_Decumanus_Maximus_047.jpg",
+  "tamano": "900x539"
+ },
+ "puerta-istar": {
+  "archivo": "puerta-istar.jpg",
+  "descripcion": "Puerta de Istar de Babilonia, reconstruida en el Museo de Pérgamo (Berlín).",
+  "autor": "Kurt Kaiser",
+  "licencia": "CC0",
+  "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "origen": "https://commons.wikimedia.org/wiki/File:Ishtar_Gate_in_the_Pergamon_Museum_-.jpg",
+  "tamano": "900x675"
+ },
+ "cilindro-ciro": {
+  "archivo": "cilindro-ciro.jpg",
+  "descripcion": "Cilindro de Ciro, arcilla con escritura cuneiforme (Museo Británico, Londres).",
+  "autor": "Daderot",
+  "licencia": "CC0",
+  "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "origen": "https://commons.wikimedia.org/wiki/File:Cyrus_Cylinder,_Babylon,_Iraq,_mid_500s_BC,_cuneiform_on_clay_-_British_Museum_-_DSC01316.jpg",
+  "tamano": "900x457"
+ },
+ "galion-delfos": {
+  "archivo": "galion-delfos.jpg",
+  "descripcion": "Fragmento de la inscripción de Galión hallada en Delfos (Grecia); el recuadro del autor marca el nombre.",
+  "autor": "Gérard",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:Delphes_Gallion.jpg",
+  "tamano": "852x900"
+ },
+ "via-egnatia-filipos": {
+  "archivo": "via-egnatia-filipos.jpg",
+  "descripcion": "Tramo de la Vía Egnatia a su paso por Filipos (Grecia), estado actual.",
+  "autor": "Carole Raddato",
+  "licencia": "CC BY-SA 2.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:The_Via_Egnatia,_Philippi_(7272908636).jpg",
+  "tamano": "900x675"
+ },
+ "via-apia": {
+  "archivo": "via-apia.jpg",
+  "descripcion": "Vía Apia Antigua, a las afueras de Roma (Italia), estado actual.",
+  "autor": "Livioandronico2013",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:Appian_Way.jpg",
+  "tamano": "900x599"
+ },
+ "jerusalen-murallas": {
+  "archivo": "jerusalen-murallas.jpg",
+  "descripcion": "Murallas de la Ciudad Vieja de Jerusalén y la ciudadela (Torre de David); las murallas visibles son de época otomana.",
+  "autor": "Pudelek",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:Old_City_Walls_and_Tower_of_David_in_Jerusalem_(2019)_01.jpg",
+  "tamano": "900x589"
+ },
+ "persepolis-puerta": {
+  "archivo": "persepolis-puerta.jpg",
+  "descripcion": "Puerta de Todas las Naciones en Persépolis (Irán), estado actual.",
+  "autor": "Skot",
+  "licencia": "CC BY-SA 4.0",
+  "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "origen": "https://commons.wikimedia.org/wiki/File:Persepolis_%E2%80%93_Gate_of_All_Nations_01.jpg",
+  "tamano": "900x600"
+ },
+ "susa-arqueros": {
+  "archivo": "susa-arqueros.jpg",
+  "descripcion": "Friso de los arqueros, ladrillo vidriado del palacio de Darío I en Susa (Museo del Louvre, París).",
+  "autor": "Jastrow (foto)",
+  "licencia": "Public domain",
+  "licencia_url": "",
+  "origen": "https://commons.wikimedia.org/wiki/File:Archers_frieze_Louvre_AOD488.jpg",
+  "tamano": "900x631"
+ }
+}

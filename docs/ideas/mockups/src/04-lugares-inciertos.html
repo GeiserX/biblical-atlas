@@ -1,0 +1,230 @@
+<!doctype html>
+<!--
+  04 · Lugares inciertos: Edén, montañas de Ararat, monte Sinaí y cruce del mar Rojo como zonas o abanicos de candidatos.
+  Fuentes (comprobadas en wol.jw.org; ver data/lugares-inciertos.json, revisado el 26-09-2026):
+  - Edén: ubicación conjetural; región montañosa al norte de Mesopotamia; tradición: unos 225 km al SO del monte Ararat, al sur del lago Van;
+    el Diluvio borró el jardín · Perspicacia, «Edén» · https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
+  - Montañas de Ararat: región (Urartu), el pico más alto de unos 5.165 m donde la tradición sitúa el arca · https://wol.jw.org/es/wol/d/r4/lp-s/1200000338
+  - Sinaí: Ras Safsafa (muchos eruditos, llanura de er-Raha) y Jebel Musa (tradición) · https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
+  - Cruce del mar Rojo: tentativo de Ras ʽAtaqah a ʽAyun Musa (casi 10 km); lagos Amargos descartados · https://wol.jw.org/es/wol/d/r4/lp-s/1200003484
+    Lago Serbonis descartado (Éx 13:17, 18) · https://wol.jw.org/es/wol/d/r4/lp-s/1200001458
+  - Fechas TNM: creación de Adán 4026 a.e.c., Diluvio 2370 a.e.c., éxodo 1513 a.e.c. · https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+  - Nivel 2 (sólo coordenadas de candidatos): OpenBible.info, CC BY 4.0. El centro de la zona del Edén (38.27 N, 42.46 E) y el punto medio del cruce
+    son cálculos nuestros. Comparación: biblical-timeline-map (punto 30.585, 47.816) y Theographic (sin coordenadas).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>04 · Lugares inciertos</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 128px; --panel-w: 430px; }
+  .inset { position: absolute; z-index: 3; left: 14px; top: 14px; width: 348px; height: 430px; border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-3); border: 3px solid var(--surface); }
+  .inset .be-map { position: absolute; left: 0; right: 0; bottom: 0; top: 36px; }
+  .inset .be-attrib { display: none; }
+  .inset__title { position: absolute; z-index: 4; left: 0; top: 0; right: 0; height: 36px; display: flex; align-items: center; gap: 6px; padding: 0 12px; font-size: var(--fs-xs); font-weight: 700; color: var(--ink); background: var(--surface); border-bottom: 1px solid var(--line); }
+  .cand { position: absolute; transform: translate(-50%, -50%); z-index: 3; }
+  .cand__dot { display: block; width: 12px; height: 12px; border-radius: 50%; border: 2.5px solid var(--zone); background: var(--surface); }
+  .cand--n1 .cand__dot { background: var(--zone); border-color: #fff; box-shadow: 0 0 0 1.5px var(--zone); }
+  .cand--n2 .cand__dot { border-color: #9a8fa6; border-style: dashed; }
+  .cand--no .cand__dot { border-color: #8a7f70; background: #efe8da; }
+  .cand__lbl { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); white-space: nowrap; font-size: 11px; font-weight: 700; color: #4d3f62; background: rgba(255,253,248,.93); padding: 2px 7px; border-radius: 999px; border: 1px solid #ddd1e7; line-height: 1.25; }
+  .cand__lbl small { display: block; font-weight: 600; font-size: 9.5px; color: var(--ink-3); }
+  .cand--left .cand__lbl { left: auto; right: 14px; }
+  .cand--no .cand__lbl { color: var(--ink-3); border-color: var(--line); text-decoration: none; }
+  .cand--no .cand__lbl b { text-decoration: line-through; text-decoration-color: rgba(155,61,90,.6); }
+  .wrong { position: absolute; transform: translate(-50%, -9px); flex-direction: column; gap: 4px; z-index: 3; display: flex; align-items: center; gap: 6px; }
+  .wrong__x { width: 18px; height: 18px; border-radius: 50%; background: var(--unverified); color: #fff; display: grid; place-items: center; font: 800 12px/1 var(--font-sans); box-shadow: 0 0 0 2px #fff; }
+  .wrong__lbl { text-align: center; font-size: 10.5px; font-weight: 700; color: var(--unverified); background: rgba(255,253,248,.94); border: 1px dashed #d9a3b5; border-radius: 8px; padding: 3px 7px; line-height: 1.3; white-space: nowrap; }
+  .peak { position: absolute; transform: translate(-50%, -80%); z-index: 3; display: flex; flex-direction: column; align-items: center; }
+  .peak__tri { width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 13px solid #6b5a45; filter: drop-shadow(0 0 1.5px #fff); }
+  .peak__lbl { margin-top: 2px; font-size: 11px; font-weight: 700; color: var(--ink-2); background: rgba(255,253,248,.93); border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
+  .sec-title { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; margin: 14px 0 6px; }
+  .candrow { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid var(--line); }
+  .candrow:first-of-type { border-top: 0; }
+  .candrow__t { font-weight: 600; font-size: var(--fs-md); line-height: 1.25; }
+  .candrow__m { font-size: var(--fs-xs); color: var(--ink-3); line-height: 1.35; margin-top: 2px; }
+  .state { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 999px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+  .state--fav { background: #efe9f4; color: #4d3f62; border: 1px solid #cdbddd; }
+  .state--no { background: var(--paper-2); color: var(--ink-3); border: 1px dashed var(--line-2); }
+  .swatch { width: 18px; height: 18px; flex: none; border-radius: 6px; margin-top: 2px; }
+  .others { font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.45; }
+  .others li { margin: 3px 0; }
+  .others { padding-left: 16px; margin: 0; }
+  .picker { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Edén</b> · lugar sin punto exacto</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value" style="font-size:20px">Todas las fechas</span><span class="be-date__hint">capa: lugares inciertos</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="inset" id="insetBox">
+      <div class="be-map" id="inset"></div>
+      <div class="inset__title"><i class="be-i be-i--sm" data-icon="target"></i>Ampliación · Sinaí y cruce del mar Rojo</div>
+    </div>
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="locate"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl" style="left:43%">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">Cómo dibujamos lo incierto</div>
+        <div class="be-legend__row"><span class="be-legend__zone"></span>Zona favorecida por el nivel 1</div>
+        <div class="be-legend__row"><span class="be-legend__zone" style="background:rgba(122,92,142,.10);border-style:dotted"></span>Otra propuesta o región amplia</div>
+        <div class="be-legend__row"><span class="cand cand--n1" style="position:relative;transform:none;width:22px;display:grid;place-items:center"><span class="cand__dot"></span></span>Candidato citado por el nivel 1</div>
+        <div class="be-legend__row"><span class="cand cand--n2" style="position:relative;transform:none;width:22px;display:grid;place-items:center"><span class="cand__dot"></span></span>Candidato sólo de nivel 2</div>
+        <div class="be-legend__row"><span class="cand cand--no" style="position:relative;transform:none;width:22px;display:grid;place-items:center"><span class="cand__dot"></span></span>Descartado por el nivel 1</div>
+        <div class="be-legend__row"><span class="wrong__x" style="width:16px;height:16px;font-size:10px">✕</span>Punto único de otro mapa: lo que evitamos</div>
+      </div>
+    </div>
+    <div class="be-mapctl be-mapctl--br" id="scale"></div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Lugares inciertos</span><span class="be-sep">›</span><span>Edén</span></div>
+      <div class="picker"><span class="be-chip be-chip--active">Edén</span><span class="be-chip">Montañas de Ararat</span><span class="be-chip">Monte Sinaí</span><span class="be-chip">Mar Rojo</span></div>
+    </div>
+    <div class="be-panel__body">
+      <article class="be-card">
+        <div class="be-card__pad">
+          <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="question"></i>Lugar · ubicación conjetural</div>
+          <h2 class="be-card__title">Edén, el jardín</h2>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px"><a class="be-ref">Gé 2:8-14</a><span class="be-chrono be-chrono--tnm">desde 4026 a.e.c. hasta el Diluvio</span></div>
+          <div class="sec-title" style="margin-top:12px"><span class="be-tier be-tier--1" data-n="1">Nivel 1</span>Qué dice Perspicacia</div>
+          <div class="be-card__body" style="font-size:var(--fs-md)">El texto favorece una región montañosa al norte de Mesopotamia, donde nacen el Tigris y el Éufrates. La tradición la sitúa a unos 225 km al suroeste del monte Ararat, al sur del lago Van. El Diluvio borró el jardín.</div>
+        </div>
+        <div class="be-card__foot"><span class="be-tier be-tier--1" data-n="1">Perspicacia · «Edén»</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/d/r4/lp-s/1200001256">Leer en wol.jw.org</a></div>
+      </article>
+
+      <div class="sec-title"><i class="be-i be-i--sm" data-icon="target"></i>Candidatos y su base</div>
+      <div class="candrow"><span class="swatch" style="background:repeating-linear-gradient(45deg, rgba(122,92,142,.45) 0 2px, rgba(122,92,142,.12) 2px 6px);border:1.5px dashed var(--zone)"></span><div style="flex:1"><div class="candrow__t">Tierras altas al sur del lago Van</div><div class="candrow__m">Radio de unos 150 km. El centro lo calculamos nosotros a partir del texto; no es un sitio.</div></div><span class="state state--fav">Favorecida · N1</span></div>
+      <div class="candrow"><span class="swatch" style="background:rgba(122,92,142,.12);border:1.5px dotted var(--zone)"></span><div style="flex:1"><div class="candrow__t">Baja Mesopotamia</div><div class="candrow__m">Perspicacia la menciona y explica por qué no encaja con los ríos del relato.</div></div><span class="state state--no">No favorecida</span></div>
+
+      <div class="be-note be-note--uncertain" style="margin-top:12px"><i class="be-i" data-icon="info"></i><div><b>¿Por qué no hay un punto?</b> Ninguna fuente de nivel 1 da un sitio. Un punto haría creer que se sabe.</div></div>
+
+      <div class="sec-title"><i class="be-i be-i--sm" data-icon="eye"></i>Cómo lo muestran otros</div>
+      <ul class="others">
+        <li><b>biblical-timeline-map</b>: un punto en el sur de Irak marcado «tradicional». Contradice la tradición que recoge Perspicacia.</li>
+        <li><b>Theographic</b>: «sin ubicar» y sin coordenadas; la interfaz no puede dibujar nada.</li>
+      </ul>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mundo', style: 'antiguo', bounds: [26.6, 27.3, 51.4, 41.4] });
+
+  // Rótulos de contexto
+  map.label('Mesopotamia', 44.6, 33.6, { kind: 'region' });
+  map.label('Lago Van', 42.9, 38.95, { kind: 'sea', size: 12 });
+  map.label('Éufrates', 41.3, 35.0, { kind: 'sea', size: 13, rotate: 35 });
+  map.label('Tigris', 43.9, 35.4, { kind: 'sea', size: 13, rotate: 62 });
+  map.label('Mar Mediterráneo', 31.2, 33.6, { kind: 'sea', size: 16 });
+  map.label('Golfo Pérsico', 50.0, 28.6, { kind: 'sea', size: 13, rotate: -35 });
+
+  // Edén: zona favorecida (radio 150 km) y otra propuesta (radio 200 km), sin puntos
+  map.zone([[42.46, 38.27]], { padKm: 150, candidates: false, label: 'Edén · zona tradicional según Perspicacia', labelAt: [42.5, 36.8] });
+  map.zone([[46.1, 30.96]], { padKm: 200, soft: true, candidates: false, label: 'Edén · Baja Mesopotamia<br>mencionada, no favorecida', labelAt: [46.2, 29.0] });
+
+  // Montañas de Ararat: región amplia + pico de la tradición
+  map.zone([[44.30, 39.70]], { padKm: 190, soft: true, candidates: false });
+  map.label('Montañas de Ararat<br><span style="font-size:11px;letter-spacing:.08em">región, no un pico</span>', 48.2, 39.2, { kind: 'province' });
+  const [px, py] = map.project(44.30, 39.70);
+  const pk = document.createElement('div'); pk.className = 'peak';
+  pk.innerHTML = '<span class="peak__tri"></span><span class="peak__lbl">Monte Ararat · tradición · 5.165 m</span>';
+  pk.style.left = `${px}px`; pk.style.top = `${py}px`; map.html.appendChild(pk);
+
+  // Lo que evitamos: punto único de otro mapa
+  const [wx, wy] = map.project(47.816, 30.585);
+  const w = document.createElement('div'); w.className = 'wrong';
+  w.innerHTML = '<span class="wrong__x">✕</span><span class="wrong__lbl">Otro mapa: «Edén» como punto<br>30,585 N · 47,816 E</span>';
+  w.style.left = `${wx}px`; w.style.top = `${wy}px`; map.html.appendChild(w);
+
+  // Sinaí y mar Rojo a escala pequeña + recuadro de la ampliación
+  map.zone([[33.967, 28.556], [33.973, 28.540]], { padKm: 30, candidates: false });
+  const [a0x, a0y] = map.project(31.9, 31.35), [a1x, a1y] = map.project(35.2, 28.1);
+  const box = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+  Object.entries({ x: a0x, y: a0y, width: a1x - a0x, height: a1y - a0y, rx: 4, fill: 'none', stroke: '#1f1a14', 'stroke-width': 1.6, 'stroke-dasharray': '4 3' }).forEach(([k, v]) => box.setAttribute(k, v));
+  map.svg.appendChild(box);
+  const lead = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  const ib = document.getElementById('insetBox').getBoundingClientRect(), mb = mapEl.getBoundingClientRect();
+  lead.setAttribute('d', `M${ib.right - mb.left},${ib.bottom - mb.top - 40} L${a0x},${a0y + 8}`);
+  Object.entries({ fill: 'none', stroke: '#1f1a14', 'stroke-width': 1.2, 'stroke-dasharray': '3 3', opacity: .6 }).forEach(([k, v]) => lead.setAttribute(k, v));
+  map.svg.appendChild(lead);
+
+  map.city('babilonia', { variant: 'minor', side: 'right' });
+  map.city('ur', { variant: 'minor', side: 'left' });
+  map.city('ninive', { variant: 'minor', side: 'right' });
+  map.city('haran', { variant: 'minor', side: 'bottom' });
+  document.getElementById('scale').appendChild(map.scaleBar(110));
+
+  // ---------- Ampliación: Sinaí y mar Rojo ----------
+  const ie = document.getElementById('inset');
+  const im = BE.createMap(ie, { base: 'mediterraneo', style: 'antiguo', bounds: [31.75, 28.15, 35.15, 31.35], attribution: false });
+  im.label('Golfo de Suez', 32.95, 29.0, { kind: 'sea', size: 12, rotate: -58 });
+  im.label('Península del Sinaí', 33.95, 29.75, { kind: 'region' }).style.fontSize = '11px';
+  // Cruce tentativo: franja de Ras ʽAtaqah a ʽAyun Musa
+  im.zone([[32.3075, 29.9961], [32.6583, 29.8769]], { padKm: 5, candidates: false });
+  const cand = (lon, lat, cls, html, left) => {
+    const [x, y] = im.project(lon, lat); const n = document.createElement('div');
+    n.className = `cand cand--${cls}${left ? ' cand--left' : ''}`; n.innerHTML = `<span class="cand__dot"></span><span class="cand__lbl">${html}</span>`;
+    n.style.left = `${x}px`; n.style.top = `${y}px`; im.html.appendChild(n);
+  };
+  cand(32.48, 29.94, 'n1', '<b>Cruce tentativo</b><small>Ras ʽAtaqah → ʽAyun Musa · N1</small>', false);
+  cand(32.378, 30.338, 'no', '<b>Lagos Amargos</b><small>descartado por N1</small>', false);
+  cand(32.289, 30.578, 'n2', 'Lago Timsah<small>sólo nivel 2</small>', false);
+  cand(33.162, 31.19, 'no', '<b>Lago Serbonis</b><small>descartado · Éx 13:17</small>', false);
+  // Abanico del Sinaí: líneas desde el rótulo a cada candidato, más gruesas las de nivel 1
+  const hub = im.project(34.35, 29.2);
+  const fan = [[33.967, 28.556, 3.2, 1], [33.973, 28.540, 3.2, 1], [34.75, 30.283, 1.4, .6], [32.961, 29.671, 1.4, .6]];
+  for (const [lon, lat, sw, op] of fan) {
+    const [x, y] = im.project(lon, lat); const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    Object.entries({ x1: hub[0], y1: hub[1], x2: x, y2: y, stroke: '#7a5c8e', 'stroke-width': sw, 'stroke-dasharray': sw > 2 ? '0' : '4 4', opacity: op, 'stroke-linecap': 'round' }).forEach(([k, v]) => l.setAttribute(k, v));
+    im.svg.appendChild(l);
+  }
+  const hubEl = document.createElement('div'); hubEl.className = 'be-zone-label'; hubEl.innerHTML = 'Monte Sinaí · 4 candidatos';
+  hubEl.style.left = `${hub[0]}px`; hubEl.style.top = `${hub[1] - 12}px`; im.html.appendChild(hubEl);
+  cand(33.967, 28.556, 'n1', '<b>Ras Safsafa</b><small>muchos eruditos · N1</small>', true);
+  cand(33.973, 28.540, 'n1', '<b>Jebel Musa</b><small>tradición · N1</small>', false);
+  cand(34.75, 30.283, 'n2', 'Har Karkom<small>sólo nivel 2</small>', true);
+  cand(32.961, 29.671, 'n2', 'Jebel Sin Bishar<small>sólo nivel 2</small>', false);
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: -4200, to: 100, tick: 500, minor: 100,
+    bar: `<span class="be-zoomscale"><span class="on">Milenios</span><span>Siglos</span><span>Décadas</span><span>Años</span><span>Meses</span><span>Semanas</span></span>
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:600">Capa sin filtro de fecha: cada lugar se ilumina en su momento del relato</span>
+      <span class="be-spacer"></span><span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Lugares inciertos', color: 'var(--zone)', icon: 'question', items: [
+        { from: -4025, to: -2369, label: 'Edén · de la creación de Adán (4026 a.e.c.) al Diluvio', soft: true, fuzzy: 'end', color: 'var(--zone)', active: true },
+        { at: -2369, label: 'Ararat · Diluvio, 2370 a.e.c.', color: 'var(--zone)' },
+        { at: -1512, label: 'Mar Rojo y Sinaí · éxodo, 1513 a.e.c.', color: 'var(--zone)' } ] },
+    ],
+  });
+  // Marcas del eje en años redondos a.e.c.: «4000 a.e.c.» es el año astronómico −3999 (C-12: el año cero no existe para el lector)
+  const tl = document.getElementById('timeline'), span = 100 + 4200;
+  tl.querySelectorAll('.be-tick:not(.be-tick--minor), .be-gridline').forEach((t) => {
+    const y = -4200 + parseFloat(t.style.left) / 100 * span; const yy = Math.round(y);
+    t.style.left = `${((yy + 1 + 4200) / span * 100).toFixed(3)}%`;
+    const lab = t.querySelector('span'); if (lab) lab.textContent = yy === 0 ? '1 e.c.' : `${-yy} a.e.c.`;
+  });
+});
+</script>
+</body>
+</html>

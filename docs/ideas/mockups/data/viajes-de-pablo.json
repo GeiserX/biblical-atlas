@@ -1,0 +1,2226 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Viajes de Pablo: paradas en orden, referencias y fechas TNM",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-pablo": {
+      "titulo": "Pablo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003406",
+      "nivel": 1
+    },
+    "it-romanos": {
+      "titulo": "Romanos, Carta a los",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003762",
+      "nivel": 1
+    },
+    "hch-13": {
+      "titulo": "Hechos 13",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13",
+      "nivel": 1
+    },
+    "hch-14": {
+      "titulo": "Hechos 14",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14",
+      "nivel": 1
+    },
+    "hch-15": {
+      "titulo": "Hechos 15",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15",
+      "nivel": 1
+    },
+    "hch-16": {
+      "titulo": "Hechos 16",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16",
+      "nivel": 1
+    },
+    "hch-17": {
+      "titulo": "Hechos 17",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17",
+      "nivel": 1
+    },
+    "hch-18": {
+      "titulo": "Hechos 18",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18",
+      "nivel": 1
+    },
+    "hch-19": {
+      "titulo": "Hechos 19",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19",
+      "nivel": 1
+    },
+    "hch-20": {
+      "titulo": "Hechos 20",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20",
+      "nivel": 1
+    },
+    "hch-21": {
+      "titulo": "Hechos 21",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21",
+      "nivel": 1
+    },
+    "hch-22": {
+      "titulo": "Hechos 22",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/22",
+      "nivel": 1
+    },
+    "hch-23": {
+      "titulo": "Hechos 23",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23",
+      "nivel": 1
+    },
+    "hch-24": {
+      "titulo": "Hechos 24",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/24",
+      "nivel": 1
+    },
+    "hch-25": {
+      "titulo": "Hechos 25",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25",
+      "nivel": 1
+    },
+    "hch-26": {
+      "titulo": "Hechos 26",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/26",
+      "nivel": 1
+    },
+    "hch-27": {
+      "titulo": "Hechos 27",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27",
+      "nivel": 1
+    },
+    "hch-28": {
+      "titulo": "Hechos 28",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28",
+      "nivel": 1
+    }
+  },
+  "items": [
+    {
+      "id": "primer-viaje",
+      "nombre": "Primer viaje misional",
+      "referencia": "Hch 13:1–14:28",
+      "fecha": {
+        "desde": 47,
+        "hasta": 48,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 47-48 e.c. (primavera de 47 a otoño de 48; invierno siguiente en Antioquía)"
+      },
+      "compañeros": [
+        "Bernabé",
+        "Juan Marcos (hasta Perga)"
+      ],
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 13:1-3",
+          "fuentes": [
+            "hch-13",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 47,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "primavera de 47"
+          },
+          "nota": "Salida."
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Seleucia",
+            "tipo": "ciudad",
+            "lat": 36.124,
+            "lon": 35.922,
+            "coord_fuente": "openbible:a6d306d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6d306d/seleucia"
+          },
+          "referencia": "Hch 13:4",
+          "fuentes": [
+            "hch-13"
+          ],
+          "verificado": true,
+          "nota": "Puerto de Antioquía.",
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Salamina",
+            "tipo": "ciudad",
+            "lat": 35.18494,
+            "lon": 33.90194,
+            "coord_fuente": "openbible:afa863b",
+            "coord_url": "https://www.openbible.info/geo/ancient/afa863b/salamis"
+          },
+          "referencia": "Hch 13:5",
+          "fuentes": [
+            "hch-13"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 4,
+          "lugar": {
+            "nombre": "Pafos",
+            "tipo": "ciudad",
+            "lat": 34.75567,
+            "lon": 32.40417,
+            "coord_fuente": "openbible:a314765",
+            "coord_url": "https://www.openbible.info/geo/ancient/a314765/paphos"
+          },
+          "referencia": "Hch 13:6-12",
+          "fuentes": [
+            "hch-13"
+          ],
+          "verificado": true,
+          "nota": "Elimas y el procónsul Sergio Paulo.",
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 5,
+          "lugar": {
+            "nombre": "Perga",
+            "tipo": "ciudad",
+            "lat": 36.96035,
+            "lon": 30.85369,
+            "coord_fuente": "openbible:aff04b8",
+            "coord_url": "https://www.openbible.info/geo/ancient/aff04b8/perga"
+          },
+          "referencia": "Hch 13:13",
+          "fuentes": [
+            "hch-13"
+          ],
+          "verificado": true,
+          "nota": "Juan Marcos vuelve a Jerusalén.",
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 6,
+          "lugar": {
+            "nombre": "Antioquía de Pisidia",
+            "tipo": "ciudad",
+            "lat": 38.30611,
+            "lon": 31.18917,
+            "coord_fuente": "openbible:a6c704a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6c704a/antioch-2"
+          },
+          "referencia": "Hch 13:14-50",
+          "fuentes": [
+            "hch-13"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 7,
+          "lugar": {
+            "nombre": "Iconio",
+            "tipo": "ciudad",
+            "lat": 37.8722,
+            "lon": 32.49233,
+            "coord_fuente": "openbible:ae425aa",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae425aa/iconium"
+          },
+          "referencia": "Hch 13:51–14:5",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 8,
+          "lugar": {
+            "nombre": "Listra",
+            "tipo": "ciudad",
+            "lat": 37.6017,
+            "lon": 32.3384,
+            "coord_fuente": "openbible:af0719d",
+            "coord_url": "https://www.openbible.info/geo/ancient/af0719d/lystra"
+          },
+          "referencia": "Hch 14:6-20",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "nota": "Apedrean a Pablo.",
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 9,
+          "lugar": {
+            "nombre": "Derbe",
+            "tipo": "ciudad",
+            "lat": 37.34857,
+            "lon": 33.36145,
+            "coord_fuente": "openbible:aa401a9",
+            "coord_url": "https://www.openbible.info/geo/ancient/aa401a9/derbe",
+            "coord_nota": "OpenBible registra 3 identificaciones; se usa la de mayor puntuación (860/1000)."
+          },
+          "referencia": "Hch 14:20, 21",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 10,
+          "lugar": {
+            "nombre": "Listra",
+            "tipo": "ciudad",
+            "lat": 37.6017,
+            "lon": 32.3384,
+            "coord_fuente": "openbible:af0719d",
+            "coord_url": "https://www.openbible.info/geo/ancient/af0719d/lystra"
+          },
+          "referencia": "Hch 14:21-23",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "nota": "Vuelta; nombran ancianos.",
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 11,
+          "lugar": {
+            "nombre": "Iconio",
+            "tipo": "ciudad",
+            "lat": 37.8722,
+            "lon": 32.49233,
+            "coord_fuente": "openbible:ae425aa",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae425aa/iconium"
+          },
+          "referencia": "Hch 14:21-23",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 12,
+          "lugar": {
+            "nombre": "Antioquía de Pisidia",
+            "tipo": "ciudad",
+            "lat": 38.30611,
+            "lon": 31.18917,
+            "coord_fuente": "openbible:a6c704a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6c704a/antioch-2"
+          },
+          "referencia": "Hch 14:21-23",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 13,
+          "lugar": {
+            "nombre": "Perga",
+            "tipo": "ciudad",
+            "lat": 36.96035,
+            "lon": 30.85369,
+            "coord_fuente": "openbible:aff04b8",
+            "coord_url": "https://www.openbible.info/geo/ancient/aff04b8/perga"
+          },
+          "referencia": "Hch 14:24, 25",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 14,
+          "lugar": {
+            "nombre": "Atalia",
+            "tipo": "ciudad",
+            "lat": 36.88127,
+            "lon": 30.70361,
+            "coord_fuente": "openbible:ac744c1",
+            "coord_url": "https://www.openbible.info/geo/ancient/ac744c1/attalia"
+          },
+          "referencia": "Hch 14:25",
+          "fuentes": [
+            "hch-14"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 47,
+            "hasta": 48,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 15,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 14:26-28",
+          "fuentes": [
+            "hch-14",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 48,
+            "hasta": 49,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "otoño de 48 a primavera de 49"
+          }
+        }
+      ]
+    },
+    {
+      "id": "visita-a-jerusalen-49",
+      "nombre": "Visita a Jerusalén por la cuestión de la circuncisión",
+      "referencia": "Hch 15:1-35; Gál 2:1-10",
+      "fecha": {
+        "desde": 49,
+        "hasta": 49,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 49 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "nota": "No es uno de los tres viajes misionales; se incluye porque une el primero y el segundo.",
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 15:1-3",
+          "fuentes": [
+            "hch-15"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 49,
+            "precision": "año",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Jerusalén",
+            "tipo": "ciudad",
+            "lat": 31.77667,
+            "lon": 35.23417,
+            "coord_fuente": "openbible:a15257a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+          },
+          "referencia": "Hch 15:4-29",
+          "fuentes": [
+            "hch-15",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 49,
+            "precision": "año",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "c. 49 e.c."
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 15:30-35",
+          "fuentes": [
+            "hch-15"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 49,
+            "precision": "año",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "segundo-viaje",
+      "nombre": "Segundo viaje misional",
+      "referencia": "Hch 15:36–18:22",
+      "fecha": {
+        "desde": 49,
+        "hasta": 52,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 49-52 e.c. (sale a finales del verano de 49; vuelve en el verano de 52)"
+      },
+      "compañeros": [
+        "Silas",
+        "Timoteo (desde Listra)",
+        "Lucas (desde Troas; el relato pasa a “nosotros”)"
+      ],
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 15:35-40",
+          "fuentes": [
+            "hch-15",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 49,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "finales del verano de 49"
+          }
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Cilicia",
+            "tipo": "región",
+            "lat": 36.91303,
+            "lon": 34.89206,
+            "coord_fuente": "openbible:ad63819",
+            "coord_url": "https://www.openbible.info/geo/ancient/ad63819/cilicia"
+          },
+          "referencia": "Hch 15:41",
+          "fuentes": [
+            "hch-15"
+          ],
+          "verificado": true,
+          "nota": "“Siria y Cilicia”: región, no ciudad.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Derbe",
+            "tipo": "ciudad",
+            "lat": 37.34857,
+            "lon": 33.36145,
+            "coord_fuente": "openbible:aa401a9",
+            "coord_url": "https://www.openbible.info/geo/ancient/aa401a9/derbe",
+            "coord_nota": "OpenBible registra 3 identificaciones; se usa la de mayor puntuación (860/1000)."
+          },
+          "referencia": "Hch 16:1",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 4,
+          "lugar": {
+            "nombre": "Listra",
+            "tipo": "ciudad",
+            "lat": 37.6017,
+            "lon": 32.3384,
+            "coord_fuente": "openbible:af0719d",
+            "coord_url": "https://www.openbible.info/geo/ancient/af0719d/lystra"
+          },
+          "referencia": "Hch 16:1-3",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "nota": "Timoteo se une.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 5,
+          "lugar": {
+            "nombre": "Frigia",
+            "tipo": "región",
+            "lat": 39.0,
+            "lon": 31.0,
+            "coord_fuente": "openbible:ab8ae56",
+            "coord_url": "https://www.openbible.info/geo/ancient/ab8ae56/phrygia"
+          },
+          "referencia": "Hch 16:6",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "nota": "El texto nombra Frigia y Galacia como regiones.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 6,
+          "lugar": {
+            "nombre": "Misia",
+            "tipo": "región",
+            "lat": 40.0,
+            "lon": 28.5,
+            "coord_fuente": "openbible:a2d9bc8",
+            "coord_url": "https://www.openbible.info/geo/ancient/a2d9bc8/mysia"
+          },
+          "referencia": "Hch 16:7, 8",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 7,
+          "lugar": {
+            "nombre": "Troas",
+            "tipo": "ciudad",
+            "lat": 39.75194,
+            "lon": 26.15861,
+            "coord_fuente": "openbible:a91c509",
+            "coord_url": "https://www.openbible.info/geo/ancient/a91c509/troas"
+          },
+          "referencia": "Hch 16:8-10",
+          "fuentes": [
+            "hch-16",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 50,
+            "hasta": 50,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "primavera de 50"
+          },
+          "nota": "Visión del hombre macedonio."
+        },
+        {
+          "orden": 8,
+          "lugar": {
+            "nombre": "Samotracia",
+            "tipo": "isla",
+            "lat": 40.45,
+            "lon": 25.58333,
+            "coord_fuente": "openbible:a68750d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a68750d/samothrace"
+          },
+          "referencia": "Hch 16:11",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 9,
+          "lugar": {
+            "nombre": "Neápolis",
+            "tipo": "ciudad",
+            "lat": 40.935,
+            "lon": 24.415,
+            "coord_fuente": "openbible:a6a7150",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6a7150/neapolis"
+          },
+          "referencia": "Hch 16:11",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 10,
+          "lugar": {
+            "nombre": "Filipos",
+            "tipo": "ciudad",
+            "lat": 41.01207,
+            "lon": 24.28458,
+            "coord_fuente": "openbible:a49e1d0",
+            "coord_url": "https://www.openbible.info/geo/ancient/a49e1d0/philippi"
+          },
+          "referencia": "Hch 16:12-40",
+          "fuentes": [
+            "hch-16"
+          ],
+          "verificado": true,
+          "nota": "Lidia; cárcel y terremoto.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 11,
+          "lugar": {
+            "nombre": "Anfípolis",
+            "tipo": "ciudad",
+            "lat": 40.82016,
+            "lon": 23.84721,
+            "coord_fuente": "openbible:a4bdea7",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4bdea7/amphipolis"
+          },
+          "referencia": "Hch 17:1",
+          "fuentes": [
+            "hch-17"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 12,
+          "lugar": {
+            "nombre": "Apolonia",
+            "tipo": "ciudad",
+            "lat": 40.6237,
+            "lon": 23.46968,
+            "coord_fuente": "openbible:ab20df9",
+            "coord_url": "https://www.openbible.info/geo/ancient/ab20df9/apollonia"
+          },
+          "referencia": "Hch 17:1",
+          "fuentes": [
+            "hch-17"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 13,
+          "lugar": {
+            "nombre": "Tesalónica",
+            "tipo": "ciudad",
+            "lat": 40.63777,
+            "lon": 22.94577,
+            "coord_fuente": "openbible:afa9d8e",
+            "coord_url": "https://www.openbible.info/geo/ancient/afa9d8e/thessalonica"
+          },
+          "referencia": "Hch 17:1-9",
+          "fuentes": [
+            "hch-17"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 14,
+          "lugar": {
+            "nombre": "Berea",
+            "tipo": "ciudad",
+            "lat": 40.51833,
+            "lon": 22.2,
+            "coord_fuente": "openbible:a62fe31",
+            "coord_url": "https://www.openbible.info/geo/ancient/a62fe31/berea"
+          },
+          "referencia": "Hch 17:10-14",
+          "fuentes": [
+            "hch-17"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 15,
+          "lugar": {
+            "nombre": "Atenas",
+            "tipo": "ciudad",
+            "lat": 37.97185,
+            "lon": 23.72674,
+            "coord_fuente": "openbible:a1fe6e7",
+            "coord_url": "https://www.openbible.info/geo/ancient/a1fe6e7/athens"
+          },
+          "referencia": "Hch 17:15-34",
+          "fuentes": [
+            "hch-17"
+          ],
+          "verificado": true,
+          "nota": "Areópago.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 16,
+          "lugar": {
+            "nombre": "Corinto",
+            "tipo": "ciudad",
+            "lat": 37.90579,
+            "lon": 22.87874,
+            "coord_fuente": "openbible:a6f437a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth"
+          },
+          "referencia": "Hch 18:1-17",
+          "fuentes": [
+            "hch-18",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 50,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "otoño de 50 a primavera de 52 (18 meses)"
+          },
+          "nota": "Áquila y Priscila; Galión."
+        },
+        {
+          "orden": 17,
+          "lugar": {
+            "nombre": "Cencreas",
+            "tipo": "ciudad",
+            "lat": 37.88434,
+            "lon": 22.99682,
+            "coord_fuente": "openbible:aa31dd3",
+            "coord_url": "https://www.openbible.info/geo/ancient/aa31dd3/cenchreae"
+          },
+          "referencia": "Hch 18:18",
+          "fuentes": [
+            "hch-18"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 18,
+          "lugar": {
+            "nombre": "Éfeso",
+            "tipo": "ciudad",
+            "lat": 37.93912,
+            "lon": 27.3407,
+            "coord_fuente": "openbible:a5feb15",
+            "coord_url": "https://www.openbible.info/geo/ancient/a5feb15/ephesus"
+          },
+          "referencia": "Hch 18:19-21",
+          "fuentes": [
+            "hch-18"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 19,
+          "lugar": {
+            "nombre": "Cesarea",
+            "tipo": "ciudad",
+            "lat": 32.5,
+            "lon": 34.89167,
+            "coord_fuente": "openbible:a58735e",
+            "coord_url": "https://www.openbible.info/geo/ancient/a58735e/caesarea"
+          },
+          "referencia": "Hch 18:22",
+          "fuentes": [
+            "hch-18"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 20,
+          "lugar": {
+            "nombre": "Jerusalén",
+            "tipo": "ciudad",
+            "lat": 31.77667,
+            "lon": 35.23417,
+            "coord_fuente": "openbible:a15257a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+          },
+          "referencia": "Hch 18:22",
+          "fuentes": [
+            "hch-18",
+            "it-pablo"
+          ],
+          "verificado": true,
+          "nota": "El texto no nombra la ciudad donde saluda a la congregación; Perspicacia lo entiende como Jerusalén.",
+          "fecha": {
+            "desde": 49,
+            "hasta": 52,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 21,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 18:22",
+          "fuentes": [
+            "hch-18",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 52,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "probablemente verano de 52"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tercer-viaje",
+      "nombre": "Tercer viaje misional",
+      "referencia": "Hch 18:23–21:17",
+      "fecha": {
+        "desde": 52,
+        "hasta": 56,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 52-56 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Antioquía de Siria",
+            "tipo": "ciudad",
+            "lat": 36.22669,
+            "lon": 36.17174,
+            "coord_fuente": "openbible:ae41ab4",
+            "coord_url": "https://www.openbible.info/geo/ancient/ae41ab4/antioch-1"
+          },
+          "referencia": "Hch 18:23",
+          "fuentes": [
+            "hch-18"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Galacia",
+            "tipo": "región",
+            "lat": 39.26667,
+            "lon": 32.98333,
+            "coord_fuente": "openbible:a0f440a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a0f440a/galatia"
+          },
+          "referencia": "Hch 18:23",
+          "fuentes": [
+            "hch-18"
+          ],
+          "verificado": true,
+          "nota": "El texto nombra Galacia y Frigia como regiones.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Éfeso",
+            "tipo": "ciudad",
+            "lat": 37.93912,
+            "lon": 27.3407,
+            "coord_fuente": "openbible:a5feb15",
+            "coord_url": "https://www.openbible.info/geo/ancient/a5feb15/ephesus"
+          },
+          "referencia": "Hch 19:1–20:1",
+          "fuentes": [
+            "hch-19",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 55,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "invierno de 52-53 a 55 (unos tres años)"
+          },
+          "nota": "Escribe 1 Corintios; alboroto de Demetrio."
+        },
+        {
+          "orden": 4,
+          "lugar": {
+            "nombre": "Macedonia",
+            "tipo": "región",
+            "lat": 41.6,
+            "lon": 22.54,
+            "coord_fuente": "openbible:a69e1b8",
+            "coord_url": "https://www.openbible.info/geo/ancient/a69e1b8/macedonia"
+          },
+          "referencia": "Hch 20:1, 2",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "nota": "Escribe 2 Corintios.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 5,
+          "lugar": {
+            "nombre": "Corinto",
+            "tipo": "ciudad",
+            "lat": 37.90579,
+            "lon": 22.87874,
+            "coord_fuente": "openbible:a6f437a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a6f437a/corinth"
+          },
+          "referencia": "Hch 20:2, 3",
+          "fuentes": [
+            "hch-20",
+            "si-3",
+            "it-romanos"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 55,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "tres meses de invierno"
+          },
+          "nota": "El texto dice “Grecia”; el estudio 3 precisa Corinto. Allí escribe Romanos (Perspicacia, “Romanos”)."
+        },
+        {
+          "orden": 6,
+          "lugar": {
+            "nombre": "Filipos",
+            "tipo": "ciudad",
+            "lat": 41.01207,
+            "lon": 24.28458,
+            "coord_fuente": "openbible:a49e1d0",
+            "coord_url": "https://www.openbible.info/geo/ancient/a49e1d0/philippi"
+          },
+          "referencia": "Hch 20:3-6",
+          "fuentes": [
+            "hch-20",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 56,
+            "hasta": 56,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "Pascua de 56"
+          }
+        },
+        {
+          "orden": 7,
+          "lugar": {
+            "nombre": "Troas",
+            "tipo": "ciudad",
+            "lat": 39.75194,
+            "lon": 26.15861,
+            "coord_fuente": "openbible:a91c509",
+            "coord_url": "https://www.openbible.info/geo/ancient/a91c509/troas"
+          },
+          "referencia": "Hch 20:6-12",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "nota": "Eutico.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 8,
+          "lugar": {
+            "nombre": "Asón",
+            "tipo": "ciudad",
+            "lat": 39.49056,
+            "lon": 26.33667,
+            "coord_fuente": "openbible:a0a2ca7",
+            "coord_url": "https://www.openbible.info/geo/ancient/a0a2ca7/assos"
+          },
+          "referencia": "Hch 20:13, 14",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "nota": "Pablo va a pie; los demás en barco.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 9,
+          "lugar": {
+            "nombre": "Mitilene",
+            "tipo": "ciudad",
+            "lat": 39.11048,
+            "lon": 26.54705,
+            "coord_fuente": "openbible:a33910d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a33910d/mitylene"
+          },
+          "referencia": "Hch 20:14",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 10,
+          "lugar": {
+            "nombre": "Quíos",
+            "tipo": "isla",
+            "lat": 38.3725,
+            "lon": 26.1375,
+            "coord_fuente": "openbible:a4c2c75",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4c2c75/chios"
+          },
+          "referencia": "Hch 20:15",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "nota": "Pasan frente a la isla.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 11,
+          "lugar": {
+            "nombre": "Samos",
+            "tipo": "isla",
+            "lat": 37.75,
+            "lon": 26.8333,
+            "coord_fuente": "openbible:acf6ec0",
+            "coord_url": "https://www.openbible.info/geo/ancient/acf6ec0/samos"
+          },
+          "referencia": "Hch 20:15",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 12,
+          "lugar": {
+            "nombre": "Mileto",
+            "tipo": "ciudad",
+            "lat": 37.53111,
+            "lon": 27.27556,
+            "coord_fuente": "openbible:a55027d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a55027d/miletus"
+          },
+          "referencia": "Hch 20:15-38",
+          "fuentes": [
+            "hch-20"
+          ],
+          "verificado": true,
+          "nota": "Discurso a los ancianos de Éfeso.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 13,
+          "lugar": {
+            "nombre": "Cos",
+            "tipo": "isla",
+            "lat": 36.81528,
+            "lon": 27.11028,
+            "coord_fuente": "openbible:a398e5d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a398e5d/cos"
+          },
+          "referencia": "Hch 21:1",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 14,
+          "lugar": {
+            "nombre": "Rodas",
+            "tipo": "isla",
+            "lat": 36.4402,
+            "lon": 28.2109,
+            "coord_fuente": "openbible:a4218ee",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4218ee/rhodes-1",
+            "coord_nota": "OpenBible registra 2 identificaciones; se usa la de mayor puntuación (471/1000)."
+          },
+          "referencia": "Hch 21:1",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 15,
+          "lugar": {
+            "nombre": "Pátara",
+            "tipo": "ciudad",
+            "lat": 36.26028,
+            "lon": 29.31417,
+            "coord_fuente": "openbible:ade301b",
+            "coord_url": "https://www.openbible.info/geo/ancient/ade301b/patara"
+          },
+          "referencia": "Hch 21:1, 2",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 16,
+          "lugar": {
+            "nombre": "Tiro",
+            "tipo": "ciudad",
+            "lat": 33.27083,
+            "lon": 35.19611,
+            "coord_fuente": "openbible:a160272",
+            "coord_url": "https://www.openbible.info/geo/ancient/a160272/tyre"
+          },
+          "referencia": "Hch 21:3-6",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 17,
+          "lugar": {
+            "nombre": "Tolemaida",
+            "tipo": "ciudad",
+            "lat": 32.9214,
+            "lon": 35.0692,
+            "coord_fuente": "openbible:abc2af0",
+            "coord_url": "https://www.openbible.info/geo/ancient/abc2af0/ptolemais"
+          },
+          "referencia": "Hch 21:7",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 18,
+          "lugar": {
+            "nombre": "Cesarea",
+            "tipo": "ciudad",
+            "lat": 32.5,
+            "lon": 34.89167,
+            "coord_fuente": "openbible:a58735e",
+            "coord_url": "https://www.openbible.info/geo/ancient/a58735e/caesarea"
+          },
+          "referencia": "Hch 21:8-14",
+          "fuentes": [
+            "hch-21"
+          ],
+          "verificado": true,
+          "nota": "Casa de Felipe el evangelizador; Ágabo.",
+          "fecha": {
+            "desde": 52,
+            "hasta": 56,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 19,
+          "lugar": {
+            "nombre": "Jerusalén",
+            "tipo": "ciudad",
+            "lat": 31.77667,
+            "lon": 35.23417,
+            "coord_fuente": "openbible:a15257a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+          },
+          "referencia": "Hch 21:15-17",
+          "fuentes": [
+            "hch-21",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 56,
+            "hasta": 56,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "Pentecostés de 56"
+          },
+          "nota": "Poco después lo arrestan en el templo."
+        }
+      ]
+    },
+    {
+      "id": "custodia-en-cesarea",
+      "nombre": "Arresto y custodia",
+      "referencia": "Hch 21:27–26:32",
+      "fecha": {
+        "desde": 56,
+        "hasta": 58,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 56-58 e.c."
+      },
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Jerusalén",
+            "tipo": "ciudad",
+            "lat": 31.77667,
+            "lon": 35.23417,
+            "coord_fuente": "openbible:a15257a",
+            "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+          },
+          "referencia": "Hch 21:27–23:30",
+          "fuentes": [
+            "hch-21",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 56,
+            "hasta": 56,
+            "precision": "año",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "56 e.c."
+          }
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Antípatris",
+            "tipo": "ciudad",
+            "lat": 32.105,
+            "lon": 34.93042,
+            "coord_fuente": "openbible:a7b2e63",
+            "coord_url": "https://www.openbible.info/geo/ancient/a7b2e63/aphek-2"
+          },
+          "referencia": "Hch 23:31",
+          "fuentes": [
+            "hch-23"
+          ],
+          "verificado": true,
+          "nota": "OpenBible une Antípatris con Afec 2 (Tell Ras el Ain): un mismo sitio con nombres de épocas distintas.",
+          "fecha": {
+            "desde": 56,
+            "hasta": 58,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 56-58 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Cesarea",
+            "tipo": "ciudad",
+            "lat": 32.5,
+            "lon": 34.89167,
+            "coord_fuente": "openbible:a58735e",
+            "coord_url": "https://www.openbible.info/geo/ancient/a58735e/caesarea"
+          },
+          "referencia": "Hch 23:33–26:32",
+          "fuentes": [
+            "hch-23",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 56,
+            "hasta": 58,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "dos años bajo Félix; luego Festo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "viaje-a-roma",
+      "nombre": "Viaje a Roma",
+      "referencia": "Hch 27:1–28:16",
+      "fecha": {
+        "desde": 58,
+        "hasta": 59,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 58-59 e.c. (sale c. 58; invierno en Malta; llega c. 59)"
+      },
+      "fuentes": [
+        "si-3",
+        "it-pablo"
+      ],
+      "paradas": [
+        {
+          "orden": 1,
+          "lugar": {
+            "nombre": "Cesarea",
+            "tipo": "ciudad",
+            "lat": 32.5,
+            "lon": 34.89167,
+            "coord_fuente": "openbible:a58735e",
+            "coord_url": "https://www.openbible.info/geo/ancient/a58735e/caesarea"
+          },
+          "referencia": "Hch 27:1, 2",
+          "fuentes": [
+            "hch-27",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 58,
+            "precision": "año",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "c. 58"
+          },
+          "nota": "Embarcan en un barco de Adramitio."
+        },
+        {
+          "orden": 2,
+          "lugar": {
+            "nombre": "Sidón",
+            "tipo": "ciudad",
+            "lat": 33.56099,
+            "lon": 35.37194,
+            "coord_fuente": "openbible:a98e4d7",
+            "coord_url": "https://www.openbible.info/geo/ancient/a98e4d7/sidon"
+          },
+          "referencia": "Hch 27:3",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 3,
+          "lugar": {
+            "nombre": "Mira",
+            "tipo": "ciudad",
+            "lat": 36.25917,
+            "lon": 29.98528,
+            "coord_fuente": "openbible:aa4b3e2",
+            "coord_url": "https://www.openbible.info/geo/ancient/aa4b3e2/myra"
+          },
+          "referencia": "Hch 27:5, 6",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "nota": "Mira de Licia; cambian a un barco de Alejandría.",
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 4,
+          "lugar": {
+            "nombre": "Cnido",
+            "tipo": "ciudad",
+            "lat": 36.68583,
+            "lon": 27.375,
+            "coord_fuente": "openbible:ab793ce",
+            "coord_url": "https://www.openbible.info/geo/ancient/ab793ce/cnidus"
+          },
+          "referencia": "Hch 27:7",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "nota": "Pasan frente a Cnido con dificultad.",
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 5,
+          "lugar": {
+            "nombre": "Salmone",
+            "tipo": "ciudad",
+            "lat": 35.31603,
+            "lon": 26.31155,
+            "coord_fuente": "openbible:a1c44ea",
+            "coord_url": "https://www.openbible.info/geo/ancient/a1c44ea/salmone"
+          },
+          "referencia": "Hch 27:7",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "nota": "Cabo de Creta.",
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 6,
+          "lugar": {
+            "nombre": "Bellos Puertos",
+            "tipo": "ciudad",
+            "lat": 34.92969,
+            "lon": 24.80031,
+            "coord_fuente": "openbible:aae626a",
+            "coord_url": "https://www.openbible.info/geo/ancient/aae626a/fair-havens"
+          },
+          "referencia": "Hch 27:8-12",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "nota": "Cerca de Lasea.",
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 7,
+          "lugar": {
+            "nombre": "Cauda",
+            "tipo": "isla",
+            "lat": 34.83333,
+            "lon": 24.08333,
+            "coord_fuente": "openbible:aca2b0a",
+            "coord_url": "https://www.openbible.info/geo/ancient/aca2b0a/cauda"
+          },
+          "referencia": "Hch 27:16",
+          "fuentes": [
+            "hch-27"
+          ],
+          "verificado": true,
+          "nota": "Pasan al abrigo de la isla durante la tormenta.",
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 8,
+          "lugar": {
+            "nombre": "Malta",
+            "tipo": "isla",
+            "lat": 35.93346,
+            "lon": 14.41173,
+            "coord_fuente": "openbible:a57835d",
+            "coord_url": "https://www.openbible.info/geo/ancient/a57835d/malta"
+          },
+          "referencia": "Hch 28:1-11",
+          "fuentes": [
+            "hch-28",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "estación",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "invierno de 58-59"
+          },
+          "nota": "Naufragio; tres meses."
+        },
+        {
+          "orden": 9,
+          "lugar": {
+            "nombre": "Siracusa",
+            "tipo": "ciudad",
+            "lat": 37.06389,
+            "lon": 15.29306,
+            "coord_fuente": "openbible:a1e3697",
+            "coord_url": "https://www.openbible.info/geo/ancient/a1e3697/syracuse"
+          },
+          "referencia": "Hch 28:12",
+          "fuentes": [
+            "hch-28"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 10,
+          "lugar": {
+            "nombre": "Regio",
+            "tipo": "ciudad",
+            "lat": 38.1088,
+            "lon": 15.64412,
+            "coord_fuente": "openbible:a63bb26",
+            "coord_url": "https://www.openbible.info/geo/ancient/a63bb26/rhegium"
+          },
+          "referencia": "Hch 28:13",
+          "fuentes": [
+            "hch-28"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 11,
+          "lugar": {
+            "nombre": "Puteoli",
+            "tipo": "ciudad",
+            "lat": 40.82611,
+            "lon": 14.12056,
+            "coord_fuente": "openbible:a4488e9",
+            "coord_url": "https://www.openbible.info/geo/ancient/a4488e9/puteoli"
+          },
+          "referencia": "Hch 28:13, 14",
+          "fuentes": [
+            "hch-28"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 12,
+          "lugar": {
+            "nombre": "Plaza del Mercado de Apio",
+            "tipo": "ciudad",
+            "lat": 41.46639,
+            "lon": 12.9975,
+            "coord_fuente": "openbible:a121d5e",
+            "coord_url": "https://www.openbible.info/geo/ancient/a121d5e/forum-of-appius"
+          },
+          "referencia": "Hch 28:15",
+          "fuentes": [
+            "hch-28"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 13,
+          "lugar": {
+            "nombre": "Tres Tabernas",
+            "tipo": "ciudad",
+            "lat": 41.56194,
+            "lon": 12.87389,
+            "coord_fuente": "openbible:afef438",
+            "coord_url": "https://www.openbible.info/geo/ancient/afef438/three-taverns"
+          },
+          "referencia": "Hch 28:15",
+          "fuentes": [
+            "hch-28"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 58,
+            "hasta": 59,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "narrativa",
+            "cronologia": "tnm",
+            "texto": "dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)"
+          }
+        },
+        {
+          "orden": 14,
+          "lugar": {
+            "nombre": "Roma",
+            "tipo": "ciudad",
+            "lat": 41.8922,
+            "lon": 12.4852,
+            "coord_fuente": "openbible:afc8e7a",
+            "coord_url": "https://www.openbible.info/geo/ancient/afc8e7a/rome"
+          },
+          "referencia": "Hch 28:16-31",
+          "fuentes": [
+            "hch-28",
+            "si-3"
+          ],
+          "verificado": true,
+          "fecha": {
+            "desde": 59,
+            "hasta": 61,
+            "precision": "rango",
+            "aprox": true,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "c. 59-61: dos años en una casa alquilada"
+          }
+        }
+      ],
+      "lugares_mencionados_no_visitados": [
+        {
+          "nombre": "Fenice",
+          "referencia": "Hch 27:12",
+          "nota": "Puerto al que querían llegar para invernar; no llegaron.",
+          "lugar": {
+            "nombre": "Fenice",
+            "tipo": "ciudad",
+            "lat": 35.2,
+            "lon": 24.07222,
+            "coord_fuente": "openbible:a9ee958",
+            "coord_url": "https://www.openbible.info/geo/ancient/a9ee958/phoenix",
+            "coord_nota": "OpenBible registra 2 identificaciones; se usa la de mayor puntuación (521/1000)."
+          }
+        },
+        {
+          "nombre": "Sirte",
+          "referencia": "Hch 27:17",
+          "nota": "Bancos que temían; no llegaron.",
+          "lugar": {
+            "nombre": "Sirte",
+            "tipo": "región",
+            "lat": 31.5,
+            "lon": 18.0,
+            "coord_fuente": "openbible:ad36371",
+            "coord_url": "https://www.openbible.info/geo/ancient/ad36371/syrtis"
+          }
+        }
+      ]
+    }
+  ]
+}

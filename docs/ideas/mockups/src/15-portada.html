@@ -1,0 +1,198 @@
+<!doctype html>
+<!--
+  15 · Portada: qué es, cómo empezar (buscar, elegir una época, seguir un recorrido) y épocas como puerta de entrada.
+  Fechas de las épocas comprobadas el 27-09-2026 en el estudio 3 de «Toda Escritura es inspirada de Dios y provechosa»:
+  https://wol.jw.org/es/wol/d/r4/lp-s/1101990130
+    4026 creación de Adán; 2370 Diluvio; 1943 Abrahán cruza el Éufrates; 1513 éxodo; 1473 Moisés completa Números en Moab;
+    1117 Saúl rey; 997 división del reino; 607 Jerusalén destruida; 537 regreso; 455 muros de Nehemías;
+    29 e.c. bautismo; 33 e.c. muerte de Jesús; c. 96 e.c. Apocalipsis; c. 98 e.c. Juan completa sus escritos.
+  Nacimiento de Jesús en 2 a.e.c. y Malaquías después de 443 a.e.c.: data/babilonia-en-tiempos-de-jesus.json y
+  data/israel-medos-y-persas.json (Tabla de los libros, https://wol.jw.org/es/wol/d/r4/lp-s/1001070071).
+  El tramo entre Malaquías y Mateo no tiene libro bíblico: se contará con fuentes de nivel 2.
+  Fotos: puerta-istar.jpg (Kurt Kaiser, CC0), via-egnatia-filipos.jpg y filipos.jpg (Carole Raddato, CC BY-SA 2.0),
+  efeso-teatro.jpg (Dennis G. Jarvis, CC BY-SA 2.0). Todas de Wikimedia Commons; créditos en kit/photos/CREDITS.md.
+  Coordenadas: OpenBible.info (CC BY 4.0).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>15 · Portada</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  body { background: var(--paper); }
+  .home { width: 100vw; height: 100vh; overflow: hidden; display: grid; grid-template-rows: 60px 446px auto 1fr auto; }
+  .nav { display: flex; align-items: center; gap: 26px; padding: 0 36px; border-bottom: 1px solid var(--line); background: var(--surface); }
+  .nav a { font-size: var(--fs-sm); font-weight: 600; color: var(--ink-2); text-decoration: none; }
+  .nav .lang { display: inline-flex; align-items: center; gap: 6px; }
+
+  /* Portada */
+  .hero { position: relative; display: grid; grid-template-columns: 640px 1fr; }
+  .hero__txt { padding: 58px 0 0 56px; position: relative; z-index: 2; }
+  .kick { font-size: var(--fs-xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--tier1); display: flex; align-items: center; gap: 8px; }
+  h1 { font-family: var(--font-serif); font-size: 52px; line-height: 1.02; font-weight: 600; letter-spacing: -0.015em; margin: 12px 0 12px; }
+  .lead { font-family: var(--font-serif); font-size: 19px; line-height: 1.45; color: var(--ink-2); margin: 0; max-width: 540px; }
+  .bigsearch { margin-top: 22px; display: flex; align-items: center; gap: 12px; height: 56px; padding: 0 8px 0 18px; border-radius: var(--r-lg); background: var(--surface); border: 1.5px solid var(--line-2); box-shadow: var(--shadow-2); width: 560px; font-size: 16px; color: var(--ink-3); }
+  .bigsearch .be-i { width: 20px; height: 20px; color: var(--ink-2); }
+  .bigsearch .be-btn { margin-left: auto; height: 40px; }
+  .tries { display: flex; align-items: center; gap: 7px; margin-top: 12px; font-size: var(--fs-xs); color: var(--ink-3); font-weight: 600; }
+  .tries .be-chip { background: var(--surface); }
+
+  .hero__map { position: relative; margin: 24px 36px 0 0; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-2); }
+  .hero__map .be-map { position: absolute; inset: 0; }
+  .preview { position: absolute; left: 14px; top: 14px; z-index: 4; padding: 10px 13px; max-width: 330px; }
+  .preview .k { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+  .preview b { display: block; font-family: var(--font-serif); font-size: 20px; font-weight: 600; margin-top: 2px; }
+  .preview span { font-size: var(--fs-xs); color: var(--ink-2); }
+  .qs { position: absolute; right: 14px; bottom: 26px; z-index: 4; width: 322px; padding: 10px 12px; }
+  .qs .k { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+  .q { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid var(--line); font-size: var(--fs-sm); font-weight: 600; color: var(--ink); }
+  .q:first-of-type { border-top: 0; }
+  .q .be-i { color: var(--accent); margin-left: auto; }
+
+  /* Épocas */
+  .eras { padding: 30px 36px 0 56px; }
+  .sec { display: flex; align-items: baseline; gap: 12px; margin-bottom: 11px; }
+  .sec h2 { font-family: var(--font-serif); font-size: 24px; font-weight: 600; margin: 0; }
+  .sec span { font-size: var(--fs-sm); color: var(--ink-3); }
+  .sec .be-spacer + a { font-size: var(--fs-sm); font-weight: 600; color: var(--link); text-decoration: none; }
+  .row { display: grid; grid-template-columns: repeat(9, 1fr); gap: 9px; }
+  .era { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 12px 11px 10px; overflow: hidden; }
+  .era::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--c); }
+  .era .n { font-size: 10px; font-weight: 700; color: var(--ink-4); letter-spacing: var(--tracking-caps); }
+  .era b { display: block; font-family: var(--font-serif); font-size: 17px; line-height: 1.12; font-weight: 600; margin-top: 3px; min-height: 38px; }
+  .era .d { display: block; font-size: var(--fs-xs); font-weight: 700; color: var(--ink-2); margin-top: 5px; font-variant-numeric: tabular-nums; }
+  .era .bk { display: block; font-size: 10.5px; color: var(--ink-3); margin-top: 3px; line-height: 1.3; min-height: 27px; }
+  .era--on { border-color: var(--c); box-shadow: 0 0 0 2px var(--c), var(--shadow-2); }
+  .era--gap { background: repeating-linear-gradient(135deg, var(--surface) 0 7px, var(--surface-2) 7px 14px); border-style: dashed; }
+  .era--gap b { color: var(--ink-2); }
+  .scale { position: relative; height: 22px; margin-top: 12px; }
+  .scale__bar { position: absolute; left: 0; right: 0; top: 4px; height: 8px; border-radius: 4px; overflow: hidden; display: flex; background: var(--paper-2); }
+  .scale__bar i { display: block; height: 100%; }
+  .scale__lbl { position: absolute; top: 14px; font-size: 10px; color: var(--ink-3); font-weight: 600; white-space: nowrap; }
+
+  /* Recorridos */
+  .bottom { display: grid; grid-template-columns: 1fr 1fr 1fr 330px; gap: 14px; padding: 26px 36px 0 56px; align-content: start; }
+  .tourc { display: grid; grid-template-columns: 150px 1fr; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; height: 148px; box-shadow: var(--shadow-1); }
+  .tourc .be-photo { height: 100%; }
+  .tourc .be-photo figcaption { padding: 16px 8px 6px; font-size: 9.5px; }
+  .tourc .be-photo__credit { font-size: 9.5px; opacity: .9; }
+  .tourc__b { padding: 12px 14px; display: flex; flex-direction: column; }
+  .tourc__b .k { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--tier1); display: flex; gap: 6px; align-items: center; }
+  .tourc__b b { font-family: var(--font-serif); font-size: 19px; line-height: 1.12; font-weight: 600; margin-top: 4px; }
+  .tourc__b span { font-size: var(--fs-xs); color: var(--ink-3); margin-top: 4px; line-height: 1.35; }
+  .tourc__b .go { margin-top: auto; display: flex; align-items: center; gap: 6px; font-size: var(--fs-sm); font-weight: 600; color: var(--ink); }
+  .trust { background: var(--tier1-soft); border-radius: var(--r-lg); padding: 13px 15px; height: 148px; box-sizing: border-box; font-size: var(--fs-xs); color: #2a4a40; line-height: 1.45; }
+  .trust .k { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; margin-bottom: 6px; }
+  .trust div + div { margin-top: 5px; display: flex; gap: 7px; align-items: flex-start; }
+  .foot { display: flex; gap: 18px; align-items: center; padding: 12px 36px 12px 56px; font-size: var(--fs-2xs); color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="home">
+  <nav class="nav">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <span class="be-spacer"></span>
+    <a>Explorar el mapa</a><a>Épocas</a><a>Recorridos</a><a>Fuentes</a><a>Cómo trabajamos</a>
+    <span class="be-chip lang"><i class="be-i be-i--sm" data-icon="globe"></i>Español</span>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__txt">
+      <div class="kick"><i class="be-i be-i--sm" data-icon="book"></i>Para estudiar la Biblia</div>
+      <h1>Cada relato de la Biblia, en su lugar y en su tiempo</h1>
+      <p class="lead">Un mapa y una línea de tiempo movidos por una sola fecha. Elige un momento y verás quién vivía, dónde estaba y qué pasaba alrededor. Cada dato enlaza a su fuente.</p>
+      <div class="bigsearch"><i data-icon="search"></i>Busca una persona, un lugar, un capítulo o un año<span class="be-btn be-btn--primary">Explorar</span></div>
+      <div class="tries">Prueba:<span class="be-chip">Pedro</span><span class="be-chip">Hch 16</span><span class="be-chip">607 a.e.c.</span><span class="be-chip">Babilonia</span><span class="be-chip">Galión</span></div>
+    </div>
+
+    <div class="hero__map">
+      <div class="be-map" id="map"></div>
+      <div class="be-float preview">
+        <div class="k">Vista previa · época 6</div>
+        <b>Destierro y regreso</b>
+        <span>607 – después de 443 a.e.c. · Babilonia, Susa y Jerusalén</span>
+      </div>
+      <div class="be-float qs">
+        <div class="k">O empieza por una pregunta</div>
+        <div class="q">¿Qué pasaba en Babilonia en tiempos de Jesús?<i class="be-i be-i--sm" data-icon="arrow-right"></i></div>
+        <div class="q">¿Quién había en Israel con los medos y persas?<i class="be-i be-i--sm" data-icon="arrow-right"></i></div>
+        <div class="q">¿Desde dónde escribió Pablo cada carta?<i class="be-i be-i--sm" data-icon="arrow-right"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eras">
+    <div class="sec"><h2>Elige una época</h2><span>Entra por el periodo y el mapa se pone en su fecha</span><span class="be-spacer"></span><a>Ver la línea de tiempo completa →</a></div>
+    <div class="row">
+      <div class="era" style="--c:#8c7a5b"><span class="n">1</span><b>De Adán al Diluvio</b><span class="d">4026 – 2370 a.e.c.</span><span class="bk">Génesis 1-8</span></div>
+      <div class="era" style="--c:var(--emp-egipto)"><span class="n">2</span><b>Los patriarcas</b><span class="d">2370 – 1513 a.e.c.</span><span class="bk">Génesis 9-50 · Abrahán cruza el Éufrates en 1943</span></div>
+      <div class="era" style="--c:#b0703a"><span class="n">3</span><b>Éxodo y desierto</b><span class="d">1513 – 1473 a.e.c.</span><span class="bk">Éxodo a Deuteronomio</span></div>
+      <div class="era" style="--c:var(--emp-israel)"><span class="n">4</span><b>Josué y los jueces</b><span class="d">1473 – 1117 a.e.c.</span><span class="bk">Josué, Jueces, Rut</span></div>
+      <div class="era" style="--c:var(--emp-asiria)"><span class="n">5</span><b>Reyes de Israel y Judá</b><span class="d">1117 – 607 a.e.c.</span><span class="bk">1 Samuel a 2 Reyes · reino dividido en 997</span></div>
+      <div class="era era--on" style="--c:var(--emp-persia)"><span class="n">6</span><b>Destierro y regreso</b><span class="d">607 – d. 443 a.e.c.</span><span class="bk">Daniel, Esdras, Ester, Nehemías, Ageo…</span></div>
+      <div class="era era--gap" style="--c:var(--ink-4)"><span class="n">·</span><b>Entre Malaquías y Mateo</b><span class="d">d. 443 – 2 a.e.c.</span><span class="bk">Sin libro bíblico: historia de nivel 2</span></div>
+      <div class="era" style="--c:var(--accent)"><span class="n">7</span><b>Jesús en la tierra</b><span class="d">2 a.e.c. – 33 e.c.</span><span class="bk">Mateo, Marcos, Lucas, Juan</span></div>
+      <div class="era" style="--c:var(--emp-roma)"><span class="n">8</span><b>La congregación cristiana</b><span class="d">33 – c. 98 e.c.</span><span class="bk">Hechos a Apocalipsis</span></div>
+    </div>
+    <div class="scale" id="scale"><div class="scale__bar" id="bar"></div></div>
+  </section>
+
+  <section class="bottom">
+    <div class="tourc">
+      <figure class="be-photo"><img src="../kit/photos/puerta-istar.jpg" alt="Puerta de Istar"><figcaption><span class="be-photo__credit">Puerta de Istar · Kurt Kaiser · CC0</span></figcaption></figure>
+      <div class="tourc__b"><span class="k"><i class="be-i be-i--sm" data-icon="compass"></i>Recorrido · 8 paradas</span><b>De Babilonia a Jerusalén</b><span>El regreso de 537 a.e.c. y el segundo templo, de 607 a 515.</span><span class="go">Empezar<i class="be-i be-i--sm" data-icon="arrow-right"></i></span></div>
+    </div>
+    <div class="tourc">
+      <figure class="be-photo"><img src="../kit/photos/via-egnatia-filipos.jpg" alt="Vía Egnatia en Filipos"><figcaption><span class="be-photo__credit">Vía Egnatia, Filipos · Carole Raddato · CC BY-SA 2.0</span></figcaption></figure>
+      <div class="tourc__b"><span class="k"><i class="be-i be-i--sm" data-icon="compass"></i>Recorrido · Hechos 9-28</span><b>Los viajes de Pablo</b><span>Tres viajes, Cesarea y Roma, c. 47-61 e.c., con sus calzadas.</span><span class="go">Empezar<i class="be-i be-i--sm" data-icon="arrow-right"></i></span></div>
+    </div>
+    <div class="tourc">
+      <figure class="be-photo"><img src="../kit/photos/efeso-teatro.jpg" alt="Teatro de Éfeso"><figcaption><span class="be-photo__credit">Teatro de Éfeso · Dennis G. Jarvis · CC BY-SA 2.0</span></figcaption></figure>
+      <div class="tourc__b"><span class="k"><i class="be-i be-i--sm" data-icon="letter"></i>Recorrido · 14 cartas</span><b>Cartas y ciudades</b><span>Desde dónde escribe Pablo, a quién, y qué pasaba en las dos ciudades.</span><span class="go">Empezar<i class="be-i be-i--sm" data-icon="arrow-right"></i></span></div>
+    </div>
+    <div class="trust">
+      <div class="k">De dónde salen los datos</div>
+      <div><span class="be-tier be-tier--1" data-n="1">Nivel 1</span><span>La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</span></div>
+      <div><span class="be-tier be-tier--2" data-n="2">Nivel 2</span><span>Arqueología e investigación, siempre con su fuente.</span></div>
+      <div><span class="be-tier be-tier--unverified" data-n="?">Sin verificar</span><span>Se ve marcado, nunca escondido.</span></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>Código libre, GPL-3.0</span><span>·</span><span>Coordenadas: OpenBible.info, CC BY 4.0</span><span>·</span><span>Relieve y costas: Natural Earth</span><span>·</span><span>Fotos: Wikimedia Commons, con autor y licencia en cada imagen</span>
+    <span class="be-spacer"></span><span>Sitio estático: todo corre en tu navegador</span>
+  </footer>
+</div>
+
+<script>
+BE.ready(async () => {
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mundo', style: 'antiguo', bounds: [30.2, 28.0, 60.5, 39.2] });
+  map.label('Imperio persa', 44.2, 30.3, { kind: 'empire', size: 17 });
+  map.label('Judá', 35.0, 30.75, { kind: 'region' });
+  map.label('Media', 48.3, 36.3, { kind: 'region' });
+  map.route(['jerusalen', [36.9, 34.6], [39.9, 35.3], 'babilonia'], { kind: 'ghost', smooth: true });
+  map.route(['babilonia', [42.2, 34.2], [40.1, 35.1], [37.9, 35.0], [36.3, 33.4], 'jerusalen'], { kind: 'approx', smooth: true, arrowEvery: 200 });
+  map.city('jerusalen', { variant: ['major'], side: 'left', sub: '607 · 537 · 455' });
+  map.city('babilonia', { variant: ['major'], side: 'bottom', sub: 'cae en 539' });
+  map.city('susa', { variant: ['visited'], side: 'bottom', sub: 'Ester' });
+  map.city('ecbatana', { variant: ['minor'], side: 'right', label: 'Ecbátana' });
+
+  // Escala real de las épocas: de 4026 a.e.c. (−4025) a c. 98 e.c.
+  const eras = [
+    [-4025, -2369, '#8c7a5b'], [-2369, -1512, 'var(--emp-egipto)'], [-1512, -1472, '#b0703a'], [-1472, -1116, 'var(--emp-israel)'],
+    [-1116, -606, 'var(--emp-asiria)'], [-606, -442, 'var(--emp-persia)'], [-442, -1, '#cfc5b3'], [-1, 33, 'var(--accent)'], [33, 98, 'var(--emp-roma)'] ];
+  const A = -4025, B = 98, bar = document.getElementById('bar'), sc = document.getElementById('scale');
+  for (const [a, b, c] of eras) { const i = document.createElement('i'); i.style.width = ((b - a) / (B - A) * 100) + '%'; i.style.background = c; bar.appendChild(i); }
+  const lbl = (y, t, align) => { const d = document.createElement('div'); d.className = 'scale__lbl'; d.textContent = t; d.style.left = ((y - A) / (B - A) * 100) + '%'; if (align === 'r') d.style.transform = 'translateX(-100%)'; sc.appendChild(d); };
+  lbl(A, 'A escala real, de 4026 a.e.c. a c. 98 e.c.: Jesús y la congregación cristiana ocupan menos del 3 % de la barra');
+  lbl(-606, '607 a.e.c.', 'r');
+  lbl(B, 'c. 98 e.c.', 'r');
+});
+</script>
+</body>
+</html>

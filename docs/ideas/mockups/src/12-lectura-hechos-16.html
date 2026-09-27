@@ -1,0 +1,274 @@
+<!doctype html>
+<!--
+  12 · Modo lectura: Hechos 16, pasaje a pasaje, con el mapa siguiendo la lectura.
+  Todo el texto es nuestro; el capítulo se lee en wol.jw.org. Comprobado el 27-09-2026 en:
+  - Hechos 16 (edición de estudio): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+      16:1-3 Timoteo en Listra (primera mención, nota de 16:1); 16:6-8 Frigia, Galacia, Misia, Troas;
+      16:9 visión del macedonio; 16:10 el relato pasa a primera persona del plural (nota de estudio);
+      16:11 Troas → Samotracia → al día siguiente Neápolis; 16:12 colonia de Filipos, ciudad principal del distrito de Macedonia;
+      16:13-15 lugar de oración junto a un río; Lidia de Tiatira, vendedora de púrpura, cristiana c. 50 (nota de 16:14);
+      inscripción de una asociación de vendedores de púrpura en Filipos (nota de 16:14);
+      16:16-24 muchacha con un demonio de adivinación, plaza del mercado, cárcel; 16:25-34 terremoto, carcelero bautizado;
+      16:35-40 magistrados civiles; Filipos colonia romana, ciudadanía (notas de 16:37).
+  - Troas en la primavera de 50 y fechas del 2.º viaje: data/viajes-de-pablo.json (estudio 3 de «Toda Escritura»,
+      https://wol.jw.org/es/wol/d/r4/lp-s/1101990130, y Perspicacia «Pablo», https://wol.jw.org/es/wol/d/r4/lp-s/1200003406).
+  - Hch 20:6 (Filipos → Troas en cinco días): https://wol.jw.org/es/wol/b/r4/lp-s/nwt/44/20
+  Foto: kit/photos/filipos.jpg · Carole Raddato · CC BY-SA 2.0 · Wikimedia Commons.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>12 · Modo lectura: Hechos 16</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --timeline-h: 166px; --read-w: 470px; }
+  .app { width: 100vw; height: 100vh; overflow: hidden; display: grid; grid-template-columns: var(--read-w) 1fr; grid-template-rows: var(--topbar-h) 1fr var(--timeline-h); grid-template-areas: "top top" "read map" "time time"; background: var(--paper); }
+  .app > .be-topbar { grid-area: top; }
+  .app > .be-map { grid-area: map; }
+  .app > .read { grid-area: read; }
+  .app > .be-timeline { grid-area: time; }
+  .mode { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 12px; border-radius: var(--r-pill); background: var(--tier1-soft); color: var(--tier1); font-size: var(--fs-sm); font-weight: 700; white-space: nowrap; }
+  .book { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: var(--r-md); border: 1px solid var(--line-2); background: var(--surface); font-family: var(--font-serif); font-size: 19px; font-weight: 600; white-space: nowrap; }
+  .book .be-i { color: var(--ink-3); }
+  .chapters { display: flex; gap: 3px; align-items: center; }
+  .chapters span { width: 22px; height: 22px; border-radius: 5px; display: grid; place-items: center; font-size: 10.5px; font-weight: 700; color: var(--ink-3); background: var(--paper-2); font-variant-numeric: tabular-nums; }
+  .chapters span.read { background: #d6e5dc; color: var(--tier1); }
+  .chapters span.on { background: var(--tier1); color: #fff; width: 28px; box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--tier1); }
+
+  /* Columna de lectura */
+  .read { background: var(--surface); border-right: 1px solid var(--line); display: flex; flex-direction: column; overflow: hidden; position: relative; z-index: 3; }
+  .read__head { padding: 16px 20px 14px; border-bottom: 1px solid var(--line); }
+  .read__title { display: flex; align-items: baseline; gap: 10px; }
+  .read__title h1 { font-family: var(--font-serif); font-size: 32px; font-weight: 600; margin: 0; line-height: 1; }
+  .read__lead { font-size: var(--fs-sm); color: var(--ink-2); margin: 8px 0 12px; line-height: 1.45; }
+  .read__actions { display: flex; gap: 8px; align-items: center; }
+  .wolbtn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: var(--r-md); background: var(--tier1); color: #fff; font-weight: 600; font-size: var(--fs-sm); white-space: nowrap; }
+  .wolbtn::after { content: "↗"; }
+  .read__body { flex: 1; overflow: hidden; padding: 10px 12px 0; background: var(--surface-2); }
+  .psg { display: grid; grid-template-columns: 26px 1fr; gap: 0 10px; padding: 8px 10px 8px 8px; border-radius: var(--r-md); position: relative; }
+  .psg + .psg { margin-top: 2px; }
+  .psg__n { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 11px; font-weight: 700; background: var(--paper-2); color: var(--ink-3); border: 1.5px solid var(--line-2); margin-top: 1px; }
+  .psg--done .psg__n { background: var(--tier1); border-color: var(--tier1); color: #fff; }
+  .psg--done .psg__n .be-i { width: 13px; height: 13px; }
+  .psg--on { background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-2); padding: 12px 14px 12px 8px; }
+  .psg--on .psg__n { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .psg--next { opacity: .78; }
+  .psg--next .psg__meta { display: none; }
+  .psg--next .psg__n { width: 22px; height: 22px; }
+  .psg__top { display: flex; align-items: center; gap: 8px; }
+  .psg__t { font-weight: 600; font-size: var(--fs-md); line-height: 1.25; }
+  .psg--on .psg__t { font-family: var(--font-serif); font-size: 21px; }
+  .psg__meta { font-size: var(--fs-xs); color: var(--ink-3); margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+  .psg__meta .be-i { color: var(--node-lugar); }
+  .psg__body { font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.5; margin-top: 8px; }
+  .psg__body b { color: var(--ink); font-weight: 600; }
+  .psg__links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .narr { font-size: 10px; font-weight: 700; color: var(--zone); border: 1px dashed #bda9cf; border-radius: var(--r-pill); padding: 0 7px; line-height: 18px; white-space: nowrap; }
+  .anch { font-size: 10px; font-weight: 700; color: #6e4f15; background: var(--gold-soft); border: 1px solid #ead9b3; border-radius: var(--r-pill); padding: 0 7px; line-height: 18px; white-space: nowrap; }
+  .we { display: flex; gap: 8px; align-items: flex-start; margin-top: 10px; padding: 8px 10px; background: #eef3f0; border-radius: var(--r-sm); font-size: var(--fs-xs); color: #2c4a40; line-height: 1.4; }
+  .we .be-i { flex: none; margin-top: 1px; }
+  .nextch { margin: 10px 8px 14px; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--r-md); background: var(--ink); color: #fbf7ef; }
+  .nextch small { display: block; font-size: var(--fs-2xs); letter-spacing: var(--tracking-caps); text-transform: uppercase; opacity: .7; font-weight: 700; }
+  .nextch b { font-family: var(--font-serif); font-size: 19px; font-weight: 600; }
+  .nextch span.sub { display: block; font-size: var(--fs-xs); opacity: .75; }
+
+  /* Mapa */
+  .stepno { position: absolute; transform: translate(-50%, -50%); width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 11px; font-weight: 700; display: grid; place-items: center; border: 2px solid #fff; box-shadow: var(--shadow-1); z-index: 1; }
+  .card-float { position: absolute; width: 318px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-3); overflow: hidden; z-index: 3; }
+  .card-float .be-photo { height: 104px; }
+  .follow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); }
+  .follow .dot { width: 8px; height: 8px; border-radius: 50%; background: #3c8a5a; box-shadow: 0 0 0 3px rgba(60,138,90,.2); }
+  .linklabel { position: absolute; transform: translate(-50%, -50%); font-size: var(--fs-2xs); font-weight: 700; color: var(--node-persona); background: rgba(255,253,248,.94); border: 1px solid #e8cfc6; border-radius: var(--r-pill); padding: 2px 8px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <span class="mode"><i class="be-i be-i--sm" data-icon="book"></i>Modo lectura</span>
+    <span class="book">Hechos 16<i class="be-i be-i--sm" data-icon="chevron-down"></i></span>
+    <div class="chapters" id="chapters"></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">Primavera del 50 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="search"></i></span>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="x"></i></span>
+  </header>
+
+  <aside class="read">
+    <div class="read__head">
+      <div class="read__title"><h1>Hechos 16</h1><span class="be-muted" style="font-weight:600;font-size:var(--fs-sm)">6 pasajes · 40 versículos</span></div>
+      <p class="read__lead">Segundo viaje, c. 49-52 e.c. Lees en wol.jw.org; aquí, mapa y fecha.</p>
+      <div class="read__actions">
+        <a class="wolbtn" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16">Leer Hechos 16 en wol.jw.org</a>
+        <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="play"></i>Seguir en el mapa</span>
+      </div>
+    </div>
+    <div class="read__body">
+      <div class="psg psg--done">
+        <span class="psg__n"><i data-icon="check"></i></span>
+        <div><div class="psg__top"><a class="be-ref">Hch 16:1-5</a><span class="psg__t">Timoteo se une al viaje</span></div>
+        <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="place"></i> Derbe · Listra</span><span class="narr">tiempo narrativo</span></div></div>
+      </div>
+      <div class="psg psg--done">
+        <span class="psg__n"><i data-icon="check"></i></span>
+        <div><div class="psg__top"><a class="be-ref">Hch 16:6-10</a><span class="psg__t">Asia y Bitinia, no; visión en Troas</span></div>
+        <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="place"></i> Frigia · Galacia · Misia · Troas</span><span class="anch">primavera del 50</span></div></div>
+      </div>
+
+      <div class="psg psg--on">
+        <span class="psg__n">3</span>
+        <div>
+          <div class="psg__top"><a class="be-ref">Hch 16:11-15</a><span class="be-muted" style="font-size:var(--fs-2xs);font-weight:700;letter-spacing:.06em">LEYENDO AHORA</span></div>
+          <div class="psg__t" style="margin-top:6px">Por mar a Macedonia; Lidia en Filipos</div>
+          <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="ship"></i> Troas → Samotracia → Neápolis → Filipos</span><span class="narr">tiempo narrativo</span></div>
+          <div class="psg__body">De Troas a Neápolis por mar en dos jornadas; luego a pie hasta <b>Filipos</b>, colonia romana. El sábado, junto a un río, <b>Lidia</b>, de Tiatira, vendedora de púrpura, escucha y se bautiza con los de su casa.</div>
+          <div class="we"><i class="be-i be-i--sm" data-icon="info"></i><span>Desde Hch 16:10 el relato dice «nosotros»: Lucas viaja con Pablo.</span></div>
+          <div class="psg__links">
+            <span class="be-chip"><span class="be-node be-node--persona be-node--sm">L</span>Lidia</span>
+            <span class="be-chip"><span class="be-node be-node--lugar be-node--sm"><i data-icon="place"></i></span>Tiatira</span>
+            <span class="be-spacer"></span>
+            <a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16">Notas de estudio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="psg psg--next">
+        <span class="psg__n">4</span>
+        <div><div class="psg__top"><a class="be-ref">Hch 16:16-24</a><span class="psg__t">Una muchacha liberada; azotes y cárcel</span></div>
+        <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="place"></i> Filipos · plaza del mercado</span></div></div>
+      </div>
+      <div class="psg psg--next">
+        <span class="psg__n">5</span>
+        <div><div class="psg__top"><a class="be-ref">Hch 16:25-34</a><span class="psg__t">Terremoto a medianoche; el carcelero</span></div>
+        <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="place"></i> Filipos · cárcel</span></div></div>
+      </div>
+      <div class="psg psg--next">
+        <span class="psg__n">6</span>
+        <div><div class="psg__top"><a class="be-ref">Hch 16:35-40</a><span class="psg__t">Liberados: son ciudadanos romanos</span></div>
+        <div class="psg__meta"><span><i class="be-i be-i--sm" data-icon="place"></i> Filipos → casa de Lidia</span></div></div>
+      </div>
+      <div class="nextch">
+        <div style="flex:1"><small>Siguiente capítulo</small><b>Hechos 17</b><span class="sub">Anfípolis · Apolonia · Tesalónica · Berea · Atenas</span></div>
+        <i class="be-i be-i--lg" data-icon="arrow-right"></i>
+      </div>
+    </div>
+  </aside>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr" style="align-items:flex-end">
+      <div class="be-float follow"><span class="dot"></span>El mapa sigue la lectura</div>
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--tl">
+      <div class="be-float be-legend">
+        <div class="be-caps be-muted">Hechos 16 en el mapa</div>
+        <div class="be-legend__row"><span class="be-legend__line"></span>Pasaje que lees (por tierra)</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--sea"></span>Pasaje que lees (por mar)</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Pasajes leídos · ruta aproximada</div>
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Hechos 17</div>
+      </div>
+    </div>
+  </main>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  // Capítulos de Hechos: 1-15 leídos, 16 abierto
+  document.getElementById('chapters').innerHTML = Array.from({ length: 28 }, (_, i) => i + 1)
+    .map((n) => `<span class="${n < 16 ? 'read' : n === 16 ? 'on' : ''}">${n}</span>`).join('');
+
+  const mapEl = document.getElementById('map');
+  const map = BE.createMap(mapEl, { base: 'mediterraneo', style: 'antiguo', bounds: [21.9, 38.35, 29.4, 42.05] });
+
+  map.label('Macedonia', 22.75, 40.98, { kind: 'region' });
+  map.label('Tracia', 25.9, 41.55, { kind: 'region' });
+  map.label('Misia', 27.9, 39.95, { kind: 'region' });
+    map.label('Mar Egeo', 25.95, 38.85, { kind: 'sea', size: 22 });
+
+  // Pasajes ya leídos (16:1-10): llegada a Troas por una ruta sin trazado exacto
+  map.route([[29.4, 39.55], 'troas'], { kind: 'approx', curve: 0.08 });
+  // Pasaje que lees: Troas → Samotracia → Neápolis (mar) y Neápolis → Filipos (tierra)
+  map.route(['troas', [25.72, 40.28], 'samotracia'], { kind: 'sea', smooth: true, arrowEvery: 140, trim: 9 });
+  map.route(['samotracia', [24.9, 40.8], 'neapolis'], { kind: 'sea', smooth: true, arrowEvery: 140, trim: 9 });
+  map.route(['neapolis', 'filipos'], { kind: 'done' });
+  // Hechos 17: lo que viene
+  map.route(['filipos', 'anfipolis', 'apolonia', 'tesalonica'], { kind: 'todo', curve: [0.05, 0.08, 0.05] });
+
+  // Vínculo del grafo: Lidia es de Tiatira
+  map.route(['tiatira', 'filipos'], { kind: 'ghost', curve: 0 });
+  const [lx, ly] = map.project(27.3, 39.24);
+  const ll = document.createElement('div'); ll.className = 'linklabel'; ll.textContent = 'Lidia es de Tiatira';
+  ll.style.left = lx + 'px'; ll.style.top = ly + 'px'; map.html.appendChild(ll);
+
+  map.city('troas', { variant: 'visited', side: 'right', sub: 'v. 8-11 · visión' });
+  map.city('samotracia', { variant: 'visited', side: 'right', sub: 'v. 11' });
+  map.city('neapolis', { variant: 'visited', side: 'right', sub: 'v. 11 · al día siguiente' });
+  map.city('filipos', { variant: 'current', side: 'top' });
+  map.city('tiatira', { variant: ['minor'], side: 'right', sub: 'ciudad de Lidia' });
+  map.city('anfipolis', { variant: 'future', side: 'left' });
+  map.city('apolonia', { variant: ['future', 'minor'], side: 'bottom' });
+  map.city('tesalonica', { variant: 'future', side: 'left', sub: 'Hch 17' });
+  map.city('efeso', { variant: ['minor'], side: 'right' }).style.opacity = .55;
+
+  // Números de parada del pasaje
+  [['troas', 1, -18, -12], ['samotracia', 2, -16, -16], ['neapolis', 3, -12, 17], ['filipos', 4, -22, 2]].forEach(([id, n, dx, dy]) => {
+    const [x, y] = map.at(id); const b = document.createElement('div'); b.className = 'stepno'; b.textContent = n;
+    b.style.left = (x + dx) + 'px'; b.style.top = (y + dy) + 'px'; map.html.appendChild(b);
+  });
+
+  // Tarjeta flotante anclada a Filipos
+  const [fx, fy] = map.at('filipos');
+  const card = document.createElement('div'); card.className = 'card-float';
+  card.innerHTML = `
+    <figure class="be-photo">
+      <img src="../kit/photos/filipos.jpg" alt="">
+      <span class="be-photo__badge be-tier be-tier--2" data-n="2">Arqueología</span>
+      <figcaption><b>Foro romano de Filipos</b>Estado actual<span class="be-photo__credit">Foto: Carole Raddato · CC BY-SA 2.0 · Wikimedia Commons</span></figcaption>
+    </figure>
+    <div class="be-card__pad" style="padding:12px 14px">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="place"></i>Filipos en este pasaje</div>
+      <dl class="be-kv" style="margin-top:8px">
+        <dt>Qué era</dt><dd>Colonia romana, ciudad principal de su distrito</dd>
+        <dt>Quién</dt><dd>Lidia y los de su casa · c. 50 e.c.</dd>
+        <dt>Hallazgo</dt><dd>Inscripción de un gremio de vendedores de púrpura</dd>
+      </dl>
+    </div>
+    <div class="be-card__foot" style="padding:8px 14px"><span class="be-tier be-tier--1" data-n="1">Nota de estudio · Hch 16:12-14</span><span class="be-spacer"></span><a class="be-wol">wol.jw.org</a></div>`;
+  card.style.left = '176px'; card.style.top = '350px';
+  mapEl.appendChild(card);
+
+  const sc = map.scaleBar(110); Object.assign(sc.style, { position: 'absolute', right: '14px', bottom: '26px', zIndex: 2 }); mapEl.appendChild(sc);
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 49.4, to: 51.1, tick: 0.25, cursor: 50.32, cursorLabel: 'primavera del 50 · Hch 16:11',
+    fmt: (y) => { const f = Math.round((y - Math.floor(y)) * 4); const yr = Math.floor(y + 1e-9); return [`invierno ${yr - 1}/${yr % 100}`, 'primavera', 'verano', 'otoño'][f]; },
+    uncertain: [{ from: 49.7, to: 50.2 }, { from: 50.4, to: 50.66 }],
+    bar: `
+      <span class="be-muted" style="font-size:var(--fs-xs);font-weight:700;letter-spacing:.06em">HECHOS 16 EN EL TIEMPO</span>
+      <span class="be-speed">Orden cierto · fechas aproximadas salvo Troas</span>
+      <span class="be-spacer"></span>
+      <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="step-back"></i>Pasaje anterior</span>
+      <span class="be-btn be-btn--sm be-btn--primary">Pasaje siguiente<i class="be-i be-i--sm" data-icon="step-forward"></i></span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pasajes', icon: 'book', color: 'var(--tier1)', items: [
+        { from: 49.72, to: 49.95, label: '16:1-5', soft: true, color: 'var(--zone)' },
+        { from: 49.97, to: 50.24, label: '16:6-10', soft: true, color: 'var(--zone)' },
+        { from: 50.27, to: 50.42, label: '16:11-15', active: true, color: 'var(--accent)' },
+        { from: 50.44, to: 50.64, label: '16:16-40 · Filipos', soft: true, color: 'var(--zone)' } ] },
+      { label: 'Fecha anclada', icon: 'calendar', color: 'var(--gold)', items: [
+        { at: 50.25, label: 'Troas · primavera del 50' } ] },
+      { label: 'Pablo', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: 49.4, to: 51.1, label: '2.º viaje · c. 49-52 e.c.', color: 'var(--node-persona)' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Babilonia y Mesopotamia de 2 a.e.c. a 64 e.c.",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-babilonia": {
+      "titulo": "Babilonia",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000530",
+      "nivel": 1
+    },
+    "it-pedro-cartas": {
+      "titulo": "Pedro, Cartas de",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003452",
+      "nivel": 1
+    },
+    "hch-2": {
+      "titulo": "Hechos 2",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2",
+      "nivel": 1
+    },
+    "mt-2": {
+      "titulo": "Mateo 2",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2",
+      "nivel": 1
+    },
+    "1pe-5": {
+      "titulo": "1 Pedro 5",
+      "obra": "Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/5",
+      "nivel": 1
+    },
+    "wp-fraates-v": {
+      "titulo": "Phraates V",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Phraates_V",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-artabano-ii": {
+      "titulo": "Artabanus II of Parthia",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Artabanus_II_of_Parthia",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-vologases-i": {
+      "titulo": "Vologases I of Parthia",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Vologases_I_of_Parthia",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-anilai": {
+      "titulo": "Anilai and Asinai",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Anilai_and_Asinai",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-nehardea": {
+      "titulo": "Nehardea",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Nehardea",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-cuneiforme": {
+      "titulo": "Cuneiform",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Cuneiform",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-diarios": {
+      "titulo": "Babylonian astronomical diaries",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Babylonian_astronomical_diaries",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    },
+    "wp-partia": {
+      "titulo": "Parthian Empire",
+      "obra": "Wikipedia (inglés)",
+      "url": "https://en.wikipedia.org/wiki/Parthian_Empire",
+      "nivel": 2,
+      "licencia": "CC BY-SA 4.0 (texto); sólo citamos hechos"
+    }
+  },
+  "pregunta": "¿Qué pasaba en Babilonia en tiempos de Jesús?",
+  "ventana": {
+    "desde": -1,
+    "hasta": 64,
+    "texto": "del nacimiento de Jesús (2 a.e.c.) a la primera carta de Pedro (c. 62-64 e.c.)"
+  },
+  "lugar_foco": {
+    "nombre": "Babilonia",
+    "tipo": "ciudad",
+    "lat": 32.54333,
+    "lon": 44.42222,
+    "coord_fuente": "openbible:a217d18",
+    "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+  },
+  "nivel_1": [
+    {
+      "id": "babilonia-parta",
+      "nivel": 1,
+      "titulo": "Babilonia bajo los partos",
+      "resumen": "Desde mediados del siglo II a.e.c. los partos controlan Babilonia. La ciudad había perdido su esplendor: Seleuco Nicátor se llevó gran parte de sus materiales para construir Seleucia, junto al Tigris.",
+      "fecha": {
+        "desde": -150,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "desde mediados del siglo II a.e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "it-babilonia"
+      ],
+      "verificado": true,
+      "nota": "Seleucia del Tigris aún sin coordenada verificada. No usar la “Seleucia” de OpenBible: es Seleucia de Pieria, el puerto de Antioquía (Hch 13:4)."
+    },
+    {
+      "id": "colonia-judia",
+      "nivel": 1,
+      "titulo": "Una colonia judía vive en Babilonia",
+      "resumen": "En tiempos cristianos primitivos la ciudad aún existía y tenía una colonia de judíos; varias comunidades judías florecían en el país.",
+      "fecha": {
+        "desde": 1,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "siglo I e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "it-babilonia"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "astrologos",
+      "nivel": 1,
+      "titulo": "Astrólogos “de Oriente” llegan a Jerusalén",
+      "resumen": "Tras nacer Jesús llegan astrólogos “de Oriente”. El texto no dice de qué país: no los unimos a Babilonia.",
+      "fecha": {
+        "desde": -1,
+        "hasta": 1,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "narrativa",
+        "cronologia": "tnm",
+        "texto": "poco después del nacimiento de Jesús (2 a.e.c.)"
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        }
+      ],
+      "fuentes": [
+        "mt-2"
+      ],
+      "verificado": true,
+      "nota": "Ejemplo de lo que no debemos inferir: la interfaz muestra “Oriente (sin precisar)”."
+    },
+    {
+      "id": "pentecostes-mesopotamia",
+      "nivel": 1,
+      "titulo": "Judíos de Mesopotamia en el Pentecostés de 33",
+      "resumen": "Entre los que oyen a los discípulos en Jerusalén hay partos, medos, elamitas y habitantes de Mesopotamia.",
+      "fecha": {
+        "desde": 33,
+        "hasta": 33,
+        "precision": "día",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "6 de siván de 33 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Jerusalén",
+          "tipo": "ciudad",
+          "lat": 31.77667,
+          "lon": 35.23417,
+          "coord_fuente": "openbible:a15257a",
+          "coord_url": "https://www.openbible.info/geo/ancient/a15257a/jerusalem"
+        },
+        {
+          "nombre": "Mesopotamia",
+          "tipo": "región",
+          "lat": 36.86444,
+          "lon": 39.03278,
+          "coord_fuente": "openbible:a43f60f",
+          "coord_url": "https://www.openbible.info/geo/ancient/a43f60f/mesopotamia"
+        },
+        {
+          "nombre": "Media",
+          "tipo": "región",
+          "lat": 34.8065,
+          "lon": 48.51625,
+          "coord_fuente": "openbible:ad2fadf",
+          "coord_url": "https://www.openbible.info/geo/ancient/ad2fadf/media"
+        },
+        {
+          "nombre": "Elam",
+          "tipo": "región",
+          "lat": 32.18922,
+          "lon": 48.25778,
+          "coord_fuente": "openbible:a7e3a59",
+          "coord_url": "https://www.openbible.info/geo/ancient/a7e3a59/elam"
+        }
+      ],
+      "fuentes": [
+        "hch-2",
+        "si-3"
+      ],
+      "verificado": true,
+      "nota": "Arista “procedencia” entre Jerusalén y la región de origen; buen ejemplo para el mapa de flujos."
+    },
+    {
+      "id": "pedro-en-babilonia",
+      "nivel": 1,
+      "titulo": "Pedro escribe desde Babilonia",
+      "resumen": "Pedro, apóstol de los circuncisos, predica en este centro del judaísmo y escribe su primera carta desde allí; posiblemente también la segunda.",
+      "fecha": {
+        "desde": 62,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "c. 62-64 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "it-pedro-cartas",
+        "it-babilonia",
+        "tnm-tabla",
+        "1pe-5"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "templo-de-bel",
+      "nivel": 1,
+      "titulo": "El templo de Bel sigue en pie",
+      "resumen": "Inscripciones halladas en la ciudad muestran que el templo babilonio de Bel subsistía en 75 e.c. Para el siglo IV la ciudad estaba en ruinas.",
+      "fecha": {
+        "desde": 75,
+        "hasta": 75,
+        "precision": "año",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "tnm",
+        "texto": "75 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "it-babilonia"
+      ],
+      "verificado": true,
+      "nota": "Cae fuera de la ventana por once años; sirve para dibujar la ciudad como viva durante todo el periodo."
+    }
+  ],
+  "nivel_2": [
+    {
+      "id": "fraates-v",
+      "nivel": 2,
+      "titulo": "Reina Fraates V",
+      "resumen": "Rey de reyes del Imperio parto de 2 a.e.c. a 4 e.c. (en la fuente: 2 BC–AD 4).",
+      "fecha": {
+        "desde": -1,
+        "hasta": 4,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "2 a.e.c. – 4 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia (región)",
+          "tipo": "región",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a8394b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a8394b8/babylonia"
+        }
+      ],
+      "fuentes": [
+        "wp-fraates-v"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "artabano-ii",
+      "nivel": 2,
+      "titulo": "Reina Artabano II",
+      "resumen": "Rey de reyes del Imperio parto de 12 a 38/41 e.c., con una interrupción de un año.",
+      "fecha": {
+        "desde": 12,
+        "hasta": 41,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "12 – 38/41 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia (región)",
+          "tipo": "región",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a8394b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a8394b8/babylonia"
+        }
+      ],
+      "fuentes": [
+        "wp-artabano-ii"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "anilai-asinai",
+      "nivel": 2,
+      "titulo": "Anilai y Asinai, un pequeño estado judío",
+      "resumen": "Según Josefo (Antigüedades XVIII, 9), dos hermanos judíos dominaron una parte de Babilonia con permiso del rey parto durante unos quince años; al caer, los judíos de la zona huyeron a Seleucia.",
+      "fecha": {
+        "desde": 18,
+        "hasta": 33,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "c. 18-33 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia (región)",
+          "tipo": "región",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a8394b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a8394b8/babylonia"
+        }
+      ],
+      "fuentes": [
+        "wp-anilai",
+        "wp-nehardea"
+      ],
+      "verificado": true,
+      "nota": "Nehardea, centro del judaísmo babilonio, aún sin coordenada verificada."
+    },
+    {
+      "id": "vologases-i",
+      "nivel": 2,
+      "titulo": "Reina Vologases I",
+      "resumen": "Rey de reyes del Imperio parto de 51 a 78 e.c.: reina cuando Pedro escribe desde Babilonia.",
+      "fecha": {
+        "desde": 51,
+        "hasta": 78,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "51 – 78 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia (región)",
+          "tipo": "región",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a8394b8",
+          "coord_url": "https://www.openbible.info/geo/ancient/a8394b8/babylonia"
+        }
+      ],
+      "fuentes": [
+        "wp-vologases-i"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "capital-ctesifonte",
+      "nivel": 2,
+      "titulo": "La capital parta está en Ctesifonte",
+      "resumen": "La sede del gobierno parto pasó a Ctesifonte, junto al Tigris, al sur de la actual Bagdad.",
+      "fecha": {
+        "desde": -150,
+        "hasta": 64,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "periodo parto"
+      },
+      "lugares": [],
+      "fuentes": [
+        "wp-partia"
+      ],
+      "verificado": true,
+      "nota": "Falta la coordenada de Ctesifonte."
+    },
+    {
+      "id": "fin-de-los-diarios",
+      "nivel": 2,
+      "titulo": "Termina la escritura cuneiforme",
+      "resumen": "Los diarios astronómicos babilonios se escribieron de c. 652 a 61 a.e.c. La última tablilla cuneiforme conocida es un almanaque de Uruk de 79/80 e.c.",
+      "fecha": {
+        "desde": -60,
+        "hasta": 80,
+        "precision": "rango",
+        "aprox": true,
+        "tipo": "anclada",
+        "cronologia": "secular",
+        "texto": "61 a.e.c. – 79/80 e.c."
+      },
+      "lugares": [
+        {
+          "nombre": "Babilonia",
+          "tipo": "ciudad",
+          "lat": 32.54333,
+          "lon": 44.42222,
+          "coord_fuente": "openbible:a217d18",
+          "coord_url": "https://www.openbible.info/geo/ancient/a217d18/babylon-1"
+        }
+      ],
+      "fuentes": [
+        "wp-diarios",
+        "wp-cuneiforme"
+      ],
+      "verificado": true
+    }
+  ],
+  "separacion": "La interfaz muestra nivel 1 y nivel 2 en bloques distintos. El nivel 2 nunca corrige al nivel 1: lo acompaña."
+}

@@ -1,0 +1,337 @@
+{
+  "formato": "biblical-earth/ejemplo-v0",
+  "tema": "Lugares de ubicación incierta: qué dice el nivel 1 y qué candidatos hay",
+  "revisado": "2026-09-26",
+  "convenciones": "Ver README.md: años astronómicos con signo (1 a.e.c. = 0, 2 a.e.c. = -1).",
+  "aviso": "Datos de ejemplo para maquetas. Resúmenes escritos por nosotros; ningún texto copiado de jw.org. Leer siempre la fuente enlazada.",
+  "fuentes": {
+    "tnm-tabla": {
+      "titulo": "Tabla de los libros de la Biblia",
+      "obra": "La Biblia. Traducción del Nuevo Mundo (edición de estudio)",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1001070071",
+      "nivel": 1
+    },
+    "si-3": {
+      "titulo": "Estudio número 3: Sucesos fechados en la corriente del tiempo",
+      "obra": "“Toda Escritura es inspirada de Dios y provechosa”",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1101990130",
+      "nivel": 1
+    },
+    "openbible-geo": {
+      "titulo": "Bible Geocoding Data",
+      "obra": "OpenBible.info (CC BY 4.0)",
+      "url": "https://github.com/openbibleinfo/Bible-Geocoding-Data",
+      "nivel": 2,
+      "licencia": "CC BY 4.0",
+      "uso": "sólo coordenadas"
+    },
+    "it-eden": {
+      "titulo": "Edén",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001256",
+      "nivel": 1
+    },
+    "it-ararat": {
+      "titulo": "Ararat",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000338",
+      "nivel": 1
+    },
+    "it-sinai": {
+      "titulo": "Sinaí",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004135",
+      "nivel": 1
+    },
+    "it-mar-rojo": {
+      "titulo": "Mar Rojo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003669",
+      "nivel": 1
+    },
+    "it-exodo": {
+      "titulo": "Éxodo",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001458",
+      "nivel": 1
+    },
+    "it-pihahirot": {
+      "titulo": "Pihahirot",
+      "obra": "Perspicacia para comprender las Escrituras",
+      "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003484",
+      "nivel": 1
+    },
+    "ob-eden": {
+      "titulo": "Eden 1",
+      "obra": "OpenBible.info",
+      "url": "https://www.openbible.info/geo/ancient/af3daeb/eden-1",
+      "nivel": 2,
+      "licencia": "CC BY 4.0"
+    },
+    "ob-sinai": {
+      "titulo": "Mount Sinai",
+      "obra": "OpenBible.info",
+      "url": "https://www.openbible.info/geo/ancient/abfba2a/mount-sinai",
+      "nivel": 2,
+      "licencia": "CC BY 4.0"
+    },
+    "ob-ararat": {
+      "titulo": "Ararat",
+      "obra": "OpenBible.info",
+      "url": "https://www.openbible.info/geo/ancient/ab89be9/ararat",
+      "nivel": 2,
+      "licencia": "CC BY 4.0"
+    },
+    "ob-mar-rojo": {
+      "titulo": "Red Sea 1",
+      "obra": "OpenBible.info",
+      "url": "https://www.openbible.info/geo/ancient/a3d18b2/red-sea-1",
+      "nivel": 2,
+      "licencia": "CC BY 4.0"
+    },
+    "ob-pihahirot": {
+      "titulo": "Pi-hahiroth",
+      "obra": "OpenBible.info",
+      "url": "https://www.openbible.info/geo/ancient/ababfd2/pi-hahiroth",
+      "nivel": 2,
+      "licencia": "CC BY 4.0"
+    },
+    "btm": {
+      "titulo": "Biblical Timeline Map",
+      "obra": "PeterSShane (sin licencia)",
+      "url": "https://petersshane.github.io/biblical-timeline-map/",
+      "nivel": "referencia",
+      "uso": "sólo para comparar"
+    },
+    "theographic": {
+      "titulo": "theographic-bible-metadata, places.json",
+      "obra": "Theographic (CC BY-SA 4.0)",
+      "url": "https://github.com/robertrouse/theographic-bible-metadata",
+      "nivel": "referencia",
+      "uso": "sólo para comparar"
+    }
+  },
+  "items": [
+    {
+      "id": "eden",
+      "nombre": "Edén (el jardín)",
+      "referencia": "Gé 2:8-14",
+      "que_dice_nivel_1": "La ubicación es conjetural. El texto hebreo favorece una región montañosa al norte de las llanuras de Mesopotamia, donde nacen el Tigris y el Éufrates. La ubicación tradicional es una zona montañosa a unos 225 km al suroeste del monte Ararat y unos kilómetros al sur del lago Van. El Diluvio hizo desaparecer el jardín y su lugar llegó a ser desconocido.",
+      "representacion": "zona difusa, nunca punto; etiqueta “ubicación desconocida desde el Diluvio”",
+      "candidatos": [
+        {
+          "nombre": "Tierras altas al sur del lago Van (ubicación tradicional según Perspicacia)",
+          "lat": 38.27,
+          "lon": 42.46,
+          "estado": "favorecida por nivel 1",
+          "coord_fuente": "cálculo propio",
+          "fuentes": [
+            "it-eden"
+          ],
+          "nota": "Coordenada calculada por nosotros: 225 km al suroeste del monte Ararat. Es el centro de una zona, no un sitio.",
+          "radio_km": 150,
+          "coord_calculada_por_nosotros": true
+        },
+        {
+          "nombre": "Baja Mesopotamia, cabecera del golfo Pérsico (Calvino, Delitzsch)",
+          "lat": 30.96,
+          "lon": 46.1,
+          "estado": "mencionada y no favorecida por nivel 1",
+          "coord_fuente": "openbible: “within 200 km of Tell el Muqayyar”",
+          "fuentes": [
+            "it-eden",
+            "ob-eden"
+          ],
+          "nota": "Perspicacia explica que así el Pisón y el Guihón serían afluentes, no brazos de una fuente común.",
+          "radio_km": 200,
+          "puntuacion_openbible": 100
+        }
+      ],
+      "errores_que_evitamos": [
+        "biblical-timeline-map dibuja Edén como un punto en 30.585, 47.816 (Irak) con la etiqueta “traditional”: contradice la ubicación tradicional que da Perspicacia.",
+        "Theographic lo marca “Unlocated” y sin coordenadas: correcto, pero la interfaz no puede mostrar nada.",
+        "OpenBible puntúa “unknown location” con 447/1000 como opción más votada."
+      ],
+      "fuentes": [
+        "it-eden",
+        "ob-eden",
+        "btm",
+        "theographic"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "montes-de-ararat",
+      "nombre": "Montañas de Ararat",
+      "referencia": "Gé 8:4",
+      "que_dice_nivel_1": "La Biblia dice que el arca se asentó en las “montañas de Ararat”: una cadena y una región (la Urartu de las inscripciones asirias) en la zona montañosa del lago de Van, entre la cabecera del Tigris y el Cáucaso. El nombre se aplica también al monte más alto, de unos 5.165 m, donde la tradición sitúa el arca.",
+      "representacion": "región sombreada (Urartu) + marcador del monte etiquetado “tradición”",
+      "candidatos": [
+        {
+          "nombre": "Región de Ararat / Urartu",
+          "lat": 39.70276,
+          "lon": 44.30038,
+          "estado": "texto bíblico (región, no punto)",
+          "coord_fuente": "openbible:ab89be9",
+          "fuentes": [
+            "it-ararat",
+            "ob-ararat"
+          ],
+          "nota": "OpenBible da un punto representativo; la zona real es la región del lago de Van. El radio es una estimación nuestra.",
+          "radio_km": 250
+        },
+        {
+          "nombre": "Monte Ararat (Agri Dagi)",
+          "lat": 39.70276,
+          "lon": 44.30038,
+          "estado": "tradición",
+          "coord_fuente": "openbible:ab89be9",
+          "fuentes": [
+            "it-ararat"
+          ],
+          "nota": "La Biblia no nombra un pico. Mismo punto que el anterior en OpenBible; conviene separar pico y región con datos de relieve."
+        }
+      ],
+      "fuentes": [
+        "it-ararat",
+        "ob-ararat"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "monte-sinai",
+      "nombre": "Monte Sinaí (Horeb)",
+      "referencia": "Éx 19:1, 2",
+      "que_dice_nivel_1": "No se sabe con seguridad. La tradición lo liga a una cordillera de granito en el sur de la península, con dos cumbres: Ras Safsafa y Jebel Musa. La tradición elige Jebel Musa; muchos eruditos prefieren Ras Safsafa porque frente a ella está la llanura de er-Raha, y frente a Jebel Musa no hay una llanura suficiente.",
+      "representacion": "abanico de candidatos con peso visual; los dos de nivel 1 destacados",
+      "candidatos": [
+        {
+          "nombre": "Ras Safsafa",
+          "lat": 28.555556,
+          "lon": 33.967222,
+          "estado": "probable según eruditos citados por nivel 1",
+          "coord_fuente": "openbible-modern:m5e6c65",
+          "fuentes": [
+            "it-sinai",
+            "ob-sinai"
+          ],
+          "nota": "Llanura de er-Raha enfrente (unos 3 × 1 km).",
+          "puntuacion_openbible": 55
+        },
+        {
+          "nombre": "Jebel Musa",
+          "lat": 28.539722,
+          "lon": 33.973333,
+          "estado": "tradición (citada por nivel 1)",
+          "coord_fuente": "openbible-modern:mb374b4",
+          "fuentes": [
+            "it-sinai",
+            "ob-sinai"
+          ],
+          "nota": "Opción más votada en OpenBible.",
+          "puntuacion_openbible": 465
+        },
+        {
+          "nombre": "Har Karkom",
+          "lat": 30.283333,
+          "lon": 34.75,
+          "estado": "otra propuesta (sólo nivel 2)",
+          "coord_fuente": "openbible-modern:m0cc900",
+          "fuentes": [
+            "ob-sinai"
+          ],
+          "nota": "No la menciona Perspicacia.",
+          "puntuacion_openbible": 103
+        },
+        {
+          "nombre": "Jebel Sin Bishar",
+          "lat": 29.671,
+          "lon": 32.961,
+          "estado": "otra propuesta (sólo nivel 2)",
+          "coord_fuente": "openbible-modern:m1bfeb1",
+          "fuentes": [
+            "ob-sinai"
+          ],
+          "nota": "No la menciona Perspicacia.",
+          "puntuacion_openbible": 89
+        }
+      ],
+      "errores_que_evitamos": [
+        "Theographic da un único punto (29.5, 34) marcado como verificado contra Pleiades: esconde que hay candidatos."
+      ],
+      "fuentes": [
+        "it-sinai",
+        "ob-sinai",
+        "theographic"
+      ],
+      "verificado": true
+    },
+    {
+      "id": "cruce-del-mar-rojo",
+      "nombre": "Cruce del mar Rojo (Pihahirot)",
+      "referencia": "Éx 14:1-3, 21-29; Hch 7:36; Heb 11:29",
+      "que_dice_nivel_1": "Cruzaron el mar Rojo, no un pantano: Hechos 7:36 y Hebreos 11:29 usan “mar Rojo”. Perspicacia considera tentativa una ubicación de Pihahirot en la llanura al sureste de Jebel ʽAtaqah, unos 20 km al suroeste de Suez; el paso iría de Ras ʽAtaqah a las cercanías de ʽAyun Musa, casi 10 km de orilla a orilla. Descarta los lagos Amargos y el lago Serbonis.",
+      "representacion": "franja de cruce dibujada como zona tentativa + candidatos descartados en gris con su motivo",
+      "candidatos": [
+        {
+          "nombre": "Golfo de Suez: de Ras ʽAtaqah a ʽAyun Musa",
+          "lat": 29.94,
+          "lon": 32.48,
+          "estado": "tentativa según nivel 1",
+          "coord_fuente": "cálculo propio sobre openbible",
+          "fuentes": [
+            "it-pihahirot",
+            "it-exodo"
+          ],
+          "nota": "Punto medio calculado por nosotros entre Jabal Ataqah (29.9961, 32.3075) y Uyun Musa (29.8769, 32.6583), ambos de OpenBible. Dibujar la franja entre los dos, no un punto.",
+          "radio_km": 10,
+          "coord_calculada_por_nosotros": true
+        },
+        {
+          "nombre": "Lagos Amargos",
+          "lat": 30.338333,
+          "lon": 32.377778,
+          "estado": "descartada por nivel 1",
+          "coord_fuente": "openbible-modern:md254e8",
+          "fuentes": [
+            "it-pihahirot",
+            "ob-mar-rojo"
+          ],
+          "nota": "Opción de muchos eruditos; Perspicacia la rechaza.",
+          "puntuacion_openbible": 304
+        },
+        {
+          "nombre": "Lago Serbonis (Bardawil)",
+          "lat": 31.190556,
+          "lon": 33.162222,
+          "estado": "descartada por nivel 1",
+          "coord_fuente": "openbible-modern:md61725",
+          "fuentes": [
+            "it-exodo"
+          ],
+          "nota": "Contradice Éx 13:17, 18: Dios no los llevó por el camino de los filisteos."
+        },
+        {
+          "nombre": "Lago Timsah",
+          "lat": 30.577778,
+          "lon": 32.288889,
+          "estado": "otra propuesta (sólo nivel 2)",
+          "coord_fuente": "openbible-modern:mf9ae18",
+          "fuentes": [
+            "ob-mar-rojo"
+          ],
+          "nota": "",
+          "puntuacion_openbible": 128
+        }
+      ],
+      "fuentes": [
+        "it-mar-rojo",
+        "it-exodo",
+        "it-pihahirot",
+        "ob-mar-rojo",
+        "ob-pihahirot"
+      ],
+      "verificado": true
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+<!doctype html>
+<!--
+  09 · Sincronía: ¿quién había en Israel en la época de los medos y persas? Cursor en 520 a.e.c.
+  Datos: data/israel-medos-y-persas.json (fechas TNM de Perspicacia, estudio 3 de "Toda Escritura" y Tabla de los libros).
+  Comprobado además en wol.jw.org el 27-09-2026:
+  - Ag 1:1, 14, 15: segundo año de Darío; Zorobabel, gobernador de Judá; Josué, sumo sacerdote; la obra empieza el día 24
+    del sexto mes: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  - Esd 5:1, 2: Ageo y Zacarías profetizan; Zorobabel y Jesúa retoman la obra: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/5
+  - Esd 4:6 (Asuero), 4:7 (Artajerjes), 4:24 (obra detenida hasta el segundo año de Darío): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/4
+  - Da 5:30, 31: muere Belsasar; Darío el medo recibe el reino con unos 62 años: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5
+  - Ne 1:1: Nehemías en Susa en kislev del año 20: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  - Ne 12:22: "Darío el persa": https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/12
+  - Perspicacia "Asuero" (Cambises en Esd 4:6, Jerjes I en Ester): https://wol.jw.org/es/wol/d/r4/lp-s/1200000142
+  - Perspicacia "Artajerjes" (Bardiya en Esd 4:7; ascenso de Artajerjes I en 475, secular 465): https://wol.jw.org/es/wol/d/r4/lp-s/1200000389
+  - Perspicacia "Darío": https://wol.jw.org/es/wol/d/r4/lp-s/1200001124
+  Sin verificar (cálculo nuestro, marcado en pantalla): Ester reina en 489 y decreto de Hamán en 484 a.e.c.
+  La ruta del regreso de 537 es un trazado supuesto: el texto no la da.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>09 · Israel en la época de los medos y persas</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  .s-app { width: 100vw; height: 100vh; overflow: hidden; display: grid; grid-template-rows: var(--topbar-h) 56px 464px 1fr; background: var(--paper); }
+
+  /* Pregunta de forma fija */
+  .s-q { display: flex; align-items: center; gap: 12px; padding: 0 22px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .s-q__text { font: 600 21px/1 var(--font-serif); color: var(--ink); }
+  .s-q__slot { display: inline-flex; align-items: center; gap: 6px; font: 600 21px/1 var(--font-serif); color: var(--emp-persia); border-bottom: 2px solid var(--emp-persia); padding: 0 2px 3px; }
+  .s-q__slot .be-i { width: 14px; height: 14px; }
+
+  /* Sincronía */
+  .s-sync { position: relative; background: var(--surface); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 200px 1fr; }
+  .s-labels { background: var(--surface-2); border-right: 1px solid var(--line); padding-top: 26px; }
+  .s-track { position: relative; overflow: hidden; }
+  .s-dl--dim { opacity: .45; }
+  .s-grp { height: 18px; display: flex; align-items: center; gap: 6px; padding: 0 14px; font-size: 10px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); background: rgba(239, 232, 218, .55); border-top: 1px solid var(--line); }
+  .s-row { height: 23px; display: flex; align-items: center; gap: 7px; padding: 0 14px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap; border-top: 1px solid rgba(228,219,203,.6); }
+  .s-row small { font-weight: 500; color: var(--ink-3); font-size: 10.5px; }
+  .s-row--dim { color: var(--ink-4); }
+  .s-lanes { position: absolute; left: 0; right: 0; top: 26px; }
+  .s-trow { position: relative; height: 23px; border-top: 1px solid rgba(228,219,203,.6); }
+  .s-tgrp { height: 18px; border-top: 1px solid var(--line); background: rgba(239, 232, 218, .35); }
+  .s-sp { position: absolute; top: 3px; height: 17px; border-radius: 4px; color: #fff; font-size: 10.5px; font-weight: 650; line-height: 17px; padding: 0 7px; white-space: nowrap; overflow: hidden; }
+  .s-sp--fs { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 30px); padding-left: 24px; }
+  .s-sp--fe { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 34px), transparent 100%); }
+  .s-sp--fb { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 26px, #000 calc(100% - 34px), transparent 100%); padding-left: 22px; }
+  .s-sp--soft { background: transparent !important; border: 1.5px dashed currentColor; line-height: 14px; }
+  .s-sp--co { background: repeating-linear-gradient(135deg, rgba(122,92,142,.55) 0 4px, rgba(122,92,142,.25) 4px 8px) !important; }
+  .s-sp--sec { background: transparent !important; border: 1.5px dashed #9aa6b5; color: var(--secular); line-height: 14px; }
+  .s-sp--dim { opacity: .38; }
+  .s-sp--on { box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--gold); }
+  .s-dm { position: absolute; top: 5px; width: 12px; height: 12px; margin-left: -6px; transform: rotate(45deg); border-radius: 2px; background: var(--gold); box-shadow: 0 0 0 2px #fff; }
+  .s-dm--unv { background: #fff; border: 2px dashed var(--unverified); box-shadow: none; }
+  .s-dl { position: absolute; top: 3px; margin-left: 11px; font-size: 10.5px; font-weight: 600; color: var(--ink-2); white-space: nowrap; line-height: 17px; }
+  .s-dl b { color: var(--ink); }
+  .s-dl { z-index: 6; background: color-mix(in srgb, var(--surface) 88%, transparent); padding: 0 3px; border-radius: 3px; }
+  .s-dl--unv { color: var(--unverified); }
+  .s-axis { position: absolute; top: 0; left: 0; right: 0; height: 26px; border-bottom: 1px solid var(--line); }
+  .s-tick { position: absolute; top: 0; bottom: 0; }
+  .s-tick::before { content: ""; position: absolute; top: 0; height: 26px; border-left: 1px solid var(--line-2); }
+  .s-tick span { position: absolute; top: 6px; left: 5px; font-size: 10.5px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+  .s-grid { position: absolute; top: 26px; bottom: 0; border-left: 1px solid rgba(211,198,176,.4); }
+  .s-cursor { position: absolute; top: 0; bottom: 0; border-left: 2px solid var(--gold); z-index: 5; }
+  .s-cursor span { position: absolute; top: 3px; left: 0; transform: translateX(-50%); background: var(--gold); color: #fff; font-size: 10.5px; font-weight: 700; padding: 2px 8px; border-radius: 5px; white-space: nowrap; }
+  .s-cursor::before { content: ""; position: absolute; top: 26px; bottom: 0; left: -10px; width: 18px; background: linear-gradient(90deg, rgba(184,137,47,0), rgba(184,137,47,.10), rgba(184,137,47,0)); }
+  .s-band { position: absolute; top: 26px; bottom: 0; background: rgba(122,92,142,.05); }
+
+  /* Fila inferior */
+  .s-bottom { display: grid; grid-template-columns: 1fr 470px 430px; gap: 14px; padding: 14px 22px; min-height: 0; }
+  .s-mapwrap { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-1); }
+  .s-mapwrap .be-map { position: absolute; inset: 0; }
+  .s-card { padding: 12px 16px; overflow: hidden; }
+  .s-now { display: grid; grid-template-columns: 78px 1fr auto; gap: 0 10px; align-items: baseline; padding: 6px 0; border-top: 1px solid var(--line); font-size: 12.8px; line-height: 1.4; }
+  .s-now:first-of-type { border-top: 0; }
+  .s-now dt { color: var(--ink-3); font-weight: 500; font-size: 12px; }
+  .s-now dd { margin: 0; color: var(--ink-2); }
+  .s-now dd b { color: var(--ink); font-weight: 600; }
+  .s-now .be-ref { font-size: 10.5px; }
+  .s-name { padding: 7px 0; border-top: 1px solid var(--line); font-size: 12.5px; line-height: 1.42; color: var(--ink-2); }
+  .s-name:first-of-type { border-top: 0; }
+  .s-name b { color: var(--ink); font-family: var(--font-serif); font-size: 15px; }
+  .s-name .be-ref { font-size: 10.5px; }
+  .s-arrow { color: var(--ink-4); margin: 0 3px; }
+  .s-pop { padding: 9px 12px; font-size: 12px; line-height: 1.4; }
+  .s-pop b { font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="s-app">
+
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>Medopersia</b> · periodo · 539 – 331 a.e.c.</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">520 a.e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Mapa antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--icon be-btn--ghost"><i data-icon="share"></i></span>
+  </header>
+
+  <section class="s-q">
+    <i class="be-i" data-icon="question" style="color:var(--ink-3)"></i>
+    <span class="s-q__text">¿Quién había en</span><span class="s-q__slot">Judá y Jerusalén<i data-icon="chevron-down"></i></span>
+    <span class="s-q__text">en la época de</span><span class="s-q__slot">los medos y persas<i data-icon="chevron-down"></i></span><span class="s-q__text">?</span>
+    <span class="be-spacer"></span>
+    <span class="be-chip be-chip--active"><i class="be-i be-i--sm" data-icon="place"></i>Agrupar por lugar</span>
+    <span class="be-chip"><i class="be-i be-i--sm" data-icon="person"></i>Por persona</span>
+    <span class="be-chip"><i class="be-i be-i--sm" data-icon="filter"></i>Sólo nivel 1</span>
+  </section>
+
+  <!-- Sincronía -->
+  <section class="s-sync">
+    <div class="s-labels" id="labels"></div>
+    <div class="s-track" id="track"></div>
+  </section>
+
+  <section class="s-bottom">
+    <div class="s-mapwrap"><div class="be-map" id="map">
+      <div class="be-mapctl be-mapctl--bl"><div class="be-float be-legend">
+        <div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Regreso de 537 · trazado supuesto, el texto no lo da</div>
+      </div></div>
+    </div></div>
+
+    <article class="be-card s-card">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="clock"></i>Ahora mismo</div>
+      <h2 class="be-card__title" style="font-size:22px;margin-bottom:6px">520 a.e.c. · segundo año de Darío</h2>
+      <dl style="margin:0">
+        <div class="s-now"><dt>Rey</dt><dd><b>Darío I</b>, en su segundo año</dd><a class="be-ref">Ag 1:1</a></div>
+        <div class="s-now"><dt>Judá</dt><dd><b>Zorobabel</b>, gobernador · <b>Josué</b>, sumo sacerdote</dd><a class="be-ref">Ag 1:1</a></div>
+        <div class="s-now"><dt>Profetas</dt><dd><b>Ageo</b> y <b>Zacarías</b> animan al pueblo</dd><a class="be-ref">Esd 5:1</a></div>
+        <div class="s-now"><dt>Qué pasa</dt><dd>Se reanuda la obra del templo, parada desde 522</dd><a class="be-ref">Ag 1:14, 15</a></div>
+        <div class="s-now"><dt>Qué viene</dt><dd>Templo terminado en 515 · <span class="be-muted">dentro de 5 años</span></dd><span></span></div>
+        <div class="s-now"><dt>Sin datos</dt><dd><b>Daniel</b>: su última fecha es el tercer año de Ciro (536)</dd><span></span></div>
+      </dl>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:10px"><span class="be-tier be-tier--1" data-n="1">TNM · Perspicacia · estudio 3</span><span class="be-spacer"></span><a class="be-wol" href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1">Leer Ageo 1 en wol.jw.org</a></div>
+    </article>
+
+    <article class="be-card s-card">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="people"></i>Mismo nombre, otro rey</div>
+      <div style="margin-top:6px">
+        <div class="s-name"><b>Asuero</b> <a class="be-ref">Esd 4:6</a><span class="s-arrow">→</span>probablemente Cambises II. En el libro de Ester<span class="s-arrow">→</span>Jerjes I.</div>
+        <div class="s-name"><b>Artajerjes</b> <a class="be-ref">Esd 4:7</a><span class="s-arrow">→</span>probablemente Bardiya, que para la obra. En Esd 7 y Ne 2<span class="s-arrow">→</span>Artajerjes I.</div>
+        <div class="s-name"><b>Darío</b> <a class="be-ref">Da 5:31</a><span class="s-arrow">→</span>Darío el medo. <a class="be-ref">Ag 1:1</a><span class="s-arrow">→</span>Darío I. «Darío el persa» <a class="be-ref">Ne 12:22</a><span class="s-arrow">→</span>probablemente Darío II.</div>
+      </div>
+      <div class="be-note" style="margin-top:8px;font-size:12px;padding:8px 10px"><span class="be-chrono be-chrono--secular" style="height:20px;flex:none">secular</span><span>Artajerjes I sube al trono en 475 a.e.c. según la cronología TNM y en 465 según la secular. Perspicacia explica la diferencia.</span></div>
+    </article>
+  </section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const F = -544, T = -429;                    // 545 a.e.c. → 430 a.e.c. (años astronómicos)
+  const track = document.getElementById('track'), labels = document.getElementById('labels');
+  const TW = track.clientWidth;
+  const x = (y) => (y - F) / (T - F) * TW;
+  const CUR = -519;                            // 520 a.e.c.
+
+  // Eje, cuadrícula y cursor
+  let axis = '<div class="s-axis">';
+  for (let y = -539; y <= T; y += 10) axis += `<div class="s-tick" style="left:${x(y)}px">${y === CUR ? '' : `<span>${BE.fmtYear(y)}</span>`}</div>`;
+  axis += '</div>';
+  let grid = '';
+  for (let y = -539; y <= T; y += 10) grid += `<div class="s-grid" style="left:${x(y)}px"></div>`;
+  track.insertAdjacentHTML('beforeend', axis + grid + `<div class="s-band" style="left:${x(-538)}px;right:0"></div>`);
+
+  // Filas: [grupo | fila, etiqueta, elementos]
+  const P = 'var(--emp-persia)', J = 'var(--emp-israel)', S = 'var(--node-lugar)', B = 'var(--emp-babilonia)';
+  const rows = [
+    { g: 'Corte del imperio', icon: 'crown' },
+    { l: 'Reyes', items: [
+      { f: -544, t: -538, txt: 'Belsasar', c: B, cls: 'fs', dim: true },
+      { f: -538, t: -529, txt: 'Ciro', c: P, dim: true },
+      { f: -529, t: -521, txt: 'Cambises II', c: '#8d73a0', dim: true },
+      { f: -521, t: -495, txt: 'Darío I · desde 522', c: P, on: true },
+      { f: -495, t: -485, txt: 'Jerjes corregente', c: '#7a5f94', cls: 'soft' },
+      { f: -485, t: -474, txt: 'Jerjes I', c: '#8d73a0', dim: true },
+      { f: -474, t: -423, txt: 'Artajerjes I · desde 475', c: P, dim: true } ] },
+    { l: 'Darío el medo', sub: 'Da 5:31', dim: true, items: [ { f: -538, t: -526, txt: 'desde 539 · fin sin fecha', c: '#9a86ab', cls: 'fe', dim: true } ] },
+    { l: 'Secular', sub: 'nota', dim: true, items: [
+      { f: -485, t: -464, txt: 'Jerjes I · 486-465', cls: 'sec' },
+      { f: -464, t: -423, txt: 'Artajerjes I · desde 465', cls: 'sec' } ] },
+    { g: 'En Babilonia', icon: 'place' },
+    { l: 'Daniel', dim: true, items: [ { f: -560, t: -534, txt: '', c: B, cls: 'fe', dim: true, after: 'al menos hasta 536 · después, sin datos' } ] },
+    { g: 'En Susa, capital persa', icon: 'place' },
+    { l: 'Ester', dim: true, items: [ { f: -492, t: -474, txt: 'de 493 a c. 475', c: S, cls: 'fe', dim: true } ] },
+    { l: 'Mardoqueo', dim: true, items: [ { f: -492, t: -474, txt: 'de 493 a c. 475', c: S, cls: 'fe', dim: true } ] },
+    { g: 'En Judá y Jerusalén', icon: 'place' },
+    { l: 'Zorobabel', sub: 'gobernador', items: [ { f: -536, t: -514, txt: 'guía el regreso · termina el templo', c: J, on: true } ] },
+    { l: 'Josué', sub: 'sumo sacerdote', items: [ { f: -536, t: -514, txt: 'tiempo narrativo', c: J, cls: 'soft', on: true } ] },
+    { l: 'Profetas', items: [
+      { f: -519, t: -517, txt: '', c: '#7d9a5c', on: true, after: '<b>Ageo</b> 520 · <b>Zacarías</b> 520-518' },
+      { f: -442, t: -429, txt: 'Malaquías · d. 443', c: J, cls: 'fs', dim: true } ] },
+    { l: 'Esdras', dim: true, items: [ { f: -467, t: -452, txt: 'llega en 468', c: J, cls: 'fe', dim: true } ] },
+    { l: 'Nehemías', dim: true, items: [
+      { f: -455.8, t: -454.2, txt: '', c: S, dim: true },
+      { f: -454, t: -442, txt: 'muros 455 → corte 443', c: J, dim: true } ] },
+  ];
+  const facts = [
+    [-538, 0, '539', 'cae Babilonia'], [-536, 1, '537', 'regreso a Judá'], [-535, 2, '536', 'fundamento del templo'],
+    [-521, 0, '522', 'se prohíbe la obra'], [-519, 1, '520', 'se reanuda'], [-514, 2, '515', 'templo terminado'],
+    [-488, 0, '489', 'Ester reina', true], [-483, 1, '484', 'decreto de Hamán', true],
+    [-467, 0, '468', 'Esdras regresa'], [-454, 1, '455', 'muros de Jerusalén'], [-442, 2, '443', 'Nehemías vuelve a la corte', false, true],
+  ];
+
+  let lab = '', lanes = '<div class="s-lanes">';
+  for (const r of rows) {
+    if (r.g) { lab += `<div class="s-grp"><i class="be-i be-i--sm" data-icon="${r.icon}"></i>${r.g}</div>`; lanes += '<div class="s-tgrp"></div>'; continue; }
+    lab += `<div class="s-row${r.dim ? ' s-row--dim' : ''}">${r.l}${r.sub ? ` <small>${r.sub}</small>` : ''}</div>`;
+    lanes += '<div class="s-trow">';
+    for (const it of r.items) {
+      const f = Math.max(it.f, F - 2), t = Math.min(it.t, T + 2);
+      const cls = ['s-sp'].concat(it.cls ? ['s-sp--' + it.cls] : []).concat(it.dim ? ['s-sp--dim'] : []).concat(it.on ? ['s-sp--on'] : []);
+      lanes += `<div class="${cls.join(' ')}" style="left:${x(f)}px;width:${x(t) - x(f)}px;${it.cls === 'soft' ? `color:${it.c}` : it.c ? `background:${it.c}` : ''}">${it.txt}</div>`;
+      if (it.after) lanes += `<div class="s-dl${it.dim ? ' s-dl--dim' : ''}" style="left:${x(t)}px">${it.after}</div>`;
+    }
+    lanes += '</div>';
+  }
+  // Hechos en tres filas
+  lab += `<div class="s-grp"><i class="be-i be-i--sm" data-icon="event"></i>Hechos</div>`; lanes += '<div class="s-tgrp"></div>';
+  for (let k = 0; k < 3; k++) {
+    lab += `<div class="s-row">${k === 0 ? 'Fechados' : ''}${k === 2 ? '<small><span class="be-tier be-tier--unverified" data-n="?" style="height:18px">cálculo nuestro</span></small>' : ''}</div>`;
+    lanes += '<div class="s-trow">';
+    for (const [y, row, yr, t, unv, left] of facts) if (row === k) {
+      lanes += `<div class="s-dm${unv ? ' s-dm--unv' : ''}" style="left:${x(y)}px"></div><div class="s-dl${unv ? ' s-dl--unv' : ''}" style="left:${x(y)}px;${left ? 'margin-left:-11px;transform:translateX(-100%)' : ''}"><b>${yr}</b> ${t}${unv ? ' · sin verificar' : ''}</div>`;
+    }
+    lanes += '</div>';
+  }
+  lanes += '</div>';
+  labels.innerHTML = lab;
+  track.insertAdjacentHTML('beforeend', lanes + `<div class="s-cursor" style="left:${x(CUR)}px"><span>520 a.e.c.</span></div>`);
+
+  // ---------- Mapa del imperio ----------
+  const map = BE.createMap(document.getElementById('map'), { base: 'mundo', style: 'antiguo', bounds: [33.2, 27.2, 54.8, 38.6], fit: 'contain' });
+  map.label('Imperio medopersa', 44.5, 37.3, { kind: 'empire', size: 15 });
+  map.label('Judá', 35.3, 31.2, { kind: 'province', size: 13 });
+  map.label('Media', 48.8, 35.4, { kind: 'region', size: 12 });
+  map.label('Elam', 48.9, 31.2, { kind: 'region', size: 12 });
+  map.label('Persia', 53.6, 29.1, { kind: 'region', size: 12 });
+  map.route(['babilonia', [41.4, 34.4], [38.6, 35.7], 'hamat', 'damasco', 'jerusalen'], { kind: 'approx', smooth: true, arrowEvery: 220 });
+  map.city('jerusalen', { variant: 'current', side: 'bottom' });
+  map.city('babilonia', { variant: 'major', side: 'bottom' });
+  map.city('susa', { variant: 'major', side: 'bottom' });
+  map.city('ecbatana', { variant: 'minor' });
+  map.city('persepolis', { variant: 'minor', side: 'left' });
+  map.city('pasargada', { variant: 'minor', side: 'top' });
+  map.city('damasco', { variant: 'minor', label: '' });
+  map.city('hamat', { variant: 'minor', label: '' });
+  map.pop('jerusalen', `<div class="s-pop"><div class="be-caps be-muted" style="margin-bottom:3px">En Jerusalén · 520 a.e.c.</div><b>Zorobabel</b>, <b>Josué</b>, <b>Ageo</b> y <b>Zacarías</b></div>`, { width: 240, dx: 6, dy: -14 });
+});
+</script>
+</body>
+</html>

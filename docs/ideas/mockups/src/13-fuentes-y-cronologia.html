@@ -1,0 +1,251 @@
+<!doctype html>
+<!--
+  13 · Ficha de un hecho, pestaña «Fuentes»: niveles, discrepancia de fechas, hallazgo con foto y datos sin verificar.
+  Comprobado el 27-09-2026 en wol.jw.org:
+  - Hch 18:12-17 y notas de estudio de Hch 18 (procónsul; Acaya senatorial de 27 a.e.c. a 15 e.c. y otra vez desde 44 e.c.;
+      capital Corinto): https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  - Perspicacia «Galión»: https://wol.jw.org/es/wol/d/r4/lp-s/1200001603
+      procónsul de Acaya; inscripción de Delfos con su nombre; carta de Claudio, aclamación 26, probablemente primera mitad de 52;
+      proconsulado del verano de 51 al verano de 52, «algunos eruditos» prefieren 52-53;
+      según fuentes seglares nació en Córdoba y era hermano mayor de Séneca el filósofo.
+  - Perspicacia «Erasto»: https://wol.jw.org/es/wol/d/r4/lp-s/1200001413 (pavimento hallado en 1929; no se sabe si es el de Ro 16:23)
+  - Pablo en Corinto del otoño de 50 a la primavera de 52: data/viajes-de-pablo.json; 1Te c. 50 y 2Te c. 51: data/cartas-de-pablo.json.
+  Sin verificar (cálculo nuestro): el juicio ante Galión cae entre el verano de 51 (inicio del proconsulado) y la primavera de 52
+  (salida de Pablo de Corinto). Ninguna fuente lo dice así.
+  Foto: kit/photos/galion-delfos.jpg · Gérard · CC BY-SA 4.0 · Wikimedia Commons.
+  Coordenadas: OpenBible.info (CC BY 4.0).
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>13 · Fuentes y cronología de un hecho</title>
+<meta name="mockup-size" content="1600x1000">
+<link rel="stylesheet" href="../kit/tokens.css">
+<link rel="stylesheet" href="../kit/components.css">
+<script src="../kit/icons.js"></script>
+<script src="../kit/geo.js"></script>
+<style>
+  :root { --panel-w: 720px; --timeline-h: 196px; }
+  .ttl { display: flex; align-items: flex-start; gap: 12px; margin-top: 10px; }
+  .ttl h1 { font-family: var(--font-serif); font-size: 27px; font-weight: 600; line-height: 1.1; margin: 0; }
+  .ttl p { margin: 3px 0 0; font-size: var(--fs-sm); color: var(--ink-3); }
+  .be-panel__body { padding: 14px 18px 16px; gap: 12px; }
+  .sec { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 8px; }
+  .sec::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+
+  /* Regla de fechas */
+  .ruler { position: relative; margin: 6px 0 0; }
+  .ruler__axis { position: relative; height: 18px; margin-left: 150px; border-bottom: 1px solid var(--line-2); }
+  .ruler__axis span { position: absolute; top: 0; transform: translateX(-50%); font-size: var(--fs-2xs); font-weight: 700; color: var(--ink-3); }
+  .rrow { display: grid; grid-template-columns: 150px 1fr; align-items: center; height: 28px; }
+  .rrow__lab { font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); display: flex; align-items: center; gap: 6px; }
+  .rrow__track { position: relative; height: 28px; border-bottom: 1px dashed var(--line); }
+  .bar { position: absolute; top: 5px; height: 18px; border-radius: 5px; font-size: 10.5px; font-weight: 700; line-height: 18px; padding: 0 7px; white-space: nowrap; overflow: hidden; }
+  .bar--paul { background: var(--node-persona); color: #fff; -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent); mask-image: linear-gradient(90deg, #000 80%, transparent); }
+  .bar--tnm { background: var(--gold); color: #fff; box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--gold); }
+  .bar--alt { background: var(--secular-soft); color: var(--secular); border: 1.5px dashed #9aa7b8; line-height: 15px; }
+  .bar--unv { background: repeating-linear-gradient(135deg, var(--unverified-soft) 0 5px, #fff 5px 10px); color: var(--unverified); border: 1.5px dashed var(--unverified); line-height: 15px; }
+  .tick { position: absolute; top: 18px; bottom: 0; border-left: 1px solid rgba(211,198,176,.6); }
+
+  /* Fuentes */
+  .src { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: start; padding: 9px 0; border-top: 1px solid var(--line); }
+  .src:first-of-type { border-top: 0; }
+  .src__ic { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; }
+  .src__ic--1 { background: var(--tier1-soft); color: var(--tier1); }
+  .src__ic--2 { background: var(--tier2-soft); color: var(--tier2); }
+  .src__ic--u { background: var(--unverified-soft); color: var(--unverified); }
+  .src__t { font-weight: 600; font-size: var(--fs-md); line-height: 1.25; }
+  .src__d { font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.4; margin-top: 2px; }
+  .src__c { font-size: var(--fs-2xs); color: var(--ink-4); font-weight: 600; margin-top: 3px; }
+  .src__end { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .lvl { display: flex; align-items: center; gap: 10px; }
+  .lvl .be-tier { height: 24px; font-size: var(--fs-xs); }
+  .lvl span.why { font-size: var(--fs-xs); color: var(--ink-3); }
+  .find { display: grid; grid-template-columns: 138px 1fr; gap: 0; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; background: var(--surface); margin: 6px 0 2px; }
+  .find .be-photo { height: 100%; min-height: 176px; }
+  .find .be-photo img { object-position: 50% 42%; }
+  .find__pad { padding: 10px 12px; }
+  .find__pad .be-kv { grid-template-columns: 74px 1fr; font-size: var(--fs-xs); gap: 4px 10px; }
+  .credit { font-size: var(--fs-2xs); color: var(--ink-3); margin-top: 8px; }
+  .unv { border: 1.5px dashed #d7a5b5; background: repeating-linear-gradient(135deg, rgba(246,226,232,.55) 0 8px, rgba(255,253,248,.9) 8px 16px); border-radius: var(--r-md); padding: 10px 12px; }
+  .unv + .unv { margin-top: 8px; }
+  .unv__t { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: var(--fs-sm); }
+  .unv__d { font-size: var(--fs-xs); color: var(--ink-2); margin-top: 4px; line-height: 1.4; }
+  .uncertain-id { border: 1.5px dashed #c8b7d8; background: #f6f2f9; border-radius: var(--r-md); padding: 10px 12px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .foot-actions { display: flex; gap: 8px; align-items: center; }
+  .dlink { position: absolute; transform: translate(-50%, -50%); font-size: var(--fs-2xs); font-weight: 700; color: var(--node-hallazgo); background: rgba(255,253,248,.95); border: 1px solid #cfd8bd; border-radius: var(--r-pill); padding: 2px 8px; white-space: nowrap; }
+  .be-city.find-pin .be-city__dot { background: var(--node-hallazgo); border-color: #fff; box-shadow: 0 0 0 1.5px var(--node-hallazgo); width: 12px; height: 12px; border-radius: 3px; transform: rotate(45deg); }
+  .cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 16px !important; align-content: start; }
+  .col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .dates { display: flex; flex-direction: column; gap: 6px; }
+  .drow { display: flex; align-items: center; gap: 8px; font-size: var(--fs-xs); color: var(--ink-2); }
+  .drow b { font-weight: 700; color: #6e4f15; }
+  .srcs .src { grid-template-columns: 28px 1fr; padding: 8px 0; }
+  .srcs .src__t { display: flex; justify-content: space-between; gap: 8px; font-size: var(--fs-sm); }
+  .srcs .be-wol { font-size: var(--fs-xs); }
+  .find { display: block; }
+  .find .be-photo { height: 128px; min-height: 0; }
+  .find__pad { padding: 8px 12px; }
+  .be-legend .be-city--current::before { width: 24px; height: 24px; margin: -12px 0 0 -12px; }
+  .be-panel::after { height: 24px; }
+  .find .be-photo img { object-position: 50% 40%; }
+</style>
+</head>
+<body>
+<div class="be-app">
+  <header class="be-topbar">
+    <div class="be-logo"><span class="be-logo__mark"></span>biblical-earth</div>
+    <div class="be-search"><i data-icon="search"></i><span class="be-search__text"><b>galion</b> · persona, lugar, capítulo o año</span><span class="be-kbd">/</span></div>
+    <div class="be-spacer"></div>
+    <div class="be-date"><span class="be-date__value">52 e.c.</span><span class="be-date__hint">cronología TNM</span></div>
+    <div class="be-seg"><span class="be-seg__opt be-seg__opt--on"><i class="be-i be-i--sm" data-icon="scroll"></i>Antiguo</span><span class="be-seg__opt"><i class="be-i be-i--sm" data-icon="globe"></i>Actual</span></div>
+    <span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="filter"></i>Sólo nivel 1</span>
+  </header>
+
+  <main class="be-map" id="map">
+    <div class="be-mapctl be-mapctl--tr">
+      <div class="be-float be-zoombtns"><span><i data-icon="plus"></i></span><span><i data-icon="minus"></i></span><span><i data-icon="layers"></i></span></div>
+    </div>
+    <div class="be-mapctl be-mapctl--bl">
+      <div class="be-float be-legend">
+        <div class="be-legend__row"><span class="be-city be-city--current" style="position:relative;transform:none;width:26px;height:18px;justify-content:center"><span class="be-city__dot" style="width:12px;height:12px"></span></span>Dónde ocurre el hecho</div>
+        <div class="be-legend__row"><span class="be-city find-pin" style="position:relative;transform:none;width:26px;justify-content:center"><span class="be-city__dot"></span></span>Dónde se halló la prueba</div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="be-panel">
+    <div class="be-panel__head">
+      <div class="be-crumbs"><span>Corinto</span><span class="be-sep">›</span><span>c. 51-52 e.c.</span><span class="be-sep">›</span><span>Pablo ante Galión</span></div>
+      <div class="ttl">
+        <span class="be-node be-node--evento be-node--lg"><i data-icon="event" style="width:26px;height:26px"></i></span>
+        <div style="flex:1"><h1>Pablo ante el tribunal de Galión</h1><p>Corinto, capital de la provincia de Acaya · <a class="be-ref">Hch 18:12-17</a></p></div>
+        <div class="foot-actions"><span class="be-btn be-btn--sm be-btn--ghost"><i class="be-i be-i--sm" data-icon="share"></i>Citar</span></div>
+      </div>
+      <div class="be-tabs"><span class="be-tab">Resumen</span><span class="be-tab be-tab--on">Fuentes y fechas<b>6</b></span><span class="be-tab">Conexiones<b>9</b></span><span class="be-tab">Historial<b>4</b></span></div>
+    </div>
+
+    <div class="be-panel__body cols">
+      <div class="col">
+        <div class="sec">Cuándo</div>
+        <div class="dates">
+          <div class="drow"><span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>verano 51 – verano 52</span><span>Galión, procónsul · <b>cronología TNM</b></span></div>
+          <div class="drow"><span class="be-chrono be-chrono--secular">52-53 e.c.</span><span>otra propuesta · «algunos eruditos»</span></div>
+          <div class="drow"><span class="be-chrono be-chrono--approx">otoño 50 – primavera 52</span><span>Pablo en Corinto</span></div>
+        </div>
+        <div class="be-note" style="padding:8px 10px;font-size:var(--fs-xs)"><i class="be-i be-i--sm" data-icon="info" style="margin-top:1px"></i><span>Usamos la fecha de Perspicacia. La otra propuesta se ve en gris en la línea de tiempo, con su fuente, y no mueve el cursor.</span></div>
+
+        <div class="lvl"><span class="be-tier be-tier--1" data-n="1">Nivel 1 · Biblia y wol.jw.org</span></div>
+        <div class="srcs">
+          <div class="src">
+            <span class="src__ic src__ic--1"><i class="be-i be-i--sm" data-icon="book"></i></span>
+            <div><div class="src__t">Hechos 18:12-17 <a class="be-wol">Leer</a></div><div class="src__d">Galión, procónsul de Acaya, rechaza la acusación contra Pablo.</div></div>
+          </div>
+          <div class="src">
+            <span class="src__ic src__ic--1"><i class="be-i be-i--sm" data-icon="info"></i></span>
+            <div><div class="src__t">Nota de estudio · «procónsul» <a class="be-wol">Leer</a></div><div class="src__d">Acaya dependía del Senado de 27 a.e.c. a 15 e.c. y otra vez desde 44 e.c.: el título es exacto.</div></div>
+          </div>
+          <div class="src">
+            <span class="src__ic src__ic--1"><i class="be-i be-i--sm" data-icon="book"></i></span>
+            <div><div class="src__t">Perspicacia · «Galión» <a class="be-wol">Leer</a></div><div class="src__d">Fecha del proconsulado a partir de la inscripción de Delfos.</div></div>
+          </div>
+          <div class="src__c">Las tres, comprobadas el 27-09-2026</div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:2px"><span class="be-btn be-btn--sm"><i class="be-i be-i--sm" data-icon="settings"></i>Proponer una corrección</span><span class="be-btn be-btn--sm be-btn--ghost"><i class="be-i be-i--sm" data-icon="clock"></i>Historial del dato</span></div>
+      </div>
+
+      <div class="col">
+        <div class="lvl"><span class="be-tier be-tier--2" data-n="2">Nivel 2 · Arqueología</span><span class="why">apoya; nunca corrige al nivel 1</span></div>
+        <div class="find">
+          <figure class="be-photo">
+            <img src="../kit/photos/galion-delfos.jpg" alt="">
+            <span class="be-photo__badge be-tier be-tier--2" data-n="2">Hallazgo</span>
+            <figcaption><b>Inscripción de Galión · Delfos</b><span class="be-photo__credit">Foto: Gérard · CC BY-SA 4.0 · Wikimedia Commons · recuadro del autor</span></figcaption>
+          </figure>
+          <div class="find__pad">
+            <dl class="be-kv">
+              <dt>Qué es</dt><dd>Fragmentos de una carta del emperador Claudio que nombra al procónsul Galión</dd>
+              <dt>Fecha</dt><dd>Aclamación 26 de Claudio: probablemente primera mitad de 52 e.c.</dd>
+              <dt>Dónde</dt><dd>Delfos, a unos 70 km de Corinto</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="src" style="padding:0;border-top:0;align-items:center">
+          <span class="src__ic src__ic--2"><i class="be-i be-i--sm" data-icon="target"></i></span>
+          <div><div class="src__d"><b>Coordenadas:</b> OpenBible.info · CC BY 4.0 · sólo el punto</div></div>
+        </div>
+
+        <div class="lvl"><span class="be-tier be-tier--unverified" data-n="?">Sin verificar e inciertos</span></div>
+        <div class="unv">
+          <div class="unv__t"><i class="be-i be-i--sm" data-icon="hourglass" style="color:var(--unverified)"></i>Fecha del juicio</div>
+          <div class="unv__d">Entre el verano de 51 y la primavera de 52. <b>Cálculo nuestro</b>: ninguna fuente lo dice así.</div>
+        </div>
+        <div class="uncertain-id">
+          <div class="unv__t"><i class="be-i be-i--sm" data-icon="question" style="color:var(--zone)"></i>¿El mismo Erasto?</div>
+          <div class="unv__d">Un pavimento de Corinto (1929) nombra a un Erasto. No se sabe si es el de <a class="be-ref">Ro 16:23</a>.</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <section class="be-timeline" id="timeline"></section>
+</div>
+
+<script>
+BE.ready(async () => {
+  const map = BE.createMap(document.getElementById('map'), { base: 'mediterraneo', style: 'antiguo', bounds: [20.3, 36.35, 25.4, 39.75] });
+  // Provincia de Acaya: zona aproximada (el Peloponeso y parte de la Grecia continental; nota de estudio de Hch 18:12)
+  map.label('Acaya', 22.2, 37.55, { kind: 'province', size: 20 });
+  map.label('provincia senatorial', 22.2, 37.38, { kind: 'region', size: 10.5 });
+  map.label('Macedonia', 22.3, 39.3, { kind: 'region' });
+  map.label('Mar Egeo', 24.35, 36.85, { kind: 'sea', size: 20 });
+  map.label('golfo de Corinto', 22.5, 38.2, { kind: 'sea', size: 12.5, rotate: -18 });
+
+  map.route(['delfos', 'corinto'], { kind: 'ghost', curve: 0.1 });
+  const [dx, dy] = map.project(22.63, 38.22);
+  const dl = document.createElement('div'); dl.className = 'dlink'; dl.textContent = 'la prueba se halló aquí';
+  const [x1, y1] = map.at('delfos'); dl.style.left = x1 + 'px'; dl.style.top = (y1 - 30) + 'px'; map.html.appendChild(dl);
+
+  map.city('corinto', { variant: 'current', side: 'left', sub: 'tribunal (bema) · Hch 18:12' });
+  map.city('cencreas', { variant: ['minor'], side: 'right', sub: 'Hch 18:18' });
+  map.city('atenas', { variant: ['visited'], side: 'right' });
+  map.city('delfos', { side: 'left', sub: 'inscripción de Galión' }).classList.add('find-pin');
+
+  const pop = map.pop('corinto', `
+    <div class="be-card__pad" style="padding:12px 14px">
+      <div class="be-card__eyebrow"><i class="be-i be-i--sm" data-icon="event"></i>Qué pasó aquí · c. 51-52 e.c.</div>
+      <div style="font-family:var(--font-serif);font-size:19px;font-weight:600;margin-top:3px">Galión no admite la causa</div>
+      <div style="font-size:var(--fs-sm);color:var(--ink-2);margin-top:4px">No ve delito contra la ley romana. Después golpean a Sóstenes ante el tribunal.</div>
+      <div style="display:flex;gap:6px;margin-top:8px;align-items:center"><a class="be-ref">Hch 18:12-17</a><span class="be-tier be-tier--1" data-n="1">TNM</span></div>
+    </div>`, { dx: 60, dy: -30, width: 290 });
+
+  const sc = map.scaleBar(110); Object.assign(sc.style, { position: 'absolute', right: '14px', bottom: '26px', zIndex: 2 }); map.el.appendChild(sc);
+
+  BE.timeline(document.getElementById('timeline'), {
+    from: 49.5, to: 55, tick: 1, minor: 0.25, cursor: 52, cursorLabel: '52 e.c.',
+    uncertain: [{ from: 51.5, to: 52.3 }],
+    bar: `
+      <div class="be-play"><span class="be-play__btn"><i data-icon="step-back"></i></span><span class="be-play__main"><i data-icon="play"></i></span><span class="be-play__btn"><i data-icon="step-forward"></i></span></div>
+      <span class="be-zoomscale"><span>Siglos</span><span>Décadas</span><span class="on">Años</span><span>Meses</span></span>
+      <span class="be-spacer"></span>
+      <span class="be-chrono be-chrono--secular">Otras propuestas visibles</span>
+      <span class="be-chrono be-chrono--tnm"><i class="be-i be-i--sm" data-icon="book"></i>Cronología TNM</span>`,
+    lanes: [
+      { label: 'Pablo', icon: 'person', color: 'var(--node-persona)', items: [
+        { from: 50.25, to: 50.75, label: 'Macedonia y Atenas', color: '#c98f7c' },
+        { from: 50.75, to: 52.3, label: 'Corinto · un año y seis meses', fuzzy: 'end', active: true } ] },
+      { label: 'Galión', icon: 'crown', color: 'var(--gold)', items: [
+        { from: 51.5, to: 52.5, label: 'procónsul · verano 51 – verano 52', color: 'var(--gold)' },
+        { from: 52.5, to: 53.5, label: '52-53 · otra propuesta', soft: true, color: 'var(--secular)' } ] },
+      { label: 'Cartas', icon: 'letter', color: 'var(--gold)', items: [
+        { at: 50.85, label: '1 Tesalonicenses · c. 50' },
+        { at: 51.5, label: '2 Tesalonicenses · c. 51' } ] },
+      { label: 'El juicio', icon: 'hourglass', color: 'var(--unverified)', items: [
+        { from: 51.5, to: 52.3, label: 'sin verificar', soft: true, color: 'var(--unverified)' } ] },
+    ],
+  });
+});
+</script>
+</body>
+</html>

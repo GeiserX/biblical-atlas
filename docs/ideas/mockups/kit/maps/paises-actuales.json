@@ -1,0 +1,446 @@
+[
+ {
+  "nombre": "Francia",
+  "lon": 2.552,
+  "lat": 46.696,
+  "min_label": 1.7
+ },
+ {
+  "nombre": "Alemania",
+  "lon": 9.678,
+  "lat": 50.962,
+  "min_label": 1.7
+ },
+ {
+  "nombre": "Nigeria",
+  "lon": 7.503,
+  "lat": 9.44,
+  "min_label": 1.7
+ },
+ {
+  "nombre": "Arabia Saudita",
+  "lon": 44.7,
+  "lat": 23.807,
+  "min_label": 1.7
+ },
+ {
+  "nombre": "Egipto",
+  "lon": 29.446,
+  "lat": 26.186,
+  "min_label": 1.7
+ },
+ {
+  "nombre": "Etiopía",
+  "lon": 39.089,
+  "lat": 8.033,
+  "min_label": 2
+ },
+ {
+  "nombre": "Turquía",
+  "lon": 34.508,
+  "lat": 39.345,
+  "min_label": 2
+ },
+ {
+  "nombre": "España",
+  "lon": -3.465,
+  "lat": 40.091,
+  "min_label": 2
+ },
+ {
+  "nombre": "Italia",
+  "lon": 11.077,
+  "lat": 44.732,
+  "min_label": 2
+ },
+ {
+  "nombre": "Polonia",
+  "lon": 19.49,
+  "lat": 51.99,
+  "min_label": 2.5
+ },
+ {
+  "nombre": "Sudán",
+  "lon": 29.261,
+  "lat": 16.331,
+  "min_label": 2.5
+ },
+ {
+  "nombre": "Irán",
+  "lon": 54.931,
+  "lat": 32.166,
+  "min_label": 2.5
+ },
+ {
+  "nombre": "Argelia",
+  "lon": 2.808,
+  "lat": 27.397,
+  "min_label": 2.5
+ },
+ {
+  "nombre": "Marruecos",
+  "lon": -7.187,
+  "lat": 31.651,
+  "min_label": 2.7
+ },
+ {
+  "nombre": "Ucrania",
+  "lon": 32.141,
+  "lat": 49.725,
+  "min_label": 2.7
+ },
+ {
+  "nombre": "Kazajistán",
+  "lon": 68.686,
+  "lat": 49.054,
+  "min_label": 2.7
+ },
+ {
+  "nombre": "Grecia",
+  "lon": 21.726,
+  "lat": 39.493,
+  "min_label": 2.7
+ },
+ {
+  "nombre": "Pakistán",
+  "lon": 68.546,
+  "lat": 29.328,
+  "min_label": 2.7
+ },
+ {
+  "nombre": "Israel",
+  "lon": 34.848,
+  "lat": 30.911,
+  "min_label": 3
+ },
+ {
+  "nombre": "Siria",
+  "lon": 38.278,
+  "lat": 35.007,
+  "min_label": 3
+ },
+ {
+  "nombre": "Bielorrusia",
+  "lon": 28.418,
+  "lat": 53.822,
+  "min_label": 3
+ },
+ {
+  "nombre": "Uzbekistán",
+  "lon": 64.005,
+  "lat": 41.694,
+  "min_label": 3
+ },
+ {
+  "nombre": "Kirguistán",
+  "lon": 74.533,
+  "lat": 41.669,
+  "min_label": 3
+ },
+ {
+  "nombre": "Libia",
+  "lon": 18.011,
+  "lat": 26.639,
+  "min_label": 3
+ },
+ {
+  "nombre": "Túnez",
+  "lon": 9.008,
+  "lat": 33.687,
+  "min_label": 3
+ },
+ {
+  "nombre": "Rumania",
+  "lon": 24.973,
+  "lat": 45.733,
+  "min_label": 3
+ },
+ {
+  "nombre": "Irlanda",
+  "lon": -7.799,
+  "lat": 53.079,
+  "min_label": 3
+ },
+ {
+  "nombre": "Guinea",
+  "lon": -10.016,
+  "lat": 10.619,
+  "min_label": 3
+ },
+ {
+  "nombre": "Austria",
+  "lon": 14.131,
+  "lat": 47.519,
+  "min_label": 3
+ },
+ {
+  "nombre": "Irak",
+  "lon": 43.262,
+  "lat": 33.094,
+  "min_label": 3
+ },
+ {
+  "nombre": "Malí",
+  "lon": -2.038,
+  "lat": 18.693,
+  "min_label": 3
+ },
+ {
+  "nombre": "Chad",
+  "lon": 18.645,
+  "lat": 15.143,
+  "min_label": 3
+ },
+ {
+  "nombre": "Afganistán",
+  "lon": 66.497,
+  "lat": 34.164,
+  "min_label": 3
+ },
+ {
+  "nombre": "Portugal",
+  "lon": -8.272,
+  "lat": 39.607,
+  "min_label": 3
+ },
+ {
+  "nombre": "Turkmenistán",
+  "lon": 58.677,
+  "lat": 39.855,
+  "min_label": 3
+ },
+ {
+  "nombre": "Níger",
+  "lon": 9.504,
+  "lat": 17.446,
+  "min_label": 3
+ },
+ {
+  "nombre": "Burkina Faso",
+  "lon": -1.364,
+  "lat": 12.673,
+  "min_label": 3
+ },
+ {
+  "nombre": "Yemen",
+  "lon": 45.874,
+  "lat": 15.328,
+  "min_label": 3
+ },
+ {
+  "nombre": "Mauritania",
+  "lon": -9.74,
+  "lat": 19.587,
+  "min_label": 3
+ },
+ {
+  "nombre": "Líbano",
+  "lon": 35.993,
+  "lat": 34.133,
+  "min_label": 4
+ },
+ {
+  "nombre": "Omán",
+  "lon": 57.337,
+  "lat": 22.12,
+  "min_label": 4
+ },
+ {
+  "nombre": "Tayikistán",
+  "lon": 72.587,
+  "lat": 38.2,
+  "min_label": 4
+ },
+ {
+  "nombre": "República Checa",
+  "lon": 15.378,
+  "lat": 49.882,
+  "min_label": 4
+ },
+ {
+  "nombre": "Emiratos Árabes Unidos",
+  "lon": 54.547,
+  "lat": 23.466,
+  "min_label": 4
+ },
+ {
+  "nombre": "Bélgica",
+  "lon": 4.8,
+  "lat": 50.785,
+  "min_label": 4
+ },
+ {
+  "nombre": "Georgia",
+  "lon": 43.736,
+  "lat": 41.87,
+  "min_label": 4
+ },
+ {
+  "nombre": "Azerbaiyán",
+  "lon": 47.211,
+  "lat": 40.402,
+  "min_label": 4
+ },
+ {
+  "nombre": "Hungría",
+  "lon": 19.448,
+  "lat": 47.087,
+  "min_label": 4
+ },
+ {
+  "nombre": "Eslovaquia",
+  "lon": 19.05,
+  "lat": 48.734,
+  "min_label": 4
+ },
+ {
+  "nombre": "Sierra Leona",
+  "lon": -11.764,
+  "lat": 8.617,
+  "min_label": 4
+ },
+ {
+  "nombre": "Yibuti",
+  "lon": 42.499,
+  "lat": 11.976,
+  "min_label": 4
+ },
+ {
+  "nombre": "Eritrea",
+  "lon": 38.286,
+  "lat": 15.787,
+  "min_label": 4
+ },
+ {
+  "nombre": "Suiza",
+  "lon": 7.464,
+  "lat": 46.719,
+  "min_label": 4
+ },
+ {
+  "nombre": "Países Bajos",
+  "lon": 5.611,
+  "lat": 52.422,
+  "min_label": 4
+ },
+ {
+  "nombre": "Serbia",
+  "lon": 20.788,
+  "lat": 44.19,
+  "min_label": 4
+ },
+ {
+  "nombre": "Benín",
+  "lon": 2.352,
+  "lat": 10.325,
+  "min_label": 4
+ },
+ {
+  "nombre": "Croacia",
+  "lon": 16.372,
+  "lat": 45.806,
+  "min_label": 4
+ },
+ {
+  "nombre": "Catar",
+  "lon": 51.144,
+  "lat": 25.237,
+  "min_label": 4
+ },
+ {
+  "nombre": "Bulgaria",
+  "lon": 25.157,
+  "lat": 42.509,
+  "min_label": 4
+ },
+ {
+  "nombre": "Jordania",
+  "lon": 36.376,
+  "lat": 30.805,
+  "min_label": 4
+ },
+ {
+  "nombre": "Baréin",
+  "lon": 50.555,
+  "lat": 26.056,
+  "min_label": 4
+ },
+ {
+  "nombre": "Chipre",
+  "lon": 33.084,
+  "lat": 34.913,
+  "min_label": 4.5
+ },
+ {
+  "nombre": "Somalilandia",
+  "lon": 46.732,
+  "lat": 9.444,
+  "min_label": 4.5
+ },
+ {
+  "nombre": "Bosnia y Herzegovina",
+  "lon": 18.068,
+  "lat": 44.091,
+  "min_label": 4.5
+ },
+ {
+  "nombre": "Macedonia del Norte",
+  "lon": 21.556,
+  "lat": 41.558,
+  "min_label": 5
+ },
+ {
+  "nombre": "Albania",
+  "lon": 20.114,
+  "lat": 40.655,
+  "min_label": 5
+ },
+ {
+  "nombre": "Kosovo",
+  "lon": 20.861,
+  "lat": 42.594,
+  "min_label": 5
+ },
+ {
+  "nombre": "Armenia",
+  "lon": 44.801,
+  "lat": 40.459,
+  "min_label": 5
+ },
+ {
+  "nombre": "Eslovenia",
+  "lon": 14.915,
+  "lat": 46.061,
+  "min_label": 5
+ },
+ {
+  "nombre": "Kuwait",
+  "lon": 47.314,
+  "lat": 29.414,
+  "min_label": 5
+ },
+ {
+  "nombre": "Montenegro",
+  "lon": 19.144,
+  "lat": 42.803,
+  "min_label": 5
+ },
+ {
+  "nombre": "Moldavia",
+  "lon": 28.488,
+  "lat": 47.435,
+  "min_label": 5
+ },
+ {
+  "nombre": "Togo",
+  "lon": 1.058,
+  "lat": 8.807,
+  "min_label": 5
+ },
+ {
+  "nombre": "República Turca del Norte de Chipre",
+  "lon": 33.692,
+  "lat": 35.216,
+  "min_label": 6
+ }
+]
