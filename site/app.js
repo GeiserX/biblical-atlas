@@ -577,7 +577,10 @@ function montarCapas() {
   const vacio = { type: 'FeatureCollection', features: [] };
   for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-halo']) map.addSource(id, { type: 'geojson', data: vacio });
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
-  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 2, 'line-opacity': 0.35 } });
+  for (const [id, color] of Object.entries(COLOR_VIAJE)) map.addImage(`be-flecha-${id}`, imagenFlecha(color));
+  const flecha = (placement, opacity, spacing) => ({ type: 'symbol', layout: { 'symbol-placement': placement, 'symbol-spacing': spacing, 'icon-image': ['concat', 'be-flecha-', ['get', 'viaje']], 'icon-size': 0.5, 'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true }, paint: { 'icon-opacity': opacity } });
+  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 2.2, 'line-opacity': ['case', ['get', 'futuro'], 0.3, 0.55] } });
+  map.addLayer({ id: 'be-rastro-flechas', source: 'be-rastro', ...flecha('line', ['case', ['get', 'futuro'], 0.35, 0.6], 90) });
   map.addLayer({ id: 'be-cartas-pendiente', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'pendiente'], layout: lineas, paint: { 'line-color': '#b8892f', 'line-width': 1.6, 'line-dasharray': [0.5, 2.5], 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-cartas-escrita', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'escrita'], layout: { 'line-join': 'round' }, paint: { 'line-color': '#b8892f', 'line-width': 1.8, 'line-dasharray': [3, 2.5], 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel-casing', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: lineas, paint: { 'line-color': '#fffdf8', 'line-width': 7, 'line-opacity': 0.85 } });
@@ -587,6 +590,8 @@ function montarCapas() {
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 3.5 } });
   map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['get', 'incierto'], layout: { 'line-join': 'round' }, paint: { 'line-color': colorPorViaje(), 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
+  map.addLayer({ id: 'be-falta-flechas', source: 'be-falta', ...flecha('line-center', 0.6, 80) });
+  map.addLayer({ id: 'be-hecho-flechas', source: 'be-hecho', ...flecha('line-center', 1, 80) });
   map.addLayer({ id: 'be-cartas-toque', type: 'line', source: 'be-cartas', layout: lineas, paint: { 'line-color': '#000', 'line-width': 16, 'line-opacity': 0 } });
   mapaListo = true;
   if (cortina) { cortina = null; }
@@ -701,16 +706,26 @@ function geoRutas(w) {
       hecho.push(linea([coord(w.en.lugar), w.pos], { viaje: V.id, incierto: false }));
       falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false }));
     }
-    const inicio = ps[0].a;
-    for (const v of D.viajes) {
-      if (v === V) continue;
-      const vs = P.filter((s) => s.viaje === v);
-      if (vs.length > 1 && vs[vs.length - 1].b <= inicio + 1e-6) rastro.push(linea(vs.map((s) => coord(s.lugar)), { viaje: v.id }));
-    }
+  }
+  // Los demás viajes se dibujan siempre como rastro, con su color: más claro si aún no ha ocurrido.
+  for (const v of D.viajes) {
+    if (v === V) continue;
+    const vs = P.filter((s) => s.viaje === v);
+    if (vs.length > 1) rastro.push(linea(vs.map((s) => coord(s.lugar)), { viaje: v.id, futuro: vs[0].a > E.t }));
   }
   return { hecho, falta, rastro, V };
 }
 const linea = (coordinates, properties) => ({ type: 'Feature', properties, geometry: { type: 'LineString', coordinates } });
+/** Punta de flecha (apunta a la derecha; MapLibre la gira según la línea) con borde claro para que se lea sobre el relieve. */
+function imagenFlecha(color) {
+  const s = 28, c = document.createElement('canvas');
+  c.width = s; c.height = s;
+  const g = c.getContext('2d');
+  g.beginPath(); g.moveTo(6, 5); g.lineTo(23, 14); g.lineTo(6, 23); g.lineTo(11, 14); g.closePath();
+  g.lineJoin = 'round'; g.strokeStyle = 'rgba(255,252,244,0.95)'; g.lineWidth = 3; g.stroke();
+  g.fillStyle = color; g.fill();
+  return g.getImageData(0, 0, s, s);
+}
 /** Arco curvo entre dos lugares (curva cuadrática en el plano de Mercator). */
 function arco(a, b) {
   const ax = a.lon, ay = mercY(a.lat) * 57.2958, bx = b.lon, by = mercY(b.lat) * 57.2958;
@@ -804,10 +819,13 @@ function pintarMapa() {
   if (!mapaListo || !marcaPablo) return;
   const t = E.t;
   const w = dondeEsta(t);
-  const { hecho, falta, rastro, V } = geoRutas(w);
-  map.getSource('be-hecho').setData({ type: 'FeatureCollection', features: hecho });
-  map.getSource('be-falta').setData({ type: 'FeatureCollection', features: falta });
-  map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: rastro });
+  const g = geoRutas(w);
+  const V = g.V;
+  const soloViaje = E.sel?.tipo === 'viaje' ? E.sel.id : null;     // un viaje seleccionado oculta los demás
+  const filtra = (fs) => (soloViaje ? fs.filter((f) => f.properties.viaje === soloViaje) : fs);
+  map.getSource('be-hecho').setData({ type: 'FeatureCollection', features: filtra(g.hecho) });
+  map.getSource('be-falta').setData({ type: 'FeatureCollection', features: filtra(g.falta) });
+  map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: filtra(g.rastro) });
   const { arcos, halos, grupos } = geoCartas(t);
   const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('');
   if (claveCartas !== pintarMapa.claveCartas) {
@@ -955,21 +973,24 @@ function pintarEtiquetas() {
 }
 function pintarLeyenda(V, w) {
   const pendiente = D.cartas.some((c) => cartaVisible(c, E.t) && estadoCarta(c, E.t) === 'pendiente');
-  const clave = `${V?.id}|${w?.estimada}|${E.sel?.tipo === 'carta'}|${pendiente}`;
+  const clave = `${V?.id}|${w?.estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
-  if (V) {
+  const S = E.sel?.tipo === 'viaje' ? D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
+  const titulo = S || V;
+  if (V && (!S || S === V)) {
     filas.push('<div class="be-legend__row"><span class="be-legend__line"></span>Recorrido hasta esta fecha</div>');
     if (P.some((s) => s.viaje === V && s.lugar.precision === 'zona')) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta sin trazado conocido (región)</div>');
     filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
-    filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Rastro de los viajes anteriores</div>');
   }
+  if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo abajo para ver todos</div>`);
+  else filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes, cada uno con su color (más claro: aún por hacer)</div>');
   filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter"></span>Carta escrita cerca de esta fecha</div>');
   if (pendiente) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--pendiente"></span>Carta que escribirá poco después</div>');
   filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
-  $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${V ? `${esc(V.nombre)} · ${esc(fechaCorta(V.fecha))}` : 'Viajes de Pablo'}</div>${filas.join('')}`;
-  $('#leyenda').style.setProperty('--accent', V ? colorViaje(V.id) : '');
+  $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : 'Viajes de Pablo'}</div>${filas.join('')}`;
+  $('#leyenda').style.setProperty('--accent', titulo ? colorViaje(titulo.id) : '');
   if (marcaPablo) marcaPablo.getElement().style.setProperty('--accent', V ? colorViaje(V.id) : '');
 }
 function pintarMientras(t) {
@@ -1754,6 +1775,7 @@ function iniciarEventos() {
       const sel = parseSel(s.dataset.sel);
       if (sel) {
         e.preventDefault();
+        if (E.sel && E.sel.tipo === sel.tipo && E.sel.id === sel.id) { seleccionar(null, { mover: false, encuadrar: false }); return; }   // segundo clic: se deselecciona
         const enMapa = sel.tipo === 'lugar' && s.closest('.maplibregl-marker');
         seleccionar(sel, enMapa ? { mover: false, encuadrar: false } : {});
       }
