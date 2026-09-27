@@ -577,15 +577,15 @@ function montarCapas() {
   const vacio = { type: 'FeatureCollection', features: [] };
   for (const id of ['be-rastro', 'be-hecho', 'be-falta', 'be-cartas', 'be-halo']) map.addSource(id, { type: 'geojson', data: vacio });
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
-  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': '#7b6f60', 'line-width': 2, 'line-opacity': 0.4 } });
+  map.addLayer({ id: 'be-rastro', type: 'line', source: 'be-rastro', layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 2, 'line-opacity': 0.35 } });
   map.addLayer({ id: 'be-cartas-pendiente', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'pendiente'], layout: lineas, paint: { 'line-color': '#b8892f', 'line-width': 1.6, 'line-dasharray': [0.5, 2.5], 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-cartas-escrita', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'escrita'], layout: { 'line-join': 'round' }, paint: { 'line-color': '#b8892f', 'line-width': 1.8, 'line-dasharray': [3, 2.5], 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel-casing', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: lineas, paint: { 'line-color': '#fffdf8', 'line-width': 7, 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: { 'line-join': 'round' }, paint: { 'line-color': '#b8892f', 'line-width': 4, 'line-dasharray': [2.2, 1] } });
   map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': 'rgba(184,137,47,0.12)', 'circle-stroke-color': '#b8892f', 'circle-stroke-width': 1.5 } });
-  map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': '#a3432b', 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
+  map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
-  map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': '#a3432b', 'line-width': 3.5 } });
+  map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 3.5 } });
   map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['get', 'incierto'], layout: { 'line-join': 'round' }, paint: { 'line-color': '#7a5c8e', 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
   map.addLayer({ id: 'be-cartas-toque', type: 'line', source: 'be-cartas', layout: lineas, paint: { 'line-color': '#000', 'line-width': 16, 'line-opacity': 0 } });
   mapaListo = true;
@@ -795,6 +795,10 @@ function nombreHoy(l) {
   const n = (l.nombres || []).find((x) => /\bhoy\b|actual|modern/i.test(x.nota || ''));
   return n ? n.nombre : null;
 }
+// Un color por viaje, el mismo en el mapa, la línea de tiempo, la leyenda y el marcador.
+const COLOR_VIAJE = { 'primer-viaje': '#a3432b', 'segundo-viaje': '#2f6f73', 'tercer-viaje': '#6b4c8a', 'visita-a-jerusalen-49': '#8a6d1f', 'custodia-en-cesarea': '#7b6f60', 'viaje-a-roma': '#2c5f8a' };
+const colorViaje = (id) => COLOR_VIAJE[id] || '#a3432b';
+const colorPorViaje = () => ['match', ['get', 'viaje'], ...Object.entries(COLOR_VIAJE).flat(), '#a3432b'];
 let clavePablo = '';
 function pintarMapa() {
   if (!mapaListo || !marcaPablo) return;
@@ -965,6 +969,8 @@ function pintarLeyenda(V, w) {
   if (pendiente) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--pendiente"></span>Carta que escribirá poco después</div>');
   filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
   $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${V ? `${esc(V.nombre)} · ${esc(fechaCorta(V.fecha))}` : 'Viajes de Pablo'}</div>${filas.join('')}`;
+  $('#leyenda').style.setProperty('--accent', V ? colorViaje(V.id) : '');
+  if (marcaPablo) marcaPablo.getElement().style.setProperty('--accent', V ? colorViaje(V.id) : '');
 }
 function pintarMientras(t) {
   const ev = (D.eventos || []).find((e) => { const v = ventanaEvento(e); return v && t >= v[0] && t < v[1]; });
@@ -1329,7 +1335,7 @@ function pintarLineaFija() {
     const w = x1 - x0;
     const etiqueta = recortar(`${v.nombre} · ${fechaCorta(v.fecha)}`, w - 14);
     partes.push(`<g class="item viaje${v === V ? ' activo' : ''}${cls}" data-sel="viaje:${esc(v.id)}" tabindex="0" role="button" aria-label="${esc(v.nombre)}, ${esc(fechaCorta(v.fecha))}">
-      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/>
+      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje" style="fill:${colorViaje(v.id)}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/>
       ${etiqueta ? `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra">${esc(etiqueta)}</text>` : ''}</g>`);
     if (pxAnio > 45) {
       for (const st of ps) {
