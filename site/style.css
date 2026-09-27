@@ -201,8 +201,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .item { cursor: pointer; }
 .item:focus { outline: none; }
 .item:focus-visible rect { stroke: var(--focus); stroke-width: 2.5; }
-.barra-viaje { fill: var(--accent-2); opacity: .8; }
-.viaje.activo .barra-viaje { fill: var(--accent); opacity: 1; }
+.barra-viaje { opacity: .55; }
+.viaje.activo .barra-viaje { opacity: 1; }
 .viaje:hover .barra-viaje { opacity: 1; }
 .texto-barra { fill: #fff; }
 .marca-parada { fill: rgba(255, 255, 255, .7); }
