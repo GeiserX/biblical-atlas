@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: silas
+nombre: Silas
+nombres:
+- nombre: Silas
+  nota: Forma que usa Lucas en Hechos.
+- nombre: Silvano
+  nota: Forma latina que usan Pablo y Pedro en sus cartas.
+resumen: Profeta de la congregación de Jerusalén, al parecer ciudadano romano. Compañero de Pablo en el segundo
+  viaje.
+razon: Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el segundo viaje (Hch 15:40).
+fuentes:
+- it-silas
+- hch-15
+enlaces:
+- titulo: 'Perspicacia: «Silas, Silvano»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004118
+  tipo: perspicacia
+- titulo: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · Los viajes de Pablo</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Mapa y línea de tiempo de los viajes de Pablo y sus cartas, con cada dato enlazado a su fuente en wol.jw.org.">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.css" integrity="sha384-ntw3zEt6rcVML7jDK0ULmHa5hxLB23afsPqzqfY+gLgMfAkbFCnCgPpkZvV5mmZX" crossorigin="anonymous">
+<link rel="stylesheet" href="kit/tokens.css">
+<link rel="stylesheet" href="kit/components.css">
+<link rel="stylesheet" href="style.css">
+<!-- MapLibre GL JS 6.11.2 (solo módulos ES). El mapa de importación fija la versión y la huella SRI de cada módulo. -->
+<script type="importmap">
+{
+  "imports": { "maplibre-gl": "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.mjs" },
+  "integrity": {
+    "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.mjs": "sha384-KQzExYlfg1SnYNpLaXHTnaCTjr5wmiZ6X3sasvPb94caZfH+3+T1Sl4eJziXUtmN",
+    "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl-shared.mjs": "sha384-V59ofCEPEqpSk5Mswc19DtDYbZWJtne210dFzS328Il6O31eLwTV7v57+Z3NjW/7"
+  }
+}
+</script>
+<script>
+  // Desde file:// el navegador no deja crear el worker de MapLibre a partir de un blob; lo cargamos con una URL data:.
+  if (location.protocol === 'file:') {
+    const W = window.Worker;
+    const src = 'data:text/javascript,' + encodeURIComponent('import "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl-worker.mjs";');
+    window.Worker = class extends W { constructor(u, o) { super(String(u).startsWith('blob:') ? src : u, o); } };
+  }
+</script>
+<script type="module">
+  import * as maplibregl from 'maplibre-gl';
+  if (location.protocol === 'file:') maplibregl.setWorkerUrl('data:text/javascript,' + encodeURIComponent('import "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl-worker.mjs";'));
+  window.maplibregl = maplibregl;
+</script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<div class="be-app app" id="app">
+  <header class="be-topbar topbar">
+    <a class="be-logo" href="#" id="inicio" aria-label="biblical-earth, volver al inicio"><span class="be-logo__mark" aria-hidden="true"></span><span class="logo-text">biblical-earth</span></a>
+    <div class="buscador" id="buscador">
+      <label class="be-search" id="caja-busqueda">
+        <svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="sr-only">Buscar</span>
+        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Buscar lugar, persona, carta o pasaje («Hch 16»)" role="combobox" aria-expanded="false" aria-controls="resultados" aria-autocomplete="list">
+        <kbd class="be-kbd" id="q-kbd">/</kbd>
+      </label>
+      <div class="be-results resultados" id="resultados" role="listbox" aria-label="Resultados de la búsqueda" hidden></div>
+    </div>
+    <button class="filtro" id="filtro" type="button" hidden></button>
+    <div class="be-spacer"></div>
+    <div class="be-date fecha" id="fecha" aria-live="polite"><span class="be-date__value" id="fecha-valor">c. 50 e.c.</span><span class="be-date__hint" id="fecha-pista">cronología TNM</span></div>
+    <div class="be-seg modos" role="radiogroup" aria-label="Mapa base">
+      <button class="be-seg__opt" type="button" role="radio" data-mapa="antiguo"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5 9 4l6 2.5L20 4v13.5L15 20l-6-2.5L4 20Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Mapa antiguo</button>
+      <button class="be-seg__opt" type="button" role="radio" data-mapa="actual"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h16M12 4c2.5 2.5 2.5 13.5 0 16M12 4c-2.5 2.5-2.5 13.5 0 16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Actual</button>
+      <button class="be-seg__opt" type="button" role="radio" data-mapa="cortina"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 5v14" stroke="currentColor" stroke-width="1.8"/></svg>Cortina</button>
+    </div>
+    <button class="be-btn be-btn--icon be-btn--ghost" id="compartir" type="button" aria-label="Copiar el enlace a esta vista" title="Copiar el enlace a esta vista"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="18" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.2 10.9 7.1-3.8M8.2 13.1l7.1 3.8" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </header>
+
+  <main class="be-map mapa" id="mapa" aria-label="Mapa">
+    <div id="mapa-gl" class="mapa-gl"></div>
+    <div class="mientras be-float" id="mientras" hidden></div>
+    <div class="be-float be-legend leyenda" id="leyenda" aria-label="Leyenda"></div>
+    <div class="cortina" id="cortina" hidden>
+      <span class="be-curtain__tag cortina-tag cortina-tag--izq">Mapa antiguo</span>
+      <span class="be-curtain__tag cortina-tag cortina-tag--der">Mapa actual</span>
+      <button class="cortina-asa" id="cortina-asa" type="button" aria-label="Mover la cortina (flechas izquierda y derecha)"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 7-5 5 5 5M15 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="aviso" id="aviso" role="status" hidden></div>
+  </main>
+
+  <aside class="be-panel panel" id="panel" aria-label="Ficha">
+    <div class="sobre-hoja">
+      <button type="button" class="tira-suceso" id="tira-suceso" hidden></button>
+      <button type="button" class="be-chip leyenda-boton" id="leyenda-boton" aria-expanded="false" aria-controls="leyenda">Leyenda</button>
+    </div>
+    <button class="hoja-asa" id="hoja-asa" type="button" aria-expanded="true" aria-controls="panel-cuerpo"><span class="be-sheet__grip"></span><span class="sr-only">Plegar o desplegar la ficha</span></button>
+    <div class="panel-cuerpo" id="panel-cuerpo" tabindex="-1"></div>
+  </aside>
+
+  <section class="be-timeline linea" id="linea" aria-label="Línea de tiempo">
+    <div class="be-timeline__bar linea-barra">
+      <div class="be-play">
+        <button class="be-play__btn" id="anterior" type="button" aria-label="Suceso anterior (Mayúsculas + flecha izquierda)" title="Suceso anterior"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14M18 5 9 12l9 7Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+        <button class="be-play__main" id="reproducir" type="button" aria-label="Reproducir (barra espaciadora)"><svg class="be-i icono-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z" fill="currentColor"/></svg><svg class="be-i icono-pausa" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg></button>
+        <button class="be-play__btn" id="siguiente" type="button" aria-label="Suceso siguiente (Mayúsculas + flecha derecha)" title="Suceso siguiente"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 5v14M6 5l9 7-9 7Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
+      </div>
+      <span class="be-speed" id="velocidad">1 año cada 4 s</span>
+      <div class="be-zoomscale zoom" role="group" aria-label="Escala de la línea de tiempo">
+        <button type="button" data-zoom="40">Décadas</button><button type="button" data-zoom="8">Años</button><button type="button" data-zoom="1.5">Meses</button>
+      </div>
+      <span class="linea-estado" id="linea-estado"></span>
+      <div class="be-spacer"></div>
+      <span class="be-chrono be-chrono--tnm cronologia">Cronología TNM</span>
+    </div>
+    <div class="be-timeline__labels linea-carriles" id="carriles"></div>
+    <div class="be-timeline__track linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <svg id="linea-svg" class="linea-svg" aria-hidden="false"></svg>
+    </div>
+  </section>
+</div>
+<noscript><p class="sin-js">Este sitio necesita JavaScript para dibujar el mapa y la línea de tiempo.</p></noscript>
+</body>
+</html>

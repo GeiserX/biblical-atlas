@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: misia
+nombre: Misia
+nombres:
+- nombre: Misia
+tipo: region
+lat: 40.0
+lon: 28.5
+precision: zona
+coord_fuente: openbible:a2d9bc8
+coord_url: https://www.openbible.info/geo/ancient/a2d9bc8/mysia
+resumen: Región del noroeste de Asia Menor; Pablo la atravesó sin predicar camino de Troas.
+razon: 'Perspicacia («Misia») describe el lugar; aparece en Hch 16:7, 8. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-misia
+- hch-16
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Misia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003145
+  tipo: perspicacia
+- titulo: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

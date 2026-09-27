@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: plaza-del-mercado-de-apio
+nombre: Plaza del Mercado de Apio
+nombres:
+- nombre: Plaza del Mercado de Apio
+tipo: ciudad
+lat: 41.46639
+lon: 12.9975
+precision: punto
+coord_fuente: openbible:a121d5e
+coord_url: https://www.openbible.info/geo/ancient/a121d5e/forum-of-appius
+resumen: Mercado y parada de la vía Apia a unos 64 km de Roma; allí salieron a recibir a Pablo hermanos de Roma.
+razon: 'Perspicacia («Apio, Plaza del Mercado de») describe el lugar; aparece en Hch 28:15. La coordenada es de
+  OpenBible: solo tomamos el punto.'
+fuentes:
+- it-apio
+- hch-28
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Apio, Plaza del Mercado de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000314
+  tipo: perspicacia
+- titulo: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pentecostes-33
+titulo: 'Pentecostés de 33: se derrama el espíritu santo'
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 6 de siván de 33 e.c.
+lugares:
+- jerusalen
+personas: []
+pasajes:
+- Hch 2:1-41
+resumen: Los discípulos reunidos en Jerusalén reciben espíritu santo y hablan en idiomas que entienden judíos de
+  muchas naciones. Nace la congregación cristiana.
+razon: El cuadro de sucesos del estudio 3 fecha el derramamiento de espíritu el 6 de siván de 33 y cita Hechos 2.
+fuentes:
+- si-3
+- hch-2
+buscar: Pentecostés de 33
+consultado: '2026-09-27'
+estado: verificado

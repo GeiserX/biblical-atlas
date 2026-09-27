@@ -1,0 +1,94 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: filipos
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwbvod24_28_VIDEO"
+    titulo: "Seth Hyatt: Seamos humildes y estemos contentos en cualquier circunstancia (Filip. 1:10)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_28_VIDEO&appLanguage=S"
+    publicado: "2024-07-12"
+    menciones: 10
+    terminos:
+      "Filipos": 2
+      "filipenses": 8
+  - docid: "pub-jwb-113_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2024 (graduación de la clase 155 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_1_VIDEO&appLanguage=S"
+    publicado: "2024-06-03"
+    menciones: 9
+    terminos:
+      "Filipos": 8
+      "filipenses": 1
+  - docid: "pub-jwb-113_8_VIDEO"
+    titulo: "Trent Lippold: Sean como el aceite del motor"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_8_VIDEO&appLanguage=S"
+    publicado: "2024-06-04"
+    menciones: 6
+    terminos:
+      "Filipos": 6
+  - docid: "pub-jwb-085_16_VIDEO"
+    titulo: "Robert Luccioni: “Sigo adelante hacia la meta” (Filip. 3:14)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_16_VIDEO&appLanguage=S"
+    publicado: "2021-12-27"
+    menciones: 5
+    terminos:
+      "Filipos": 2
+      "filipenses": 3
+  - docid: "pub-jwb_202005_11_VIDEO"
+    titulo: "David Schafer: Aprendamos a estar contentos con lo que tenemos (Heb. 13:5)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202005_11_VIDEO&appLanguage=S"
+    publicado: "2020-05-25"
+    menciones: 4
+    terminos:
+      "Filipos": 2
+      "filipenses": 2
+  - docid: "pub-co-r20_101_VIDEO"
+    titulo: "Kenneth Cook: Por qué es Jehová el “Dios feliz”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_101_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 3
+    terminos:
+      "filipenses": 3
+  - docid: "pub-co-r20_1_VIDEO"
+    titulo: "Viernes mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_1_VIDEO&appLanguage=S"
+    publicado: "2020-07-06"
+    menciones: 3
+    terminos:
+      "filipenses": 3
+  - docid: "pub-co-r20_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
+    publicado: "2020-08-13"
+    menciones: 3
+    terminos:
+      "filipenses": 3
+  - docid: "pub-jwb-113_2_VIDEO"
+    titulo: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_2_VIDEO&appLanguage=S"
+    publicado: "2024-06-17"
+    menciones: 3
+    terminos:
+      "Filipos": 3
+  - docid: "pub-jwb-113_6_VIDEO"
+    titulo: "Edward Aljian: Un problema y su solución"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_6_VIDEO&appLanguage=S"
+    publicado: "2024-06-04"
+    menciones: 3
+    terminos:
+      "Filipos": 2
+      "filipenses": 1
+  - docid: "pub-jwb-124_1_VIDEO"
+    titulo: "JW Broadcasting: Abril de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
+    publicado: "2025-04-07"
+    menciones: 3
+    terminos:
+      "Filipos": 3
+  - docid: "pub-jwb-124_3_VIDEO"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
+    publicado: "2025-04-21"
+    menciones: 3
+    terminos:
+      "Filipos": 3

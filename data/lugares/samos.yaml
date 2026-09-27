@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: samos
+nombre: Samos
+nombres:
+- nombre: Samos
+tipo: isla
+lat: 37.75
+lon: 26.8333
+precision: punto
+coord_fuente: openbible:acf6ec0
+coord_url: https://www.openbible.info/geo/ancient/acf6ec0/samos
+resumen: Isla montañosa del Egeo al suroeste de Éfeso; Pablo parece haberse detenido allí brevemente al volver del
+  tercer viaje.
+razon: 'Perspicacia («Samos») describe el lugar; aparece en Hch 20:15. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-samos
+- hch-20
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Samos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003821
+  tipo: perspicacia
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

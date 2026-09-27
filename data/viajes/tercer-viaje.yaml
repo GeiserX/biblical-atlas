@@ -1,0 +1,342 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tercer-viaje
+nombre: Tercer viaje misional
+persona: pablo
+referencia: Hch 18:23–21:17
+fecha:
+  desde: 52
+  hasta: 56
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 52-56 e.c.
+companeros:
+- timoteo
+- lucas
+resumen: Pablo vuelve a Galacia y Frigia, pasa unos tres años en Éfeso, recorre Macedonia y Grecia y regresa por
+  mar a Jerusalén para Pentecostés de 56.
+razon: El estudio 3 (párr. 26) da las fechas; Hechos 20:4, 5 nombra a Timoteo entre los acompañantes y el relato
+  vuelve a usar «nosotros», señal de que Lucas iba con él.
+fuentes:
+- si-3
+- it-pablo
+- it-lucas
+- hch-18
+- hch-19
+- hch-20
+- hch-21
+consultado: '2026-09-27'
+estado: verificado
+paradas:
+- orden: 1
+  lugar: antioquia-de-siria
+  referencia: Hch 18:23
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 18:23 nombra Antioquía de Siria en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-18
+  estado: verificado
+- orden: 2
+  lugar: galacia
+  referencia: Hch 18:23
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: El texto nombra Galacia y Frigia como regiones.
+  razon: Hechos 18:23 dice que recorrió Galacia y Frigia. Es una región, no una ciudad.
+  fuentes:
+  - hch-18
+  estado: verificado
+- orden: 3
+  lugar: efeso
+  referencia: Hch 19:1–20:1
+  fecha:
+    desde: 52
+    hasta: 55
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: invierno de 52-53 a 55 (unos tres años)
+  nota: Escribe 1 Corintios; alboroto de Demetrio.
+  razon: 'Hch 19:1–20:1 nombra Éfeso en el recorrido. El estudio 3 da la fecha: invierno de 52-53 a 55 (unos tres
+    años).'
+  fuentes:
+  - hch-19
+  - si-3
+  estado: verificado
+- orden: 4
+  lugar: macedonia
+  referencia: Hch 20:1, 2
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Escribe 2 Corintios.
+  razon: 'Hch 20:1, 2 nombra Macedonia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 5
+  lugar: corinto
+  referencia: Hch 20:2, 3
+  fecha:
+    desde: 55
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: tres meses de invierno
+  nota: El texto dice “Grecia”; el estudio 3 precisa Corinto. Allí escribe Romanos (Perspicacia, “Romanos”).
+  razon: Hechos 20:2, 3 dice «Grecia»; el estudio 3 (párr. 26) precisa que pasó tres meses de invierno en Corinto.
+    Perspicacia «Romanos» sitúa allí la carta.
+  fuentes:
+  - hch-20
+  - si-3
+  - it-romanos
+  estado: verificado
+- orden: 6
+  lugar: filipos
+  referencia: Hch 20:3-6
+  fecha:
+    desde: 56
+    hasta: 56
+    precision: estación
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: Pascua de 56
+  nota: null
+  razon: 'Hch 20:3-6 nombra Filipos en el recorrido. El estudio 3 da la fecha: Pascua de 56.'
+  fuentes:
+  - hch-20
+  - si-3
+  estado: verificado
+- orden: 7
+  lugar: troas
+  referencia: Hch 20:6-12
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Eutico.
+  razon: 'Hch 20:6-12 nombra Troas en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 8
+  lugar: ason
+  referencia: Hch 20:13, 14
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Pablo va a pie; los demás en barco.
+  razon: 'Hch 20:13, 14 nombra Asón en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 9
+  lugar: mitilene
+  referencia: Hch 20:14
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 20:14 nombra Mitilene en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 10
+  lugar: quios
+  referencia: Hch 20:15
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Pasan frente a la isla.
+  razon: 'Hch 20:15 nombra Quíos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 11
+  lugar: samos
+  referencia: Hch 20:15
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 20:15 nombra Samos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 12
+  lugar: mileto
+  referencia: Hch 20:15-38
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Discurso a los ancianos de Éfeso.
+  razon: 'Hch 20:15-38 nombra Mileto en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-20
+  estado: verificado
+- orden: 13
+  lugar: cos
+  referencia: Hch 21:1
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 21:1 nombra Cos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 14
+  lugar: rodas
+  referencia: Hch 21:1
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 21:1 nombra Rodas en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 15
+  lugar: patara
+  referencia: Hch 21:1, 2
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 21:1, 2 nombra Pátara en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 16
+  lugar: tiro
+  referencia: Hch 21:3-6
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 21:3-6 nombra Tiro en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 17
+  lugar: tolemaida
+  referencia: Hch 21:7
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 21:7 nombra Tolemaida en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 18
+  lugar: cesarea
+  referencia: Hch 21:8-14
+  fecha:
+    desde: 52
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 52-56 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Casa de Felipe el evangelizador; Ágabo.
+  razon: 'Hch 21:8-14 nombra Cesarea en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-21
+  estado: verificado
+- orden: 19
+  lugar: jerusalen
+  referencia: Hch 21:15-17
+  fecha:
+    desde: 56
+    hasta: 56
+    precision: estación
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: Pentecostés de 56
+  nota: Poco después lo arrestan en el templo.
+  razon: 'Hch 21:15-17 nombra Jerusalén en el recorrido. El estudio 3 da la fecha: Pentecostés de 56.'
+  fuentes:
+  - hch-21
+  - si-3
+  estado: verificado

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: conversion-de-pablo
+titulo: Conversión de Pablo en el camino a Damasco
+fecha:
+  desde: 34
+  hasta: 34
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 34 e.c.
+lugares:
+- damasco
+personas:
+- pablo
+pasajes:
+- Hch 9:1-19
+- Gál 1:15-18
+resumen: Saulo va a Damasco a detener discípulos; Jesús se le aparece en el camino, queda ciego tres días y, tras
+  recobrar la vista, empieza a predicar en la ciudad.
+razon: El estudio 3 (párr. 22) cuenta los «tres años» de Gálatas 1:18 como 34-36, de modo que la conversión cae
+  en 34. Perspicacia «Pablo» narra el suceso.
+fuentes:
+- si-3
+- it-pablo
+- hch-9
+buscar: conversión de Pablo
+consultado: '2026-09-27'
+estado: verificado

@@ -1,0 +1,55 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: antioquia-de-siria
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwb-085_14_VIDEO"
+    titulo: "Geoffrey Jackson: ¡Compartan lo que aprendieron!"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_14_VIDEO&appLanguage=S"
+    publicado: "2021-12-21"
+    menciones: 8
+    terminos:
+      "Antioquía (sin apellido)": 8
+  - docid: "pub-jwb-085_3_VIDEO"
+    titulo: "Graduación de la clase 150 de la Escuela de Galaad (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_3_VIDEO&appLanguage=S"
+    publicado: "2021-12-20"
+    menciones: 8
+    terminos:
+      "Antioquía (sin apellido)": 8
+  - docid: "pub-jwb-133_3_VIDEO"
+    titulo: "Michael Banks: ¿Dejarán huella? (graduación de la clase 158 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_3_VIDEO&appLanguage=S"
+    publicado: "2025-12-02"
+    menciones: 7
+    terminos:
+      "Antioquía (sin apellido)": 6
+      "Antioquía de Siria": 1
+  - docid: "pub-jwb_201703_12_VIDEO"
+    titulo: "David H. Splane: Seamos flexibles por causa de las buenas nuevas (1 Cor. 9:23)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201703_12_VIDEO&appLanguage=S"
+    publicado: "2017-03-20"
+    menciones: 4
+    terminos:
+      "Antioquía (sin apellido)": 4
+  - docid: "pub-jwb-093_11_VIDEO"
+    titulo: "John Ekrann: No exijamos más de lo que Jehová pide y sigamos el orden teocrático (Hech. 15:1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-093_11_VIDEO&appLanguage=S"
+    publicado: "2022-10-21"
+    menciones: 3
+    terminos:
+      "Antioquía (sin apellido)": 3
+  - docid: "pub-jwb_202001_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2020 (reunión anual del 2019)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202001_1_VIDEO&appLanguage=S"
+    publicado: "2020-01-06"
+    menciones: 3
+    terminos:
+      "Antioquía (sin apellido)": 3
+  - docid: "pub-jwbvod25_24_VIDEO"
+    titulo: "Izak Marais: Sigamos animándonos unos a otros (Rom. 1:11, 12)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_24_VIDEO&appLanguage=S"
+    publicado: "2025-04-18"
+    menciones: 2
+    terminos:
+      "Antioquía (sin apellido)": 2

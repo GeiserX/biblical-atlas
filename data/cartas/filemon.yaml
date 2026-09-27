@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: filemon
+libro: Filemón
+referencia: Flm 1, 2, 10-12
+escrita_en:
+- roma
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+destinatarios:
+  texto: Filemón, dueño de Onésimo; en su casa se reunía la congregación
+  lugares:
+  - colosas
+contexto_origen:
+  resumen: Onésimo, el esclavo que había huido de Filemón, estaba con Pablo en Roma y volvía a Colosas con esta
+    carta.
+  fuentes:
+  - it-colosenses
+  - it-filemon
+contexto_destino:
+  resumen: Colosas, en el suroeste de Asia Menor; Filemón pudo conocer el cristianismo durante los dos años de Pablo
+    en Éfeso.
+  fuentes:
+  - it-filemon
+razon: La Tabla y el estudio 3 dan Roma y c. 60-61. Situamos a Filemón en Colosas porque Col 4:9 llama a Onésimo
+  «uno de ustedes».
+fuentes:
+- tnm-tabla
+- si-3
+- it-filemon
+- filemon-1
+- colosenses-1
+enlaces:
+- titulo: 'Perspicacia: «Filemón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003463
+  tipo: perspicacia
+- titulo: Filemón (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado
