@@ -9,7 +9,10 @@
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.css" integrity="sha384-ntw3zEt6rcVML7jDK0ULmHa5hxLB23afsPqzqfY+gLgMfAkbFCnCgPpkZvV5mmZX" crossorigin="anonymous">
 <link rel="stylesheet" href="kit/tokens.css">
 <link rel="stylesheet" href="kit/components.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/mapa.css">
+<link rel="stylesheet" href="css/linea.css">
+<link rel="stylesheet" href="css/estudio.css">
 <!-- MapLibre GL JS 6.11.2 (solo módulos ES). El mapa de importación fija la versión y la huella SRI de cada módulo. -->
 <script type="importmap">
 {
@@ -33,7 +36,29 @@
   if (location.protocol === 'file:') maplibregl.setWorkerUrl('data:text/javascript,' + encodeURIComponent('import "https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl-worker.mjs";'));
   window.maplibregl = maplibregl;
 </script>
-<script defer src="app.js"></script>
+<!-- La aplicación: scripts clásicos con defer que se ejecutan en este orden y comparten window.BE. base.js va primero. -->
+<script defer src="js/base.js"></script>
+<script defer src="js/ficha.js"></script>
+<script defer src="js/mapa.js"></script>
+<script defer src="js/trayectorias.js"></script>
+<script defer src="js/linea.js"></script>
+<script defer src="js/ahora.js"></script>
+<script defer src="js/buscar.js"></script>
+<script defer src="js/grafo.js"></script>
+<script defer src="js/lectura.js"></script>
+<script defer src="js/recorridos.js"></script>
+<script defer src="js/portada.js"></script>
+<script defer src="js/tipos/lugar.js"></script>
+<script defer src="js/tipos/carta.js"></script>
+<script defer src="js/tipos/hallazgo.js"></script>
+<script defer src="js/tipos/viaje.js"></script>
+<script defer src="js/tipos/parada.js"></script>
+<script defer src="js/tipos/evento.js"></script>
+<script defer src="js/tipos/periodo.js"></script>
+<script defer src="js/tipos/persona.js"></script>
+<script defer src="js/tipos/pasaje.js"></script>
+<script defer src="js/tipos/libro.js"></script>
+<script defer src="js/tipos/recorrido.js"></script>
 </head>
 <body>
 <div class="be-app app" id="app">
@@ -69,6 +94,11 @@
       <button class="cortina-asa" id="cortina-asa" type="button" aria-label="Mover la cortina (flechas izquierda y derecha)"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 7-5 5 5 5M15 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </div>
     <div class="aviso" id="aviso" role="status" hidden></div>
+    <!-- Vistas previstas sobre el mapa, vacías hasta que su carril las rellene (ver site/README.md). -->
+    <section class="vista vista-grafo" id="vista-grafo" aria-label="Grafo de personas" hidden></section>
+    <section class="vista vista-conexion" id="vista-conexion" aria-label="Conexión entre dos" hidden></section>
+    <section class="vista vista-recorrido" id="vista-recorrido" aria-label="Recorrido guiado" hidden></section>
+    <section class="vista vista-ahora" id="vista-ahora" aria-label="Ahora mismo" hidden></section>
   </main>
 
   <aside class="be-panel panel" id="panel" aria-label="Ficha">
@@ -99,7 +129,10 @@
     <div class="be-timeline__track linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
       <svg id="linea-svg" class="linea-svg" aria-hidden="false"></svg>
     </div>
+    <section class="vista vista-sincronia" id="vista-sincronia" aria-label="Sincronía" hidden></section>
   </section>
+  <section class="vista vista-lectura" id="vista-lectura" aria-label="Modo lectura" hidden></section>
+  <section class="vista vista-portada" id="vista-portada" aria-label="Portada" hidden></section>
 </div>
 <noscript><p class="sin-js">Este sitio necesita JavaScript para dibujar el mapa y la línea de tiempo.</p></noscript>
 </body>

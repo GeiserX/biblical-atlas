@@ -1,0 +1,28 @@
+/* biblical-earth · estilos de la búsqueda y de las vistas de estudio. Dueño durante el reparto: app-estudio. */
+
+/* ---------- Búsqueda ---------- */
+.buscador { position: relative; flex: 0 1 470px; min-width: 0; }
+.buscador .be-search { max-width: none; cursor: text; }
+.be-search input { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; font: 500 var(--fs-md)/1 var(--font-sans); color: var(--ink); padding: 0; }
+.be-search input::placeholder { color: var(--ink-3); }
+.be-search input::-webkit-search-cancel-button { display: none; }
+.be-search:focus-within { background: var(--surface); border-color: var(--focus); box-shadow: 0 0 0 3px rgba(47, 111, 115, .15); }
+.resultados { top: 46px; left: 0; width: min(560px, calc(100vw - 24px)); max-height: min(70vh, 560px); overflow: auto; }
+.be-result { cursor: pointer; }
+.be-result:hover { background: var(--surface-2); }
+.be-result--active:hover { background: var(--gold-soft); }
+.res-texto { display: flex; flex-direction: column; min-width: 0; }
+.res-texto .be-row__meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.be-result mark { background: #f3e2b3; color: inherit; border-radius: 2px; padding: 0 1px; }
+.sin-resultados { padding: 14px; color: var(--ink-3); font-size: var(--fs-sm); }
+.filtro { display: inline-flex; align-items: center; gap: 10px; height: 34px; padding: 0 8px 0 14px; border-radius: var(--r-pill); background: var(--ink); color: #fbf7ef; border: 0; font-size: var(--fs-sm); font-weight: 600; white-space: nowrap; cursor: pointer; max-width: 300px; }
+.filtro span:first-child { overflow: hidden; text-overflow: ellipsis; }
+.filtro-x { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(255, 255, 255, .18); font-size: 15px; line-height: 1; }
+.filtro[hidden] { display: none; }
+
+/* ---------- Pantallas estrechas ---------- */
+@media (max-width: 760px) {
+  #q-kbd, .filtro { display: none !important; }
+  .buscador { flex: 1; }
+  .be-search input { font-size: 15px; }
+}

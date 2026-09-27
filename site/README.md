@@ -2,7 +2,7 @@
 
 Primer corte navegable de biblical-earth: los viajes de Pablo y sus cartas en un mapa, una línea de tiempo y una ficha. Un solo cursor de tiempo gobierna las tres piezas.
 
-Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, `app.js` y `style.css` se sirven tal cual.
+Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, los scripts de `js/` y las hojas de `css/` se sirven tal cual.
 
 ## Abrirlo en local
 
@@ -85,8 +85,79 @@ La rueda sobre la línea de tiempo cambia la escala, de décadas a meses. Con Ma
 
 | Fichero | Contenido |
 |---|---|
-| `index.html` | Estructura de la página y carga de MapLibre, con versión fija y SRI |
-| `app.js` | Toda la lógica: datos, cursor, mapa, línea de tiempo, ficha, búsqueda y dirección |
-| `style.css` | Estilos propios de la aplicación |
+| `index.html` | Estructura de la página, puntos de montaje de las vistas y carga de MapLibre, con versión fija y SRI |
+| [`js/`](js/) | La aplicación, partida en módulos (ver abajo) |
+| [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css` y `estudio.css` |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
 | `maps/` | Relieve antiguo y actual en Web Mercator |
+| `_local/` | Datos de prueba de cada carril. No va a git |
+
+## Módulos
+
+La aplicación son scripts clásicos con `defer`, no módulos ES. Desde `file://` el navegador bloquea los `import` locales, y el sitio tiene que abrir con doble clic. `index.html` los carga en un orden fijo y todos comparten un solo objeto, `window.BE`. [`js/base.js`](js/base.js) va primero y crea `BE`. El arranque espera a `DOMContentLoaded`, que llega cuando ya se han ejecutado todos los scripts, así que un fichero puede usar cualquier función de otro siempre que la llame a través de `BE` en el momento de usarla.
+
+Tres reglas para escribir un módulo:
+
+- Cada fichero es un IIFE que empieza con `const BE = window.BE;` y publica lo suyo con `Object.assign(BE, { … })`.
+- Las utilidades de `base.js` (`esc`, `norm`, `tramo`, `fechaCorta`, `citas`, `E`, `sucio`, `programar`…) se pueden copiar al cargar: `const { esc, tramo } = BE;`.
+- Los datos se leen siempre como `BE.D`, `BE.L` (lugares por id), `BE.PERS` (personas por id), `BE.P` (paradas de Pablo) y `BE.VIDEOS`, porque se cargan después. Lo mismo vale para las funciones de otros ficheros, que se llaman como `BE.dondeEsta(t)` y nunca se copian al cargar.
+
+### Registro de tipos
+
+Cada tipo de entidad vive en `js/tipos/<tipo>.js` y se registra así:
+
+```js
+BE.tipo('lugar', {
+  nodo: 'lugar',                        // icono en la lista de resultados
+  existe: (id) => …,                    // ¿vale «lugar:<id>» en la dirección?
+  nombre: (id) => …,                    // texto del filtro de arriba
+  implicados(id, r) { … },              // añade claves («carta:romanos») a r.claves e ids a r.lugares
+  momento: (id) => …,                   // fecha a la que salta el cursor al elegirlo; si falta, la primera de lo implicado
+  momentoImplicado: (id) => …,          // su fecha cuando lo implica otra selección; si falta, no cuenta
+  ficha: (id) => '<html>',              // la ficha del panel
+  buscar: (q, nq, puntuar) => [ … ],    // resultados { grupo, sel, titulo, meta, puntos }
+});
+```
+
+`BE.tipo('lugar')` devuelve la definición. Registrar dos veces el mismo tipo es un error. `BE.anadirParada(r, parada)` y `BE.anadirCarta(r, carta)` ayudan a rellenar `implicados`.
+
+### Interfaces fijas
+
+| Interfaz | Qué hace hoy |
+|---|---|
+| `BE.donde(persona, t)` | Para `'pablo'`, lo mismo que `BE.dondeEsta(t)`. Para otra persona, `null` hasta que app-tiempo la generalice |
+| `BE.ventana(persona, fecha, lugares)` | Para `'pablo'`, la parte de la fecha en que las paradas lo ponen en uno de esos lugares. Para otra persona, `null` |
+| `BE.mapa.resaltar(ids)` | Resalta esos lugares en el mapa por encima de la selección. `resaltar(null)` vuelve a la selección |
+| `BE.mapa.encuadrar(ids)` | Encuadra el mapa en esos lugares, descontando la hoja inferior en el móvil |
+| `BE.pintores` | Lista de funciones que el bucle de pintado llama en cada fotograma, después de las suyas, con las marcas de lo que cambió (`{ mapa, etiquetas, panel, linea, cursor }`) |
+| `BE.inicios` | Funciones que se llaman una vez con los datos ya cargados, antes de leer la dirección |
+| `BE.parametros` | Parámetros extra de la dirección: `{ nombre, escribir() → texto o null, leer(texto, inicial) }` |
+
+`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()` (app-tiempo); `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda (app-estudio, desde `tipos/libro.js`).
+
+`window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
+
+### Puntos de montaje
+
+`index.html` ya trae, vacíos y con `hidden`, los contenedores de las vistas previstas: `#vista-grafo`, `#vista-conexion`, `#vista-recorrido` y `#vista-ahora` dentro del mapa; `#vista-sincronia` dentro de la línea de tiempo; `#vista-lectura` y `#vista-portada` dentro de `#app`. Las rellenan app-estudio (grafo, conexión, recorrido, lectura y portada) y app-tiempo («Ahora mismo» y sincronía), cada una desde su fichero. Si necesita otro sitio en la página, su módulo la mueve con JavaScript, sin tocar `index.html`.
+
+### Datos de prueba
+
+`index.html?datos=_local/<carril>/data.json` carga otro `data.json`. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
+
+```bash
+python3 scripts/build.py --salida site/_local/<carril>/
+```
+
+## Quién toca qué durante el reparto
+
+Mientras los tres carriles del sitio trabajan en paralelo, cada fichero tiene un solo dueño. Nadie edita un fichero de otro. Si un carril necesita un cambio en `base.js`, `base.css` o `index.html`, lo describe en su informe como propuesta y lo aplica el orquestador al integrar.
+
+| Fichero | Dueño |
+|---|---|
+| `js/base.js` (utilidades, estado, carga, registro, selección, cursor, reproducción, dirección, bucle de pintado, teclado, arranque), `css/base.css`, `index.html` | Congelado |
+| `js/mapa.js`, `js/ficha.js` (ayudas de ficha: citas, fuentes, estado, «por qué», nombres, vídeos), `js/tipos/lugar.js`, `js/tipos/carta.js`, `js/tipos/hallazgo.js`, `css/mapa.css`, `maps/*` | app-mapa |
+| `js/trayectorias.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | app-tiempo |
+| `js/buscar.js`, `js/grafo.js`, `js/lectura.js`, `js/recorridos.js`, `js/portada.js`, `js/tipos/persona.js`, `js/tipos/pasaje.js`, `js/tipos/libro.js`, `js/tipos/recorrido.js`, `css/estudio.css` | app-estudio |
+
+`data.json`, `data.js` y `videos.json` son derivados y ningún carril los edita.
