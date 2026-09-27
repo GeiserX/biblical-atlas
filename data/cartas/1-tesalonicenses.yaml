@@ -1,6 +1,7 @@
 # biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
 id: 1-tesalonicenses
 libro: 1 Tesalonicenses
+escritor: pablo
 referencia: 1Te 1:1
 escrita_en:
 - corinto

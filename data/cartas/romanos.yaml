@@ -1,6 +1,7 @@
 # biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
 id: romanos
 libro: Romanos
+escritor: pablo
 referencia: Ro 16:1, 22
 escrita_en:
 - corinto

@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betania-del-otro-lado-del-jordan
+nombre: Betania, al otro lado del Jordán
+nombres:
+- nombre: Betania, al otro lado del Jordán
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos: []
+resumen: Ficha en preparación.
+razon: Ficha mínima con el id fijado; Perspicacia «Betania» (apartado 2) dice que el sitio no se conoce. El carril inciertos
+  pondrá los candidatos; hasta entonces no hay punto en el mapa.
+fuentes:
+- it-betania
+enlaces:
+- titulo: 'Perspicacia: «Betania»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000670
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

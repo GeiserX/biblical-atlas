@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nazaret
+nombre: Nazaret
+nombres:
+- nombre: Nazaret
+tipo: ciudad
+lat: 32.70214
+lon: 35.29769
+precision: punto
+coord_fuente: openbible:af5884f
+coord_url: https://www.openbible.info/geo/ancient/af5884f/nazareth
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Nazaret», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-nazaret
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Nazaret»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003190
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

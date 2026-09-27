@@ -1,0 +1,16 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-madre-de-jesus
+nombre: María, la madre de Jesús
+nombres:
+- nombre: María, la madre de Jesús
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «María» (apartado 1), confirmado
+  por su título.'
+fuentes:
+- it-maria
+enlaces:
+- titulo: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

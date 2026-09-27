@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-de-los-olivos
+nombre: Monte de los Olivos
+nombres:
+- nombre: Monte de los Olivos
+tipo: monte
+lat: 31.777946
+lon: 35.245686
+precision: punto
+coord_fuente: openbible:ac2c4c5
+coord_url: https://www.openbible.info/geo/ancient/ac2c4c5/mount-of-olives
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Artículo: Perspicacia «Olivos, Monte de los», confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-olivos
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Olivos, Monte de los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003318
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

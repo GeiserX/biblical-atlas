@@ -1,0 +1,51 @@
+# biblical-earth: los meses del calendario hebreo, en el orden del año sagrado (de nisán a adar, y veadar,
+# el mes que se añadía algunos años). Nombres de la tabla B15 «El calendario hebreo» de la Biblia de estudio
+# (wol.jw.org, 1001070237), consultada el 2026-09-28. Esquema en docs/investigacion/README.md.
+#
+# Los ids son los que usa fecha.detalle.mes («{mes: nisan, dia: 14}»). Es estructura: los hechos de cada mes
+# (equivalencia en nuestro calendario, fiestas, estación) los añade el carril «marco» como campos opcionales,
+# cada uno con fuentes, razon, consultado y estado.
+meses:
+- id: nisan
+  orden: 1
+  nombre: Nisán
+  otros_nombres: [Abib]
+- id: iyar
+  orden: 2
+  nombre: Iyar
+  otros_nombres: [Ziv]
+- id: sivan
+  orden: 3
+  nombre: Siván
+- id: tamuz
+  orden: 4
+  nombre: Tamuz
+- id: ab
+  orden: 5
+  nombre: Ab
+- id: elul
+  orden: 6
+  nombre: Elul
+- id: tisri
+  orden: 7
+  nombre: Tisri
+  otros_nombres: [Etanim]
+- id: hesvan
+  orden: 8
+  nombre: Hesván
+  otros_nombres: [Bul]
+- id: kislev
+  orden: 9
+  nombre: Kislev
+- id: tebet
+  orden: 10
+  nombre: Tebet
+- id: sebat
+  orden: 11
+  nombre: Sebat
+- id: adar
+  orden: 12
+  nombre: Adar
+- id: veadar
+  orden: 13
+  nombre: Veadar

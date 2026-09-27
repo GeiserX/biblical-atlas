@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: caida-de-babilonia
+titulo: Caída de Babilonia
+fecha:
+  desde: -538
+  hasta: -538
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 539 a.e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril persas. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Babilonia», confirmado por su título.'
+fuentes:
+- si-3
+- it-babilonia
+enlaces:
+- titulo: 'Perspicacia: «Babilonia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

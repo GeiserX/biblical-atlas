@@ -28,10 +28,17 @@ def main(argv=None):
     datos, _ = build.cargar(args.data)
 
     pendientes = []
+    origen = datos.get("_origen_fuentes") or {}
     for fid, f in sorted(datos["fuentes"].items()):
+        if f.get("implicita"):
+            continue                      # capítulo creado desde libros.yaml: se relee con el hecho que lo cita
         c = f.get("consultado")
         if not c or datetime.date.fromisoformat(str(c)) <= limite:
-            pendientes.append((c or "nunca", "fuente", fid, "data/fuentes.yaml", f.get("titulo") or fid))
+            pendientes.append((c or "nunca", "fuente", fid, origen.get(fid, "data/fuentes/"), f.get("titulo") or fid))
+    for l in datos["libros"]:
+        c = l.get("consultado")
+        if c and datetime.date.fromisoformat(str(c)) <= limite:
+            pendientes.append((c, "libro", l["slug"], "data/libros.yaml", l["nombre"]))
     for tipo in build.TIPOS:
         for o in datos[tipo]:
             c = o.get("consultado")

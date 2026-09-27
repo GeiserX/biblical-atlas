@@ -1,0 +1,16 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tiberio
+nombre: Tiberio
+nombres:
+- nombre: Tiberio
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Artículo: Perspicacia «Tiberio», confirmado por su
+  título.'
+fuentes:
+- it-tiberio
+enlaces:
+- titulo: 'Perspicacia: «Tiberio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004398
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

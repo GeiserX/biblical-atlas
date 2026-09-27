@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: destruccion-de-jerusalen-70
+titulo: Los romanos destruyen Jerusalén
+fecha:
+  desde: 70
+  hasta: 70
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 70 e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Jerusalén», confirmado por su título.'
+fuentes:
+- si-3
+- it-jerusalen
+enlaces:
+- titulo: 'Perspicacia: «Jerusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

@@ -1,0 +1,16 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-ii
+nombre: Herodes Agripa II
+nombres:
+- nombre: Herodes Agripa II
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pablo. Artículo: Perspicacia «Herodes» (apartado
+  4), confirmado por su título.'
+fuentes:
+- it-herodes
+enlaces:
+- titulo: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

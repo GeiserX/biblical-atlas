@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: asia
+nombre: Asia
+nombres:
+- nombre: Asia
+tipo: provincia
+lat: 38.4
+lon: 28.3
+precision: zona
+coord_fuente: openbible:a197f19
+coord_url: https://www.openbible.info/geo/ancient/a197f19/asia
+coord_nota: Punto representativo de la provincia.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pablo. Artículo: Perspicacia «Asia», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-asia
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Asia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000433
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

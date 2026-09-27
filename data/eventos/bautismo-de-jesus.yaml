@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: bautismo-de-jesus
+titulo: Bautismo de Jesús
+fecha:
+  desde: 29
+  hasta: 29
+  precision: estación
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: otoño de 29 e.c.
+  detalle:
+    estacion: otoño
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Bautismo», confirmado por su título.'
+fuentes:
+- si-3
+- it-bautismo
+enlaces:
+- titulo: 'Perspicacia: «Bautismo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000555
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

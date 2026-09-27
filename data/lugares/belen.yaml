@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: belen
+nombre: Belén
+nombres:
+- nombre: Belén
+tipo: ciudad
+lat: 31.704306
+lon: 35.207639
+precision: punto
+coord_fuente: openbible:a112427
+coord_url: https://www.openbible.info/geo/ancient/a112427/bethlehem-1
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Belén», confirmado por su
+  título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-belen
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Belén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000694
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

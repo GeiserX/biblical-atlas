@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mar-de-galilea
+nombre: Mar de Galilea
+nombres:
+- nombre: Mar de Galilea
+tipo: lago
+lat: 32.818906
+lon: 35.590033
+precision: zona
+coord_fuente: openbible:a562fcc
+coord_url: https://www.openbible.info/geo/ancient/a562fcc/sea-of-galilee
+coord_nota: Punto representativo del lago.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Galilea, Mar de», confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-mar-de-galilea
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Galilea, Mar de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001599
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

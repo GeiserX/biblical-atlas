@@ -1,4 +1,4 @@
-# biblical-earth: todas las fuentes, por identificador. Esquema en docs/investigacion/README.md.
+# biblical-earth: fuentes comunes, por identificador. Cada carril añade las suyas en data/fuentes/<carril>.yaml. Esquema en docs/investigacion/README.md.
 tnm-tabla:
   titulo: Tabla de los libros de la Biblia
   obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
