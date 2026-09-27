@@ -267,3 +267,6 @@ ol.paradas li:first-child .be-row { border-top: 0; }
   .marca-lugar .etiqueta { font-size: 14px; }
   .marca-lugar.es-actual .etiqueta { font-size: 17px; }
 }
+
+/* La leyenda sigue el color del viaje activo también en el tramo sin trazado conocido. */
+#leyenda .be-legend__line--approx { border-color: var(--accent); }

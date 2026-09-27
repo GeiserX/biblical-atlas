@@ -586,7 +586,7 @@ function montarCapas() {
   map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': colorPorViaje(), 'line-width': 3.5 } });
-  map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['get', 'incierto'], layout: { 'line-join': 'round' }, paint: { 'line-color': '#7a5c8e', 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
+  map.addLayer({ id: 'be-hecho-incierto', type: 'line', source: 'be-hecho', filter: ['get', 'incierto'], layout: { 'line-join': 'round' }, paint: { 'line-color': colorPorViaje(), 'line-width': 3, 'line-dasharray': [3, 2], 'line-opacity': 0.9 } });
   map.addLayer({ id: 'be-cartas-toque', type: 'line', source: 'be-cartas', layout: lineas, paint: { 'line-color': '#000', 'line-width': 16, 'line-opacity': 0 } });
   mapaListo = true;
   if (cortina) { cortina = null; }
