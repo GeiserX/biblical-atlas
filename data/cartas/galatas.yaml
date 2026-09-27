@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: galatas
+libro: Gálatas
+referencia: Gál 1:1, 2
+escrita_en:
+- corinto
+- antioquia-de-siria
+fecha:
+  desde: 50
+  hasta: 52
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 50-52 e.c.
+destinatarios:
+  texto: 'Congregaciones de Galacia (Gál 1:2); Perspicacia las sitúa en el sur de la provincia: Iconio, Listra,
+    Derbe y Antioquía de Pisidia.'
+  lugares:
+  - galacia
+  - iconio
+  - listra
+  - derbe
+  - antioquia-de-pisidia
+contexto_origen:
+  resumen: La Tabla de los libros da «Corinto o Antioquía de Siria». Perspicacia ve más probable Corinto, durante
+    el año y medio de 50-52.
+  fuentes:
+  - tnm-tabla
+  - it-galatas
+contexto_destino:
+  resumen: Pablo ya había visitado dos veces las ciudades del sur de Galacia. Unos judaizantes presionaban para
+    imponer la circuncisión.
+  fuentes:
+  - it-galatas
+razon: La Tabla y el estudio 3 dan dos lugares posibles y c. 50-52. Guardamos Corinto primero porque Perspicacia
+  «Gálatas» lo cree más probable.
+fuentes:
+- tnm-tabla
+- si-3
+- it-galatas
+- galatas-1
+enlaces:
+- titulo: 'Perspicacia: «Gálatas, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001595
+  tipo: perspicacia
+- titulo: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado
+nota: 'Dos lugares de escritura posibles: el primero es el preferido; el segundo, la alternativa.'

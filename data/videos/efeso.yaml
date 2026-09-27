@@ -1,0 +1,94 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: efeso
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwb-100_19_VIDEO"
+    titulo: "Christopher Mavor: Acerquémonos a Dios mediante la oración (Efes. 6:18)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_19_VIDEO&appLanguage=S"
+    publicado: "2023-01-27"
+    menciones: 9
+    terminos:
+      "efesios": 4
+      "Éfeso": 5
+  - docid: "pub-co-r20_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
+    publicado: "2020-08-13"
+    menciones: 5
+    terminos:
+      "efesios": 1
+      "Éfeso": 4
+  - docid: "pub-jwb-107_2_VIDEO"
+    titulo: "Graduación de la clase 154 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-107_2_VIDEO&appLanguage=S"
+    publicado: "2023-12-18"
+    menciones: 4
+    terminos:
+      "efesios": 1
+      "Éfeso": 3
+  - docid: "pub-jwban_201605_1_VIDEO"
+    titulo: "Anthony Morris III: Glorifiquemos a Jehová, Aquel a quien toda familia debe su nombre"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201605_1_VIDEO&appLanguage=S"
+    publicado: "2016-05-16"
+    menciones: 4
+    terminos:
+      "efesios": 4
+  - docid: "pub-co-r20_134_VIDEO"
+    titulo: "Anthony Morris: Ayudemos a los estudiantes… a abandonar los hábitos que Jehová odia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_134_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 3
+    terminos:
+      "efesios": 3
+  - docid: "pub-co-r20_143_VIDEO"
+    titulo: "Ralph Walls: Podemos ser felices a pesar del peligro"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_143_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 3
+    terminos:
+      "Éfeso": 3
+  - docid: "pub-co-r20_56_VIDEO"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!” (con audiodescripciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_56_VIDEO&appLanguage=S"
+    publicado: "2020-08-03"
+    menciones: 3
+    terminos:
+      "efesios": 3
+  - docid: "pub-co-r20_7_VIDEO"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_7_VIDEO&appLanguage=S"
+    publicado: "2020-08-03"
+    menciones: 3
+    terminos:
+      "efesios": 3
+  - docid: "pub-co-r21_120_VIDEO"
+    titulo: "Geoffrey Jackson: “Sigan examinándose para saber si están firmes en la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_120_VIDEO&appLanguage=S"
+    publicado: "2021-09-13"
+    menciones: 3
+    terminos:
+      "Éfeso": 3
+  - docid: "pub-co-r21_4_VIDEO"
+    titulo: "Viernes tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_4_VIDEO&appLanguage=S"
+    publicado: "2021-07-05"
+    menciones: 3
+    terminos:
+      "Éfeso": 3
+  - docid: "pub-jwb_201803_7_VIDEO"
+    titulo: "Ronald Curzan: ¿Somos agradables a la vista de Jehová? (Efes. 5:10)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201803_7_VIDEO&appLanguage=S"
+    publicado: "2018-03-19"
+    menciones: 3
+    terminos:
+      "efesios": 2
+      "Éfeso": 1
+  - docid: "pub-co-r20_144_VIDEO"
+    titulo: "David Schafer: Podemos ser felices a pesar de la espada"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_144_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 2
+    terminos:
+      "efesios": 1
+      "Éfeso": 1

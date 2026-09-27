@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cnido
+nombre: Cnido
+nombres:
+- nombre: Cnido
+tipo: ciudad
+lat: 36.68583
+lon: 27.375
+precision: punto
+coord_fuente: openbible:ab793ce
+coord_url: https://www.openbible.info/geo/ancient/ab793ce/cnidus
+resumen: Ciudad en una península del suroeste de Asia Menor; el barco avanzó con dificultad hasta ella.
+razon: 'Perspicacia («Cnido») describe el lugar; aparece en Hch 27:7. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-cnido
+- hch-27
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Cnido»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000997
+  tipo: perspicacia
+- titulo: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

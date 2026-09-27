@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: colosas
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwb-096_13_VIDEO"
+    titulo: "David Splane: “Toda la Escritura está inspirada por Dios” (2 Tim. 3:16)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-096_13_VIDEO&appLanguage=S"
+    publicado: "2023-05-19"
+    menciones: 2
+    terminos:
+      "colosenses": 2
+  - docid: "pub-jwb_201707_11_VIDEO"
+    titulo: "Harold Corkern: Protejamos nuestra amistad con Jehová (Col. 3:5)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201707_11_VIDEO&appLanguage=S"
+    publicado: "2017-07-24"
+    menciones: 2
+    terminos:
+      "colosenses": 2
+  - docid: "pub-jwb_201811_7_VIDEO"
+    titulo: "Geoffrey Jackson: “Continúen soportándose unos a otros” (Col. 3:13)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201811_7_VIDEO&appLanguage=S"
+    publicado: "2018-11-19"
+    menciones: 2
+    terminos:
+      "colosenses": 2

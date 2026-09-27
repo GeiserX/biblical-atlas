@@ -1,0 +1,47 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: tiro
+generado: "2026-09-27"
+videos:
+  - docid: "pub-gnj_6_VIDEO"
+    titulo: "Episodio 6: “¿Eres tú el que tiene que venir?”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-6-eres-t%C3%BA-el-que-tiene-que-venir/"
+    publicado: "2026-05-01"
+    menciones: 2
+    terminos:
+      "Tiro": 2
+  - docid: "pub-jwb-095_11_VIDEO"
+    titulo: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_11_VIDEO&appLanguage=S"
+    publicado: "2023-04-21"
+    menciones: 2
+    terminos:
+      "Tiro": 2
+  - docid: "pub-jwb-098_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_1_VIDEO&appLanguage=S"
+    publicado: "2022-12-05"
+    menciones: 2
+    terminos:
+      "Tiro": 2
+  - docid: "pub-jwb-098_4_VIDEO"
+    titulo: "Geoffrey Jackson: Tengamos entusiasmo, pero también paciencia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_4_VIDEO&appLanguage=S"
+    publicado: "2022-12-06"
+    menciones: 2
+    terminos:
+      "Tiro": 2
+  - docid: "pub-jwb-119_1_VIDEO"
+    titulo: "JW Broadcasting: Noviembre de 2024 (graduación de la clase 156 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-119_1_VIDEO&appLanguage=S"
+    publicado: "2024-11-04"
+    menciones: 2
+    terminos:
+      "Tiro": 2
+  - docid: "pub-jwb-119_2_VIDEO"
+    titulo: "Graduación de la clase 156 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-119_2_VIDEO&appLanguage=S"
+    publicado: "2024-11-05"
+    menciones: 2
+    terminos:
+      "Tiro": 2

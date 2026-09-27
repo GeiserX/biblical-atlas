@@ -8,7 +8,7 @@ Una web abierta para estudiar la Biblia con un **mapa**, una **línea de tiempo 
 
 Por debajo hay un grafo: personas, lugares, hechos, viajes, cartas y hallazgos, unidos por relaciones que tienen su fecha y su fuente. El estudiante nunca ve el grafo entero. Ve una persona, un lugar o un hecho en el centro y, a su alrededor, lo que estaba conectado con él en esa fecha. Desde ahí salta de nodo en nodo.
 
-La fuente principal (nivel 1) es la Traducción del Nuevo Mundo (TNM) y wol.jw.org, con su cronología. La arqueología y la investigación (nivel 2) acompañan y nunca corrigen. De jw.org sólo enlazamos: no copiamos textos ni imágenes.
+La fuente principal (nivel 1) es la Traducción del Nuevo Mundo (TNM) y wol.jw.org, con su cronología. La arqueología y la investigación (nivel 2) acompañan y nunca corrigen. De jw.org solo enlazamos: no copiamos textos ni imágenes.
 
 ## Preguntas que el producto responde de forma obvia
 
@@ -93,12 +93,12 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 ## Decisiones tomadas
 
 - **Un cursor de tiempo único** mueve el mapa, la línea de tiempo con zoom (de milenios a días) y el panel. La velocidad de reproducción se adapta al zoom.
-- **Carriles por persona y por imperio** en la línea de tiempo. El mapa sólo enseña lo vigente en la fecha y deja un rastro tenue de lo anterior.
+- **Carriles por persona y por imperio** en la línea de tiempo. El mapa solo enseña lo vigente en la fecha y deja un rastro tenue de lo anterior.
 - **Pablo en cada momento.** Al mover la línea se ve dónde estaba, dónde escribió cada carta, a quién iba y qué pasaba en la ciudad que escribe y en la que recibe.
 - **Pulsar un punto del mapa** en la fecha elegida enseña qué pasó allí.
 - **Navegación como grafo.** Una persona en el centro, su contexto alrededor y ramas nuevas en cada salto, filtradas por fecha.
-- **Mapa antiguo y mapa actual** a un clic, o superpuestos con cortina. Un mapa sólo moderno desorienta.
-- **Cartografía propia.** Dibujamos nuestros mapas a partir de hechos (coordenadas, costas, relieve) con diseño propio. De jw.org sólo enlazamos. Más adelante podemos pedir permiso para usar su material.
+- **Mapa antiguo y mapa actual** a un clic, o superpuestos con cortina. Un mapa solo moderno desorienta.
+- **Cartografía propia.** Dibujamos nuestros mapas a partir de hechos (coordenadas, costas, relieve) con diseño propio. De jw.org solo enlazamos. Más adelante podemos pedir permiso para usar su material.
 - **Incertidumbre visible.** Vidas que se difuminan donde no hay fechas, viajes en «tiempo narrativo» rotulado como aproximado y lugares inciertos como zonas o abanicos de candidatos.
 - **Búsqueda por nodo y vecinos**, por capítulo («Hch 16») y por año («607 a.e.c.»).
 - **Cronología TNM como principal.** La secular aparece como nota cuando difiere (607 frente a 587/586 a.e.c.). Internamente usamos años astronómicos (1 a.e.c. = 0).
@@ -106,20 +106,23 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 - **Sitio estático.** MapLibre GL, teselas propias, JSON en el navegador y ningún servidor.
 - **Rutas por calzadas reales** con los datos de Itiner-e, y por mar cuando el texto lo dice.
 - **Fotos.** No existen fotos de la época. Usamos objetos de museo y ruinas actuales con licencia libre y el crédito a la vista, y enlazamos a las ilustraciones de jw.org.
-- **Theographic** sirve para arrancar el índice de nombres y versículos, no como modelo. Los datos abiertos de otros autores sólo aportan hechos neutros, como coordenadas.
+- **Theographic** sirve para arrancar el índice de nombres y versículos, no como modelo. Los datos abiertos de otros autores solo aportan hechos neutros, como coordenadas.
 - **Primer corte.** Los viajes de Pablo (Hch 9-28) y sus cartas.
 
 ## Preguntas abiertas
 
-- **Permiso de jw.org.** ¿Pedimos permiso para enlazar o mostrar sus mapas e ilustraciones dentro de la aplicación? La vía está en [fuentes y proyectos](fuentes-y-proyectos.md#16-términos-de-uso-de-jworg-y-cómo-pedir-permiso).
-- **Licencia de los datos de Itiner-e.** El artículo es CC BY 4.0, pero el conjunto de datos no declara licencia.
-- **Coordenadas sin verificar:** Seleucia del Tigris, Ctesifonte, Nehardea y Betania del otro lado del Jordán.
-- **Nombres que cambian con el tiempo**, como Afec y Antípatris. ¿Desde qué fecha usamos cada uno?
-- **Límites entre potencias mundiales.** El paso de Grecia a Roma no tiene un año verificado y hoy se dibuja difuminado.
-- **Fechas que calculamos nosotros**, como Ester reina en 489 a.e.c. y el decreto de Hamán en 484 a.e.c. ¿Las mostramos rayadas o las ocultamos hasta tener una fuente?
-- **Nombres que varían según el libro.** Esdras escribe «Jesúa» y Ageo y Zacarías escriben «Josué» para el mismo sumo sacerdote. ¿Qué nombre sale en la ficha y cómo enlazamos el otro?
-- **Contribuciones.** ¿Quién revisa una corrección propuesta y cómo se registra su fuente?
+Las respuestas a las preguntas de la primera ronda (permiso, licencia, coordenadas, nombres, límites, fechas, contribuciones) están en [decisiones](../decisiones.md). Estas son las que quedan, y pesan más:
+
+- **¿Cómo sabremos dentro de un año qué ha cambiado en jw.org?** Cada hecho guarda la fecha de consulta y una búsqueda en WOL preparada, y [`scripts/revisar.py`](../../scripts/revisar.py) lista lo que lleva más de un año sin releer. Falta decidir si ese repaso lo hace una persona, o si un aviso automático abre un issue por cada hecho vencido. Y cuando una publicación nueva cambia un dato, ¿dejamos ver en la ficha «hasta 2026 decíamos X»? Proponemos que sí, con el `historial` plegado en la ficha.
+- **¿Dónde está Pablo el 15 de marzo del 48?** La Biblia da el orden de las paradas, no el día. Hoy el marcador se interpola entre paradas y se dibuja con halo discontinuo, «posición estimada». ¿Es honesto mostrar una posición que nadie afirma, o el marcador debe saltar de parada en parada y quedarse quieto entre fechas ancladas? Es la decisión que más condiciona la animación.
+- **No podemos mostrar el texto bíblico.** La TNM no se puede copiar, así que cada versículo abre en wol.jw.org en otra pestaña, y la lectura «versículo a versículo» se hace con el pasaje en una ventana y el mapa en otra. ¿Pedimos permiso a la organización para incrustar el texto, o diseñamos la lectura a dos ventanas desde el principio, con el mapa siguiendo al capítulo que se lee?
+- **¿Qué hacemos con lo que jw.org no menciona nunca?** Los reyes partos de Babilonia en tiempos de Jesús no aparecen en ninguna publicación. Con la regla «nivel 2 solo si jw.org lo ha usado», esa pantalla se queda sin la mitad de su contenido. ¿Se muestra como «contexto secular», separado y plegado, o no se muestra?
+- **¿Dibujamos fronteras de imperios?** Un polígono por año es caro, discutible y casi nunca lo da jw.org. La alternativa es una «esfera» difuminada con la lista de provincias que jw.org sí nombra, y fronteras solo en los años en que una publicación las describe. ¿Basta con eso para «quién mandaba aquí en tal año»?
+- **¿En qué orden construimos las 3.000 personas de Perspicacia?** Por rebanadas de relato (Pablo, Pedro, Jesús, reyes) o siguiendo la lectura semanal de la congregación, para que cada semana el mapa sirva en la reunión. Lo segundo hace útil la aplicación desde el primer mes, pero deja rebanadas a medias.
+- **¿Cuánto texto propio permitimos en una ficha?** El riesgo es que el estudiante lea nuestro resumen en vez del pasaje. Proponemos un tope de 40 palabras por hecho y siempre con el versículo enlazado; la validación lo comprueba. ¿Es demasiado poco para un contexto como «qué pasaba en Corinto en el 50»?
+- **¿Para qué dispositivo diseñamos el estudio en familia?** Un portátil en la mesa, una tablet que pasa de mano en mano o el televisor con mando. Cada uno pide tamaños, gestos y navegación distintos, y el modo presentación solo tiene sentido en el tercero.
+- **¿Nombre del proyecto?** El repo es `biblical-earth`. Para el sitio, en español, proponemos «Tierra Bíblica» o «Cada relato en su lugar». Queda por elegir.
 
 ## Siguiente paso
 
-Un **prototipo navegable del primer corte**: los viajes de Pablo y sus cartas en un sitio estático con MapLibre GL. Debe tener el cursor único, la línea de tiempo con zoom, el mapa antiguo y el actual, la ficha de carta con sus dos extremos y la búsqueda por capítulo. Los datos saldrán de los YAML del [modelo de datos](modelo-de-datos.md), empezando por los JSON ya comprobados en [`mockups/data/`](mockups/data/README.md).
+El primer corte está en marcha: ver la [hoja de ruta](../hoja-de-ruta.md) y el sitio en `site/`. Lo que sigue es el prototipo navegable: los viajes de Pablo y sus cartas en un sitio estático con MapLibre GL. Debe tener el cursor único, la línea de tiempo con zoom, el mapa antiguo y el actual, la ficha de carta con sus dos extremos y la búsqueda por capítulo. Los datos saldrán de los YAML del [modelo de datos](modelo-de-datos.md), empezando por los JSON ya comprobados en [`mockups/data/`](mockups/data/README.md).

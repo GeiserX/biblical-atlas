@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ason
+nombre: Asón
+nombres:
+- nombre: Asón
+- nombre: Behramkale
+  nota: Nombre actual del lugar; antes se llamaba Behramköy.
+tipo: puerto
+lat: 39.49056
+lon: 26.33667
+precision: punto
+coord_fuente: openbible:a0a2ca7
+coord_url: https://www.openbible.info/geo/ancient/a0a2ca7/assos
+resumen: Puerto de Misia; Pablo fue a pie desde Troas y embarcó allí con sus compañeros.
+razon: 'Perspicacia («Asón») describe el lugar; aparece en Hch 20:13, 14. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-ason
+- hch-20
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Asón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000446
+  tipo: perspicacia
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

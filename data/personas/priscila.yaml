@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: priscila
+nombre: Priscila
+nombres:
+- nombre: Priscila
+  nota: Forma que usa Lucas.
+- nombre: Prisca
+  nota: Forma más corta que usa Pablo.
+resumen: Esposa de Áquila, siempre nombrada con él. Acogieron reuniones de la congregación en su casa, en Roma y
+  en Éfeso.
+razon: Perspicacia «Prisca» explica las dos formas del nombre y su labor con Áquila.
+fuentes:
+- it-prisca
+- hch-18
+enlaces:
+- titulo: 'Perspicacia: «Prisca»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003556
+  tipo: perspicacia
+- titulo: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

@@ -1,0 +1,89 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: jerusalen
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwb-100_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 27
+    terminos:
+      "Jerusalén": 27
+  - docid: "pub-co-r22_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_11_VIDEO&appLanguage=S"
+    publicado: "2022-08-15"
+    menciones: 26
+    terminos:
+      "Jerusalén": 26
+  - docid: "pub-wpc_2_VIDEO"
+    titulo: "Jehová nos guía por el camino de la paz (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-2/"
+    publicado: "2022-08-22"
+    menciones: 26
+    terminos:
+      "Jerusalén": 26
+  - docid: "pub-jwb-100_2_VIDEO"
+    titulo: "Geoffrey Jackson: Estemos alerta y listos para actuar con decisión"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_2_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 25
+    terminos:
+      "Jerusalén": 25
+  - docid: "pub-co-r20_2_VIDEO"
+    titulo: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_2_VIDEO&appLanguage=S"
+    publicado: "2020-07-06"
+    menciones: 19
+    terminos:
+      "Jerusalén": 19
+  - docid: "pub-jwb-141_1_VIDEO"
+    titulo: "JW Broadcasting: Septiembre de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-141_1_VIDEO&appLanguage=S"
+    publicado: "2026-09-07"
+    menciones: 19
+    terminos:
+      "Jerusalén": 19
+  - docid: "pub-tiy_1_VIDEO"
+    titulo: "“Oh, Jehová, en ti confío”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-tiy_1_VIDEO&appLanguage=S"
+    publicado: "2017-01-02"
+    menciones: 17
+    terminos:
+      "Jerusalén": 17
+  - docid: "pub-jwb-141_2_VIDEO"
+    titulo: "Kenneth Cook: Podemos mantenernos fieles ante cualquier prueba de fe"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-141_2_VIDEO&appLanguage=S"
+    publicado: "2026-09-08"
+    menciones: 16
+    terminos:
+      "Jerusalén": 16
+  - docid: "pub-co-r20_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_11_VIDEO&appLanguage=S"
+    publicado: "2020-08-24"
+    menciones: 15
+    terminos:
+      "Jerusalén": 15
+  - docid: "pub-jjs_2_VIDEO"
+    titulo: "Nehemías: La felicidad que viene de Jehová es nuestra fortaleza (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/nehemias-felicidad-viene-jehova/pelicula-parte-2/"
+    publicado: "2020-09-28"
+    menciones: 14
+    terminos:
+      "Jerusalén": 14
+  - docid: "pub-jwbcov24_9_VIDEO"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_9_VIDEO&appLanguage=S"
+    publicado: "2025-01-20"
+    menciones: 12
+    terminos:
+      "Jerusalén": 12
+  - docid: "pub-jwb_202102_11_VIDEO"
+    titulo: "Mark Noumair: “Esdras había preparado su corazón” (Esd. 7:10)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202102_11_VIDEO&appLanguage=S"
+    publicado: "2021-02-15"
+    menciones: 11
+    terminos:
+      "Jerusalén": 11

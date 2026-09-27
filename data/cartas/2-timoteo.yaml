@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 2-timoteo
+libro: 2 Timoteo
+referencia: 2Ti 1:16; 4:6-8
+escrita_en:
+- roma
+fecha:
+  desde: 65
+  hasta: 65
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 65 e.c.
+destinatarios:
+  texto: Timoteo
+  lugares: []
+contexto_origen:
+  resumen: Segundo encarcelamiento en Roma, después del incendio de julio de 64 y de la persecución de Nerón; Pablo
+    espera morir pronto.
+  fuentes:
+  - it-timoteo-cartas
+  - si-3
+contexto_destino:
+  resumen: La fuente no dice dónde estaba Timoteo al recibirla, así que no dibujamos destino.
+  fuentes:
+  - it-timoteo-cartas
+razon: La Tabla y el estudio 3 dan Roma y c. 65; en 2Ti 4:6-8 Pablo habla de su muerte cercana.
+fuentes:
+- tnm-tabla
+- si-3
+- it-timoteo-cartas
+- 2-timoteo-1
+enlaces:
+- titulo: 'Perspicacia: «Timoteo, Cartas a»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004417
+  tipo: perspicacia
+- titulo: 2 Timoteo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/1
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado
+nota: 'Destino no indicado: la carta se muestra sin arco.'

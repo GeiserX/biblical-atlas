@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: frigia
+nombre: Frigia
+nombres:
+- nombre: Frigia
+tipo: region
+lat: 39.0
+lon: 31.0
+precision: zona
+coord_fuente: openbible:ab8ae56
+coord_url: https://www.openbible.info/geo/ancient/ab8ae56/phrygia
+resumen: Región interior de Asia Menor repartida en el siglo I entre las provincias de Galacia y Asia; Pablo la
+  cruzó en dos viajes.
+razon: 'Perspicacia («Frigia») describe el lugar; aparece en Hch 16:6. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-frigia
+- hch-16
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Frigia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003477
+  tipo: perspicacia
+- titulo: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

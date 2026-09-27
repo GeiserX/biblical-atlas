@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-preso-en-cesarea
+titulo: Pablo preso en Cesarea
+fecha:
+  desde: 56
+  hasta: 58
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56-58 e.c.
+lugares:
+- cesarea
+personas:
+- pablo
+pasajes:
+- Hch 23:23-35
+- Hch 24:27
+resumen: Tras su arresto en Jerusalén, Pablo pasa dos años bajo custodia en Cesarea, hasta que Festo sustituye a
+  Félix como gobernador.
+razon: El estudio 3 (párr. 27) cuenta dos años de custodia en Cesarea y sitúa la llegada de Festo en 58.
+fuentes:
+- si-3
+- hch-23
+- hch-24
+buscar: Pablo custodia Cesarea
+consultado: '2026-09-27'
+estado: verificado

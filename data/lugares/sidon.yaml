@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sidon
+nombre: Sidón
+nombres:
+- nombre: Sidón
+- nombre: Saida
+  nota: Nombre actual de la ciudad.
+tipo: puerto
+lat: 33.56099
+lon: 35.37194
+precision: punto
+coord_fuente: openbible:a98e4d7
+coord_url: https://www.openbible.info/geo/ancient/a98e4d7/sidon
+resumen: Antigua ciudad portuaria fenicia; allí Julio dejó a Pablo visitar a sus amigos.
+razon: 'Perspicacia («Sidón, sidonios») describe el lugar; aparece en Hch 27:3. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+fuentes:
+- it-sidon
+- hch-27
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Sidón, sidonios»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113
+  tipo: perspicacia
+- titulo: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: concilio-de-jerusalen-49
+titulo: Reunión en Jerusalén sobre la circuncisión
+fecha:
+  desde: 49
+  hasta: 49
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 49 e.c.
+lugares:
+- jerusalen
+personas:
+- pablo
+- bernabe
+- silas
+pasajes:
+- Hch 15:1-35
+- Gál 2:1-10
+resumen: Los apóstoles y ancianos de Jerusalén deciden que los creyentes de las naciones no tienen que circuncidarse.
+  Silas lleva la carta a Antioquía con Pablo y Bernabé.
+razon: El cuadro del estudio 3 fecha la decisión c. 49 y el párrafo 23 explica por qué encaja entre la primera y
+  la segunda gira.
+fuentes:
+- si-3
+- hch-15
+buscar: cuestión de la circuncisión
+consultado: '2026-09-27'
+estado: verificado

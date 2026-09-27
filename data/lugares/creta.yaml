@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: creta
+nombre: Creta
+nombres:
+- nombre: Creta
+tipo: isla
+lat: 35.30972
+lon: 24.89333
+precision: punto
+coord_fuente: openbible:a26aa94
+coord_url: https://www.openbible.info/geo/ancient/a26aa94/crete
+resumen: Quinta isla del Mediterráneo en tamaño, al sureste de Grecia; Tito se quedó allí para nombrar ancianos.
+razon: 'Perspicacia («Creta, cretenses») describe el lugar; aparece en Tit 1:5. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+fuentes:
+- it-creta
+- tito-1
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Creta, cretenses»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001071
+  tipo: perspicacia
+- titulo: Tito 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

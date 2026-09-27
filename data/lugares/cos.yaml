@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cos
+nombre: Cos
+nombres:
+- nombre: Cos
+tipo: isla
+lat: 36.81528
+lon: 27.11028
+precision: punto
+coord_fuente: openbible:a398e5d
+coord_url: https://www.openbible.info/geo/ancient/a398e5d/cos
+resumen: Isla cerca de la costa suroeste de Asia Menor, con una ciudad del mismo nombre en su extremo nordeste.
+razon: 'Perspicacia («Cos») describe el lugar; aparece en Hch 21:1. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-cos
+- hch-21
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Cos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001044
+  tipo: perspicacia
+- titulo: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

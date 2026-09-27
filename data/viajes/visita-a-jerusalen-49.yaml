@@ -1,0 +1,75 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: visita-a-jerusalen-49
+nombre: Visita a Jerusalén por la cuestión de la circuncisión
+persona: pablo
+referencia: Hch 15:1-35; Gál 2:1-10
+fecha:
+  desde: 49
+  hasta: 49
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 49 e.c.
+companeros:
+- bernabe
+resumen: Pablo y Bernabé suben de Antioquía a Jerusalén para consultar sobre la circuncisión de los creyentes gentiles.
+  No es uno de los tres viajes misionales, pero une el primero y el segundo.
+razon: El estudio 3 (párr. 22 y 23) identifica esta visita con la de Gálatas 2:1-10 y la fecha en 49, entre la primera
+  y la segunda gira.
+fuentes:
+- si-3
+- it-pablo
+- hch-15
+consultado: '2026-09-27'
+estado: verificado
+paradas:
+- orden: 1
+  lugar: antioquia-de-siria
+  referencia: Hch 15:1-3
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 15:1-3 nombra Antioquía de Siria en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-15
+  estado: verificado
+- orden: 2
+  lugar: jerusalen
+  referencia: Hch 15:4-29
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49 e.c.
+  nota: null
+  razon: 'Hch 15:4-29 nombra Jerusalén en el recorrido. El estudio 3 da la fecha: c. 49 e.c.'
+  fuentes:
+  - hch-15
+  - si-3
+  estado: verificado
+- orden: 3
+  lugar: antioquia-de-siria
+  referencia: Hch 15:30-35
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 15:30-35 nombra Antioquía de Siria en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-15
+  estado: verificado

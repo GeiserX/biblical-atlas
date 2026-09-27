@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: quios
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwb-095_1_VIDEO"
+    titulo: "JW Broadcasting: Abril de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_1_VIDEO&appLanguage=S"
+    publicado: "2023-04-03"
+    menciones: 2
+    terminos:
+      "Quíos": 2

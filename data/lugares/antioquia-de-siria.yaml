@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: antioquia-de-siria
+nombre: Antioquía de Siria
+nombres:
+- nombre: Antioquía de Siria
+- nombre: Antakya
+  nota: Ciudad turca que ocupa hoy el lugar, según Perspicacia.
+tipo: ciudad
+lat: 36.22669
+lon: 36.17174
+precision: punto
+coord_fuente: openbible:ae41ab4
+coord_url: https://www.openbible.info/geo/ancient/ae41ab4/antioch-1
+resumen: Ciudad junto al río Orontes, fundada por Seleuco I; base desde la que Pablo salió en sus tres viajes.
+razon: 'Perspicacia («Antioquía») describe el lugar; aparece en Hch 13:1-3. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+fuentes:
+- it-antioquia
+- hch-13
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Antioquía»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000292
+  tipo: perspicacia
+- titulo: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

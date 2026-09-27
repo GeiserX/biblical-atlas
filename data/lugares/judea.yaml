@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: judea
+nombre: Judea
+nombres:
+- nombre: Judea
+tipo: region
+lat: 31.77667
+lon: 35.23417
+precision: zona
+coord_fuente: openbible:a149f13
+coord_url: https://www.openbible.info/geo/ancient/a149f13/judea-1
+resumen: Región de Palestina al sur de Samaria, con Jerusalén; sus límites exactos no se conocen.
+razon: 'Perspicacia («Judea») describe el lugar; aparece en Heb 13:24. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-judea
+- hebreos-13
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Judea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002544
+  tipo: perspicacia
+- titulo: Hebreos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/13
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

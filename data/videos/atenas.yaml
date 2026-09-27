@@ -1,0 +1,13 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: atenas
+generado: "2026-09-27"
+videos:
+  - docid: "pub-jwbvod25_37_VIDEO"
+    titulo: "Nicholas Ahladis: ¿Por qué fue Pablo un “instrumento escogido”? (Hech. 9:15)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_37_VIDEO&appLanguage=S"
+    publicado: "2025-09-19"
+    menciones: 2
+    terminos:
+      "Atenas": 1
+      "atenienses": 1

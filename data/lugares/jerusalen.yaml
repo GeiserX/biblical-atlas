@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jerusalen
+nombre: Jerusalén
+nombres:
+- nombre: Jerusalén
+- nombre: Salem
+  nota: Nombre más antiguo que se conoce de la ciudad (Gé 14:18).
+tipo: ciudad
+lat: 31.77667
+lon: 35.23417
+precision: punto
+coord_fuente: openbible:a15257a
+coord_url: https://www.openbible.info/geo/ancient/a15257a/jerusalem
+resumen: Capital de Israel desde 1070 a.e.c.; Pablo subió allí en 49 por la cuestión de la circuncisión y lo arrestaron
+  en 56.
+razon: 'Perspicacia («Jerusalén») describe el lugar; aparece en Hch 15:4-29. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+fuentes:
+- it-jerusalen
+- hch-15
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Jerusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
+  tipo: perspicacia
+- titulo: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

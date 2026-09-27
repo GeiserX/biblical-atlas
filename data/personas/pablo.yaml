@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pablo
+nombre: Pablo
+nombres:
+- nombre: Pablo
+  nota: Nombre romano.
+- nombre: Saulo
+  nota: Nombre hebreo.
+resumen: Apóstol de Jesucristo, de la tribu de Benjamín, nacido en Tarso de Cilicia y ciudadano romano. Hizo tres
+  viajes misionales y la Tabla de los libros le atribuye 14 cartas.
+razon: Perspicacia «Pablo» da su tribu, su origen y sus dos nombres; la Tabla de los libros lo pone como escritor
+  de Romanos a Hebreos.
+fuentes:
+- it-pablo
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Pablo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  tipo: perspicacia
+- titulo: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado
