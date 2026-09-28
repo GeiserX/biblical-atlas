@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jason
+nombre: Jasón
+nombres:
+- nombre: Jasón
+fecha:
+  desde: 50
+  hasta: 50
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 50 e.c.
+resumen: Cristiano de Tesalónica que hospedó a Pablo y Silas. Una turba lo llevó ante los gobernantes de la ciudad
+  y tuvo que dar fianza.
+razon: Perspicacia «Jasón» (párr. 1 y 2); Hch 17:5-9 y Ro 16:21. Pablo predica en Tesalónica en 50 (estudio 3, párr. 24).
+fuentes:
+- it-jason
+- hch-17
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Jasón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002340
+  tipo: perspicacia
+- titulo: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: tesalonica
+  deducido: false
+  fuentes:
+  - it-jason
+  - hch-17
+  razon: La turba va a su casa de Tesalónica a buscar a Pablo (Hch 17:5).
+  estado: verificado
+- tipo: pariente
+  persona: pablo
+  relacion: pariente
+  deducido: true
+  fuentes:
+  - it-jason
+  - romanos-16
+  razon: Si es el Jasón de Ro 16:21, Pablo lo llama pariente; Perspicacia deja abierto si era de sangre o paisano.
+  estado: verificado

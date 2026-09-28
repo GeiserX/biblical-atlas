@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-visita-a-cefas
+titulo: Pablo pasa quince días con Pedro en Jerusalén
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: quizás 36 e.c.
+lugares:
+- jerusalen
+personas:
+- pablo
+- pedro
+- santiago-hermano-de-jesus
+- bernabe
+pasajes:
+- Gál 1:18, 19
+- Hch 9:26-30
+resumen: En su primera visita a Jerusalén como cristiano, Pablo va a ver a Cefas y se queda con él quince días.
+  De los demás apóstoles solo ve a Santiago, el hermano del Señor.
+razon: Perspicacia «Pedro» (párr. 20) y «Pablo» (párr. 9) dan quizás 36; el estudio 3 (párr. 22) cuenta los tres
+  años de Gál 1:18 como 34-36.
+fuentes:
+- it-pedro
+- it-pablo
+- si-3
+- galatas-1
+- hch-9
+buscar: Pablo visita a Cefas
+consultado: '2026-09-28'
+estado: verificado

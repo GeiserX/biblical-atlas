@@ -16,6 +16,22 @@ fecha:
 destinatarios:
   texto: Timoteo
   lugares: []
+  personas:
+  - timoteo
+personas:
+- timoteo
+- loida
+- eunice
+- onesiforo
+- demas
+- tito
+- lucas
+- juan-marcos
+- tiquico
+- erasto-colaborador-de-pablo
+- trofimo
+- aquila
+- priscila
 contexto_origen:
   resumen: Segundo encarcelamiento en Roma, después del incendio de julio de 64 y de la persecución de Nerón; Pablo
     espera morir pronto.
@@ -32,6 +48,9 @@ fuentes:
 - si-3
 - it-timoteo-cartas
 - 2-timoteo-1
+- it-timoteo
+- it-onesiforo
+- it-loida
 enlaces:
 - titulo: 'Perspicacia: «Timoteo, Cartas a»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004417
@@ -39,6 +58,6 @@ enlaces:
 - titulo: 2 Timoteo 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado
 nota: 'Destino no indicado: la carta se muestra sin arco.'

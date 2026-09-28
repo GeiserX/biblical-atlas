@@ -9,10 +9,14 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 34 e.c.
+orden_relato:
+  serie: hechos
+  orden: 903
 lugares:
 - damasco
 personas:
 - pablo
+- ananias-de-damasco
 pasajes:
 - Hch 9:1-19
 - Gál 1:15-18
@@ -24,6 +28,7 @@ fuentes:
 - si-3
 - it-pablo
 - hch-9
+- it-ananias
 buscar: conversión de Pablo
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

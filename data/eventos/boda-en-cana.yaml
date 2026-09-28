@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: boda-en-cana
+titulo: 'Primer milagro: el agua en vino en Caná'
+fecha:
+  desde: 29
+  hasta: 29
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: otoño de 29 e.c.
+  detalle:
+    estacion: otoño
+orden_relato:
+  serie: a7
+  orden: 14
+lugares:
+- cana
+- capernaum
+personas:
+- jesus
+- maria-madre-de-jesus
+- natanael
+pasajes:
+- Jn 2:1-12
+resumen: En una boda en Caná, ciudad de Natanael, se acaba el vino y Jesús convierte en vino el agua de seis tinajas de piedra.
+  Luego se va a Capernaúm acompañado de su familia y de los discípulos.
+razon: 'A7-B, fila 4: Caná de Galilea y Capernaúm. Perspicacia «Caná» (párr. 2) cuenta el milagro tres días después de que
+  Natanael conociera a Jesús.'
+fuentes:
+- tnm-a7-b
+- juan-2
+- it-cana
+- jy-cap-15
+consultado: '2026-09-28'
+estado: verificado

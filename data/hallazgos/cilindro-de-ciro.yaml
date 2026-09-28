@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por hallazgo. Esquema en docs/investigacion/README.md.
+id: cilindro-de-ciro
+nombre: Cilindro de Ciro
+lugar_hallazgo: babilonia
+relaciona:
+- persona:ciro
+- evento:caida-de-babilonia
+- evento:decreto-de-ciro
+fecha_objeto:
+  desde: -538
+  hasta: -538
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 539 a.e.c.
+resumen: Cilindro de arcilla hallado en 1879 donde estuvo el templo de Marduk en Babilonia. Cuenta cómo tomó Ciro la ciudad
+  y su costumbre de devolver a los pueblos cautivos a su tierra.
+razon: Perspicacia «Arqueología» (lugar del hallazgo) y «Ciro»; La Atalaya de 2008 da el año 1879; el estudio 9 (párr. 14,
+  15) lo sitúa en el Museo Británico.
+nota: 'El decreto sobre los judíos no está en el cilindro: está en Esd 1:1-4. El cilindro atribuye la victoria a Marduk.'
+fuentes:
+- it-arqueologia
+- it-ciro
+- w08-escritura-cuneiforme
+- si-9
+enlaces:
+- titulo: 'Perspicacia: «Arqueología»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000344
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Ciro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segunda-gira-por-galilea
+titulo: Segunda gira por Galilea, con los doce
+fecha:
+  desde: 31
+  hasta: 31
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 38
+lugares:
+- galilea
+personas:
+- jesus
+- juana
+- maria-magdalena
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- natanael
+- mateo
+- santiago-hijo-de-alfeo
+- tomas
+- tadeo
+- simon-el-cananita
+- judas-iscariote
+pasajes:
+- Lu 8:1-3
+resumen: Jesús recorre ciudades y aldeas con los doce y con varias mujeres que había curado, entre ellas María Magdalena y
+  Juana, que los sostenían con sus bienes.
+razon: 'A7-C, fila 19: Galilea. Perspicacia «Juana» (párr. 2) la presenta como esposa de Cuza, servidor de Herodes.'
+fuentes:
+- tnm-a7-c
+- lucas-8
+- it-juana
+- jy-cap-41
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-hermano-de-jesus
+nombre: Judas, hermano de Jesús
+nombres:
+- nombre: Judas
+- nombre: Judas, hermano de Santiago
+  nota: Así se presenta en su carta (Jud 1).
+desambiguacion: El escritor de la carta de Judas. No es el apóstol Judas hijo de Santiago (Tadeo), ni Judas Iscariote,
+  ni Judas Barsabás.
+fecha:
+  desde: 33
+  hasta: 65
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 33-65 e.c.
+  nota: Desde que ora con los apóstoles en 33 hasta su carta, hacia 65.
+no_confundir_con:
+- tadeo
+- judas-iscariote
+resumen: Medio hermano de Jesús y hermano de Santiago. No creía en Jesús en 32, pero antes de Pentecostés oraba
+  con los apóstoles. Escribió la carta de Judas hacia 65.
+razon: Perspicacia «Judas», apartado 5 (párr. 21 a 24), y «Judas, Carta de»; la Tabla de los libros da c. 65.
+fuentes:
+- it-judas
+- it-judas-carta
+- tnm-tabla
+- judas-1
+relaciones:
+- tipo: pariente
+  persona: santiago-hermano-de-jesus
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-judas
+  - judas-1
+  razon: Jud 1.
+  estado: verificado
+- tipo: pariente
+  persona: jesus
+  relacion: medio hermano
+  deducido: true
+  fuentes:
+  - it-judas
+  razon: Perspicacia deduce que es uno de los cuatro medio hermanos de Mt 13:55.
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: madre
+  deducido: true
+  fuentes:
+  - it-judas
+  razon: 'Perspicacia, párr. 23: acompañó a su madre María.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Judas, Carta de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002543
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: verificado

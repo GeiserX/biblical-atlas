@@ -3,14 +3,72 @@ id: zorobabel
 nombre: Zorobabel
 nombres:
 - nombre: Zorobabel
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril persas. Artículo: Perspicacia «Zorobabel», confirmado por
-  su título.'
+desambiguacion: Gobernador de Judá después del destierro, hijo legal de Sealtiel; probablemente el mismo que Sesbazar.
+fecha:
+  desde: -536
+  hasta: -514
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: de 537 a 515 a.e.c.
+resumen: Descendiente de David y primer gobernador de los judíos repatriados. Guio el regreso de 537 a.e.c. y, con el sumo
+  sacerdote Josué, levantó el altar y reconstruyó el templo hasta terminarlo en 515.
+razon: 'Perspicacia «Zorobabel»: nombrado gobernador por Ciro; altar en tisri de 537, cimientos en 536, obra prohibida en
+  522, reanudada en 520 y terminada en 515. Ag 2:21 lo llama gobernador de Judá.'
 fuentes:
 - it-zorobabel
+- esdras-3
+- ageo-1
+- si-3
 enlaces:
 - titulo: 'Perspicacia: «Zorobabel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716
   tipo: perspicacia
+- titulo: Esdras 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: david
+  relacion: descendiente de David
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  razon: Perspicacia «Zorobabel» lo presenta como descendiente de David y antepasado de Jesús (1Cr 3:19; Mt 1:12, 13).
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: -536
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 537 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  - ageo-1
+  razon: 'Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.'
+  estado: verificado
+- tipo: acompana
+  persona: josue-sumo-sacerdote
+  fecha:
+    desde: -536
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 537 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  - it-jesua
+  - esdras-3
+  razon: Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y del templo.
+  estado: verificado
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

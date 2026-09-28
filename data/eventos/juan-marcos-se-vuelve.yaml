@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-marcos-se-vuelve
+titulo: Juan Marcos se vuelve a Jerusalén desde Perga
+fecha:
+  desde: 47
+  hasta: 48
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+orden_relato:
+  serie: hechos
+  orden: 1313
+lugares:
+- perga
+personas:
+- pablo
+- bernabe
+- juan-marcos
+pasajes:
+- Hch 13:13
+- Hch 15:38
+resumen: Al llegar a Perga de Panfilia, Juan Marcos deja a Pablo y Bernabé y regresa a Jerusalén. El texto no dice
+  por qué.
+razon: Perspicacia «Marcos» (párr. 3) y «Panfilia» (párr. 3).
+fuentes:
+- it-marcos
+- it-panfilia
+- hch-13
+buscar: Juan Marcos Perga
+consultado: '2026-09-28'
+estado: verificado

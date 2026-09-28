@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: caligula
+nombre: Cayo (Calígula), emperador de Roma
+tipo: emperador
+fecha:
+  desde: 37
+  hasta: 41
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 37-41 e.c.
+lugares:
+- roma
+resumen: Sucede a Tiberio en 37 y muere asesinado en 41. Perspicacia no une ningún suceso bíblico a su reinado.
+razon: Recuadro de Perspicacia «César» (37-41 e.c.). «Tiberio» dice que lo sucedió antes de que Pilato llegara a Roma; «Claudio»
+  menciona su asesinato.
+fuentes:
+- it-cesar
+- it-tiberio
+- it-claudio
+buscar: Calígula
+consultado: '2026-09-28'
+estado: verificado

@@ -17,6 +17,10 @@ destinatarios:
   texto: Congregación de Éfeso (la llevó Tíquico)
   lugares:
   - efeso
+portadores:
+- tiquico
+personas:
+- tiquico
 contexto_origen:
   resumen: Primer encarcelamiento en Roma (c. 59-61), en una casa alquilada y vigilado por un soldado.
   fuentes:
@@ -33,6 +37,7 @@ fuentes:
 - si-3
 - it-efesios
 - efesios-3
+- it-tiquico
 enlaces:
 - titulo: 'Perspicacia: «Efesios, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001386
@@ -40,5 +45,5 @@ enlaces:
 - titulo: Efesios 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

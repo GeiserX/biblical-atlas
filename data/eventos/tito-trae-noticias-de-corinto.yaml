@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tito-trae-noticias-de-corinto
+titulo: Tito trae a Macedonia noticias de Corinto
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+lugares:
+- macedonia
+personas:
+- pablo
+- tito
+pasajes:
+- 2Co 2:12, 13
+- 2Co 7:5-7
+resumen: Pablo no encuentra a Tito en Troas y pasa a Macedonia. Allí llega Tito con buenas noticias de los corintios,
+  y Pablo les escribe su segunda carta.
+razon: Perspicacia «Tito» (párr. 1) y «Pablo» (párr. 17).
+fuentes:
+- it-tito-persona
+- it-pablo
+- 2-corintios-7
+buscar: Tito Macedonia Corinto
+consultado: '2026-09-28'
+estado: verificado

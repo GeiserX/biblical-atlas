@@ -9,15 +9,21 @@ lon: 43.1528
 precision: punto
 coord_fuente: openbible:a70fd5d
 coord_url: https://www.openbible.info/geo/ancient/a70fd5d/nineveh
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril reyes. Artículo: Perspicacia «Nínive», confirmado por su
-  título. Coordenada de OpenBible: solo tomamos el punto.'
+resumen: Ciudad fundada por Nemrod que llegó a ser la capital de Asiria. Se arrepintió con la predicación de Jonás, pero Nahúm
+  y Sofonías anunciaron su destrucción, que llegó en 632 a.e.c.
+razon: 'Perspicacia «Nínive», párr. 1, 2, 6 y 9: sus ruinas son los montículos de Quyunjiq y Nebi Yunus, frente a Mosul. OpenBible:
+  solo el punto.'
 fuentes:
 - it-ninive
+- si-3
 - openbible-geo
+- jonas-3
 enlaces:
 - titulo: 'Perspicacia: «Nínive»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003261
   tipo: perspicacia
+- titulo: Jonás 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/3
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

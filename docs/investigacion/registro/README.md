@@ -9,13 +9,13 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 
 | Registro | Cuántos |
 |---|---|
-| [Lugares](lugares.md) | 80 |
-| [Personas](personas.md) | 32 |
-| [Viajes y paradas](viajes.md) | 6 (75 paradas) |
-| [Cartas](cartas.md) | 14 |
-| [Eventos](eventos.md) | 25 |
-| [Periodos](periodos.md) | 3 |
-| [Hallazgos](hallazgos.md) | 0 |
-| [Recorridos](recorridos.md) | 0 |
+| [Lugares](lugares.md) | 166 |
+| [Personas](personas.md) | 222 |
+| [Viajes y paradas](viajes.md) | 8 (91 paradas) |
+| [Cartas](cartas.md) | 22 |
+| [Eventos](eventos.md) | 315 |
+| [Periodos](periodos.md) | 87 |
+| [Hallazgos](hallazgos.md) | 7 |
+| [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
-| [Fuentes](fuentes.md) | 167 |
+| [Fuentes](fuentes.md) | 898 |

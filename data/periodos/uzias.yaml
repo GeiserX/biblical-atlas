@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: uzias
+nombre: Reinado de Uzías en Judá
+tipo: rey
+persona: uzias
+fecha:
+  desde: -828
+  hasta: -776
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 829-777 a.e.c.
+lugares:
+- jerusalen
+resumen: Cincuenta y dos años en Jerusalén; hubo un gran terremoto (Zac 14:5).
+razon: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Crónicas 26. Jotán lo
+  sucede en 777 (A6-B).
+fuentes:
+- tnm-a6-a
+- 2-cronicas-26
+- it-uzias
+- tnm-a6-b
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
+  fuente: tnm-a6-a
+buscar: Uzías rey
+consultado: '2026-09-28'
+estado: verificado

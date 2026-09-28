@@ -13,6 +13,7 @@ fecha:
   texto: c. 49 e.c.
 companeros:
 - bernabe
+- tito
 resumen: Pablo y Bernabé suben de Antioquía a Jerusalén para consultar sobre la circuncisión de los creyentes gentiles.
   No es uno de los tres viajes misionales, pero une el primero y el segundo.
 razon: El estudio 3 (párr. 22 y 23) identifica esta visita con la de Gálatas 2:1-10 y la fecha en 49, entre la primera
@@ -21,7 +22,9 @@ fuentes:
 - si-3
 - it-pablo
 - hch-15
-consultado: '2026-09-27'
+- it-tito-persona
+- galatas-2
+consultado: '2026-09-28'
 estado: verificado
 paradas:
 - orden: 1

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tormenta-y-naufragio
+titulo: La tormenta y el naufragio
+fecha:
+  desde: 58
+  hasta: 58
+  precision: estación
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: otoño de 58 e.c., pasado el ayuno de Expiación
+orden_relato:
+  serie: hechos
+  orden: 2709
+lugares:
+- bellos-puertos
+- cauda
+- malta
+personas:
+- pablo
+- lucas
+- aristarco
+- julio
+pasajes:
+- Hch 27:9-44
+resumen: Pasado el ayuno del Día de Expiación, zarpan de Bellos Puertos contra el consejo de Pablo. Un viento huracanado
+  los arrastra catorce noches y el barco encalla; los 276 llegan a tierra.
+razon: La nota de estudio de Hch 27:9 sitúa ese ayuno a fines de septiembre o principios de octubre; Perspicacia
+  «Julio».
+fuentes:
+- nota-hechos-27
+- it-julio
+- hch-27
+buscar: naufragio Pablo Malta
+consultado: '2026-09-28'
+estado: verificado

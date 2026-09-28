@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: agabo
+nombre: Ágabo
+nombres:
+- nombre: Ágabo
+fecha:
+  desde: 44
+  hasta: 56
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 44-56 e.c.
+  nota: 'Sus dos profecías: la del hambre, en 44, y la del cinturón, hacia 56.'
+resumen: Profeta de la congregación que viajó de Jerusalén a Antioquía y anunció una gran hambre, que llegó hacia
+  46 bajo Claudio. Hacia 56, en Cesarea, se ató con el cinturón de Pablo para anunciar su arresto.
+razon: Perspicacia «Ágabo» (párr. 2 a 4); la nota de estudio de Hch 11:28 fecha el hambre hacia 46; el estudio 3
+  (párr. 20) pone la profecía en 44.
+fuentes:
+- it-agabo
+- hechos-11
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Ágabo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000129
+  tipo: perspicacia
+- titulo: Hechos 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/11
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

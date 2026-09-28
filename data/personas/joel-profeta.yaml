@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-profeta
+nombre: Joel
+nombres:
+- nombre: Joel
+desambiguacion: El profeta hijo de Petuel; Perspicacia registra otros doce hombres llamados Joel.
+fecha:
+  desde: -819
+  hasta: -819
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 820 a.e.c. (?)
+resumen: Profeta hijo de Petuel, autor del libro de Joel. Lo escribió en Judá, quizás hacia 820 a.e.c.
+razon: Perspicacia «Joel», núm. 9; Joe 1:1. La Tabla de los libros pone «c. 820 (?)», con signo de duda, y el estudio 3 dice
+  «probable».
+fuentes:
+- it-joel
+- joel-1
+- tnm-tabla
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Joel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002481
+  tipo: perspicacia
+- titulo: Joel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

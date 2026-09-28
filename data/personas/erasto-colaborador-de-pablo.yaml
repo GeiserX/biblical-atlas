@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: erasto-colaborador-de-pablo
+nombre: Erasto, colaborador de Pablo
+nombres:
+- nombre: Erasto
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+desambiguacion: El compañero de Hch 19:22. Perspicacia lo trata aparte del mayordomo de Corinto de Ro 16:23.
+no_confundir_con:
+- erasto-mayordomo-de-corinto
+resumen: Cristiano que servía a Pablo en el tercer viaje; Pablo lo envió de Asia a Macedonia con Timoteo. Probablemente
+  es el Erasto que se quedó en Corinto (2Ti 4:20).
+razon: Perspicacia «Erasto», núm. 1; Hch 19:22. Pablo deja Éfeso a principios de 55 (estudio 3, párr. 26).
+fuentes:
+- it-erasto
+- hch-19
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Erasto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001413
+  tipo: perspicacia
+- titulo: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 55
+    hasta: 55
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 55 e.c.
+  deducido: false
+  fuentes:
+  - it-erasto
+  - hch-19
+  - si-3
+  razon: Hch 19:22 lo cuenta entre los que servían a Pablo. Poco antes de que Pablo deje Éfeso, a principios de 55 (estudio
+    3, párr. 26).
+  estado: verificado
+- tipo: vivio_en
+  lugar: corinto
+  deducido: true
+  fuentes:
+  - it-erasto
+  - 2-timoteo-4
+  razon: Si es el de 2Ti 4:20, se quedó en Corinto; Perspicacia lo da por probable.
+  estado: verificado

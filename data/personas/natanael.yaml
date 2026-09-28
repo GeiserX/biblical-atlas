@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natanael
+nombre: Natanael
+nombres:
+- nombre: Natanael
+- nombre: Bartolomé
+  nota: Nombre que le dan Mateo, Marcos y Lucas; significa «hijo de Tolmai» (Perspicacia).
+resumen: Apóstol de Caná, llamado Bartolomé en los otros tres Evangelios. Felipe lo llevó a Jesús, que lo describió como un
+  israelita sin engaño; tras la resurrección estuvo en la pesca del mar de Galilea.
+razon: Perspicacia «Natanael» (párr. 2-4) y «Bartolomé» explican que son la misma persona y cuentan su historia (Jn 1:45-49;
+  21:2).
+fuentes:
+- it-natanael
+- it-bartolome
+- juan-1
+- juan-21
+relaciones:
+- tipo: nacio_en
+  lugar: cana
+  deducido: false
+  fuentes:
+  - juan-21
+  - it-cana
+  razon: Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  razon: Mt 10:3 nombra a Bartolomé entre los doce.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Natanael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003185
+  tipo: perspicacia
+- titulo: Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

@@ -2,15 +2,78 @@
 id: santiago-hermano-de-jesus
 nombre: Santiago, hermano de Jesús
 nombres:
+- nombre: Santiago
 - nombre: Santiago, hermano de Jesús
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pedro. Artículo: Perspicacia «Santiago» (apartado
-  4), confirmado por su título.'
+- nombre: Santiago el hermano del Señor
+  nota: Así lo llama Pablo (Gál 1:19).
+desambiguacion: El medio hermano de Jesús, no apóstol de los doce. No es Santiago hijo de Zebedeo ni Santiago hijo
+  de Alfeo.
+fecha:
+  desde: 33
+  hasta: 62
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 33-62 e.c.
+  nota: Desde que ora con los apóstoles en 33 hasta antes de 62, fecha límite de su carta.
+resumen: Medio hermano de Jesús, hijo de José y María. No creía durante el ministerio, pero antes de Pentecostés
+  oraba con los apóstoles. Fue columna de la congregación de Jerusalén y escribió la carta de Santiago.
+razon: Perspicacia «Santiago», apartado 4 (párr. 10 a 14), y «Santiago, Carta de», que lo identifica como el escritor.
 fuentes:
 - it-santiago
+- it-santiago-carta
+- galatas-1
+no_confundir_con:
+- santiago-hijo-de-zebedeo
+- santiago-hijo-de-alfeo
+no_afirmamos:
+- 'Cómo y cuándo murió: la Biblia no lo cuenta; Perspicacia recoge el relato del historiador Josefo sin darlo como
+  dato bíblico.'
+relaciones:
+- tipo: pariente
+  persona: jesus
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - it-santiago
+  - galatas-1
+  razon: 'Gál 1:19 lo llama hermano del Señor; Perspicacia, párr. 10: hijo de José y María.'
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-santiago
+  razon: 'Perspicacia, párr. 10: hijo de José y María (Mt 13:55).'
+  estado: verificado
+- tipo: pariente
+  persona: judas-hermano-de-jesus
+  relacion: hermano
+  deducido: true
+  fuentes:
+  - it-judas
+  - judas-1
+  razon: 'Jud 1: el escritor se presenta como hermano de Santiago; Perspicacia «Judas», apartado 5.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-santiago-carta
+  - galatas-1
+  razon: Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Santiago»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
   tipo: perspicacia
+- titulo: 'Perspicacia: «Santiago, Carta de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002314
+  tipo: perspicacia
+- titulo: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

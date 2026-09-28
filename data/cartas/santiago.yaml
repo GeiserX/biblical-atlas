@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: santiago
+libro: Santiago
+escritor: santiago-hermano-de-jesus
+referencia: Snt 1:1
+escrita_en:
+- jerusalen
+fecha:
+  desde: null
+  hasta: 62
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: antes de 62 e.c.
+destinatarios:
+  texto: '«Las doce tribus esparcidas»: los cristianos, sobre todo los que vivían fuera de Palestina.'
+contexto_origen:
+  resumen: Santiago vivía en Jerusalén y dirigía allí. La carta no habla de la caída de Jerusalén en 70; si Josefo
+    acierta, Santiago murió hacia 62.
+  fuentes:
+  - it-santiago-carta
+contexto_destino:
+  resumen: 'Cristianos en pruebas: algunos favorecían a los ricos, hablaban mal y buscaban la amistad del mundo.
+    Santiago les pide una fe que se vea en obras.'
+  fuentes:
+  - it-santiago-carta
+razon: La Tabla y el estudio 3 dan Jerusalén y antes de 62; Perspicacia «Santiago, Carta de» (párr. 2, 3 y 5 a 9)
+  explica por qué el escritor es el hermano de Jesús.
+fuentes:
+- tnm-tabla
+- si-3
+- it-santiago-carta
+- santiago-1
+enlaces:
+- titulo: 'Perspicacia: «Santiago, Carta de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002314
+  tipo: perspicacia
+- titulo: Santiago 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/59/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

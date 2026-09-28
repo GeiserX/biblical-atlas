@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ensena-en-perea
+titulo: Enseña en ciudades y aldeas de Perea
+fecha:
+  desde: 32
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+lugares:
+- perea
+personas:
+- jesus
+pasajes:
+- Lu 13:22
+resumen: Camino de Jerusalén, Jesús cruza el Jordán y enseña recorriendo las ciudades y aldeas del distrito de Perea.
+razon: La tabla A7-F da cuándo y dónde. jy cap. 82 dice que cruza el Jordán y enseña en Perea.
+fuentes:
+- tnm-a7-f
+- lucas-13
+- jy-cap-82
+orden_relato:
+  serie: a7
+  orden: 75
+buscar: Enseña en ciudades y aldeas de Perea
+consultado: '2026-09-28'
+estado: verificado

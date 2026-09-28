@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: menahem
+nombre: Reinado de Menahem en Israel
+tipo: rey
+persona: menahem
+fecha:
+  desde: -790
+  hasta: -779
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 791-780 a.e.c.
+lugares:
+- samaria
+resumen: Diez años en Samaria.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 15.
+fuentes:
+- tnm-a6-b
+- 2-reyes-15
+- it-menahem
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Menahem» daba c. 790-781 a.e.c.; A6-B, más reciente, da c. 791-780.
+  fuente: tnm-a6-b
+buscar: Menahem rey
+consultado: '2026-09-28'
+estado: verificado

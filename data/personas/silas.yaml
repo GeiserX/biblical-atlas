@@ -19,5 +19,49 @@ enlaces:
 - titulo: Hechos 15 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-silas
+  - hch-15
+  razon: Era miembro destacado de la congregación de Jerusalén (Hch 15:22).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 49
+    hasta: 52
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49-52 e.c. (segundo viaje)
+  deducido: false
+  fuentes:
+  - it-silas
+  - hch-15
+  - hch-18
+  - si-3
+  razon: Pablo lo escoge al separarse de Bernabé; van juntos por Filipos, Tesalónica y Berea, y se reúnen de nuevo en Corinto
+    (Hch 15:40; 18:5). Segundo viaje, c. 49-52 (estudio 3, párr. 24).
+  estado: verificado
+- tipo: acompana
+  persona: judas-barsabas
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49 e.c.
+  deducido: false
+  fuentes:
+  - it-judas
+  - hch-15
+  razon: Jerusalén los envía juntos a Antioquía con la carta (Hch 15:22, 27).
+  estado: verificado

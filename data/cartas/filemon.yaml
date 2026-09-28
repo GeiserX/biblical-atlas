@@ -17,6 +17,19 @@ destinatarios:
   texto: Filemón, dueño de Onésimo; en su casa se reunía la congregación
   lugares:
   - colosas
+  personas:
+  - filemon
+  - arquipo
+portadores:
+- onesimo
+personas:
+- timoteo
+- onesimo
+- epafras
+- juan-marcos
+- aristarco
+- demas
+- lucas
 contexto_origen:
   resumen: Onésimo, el esclavo que había huido de Filemón, estaba con Pablo en Roma y volvía a Colosas con esta
     carta.
@@ -36,6 +49,8 @@ fuentes:
 - it-filemon
 - filemon-1
 - colosenses-1
+- it-onesimo
+- it-arquipo
 enlaces:
 - titulo: 'Perspicacia: «Filemón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003463
@@ -43,5 +58,5 @@ enlaces:
 - titulo: Filemón (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

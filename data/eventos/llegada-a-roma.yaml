@@ -9,11 +9,16 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 59 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2814
 lugares:
 - roma
 personas:
 - pablo
 - lucas
+- aristarco
+- julio
 pasajes:
 - Hch 28:14-16
 resumen: Después del naufragio y del invierno en Malta, Pablo llega preso a Roma y le permiten vivir aparte con
@@ -22,6 +27,8 @@ razon: El estudio 3 (párr. 27) sitúa el final del viaje hacia 59.
 fuentes:
 - si-3
 - hch-28
+- it-aristarco
+- it-julio
 buscar: Pablo llega a Roma
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

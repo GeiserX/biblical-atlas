@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jesus-en-el-templo-a-los-12
+titulo: Jesús, con 12 años, en el templo
+fecha:
+  desde: 12
+  hasta: 12
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: Pascua de 12 e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: a7
+  orden: 8
+lugares:
+- jerusalen
+personas:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+pasajes:
+- Lu 2:41-50
+resumen: Tras la Pascua, sus padres emprenden el regreso sin notar que Jesús se ha quedado. Al tercer día lo hallan en el
+  templo escuchando y preguntando a los maestros, que se asombran de su comprensión.
+razon: 'A7-A, fila 8: Pascua de 12 e.c., Jerusalén. La nota de Lu 2:41 calcula unos 300 km de ida y vuelta desde Nazaret.'
+fuentes:
+- tnm-a7-a
+- lucas-2
+- jy-cap-10
+consultado: '2026-09-28'
+estado: verificado

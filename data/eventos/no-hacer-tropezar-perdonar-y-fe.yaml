@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: no-hacer-tropezar-perdonar-y-fe
+titulo: No hacer tropezar, perdonar y tener fe
+fecha:
+  desde: 32
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+lugares:
+- perea
+personas:
+- jesus
+pasajes:
+- Lu 17:1-10
+resumen: Jesús enseña a no hacer tropezar a nadie, a perdonar al hermano que se arrepiente aunque falle siete veces
+  al día y a tener fe como un grano de mostaza.
+razon: La tabla A7-F da cuándo y dónde. La tabla dice «probablemente Perea»; jy cap. 89. Cierra el tramo A7-G, que empieza
+  el 8 de nisán del 33.
+fuentes:
+- tnm-a7-f
+- lucas-17
+- jy-cap-89
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 81
+buscar: No hacer tropezar, perdonar y tener fe
+consultado: '2026-09-28'
+estado: verificado

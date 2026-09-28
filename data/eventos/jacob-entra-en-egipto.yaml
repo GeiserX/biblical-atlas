@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-entra-en-egipto
+titulo: Jacob y su familia se instalan en Egipto
+fecha:
+  desde: -1727
+  hasta: -1727
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1728 a.e.c.
+lugares:
+- egipto
+- gosen
+personas: []
+pasajes:
+- Gé 46:1-7
+- Gé 47:9
+- Gé 46:28
+resumen: Jacob, con 130 años, baja a Egipto con toda su casa, donde José ya gobierna. Israel vivirá allí 215 años, hasta
+  el éxodo.
+razon: Perspicacia «Cronología» fecha la llegada en 1728 a.e.c., 215 años después del pacto y 215 antes del éxodo; el cuadro
+  del estudio 3 coincide.
+fuentes:
+- it-cronologia
+- si-3
+- genesis-46
+buscar: Jacob entra en Egipto
+consultado: '2026-09-28'
+estado: verificado

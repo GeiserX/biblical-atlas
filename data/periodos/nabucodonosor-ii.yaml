@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-ii
+nombre: Reinado de Nabucodonosor II en Babilonia
+tipo: rey
+persona: nabucodonosor-ii
+fecha:
+  desde: -623
+  hasta: -581
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 624-582 a.e.c.
+lugares:
+- babilonia
+resumen: Cuarenta y tres años de reinado; en su año 19 cayó Jerusalén.
+razon: Perspicacia «Nabucodonosor» (párr. 1) le da 43 años de 624 a 582; el año de subida fue 625 (estudio 3).
+fuentes:
+- it-nabucodonosor
+- si-3
+buscar: Nabucodonosor rey de Babilonia
+consultado: '2026-09-28'
+estado: verificado

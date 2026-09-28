@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-y-juan-ante-el-sanedrin
+titulo: Pedro y Juan ante los gobernantes judíos
+fecha:
+  desde: 33
+  hasta: 34
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+orden_relato:
+  serie: hechos
+  orden: 401
+lugares:
+- jerusalen
+personas:
+- pedro
+- juan-apostol
+- anas
+- caifas
+pasajes:
+- Hch 4:1-31
+resumen: Los detienen por hablar de la resurrección de Jesús. Ante Anás, Caifás y los demás, responden que no pueden
+  dejar de hablar de lo que han visto. Los sueltan con amenazas; los creyentes ya son unos 5.000 hombres.
+razon: Perspicacia «Pedro» (párr. 18) y «Juan» (párr. 29); la nota de estudio a Hch 4:6 identifica a Anás. Hch 4:4
+  da la cifra.
+fuentes:
+- it-pedro
+- it-juan
+- hechos-4
+- bt-4
+nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+buscar: Pedro y Juan ante el Sanedrín
+consultado: '2026-09-28'
+estado: verificado

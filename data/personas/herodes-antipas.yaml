@@ -3,14 +3,40 @@ id: herodes-antipas
 nombre: Herodes Antipas
 nombres:
 - nombre: Herodes Antipas
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Artículo: Perspicacia «Herodes» (apartado 2), confirmado
-  por su título.'
+- nombre: Herodes
+  nota: Así lo llaman los Evangelios y Hechos, a veces con el título de gobernante del distrito.
+desambiguacion: El tetrarca de los Evangelios; no es su padre, Herodes el Grande, ni Herodes Agripa I, que mató
+  a Santiago.
+no_confundir_con:
+- herodes-el-grande
+- herodes-agripa-i
+- herodes-agripa-ii
+- antipas-de-pergamo
+relaciones:
+- tipo: pariente
+  persona: herodes-el-grande
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-herodes
+  razon: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace; el dato sale de la historia,
+    no del texto bíblico.
+  estado: verificado
+resumen: Tetrarca de Galilea y Perea, nacido de Herodes el Grande. Hizo decapitar a Juan el Bautista y, el día en
+  que murió Jesús, lo interrogó en Jerusalén y se burló de él.
+razon: Perspicacia «Herodes», apartado 2 (párrafos sobre Juan el Bautista y «Se burla de Jesús»); Lu 23:6-12 narra
+  la comparecencia ante él.
 fuentes:
 - it-herodes
+- lucas-23
+- mateo-14
 enlaces:
 - titulo: 'Perspicacia: «Herodes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
   tipo: perspicacia
+- titulo: Lucas 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/23
+  tipo: biblia
+buscar: Herodes Antipas
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-los-discipulos-sin-tomas
+titulo: Se aparece a los discípulos reunidos, sin Tomás
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 16 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 16
+lugares:
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Lu 24:36-49
+- Jn 20:19-25
+resumen: Esa noche se presenta ante los discípulos reunidos con las puertas cerradas. Les enseña las manos y el
+  costado, come delante de ellos y les explica las Escrituras. Tomás no estaba.
+razon: A7-H cuenta cinco apariciones el 16 de nisán en Jerusalén y sus alrededores; Lu 24:36-49 y Jn 20:19-25. El año 33 lo
+  da la cabecera de A7-G (8 de nisán del 33).
+fuentes:
+- tnm-a7-h
+- lucas-24
+- juan-20
+- jy-cap-135
+- tnm-a7-g
+buscar: Se aparece a los discípulos reunidos, sin Tomás
+consultado: '2026-09-28'
+estado: verificado

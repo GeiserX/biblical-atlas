@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rode
+nombre: Rode
+nombres:
+- nombre: Rode
+fecha:
+  desde: 44
+  hasta: 44
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 44 e.c.
+resumen: Sirvienta cristiana, quizá al servicio de María, madre de Marcos. La noche en que el ángel liberó a Pedro,
+  reconoció su voz y, de la alegría, corrió a avisar sin abrirle la puerta.
+razon: Perspicacia «Rode» (párr. 2), que lo fecha hacia 44; Hch 12:12-16.
+fuentes:
+- it-rode
+- hechos-12
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-rode
+  razon: Perspicacia la pone en la congregación de Jerusalén.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Rode»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003725
+  tipo: perspicacia
+- titulo: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

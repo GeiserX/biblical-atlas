@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-adan
+titulo: Muere Adán
+fecha:
+  desde: -3095
+  hasta: -3095
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 3096 a.e.c.
+lugares: []
+personas: []
+pasajes:
+- Gé 5:5
+resumen: Adán muere a los 930 años, fuera del Edén. Vivió lo bastante para conocer a Lamec, el padre de Noé.
+razon: Perspicacia «Adán» fecha su muerte en 3096 a.e.c., tras 930 años de vida; el cuadro del estudio 3 da el mismo año.
+fuentes:
+- it-adan
+- si-3
+- genesis-5
+buscar: muerte de Adán
+consultado: '2026-09-28'
+estado: verificado

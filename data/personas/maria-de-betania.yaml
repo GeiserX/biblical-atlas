@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-de-betania
+nombre: María de Betania
+nombres:
+- nombre: María
+  nota: El texto bíblico la llama así; «de Betania» la distingue de las otras Marías.
+desambiguacion: La hermana de Marta y Lázaro; no es María Magdalena, ni la madre de Jesús, ni la esposa de Clopas.
+no_confundir_con:
+- maria-magdalena
+- maria-madre-de-jesus
+- maria-esposa-de-clopas
+no_afirmamos:
+- María de Betania es la pecadora que ungió los pies de Jesús en Galilea (Lu 7:36-50).
+relaciones:
+- tipo: pariente
+  persona: lazaro
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: Jn 11:2 dice que el enfermo Lázaro era su hermano.
+  estado: verificado
+- tipo: pariente
+  persona: marta
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: Jn 11:1 la llama hermana de Marta.
+  estado: verificado
+- tipo: vivio_en
+  lugar: betania
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: Jn 11:1 llama a Betania la aldea de María y de Marta.
+  estado: verificado
+resumen: Hermana de Marta y de Lázaro. Escuchaba a Jesús sentada a sus pies y, el 9 de nisán de 33, derramó sobre
+  él un aceite de nardo muy costoso.
+razon: Perspicacia «María», apartado 2 (párr. 19-22); Lu 10:39 y Jn 12:3.
+fuentes:
+- it-maria
+- lucas-10
+- juan-12
+enlaces:
+- titulo: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  tipo: perspicacia
+- titulo: Juan 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/12
+  tipo: biblia
+buscar: María de Betania
+consultado: '2026-09-28'
+estado: verificado

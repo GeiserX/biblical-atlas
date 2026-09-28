@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: parabolas-del-reino
+titulo: Parábolas del Reino desde una barca
+fecha:
+  desde: 31
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 o 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 42
+lugares:
+- capernaum
+- mar-de-galilea
+personas:
+- jesus
+pasajes:
+- Mt 13:1-53
+- Mr 4:1-34
+- Lu 8:4-18
+resumen: 'Junto al mar, cerca de Capernaúm, Jesús enseña desde una barca con ejemplos del campo: el sembrador, la mala hierba,
+  el grano de mostaza, la levadura y otros sobre el Reino.'
+razon: 'A7-D, fila 1: año 31 o 32, por Capernaúm. El libro jy (cap. 43) dice que salió de una casa de Capernaúm hacia el lago.'
+fuentes:
+- tnm-a7-d
+- mateo-13
+- marcos-4
+- lucas-8
+- jy-cap-43
+consultado: '2026-09-28'
+estado: verificado

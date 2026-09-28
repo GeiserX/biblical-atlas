@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: decreto-de-haman
+titulo: Decreto de Hamán contra los judíos
+fecha:
+  desde: -483
+  hasta: -483
+  precision: día
+  aprox: false
+  tipo: derivada
+  cronologia: tnm
+  texto: 484 a.e.c. (cálculo nuestro)
+  detalle:
+    mes: nisan
+    dia: 13
+  nota: Est 3:7, 12 da el día 13 de nisán del año duodécimo de Asuero. Contando 495 como su primer año, el duodécimo es
+    484.
+lugares:
+- susa
+personas:
+- haman
+- jerjes-i
+- mardoqueo
+- ester
+pasajes:
+- Est 3:7-15
+- Est 7:1-10
+- Est 8:3-14
+resumen: Hamán echó suertes y logró un decreto para exterminar a los judíos el 13 de adar. Ester lo desenmascaró, Hamán
+  fue colgado y un segundo decreto permitió a los judíos defenderse.
+razon: 'Perspicacia «Asuero», núm. 3, «Hamán» y «Ester»: decreto en el año duodécimo. El año 484 es nuestra cuenta, por
+  eso queda pendiente.'
+fuentes:
+- it-asuero
+- it-haman
+- it-ester
+- ester-3
+enlaces:
+- titulo: 'Perspicacia: «Hamán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001833
+  tipo: perspicacia
+- titulo: Ester 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: pendiente

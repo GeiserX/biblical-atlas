@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zaqueo
+nombre: Zaqueo
+nombres:
+- nombre: Zaqueo
+relaciones:
+- tipo: vivio_en
+  lugar: jerico
+  deducido: true
+  fuentes:
+  - lucas-19
+  - it-zaqueo
+  razon: Lu 19:1-5 lo sitúa en Jericó y Jesús se aloja en su casa; que viviera allí se deduce del relato.
+  estado: verificado
+resumen: Rico jefe de cobradores de impuestos en Jericó, de baja estatura. Se subió a un árbol para ver a Jesús,
+  lo hospedó en su casa y prometió devolver cuatro veces lo que había sacado con engaño.
+razon: Perspicacia «Zaqueo» (párr. 2-3), que sitúa la visita en la primavera de 33; Lu 19:1-10.
+fuentes:
+- it-zaqueo
+- lucas-19
+enlaces:
+- titulo: 'Perspicacia: «Zaqueo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004650
+  tipo: perspicacia
+- titulo: Lucas 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/19
+  tipo: biblia
+buscar: Zaqueo
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-david
+titulo: Nace David en Belén
+fecha:
+  desde: -1106
+  hasta: -1106
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1107 a.e.c.
+lugares:
+- belen
+personas:
+- david
+pasajes:
+- 1Sa 16:1
+- Rut 4:17-22
+resumen: Nace David, el menor de los hijos de Jesé, en Belén, la ciudad de sus antepasados Obed y Boaz.
+razon: El cuadro del estudio 3 fecha su nacimiento en 1107; Perspicacia «David», párr. 3-4, da su familia y Belén como pueblo
+  natal.
+fuentes:
+- si-3
+- it-david
+- 1-samuel-16
+enlaces:
+- titulo: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  tipo: perspicacia
+- titulo: 1 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16
+  tipo: biblia
+buscar: David Belén Jesé
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: claudio-lisias
+nombre: Claudio Lisias
+nombres:
+- nombre: Claudio Lisias
+- nombre: Lisias
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+resumen: Comandante de la guarnición romana de Jerusalén hacia 56. Rescató a Pablo de la turba, supo que era ciudadano
+  romano y lo mandó a Cesarea con escolta y una carta para Félix.
+razon: Perspicacia «Claudio Lisias» (párr. 1 a 5); Hch 21:31–23:30.
+fuentes:
+- it-claudio-lisias
+- hch-21
+- hch-23
+enlaces:
+- titulo: 'Perspicacia: «Claudio Lisias»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000988
+  tipo: perspicacia
+- titulo: Hechos 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: 56
+    hasta: 56
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56 e.c.
+  deducido: false
+  fuentes:
+  - it-claudio-lisias
+  - hch-21
+  razon: Mandaba la guarnición romana de Jerusalén (Hch 21:31).
+  estado: verificado

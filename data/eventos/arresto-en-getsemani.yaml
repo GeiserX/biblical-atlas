@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: arresto-en-getsemani
+titulo: Agonía en Getsemaní; traición y arresto
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- getsemani
+- valle-de-cedron
+- monte-de-los-olivos
+personas:
+- jesus
+- judas-iscariote
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- malco
+pasajes:
+- Mt 26:30, 36-56
+- Mr 14:26, 32-52
+- Lu 22:39-53
+- Jn 18:1-12
+resumen: Jesús cruza el Cedrón y ora angustiado en Getsemaní. Judas llega con gente armada y lo besa; Pedro hiere
+  a Malco. Jesús se deja arrestar y los apóstoles huyen.
+razon: La tabla A7-H da el día y el lugar. Jn 18:1 nombra el Cedrón; la nota de Mt 26:36 dice que el lugar exacto
+  no se conoce; B12-B.
+fuentes:
+- tnm-a7-h
+- mateo-26
+- marcos-14
+- lucas-22
+- juan-18
+- jy-cap-118
+- jy-cap-123
+- jy-cap-124
+- tnm-b12-b
+- it-getsemani
+orden_relato:
+  serie: a7
+  orden: 116
+buscar: Agonía en Getsemaní
+consultado: '2026-09-28'
+estado: verificado

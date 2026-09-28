@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: belsasar
+nombre: Belsasar
+nombres:
+- nombre: Belsasar
+fecha:
+  desde: -538
+  hasta: -538
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: muere en 539 a.e.c.
+resumen: Primogénito de Nabonido y corregente en Babilonia mientras su padre vivía en Temá. En su banquete apareció la escritura
+  en la pared, y murió la noche en que cayó la ciudad.
+razon: 'Perspicacia «Belsasar»: ejerció la autoridad real desde el tercer año de Nabonido y murió al caer la ciudad, un
+  5 de octubre según el calendario gregoriano. Da 5:1, 30.'
+fuentes:
+- it-belsasar
+- it-nabonido
+- daniel-5
+enlaces:
+- titulo: 'Perspicacia: «Belsasar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000628
+  tipo: perspicacia
+- titulo: Daniel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5
+  tipo: biblia
+no_afirmamos:
+- 'Que Belsasar fuera nieto de Nabucodonosor: es una hipótesis que no todos aceptan.'
+relaciones:
+- tipo: pariente
+  persona: nabonido
+  relacion: hijo de Nabonido
+  deducido: false
+  fuentes:
+  - it-belsasar
+  - it-nabonido
+  razon: 'Perspicacia «Belsasar»: primogénito y corregente de Nabonido.'
+  estado: verificado
+- tipo: murio_en
+  lugar: babilonia
+  fecha:
+    desde: -538
+    hasta: -538
+    precision: día
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 539 a.e.c. (5 de octubre)
+  deducido: false
+  fuentes:
+  - it-belsasar
+  - daniel-5
+  razon: 'Da 5:30 y Perspicacia «Belsasar»: murió al caer Babilonia.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

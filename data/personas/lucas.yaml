@@ -3,10 +3,12 @@ id: lucas
 nombre: Lucas
 nombres:
 - nombre: Lucas
-resumen: Médico y compañero de Pablo; escribió el Evangelio de Lucas y Hechos. Los pasajes en «nosotros» muestran
+no_confundir_con:
+- lucio-de-cirene
+resumen: Médico que acompañó a Pablo; escribió el tercer Evangelio y Hechos. Los pasajes en «nosotros» muestran
   cuándo viajaba con él.
-razon: Perspicacia «Lucas» lo identifica como escritor de Hechos y señala Hch 16:10-17, 20:5–21:18 y 27:1–28:16
-  como pasajes en los que estaba presente.
+razon: Perspicacia «Lucas» lo identifica como escritor de Hechos y señala los tres tramos del libro contados en
+  primera persona del plural (desde Hch 16:10, 20:5 y 27:1).
 fuentes:
 - it-lucas
 - hch-16
@@ -17,5 +19,79 @@ enlaces:
 - titulo: Hechos 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado
+relaciones:
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 50
+    hasta: 50
+    precision: estación
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: primavera de 50 e.c.
+  deducido: false
+  fuentes:
+  - it-lucas
+  - hch-16
+  - si-3
+  razon: Los pasajes en «nosotros» empiezan en Troas y siguen hasta Filipos (Hch 16:10-17). Cruzan a Europa en la primavera
+    de 50 (estudio 3, párr. 24).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 56
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56-61 e.c.
+  deducido: false
+  fuentes:
+  - it-lucas
+  - hch-20
+  - hch-27
+  - hch-28
+  razon: El «nosotros» vuelve en Filipos y llega a Jerusalén; luego va con él a Roma (desde Hch 20:5 y desde 27:1).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 65
+    hasta: 65
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 65 e.c.
+  deducido: false
+  fuentes:
+  - it-lucas
+  - 2-timoteo-4
+  - tnm-tabla
+  razon: '«Solo Lucas está conmigo» (2Ti 4:11): seguía a su lado poco antes de su muerte. La Tabla de los libros fecha 2 Timoteo
+    hacia 65.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: filipos
+  fecha:
+    desde: 50
+    hasta: 56
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 50-56 e.c.
+  deducido: true
+  fuentes:
+  - it-lucas
+  - hch-16
+  - hch-20
+  - si-3
+  razon: Perspicacia cree posible que se quedara en Filipos entre el segundo y el tercer viaje. Del paso por Filipos en 50 a
+    la vuelta en la Pascua de 56 (estudio 3, párr. 24 y 26).
+  estado: verificado

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entrada-triunfal-en-jerusalen
+titulo: Entra en Jerusalén montado en un burro
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 9 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 9
+lugares:
+- betania
+- betfague
+- monte-de-los-olivos
+- jerusalen
+- monte-moria
+personas:
+- jesus
+pasajes:
+- Mt 21:1-11, 14-17
+- Mr 11:1-11
+- Lu 19:29-44
+- Jn 12:12-19
+resumen: Desde Betfagué, Jesús baja el monte de los Olivos montado en un burro y llora por Jerusalén. La multitud
+  lo aclama como rey; luego enseña y cura en el templo.
+razon: La tabla A7-G da el día y el lugar. La nota de Mr 11:1 pone la entrada en las horas de luz del 9 de nisán;
+  «Jerusalén y el templo que Jesús conoció» (párr. 4).
+fuentes:
+- tnm-a7-g
+- mateo-21
+- marcos-11
+- lucas-19
+- juan-12
+- jy-cap-102
+- jy-cap-103
+- tnm-b12-a
+- vbt-jerusalen-templo
+orden_relato:
+  serie: a7
+  orden: 94
+buscar: Entra en Jerusalén montado en un burro
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: baasa
+nombre: Reinado de Baasá en Israel
+tipo: rey
+persona: baasa
+fecha:
+  desde: -974
+  hasta: -951
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 975-952 a.e.c.
+lugares:
+- tirza
+resumen: Veinticuatro años con capital en Tirzá.
+razon: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 15.
+fuentes:
+- tnm-a6-a
+- 1-reyes-15
+- it-baasa
+buscar: Baasá rey
+consultado: '2026-09-28'
+estado: verificado

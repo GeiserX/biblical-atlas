@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-griega
+nombre: Grecia, quinta potencia mundial
+tipo: potencia
+fecha:
+  desde: -331
+  hasta: -62
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 332-63 a.e.c.
+lugares:
+- macedonia
+resumen: Alejandro Magno conquista el Imperio persa en pocos años. Al morir, sus generales se reparten el imperio, y tolomeos
+  y seléucidas se disputan Judea.
+razon: 'Perspicacia «Grecia, griegos»: al tomar Judea en 332 a.e.c. pasa a ser la quinta potencia. B9 pone en 331 la conquista
+  de Persia: por eso se solapa un año con Medopersia.'
+fuentes:
+- it-grecia
+- tnm-b9
+- si-3
+buscar: Grecia potencia mundial Alejandro
+consultado: '2026-09-28'
+estado: verificado

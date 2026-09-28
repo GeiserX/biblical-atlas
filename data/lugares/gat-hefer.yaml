@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gat-hefer
+nombre: Gat-Héfer
+nombres:
+- nombre: Gat-Héfer
+tipo: ciudad
+lat: 32.738056
+lon: 35.319722
+precision: punto
+coord_fuente: openbible:ac51cec
+coord_url: https://www.openbible.info/geo/ancient/ac51cec/gath-hepher
+resumen: Ciudad fronteriza de Zabulón, unos 4 km al NNE de Nazaret. Era la ciudad del profeta Jonás.
+razon: 'Perspicacia «Gat-héfer», párr. 1: suele identificarse con Khirbet ez-Zurraʽ (Tel Gat Hefer); 2Re 14:25. OpenBible:
+  solo el punto.'
+fuentes:
+- it-gat-hefer
+- openbible-geo
+- 2-reyes-14
+enlaces:
+- titulo: 'Perspicacia: «Gat-héfer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001620
+  tipo: perspicacia
+- titulo: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

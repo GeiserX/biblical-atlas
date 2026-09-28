@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: apolos
+nombre: Apolos
+nombres:
+- nombre: Apolos
+fecha:
+  desde: 52
+  hasta: 55
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 52-55 e.c.
+resumen: Judío de Alejandría, elocuente y buen conocedor de las Escrituras. Áquila y Priscila le explicaron mejor
+  el camino de Dios en Éfeso hacia 52 y después ayudó en Corinto.
+razon: Perspicacia «Apolos» (párr. 1 y 2) y la nota de estudio de Hch 18:24; Hch 18:24-28; 1Co 3:6.
+fuentes:
+- it-apolos
+- nota-hechos-18
+- hch-18
+enlaces:
+- titulo: 'Perspicacia: «Apolos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000307
+  tipo: perspicacia
+- titulo: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: efeso
+  deducido: false
+  fuentes:
+  - it-apolos
+  - hch-18
+  razon: Llega a Éfeso hacia 52 y parece estar allí o cerca cuando Pablo escribe 1 Corintios (1Co 16:12).
+  estado: verificado
+- tipo: vivio_en
+  lugar: corinto
+  deducido: true
+  fuentes:
+  - it-apolos
+  - hch-19
+  razon: Desde Éfeso pasa a Acaya y trabaja sobre todo en Corinto (Hch 18:27; 19:1).
+  estado: verificado
+- tipo: acompana
+  persona: aquila
+  fecha:
+    desde: 52
+    hasta: 52
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 52 e.c.
+  deducido: false
+  fuentes:
+  - it-apolos
+  - it-aquila
+  - hch-18
+  razon: Áquila y Priscila lo toman aparte y le explican el camino de Dios (Hch 18:26).
+  estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-ante-el-sanedrin
+titulo: Pablo ante el Sanedrín
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2230
+lugares:
+- jerusalen
+personas:
+- pablo
+- ananias-sumo-sacerdote
+- claudio-lisias
+pasajes:
+- Hch 22:30–23:11
+resumen: El sumo sacerdote Ananías manda golpearlo. Pablo se declara fariseo y habla de la resurrección, y fariseos
+  y saduceos se enfrentan. Esa noche el Señor le dice que dará testimonio en Roma.
+razon: Perspicacia «Ananías» (núm. 3) fecha el juicio hacia 56; «Pablo» (apartado «Detención»).
+fuentes:
+- it-ananias
+- it-pablo
+- hch-23
+buscar: Pablo Sanedrín Ananías
+consultado: '2026-09-28'
+estado: verificado

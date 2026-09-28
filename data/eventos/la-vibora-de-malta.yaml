@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-vibora-de-malta
+titulo: La víbora de Malta
+fecha:
+  desde: 58
+  hasta: 59
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: invierno de 58-59 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2803
+lugares:
+- malta
+personas:
+- pablo
+- lucas
+pasajes:
+- Hch 28:1-6
+resumen: Mientras echa leña al fuego, una víbora se le prende de la mano. Los isleños esperan que caiga muerto;
+  como no le pasa nada, dicen que es un dios.
+razon: Hch 28:1-6 y su nota de estudio (28:3); el estudio 3 (párr. 27) sitúa el invierno en Malta.
+fuentes:
+- hch-28
+- nota-hechos-28
+- si-3
+buscar: víbora Malta Pablo
+consultado: '2026-09-28'
+estado: verificado

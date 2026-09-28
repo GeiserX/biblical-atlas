@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-guilboa
+nombre: Monte Guilboa
+nombres:
+- nombre: Guilboa
+tipo: monte
+lat: 32.433889
+lon: 35.414444
+precision: punto
+coord_fuente: openbible:acf57c5
+coord_url: https://www.openbible.info/geo/ancient/acf57c5/mount-gilboa
+resumen: Cordillera de colinas calizas al sureste de Jezreel. Allí murieron Saúl y tres de sus hijos luchando contra los filisteos.
+razon: 'Perspicacia «Guilboa», párr. 1-2: se identifica por tradición con Jebel Fuquʽah; «Saúl», párr. 16; 1Sa 31:1-6. OpenBible:
+  solo el punto.'
+fuentes:
+- it-guilboa
+- it-saul
+- openbible-geo
+- 1-samuel-31
+enlaces:
+- titulo: 'Perspicacia: «Guilboa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001693
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  tipo: perspicacia
+- titulo: 1 Samuel 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/31
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ararat
+nombre: Ararat
+nombres:
+- nombre: Ararat
+- nombre: Montañas de Ararat
+  nota: Donde se detuvo el arca (Gé 8:4).
+- nombre: Tierra de Ararat
+  nota: Adonde huyeron los hijos de Senaquerib (2Re 19:37).
+- nombre: Urartu
+  nota: Nombre que le dan inscripciones de reyes asirios de los siglos IX-VIII a.e.c.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Región montañosa del lago de Van (Urartu)
+  geometria:
+    tipo: zona
+    lat: 39.702761
+    lon: 44.300381
+    radio_km: 250
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-ararat
+  - openbible-geo
+  razon: Perspicacia deduce de las inscripciones asirias y de Jeremías que la tierra de Ararat estaba en las montañas del
+    lago de Van, entre la cabecera del Tigris y el Cáucaso (párr. 4).
+  nota: 'Centro: punto de OpenBible para Urartu, que cae sobre el monte Ararat. El radio de 250 km es nuestro.'
+  coord_fuente: openbible:ab89be9
+  coord_url: https://www.openbible.info/geo/ancient/ab89be9/ararat
+- nombre: Monte Ararat (Agri Dagi)
+  geometria:
+    tipo: punto
+    lat: 39.702761
+    lon: 44.300381
+  estado: tradicion
+  fuentes:
+  - it-ararat
+  - genesis-8
+  razon: Gé 8:4 habla de montañas, no de un pico. La tradición pone el arca en el monte más alto de la región, de unos 5.165
+    m (párr. 5).
+  coord_fuente: openbible:ab89be9
+  coord_url: https://www.openbible.info/geo/ancient/ab89be9/ararat
+resumen: Cadena de montañas y región al norte de Asiria donde se posó el arca después del Diluvio. La Biblia habla de montañas
+  en plural; la tradición elige el monte más alto.
+razon: Perspicacia «Ararat» (párr. 3-5), Gé 8:4, 2Re 19:37 y Jer 51:27.
+fuentes:
+- it-ararat
+- genesis-8
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Ararat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000338
+  tipo: perspicacia
+- titulo: Génesis 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/8
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

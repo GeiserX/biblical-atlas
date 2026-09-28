@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-judas
+titulo: Judas se ahorca
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- jerusalen
+- akeldama
+personas:
+- jesus
+- judas-iscariote
+pasajes:
+- Mt 27:3-10
+- Hch 1:18, 19
+resumen: Arrepentido, Judas arroja en el templo las 30 piezas de plata y se ahorca. Con ese dinero los sacerdotes
+  compran el campo de un alfarero, al que llaman Campo de Sangre.
+razon: La tabla A7-H da el día y el lugar. La tabla remite a Hch 1:18, 19; Perspicacia «Judas» (párr. 16-18) y «Akéldama».
+fuentes:
+- tnm-a7-h
+- mateo-27
+- hechos-1
+- jy-cap-127
+- it-judas
+- it-akeldama
+orden_relato:
+  serie: a7
+  orden: 118
+buscar: Judas se ahorca
+consultado: '2026-09-28'
+estado: verificado

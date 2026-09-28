@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tercer-anuncio-de-su-muerte
+titulo: Anuncia su muerte por tercera vez
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- perea
+personas:
+- jesus
+pasajes:
+- Mt 20:17-19
+- Mr 10:32-34
+- Lu 18:31-34
+resumen: Subiendo hacia Jerusalén, Jesús anuncia por tercera vez que lo entregarán, se burlarán de él, lo ejecutarán
+  y resucitará al tercer día.
+razon: La tabla A7-F da cuándo y dónde. La tabla dice «probablemente Perea»; jy cap. 98.
+fuentes:
+- tnm-a7-f
+- mateo-20
+- marcos-10
+- lucas-18
+- jy-cap-98
+orden_relato:
+  serie: a7
+  orden: 89
+buscar: Anuncia su muerte por tercera vez
+consultado: '2026-09-28'
+estado: verificado

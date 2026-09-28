@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: bardiya-o-gaumata
+nombre: Bardiya o Gaumata (el Artajerjes de Esd 4:7)
+tipo: rey
+fecha:
+  desde: -521
+  hasta: -521
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 522 a.e.c. (siete meses)
+lugares:
+- persia
+resumen: Gobierno de siete meses tras Cambises, de su hermano Bardiya o de un mago que se hizo pasar por él. En ese tiempo
+  se prohibió la obra del templo.
+razon: Perspicacia «Artajerjes», núm. 1, y «Persia, persas», apartado sobre Cambises y el usurpador.
+fuentes:
+- it-artajerjes
+- it-persia
+- esdras-4
+buscar: Artajerjes
+consultado: '2026-09-28'
+estado: verificado

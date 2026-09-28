@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por hallazgo. Esquema en docs/investigacion/README.md.
+id: pavimento-de-erasto
+nombre: Pavimento de Erasto en Corinto
+lugar_hallazgo: corinto
+identificacion: incierta
+relaciona:
+- persona:erasto-mayordomo-de-corinto
+- carta:romanos
+- lugar:corinto
+fecha_objeto:
+  desde: 1
+  hasta: 100
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: siglo I e.c. (se cree)
+resumen: 'Pavimento hallado en Corinto en 1929 con una inscripción latina: un Erasto, procurador y edil, lo pagó
+  de su bolsillo. No se sabe si es el Erasto de Romanos 16:23.'
+razon: 'Perspicacia «Erasto», núm. 2: cuenta el hallazgo, lo cree del siglo I y deja abierta la identificación.'
+fuentes:
+- it-erasto
+- romanos-16
+consultado: '2026-09-28'
+estado: verificado

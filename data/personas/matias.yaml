@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matias
+nombre: Matías
+nombres:
+- nombre: Matías
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 33 e.c.
+resumen: Discípulo que siguió a Jesús durante todo su ministerio. Echando suertes, días antes de Pentecostés de
+  33, fue elegido para ocupar el lugar de Judas Iscariote y desde entonces se le cuenta entre los doce.
+razon: Perspicacia «Matías» (párr. 2 y 3) y la nota de estudio de Hch 1:23; Hch 1:15-26 narra la elección. La elección cae
+  entre la ascensión y el Pentecostés de 33 (estudio 3, tabla de sucesos).
+fuentes:
+- it-matias
+- hechos-1
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Matías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002940
+  tipo: perspicacia
+- titulo: Hechos 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: sucede_a
+  persona: judas-iscariote
+  deducido: false
+  fuentes:
+  - hechos-1
+  - it-matias
+  razon: Hch 1:20-26 cuenta que, echando suertes, Matías ocupó entre los doce el puesto que Judas había dejado.
+  estado: verificado

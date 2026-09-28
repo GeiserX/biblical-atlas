@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por hallazgo. Esquema en docs/investigacion/README.md.
+id: inscripcion-de-galion
+nombre: Inscripción de Galión en Delfos
+lugar_hallazgo: acaya
+relaciona:
+- persona:galion
+- periodo:galion
+- evento:pablo-ante-galion
+- lugar:corinto
+fecha_objeto:
+  desde: 52
+  hasta: 52
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primera mitad de 52 e.c. (probablemente)
+resumen: Fragmentos de una carta del emperador Claudio a Delfos que nombran a Galión como procónsul. Con ella se
+  fecha su mandato en Acaya del verano de 51 al de 52.
+razon: 'Perspicacia «Galión» (párr. 3), «Acaya» (párr. 4) y el estudio 3 (párr. 25). Delfos no está en el mapa:
+  lo anclamos en Acaya, la provincia que gobernaba Galión.'
+fuentes:
+- it-galion
+- it-acaya
+- it-corinto
+- si-3
+consultado: '2026-09-28'
+estado: verificado

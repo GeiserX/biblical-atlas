@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesac
+nombre: Mesac
+nombres:
+- nombre: Mesac
+- nombre: Misael
+fecha:
+  desde: -616
+  hasta: -616
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: llevado a Babilonia en 617 a.e.c.
+resumen: Nombre babilonio de Misael, uno de los tres compañeros de Daniel llevados a Babilonia en 617 a.e.c. Se negó con
+  sus compañeros a adorar la imagen de oro y un ángel los libró del horno.
+razon: 'Perspicacia «Mesac» y «Daniel», núm. 2: educado tres años en la corte (Da 1) y nombrado sobre el distrito de Babilonia
+  (Da 2:49); el horno en Da 3.'
+fuentes:
+- it-mesac
+- it-daniel
+- daniel-1
+enlaces:
+- titulo: 'Perspicacia: «Mesac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003007
+  tipo: perspicacia
+- titulo: Daniel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/1
+  tipo: biblia
+no_afirmamos:
+- 'Que siguiera vivo cuando cayó Babilonia en 539 a.e.c.: la Biblia no lo dice.'
+relaciones:
+- tipo: acompana
+  persona: daniel
+  deducido: false
+  fuentes:
+  - it-mesac
+  - daniel-1
+  razon: 'Da 1:6, 7 y Perspicacia «Mesac»: uno de los tres compañeros de Daniel.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: babilonia
+  deducido: false
+  fuentes:
+  - it-mesac
+  - daniel-1
+  razon: 'Perspicacia «Mesac»: educado en la corte y después administrador del distrito de Babilonia. No se sabe hasta cuándo
+    vivió.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

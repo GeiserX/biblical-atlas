@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ester
+nombre: Ester
+nombres:
+- nombre: Ester
+- nombre: Hadassá
+fecha:
+  desde: -492
+  hasta: -474
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: de 493 a c. 475 a.e.c.
+resumen: Judía huérfana de la tribu de Benjamín, criada por su primo Mardoqueo. Asuero la hizo reina en su séptimo año;
+  arriesgó su vida para desenmascarar el plan de Hamán contra los judíos.
+razon: 'Perspicacia «Ester» y «Ester, Libro de»: el libro abarca de 493 a c. 475 y se escribió en Susa; Est 2:7, 17.'
+fuentes:
+- it-ester
+- it-ester-libro
+- ester-2
+enlaces:
+- titulo: 'Perspicacia: «Ester»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001430
+  tipo: perspicacia
+- titulo: Ester 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/2
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: mardoqueo
+  relacion: prima de Mardoqueo
+  deducido: false
+  fuentes:
+  - it-ester
+  - ester-2
+  razon: 'Est 2:7, 15: era hija de Abiháil, tío de Mardoqueo.'
+  estado: verificado
+- tipo: pariente
+  persona: jerjes-i
+  relacion: esposa de Asuero
+  deducido: false
+  fuentes:
+  - it-ester
+  - it-asuero
+  razon: 'Perspicacia «Ester» y «Asuero», núm. 3: Asuero, que se cree que es Jerjes I, la eligió como reina.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: susa
+  fecha:
+    desde: -492
+    hasta: -474
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: de 493 a c. 475 a.e.c.
+  deducido: false
+  fuentes:
+  - it-ester-libro
+  - it-susa
+  razon: 'Perspicacia «Susa»: el libro de Ester transcurre en Susa.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

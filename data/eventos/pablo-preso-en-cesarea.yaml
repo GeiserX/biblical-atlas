@@ -9,10 +9,14 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 56-58 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2323
 lugares:
 - cesarea
 personas:
 - pablo
+- felix
 pasajes:
 - Hch 23:23-35
 - Hch 24:27
@@ -23,6 +27,7 @@ fuentes:
 - si-3
 - hch-23
 - hch-24
+- it-felix
 buscar: Pablo custodia Cesarea
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salomon
+nombre: Salomón
+nombres:
+- nombre: Salomón
+fecha:
+  desde: -1036
+  hasta: -997
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1037-998 a.e.c.
+resumen: Hijo de David y Bat-seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras
+  lo llevaron a otros dioses; tras su muerte el reino se dividió.
+razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31; 1Re 6:1 y 11:4-13, 42.
+fuentes:
+- it-salomon
+- 1-reyes-6
+- 1-reyes-11
+- tnm-b7
+enlaces:
+- titulo: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  tipo: perspicacia
+- titulo: 1 Reyes 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: david
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-salomon
+  - 2-samuel-12
+  razon: Hijo de David y Bat-seba (2Sa 12:24).
+  estado: verificado
+- tipo: sucede_a
+  persona: david
+  deducido: false
+  fuentes:
+  - it-salomon
+  - 1-reyes-1
+  razon: Fue ungido y puesto en el trono antes de morir David (1Re 1:39).
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

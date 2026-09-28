@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: anuncio-a-zacarias
+titulo: Gabriel anuncia a Zacarías el nacimiento de Juan
+fecha:
+  desde: -2
+  hasta: -2
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. finales de la primavera de 3 a.e.c.
+  detalle:
+    estacion: primavera
+orden_relato:
+  serie: a7
+  orden: 1
+lugares:
+- jerusalen
+personas:
+- zacarias-padre-de-juan
+- elisabet
+- gabriel
+pasajes:
+- Lu 1:5-25
+resumen: Mientras Zacarías ofrece incienso en el santuario, Gabriel le anuncia que Elisabet, ya mayor, tendrá un hijo llamado
+  Juan. Por no creerlo, queda mudo hasta que el niño nazca.
+razon: 'A7-A, fila 1: templo de Jerusalén en 3 a.e.c. Perspicacia «Zacarías» (núm. 31) sitúa el turno de Abías hacia el final
+  de la primavera o el comienzo del verano.'
+fuentes:
+- tnm-a7-a
+- lucas-1
+- it-zacarias
+- jy-cap-1
+buscar: Zacarías Gabriel templo
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esdras-regresa-468
+titulo: Esdras vuelve a Jerusalén con sacerdotes y levitas
+fecha:
+  desde: -467
+  hasta: -467
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 468 a.e.c. (llegada el 1 de ab)
+  detalle:
+    mes: ab
+    dia: 1
+lugares:
+- babilonia
+- rio-ahava
+- jerusalen
+personas:
+- esdras
+pasajes:
+- Esd 7:6-9
+- Esd 8:15-36
+resumen: Con una carta de Artajerjes, Esdras reunió a los viajeros junto al río Ahavá, ayunó y partió sin escolta con los
+  donativos. Llegó a Jerusalén cuatro meses después de salir de Babilonia.
+razon: 'Estudio 3, tabla de sucesos (468); Perspicacia «Esdras» y «Artajerjes», núm. 2. Esd 7:9: salió el 1 de nisán y llegó
+  el 1 del quinto mes; Esd 8:31, del Ahavá el día 12.'
+fuentes:
+- si-3
+- it-esdras
+- it-artajerjes
+- esdras-7
+- esdras-8
+enlaces:
+- titulo: 'Perspicacia: «Esdras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001475
+  tipo: perspicacia
+- titulo: Esdras 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/7
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

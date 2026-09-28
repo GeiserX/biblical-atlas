@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jerjes-i
+nombre: Jerjes I (Asuero), rey de Persia
+tipo: rey
+fecha:
+  desde: -495
+  hasta: -474
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: corregente desde 496; solo desde 486 hasta 475 a.e.c.
+lugares:
+- persia
+- susa
+persona: jerjes-i
+resumen: Diez años de corregencia con Darío y once solo. Perspicacia lo identifica con el Asuero del libro de Ester.
+razon: Perspicacia «Persia, persas», apartado «Los reinados de Jerjes y Artajerjes», con pruebas griegas, persas y babilonias;
+  «Asuero», núm. 3.
+fuentes:
+- it-persia
+- it-asuero
+alternativas:
+- fecha:
+    desde: -485
+    hasta: -464
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: secular
+    texto: 486-465 a.e.c.
+  fuentes:
+  - it-persia
+  nota: La cuenta habitual empieza a la muerte de Darío y le da 21 años hasta 465.
+buscar: Jerjes
+consultado: '2026-09-28'
+estado: verificado

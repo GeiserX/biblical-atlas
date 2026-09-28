@@ -3,21 +3,28 @@ id: capernaum
 nombre: Capernaúm
 nombres:
 - nombre: Capernaúm
+- nombre: Capernaum
+  nota: Forma que usa Perspicacia.
 tipo: ciudad
 lat: 32.881111
 lon: 35.575
 precision: punto
 coord_fuente: openbible:af2161c
 coord_url: https://www.openbible.info/geo/ancient/af2161c/capernaum
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Capernaum», confirmado por
-  su título. Coordenada de OpenBible: solo tomamos el punto.'
+resumen: Ciudad de la orilla noroeste del mar de Galilea, con oficina de impuestos y sinagoga. Jesús vivió allí durante su
+  ministerio en Galilea; Mateo la llama «su propia ciudad».
+razon: 'Perspicacia «Capernaum» (párr. 2, 3 y 7) la sitúa en las ruinas de Tell Hum; la nota de Mt 4:13 da la orilla noroeste.
+  Coordenada de OpenBible: solo tomamos el punto.'
 fuentes:
 - it-capernaum
+- mateo-4
 - openbible-geo
 enlaces:
 - titulo: 'Perspicacia: «Capernaum»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000882
   tipo: perspicacia
+- titulo: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

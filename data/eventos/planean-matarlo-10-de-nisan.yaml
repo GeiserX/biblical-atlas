@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: planean-matarlo-10-de-nisan
+titulo: Los sacerdotes principales y los escribas planean matarlo
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 10 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 10
+lugares:
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Mr 11:18, 19
+- Lu 19:47, 48
+resumen: Los sacerdotes principales y los escribas buscan la manera de acabar con Jesús, pero no se atreven porque
+  el pueblo está pendiente de lo que enseña.
+razon: La tabla A7-G da el día y el lugar. Mr 11:18 y Lu 19:47, 48.
+fuentes:
+- tnm-a7-g
+- marcos-11
+- lucas-19
+- jy-cap-103
+- jy-cap-105
+orden_relato:
+  serie: a7
+  orden: 96
+buscar: Los sacerdotes principales y los escribas planean matarlo
+consultado: '2026-09-28'
+estado: verificado

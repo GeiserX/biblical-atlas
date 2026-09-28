@@ -9,6 +9,7 @@ lon: 35.23417
 precision: zona
 coord_fuente: openbible:a149f13
 coord_url: https://www.openbible.info/geo/ancient/a149f13/judea-1
+coord_nota: Punto representativo que da OpenBible, el mismo de Jerusalén; la región es mucho más amplia.
 resumen: Región de Palestina al sur de Samaria, con Jerusalén; sus límites exactos no se conocen.
 razon: 'Perspicacia («Judea») describe el lugar; aparece en Heb 13:24. La coordenada es de OpenBible: solo tomamos
   el punto.'

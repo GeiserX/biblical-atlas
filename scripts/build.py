@@ -63,6 +63,9 @@ def _fundir_fuentes(data_dir, errores):
             errores.append(f"{rel}: debe ser un mapa id: {{titulo, obra, url, ...}}")
             continue
         for fid, f in contenido.items():
+            if f is not None and not isinstance(f, dict):
+                errores.append(f"{rel}: la fuente '{fid}' debe ser un mapa {{titulo, obra, url, ...}}, no {f!r}")
+                continue
             f = dict(f or {})
             if fid not in fuentes:
                 fuentes[fid], origen[fid] = f, rel
@@ -259,6 +262,8 @@ def integridad(datos):
                     ref(f, "destinatarios.personas", pid, "personas")
                 for pid in o.get("portadores") or []:
                     ref(f, "portadores", pid, "personas")
+                for pid in o.get("personas") or []:
+                    ref(f, "personas", pid, "personas")
             elif tipo == "eventos":
                 for lid in o.get("lugares") or []:
                     ref(f, "lugar", lid, "lugares")
@@ -690,6 +695,9 @@ def escribir_registro(salida, datos, carpeta):
     textos = registros(salida, datos)
     for nombre, texto in textos.items():
         (carpeta / f"{nombre}.md").write_text(texto, encoding="utf-8")
+    for viejo in carpeta.glob("*.md"):
+        if viejo.stem not in textos:
+            viejo.unlink()
     return len(textos)
 
 

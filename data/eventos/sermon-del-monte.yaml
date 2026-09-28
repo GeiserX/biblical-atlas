@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sermon-del-monte
+titulo: El Sermón del Monte
+fecha:
+  desde: 31
+  hasta: 31
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 33
+lugares:
+- capernaum
+personas:
+- jesus
+pasajes:
+- Mt 5:1-7:29
+- Lu 6:17-49
+resumen: En la ladera de la misma montaña, ante gente llegada de Judea, Jerusalén, Tiro y Sidón, Jesús cura a los enfermos
+  y pronuncia el discurso que empieza hablando de quiénes son felices.
+razon: 'A7-C, fila 14: cerca de Capernaúm. Veamos «la buena tierra» (pág. 28) dice que Capernaúm no quedaba lejos del lugar
+  del sermón.'
+fuentes:
+- tnm-a7-c
+- mateo-5
+- lucas-6
+- lbt-pais-de-los-judios
+- jy-cap-35
+consultado: '2026-09-28'
+estado: verificado

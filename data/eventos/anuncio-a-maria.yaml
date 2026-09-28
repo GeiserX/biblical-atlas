@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: anuncio-a-maria
+titulo: Gabriel anuncia a María el nacimiento de Jesús
+fecha:
+  desde: -1
+  hasta: -1
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. principios de 2 a.e.c.
+orden_relato:
+  serie: a7
+  orden: 2
+lugares:
+- nazaret
+- judea
+personas:
+- maria-madre-de-jesus
+- gabriel
+- elisabet
+pasajes:
+- Lu 1:26-56
+resumen: En Nazaret, Gabriel dice a María, todavía soltera, que concebirá por espíritu santo un hijo llamado Jesús. Ella viaja
+  a las colinas de Judea y pasa unos tres meses con Elisabet.
+razon: 'A7-A, fila 2: c. 2 a.e.c., Nazaret y Judea. Perspicacia «María» (núm. 1, «La visita un ángel») precisa principios
+  de 2 a.e.c. y la estancia de tres meses.'
+fuentes:
+- tnm-a7-a
+- lucas-1
+- it-maria
+- jy-cap-1
+- jy-cap-2
+consultado: '2026-09-28'
+estado: verificado

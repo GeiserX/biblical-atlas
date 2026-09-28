@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: akeldama
+nombre: Akéldama
+nombres:
+- nombre: Akéldama
+  nota: Significa «Campo de Sangre».
+- nombre: Campo del alfarero
+  nota: Lo que era antes de la compra (Mt 27:7).
+tipo: llanura
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Haqq ed-Dumm, en la parte sur del valle de Hinón
+  geometria:
+    tipo: punto
+    lat: 31.76841
+    lon: 35.23288
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-akeldama
+  - tnm-b12-b
+  - openbible-geo
+  razon: Perspicacia (párr. 2-3) la da como ubicación probable; B12-B la marca con interrogación. Punto de OpenBible.
+  coord_fuente: openbible:a040ba5
+  coord_url: https://www.openbible.info/geo/ancient/a040ba5/akeldama
+resumen: El campo del alfarero que los sacerdotes compraron con las 30 piezas de plata devueltas por Judas, para
+  enterrar a extranjeros. Por eso se lo llamó Campo de Sangre.
+razon: Perspicacia «Akéldama» (párr. 2-3); Mt 27:3-10 y Hch 1:18, 19.
+fuentes:
+- it-akeldama
+- mateo-27
+- hechos-1
+enlaces:
+- titulo: 'Perspicacia: «Akéldama»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000185
+  tipo: perspicacia
+- titulo: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  tipo: biblia
+buscar: Akéldama
+consultado: '2026-09-28'
+estado: verificado

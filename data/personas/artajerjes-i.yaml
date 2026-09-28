@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: artajerjes-i
+nombre: Artajerjes I
+nombres:
+- nombre: Artajerjes Longimano
+- nombre: Artajerjes
+desambiguacion: Artajerjes Longimano; no el Artajerjes de Esd 4:7, que Perspicacia identifica con Bardiya o Gaumata.
+fecha:
+  desde: -474
+  hasta: -423
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 475-424 a.e.c.
+resumen: Hijo de Jerjes I. En 468 a.e.c., su séptimo año, dio a Esdras permiso y fondos, y en el vigésimo (455) dejó ir
+  a Nehemías a reconstruir el muro; de ese año parten las setenta semanas.
+razon: Perspicacia «Artajerjes», núm. 2, y «Persia, persas»; el estudio 3 (párr. 18, 19) fija su subida al trono en 475
+  con fuentes griegas, persas y babilonias.
+fuentes:
+- it-artajerjes
+- it-persia
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Artajerjes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000389
+  tipo: perspicacia
+- titulo: Nehemías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jerjes-i
+  relacion: hijo de Jerjes I
+  deducido: false
+  fuentes:
+  - it-artajerjes
+  razon: 'Perspicacia «Artajerjes», núm. 2: hijo de Jerjes I.'
+  estado: verificado
+- tipo: sucede_a
+  persona: jerjes-i
+  deducido: false
+  fuentes:
+  - it-persia
+  - si-3
+  razon: 'Estudio 3 (párr. 18): Jerjes murió a fines de 475 y ese año empezó Artajerjes.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado
+alternativas:
+- fecha:
+    desde: -464
+    hasta: -423
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: secular
+    texto: 465-424 a.e.c.
+  fuentes:
+  - it-artajerjes
+  - it-persia
+  nota: La mayoría de las obras de consulta ponen su subida al trono en 465; Perspicacia da razones para 475.

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-da-cuentas-en-jerusalen
+titulo: Pedro explica en Jerusalén lo ocurrido con Cornelio
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 36 e.c. (poco después de la visita a Cornelio)
+orden_relato:
+  serie: hechos
+  orden: 1101
+lugares:
+- jerusalen
+personas:
+- pedro
+pasajes:
+- Hch 11:1-18
+resumen: Algunos que insistían en la circuncisión critican a Pedro por comer con incircuncisos. Él les cuenta la
+  visión y lo sucedido en Cesarea; se callan y glorifican a Dios.
+razon: Perspicacia «Pedro» (párr. 19) y «Cornelio» (párr. 5).
+fuentes:
+- it-pedro
+- it-cornelio
+- hechos-11
+buscar: Pedro explica en Jerusalén Cornelio
+consultado: '2026-09-28'
+estado: verificado

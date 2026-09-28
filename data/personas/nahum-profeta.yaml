@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahum-profeta
+nombre: Nahúm
+nombres:
+- nombre: Nahúm
+fecha:
+  desde: -631
+  hasta: -631
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: antes de 632 a.e.c.
+resumen: Profeta elqosita que anunció la caída de Nínive. Parece que escribió en Judá, antes de 632 a.e.c.
+razon: Perspicacia «Nahúm», núm. 1; Na 1:1. La Tabla de los libros cierra el libro antes de 632.
+fuentes:
+- it-nahum
+- nahum-1
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Nahúm»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003172
+  tipo: perspicacia
+- titulo: Nahúm 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

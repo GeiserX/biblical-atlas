@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: levadura-y-ciego-de-betsaida
+titulo: Advierte contra la levadura de los fariseos y cura a un ciego en Betsaida
+fecha:
+  desde: 32
+  hasta: 32
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: Tras la Pascua de 32 e.c.
+lugares:
+- mar-de-galilea
+- betsaida
+personas:
+- jesus
+- herodes-antipas
+pasajes:
+- Mt 16:5-12
+- Mr 8:13-26
+resumen: Cruzando en barca hacia Betsaida, Jesús advierte a sus discípulos contra la levadura, es decir, las enseñanzas,
+  de fariseos y de Herodes. En Betsaida devuelve la vista a un ciego poco a poco.
+razon: La tabla A7-E da cuándo y dónde. Mt 16:12 explica la levadura; Mr 8:15 nombra a Herodes; jy cap. 58.
+fuentes:
+- tnm-a7-e
+- mateo-16
+- marcos-8
+- jy-cap-58
+- jy-cap-59
+orden_relato:
+  serie: a7
+  orden: 56
+buscar: Advierte contra la levadura de los fariseos y cura a un ciego en Betsaida
+consultado: '2026-09-28'
+estado: verificado

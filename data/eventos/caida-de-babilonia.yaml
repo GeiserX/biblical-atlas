@@ -4,23 +4,39 @@ titulo: Caída de Babilonia
 fecha:
   desde: -538
   hasta: -538
-  precision: año
+  precision: día
   aprox: false
   tipo: anclada
   cronologia: tnm
-  texto: 539 a.e.c.
-lugares: []
-personas: []
-pasajes: []
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril persas. Fecha de la tabla del estudio 3; artículo: Perspicacia
-  «Babilonia», confirmado por su título.'
+  texto: 539 a.e.c., día 16 de tisri (5 de octubre en el calendario gregoriano)
+  detalle:
+    mes: tisri
+    dia: 16
+lugares:
+- babilonia
+personas:
+- belsasar
+- daniel
+pasajes:
+- Da 5:1-31
+- Is 45:1, 2
+- Jer 51:30
+resumen: Mientras Belsasar celebraba un banquete, las tropas de Ciro tomaron Babilonia sin lucha. Esa noche Daniel leyó
+  la escritura en la pared, Belsasar murió y Darío el medo recibió el reino.
+razon: Perspicacia «Belsasar» y «Babilonia» fechan la caída un 5 de octubre en el calendario gregoriano; «Nabonido» explica
+  que la Crónica fija el 16 de tisri. El estudio 3 la usa como fecha eje (párr. 5).
 fuentes:
 - si-3
 - it-babilonia
+- it-belsasar
+- it-nabonido
+- daniel-5
 enlaces:
-- titulo: 'Perspicacia: «Babilonia»'
-  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+- titulo: 'Perspicacia: «Belsasar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000628
   tipo: perspicacia
+- titulo: Daniel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

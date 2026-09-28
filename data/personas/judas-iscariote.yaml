@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-iscariote
+nombre: Judas Iscariote
+nombres:
+- nombre: Judas Iscariote
+- nombre: Judas
+desambiguacion: El apóstol que traicionó a Jesús; no es Judas Tadeo, el otro apóstol, ni Judas, el medio hermano
+  de Jesús.
+no_confundir_con:
+- judas-hermano-de-jesus
+- tadeo
+no_afirmamos:
+- Judas estaba predestinado a traicionar a Jesús.
+- 'Judas participó en la Cena del Señor: se fue antes de que Jesús la estableciera.'
+relaciones:
+- tipo: acompana
+  persona: jesus
+  deducido: false
+  fuentes:
+  - lucas-6
+  - it-judas
+  razon: Lu 6:16 lo nombra entre los doce apóstoles, el último.
+  estado: verificado
+resumen: Apóstol, hijo de Simón Iscariote, que guardaba la caja del dinero y robaba de ella. Vendió a Jesús por
+  30 piezas de plata, lo entregó en Getsemaní y después se quitó la vida.
+razon: Perspicacia «Judas», apartado 4 (párr. 6-18); Jn 12:6, Mt 26:14-16, 47-50 y 27:3-5.
+fuentes:
+- it-judas
+- mateo-26
+- mateo-27
+- juan-12
+enlaces:
+- titulo: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  tipo: perspicacia
+- titulo: Mateo 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
+  tipo: biblia
+buscar: Judas Iscariote
+consultado: '2026-09-28'
+estado: verificado

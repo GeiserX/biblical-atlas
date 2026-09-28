@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-contra-egipto
+titulo: Babilonia hace campaña contra Egipto
+fecha:
+  desde: -587
+  hasta: -587
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 588 a.e.c.
+lugares:
+- egipto
+personas:
+- nabucodonosor-ii
+pasajes:
+- Eze 29:17-20
+resumen: En el año 37 de Nabucodonosor, una tablilla babilonia menciona una campaña contra Egipto. Pudo ser cuando Egipto
+  quedó bajo Babilonia, como predijo Ezequiel.
+razon: Perspicacia «Babilonia» y «Egipto, egipcio» fechan la tablilla en 588 a.e.c. y dicen que no se sabe si fue la conquista
+  o una acción posterior.
+fuentes:
+- it-babilonia
+- it-egipto
+buscar: Nabucodonosor Egipto
+consultado: '2026-09-28'
+estado: verificado

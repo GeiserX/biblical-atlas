@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: buen-samaritano-y-casa-de-marta
+titulo: El buen samaritano; en casa de Marta y María
+fecha:
+  desde: 32
+  hasta: 32
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detalle:
+    estacion: otoño
+lugares:
+- judea
+- betania
+personas:
+- jesus
+- marta
+- maria-de-betania
+pasajes:
+- Lu 10:25-42
+resumen: A un experto en la Ley que pregunta quién es su prójimo, Jesús le cuenta la parábola del buen samaritano.
+  Luego se aloja en casa de Marta, y María se sienta a escucharlo.
+razon: La tabla A7-E da cuándo y dónde. La nota de Lu 10:38 identifica la aldea con Betania; Perspicacia «Betania»
+  (párr. 3).
+fuentes:
+- tnm-a7-e
+- lucas-10
+- jy-cap-73
+- jy-cap-74
+- it-betania
+orden_relato:
+  serie: a7
+  orden: 67
+buscar: El buen samaritano
+consultado: '2026-09-28'
+estado: verificado

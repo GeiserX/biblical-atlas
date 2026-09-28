@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: felipe-predica-en-samaria
+titulo: Felipe predica en la ciudad de Samaria
+fecha:
+  desde: 33
+  hasta: 36
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 36 e.c. (tiempo narrativo: después de la muerte de Esteban y antes de la visita a Cornelio)'
+orden_relato:
+  serie: hechos
+  orden: 805
+lugares:
+- samaria
+- region-de-samaria
+personas:
+- felipe-evangelizador
+- simon-el-mago
+pasajes:
+- Hch 8:4-13
+resumen: Felipe baja a la ciudad de Samaria, habla del Cristo y cura a muchos. La gente acepta el mensaje y se bautiza,
+  incluso Simón, un mago muy admirado.
+razon: Perspicacia «Felipe» (párr. 7) y «Simón» (párr. 9); «Samaria» (párr. 14) cita Hch 8:5 como mención de la
+  ciudad. Capítulo 7 de «Testimonio completo», párr. 3 y 9.
+fuentes:
+- it-felipe
+- it-simon
+- it-samaria
+- hechos-8
+- bt-7
+nota: Las fuentes no dan año. Perspicacia lo pone poco después de la muerte de Esteban (33-34) y antes de la visita
+  de Pedro a Cornelio (36).
+buscar: Felipe en Samaria
+consultado: '2026-09-28'
+estado: verificado

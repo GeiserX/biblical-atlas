@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: zacarias-de-israel
+nombre: Reinado de Zacarías en Israel
+tipo: rey
+persona: zacarias-de-israel
+fecha:
+  desde: -802
+  hasta: -790
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 803-791 a.e.c.
+lugares:
+- samaria
+resumen: Seis meses de reinado confirmado hacia 792, tras unos once años sin que su gobierno quedara firme.
+razon: A6-B lo pone hacia 803, «6 meses, oficialmente», y añade que su reinado no se confirmó hasta c. 792; Salum reina hacia
+  791.
+fuentes:
+- tnm-a6-b
+- 2-reyes-15
+- it-zacarias
+buscar: Zacarías rey
+consultado: '2026-09-28'
+estado: verificado

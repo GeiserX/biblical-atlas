@@ -3,14 +3,67 @@ id: juan-el-bautista
 nombre: Juan el Bautista
 nombres:
 - nombre: Juan el Bautista
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Juan» (apartado 1), confirmado
-  por su título.'
+- nombre: Juan
+desambiguacion: Hijo del sacerdote Zacarías y precursor de Jesús; no es el apóstol Juan, hijo de Zebedeo.
+no_confundir_con:
+- juan-apostol
+- juan-marcos
+fecha:
+  desde: 29
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 29-32 e.c.
+resumen: Hijo del sacerdote Zacarías y de Elisabet, unos seis meses mayor que Jesús. Empezó a predicar hacia abril de 29,
+  bautizó a Jesús y lo presentó como el Cordero de Dios. Herodes Antipas lo encarceló y lo mandó decapitar.
+razon: Perspicacia «Juan» (núm. 1) da la familia, el ministerio, la cárcel y la muerte; la nota de Lu 3:1 fecha el comienzo.
+  La fecha de la ficha va de ese comienzo a su muerte.
 fuentes:
 - it-juan
+- lucas-3
+- it-herodias
+relaciones:
+- tipo: pariente
+  persona: zacarias-padre-de-juan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:13, 57-63.
+  estado: verificado
+- tipo: pariente
+  persona: elisabet
+  relacion: madre
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:13, 57.
+  estado: verificado
+- tipo: nacio_en
+  lugar: judea
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-juan
+  razon: 'Lu 1:39, 65: sus padres vivían en la región montañosa de Judea; Perspicacia (núm. 1) dice que allí pasó sus primeros
+    años.'
+  estado: verificado
+- tipo: murio_en
+  lugar: tiberiades
+  deducido: true
+  fuentes:
+  - mateo-14
+  - tnm-a7-d
+  razon: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Juan»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
   tipo: perspicacia
+- titulo: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

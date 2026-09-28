@@ -17,6 +17,19 @@ destinatarios:
   texto: Congregación de Colosas (la llevaron Tíquico y Onésimo)
   lugares:
   - colosas
+portadores:
+- tiquico
+- onesimo
+personas:
+- timoteo
+- tiquico
+- onesimo
+- aristarco
+- juan-marcos
+- epafras
+- lucas
+- demas
+- arquipo
 contexto_origen:
   resumen: Hacia el final del primer encarcelamiento en Roma; Epafras le había informado del estado de la congregación.
   fuentes:
@@ -32,6 +45,10 @@ fuentes:
 - si-3
 - it-colosenses
 - colosenses-1
+- it-tiquico
+- it-onesimo
+- it-epafras
+- it-aristarco
 enlaces:
 - titulo: 'Perspicacia: «Colosenses, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001011
@@ -39,5 +56,5 @@ enlaces:
 - titulo: Colosenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

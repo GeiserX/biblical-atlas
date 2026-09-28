@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: denuncia-a-escribas-y-fariseos
+titulo: Denuncia a los escribas y fariseos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 11 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 11
+lugares:
+- monte-moria
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Mt 23:1-39
+- Mr 12:38-40
+- Lu 20:45-47
+resumen: Jesús condena en público a los escribas y fariseos por hipócritas y se lamenta por Jerusalén, la ciudad
+  que mata a los profetas.
+razon: La tabla A7-G da el día y el lugar. Mt 23:1-39.
+fuentes:
+- tnm-a7-g
+- mateo-23
+- marcos-12
+- lucas-20
+- jy-cap-109
+- jy-cap-110
+orden_relato:
+  serie: a7
+  orden: 103
+buscar: Denuncia a los escribas y fariseos
+consultado: '2026-09-28'
+estado: verificado

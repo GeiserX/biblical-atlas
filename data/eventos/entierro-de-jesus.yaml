@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entierro-de-jesus
+titulo: Ponen su cuerpo en una tumba
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c., antes de la puesta del sol
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- golgota
+- jerusalen
+personas:
+- jesus
+- jose-de-arimatea
+- poncio-pilato
+- maria-magdalena
+- maria-esposa-de-clopas
+- nicodemo
+pasajes:
+- Mt 27:57-61
+- Mr 15:42-47
+- Lu 23:50-56
+- Jn 19:31-42
+resumen: José de Arimatea pide el cuerpo a Pilato y, con Nicodemo, lo envuelve con especias y lo pone en una tumba
+  nueva de un jardín cercano, antes de que empiece el sábado.
+razon: La tabla A7-H da el día y el lugar. Jn 19:41 pone la tumba en un jardín junto al lugar de la ejecución; Perspicacia
+  «José» (apartado 10).
+fuentes:
+- tnm-a7-h
+- mateo-27
+- marcos-15
+- lucas-23
+- juan-19
+- jy-cap-133
+- it-jose
+- tnm-b12-b
+orden_relato:
+  serie: a7
+  orden: 122
+buscar: Ponen su cuerpo en una tumba
+consultado: '2026-09-28'
+estado: verificado

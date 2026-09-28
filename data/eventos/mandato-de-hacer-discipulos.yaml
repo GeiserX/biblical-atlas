@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mandato-de-hacer-discipulos
+titulo: En Galilea manda hacer discípulos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+lugares:
+- galilea
+personas:
+- jesus
+pasajes:
+- Mt 28:16-20
+- 1Co 15:6
+- Hch 1:3-8
+resumen: En un monte de Galilea, Jesús dice que ha recibido toda autoridad y manda a sus discípulos que hagan discípulos
+  en todas las naciones.
+razon: La tabla A7-H da el día y el lugar. La nota de Mt 28:16 dice que al parecer asistieron más de 500 discípulos
+  (1Co 15:6).
+fuentes:
+- tnm-a7-h
+- mateo-28
+- 1-corintios-15
+- hechos-1
+- jy-cap-137
+orden_relato:
+  serie: a7
+  orden: 125
+buscar: En Galilea manda hacer discípulos
+consultado: '2026-09-28'
+estado: verificado

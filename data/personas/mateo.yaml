@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mateo
+nombre: Mateo
+nombres:
+- nombre: Mateo
+- nombre: Leví
+  nota: Otro nombre suyo en Mr 2:14 y Lu 5:27.
+resumen: Judío, hijo de Alfeo, que cobraba impuestos cuando Jesús lo llamó en Capernaúm o cerca, en 30 o principios de 31.
+  Después fue elegido apóstol y escribió el Evangelio que lleva su nombre.
+razon: Perspicacia «Mateo» (párr. 2-4) da el otro nombre, la llamada, la fecha y el nombramiento como apóstol.
+fuentes:
+- it-mateo
+- mateo-9
+- marcos-2
+relaciones:
+- tipo: vivio_en
+  lugar: capernaum
+  deducido: true
+  fuentes:
+  - marcos-2
+  - it-capernaum
+  razon: Perspicacia «Capernaum» (párr. 7) sitúa en Capernaúm su casa y el banquete (Mr 2:15).
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  razon: Mt 10:3.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Mateo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002938
+  tipo: perspicacia
+- titulo: Mateo 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/9
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

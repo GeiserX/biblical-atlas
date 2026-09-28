@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: caida-de-ninive
+titulo: Cae Nínive
+fecha:
+  desde: -631
+  hasta: -631
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 632 a.e.c.
+lugares:
+- ninive
+personas: []
+pasajes:
+- Na 3:1-7
+- Sof 2:13
+resumen: Babilonios, medos y escitas toman Nínive, la capital asiria, como habían anunciado Nahúm y Sofonías. Babilonia
+  se encamina a ser la tercera potencia mundial.
+razon: Perspicacia «Asiria» cita la Crónica de Babilonia para el año 632 a.e.c.; «Veamos “la buena tierra”» y el cuadro
+  del estudio 3 dan el mismo año.
+fuentes:
+- it-asiria
+- lbt-imperios
+- si-3
+buscar: caída de Nínive 632
+consultado: '2026-09-28'
+estado: verificado

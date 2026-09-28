@@ -9,6 +9,7 @@ lon: 34.89206
 precision: zona
 coord_fuente: openbible:ad63819
 coord_url: https://www.openbible.info/geo/ancient/ad63819/cilicia
+coord_nota: Punto representativo que da OpenBible, el mismo de Tarso, su ciudad más importante; la región es mucho más amplia.
 resumen: Región estrecha del sureste de Asia Menor entre el Tauro y el mar; Pablo la recorrió al empezar el segundo
   viaje.
 razon: 'Perspicacia («Cilicia») describe el lugar; aparece en Hch 15:41. La coordenada es de OpenBible: solo tomamos

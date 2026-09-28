@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: judas
+libro: Judas
+escritor: judas-hermano-de-jesus
+referencia: Jud 1, 3, 4, 17, 18
+escrita_en: []
+fecha:
+  desde: 65
+  hasta: 65
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 65 e.c.
+destinatarios:
+  texto: '«Los llamados»: todos los cristianos; una carta para circular.'
+contexto_origen:
+  resumen: Judas no nombra el sitio de Cestio Galo a Jerusalén (66) y parece citar 2 Pedro, así que escribe hacia
+    65, probablemente desde Palestina.
+  fuentes:
+  - it-judas-carta
+contexto_destino:
+  resumen: Hombres inmorales se habían metido en la congregación. Judas pide luchar por la fe y recuerda juicios
+    pasados de Dios.
+  fuentes:
+  - it-judas-carta
+razon: La Tabla da «Israel (?)» y c. 65; Perspicacia «Judas, Carta de» (párr. 1, 2 y 4).
+nota: 'Sin lugar en el mapa: la Tabla dice «Israel (?)» y Perspicacia «Palestina», y no tenemos una ficha para esa
+  región.'
+fuentes:
+- tnm-tabla
+- si-3
+- it-judas-carta
+- judas-1
+enlaces:
+- titulo: 'Perspicacia: «Judas, Carta de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002543
+  tipo: perspicacia
+- titulo: Judas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/65/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
