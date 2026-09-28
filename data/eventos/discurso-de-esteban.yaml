@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: discurso-de-esteban
+titulo: Esteban, acusado, se defiende ante el Sanedrín
+fecha:
+  desde: 33
+  hasta: 34
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+orden_relato:
+  serie: hechos
+  orden: 608
+lugares:
+- jerusalen
+personas:
+- esteban
+- caifas
+pasajes:
+- Hch 6:8–7:53
+resumen: Esteban hace milagros y gana las discusiones con judíos de varias sinagogas. Con testigos falsos lo llevan
+  al Sanedrín, donde repasa la historia de Israel desde Abrahán y denuncia a sus jueces.
+razon: Perspicacia «Esteban» (párr. 5 y 6), el capítulo 6 de «Testimonio completo» y la nota de estudio de Hch 7:1,
+  que identifica al sumo sacerdote.
+fuentes:
+- it-esteban
+- bt-6
+- hechos-7
+nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+buscar: discurso de Esteban
+consultado: '2026-09-28'
+estado: verificado

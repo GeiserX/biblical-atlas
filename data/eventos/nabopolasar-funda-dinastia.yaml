@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabopolasar-funda-dinastia
+titulo: Nabopolasar funda la dinastía caldea en Babilonia
+fecha:
+  desde: -644
+  hasta: -644
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 645 a.e.c.
+lugares:
+- babilonia
+personas: []
+pasajes: []
+resumen: Con Asiria en declive, Nabopolasar empieza en Babilonia una nueva dinastía. Su hijo Nabucodonosor II llevará la
+  ciudad a su mayor esplendor.
+razon: Perspicacia «Babilonia» (núm. 1, apartado «Historia») fecha hacia 645 a.e.c. la nueva dinastía caldea de Nabopolasar.
+fuentes:
+- it-babilonia
+buscar: Nabopolasar
+consultado: '2026-09-28'
+estado: verificado

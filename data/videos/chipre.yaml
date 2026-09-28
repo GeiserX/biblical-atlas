@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: chipre
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-104_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_1_VIDEO&appLanguage=S"
+    publicado: "2023-06-05"
+    menciones: 5
+    terminos:
+      "Chipre": 5
+  - docid: "pub-jwb-104_7_VIDEO"
+    titulo: "Trent Lippold: Sigan remando"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_7_VIDEO&appLanguage=S"
+    publicado: "2023-06-06"
+    menciones: 5
+    terminos:
+      "Chipre": 5
+  - docid: "pub-jwb_202005_10_VIDEO"
+    titulo: "Informe sobre la dedicación de la sucursal de Grecia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202005_10_VIDEO&appLanguage=S"
+    publicado: "2020-05-18"
+    menciones: 2
+    terminos:
+      "Chipre": 2

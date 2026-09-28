@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: buenas-noticias-en-antioquia
+titulo: Las buenas noticias llegan a los griegos de Antioquía
+fecha:
+  desde: 36
+  hasta: 44
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 36 y 44 e.c. (tiempo narrativo: después de Cornelio y antes de la profecía de Ágabo)'
+orden_relato:
+  serie: hechos
+  orden: 1119
+lugares:
+- antioquia-de-siria
+personas:
+- bernabe
+pasajes:
+- Hch 11:19-24
+resumen: Los dispersados llegan hasta Fenicia, Chipre y Antioquía. Algunos de Chipre y Cirene predican también a
+  los de habla griega, y muchos creen. Jerusalén envía a Bernabé.
+razon: Capítulo 9 de «Testimonio completo» (párr. 19 y 20) y la nota de estudio de Hch 11:20.
+fuentes:
+- bt-9
+- hechos-11
+nota: Sin año en las fuentes; el tramo sale del orden del relato entre dos sucesos fechados.
+buscar: Antioquía Bernabé
+consultado: '2026-09-28'
+estado: verificado

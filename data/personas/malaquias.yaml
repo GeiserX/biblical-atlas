@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malaquias
+nombre: Malaquías
+nombres:
+- nombre: Malaquías
+fecha:
+  desde: -442
+  hasta: -442
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: después de 443 a.e.c.
+resumen: Profeta y escritor del último libro de las Escrituras Hebreas. No se sabe nada de su vida; su libro encaja con
+  los abusos que Nehemías encontró al volver después de 443 a.e.c.
+razon: Perspicacia «Malaquías» y «Malaquías, Libro de», apartado «Cuándo se escribió»; la Tabla de los libros da Jerusalén
+  y «d. 443».
+fuentes:
+- it-malaquias
+- it-malaquias-libro
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Malaquías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002860
+  tipo: perspicacia
+- titulo: Malaquías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/1
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: -442
+    hasta: -442
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: después de 443 a.e.c.
+  deducido: true
+  fuentes:
+  - tnm-tabla
+  razon: La Tabla de los libros sitúa en Jerusalén la escritura del libro; que viviera allí es deducción nuestra.
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

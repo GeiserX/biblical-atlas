@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ultimo-discurso-y-oracion
+titulo: Promete un ayudante; la vid verdadera; última oración con los apóstoles
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- jerusalen
+personas:
+- jesus
+- tomas
+- felipe-apostol
+pasajes:
+- Jn 14:1-17:26
+resumen: Jesús promete el ayudante, el espíritu santo, habla de la vid verdadera, manda a sus discípulos que se
+  amen como él los amó y ora con ellos.
+razon: La tabla A7-G da el día y el lugar. Jn 14:1-17:26.
+fuentes:
+- tnm-a7-h
+- juan-14
+- juan-15
+- juan-16
+- juan-17
+- jy-cap-119
+- jy-cap-120
+- jy-cap-121
+- jy-cap-122
+orden_relato:
+  serie: a7
+  orden: 115
+buscar: Promete un ayudante
+consultado: '2026-09-28'
+estado: verificado

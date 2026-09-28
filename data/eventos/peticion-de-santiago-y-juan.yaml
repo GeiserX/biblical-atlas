@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: peticion-de-santiago-y-juan
+titulo: Santiago y Juan piden los primeros puestos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- perea
+personas:
+- jesus
+- santiago-hijo-de-zebedeo
+- juan-apostol
+pasajes:
+- Mt 20:20-28
+- Mr 10:35-45
+resumen: Santiago y Juan, con su madre, piden sentarse a los lados de Jesús en el Reino. Él enseña que el mayor
+  debe servir, como él, que vino a dar su vida.
+razon: La tabla A7-F da cuándo y dónde. La tabla dice «probablemente Perea»; jy cap. 98.
+fuentes:
+- tnm-a7-f
+- mateo-20
+- marcos-10
+- jy-cap-98
+orden_relato:
+  serie: a7
+  orden: 90
+buscar: Santiago y Juan piden los primeros puestos
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mizpa-de-benjamin
+nombre: Mizpá
+nombres:
+- nombre: Mizpá
+- nombre: Mizpé
+tipo: ciudad
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Tell en-Nasbeh
+  geometria:
+    tipo: punto
+    lat: 31.885136
+    lon: 35.216417
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-mizpa
+  - openbible-geo
+  razon: Perspicacia (núm. 3, párr. 3) dice que por lo general se prefiere, unos 12 km al N de Jerusalén. Punto de OpenBible.
+  coord_fuente: openbible:a736f6c
+  coord_url: https://www.openbible.info/geo/ancient/a736f6c/mizpah-3
+- nombre: Nebi Samwil
+  geometria:
+    tipo: punto
+    lat: 31.832733
+    lon: 35.18015
+  estado: alternativa
+  fuentes:
+  - it-mizpa
+  - openbible-geo
+  razon: Perspicacia la menciona como posible, unos 8 km al NO de Jerusalén. Punto de OpenBible.
+  coord_fuente: openbible:a736f6c
+  coord_url: https://www.openbible.info/geo/ancient/a736f6c/mizpah-3
+resumen: Ciudad de Benjamín. Samuel reunió allí a Israel, Asá la fortificó y, tras 607 a.e.c., Guedalías gobernó desde ella
+  hasta que lo asesinaron.
+razon: Perspicacia «Mizpá, Mizpé», núm. 3, párr. 3-6; 1Sa 7:5-6, 1Re 15:22 y Jer 40:6. Dos candidatos, sin identificación
+  segura.
+fuentes:
+- it-mizpa
+- openbible-geo
+- jeremias-40
+enlaces:
+- titulo: 'Perspicacia: «Mizpá, Mizpé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093
+  tipo: perspicacia
+- titulo: Jeremías 40 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/40
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

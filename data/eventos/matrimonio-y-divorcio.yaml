@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: matrimonio-y-divorcio
+titulo: Enseña sobre el matrimonio y el divorcio
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- perea
+personas:
+- jesus
+pasajes:
+- Mt 19:1-12
+- Mr 10:1-12
+resumen: Jesús deja Galilea y pasa al otro lado del Jordán. Unos fariseos le preguntan por el divorcio y él recuerda
+  que Dios unió al hombre y a la mujer.
+razon: 'A7-F da el orden; la nota de Mt 19:1 sitúa la región en Perea (jy cap. 95). Año: Perspicacia «Lázaro» (párr. 7) fecha
+  la resurrección a principios de 33, y A7-G pone el 8 de nisán del 33 en Betania.'
+fuentes:
+- tnm-a7-f
+- mateo-19
+- marcos-10
+- jy-cap-95
+- it-lazaro
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 86
+buscar: Enseña sobre el matrimonio y el divorcio
+consultado: '2026-09-28'
+estado: verificado

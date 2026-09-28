@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tercera-gira-y-envio-de-los-doce
+titulo: Tercera gira por Galilea; envía a los doce
+fecha:
+  desde: 31
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 o 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 48
+lugares:
+- galilea
+personas:
+- jesus
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- natanael
+- mateo
+- santiago-hijo-de-alfeo
+- tomas
+- tadeo
+- simon-el-cananita
+- judas-iscariote
+pasajes:
+- Mt 9:35-11:1
+- Mr 6:6-13
+- Lu 9:1-6
+resumen: Jesús recorre de nuevo las ciudades de Galilea y envía a los doce de dos en dos a predicar, con instrucciones y advertencias
+  de que los perseguirían.
+razon: 'A7-D, fila 7: Galilea. Perspicacia «Judas» (núm. 4) dice que este envío fue cuando se acercaba la Pascua de 32.'
+fuentes:
+- tnm-a7-d
+- mateo-9
+- mateo-10
+- marcos-6
+- lucas-9
+- it-judas
+- jy-cap-49
+- jy-cap-50
+consultado: '2026-09-28'
+estado: verificado

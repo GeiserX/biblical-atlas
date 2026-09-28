@@ -4,27 +4,45 @@ nombre: Jerusalén
 nombres:
 - nombre: Jerusalén
 - nombre: Salem
-  nota: Nombre más antiguo que se conoce de la ciudad (Gé 14:18).
+  nota: Nombre más antiguo que se conoce de la ciudad, en tiempos de Abrahán (Gé 14:18).
+- nombre: Jebús
+  hasta: -1069
+  nota: Nombre que a veces recibió mientras la ocupaban los jebuseos, hasta que David la tomó en 1070 a.e.c. (Jue 19:10).
+- nombre: Ciudad de David
+  desde: -1069
+  nota: Nombre de la fortaleza de Sión que David tomó y habitó (2Sa 5:7).
+- nombre: Sión
+  nota: Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20).
 tipo: ciudad
-lat: 31.77667
-lon: 35.23417
+lat: 31.776667
+lon: 35.234167
 precision: punto
 coord_fuente: openbible:a15257a
 coord_url: https://www.openbible.info/geo/ancient/a15257a/jerusalem
-resumen: Capital de Israel desde 1070 a.e.c.; Pablo subió allí en 49 por la cuestión de la circuncisión y lo arrestaron
-  en 56.
-razon: 'Perspicacia («Jerusalén») describe el lugar; aparece en Hch 15:4-29. La coordenada es de OpenBible: solo
-  tomamos el punto.'
+resumen: Capital de Israel desde 1070 a.e.c. y de Judá tras la división. Babilonia la destruyó en 607 a.e.c. Siglos después,
+  Pablo subió allí en 49 por la circuncisión y lo arrestaron en 56.
+razon: 'Perspicacia «Jerusalén», párr. 1-3, 21 y 35; «Jebús», párr. 1-3; «Salem», párr. 2. Pablo: Hch 15:4-29. OpenBible:
+  solo el punto.'
 fuentes:
 - it-jerusalen
+- it-jebus
+- it-salem
+- si-3
 - hch-15
 - openbible-geo
+- 2-samuel-5
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
   tipo: perspicacia
-- titulo: Hechos 15 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+- titulo: 'Perspicacia: «Jebús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002352
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Salem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003800
+  tipo: perspicacia
+- titulo: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

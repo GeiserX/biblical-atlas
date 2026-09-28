@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: socorro-a-jerusalen
+titulo: Pablo y Bernabé llevan socorro a Jerusalén
+fecha:
+  desde: 46
+  hasta: 46
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 46 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1129
+lugares:
+- antioquia-de-siria
+- jerusalen
+personas:
+- pablo
+- bernabe
+- juan-marcos
+pasajes:
+- Hch 11:29, 30
+- Hch 12:25
+resumen: Ágabo predice una gran hambre y la congregación de Antioquía envía ayuda a Judea con Bernabé y Saulo. Al
+  volver se llevan a Juan Marcos.
+razon: El estudio 3 (párr. 21) fecha el hambre y la ayuda hacia 46; Perspicacia «Pablo» (párr. 10) y «Siria» también.
+fuentes:
+- si-3
+- it-pablo
+- it-siria
+- hechos-11
+- hechos-12
+buscar: ministración de socorro Jerusalén
+consultado: '2026-09-28'
+estado: verificado

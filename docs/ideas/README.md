@@ -1,6 +1,6 @@
 # Ideas de biblical-earth
 
-Aquí están las ideas de producto, las maquetas y el modelo de datos de biblical-earth. Es un borrador de diseño y todavía no hay código: describe qué queremos construir y por qué.
+Aquí están las ideas de producto, las maquetas y el modelo de datos de biblical-earth. Describen qué queremos construir y por qué. Lo construido está en [`site/`](../../site/) y en la [hoja de ruta](../hoja-de-ruta.md).
 
 ## Qué queremos
 
@@ -111,18 +111,15 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 
 ## Preguntas abiertas
 
-Las respuestas a las preguntas de la primera ronda (permiso, licencia, coordenadas, nombres, límites, fechas, contribuciones) están en [decisiones](../decisiones.md). Estas son las que quedan, y pesan más:
+Las respuestas a las preguntas de la primera ronda (permiso, licencia, coordenadas, nombres, límites, fechas, contribuciones) están en [decisiones](../decisiones.md). La construcción de v1 y v2 respondió tres más: los partos entran solo con lo que dice Perspicacia, el tope de 40 palabras por texto se queda y el orden es por rebanadas de relato. Estas son las que quedan:
 
-- **¿Cómo sabremos dentro de un año qué ha cambiado en jw.org?** Cada hecho guarda la fecha de consulta y una búsqueda en WOL preparada, y [`scripts/revisar.py`](../../scripts/revisar.py) lista lo que lleva más de un año sin releer. Falta decidir si ese repaso lo hace una persona, o si un aviso automático abre un issue por cada hecho vencido. Y cuando una publicación nueva cambia un dato, ¿dejamos ver en la ficha «hasta 2026 decíamos X»? Proponemos que sí, con el `historial` plegado en la ficha.
+- **¿Cómo sabremos dentro de un año qué ha cambiado en jw.org?** Cada hecho guarda la fecha de consulta y una búsqueda en WOL preparada, y [`scripts/revisar.py`](../../scripts/revisar.py) lista lo que lleva más de un año sin releer. Falta decidir si ese repaso lo hace una persona, o si un aviso automático abre un issue por cada hecho vencido. Cuando una publicación nueva cambia un dato, la ficha ya enseña el `historial` plegado.
 - **¿Dónde está Pablo el 15 de marzo del 48?** La Biblia da el orden de las paradas, no el día. Hoy el marcador se interpola entre paradas y se dibuja con halo discontinuo, «posición estimada». ¿Es honesto mostrar una posición que nadie afirma, o el marcador debe saltar de parada en parada y quedarse quieto entre fechas ancladas? Es la decisión que más condiciona la animación.
 - **No podemos mostrar el texto bíblico.** La TNM no se puede copiar, así que cada versículo abre en wol.jw.org en otra pestaña, y la lectura «versículo a versículo» se hace con el pasaje en una ventana y el mapa en otra. ¿Pedimos permiso a la organización para incrustar el texto, o diseñamos la lectura a dos ventanas desde el principio, con el mapa siguiendo al capítulo que se lee?
-- **¿Qué hacemos con lo que jw.org no menciona nunca?** Los reyes partos de Babilonia en tiempos de Jesús no aparecen en ninguna publicación. Con la regla «nivel 2 solo si jw.org lo ha usado», esa pantalla se queda sin la mitad de su contenido. ¿Se muestra como «contexto secular», separado y plegado, o no se muestra?
 - **¿Dibujamos fronteras de imperios?** Un polígono por año es caro, discutible y casi nunca lo da jw.org. La alternativa es una «esfera» difuminada con la lista de provincias que jw.org sí nombra, y fronteras solo en los años en que una publicación las describe. ¿Basta con eso para «quién mandaba aquí en tal año»?
-- **¿En qué orden construimos las 3.000 personas de Perspicacia?** Por rebanadas de relato (Pablo, Pedro, Jesús, reyes) o siguiendo la lectura semanal de la congregación, para que cada semana el mapa sirva en la reunión. Lo segundo hace útil la aplicación desde el primer mes, pero deja rebanadas a medias.
-- **¿Cuánto texto propio permitimos en una ficha?** El riesgo es que el estudiante lea nuestro resumen en vez del pasaje. Proponemos un tope de 40 palabras por hecho y siempre con el versículo enlazado; la validación lo comprueba. ¿Es demasiado poco para un contexto como «qué pasaba en Corinto en el 50»?
 - **¿Para qué dispositivo diseñamos el estudio en familia?** Un portátil en la mesa, una tablet que pasa de mano en mano o el televisor con mando. Cada uno pide tamaños, gestos y navegación distintos, y el modo presentación solo tiene sentido en el tercero.
 - **¿Nombre del proyecto?** El repo es `biblical-earth`. Para el sitio, en español, proponemos «Tierra Bíblica» o «Cada relato en su lugar». Queda por elegir.
 
 ## Siguiente paso
 
-El primer corte está en marcha: ver la [hoja de ruta](../hoja-de-ruta.md) y el sitio en `site/`. Lo que sigue es el prototipo navegable: los viajes de Pablo y sus cartas en un sitio estático con MapLibre GL. Debe tener el cursor único, la línea de tiempo con zoom, el mapa antiguo y el actual, la ficha de carta con sus dos extremos y la búsqueda por capítulo. Los datos saldrán de los YAML del [modelo de datos](modelo-de-datos.md), empezando por los JSON ya comprobados en [`mockups/data/`](mockups/data/README.md).
+v0, v1 y v2 están hechas, con los reyes, los recorridos guiados y el modo presentación. Lo que falta, las 50 ideas que quedaron fuera y las preguntas que decide el dueño están en la [hoja de ruta](../hoja-de-ruta.md#qué-queda). La siguiente rebanada sale de esa lista.

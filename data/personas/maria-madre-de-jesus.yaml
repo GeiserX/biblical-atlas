@@ -1,16 +1,64 @@
 # biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: maria-madre-de-jesus
-nombre: María, la madre de Jesús
+nombre: María
 nombres:
+- nombre: María
 - nombre: María, la madre de Jesús
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «María» (apartado 1), confirmado
-  por su título.'
+  nota: Así se la distingue de las otras cinco Marías de la Biblia (Perspicacia).
+desambiguacion: La madre de Jesús, esposa de José, de Nazaret.
+no_confundir_con:
+- maria-magdalena
+- maria-de-betania
+- maria-esposa-de-clopas
+- maria-madre-de-juan-marcos
+resumen: Madre de Jesús, descendiente de David, de la tribu de Judá. Vivía en Nazaret, comprometida con José, cuando Gabriel
+  le anunció el nacimiento. Pariente de Elisabet, siguió siendo discípula fiel tras la ascensión de Jesús.
+razon: 'Perspicacia «María» (núm. 1: párr. 4, 6, 7 y 18) da su linaje, el anuncio, el parentesco con Elisabet y su última
+  mención en Hch 1:14.'
 fuentes:
 - it-maria
+- lucas-1
+relaciones:
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-maria
+  razon: 'Mt 1:18-24: estaba comprometida con José y él la llevó a su casa como esposa.'
+  estado: verificado
+- tipo: pariente
+  persona: jesus
+  relacion: hijo
+  deducido: false
+  fuentes:
+  - lucas-2
+  razon: Lu 2:7.
+  estado: verificado
+- tipo: pariente
+  persona: elisabet
+  relacion: pariente
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-maria
+  razon: 'Lu 1:36: Gabriel llama a Elisabet pariente de María.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-nazaret
+  razon: Lu 1:26, 27; Perspicacia «Nazaret» (párr. 2).
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
   tipo: perspicacia
+- titulo: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

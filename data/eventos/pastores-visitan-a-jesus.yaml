@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pastores-visitan-a-jesus
+titulo: Unos pastores visitan al recién nacido
+fecha:
+  desde: -1
+  hasta: -1
+  precision: día
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1 de octubre de 2 a.e.c.
+  detalle:
+    mes: tisri
+orden_relato:
+  serie: a7
+  orden: 5
+lugares:
+- belen
+personas:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+pasajes:
+- Lu 2:8-20
+resumen: Un ángel anuncia el nacimiento a unos pastores que pasan la noche en el campo cerca de Belén. Van deprisa, encuentran
+  al niño en el pesebre y cuentan lo que han oído.
+razon: A7-A, fila 5. La nota de Lu 2:8 y Perspicacia «Belén» (párr. 10) explican que pastores al raso de noche apuntan a antes
+  de las lluvias de mediados de octubre.
+fuentes:
+- tnm-a7-a
+- lucas-2
+- it-belen
+- jy-cap-5
+consultado: '2026-09-28'
+estado: verificado

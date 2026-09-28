@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: getsemani
+nombre: Getsemaní
+nombres:
+- nombre: Getsemaní
+  nota: Significa «prensa de aceite»; probablemente un olivar con prensa.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Ladera occidental del monte de los Olivos, al este del Cedrón
+  geometria:
+    tipo: zona
+    lat: 31.779419
+    lon: 35.239425
+    radio_km: 1
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-getsemani
+  - mateo-26
+  - juan-18
+  - openbible-geo
+  razon: 'Así lo describen Perspicacia y la nota de Mt 26:36. Centro calculado: el punto tradicional de OpenBible,
+    con 1 km de margen.'
+  coord_fuente: openbible:a42418f
+  coord_url: https://www.openbible.info/geo/ancient/a42418f/gethsemane
+- nombre: Huerto cercado en 1848 al pie del monte de los Olivos
+  geometria:
+    tipo: punto
+    lat: 31.779419
+    lon: 35.239425
+  estado: tradicion
+  fuentes:
+  - it-getsemani
+  - openbible-geo
+  razon: Perspicacia (párr. 4) dice que la tradición lo pone aquí. Punto de OpenBible.
+  coord_fuente: openbible:a42418f
+  coord_url: https://www.openbible.info/geo/ancient/a42418f/gethsemane
+resumen: Jardín al este de Jerusalén, cruzando el Cedrón, donde Jesús solía reunirse con sus discípulos. Allí oró
+  y allí lo arrestaron, al empezar el 14 de nisán de 33.
+razon: 'Perspicacia «Getsemaní» (párr. 2 y 4) y la nota de Mt 26:36: la ubicación exacta no se puede determinar.'
+fuentes:
+- it-getsemani
+- mateo-26
+- juan-18
+enlaces:
+- titulo: 'Perspicacia: «Getsemaní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001671
+  tipo: perspicacia
+- titulo: Mateo 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
+  tipo: biblia
+buscar: Getsemaní
+consultado: '2026-09-28'
+estado: verificado

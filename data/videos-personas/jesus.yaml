@@ -1,0 +1,100 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: jesus
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-134_9_VIDEO"
+    titulo: "JW Broadcasting: Febrero de 2026 (reunión anual del 2025, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-134_9_VIDEO&appLanguage=S"
+    publicado: "2026-02-02"
+    menciones: 84
+    terminos:
+      "Jesucristo": 3
+      "Jesús": 81
+  - docid: "pub-co-r22_4_VIDEO"
+    titulo: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_4_VIDEO&appLanguage=S"
+    publicado: "2022-07-04"
+    menciones: 64
+    terminos:
+      "Jesucristo": 3
+      "Jesús": 61
+  - docid: "pub-jwb-086_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-086_1_VIDEO&appLanguage=S"
+    publicado: "2022-01-03"
+    menciones: 57
+    terminos:
+      "Jesucristo": 3
+      "Jesús": 54
+  - docid: "pub-jwb-100_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 57
+    terminos:
+      "Jesucristo": 2
+      "Jesús": 55
+  - docid: "pub-jwb-108_8_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_8_VIDEO&appLanguage=S"
+    publicado: "2024-01-01"
+    menciones: 56
+    terminos:
+      "Jesucristo": 5
+      "Jesús": 51
+  - docid: "pub-co-r21_5_VIDEO"
+    titulo: "Sábado mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_5_VIDEO&appLanguage=S"
+    publicado: "2021-07-19"
+    menciones: 54
+    terminos:
+      "Jesucristo": 2
+      "Jesús": 52
+  - docid: "pub-jwb-098_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_1_VIDEO&appLanguage=S"
+    publicado: "2022-12-05"
+    menciones: 52
+    terminos:
+      "Jesucristo": 3
+      "Jesús": 49
+  - docid: "pub-jwb-100_9_VIDEO"
+    titulo: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_9_VIDEO&appLanguage=S"
+    publicado: "2023-02-06"
+    menciones: 49
+    terminos:
+      "Jesús": 49
+  - docid: "pub-jwbvod24_1_VIDEO"
+    titulo: "Adoración matutina para el día de la Conmemoración del 2024. Kenneth Cook: Lo que debemos recordar de Jesús (Luc. 22:19)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_1_VIDEO&appLanguage=S"
+    publicado: "2024-03-18"
+    menciones: 49
+    terminos:
+      "Jesucristo": 9
+      "Jesús": 40
+  - docid: "pub-co-r21_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_9_VIDEO&appLanguage=S"
+    publicado: "2021-08-09"
+    menciones: 48
+    terminos:
+      "Jesucristo": 4
+      "Jesús": 44
+  - docid: "pub-co-r22_12_VIDEO"
+    titulo: "Domingo tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_12_VIDEO&appLanguage=S"
+    publicado: "2022-08-15"
+    menciones: 48
+    terminos:
+      "Jesucristo": 9
+      "Jesús": 39
+  - docid: "pub-jwb_202004_9_VIDEO"
+    titulo: "Geoffrey Jackson: “Cristo murió por nosotros” (Rom. 5:8)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202004_9_VIDEO&appLanguage=S"
+    publicado: "2020-04-02"
+    menciones: 48
+    terminos:
+      "Jesucristo": 4
+      "Jesús": 44

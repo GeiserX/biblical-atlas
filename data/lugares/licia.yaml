@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: licia
+nombre: Licia
+nombres:
+- nombre: Licia
+tipo: region
+lat: 36.733333
+lon: 29.9
+precision: zona
+coord_fuente: openbible:a19fd03
+coord_url: https://www.openbible.info/geo/ancient/a19fd03/lycia
+coord_nota: Punto representativo de la región, según OpenBible; no es una ciudad.
+resumen: Región montañosa de la costa suroeste de Asia Menor. Sus ciudades Pátara y Mira salen en los viajes de
+  Pablo, aunque no consta que predicara allí.
+razon: 'Perspicacia «Licia»; Hch 21:1; 27:5. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-licia
+- hch-27
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Licia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002796
+  tipo: perspicacia
+- titulo: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

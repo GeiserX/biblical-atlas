@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-esposo-de-maria
+nombre: José
+nombres:
+- nombre: José
+desambiguacion: Esposo de María y padre adoptivo de Jesús; no es José de Arimatea ni José, el medio hermano de Jesús.
+no_confundir_con:
+- jose-de-arimatea
+resumen: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
+  en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
+razon: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
+fuentes:
+- it-jose
+- mateo-1
+- mateo-2
+relaciones:
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:24.
+  estado: verificado
+- tipo: pariente
+  persona: jesus
+  relacion: hijo adoptivo
+  deducido: false
+  fuentes:
+  - it-jose
+  razon: Perspicacia «José» (núm. 8) lo llama padre adoptivo de Jesús.
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: false
+  fuentes:
+  - lucas-2
+  - mateo-2
+  razon: Lu 2:4, 39; Mt 2:23.
+  estado: verificado
+- tipo: vivio_en
+  lugar: belen
+  deducido: true
+  fuentes:
+  - mateo-2
+  - it-jose
+  razon: Mt 2:11 habla de una casa; Perspicacia «José» (núm. 8) dice que residían en Belén cuando llegaron los astrólogos.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  tipo: perspicacia
+- titulo: Mateo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

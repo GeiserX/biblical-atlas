@@ -10,7 +10,13 @@ a { color: var(--link); }
 
 /* ---------- Barra superior ---------- */
 .be-logo { text-decoration: none; }
-.fecha { min-width: 0; }
+/* Con la búsqueda o el menú Estudio abiertos, la barra pasa por encima de la ficha y de las vistas: sus desplegables no
+   quedan debajo. Cerrados, las vistas (grafo, lectura) tapan los botones del mapa que en el móvil cuelgan de la barra. */
+.be-topbar:has(.resultados:not([hidden]), .estudio-menu:not([hidden])) { z-index: 7; }
+.buscador { min-width: 0; }
+.buscador .be-search { min-width: 0; }
+.buscador input { min-width: 0; width: 100%; }
+.fecha { min-width: 0; flex-shrink: 0; }   /* la fecha no se encoge: cede la búsqueda */
 .modos .be-seg__opt { border: 0; background: transparent; cursor: pointer; }
 .modos .be-seg__opt--on { background: var(--surface); }
 #compartir { cursor: pointer; }
@@ -29,9 +35,9 @@ a { color: var(--link); }
 /* ---------- Pantallas estrechas: hoja inferior ---------- */
 @media (max-width: 760px) {
   :root { --topbar-h: 56px; --timeline-h: 250px; }
-  .be-app { grid-template-columns: 1fr; grid-template-areas: "top" "map" "time"; }
+  .be-app { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "map" "time"; }   /* una ficha ancha no ensancha la página */
   .be-topbar { gap: 8px; padding: 0 10px; }
-  .logo-text, .be-date__hint, #compartir, .modos [data-mapa="cortina"] { display: none !important; }
+  .logo-text, .be-date__hint, #compartir { display: none !important; }
   .be-topbar > .be-spacer { display: none; }
   .be-date { padding: 4px 10px; }
   .be-date__value { font-size: 17px; }

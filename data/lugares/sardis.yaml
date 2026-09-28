@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sardis
+nombre: Sardis
+nombres:
+- nombre: Sardis
+- nombre: Sardes
+  nota: Forma que usa Josefo, citado por Perspicacia.
+tipo: ciudad
+lat: 38.488333
+lon: 28.040278
+precision: punto
+coord_fuente: openbible:aab4a5f
+coord_url: https://www.openbible.info/geo/ancient/aab4a5f/sardis
+resumen: Antigua capital de Lidia, a unos 50 km al sur de Tiatira. Un terremoto la arrasó en 17 y Roma ayudó a reconstruirla.
+  Su congregación necesitaba despertar en sentido espiritual.
+razon: 'Perspicacia «Sardis» (párr. 2 a 4); Ap 3:1-6. La coordenada es de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-sardis
+- apocalipsis-3
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Sardis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003839
+  tipo: perspicacia
+- titulo: Apocalipsis 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

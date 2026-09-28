@@ -23,6 +23,12 @@ destinatarios:
   - listra
   - derbe
   - antioquia-de-pisidia
+personas:
+- bernabe
+- tito
+- pedro
+- santiago-hermano-de-jesus
+- juan-apostol
 contexto_origen:
   resumen: La Tabla de los libros da «Corinto o Antioquía de Siria». Perspicacia ve más probable Corinto, durante
     el año y medio de 50-52.
@@ -41,6 +47,7 @@ fuentes:
 - si-3
 - it-galatas
 - galatas-1
+- it-tito-persona
 enlaces:
 - titulo: 'Perspicacia: «Gálatas, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001595
@@ -48,6 +55,6 @@ enlaces:
 - titulo: Gálatas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado
 nota: 'Dos lugares de escritura posibles: el primero es el preferido; el segundo, la alternativa.'

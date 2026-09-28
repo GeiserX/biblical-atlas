@@ -1,0 +1,40 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: gomorra
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-108_8_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_8_VIDEO&appLanguage=S"
+    publicado: "2024-01-01"
+    menciones: 9
+    terminos:
+      "Gomorra": 9
+  - docid: "pub-jwb-108_13_VIDEO"
+    titulo: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_13_VIDEO&appLanguage=S"
+    publicado: "2024-01-02"
+    menciones: 8
+    terminos:
+      "Gomorra": 8
+  - docid: "pub-jwb-102_1_VIDEO"
+    titulo: "JW Broadcasting: Septiembre de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-102_1_VIDEO&appLanguage=S"
+    publicado: "2023-09-04"
+    menciones: 2
+    terminos:
+      "Gomorra": 2
+  - docid: "pub-jwb-102_7_VIDEO"
+    titulo: "Ejemplos de fe: Abrahán (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/Ejemplos-de-fe/abrahan-parte-1/"
+    publicado: "2023-09-18"
+    menciones: 2
+    terminos:
+      "Gomorra": 2
+  - docid: "pub-jwb-138_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2026 (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_1_VIDEO&appLanguage=S"
+    publicado: "2026-06-01"
+    menciones: 2
+    terminos:
+      "Gomorra": 2

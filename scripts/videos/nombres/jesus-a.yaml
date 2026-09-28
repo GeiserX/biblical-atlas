@@ -1,0 +1,70 @@
+# Nombres de lugares del carril jesus-a que busca scripts/videos/indexar.py. Formato en nombres/pablo.yaml.
+# Nombres según la Traducción del Nuevo Mundo en español (wol.jw.org), consultada el 28 de septiembre de 2026.
+# Todos los lugares del carril tienen entrada. Galilea, Tiberíades y Genesaret excluyen el nombre del lago, que va
+# en mar-de-galilea; Caná y Naín comparan con tildes para no contar «cana» ni «nain».
+
+belen:
+  nombres: [Belén]
+  acentos: estricto
+
+nazaret:
+  nombres: [Nazaret]
+
+capernaum:
+  nombres: [Capernaúm, Capernaum]
+
+galilea:
+  nombres: [Galilea]
+  excluir: [mar de Galilea, Mar de Galilea]
+
+mar-de-galilea:
+  nombres: [mar de Galilea, Mar de Galilea, lago de Genesaret, mar de Tiberíades]
+
+rio-jordan:
+  nombres: [río Jordán, Jordán]
+  excluir: [Betania al otro lado del Jordán, Betania del otro lado del Jordán]
+
+cana:
+  nombres: [Caná]
+  acentos: estricto
+
+nain:
+  nombres: [Naín]
+  acentos: estricto
+
+betsaida:
+  nombres: [Betsaida]
+
+corazin:
+  nombres: [Corazín]
+
+sicar:
+  nombres: [Sicar]
+
+enon:
+  nombres: [Enón]
+
+tiberiades:
+  nombres: [Tiberíades]
+  excluir: [mar de Tiberíades]
+
+gadara:
+  nombres: [Gadara]
+  gentilicios: [gadarenos, gerasenos]
+
+genesaret:
+  nombres: [Genesaret]
+  excluir: [lago de Genesaret]
+
+magadan:
+  nombres: [Magadán, Dalmanuta]
+
+fenicia:
+  nombres: [Fenicia]
+  gentilicios: [fenicios, sirofenicia]
+
+decapolis:
+  nombres: [Decápolis]
+
+cesarea-de-filipo:
+  nombres: [Cesarea de Filipo]

@@ -1,0 +1,454 @@
+# Generado por scripts/videos/pasajes.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+libro: daniel
+generado: "2026-09-28"
+serie:
+  - docid: "pub-nwtsv_270_VIDEO"
+    titulo: "Información sobre Daniel"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_270_VIDEO"
+    publicado: "2017-09-11"
+capitulos:
+  1:
+    - docid: "pub-jwbvod25_43_VIDEO"
+      titulo: "Betty Georges: La obediencia siempre lleva al éxito (1 Rey. 2:3)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_43_VIDEO"
+      publicado: "2025-11-21"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbvod25_28_VIDEO"
+      titulo: "David Schafer: La persona que tiene entendimiento busca orientación experta (Prov. 1:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_28_VIDEO"
+      publicado: "2025-07-18"
+      por: [subtitulos]
+      citas: 1
+  2:
+    - docid: "pub-jwbvod24_30_VIDEO"
+      titulo: "Baltasar Perla: Jehová nos dice lo que va a suceder en el futuro (Dan. 2:28)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_30_VIDEO"
+      publicado: "2024-07-19"
+      por: [titulo, subtitulos]
+      citas: 7
+    - docid: "pub-mwbv_201703_2_VIDEO"
+      titulo: "Ideas para presentar el tratado Reino (Da 2:44; Isa 9:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201703_2_VIDEO"
+      publicado: "2017-02-23"
+      por: [titulo]
+      citas: 0
+    - docid: "pub-mwbv_201801_3_VIDEO"
+      titulo: "2018-01 | Segunda revisita (Da 2:44)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201801_3_VIDEO"
+      publicado: "2018-02-22"
+      por: [titulo]
+      citas: 0
+    - docid: "702020465"
+      titulo: "2020 | Informe 8 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702020465"
+      publicado: "2020-11-20"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 3
+    - docid: "702022018"
+      titulo: "2022 | Informe 6 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702022018"
+      publicado: "2022-08-26"
+      por: [subtitulos]
+      citas: 2
+    - docid: "501000009"
+      titulo: "Encontraron “una perla muy valiosa”"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=501000009"
+      publicado: "2022-06-13"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-ivfa1_1_VIDEO"
+      titulo: "Los testigos de Jehová: una historia de fe viva. Parte 1: Salen de la oscuridad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-ivfa1_1_VIDEO"
+      publicado: "2025-01-10"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201803_11_VIDEO"
+      titulo: "Christopher Mavor: Hacer caso de las advertencias nos salvará la vida (Mar. 13:19)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201803_11_VIDEO"
+      publicado: "2018-03-26"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbgg_201609_2_VIDEO"
+      titulo: "Graduación de la clase 141 de la Escuela de Galaad: Parte 2. Experiencias y entrevistas"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_2_VIDEO"
+      publicado: "2017-03-30"
+      por: [subtitulos]
+      citas: 1
+  3:
+    - docid: "pub-jwb-096_1_VIDEO"
+      titulo: "JW Broadcasting: Mayo de 2023"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-096_1_VIDEO"
+      publicado: "2023-05-01"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-jwb-096_6_VIDEO"
+      titulo: "Stephen Lett: Nunca dejen que Satanás los intimide (Deut. 1:17)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-096_6_VIDEO"
+      publicado: "2023-05-15"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r20_107_VIDEO"
+      titulo: "Mark Sanderson: Los actos de salvación de Jehová nos llenan de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_107_VIDEO"
+      publicado: "2020-12-01"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r20_2_VIDEO"
+      titulo: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      publicado: "2020-07-06"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-110_1_VIDEO"
+      titulo: "JW Broadcasting: Marzo de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-110_1_VIDEO"
+      publicado: "2024-03-04"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-110_7_VIDEO"
+      titulo: "Mark Sanderson: La paz que ningún ser humano puede entender (Filip. 4:6, 7)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-110_7_VIDEO"
+      publicado: "2024-03-18"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-128_1_VIDEO"
+      titulo: "JW Broadcasting: Julio de 2025"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-128_1_VIDEO"
+      publicado: "2025-07-07"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-128_2_VIDEO"
+      titulo: "Leonard Myers: Seamos fieles en todo aspecto de nuestra vida"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-128_2_VIDEO"
+      publicado: "2025-07-22"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-134_1_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_1_VIDEO"
+      publicado: "2026-01-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-134_7_VIDEO"
+      titulo: "Stephen Lett: Nadie salva como Jehová (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_7_VIDEO"
+      publicado: "2026-01-06"
+      por: [subtitulos]
+      citas: 1
+  4:
+    - docid: "pub-ivfa1_1_VIDEO"
+      titulo: "Los testigos de Jehová: una historia de fe viva. Parte 1: Salen de la oscuridad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-ivfa1_1_VIDEO"
+      publicado: "2025-01-10"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_16_VIDEO"
+      titulo: "Kenneth Cook: La tierra que durará para siempre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_16_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_9_VIDEO"
+      titulo: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+  5:
+    - docid: "pub-jwbvod25_8_VIDEO"
+      titulo: "Robert Luccioni: Ser personas maduras nos da la capacidad de discernir (Heb. 5:14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_8_VIDEO"
+      publicado: "2025-02-21"
+      por: [subtitulos]
+      citas: 2
+  6:
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-100_10_VIDEO"
+      titulo: "Samuel Herd: ¿Es usted una persona alegre?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_10_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_9_VIDEO"
+      titulo: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-134_1_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_1_VIDEO"
+      publicado: "2026-01-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-134_7_VIDEO"
+      titulo: "Stephen Lett: Nadie salva como Jehová (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_7_VIDEO"
+      publicado: "2026-01-06"
+      por: [subtitulos]
+      citas: 1
+  7:
+    - docid: "pub-jwbvod24_30_VIDEO"
+      titulo: "Baltasar Perla: Jehová nos dice lo que va a suceder en el futuro (Dan. 2:28)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_30_VIDEO"
+      publicado: "2024-07-19"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 2
+  8:
+    - docid: "pub-jwban_201503_1_VIDEO"
+      titulo: "Gerrit Lösch: “La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201503_1_VIDEO"
+      publicado: "2016-11-02"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-lffv_33_VIDEO"
+      titulo: "“La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-lffv_33_VIDEO"
+      publicado: "2021-01-04"
+      por: [subtitulos]
+      citas: 2
+  9:
+    - docid: "pub-jwb-080_7_VIDEO"
+      titulo: "David Splane: Las profecías de nuestro Dios nunca fallan (Sal. 46:8)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_7_VIDEO"
+      publicado: "2021-05-17"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-115_1_VIDEO"
+      titulo: "JW Broadcasting: Agosto de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_1_VIDEO"
+      publicado: "2024-08-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-115_9_VIDEO"
+      titulo: "Sonia Colón: Las profecías nos acercan a Jehová"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_9_VIDEO"
+      publicado: "2024-08-19"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201709_2_VIDEO"
+      titulo: "Samuel F. Herd: A Jehová le gusta que se hagan las cosas a tiempo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201709_2_VIDEO"
+      publicado: "2017-09-18"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwban_201503_1_VIDEO"
+      titulo: "Gerrit Lösch: “La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201503_1_VIDEO"
+      publicado: "2016-11-02"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbcov24_6_VIDEO"
+      titulo: "La verdad sobre Jesús: Su nombre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov24_6_VIDEO"
+      publicado: "2025-01-20"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbcov25_4_VIDEO"
+      titulo: "¡Las profecías sobre el Mesías se cumplieron! Descendiente del rey David y ungido para ser “el Mesías, el Líder”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov25_4_VIDEO"
+      publicado: "2026-01-19"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbvod25_8_VIDEO"
+      titulo: "Robert Luccioni: Ser personas maduras nos da la capacidad de discernir (Heb. 5:14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_8_VIDEO"
+      publicado: "2025-02-21"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbvod26_35_VIDEO"
+      titulo: "Jody Jedele: La senda de los justos brilla cada vez más (Prov. 4:18)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_35_VIDEO"
+      publicado: "2026-09-25"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-lffv_151_VIDEO"
+      titulo: "Profecías cumplidas en Jesús"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-lffv_151_VIDEO"
+      publicado: "2021-01-13"
+      por: [subtitulos]
+      citas: 1
+  10:
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-080_2_VIDEO"
+      titulo: "Kenneth Cook: El rey del norte en el tiempo del fin"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_2_VIDEO"
+      publicado: "2021-05-17"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-097_1_VIDEO"
+      titulo: "JW Broadcasting: Febrero de 2022 (reunión anual del 2021, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_1_VIDEO"
+      publicado: "2022-02-07"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-097_6_VIDEO"
+      titulo: "Stephen Lett: En la lucha contra Satanás, la victoria es nuestra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_6_VIDEO"
+      publicado: "2022-02-08"
+      por: [subtitulos]
+      citas: 1
+  11:
+    - docid: "pub-jwbvod24_53_VIDEO"
+      titulo: "Nicholas Ahladis: ¿Quién es “el rey del norte” hoy en día? (Dan. 11:40)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_53_VIDEO"
+      publicado: "2024-12-27"
+      por: [titulo, subtitulos]
+      citas: 2
+    - docid: "pub-jwbvod24_19_VIDEO"
+      titulo: "Gary Breaux: Cómo protegernos de la información falsa (Dan. 11:27)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_19_VIDEO"
+      publicado: "2024-04-19"
+      por: [titulo, subtitulos]
+      citas: 1
+    - docid: "pub-jwb-080_10_VIDEO"
+      titulo: "El cumplimiento de la profecía de Daniel 11"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_10_VIDEO"
+      publicado: "2021-09-13"
+      por: [titulo]
+      citas: 0
+    - docid: "pub-jwb-080_2_VIDEO"
+      titulo: "Kenneth Cook: El rey del norte en el tiempo del fin"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_2_VIDEO"
+      publicado: "2021-05-17"
+      por: [subtitulos]
+      citas: 8
+    - docid: "pub-jwb_201901_4_VIDEO"
+      titulo: "Reunión anual del 2018: Discursos y texto del año 2019"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201901_4_VIDEO"
+      publicado: "2019-01-28"
+      por: [subtitulos]
+      citas: 6
+    - docid: "pub-jwbvod24_45_VIDEO"
+      titulo: "David Schafer: Alimento espiritual que nos ayuda a permanecer vigilantes (Mat. 24:42-45)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_45_VIDEO"
+      publicado: "2024-11-22"
+      por: [subtitulos]
+      citas: 4
+    - docid: "702022006"
+      titulo: "2022 | Informe 2 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702022006"
+      publicado: "2022-03-04"
+      por: [subtitulos]
+      citas: 2
+    - docid: "702022015"
+      titulo: "2022 | Informe 5 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702022015"
+      publicado: "2022-07-15"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201901_3_VIDEO"
+      titulo: "Reunión anual del 2018: Discursos y anuncios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201901_3_VIDEO"
+      publicado: "2019-01-21"
+      por: [subtitulos]
+      citas: 1
+  12:
+    - docid: "pub-co-r21_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      publicado: "2021-08-16"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_149_VIDEO"
+      titulo: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-086_1_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_1_VIDEO"
+      publicado: "2022-01-03"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-086_6_VIDEO"
+      titulo: "Geoffrey Jackson: ¿Está usted allí?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_6_VIDEO"
+      publicado: "2022-01-04"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwbvod25_19_VIDEO"
+      titulo: "John Ekrann: La resurrección de los injustos (Hech. 24:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_19_VIDEO"
+      publicado: "2025-05-23"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-080_2_VIDEO"
+      titulo: "Kenneth Cook: El rey del norte en el tiempo del fin"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_2_VIDEO"
+      publicado: "2021-05-17"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201712_1_VIDEO"
+      titulo: "JW Broadcasting: Diciembre de 2017 (graduación de la clase 143 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201712_1_VIDEO"
+      publicado: "2017-12-04"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbvod26_11_VIDEO"
+      titulo: "Robert Luccioni: Tengamos muy presentes las promesas de Jehová (Apoc. 7:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_11_VIDEO"
+      publicado: "2026-04-24"
+      por: [subtitulos]
+      citas: 1

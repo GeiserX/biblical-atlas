@@ -34,7 +34,9 @@ TIPOS_RELACION = {"pariente", "acompana", "vivio_en", "nacio_en", "murio_en", "s
 RELACION_CON_LUGAR = {"vivio_en", "nacio_en", "murio_en"}
 TIPOS_ENLACE = {"perspicacia", "biblia", "video", "externo"}
 TIPOS_PERIODO = {"emperador", "gobernador", "potencia", "rey", "era", "sumo-sacerdote"}
-CAMPOS_TEXTO = {"resumen", "razon", "nota", "cambio", "texto", "explicacion", "desambiguacion", "no_sabemos"}
+CAMPOS_TEXTO = {"resumen", "razon", "nota", "cambio", "texto", "explicacion", "desambiguacion", "no_sabemos",
+                "clima", "campo", "donde_hoy"}
+IDENTIFICACIONES = {"segura", "incierta"}
 # Un año con su era: «537 a.e.c.», «c. 49-52 e.c.», «33 E.C.».
 RE_ANIO = re.compile(r"(?<![\d-])(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?\s*(a\.\s*e\.\s*c\.|e\.\s*c\.)", re.I)
 
@@ -71,6 +73,17 @@ def _numero(v):
 
 def _astronomico(n, era):
     return 1 - n if era.lower().replace(" ", "").startswith("a.") else n
+
+
+RE_DIA = re.compile(r"\b\d{1,2}\s+de\s+(?!\d)[a-záéíóúñü]+", re.I)
+
+
+def _un_solo_anio(texto):
+    """True si el texto nombra un único año con era y ningún otro número salvo días («14 de nisán»)."""
+    ms = list(RE_ANIO.finditer(texto))
+    if len(ms) != 1 or ms[0].group(2):
+        return False
+    return len(re.findall(r"\d+", RE_DIA.sub("", texto))) == 1
 
 
 def validar_fecha(f, donde, err, meses=(), estado=None):
@@ -115,6 +128,10 @@ def validar_fecha(f, donde, err, meses=(), estado=None):
             if a not in (d, h):
                 err(f"{donde}: fecha.texto dice «{m.group(0)}», que en años astronómicos es {a}, "
                     f"pero desde/hasta son {d}/{h} (1 a.e.c. = 0, 537 a.e.c. = -536)")
+    # Un texto de un solo año («c. 56 e.c.», «14 de nisán de 33 e.c.») exige desde == hasta, o aprox: true.
+    if _entero(d) and _entero(h) and d != h and f.get("aprox") is not True and _un_solo_anio(texto):
+        err(f"{donde}: fecha.texto «{texto}» da un solo año, pero desde/hasta son {d}/{h}; "
+            f"pon desde == hasta, aprox: true o el tramo en el texto")
     det = f.get("detalle")
     if det is not None:
         if not isinstance(det, dict) or not det:
@@ -337,6 +354,15 @@ def validar_lugar(o, donde, err, fuentes):
                 err(f"{cd}: una zona necesita radio_km mayor que 0")
             if g["tipo"] == "franja" and g.get("hasta") is None:
                 err(f"{cd}: una franja necesita hasta: {{lat, lon}}")
+            cf = str(c.get("coord_fuente") or "")
+            if cf == "calculo":
+                if not str(c.get("nota") or "").strip():
+                    err(f"{cd}: coord_fuente calculo necesita nota con la cuenta del punto")
+            elif cf.startswith("openbible:") and cf[10:]:
+                if not str(c.get("coord_url") or "").startswith(f"https://www.openbible.info/geo/ancient/{cf[10:]}/"):
+                    err(f"{cd}: coord_url debe ser la ficha de OpenBible de {cf}")
+            else:
+                err(f"{cd}: coord_fuente debe ser openbible:<id> o calculo (de dónde sale el punto)")
     if not any(e.get("tipo") == "perspicacia" for e in o.get("enlaces") or []) and o.get("estado") != "pendiente":
         err(f"{donde}: sin enlace a Perspicacia debe llevar estado: pendiente")
 
@@ -444,6 +470,12 @@ def validar_recorrido(o, donde, err):
 def validar_hallazgo(o, donde, err, fuentes):
     if not isinstance(o.get("relaciona"), list):
         err(f"{donde}: relaciona debe ser una lista de selecciones tipo:id")
+    if "identificacion" in o and o["identificacion"] not in IDENTIFICACIONES:
+        err(f"{donde}: identificacion '{o['identificacion']}' no es una de {sorted(IDENTIFICACIONES)}")
+    if "donde_hoy" in o and (not isinstance(o["donde_hoy"], str) or not o["donde_hoy"].strip()):
+        err(f"{donde}: donde_hoy debe ser un texto")
+    if "no_afirmamos" in o and not isinstance(o["no_afirmamos"], list):
+        err(f"{donde}: no_afirmamos debe ser una lista de frases")
     niveles = {(fuentes.get(fid) or {}).get("nivel") for fid in o.get("fuentes") or []}
     if 2 in niveles and 1 not in niveles:
         err(f"{donde}: una fuente de nivel 2 solo vale junto a una de nivel 1 que la cite")

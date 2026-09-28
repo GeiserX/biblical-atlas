@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sedequias
+nombre: Reinado de Sedequías en Judá
+tipo: rey
+persona: sedequias
+fecha:
+  desde: -616
+  hasta: -606
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 617-607 a.e.c.
+lugares:
+- jerusalen
+resumen: Once años en Jerusalén, hasta su destrucción.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 24.
+fuentes:
+- tnm-a6-b
+- 2-reyes-24
+- it-sedequias
+buscar: Sedequías rey
+consultado: '2026-09-28'
+estado: verificado

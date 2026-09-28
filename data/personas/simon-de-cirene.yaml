@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-de-cirene
+nombre: Simón de Cirene
+nombres:
+- nombre: Simón
+- nombre: Simón de Cirene
+  nota: Cirene era una ciudad del norte de África.
+desambiguacion: El de Cirene; no es Simón Pedro ni Simón el leproso.
+resumen: Hombre de Cirene, padre de Alejandro y Rufo. Volvía del campo cuando los soldados lo obligaron a llevar
+  el madero de tormento de Jesús.
+razon: Perspicacia «Simón», apartado 7; Mr 15:21 y las notas de Mt 27:32 y Mr 15:21.
+fuentes:
+- it-simon
+- marcos-15
+- mateo-27
+enlaces:
+- titulo: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  tipo: perspicacia
+- titulo: Marcos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/15
+  tipo: biblia
+buscar: Simón de Cirene
+consultado: '2026-09-28'
+estado: verificado

@@ -3,14 +3,72 @@ id: andres
 nombre: Andrés
 nombres:
 - nombre: Andrés
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Andrés», confirmado por
-  su título.'
+resumen: Apóstol, hijo de Jonás (o Juan) y hermano de Simón Pedro. Natural de Betsaida, vivía con Pedro en Capernaúm y pescaba
+  en sociedad con Santiago y Juan. Antes fue discípulo de Juan el Bautista.
+razon: Perspicacia «Andrés» (párr. 2 y 3) da la familia, las ciudades, el negocio y cómo conoció a Jesús en el otoño de 29
+  (Jn 1:35-41).
 fuentes:
 - it-andres
+- juan-1
+- marcos-1
+relaciones:
+- tipo: pariente
+  persona: pedro
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - juan-1
+  - it-andres
+  razon: Jn 1:40 lo llama hermano de Simón Pedro.
+  estado: verificado
+- tipo: nacio_en
+  lugar: betsaida
+  deducido: false
+  fuentes:
+  - juan-1
+  - it-andres
+  razon: Jn 1:44 dice que era de Betsaida; Perspicacia la llama su ciudad natal.
+  estado: verificado
+- tipo: vivio_en
+  lugar: capernaum
+  deducido: false
+  fuentes:
+  - marcos-1
+  - it-andres
+  razon: Mr 1:29 habla de la casa de Simón y Andrés en Capernaúm.
+  estado: verificado
+- tipo: acompana
+  persona: juan-el-bautista
+  relacion: discípulo de
+  fecha:
+    desde: 29
+    hasta: 29
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 29 e.c.
+  deducido: false
+  fuentes:
+  - juan-1
+  - it-andres
+  razon: 'Jn 1:35, 40: era uno de los discípulos de Juan.'
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  - it-andres
+  razon: Mt 10:2 lo nombra entre los doce apóstoles.
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Andrés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000273
   tipo: perspicacia
+- titulo: Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

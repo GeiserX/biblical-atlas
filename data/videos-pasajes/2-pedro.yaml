@@ -1,0 +1,229 @@
+# Generado por scripts/videos/pasajes.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+libro: 2-pedro
+generado: "2026-09-28"
+serie:
+  - docid: "pub-nwtsv_610_VIDEO"
+    titulo: "Información sobre 2 Pedro"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_610_VIDEO"
+    publicado: "2019-10-01"
+capitulos:
+  1:
+    - docid: "pub-jwb-108_16_VIDEO"
+      titulo: "Leonard Myers: La transfiguración fortalece nuestra fe (2 Ped. 1:19)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_16_VIDEO"
+      publicado: "2023-11-24"
+      por: [titulo, subtitulos]
+      citas: 1
+    - docid: "pub-jwban_201503_1_VIDEO"
+      titulo: "Gerrit Lösch: “La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201503_1_VIDEO"
+      publicado: "2016-11-02"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwbvod26_9_VIDEO"
+      titulo: "Geoffrey Jackson: \"Yo y el Padre somos uno\" (Juan 10:30)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_9_VIDEO"
+      publicado: "2026-02-20"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-lffv_33_VIDEO"
+      titulo: "“La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-lffv_33_VIDEO"
+      publicado: "2021-01-04"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-086_1_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_1_VIDEO"
+      publicado: "2022-01-03"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-086_7_VIDEO"
+      titulo: "Kenneth Cook: Prestemos atención a las advertencias"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_7_VIDEO"
+      publicado: "2022-01-04"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-087_10_VIDEO"
+      titulo: "Harold Corkern: “Compra la verdad y nunca la vendas” (Prov. 23:23)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-087_10_VIDEO"
+      publicado: "2022-03-18"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201705_2_VIDEO"
+      titulo: "Geoffrey W. Jackson: Atesoremos los recordatorios de Jehová"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201705_2_VIDEO"
+      publicado: "2017-05-15"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201804_2_VIDEO"
+      titulo: "William Turner hijo: Envueltos y protegidos “en la bolsa de la vida”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201804_2_VIDEO"
+      publicado: "2018-04-16"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_202006_13_VIDEO"
+      titulo: "Anthony Morris: Un plan de acción para conseguir el éxito espiritual"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202006_13_VIDEO"
+      publicado: "2020-07-20"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_202006_6_VIDEO"
+      titulo: "Graduación de la clase 148 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202006_6_VIDEO"
+      publicado: "2020-06-29"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwbcov_201705_4_VIDEO"
+      titulo: "Cultivemos cualidades que nos ayuden a aguantar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov_201705_4_VIDEO"
+      publicado: "2018-01-22"
+      por: [subtitulos]
+      citas: 1
+  2:
+    - docid: "pub-jwb-097_10_VIDEO"
+      titulo: "James Mantz: Jehová nos da libertad verdadera (2 Cor. 3:17)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_10_VIDEO"
+      publicado: "2022-02-18"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-138_1_VIDEO"
+      titulo: "JW Broadcasting: Junio de 2026 (graduación de la clase 159 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-138_1_VIDEO"
+      publicado: "2026-06-01"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-138_8_VIDEO"
+      titulo: "David Splane: Denles el beneficio de la duda (graduación de la clase 159 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-138_8_VIDEO"
+      publicado: "2026-06-02"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb_201809_2_VIDEO"
+      titulo: "Kenneth Flodin: No permitamos que el mundo nos moldee"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201809_2_VIDEO"
+      publicado: "2018-09-17"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwbvod24_12_VIDEO"
+      titulo: "Robert Luccioni: “¿Crees tú esto?” (Juan 11:26)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_12_VIDEO"
+      publicado: "2024-03-15"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_111_VIDEO"
+      titulo: "Leonard Myers: Observar la creación fortalece la fe. El viento y el agua"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_111_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r21_2_VIDEO"
+      titulo: "Viernes mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_2_VIDEO"
+      publicado: "2021-06-28"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r21_3_VIDEO"
+      titulo: "Viernes tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_3_VIDEO"
+      publicado: "2021-07-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-090_1_VIDEO"
+      titulo: "JW Broadcasting: Septiembre de 2022"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-090_1_VIDEO"
+      publicado: "2022-09-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-090_2_VIDEO"
+      titulo: "Stephen Lett: Las ovejas de Jehová rechazan \"la voz de los extraños\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-090_2_VIDEO"
+      publicado: "2022-09-19"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_1_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_1_VIDEO"
+      publicado: "2023-01-02"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_4_VIDEO"
+      titulo: "Gerrit Lösch: La columna de la verdad nos sostiene"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_4_VIDEO"
+      publicado: "2023-01-02"
+      por: [subtitulos]
+      citas: 1
+  3:
+    - docid: "pub-jwbmw_201607_1_VIDEO"
+      titulo: "Mark Sanderson: ¿Podemos acelerar la llegada del día de Jehová? (2 Ped. 3:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201607_1_VIDEO"
+      publicado: "2016-07-18"
+      por: [titulo, subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201706_9_VIDEO"
+      titulo: "William Malenfant: La moralidad en estos últimos días (2 Tim. 3:13)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201706_9_VIDEO"
+      publicado: "2017-06-12"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb_201811_11_VIDEO"
+      titulo: "Joel Dellinger: Fortalezcamos nuestra esperanza (Rev. 21:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201811_11_VIDEO"
+      publicado: "2018-11-26"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwban_201612_1_VIDEO"
+      titulo: "Joel Dellinger: Jóvenes, sean un buen ejemplo para los fieles"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201612_1_VIDEO"
+      publicado: "2016-12-19"
+      por: [subtitulos]
+      citas: 2
+    - docid: "1112024005"
+      titulo: "2024 | Informe 2 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=1112024005"
+      publicado: "2024-03-15"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r22_116_VIDEO"
+      titulo: "Mark Noumair: Apoyemos con lealtad al “Príncipe de Paz”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_116_VIDEO"
+      publicado: "2022-07-04"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r22_4_VIDEO"
+      titulo: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_4_VIDEO"
+      publicado: "2022-07-04"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-096_13_VIDEO"
+      titulo: "David Splane: “Toda la Escritura está inspirada por Dios” (2 Tim. 3:16)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-096_13_VIDEO"
+      publicado: "2023-05-19"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_16_VIDEO"
+      titulo: "Kenneth Cook: La tierra que durará para siempre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_16_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-100_9_VIDEO"
+      titulo: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      publicado: "2023-02-06"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-106_1_VIDEO"
+      titulo: "JW Broadcasting: Octubre de 2023"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-106_1_VIDEO"
+      publicado: "2023-10-02"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-106_2_VIDEO"
+      titulo: "Kenneth Cook: Anunciar todos los aspectos de las buenas noticias nos hace felices"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-106_2_VIDEO"
+      publicado: "2023-10-16"
+      por: [subtitulos]
+      citas: 1

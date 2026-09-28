@@ -1,0 +1,715 @@
+# biblical-earth: fuentes del carril jesus-b (A7-E a A7-H y la última semana). Esquema en docs/investigacion/README.md.
+it-akeldama:
+  titulo: Akéldama
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000185
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-barrabas:
+  titulo: Barrabás
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000556
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-bartimeo:
+  titulo: Bartimeo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000570
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-betfague:
+  titulo: Betfagué
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000705
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-cedron:
+  titulo: Cedrón, Valle torrencial de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002606
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-cleopas:
+  titulo: Cleopas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000992
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-clopas:
+  titulo: Clopas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000993
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-efrain:
+  titulo: Efraín
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-getsemani:
+  titulo: Getsemaní
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001671
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-jerico:
+  titulo: Jericó
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-lazaro:
+  titulo: Lázaro
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002698
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-malco:
+  titulo: Malco
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002869
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-marta:
+  titulo: Marta
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002917
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-moria:
+  titulo: Moria
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-siloam:
+  titulo: Siloam
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004121
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-zaqueo:
+  titulo: Zaqueo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004650
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-100:
+  titulo: La parábola de las 10 minas
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014700
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-101:
+  titulo: Jesús cena en Betania, en casa de Simón
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014701
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-102:
+  titulo: El Rey entra en Jerusalén montado en un burrito
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014702
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-103:
+  titulo: Vuelve a echar del templo a los comerciantes
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014703
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-104:
+  titulo: Los judíos escuchan la voz de Dios, ¿tendrán fe ahora?
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014704
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-105:
+  titulo: Usa una higuera para enseñar sobre la fe
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014705
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-106:
+  titulo: Dos historias sobre viñas
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014706
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-107:
+  titulo: Un rey hace un banquete de boda y llama a sus invitados
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014707
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-108:
+  titulo: Tratan de entrampar a Jesús, pero no lo logran
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014708
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-109:
+  titulo: Condena a sus adversarios religiosos
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014709
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-110:
+  titulo: El último día de Jesús en el templo
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014710
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-111:
+  titulo: Los apóstoles piden una señal
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014711
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-112:
+  titulo: 'Una lección sobre mantenerse vigilantes: las 10 vírgenes'
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014712
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-113:
+  titulo: 'Una lección sobre ser diligentes: los talentos'
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014713
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-114:
+  titulo: El Rey Jesucristo juzgará a las ovejas y las cabras
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014714
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-115:
+  titulo: Se acerca la última Pascua de Jesús
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014715
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-116:
+  titulo: Una lección de humildad en la última Pascua
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014716
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-117:
+  titulo: La Cena del Señor
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014717
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-118:
+  titulo: Discuten sobre quién es el mayor
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014718
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-119:
+  titulo: 'Jesús: el camino, la verdad y la vida'
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014719
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-120:
+  titulo: Cómo dar fruto y ser amigos de Jesús
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014720
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-121:
+  titulo: “¡Sean valientes!, que yo he vencido al mundo”
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014721
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-122:
+  titulo: La oración de conclusión de Jesús en la habitación de arriba
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014722
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-123:
+  titulo: Ora a su Padre en momentos de gran angustia
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014723
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-124:
+  titulo: La traición de Judas y el arresto de Jesús
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014724
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-125:
+  titulo: Se lo llevan a Anás y después a Caifás
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014725
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-126:
+  titulo: Pedro niega conocer a Jesús
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014726
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-127:
+  titulo: El Sanedrín lo juzga y después lo envía a Pilato
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014727
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-128:
+  titulo: Pilato y Herodes consideran inocente a Jesús
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014728
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-129:
+  titulo: 'Pilato declara: “¡Miren! ¡El hombre!”'
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014729
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-130:
+  titulo: Se llevan a Jesús al lugar de ejecución
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014730
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-131:
+  titulo: Un rey inocente sufre en el madero
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014731
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-132:
+  titulo: “Está claro que este hombre era el Hijo de Dios”
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014732
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-133:
+  titulo: Preparan el cuerpo de Jesús y lo entierran
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014733
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-134:
+  titulo: 'La tumba está vacía: Jesús está vivo'
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014734
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-135:
+  titulo: Después de resucitar, Jesús se aparece a muchos
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014735
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-136:
+  titulo: En la orilla del mar de Galilea
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014736
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-137:
+  titulo: Cientos de personas ven a Jesús antes de Pentecostés
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014737
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-59:
+  titulo: ¿Quién es el Hijo del Hombre?
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014662
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-61:
+  titulo: Jesús cura a un muchacho endemoniado
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014664
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-62:
+  titulo: Una lección valiosa sobre la humildad
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014665
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-63:
+  titulo: Jesús da otros consejos importantes a sus apóstoles
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014666
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-64:
+  titulo: La importancia de perdonar
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014667
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-65:
+  titulo: Enseña mientras viaja a Jerusalén
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014668
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-66:
+  titulo: La Fiesta de los Tabernáculos en Jerusalén
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014669
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-67:
+  titulo: “¡Nunca ha hablado así ningún hombre!”
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014670
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-68:
+  titulo: El Hijo de Dios es “la luz del mundo”
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014671
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-70:
+  titulo: Jesús cura a un hombre que nació ciego
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014790
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-71:
+  titulo: Los fariseos interrogan al hombre que nació ciego
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014791
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-72:
+  titulo: Jesús envía a 70 discípulos a predicar
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014672
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-73:
+  titulo: Un samaritano demuestra ser un buen prójimo
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014673
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-74:
+  titulo: Lecciones sobre la hospitalidad y la oración
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014674
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-75:
+  titulo: Jesús revela cuál es la fuente de la felicidad
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014675
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-76:
+  titulo: Come con un fariseo
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014676
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-77:
+  titulo: Da consejos sobre las riquezas
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014677
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-78:
+  titulo: El mayordomo fiel debe estar preparado
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014678
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-79:
+  titulo: ¿Por qué se acerca una destrucción?
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014679
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-80:
+  titulo: El pastor excelente y los rediles
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014680
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-81:
+  titulo: ¿En qué sentido son uno Jesús y el Padre?
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014681
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-82:
+  titulo: El ministerio de Jesús en Perea
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014682
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-83:
+  titulo: Los invitados a una comida
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014683
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-84:
+  titulo: ¿Qué implica ser discípulo de Cristo?
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014684
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-85:
+  titulo: Hay mucha alegría cuando un pecador se arrepiente
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014685
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-86:
+  titulo: Regresa el hijo que estaba perdido
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014686
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-87:
+  titulo: Hagamos planes con sabiduría práctica
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014687
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-88:
+  titulo: El hombre rico y Lázaro
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014688
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-89:
+  titulo: Jesús enseña en Perea de camino a Judea
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014689
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-90:
+  titulo: “La resurrección y la vida”
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014690
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-91:
+  titulo: Jesús resucita a Lázaro
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014691
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-92:
+  titulo: Un leproso da las gracias por ser curado
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014692
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-93:
+  titulo: El Hijo del Hombre será revelado
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014693
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-94:
+  titulo: La importancia de orar y ser humildes
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014694
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-95:
+  titulo: Lecciones sobre el divorcio y el amor a los niños
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014695
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-96:
+  titulo: Jesús responde a un gobernante rico
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014696
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-97:
+  titulo: La parábola de los trabajadores de la viña
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014697
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-98:
+  titulo: Los apóstoles de nuevo quieren prominencia
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014698
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-99:
+  titulo: Jesús cura a dos ciegos y ayuda a Zaqueo
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014699
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-a7-e:
+  titulo: 'A7-E La vida de Jesús en la tierra: El gran ministerio de Jesús en Galilea (Parte 3) y en Judea'
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070211
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-a7-f:
+  titulo: 'A7-F La vida de Jesús en la tierra: El ministerio posterior de Jesús al este del Jordán'
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070212
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-a7-g:
+  titulo: 'A7-G La vida de Jesús en la tierra: El ministerio final de Jesús en Jerusalén (Parte 1)'
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070213
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-a7-h:
+  titulo: 'A7-H La vida de Jesús en la tierra: El ministerio final de Jesús en Jerusalén (Parte 2)'
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070214
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b11:
+  titulo: B11 El monte del templo en el siglo primero
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070231
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b12-b:
+  titulo: B12-B La última semana de Jesús en la tierra (Parte 2)
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070233
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+vbt-jerusalen-templo:
+  titulo: Jerusalén y el templo que Jesús conoció
+  obra: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003128
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+w13-osario-caifas:
+  titulo: Pertenecía a la familia de Caifás
+  obra: La Atalaya. Anunciando el Reino de Jehová
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2013128
+  nivel: 1
+  publicado: 2013
+  consultado: '2026-09-28'
+w97-arqueologia-jerusalen:
+  titulo: ¿Qué revela la arqueología sobre la Jerusalén de tiempos bíblicos?
+  obra: La Atalaya. Anunciando el Reino de Jehová
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1997442
+  nivel: 1
+  publicado: 1997
+  consultado: '2026-09-28'

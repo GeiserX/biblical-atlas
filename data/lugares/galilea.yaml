@@ -10,15 +10,17 @@ precision: zona
 coord_fuente: openbible:a9cf1e8
 coord_url: https://www.openbible.info/geo/ancient/a9cf1e8/galilee-1
 coord_nota: Punto representativo de la región.
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Galilea», confirmado por
-  su título. Coordenada de OpenBible: solo tomamos el punto.'
+resumen: Región del norte, al oeste del Jordán y del mar de Galilea. En tiempos de Jesús la gobernaba Herodes Antipas y medía
+  unos 40 km de este a oeste y 60 de norte a sur.
+razon: Perspicacia «Galilea» (párr. 3 y 4) da la extensión y los límites en el siglo I; B10 la marca como territorio de Herodes
+  Antipas. OpenBible da un punto representativo.
 fuentes:
 - it-galilea
+- tnm-b10
 - openbible-geo
 enlaces:
 - titulo: 'Perspicacia: «Galilea»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001598
   tipo: perspicacia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

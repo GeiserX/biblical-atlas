@@ -1,0 +1,82 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esdras
+nombre: Esdras
+nombres:
+- nombre: Esdras
+desambiguacion: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537.
+fecha:
+  desde: -467
+  hasta: -454
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: de 468 a 455 a.e.c.
+resumen: Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500
+  hombres con sus familias y donativos para el templo; más tarde enseñó la Ley junto a Nehemías.
+razon: 'Perspicacia «Esdras», núm. 1: viaje de 468 con unos 1.500 hombres y sus familias; reaparece con Nehemías tras el
+  muro (Ne 8). Esd 7:1-9.'
+fuentes:
+- it-esdras
+- esdras-7
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Esdras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001475
+  tipo: perspicacia
+- titulo: Esdras 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/7
+  tipo: biblia
+no_afirmamos:
+- 'Que Esdras se quedara en Jerusalén sin interrupción desde 468 a.e.c.: Perspicacia dice que no se sabe.'
+relaciones:
+- tipo: vivio_en
+  lugar: babilonia
+  fecha:
+    desde: -467
+    hasta: -467
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: hasta su salida en 468 a.e.c.
+  deducido: false
+  fuentes:
+  - it-esdras
+  - esdras-7
+  razon: 'Perspicacia «Esdras»: la Biblia solo dice que vivía en Babilonia antes de su viaje (Esd 7:6, 9).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: -467
+    hasta: -467
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 468 a.e.c.
+  deducido: false
+  fuentes:
+  - it-esdras
+  - esdras-7
+  razon: 'Esd 7:8, 9: llegó a Jerusalén en el quinto mes del séptimo año de Artajerjes.'
+  estado: verificado
+- tipo: acompana
+  persona: nehemias
+  fecha:
+    desde: -454
+    hasta: -454
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 455 a.e.c.
+  deducido: false
+  fuentes:
+  - it-esdras
+  - it-nehemias
+  razon: 'Perspicacia «Esdras» y «Nehemías»: enseñaron juntos la Ley al pueblo reunido después de terminar el muro (Ne 8:9).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

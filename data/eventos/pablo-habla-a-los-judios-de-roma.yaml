@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-habla-a-los-judios-de-roma
+titulo: Pablo habla a los judíos de Roma y predica dos años
+fecha:
+  desde: 59
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 59-61 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2817
+lugares:
+- roma
+personas:
+- pablo
+pasajes:
+- Hch 28:17-31
+resumen: A los tres días reúne a los judíos principales; algunos creen. Durante dos años, en su casa alquilada,
+  recibe a todos y predica el Reino sin estorbo.
+razon: 'Perspicacia «Pablo» (apartado «Primer y segundo encierro») y el estudio 3 (párr. 27): hasta cerca de 61.'
+fuentes:
+- it-pablo
+- si-3
+- hch-28
+buscar: Pablo casa alquilada Roma
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: profecia-de-las-setenta-semanas
+titulo: Daniel recibe la profecía de las setenta semanas
+fecha:
+  desde: -538
+  hasta: -537
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primer año de Darío el medo (c. 539-538 a.e.c.)
+lugares:
+- babilonia
+personas:
+- daniel
+pasajes:
+- Da 9:1, 2, 20-27
+resumen: Con Darío el medo en su primer año de reinado, Daniel entendió por Jeremías que los setenta años de desolación acababan. Oró
+  por Jerusalén, y Gabriel le reveló las setenta semanas de Da 9:24-27.
+razon: Perspicacia «Daniel», núm. 2, y «Darío», núm. 1; «Ciro» dice que ese año pudo situarse entre la conquista de la ciudad
+  y el año primero de Ciro.
+fuentes:
+- it-daniel
+- it-dario
+- it-ciro
+- daniel-9
+enlaces:
+- titulo: 'Perspicacia: «Daniel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001117
+  tipo: perspicacia
+- titulo: Daniel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/9
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

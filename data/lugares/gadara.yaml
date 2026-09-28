@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gadara
+nombre: Gadara
+nombres:
+- nombre: Gadara
+- nombre: Región de los gadarenos
+  nota: Así la llama Mateo (Mt 8:28).
+- nombre: Región de los gerasenos
+  nota: Así la llaman Marcos y Lucas; quizá las dos regiones compartían una zona (nota de estudio de Mt 8:28).
+tipo: region
+lat: 32.655998
+lon: 35.679352
+precision: zona
+coord_fuente: openbible:afed46a
+coord_url: https://www.openbible.info/geo/ancient/afed46a/gadara
+coord_nota: Punto de la ciudad de Gadara (Um Qeis), centro del distrito, que llegaba hasta el lago.
+resumen: Distrito al sureste del mar de Galilea con centro en la ciudad de Gadara, a unos 10 km del lago. En esa orilla Jesús
+  dejó que unos demonios entraran en una piara de cerdos.
+razon: Perspicacia «Gadarenos» (párr. 2 y 3) y la nota de Mt 8:28 describen el distrito y sus monedas con un barco. B10 pone
+  Gadara entre las ciudades de la Decápolis.
+fuentes:
+- it-gadarenos
+- mateo-8
+- tnm-b10
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Gadarenos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001584
+  tipo: perspicacia
+- titulo: Mateo 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/8
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

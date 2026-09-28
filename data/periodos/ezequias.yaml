@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: ezequias
+nombre: Reinado de Ezequías en Judá
+tipo: rey
+persona: ezequias
+fecha:
+  desde: -745
+  hasta: -715
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 746-716 a.e.c.
+lugares:
+- jerusalen
+resumen: Veintinueve años en Jerusalén; en su sexto año cayó Samaria.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 18.
+fuentes:
+- tnm-a6-b
+- 2-reyes-18
+- it-ezequias
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Ezequías» y el estudio 3 daban 745-717 a.e.c.; A6-B, más reciente, da 746 para su comienzo y 716 para
+    Manasés.
+  fuente: tnm-a6-b
+buscar: Ezequías rey
+consultado: '2026-09-28'
+estado: verificado

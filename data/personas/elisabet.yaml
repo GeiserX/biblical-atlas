@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisabet
+nombre: Elisabet
+nombres:
+- nombre: Elisabet
+resumen: Madre de Juan el Bautista y esposa del sacerdote Zacarías, de la familia de Aarón. Ya mayor y estéril, concibió a
+  Juan; en su sexto mes la visitó su pariente María.
+razon: Perspicacia «Elisabet» (párr. 2) y Lu 1:5-7, 36-45.
+fuentes:
+- it-elisabet
+- lucas-1
+relaciones:
+- tipo: pariente
+  persona: zacarias-padre-de-juan
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:5.
+  estado: verificado
+- tipo: pariente
+  persona: juan-el-bautista
+  relacion: hijo
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:57-60.
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: pariente
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:36.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Elisabet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001323
+  tipo: perspicacia
+- titulo: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

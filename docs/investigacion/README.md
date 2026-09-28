@@ -23,7 +23,7 @@ Dentro de su YAML, cada hecho (un lugar, una persona, un viaje y cada una de sus
 | `estado` | `verificado` solo si alguien abrió la fuente enlazada y dice eso. Si no, `pendiente`, con el motivo en `razon`. |
 | `historial` | Opcional. Los cambios de entendimiento, explicados más abajo. |
 
-Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado; nunca en contra del nivel 1. De OpenBible tomamos únicamente coordenadas. Nunca copiamos texto de jw.org: `resumen`, `razon`, `nota`, `texto`, `explicacion`, `desambiguacion`, `no_sabemos` y cada frase de `no_afirmamos` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
+Las fuentes son de dos niveles. Nivel 1: la Traducción del Nuevo Mundo y las publicaciones de wol.jw.org y jw.org. Nivel 2: arqueología o investigación, y solo cuando jw.org las ha usado; nunca en contra del nivel 1. De OpenBible tomamos únicamente coordenadas. Nunca copiamos texto de jw.org: `resumen`, `razon`, `nota`, `texto`, `explicacion`, `desambiguacion`, `no_sabemos`, `clima`, `campo` y cada frase de `no_afirmamos` tienen 40 palabras como mucho (`scripts/validate.py` lo comprueba) y se escriben con nuestras palabras, siempre con enlace.
 
 ## Fuentes
 
@@ -59,6 +59,8 @@ candidatos:
     razon: Perspicacia la da como ubicación tradicional.
 ```
 
+Cada candidato dice de dónde sale su punto: `coord_fuente: openbible:<id>` con `coord_url` a esa ficha de OpenBible, o `coord_fuente: calculo` con `nota` que da la cuenta del centro. Un lugar que comparte punto con otro, como una región con su capital, lo explica en `coord_nota`.
+
 Con `candidatos`, `lat`, `lon`, `coord_fuente` y `coord_url` pueden ser `null` y `precision` tiene que ser `zona` o `incierto`. Una lista de candidatos vacía solo vale con `estado: pendiente`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 
 **Personas.** `fecha` (actividad conocida, con fuente), `desambiguacion` (qué la distingue de sus homónimos), `no_confundir_con` (ids de personas), `no_afirmamos` (frases con lo que no decimos, como «Pedro murió en Roma») y `relaciones`:
@@ -75,17 +77,17 @@ relaciones:
     estado: verificado
 ```
 
-**Cartas.** `escritor` es obligatorio (id de persona; las 14 de Pablo llevan `escritor: pablo`). Opcionales: `destinatarios.personas` y `portadores`, listas de ids de personas. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
+**Cartas.** `escritor` es obligatorio (id de persona; las 14 de Pablo llevan `escritor: pablo`). Opcionales: `destinatarios.personas`, `portadores` y `personas` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
 **Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona).
 
-**Hallazgos** (`data/hallazgos/<id>.yaml`): `nombre`, `lugar_hallazgo` (id de lugar), `relaciona` (lista de selecciones `tipo:id`), `fecha_objeto` (objeto `fecha`), `resumen`, `razon`, `fuentes`, `consultado`, `estado`. Una fuente de nivel 2 solo vale junto a una de nivel 1 que la cite. Sin imágenes en esta tanda.
+**Hallazgos** (`data/hallazgos/<id>.yaml`): `nombre`, `lugar_hallazgo` (id de lugar), `relaciona` (lista de selecciones `tipo:id`), `fecha_objeto` (objeto `fecha`), `resumen`, `razon`, `fuentes`, `consultado`, `estado`. Una fuente de nivel 2 solo vale junto a una de nivel 1 que la cite. Sin imágenes en esta tanda. Campos opcionales: `identificacion` (`segura` o `incierta`; con `incierta` la ficha pone la insignia «identificación incierta» y lo dice en «Lo que el texto no dice»), `donde_hoy` (texto de 40 palabras como mucho: dónde se guarda hoy el objeto) y `no_afirmamos` (lista de frases de 40 palabras como mucho, como en las personas). `scripts/validate.py` comprueba los tres.
 
-**Recorridos** (`data/recorridos/<id>.yaml`): `titulo`, `fuentes`, `razon`, `consultado`, `estado` y `paradas`, cada una con `sel` (la selección del sitio), `t` (año astronómico, puede llevar decimales), `texto` (40 palabras como mucho), `pasajes`, y opcionalmente `no_sabemos` y `pregunta: {texto, opciones, respuesta, explicacion}`, donde `respuesta` es una de las `opciones`.
+**Recorridos** (`data/recorridos/<id>.yaml`): `titulo`, `fuentes`, `razon`, `consultado`, `estado` y `paradas`, cada una con `sel` (la selección del sitio), `t` (año astronómico, puede llevar decimales; tiene que caer dentro de la ventana que el sitio calcula para la fecha de `sel`, con su `detalle` de mes y día), `texto` (40 palabras como mucho), `pasajes`, y opcionalmente `no_sabemos` y `pregunta: {texto, opciones, respuesta, explicacion}`, donde `respuesta` es una de las `opciones`.
 
 **Selecciones `tipo:id`.** Las mismas que usa la dirección del sitio (`#sel=lugar:filipos`): `lugar`, `persona`, `carta`, `viaje`, `evento`, `periodo`, `hallazgo`, `recorrido` y `libro` con su id; `parada:<viaje>/<orden>` (`parada:segundo-viaje/3`); `pasaje:<abreviatura sin tildes en minúsculas>-<capítulo>` (`pasaje:hch-16`, `pasaje:1co-13`). `build.py` comprueba que existen.
 
-**Libros y meses.** `data/libros.yaml` y `data/calendario.yaml` son estructura y no llevan fuentes. Los hechos de un libro (`escritor` y `lugar` como texto, `fecha` en que se terminó y `abarca`, los dos objetos `fecha`) y los de un mes son campos opcionales de su entrada; en cuanto hay uno, la entrada necesita `fuentes`, `razon`, `consultado` y `estado`.
+**Libros y meses.** `data/libros.yaml` y `data/calendario.yaml` son estructura y no llevan fuentes. Los hechos de un libro (`escritor` y `lugar` como texto, `fecha` en que se terminó y `abarca`, los dos objetos `fecha`) y los de un mes son campos opcionales de su entrada; en cuanto hay uno, la entrada necesita `fuentes`, `razon`, `consultado` y `estado`. Los hechos de un mes son `equivale` (meses de nuestro calendario, «marzo-abril»), `fiestas` (lista de `{desde, hasta, nombre}` con los días del mes), `clima`, `campo` (cosechas) y `nota`.
 
 ## Identificadores
 

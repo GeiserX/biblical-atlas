@@ -17,6 +17,8 @@ destinatarios:
   texto: Cristianos hebreos de Judea
   lugares:
   - judea
+personas:
+- timoteo
 contexto_origen:
   resumen: Final del primer encarcelamiento en Roma.
   fuentes:
@@ -40,5 +42,5 @@ enlaces:
 - titulo: Hebreos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/13
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

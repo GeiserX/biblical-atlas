@@ -1,0 +1,9 @@
+# Nombres de personas que busca scripts/videos/indexar.py en los subtítulos: carril «marco».
+# Mismo formato que scripts/videos/nombres/pablo.yaml, con el id de data/personas. Solo formas que no se confunden:
+# «Augusto» suelto no cuenta, porque también es un nombre de pila y un adjetivo.
+
+augusto:
+  nombres: [César Augusto]
+
+tiberio:
+  nombres: [Tiberio]

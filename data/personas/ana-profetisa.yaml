@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ana-profetisa
+nombre: Ana
+nombres:
+- nombre: Ana
+desambiguacion: Profetisa, hija de Fanuel (Lu 2:36); no es Ana, la madre de Samuel.
+resumen: Profetisa de la tribu de Aser que enviudó tras siete años de matrimonio. Con 84 años seguía yendo al templo a diario,
+  y al ver al niño Jesús habló de él a quienes esperaban la liberación.
+razon: Perspicacia «Ana» (núm. 2) y Lu 2:36-38.
+fuentes:
+- it-ana
+- lucas-2
+enlaces:
+- titulo: 'Perspicacia: «Ana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001861
+  tipo: perspicacia
+- titulo: Lucas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

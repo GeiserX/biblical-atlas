@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: senal-de-su-presencia
+titulo: Desde el monte de los Olivos anuncia la señal de su presencia
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 11 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 11
+lugares:
+- monte-de-los-olivos
+personas:
+- jesus
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- andres
+pasajes:
+- Mt 24:1-51
+- Mr 13:1-37
+- Lu 21:5-38
+resumen: Sentado en el monte de los Olivos frente al templo, Jesús predice su destrucción y explica a cuatro apóstoles
+  la señal de su presencia.
+razon: La tabla A7-G da el día y el lugar. La nota de Mt 24:3 nombra a Pedro, Santiago, Juan y Andrés (Mr 13:3);
+  B12-A.
+fuentes:
+- tnm-a7-g
+- mateo-24
+- marcos-13
+- lucas-21
+- jy-cap-110
+- jy-cap-111
+- tnm-b12-a
+orden_relato:
+  serie: a7
+  orden: 105
+buscar: señal de su presencia
+consultado: '2026-09-28'
+estado: verificado

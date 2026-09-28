@@ -1,0 +1,73 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: onesimo
+nombre: Onésimo
+nombres:
+- nombre: Onésimo
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+resumen: Esclavo de Filemón que huyó de Colosas a Roma. Allí conoció a Pablo y se hizo cristiano; volvió a su amo
+  con Tíquico y dos cartas.
+razon: Perspicacia «Onésimo» (párr. 1 y 2); Col 4:9; Flm 10-19. Fecha de Colosenses y Filemón, hacia 60-61 según la Tabla
+  de los libros.
+fuentes:
+- it-onesimo
+- filemon-1
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Onésimo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003328
+  tipo: perspicacia
+- titulo: Filemón 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: colosas
+  deducido: false
+  fuentes:
+  - it-onesimo
+  - colosenses-4
+  razon: Col 4:9 lo llama «uno de ustedes»; era siervo de un colosense.
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  deducido: false
+  fuentes:
+  - it-onesimo
+  - filemon-1
+  - tnm-tabla
+  razon: Pablo lo llama su hijo y le es muy útil en Roma (Flm 10-13). La Tabla de los libros fecha Filemón hacia 60-61.
+  estado: verificado
+- tipo: acompana
+  persona: tiquico
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  deducido: false
+  fuentes:
+  - it-onesimo
+  - colosenses-4
+  - tnm-tabla
+  razon: Vuelve a Colosas con Tíquico (Col 4:7-9). La Tabla de los libros fecha Colosenses hacia 60-61.
+  estado: verificado

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: juda
+nombre: Judá
+nombres:
+- nombre: Judá
+  nota: En época romana la región se llama Judea («de Judá»), que tiene su propia ficha.
+- nombre: Reino de Judá
+  nota: El reino del sur tras la muerte de Salomón, con las tribus de Judá y Benjamín.
+tipo: reino
+lat: 31.668687
+lon: 35.181342
+precision: zona
+coord_fuente: calculo
+coord_url: null
+coord_nota: 'Calculado: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. OpenBible no tiene ficha de
+  Judá; el territorio es mucho más amplio que ese punto.'
+resumen: Territorio de la tribu de Judá, del mar Muerto al Mediterráneo. Tras Salomón fue el reino del sur, con Benjamín,
+  hasta su desolación en 607 a.e.c.; desde 537 a.e.c. volvieron los repatriados.
+razon: 'Perspicacia «Judá» junta varias entradas; tomamos la del territorio y el reino, no la del hijo de Jacob: núm. 2,
+  párr. 15 (límites); núm. 3, párr. 24 y 33 (reino, 607 a.e.c.); párr. 37 (vuelta en 537 a.e.c.).'
+no_afirmamos:
+- No trazamos sus fronteras; el punto del mapa es solo una referencia dentro del territorio.
+fuentes:
+- it-juda
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Judá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: verificado

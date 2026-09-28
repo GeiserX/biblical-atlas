@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: cornelio
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r20_128_VIDEO"
+    titulo: "Gerrit Lösch: La alegría de hacer discípulos. Aceptemos la ayuda de Jehová: La oración"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_128_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 4
+    terminos:
+      "Cornelio": 4
+  - docid: "pub-co-r20_6_VIDEO"
+    titulo: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_6_VIDEO&appLanguage=S"
+    publicado: "2020-07-23"
+    menciones: 4
+    terminos:
+      "Cornelio": 4
+  - docid: "pub-jwb_202009_2_VIDEO"
+    titulo: "James Mantz: Aceptemos el reto de dar “un testimonio completo”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202009_2_VIDEO&appLanguage=S"
+    publicado: "2020-09-21"
+    menciones: 3
+    terminos:
+      "Cornelio": 3

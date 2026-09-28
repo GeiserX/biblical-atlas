@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: escuela-de-tirano
+titulo: Dos años enseñando en la escuela de Tirano
+fecha:
+  desde: 53
+  hasta: 55
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 53-55 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1908
+lugares:
+- efeso
+personas:
+- pablo
+pasajes:
+- Hch 19:8-10
+resumen: Tras tres meses en la sinagoga, Pablo se aparta con los discípulos y habla cada día en la sala de la escuela
+  de Tirano. En dos años la palabra llega a toda la provincia de Asia.
+razon: El estudio 3 (párr. 26) cuenta tres meses y dos años; nota de estudio de Hch 19:9; Perspicacia «Asia» (párr.
+  5).
+fuentes:
+- si-3
+- nota-hechos-19
+- it-asia
+- hch-19
+buscar: escuela de Tirano
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-de-arimatea
+nombre: José de Arimatea
+nombres:
+- nombre: José
+- nombre: José de Arimatea
+  nota: Arimatea era una ciudad de Judea (Lu 23:51).
+desambiguacion: El de Arimatea, miembro del Sanedrín; no es José, el padre adoptivo de Jesús.
+no_confundir_con:
+- jose-esposo-de-maria
+resumen: Hombre rico, miembro del Sanedrín y discípulo en secreto. No apoyó la decisión contra Jesús, pidió su cuerpo
+  a Pilato y lo puso en su propia tumba nueva.
+razon: Perspicacia «José», apartado 10, y la nota de Mt 27:57; Jn 19:38-42.
+fuentes:
+- it-jose
+- mateo-27
+- juan-19
+enlaces:
+- titulo: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  tipo: perspicacia
+- titulo: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  tipo: biblia
+buscar: José de Arimatea
+consultado: '2026-09-28'
+estado: verificado

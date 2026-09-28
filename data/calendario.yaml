@@ -10,42 +10,184 @@ meses:
   orden: 1
   nombre: Nisán
   otros_nombres: [Abib]
+  equivale: marzo-abril
+  fiestas:
+  - desde: 14
+    hasta: 14
+    nombre: Pascua
+  - desde: 15
+    hasta: 21
+    nombre: Fiesta de los Panes Sin Levadura
+  - desde: 16
+    hasta: 16
+    nombre: Ofrenda de las primicias
+  clima: Las lluvias y el deshielo hacen crecer el Jordán.
+  campo: Cebada.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Nisán» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: iyar
   orden: 2
   nombre: Iyar
   otros_nombres: [Ziv]
+  equivale: abril-mayo
+  fiestas:
+  - desde: 14
+    hasta: 14
+    nombre: Pascua tardía
+  clima: Empieza la época seca, casi siempre con cielo limpio.
+  campo: Trigo.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Iyar» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: sivan
   orden: 3
   nombre: Siván
+  equivale: mayo-junio
+  fiestas:
+  - desde: 6
+    hasta: 6
+    nombre: Fiesta de las Semanas (Pentecostés)
+  clima: Calor y cielo sin nubes.
+  campo: Trigo y brevas.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Siván» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: tamuz
   orden: 4
   nombre: Tamuz
+  equivale: junio-julio
+  clima: Sube el calor; en algunas zonas cae mucho rocío.
+  campo: Primeras uvas.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Tamuz» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: ab
   orden: 5
   nombre: Ab
+  equivale: julio-agosto
+  clima: Los días más calurosos del año.
+  campo: Fruta de verano.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Ab» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: elul
   orden: 6
   nombre: Elul
+  equivale: agosto-septiembre
+  clima: Sigue haciendo calor.
+  campo: Dátiles, higos y uvas.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Elul» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: tisri
   orden: 7
   nombre: Tisri
   otros_nombres: [Etanim]
+  equivale: septiembre-octubre
+  fiestas:
+  - desde: 1
+    hasta: 1
+    nombre: Toque de trompeta
+  - desde: 10
+    hasta: 10
+    nombre: Día de Expiación
+  - desde: 15
+    hasta: 21
+    nombre: Fiesta de las Cabañas
+  - desde: 22
+    hasta: 22
+    nombre: Asamblea solemne
+  clima: Acaba el verano y llegan las primeras lluvias.
+  campo: Se ara la tierra.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Tisri» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: hesvan
   orden: 8
   nombre: Hesván
   otros_nombres: [Bul]
+  equivale: octubre-noviembre
+  clima: Lluvias suaves.
+  campo: Aceitunas.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Hesván» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: kislev
   orden: 9
   nombre: Kislev
+  equivale: noviembre-diciembre
+  fiestas:
+  - desde: 25
+    hasta: 25
+    nombre: Fiesta de la Dedicación
+  clima: Llueve más, hiela y nieva en los montes.
+  campo: Los rebaños se ponen a cubierto.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Kislev» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: tebet
   orden: 10
   nombre: Tebet
+  equivale: diciembre-enero
+  clima: El mes más frío, con lluvia y nieve en los montes.
+  campo: La vegetación crece.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Tebet» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: sebat
   orden: 11
   nombre: Sebat
+  equivale: enero-febrero
+  clima: Afloja el frío, pero sigue lloviendo.
+  campo: Florecen los almendros.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Sebat» en B15 «El calendario hebreo»: equivalencia, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: adar
   orden: 12
   nombre: Adar
+  equivale: febrero-marzo
+  fiestas:
+  - desde: 14
+    hasta: 15
+    nombre: Purim
+  clima: Tormentas frecuentes, con truenos y granizo.
+  campo: Lino.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Adar» en B15 «El calendario hebreo»: equivalencia, fiestas, clima y cosechas.'
+  consultado: '2026-09-28'
+  estado: verificado
 - id: veadar
   orden: 13
   nombre: Veadar
+  equivale: marzo
+  nota: Mes que se intercalaba siete veces en cada ciclo de 19 años.
+  fuentes:
+  - tnm-b15
+  razon: 'Columna de «Veadar» en B15 «El calendario hebreo»: equivalencia y frecuencia con que se añadía.'
+  consultado: '2026-09-28'
+  estado: verificado

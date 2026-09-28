@@ -1,0 +1,47 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: acaz
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-117_1_VIDEO"
+    titulo: "JW Broadcasting: Octubre de 2024"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-117_1_VIDEO&appLanguage=S"
+    publicado: "2024-10-07"
+    menciones: 12
+    terminos:
+      "Acaz": 12
+  - docid: "pub-jwb-117_3_VIDEO"
+    titulo: "Mark Noumair: ¿Reconocemos la señal? (Is. 8:10)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-117_3_VIDEO&appLanguage=S"
+    publicado: "2024-10-21"
+    menciones: 12
+    terminos:
+      "Acaz": 12
+  - docid: "pub-jwb_201709_11_VIDEO"
+    titulo: "David Schafer: Miqueas esperó en Jehová (Miq. 7:4)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201709_11_VIDEO&appLanguage=S"
+    publicado: "2017-09-25"
+    menciones: 4
+    terminos:
+      "Acaz": 4
+  - docid: "pub-jwb-136_1_VIDEO"
+    titulo: "JW Broadcasting: Abril de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-136_1_VIDEO&appLanguage=S"
+    publicado: "2026-04-06"
+    menciones: 2
+    terminos:
+      "Acaz": 2
+  - docid: "pub-jwb_201706_2_VIDEO"
+    titulo: "Robert Luccioni: ¿Deja usted que sus circunstancias le impidan darle a Jehová lo mejor?"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201706_2_VIDEO&appLanguage=S"
+    publicado: "2017-06-19"
+    menciones: 2
+    terminos:
+      "Acaz": 2
+  - docid: "pub-jwb_201912_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2019 (graduación de la clase 147 de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201912_1_VIDEO&appLanguage=S"
+    publicado: "2019-12-02"
+    menciones: 2
+    terminos:
+      "Acaz": 2

@@ -1,0 +1,61 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: galilea
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbcov25_7_VIDEO"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
+    publicado: "2026-01-19"
+    menciones: 12
+    terminos:
+      "Galilea": 12
+  - docid: "pub-gnj_3_VIDEO"
+    titulo: "Episodio 3: “Ese soy yo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
+    publicado: "2026-01-19"
+    menciones: 7
+    terminos:
+      "Galilea": 7
+  - docid: "pub-gnj_2_VIDEO"
+    titulo: "Episodio 2: “Este es mi Hijo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
+    publicado: "2026-01-19"
+    menciones: 5
+    terminos:
+      "Galilea": 5
+  - docid: "pub-gnj_4_VIDEO"
+    titulo: "Episodio 4: “Para eso he venido”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-4-para-eso-he-venido/"
+    publicado: "2026-05-01"
+    menciones: 4
+    terminos:
+      "Galilea": 4
+  - docid: "pub-gnj_1_VIDEO"
+    titulo: "Episodio 1: La verdadera luz del mundo"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-1-verdadera-luz-del-mundo/"
+    publicado: "2024-12-23"
+    menciones: 3
+    terminos:
+      "Galilea": 3
+  - docid: "pub-jwb-090_10_VIDEO"
+    titulo: "David Schafer: Vivimos en la temporada de la cosecha (Mat. 9:37)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-090_10_VIDEO&appLanguage=S"
+    publicado: "2022-09-23"
+    menciones: 2
+    terminos:
+      "Galilea": 2
+  - docid: "pub-jwb-100_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
+      "Galilea": 2
+  - docid: "pub-pk_47_VIDEO"
+    titulo: "¿Quiénes deberían ser mis amigos?"
+    url: "https://www.jw.org/es/biblioteca/videos/hazte-amigo-jehova/Qui%C3%A9nes-deber%C3%ADan-ser-mis-amigos/"
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
+      "Galilea": 2

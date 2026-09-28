@@ -4,23 +4,33 @@ titulo: Éxodo de Egipto
 fecha:
   desde: -1512
   hasta: -1512
-  precision: año
+  precision: día
   aprox: false
   tipo: anclada
   cronologia: tnm
   texto: 1513 a.e.c.
-lugares: []
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- egipto
 personas: []
-pasajes: []
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril marco. Fecha de la tabla del estudio 3; artículo: Perspicacia
-  «Éxodo», confirmado por su título.'
+pasajes:
+- Éx 12:29-42
+- Éx 14:21-31
+resumen: Tras la Pascua, Israel sale libre de Egipto y cruza el mar Rojo. Terminan los 400 años de aflicción y los 430 años
+  contados desde Abrahán.
+razon: Perspicacia «Pacto» da 1513 a.e.c., un 14 de nisán, como día de la liberación; el estudio 3 (párr. 8 a 10) cuadra
+  ese año con 1 Reyes 6:1.
 fuentes:
-- si-3
+- it-pacto
 - it-exodo
+- si-3
+- exodo-12
 enlaces:
 - titulo: 'Perspicacia: «Éxodo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001458
   tipo: perspicacia
+buscar: éxodo 1513
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

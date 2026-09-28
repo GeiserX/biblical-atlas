@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: huida-a-egipto
+titulo: Los astrólogos, la huida a Egipto y el regreso a Nazaret
+fecha:
+  desde: 0
+  hasta: 1
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1 a.e.c. o 1 e.c.
+orden_relato:
+  serie: a7
+  orden: 7
+lugares:
+- jerusalen
+- belen
+- egipto
+- nazaret
+personas:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+- herodes-el-grande
+- arquelao
+pasajes:
+- Mt 2:1-23
+- Lu 2:39, 40
+resumen: Unos astrólogos de Oriente pasan por Jerusalén y encuentran al niño en una casa de Belén. Avisado en sueños, José
+  huye a Egipto; Herodes manda matar a los niños de Belén. Muerto Herodes, la familia se instala en Nazaret.
+razon: 'A7-A, fila 7: 1 a.e.c. o bien 1 e.c. Perspicacia «Herodes» (núm. 1, «Fecha de su muerte») da como probable que Herodes
+  muriera en 1 a.e.c.'
+fuentes:
+- tnm-a7-a
+- mateo-2
+- lucas-2
+- it-herodes
+- jy-cap-7
+- jy-cap-8
+consultado: '2026-09-28'
+estado: verificado

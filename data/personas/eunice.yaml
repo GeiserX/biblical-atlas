@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eunice
+nombre: Eunice
+nombres:
+- nombre: Eunice
+resumen: Judía creyente, casada con un griego, madre de Timoteo. Le enseñó los santos escritos desde niño; quizás
+  se hizo cristiana en la primera visita de Pablo a Listra.
+razon: Perspicacia «Eunice»; Hch 16:1; 2Ti 1:5 y 3:15.
+fuentes:
+- it-eunice
+- hch-16
+- 2-timoteo-1
+enlaces:
+- titulo: 'Perspicacia: «Eunice»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001443
+  tipo: perspicacia
+- titulo: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: pariente
+  persona: timoteo
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-eunice
+  - hch-16
+  - 2-timoteo-1
+  razon: Hch 16:1 dice que Timoteo era hijo de una judía creyente; 2Ti 1:5 da su nombre.
+  estado: verificado
+- tipo: vivio_en
+  lugar: listra
+  deducido: true
+  fuentes:
+  - it-eunice
+  - bt-15
+  razon: Perspicacia cree muy probable que Pablo la conociera en Listra en su primer viaje.
+  estado: verificado

@@ -17,6 +17,9 @@ destinatarios:
   texto: Congregación de Tesalónica
   lugares:
   - tesalonica
+personas:
+- silas
+- timoteo
 contexto_origen:
   resumen: Pablo sigue en Corinto. Galión fue procónsul de Acaya del verano de 51 al verano de 52.
   fuentes:
@@ -31,6 +34,7 @@ fuentes:
 - si-3
 - it-tesalonicenses
 - 2-tesalonicenses-1
+- it-silas
 enlaces:
 - titulo: 'Perspicacia: «Tesalonicenses, Cartas a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004378
@@ -38,5 +42,5 @@ enlaces:
 - titulo: 2 Tesalonicenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/53/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

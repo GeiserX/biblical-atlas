@@ -17,6 +17,10 @@ destinatarios:
   texto: Timoteo, a quien Pablo dejó en Éfeso
   lugares:
   - efeso
+  personas:
+  - timoteo
+personas:
+- timoteo
 contexto_origen:
   resumen: Entre el primer y el segundo encarcelamiento en Roma; Hechos no narra este periodo.
   fuentes:
@@ -34,6 +38,7 @@ fuentes:
 - si-3
 - it-timoteo-cartas
 - 1-timoteo-1
+- it-timoteo
 enlaces:
 - titulo: 'Perspicacia: «Timoteo, Cartas a»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004417
@@ -41,5 +46,5 @@ enlaces:
 - titulo: 1 Timoteo 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/54/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

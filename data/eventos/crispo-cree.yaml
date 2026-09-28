@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: crispo-cree
+titulo: Crispo cree; el Señor anima a Pablo en una visión
+fecha:
+  desde: 50
+  hasta: 52
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: c. 50-52 e.c. (los 18 meses en Corinto)
+orden_relato:
+  serie: hechos
+  orden: 1805
+lugares:
+- corinto
+personas:
+- pablo
+- silas
+- timoteo
+- crispo
+pasajes:
+- Hch 18:5-11
+- 1Co 1:14
+resumen: Llegan Silas y Timoteo. Los judíos se oponen y Pablo pasa a la casa de Ticio Justo, junto a la sinagoga.
+  Crispo cree con su casa y, en visión, Jesús le dice que siga hablando.
+razon: Perspicacia «Crispo»; «Testimonio completo», cap. 19, párr. 13, sitúa la visión tras un año en Corinto.
+fuentes:
+- it-crispo
+- bt-19
+- hch-18
+buscar: Crispo presidente de la sinagoga
+consultado: '2026-09-28'
+estado: verificado

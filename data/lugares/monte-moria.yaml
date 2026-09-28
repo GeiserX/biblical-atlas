@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-moria
+nombre: Monte Moria
+nombres:
+- nombre: Monte Moria
+- nombre: Monte del templo
+  nota: Nombre de la lámina B11 para el recinto del templo en el siglo I.
+tipo: monte
+lat: 31.777778
+lon: 35.235556
+precision: punto
+coord_fuente: openbible:aac1fcf
+coord_url: https://www.openbible.info/geo/ancient/aac1fcf/mount-moriah
+resumen: Elevación rocosa de Jerusalén donde Salomón construyó el templo. En el siglo I la ocupaba el templo que
+  amplió Herodes, donde Jesús enseñó y que limpió de comerciantes dos veces.
+razon: 'Perspicacia «Moria» (párr. 2), la lámina B11 y «Jerusalén y el templo que Jesús conoció» (párr. 1-2). La
+  coordenada es de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-moria
+- tnm-b11
+- vbt-jerusalen-templo
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Moria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
+  tipo: perspicacia
+- titulo: Mateo 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/21
+  tipo: biblia
+buscar: Monte Moria
+consultado: '2026-09-28'
+estado: verificado

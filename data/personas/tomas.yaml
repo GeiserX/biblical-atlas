@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tomas
+nombre: Tomás
+nombres:
+- nombre: Tomás
+- nombre: Dídimo
+  nota: Significa «el Gemelo» (Jn 11:16).
+resumen: Apóstol llamado Dídimo, «el Gemelo». Expresaba sus dudas sin rodeos, pero cuando quedaban aclaradas confesaba su
+  fe, como al ver a Jesús resucitado.
+razon: Perspicacia «Tomás» (párr. 2-4); Jn 11:16; 20:24-28.
+fuentes:
+- it-tomas
+- juan-20
+relaciones:
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  razon: Mt 10:3.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Tomás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004385
+  tipo: perspicacia
+- titulo: Juan 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/20
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

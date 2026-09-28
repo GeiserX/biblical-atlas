@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hebron
+nombre: Hebrón
+nombres:
+- nombre: Quiryat-Arbá
+  nota: Nombre antiguo de la ciudad.
+- nombre: Hebrón
+tipo: ciudad
+lat: 31.525087
+lon: 35.10222
+precision: punto
+coord_fuente: openbible:a85151a
+coord_url: https://www.openbible.info/geo/ancient/a85151a/hebron
+resumen: Ciudad antigua de la región montañosa de Judá, unos 30 km al SSO de Jerusalén. David reinó allí siete años y medio
+  sobre Judá.
+razon: 'Perspicacia «Hebrón», núm. 3, párr. 3 y 7; 2Sa 2:1-4, 11. OpenBible: solo el punto.'
+fuentes:
+- it-hebron
+- openbible-geo
+- 2-samuel-2
+enlaces:
+- titulo: 'Perspicacia: «Hebrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001956
+  tipo: perspicacia
+- titulo: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

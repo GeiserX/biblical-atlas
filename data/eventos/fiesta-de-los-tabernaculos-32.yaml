@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: fiesta-de-los-tabernaculos-32
+titulo: Enseña en la Fiesta de los Tabernáculos; mandan guardias a arrestarlo
+fecha:
+  desde: 32
+  hasta: 32
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: Fiesta de los Tabernáculos de 32 e.c.
+  detalle:
+    mes: tisri
+lugares:
+- jerusalen
+- monte-moria
+personas:
+- jesus
+pasajes:
+- Jn 7:11-52
+resumen: A mitad de la fiesta, Jesús enseña en el templo y muchos creen en él. Los fariseos y los sacerdotes mandan
+  guardias a arrestarlo, pero estos vuelven sin él.
+razon: La tabla A7-E da cuándo y dónde. Las notas de Jn 7:2 y 7:37 ponen la fiesta en el otoño de 32 y su último
+  día el 21 de tisri.
+fuentes:
+- tnm-a7-e
+- juan-7
+- jy-cap-66
+- jy-cap-67
+orden_relato:
+  serie: a7
+  orden: 64
+buscar: Enseña en la Fiesta de los Tabernáculos
+consultado: '2026-09-28'
+estado: verificado

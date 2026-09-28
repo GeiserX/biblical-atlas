@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoram-de-israel
+nombre: Jehoram
+nombres:
+- nombre: Jehoram
+- nombre: Joram
+  nota: Forma abreviada.
+desambiguacion: Rey de Israel, hijo de Acab; su cuñado Jehoram reinaba a la vez en Judá.
+no_confundir_con:
+- jehoram-de-juda
+fecha:
+  desde: -916
+  hasta: -904
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 917-905 a.e.c.
+resumen: Hijo de Acab y hermano de Ocozías. Quitó la columna de Baal pero siguió con los becerros. Con Jehosafat atacó Moab;
+  Jehú lo mató de un flechazo junto a Jezreel.
+razon: Perspicacia «Jehoram», núm. 2; 2Re 3:1-27 y 9:14-26.
+fuentes:
+- it-jehoram
+- 2-reyes-3
+- 2-reyes-9
+- tnm-a6-a
+enlaces:
+- titulo: 'Perspicacia: «Jehoram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002381
+  tipo: perspicacia
+- titulo: 2 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: acab
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-reyes-3
+  razon: Hijo de Acab (2Re 3:1).
+  estado: verificado
+- tipo: sucede_a
+  persona: ocozias-de-israel
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-reyes-1
+  razon: Sucedió a su hermano, que murió sin hijos (2Re 1:17).
+  estado: verificado
+- tipo: murio_en
+  lugar: jezreel
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-reyes-9
+  razon: Jehú lo mató junto a Jezreel y lo echó al campo de Nabot (2Re 9:24-26).
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

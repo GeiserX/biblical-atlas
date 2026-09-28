@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-de-juda
+nombre: Abías
+nombres:
+- nombre: Abías
+- nombre: Abiyam
+  nota: Así lo llama 1 Reyes 15.
+desambiguacion: Segundo rey de Judá; no es el hijo de Jeroboán que murió joven.
+fecha:
+  desde: -979
+  hasta: -977
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 980-978 a.e.c.
+resumen: Hijo de Rehoboam y Maacá. Venció a Jeroboán, que le doblaba en soldados, y le quitó Betel, pero no quitó la idolatría
+  del país.
+razon: Perspicacia «Abías», núm. 5; 2Cr 13:1-20 y 1Re 15:1-8.
+fuentes:
+- it-abias
+- 2-cronicas-13
+- 1-reyes-15
+- tnm-a6-a
+enlaces:
+- titulo: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  tipo: perspicacia
+- titulo: 2 Crónicas 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/13
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: rehoboam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-abias
+  - 2-cronicas-11
+  razon: Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).
+  estado: verificado
+- tipo: sucede_a
+  persona: rehoboam
+  deducido: false
+  fuentes:
+  - it-abias
+  - 1-reyes-14
+  razon: Reinó a la muerte de su padre (1Re 14:31).
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

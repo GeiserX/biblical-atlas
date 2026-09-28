@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sumo-sacerdocio-de-anas
+nombre: Anás, sumo sacerdote
+tipo: sumo-sacerdote
+persona: anas
+fecha:
+  desde: 6
+  hasta: 15
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 6 a c. 15 e.c.
+lugares:
+- jerusalen
+resumen: Quirinio lo nombró y Roma lo destituyó; después siguió influyendo como sumo sacerdote retirado.
+razon: Perspicacia «Anás» (párr. 2) y la nota de Jn 18:13.
+fuentes:
+- it-anas
+- juan-18
+buscar: Anás
+consultado: '2026-09-28'
+estado: verificado

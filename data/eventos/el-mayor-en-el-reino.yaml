@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-mayor-en-el-reino
+titulo: Quién es el mayor en el Reino; la oveja perdida y el esclavo que no perdonó
+fecha:
+  desde: 32
+  hasta: 32
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: Tras la Pascua de 32 e.c.
+lugares:
+- capernaum
+personas:
+- jesus
+pasajes:
+- Mt 18:1-35
+- Mr 9:33-50
+- Lu 9:46-50
+resumen: Los discípulos discuten quién es el mayor. Jesús pone a un niño como ejemplo y narra la parábola de la
+  oveja que se extravía y la del esclavo que no quiso perdonar.
+razon: La tabla A7-E da cuándo y dónde. La tabla mantiene el lugar de la fila anterior; jy caps. 62 a 64.
+fuentes:
+- tnm-a7-e
+- mateo-18
+- marcos-9
+- lucas-9
+- jy-cap-62
+- jy-cap-63
+- jy-cap-64
+orden_relato:
+  serie: a7
+  orden: 62
+buscar: Quién es el mayor en el Reino
+consultado: '2026-09-28'
+estado: verificado

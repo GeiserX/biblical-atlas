@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: acaz
+nombre: Reinado de Acaz en Judá
+tipo: rey
+persona: acaz
+fecha:
+  desde: -761
+  hasta: -745
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 762-746 a.e.c.
+lugares:
+- jerusalen
+resumen: Dieciséis años en Jerusalén.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 16.
+fuentes:
+- tnm-a6-b
+- 2-reyes-16
+- it-acaz
+historial:
+- fecha: '2026-09-28'
+  cambio: El estudio 3 ponía su comienzo hacia 761 a.e.c.; A6-B, más reciente, da 762.
+  fuente: tnm-a6-b
+buscar: Acaz rey
+consultado: '2026-09-28'
+estado: verificado

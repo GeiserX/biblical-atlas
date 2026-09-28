@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: santiago-hijo-de-alfeo
+nombre: Santiago
+nombres:
+- nombre: Santiago, hijo de Alfeo
+- nombre: Santiago el Menos
+  nota: Probablemente el mismo, si Alfeo y Clopas eran la misma persona (Perspicacia).
+desambiguacion: Apóstol, hijo de Alfeo; no es Santiago, hijo de Zebedeo, ni Santiago, el medio hermano de Jesús.
+no_confundir_con:
+- santiago-hijo-de-zebedeo
+- santiago-hermano-de-jesus
+resumen: Uno de los doce apóstoles, hijo de Alfeo. Si Alfeo es el Clopas de Jn 19:25, como se cree, su madre sería María,
+  la esposa de Clopas, y él sería Santiago el Menos.
+razon: Perspicacia «Santiago» (núm. 3) da la identificación probable de Alfeo con Clopas.
+fuentes:
+- it-santiago
+- mateo-10
+relaciones:
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  razon: Mt 10:3.
+  estado: verificado
+- tipo: pariente
+  persona: maria-esposa-de-clopas
+  relacion: madre
+  deducido: true
+  fuentes:
+  - it-santiago
+  - marcos-15
+  razon: 'Perspicacia «Santiago» (núm. 3): sería su madre si Alfeo y Clopas son la misma persona (Mr 15:40).'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Santiago»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
+  tipo: perspicacia
+- titulo: Mateo 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/10
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

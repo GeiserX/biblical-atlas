@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-moises
+titulo: Nace Moisés
+fecha:
+  desde: -1592
+  hasta: -1592
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1593 a.e.c.
+lugares:
+- egipto
+personas: []
+pasajes:
+- Éx 2:1-10
+- Hch 7:20-23
+resumen: Nace Moisés cuando el faraón manda matar a los niños hebreos. Lo cría la hija del faraón y crece en la corte egipcia.
+razon: El cuadro del estudio 3 fecha su nacimiento en 1593 a.e.c. y su huida a Madián en 1553, cuando tenía 40 años.
+fuentes:
+- si-3
+- exodo-2
+buscar: nacimiento de Moisés
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: dario-i
+nombre: Darío I, rey de Persia
+tipo: rey
+fecha:
+  desde: -521
+  hasta: -485
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 522-486 a.e.c.
+lugares:
+- persia
+- susa
+persona: dario-i
+resumen: Se hizo con el trono en 522. En su segundo año se reanudó el templo, terminado en su sexto año; sus tropas perdieron
+  en Maratón en 490.
+razon: 'Perspicacia «Darío», núm. 2, y «Persia, persas»: muerte en 486 y sucesión de su hijo Jerjes.'
+fuentes:
+- it-dario
+- it-persia
+buscar: Darío
+consultado: '2026-09-28'
+estado: verificado

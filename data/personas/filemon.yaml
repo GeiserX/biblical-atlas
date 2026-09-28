@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: filemon
+nombre: Filemón
+nombres:
+- nombre: Filemón
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+desambiguacion: La persona. La carta que lleva su nombre es carta:filemon.
+resumen: Cristiano de Colosas, dueño de esclavos, en cuya casa se reunía la congregación. Pablo lo llama colaborador
+  amado; al parecer se hizo cristiano por medio de él.
+razon: Perspicacia «Filemón» (párr. 1 y 3); Flm 1, 2, 19. La fecha es la de la carta, hacia 60-61 según la Tabla de los libros.
+fuentes:
+- it-filemon
+- filemon-1
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Filemón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003463
+  tipo: perspicacia
+- titulo: Filemón 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: colosas
+  deducido: false
+  fuentes:
+  - it-filemon
+  - colosenses-4
+  razon: Perspicacia sitúa su casa en Colosas (compara Col 4:9 con Flm 10-12).
+  estado: verificado

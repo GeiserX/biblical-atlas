@@ -1,0 +1,75 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: sodoma
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-108_8_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_8_VIDEO&appLanguage=S"
+    publicado: "2024-01-01"
+    menciones: 17
+    terminos:
+      "Sodoma": 17
+  - docid: "pub-jwb-108_13_VIDEO"
+    titulo: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_13_VIDEO&appLanguage=S"
+    publicado: "2024-01-02"
+    menciones: 16
+    terminos:
+      "Sodoma": 16
+  - docid: "pub-jwb-138_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2026 (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_1_VIDEO&appLanguage=S"
+    publicado: "2026-06-01"
+    menciones: 7
+    terminos:
+      "Sodoma": 7
+  - docid: "pub-jwb-138_8_VIDEO"
+    titulo: "David Splane: Denles el beneficio de la duda (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_8_VIDEO&appLanguage=S"
+    publicado: "2026-06-02"
+    menciones: 5
+    terminos:
+      "Sodoma": 5
+  - docid: "pub-jwb-102_1_VIDEO"
+    titulo: "JW Broadcasting: Septiembre de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-102_1_VIDEO&appLanguage=S"
+    publicado: "2023-09-04"
+    menciones: 3
+    terminos:
+      "Sodoma": 3
+  - docid: "pub-jwb-102_7_VIDEO"
+    titulo: "Ejemplos de fe: Abrahán (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/Ejemplos-de-fe/abrahan-parte-1/"
+    publicado: "2023-09-18"
+    menciones: 3
+    terminos:
+      "Sodoma": 3
+  - docid: "pub-gnj_6_VIDEO"
+    titulo: "Episodio 6: “¿Eres tú el que tiene que venir?”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-6-eres-t%C3%BA-el-que-tiene-que-venir/"
+    publicado: "2026-05-01"
+    menciones: 2
+    terminos:
+      "Sodoma": 2
+  - docid: "pub-jwb_201803_11_VIDEO"
+    titulo: "Christopher Mavor: Hacer caso de las advertencias nos salvará la vida (Mar. 13:19)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201803_11_VIDEO&appLanguage=S"
+    publicado: "2018-03-26"
+    menciones: 2
+    terminos:
+      "Sodoma": 2
+  - docid: "pub-jwbgg_201609_3_VIDEO"
+    titulo: "Graduación de la clase 141 de la Escuela de Galaad: Parte 3. Discurso de conclusión y entrega de asignaciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbgg_201609_3_VIDEO&appLanguage=S"
+    publicado: "2017-03-02"
+    menciones: 2
+    terminos:
+      "Sodoma": 2
+  - docid: "pub-jwbvod25_5_VIDEO"
+    titulo: "Gage Fleegle: Imitemos a Abrahán (Sant. 2:23)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_5_VIDEO&appLanguage=S"
+    publicado: "2025-01-31"
+    menciones: 2
+    terminos:
+      "Sodoma": 2

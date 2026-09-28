@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-tomas
+titulo: Se aparece a los discípulos con Tomás
+fecha:
+  desde: 33
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+lugares:
+- jerusalen
+personas:
+- jesus
+- tomas
+pasajes:
+- Jn 20:26-29
+resumen: Ocho días después vuelve a aparecerse a los discípulos, esta vez con Tomás, que había dudado. Tomás lo
+  reconoce como su Señor y su Dios.
+razon: La tabla A7-H da el día y el lugar. La tabla pone esta y las demás apariciones en «Jerusalén; Galilea» después del
+  16 de nisán. El año 33 lo da la cabecera de A7-G (8 de nisán del 33).
+fuentes:
+- tnm-a7-h
+- juan-20
+- jy-cap-135
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 125
+buscar: Se aparece a los discípulos con Tomás
+consultado: '2026-09-28'
+estado: verificado

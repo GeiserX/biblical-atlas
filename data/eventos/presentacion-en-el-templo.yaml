@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: presentacion-en-el-templo
+titulo: Circuncisión y presentación de Jesús en el templo
+fecha:
+  desde: -1
+  hasta: -1
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 2 a.e.c.
+orden_relato:
+  serie: a7
+  orden: 6
+lugares:
+- belen
+- jerusalen
+personas:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+- simeon-del-templo
+- ana-profetisa
+pasajes:
+- Lu 2:21-38
+resumen: Jesús es circuncidado al octavo día. Cumplidos los 40 días, sus padres lo presentan en el templo con dos aves, la
+  ofrenda de los pobres; Simeón y Ana reconocen en él al Cristo.
+razon: A7-A, fila 6. La nota de Lu 2:24 deduce de la ofrenda que los astrólogos aún no habían llegado con sus regalos.
+fuentes:
+- tnm-a7-a
+- lucas-2
+- jy-cap-6
+consultado: '2026-09-28'
+estado: verificado

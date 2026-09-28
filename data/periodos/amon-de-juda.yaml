@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: amon-de-juda
+nombre: Reinado de Amón en Judá
+tipo: rey
+persona: amon-de-juda
+fecha:
+  desde: -660
+  hasta: -658
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 661-659 a.e.c.
+lugares:
+- jerusalen
+resumen: Dos años en Jerusalén.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 21.
+fuentes:
+- tnm-a6-b
+- 2-reyes-21
+- it-amon
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
+  fuente: tnm-a6-b
+buscar: Amón rey
+consultado: '2026-09-28'
+estado: verificado

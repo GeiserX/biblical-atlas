@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sitio-de-jerusalen-609
+titulo: Empieza el último sitio de Jerusalén
+fecha:
+  desde: -608
+  hasta: -608
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 609 a.e.c.
+  detalle:
+    mes: tebet
+    dia: 10
+lugares:
+- jerusalen
+- ribla
+personas:
+- nabucodonosor-ii
+- sedequias
+- jeremias-profeta
+pasajes:
+- 2Re 25:1-2
+- Eze 24:1-2
+- Jer 39:1
+resumen: Sedequías se rebela y busca ayuda en Egipto. Nabucodonosor vuelve por tercera vez contra Judá y cerca Jerusalén el
+  día 10 del mes décimo; parece que dirige la campaña desde Riblá.
+razon: El estudio 3 fecha el sitio en 609; Perspicacia «Sedequías», núm. 4, párr. 11, y «Riblá», núm. 2, párr. 3. El mes décimo
+  es tebet.
+fuentes:
+- si-3
+- it-sedequias
+- it-ribla
+- 2-reyes-25
+enlaces:
+- titulo: 'Perspicacia: «Sedequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Riblá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003729
+  tipo: perspicacia
+- titulo: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  tipo: biblia
+buscar: sitio de Jerusalén 609 Sedequías
+consultado: '2026-09-28'
+estado: verificado

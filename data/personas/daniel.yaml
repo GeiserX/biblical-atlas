@@ -3,14 +3,52 @@ id: daniel
 nombre: Daniel
 nombres:
 - nombre: Daniel
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril persas. Artículo: Perspicacia «Daniel» (apartado 2), confirmado
-  por su título.'
+- nombre: Beltsasar
+desambiguacion: El profeta, escritor del libro de Daniel; no el hijo de David ni el sacerdote que viajó con Esdras.
+fecha:
+  desde: -616
+  hasta: -535
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: de 617 a.e.c. a por lo menos 536 a.e.c.
+resumen: Profeta de la tribu de Judá llevado joven a Babilonia en 617 a.e.c. Sirvió en la corte babilonia y en la persa,
+  interpretó la escritura en la pared y seguía activo en el tercer año de Ciro.
+razon: 'Perspicacia «Daniel», núm. 2: llevado a principios de 617 con Joaquín y en la corte persa hasta al menos el tercer
+  año de Ciro (536). Da 1:1-7 y 10:1.'
 fuentes:
 - it-daniel
+- daniel-1
+- daniel-10
+- si-3
 enlaces:
 - titulo: 'Perspicacia: «Daniel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001117
   tipo: perspicacia
+- titulo: Daniel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/1
+  tipo: biblia
+no_afirmamos:
+- 'Que Daniel volviera a Jerusalén con Zorobabel: vivió para ver el regreso, pero la Biblia no dice que fuera.'
+- 'Que Daniel estuviera en Susa en persona durante la visión de Da 8: puede que se viera allí en visión.'
+relaciones:
+- tipo: vivio_en
+  lugar: babilonia
+  fecha:
+    desde: -616
+    hasta: -535
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: de 617 a 536 a.e.c.
+  deducido: false
+  fuentes:
+  - it-daniel
+  - daniel-1
+  - daniel-10
+  razon: 'Perspicacia «Daniel», núm. 2: sirvió en la corte de Babilonia desde su llegada hasta el tercer año de Ciro.'
+  estado: verificado
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

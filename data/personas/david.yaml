@@ -3,14 +3,52 @@ id: david
 nombre: David
 nombres:
 - nombre: David
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril reyes. Artículo: Perspicacia «David», confirmado por su
-  título.'
+fecha:
+  desde: -1076
+  hasta: -1037
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1077-1038 a.e.c.
+resumen: Hijo menor de Jesé, de Belén. Pastor ungido por Samuel, reinó siete años y medio en Hebrón y luego en Jerusalén,
+  que tomó a los jebuseos. Jehová pactó con él un reino duradero.
+razon: Perspicacia «David», párr. 3, 4, 20 y 21; 2Sa 5:4-10. La lámina B7 da el reinado de 1077 a 1038 y el pacto hacia 1070.
 fuentes:
 - it-david
+- 2-samuel-5
+- 1-reyes-2
+- tnm-b7
 enlaces:
 - titulo: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
   tipo: perspicacia
+- titulo: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  tipo: biblia
+relaciones:
+- tipo: nacio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - it-david
+  razon: 'Perspicacia «David», párr. 4: Belén era su pueblo natal.'
+  estado: verificado
+- tipo: sucede_a
+  persona: saul
+  deducido: false
+  fuentes:
+  - it-david
+  - 2-samuel-2
+  razon: En 1077 los de Judá lo ungieron rey en Hebrón tras la muerte de Saúl (2Sa 2:4).
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-david
+  - 2-samuel-5
+  razon: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
+  estado: verificado
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

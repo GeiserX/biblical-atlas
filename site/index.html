@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>biblical-earth · Los viajes de Pablo</title>
+<title>biblical-earth · Cada relato de la Biblia, en su lugar y en su tiempo</title>
 <link rel="icon" href="data:,">
-<meta name="description" content="Mapa y línea de tiempo de los viajes de Pablo y sus cartas, con cada dato enlazado a su fuente en wol.jw.org.">
+<meta name="description" content="Mapa y línea de tiempo de los relatos de la Biblia, con cada dato enlazado a su fuente en wol.jw.org.">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.11.2/dist/maplibre-gl.css" integrity="sha384-ntw3zEt6rcVML7jDK0ULmHa5hxLB23afsPqzqfY+gLgMfAkbFCnCgPpkZvV5mmZX" crossorigin="anonymous">
 <link rel="stylesheet" href="kit/tokens.css">
 <link rel="stylesheet" href="kit/components.css">
@@ -68,7 +68,7 @@
       <label class="be-search" id="caja-busqueda">
         <svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <span class="sr-only">Buscar</span>
-        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Buscar lugar, persona, carta o pasaje («Hch 16»)" role="combobox" aria-expanded="false" aria-controls="resultados" aria-autocomplete="list">
+        <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Buscar persona, lugar, capítulo («Hch 16») o año («607 a.e.c.»)" role="combobox" aria-expanded="false" aria-controls="resultados" aria-autocomplete="list">
         <kbd class="be-kbd" id="q-kbd">/</kbd>
       </label>
       <div class="be-results resultados" id="resultados" role="listbox" aria-label="Resultados de la búsqueda" hidden></div>
@@ -126,7 +126,7 @@
       <span class="be-chrono be-chrono--tnm cronologia">Cronología TNM</span>
     </div>
     <div class="be-timeline__labels linea-carriles" id="carriles"></div>
-    <div class="be-timeline__track linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+    <div class="be-timeline__track linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo" aria-valuemin="-4025" aria-valuemax="100" aria-valuenow="50.3">
       <svg id="linea-svg" class="linea-svg" aria-hidden="false"></svg>
     </div>
     <section class="vista vista-sincronia" id="vista-sincronia" aria-label="Sincronía" hidden></section>

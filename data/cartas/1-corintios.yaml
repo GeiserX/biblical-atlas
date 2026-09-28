@@ -17,6 +17,16 @@ destinatarios:
   texto: Congregación de Corinto
   lugares:
   - corinto
+personas:
+- sostenes
+- apolos
+- pedro
+- crispo
+- gayo-de-corinto
+- estefanas
+- timoteo
+- aquila
+- priscila
 contexto_origen:
   resumen: 'Tercer viaje: Pablo lleva tiempo en Éfeso y gente de la casa de Cloe le informa de divisiones en Corinto.'
   fuentes:
@@ -31,6 +41,10 @@ fuentes:
 - si-3
 - it-corintios
 - 1-corintios-16
+- it-sostenes
+- it-apolos
+- it-estefanas
+- it-crispo
 enlaces:
 - titulo: 'Perspicacia: «Corintios, Cartas a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
@@ -38,5 +52,5 @@ enlaces:
 - titulo: 1 Corintios 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

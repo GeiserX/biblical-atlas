@@ -12,18 +12,42 @@ fecha:
   detalle:
     mes: nisan
     dia: 16
-lugares: []
-personas: []
-pasajes: []
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Fecha de la tabla del estudio 3; artículo: Perspicacia
-  «Resurrección», confirmado por su título.'
+lugares:
+- jerusalen
+personas:
+- jesus
+- maria-magdalena
+- maria-esposa-de-clopas
+- pedro
+- juan-apostol
+pasajes:
+- Mt 28:1-15
+- Mr 16:1-8
+- Lu 24:1-49
+- Jn 20:1-25
+resumen: Al amanecer del 16 de nisán, unas mujeres encuentran la tumba abierta y un ángel les dice que Jesús ha
+  sido resucitado. Ese día se aparece cinco veces a sus discípulos.
+razon: La tabla A7-H da el día y el lugar. La nota de Mt 28:1 explica el día; Perspicacia «Resurrección» (párr.
+  17-18). El estudio 3 da la misma fecha.
 fuentes:
+- tnm-a7-h
+- mateo-28
+- marcos-16
+- lucas-24
+- juan-20
+- jy-cap-133
+- jy-cap-134
+- jy-cap-135
 - si-3
 - it-resurreccion
+- tnm-b12-b
+orden_relato:
+  serie: a7
+  orden: 124
 enlaces:
 - titulo: 'Perspicacia: «Resurrección»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003709
   tipo: perspicacia
+buscar: Resurrección de Jesús
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

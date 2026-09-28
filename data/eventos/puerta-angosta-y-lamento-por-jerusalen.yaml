@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: puerta-angosta-y-lamento-por-jerusalen
+titulo: La puerta angosta; se lamenta por Jerusalén
+fecha:
+  desde: 32
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+lugares:
+- perea
+personas:
+- jesus
+- herodes-antipas
+pasajes:
+- Lu 13:23-35
+resumen: Jesús anima a esforzarse por entrar por la puerta angosta. Unos fariseos le dicen que Herodes quiere matarlo;
+  él lo llama zorro y se lamenta por Jerusalén.
+razon: La tabla A7-F da cuándo y dónde. La nota de Lu 13:31 identifica a Herodes Antipas; Perspicacia «Herodes»
+  (apartado 2).
+fuentes:
+- tnm-a7-f
+- lucas-13
+- jy-cap-82
+- it-herodes
+orden_relato:
+  serie: a7
+  orden: 76
+buscar: La puerta angosta
+consultado: '2026-09-28'
+estado: verificado

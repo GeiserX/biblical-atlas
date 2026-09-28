@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehoas-de-israel
+nombre: Reinado de Jehoás en Israel
+tipo: rey
+persona: jehoas-de-israel
+fecha:
+  desde: -861
+  hasta: -843
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 862-844 a.e.c.
+lugares:
+- samaria
+resumen: Tres años con su padre y dieciséis en solitario, en Samaria.
+razon: 'A6-A: «Jehoacaz y Jehoás: 3 años» desde c. 862 y «Jehoás solo: 16 años» desde c. 859 (2Re 13:10).'
+fuentes:
+- tnm-a6-a
+- 2-reyes-13
+- it-jehoas
+buscar: Jehoás rey
+consultado: '2026-09-28'
+estado: verificado

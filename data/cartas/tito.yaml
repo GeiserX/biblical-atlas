@@ -17,6 +17,12 @@ destinatarios:
   texto: Tito, a quien Pablo dejó en Creta
   lugares:
   - creta
+  personas:
+  - tito
+personas:
+- tito
+- tiquico
+- apolos
 contexto_origen:
   resumen: Tras salir libre de su primera prisión y antes de la última, Pablo estuvo en Creta con Tito.
   fuentes:
@@ -32,6 +38,7 @@ fuentes:
 - si-3
 - it-tito
 - tito-1
+- it-tito-persona
 enlaces:
 - titulo: 'Perspicacia: «Tito, Carta a»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004432
@@ -39,5 +46,5 @@ enlaces:
 - titulo: Tito 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-28'
 estado: verificado

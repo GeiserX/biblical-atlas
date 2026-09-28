@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betfague
+nombre: Betfagué
+nombres:
+- nombre: Betfagué
+  nota: Probablemente significa «casa de las brevas».
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: et-Tur, en la ladera sureste del monte de los Olivos
+  geometria:
+    tipo: punto
+    lat: 31.777619
+    lon: 35.250839
+  estado: tradicion
+  fuentes:
+  - it-betfague
+  - mateo-21
+  - openbible-geo
+  razon: Perspicacia y la nota de Mt 21:1 dan la ubicación tradicional, entre Betania y Jerusalén. Punto de OpenBible.
+  coord_fuente: openbible:abff59d
+  coord_url: https://www.openbible.info/geo/ancient/abff59d/bethphage
+- nombre: Abu Dis, al otro lado del barranco al SE de Betania
+  geometria:
+    tipo: punto
+    lat: 31.7625
+    lon: 35.265833
+  estado: alternativa
+  fuentes:
+  - it-betfague
+  - openbible-geo
+  razon: Perspicacia (párr. 2) dice que algunos lo ponen aquí. Punto de OpenBible.
+  coord_fuente: openbible:abff59d
+  coord_url: https://www.openbible.info/geo/ancient/abff59d/bethphage
+resumen: Pueblo del monte de los Olivos, cerca de Betania, desde donde Jesús mandó a buscar el burro para entrar
+  en Jerusalén el 9 de nisán de 33.
+razon: Perspicacia «Betfagué» (párr. 2) y la nota de Mt 21:1. La ubicación exacta no es segura.
+fuentes:
+- it-betfague
+- mateo-21
+enlaces:
+- titulo: 'Perspicacia: «Betfagué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000705
+  tipo: perspicacia
+- titulo: Mateo 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/21
+  tipo: biblia
+buscar: Betfagué
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,89 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: samaria
+generado: "2026-09-28"
+videos:
+  - docid: "pub-tiy_1_VIDEO"
+    titulo: "“Oh, Jehová, en ti confío”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-tiy_1_VIDEO&appLanguage=S"
+    publicado: "2017-01-02"
+    menciones: 10
+    terminos:
+      "Samaria": 10
+  - docid: "pub-jwbcov25_7_VIDEO"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
+    publicado: "2026-01-19"
+    menciones: 6
+    terminos:
+      "Samaria": 6
+  - docid: "pub-jwbvod25_4_VIDEO"
+    titulo: "Paul Gillies: Aceptemos con gusto los cambios (Hech. 8:39)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_4_VIDEO&appLanguage=S"
+    publicado: "2025-01-24"
+    menciones: 6
+    terminos:
+      "Samaria": 6
+  - docid: "pub-co-r20_8_VIDEO"
+    titulo: "Sábado tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_8_VIDEO&appLanguage=S"
+    publicado: "2020-08-03"
+    menciones: 4
+    terminos:
+      "Samaria": 4
+  - docid: "pub-jjs_1_VIDEO"
+    titulo: "Nehemías: La felicidad que viene de Jehová es nuestra fortaleza (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/nehemias-felicidad-viene-jehova/pelicula-parte-1/"
+    publicado: "2020-09-28"
+    menciones: 4
+    terminos:
+      "Samaria": 4
+  - docid: "pub-gnj_3_VIDEO"
+    titulo: "Episodio 3: “Ese soy yo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
+    publicado: "2026-01-19"
+    menciones: 3
+    terminos:
+      "Samaria": 3
+  - docid: "pub-jwb-106_1_VIDEO"
+    titulo: "JW Broadcasting: Octubre de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-106_1_VIDEO&appLanguage=S"
+    publicado: "2023-10-02"
+    menciones: 3
+    terminos:
+      "Samaria": 3
+  - docid: "pub-jwb-106_3_VIDEO"
+    titulo: "Geoffrey Jackson: Cómo crear oportunidades de predicarle a la gente (Juan 4:6)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-106_3_VIDEO&appLanguage=S"
+    publicado: "2023-10-16"
+    menciones: 3
+    terminos:
+      "Samaria": 3
+  - docid: "pub-jwb_202104_4_VIDEO"
+    titulo: "Aprendamos de ellos: Felipe el evangelizador"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202104_4_VIDEO&appLanguage=S"
+    publicado: "2021-04-19"
+    menciones: 3
+    terminos:
+      "Samaria": 3
+  - docid: "pub-co-r20_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_11_VIDEO&appLanguage=S"
+    publicado: "2020-08-24"
+    menciones: 2
+    terminos:
+      "Samaria": 2
+  - docid: "pub-co-r22_120_VIDEO"
+    titulo: "Anthony Morris: Esté listo para predicar “las buenas noticias de la paz”. Tome la iniciativa"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_120_VIDEO&appLanguage=S"
+    publicado: "2022-07-18"
+    menciones: 2
+    terminos:
+      "Samaria": 2
+  - docid: "pub-jjs_2_VIDEO"
+    titulo: "Nehemías: La felicidad que viene de Jehová es nuestra fortaleza (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/nehemias-felicidad-viene-jehova/pelicula-parte-2/"
+    publicado: "2020-09-28"
+    menciones: 2
+    terminos:
+      "Samaria": 2

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-liberado-de-la-carcel
+titulo: Un ángel libera a Pedro de la cárcel
+fecha:
+  desde: 44
+  hasta: 44
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Pascua de 44 e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: hechos
+  orden: 1203
+lugares:
+- jerusalen
+personas:
+- pedro
+- herodes-agripa-i
+- rode
+- maria-madre-de-juan-marcos
+- santiago-hermano-de-jesus
+pasajes:
+- Hch 12:3-19
+resumen: Herodes encarcela a Pedro durante los Panes sin Levadura, con cuatro grupos de cuatro soldados. La congregación
+  ora y un ángel lo saca. Pedro va a casa de María, manda avisar a Santiago y se marcha.
+razon: El estudio 3 (párr. 20) fecha el arresto en la Pascua de 44; la nota de estudio de Hch 12:3 da la fiesta;
+  Perspicacia «Pedro» (párr. 21) y «Rode» (párr. 2).
+fuentes:
+- si-3
+- it-pedro
+- it-rode
+- hechos-12
+- bt-10
+nota: Hch 12:17 no dice adónde fue Pedro después.
+buscar: Pedro liberado ángel
+consultado: '2026-09-28'
+estado: verificado

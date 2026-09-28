@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-discipulos-comparten-sus-bienes
+titulo: Los creyentes lo comparten todo; Bernabé vende un campo
+fecha:
+  desde: 33
+  hasta: 34
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+orden_relato:
+  serie: hechos
+  orden: 432
+lugares:
+- jerusalen
+personas:
+- bernabe
+pasajes:
+- Hch 4:32-37
+resumen: Muchos visitantes se quedan en Jerusalén tras Pentecostés. Los creyentes venden campos y casas y los apóstoles
+  reparten según la necesidad. José, un levita de Chipre al que llaman Bernabé, vende un terreno.
+razon: Perspicacia «Ananías» (párr. 2) explica el fondo común; una nota del capítulo 3 de «Testimonio completo»
+  dice que fue una medida temporal y voluntaria.
+fuentes:
+- it-ananias
+- bt-3
+- hechos-4
+nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+buscar: Bernabé vende un campo
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: agricultores-asesinos-y-banquete-de-boda
+titulo: Los agricultores asesinos y el banquete de boda
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 11 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 11
+lugares:
+- monte-moria
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Mt 21:33-22:14
+- Mr 12:1-12
+- Lu 20:9-19
+resumen: Jesús cuenta la parábola de los agricultores que matan al hijo del dueño de la viña y la del banquete de
+  boda, dirigidas a los líderes que lo rechazan.
+razon: La tabla A7-G da el día y el lugar. Mt 21:33-22:14.
+fuentes:
+- tnm-a7-g
+- mateo-21
+- mateo-22
+- marcos-12
+- lucas-20
+- jy-cap-106
+- jy-cap-107
+orden_relato:
+  serie: a7
+  orden: 100
+buscar: Los agricultores asesinos y el banquete de boda
+consultado: '2026-09-28'
+estado: verificado

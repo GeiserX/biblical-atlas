@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: torre-de-babel
+titulo: La torre de Babel y la confusión de lenguas
+fecha:
+  desde: -2268
+  hasta: -2029
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 2269-2030 a.e.c.
+lugares:
+- babilonia
+personas: []
+pasajes:
+- Gé 10:25
+- Gé 11:1-9
+resumen: En la llanura de Sinar la gente empieza a construir una ciudad con su torre. Dios confunde su idioma, la obra se
+  detiene y los pueblos se dispersan.
+razon: Perspicacia «Cronología» sitúa la confusión en los días de Péleg, entre 2269 y 2030 a.e.c.; el cuadro del estudio
+  3 dice «después de 2269».
+fuentes:
+- it-cronologia
+- si-3
+- it-babilonia
+- genesis-11
+buscar: torre de Babel
+consultado: '2026-09-28'
+estado: verificado

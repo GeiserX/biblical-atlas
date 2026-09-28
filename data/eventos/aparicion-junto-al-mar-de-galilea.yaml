@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-junto-al-mar-de-galilea
+titulo: Se aparece junto al mar de Galilea
+fecha:
+  desde: 33
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+lugares:
+- mar-de-galilea
+- galilea
+personas:
+- jesus
+- pedro
+- tomas
+pasajes:
+- Jn 21:1-23
+resumen: Tras una noche sin pescar nada, siete discípulos llenan la red por indicación de Jesús. Él les prepara
+  el desayuno y pregunta tres veces a Pedro si lo quiere.
+razon: 'La tabla A7-H da el día y el lugar. Jn 21:1 nombra el lugar: el mar de Tiberíades, otro nombre del mar de Galilea.
+  El año 33 lo da la cabecera de A7-G (8 de nisán del 33).'
+fuentes:
+- tnm-a7-h
+- juan-21
+- jy-cap-136
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 125
+buscar: Se aparece junto al mar de Galilea
+consultado: '2026-09-28'
+estado: verificado

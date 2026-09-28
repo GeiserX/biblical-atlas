@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: fiesta-de-la-dedicacion-32
+titulo: 'Fiesta de la Dedicación: el pastor excelente; intentan apedrearlo'
+fecha:
+  desde: 32
+  hasta: 32
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: Fiesta de la Dedicación de 32 e.c.
+  detalle:
+    mes: kislev
+lugares:
+- jerusalen
+- monte-moria
+- betania-del-otro-lado-del-jordan
+personas:
+- jesus
+pasajes:
+- Jn 10:1-39
+resumen: En el templo, Jesús habla del pastor excelente que da la vida por sus ovejas y dice que él y el Padre son
+  uno. Intentan apedrearlo y se va al otro lado del Jordán.
+razon: La tabla A7-E da cuándo y dónde. La nota de Jn 10:22 dice que la fiesta empezaba el 25 de kislev; Jn 10:23
+  nombra el pórtico de Salomón.
+fuentes:
+- tnm-a7-e
+- juan-10
+- jy-cap-80
+- jy-cap-81
+orden_relato:
+  serie: a7
+  orden: 73
+buscar: Fiesta de la Dedicación
+consultado: '2026-09-28'
+estado: verificado

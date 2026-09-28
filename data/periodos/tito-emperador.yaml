@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: tito-emperador
+nombre: Tito, emperador de Roma
+tipo: emperador
+fecha:
+  desde: 79
+  hasta: 81
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 79-81 e.c.
+lugares:
+- roma
+resumen: Antes de ser emperador mandó como general el asedio que acabó con Jerusalén en 70 e.c. No hay que confundirlo con
+  Tito, el compañero de Pablo.
+razon: Perspicacia «Roma» le da 79-81 e.c. y dice que antes dirigió el ataque contra Jerusalén; «Jerusalén» describe su
+  asedio de 70 e.c.
+fuentes:
+- it-roma
+- it-cesar
+- it-jerusalen
+buscar: Tito emperador
+consultado: '2026-09-28'
+estado: verificado

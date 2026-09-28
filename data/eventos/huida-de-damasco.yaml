@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: huida-de-damasco
+titulo: Pablo huye de Damasco en una canasta
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 36 e.c.
+orden_relato:
+  serie: hechos
+  orden: 923
+lugares:
+- damasco
+personas:
+- pablo
+pasajes:
+- Hch 9:23-25
+- 2Co 11:32, 33
+resumen: Los judíos de Damasco traman matarlo y vigilan las puertas. De noche, sus discípulos lo descuelgan en una
+  canasta por un hueco del muro.
+razon: '«Testimonio completo», cap. 8, párr. 16: el complot llega tres años después; el estudio 3 (párr. 22) cuenta
+  esos años como 34-36.'
+fuentes:
+- bt-8
+- si-3
+- hch-9
+- nota-hechos-9
+buscar: Pablo canasta Damasco
+consultado: '2026-09-28'
+estado: verificado

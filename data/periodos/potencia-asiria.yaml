@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-asiria
+nombre: Asiria, segunda potencia mundial
+tipo: potencia
+fecha:
+  desde: null
+  hasta: -631
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: hasta 632 a.e.c.
+lugares:
+- ninive
+resumen: Imperio del norte de Mesopotamia, con capital en Nínive. Tomó Samaria en 740 a.e.c. e invadió Judá en 732. Cayó
+  ante babilonios, medos y escitas. No tenemos fecha de su ascenso.
+razon: Perspicacia «Asiria» y «Veamos “la buena tierra”» fechan la caída de Nínive en 632 a.e.c.; su último rey resistió
+  en Harán hasta c. 629. «Babilonia» la llama segundo imperio mundial.
+fuentes:
+- it-asiria
+- lbt-imperios
+- it-babilonia
+buscar: Asiria potencia mundial
+consultado: '2026-09-28'
+estado: verificado

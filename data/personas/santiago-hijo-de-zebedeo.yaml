@@ -2,15 +2,80 @@
 id: santiago-hijo-de-zebedeo
 nombre: Santiago, hijo de Zebedeo
 nombres:
+- nombre: Santiago
 - nombre: Santiago, hijo de Zebedeo
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pedro. Artículo: Perspicacia «Santiago» (apartado
-  2), confirmado por su título.'
+- nombre: Boanerges
+  nota: Sobrenombre compartido con su hermano Juan (Mr 3:17).
+desambiguacion: El hijo de Zebedeo. No es Santiago hijo de Alfeo, otro apóstol, ni Santiago el medio hermano de
+  Jesús, que dirigía en Jerusalén.
+fecha:
+  desde: 30
+  hasta: 44
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 30-44 e.c.
+  nota: Desde su llamada en 30 hasta su muerte en 44.
+resumen: 'Apóstol, quizá el hermano mayor de Juan, y socio de Pedro en la pesca. Uno de los tres más cercanos a
+  Jesús. Herodes Agripa I lo mató a espada hacia 44: el primero de los doce que murió mártir.'
+razon: Perspicacia «Santiago» (apartado 2, párr. 3 a 8) da la llamada en 30, el nombramiento en 31 y la muerte en
+  44; la nota de estudio de Hch 12:2 lo confirma.
 fuentes:
 - it-santiago
+- hechos-12
+no_confundir_con:
+- santiago-hermano-de-jesus
+- santiago-hijo-de-alfeo
+relaciones:
+- tipo: pariente
+  persona: juan-apostol
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-santiago
+  razon: Mt 10:2; Perspicacia «Santiago», párr. 3.
+  estado: verificado
+- tipo: pariente
+  persona: zebedeo
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-santiago
+  - it-zebedeo
+  razon: Mt 10:2 lo llama hijo de Zebedeo.
+  estado: verificado
+- tipo: acompana
+  persona: pedro
+  relacion: socio en la pesca
+  deducido: false
+  fuentes:
+  - it-santiago
+  razon: Socios en la pesca hasta la llamada de 30; Perspicacia «Santiago», párr. 4.
+  estado: verificado
+- tipo: murio_en
+  lugar: jerusalen
+  fecha:
+    desde: 44
+    hasta: 44
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 44 e.c.
+  deducido: true
+  fuentes:
+  - hechos-12
+  - it-herodes
+  razon: Hch 12:1-4 pone su muerte junto al arresto de Pedro, que estaba preso en Jerusalén; el versículo no nombra
+    la ciudad.
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Santiago»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
   tipo: perspicacia
+- titulo: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  tipo: biblia
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

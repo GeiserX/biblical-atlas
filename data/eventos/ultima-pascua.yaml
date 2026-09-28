@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ultima-pascua
+titulo: Celebra la Pascua con los apóstoles
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+lugares:
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Mt 26:20, 21
+- Mr 14:17, 18
+- Lu 22:14-18
+resumen: Al empezar el 14 de nisán, Jesús celebra la Pascua con los apóstoles y les dice cuánto deseaba comerla
+  con ellos antes de sufrir.
+razon: La tabla A7-G da el día y el lugar. Perspicacia «Jesucristo» (párr. 43) fecha la Pascua de su muerte el 14
+  de nisán; B12-B.
+fuentes:
+- tnm-a7-g
+- mateo-26
+- marcos-14
+- lucas-22
+- jy-cap-116
+- jy-cap-117
+- tnm-b12-b
+- it-jesucristo
+orden_relato:
+  serie: a7
+  orden: 110
+buscar: Celebra la Pascua con los apóstoles
+consultado: '2026-09-28'
+estado: verificado

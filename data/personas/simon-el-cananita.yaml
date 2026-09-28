@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-el-cananita
+nombre: Simón el cananita
+nombres:
+- nombre: Simón el cananita
+desambiguacion: El apóstol Simón al que se llama «el cananita»; no es Simón Pedro.
+no_confundir_con:
+- pedro
+resumen: Apóstol distinguido de Simón Pedro con el apelativo de «cananita». Puede indicar que fue de los celotes o solo que
+  era celoso en sentido religioso.
+razon: Perspicacia «Simón» (núm. 3); Mt 10:4 y Lu 6:15.
+fuentes:
+- it-simon
+- mateo-10
+relaciones:
+- tipo: acompana
+  persona: jesus
+  relacion: apóstol de
+  deducido: false
+  fuentes:
+  - mateo-10
+  razon: Mt 10:4.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  tipo: perspicacia
+- titulo: Mateo 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/10
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

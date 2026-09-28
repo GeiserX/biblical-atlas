@@ -12,18 +12,33 @@ fecha:
   detalle:
     mes: iyar
     dia: 25
-lugares: []
-personas: []
-pasajes: []
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Fecha de la tabla del estudio 3; artículo: Perspicacia
-  «Ascensión», confirmado por su título.'
+lugares:
+- monte-de-los-olivos
+- betania
+personas:
+- jesus
+pasajes:
+- Lu 24:50-53
+- Hch 1:9-12
+resumen: Cuarenta días después de resucitar, Jesús lleva a los apóstoles al monte de los Olivos, cerca de Betania.
+  Mientras lo miran, sube y una nube lo oculta.
+razon: La tabla A7-H da el día y el lugar. Perspicacia «Ascensión» (párr. 1-4) y «Betania» (párr. 6). El estudio
+  3 da la misma fecha.
 fuentes:
+- tnm-a7-h
+- lucas-24
+- hechos-1
+- jy-cap-137
 - si-3
 - it-ascension
+- it-betania
+orden_relato:
+  serie: a7
+  orden: 126
 enlaces:
 - titulo: 'Perspicacia: «Ascensión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000402
   tipo: perspicacia
+buscar: Ascensión de Jesús
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

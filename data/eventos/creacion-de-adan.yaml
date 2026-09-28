@@ -11,16 +11,21 @@ fecha:
   texto: 4026 a.e.c.
 lugares: []
 personas: []
-pasajes: []
-resumen: Ficha en preparación.
-razon: 'Ficha mínima con el id fijado; la completa el carril marco. Fecha de la tabla del estudio 3; artículo: Perspicacia
-  «Adán», confirmado por su título.'
+pasajes:
+- Gé 2:7
+- Gé 5:1-5
+resumen: Dios forma al primer hombre del polvo y le da vida. Desde ahí empieza la cuenta de los años de la humanidad; quizás
+  fue en otoño, cuando empezaba el año más antiguo.
+razon: Perspicacia «Adán» fecha su creación en 4026 a.e.c.; el estudio 3 (párr. 12) llega a ese año sumando las edades de
+  Génesis 5 y 7.
 fuentes:
-- si-3
 - it-adan
+- si-3
+- genesis-2
 enlaces:
 - titulo: 'Perspicacia: «Adán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000089
   tipo: perspicacia
+buscar: creación de Adán 4026
 consultado: '2026-09-28'
-estado: pendiente
+estado: verificado

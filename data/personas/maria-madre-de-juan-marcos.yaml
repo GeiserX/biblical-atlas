@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-madre-de-juan-marcos
+nombre: María, madre de Juan Marcos
+nombres:
+- nombre: María
+desambiguacion: La madre de Juan Marcos (Hch 12:12). No es María, la madre de Jesús, ni otra de las Marías.
+resumen: Cristiana de Jerusalén en cuya casa, grande y con sirvienta, se reunía la congregación. Allí fue Pedro
+  al salir de la cárcel en 44. Quizá era viuda; era tía de Bernabé.
+razon: Perspicacia «María», apartado 5 (párr. 30), y la nota de estudio de Hch 12:12.
+fuentes:
+- it-maria
+- hechos-12
+no_confundir_con:
+- maria-madre-de-jesus
+relaciones:
+- tipo: pariente
+  persona: juan-marcos
+  relacion: hijo
+  deducido: false
+  fuentes:
+  - it-maria
+  - hechos-12
+  razon: Hch 12:12.
+  estado: verificado
+- tipo: pariente
+  persona: bernabe
+  relacion: sobrino
+  deducido: true
+  fuentes:
+  - it-maria
+  razon: Col 4:10 llama a Marcos primo de Bernabé; Perspicacia deduce que ella era su tía.
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-maria
+  - hechos-12
+  razon: 'Hch 12:12: su casa estaba en Jerusalén.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  tipo: perspicacia
+- titulo: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

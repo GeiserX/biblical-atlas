@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: discurso-en-el-areopago
+titulo: Pablo habla en el Areópago de Atenas
+fecha:
+  desde: 50
+  hasta: 50
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 50 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1722
+lugares:
+- atenas
+personas:
+- pablo
+- dionisio
+- damaris
+pasajes:
+- Hch 17:16-34
+resumen: Por lo que predica en la plaza del mercado, lo llevan al Areópago. Parte del altar «a un Dios Desconocido»;
+  algunos se burlan y otros, como Dionisio y Dámaris, creen.
+razon: «Testimonio completo», cap. 18, párr. 4, sitúa la visita hacia 50; la nota de estudio del versículo 19 explica
+  qué era el Areópago.
+fuentes:
+- bt-18
+- nota-hechos-17
+- it-dionisio
+- hch-17
+buscar: Pablo Areópago
+consultado: '2026-09-28'
+estado: verificado

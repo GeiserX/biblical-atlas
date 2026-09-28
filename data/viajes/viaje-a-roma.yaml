@@ -13,6 +13,7 @@ fecha:
   texto: c. 58-59 e.c. (sale c. 58; invierno en Malta; llega c. 59)
 companeros:
 - lucas
+- aristarco
 resumen: Tras apelar a César, Pablo viaja preso a Roma. Naufraga en Malta, pasa allí el invierno y llega a Roma,
   donde vive dos años en una casa alquilada.
 razon: El estudio 3 (párr. 27) fecha la salida en 58 y la llegada c. 59; Perspicacia «Lucas» cuenta Hechos 27:1–28:16
@@ -23,7 +24,8 @@ fuentes:
 - it-lucas
 - hch-27
 - hch-28
-consultado: '2026-09-27'
+- it-aristarco
+consultado: '2026-09-28'
 estado: verificado
 paradas:
 - orden: 1

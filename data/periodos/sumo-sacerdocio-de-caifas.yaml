@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sumo-sacerdocio-de-caifas
+nombre: Caifás, sumo sacerdote
+tipo: sumo-sacerdote
+persona: caifas
+fecha:
+  desde: 18
+  hasta: 36
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 18 a c. 36 e.c.
+lugares:
+- jerusalen
+resumen: Caifás ocupó el cargo más tiempo que sus predecesores inmediatos; en ese tramo cae la muerte de Jesús,
+  en 33.
+razon: Perspicacia «Caifás» (párr. 2) y las notas de Mt 26:3 y Jn 18:13. Perspicacia recoge que algunos ponen el
+  nombramiento en 26.
+fuentes:
+- it-caifas
+- mateo-26
+- juan-18
+buscar: Caifás
+consultado: '2026-09-28'
+estado: verificado
