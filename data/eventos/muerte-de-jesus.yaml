@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-jesus
+titulo: Muerte de Jesús
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Jesucristo», confirmado por su título.'
+fuentes:
+- si-3
+- it-jesucristo
+enlaces:
+- titulo: 'Perspicacia: «Jesucristo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002451
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

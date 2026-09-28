@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betania
+nombre: Betania
+nombres:
+- nombre: Betania
+tipo: ciudad
+lat: 31.771661
+lon: 35.255903
+precision: punto
+coord_fuente: openbible:a4f35bc
+coord_url: https://www.openbible.info/geo/ancient/a4f35bc/bethany-1
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-b. Artículo: Perspicacia «Betania» (apartado 1), confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-betania
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Betania»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000670
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

@@ -2,8 +2,12 @@
 """Índice de videos de jw.org que mencionan cada lugar de los viajes de Pablo.
 
 Lee una copia privada de los subtítulos en español (.vtt) de los videos de
-jw.org, cuenta cuántas veces aparece cada nombre de scripts/videos/nombres.yaml
+jw.org, cuenta cuántas veces aparece cada nombre de scripts/videos/nombres/*.yaml
 y guarda, por lugar, los videos públicos que lo mencionan al menos dos veces.
+
+Los nombres están repartidos en un fichero por carril (nombres/pablo.yaml, ...);
+un mismo id en dos ficheros es un error. scripts/videos/personas/*.yaml tiene el
+mismo formato para personas y la misma comprobación de ids repetidos.
 
 Los subtítulos tienen derechos de autor de jw.org: la carpeta vive fuera del
 repositorio y ningún texto suyo sale de ella. Al repositorio solo llega nuestro
@@ -34,7 +38,8 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[2]
-NOMBRES = Path(__file__).with_name("nombres.yaml")
+NOMBRES = Path(__file__).with_name("nombres")
+PERSONAS = Path(__file__).with_name("personas")
 SALIDA_YAML = RAIZ / "data" / "videos"
 SALIDA_SITE = RAIZ / "site" / "videos.json"
 CACHE = ".biblical-earth-videos-cache.json"
@@ -46,11 +51,11 @@ AGENTE = "Mozilla/5.0"
 TITULO_PORTADA = "Sitio oficial de los testigos de Jehová"
 
 
-# ---------------------------------------------------------------- nombres.yaml
+# ---------------------------------------------------------------- nombres/*.yaml
 
 def leer_nombres(ruta: Path) -> dict[str, dict]:
-    """Lee el subconjunto de YAML de nombres.yaml: claves de primer nivel,
-    y debajo `clave: valor` o `clave: [a, b]`."""
+    """Lee el subconjunto de YAML de un fichero de nombres: claves de primer nivel,
+    y debajo `clave: valor` o `clave: [a, b]`. Un id repetido en el fichero es un error."""
     lugares: dict[str, dict] = {}
     actual = None
     for n, linea in enumerate(ruta.read_text(encoding="utf-8").splitlines(), 1):
@@ -58,16 +63,30 @@ def leer_nombres(ruta: Path) -> dict[str, dict]:
             continue
         if not linea.startswith(" "):
             actual = linea.rstrip().rstrip(":")
+            if actual in lugares:
+                sys.exit(f"{ruta.name}:{n}: el id '{actual}' sale dos veces")
             lugares[actual] = {}
             continue
         clave, _, valor = linea.strip().partition(":")
         valor = valor.strip()
         if actual is None or not clave:
-            sys.exit(f"nombres.yaml:{n}: línea no reconocida")
+            sys.exit(f"{ruta.name}:{n}: línea no reconocida")
         if valor.startswith("["):
             valor = [v.strip().strip("\"'") for v in valor.strip("[]").split(",") if v.strip()]
         lugares[actual][clave] = valor
     return lugares
+
+
+def leer_carpeta(carpeta: Path) -> dict[str, dict]:
+    """Junta todos los *.yaml de una carpeta de nombres. Un id en dos ficheros es un error que nombra los dos."""
+    todo: dict[str, dict] = {}
+    origen: dict[str, str] = {}
+    for ruta in sorted(carpeta.glob("*.yaml")):
+        for oid, d in leer_nombres(ruta).items():
+            if oid in todo:
+                sys.exit(f"{carpeta.name}/{origen[oid]} y {carpeta.name}/{ruta.name}: el id '{oid}' sale dos veces")
+            todo[oid], origen[oid] = d, ruta.name
+    return todo
 
 
 # ---------------------------------------------------------------- texto
@@ -300,6 +319,9 @@ def escribir_yaml(lid: str, hoy: str, videos: list[dict]) -> None:
 
 
 def main() -> None:
+    # Los nombres se leen antes que los subtítulos: un id repetido falla aunque no haya carpeta privada.
+    lugares = leer_carpeta(NOMBRES)
+    personas = leer_carpeta(PERSONAS)
     if not os.environ.get("BE_VTT_DIR"):
         sys.exit("Falta BE_VTT_DIR: la carpeta privada con los .vtt (fuera del repositorio).")
     carpeta = Path(os.environ["BE_VTT_DIR"]).expanduser()
@@ -307,7 +329,6 @@ def main() -> None:
     if not ficheros:
         sys.exit("No hay ficheros .vtt en BE_VTT_DIR.")
 
-    lugares = leer_nombres(NOMBRES)
     buscador = Buscador(lugares)
     catalogo = leer_catalogo(carpeta)
 
@@ -367,6 +388,7 @@ def main() -> None:
     con_videos = [lid for lid, v in indice.items() if v]
     print(f"videos leídos: {len(ficheros)} (sin clave: {sin_clave})")
     print(f"lugares con videos: {len(con_videos)} de {len(lugares)}")
+    print(f"personas con nombres para buscar: {len(personas)} (su índice todavía no se genera)")
     print(f"pares lugar-video con {MINIMO}+ menciones: {sum(len(h) for h in hallazgos.values())}")
     print(f"pares guardados (máx. {MAXIMO} por lugar): {sum(len(v) for v in indice.values())}")
     print(f"peticiones de red: {resolutor.peticiones}")

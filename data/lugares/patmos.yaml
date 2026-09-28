@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: patmos
+nombre: Patmos
+nombres:
+- nombre: Patmos
+tipo: isla
+lat: 37.325
+lon: 26.541667
+precision: punto
+coord_fuente: openbible:a8f60f3
+coord_url: https://www.openbible.info/geo/ancient/a8f60f3/patmos
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pedro. Artículo: Perspicacia «Patmos», confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-patmos
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Patmos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003403
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

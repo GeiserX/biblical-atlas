@@ -1,6 +1,7 @@
 # biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
 id: galatas
 libro: Gálatas
+escritor: pablo
 referencia: Gál 1:1, 2
 escrita_en:
 - corinto

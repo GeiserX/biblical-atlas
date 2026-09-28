@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: babilonia
+nombre: Babilonia
+nombres:
+- nombre: Babilonia
+tipo: ciudad
+lat: 32.543333
+lon: 44.422222
+precision: punto
+coord_fuente: openbible:a217d18
+coord_url: https://www.openbible.info/geo/ancient/a217d18/babylon-1
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Artículo: Perspicacia «Babilonia», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-babilonia
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Babilonia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

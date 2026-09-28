@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lida
+nombre: Lida
+nombres:
+- nombre: Lida
+tipo: ciudad
+lat: 31.95
+lon: 34.9
+precision: punto
+coord_fuente: openbible:a2c5cc7
+coord_url: https://www.openbible.info/geo/ancient/a2c5cc7/lod
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pedro. Artículo: Perspicacia «Lida», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-lida
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Lida»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002797
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

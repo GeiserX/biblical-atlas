@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jope
+nombre: Jope
+nombres:
+- nombre: Jope
+tipo: puerto
+lat: 32.054481
+lon: 34.753039
+precision: punto
+coord_fuente: openbible:ae023a9
+coord_url: https://www.openbible.info/geo/ancient/ae023a9/joppa
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril hechos-pedro. Artículo: Perspicacia «Jope», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-jope
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Jope»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002507
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

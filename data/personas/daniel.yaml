@@ -1,0 +1,16 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: daniel
+nombre: Daniel
+nombres:
+- nombre: Daniel
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril persas. Artículo: Perspicacia «Daniel» (apartado 2), confirmado
+  por su título.'
+fuentes:
+- it-daniel
+enlaces:
+- titulo: 'Perspicacia: «Daniel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001117
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

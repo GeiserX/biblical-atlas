@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ninive
+nombre: Nínive
+nombres:
+- nombre: Nínive
+tipo: ciudad
+lat: 36.3594
+lon: 43.1528
+precision: punto
+coord_fuente: openbible:a70fd5d
+coord_url: https://www.openbible.info/geo/ancient/a70fd5d/nineveh
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril reyes. Artículo: Perspicacia «Nínive», confirmado por su
+  título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-ninive
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Nínive»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003261
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

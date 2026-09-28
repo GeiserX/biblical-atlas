@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: creacion-de-adan
+titulo: Creación de Adán
+fecha:
+  desde: -4025
+  hasta: -4025
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 4026 a.e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Adán», confirmado por su título.'
+fuentes:
+- si-3
+- it-adan
+enlaces:
+- titulo: 'Perspicacia: «Adán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000089
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

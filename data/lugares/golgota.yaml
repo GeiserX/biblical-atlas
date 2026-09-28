@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: golgota
+nombre: Gólgota
+nombres:
+- nombre: Gólgota
+tipo: monte
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos: []
+resumen: Ficha en preparación.
+razon: Ficha mínima con el id fijado; Perspicacia «Gólgotha» dice que el sitio no se conoce. El carril inciertos pondrá
+  los candidatos; hasta entonces no hay punto en el mapa.
+fuentes:
+- it-golgota
+enlaces:
+- titulo: 'Perspicacia: «Gólgotha»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001738
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

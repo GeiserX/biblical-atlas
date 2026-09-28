@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: egipto
+nombre: Egipto
+nombres:
+- nombre: Egipto
+tipo: pais
+lat: 30.129444
+lon: 31.3075
+precision: zona
+coord_fuente: openbible:af301ca
+coord_url: https://www.openbible.info/geo/ancient/af301ca/egypt
+coord_nota: Punto representativo del país.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Artículo: Perspicacia «Egipto, egipcio», confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-egipto
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Egipto, egipcio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001265
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

@@ -1,0 +1,49 @@
+/* biblical-earth · estilos base: marco de la página, barra superior, ficha como contenedor y avisos.
+   Parte de kit/tokens.css y kit/components.css (copiados de las maquetas). Congelado durante el reparto. */
+
+:root { --panel-w: 400px; --timeline-h: 250px; --topbar-h: 60px; }
+.app { position: relative; height: 100vh; height: 100dvh; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+a { color: var(--link); }
+
+/* ---------- Barra superior ---------- */
+.be-logo { text-decoration: none; }
+.fecha { min-width: 0; }
+.modos .be-seg__opt { border: 0; background: transparent; cursor: pointer; }
+.modos .be-seg__opt--on { background: var(--surface); }
+#compartir { cursor: pointer; }
+
+/* ---------- Hoja inferior y avisos ---------- */
+.sobre-hoja { display: none; }
+.aviso { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); z-index: 6; padding: 8px 14px; border-radius: var(--r-md); background: var(--ink); color: #fbf7ef; font-size: var(--fs-sm); box-shadow: var(--shadow-3); max-width: 90%; }
+
+/* ---------- Ficha: contenedor ---------- */
+.panel::after { display: none; }
+.hoja-asa { display: none; }
+.panel-cuerpo { flex: 1; overflow: auto; padding: 14px 16px 28px; display: flex; flex-direction: column; gap: 12px; background: var(--surface-2); outline: none; }
+.panel-cuerpo > * { flex-shrink: 0; }
+.panel-cuerpo .be-card__title { font-size: var(--fs-3xl); }
+
+/* ---------- Pantallas estrechas: hoja inferior ---------- */
+@media (max-width: 760px) {
+  :root { --topbar-h: 56px; --timeline-h: 250px; }
+  .be-app { grid-template-columns: 1fr; grid-template-areas: "top" "map" "time"; }
+  .be-topbar { gap: 8px; padding: 0 10px; }
+  .logo-text, .be-date__hint, #compartir, .modos [data-mapa="cortina"] { display: none !important; }
+  .be-topbar > .be-spacer { display: none; }
+  .be-date { padding: 4px 10px; }
+  .be-date__value { font-size: 17px; }
+  .modos { position: absolute; top: calc(var(--topbar-h) + 10px); left: 10px; z-index: 4; box-shadow: var(--shadow-2); }
+  .modos .be-seg__opt { height: 28px; padding: 0 9px; font-size: var(--fs-xs); }
+  .be-app > .be-panel { grid-area: map; align-self: end; z-index: 5; max-height: 34vh; border-left: 0; border-radius: 18px 18px 0 0; box-shadow: 0 -6px 30px rgba(40, 28, 10, .18); overflow: visible; }
+  /* Encima de la hoja: el suceso de esta fecha en una línea y el botón de la leyenda. */
+  .sobre-hoja { display: flex; align-items: center; gap: 8px; position: absolute; left: 10px; right: 10px; bottom: calc(100% + 8px); pointer-events: none; }
+  .sobre-hoja > * { pointer-events: auto; box-shadow: var(--shadow-2); }
+  .panel.plegada .panel-cuerpo { display: none; }
+  .hoja-asa { display: block; width: 100%; border: 0; border-radius: 18px 18px 0 0; background: var(--surface); padding: 8px 0 2px; cursor: pointer; }
+  .hoja-asa .be-sheet__grip { margin: 0 auto; }
+  .panel-cuerpo { padding: 6px 12px 18px; }
+  .panel-cuerpo .be-card__title { font-size: var(--fs-2xl); }
+}

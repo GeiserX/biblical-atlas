@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: media
+nombre: Media
+nombres:
+- nombre: Media
+tipo: pais
+lat: 34.8065
+lon: 48.516247
+precision: zona
+coord_fuente: openbible:ad2fadf
+coord_url: https://www.openbible.info/geo/ancient/ad2fadf/media
+coord_nota: Punto representativo de la región.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril persas. Artículo: Perspicacia «Medos, Media», confirmado
+  por su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-medos
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Medos, Media»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002956
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

@@ -1,6 +1,7 @@
 # biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
 id: 1-corintios
 libro: 1 Corintios
+escritor: pablo
 referencia: 1Co 16:8
 escrita_en:
 - efeso

@@ -1,0 +1,68 @@
+/* biblical-earth · estilos de la línea de tiempo. Dueño durante el reparto: app-tiempo. */
+
+/* ---------- Línea de tiempo ---------- */
+.linea { grid-template-columns: 150px 1fr; }
+.linea-barra { gap: 12px; }
+.be-play__main, .be-play__btn { border: 0; cursor: pointer; }
+.be-play__btn { background: none; }
+.be-play__main { background: var(--accent); }
+.be-play__main .icono-pausa, .be-play__main.en-marcha .icono-play { display: none; }
+.be-play__main.en-marcha .icono-pausa { display: block; }
+.zoom { display: inline-flex; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; background: var(--paper-2); }
+.zoom button { border: 0; background: none; padding: 4px 11px; font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); cursor: pointer; }
+.zoom button + button { border-left: 1px solid var(--line); }
+.zoom button.on { background: var(--ink); color: #fff; }
+.linea-estado { font-size: var(--fs-sm); color: var(--ink-2); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.cronologia { flex: none; }
+.carriles-eje { height: 26px; border-bottom: 1px solid var(--line); }
+.linea-carriles .be-lane-label { font-size: var(--fs-sm); }
+.nivel-carril { height: 18px; margin-left: auto; }
+.linea-pista { cursor: crosshair; touch-action: none; }
+.linea-pista:focus-visible { outline-offset: -2px; }
+.linea-svg { position: absolute; left: 0; top: 0; display: block; user-select: none; }
+.linea-svg text { font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; pointer-events: none; }
+.fila-par { fill: rgba(246, 241, 231, .55); }
+.tick-mayor { stroke: var(--line-2); }
+.tick-menor { stroke: var(--line-2); opacity: .7; }
+.rejilla { stroke: rgba(211, 198, 176, .45); }
+.linea-eje { stroke: var(--line); }
+.tick-texto { fill: var(--ink-3); }
+.item { cursor: pointer; }
+.item:focus { outline: none; }
+.item:focus-visible rect { stroke: var(--focus); stroke-width: 2.5; }
+.barra-viaje { opacity: .55; }
+.viaje.activo .barra-viaje { opacity: 1; }
+.viaje:hover .barra-viaje { opacity: 1; }
+.texto-barra { fill: #fff; }
+.marca-parada { fill: rgba(255, 255, 255, .7); }
+.marca-parada.narrativa { fill: rgba(255, 255, 255, .4); }
+.parada:hover .marca-parada { fill: #fff; }
+.rombo { fill: var(--gold); stroke: #fff; stroke-width: 2; }
+.carta.seleccionada .rombo { fill: var(--accent); }
+.carta.seleccionada .tramo-carta { stroke: var(--accent); stroke-width: 2.5; }
+.texto-punto { fill: var(--ink-2); }
+.tramo-carta { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
+.texto-carta { fill: #6e4f15; }
+.tramo-evento { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
+.texto-evento { fill: #6e4f15; }
+.barra-periodo { fill: var(--emp-roma); opacity: .9; }
+.periodo--gobernador .barra-periodo { fill: var(--node-periodo); }
+.item.atenuado { opacity: .2; }
+.item.resaltado .barra-viaje, .item.resaltado .barra-periodo, .item.resaltado .tramo-carta, .item.resaltado .tramo-evento { stroke: var(--gold); stroke-width: 2; }
+.item.resaltado .rombo { stroke: var(--gold); }
+.parada.resaltado .marca-parada { fill: #fff; stroke: var(--gold); stroke-width: 1.5; }
+.cursor-linea { stroke: var(--gold); stroke-width: 2; }
+.cursor-bandera { fill: var(--gold); }
+.cursor-texto { fill: #fff; font-weight: 700 !important; }
+.banda-incierta { pointer-events: none; }
+#linea-cursor { pointer-events: none; }
+
+/* ---------- Pantallas estrechas ---------- */
+@media (max-width: 760px) {
+  .linea-estado, .be-speed, .cronologia { display: none !important; }
+  .linea-carriles .be-lane-label .be-i { display: none; }
+  .linea { grid-template-columns: 92px 1fr; }
+  .linea-barra { gap: 8px; padding: 0 10px; }
+  .linea-carriles .be-lane-label { padding: 0 6px 0 10px; font-size: var(--fs-xs); gap: 5px; }
+  .nivel-carril { display: none; }
+}

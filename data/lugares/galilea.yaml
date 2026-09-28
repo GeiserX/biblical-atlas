@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: galilea
+nombre: Galilea
+nombres:
+- nombre: Galilea
+tipo: region
+lat: 32.76
+lon: 35.527
+precision: zona
+coord_fuente: openbible:a9cf1e8
+coord_url: https://www.openbible.info/geo/ancient/a9cf1e8/galilee-1
+coord_nota: Punto representativo de la región.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Galilea», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-galilea
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Galilea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001598
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

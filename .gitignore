@@ -45,3 +45,4 @@ __pycache__/
 /site/data.json
 .DS_Store
 /site/data.js
+/site/_local/

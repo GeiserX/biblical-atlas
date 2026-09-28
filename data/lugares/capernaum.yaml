@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: capernaum
+nombre: Capernaúm
+nombres:
+- nombre: Capernaúm
+tipo: ciudad
+lat: 32.881111
+lon: 35.575
+precision: punto
+coord_fuente: openbible:af2161c
+coord_url: https://www.openbible.info/geo/ancient/af2161c/capernaum
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Capernaum», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-capernaum
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Capernaum»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000882
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

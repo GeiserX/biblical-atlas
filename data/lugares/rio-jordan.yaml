@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-jordan
+nombre: Río Jordán
+nombres:
+- nombre: Río Jordán
+tipo: rio
+lat: 31.761389
+lon: 35.558333
+precision: zona
+coord_fuente: openbible:ae686c9
+coord_url: https://www.openbible.info/geo/ancient/ae686c9/jordan
+coord_nota: Punto representativo del río, cerca de su desembocadura.
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril jesus-a. Artículo: Perspicacia «Jordán», confirmado por
+  su título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-jordan
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Jordán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002511
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

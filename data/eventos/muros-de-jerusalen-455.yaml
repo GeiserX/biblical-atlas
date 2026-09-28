@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muros-de-jerusalen-455
+titulo: Nehemías reconstruye los muros de Jerusalén
+fecha:
+  desde: -454
+  hasta: -454
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 455 a.e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril persas. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Nehemías», confirmado por su título.'
+fuentes:
+- si-3
+- it-nehemias
+enlaces:
+- titulo: 'Perspicacia: «Nehemías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003212
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: susa
+nombre: Susa
+nombres:
+- nombre: Susa
+tipo: ciudad
+lat: 32.18922
+lon: 48.25778
+precision: punto
+coord_fuente: openbible:a033b84
+coord_url: https://www.openbible.info/geo/ancient/a033b84/susa
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril persas. Artículo: Perspicacia «Susa», confirmado por su
+  título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-susa
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Susa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004102
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

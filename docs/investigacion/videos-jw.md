@@ -58,7 +58,7 @@ Los 29 lugares sin videos (por ejemplo Anfípolis, Samotracia o Rodas) aparecen 
 
 ## Reglas de búsqueda
 
-Los nombres están en [`scripts/videos/nombres.yaml`](../../scripts/videos/nombres.yaml), con el mismo id de lugar que usa el resto de los datos. Son los nombres de la Traducción del Nuevo Mundo en español.
+Los nombres están en [`scripts/videos/nombres/`](../../scripts/videos/nombres/), un fichero por carril de trabajo ([`pablo.yaml`](../../scripts/videos/nombres/pablo.yaml) para los viajes de Pablo), con el mismo id de lugar que usa el resto de los datos. Un id que sale en dos ficheros es un error. Son los nombres de la Traducción del Nuevo Mundo en español.
 
 - **Palabra completa.** «Roma» no cuenta dentro de «romano» ni «Malta» dentro de «maltas». En los nombres de varias palabras se admiten comas entre ellas: «Mira en Licia» cuenta «Mira, en Licia».
 - **Mira.** «Mira» suelto es casi siempre el verbo, así que Mira solo cuenta como «Mira en Licia» o «Mira de Licia» (Hechos 27:5).
@@ -76,7 +76,7 @@ Los nombres están en [`scripts/videos/nombres.yaml`](../../scripts/videos/nombr
 - **Jerusalén** aparece en cientos de videos del Antiguo y del Nuevo Testamento. Los 12 con más menciones no tienen por qué ser los que tratan de Pablo en Jerusalén.
 - **Tiro** puede colarse como el verbo al principio de una frase, como en «Tiro la pelota».
 - **Nombres de cartas.** «Gálatas y Efesios» dicho como nombres de libros cuenta aunque no lleve número detrás.
-- **Un lugar por entrada de `data/lugares`.** `nombres.yaml` tiene una entrada por cada lugar de los datos y ninguna más. Un lugar nuevo necesita su entrada.
+- **Un lugar por entrada de `data/lugares`.** `scripts/videos/nombres/` tiene una entrada por cada lugar de los datos y ninguna más. Un lugar nuevo necesita su entrada.
 - **Solo los videos que tenemos.** Un video sin subtítulos en la copia privada no entra, aunque hable del lugar.
 
 ## Revisión anual

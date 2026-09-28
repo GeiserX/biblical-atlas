@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: diluvio
+titulo: El Diluvio
+fecha:
+  desde: -2369
+  hasta: -2369
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2370 a.e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril marco. Fecha de la tabla del estudio 3; artículo: Perspicacia
+  «Diluvio», confirmado por su título.'
+fuentes:
+- si-3
+- it-diluvio
+enlaces:
+- titulo: 'Perspicacia: «Diluvio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001150
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente

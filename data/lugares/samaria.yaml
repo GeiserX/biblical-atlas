@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: samaria
+nombre: Samaria
+nombres:
+- nombre: Samaria
+tipo: ciudad
+lat: 32.276111
+lon: 35.195
+precision: punto
+coord_fuente: openbible:a041bb3
+coord_url: https://www.openbible.info/geo/ancient/a041bb3/samaria-1
+resumen: Ficha en preparación.
+razon: 'Ficha mínima con el id fijado; la completa el carril reyes. Artículo: Perspicacia «Samaria», confirmado por su
+  título. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-samaria
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Samaria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: pendiente
