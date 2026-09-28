@@ -1,6 +1,8 @@
 # Logo: seis propuestas
 
-Hoy la cabecera lleva una esfera dorada de 28 px hecha con CSS y el texto «biblical-earth». Aquí hay seis marcas nuevas para elegir una. Todas usan la paleta del sitio: terracota `#a3432b`, oro `#b8892f`, tinta `#1f1a14` y pergamino `#f6f1e7`, con dos colores como máximo más la tinta.
+**Elegida: la 6, [rama de olivo](#6-rama-de-olivo).** Es el logo de la cabecera ([`site/logo.svg`](../../site/logo.svg)), el favicon ([`site/favicon.svg`](../../site/favicon.svg), una versión con dos hojas, dos aceitunas y el tallo más grueso para que se lea a 16 px), el icono de inicio en iPhone ([`site/apple-touch-icon.png`](../../site/apple-touch-icon.png)) y la marca del [banner del README](../images/banner.svg). Con el sistema en modo oscuro, el tallo del favicon pasa a claro para que no desaparezca en una barra de pestañas oscura. Las otras cinco se quedan aquí como registro.
+
+La esfera dorada de 28 px hecha con CSS era el logo anterior. Estas son las seis marcas que se propusieron para sustituirla. Todas usan la paleta del sitio: terracota `#a3432b`, oro `#b8892f`, tinta `#1f1a14` y pergamino `#f6f1e7`, con dos colores como máximo más la tinta.
 
 Cada propuesta tiene tres archivos SVG escritos a mano:
 
