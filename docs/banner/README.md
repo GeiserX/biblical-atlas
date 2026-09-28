@@ -8,7 +8,7 @@ De la ronda anterior preferimos la 4.1, la marca de agua en el mar, antes que la
 
 ### 7.1. La línea del tiempo al pie
 
-Al pie del banner corre una línea del tiempo a escala, de 4026 a.e.c. al final del primer siglo, con una muesca pequeña al comienzo de cada época y una más marcada en 4026 a.e.c., 1513 a.e.c., 607 a.e.c. y 33 e.c. La rama salvia flota en el mar al oeste de Chipre, como en la 4.1.
+Al pie del banner corre una línea del tiempo a escala, de 4026 a.e.c. al final del primer siglo, con una muesca pequeña al comienzo de cada época y una más marcada en 4026 a.e.c., 1513 a.e.c., 607 a.e.c. y 33 e.c. Solo los dos extremos llevan el año, en letra más grande, para que se lean en el móvil y la línea no parezca el eje de una gráfica. La rama salvia flota en el mar al oeste de Chipre, como en la 4.1.
 
 ![Variante 7.1](propuestas-7/1-linea-al-pie/vista.png)
 
@@ -16,7 +16,7 @@ Al pie del banner corre una línea del tiempo a escala, de 4026 a.e.c. al final 
 
 ### 7.2. Las épocas bajo el lema
 
-Bajo el lema van las nueve épocas del sitio, de Adán a la congregación, una tras otra y todas del mismo largo, sin escala y sin fechas. Es la línea más callada de las seis y la que menos se parece a un eje.
+Bajo el lema van las nueve épocas del sitio, de Adán a la congregación, una tras otra y sin fechas, cada una tan larga como sus años. Por eso la de Adán al Diluvio ocupa casi la mitad y las de Jesús y del éxodo son dos rayitas. Es la línea más callada de las seis y la que menos se parece a un eje.
 
 ![Variante 7.2](propuestas-7/2-epocas-bajo-el-lema/vista.png)
 
@@ -24,23 +24,23 @@ Bajo el lema van las nueve épocas del sitio, de Adán a la congregación, una t
 
 ### 7.3. La raya llega hasta la costa
 
-La raya de debajo del nombre se alarga, cruza el mar y se para en la costa de Fenicia, y es la línea del tiempo a escala, con las mismas cuatro fechas que la 7.1. El lema sigue debajo de la raya y la rama se queda sola en el mar.
+La raya de debajo del nombre se alarga, cruza el mar y se para en la costa de Fenicia, y es la línea del tiempo a escala, con cuatro fechas: 4026 a.e.c., 1513 a.e.c., 607 a.e.c. y 33 e.c. Los cuatro años van encima de la raya, así que el lema queda solo debajo, y la rama se queda sola en el mar.
 
 ![Variante 7.3](propuestas-7/3-hasta-la-costa/vista.png)
 
 ![Vista previa social 7.3](propuestas-7/3-hasta-la-costa/social.png)
 
-### 7.4. Las aceitunas son fechas
+### 7.4. Tres fechas bajo el nombre
 
-La marca se tumba sobre el mar y sus tres aceitunas son tres fechas de una línea a escala: 4026 a.e.c., la creación de Adán, 2370 a.e.c., el Diluvio, y 33 e.c. Con la forma del logo la aceituna del medio cae hacia 2280 a.e.c., así que la muesca del Diluvio va en su año exacto, un poco a la izquierda del centro de la aceituna.
+Es la 4.1 tal cual, con la rama salvia en el mar como en la 7.1, derecha y del mismo tamaño, y el crédito del relieve abajo a la derecha. Bajo el lema va una línea corta a escala, tan larga como el nombre, con tres fechas: 4026 a.e.c., la creación de Adán, 2370 a.e.c., el Diluvio, y 33 e.c.
 
-![Variante 7.4](propuestas-7/4-aceitunas-en-la-linea/vista.png)
+![Variante 7.4](propuestas-7/4-tres-fechas/vista.png)
 
-![Vista previa social 7.4](propuestas-7/4-aceitunas-en-la-linea/social.png)
+![Vista previa social 7.4](propuestas-7/4-tres-fechas/social.png)
 
 ### 7.5. La rama más grande y más pálida
 
-Es la 7.1 con la rama casi una vez y media más grande y más transparente, para que se lea como marca de agua y no como un dibujo. La línea del tiempo es la misma.
+Es la 7.1 con la rama más grande y más transparente, para que se lea como marca de agua y no como un dibujo. En el banner solo crece un poco, porque tiene que quedar en el mar entre la costa de Anatolia y la línea del tiempo; en la vista social es casi un tercio mayor. La línea del tiempo es la misma.
 
 ![Variante 7.5](propuestas-7/5-rama-grande/vista.png)
 
