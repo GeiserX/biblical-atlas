@@ -1,5 +1,59 @@
 # Banner
 
+## Seis variantes del banner 2, el camino como rama de olivo
+
+En el banner 2 el tallo del olivo es el camino del primer viaje sobre nuestro relieve y las aceitunas son las paradas. Estas seis variantes mantienen esa idea, cambian de relato y de composición, y todas añaden una línea de tiempo, para que se vea que el sitio es un mapa y también una cronología. Como la rama ya es el olivo, ninguna lleva la marca pequeña junto al nombre. Los caminos y las fechas salen de [`data/viajes`](../../data/viajes), [`data/recorridos`](../../data/recorridos), [`data/eventos`](../../data/eventos) y [`data/periodos`](../../data/periodos), con la cronología de la TNM, y los relieves son los de [`site/maps/`](../../site/maps), con la atribución que piden sus [créditos](../ideas/mockups/kit/maps/CREDITS.md). Las hojas de cada rama apuntan hacia donde va el camino.
+
+![Las seis variantes del banner 2](propuestas-2/comparativa.png)
+
+### 2.1. El primer viaje, parada a parada
+
+Es el banner 2 con una rama pequeña debajo del nombre que repite las quince paradas en orden, de la primavera de 47 al otoño de 48, con la ida en línea continua y la vuelta en puntos, igual que en el mapa. El texto solo da el orden de las paradas intermedias, así que van a la misma distancia, y la versión social lo dice.
+
+![Variante 2.1](propuestas-2/1-parada-a-parada/vista.png)
+
+![Vista previa social 2.1](propuestas-2/1-parada-a-parada/social.png)
+
+### 2.2. Cuatro viajes, cuatro ramas
+
+El primer viaje, el segundo, el tercero y el viaje a Roma son cuatro ramas con los colores del sitio, de Antioquía de Siria y Jerusalén a Roma. Debajo, cada viaje es una ramita en sus años, de 47 a 60, y se ve que los tres primeros van seguidos y que antes del viaje a Roma pasan los dos años de Cesarea.
+
+![Variante 2.2](propuestas-2/2-cuatro-viajes/vista.png)
+
+![Vista previa social 2.2](propuestas-2/2-cuatro-viajes/social.png)
+
+### 2.3. Pedro, de Galilea a Babilonia
+
+La rama une en orden los lugares del recorrido de Pedro que ya tiene el sitio: Capernaúm, Cesarea de Filipo, Jerusalén, Samaria, Jope, Cesarea, otra vez Jerusalén, Antioquía y Babilonia. En la línea de tiempo las mismas aceitunas van del año 30 a 62-64, cuando escribe su primera carta desde Babilonia, y el mapa va a la izquierda y el nombre a la derecha.
+
+![Variante 2.3](propuestas-2/3-pedro/vista.png)
+
+![Vista previa social 2.3](propuestas-2/3-pedro/social.png)
+
+### 2.4. De Babilonia a Jerusalén
+
+El mapa es una franja de Jerusalén a Babilonia con el camino al destierro de 607 a.e.c. en puntos y la vuelta de 537 con Zorobabel como rama de olivo. La Biblia no da la ruta, así que la rama solo une las dos ciudades, y debajo van a escala los sucesos de 607 a 515 a.e.c., de la caída de Jerusalén al templo terminado.
+
+![Variante 2.4](propuestas-2/4-vuelta-de-babilonia/vista.png)
+
+![Vista previa social 2.4](propuestas-2/4-vuelta-de-babilonia/social.png)
+
+### 2.5. La historia sube al mapa
+
+Una sola rama recorre las nueve épocas, de Adán a la congregación cristiana, y al llegar a la última sube al mapa en Antioquía de Siria y sigue como el primer viaje de Pablo. Así el tiempo y el lugar son la misma rama, y la versión social añade el año de inicio de cada época.
+
+![Variante 2.5](propuestas-2/5-la-historia-sube-al-mapa/vista.png)
+
+![Vista previa social 2.5](propuestas-2/5-la-historia-sube-al-mapa/social.png)
+
+### 2.6. Jesús, de Belén a Jerusalén
+
+Sobre el relieve de Israel, la rama une en orden Belén, Nazaret, el Jordán, Caná, Capernaúm, Cesarea de Filipo, Jericó, Betania y Jerusalén, y la huida a Egipto queda fuera del recorte. La línea de tiempo va a escala de 2 a.e.c. a 33 e.c., así que se ven los casi treinta años en Nazaret y los tres y medio de predicación al final.
+
+![Variante 2.6](propuestas-2/6-jesus/vista.png)
+
+![Vista previa social 2.6](propuestas-2/6-jesus/social.png)
+
 ## Seis variantes del banner 1, el olivo del tiempo
 
 La rama de olivo va de Adán a la congregación cristiana y cada aceituna es una de las nueve épocas de [`data/periodos`](../../data/periodos). Las seis variantes cambian lo que cuelga de cada aceituna y cómo crece la rama. Los sucesos y los lugares salen de [`data/eventos`](../../data/eventos) y [`data/lugares`](../../data/lugares), con los años de la cronología de la TNM; el texto de cada suceso está resumido para que quepa. Todas llevan el lema «La Biblia en el mapa y en el tiempo». Las variantes 4 y 5 no llevan la marca pequeña junto al nombre, porque la rama grande ya hace de marca.
