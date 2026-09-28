@@ -24,7 +24,7 @@ bd show <issue-id>
 
 # Update issue status
 bd update <issue-id> --claim
-bd update <issue-id> --status done
+bd close <issue-id>
 
 # Sync with Dolt remote
 bd dolt push
@@ -65,6 +65,9 @@ curl -sSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/instal
 
 # Initialize in your repo
 bd init
+
+# Or, in a fresh clone of a repo that already tracks .beads/, restore its issues
+bd bootstrap
 
 # Create your first issue
 bd create "Try out Beads"
