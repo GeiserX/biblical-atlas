@@ -1,5 +1,59 @@
 # Banner
 
+## Seis variantes del banner 4, con el olivo una sola vez
+
+El banner 4 enseñaba el olivo dos veces, en la marca junto al nombre y en la rama tenue del fondo. En estas seis variantes el olivo aparece una sola vez y cada una lo pone en un sitio distinto. De la 1 a la 5 quitamos la rama tenue y movemos la marca, y la 6 quita la marca y deja la rama. Todo lo demás es el banner 4, con el nombre en EB Garamond y el lema «La Biblia en el mapa y en el tiempo» en versalitas.
+
+![Las seis variantes del banner 4](propuestas-4/comparativa.png)
+
+### 4.1. Marca de agua en el mar
+
+A la derecha asoma nuestro [relieve](../../site/maps) del Mediterráneo oriental, muy lavado, y la marca flota en el mar al oeste de Chipre, en un solo color y casi transparente. Es la única de las seis con mapa, así que es la única que lleva la atribución del relieve.
+
+![Variante 4.1](propuestas-4/1-marca-de-agua/vista.png)
+
+![Vista previa social 4.1](propuestas-4/1-marca-de-agua/social.png)
+
+### 4.2. La marca como cursor del tiempo
+
+En lugar de la raya dorada, debajo del nombre va una línea de tiempo a escala de 4026 a.e.c. al año 100, con una muesca al comienzo de cada época. La marca se pone de pie en 607 a.e.c. sobre un tallo dorado, igual que el cursor de la aplicación.
+
+![Variante 4.2](propuestas-4/2-cursor-del-tiempo/vista.png)
+
+![Vista previa social 4.2](propuestas-4/2-cursor-del-tiempo/social.png)
+
+### 4.3. La marca como rosa de los vientos
+
+A la derecha hay una rosa de los vientos sobre una cuadrícula tenue, como el borde de una carta náutica, y la marca, girada hasta quedar vertical, es la aguja que señala el norte. Los puntos cardinales van en español, con O de oeste.
+
+![Variante 4.3](propuestas-4/3-rosa-de-los-vientos/vista.png)
+
+![Vista previa social 4.3](propuestas-4/3-rosa-de-los-vientos/social.png)
+
+### 4.4. La marca en lugar del guion
+
+El nombre no tiene ninguna O, así que la marca entra en el único hueco que no es una letra, el guion entre «biblical» y «earth». El olivo pasa a ser parte del nombre, y por eso este diseño habría que rehacerlo si el nombre cambia.
+
+![Variante 4.4](propuestas-4/4-en-el-nombre/vista.png)
+
+![Vista previa social 4.4](propuestas-4/4-en-el-nombre/social.png)
+
+### 4.5. La marca en una insignia de esquina
+
+La marca va arriba a la derecha en una baldosa oscura, como el icono de una aplicación, con el tallo en claro. El nombre y el lema quedan solos, sin nada al lado.
+
+![Variante 4.5](propuestas-4/5-insignia/vista.png)
+
+![Vista previa social 4.5](propuestas-4/5-insignia/social.png)
+
+### 4.6. Sin marca, con la rama tenue
+
+Es el banner 4 sin la marca, y el único olivo es la rama tenue que se sale del marco por la derecha. Es la más tranquila de las seis y la que menos depende del logo.
+
+![Variante 4.6](propuestas-4/6-sin-marca/vista.png)
+
+![Vista previa social 4.6](propuestas-4/6-sin-marca/social.png)
+
 ## Seis variantes del banner 2, el camino como rama de olivo
 
 En el banner 2 el tallo del olivo es el camino del primer viaje sobre nuestro relieve y las aceitunas son las paradas. Estas seis variantes mantienen esa idea, cambian de relato y de composición, y todas añaden una línea de tiempo, para que se vea que el sitio es un mapa y también una cronología. Como la rama ya es el olivo, ninguna lleva la marca pequeña junto al nombre. Los caminos y las fechas salen de [`data/viajes`](../../data/viajes), [`data/recorridos`](../../data/recorridos), [`data/eventos`](../../data/eventos) y [`data/periodos`](../../data/periodos), con la cronología de la TNM, y los relieves son los de [`site/maps/`](../../site/maps), con la atribución que piden sus [créditos](../ideas/mockups/kit/maps/CREDITS.md). Las hojas de cada rama apuntan hacia donde va el camino.
