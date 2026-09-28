@@ -21,7 +21,7 @@ estado: verificado
 relaciones:
 - tipo: pariente
   persona: eunice
-  relacion: madre
+  relacion: hija
   deducido: true
   fuentes:
   - it-loida
@@ -30,7 +30,7 @@ relaciones:
   estado: verificado
 - tipo: pariente
   persona: timoteo
-  relacion: abuela
+  relacion: nieto
   deducido: false
   fuentes:
   - it-loida

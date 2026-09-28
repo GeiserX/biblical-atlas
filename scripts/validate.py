@@ -514,7 +514,8 @@ def validar(datos):
             if orden is not None and (not isinstance(orden, dict) or not ID.match(str(orden.get("serie")))
                                       or not _entero(orden.get("orden")) or orden["orden"] < 0):
                 err(f"{donde}: orden_relato debe ser {{serie: <slug>, orden: <entero>}}")
-            if isinstance(orden, dict) and "tras" in orden and not ID.match(str(orden["tras"])):
+            # Un tras que no es texto lo cuenta build.integridad, que también lo necesita sin validate.
+            if isinstance(orden, dict) and isinstance(orden.get("tras"), str) and not ID.match(orden["tras"]):
                 err(f"{donde}: orden_relato.tras debe ser el id de un evento")
             textos_largos(limpio, donde, err)
             if tipo == "lugares":
@@ -570,9 +571,55 @@ def validar(datos):
                 validar_hallazgo(limpio, donde, err, fuentes)
             if tipo == "recorridos":
                 validar_recorrido(limpio, donde, err)
+    validar_consta_desde(datos, err)
+    validar_padres_hijos(datos, err)
     errores.extend(build.integridad(datos))
     errores.extend(pablo_en_su_sitio(datos))
     return errores
+
+
+# Las mismas palabras que agrupa la tarjeta Familia (site/js/tipos/persona.js).
+PALABRAS_PADRE = {"padre", "madre", "padre adoptivo", "madre adoptiva"}
+PALABRAS_HIJO = {"hijo", "hija", "hijo adoptivo", "hija adoptiva", "hijastro", "hijastra", "hijastro e hijo adoptivo"}
+
+
+def validar_padres_hijos(datos, err):
+    """Una relación pariente escrita en X con persona Y y relacion R dice «Y es el R de X». Si X e Y la declaran los
+    dos con palabras de padres o hijos, uno pone una palabra de padre y el otro una de hijo."""
+    dichas = {}
+    for o in datos["personas"]:
+        for r in o.get("relaciones") or []:
+            if isinstance(r, dict) and r.get("tipo") == "pariente" and isinstance(r.get("persona"), str):
+                palabra = str(r.get("relacion") or "").strip()
+                if palabra in PALABRAS_PADRE or palabra in PALABRAS_HIJO:
+                    dichas[(o.get("id"), r["persona"])] = (palabra, o["_fichero"])
+    for (x, y), (px, fx) in sorted(dichas.items()):
+        if x > y or (y, x) not in dichas:
+            continue
+        py, fy = dichas[(y, x)]
+        if (px in PALABRAS_PADRE) == (py in PALABRAS_PADRE):
+            err(f"{fx}: {x} llama a {y} «{px}» y {fy} llama a {x} «{py}»; una relación pariente dice «persona es "
+                f"el R de esta ficha», así que un lado lleva palabra de padre y el otro de hijo")
+
+
+def validar_consta_desde(datos, err):
+    """consta_desde tiene que caer después del ascenso de la potencia anterior, en el mismo orden que usa el sitio
+    (BE.tramoPotencia: por fecha.desde; la que solo tiene fin va justo antes de la que empieza ese año)."""
+    def clave(p):
+        f = p.get("fecha") or {}
+        return f["desde"] if _numero(f.get("desde")) else f["hasta"] - 0.5
+    ps = [p for p in datos["periodos"] if p.get("tipo") == "potencia" and isinstance(p.get("fecha"), dict)
+          and (_numero(p["fecha"].get("desde")) or _numero(p["fecha"].get("hasta")))]
+    ps.sort(key=clave)
+    for i, p in enumerate(ps):
+        cd = p.get("consta_desde")
+        if not _entero(cd) or i == 0:
+            continue
+        ant = ps[i - 1]
+        desde = (ant.get("fecha") or {}).get("desde")
+        if _numero(desde) and cd <= desde:
+            err(f"{p['_fichero']}: consta_desde {cd} no es posterior al ascenso de la potencia anterior, "
+                f"{ant.get('id')} ({desde})")
 
 
 def urls(datos):

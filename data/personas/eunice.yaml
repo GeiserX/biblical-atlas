@@ -22,7 +22,7 @@ estado: verificado
 relaciones:
 - tipo: pariente
   persona: timoteo
-  relacion: madre
+  relacion: hijo
   deducido: false
   fuentes:
   - it-eunice
