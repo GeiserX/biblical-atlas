@@ -1,0 +1,80 @@
+/* biblical-earth · tema «Verde agua», propuesta en verde (docs/verde/README.md).
+   Se carga después de las hojas del sitio y solo cambia colores. Las variables --viajes y --cartas
+   las lee site/js/mapa.js con el cambio descrito en el README; sin ese cambio, los viajes siguen con sus colores de hoy. */
+
+:root {
+  /* ---------- Papel y tinta ---------- */
+  --paper: #eef3f1;
+  --paper-2: #e1e9e6;
+  --surface: #fbfdfc;
+  --surface-2: #f3f7f5;
+  --ink: #14201d;
+  --ink-2: #35463f;
+  --ink-3: #55675f;
+  --ink-4: #93a39c;
+  --line: #d5e0dc;
+  --line-2: #bccbc5;
+  --focus: #2c5f86;
+  --link: #2b5a86;
+
+  /* ---------- Acento: el sujeto activo, antes terracota ---------- */
+  --accent: #1d6b5e;
+  --accent-2: #3f8d7e;
+  --accent-soft: #dcece8;
+
+  /* ---------- El color del tiempo: cursor, fecha activa, cartas y sucesos, antes oro ---------- */
+  --gold: #56760f;
+  --gold-soft: #e8efd8;
+  --gold-ink: #3a4f0c;     /* texto sobre --gold-soft; antes #6e4f15 y #5a4212 escritos a mano */
+  --gold-line: #d0ddb0;    /* borde de las píldoras de fecha; antes #ead9b3 */
+
+  /* ---------- Fuentes: «Verificado» y nivel 1 ---------- */
+  --tier1: #2b5a86;
+  --tier1-soft: #e1e9f2;
+
+  /* ---------- Grafo, imperios y mapa ---------- */
+  --node-persona: var(--accent);
+  --node-lugar: #2b5a86;
+  --node-evento: var(--gold);
+  --node-periodo: #6a5a8c;
+  --node-hallazgo: #8a5a2b;
+  --emp-egipto: #a8863c;
+  --emp-asiria: #9a5b3e;
+  --emp-babilonia: #3f5e8c;
+  --emp-persia: #6f5aa0;
+  --emp-grecia: #2f7f8a;
+  --emp-roma: #4f5d6e;
+  --emp-israel: #4f7a3a;
+  --route-todo: var(--accent);
+
+  /* ---------- Viajes y cartas, en el orden en que los reparte mapa.js ---------- */
+  --viajes: #344c95, #8e6537, #b1496f, #776689, #3b748c, #ad523d, #724345, #7b3475, #5b4f2d, #7d400c;
+  --cartas: #56760f, #7b3475, #b1496f, #344c95, #776689, #ad523d, #724345;
+
+  --shadow-1: 0 1px 0 rgba(20, 40, 25, 0.04), 0 1px 3px rgba(20, 40, 25, 0.08);
+  --shadow-2: 0 1px 2px rgba(20, 40, 25, 0.06), 0 6px 18px rgba(20, 40, 25, 0.10);
+  --shadow-3: 0 2px 6px rgba(20, 40, 25, 0.08), 0 18px 48px rgba(20, 40, 25, 0.18);
+}
+
+/* ---------- La marca en verde ---------- */
+.be-logo__mark { background-image: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="biblical-earth %C2%B7 Verde azulado"> <path d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z" fill="#2e7c6c"/> <path d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke="#1b2a27" stroke-width="5" stroke-linecap="round"/> <circle cx="20.5" cy="47" r="6" fill="#174541"/><circle cx="31" cy="31.5" r="6" fill="#174541"/><circle cx="47.5" cy="13.5" r="6" fill="#174541"/> </svg>"); }
+
+/* ---------- Colores que el sitio escribe a mano ---------- */
+::selection { background: var(--accent-soft); color: var(--ink); }
+.be-date, .fecha-tnm, .be-chrono--tnm, .miga--actual { border-color: var(--gold-line); }
+.be-date__value { color: var(--gold-ink); }
+.be-date__hint { color: var(--ink-3); }
+.linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"], .fecha-tnm, .be-chrono--tnm, .res-fecha { color: var(--gold-ink); }
+.texto-carta, .texto-evento { fill: color-mix(in srgb, var(--gold) 80%, #000); }
+.be-ref { border-color: #c6d4e5; }
+.banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); }
+.regla-banda { fill: color-mix(in srgb, var(--gold) 10%, transparent); }
+.be-cursor::before { background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 10%, transparent), transparent); }
+.rejilla { stroke: color-mix(in srgb, var(--line-2) 45%, transparent); }
+.be-gridline { border-left-color: color-mix(in srgb, var(--line-2) 45%, transparent); }
+.marca-lugar.de-carta .punto { background: var(--gold-soft); }
+.pablo-halo { background: radial-gradient(circle, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%); }
+.pablo.estimada .pablo-halo, .leyenda-estimada { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.situacion-recuadro { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
+.be-map::after { box-shadow: inset 0 0 80px rgba(20, 40, 25, .10); }
