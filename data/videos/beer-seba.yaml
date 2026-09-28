@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: beer-seba
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb_201712_4_VIDEO"
+    titulo: "Graduación de la clase 143 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201712_4_VIDEO&appLanguage=S"
+    publicado: "2017-12-25"
+    menciones: 2
+    terminos:
+      "Beer-seba": 2

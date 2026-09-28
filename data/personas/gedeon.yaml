@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gedeon
+nombre: Gedeón
+nombres:
+- nombre: Gedeón
+- nombre: Jerubaal
+  nota: Nombre que le dio su padre Joás cuando derribó el altar de Baal (Jue 6:32).
+resumen: Juez de la tribu de Manasés, hijo de Joás, que vivía en Ofrá. Derribó el altar de Baal de su padre y con pocos
+  hombres libró a Israel de Madián. Hubo paz los cuarenta años que juzgó.
+razon: Perspicacia «Gedeón», párr. 2, 5, 6 y 16; Jue 6:11 a 8:28.
+fuentes:
+- it-gedeon
+- jueces-6
+enlaces:
+- titulo: 'Perspicacia: «Gedeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
+  tipo: perspicacia
+- titulo: Jueces 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

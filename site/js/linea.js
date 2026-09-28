@@ -5,7 +5,7 @@
 'use strict';
 (() => {
 const BE = window.BE;
-const { E, sucio, programar, esc, $, clamp, tramo, fechaCorta, fmtAnio, fmtCursor, citas, span, setT, reproducir, saltar, MESES, norm } = BE;
+const { E, sucio, programar, esc, $, clamp, tramo, fechaCorta, fmtAnio, citas, span, setT, reproducir, saltar, MESES, norm } = BE;
 
 // Rango del cursor: de la creación de Adán (4026 a.e.c. = −4025) al año 100. base.js lo lee siempre a través de BE.
 BE.T_MIN = -4025; BE.T_MAX = 100;
@@ -27,6 +27,7 @@ const L = {
   grande: false,          // línea ampliada (tecla T)
   modoRegla: false,
   grupo: null,            // sucesos de la última píldora pulsada: { claves, trs, sel }. Van resaltados, nunca atenuados
+  meses: null,            // «ambos», «nuestros» o «hebreos»; null: lo de siempre, ambos
 };
 
 const ICONOS = {
@@ -132,8 +133,8 @@ function catalogo() {
       hay: () => ps.some((p) => visible(BE.tramoPeriodo(p))),
       n2: ps.every((p) => nivelFuentes(p.fuentes) > 1) });
   };
-  if (D.calendario?.meses?.length) lista.push({ id: 'meses', nombre: 'Mes hebreo', icono: 'calendario', tipo: 'meses', filas: 1, orden: 0, hay: () => span() < 2.5,
-    prio: () => 88, ayuda: 'Meses del calendario hebreo (tabla B15). La equivalencia con nuestro calendario es aproximada.' });
+  if (D.calendario?.meses?.length) lista.push({ id: 'meses', nombre: 'Meses', icono: 'calendario', tipo: 'meses', filas: 1, orden: 0, hay: () => span() < 2.5,
+    prio: () => 88, medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
   lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), { orden: 1, prio: () => (span() >= 150 ? 92 : 30), clase: 'era', maxFilas: 1 });
   lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), { orden: 2, prio: () => (span() >= 60 ? 86 : 35), clase: 'potencia', maxFilas: 1 });
   // Pablo y las cartas son detalle del siglo I: a escala de siglos o milenios ceden el sitio a las eras y los imperios.
@@ -226,17 +227,24 @@ function elegirCarriles() {
 }
 let claveEtiquetas = '';
 function pintarCarriles() {
-  const clave = carrilesVista.map((c) => `${c.id}:${c.filas}:${L.fijados.includes(c.id)}`).join('|') + `|${ocultos.length}`;
+  const clave = carrilesVista.map((c) => `${c.id}:${c.filas}:${L.fijados.includes(c.id)}:${(c.nombres || []).join('/')}`).join('|') + `|${ocultos.length}`;
   if (clave === claveEtiquetas) return;
   claveEtiquetas = clave;
   const n = ocultos.length;
   $('#carriles').innerHTML = `<div class="carriles-eje"><button type="button" class="carriles-boton" data-linea="carriles" aria-label="Elegir carriles${n ? `: ${n} sin sitio` : ''}" title="Elegir y fijar carriles">Carriles${n ? `<b> +${n}</b>` : ''}</button></div>${carrilesVista.map((c) => {
     const fijo = L.fijados.includes(c.id);
-    const n2 = c.n2 ? '<span class="be-tier be-tier--2 nivel-carril" data-n="2">N2</span>' : '';
+    const n2 = c.n2 ? BE.marcaNivel(2) : '';
     const pin = `<button type="button" class="carril-pin${fijo ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${fijo}" aria-label="${fijo ? 'Soltar' : 'Fijar'} el carril ${esc(c.nombre)}" title="${fijo ? 'Soltar este carril' : 'Fijar este carril arriba'}">${ICONOS.alfiler}</button>`;
     const nombres = c.nombres || [c.nombre];
     const alto = c.nombres ? '' : (c.filas > 1 ? ` style="height:${c.filas * CARRIL}px"` : '');
-    return nombres.map((nm, i) => `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}"${alto}${c.ayuda ? ` title="${esc(c.ayuda)}"` : ''}>${ICONOS[c.icono] || ''}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${esc(nm)}</span>`}${i === 0 ? `${n2}${pin}` : ''}</div>`).join('');
+    return nombres.map((nm, i) => {
+      const ayuda = c.ayudas?.[i] || c.ayuda;
+      const icono = c.iconos ? (ICONOS[c.iconos[i]] || '') : (ICONOS[c.icono] || '');
+      const clase = c.clases?.[i] ? ` ${c.clases[i]}` : '';
+      const mas = c.tipo === 'meses' && i === Math.max(0, (c.tiposFila || []).indexOf('hebreos')) ? enlaceCalendario('carril-ayuda', '?', '¿Qué meses son estos?') : '';
+      const texto = c.cortos?.[i] ? `<span class="nombre-largo">${esc(nm)}</span><span class="nombre-corto" aria-hidden="true">${esc(c.cortos[i])}</span>` : esc(nm);
+      return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}"${alto}${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
+    }).join('');
   }).join('')}`;
 }
 
@@ -256,6 +264,7 @@ function defs() {
     <mask id="m-cambio-i" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-cambio-i)"/></mask>
     <pattern id="p-rayas" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="8" fill="rgba(122,92,142,.13)"/></pattern>
     <pattern id="p-rayas-claras" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(255,255,255,.45)"/></pattern>
+    <pattern id="p-hebreo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="6" fill="rgba(74,65,54,.16)"/></pattern>
     <pattern id="p-calculo" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(155,61,90,.18)"/></pattern>
   </defs>`;
 }
@@ -271,6 +280,7 @@ function pintarLineaFija() {
   pintarCarriles();
   const partes = [defs()];
   carrilesVista.forEach((c) => { for (let k = 0; k < c.filas; k++) if (((c.y - EJE) / CARRIL + k) % 2) partes.push(`<rect class="fila-par" x="0" y="${c.y + k * CARRIL}" width="${anchoLinea}" height="${CARRIL}"/>`); });
+  partes.push(noches());
   partes.push(`<g class="eje">${marcasEje(pxAnio)}</g>`);
   partes.push(densidad());
   const V = BE.viajeActual(BE.dondeEsta(E.t));
@@ -283,7 +293,7 @@ function pintarLineaFija() {
     else if (c.tipo === 'sucesos') pintarSucesos(partes, c);
     else if (c.tipo === 'periodos') pintarPeriodos(partes, c);
     else if (c.tipo === 'persona') pintarPersona(partes, c);
-    else if (c.tipo === 'meses') pintarMeses(partes, c.y);
+    else if (c.tipo === 'meses') pintarMeses(partes, c);
     else if (c.tipo === 'secular') pintarSecular(partes, c);
   }
   pintarJuntos(partes);
@@ -308,6 +318,7 @@ function pintarLineaFija() {
     b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on));
   });
   pintarMinimapa();
+  pintarSelectorMeses();
   pintarLineaFija.claveV = V?.id;
 }
 
@@ -584,23 +595,6 @@ function pintarJuntos(partes) {
     }
   }
 }
-/** Meses hebreos (T-19): un tramo por mes con su nombre. La equivalencia con nuestro calendario es aproximada. */
-function pintarMeses(partes, y) {
-  const cal = BE.calendario();
-  // Fijado a escala de siglos o milenios serían miles de meses de menos de un píxel: se avisa en su lugar.
-  if (anchoLinea / span() / 12 < 3) { partes.push(`<text x="8" y="${y + 19}" class="texto-fuera">Acerca la línea para ver los meses</text>`); return; }
-  const y0 = Math.floor(E.vista[0]) - 1, y1 = Math.ceil(E.vista[1]);
-  for (let anio = y0; anio <= y1; anio++) {
-    const ms = cal.meses.filter((m) => m.orden <= 12);
-    ms.forEach((m, k) => {
-      const a = BE.inicioMes(anio, m.id, true), b = k + 1 < ms.length ? BE.inicioMes(anio, ms[k + 1].id, true) : BE.inicioMes(anio + 1, ms[0].id, true);
-      if (b < E.vista[0] || a > E.vista[1]) return;
-      const x0 = xDe(a), x1 = xDe(b);
-      const texto = recortar(m.nombre, Math.min(x1, anchoLinea) - Math.max(x0, 0) - 12);
-      partes.push(`<g class="mes-hebreo mes-${k % 2}"><title>${esc(m.nombre)} (equivalencia aproximada)</title><rect x="${x0}" y="${y + 6}" width="${Math.max(1, x1 - x0 - 1)}" height="18" rx="4"/>${texto ? `<text x="${Math.max(x0, 0) + 7}" y="${y + 19}">${esc(texto)}</text>` : ''}</g>`);
-    });
-  }
-}
 /** Fechas seculares como nota (C-02, C-04): contorno discontinuo, no mueven el cursor. */
 function pintarSecular(partes, c) {
   const items = [];
@@ -704,6 +698,189 @@ function recortar(texto, px) {
 }
 
 // ---------------------------------------------------------------------------
+// Meses: nuestros meses y los hebreos, alineados (T-19)
+// ---------------------------------------------------------------------------
+/** Nuestros meses: el calendario gregoriano aplicado hacia atrás, solo para orientar. Sin días bisiestos: el cuarto de
+    día que sobra cada año se lo queda el 31 de diciembre. Días de medianoche a medianoche, como hoy. */
+const DIAS_ANTES = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365];
+const MESES_LARGOS = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const inicioNuestro = (y, m) => (m >= 12 ? y + 1 : y + DIAS_ANTES[m] * BE.DIA);
+/** Como fmtCursor de base.js, con los meses de verdad: «abr. 33 e.c.» o, sin `fino`, «33 e.c.». */
+const fmtMes = (t, fino) => (fino ? `${MESES[mesNuestro(t).m]} ${fmtAnio(Math.floor(t))}` : fmtAnio(Math.floor(t)));
+function mesNuestro(t) {
+  const y = Math.floor(t), d = (t - y) / BE.DIA;
+  let m = 0;
+  while (m < 11 && d >= DIAS_ANTES[m + 1]) m++;
+  return { anio: y, m, dia: Math.min(DIAS_ANTES[m + 1] - DIAS_ANTES[m], Math.floor(d - DIAS_ANTES[m]) + 1) };
+}
+const MODOS_MESES = [['ambos', 'Ambos'], ['nuestros', 'Nuestros'], ['hebreos', 'Hebreos']];
+const modoMeses = () => L.meses || 'ambos';   // los dos calendarios, también en el móvil: caben, y es lo que pedimos
+const AYUDA_NUESTROS = 'Nuestros meses: el calendario gregoriano es de 1582. Aquí se aplica hacia atrás solo para orientar.';
+const AYUDA_HEBREOS = 'Meses hebreos: lunares y aproximados, de luna nueva a luna nueva. Los nombres cambian con la época: en cursiva, un nombre de después del exilio que la Biblia de antes no usa. El día hebreo empezaba al ponerse el sol: la franja sombreada ya es el día siguiente.';
+const ANACRONICO = 'Va en cursiva porque la Biblia de esa época no le da este nombre.';
+const mayus = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const AYUDA_FIESTAS = 'Fiestas del calendario hebreo (tabla B15 de la Biblia de estudio), en su día aproximado.';
+/** Enlace a la página del calendario. Lleva la vista actual para que su «Volver al mapa» vuelva aquí. */
+function enlaceCalendario(clase, texto, titulo) {
+  return `<a class="${clase}" href="calendario.html" data-calendario="1" title="${esc(titulo)}" aria-label="${esc(titulo)}">${esc(texto)}</a>`;
+}
+/** Fiestas que caen en [a, b]: { nombre, corto, a, b, mes } en el año hebreo de cada una. */
+function fiestasEn(a, b) {
+  const out = [];
+  const cal = BE.calendario();
+  for (let y = Math.floor(a - cal.inicio) - 1; y <= Math.ceil(b); y++) {
+    for (const M of BE.anioHebreo(y).meses) {
+      for (const f of M.mes.fiestas || []) {
+        const fa = M.a + (f.desde - 1) * BE.DIA, fb = M.a + (f.hasta ?? f.desde) * BE.DIA;
+        if (f.instituida != null && fa < f.instituida) continue;   // antes de instituirse no hay fiesta que pintar
+        if (fb > a && fa < b) out.push({ ...f, a: fa, b: fb, mes: M.mes, anio: y, corto: nombreCortoFiesta(f.nombre) });
+      }
+    }
+  }
+  return out;
+}
+/** «Fiesta de las Semanas (Pentecostés)» → «Pentecostés»; «Fiesta de los Panes Sin Levadura» → «Panes Sin Levadura». */
+function nombreCortoFiesta(n) {
+  const par = n.match(/\(([^)]+)\)/);
+  if (par) return par[1];
+  const c = n.replace(/^(fiesta|ofrenda|toque|d[ií]a) de (la |las |los |el )?/i, '');
+  return c.charAt(0).toUpperCase() + c.slice(1);
+}
+function medirMeses() {
+  const modo = modoMeses();
+  const tipos = modo === 'ambos' ? ['nuestros', 'hebreos'] : [modo];
+  if (span() < 0.35 && fiestasEn(E.vista[0], E.vista[1]).length) tipos.push('fiestas');
+  this.tiposFila = tipos;
+  this.filas = tipos.length;
+  this.nombres = tipos.map((k) => ({ nuestros: 'Nuestros meses', hebreos: 'Meses hebreos', fiestas: 'Fiestas' })[k]);
+  this.cortos = tipos.map((k) => ({ nuestros: 'Nuestros', hebreos: 'Hebreos', fiestas: 'Fiestas' })[k]);
+  this.ayudas = tipos.map((k) => ({ nuestros: AYUDA_NUESTROS, hebreos: AYUDA_HEBREOS, fiestas: AYUDA_FIESTAS })[k]);
+  this.clases = tipos.map((k) => `carril-mes carril-mes--${k}`);
+}
+/** Sombra de las horas entre la puesta de sol y nuestra medianoche, a escala de días: el día hebreo iba de una puesta
+    de sol a la siguiente (Perspicacia «Día»), así que esas horas ya son el día hebreo siguiente y todavía nuestra fecha
+    anterior. La puesta se pone a las 18:00: las horas de luz iban más o menos de seis a seis (el mismo artículo). */
+function noches() {
+  if (!(span() < 0.35) || !BE.calendario().meses.length || modoMeses() === 'nuestros') return '';
+  const pxDia = (anchoLinea / span()) * BE.DIA;
+  if (pxDia < 4) return '';
+  const out = [];
+  for (let y = Math.floor(E.vista[0]); y <= Math.floor(E.vista[1]); y++) {
+    const k0 = Math.max(0, Math.floor((E.vista[0] - y) / BE.DIA) - 1), k1 = Math.min(365, Math.ceil((E.vista[1] - y) / BE.DIA) + 1);
+    for (let k = k0; k <= k1; k++) {
+      const a = y + (k + 0.75) * BE.DIA, b = Math.min(y + (k + 1) * BE.DIA, y + 1);
+      if (b < E.vista[0] || a > E.vista[1] || b <= a) continue;
+      out.push(`<rect x="${xDe(a)}" y="${EJE}" width="${Math.max(1, xDe(b) - xDe(a))}" height="${altoPista - EJE}"/>`);
+    }
+  }
+  return `<g class="noche-hebrea" aria-hidden="true">${out.join('')}</g>`;
+}
+/** Los meses (T-19): una fila por calendario, alineadas, y a escala de días una fila de fiestas. Los meses hebreos llevan
+    el nombre de su época (Abib antes del exilio, Nisán después); si la Biblia de esa época no les da nombre, el de
+    siempre va en cursiva. Nuestros meses van en contorno y los hebreos rellenos y rayados: se distinguen sin color. */
+function pintarMeses(partes, c) {
+  // Fijado a escala de siglos o milenios serían miles de meses de menos de un píxel: se avisa en su lugar.
+  if (anchoLinea / span() / 12 < 3) { partes.push(`<text x="8" y="${c.y + 19}" class="texto-fuera">Acerca la línea para ver los meses</text>`); return; }
+  const tipos = c.tiposFila || ['hebreos'];
+  const dias = span() < 0.35, pxDia = (anchoLinea / span()) * BE.DIA;
+  tipos.forEach((tipo, fila) => {
+    const y = c.y + fila * CARRIL;
+    if (tipo === 'fiestas') { pintarFiestas(partes, y); return; }
+    const cajas = [];
+    if (tipo === 'nuestros') {
+      for (let anio = Math.floor(E.vista[0]); anio <= Math.floor(E.vista[1]); anio++) {
+        for (let m = 0; m < 12; m++) {
+          const a = inicioNuestro(anio, m), b = inicioNuestro(anio, m + 1);
+          if (b < E.vista[0] || a > E.vista[1]) continue;
+          cajas.push({ a, b, k: m, nombre: MESES_LARGOS[m], anio, titulo: `${MESES_LARGOS[m]} de ${fmtAnio(anio)} (nuestro calendario, aplicado hacia atrás)`,
+            aviso: `${mayus(MESES_LARGOS[m])} de ${fmtAnio(anio)}, en nuestro calendario, aplicado hacia atrás solo para orientar.` });
+        }
+      }
+    } else {
+      const cal = BE.calendario();
+      for (let anio = Math.floor(E.vista[0] - cal.inicio) - 1; anio <= Math.ceil(E.vista[1]); anio++) {
+        BE.anioHebreo(anio).meses.forEach((M, k) => {
+          if (M.b < E.vista[0] || M.a > E.vista[1]) return;
+          const nm = BE.nombreMes(M.mes, anio);
+          const eq = typeof M.mes.equivale === 'string' ? `, más o menos ${M.mes.equivale}` : '';
+          const extra = M.mes.id === 'veadar' ? '\nEl mes que se añadía algunos años.' : '';
+          cajas.push({ a: M.a, b: M.b, k, nombre: nm.nombre, anacronico: nm.anacronico, anadido: M.mes.id === 'veadar', anio,
+            titulo: `${nm.nombre}: mes hebreo${eq}${nm.anacronico ? ' (nombre de después del exilio)' : ''}${extra}${nm.nota ? `\n${nm.nota}` : ''}`,
+            aviso: `${nm.nombre}: mes hebreo${eq}.${extra.replace('\n', ' ')}${nm.anacronico ? ` ${ANACRONICO}${nm.nota ? ` ${nm.nota}` : ''}` : ''}` });
+        });
+      }
+    }
+    for (const cj of cajas) {
+      const x0 = xDe(cj.a), x1 = xDe(cj.b), w = x1 - x0;
+      const libre = Math.min(x1, anchoLinea) - Math.max(x0, 0) - 12;
+      const conAnio = `${cj.nombre} de ${fmtAnio(tipo === 'nuestros' ? cj.anio : Math.floor(Math.max(cj.a, E.vista[0])))}`;
+      const texto = anchoTexto(conAnio) + 10 <= libre && dias ? conAnio : recortar(cj.nombre, libre);
+      const cls = `mes mes--${tipo} mes-${cj.k % 2}${cj.anacronico ? ' anacronico' : ''}${cj.anadido ? ' anadido' : ''}`;
+      const tx = Math.max(x0, 0) + 7;
+      let numeros = '';
+      if (dias) {
+        // Días del mes: una marca en cada cambio de día y el número si cabe, sin pisar el nombre.
+        const finNombre = texto ? tx + anchoTexto(texto) + 4 : -Infinity;
+        const n = Math.round((cj.b - cj.a) / BE.DIA);
+        for (let d = 1; d <= n; d++) {
+          const ta = cj.a + (d - 1) * BE.DIA, xa = xDe(ta), xm = xDe(ta + BE.DIA / 2);
+          if (xa > anchoLinea + 2 || xDe(ta + BE.DIA) < -2) continue;
+          if (d > 1 && pxDia >= 5) numeros += `<line x1="${xa}" x2="${xa}" y1="${y + 18}" y2="${y + 24}" class="mes-dia"/>`;
+          if (pxDia >= 15 && xm - 6 > finNombre && (pxDia >= 22 || d % 2 === 1)) numeros += `<text x="${xm}" y="${y + 19}" text-anchor="middle" class="mes-num">${d}</text>`;
+        }
+      }
+      // Sin sitio para el nombre (meses en el móvil), tres letras o la inicial, centradas; el nombre entero va en el título.
+      let corto = '';
+      if (!texto && !dias) {
+        const vis = libre + 12, tres = cj.nombre.slice(0, 3);
+        corto = vis - 6 >= tres.length * 6.3 ? tres : vis >= 11 ? cj.nombre.charAt(0).toUpperCase() : '';
+      }
+      const rotulo = texto ? `<text x="${tx}" y="${y + 19}" class="mes-texto">${esc(texto)}</text>`
+        : corto ? `<text x="${((Math.max(x0, 0) + Math.min(x1, anchoLinea)) / 2).toFixed(1)}" y="${y + 19}" text-anchor="middle" class="mes-texto mes-texto--corto">${esc(corto)}</text>` : '';
+      // Al tocarla, la caja cuyo nombre no se lee entero (o va en cursiva) lo dice en un aviso: en el móvil no hay título.
+      const avisar = !texto || texto !== cj.nombre && texto !== conAnio || cj.anacronico;
+      partes.push(`<g class="${cls}"${avisar ? ` data-aviso="${esc(cj.aviso)}"` : ''}><title>${esc(cj.titulo)}</title><rect x="${x0}" y="${y + 6}" width="${Math.max(1, w - 1)}" height="18" rx="4" class="mes-caja"/>${cj.anadido || tipo === 'hebreos' ? `<rect x="${x0}" y="${y + 6}" width="${Math.max(1, w - 1)}" height="18" rx="4" fill="url(#p-hebreo)" pointer-events="none"/>` : ''}${numeros}${rotulo}</g>`);
+    }
+  });
+}
+/** Fiestas (B15) a escala de días: un tramo por fiesta, del día en que empieza al día en que acaba. Una fiesta dentro
+    de otra (la ofrenda de las primicias, el 16 de nisán, dentro de los Panes Sin Levadura) va encima. El rótulo va
+    dentro si cabe, si no a un lado, y si no queda sitio se lee al pasar por encima. */
+function pintarFiestas(partes, y) {
+  const fs = fiestasEn(E.vista[0], E.vista[1]).map((f) => ({ ...f, x0: xDe(f.a), x1: xDe(f.b) }))
+    .sort((p, q) => (q.x1 - q.x0) - (p.x1 - p.x0) || p.x0 - q.x0);
+  const puestos = [];
+  for (const f of fs) {
+    const w = f.x1 - f.x0;
+    const dentro = fs.filter((o) => o !== f && o.x0 >= f.x0 && o.x1 <= f.x1);
+    const titulo = `${f.nombre} · ${f.desde === (f.hasta ?? f.desde) ? `${f.desde}` : `del ${f.desde} al ${f.hasta}`} de ${BE.nombreMes(f.mes, f.anio).nombre.toLowerCase()} (fecha aproximada)`;
+    partes.push(`<g class="fiesta"><title>${esc(titulo)}</title><rect x="${f.x0}" y="${y + 6}" width="${Math.max(3, w - 1)}" height="18" rx="5" class="fiesta-caja"/></g>`);
+    f.titulo = titulo; f.dentro = dentro;
+  }
+  // Rótulos: primero las fiestas largas, en el hueco libre de su tramo (sin las que lleva dentro); después las cortas.
+  const rot = [];
+  const libre = (a, ancho) => !puestos.some(([c, d]) => a < d + 4 && a + ancho > c - 4);
+  for (const f of fs) {
+    const huecos = [];
+    let x = Math.max(f.x0, 0) + 6;
+    for (const o of [...f.dentro].sort((p, q) => p.x0 - q.x0)) { if (o.x0 > x) huecos.push([x, o.x0 - 4]); x = Math.max(x, o.x1 + 4); }
+    huecos.push([x, Math.min(f.x1, anchoLinea) - 4]);
+    // Fuera de su tramo no puede pisar otra fiesta, salvo la que la contiene.
+    const fuera = (a, ancho) => a >= 0 && a + ancho <= anchoLinea && libre(a, ancho)
+      && !fs.some((o) => o !== f && !f.dentro.includes(o) && !(o.x0 <= f.x0 && o.x1 >= f.x1) && a < o.x1 && a + ancho > o.x0);
+    const opciones = [];
+    for (const t of [f.nombre, f.corto]) for (const [a, b] of huecos) opciones.push([t, a, b - a >= anchoTexto(t), '']);
+    for (const t of [f.nombre, f.corto]) for (const a of [f.x1 + 4, f.x0 - 4 - anchoTexto(t)]) opciones.push([t, a, true, ' fiesta-texto--fuera', true]);
+    const op = opciones.find(([t, a, cabe, , esFuera]) => cabe && (esFuera ? fuera(a, anchoTexto(t)) : libre(a, anchoTexto(t))));
+    if (!op) continue;
+    const [t, a, , clase] = op;
+    puestos.push([a, a + anchoTexto(t)]);
+    rot.push(`<text x="${a}" y="${y + 19}" class="fiesta-texto${clase}">${esc(t)}</text>`);
+  }
+  partes.push(`<g class="fiesta-rotulos" aria-hidden="true">${rot.join('')}</g>`);
+}
+
+// ---------------------------------------------------------------------------
 // Eje: años sin año cero (C-12), meses y días hebreos
 // ---------------------------------------------------------------------------
 const PASOS_ANIO = [1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
@@ -721,20 +898,32 @@ function multiplos(paso, a, b) {
 function marcasEje(pxAnio) {
   const out = [];
   const [a, b] = E.vista;
-  const mayorTick = (x, texto) => out.push(`<line x1="${x}" x2="${x}" y1="0" y2="${EJE}" class="tick-mayor"/><line x1="${x}" x2="${x}" y1="${EJE}" y2="${altoPista}" class="rejilla"/><text x="${x + 5}" y="16" class="tick-texto">${esc(texto)}</text>`);
+  // Un rótulo que pisaría al anterior («ene. 1513 a.e.c.» antes de «feb.») se queda sin texto; la marca sí se dibuja.
+  let finRotulo = -Infinity;
+  const mayorTick = (x, texto) => {
+    const cabe = x + 5 >= finRotulo + 6;
+    if (cabe) finRotulo = x + 5 + texto.length * 5.6;
+    out.push(`<line x1="${x}" x2="${x}" y1="0" y2="${EJE}" class="tick-mayor"/><line x1="${x}" x2="${x}" y1="${EJE}" y2="${altoPista}" class="rejilla"/>${cabe ? `<text x="${x + 5}" y="16" class="tick-texto">${esc(texto)}</text>` : ''}`);
+  };
   const menorTick = (x) => out.push(`<line x1="${x}" x2="${x}" y1="${EJE - 6}" y2="${EJE}" class="tick-menor"/>`);
   if (span() < 0.35 && BE.calendario().meses.length) {
-    // Días hebreos: marca mayor el 1, 8, 15 y 22 de cada mes; menor, cada día.
-    const cal = BE.calendario();
-    for (let anio = Math.floor(a) - 1; anio <= Math.ceil(b); anio++) {
-      for (const m of cal.meses.filter((x) => x.orden <= 12)) {
-        const ini = BE.inicioMes(anio, m.id, true);
-        for (let d = 1; d <= 30; d++) {
-          const t = ini + (d - 1) * BE.DIA;
-          if (d === 30 && t >= ini + BE.MES_LUNAR - BE.DIA / 2) break;
-          if (t < a - BE.DIA || t > b + BE.DIA) continue;
-          if ((d - 1) % 7 === 0 && d < 29) mayorTick(xDe(t), `${d} ${m.nombre.toLowerCase()}`);
-          else if (pxAnio * BE.DIA >= 5) menorTick(xDe(t));
+    // Días: marca mayor el 1, 8, 15 y 22 de cada mes; menor, cada día. Los días del calendario que va primero: los
+    // hebreos empiezan al ponerse el sol, los nuestros a medianoche.
+    const marcar = (t, d, nombre) => {
+      if (t < a - BE.DIA || t > b + BE.DIA) return;
+      if ((d - 1) % 7 === 0 && d < 29) mayorTick(xDe(t), `${d} ${nombre}`);
+      else if (pxAnio * BE.DIA >= 5) menorTick(xDe(t));
+    };
+    if (modoMeses() === 'nuestros') {
+      for (let anio = Math.floor(a); anio <= Math.floor(b); anio++) {
+        for (let m = 0; m < 12; m++) for (let d = 1; d <= DIAS_ANTES[m + 1] - DIAS_ANTES[m]; d++) marcar(inicioNuestro(anio, m) + (d - 1) * BE.DIA, d, MESES[m]);
+      }
+    } else {
+      const cal = BE.calendario();
+      for (let anio = Math.floor(a - cal.inicio) - 1; anio <= Math.ceil(b); anio++) {
+        for (const M of BE.anioHebreo(anio).meses) {
+          const nombre = BE.nombreMes(M.mes, anio).nombre.toLowerCase();
+          for (let d = 1; M.a + (d - 1) * BE.DIA < M.b - BE.DIA / 2; d++) marcar(M.a + (d - 1) * BE.DIA, d, nombre);
         }
       }
     }
@@ -749,7 +938,7 @@ function marcasEje(pxAnio) {
     }
     for (const t of mayores) mayorTick(xDe(t), fmtAnio(t));
     // El paso de a.e.c. a e.c. se marca con «1 e.c.» si hay sitio.
-    if (mayor >= 10 && a < 1 && b > 1 && mayores.every((t) => Math.abs(xDe(t) - xDe(1)) > 64)) mayorTick(xDe(1), '1 e.c.');
+    if (mayor >= 10 && a < 1 && b > 1 && mayores.every((t) => Math.abs(xDe(t) - xDe(1)) > 64)) { finRotulo = -Infinity; mayorTick(xDe(1), '1 e.c.'); }
   } else {
     // Años con meses (v0): de 5 en 5 años hasta mes a mes.
     const pasos = [5, 2, 1, 0.5, 0.25, 1 / 12];
@@ -759,7 +948,8 @@ function marcasEje(pxAnio) {
     const inicio = Math.floor(a / menor) * menor;
     for (let t = inicio; t <= b + menor; t += menor) {
       const tt = Math.round(t * 12) / 12;
-      const x = xDe(tt);
+      const yy = Math.floor(tt + 1e-9);
+      const x = xDe(inicioNuestro(yy, Math.round((tt - yy) * 12)));   // el mes empieza donde empieza en la fila «Nuestros meses»
       const esMayor = Math.abs(tt / mayor - Math.round(tt / mayor)) < 1e-6;
       if (esMayor) {
         const y = Math.floor(tt + 1e-9), mes = Math.round((tt - y) * 12);
@@ -854,7 +1044,7 @@ function ajustar(t) {
   if (s > 1.5) return Math.round(t * 12) / 12;
   return Math.round(t / BE.DIA) * BE.DIA;
 }
-const textoFecha = (t) => { const s = span(); return s > 20 ? fmtAnio(Math.round(t)) : fmtCursor(t + 1e-6, true); };
+const textoFecha = (t) => { const s = span(); return s > 20 ? fmtAnio(Math.round(t)) : fmtMes(t + 1e-6, true); };
 function pintarRegla(partes) {
   if (!L.regla) return;
   const [a, b] = [Math.min(...L.regla), Math.max(...L.regla)];
@@ -882,7 +1072,7 @@ function marcadores() { try { return JSON.parse(localStorage.getItem(CLAVE_MARCA
 function guardarMarcadores(ms) { try { localStorage.setItem(CLAVE_MARCAS, JSON.stringify(ms)); } catch { BE.avisar('Este navegador no deja guardar marcadores.'); } }
 function nuevoMarcador() {
   const ms = marcadores();
-  const nombre = `${fmtCursor(E.t, span() < 4)}${E.sel ? ` · ${BE.nombreSel(E.sel)}` : ''}`;
+  const nombre = `${fmtMes(E.t, span() < 4)}${E.sel ? ` · ${BE.nombreSel(E.sel)}` : ''}`;
   ms.push({ t: +E.t.toFixed(4), sel: E.sel ? BE.selTexto(E.sel) : null, nombre });
   guardarMarcadores(ms);
   BE.avisar(`Marcador guardado: ${nombre}`);
@@ -907,13 +1097,28 @@ function pintarMarcadores(partes) {
 // Cursor y frase de contexto
 // ---------------------------------------------------------------------------
 const estrecha = () => matchMedia('(max-width: 760px)').matches;
+const CURSIVA_CHIP = 'En cursiva: nombre de después del exilio; la Biblia de esa época no llama así a ese mes.';
+/** La fecha del cursor en los dos calendarios, según la escala y el selector «Meses». `primera` es la que manda (con su
+    año); `segunda`, la otra, sin año: en hebreo la equivalencia de la tabla B15 («marzo-abril»), en nuestro calendario
+    el día o el mes hebreo. A escala de años o más, solo el año. `anacronico`: el nombre hebreo no es de esa época. */
+function fechaCursor(t, corto = false) {
+  const s = span();
+  if (!(s < 4) || !BE.calendario().meses.length) return { primera: fmtMes(t, s < 4), segunda: '' };
+  const dias = s < 0.35, y = Math.floor(t);
+  const h = BE.diaHebreo(t), n = mesNuestro(t);
+  const mesH = h.nombre.toLowerCase();   // sin abreviar: «abi.» o «kis.» no los reconoce nadie, y el más largo tiene seis letras
+  const mesN = corto ? MESES[n.m] : MESES_LARGOS[n.m];
+  const de = corto ? ' ' : ' de ';
+  const hebreo = dias ? `${h.dia}${de}${mesH}` : mesH;
+  const hebreoEntero = dias ? `${h.dia} de ${h.nombre.toLowerCase()}` : h.nombre.toLowerCase();
+  const nuestro = dias ? `${n.dia}${de}${mesN}` : mesN;
+  if (modoMeses() === 'nuestros') return { primera: `${nuestro}${de}${fmtAnio(y)}`, segunda: hebreoEntero, anacronico: false, anacronicoSegunda: h.anacronico };
+  const eq = typeof h.mes.equivale === 'string' ? h.mes.equivale : nuestro;
+  return { primera: `${hebreo}${de}${fmtAnio(y)}`, segunda: eq, anacronico: h.anacronico };
+}
 function textoCursor(t, fino, corto = false) {
-  if (span() < 0.35) {
-    const h = BE.diaHebreo(t);
-    const mes = h && (corto ? `${h.mes.nombre.slice(0, 3).toLowerCase()}.` : h.mes.nombre.toLowerCase());
-    if (h) return `${h.dia} ${mes} ${fmtAnio(Math.floor(t))}`;
-  }
-  return fmtCursor(t, fino);
+  const f = fechaCursor(t, corto);
+  return f.primera;
 }
 function pintarCursor() {
   const g = $('#linea-cursor');
@@ -927,7 +1132,8 @@ function pintarCursor() {
   // «Juan, el apóstol en Patmos» se lee mal: la aclaración va entre paréntesis.
   const nombre = (BE.PERS[quien]?.nombre || 'Pablo').replace(/^([^,]+), (.+)$/, '$1 ($2)');
   const lugar = w ? `${nombre} ${w.parada ? 'en' : 'hacia'} ${(w.parada ? w.en : w.sig).lugar.nombre}` : '';
-  const bandera = `${w?.estimada || !fino || span() < 0.35 ? 'c. ' : ''}${textoCursor(E.t, fino)}${lugar ? ` · ${lugar}` : ''}`;
+  const aprox = w?.estimada || !fino || span() < 4;   // una fecha de mes o de día sale de un calendario aproximado
+  const bandera = `${aprox ? 'c. ' : ''}${textoCursor(E.t, fino, estrecha())}${lugar ? ` · ${lugar}` : ''}`;
   const anchoB = anchoTexto(bandera, 10.5) + 14;
   const bx = clamp(x - anchoB / 2, 0, anchoLinea - anchoB);
   let banda = '';
@@ -941,8 +1147,21 @@ function pintarCursor() {
   pista.setAttribute('aria-valuenow', E.t.toFixed(2));
   pista.setAttribute('aria-valuetext', bandera);
   const pw = BE.dondeEsta(E.t);
-  $('#fecha-valor').textContent = `${pw?.estimada || !fino || span() < 0.35 ? 'c. ' : ''}${textoCursor(E.t, fino, estrecha())}`;
-  $('#fecha-pista').textContent = pw?.estimada ? 'tiempo narrativo · TNM' : 'cronología TNM';
+  const fc = fechaCursor(E.t, estrecha());
+  const c = pw?.estimada || !fino || span() < 4 ? 'c. ' : '';
+  const valor = `${c}${fc.anacronico ? `<i>${esc(fc.primera)}</i>` : esc(fc.primera)}`;
+  if ($('#fecha-valor').innerHTML !== valor) $('#fecha-valor').innerHTML = valor;
+  const otra = $('#fecha-otra');
+  if (otra) {
+    const txt = fc.segunda || '';
+    if (otra.textContent !== txt) otra.textContent = txt;
+    otra.hidden = !txt;
+    otra.classList.toggle('anacronico', !!fc.anacronicoSegunda);
+    otra.title = !txt ? '' : modoMeses() === 'nuestros' ? `Fecha hebrea aproximada.${fc.anacronicoSegunda ? ` ${CURSIVA_CHIP}` : ''}` : 'Nuestros meses, aproximados: el calendario gregoriano es de 1582 y aquí solo orienta';
+  }
+  // La cronología va en el texto emergente de la fecha, no en una pista visible: es jerga para una familia.
+  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para escribir otra fecha.`;
+  if ($('#fecha-valor').title !== ayuda) $('#fecha-valor').title = ayuda;
   $('#linea-estado').textContent = BE.fraseAhora ? BE.fraseAhora(E.t) : '';
   // Edad en la fecha, solo con base (T-18).
   document.querySelectorAll('#carriles [data-edad]').forEach((el) => {
@@ -1077,7 +1296,7 @@ function cerrarMenu() {
 function abrirMenu(seccion = 'todo') {
   const yaAbierto = !!menuEl && !menuEl.hidden;
   const foco = yaAbierto && menuEl.contains(document.activeElement) ? document.activeElement : null;
-  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
+  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador', 'data-meses'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
   if (!menuEl) {
     menuEl = document.createElement('div');
     menuEl.className = 'linea-menu be-card';
@@ -1104,6 +1323,8 @@ function abrirMenu(seccion = 'todo') {
     ${boton('bucle', L.bucle ? 'Quitar el bucle' : `Repetir en bucle ${L.regla ? 'lo medido' : (E.sel ? 'lo seleccionado' : 'el tramo a la vista')}`)}
     ${boton('marcar', 'Guardar esta fecha como marcador')}
     ${ms.length ? `<div class="menu-sub">Marcadores</div>${ms.map((m, i) => `<div class="menu-marcador"><button type="button" class="enlace-titulo" data-ir-marcador="${i}">${esc(m.nombre)}</button><button type="button" class="menu-x" data-borrar-marcador="${i}" aria-label="Borrar el marcador ${esc(m.nombre)}">×</button></div>`).join('')}` : ''}` : ''}
+    ${BE.calendario().meses.length ? `<div class="be-card__eyebrow">Meses</div>
+    <div class="menu-meses"><div class="be-seg meses-seg" role="radiogroup" aria-label="Meses">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt${modoMeses() === k ? ' be-seg__opt--on' : ''}" role="radio" aria-checked="${modoMeses() === k}" data-meses="${k}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}</div>` : ''}
     <div class="be-card__eyebrow">Carriles</div>
     <p class="menu-ayuda">Los fijados van arriba y no se van al cambiar de escala. Los demás salen cuando tienen algo a la vista.</p>
     ${lanes.map((c) => { const on = L.fijados.includes(c.id); return `<button type="button" class="menu-fila menu-carril${on ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${on}">${ICONOS.alfiler}<span>${esc(c.nombre)}</span>${carrilesVista.includes(c) ? '<small>a la vista</small>' : ''}</button>`; }).join('')}
@@ -1125,6 +1346,8 @@ function abrirMenu(seccion = 'todo') {
 function clicMenu(e) {
   const f = e.target.closest('[data-fijar]');
   if (f) { fijar(f.dataset.fijar); return; }
+  const mm = e.target.closest('[data-meses]');
+  if (mm) { ponerMeses(mm.dataset.meses); abrirMenu(menuAbierto()); return; }
   const ir = e.target.closest('[data-ir-marcador]');
   if (ir) { cerrarMenu(); irAMarcador(+ir.dataset.irMarcador); return; }
   const borrar = e.target.closest('[data-borrar-marcador]');
@@ -1279,6 +1502,41 @@ function montarBarra() {
   botones.className = 'linea-botones'; botones.id = 'linea-botones';
   botones.innerHTML = `<button type="button" class="be-btn be-btn--icon be-btn--ghost linea-boton" id="linea-menu-boton" aria-haspopup="dialog" aria-expanded="false" aria-label="Opciones de la línea de tiempo" title="Opciones: ampliar, sincronía, regla, bucle, marcadores y carriles">${ICONOS.menu}</button>`;
   crono.after(botones);
+  // Selector «Meses»: qué filas de meses enseña la regla y qué fecha va primero. Sale a escala de meses y de días.
+  const meses = document.createElement('div');
+  meses.className = 'meses-control';
+  meses.id = 'meses-control';
+  meses.hidden = true;
+  meses.innerHTML = `<span class="meses-etiqueta" id="meses-etiqueta">Meses</span><div class="be-seg meses-seg" role="radiogroup" aria-labelledby="meses-etiqueta">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt" role="radio" data-meses="${k}" title="${esc({ ambos: 'Nuestros meses y los hebreos, alineados', nuestros: 'Solo nuestros meses. ' + AYUDA_NUESTROS.replace(/^Nuestros meses: (.)/, (_, c) => c.toUpperCase()), hebreos: 'Solo los meses hebreos, lunares y aproximados' }[k])}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}`;
+  zoom.after(meses);
+  meses.addEventListener('click', (e) => { const b = e.target.closest('[data-meses]'); if (b) ponerMeses(b.dataset.meses); });
+  meses.addEventListener('keydown', (e) => {
+    const i = MODOS_MESES.findIndex(([k]) => k === modoMeses()), d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+    if (d == null || !e.target.closest('[data-meses]')) return;
+    e.preventDefault(); e.stopPropagation();
+    ponerMeses(MODOS_MESES[(i + d + 3) % 3][0]);
+    meses.querySelector(`[data-meses="${modoMeses()}"]`)?.focus();
+  });
+  // La fecha en el otro calendario, junto a la de la barra superior.
+  const otra = document.createElement('span');
+  otra.className = 'fecha-otra'; otra.id = 'fecha-otra'; otra.hidden = true;
+  $('#fecha-valor').after(otra);
+  // Los enlaces a las páginas del calendario y de «Acerca de» llevan la vista: su «Volver al mapa» vuelve a esta fecha y
+  // esta selección. El calendario la recibe en #desde=…; «Acerca de» en ?desde=…, porque su # es la sección («#gracias»).
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest?.('a[data-calendario]');
+    const b = e.target.closest?.('a[href^="acerca.html"]');
+    if (!a && !b) return;
+    // La vista se lee ahora, no de location.hash, que se escribe con un cuarto de segundo de retraso.
+    const vista = BE.textoHash();
+    if (a) a.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}`;
+    if (b) {
+      b.dataset.ancla ??= b.getAttribute('href').split('#')[1] || '';
+      const q = new URLSearchParams(location.search);
+      q.set('desde', vista);
+      b.href = `acerca.html${String(q) ? `?${q}` : ''}${b.dataset.ancla ? `#${b.dataset.ancla}` : ''}`;
+    }
+  }, true);
   const irMinimapa = (e) => {
     const r = mm.getBoundingClientRect();
     const t = BE.T_MIN + clamp((e.clientX - r.left) / r.width, 0, 1) * spanMax();
@@ -1302,7 +1560,10 @@ function montarBarra() {
   $('#carriles').addEventListener('click', (e) => {
     const f = e.target.closest('[data-fijar]');
     if (f) { e.stopPropagation(); fijar(f.dataset.fijar); return; }
-    if (e.target.closest('.carriles-boton')) { e.stopPropagation(); if (menuAbierto() === 'carriles') cerrarMenu(); else abrirMenu('carriles'); }
+    if (e.target.closest('.carriles-boton')) { e.stopPropagation(); if (menuAbierto() === 'carriles') cerrarMenu(); else abrirMenu('carriles'); return; }
+    // Las filas de meses se explican al tocar su nombre: en el móvil no hay título emergente.
+    const fila = !e.target.closest('a, button') && e.target.closest('.carril-mes[title]');
+    if (fila) BE.avisar(fila.title, 8000);
   });
   document.addEventListener('change', (e) => {
     if (e.target.matches?.('#linea-menu select[data-linea="persona"]') && e.target.value) { fijar(e.target.value); }
@@ -1311,6 +1572,22 @@ function montarBarra() {
     if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
     if (e.key === 't' || e.key === 'T') { e.preventDefault(); ponerGrande(!L.grande); }
     if (e.key === 'Escape') { cerrarMenu(); if (L.modoRegla) { L.modoRegla = false; $('#pista').classList.remove('modo-regla'); } }
+  });
+}
+function ponerMeses(modo) {
+  if (!MODOS_MESES.some(([k]) => k === modo)) return;
+  L.meses = modo;
+  sucio.linea = sucio.cursor = true; programar(); BE.guardarHash();
+}
+/** El selector «Meses» sigue a la escala y al modo. */
+function pintarSelectorMeses() {
+  const el = $('#meses-control');
+  if (!el) return;
+  el.hidden = !(span() < 4) || !BE.calendario().meses.length;
+  const modo = modoMeses();
+  el.querySelectorAll('[data-meses]').forEach((b) => {
+    const on = b.dataset.meses === modo;
+    b.classList.toggle('be-seg__opt--on', on); b.setAttribute('aria-checked', String(on)); b.tabIndex = on ? 0 : -1;
   });
 }
 function iniciarLinea() {
@@ -1331,15 +1608,18 @@ function iniciarLinea() {
       zoomEn(Math.exp(e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)), tDe(e.clientX - r.left));
     }
   }, { passive: false });
+  let toqueMes = null;
   pista.addEventListener('pointerdown', (e) => {
     const r = pista.getBoundingClientRect();
     punteros.set(e.pointerId, e.clientX);
     if (punteros.size === 2) {
       const xs = [...punteros.values()];
       pinza = { d: Math.abs(xs[0] - xs[1]), s: span(), t: tDe((xs[0] + xs[1]) / 2 - r.left) };
-      arrastre = null; regla = null; return;
+      arrastre = null; regla = null; toqueMes = null; return;   // una pinza nunca es un toque sobre un mes
     }
     if (e.target.closest('[data-sel], [data-rango], [data-linea], [data-marcador]')) return;   // lo gestionan los clics
+    const mes = e.target.closest?.('g.mes[data-aviso]');
+    toqueMes = mes ? { texto: mes.dataset.aviso, x: e.clientX, y: e.clientY, lejos: 0 } : null;
     if (e.altKey || L.modoRegla) {
       const t = ajustar(tDe(e.clientX - r.left));
       regla = { a: t };
@@ -1355,6 +1635,8 @@ function iniciarLinea() {
   pista.addEventListener('pointermove', (e) => {
     const r = pista.getBoundingClientRect();
     if (punteros.has(e.pointerId)) punteros.set(e.pointerId, e.clientX);
+    // Lo más lejos que llegó el dedo: un arrastre que vuelve a donde empezó no es un toque.
+    if (toqueMes) toqueMes.lejos = Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y));
     if (pinza && punteros.size === 2) {
       const xs = [...punteros.values()];
       const d = Math.max(10, Math.abs(xs[0] - xs[1]));
@@ -1374,6 +1656,9 @@ function iniciarLinea() {
       sucio.linea = true; programar(); BE.guardarHash();
     }
     arrastre = null;
+    // Un toque (no un arrastre) sobre un mes con el nombre cortado lo nombra entero.
+    if (toqueMes && e.type === 'pointerup' && Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y)) < 8 && !pinza && !L.regla) BE.avisar(toqueMes.texto, 6000);
+    toqueMes = null;
   };
   pista.addEventListener('pointerup', fin);
   pista.addEventListener('pointercancel', (e) => { punteros.delete(e.pointerId); pinza = null; arrastre = null; regla = null; });
@@ -1453,10 +1738,12 @@ BE.parametros.push(
   { nombre: 'regla', escribir: () => rango(L.regla), leer: (v) => { L.regla = leerRango(v); } },
   { nombre: 'bucle', escribir: () => rango(L.bucle), leer: (v) => { L.bucle = leerRango(v); } },
   { nombre: 'linea', escribir: () => (L.grande ? 'grande' : null), leer: (v) => { if ((v === 'grande') !== L.grande) ponerGrande(v === 'grande'); } },
+  // Sin «meses» en la dirección vale lo de siempre: ambos, también en el móvil.
+  { nombre: 'meses', escribir: () => L.meses, leer: (v) => { L.meses = MODOS_MESES.some(([k]) => k === v) ? v : null; } },
 );
 
 Object.assign(BE, {
-  pintarLineaFija, pintarCursor, iniciarLinea, leerFecha, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia,
-  lineaEstado: L,
+  pintarLineaFija, pintarCursor, iniciarLinea, leerFecha, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
+  lineaEstado: L, SPAN_MIN,
 });
 })();

@@ -9,8 +9,10 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 1473 a.e.c.
-lugares: []
-personas: []
+lugares:
+- monte-nebo
+personas:
+- moises
 pasajes:
 - Dt 34:1-8
 resumen: En las llanuras de Moab, Moisés termina Deuteronomio y renueva el pacto. Luego sube al monte Nebo, ve la tierra

@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sara
+nombre: Sara
+nombres:
+- nombre: Sara
+- nombre: Sarái
+  nota: Nombre anterior (Gé 17:15); Perspicacia escribe Sarai.
+fecha:
+  desde: -1942
+  hasta: -1880
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1943-1881 a.e.c. (de la entrada en Canaán a su muerte)
+resumen: Esposa y media hermana de Abrahán, diez años menor que él. Fue estéril hasta que Dios le permitió dar a luz a Isaac
+  a los 90 años. Murió en Hebrón a los 127.
+razon: 'Perspicacia «Sara», párr. 1, 2, 9 y 10, y «Abrahán», párr. 16; Gé 12:5 y 21:1-7. Años: el estudio 3 pone la
+  entrada en Canaán en 1943 a.e.c. y su muerte en Hebrón en 1881.'
+fuentes:
+- it-sara
+- it-abrahan
+- si-3
+- genesis-21
+enlaces:
+- titulo: 'Perspicacia: «Sara»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003837
+  tipo: perspicacia
+- titulo: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: abrahan
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-sara
+  razon: 'Perspicacia «Sara», párr. 2: se casó con Abrahán en Ur; eran hijos del mismo padre y de distinta madre (Gé 20:12).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ur
+  deducido: false
+  fuentes:
+  - it-sara
+  razon: 'Perspicacia «Sara», párr. 2 y 3: vivía en Ur cuando se casó y de allí salió con Abrahán hacia Harán.'
+  estado: verificado
+- tipo: murio_en
+  lugar: hebron
+  fecha:
+    desde: -1880
+    hasta: -1880
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1881 a.e.c.
+  deducido: false
+  fuentes:
+  - it-abrahan
+  - si-3
+  razon: 'Perspicacia «Abrahán», párr. 16: Sara falleció en Hebrón, en 1881 a.e.c., con 127 años.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

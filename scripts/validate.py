@@ -8,6 +8,7 @@ Uso:  python3 scripts/validate.py [--data DIR] [--links]
 Sale con código distinto de cero ante cualquier error. El esquema está en docs/investigacion/README.md.
 """
 import argparse
+import math
 import re
 import sys
 import time
@@ -60,7 +61,11 @@ REQ_PARADA_RECORRIDO = ["sel", "t", "texto", "pasajes"]
 REQ_FUENTE = ["titulo", "obra", "url", "nivel", "publicado", "consultado"]
 ESTRUCTURA_LIBRO = {"slug", "num", "nombre", "abr", "formas", "habladas", "capitulos"}
 HECHOS_LIBRO = {"escritor", "lugar", "fecha", "abarca"}
-ESTRUCTURA_MES = {"id", "orden", "nombre", "otros_nombres"}
+ESTRUCTURA_MES = {"id", "orden", "nombre", "otros_nombres", "nombres"}
+CAMPOS_NOMBRE_MES = {"nombre", "desde", "hasta", "nota", "fuentes", "razon"}
+CAMPOS_EXPLICACION = {"id", "titulo", "texto", "fuentes", "razon", "consultado", "estado", "historial"}
+SECCIONES_CALENDARIO = {"meses", "explicacion"}
+CAMPOS_FIESTA = {"nombre", "desde", "hasta", "instituida", "fuentes", "razon", "estado"}
 
 
 def _entero(v):
@@ -229,6 +234,97 @@ def pablo_en_su_sitio(datos):
     return errores
 
 
+def _modelo_meses():
+    """Las constantes del cálculo de meses hebreos, leídas de site/js/trayectorias.js para no tenerlas dos veces."""
+    js = (build.RAIZ / "site" / "js" / "trayectorias.js").read_text(encoding="utf-8")
+    dia = 1 / 365.2425
+    c = {}
+    for nombre in ("MES_LUNAR", "LUNA_0", "EQUINOCCIO"):
+        m = re.search(rf"^const {nombre} = ([\d\s.+*/()DIA-]+);", js, re.M)
+        if not m:
+            return None
+        c[nombre] = eval(m.group(1), {"__builtins__": {}}, {"DIA": dia})  # solo cifras, operadores y DIA
+    c["DIA"] = dia
+    return c
+
+
+def inicio_mes(c, y, orden, siguiente=False):
+    """(meses del año hebreo, comienzo del mes `orden`) para una fecha del año y de nuestro calendario, como inicioMes.
+    Sin ese mes en el año (veadar en un año de doce), (None, comienzo del nisán siguiente). Con siguiente=True, el
+    comienzo es el del mes que sigue a `orden` en el mismo año hebreo: el límite donde acaba `orden`."""
+    dia, ml, l0, eq = c["DIA"], c["MES_LUNAR"], c["LUNA_0"], c["EQUINOCCIO"]
+
+    def redondo(x):
+        return math.floor(x + 0.5)  # Math.round de JavaScript
+
+    def luna(anio):
+        return l0 + redondo((anio + eq - l0) / ml) * ml
+
+    def puesta(t):
+        yy = math.floor(t)
+        return yy + (math.ceil((t - yy) / dia - 0.75) + 0.75) * dia
+
+    a = y - 1 if orden >= 11 else y
+    n = redondo((luna(a + 1) - luna(a)) / ml)
+    if orden > n:
+        return None, puesta(luna(a + 1))
+    return n, puesta(luna(a) + (orden if siguiente else orden - 1) * ml)
+
+
+def meses_en_su_anio(datos):
+    """Una fecha con detalle.mes tiene que empezar dentro de su año: «3 de sebat de 520 a.e.c.» no puede caer en
+    diciembre de 521 a.e.c. Y un «veadar» solo vale en un año que, según el cálculo, lleva Veadar. Es el cálculo de
+    inicioMes y anioHebreo de site/js/trayectorias.js, con sus constantes: si cambia allí, cambia aquí."""
+    c = _modelo_meses()
+    if c is None:
+        return ["site/js/trayectorias.js: no encuentro MES_LUNAR, LUNA_0 o EQUINOCCIO para comprobar los meses"]
+    dia = c["DIA"]
+    ordenes = {m.get("id"): m.get("orden") for m in datos["calendario"].get("meses") or []}
+
+    def inicio(y, orden, siguiente=False):
+        return inicio_mes(c, y, orden, siguiente)
+
+    def redondo(x):
+        return math.floor(x + 0.5)
+
+    errores = []
+
+    def mirar(x, donde):
+        if isinstance(x, list):
+            for v in x:
+                mirar(v, donde)
+            return
+        if not isinstance(x, dict):
+            return
+        det = x.get("detalle")
+        if isinstance(det, dict) and det.get("mes") in ordenes and _entero(ordenes[det["mes"]]):
+            d, h = x.get("desde"), x.get("hasta")
+            y0 = d if _entero(d) else h
+            y1 = (h if _entero(h) else d)
+            if _entero(y0) and _entero(y1):
+                n, a = inicio(y0, ordenes[det["mes"]])
+                if n is None:
+                    errores.append(f"{donde}: «{x.get('texto')}» pone {det['mes']}, pero según el cálculo de la línea "
+                                   f"ese año hebreo no lleva ese mes; la fecha caería en nisán")
+                t = a + (det["dia"] - 1) * dia if _entero(det.get("dia")) else a
+                if n is not None and _entero(det.get("dia")):
+                    _, fin = inicio(y0, ordenes[det["mes"]], True)
+                    if t >= fin:
+                        errores.append(f"{donde}: «{x.get('texto')}» pone el día {det['dia']} de {det['mes']}, pero ese "
+                                       f"año el mes tiene {redondo((fin - a) / dia)} días: la fecha caería en el mes siguiente")
+                if not y0 <= t < y1 + 1:
+                    errores.append(f"{donde}: «{x.get('texto')}» ({det['mes']} {det.get('dia', '')}) empieza en "
+                                   f"{t:.3f}, fuera de su tramo [{y0}, {y1 + 1}): el día cae en otro año")
+        for k, v in x.items():
+            if k != "detalle":
+                mirar(v, donde)
+
+    for tipo in build.TIPOS:
+        for o in datos[tipo]:
+            mirar(build.limpio(o), o["_fichero"])
+    return errores
+
+
 def validar_fuentes(datos, err):
     origen = datos.get("_origen_fuentes") or {}
     for fid, f in datos["fuentes"].items():
@@ -302,8 +398,135 @@ def validar_calendario(datos, err):
             for k in ("consultado", "estado"):
                 if k not in m:
                     err(f"{donde}: un hecho del mes necesita '{k}'")
-            textos_largos(m, donde, err)
+        textos_largos(m, donde, err)
+        validar_nombres_mes(m, donde, err)
+        validar_fiestas(m, donde, err)
+    validar_explicacion(datos["calendario"], err)
+    otras = set(datos["calendario"]) - SECCIONES_CALENDARIO
+    if otras:
+        err(f"data/calendario.yaml: secciones desconocidas {sorted(otras)} (se esperan {sorted(SECCIONES_CALENDARIO)})")
     return ids
+
+
+def validar_nombres_mes(m, donde, err):
+    """Los nombres de un mes por época: como los de un lugar, cada uno con su nota, sus fuentes y su razón."""
+    if "nombres" not in m:
+        return
+    ns = m["nombres"]
+    if not isinstance(ns, list) or not ns:
+        err(f"{donde}: 'nombres' debe ser una lista no vacía")
+        return
+    vistos = set()
+    for i, n in enumerate(ns):
+        nd = f"{donde} nombres[{i}]"
+        if not isinstance(n, dict):
+            err(f"{nd}: debe ser un objeto {{nombre, desde, hasta, nota, fuentes, razon}}")
+            continue
+        if set(n) - CAMPOS_NOMBRE_MES:
+            err(f"{nd}: campos desconocidos {sorted(set(n) - CAMPOS_NOMBRE_MES)}")
+        if not isinstance(n.get("nombre"), str) or not n["nombre"].strip():
+            err(f"{nd}: sin 'nombre'")
+        elif n["nombre"] in vistos:
+            err(f"{nd}: el nombre '{n['nombre']}' está repetido")
+        vistos.add(n.get("nombre"))
+        for k in ("nota", "razon"):
+            if not isinstance(n.get(k), str) or not n[k].strip():
+                err(f"{nd}: '{k}' vacía")
+        if not isinstance(n.get("fuentes"), list) or not n["fuentes"]:
+            err(f"{nd}: 'fuentes' vacío")
+        for k in ("desde", "hasta"):
+            if k in n and not _entero(n[k]):
+                err(f"{nd}.{k} debe ser un año astronómico entero")
+        if _entero(n.get("desde")) and _entero(n.get("hasta")) and n["desde"] > n["hasta"]:
+            err(f"{nd}: desde ({n['desde']}) es posterior a hasta ({n['hasta']})")
+    # Dos épocas distintas solo comparten el año frontera (Abib hasta -536, Nisán desde -536). En ese año gana el nombre
+    # que empieza (el de desde), sea cual sea el orden de la lista: así lo hace nombreMes en site/js/trayectorias.js.
+    # Dos nombres con la misma época exacta son formas del mismo nombre (Hesván y Marhesván): la línea usa el primero.
+    epocas = [(n["nombre"], n.get("desde"), n.get("hasta")) for n in ns
+              if isinstance(n, dict) and isinstance(n.get("nombre"), str)
+              and all(k not in n or _entero(n[k]) for k in ("desde", "hasta"))]
+    for i, (a, ad, ah) in enumerate(epocas):
+        for b, bd, bh in epocas[i + 1:]:
+            if (ad, ah) == (bd, bh):
+                continue
+            ini = max(x for x in (ad, bd, float("-inf")) if x is not None)
+            fin = min(x for x in (ah, bh, float("inf")) if x is not None)
+            if fin - ini > 0:
+                err(f"{donde}: las épocas de '{a}' y '{b}' se solapan más de un año (de {ini} a {fin}); "
+                    f"solo pueden compartir el año frontera")
+    # El mismo nombre vive en dos sitios: otros_nombres (lo usa la fecha escrita) y nombres. Tienen que coincidir.
+    if m.get("nombre") not in vistos:
+        err(f"{donde}: el nombre principal '{m.get('nombre')}' no está en 'nombres'")
+    otros = set(m.get("otros_nombres") or [])
+    for o in sorted(otros - vistos):
+        err(f"{donde}: '{o}' está en otros_nombres pero no en nombres")
+    for o in sorted(vistos - otros - {m.get("nombre")}):
+        err(f"{donde}: '{o}' está en nombres pero no en otros_nombres, y la fecha escrita («14 abib 1513 a.e.c.») "
+            f"no lo entendería")
+
+
+def validar_fiestas(m, donde, err):
+    """Las fiestas de un mes: sus días y el año desde el que se celebran, con fuentes y razón. Sin 'instituida', la
+    línea de tiempo pondría la Pascua antes del éxodo o la Dedicación en tiempos de Nehemías."""
+    fs = m.get("fiestas")
+    if fs is None:
+        return
+    if not isinstance(fs, list) or not fs:
+        err(f"{donde}: 'fiestas' debe ser una lista no vacía")
+        return
+    for i, f in enumerate(fs):
+        fd = f"{donde} fiestas[{i}]"
+        if not isinstance(f, dict):
+            err(f"{fd}: debe ser un objeto {{nombre, desde, hasta, instituida, fuentes, razon}}")
+            continue
+        if set(f) - CAMPOS_FIESTA:
+            err(f"{fd}: campos desconocidos {sorted(set(f) - CAMPOS_FIESTA)}")
+        if not isinstance(f.get("nombre"), str) or not f["nombre"].strip():
+            err(f"{fd}: sin 'nombre'")
+        for k in ("desde", "hasta"):
+            if not _entero(f.get(k)) or not 1 <= f[k] <= 30:
+                err(f"{fd}.{k} debe ser un día del mes, de 1 a 30")
+        if _entero(f.get("desde")) and _entero(f.get("hasta")) and f["desde"] > f["hasta"]:
+            err(f"{fd}: el día {f['desde']} es posterior al {f['hasta']}")
+        if not _entero(f.get("instituida")):
+            err(f"{fd}.instituida debe ser el año astronómico desde el que se celebra")
+        if not isinstance(f.get("fuentes"), list) or not f["fuentes"]:
+            err(f"{fd}: 'fuentes' vacío")
+        if not isinstance(f.get("razon"), str) or not f["razon"].strip():
+            err(f"{fd}: 'razon' vacía")
+        if "estado" in f and f["estado"] not in ESTADOS:
+            err(f"{fd}.estado debe ser uno de {sorted(ESTADOS)}")
+
+
+def validar_explicacion(cal, err):
+    """Los hechos de la página «El calendario»: cada uno con id, título, texto y los cuatro campos de siempre."""
+    if "explicacion" not in cal:
+        return
+    lista = cal["explicacion"]
+    if not isinstance(lista, list) or not lista:
+        err("data/calendario.yaml: 'explicacion' debe ser una lista no vacía")
+        return
+    ids = set()
+    for i, e in enumerate(lista):
+        donde = f"data/calendario.yaml (explicacion {e.get('id', i) if isinstance(e, dict) else i})"
+        if not isinstance(e, dict):
+            err(f"{donde}: debe ser un objeto")
+            continue
+        if set(e) - CAMPOS_EXPLICACION:
+            err(f"{donde}: campos desconocidos {sorted(set(e) - CAMPOS_EXPLICACION)}")
+        if not ID.match(str(e.get("id"))):
+            err(f"{donde}: id '{e.get('id')}' no es un slug ASCII en minúsculas")
+        elif e["id"] in ids:
+            err(f"{donde}: id repetido")
+        ids.add(e.get("id"))
+        for k in ("titulo", "texto"):
+            if not isinstance(e.get(k), str) or not e[k].strip():
+                err(f"{donde}: '{k}' vacío")
+        for k in ("consultado", "estado"):
+            if k not in e:
+                err(f"{donde}: falta '{k}'")
+        validar_comun(e, donde, err, None)
+        textos_largos(e, donde, err)
 
 
 def validar_lugar(o, donde, err, fuentes):
@@ -575,6 +798,7 @@ def validar(datos):
     validar_padres_hijos(datos, err)
     errores.extend(build.integridad(datos))
     errores.extend(pablo_en_su_sitio(datos))
+    errores.extend(meses_en_su_anio(datos))
     return errores
 
 

@@ -3,10 +3,20 @@ id: loida
 nombre: Loida
 nombres:
 - nombre: Loida
+fecha:
+  desde: 47
+  hasta: 65
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47-65 e.c. (de la primera visita de Pablo a Listra a 2 Timoteo)
 resumen: Abuela de Timoteo, probablemente por parte de madre. Pablo elogia su fe sin hipocresía. Con Eunice le enseñó
   a Timoteo las Escrituras.
-razon: Perspicacia «Loida»; 2Ti 1:5 y 3:15. Que fuera madre de Eunice sale de versiones siriacas, no del texto.
+razon: 'Perspicacia «Loida»; 2Ti 1:5 y 3:15. Que fuera madre de Eunice sale de versiones siriacas. Años: el estudio 3
+  pone la primera gira de Pablo, por Listra, en 47-48 e.c. y 2 Timoteo hacia 65.'
 fuentes:
+- si-3
 - it-loida
 - 2-timoteo-1
 enlaces:

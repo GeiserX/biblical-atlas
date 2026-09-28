@@ -39,6 +39,11 @@ def main(argv=None):
         c = l.get("consultado")
         if c and datetime.date.fromisoformat(str(c)) <= limite:
             pendientes.append((c, "libro", l["slug"], "data/libros.yaml", l["nombre"]))
+    cal = datos.get("calendario") or {}
+    for h in (cal.get("meses") or []) + (cal.get("explicacion") or []):
+        c = h.get("consultado")
+        if h.get("fuentes") and (not c or datetime.date.fromisoformat(str(c)) <= limite):
+            pendientes.append((c or "nunca", "calendario", h["id"], "data/calendario.yaml", h.get("nombre") or h.get("titulo") or h["id"]))
     for tipo in build.TIPOS:
         for o in datos[tipo]:
             c = o.get("consultado")

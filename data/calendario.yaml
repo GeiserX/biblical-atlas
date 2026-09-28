@@ -3,24 +3,45 @@
 # (wol.jw.org, 1001070237), consultada el 2026-09-28. Esquema en docs/investigacion/README.md.
 #
 # Los ids son los que usa fecha.detalle.mes («{mes: nisan, dia: 14}»). Es estructura: los hechos de cada mes
-# (equivalencia en nuestro calendario, fiestas, estación) los añade el carril «marco» como campos opcionales,
-# cada uno con fuentes, razon, consultado y estado.
+# (equivalencia en nuestro calendario, fiestas, estación) son campos opcionales, cada uno con fuentes, razon,
+# consultado y estado. `nombres` da los nombres del mes por época (desde/hasta en años astronómicos, como en los
+# lugares) y `explicacion`, al final, los hechos de la página «El calendario».
 meses:
 - id: nisan
   orden: 1
   nombre: Nisán
   otros_nombres: [Abib]
+  nombres:
+  - nombre: Nisán
+    desde: -536
+    nota: 'Nombre babilonio que los judíos usaron tras el exilio (Ne 2:1; Est 3:7). El año del cambio es aproximado.'
+    fuentes: [it-nisan, it-calendario, si-3]
+    razon: Perspicacia «Nisán», párr. 1, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
+  - nombre: Abib
+    hasta: -536
+    nota: 'Nombre antiguo, que se asocia con las espigas aún tiernas (Éx 13:4). Antes del éxodo era el séptimo mes del año; desde el éxodo, el primero.'
+    fuentes: [it-abib, it-nisan, it-calendario]
+    razon: 'Perspicacia «Abib», párr. 1 y 2, y «Nisán», párr. 1: después del exilio lo sustituyó Nisán.'
   equivale: marzo-abril
   fiestas:
   - desde: 14
     hasta: 14
     nombre: Pascua
+    instituida: -1512
+    fuentes: [it-fiesta, exodo-12, si-3]
+    razon: 'Perspicacia «Fiesta», párr. 1 y recuadro: Dios la dio por medio de Moisés. La primera fue la noche de la salida de Egipto (Éx 12), en 1513 a.e.c. según el estudio 3.'
   - desde: 15
     hasta: 21
     nombre: Fiesta de los Panes Sin Levadura
+    instituida: -1512
+    fuentes: [it-fiesta, exodo-12, si-3]
+    razon: 'Éx 12:15-20 la manda junto con la Pascua, al salir de Egipto en 1513 a.e.c. (estudio 3); Perspicacia «Fiesta», recuadro.'
   - desde: 16
     hasta: 16
     nombre: Ofrenda de las primicias
+    instituida: -1472
+    fuentes: [levitico-23, si-3]
+    razon: 'Lv 23:10, 11 manda ofrecer la primera gavilla una vez en la tierra. Israel cruzó el Jordán en nisán de 1473 a.e.c. según el estudio 3.'
   clima: Las lluvias y el deshielo hacen crecer el Jordán.
   campo: Cebada.
   fuentes:
@@ -32,11 +53,25 @@ meses:
   orden: 2
   nombre: Iyar
   otros_nombres: [Ziv]
+  nombres:
+  - nombre: Iyar
+    desde: -536
+    nota: Nombre de después del exilio que no sale en la Biblia; lo recogen el Talmud y otras obras judías. Antes del exilio se llamaba Ziv.
+    fuentes: [it-calendario, it-ziv, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 8, y «Ziv», párr. 1; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
+  - nombre: Ziv
+    hasta: -536
+    nota: 'Nombre de antes del exilio (1Re 6:1, 37). En Ziv empezó Salomón a construir el templo.'
+    fuentes: [it-ziv, it-calendario]
+    razon: Perspicacia «Ziv», párr. 1 y 4, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6.
   equivale: abril-mayo
   fiestas:
   - desde: 14
     hasta: 14
     nombre: Pascua tardía
+    instituida: -1511
+    fuentes: [numeros-9, si-3]
+    razon: 'Nm 9:1-11 la manda en el segundo año tras la salida de Egipto, que el estudio 3 fecha en 1513 a.e.c.: es decir, 1512 a.e.c.'
   clima: Empieza la época seca, casi siempre con cielo limpio.
   campo: Trigo.
   fuentes:
@@ -47,11 +82,20 @@ meses:
 - id: sivan
   orden: 3
   nombre: Siván
+  nombres:
+  - nombre: Siván
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Est 8:9). Antes, la Biblia lo nombra solo por su número: el tercer mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: mayo-junio
   fiestas:
   - desde: 6
     hasta: 6
     nombre: Fiesta de las Semanas (Pentecostés)
+    instituida: -1472
+    fuentes: [levitico-23, exodo-23, si-3]
+    razon: 'Lv 23:10, 15, 16 cuenta sus 50 días desde la gavilla de primicias, ofrecida ya en la tierra: Israel cruzó el Jordán en nisán de 1473 a.e.c. (estudio 3). La Ley la mandó en 1513 a.e.c. (Éx 23:14-17).'
   clima: Calor y cielo sin nubes.
   campo: Trigo y brevas.
   fuentes:
@@ -62,6 +106,12 @@ meses:
 - id: tamuz
   orden: 4
   nombre: Tamuz
+  nombres:
+  - nombre: Tamuz
+    desde: -536
+    nota: Nombre de después del exilio que no sale en la Biblia; lo recogen el Talmud y otras obras judías. Antes, la Biblia lo llama el cuarto mes.
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 8; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: junio-julio
   clima: Sube el calor; en algunas zonas cae mucho rocío.
   campo: Primeras uvas.
@@ -73,6 +123,12 @@ meses:
 - id: ab
   orden: 5
   nombre: Ab
+  nombres:
+  - nombre: Ab
+    desde: -536
+    nota: Nombre de después del exilio que no sale en la Biblia; lo recogen el Talmud y otras obras judías. Antes, la Biblia lo llama el quinto mes.
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 8; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: julio-agosto
   clima: Los días más calurosos del año.
   campo: Fruta de verano.
@@ -84,6 +140,12 @@ meses:
 - id: elul
   orden: 6
   nombre: Elul
+  nombres:
+  - nombre: Elul
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Ne 6:15). Antes, la Biblia lo nombra solo por su número: el sexto mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: agosto-septiembre
   clima: Sigue haciendo calor.
   campo: Dátiles, higos y uvas.
@@ -96,20 +158,43 @@ meses:
   orden: 7
   nombre: Tisri
   otros_nombres: [Etanim]
+  nombres:
+  - nombre: Tisri
+    desde: -536
+    nota: 'Nombre de después del exilio que no sale en la Biblia. Significa «comienzo del año»: su día 1 abría el año civil.'
+    fuentes: [it-etanim, it-calendario, si-3]
+    razon: Perspicacia «Etanim», párr. 1 y 4, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 8; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
+  - nombre: Etanim
+    hasta: -536
+    nota: 'Nombre de antes del exilio (1Re 8:2). En este mes inauguró Salomón el templo.'
+    fuentes: [it-etanim, it-calendario]
+    razon: Perspicacia «Etanim», párr. 1 y 6, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6.
   equivale: septiembre-octubre
   fiestas:
   - desde: 1
     hasta: 1
     nombre: Toque de trompeta
+    instituida: -1511
+    fuentes: [it-fiesta, levitico-23, tnm-tabla]
+    razon: 'Lv 23:23-25 la manda; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, la pone antes del exilio.'
   - desde: 10
     hasta: 10
     nombre: Día de Expiación
+    instituida: -1511
+    fuentes: [it-fiesta, levitico-23, tnm-tabla]
+    razon: 'Lv 23:26-32 lo manda; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, lo pone antes del exilio.'
   - desde: 15
     hasta: 21
     nombre: Fiesta de las Cabañas
+    instituida: -1512
+    fuentes: [it-fiesta, exodo-23, si-3]
+    razon: 'Éx 23:16 la llama fiesta de la recolección, una de las tres del pacto de la Ley (1513 a.e.c., estudio 3); Perspicacia «Fiesta», apartado «Las tres grandes fiestas».'
   - desde: 22
     hasta: 22
     nombre: Asamblea solemne
+    instituida: -1511
+    fuentes: [it-fiesta, levitico-23, tnm-tabla]
+    razon: 'Lv 23:36 la pone al día siguiente de las Cabañas; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c.'
   clima: Acaba el verano y llegan las primeras lluvias.
   campo: Se ara la tierra.
   fuentes:
@@ -120,7 +205,23 @@ meses:
 - id: hesvan
   orden: 8
   nombre: Hesván
-  otros_nombres: [Bul]
+  otros_nombres: [Bul, Marhesván]
+  nombres:
+  - nombre: Hesván
+    desde: -536
+    nota: Forma corta de Marhesván, nombre de después del exilio que no sale en la Biblia; lo usan el Talmud y Josefo.
+    fuentes: [it-bul, it-calendario, si-3]
+    razon: Perspicacia «Bul», párr. 1, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 8; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
+  - nombre: Marhesván
+    desde: -536
+    nota: Nombre completo del mes después del exilio, también escrito Marjesván. Con el tiempo se acortó en Hesván.
+    fuentes: [it-bul, si-3]
+    razon: Perspicacia «Bul», párr. 1; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
+  - nombre: Bul
+    hasta: -536
+    nota: 'Nombre de antes del exilio (1Re 6:38). En Bul terminó Salomón el templo.'
+    fuentes: [it-bul, it-calendario]
+    razon: Perspicacia «Bul», párr. 1 y 4, y Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6.
   equivale: octubre-noviembre
   clima: Lluvias suaves.
   campo: Aceitunas.
@@ -132,11 +233,20 @@ meses:
 - id: kislev
   orden: 9
   nombre: Kislev
+  nombres:
+  - nombre: Kislev
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Zac 7:1). Antes, la Biblia lo nombra solo por su número: el noveno mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: noviembre-diciembre
   fiestas:
   - desde: 25
     hasta: 25
     nombre: Fiesta de la Dedicación
+    instituida: -164
+    fuentes: [it-fiesta-dedicacion, it-fiesta]
+    razon: 'Perspicacia «Fiesta de la dedicación», párr. 2 y 4: Judas Macabeo volvió a dedicar el templo un 25 de kislev, en 165 a.e.c., y desde entonces la fiesta se celebró cada año.'
   clima: Llueve más, hiela y nieva en los montes.
   campo: Los rebaños se ponen a cubierto.
   fuentes:
@@ -147,6 +257,12 @@ meses:
 - id: tebet
   orden: 10
   nombre: Tebet
+  nombres:
+  - nombre: Tebet
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Est 2:16). Antes, la Biblia lo nombra solo por su número: el décimo mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: diciembre-enero
   clima: El mes más frío, con lluvia y nieve en los montes.
   campo: La vegetación crece.
@@ -158,6 +274,12 @@ meses:
 - id: sebat
   orden: 11
   nombre: Sebat
+  nombres:
+  - nombre: Sebat
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Zac 1:7). Antes, la Biblia lo nombra solo por su número: el undécimo mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: enero-febrero
   clima: Afloja el frío, pero sigue lloviendo.
   campo: Florecen los almendros.
@@ -169,11 +291,21 @@ meses:
 - id: adar
   orden: 12
   nombre: Adar
+  nombres:
+  - nombre: Adar
+    desde: -536
+    nota: 'Nombre de los meses de Babilonia que los judíos adoptaron tras el exilio (Esd 6:15). Antes, la Biblia lo nombra solo por su número: el duodécimo mes.'
+    fuentes: [it-calendario, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6 y 7; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: febrero-marzo
   fiestas:
   - desde: 14
     hasta: 15
     nombre: Purim
+    instituida: -482
+    fuentes: [it-purim, ester-3, ester-9]
+    razon: 'Perspicacia «Purim», párr. 1: el decreto de Hamán estaba listo el 13 de nisán del año duodécimo de Asuero, al parecer primavera de 484 a.e.c.; el 13 de adar siguiente (Est 3:13; 9:20-22) cae en 483 a.e.c.'
+    estado: verificado
   clima: Tormentas frecuentes, con truenos y granizo.
   campo: Lino.
   fuentes:
@@ -184,10 +316,117 @@ meses:
 - id: veadar
   orden: 13
   nombre: Veadar
+  nombres:
+  - nombre: Veadar
+    desde: -536
+    nota: Quiere decir «segundo Adar». Es el nombre de después del exilio; la Biblia no nombra este mes añadido.
+    fuentes: [it-calendario, it-anio, si-3]
+    razon: Perspicacia «Calendario», apartado «Calendario hebreo», párr. 3 y 8, y Perspicacia «Año», párr. 4; el estudio 3, párr. 5, fecha en 537 a.e.c. el regreso del exilio.
   equivale: marzo
   nota: Mes que se intercalaba siete veces en cada ciclo de 19 años.
   fuentes:
   - tnm-b15
   razon: 'Columna de «Veadar» en B15 «El calendario hebreo»: equivalencia y frecuencia con que se añadía.'
+  consultado: '2026-09-28'
+  estado: verificado
+
+# La explicación del calendario para la página «El calendario»: hechos cortos, cada uno con su fuente.
+explicacion:
+- id: mes-lunar
+  titulo: El mes lunar
+  texto: 'Cada mes empezaba con la luna nueva y duraba 29 o 30 días (Isa 66:23). La palabra hebrea para «mes» viene de la idea de «nuevo». En la Biblia, un mes suele contar 30 días.'
+  fuentes: [it-calendario]
+  razon: 'Perspicacia «Calendario», párr. 5 de la introducción y párr. 2 y 5 del apartado «Calendario hebreo».'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: mes-anadido
+  titulo: El mes que se añadía
+  texto: 'Doce meses lunares suman unos 11 días menos que el año del sol. Para que las fiestas no se alejaran de sus cosechas, algunos años llevaban un mes decimotercero, que tras el exilio se llamó Veadar.'
+  fuentes: [it-calendario, it-nisan]
+  razon: 'Perspicacia «Calendario», párr. 6 de la introducción y párr. 1 y 3 del apartado «Calendario hebreo»; «Nisán», párr. 3.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: ciclo-de-19-anos
+  titulo: Cuándo se añadía
+  texto: 'La Biblia no dice cómo decidían qué año llevaba el mes de más; quizá miraban los equinoccios. El primer calendario judío fijo que se conoce, con siete meses añadidos cada 19 años, es de hacia 359 e.c.'
+  fuentes: [it-calendario, tnm-b15, it-anio]
+  razon: 'Perspicacia «Calendario», apartado «Calendario hebreo», párr. 3 y 4; B15, columna de Veadar; «Año», párr. 5 y 6.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: anio-sagrado
+  titulo: El año sagrado
+  texto: 'En el éxodo, Jehová mandó que el año empezara en primavera, con el mes de Abib, luego llamado Nisán (Éx 12:2; 13:4). Por ese año se contaban las fiestas: la Pascua caía el 14 de Nisán.'
+  fuentes: [it-anio, it-calendario, it-nisan]
+  razon: 'Perspicacia «Año», párr. 8 y 10; Perspicacia «Calendario», apartado «Calendario hebreo», párr. 10; «Nisán», párr. 4.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: anio-civil
+  titulo: El año civil o agrícola
+  texto: 'El año del campo siguió empezando en otoño, con Etanim, luego Tisri (Éx 23:16). Así, el primer mes de un calendario era el séptimo del otro. La doble cuenta se nota sobre todo después del exilio.'
+  fuentes: [it-anio, it-etanim]
+  razon: 'Perspicacia «Año», párr. 8 y 9, y «Etanim», párr. 3 y 4.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: antes-del-exodo
+  titulo: Antes del éxodo
+  texto: 'Hasta el éxodo el año se contaba de otoño a otoño y empezaba a mediados de nuestro septiembre, al acabar las cosechas. En tiempos de Noé el año tenía 12 meses de 30 días (Gé 7:11, 24).'
+  fuentes: [it-anio, it-calendario, it-nisan]
+  razon: 'Perspicacia «Año», párr. 3 y 7; Perspicacia «Calendario», párr. 3 de la introducción; «Nisán», párr. 1: Abib era antes el séptimo mes.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: nombres-por-epoca
+  titulo: Los nombres cambian con la época
+  texto: 'Antes del exilio la Biblia nombra solo cuatro meses: Abib, Ziv, Etanim y Bul. Los demás los llama por su número. Tras el exilio los judíos tomaron los nombres de Babilonia, como Nisán, Siván o Kislev.'
+  fuentes: [it-calendario]
+  razon: 'Perspicacia «Calendario», apartado «Calendario hebreo», párr. 6, 7 y 8.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: dia-hebreo
+  titulo: Cuándo empezaba el día
+  texto: 'El día hebreo iba de una puesta de sol a la siguiente (Le 23:32), no de medianoche a medianoche como el nuestro. Por eso un día hebreo abarca parte de dos fechas nuestras.'
+  fuentes: [it-dia]
+  razon: 'Perspicacia «Día», párr. 3 y 4: los romanos contaban de medianoche a medianoche, como hoy.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: en-tiempos-de-jesus
+  titulo: En tiempos de Jesús
+  texto: 'Los Evangelios y Hechos mencionan a menudo las fiestas judías, así que ese calendario seguía en uso en el siglo primero. Esas fiestas ayudan a situar en el tiempo lo que cuentan.'
+  fuentes: [it-calendario]
+  razon: 'Perspicacia «Calendario», apartado «Calendario hebreo», párr. 13.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: equivalencias
+  titulo: Nuestros meses son solo una guía
+  texto: 'Un mes hebreo empieza con la luna nueva, así que cae entre dos de nuestros meses: Nisán es «marzo-abril». Las equivalencias son aproximadas y aplican hacia atrás nuestro calendario gregoriano, que entonces no existía.'
+  fuentes: [it-calendario, tnm-b15]
+  razon: 'Perspicacia «Calendario», apartado «Calendario hebreo», párr. 2 y 12 (correspondencia aproximada); B15, fila de equivalencias; apartado «Calendario juliano y gregoriano», párr. 1 y 2: el juliano es de 46 a.e.c. y el gregoriano, de 1582.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: calendario-juliano
+  titulo: Roma y el calendario juliano
+  texto: 'Roma usaba un calendario lunar hasta que Julio César implantó en 46 a.e.c. uno solar de 365 días, con un día más cada cuatro años y comienzo el 1 de enero. Es el calendario juliano.'
+  fuentes: [it-calendario]
+  razon: 'Perspicacia «Calendario», apartado «Calendario juliano y gregoriano», párr. 1.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: calendario-gregoriano
+  titulo: El calendario gregoriano
+  texto: 'El año juliano duraba unos 11 minutos más que el del sol. En 1582 se saltaron diez días para corregirlo: tras el 4 de octubre vino el 15. Es el calendario gregoriano, el que usamos hoy.'
+  fuentes: [it-calendario]
+  razon: 'Perspicacia «Calendario», apartado «Calendario juliano y gregoriano», párr. 2.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: egipto
+  titulo: Egipto
+  texto: 'En el antiguo Egipto el año tenía 12 meses de 30 días, y cada año se sumaban cinco días más para ajustarlo al sol. Egipcios y romanos contaban el día de medianoche a medianoche.'
+  fuentes: [it-anio, it-dia]
+  razon: 'Perspicacia «Año», párr. 4, y «Día», párr. 4.'
+  consultado: '2026-09-28'
+  estado: verificado
+- id: babilonia
+  titulo: Babilonia
+  texto: 'Babilonia usaba meses lunares y algunos años añadía un decimotercero. Contaba el día desde la salida del sol y los años de un rey desde el 1 de Nisán; los meses anteriores eran su año de ascenso.'
+  fuentes: [it-anio, it-dia]
+  razon: 'Perspicacia «Año», párr. 4 y 12, y «Día», párr. 4.'
   consultado: '2026-09-28'
   estado: verificado

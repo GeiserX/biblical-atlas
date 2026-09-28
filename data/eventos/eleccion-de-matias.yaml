@@ -12,6 +12,7 @@ fecha:
 orden_relato:
   serie: hechos
   orden: 115
+  tras: ascension-de-jesus
 lugares:
 - jerusalen
 personas:

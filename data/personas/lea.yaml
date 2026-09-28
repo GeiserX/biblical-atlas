@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lea
+nombre: Lea
+nombres:
+- nombre: Lea
+fecha:
+  desde: -1773
+  hasta: -1760
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1774-1761 a.e.c. (de su boda con Jacob a la vuelta a Canaán)
+resumen: Hija mayor de Labán y prima de Jacob. Labán se la dio a Jacob con engaño antes que a Raquel. Fue madre de Rubén,
+  Simeón, Leví, Judá, Isacar, Zabulón y Dina.
+razon: 'Perspicacia «Lea», párr. 2, 3 y 5; Gé 29:16-35 y 30:17-21. Años: el estudio 3 pone su boda en 1774 a.e.c. y la
+  vuelta de Jacob a Canaán, con ella, en 1761.'
+fuentes:
+- si-3
+- it-lea
+- genesis-29
+- genesis-30
+enlaces:
+- titulo: 'Perspicacia: «Lea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002702
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-lea
+  - genesis-29
+  razon: 'Perspicacia «Lea», párr. 3: fue la primera esposa de Jacob (Gé 29:23-25).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

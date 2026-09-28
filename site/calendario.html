@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El calendario de la Biblia · biblical-earth</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="Cómo se contaban los meses y los años en la Biblia, qué nombres tenían en cada época y cómo los pone la línea de tiempo de biblical-earth. Cada dato enlaza a su fuente en wol.jw.org.">
+<link rel="stylesheet" href="kit/tokens.css">
+<link rel="stylesheet" href="kit/components.css">
+<link rel="stylesheet" href="css/calendario.css">
+</head>
+<body>
+<header class="cal-cab">
+  <a class="be-logo" href="index.html" data-volver aria-label="biblical-earth, volver al mapa"><span class="be-logo__mark" aria-hidden="true"></span><span class="cal-logo-texto">biblical-earth</span></a>
+  <span class="be-spacer"></span>
+  <a class="be-btn be-btn--sm" href="index.html" data-volver>Volver al mapa</a>
+</header>
+
+<main class="cal">
+  <div class="be-card__eyebrow cal-eyebrow">Para leer las fechas</div>
+  <h1>El calendario de la Biblia</h1>
+  <p class="cal-entrada">Los meses de la Biblia no son los nuestros. Empezaban con la luna nueva, cambiaron de nombre con el tiempo y el día empezaba al ponerse el sol. Aquí lo explicamos, con cada dato enlazado a su fuente.</p>
+  <nav aria-label="En esta página">
+    <ul class="cal-indice" id="indice"></ul>
+  </nav>
+  <div id="contenido"><p class="cal-cargando">Cargando los datos…</p></div>
+</main>
+
+<footer class="cal-pie">
+  <a href="index.html" data-volver>Volver al mapa</a>
+  <a href="acerca.html" data-acerca>Acerca de biblical-earth</a>
+</footer>
+
+<script>
+/* biblical-earth · página «El calendario»: la explicación y la tabla de los meses salen de data.json (calendario.explicacion
+   y calendario.meses). Script clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
+'use strict';
+(() => {
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const fmtAnio = (y) => (y > 0 ? `${y} e.c.` : `${1 - y} a.e.c.`);
+const EXTERNO = 'target="_blank" rel="noopener"';
+
+// «Volver al mapa» vuelve a la vista desde la que se llegó (#desde=…) y con los mismos datos de prueba (?datos=…).
+const desde = new URLSearchParams(location.hash.slice(1)).get('desde');
+document.querySelectorAll('[data-volver]').forEach((a) => { a.href = `index.html${location.search}${desde ? `#${desde}` : ''}`; });
+// «Acerca de» recibe la vista en ?desde=…: su # es la sección.
+document.querySelectorAll('[data-acerca]').forEach((a) => {
+  const q = new URLSearchParams(location.search);
+  if (desde) q.set('desde', desde);
+  a.href = `acerca.html${String(q) ? `?${q}` : ''}`;
+});
+
+/** ?datos=_local/<carril>/data.json, como en index.html: solo rutas dentro de _local/ que acaben en .json. */
+function rutaDatos() {
+  const r = new URLSearchParams(location.search).get('datos');
+  if (r == null) return 'data.json';
+  if (/^_local\/[\w./-]+\.json$/.test(r) && !r.split('/').includes('..')) return r;
+  throw new Error(`?datos=${r} no vale: solo se aceptan rutas dentro de _local/ que acaben en .json.`);
+}
+async function cargar() {
+  const ruta = rutaDatos();
+  if (location.protocol === 'file:') {
+    const js = ruta.replace(/\.json$/, '.js');
+    await new Promise((ok) => { const s = document.createElement('script'); s.src = js; s.onload = ok; s.onerror = ok; document.head.appendChild(s); });
+    if (!window.BIBLICAL_EARTH_DATA) throw new Error(`No encuentro ${js} junto a calendario.html.`);
+    return window.BIBLICAL_EARTH_DATA;
+  }
+  const r = await fetch(ruta, { cache: 'no-cache' });
+  if (!r.ok) throw new Error(`${ruta} respondió ${r.status}`);
+  return r.json();
+}
+
+// Los hechos de calendario.explicacion, por temas. Un id que no esté aquí va al primer tema.
+const TEMAS = [
+  ['el-mes-y-el-ano', 'El mes y el año', ['mes-lunar', 'mes-anadido', 'ciclo-de-19-anos', 'anio-sagrado', 'anio-civil', 'antes-del-exodo', 'nombres-por-epoca', 'dia-hebreo', 'en-tiempos-de-jesus']],
+  ['nuestros-meses', 'Nuestros meses', ['equivalencias', 'calendario-juliano', 'calendario-gregoriano']],
+  ['otras-naciones', 'Otras naciones de la Biblia', ['egipto', 'babilonia']],
+];
+
+function pintar(D) {
+  const cal = D.calendario || {};
+  const F = D.fuentes || {};
+  const usadas = new Set();
+  const nombreFuente = (f) => (/^Perspicacia/.test(f.obra || '') ? `Perspicacia «${f.titulo}»` : f.titulo);
+  const enlaces = (ids) => (ids || []).filter((id) => F[id]).map((id) => { usadas.add(id); return `<a href="${esc(F[id].url)}" ${EXTERNO}>${esc(nombreFuente(F[id]))}</a>`; }).join(' · ');
+
+  const hechos = cal.explicacion || [];
+  const temas = TEMAS.map(([id, titulo, ids]) => ({ id, titulo, hechos: ids.map((x) => hechos.find((h) => h.id === x)).filter(Boolean) }));
+  for (const h of hechos) if (!TEMAS.some(([, , ids]) => ids.includes(h.id))) temas[0].hechos.push(h);
+  const hecho = (h) => `<article class="cal-hecho" id="${esc(h.id)}">
+      <h3>${esc(h.titulo)}${h.estado === 'pendiente' ? ' <span class="be-tier be-tier--unverified">Sin verificar</span>' : ''}</h3>
+      <p>${esc(h.texto)}</p>
+      <p class="cal-fuentes">${enlaces(h.fuentes)}</p>
+      ${h.razon ? `<details class="cal-por-que"><summary>Por qué lo decimos</summary><p>${esc(h.razon)}</p></details>` : ''}
+    </article>`;
+
+  // La tabla de los meses: año sagrado desde Nisán (Éx 12:2) y civil desde Tisri, siete meses después.
+  const meses = [...(cal.meses || [])].sort((a, b) => a.orden - b.orden);
+  const civil = (o) => (o > 12 ? '·' : String(o >= 7 ? o - 6 : o + 6));
+  const epoca = (n) => (n.hasta != null && n.desde == null ? `hasta c. ${fmtAnio(n.hasta)}` : n.desde != null && n.hasta == null ? `desde c. ${fmtAnio(n.desde)}` : n.desde != null ? `c. ${fmtAnio(n.desde)} - ${fmtAnio(n.hasta)}` : '');
+  const fila = (m) => {
+    const nombres = (m.nombres && m.nombres.length ? m.nombres : [{ nombre: m.nombre }]);
+    const ids = [...new Set([...(m.fuentes || []), ...nombres.flatMap((n) => n.fuentes || []), ...(m.fiestas || []).flatMap((f) => f.fuentes || [])])];
+    const fiestas = (m.fiestas || []).map((f) => `<li><b>${f.desde}${f.hasta != null && f.hasta !== f.desde ? `-${f.hasta}` : ''}</b> ${esc(f.nombre)}${f.instituida != null ? ` <span class="cal-epoca" title="${esc(f.razon || '')}">desde ${f.estado === 'pendiente' ? 'c. ' : ''}${esc(fmtAnio(f.instituida))}</span>` : ''}</li>`).join('');
+    return `<tr role="row" id="mes-${esc(m.id)}"${m.id === 'veadar' ? ' class="cal-anadido"' : ''}>
+      <td role="cell" class="cal-num" data-t="Año sagrado">${m.orden > 12 ? '13' : m.orden}</td>
+      <td role="cell" class="cal-num" data-t="Año civil">${civil(m.orden)}</td>
+      <td role="cell" class="cal-nombres" data-t="Mes">${nombres.map((n) => `<div class="cal-nombre"><b>${esc(n.nombre)}</b>${epoca(n) ? ` <span class="cal-epoca">${esc(epoca(n))}</span>` : ''}${n.nota ? `<small>${esc(n.nota)}</small>` : ''}</div>`).join('')}${m.nota ? `<small>${esc(m.nota)}</small>` : ''}</td>
+      <td role="cell" data-t="Más o menos">${esc(m.equivale || '')}</td>
+      <td role="cell" data-t="Fiestas">${fiestas ? `<ul class="cal-fiestas">${fiestas}</ul>` : '<span class="cal-nada">·</span>'}</td>
+      <td role="cell" data-t="Tiempo y campo">${m.clima ? `<div>${esc(m.clima)}</div>` : ''}${m.campo ? `<div class="cal-campo">${esc(m.campo)}</div>` : ''}</td>
+      <td role="cell" class="cal-fuentes" data-t="Fuentes">${enlaces(ids)}</td>
+    </tr>`;
+  };
+
+  const secciones = [
+    ...temas.filter((t) => t.hechos.length).map((t) => ({ id: t.id, titulo: t.titulo, html: `<div class="cal-hechos">${t.hechos.map(hecho).join('')}</div>` })),
+    { id: 'los-meses', titulo: 'Los meses, uno a uno', html: `
+      <p>En el orden del año sagrado, que empezaba en Nisán. El año civil empezaba en Tisri, el séptimo mes del sagrado: en el civil, Tisri es el 1 y Nisán el 7. Veadar solo existía en los años que llevaban un mes de más.</p>
+      <div class="cal-tabla-marco"><table class="cal-tabla" role="table">
+        <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" title="Año sagrado, desde Nisán">Sagrado</th><th scope="col" role="columnheader" title="Año civil, desde Tisri">Civil</th><th scope="col" role="columnheader">Mes y sus nombres</th><th scope="col" role="columnheader">Más o menos</th><th scope="col" role="columnheader">Fiestas</th><th scope="col" role="columnheader">Tiempo y campo</th><th scope="col" role="columnheader">Fuentes</th></tr></thead>
+        <tbody role="rowgroup">${meses.map(fila).join('')}</tbody>
+      </table></div>` },
+    { id: 'en-la-linea', titulo: 'Cómo los pone la línea de tiempo', html: `
+      <p>Nadie sabe hoy en qué día exacto empezó cada mes de la Biblia. La línea de tiempo los pone con un cálculo nuestro, y por eso sus fechas de mes y de día llevan «c.».</p>
+      <ul class="cal-reglas">
+        <li>Cada mes empieza con una luna nueva media, una cada 29 días, 12 horas y 44 minutos, lo que dura de media una lunación según Perspicacia «Calendario».</li>
+        <li>Nisán empieza con la luna nueva más cercana al equinoccio de primavera, hacia el 21 de marzo, como explica Perspicacia «Nisán», párr. 3. Si hasta el Nisán siguiente caben trece lunas, ese año lleva Veadar.</li>
+        <li>El día hebreo empieza a las seis de la tarde, hacia la puesta del sol (Perspicacia «Día»). En la escala de días, la franja sombreada son las horas entre la puesta del sol y nuestra medianoche: ya son el día hebreo siguiente.</li>
+        <li>Los nombres siguen la época. Hasta el regreso del exilio, en 537 a.e.c., la línea usa Abib, Ziv, Etanim y Bul. Los meses que la Biblia de entonces nombra solo por su número llevan su nombre posterior en cursiva.</li>
+        <li>Cuando un mes no cabe, la línea escribe su inicial. Al tocarlo, o al tocar un nombre en cursiva, un aviso da el nombre entero y su época.</li>
+        <li>Nuestros meses son el calendario gregoriano aplicado hacia atrás, sin años bisiestos. Solo sirven para orientarse.</li>
+        <li>Cada fiesta sale solo desde el año en que se instituyó: la Pascua desde la salida de Egipto, la Dedicación desde 165 a.e.c. La tabla de arriba da ese año con sus fuentes.</li>
+      </ul>
+      <p>El selector «Meses» de la línea elige qué se ve: los dos calendarios, solo el nuestro o solo el hebreo.</p>` },
+  ];
+  const lista = [...usadas].map((id) => F[id]).sort((a, b) => nombreFuente(a).localeCompare(nombreFuente(b), 'es'));
+  secciones.push({ id: 'fuentes', titulo: 'Fuentes', html: `<p>Todo lo que dice esta página sale de estas publicaciones de wol.jw.org. Pulsa una para leerla entera.</p>
+    <ul class="cal-lista-fuentes">${lista.map((f) => `<li><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span>${esc(f.obra)}</span></li>`).join('')}</ul>` });
+
+  document.getElementById('indice').innerHTML = secciones.map((s) => `<li><a href="#${s.id}">${esc(s.titulo)}</a></li>`).join('');
+  document.getElementById('contenido').innerHTML = secciones.map((s) => `<section id="${s.id}"><h2>${esc(s.titulo)}</h2>${s.html}</section>`).join('');
+  // Con la página ya pintada, un ancla de la dirección (#mes-nisan, #dia-hebreo) lleva a su sitio.
+  const ancla = location.hash.slice(1);
+  if (ancla && !ancla.includes('=')) document.getElementById(ancla)?.scrollIntoView();
+}
+
+cargar().then(pintar).catch((err) => {
+  document.getElementById('contenido').innerHTML = `<section><h2>No se pudieron cargar los datos</h2><p>${esc(err.message)} Mira site/README.md para abrir el sitio en local.</p></section>`;
+});
+})();
+</script>
+</body>
+</html>

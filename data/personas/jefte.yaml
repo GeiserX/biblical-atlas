@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jefte
+nombre: Jefté
+nombres:
+- nombre: Jefté
+fecha:
+  desde: -1172
+  hasta: -1172
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1173 a.e.c.
+resumen: Galaadita de la tribu de Manasés al que sus medio hermanos echaron de casa. Los de Galaad lo llamaron para luchar
+  contra Ammón y, tras vencer, juzgó a Israel seis años en Galaad.
+razon: 'Perspicacia «Jefté», párr. 2 a 7: sus seis años de juez empezaron hacia 1173 a.e.c., según los 300 años de Jue 11:26.
+  Jue 11 y 12:7.'
+fuentes:
+- it-jefte
+- jueces-11
+- jueces-12
+enlaces:
+- titulo: 'Perspicacia: «Jefté»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002413
+  tipo: perspicacia
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

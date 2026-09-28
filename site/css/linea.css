@@ -27,7 +27,7 @@
 
 /* Fecha de la barra superior: se puede escribir (T-20). */
 #fecha { cursor: text; position: relative; }
-#fecha.editando .be-date__value, #fecha.editando .be-date__hint { visibility: hidden; }
+#fecha.editando .be-date__value, #fecha.editando .be-date__hint, #fecha.editando .fecha-otra { visibility: hidden; }
 .fecha-entrada { position: absolute; inset: 3px 6px; width: calc(100% - 12px); border: 1px solid var(--gold); border-radius: var(--r-sm); padding: 0 8px; font: 600 var(--fs-md) var(--font-sans); color: var(--ink); background: var(--surface); outline: none; }
 
 /* Carriles */
@@ -105,10 +105,46 @@
 .estancia:hover .barra-estancia, .estancia.encima .barra-estancia { opacity: 1; }
 .camino { stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .7; }
 .banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); stroke-dasharray: 2 2; pointer-events: none; }
-/* Meses hebreos (T-19). */
-.mes-hebreo rect { fill: #a89478; opacity: .55; }
-.mes-hebreo.mes-1 rect { opacity: .38; }
-.mes-hebreo text { fill: #fff; }
+/* Meses (T-19): nuestros meses en contorno y letra de interfaz; los hebreos rellenos, rayados y en letra de libro.
+   Se distinguen por la etiqueta, la forma y la letra, no solo por el color (daltonismo e impresión). */
+.mes-caja { stroke-width: 1; }
+.mes--nuestros .mes-caja { fill: var(--surface); stroke: var(--line-2); }
+.mes--nuestros.mes-1 .mes-caja { fill: var(--surface-2); }
+.mes--nuestros .mes-texto { fill: var(--ink-2); font-weight: 500; }
+.mes--hebreos .mes-caja { fill: var(--line); stroke: var(--ink-4); }
+.mes--hebreos.mes-1 .mes-caja { fill: var(--paper-2); }
+.linea-svg .mes--hebreos .mes-texto { fill: var(--ink); font-family: var(--font-serif); font-size: 13px; font-weight: 700; }
+.linea-svg .mes--hebreos.anacronico .mes-texto { font-style: italic; font-weight: 500; fill: var(--ink-2); }
+.mes--hebreos.anadido .mes-caja { stroke-dasharray: 4 2; stroke: var(--ink-3); }
+.mes-dia { stroke: var(--ink-4); stroke-width: 1; }
+.linea-svg .mes-num { fill: var(--ink-3); font-size: 9.5px; font-weight: 500; }
+.mes--hebreos .mes-num { fill: var(--ink-2); }
+/* Horas entre la puesta de sol y nuestra medianoche: ya son el día hebreo siguiente (Perspicacia «Día»). */
+.noche-hebrea rect { fill: rgba(31, 26, 20, .07); pointer-events: none; }
+/* Fiestas del calendario hebreo, a escala de días. */
+.fiesta-caja { fill: var(--gold-soft); stroke: var(--gold); stroke-width: 1.2; }
+.fiesta-texto { fill: var(--gold-ink); }
+.fiesta-texto--fuera { fill: var(--gold-ink); }
+/* Etiquetas de las filas de meses y el enlace a la página del calendario. */
+.linea-carriles .carril-mes--hebreos > span { font-family: var(--font-serif); font-size: 13.5px; font-weight: 700; color: var(--ink); }
+.linea-carriles .carril-mes--nuestros > span { font-weight: 500; }
+.carril-ayuda { margin-left: auto; flex: none; display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; border: 1px solid var(--line-2); background: var(--surface); color: var(--link); font-size: var(--fs-2xs); font-weight: 700; text-decoration: none; }
+.carril-ayuda:hover { background: var(--paper-2); }
+.carril-ayuda, .nombre-corto { display: none; }   /* en la pantalla ancha, «¿Qué meses son estos?» va en la barra */
+.menu-meses { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 2px 8px 6px; }
+/* Selector «Meses» de la barra: el mismo control segmentado que el del mapa, en pequeño. */
+.meses-control { display: inline-flex; align-items: center; gap: 6px; flex: none; }
+.meses-control[hidden] { display: none; }
+.meses-etiqueta { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); }
+.meses-seg { padding: 2px; gap: 1px; }
+.meses-seg .be-seg__opt { height: 22px; padding: 0 8px; border: 0; background: transparent; font-size: var(--fs-2xs); cursor: pointer; }
+.meses-seg .be-seg__opt--on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-1); }
+.meses-que { font-size: var(--fs-xs); font-weight: 500; color: var(--link); white-space: nowrap; }
+/* La fecha en el otro calendario, en la barra superior. */
+.fecha-otra { font-size: var(--fs-xs); font-weight: 500; color: var(--gold-hint); white-space: nowrap; }
+.fecha-otra[hidden] { display: none; }
+.fecha-otra.anacronico { font-style: italic; }
+#fecha-valor i { font-style: italic; }
 /* Fechas seculares como nota (C-02, C-04). */
 .tramo-secular { fill: var(--secular-soft); stroke: var(--secular); stroke-width: 1.2; stroke-dasharray: 4 3; }
 .texto-secular { fill: var(--secular); }
@@ -243,6 +279,13 @@
   .zoom .z-largo { display: none; }
   .zoom .z-corto { display: inline; }
   .zoom button { padding: 4px 5px; }
+  .linea-barra .meses-control { display: none; }   /* no cabe: el selector va en el menú de la línea */
+  .carril-ayuda { display: inline-grid; }
+  .linea-carriles .nombre-largo { display: none; }
+  .linea-carriles .nombre-corto { display: inline; }
+  #fecha:has(.fecha-otra:not([hidden])) { flex-direction: column; align-items: flex-start; gap: 0; padding-top: 2px; padding-bottom: 2px; }
+  #fecha:has(.fecha-otra:not([hidden])) .be-date__value { font-size: 15px; }
+  .fecha-otra { font-size: 10.5px; line-height: 1.1; }
   .linea-boton { width: 30px; height: 30px; }
   .linea-carriles .be-lane-label { padding: 0 6px 0 10px; font-size: var(--fs-xs); gap: 5px; }
   .carril-pin { display: none; }

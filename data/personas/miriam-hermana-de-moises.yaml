@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miriam-hermana-de-moises
+nombre: Míriam
+nombres:
+- nombre: Míriam
+desambiguacion: Míriam hija de Amram, hermana de Moisés y Aarón; no la descendiente de Judá de 1 Crónicas 4.
+fecha:
+  desde: -1512
+  hasta: -1473
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513-1474 a.e.c. (del mar Rojo a su muerte en Cadés)
+resumen: Hermana mayor de Moisés y Aarón, y profetisa. Tras el paso del mar Rojo dirigió a las mujeres en el canto a Jehová.
+  Por murmurar contra Moisés sufrió lepra. Murió y fue enterrada en Cadés.
+razon: 'Perspicacia «Míriam», núm. 1, párr. 2 a 6, y «Moisés», párr. 2; Éx 15:20, 21, Nú 12 y 20:1. Años: el mar Rojo en
+  1513 a.e.c. (estudio 3); muere poco antes que Aarón, en 1474.'
+fuentes:
+- si-3
+- it-aaron
+- it-miriam
+- it-moises
+- exodo-15
+- numeros-20
+enlaces:
+- titulo: 'Perspicacia: «Míriam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003074
+  tipo: perspicacia
+- titulo: Éxodo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/15
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: moises
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-miriam
+  - it-moises
+  razon: 'Perspicacia «Míriam», párr. 2 (Nú 26:59); «Moisés», párr. 2: era unos años mayor que él.'
+  estado: verificado
+- tipo: pariente
+  persona: aaron
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-miriam
+  razon: 'Perspicacia «Míriam», párr. 2: hija de Amram y Jokébed, hermana de Aarón (Nú 26:59).'
+  estado: verificado
+- tipo: murio_en
+  lugar: cades
+  deducido: false
+  fuentes:
+  - it-miriam
+  - numeros-20
+  razon: 'Nú 20:1: murió y fue enterrada en Cadés; Perspicacia «Míriam», párr. 6.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado
