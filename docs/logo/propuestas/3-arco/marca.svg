@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="biblical-earth · El arco del mundo bíblico">
+  <title>biblical-earth · El arco del mundo bíblico</title>
+  <rect width="64" height="64" rx="14" fill="#a3432b"/>
+  <path d="M10 46C16 43 21 41 23 36C25 30 28 22 33 21.5C37 21 38 27 41 31C44 35 49 38 54 42" fill="none" stroke="#f6f1e7" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="10" cy="46" r="5.5" fill="#b8892f"/><circle cx="33" cy="21.5" r="5.5" fill="#b8892f"/><circle cx="54" cy="42" r="5.5" fill="#b8892f"/>
+</svg>

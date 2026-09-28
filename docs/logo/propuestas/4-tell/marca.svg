@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="biblical-earth · El tell">
+  <title>biblical-earth · El tell</title>
+  <clipPath id="be-c4"><path d="M19.5 17H44.5A2 2 0 0 1 46.3 18.2L60 47H4L17.7 18.2A2 2 0 0 1 19.5 17Z"/></clipPath>
+  <g clip-path="url(#be-c4)"><rect x="0" y="16" width="64" height="10" fill="#b8892f"/>
+    <rect x="0" y="29" width="64" height="7.5" fill="#a3432b"/><rect x="0" y="39.5" width="64" height="8" fill="#1f1a14"/></g>
+</svg>
