@@ -48,7 +48,7 @@ El mundo cubre todos los lugares y zonas candidatas de los datos con al menos 10
 
 El relieve de Jerusalén sale de teselas Terrarium al zoom 14 (unos 10 m por píxel). El dato de origen es SRTM de 30 m, así que a partir del zoom 13 el relieve se ve suave, sin píxeles.
 
-Al encuadrar una selección, el mapa no se acerca más de lo que aguanta el relieve más fino de esa zona (`topeRelieve` en `js/mapa.js`): zoom 14 en Jerusalén, 10 en la tierra de Israel, 8 en el Mediterráneo y 7,5 en el resto. Si ya estaba más cerca, se aleja hasta ese tope. Sin selección, un salto grande en el tiempo (una fecha escrita, un año buscado, un clic lejano en la pista) reencuadra a Pablo o, si los datos no lo sitúan, la época.
+Al encuadrar una selección, el mapa no se acerca más de lo que aguanta el relieve más fino de esa zona (`topeRelieve` en `js/mapa.js`): zoom 14 en Jerusalén, 10 en la tierra de Israel, 8 en el Mediterráneo y 7,5 en el resto. Si ya estaba más cerca, se aleja hasta ese tope. Sin selección, un salto grande en el tiempo (una fecha escrita, un año buscado, un clic lejano en la pista) reencuadra a Pablo o, si los datos no lo sitúan, la época. Reproducir o arrastrar el cursor poco a poco no reencuadra, por muchos años que recorra.
 
 El kit dibuja en proyección equirrectangular. Aquí las imágenes están reproyectadas a Web Mercator (EPSG:3857) para que MapLibre las ponga como `image source` con las esquinas exactas. La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
 
@@ -204,7 +204,7 @@ BE.tipo('lugar', {
 
 `base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js`; `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
 
-`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
+`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 

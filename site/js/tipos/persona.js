@@ -87,7 +87,9 @@ function calcularAristas(id) {
     const ref = (e.pasajes || []).join('; ');
     const base = { fecha: e.fecha, ref, fuentes: e.fuentes, razon: e.razon, estado: e.estado, origen: 'evento', incierto: e.fecha?.tipo === 'narrativa' || e.fecha?.tipo === 'derivada' };
     poner({ ...base, sel: `evento:${e.id}`, grupo: 'Hechos', verbo: 'está en este suceso' });
-    for (const l of e.lugares || []) if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
+    // Con `presentes`, quien no está en la lista solo se nombra: los lugares del suceso no son lugares de su vida.
+    const estuvo = !e.presentes || e.presentes.includes(id);
+    if (estuvo) for (const l of e.lugares || []) if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
     for (const g of e.personas) if (g !== id && BE.PERS[g]) poner({ ...base, sel: `persona:${g}`, grupo: 'Personas', verbo: `juntos: ${e.titulo}` });
   }
   for (const c of BE.D.cartas || []) {
@@ -249,7 +251,10 @@ function implicadosPersona(id, r) {
   const viajes = BE.D.viajes.filter((v) => v.persona === id || (v.companeros || []).includes(id));
   viajes.forEach((v) => { r.claves.add(`viaje:${v.id}`); BE.P.filter((s) => s.viaje === v).forEach((s) => BE.anadirParada(r, s)); });
   BE.D.cartas.filter((c) => c.escritor === id || (!c.escritor && id === 'pablo') || (c.portadores || []).includes(id) || (c.destinatarios?.personas || []).includes(id)).forEach((c) => BE.anadirCarta(r, c));
-  (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => { r.claves.add(`evento:${e.id}`); (e.lugares || []).forEach((x) => r.lugares.add(x)); });
+  (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => {
+    r.claves.add(`evento:${e.id}`);
+    if (!e.presentes || e.presentes.includes(id)) (e.lugares || []).forEach((x) => r.lugares.add(x));
+  });
   (BE.D.periodos || []).filter((p) => p.persona === id).forEach((p) => r.claves.add(`periodo:${p.id}`));
   (BE.PERS[id].relaciones || []).forEach((x) => { if (x.lugar && BE.L[x.lugar]) r.lugares.add(x.lugar); });
 }

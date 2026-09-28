@@ -37,7 +37,7 @@ estado: verificado
 relaciones:
 - tipo: pariente
   persona: herodes-agripa-i
-  relacion: hijo
+  relacion: padre
   deducido: false
   fuentes:
   - it-herodes
@@ -45,7 +45,7 @@ relaciones:
   estado: verificado
 - tipo: pariente
   persona: herodes-el-grande
-  relacion: bisnieto
+  relacion: bisabuelo
   deducido: false
   fuentes:
   - it-herodes
@@ -53,7 +53,7 @@ relaciones:
   estado: verificado
 - tipo: pariente
   persona: berenice
-  relacion: hermano
+  relacion: hermana
   deducido: false
   fuentes:
   - it-herodes
@@ -63,7 +63,7 @@ relaciones:
   estado: verificado
 - tipo: pariente
   persona: drusila
-  relacion: hermano
+  relacion: hermana
   deducido: false
   fuentes:
   - it-herodes

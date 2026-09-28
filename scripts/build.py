@@ -269,8 +269,12 @@ def integridad(datos):
                     ref(f, "lugar", lid, "lugares")
                 for pid in o.get("personas") or []:
                     ref(f, "persona", pid, "personas")
-                if (o.get("orden_relato") or {}).get("tras") is not None:
-                    ref(f, "orden_relato.tras", o["orden_relato"]["tras"], "eventos")
+                orden = o.get("orden_relato")
+                tras = orden.get("tras") if isinstance(orden, dict) else None
+                if isinstance(tras, str):
+                    ref(f, "orden_relato.tras", tras, "eventos")
+                elif tras is not None:
+                    errores.append(f"{f}: orden_relato.tras debe ser el id de un evento, no {type(tras).__name__}")
                 for pid in o.get("presentes") or []:
                     if pid not in (o.get("personas") or []):
                         errores.append(f"{f}: presentes nombra a '{pid}', que no está en personas")

@@ -391,10 +391,12 @@ function presentes(t) {
   }
   return out;
 }
-/** Suceso que nombra a la persona y cuyo título empieza por `re` («Nace…», «Muerte de…»), con fecha que no sea cálculo. */
-const sucesoDe = (persona, re) => (BE.D.eventos || []).find((e) => (e.personas || []).includes(persona) && re.test(e.titulo || '') && e.fecha && e.fecha.tipo !== 'derivada');
+/** Suceso cuyo título empieza por `re` («Nace…», «Muerte de…») y que tiene a la persona en primer lugar, con fecha que
+    no sea cálculo. En un nacimiento o una muerte la primera de `personas` es quien nace o muere; las demás estaban allí
+    (María y José en el nacimiento de Jesús), así que no cuentan. */
+const sucesoDe = (persona, re) => (BE.D.eventos || []).find((e) => (e.personas || [])[0] === persona && re.test(e.titulo || '') && e.fecha && e.fecha.tipo !== 'derivada');
 /** Edad aproximada en t, solo con un nacimiento fechado: un nacio_en con fecha o un suceso «Nace…»/«Nacimiento de…» que
-    la nombre (nunca se calcula de otra cosa). { n, texto, nacimiento, fuentes } o null. */
+    la ponga primera (nunca se calcula de otra cosa). { n, texto, nacimiento, fuentes } o null. */
 function edad(persona, t) {
   const p = BE.PERS[persona];
   if (!p) return null;

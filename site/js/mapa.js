@@ -884,13 +884,19 @@ function altoHoja() {
   const lec = document.getElementById('vista-lectura');
   return Math.max(E.hojaPlegada ? 0 : $('#panel').offsetHeight, lec && !lec.hidden ? lec.offsetHeight : 0) + 44;
 }
-/** Si Pablo se acerca al borde (12 %) o queda bajo la hoja inferior, el mapa lo recentra en la parte visible. */
+/** Parte del mapa que se ve de verdad, en píxeles del contenedor: sin el relleno propio del mapa (grafo, conexión y
+    lectura tapan la izquierda en escritorio, estudio.relleno de grafo.js) ni la hoja inferior del móvil. */
+function zonaLibre() {
+  const c = map.getContainer(), pad = map.getPadding();
+  return { x0: pad.left, x1: c.clientWidth - pad.right, y0: pad.top, y1: c.clientHeight - Math.max(pad.bottom, altoHoja()) };
+}
+/** Si Pablo se acerca al borde (12 %) de la parte libre (zonaLibre), el mapa lo recentra en ella. */
 function seguir(pos, forzar = false) {
   if (!mapaListo || (!forzar && map.isMoving())) return;
   const hoja = altoHoja();
-  const c = map.getContainer(), p = map.project(pos);
-  const ancho = c.clientWidth, alto = c.clientHeight - hoja, m = 0.12;
-  if (p.x < ancho * m || p.x > ancho * (1 - m) || p.y < alto * m || p.y > alto * (1 - m)) {
+  const z = zonaLibre(), p = map.project(pos);
+  const mx = (z.x1 - z.x0) * 0.12, my = (z.y1 - z.y0) * 0.12;
+  if (p.x < z.x0 + mx || p.x > z.x1 - mx || p.y < z.y0 + my || p.y > z.y1 - my) {
     map.easeTo({ center: pos, offset: [0, -hoja / 2], duration: 900 });
   }
 }
@@ -904,14 +910,17 @@ function seguirPablo() {
 }
 /** Un salto grande en el tiempo sin selección (una fecha escrita, un año buscado, un clic lejano en la pista a escala de
     milenios) reencuadra como seguirPablo, un momento después de que el cursor se pare. Reproducir y arrastrar poco a poco
-    no reencuadran: cada fotograma avanza menos que SALTO. */
+    no reencuadran: se compara cada fotograma con el anterior, y cada uno avanza menos que SALTO por muchos años que sumen.
+    Un paso pequeño justo después de un salto cancela el reencuadre pendiente: ya se está arrastrando. */
 const SALTO = 20;
 let tSalto = null, saltoTimer = 0;
 function vigilarSalto() {
-  if (tSalto == null || E.sel || E.play) { tSalto = E.t; return; }
-  if (Math.abs(E.t - tSalto) < SALTO) return;
+  const d = tSalto == null ? 0 : Math.abs(E.t - tSalto);
   tSalto = E.t;
+  if (E.sel || E.play) { clearTimeout(saltoTimer); return; }
+  if (d === 0) return;
   clearTimeout(saltoTimer);
+  if (d < SALTO) return;
   saltoTimer = setTimeout(() => { if (!E.sel && !E.play && mapaListo) seguirPablo(); }, 300);
 }
 
@@ -1344,10 +1353,10 @@ function eleccionMientras(t) {
   const quien = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? E.sel.id : 'pablo';
   const w = quien === 'pablo' ? BE.dondeEsta(t) : BE.donde(quien, t);
   if (w) {
-    if (w.parada && w.en.origen === 'evento') {
-      const e = (BE.D.eventos || []).find((x) => `evento:${x.id}` === w.en.sel);
-      if (e) return { ev: e, lugar: w.en.lugar.nombre };
-    }
+    // El suceso del que sale el lugar de la bandera (BE.sucesoEn). En un hueco entre dos estancias en el mismo sitio
+    // no hay ninguno: el suceso anterior ya acabó.
+    const propio = BE.sucesoEn(quien, t);
+    if (propio) return { ev: propio, lugar: w.en.lugar.nombre };
     const suyo = (e) => (e.personas || []).includes(quien);
     if (w.parada) {
       const e = sucesoMientras(t, (x) => suyo(x) && (x.lugares || []).includes(w.en.lugar.id), claves);
@@ -1540,8 +1549,8 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
   const padding = rellenoConMientras();
   // «Ya se ve» es dentro de la parte libre del mapa: en el móvil, un punto bajo la hoja inferior no se ve.
   if (siVisible) {
-    const c = map.getContainer(), ancho = c.clientWidth, alto = c.clientHeight - altoHoja();
-    if (pts.every((q) => { const { x, y } = map.project(q); return x >= 0 && x <= ancho && y >= 0 && y <= alto; })) return;
+    const z = zonaLibre();
+    if (pts.every((q) => { const { x, y } = map.project(q); return x >= z.x0 && x <= z.x1 && y >= z.y0 && y <= z.y1; })) return;
   }
   map.fitBounds(cajaDe(pts), { padding, maxZoom: pts.length > 1 ? 7 : Math.max(map.getZoom(), 5.5), duration: 700 });
 }
@@ -1552,8 +1561,8 @@ function mostrarPablo() {
   const w = BE.dondeEsta(E.t);
   if (!w) { encuadrarEpoca(E.t, { siVisible: true }); return; }
   const hoja = altoHoja();
-  const c = map.getContainer(), q = map.project(w.pos), m = 40;
-  if (q.x > m && q.x < c.clientWidth - m && q.y > m && q.y < c.clientHeight - hoja - m) return;
+  const z = zonaLibre(), q = map.project(w.pos), m = 40;
+  if (q.x > z.x0 + m && q.x < z.x1 - m && q.y > z.y0 + m && q.y < z.y1 - m) return;
   map.jumpTo({ center: w.pos, zoom: estrecha() ? Math.max(map.getZoom(), 5.5) : map.getZoom() });
   const cq = map.project(w.pos);
   map.jumpTo({ center: map.unproject([cq.x, cq.y + hoja / 2]) });
