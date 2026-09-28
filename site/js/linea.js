@@ -1296,7 +1296,7 @@ function cerrarMenu() {
 function abrirMenu(seccion = 'todo') {
   const yaAbierto = !!menuEl && !menuEl.hidden;
   const foco = yaAbierto && menuEl.contains(document.activeElement) ? document.activeElement : null;
-  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
+  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador', 'data-meses'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
   if (!menuEl) {
     menuEl = document.createElement('div');
     menuEl.className = 'linea-menu be-card';

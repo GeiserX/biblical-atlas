@@ -248,9 +248,10 @@ def _modelo_meses():
     return c
 
 
-def inicio_mes(c, y, orden):
+def inicio_mes(c, y, orden, siguiente=False):
     """(meses del año hebreo, comienzo del mes `orden`) para una fecha del año y de nuestro calendario, como inicioMes.
-    Sin ese mes en el año (veadar en un año de doce), (None, comienzo del nisán siguiente)."""
+    Sin ese mes en el año (veadar en un año de doce), (None, comienzo del nisán siguiente). Con siguiente=True, el
+    comienzo es el del mes que sigue a `orden` en el mismo año hebreo: el límite donde acaba `orden`."""
     dia, ml, l0, eq = c["DIA"], c["MES_LUNAR"], c["LUNA_0"], c["EQUINOCCIO"]
 
     def redondo(x):
@@ -267,7 +268,7 @@ def inicio_mes(c, y, orden):
     n = redondo((luna(a + 1) - luna(a)) / ml)
     if orden > n:
         return None, puesta(luna(a + 1))
-    return n, puesta(luna(a) + (orden - 1) * ml)
+    return n, puesta(luna(a) + (orden if siguiente else orden - 1) * ml)
 
 
 def meses_en_su_anio(datos):
@@ -280,8 +281,11 @@ def meses_en_su_anio(datos):
     dia = c["DIA"]
     ordenes = {m.get("id"): m.get("orden") for m in datos["calendario"].get("meses") or []}
 
-    def inicio(y, orden):
-        return inicio_mes(c, y, orden)
+    def inicio(y, orden, siguiente=False):
+        return inicio_mes(c, y, orden, siguiente)
+
+    def redondo(x):
+        return math.floor(x + 0.5)
 
     errores = []
 
@@ -303,6 +307,11 @@ def meses_en_su_anio(datos):
                     errores.append(f"{donde}: «{x.get('texto')}» pone {det['mes']}, pero según el cálculo de la línea "
                                    f"ese año hebreo no lleva ese mes; la fecha caería en nisán")
                 t = a + (det["dia"] - 1) * dia if _entero(det.get("dia")) else a
+                if n is not None and _entero(det.get("dia")):
+                    _, fin = inicio(y0, ordenes[det["mes"]], True)
+                    if t >= fin:
+                        errores.append(f"{donde}: «{x.get('texto')}» pone el día {det['dia']} de {det['mes']}, pero ese "
+                                       f"año el mes tiene {redondo((fin - a) / dia)} días: la fecha caería en el mes siguiente")
                 if not y0 <= t < y1 + 1:
                     errores.append(f"{donde}: «{x.get('texto')}» ({det['mes']} {det.get('dia', '')}) empieza en "
                                    f"{t:.3f}, fuera de su tramo [{y0}, {y1 + 1}): el día cae en otro año")
