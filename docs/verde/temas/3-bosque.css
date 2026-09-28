@@ -1,0 +1,98 @@
+/* biblical-earth · tema «Bosque», propuesta en verde (docs/verde/README.md).
+   Se carga después de las hojas del sitio y solo cambia colores. Las variables --viajes y --cartas
+   las lee site/js/mapa.js con el cambio descrito en el README; sin ese cambio, los viajes siguen con sus colores de hoy. */
+
+:root {
+  /* ---------- Papel y tinta ---------- */
+  --paper: #f2f3ec;
+  --paper-2: #e5e8dc;
+  --surface: #fcfdf8;
+  --surface-2: #f6f7f0;
+  --ink: #152019;
+  --ink-2: #37453b;
+  --ink-3: #56655a;
+  --ink-4: #95a296;
+  --line: #dbe0d4;
+  --line-2: #c3cbbd;
+  --focus: #2c6a78;
+  --link: #265e7a;
+
+  /* ---------- Acento: el sujeto activo, antes terracota ---------- */
+  --accent: #2d6a45;
+  --accent-2: #4f8c63;
+  --accent-soft: #dcebdf;
+
+  /* ---------- El color del tiempo: cursor, fecha activa, cartas y sucesos, antes oro ---------- */
+  --gold: #8a6812;
+  --gold-soft: #e6eede;
+  --gold-ink: #2b4a33;     /* texto sobre --gold-soft; antes #6e4f15 y #5a4212 escritos a mano */
+  --gold-line: #cddbc8;    /* borde de las píldoras de fecha; antes #ead9b3 */
+
+  /* ---------- Fuentes: «Verificado» y nivel 1 ---------- */
+  --tier1: #265e7a;
+  --tier1-soft: #e0eaf1;
+
+  /* ---------- Grafo, imperios y mapa ---------- */
+  --node-persona: var(--accent);
+  --node-lugar: #265e7a;
+  --node-evento: var(--gold);
+  --node-periodo: #6a5a8c;
+  --node-hallazgo: #8a5a2b;
+  --emp-egipto: #a8863c;
+  --emp-asiria: #9a5b3e;
+  --emp-babilonia: #3f5e8c;
+  --emp-persia: #6f5aa0;
+  --emp-grecia: #2f7f8a;
+  --emp-roma: #4f5d6e;
+  --emp-israel: #4f7a3a;
+  --route-todo: var(--accent);
+
+  /* ---------- Viajes y cartas, en el orden en que los reparte mapa.js ---------- */
+  --viajes: #846280, #4e4690, #386db9, #327684, #a75733, #71443f, #8b2b5e, #b34b55, #225570, #676a8f;
+  --cartas: #8a6812, #4e4690, #386db9, #8b2b5e, #846280, #327684, #b34b55;
+
+  --shadow-1: 0 1px 0 rgba(20, 40, 25, 0.04), 0 1px 3px rgba(20, 40, 25, 0.08);
+  --shadow-2: 0 1px 2px rgba(20, 40, 25, 0.06), 0 6px 18px rgba(20, 40, 25, 0.10);
+  --shadow-3: 0 2px 6px rgba(20, 40, 25, 0.08), 0 18px 48px rgba(20, 40, 25, 0.18);
+}
+
+/* ---------- La marca en verde ---------- */
+.be-logo__mark { background-image: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Bosque"> <path d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z" fill="#6fae7c"/> <path d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke="#efe8da" stroke-width="5" stroke-linecap="round"/> <circle cx="20.5" cy="47" r="6" fill="#6e9a3c"/><circle cx="31" cy="31.5" r="6" fill="#6e9a3c"/><circle cx="47.5" cy="13.5" r="6" fill="#6e9a3c"/> </svg>"); }
+
+/* ---------- Colores que el sitio escribe a mano ---------- */
+::selection { background: var(--accent-soft); color: var(--ink); }
+.be-date, .fecha-tnm, .be-chrono--tnm, .miga--actual { border-color: var(--gold-line); }
+.be-date__value { color: var(--gold-ink); }
+.be-date__hint { color: var(--ink-3); }
+.linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"], .fecha-tnm, .be-chrono--tnm, .res-fecha { color: var(--gold-ink); }
+.texto-carta, .texto-evento { fill: color-mix(in srgb, var(--gold) 80%, #000); }
+.be-ref { border-color: #c3d7e3; }
+.banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); }
+.regla-banda { fill: color-mix(in srgb, var(--gold) 10%, transparent); }
+.be-cursor::before { background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 10%, transparent), transparent); }
+.rejilla { stroke: color-mix(in srgb, var(--line-2) 45%, transparent); }
+.be-gridline { border-left-color: color-mix(in srgb, var(--line-2) 45%, transparent); }
+.marca-lugar.de-carta .punto { background: var(--gold-soft); }
+.pablo-halo { background: radial-gradient(circle, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%); }
+.pablo.estimada .pablo-halo, .leyenda-estimada { background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.situacion-recuadro { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
+.be-map::after { box-shadow: inset 0 0 80px rgba(20, 40, 25, .10); }
+
+/* ---------- Cabecera oscura, verde bosque ---------- */
+.be-topbar { background: #1c3325; border-bottom-color: #1c3325; color: #eef1e6; }
+.be-topbar .be-logo { color: #eef1e6; }
+.be-topbar .be-search { background: #2a4535; border-color: #3d5b49; color: #b3c2b6; }
+.be-topbar .be-search input { color: #eef1e6; }
+.be-topbar .be-search input::placeholder { color: #b3c2b6; }
+.be-topbar .be-search--focus { background: #2a4535; border-color: #b3c2b6; }
+.be-topbar .be-kbd { color: #b3c2b6; border-color: #3d5b49; }
+.be-topbar .be-date { background: #2a4535; border-color: #3d5b49; }
+.be-topbar .be-date__value { color: #e6c870; }
+.be-topbar .be-date__hint { color: #b3c2b6; }
+.be-topbar .be-seg { background: #2a4535; border-color: #3d5b49; }
+.be-topbar .be-seg__opt { color: #b3c2b6; }
+.be-topbar .modos .be-seg__opt--on { background: #eef1e6; color: #1c3325; }
+.be-topbar .be-btn--ghost { color: #eef1e6; }
+.be-topbar .filtro { background: #eef1e6; color: #1c3325; }
+@media (max-width: 760px) { .modos { background: var(--paper-2); border-color: var(--line); } .modos .be-seg__opt { color: var(--ink-3); } .modos .be-seg__opt--on { background: var(--surface); color: var(--ink); } }
