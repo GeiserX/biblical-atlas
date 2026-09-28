@@ -8,17 +8,18 @@ Cifras del 28 de septiembre de 2026, sacadas de `python3 scripts/build.py` y de 
 
 | Tipo | Ficheros |
 |---|---|
-| Lugares | 166, de ellos 29 con candidatos en vez de un punto |
-| Personas | 222, con 376 relaciones entre ellas y con lugares |
-| Sucesos | 315 |
+| Lugares | 170, de ellos 29 con candidatos en vez de un punto |
+| Personas | 274, con 485 relaciones entre ellas y con lugares |
+| Sucesos | 316 |
 | Periodos | 87: 52 reinados, 11 emperadores, 9 eras, 6 potencias, 5 gobernadores y 4 sumos sacerdotes |
 | Cartas | 22: las 14 de Pablo y 8 de otros escritores |
 | Viajes | 8 |
 | Hallazgos | 7 |
 | Recorridos guiados | 4 |
 | Libros de la Biblia | 66, cada uno con escritor y fecha |
-| Meses hebreos | 13 |
-| Fuentes | 898, de ellas 256 capítulos de la Biblia que se crean solos |
+| Meses hebreos | 13, con 18 nombres por época |
+| Hechos del calendario | 14, los de la página «El calendario» |
+| Fuentes | 984, de ellas 282 capítulos de la Biblia que se crean solos |
 
 Quedan 7 hechos en `pendiente`, cada uno con su motivo (ver [Qué queda](#qué-queda)).
 
@@ -56,7 +57,15 @@ Quedan 7 hechos en `pendiente`, cada uno con su motivo (ver [Qué queda](#qué-q
 - **Recorridos guiados.** Son cuatro: «De Babilonia a Jerusalén», «La última semana», «Pedro» y «Cartas y ciudades». Cada uno tiene preguntas de repaso, paradas de «no sabemos» y una hoja para imprimir.
 - **Modo presentación.** Pantalla completa, letra grande y avance con flechas o con mando, para tablet o televisor. Hay también un modo reunión.
 - **El marco.** Nueve eras, de Adán a la congregación cristiana, las seis potencias de Daniel 2 y los once emperadores de Augusto a Domiciano.
-- **Vídeos por pasaje y por persona.** Además de los lugares, cada capítulo enlaza a los vídeos de jw.org que lo citan, en su ficha y en el modo lectura. El índice de personas también está hecho, pero el sitio todavía no lo enseña. El método está en [videos-jw.md](investigacion/videos-jw.md).
+- **Vídeos por pasaje y por persona.** Además de los lugares, cada capítulo enlaza a los vídeos de jw.org que lo citan, en su ficha y en el modo lectura. La ficha de persona enseña también los suyos. El método está en [videos-jw.md](investigacion/videos-jw.md).
+
+## La página «Acerca de» y el calendario (hecho)
+
+- **La portada del mapa, sin jerga.** Arriba solo queda lo que una familia necesita. En el mapa, la atribución que piden las licencias, corta y con un enlace «Créditos». Las marcas «Nivel 1» y «N1» pasan a ser un punto lleno (la Biblia o jw.org) o un aro (otra fuente que jw.org ha usado), con el nombre en el texto emergente. «Cronología TNM» pasa a la ayuda de la fecha. Las fuentes y «Por qué lo decimos» siguen en cada ficha.
+- **[`acerca.html`](../site/acerca.html).** Qué es el proyecto y qué no es, cómo se lee, cómo tratamos las fuentes (enlazar y no copiar, lo más reciente de jw.org gana, por qué cada dato lleva su razón) y las gracias a quienes ponen los datos y los enlaces: wol.jw.org y jw.org, OpenBible.info, Natural Earth, los datos de elevación, OpenFreeMap, OpenMapTiles, OpenStreetMap, MapLibre y las letras, cada uno con su licencia. Cierra con la licencia GPL-3.0 y cómo proponer una corrección.
+- **Nuestros meses y los hebreos, a la vez.** A escala de meses y de días la línea de tiempo enseña dos filas alineadas: nuestros meses (el calendario gregoriano aplicado hacia atrás, solo para orientar) y los meses hebreos, de luna nueva a luna nueva, con Veadar los años que lo llevan. A escala de días hay además una fila de fiestas. Un selector elige «Ambos», «Nuestros» o «Hebreos», y la fecha de arriba da las dos: «c. 14 de nisán de 33 e.c. · marzo-abril».
+- **Los nombres de los meses cambian con la época.** Antes del exilio la línea dice Abib, Ziv, Etanim y Bul; después, Nisán, Iyar, Tisri y Hesván. Los meses que la Biblia de antes del exilio solo numera van en cursiva, con la nota.
+- **[`calendario.html`](../site/calendario.html).** El mes lunar y Veadar, el año sagrado desde Nisán y el civil desde Tisri, el año antes del éxodo, el día de puesta a puesta de sol, los calendarios juliano y gregoriano, y los de Egipto y Babilonia, que la Biblia nombra. Cada hecho lleva su fuente y «Por qué lo decimos». Una tabla da los trece meses con sus nombres por época, su equivalencia aproximada, sus fiestas y el tiempo del campo.
 
 ## Qué queda
 
@@ -83,8 +92,8 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 
 ### Trabajo sin terminar
 
-- El sitio no lee todavía `site/videos-personas.json`, así que la ficha de persona no enseña sus vídeos.
 - La ficha de hallazgo no enseña `donde_hoy`. El esquema y la validación lo aceptan, pero ningún hallazgo lo usa todavía.
+- La base SQLite no guarda todavía los nombres de los meses por época ni los hechos de «El calendario». Están en `data.json` y en el registro.
 
 ### Hechos pendientes
 
@@ -145,6 +154,7 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 - «Babilonia en tiempos de Jesús» abre en el punto medio de su vida. ¿Preferimos su ministerio, de 29 a 33?
 - El mapa antiguo enseña por defecto el nombre moderno al lado («hoy Salónica»). ¿Lo queremos limpio, como en v0?
 - Un rótulo que el borde del mapa cortaría ahora se oculta. ¿Vale?
+- Los meses hebreos de la línea son un cálculo nuestro: lunas nuevas medias, Nisán con la luna nueva más cercana a mediados de marzo y el día desde las 18:00. Con él, el 14 de nisán de 33 cae hacia el 2 de abril y los 81 sucesos con mes hebreo se mueven hasta unas dos semanas respecto a la regla fija de antes, sin cambiar de año ni de orden. ¿Lo dejamos así?
 - Con t = 36,0, `donde('pedro')` da Lida, que es lo que dicen los datos (Hch 9:32). La comprobación que esperaba Jope o Cesarea debería usar 36,5 o 36,8.
 
 ### Revisión anual

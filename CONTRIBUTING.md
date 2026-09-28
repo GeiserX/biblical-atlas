@@ -1,6 +1,6 @@
 # Cómo contribuir
 
-Se aceptan PR. Lo que más ayuda es corregir o ampliar datos con su fuente. Lo segundo, mejorar el sitio. Las decisiones tomadas están en [docs/decisiones.md](docs/decisiones.md); léelas antes de proponer algo que las contradiga.
+Se aceptan PR. Lo que más ayuda es corregir o ampliar datos con su fuente. Lo segundo, mejorar el sitio. Las decisiones tomadas están en [docs/decisiones.md](docs/decisiones.md); léelas antes de proponer algo que las contradiga. Qué es el proyecto, cómo trata las fuentes y a quién da las gracias está en la página [Acerca de](site/acerca.html).
 
 ## Proponer o corregir un dato
 
@@ -26,7 +26,7 @@ En cada PR, el CI compila y valida el esquema. Un id que no existe o un hecho si
 
 ## Mejorar el sitio
 
-El sitio es estático y vive en [`site/`](site/). Léete [`site/README.md`](site/README.md): explica los módulos de `site/js/`, cómo se registra un tipo y cómo cargar datos de prueba con `?datos=_local/<nombre>/data.json`. Sirve la carpeta con `python3 -m http.server` desde `site/` después de compilar los datos. No añadas dependencias que necesiten un servidor, y comprueba que la página sigue abriendo desde `file://`.
+El sitio es estático y vive en [`site/`](site/). Léete [`site/README.md`](site/README.md): explica los módulos de `site/js/`, cómo se registra un tipo y cómo cargar datos de prueba con `?datos=_local/<nombre>/data.json`. Sirve la carpeta con `python3 -m http.server` desde `site/` después de compilar los datos. No añadas dependencias que necesiten un servidor, y comprueba que la página sigue abriendo desde `file://`. Si añades datos, mapas, código o letras de otros, añádelos a «Gracias» en [`site/acerca.html`](site/acerca.html) con su enlace y su licencia.
 
 ## Lo que no entra
 

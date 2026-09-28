@@ -18,4 +18,4 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 | [Hallazgos](hallazgos.md) | 7 |
 | [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
-| [Fuentes](fuentes.md) | 970 |
+| [Fuentes](fuentes.md) | 984 |

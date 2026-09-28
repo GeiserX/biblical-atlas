@@ -55,7 +55,7 @@ python3 scripts/revisar.py --dias 180
 python3 scripts/revisar.py --fallar    # sale con código 1 si hay algo que revisar
 ```
 
-Lista cada hecho y cada fuente consultados hace N días o más (`--dias 0` lista todo lo consultado hasta hoy), con una búsqueda en wol.jw.org para ver si hay algo más reciente. Los capítulos que `build.py` crea solos no salen: se releen con el hecho que los cita. Si no hay nada, imprime «nada que revisar». Sin `--fallar` siempre sale con código 0; con `--fallar`, la revisión semanal de la CI se pone en rojo cuando hay datos por releer. El procedimiento completo está en [`docs/investigacion/README.md`](../docs/investigacion/README.md).
+Lista cada hecho y cada fuente consultados hace N días o más (`--dias 0` lista todo lo consultado hasta hoy), con una búsqueda en wol.jw.org para ver si hay algo más reciente. Entran también los meses y los hechos de «El calendario» de `data/calendario.yaml`. Los capítulos que `build.py` crea solos no salen: se releen con el hecho que los cita. Si no hay nada, imprime «nada que revisar». Sin `--fallar` siempre sale con código 0; con `--fallar`, la revisión semanal de la CI se pone en rojo cuando hay datos por releer. El procedimiento completo está en [`docs/investigacion/README.md`](../docs/investigacion/README.md).
 
 ## Vídeos de jw.org
 

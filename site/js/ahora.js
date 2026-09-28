@@ -5,7 +5,7 @@
 'use strict';
 (() => {
 const BE = window.BE;
-const { E, esc, fmtCursor, fmtAnio, fechaCorta, tramo, $, clamp, sucio, programar } = BE;
+const { E, esc, fmtAnio, fechaCorta, tramo, $, clamp, sucio, programar } = BE;
 
 // ---------------------------------------------------------------------------
 // Qué pasa en t
@@ -118,8 +118,8 @@ function fichaResumen(t) {
   const filas = filasResumen(r);
   const antesP = [...BE.P].reverse().find((s) => s.b < t), despuesP = BE.P.find((s) => s.a > t);
 
-  const titulo = r.potencia ? `${fmtCursor(t, BE.span() < 4)} · ${textoPotencias(r)}` : fmtCursor(t, BE.span() < 4);
-  return `${BE.migas('Ahora mismo', fmtCursor(t))}
+  const titulo = r.potencia ? `${BE.fmtMes(t, BE.span() < 4)} · ${textoPotencias(r)}` : BE.fmtMes(t, BE.span() < 4);
+  return `${BE.migas('Ahora mismo', BE.fmtMes(t))}
     <section class="be-card ahora"><div class="be-card__pad">
       <div class="be-card__eyebrow">Ahora mismo · lo que dicen los datos</div>
       <h2 class="be-card__title">${esc(titulo)}</h2>
@@ -128,7 +128,7 @@ function fichaResumen(t) {
     </div></section>
     ${conPablo(t) ? `<section class="be-card ficha-sec"><div class="be-card__pad">
         <h3 class="be-card__eyebrow">No sabemos dónde estaba Pablo en esta fecha</h3>
-        <p class="be-card__body">Los datos no lo sitúan en ${esc(fmtCursor(t))}; no inventamos una posición: estas son las paradas con fecha más cercanas.</p>
+        <p class="be-card__body">Los datos no lo sitúan en ${esc(BE.fmtMes(t))}; no inventamos una posición: estas son las paradas con fecha más cercanas.</p>
         <div class="be-list">${antesP ? BE.botonSel(`parada:${antesP.key}`, `Antes: ${antesP.lugar.nombre}`, esc(antesP.p.referencia)) : ''}${despuesP ? BE.botonSel(`parada:${despuesP.key}`, `Después: ${despuesP.lugar.nombre}`, esc(despuesP.p.referencia)) : ''}</div>
       </div></section>` : ''}${cartasCercaHtml()}`;
 }
@@ -168,7 +168,7 @@ function pintarVistaAhora() {
   if (w) filas.splice(r.gobierno.length ? 2 : 1, 0, ['Pablo', `${w.parada ? 'en' : 'hacia'} ${boton(`lugar:${(w.parada ? w.en : w.sig).lugar.id}`, (w.parada ? w.en : w.sig).lugar.nombre)}${w.estimada ? ' <span class="be-muted">(c.)</span>' : ''}`]);
   $('#vista-ahora').innerHTML = `<div class="be-float ahora-flotante">
     <div class="ahora-cabecera"><span class="be-card__eyebrow">${ICONO_RELOJ} Ahora mismo</span><button type="button" class="menu-x" data-ahora="cerrar" aria-label="Cerrar «Ahora mismo»">×</button></div>
-    <div class="ahora-fecha">${esc(fmtCursor(E.t, BE.span() < 4))}</div>
+    <div class="ahora-fecha">${esc(BE.fmtMes(E.t, BE.span() < 4))}</div>
     ${filas.length ? kv(filas) : '<p class="be-muted">No tenemos datos con fecha para este momento.</p>'}</div>`;
 }
 
@@ -334,7 +334,7 @@ function cursorSincronia() {
   const c = tabla.querySelector('.sinc-cursor');
   c.hidden = !dentro;
   c.style.left = `calc(var(--etiq) + (100% - var(--etiq)) * ${(E.t - a) / (b - a)})`;
-  c.dataset.fecha = fmtCursor(E.t);
+  c.dataset.fecha = BE.fmtMes(E.t);
   tabla.querySelectorAll('[data-a]').forEach((el) => {
     if (el === tabla) return;
     const x0 = +el.dataset.a, x1 = +el.dataset.b;

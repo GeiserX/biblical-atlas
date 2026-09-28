@@ -143,6 +143,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
   .be-ends { grid-template-columns: 1fr; }
   .be-ends__arrow { transform: rotate(90deg); padding: 4px 0; }
   .maplibregl-ctrl-attrib { font-size: 9px; }
+  /* Abierta, la atribución queda por encima de las píldoras y los rótulos del mapa, que si no la tapan. */
+  .maplibregl-ctrl-top-right:has(.maplibregl-compact-show) { z-index: 6; }
   .maplibregl-ctrl-scale { display: none; }
   .marca-lugar .etiqueta { font-size: 14px; }
   .marca-lugar.es-actual .etiqueta { font-size: 17px; }

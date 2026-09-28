@@ -57,11 +57,11 @@ function pintar() {
     <section class="portada-abajo">
       ${rs.length ? `<div class="recorridos-portada">${rs.map((r) => `<button type="button" class="be-card tarjeta-recorrido" data-portada-recorrido="${esc(r.id)}"><span class="be-caps">Recorrido · ${r.paradas.length} paradas</span><span class="tarjeta-recorrido__tit">${esc(r.titulo)}</span>${r.resumen ? `<span class="be-muted">${esc(r.resumen)}</span>` : ''}<span class="tarjeta-recorrido__ir">Empezar →</span></button>`).join('')}</div>` : ''}
       <div class="be-card fuentes-portada"><div class="be-card__pad"><div class="be-caps">De dónde salen los datos</div>
-        <p><span class="be-tier be-tier--1" data-n="1">Nivel 1</span> La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</p>
-        <p><span class="be-tier be-tier--2" data-n="2">Nivel 2</span> Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</p>
+        <p>${BE.marcaNivel(1)} La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</p>
+        <p>${BE.marcaNivel(2)} Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</p>
         <p><span class="be-tier be-tier--unverified">Sin verificar</span> Se ve marcado, nunca escondido.</p></div></div>
     </section>
-    <footer class="portada-pie"><span>Código libre, GPL-3.0</span><span>Coordenadas: OpenBible.info, CC BY 4.0</span><span>Relieve y costas: Natural Earth</span><span class="be-spacer"></span><span>Sitio estático: todo corre en tu navegador</span></footer>
+    <footer class="portada-pie"><span>Código libre, GPL-3.0</span><span class="be-spacer"></span><a href="acerca.html">Qué es biblical-earth y a quién damos las gracias</a></footer>
   </div>`;
 }
 

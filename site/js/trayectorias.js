@@ -8,7 +8,7 @@ const BE = window.BE;
 const { norm, tramo, interpolar } = BE;
 
 const DIA = 1 / 365.2425;
-const MES_LUNAR = 29.53 * DIA;
+const MES_LUNAR = (29 + 12 / 24 + 44 / 1440) * DIA;   // 29 días, 12 horas y 44 minutos (Perspicacia «Calendario»)
 
 // Momento del año que damos a cada estación cuando la fuente la nombra: [si abre el tramo, si lo cierra].
 const ESTACIONES = {
@@ -20,45 +20,88 @@ const RE_ESTACION = /finales del verano|principios del otono|primavera|verano|ot
 const TRAMO_ESTACION = { primavera: [0.22, 0.47], verano: [0.47, 0.72], 'otoño': [0.72, 0.97], otono: [0.72, 0.97], invierno: [0.97, 1.22] };
 
 // ---------------------------------------------------------------------------
-// Calendario hebreo: dónde cae cada mes dentro del año. Es una equivalencia aproximada: el mes lunar se movía
-// cada año. La tabla B15 pone nisán en marzo-abril; data/calendario.yaml trae esa equivalencia en `equivale`.
+// Calendario hebreo: un cálculo nuestro, aproximado. Los meses van de luna nueva a luna nueva (Perspicacia
+// «Calendario»: una lunación dura de media 29 días, 12 horas y 44 minutos). Nisán empieza con la luna nueva más
+// cercana al equinoccio de primavera, hacia el 21 de marzo (Perspicacia «Nisán», párr. 3: si la luna nueva quedaba
+// demasiado lejos del equinoccio, ese mes era el decimotercero y Nisán empezaba con la luna siguiente).
+// Un año con trece lunas lleva Veadar entre Adar y Nisán. El día hebreo va de una puesta de sol a la siguiente
+// (Perspicacia «Día»), y las horas de luz, más o menos de seis a seis: cada mes empieza a las 18:00 de la víspera.
+// Las lunas son medias, no observadas: las fechas que salen de aquí llevan siempre «c.».
 // ---------------------------------------------------------------------------
-const MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const EQUINOCCIO = (59 + 20.5) * DIA;   // mediodía del 21 de marzo, en nuestros días sin bisiestos (31 + 28 días antes de marzo)
+const LUNA_0 = 2000 + (5 + 18.23 / 24) * DIA;   // luna nueva media del 6 de enero de 2000, 18:14 UT (dato astronómico)
 let calCache = null;
 function calendario() {
   if (calCache && calCache.D === BE.D) return calCache;
   const meses = BE.D?.calendario?.meses || [];
-  const nisan = meses.find((m) => m.id === 'nisan');
-  let inicio = 2.5 / 12;                      // mediados de marzo: B15, «nisán: marzo-abril»
-  const eq = typeof nisan?.equivale === 'string' ? nisan.equivale : null;
-  if (eq) {
-    const k = MESES_ES.findIndex((m) => norm(eq).includes(m));
-    if (k >= 0) inicio = (k + 0.5) / 12;
-  }
+  const inicio = EQUINOCCIO;
   const porId = new Map(meses.map((m) => [m.id, m]));
-  calCache = { D: BE.D, inicio, meses, porId };
+  const porOrden = new Map(meses.map((m) => [m.orden, m]));
+  calCache = { D: BE.D, inicio, meses, porId, porOrden, anios: new Map() };
   return calCache;
 }
+/** Primera puesta de sol (18:00) en o después de t. Nuestros días van de y + k·DIA a y + (k + 1)·DIA. */
+function puestaDesde(t) {
+  const y = Math.floor(t);
+  return y + (Math.ceil((t - y) / DIA - 0.75) + 0.75) * DIA;
+}
+/** Año hebreo que empieza en la primavera de nuestro año y: { nisan, meses: [{ mes, a, b }] }, con 12 o 13 meses. */
+function anioHebreo(y) {
+  const c = calendario();
+  if (c.anios.has(y)) return c.anios.get(y);
+  const luna = (anio) => LUNA_0 + Math.round((anio + c.inicio - LUNA_0) / MES_LUNAR) * MES_LUNAR;
+  const l0 = luna(y), l1 = luna(y + 1);
+  const n = Math.round((l1 - l0) / MES_LUNAR);
+  const meses = [];
+  for (let k = 0; k < n; k++) {
+    const mes = c.porOrden.get(k + 1) || c.porOrden.get(12);
+    meses.push({ mes, a: puestaDesde(l0 + k * MES_LUNAR), b: puestaDesde(k + 1 < n ? l0 + (k + 1) * MES_LUNAR : l1) });
+  }
+  const r = { anio: y, nisan: meses[0]?.a, meses };
+  if (c.anios.size > 400) c.anios.clear();
+  c.anios.set(y, r);
+  return r;
+}
 /** Año decimal en que empieza el mes hebreo `mes` (id). Por defecto `y` es el año de nuestro calendario que da el texto
-    («3 de adar de 515 a.e.c.»): sebat y adar caen en enero-marzo, así que son los últimos meses del año hebreo que
-    empezó en el nisán anterior. Con `anioHebreo`, `y` es el año en que empieza ese año hebreo (la rejilla de meses). */
-function inicioMes(y, mes, anioHebreo = false) {
+    («3 de adar de 515 a.e.c.»): sebat, adar y veadar caen en enero-marzo, así que son los últimos meses del año hebreo
+    que empezó en el nisán anterior. Con `anioHebreo`, `y` es el año en que empieza ese año hebreo (la rejilla de meses).
+    Veadar en un año sin él da el final de adar, es decir, el 1 de nisán, y lo avisa: nuestro cálculo de lunas medias
+    no le da ese mes a ese año. */
+function inicioMes(y, mes, esAnioHebreo = false) {
   const c = calendario();
   const m = c.porId.get(mes);
   if (!m) return null;
-  const y0 = !anioHebreo && m.orden >= 11 ? y - 1 : y;
-  return y0 + c.inicio + (m.orden - 1) * MES_LUNAR;
+  const A = anioHebreo(!esAnioHebreo && m.orden >= 11 ? y - 1 : y);
+  const k = Math.min(m.orden, A.meses.length + 1) - 1;
+  if (k < A.meses.length) return A.meses[k].a;
+  BE.avisar?.(`Según nuestro cálculo, aproximado, el año hebreo que empezó en ${BE.fmtAnio(A.anio)} no tuvo ${m.nombre}: `
+    + `la fecha cae en ${nombreMes(c.porOrden.get(1), A.anio + 1).nombre || 'nisán'}.`, 8000);
+  return A.meses.at(-1).b;
 }
-/** Día hebreo aproximado en t: { mes, dia } o null si no hay calendario. */
+/** Nombre del mes en la época del año hebreo y (desde/hasta de `nombres`, como los lugares). Si ningún nombre es de
+    esa época (Siván antes del exilio, que la Biblia llama «el tercer mes»), da el de siempre con `anacronico`.
+    En el año frontera, que dos épocas comparten (Abib hasta -536, Nisán desde -536), gana el nombre que empieza, sea
+    cual sea el orden del YAML; con la misma época exacta (Hesván y Marhesván), el primero de la lista. */
+function nombreMes(m, y) {
+  const ns = m?.nombres || [];
+  let n = null;
+  for (const x of ns) {
+    if (!((x.desde == null || y >= x.desde) && (x.hasta == null || y <= x.hasta))) continue;
+    if (!n || (x.desde ?? -Infinity) > (n.desde ?? -Infinity)) n = x;
+  }
+  if (n) return { nombre: n.nombre, nota: n.nota || '', anacronico: false };
+  return { nombre: m?.nombre || '', nota: ns[0]?.nota || '', anacronico: ns.length > 0 };
+}
+/** Día hebreo aproximado en t: { mes, dia, anio, nombre, anacronico, a, b } o null si no hay calendario. */
 function diaHebreo(t) {
   const c = calendario();
   if (!c.meses.length) return null;
-  const y = Math.floor(t - c.inicio);
-  const d = t - (y + c.inicio);
-  const k = Math.min(Math.floor(d / MES_LUNAR), 11);
-  const m = c.meses.find((x) => x.orden === k + 1);
-  if (!m) return null;
-  return { mes: m, dia: Math.min(30, Math.floor((d - k * MES_LUNAR) / DIA) + 1), anio: y };
+  let A = anioHebreo(Math.floor(t - c.inicio));
+  if (t < A.nisan) A = anioHebreo(A.anio - 1);
+  else if (t >= A.meses.at(-1).b) A = anioHebreo(A.anio + 1);
+  const M = A.meses.find((x) => t >= x.a && t < x.b) || A.meses.at(-1);
+  const nm = nombreMes(M.mes, A.anio);
+  return { mes: M.mes, dia: Math.min(30, Math.floor((t - M.a) / DIA) + 1), anio: A.anio, nombre: nm.nombre, anacronico: nm.anacronico, a: M.a, b: M.b };
 }
 /** Ventana [a, b) de un objeto FECHA, afinada con fecha.detalle (mes y día hebreos, o estación). */
 function ventanaFecha(f) {
@@ -450,6 +493,6 @@ const tramoPeriodo = (p) => (p?.tipo === 'potencia' ? tramoPotencia(p) : tramo(p
 
 Object.assign(BE, {
   prepararParadas: () => prepararParadas('pablo'), dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
-  donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, ventanaFecha, inicioMes, diaHebreo, eventoEstimado, calendario, DIA, MES_LUNAR,
+  donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

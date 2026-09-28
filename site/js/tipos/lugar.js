@@ -73,7 +73,7 @@ function ahoraHtml(id, t) {
     const n2 = ahora.filter((h) => h.nivel === 2);
     // Sin nivel 2 el bloque sale igual, vacío y diciéndolo: que no haya historia o arqueología es un dato (pantalla 08).
     cuerpo = bloque(1, ahora.filter((h) => h.nivel !== 2)) + (n2.length ? bloque(2, n2)
-      : '<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted acompana">acompaña, nunca corrige</span><p class="be-muted">Sin fuente de nivel 2 que jw.org use para esta fecha.</p></div>');
+      : '<div class="bloque-nivel bloque-nivel--2 bloque-vacio"><span class="be-tier be-tier--2" data-n="2">Historia y arqueología</span><span class="be-muted acompana">acompaña, nunca corrige</span><p class="be-muted">Sin otra fuente que jw.org use para esta fecha.</p></div>');
   } else {
     const a = antes[0], d = despues[0];
     cuerpo = `<p class="be-muted">No tenemos hechos de ${esc(nombre)} en esta fecha.</p>`;
@@ -214,8 +214,8 @@ function candidatosHtml(l) {
         ${c.nota ? `<span class="be-row__meta">${calculado ? '<span class="insignia-calculado">calculado</span> ' : ''}${esc(c.nota)}</span>` : ''}</span>
         <span class="estado-cand estado-cand--${c.estado}" style="--cand:${s.color}">${esc(s.corto)}</span></button>${BE.insigniaHtml(c.fuentes)}</li>`;
     }).join('')}</ul>
-    ${ocultos ? `<p class="be-muted oculto-n2">${ocultos} ${ocultos === 1 ? 'candidato solo de nivel 2 oculto' : 'candidatos solo de nivel 2 ocultos'} por el filtro «solo nivel 1».</p>` : ''}
-    <p class="be-note be-note--uncertain"><span><b>¿Por qué no hay un punto?</b> Ninguna fuente de nivel 1 da un sitio exacto. Dibujamos las zonas y los candidatos que se citan, cada uno con su base; un punto haría creer que se sabe.</span></p>
+    ${ocultos ? `<p class="be-muted oculto-n2">${ocultos} ${ocultos === 1 ? 'candidato de otra fuente oculto' : 'candidatos de otras fuentes ocultos'} por el filtro «Solo la Biblia y jw.org».</p>` : ''}
+    <p class="be-note be-note--uncertain"><span><b>¿Por qué no hay un punto?</b> Ni la Biblia ni jw.org dan un sitio exacto. Dibujamos las zonas y los candidatos que se citan, cada uno con su base; un punto haría creer que se sabe.</span></p>
   </div></section>`;
 }
 
