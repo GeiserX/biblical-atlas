@@ -1,0 +1,82 @@
+/* biblical-earth · página «El calendario»: una columna de lectura con los tokens del kit, como «Acerca de». */
+html { background: var(--paper); }
+body { margin: 0; font: 400 var(--fs-lg)/1.6 var(--font-sans); color: var(--ink); background: var(--paper); }
+a { color: var(--link); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.cal-cab { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 20px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.cal-cab .be-logo, .cal-cab .be-btn { text-decoration: none; }
+
+.cal { max-width: 960px; margin: 0 auto; padding: 36px 24px 48px; }
+.cal-eyebrow { color: var(--tier1); }
+.cal h1 { font: 600 clamp(34px, 6vw, 52px)/1.05 var(--font-serif); margin: 8px 0 12px; letter-spacing: -.01em; }
+.cal-entrada { font: 400 var(--fs-xl)/1.55 var(--font-serif); color: var(--ink-2); margin: 0 0 22px; max-width: 760px; }
+.cal-indice { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.cal-indice a { display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: var(--r-pill); background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); font-size: var(--fs-sm); font-weight: 600; text-decoration: none; }
+.cal-indice a:hover { border-color: var(--line-2); color: var(--ink); }
+.cal-cargando { color: var(--ink-3); }
+
+.cal section { margin-top: 40px; scroll-margin-top: 76px; }
+.cal h2 { font: 600 var(--fs-3xl)/1.15 var(--font-serif); margin: 0 0 14px; }
+.cal section > p { max-width: 760px; margin: 0 0 12px; color: var(--ink-2); }
+
+/* Hechos: una tarjeta por hecho, con sus fuentes y «Por qué lo decimos». */
+.cal-hechos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.cal-hecho { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 14px 16px; box-shadow: var(--shadow-1); scroll-margin-top: 76px; }
+.cal-hecho h3 { font: 600 var(--fs-xl)/1.25 var(--font-serif); margin: 0 0 6px; }
+.cal-hecho p { margin: 0 0 8px; font-size: var(--fs-md); color: var(--ink-2); }
+.cal-fuentes { font-size: var(--fs-sm); }
+.cal-fuentes a { font-weight: 600; }
+.cal-por-que summary { cursor: pointer; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+.cal-por-que p { margin: 6px 0 0; font-size: var(--fs-sm); color: var(--ink-3); }
+
+/* Tabla de los meses. */
+.cal-tabla-marco { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); }
+.cal-tabla { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); }
+.cal-tabla th { position: sticky; top: 0; background: var(--surface-2); text-align: left; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding: 8px 10px; border-bottom: 1px solid var(--line-2); }
+.cal-tabla td { vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); color: var(--ink-2); }
+.cal-tabla tr:last-child td { border-bottom: 0; }
+.cal-tabla tbody tr:nth-child(even) td { background: var(--surface-2); }
+.cal-num { font: 600 var(--fs-lg)/1.2 var(--font-serif); color: var(--ink) !important; text-align: center; width: 1%; }
+.cal-nombres { min-width: 210px; }
+.cal-nombre + .cal-nombre { margin-top: 6px; }
+.cal-nombre b { font: 700 var(--fs-lg)/1.2 var(--font-serif); color: var(--ink); }
+.cal-epoca { font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+.cal-tabla small { display: block; font-size: var(--fs-xs); color: var(--ink-3); line-height: 1.4; }
+.cal-fiestas { margin: 0; padding: 0; list-style: none; }
+.cal-fiestas b { font-weight: 700; color: var(--ink); margin-right: 2px; }
+.cal-campo { color: var(--ink-3); }
+.cal-nada { color: var(--ink-4); }
+.cal-tabla .cal-fuentes { font-size: var(--fs-xs); min-width: 130px; }
+.cal-anadido td { border-top: 1.5px dashed var(--ink-4); }
+
+.cal-reglas { max-width: 760px; list-style: none; padding: 0; margin: 0 0 12px; }
+.cal-reglas li { padding-left: 16px; border-left: 3px solid var(--line-2); margin-bottom: 12px; color: var(--ink-2); }
+
+.cal-lista-fuentes { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.cal-lista-fuentes li { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; }
+.cal-lista-fuentes a { font-weight: 600; }
+.cal-lista-fuentes span { font-size: var(--fs-sm); color: var(--ink-3); }
+
+.cal-pie { max-width: 960px; margin: 0 auto; padding: 18px 24px 36px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: var(--fs-sm); }
+
+/* Pantallas estrechas: la tabla pasa a una tarjeta por mes. */
+@media (max-width: 760px) {
+  body { font-size: var(--fs-md); }
+  .cal-cab { padding: 0 12px; height: 56px; }
+  .cal { padding: 24px 16px 36px; }
+  .cal-entrada { font-size: var(--fs-lg); }
+  .cal h2 { font-size: var(--fs-2xl); }
+  .cal-tabla-marco { overflow: visible; border: 0; background: none; box-shadow: none; }
+  .cal-tabla thead { display: none; }
+  .cal-tabla, .cal-tabla tbody, .cal-tabla tr, .cal-tabla td { display: block; width: auto; }
+  .cal-tabla tr { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); margin-bottom: 10px; padding: 8px 12px; box-shadow: var(--shadow-1); display: grid; grid-template-columns: auto auto 1fr; column-gap: 12px; }
+  .cal-tabla tbody tr:nth-child(even) td { background: none; }
+  .cal-tabla td { border: 0; padding: 4px 0; }
+  .cal-tabla td::before { content: attr(data-t); display: block; font-size: 9.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-4); }
+  .cal-tabla td:nth-child(n+3) { grid-column: 1 / -1; }
+  .cal-tabla td.cal-nombres { grid-column: 3; grid-row: 1; }
+  .cal-num { text-align: left; }
+  .cal-anadido { border-style: dashed !important; }
+  .cal-anadido td { border-top: 0; }
+}

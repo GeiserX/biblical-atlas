@@ -168,7 +168,7 @@ function hojaImpresion(id) {
   let h = document.getElementById('hoja-recorrido');
   if (!h) { h = document.createElement('div'); h.id = 'hoja-recorrido'; h.className = 'hoja-impresion'; document.body.appendChild(h); }
   h.innerHTML = `<h1>${esc(rc.titulo)}</h1>${rc.resumen ? `<p>${esc(rc.resumen)}</p>` : ''}
-    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · cronología TNM · biblical-earth</p>
+    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · fechas según jw.org · biblical-earth</p>
     ${escala}
     <ol class="hoja-paradas">${rc.paradas.map((p) => { const s = BE.parseSel(p.sel); return `<li><b>${esc(s ? BE.nombreSel(s) : p.sel)}</b> <span class="hoja-fecha">${esc(fechaParada(p))}</span><br>${esc(p.texto)}${(p.pasajes || []).length ? `<br><i>${esc(p.pasajes.join('; '))}</i>` : ''}${p.no_sabemos ? `<br>No sabemos: ${esc(p.no_sabemos)}` : ''}</li>`; }).join('')}</ol>
     ${qs.length ? `<h2>Preguntas</h2><ol class="hoja-preguntas">${qs.map(({ p }) => `<li>${esc(p.pregunta.texto)} <span class="hoja-opciones">(${esc(p.pregunta.opciones.join(' · '))})</span></li>`).join('')}</ol>

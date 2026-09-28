@@ -6,7 +6,7 @@ Cada dato del mapa dice de dónde sale, por qué lo asociamos y cuándo lo compr
 
 - [`data/fuentes/`](../../data/fuentes/): las fuentes, repartidas en ficheros (`comun.yaml` y uno por carril de trabajo). Cada fuente lleva su identificador, título, obra, URL, nivel, año de publicación (`publicado`, solo si la página lo muestra) y fecha de consulta.
 - [`data/libros.yaml`](../../data/libros.yaml): los 66 libros de la Biblia con su slug, número en wol.jw.org, nombre, abreviatura TNM, formas de búsqueda, formas escritas en los subtítulos y número de capítulos.
-- [`data/calendario.yaml`](../../data/calendario.yaml): los 13 meses del calendario hebreo, con el id que usa `fecha.detalle.mes`.
+- [`data/calendario.yaml`](../../data/calendario.yaml): los 13 meses del calendario hebreo, con el id que usa `fecha.detalle.mes` y sus nombres por época, y los hechos de la página «El calendario».
 - `data/lugares/`, `data/personas/`, `data/viajes/`, `data/cartas/`, `data/eventos/`, `data/periodos/`, `data/hallazgos/`, `data/recorridos/`: un YAML por entidad. El nombre del fichero es su identificador.
 - `data/_propuestas/`: cambios propuestos a ficheros de otro carril. `build.py` y `validate.py` no la leen.
 - [`registro/`](registro/README.md): el registro. Lo genera [`scripts/build.py`](../../scripts/build.py) y nadie lo edita a mano.
@@ -92,6 +92,26 @@ Una relación `pariente` escrita en la ficha X con `persona: Y` y `relacion: R` 
 **Selecciones `tipo:id`.** Las mismas que usa la dirección del sitio (`#sel=lugar:filipos`): `lugar`, `persona`, `carta`, `viaje`, `evento`, `periodo`, `hallazgo`, `recorrido` y `libro` con su id; `parada:<viaje>/<orden>` (`parada:segundo-viaje/3`); `pasaje:<abreviatura sin tildes en minúsculas>-<capítulo>` (`pasaje:hch-16`, `pasaje:1co-13`). `build.py` comprueba que existen.
 
 **Libros y meses.** `data/libros.yaml` y `data/calendario.yaml` son estructura y no llevan fuentes. Los hechos de un libro (`escritor` y `lugar` como texto, `fecha` en que se terminó y `abarca`, los dos objetos `fecha`) y los de un mes son campos opcionales de su entrada; en cuanto hay uno, la entrada necesita `fuentes`, `razon`, `consultado` y `estado`. Los hechos de un mes son `equivale` (meses de nuestro calendario, «marzo-abril»), `fiestas` (lista de `{desde, hasta, nombre}` con los días del mes), `clima`, `campo` (cosechas) y `nota`.
+
+**Nombres de los meses por época.** Cada mes lleva `nombres`, como un lugar: una lista de `{nombre, desde, hasta, nota, fuentes, razon}`. `desde` y `hasta` son años astronómicos y solo van cuando la fuente da la época; el año frontera se repite en los dos nombres, como en Jebús y Ciudad de David. `nota`, `fuentes` y `razon` son obligatorias.
+
+```yaml
+nombres:
+  - nombre: Nisán
+    desde: -536          # tras el exilio, que acaba en 537 a.e.c.
+    nota: Nombre babilonio que los judíos usaron tras el exilio (Ne 2:1; Est 3:7). El año del cambio es aproximado.
+    fuentes: [it-nisan, it-calendario, si-3]
+    razon: Perspicacia «Nisán», párr. 1, y «Calendario», apartado «Calendario hebreo», párr. 7.
+  - nombre: Abib
+    hasta: -536
+    nota: Nombre antiguo (Éx 13:4). Antes del éxodo era el séptimo mes del año; desde el éxodo, el primero.
+    fuentes: [it-abib, it-nisan, it-calendario]
+    razon: Perspicacia «Abib», párr. 1 y 2.
+```
+
+Antes del exilio la Biblia solo nombra cuatro meses (Abib, Ziv, Etanim y Bul) y a los demás los llama por su número, así que el resto de los meses lleva un único nombre con `desde: -536` y una `nota` que dice su número. El nombre principal del mes tiene que estar en `nombres`, y `otros_nombres`, que usa la búsqueda, tiene que llevar exactamente los demás. `scripts/validate.py` comprueba las dos cosas.
+
+**La página «El calendario».** La sección `explicacion` de `data/calendario.yaml` es una lista de hechos cortos: `{id, titulo, texto, fuentes, razon, consultado, estado}`, con `historial` opcional. `id` es un slug único y `texto` tiene 40 palabras como mucho. Solo entran calendarios de naciones que salen en la Biblia y que jw.org explica (Egipto, Babilonia, Roma), nada más.
 
 ## Identificadores
 

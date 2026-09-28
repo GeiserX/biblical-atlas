@@ -160,6 +160,7 @@ def cargar(data_dir):
     citadas = [fid for t in TIPOS for o in datos[t] for _, fid in fuentes_de(limpio(o))]
     citadas += [fid for l in libros for _, fid in fuentes_de(l)]
     citadas += [fid for m in calendario.get("meses") or [] for _, fid in fuentes_de(m)]
+    citadas += [fid for e in calendario.get("explicacion") or [] for _, fid in fuentes_de(e)]
     for fid in citadas:
         if fid in fuentes:
             continue
@@ -231,6 +232,9 @@ def integridad(datos):
     for m in datos["calendario"].get("meses") or []:
         for camino, fid in fuentes_de(m):
             fuente(f"data/calendario.yaml ({m.get('id')})", camino, fid)
+    for e in datos["calendario"].get("explicacion") or []:
+        for camino, fid in fuentes_de(e):
+            fuente(f"data/calendario.yaml (explicacion {e.get('id')})", camino, fid)
 
     for tipo in TIPOS:
         for o in datos[tipo]:
@@ -534,6 +538,11 @@ def _alternativas(o, fich, F):
             for a in o.get("alternativas") or []]
 
 
+def _anio_era(y):
+    """Año astronómico a texto con era: -164 → «165 a.e.c.»."""
+    return f"{1 - y} a.e.c." if isinstance(y, int) and y <= 0 else f"{y} e.c."
+
+
 def registros(salida, datos):
     """Devuelve {nombre_fichero: texto} con el registro partido por tipo."""
     F = salida["fuentes"]
@@ -667,6 +676,18 @@ def registros(salida, datos):
                    m.get("razon"), m.get("estado"))
              for m in salida["calendario"].get("meses") or [] if m.get("fuentes")]
     _seccion(out, "Meses", filas)
+    filas = [_fila(f"**{n.get('nombre')}** ({m.get('nombre')}): {n.get('nota')}", "data/calendario.yaml",
+                   n.get("fuentes"), F, m.get("consultado"), n.get("razon"), m.get("estado"))
+             for m in salida["calendario"].get("meses") or [] for n in m.get("nombres") or []]
+    _seccion(out, "Nombres de los meses por época", filas)
+    filas = [_fila(f"**{f.get('nombre')}** ({m.get('nombre')}), se celebra desde {_anio_era(f.get('instituida'))}", "data/calendario.yaml",
+                   f.get("fuentes"), F, m.get("consultado"), f.get("razon"), f.get("estado") or m.get("estado"))
+             for m in salida["calendario"].get("meses") or [] for f in m.get("fiestas") or []]
+    _seccion(out, "Fiestas y desde cuándo se celebran", filas)
+    filas = [_fila(f"**{e.get('titulo')}**: {e.get('texto')}", "data/calendario.yaml", e.get("fuentes"), F,
+                   e.get("consultado"), e.get("razon"), e.get("estado"))
+             for e in salida["calendario"].get("explicacion") or []]
+    _seccion(out, "El calendario", filas)
     docs["libros"] = out
 
     out = _cabeza("Fuentes")

@@ -19,7 +19,26 @@ a { color: var(--link); }
 .fecha { min-width: 0; flex-shrink: 0; }   /* la fecha no se encoge: cede la búsqueda */
 .modos .be-seg__opt { border: 0; background: transparent; cursor: pointer; }
 .modos .be-seg__opt--on { background: var(--surface); }
-#compartir { cursor: pointer; }
+#compartir { cursor: pointer; flex: none; }
+.filtro { min-width: 0; flex-shrink: 1; }
+/* En la barra de la línea de tiempo, «Fechas» con su explicación en el texto emergente, en lugar de «Cronología TNM». */
+.linea-barra .cronologia { display: inline-flex; align-items: center; gap: 4px; color: var(--ink-3); font-size: var(--fs-xs); font-weight: 600; cursor: help; }
+.acerca-enlace { flex: none; gap: 6px; text-decoration: none; color: var(--ink-2); }
+.be-presentando .acerca-enlace { display: none; }
+/* Con poco sitio la búsqueda se queda en la lupa: el texto de ayuda cortado a media palabra no ayuda. */
+.buscador .be-search { container-type: inline-size; }
+@container (max-width: 96px) { .buscador input::placeholder { color: transparent; } }
+/* Los modos del mapa se quedan en tres iconos cuando falta sitio; el nombre sigue en el texto emergente y para los
+   lectores de pantalla (font-size 0 no lo quita del árbol de accesibilidad). */
+@media (max-width: 1599px) {
+  .modos .be-seg__opt { font-size: 0; gap: 0; padding: 0 10px; }
+  .modos .be-seg__opt .be-i { width: 16px; height: 16px; }
+}
+@media (max-width: 1099px) {
+  .logo-text, .acerca-texto, .estudio-texto { display: none; }
+  .acerca-enlace { padding: 0 6px; }
+  .be-date__value { font-size: 19px; }
+}
 
 /* ---------- Hoja inferior y avisos ---------- */
 .sobre-hoja { display: none; }
@@ -37,12 +56,13 @@ a { color: var(--link); }
   :root { --topbar-h: 56px; --timeline-h: 250px; }
   .be-app { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "map" "time"; }   /* una ficha ancha no ensancha la página */
   .be-topbar { gap: 8px; padding: 0 10px; }
-  .logo-text, .be-date__hint, #compartir { display: none !important; }
+  .logo-text, .be-date__hint, #compartir, .acerca-texto { display: none !important; }
+  .acerca-enlace { width: 30px; padding: 0; justify-content: center; }
   .be-topbar > .be-spacer { display: none; }
   .be-date { padding: 4px 10px; }
   .be-date__value { font-size: 17px; }
   .modos { position: absolute; top: calc(var(--topbar-h) + 10px); left: 10px; z-index: 4; box-shadow: var(--shadow-2); }
-  .modos .be-seg__opt { height: 28px; padding: 0 9px; font-size: var(--fs-xs); }
+  .modos .be-seg__opt { height: 28px; padding: 0 9px; }
   .be-app > .be-panel { grid-area: map; align-self: end; z-index: 5; max-height: 34vh; border-left: 0; border-radius: 18px 18px 0 0; box-shadow: 0 -6px 30px rgba(40, 28, 10, .18); overflow: visible; }
   /* Encima de la hoja: el suceso de esta fecha en una línea y el botón de la leyenda. */
   .sobre-hoja { display: flex; align-items: center; gap: 8px; position: absolute; left: 10px; right: 10px; bottom: calc(100% + 8px); pointer-events: none; }

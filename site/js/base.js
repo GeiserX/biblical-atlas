@@ -360,11 +360,11 @@ function pintarEtiquetasDiferido() {
 }
 
 let avisoTimer = 0;
-function avisar(texto) {
+function avisar(texto, ms = 3500) {
   const a = $('#aviso');
   a.textContent = texto; a.hidden = false;
   clearTimeout(avisoTimer);
-  avisoTimer = setTimeout(() => { a.hidden = true; }, 3500);
+  avisoTimer = setTimeout(() => { a.hidden = true; }, ms);
 }
 
 // ---------------------------------------------------------------------------

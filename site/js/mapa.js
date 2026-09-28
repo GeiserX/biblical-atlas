@@ -30,7 +30,9 @@ const MUNDO = BASES[0].ext;
 const MINI = { oeste: -20, este: 100, sur: -8, norte: 58 };
 const ZOOM_MAX = 14;                  // alrededor de Jerusalén el relieve propio aguanta hasta aquí
 const ESTILO_ACTUAL = 'https://tiles.openfreemap.org/styles/positron';
-const ATRIBUCION = 'Relieve: Natural Earth, USGS SRTM/GMTED2010, NOAA ETOPO1, Copernicus EU-DEM, Mapzen · Costas y ríos: Natural Earth · Coordenadas: <a href="https://www.openbible.info/geo/" target="_blank" rel="noopener">OpenBible.info</a> (CC BY 4.0)';
+// Lo que las licencias piden ver en el mapa. La lista completa, con cada licencia, está en acerca.html#gracias.
+// OpenFreeMap, OpenMapTiles y OpenStreetMap los añade MapLibre por su cuenta cuando se ve el mapa actual.
+const ATRIBUCION = 'Coordenadas: <a href="https://www.openbible.info/geo/" target="_blank" rel="noopener">OpenBible.info</a> (<a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">CC BY 4.0</a>) · Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="acerca.html#gracias">Créditos</a>';
 const MAYORES = new Set(['roma', 'jerusalen', 'antioquia-de-siria', 'efeso', 'corinto', 'atenas', 'filipos', 'tesalonica', 'babilonia']);
 const REGION = new Set(['region', 'provincia', 'pais', 'reino', 'desierto', 'llanura', 'valle']);
 const AGUA = new Set(['mar', 'lago', 'rio']);
@@ -117,11 +119,11 @@ function apagar(hex, f = 0.5) {
 // ---------------------------------------------------------------------------
 const CAND = {
   seguro: { color: '#2f5d50', rotulo: 'Seguro', corto: 'seguro', trazo: 'solido' },
-  favorecido_nivel_1: { color: '#7a5c8e', rotulo: 'Favorecido por el nivel 1', corto: 'favorecido · N1', trazo: 'raya' },
-  tradicion: { color: '#86601c', rotulo: 'Tradición que cita el nivel 1', corto: 'tradición · N1', trazo: 'raya' },
-  alternativa: { color: '#8a8295', rotulo: 'Otra propuesta que cita el nivel 1', corto: 'otra propuesta', trazo: 'raya' },
-  solo_nivel_2: { color: '#86601c', rotulo: 'Solo lo propone el nivel 2', corto: 'solo nivel 2', trazo: 'punto' },
-  descartado_nivel_1: { color: '#7b6f60', rotulo: 'Descartado por el nivel 1', corto: 'descartado · N1', trazo: 'punto' },
+  favorecido_nivel_1: { color: '#7a5c8e', rotulo: 'Favorecido por jw.org', corto: 'favorecido', trazo: 'raya' },
+  tradicion: { color: '#86601c', rotulo: 'Tradición que cita jw.org', corto: 'tradición', trazo: 'raya' },
+  alternativa: { color: '#8a8295', rotulo: 'Otra propuesta que cita jw.org', corto: 'otra propuesta', trazo: 'raya' },
+  solo_nivel_2: { color: '#86601c', rotulo: 'Solo lo propone otra fuente', corto: 'solo otra fuente', trazo: 'punto' },
+  descartado_nivel_1: { color: '#7b6f60', rotulo: 'Descartado por jw.org', corto: 'descartado', trazo: 'punto' },
 };
 const candidatosDe = (l) => (Array.isArray(l?.candidatos) ? l.candidatos : null);
 /** Candidatos que se ven con los filtros actuales, con su índice original. */
@@ -140,8 +142,7 @@ function crearMapa() {
     minZoom: 2.5, maxZoom: ZOOM_MAX,
     dragRotate: false, pitchWithRotate: false, touchPitch: false,
     renderWorldCopies: false, fadeDuration: 0,
-    // En pantallas estrechas la atribución se pliega en un botón (i) para no tapar el mapa.
-    attributionControl: { compact: estrecha(), customAttribution: ATRIBUCION },
+    attributionControl: false,   // se añade abajo, con su sitio según el ancho
   });
   map.touchZoomRotate.disableRotation();
   map.once('load', () => {
@@ -151,6 +152,9 @@ function crearMapa() {
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new ControlCapas(), 'top-right');
+  // En pantallas estrechas la atribución se pliega en un botón (i) y va arriba, bajo los botones del mapa: abajo la
+  // taparía la hoja de la ficha, y las licencias piden que se vea.
+  map.addControl(new maplibregl.AttributionControl({ compact: estrecha(), customAttribution: ATRIBUCION }), estrecha() ? 'top-right' : 'bottom-right');
   map.addControl(new maplibregl.ScaleControl({ maxWidth: 110, unit: 'metric' }), 'bottom-right');
   let cargado = false, reintentado = false;
   map.on('error', (e) => {
@@ -1308,7 +1312,7 @@ function pintarLeyenda(V, w, g) {
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
   if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
   if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
-  if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo nivel 1</span></div>');
+  if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo la Biblia y jw.org</span></div>');
   const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
     : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';
   $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${cabecera}</div>${filas.join('')}`;
@@ -1460,7 +1464,7 @@ function pintarMenuCapas() {
   if (!menu) return;
   const radio = (grupo, [k, t], actual) => `<label class="capa-opcion"><input type="radio" name="${grupo}" value="${k}"${actual === k ? ' checked' : ''}> ${esc(t)}</label>`;
   menu.innerHTML = `<fieldset><legend class="be-card__eyebrow">Capas</legend>${CAPAS.map(([k, t]) => `<label class="capa-opcion"><input type="checkbox" name="capa" value="${k}"${F.capas[k] ? ' checked' : ''}> ${esc(t)}${k === 'pendientes' ? ' <span class="muestra-pendiente" aria-hidden="true"></span>' : ''}</label>`).join('')}</fieldset>
-    <fieldset><legend class="be-card__eyebrow">Fuentes</legend><label class="capa-opcion"><input type="checkbox" name="nivel1"${F.nivel1 ? ' checked' : ''}> Solo nivel 1 <span class="be-muted">(Biblia y jw.org)</span></label></fieldset>
+    <fieldset><legend class="be-card__eyebrow">Fuentes</legend><label class="capa-opcion"><input type="checkbox" name="nivel1"${F.nivel1 ? ' checked' : ''}> Solo la Biblia y jw.org</label></fieldset>
     <fieldset><legend class="be-card__eyebrow">Nombres en el mapa</legend>${NOMBRES.map((o) => radio('nombres', o, F.nombres)).join('')}</fieldset>
     <fieldset><legend class="be-card__eyebrow">Cartas</legend>${FILTRO_CARTAS.map((o) => radio('cartas', o, F.cartas)).join('')}</fieldset>`;
   document.querySelector('#capas-boton')?.classList.toggle('con-filtros', CAPAS.some(([k]) => !F.capas[k]) || F.nivel1 || F.cartas !== 'cerca');
@@ -1482,7 +1486,7 @@ function pintarNombresEncuadre() {
   const epoca = (l) => (l.nombres || []).filter((n) => n.desde != null || n.hasta != null).map((n) => `${n.nombre} (${n.desde != null ? BE.fmtAnio(n.desde) : '…'} - ${n.hasta != null ? BE.fmtAnio(n.hasta) : '…'})`).join(' · ');
   el.innerHTML = `<div class="nombres-cab"><h3 class="be-card__eyebrow">Nombres de este encuadre <b class="cuenta">${filas.length}</b></h3>
       <div class="be-seg nombres-seg" role="radiogroup" aria-label="Nombres en el mapa">${NOMBRES.map(([k, t]) => `<label class="be-seg__opt${F.nombres === k ? ' be-seg__opt--on' : ''}"><input class="sr-only" type="radio" name="nombres-2" value="${k}"${F.nombres === k ? ' checked' : ''}>${esc(t.replace('Los dos donde ayuda', 'Los dos'))}</label>`).join('')}</div></div>
-    ${filas.length ? `<table class="tabla-nombres"><thead><tr><th scope="col">TNM</th><th scope="col">Hoy</th></tr></thead><tbody>${filas.map(({ l, hoy, cs }) => `<tr><td colspan="2"><button type="button" class="fila-nombre" data-lugar="${esc(l.id)}"><span><b>${esc(l.nombre)}</b>${epoca(l) ? `<small>${esc(epoca(l))}</small>` : ''}</span><span>${cs ? '<i class="be-muted">sin identificar</i>' : esc(hoy)}</span></button></td></tr>`).join('')}</tbody></table>` : '<p class="be-muted">Ningún lugar de este encuadre tiene nombre de hoy en los datos. Aléjate o muévete.</p>'}
+    ${filas.length ? `<table class="tabla-nombres"><thead><tr><th scope="col" title="Como lo escribe la Traducción del Nuevo Mundo">En la Biblia</th><th scope="col">Hoy</th></tr></thead><tbody>${filas.map(({ l, hoy, cs }) => `<tr><td colspan="2"><button type="button" class="fila-nombre" data-lugar="${esc(l.id)}"><span><b>${esc(l.nombre)}</b>${epoca(l) ? `<small>${esc(epoca(l))}</small>` : ''}</span><span>${cs ? '<i class="be-muted">sin identificar</i>' : esc(hoy)}</span></button></td></tr>`).join('')}</tbody></table>` : '<p class="be-muted">Ningún lugar de este encuadre tiene nombre de hoy en los datos. Aléjate o muévete.</p>'}
     <p class="nota-nombres">Las provincias antiguas, como Asia (Ap 1:4), no coinciden con los países de hoy: no las traducimos, las superponemos.</p>
     <p class="nota-nombres"><span class="be-tier be-tier--2" data-n="2">OpenBible.info</span> Coordenadas de OpenBible.info (CC BY 4.0): solo tomamos el punto, nunca su identificación.</p>`;
 }

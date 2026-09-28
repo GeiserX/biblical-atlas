@@ -60,7 +60,11 @@ REQ_PARADA_RECORRIDO = ["sel", "t", "texto", "pasajes"]
 REQ_FUENTE = ["titulo", "obra", "url", "nivel", "publicado", "consultado"]
 ESTRUCTURA_LIBRO = {"slug", "num", "nombre", "abr", "formas", "habladas", "capitulos"}
 HECHOS_LIBRO = {"escritor", "lugar", "fecha", "abarca"}
-ESTRUCTURA_MES = {"id", "orden", "nombre", "otros_nombres"}
+ESTRUCTURA_MES = {"id", "orden", "nombre", "otros_nombres", "nombres"}
+CAMPOS_NOMBRE_MES = {"nombre", "desde", "hasta", "nota", "fuentes", "razon"}
+CAMPOS_EXPLICACION = {"id", "titulo", "texto", "fuentes", "razon", "consultado", "estado", "historial"}
+SECCIONES_CALENDARIO = {"meses", "explicacion"}
+CAMPOS_FIESTA = {"nombre", "desde", "hasta", "instituida", "fuentes", "razon", "estado"}
 
 
 def _entero(v):
@@ -302,8 +306,119 @@ def validar_calendario(datos, err):
             for k in ("consultado", "estado"):
                 if k not in m:
                     err(f"{donde}: un hecho del mes necesita '{k}'")
-            textos_largos(m, donde, err)
+        textos_largos(m, donde, err)
+        validar_nombres_mes(m, donde, err)
+        validar_fiestas(m, donde, err)
+    validar_explicacion(datos["calendario"], err)
+    otras = set(datos["calendario"]) - SECCIONES_CALENDARIO
+    if otras:
+        err(f"data/calendario.yaml: secciones desconocidas {sorted(otras)} (se esperan {sorted(SECCIONES_CALENDARIO)})")
     return ids
+
+
+def validar_nombres_mes(m, donde, err):
+    """Los nombres de un mes por época: como los de un lugar, cada uno con su nota, sus fuentes y su razón."""
+    if "nombres" not in m:
+        return
+    ns = m["nombres"]
+    if not isinstance(ns, list) or not ns:
+        err(f"{donde}: 'nombres' debe ser una lista no vacía")
+        return
+    vistos = set()
+    for i, n in enumerate(ns):
+        nd = f"{donde} nombres[{i}]"
+        if not isinstance(n, dict):
+            err(f"{nd}: debe ser un objeto {{nombre, desde, hasta, nota, fuentes, razon}}")
+            continue
+        if set(n) - CAMPOS_NOMBRE_MES:
+            err(f"{nd}: campos desconocidos {sorted(set(n) - CAMPOS_NOMBRE_MES)}")
+        if not isinstance(n.get("nombre"), str) or not n["nombre"].strip():
+            err(f"{nd}: sin 'nombre'")
+        elif n["nombre"] in vistos:
+            err(f"{nd}: el nombre '{n['nombre']}' está repetido")
+        vistos.add(n.get("nombre"))
+        for k in ("nota", "razon"):
+            if not isinstance(n.get(k), str) or not n[k].strip():
+                err(f"{nd}: '{k}' vacía")
+        if not isinstance(n.get("fuentes"), list) or not n["fuentes"]:
+            err(f"{nd}: 'fuentes' vacío")
+        for k in ("desde", "hasta"):
+            if k in n and not _entero(n[k]):
+                err(f"{nd}.{k} debe ser un año astronómico entero")
+        if _entero(n.get("desde")) and _entero(n.get("hasta")) and n["desde"] > n["hasta"]:
+            err(f"{nd}: desde ({n['desde']}) es posterior a hasta ({n['hasta']})")
+    # El mismo nombre vive en dos sitios: otros_nombres (lo usa la búsqueda) y nombres. Tienen que coincidir.
+    if m.get("nombre") not in vistos:
+        err(f"{donde}: el nombre principal '{m.get('nombre')}' no está en 'nombres'")
+    otros = set(m.get("otros_nombres") or [])
+    for o in sorted(otros - vistos):
+        err(f"{donde}: '{o}' está en otros_nombres pero no en nombres")
+    for o in sorted(vistos - otros - {m.get("nombre")}):
+        err(f"{donde}: '{o}' está en nombres pero no en otros_nombres, y la búsqueda no lo encontraría")
+
+
+def validar_fiestas(m, donde, err):
+    """Las fiestas de un mes: sus días y el año desde el que se celebran, con fuentes y razón. Sin 'instituida', la
+    línea de tiempo pondría la Pascua antes del éxodo o la Dedicación en tiempos de Nehemías."""
+    fs = m.get("fiestas")
+    if fs is None:
+        return
+    if not isinstance(fs, list) or not fs:
+        err(f"{donde}: 'fiestas' debe ser una lista no vacía")
+        return
+    for i, f in enumerate(fs):
+        fd = f"{donde} fiestas[{i}]"
+        if not isinstance(f, dict):
+            err(f"{fd}: debe ser un objeto {{nombre, desde, hasta, instituida, fuentes, razon}}")
+            continue
+        if set(f) - CAMPOS_FIESTA:
+            err(f"{fd}: campos desconocidos {sorted(set(f) - CAMPOS_FIESTA)}")
+        if not isinstance(f.get("nombre"), str) or not f["nombre"].strip():
+            err(f"{fd}: sin 'nombre'")
+        for k in ("desde", "hasta"):
+            if not _entero(f.get(k)) or not 1 <= f[k] <= 30:
+                err(f"{fd}.{k} debe ser un día del mes, de 1 a 30")
+        if _entero(f.get("desde")) and _entero(f.get("hasta")) and f["desde"] > f["hasta"]:
+            err(f"{fd}: el día {f['desde']} es posterior al {f['hasta']}")
+        if not _entero(f.get("instituida")):
+            err(f"{fd}.instituida debe ser el año astronómico desde el que se celebra")
+        if not isinstance(f.get("fuentes"), list) or not f["fuentes"]:
+            err(f"{fd}: 'fuentes' vacío")
+        if not isinstance(f.get("razon"), str) or not f["razon"].strip():
+            err(f"{fd}: 'razon' vacía")
+        if "estado" in f and f["estado"] not in ESTADOS:
+            err(f"{fd}.estado debe ser uno de {sorted(ESTADOS)}")
+
+
+def validar_explicacion(cal, err):
+    """Los hechos de la página «El calendario»: cada uno con id, título, texto y los cuatro campos de siempre."""
+    if "explicacion" not in cal:
+        return
+    lista = cal["explicacion"]
+    if not isinstance(lista, list) or not lista:
+        err("data/calendario.yaml: 'explicacion' debe ser una lista no vacía")
+        return
+    ids = set()
+    for i, e in enumerate(lista):
+        donde = f"data/calendario.yaml (explicacion {e.get('id', i) if isinstance(e, dict) else i})"
+        if not isinstance(e, dict):
+            err(f"{donde}: debe ser un objeto")
+            continue
+        if set(e) - CAMPOS_EXPLICACION:
+            err(f"{donde}: campos desconocidos {sorted(set(e) - CAMPOS_EXPLICACION)}")
+        if not ID.match(str(e.get("id"))):
+            err(f"{donde}: id '{e.get('id')}' no es un slug ASCII en minúsculas")
+        elif e["id"] in ids:
+            err(f"{donde}: id repetido")
+        ids.add(e.get("id"))
+        for k in ("titulo", "texto"):
+            if not isinstance(e.get(k), str) or not e[k].strip():
+                err(f"{donde}: '{k}' vacío")
+        for k in ("consultado", "estado"):
+            if k not in e:
+                err(f"{donde}: falta '{k}'")
+        validar_comun(e, donde, err, None)
+        textos_largos(e, donde, err)
 
 
 def validar_lugar(o, donde, err, fuentes):

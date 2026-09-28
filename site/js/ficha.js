@@ -19,6 +19,13 @@ function nivelDe(ids) {
   return ns.includes(1) ? 1 : 2;
 }
 
+/** Marca pequeña del tipo de fuente, sin jerga: el nombre del nivel va en el texto emergente y para los lectores de pantalla. */
+const NIVEL_TEXTO = { 1: 'Biblia o publicación de jw.org', 2: 'Otra fuente que jw.org ha usado' };
+function marcaNivel(n) {
+  const k = n === 1 ? 1 : 2;
+  return `<span class="marca-nivel marca-nivel--${k}" role="img" title="${NIVEL_TEXTO[k]}" aria-label="${NIVEL_TEXTO[k]}"></span>`;
+}
+
 function chipsCitas(ref) {
   return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCapitulo(c.libro, c.cap)}" ${EXTERNO} title="Leer ${esc(c.libro.nombre)} ${c.cap} en wol.jw.org">${esc(c.texto)}</a>`).join('');
 }
@@ -34,16 +41,16 @@ function fuentesHtml(ids) {
   const ocultas = soloNivel1() ? fs.filter(([, f]) => f.nivel !== 1).length : 0;
   if (ocultas) fs = fs.filter(([, f]) => f.nivel === 1);
   return `<ul class="fuentes">${fs.map(([, f]) => `<li>
-    <span class="be-tier be-tier--${f.nivel === 1 ? 1 : 2}" data-n="${f.nivel}">Nivel ${f.nivel}</span>
+    ${marcaNivel(f.nivel)}
     <div><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span class="fuente-obra">${esc(f.obra)}${f.publicado ? ` · ${esc(f.publicado)}` : ''}</span>
-    ${avisoFuenteHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'fuente de nivel 2 oculta' : 'fuentes de nivel 2 ocultas'} por el filtro «solo nivel 1».</p>` : ''}`;
+    ${avisoFuenteHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'otra fuente oculta' : 'otras fuentes ocultas'} por el filtro «Solo la Biblia y jw.org».</p>` : ''}`;
 }
-/** Insignia N1 o N2 de un hecho (C-01). Al pulsarla se despliegan sus fuentes con enlace. */
+/** Marca del tipo de fuente de un hecho (C-01). Al pulsarla se despliegan sus fuentes con enlace. */
 function insigniaHtml(ids) {
   const n = nivelDe(ids);
   if (!n) return '';
   const fs = (ids || []).map(fuente).filter(Boolean);
-  return `<details class="insignia insignia--${n}"><summary title="Fuentes de este dato (nivel ${n})" aria-label="Fuentes de nivel ${n}">N${n}</summary><span class="insignia-pop">${fs.map((f) => `<a href="${esc(f.url)}" ${EXTERNO}><b>N${f.nivel}</b> ${esc(f.titulo)}</a>`).join('')}</span></details>`;
+  return `<details class="insignia insignia--${n}"><summary title="${NIVEL_TEXTO[n]}. Pulsa para ver las fuentes." aria-label="Fuentes de este dato: ${NIVEL_TEXTO[n]}">${marcaNivel(n)}</summary><span class="insignia-pop">${fs.map((f) => `<a href="${esc(f.url)}" ${EXTERNO}>${marcaNivel(f.nivel)} ${esc(f.titulo)}</a>`).join('')}</span></details>`;
 }
 /** Historial plegado de un hecho (P-06): cada cambio con su fecha y su fuente. */
 function historialHtml(obj) {
@@ -87,7 +94,11 @@ function noSabemosHtml(frases) {
 }
 function enlacesHtml(enlaces) {
   if (!enlaces?.length) return '';
-  return `<div class="enlaces">${enlaces.map((e) => `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}>${esc(e.titulo)}</a>`).join('')}</div>`;
+  // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para una familia y pasa al texto emergente.
+  return `<div class="enlaces">${enlaces.map((e) => {
+    const tnm = / \(TNM\)$/.test(e.titulo);
+    return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ' title="Traducción del Nuevo Mundo, en wol.jw.org"' : ''}>${esc(tnm ? e.titulo.replace(/ \(TNM\)$/, '') : e.titulo)}</a>`;
+  }).join('')}</div>`;
 }
 /** Vídeos de jw.org que nombran un lugar (BE.VIDEOS, de videos.json) o una persona (V, de videos-personas.json).
     Con V === null desde file:// la ficha de lugar lo explica; la de persona pasa `callar` y no enseña nada. */
@@ -119,6 +130,6 @@ const cerrarHtml = () => '<button type="button" class="be-btn be-btn--sm cerrar-
 
 Object.assign(BE, {
   chipsCitas, estadoHtml, fuentesHtml, porQueHtml, notaHtml, enlacesHtml, videosHtml, nombresHtml, botonSel, migas, cerrarHtml,
-  insigniaHtml, historialHtml, proponerHtml, noSabemosHtml, nivelDe, soloNivel1,
+  insigniaHtml, historialHtml, proponerHtml, noSabemosHtml, nivelDe, soloNivel1, marcaNivel,
 });
 })();

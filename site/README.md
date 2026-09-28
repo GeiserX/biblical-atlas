@@ -2,7 +2,9 @@
 
 El sitio de biblical-earth: un mapa, una línea de tiempo de 4026 a.e.c. al año 100 y una ficha, gobernados por un solo cursor de tiempo. Encima van las vistas de estudio: grafo de personas, conexión entre dos, modo lectura, recorridos guiados, portada, «Ahora mismo» y sincronía.
 
-Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, los scripts de `js/` y las hojas de `css/` se sirven tal cual.
+Al lado hay dos páginas sueltas. [`acerca.html`](acerca.html) explica el proyecto, cómo se lee y cómo tratamos las fuentes, y da las gracias, con su licencia, a quienes ponen los datos y los enlaces. [`calendario.html`](calendario.html) explica los meses de la Biblia con los hechos de `data/calendario.yaml`. Las dos enlazan de vuelta al mapa, a la vista desde la que se llegó, y abren igual con servidor que desde `file://`. El mapa les pasa esa vista al pulsar el enlace: al calendario en `#desde=…` y a «Acerca de» en `?desde=…`, porque su `#` es la sección (`#gracias`).
+
+Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, `acerca.html`, `calendario.html`, los scripts de `js/` y las hojas de `css/` se sirven tal cual.
 
 ## Abrirlo en local
 
@@ -18,6 +20,8 @@ y abre <http://localhost:8000>.
 También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. Las fichas no muestran vídeos, ni de lugares, ni de personas, ni de capítulos.
 
 En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.com con su huella SRI, y el mapa actual usa las teselas de [OpenFreeMap](https://openfreemap.org/) con el estilo Positron, que no pide clave. Si ese estilo no responde, el mapa actual pasa a `maps/mediterraneo-actual.webp`.
+
+El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el relieve y, en el mapa actual, OpenFreeMap, OpenMapTiles y OpenStreetMap, que añade MapLibre) y un enlace «Créditos» a `acerca.html#gracias`, donde está la lista entera con cada licencia. En el móvil se pliega en un botón (i) bajo los botones del mapa, porque abajo la taparía la hoja de la ficha. Lo que se añada de fuera va también a esa lista.
 
 ## De dónde salen los datos
 
@@ -107,13 +111,14 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 |---|---|---|
 | `ocultas` | lista de `viajes,cartas,inciertos,hallazgos,pendientes,relieve` | Capas apagadas en el menú de capas |
 | `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
-| `nivel` | `1` | Filtro «solo nivel 1» |
+| `nivel` | `1` | Filtro «Solo la Biblia y jw.org» |
 | `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
 | `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo |
 | `secular` | `0` | Oculta las fechas seculares |
 | `pausa` | `0` | No se para en los sucesos al reproducir |
 | `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
 | `linea` | `grande` | Línea de tiempo ampliada |
+| `meses` | `ambos`, `nuestros`, `hebreos` | Filas de meses de la línea a escala de meses y de días, y qué fecha va primero arriba. Sin él, ambos |
 | `ahora`, `sinc` | `1`; `<lugar>~<periodo>` | Vista «Ahora mismo»; sincronía de un lugar en un periodo |
 | `grafo`, `gvista`, `gtodo` | ids unidos por `.`; `lista` o `grafo`; `1` | Grafo de personas (el último id es el centro), su vista y si enseña todas las fechas |
 | `conexion`, `camino` | `<tipo>:<id>~<tipo>:<id>`; número | Conexión entre dos y el camino elegido |
@@ -140,8 +145,10 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | Fichero | Contenido |
 |---|---|
 | `index.html` | Estructura de la página, puntos de montaje de las vistas y carga de MapLibre, con versión fija y SRI |
+| `acerca.html` | Qué es el proyecto, cómo se lee, cómo tratamos las fuentes, gracias con cada licencia y cómo proponer una corrección. Su único script apunta «Volver al mapa» a la vista de `?desde=…` |
+| `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.json` (o de `data.js` desde `file://`). Acepta `?datos=_local/…` como `index.html` |
 | [`js/`](js/) | La aplicación, partida en módulos (ver abajo) |
-| [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css` y `estudio.css` |
+| [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css` y `estudio.css`, y `acerca.css` y `calendario.css` para las dos páginas sueltas |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
 | `maps/` | Relieve antiguo y actual en Web Mercator |
 | `_local/` | Datos de prueba. No va a git |
@@ -152,9 +159,9 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 |---|---|
 | `js/base.js` | Utilidades, estado, carga de datos, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
 | `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
-| `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes, estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
-| `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, meses hebreos |
-| `js/linea.js` | Línea de tiempo en seis escalas, carriles, densidad, minimapa, regla, bucle y marcadores |
+| `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes y su marca (punto o aro), estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
+| `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, y el calendario hebreo: meses de luna nueva a luna nueva, Veadar y nombres por época |
+| `js/linea.js` | Línea de tiempo en seis escalas, carriles, filas de nuestros meses, meses hebreos y fiestas, selector «Meses», densidad, minimapa, regla, bucle y marcadores |
 | `js/ahora.js` | «Ahora mismo», la frase de contexto de la línea y la sincronía por lugar |
 | `js/buscar.js` | Búsqueda, preguntas de forma fija, años y atrás y adelante |
 | `js/grafo.js` | Grafo de personas y conexión entre dos |
@@ -204,7 +211,9 @@ BE.tipo('lugar', {
 
 `base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js`; `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
 
-`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
+`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
+
+`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas, la portada y los carriles: punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 

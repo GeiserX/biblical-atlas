@@ -1,0 +1,72 @@
+# biblical-earth: fuentes del carril «calendario» (nombres de los meses por época y la explicación del calendario).
+# Esquema en docs/investigacion/README.md.
+it-calendario:
+  titulo: Calendario
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000866
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-anio:
+  titulo: Año
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004635
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-dia:
+  titulo: Día
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001132
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-abib:
+  titulo: Abib
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000031
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ziv:
+  titulo: Ziv
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004750
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-etanim:
+  titulo: Etanim
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001435
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-bul:
+  titulo: Bul
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000836
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-nisan:
+  titulo: Nisán
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003262
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-fiesta:
+  titulo: Fiesta
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001504
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-purim:
+  titulo: Purim
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003588
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'

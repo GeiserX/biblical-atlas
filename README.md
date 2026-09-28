@@ -4,9 +4,11 @@
 
 <h1 align="center">biblical-earth</h1>
 
+<p align="center"><b>La Biblia en el mapa y en el tiempo</b></p>
+
 <p align="center">Un mapa y una línea de tiempo movidos por una sola fecha, para estudiar la Biblia con cada relato en su lugar y en su tiempo.</p>
 
-<p align="center"><a href="https://geiserx.github.io/biblical-earth/">Sitio</a> · <a href="docs/ideas/">Ideas y maquetas</a> · <a href="docs/decisiones.md">Decisiones</a> · <a href="docs/hoja-de-ruta.md">Hoja de ruta</a> · <a href="docs/investigacion/">Investigación</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
+<p align="center"><a href="https://geiserx.github.io/biblical-earth/">Sitio</a> · <a href="https://geiserx.github.io/biblical-earth/acerca.html">Acerca de</a> · <a href="docs/ideas/">Ideas y maquetas</a> · <a href="docs/decisiones.md">Decisiones</a> · <a href="docs/hoja-de-ruta.md">Hoja de ruta</a> · <a href="docs/investigacion/">Investigación</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
 
 ## Qué hay
 
@@ -33,7 +35,7 @@ Cada hecho lleva su fuente, su razón y su fecha de consulta. Lo que está hecho
 
 ## Fuentes
 
-La fuente principal es jw.org y la Traducción del Nuevo Mundo; se enlaza, nunca se copia. Las fuentes externas entran solo cuando jw.org las ha usado. Los mapas son propios, hechos con datos abiertos (Natural Earth, OpenBible).
+La fuente principal es jw.org y la Traducción del Nuevo Mundo; se enlaza, nunca se copia. Las fuentes externas entran solo cuando jw.org las ha usado. Los mapas son propios, hechos con datos abiertos (Natural Earth, OpenBible). Los créditos completos, con la licencia de cada fuente, están en la página [Acerca de](site/acerca.html) ([en el sitio](https://geiserx.github.io/biblical-earth/acerca.html#gracias)).
 
 ## Ejecutar en local
 
