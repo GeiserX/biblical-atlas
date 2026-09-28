@@ -104,14 +104,14 @@ function pintar(D) {
     const nombres = (m.nombres && m.nombres.length ? m.nombres : [{ nombre: m.nombre }]);
     const ids = [...new Set([...(m.fuentes || []), ...nombres.flatMap((n) => n.fuentes || []), ...(m.fiestas || []).flatMap((f) => f.fuentes || [])])];
     const fiestas = (m.fiestas || []).map((f) => `<li><b>${f.desde}${f.hasta != null && f.hasta !== f.desde ? `-${f.hasta}` : ''}</b> ${esc(f.nombre)}${f.instituida != null ? ` <span class="cal-epoca" title="${esc(f.razon || '')}">desde ${f.estado === 'pendiente' ? 'c. ' : ''}${esc(fmtAnio(f.instituida))}</span>` : ''}</li>`).join('');
-    return `<tr id="mes-${esc(m.id)}"${m.id === 'veadar' ? ' class="cal-anadido"' : ''}>
-      <td class="cal-num" data-t="Año sagrado">${m.orden > 12 ? '13' : m.orden}</td>
-      <td class="cal-num" data-t="Año civil">${civil(m.orden)}</td>
-      <td class="cal-nombres" data-t="Mes">${nombres.map((n) => `<div class="cal-nombre"><b>${esc(n.nombre)}</b>${epoca(n) ? ` <span class="cal-epoca">${esc(epoca(n))}</span>` : ''}${n.nota ? `<small>${esc(n.nota)}</small>` : ''}</div>`).join('')}${m.nota ? `<small>${esc(m.nota)}</small>` : ''}</td>
-      <td data-t="Más o menos">${esc(m.equivale || '')}</td>
-      <td data-t="Fiestas">${fiestas ? `<ul class="cal-fiestas">${fiestas}</ul>` : '<span class="cal-nada">·</span>'}</td>
-      <td data-t="Tiempo y campo">${m.clima ? `<div>${esc(m.clima)}</div>` : ''}${m.campo ? `<div class="cal-campo">${esc(m.campo)}</div>` : ''}</td>
-      <td class="cal-fuentes" data-t="Fuentes">${enlaces(ids)}</td>
+    return `<tr role="row" id="mes-${esc(m.id)}"${m.id === 'veadar' ? ' class="cal-anadido"' : ''}>
+      <td role="cell" class="cal-num" data-t="Año sagrado">${m.orden > 12 ? '13' : m.orden}</td>
+      <td role="cell" class="cal-num" data-t="Año civil">${civil(m.orden)}</td>
+      <td role="cell" class="cal-nombres" data-t="Mes">${nombres.map((n) => `<div class="cal-nombre"><b>${esc(n.nombre)}</b>${epoca(n) ? ` <span class="cal-epoca">${esc(epoca(n))}</span>` : ''}${n.nota ? `<small>${esc(n.nota)}</small>` : ''}</div>`).join('')}${m.nota ? `<small>${esc(m.nota)}</small>` : ''}</td>
+      <td role="cell" data-t="Más o menos">${esc(m.equivale || '')}</td>
+      <td role="cell" data-t="Fiestas">${fiestas ? `<ul class="cal-fiestas">${fiestas}</ul>` : '<span class="cal-nada">·</span>'}</td>
+      <td role="cell" data-t="Tiempo y campo">${m.clima ? `<div>${esc(m.clima)}</div>` : ''}${m.campo ? `<div class="cal-campo">${esc(m.campo)}</div>` : ''}</td>
+      <td role="cell" class="cal-fuentes" data-t="Fuentes">${enlaces(ids)}</td>
     </tr>`;
   };
 
@@ -119,15 +119,15 @@ function pintar(D) {
     ...temas.filter((t) => t.hechos.length).map((t) => ({ id: t.id, titulo: t.titulo, html: `<div class="cal-hechos">${t.hechos.map(hecho).join('')}</div>` })),
     { id: 'los-meses', titulo: 'Los meses, uno a uno', html: `
       <p>En el orden del año sagrado, que empezaba en Nisán. El año civil empezaba en Tisri, el séptimo mes del sagrado: en el civil, Tisri es el 1 y Nisán el 7. Veadar solo existía en los años que llevaban un mes de más.</p>
-      <div class="cal-tabla-marco"><table class="cal-tabla">
-        <thead><tr><th scope="col" title="Año sagrado, desde Nisán">Sagrado</th><th scope="col" title="Año civil, desde Tisri">Civil</th><th scope="col">Mes y sus nombres</th><th scope="col">Más o menos</th><th scope="col">Fiestas</th><th scope="col">Tiempo y campo</th><th scope="col">Fuentes</th></tr></thead>
-        <tbody>${meses.map(fila).join('')}</tbody>
+      <div class="cal-tabla-marco"><table class="cal-tabla" role="table">
+        <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader" title="Año sagrado, desde Nisán">Sagrado</th><th scope="col" role="columnheader" title="Año civil, desde Tisri">Civil</th><th scope="col" role="columnheader">Mes y sus nombres</th><th scope="col" role="columnheader">Más o menos</th><th scope="col" role="columnheader">Fiestas</th><th scope="col" role="columnheader">Tiempo y campo</th><th scope="col" role="columnheader">Fuentes</th></tr></thead>
+        <tbody role="rowgroup">${meses.map(fila).join('')}</tbody>
       </table></div>` },
     { id: 'en-la-linea', titulo: 'Cómo los pone la línea de tiempo', html: `
       <p>Nadie sabe hoy en qué día exacto empezó cada mes de la Biblia. La línea de tiempo los pone con un cálculo nuestro, y por eso sus fechas de mes y de día llevan «c.».</p>
       <ul class="cal-reglas">
         <li>Cada mes empieza con una luna nueva media, una cada 29 días, 12 horas y 44 minutos, lo que dura de media una lunación según Perspicacia «Calendario».</li>
-        <li>Nisán empieza con la luna nueva más cercana a mediados de marzo, porque la tabla B15 lo pone en marzo-abril. Si hasta el Nisán siguiente caben trece lunas, ese año lleva Veadar.</li>
+        <li>Nisán empieza con la luna nueva más cercana al equinoccio de primavera, hacia el 21 de marzo, como explica Perspicacia «Nisán», párr. 3. Si hasta el Nisán siguiente caben trece lunas, ese año lleva Veadar.</li>
         <li>El día hebreo empieza a las seis de la tarde, hacia la puesta del sol (Perspicacia «Día»). En la escala de días, la franja sombreada son las horas entre la puesta del sol y nuestra medianoche: ya son el día hebreo siguiente.</li>
         <li>Los nombres siguen la época. Hasta el regreso del exilio, en 537 a.e.c., la línea usa Abib, Ziv, Etanim y Bul. Los meses que la Biblia de entonces nombra solo por su número llevan su nombre posterior en cursiva.</li>
         <li>Cuando un mes no cabe, la línea escribe su inicial. Al tocarlo, o al tocar un nombre en cursiva, un aviso da el nombre entero y su época.</li>

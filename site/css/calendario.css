@@ -68,9 +68,11 @@ a { color: var(--link); }
   .cal-entrada { font-size: var(--fs-lg); }
   .cal h2 { font-size: var(--fs-2xl); }
   .cal-tabla-marco { overflow: visible; border: 0; background: none; box-shadow: none; }
-  .cal-tabla thead { display: none; }
-  .cal-tabla, .cal-tabla tbody, .cal-tabla tr, .cal-tabla td { display: block; width: auto; }
-  .cal-tabla tr { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); margin-bottom: 10px; padding: 8px 12px; box-shadow: var(--shadow-1); display: grid; grid-template-columns: auto auto 1fr; column-gap: 12px; }
+  /* Los encabezados se ocultan solo a la vista (display: none los quitaría también a los lectores de pantalla). Las
+     celdas llevan role en el HTML: con display: block, Safari dejaría de ver la tabla como tabla. */
+  .cal-tabla thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  .cal-tabla, .cal-tabla tbody, .cal-tabla tbody tr, .cal-tabla td { display: block; width: auto; }
+  .cal-tabla tbody tr { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); margin-bottom: 10px; padding: 8px 12px; box-shadow: var(--shadow-1); display: grid; grid-template-columns: auto auto 1fr; column-gap: 12px; }
   .cal-tabla tbody tr:nth-child(even) td { background: none; }
   .cal-tabla td { border: 0; padding: 4px 0; }
   .cal-tabla td::before { content: attr(data-t); display: block; font-size: 9.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-4); }

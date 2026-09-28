@@ -285,16 +285,23 @@ function saltar(dir) {
 
 /** Parámetros extra de la dirección: { nombre, escribir() → texto o null, leer(texto o null, inicial) }. */
 const parametros = [];
-let hashTimer = 0, ultimoHash = '';
+let hashTimer = 0, ultimoHash = '', spanHash = null;
+/** La dirección de la vista de ahora, sin el «#». t con cuatro decimales (una diezmilésima de año, menos de una hora:
+    a escala de días vuelve al mismo día) y v, lo que abarca la línea, en años con cuatro cifras significativas. */
+function textoHash() {
+  const p = new URLSearchParams();
+  p.set('t', E.t.toFixed(4));
+  p.set('v', String(+span().toPrecision(4)));
+  if (E.sel) p.set('sel', selTexto(E.sel));
+  p.set('mapa', E.mapa);
+  for (const x of parametros) { const v = x.escribir(); if (v != null && v !== '') p.set(x.nombre, v); }
+  return p.toString().replace(/%3A/g, ':').replace(/%2F/g, '/').replace(/%2C/g, ',').replace(/%7E/g, '~');
+}
 function guardarHash() {
   clearTimeout(hashTimer);
   hashTimer = setTimeout(() => {
-    const p = new URLSearchParams();
-    p.set('t', E.t.toFixed(2));
-    if (E.sel) p.set('sel', selTexto(E.sel));
-    p.set('mapa', E.mapa);
-    for (const x of parametros) { const v = x.escribir(); if (v != null && v !== '') p.set(x.nombre, v); }
-    ultimoHash = '#' + p.toString().replace(/%3A/g, ':').replace(/%2F/g, '/').replace(/%2C/g, ',').replace(/%7E/g, '~');
+    spanHash = span();
+    ultimoHash = '#' + textoHash();
     if (location.hash !== ultimoHash) history.replaceState(null, '', ultimoHash);
   }, 250);
 }
@@ -303,6 +310,9 @@ function leerHash() {
   const r = { p };
   const t = parseFloat(p.get('t'));
   if (Number.isFinite(t)) r.t = clamp(t, BE.T_MIN, BE.T_MAX);
+  // Sin v (los enlaces de antes) la vista conserva lo que abarcaba.
+  const v = parseFloat(p.get('v'));
+  if (Number.isFinite(v) && v > 0) r.v = clamp(v, BE.SPAN_MIN ?? 0.03, BE.T_MAX - BE.T_MIN);
   if (p.has('sel')) r.sel = parseSel(p.get('sel'));
   const m = p.get('mapa');
   if (['antiguo', 'actual', 'cortina'].includes(m)) r.mapa = m;
@@ -318,7 +328,11 @@ function aplicarHash(inicial) {
   const otraSel = inicial || selTexto(s) !== selTexto(E.sel);
   if (otraSel) seleccionar(s, { mover: h.t == null, encuadrar: true });
   else if (E.t !== tAntes) BE.seguirPablo();   // al arrancar lo hace mostrarPablo; con otra selección, su encuadre
-  asegurarVisible(E.t, inicial && h.t != null);
+  if (h.v != null) {
+    const v0 = clamp(E.t - h.v * 0.4, BE.T_MIN, BE.T_MAX - h.v);
+    E.vista = [v0, v0 + h.v];
+    spanHash = h.v;
+  } else asegurarVisible(E.t, inicial && h.t != null);
   sucio.mapa = sucio.cursor = sucio.panel = sucio.linea = true;
   programar();
 }
@@ -345,6 +359,8 @@ function pintarPanel(forzar) {
 const pintores = [];
 function pintar() {
   const cambios = { ...sucio };
+  // Un zoom sin mover el cursor también cambia la dirección: v guarda lo que abarca la línea.
+  if (sucio.linea && (spanHash == null || Math.abs(span() - spanHash) > spanHash * 1e-4)) { spanHash = span(); guardarHash(); }
   if (sucio.linea || (BE.pintarLineaFija.claveV !== BE.viajeActual(BE.dondeEsta(E.t))?.id)) { sucio.linea = false; BE.pintarLineaFija(); }
   if (sucio.cursor) { sucio.cursor = false; BE.pintarCursor(); }
   if (sucio.mapa) { sucio.mapa = false; BE.pintarMapa(); }
@@ -462,7 +478,7 @@ Object.assign(BE, {
   // estado, registro y selección
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
-  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, aplicarHash, parametros,
+  sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, textoHash, aplicarHash, parametros,
   pintarPanel, pintores, inicios, avisar,
 });
 // Con defer, DOMContentLoaded llega cuando ya se han ejecutado todos los scripts de site/js/: todos los tipos están registrados.

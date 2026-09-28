@@ -98,10 +98,11 @@ Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la co
 La dirección guarda la vista para poder compartirla:
 
 ```
-#t=50.30&sel=carta:1-tesalonicenses&mapa=antiguo
+#t=50.3000&v=40&sel=carta:1-tesalonicenses&mapa=antiguo
 ```
 
-- `t`: año con decimales, en numeración astronómica, donde 1 a.e.c. es 0.
+- `t`: año con decimales, en numeración astronómica, donde 1 a.e.c. es 0. Lleva cuatro decimales, así que a escala de días vuelve al mismo día.
+- `v`: años que abarca la línea de tiempo, con cuatro cifras significativas (`0.25` es un trimestre). Una dirección sin `v` conserva la escala que había.
 - `sel`: `lugar:<id>`, `persona:<id>`, `carta:<id>`, `viaje:<id>`, `parada:<viaje>/<orden>`, `periodo:<id>`, `evento:<id>`, `hallazgo:<id>`, `recorrido:<id>`, `libro:<slug>` o `pasaje:<libro>-<capítulo>`, como `pasaje:hch-16`.
 - `mapa`: `antiguo`, `actual` o `cortina`.
 

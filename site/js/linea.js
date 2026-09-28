@@ -1507,7 +1507,7 @@ function montarBarra() {
   meses.className = 'meses-control';
   meses.id = 'meses-control';
   meses.hidden = true;
-  meses.innerHTML = `<span class="meses-etiqueta" id="meses-etiqueta">Meses</span><div class="be-seg meses-seg" role="radiogroup" aria-labelledby="meses-etiqueta">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt" role="radio" data-meses="${k}" title="${esc({ ambos: 'Nuestros meses y los hebreos, alineados', nuestros: 'Solo nuestros meses. ' + AYUDA_NUESTROS.replace(/^Nuestros meses: /, ''), hebreos: 'Solo los meses hebreos, lunares y aproximados' }[k])}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}`;
+  meses.innerHTML = `<span class="meses-etiqueta" id="meses-etiqueta">Meses</span><div class="be-seg meses-seg" role="radiogroup" aria-labelledby="meses-etiqueta">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt" role="radio" data-meses="${k}" title="${esc({ ambos: 'Nuestros meses y los hebreos, alineados', nuestros: 'Solo nuestros meses. ' + AYUDA_NUESTROS.replace(/^Nuestros meses: (.)/, (_, c) => c.toUpperCase()), hebreos: 'Solo los meses hebreos, lunares y aproximados' }[k])}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}`;
   zoom.after(meses);
   meses.addEventListener('click', (e) => { const b = e.target.closest('[data-meses]'); if (b) ponerMeses(b.dataset.meses); });
   meses.addEventListener('keydown', (e) => {
@@ -1525,12 +1525,15 @@ function montarBarra() {
   // esta selección. El calendario la recibe en #desde=…; «Acerca de» en ?desde=…, porque su # es la sección («#gracias»).
   document.addEventListener('click', (e) => {
     const a = e.target.closest?.('a[data-calendario]');
-    if (a) a.href = `calendario.html${location.search}${location.hash ? `#desde=${encodeURIComponent(location.hash.slice(1))}` : ''}`;
     const b = e.target.closest?.('a[href^="acerca.html"]');
+    if (!a && !b) return;
+    // La vista se lee ahora, no de location.hash, que se escribe con un cuarto de segundo de retraso.
+    const vista = BE.textoHash();
+    if (a) a.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}`;
     if (b) {
       b.dataset.ancla ??= b.getAttribute('href').split('#')[1] || '';
       const q = new URLSearchParams(location.search);
-      if (location.hash.length > 1) q.set('desde', location.hash.slice(1));
+      q.set('desde', vista);
       b.href = `acerca.html${String(q) ? `?${q}` : ''}${b.dataset.ancla ? `#${b.dataset.ancla}` : ''}`;
     }
   }, true);
@@ -1612,11 +1615,11 @@ function iniciarLinea() {
     if (punteros.size === 2) {
       const xs = [...punteros.values()];
       pinza = { d: Math.abs(xs[0] - xs[1]), s: span(), t: tDe((xs[0] + xs[1]) / 2 - r.left) };
-      arrastre = null; regla = null; return;
+      arrastre = null; regla = null; toqueMes = null; return;   // una pinza nunca es un toque sobre un mes
     }
     if (e.target.closest('[data-sel], [data-rango], [data-linea], [data-marcador]')) return;   // lo gestionan los clics
     const mes = e.target.closest?.('g.mes[data-aviso]');
-    toqueMes = mes ? { texto: mes.dataset.aviso, x: e.clientX } : null;
+    toqueMes = mes ? { texto: mes.dataset.aviso, x: e.clientX, y: e.clientY, lejos: 0 } : null;
     if (e.altKey || L.modoRegla) {
       const t = ajustar(tDe(e.clientX - r.left));
       regla = { a: t };
@@ -1632,6 +1635,8 @@ function iniciarLinea() {
   pista.addEventListener('pointermove', (e) => {
     const r = pista.getBoundingClientRect();
     if (punteros.has(e.pointerId)) punteros.set(e.pointerId, e.clientX);
+    // Lo más lejos que llegó el dedo: un arrastre que vuelve a donde empezó no es un toque.
+    if (toqueMes) toqueMes.lejos = Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y));
     if (pinza && punteros.size === 2) {
       const xs = [...punteros.values()];
       const d = Math.max(10, Math.abs(xs[0] - xs[1]));
@@ -1652,7 +1657,7 @@ function iniciarLinea() {
     }
     arrastre = null;
     // Un toque (no un arrastre) sobre un mes con el nombre cortado lo nombra entero.
-    if (toqueMes && e.type === 'pointerup' && Math.abs(e.clientX - toqueMes.x) < 8 && !L.regla) BE.avisar(toqueMes.texto, 6000);
+    if (toqueMes && e.type === 'pointerup' && Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y)) < 8 && !pinza && !L.regla) BE.avisar(toqueMes.texto, 6000);
     toqueMes = null;
   };
   pista.addEventListener('pointerup', fin);
@@ -1739,6 +1744,6 @@ BE.parametros.push(
 
 Object.assign(BE, {
   pintarLineaFija, pintarCursor, iniciarLinea, leerFecha, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
-  lineaEstado: L,
+  lineaEstado: L, SPAN_MIN,
 });
 })();

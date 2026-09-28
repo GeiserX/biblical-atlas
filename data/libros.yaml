@@ -40,7 +40,7 @@ libros:
     texto: desde «el principio» hasta 1657 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Génesis» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Génesis» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: exodo
@@ -70,7 +70,7 @@ libros:
     texto: 1657-1512 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Éxodo» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Éxodo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: levitico
@@ -100,7 +100,7 @@ libros:
     texto: 1 mes (1512 a.e.c.)
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Levítico» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Levítico» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: numeros
@@ -130,7 +130,7 @@ libros:
     texto: 1512-1473 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Números» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Números» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: deuteronomio
@@ -160,7 +160,7 @@ libros:
     texto: 2 meses (1473 a.e.c.)
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Deuteronomio» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Deuteronomio» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: josue
@@ -190,7 +190,7 @@ libros:
     texto: 1473-c. 1450 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Josué» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Josué» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: jueces
@@ -220,7 +220,7 @@ libros:
     texto: c. 1450-c. 1120 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Jueces» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Jueces» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: rut
@@ -243,7 +243,7 @@ libros:
   nota: Abarca 11 años del tiempo de los jueces; la tabla no les da año.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Rut» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Rut» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-samuel
@@ -273,7 +273,7 @@ libros:
     texto: c. 1180-1078 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Samuel» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «1 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-samuel
@@ -303,7 +303,7 @@ libros:
     texto: 1077-c. 1040 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Samuel» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «2 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-reyes
@@ -333,7 +333,7 @@ libros:
     texto: c. 1040-911 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Reyes» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «1 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-reyes
@@ -363,7 +363,7 @@ libros:
     texto: c. 920-580 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Reyes» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «2 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-cronicas
@@ -394,7 +394,7 @@ libros:
   nota: Lo abarcado se cuenta después de las genealogías, desde 1 Crónicas 9:44.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Crónicas» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «1 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-cronicas
@@ -424,7 +424,7 @@ libros:
     texto: c. 1037-537 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Crónicas» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «2 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: esdras
@@ -454,7 +454,7 @@ libros:
     texto: 537-c. 467 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Esdras» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Esdras» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: nehemias
@@ -484,7 +484,7 @@ libros:
     texto: 456 a.e.c. - después de 443 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Nehemías» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Nehemías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: ester
@@ -514,7 +514,7 @@ libros:
     texto: 493-c. 475 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Ester» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Ester» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: job
@@ -544,7 +544,7 @@ libros:
     texto: 140 años o más, entre 1657 y 1473 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Job» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Job» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: salmos
@@ -565,7 +565,7 @@ libros:
     texto: c. 460 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Salmos» en la tabla de libros de la TNM de estudio: escritor y fecha.'
+  razon: 'Fila de «Salmos» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: proverbios
@@ -587,7 +587,7 @@ libros:
     texto: c. 717 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Proverbios» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Proverbios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: eclesiastes
@@ -609,7 +609,7 @@ libros:
     texto: antes de 1000 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Eclesiastés» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Eclesiastés» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: cantar-de-los-cantares
@@ -631,7 +631,7 @@ libros:
     texto: c. 1020 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «El Cantar de los Cantares» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «El Cantar de los Cantares» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: isaias
@@ -661,7 +661,7 @@ libros:
     texto: c. 778 a.e.c. - después de 732 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Isaías» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Isaías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: jeremias
@@ -691,7 +691,7 @@ libros:
     texto: 647-580 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Jeremías» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Jeremías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: lamentaciones
@@ -713,7 +713,7 @@ libros:
     texto: 607 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Lamentaciones» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Lamentaciones» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: ezequiel
@@ -743,7 +743,7 @@ libros:
     texto: 613-c. 591 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Ezequiel» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: daniel
@@ -773,7 +773,7 @@ libros:
     texto: 618-c. 536 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Daniel» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: oseas
@@ -803,7 +803,7 @@ libros:
     texto: antes de 804 a.e.c. - después de 745 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Oseas» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: joel
@@ -826,7 +826,7 @@ libros:
   nota: La tabla pone la fecha con un signo de interrogación.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Joel» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: amos
@@ -848,7 +848,7 @@ libros:
     texto: c. 804 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Amós» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Amós» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: abdias
@@ -869,7 +869,7 @@ libros:
     texto: c. 607 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Abdías» en la tabla de libros de la TNM de estudio: escritor y fecha.'
+  razon: 'Fila de «Abdías» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: jonas
@@ -890,7 +890,7 @@ libros:
     texto: c. 844 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Jonás» en la tabla de libros de la TNM de estudio: escritor y fecha.'
+  razon: 'Fila de «Jonás» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: miqueas
@@ -920,7 +920,7 @@ libros:
     texto: c. 777-717 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Miqueas» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Miqueas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: nahum
@@ -942,7 +942,7 @@ libros:
     texto: antes de 632 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Nahúm» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Nahúm» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: habacuc
@@ -965,7 +965,7 @@ libros:
   nota: La tabla pone la fecha con un signo de interrogación.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Habacuc» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Habacuc» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: sofonias
@@ -987,7 +987,7 @@ libros:
     texto: antes de 648 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Sofonías» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Sofonías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: ageo
@@ -1017,7 +1017,7 @@ libros:
     texto: 112 días (520 a.e.c.)
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Ageo» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Ageo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: zacarias
@@ -1047,7 +1047,7 @@ libros:
     texto: 520-518 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Zacarías» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Zacarías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: malaquias
@@ -1069,7 +1069,7 @@ libros:
     texto: después de 443 a.e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Malaquías» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Malaquías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: mateo
@@ -1099,7 +1099,7 @@ libros:
     texto: 2 a.e.c.-33 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Mateo» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Mateo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: marcos
@@ -1129,7 +1129,7 @@ libros:
     texto: 29-33 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Marcos» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Marcos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: lucas
@@ -1159,7 +1159,7 @@ libros:
     texto: 3 a.e.c.-33 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Lucas» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Lucas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: juan
@@ -1190,7 +1190,7 @@ libros:
   nota: Lo abarcado se cuenta después del prólogo.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Juan» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: hechos
@@ -1220,7 +1220,7 @@ libros:
     texto: 33-c. 61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Hechos» en la tabla de libros de la TNM de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  razon: 'Fila de «Hechos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: romanos
@@ -1242,7 +1242,7 @@ libros:
     texto: c. 56 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Romanos» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Romanos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-corintios
@@ -1264,7 +1264,7 @@ libros:
     texto: c. 55 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Corintios» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «1 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-corintios
@@ -1286,7 +1286,7 @@ libros:
     texto: c. 55 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Corintios» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «2 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: galatas
@@ -1308,7 +1308,7 @@ libros:
     texto: c. 50-52 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Gálatas» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Gálatas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: efesios
@@ -1330,7 +1330,7 @@ libros:
     texto: c. 60-61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Efesios» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Efesios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: filipenses
@@ -1352,7 +1352,7 @@ libros:
     texto: c. 60-61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Filipenses» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Filipenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: colosenses
@@ -1374,7 +1374,7 @@ libros:
     texto: c. 60-61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Colosenses» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Colosenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-tesalonicenses
@@ -1396,7 +1396,7 @@ libros:
     texto: c. 50 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Tesalonicenses» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «1 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-tesalonicenses
@@ -1418,7 +1418,7 @@ libros:
     texto: c. 51 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Tesalonicenses» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «2 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-timoteo
@@ -1440,7 +1440,7 @@ libros:
     texto: c. 61-64 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Timoteo» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «1 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-timoteo
@@ -1462,7 +1462,7 @@ libros:
     texto: c. 65 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Timoteo» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «2 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: tito
@@ -1484,7 +1484,7 @@ libros:
     texto: c. 61-64 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Tito» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Tito» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: filemon
@@ -1506,7 +1506,7 @@ libros:
     texto: c. 60-61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Filemón» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Filemón» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: hebreos
@@ -1528,7 +1528,7 @@ libros:
     texto: c. 61 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Hebreos» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Hebreos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: santiago
@@ -1550,7 +1550,7 @@ libros:
     texto: antes de 62 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Santiago» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Santiago» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-pedro
@@ -1572,7 +1572,7 @@ libros:
     texto: c. 62-64 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Pedro» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «1 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-pedro
@@ -1594,7 +1594,7 @@ libros:
     texto: c. 64 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Pedro» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «2 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 1-juan
@@ -1616,7 +1616,7 @@ libros:
     texto: c. 98 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «1 Juan» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «1 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 2-juan
@@ -1638,7 +1638,7 @@ libros:
     texto: c. 98 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «2 Juan» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «2 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: 3-juan
@@ -1660,7 +1660,7 @@ libros:
     texto: c. 98 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «3 Juan» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «3 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: judas
@@ -1682,7 +1682,7 @@ libros:
     texto: c. 65 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Judas» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Judas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado
 - slug: apocalipsis
@@ -1704,6 +1704,6 @@ libros:
     texto: c. 96 e.c.
   fuentes:
   - tnm-tabla
-  razon: 'Fila de «Apocalipsis» en la tabla de libros de la TNM de estudio: escritor, lugar y fecha.'
+  razon: 'Fila de «Apocalipsis» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
   consultado: '2026-09-28'
   estado: verificado

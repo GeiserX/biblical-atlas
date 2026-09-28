@@ -109,7 +109,7 @@ nombres:
     razon: Perspicacia «Abib», párr. 1 y 2.
 ```
 
-Antes del exilio la Biblia solo nombra cuatro meses (Abib, Ziv, Etanim y Bul) y a los demás los llama por su número, así que el resto de los meses lleva un único nombre con `desde: -536` y una `nota` que dice su número. El nombre principal del mes tiene que estar en `nombres`, y `otros_nombres`, que usa la búsqueda, tiene que llevar exactamente los demás. `scripts/validate.py` comprueba las dos cosas.
+Antes del exilio la Biblia solo nombra cuatro meses (Abib, Ziv, Etanim y Bul) y a los demás los llama por su número, así que el resto de los meses lleva un único nombre con `desde: -536` y una `nota` que dice su número. El nombre principal del mes tiene que estar en `nombres`, y `otros_nombres`, que usa la fecha escrita de la barra de arriba («14 abib 1513 a.e.c.»), tiene que llevar exactamente los demás. Dos épocas solo pueden compartir el año frontera; en ese año la línea de tiempo da el nombre que empieza (el que lleva `desde`), sea cual sea el orden de la lista. Dos nombres con la misma época exacta son formas del mismo nombre, como Hesván y Marhesván, y la línea usa el primero. `scripts/validate.py` comprueba todo esto.
 
 **La página «El calendario».** La sección `explicacion` de `data/calendario.yaml` es una lista de hechos cortos: `{id, titulo, texto, fuentes, razon, consultado, estado}`, con `historial` opcional. `id` es un slug único y `texto` tiene 40 palabras como mucho. Solo entran calendarios de naciones que salen en la Biblia y que jw.org explica (Egipto, Babilonia, Roma), nada más.
 

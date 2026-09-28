@@ -22,24 +22,19 @@ const TRAMO_ESTACION = { primavera: [0.22, 0.47], verano: [0.47, 0.72], 'otoño'
 // ---------------------------------------------------------------------------
 // Calendario hebreo: un cálculo nuestro, aproximado. Los meses van de luna nueva a luna nueva (Perspicacia
 // «Calendario»: una lunación dura de media 29 días, 12 horas y 44 minutos). Nisán empieza con la luna nueva más
-// cercana a mediados de marzo, porque la tabla B15 pone nisán en marzo-abril (`equivale` en data/calendario.yaml).
+// cercana al equinoccio de primavera, hacia el 21 de marzo (Perspicacia «Nisán», párr. 3: si la luna nueva quedaba
+// demasiado lejos del equinoccio, ese mes era el decimotercero y Nisán empezaba con la luna siguiente).
 // Un año con trece lunas lleva Veadar entre Adar y Nisán. El día hebreo va de una puesta de sol a la siguiente
 // (Perspicacia «Día»), y las horas de luz, más o menos de seis a seis: cada mes empieza a las 18:00 de la víspera.
 // Las lunas son medias, no observadas: las fechas que salen de aquí llevan siempre «c.».
 // ---------------------------------------------------------------------------
-const MESES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+const EQUINOCCIO = (59 + 20.5) * DIA;   // mediodía del 21 de marzo, en nuestros días sin bisiestos (31 + 28 días antes de marzo)
 const LUNA_0 = 2000 + (5 + 18.23 / 24) * DIA;   // luna nueva media del 6 de enero de 2000, 18:14 UT (dato astronómico)
 let calCache = null;
 function calendario() {
   if (calCache && calCache.D === BE.D) return calCache;
   const meses = BE.D?.calendario?.meses || [];
-  const nisan = meses.find((m) => m.id === 'nisan');
-  let inicio = 2.5 / 12;                      // mediados de marzo: B15, «nisán: marzo-abril»
-  const eq = typeof nisan?.equivale === 'string' ? nisan.equivale : null;
-  if (eq) {
-    const k = MESES_ES.findIndex((m) => norm(eq).includes(m));
-    if (k >= 0) inicio = (k + 0.5) / 12;
-  }
+  const inicio = EQUINOCCIO;
   const porId = new Map(meses.map((m) => [m.id, m]));
   const porOrden = new Map(meses.map((m) => [m.orden, m]));
   calCache = { D: BE.D, inicio, meses, porId, porOrden, anios: new Map() };
@@ -70,20 +65,30 @@ function anioHebreo(y) {
 /** Año decimal en que empieza el mes hebreo `mes` (id). Por defecto `y` es el año de nuestro calendario que da el texto
     («3 de adar de 515 a.e.c.»): sebat, adar y veadar caen en enero-marzo, así que son los últimos meses del año hebreo
     que empezó en el nisán anterior. Con `anioHebreo`, `y` es el año en que empieza ese año hebreo (la rejilla de meses).
-    Veadar en un año sin él da el final de adar. */
+    Veadar en un año sin él da el final de adar, es decir, el 1 de nisán, y lo avisa: nuestro cálculo de lunas medias
+    no le da ese mes a ese año. */
 function inicioMes(y, mes, esAnioHebreo = false) {
   const c = calendario();
   const m = c.porId.get(mes);
   if (!m) return null;
   const A = anioHebreo(!esAnioHebreo && m.orden >= 11 ? y - 1 : y);
   const k = Math.min(m.orden, A.meses.length + 1) - 1;
-  return k < A.meses.length ? A.meses[k].a : A.meses.at(-1).b;
+  if (k < A.meses.length) return A.meses[k].a;
+  BE.avisar?.(`Según nuestro cálculo, aproximado, el año hebreo que empezó en ${BE.fmtAnio(A.anio)} no tuvo ${m.nombre}: `
+    + `la fecha cae en ${nombreMes(c.porOrden.get(1), A.anio + 1).nombre || 'nisán'}.`, 8000);
+  return A.meses.at(-1).b;
 }
 /** Nombre del mes en la época del año hebreo y (desde/hasta de `nombres`, como los lugares). Si ningún nombre es de
-    esa época (Siván antes del exilio, que la Biblia llama «el tercer mes»), da el de siempre con `anacronico`. */
+    esa época (Siván antes del exilio, que la Biblia llama «el tercer mes»), da el de siempre con `anacronico`.
+    En el año frontera, que dos épocas comparten (Abib hasta -536, Nisán desde -536), gana el nombre que empieza, sea
+    cual sea el orden del YAML; con la misma época exacta (Hesván y Marhesván), el primero de la lista. */
 function nombreMes(m, y) {
   const ns = m?.nombres || [];
-  const n = ns.find((x) => (x.desde == null || y >= x.desde) && (x.hasta == null || y <= x.hasta));
+  let n = null;
+  for (const x of ns) {
+    if (!((x.desde == null || y >= x.desde) && (x.hasta == null || y <= x.hasta))) continue;
+    if (!n || (x.desde ?? -Infinity) > (n.desde ?? -Infinity)) n = x;
+  }
   if (n) return { nombre: n.nombre, nota: n.nota || '', anacronico: false };
   return { nombre: m?.nombre || '', nota: ns[0]?.nota || '', anacronico: ns.length > 0 };
 }
