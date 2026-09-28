@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: madian
+nombre: Madián
+nombres:
+- nombre: Madián
+- nombre: Tierra de Madián
+  nota: Así la llaman 1Re 11:18 y Hab 3:7.
+tipo: region
+lat: 28.4947
+lon: 35.0122
+precision: zona
+coord_fuente: openbible:acc6d8e
+coord_url: https://www.openbible.info/geo/ancient/acc6d8e/midian
+coord_nota: Punto representativo de OpenBible, al este del golfo de Aqaba; la extensión de la región no se conoce.
+resumen: Tierra de los madianitas, descendientes de Madián, hijo de Abrahán. Se cree que quedaba sobre todo al este del
+  golfo de Aqaba. Moisés vivió allí unos cuarenta años y se casó con Ziporá.
+razon: 'Perspicacia «Madián, madianitas», núm. 3, párr. 13 y 14: no se sabe con seguridad hasta dónde llegaba. Éx 2:15-21.
+  OpenBible: solo el punto.'
+fuentes:
+- it-madian
+- exodo-2
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Madián, madianitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
+  tipo: perspicacia
+- titulo: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

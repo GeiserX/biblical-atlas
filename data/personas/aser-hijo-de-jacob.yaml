@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aser-hijo-de-jacob
+nombre: Aser
+nombres:
+- nombre: Aser
+desambiguacion: Aser hijo de Jacob; no la tribu que lleva su nombre.
+resumen: Octavo hijo de Jacob y segundo de Zilpá, la sierva de Lea. En su bendición final, Jacob le prometió abundancia
+  de alimentos.
+razon: Perspicacia «Aser», núm. 1, párr. 2; Gé 30:12, 13 y 49:20.
+fuentes:
+- it-aser
+- genesis-30
+enlaces:
+- titulo: 'Perspicacia: «Aser»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000414
+  tipo: perspicacia
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-aser
+  - genesis-30
+  razon: 'Perspicacia «Aser», párr. 2: hijo de Jacob y Zilpá (Gé 30:12, 13).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-benjamin
+  - it-jacob
+  razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nació en Padán-aram, donde Jacob vivía
+    junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

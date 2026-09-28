@@ -1,0 +1,107 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-hijo-de-jacob
+nombre: José
+nombres:
+- nombre: José
+- nombre: Zafenat-panéah
+  nota: Nombre egipcio que le puso Faraón (Gé 41:45).
+fecha:
+  desde: -1766
+  hasta: -1656
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1767-1657 a.e.c.
+desambiguacion: José hijo de Jacob, gobernante en Egipto; no José el esposo de María ni José de Arimatea.
+no_confundir_con:
+- jose-esposo-de-maria
+- jose-de-arimatea
+resumen: Primer hijo de Jacob y Raquel. Sus medio hermanos lo vendieron como esclavo a los 17 años. En Egipto resistió la
+  tentación, estuvo preso y Faraón lo hizo segundo gobernante. Así salvó a su familia del hambre.
+razon: 'Perspicacia «José», núm. 1, párr. 2, 5, 8, 11, 17 y 40. El estudio 3: nace en 1767, lo venden en 1750 y muere en
+  1657 a.e.c.'
+fuentes:
+- it-jose
+- si-3
+- genesis-41
+- genesis-50
+enlaces:
+- titulo: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  tipo: perspicacia
+- titulo: Génesis 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jose
+  - genesis-30
+  razon: 'Perspicacia «José», párr. 2: el mayor de los dos hijos de Jacob y Raquel (Gé 30:22-24).'
+  estado: verificado
+- tipo: pariente
+  persona: raquel
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-jose
+  - genesis-30
+  razon: 'Perspicacia «José», párr. 2: el mayor de los dos hijos de Jacob y Raquel (Gé 30:22-24).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  fecha:
+    desde: -1766
+    hasta: -1766
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1767 a.e.c.
+  deducido: true
+  fuentes:
+  - si-3
+  - it-jose
+  razon: 'El estudio 3 fecha su nacimiento en 1767 a.e.c.; Perspicacia «José», párr. 3: unos seis años después Jacob salió
+    de Padán-aram, junto a Harán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  fecha:
+    desde: -1749
+    hasta: -1656
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1750-1657 a.e.c.
+  deducido: false
+  fuentes:
+  - si-3
+  - it-jose
+  razon: 'El estudio 3: vendido como esclavo en 1750 y muerto en 1657 a.e.c.; Perspicacia «José», párr. 9 y 40: vivió en
+    Egipto hasta su muerte.'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  fecha:
+    desde: -1656
+    hasta: -1656
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1657 a.e.c.
+  deducido: false
+  fuentes:
+  - genesis-50
+  - si-3
+  - it-jose
+  razon: Gé 50:26 sitúa su muerte y su embalsamamiento en Egipto. El estudio 3 da el año 1657 a.e.c.
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

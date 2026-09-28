@@ -4,10 +4,18 @@ nombre: Sesbazar
 nombres:
 - nombre: Sesbazar
 desambiguacion: Nombre que usan el edicto de Ciro y una carta oficial en Esd 1 y 5.
+fecha:
+  desde: -536
+  hasta: -535
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 537-536 a.e.c.
 resumen: Jefe al que Ciro confió los utensilios del templo para llevarlos a Jerusalén, donde puso los cimientos. Perspicacia
   ve más probable que fuera el nombre oficial babilonio de Zorobabel.
-razon: 'Perspicacia «Sesbazar»: Esd 1:8, 11 y 5:14-16 le atribuyen lo que en el resto se atribuye a Zorobabel, y a los dos
-  se les llama gobernador.'
+razon: 'Perspicacia «Sesbazar»: Esd 1:8, 11 y 5:14-16 le atribuyen lo que el resto atribuye a Zorobabel. Años: según
+  «Zorobabel», el regreso es en 537 a.e.c. y los cimientos del templo en 536.'
 fuentes:
 - it-sesbazar
 - it-zorobabel

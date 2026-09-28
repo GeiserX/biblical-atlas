@@ -16,12 +16,15 @@ personas:
 - jesus
 - pedro
 - tomas
+- natanael
+- santiago-hijo-de-zebedeo
+- juan-apostol
 pasajes:
 - Jn 21:1-23
 resumen: Tras una noche sin pescar nada, siete discípulos llenan la red por indicación de Jesús. Él les prepara
   el desayuno y pregunta tres veces a Pedro si lo quiere.
-razon: 'La tabla A7-H da el día y el lugar. Jn 21:1 nombra el lugar: el mar de Tiberíades, otro nombre del mar de Galilea.
-  El año 33 lo da la cabecera de A7-G (8 de nisán del 33).'
+razon: 'La tabla A7-H da el día y el lugar, y A7-G el año 33. Jn 21:1 llama al lago mar de Tiberíades. Jn 21:2 nombra a
+  Pedro, Tomás, Natanael, Santiago y Juan.'
 fuentes:
 - tnm-a7-h
 - juan-21

@@ -1,0 +1,89 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abrahan
+nombre: Abrahán
+nombres:
+- nombre: Abrahán
+- nombre: Abrán
+  nota: Nombre anterior; Dios se lo cambió a los 99 años (Gé 17:5).
+fecha:
+  desde: -2017
+  hasta: -1842
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2018-1843 a.e.c.
+resumen: Hijo de Taré, natural de Ur. Por fe dejó su tierra y vivió en tiendas en Canaán. Dios pactó con él que por su descendencia
+  se bendecirían las naciones. Padre de Ismael e Isaac, murió a los 175 años.
+razon: 'Perspicacia «Abrahán», párr. 3, 4, 8, 13, 14 y 17: nace en 2018 y muere en 1843 a.e.c. El cuadro del estudio 3 da
+  los mismos años.'
+fuentes:
+- it-abrahan
+- si-3
+- genesis-11
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Abrahán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
+  tipo: perspicacia
+- titulo: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-abrahan
+  - genesis-11
+  razon: 'Perspicacia «Abrahán», párr. 3: hijo de Taré, que tenía 130 años cuando nació (Gé 11:26, 32; 12:4).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: ur
+  fecha:
+    desde: -2017
+    hasta: -2017
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 2018 a.e.c.
+  deducido: false
+  fuentes:
+  - it-abrahan
+  - si-3
+  razon: 'Perspicacia «Abrahán», párr. 3 y 4: nació en 2018 a.e.c. y su ciudad de origen era Ur, en Caldea.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: haran
+  deducido: false
+  fuentes:
+  - it-abrahan
+  razon: 'Perspicacia «Abrahán», párr. 7 y 8: vivió en Harán hasta que murió su padre y salió de allí en 1943 a.e.c.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - it-abrahan
+  razon: 'Perspicacia «Abrahán», párr. 9: un hambre muy severa lo obligó a vivir un tiempo en Egipto (Gé 12:10).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - it-abrahan
+  razon: 'Perspicacia «Abrahán», párr. 10: se estableció junto a los árboles grandes de Mamré, en Hebrón (Gé 13:18).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: beer-seba
+  deducido: false
+  fuentes:
+  - it-beer-seba
+  - genesis-21
+  razon: 'Perspicacia «Beer-seba», párr. 5: allí hizo un pacto con Abimélec, plantó un tamarisco y siguió viviendo tras
+    volver de Moria (Gé 21:31-33).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

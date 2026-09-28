@@ -1,0 +1,125 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jacob
+nombre: Jacob
+nombres:
+- nombre: Jacob
+- nombre: Israel
+  nota: Nombre que recibió tras luchar con un ángel junto al Jaboq (Gé 32:28).
+fecha:
+  desde: -1857
+  hasta: -1710
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1858-1711 a.e.c.
+desambiguacion: Jacob hijo de Isaac, llamado Israel; no el Jacob padre de José, el esposo de María.
+resumen: Hijo de Isaac y Rebeca, gemelo menor de Esaú. Vivió veinte años en Harán, donde se casó con Lea y Raquel. De sus
+  doce hijos salieron las tribus de Israel. Murió en Egipto a los 147 años.
+razon: 'Perspicacia «Jacob», núm. 1, párr. 2, 10, 13, 25 y 41: nace en 1858 y muere en 1711 a.e.c. El cuadro del estudio
+  3 da los mismos años.'
+fuentes:
+- it-jacob
+- si-3
+- genesis-25
+- genesis-47
+enlaces:
+- titulo: 'Perspicacia: «Jacob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: isaac
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-25
+  razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
+  estado: verificado
+- tipo: pariente
+  persona: rebeca
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-25
+  razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: haran
+  fecha:
+    desde: -1780
+    hasta: -1760
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1781-1761 a.e.c.
+  deducido: false
+  fuentes:
+  - si-3
+  - it-jacob
+  razon: El estudio 3 fecha su huida a Harán en 1781 y su regreso en 1761 a.e.c.; Perspicacia «Jacob», párr. 10, cuenta
+    veinte años.
+  estado: verificado
+- tipo: vivio_en
+  lugar: siquem
+  deducido: false
+  fuentes:
+  - it-jacob
+  razon: 'Perspicacia «Jacob», párr. 28: compró un terreno junto a Siquem y se quedó allí (Gé 33:18-20).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: betel
+  deducido: false
+  fuentes:
+  - it-jacob
+  razon: 'Perspicacia «Jacob», párr. 30 a 32: por mandato de Dios se trasladó a Betel y vivió allí un tiempo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-35
+  razon: 'Perspicacia «Jacob», párr. 34: se trasladó a Hebrón, donde vivía Isaac (Gé 35:27).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  fecha:
+    desde: -1727
+    hasta: -1710
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1728-1711 a.e.c.
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-47
+  razon: 'Perspicacia «Jacob», párr. 38 y 41: llegó a Egipto en 1728 y murió allí en 1711, tras 17 años (Gé 47:28).'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  fecha:
+    desde: -1710
+    hasta: -1710
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1711 a.e.c.
+  deducido: false
+  fuentes:
+  - it-jacob
+  - si-3
+  - genesis-47
+  razon: 'Perspicacia «Jacob», párr. 41: murió en 1711 a.e.c. después de vivir 17 años en Egipto (Gé 47:28).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

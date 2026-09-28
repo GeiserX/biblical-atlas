@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: neftali-hijo-de-jacob
+nombre: Neftalí
+nombres:
+- nombre: Neftalí
+desambiguacion: Neftalí hijo de Jacob; no la tribu ni su territorio.
+resumen: Hijo de Jacob y de Bilhá, sierva de Raquel; el segundo que ella tuvo, en Padán-aram. Raquel lo contó como suyo.
+  Tuvo cuatro hijos.
+razon: Perspicacia «Neftalí», núm. 1, párr. 2 y 3; Gé 30:7, 8 y 46:24.
+fuentes:
+- it-neftali
+- genesis-30
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Neftalí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003180
+  tipo: perspicacia
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-neftali
+  - genesis-30
+  razon: 'Perspicacia «Neftalí», párr. 2: hijo de Jacob y Bilhá (Gé 30:7, 8).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-neftali
+  razon: 'Perspicacia «Neftalí», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

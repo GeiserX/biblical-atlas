@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benjamin-hijo-de-jacob
+nombre: Benjamín
+nombres:
+- nombre: Benjamín
+- nombre: Ben-oní
+  nota: Nombre que le dio Raquel antes de morir; Jacob lo cambió (Gé 35:18).
+desambiguacion: Benjamín hijo de Jacob; no la tribu ni los otros benjamitas del mismo nombre.
+resumen: Duodécimo hijo de Jacob y hermano de padre y madre de José; al parecer, el único nacido en Canaán. Raquel murió
+  en el parto. Jacob lo quería mucho y le costó dejarlo ir a Egipto.
+razon: Perspicacia «Benjamín», núm. 1, párr. 2 y 3; Gé 35:16-19 y 43:1-15.
+fuentes:
+- it-benjamin
+- genesis-35
+enlaces:
+- titulo: 'Perspicacia: «Benjamín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000640
+  tipo: perspicacia
+- titulo: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-benjamin
+  - genesis-35
+  razon: 'Perspicacia «Benjamín», párr. 2: Raquel lo dio a luz camino de Belén y murió en el parto (Gé 35:16-19).'
+  estado: verificado
+- tipo: pariente
+  persona: raquel
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-benjamin
+  - genesis-35
+  razon: 'Perspicacia «Benjamín», párr. 2: Raquel lo dio a luz camino de Belén y murió en el parto (Gé 35:16-19).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

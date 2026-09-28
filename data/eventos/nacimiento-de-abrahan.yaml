@@ -9,8 +9,10 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 2018 a.e.c.
-lugares: []
-personas: []
+lugares:
+- ur
+personas:
+- abrahan
 pasajes:
 - Gé 11:26-32
 - Gé 12:4

@@ -11,19 +11,26 @@ fecha:
   texto: 2370 a.e.c.
   detalle:
     estacion: otoño
-lugares: []
-personas: []
+lugares:
+- ararat
+personas:
+- noe
+- sem
+- cam
+- jafet
 pasajes:
 - Gé 7:6-24
+- Gé 8:4
 - 1Pe 3:20
 resumen: Las aguas cubren la Tierra en el año 600 de la vida de Noé. Sobreviven en el arca Noé y su familia, ocho personas,
   con los animales.
-razon: El cuadro del estudio 3 pone en el otoño de 2370 a.e.c. la caída de las aguas; Perspicacia «Diluvio» da el mismo
-  año y el día 17 del segundo mes.
+razon: El estudio 3 pone en el otoño de 2370 a.e.c. la caída de las aguas; Perspicacia «Diluvio» da el mismo año y el
+  día 17 del segundo mes. El arca se posó en los montes de Ararat (Gé 8:4).
 fuentes:
 - si-3
 - it-diluvio
 - genesis-7
+- genesis-8
 enlaces:
 - titulo: 'Perspicacia: «Diluvio»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001150

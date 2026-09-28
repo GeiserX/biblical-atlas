@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simeon-hijo-de-jacob
+nombre: Simeón
+nombres:
+- nombre: Simeón
+desambiguacion: Simeón hijo de Jacob; no el anciano Simeón del templo ni la tribu.
+no_confundir_con:
+- simeon-del-templo
+resumen: Segundo hijo de Jacob y Lea. Con Leví vengó a su hermana Dina matando a los hombres de Siquem. En Egipto, José
+  lo retuvo preso hasta que sus hermanos volvieran con Benjamín.
+razon: Perspicacia «Simeón», núm. 1, párr. 2 a 4; Gé 29:33, 34:25-31 y 42:24.
+fuentes:
+- it-simeon
+- genesis-29
+- genesis-34
+enlaces:
+- titulo: 'Perspicacia: «Simeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004124
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-simeon
+  - genesis-29
+  razon: 'Perspicacia «Simeón», párr. 2: segundo hijo de Jacob, que tuvo con Lea (Gé 29:33).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-simeon
+  - genesis-29
+  razon: 'Perspicacia «Simeón», párr. 2: segundo hijo de Jacob, que tuvo con Lea (Gé 29:33).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-benjamin
+  - it-jacob
+  razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nació en Padán-aram, donde Jacob vivía
+    junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

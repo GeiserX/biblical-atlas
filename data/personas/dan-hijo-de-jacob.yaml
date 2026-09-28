@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dan-hijo-de-jacob
+nombre: Dan
+nombres:
+- nombre: Dan
+desambiguacion: Dan hijo de Jacob; no la tribu ni la ciudad del norte que se llamó Dan.
+resumen: Quinto hijo de Jacob y primogénito de Bilhá, la sierva de Raquel, que lo tuvo por suyo. Nació en Padán-aram. Cuando
+  Jacob bajó a Egipto, Dan ya tenía un hijo, Husim.
+razon: Perspicacia «Dan», núm. 1, párr. 2; Gé 30:5, 6 y 46:23.
+fuentes:
+- it-dan
+- genesis-30
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001115
+  tipo: perspicacia
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-dan
+  - genesis-30
+  razon: 'Perspicacia «Dan», párr. 2: quinto hijo de Jacob, que tuvo con Bilhá (Gé 30:5, 6).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-dan
+  razon: 'Perspicacia «Dan», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

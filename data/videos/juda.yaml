@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: juda
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbvod26_27_VIDEO"
+    titulo: "Leonard Myers: Jehová nos sostiene en los momentos difíciles (Sal. 55:22)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_27_VIDEO&appLanguage=S"
+    publicado: "2026-08-21"
+    menciones: 2
+    terminos:
+      "tierra de Judá": 2

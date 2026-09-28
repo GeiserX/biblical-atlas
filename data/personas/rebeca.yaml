@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rebeca
+nombre: Rebeca
+nombres:
+- nombre: Rebeca
+fecha:
+  desde: -1877
+  hasta: -1780
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1878-1781 a.e.c. (de su boda con Isaac a la huida de Jacob)
+resumen: Hija de Betuel y sobrina nieta de Abrahán. Aceptó dejar su casa para casarse con Isaac. Tras años sin hijos dio
+  a luz a los gemelos Esaú y Jacob, y procuró que Jacob recibiera la bendición.
+razon: 'Perspicacia «Rebeca», párr. 2 a 7 y 9; Gé 24 y 25:20-26. Años: boda hacia 1878 a.e.c. (párr. 3 y estudio 3);
+  Jacob huye a Harán por consejo de ella en 1781.'
+fuentes:
+- si-3
+- it-rebeca
+- genesis-24
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Rebeca»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003658
+  tipo: perspicacia
+- titulo: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: isaac
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-rebeca
+  - genesis-24
+  razon: 'Perspicacia «Rebeca», párr. 6: Isaac la llevó a la tienda de Sara y la tomó por esposa (Gé 24:67).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

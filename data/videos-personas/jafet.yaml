@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: jafet
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r21_2_VIDEO"
+    titulo: "Viernes mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_2_VIDEO&appLanguage=S"
+    publicado: "2021-06-28"
+    menciones: 2
+    terminos:
+      "Jafet": 2
+  - docid: "pub-jwb-100_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
+      "Jafet": 2
+  - docid: "pub-jwb-100_3_VIDEO"
+    titulo: "Anthony Morris: ¡Serán fantásticas!"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_3_VIDEO&appLanguage=S"
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
+      "Jafet": 2
