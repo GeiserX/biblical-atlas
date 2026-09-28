@@ -7,6 +7,7 @@
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 a { color: var(--link); }
+:root:not(.be-reunion) ::selection { background: var(--accent-soft); color: var(--ink); }
 
 /* ---------- Barra superior ---------- */
 .be-logo { text-decoration: none; }

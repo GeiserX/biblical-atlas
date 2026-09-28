@@ -57,7 +57,7 @@ body {
   background: var(--paper); border: 1px solid var(--line);
   color: var(--ink-3); font-size: var(--fs-md);
 }
-.be-search--focus { background: var(--surface); border-color: var(--focus); box-shadow: 0 0 0 3px rgba(47, 111, 115, .15); color: var(--ink); }
+.be-search--focus { background: var(--surface); border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 15%, transparent); color: var(--ink); }
 .be-search__text { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .be-search__text b { color: var(--ink); font-weight: 600; }
 .be-kbd { font-family: var(--font-sans); font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); border: 1px solid var(--line-2); border-bottom-width: 2px; border-radius: 5px; padding: 1px 6px; background: var(--surface); }
@@ -73,9 +73,9 @@ body {
 .be-spacer { flex: 1; }
 
 /* Fecha activa en la barra */
-.be-date { display: flex; align-items: baseline; gap: 8px; padding: 4px 14px; border-radius: var(--r-md); background: var(--gold-soft); border: 1px solid #ead9b3; white-space: nowrap; }
-.be-date__value { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: #5a4212; line-height: 1.1; }
-.be-date__hint { font-size: var(--fs-xs); color: #8a6a2a; font-weight: 500; }
+.be-date { display: flex; align-items: baseline; gap: 8px; padding: 4px 14px; border-radius: var(--r-md); background: var(--gold-soft); border: 1px solid var(--gold-line); white-space: nowrap; }
+.be-date__value { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--gold-ink); line-height: 1.1; }
+.be-date__hint { font-size: var(--fs-xs); color: var(--gold-hint); font-weight: 500; }
 
 /* ---------- Botones, chips, insignias ---------- */
 .be-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: var(--r-md); border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); font: 600 var(--fs-sm)/1 var(--font-sans); white-space: nowrap; }
@@ -91,7 +91,7 @@ body {
 .be-chip__dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
 
 /* Referencia bíblica: se pulsa para leer en wol.jw.org */
-.be-ref { display: inline-flex; align-items: center; gap: 5px; padding: 1px 8px 1px 7px; border-radius: var(--r-pill); background: var(--tier1-soft); color: var(--tier1); font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; text-decoration: none; border: 1px solid #cfe0d6; }
+.be-ref { display: inline-flex; align-items: center; gap: 5px; padding: 1px 8px 1px 7px; border-radius: var(--r-pill); background: var(--tier1-soft); color: var(--tier1); font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; text-decoration: none; border: 1px solid var(--tier1-line); }
 .be-ref::before { content: ""; width: 10px; height: 12px; border-radius: 1.5px; border: 1.5px solid currentColor; border-left-width: 3px; opacity: .85; }
 
 /* Enlace de salida a wol.jw.org (nunca copiamos su contenido: enlazamos) */
@@ -110,7 +110,7 @@ body {
 
 /* Chips de cronología: TNM principal, secular como nota */
 .be-chrono { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 10px; border-radius: var(--r-pill); font-size: var(--fs-xs); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.be-chrono--tnm { background: var(--gold-soft); color: #6e4f15; border: 1px solid #ead9b3; }
+.be-chrono--tnm { background: var(--gold-soft); color: var(--gold-ink); border: 1px solid var(--gold-line); }
 .be-chrono--secular { background: var(--secular-soft); color: var(--secular); border: 1px dashed #b8c2cf; }
 .be-chrono--approx { background: transparent; color: var(--ink-3); border: 1px dashed var(--line-2); }
 .be-chrono small { font-weight: 500; opacity: .8; }
@@ -224,7 +224,7 @@ body {
 .be-city--future .be-city__label { color: var(--ink-3); font-weight: 500; }
 .be-city--dest .be-city__dot { background: var(--gold); border-color: #fff; box-shadow: 0 0 0 1.5px var(--gold); }
 .be-city--current .be-city__dot { width: 14px; height: 14px; background: var(--accent); border: 3px solid #fff; box-shadow: 0 0 0 1.5px var(--accent), 0 2px 6px rgba(0,0,0,.25); }
-.be-city--current::before { content: ""; position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; background: radial-gradient(circle, rgba(163, 67, 43, .28), rgba(163, 67, 43, 0) 70%); border: 1.5px solid rgba(163, 67, 43, .45); }
+.be-city--current::before { content: ""; position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 28%, transparent), transparent 70%); border: 1.5px solid color-mix(in srgb, var(--accent) 45%, transparent); }
 .be-city--current .be-city__label { font-size: 20px; color: var(--ink); }
 .be-city--uncertain .be-city__dot { background: transparent; border: 2px dashed var(--zone); }
 
@@ -303,7 +303,7 @@ body {
 .be-tick span { position: absolute; top: 6px; left: 6px; font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .be-tick::before { content: ""; position: absolute; left: 0; top: 0; height: 26px; border-left: 1px solid var(--line-2); }
 .be-tick--minor::before { height: 7px; top: 19px; border-color: var(--line); }
-.be-gridline { position: absolute; top: 26px; bottom: 0; border-left: 1px solid rgba(211, 198, 176, .45); }
+.be-gridline { position: absolute; top: 26px; bottom: 0; border-left: 1px solid var(--rejilla); }
 .be-lanes { position: absolute; left: 0; right: 0; top: 26px; bottom: 0; }
 .be-lane { position: relative; height: 30px; border-bottom: 1px solid rgba(228, 219, 203, .7); }
 .be-lane:nth-child(even) { background: rgba(246, 241, 231, .5); }
@@ -318,7 +318,7 @@ body {
 .be-point-label--left { margin-left: -12px; transform: translateX(-100%); }
 .be-span--clipped { border-top-left-radius: 0; border-bottom-left-radius: 0; }
 .be-cursor { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid var(--gold); z-index: 4; }
-.be-cursor::before { content: ""; position: absolute; top: 26px; bottom: 0; left: -9px; width: 16px; background: linear-gradient(90deg, rgba(184, 137, 47, 0), rgba(184, 137, 47, .10), rgba(184, 137, 47, 0)); }
+.be-cursor::before { content: ""; position: absolute; top: 26px; bottom: 0; left: -9px; width: 16px; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold) 10%, transparent), transparent); }
 .be-cursor__flag { position: absolute; top: 2px; left: -1px; transform: translateX(-50%); background: var(--gold); color: #fff; font-size: var(--fs-2xs); font-weight: 700; padding: 3px 8px; border-radius: 5px; white-space: nowrap; box-shadow: var(--shadow-1); }
 .be-uncertain-band { position: absolute; top: 26px; bottom: 0; background: repeating-linear-gradient(135deg, rgba(122, 92, 142, .07) 0 6px, transparent 6px 12px); border-left: 1px dashed rgba(122, 92, 142, .4); border-right: 1px dashed rgba(122, 92, 142, .4); }
 
