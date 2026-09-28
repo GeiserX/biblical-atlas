@@ -30,6 +30,34 @@ const inicial = (sel) => { const n = nombreDe(sel); return sel.startsWith('carta
 // ---------------------------------------------------------------------------
 const estudio = BE.estudio = BE.estudio || { vistas: {} };
 estudio.abrirSolo = (nombre) => { for (const [k, v] of Object.entries(estudio.vistas)) if (k !== nombre && v.abierta()) v.cerrar(true); };
+/** En escritorio grafo, conexión y lectura tapan la izquierda del mapa. Su ancho pasa a ser el relleno izquierdo del
+    mapa, así que encuadrar, centrar y seguir a Pablo dejan lo importante a la vista, a la derecha de la vista abierta.
+    En el móvil no: grafo y conexión tapan el mapa entero y la hoja de lectura ya la cuenta el encuadre de mapa.js. */
+let rellenoPuesto = -1;
+estudio.relleno = () => {
+  const map = BE.mapa?.gl;
+  if (!map?.setPadding) return;
+  const caja = map.getContainer().getBoundingClientRect();
+  let left = 0;
+  if (!estrecha()) {
+    for (const id of ['vista-grafo', 'vista-conexion', 'vista-lectura']) {
+      const el = document.getElementById(id);
+      if (el && !el.hidden && el.offsetParent) left = Math.max(left, Math.round(el.getBoundingClientRect().right - caja.left));
+    }
+  }
+  left = Math.max(0, Math.min(left, caja.width - 240));
+  if (left === rellenoPuesto) return;
+  rellenoPuesto = left;
+  map.setPadding({ top: 0, right: 0, bottom: 0, left });
+};
+window.addEventListener('resize', () => estudio.relleno());
+/** Abierta desde un enlace sin fecha ni selección (#leer=genesis-12, #grafo=jesus), la vista hace lo mismo que al
+    abrirla a mano: selecciona, lleva el cursor a su momento y encuadra. Va después de que base.js lea la dirección. */
+estudio.trasEnlace = (fn) => {
+  const p = new URLSearchParams(location.hash.slice(1));
+  if (p.has('t') || p.has('sel')) return;
+  queueMicrotask(fn);
+};
 
 // ---------------------------------------------------------------------------
 // Grafo
@@ -253,7 +281,9 @@ function abrirGrafo(id, { ruta = null, desdeHash = false } = {}) {
   G.previos = new Set();
   pintarGrafo(true);
   plegarHoja();
+  estudio.relleno();
   if (!desdeHash) { BE.seleccionar({ tipo: 'persona', id: centro() }, { mover: !BE.E.sel, encuadrar: true }); BE.guardarHash(); }
+  else estudio.trasEnlace(() => { if (abierto() && !BE.E.sel) BE.seleccionar({ tipo: 'persona', id: centro() }, { mover: true, encuadrar: true }); });
   $('#vista-grafo').focus?.();
 }
 function centrarEn(id) {
@@ -268,6 +298,7 @@ function cerrarGrafo(silencioso) {
   G.ruta = []; G.clave = '';
   ocultarTarjeta();
   pintarGrafo(true);
+  estudio.relleno();
   if (!silencioso) BE.guardarHash();
 }
 
@@ -457,6 +488,7 @@ function abrirConexion(a, b, { desdeHash = false } = {}) {
   RED = null;
   pintarConexion();
   plegarHoja();
+  estudio.relleno();
   if (!desdeHash) BE.guardarHash();
   if (!C.b) setTimeout(() => $('#conexion-b')?.focus(), 30);
 }
@@ -464,6 +496,7 @@ function cerrarConexion(silencioso) {
   if (!conAbierta()) return;
   C.a = C.b = null; C.forzada = false; clearTimeout(C.recorrer);
   pintarConexion();
+  estudio.relleno();
   if (!silencioso) BE.guardarHash();
 }
 function recorrerCamino() {

@@ -269,6 +269,11 @@ def integridad(datos):
                     ref(f, "lugar", lid, "lugares")
                 for pid in o.get("personas") or []:
                     ref(f, "persona", pid, "personas")
+                if (o.get("orden_relato") or {}).get("tras") is not None:
+                    ref(f, "orden_relato.tras", o["orden_relato"]["tras"], "eventos")
+                for pid in o.get("presentes") or []:
+                    if pid not in (o.get("personas") or []):
+                        errores.append(f"{f}: presentes nombra a '{pid}', que no está en personas")
             elif tipo == "periodos":
                 for lid in o.get("lugares") or []:
                     ref(f, "lugar", lid, "lugares")

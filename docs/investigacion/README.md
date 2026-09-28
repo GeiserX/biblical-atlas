@@ -40,7 +40,7 @@ Las fechas siguen el objeto `fecha` de [`docs/ideas/mockups/data/README.md`](../
 | `tipo: derivada` | Cálculo nuestro, no de la fuente. Exige `fecha.nota` con la cuenta y `estado: pendiente` en el hecho. Los otros tipos son `anclada` y `narrativa`. |
 | `detalle` | Opcional: `{mes: nisan, dia: 14}` o `{estacion: otoño}`. El mes es un id de `data/calendario.yaml`; el día va de 1 a 30 y necesita mes; las estaciones son `primavera`, `verano`, `otoño` e `invierno`. |
 | `alternativas` | Opcional, en cualquier entidad: lista de `{fecha, fuentes, nota}` cuya `fecha` lleva `cronologia: secular`. Solo con una fuente que jw.org haya usado. |
-| `orden_relato` | Opcional, en eventos: `{serie: a7, orden: 57}` para ordenar sucesos sin fecha fina (la armonía de la tabla A7, los capítulos de Hechos). |
+| `orden_relato` | Opcional, en eventos: `{serie: a7, orden: 57}` para ordenar sucesos sin fecha fina (la armonía de la tabla A7, los capítulos de Hechos). Con `tras: <id de evento>`, el suceso va después de ese otro aunque sea de otra serie: la elección de Matías (Hechos) va tras la ascensión (A7). |
 
 **Comprobación año/texto.** Si `fecha.texto` dice «537 a.e.c.», `desde` o `hasta` tiene que ser −536. Se mira el primer año con era del texto (y los dos de un rango como «c. 49-52 e.c.»). Caza el error de un año que se comete al olvidar que no hubo año cero.
 
@@ -79,7 +79,9 @@ relaciones:
 
 **Cartas.** `escritor` es obligatorio (id de persona; las 14 de Pablo llevan `escritor: pablo`). Opcionales: `destinatarios.personas`, `portadores` y `personas` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
-**Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona).
+**Eventos.** `lugares` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `presentes` es opcional: lista de ids de `personas` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `build.py` comprueba que cada id de `presentes` está también en `personas`. Un suceso de nacimiento («Nace…», «Nacimiento…») lista en `personas` solo a quien nace, porque el sitio calcula con él la edad de cada persona que nombra.
+
+**Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona). Una potencia sin fecha de ascenso (`fecha.desde: null`) puede llevar `consta_desde`, el año desde el que las fuentes ya la muestran mandando: Asiria al tomar Samaria en 740 a.e.c. Antes de ese año el sitio dice «cambio sin fechar»; desde ese año, solo esa potencia. La `razon` del periodo dice de dónde sale.
 
 **Hallazgos** (`data/hallazgos/<id>.yaml`): `nombre`, `lugar_hallazgo` (id de lugar), `relaciona` (lista de selecciones `tipo:id`), `fecha_objeto` (objeto `fecha`), `resumen`, `razon`, `fuentes`, `consultado`, `estado`. Una fuente de nivel 2 solo vale junto a una de nivel 1 que la cite. Sin imágenes en esta tanda. Campos opcionales: `identificacion` (`segura` o `incierta`; con `incierta` la ficha pone la insignia «identificación incierta» y lo dice en «Lo que el texto no dice»), `donde_hoy` (texto de 40 palabras como mucho: dónde se guarda hoy el objeto) y `no_afirmamos` (lista de frases de 40 palabras como mucho, como en las personas). `scripts/validate.py` comprueba los tres.
 

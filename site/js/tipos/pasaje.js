@@ -158,6 +158,19 @@ function fichaPasaje(id) {
     ${videosPasajeHtml(lib, cap)}`;
 }
 
+/** Al elegir un capítulo, el cursor va al primer pasaje del relato con fecha (Génesis 12 empieza en 1943 a.e.c., aunque
+    cite de pasada el nacimiento de Abrahán). Sin índice de lectura, a lo primero que implica, como cualquier tipo. */
+function momentoPasaje(id) {
+  const p = pasajeDeId(id);
+  if (!p) return null;
+  const deSel = (s) => { const d = s && BE.tipos.get(s.tipo); return d?.momentoImplicado?.(s.id) ?? null; };
+  for (const x of BE.lectura?.pasajes?.(p.libro, p.cap) || []) {
+    const t = deSel(BE.parseSel(x.sel));
+    if (t != null) return t;
+  }
+  const ts = [...implicados({ tipo: 'pasaje', id }).claves].map((k) => { const i = k.indexOf(':'); return deSel({ tipo: k.slice(0, i), id: k.slice(i + 1) }); }).filter((t) => t != null);
+  return ts.length ? Math.min(...ts) : null;
+}
 BE.tipo('pasaje', {
   nodo: 'texto',
   existe: (id) => !!pasajeDeId(id),
@@ -169,6 +182,7 @@ BE.tipo('pasaje', {
     BE.D.cartas.filter((c) => citas(c.referencia)[0]?.libro.num === lib.num).forEach((c) => BE.anadirCarta(r, c));
     (BE.D.eventos || []).filter((e) => citaCubre(citas((e.pasajes || []).join('; ')), lib, cap)).forEach((e) => { r.claves.add(`evento:${e.id}`); (e.lugares || []).forEach((x) => r.lugares.add(x)); });
   },
+  momento: momentoPasaje,
   ficha: fichaPasaje,
   // «Hch 16», «Hechos 16:12», «1Co 5», «1 Corintios 13»
   buscar(q) {

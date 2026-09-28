@@ -380,8 +380,10 @@ function iniciarEventos() {
       if (sel) {
         e.preventDefault();
         if (E.sel && E.sel.tipo === sel.tipo && E.sel.id === sel.id) { seleccionar(null, { mover: false, encuadrar: false }); return; }   // segundo clic: se deselecciona
+        // Un lugar pulsado en el mapa no mueve el cursor ni el mapa, salvo que nada suyo caiga en la vista de la línea
+        // (Edén pulsado en 1473 a.e.c.): entonces el cursor va a su primer hecho.
         const enMapa = sel.tipo === 'lugar' && s.closest('.maplibregl-marker');
-        seleccionar(sel, enMapa ? { mover: false, encuadrar: false } : {});
+        seleccionar(sel, enMapa ? { mover: !!BE.lugarFueraDeVista?.(sel.id), encuadrar: false } : {});
       }
     }
   });

@@ -1,7 +1,7 @@
 /* biblical-earth · estilos del mapa y del contenido de las fichas. Dueño durante el reparto: app-mapa. */
 
 /* ---------- Mapa ---------- */
-.mapa { background: #c9d2cd; }
+.mapa { background: #b8c7c0; }   /* el mar del relieve antiguo, por si asoma en una animación */
 .app[data-mapa="actual"] .mapa, .app[data-mapa="cortina"] .mapa { background: #dfe8ec; }
 .mapa::after { z-index: 1; }
 .mapa-gl { position: absolute; inset: 0; }
@@ -157,6 +157,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 
 /* Lugares: pendientes (C-03), montes, ubicación difusa (M-10), agua (M-23), ocultos y agrupados (M-15) */
 .marca-lugar.oculto, .marca-region.oculto, .marca-agua.oculto, .marca-lugar.agrupado { display: none; }
+/* Lugares sin nada en el tramo de fecha a la vista (informe 4): no se dibujan. */
+.marca-lugar.otra-epoca, .marca-region.otra-epoca { display: none; }
 .marca-lugar.pendiente .punto { border-style: dashed; }
 .marca-lugar--monte .punto { border-radius: 0; border: 0; box-shadow: none; background: var(--ink-2); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 .marca-lugar--difuso .punto { inset: -9px; border: 0; background: radial-gradient(circle, rgba(122, 92, 142, .45), rgba(122, 92, 142, 0) 70%); box-shadow: none; }
@@ -187,6 +189,8 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .cand.sin-etiqueta .cand-rotulo { visibility: hidden; }
 .cand:hover .cand-rotulo { visibility: visible; z-index: 3; }
 .cand--foco { z-index: 4; }
+/* Junto a Jerusalén (u otra ciudad mayor), el candidato de un lugar no elegido espera a que el zoom lo separe de ella. */
+.cand.cand--junto, .cand.cand--junto .cand-rotulo { visibility: hidden; pointer-events: none; }
 .cand--foco .cand-punto { box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--cand); }
 .rotulo-zona { cursor: pointer; }
 .rotulo-zona.sin-etiqueta { visibility: hidden; }
@@ -242,7 +246,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .fila-nombre:hover, .fila-nombre.fila--foco { background: var(--gold-soft); }
 .nota-nombres { margin: 0; font-size: var(--fs-xs); color: var(--ink-3); line-height: 1.4; }
 .nota-nombres .be-tier { margin-right: 4px; }
-.situacion { position: absolute; top: 14px; left: 14px; z-index: 2; width: 180px; height: 101px; padding: 0; overflow: hidden; cursor: crosshair; }
+.situacion { position: absolute; top: 14px; left: 14px; z-index: 2; width: 180px; height: 119px; padding: 0; overflow: hidden; cursor: crosshair; }
 .situacion img { display: block; width: 100%; height: 100%; opacity: .9; }
 .situacion-recuadro { position: absolute; border: 2px solid var(--accent); background: rgba(163, 67, 43, .12); border-radius: 2px; pointer-events: none; }
 

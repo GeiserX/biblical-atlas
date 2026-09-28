@@ -514,6 +514,8 @@ def validar(datos):
             if orden is not None and (not isinstance(orden, dict) or not ID.match(str(orden.get("serie")))
                                       or not _entero(orden.get("orden")) or orden["orden"] < 0):
                 err(f"{donde}: orden_relato debe ser {{serie: <slug>, orden: <entero>}}")
+            if isinstance(orden, dict) and "tras" in orden and not ID.match(str(orden["tras"])):
+                err(f"{donde}: orden_relato.tras debe ser el id de un evento")
             textos_largos(limpio, donde, err)
             if tipo == "lugares":
                 validar_lugar(limpio, donde, err, fuentes)
@@ -553,6 +555,15 @@ def validar(datos):
                         err(f"{donde}: {k} debe ser una lista de ids de personas")
                 if "personas" in (limpio.get("destinatarios") or {}) and not isinstance(limpio["destinatarios"]["personas"], list):
                     err(f"{donde}: destinatarios.personas debe ser una lista de ids de personas")
+            if tipo == "eventos" and "presentes" in limpio and not (
+                    isinstance(limpio["presentes"], list) and limpio["presentes"]):
+                err(f"{donde}: presentes debe ser una lista no vacía de ids de personas")
+            if tipo == "periodos" and "consta_desde" in limpio:
+                cd, fd = limpio["consta_desde"], limpio.get("fecha") or {}
+                if limpio.get("tipo") != "potencia" or fd.get("desde") is not None:
+                    err(f"{donde}: consta_desde solo vale en una potencia sin fecha.desde")
+                elif not _entero(cd) or (_entero(fd.get("hasta")) and cd > fd["hasta"]):
+                    err(f"{donde}: consta_desde debe ser un año astronómico entero anterior a fecha.hasta")
             if tipo == "periodos" and limpio.get("tipo") not in TIPOS_PERIODO:
                 err(f"{donde}: tipo '{limpio.get('tipo')}' no es uno de {sorted(TIPOS_PERIODO)}")
             if tipo == "hallazgos":
