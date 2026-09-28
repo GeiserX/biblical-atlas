@@ -294,7 +294,7 @@ function guardarHash() {
     if (E.sel) p.set('sel', selTexto(E.sel));
     p.set('mapa', E.mapa);
     for (const x of parametros) { const v = x.escribir(); if (v != null && v !== '') p.set(x.nombre, v); }
-    ultimoHash = '#' + p.toString().replace(/%3A/g, ':').replace(/%2F/g, '/');
+    ultimoHash = '#' + p.toString().replace(/%3A/g, ':').replace(/%2F/g, '/').replace(/%2C/g, ',').replace(/%7E/g, '~');
     if (location.hash !== ultimoHash) history.replaceState(null, '', ultimoHash);
   }, 250);
 }

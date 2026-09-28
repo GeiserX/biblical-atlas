@@ -1,9 +1,24 @@
-/* biblical-earth · ayudas de ficha: citas, fuentes, estado, «por qué lo decimos», nombres, enlaces, vídeos y las piezas
-   comunes (fila con botón, migas, cerrar). Las usan las fichas de todos los tipos. Dueño durante el reparto: app-mapa. */
+/* biblical-earth · ayudas de ficha: citas, fuentes, estado, «por qué lo decimos», insignias de nivel, historial,
+   «Proponer una corrección», «lo que el texto no dice», nombres, enlaces, vídeos y las piezas comunes (fila con botón,
+   migas, cerrar). Las usan las fichas de todos los tipos. Dueño durante el reparto: app-mapa. */
 'use strict';
 (() => {
 const BE = window.BE;
-const { esc, citas, fmtDia, fmtAnio, EXTERNO, ES_FILE } = BE;
+const { E, esc, citas, fmtDia, fmtAnio, EXTERNO, ES_FILE } = BE;
+
+const REPO = 'https://github.com/GeiserX/biblical-earth';
+const CARPETA = { lugar: 'lugares', persona: 'personas', viaje: 'viajes', carta: 'cartas', evento: 'eventos', periodo: 'periodos', hallazgo: 'hallazgos', recorrido: 'recorridos' };
+const UN_ANIO = 365 * 24 * 3600 * 1000;
+
+/** Filtro «solo nivel 1» (C-09). Lo guarda la dirección (mapa.js); aquí solo se lee. */
+const soloNivel1 = () => !!BE.filtros?.nivel1;
+const fuente = (id) => BE.D.fuentes[id];
+/** Nivel de un hecho: 1 si alguna de sus fuentes es de nivel 1; 2 si todas son de nivel 2; null si no tiene. */
+function nivelDe(ids) {
+  const ns = (ids || []).map((id) => fuente(id)?.nivel).filter((n) => n != null);
+  if (!ns.length) return null;
+  return ns.includes(1) ? 1 : 2;
+}
 
 function chipsCitas(ref) {
   return citas(ref).map((c) => `<a class="be-ref" href="${BE.urlCapitulo(c.libro, c.cap)}" ${EXTERNO} title="Leer ${esc(c.libro.nombre)} ${c.cap} en wol.jw.org">${esc(c.texto)}</a>`).join('');
@@ -12,21 +27,69 @@ function estadoHtml(estado) {
   const v = estado === 'verificado';
   return `<span class="estado estado--${v ? 'verificado' : 'pendiente'}" title="${v ? 'Alguien abrió la fuente enlazada y lo dice.' : 'Todavía nadie lo ha comprobado en la fuente.'}">${v ? 'Verificado' : 'Pendiente de verificar'}</span>`;
 }
+/** Fecha de consulta y, si hace falta, el aviso de que toca releer o de que la fuente fue sustituida (C-10). */
+function consultaHtml(f) {
+  const t = Date.parse(f.consultado || '');
+  const vieja = Number.isFinite(t) && Date.now() - t > UN_ANIO;
+  return `<span class="fuente-fecha">Consultado el ${esc(fmtDia(f.consultado))}${vieja ? ' · <b class="fuente-aviso">hace más de un año: toca releerla</b>' : ''}${f.nota === 'sustituida' ? ' · <b class="fuente-aviso">sustituida por una publicación más reciente</b>' : ''}</span>`;
+}
 function fuentesHtml(ids) {
-  const fs = (ids || []).map((id) => [id, BE.D.fuentes[id]]).filter(([, f]) => f);
+  let fs = (ids || []).map((id) => [id, fuente(id)]).filter(([, f]) => f);
   if (!fs.length) return '<p class="be-muted">Sin fuente todavía.</p>';
-  return `<ul class="fuentes">${fs.map(([id, f]) => `<li>
+  const ocultas = soloNivel1() ? fs.filter(([, f]) => f.nivel !== 1).length : 0;
+  if (ocultas) fs = fs.filter(([, f]) => f.nivel === 1);
+  return `<ul class="fuentes">${fs.map(([, f]) => `<li>
     <span class="be-tier be-tier--${f.nivel === 1 ? 1 : 2}" data-n="${f.nivel}">Nivel ${f.nivel}</span>
     <div><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span class="fuente-obra">${esc(f.obra)}${f.publicado ? ` · ${esc(f.publicado)}` : ''}</span>
-    <span class="fuente-fecha">Consultado el ${esc(fmtDia(f.consultado))}</span></div></li>`).join('')}</ul>`;
+    ${consultaHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'fuente de nivel 2 oculta' : 'fuentes de nivel 2 ocultas'} por el filtro «solo nivel 1».</p>` : ''}`;
+}
+/** Insignia N1 o N2 de un hecho (C-01). Al pulsarla se despliegan sus fuentes con enlace. */
+function insigniaHtml(ids) {
+  const n = nivelDe(ids);
+  if (!n) return '';
+  const fs = (ids || []).map(fuente).filter(Boolean);
+  return `<details class="insignia insignia--${n}"><summary title="Fuentes de este dato (nivel ${n})" aria-label="Fuentes de nivel ${n}">N${n}</summary><span class="insignia-pop">${fs.map((f) => `<a href="${esc(f.url)}" ${EXTERNO}><b>N${f.nivel}</b> ${esc(f.titulo)}</a>`).join('')}</span></details>`;
+}
+/** Historial plegado de un hecho (P-06): cada cambio con su fecha y su fuente. */
+function historialHtml(obj) {
+  const hs = obj?.historial || [];
+  if (!hs.length) return '';
+  return `<details class="historial"><summary>Historial <b class="cuenta">${hs.length}</b></summary><ol>${[...hs].sort((a, b) => String(b.fecha).localeCompare(String(a.fecha))).map((h) => {
+    const f = fuente(h.fuente);
+    return `<li><span class="fuente-fecha">${esc(fmtDia(h.fecha))}</span> ${esc(h.cambio)}${f ? ` <a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a>` : ''}</li>`;
+  }).join('')}</ol></details>`;
+}
+/** «Proponer una corrección» (P-02): una incidencia de GitHub con el fichero y una plantilla ya escritos. */
+function proponerHtml(tipo, id, nombre) {
+  const carpeta = CARPETA[tipo];
+  if (!carpeta || !id) return '';
+  const fichero = `data/${carpeta}/${id}.yaml`;
+  const titulo = `Corrección: ${nombre || id} (${tipo})`;
+  const cuerpo = `Fichero: \`${fichero}\`\nVista: ${location.href.split('?')[0].replace(/#.*$/, '')}#sel=${tipo}:${id}\n\n**Qué dato está mal**\n\n\n**Qué debería decir**\n\n\n**Fuente de jw.org que lo sostiene** (URL de wol.jw.org y párrafo)\n\n`;
+  const url = `${REPO}/issues/new?title=${encodeURIComponent(titulo)}&body=${encodeURIComponent(cuerpo)}&labels=${encodeURIComponent('corrección')}`;
+  return `<a class="be-wol proponer" href="${esc(url)}" ${EXTERNO} title="Abre una incidencia en GitHub con el fichero ${esc(fichero)}">Proponer una corrección</a>`;
 }
 function porQueHtml(obj, extra = '') {
-  return `<section class="be-card ficha-sec"><div class="be-card__pad">
+  // El tipo y el nombre salen de la selección cuando la ficha es la del objeto seleccionado.
+  const deSel = E.sel && obj?.id && E.sel.id === obj.id;
+  const propuesta = deSel ? proponerHtml(E.sel.tipo, obj.id, BE.nombreSel(E.sel)) : '';
+  return `<section class="be-card ficha-sec por-que"><div class="be-card__pad">
     <h3 class="be-card__eyebrow">Por qué lo decimos</h3>
     ${obj.razon ? `<p class="razon">${esc(obj.razon)}</p>` : ''}${extra}
     ${fuentesHtml(obj.fuentes)}
     ${obj.consultado ? `<p class="fuente-fecha">Ficha revisada el ${esc(fmtDia(obj.consultado))}</p>` : ''}
+    ${historialHtml(obj)}
+    ${propuesta ? `<div class="fila-proponer">${propuesta}</div>` : ''}
   </div></section>`;
+}
+/** La `nota` de un hecho (cómo se repartió una fecha sin año, qué no dice el relato del lugar): va con el «por qué». */
+const notaHtml = (nota) => (nota ? `<p class="razon nota-hecho"><b>Nota:</b> ${esc(nota)}</p>` : '');
+/** «Lo que el texto no dice» (C-11): frases de no_afirmamos más las que deduce cada ficha. */
+function noSabemosHtml(frases) {
+  const xs = (frases || []).filter(Boolean);
+  if (!xs.length) return '';
+  return `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lo que el texto no dice</h3>
+    <ul class="no-sabemos">${xs.map((x) => `<li class="be-note be-note--uncertain">${esc(x)}</li>`).join('')}</ul></div></section>`;
 }
 function enlacesHtml(enlaces) {
   if (!enlaces?.length) return '';
@@ -36,7 +99,7 @@ function videosHtml(lugarId) {
   if (BE.VIDEOS === null) {
     return ES_FILE ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Vídeos de jw.org</h3><p class="be-muted">La lista de vídeos se ve al abrir el sitio con un servidor local (ver README).</p></div></section>` : '';
   }
-  const vs = [...(BE.VIDEOS[lugarId] || [])].sort((a, b) => (b.menciones || 0) - (a.menciones || 0));
+  const vs = [...(BE.VIDEOS?.[lugarId] || [])].sort((a, b) => (b.menciones || 0) - (a.menciones || 0));
   if (!vs.length) return '';
   const max = 6;
   return `<section class="be-card ficha-sec"><div class="be-card__pad">
@@ -58,5 +121,8 @@ const botonSel = (sel, titulo, meta = '') => `<button type="button" class="be-ro
 const migas = (...xs) => `<nav class="be-crumbs" aria-label="Ruta">${xs.map((x) => `<span>${esc(x)}</span>`).join('<span class="be-sep" aria-hidden="true">›</span>')}</nav>`;
 const cerrarHtml = () => '<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-accion="cerrar">Cerrar ficha <span aria-hidden="true">×</span></button>';
 
-Object.assign(BE, { chipsCitas, estadoHtml, fuentesHtml, porQueHtml, enlacesHtml, videosHtml, nombresHtml, botonSel, migas, cerrarHtml });
+Object.assign(BE, {
+  chipsCitas, estadoHtml, fuentesHtml, porQueHtml, notaHtml, enlacesHtml, videosHtml, nombresHtml, botonSel, migas, cerrarHtml,
+  insigniaHtml, historialHtml, proponerHtml, noSabemosHtml, nivelDe, soloNivel1,
+});
 })();
