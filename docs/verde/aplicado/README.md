@@ -6,7 +6,7 @@ Elegimos la marca 2 y la paleta Salvia de las [propuestas en verde](../README.md
 - **La paleta.** Los colores están en [`site/kit/tokens.css`](../../../site/kit/tokens.css), sin archivo aparte. Las reglas que escribían a mano el oro o la terracota ahora usan variables.
 - **Los viajes.** Sus colores y los de las cartas están en `--viajes` y `--cartas`, y [`site/js/mapa.js`](../../../site/js/mapa.js) los lee de ahí. Las cartas de Pablo llevan el color del tiempo, `--gold`, igual que el cursor.
 - **Los lugares inciertos.** «Seguro» usaba el verde del antiguo «Verificado» y chocaba con el acento salvia, así que ahora sigue a `--tier1`. Los demás estados no chocan y siguen igual. Los hallazgos conservan su verde oliva.
-- **El modo reunión.** Sigue con sus colores cálidos, porque fija los valores de antes. Comparado píxel a píxel con el sitio antes de la paleta, solo cambia el color del viaje seleccionado, que es un dato y es el mismo en los dos modos.
+- **El modo reunión.** Conserva su fondo y sus textos cálidos, porque fija los valores de antes. Cambian los colores de los viajes, que son un dato y son los mismos en los dos modos, y la marca.
 
 ## Los números
 
