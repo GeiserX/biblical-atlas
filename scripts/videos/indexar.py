@@ -558,6 +558,8 @@ def main() -> None:
                     hallazgos[tipo][oid][lank] = {"docid": docid, "menciones": total,
                                                   "terminos": dict(sorted(terminos.items()))}
 
+    if args.sin_red and not args.salida:
+        sys.exit("--sin-red solo vale con --salida: sin comprobar en jw.org no se escribe en data/ ni en site/.")
     resolutor = Resolutor(carpeta, sin_red=args.sin_red)
     hoy = dt.date.today().isoformat()
     indices: dict[str, dict[str, list[dict]]] = {}

@@ -60,6 +60,9 @@ Quedan 7 hechos en `pendiente`, cada uno con su motivo (ver [Qué queda](#qué-q
 
 ## Qué queda
 
+**Lo primero que se ve.** Al seleccionar a Jesús (o Jerusalén) el encuadre abarca hasta Egipto y Arabia, y los rótulos de Judea se apilan; en el móvil algunos se salen por la derecha. A la vez, con el cursor en el 33 e.c. la línea de tiempo dice «Galilea» mientras la tarjeta «Mientras tanto» dice Perea, y la leyenda sigue titulada «Viajes de Pablo». Son tres arreglos del sitio, no de datos.
+
+
 ### Ideas que dejamos fuera, y por qué
 
 Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de esta tanda. Los motivos son estos:
