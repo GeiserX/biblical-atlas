@@ -27,5 +27,5 @@
   <!-- Title -->
   <text x="450" y="88" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="48" font-weight="bold" fill="white">biblical-earth</text>
   <!-- Subtitle -->
-  <text x="450" y="125" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="white" opacity="0.8">Biblical geography and earth sciences</text>
+  <text x="450" y="125" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="white" opacity="0.8">La Biblia en el mapa y en el tiempo</text>
 </svg>
