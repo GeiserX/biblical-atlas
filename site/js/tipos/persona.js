@@ -89,7 +89,9 @@ function calcularAristas(id) {
     poner({ ...base, sel: `evento:${e.id}`, grupo: 'Hechos', verbo: 'está en este suceso' });
     // Con `presentes`, quien no está en la lista solo se nombra: los lugares del suceso no son lugares de su vida.
     const estuvo = !e.presentes || e.presentes.includes(id);
-    if (estuvo) for (const l of e.lugares || []) if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
+    // Solo el primer lugar: es donde ocurre lo principal y el único donde el suceso sitúa a sus personas (docs/investigacion/README.md).
+    const l = (e.lugares || [])[0];
+    if (estuvo && l && BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
     for (const g of e.personas) if (g !== id && BE.PERS[g]) poner({ ...base, sel: `persona:${g}`, grupo: 'Personas', verbo: `juntos: ${e.titulo}` });
   }
   for (const c of BE.D.cartas || []) {
@@ -253,7 +255,8 @@ function implicadosPersona(id, r) {
   BE.D.cartas.filter((c) => c.escritor === id || (!c.escritor && id === 'pablo') || (c.portadores || []).includes(id) || (c.destinatarios?.personas || []).includes(id)).forEach((c) => BE.anadirCarta(r, c));
   (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => {
     r.claves.add(`evento:${e.id}`);
-    if (!e.presentes || e.presentes.includes(id)) (e.lugares || []).forEach((x) => r.lugares.add(x));
+    const l = (e.lugares || [])[0];
+    if (l && (!e.presentes || e.presentes.includes(id))) r.lugares.add(l);
   });
   (BE.D.periodos || []).filter((p) => p.persona === id).forEach((p) => r.claves.add(`periodo:${p.id}`));
   (BE.PERS[id].relaciones || []).forEach((x) => { if (x.lugar && BE.L[x.lugar]) r.lugares.add(x.lugar); });
