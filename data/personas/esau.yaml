@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esau
+nombre: Esaú
+nombres:
+- nombre: Esaú
+- nombre: Edom
+  nota: Sobrenombre que le vino del guisado rojo de lentejas (Gé 25:30).
+fecha:
+  desde: -1857
+  hasta: -1737
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1858-1738 a.e.c. (de su nacimiento al entierro de Isaac)
+resumen: Primogénito de Isaac y Rebeca y gemelo de Jacob, nacido en 1858 a.e.c. Cazador que vendió su primogenitura por
+  un guisado. Se estableció en Seír y de él vienen los edomitas.
+razon: 'Perspicacia «Esaú», párr. 2, 3, 5 y 10; Gé 25:24-34 y 36:6-8. Perspicacia «Esaú» y el estudio 3: nace en 1858
+  a.e.c.; Isaac muere en 1738 y lo entierran Esaú y Jacob (Gé 35:29).'
+fuentes:
+- si-3
+- it-esau
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Esaú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001417
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: isaac
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-esau
+  - genesis-25
+  razon: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
+  estado: verificado
+- tipo: pariente
+  persona: rebeca
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-esau
+  - genesis-25
+  razon: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
+  estado: verificado
+- tipo: pariente
+  persona: jacob
+  relacion: hermano gemelo
+  deducido: false
+  fuentes:
+  - it-esau
+  - genesis-25
+  razon: 'Perspicacia «Esaú», párr. 2: hermano mellizo de Jacob (Gé 25:24-26).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

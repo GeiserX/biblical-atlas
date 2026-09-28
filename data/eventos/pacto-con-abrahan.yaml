@@ -12,8 +12,10 @@ fecha:
   detalle:
     mes: nisan
     dia: 14
-lugares: []
-personas: []
+lugares:
+- haran
+personas:
+- abrahan
 pasajes:
 - Gé 12:1-7
 - Gál 3:17

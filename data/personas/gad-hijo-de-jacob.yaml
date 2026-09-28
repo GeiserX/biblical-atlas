@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gad-hijo-de-jacob
+nombre: Gad
+nombres:
+- nombre: Gad
+desambiguacion: Gad hijo de Jacob; no la tribu ni el profeta Gad de los días de David.
+resumen: Hijo de Jacob y de Zilpá, sierva de Lea. Nació en Padán-aram hacia 1770 a.e.c. Fue con sus hermanos a Egipto por
+  grano y se estableció allí con su familia en 1728.
+razon: Perspicacia «Gad», núm. 1, párr. 2; Gé 30:9-11 y 46:16.
+fuentes:
+- it-gad
+- genesis-30
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Gad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001583
+  tipo: perspicacia
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-gad
+  - genesis-30
+  razon: 'Perspicacia «Gad», párr. 2: hijo de Jacob y Zilpá (Gé 30:9-11).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-gad
+  razon: 'Perspicacia «Gad», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

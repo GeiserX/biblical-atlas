@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nemrod
+nombre: Nemrod
+nombres:
+- nombre: Nemrod
+resumen: Hijo de Cus y nieto de Cam. Fundó el primer reino después del Diluvio, con Babel entre sus ciudades, y fue un cazador
+  poderoso opuesto a Jehová. Luego edificó en Asiria, también Nínive.
+razon: Perspicacia «Nemrod», párr. 2 a 5; Gé 10:8-12. Perspicacia ve probable que la torre de Babel se empezara bajo su
+  dirección (párr. 4).
+fuentes:
+- it-nemrod
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Nemrod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003259
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: cam
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - it-nemrod
+  - genesis-10
+  razon: 'Perspicacia «Nemrod», párr. 2 y 5: hijo de Cus, que era hijo de Cam (Gé 10:6, 8).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

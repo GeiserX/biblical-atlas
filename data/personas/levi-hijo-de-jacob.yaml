@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: levi-hijo-de-jacob
+nombre: Leví
+nombres:
+- nombre: Leví
+desambiguacion: Leví hijo de Jacob, padre de la tribu sacerdotal; no Leví el recaudador, que es el apóstol Mateo.
+no_confundir_con:
+- mateo
+resumen: Tercer hijo de Jacob y Lea, nacido en Padán-aram. Padre de Guersón, Qohat y Merarí, de quienes vienen los levitas.
+  Fue a Egipto con Jacob y murió allí a los 137 años.
+razon: Perspicacia «Leví», núm. 1, párr. 2 y 3; Gé 29:34, 46:11 y Éx 6:16.
+fuentes:
+- it-levi
+- genesis-29
+- genesis-46
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Leví»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002727
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-levi
+  - genesis-29
+  razon: 'Perspicacia «Leví», párr. 2: tercer hijo de Jacob con Lea (Gé 29:34).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-levi
+  - genesis-29
+  razon: 'Perspicacia «Leví», párr. 2: tercer hijo de Jacob con Lea (Gé 29:34).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-levi
+  razon: 'Perspicacia «Leví», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - it-levi
+  - exodo-6
+  razon: 'Perspicacia «Leví», párr. 3: fue a Egipto con Jacob y murió allí a los 137 años (Éx 6:16).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

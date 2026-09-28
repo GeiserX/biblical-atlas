@@ -1,0 +1,100 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: moises
+nombre: Moisés
+nombres:
+- nombre: Moisés
+fecha:
+  desde: -1592
+  hasta: -1472
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1593-1473 a.e.c.
+resumen: Levita nacido en Egipto y criado en la corte del faraón. Pasó cuarenta años en Madián. Dios lo usó para sacar a
+  Israel de Egipto y lo hizo mediador del pacto de la Ley. Murió en el monte Nebo.
+razon: 'Perspicacia «Moisés», párr. 2, 5, 6, 20 y 30: nace en 1593 y muere en 1473 a.e.c., a los 120 años. El cuadro del
+  estudio 3 da los mismos años.'
+fuentes:
+- it-moises
+- si-3
+- exodo-2
+- deuteronomio-34
+enlaces:
+- titulo: 'Perspicacia: «Moisés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  tipo: perspicacia
+- titulo: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aaron
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-moises
+  - exodo-6
+  razon: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
+  estado: verificado
+- tipo: pariente
+  persona: levi-hijo-de-jacob
+  relacion: bisabuelo
+  deducido: false
+  fuentes:
+  - it-moises
+  - exodo-6
+  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Qohat (Éx 6:16-20).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: egipto
+  fecha:
+    desde: -1592
+    hasta: -1592
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1593 a.e.c.
+  deducido: false
+  fuentes:
+  - it-moises
+  - si-3
+  razon: 'Perspicacia «Moisés», párr. 2: nació en Egipto en 1593 a.e.c.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: madian
+  fecha:
+    desde: -1552
+    hasta: -1513
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 1553-c. 1514 a.e.c.
+  deducido: false
+  fuentes:
+  - si-3
+  - it-moises
+  - it-madian
+  razon: 'El estudio 3: huye a Madián en 1553 y ve la zarza hacia 1514 a.e.c.; Perspicacia «Moisés», párr. 6: vivió allí
+    cuarenta años.'
+  estado: verificado
+- tipo: murio_en
+  lugar: monte-nebo
+  fecha:
+    desde: -1472
+    hasta: -1472
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1473 a.e.c.
+  deducido: false
+  fuentes:
+  - it-moises
+  - deuteronomio-34
+  razon: 'Perspicacia «Moisés», párr. 30: en 1473 a.e.c. subió al monte Nebo, vio la Tierra Prometida y murió (Dt 34:1-5).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ruben-hijo-de-jacob
+nombre: Rubén
+nombres:
+- nombre: Rubén
+desambiguacion: Rubén hijo de Jacob; no la tribu ni el territorio que llevan su nombre.
+resumen: Primogénito de Jacob y Lea. Convenció a sus hermanos de no matar a José. Por acostarse con Bilhá, concubina de
+  su padre, perdió los derechos de primogénito.
+razon: Perspicacia «Rubén», núm. 1, párr. 2, 3, 6 y 7; Gé 29:32, 37:21, 22 y 49:3, 4.
+fuentes:
+- it-ruben
+- genesis-29
+enlaces:
+- titulo: 'Perspicacia: «Rubén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003713
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-ruben
+  - genesis-29
+  razon: 'Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-ruben
+  - genesis-29
+  razon: 'Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-benjamin
+  - it-jacob
+  razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nacieron en Padán-aram, donde Jacob vivía
+    junto a Harán (Gé 29:4; 31:41).'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

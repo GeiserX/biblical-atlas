@@ -14,7 +14,9 @@ fecha:
     dia: 14
 lugares:
 - egipto
-personas: []
+personas:
+- moises
+- aaron
 pasajes:
 - Éx 12:29-42
 - Éx 14:21-31

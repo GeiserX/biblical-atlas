@@ -7,9 +7,18 @@ nombres:
   nota: Otro nombre del mismo rey (2Re 15:19).
 - nombre: Tilgat-Pilnéser
   nota: Grafía de 1 Crónicas 5:26.
+fecha:
+  desde: -789
+  hasta: -757
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 790-758 a.e.c.
 resumen: Rey de Asiria que cobró tributo a Menahem, acudió cuando Acaz le pagó, tomó Damasco y desterró a parte de Israel.
   Sus anales dicen que puso a Hosea en el trono.
-razon: Perspicacia «Tiglat-piléser III», párr. 1-3, y «Péqah», párr. 3-4; 2Re 15:19, 29 y 16:7-9.
+razon: 'Perspicacia «Tiglat-piléser III», párr. 1-3, y «Péqah», párr. 3-4; 2Re 15:19, 29 y 16:7-9. Años: de su entrada
+  en tiempos de Menahem (c. 790) a Hosea (c. 758 a.e.c.).'
 fuentes:
 - it-tiglat-pileser
 - 2-reyes-15

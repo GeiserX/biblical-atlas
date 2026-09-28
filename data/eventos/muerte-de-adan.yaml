@@ -10,7 +10,8 @@ fecha:
   cronologia: tnm
   texto: 3096 a.e.c.
 lugares: []
-personas: []
+personas:
+- adan
 pasajes:
 - Gé 5:5
 resumen: Adán muere a los 930 años, fuera del Edén. Vivió lo bastante para conocer a Lamec, el padre de Noé.

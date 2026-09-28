@@ -14,13 +14,24 @@ lugares:
 personas:
 - jesus
 - tomas
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- natanael
+- mateo
+- santiago-hijo-de-alfeo
+- simon-el-cananita
+- tadeo
 pasajes:
 - Jn 20:26-29
 resumen: Ocho días después vuelve a aparecerse a los discípulos, esta vez con Tomás, que había dudado. Tomás lo
   reconoce como su Señor y su Dios.
-razon: La tabla A7-H da el día y el lugar. La tabla pone esta y las demás apariciones en «Jerusalén; Galilea» después del
-  16 de nisán. El año 33 lo da la cabecera de A7-G (8 de nisán del 33).
+razon: 'La tabla A7-H da el día y el lugar, y A7-G el año 33. Jn 20:24-26: Tomás, uno de los Doce, está con los demás;
+  Lu 24:33, 36 los llama los once, y van los once en personas.'
 fuentes:
+- lucas-24
 - tnm-a7-h
 - juan-20
 - jy-cap-135

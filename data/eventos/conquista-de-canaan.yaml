@@ -10,7 +10,9 @@ fecha:
   cronologia: tnm
   texto: 1467 a.e.c.
 lugares: []
-personas: []
+personas:
+- josue-hijo-de-nun
+- caleb-hijo-de-jefune
 pasajes:
 - Jos 11:23
 - Jos 14:7-10

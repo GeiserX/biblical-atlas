@@ -4,11 +4,20 @@ nombre: Antipas de Pérgamo
 nombres:
 - nombre: Antipas
 desambiguacion: El mártir de Pérgamo (Ap 2:13). No es Herodes Antipas.
+fecha:
+  desde: 96
+  hasta: 96
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: antes de c. 96 e.c.
 resumen: Cristiano de la congregación de Pérgamo muerto por su fe. Jesús lo llama «mi testigo fiel» en su mensaje
   a esa congregación.
-razon: Perspicacia «Antipas», apartado 1 (párr. 2), y «Pérgamo» (párr. 6), que apunta que quizá murió por no adorar
-  al emperador; Ap 2:13.
+razon: 'Perspicacia «Antipas», apartado 1 (párr. 2), y «Pérgamo» (párr. 6), que apunta que quizá murió por no adorar al
+  emperador; Ap 2:13. El estudio 3: Juan escribe Apocalipsis hacia 96 e.c., y Ap 2:13 ya habla de su muerte.'
 fuentes:
+- si-3
 - it-antipas
 - it-pergamo
 - apocalipsis-2

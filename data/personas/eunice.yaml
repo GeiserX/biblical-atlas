@@ -3,10 +3,20 @@ id: eunice
 nombre: Eunice
 nombres:
 - nombre: Eunice
+fecha:
+  desde: 47
+  hasta: 65
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47-65 e.c. (de la primera visita de Pablo a Listra a 2 Timoteo)
 resumen: Judía creyente, casada con un griego, madre de Timoteo. Le enseñó los santos escritos desde niño; quizás
   se hizo cristiana en la primera visita de Pablo a Listra.
-razon: Perspicacia «Eunice»; Hch 16:1; 2Ti 1:5 y 3:15.
+razon: 'Perspicacia «Eunice»; Hch 16:1; 2Ti 1:5 y 3:15. El estudio 3: la primera gira de Pablo va de 47 a 48 e.c.,
+  cuando Perspicacia «Eunice» cree que la conoció en Listra, y 2 Timoteo es de c. 65.'
 fuentes:
+- si-3
 - it-eunice
 - hch-16
 - 2-timoteo-1

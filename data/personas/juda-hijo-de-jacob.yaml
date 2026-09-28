@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juda-hijo-de-jacob
+nombre: Judá
+nombres:
+- nombre: Judá
+desambiguacion: Judá hijo de Jacob; no la tribu, el reino ni los levitas de ese nombre.
+resumen: Cuarto hijo de Jacob y Lea. Propuso vender a José en vez de matarlo; años después se ofreció como esclavo en lugar
+  de Benjamín. De él viene la tribu real de Israel.
+razon: Perspicacia «Judá», núm. 1, párr. 2, 4 y 10, y «Lea», párr. 5; Gé 29:35, 37:26, 27 y 44:18-34.
+fuentes:
+- it-juda
+- it-lea
+- genesis-29
+enlaces:
+- titulo: 'Perspicacia: «Judá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-juda
+  - genesis-29
+  razon: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-juda
+  - genesis-29
+  razon: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - it-juda
+  razon: 'Perspicacia «Judá», párr. 2: vivió unos nueve años en Harán (Padán-aram) antes de salir con la casa de Jacob;
+    ahí nació.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

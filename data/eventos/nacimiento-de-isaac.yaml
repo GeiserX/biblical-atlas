@@ -10,7 +10,8 @@ fecha:
   cronologia: tnm
   texto: 1918 a.e.c.
 lugares: []
-personas: []
+personas:
+- isaac
 pasajes:
 - Gé 21:1-7
 - Hch 13:17-20

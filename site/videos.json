@@ -3550,6 +3550,170 @@
  "hierapolis": [],
  "adramitio": [],
  "ilirico": [],
+ "beer-seba": [
+  {
+   "docid": "pub-jwb_201712_4_VIDEO",
+   "titulo": "Graduación de la clase 143 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201712_4_VIDEO&appLanguage=S",
+   "publicado": "2017-12-25",
+   "menciones": 2,
+   "terminos": {
+    "Beer-seba": 2
+   }
+  }
+ ],
+ "silo": [
+  {
+   "docid": "pub-jwb-091_1_VIDEO",
+   "titulo": "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_1_VIDEO&appLanguage=S",
+   "publicado": "2022-06-06",
+   "menciones": 7,
+   "terminos": {
+    "Siló": 7
+   }
+  },
+  {
+   "docid": "pub-jwb-091_8_VIDEO",
+   "titulo": "Gajus Glockentin: ¿Irán ustedes con frecuencia a Siló?",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_8_VIDEO&appLanguage=S",
+   "publicado": "2022-06-07",
+   "menciones": 6,
+   "terminos": {
+    "Siló": 6
+   }
+  },
+  {
+   "docid": "pub-jwbvod26_33_VIDEO",
+   "titulo": "D’Arcy MacEwan: El amor y la gratitud nos impulsan a hacer sacrificios (Juec. 11:36)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_33_VIDEO&appLanguage=S",
+   "publicado": "2026-06-26",
+   "menciones": 2,
+   "terminos": {
+    "Siló": 2
+   }
+  }
+ ],
+ "monte-nebo": [],
+ "madian": [
+  {
+   "docid": "pub-jwb-095_1_VIDEO",
+   "titulo": "JW Broadcasting: Abril de 2023",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_1_VIDEO&appLanguage=S",
+   "publicado": "2023-04-03",
+   "menciones": 8,
+   "terminos": {
+    "Madián": 4,
+    "madianitas": 4
+   }
+  },
+  {
+   "docid": "pub-jwb-095_6_VIDEO",
+   "titulo": "Robert Luccioni: Seamos como Gedeón (Efes. 4:1, 2)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_6_VIDEO&appLanguage=S",
+   "publicado": "2023-04-17",
+   "menciones": 8,
+   "terminos": {
+    "Madián": 4,
+    "madianitas": 4
+   }
+  },
+  {
+   "docid": "pub-jwb-138_4_VIDEO",
+   "titulo": "D'arcy MacEwan: Cuatro lecciones de 9.700 hombres (graduación de la clase 159 de la Escuela de Galaad)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_4_VIDEO&appLanguage=S",
+   "publicado": "2026-06-15",
+   "menciones": 8,
+   "terminos": {
+    "Madián": 2,
+    "madianitas": 6
+   }
+  },
+  {
+   "docid": "pub-co-r22_139_VIDEO",
+   "titulo": "Kenneth Flodin: Sembraron y cosecharon paz. Gedeón",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_139_VIDEO&appLanguage=S",
+   "publicado": "2022-08-08",
+   "menciones": 3,
+   "terminos": {
+    "Madián": 2,
+    "madianitas": 1
+   }
+  },
+  {
+   "docid": "pub-co-r22_9_VIDEO",
+   "titulo": "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\"",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_9_VIDEO&appLanguage=S",
+   "publicado": "2022-08-08",
+   "menciones": 3,
+   "terminos": {
+    "Madián": 2,
+    "madianitas": 1
+   }
+  },
+  {
+   "docid": "pub-jwb-133_4_VIDEO",
+   "titulo": "Peter Price: ¿Están dispuestos a darle de beber al rebaño? (graduación de la clase 158 de la Escuela de Galaad)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_4_VIDEO&appLanguage=S",
+   "publicado": "2025-12-02",
+   "menciones": 3,
+   "terminos": {
+    "Madián": 3
+   }
+  },
+  {
+   "docid": "pub-jwb-134_1_VIDEO",
+   "titulo": "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-134_1_VIDEO&appLanguage=S",
+   "publicado": "2026-01-05",
+   "menciones": 2,
+   "terminos": {
+    "madianitas": 2
+   }
+  },
+  {
+   "docid": "pub-jwb-134_7_VIDEO",
+   "titulo": "Stephen Lett: Nadie salva como Jehová (reunión anual del 2025)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-134_7_VIDEO&appLanguage=S",
+   "publicado": "2026-01-06",
+   "menciones": 2,
+   "terminos": {
+    "madianitas": 2
+   }
+  },
+  {
+   "docid": "pub-jwb_201803_10_VIDEO",
+   "titulo": "George Aljian: Cómo sobrellevar la plaga de tu propio corazón",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201803_10_VIDEO&appLanguage=S",
+   "publicado": "2018-03-19",
+   "menciones": 2,
+   "terminos": {
+    "Madián": 1,
+    "madianitas": 1
+   }
+  },
+  {
+   "docid": "pub-jwb_201912_1_VIDEO",
+   "titulo": "JW Broadcasting: Diciembre de 2019 (graduación de la clase 147 de Galaad)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201912_1_VIDEO&appLanguage=S",
+   "publicado": "2019-12-02",
+   "menciones": 2,
+   "terminos": {
+    "Madián": 2
+   }
+  },
+  {
+   "docid": "pub-jwbmw_201612_1_VIDEO",
+   "titulo": "Robert Luccioni: Que nada limite lo que usted puede dar (Amós 7:14)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbmw_201612_1_VIDEO&appLanguage=S",
+   "publicado": "2016-12-19",
+   "menciones": 2,
+   "terminos": {
+    "Madián": 1,
+    "madianitas": 1
+   }
+  }
+ ],
  "susa": [
   {
    "docid": "pub-co-r21_11_VIDEO",
@@ -4266,5 +4430,17 @@
  "monte-guilboa": [],
  "gat-hefer": [],
  "abel-mehola": [],
- "mizpa-de-benjamin": []
+ "mizpa-de-benjamin": [],
+ "juda": [
+  {
+   "docid": "pub-jwbvod26_27_VIDEO",
+   "titulo": "Leonard Myers: Jehová nos sostiene en los momentos difíciles (Sal. 55:22)",
+   "url": "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_27_VIDEO&appLanguage=S",
+   "publicado": "2026-08-21",
+   "menciones": 2,
+   "terminos": {
+    "tierra de Judá": 2
+   }
+  }
+ ]
 }

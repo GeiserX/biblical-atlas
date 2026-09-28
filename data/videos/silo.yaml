@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: silo
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-091_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_1_VIDEO&appLanguage=S"
+    publicado: "2022-06-06"
+    menciones: 7
+    terminos:
+      "Siló": 7
+  - docid: "pub-jwb-091_8_VIDEO"
+    titulo: "Gajus Glockentin: ¿Irán ustedes con frecuencia a Siló?"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_8_VIDEO&appLanguage=S"
+    publicado: "2022-06-07"
+    menciones: 6
+    terminos:
+      "Siló": 6
+  - docid: "pub-jwbvod26_33_VIDEO"
+    titulo: "D’Arcy MacEwan: El amor y la gratitud nos impulsan a hacer sacrificios (Juec. 11:36)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_33_VIDEO&appLanguage=S"
+    publicado: "2026-06-26"
+    menciones: 2
+    terminos:
+      "Siló": 2
