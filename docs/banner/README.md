@@ -1,4 +1,77 @@
-# Banner: seis propuestas con la rama de olivo
+# Banner
+
+## Seis variantes del banner 6
+
+De la primera ronda nos quedamos con el banner 6, la aplicación en miniatura. Estas seis variantes lo desarrollan con dos cambios que valen para todas:
+
+- **Las rutas tienen dirección.** Cada tramo lleva una flecha en su mitad, del color del viaje, igual que en el sitio. Lo recorrido hasta la fecha del cursor va en línea continua y lo que falta del viaje, en puntos, con la misma leyenda del sitio: «Recorrido hasta esta fecha» y «Lo que falta del viaje». Cada viaje tiene su color del sitio: el primero terracota, el segundo verde azulado, el tercero morado y el viaje a Roma azul.
+- **La línea de tiempo enseña todo lo que hay.** Tiene carriles como los de la aplicación: Pablo con sus viajes, Cartas con rombos, Sucesos, Emperadores, Gobernadores y Sumos sacerdotes. Encima va la franja «Toda la historia», de Adán, en 4026 a.e.c., al año 100, con las eras y la ventana que se está mirando. Los viajes siguen siendo el ejemplo, pero ya no parecen el proyecto entero.
+
+Todo sale de [`data/`](../../data): paradas, cartas, sucesos, periodos y eras, con la cronología de la TNM. En 900 × 200 el mapa va a la izquierda y la línea de tiempo a la derecha, porque una franja de mapa bajo la barra solo tendría 80 píxeles de alto y no cabría ningún viaje. En 1280 × 640 se mantiene la disposición de la aplicación: mapa arriba, línea de tiempo debajo y la ficha del viaje a la derecha. Las seis se leen en la columna del README de GitHub; lo comprobamos con el banner a 700 píxeles de ancho.
+
+![Las seis variantes, una debajo de otra](propuestas-6/comparativa.png)
+
+### 6.1. Segundo viaje, con todos los carriles
+
+Otoño del año 50: Pablo acaba de llegar a Corinto en el segundo viaje, y lo que queda hasta Antioquía va en puntos. Debajo están los seis carriles, con 1 Tesalonicenses, que escribe en Corinto ese otoño, Claudio de emperador, Galión y Félix, y Ananías de sumo sacerdote.
+
+![Variante 6.1](propuestas-6/1-segundo-viaje/vista.png)
+
+![Vista previa social 6.1](propuestas-6/1-segundo-viaje/social.png)
+
+**Texto.** El nombre, el lema «La Biblia en el mapa y en el tiempo», «c. 50 e.c. · Corinto», los nombres de siete lugares y de los carriles. La versión social añade la ficha del viaje con su resumen, «Hch 15:36–18:22» y las tres primeras paradas.
+
+### 6.2. Tercer viaje y las cartas de 55
+
+Año 55: Pablo ha salido de Éfeso y está en Macedonia. Las dos cartas de ese año salen como arcos dorados hacia Corinto: 1 Corintios desde Éfeso y 2 Corintios desde Macedonia, con el motín de Éfeso marcado en Sucesos.
+
+![Variante 6.2](propuestas-6/2-cartas-de-55/vista.png)
+
+![Vista previa social 6.2](propuestas-6/2-cartas-de-55/social.png)
+
+**Texto.** El nombre, el lema, «c. 55 e.c. · Macedonia», «1 Corintios» y «2 Corintios» sobre el mapa, y «1Co · 2Co» y «Motín de Éfeso» en los carriles. La versión social explica de dónde sale cada carta.
+
+### 6.3. El viaje a Roma y la tormenta
+
+Año 59: el barco ha salido de Cesarea, la tormenta lo ha arrastrado de Bellos Puertos y Cauda a Malta, y allí pasan el invierno. De Malta a Roma el camino va en puntos, y en Cartas esperan las que escribirá desde Roma: Efesios, Filipenses, Colosenses y Filemón.
+
+![Variante 6.3](propuestas-6/3-viaje-a-roma/vista.png)
+
+![Vista previa social 6.3](propuestas-6/3-viaje-a-roma/social.png)
+
+**Texto.** El nombre, el lema, «c. 59 e.c. · Malta», Roma, Malta, Cauda, Bellos Puertos y Cesarea, «Naufragio» y «Ef · Flp · Col · Flm». El banner pequeño no lleva leyenda para no tapar Malta; la social sí.
+
+### 6.4. Todos los viajes, uno elegido
+
+Es el estado «Solo este viaje» del sitio: el primer viaje entero, en fuerte y con sus flechas, y los demás viajes de Pablo al fondo, finos y cada uno en su color. Así se ve de un vistazo cuánto viajó y dónde encaja este viaje.
+
+![Variante 6.4](propuestas-6/4-solo-este-viaje/vista.png)
+
+![Vista previa social 6.4](propuestas-6/4-solo-este-viaje/social.png)
+
+**Texto.** El nombre, el lema, «c. 48 e.c. · Antioquía», cuatro lugares y la leyenda «Solo este viaje, completo» y «Los demás viajes, en su color». La segunda línea de la leyenda es nueva; el sitio no la tiene.
+
+### 6.5. El año 50 dentro de toda la historia
+
+Un recorte más ancho, de Roma a Babilonia, con Jerusalén, para que el segundo viaje se vea dentro del mundo bíblico entero. La franja «Toda la historia» crece y nombra las eras, así que el año 50 aparece como una raya dorada al final de más de cuatro mil años.
+
+![Variante 6.5](propuestas-6/5-toda-la-historia/vista.png)
+
+![Vista previa social 6.5](propuestas-6/5-toda-la-historia/social.png)
+
+**Texto.** El nombre, el lema, «c. 50 e.c. · Corinto», Roma, Corinto, Jerusalén y Babilonia, y los nombres de las eras que caben: Adán, Patriarcas y Reyes, y en la versión social también Jueces.
+
+### 6.6. Tres momentos
+
+Tres paneles con su mapa y su línea de tiempo: en 520 a.e.c., Zorobabel gobierna en Jerusalén y se reanuda la obra del templo; en 33 e.c., Jesús está en Jerusalén; en 50 e.c., Pablo llega a Corinto. Arriba, la franja de toda la historia marca los tres años, así que se ve que el sitio cubre la Biblia entera y no solo el siglo I.
+
+![Variante 6.6](propuestas-6/6-tres-momentos/vista.png)
+
+![Vista previa social 6.6](propuestas-6/6-tres-momentos/social.png)
+
+**Texto.** El nombre, el lema, «Tres momentos», las tres fechas con su frase, y los carriles de cada panel: Gobernadores y Reyes de Persia, Jesús y Emperadores, Pablo y Cartas. La versión social añade Sucesos, Sumos sacerdotes y Gobernadores. La línea de Babilonia a Jerusalén del primer panel es la vuelta del destierro de 537 a.e.c.
+
+## Primera ronda: seis propuestas con la rama de olivo
 
 El banner actual del README, [`docs/images/banner.svg`](../images/banner.svg), es un degradado oscuro con la marca y el nombre. Aquí hay seis banners más ambiciosos, todos construidos alrededor de la [rama de olivo](../logo/README.md) que ya es el logo, para elegir uno.
 
@@ -9,11 +82,11 @@ Cada propuesta tiene dos tamaños:
 
 Todo el texto está convertido en trazos con las fuentes del propio repo, EB Garamond e Inter, así que el SVG se ve igual en GitHub que aquí. El nombre sigue siendo «biblical-earth» mientras no haya otro. Los datos que aparecen, épocas, lugares y viajes, salen de [`data/`](../../data), y las fechas siguen la cronología de la TNM. Las propuestas 2 y 6 llevan dentro un recorte de nuestro propio relieve, [`site/maps/`](../../site/maps), con la atribución que piden sus [créditos](../ideas/mockups/kit/maps/CREDITS.md).
 
-## Las seis de un vistazo
+### Las seis de un vistazo
 
 ![Los seis banners, uno debajo de otro](comparativa.png)
 
-## 1. El olivo del tiempo
+### 1. El olivo del tiempo
 
 La rama de olivo se estira de Adán a la congregación cristiana y cada aceituna es una época: Adán, los patriarcas, el Éxodo, los jueces, los reyes, el destierro, entre Malaquías y Mateo, Jesús y la congregación. Las dos últimas van en oro porque son las épocas de las Escrituras Griegas.
 
@@ -23,7 +96,7 @@ La rama de olivo se estira de Adán a la congregación cristiana y cada aceituna
 
 **Texto.** El nombre, «Cada relato en su lugar y en su tiempo» y el nombre de cada época. La versión social añade el año de inicio de cada una y una nota que dice que siguen la cronología de la TNM.
 
-## 2. El primer viaje sobre el relieve
+### 2. El primer viaje sobre el relieve
 
 El tallo del olivo es el recorrido real del primer viaje de Pablo, de Antioquía de Siria a Derbe, sobre nuestro relieve del Mediterráneo oriental; las aceitunas son las paradas y la vuelta va en línea discontinua. Es la que más se parece a lo que el sitio hace de verdad.
 
@@ -33,7 +106,7 @@ El tallo del olivo es el recorrido real del primer viaje de Pablo, de Antioquía
 
 **Texto.** El nombre, «La Biblia en el mapa y en el tiempo», «Primer viaje de Pablo · Hechos 13 y 14» y la atribución del relieve. La versión social nombra las diez paradas y añade «c. 47-48 e.c.».
 
-## 3. Pergamino: de Egipto a Ur
+### 3. Pergamino: de Egipto a Ur
 
 Sobre papel de pergamino, el mundo bíblico de Egipto a Ur es una línea fina con siete lugares, dibujada con sus posiciones reales. El olivo hace de cursor del tiempo: baja por Jerusalén hasta una línea de tiempo, igual que el cursor dorado de la aplicación.
 
@@ -43,7 +116,7 @@ Sobre papel de pergamino, el mundo bíblico de Egipto a Ur es una línea fina co
 
 **Texto.** El nombre, «Mapa y línea de tiempo para estudiar la Biblia en familia» y los nombres de Egipto, Jerusalén, Damasco, Harán, Nínive, Babilonia y Ur.
 
-## 4. Tipográfica
+### 4. Tipográfica
 
 Solo el nombre en grande con la EB Garamond, la marca al lado y una rama de olivo muy tenue que se sale del marco por la derecha. Es la más tranquila y la que mejor aguanta si el nombre cambia.
 
@@ -53,7 +126,7 @@ Solo el nombre en grande con la EB Garamond, la marca al lado y una rama de oliv
 
 **Texto.** El nombre y «La Biblia en el mapa y en el tiempo» en versalitas.
 
-## 5. Noche de lugares
+### 5. Noche de lugares
 
 Fondo de noche con el olivo en oro, y los lugares de [`data/lugares`](../../data/lugares) son estrellas en su posición real. Las líneas finas que las unen son los cuatro viajes de Pablo, así que el mapa del Mediterráneo aparece solo, sin dibujar ninguna costa.
 
@@ -63,7 +136,7 @@ Fondo de noche con el olivo en oro, y los lugares de [`data/lugares`](../../data
 
 **Texto.** El nombre, «Cada relato en su lugar y en su tiempo» y los nombres de Roma, Atenas, Jerusalén y Babilonia. La versión social explica que cada punto es un lugar y cada línea un viaje de Pablo.
 
-## 6. Mapa y línea, como la aplicación
+### 6. Mapa y línea, como la aplicación
 
 Una miniatura de la propia aplicación: la barra de arriba con el logo, el buscador y la fecha, el mapa con el segundo viaje de Pablo, la línea de tiempo con el cursor dorado en el año 50 y el panel lateral. Quien lo ve entiende qué es el sitio antes de abrirlo.
 
@@ -73,7 +146,7 @@ Una miniatura de la propia aplicación: la barra de arriba con el logo, el busca
 
 **Texto.** El nombre, «Mapa y línea de tiempo para estudiar la Biblia en familia», «Segundo viaje de Pablo», el buscador de ejemplo, «c. 50 e.c.», los años de 45 a 60 e.c., los cuatro viajes y la atribución del relieve.
 
-## Qué cambia al elegir uno
+### Qué cambia al elegir uno
 
 - El `banner.svg` elegido sustituye a [`docs/images/banner.svg`](../images/banner.svg), que es el que enseña el README.
 - La vista previa social de GitHub se sube a mano en los ajustes del repositorio y solo admite PNG o JPG, así que lo que se sube es el `social.png` de la propuesta.
