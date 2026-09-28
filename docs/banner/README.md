@@ -1,5 +1,59 @@
 # Banner
 
+## Seis variantes del banner 1, el olivo del tiempo
+
+La rama de olivo va de Adán a la congregación cristiana y cada aceituna es una de las nueve épocas de [`data/periodos`](../../data/periodos). Las seis variantes cambian lo que cuelga de cada aceituna y cómo crece la rama. Los sucesos y los lugares salen de [`data/eventos`](../../data/eventos) y [`data/lugares`](../../data/lugares), con los años de la cronología de la TNM; el texto de cada suceso está resumido para que quepa. Todas llevan el lema «La Biblia en el mapa y en el tiempo». Las variantes 4 y 5 no llevan la marca pequeña junto al nombre, porque la rama grande ya hace de marca.
+
+![Las seis variantes del banner 1](propuestas-1/comparativa.png)
+
+### 1.1. Con el año de inicio de cada época
+
+Cada aceituna lleva su época y el año en que empieza, de 4026 a.e.c. a 33 e.c. Es la versión más directa: se lee como una línea de tiempo sin dejar de ser una rama.
+
+![Variante 1.1](propuestas-1/1-con-fechas/vista.png)
+
+![Vista previa social 1.1](propuestas-1/1-con-fechas/social.png)
+
+### 1.2. Un suceso por época
+
+Cada aceituna lleva un suceso con su año: la creación de Adán, el Diluvio, el Éxodo, la entrada en Canaán, David en Jerusalén, la caída de Jerusalén, Alejandro en Babilonia, el nacimiento de Jesús y Pentecostés. La versión social pone dos sucesos por época y el nombre de la época encima.
+
+![Variante 1.2](propuestas-1/2-un-suceso-por-epoca/vista.png)
+
+![Vista previa social 1.2](propuestas-1/2-un-suceso-por-epoca/social.png)
+
+### 1.3. El cursor dorado en 607 a.e.c.
+
+El cursor dorado de la aplicación se para en 607 a.e.c., cuando Babilonia destruye Jerusalén. La rama es continua hasta ahí y sigue en puntos, con las épocas que faltan más claras, igual que un viaje a medio recorrer.
+
+![Variante 1.3](propuestas-1/3-cursor-en-607/vista.png)
+
+![Vista previa social 1.3](propuestas-1/3-cursor-en-607/social.png)
+
+### 1.4. A escala real
+
+Las aceitunas están donde les toca en el tiempo, con marcas cada mil años. Así se ve que de Malaquías al año 100 hay 542 años, solo el último 13 % de la rama, y que Éxodo y Jueces casi se tocan.
+
+![Variante 1.4](propuestas-1/4-a-escala/vista.png)
+
+![Vista previa social 1.4](propuestas-1/4-a-escala/social.png)
+
+### 1.5. La rama crece hacia arriba
+
+La rama sube en diagonal en el banner y en vertical en la tarjeta social, de Adán abajo a la congregación arriba, con el nombre y el lema a la izquierda. En la versión social cada época lleva también su año de inicio.
+
+![Variante 1.5](propuestas-1/5-crece-hacia-arriba/vista.png)
+
+![Vista previa social 1.5](propuestas-1/5-crece-hacia-arriba/social.png)
+
+### 1.6. Cada época con su lugar
+
+Debajo de cada aceituna hay un lugar donde pasa esa época: Edén, Harán, Sinaí, Jordán, Jerusalén, Babilonia, Egipto, Belén y Antioquía. Une el tiempo con el mapa sin dibujar ningún mapa.
+
+![Variante 1.6](propuestas-1/6-con-lugares/vista.png)
+
+![Vista previa social 1.6](propuestas-1/6-con-lugares/social.png)
+
 ## Seis variantes del banner 6
 
 De la primera ronda nos quedamos con el banner 6, la aplicación en miniatura. Estas seis variantes lo desarrollan con dos cambios que valen para todas:
