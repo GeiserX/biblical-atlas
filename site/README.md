@@ -1,6 +1,6 @@
 # Sitio web
 
-Primer corte navegable de biblical-earth: los viajes de Pablo y sus cartas en un mapa, una línea de tiempo y una ficha. Un solo cursor de tiempo gobierna las tres piezas.
+El sitio de biblical-earth: un mapa, una línea de tiempo de 4026 a.e.c. al año 100 y una ficha, gobernados por un solo cursor de tiempo. Encima van las vistas de estudio: grafo de personas, conexión entre dos, modo lectura, recorridos guiados, portada, «Ahora mismo» y sincronía.
 
 Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, los scripts de `js/` y las hojas de `css/` se sirven tal cual.
 
@@ -15,7 +15,7 @@ python3 -m http.server 8000
 
 y abre <http://localhost:8000>.
 
-También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. La ficha no muestra la lista de vídeos.
+También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. Las fichas no muestran vídeos, ni de lugares ni de capítulos.
 
 En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.com con su huella SRI, y el mapa actual usa las teselas de [OpenFreeMap](https://openfreemap.org/) con el estilo Positron, que no pide clave. Si ese estilo no responde, el mapa actual pasa a `maps/mediterraneo-actual.webp`.
 
@@ -23,21 +23,36 @@ En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.c
 
 - `data.json`: lo escribe [`scripts/build.py`](../scripts/build.py) a partir de los YAML de [`data/`](../data/). No se edita a mano: para cambiar un dato, edita el YAML y vuelve a compilar. El formato es `biblical-earth/v0` y está descrito en [`docs/ideas/modelo-de-datos.md`](../docs/ideas/modelo-de-datos.md).
 - `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_EARTH_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
-- `videos.json`: vídeos de jw.org que nombran cada lugar, generados con [`scripts/videos/`](../scripts/videos/), con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Si falta, la ficha no enseña esa sección.
+- `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/indexar.py`](../scripts/videos/indexar.py). Si falta, la ficha de lugar no enseña esa sección.
+- `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/pasajes.py`](../scripts/videos/pasajes.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
+- `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `indexar.py`, pero el sitio todavía no lo lee.
+
+El método de los tres índices está en [`docs/investigacion/videos-jw.md`](../docs/investigacion/videos-jw.md).
 
 No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su capítulo en wol.jw.org y cada dato a su fuente, con la fecha en que se consultó.
 
 ## Mapas base
 
-`maps/mediterraneo-antiguo.webp` y `maps/mediterraneo-actual.webp` son el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md). El kit los dibuja en proyección equirrectangular; aquí están reproyectados a Web Mercator (EPSG:3857) para que MapLibre los ponga como `image source` con las esquinas exactas: longitud 10 a 44, latitud 28 a 44, 4096 × 2399 px.
+`maps/` tiene el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos, en tres extensiones, cada una en versión antigua y actual. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md).
 
-La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
+| Extensión | Longitud | Latitud | Tamaño |
+|---|---|---|---|
+| `mundo` | −10 a 72 | 12 a 50 | 3000 × 1676 px |
+| `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px |
+| `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px |
+
+El mapa las pone una encima de otra, de menos a más detalle: el mundo siempre, el Mediterráneo a partir del zoom 4,3 y la tierra de Israel a partir del 6,7, cada una fundida con la de debajo. Los bordes del Mediterráneo y de Israel se funden a transparente (70 y 90 px) para que no se vea la costura. `maps/mundo-mini.webp` (240 px) es el mapa de situación de la esquina.
+
+El kit dibuja en proyección equirrectangular. Aquí las imágenes están reproyectadas a Web Mercator (EPSG:3857) para que MapLibre las ponga como `image source` con las esquinas exactas. La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
 
 ```python
+# python3 reproyectar.py <kit.webp> <salida.webp> <oeste> <este> <sur> <norte> <ancho> [--borde=N]
 import sys, numpy as np
 from PIL import Image
-src, dst = sys.argv[1], sys.argv[2]            # webp del kit, webp de salida
-O, E, S, N, W = 10, 44, 28, 44, 4096           # extensión del kit (geo.js, EXTENTS.mediterraneo)
+args = [a for a in sys.argv[1:] if not a.startswith('--borde=')]
+borde = next((int(a.split('=')[1]) for a in sys.argv[1:] if a.startswith('--borde=')), 0)
+src, dst = args[0], args[1]
+O, E, S, N, W = (float(x) for x in args[2:7]); W = int(W)
 my = lambda lat: np.log(np.tan(np.pi / 4 + np.radians(lat) / 2))
 H = round(W * (my(N) - my(S)) / np.radians(E - O))
 im = np.asarray(Image.open(src).convert('RGB'))
@@ -45,8 +60,18 @@ h0, w0 = im.shape[:2]
 lat = np.degrees(2 * np.arctan(np.exp(my(N) - (np.arange(H) + .5) / H * (my(N) - my(S)))) - np.pi / 2)
 fil = np.clip(((N - lat) / (N - S) * h0 - .5).round().astype(int), 0, h0 - 1)
 col = np.clip(((np.arange(W) + .5) / W * w0 - .5).round().astype(int), 0, w0 - 1)
-Image.fromarray(im[fil][:, col]).save(dst, quality=82, method=6)
+out = im[fil][:, col]
+if borde:
+    y = np.minimum(np.arange(H), H - 1 - np.arange(H))[:, None]
+    x = np.minimum(np.arange(W), W - 1 - np.arange(W))[None, :]
+    a = np.clip(np.minimum(y, x) / borde, 0, 1)
+    a = (a * a * (3 - 2 * a) * 255).astype(np.uint8)
+    Image.fromarray(np.dstack([out, a]), 'RGBA').save(dst, quality=82, method=6, alpha_quality=60)
+else:
+    Image.fromarray(out).save(dst, quality=82, method=6)
 ```
+
+Órdenes usadas, para `antiguo` y `actual`: `mundo -10 72 12 50 3000`, `mediterraneo 10 44 28 44 4096 --borde=70` e `israel 33.9 36.9 29.4 33.7 2000 --borde=90`.
 
 Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
 
@@ -66,8 +91,28 @@ La dirección guarda la vista para poder compartirla:
 ```
 
 - `t`: año con decimales, en numeración astronómica, donde 1 a.e.c. es 0.
-- `sel`: `lugar:<id>`, `persona:<id>`, `carta:<id>`, `viaje:<id>`, `parada:<viaje>/<orden>`, `periodo:<id>`, `evento:<id>` o `pasaje:<libro>-<capítulo>`, como `pasaje:hch-16`.
+- `sel`: `lugar:<id>`, `persona:<id>`, `carta:<id>`, `viaje:<id>`, `parada:<viaje>/<orden>`, `periodo:<id>`, `evento:<id>`, `hallazgo:<id>`, `recorrido:<id>`, `libro:<slug>` o `pasaje:<libro>-<capítulo>`, como `pasaje:hch-16`.
 - `mapa`: `antiguo`, `actual` o `cortina`.
+
+Los demás parámetros solo aparecen cuando no valen lo de siempre:
+
+| Parámetro | Valores | Qué hace |
+|---|---|---|
+| `ocultas` | lista de `viajes,cartas,inciertos,hallazgos,pendientes,relieve` | Capas apagadas en el menú de capas |
+| `nombres` | `antiguos`, `actuales` | Nombres del mapa; sin él, los dos donde ayuda |
+| `nivel` | `1` | Filtro «solo nivel 1» |
+| `cartas` | `todas`, `hasta`, `personas` | Qué cartas se dibujan; sin él, las cercanas a la fecha |
+| `carriles` | lista de ids de carril o de persona | Carriles fijados en la línea de tiempo |
+| `secular` | `0` | Oculta las fechas seculares |
+| `pausa` | `0` | No se para en los sucesos al reproducir |
+| `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
+| `linea` | `grande` | Línea de tiempo ampliada |
+| `ahora`, `sinc` | `1`; `<lugar>~<periodo>` | Vista «Ahora mismo»; sincronía de un lugar en un periodo |
+| `grafo`, `gvista`, `gtodo` | ids unidos por `.`; `lista` o `grafo`; `1` | Grafo de personas (el último id es el centro), su vista y si enseña todas las fechas |
+| `conexion`, `camino` | `<tipo>:<id>~<tipo>:<id>`; número | Conexión entre dos y el camino elegido |
+| `leer`, `pas` | `<libro>-<capítulo>`; número | Modo lectura y pasaje |
+| `paso` | número | Parada del recorrido guiado |
+| `portada` | `1` | Portada. Sin nada en la dirección, el sitio abre en ella |
 
 ## Teclado
 
@@ -78,8 +123,10 @@ La dirección guarda la vista para poder compartirla:
 | ← → | Mover el cursor un paso (depende del zoom de la línea) |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
 | Esc | Borrar la búsqueda y la selección |
+| `T` | Ampliar o reducir la línea de tiempo |
+| Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
-La rueda sobre la línea de tiempo cambia la escala, de décadas a meses. Con Mayúsculas, o con un gesto horizontal en el trackpad, la desplaza.
+La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Mayúsculas, o con un gesto horizontal en el trackpad, la desplaza.
 
 ## Ficheros
 
@@ -90,9 +137,24 @@ La rueda sobre la línea de tiempo cambia la escala, de décadas a meses. Con Ma
 | [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css` y `estudio.css` |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
 | `maps/` | Relieve antiguo y actual en Web Mercator |
-| `_local/` | Datos de prueba de cada carril. No va a git |
+| `_local/` | Datos de prueba. No va a git |
 
 ## Módulos
+
+| Fichero | Qué hace |
+|---|---|
+| `js/base.js` | Utilidades, estado, carga de datos, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
+| `js/mapa.js` | MapLibre, relieve en tres extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
+| `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes, estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
+| `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, meses hebreos |
+| `js/linea.js` | Línea de tiempo en seis escalas, carriles, densidad, minimapa, regla, bucle y marcadores |
+| `js/ahora.js` | «Ahora mismo», la frase de contexto de la línea y la sincronía por lugar |
+| `js/buscar.js` | Búsqueda, preguntas de forma fija, años y atrás y adelante |
+| `js/grafo.js` | Grafo de personas y conexión entre dos |
+| `js/lectura.js` | Modo lectura de cualquier capítulo con datos |
+| `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
+| `js/portada.js` | Portada con épocas, recorridos y preguntas guía |
+| `js/tipos/*.js` | Un fichero por tipo de entidad: `lugar`, `persona`, `viaje`, `parada`, `carta`, `evento`, `periodo`, `hallazgo`, `recorrido`, `libro` y `pasaje` |
 
 La aplicación son scripts clásicos con `defer`, no módulos ES. Desde `file://` el navegador bloquea los `import` locales, y el sitio tiene que abrir con doble clic. `index.html` los carga en un orden fijo y todos comparten un solo objeto, `window.BE`. [`js/base.js`](js/base.js) va primero y crea `BE`. El arranque espera a `DOMContentLoaded`, que llega cuando ya se han ejecutado todos los scripts, así que un fichero puede usar cualquier función de otro siempre que la llame a través de `BE` en el momento de usarla.
 
@@ -125,39 +187,41 @@ BE.tipo('lugar', {
 
 | Interfaz | Qué hace hoy |
 |---|---|
-| `BE.donde(persona, t)` | Para `'pablo'`, lo mismo que `BE.dondeEsta(t)`. Para otra persona, `null` hasta que app-tiempo la generalice |
-| `BE.ventana(persona, fecha, lugares)` | Para `'pablo'`, la parte de la fecha en que las paradas lo ponen en uno de esos lugares. Para otra persona, `null` |
+| `BE.donde(persona, t)` | Para `'pablo'`, lo mismo que `BE.dondeEsta(t)`. Para otra persona, sale de sus viajes, de los sucesos que la nombran con lugar y de sus relaciones fechadas `vivio_en`, `nacio_en` y `murio_en`. `null` si los datos no la sitúan |
+| `BE.ventana(persona, fecha, lugares)` | La parte de la fecha en que los datos ponen a la persona en uno de esos lugares |
 | `BE.mapa.resaltar(ids)` | Resalta esos lugares en el mapa por encima de la selección. `resaltar(null)` vuelve a la selección |
 | `BE.mapa.encuadrar(ids)` | Encuadra el mapa en esos lugares, descontando la hoja inferior en el móvil |
 | `BE.pintores` | Lista de funciones que el bucle de pintado llama en cada fotograma, después de las suyas, con las marcas de lo que cambió (`{ mapa, etiquetas, panel, linea, cursor }`) |
 | `BE.inicios` | Funciones que se llaman una vez con los datos ya cargados, antes de leer la dirección |
 | `BE.parametros` | Parámetros extra de la dirección: `{ nombre, escribir() → texto o null, leer(texto, inicial) }` |
 
-`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()` (app-tiempo); `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda (app-estudio, desde `tipos/libro.js`).
+`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js`; `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
+
+`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 
 ### Puntos de montaje
 
-`index.html` ya trae, vacíos y con `hidden`, los contenedores de las vistas previstas: `#vista-grafo`, `#vista-conexion`, `#vista-recorrido` y `#vista-ahora` dentro del mapa; `#vista-sincronia` dentro de la línea de tiempo; `#vista-lectura` y `#vista-portada` dentro de `#app`. Las rellenan app-estudio (grafo, conexión, recorrido, lectura y portada) y app-tiempo («Ahora mismo» y sincronía), cada una desde su fichero. Si necesita otro sitio en la página, su módulo la mueve con JavaScript, sin tocar `index.html`.
+`index.html` trae, vacíos y con `hidden`, los contenedores de las vistas: `#vista-grafo`, `#vista-conexion`, `#vista-recorrido` y `#vista-ahora` dentro del mapa; `#vista-sincronia` dentro de la línea de tiempo; `#vista-lectura` y `#vista-portada` dentro de `#app`. Las rellenan `grafo.js` (grafo y conexión), `recorridos.js`, `lectura.js`, `portada.js` y `ahora.js` («Ahora mismo» y sincronía), cada una desde su fichero. Si necesita otro sitio en la página, su módulo la mueve con JavaScript, sin tocar `index.html`.
 
 ### Datos de prueba
 
-`index.html?datos=_local/<carril>/data.json` carga otro `data.json`. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
+`index.html?datos=_local/<nombre>/data.json` carga otro `data.json`. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
 
 ```bash
-python3 scripts/build.py --salida site/_local/<carril>/
+python3 scripts/build.py --salida site/_local/<nombre>/
 ```
 
-## Quién toca qué durante el reparto
+## Cómo se repartió el trabajo
 
-Mientras los tres carriles del sitio trabajan en paralelo, cada fichero tiene un solo dueño. Nadie edita un fichero de otro. Si un carril necesita un cambio en `base.js`, `base.css` o `index.html`, lo describe en su informe como propuesta y lo aplica el orquestador al integrar.
+El sitio está partido en módulos para que varias personas puedan trabajar en él a la vez sin pisarse. Mientras construimos v1 y v2, cada fichero tuvo un solo dueño, y los cambios en `base.js`, `base.css` o `index.html` se pedían por escrito y se aplicaban al integrar. El reparto fue este:
 
-| Fichero | Dueño |
+| Ficheros | Trabajo |
 |---|---|
-| `js/base.js` (utilidades, estado, carga, registro, selección, cursor, reproducción, dirección, bucle de pintado, teclado, arranque), `css/base.css`, `index.html` | Congelado |
-| `js/mapa.js`, `js/ficha.js` (ayudas de ficha: citas, fuentes, estado, «por qué», nombres, vídeos), `js/tipos/lugar.js`, `js/tipos/carta.js`, `js/tipos/hallazgo.js`, `css/mapa.css`, `maps/*` | app-mapa |
-| `js/trayectorias.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | app-tiempo |
-| `js/buscar.js`, `js/grafo.js`, `js/lectura.js`, `js/recorridos.js`, `js/portada.js`, `js/tipos/persona.js`, `js/tipos/pasaje.js`, `js/tipos/libro.js`, `js/tipos/recorrido.js`, `css/estudio.css` | app-estudio |
+| `js/base.js`, `css/base.css`, `index.html` | Congelados |
+| `js/mapa.js`, `js/ficha.js`, `js/tipos/lugar.js`, `js/tipos/carta.js`, `js/tipos/hallazgo.js`, `css/mapa.css`, `maps/*` | Mapa |
+| `js/trayectorias.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | Tiempo |
+| `js/buscar.js`, `js/grafo.js`, `js/lectura.js`, `js/recorridos.js`, `js/portada.js`, `js/tipos/persona.js`, `js/tipos/pasaje.js`, `js/tipos/libro.js`, `js/tipos/recorrido.js`, `css/estudio.css` | Estudio |
 
-`data.json`, `data.js` y `videos.json` son derivados y ningún carril los edita.
+`data.json`, `data.js` y los tres índices de vídeos son derivados y nadie los edita a mano.
