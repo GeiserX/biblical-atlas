@@ -52,3 +52,7 @@ __pycache__/
 *.db
 .beads-credential-key
 .beads/proxieddb/
+
+# Espacios de trabajo locales de los agentes
+.claude/worktrees/
+.logo-work/
