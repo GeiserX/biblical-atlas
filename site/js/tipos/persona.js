@@ -87,7 +87,11 @@ function calcularAristas(id) {
     const ref = (e.pasajes || []).join('; ');
     const base = { fecha: e.fecha, ref, fuentes: e.fuentes, razon: e.razon, estado: e.estado, origen: 'evento', incierto: e.fecha?.tipo === 'narrativa' || e.fecha?.tipo === 'derivada' };
     poner({ ...base, sel: `evento:${e.id}`, grupo: 'Hechos', verbo: 'está en este suceso' });
-    for (const l of e.lugares || []) if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
+    // Con `presentes`, quien no está en la lista solo se nombra: los lugares del suceso no son lugares de su vida.
+    const estuvo = !e.presentes || e.presentes.includes(id);
+    // Solo el primer lugar: es donde ocurre lo principal y el único donde el suceso sitúa a sus personas (docs/investigacion/README.md).
+    const l = (e.lugares || [])[0];
+    if (estuvo && l && BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
     for (const g of e.personas) if (g !== id && BE.PERS[g]) poner({ ...base, sel: `persona:${g}`, grupo: 'Personas', verbo: `juntos: ${e.titulo}` });
   }
   for (const c of BE.D.cartas || []) {
@@ -122,10 +126,88 @@ function barraVida(p) {
     <span class="vida-barra${abierto(f.desde) || f.aprox ? ' vida-barra--ini' : ''}${abierto(f.hasta) || f.aprox ? ' vida-barra--fin' : ''}"></span>
     <span class="vida-texto"><span class="be-chrono be-chrono--tnm">${esc(f.texto || fechaCorta(f))}</span>${f.aprox ? ' <span class="be-muted">sin fecha exacta de principio ni de fin</span>' : ''}</span></div>`;
 }
+// Familia: padres, cónyuges, hijos y hermanos, sacados de las relaciones «pariente» en los dos sentidos. Una relación
+// escrita en X con persona Y y relacion R dice «Y es el R de X»; vista desde Y, un padre de X hace a X su hijo.
+const PADRES = new Set(['padre', 'madre', 'padre adoptivo', 'madre adoptiva']);
+const HIJOS = new Set(['hijo', 'hija', 'hijo adoptivo', 'hija adoptiva', 'hijastro', 'hijastra', 'hijastro e hijo adoptivo']);
+const CONYUGES = new Set(['esposo', 'esposa']);
+const HERMANOS = new Set(['hermano', 'hermana', 'medio hermano', 'media hermana', 'hermano gemelo', 'hermana gemela']);
+const GRUPOS_FAMILIA = [
+  ['padres', 'Padres', { padre: 'Padre', madre: 'Madre' }],
+  ['conyuges', 'Cónyuges', { esposo: 'Esposo', esposa: 'Esposa' }],
+  ['hijos', 'Hijos', { hijo: 'Hijo', hija: 'Hija' }],
+  ['hermanos', 'Hermanos', { hermano: 'Hermano', hermana: 'Hermana' }],
+];
+function grupoFamilia(a) {
+  const r = String(a.relacion || '').trim();
+  if (CONYUGES.has(r)) return 'conyuges';
+  if (HERMANOS.has(r)) return 'hermanos';
+  if (PADRES.has(r)) return a.inversa ? 'hijos' : 'padres';
+  if (HIJOS.has(r)) return a.inversa ? 'padres' : 'hijos';
+  return null;
+}
+/** { padres: [...], conyuges, hijos, hermanos }, cada miembro una vez, los hijos por fecha de nacimiento si se sabe. */
+function familia(id) {
+  const g = { padres: [], conyuges: [], hijos: [], hermanos: [] };
+  const vistos = new Set();
+  for (const a of aristas(id)) {
+    if (a.origen !== 'relacion' || a.tipoRel !== 'pariente' || !a.sel.startsWith('persona:')) continue;
+    const k = grupoFamilia(a);
+    if (!k || vistos.has(a.sel)) continue;
+    vistos.add(a.sel);
+    // El nombre del vínculo solo vale tal cual cuando está escrito en esta persona (adelante).
+    g[k].push({ ...a, palabra: a.inversa ? '' : String(a.relacion || '').trim() });
+  }
+  // Orden de nacimiento: el del relato que cita cada vínculo (Gé 29:32 Rubén antes que Gé 30:22 José); sin cita, la fecha.
+  const clave = (a) => {
+    const c = BE.citas(a.ref || '')[0];
+    if (c) return [0, c.libro.num, c.cap, +(c.texto.match(/:(\d+)/)?.[1] || 0)];
+    return [1, BE.PERS[a.sel.slice(8)]?.fecha?.desde ?? Infinity, 0, 0];
+  };
+  const orden = (x, y) => { const a = clave(x), b = clave(y); for (let i = 0; i < 4; i++) if (a[i] !== b[i]) return a[i] - b[i]; return 0; };
+  g.hijos.sort(orden);
+  g.hermanos.sort(orden);
+  return g;
+}
+function familiaHtml(id) {
+  const g = familia(id);
+  if (!GRUPOS_FAMILIA.some(([k]) => g[k].length)) return '';
+  const miembro = (a) => {
+    const q = BE.PERS[a.sel.slice(8)];
+    const fecha = q?.fecha ? (q.fecha.texto || fechaCorta(q.fecha)) : '';
+    const matiz = a.palabra && !/^(padre|madre|hijo|hija|esposo|esposa|hermano|hermana)$/.test(a.palabra) ? a.palabra : '';
+    return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${a.razon ? ` title="${esc(a.razon)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ' <span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>' : ''}${fecha ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${a.ref ? `<span class="fam-refs">${BE.chipsCitas(a.ref)}</span>` : ''}</li>`;
+  };
+  const titulo = (k, plural, singular) => {
+    const xs = g[k];
+    if (xs.length !== 1) return plural;
+    return singular[xs[0].palabra] || plural;
+  };
+  return `<section class="be-card ficha-sec familia"><div class="be-card__pad"><h3 class="be-card__eyebrow">Familia</h3>
+    <dl class="familia-lista">${GRUPOS_FAMILIA.filter(([k]) => g[k].length).map(([k, plural, singular]) => `<dt>${titulo(k, plural, singular)}</dt><dd><ul>${g[k].map(miembro).join('')}</ul></dd>`).join('')}</dl></div></section>`;
+}
+
+// Vídeos de jw.org que nombran a la persona (site/videos-personas.json). Si el fichero falta o se abre desde file://,
+// la sección no sale y no se dice nada.
+let VIDEOS_PERSONAS;   // undefined: sin pedir; null: no hay; objeto: cargado
+function cargarVideosPersonas() {
+  if (VIDEOS_PERSONAS !== undefined) return;
+  VIDEOS_PERSONAS = null;
+  if (BE.ES_FILE) return;
+  // Junto a data.json: con ?datos=_local/<carril>/data.json, los datos de prueba llevan su propio fichero.
+  const d = new URLSearchParams(location.search).get('datos');
+  const ruta = d && /^_local\/[\w./-]+\.json$/.test(d) && !d.split('/').includes('..') ? d.replace(/[^/]+$/, 'videos-personas.json') : 'videos-personas.json';
+  fetch(ruta, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).then((j) => {
+    VIDEOS_PERSONAS = j && typeof j === 'object' ? j : null;
+    if (VIDEOS_PERSONAS && BE.E.sel?.tipo === 'persona' && VIDEOS_PERSONAS[BE.E.sel.id]) BE.pintarPanel(true);
+  }).catch(() => { VIDEOS_PERSONAS = null; });
+}
+
 function fichaPersona(id) {
   const p = BE.PERS[id];
   const as = aristas(id);
-  const rels = as.filter((a) => a.origen === 'relacion');
+  cargarVideosPersonas();
+  const rels = as.filter((a) => a.origen === 'relacion' && !(a.tipoRel === 'pariente' && a.sel.startsWith('persona:') && grupoFamilia(a)));
   const lugares = [];
   for (const a of as.filter((x) => x.grupo === 'Lugares').sort((x, y) => (x.tr?.[0] ?? 1e9) - (y.tr?.[0] ?? 1e9))) {
     if (!lugares.some((l) => l.sel === a.sel)) lugares.push(a);
@@ -145,10 +227,11 @@ function fichaPersona(id) {
       ${BE.enlacesHtml(p.enlaces)}
       <div class="acciones-persona"><button type="button" class="be-btn be-btn--sm" data-grafo="${esc(id)}">Ver en el grafo</button><button type="button" class="be-btn be-btn--sm" data-relacionar="persona:${esc(id)}">Relacionar con…</button></div>
     </div><div class="be-card__foot">${BE.estadoHtml(p.estado)}</div></section>
+    ${familiaHtml(id)}
     ${recorridos.length ? `<div class="be-note be-note--uncertain aviso-recorrido"><span aria-hidden="true">◎</span><span>Esta ficha forma parte de un recorrido: ${recorridos.map((r) => `<button type="button" class="enlace-texto" data-sel="recorrido:${esc(r.id)}">${esc(r.titulo)}</button>`).join(', ')}.</span></div>` : ''}
     ${rels.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Relaciones <b class="cuenta">${rels.length}</b></h3>
       <ul class="relaciones">${rels.map((a) => `<li><span class="rel-verbo">${esc(a.verbo)}</span><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}">${esc(nombreDe(a.sel))}</button>${tag(a)}
-        <span class="rel-meta">${a.fecha ? `${esc(textoFecha(a))} · ` : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul></div></section>` : ''}
+        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul></div></section>` : ''}
     ${lugares.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lugares de su vida <b class="cuenta">${lugares.length}</b></h3>
       <div class="be-list">${lugares.slice(0, 14).map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc([a.tr ? textoFecha(a) : '', a.verbo].filter(Boolean).join(' · ')))).join('')}</div>
       ${lugares.length > 14 ? `<p class="be-muted">Y ${lugares.length - 14} más: están todos en el grafo.</p>` : ''}</div></section>` : ''}
@@ -162,6 +245,7 @@ function fichaPersona(id) {
       <ul class="no-afirmamos">${p.no_afirmamos.map((x) => `<li>${esc(x)}</li>`).join('')}</ul><p class="be-muted">Ninguna fuente de nivel 1 lo dice; por eso no sale en el mapa ni en la línea.</p></div></section>` : ''}
     ${(p.no_confundir_con || []).filter((x) => BE.PERS[x]).length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">No confundir con</h3>
       <div class="be-list">${p.no_confundir_con.filter((x) => BE.PERS[x]).map((x) => BE.botonSel(`persona:${x}`, BE.PERS[x].nombre, esc(BE.PERS[x].desambiguacion || BE.PERS[x].resumen || ''))).join('')}</div></div></section>` : ''}
+    ${BE.videosHtml(id, VIDEOS_PERSONAS || {}, true)}
     ${BE.porQueHtml(p)}`;
 }
 
@@ -169,19 +253,39 @@ function implicadosPersona(id, r) {
   const viajes = BE.D.viajes.filter((v) => v.persona === id || (v.companeros || []).includes(id));
   viajes.forEach((v) => { r.claves.add(`viaje:${v.id}`); BE.P.filter((s) => s.viaje === v).forEach((s) => BE.anadirParada(r, s)); });
   BE.D.cartas.filter((c) => c.escritor === id || (!c.escritor && id === 'pablo') || (c.portadores || []).includes(id) || (c.destinatarios?.personas || []).includes(id)).forEach((c) => BE.anadirCarta(r, c));
-  (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => { r.claves.add(`evento:${e.id}`); (e.lugares || []).forEach((x) => r.lugares.add(x)); });
+  (BE.D.eventos || []).filter((e) => (e.personas || []).includes(id)).forEach((e) => {
+    r.claves.add(`evento:${e.id}`);
+    const l = (e.lugares || [])[0];
+    if (l && (!e.presentes || e.presentes.includes(id))) r.lugares.add(l);
+  });
   (BE.D.periodos || []).filter((p) => p.persona === id).forEach((p) => r.claves.add(`periodo:${p.id}`));
   (BE.PERS[id].relaciones || []).forEach((x) => { if (x.lugar && BE.L[x.lugar]) r.lugares.add(x.lugar); });
 }
-/** Como en v0: salta a lo primero que implica. Si no implica nada con fecha, al principio de su actividad conocida. */
+/** Como en v0: salta a lo primero que implica. Si en ese momento los datos no la sitúan en ningún sitio (Pedro en los
+    primeros discípulos, sin lugar con punto) y tiene estancias, salta a la primera, para que la bandera y «Mientras
+    tanto» arranquen situándola. Si no implica nada con fecha, a su primera estancia (Sara, Taré), al principio de su
+    actividad conocida o, si no tiene, al principio de lo que abarca el libro que la cuenta. */
 function momentoPersona(id) {
   const r = { claves: new Set(), lugares: new Set() };
   implicadosPersona(id, r);
   const ts = [];
   for (const k of r.claves) { const i = k.indexOf(':'); const x = BE.tipo(k.slice(0, i))?.momentoImplicado?.(k.slice(i + 1)); if (x != null) ts.push(x); }
-  if (ts.length) return Math.min(...ts);
+  const est = id === 'pablo' ? [] : BE.estancias?.(id) || [];
+  const enEstancia = (s) => (s.b - s.a < 1 ? (s.a + s.b) / 2 : s.a + 0.01);
+  if (ts.length) {
+    const t = Math.min(...ts);
+    return est.length && !BE.donde?.(id, t) ? enEstancia(est[0]) : t;
+  }
+  if (est.length) return enEstancia(est[0]);
   const tr = tramo(BE.PERS[id].fecha);
-  return tr ? tr[0] + 0.01 : null;
+  if (tr) return tr[0] + 0.01;
+  // Sin nada fechado (los jueces): al principio del tiempo que abarca el libro del primer capítulo que la cuenta.
+  for (const f of BE.PERS[id].fuentes || []) {
+    const m = /^(.+)-\d+$/.exec(f), lib = m && (BE.LIBROS || []).find((l) => l.slug === m[1]);
+    const ab = lib?.abarca && tramo(lib.abarca);
+    if (ab) return ab[0] + 0.01;
+  }
+  return null;
 }
 
 BE.tipo('persona', {
@@ -206,5 +310,5 @@ BE.tipo('persona', {
   },
 });
 
-Object.assign(BE, { aristas, vigencia, tramoAbierto, lugarActual, textoFechaArista: textoFecha, nombreDeSel: nombreDe });
+Object.assign(BE, { aristas, familia, vigencia, tramoAbierto, lugarActual, textoFechaArista: textoFecha, nombreDeSel: nombreDe });
 })();

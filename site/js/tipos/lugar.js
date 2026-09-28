@@ -43,10 +43,13 @@ function hechosDe(id) {
 /** Los hechos que dejan ver los filtros (solo nivel 1, datos sin verificar). */
 const visibles = (hs) => hs.filter((h) => !(BE.filtros?.nivel1 && h.nivel === 2) && !(BE.filtros && !BE.filtros.capas.pendientes && h.estado === 'pendiente'));
 const fechaTexto = (h) => (h.fecha?.texto || fechaCorta(h.fecha) || 'sin fecha');
+/** «3 años antes», «12 años después»; a partir de un siglo, en siglos redondos («unos 41 siglos después»). */
 function distancia(n, antes) {
-  const a = Math.round(Math.abs(n));
-  if (a < 1) return antes ? 'hace menos de un año' : 'en menos de un año';
-  return `${antes ? 'hace' : 'en'} ${a} ${a === 1 ? 'año' : 'años'}`;
+  const a = Math.abs(n), lado = antes ? 'antes' : 'después';
+  if (a < 1) return `menos de un año ${lado}`;
+  if (a >= 100) { const s = Math.round(a / 100); return `${s === 1 ? 'un siglo' : `unos ${s} siglos`} ${lado}`; }
+  const r = Math.round(a);
+  return `${r} ${r === 1 ? 'año' : 'años'} ${lado}`;
 }
 
 // ---- Qué pasaba aquí ahora y lo conectado antes y después ----
@@ -75,7 +78,7 @@ function ahoraHtml(id, t) {
     const a = antes[0], d = despues[0];
     cuerpo = `<p class="be-muted">No tenemos hechos de ${esc(nombre)} en esta fecha.</p>`;
     if (!fechados.length) cuerpo = `<p class="be-muted">Todavía no tenemos hechos fechados de ${esc(nombre)}.</p>`;
-    else cuerpo += `<ul class="hechos">${a ? fila(a, ` · antes, ${esc(distancia(t - a.tr[1], true))}`) : ''}${d ? fila(d, ` · después, ${esc(distancia(d.tr[0] - t, false))}`) : ''}</ul>`;
+    else cuerpo += `<ul class="hechos">${a ? fila(a, ` · lo anterior, ${esc(distancia(t - a.tr[1], true))}`) : ''}${d ? fila(d, ` · lo siguiente, ${esc(distancia(d.tr[0] - t, false))}`) : ''}</ul>`;
   }
   const conectado = (titulo, lista, antesDe) => lista.length ? `<h4 class="be-caps sub-bloque">${titulo}</h4><ul class="hechos">${lista.slice(0, 3).map((h) => fila(h, ` · <b class="distancia">${esc(distancia(antesDe ? t - h.tr[1] : h.tr[0] - t, antesDe))}</b>`)).join('')}</ul>` : '';
   const otroNombre = nombre !== l.nombre ? `<p class="nombre-epoca">En esta fecha se llamaba <b>${esc(nombre)}</b>.</p>` : '';
@@ -250,7 +253,8 @@ function fichaLugar(id) {
   const cartasA = BE.D.cartas.filter((c) => BE.destinosCarta(c).includes(id));
   const hallazgos = (BE.D.hallazgos || []).filter((h) => h.lugar_hallazgo === id);
   const tipo = TIPOS[l.tipo] || l.tipo;
-  const prec = { punto: '', zona: ' · región: el punto solo la representa', incierto: ' · ubicación incierta' }[l.precision] || '';
+  // Si el tipo ya dice que es una región, la nota no lo repite («Región · el punto solo la representa»).
+  const prec = { punto: '', zona: REGIONES.has(l.tipo) ? ' · el punto solo la representa' : ' · región: el punto solo la representa', incierto: ' · ubicación incierta' }[l.precision] || '';
   const incierta = cands || l.precision === 'incierto';
   const deCarta = (c) => ((c.escritor || 'pablo') === 'pablo' ? '' : `de ${persona(c.escritor)} · `);
   const noSabemos = [...(l.no_afirmamos || [])];
@@ -287,16 +291,23 @@ function fichaLugar(id) {
     ${BE.videosHtml(id)}`;
 }
 
-/** Fecha a la que salta el cursor al elegir un lugar: ninguna si ya pasa algo aquí; si no, el hecho más cercano. */
+/** Hechos fechados del lugar que caen en la vista de la línea de tiempo. */
+const hechosEnVista = (hs) => hs.filter((h) => h.tr[0] < E.vista[1] && h.tr[1] > E.vista[0]);
+/** Fecha a la que salta el cursor al elegir un lugar: ninguna si ya pasa algo aquí o no tiene nada fechado. Si nada suyo
+    cae en la vista (Edén elegido en 1473 a.e.c.), su primer hecho, como una persona; si no, el hecho más cercano. */
 function momentoLugar(id) {
   const hs = visibles(hechosDe(id)).filter((h) => h.tr);
   if (!hs.length) return null;
   const t = E.t;
   if (hs.some((h) => t >= h.tr[0] && t < h.tr[1])) return null;
+  const en = (h) => (h.tr[1] - h.tr[0] > 3 ? h.tr[0] + 0.01 : (h.tr[0] + h.tr[1]) / 2);
+  if (!hechosEnVista(hs).length) return en(hs.reduce((m, x) => (x.tr[0] < m.tr[0] || (x.tr[0] === m.tr[0] && x.tr[1] < m.tr[1]) ? x : m)));
   const d = (h) => (t < h.tr[0] ? h.tr[0] - t : t - h.tr[1]);
   const h = hs.reduce((m, x) => (d(x) < d(m) ? x : m));
   return h.tr[1] - h.tr[0] > 3 ? (t < h.tr[0] ? h.tr[0] + 0.01 : h.tr[1] - 0.01) : (h.tr[0] + h.tr[1]) / 2;
 }
+/** ¿Tiene el lugar hechos fechados y ninguno en la vista? Entonces elegirlo en el mapa también mueve el cursor. */
+const lugarFueraDeVista = (id) => { const hs = visibles(hechosDe(id)).filter((h) => h.tr); return hs.length > 0 && !hechosEnVista(hs).length; };
 
 BE.tipo('lugar', {
   nodo: 'lugar',
@@ -353,5 +364,5 @@ document.addEventListener('click', (e) => {
   BE.mapa.enfocarCandidato(lugar, +i, true);
 });
 
-Object.assign(BE, { hechosDe });
+Object.assign(BE, { hechosDe, lugarFueraDeVista });
 })();

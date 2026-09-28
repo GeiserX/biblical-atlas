@@ -51,6 +51,11 @@
 .linea-pista:focus-visible { outline-offset: -2px; }
 .linea-svg { position: absolute; left: 0; top: 0; display: block; user-select: none; }
 .linea-svg text { font-family: var(--font-sans); font-size: 10.5px; font-weight: 600; pointer-events: none; }
+/* Los rótulos de los elementos se pulsan como su forma (linea.js, rotulo). El eje, el cursor y la regla, no. */
+.linea-svg .item-texto { cursor: pointer; }
+.linea-svg .item-texto text { pointer-events: auto; }
+.linea-svg .item-texto:hover text { text-decoration: underline; }
+.item-texto.atenuado { opacity: .2; }
 .fila-par { fill: rgba(246, 241, 231, .55); }
 .tick-mayor { stroke: var(--line-2); }
 .tick-menor { stroke: var(--line-2); opacity: .7; }
@@ -63,7 +68,7 @@
 .item:focus-visible rect { stroke: var(--focus); stroke-width: 2.5; }
 .barra-viaje { opacity: .55; }
 .viaje.activo .barra-viaje { opacity: 1; }
-.viaje:hover .barra-viaje { opacity: 1; }
+.viaje:hover .barra-viaje, .viaje.encima .barra-viaje { opacity: 1; }
 .texto-barra { fill: #fff; }
 .texto-fuera { fill: var(--ink-2); }
 .marca-parada { fill: rgba(255, 255, 255, .7); }
@@ -77,6 +82,7 @@
 .texto-carta { fill: #6e4f15; }
 .tramo-evento { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
 .rombo-evento { fill: var(--gold); stroke: #fff; stroke-width: 2; }
+.evento-fondo .tramo-evento { fill: rgba(255, 253, 248, .6); stroke-opacity: .6; }
 .texto-evento { fill: #6e4f15; }
 /* Cálculo nuestro, sin verificar (C-03): rombo hueco y rosa, tramo rayado. */
 .rombo-evento.calculo { fill: var(--surface); stroke: var(--unverified); stroke-width: 1.6; }
@@ -96,7 +102,7 @@
 .barra-actividad { opacity: .5; }
 .barra-estancia { opacity: .9; }
 .estancia.larga .barra-estancia { opacity: .45; }
-.estancia:hover .barra-estancia { opacity: 1; }
+.estancia:hover .barra-estancia, .estancia.encima .barra-estancia { opacity: 1; }
 .camino { stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .7; }
 .banda-juntos { fill: rgba(184, 137, 47, .16); stroke: rgba(184, 137, 47, .45); stroke-dasharray: 2 2; pointer-events: none; }
 /* Meses hebreos (T-19). */
@@ -107,6 +113,8 @@
 .tramo-secular { fill: var(--secular-soft); stroke: var(--secular); stroke-width: 1.2; stroke-dasharray: 4 3; }
 .texto-secular { fill: var(--secular); }
 .item.atenuado { opacity: .2; }
+/* Nada de lo que se ve tiene que ver con la selección: no se atenúa nada (linea.js, clase sin-foco). */
+.linea-svg.sin-foco .item.atenuado, .linea-svg.sin-foco .item-texto.atenuado { opacity: 1; }
 .item.resaltado .barra-viaje, .item.resaltado .barra-periodo, .item.resaltado .tramo-carta, .item.resaltado .tramo-evento, .item.resaltado .barra-estancia { stroke: var(--gold); stroke-width: 2; }
 .item.resaltado .rombo, .item.resaltado .rombo-evento { stroke: var(--gold); }
 .parada.resaltado .marca-parada { fill: #fff; stroke: var(--gold); stroke-width: 1.5; }
@@ -125,6 +133,14 @@
 .regla-quitar path { stroke: #fbf7ef; stroke-width: 1.5; }
 .bucle-marca { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .8; }
 .marcador { fill: var(--accent); cursor: pointer; }
+
+/* Lista de elementos que se solapan en el punto pulsado (linea.js, elegirEntre) */
+.linea-eleccion { position: fixed; z-index: 31; overflow: auto; padding: 10px 10px 8px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 1px; font-size: var(--fs-sm); }
+.linea-eleccion .be-card__eyebrow { margin: 0 8px 4px; }
+.linea-eleccion .eleccion-fila { flex-direction: column; align-items: flex-start; gap: 0; padding: 5px 8px; text-align: left; }
+.eleccion-fila span { font-weight: 600; color: var(--ink); }
+.eleccion-fila small { color: var(--ink-3); font-size: var(--fs-2xs); }
+.eleccion-fila:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
 
 /* Menú de la línea y elección de carriles */
 .linea-menu { position: fixed; z-index: 30; overflow: auto; padding: 12px 14px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-sm); }

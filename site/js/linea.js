@@ -26,6 +26,7 @@ const L = {
   bucle: null,            // [a, b] que la reproducción repite (T-12)
   grande: false,          // línea ampliada (tecla T)
   modoRegla: false,
+  grupo: null,            // sucesos de la última píldora pulsada: { claves, trs, sel }. Van resaltados, nunca atenuados
 };
 
 const ICONOS = {
@@ -53,12 +54,19 @@ function colorPotencia(p) {
 }
 
 let anchoLinea = 800, altoPista = 200;
+/** Rótulos de los elementos. Van en una capa encima de todas las formas, cada uno en un <g> con el data-sel de su
+    elemento, así que pulsar el texto selecciona lo que nombra y nunca lo que queda debajo. */
+let rotulos = [];
+function rotulo(sel, clases, texto, extra = '') {
+  if (texto) rotulos.push(`<g class="item-texto${clases}" data-sel="${esc(sel)}"${extra} aria-hidden="true">${texto}</g>`);
+}
 const xDe = (t) => ((t - E.vista[0]) / span()) * anchoLinea;
 const tDe = (x) => E.vista[0] + (x / anchoLinea) * span();
 const anchoTexto = (s, px = 10.5) => s.length * px * 0.6 + 4;
 const visible = (tr) => tr && tr[1] > E.vista[0] && tr[0] < E.vista[1];
 function nivelFuentes(ids) { return Math.min(...(ids || []).map((id) => BE.D.fuentes[id]?.nivel || 2)); }
 function dim(clave) {
+  if (L.grupo?.claves.has(clave)) return ' resaltado';
   const r = E.resaltado;
   if (!r) return '';
   return r.claves.has(clave) ? ' resaltado' : ' atenuado';
@@ -133,7 +141,7 @@ function catalogo() {
     hay: () => BE.P.length && BE.P.at(-1).b > E.vista[0] && BE.P[0].a < E.vista[1] });
   if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', filas: 2, nombres: ['Cartas', 'Más cartas'], orden: 6, prio: () => (span() >= 300 ? 38 : 70),
     hay: () => D.cartas.some((c) => visible(tramo(c.fecha))) });
-  lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', filas: 1, orden: 7, prio: () => 75,
+  lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', filas: 1, orden: 7, prio: () => 75, medir: medirSucesos,
     hay: () => (D.eventos || []).some((e) => visible(BE.ventanaEvento(e))) });
   lanePeriodos('emperadores', 'Emperadores', 'corona', periodosDe('emperador'), { orden: 8, prio: () => 60 });
   for (const { k, nombre, ps } of reinos()) lanePeriodos(k ? `reyes-${k}` : 'reyes', nombre, 'corona', ps, { orden: 9, prio: () => 66 });
@@ -206,6 +214,7 @@ function elegirCarriles() {
   let filas = fijos.reduce((n, c) => n + c.filas, 0);
   ocultos = [];
   for (const c of auto) {
+    if (filas + c.filas > cap && c.tipo === 'sucesos' && cap > filas) c.medir(cap - filas);   // menos filas antes que ninguna
     if (filas + c.filas <= cap) { elegidos.push(c); filas += c.filas; } else ocultos.push(c);
   }
   // Orden vertical estable: los fijados arriba en su orden; el resto en el orden del catálogo.
@@ -265,21 +274,32 @@ function pintarLineaFija() {
   partes.push(`<g class="eje">${marcasEje(pxAnio)}</g>`);
   partes.push(densidad());
   const V = BE.viajeActual(BE.dondeEsta(E.t));
+  if (eleccion && eleccion.vista !== E.vista.join('~')) cerrarEleccion();
+  if (L.grupo && (L.grupo.sel !== BE.selTexto(E.sel) || !L.grupo.trs.some(visible))) L.grupo = null;   // la lista señala un punto que ya se ha movido
+  rotulos = [];
   for (const c of carrilesVista) {
     if (c.tipo === 'pablo') pintarPablo(partes, c.y, V, pxAnio);
     else if (c.tipo === 'cartas') pintarCartas(partes, c.y);
-    else if (c.tipo === 'sucesos') pintarSucesos(partes, c.y, s);
+    else if (c.tipo === 'sucesos') pintarSucesos(partes, c);
     else if (c.tipo === 'periodos') pintarPeriodos(partes, c);
     else if (c.tipo === 'persona') pintarPersona(partes, c);
     else if (c.tipo === 'meses') pintarMeses(partes, c.y);
     else if (c.tipo === 'secular') pintarSecular(partes, c);
   }
   pintarJuntos(partes);
+  partes.push(`<g class="capa-rotulos">${rotulos.join('')}</g>`);
+  rotulos = [];
   pintarRegla(partes);
   pintarBucle(partes);
   pintarMarcadores(partes);
   partes.push('<g id="linea-cursor"></g>');
+  // El SVG se reescribe entero: el elemento que tenía el foco del teclado lo recupera (el mismo data-sel), si sigue.
+  const conFoco = svg.contains(document.activeElement), foco = conFoco ? document.activeElement.closest('g.item[data-sel]')?.dataset.sel : null;
   svg.innerHTML = partes.join('');
+  // Atenuar solo tiene sentido si en la vista hay algo que resaltar: si nada de lo que se ve tiene que ver con la
+  // selección (Edén en 1473 a.e.c.), todo va a opacidad plena en vez de quedar gris.
+  svg.classList.toggle('sin-foco', !![...svg.querySelectorAll('.item.atenuado')].length && ![...svg.querySelectorAll('.item.resaltado')].some((g) => { const b = g.getBBox(); return b.x + b.width > 0 && b.x < anchoLinea; }));
+  if (conFoco) ((foco && svg.querySelector(`g.item[data-sel="${CSS.escape(foco)}"]`)) || pista).focus({ preventScroll: true });
   sucio.cursor = true;
   $('#velocidad').textContent = BE.textoVelocidad();
   document.querySelectorAll('[data-zoom]').forEach((b) => {
@@ -303,9 +323,10 @@ function pintarPablo(partes, yP, V, pxAnio) {
     const cls = E.resaltado ? (E.resaltado.claves.has(`viaje:${v.id}`) || algunaRes ? ' resaltado' : ' atenuado') : '';
     const w = x1 - x0;
     const etiqueta = recortar(`${v.nombre} · ${fechaCorta(v.fecha)}`, w - 14);
-    partes.push(`<g class="item viaje${v === V ? ' activo' : ''}${cls}" data-sel="viaje:${esc(v.id)}" tabindex="0" role="button" aria-label="${esc(v.nombre)}, ${esc(fechaCorta(v.fecha))}">
-      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje" style="fill:${BE.colorViaje(v.id)}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/>
-      ${etiqueta ? `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra">${esc(etiqueta)}</text>` : ''}</g>`);
+    // El tramo del viaje es el fondo de sus paradas: un clic en una parada no pregunta si se quería el viaje.
+    partes.push(`<g class="item viaje${v === V ? ' activo' : ''}${cls}" data-sel="viaje:${esc(v.id)}" data-fondo="1" tabindex="0" role="button" aria-label="${esc(v.nombre)}, ${esc(fechaCorta(v.fecha))}">
+      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje" style="fill:${BE.colorViaje(v.id)}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/></g>`);
+    if (etiqueta) rotulo(`viaje:${v.id}`, cls, `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra">${esc(etiqueta)}</text>`);
     if (pxAnio > 45) {
       for (const st of ps) {
         const x = xDe(st.a);
@@ -343,7 +364,7 @@ function pintarCartas(partes, y0) {
     const etiqueta = `${nombre}${esTramo ? ` · ${fechaCorta(cartas[0].fecha).replace(' e.c.', '')}` : ''}`;
     const x0 = esTramo ? xDe(tr[0]) : x - 7;
     const x1 = esTramo ? Math.max(xDe(tr[1]), x0 + 6) : x0 + 14;
-    const lx = esTramo ? x0 + 8 : x0 + 19;
+    const lx = esTramo ? Math.max(x0, 0) + 8 : x0 + 19;
     return { tr, cartas, esTramo, etiqueta, corto: cortas, x0, x1, lx, lw: anchoTexto(etiqueta) };
   }).filter((it) => it.x1 > -300 && it.x0 < anchoLinea + 50);
   empaquetar(items, [0, 1]);
@@ -358,26 +379,38 @@ function pintarCartas(partes, y0) {
     const forma = it.esTramo
       ? `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-carta"/>`
       : `<rect x="${it.x0 + 1}" y="${y + 9}" width="12" height="12" rx="2" transform="rotate(45 ${it.x0 + 7} ${y + 15})" class="rombo"/>`;
-    partes.push(`<g class="${cls}" data-sel="carta:${esc(principal.id)}" tabindex="0" role="button" ${aria}><title>${esc(nombres)} · ${esc(fechaCorta(principal.fecha))}</title>${forma}${textoItem(it, y, it.esTramo ? 'texto-carta' : 'texto-punto')}</g>`);
+    partes.push(`<g class="${cls}" data-sel="carta:${esc(principal.id)}" tabindex="0" role="button" ${aria}><title>${esc(nombres)} · ${esc(fechaCorta(principal.fecha))}</title>${forma}</g>`);
+    rotulo(`carta:${principal.id}`, res, textoItem(it, y, it.esTramo ? 'texto-carta' : 'texto-punto'));
   }
 }
 /** Sucesos: un tramo por suceso y un rombo si es un punto a esta escala. Los que se amontonan se agrupan en una píldora
-    («607 · 539 +2») que acerca el zoom a su tramo (T-03). Lo calculado por nosotros va hueco y rosa (C-03). */
-function pintarSucesos(partes, y, s) {
+    («4 sucesos · 1473-1467», o «4 · 1473-1467» si no hay sitio) que acerca el zoom a su tramo (T-03). Lo calculado por nosotros va hueco y rosa (C-03). Van en dos
+    filas (tres con la línea ampliada) para que se pisen menos; lo que aún se pisa se elige al pulsar (elegirEntre). */
+function itemsSucesos() {
+  const s = span();
   const base = (BE.D.eventos || []).map((e) => {
     const tr = BE.ventanaEvento(e);
     if (!tr) return null;
-    const x0 = xDe(tr[0]), x1 = Math.max(xDe(tr[1]), x0 + 6);
+    let x0 = xDe(tr[0]), x1 = Math.max(xDe(tr[1]), x0 + 6);
+    const punto = x1 - x0 < 9;
+    // Un rombo ocupa su diagonal, más que su tramo: se reparte y se rotula por lo que mide de verdad.
+    if (punto) { const cx = (x0 + x1) / 2; x0 = cx - 9; x1 = cx + 9; }
     const lib = citas((e.pasajes || []).join('; '))[0]?.libro;
     const lugar = BE.L[(e.lugares || [])[0]]?.nombre;
     const corto = lib && lib.num !== 44 && lib.num >= 45 ? lib.abr : `${lugar || e.titulo.split(/[\s:,]/)[0]} ${anioCorto(tr[0])}`;
-    return { e, tr, x0, x1, lx: x0 + 7, etiqueta: e.titulo, corto, lw: anchoTexto(e.titulo), punto: x1 - x0 < 9 };
+    // Un suceso que ocupa buena parte de la vista es el fondo de su fila: los cortos van encima y no le quitan una fila.
+    const fondo = !punto && x1 - x0 > anchoLinea * 0.4;
+    return { e, tr, x0, x1, lx: punto ? x1 + 2 : Math.max(x0, 0) + 7, etiqueta: e.titulo, corto, lw: anchoTexto(e.titulo), punto, fondo };
   }).filter((it) => it && it.x1 > -300 && it.x0 < anchoLinea + 50).sort((a, b) => a.x0 - b.x0);
   // Agrupar lo que se pisa cuando la escala es de siglos o más. Una píldora ocupa lo que mide su texto, así que se
   // repite hasta que ninguna forma pisa a la siguiente.
+  // Se agrupa con la etiqueta corta; rotular la alarga a «N sucesos · …» si cabe antes del siguiente de su fila.
   const rotularGrupo = (g) => {
-    const anios = [...new Set(g.grupo.map((x) => anioCorto(x.tr[0])))];
-    g.etiqueta = `${anios.slice(0, 2).join(' · ')}${g.grupo.length > 2 ? ` +${g.grupo.length - 2}` : ''}`;
+    const n = g.grupo.length, ts = g.grupo.map((x) => x.tr[0]);
+    g.anios = rangoAnios(Math.min(...ts), Math.max(...ts));
+    g.etiqueta = `${n} · ${g.anios}`;
+    g.largo = `${n} sucesos · ${g.anios}`;
+    g.minimo = `${n} sucesos`;
     g.lw = anchoTexto(g.etiqueta) + 12;
     g.x1 = Math.max(g.xf, g.x0 + g.lw);
     g.lx = g.x0 + 8; g.corto = g.etiqueta;
@@ -400,12 +433,34 @@ function pintarSucesos(partes, y, s) {
       items = out;
     }
   }
-  empaquetar(items, [0]);
+  return items;
+}
+/** Años de una píldora: «1473-1467», «1473» si es uno solo y, si cruza el cambio de era, «4 a.e.c.-33 e.c.». */
+function rangoAnios(a, b) {
+  const ya = Math.floor(a), yb = Math.floor(b);
+  if (ya === yb) return anioCorto(a);
+  return (ya > 0) === (yb > 0) ? `${anioCorto(a)}-${anioCorto(b)}` : `${fmtAnio(ya)}-${fmtAnio(yb)}`;
+}
+/** Filas del carril de sucesos: las que de verdad hacen falta, hasta dos (tres con la línea ampliada). */
+function medirSucesos(max = L.grande ? 3 : 2) {
+  this.items = itemsSucesos();
+  empaquetar(this.items, [...Array(max).keys()]);
+  this.filas = Math.max(1, ...this.items.map((it) => it.fila + 1));
+}
+function pintarSucesos(partes, c) {
+  let items = c.items;
+  if (!items) { items = itemsSucesos(); empaquetar(items, [...Array(c.filas).keys()]); }
+  items.sort((a, b) => !!b.fondo - !!a.fondo);
+  c.items = null;
   for (const it of items) {
+    const y = c.y + it.fila * CARRIL;
     if (it.grupo) {
-      const res = E.resaltado ? (it.grupo.some((x) => E.resaltado.claves.has(`evento:${x.e.id}`)) ? ' resaltado' : ' atenuado') : '';
+      const tiene = (claves) => it.grupo.some((x) => claves.has(`evento:${x.e.id}`));
+      const res = L.grupo && tiene(L.grupo.claves) ? ' resaltado' : E.resaltado ? (tiene(E.resaltado.claves) ? ' resaltado' : ' atenuado') : '';
       const nombres = it.grupo.map((x) => `${x.e.fecha?.texto || ''} · ${x.e.titulo}`).join('\n');
-      partes.push(`<g class="item grupo-sucesos${res}" data-rango="${it.tr[0]}~${it.tr[1]}" tabindex="0" role="button" aria-label="${it.grupo.length} sucesos: acercar"><title>${esc(nombres)}\nPulsa para acercar</title>
+      const primero = it.grupo.reduce((m, x) => (x.tr[0] < m.tr[0] ? x : m));
+      const rango = `data-rango="${it.tr[0]}~${it.tr[1]}" data-grupo="${esc(it.grupo.map((x) => x.e.id).join(','))}" data-primero="${esc(primero.e.id)}"`;
+      partes.push(`<g class="item grupo-sucesos${res}" ${rango} tabindex="0" role="button" aria-label="${it.grupo.length} sucesos, ${esc(it.anios)}: acercar"><title>${it.grupo.length} sucesos · ${esc(it.anios)}\n${esc(nombres)}\nPulsa para acercar</title>
         <rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="9" class="pildora"/><text x="${it.x0 + 8}" y="${y + 19}" class="texto-pildora">${esc(it.etiqueta)}</text></g>`);
       continue;
     }
@@ -417,13 +472,14 @@ function pintarSucesos(partes, y, s) {
     if (it.punto) {
       const cx = (it.x0 + it.x1) / 2;
       forma = `<rect x="${cx - 6}" y="${y + 9}" width="12" height="12" rx="2" transform="rotate(45 ${cx} ${y + 15})" class="rombo-evento${calc ? ' calculo' : ''}"/>`;
-      it.lx = cx + 11;
     } else {
       forma = `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-evento${calc ? ' calculo' : ''}"${est && !calc ? mascara(difuso(e.fecha) || 'a') : ''}/>${calc ? `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" fill="url(#p-calculo)" pointer-events="none"/>` : ''}`;
     }
     if (calc && it.texto) it.texto = `${it.texto}${it.texto === it.etiqueta ? ' · cálculo nuestro' : ''}`;
-    partes.push(`<g class="item evento${calc ? ' evento-calculo' : ''}${dim(`evento:${e.id}`)}" data-sel="evento:${esc(e.id)}" tabindex="0" role="button" aria-label="${esc(titulo)}"><title>${esc(titulo)}</title>
-      ${forma}${textoItem(it, y, calc ? 'texto-calculo' : 'texto-evento')}</g>`);
+    const d = dim(`evento:${e.id}`);
+    partes.push(`<g class="item evento${calc ? ' evento-calculo' : ''}${it.fondo ? ' evento-fondo' : ''}${d}" data-sel="evento:${esc(e.id)}"${it.fondo ? ' data-fondo="1"' : ''} tabindex="0" role="button" aria-label="${esc(titulo)}"><title>${esc(titulo)}</title>
+      ${forma}</g>`);
+    rotulo(`evento:${e.id}`, d, textoItem(it, y, calc ? 'texto-calculo' : 'texto-evento'));
   }
 }
 /** Periodos (eras, imperios, emperadores, reyes, gobernadores, sumos sacerdotes). Las eras y los imperios llevan su
@@ -471,8 +527,10 @@ function pintarPeriodos(partes, c) {
     const narr = p.fecha?.tipo === 'narrativa';
     const cambio = it.abierto ? ` · cambio sin fechar: ${it.abierto === 'd' ? 'no sabemos cuándo dejó de ser la potencia mundial' : 'no sabemos cuándo pasó a ser la potencia mundial'}` : '';
     const mk = it.abierto ? ` mask="url(#m-cambio-${it.abierto})"` : mascara(difuso(p.fecha));
-    partes.push(`<g class="item periodo periodo--${c.clase || c.id.replace(/-.*/, '')}${dim(`periodo:${p.id}`)}${narr ? ' narrativa' : ''}" data-sel="periodo:${esc(p.id)}"${rango} tabindex="0" role="button" aria-label="${esc(p.nombre)}, ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}"><title>${esc(p.nombre)} · ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}</title>
-      <rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" class="barra-periodo"${color ? ` style="fill:${color}"` : ''}${mk}/>${narr ? `<rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}${etiqueta}</g>`);
+    const d = dim(`periodo:${p.id}`);
+    partes.push(`<g class="item periodo periodo--${c.clase || c.id.replace(/-.*/, '')}${d}${narr ? ' narrativa' : ''}" data-sel="periodo:${esc(p.id)}"${rango} tabindex="0" role="button" aria-label="${esc(p.nombre)}, ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}"><title>${esc(p.nombre)} · ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}</title>
+      <rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" class="barra-periodo"${color ? ` style="fill:${color}"` : ''}${mk}/>${narr ? `<rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
+    rotulo(`periodo:${p.id}`, d, etiqueta, rango);
   });
 }
 /** Carril de una persona: su actividad de fondo, sus estancias (rayadas si la fecha es estimada) y el camino entre ellas. */
@@ -481,7 +539,7 @@ function pintarPersona(partes, c) {
   if (c.act && visible(c.act)) {
     const x0 = xDe(c.act[0]), x1 = Math.max(xDe(c.act[1]), x0 + 3);
     const f = BE.PERS[c.persona].fecha;
-    partes.push(`<g class="item actividad${dim(`persona:${c.persona}`)}" data-sel="persona:${esc(c.persona)}"><title>${esc(BE.PERS[c.persona].nombre)}: activo ${esc(f.texto || fechaCorta(f))}</title>
+    partes.push(`<g class="item actividad${dim(`persona:${c.persona}`)}" data-sel="persona:${esc(c.persona)}" data-fondo="1"><title>${esc(BE.PERS[c.persona].nombre)}: activo ${esc(f.texto || fechaCorta(f))}</title>
       <rect x="${x0}" y="${y + 24}" width="${x1 - x0}" height="4" rx="2" class="barra-actividad" style="fill:${color}"${mascara(difuso(f))}/></g>`);
   }
   const est = c.est.filter((s) => s.b > E.vista[0] - span() && s.a < E.vista[1] + span());
@@ -498,7 +556,6 @@ function pintarPersona(partes, c) {
   // Las estancias largas («vivió en») van debajo y las cortas encima. Las etiquetas se ponen al final, en el hueco que
   // dejan las cortas: nunca debajo de otra forma.
   items.sort((a, b) => (b.s.b - b.s.a) - (a.s.b - a.s.a));
-  const textos = [];
   const cortas = items.filter((it) => !it.s.larga);
   for (const it of items) {
     const s = it.s, w = it.x1 - it.x0;
@@ -506,11 +563,10 @@ function pintarPersona(partes, c) {
     let lx = Math.max(it.x0, 0) + 5, fin = Math.min(it.x1, anchoLinea) - 5;
     if (s.larga) for (const o of cortas) if (o.x0 <= lx + 4 && o.x1 >= lx - 2 && o.x1 < fin) lx = o.x1 + 4;
     const dentro = fin - lx > 22 ? recortar(s.lugar.nombre, fin - lx) : '';
-    partes.push(`<g class="${cls}" data-sel="${esc(s.sel)}" tabindex="0" role="button" aria-label="${esc(s.titulo)}, ${esc(s.lugar.nombre)}"><title>${esc(s.titulo)} · ${esc(s.lugar.nombre)}${s.referencia ? ` · ${esc(s.referencia)}` : ''}${s.narrativa ? ' · fecha estimada' : ''}</title>
+    partes.push(`<g class="${cls}" data-sel="${esc(s.sel)}"${s.larga ? ' data-fondo="1"' : ''} tabindex="0" role="button" aria-label="${esc(s.titulo)}, ${esc(s.lugar.nombre)}"><title>${esc(s.titulo)} · ${esc(s.lugar.nombre)}${s.referencia ? ` · ${esc(s.referencia)}` : ''}${s.narrativa ? ' · fecha estimada' : ''}</title>
       <rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" class="barra-estancia" style="fill:${color}"/>${s.narrativa ? `<rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
-    if (dentro && (s.larga || w > 40)) textos.push(`<text x="${lx}" y="${y + 19}" class="texto-barra texto-estancia">${esc(dentro)}</text>`);
+    if (dentro && (s.larga || w > 40)) rotulo(s.sel, dim(s.sel), `<text x="${lx}" y="${y + 19}" class="texto-barra texto-estancia">${esc(dentro)}</text>`);
   }
-  partes.push(...textos);
 }
 /** Donde dos carriles de persona vecinos coinciden en el mismo lugar a la vez, una banda los une (T-06). */
 function pintarJuntos(partes) {
@@ -555,12 +611,13 @@ function pintarSecular(partes, c) {
     const nombre = o.titulo || o.nombre;
     const etiqueta = `${alt.fecha.texto || fechaCorta(alt.fecha)} · ${nombre}`;
     const x0 = xDe(tr[0]), x1 = Math.max(xDe(tr[1]), x0 + 8);
-    items.push({ o, alt, tipo, x0, x1, lx: x0 + 6, etiqueta, corto: `secular: ${alt.fecha.texto || ''}`, lw: anchoTexto(etiqueta) });
+    items.push({ o, alt, tipo, x0, x1, lx: Math.max(x0, 0) + 6, etiqueta, corto: `secular: ${alt.fecha.texto || ''}`, lw: anchoTexto(etiqueta) });
   }
   empaquetar(items, [0]);
   for (const it of items) {
+    rotulo(`${it.tipo}:${it.o.id}`, dim(`${it.tipo}:${it.o.id}`), textoItem(it, c.y, 'texto-secular'));
     partes.push(`<g class="item secular${dim(`${it.tipo}:${it.o.id}`)}" data-sel="${it.tipo}:${esc(it.o.id)}" tabindex="0" role="button" aria-label="Fecha secular de ${esc(it.o.titulo || it.o.nombre)}: ${esc(it.alt.fecha.texto || '')}"><title>Fecha secular, solo como nota: ${esc(it.alt.fecha.texto || '')}${it.alt.nota ? `\n${esc(it.alt.nota)}` : ''}</title>
-      <rect x="${it.x0}" y="${c.y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-secular"/>${textoItem(it, c.y, 'texto-secular')}</g>`);
+      <rect x="${it.x0}" y="${c.y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-secular"/></g>`);
   }
 }
 /** Reparte elementos en filas: primero la fila libre; si no hay, la menos ocupada. Luego calcula cuánto sitio tiene cada etiqueta. */
@@ -568,6 +625,7 @@ function empaquetar(items, filas) {
   items.sort((a, b) => a.x0 - b.x0);
   const finTodo = filas.map(() => -1e9), finForma = filas.map(() => -1e9);
   for (const it of items) {
+    if (it.fondo) { it.fila = filas[0]; continue; }   // no ocupa sitio: lo corto se dibuja encima
     let i = finTodo.findIndex((f) => f <= it.x0 - 3);
     if (i < 0) i = finForma.findIndex((f) => f <= it.x0 - 3);
     if (i < 0) i = finForma.indexOf(Math.min(...finForma));
@@ -586,6 +644,11 @@ function rotular(items) {
   // dentro de él. Ninguna opción puede pisar un texto ya colocado.
   const puestos = new Map();
   const pisa = (fila, a, b) => (puestos.get(fila) || []).some(([c, d]) => a < d + 4 && b > c - 4);
+  // Un rótulo tampoco tapa la forma de otro elemento de su fila: va en la capa de arriba y se quedaría con sus clics.
+  // Las de fondo no cuentan, porque lo demás ya va encima de ellas.
+  const formas = new Map();
+  for (const o of items) if (!o.fondo) { if (!formas.has(o.fila)) formas.set(o.fila, []); formas.get(o.fila).push(o); }
+  const tapa = (it, a, b) => (formas.get(it.fila) || []).some((o) => o !== it && a < o.x1 && b > o.x0);
   const hueco = (it, texto, lado) => {
     const w = anchoTexto(texto);
     if (lado === 'izq') return [it.x0 - 5 - w, it.x0 - 5];
@@ -594,6 +657,10 @@ function rotular(items) {
   };
   items.forEach((it, i) => {
     if (it.grupo) {
+      const sig = items.slice(i + 1).find((o) => o.fila === it.fila);
+      const x1Largo = Math.max(it.xf, it.x0 + anchoTexto(it.largo) + 12);
+      if (x1Largo <= (sig ? sig.x0 - 6 : anchoLinea)) { it.etiqueta = it.largo; it.x1 = x1Largo; }
+      else if (!sig && it.x0 + anchoTexto(it.etiqueta) + 12 > anchoLinea) { it.etiqueta = it.minimo; it.x1 = Math.max(it.xf, it.x0 + anchoTexto(it.minimo) + 12); }   // en el borde derecho, sin años: van en el título
       libre.set(it.fila, it.x1); it.texto = it.etiqueta;
       if (!puestos.has(it.fila)) puestos.set(it.fila, []);
       puestos.get(it.fila).push([it.x0, it.x1]);
@@ -605,7 +672,7 @@ function rotular(items) {
     const finIzq = it.x0 - 5;
     const izq = finIzq - Math.max(desde + 6, 0);
     const ancho = (t) => anchoTexto(t);
-    const opciones = [
+    const opciones = it.fondo ? [[it.etiqueta, der, 'der'], [it.etiqueta, der, 'der', true], ...(it.corto ? [[it.corto, der, 'der']] : [])] : [
       [it.etiqueta, der, 'der'], [it.etiqueta, izq, 'izq'],
       ...(Math.max(der, izq) >= 60 ? [[it.etiqueta, Math.max(der, izq), der >= izq ? 'der' : 'izq', true]] : []),
       ...(it.corto ? [[it.corto, der, 'der'], [it.corto, izq, 'izq'], [it.corto, it.x1 - it.x0, 'dentro']] : []),
@@ -614,14 +681,14 @@ function rotular(items) {
     it.texto = ''; it.lado = 'der';
     for (const [t, px, lado, cortar] of opciones) {
       const texto = cortar ? recortar(t, px) : (ancho(t) <= px ? t : '');
-      if (texto && !pisa(it.fila, ...hueco(it, texto, lado))) { it.texto = texto; it.lado = lado; break; }
+      if (texto && !pisa(it.fila, ...hueco(it, texto, lado)) && !tapa(it, ...hueco(it, texto, lado))) { it.texto = texto; it.lado = lado; break; }
     }
     if (it.texto) {
       if (!puestos.has(it.fila)) puestos.set(it.fila, []);
       puestos.get(it.fila).push(hueco(it, it.texto, it.lado));
     }
     const finTexto = it.texto && it.lado === 'der' ? it.lx + ancho(it.texto) : -Infinity;
-    libre.set(it.fila, Math.max(it.x1, finTexto));
+    if (!it.fondo) libre.set(it.fila, Math.max(it.x1, finTexto));
   });
 }
 function textoItem(it, y, clase) {
@@ -773,6 +840,7 @@ function cursorMinimapa() {
 function duracion(d) {
   d = Math.abs(d);
   const dias = Math.round(d / BE.DIA);
+  if (dias < 1) return 'menos de un día';
   if (dias < 60) return `${dias} ${dias === 1 ? 'día' : 'días'}`;
   const meses = Math.round(d * 12);
   if (meses < 24) return `${meses} meses`;
@@ -851,10 +919,14 @@ function pintarCursor() {
   const g = $('#linea-cursor');
   if (!g) return;
   const x = xDe(E.t);
-  const w = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? BE.donde(E.sel.id, E.t) : BE.dondeEsta(E.t);
+  // La bandera dice de quién es el lugar: la persona elegida o, si no, Pablo. Sale de BE.donde, como «Ahora mismo».
+  const quien = E.sel?.tipo === 'persona' && BE.PERS[E.sel.id] ? E.sel.id : 'pablo';
+  const w = BE.donde(quien, E.t);
   const alto = altoPista;
   const fino = span() < 4;
-  const lugar = w ? (w.parada ? w.en.lugar.nombre : `hacia ${w.sig.lugar.nombre}`) : '';
+  // «Juan, el apóstol en Patmos» se lee mal: la aclaración va entre paréntesis.
+  const nombre = (BE.PERS[quien]?.nombre || 'Pablo').replace(/^([^,]+), (.+)$/, '$1 ($2)');
+  const lugar = w ? `${nombre} ${w.parada ? 'en' : 'hacia'} ${(w.parada ? w.en : w.sig).lugar.nombre}` : '';
   const bandera = `${w?.estimada || !fino || span() < 0.35 ? 'c. ' : ''}${textoCursor(E.t, fino)}${lugar ? ` · ${lugar}` : ''}`;
   const anchoB = anchoTexto(bandera, 10.5) + 14;
   const bx = clamp(x - anchoB / 2, 0, anchoLinea - anchoB);
@@ -949,9 +1021,9 @@ function zoomEn(factor, tAncla) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
-/** Encuadra [a, b] con un margen. */
-function encuadrarTiempo(a, b) {
-  const s = clamp((b - a) * 1.08, SPAN_MIN, spanMax());
+/** Encuadra [a, b] con un margen: el tramo ocupa la fracción `ocupa` de la vista, centrado. */
+function encuadrarTiempo(a, b, ocupa = 1 / 1.08) {
+  const s = clamp((b - a) / ocupa, SPAN_MIN, spanMax());
   const v0 = clamp((a + b) / 2 - s / 2, BE.T_MIN, BE.T_MAX - s);
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
@@ -1071,8 +1143,89 @@ function clicMenu(e) {
 }
 
 // ---------------------------------------------------------------------------
+// Elementos que se solapan: al pulsar un punto donde hay varios, se elige de una lista
+// ---------------------------------------------------------------------------
+/** Elementos de la línea bajo un punto de la pantalla, sin repetir y sin los rótulos. Si alguno no es de fondo, los de
+    fondo no cuentan: el tramo de un viaje bajo sus paradas, la actividad y las estancias largas de una persona. */
+function itemsEn(x, y) {
+  const vistos = new Map();
+  for (const el of document.elementsFromPoint(x, y)) {
+    const g = el.closest?.('#linea-svg g.item[data-sel]');
+    if (g && !vistos.has(g.dataset.sel)) vistos.set(g.dataset.sel, g);
+  }
+  const todos = [...vistos.values()];
+  const delante = todos.filter((g) => !g.dataset.fondo);
+  return delante.length ? delante : todos;
+}
+let eleccion = null;
+function cerrarEleccion(foco) {
+  if (!eleccion) return;
+  const { el, origen } = eleccion;
+  const dentro = el.contains(document.activeElement);
+  eleccion = null;
+  el.remove();
+  if (foco || dentro) (document.contains(origen) ? origen : $('#pista'))?.focus();
+}
+/** Lista pequeña con los elementos que se pisan en ese punto, por orden de fecha. Cada fila es un botón data-sel: la
+    selección la hace base.js como con cualquier otro. Flechas para moverse, Esc para cerrar. */
+function elegirEntre(gs, x, y, origen) {
+  cerrarEleccion();
+  const filas = gs.map((g) => {
+    const t = (g.querySelector('title')?.textContent || g.getAttribute('aria-label') || '').split('\n')[0];
+    const i = t.indexOf(' · ');
+    return { sel: g.dataset.sel, nombre: i > 0 ? t.slice(0, i) : t, resto: i > 0 ? t.slice(i + 3) : '', x: g.getBoundingClientRect().left };
+  }).sort((a, b) => a.x - b.x);
+  const el = document.createElement('div');
+  el.className = 'linea-eleccion be-card';
+  el.setAttribute('role', 'dialog');
+  el.setAttribute('aria-label', `${filas.length} elementos en este punto: elige uno`);
+  el.innerHTML = `<div class="be-card__eyebrow">${filas.length} en este punto</div>${filas.map((f) => `<button type="button" class="menu-fila menu-boton eleccion-fila" data-sel="${esc(f.sel)}"><span>${esc(f.nombre)}</span>${f.resto ? `<small>${esc(f.resto)}</small>` : ''}</button>`).join('')}`;
+  document.body.appendChild(el);
+  const w = Math.min(340, window.innerWidth - 16);
+  el.style.width = `${w}px`;
+  el.style.left = `${clamp(x - w / 2, 8, window.innerWidth - w - 8)}px`;
+  el.style.bottom = `${window.innerHeight - y + 14}px`;
+  el.style.maxHeight = `${Math.max(140, y - 24)}px`;
+  eleccion = { el, origen, vista: E.vista.join('~') };
+  const botones = () => [...el.querySelectorAll('button')];
+  el.addEventListener('keydown', (e) => {
+    const bs = botones(), i = bs.indexOf(document.activeElement);
+    if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); cerrarEleccion(true); return; }
+    const mover = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: bs.length - 1 }[e.key];
+    if (mover != null) { e.preventDefault(); e.stopPropagation(); bs[(mover + bs.length) % bs.length].focus(); return; }
+    if (e.key === 'Tab') { e.preventDefault(); bs[(i + (e.shiftKey ? -1 : 1) + bs.length) % bs.length].focus(); return; }
+    if (e.key !== 'Enter' && e.key !== ' ') e.stopPropagation();   // las flechas y el espacio no mueven el cursor detrás
+  });
+  el.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-sel]');
+    if (!b) return;
+    const sel = b.dataset.sel;
+    setTimeout(() => {   // después de que base.js seleccione
+      cerrarEleccion();
+      requestAnimationFrame(() => ($(`#linea-svg g.item[data-sel="${CSS.escape(sel)}"]`) || $('#pista'))?.focus({ preventScroll: true }));
+    }, 0);
+  });
+  botones()[0]?.focus();
+}
+
+// ---------------------------------------------------------------------------
 // Reproducción: pausa en los sucesos (T-11) y bucle (T-12)
 // ---------------------------------------------------------------------------
+/** Píldora de sucesos agrupados: su tramo ocupa el 60 % de la vista, centrado; el cursor va al primero de ellos y todos
+    quedan resaltados, aunque la selección sea otra, hasta que cambia la selección o dejan de verse. Si así la vista no
+    se acercaría (en el móvil, a escala de milenios, todo es una píldora), pulsar acerca a un cuarto de la
+    vista desde el primero: cada clic acerca, nunca deja la vista igual. */
+function abrirGrupo(g) {
+  const [a, b] = g.dataset.rango.split('~').map(Number);
+  const evs = g.dataset.grupo.split(',').map((id) => BE.D.eventos.find((x) => x.id === id)).filter(Boolean);
+  L.grupo = { claves: new Set(evs.map((x) => `evento:${x.id}`)), trs: evs.map(BE.ventanaEvento).filter(Boolean), sel: BE.selTexto(E.sel) };
+  const m = BE.momentoEvento(evs.find((x) => x.id === g.dataset.primero) || evs[0]);
+  if (m != null) setT(m);
+  if ((b - a) / 0.6 < span() * 0.9) { encuadrarTiempo(a, b, 0.6); return; }
+  const s = Math.max(span() / 4, SPAN_MIN), v0 = clamp(Math.max(a, BE.T_MIN) - s * 0.2, BE.T_MIN, BE.T_MAX - s);
+  E.vista = [v0, v0 + s];
+  sucio.linea = true; programar();
+}
 let tAnterior = null, reanudar = 0;
 function momentosFoco() {
   const out = [];
@@ -1144,6 +1297,7 @@ function montarBarra() {
   $('#fecha').addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target === $('#fecha')) editarFecha(); });
   document.addEventListener('pointerdown', (e) => {
     if (menuAbierto() && !e.target.closest('#linea-menu, #linea-menu-boton, .carriles-boton')) cerrarMenu();
+    if (eleccion && !e.target.closest('.linea-eleccion')) cerrarEleccion();
   });
   $('#carriles').addEventListener('click', (e) => {
     const f = e.target.closest('[data-fijar]');
@@ -1225,16 +1379,34 @@ function iniciarLinea() {
   pista.addEventListener('pointercancel', (e) => { punteros.delete(e.pointerId); pinza = null; arrastre = null; regla = null; });
   // Píldoras de sucesos agrupados, eras e imperios: acercan el zoom a su tramo. Regla y marcadores.
   $('#linea-svg').addEventListener('click', (e) => {
+    // Un clic de ratón o de dedo sobre una forma bajo la que hay otras: se elige de una lista. Un rótulo nunca
+    // pregunta: nombra un solo elemento. Enter desde el teclado (detail 0) elige el que tiene el foco.
+    const item = e.target.closest('g.item[data-sel]');
+    if (item && e.detail > 0) {
+      const gs = itemsEn(e.clientX, e.clientY);
+      if (gs.length > 1) { e.stopPropagation(); e.preventDefault(); elegirEntre(gs, e.clientX, e.clientY, item); return; }
+    }
     const q = e.target.closest('[data-linea="quitar-regla"]');
     if (q) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); return; }
     const m = e.target.closest('[data-marcador]');
     if (m) { irAMarcador(+m.dataset.marcador); return; }
     const g = e.target.closest('[data-rango]');
+    if (g?.dataset.grupo) { abrirGrupo(g); return; }
     if (g) {
       const [a, b] = g.dataset.rango.split('~').map(Number);
       setTimeout(() => encuadrarTiempo(a, b), 0);   // después de la selección, que centra el cursor
     }
   });
+  // Pasar sobre un rótulo marca su elemento, como pasar sobre la forma.
+  let encima = null;
+  const marcarEncima = (sel) => {
+    if (encima?.dataset.sel === sel) return;
+    encima?.classList.remove('encima');
+    encima = sel ? $(`#linea-svg g.item[data-sel="${CSS.escape(sel)}"]`) : null;
+    encima?.classList.add('encima');
+  };
+  $('#linea-svg').addEventListener('pointerover', (e) => marcarEncima(e.target.closest?.('.item-texto')?.dataset.sel || null));
+  $('#linea-svg').addEventListener('pointerleave', () => marcarEncima(null));
   $('#linea-svg').addEventListener('keydown', (e) => {
     const g = e.target.closest?.('[data-rango]:not([data-sel]), [data-marcador], [data-linea]');
     if (g && e.key === 'Enter') { e.preventDefault(); g.dispatchEvent(new MouseEvent('click', { bubbles: true })); }

@@ -30,7 +30,7 @@ estado: verificado
 relaciones:
 - tipo: pariente
   persona: herodes-agripa-i
-  relacion: hija
+  relacion: padre
   deducido: false
   fuentes:
   - it-berenice

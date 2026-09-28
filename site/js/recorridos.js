@@ -102,6 +102,7 @@ function marcas() {
     el.type = 'button';
     el.className = `marca-num${ks.includes(R.paso) ? ' marca-num--activa' : ''}${ks.every((k) => k < R.paso) ? ' marca-num--vista' : ''}`;
     el.textContent = ks.map((k) => k + 1).join('·');
+    el.dataset.lugar = l;   // mapa.js reparte el número anclado en su lugar exacto
     el.setAttribute('aria-label', `Parada ${ks.map((k) => k + 1).join(' y ')}: ${BE.L[l].nombre}`);
     el.addEventListener('click', (ev) => { ev.stopPropagation(); irA(ks.includes(R.paso) ? R.paso : ks[0]); });
     R.marcas.push(new ML.Marker({ element: el, anchor: 'bottom', offset: [0, -14] }).setLngLat([BE.L[l].lon, BE.L[l].lat]).addTo(map));
@@ -120,10 +121,10 @@ function irA(i, { historia = true } = {}) {
   BE.setT(p.t);
   BE.asegurarVisible(BE.E.t, true);
   const ls = lugaresParada(p);
+  vistaSobreMapa();   // antes de encuadrar: el encuadre deja libre el sitio de esta tarjeta
   BE.mapa.resaltar(ls.length ? ls : null);
   if (ls.length) BE.mapa.encuadrar(ls);
   BE.pintarPanel(true);
-  vistaSobreMapa();
   marcas();
   BE.guardarHash();
 }

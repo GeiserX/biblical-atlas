@@ -15,7 +15,7 @@ python3 -m http.server 8000
 
 y abre <http://localhost:8000>.
 
-También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. Las fichas no muestran vídeos, ni de lugares ni de capítulos.
+También funciona abriendo `site/index.html` con doble clic, desde `file://`, con tres límites. El navegador no deja a MapLibre leer ficheros locales, así que el relieve antiguo va como imagen bajo el mapa. La cortina no está disponible. Las fichas no muestran vídeos, ni de lugares, ni de personas, ni de capítulos.
 
 En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.com con su huella SRI, y el mapa actual usa las teselas de [OpenFreeMap](https://openfreemap.org/) con el estilo Positron, que no pide clave. Si ese estilo no responde, el mapa actual pasa a `maps/mediterraneo-actual.webp`.
 
@@ -25,23 +25,30 @@ En los dos casos hace falta conexión. MapLibre GL JS 6.11.2 llega desde unpkg.c
 - `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_EARTH_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
 - `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/indexar.py`](../scripts/videos/indexar.py). Si falta, la ficha de lugar no enseña esa sección.
 - `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/pasajes.py`](../scripts/videos/pasajes.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
-- `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `indexar.py`, pero el sitio todavía no lo lee.
+- `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `indexar.py` y lo lee la ficha de persona. Si falta, o desde `file://`, la sección no sale.
 
 El método de los tres índices está en [`docs/investigacion/videos-jw.md`](../docs/investigacion/videos-jw.md).
 
-No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su capítulo en wol.jw.org y cada dato a su fuente, con la fecha en que se consultó.
+No copiamos ni incrustamos texto de jw.org. La ficha enlaza cada pasaje a su capítulo en wol.jw.org y cada dato a su fuente. La fecha de consulta queda en los YAML, en la SQLite y en el registro, no en la ficha.
 
 ## Mapas base
 
-`maps/` tiene el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos, en tres extensiones, cada una en versión antigua y actual. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md).
+`maps/` tiene el relieve propio del [kit de maquetas](../docs/ideas/mockups/kit/build/README.md), hecho con Natural Earth y datos de elevación abiertos, en cuatro extensiones, cada una en versión antigua y actual. Los créditos están en [`CREDITS.md`](../docs/ideas/mockups/kit/maps/CREDITS.md).
 
 | Extensión | Longitud | Latitud | Tamaño |
 |---|---|---|---|
-| `mundo` | −10 a 72 | 12 a 50 | 3000 × 1676 px |
+| `mundo` | −20 a 100 | −40 a 58 | 4096 × 3935 px |
 | `mediterraneo` | 10 a 44 | 28 a 44 | 4096 × 2399 px |
 | `israel` | 33,9 a 36,9 | 29,4 a 33,7 | 2000 × 3365 px |
+| `jerusalen` | 35,10 a 35,36 | 31,68 a 31,86 | 2400 × 1954 px |
 
-El mapa las pone una encima de otra, de menos a más detalle: el mundo siempre, el Mediterráneo a partir del zoom 4,3 y la tierra de Israel a partir del 6,7, cada una fundida con la de debajo. Los bordes del Mediterráneo y de Israel se funden a transparente (70 y 90 px) para que no se vea la costura. `maps/mundo-mini.webp` (240 px) es el mapa de situación de la esquina.
+El mapa las pone una encima de otra, de menos a más detalle: el mundo siempre, el Mediterráneo a partir del zoom 4,3, la tierra de Israel a partir del 6,7 y Jerusalén con sus alrededores (Betania, Betfagué, el monte de los Olivos, Belén) a partir del 10, cada una fundida con la de debajo. Los bordes del Mediterráneo, de Israel y de Jerusalén se funden a transparente (70, 90 y 120 px) para que no se vea la costura. `maps/mundo-mini.webp` (240 × 159 px) es el mapa de situación de la esquina: cubre −20 a 100 y −8 a 58, porque más al sur solo hay mar y el sur de África.
+
+El mundo cubre todos los lugares y zonas candidatas de los datos con al menos 10° de margen (de Tarsis en la península ibérica a la zona de Ofir en la India, y hasta la zona de Ofir en Somalia por el sur). Por el sur llega hasta 40° S: en el móvil, con la hoja de la ficha abierta, lo que cae bajo la hoja también tiene que ser relieve, y así las tres zonas de Ofir caben por encima de ella. Si un lugar nuevo cae cerca del borde, hay que ampliar la extensión y regenerar las dos imágenes del mundo (y la del mapa de situación si el lugar queda fuera de ella). El mapa no deja salir de esa extensión, así que nunca se ve el borde del relieve.
+
+El relieve de Jerusalén sale de teselas Terrarium al zoom 14 (unos 10 m por píxel). El dato de origen es SRTM de 30 m, así que a partir del zoom 13 el relieve se ve suave, sin píxeles.
+
+Al encuadrar una selección, el mapa no se acerca más de lo que aguanta el relieve más fino de esa zona (`topeRelieve` en `js/mapa.js`): zoom 14 en Jerusalén, 10 en la tierra de Israel, 8 en el Mediterráneo y 7,5 en el resto. Si ya estaba más cerca, se aleja hasta ese tope. Sin selección, un salto grande en el tiempo (una fecha escrita, un año buscado, un clic lejano en la pista) reencuadra a Pablo o, si los datos no lo sitúan, la época. Reproducir o arrastrar el cursor poco a poco no reencuadra, por muchos años que recorra.
 
 El kit dibuja en proyección equirrectangular. Aquí las imágenes están reproyectadas a Web Mercator (EPSG:3857) para que MapLibre las ponga como `image source` con las esquinas exactas. La reproyección es un remuestreo por filas, porque en las dos proyecciones la longitud es lineal en x:
 
@@ -71,7 +78,7 @@ else:
     Image.fromarray(out).save(dst, quality=82, method=6)
 ```
 
-Órdenes usadas, para `antiguo` y `actual`: `mundo -10 72 12 50 3000`, `mediterraneo 10 44 28 44 4096 --borde=70` e `israel 33.9 36.9 29.4 33.7 2000 --borde=90`.
+Órdenes usadas, para `antiguo` y `actual`: `mundo -20 100 -40 58 4096`, `mediterraneo 10 44 28 44 4096 --borde=70`, `israel 33.9 36.9 29.4 33.7 2000 --borde=90` y `jerusalen 35.10 35.36 31.68 31.86 2400 --borde=120`. El mundo y Jerusalén usan las extensiones propias del sitio que describe el [README del kit](../docs/ideas/mockups/kit/build/README.md#extensiones-del-sitio).
 
 Para comprobar la alineación, Corinto (37,9058 N, 22,8787 E) debe caer en la costa del istmo y no tierra adentro.
 
@@ -144,7 +151,7 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | Fichero | Qué hace |
 |---|---|
 | `js/base.js` | Utilidades, estado, carga de datos, registro de tipos, selección, cursor, reproducción, dirección, bucle de pintado, teclado y arranque |
-| `js/mapa.js` | MapLibre, relieve en tres extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
+| `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
 | `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes, estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
 | `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, meses hebreos |
 | `js/linea.js` | Línea de tiempo en seis escalas, carriles, densidad, minimapa, regla, bucle y marcadores |
@@ -197,7 +204,7 @@ BE.tipo('lugar', {
 
 `base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js`; `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
 
-`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
+`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 

@@ -45,22 +45,6 @@ relaciones:
   razon: 'Perspicacia «Tiberio»: Augusto lo escogió como sucesor y, tras su muerte, el Senado lo nombró emperador en 14
     e.c.'
   estado: verificado
-- tipo: pariente
-  persona: augusto
-  relacion: hijastro e hijo adoptivo
-  fecha:
-    desde: 4
-    hasta: 4
-    precision: año
-    aprox: false
-    tipo: anclada
-    cronologia: tnm
-    texto: 4 e.c.
-  deducido: false
-  fuentes:
-  - it-tiberio
-  razon: 'Perspicacia «Tiberio»: su madre, Livia, se casó con Octavio, que lo adoptó en 4 e.c.'
-  estado: verificado
 buscar: Tiberio César
 consultado: '2026-09-28'
 estado: verificado

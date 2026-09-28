@@ -136,15 +136,24 @@ function abrir(id, { pas = -1, desdeHash = false } = {}) {
   parar();
   BE.cargarVideosPasajes?.();
   pintar();
+  BE.estudio.relleno?.();
   if (!desdeHash) {
     if (L.pas < 0) BE.seleccionar({ tipo: 'pasaje', id: L.id }, { mover: true, encuadrar: L.sigue });
     BE.guardarHash();
+  } else {
+    // Desde un enlace sin fecha ni selección: el cursor y el mapa van al capítulo, como al abrirlo a mano.
+    BE.estudio.trasEnlace?.(() => {
+      if (!abierta() || BE.E.sel) return;
+      if (L.pas >= 0 && L.ps?.[L.pas]) abrirPasaje(L.pas);
+      else BE.seleccionar({ tipo: 'pasaje', id: L.id }, { mover: true, encuadrar: L.sigue });
+    });
   }
 }
 function cerrar(silencioso) {
   if (!abierta()) return;
   L.id = null; L.pas = -1; parar();
   pintar();
+  BE.estudio.relleno?.();
   if (!silencioso) BE.guardarHash();
 }
 function parar() { clearTimeout(L.play); L.play = 0; }

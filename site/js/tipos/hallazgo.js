@@ -1,6 +1,6 @@
 /* biblical-earth · tipo «hallazgo» (F-07): qué es, dónde se encontró, qué fecha tiene el objeto, con qué conecta y lo que
    no afirmamos (F-08). `identificacion: incierta` pone la insignia; `no_afirmamos` (lista de frases, como en personas)
-   va a «Lo que el texto no dice». Una fuente de nivel 2 solo acompaña a una de nivel 1. Dueño durante el reparto: app-mapa. */
+   va a «Lo que el texto no dice»; `donde_hoy`, si está, sale como «Dónde está hoy». Una fuente de nivel 2 solo acompaña a una de nivel 1. Dueño durante el reparto: app-mapa. */
 'use strict';
 (() => {
 const BE = window.BE;
@@ -23,8 +23,9 @@ function fichaHallazgo(id) {
       <div class="be-card__eyebrow"><span class="be-node be-node--hallazgo be-node--sm" aria-hidden="true">H</span> Hallazgo arqueológico</div>${incierta ? '<span class="insignia-incierta">identificación incierta</span>' : ''}
       <h2 class="be-card__title">${esc(h.nombre)}</h2>
       ${h.resumen ? `<p class="be-card__body">${esc(h.resumen)}</p>` : ''}
-      <dl class="be-kv">
+      <dl class="be-kv hallazgo-kv">
         <dt>Dónde se encontró</dt><dd>${l ? `<button type="button" class="enlace-titulo" data-sel="lugar:${esc(l.id)}">${esc(l.nombre)}</button>` : 'sin lugar'}</dd>
+        ${h.donde_hoy ? `<dt>Dónde está hoy</dt><dd>${esc(h.donde_hoy)}</dd>` : ''}
         <dt>Fecha del objeto</dt><dd><span class="be-chrono be-chrono--tnm">${esc(h.fecha_objeto?.texto || fechaCorta(h.fecha_objeto) || 'sin fecha')}</span></dd>
         ${otros.length ? `<dt>Con qué conecta</dt><dd class="conecta">${otros.map((s) => `<button type="button" class="be-chip" data-sel="${esc(BE.selTexto(s))}">${esc(BE.nombreSel(s))}</button>`).join('')}</dd>` : ''}
       </dl>

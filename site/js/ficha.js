@@ -8,7 +8,6 @@ const { E, esc, citas, fmtDia, fmtAnio, EXTERNO, ES_FILE } = BE;
 
 const REPO = 'https://github.com/GeiserX/biblical-earth';
 const CARPETA = { lugar: 'lugares', persona: 'personas', viaje: 'viajes', carta: 'cartas', evento: 'eventos', periodo: 'periodos', hallazgo: 'hallazgos', recorrido: 'recorridos' };
-const UN_ANIO = 365 * 24 * 3600 * 1000;
 
 /** Filtro «solo nivel 1» (C-09). Lo guarda la dirección (mapa.js); aquí solo se lee. */
 const soloNivel1 = () => !!BE.filtros?.nivel1;
@@ -27,12 +26,8 @@ function estadoHtml(estado) {
   const v = estado === 'verificado';
   return `<span class="estado estado--${v ? 'verificado' : 'pendiente'}" title="${v ? 'Alguien abrió la fuente enlazada y lo dice.' : 'Todavía nadie lo ha comprobado en la fuente.'}">${v ? 'Verificado' : 'Pendiente de verificar'}</span>`;
 }
-/** Fecha de consulta y, si hace falta, el aviso de que toca releer o de que la fuente fue sustituida (C-10). */
-function consultaHtml(f) {
-  const t = Date.parse(f.consultado || '');
-  const vieja = Number.isFinite(t) && Date.now() - t > UN_ANIO;
-  return `<span class="fuente-fecha">Consultado el ${esc(fmtDia(f.consultado))}${vieja ? ' · <b class="fuente-aviso">hace más de un año: toca releerla</b>' : ''}${f.nota === 'sustituida' ? ' · <b class="fuente-aviso">sustituida por una publicación más reciente</b>' : ''}</span>`;
-}
+/** Aviso de fuente sustituida por una publicación más reciente (C-10). La fecha de consulta se queda en los datos, no en la ficha. */
+const avisoFuenteHtml = (f) => (f.nota === 'sustituida' ? '<span class="fuente-fecha"><b class="fuente-aviso">Sustituida por una publicación más reciente</b></span>' : '');
 function fuentesHtml(ids) {
   let fs = (ids || []).map((id) => [id, fuente(id)]).filter(([, f]) => f);
   if (!fs.length) return '<p class="be-muted">Sin fuente todavía.</p>';
@@ -41,7 +36,7 @@ function fuentesHtml(ids) {
   return `<ul class="fuentes">${fs.map(([, f]) => `<li>
     <span class="be-tier be-tier--${f.nivel === 1 ? 1 : 2}" data-n="${f.nivel}">Nivel ${f.nivel}</span>
     <div><a href="${esc(f.url)}" ${EXTERNO}>${esc(f.titulo)}</a><span class="fuente-obra">${esc(f.obra)}${f.publicado ? ` · ${esc(f.publicado)}` : ''}</span>
-    ${consultaHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'fuente de nivel 2 oculta' : 'fuentes de nivel 2 ocultas'} por el filtro «solo nivel 1».</p>` : ''}`;
+    ${avisoFuenteHtml(f)}</div></li>`).join('')}</ul>${ocultas ? `<p class="be-muted oculto-n2">${ocultas} ${ocultas === 1 ? 'fuente de nivel 2 oculta' : 'fuentes de nivel 2 ocultas'} por el filtro «solo nivel 1».</p>` : ''}`;
 }
 /** Insignia N1 o N2 de un hecho (C-01). Al pulsarla se despliegan sus fuentes con enlace. */
 function insigniaHtml(ids) {
@@ -77,7 +72,6 @@ function porQueHtml(obj, extra = '') {
     <h3 class="be-card__eyebrow">Por qué lo decimos</h3>
     ${obj.razon ? `<p class="razon">${esc(obj.razon)}</p>` : ''}${extra}
     ${fuentesHtml(obj.fuentes)}
-    ${obj.consultado ? `<p class="fuente-fecha">Ficha revisada el ${esc(fmtDia(obj.consultado))}</p>` : ''}
     ${historialHtml(obj)}
     ${propuesta ? `<div class="fila-proponer">${propuesta}</div>` : ''}
   </div></section>`;
@@ -95,11 +89,13 @@ function enlacesHtml(enlaces) {
   if (!enlaces?.length) return '';
   return `<div class="enlaces">${enlaces.map((e) => `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}>${esc(e.titulo)}</a>`).join('')}</div>`;
 }
-function videosHtml(lugarId) {
-  if (BE.VIDEOS === null) {
-    return ES_FILE ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Vídeos de jw.org</h3><p class="be-muted">La lista de vídeos se ve al abrir el sitio con un servidor local (ver README).</p></div></section>` : '';
+/** Vídeos de jw.org que nombran un lugar (BE.VIDEOS, de videos.json) o una persona (V, de videos-personas.json).
+    Con V === null desde file:// la ficha de lugar lo explica; la de persona pasa `callar` y no enseña nada. */
+function videosHtml(id, V = BE.VIDEOS, callar = false) {
+  if (V === null) {
+    return ES_FILE && !callar ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Vídeos de jw.org</h3><p class="be-muted">La lista de vídeos se ve al abrir el sitio con un servidor local (ver README).</p></div></section>` : '';
   }
-  const vs = [...(BE.VIDEOS?.[lugarId] || [])].sort((a, b) => (b.menciones || 0) - (a.menciones || 0));
+  const vs = [...(V?.[id] || [])].filter((v) => v && v.url && v.titulo).sort((a, b) => (b.menciones || 0) - (a.menciones || 0));
   if (!vs.length) return '';
   const max = 6;
   return `<section class="be-card ficha-sec"><div class="be-card__pad">

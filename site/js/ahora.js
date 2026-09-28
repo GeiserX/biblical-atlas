@@ -16,10 +16,11 @@ const cubre = (f, t) => { const tr = BE.ventanaFecha(f) || tramo(f); return !!tr
 /** ¿El periodo cubre t? Una potencia con un extremo sin fecha cubre hasta la potencia vecina (BE.tramoPotencia). */
 const cubreP = (p, t) => { if (p.tipo !== 'potencia') return cubre(p.fecha, t); const tr = BE.tramoPotencia(p); return !!tr && t >= tr[0] && t < tr[1]; };
 /** Potencias en t: la de fechas conocidas más reciente o, si solo caen ahí potencias con el cambio sin fechar (entre
-    Egipto y Asiria), todas ellas, porque no sabemos cuál mandaba. */
+    Egipto y Asiria, antes de 740 a.e.c.), todas ellas, porque no sabemos cuál mandaba. */
 function potenciasEn(ps, t) {
   const xs = ps.filter((p) => p.tipo === 'potencia' && cubreP(p, t)).sort((a, b) => tramo(b.fecha)[0] - tramo(a.fecha)[0]);
-  const fijas = xs.filter((p) => !BE.tramoPotencia(p).abierto);
+  // Una potencia sin fecha de ascenso cuenta como fija desde el año en que ya consta como tal (Asiria al tomar Samaria).
+  const fijas = xs.filter((p) => !BE.tramoPotencia(p).abierto || (p.consta_desde != null && t >= p.consta_desde));
   if (fijas.length) return [fijas[0]];
   return xs.sort((a, b) => BE.tramoPotencia(a)[0] - BE.tramoPotencia(b)[0] || (BE.tramoPotencia(a).abierto === 'd' ? -1 : 1));
 }
@@ -55,6 +56,9 @@ function resumen(t) {
   const sinLugar = Object.values(BE.PERS).filter((p) => p.fecha && !presentes.has(p.id) && cubre(p.fecha, t)).slice(0, 6);
   return { t, era, potencia, potencias, gobierno, lugares, camino, ahora, antes, despues, sinLugar };
 }
+/** ¿Tiene sentido decir que no sabemos dónde estaba Pablo? Solo entre su primera parada y unos años después de la
+    última (murió hacia 65). Antes de su conversión, en la vida de Jesús o en otra época, no se nombra. */
+const conPablo = (t) => BE.P.length > 0 && t >= BE.P[0].a && t < BE.P.at(-1).b + 5;
 /** Frase de contexto del cursor (T-23): «Roma · Claudio · Pablo en Corinto · Galión». */
 function fraseAhora(t) {
   const r = resumen(t);
@@ -65,8 +69,8 @@ function fraseAhora(t) {
   partes.push(...mandan);
   const w = BE.dondeEsta(t);
   if (w) partes.push(`Pablo ${w.parada ? 'en' : 'hacia'} ${w.parada ? w.en.lugar.nombre : w.sig.lugar.nombre}`);
-  else if (BE.P.length && t > BE.P[0].a - 25 && t < BE.P.at(-1).b + 10) partes.push('Sin datos de Pablo');
-  const otros = r.lugares.flatMap((g) => g.xs.filter((x) => x.persona !== 'pablo').map((x) => `${BE.PERS[x.persona].nombre} en ${g.lugar.nombre}`));
+  else if (conPablo(t)) partes.push('Sin datos de Pablo');
+  const otros = r.lugares.flatMap((g) => g.xs.filter((x) => x.persona !== 'pablo').map((x) => `${BE.PERS[x.persona].nombre.replace(/^([^,]+), (.+)$/, '$1 ($2)')} en ${g.lugar.nombre}`));
   partes.push(...otros.slice(0, w ? 1 : 2));
   partes.push(...r.gobierno.filter((p) => p.tipo === 'gobernador').slice(0, 1).map((p) => p.nombre));
   return partes.join(' · ');
@@ -113,7 +117,7 @@ function fichaResumen(t) {
   const r = resumen(t);
   const filas = filasResumen(r);
   const antesP = [...BE.P].reverse().find((s) => s.b < t), despuesP = BE.P.find((s) => s.a > t);
-  const conPablo = BE.P.length && t > BE.P[0].a - 25 && t < BE.P.at(-1).b + 10;
+
   const titulo = r.potencia ? `${fmtCursor(t, BE.span() < 4)} · ${textoPotencias(r)}` : fmtCursor(t, BE.span() < 4);
   return `${BE.migas('Ahora mismo', fmtCursor(t))}
     <section class="be-card ahora"><div class="be-card__pad">
@@ -122,7 +126,7 @@ function fichaResumen(t) {
       ${filas.length ? kv(filas) : '<p class="be-card__body">No tenemos datos con fecha para este momento. No rellenamos el hueco: estos son los hechos fechados más cercanos.</p>'}
       ${!filas.length && (r.antes || r.despues) ? `<div class="be-list">${r.antes ? BE.botonSel(`evento:${r.antes.e.id}`, `Antes: ${r.antes.e.titulo}`, esc(r.antes.e.fecha?.texto || '')) : ''}${r.despues ? BE.botonSel(`evento:${r.despues.e.id}`, `Después: ${r.despues.e.titulo}`, esc(r.despues.e.fecha?.texto || '')) : ''}</div>` : ''}
     </div></section>
-    ${conPablo ? `<section class="be-card ficha-sec"><div class="be-card__pad">
+    ${conPablo(t) ? `<section class="be-card ficha-sec"><div class="be-card__pad">
         <h3 class="be-card__eyebrow">No sabemos dónde estaba Pablo en esta fecha</h3>
         <p class="be-card__body">Los datos no lo sitúan en ${esc(fmtCursor(t))}; no inventamos una posición: estas son las paradas con fecha más cercanas.</p>
         <div class="be-list">${antesP ? BE.botonSel(`parada:${antesP.key}`, `Antes: ${antesP.lugar.nombre}`, esc(antesP.p.referencia)) : ''}${despuesP ? BE.botonSel(`parada:${despuesP.key}`, `Después: ${despuesP.lugar.nombre}`, esc(despuesP.p.referencia)) : ''}</div>

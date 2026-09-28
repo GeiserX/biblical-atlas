@@ -1,7 +1,8 @@
-/* biblical-earth · mapa: MapLibre, relieve antiguo y actual en tres extensiones (mundo, Mediterráneo, Israel), cortina,
-   rutas de todos los viajes, arcos de cartas con un color por escritor, lugares inciertos como zonas y candidatos,
-   hallazgos, marcas de lugar con nombre por época y agrupación, marcador de Pablo, etiquetas sin solapes, capas y
-   filtros guardados en la dirección, nombres del encuadre, mapa de situación, leyenda y tarjeta «Mientras tanto».
+/* biblical-earth · mapa: MapLibre, relieve antiguo y actual en cuatro extensiones (mundo, Mediterráneo, Israel,
+   Jerusalén), cortina, rutas de todos los viajes, arcos de cartas con un color por escritor, lugares inciertos como zonas
+   y candidatos, hallazgos, marcas de lugar con nombre por época, filtradas por fecha y agrupadas, marcador de Pablo,
+   etiquetas sin solapes, capas y filtros guardados en la dirección, nombres del encuadre, mapa de situación, leyenda y
+   tarjeta «Mientras tanto».
    Dueño durante el reparto: app-mapa. Interfaz fija para los demás: BE.mapa.resaltar(ids) y BE.mapa.encuadrar(ids). */
 'use strict';
 (() => {
@@ -9,19 +10,25 @@ const BE = window.BE;
 const { E, sucio, programar, esc, $, clamp, tramo, fechaCorta, mercY, latDeY, ES_FILE, seleccionar, setT, asegurarVisible, guardarHash, avisar } = BE;
 
 // ---------------------------------------------------------------------------
-// Mapas base: tres extensiones del kit reproyectadas a Web Mercator (ver site/README.md). De menos a más detalle:
-// el mundo bíblico siempre; el Mediterráneo y la tierra de Israel aparecen al acercarse, encima del anterior.
+// Mapas base: cuatro extensiones del kit reproyectadas a Web Mercator (ver site/README.md). De menos a más detalle:
+// el mundo bíblico siempre; el Mediterráneo, la tierra de Israel y Jerusalén aparecen al acercarse, encima del anterior.
+// El mundo cubre todos los lugares y zonas candidatas con margen, y el mapa no deja salir de él (maxBounds). Llega hasta
+// 40° S para que en el móvil, con la hoja abierta, las zonas de Ofir quepan por encima de ella sin ver el borde.
 // ---------------------------------------------------------------------------
 const BASES = [
-  { id: 'mundo', ext: { oeste: -10, este: 72, sur: 12, norte: 50 }, zoom: null },
+  { id: 'mundo', ext: { oeste: -20, este: 100, sur: -40, norte: 58 }, zoom: null },
   { id: 'mediterraneo', ext: { oeste: 10, este: 44, sur: 28, norte: 44 }, zoom: [4.3, 5] },
   { id: 'israel', ext: { oeste: 33.9, este: 36.9, sur: 29.4, norte: 33.7 }, zoom: [6.7, 7.4] },
+  { id: 'jerusalen', ext: { oeste: 35.10, este: 35.36, sur: 31.68, norte: 31.86 }, zoom: [10, 10.8] },
 ];
 const esquinas = (e) => [[e.oeste, e.norte], [e.este, e.norte], [e.este, e.sur], [e.oeste, e.sur]];
 const urlBase = (b, estilo) => `maps/${b.id}-${estilo}.webp`;
 const opacidadGL = (b) => (b.zoom ? ['interpolate', ['linear'], ['zoom'], b.zoom[0], 0, b.zoom[1], 1] : 1);
 const opacidadEn = (b, z) => (b.zoom ? clamp((z - b.zoom[0]) / (b.zoom[1] - b.zoom[0]), 0, 1) : 1);
 const MUNDO = BASES[0].ext;
+// El mapa de situación (maps/mundo-mini.webp) se queda en el norte: al sur de 8° S solo habría mar y el sur de África.
+const MINI = { oeste: -20, este: 100, sur: -8, norte: 58 };
+const ZOOM_MAX = 14;                  // alrededor de Jerusalén el relieve propio aguanta hasta aquí
 const ESTILO_ACTUAL = 'https://tiles.openfreemap.org/styles/positron';
 const ATRIBUCION = 'Relieve: Natural Earth, USGS SRTM/GMTED2010, NOAA ETOPO1, Copernicus EU-DEM, Mapzen · Costas y ríos: Natural Earth · Coordenadas: <a href="https://www.openbible.info/geo/" target="_blank" rel="noopener">OpenBible.info</a> (CC BY 4.0)';
 const MAYORES = new Set(['roma', 'jerusalen', 'antioquia-de-siria', 'efeso', 'corinto', 'atenas', 'filipos', 'tesalonica', 'babilonia']);
@@ -129,8 +136,8 @@ function crearMapa() {
     container: 'mapa-gl',
     style: ESTILO_ACTUAL,
     bounds: ENCUADRE_INICIAL,
-    maxBounds: [[MUNDO.oeste - 4, MUNDO.sur - 3], [MUNDO.este + 4, MUNDO.norte + 3]],
-    minZoom: 2.5, maxZoom: 11,
+    maxBounds: [[MUNDO.oeste, MUNDO.sur], [MUNDO.este, MUNDO.norte]],
+    minZoom: 2.5, maxZoom: ZOOM_MAX,
     dragRotate: false, pitchWithRotate: false, touchPitch: false,
     renderWorldCopies: false, fadeDuration: 0,
     // En pantallas estrechas la atribución se pliega en un botón (i) para no tapar el mapa.
@@ -156,7 +163,7 @@ function crearMapa() {
     if (e?.error?.message) console.warn('Mapa:', e.error.message, url);
   });
   map.on('style.load', () => { cargado = true; montarCapas(); });
-  map.on('moveend', () => { sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); });
+  map.on('moveend', () => { sucio.etiquetas = true; programar(); if (E.mapa === 'cortina') pintarCortina(); pintarNombresEncuadre(); if (pintarLeyenda.args) pintarLeyenda(...pintarLeyenda.args); });
   map.on('move', () => { if (imgsDom.length) colocarImgsDom(); if (E.mapa === 'cortina') pintarCortina(); pintarSituacion(); });
   map.on('resize', () => { if (imgsDom.length) colocarImgsDom(); });
   // Un clic en una marca HTML también llega a MapLibre: esa marca ya lo gestiona su propio manejador.
@@ -225,7 +232,9 @@ function montarCapas() {
   const color = ['get', 'color'];
   const flecha = (placement, opacity, spacing) => ({ type: 'symbol', layout: { 'symbol-placement': placement, 'symbol-spacing': spacing, 'icon-image': ['concat', 'be-flecha-', ['get', 'viaje']], 'icon-size': 0.5, 'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true }, paint: { 'icon-opacity': opacity } });
   // Lugares inciertos: zonas rayadas con borde difuminado, franjas y el abanico que une a los candidatos.
-  map.addLayer({ id: 'be-zonas-relleno', type: 'fill', source: 'be-zonas', paint: { 'fill-pattern': ['concat', 'be-rayado-', ['get', 'estado']], 'fill-opacity': ['get', 'opacidad'] } });
+  // Una zona pequeña (Getsemaní, 1 km) cubre toda la ciudad a zoom 13: de cerca su rayado se aclara.
+  const deCerca = ['interpolate', ['linear'], ['zoom'], 10, ['get', 'opacidad'], 13, ['*', 0.3, ['get', 'opacidad']]];
+  map.addLayer({ id: 'be-zonas-relleno', type: 'fill', source: 'be-zonas', paint: { 'fill-pattern': ['concat', 'be-rayado-', ['get', 'estado']], 'fill-opacity': deCerca } });
   map.addLayer({ id: 'be-zonas-halo', type: 'line', source: 'be-zonas', paint: { 'line-color': color, 'line-width': 10, 'line-blur': 8, 'line-opacity': ['*', 0.35, ['get', 'opacidad']] } });
   map.addLayer({ id: 'be-zonas-solido', type: 'line', source: 'be-zonas', filter: ['==', ['get', 'trazo'], 'solido'], paint: { 'line-color': color, 'line-width': 1.8, 'line-opacity': ['get', 'opacidad'] } });
   map.addLayer({ id: 'be-zonas-raya', type: 'line', source: 'be-zonas', filter: ['==', ['get', 'trazo'], 'raya'], paint: { 'line-color': color, 'line-width': 1.8, 'line-dasharray': [4, 3], 'line-opacity': ['get', 'opacidad'] } });
@@ -447,12 +456,14 @@ function imagenRayado(color, estado) {
 // Viajes (M-09): el que Pablo recorre en esta fecha se parte en hecho y falta; los demás, de cualquier persona,
 // se ven como rastro: en color si están ocurriendo, gris claro si ya pasaron y más claro si aún no han empezado.
 // ---------------------------------------------------------------------------
-/** ¿Cae t cerca de algún viaje (25 años antes, 10 después)? Es la regla con que «Ahora mismo» decide si hablar de Pablo.
-    Lejos de todos, el mapa ni dibuja los viajes ni los explica en la leyenda. */
-function viajesCerca(t) {
-  if (BE.P.length && t > BE.P[0].a - 25 && t < BE.P.at(-1).b + 10) return true;
-  return BE.D.viajes.some((v) => { if ((v.persona || 'pablo') === 'pablo') return false; const tr = tramo(v.fecha); return !!tr && t > tr[0] - 25 && t < tr[1] + 10; });
+/** Tramo de los viajes de una persona, de la primera salida a la última llegada. Fuera de él (con un año de margen al
+    final), el mapa no dibuja sus viajes ni los explica en la leyenda, salvo que se seleccione el viaje o la persona. */
+function tramoViajes(persona) {
+  if (persona === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
+  const trs = BE.D.viajes.filter((v) => (v.persona || 'pablo') === persona).map((v) => tramo(v.fecha)).filter(Boolean);
+  return trs.length ? [Math.min(...trs.map((x) => x[0])), Math.max(...trs.map((x) => x[1]))] : null;
 }
+const viajesEnEpoca = (persona, t) => { const tr = tramoViajes(persona); return !!tr && t >= tr[0] && t < tr[1] + 1; };
 function geoRutas(w) {
   const V = BE.viajeActual(w);
   const hecho = [], falta = [], rastro = [];
@@ -475,22 +486,25 @@ function geoRutas(w) {
       falta.push(linea([w.pos, coord(w.sig.lugar)], { viaje: V.id, incierto: false, color }));
     }
   }
-  if ((F.capas.viajes && viajesCerca(E.t)) || E.sel?.tipo === 'viaje') {
-    for (const v of BE.D.viajes) {
-      if (v === V) continue;
-      const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => BE.L[p.lugar]).filter(conPunto).map(coord);
-      if (pts.length < 2) continue;
-      let estado;
-      const dePablo = (v.persona || 'pablo') === 'pablo';
-      const ps = dePablo ? BE.P.filter((s) => s.viaje === v) : [];
-      if (ps.length) estado = ps[0].a > E.t ? 'futuro' : 'pasado';
-      else {
-        const tr = tramo(v.fecha);
-        estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
-      }
-      const c = colorViaje(v.id);
-      rastro.push(linea(pts, { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c }));
+  const selPersona = E.sel?.tipo === 'persona' ? E.sel.id : null;
+  for (const v of BE.D.viajes) {
+    if (v === V) continue;
+    const quien = v.persona || 'pablo';
+    const ver = (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
+      || (F.capas.viajes && viajesEnEpoca(quien, E.t));
+    if (!ver) continue;
+    const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => BE.L[p.lugar]).filter(conPunto).map(coord);
+    if (pts.length < 2) continue;
+    let estado;
+    const dePablo = quien === 'pablo';
+    const ps = dePablo ? BE.P.filter((s) => s.viaje === v) : [];
+    if (ps.length) estado = ps[0].a > E.t ? 'futuro' : 'pasado';
+    else {
+      const tr = tramo(v.fecha);
+      estado = !tr ? 'pasado' : E.t < tr[0] ? 'futuro' : E.t >= tr[1] ? 'pasado' : 'actual';
     }
+    const c = colorViaje(v.id);
+    rastro.push(linea(pts, { viaje: v.id, estado, color: estado === 'pasado' ? apagar(c, 0.45) : c }));
   }
   return { hecho, falta, rastro, V };
 }
@@ -589,7 +603,8 @@ function pintarEtiquetasCartas(grupos) {
 
 // ---------------------------------------------------------------------------
 // Lugares inciertos (M-10, M-11, C-07, C-09): zonas, franjas, puntos candidatos con su estado y el abanico que los une.
-// Sin selección, la capa no filtra por fecha: cada lugar se ilumina cuando uno de sus sucesos cae en el cursor.
+// Como los demás lugares, solo se dibujan los que tienen algo en el tramo de fecha a la vista, además de los que implica
+// la selección; cada uno se ilumina cuando uno de sus sucesos cae en el cursor.
 // ---------------------------------------------------------------------------
 let claveInciertos = '';
 const lugaresInciertos = () => Object.values(BE.L).filter((l) => candidatosDe(l));
@@ -600,7 +615,8 @@ function centroCandidato(c) { const g = c.geometria; return g.tipo === 'franja' 
 function pintarInciertos() {
   const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
   const res = resaltadoMapa ?? E.resaltado?.lugares;
-  const lista = lugaresInciertos().filter((l) => F.capas.inciertos || l.id === selL || res?.has(l.id));
+  const ventana = ventanaRelevante();
+  const lista = lugaresInciertos().filter((l) => l.id === selL || res?.has(l.id) || candFoco?.lugar === l.id || (F.capas.inciertos && enTiempo(l.id, ventana)));
   const activos = new Set(lista.filter((l) => activoEnFecha(l.id, E.t)).map((l) => l.id));
   const clave = `${lista.map((l) => l.id)}|${selL}|${[...activos]}|${F.nivel1}|${F.capas.pendientes}|${candFoco?.lugar}:${candFoco?.i}|${res ? [...res].join(',') : ''}`;
   if (clave === claveInciertos) return;
@@ -671,7 +687,8 @@ function rotuloZona(k, l, cs, op, foco) {
 }
 /** Pulsar una zona o un candidato: abre la ficha del lugar y marca ese candidato en ella y en el mapa. */
 function elegirCandidato(lugar, i) {
-  if (!(E.sel?.tipo === 'lugar' && E.sel.id === lugar)) seleccionar({ tipo: 'lugar', id: lugar }, { mover: false, encuadrar: false });
+  // Como un lugar pulsado en el mapa (base.js): el cursor solo se mueve si nada del lugar cae en la vista de la línea.
+  if (!(E.sel?.tipo === 'lugar' && E.sel.id === lugar)) seleccionar({ tipo: 'lugar', id: lugar }, { mover: !!BE.lugarFueraDeVista?.(lugar), encuadrar: false });
   enfocarCandidato(lugar, i, false);
 }
 /** Marca un candidato (desde su fila en la ficha o desde el mapa). Con volar, el mapa va hasta él. */
@@ -681,7 +698,7 @@ function enfocarCandidato(lugar, i, volar = true) {
   const c = candidatosDe(BE.L[lugar])?.[+i];
   if (c && volar && map) {
     const g = c.geometria;
-    if (g.tipo === 'zona') map.fitBounds(cajaDe([[g.lon, g.lat]], g.radio_km), { padding: rellenoEncuadre(), maxZoom: 8, duration: 700 });
+    if (g.tipo === 'zona') map.fitBounds(cajaDe([[g.lon, g.lat]], g.radio_km), { padding: rellenoEncuadre(), maxZoom: g.radio_km < 3 ? 12 : 8, duration: 700 });
     else map.easeTo({ center: centroCandidato(c), zoom: Math.max(map.getZoom(), 7), duration: 700 });
   }
   document.querySelectorAll('#panel-cuerpo [data-cand]').forEach((el) => {
@@ -696,10 +713,14 @@ function enfocarCandidato(lugar, i, volar = true) {
 // Hallazgos (F-07): una marca por lugar de hallazgo, con cuántos hay
 // ---------------------------------------------------------------------------
 function pintarHallazgos() {
-  const hs = (BE.D.hallazgos || []).filter((h) => conPunto(BE.L[h.lugar_hallazgo]) && (F.capas.pendientes || h.estado !== 'pendiente'));
   const selH = E.sel?.tipo === 'hallazgo' ? E.sel.id : null;
+  const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
+  const ventana = ventanaRelevante();
+  // Como los lugares: el hallazgo se ve si su fecha cae en el tramo a la vista, o si es de lo seleccionado.
+  const hs = (BE.D.hallazgos || []).filter((h) => conPunto(BE.L[h.lugar_hallazgo]) && (F.capas.pendientes || h.estado !== 'pendiente')
+    && (h.id === selH || h.lugar_hallazgo === selL || E.resaltado?.claves?.has(`hallazgo:${h.id}`) || cruza(tramo(h.fecha_objeto), ventana)));
   const ver = F.capas.hallazgos || selH;
-  const clave = `${hs.length}|${selH}|${F.capas.hallazgos}|${F.capas.pendientes}`;
+  const clave = `${hs.map((h) => h.id)}|${selH}|${F.capas.hallazgos}|${F.capas.pendientes}`;
   if (clave === pintarHallazgos.clave) return;
   pintarHallazgos.clave = clave;
   const porLugar = new Map();
@@ -772,7 +793,7 @@ function nombreEn(l, t) {
 }
 const lugaresConEpoca = () => Object.values(BE.L).filter((l) => (l.nombres || []).some((n) => n.desde != null || n.hasta != null));
 
-let clavePablo = '', claveEpocas = '';
+let clavePablo = '', claveEpocas = '', claveTiempo = '';
 function pintarMapa() {
   if (!mapaListo || !marcaPablo) return;
   const t = E.t;
@@ -782,9 +803,11 @@ function pintarMapa() {
   const soloViaje = E.sel?.tipo === 'viaje' ? E.sel.id : null;     // un viaje seleccionado oculta los demás
   const verViajes = F.capas.viajes || soloViaje;
   const filtra = (fs) => (!verViajes ? [] : soloViaje ? fs.filter((f) => f.properties.viaje === soloViaje) : fs);
-  map.getSource('be-hecho').setData({ type: 'FeatureCollection', features: filtra(g.hecho) });
-  map.getSource('be-falta').setData({ type: 'FeatureCollection', features: filtra(g.falta) });
-  map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: filtra(g.rastro) });
+  g.hecho = filtra(g.hecho); g.falta = filtra(g.falta); g.rastro = filtra(g.rastro);
+  g.rastroVisible = [...new Set(g.rastro.map((f) => f.properties.viaje))].map((id) => BE.D.viajes.find((v) => v.id === id)).filter(Boolean);
+  map.getSource('be-hecho').setData({ type: 'FeatureCollection', features: g.hecho });
+  map.getSource('be-falta').setData({ type: 'FeatureCollection', features: g.falta });
+  map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: g.rastro });
   const { arcos, halos, oes, zonas, grupos } = geoCartas(t);
   const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('') + E.sel?.id;
   if (claveCartas !== pintarMapa.claveCartas) {
@@ -824,9 +847,14 @@ function pintarMapa() {
   // El nombre de un lugar cambia con la fecha (G-11): si cambia alguno, se reescriben las etiquetas.
   const ep = lugaresConEpoca().map((l) => nombreEn(l, t)).join('|');
   if (ep !== claveEpocas) { claveEpocas = ep; sucio.etiquetas = true; }
-  pintarLeyenda(V, w);
+  // Los lugares que se ven dependen de la fecha y del tramo de la línea de tiempo.
+  const ventana = ventanaRelevante();
+  const kt = [...marcasLugar.keys()].filter((id) => enTiempo(id, ventana)).join(',');
+  if (kt !== claveTiempo) { claveTiempo = kt; sucio.etiquetas = true; }
+  pintarLeyenda(V, w, g);
   pintarMientras(t);
   if (E.play && w) seguir(w.pos);
+  vigilarSalto();
 }
 /** Marcadores de otras personas con viajes (Pedro, Jesús…) cuando BE.donde sabe dónde están. */
 function pintarViajeros(ver) {
@@ -852,27 +880,77 @@ function pintarViajeros(ver) {
 /** Alto que tapa la hoja inferior en pantallas estrechas, contando la fila del suceso y la leyenda que va encima. */
 function altoHoja() {
   if (!estrecha()) return 0;
-  return (E.hojaPlegada ? 0 : $('#panel').offsetHeight) + 44;
+  // La hoja de lectura (46vh) tapa más que la de la ficha cuando está abierta.
+  const lec = document.getElementById('vista-lectura');
+  return Math.max(E.hojaPlegada ? 0 : $('#panel').offsetHeight, lec && !lec.hidden ? lec.offsetHeight : 0) + 44;
 }
-/** Si Pablo se acerca al borde (12 %) o queda bajo la hoja inferior, el mapa lo recentra en la parte visible. */
+/** Parte del mapa que se ve de verdad, en píxeles del contenedor: sin el relleno propio del mapa (grafo, conexión y
+    lectura tapan la izquierda en escritorio, estudio.relleno de grafo.js) ni la hoja inferior del móvil. */
+function zonaLibre() {
+  const c = map.getContainer(), pad = map.getPadding();
+  return { x0: pad.left, x1: c.clientWidth - pad.right, y0: pad.top, y1: c.clientHeight - Math.max(pad.bottom, altoHoja()) };
+}
+/** Si Pablo se acerca al borde (12 %) de la parte libre (zonaLibre), el mapa lo recentra en ella. */
 function seguir(pos, forzar = false) {
   if (!mapaListo || (!forzar && map.isMoving())) return;
   const hoja = altoHoja();
-  const c = map.getContainer(), p = map.project(pos);
-  const ancho = c.clientWidth, alto = c.clientHeight - hoja, m = 0.12;
-  if (p.x < ancho * m || p.x > ancho * (1 - m) || p.y < alto * m || p.y > alto * (1 - m)) {
+  const z = zonaLibre(), p = map.project(pos);
+  const mx = (z.x1 - z.x0) * 0.12, my = (z.y1 - z.y0) * 0.12;
+  if (p.x < z.x0 + mx || p.x > z.x1 - mx || p.y < z.y0 + my || p.y > z.y1 - my) {
     map.easeTo({ center: pos, offset: [0, -hoja / 2], duration: 900 });
   }
 }
-/** Tras un salto en el tiempo, Pablo no puede quedar fuera. */
+/** Tras un salto en el tiempo, Pablo no puede quedar fuera. Si los datos no lo sitúan en esa fecha y no hay selección,
+    el mapa enseña la época (encuadrarEpoca), si no se ve ya. */
 function seguirPablo() {
+  tSalto = E.t;
   const w = BE.dondeEsta(E.t);
   if (w) seguir(w.pos, true);
+  else if (!E.sel) encuadrarEpoca(E.t, { siVisible: true });
+}
+/** Un salto grande en el tiempo sin selección (una fecha escrita, un año buscado, un clic lejano en la pista a escala de
+    milenios) reencuadra como seguirPablo, un momento después de que el cursor se pare. Reproducir y arrastrar poco a poco
+    no reencuadran: se compara cada fotograma con el anterior, y cada uno avanza menos que SALTO por muchos años que sumen.
+    Un paso pequeño justo después de un salto cancela el reencuadre pendiente: ya se está arrastrando. */
+const SALTO = 20;
+let tSalto = null, saltoTimer = 0;
+function vigilarSalto() {
+  const d = tSalto == null ? 0 : Math.abs(E.t - tSalto);
+  tSalto = E.t;
+  if (E.sel || E.play) { clearTimeout(saltoTimer); return; }
+  if (d === 0) return;
+  clearTimeout(saltoTimer);
+  if (d < SALTO) return;
+  saltoTimer = setTimeout(() => { if (!E.sel && !E.play && mapaListo) seguirPablo(); }, 300);
 }
 
 // ---------------------------------------------------------------------------
+// Relevancia en el tiempo: el mapa solo dibuja los lugares que tienen algo (suceso, periodo, parada, carta, hallazgo,
+// persona que vivió allí) en el tramo que enseña la línea de tiempo, como mucho 250 años a cada lado del cursor y
+// nunca menos de medio año. Lo que implica la selección, el viaje en curso y las cartas dibujadas se ven siempre.
+// ---------------------------------------------------------------------------
+const MEDIO_TRAMO = 250;
+let tramosCache = null;
+/** Tramos [a, b] de los hechos fechados de un lugar (BE.hechosDe de tipos/lugar.js), una vez por carga de datos. */
+function tramosDe(id) {
+  if (!tramosCache || tramosCache.D !== BE.D) tramosCache = { D: BE.D, m: new Map() };
+  let v = tramosCache.m.get(id);
+  if (!v) { v = (BE.hechosDe?.(id) || []).map((h) => h.tr).filter(Boolean); tramosCache.m.set(id, v); }
+  return v;
+}
+function ventanaRelevante() {
+  const t = E.t, [v0, v1] = E.vista;
+  return [Math.min(t - 0.5, Math.max(v0, t - MEDIO_TRAMO)), Math.max(t + 0.5, Math.min(v1, t + MEDIO_TRAMO))];
+}
+const cruza = (tr, w) => !!tr && tr[0] <= w[1] && tr[1] >= w[0];
+const enTiempo = (id, w = ventanaRelevante()) => tramosDe(id).some((tr) => cruza(tr, w));
+
+// ---------------------------------------------------------------------------
 // Etiquetas: estados, nombres por época y de hoy (M-03, G-11), reparto sin solapes por importancia (M-14) y
-// agrupación de puntos cercanos (M-15)
+// agrupación de puntos cercanos (M-15). Las dos cosas son fijas para cada zoom y monótonas: al acercarse, un grupo
+// solo se parte y un rótulo que ya se veía no se esconde. Para eso cada rótulo tiene un tramo de zoom [desde, hasta)
+// calculado de una vez, no en cada fotograma: dos rótulos se tocan en pantalla por debajo de cierto zoom, porque la
+// distancia en píxeles entre sus anclas crece con 2^zoom y su tamaño no cambia.
 // ---------------------------------------------------------------------------
 function etiquetaHtml(m) {
   const l = m.l;
@@ -885,6 +963,97 @@ function etiquetaHtml(m) {
   if (m.clase === 'difuso') b = 'ubicación incierta';
   return `<span class="nombre-a">${esc(a)}</span>${b ? `<small class="nombre-b">${esc(b)}</small>` : ''}`;
 }
+/** Posición en píxeles del mundo a zoom 0 (teselas de 512 px). A zoom z, la distancia en pantalla es esta por 2^z. */
+function mundo0(pos) { const c = maplibregl.MercatorCoordinate.fromLngLat(pos); return { x: c.x * 512, y: c.y * 512 }; }
+const NIVEL_MIN = 2, NIVEL_MAX = 14, RADIO_GRUPO = 16;
+/** Agrupación anidada, como supercluster: se empieza con cada punto suelto al zoom 14 y, bajando de nivel en nivel,
+    se juntan los grupos que quedan a menos de 16 px. Un grupo de un nivel es la unión de grupos del nivel de encima, así
+    que al acercarse un grupo solo se parte. Devuelve, para cada punto, el zoom desde el que va suelto, y las burbujas
+    ({ ids, pos, desde, hasta }) de los grupos de tres o más. */
+let cacheGrupos = { clave: null };
+function agrupamiento(puntos) {
+  const clave = puntos.map((p) => p.id).join(',');
+  if (cacheGrupos.clave === clave) return cacheGrupos;
+  const w = puntos.map((p) => mundo0(p.pos));
+  let grupos = puntos.map((_, i) => ({ ids: [i], x: w[i].x, y: w[i].y }));
+  const libre = new Map(puntos.map((p) => [p.id, -Infinity]));
+  const burbujas = new Map();         // clave de miembros → burbuja
+  for (let n = NIVEL_MAX; n >= NIVEL_MIN; n--) {
+    const s = 2 ** n, usado = new Set(), nuevos = [];
+    for (let i = 0; i < grupos.length; i++) {
+      if (usado.has(i)) continue;
+      const g = grupos[i], junta = [g];
+      for (let j = i + 1; j < grupos.length; j++) {
+        if (!usado.has(j) && Math.hypot((grupos[j].x - g.x) * s, (grupos[j].y - g.y) * s) < RADIO_GRUPO) { usado.add(j); junta.push(grupos[j]); }
+      }
+      const ids = junta.flatMap((x) => x.ids).sort((a, b) => a - b);
+      nuevos.push({ ids, x: ids.reduce((t, k) => t + w[k].x, 0) / ids.length, y: ids.reduce((t, k) => t + w[k].y, 0) / ids.length });
+    }
+    grupos = nuevos;
+    for (const g of grupos) {
+      if (g.ids.length < 3) continue;
+      for (const k of g.ids) libre.set(puntos[k].id, Math.max(libre.get(puntos[k].id), n + 1));
+      const k = g.ids.join(',');
+      const b = burbujas.get(k);
+      if (b) b.desde = n;
+      else {
+        const ms = g.ids.map((i) => puntos[i]);
+        burbujas.set(k, { ids: ms.map((p) => p.id), pos: [ms.reduce((t, p) => t + p.pos[0], 0) / ms.length, ms.reduce((t, p) => t + p.pos[1], 0) / ms.length], desde: n, hasta: n + 1 });
+      }
+    }
+  }
+  const lista = [...burbujas.values()];
+  for (const b of lista) if (b.desde === NIVEL_MIN) b.desde = -Infinity;
+  cacheGrupos = { clave, libre, burbujas: lista };
+  return cacheGrupos;
+}
+/** Tramo de zoom (zlo, zhi) en que se tocan dos cajas { x0, x1, y0, y1 } (px, relativas a su ancla) con anclas a y b
+    en píxeles de zoom 0; null si nunca se tocan. */
+function choqueZoom(A, B) {
+  const tramoEje = (d, lo, hi) => {
+    if (Math.abs(d) < 1e-9) return lo < 0 && hi > 0 ? [0, Infinity] : null;
+    return d > 0 ? [Math.max(0, lo / d), hi / d] : [Math.max(0, hi / d), lo / d];
+  };
+  const ex = tramoEje(B.w.x - A.w.x, A.caja.x0 - 3 - B.caja.x1, A.caja.x1 + 3 - B.caja.x0);
+  const ey = tramoEje(B.w.y - A.w.y, A.caja.y0 - 1 - B.caja.y1, A.caja.y1 + 1 - B.caja.y0);
+  if (!ex || !ey) return null;
+  const s0 = Math.max(ex[0], ey[0]), s1 = Math.min(ex[1], ey[1]);
+  if (!(s1 > s0)) return null;
+  return [s0 > 0 ? Math.log2(s0) : -Infinity, Math.log2(s1)];
+}
+/** Reparto fijo: recorre los rótulos en orden (primero los que se ven siempre, luego por el zoom en que aparecen, por
+    importancia y, a igual importancia, el lugar con más hechos) y recorta el tramo [desde, hasta) de cada uno para que
+    no pise a los anteriores. Uno que aparece al acercarse empieza después de su último choque; uno con fin (regiones,
+    agua) acaba antes de su primer choque. */
+function repartir(items, burbujas) {
+  const orden = [...items].sort((a, b) => (b.prio >= 90) - (a.prio >= 90) || (a.prio >= 90 ? b.prio - a.prio : 0)
+    || (a.hasta < Infinity) - (b.hasta < Infinity) || a.desde - b.desde || b.prio - a.prio || (b.peso || 0) - (a.peso || 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  const puestos = [];
+  const recortar = (x, otro) => {
+    const c = choqueZoom(otro, x);
+    // Un choque que solo pasaría por encima del zoom máximo no cuenta: los números de un recorrido van anclados a unos
+    // píxeles de su lugar y, a zoom 20, acababan pisando su nombre y escondían Jerusalén y Betania a cualquier zoom.
+    if (!c || c[0] >= ZOOM_MAX) return;
+    const bs = Math.max(otro.d, c[0]), be = Math.min(otro.h, c[1]);
+    if (!(be > bs) || be <= x.d || bs >= x.h) return;
+    if (x.hasta === Infinity || bs <= x.d) x.d = Math.max(x.d, be); else x.h = Math.min(x.h, bs);
+  };
+  for (const x of items) { x.d = x.desde; x.h = x.hasta; }
+  const obstaculos = items.filter((x) => x.obstaculo);
+  for (const x of orden) {
+    if (x.obstaculo) { puestos.push(x); continue; }   // un punto que se dibuja siempre no cede su sitio
+    // Las burbujas solo apartan a lo secundario (< 50); lo del viaje o de la selección se dibuja encima de ellas.
+    if (x.prio < 50) for (const b of burbujas) recortar(x, b);
+    // Los puntos de candidatos y hallazgos apartan a todos los rótulos de candidatos y zonas, vayan antes o después en
+    // el orden (el nombre «ʽAmwas» no pasa por encima del punto de El-Qubeiba). A un nombre de lugar solo lo apartan los
+    // puntos del lugar elegido o de la parada; los demás quedan debajo de él (z-index 1), como Betfagué junto al monte
+    // de los Olivos.
+    if (x.cand) for (const p of obstaculos) { if (x.d >= x.h) break; if (p.el !== x.el) recortar(x, p); }
+    for (const p of puestos) { if (x.d >= x.h) break; if (!p.obstaculo || p.exento) recortar(x, p); }
+    if (x.d < x.h) puestos.push(x);
+  }
+}
+const firma = (el) => [...el.classList].filter((c) => c !== 'sin-etiqueta' && c !== 'agrupado' && c !== 'cand--junto' && !c.startsWith('maplibregl-')).join('.');
 function pintarEtiquetas() {
   if (!mapaListo) return;
   const w = BE.dondeEsta(E.t);
@@ -898,14 +1067,22 @@ function pintarEtiquetas() {
   const deCartas = new Set();
   for (const c of BE.D.cartas) if (cartaEnMapa(c, E.t)) { BE.origenesCarta(c).forEach((x) => deCartas.add(x)); BE.destinosCarta(c).forEach((x) => deCartas.add(x)); }
   const res = resaltadoMapa ?? E.resaltado?.lugares;
+  const selL = E.sel?.tipo === 'lugar' ? E.sel.id : null;
   const zoom = map.getZoom();
-  const lista = [];
+  const ventana = ventanaRelevante();
+  // Sin selección, los lugares que enseñan la época (los que encuadra encuadrarEpoca) se nombran como una ciudad mayor:
+  // en 2001 a.e.c. el mapa se va a Ur, y Ur tiene que llevar su nombre a ese zoom.
+  const deEpoca = E.sel ? null : lugaresEpocaEn(E.t);
+  const items = [], puntos = [], marcas = [];
   for (const [id, m] of marcasLugar) {
     const cls = m.el.classList;
     const enRes = res ? res.has(id) : false;
-    const esSel = E.sel?.tipo === 'lugar' && E.sel.id === id;
-    const oculto = !F.capas.pendientes && m.l.estado === 'pendiente' && !enRes;
+    const esSel = selL === id;
+    const oculto = !F.capas.pendientes && m.l.estado === 'pendiente' && !enRes && !esSel;
+    const fijo = esSel || enRes || id === actual || visitados.has(id) || futuros.has(id) || deCartas.has(id) || !!deEpoca?.has(id);
+    const otraEpoca = !oculto && !fijo && m.clase !== 'agua' && !enTiempo(id, ventana);
     cls.toggle('oculto', oculto);
+    cls.toggle('otra-epoca', otraEpoca);
     cls.toggle('pendiente', m.l.estado === 'pendiente');
     cls.toggle('es-actual', id === actual);
     cls.toggle('visitado', visitados.has(id));
@@ -913,8 +1090,9 @@ function pintarEtiquetas() {
     cls.toggle('de-carta', deCartas.has(id));
     cls.toggle('resaltado', enRes);
     cls.toggle('atenuado', !!res && !enRes);
-    const principal = MAYORES.has(id) || visitados.has(id) || futuros.has(id) || deCartas.has(id) || enRes;
+    const principal = MAYORES.has(id) || !!deEpoca?.has(id) || visitados.has(id) || futuros.has(id) || deCartas.has(id) || enRes;
     cls.toggle('menor', !principal);
+    if (oculto || otraEpoca) continue;
     if (!m.region) {
       const html = etiquetaHtml(m);
       const et = m.el.querySelector('.etiqueta');
@@ -924,117 +1102,198 @@ function pintarEtiquetas() {
       const rt = m.el.querySelector('.region-texto');
       if (rt.textContent !== n) rt.textContent = n;
     }
-    let prio;
-    if (oculto) prio = -2;
-    else if (id === actual) prio = 100;
+    // Importancia y tramo de zoom en que puede verse el rótulo.
+    let prio, desde = -Infinity, hasta = Infinity;
+    if (id === actual) prio = 100;
     else if (esSel) prio = 95;
+    else if (resaltadoMapa?.has(id)) prio = 92;             // la parada del recorrido o la fila elegida en «Nombres»
     else if (enRes) prio = 80;
     else if (visitados.has(id) || futuros.has(id)) prio = 60;
     else if (deCartas.has(id)) prio = 50;
-    else if (MAYORES.has(id)) prio = zoom >= 4.3 ? 40 : -1;
-    else prio = zoom >= 6.3 ? 20 : -1;
-    if (m.region) prio = oculto ? -2 : esSel || enRes ? 90 : zoom < 8 && zoom >= 3.6 ? 10 : -1;
-    if (m.clase === 'agua') prio = oculto ? -2 : esSel || enRes ? 90 : zoom >= (m.l.tipo === 'mar' ? 4 : 6.5) ? 12 : -1;
-    lista.push({ m, prio });
+    else if (MAYORES.has(id) || deEpoca?.has(id)) { prio = 40; desde = 4.3; }
+    else { prio = 20; desde = 6.3; }
+    if (MAYORES.has(id) && prio < 90) prio += 5;          // Jerusalén gana a Betania cuando las dos son de la selección
+    // Una región o un mar de la selección se nombra siempre, pero por detrás de las ciudades de la selección.
+    if (m.region) { if (esSel) prio = 90; else if (enRes) prio = 75; else { prio = 10; desde = 3.6; hasta = 8; } }
+    if (m.clase === 'agua') { if (esSel) prio = 90; else if (enRes) prio = 75; else { prio = 12; desde = m.l.tipo === 'mar' ? 4 : 6.5; } }
+    // Los nombres de lugar van por encima de los puntos de candidatos y hallazgos que los rodean; los resaltados, también
+    // por encima de los candidatos resaltados (cand--del-foco, z-index 2): en la entrada en Jerusalén, Betfagué y el monte
+    // de los Olivos van juntos y el nombre del monte se lee por encima del punto.
+    m.el.style.zIndex = !enRes && id !== actual ? '1' : '3';
+    const it = { id, el: m.el, medir: m.el.querySelector(m.region ? '.region-texto' : '.etiqueta'), prio, desde, hasta, pos: [m.l.lon, m.l.lat], esSel, peso: tramosDe(id).length, deLugar: !m.region && m.clase !== 'agua' };
+    items.push(it);
+    marcas.push({ m, it });
+    if (prio === 20 && m.clase !== 'region' && m.clase !== 'agua') puntos.push(it);   // los menores se agrupan
   }
   // Agrupación (M-15): los puntos menores que se tocan en pantalla se juntan en una burbuja con su número.
-  agrupar(lista.filter((x) => x.m.clase !== 'region' && x.m.clase !== 'agua' && x.prio > -2 && x.prio < 40), zoom);
-  const extras = [];
-  if (marcaPablo?.puesta) extras.push({ el: marcaPablo.getElement(), sel: '.pablo-rotulo', prio: 99 });
-  if (marcaProxima?.puesta) extras.push({ el: marcaProxima.getElement(), sel: null, prio: 70 });
-  for (const m of marcasViajero.values()) if (m.puesta) extras.push({ el: m.el, sel: '.viajero-rotulo', prio: 90 });
-  // Lugares inciertos: los rótulos del lugar seleccionado (o resaltado) siempre; los de los demás, solo de cerca, porque
-  // alrededor de Jerusalén a zoom 7 se pisan entre ellos y con las burbujas.
+  const grupos = agrupamiento(puntos);
+  const agrupables = new Set(puntos);
+  for (const p of puntos) p.desde = Math.max(p.desde, grupos.libre.get(p.id));
+  const extra = (el, sel, prio, pos, desde = -Infinity, esSel = false) => items.push({ id: `~${items.length}`, el, medir: sel ? el.querySelector(sel) : el, prio, desde, hasta: Infinity, pos, esSel });
+  if (marcaPablo?.puesta) extra(marcaPablo.getElement(), '.pablo-rotulo', 99, marcaPablo.getLngLat().toArray());
+  if (marcaProxima?.puesta) extra(marcaProxima.getElement(), null, 70, marcaProxima.getLngLat().toArray());
+  for (const m of marcasViajero.values()) if (m.puesta) extra(m.el, '.viajero-rotulo', 90, m.marker.getLngLat().toArray());
+  // Solo el lugar incierto elegido, la parada del recorrido o el candidato marcado se libran de esperar a separarse de
+  // Jerusalén (ver anclas): los que implica una persona elegida (Getsemaní, Gólgota con Jesús) esperan como los demás.
+  const exentoCand = (lid) => selL === lid || !!resaltadoMapa?.has(lid) || candFoco?.lugar === lid;
+  // Lugares inciertos: los rótulos del lugar seleccionado (o resaltado) siempre; los de los demás, desde el zoom 7,5,
+  // porque alrededor de Jerusalén a zoom 7 se pisan entre ellos y con las burbujas.
   for (const [k, m] of marcasCand) {
     const lid = k.slice(0, k.indexOf('|'));
-    const suyo = (E.sel?.tipo === 'lugar' && E.sel.id === lid) || !!res?.has(lid);
-    const lejos = zoom < 7.5 && !suyo;
-    if (!k.endsWith('|')) extras.push({ el: m.el, sel: '.cand-rotulo', prio: m.el.classList.contains('cand--foco') ? 97 : suyo ? 60 : lejos ? -1 : 30 });
-    else extras.push({ el: m.el, sel: null, prio: m.el.classList.contains('rotulo-zona--foco') ? 96 : lejos ? -1 : 35 });
+    const suyo = selL === lid || !!res?.has(lid);
+    const pos = m.marker.getLngLat().toArray();
+    if (!k.endsWith('|')) extra(m.el, '.cand-rotulo', m.el.classList.contains('cand--foco') ? 97 : suyo ? 60 : 30, pos, suyo ? -Infinity : 7.5);
+    else extra(m.el, null, selL === lid || resaltadoMapa?.has(lid) ? 96 : suyo ? 78 : 35, pos, suyo ? -Infinity : 7.5, selL === lid);
+    Object.assign(items.at(-1), { cand: true, rotuloDe: lid, exento: exentoCand(lid) });
   }
-  for (const m of marcasCarta.values()) extras.push({ el: m.el, sel: null, prio: m.el.classList.contains('pildora-carta--sel') ? 98 : 45 });
-  const cajas = [];
-  const choca = (r, c) => !(r.right < c.left || r.left > c.right || r.bottom < c.top || r.top > c.bottom);
-  const libre = (r) => cajas.every((c) => !choca(r, c));
-  // Lo que un rótulo secundario (prioridad < 90) no puede tapar ni dejar cortado: las tarjetas que flotan sobre el mapa
-  // y el borde del mapa. Las burbujas de grupo, que siempre se ven, tampoco (ver abajo).
+  for (const m of marcasCarta.values()) extra(m.el, null, m.el.classList.contains('pildora-carta--sel') ? 98 : 45, m.marker.getLngLat().toArray());
+  // Los puntos de candidatos y los hallazgos se dibujan siempre: son obstáculos fijos para los rótulos que se reparten
+  // después de ellos (los de candidatos y zonas, desde el zoom 7,5). Los nombres de lugar van antes y se dibujan encima
+  // de los puntos (z-index 1), así que un punto nunca tapa el nombre del monte de los Olivos.
+  for (const [k, m] of marcasCand) {
+    const punto = m.el.querySelector('.cand-punto');
+    const lid = k.slice(0, k.indexOf('|'));
+    // El punto de un candidato del lugar elegido o de la parada va antes que los nombres y los aparta (a Betfagué, parada
+    // de la entrada en Jerusalén, no se le pone encima «Monte de los Olivos»); los demás solo apartan rótulos de candidatos.
+    const exento = exentoCand(lid);
+    if (punto && m.marker._map) { extra(m.el, '.cand-punto', exento ? 91 : 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true, candDe: lid, exento }); }
+  }
+  for (const m of marcasHallazgo.values()) if (m.marker._map) { extra(m.el, null, 19, m.marker.getLngLat().toArray(), 6.31); Object.assign(items.at(-1), { ajeno: true, obstaculo: true }); }
+  // Los números de un recorrido guiado (recorridos.js) van anclados abajo, 14 px sobre su lugar: se reparten como uno más.
+  for (const el of map.getContainer().querySelectorAll('.marca-num')) {
+    const r = el.getBoundingClientRect(), c = map.getContainer().getBoundingClientRect();
+    // La parada activa gana; un número que pisa a otro espera a que el zoom los separe (el 3 de Capernaúm y el 2·4 del
+    // mar de Galilea a zoom 7,5).
+    // Anclado en su lugar exacto (data-lugar), como el nombre de ese lugar: así los dos no se tocan a ningún zoom.
+    const l = BE.L[el.dataset.lugar];
+    const pos = l?.lon != null ? [l.lon, l.lat] : map.unproject([r.left + r.width / 2 - c.left, r.bottom + 14 - c.top]).toArray();
+    const activa = el.classList.contains('marca-num--activa');   // la parada de ahora se ve aunque roce una tarjeta
+    if (r.width) { extra(el, null, activa ? 100 : 99, pos, -Infinity, activa); Object.assign(items.at(-1), { ajeno: true, num: true }); }
+  }
+  // Cajas: se miden una vez por aspecto (clases y texto), relativas al ancla, para que no bailen entre zooms.
   const marco = map.getContainer().getBoundingClientRect();
-  const caja = (el) => el.getBoundingClientRect();
-  const burbujas = marcasGrupo.map((g) => caja(g.el)).filter((r) => r.width > 0);
-  const tapas = [$('#mientras'), $('#leyenda')].filter((el) => el && !el.hidden && el.offsetParent).map(caja).filter((r) => r.width > 0);
-  const dentro = (r) => r.left >= marco.left && r.right <= marco.right && r.top >= marco.top && r.bottom <= marco.bottom;
-  const todos = [
-    ...lista.filter((x) => !x.m.el.classList.contains('agrupado')).map((x) => ({ el: x.m.el, medir: x.m.el.querySelector(x.m.region ? '.region-texto' : '.etiqueta'), prio: x.prio })),
-    ...extras.map((x) => ({ el: x.el, medir: x.sel ? x.el.querySelector(x.sel) : x.el, prio: x.prio })),
-  ].filter((x) => x.medir).sort((a, b) => b.prio - a.prio);
-  todos.forEach((x) => x.el.classList.remove('sin-etiqueta'));
-  const medidas = todos.map((x) => x.medir.getBoundingClientRect());
-  todos.forEach((x, i) => {
-    const r = medidas[i];
-    // Las burbujas solo apartan a lo secundario (< 50); lo del viaje o de la selección se dibuja encima de ellas.
-    const ok = x.prio >= 0 && r.width > 0 && libre(r) && (x.prio >= 90 || (dentro(r) && !tapas.some((c) => choca(r, c))))
-      && (x.prio >= 50 || !burbujas.some((c) => choca(r, c)));
-    if (ok) cajas.push({ left: r.left - 3, right: r.right + 3, top: r.top - 1, bottom: r.bottom + 1 });
-    x.el.classList.toggle('sin-etiqueta', !ok);
-  });
-}
-function agrupar(cands, zoom) {
-  for (const x of cands) x.m.el.classList.remove('agrupado');
-  const grupos = [];
-  if (zoom < 8.5) {
-    const pts = cands.map((x) => ({ x, p: map.project([x.m.l.lon, x.m.l.lat]) }));
-    const usado = new Set();
-    for (let i = 0; i < pts.length; i++) {
-      if (usado.has(i)) continue;
-      const g = [i];
-      for (let j = i + 1; j < pts.length; j++) if (!usado.has(j) && Math.hypot(pts[i].p.x - pts[j].p.x, pts[i].p.y - pts[j].p.y) < 16) g.push(j);
-      if (g.length >= 3) { g.forEach((k) => usado.add(k)); grupos.push(g.map((k) => pts[k].x.m)); }
-    }
+  for (const { m } of marcas) m.el.classList.remove('agrupado');
+  const validos = items.filter((x) => x.medir);
+  for (const x of validos) {
+    const f = `${firma(x.el)}|${x.medir.className}|${x.medir.innerHTML}`;
+    const k = x.medir === x.el ? '_caja' : `_caja_${x.medir.className.split(' ')[0]}`;   // un elemento puede dar dos cajas
+    if (x.el[k] && x.el[k].f === f) { x.caja = x.el[k].c; continue; }
+    const r = x.medir.getBoundingClientRect();
+    if (!r.width) { x.caja = null; continue; }
+    const p = map.project(x.pos);
+    const ax = marco.left + p.x, ay = marco.top + p.y;
+    x.caja = { x0: Math.floor(r.left - ax), x1: Math.ceil(r.right - ax), y0: Math.floor(r.top - ay), y1: Math.ceil(r.bottom - ay) };
+    // El número de un recorrido es una píldora redonda sobre su lugar: sin su borde de abajo deja sitio al nombre del lugar.
+    if (x.ajeno && !x.obstaculo) x.caja.y1 -= 4;
+    x.el[k] = { f, c: x.caja };
   }
-  while (marcasGrupo.length > grupos.length) marcasGrupo.pop().marker.remove();
-  grupos.forEach((ms, i) => {
-    ms.forEach((m) => m.el.classList.add('agrupado'));
-    const lon = ms.reduce((s, m) => s + m.l.lon, 0) / ms.length, lat = ms.reduce((s, m) => s + m.l.lat, 0) / ms.length;
+  const conCaja = validos.filter((x) => x.caja);
+  for (const x of conCaja) x.w = mundo0(x.pos);
+  const burbujas = grupos.burbujas.map((b) => {
+    const r = 12 + 3.5 * (String(b.ids.length).length - 1);
+    return { ...b, w: mundo0(b.pos), d: b.desde, h: b.hasta, caja: { x0: -r, x1: r, y0: -12, y1: 12 } };
+  });
+  // Lo menudo no tapa a los lugares con nombre: una burbuja no sale mientras pise una ciudad mayor, lo elegido o lo
+  // resaltado (a zoom 7, la de Betania, Olivos y Moria tapaba Jerusalén), y el punto candidato de un lugar incierto no
+  // elegido no sale mientras pise el punto o el nombre de cualquier lugar que ya se nombra a ese zoom (ocho candidatos
+  // de Getsemaní, Gólgota y Betfagué sobre Jerusalén a zoom 7; un candidato de Betfagué sobre «Monte de los Olivos» a
+  // zoom 13). Es un zoom desde, así que al acercarse solo aparecen.
+  const caja7 = (c) => ({ x0: Math.min(c.x0, -7), x1: Math.max(c.x1, 7), y0: Math.min(c.y0, -7), y1: Math.max(c.y1, 7) });
+  const lugaresCon = conCaja.filter((x) => x.deLugar).map((x) => {
+    const fuerte = MAYORES.has(x.id) || x.esSel || x.prio >= 75;
+    return { w: x.w, caja: fuerte ? caja7(x.caja) : x.caja, d: x.desde, fuerte };
+  });
+  // Contra un nombre menor basta con que el centro del punto (sin su borde) no pise las letras.
+  const nucleo = (x) => ({ w: x.w, caja: { x0: x.caja.x0 + 3, x1: x.caja.x1 - 3, y0: x.caja.y0 + 3, y1: x.caja.y1 - 3 } });
+  const libreDe = (x, todos) => lugaresCon.reduce((z, a) => {
+    if (!todos && !a.fuerte) return z;
+    const c = choqueZoom(a, a.fuerte ? x : nucleo(x));
+    return c && c[1] > a.d ? Math.max(z, c[1]) : z;
+  }, -Infinity);
+  for (const b of burbujas) b.d = Math.max(b.d, libreDe(b, false));
+  const libreCand = new Map();
+  for (const x of conCaja) {
+    if (!x.candDe) continue;
+    const libre = x.exento ? -Infinity : libreDe(x, true);
+    x.desde = Math.max(x.desde, libre);
+    x.el.classList.toggle('cand--junto', zoom < libre);
+    libreCand.set(x.el, libre);
+    libreCand.set(x.candDe, Math.max(libreCand.get(x.candDe) ?? -Infinity, libre));
+  }
+  // El nombre de un candidato sale con su punto; el rótulo de la zona («Betfagué · 2 candidatos»), cuando ya se ven todos.
+  for (const x of conCaja) {
+    if (!x.rotuloDe || x.exento) continue;
+    const z = x.el.classList.contains('cand') ? libreCand.get(x.el) : libreCand.get(x.rotuloDe);
+    if (z != null) x.desde = Math.max(x.desde, z);
+  }
+  repartir(conCaja, burbujas);
+  // En pantalla: el tramo de zoom manda; además, lo que no es el lugar seleccionado no puede salirse del mapa ni quedar
+  // bajo las tarjetas y los controles. Esconderlo no deja el sitio a otro, así que el reparto no cambia al moverse.
+  const caja = (el) => el.getBoundingClientRect();
+  const tapas = [$('#mientras'), $('#leyenda'), $('#situacion'), $('#tira-suceso'), $('#leyenda-boton'), $('.modos'), $('#vista-recorrido'), map.getContainer().querySelector('.maplibregl-ctrl-top-right')]
+    .filter((el) => el && !el.hidden && el.offsetParent).map(caja).filter((r) => r.width > 0);
+  const choca = (r, c) => !(r.right < c.left || r.left > c.right || r.bottom < c.top || r.top > c.bottom);
+  const dentro = (r) => r.left >= marco.left && r.right <= marco.right && r.top >= marco.top && r.bottom <= marco.bottom;
+  const ver = items.map((x) => {
+    const ok = !!x.caja && x.d <= zoom && zoom < x.h;
+    if (!ok || x.esSel) return ok;
+    const r = x.medir.getBoundingClientRect();
+    return dentro(r) && !tapas.some((c) => choca(r, c));
+  });
+  items.forEach((x, i) => { if (!x.ajeno || x.num) x.el.classList.toggle('sin-etiqueta', !ver[i]); });
+  for (const { m, it } of marcas) m.el.classList.toggle('agrupado', agrupables.has(it) && zoom < grupos.libre.get(it.id));
+  pintarBurbujas(burbujas.filter((b) => b.d <= zoom && zoom < b.h));
+}
+function pintarBurbujas(lista) {
+  while (marcasGrupo.length > lista.length) marcasGrupo.pop().marker.remove();
+  lista.forEach((b, i) => {
     let g = marcasGrupo[i];
     if (!g) {
       const el = document.createElement('button');
       el.type = 'button'; el.className = 'grupo-lugares';
-      el.addEventListener('click', (e) => { e.stopPropagation(); const ids = JSON.parse(el.dataset.ids); map.fitBounds(cajaDe(ids.map((id) => coord(BE.L[id]))), { padding: 80, maxZoom: Math.min(11, map.getZoom() + 3), duration: 600 }); });
-      g = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat([lon, lat]).addTo(map) };
+      el.addEventListener('click', (e) => { e.stopPropagation(); const ids = JSON.parse(el.dataset.ids); map.fitBounds(cajaDe(ids.map((id) => coord(BE.L[id]))), { padding: 80, maxZoom: Math.min(NIVEL_MAX, Math.floor(map.getZoom()) + 3), duration: 600 }); });
+      g = { el, marker: new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(b.pos).addTo(map) };
       marcasGrupo.push(g);
     }
-    g.marker.setLngLat([lon, lat]);
+    const ms = b.ids.map((id) => BE.L[id]);
+    g.marker.setLngLat(b.pos);
     g.el.textContent = String(ms.length);
-    g.el.dataset.ids = JSON.stringify(ms.map((m) => m.l.id));
-    g.el.setAttribute('aria-label', `${ms.length} lugares juntos: ${ms.map((m) => m.l.nombre).join(', ')}. Pulsa para acercarte.`);
-    g.el.title = ms.map((m) => m.l.nombre).join(' · ');
+    g.el.dataset.ids = JSON.stringify(b.ids);
+    g.el.setAttribute('aria-label', `${ms.length} lugares juntos: ${ms.map((l) => l.nombre).join(', ')}. Pulsa para acercarte.`);
+    g.el.title = ms.map((l) => l.nombre).join(' · ');
   });
 }
 
 // ---------------------------------------------------------------------------
 // Leyenda y «Mientras tanto»
 // ---------------------------------------------------------------------------
-function pintarLeyenda(V, w) {
+/** La leyenda explica lo que hay en pantalla: el título «Viajes de Pablo» solo si se dibuja algo de Pablo, y la fila
+    de la posición estimada solo si hay un marcador estimado a la vista. */
+function pintarLeyenda(V, w, g) {
+  pintarLeyenda.args = [V, w, g];
   const pendiente = BE.D.cartas.some((c) => cartaEnMapa(c, E.t) && estadoCarta(c, E.t) === 'pendiente');
   const escritores = [...new Set(BE.D.cartas.filter((c) => cartaEnMapa(c, E.t)).map((c) => c.escritor || 'pablo'))];
   const inciertos = claveInciertos.split('|')[0];
-  const hallazgos = marcasHallazgo.size > 0;
-  const cerca = viajesCerca(E.t);
-  const clave = `${V?.id}|${w?.estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${cerca}`;
+  // Solo si alguna marca de hallazgo cae en el encuadre: se vuelve a mirar al mover el mapa.
+  const caja = map.getBounds();
+  const hallazgos = [...marcasHallazgo.values()].some((m) => caja.contains(m.marker.getLngLat()));
+  const S = E.sel?.tipo === 'viaje' ? BE.D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
+  const rastro = g.rastroVisible;
+  const dePablo = !!(V && g.hecho.length + g.falta.length) || rastro.some((v) => (v.persona || 'pablo') === 'pablo');
+  const estimada = (marcaPablo?.puesta && !!w?.estimada) || [...marcasViajero.values()].some((m) => m.puesta && m.el.classList.contains('estimada'));
+  const viajeros = [...marcasViajero.values()].some((m) => m.puesta);
+  const clave = `${V?.id}|${estimada}|${E.sel?.tipo}|${E.sel?.id}|${pendiente}|${escritores}|${inciertos}|${hallazgos}|${F.capas.viajes}|${F.nivel1}|${rastro.map((v) => v.id)}|${dePablo}|${viajeros}`;
   if (clave === pintarLeyenda.clave) return;
   pintarLeyenda.clave = clave;
   const filas = [];
-  const S = E.sel?.tipo === 'viaje' ? BE.D.viajes.find((v) => v.id === E.sel.id) : null;   // viaje seleccionado abajo
-  const titulo = S || (F.capas.viajes ? V : null);
-  if ((F.capas.viajes && cerca) || S) {
-    if (V && (!S || S === V)) {
-      filas.push('<div class="be-legend__row"><span class="be-legend__line"></span>Recorrido hasta esta fecha</div>');
-      if (BE.P.some((s) => s.viaje === V && s.lugar.precision === 'zona')) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta sin trazado conocido (región)</div>');
-      filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
-    }
-    if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para ver todos</div>`);
-    else filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
+  const titulo = S || (F.capas.viajes && V && dePablo ? V : null);
+  if (V && dePablo && (!S || S === V)) {
+    filas.push('<div class="be-legend__row"><span class="be-legend__line"></span>Recorrido hasta esta fecha</div>');
+    if (BE.P.some((s) => s.viaje === V && s.lugar.precision === 'zona')) filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--approx"></span>Ruta sin trazado conocido (región)</div>');
+    filas.push('<div class="be-legend__row"><span class="be-legend__line be-legend__line--todo"></span>Lo que falta del viaje</div>');
   }
+  if (S) filas.push(`<div class="be-legend__row"><span class="be-legend__line${S === V ? ' be-legend__line--todo' : ''}"></span>${S === V ? 'Solo este viaje' : 'Solo este viaje, completo'}; vuelve a pulsarlo para ver todos</div>`);
+  else if (rastro.length) filas.push('<div class="be-legend__row"><span class="leyenda-rastro"></span>Otros viajes: gris claro si ya pasaron, más claro si aún no</div>');
   if (escritores.length) {
     filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(escritores[0])}"></span>Carta ${escritores.length > 1 ? `de ${esc(nombrePersona(escritores[0]))}` : 'escrita cerca de esta fecha'}</div>`);
     for (const e of escritores.slice(1)) filas.push(`<div class="be-legend__row"><span class="be-legend__line be-legend__line--letter" style="--carta:${colorEscritor(e)}"></span>Carta de ${esc(nombrePersona(e))}</div>`);
@@ -1047,30 +1306,84 @@ function pintarLeyenda(V, w) {
     for (const [k, s] of Object.entries(CAND)) if (estados.has(k)) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--${k}" style="--cand:${s.color}"></span>${esc(s.rotulo)}</div>`);
   } else if (inciertos) filas.push(`<div class="be-legend__row"><span class="leyenda-cand leyenda-cand--favorecido_nivel_1" style="--cand:${CAND.favorecido_nivel_1.color}"></span>Lugar incierto: zona o candidatos, nunca un punto</div>`);
   if (hallazgos) filas.push('<div class="be-legend__row"><span class="leyenda-hallazgo"></span>Hallazgo arqueológico</div>');
-  if (F.capas.viajes && cerca) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
-  else if (F.capas.viajes && !S) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
+  if (estimada) filas.push('<div class="be-legend__row"><span class="leyenda-estimada"></span>Posición estimada (tiempo narrativo)</div>');
+  if (F.capas.viajes && !S && !dePablo && !rastro.length && !viajeros) filas.push('<div class="be-legend__row be-muted">Ningún viaje cerca de esta fecha</div>');
   if (F.nivel1) filas.push('<div class="be-legend__row"><span class="be-tier be-tier--1" data-n="1">Solo nivel 1</span></div>');
-  const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto` : F.capas.viajes && cerca ? 'Viajes de Pablo' : 'Leyenda';
+  const cabecera = titulo ? `${esc(titulo.nombre)} · ${esc(fechaCorta(titulo.fecha))}` : selIncierto ? `${esc(selIncierto.nombre)} · cómo dibujamos lo incierto`
+    : dePablo ? 'Viajes de Pablo' : rastro.length ? 'Viajes' : 'Leyenda';
   $('#leyenda').innerHTML = `<div class="be-card__eyebrow">${cabecera}</div>${filas.join('')}`;
   $('#leyenda').style.setProperty('--accent', titulo ? colorViaje(titulo.id) : '');
   if (marcaPablo) marcaPablo.getElement().style.setProperty('--accent', V ? colorViaje(V.id) : '');
+  sucio.etiquetas = true;
+}
+/** Claves de lo que se está mirando: la selección o, en un recorrido guiado, su parada. Deshacen empates. */
+function clavesEnFoco() {
+  if (E.sel?.tipo === 'recorrido') {
+    const rc = (BE.D.recorridos || []).find((r) => r.id === E.sel.id);
+    const p = rc?.paradas?.[BE.recorridos?.pasoDe?.(rc.id) ?? 0];
+    const s = p && BE.parseSel(p.sel);
+    if (s) return { sel: s, claves: BE.implicados(s).claves };
+  }
+  return { sel: E.sel, claves: E.resaltado?.claves || new Set() };
 }
 /** El suceso más concreto de esta fecha: con cientos de sucesos, el primero de la lista suele ser uno de todo un siglo.
-    Uno que dura más de cinco años y más que el tramo a la vista no es «mientras tanto» sino el fondo: no se enseña. */
-function sucesoMientras(t) {
+    Uno que dura más de cinco años y más que el tramo a la vista no es «mientras tanto» sino el fondo: no se enseña.
+    A igual duración gana el que está en foco. `filtro` deja fuera sucesos. */
+function sucesoMientras(t, filtro = () => true, claves = clavesEnFoco().claves) {
   let ev = null, ancho = Infinity;
-  for (const e of BE.D.eventos || []) { const v = BE.ventanaEvento(e); if (v && t >= v[0] && t < v[1] && v[1] - v[0] < ancho) { ev = e; ancho = v[1] - v[0]; } }
+  for (const e of BE.D.eventos || []) {
+    const v = BE.ventanaEvento(e);
+    if (!v || t < v[0] || t >= v[1] || !filtro(e)) continue;
+    const d = v[1] - v[0];
+    if (d < ancho - 1e-9 || (Math.abs(d - ancho) <= 1e-9 && claves.has(`evento:${e.id}`) && !claves.has(`evento:${ev.id}`))) { ev = e; ancho = d; }
+  }
   return ev && ancho <= Math.max(5, BE.span()) ? ev : null;
 }
+const nombreLugar = (id) => BE.L[id]?.nombre;
+/** Qué enseña «Mientras tanto»: { ev, lugar }. Sale de la misma fuente que la etiqueta del cursor en la línea de tiempo
+    (BE.donde de la persona seleccionada o, si no, de Pablo), para que las dos digan el mismo sitio. */
+function eleccionMientras(t) {
+  const { sel, claves } = clavesEnFoco();
+  const cubre = (e) => { const v = BE.ventanaEvento(e); return !!v && t >= v[0] && t < v[1]; };
+  // Un suceso seleccionado (o la parada del recorrido) que cubre esta fecha es lo que pasa ahora, no otro del mismo día.
+  if (sel?.tipo === 'evento') {
+    const e = (BE.D.eventos || []).find((x) => x.id === sel.id);
+    if (e && cubre(e)) return { ev: e, lugar: (e.lugares || []).map(nombreLugar).find(Boolean) };
+  }
+  const quien = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? E.sel.id : 'pablo';
+  const w = quien === 'pablo' ? BE.dondeEsta(t) : BE.donde(quien, t);
+  if (w) {
+    // El suceso del que sale el lugar de la bandera (BE.sucesoEn). En un hueco entre dos estancias en el mismo sitio
+    // no hay ninguno: el suceso anterior ya acabó.
+    const propio = BE.sucesoEn(quien, t);
+    if (propio) return { ev: propio, lugar: w.en.lugar.nombre };
+    const suyo = (e) => (e.personas || []).includes(quien);
+    if (w.parada) {
+      const e = sucesoMientras(t, (x) => suyo(x) && (x.lugares || []).includes(w.en.lugar.id), claves);
+      if (e) return { ev: e, lugar: w.en.lugar.nombre };
+    }
+    // Lo que la persona hace en otro sitio contradiría la etiqueta del cursor: solo sucesos de otros.
+    const e = sucesoMientras(t, (x) => !suyo(x), claves);
+    return e ? { ev: e, lugar: (e.lugares || []).map(nombreLugar).find(Boolean) } : null;
+  }
+  const e = sucesoMientras(t, undefined, claves);
+  return e ? { ev: e, lugar: (e.lugares || []).map(nombreLugar).find(Boolean) } : null;
+}
 function pintarMientras(t) {
-  const ev = sucesoMientras(t);
+  const m = eleccionMientras(t);
   const el = $('#mientras'), tira = $('#tira-suceso');
-  const clave = ev ? ev.id : '';
+  // «Mientras tanto» solo cuando hay alguien situado con quien comparar (la persona elegida o, si no, Pablo) y el suceso
+  // es de otro. El suceso elegido, el de esa persona o uno sin nadie situado es «Suceso».
+  const quien = E.sel?.tipo === 'persona' && E.sel.id !== 'pablo' ? E.sel.id : 'pablo';
+  const propio = !!m && ((m.ev.personas || []).includes(quien) || (E.sel?.tipo === 'evento' && E.sel.id === m.ev.id)
+    || !(quien === 'pablo' ? BE.dondeEsta(t) : BE.donde(quien, t)));
+  const clave = m ? `${m.ev.id}|${m.lugar}|${propio}` : '';
   if (clave === pintarMientras.clave) return;
   pintarMientras.clave = clave;
-  if (!ev) { el.hidden = true; tira.hidden = true; return; }
-  const lugar = (ev.lugares || []).map((id) => BE.L[id]?.nombre).filter(Boolean)[0];
-  const dePablo = (ev.personas || []).includes('pablo');
+  sucio.etiquetas = true;
+  if (!m) { el.hidden = true; tira.hidden = true; return; }
+  const { ev, lugar } = m;
+  const dePablo = propio;
   el.hidden = false;
   tira.hidden = false;
   tira.dataset.sel = `evento:${ev.id}`;
@@ -1125,8 +1438,8 @@ function crearPanelesMapa() {
   $('#situacion').addEventListener('click', (e) => {
     const r = e.currentTarget.getBoundingClientRect();
     const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
-    const lon = MUNDO.oeste + fx * (MUNDO.este - MUNDO.oeste);
-    const lat = latDeY(mercY(MUNDO.norte) - fy * (mercY(MUNDO.norte) - mercY(MUNDO.sur)));
+    const lon = MINI.oeste + fx * (MINI.este - MINI.oeste);
+    const lat = latDeY(mercY(MINI.norte) - fy * (mercY(MINI.norte) - mercY(MINI.sur)));
     map.easeTo({ center: [lon, lat], duration: 700 });
   });
   pintarMenuCapas();
@@ -1182,8 +1495,8 @@ function pintarSituacion() {
   if (!ver) return;
   const b = map.getBounds();
   const W = el.clientWidth, H = el.clientHeight;
-  const x = (lon) => ((lon - MUNDO.oeste) / (MUNDO.este - MUNDO.oeste)) * W;
-  const y = (lat) => ((mercY(MUNDO.norte) - mercY(lat)) / (mercY(MUNDO.norte) - mercY(MUNDO.sur))) * H;
+  const x = (lon) => ((lon - MINI.oeste) / (MINI.este - MINI.oeste)) * W;
+  const y = (lat) => ((mercY(MINI.norte) - mercY(lat)) / (mercY(MINI.norte) - mercY(MINI.sur))) * H;
   const r = el.querySelector('.situacion-recuadro');
   const x0 = clamp(x(b.getWest()), 0, W), x1 = clamp(x(b.getEast()), 0, W), y0 = clamp(y(b.getNorth()), 0, H), y1 = clamp(y(b.getSouth()), 0, H);
   Object.assign(r.style, { left: `${x0}px`, top: `${y0}px`, width: `${Math.max(4, x1 - x0)}px`, height: `${Math.max(4, y1 - y0)}px` });
@@ -1192,31 +1505,64 @@ function pintarSituacion() {
 // ---------------------------------------------------------------------------
 // Encuadre y resaltado
 // ---------------------------------------------------------------------------
+/** Lugares que representan la época de t, para no dejar el mapa en el Egeo hablando de otra: los de «Ahora mismo»
+    (quién está dónde) o, si no hay, los del suceso de «Mientras tanto» si es de unos pocos años, los de la corte de
+    quien gobierna, los de la potencia del momento, los del suceso de «Mientras tanto» aunque dure más o, como último
+    recurso, los del suceso con lugar más cercano en el tiempo. Solo ids con punto o con candidatos. Un suceso de
+    cuarenta años (las naves de Salomón a Ofir) no vale más que la corte de Jerusalén para enseñar 1000 a.e.c. */
+function lugaresDeEpoca(t) {
+  const conPuntos = (ids) => [...new Set(ids)].filter((id) => BE.L[id] && puntosDe(id).length);
+  const r = BE.resumenAhora?.(t);
+  const ev = sucesoMientras(t);
+  const corto = (() => { const v = ev && BE.ventanaEvento(ev); return !!v && v[1] - v[0] <= 5; })();
+  const pasos = [
+    () => (r ? r.lugares.map((g) => g.lugar.id) : []),
+    () => (corto ? ev.lugares || [] : []),
+    () => (r ? r.gobierno.flatMap((p) => p.lugares || []) : []),
+    () => (r ? r.potencias.flatMap((p) => p.lugares || []) : []),
+    () => ev?.lugares || [],
+    () => {
+      let mejor = null, dist = Infinity;
+      for (const e of BE.D.eventos || []) {
+        const v = BE.ventanaEvento(e);
+        if (!v || !conPuntos(e.lugares || []).length) continue;
+        const d = t < v[0] ? v[0] - t : t > v[1] ? t - v[1] : 0;
+        if (d < dist) { dist = d; mejor = e; }
+      }
+      return mejor ? mejor.lugares : [];
+    },
+  ];
+  for (const paso of pasos) { const ids = conPuntos(paso()); if (ids.length) return ids; }
+  return [];
+}
+let epocaMemo = { clave: null, ids: null };
+function lugaresEpocaEn(t) {
+  const clave = `${t}|${BE.span()}`;
+  if (epocaMemo.clave !== clave) epocaMemo = { clave, ids: new Set(lugaresDeEpoca(t)) };
+  return epocaMemo.ids;
+}
+/** Encuadra la época de t (lugaresDeEpoca). Con siVisible, no mueve el mapa si todo eso ya se ve. */
+function encuadrarEpoca(t, { siVisible = false } = {}) {
+  const pts = lugaresDeEpoca(t).flatMap(puntosDe);
+  if (!pts.length) return;
+  // Como encuadrarLugares, pero sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha en escritorio).
+  const padding = rellenoConMientras();
+  // «Ya se ve» es dentro de la parte libre del mapa: en el móvil, un punto bajo la hoja inferior no se ve.
+  if (siVisible) {
+    const z = zonaLibre();
+    if (pts.every((q) => { const { x, y } = map.project(q); return x >= z.x0 && x <= z.x1 && y >= z.y0 && y <= z.y1; })) return;
+  }
+  map.fitBounds(cajaDe(pts), { padding, maxZoom: pts.length > 1 ? 7 : Math.max(map.getZoom(), 5.5), duration: 700 });
+}
 /** Al abrir sin selección, si Pablo queda fuera de la vista o bajo la hoja inferior, centra el mapa en él. Si los datos
-    no lo sitúan en esta fecha, encuadra los lugares de «Ahora mismo» (quién está dónde) o, si no hay, los del suceso de
-    «Mientras tanto» o, si tampoco, la capital de quien gobierna, para que el mapa no se quede en el Egeo hablando de
-    otra época. */
+    no lo sitúan en esta fecha, encuadra la época (encuadrarEpoca). */
 function mostrarPablo() {
   if (E.sel) return;
   const w = BE.dondeEsta(E.t);
-  if (!w) {
-    const r = BE.resumenAhora?.(E.t);
-    let ids = r ? r.lugares.map((g) => g.lugar.id) : [];
-    if (!ids.length) ids = (sucesoMientras(E.t)?.lugares || []).filter((id) => BE.L[id]);
-    if (!ids.length && r) ids = [...new Set(r.gobierno.flatMap((p) => p.lugares || []))].filter((id) => BE.L[id]);   // la corte de esa fecha
-    const pts = ids.flatMap(puntosDe);
-    if (!pts.length) return;
-    const b = map.getBounds();
-    if (pts.every(([x, y]) => b.contains([x, y]))) return;
-    // Como encuadrarLugares, pero sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha en escritorio).
-    const padding = rellenoEncuadre(), mi = $('#mientras');
-    if (!estrecha() && mi && !mi.hidden && mi.offsetParent) padding.right = Math.max(padding.right, mi.offsetWidth + 40);
-    map.fitBounds(cajaDe(pts), { padding, maxZoom: pts.length > 1 ? 7 : Math.max(map.getZoom(), 5.5), duration: 700 });
-    return;
-  }
+  if (!w) { encuadrarEpoca(E.t, { siVisible: true }); return; }
   const hoja = altoHoja();
-  const c = map.getContainer(), q = map.project(w.pos), m = 40;
-  if (q.x > m && q.x < c.clientWidth - m && q.y > m && q.y < c.clientHeight - hoja - m) return;
+  const z = zonaLibre(), q = map.project(w.pos), m = 40;
+  if (q.x > z.x0 + m && q.x < z.x1 - m && q.y > z.y0 + m && q.y < z.y1 - m) return;
   map.jumpTo({ center: w.pos, zoom: estrecha() ? Math.max(map.getZoom(), 5.5) : map.getZoom() });
   const cq = map.project(w.pos);
   map.jumpTo({ center: map.unproject([cq.x, cq.y + hoja / 2]) });
@@ -1232,7 +1578,29 @@ function rellenoEncuadre() {
   // En escritorio la leyenda ocupa la esquina de abajo a la izquierda: lo encuadrado no queda debajo de ella. Al
   // encuadrar, la leyenda aún puede tener el contenido de antes, así que se cuenta al menos su alto habitual.
   const ley = $('#leyenda'), bajoLeyenda = !estrecha() && ley && ley.offsetParent ? Math.max(ley.offsetHeight, 210) + 40 : 0;
-  return { top: estrecha() ? 56 : 80, bottom: Math.min(Math.max(hoja + 50, bajoLeyenda), alto * 0.6), left: estrecha() ? 30 : 70, right: estrecha() ? 50 : 80 };
+  // En escritorio la tarjeta del recorrido guiado ocupa la esquina de arriba a la izquierda: se deja libre su ancho y
+  // media píldora de números de parada, que va encima de su lugar.
+  const rec = $('#vista-recorrido'), junto = !estrecha() && rec && !rec.hidden && rec.offsetParent ? rec.offsetLeft + rec.offsetWidth + 84 : 0;
+  return caber({ top: estrecha() ? 56 : 80, bottom: Math.min(Math.max(hoja + 50, bajoLeyenda), alto * 0.6), left: Math.max(estrecha() ? 30 : 70, junto), right: estrecha() ? 50 : 80 });
+}
+/** Que el relleno quepa en lo que deja el relleno propio del mapa: con el grafo abierto, grafo.js lo pone a 768 px a la
+    izquierda, y los márgenes más la tarjeta «Mientras tanto» ya no cabían («Map cannot fit within canvas…»). Se encoge
+    hasta dejar 160 × 120 px libres. */
+function caber(p) {
+  const c = map.getContainer(), base = map.getPadding();
+  const libreX = Math.max(0, c.clientWidth - base.left - base.right - 160), libreY = Math.max(0, c.clientHeight - base.top - base.bottom - 120);
+  const fx = p.left + p.right > libreX ? libreX / (p.left + p.right) : 1;
+  const fy = p.top + p.bottom > libreY ? libreY / (p.top + p.bottom) : 1;
+  return { top: p.top * fy, bottom: p.bottom * fy, left: p.left * fx, right: p.right * fx };
+}
+/** rellenoEncuadre y, en escritorio, sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha). Al encuadrar
+    tras cambiar de selección la tarjeta aún no se ha repintado: si va a salir en esta fecha, se cuenta su ancho. */
+function rellenoConMientras() {
+  const padding = rellenoEncuadre(), mi = $('#mientras');
+  if (estrecha() || !mi) return padding;
+  const visible = !mi.hidden && mi.offsetParent, saldra = !!eleccionMientras(E.t);
+  if (visible || saldra) padding.right = Math.max(padding.right, (visible ? mi.offsetWidth : 290) + 40);
+  return caber(padding);
 }
 /** Puntos que ocupa un lugar: su coordenada o, si es incierto, sus candidatos con el borde de cada zona. */
 function puntosDe(id) {
@@ -1247,16 +1615,83 @@ function puntosDe(id) {
   }
   return out;
 }
+/** De lo que implica la selección, la parte que importa en la fecha del cursor. Un lugar se encuadra solo a sí mismo
+    (sus arcos y viajes pueden salir del encuadre). Una persona, los sitios donde la ponen los datos en el tramo que
+    enseña la línea de tiempo (como mucho 10 años a cada lado del cursor) o, si no hay, los de su estancia más cercana. Las regiones y
+    los países (Egipto, Arabia) solo cuentan si no queda otra cosa, salvo en la trayectoria de una persona: su punto es
+    simbólico y estira el encuadre. */
+function lugaresEnFoco(ids) {
+  let xs = ids.filter((id) => BE.L[id]);
+  const s = E.sel, r = E.resaltado?.lugares;
+  const deSeleccion = !!r && xs.length === r.size && xs.every((id) => r.has(id));
+  if (deSeleccion && s?.tipo === 'lugar' && BE.L[s.id]) xs = [s.id];
+  else if (deSeleccion && s?.tipo === 'persona') {
+    const est = (BE.estancias?.(s.id) || []).filter((e) => e.lugar?.id);
+    const t = E.t, a = Math.min(t, Math.max(E.vista[0], t - 10)), b = Math.max(t, Math.min(E.vista[1], t + 10));
+    let cerca = est.filter((e) => e.b >= a && e.a <= b);
+    if (!cerca.length && est.length) {
+      const d = (e) => (t < e.a ? e.a - t : t > e.b ? t - e.b : 0);
+      const m = Math.min(...est.map(d));
+      cerca = est.filter((e) => d(e) <= m + 1);
+    }
+    if (cerca.length) return [...new Set(cerca.map((e) => e.lugar.id))];   // aquí una región cuenta: Egipto en 2 a.e.c.
+  }
+  const sinRegiones = xs.filter((id) => !REGION.has(BE.L[id].tipo) && BE.L[id].precision !== 'zona');
+  return sinRegiones.length ? sinRegiones : xs;
+}
+/** Zoom hasta el que el relieve más fino que cubre (lon, lat) se ve nítido: Jerusalén aguanta el máximo, la tierra de
+    Israel 10, el Mediterráneo 8 y el resto del mundo 7,5. */
+function topeRelieve(lon, lat) {
+  const dentro = (e) => lon >= e.oeste && lon <= e.este && lat >= e.sur && lat <= e.norte;
+  const [, med, isr, jer] = BASES;
+  return dentro(jer.ext) ? ZOOM_MAX : dentro(isr.ext) ? 10 : dentro(med.ext) ? 8 : 7.5;
+}
+/** Distancia en km de la diagonal de una caja [[oeste, sur], [este, norte]]. */
+const diagonalKm = ([[o, s], [e, n]]) => Math.hypot((e - o) * 111 * Math.cos((((s + n) / 2) * Math.PI) / 180), (n - s) * 111);
 function encuadrarLugares(ids) {
-  const pts = ids.flatMap(puntosDe);
-  if (!pts.length || !map) return;
-  const padding = rellenoEncuadre();
+  if (!map) return;
+  const foco = lugaresEnFoco(ids);
+  const pts = foco.flatMap(puntosDe);
+  // Una selección sin lugar en el mapa (la muerte de Adán, la Septuaginta) no deja el encuadre de antes: enseña su época.
+  if (!pts.length) { if (E.sel) encuadrarEpoca(E.t); return; }
+  const padding = rellenoConMientras();
   if (pts.length === 1) {   // fitBounds no deja el relleno fijado en el mapa, easeTo sí
     const [x, y] = pts[0];
-    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: Math.max(map.getZoom(), 5.5), duration: 700 });
+    // Una ciudad se ve con la tierra de Israel ya en relieve fino y sus vecinos con nombre; una región, de más lejos; un
+    // sitio pegado a otro lugar (Getsemaní, el Gólgota, junto a Jerusalén), a la escala de la ciudad.
+    // Una región o un país con la misma coordenada (Cilicia y Tarso, Samaria y su región) no cuenta como vecino. Nunca
+    // más cerca de lo que aguanta el relieve de esa zona (topeRelieve), ni aunque el mapa ya estuviera más cerca.
+    const l = foco.length === 1 ? BE.L[foco[0]] : null;
+    const pegado = l && !MAYORES.has(l.id) && Object.values(BE.L).some((o) => o !== l && o.lat != null && !REGION.has(o.tipo) && o.precision !== 'zona' && Math.hypot((o.lon - x) * 94, (o.lat - y) * 111) < 3);
+    const tope = topeRelieve(x, y);
+    const cerca = !l || REGION.has(l.tipo) ? 5.5 : pegado ? Math.min(12.5, tope) : 7.5;
+    map.fitBounds([[x - 0.01, y - 0.01], [x + 0.01, y + 0.01]], { padding, maxZoom: Math.max(cerca, Math.min(map.getZoom(), tope)), duration: 700 });
     return;
   }
-  map.fitBounds(cajaDe(pts), { padding, maxZoom: 7, duration: 700 });
+  // Lo que cabe en unos kilómetros (la última semana en Jerusalén) se acerca hasta que los rótulos se separan.
+  // Una persona se ve con su entorno, nunca más cerca que el zoom 9.
+  const caja = cajaDe(pts), km = diagonalKm(caja);
+  const tope = Math.min(E.sel?.tipo === 'persona' ? 9 : km < 5 ? ZOOM_MAX : km < 60 ? 11 : 8,
+    Math.max(8, topeRelieve((caja[0][0] + caja[1][0]) / 2, (caja[0][1] + caja[1][1]) / 2)));
+  // Si el mapa no puede bajar (o subir) lo bastante para dejar la caja en la parte visible sin salirse del relieve, como
+  // Ofir en un móvil con la hoja abierta, se acerca hasta que cabe en vertical: se corta por los lados en vez de enseñar
+  // el mar Caspio.
+  const cam = map.cameraForBounds(caja, { padding, maxZoom: tope });
+  if (cam) {
+    const H = map.getContainer().clientHeight, libre = H - padding.top - padding.bottom;
+    // En vertical, el centro de la caja; en horizontal, la mediana de los puntos: el lado donde hay más.
+    const lons = pts.map((p) => p[0]).sort((a, b) => a - b);
+    const lat = latDeY((mercY(caja[0][1]) + mercY(caja[1][1])) / 2), lon = (lons[(lons.length - 1) >> 1] + lons[lons.length >> 1]) / 2;
+    const zoomPara = (px, d) => (d > 0 ? Math.log2((px * 2 * Math.PI) / (512 * d)) : Infinity);
+    const zS = zoomPara(libre / 2 + padding.bottom, mercY(lat) - mercY(MUNDO.sur));
+    const zN = zoomPara(libre / 2 + padding.top, mercY(MUNDO.norte) - mercY(lat));
+    const z = Math.min(ZOOM_MAX, Math.max(zS, zN));
+    if (z > cam.zoom + 0.05) {
+      map.easeTo({ center: [lon, lat], zoom: z, offset: [(padding.left - padding.right) / 2, (padding.top - padding.bottom) / 2], duration: 700 });
+      return;
+    }
+  }
+  map.fitBounds(caja, { padding, maxZoom: tope, duration: 700 });
 }
 /** Resalta en el mapa estos lugares por encima de lo que implique la selección. resaltar(null) vuelve a la selección. */
 function resaltar(ids) {
@@ -1277,7 +1712,8 @@ function iniciar() {
   iniciarCortina();
   ponerMapa(E.mapa, false);
   // «Mientras tanto» depende también del tramo a la vista: al cambiar el zoom de la línea se revisa.
-  BE.pintores.push((c) => { if (c.linea && !c.mapa && mapaListo) pintarMientras(E.t); });
+  // Los lugares que se ven dependen también de ese tramo: se revisan en el siguiente fotograma.
+  BE.pintores.push((c) => { if (c.linea && !c.mapa && mapaListo) { pintarMientras(E.t); sucio.mapa = true; programar(); } });
   // Al cambiar de selección, el candidato marcado deja de valer.
   BE.pintores.push(() => { if (candFoco && !(E.sel?.tipo === 'lugar' && E.sel.id === candFoco.lugar)) { candFoco = null; claveInciertos = ''; sucio.mapa = true; } });
   document.addEventListener('click', (e) => {

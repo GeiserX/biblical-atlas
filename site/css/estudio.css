@@ -51,6 +51,22 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .vida-barra--fin { -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent); mask-image: linear-gradient(90deg, #000 82%, transparent); }
 .vida-barra--ini.vida-barra--fin { -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent); mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent); }
 .vida-texto { font-size: var(--fs-xs); }
+/* La fecha de actividad puede llevar una aclaración larga (Pablo): que parta en líneas y no se salga de la tarjeta. */
+.vida-texto .be-chrono { white-space: normal; height: auto; min-height: 24px; max-width: 100%; padding-top: 2px; padding-bottom: 2px; }
+/* Ficha de hallazgo: los chips largos («Jesús, luz del mundo, da la vista a un ciego…») parten en líneas en vez de
+   estrechar la columna de rótulos y salirse de la tarjeta. */
+.hallazgo-kv { grid-template-columns: max-content minmax(0, 1fr); }
+.hallazgo-kv dd { min-width: 0; }
+.hallazgo-kv .be-chip, .hallazgo-kv .be-chrono { white-space: normal; height: auto; min-height: 24px; max-width: 100%; padding-top: 2px; padding-bottom: 2px; text-align: left; }
+/* Familia: padres, cónyuges, hijos y hermanos, cada uno un enlace a su ficha. */
+.familia-lista { display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; margin: 0; font-size: var(--fs-sm); }
+.familia-lista dt { color: var(--ink-3); font-size: var(--fs-xs); padding-top: 2px; }
+.familia-lista dd { margin: 0; min-width: 0; }
+.familia-lista ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.familia-lista li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; }
+.fam-fecha { color: var(--ink-3); font-size: var(--fs-2xs); }
+.fam-refs { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.fam-refs .be-ref { font-size: var(--fs-2xs); }
 .relaciones { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .relaciones li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--fs-sm); padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .relaciones li:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -199,6 +215,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .marca-num { min-width: 24px; height: 24px; padding: 0 6px; border-radius: 12px; border: 2px solid #fff; background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1.5px var(--ink-3), var(--shadow-2); font: 700 12px/1 var(--font-sans); cursor: pointer; }
 .marca-num--vista { background: var(--tier1); color: #fff; box-shadow: 0 0 0 1.5px var(--tier1), var(--shadow-2); }
 .marca-num--activa { background: var(--gold); color: #fff; box-shadow: 0 0 0 1.5px var(--gold), var(--shadow-2); min-width: 30px; height: 30px; border-radius: 15px; font-size: 14px; }
+.marca-num.sin-etiqueta { visibility: hidden; }
 
 /* ---------- Recorrido guiado (14) ---------- */
 .progreso { display: flex; gap: 4px; margin: 10px 0 14px; }
