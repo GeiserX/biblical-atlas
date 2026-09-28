@@ -4,8 +4,6 @@
 
 <h1 align="center">biblical-earth</h1>
 
-<p align="center">Biblical geography and earth sciences</p>
-
 <p align="center">Un mapa y una línea de tiempo movidos por una sola fecha, para estudiar la Biblia con cada relato en su lugar y en su tiempo.</p>
 
 <p align="center"><a href="https://geiserx.github.io/biblical-earth/">Sitio</a> · <a href="docs/ideas/">Ideas y maquetas</a> · <a href="docs/decisiones.md">Decisiones</a> · <a href="docs/hoja-de-ruta.md">Hoja de ruta</a> · <a href="docs/investigacion/">Investigación</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>

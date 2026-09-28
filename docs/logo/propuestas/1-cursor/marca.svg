@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="biblical-earth · Mapa y cursor">
+  <title>biblical-earth · Mapa y cursor</title>
+  <clipPath id="be-c1"><rect width="64" height="64" rx="14"/></clipPath>
+  <g clip-path="url(#be-c1)"><rect width="64" height="64" fill="#1f1a14"/><path d="M0 33C13 33 25 37 32 32.5C38 28.5 40 19 41 0H64V45H0Z" fill="#a3432b"/></g>
+  <g fill="#f6f1e7"><rect x="10" y="51.5" width="3" height="5" rx="1.5"/><rect x="20" y="51.5" width="3" height="5" rx="1.5"/><rect x="45" y="51.5" width="3" height="5" rx="1.5"/><rect x="55" y="51.5" width="3" height="5" rx="1.5"/></g>
+  <rect x="31.5" y="9" width="5" height="49" rx="2.5" fill="#b8892f"/>
+</svg>
