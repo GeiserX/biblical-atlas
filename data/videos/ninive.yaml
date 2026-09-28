@@ -1,0 +1,98 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: ninive
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r21_5_VIDEO"
+    titulo: "Sábado mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_5_VIDEO&appLanguage=S"
+    publicado: "2021-07-19"
+    menciones: 17
+    terminos:
+      "Nínive": 3
+      "ninivitas": 14
+  - docid: "pub-co-r21_121_VIDEO"
+    titulo: "Ronald Curzan: Recuerde: los que no tienen fe pueden obtenerla. Los ninivitas"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_121_VIDEO&appLanguage=S"
+    publicado: "2021-09-13"
+    menciones: 15
+    terminos:
+      "Nínive": 3
+      "ninivitas": 12
+  - docid: "pub-co-r22_7_VIDEO"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
+    publicado: "2022-07-25"
+    menciones: 12
+    terminos:
+      "Nínive": 10
+      "ninivitas": 2
+  - docid: "pub-wpc_1_VIDEO"
+    titulo: "Jehová nos guía por el camino de la paz (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-1/"
+    publicado: "2022-08-01"
+    menciones: 12
+    terminos:
+      "Nínive": 10
+      "ninivitas": 2
+  - docid: "pub-jwb-135_1_VIDEO"
+    titulo: "JW Broadcasting: Marzo de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-135_1_VIDEO&appLanguage=S"
+    publicado: "2026-03-02"
+    menciones: 8
+    terminos:
+      "Nínive": 1
+      "ninivitas": 7
+  - docid: "pub-jwb-135_3_VIDEO"
+    titulo: "Descubramos más tesoros: Jonás"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-135_3_VIDEO&appLanguage=S"
+    publicado: "2026-03-03"
+    menciones: 7
+    terminos:
+      "Nínive": 1
+      "ninivitas": 6
+  - docid: "pub-jwb-137_1_VIDEO"
+    titulo: "JW Broadcasting: Mayo de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-137_1_VIDEO&appLanguage=S"
+    publicado: "2026-05-04"
+    menciones: 5
+    terminos:
+      "Nínive": 5
+  - docid: "pub-jwb-137_3_VIDEO"
+    titulo: "Descubramos más tesoros: Nahúm"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-137_3_VIDEO&appLanguage=S"
+    publicado: "2026-05-05"
+    menciones: 5
+    terminos:
+      "Nínive": 5
+  - docid: "pub-jwb-108_13_VIDEO"
+    titulo: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_13_VIDEO&appLanguage=S"
+    publicado: "2024-01-02"
+    menciones: 4
+    terminos:
+      "Nínive": 1
+      "ninivitas": 3
+  - docid: "pub-jwb-108_8_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_8_VIDEO&appLanguage=S"
+    publicado: "2024-01-01"
+    menciones: 4
+    terminos:
+      "Nínive": 1
+      "ninivitas": 3
+  - docid: "pub-jwb_201909_8_VIDEO"
+    titulo: "Detrás de las cámaras: La historia de Jonás, una lección de valentía y compasión"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201909_8_VIDEO&appLanguage=S"
+    publicado: "2019-09-16"
+    menciones: 4
+    terminos:
+      "Nínive": 3
+      "ninivitas": 1
+  - docid: "pub-jwb_201706_3_VIDEO"
+    titulo: "Adoración en familia: Aprendamos de la misericordia de Jehová (Jonás)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201706_3_VIDEO&appLanguage=S"
+    publicado: "2017-06-19"
+    menciones: 2
+    terminos:
+      "Nínive": 2

@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: eutico
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbvod26_15_VIDEO"
+    titulo: "Robert Ciranko: ¿Crees en los milagros? (Hech. 24:15)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_15_VIDEO&appLanguage=S"
+    publicado: "2026-03-27"
+    menciones: 2
+    terminos:
+      "Eutico": 2

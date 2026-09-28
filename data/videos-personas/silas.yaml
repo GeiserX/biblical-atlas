@@ -1,0 +1,89 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: silas
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r22_1_VIDEO"
+    titulo: "Viernes mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_1_VIDEO&appLanguage=S"
+    publicado: "2022-06-27"
+    menciones: 5
+    terminos:
+      "Silas": 5
+  - docid: "pub-co-r20_127_VIDEO"
+    titulo: "Joel Dellinger: La alegría de hacer discípulos. Aceptemos la ayuda de Jehová: Nuestros hermanos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_127_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 4
+    terminos:
+      "Silas": 4
+  - docid: "pub-co-r20_6_VIDEO"
+    titulo: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_6_VIDEO&appLanguage=S"
+    publicado: "2020-07-23"
+    menciones: 4
+    terminos:
+      "Silas": 4
+  - docid: "pub-jwb-113_2_VIDEO"
+    titulo: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_2_VIDEO&appLanguage=S"
+    publicado: "2024-06-17"
+    menciones: 4
+    terminos:
+      "Silas": 4
+  - docid: "pub-co-r22_101_VIDEO"
+    titulo: "Stephen Lett: Jehová es \"el Dios que da paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_101_VIDEO&appLanguage=S"
+    publicado: "2022-06-28"
+    menciones: 3
+    terminos:
+      "Silas": 3
+  - docid: "pub-jwb-104_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_1_VIDEO&appLanguage=S"
+    publicado: "2023-06-05"
+    menciones: 3
+    terminos:
+      "Silas": 3
+  - docid: "pub-jwb-104_7_VIDEO"
+    titulo: "Trent Lippold: Sigan remando"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_7_VIDEO&appLanguage=S"
+    publicado: "2023-06-06"
+    menciones: 3
+    terminos:
+      "Silas": 3
+  - docid: "pub-jwb-089_15_VIDEO"
+    titulo: "Leon Weaver: Las circunstancias cambian, no dejemos de predicar (Hech. 16:26-31)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-089_15_VIDEO&appLanguage=S"
+    publicado: "2022-05-20"
+    menciones: 2
+    terminos:
+      "Silas": 2
+  - docid: "pub-jwb-107_12_VIDEO"
+    titulo: "John Ekrann: ¿Cómo resolver malentendidos? (Hech. 15:37-39)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-107_12_VIDEO&appLanguage=S"
+    publicado: "2023-12-15"
+    menciones: 2
+    terminos:
+      "Silas": 2
+  - docid: "pub-jwb-124_1_VIDEO"
+    titulo: "JW Broadcasting: Abril de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
+    publicado: "2025-04-07"
+    menciones: 2
+    terminos:
+      "Silas": 2
+  - docid: "pub-jwb-124_3_VIDEO"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
+    publicado: "2025-04-21"
+    menciones: 2
+    terminos:
+      "Silas": 2
+  - docid: "pub-jwbcov22_3_VIDEO"
+    titulo: "El amor: la clave para lograr la auténtica paz"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov22_3_VIDEO&appLanguage=S"
+    publicado: "2022-09-13"
+    menciones: 2
+    terminos:
+      "Silas": 2

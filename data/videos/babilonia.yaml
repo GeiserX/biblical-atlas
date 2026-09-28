@@ -1,0 +1,96 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: babilonia
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-086_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-086_1_VIDEO&appLanguage=S"
+    publicado: "2022-01-03"
+    menciones: 19
+    terminos:
+      "Babilonia": 19
+  - docid: "pub-jwb-086_5_VIDEO"
+    titulo: "David Splane: El Camino de la Santidad"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-086_5_VIDEO&appLanguage=S"
+    publicado: "2022-01-04"
+    menciones: 19
+    terminos:
+      "Babilonia": 19
+  - docid: "pub-jwbgg_201703_3_VIDEO"
+    titulo: "Graduación de la clase 142 de la Escuela de Galaad: Parte 3. Discurso de conclusión y entrega de asignaciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbgg_201703_3_VIDEO&appLanguage=S"
+    publicado: "2017-08-22"
+    menciones: 11
+    terminos:
+      "Babilonia": 11
+  - docid: "pub-co-r21_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_11_VIDEO&appLanguage=S"
+    publicado: "2021-08-16"
+    menciones: 9
+    terminos:
+      "Babilonia": 6
+      "babilonios": 3
+  - docid: "pub-dlf_2_VIDEO"
+    titulo: "Daniel, un hombre de fe (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/daniel-hombre-de-fe/parte-2/"
+    publicado: "2021-08-23"
+    menciones: 9
+    terminos:
+      "Babilonia": 6
+      "babilonios": 3
+  - docid: "pub-co-r20_12_VIDEO"
+    titulo: "Domingo tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_12_VIDEO&appLanguage=S"
+    publicado: "2020-08-24"
+    menciones: 7
+    terminos:
+      "Babilonia": 7
+  - docid: "pub-co-r20_148_VIDEO"
+    titulo: "David Splane: Haz de Jehová tu mayor alegría"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_148_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 7
+    terminos:
+      "Babilonia": 7
+  - docid: "pub-co-r21_8_VIDEO"
+    titulo: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_8_VIDEO&appLanguage=S"
+    publicado: "2021-07-26"
+    menciones: 7
+    terminos:
+      "Babilonia": 5
+      "babilonios": 2
+  - docid: "pub-co-r22_7_VIDEO"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
+    publicado: "2022-07-25"
+    menciones: 7
+    terminos:
+      "Babilonia": 5
+      "babilonios": 2
+  - docid: "pub-dlf_1_VIDEO"
+    titulo: "Daniel, un hombre de fe (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/daniel-hombre-de-fe/parte-1/"
+    publicado: "2021-08-16"
+    menciones: 7
+    terminos:
+      "Babilonia": 5
+      "babilonios": 2
+  - docid: "pub-wpc_1_VIDEO"
+    titulo: "Jehová nos guía por el camino de la paz (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-1/"
+    publicado: "2022-08-01"
+    menciones: 7
+    terminos:
+      "Babilonia": 5
+      "babilonios": 2
+  - docid: "pub-co-r22_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_11_VIDEO&appLanguage=S"
+    publicado: "2022-08-15"
+    menciones: 6
+    terminos:
+      "Babilonia": 5
+      "babilonios": 1

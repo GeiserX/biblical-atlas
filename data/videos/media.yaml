@@ -1,0 +1,19 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: media
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r21_11_VIDEO"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_11_VIDEO&appLanguage=S"
+    publicado: "2021-08-16"
+    menciones: 5
+    terminos:
+      "medos": 5
+  - docid: "pub-dlf_2_VIDEO"
+    titulo: "Daniel, un hombre de fe (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/daniel-hombre-de-fe/parte-2/"
+    publicado: "2021-08-23"
+    menciones: 5
+    terminos:
+      "medos": 5

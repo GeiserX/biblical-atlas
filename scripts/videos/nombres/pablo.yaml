@@ -225,3 +225,44 @@ tolemaida:
 
 tres-tabernas:
   nombres: [Tres Tabernas]
+
+# Añadidos el 28 de septiembre de 2026 por el carril hechos-pablo (las dos fichas mínimas y los lugares nuevos).
+# «Asia» suelto casi siempre es el continente: solo cuentan las formas de la provincia.
+asia:
+  nombres: [distrito de Asia, provincia de Asia, provincia romana de Asia]
+
+bitinia:
+  nombres: [Bitinia]
+
+tarso:
+  nombres: [Tarso]
+
+arabia:
+  nombres: [Arabia]
+  excluir: [Arabia Saudí, Arabia Saudita, península arábiga]
+
+chipre:
+  nombres: [Chipre]
+  gentilicios: [chipriota, chipriotas]
+
+panfilia:
+  nombres: [Panfilia]
+
+licaonia:
+  nombres: [Licaonia]
+  gentilicios: [licaonio]
+
+licia:
+  nombres: [Licia]
+
+nicopolis:
+  nombres: [Nicópolis]
+
+hierapolis:
+  nombres: [Hierápolis]
+
+adramitio:
+  nombres: [Adramitio]
+
+ilirico:
+  nombres: [Ilírico, Dalmacia]

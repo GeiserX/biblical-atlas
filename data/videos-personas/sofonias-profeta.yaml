@@ -1,0 +1,19 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: sofonias-profeta
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jlj_1_VIDEO"
+    titulo: "La historia de Josías, un rey que amó a Jehová y odió lo malo (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/josias-amo-jehova/pelicula-parte-1/"
+    publicado: "2020-02-20"
+    menciones: 8
+    terminos:
+      "Sofonías": 8
+  - docid: "pub-jlj_2_VIDEO"
+    titulo: "La historia de Josías, un rey que amó a Jehová y odió lo malo (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/josias-amo-jehova/pelicula-parte-2/"
+    publicado: "2020-02-20"
+    menciones: 2
+    terminos:
+      "Sofonías": 2

@@ -1,0 +1,49 @@
+# Generado por scripts/videos/pasajes.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+libro: ester
+generado: "2026-09-28"
+serie:
+  - docid: "pub-nwtsv_170_VIDEO"
+    titulo: "Información sobre Ester"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_170_VIDEO"
+    publicado: "2016-02-11"
+capitulos:
+  2:
+    - docid: "pub-jwb-081_6_VIDEO"
+      titulo: "David Splane: Disfruten de su lectura de la Biblia"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-081_6_VIDEO"
+      publicado: "2021-06-08"
+      por: [subtitulos]
+      citas: 4
+  4:
+    - docid: "pub-jwb-099_10_VIDEO"
+      titulo: "Gary Breaux: Preparemos nuestro corazón para orar (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_10_VIDEO"
+      publicado: "2023-07-14"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201804_13_VIDEO"
+      titulo: "Kenneth Cook: Cumpla sus promesas y reciba bendiciones (Sal. 15:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201804_13_VIDEO"
+      publicado: "2018-04-30"
+      por: [subtitulos]
+      citas: 1
+  5:
+    - docid: "pub-co-r22_126_VIDEO"
+      titulo: "Harold Corkern: Evitemos las cosas que destruyen la paz. Presumir de lo que no debemos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_126_VIDEO"
+      publicado: "2022-07-25"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r22_7_VIDEO"
+      titulo: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_7_VIDEO"
+      publicado: "2022-07-25"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-095_11_VIDEO"
+      titulo: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-095_11_VIDEO"
+      publicado: "2023-04-21"
+      por: [subtitulos]
+      citas: 1

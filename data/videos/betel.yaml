@@ -1,0 +1,89 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: betel
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-134_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-134_1_VIDEO&appLanguage=S"
+    publicado: "2026-01-05"
+    menciones: 58
+    terminos:
+      "Betel": 58
+  - docid: "pub-jwb-120_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-120_1_VIDEO&appLanguage=S"
+    publicado: "2024-12-02"
+    menciones: 36
+    terminos:
+      "Betel": 36
+  - docid: "pub-jwb_201905_3_VIDEO"
+    titulo: "¿Qué tienes que hacer para servir en Betel?"
+    url: "https://www.jw.org/es/biblioteca/videos/videos-varios/como-servir-betel/"
+    publicado: "2019-05-20"
+    menciones: 32
+    terminos:
+      "Betel": 32
+  - docid: "pub-jwb-120_8_VIDEO"
+    titulo: "Jeffrey Winder: Más oportunidades de darle gloria a Jehová en Betel y en la construcción"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-120_8_VIDEO&appLanguage=S"
+    publicado: "2024-12-03"
+    menciones: 26
+    terminos:
+      "Betel": 26
+  - docid: "pub-jwb-107_2_VIDEO"
+    titulo: "Graduación de la clase 154 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-107_2_VIDEO&appLanguage=S"
+    publicado: "2023-12-18"
+    menciones: 24
+    terminos:
+      "Betel": 24
+  - docid: "702021067"
+    titulo: "2021 | Informe 2 del Cuerpo Gobernante"
+    url: "https://www.jw.org/es/noticias/region/internacionales/2021-Informe-2-del-Cuerpo-Gobernante/"
+    publicado: "2021-03-12"
+    menciones: 18
+    terminos:
+      "Betel": 18
+  - docid: "pub-jwbam_201610_1_VIDEO"
+    titulo: "Reunión anual del 2016: Parte 1. Central mundial (Warwick, Nueva York)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbam_201610_1_VIDEO&appLanguage=S"
+    publicado: "2017-06-09"
+    menciones: 17
+    terminos:
+      "Betel": 17
+  - docid: "pub-jwb-081_3_VIDEO"
+    titulo: "Graduación de la clase 149 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-081_3_VIDEO&appLanguage=S"
+    publicado: "2021-06-21"
+    menciones: 15
+    terminos:
+      "Betel": 15
+  - docid: "pub-jwb-100_9_VIDEO"
+    titulo: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_9_VIDEO&appLanguage=S"
+    publicado: "2023-02-06"
+    menciones: 15
+    terminos:
+      "Betel": 15
+  - docid: "pub-jwb-105_11_VIDEO"
+    titulo: "Informe de las sucursales de Brasil y Paraguay"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-105_11_VIDEO&appLanguage=S"
+    publicado: "2023-07-31"
+    menciones: 15
+    terminos:
+      "Betel": 15
+  - docid: "pub-jwb_202101_10_VIDEO"
+    titulo: "Hermanas que son un ejemplo de fidelidad"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202101_10_VIDEO&appLanguage=S"
+    publicado: "2021-01-18"
+    menciones: 15
+    terminos:
+      "Betel": 15
+  - docid: "pub-jwb_202101_9_VIDEO"
+    titulo: "Reunión anual del 2020: Entrevista y discurso (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202101_9_VIDEO&appLanguage=S"
+    publicado: "2021-01-18"
+    menciones: 15
+    terminos:
+      "Betel": 15

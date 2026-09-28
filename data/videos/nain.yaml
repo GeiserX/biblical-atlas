@@ -1,0 +1,19 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: nain
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-120_11_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2025 (reunión anual del 2024, parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-120_11_VIDEO&appLanguage=S"
+    publicado: "2025-01-06"
+    menciones: 2
+    terminos:
+      "Naín": 2
+  - docid: "pub-pk_55_VIDEO"
+    titulo: "El mejor regalo que te dio Jehová"
+    url: "https://www.jw.org/es/biblioteca/videos/hazte-amigo-jehova/El-mejor-regalo-que-te-dio-Jehov%C3%A1/"
+    publicado: "2025-01-06"
+    menciones: 2
+    terminos:
+      "Naín": 2

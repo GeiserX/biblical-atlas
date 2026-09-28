@@ -1,0 +1,94 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: gabaon
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r22_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_9_VIDEO&appLanguage=S"
+    publicado: "2022-08-08"
+    menciones: 11
+    terminos:
+      "gabaonitas": 11
+  - docid: "pub-jwb-085_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2021 (graduación de la clase 150 de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_1_VIDEO&appLanguage=S"
+    publicado: "2021-12-06"
+    menciones: 11
+    terminos:
+      "Gabaón": 1
+      "gabaonitas": 10
+  - docid: "pub-jwb-085_6_VIDEO"
+    titulo: "Clive Martin: Recuerde las condiciones para la paz"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_6_VIDEO&appLanguage=S"
+    publicado: "2021-12-07"
+    menciones: 11
+    terminos:
+      "Gabaón": 1
+      "gabaonitas": 10
+  - docid: "pub-co-r22_138_VIDEO"
+    titulo: "Ronald Curzan: Sembraron y cosecharon paz. Los gabaonitas"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_138_VIDEO&appLanguage=S"
+    publicado: "2022-08-08"
+    menciones: 9
+    terminos:
+      "gabaonitas": 9
+  - docid: "pub-jwb_201804_13_VIDEO"
+    titulo: "Kenneth Cook: Cumpla sus promesas y reciba bendiciones (Sal. 15:4)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201804_13_VIDEO&appLanguage=S"
+    publicado: "2018-04-30"
+    menciones: 8
+    terminos:
+      "Gabaón": 2
+      "gabaonitas": 6
+  - docid: "pub-jwb-091_12_VIDEO"
+    titulo: "David Splane: Vayamos por el camino de la humildad"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_12_VIDEO&appLanguage=S"
+    publicado: "2022-06-28"
+    menciones: 5
+    terminos:
+      "gabaonitas": 5
+  - docid: "pub-jwb-091_4_VIDEO"
+    titulo: "Graduación de la clase 151 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_4_VIDEO&appLanguage=S"
+    publicado: "2022-06-27"
+    menciones: 5
+    terminos:
+      "gabaonitas": 5
+  - docid: "pub-jwb-096_1_VIDEO"
+    titulo: "JW Broadcasting: Mayo de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-096_1_VIDEO&appLanguage=S"
+    publicado: "2023-05-01"
+    menciones: 3
+    terminos:
+      "Gabaón": 1
+      "gabaonitas": 2
+  - docid: "pub-jwb-096_2_VIDEO"
+    titulo: "Mark Noumair: Usted es muy valioso para Jehová"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-096_2_VIDEO&appLanguage=S"
+    publicado: "2023-05-15"
+    menciones: 3
+    terminos:
+      "Gabaón": 1
+      "gabaonitas": 2
+  - docid: "pub-jwb_201712_1_VIDEO"
+    titulo: "JW Broadcasting: Diciembre de 2017 (graduación de la clase 143 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201712_1_VIDEO&appLanguage=S"
+    publicado: "2017-12-04"
+    menciones: 3
+    terminos:
+      "gabaonitas": 3
+  - docid: "pub-jwb_201911_12_VIDEO"
+    titulo: "Gary Breaux: Respetemos a Jehová profundamente (Jos. 9:9)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201911_12_VIDEO&appLanguage=S"
+    publicado: "2019-11-25"
+    menciones: 2
+    terminos:
+      "gabaonitas": 2
+  - docid: "pub-jwbvod24_47_VIDEO"
+    titulo: "Stephen Lett: Si los israelitas iban a la guerra, ¿por qué no deben hacerlo los cristianos de la actualidad? (1 Juan 3:10-12)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_47_VIDEO&appLanguage=S"
+    publicado: "2024-11-22"
+    menciones: 2
+    terminos:
+      "gabaonitas": 2

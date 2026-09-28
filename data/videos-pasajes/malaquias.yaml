@@ -1,0 +1,122 @@
+# Generado por scripts/videos/pasajes.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+libro: malaquias
+generado: "2026-09-28"
+serie:
+  - docid: "pub-nwtsv_390_VIDEO"
+    titulo: "Información sobre Malaquías"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_390_VIDEO"
+    publicado: "2017-12-18"
+capitulos:
+  1:
+    - docid: "pub-jwb-134_13_VIDEO"
+      titulo: "David Splane: “Mi Amigo, mi Padre, mi Dios” (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_13_VIDEO"
+      publicado: "2026-02-05"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb-134_9_VIDEO"
+      titulo: "JW Broadcasting: Febrero de 2026 (reunión anual del 2025, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_9_VIDEO"
+      publicado: "2026-02-02"
+      por: [subtitulos]
+      citas: 1
+  2:
+    - docid: "pub-jwb-094_13_VIDEO"
+      titulo: "Robert Luccioni: Estemos atentos a nuestra actitud para no volvernos traidores (Mal. 2:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-094_13_VIDEO"
+      publicado: "2022-11-24"
+      por: [titulo, subtitulos]
+      citas: 2
+    - docid: "pub-jwb-101_10_VIDEO"
+      titulo: "Seth Hyatt: Veamos el matrimonio como lo ve Jehová (Mat. 19:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-101_10_VIDEO"
+      publicado: "2023-08-18"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-jwb_201903_12_VIDEO"
+      titulo: "Robert Ciranko: Jehová protege a sus leales (Sal. 97:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201903_12_VIDEO"
+      publicado: "2019-03-25"
+      por: [subtitulos]
+      citas: 1
+  3:
+    - docid: "pub-jwbvod25_25_VIDEO"
+      titulo: "Ralph Walls: Usemos palabras que animen (Mal. 3:16-18)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_25_VIDEO"
+      publicado: "2025-06-27"
+      por: [titulo, subtitulos]
+      citas: 2
+    - docid: "pub-jwb_201812_2_VIDEO"
+      titulo: "Geoffrey Jackson: Probemos a Jehová de la manera correcta (Mal. 3:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201812_2_VIDEO"
+      publicado: "2018-12-10"
+      por: [titulo]
+      citas: 0
+    - docid: "pub-jwbgg_201609_1_VIDEO"
+      titulo: "Graduación de la clase 141 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_1_VIDEO"
+      publicado: "2016-12-06"
+      por: [subtitulos]
+      citas: 5
+    - docid: "pub-co-r20_12_VIDEO"
+      titulo: "Domingo tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_12_VIDEO"
+      publicado: "2020-08-24"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-co-r20_148_VIDEO"
+      titulo: "David Splane: Haz de Jehová tu mayor alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_148_VIDEO"
+      publicado: "2020-12-01"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-jwb_201803_10_VIDEO"
+      titulo: "George Aljian: Cómo sobrellevar la plaga de tu propio corazón"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201803_10_VIDEO"
+      publicado: "2018-03-19"
+      por: [subtitulos]
+      citas: 3
+    - docid: "pub-jwb-120_11_VIDEO"
+      titulo: "JW Broadcasting: Enero de 2025 (reunión anual del 2024, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_11_VIDEO"
+      publicado: "2025-01-06"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb-120_12_VIDEO"
+      titulo: "Kenneth Cook: Ayudemos a derribar y a edificar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_12_VIDEO"
+      publicado: "2025-01-07"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwb_202102_3_VIDEO"
+      titulo: "Kenneth Cook: ¿Seguirá usted del lado de los justos?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202102_3_VIDEO"
+      publicado: "2021-02-01"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-jwbrd_201501_7_VIDEO"
+      titulo: "En su propio idioma y en su propia escritura"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbrd_201501_7_VIDEO"
+      publicado: "2021-08-03"
+      por: [subtitulos]
+      citas: 2
+    - docid: "pub-co-r21_145_VIDEO"
+      titulo: "Gerrit Lösch: Imitemos a las mujeres de fe. Ejemplos de la actualidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_145_VIDEO"
+      publicado: "2021-09-13"
+      por: [subtitulos]
+      citas: 1
+    - docid: "pub-co-r21_9_VIDEO"
+      titulo: "Domingo mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_9_VIDEO"
+      publicado: "2021-08-09"
+      por: [subtitulos]
+      citas: 1
+  4:
+    - docid: "pub-jwbvod26_30_VIDEO"
+      titulo: "Stephen Lett: No seamos arrogantes (1 Ped. 5:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_30_VIDEO"
+      publicado: "2026-08-28"
+      por: [subtitulos]
+      citas: 1

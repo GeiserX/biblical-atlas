@@ -1,0 +1,33 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: rehoboam
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbgg_201703_1_VIDEO"
+    titulo: "Graduación de la clase 142 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbgg_201703_1_VIDEO&appLanguage=S"
+    publicado: "2017-07-13"
+    menciones: 6
+    terminos:
+      "Rehoboam": 6
+  - docid: "pub-jwbvod26_5_VIDEO"
+    titulo: "Gage Fleegle: “Los gritos del necesitado” (Prov. 21:13)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod26_5_VIDEO&appLanguage=S"
+    publicado: "2026-01-23"
+    menciones: 5
+    terminos:
+      "Rehoboam": 5
+  - docid: "pub-jwb-094_1_VIDEO"
+    titulo: "JW Broadcasting: Noviembre de 2022"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-094_1_VIDEO&appLanguage=S"
+    publicado: "2022-11-07"
+    menciones: 2
+    terminos:
+      "Rehoboam": 2
+  - docid: "pub-jwb-094_6_VIDEO"
+    titulo: "David Splane: “Protege tu corazón” (Prov. 4:23)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-094_6_VIDEO&appLanguage=S"
+    publicado: "2022-11-21"
+    menciones: 2
+    terminos:
+      "Rehoboam": 2

@@ -1,0 +1,26 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: monte-sinai
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-104_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_1_VIDEO&appLanguage=S"
+    publicado: "2023-06-05"
+    menciones: 4
+    terminos:
+      "Horeb": 4
+  - docid: "pub-jwb-104_9_VIDEO"
+    titulo: "James Cauthon: ¿Solo consejero, o también pastor?"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_9_VIDEO&appLanguage=S"
+    publicado: "2023-06-06"
+    menciones: 4
+    terminos:
+      "Horeb": 4
+  - docid: "pub-jwbvod24_23_VIDEO"
+    titulo: "Alex Reinmueller: Fortalecemos nuestra fe cuando conocemos mejor a Jehová (Heb. 11:6)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_23_VIDEO&appLanguage=S"
+    publicado: "2024-05-24"
+    menciones: 2
+    terminos:
+      "monte Sinaí": 2

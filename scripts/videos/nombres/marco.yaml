@@ -1,0 +1,11 @@
+# Nombres que busca scripts/videos/indexar.py en los subtítulos: lugares del carril «marco».
+# Mismo formato que scripts/videos/nombres/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español.
+
+babilonia:
+  nombres: [Babilonia, Babel]
+  gentilicios: [babilonios, babilonias]
+  excluir: [Babilonia la Grande, Gran Babilonia]
+
+egipto:
+  nombres: [Egipto]
+  gentilicios: [egipcios, egipcias]

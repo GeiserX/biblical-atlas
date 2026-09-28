@@ -1,0 +1,47 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: aquila
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r20_127_VIDEO"
+    titulo: "Joel Dellinger: La alegría de hacer discípulos. Aceptemos la ayuda de Jehová: Nuestros hermanos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_127_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 7
+    terminos:
+      "Áquila": 7
+  - docid: "pub-co-r20_6_VIDEO"
+    titulo: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_6_VIDEO&appLanguage=S"
+    publicado: "2020-07-23"
+    menciones: 7
+    terminos:
+      "Áquila": 7
+  - docid: "pub-jwb_202103_8_VIDEO"
+    titulo: "Robert Ciranko: “Serán una sola carne” (Gén. 2:24)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202103_8_VIDEO&appLanguage=S"
+    publicado: "2021-03-15"
+    menciones: 6
+    terminos:
+      "Áquila": 6
+  - docid: "pub-jwbvod24_7_VIDEO"
+    titulo: "Donald Gordon: Presta constante atención a tu enseñanza (1 Tim. 4:16)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_7_VIDEO&appLanguage=S"
+    publicado: "2024-02-16"
+    menciones: 4
+    terminos:
+      "Áquila": 4
+  - docid: "pub-jwb_201704_6_VIDEO"
+    titulo: "Los Testigos se mantienen neutrales en Sudáfrica"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201704_6_VIDEO&appLanguage=S"
+    publicado: "2017-04-17"
+    menciones: 3
+    terminos:
+      "Áquila": 3
+  - docid: "pub-jwb_201806_1_VIDEO"
+    titulo: "JW Broadcasting: junio de 2018 (graduación de la clase 144 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201806_1_VIDEO&appLanguage=S"
+    publicado: "2018-06-04"
+    menciones: 3
+    terminos:
+      "Áquila": 3

@@ -1,0 +1,96 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: rio-jordan
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbcov25_7_VIDEO"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
+    publicado: "2026-01-19"
+    menciones: 9
+    terminos:
+      "Jordán": 7
+      "río Jordán": 2
+  - docid: "pub-jwb-138_1_VIDEO"
+    titulo: "JW Broadcasting: Junio de 2026 (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_1_VIDEO&appLanguage=S"
+    publicado: "2026-06-01"
+    menciones: 6
+    terminos:
+      "Jordán": 6
+  - docid: "pub-gnj_2_VIDEO"
+    titulo: "Episodio 2: “Este es mi Hijo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
+    publicado: "2026-01-19"
+    menciones: 5
+    terminos:
+      "Jordán": 4
+      "río Jordán": 1
+  - docid: "pub-jwb-138_8_VIDEO"
+    titulo: "David Splane: Denles el beneficio de la duda (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_8_VIDEO&appLanguage=S"
+    publicado: "2026-06-02"
+    menciones: 4
+    terminos:
+      "Jordán": 4
+  - docid: "pub-jwb-133_6_VIDEO"
+    titulo: "Trent Lippold: El hombre imperfecto más grande de todos los tiempos (graduación de la clase 158 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_6_VIDEO&appLanguage=S"
+    publicado: "2025-12-02"
+    menciones: 3
+    terminos:
+      "Jordán": 2
+      "río Jordán": 1
+  - docid: "pub-jwb-138_3_VIDEO"
+    titulo: "Per Christensen: ¿Están preocupados? (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_3_VIDEO&appLanguage=S"
+    publicado: "2026-06-15"
+    menciones: 3
+    terminos:
+      "Jordán": 2
+      "río Jordán": 1
+  - docid: "pub-jwb_201905_4_VIDEO"
+    titulo: "Robert y Jordan Williams: Cómo hacerle frente a la ansiedad día a día"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201905_4_VIDEO&appLanguage=S"
+    publicado: "2019-05-20"
+    menciones: 3
+    terminos:
+      "Jordán": 3
+  - docid: "pub-jwb_201911_12_VIDEO"
+    titulo: "Gary Breaux: Respetemos a Jehová profundamente (Jos. 9:9)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201911_12_VIDEO&appLanguage=S"
+    publicado: "2019-11-25"
+    menciones: 3
+    terminos:
+      "Jordán": 2
+      "río Jordán": 1
+  - docid: "702021082"
+    titulo: "2021 | Informe 7 del Cuerpo Gobernante"
+    url: "https://www.jw.org/es/noticias/region/internacionales/2021-Informe-7-del-Cuerpo-Gobernante/"
+    publicado: "2021-08-27"
+    menciones: 2
+    terminos:
+      "Jordán": 1
+      "río Jordán": 1
+  - docid: "pub-co-r22_106_VIDEO"
+    titulo: "David Schafer: \"El resultado de la verdadera rectitud será paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_106_VIDEO&appLanguage=S"
+    publicado: "2022-06-28"
+    menciones: 2
+    terminos:
+      "Jordán": 2
+  - docid: "pub-co-r22_138_VIDEO"
+    titulo: "Ronald Curzan: Sembraron y cosecharon paz. Los gabaonitas"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_138_VIDEO&appLanguage=S"
+    publicado: "2022-08-08"
+    menciones: 2
+    terminos:
+      "Jordán": 1
+      "río Jordán": 1
+  - docid: "pub-co-r22_2_VIDEO"
+    titulo: "Viernes mañana (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_2_VIDEO&appLanguage=S"
+    publicado: "2022-06-27"
+    menciones: 2
+    terminos:
+      "Jordán": 2

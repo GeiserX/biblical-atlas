@@ -1,0 +1,13 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
+lugar: cruce-del-mar-rojo
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-134_1_VIDEO"
+    titulo: "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-134_1_VIDEO&appLanguage=S"
+    publicado: "2026-01-05"
+    menciones: 2
+    terminos:
+      "cruzaron el mar Rojo": 1
+      "dividió el mar Rojo": 1

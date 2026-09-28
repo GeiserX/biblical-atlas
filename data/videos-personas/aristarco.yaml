@@ -1,0 +1,19 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: aristarco
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-130_1_VIDEO"
+    titulo: "JW Broadcasting: Septiembre de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-130_1_VIDEO&appLanguage=S"
+    publicado: "2025-09-01"
+    menciones: 5
+    terminos:
+      "Aristarco": 5
+  - docid: "pub-jwb-130_4_VIDEO"
+    titulo: "Lecciones de La Atalaya: Podemos ser “una fuente de gran consuelo” para otros"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-130_4_VIDEO&appLanguage=S"
+    publicado: "2025-09-15"
+    menciones: 3
+    terminos:
+      "Aristarco": 3

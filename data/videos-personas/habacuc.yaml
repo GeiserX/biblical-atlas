@@ -1,0 +1,68 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: habacuc
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-094_11_VIDEO"
+    titulo: "Joel Dellinger: El día de Jehová “no llegará tarde” (Hab. 2:3)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-094_11_VIDEO&appLanguage=S"
+    publicado: "2022-11-18"
+    menciones: 22
+    terminos:
+      "Habacuc": 22
+  - docid: "pub-jwb-103_11_VIDEO"
+    titulo: "Mark Noumair: \"¡No llegará tarde!\" (Hab. 2:3)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-103_11_VIDEO&appLanguage=S"
+    publicado: "2023-02-20"
+    menciones: 21
+    terminos:
+      "Habacuc": 21
+  - docid: "pub-jwb-139_1_VIDEO"
+    titulo: "JW Broadcasting: Julio de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-139_1_VIDEO&appLanguage=S"
+    publicado: "2026-07-06"
+    menciones: 19
+    terminos:
+      "Habacuc": 19
+  - docid: "pub-jwb-139_3_VIDEO"
+    titulo: "Descubramos más tesoros: Habacuc"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-139_3_VIDEO&appLanguage=S"
+    publicado: "2026-07-07"
+    menciones: 16
+    terminos:
+      "Habacuc": 16
+  - docid: "pub-jwb-086_10_VIDEO"
+    titulo: "Izak Marais: Esperemos con paciencia a que Jehová actúe (Hab. 2:1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-086_10_VIDEO&appLanguage=S"
+    publicado: "2022-01-28"
+    menciones: 11
+    terminos:
+      "Habacuc": 11
+  - docid: "pub-co-r20_143_VIDEO"
+    titulo: "Ralph Walls: Podemos ser felices a pesar del peligro"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_143_VIDEO&appLanguage=S"
+    publicado: "2020-12-01"
+    menciones: 5
+    terminos:
+      "Habacuc": 5
+  - docid: "pub-co-r20_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
+    publicado: "2020-08-13"
+    menciones: 5
+    terminos:
+      "Habacuc": 5
+  - docid: "pub-jwb_202102_6_VIDEO"
+    titulo: "Mark Sanderson: “¿Dónde está Jehová?”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202102_6_VIDEO&appLanguage=S"
+    publicado: "2021-02-01"
+    menciones: 3
+    terminos:
+      "Habacuc": 3
+  - docid: "pub-jwbvod25_10_VIDEO"
+    titulo: "Troy Snyder: Sigamos el ejemplo de aguante de los profetas (Sant. 5:11)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_10_VIDEO&appLanguage=S"
+    publicado: "2025-02-28"
+    menciones: 3
+    terminos:
+      "Habacuc": 3

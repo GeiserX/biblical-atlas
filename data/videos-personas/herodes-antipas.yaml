@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: herodes-antipas
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-133_6_VIDEO"
+    titulo: "Trent Lippold: El hombre imperfecto más grande de todos los tiempos (graduación de la clase 158 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_6_VIDEO&appLanguage=S"
+    publicado: "2025-12-02"
+    menciones: 3
+    terminos:
+      "Herodes Antipas": 3
