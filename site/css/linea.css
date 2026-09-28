@@ -20,7 +20,7 @@
 .cronologia { flex: none; }
 .linea-botones { display: inline-flex; gap: 2px; flex: none; }
 .linea-boton { width: 32px; height: 32px; cursor: pointer; }
-.linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"] { background: var(--gold-soft); color: #6e4f15; }
+.linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"] { background: var(--gold-soft); color: var(--gold-ink); }
 .minimapa { flex: 0 1 200px; min-width: 90px; height: 14px; opacity: 1; cursor: pointer; background: var(--paper-2); border: 1px solid var(--line); box-sizing: border-box; }
 .minimapa .be-minimap__win { top: -4px; bottom: -4px; min-width: 4px; border-width: 1.5px; background: rgba(255, 255, 255, .45); pointer-events: none; }
 .minimapa-cursor { position: absolute; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; }
@@ -59,7 +59,7 @@
 .fila-par { fill: rgba(246, 241, 231, .55); }
 .tick-mayor { stroke: var(--line-2); }
 .tick-menor { stroke: var(--line-2); opacity: .7; }
-.rejilla { stroke: rgba(211, 198, 176, .45); }
+.rejilla { stroke: var(--rejilla); }
 .linea-eje { stroke: var(--line); }
 .tick-texto { fill: var(--ink-3); }
 .densidad { fill: rgba(123, 111, 96, .28); }
@@ -79,11 +79,11 @@
 .carta.seleccionada .tramo-carta { stroke: var(--accent); stroke-width: 2.5; }
 .texto-punto { fill: var(--ink-2); }
 .tramo-carta { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
-.texto-carta { fill: #6e4f15; }
+.texto-carta { fill: var(--gold-ink); }
 .tramo-evento { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
 .rombo-evento { fill: var(--gold); stroke: #fff; stroke-width: 2; }
 .evento-fondo .tramo-evento { fill: rgba(255, 253, 248, .6); stroke-opacity: .6; }
-.texto-evento { fill: #6e4f15; }
+.texto-evento { fill: var(--gold-ink); }
 /* Cálculo nuestro, sin verificar (C-03): rombo hueco y rosa, tramo rayado. */
 .rombo-evento.calculo { fill: var(--surface); stroke: var(--unverified); stroke-width: 1.6; }
 .tramo-evento.calculo { fill: var(--unverified-soft); stroke: var(--unverified); stroke-dasharray: 4 3; }
@@ -104,7 +104,7 @@
 .estancia.larga .barra-estancia { opacity: .45; }
 .estancia:hover .barra-estancia, .estancia.encima .barra-estancia { opacity: 1; }
 .camino { stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .7; }
-.banda-juntos { fill: rgba(184, 137, 47, .16); stroke: rgba(184, 137, 47, .45); stroke-dasharray: 2 2; pointer-events: none; }
+.banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); stroke-dasharray: 2 2; pointer-events: none; }
 /* Meses (T-19): nuestros meses en contorno y letra de interfaz; los hebreos rellenos, rayados y en letra de libro.
    Se distinguen por la etiqueta, la forma y la letra, no solo por el color (daltonismo e impresión). */
 .mes-caja { stroke-width: 1; }
@@ -123,8 +123,8 @@
 .noche-hebrea rect { fill: rgba(31, 26, 20, .07); pointer-events: none; }
 /* Fiestas del calendario hebreo, a escala de días. */
 .fiesta-caja { fill: var(--gold-soft); stroke: var(--gold); stroke-width: 1.2; }
-.fiesta-texto { fill: #6e4f15; }
-.fiesta-texto--fuera { fill: #6e4f15; }
+.fiesta-texto { fill: var(--gold-ink); }
+.fiesta-texto--fuera { fill: var(--gold-ink); }
 /* Etiquetas de las filas de meses y el enlace a la página del calendario. */
 .linea-carriles .carril-mes--hebreos > span { font-family: var(--font-serif); font-size: 13.5px; font-weight: 700; color: var(--ink); }
 .linea-carriles .carril-mes--nuestros > span { font-weight: 500; }
@@ -141,7 +141,7 @@
 .meses-seg .be-seg__opt--on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-1); }
 .meses-que { font-size: var(--fs-xs); font-weight: 500; color: var(--link); white-space: nowrap; }
 /* La fecha en el otro calendario, en la barra superior. */
-.fecha-otra { font-size: var(--fs-xs); font-weight: 500; color: #8a6a2a; white-space: nowrap; }
+.fecha-otra { font-size: var(--fs-xs); font-weight: 500; color: var(--gold-hint); white-space: nowrap; }
 .fecha-otra[hidden] { display: none; }
 .fecha-otra.anacronico { font-style: italic; }
 #fecha-valor i { font-style: italic; }
@@ -160,7 +160,7 @@
 .banda-incierta { pointer-events: none; }
 #linea-cursor { pointer-events: none; }
 /* Regla (T-15), bucle (T-12) y marcadores (T-14). */
-.regla-banda { fill: rgba(184, 137, 47, .1); pointer-events: none; }
+.regla-banda { fill: color-mix(in srgb, var(--gold) 10%, transparent); pointer-events: none; }
 .regla-borde { stroke: var(--gold); stroke-dasharray: 3 3; pointer-events: none; }
 .regla-etiqueta { fill: var(--ink); }
 .regla-texto { fill: #fbf7ef; }
@@ -253,7 +253,7 @@
 .fechas { display: grid; gap: 10px; }
 .fechas--dos { grid-template-columns: 1fr 1fr; }
 .fecha-tarjeta { display: flex; flex-direction: column; gap: 3px; text-align: left; padding: 10px 12px; border-radius: var(--r-md); cursor: pointer; font: inherit; }
-.fecha-tnm { background: var(--gold-soft); border: 1px solid #ead9b3; color: #6e4f15; }
+.fecha-tnm { background: var(--gold-soft); border: 1px solid var(--gold-line); color: var(--gold-ink); }
 .fecha-secular { background: var(--secular-soft); border: 1.5px dashed #b8c2cf; color: var(--secular); }
 .fecha-calculo { background: var(--unverified-soft); border: 1.5px dashed var(--unverified); color: var(--unverified); }
 .fecha-eyebrow { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
@@ -266,7 +266,7 @@
 .fecha-fuentes a { margin-right: 8px; display: inline-flex; align-items: center; gap: 4px; }
 .fecha-fuentes .be-tier { height: 16px; padding: 0; }
 .fecha-regla { margin: 8px 0 0; font-size: var(--fs-xs); color: var(--ink-3); }
-.prec { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 4px; border-radius: var(--r-xs); background: rgba(255, 255, 255, .7); border: 1px solid currentColor; font: 700 var(--fs-2xs) var(--font-sans); color: #6e4f15; }
+.prec { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 4px; border-radius: var(--r-xs); background: rgba(255, 255, 255, .7); border: 1px solid currentColor; font: 700 var(--fs-2xs) var(--font-sans); color: var(--gold-ink); }
 
 /* ---------- Pantallas estrechas ---------- */
 @media (max-width: 760px) {

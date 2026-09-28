@@ -22,7 +22,7 @@
 .marca-lugar.menor { width: 7px; height: 7px; }
 .marca-lugar.menor .punto { border-width: 1.5px; border-color: var(--ink-3); }
 .marca-lugar.menor .etiqueta { font-size: 13px; font-weight: 500; color: var(--ink-2); left: 11px; }
-.marca-lugar.de-carta .punto { border-color: var(--gold); background: #fff8e6; }
+.marca-lugar.de-carta .punto { border-color: var(--gold); background: var(--gold-wash); }
 .marca-lugar.futuro .punto { border: 2px dashed var(--accent); background: var(--surface); }
 .marca-lugar.futuro .etiqueta { color: var(--ink-2); font-weight: 500; }
 .marca-lugar.visitado .punto { background: var(--accent); border-color: #fff; box-shadow: 0 0 0 1.5px var(--accent); }
@@ -43,8 +43,8 @@
 /* Pablo */
 .pablo { width: 16px; height: 16px; pointer-events: none; z-index: 4; }
 .pablo-punto { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); border: 3px solid #fff; box-shadow: 0 0 0 1.5px var(--accent), 0 2px 6px rgba(0, 0, 0, .3); }
-.pablo-halo { position: absolute; inset: -16px; border-radius: 50%; background: radial-gradient(circle, rgba(163, 67, 43, .3), rgba(163, 67, 43, 0) 70%); }
-.pablo.estimada .pablo-halo { inset: -13px; background: rgba(163, 67, 43, .08); border: 2px dashed var(--accent); }
+.pablo-halo { position: absolute; inset: -16px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%); }
+.pablo.estimada .pablo-halo { inset: -13px; background: color-mix(in srgb, var(--accent) 8%, transparent); border: 2px dashed var(--accent); }
 .pablo-rotulo { position: absolute; right: 22px; top: -18px; text-align: right; font: 700 12px/1.1 var(--font-sans); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); white-space: nowrap;
   text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff; }
 .pablo-rotulo small { display: none; font: italic 500 11.5px var(--font-serif); letter-spacing: 0; text-transform: none; color: var(--ink-2); margin-top: 1px; }
@@ -72,7 +72,7 @@
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
 .nota-carta { margin: 10px 0 0; font-size: var(--fs-sm); }
 .be-legend__line--pendiente { border-top: 2px dotted var(--gold); opacity: .85; }
-.leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: rgba(163, 67, 43, .08); }
+.leyenda-estimada { width: 18px; height: 18px; margin: 0 4px; border-radius: 50%; border: 2px dashed var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
 
 /* Cortina */
 .cortina { position: absolute; inset: 0; z-index: 2; pointer-events: none; --x: 50%; }
@@ -203,7 +203,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .marca-hallazgo { display: inline-flex; align-items: center; gap: 2px; padding: 0; border: 0; background: none; cursor: pointer; }
 .marca-hallazgo span { width: 11px; height: 11px; background: var(--node-hallazgo); border: 2px solid #fff; border-radius: 2px; box-shadow: 0 0 0 1px var(--node-hallazgo); }
 .marca-hallazgo b { font: 700 10px var(--font-sans); color: var(--node-hallazgo); text-shadow: 0 0 3px #fff, 0 0 3px #fff; }
-.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px rgba(98, 116, 58, .3); }
+.marca-hallazgo--sel span { box-shadow: 0 0 0 1px var(--node-hallazgo), 0 0 0 4px color-mix(in srgb, var(--node-hallazgo) 30%, transparent); }
 .viajero { width: 12px; height: 12px; border: 0; padding: 0; background: none; cursor: pointer; }
 .viajero-punto { position: absolute; inset: 0; border-radius: 50%; background: var(--accent); border: 2.5px solid #fff; box-shadow: 0 0 0 1.5px var(--accent); }
 .viajero.estimada .viajero-punto { outline: 2px dashed var(--accent); outline-offset: 4px; }
@@ -250,7 +250,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .nota-nombres .be-tier { margin-right: 4px; }
 .situacion { position: absolute; top: 14px; left: 14px; z-index: 2; width: 180px; height: 119px; padding: 0; overflow: hidden; cursor: crosshair; }
 .situacion img { display: block; width: 100%; height: 100%; opacity: .9; }
-.situacion-recuadro { position: absolute; border: 2px solid var(--accent); background: rgba(163, 67, 43, .12); border-radius: 2px; pointer-events: none; }
+.situacion-recuadro { position: absolute; border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); border-radius: 2px; pointer-events: none; }
 
 /* Cortina horizontal en pantallas estrechas: arriba el mapa antiguo, abajo el actual */
 .cortina--h { --y: 50%; }
