@@ -13,9 +13,9 @@ orden_relato:
   serie: hechos
   orden: 1604
 lugares:
+- listra
 - galacia
 - derbe
-- listra
 - iconio
 personas:
 - pablo
@@ -25,8 +25,8 @@ pasajes:
 - Hch 16:4, 5
 resumen: Yendo de ciudad en ciudad, transmiten a los hermanos lo que decidieron los apóstoles y ancianos de Jerusalén, y las
   congregaciones se afianzan en la fe y crecen cada día.
-razon: 'Hch 16:4, 5 no nombra las ciudades; «Testimonio completo», cap. 15, párr. 13, sitúa la visita en la provincia de Galacia,
-  la de Derbe, Listra e Iconio. Límites: Perspicacia «Timoteo» y estudio 3, párr. 24.'
+razon: 'Hch 16:4, 5 no nombra ciudades; «Testimonio completo», cap. 15, párr. 13, sitúa la visita en la provincia de
+  Galacia. Listra va primero: allí se suma Timoteo (16:1-3). Límites: Perspicacia «Timoteo» y estudio 3, párr. 24.'
 fuentes:
 - bt-15
 - it-galacia
@@ -38,5 +38,9 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
   tipo: biblia
 buscar: decisiones de los apóstoles y ancianos
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El primer lugar pasa de Galacia a Listra: el reparto sigue a la llegada de Timoteo allí (Hch 16:1-4).'
+  fuente: hch-16
 consultado: '2026-09-29'
 estado: verificado

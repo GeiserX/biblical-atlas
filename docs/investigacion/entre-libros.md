@@ -102,6 +102,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Eclesiastés, El Cantar de los Cantares y 1 Reyes
 
 - **Salomón.** El cambio de Proverbios a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios) ya está integrado en `salomon.yaml`. Un cambio posterior a esos campos parte del texto actual, con su `antes`.
+
 ## Para Deuteronomio, Josué y Jueces
 
 - **El monte Guerizim.** Existe `monte-guerizim` desde Jn 4:20 (punto de OpenBible `a30e967`). Dt 11:29, 27:12, Jos 8:33 y Jue 9:7 usan ese id.

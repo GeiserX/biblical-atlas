@@ -11,7 +11,7 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 |---|---|
 | [Lugares](lugares.md) | 322 |
 | [Personas](personas.md) | 746 |
-| [Viajes y paradas](viajes.md) | 8 (96 paradas) |
+| [Viajes y paradas](viajes.md) | 8 (94 paradas) |
 | [Cartas](cartas.md) | 22 |
 | [Eventos](eventos.md) | 610 |
 | [Periodos](periodos.md) | 87 |
