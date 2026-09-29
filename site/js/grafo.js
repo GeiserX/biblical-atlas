@@ -1161,7 +1161,8 @@ function iniciar() {
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
     const tarjeta = $('#grafo-tarjeta');
-    if (abierto() && tarjeta && !tarjeta.hidden && (vg.contains(document.activeElement) || G.fija)) {
+    const enGrafo = vg.contains(document.activeElement) || document.activeElement === document.body;
+    if (abierto() && tarjeta && !tarjeta.hidden && enGrafo) {
       e.stopImmediatePropagation();
       const volver = tarjeta.contains(document.activeElement) ? G.ancla : null;
       ocultarTarjeta();

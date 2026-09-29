@@ -546,6 +546,9 @@ details.grafo-leyenda[open] { padding-bottom: 8px; }
 /* La forma de lo de otras fechas no se atenúa con opacidad (bajaba de 3:1): conserva su borde con el color de su tipo y
    se rellena más claro, con la letra en tinta. */
 .gnodo--pasado:not(.gnodo--incierto) .be-node, .gnodo--futuro:not(.gnodo--incierto) .be-node { --node-ring: inset 0 0 0 2.5px var(--node-color); --node-fill: color-mix(in srgb, var(--node-color) 22%, var(--paper)); color: var(--ink); }
+/* Después de la regla de otras fechas: el anillo de foco y el de la tarjeta fijada ganan también en ellas. */
+.gnodo:is(.gnodo--pasado, .gnodo--futuro):is(:hover, :focus-visible) .be-node { --node-ring: 0 0 0 3px #fff, 0 0 0 5px var(--gold), var(--shadow-2); }
+.gnodo:is(.gnodo--pasado, .gnodo--futuro)[aria-expanded="true"] .be-node { --node-ring: 0 0 0 3px var(--surface), 0 0 0 6px var(--ink); }
 .gnodo--pasado .be-gnode__label, .gnodo--futuro .be-gnode__label { color: var(--ink-2); font-weight: 500; }
 .lista-cuando { margin-left: 6px; font-size: var(--fs-2xs); font-weight: 700; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
 /* Las pestañas de los caminos parten en líneas en vez de desplazarse: su desplazamiento sacaba dos barras dentro de
