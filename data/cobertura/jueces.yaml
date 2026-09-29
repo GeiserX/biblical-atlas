@@ -150,7 +150,7 @@ capitulos:
     estado: completo
     revisado: 2026-09-29
     tramos:
-    - {v: "1", tipo: narracion, nota: "Jehová deja a Israel 40 años bajo los filisteos, un pueblo. Es otra cuenta que los 18 años de Jue 10:8: Sansón empieza a librarlos y el dominio llega a Elí y Samuel. jw.org no lo fecha: sin suceso."}
+    - {v: "1", tipo: narracion, entidades: [evento:los-filisteos-oprimen-a-israel], nota: "Los filisteos son un pueblo. Es otra cuenta que los 18 años de Jue 10:8: Sansón empieza a librarlos y el dominio llega a Elí y Samuel. jw.org no da sus años: el suceso lleva los límites de Sansón."}
     - {v: 2-7, tipo: narracion, entidades: [evento:un-angel-anuncia-a-la-esposa-de-manoah-que-tendra-un-hijo, persona:manoah, lugar:zora, relacion:manoah/vivio_en/zora], nota: "La esposa de Manóah y el ángel no tienen nombre. Los danitas son una tribu. Ella no beberá vino; al niño, nazareo desde el vientre, no se le cortará el pelo (Nú 6)."}
     - {v: 8-23, tipo: narracion, entidades: [evento:el-angel-de-jehova-se-aparece-a-manoah, persona:manoah], nota: "El ángel no dice su nombre, que llama maravilloso. Ofrenda quemada y de grano sobre una roca."}
     - {v: "24", tipo: narracion, entidades: [evento:nacimiento-de-sanson, persona:sanson, persona:manoah, lugar:zora, relacion:sanson/pariente/manoah, relacion:sanson/nacio_en/zora]}

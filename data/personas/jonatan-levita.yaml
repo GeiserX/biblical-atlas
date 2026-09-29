@@ -59,7 +59,7 @@ relaciones:
 - tipo: pariente
   persona: guersom-hijo-de-moises
   relacion: antepasado
-  deducido: false
+  deducido: true
   fuentes:
   - jueces-18
   - it-guersom
@@ -67,6 +67,11 @@ relaciones:
   razon: Jue 18:30 lo llama hijo de Guersom; la nota dice que puede ser «descendiente», y así lo presenta Perspicacia «Guersom»,
     núm. 2.
   estado: verificado
+  historial:
+  - fecha: '2026-09-29'
+    cambio: 'Pasa a deducido: el texto dice «hijo»; que Guersom sea un antepasado es la lectura de la nota de Jue 18:30 y de
+      Perspicacia «Guersom», núm. 2.'
+    fuente: it-guersom
 - tipo: pariente
   persona: moises
   relacion: antepasado
