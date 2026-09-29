@@ -14,25 +14,44 @@ orden_relato:
   orden: 2
 lugares:
 - nazaret
-- judea
 personas:
 - maria-madre-de-jesus
 - gabriel
-- elisabet
 presentes:
 - maria-madre-de-jesus
 - gabriel
 pasajes:
-- Lu 1:26-56
-resumen: En Nazaret, Gabriel dice a María, todavía soltera, que concebirá por espíritu santo un hijo llamado Jesús. Ella viaja
-  a las colinas de Judea y pasa unos tres meses con Elisabet.
-razon: 'A7-A, fila 2: c. 2 a.e.c., Nazaret y Judea. Perspicacia «María» (núm. 1, «La visita un ángel») precisa principios
-  de 2 a.e.c. y la estancia de tres meses.'
+- Lu 1:26-38
+resumen: En Nazaret, Gabriel dice a María, virgen comprometida con José, que concebirá por espíritu santo un hijo llamado
+  Jesús, que heredará el trono de David. Le da como señal el embarazo de su pariente Elisabet.
+razon: 'A7-A, fila 2: c. 2 a.e.c. Perspicacia «María» (núm. 1, «La visita un ángel») precisa principios de 2 a.e.c. La visita
+  a Elisabet, de la misma fila, es el suceso siguiente.'
 fuentes:
 - tnm-a7-a
 - lucas-1
 - it-maria
 - jy-cap-1
 - jy-cap-2
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte: el anuncio en Nazaret (Lu 1:26-38) y la visita a Elisabet en Judea (Lu 1:39-56), que cambian
+    de lugar y de protagonistas; la visita pasa a maria-visita-a-elisabet.'
+  fuente: lucas-1
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte: el anuncio en Nazaret (Lu 1:26-38) y la visita a Elisabet en Judea (Lu 1:39-56), que cambian
+    de lugar y de protagonistas; la visita pasa a maria-visita-a-elisabet.'
+  fuente: lucas-1
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte: el anuncio en Nazaret (Lu 1:26-38) y la visita a Elisabet en Judea (Lu 1:39-56), que cambian
+    de lugar y de protagonistas; la visita pasa a maria-visita-a-elisabet.'
+  fuente: lucas-1
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte: el anuncio en Nazaret (Lu 1:26-38) y la visita a Elisabet en Judea (Lu 1:39-56), que cambian
+    de lugar y de protagonistas; la visita pasa a maria-visita-a-elisabet.'
+  fuente: lucas-1
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte: el anuncio en Nazaret (Lu 1:26-38) y la visita a Elisabet en Judea (Lu 1:39-56), que cambian
+    de lugar y de protagonistas; la visita pasa a maria-visita-a-elisabet.'
+  fuente: lucas-1
+consultado: '2026-09-29'
 estado: verificado

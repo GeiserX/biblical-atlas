@@ -19,16 +19,23 @@ pasajes:
 - Lu 18:31-34
 resumen: Subiendo hacia Jerusalén, Jesús anuncia por tercera vez que lo entregarán, se burlarán de él, lo ejecutarán
   y resucitará al tercer día.
-razon: La tabla A7-F da cuándo y dónde. La tabla dice «probablemente Perea»; jy cap. 98.
+razon: 'A7-F lo pone tras la Dedicación del 32, probablemente en Perea, y A7-G antes de llegar a Betania. El año: jy cap.
+  98, que los hace ir por Perea hacia la Pascua del 33.'
 fuentes:
 - tnm-a7-f
 - mateo-20
 - marcos-10
 - lucas-18
 - jy-cap-98
+- tnm-a7-g
 orden_relato:
   serie: a7
   orden: 89
 buscar: Anuncia su muerte por tercera vez
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón atribuía el año 33 a la tabla A7-F, que solo da «después de la Dedicación del 32». El año sale de jy cap.
+    98; A7-G da el límite de Betania.
+  fuente: lucas-18
+consultado: '2026-09-29'
 estado: verificado

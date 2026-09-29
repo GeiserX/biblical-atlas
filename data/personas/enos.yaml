@@ -11,6 +11,7 @@ fuentes:
 - it-enos
 - genesis-4
 - genesis-5
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Enós»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001372
@@ -30,6 +31,7 @@ relaciones:
   - genesis-4
   - genesis-5
   - it-enos
+  - lucas-3
   razon: 'Gé 4:26: Set tuvo un hijo y lo llamó Enós.'
   estado: verificado
 consultado: '2026-09-29'

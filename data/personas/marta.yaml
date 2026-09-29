@@ -20,6 +20,7 @@ relaciones:
   deducido: false
   fuentes:
   - juan-11
+  - lucas-10
   razon: Jn 11:1 dice que María era su hermana.
   estado: verificado
 - tipo: vivio_en
@@ -44,5 +45,6 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11
   tipo: biblia
 buscar: Marta
-consultado: '2026-09-28'
+perspicacia: '1200002917'
+consultado: '2026-09-29'
 estado: verificado

@@ -14,6 +14,8 @@ fuentes:
 - marcos-2
 - mateo-10
 - marcos-3
+- lucas-5
+- lucas-6
 relaciones:
 - tipo: vivio_en
   lugar: capernaum
@@ -22,6 +24,7 @@ relaciones:
   - marcos-2
   - it-capernaum
   - mateo-9
+  - lucas-5
   razon: Perspicacia «Capernaum» (párr. 7) sitúa en Capernaúm su casa y el banquete (Mr 2:15).
   estado: verificado
 - tipo: acompana
@@ -32,6 +35,8 @@ relaciones:
   - mateo-10
   - marcos-2
   - marcos-3
+  - lucas-5
+  - lucas-6
   razon: Mt 10:3.
   estado: verificado
 - deducido: false
@@ -58,3 +63,6 @@ historial:
   fuente: mateo-10
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- levi-hijo-de-melqui
+- levi-hijo-de-simeon

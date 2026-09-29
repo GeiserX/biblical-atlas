@@ -17,8 +17,8 @@ personas:
 - jesus
 pasajes:
 - Lu 13:1-21
-resumen: Un sábado, en una sinagoga, cura a una mujer que llevaba 18 años encorvada. Compara el Reino con un grano
-  de mostaza y con la levadura.
+resumen: Ante la matanza de galileos por Pilato, llama a arrepentirse y cuenta la higuera sin fruto. Un sábado, en una sinagoga,
+  cura a una mujer encorvada desde hacía 18 años. Compara el Reino con la mostaza y la levadura.
 razon: La tabla A7-E da cuándo y dónde. La tabla dice «probablemente Judea»; jy cap. 79.
 fuentes:
 - tnm-a7-e
@@ -28,5 +28,10 @@ orden_relato:
   serie: a7
   orden: 72
 buscar: Cura a una mujer encorvada
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen solo contaba Lu 13:10-21, aunque el suceso abarca Lu 13:1-21: se añaden el aviso por los galileos y
+    la comparación de la higuera.'
+  fuente: lucas-13
+consultado: '2026-09-29'
 estado: verificado

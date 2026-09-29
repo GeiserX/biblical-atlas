@@ -14,8 +14,10 @@ orden_relato:
   orden: 37
 lugares:
 - galilea
+- nain
 personas:
 - jesus
+- simon-el-fariseo
 pasajes:
 - Lu 7:36-50
 resumen: En casa de Simón el fariseo, una mujer conocida como pecadora moja con lágrimas los pies de Jesús y los unge con
@@ -26,5 +28,5 @@ fuentes:
 - lucas-7
 - it-simon
 - jy-cap-40
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

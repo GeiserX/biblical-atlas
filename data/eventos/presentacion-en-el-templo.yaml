@@ -13,6 +13,7 @@ orden_relato:
   serie: a7
   orden: 6
 lugares:
+- monte-moria
 - jerusalen
 - belen
 personas:
@@ -30,5 +31,10 @@ fuentes:
 - tnm-a7-a
 - lucas-2
 - jy-cap-6
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La presentación y los encuentros con Simeón y Ana pasan en el templo (Lu 2:22-38): el sitio principal es monte-moria,
+    como en los sucesos del templo de Mateo.'
+  fuente: lucas-2
+consultado: '2026-09-29'
 estado: verificado

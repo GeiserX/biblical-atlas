@@ -22,6 +22,7 @@ fuentes:
 - it-selah
 - genesis-10
 - genesis-11
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Selah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003988
@@ -39,5 +40,15 @@ relaciones:
   - genesis-11
   razon: 'Gé 10:24: Arpaksad fue padre de Selá; Gé 11:12, a los 35 años.'
   estado: verificado
+- tipo: pariente
+  persona: cainan-hijo-de-arpaksad
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-3
+  - it-genealogia-de-jesucristo
+  razon: 'Lu 3:35, 36 lo llama hijo de Cainán. Pendiente: el texto hebreo lo da como hijo de Arpaksad, y Perspicacia ve probable
+    un añadido de copista.'
+  estado: pendiente
 consultado: '2026-09-29'
 estado: verificado

@@ -45,7 +45,7 @@ fuentes:
 - it-betania
 orden_relato:
   serie: a7
-  orden: 126
+  orden: 131
 enlaces:
 - titulo: 'Perspicacia: «Ascensión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000402
@@ -55,5 +55,8 @@ historial:
 - fecha: '2026-09-29'
   cambio: Hch 1:13 nombra a Bartolomé entre los once; sale natanael, que tiene ficha aparte con mismo_que pendiente.
   fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: orden 126 pasa a 131, tras las apariciones renumeradas (125-130).
+  fuente: tnm-a7-h
 consultado: '2026-09-29'
 estado: verificado

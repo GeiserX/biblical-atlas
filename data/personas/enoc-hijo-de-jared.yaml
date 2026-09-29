@@ -20,6 +20,7 @@ fuentes:
 - it-enoc
 - si-3
 - genesis-5
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Enoc»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001371
@@ -43,5 +44,6 @@ relaciones:
   fuentes:
   - genesis-5
   - it-enoc
+  - lucas-3
   razon: 'Gé 5:18: Jared tuvo a Enoc cuando contaba 162 años.'
   estado: verificado

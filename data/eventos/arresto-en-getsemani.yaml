@@ -28,10 +28,10 @@ pasajes:
 - Mr 14:26, 32-52
 - Lu 22:39-53
 - Jn 18:1-12
-resumen: Jesús cruza el Cedrón y ora angustiado en Getsemaní. Judas llega con gente armada y lo besa; Pedro hiere
-  a Malco. Jesús se deja arrestar y los apóstoles huyen.
-razon: La tabla A7-H da el día y el lugar. Jn 18:1 nombra el Cedrón; la nota de Mt 26:36 dice que el lugar exacto
-  no se conoce; B12-B.
+resumen: Jesús cruza el Cedrón y ora angustiado en Getsemaní; un ángel lo fortalece. Judas llega con gente armada y lo besa;
+  Pedro hiere a Malco y Jesús lo cura. Se deja arrestar y los apóstoles huyen.
+razon: 'La tabla A7-H da el día y el lugar. Jn 18:1 nombra el Cedrón; la nota de Mt 26:36 dice que el lugar exacto no se conoce;
+  B12-B. Ángel y curación: Lu 22:43, 51.'
 fuentes:
 - tnm-a7-h
 - mateo-26
@@ -47,5 +47,13 @@ orden_relato:
   serie: a7
   orden: 116
 buscar: Agonía en Getsemaní
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen añade dos hechos que solo cuenta Lucas: el ángel que lo fortalece (Lu 22:43) y la curación del esclavo
+    herido (Lu 22:51).'
+  fuente: lucas-22
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora de dónde salen el ángel y la curación que el resumen añade.
+  fuente: lucas-22
+consultado: '2026-09-29'
 estado: verificado

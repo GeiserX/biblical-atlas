@@ -13,8 +13,8 @@ fecha:
     mes: nisan
     dia: 16
 lugares:
-- jerusalen
 - emaus
+- jerusalen
 personas:
 - jesus
 - cleopas
@@ -30,5 +30,13 @@ fuentes:
 - it-emaus
 - jy-cap-135
 buscar: Con dos discípulos camino de Emaús
-consultado: '2026-09-28'
+orden_relato:
+  serie: a7
+  orden: 128
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El encuentro y la cena pasan camino de Emaús y en la aldea (Lu 24:13-31): Emaús es el sitio principal y va primero.
+    Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  fuente: lucas-24
+consultado: '2026-09-29'
 estado: verificado

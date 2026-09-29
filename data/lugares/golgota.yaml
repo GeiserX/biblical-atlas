@@ -7,6 +7,8 @@ nombres:
   nota: Significado del nombre (Jn 19:17).
 - nombre: Calvario
   nota: Del latín calvaria; lo usan algunas traducciones en Lu 23:33.
+- nombre: Calavera
+  nota: Así lo llama Lu 23:33; es la palabra griega que traduce Gólgota.
 tipo: region
 lat: null
 lon: null
@@ -52,6 +54,7 @@ fuentes:
 - openbible-geo
 - mateo-27
 - marcos-15
+- lucas-23
 enlaces:
 - titulo: 'Perspicacia: «Gólgotha»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001738

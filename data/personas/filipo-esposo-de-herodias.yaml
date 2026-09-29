@@ -11,6 +11,7 @@ desambiguacion: Primer esposo de Herodías y padre de Salomé. No es Filipo el t
 no_confundir_con:
 - felipe-apostol
 - felipe-evangelizador
+- filipo-el-tetrarca
 resumen: Hijo de Herodes el Grande y de Mariamne II. Vivía en Roma cuando Herodías, su esposa y madre de su hija Salomé, lo
   dejó para casarse con Herodes Antipas, medio hermano de él.
 razon: Perspicacia «Filipo», núm. 1, y «Herodes», núm. 5; Mt 14:3. La Biblia solo lo nombra de pasada.
@@ -19,6 +20,7 @@ fuentes:
 - it-herodes
 - mateo-14
 - marcos-6
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Filipo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200005013
@@ -35,6 +37,7 @@ relaciones:
   - mateo-14
   - it-herodias
   - marcos-6
+  - lucas-3
   razon: Mt 14:3 llama a Herodías esposa de Filipo; Perspicacia «Herodías» cuenta que se divorció de él.
   estado: verificado
 - tipo: pariente

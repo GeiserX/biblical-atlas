@@ -13,6 +13,7 @@ fuentes:
 - juan-20
 - mateo-10
 - marcos-3
+- lucas-6
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -21,6 +22,7 @@ relaciones:
   fuentes:
   - mateo-10
   - marcos-3
+  - lucas-6
   razon: Mt 10:3.
   estado: verificado
 enlaces:

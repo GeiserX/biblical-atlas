@@ -15,6 +15,7 @@ orden_relato:
   serie: a7
   orden: 1
 lugares:
+- monte-moria
 - jerusalen
 personas:
 - zacarias-padre-de-juan
@@ -32,5 +33,16 @@ fuentes:
 - it-zacarias
 - jy-cap-1
 buscar: Zacarías Gabriel templo
-consultado: '2026-09-28'
+presentes:
+- zacarias-padre-de-juan
+- gabriel
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Elisabet no estaba en el santuario (Lu 1:8-23): solo Zacarías y Gabriel quedan situados en Jerusalén.'
+  fuente: lucas-1
+- fecha: '2026-09-29'
+  cambio: 'El anuncio pasa en el santuario del templo (Lu 1:9-11): el sitio principal es monte-moria, como en los sucesos
+    del templo de Mateo, y Jerusalén queda segunda.'
+  fuente: lucas-1
+consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: en-casa-de-marta-y-maria
+titulo: En casa de Marta y María
+fecha:
+  desde: 32
+  hasta: 32
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detalle:
+    estacion: otoño
+orden_relato:
+  serie: a7
+  orden: 67
+  tras: buen-samaritano-y-casa-de-marta
+lugares:
+- betania
+personas:
+- jesus
+- marta
+- maria-de-betania
+pasajes:
+- Lu 10:38-42
+resumen: Marta recibe a Jesús en su casa. María se queda sentada a sus pies escuchándolo, mientras Marta, atareada, se queja;
+  Jesús le responde con cariño que María ha escogido lo mejor.
+razon: La tabla A7-E pone esta visita en Betania, en el otoño de 32; la nota de Lu 10:38 identifica con Betania la aldea sin
+  nombre del texto. Va tras la parábola, en la misma fila de la tabla.
+fuentes:
+- tnm-a7-e
+- lucas-10
+- jy-cap-74
+- it-betania
+- it-marta
+enlaces:
+- titulo: Lucas 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/10
+  tipo: biblia
+buscar: Marta y María
+consultado: '2026-09-29'
+estado: verificado

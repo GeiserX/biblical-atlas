@@ -37,5 +37,7 @@ relaciones:
   - amos-1
   razon: Am 1:1 lo sitúa entre los ganaderos de Tecoa.
   estado: verificado
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- amos-hijo-de-nahum

@@ -5,7 +5,8 @@ nombres:
 - nombre: Abías
 - nombre: Abiyam
   nota: Así lo llama 1 Reyes 15.
-desambiguacion: Segundo rey de Judá; no es el hijo de Jeroboán que murió joven.
+desambiguacion: Segundo rey de Judá; no es el hijo de Jeroboán que murió joven ni el sacerdote de tiempos de David que dio
+  nombre a una división.
 fecha:
   desde: -979
   hasta: -977
@@ -50,5 +51,11 @@ relaciones:
   razon: Reinó a la muerte de su padre (1Re 14:31).
   estado: verificado
 perspicacia: 1200000041#5
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade el sacerdote Abías de Lu 1:5 (Perspicacia «Abías», núm. 4) entre sus homónimos.
+  fuente: lucas-1
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- abias-de-tiempos-de-david
