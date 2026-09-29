@@ -14,6 +14,7 @@ fuentes:
 - it-zohar
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Zóhar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004759
@@ -30,6 +31,7 @@ relaciones:
   - genesis-46
   - it-zohar
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
   estado: verificado
 - tipo: vivio_en

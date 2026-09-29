@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beker-hijo-de-efrain
+nombre: Béker
+nombres:
+- nombre: Béker
+perspicacia: 1200000595#2
+desambiguacion: Béker de Efraín, cabeza de los bekeritas; no Béker hijo de Benjamín.
+no_confundir_con:
+- beker-hijo-de-benjamin
+resumen: Efraimita, cabeza de la familia de los bekeritas en el censo de las llanuras de Moab.
+razon: Perspicacia «Béker», núm. 2; Nú 26:35.
+fuentes:
+- it-beker
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Béker»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000595
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: efrain
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-beker
+  razon: Nú 26:35 lo cuenta entre los hijos de Efraín.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

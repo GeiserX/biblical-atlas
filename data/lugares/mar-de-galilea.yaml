@@ -9,6 +9,8 @@ nombres:
   nota: Así lo llama Lucas en el siglo I (Lu 5:1).
 - nombre: Mar de Tiberíades
   nota: Así lo llama Juan en el siglo I (Jn 6:1), por la ciudad de su orilla oeste.
+- nombre: Kinéret
+  nota: Así lo nombra Dt 3:17. Era el límite oeste del reino de Og y luego de la tribu de Gad.
 tipo: lago
 lat: 32.818906
 lon: 35.590033
@@ -40,6 +42,9 @@ fuentes:
 - juan-6
 - it-tiberiades
 - juan-21
+- numeros-34
+- deuteronomio-3
+- it-kineret
 enlaces:
 - titulo: 'Perspicacia: «Galilea, Mar de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001599

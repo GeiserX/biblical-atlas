@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: azmon
+nombre: Azmón
+nombres:
+- nombre: Azmón
+  nota: Quizá «osario» (Perspicacia).
+tipo: region
+lat: 30.666667
+lon: 34.366667
+precision: incierto
+coord_fuente: openbible:a8f6a28
+coord_url: https://www.openbible.info/geo/ancient/a8f6a28/azmon
+coord_nota: 'Punto de ʽAin Qoseimeh, segunda identificación de OpenBible: la ʽAin el-Qeseimeh que Perspicacia propone, unos
+  13 km al noroeste de Cadés, con una fuente pequeña. Perspicacia no nombra la primera, ʽAin Muweileh.'
+resumen: Punto del límite sur de la tierra de Israel, después de Hazar-Addar. Desde allí la frontera torcía hacia el torrente
+  de Egipto.
+razon: 'Perspicacia «Azmón»; Nú 34:4, 5. OpenBible: solo el punto.'
+fuentes:
+- it-azmon
+- openbible-geo
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Azmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000497
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

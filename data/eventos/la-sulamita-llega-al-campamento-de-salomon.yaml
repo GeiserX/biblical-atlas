@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-sulamita-llega-al-campamento-de-salomon
+titulo: La sulamita llega sin querer al campamento de Salomón
+fecha:
+  desde: -1036
+  hasta: -1019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 1020 a.e.c. (tiempo narrativo: al principio del reinado de Salomón, antes de escribirse El Cantar)'
+orden_relato:
+  serie: cantar-de-los-cantares
+  orden: 1001
+lugares:
+- sunem
+personas:
+- sulamita
+pasajes:
+- Can 6:11, 12
+resumen: La joven baja al jardín de los nogales para ver si han brotado la vid y los granados, y sin darse cuenta se encuentra
+  junto a los carros del rey. Así la llevan al campamento de Salomón.
+razon: 'Can 6:11, 12 lo cuenta como pasado. Perspicacia lo pone tras el enfado de sus hermanos y antes de la escena del campamento,
+  que «Toda Escritura», libro 22, párr. 5, sitúa junto a Sunem. Año: el del poema.'
+fuentes:
+- cantar-de-los-cantares-6
+- it-cantar-de-los-cantares
+- tnm-tabla
+- it-salomon
+- si-cantar-de-los-cantares
+- it-sunem
+enlaces:
+- titulo: El Cantar de los Cantares 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/6
+  tipo: biblia
+- titulo: 'Perspicacia: «Cantar de los Cantares, El»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazerot
+nombre: Hazerot
+nombres:
+- nombre: Hazerot
+tipo: region
+lat: 28.896944
+lon: 34.421667
+precision: punto
+coord_fuente: openbible:a1b6474
+coord_url: https://www.openbible.info/geo/ancient/a1b6474/hazeroth
+coord_nota: Punto del oasis de ʽAin Khadra, unos 60 km al nordeste del Sinaí tradicional, con el que la mayoría de los eruditos
+  la relaciona. El mapa B3 la marca sin signo de duda.
+resumen: Campamento de Israel tras Quibrot-Hataavá y el último antes de entrar en el desierto de Parán. Allí Míriam enfermó
+  de lepra por hablar contra Moisés y pasó siete días fuera del campamento.
+razon: 'Perspicacia «Hazerot»; Nú 11:35 y 12:1-16. El mapa B3 la sitúa sin duda. OpenBible: solo tomamos el punto.'
+fuentes:
+- it-hazerot
+- tnm-b3
+- openbible-geo
+- numeros-11
+- numeros-12
+- numeros-33
+- deuteronomio-1
+enlaces:
+- titulo: 'Perspicacia: «Hazerot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001934
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zimri-hijo-de-salu
+nombre: Zimrí
+nombres:
+- nombre: Zimrí
+perspicacia: 1200004737#2
+desambiguacion: Zimrí hijo de Salu, el simeonita que murió en Sitim; no el nieto de Judá ni el quinto rey de Israel.
+no_confundir_con:
+- zimri-de-israel
+resumen: Jefe de una casa paterna de Simeón. Metió a la madianita Cozbí en su tienda, a la vista de Moisés y del pueblo, y
+  Finehás los mató a los dos con una lanza.
+razon: Perspicacia «Zimrí», núm. 2; Nú 25:6-8, 14.
+fuentes:
+- it-zimri
+- numeros-25
+enlaces:
+- titulo: 'Perspicacia: «Zimrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004737
+  tipo: perspicacia
+- titulo: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: salu
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-salu
+  razon: Nú 25:14 lo llama hijo de Salu.
+  estado: verificado
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-zimri
+  razon: 'Nú 25:14: jefe de una casa paterna de los simeonitas.'
+  estado: verificado
+- tipo: murio_en
+  lugar: sitim
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-zimri
+  razon: 'Nú 25:1, 8: Israel vivía en Sitim cuando Finehás lo mató en su tienda.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

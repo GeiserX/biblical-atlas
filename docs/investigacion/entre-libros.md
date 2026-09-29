@@ -4,9 +4,14 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para 1 y 2 Samuel
 
+- **Amalec (1Sa 15).** Dt 25:17-19 manda borrar a Amalec por lo de Refidim (`batalla-contra-amalec-en-refidim`); el suceso de Saúl lo pone en `menciona`.
+- **Rabá (2Sa 11:1; 12:26-31).** Es `raba`, con Filadelfia en `nombres`.
 - **David huye de Absalón.** Cuando 2 Samuel cree el suceso (2Sa 15:13-17:22), añade «Sl 3» a sus pasajes y ese suceso al tramo 1-8 de `data/cobertura/salmos.yaml`.
 - **La cueva del Salmo 142.** El encabezamiento remite a 1Sa 22:1 (Adulam) y a 1Sa 24:3 (En-guedí), y Perspicacia «Cueva» no elige. 1 Samuel decide a cuál de los dos sucesos se añade «Sl 142».
 - **Cus el benjaminita.** Existe (`cus-el-benjaminita`) desde el Salmo 7. Perspicacia duda entre la corte de Saúl y Simeí; si 1 o 2 Samuel lo aclara, se añade la relación.
+- **Agag.** `agag-de-tiempos-de-balaam` es la entrada núm. 1 de Perspicacia «Agag». El de 1Sa 15 es la núm. 2: otro id y `no_confundir_con` en las dos.
+- **Jesimón.** `jesimon` es el de Nú 21:20 y 23:28, junto al mar Muerto. El de 1Sa 23:19 y 26:1, cerca de Zif, es otro lugar.
+- **Rehob.** `rehob` (Nú 13:21) no lleva Bet-Rehob en `nombres`, porque Perspicacia solo lo ve probable. 2Sa 10:6, 8 decide.
 
 ## Para 2 Reyes y 2 Crónicas
 
@@ -18,10 +23,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Zorobabel.** Su relación con David es `antepasado` (antes decía «descendiente de David», al revés). Abiud va como antepasado suyo, no como hijo, porque Perspicacia «Abiud» lo deja abierto.
 - **Resá, Sealtiel y Nerí.** `resa` (Lu 3:27) va como descendiente de Zorobabel, con la relación `antepasado`, igual que Abiud. `sealtiel` lleva a `neri` como pariente sin grado, porque Perspicacia solo ve posible que fuera su yerno.
 - **Janai el gadita (1Cr 5:12).** Perspicacia «Janai» (`1200002318`) no es el Janaí de Lu 3:24, que ya existe como `janai-hijo-de-jose` (`1200002320`) con la fuente `it-janai-hijo-de-jose`. El gadita puede llevar `janai`, que queda libre; su propuesta añade `no_confundir_con` en las dos fichas.
-
-## Para Levítico
-
-- **Nadab y Abihú.** Existen `nadab-hijo-de-aaron` y `abihu`, con fecha hasta 1512 a.e.c. Su muerte por el fuego ilegítimo (Le 10:1, 2) la crea Levítico. Los que sacan los cuerpos son `misael-hijo-de-uziel` y `elizafan-hijo-de-uziel` (Le 10:4 escribe Elzafán, que ya está en `nombres`).
 
 ## Para Números
 
@@ -45,16 +46,16 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para 1 Crónicas
 
 - **Nombres que Perspicacia solo da como probables.** Ladán (Libní), Aminadab hijo de Cohat (Izhar) y Ebiasaf (Abiasaf, que tiene artículo propio) llevan ficha aparte y un `mismo_que` con `deducido: true` y `estado: pendiente` hacia `libni-hijo-de-guerson`, `izhar-hijo-de-cohat` y `abiasaf`.
-- **Nun.** Su padre Elisamá y su tribu, Efraín (1Cr 7:20-27), faltan en `nun`.
+- **Nun.** Su padre Elisamá y su tribu, Efraín (1Cr 7:20-27), faltan en `nun`. Elisamá es `elisama-hijo-de-amihud` y su padre, `amihud-hijo-de-ladan`; Ladán no tiene ficha y falta su relación con Amihud (1Cr 7:26).
+- **Jaír y Segub.** `jair-hijo-de-segub` (Nú 32:41) no tiene padre en ficha: 1Cr 2:22 crea `segub` y la relación.
+- **Manasés y Efraín en Números 26.** `asriel`, `semida`, `sutelah-hijo-de-efrain` y `tahan` existen; 1Cr 7:14-20 los reutiliza. La Mahlá de 1Cr 7:18 es otra persona que `mahla-hija-de-zelofehad`, y el Siquem de 1Cr 7:19 es otro que `siquem-hijo-de-galaad`: cada uno lleva `no_confundir_con` en las dos fichas.
+- **Ahiram.** `ahiram` (Nú 26:38) tiene un `mismo_que` pendiente hacia `ehi`; 1Cr 8:1 lo llama Ahará.
 - **Hur.** `hur-hijo-de-caleb` (1Cr 2:19, 20) ya existe, con un `mismo_que` pendiente desde `hur-companero-de-moises`.
+- **Nadab y Abihú.** 1Cr 24:2 añade su pasaje a `muerte-de-nadab-y-abihu`, el suceso que creó Levítico.
 
 ## Para 2 Timoteo
 
 - **Janes y Jambres.** Los magos del faraón (Éx 7:11, 22) no tienen ficha. Si 2Ti 3:8 los crea, el tramo 7:8-13 de Éxodo los puede poner en `menciona`.
-
-## Para Jueces y 1 Crónicas
-
-- **Pua.** La TNM escribe Pua para tres personas (Perspicacia «Puá»): `puva`, el hijo de Isacar, así llamado en 1Cr 7:1; `pua-partera`, de Éx 1:15; y el padre del juez Tolá (Jue 10:1), núm. 3, que aún no tiene ficha y, como hijo de Dodó, lleva `pua-hijo-de-dodo`.
 
 ## Para Jeremías y Ezequiel
 
@@ -79,14 +80,18 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Abías, el de la división sacerdotal.** `abias-de-tiempos-de-david` (clave `1200000041#4`) existe desde Lu 1:5. 1Cr 24:10 usa ese id y añade su pasaje.
 - **Cainán y Selá.** `sela-hijo-de-arpaksad` lleva dos padres: Arpaksad (Gé 11:12) y, con `estado: pendiente`, `cainan-hijo-de-arpaksad` (Lu 3:36), que falta en el texto hebreo. 1Cr 1:18 no cambia ninguno de los dos.
 
-## Para 1 Reyes
+## Para 1 y 2 Reyes
 
 - **Sarepta (1Re 17).** `sarepta` existe desde Lu 4:26. Faltan la relación `elias-profeta` `vivio_en` `sarepta` (1Re 17:9, 10) y el suceso de la viuda; cuando exista, va en `menciona` del tramo Lucas 4:23-27.
-- **La reina de Saba (1Re 10).** Lu 11:31 y Mt 12:42 la llaman reina del sur. El lugar `saba` es el de Job 6:19. Si 1 Reyes crea el reino de Saba (Perspicacia «Seba», núm. 6), se añade a `menciona` de los tramos Lucas 11:29-36 y Mateo 12:38-42.
+- **Elat y Ramot-Galaad.** `elat` (Elot en `nombres`; 1Re 9:26; 2Re 14:22; 16:6) y `ramot-galaad` (1Re 22) ya existen.
+- **La reina de Saba (1Re 10).** Lu 11:31 y Mt 12:42 la llaman reina del sur. El lugar `saba` es el de Job 6:19. El reino de Saba (Perspicacia «Seba», núm. 6) ya existe como `reino-de-saba`, desde Sl 72 y Joe 3:8: 1 Reyes lo usa y lo añade a `menciona` de los tramos Lucas 11:29-36 y Mateo 12:38-42.
+- **Obras y riqueza de Salomón.** Ec 2:4-9 cuenta sus casas, viñas, estanques, siervos, oro y cantores, que narran 1Re 7:1-8, 9:17-19 y 10:14-29. Cuando 1 Reyes cree esos sucesos, añade «Ec 2:4-9» a sus `pasajes` y el suceso al tramo 1-11 de `data/cobertura/eclesiastes.yaml`. El único que ya existe, `flota-de-salomon-a-ofir`, lleva Ec 2:8 desde Eclesiastés.
 
 ## Para 2 Reyes
 
 - **Naamán el sirio (2Re 5).** `naaman-el-sirio` (clave `1200003149#2`) existe desde Lu 4:27. Falta el suceso de su curación; cuando exista, va en `menciona` del tramo Lucas 4:23-27.
+- **Fronteras (también para Ezequiel).** 1Re 8:65 usa `lebo-hamat` y `torrente-de-egipto`; 1Re 9:26, `ezion-gueber`; Ez 47 y 48, `zedad`, `hazar-enan` (Hazar-Enón está en `nombres`) y `lebo-hamat`.
+- **La serpiente de cobre.** 2Re 18:4 (Nehustán) y Jn 3:14 remiten a `moises-hace-la-serpiente-de-cobre`.
 
 ## Para Hechos
 
@@ -100,14 +105,126 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Itiel.** `itiel-oyente-de-agur` (clave `1200002237#1`, Pr 30:1) ya existe. El benjamita de Ne 11:7 es la entrada núm. 2 de Perspicacia «Itiel» (`1200002237#2`): va en ficha aparte, con `no_confundir_con` en las dos.
 - **La Puerta de las Ovejas (Ne 3:1, 32; 12:39).** Desde Jn 5:2 es un nombre de `jerusalen`, con su nota. Se reutiliza, sin ficha propia.
 
-## Para Eclesiastés, El Cantar de los Cantares y 1 Reyes
+## Para 1 Reyes (Salomón)
 
-- **Salomón.** Proverbios deja en `data/_propuestas/proverbios.json` un cambio a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios). Un cambio posterior a esos campos parte del texto que queda tras integrar Proverbios, no del de hoy.
+- **Salomón.** Los cambios de Proverbios, Eclesiastés y El Cantar a su `resumen` y a su `razon` ya están integrados en `salomon.yaml`. Un cambio posterior a esos campos parte del texto actual, con su `antes`. El resumen sigue en 40 palabras.
+- **Congregador.** Eclesiastés añade ese nombre a `salomon` y las relaciones `vivio_en` `jerusalen` y `pariente` `david` con sus capítulos. No hace falta volver a proponerlos.
+- **Abisag.** Es de `sunem`, que existe desde El Cantar. La `sulamita` dice en `no_afirmamos` que no la damos por Abisag: Perspicacia «Sulamita» solo compara 1Re 1:3 con Can 6:13.
+
+## Para Josué, 1 Samuel y 2 Reyes
+
+- **Sunem.** `sunem` existe desde El Cantar (OpenBible ac86af5, con Sulem en `nombres`). Jos 19:18, 1Sa 28:4 y 2Re 4:8 usan ese id.
+
+## Para Números, Deuteronomio y Josué
+
+- **Hesbón.** `hesbon` existe desde Can 7:4, con su puerta Bat-Rabim en `nombres`. Falta en `sehon` la relación `vivio_en` `hesbon` (Nú 21:26; Perspicacia «Hesbón», párr. 2), y los sucesos de su conquista.
+- **Amaná y Senir.** Amaná es un nombre de `antilibano` (Can 4:8); Senir sigue en `monte-hermon`.
+
+## Para Nehemías
+
+- **La torre de David.** Está en `nombres` de `jerusalen` desde Can 4:4, con una nota: Perspicacia «Torre» recoge que quizá sea la torre de la Casa del Rey de Ne 3:25. Si Nehemías apunta esa torre, la relaciona con esta nota.
+
+## Para 1 Reyes y 2 Reyes (desde Oseas)
+
+- **Reyes de Os 1:1.** Oseas usa `uzias`, `jotan`, `acaz`, `ezequias`, `jeroboan-ii` y `jehoas-de-israel`, que ya existían. Deja en `data/_propuestas/oseas.json` las claves de `jehu-de-israel` (`1200002401#3`), `jeroboan-ii` (`1200002431#2`), `jehoas-de-israel` (`1200002373#2`), `hosea-de-israel` (`1200002090#4`) y `salmanasar-v` (`1200003936#2`). Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría. Siguen sin clave `menahem`, `zacarias-de-israel` y `salum-de-israel`.
+- **El fin de la casa de Jehú.** Perspicacia «Jezreel», núm. 4, ve cumplido Os 1:4 cuando Salum mata a Zacarías (2Re 15:8-12). Cuando Reyes cree ese suceso, va en `menciona` del tramo Oseas 1:2-5. `nacimiento-de-jezreel-hijo-de-oseas` acaba en 791 a.e.c. por él.
+- **Sucesos que Oseas nombra y aún no existen.** El tributo de Menahem a Pul (2Re 15:19, 20) y el trato de Hosea con So de Egipto (2Re 17:4; Perspicacia «Asiria» lo une a Os 7:11) van a `menciona` de los tramos Oseas 7:8-12 y 12:1-2. Los becerros de Jeroboán (1Re 12:28-30) van a Oseas 8:1-6, 10:5-8 y 13:1-3.
+- **La caída de Samaria.** `caida-de-samaria` lleva `presentes: [salmanasar-v]`, pero Perspicacia «Salmanasar» dice que la Biblia no le atribuye la toma final (remite a «Sargón»). 2 Reyes 17 decide.
+- **Guilgal cerca de Betel.** `guilgal-cerca-de-betel` (Perspicacia «Guilgal», núm. 2) es la de 2Re 2:1-5 y 4:38-41. Su `razon` cita esos capítulos, así que sus tramos la llevan al cerrarlos.
+- **Salmán.** `salman` (Os 10:14) lleva un `mismo_que` pendiente hacia `salmanasar-v`: Perspicacia «Salmán» solo lo da como probable.
+
+## Para Josué, Jueces y Amós (desde Oseas)
+
+- **Guilgal.** Am 4:4 y 5:5 usan `guilgal-cerca-de-betel`, cuya `razon` los cita. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) no tiene ficha: la crea Josué con otro id, y las dos llevan `no_confundir_con`.
+- **Mizpá de Galaad.** `mizpa-de-galaad` (Perspicacia «Mizpá, Mizpé», núm. 4) cita Jue 11:34 en su `razon`. Jueces 10-11 la usa y añade `jefte` `vivio_en` `mizpa-de-galaad`.
+- **Valles.** `valle-de-acor` (Os 2:15) es el de Acán (Jos 7:24-26; 15:7) y `valle-de-jezreel` (Os 1:5) el de Jos 17:16 y Jue 6:33.
+- **Guibeá.** Os 9:9 y 10:9 aluden al crimen de Jue 19-20 (Perspicacia «Guibeah», núm. 2). Cuando Jueces cree el suceso, va en `menciona` de los tramos Oseas 9:7-9 y 10:9-10.
+
+## Para Números, Deuteronomio y 1 Samuel (desde Oseas)
+
+- **Baal de Peor.** Os 9:10 alude a Nú 25: el suceso va en `menciona` del tramo Oseas 9:10-14.
+- **Admá y Zeboyim.** `destruccion-de-sodoma-y-gomorra` no las lleva en `lugares`, aunque Dt 29:23 las pone con Sodoma y Gomorra. Deuteronomio decide.
+- **Israel pide rey.** Os 13:10, 11 alude a 1Sa 8 (Perspicacia «Oseas, Libro de»): el suceso va en `menciona` del tramo Oseas 13:9-11.
+
+## Para Isaías, Jeremías, Ezequiel y los demás profetas (desde Oseas)
+
+- **Menfis.** `menfis` lleva Nof en `nombres`: Is 19:13, Jer 2:16, 44:1, 46:14 y Ez 30 usan ese id.
+- **Profecías sin escena.** Oseas 4-14 lleva un solo suceso, `juicios-profeticos-contra-efrain-y-juda` (Os 4:1-14:9, la sección de «Toda Escritura»), con fecha narrativa de la obra del profeta y `presentes: []`. Cada tramo lo pone en `entidades`.
+- **«David su rey».** Os 3:5 lleva `persona:david` y `persona:jesus` en `menciona`: el nombre es el del rey histórico, y La Atalaya de 1991 lo aplica a Jesucristo, descendiente de David. Jer 30:9, Ez 34:23, 24 y 37:24, 25 siguen la misma regla.
+- **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `pasajes` de `exodo` y en `entidades`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `menciona`. Amós y Miqueas pueden seguir la misma regla.
+- **La fecha del libro.** `data/libros.yaml` toma sus fechas solo de la tabla de libros (`tnm-tabla`), que pone Oseas «después de 745». Perspicacia «Oseas, Libro de» lo cierra entre 745 y 740: ese límite va en la `razon` de los sucesos, no en `libros.yaml`.
+
+## Para Hechos, Romanos y Abdías (desde Joel)
+
+- **Joel 2:28-32 en Pentecostés.** El tramo Joel 2:28-32 lleva `pentecostes-33` en `menciona`, y Joe 2 no está en sus `pasajes`. Hch 2:16 nombra al profeta: `joel-profeta` (clave `1200002481#9`) va en `menciona` de ese tramo de Hechos. Ro 10:13 aplica Joe 2:32.
+- **Abd 17 y Joe 2:32.** Dicen casi lo mismo, y Perspicacia «Joel, Libro de» no decide quién citó a quién. Abdías lo apunta en su nota sin tocar Joel.
+
+## Para Amós y los demás profetas (desde Joel)
+
+- **Un suceso por libro.** Joel lleva uno solo, `joel-anuncia-el-dia-de-jehova` (Joe 1:1-3:21), anclado en c. 820 a.e.c. (?) y con `presentes: []`, como Oseas 4-14.
+- **Las langostas de Joel 1 y 2.** Manda La Atalaya de abril de 2020 (`w20-ataque-del-norte`): son el ejército babilonio que tomó Jerusalén en 607 a.e.c., y no son las langostas de Ap 9. Los tramos Joel 1:2-4, 1:5-12, 2:1-11 y 2:18-27 llevan `destruccion-de-jerusalen-607` en `menciona`.
+- **Am 1:2 y Joe 3:16.** Son casi iguales; «Toda Escritura» lo usa para fechar Joel antes que Amós.
+- **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `nombres`). Is 66:19, Ez 27:13, Da 8:21, 10:20, 11:2, Zac 9:13 y Hch 20:2 usan ese id cuando hablan de la tierra.
+- **El valle de Jehosafat y el de la Decisión** (Joe 3:2, 12, 14) no llevan ficha: Perspicacia «Jehosafat, Llanura baja de» y La Atalaya de 2007 los llaman lugar simbólico.
+
+## Para Números, Josué y Miqueas (desde Joel)
+
+- **Sitim.** La Sitim del campamento en las llanuras de Moab (Miq 6:5; Jos 2:1; Nú 33:49; 25:1) es Perspicacia «Sitim», núm. 1, y lleva otro id. `valle-de-las-acacias` es el núm. 2 (Joe 3:18), con «Sitim» en `nombres`, sin punto propio y con un candidato en el curso bajo del Cedrón. Cuando exista la ficha del núm. 1, las dos llevan `no_confundir_con`.
+
+## Para 2 Crónicas, Ezequiel y Zacarías (desde Joel)
+
+- **Ríos que salen del templo.** La adoración pura, recuadro 19A (`rr-rios-de-bendiciones`), lee el manantial de Joe 3:18, el río de Ez 47 y las aguas de Zac 14:8 como figura de las bendiciones de Jehová. Ezequiel y Zacarías pueden citar esa fuente.
+- **Sucesos que Joel 3 recuerda.** La victoria de Jehová en días de Jehosafat (2Cr 20) va en `menciona` del tramo Joel 3:1-3. El saqueo de filisteos y árabes (2Cr 21:16, 17) va en el tramo Joel 3:4-6. La caída de Tiro ante Nabucodonosor, y la de la isla ante Alejandro, en el tramo Joel 3:7-8.
+
+## Para Deuteronomio y 2 Reyes (desde Joel)
+
+- **Mar Salado.** Joel añade «Mar oriental» (Joe 2:20) a `nombres` de `mar-salado`. Falta «mar del Arabá» (Dt 4:49; 2Re 14:25; Perspicacia «Mar Salado»).
+
+## Para Josué
+
+- **Pasaje ya puesto.** Jos 13:21, 22 está en `israel-se-venga-de-madian`: va en el tramo de Josué 13.
+- **Ids que ya existen.** `sitim` (Jos 2:1; 3:1), `zur-rey-de-madian`, `evi`, `requem-rey-de-madian`, `hur-rey-de-madian`, `reba` y `balaam` (Jos 13:21, 22), `peor` (Jos 22:17), las hijas de Zelofehad y los hijos de Galaad (Jos 17:1-6), y los lugares de la frontera sur de Nú 34 (`subida-de-acrabim`, `hazar-addar`, `azmon`, `torrente-de-egipto`, `desierto-de-zin`) para Jos 15:1-4.
+- **Reyes de Madián y Balaam sin lugar.** `evi`, `requem-rey-de-madian`, `zur-rey-de-madian`, `hur-rey-de-madian`, `reba` y `balaam` no llevan `vivio_en` ni `murio_en`: el punto de `madian` está al este de ʽAqaba y ellos vivían junto a Moab y Sehón. Si Josué 13 crea el territorio de Rubén o el reino de Sehón (Jos 13:21), les añade esas relaciones.
+- **Anac.** No tiene ficha: Perspicacia «Anaq» lo trata sobre todo como el nombre del pueblo. Jos 15:13 lo llama hijo de Arbá, así que Josué decide. `ahiman-hijo-de-anac`, `sesai` y `talmai-hijo-de-anac` ya existen.
+- **Sumo sacerdocio de Eleazar.** Existe `sumo-sacerdocio-de-aaron` (1512-1474 a.e.c.). El de Eleazar empieza en `muerte-de-aaron`; no se creó porque Perspicacia no fecha su muerte (Jos 24:33).
+- **Territorios de Gad y Rubén.** Nú 32 los reparte como tribus y no creó lugares `gad` ni `ruben`; si Josué 13 los necesita, los crea como `juda` o `manases`.
+- **Ciudades de refugio y de los levitas (Jos 20 y 21).** La ley está en `jehova-manda-dar-ciudades-a-los-levitas` y `jehova-da-la-ley-de-las-ciudades-de-refugio` (Nú 35).
+- **Orden de 1473 a.e.c.** Desde la victoria sobre Og hasta el Jordán, todo va en la serie `numeros`: Números con su capítulo y versículo (21021 a 36001), Deuteronomio con 100000 más (`muerte-de-moises` es 134001) y Josué con 200000 más (`entrada-en-canaan` es 203014). `build.py` ordena las series por su nombre, así que una serie `josue` saldría antes que Números. Los sucesos de Jos 1-5 siguen esa cuenta, que ya está en la sección 6 de `versiculos.md`.
+- **Lugares de Deuteronomio.** `astarot`, `edrei`, `saleca`, `argob`, `guesur` y `maaca` (Jos 12:4, 5; 13:11-13), `bet-peor` (Jos 13:20), `bezer`, `ramot-galaad` y `golan` (Jos 20:8; 21), `araba`, `sefela`, `monte-ebal` y `monte-guerizim` ya existen.
+- **La meseta.** Dt 3:10 y 4:43 la nombran y no tiene ficha: Perspicacia «Meseta» (documento 1200004297) la trata como término. Si Jos 13:9-17 o 20:8 necesitan situarla, Josué la crea.
+- **Ebal y Guerizim (Jos 8:30-35).** Josué crea el suceso, que cumple lo mandado en `moises-manda-escribir-la-ley-en-piedras-en-el-ebal` y `moises-anuncia-las-bendiciones-y-las-maldiciones` (Dt 11:29; 27:1-13): van en `menciona` de su tramo.
+- **Guilgal.** `guilgal-frente-a-guerizim-y-ebal` es el de Dt 11:30, porque Perspicacia no asegura que sea el núm. 2. El Guilgal del campamento (Jos 4:19) lleva otro id.
+- **Rabá.** `raba` es Rabá de los ammonitas («Rabá», núm. 1). La de Judá (Jos 15:60), núm. 2, lleva otro id.
+- **Ciudades de refugio del oeste.** Moisés apartó las del este (`moises-aparta-tres-ciudades-de-refugio`); Dt 19:1-13 está en `jehova-da-la-ley-de-las-ciudades-de-refugio`. Jos 20:7 nombra Hebrón, Siquem y Quedes.
+- **Josué y Moisés.** `jehova-comisiona-a-josue-en-la-tienda-de-reunion` (Dt 31:14-23) y `moises-nombra-a-josue-su-sucesor` (Nú 27; Dt 3:21-28; 34:9) ya existen: Jos 1:1-9 es otro suceso.
+- **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac; el tramo Dt 9:1-6 lo explica como pueblo. Si Josué 15:13, 14 crea la persona, la añade a `menciona` de ese tramo.
+- **Queriyot-hezrón (Jos 15:25).** Perspicacia «Judas», núm. 4, dice que el apelativo Iscariote suele leerse como procedencia de ese lugar y que Judas y su padre probablemente eran de allí. Juan no lo nombra, así que `judas-iscariote` y `simon-iscariote` no llevan relación con él; Josué decide si la añade como deducida y pendiente.
+
+## Para Jueces
+
+- **Pasajes ya puestos.** Jue 11:17 en `edom-niega-el-paso-a-israel` y Jue 11:19-22 en `israel-vence-a-sehon`.
+- **Hobab.** `hobab` lleva a Moisés como cuñado (deducido, Perspicacia «Hobab») y a `jetro` como padre. Jue 4:11 lo llama suegro de Moisés: Jueces lo relee sin cambiar a quién es el suegro.
+- **Hormá y la subida de Acrabim.** Jue 1:17 usa `horma` (Zefat ya está en `nombres`) y Jue 1:36, `subida-de-acrabim`. La Beer de Jue 9:21 es la entrada núm. 2 de Perspicacia y lleva otro id que `beer`.
+- **Abí-ézer y Jaír.** Jue 6 reutiliza `abi-ezer-hijo-de-galaad`. El juez Jaír (Jue 10:3) es otro que `jair-hijo-de-segub`: `no_confundir_con` en las dos fichas.
+- **Pua (también para 1 Crónicas).** La TNM escribe Pua para tres personas (Perspicacia «Puá»): `puva`, el hijo de Isacar, así llamado en 1Cr 7:1; `pua-partera`, de Éx 1:15; y el padre del juez Tolá (Jue 10:1), núm. 3, que aún no tiene ficha y, como hijo de Dodó, lleva `pua-hijo-de-dodo`.
+
+## Para Isaías, Jeremías y Nehemías
+
+- **Ciudades de Moab que ya existen.** `dibon`, `nebo` (la ciudad, no `monte-nebo`), `quiryataim`, `baal-meon`, `aroer`, `jahaz`, `hesbon`, `eleale`, `sibma`, `jazer`, `medeba`, `ar` y `arnon`. Perspicacia solo da como probable que Bet-Diblataim (Jer 48:22) sea `almon-diblataim`.
+- **Dibón de Judá.** El Dibón de Ne 11:25 es la entrada núm. 2 de Perspicacia y lleva otro id que `dibon`.
+- **Edrei de Neftalí.** El de Jos 19:37 es la entrada núm. 2: otro id que `edrei`.
+
+## Para Ester
+
+- **Abiháil.** `abihail-padre-de-zuriel` es la entrada núm. 1 de Perspicacia. El padre de Ester es la núm. 5: otro id y `no_confundir_con` en las dos.
+- **Jaír.** `jair-hijo-de-segub` es la entrada núm. 1 de Perspicacia «Jaír». El padre de Mardoqueo (Est 2:5) es la núm. 3: otro id y `no_confundir_con` en las dos.
+
+## Para las Escrituras Griegas
+
+- **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
 
 - **El monte Guerizim.** Existe `monte-guerizim` desde Jn 4:20 (punto de OpenBible `a30e967`). Dt 11:29, 27:12, Jos 8:33 y Jue 9:7 usan ese id.
 
-## Para Josué
-
-- **Queriyot-hezrón (Jos 15:25).** Perspicacia «Judas», núm. 4, dice que el apelativo Iscariote suele leerse como procedencia de ese lugar y que Judas y su padre probablemente eran de allí. Juan no lo nombra, así que `judas-iscariote` y `simon-iscariote` no llevan relación con él; Josué decide si la añade como deducida y pendiente.

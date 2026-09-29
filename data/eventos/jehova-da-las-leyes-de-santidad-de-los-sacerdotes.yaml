@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-las-leyes-de-santidad-de-los-sacerdotes
+titulo: Jehová da a Moisés las leyes sobre la santidad de los sacerdotes y las ofrendas
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: abib (nisán) de 1512 a.e.c.
+  detalle:
+    mes: nisan
+  nota: Mes aproximado, el más probable. Levítico cabe entre el 1 de nisán (Éx 40:17) y el 1 de ziv (Nú 1:1); solo Le 8-10
+    tienen día conocido.
+orden_relato:
+  serie: levitico
+  orden: 21001
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- aaron
+pasajes:
+- Le 21:1-22:33
+resumen: Para Aarón, sus hijos y el pueblo, Jehová fija por medio de Moisés cuándo puede el sacerdote tocar un cadáver, con
+  quién se casa, qué defectos lo apartan del altar, quién come lo santo y qué animales valen como ofrenda.
+razon: 'Perspicacia «Levítico, Libro de», párr. 2 y 3: el libro cabe en un mes de 1512 a.e.c., entre el montaje del tabernáculo
+  y el censo del segundo mes, en el desierto de Sinaí. La tabla de libros coincide.'
+fuentes:
+- levitico-21
+- levitico-22
+- it-levitico-libro
+- tnm-tabla
+enlaces:
+- titulo: Levítico 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/21
+  tipo: biblia
+- titulo: Levítico 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/22
+  tipo: biblia
+- titulo: 'Perspicacia: «Levítico, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002732
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

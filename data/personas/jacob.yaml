@@ -45,6 +45,9 @@ fuentes:
 - salmos-105
 - lucas-3
 - juan-4
+- deuteronomio-26
+- it-aram
+- oseas-12
 enlaces:
 - titulo: 'Perspicacia: «Jacob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
@@ -136,6 +139,7 @@ relaciones:
   - genesis-46
   - salmos-105
   - it-cam
+  - deuteronomio-26
   razon: 'Perspicacia «Jacob», párr. 38 y 41: llegó a Egipto en 1728 y murió allí en 1711, tras 17 años (Gé 47:28).'
   estado: verificado
 - tipo: murio_en
@@ -240,6 +244,9 @@ relaciones:
   - it-padan
   - genesis-33
   - genesis-35
+  - deuteronomio-26
+  - it-aram
+  - oseas-12
   razon: 'Gé 33:18: Jacob llegaba de Padán-Aram, donde había servido a Labán.'
   estado: verificado
 - tipo: vivio_en

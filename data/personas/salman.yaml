@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salman
+nombre: Salmán
+nombres:
+- nombre: Salmán
+perspicacia: '1200003935'
+resumen: Saqueador de la casa de Arbel al que Oseas pone como ejemplo de una devastación reciente. La Biblia no vuelve a nombrarlo;
+  Perspicacia cree más probable que sea Salmanasar V.
+razon: Perspicacia «Salmán»; Os 10:14.
+no_afirmamos:
+- 'No damos por hecho que sea Salmanasar V: Perspicacia lo presenta como la opinión más extendida, no como algo seguro.'
+fuentes:
+- it-salman
+- oseas-10
+enlaces:
+- titulo: 'Perspicacia: «Salmán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003935
+  tipo: perspicacia
+- titulo: Oseas 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/10
+  tipo: biblia
+relaciones:
+- tipo: mismo_que
+  persona: salmanasar-v
+  deducido: true
+  fuentes:
+  - it-salman
+  razon: Perspicacia «Salmán» (Os 10:14) ve el nombre como forma breve de Salmanasar y señala a Salmanasar V, que invadió
+    Israel cuando Oseas acababa su obra.
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

@@ -86,6 +86,7 @@ Son capturas de maquetas HTML hechas con el [kit](mockups/README.md), con datos 
 | [Pantallas: grafo y contexto](pantallas-grafo-y-contexto.md) | Pantallas 07 a 10. |
 | [Pantallas: búsqueda y estudio](pantallas-busqueda-y-estudio.md) | Pantallas 11 a 15. |
 | [Modelo de datos](modelo-de-datos.md) | Por qué Theographic no basta y nuestro modelo: aristas con fecha, fechas ancladas y narrativas, candidatos de ubicación, cartas con dos extremos y ejemplos YAML. |
+| [Grafo y relaciones: qué proponemos](grafo-y-relaciones.md) | Catorce propuestas medidas sobre `main`: vocabulario cerrado de relaciones, tabla de afirmaciones compilada, capítulo por tramos y notas privadas, con coste y prueba de cada una. |
 | [Fuentes y proyectos](fuentes-y-proyectos.md) | Publicaciones de nivel 1 que enlazamos, términos de uso de jw.org, proyectos parecidos, datos abiertos, geografía antigua, imágenes con licencia y herramientas. |
 | [Kit de maquetas](mockups/README.md) | Cómo crear y renderizar una maqueta: mapas base, proyección, componentes, [fuentes tipográficas](mockups/kit/fonts/) (EB Garamond, Inter y Noto Serif Hebrew, licencia OFL) y [créditos de las fotos](mockups/kit/photos/CREDITS.md). |
 | [Datos de ejemplo](mockups/data/README.md) | Los JSON comprobados que usan las maquetas y el formato de fechas (años astronómicos: 1 a.e.c. = 0). |
@@ -117,7 +118,7 @@ Las respuestas a las preguntas de la primera ronda (permiso, licencia, coordenad
 - **¿Dónde está Pablo el 15 de marzo del 48?** La Biblia da el orden de las paradas, no el día. Hoy el marcador se interpola entre paradas y se dibuja con halo discontinuo, «posición estimada». ¿Es honesto mostrar una posición que nadie afirma, o el marcador debe saltar de parada en parada y quedarse quieto entre fechas ancladas? Es la decisión que más condiciona la animación.
 - **No podemos mostrar el texto bíblico.** La TNM no se puede copiar, así que cada versículo abre en wol.jw.org en otra pestaña, y la lectura «versículo a versículo» se hace con el pasaje en una ventana y el mapa en otra. ¿Pedimos permiso a la organización para incrustar el texto, o diseñamos la lectura a dos ventanas desde el principio, con el mapa siguiendo al capítulo que se lee?
 - **¿Dibujamos fronteras de imperios?** Un polígono por año es caro, discutible y casi nunca lo da jw.org. La alternativa es una «esfera» difuminada con la lista de provincias que jw.org sí nombra, y fronteras solo en los años en que una publicación las describe. ¿Basta con eso para «quién mandaba aquí en tal año»?
-- **¿Para qué dispositivo diseñamos el estudio en familia?** Un portátil en la mesa, una tablet que pasa de mano en mano o el televisor con mando. Cada uno pide tamaños, gestos y navegación distintos, y el modo presentación solo tiene sentido en el tercero.
+- **¿Para qué dispositivo diseñamos el estudio en grupo?** Un portátil en la mesa, una tablet que pasa de mano en mano o el televisor con mando. Cada uno pide tamaños, gestos y navegación distintos, y el modo presentación solo tiene sentido en el tercero.
 - **¿Nombre del proyecto?** El repo es `biblical-earth`. Para el sitio, en español, proponemos «Tierra Bíblica» o «Cada relato en su lugar». Queda por elegir.
 
 ## Siguiente paso

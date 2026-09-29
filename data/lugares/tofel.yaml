@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tofel
+nombre: Tófel
+nombres:
+- nombre: Tófel
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Tafila, al sureste del mar Muerto
+  geometria:
+    tipo: punto
+    lat: 30.8375
+    lon: 35.604167
+  estado: alternativa
+  fuentes:
+  - it-tofel
+  razon: Perspicacia no lo sitúa. Es el sitio que OpenBible pone primero; ninguna publicación de jw.org lo recoge.
+  coord_fuente: openbible:a7ecf6c
+  coord_url: https://www.openbible.info/geo/ancient/a7ecf6c/tophel
+  nota: Primera resolución de la ficha «Tophel» de OpenBible.
+resumen: Lugar que Dt 1:1 nombra entre los que sirven para situar dónde habló Moisés a Israel poco antes de morir. Hoy no
+  se sabe dónde estaba.
+razon: 'Perspicacia «Tófel»; Dt 1:1. Perspicacia no lo sitúa: el punto de OpenBible va solo como candidato.'
+fuentes:
+- it-tofel
+- openbible-geo
+- deuteronomio-1
+enlaces:
+- titulo: 'Perspicacia: «Tófel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004451
+  tipo: perspicacia
+- titulo: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

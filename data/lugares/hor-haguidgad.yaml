@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hor-haguidgad
+nombre: Hor-Haguidgad
+nombres:
+- nombre: Hor-Haguidgad
+- nombre: Gudgoda
+  nota: Nombre que usa Dt 10:7. Perspicacia «Gudgoda» lo da como probablemente el mismo lugar, en un segundo paso de Israel.
+tipo: region
+lat: 30.11424
+lon: 34.71154
+precision: incierto
+coord_fuente: openbible:a5e36e6
+coord_url: https://www.openbible.info/geo/ancient/a5e36e6/hor-haggidgad
+coord_nota: Punto de OpenBible en el uadi Khadakhid, que proponen bastantes eruditos, unos 65 km al nor-noroeste del golfo
+  de ʽAqaba. El mapa B3 lo marca ahí.
+resumen: Campamento de Israel en el desierto, entre Bene-Jaacán y Jotbatá. Su sitio no es seguro.
+razon: 'Perspicacia «Hor-haguidgad» y «Bene-jaaqán»; Nú 33:32, 33. OpenBible: solo el punto.'
+fuentes:
+- it-hor-haguidgad
+- it-bene-jaaqan
+- tnm-b3
+- openbible-geo
+- numeros-33
+- deuteronomio-10
+- it-gudgoda
+enlaces:
+- titulo: 'Perspicacia: «Hor-haguidgad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002076
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La TNM (Dt 10:7) y Perspicacia escriben Gudgoda, sin tilde, y Perspicacia da la identidad con Hor-Haguidgad como
+    probable.
+  fuente: deuteronomio-10
+consultado: '2026-09-29'
+estado: verificado

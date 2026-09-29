@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eleale
+nombre: Elealé
+nombres:
+- nombre: Elealé
+tipo: ciudad
+lat: 31.819308
+lon: 35.828315
+precision: punto
+coord_fuente: openbible:a5ccd34
+coord_url: https://www.openbible.info/geo/ancient/a5ccd34/elealeh
+resumen: Ciudad de la comarca de pastos al este del Jordán, junto a Hesbón, que reconstruyeron los rubenitas. Siglos después
+  era de Moab.
+razon: 'Perspicacia «Elealé»: se suele situar en el-ʽAl, unos 3 km al nordeste de Hesbón; Nú 32:3, 37. OpenBible: solo el
+  punto.'
+fuentes:
+- it-eleale
+- openbible-geo
+- numeros-32
+enlaces:
+- titulo: 'Perspicacia: «Elealé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001285
+  tipo: perspicacia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

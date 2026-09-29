@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-vence-a-sehon
+titulo: Israel vence a Sehón en Jáhaz
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 21021
+lugares:
+- jahaz
+- hesbon
+- arnon
+- rio-jaboc
+- camino-del-rey
+- quedemot
+- aroer
+- galaad
+personas:
+- sehon
+pasajes:
+- Nú 21:21-31
+- Dt 2:26-36
+- Jue 11:19-22
+- Sl 135:10, 11
+- Sl 136:19
+- Dt 2:24, 25
+- Dt 2:37
+- Dt 29:7
+- Dt 31:4
+resumen: Sehón, rey amorreo de Hesbón, niega a Israel el paso por el Camino del Rey y sale a pelear en Jáhaz. Israel lo vence,
+  toma su tierra del Arnón al Jaboc y se asienta en sus ciudades.
+razon: 'Perspicacia «Basán», párr. 5: la conquista al este del Jordán fue hacia 1473 a.e.c.; «Og» pone a Sehón antes. «Sehón»:
+  murió en Jáhaz.'
+fuentes:
+- numeros-21
+- it-sehon
+- it-amorreo
+- it-jahaz
+- it-hesbon
+- it-basan
+- it-og
+- salmos-135
+- salmos-136
+- deuteronomio-2
+- it-quedemot
+- it-aroer
+enlaces:
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

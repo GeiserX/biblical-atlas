@@ -21,6 +21,9 @@ nombres:
 - nombre: Puerta de las Ovejas
   nota: Puerta del norte, cerca del templo, junto al estanque de Betzata (Jn 5:2). Perspicacia ve probable que sea la que
     reconstruyeron los sacerdotes con Nehemías (Ne 3:1) u otra en el mismo sitio.
+- nombre: Torre de David
+  nota: Torre de Can 4:4 de la que colgaban mil escudos. Perspicacia recoge que quizá sea la de la Casa del Rey (Ne 3:25);
+    no es la moderna así llamada, de Herodes.
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -76,6 +79,14 @@ fuentes:
 - juan-10
 - juan-11
 - juan-12
+- cantar-de-los-cantares-3
+- si-cantar-de-los-cantares
+- cantar-de-los-cantares-4
+- it-torre
+- cantar-de-los-cantares-5
+- cantar-de-los-cantares-6
+- joel-2
+- joel-3
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
@@ -91,6 +102,9 @@ enlaces:
   tipo: biblia
 - titulo: 'Perspicacia: «Sión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004740
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Torre»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004459
   tipo: perspicacia
 historial:
 - fecha: '2026-09-29'

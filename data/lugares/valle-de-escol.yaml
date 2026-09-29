@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-escol
+nombre: Valle de Escol
+nombres:
+- nombre: Valle de Escol
+- nombre: Wadi de Escol
+  nota: Otra traducción que da la nota de Nú 13:23.
+tipo: valle
+lat: 31.525087
+lon: 35.10222
+precision: zona
+coord_fuente: openbible:a38ecff
+coord_url: https://www.openbible.info/geo/ancient/a38ecff/valley-of-eshcol
+coord_nota: OpenBible lo sitúa a menos de 5 km de Hebrón y le da el punto de la ciudad. Perspicacia lo pone quizá algo al
+  norte de Hebrón.
+resumen: Valle de torrente cerca de Hebrón donde los espías cortaron un racimo tan grande que lo cargaron dos hombres en una
+  barra. Su nombre significa racimo de uvas.
+razon: 'Perspicacia «Escol», núm. 2; Nú 13:23, 24 y sus notas. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-escol
+- openbible-geo
+- numeros-13
+- numeros-32
+- deuteronomio-1
+enlaces:
+- titulo: 'Perspicacia: «Escol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001423
+  tipo: perspicacia
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

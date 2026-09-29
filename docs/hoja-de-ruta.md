@@ -1,6 +1,6 @@
 # Hoja de ruta
 
-Construimos por rebanadas completas y publicamos cada una cuando está entera. v0, v1 y v2 están hechas, y con ellas lo que antes estaba en «Más adelante». El orden de lo que queda puede cambiar según lo que la familia esté leyendo.
+Construimos por rebanadas completas y publicamos cada una cuando está entera. v0, v1 y v2 están hechas, y con ellas lo que antes estaba en «Más adelante». El orden de lo que queda puede cambiar según lo que se esté leyendo.
 
 ## Lo que hay ahora
 
@@ -61,7 +61,7 @@ Quedan 7 hechos en `pendiente`, cada uno con su motivo (ver [Qué queda](#qué-q
 
 ## La página «Acerca de» y el calendario (hecho)
 
-- **La portada del mapa, sin jerga.** Arriba solo queda lo que una familia necesita. En el mapa, la atribución que piden las licencias, corta y con un enlace «Créditos». Las marcas «Nivel 1» y «N1» pasan a ser un punto lleno (la Biblia o jw.org) o un aro (otra fuente que jw.org ha usado), con el nombre en el texto emergente. «Cronología TNM» pasa a la ayuda de la fecha. Las fuentes y «Por qué lo decimos» siguen en cada ficha.
+- **La portada del mapa, sin jerga.** Arriba solo queda lo que hace falta para leer. En el mapa, la atribución que piden las licencias, corta y con un enlace «Créditos». Las marcas «Nivel 1» y «N1» pasan a ser un punto lleno (la Biblia o jw.org) o un aro (otra fuente que jw.org ha usado), con el nombre en el texto emergente. «Cronología TNM» pasa a la ayuda de la fecha. Las fuentes y «Por qué lo decimos» siguen en cada ficha.
 - **[`acerca.html`](../site/acerca.html).** Qué es el proyecto y qué no es, cómo se lee, cómo tratamos las fuentes (enlazar y no copiar, lo más reciente de jw.org gana, por qué cada dato lleva su razón) y las gracias a quienes ponen los datos y los enlaces: wol.jw.org y jw.org, OpenBible.info, Natural Earth, los datos de elevación, OpenFreeMap, OpenMapTiles, OpenStreetMap, MapLibre y las letras, cada uno con su licencia. Cierra con la licencia GPL-3.0 y cómo proponer una corrección.
 - **Nuestros meses y los hebreos, a la vez.** A escala de meses y de días la línea de tiempo enseña dos filas alineadas: nuestros meses (el calendario gregoriano aplicado hacia atrás, solo para orientar) y los meses hebreos, de luna nueva a luna nueva, con Veadar los años que lo llevan. A escala de días hay además una fila de fiestas. Un selector elige «Ambos», «Nuestros» o «Hebreos», y la fecha de arriba da las dos: «c. 14 de nisán de 33 e.c. · marzo-abril».
 - **Los nombres de los meses cambian con la época.** Antes del exilio la línea dice Abib, Ziv, Etanim y Bul; después, Nisán, Iyar, Tisri y Hesván. Los meses que la Biblia de antes del exilio solo numera van en cursiva, con la nota.
@@ -84,7 +84,7 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 - **GitHub Pages no enruta rutas.** Direcciones y páginas por entidad (B-09, B-13). El `#` ya comparte la vista.
 - **Solo español.** Otros idiomas y el trabajo sin conexión (D-03, D-04, D-06, D-12, D-13).
 - **Necesitan un dato que no tenemos.** La lectura semanal (A-03) pide el programa semanal.
-- **Van después de la presentación.** Juegos y modos para niños y familia (A-06, A-07, A-08, A-10, A-14, A-15, A-17).
+- **Van después de la presentación.** Juegos y modos para niños y para grupos (A-06, A-07, A-08, A-10, A-14, A-15, A-17).
 - **Lo urgente ya está cubierto.** Plegar tramos vacíos (T-21) y la línea vertical en el móvil (T-22), porque el minimapa y la densidad resuelven lo más urgente.
 - **Aplazadas sin otro motivo.** Fichas apiladas y comparación (F-15, F-16), QR (B-14, que añade una dependencia), paleta de órdenes (B-16), búsqueda por rango y región (B-17), presupuesto de carga (D-05, que solo medimos) y D-14, D-15 y D-16.
 - **Falta un campo en el esquema.** Los discursos en su lugar (A-18) necesitan que un suceso diga que es un discurso. Estaba en esta tanda y no se hizo.

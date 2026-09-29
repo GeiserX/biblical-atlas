@@ -11,6 +11,7 @@ fuentes:
 - it-carmi
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Carmí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000894
@@ -27,6 +28,7 @@ relaciones:
   - genesis-46
   - it-carmi
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
   estado: verificado
 - tipo: vivio_en
