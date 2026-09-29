@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahli-hijo-de-merari
+nombre: Mahlí
+nombres:
+- nombre: Mahlí
+perspicacia: 1200002850#1
+desambiguacion: Mahlí hijo de Merarí; no su sobrino, el hijo de Musí, que se llama igual.
+resumen: Levita de la rama de Merarí, su padre, y hermano de Musí. Tuvo por hijos a Eleazar y Quis, y de él toma el nombre
+  la familia levita de los mahlitas.
+razon: Perspicacia «Mahlí», núm. 1; Éx 6:19.
+fuentes:
+- it-mahli
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Mahlí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002850
+  tipo: perspicacia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: merari
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-mahli
+  razon: 'Éx 6:19: hijo de Merarí.'
+  estado: verificado
+- tipo: pariente
+  persona: musi
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-mahli
+  razon: 'Éx 6:19: Musí es el otro hijo de Merarí.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

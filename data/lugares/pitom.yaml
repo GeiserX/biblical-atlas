@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pitom
+nombre: Pitom
+nombres:
+- nombre: Pitom
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos: []
+resumen: Ciudad almacén que los israelitas esclavizados construyeron para el faraón, junto con Raamsés. No se sabe dónde estaba.
+razon: 'Perspicacia «Pitom»: no hay identificación segura, y las que se proponen parten de suponer que Ramsés II fue el opresor,
+  idea que Perspicacia no acepta. Éx 1:11.'
+fuentes:
+- it-pitom
+- exodo-1
+enlaces:
+- titulo: 'Perspicacia: «Pitom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003504
+  tipo: perspicacia
+- titulo: Éxodo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: pendiente

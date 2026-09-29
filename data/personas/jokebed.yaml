@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jokebed
+nombre: Jokébed
+nombres:
+- nombre: Jokébed
+perspicacia: '1200002478'
+resumen: 'Levita, hija de Leví y hermana de Cohat, casada con su sobrino Amram. Madre de Míriam, Aarón y Moisés: escondió
+  al niño, lo dejó en el Nilo en una canasta y después lo crió para la hija del faraón.'
+razon: Perspicacia «Jokébed»; Éx 2:1-10, que no da su nombre, y Éx 6:20. Perspicacia recoge que versiones antiguas la hacen
+  prima de Amram.
+fuentes:
+- it-jokebed
+- exodo-2
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Jokébed»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002478
+  tipo: perspicacia
+- titulo: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  tipo: biblia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: levi-hijo-de-jacob
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-jokebed
+  - exodo-6
+  razon: Éx 2:1 la llama hija de Leví y Éx 6:20 la hace hermana del padre de Amram. Perspicacia «Jokébed» admite que «hija»
+    signifique allí descendiente.
+  estado: verificado
+  relacion: padre
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-jokebed
+  razon: 'Éx 2:1-10: cría a Moisés en Egipto, junto al Nilo.'
+  estado: verificado
+- tipo: pariente
+  persona: cohat
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-jokebed
+  razon: 'Éx 6:20: era hermana del padre de Amram, es decir, de Cohat.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

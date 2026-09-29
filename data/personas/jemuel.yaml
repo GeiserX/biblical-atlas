@@ -11,6 +11,7 @@ razon: Perspicacia «Jemuel»; Gé 46:10.
 fuentes:
 - it-jemuel
 - genesis-46
+- exodo-6
 enlaces:
 - titulo: 'Perspicacia: «Jemuel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002412
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-jemuel
+  - exodo-6
   razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
   estado: verificado
 - tipo: vivio_en
@@ -34,6 +36,46 @@ relaciones:
   fuentes:
   - genesis-46
   razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+- tipo: pariente
+  persona: jamin-hijo-de-simeon
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:15: Jamín es otro de los hijos de Simeón.'
+  estado: verificado
+- tipo: pariente
+  persona: ohad
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:15: Ohad es otro de los hijos de Simeón.'
+  estado: verificado
+- tipo: pariente
+  persona: jakin-hijo-de-simeon
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:15: Jakín es otro de los hijos de Simeón.'
+  estado: verificado
+- tipo: pariente
+  persona: zohar-hijo-de-simeon
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:15: Zóhar es otro de los hijos de Simeón.'
+  estado: verificado
+- tipo: pariente
+  persona: shaul-hijo-de-simeon
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:15: Saúl es otro de los hijos de Simeón, este de una mujer cananea.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

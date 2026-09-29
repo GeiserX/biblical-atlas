@@ -14,7 +14,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Libro | Capítulos completos | Versículos leídos | Porcentaje |
 |---|---|---|---|
 | [Génesis](../../../data/cobertura/genesis.yaml) | 50 de 50 | 1533 de 1533 | 100 % |
-| Éxodo | 0 de 40 | 0 de 1213 | 0 % |
+| [Éxodo](../../../data/cobertura/exodo.yaml) | 40 de 40 | 1213 de 1213 | 100 % |
 | Levítico | 0 de 27 | 0 de 859 | 0 % |
 | Números | 0 de 36 | 0 de 1288 | 0 % |
 | Deuteronomio | 0 de 34 | 0 de 959 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 321 de 1189 | 7793 de 31062 | 25 % |
+| **Total** | 361 de 1189 | 9006 de 31062 | 29 % |
 
 ## Capítulos empezados
 

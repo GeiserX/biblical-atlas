@@ -6,6 +6,8 @@ nombres:
   nota: Significa «prueba». Perspicacia lo escribe Masah.
 - nombre: Meribá
   nota: Significa «riña». Hubo otro Meribá cerca de Cadés, sin el nombre Masá, que es un sitio distinto.
+- nombre: Masah
+  nota: Otra grafía, la de la nota de Éx 17:7 y de Perspicacia. Significa prueba.
 tipo: region
 lat: null
 lon: null
@@ -40,6 +42,8 @@ fuentes:
 - salmos-95
 - salmos-81
 - salmos-105
+- tnm-b3
+- exodo-17
 enlaces:
 - titulo: 'Perspicacia: «Masah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002925
@@ -53,5 +57,9 @@ enlaces:
 - titulo: Salmo 95 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/95
   tipo: biblia
+- titulo: Éxodo 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17
+  tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+coord_nota: OpenBible le da el mismo punto que a Refidim, en Wadi Refayied. Perspicacia solo dice que estaba cerca de Refidim.

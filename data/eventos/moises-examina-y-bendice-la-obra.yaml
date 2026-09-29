@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-examina-y-bendice-la-obra
+titulo: Moisés examina la obra terminada y bendice al pueblo
+fecha:
+  desde: -1512
+  hasta: -1511
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+orden_relato:
+  serie: exodo
+  orden: 39032
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Éx 39:32-43
+resumen: Acabado el trabajo, los israelitas llevan a Moisés la tienda con todo su equipo, los muebles y las prendas sacerdotales.
+  Moisés comprueba que todo se hizo como Jehová mandó y los bendice.
+razon: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. Perspicacia «Moisés».
+fuentes:
+- exodo-39
+- si-3
+- it-moises
+- it-tabernaculo
+enlaces:
+- titulo: Éxodo 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/39
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

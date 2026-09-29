@@ -35,5 +35,9 @@ relaciones:
   - genesis-46
   razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   estado: verificado
+desambiguacion: Puvá hijo de Isacar, al que la TNM llama Pua en 1 Crónicas 7; no Pua, la partera hebrea de Egipto, ni el padre
+  del juez Tolá.
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- pua-partera

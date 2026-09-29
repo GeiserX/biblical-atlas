@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliseba
+nombre: Eliseba
+nombres:
+- nombre: Eliseba
+perspicacia: '1200001320'
+resumen: Hija de Aminadab, de la tribu de Judá, y hermana de Nahsón. Fue esposa de Aarón y madre de Nadab, Abihú, Eleazar
+  e Itamar.
+razon: Perspicacia «Eliseba»; Éx 6:23.
+fuentes:
+- it-eliseba
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Eliseba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001320
+  tipo: perspicacia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aminadab-hijo-de-ram
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-eliseba
+  razon: 'Éx 6:23: hija de Aminadab.'
+  estado: verificado
+- tipo: pariente
+  persona: nahson
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-eliseba
+  razon: 'Éx 6:23: hermana de Nahsón.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

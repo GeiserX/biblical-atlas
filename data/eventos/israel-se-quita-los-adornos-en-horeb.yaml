@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-se-quita-los-adornos-en-horeb
+titulo: Israel se quita los adornos en Horeb
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 33001
+lugares:
+- desierto-de-sinai
+- monte-sinai
+personas:
+- moises
+pasajes:
+- Éx 33:1-6
+resumen: Jehová manda seguir hacia la tierra jurada a Abrahán, Isaac y Jacob con un ángel delante, pero no irá en medio de
+  un pueblo tan terco. El pueblo se pone de luto y deja sus adornos en Horeb.
+razon: 'Perspicacia «Horeb»: el monte de Éx 33:6 es probablemente el Sinaí. 1513 a.e.c.: en las dos estancias de 40 días tras
+  el pacto del tercer mes, o entre ellas (Perspicacia «Moisés» y «Diez Palabras»; estudio 3).'
+fuentes:
+- exodo-33
+- it-horeb
+- si-3
+- it-moises
+- it-diez-palabras
+enlaces:
+- titulo: Éxodo 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/33
+  tipo: biblia
+- titulo: 'Perspicacia: «Horeb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002073
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

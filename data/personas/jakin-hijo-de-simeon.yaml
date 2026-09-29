@@ -10,6 +10,7 @@ razon: Perspicacia «Jakín», núm. 1; Gé 46:10.
 fuentes:
 - it-jakin
 - genesis-46
+- exodo-6
 enlaces:
 - titulo: 'Perspicacia: «Jakín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002276
@@ -25,6 +26,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-jakin
+  - exodo-6
   razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
   estado: verificado
 - tipo: vivio_en

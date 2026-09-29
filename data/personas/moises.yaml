@@ -25,6 +25,37 @@ fuentes:
 - salmos-103
 - salmos-105
 - salmos-106
+- exodo-3
+- exodo-4
+- exodo-5
+- exodo-6
+- exodo-7
+- exodo-8
+- exodo-9
+- exodo-10
+- exodo-11
+- exodo-12
+- exodo-13
+- exodo-14
+- exodo-15
+- exodo-16
+- exodo-17
+- exodo-18
+- exodo-19
+- exodo-20
+- exodo-24
+- exodo-25
+- exodo-30
+- exodo-31
+- exodo-32
+- exodo-33
+- exodo-34
+- exodo-35
+- exodo-36
+- exodo-38
+- exodo-39
+- exodo-40
+- exodo-28
 enlaces:
 - titulo: 'Perspicacia: «Moisés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
@@ -40,6 +71,9 @@ relaciones:
   fuentes:
   - it-moises
   - exodo-6
+  - exodo-4
+  - exodo-7
+  - exodo-28
   razon: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
   estado: verificado
 - tipo: pariente
@@ -65,6 +99,7 @@ relaciones:
   fuentes:
   - it-moises
   - si-3
+  - exodo-2
   razon: 'Perspicacia «Moisés», párr. 2: nació en Egipto en 1593 a.e.c.'
   estado: verificado
 - tipo: vivio_en
@@ -82,8 +117,11 @@ relaciones:
   - si-3
   - it-moises
   - it-madian
-  razon: 'El estudio 3: huye a Madián en 1553 y ve la zarza hacia 1514 a.e.c.; Perspicacia «Moisés», párr. 6: vivió allí
-    cuarenta años.'
+  - exodo-2
+  - exodo-3
+  - exodo-4
+  razon: 'El estudio 3: huye a Madián en 1553 y ve la zarza hacia 1514 a.e.c.; Perspicacia «Moisés», párr. 6: vivió allí cuarenta
+    años.'
   estado: verificado
 - tipo: murio_en
   lugar: monte-nebo
@@ -100,6 +138,61 @@ relaciones:
   - it-moises
   - deuteronomio-34
   razon: 'Perspicacia «Moisés», párr. 30: en 1473 a.e.c. subió al monte Nebo, vio la Tierra Prometida y murió (Dt 34:1-5).'
+  estado: verificado
+- tipo: pariente
+  persona: amram-hijo-de-cohat
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-moises
+  - it-amram
+  - exodo-6
+  razon: 'Éx 2:1, 2: hijo de un levita; Perspicacia «Moisés» y «Amram», núm. 1, lo nombran.'
+  estado: verificado
+- tipo: pariente
+  persona: jokebed
+  relacion: madre
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-moises
+  - it-jokebed
+  - exodo-6
+  razon: 'Éx 2:1, 2: lo dio a luz una hija de Leví; Perspicacia «Moisés» y «Jokébed» la nombran.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-moises
+  - exodo-6
+  - exodo-7
+  razon: 'Éx 2:10, 11: se crió como hijo de la hija del faraón y vivió en Egipto hasta que huyó.'
+  estado: verificado
+- tipo: pariente
+  persona: zipora
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - exodo-2
+  - exodo-4
+  - it-zipora
+  - exodo-18
+  razon: 'Éx 2:21: Reuel lo casó con Ziporá, una de sus hijas.'
+  estado: verificado
+- tipo: pariente
+  persona: jetro
+  relacion: suegro
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-jetro
+  - exodo-3
+  - exodo-4
+  - exodo-18
+  razon: 'Éx 2:21: se casa con la hija de Reuel, que la nota de 2:18 identifica con Jetró.'
   estado: verificado
 perspicacia: '1200003118'
 consultado: '2026-09-29'
