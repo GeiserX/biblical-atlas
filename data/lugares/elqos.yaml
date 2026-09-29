@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elqos
+nombre: Elqós
+nombres:
+- nombre: Elqós
+  nota: Grafía de Perspicacia «Elqosita». La TNM solo trae el gentilicio, «elcosita» (Na 1:1), que dice que Nahúm era de allí.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Beit Jibrin (Bet Guvrin), a unos 6 km al noreste de Lakís
+  geometria:
+    tipo: punto
+    lat: 31.592963
+    lon: 34.898241
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-elqosita
+  - openbible-geo
+  razon: 'Perspicacia «Elqosita»: si Nahúm estaba en Judá al escribir (Na 1:15), Beit Jibrin sería el sitio más probable.'
+  nota: Punto de Tel Maresha, la identificación de OpenBible junto a Beit Jibrin, que no tiene punto propio en su ficha. Es
+    el mismo punto que usa maresa.
+  coord_fuente: openbible:a221d82
+  coord_url: https://www.openbible.info/geo/ancient/a221d82/elkosh
+- nombre: Galilea (El Kauzeh)
+  geometria:
+    tipo: punto
+    lat: 33.12139
+    lon: 35.33833
+  estado: alternativa
+  fuentes:
+  - it-elqosita
+  - openbible-geo
+  razon: Perspicacia «Elqosita» recoge que algunos eruditos lo sitúan en Galilea, sin nombrar un sitio, y prefiere Judá.
+  nota: Primera identificación de OpenBible para Elqós, El Kauzeh, en la Alta Galilea. Perspicacia no nombra ese sitio; solo
+    dice Galilea.
+  coord_fuente: openbible:a221d82
+  coord_url: https://www.openbible.info/geo/ancient/a221d82/elkosh
+resumen: Ciudad o aldea de la que era el profeta Nahúm, llamado elcosita. Su ubicación no se conoce; si era de Judá, Perspicacia
+  la pondría en Beit Jibrin.
+razon: Perspicacia «Elqosita» y «Nahúm», núm. 1; «Toda Escritura», libro 34, párr. 3; Na 1:1, 15. El mapa solo muestra los
+  candidatos.
+no_afirmamos:
+- 'Que Elqós estuviera en Beit Jibrin: Perspicacia lo ve probable solo si Nahúm escribía en Judá, y dice que su sitio exacto
+  sigue sin saberse.'
+fuentes:
+- it-elqosita
+- it-nahum
+- si-nahum
+- openbible-geo
+- nahum-1
+enlaces:
+- titulo: 'Perspicacia: «Elqosita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001327
+  tipo: perspicacia
+- titulo: Nahúm 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

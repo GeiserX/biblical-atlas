@@ -1,0 +1,354 @@
+{
+  "formato": "biblical-earth/propuesta-cobertura/1",
+  "libro": "nahum",
+  "agente": "escritor-nahum",
+  "leido": "2026-09-29",
+  "cobertura": {},
+  "fuentes": {},
+  "cambios": [
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "nahum-profeta",
+      "campo": "perspicacia",
+      "antes": null,
+      "despues": "1200003172#1"
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "nahum-profeta",
+      "campo": "resumen",
+      "antes": "Profeta elqosita que anunció la caída de Nínive. Parece que escribió en Judá, antes de 632 a.e.c.",
+      "despues": "Profeta elcosita, es decir, de Elqós, que anunció la caída de Nínive. Parece que escribió en Judá, antes de 632 a.e.c.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "El gentilicio pasa a la grafía de la TNM, «elcosita» (Na 1:1); «elqosita» es la de Perspicacia.",
+        "fuente": "nahum-1"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nahum-profeta",
+      "campo": "fuentes",
+      "valores": [
+        "it-elqosita",
+        "it-nahum-libro",
+        "si-nahum",
+        "w07-nahum-habacuc-y-sofonias"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nahum-profeta",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Perspicacia: «Elqosita»",
+          "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001327",
+          "tipo": "perspicacia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nahum-profeta",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "vivio_en",
+          "lugar": "elqos",
+          "deducido": false,
+          "fuentes": [
+            "nahum-1",
+            "it-elqosita",
+            "it-nahum"
+          ],
+          "razon": "Na 1:1 lo llama el elcosita; Perspicacia entiende que vivía en Elqós.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "vivio_en",
+          "lugar": "juda",
+          "deducido": true,
+          "fuentes": [
+            "nahum-1",
+            "w07-nahum-habacuc-y-sofonias",
+            "it-nahum",
+            "si-nahum"
+          ],
+          "razon": "La Atalaya de 2007 lo llama profeta de Judá. Perspicacia y «Toda Escritura» solo lo dan como probable, por el mensaje a Judá de Na 1:15.",
+          "estado": "pendiente"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1",
+        "si-nahum",
+        "w07-nahum-habacuc-y-sofonias"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Nahúm 1 (TNM)",
+          "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/1",
+          "tipo": "biblia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "asiria",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "juda",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "basan",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "monte-carmelo",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "libano",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "nabopolasar-funda-dinastia",
+      "campo": "personas",
+      "valores": [
+        "nabopolasar"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nabucodonosor-ii",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "nabopolasar",
+          "relacion": "padre",
+          "deducido": true,
+          "fuentes": [
+            "it-nabucodonosor",
+            "it-medos"
+          ],
+          "razon": "Perspicacia «Nabucodonosor», párr. 1, y «Medos, Media», párr. 12, lo hacen hijo de Nabopolasar; la Biblia no nombra a su padre.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "eventos",
+      "id": "caida-de-ninive",
+      "campo": "razon",
+      "antes": "Perspicacia «Asiria» cita la Crónica de Babilonia para el año 632 a.e.c.; «Veamos “la buena tierra”» y el cuadro del estudio 3 dan el mismo año.",
+      "despues": "Perspicacia «Asiria» y «Nínive»: Nabopolasar, ayudado por el medo Ciaxares, la tomó en su año 14, 632 a.e.c., fecha que repiten «Veamos “la buena tierra”» y el estudio 3. La crecida del Tigris, en La Atalaya.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "Se añaden Nabopolasar y Ciaxares a las personas, y el Tigris a los lugares, porque Perspicacia y La Atalaya de 1989 y 2007 los nombran en la toma de Nínive.",
+        "fuente": "it-ninive"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "caida-de-ninive",
+      "campo": "personas",
+      "valores": [
+        "nabopolasar",
+        "ciaxares"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "caida-de-ninive",
+      "campo": "lugares",
+      "valores": [
+        "rio-tigris"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "caida-de-ninive",
+      "campo": "fuentes",
+      "valores": [
+        "it-ninive",
+        "it-medos",
+        "si-nahum",
+        "w07-nahum-habacuc-y-sofonias",
+        "w89-salvacion-venganza"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "caida-de-ninive",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Perspicacia: «Nínive»",
+          "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003261",
+          "tipo": "perspicacia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-2"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Nahúm 2 (TNM)",
+          "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/2",
+          "tipo": "biblia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "ninive",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Nahúm 3 (TNM)",
+          "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/3",
+          "tipo": "biblia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "rio-nilo",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "etiopia",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "egipto",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "libia",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "asiria",
+      "campo": "fuentes",
+      "valores": [
+        "nahum-3",
+        "it-medos"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nabucodonosor-ii",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "sucede_a",
+          "persona": "nabopolasar",
+          "deducido": true,
+          "fuentes": [
+            "it-nabucodonosor"
+          ],
+          "razon": "Perspicacia «Nabucodonosor», párr. 1 y 3: segundo rey neobabilonio; al saber que su padre había muerto regresó a Babilonia y ocupó el trono.",
+          "estado": "verificado"
+        }
+      ]
+    }
+  ],
+  "preguntas": []
+}

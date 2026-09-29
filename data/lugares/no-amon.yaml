@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: no-amon
+nombre: No-Amón
+nombres:
+- nombre: No-Amón
+- nombre: 'No'
+  nota: Forma breve de Jer 46:25 y Ez 30:14, 15, según Perspicacia «No, No-amón».
+- nombre: Tebas
+  nota: Nombre griego, el que se usa hoy; lo da la nota de Na 3:8.
+tipo: ciudad
+lat: 25.720556
+lon: 32.610278
+precision: punto
+coord_fuente: openbible:a9674fc
+coord_url: https://www.openbible.info/geo/ancient/a9674fc/thebes
+resumen: Antigua capital de Egipto a los dos lados del Alto Nilo, unos 530 km al sur de El Cairo, y centro del culto a Amón.
+  El asirio Asurbanipal la saqueó en el siglo VII a.e.c.
+razon: 'Perspicacia «No, No-amón», párr. 1, 4 y 5, y «Amón»; Na 3:8-10. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-no-amon
+- it-amon
+- openbible-geo
+- nahum-3
+enlaces:
+- titulo: 'Perspicacia: «No, No-amón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003264
+  tipo: perspicacia
+- titulo: Nahúm 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

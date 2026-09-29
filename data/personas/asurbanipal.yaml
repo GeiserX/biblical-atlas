@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asurbanipal
+nombre: Asurbanipal
+nombres:
+- nombre: Asurbanipal
+perspicacia: '1200000430'
+fecha:
+  desde: -715
+  hasta: -661
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: contemporáneo de Manasés (716-662 a.e.c.)
+resumen: 'Rey de Asiria, hijo de Esar-Hadón y nieto de Senaquerib, contemporáneo de Manasés. Con él el imperio alcanzó su
+  mayor extensión: sometió Egipto y saqueó Tebas. Reunió en Nínive una gran biblioteca.'
+razon: 'Perspicacia «Asnapar», párr. 2 a 4; «Asiria», apartado «Asurbanipal»; «No, No-amón», párr. 5; Na 3:8-10. La clave
+  es la entrada «Asurbanipal», que remite a «Asnapar»: esa queda para el Asnapar de Esd 4:10.'
+no_afirmamos:
+- 'Que sea sin duda el Asnapar de Esd 4:10: Perspicacia lo ve muy probable, no seguro.'
+fuentes:
+- it-asurbanipal
+- it-asnapar
+- it-asiria
+- it-no-amon
+- nahum-3
+enlaces:
+- titulo: 'Perspicacia: «Asurbanipal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000430
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Asnapar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000404
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: senaquerib
+  relacion: abuelo
+  deducido: true
+  fuentes:
+  - it-asnapar
+  razon: Perspicacia «Asnapar», párr. 2, lo hace hijo de Esar-Hadón y nieto de Senaquerib.
+  estado: verificado
+- tipo: vivio_en
+  lugar: ninive
+  deducido: true
+  fuentes:
+  - it-asnapar
+  - it-ninive
+  razon: En Nínive estaban su palacio y su biblioteca (Perspicacia «Nínive», párr. 2, y «Asnapar», párr. 4).
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

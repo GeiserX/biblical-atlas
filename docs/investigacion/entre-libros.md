@@ -316,3 +316,19 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Claves de Omrí y Acab.** `data/_propuestas/miqueas.json` pone a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
 - **Tierra de Nemrod.** Está en `nombres` de `asiria` (Miq 5:6). El tramo Miqueas 5:5-6 no lleva `persona:nemrod`: su nombre designa la tierra.
 
+## Para Sofonías (desde Nahúm)
+
+- **La caída de Nínive.** Nahúm la anuncia y no la narra, así que la pone en `menciona` de sus tramos, como Miqueas y Joel hacen con los sucesos que profetizan, y no toca sus `pasajes`, que siguen siendo «Na 3:1-7» y «Sof 2:13». Sofonías hace lo mismo con Sof 2:13-15. `data/_propuestas/nahum.json` le añade `nabopolasar`, `ciaxares` y `rio-tigris`.
+- **Fuente compartida.** `w07-nahum-habacuc-y-sofonias` (La Atalaya del 15 de noviembre de 2007) ya existe en `data/fuentes/cobertura-nahum.yaml`: Habacuc y Sofonías usan ese id.
+
+## Para 2 Reyes, 2 Crónicas y Esdras (desde Nahúm)
+
+- **Asurbanipal y Asnapar.** `asurbanipal` (clave `1200000430`) existe desde Na 3:8-10. Esa clave es a propósito la entrada «Asurbanipal» de Perspicacia, que solo remite a «Asnapar»: así la del artículo, `1200000404`, queda libre para `asnapar`. Perspicacia «Asnapar» solo ve muy probable que sea el Asnapar de Esd 4:10, así que Esdras crea `asnapar` (`1200000404`) con `mismo_que` `asurbanipal`, `deducido: true` y `estado: pendiente`.
+- **Esar-Hadón.** No tiene ficha. Quien la cree (2Re 19:37; Esd 4:2) añade a `asurbanipal` la relación `pariente` `esar-hadon` (padre), con Perspicacia «Asnapar», párr. 2. `asurbanipal` ya lleva `senaquerib` como abuelo, deducido.
+- **Nabopolasar y Ciaxares.** `nabopolasar` y `ciaxares` existen, con `perspicacia: null` porque Perspicacia no les dedica artículo. `data/_propuestas/nahum.json` pone a `nabucodonosor-ii` las relaciones `pariente` `nabopolasar` (padre) y `sucede_a` `nabopolasar`, y añade `nabopolasar` a `nabopolasar-funda-dinastia`. 2 Reyes, Jeremías y Daniel reutilizan esos ids.
+
+## Para Isaías, Jeremías y Ezequiel (desde Nahúm)
+
+- **No-Amón.** `no-amon` existe (Tebas, OpenBible a9674fc), con No y Tebas en `nombres`: Jer 46:25 y Ez 30:14-16 usan ese id.
+- **Put como tierra.** `put` existe también como lugar (el pueblo y su tierra; la persona `put` es el hijo de Cam), con precisión incierta en el punto de Libia y un `no_afirmamos` porque Na 3:9 separa Put de los libios. Is 66:19, Jer 46:9 y Ez 27:10, 30:5 y 38:5 usan `lugar:put`, sin `persona:put`.
+- **Elqós.** `elqos` existe sin punto (Beit Jibrin favorecido; Galilea como alternativa, en el punto de El Kauzeh de OpenBible). La TNM solo da el gentilicio «elcosita»; Elqós es la única grafía del lugar en jw.org.
