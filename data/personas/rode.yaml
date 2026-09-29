@@ -20,11 +20,23 @@ fuentes:
 relaciones:
 - tipo: vivio_en
   lugar: jerusalen
-  deducido: false
+  deducido: true
   fuentes:
   - it-rode
-  razon: Perspicacia la pone en la congregación de Jerusalén.
+  - hechos-12
+  razon: Hch 12:12, 13 la pone en la casa de María sin nombrar la ciudad; Perspicacia «Rode» la sitúa en la congregación de
+    Jerusalén.
   estado: verificado
+- tipo: acompana
+  persona: maria-madre-de-juan-marcos
+  relacion: sirvienta
+  relacion_inversa: señora
+  deducido: true
+  fuentes:
+  - it-rode
+  - hechos-12
+  razon: Perspicacia «Rode» la cree posiblemente sirvienta de la casa de María; Hch 12:12, 13 la pone a la puerta de esa casa.
+  estado: pendiente
 enlaces:
 - titulo: 'Perspicacia: «Rode»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003725
@@ -32,5 +44,10 @@ enlaces:
 - titulo: Hechos 12 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200003725'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La relación con Jerusalén pasa a deducida: Hechos 12 no nombra la ciudad y es Perspicacia quien la pone allí.'
+  fuente: it-rode
+consultado: '2026-09-29'
 estado: verificado

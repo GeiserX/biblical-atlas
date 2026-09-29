@@ -14,6 +14,9 @@ orden_relato:
   orden: 1119
 lugares:
 - antioquia-de-siria
+- fenicia
+- chipre
+- jerusalen
 personas:
 - bernabe
 pasajes:
@@ -26,5 +29,5 @@ fuentes:
 - hechos-11
 nota: Sin año en las fuentes; el tramo sale del orden del relato entre dos sucesos fechados.
 buscar: Antioquía Bernabé
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

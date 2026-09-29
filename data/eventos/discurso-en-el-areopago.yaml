@@ -14,6 +14,7 @@ orden_relato:
   orden: 1722
 lugares:
 - atenas
+- areopago
 personas:
 - pablo
 - dionisio
@@ -29,6 +30,8 @@ fuentes:
 - nota-hechos-17
 - it-dionisio
 - hch-17
+- it-areopago
+- it-atenas
 buscar: Pablo Areópago
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

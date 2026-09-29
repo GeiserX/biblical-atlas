@@ -14,10 +14,11 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 1037-998 a.e.c.
-resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y escribió Eclesiastés y la
-  mayor parte de Proverbios. Ya anciano, sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.
+resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y escribió El Cantar de los
+  Cantares, Eclesiastés y casi todo Proverbios. Ya anciano, sus esposas extranjeras lo volvieron idólatra; muerto él, el reino
+  se dividió.
 razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31, y apartado «Se aparta de la justicia»; Perspicacia «Proverbios, Libro
-  de» y «Eclesiastés, Libro de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1; Ec 1:1.
+  de», «Eclesiastés, Libro de» y «Cantar de los Cantares, El»; 1Re 6:1 y 11:4-13, 42; Pr 1:1; Ec 1:1; Can 1:1.
 fuentes:
 - it-salomon
 - 1-reyes-6
@@ -30,11 +31,20 @@ fuentes:
 - proverbios-10
 - it-proverbios-libro
 - proverbios-25
+- hechos-7
 - eclesiastes-1
 - it-eclesiastes-libro
 - si-eclesiastes
 - eclesiastes-2
 - eclesiastes-12
+- hechos-7
+- cantar-de-los-cantares-1
+- it-cantar-de-los-cantares
+- si-cantar-de-los-cantares
+- cantar-de-los-cantares-3
+- cantar-de-los-cantares-6
+- cantar-de-los-cantares-7
+- cantar-de-los-cantares-8
 enlaces:
 - titulo: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -85,6 +95,8 @@ relaciones:
   - si-eclesiastes
   - 1-reyes-11
   - eclesiastes-2
+  - cantar-de-los-cantares-3
+  - si-cantar-de-los-cantares
   razon: 'Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia
     «Eclesiastés, Libro de» dice que es Salomón.'
   estado: verificado
@@ -112,5 +124,12 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón cita Ec 1:1 y el artículo de Perspicacia que le atribuye el libro de Eclesiastés.
   fuente: it-eclesiastes-libro
+- fecha: '2026-09-29'
+  cambio: El resumen añade que escribió El Cantar de los Cantares (Can 1:1; Perspicacia «Salomón», apartado «Se aparta de
+    la justicia»). Para no pasar de 40 palabras se abrevian Proverbios, la idolatría y la división.
+  fuente: cantar-de-los-cantares-1
+- fecha: '2026-09-29'
+  cambio: La razón cita Can 1:1 y el artículo de Perspicacia que le atribuye El Cantar de los Cantares.
+  fuente: it-cantar-de-los-cantares
 consultado: '2026-09-29'
 estado: verificado

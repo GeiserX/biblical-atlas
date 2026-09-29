@@ -6,7 +6,7 @@ fecha:
   hasta: 36
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: 36 e.c. (poco después de la visita a Cornelio)
 orden_relato:
@@ -20,11 +20,21 @@ pasajes:
 - Hch 11:1-18
 resumen: Algunos que insistían en la circuncisión critican a Pedro por comer con incircuncisos. Él les cuenta la
   visión y lo sucedido en Cesarea; se callan y glorifican a Dios.
-razon: Perspicacia «Pedro» (párr. 19) y «Cornelio» (párr. 5).
+razon: Perspicacia «Pedro» (párr. 19) y «Cornelio» (párr. 5). El estudio 3 (párr. 19) cita Hch 11:1 junto a la conversión
+  de Cornelio, en 36.
 fuentes:
 - it-pedro
 - it-cornelio
 - hechos-11
+- si-3
 buscar: Pedro explica en Jerusalén Cornelio
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa de un solo año. El estudio 3 (párr. 19) cita Hch 11:1 junto a la conversión de Cornelio, en 36: la
+    fecha es anclada.'
+  fuente: si-3
+- fecha: '2026-09-29'
+  cambio: La razón nombra la fuente del año.
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

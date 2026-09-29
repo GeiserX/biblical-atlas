@@ -10,6 +10,7 @@ desambiguacion: El apóstol Simón al que se llama «el cananita»; no es Simón
 no_confundir_con:
 - pedro
 - simon-hijo-de-jose
+- simon-iscariote
 resumen: Apóstol distinguido de Simón Pedro con el apelativo de «cananita». Puede indicar que fue de los celotes o solo que
   era celoso en sentido religioso.
 razon: Perspicacia «Simón» (núm. 3); Mt 10:4 y Lu 6:15.
@@ -18,6 +19,7 @@ fuentes:
 - mateo-10
 - marcos-3
 - lucas-6
+- hechos-1
 relaciones:
 - tipo: acompana
   persona: jesus

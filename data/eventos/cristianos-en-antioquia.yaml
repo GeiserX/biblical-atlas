@@ -13,8 +13,8 @@ orden_relato:
   serie: hechos
   orden: 1125
 lugares:
-- tarso
 - antioquia-de-siria
+- tarso
 personas:
 - pablo
 - bernabe
@@ -30,5 +30,10 @@ fuentes:
 - it-siria
 - hechos-11
 buscar: discípulos llamados cristianos Antioquía
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Antioquía pasa a ser el primer lugar: allí trabajan un año y nace el nombre de cristianos; Tarso solo es donde
+    Bernabé busca a Saulo (Hch 11:25, 26).'
+  fuente: hechos-11
+consultado: '2026-09-29'
 estado: verificado

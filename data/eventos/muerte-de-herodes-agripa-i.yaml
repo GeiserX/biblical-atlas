@@ -14,6 +14,8 @@ orden_relato:
   orden: 1220
 lugares:
 - cesarea
+- tiro
+- sidon
 personas:
 - herodes-agripa-i
 - blasto
@@ -28,5 +30,5 @@ fuentes:
 - it-blasto
 - hechos-12
 buscar: muerte de Herodes Agripa
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

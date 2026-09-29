@@ -12,10 +12,11 @@ fuentes:
 - it-bartolome
 - juan-1
 - juan-21
+- juan-2
 relaciones:
 - tipo: nacio_en
   lugar: cana
-  deducido: false
+  deducido: true
   fuentes:
   - juan-21
   - it-cana
@@ -28,7 +29,17 @@ relaciones:
   fuentes:
   - juan-1
   - it-natanael
+  - juan-21
   razon: 'Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.'
+  estado: verificado
+- tipo: acompana
+  persona: pedro
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - juan-21
+  - it-natanael
+  razon: 'Jn 21:2, 3: sale a pescar con Pedro; Perspicacia «Natanael», párr. 3, dice que se quedó en la barca.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Natanael»'
@@ -55,5 +66,9 @@ historial:
   cambio: La relación «apóstol de» (Mt 10:3) pasa a Bartolomé; aquí queda la de discípulo, con Jn 1:45-51. Van en dos fichas
     con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
   fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: 'La relación nacio_en con Caná pasa a deducido: Jn 21:2 solo dice que era de Caná; el nacimiento allí lo afirma
+    Perspicacia «Caná».'
+  fuente: juan-21
 consultado: '2026-09-29'
 estado: verificado

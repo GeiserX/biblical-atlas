@@ -20,6 +20,7 @@ fuentes:
 - 2-reyes-9
 - 2-reyes-10
 - tnm-a6-a
+- oseas-1
 enlaces:
 - titulo: 'Perspicacia: «Jehú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
@@ -40,5 +41,6 @@ historial:
 - fecha: '2026-09-28'
   cambio: Perspicacia «Jehú» daba c. 904-877 a.e.c.; A6-A, más reciente, da c. 905-876.
   fuente: tnm-a6-a
-consultado: '2026-09-28'
+perspicacia: 1200002401#3
+consultado: '2026-09-29'
 estado: verificado

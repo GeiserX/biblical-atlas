@@ -5,12 +5,12 @@ nombres:
 - nombre: Gayo
 fecha:
   desde: 55
-  hasta: 56
-  precision: rango
+  hasta: 55
+  precision: año
   aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: c. 55-56 e.c.
+  texto: c. 55 e.c.
 desambiguacion: El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el
   de Corinto ni el de 3 Juan.
 no_confundir_con:
@@ -18,8 +18,8 @@ no_confundir_con:
 - gayo-de-3-juan
 resumen: Macedonio que acompañaba a Pablo en el tercer viaje. La multitud lo arrastró al teatro de Éfeso junto con
   Aristarco.
-razon: Perspicacia «Gayo», núm. 1 y 2; Hch 19:29 y 20:4. Motín de Éfeso en 55, poco antes de que Pablo saliera de allí, y
-  viaje de 56 (estudio 3, párr. 26).
+razon: Perspicacia «Gayo», núm. 1; Hch 19:29. Motín de Éfeso hacia 55, poco antes de que Pablo saliera de allí (estudio 3,
+  párr. 26).
 fuentes:
 - it-gayo
 - hch-19
@@ -31,7 +31,16 @@ enlaces:
 - titulo: Hechos 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200001592#1
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de c. 55-56 a c. 55: el viaje de 56 (Hch 20:4) es del Gayo de Derbe, núm. 2 de Perspicacia «Gayo», que ahora
+    tiene ficha propia.'
+  fuente: hch-20
+- fecha: '2026-09-29'
+  cambio: 'Deja de citar Hch 20:4 como suyo: ese Gayo es el de Derbe (Perspicacia «Gayo», núm. 2), que solo quizá sea el mismo.'
+  fuente: hch-20
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: acompana
@@ -68,4 +77,12 @@ relaciones:
   - si-3
   razon: Los dos son arrastrados juntos al teatro (Hch 19:29). Poco antes de que Pablo deje Éfeso, a principios de 55 (estudio
     3, párr. 26).
+  estado: verificado
+- tipo: vivio_en
+  lugar: macedonia
+  deducido: false
+  fuentes:
+  - hch-19
+  - it-gayo
+  razon: Hch 19:29 lo llama macedonio, igual que Perspicacia «Gayo», núm. 1.
   estado: verificado

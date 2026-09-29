@@ -11,6 +11,7 @@ no_confundir_con:
 - maria-de-betania
 - maria-esposa-de-clopas
 - maria-madre-de-juan-marcos
+- maria-de-roma
 resumen: Madre de Jesús, descendiente de David, de la tribu de Judá. Vivía en Nazaret, comprometida con José, cuando Gabriel
   le anunció el nacimiento. Pariente de Elisabet, siguió siendo discípula fiel tras la ascensión de Jesús.
 razon: 'Perspicacia «María» (núm. 1: párr. 4, 6, 7 y 18) da su linaje, el anuncio, el parentesco con Elisabet y su última
@@ -26,6 +27,10 @@ fuentes:
 - lucas-2
 - lucas-3
 - lucas-8
+- juan-2
+- juan-19
+- hechos-1
+- bt-2
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria
@@ -97,6 +102,15 @@ relaciones:
   - lucas-3
   - it-heli
   razon: 'Perspicacia «Helí» y la nota de Lu 3:23: Lucas sigue la línea de María, y Helí era su padre.'
+  estado: verificado
+- tipo: acompana
+  persona: juan-apostol
+  relacion: cuidada por
+  relacion_inversa: cuida a
+  deducido: true
+  fuentes:
+  - juan-19
+  razon: 'Jn 19:26, 27: Jesús la confía al discípulo que amaba, que la acoge en su casa; la nota del v. 27 dice que era Juan.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «María»'

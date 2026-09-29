@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pirro
+nombre: Pirro
+nombres:
+- nombre: Pirro
+perspicacia: '1200003596'
+resumen: Hombre de Berea, padre de Sópater, el compañero que fue con Pablo por Macedonia en la vuelta del tercer viaje.
+razon: Perspicacia «Pirro»; Hch 20:4.
+fuentes:
+- it-pirro
+- hch-20
+enlaces:
+- titulo: 'Perspicacia: «Pirro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003596
+  tipo: perspicacia
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: berea
+  deducido: false
+  fuentes:
+  - hch-20
+  - it-pirro
+  razon: Hch 20:4 lo nombra con Berea y Perspicacia lo llama bereano.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -18,6 +18,7 @@ fuentes:
 - it-crispo
 - hch-18
 - si-3
+- 1-corintios-1
 enlaces:
 - titulo: 'Perspicacia: «Crispo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001075
@@ -25,7 +26,8 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001075'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -34,5 +36,6 @@ relaciones:
   fuentes:
   - it-crispo
   - hch-18
+  - 1-corintios-1
   razon: Presidía la sinagoga de Corinto (Hch 18:8).
   estado: verificado

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: despedida-en-tiro
+titulo: Siete días con los discípulos de Tiro
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 56
+orden_relato:
+  serie: hechos
+  orden: 2103
+lugares:
+- tiro
+personas:
+- pablo
+- lucas
+pasajes:
+- Hch 21:3-6
+resumen: El barco descarga en Tiro y el grupo pasa una semana con los discípulos, que por el espíritu le ruegan a Pablo que
+  no vaya a Jerusalén. Todos, con mujeres y niños, los despiden orando en la playa.
+razon: El estudio 3 (párr. 26) pone a Pablo en Filipos en la Pascua de 56 y en Jerusalén para Pentecostés; la escala de Tiro
+  (Hch 21:3-6) cae entre las dos.
+fuentes:
+- si-3
+- hch-21
+- it-pablo
+enlaces:
+- titulo: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  tipo: biblia
+buscar: Pablo Tiro discípulos playa
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa de narrativa a anclada en la primavera de 56, como la parada de Tiro: el viaje va de la Pascua
+    al Pentecostés de 56 (estudio 3, párr. 26).'
+  fuente: si-3
+consultado: '2026-09-29'
+estado: verificado

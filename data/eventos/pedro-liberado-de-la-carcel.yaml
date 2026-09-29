@@ -19,22 +19,37 @@ lugares:
 personas:
 - pedro
 - herodes-agripa-i
-- rode
-- maria-madre-de-juan-marcos
-- santiago-hermano-de-jesus
 pasajes:
-- Hch 12:3-19
-resumen: Herodes encarcela a Pedro durante los Panes sin Levadura, con cuatro grupos de cuatro soldados. La congregación
-  ora y un ángel lo saca. Pedro va a casa de María, manda avisar a Santiago y se marcha.
-razon: El estudio 3 (párr. 20) fecha el arresto en la Pascua de 44; la nota de estudio de Hch 12:3 da la fiesta;
-  Perspicacia «Pedro» (párr. 21) y «Rode» (párr. 2).
+- Hch 12:3-11
+resumen: En los días de los Panes sin Levadura, Herodes mete a Pedro en prisión, vigilado por cuatro turnos de cuatro soldados.
+  La congregación ora por él y, la última noche, el ángel de Jehová lo saca a la calle.
+razon: El estudio 3 (párr. 20) fecha el arresto en la Pascua de 44; la nota de estudio de Hch 12:3 da la fiesta; Perspicacia
+  «Pedro» (párr. 21).
 fuentes:
 - si-3
 - it-pedro
 - it-rode
 - hechos-12
 - bt-10
-nota: Hch 12:17 no dice adónde fue Pedro después.
+nota: Hch 12 no nombra la ciudad de la prisión; es Jerusalén, donde seguía la congregación (Perspicacia «Rode» y «María»,
+  núm. 5).
 buscar: Pedro liberado ángel
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte en escenas: la casa de María (12:12-17) y el castigo de los guardias (12:18, 19) son sucesos
+    propios.'
+  fuente: hechos-12
+- fecha: '2026-09-29'
+  cambio: Rode, María y Santiago pasan a pedro-en-casa-de-maria, la escena donde salen (Hch 12:12-17).
+  fuente: hechos-12
+- fecha: '2026-09-29'
+  cambio: El resumen se ciñe a Hch 12:3-11; lo de la casa de María va en su propio suceso.
+  fuente: hechos-12
+- fecha: '2026-09-29'
+  cambio: Rode ya no sale en este suceso.
+  fuente: hechos-12
+- fecha: '2026-09-29'
+  cambio: La nota sobre adónde fue Pedro pasa a pedro-en-casa-de-maria; aquí se explica el lugar.
+  fuente: hechos-12
+consultado: '2026-09-29'
 estado: verificado

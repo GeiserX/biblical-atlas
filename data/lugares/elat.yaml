@@ -8,7 +8,7 @@ nombres:
 tipo: puerto
 lat: 29.530676
 lon: 34.999999
-precision: zona
+precision: punto
 coord_fuente: openbible:af0ac29
 coord_url: https://www.openbible.info/geo/ancient/af0ac29/elath
 coord_nota: Punto de OpenBible en ʽAqaba, su primera resolución; Perspicacia pone Elat en ʽAqaba o muy cerca.
@@ -26,5 +26,10 @@ enlaces:
 - titulo: Deuteronomio 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/2
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La precisión pasa de zona a punto. Perspicacia sitúa Elat en ʽAqaba o a su lado, y el punto es el de ʽAqaba, primera
+    identificación de OpenBible.
+  fuente: it-elat
 consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: antilibano
+nombre: Antilíbano
+nombres:
+- nombre: Antilíbano
+  nota: Así traduce la nota de Can 4:8 el hebreo Amaná.
+- nombre: Amaná
+  nota: Nombre hebreo de Can 4:8. Perspicacia cree que designa la cordillera entera o su parte sur, donde nace el Abaná, hoy
+    Barada.
+tipo: monte
+lat: 33.688889
+lon: 36.031667
+precision: zona
+coord_fuente: openbible:ab428de
+coord_url: https://www.openbible.info/geo/ancient/ab428de/amana
+coord_nota: Punto de OpenBible para Amaná, cerca de las fuentes del Barada. Representa toda la cordillera.
+resumen: Cordillera oriental del sistema del Líbano, paralela a la occidental durante unos 100 km y separada de ella por el
+  valle de la Becá. En su extremo sur se alza el monte Hermón.
+razon: 'Perspicacia «Antilíbano», párr. 1 a 3, y «Amaná»; Can 4:8 y su nota. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-antilibano
+- it-amana
+- openbible-geo
+- cantar-de-los-cantares-4
+enlaces:
+- titulo: 'Perspicacia: «Antilíbano»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000291
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Amaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000218
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

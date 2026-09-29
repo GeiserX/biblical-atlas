@@ -3,12 +3,12 @@ id: elimas-queda-ciego
 titulo: Elimas queda ciego y Sergio Paulo se hace creyente
 fecha:
   desde: 47
-  hasta: 48
-  precision: rango
+  hasta: 47
+  precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
-  texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  texto: c. 47 e.c.
 orden_relato:
   serie: hechos
   orden: 1306
@@ -29,6 +29,12 @@ fuentes:
 - it-bar-jesus
 - it-paulo
 - hch-13
+- si-3
 buscar: Elimas Sergio Paulo
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa del tramo narrativo 47-48 a c. 47: Perspicacia «Paulo» pone la visita a Chipre hacia el año 47, como
+    ya decía la razón.'
+  fuente: it-paulo
+consultado: '2026-09-29'
 estado: verificado

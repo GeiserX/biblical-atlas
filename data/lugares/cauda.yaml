@@ -3,6 +3,8 @@ id: cauda
 nombre: Cauda
 nombres:
 - nombre: Cauda
+- nombre: Gaudos
+  nota: Nombre actual de la isla, según Perspicacia «Cauda».
 tipo: isla
 lat: 34.83333
 lon: 24.08333
@@ -23,5 +25,5 @@ enlaces:
 - titulo: Hechos 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-29'
 estado: verificado

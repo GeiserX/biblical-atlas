@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: epeneto
+nombre: Epéneto
+nombres:
+- nombre: Epéneto
+perspicacia: '1200001378'
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c. (fecha de Romanos)
+resumen: Cristiano de Roma al que Pablo llama su amado. Fue de los primeros de la provincia de Asia en hacerse discípulos
+  de Cristo.
+razon: Perspicacia «Epéneto»; Ro 16:5. Perspicacia ve posible que fuera Pablo quien le predicó primero. La fecha es la de
+  Romanos, hacia 56 según la Tabla de los libros.
+fuentes:
+- it-epeneto
+- romanos-16
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Epéneto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001378
+  tipo: perspicacia
+- titulo: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: roma
+  deducido: false
+  fuentes:
+  - it-epeneto
+  - romanos-16
+  razon: Pablo lo saluda entre los cristianos de Roma (Ro 16:5).
+  estado: verificado
+- tipo: vivio_en
+  lugar: asia
+  deducido: true
+  fuentes:
+  - it-epeneto
+  - romanos-16
+  razon: 'Ro 16:5 lo cuenta entre las primicias de Asia para Cristo. Deducción nuestra: ni el texto ni Perspicacia dicen
+    que viviera allí, ni cuánto tiempo.'
+  estado: pendiente
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Asia estaba verificada, pero Perspicacia «Epéneto» solo lo llama primicias de Asia y no dice que
+    viviera allí. Queda pendiente.
+  fuente: it-epeneto
+consultado: '2026-09-29'
+estado: verificado

@@ -34,14 +34,14 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
 | [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | [Eclesiastés](../../../data/cobertura/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
-| El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
+| [El Cantar de los Cantares](../../../data/cobertura/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
 | Jeremías | 0 de 52 | 0 de 1364 | 0 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
-| Oseas | 0 de 14 | 0 de 197 | 0 % |
-| Joel | 0 de 3 | 0 de 73 | 0 % |
+| [Oseas](../../../data/cobertura/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
+| [Joel](../../../data/cobertura/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
 | Amós | 0 de 9 | 0 de 146 | 0 % |
 | Abdías | 0 de 1 | 0 de 21 | 0 % |
 | Jonás | 0 de 4 | 0 de 48 | 0 % |
@@ -55,10 +55,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Mateo](../../../data/cobertura/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
 | [Marcos](../../../data/cobertura/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
 | [Lucas](../../../data/cobertura/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
-| Juan | 0 de 21 | 0 de 866 | 0 % |
-| Hechos | 0 de 28 | 0 de 1003 | 0 % |
-| Romanos | 0 de 16 | 0 de 432 | 0 % |
-| 1 Corintios | 0 de 16 | 0 de 437 | 0 % |
+| [Juan](../../../data/cobertura/juan.yaml) | 21 de 21 | 866 de 866 | 100 % |
+| [Hechos](../../../data/cobertura/hechos.yaml) | 28 de 28 | 1003 de 1003 | 100 % |
+| [Romanos](../../../data/cobertura/romanos.yaml) | 16 de 16 | 432 de 432 | 100 % |
+| [1 Corintios](../../../data/cobertura/1-corintios.yaml) | 16 de 16 | 437 de 437 | 100 % |
 | 2 Corintios | 0 de 13 | 0 de 257 | 0 % |
 | Gálatas | 0 de 6 | 0 de 149 | 0 % |
 | Efesios | 0 de 6 | 0 de 155 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 494 de 1189 | 13483 de 31062 | 43 % |
+| **Total** | 600 de 1189 | 16608 de 31062 | 53 % |
 
 ## Capítulos empezados
 

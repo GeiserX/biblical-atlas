@@ -24,7 +24,12 @@ fuentes:
 - hch-15
 - it-tito-persona
 - galatas-2
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añaden como paradas Fenicia y la región de Samaria (Hch 15:3). Las paradas 1, 2, 3 y 5 pasan a c. 49 anclada:
+    una fecha narrativa va en rango, y el estudio 3 da el año.'
+  fuente: hch-15
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -35,15 +40,52 @@ paradas:
     hasta: 49
     precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 49 e.c.
   nota: null
-  razon: 'Hch 15:1-3 nombra Antioquía de Siria en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 15:1-3 nombra Antioquía de Siria en el recorrido. El estudio 3 (párr. 23) fecha la visita en 49.
   fuentes:
   - hch-15
+  - si-3
   estado: verificado
 - orden: 2
+  lugar: fenicia
+  referencia: Hch 15:3
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49 e.c.
+  nota: null
+  razon: 'Hch 15:3: camino de Jerusalén cruzan Fenicia y cuentan a los hermanos la conversión de las naciones. El estudio
+    3 (párr. 23) fecha la visita en 49.'
+  fuentes:
+  - hch-15
+  - si-3
+  estado: verificado
+- orden: 3
+  lugar: region-de-samaria
+  referencia: Hch 15:3
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49 e.c.
+  nota: null
+  razon: 'Hch 15:3: después de Fenicia pasan por la región de Samaria, también contando la conversión de las naciones. El
+    estudio 3 (párr. 23) fecha la visita en 49.'
+  fuentes:
+  - hch-15
+  - si-3
+  estado: verificado
+- orden: 4
   lugar: jerusalen
   referencia: Hch 15:4-29
   fecha:
@@ -60,7 +102,7 @@ paradas:
   - hch-15
   - si-3
   estado: verificado
-- orden: 3
+- orden: 5
   lugar: antioquia-de-siria
   referencia: Hch 15:30-35
   fecha:
@@ -68,11 +110,12 @@ paradas:
     hasta: 49
     precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 49 e.c.
   nota: null
-  razon: 'Hch 15:30-35 nombra Antioquía de Siria en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 15:30-35 nombra Antioquía de Siria en el recorrido. El estudio 3 (párr. 23) fecha la visita en 49.
   fuentes:
   - hch-15
+  - si-3
   estado: verificado

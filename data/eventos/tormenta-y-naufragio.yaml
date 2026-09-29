@@ -6,31 +6,54 @@ fecha:
   hasta: 58
   precision: estación
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: otoño de 58 e.c., pasado el ayuno de Expiación
 orden_relato:
   serie: hechos
-  orden: 2709
+  orden: 2713
 lugares:
-- bellos-puertos
-- cauda
 - malta
+- bellos-puertos
+- creta
+- cauda
+- mar-de-adria
 personas:
 - pablo
 - lucas
 - aristarco
 - julio
 pasajes:
-- Hch 27:9-44
+- Hch 27:13-44
 resumen: Pasado el ayuno del Día de Expiación, zarpan de Bellos Puertos contra el consejo de Pablo. Un viento huracanado
   los arrastra catorce noches y el barco encalla; los 276 llegan a tierra.
-razon: La nota de estudio de Hch 27:9 sitúa ese ayuno a fines de septiembre o principios de octubre; Perspicacia
-  «Julio».
+razon: La nota de estudio de Hch 27:9 sitúa ese ayuno a fines de septiembre o principios de octubre; Perspicacia «Julio».
+  El estudio 3 (párr. 27) da la salida en 58.
 fuentes:
 - nota-hechos-27
 - it-julio
 - hch-27
+- it-malta
+- bt-26
+- si-3
 buscar: naufragio Pablo Malta
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Los versículos 7-12 (llegada a Bellos Puertos y aviso de Pablo) pasan a su propio suceso, pablo-advierte-en-bellos-puertos;
+    este empieza al zarpar (Hch 27:13).
+  fuente: hch-27
+- fecha: '2026-09-29'
+  cambio: El orden sigue al primer versículo, ahora Hch 27:13.
+  fuente: hch-27
+- fecha: '2026-09-29'
+  cambio: 'Malta pasa a ser el sitio principal: allí encallan y llegan a tierra los 276 (Hch 27:39-44; 28:1). Bellos Puertos
+    es solo el punto de partida; se añaden Creta y el mar de Adria.'
+  fuente: hch-27
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa, pero el año 58 lo da el estudio 3 (párr. 27): es anclada.'
+  fuente: si-3
+- fecha: '2026-09-29'
+  cambio: La razón nombra la fuente del año.
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

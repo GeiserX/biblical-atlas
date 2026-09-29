@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: de-troas-a-mileto
+titulo: De Troas a Mileto, con Pablo a pie hasta Asón
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 56 e.c.
+  detalle:
+    estacion: primavera
+orden_relato:
+  serie: hechos
+  orden: 2013
+lugares:
+- ason
+- troas
+- mitilene
+- quios
+- samos
+- mileto
+personas:
+- pablo
+- lucas
+pasajes:
+- Hch 20:13-16
+resumen: Los compañeros navegan de Troas a Asón y Pablo va por tierra, unos 32 km. Allí embarca, y el barco pasa por Mitilene,
+  frente a Quíos y por Samos hasta Mileto, sin parar en Éfeso.
+razon: 'Perspicacia «Asón», «Mitilene», «Quíos» y «Mileto»: viaje de la primavera de 56. Pablo quería llegar a Jerusalén para
+  el Pentecostés (Hch 20:16; estudio 3, párr. 26).'
+fuentes:
+- hch-20
+- it-ason
+- it-mitilene
+- it-quios
+- it-samos
+- it-mileto
+- si-3
+enlaces:
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+buscar: Troas Asón Mitilene Quíos Samos Mileto
+consultado: '2026-09-29'
+estado: verificado

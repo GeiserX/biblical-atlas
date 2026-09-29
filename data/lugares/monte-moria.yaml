@@ -8,6 +8,12 @@ nombres:
 - nombre: Tierra de Moria
   nota: Región de montañas que, según Perspicacia, rodeaba el sitio de Jerusalén; en una de ellas iba a ofrecer Abrahán a
     Isaac.
+- nombre: Pórtico de Salomón
+  nota: Columnata del lado este del recinto del templo por la que Jesús caminaba en la Dedicación (lámina B11). Perspicacia
+    la llama Columnata de Salomón.
+- nombre: Puerta Hermosa
+  nota: Una entrada del templo donde a diario dejaban a pedir limosna al cojo que curó Pedro (Hch 3:2, 10; «Testimonio completo»,
+    capítulo 4). OpenBible solo le da el punto de Jerusalén.
 tipo: monte
 lat: 31.777778
 lon: 35.235556
@@ -38,6 +44,18 @@ fuentes:
 - lucas-19
 - lucas-20
 - lucas-21
+- juan-2
+- juan-5
+- juan-7
+- juan-8
+- juan-10
+- it-columnata-de-salomon
+- hechos-3
+- bt-4
+- hechos-4
+- hechos-5
+- hch-21
+- hch-22
 enlaces:
 - titulo: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114

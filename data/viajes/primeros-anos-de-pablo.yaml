@@ -2,7 +2,7 @@
 id: primeros-anos-de-pablo
 nombre: 'De Damasco a Antioquía: los primeros años de Pablo'
 persona: pablo
-referencia: Hch 8:3–12:25; Gál 1:13-24
+referencia: Hch 8:3; 9:1-30; 11:25-30; 12:25; Gál 1:13-24
 fecha:
   desde: 34
   hasta: 47
@@ -25,7 +25,16 @@ fuentes:
 - hechos-11
 - hechos-12
 - galatas-1
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La referencia deja de abarcar Hch 8:3–12:25 de corrido: Pablo no sale en Hechos 10, y el tramo hacía que el viaje
+    citara ese capítulo.'
+  fuente: hechos-10
+- fecha: '2026-09-29'
+  cambio: 'Paradas 1 y 6: llevaban una fecha narrativa de un solo año. Salen de años que dan las fuentes (34 y 36), así que
+    pasan a ancladas.'
+  fuente: hch-9
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -36,15 +45,17 @@ paradas:
     hasta: 34
     precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
     texto: c. 34 e.c. (antes de la conversión)
   nota: Sale como perseguidor.
-  razon: Persigue a la congregación en Jerusalén y pide cartas al sumo sacerdote para ir a Damasco.
+  razon: Persigue a la congregación en Jerusalén y pide cartas al sumo sacerdote para ir a Damasco. Sale el año de su conversión,
+    c. 34 (estudio 3, párr. 22).
   fuentes:
   - it-pablo
   - hechos-8
   - hch-9
+  - si-3
   estado: verificado
 - orden: 2
   lugar: damasco
@@ -94,8 +105,8 @@ paradas:
     cronologia: tnm
     texto: 'dentro de c. 34-36 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
   nota: Huye de noche en una canasta.
-  razon: Vuelve a Damasco y predica hasta el complot, tres años después de convertirse («Testimonio completo», cap.
-    8, párr. 16).
+  razon: Vuelve a Damasco y predica hasta el complot, tres años después de convertirse («Testimonio completo», cap. 8, párr.
+    16).
   fuentes:
   - bt-8
   - galatas-1
@@ -128,11 +139,12 @@ paradas:
     hasta: 36
     precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
     texto: c. 36 e.c.
   nota: null
-  razon: Los hermanos lo llevan a Cesarea para embarcarlo hacia Tarso (Hch 9:30).
+  razon: Los hermanos lo llevan a Cesarea para embarcarlo hacia Tarso (Hch 9:30), tras la visita a Jerusalén de quizás 36
+    (Perspicacia «Pablo», párr. 8).
   fuentes:
   - it-pablo
   - hch-9

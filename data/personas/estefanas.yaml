@@ -4,19 +4,21 @@ nombre: Estéfanas
 nombres:
 - nombre: Estéfanas
 fecha:
-  desde: 55
+  desde: 50
   hasta: 55
-  precision: año
+  precision: rango
   aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: c. 55 e.c.
+  texto: c. 50-55 e.c.
 resumen: Hermano de Corinto cuya familia bautizó Pablo, los primeros creyentes de Acaya. Hacia 55 visitó a Pablo
   en Éfeso con otros dos corintios.
-razon: Perspicacia «Estéfanas»; 1Co 1:16; 16:15, 17.
+razon: 'Perspicacia «Estéfanas»: su familia se bautizó unos cinco años antes de su visita a Éfeso de c. 55; 1Co 1:16; 16:15,
+  17.'
 fuentes:
 - it-estefanas
 - 1-corintios-16
+- 1-corintios-1
 enlaces:
 - titulo: 'Perspicacia: «Estéfanas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004229
@@ -24,7 +26,16 @@ enlaces:
 - titulo: 1 Corintios 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004229'
+historial:
+- fecha: '2026-09-29'
+  cambio: La fecha solo tenía su visita a Éfeso. Perspicacia «Estéfanas» pone el bautismo de su familia unos cinco años antes,
+    hacia 50.
+  fuente: it-estefanas
+- fecha: '2026-09-29'
+  cambio: La razón explica de dónde sale el comienzo de la fecha.
+  fuente: it-estefanas
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -32,6 +43,8 @@ relaciones:
   deducido: false
   fuentes:
   - it-estefanas
+  - 1-corintios-1
+  - 1-corintios-16
   razon: Perspicacia lo sitúa en la congregación de Corinto.
   estado: verificado
 - tipo: acompana

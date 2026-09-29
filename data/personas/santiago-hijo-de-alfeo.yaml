@@ -22,6 +22,7 @@ fuentes:
 - marcos-15
 - marcos-3
 - lucas-6
+- hechos-1
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -55,6 +56,7 @@ relaciones:
   - it-alfeo
   - marcos-3
   - lucas-6
+  - hechos-1
   razon: Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.
   estado: verificado
 - tipo: pariente
