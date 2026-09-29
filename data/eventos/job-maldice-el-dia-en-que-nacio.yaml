@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: job-maldice-el-dia-en-que-nacio
+titulo: Job maldice el día en que nació
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 3001
+lugares:
+- uz
+personas:
+- job
+- elifaz-el-temanita
+- bildad
+- zofar
+presentes:
+- job
+- elifaz-el-temanita
+- bildad
+- zofar
+pasajes:
+- Job 3:1-26
+resumen: 'Tras siete días de silencio, Job rompe a hablar: desea que el día de su nacimiento no hubiera existido, se pregunta
+  por qué no murió al nacer y ve la muerte como descanso.'
+razon: Job 3:1-26, con los tres amigos aún a su lado; Perspicacia «Job, Libro de», cuadro de puntos sobresalientes. El cuadro
+  del estudio 3 pone la prueba de Job antes de 1613 a.e.c.; Perspicacia «Job» (párr. 2), hacia 1613.
+fuentes:
+- job-3
+- si-3
+- it-job
+- it-job-libro
+enlaces:
+- titulo: Job 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: job-responde-al-primer-discurso-de-zofar
+titulo: Job responde al primer discurso de Zofar
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 12001
+lugares:
+- uz
+presentes:
+- job
+- zofar
+- elifaz-el-temanita
+- bildad
+personas:
+- job
+- zofar
+- elifaz-el-temanita
+- bildad
+pasajes:
+- Job 12:1-25
+- Job 13:1-28
+- Job 14:1-22
+resumen: 'Job contesta a Zofar y a sus compañeros: defiende que sabe tanto como ellos, alaba el poder de Dios, pide defender
+  su caso ante él y habla de la muerte y de la esperanza de volver a vivir.'
+razon: Perspicacia «Job» sitúa la prueba de Job hacia 1613 a.e.c. (Moisés acabaría el libro en 1473 y Job vivió después 140
+  años); el estudio 3 la pone antes de ese año. En Uz, donde vivía Job, con los tres compañeros.
+fuentes:
+- job-12
+- it-job
+- it-job-libro
+- si-3
+- it-zofar
+- it-uz
+- job-13
+- job-14
+enlaces:
+- titulo: Job 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
