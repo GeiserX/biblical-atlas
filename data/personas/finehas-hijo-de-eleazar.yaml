@@ -11,12 +11,16 @@ desambiguacion: Finehás nieto de Aarón; no el hijo del sacerdote Elí ni el le
 fuentes:
 - it-finehas
 - salmos-106
+- exodo-6
 enlaces:
 - titulo: 'Perspicacia: «Finehás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
   tipo: perspicacia
 - titulo: Salmo 106 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  tipo: biblia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
   tipo: biblia
 relaciones:
 - tipo: pariente
@@ -25,7 +29,26 @@ relaciones:
   deducido: false
   fuentes:
   - it-finehas
+  - exodo-6
   razon: 'Perspicacia «Finehás», núm. 1: era hijo de Eleazar y, por él, nieto de Aarón.'
+  estado: verificado
+- tipo: pariente
+  persona: eleazar-hijo-de-aaron
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-finehas
+  razon: 'Éx 6:25: hijo de Eleazar.'
+  estado: verificado
+- tipo: pariente
+  persona: putiel
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-finehas
+  razon: 'Éx 6:25: su madre era una de las hijas de Putiel.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

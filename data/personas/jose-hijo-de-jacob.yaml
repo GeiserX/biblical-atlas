@@ -41,6 +41,8 @@ fuentes:
 - genesis-48
 - genesis-49
 - salmos-105
+- exodo-1
+- exodo-13
 enlaces:
 - titulo: 'Perspicacia: «José»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
@@ -133,6 +135,7 @@ relaciones:
   - genesis-50
   - si-3
   - it-jose
+  - exodo-1
   razon: Gé 50:26 sitúa su muerte y su embalsamamiento en Egipto. El estudio 3 da el año 1657 a.e.c.
   estado: verificado
 - tipo: pariente

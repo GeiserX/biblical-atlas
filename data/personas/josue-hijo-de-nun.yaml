@@ -27,6 +27,10 @@ fuentes:
 - si-3
 - josue-24
 - deuteronomio-34
+- exodo-17
+- exodo-24
+- exodo-32
+- exodo-33
 enlaces:
 - titulo: 'Perspicacia: «Josué»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
@@ -43,5 +47,26 @@ relaciones:
   - deuteronomio-34
   razon: 'Perspicacia «Josué», párr. 2 y 9: por mandato de Dios, Moisés lo nombró su sucesor (Dt 34:9; Jos 1:1, 2).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: acompana
+  persona: moises
+  relacion: señor
+  deducido: false
+  fuentes:
+  - exodo-24
+  - it-josue
+  - exodo-33
+  razon: Éx 24:13 lo llama ayudante de Moisés y lo hace subir con él a la montaña.
+  estado: verificado
+- tipo: pariente
+  persona: nun
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-33
+  - it-nun
+  - it-josue
+  razon: Éx 33:11 lo llama Josué hijo de Nun.
+  estado: verificado
+perspicacia: 1200002523#1
+consultado: '2026-09-29'
 estado: verificado

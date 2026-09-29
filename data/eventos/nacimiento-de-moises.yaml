@@ -11,16 +11,34 @@ fecha:
   texto: 1593 a.e.c.
 lugares:
 - egipto
+- rio-nilo
 personas:
 - moises
+- jokebed
+- amram-hijo-de-cohat
+- miriam-hermana-de-moises
 pasajes:
 - Éx 2:1-10
-- Hch 7:20-23
-resumen: Nace Moisés cuando el faraón manda matar a los niños hebreos. Lo cría la hija del faraón y crece en la corte egipcia.
+- Hch 7:20-22
+- Heb 11:23
+resumen: Nace Moisés cuando el faraón manda echar al Nilo a los varones hebreos. Su madre lo esconde tres meses y lo deja
+  en una canasta junto al río. La hija del faraón lo adopta, pero lo cría su propia madre.
 razon: El cuadro del estudio 3 fecha su nacimiento en 1593 a.e.c. y su huida a Madián en 1553, cuando tenía 40 años.
 fuentes:
 - si-3
 - exodo-2
+- it-moises
+- it-jokebed
+- it-miriam
 buscar: nacimiento de Moisés
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen decía que lo criaba la hija del faraón; Éx 2:7-10 dice que lo crió su madre, pagada por ella, antes de
+    ser adoptado.
+  fuente: exodo-2
+- fecha: '2026-09-29'
+  cambio: Hch 7:23 cuenta la visita de Moisés a sus hermanos a los 40 años y pasa a su suceso; se añade Heb 11:23, que habla
+    de sus padres escondiéndolo.
+  fuente: exodo-2
+consultado: '2026-09-29'
 estado: verificado

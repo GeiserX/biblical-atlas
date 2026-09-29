@@ -10,6 +10,7 @@ razon: Perspicacia «Hanok», núm. 2; Gé 46:9.
 fuentes:
 - it-hanok
 - genesis-46
+- exodo-6
 enlaces:
 - titulo: 'Perspicacia: «Hanok»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001864
@@ -25,6 +26,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-hanok
+  - exodo-6
   razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
   estado: verificado
 - tipo: vivio_en
@@ -33,6 +35,30 @@ relaciones:
   fuentes:
   - genesis-46
   razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+- tipo: pariente
+  persona: palu
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Palú es otro de los hijos de Rubén.'
+  estado: verificado
+- tipo: pariente
+  persona: hezron-hijo-de-ruben
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Hezrón es otro de los hijos de Rubén.'
+  estado: verificado
+- tipo: pariente
+  persona: carmi-hijo-de-ruben
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Carmí es otro de los hijos de Rubén.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

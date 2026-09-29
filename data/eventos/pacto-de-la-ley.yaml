@@ -25,5 +25,8 @@ fuentes:
 - it-pacto
 - exodo-24
 buscar: pacto de la Ley Sinaí
-consultado: '2026-09-28'
+orden_relato:
+  serie: exodo
+  orden: 24003
+consultado: '2026-09-29'
 estado: verificado
