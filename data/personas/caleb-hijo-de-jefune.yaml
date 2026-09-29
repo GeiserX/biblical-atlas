@@ -11,6 +11,12 @@ fuentes:
 - it-caleb
 - numeros-13
 - josue-14
+- numeros-14
+- it-espias
+- numeros-26
+- numeros-32
+- numeros-34
+- it-jefune
 enlaces:
 - titulo: 'Perspicacia: «Caleb»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000863
@@ -24,6 +30,8 @@ relaciones:
   deducido: false
   fuentes:
   - it-caleb
+  - numeros-14
+  - numeros-32
   razon: 'Perspicacia «Caleb», párr. 3: de los doce espías, solo él y Josué volvieron con un informe favorable (Nú 14:6-9).'
   estado: verificado
 - tipo: vivio_en
@@ -34,5 +42,20 @@ relaciones:
   - josue-14
   razon: 'Jos 14:13, 14: Josué le dio Hebrón como herencia; Perspicacia «Caleb», párr. 4.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: jefune-padre-de-caleb
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-13
+  - numeros-14
+  - it-jefune
+  - numeros-26
+  - it-caleb
+  - numeros-32
+  - numeros-34
+  razon: Nú 13:6 y 14:6, 30, 38 lo llaman Caleb hijo de Jefuné.
+  estado: verificado
+perspicacia: 1200000863#2
+consultado: '2026-09-29'
 estado: verificado

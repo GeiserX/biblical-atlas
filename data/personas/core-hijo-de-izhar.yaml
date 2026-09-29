@@ -18,6 +18,10 @@ fuentes:
 - salmos-44
 - salmos-45
 - exodo-6
+- numeros-16
+- it-abiram
+- it-braserillo
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Coré»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002648
@@ -45,6 +49,7 @@ relaciones:
   fuentes:
   - exodo-6
   - it-core
+  - numeros-16
   razon: 'Éx 6:21: primer hijo de Izhar.'
   estado: verificado
 - tipo: pariente

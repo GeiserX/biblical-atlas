@@ -12,6 +12,7 @@ fuentes:
 - it-er
 - genesis-38
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Er»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001411
@@ -28,6 +29,7 @@ relaciones:
   - genesis-38
   - genesis-46
   - it-er
+  - numeros-26
   razon: Gé 38:3, 6, 7.
   estado: verificado
 - tipo: pariente
@@ -53,6 +55,7 @@ relaciones:
   deducido: false
   fuentes:
   - genesis-38
+  - numeros-26
   razon: Gé 38:3, 4, 8.
   estado: verificado
 - tipo: pariente
@@ -69,6 +72,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-er
+  - numeros-26
   razon: 'Gé 46:12: murió en Canaán, antes del traslado a Egipto.'
   estado: verificado
 consultado: '2026-09-29'

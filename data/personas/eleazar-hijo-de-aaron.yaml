@@ -7,9 +7,9 @@ perspicacia: 1200001287#1
 desambiguacion: Hijo de Aarón y sumo sacerdote tras él; no el Eleazar de la genealogía de Jesús ni los otros que numera Perspicacia.
 no_confundir_con:
 - eleazar-hijo-de-eliud
-resumen: Tercer hijo de Aarón y Eliseba. Fue escogido sacerdote con su padre y sus hermanos; se casó con una hija de Putiel,
-  que le dio a Finehás, y sucedió a Aarón como sumo sacerdote.
-razon: Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1.
+resumen: Tercer hijo de Aarón y Eliseba, sacerdote con su padre y, en el desierto, jefe principal de los levitas. Se casó
+  con una hija de Putiel, madre de Finehás, y sucedió a Aarón como sumo sacerdote.
+razon: Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1; Nú 3:32.
 fuentes:
 - it-eleazar
 - exodo-6
@@ -18,6 +18,16 @@ fuentes:
 - it-instalacion
 - levitico-9
 - levitico-10
+- numeros-3
+- numeros-4
+- numeros-16
+- numeros-19
+- numeros-20
+- numeros-26
+- numeros-27
+- numeros-31
+- numeros-32
+- numeros-34
 enlaces:
 - titulo: 'Perspicacia: «Eleazar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
@@ -35,6 +45,11 @@ relaciones:
   - it-eleazar
   - exodo-28
   - levitico-10
+  - numeros-3
+  - numeros-4
+  - numeros-16
+  - numeros-20
+  - numeros-26
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -68,7 +83,51 @@ relaciones:
   deducido: false
   fuentes:
   - levitico-10
+  - numeros-3
   razon: Le 10:6, 12 y 16 nombran juntos a Eleazar e Itamar como los dos hijos vivos de Aarón.
   estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1512
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513-1512 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-3
+  - si-3
+  - it-sinai
+  razon: 'Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512
+    a.e.c. (Perspicacia «Sinaí»).'
+  estado: verificado
+- tipo: sucede_a
+  persona: aaron
+  fecha:
+    desde: -1473
+    hasta: -1473
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1474 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-20
+  - it-eleazar
+  - it-aaron
+  razon: 'Nú 20:25-28: Moisés le pone las ropas de Aarón antes de morir este; Perspicacia «Eleazar», núm. 1: así pasó a ser
+    sumo sacerdote.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen añade que fue el jefe principal de los levitas en el desierto (Nú 3:32; Perspicacia «Eleazar», núm. 1).
+  fuente: numeros-3
+- fecha: '2026-09-29'
+  cambio: La razón cita Nú 3:32, de donde sale su cargo al frente de los levitas.
+  fuente: numeros-3
 consultado: '2026-09-29'
 estado: verificado

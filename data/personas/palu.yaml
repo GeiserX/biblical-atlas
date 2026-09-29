@@ -11,6 +11,7 @@ fuentes:
 - it-palu
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Palú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003367
@@ -27,6 +28,7 @@ relaciones:
   - genesis-46
   - it-palu
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
   estado: verificado
 - tipo: vivio_en

@@ -39,12 +39,17 @@ fuentes:
 - it-qades
 - openbible-geo
 - salmos-106
+- numeros-20
+- numeros-27
 enlaces:
 - titulo: 'Perspicacia: «Meribá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002998
   tipo: perspicacia
 - titulo: Salmo 106 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  tipo: biblia
+- titulo: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

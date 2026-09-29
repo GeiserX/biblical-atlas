@@ -16,6 +16,10 @@ fuentes:
 - it-instalacion
 - levitico-9
 - levitico-10
+- numeros-3
+- numeros-4
+- numeros-7
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Itamar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
@@ -37,6 +41,10 @@ relaciones:
   - exodo-28
   - exodo-38
   - levitico-10
+  - numeros-3
+  - numeros-4
+  - numeros-7
+  - numeros-26
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -47,6 +55,24 @@ relaciones:
   - exodo-6
   - it-itamar
   razon: 'Éx 6:23: Eliseba se los dio a Aarón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1512
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513-1512 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-3
+  - si-3
+  - it-sinai
+  razon: 'Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512
+    a.e.c. (Perspicacia «Sinaí»).'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

@@ -59,6 +59,24 @@ fuentes:
 - levitico-21
 - levitico-22
 - levitico-24
+- numeros-1
+- numeros-2
+- numeros-3
+- numeros-4
+- numeros-6
+- numeros-8
+- numeros-9
+- numeros-12
+- numeros-13
+- numeros-14
+- numeros-15
+- numeros-16
+- numeros-17
+- numeros-18
+- numeros-19
+- it-hor
+- numeros-26
+- numeros-33
 enlaces:
 - titulo: 'Perspicacia: «Aarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
@@ -100,6 +118,7 @@ relaciones:
   - salmos-105
   - exodo-7
   - it-aaron
+  - numeros-19
   razon: 'Sl 77:20: Dios guio a su pueblo como a un rebaño por mano de Moisés y Aarón.'
   estado: verificado
 - tipo: pariente
@@ -110,6 +129,7 @@ relaciones:
   - exodo-6
   - it-amram
   - it-aaron
+  - numeros-26
   razon: 'Éx 6:20: hijo de Amram.'
   estado: verificado
 - tipo: pariente
@@ -120,6 +140,7 @@ relaciones:
   - exodo-6
   - it-jokebed
   - it-aaron
+  - numeros-26
   razon: 'Éx 6:20: hijo de Jokébed.'
   estado: verificado
 - tipo: pariente
@@ -148,6 +169,45 @@ relaciones:
   - levitico-10
   - it-uziel
   razon: Le 10:4 llama a Uziel tío de Aarón.
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1512
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513-1512 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-3
+  - si-3
+  - it-sinai
+  razon: 'Nú 3:14, 38: acampaba con sus hijos al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un
+    año, de 1513 a 1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).'
+  estado: verificado
+- tipo: murio_en
+  lugar: monte-hor
+  fecha:
+    desde: -1473
+    hasta: -1473
+    precision: día
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1 de ab de 1474 a.e.c.
+    detalle:
+      mes: ab
+      dia: 1
+  deducido: false
+  fuentes:
+  - numeros-20
+  - it-aaron
+  - it-hor
+  - numeros-33
+  razon: 'Nú 20:28: murió en la cima del monte Hor; Perspicacia «Aarón», párr. 4 y 19, da el año y el día.'
   estado: verificado
 perspicacia: '1200000005'
 consultado: '2026-09-29'
