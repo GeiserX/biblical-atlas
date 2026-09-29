@@ -91,7 +91,8 @@
 - from: santiago-hijo-de-zebedeo/accompanies/pedro
   to: pedro/accompanies/santiago-hijo-de-zebedeo
   removed_on: '2026-09-29'
-  reason: Lu 5:10 dice de Santiago y Juan que eran socios de Simón. Se queda la copia de Pedro, con las fuentes de las dos.
+  reason: Lu 5:3-10 nombra primero a Simón; 5:10 dice que Santiago y Juan eran sus socios. Se queda la copia de Pedro, con
+    las fuentes de las dos.
 - from: agar/kin/abrahan/husband
   to: abrahan/kin/agar/wife
   removed_on: '2026-09-29'

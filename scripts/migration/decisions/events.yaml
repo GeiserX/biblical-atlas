@@ -243,17 +243,20 @@ entries:
           to: -1472
           precision: year
           approx: true
-          type: anchored
+          type: derived
           chronology: tnm
           text: c. 1473 a.e.c.
+          note: 'Perspicacia «Job»: Moisés acabó el libro hacia 1473 a.e.c., probablemente poco después de la muerte de Job,
+            que vivió 140 años más tras la prueba (Job 42:16).'
       jemima: born
       quesias: born
       queren-hapuc: born
+    status: pending
   sources:
   - job-42
   - it-job
-  reason: 'Job 42:13-17: tiene tres hijas y muere 140 años después. Perspicacia «Job» pone su muerte poco antes de 1473 a.e.c.:
-    el rango es su vida, no una duda. Sin tipo: lo principal es la restauración.'
+  reason: 'Job 42:13-17: tiene tres hijas y muere 140 años después. Perspicacia «Job» fecha el libro en 1473 a.e.c.,
+    probablemente poco después de su muerte: fecha derivada y suceso pendiente. Sin tipo: lo principal es la restauración.'
 - file: events/jacob-sube-a-betel
   set:
     roles:

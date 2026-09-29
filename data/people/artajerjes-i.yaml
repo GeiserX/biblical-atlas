@@ -40,7 +40,7 @@ relations:
   status: verified
 - type: succeeds
   person: jerjes-i
-  inferred: false
+  inferred: true
   sources:
   - it-persia
   - si-3

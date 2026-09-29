@@ -88,8 +88,8 @@ entries:
     - ester-2
     - it-ester
     - it-asuero
-    reason: 'Est 2:16, 17: Asuero se prendó de Ester y la coronó reina en vez de Vasti. Perspicacia «Asuero», núm.
-      3, lo identifica con Jerjes I.'
+    reason: 'Est 2:16, 17: Asuero se prendó de Ester y la coronó reina en vez de Vasti. Según Perspicacia «Asuero», núm.
+      3, se cree que era Jerjes I.'
     checked_on: '2026-09-29'
     status: verified
   sources:
@@ -525,8 +525,8 @@ entries:
   sources:
   - it-santiago
   - lucas-5
-  reason: Lu 5:10 dice de Santiago y Juan que eran socios de Simón. Se queda la copia de Pedro, con las fuentes
-    de las dos.
+  reason: Lu 5:3-10 nombra primero a Simón; 5:10 dice que Santiago y Juan eran sus socios. Se queda la copia de Pedro, con
+    las fuentes de las dos.
 # K4
 - file: people/agar
   relation: agar/kin/abrahan
@@ -1640,6 +1640,14 @@ entries:
   - marcos-15
   - mateo-27
   reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+# T1: la amistad la da la publicación, no el texto.
+- file: people/felipe-apostol
+  relation: felipe-apostol/tie/natanael
+  set:
+    inferred: true
+    reason: 'Jn 1:45 dice que Felipe encontró a Natanael; que era su amigo lo dice Perspicacia «Natanael», párr. 3.'
+  sources: [juan-1, it-natanael]
+  reason: Jn 1:45 solo cuenta que Felipe lo encontró; «amigo» sale de Perspicacia, así que es deducido.
 # Cobertura: los libros que llegaron de main después de estas decisiones citan en su tramo lo que ellas cambiaron.
 - file: coverage/numeros
   chapter: 13

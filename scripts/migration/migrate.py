@@ -7,7 +7,8 @@ determinista y, ejecutado otra vez sobre datos ya migrados, no cambia nada.
 
 Uso:
   python3 scripts/migration/migrate.py                       el checkout de este script, entero
-  python3 scripts/migration/migrate.py --root <checkout>     otro checkout, entero
+  python3 scripts/migration/migrate.py --root <checkout>     otro checkout, entero; si no trae
+                                                             scripts/migration/decisions, aplica las de este script
   python3 scripts/migration/migrate.py --data <carpeta>      solo una carpeta de datos, por ejemplo una copia de data/
   python3 scripts/migration/migrate.py --check ...           no escribe nada; sale con 1 si algo cambiaría
   python3 scripts/migration/migrate.py --baseline <ref|carpeta> ...
@@ -113,6 +114,8 @@ from yaml.nodes import MappingNode, ScalarNode, SequenceNode
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 MAP_PATH = HERE / "map.yaml"
+# Las decisiones de este script: las que se aplican si el checkout que se migra no trae las suyas.
+DECISIONS_DIR = HERE / "decisions"
 LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 DECISIONS_FORMAT = "biblical-earth/migration-decisions/1"
 REPORT_FORMAT = "biblical-earth/migration-report/1"
@@ -783,6 +786,7 @@ class Migration:
         self.root = Path(root) if root else None
         self.baseline = baseline
         self.decisions_dir = Path(decisions_dir) if decisions_dir else None
+        self.decision_files = 0
         self.stops, self.unmapped_list = [], []
         self.counts = collections.Counter()
         self.report = fresh_report()
@@ -1009,7 +1013,9 @@ class Migration:
         if not self.decisions_dir or not self.decisions_dir.is_dir():
             return []
         out = []
-        for p in sorted(self.decisions_dir.glob("*.yaml")):
+        files = sorted(self.decisions_dir.glob("*.yaml"))
+        self.decision_files = len(files)
+        for p in files:
             d = load(p)
             if not isinstance(d, dict) or d.get("format") != DECISIONS_FORMAT:
                 self.stop(f"{p.name}: format no es {DECISIONS_FORMAT}")
@@ -1646,6 +1652,7 @@ def from_m_writes(from_m, data, base, run, writes):
 def print_summary(run, final, moves, lines, check, writes=(), from_m=()):
     print("MIGRACIÓN" + (" (--check: no se escribe nada)" if check else ""))
     print(f"  ficheros que cambian: {len(final)}; carpetas y ficheros que se renombran: {len(moves)}")
+    print(f"  ficheros de decisiones leídos: {run.decision_files}")
     for path, _ in writes:
         print(f"  fuera de data/, se reescribe: {path}")
     for path in from_m:
@@ -1717,7 +1724,11 @@ def main(argv=None):
         else:
             model = Model(MAP_PATH, vocabulary_path(data))
         decisions = Path(a.decisions) if a.decisions else (root / "scripts" / "migration" / "decisions"
-                                                             if whole else HERE / "decisions")
+                                                             if whole else DECISIONS_DIR)
+        if not a.decisions and not decisions.is_dir():
+            # Un checkout del esquema antiguo no trae scripts/migration/decisions: sin esto, --root migraría sin
+            # aplicar ninguna decisión y sin decirlo.
+            decisions = DECISIONS_DIR
         repo = root if whole else data
         base = Baseline(a.baseline, repo) if a.baseline else None
         run = Migration(data, model, root=root if whole else None, baseline=base, decisions_dir=decisions)

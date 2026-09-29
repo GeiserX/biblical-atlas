@@ -581,6 +581,32 @@ class WholeCheckout(Base):
         self.assertEqual((code, fingerprint(root)), (0, antes), out)
 
 
+    def test_a_checkout_without_decisions_takes_the_ones_of_the_script(self):
+        """Un checkout del esquema antiguo no trae scripts/migration/decisions: --root sin --decisions aplica las del
+        script, y el resumen dice cuántos ficheros leyó."""
+        root = Path(self.tmp.name)
+        shutil.copy(HERE.parent.parent / "data" / "vocabulary.yaml", root / "data" / "vocabulary.yaml")
+        self.assertFalse((root / "scripts" / "migration" / "decisions").exists())
+        propias = root / "decisiones-del-script"
+        propias.mkdir()
+        (propias / "O2.yaml").write_text(yaml.safe_dump(
+            {"format": "biblical-earth/migration-decisions/1", "decision": "O2", "checked_on": "2026-09-29",
+             "entries": [{"file": "people/sesbazar", "relation": "sesbazar/same_as/zorobabel",
+                          "set": {"certainty": "possible"}, "sources": ["hch-16"], "reason": "Prueba del respaldo."}]},
+            allow_unicode=True, sort_keys=False), encoding="utf-8")
+        antes = migrate.DECISIONS_DIR
+        migrate.DECISIONS_DIR = propias
+        try:
+            code, out = run_migrate("--root", str(root))
+        finally:
+            migrate.DECISIONS_DIR = antes
+        self.assertEqual(code, 0, out)
+        self.assertIn("ficheros de decisiones leídos: 1", out)
+        self.assertIn("decisiones aplicadas: 1", out)
+        s = yaml.safe_load((root / "data" / "people" / "sesbazar.yaml").read_text(encoding="utf-8"))["relations"][0]
+        self.assertEqual(s["certainty"], "possible")
+
+
 class FromM(Base):
     """Lo que M escribe a mano en data/ (el vocabulario y el README de la cobertura) llega a la rama migrada: sin
     ello, migrar los datos de P no da los datos de M."""

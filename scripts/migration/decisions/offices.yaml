@@ -275,9 +275,10 @@ entries:
   reason: Rey del reino de los caldeos tras la muerte de Belsasar (Da 5:30, 31; 9:1).
 - file: people/cambises-ii
   relation: cambises-ii/succeeds/ciro
-  set: {office: king}
+  set: {office: king, inferred: true}
   sources: [it-ciro]
-  reason: Rey de Persia; Perspicacia «Ciro» dice que, tras ser corregente, reinó solo cuando murió su padre.
+  reason: Rey de Persia; Perspicacia «Ciro» dice que, tras ser corregente, reinó solo cuando murió su padre. Solo lo dice la
+    publicación, así que es deducido.
 - file: people/jerjes-i
   relation: jerjes-i/succeeds/dario-i
   set: {office: king}
@@ -285,22 +286,27 @@ entries:
   reason: Rey de Persia al morir Darío I en 486 (Perspicacia «Darío», núm. 2).
 - file: people/artajerjes-i
   relation: artajerjes-i/succeeds/jerjes-i
-  set: {office: king}
+  set: {office: king, inferred: true}
   sources: [it-persia, si-3]
-  reason: Rey de Persia desde 475, el año en que murió Jerjes (estudio 3, párr. 18).
+  reason: Rey de Persia desde 475, el año en que murió Jerjes (estudio 3, párr. 18). Solo lo dice la publicación, así que es
+    deducido.
 
 # Roma
 - file: people/arquelao
   relation: arquelao/succeeds/herodes-el-grande
-  set: {office: ethnarch}
+  set:
+    office: ethnarch
+    reason: 'Mt 2:22: reinaba en Judea en lugar de su padre. El título de etnarca lo da Perspicacia «Arquelao»: Augusto no
+      lo hizo rey.'
   sources: [mateo-2, it-arquelao]
   reason: Mt 2:22 dice que reinaba en Judea en lugar de su padre; Perspicacia «Arquelao» precisa que Augusto le dio el título
     de etnarca y no el de rey.
 - file: people/tiberio
   relation: tiberio/succeeds/augusto
-  set: {office: emperor}
+  set: {office: emperor, inferred: true}
   sources: [it-tiberio]
-  reason: Emperador de Roma desde 14 e.c., cuando murió Augusto y el Senado lo nombró (Perspicacia «Tiberio»).
+  reason: Emperador de Roma desde 14 e.c., cuando murió Augusto y el Senado lo nombró (Perspicacia «Tiberio»). Solo lo dice la
+    publicación, así que es deducido.
 - file: people/festo
   relation: festo/succeeds/felix
   set: {office: governor}
@@ -328,9 +334,14 @@ entries:
 # ---------------------------------------------------------------- O2: la certeza de las identidades
 - file: people/ada-hija-de-elon
   relation: ada-hija-de-elon/same_as/basemat-hija-de-elon
-  set: {certainty: possible, status: verified}
+  set:
+    certainty: possible
+    status: verified
+    reason: 'Perspicacia «Adá», núm. 2, y «Basemat», núm. 1: puede ser la misma mujer. Gé 36:2 llama a Adá hija de Elón el
+      hitita, y Gé 26:34 dice lo mismo de Basemat.'
   sources: [it-ada, it-basemat]
-  reason: Perspicacia «Adá», núm. 2, lo da como posible, y «Basemat», núm. 1, dice que era Adá o su hermana.
+  reason: Perspicacia «Adá», núm. 2, lo da como posible, y «Basemat», núm. 1, dice que era Adá o su hermana. La razón cita
+    el versículo de cada una.
 - file: people/bartolome
   relation: bartolome/same_as/natanael
   set: {certainty: probable, status: verified}
@@ -808,6 +819,13 @@ entries:
   sources: [mateo-10]
   reason: Mt 10:2-4 da los nombres de los doce apóstoles, y el último es Judas Iscariote.
 # Cobertura: los libros que llegaron de main después de estas decisiones citan en su tramo el cargo que ellas crearon.
+- file: coverage/genesis
+  chapter: 26
+  span: 34-35
+  mentions: [person:ada-hija-de-elon, relation:ada-hija-de-elon/same_as/basemat-hija-de-elon]
+  sources: [genesis-26]
+  reason: Gé 26:34 nombra a Basemat, hija de Elón, y la razón de la identidad con Adá cita ese versículo, como el tramo de
+    Judit en Gé 36:1-5.
 - file: coverage/hechos
   chapter: 24
   span: '27'

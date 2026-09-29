@@ -192,9 +192,9 @@ Un hecho anidado es un objeto de una ficha que lleva `sources` y `reason` propio
 
 **Lo que no es un hecho anidado.** Tres clases de objeto llevan fuentes propias y no llevan `reason`: las 6 fechas de `alternatives`, los 44 `context_origin` y `context_destination` de las 22 cartas y las 199 entradas de `history`. Toman el `checked_on` y el `status` de la ficha que los contiene. Una entrada de `history` lleva además el día del cambio en su `date`.
 
-**La revisión anual lee también las fechas anidadas.** `review.py` (hoy [`revisar.py`](../../scripts/revisar.py)) lista un fichero cuando su fecha o la de alguno de sus hechos anidados es más antigua que el límite, una vez por fichero y con la fecha más antigua. El día de la migración su salida es la de hoy, porque cada fecha anidada es copia de la de su fichero.
+**La revisión anual lee también las fechas anidadas.** [`review.py`](../../scripts/review.py) lista un fichero cuando su fecha o la de alguno de sus hechos anidados es más antigua que el límite, una vez por fichero y con la fecha más antigua. El día de la migración su salida es la de hoy, porque cada fecha anidada es copia de la de su fichero.
 
-Después de la migración, `apply.py` (hoy [`aplicar.py`](../../scripts/aplicar.py)) pone `checked_on` en cada relación que añade, con el día `leido` de la propuesta, y lo actualiza en la relación a la que añade una fuente.
+Después de la migración, [`apply.py`](../../scripts/apply.py) pone `checked_on` en cada relación que añade, con el día `leido` de la propuesta, y lo actualiza en la relación a la que añade una fuente.
 
 ## 5. Relaciones
 

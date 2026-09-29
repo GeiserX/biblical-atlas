@@ -29,7 +29,7 @@ not_claimed:
 relations:
 - type: succeeds
   person: ciro
-  inferred: false
+  inferred: true
   sources:
   - it-ciro
   - it-persia

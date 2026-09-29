@@ -34,11 +34,11 @@ relations:
 - type: tie
   person: natanael
   word: friend
-  inferred: false
+  inferred: true
   sources:
   - juan-1
   - it-natanael
-  reason: Jn 1:45; Perspicacia «Natanael» (párr. 3) dice que fue a buscar a su amigo.
+  reason: Jn 1:45 dice que Felipe encontró a Natanael; que era su amigo lo dice Perspicacia «Natanael», párr. 3.
   checked_on: '2026-09-29'
   status: verified
 - type: disciple_of

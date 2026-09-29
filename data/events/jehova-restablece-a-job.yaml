@@ -32,9 +32,11 @@ roles:
       to: -1472
       precision: year
       approx: true
-      type: anchored
+      type: derived
       chronology: tnm
       text: c. 1473 a.e.c.
+      note: 'Perspicacia «Job»: Moisés acabó el libro hacia 1473 a.e.c., probablemente poco después de la muerte de Job, que
+        vivió 140 años más tras la prueba (Job 42:16).'
   jemima: born
   quesias: born
   queren-hapuc: born
@@ -56,4 +58,4 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
   type: bible
 checked_on: '2026-09-29'
-status: verified
+status: pending

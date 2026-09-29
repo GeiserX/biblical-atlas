@@ -39,7 +39,7 @@ relations:
     type: anchored
     chronology: tnm
     text: 14 e.c.
-  inferred: false
+  inferred: true
   sources:
   - it-tiberio
   reason: 'Perspicacia «Tiberio»: Augusto lo escogió como sucesor y, tras su muerte, el Senado lo nombró emperador en 14 e.c.'
