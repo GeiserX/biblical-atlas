@@ -14,6 +14,10 @@ fuentes:
 - it-eleazar
 - exodo-6
 - exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Eleazar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
@@ -30,6 +34,7 @@ relaciones:
   - exodo-6
   - it-eleazar
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -56,6 +61,14 @@ relaciones:
   fuentes:
   - it-eleazar
   razon: 'Perspicacia «Eleazar», núm. 1: tenía más de veinte años cuando Israel salió de Egipto.'
+  estado: verificado
+- tipo: pariente
+  persona: itamar
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - levitico-10
+  razon: Le 10:6, 12 y 16 nombran juntos a Eleazar e Itamar como los dos hijos vivos de Aarón.
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

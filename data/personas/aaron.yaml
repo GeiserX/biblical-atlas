@@ -42,6 +42,23 @@ fuentes:
 - exodo-32
 - exodo-34
 - exodo-40
+- levitico-2
+- levitico-6
+- levitico-7
+- levitico-8
+- it-instalacion
+- it-sumo-sacerdote
+- levitico-9
+- levitico-10
+- levitico-11
+- levitico-13
+- levitico-14
+- levitico-15
+- levitico-16
+- levitico-17
+- levitico-21
+- levitico-22
+- levitico-24
 enlaces:
 - titulo: 'Perspicacia: «Aarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
@@ -122,6 +139,15 @@ relaciones:
   - exodo-7
   - it-aaron
   razon: 'Perspicacia «Aarón», párr. 2 y 4: nació en Egipto y allí se enfrentó al faraón a los 83 años (Éx 7:7).'
+  estado: verificado
+- tipo: pariente
+  persona: uziel-hijo-de-cohat
+  relacion: tío
+  deducido: false
+  fuentes:
+  - levitico-10
+  - it-uziel
+  razon: Le 10:4 llama a Uziel tío de Aarón.
   estado: verificado
 perspicacia: '1200000005'
 consultado: '2026-09-29'
