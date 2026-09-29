@@ -57,5 +57,8 @@ history:
     estudio 3.
   source: tnm-a6-b
 perspicacia: 1200002525#1
+disambiguation: El rey de Judá, hijo de Amón; no Josías hijo de Sofonías, que vivía en Jerusalén después del destierro.
 checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- josias-hijo-de-sofonias

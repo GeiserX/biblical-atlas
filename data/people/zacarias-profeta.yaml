@@ -26,6 +26,17 @@ sources:
 - it-ageo
 - zacarias-1
 - tnm-tabla
+- it-zacarias-libro
+- it-berekias
+- zacarias-2
+- zacarias-3
+- zacarias-4
+- zacarias-5
+- zacarias-6
+- zacarias-7
+- zacarias-8
+- zacarias-11
+- si-zacarias
 links:
 - title: 'Perspicacia: «Zacarías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
@@ -46,13 +57,52 @@ relations:
     type: anchored
     chronology: tnm
     text: 520-518 a.e.c.
-  inferred: false
+  inferred: true
   sources:
   - it-zacarias
   - tnm-tabla
-  reason: 'Perspicacia «Zacarías», núm. 20: animó a los repatriados en Jerusalén; la Tabla de los libros sitúa allí la escritura
-    de su libro.'
+  - zacarias-7
+  - si-zacarias
+  - esdras-5
+  reason: 'Deducido: ningún versículo dice dónde vivía. Esd 5:1 lo pone hablando a los judíos de Judá y Jerusalén; en Zac
+    7:1-5 responde a la consulta hecha en el templo, y la tabla de los libros pone allí su libro.'
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: berekias-hijo-de-ido
+  word: father
+  sources:
+  - zacarias-1
+  - it-zacarias
+  - it-berekias
+  reason: 'Zac 1:1, 7: el profeta se presenta como hijo de Berekías, hijo de Idó.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: prophet
+  date:
+    from: -519
+    to: -517
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520-518 a.e.c.
+  sources:
+  - zacarias-1
+  - it-zacarias
+  - it-zacarias-libro
+  reason: Zac 1:1, 7 lo llaman profeta. Perspicacia «Zacarías», núm. 20, da a sus mensajes dos años y un mes, del año segundo
+    al cuarto de Darío.
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: 1200004681#20
+history:
+- date: '2026-09-29'
+  change: 'La residencia en Jerusalén pasa a deducida (inferred: true): ningún versículo la afirma. La razón cita ahora Esd
+    5:1 y Zac 7:1-5.'
+  source: zacarias-7
 checked_on: '2026-09-29'
 status: verified

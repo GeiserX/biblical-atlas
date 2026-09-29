@@ -9,6 +9,8 @@ names:
   note: 'Otro nombre bíblico: cerraba por el oeste la tierra dada a Israel (Perspicacia).'
 - name: Mediterráneo
   note: Nombre actual, de origen latino.
+- name: Mar del oeste
+  note: Así lo llama Zac 14:8; la nota al pie aclara que es el Mediterráneo.
 type: sea
 lat: 31.804819
 lon: 34.17035
@@ -28,6 +30,7 @@ sources:
 - joel-2
 - josue-1
 - josue-15
+- zacarias-14
 links:
 - title: 'Perspicacia: «Mar Grande»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001763
