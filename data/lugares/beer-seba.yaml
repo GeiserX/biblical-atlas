@@ -5,6 +5,8 @@ nombres:
 - nombre: Beer-Seba
 - nombre: Beer-seba
   nota: Grafía de Perspicacia.
+- nombre: Sibá
+  nota: Nombre que Isaac dio al pozo que cavaron sus siervos; de él viene el de la ciudad.
 tipo: ciudad
 lat: 31.244722
 lon: 34.840833
@@ -18,6 +20,10 @@ fuentes:
 - it-beer-seba
 - genesis-21
 - openbible-geo
+- genesis-22
+- genesis-26
+- genesis-28
+- genesis-46
 enlaces:
 - titulo: 'Perspicacia: «Beer-seba»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000615
@@ -25,5 +31,5 @@ enlaces:
 - titulo: Génesis 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

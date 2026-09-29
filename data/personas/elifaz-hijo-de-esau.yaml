@@ -53,5 +53,7 @@ relaciones:
   - genesis-36
   razon: 'Gé 36:5, 6: Esaú tuvo a sus hijos en Canaán antes de irse a Seír.'
   estado: verificado
+no_confundir_con:
+- elifaz-el-temanita
 consultado: '2026-09-29'
 estado: verificado

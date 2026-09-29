@@ -20,6 +20,8 @@ fuentes:
 - it-eva
 - genesis-2
 - genesis-4
+- genesis-1
+- genesis-3
 enlaces:
 - titulo: 'Perspicacia: «Eva»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001450
@@ -42,7 +44,10 @@ relaciones:
   deducido: false
   fuentes:
   - it-eva
+  - genesis-2
+  - genesis-3
   razon: 'Perspicacia «Eva», párr. 6: Dios los sacó a los dos del jardín de Edén (Gé 3:23, 24).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200001450'
+consultado: '2026-09-29'
 estado: verificado

@@ -21,6 +21,13 @@ fuentes:
 - si-3
 - it-esau
 - genesis-25
+- genesis-26
+- genesis-27
+- genesis-28
+- genesis-32
+- genesis-33
+- genesis-35
+- genesis-36
 enlaces:
 - titulo: 'Perspicacia: «Esaú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001417
@@ -54,7 +61,93 @@ relaciones:
   fuentes:
   - it-esau
   - genesis-25
+  - genesis-32
+  - genesis-33
   razon: 'Perspicacia «Esaú», párr. 2: hermano mellizo de Jacob (Gé 25:24-26).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: judit
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-judit
+  - genesis-26
+  razon: 'Gé 26:34: a los 40 años se casó con Judit.'
+  estado: verificado
+- tipo: pariente
+  persona: basemat-hija-de-elon
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-basemat
+  - genesis-26
+  razon: 'Gé 26:34: también se casó con Basemat hija de Elón.'
+  estado: verificado
+- tipo: pariente
+  persona: mahalat-hija-de-ismael
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-28
+  - it-esau
+  - it-mahalat
+  razon: 'Gé 28:9: además de las esposas que ya tenía, se casó con Mahalat, hija de Ismael.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: seir
+  deducido: false
+  fuentes:
+  - it-esau
+  - it-seir
+  - genesis-32
+  - genesis-33
+  - it-edom
+  - genesis-36
+  razon: 'Gé 32:3: cuando Jacob volvió, Esaú vivía en Seír, en Edom. Perspicacia «Seír», núm. 2.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edom
+  deducido: false
+  fuentes:
+  - it-edom
+  - genesis-32
+  razon: 'Gé 32:3: la tierra de Seír donde estaba Esaú era el territorio de Edom.'
+  estado: verificado
+- tipo: pariente
+  persona: ada-hija-de-elon
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-ada
+  - genesis-36
+  razon: 'Gé 36:2, 10: Esaú se casó con Adá.'
+  estado: verificado
+- tipo: pariente
+  persona: oholibama-hija-de-ana
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-oholibama
+  - genesis-36
+  razon: 'Gé 36:2, 14: Esaú se casó con Oholibamá.'
+  estado: verificado
+- tipo: pariente
+  persona: basemat-hija-de-ismael
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-basemat
+  - genesis-36
+  razon: 'Gé 36:3, 10: Esaú se casó con Basemat.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - it-esau
+  - genesis-36
+  razon: 'Gé 36:5, 6: tuvo hijos y acumuló riquezas en la tierra de Canaán.'
+  estado: verificado
+perspicacia: '1200001417'
+consultado: '2026-09-29'
 estado: verificado

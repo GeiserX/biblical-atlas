@@ -12,6 +12,12 @@ razon: Perspicacia «Benjamín», núm. 1, párr. 2 y 3; Gé 35:16-19 y 43:1-15.
 fuentes:
 - it-benjamin
 - genesis-35
+- genesis-42
+- genesis-43
+- genesis-44
+- genesis-45
+- genesis-46
+- genesis-49
 enlaces:
 - titulo: 'Perspicacia: «Benjamín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000640
@@ -27,6 +33,9 @@ relaciones:
   fuentes:
   - it-benjamin
   - genesis-35
+  - genesis-44
+  - genesis-46
+  - genesis-49
   razon: 'Perspicacia «Benjamín», párr. 2: Raquel lo dio a luz camino de Belén y murió en el parto (Gé 35:16-19).'
   estado: verificado
 - tipo: pariente
@@ -36,7 +45,45 @@ relaciones:
   fuentes:
   - it-benjamin
   - genesis-35
+  - genesis-44
+  - genesis-46
   razon: 'Perspicacia «Benjamín», párr. 2: Raquel lo dio a luz camino de Belén y murió en el parto (Gé 35:16-19).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: jose-hijo-de-jacob
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-42
+  - genesis-43
+  - genesis-45
+  razon: Gé 42:4 lo llama hermano de José, y Gé 43:29, hijo de la misma madre.
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - genesis-35
+  - it-benjamin
+  razon: 'Gé 35:6, 16-19: nace en el camino de Betel, ya en Canaán, a Efrat. Perspicacia «Benjamín», núm. 1: el único de los
+    hijos de Jacob nacido en Canaán.'
+  estado: verificado
+perspicacia: 1200000640#1
+consultado: '2026-09-29'
 estado: verificado
