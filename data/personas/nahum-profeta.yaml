@@ -11,12 +11,16 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: antes de 632 a.e.c.
-resumen: Profeta elqosita que anunció la caída de Nínive. Parece que escribió en Judá, antes de 632 a.e.c.
+resumen: Profeta elcosita, es decir, de Elqós, que anunció la caída de Nínive. Parece que escribió en Judá, antes de 632 a.e.c.
 razon: Perspicacia «Nahúm», núm. 1; Na 1:1. La Tabla de los libros cierra el libro antes de 632.
 fuentes:
 - it-nahum
 - nahum-1
 - tnm-tabla
+- it-elqosita
+- it-nahum-libro
+- si-nahum
+- w07-nahum-habacuc-y-sofonias
 enlaces:
 - titulo: 'Perspicacia: «Nahúm»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003172
@@ -24,8 +28,37 @@ enlaces:
 - titulo: Nahúm 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/1
   tipo: biblia
+- titulo: 'Perspicacia: «Elqosita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001327
+  tipo: perspicacia
 desambiguacion: El profeta que escribió el libro de Nahúm; no Nahúm hijo de Eslí, antepasado de Jesús.
+perspicacia: 1200003172#1
+historial:
+- fecha: '2026-09-29'
+  cambio: El gentilicio pasa a la grafía de la TNM, «elcosita» (Na 1:1); «elqosita» es la de Perspicacia.
+  fuente: nahum-1
 consultado: '2026-09-29'
 estado: verificado
 no_confundir_con:
 - nahum-hijo-de-esli
+relaciones:
+- tipo: vivio_en
+  lugar: elqos
+  deducido: false
+  fuentes:
+  - nahum-1
+  - it-elqosita
+  - it-nahum
+  razon: Na 1:1 lo llama el elcosita; Perspicacia entiende que vivía en Elqós.
+  estado: verificado
+- tipo: vivio_en
+  lugar: juda
+  deducido: true
+  fuentes:
+  - nahum-1
+  - w07-nahum-habacuc-y-sofonias
+  - it-nahum
+  - si-nahum
+  razon: La Atalaya de 2007 lo llama profeta de Judá. Perspicacia y «Toda Escritura» solo lo dan como probable, por el mensaje
+    a Judá de Na 1:15.
+  estado: pendiente

@@ -11,18 +11,35 @@ fecha:
   texto: 632 a.e.c.
 lugares:
 - ninive
-personas: []
+- rio-tigris
+personas:
+- nabopolasar
+- ciaxares
 pasajes:
 - Na 3:1-7
 - Sof 2:13
 resumen: Babilonios, medos y escitas toman Nínive, la capital asiria, como habían anunciado Nahúm y Sofonías. Babilonia
   se encamina a ser la tercera potencia mundial.
-razon: Perspicacia «Asiria» cita la Crónica de Babilonia para el año 632 a.e.c.; «Veamos “la buena tierra”» y el cuadro
-  del estudio 3 dan el mismo año.
+razon: 'Perspicacia «Asiria» y «Nínive»: Nabopolasar, ayudado por el medo Ciaxares, la tomó en su año 14, 632 a.e.c., fecha
+  que repiten «Veamos “la buena tierra”» y el estudio 3. La crecida del Tigris, en La Atalaya.'
 fuentes:
 - it-asiria
 - lbt-imperios
 - si-3
+- it-ninive
+- it-medos
+- si-nahum
+- w07-nahum-habacuc-y-sofonias
+- w89-salvacion-venganza
 buscar: caída de Nínive 632
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añaden Nabopolasar y Ciaxares a las personas, y el Tigris a los lugares, porque Perspicacia y La Atalaya de 1989
+    y 2007 los nombran en la toma de Nínive.
+  fuente: it-ninive
+consultado: '2026-09-29'
 estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Nínive»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003261
+  tipo: perspicacia

@@ -38,5 +38,23 @@ relaciones:
   - daniel-4
   razon: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: nabopolasar
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-nabucodonosor
+  - it-medos
+  razon: Perspicacia «Nabucodonosor», párr. 1, y «Medos, Media», párr. 12, lo hacen hijo de Nabopolasar; la Biblia no nombra
+    a su padre.
+  estado: verificado
+- tipo: sucede_a
+  persona: nabopolasar
+  deducido: true
+  fuentes:
+  - it-nabucodonosor
+  razon: 'Perspicacia «Nabucodonosor», párr. 1 y 3: segundo rey neobabilonio; al saber que su padre había muerto regresó a
+    Babilonia y ocupó el trono.'
+  estado: verificado
+consultado: '2026-09-29'
 estado: verificado

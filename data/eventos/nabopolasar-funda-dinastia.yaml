@@ -11,7 +11,8 @@ fecha:
   texto: c. 645 a.e.c.
 lugares:
 - babilonia
-personas: []
+personas:
+- nabopolasar
 pasajes: []
 resumen: Con Asiria en declive, Nabopolasar empieza en Babilonia una nueva dinastía. Su hijo Nabucodonosor II llevará la
   ciudad a su mayor esplendor.
@@ -19,5 +20,5 @@ razon: Perspicacia «Babilonia» (núm. 1, apartado «Historia») fecha hacia 64
 fuentes:
 - it-babilonia
 buscar: Nabopolasar
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado
