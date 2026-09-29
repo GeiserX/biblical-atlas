@@ -116,6 +116,7 @@ fuentes:
 - hch-13
 - hch-18
 - hch-23
+- romanos-1
 no_afirmamos:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -302,6 +303,7 @@ relaciones:
   - lucas-20
   - hch-2
   - hch-13
+  - romanos-1
   razon: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
   estado: verificado
 - tipo: pariente

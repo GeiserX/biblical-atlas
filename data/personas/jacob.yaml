@@ -46,6 +46,7 @@ fuentes:
 - lucas-3
 - juan-4
 - hechos-7
+- romanos-9
 - deuteronomio-26
 - it-aram
 - oseas-12
@@ -68,6 +69,7 @@ relaciones:
   - genesis-48
   - lucas-3
   - hechos-7
+  - romanos-9
   razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
   estado: verificado
 - tipo: pariente
@@ -77,6 +79,7 @@ relaciones:
   fuentes:
   - it-jacob
   - genesis-25
+  - romanos-9
   razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
   estado: verificado
 - tipo: vivio_en

@@ -68,11 +68,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **La unción de David (1Sa 16).** Hch 13:22 la recuerda. Cuando 1 Samuel cree el suceso, añade «Hch 13:22» a sus pasajes y lo pone en el tramo 16-22 de Hechos 13 (`data/cobertura/hechos.yaml`).
 - **Nob.** La nota de estudio de Mr 2:26 pone allí la casa de Dios donde David comió los panes. Ni Mateo 12 ni Marcos 2 nombran Nob, así que no tiene ficha: la crea 1 Samuel 21.
 
-## Para Romanos
-
-- **Rufo.** `rufo-hijo-de-simon` (clave `1200003769#1`, Mr 15:21) ya existe. El Rufo de Ro 16:13 es la entrada núm. 2 de Perspicacia «Rufo» (`1200003769#2`): va en ficha aparte, con `no_confundir_con` en las dos.
-- **Áquila y Priscila en Roma.** Desde Hch 18:2 las dos fichas llevan `vivio_en` `roma` sin fecha: vivían allí antes del decreto de Claudio y volvieron hacia 56. Ro 16:3-5 añade `romanos-16` a las fuentes de la de Priscila; la de Áquila ya lo cita.
-
 ## Para 1 Timoteo y 2 Timoteo
 
 - **Alejandro.** Ya existen `alejandro-hijo-de-simon` (`1200000192#2`, Mr 15:21), `alejandro-pariente-de-anas` (`#3`, Hch 4:6) y `alejandro-de-efeso` (`#4`, Hch 19:33). El de 1Ti 1:20 es la entrada núm. 5 y el calderero de 2Ti 4:14, la núm. 6; Perspicacia ve posible que sean el mismo, así que van dos fichas y un `mismo_que` pendiente. Todos llevan `no_confundir_con` entre sí.
@@ -92,6 +87,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Obras y riqueza de Salomón.** Ec 2:4-9 cuenta sus casas, viñas, estanques, siervos, oro y cantores, que narran 1Re 7:1-8, 9:17-19 y 10:14-29. Cuando 1 Reyes cree esos sucesos, añade «Ec 2:4-9» a sus `pasajes` y el suceso al tramo 1-11 de `data/cobertura/eclesiastes.yaml`. El único que ya existe, `flota-de-salomon-a-ofir`, lleva Ec 2:8 desde Eclesiastés.
 
 - **La muerte de David (1Re 2:10).** `david` ya lleva `murio_en` `jerusalen`, deducida de Hch 2:29. Cuando 1 Reyes cuente su muerte, añade su capítulo a las fuentes de esa relación con un `anadir`, sin crear otra.
+- **Elías en el Horeb (1Re 19:9-18).** Ro 11:2-4 recuerda su queja y los 7.000 que no se arrodillaron ante Baal. Cuando 1 Reyes cree ese suceso, añade «Ro 11:2-4» a sus pasajes y lo pone en el tramo 1-6 de Romanos 11, donde ahora `elias-profeta` está en `menciona`.
 
 ## Para 2 Reyes
 
@@ -231,4 +227,16 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Gálatas y 1 Corintios
 
 - **Pasajes ya puestos en sucesos de Hechos.** Gál 1:15, 16 y 1Co 15:8 en `conversion-de-pablo`; Gál 1:18, 19 en `pablo-visita-a-cefas`; Gál 2:1-10 en `concilio-de-jerusalen-49`; 1Co 1:14 en `crispo-cree`. Van en los tramos de esos capítulos. Hechos es el dueño de estos sucesos (sección 6 de `versiculos.md`).
+
+## Para 1 Corintios, 2 Corintios y Hechos
+
+- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1Co 16:1-4 y 2Co 8 y 9 añaden su pasaje con un `anadir` y ponen el suceso en su tramo. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
+
+## Para 2 Corintios y Filipenses
+
+- **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). 2Co 11:22 y Flp 3:5 solo añaden su capítulo a las fuentes de esas relaciones, sin crear otras.
+
+## Para 1 Corintios y 2 Timoteo
+
+- **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`. 1Co 16:19 y 2Ti 4:19 añaden su capítulo a las fuentes de esa relación, sin crear otra.
 

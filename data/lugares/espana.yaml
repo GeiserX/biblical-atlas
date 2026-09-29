@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: espana
+nombre: España
+nombres:
+- nombre: España
+tipo: pais
+lat: 40.21
+lon: -4.35
+precision: zona
+coord_fuente: openbible:a3f0f69
+coord_url: https://www.openbible.info/geo/ancient/a3f0f69/spain
+coord_nota: Punto representativo de OpenBible para toda la península ibérica.
+resumen: País de la península ibérica, en el suroeste de Europa, dominado entonces por Roma. Pablo pensaba ir allí pasando
+  por Roma; no se sabe si llegó a hacerlo.
+razon: 'Perspicacia «España»; Ro 15:24, 28 y la nota de estudio del v. 24, que pondría el viaje, si lo hubo, entre sus dos
+  encierros en Roma. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-espana
+- romanos-15
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «España»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004198
+  tipo: perspicacia
+- titulo: Romanos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

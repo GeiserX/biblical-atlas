@@ -25,7 +25,8 @@ enlaces:
 - titulo: Romanos 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200002554'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -35,4 +36,24 @@ relaciones:
   - it-junias
   - romanos-16
   razon: Recibe el saludo de Pablo en Roma (Ro 16:7).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  relacion: compañero de prisión
+  relacion_inversa: compañero de prisión
+  deducido: false
+  fuentes:
+  - romanos-16
+  - it-junias
+  razon: Ro 16:7 lo cuenta, con Andrónico, entre los compañeros de prisión de Pablo. Ni el texto ni Perspicacia dicen dónde
+    ni cuándo.
+  estado: verificado
+- tipo: pariente
+  persona: pablo
+  deducido: false
+  fuentes:
+  - romanos-16
+  - it-junias
+  razon: 'Ro 16:7: Pablo lo llama pariente suyo, junto con Andrónico. Perspicacia «Junias» da como sentido principal el de
+    familiar de sangre.'
   estado: verificado
