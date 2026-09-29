@@ -12,6 +12,8 @@ fecha:
 lugares: []
 personas:
 - isaac
+- abrahan
+- sara
 pasajes:
 - Gé 21:1-7
 - Hch 13:17-20
@@ -24,5 +26,5 @@ fuentes:
 - it-exodo
 - genesis-21
 buscar: nacimiento de Isaac
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

@@ -30,5 +30,18 @@ enlaces:
 no_afirmamos:
 - 'Que Dios se llevara a Enoc al cielo: Perspicacia lo descarta por Juan 3:13.'
 - 'Que Enoc escribiera el «Libro de Enoc»: es un apócrifo de siglos después.'
-consultado: '2026-09-28'
+perspicacia: 1200001371#2
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- enoc-hijo-de-cain
+relaciones:
+- tipo: pariente
+  persona: jared
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-5
+  - it-enoc
+  razon: 'Gé 5:18: Jared tuvo a Enoc cuando contaba 162 años.'
+  estado: verificado

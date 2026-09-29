@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-angel-habla-a-agar
+titulo: El ángel de Jehová encuentra a Agar junto al pozo
+fecha:
+  desde: -1932
+  hasta: -1931
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1933 y 1932 a.e.c. (tiempo narrativo: a los diez años en Canaán y antes de nacer Ismael)'
+orden_relato:
+  serie: genesis
+  orden: 16007
+lugares:
+- beer-lahai-roi
+- sur
+- cades
+- bered
+personas:
+- agar
+pasajes:
+- Gé 16:7-14
+resumen: En el desierto, junto a un manantial del camino hacia Sur, el ángel de Jehová manda a Agar volver con su ama y le
+  anuncia un hijo, Ismael. Ella llama a aquel pozo Beer-Lahái-Roí.
+razon: 'Mismos límites que la entrega de Agar: entre 1933 y 1932 a.e.c. (estudio 3). Perspicacia «Beer-lahai-roí», párr. 2,
+  y «Agar», párr. 3. El pozo no tiene sitio seguro.'
+fuentes:
+- si-3
+- it-beer-lahai-roi
+- it-agar
+- genesis-16
+enlaces:
+- titulo: Génesis 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

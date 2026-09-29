@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: betuel
+nombre: Betuel
+nombres:
+- nombre: Betuel
+desambiguacion: El padre de Rebeca; no la ciudad de Betuel, en el sur de Judá.
+perspicacia: '1200000714'
+resumen: Hijo de Nacor y Milcá y sobrino de Abrahán. Fue el padre de Rebeca, la que se casó con Isaac.
+razon: Perspicacia «Betuel», núm. 1; Gé 22:22, 23.
+fuentes:
+- it-betuel
+- genesis-22
+- genesis-24
+- genesis-25
+- genesis-28
+enlaces:
+- titulo: 'Perspicacia: «Betuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000714
+  tipo: perspicacia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+- titulo: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  tipo: biblia
+- titulo: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-betuel
+  - genesis-24
+  razon: 'Gé 22:20-23: hijo de Nacor, el hermano de Abrahán.'
+  estado: verificado
+- tipo: pariente
+  persona: milca-hija-de-haran
+  relacion: madre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-betuel
+  - genesis-24
+  razon: 'Gé 22:20-23: uno de los ocho hijos que Milcá dio a Nacor.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ciudad-de-nacor
+  deducido: false
+  fuentes:
+  - genesis-24
+  razon: 'Gé 24:10, 23, 24: su casa estaba en la ciudad de Nacor, en Mesopotamia.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: padan-aram
+  deducido: false
+  fuentes:
+  - it-betuel
+  - genesis-25
+  - genesis-28
+  razon: 'Gé 25:20: Betuel el arameo, de Padán-Aram.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

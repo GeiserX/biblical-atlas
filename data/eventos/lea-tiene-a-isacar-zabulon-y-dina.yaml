@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lea-tiene-a-isacar-zabulon-y-dina
+titulo: Las mandrágoras de Rubén; Lea tiene a Isacar, Zabulón y Dina
+fecha:
+  desde: -1773
+  hasta: -1766
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1774 y 1767 a.e.c. (tiempo narrativo: entre la boda de Jacob con Lea y el nacimiento de José)'
+orden_relato:
+  serie: genesis
+  orden: 30014
+lugares:
+- haran
+personas:
+- lea
+- ruben-hijo-de-jacob
+- raquel
+- jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- dina
+pasajes:
+- Gé 30:14-21
+resumen: En la cosecha del trigo, Rubén trae mandrágoras a su madre. Raquel se las pide y a cambio deja que Jacob pase la
+  noche con Lea. Lea da a luz a Isacar, luego a Zabulón y después a Dina.
+razon: 'Entre la boda (1774) y el nacimiento de José (1767), del estudio 3. Perspicacia: Isacar tendría unos 8 años y Dina
+  unos 6 al volver Jacob a Canaán en 1761.'
+fuentes:
+- si-3
+- it-isacar
+- it-dina
+- genesis-30
+enlaces:
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

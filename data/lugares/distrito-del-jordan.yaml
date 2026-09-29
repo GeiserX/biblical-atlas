@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: distrito-del-jordan
+nombre: Distrito del Jordán
+nombres:
+- nombre: Distrito del Jordán
+- nombre: El Distrito
+  nota: Forma breve de Gé 13:12, «las ciudades del distrito».
+tipo: valle
+lat: 32.317222
+lon: 35.57
+precision: zona
+coord_fuente: openbible:aa54aa4
+coord_url: https://www.openbible.info/geo/ancient/aa54aa4/jordan-valley
+coord_nota: Punto representativo de OpenBible para el valle del Jordán. El Distrito llegaba al sur hasta Zóar, junto al extremo
+  del mar Salado.
+resumen: Cuenca baja del Jordán que, según parece, llegaba hasta el sur del mar Salado, donde estaban Sodoma y las demás ciudades
+  del Distrito. Lot la eligió por lo bien regada que estaba.
+razon: 'Perspicacia «Jordán, Distrito del», párr. 1 y 2; Gé 13:10-12. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-distrito-del-jordan
+- openbible-geo
+- genesis-13
+- genesis-19
+enlaces:
+- titulo: 'Perspicacia: «Jordán, Distrito del»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001198
+  tipo: perspicacia
+- titulo: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

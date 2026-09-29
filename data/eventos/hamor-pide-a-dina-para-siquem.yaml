@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hamor-pide-a-dina-para-siquem
+titulo: Hamor pide a Dina para su hijo y los siquemitas se circuncidan
+fecha:
+  desde: -1760
+  hasta: -1750
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+orden_relato:
+  serie: genesis
+  orden: 34005
+lugares:
+- siquem
+personas:
+- hamor
+- siquem-hijo-de-hamor
+- jacob
+- dina
+pasajes:
+- Gé 34:5-24
+resumen: Hamor propone a Jacob y a sus hijos casamientos y tierra. Ellos, con engaño, exigen que se circunciden todos los
+  varones. Hamor y Siquem convencen a su ciudad en la puerta.
+razon: 'Estudio 3: Jacob vuelve a Canaán en 1761 a.e.c. Benjamín, que nace más adelante en el relato, tenía de 40 a 50 años
+  cuando murió Jacob en 1711 (Perspicacia «Benjamín», núm. 1). Perspicacia «Dina»: ya no era una niña.'
+fuentes:
+- si-3
+- it-benjamin
+- it-dina
+- it-siquem
+- genesis-34
+enlaces:
+- titulo: Génesis 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

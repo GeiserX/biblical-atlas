@@ -3,6 +3,8 @@ id: teman
 nombre: Temán
 nombres:
 - nombre: Temán
+- nombre: Tierra de los temanitas
+  nota: Así la llama Gé 36:34.
 tipo: region
 lat: 30.745843
 lon: 35.603919
@@ -23,6 +25,7 @@ fuentes:
 - job-15
 - job-22
 - job-42
+- genesis-36
 enlaces:
 - titulo: 'Perspicacia: «Temán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004356
@@ -35,6 +38,9 @@ enlaces:
   tipo: biblia
 - titulo: Job 42 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  tipo: biblia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

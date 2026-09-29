@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-llora-a-jose
+titulo: Engañan a Jacob con la túnica de José
+fecha:
+  desde: -1749
+  hasta: -1749
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1750 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 37031
+lugares:
+- hebron
+personas:
+- jacob
+- jose-hijo-de-jacob
+presentes:
+- jacob
+pasajes:
+- Gé 37:31-35
+resumen: Los hermanos mojan la túnica de José en sangre de cabrito y se la mandan a Jacob, que cree que una fiera lo ha devorado.
+  Guarda luto muchos días y no admite consuelo.
+razon: Sigue a la venta de 1750 a.e.c. (estudio 3). Perspicacia «Jacob» cuenta el duelo justo después. Jacob seguía en Hebrón
+  (Gé 37:14).
+fuentes:
+- genesis-37
+- si-3
+- it-jacob
+enlaces:
+- titulo: Génesis 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/37
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

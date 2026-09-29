@@ -5,14 +5,17 @@ nombres:
 - nombre: Monte Moria
 - nombre: Monte del templo
   nota: Nombre de la lámina B11 para el recinto del templo en el siglo I.
+- nombre: Tierra de Moria
+  nota: Región de montañas que, según Perspicacia, rodeaba el sitio de Jerusalén; en una de ellas iba a ofrecer Abrahán a
+    Isaac.
 tipo: monte
 lat: 31.777778
 lon: 35.235556
 precision: punto
 coord_fuente: openbible:aac1fcf
 coord_url: https://www.openbible.info/geo/ancient/aac1fcf/mount-moriah
-resumen: Elevación rocosa de Jerusalén donde Salomón construyó el templo. En el siglo I la ocupaba el templo que
-  amplió Herodes, donde Jesús enseñó y que limpió de comerciantes dos veces.
+resumen: Elevación rocosa de Jerusalén donde Salomón construyó el templo; Perspicacia sitúa allí el intento de Abrahán de
+  ofrecer a Isaac. En el siglo I la ocupaba el templo que amplió Herodes, donde enseñó Jesús.
 razon: 'Perspicacia «Moria» (párr. 2), la lámina B11 y «Jerusalén y el templo que Jesús conoció» (párr. 1-2). La
   coordenada es de OpenBible: solo tomamos el punto.'
 fuentes:
@@ -23,6 +26,9 @@ fuentes:
 - mateo-21
 - mateo-23
 - mateo-24
+- genesis-22
+- it-abrahan
+- it-jehova-yire
 enlaces:
 - titulo: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
@@ -31,5 +37,9 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/21
   tipo: biblia
 buscar: Monte Moria
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
+  fuente: genesis-22
 consultado: '2026-09-29'
 estado: verificado

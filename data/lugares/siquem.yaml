@@ -3,6 +3,8 @@ id: siquem
 nombre: Siquem
 nombres:
 - nombre: Siquem
+- nombre: Dios, el Dios de Israel
+  nota: Nombre que Jacob puso al altar que levantó junto a la ciudad (Gé 33:20).
 tipo: ciudad
 lat: 32.213611
 lon: 35.281944
@@ -17,6 +19,11 @@ fuentes:
 - it-siquem
 - openbible-geo
 - 1-reyes-12
+- genesis-12
+- genesis-33
+- genesis-34
+- genesis-35
+- genesis-37
 enlaces:
 - titulo: 'Perspicacia: «Siquem»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
@@ -24,5 +31,5 @@ enlaces:
 - titulo: 1 Reyes 12 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

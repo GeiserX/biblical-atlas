@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abrahan-deja-todo-a-isaac
+titulo: Abrahán deja todo a Isaac y envía al este a sus otros hijos
+fecha:
+  desde: -1880
+  hasta: -1842
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1881 y 1843 a.e.c. (tiempo narrativo: tras la muerte de Sara y en vida de Abrahán)'
+orden_relato:
+  serie: genesis
+  orden: 25001
+lugares: []
+personas:
+- abrahan
+- isaac
+- zimran
+- jocsan
+- medan
+- madian
+- isbac
+- suah
+presentes: []
+pasajes:
+- Gé 25:1-6
+resumen: Abrahán se casa con Queturá y tiene seis hijos más. Da todo lo que tiene a Isaac; a los hijos de sus concubinas les
+  hace regalos y los envía hacia el este, lejos de Isaac.
+razon: Perspicacia «Queturá», párr. 3, pone la boda tras la muerte de Sara (1881 a.e.c., estudio 3); el reparto es antes de
+  morir Abrahán en 1843 (Gé 25:6).
+fuentes:
+- it-quetura
+- si-3
+- genesis-25
+enlaces:
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

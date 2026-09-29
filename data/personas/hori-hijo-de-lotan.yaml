@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hori-hijo-de-lotan
+nombre: Horí
+nombres:
+- nombre: Horí
+perspicacia: 1200002077#1
+desambiguacion: Horí hijo de Lotán; no el simeonita padre del espía Safat.
+resumen: Descendiente de Seír el horeo por medio de su padre, Lotán.
+razon: Perspicacia «Horí», núm. 1; Gé 36:22.
+fuentes:
+- it-hori
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Horí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002077
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: lotan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-hori
+  - genesis-36
+  razon: 'Gé 36:22: hijo de Lotán.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

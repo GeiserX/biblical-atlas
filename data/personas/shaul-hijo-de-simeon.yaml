@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: shaul-hijo-de-simeon
+nombre: Shaúl
+nombres:
+- nombre: Shaúl
+perspicacia: 1200003960#2
+desambiguacion: Shaúl hijo de Simeón; no el rey de Edom ni el levita descendiente de Cohat.
+resumen: Último hijo de Simeón en la lista; su madre era una cananea sin nombre. Fundó la familia simeonita de los shaulitas.
+razon: Perspicacia «Shaúl», núm. 2; Gé 46:10.
+fuentes:
+- it-shaul
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Shaúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003960
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-shaul
+  razon: 'Gé 46:10: el último de los hijos de Simeón, hijo de una cananea.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

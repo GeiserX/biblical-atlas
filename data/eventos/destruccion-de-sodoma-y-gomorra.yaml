@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: destruccion-de-sodoma-y-gomorra
+titulo: Destrucción de Sodoma y Gomorra
+fecha:
+  desde: -1918
+  hasta: -1918
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1919 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 19024
+lugares:
+- sodoma
+- gomorra
+- distrito-del-jordan
+- zoar
+- mamre
+personas:
+- lot
+- abrahan
+presentes: []
+pasajes:
+- Gé 19:24-29
+resumen: Con Lot ya en Zóar, Jehová hace llover fuego y azufre sobre Sodoma, Gomorra y todo el Distrito. La esposa de Lot
+  mira atrás y se vuelve una columna de sal. Abrahán ve el humo de lejos.
+razon: 'Estudio 3: juicio de Sodoma y Gomorra en 1919 a.e.c. (Gé 19:24). Nadie con nombre estaba en Sodoma: Lot ya había llegado
+  a Zóar (19:23) y Abrahán vio el humo cerca de Mamré (19:27, 28; Perspicacia «Mamré», núm. 2).'
+fuentes:
+- genesis-19
+- si-3
+- it-sodoma
+- it-mamre
+enlaces:
+- titulo: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

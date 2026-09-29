@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tebah
+nombre: Tébah
+nombres:
+- nombre: Tébah
+perspicacia: '1200004336'
+resumen: Primero de los hijos que Nacor tuvo con su concubina Reumá.
+razon: Perspicacia «Tébah»; Gé 22:24.
+fuentes:
+- it-tebah
+- genesis-22
+enlaces:
+- titulo: 'Perspicacia: «Tébah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004336
+  tipo: perspicacia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-tebah
+  razon: 'Gé 22:24: hijo de Nacor, el hermano de Abrahán.'
+  estado: verificado
+- tipo: pariente
+  persona: reuma
+  relacion: madre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-tebah
+  razon: 'Gé 22:24: uno de los cuatro hijos que Reumá, la concubina de Nacor, le dio.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

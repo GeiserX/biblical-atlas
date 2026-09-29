@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oholibama-hija-de-ana
+nombre: Oholibamá
+nombres:
+- nombre: Oholibamá
+perspicacia: 1200003312#1
+desambiguacion: Oholibamá la esposa de Esaú; no el jeque Oholibamá de Gé 36:41.
+no_confundir_con:
+- oholibama-jeque-de-edom
+resumen: Una de las esposas de Esaú, cananea. Su padre era Aná y su abuelo, Zibeón el heveo. Sus hijos Jeús, Jalam y Coré
+  fueron jeques en Edom.
+razon: Perspicacia «Oholibamá», núm. 1, y «Anah»; Gé 36:2, 5, 14, 18, 25.
+fuentes:
+- it-oholibama
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Oholibamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003312
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ana-hijo-de-zibeon
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-anah
+  - genesis-36
+  razon: 'Gé 36:2, 25: hija de Aná.'
+  estado: verificado
+- tipo: pariente
+  persona: zibeon
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - it-oholibama
+  - genesis-36
+  razon: 'Gé 36:2, 14: nieta de Zibeón.'
+  estado: verificado
+- tipo: mismo_que
+  persona: judit
+  deducido: true
+  fuentes:
+  - it-esau
+  - genesis-36
+  razon: Perspicacia «Esaú», párr. 5, la da con duda como la misma esposa que Judit (Gé 36:2).
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

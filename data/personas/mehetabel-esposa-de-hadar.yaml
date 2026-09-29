@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mehetabel-esposa-de-hadar
+nombre: Mehetabel
+nombres:
+- nombre: Mehetabel
+perspicacia: 1200002961#1
+desambiguacion: Mehetabel esposa de Hadar; no el antepasado de Semaya, del tiempo de Nehemías.
+resumen: Mujer de Hadar, el último rey de Edom que nombra Gé 36. Su madre fue Matred, y su linaje se remonta a Mezahab.
+razon: Perspicacia «Mehetabel», núm. 1; Gé 36:39.
+fuentes:
+- it-mehetabel
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Mehetabel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002961
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: matred
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-matred
+  - genesis-36
+  razon: 'Gé 36:39: hija de Matred; Perspicacia «Matred» dice que era su madre.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

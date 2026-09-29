@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pau
+nombre: Paú
+nombres:
+- nombre: Paú
+tipo: ciudad
+lat: 31.121389
+lon: 35.19
+precision: incierto
+coord_fuente: openbible:a880de2
+coord_url: https://www.openbible.info/geo/ancient/a880de2/pau
+coord_nota: Perspicacia dice que no se conoce su ubicación; el punto es el de OpenBible y puede no ser el correcto.
+resumen: Ciudad de Edom donde residía el rey Hadar. Hoy no se conoce su ubicación.
+razon: 'Perspicacia «Paú»; Gé 36:39. OpenBible: solo el punto.'
+fuentes:
+- it-pau
+- openbible-geo
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Paú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003405
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

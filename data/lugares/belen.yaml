@@ -7,6 +7,8 @@ nombres:
   nota: Así se la distinguía de la Belén de Zabulón (nota de estudio de Mt 2:1).
 - nombre: Efrata
   nota: Nombre anterior de la ciudad, según Perspicacia (Gé 35:19; Miq 5:2).
+- nombre: Efrat
+  nota: Forma abreviada de Efrata, según Perspicacia; así la llama Gé 35:16, 19.
 tipo: ciudad
 lat: 31.704306
 lon: 35.207639
@@ -24,6 +26,9 @@ fuentes:
 - rut-1
 - rut-2
 - rut-4
+- genesis-35
+- genesis-48
+- it-efrata
 enlaces:
 - titulo: 'Perspicacia: «Belén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000694

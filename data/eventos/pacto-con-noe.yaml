@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-con-noe
+titulo: Pacto de Dios con Noé y el arcoíris
+fecha:
+  desde: -2368
+  hasta: -2368
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2369 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 9001
+lugares: []
+personas:
+- noe
+- sem
+- cam
+- jafet
+pasajes:
+- Gé 9:1-17
+resumen: 'Dios bendice a Noé y a sus hijos: pueden comer animales, pero no su sangre, y quien mate a un hombre pagará con
+  su vida. Promete no volver a destruir la tierra con agua y pone el arcoíris como señal.'
+razon: El cuadro del estudio 3 fecha en 2369 a.e.c. el pacto posterior al Diluvio (Gé 9:16). Perspicacia «Arco iris» lo sitúa
+  después de salir del arca; el texto no nombra el lugar.
+fuentes:
+- si-3
+- it-noe
+- it-arco-iris
+- genesis-9
+enlaces:
+- titulo: 'Perspicacia: «Arco iris»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003626
+  tipo: perspicacia
+- titulo: Génesis 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

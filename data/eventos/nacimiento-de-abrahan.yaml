@@ -13,6 +13,7 @@ lugares:
 - ur
 personas:
 - abrahan
+- tare
 pasajes:
 - Gé 11:26-32
 - Gé 12:4
@@ -22,5 +23,8 @@ fuentes:
 - si-3
 - genesis-11
 buscar: nacimiento de Abrahán
-consultado: '2026-09-28'
+orden_relato:
+  serie: genesis
+  orden: 11026
+consultado: '2026-09-29'
 estado: verificado

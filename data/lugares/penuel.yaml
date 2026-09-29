@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: penuel
+nombre: Penuel
+nombres:
+- nombre: Penuel
+- nombre: Peniel
+  nota: Nombre que le dio Jacob (Gé 32:30); la nota dice que significa «rostro de Dios».
+tipo: ciudad
+lat: 32.187016
+lon: 35.69211
+precision: punto
+coord_fuente: openbible:a8a9ff9
+coord_url: https://www.openbible.info/geo/ancient/a8a9ff9/penuel
+resumen: Lugar cerca del vado del Jaboc donde Jacob luchó con un ángel; le puso ese nombre porque vio a Dios cara a cara y
+  siguió con vida. Luego fue una ciudad fortificada.
+razon: 'Perspicacia «Peniel» y «Penuel», núm. 3; Gé 32:24-31. OpenBible: solo el punto.'
+fuentes:
+- it-penuel
+- openbible-geo
+- it-peniel
+- genesis-32
+enlaces:
+- titulo: 'Perspicacia: «Penuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003432
+  tipo: perspicacia
+- titulo: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

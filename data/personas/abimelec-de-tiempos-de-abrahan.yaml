@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abimelec-de-tiempos-de-abrahan
+nombre: Abimélec
+nombres:
+- nombre: Abimélec
+fecha:
+  desde: -1918
+  hasta: -1918
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1919 a.e.c. (cuando Abrahán vivía en Guerar)
+desambiguacion: El rey de Guerar en tiempos de Abrahán; quizá no el que trató con Isaac, y no el hijo del juez Gedeón.
+perspicacia: 1200000045#1
+no_confundir_con:
+- abimelec-de-tiempos-de-isaac
+resumen: Rey filisteo de Guerar. Se llevó a Sara creyendo que era hermana de Abrahán; avisado por Dios en un sueño, la devolvió
+  con regalos. Después pactó con Abrahán en Beer-Seba. Su nombre quizá era un título.
+razon: Perspicacia «Abimélec», núm. 1; Gé 20:1-18 y 21:22-34.
+fuentes:
+- it-abimelec
+- genesis-20
+- genesis-21
+enlaces:
+- titulo: 'Perspicacia: «Abimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000045
+  tipo: perspicacia
+- titulo: Génesis 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/20
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: guerar
+  deducido: false
+  fuentes:
+  - genesis-20
+  - it-abimelec
+  razon: 'Gé 20:2: era el rey de Guerar.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: filistea
+  deducido: false
+  fuentes:
+  - genesis-21
+  - it-filistea
+  razon: 'Gé 21:32: después del pacto volvió a la tierra de los filisteos.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

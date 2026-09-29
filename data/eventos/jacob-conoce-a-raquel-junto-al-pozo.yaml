@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-conoce-a-raquel-junto-al-pozo
+titulo: Jacob conoce a Raquel junto a un pozo de Harán
+fecha:
+  desde: -1780
+  hasta: -1780
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1781 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 29001
+lugares:
+- haran
+personas:
+- jacob
+- raquel
+- laban
+pasajes:
+- Gé 29:1-14
+resumen: Unos pastores de Harán le señalan a Raquel, hija de Labán. Jacob quita la piedra del pozo, da de beber a las ovejas
+  de su tío y se presenta. Labán lo recibe en su casa.
+razon: 'Perspicacia «Raquel», párr. 2: Jacob llega a Harán en 1781 a.e.c. y la encuentra en un pozo cercano; el estudio 3
+  da ese año a la huida.'
+fuentes:
+- si-3
+- it-raquel
+- it-haran
+- genesis-29
+enlaces:
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

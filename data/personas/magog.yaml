@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: magog
+nombre: Magog
+nombres:
+- nombre: Magog
+perspicacia: '1200002836'
+desambiguacion: El hijo de Jafet; no la «tierra de Magog» de Ezequiel ni el Gog y Magog de Revelación.
+resumen: Hijo de Jafet y nieto de Noé, cabeza de una de las familias de las que salieron las naciones tras el Diluvio. Ezequiel
+  usa luego su nombre para una tierra del norte.
+razon: Perspicacia «Magog», núm. 1 y 2; Gé 10:2, 5.
+fuentes:
+- it-magog
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Magog»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002836
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jafet
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: 'Gé 10:2: segundo de los hijos de Jafet.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

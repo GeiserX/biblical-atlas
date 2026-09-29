@@ -27,5 +27,15 @@ relaciones:
   - genesis-10
   razon: 'Perspicacia «Nemrod», párr. 2 y 5: hijo de Cus, que era hijo de Cam (Gé 10:6, 8).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: cus-hijo-de-cam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  - it-nemrod
+  razon: 'Gé 10:8: Cus fue padre de Nemrod.'
+  estado: verificado
+perspicacia: '1200003259'
+consultado: '2026-09-29'
 estado: verificado

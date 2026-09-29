@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dios-manda-construir-el-arca
+titulo: Dios manda a Noé construir el arca
+fecha:
+  desde: -2419
+  hasta: -2409
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 2420 y 2410 a.e.c. (tiempo narrativo: unos 40 o 50 años antes del Diluvio)'
+orden_relato:
+  serie: genesis
+  orden: 6009
+lugares: []
+personas:
+- noe
+- sem
+- cam
+- jafet
+pasajes:
+- Gé 6:9-22
+resumen: Dios le anuncia a Noé, hombre justo en un mundo violento, que traerá un diluvio. Le da las medidas del arca, 300
+  por 50 por 30 codos, y le pide meter a su familia y a los animales. Noé obedece.
+razon: 'Perspicacia «Noé», párr. 3: sus tres hijos ya estaban casados cuando recibió la orden (Gé 6:18), así que quizá faltaban
+  40 o 50 años para el Diluvio de 2370 a.e.c. (estudio 3).'
+fuentes:
+- it-noe
+- it-arca
+- si-3
+- genesis-6
+enlaces:
+- titulo: 'Perspicacia: «Arca»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000367
+  tipo: perspicacia
+- titulo: Génesis 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/6
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

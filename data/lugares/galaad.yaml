@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: galaad
+nombre: Galaad
+nombres:
+- nombre: Galaad
+- nombre: Galeed
+  nota: Nombre hebreo del montón de piedras del pacto de Jacob y Labán (Gé 31:47, 48); Perspicacia cree que de él viene el
+    de la región.
+- nombre: Jegar-Sahadutá
+  nota: Nombre arameo que Labán dio al mismo montón de piedras (Gé 31:47).
+- nombre: Atalaya
+  nota: Otro nombre del montón de piedras y la columna del pacto (Gé 31:49).
+tipo: region
+lat: 32.187016
+lon: 35.69211
+precision: zona
+coord_fuente: openbible:ae73b90
+coord_url: https://www.openbible.info/geo/ancient/ae73b90/gilead-1
+coord_nota: Punto representativo de OpenBible para la región montañosa. El sitio exacto de Galeed no se conoce.
+resumen: Región montañosa al este del Jordán, a ambos lados del valle del Jaboq. Allí alcanzó Labán a Jacob, y los dos pactaron
+  la paz junto a un montón de piedras que llamaron Galeed.
+razon: 'Perspicacia «Galaad», núm. 4, párr. 5, y «Galeed», párr. 2 a 4; Gé 31:21-25, 47-49. Coordenada de OpenBible: solo
+  tomamos el punto.'
+fuentes:
+- it-galaad
+- it-galeed
+- it-jegar-sahaduta
+- openbible-geo
+- genesis-31
+- genesis-37
+enlaces:
+- titulo: 'Perspicacia: «Galaad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001694
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Galeed»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001597
+  tipo: perspicacia
+- titulo: Génesis 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

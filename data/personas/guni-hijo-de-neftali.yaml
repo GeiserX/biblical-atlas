@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guni-hijo-de-neftali
+nombre: Guní
+nombres:
+- nombre: Guní
+perspicacia: 1200001783#1
+desambiguacion: Guní hijo de Neftalí; no el antepasado de un gadita.
+resumen: Segundo hijo de Neftalí. Se mudó a Egipto con la casa de Jacob; los gunitas de Neftalí descienden de él.
+razon: Perspicacia «Guní», núm. 1; Gé 46:24.
+fuentes:
+- it-guni
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Guní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001783
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: neftali-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-guni
+  razon: 'Gé 46:24: aparece entre los hijos de Neftalí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

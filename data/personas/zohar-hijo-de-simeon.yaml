@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zohar-hijo-de-simeon
+nombre: Zóhar
+nombres:
+- nombre: Zóhar
+- nombre: Zérah
+  nota: Nombre que le dan Números 26 y 1 Crónicas 4; Perspicacia lo trata también en «Zérah», núm. 4.
+perspicacia: 1200004759#2
+desambiguacion: Zóhar hijo de Simeón; no el hitita padre de Efrón ni Zérah hijo de Judá.
+resumen: Quinto hijo de Simeón en la lista, y fundador de una familia de la tribu. Estaba entre las setenta personas de la
+  casa de Jacob en Egipto.
+razon: Perspicacia «Zóhar», núm. 2, y «Zérah», núm. 4; Gé 46:10.
+fuentes:
+- it-zohar
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Zóhar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004759
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-zohar
+  razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

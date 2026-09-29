@@ -10,6 +10,8 @@ fuentes:
 - it-zabulon
 - genesis-30
 - genesis-46
+- genesis-35
+- genesis-49
 enlaces:
 - titulo: 'Perspicacia: «Zabulón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004679
@@ -25,6 +27,9 @@ relaciones:
   fuentes:
   - it-zabulon
   - genesis-30
+  - genesis-35
+  - genesis-46
+  - genesis-49
   razon: 'Perspicacia «Zabulón», párr. 2: Lea le dio a Jacob este sexto hijo (Gé 30:19, 20).'
   estado: verificado
 - tipo: pariente
@@ -34,6 +39,8 @@ relaciones:
   fuentes:
   - it-zabulon
   - genesis-30
+  - genesis-35
+  - genesis-46
   razon: 'Perspicacia «Zabulón», párr. 2: Lea le dio a Jacob este sexto hijo (Gé 30:19, 20).'
   estado: verificado
 - tipo: nacio_en
@@ -42,8 +49,35 @@ relaciones:
   fuentes:
   - it-benjamin
   - it-jacob
-  razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nació en Padán-aram, donde Jacob vivía
-    junto a Harán (Gé 29:4; 31:41).'
+  - genesis-30
+  - genesis-35
+  - genesis-46
+  razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nacieron en Padán-aram, donde Jacob vivía
+    junto a Harán (Gé 30:20; 35:26).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  estado: verificado
+perspicacia: '1200004679'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Concordancia en la razón de nacio_en: «todos los hijos […] nacieron», no «nació». El dato no cambia.'
+  fuente: genesis-29
+- fecha: '2026-09-29'
+  cambio: La razón de dónde nació cita Gé 30:20, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
+  fuente: genesis-30
+consultado: '2026-09-29'
 estado: verificado

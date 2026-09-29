@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uz-hijo-de-aram
+nombre: Uz
+nombres:
+- nombre: Uz
+perspicacia: 1200004527#1
+desambiguacion: Uz hijo de Aram; no Uz hijo de Nacor ni el horeo hijo de Disán.
+resumen: Hijo de Aram y, por la línea de Sem, bisnieto de Noé. Quizá pobló la tierra de Uz, la de Job, aunque pudo hacerlo
+  el otro Uz, hijo de Nacor.
+razon: Perspicacia «Uz», núm. 1 y 4; Gé 10:23.
+fuentes:
+- it-uz
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Uz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004527
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aram-hijo-de-sem
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:23 lo nombra el primero de los hijos de Aram.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

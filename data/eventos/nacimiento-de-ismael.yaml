@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-ismael
+titulo: Nace Ismael
+fecha:
+  desde: -1931
+  hasta: -1931
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1932 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 16015
+lugares: []
+personas:
+- ismael-hijo-de-abrahan
+- agar
+- abrahan
+pasajes:
+- Gé 16:15, 16
+resumen: Agar da a luz un hijo a Abrán, que tiene 86 años, y él lo llama Ismael, como había dicho el ángel.
+razon: El estudio 3 y Perspicacia «Ismael», núm. 1, párr. 2, lo fechan en 1932 a.e.c. El texto no nombra el lugar.
+fuentes:
+- si-3
+- it-ismael
+- genesis-16
+enlaces:
+- titulo: Génesis 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

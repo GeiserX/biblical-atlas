@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: esec
+nombre: Ésec
+nombres:
+- nombre: Ésec
+  nota: Significa «discusión» o «contienda».
+- nombre: Éseq
+  nota: Grafía de Perspicacia.
+tipo: lago
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Valle de Guerar, entre Guerar y Beer-Seba
+  geometria:
+    tipo: zona
+    lat: 31.424497
+    lon: 34.6062
+    radio_km: 15
+  estado: favorecido_nivel_1
+  coord_fuente: openbible:a43608b
+  coord_url: https://www.openbible.info/geo/ancient/a43608b/esek
+  fuentes:
+  - it-esec
+  - openbible-geo
+  razon: El texto lo pone en el valle de Guerar; OpenBible da un punto aproximado entre Guerar y Beer-Seba.
+resumen: Pozo de agua dulce que cavaron los siervos de Isaac en el valle de Guerar. Su nombre recuerda la disputa con los
+  pastores de Guerar, que lo reclamaron.
+razon: 'Perspicacia «Éseq»: no se sabe dónde estaba exactamente; Gé 26:19, 20.'
+fuentes:
+- it-esec
+- genesis-26
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Éseq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001419
+  tipo: perspicacia
+- titulo: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

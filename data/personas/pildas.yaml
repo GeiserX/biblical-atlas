@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pildas
+nombre: Pildás
+nombres:
+- nombre: Pildás
+perspicacia: '1200003486'
+resumen: Sexto de los hijos de Nacor y Milcá que se nombran, sobrino de Abrahán.
+razon: Perspicacia «Pildás»; Gé 22:20-22.
+fuentes:
+- it-pildas
+- genesis-22
+enlaces:
+- titulo: 'Perspicacia: «Pildás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003486
+  tipo: perspicacia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-pildas
+  razon: 'Gé 22:20-23: hijo de Nacor, el hermano de Abrahán.'
+  estado: verificado
+- tipo: pariente
+  persona: milca-hija-de-haran
+  relacion: madre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-pildas
+  razon: 'Gé 22:20-23: uno de los ocho hijos que Milcá dio a Nacor.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

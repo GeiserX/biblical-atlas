@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tamar-enviuda-de-er-y-onan
+titulo: Tamar enviuda de Er y de Onán
+fecha:
+  desde: -1749
+  hasta: -1727
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1750 y 1728 a.e.c. (tiempo narrativo: después de la venta de José y antes de que Pérez entre en Egipto con
+    Jacob)'
+lugares:
+- adulam
+personas:
+- tamar-nuera-de-juda
+- er-hijo-de-juda
+- onan
+- juda-hijo-de-jacob
+- sela-hijo-de-juda
+presentes: []
+pasajes:
+- Gé 38:6-11
+resumen: Jehová quita la vida a Er por su maldad. Onán se niega a darle descendencia a su hermano y muere también. Judá manda
+  a Tamar a casa de su padre a esperar a Selá.
+razon: 'Tras la venta de José (1750 a.e.c., estudio 3) y antes de que Pérez baje a Egipto en 1728 (Perspicacia «Pérez»). Sin
+  orden de relato: se solapa con lo que sigue. Sitio sin nombrar: no sitúa a nadie.'
+fuentes:
+- genesis-38
+- si-3
+- it-juda
+- it-perez
+- it-tamar
+- it-onan
+enlaces:
+- titulo: Génesis 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/38
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

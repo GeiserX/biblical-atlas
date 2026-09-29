@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: misma-hijo-de-ismael
+nombre: Mismá
+nombres:
+- nombre: Mismá
+perspicacia: 1200003081#1
+desambiguacion: Mismá hijo de Ismael; no el simeonita hijo de Mibsam.
+resumen: Uno de los doce hijos de Ismael, jefe de un clan de Arabia.
+razon: Perspicacia «Mismá», núm. 1; Gé 25:14, 16.
+fuentes:
+- it-misma
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Mismá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003081
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-misma
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

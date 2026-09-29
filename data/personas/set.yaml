@@ -18,6 +18,7 @@ fuentes:
 - it-set
 - si-3
 - genesis-5
+- genesis-4
 enlaces:
 - titulo: 'Perspicacia: «Set»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003911
@@ -44,5 +45,6 @@ relaciones:
   - genesis-4
   razon: 'Perspicacia «Set», párr. 2: Adán y Eva lo tuvieron cuando Adán tenía 130 años (Gé 4:25; 5:3).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200003911'
+consultado: '2026-09-29'
 estado: verificado

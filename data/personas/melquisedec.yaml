@@ -4,13 +4,13 @@ nombre: Melquisedec
 nombres:
 - nombre: Melquisedec
 fecha:
-  desde: -1932
+  desde: -1942
   hasta: -1932
-  precision: año
+  precision: rango
   aprox: true
-  tipo: anclada
+  tipo: narrativa
   cronologia: tnm
-  texto: c. 1933 a.e.c.
+  texto: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: su encuentro con Abrán, que el estudio 3 pone antes de 1933)'
 resumen: Rey de Salem y sacerdote del Dios Altísimo, el primer sacerdote que nombra la Biblia. Bendijo a Abrahán tras su
   victoria y recibió de él la décima parte. Prefigura el sacerdocio de Jesús.
 razon: 'Perspicacia «Melquisedec», párr. 2 a 4 y 9: vivió antes de 1933 a.e.c. y no se registran sus padres ni su
@@ -37,5 +37,11 @@ relaciones:
   - genesis-14
   razon: 'Perspicacia «Melquisedec», párr. 2: era rey de Salem, que se cree el núcleo de la Jerusalén posterior (Sl 76:2).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200002970'
+historial:
+- fecha: '2026-09-29'
+  cambio: El estudio 3 y Perspicacia lo sitúan antes de 1933 a.e.c., no hacia 1933. Su único hecho fechable cae entre la llegada
+    de Abrán a Canaán (1943) y 1933.
+  fuente: genesis-14
+consultado: '2026-09-29'
 estado: verificado

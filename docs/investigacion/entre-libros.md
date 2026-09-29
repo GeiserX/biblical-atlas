@@ -2,12 +2,6 @@
 
 Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar o cerrar. El lector y el escritor de cada libro leen esta lista antes de empezar y quitan lo que cierran.
 
-## Para Génesis
-
-- **Elifaz.** Cuando se cree a Elifaz, primogénito de Esaú (Gé 36), va `no_confundir_con` en su ficha y en `elifaz-el-temanita`. Perspicacia dice que el temanita de Job quizá descendía de él.
-- **Súah.** Ya existe (`suah`, clave `1200004088`), creado desde Job 2. Gé 25:2 lo nombra; se reutiliza.
-- **Satanás.** Ya existe (`satanas`). Gé 3 no lo nombra, pero Perspicacia lo identifica con la serpiente; si Génesis lo enlaza, se añade a la ficha existente.
-
 ## Para Juan
 
 - **El padre de Pedro.** La ficha es `jonas-padre-de-pedro`, con la clave `1200002503#2` («Jonás», núm. 2). Perspicacia lo trata también en «Juan», núm. 2 (`1200002489#2`); esa segunda clave no lo funde, así que Juan 1:42 y 21:15-17 usan ese id.
