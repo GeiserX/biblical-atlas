@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: bet-afra
+nombre: Bet-Afrá
+nombres:
+- nombre: Bet-Afrá
+  nota: La nota de Miq 1:10 lee «la casa de Afrá»; Perspicacia titula su artículo «Afrá».
+- nombre: Afrá
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: La Sefelá o la llanura de Filistea
+  geometria:
+    tipo: zona
+    lat: 31.691667
+    lon: 34.875
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-afra
+  - it-sefela
+  - openbible-geo
+  razon: Perspicacia «Afrá» deduce, por las otras ciudades del pasaje, que estaba en la Sefelá o en la llanura de los filisteos.
+  nota: 'Centro: punto de OpenBible para la Sefelá, el mismo que usa la ficha sefela. El radio de 30 km es nuestro.'
+  coord_fuente: openbible:af084cf
+  coord_url: https://www.openbible.info/geo/ancient/af084cf/shephelah
+resumen: 'Lugar que Miqueas nombra al anunciar la invasión: manda a sus habitantes revolcarse en el polvo, un juego con el
+  nombre, que probablemente significa «polvo».'
+razon: 'Perspicacia «Afrá»; Miq 1:10 y su nota. No se sabe dónde estaba: el mapa solo muestra la zona que da Perspicacia.'
+no_afirmamos:
+- 'Que estuviera en Khirbet et-Taiyiba, primera identificación de OpenBible: jw.org no propone ese sitio.'
+fuentes:
+- it-afra
+- it-sefela
+- openbible-geo
+- miqueas-1
+enlaces:
+- titulo: 'Perspicacia: «Afrá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000304
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

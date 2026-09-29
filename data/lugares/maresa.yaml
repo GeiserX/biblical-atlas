@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: maresa
+nombre: Maresá
+nombres:
+- nombre: Maresá
+- nombre: Maresah
+  nota: Otra grafía que da la nota de Miq 1:15 y que usa Perspicacia.
+- nombre: Marisá
+  nota: Nombre que tuvo tras el exilio, cuando fue colonia sidonia y después fortaleza idumea (Perspicacia «Maresá, Maresah»,
+    núm. 3).
+tipo: ciudad
+lat: 31.592963
+lon: 34.898241
+precision: punto
+coord_fuente: openbible:a5cda86
+coord_url: https://www.openbible.info/geo/ancient/a5cda86/mareshah
+resumen: Ciudad de la Sefelá de Judá, junto a un paso hacia Hebrón, que Rehoboam fortificó. Cerca de ella Asá venció a Zérah
+  el etíope. Miqueas le anuncia un conquistador.
+razon: 'Perspicacia «Maresá, Maresah», núm. 3: Tell Sandahannah (Tel Maresha), a 1,5 km de Beit Jibrin hacia el sur; Jos 15:44;
+  2Cr 11:5, 8; 14:9-13; Miq 1:15. OpenBible: solo el punto.'
+fuentes:
+- it-maresa
+- openbible-geo
+- miqueas-1
+enlaces:
+- titulo: 'Perspicacia: «Maresá, Maresah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002900
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

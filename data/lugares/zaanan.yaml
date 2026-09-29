@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: zaanan
+nombre: Zaanán
+nombres:
+- nombre: Zaanán
+tipo: ciudad
+lat: 31.599435
+lon: 34.803939
+precision: incierto
+coord_fuente: openbible:a4e7fa8
+coord_url: https://www.openbible.info/geo/ancient/a4e7fa8/zaanan
+coord_nota: ʽAraq el-Kharba, segunda resolución de la primera identificación de OpenBible (la que la iguala a Zenán). Es el
+  sitio que Perspicacia propone.
+resumen: 'Localidad que Miqueas pone entre las que sufrirían la invasión de Judá: sus habitantes no han salido. Quizá estaba
+  en la Sefelá, unos 6 km al noroeste de Lakís.'
+razon: 'Perspicacia «Zaanán» y «Zenán»; Miq 1:11. Identificación tentativa con ʽAraq el-Kharba. OpenBible: solo el punto.'
+no_afirmamos:
+- 'Que Zaanán sea la Zenán de Jos 15:37: Perspicacia recoge que muchos eruditos lo creen, sin afirmarlo.'
+- 'Que el sitio sea seguro: Perspicacia lo identifica solo de forma tentativa.'
+fuentes:
+- it-zaanan
+- it-zenan
+- openbible-geo
+- miqueas-1
+enlaces:
+- titulo: 'Perspicacia: «Zaanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004640
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

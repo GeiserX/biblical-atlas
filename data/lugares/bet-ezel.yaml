@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: bet-ezel
+nombre: Bet-Ezel
+nombres:
+- nombre: Bet-Ezel
+tipo: ciudad
+lat: 31.468544
+lon: 34.938061
+precision: incierto
+coord_fuente: openbible:a0a178b
+coord_url: https://www.openbible.info/geo/ancient/a0a178b/beth-ezel
+coord_nota: Deir el-ʽAsal, primera identificación de OpenBible. Perspicacia la da como tentativa, unos 16 km al OSO de Hebrón.
+resumen: Ciudad de Judá que solo sale en Miqueas 1:11, donde se anuncia lamento en ella. Su nombre quiere decir «casa cercana»,
+  y el profeta juega con él.
+razon: 'Perspicacia «Bet-ezel»; Miq 1:11. Identificación tentativa con Deir el-ʽAsal. OpenBible: solo el punto.'
+no_afirmamos:
+- 'Que Bet-Ezel estuviera con seguridad en Deir el-ʽAsal: Perspicacia dice que la identificación es tentativa.'
+fuentes:
+- it-bet-ezel
+- openbible-geo
+- miqueas-1
+enlaces:
+- titulo: 'Perspicacia: «Bet-ezel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000684
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

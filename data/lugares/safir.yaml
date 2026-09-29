@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: safir
+nombre: Safir
+nombres:
+- nombre: Safir
+tipo: ciudad
+lat: 31.534716
+lon: 34.966564
+precision: incierto
+coord_fuente: openbible:a7b3f5d
+coord_url: https://www.openbible.info/geo/ancient/a7b3f5d/shaphir
+coord_nota: 'Khirbet el-Kom, segunda identificación de OpenBible: es el sitio que Perspicacia propone de forma tentativa (Khirbet
+  el-Kaum, unos 15 km al O de Hebrón).'
+resumen: Lugar de Judá cuyos habitantes, según Miqueas, pasarían desnudos y avergonzados. Su nombre, que significa «elegante»
+  o «agradable», contrasta con esa vergüenza.
+razon: 'Perspicacia «Safir» y «Bet-ezel»; Miq 1:11. Identificación tentativa con Khirbet el-Kaum. OpenBible: solo el punto.'
+no_afirmamos:
+- 'Que Safir estuviera con seguridad en Khirbet el-Kom: Perspicacia da la identificación como tentativa.'
+fuentes:
+- it-safir
+- it-bet-ezel
+- openbible-geo
+- miqueas-1
+enlaces:
+- titulo: 'Perspicacia: «Safir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003951
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

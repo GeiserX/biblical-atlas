@@ -1,0 +1,79 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: miqueas-profetiza-contra-samaria-y-jerusalen
+titulo: Miqueas profetiza contra Samaria y Jerusalén
+fecha:
+  desde: -776
+  hasta: -716
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 777-717 a.e.c.
+orden_relato:
+  serie: miqueas
+  orden: 1001
+lugares:
+- juda
+- samaria
+- jerusalen
+personas:
+- miqueas-profeta
+presentes: []
+pasajes:
+- Miq 1:1-7:20
+resumen: Miqueas, de Moréset, anuncia que Samaria quedará en ruinas y que el castigo llegará hasta Jerusalén por la idolatría
+  y la opresión. Promete que Jehová reunirá a un resto y que de Belén saldrá un gobernante.
+razon: 'Tabla de los libros y «Toda Escritura», libro 33, párr. 2: habló en días de Jotán, Acaz y Ezequías, entre 777 y 717;
+  lo de Samaria, antes de 740. El texto no dice dónde habló.'
+fuentes:
+- miqueas-1
+- it-miqueas
+- it-miqueas-libro
+- si-miqueas
+- tnm-tabla
+- w07-abdias-jonas-y-miqueas
+- miqueas-2
+- w03-esperanza-verdadera
+- miqueas-3
+- w03-andaremos-en-el-nombre
+- it-arar
+- it-ezequias
+- miqueas-4
+- it-resto
+- it-monte-montana
+- it-eder
+- it-jerusalen
+- miqueas-5
+- it-mejilla
+- it-vara-baston
+- w13-siete-pastores
+- miqueas-6
+- w03-que-espera-jehova
+- miqueas-7
+enlaces:
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Miqueas, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003033
+  tipo: perspicacia
+- titulo: Miqueas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/2
+  tipo: biblia
+- titulo: Miqueas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/3
+  tipo: biblia
+- titulo: Miqueas 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/4
+  tipo: biblia
+- titulo: Miqueas 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/5
+  tipo: biblia
+- titulo: Miqueas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6
+  tipo: biblia
+- titulo: Miqueas 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

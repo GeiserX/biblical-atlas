@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+consultado: '2026-09-29'
+estado: verificado
+id: moreset
+nombre: Moréset
+nombres:
+- nombre: Moréset
+- nombre: Moréset-Gat
+  nota: Forma compuesta de Miq 1:14. Perspicacia cree que la ligaba a la filistea Gat, quizá porque esa ciudad la dominó en
+    algún momento.
+tipo: ciudad
+lat: 31.633361
+lon: 34.916611
+precision: incierto
+coord_fuente: openbible:a6ac675
+coord_url: https://www.openbible.info/geo/ancient/a6ac675/moresheth-gath
+coord_nota: Tel Goded (Tell el-Judeideh), primera identificación de OpenBible. Perspicacia la da solo como posible.
+resumen: 'Aldea de la Sefelá, al suroeste de Jerusalén, de donde era el profeta Miqueas. Significa «posesión»; hay quien ve
+  en Miq 1:14 un juego con el nombre: Sion la perdería como regalo de despedida.'
+razon: 'Perspicacia «Moréset, Moréset-gat»: posiblemente Tell el-Judeideh, 35 km al suroeste de Jerusalén y 10 al sureste
+  de Gat; Miq 1:1, 14; Jer 26:18. OpenBible: solo el punto.'
+no_afirmamos:
+- 'Que Moréset estuviera con seguridad en Tel Goded: Perspicacia lo da como una identificación posible.'
+fuentes:
+- it-moreset
+- openbible-geo
+- miqueas-1
+- si-miqueas
+enlaces:
+- titulo: 'Perspicacia: «Moréset, Moréset-gat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003113
+  tipo: perspicacia
+- titulo: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  tipo: biblia

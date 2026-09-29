@@ -1,0 +1,480 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "miqueas",
+ "agente": "escritor-miqueas",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003032#7"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "it-miqueas-libro",
+    "si-miqueas",
+    "w07-abdias-jonas-y-miqueas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Miqueas, Libro de»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003033",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "moreset",
+     "deducido": false,
+     "fuentes": [
+      "miqueas-1",
+      "it-moreset"
+     ],
+     "razon": "Miq 1:1 lo llama Miqueas de Moréset, igual que Jer 26:18. Perspicacia lo tiene por natural de allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "samaria",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gat",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aczib-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "adulam",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-3",
+    "si-miqueas",
+    "w03-andaremos-en-el-nombre"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Montaña de la Casa",
+     "nota": "Así llama Miq 3:12 al monte del templo, como aclara su nota; Perspicacia «Sion» sitúa el recinto del templo en Moria."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "babilonia",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-5",
+    "it-nemrod",
+    "w76-hacha"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Tierra de Nemrod",
+     "nota": "Así llama Miq 5:6 a Asiria (La Atalaya de 1976). Perspicacia «Nemrod» y «Asiria» lo comparan con las ciudades que Nemrod construyó allí (Gé 10:11, 12)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sitim",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sitim",
+   "campo": "no_afirmamos",
+   "valores": [
+    "Que sea el valle de las Acacias de Joe 3:18: Perspicacia «Sitim» lo trata aparte, como núm. 2, y es la ficha valle-de-las-acacias."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sitim",
+   "campo": "fuentes",
+   "valores": [
+    "it-sitim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Miq 6:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "fuentes",
+   "valores": [
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miriam-hermana-de-moises",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "moab",
+     "deducido": false,
+     "fuentes": [
+      "miqueas-6"
+     ],
+     "razon": "Miq 6:5 lo llama rey de Moab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "beor-padre-de-balaam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "miqueas-6"
+     ],
+     "razon": "Miq 6:5: Balaam hijo de Beor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "omri",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "si-miqueas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "omri",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003324#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acab",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "si-miqueas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "acab",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000138#1"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-7",
+    "si-miqueas",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-7",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-7",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "maresa",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Marisá",
+     "nota": "Nombre que tuvo tras el exilio, cuando fue colonia sidonia y después fortaleza idumea (Perspicacia «Maresá, Maresah», núm. 3)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "maresa",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "maresa",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Miqueas 1 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guilgal",
+   "campo": "fuentes",
+   "valores": [
+    "miqueas-6",
+    "w03-que-espera-jehova"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guilgal",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Miqueas 6 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guilgal",
+   "campo": "no_afirmamos",
+   "valores": [
+    "Que sea con seguridad la Guilgal de Os 4:15; 9:15; 12:11 y Am 4:4; 5:5, que el atlas pone en guilgal-cerca-de-betel: Perspicacia «Guilgal», núm. 2, solo admite que quizá fuera esta."
+   ]
+  }
+ ],
+ "preguntas": []
+}

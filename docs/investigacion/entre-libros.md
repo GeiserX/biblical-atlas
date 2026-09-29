@@ -129,7 +129,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para Josué y Jueces (desde Oseas)
 
-- **Guilgal.** Am 4:4 y 5:5 ya usan `guilgal-cerca-de-betel`, y su `no_afirmamos` deja la misma duda que para Oseas. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) no tiene ficha: la crea Josué con otro id, y las dos llevan `no_confundir_con`.
+- **Guilgal.** Am 4:4 y 5:5 ya usan `guilgal-cerca-de-betel`, y su `no_afirmamos` deja la misma duda que para Oseas. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) es `guilgal`, creada a la vez por Josué y por Miqueas (Miq 6:5) con el mismo punto de OpenBible ab94aea. Khirbet el-Mefjir es la primera identificación de OpenBible, pero Perspicacia solo dice que «se ha propuesto»: por eso lleva `precision: incierto` en los dos carriles, como `moreset`. Los lugares no admiten `no_confundir_con`: la `razon` de `guilgal` dice que no es el núm. 2, y su `no_afirmamos` deja la duda simétrica a la de `guilgal-cerca-de-betel` (Os 4:15; 9:15; 12:11; Am 4:4; 5:5). Gane la ficha que gane al integrar, `data/_propuestas/miqueas.json` le añade `miqueas-6`, su enlace y ese `no_afirmamos`.
 - **Mizpá de Galaad.** `mizpa-de-galaad` (Perspicacia «Mizpá, Mizpé», núm. 4) cita Jue 11:34 en su `razon`. Jueces 10-11 la usa y añade `jefte` `vivio_en` `mizpa-de-galaad`.
 - **Valles.** `valle-de-acor` (Os 2:15) es el de Acán (Jos 7:24-26; 15:7) y `valle-de-jezreel` (Os 1:5) el de Jos 17:16 y Jue 6:33.
 - **Guibeá.** Os 9:9 y 10:9 aluden al crimen de Jue 19-20 (Perspicacia «Guibeah», núm. 2). Cuando Jueces cree el suceso, va en `menciona` de los tramos Oseas 9:7-9 y 10:9-10.
@@ -145,7 +145,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Menfis.** `menfis` lleva Nof en `nombres`: Is 19:13, Jer 2:16, 44:1, 46:14 y Ez 30 usan ese id.
 - **Profecías sin escena.** Oseas 4-14 lleva un solo suceso, `juicios-profeticos-contra-efrain-y-juda` (Os 4:1-14:9, la sección de «Toda Escritura»), con fecha narrativa de la obra del profeta y `presentes: []`. Cada tramo lo pone en `entidades`.
 - **«David su rey».** Os 3:5 lleva `persona:david` y `persona:jesus` en `menciona`: el nombre es el del rey histórico, y La Atalaya de 1991 lo aplica a Jesucristo, descendiente de David. Am 9:11 la sigue: Perspicacia «Cabaña» une la cabaña de David a Jesús, rey de su línea. Jer 30:9, Ez 34:23, 24 y 37:24, 25 siguen la misma regla.
-- **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `pasajes` de `exodo` y en `entidades`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `menciona`. Amós añade un caso: los versículos que afirman con sus palabras que Jehová sacó a Israel de Egipto (Am 2:10; 3:1; 9:7) van en `pasajes`, aunque Perspicacia no los cite. Miqueas puede hacer lo mismo.
+- **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `pasajes` de `exodo` y en `entidades`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `menciona`. Amós añade un caso: los versículos que afirman con sus palabras que Jehová sacó a Israel de Egipto (Am 2:10; 3:1; 9:7) van en `pasajes`, aunque Perspicacia no los cite. Miqueas lo hizo con Miq 6:4. Míriam no entra en `personas` de `exodo`: sus pasajes son la noche de la salida, y el canto de Éx 15:20, 21, que es lo que recuerda La Atalaya de 2003, ya es `israel-canta-junto-al-mar-rojo`. Si Éxodo la quiere en `exodo`, lo explica en la `razon` del suceso.
 - **La fecha del libro.** `data/libros.yaml` toma sus fechas solo de la tabla de libros (`tnm-tabla`), que pone Oseas «después de 745». Perspicacia «Oseas, Libro de» lo cierra entre 745 y 740: ese límite va en la `razon` de los sucesos, no en `libros.yaml`.
 
 ## Para Hechos y Romanos (desde Joel)
@@ -158,10 +158,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Las langostas de Joel 1 y 2.** Manda La Atalaya de abril de 2020 (`w20-ataque-del-norte`): son el ejército babilonio que tomó Jerusalén en 607 a.e.c., y no son las langostas de Ap 9. Los tramos Joel 1:2-4, 1:5-12, 2:1-11 y 2:18-27 llevan `destruccion-de-jerusalen-607` en `menciona`.
 - **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `nombres`). Is 66:19, Ez 27:13, Da 8:21, 10:20, 11:2, Zac 9:13 y Hch 20:2 usan ese id cuando hablan de la tierra.
 - **El valle de Jehosafat y el de la Decisión** (Joe 3:2, 12, 14) no llevan ficha: Perspicacia «Jehosafat, Llanura baja de» y La Atalaya de 2007 los llaman lugar simbólico.
-
-## Para Números, Josué y Miqueas (desde Joel)
-
-- **Sitim.** La Sitim del campamento en las llanuras de Moab (Miq 6:5; Jos 2:1; Nú 33:49; 25:1) es Perspicacia «Sitim», núm. 1, y lleva otro id. `valle-de-las-acacias` es el núm. 2 (Joe 3:18), con «Sitim» en `nombres`, sin punto propio y con un candidato en el curso bajo del Cedrón. Cuando exista la ficha del núm. 1, las dos llevan `no_confundir_con`.
 
 ## Para 2 Crónicas, Ezequiel y Zacarías (desde Joel)
 
@@ -213,7 +209,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para las Escrituras Griegas
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`.
 
 ## Para 1 Reyes, 2 Reyes, 1 Crónicas y 2 Crónicas (desde Amós)
 
@@ -267,3 +263,16 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Amitái.** `amitai` existe (clave `1200000231`), con `vivio_en` `gat-hefer` deducido de Perspicacia «Amitai», y `jonas-profeta` lleva `pariente` `amitai` (padre). Las dos relaciones y la de `jonas-profeta` `vivio_en` `gat-hefer` citan o pueden citar 2Re 14:25: el tramo de 2 Reyes 14 las lleva al cerrarse. La profecía de Jonás sobre Jeroboán II es un suceso de Reyes.
 - **Fecha de Jonás.** Los sucesos de Jonás van en c. 844 a.e.c., serie `jonas`, como la ficha del profeta. Si Reyes fecha su profecía a Jeroboán II, no cambia esos sucesos.
+
+## Para Josué, 2 Crónicas, Nehemías y Jeremías (desde Miqueas)
+
+- **Maresá.** Josué (Jos 15:44) y Miqueas (Miq 1:15) crearon los dos `maresa`, con el mismo punto (OpenBible a5cda86) y las mismas fuentes `it-maresa`, pero con otros textos. Al integrar se queda la primera que entra y se unen `nombres`, `fuentes` y `enlaces`: `data/_propuestas/miqueas.json` añade Marisá, `miqueas-1` y el enlace a Miqueas 1. Si queda la de Josué, la integración añade «Miq 1:15» a su `razon`. 2Cr 11:8, 14:9, 10 y 20:37 usan ese id.
+- **Zenán y Maarat.** `zaanan` (Miq 1:11) y `marot` (Miq 1:12) no llevan Zenán ni Maarat en `nombres`: Perspicacia solo dice que hay quien las iguala, y las dos lo dejan en `no_afirmamos`. Josué ya creó `zenan` (Jos 15:37) y `maarat` (Jos 15:59) con los mismos puntos: ʽAraq el-Kharba (31.599435, 34.803939) y Beit Ummar (31.621389, 35.102222). Allí la duda solo está en el `resumen`; la integración les añade el `no_afirmamos` simétrico (que Zenán sea la Zaanán de Miq 1:11; que Maarat sea la Marot de Miq 1:12). Las dos `coord_nota` describen bien su punto aunque digan cosas distintas: en la ficha Zaanan de OpenBible (a4e7fa8) ʽAraq el-Kharba es la segunda resolución de la primera identificación, y en la ficha Zenan (a5e1150), la segunda identificación.
+- **Moréset.** `moreset` existe (Moréset-Gat en `nombres`) y `miqueas-profeta` vive allí. Jer 26:18 usa ese id. Cuando Jeremías cree el suceso de Jer 26:17-19, en que se recuerda Miq 3:12 y que Ezequías hizo caso, va en `menciona` del tramo Miqueas 3:9-12.
+- **Ofel.** Perspicacia «Ofel» compara el «montículo» de Miq 4:8 con Ofel, y `jerusalen` no lo lleva en `nombres`. 2Cr 27:3 o Ne 3:26 lo añaden con una nota; entonces el tramo Miqueas 4:6-8 puede ponerlo en su `nota`.
+- **La montaña de la Casa.** `monte-moria` lleva ese nombre (Miq 3:12, cuya nota dice «el monte del templo»).
+
+## Para 1 y 2 Reyes (desde Miqueas)
+
+- **Claves de Omrí y Acab.** `data/_propuestas/miqueas.json` pone a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
+- **Tierra de Nemrod.** Está en `nombres` de `asiria` (Miq 5:6). El tramo Miqueas 5:5-6 no lleva `persona:nemrod`: su nombre designa la tierra.
