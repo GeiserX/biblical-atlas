@@ -11,7 +11,7 @@ fecha:
   texto: 'entre 50 y 52 e.c. (tiempo narrativo: durante la estancia de Pablo en Corinto)'
 orden_relato:
   serie: 1-corintios
-  orden: 1014
+  orden: 999
   tras: pablo-llega-a-corinto
 lugares:
 - corinto
@@ -39,5 +39,10 @@ enlaces:
 - titulo: 'Perspicacia: «Estéfanas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004229
   tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'orden 1014 la ponía tras la carta perdida (1000), escrita cuando Pablo ya ha dejado Corinto. El bautismo es de
+    su estancia allí, de 50 a 52 (estudio 3, párr. 24 y 25): pasa a 999.'
+  fuente: si-3
 consultado: '2026-09-29'
 estado: verificado

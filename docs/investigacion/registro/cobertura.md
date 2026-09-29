@@ -42,10 +42,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
 | [Oseas](../../../data/cobertura/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](../../../data/cobertura/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
-| [Amós](../../../data/cobertura/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
-| [Abdías](../../../data/cobertura/abdias.yaml) | 1 de 1 | 21 de 21 | 100 % |
-| [Jonás](../../../data/cobertura/jonas.yaml) | 4 de 4 | 48 de 48 | 100 % |
-| [Miqueas](../../../data/cobertura/miqueas.yaml) | 7 de 7 | 105 de 105 | 100 % |
+| Amós | 0 de 9 | 0 de 146 | 0 % |
+| Abdías | 0 de 1 | 0 de 21 | 0 % |
+| Jonás | 0 de 4 | 0 de 48 | 0 % |
+| Miqueas | 0 de 7 | 0 de 105 | 0 % |
 | Nahúm | 0 de 3 | 0 de 47 | 0 % |
 | Habacuc | 0 de 3 | 0 de 56 | 0 % |
 | Sofonías | 0 de 3 | 0 de 53 | 0 % |
@@ -59,7 +59,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Hechos](../../../data/cobertura/hechos.yaml) | 28 de 28 | 1003 de 1003 | 100 % |
 | [Romanos](../../../data/cobertura/romanos.yaml) | 16 de 16 | 432 de 432 | 100 % |
 | [1 Corintios](../../../data/cobertura/1-corintios.yaml) | 16 de 16 | 437 de 437 | 100 % |
-| 2 Corintios | 0 de 13 | 0 de 257 | 0 % |
+| [2 Corintios](../../../data/cobertura/2-corintios.yaml) | 13 de 13 | 257 de 257 | 100 % |
 | Gálatas | 0 de 6 | 0 de 149 | 0 % |
 | Efesios | 0 de 6 | 0 de 155 | 0 % |
 | Filipenses | 0 de 4 | 0 de 104 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 621 de 1189 | 16928 de 31062 | 54 % |
+| **Total** | 613 de 1189 | 16865 de 31062 | 54 % |
 
 ## Capítulos empezados
 
