@@ -112,6 +112,10 @@ history:
   change: El parentesco con Andrónico y Junias pasa a las fichas de ellos, sin grado y como dato del texto (Ro 16:7), igual
     que el de Herodión, Lucio y Sosípatro.
   source: romanos-16
+- date: '2026-09-29'
+  change: 'Los 15 días con Cefas (Gál 1:18) pasan de una compañía con el texto «visitante de» a la palabra `host`: Pedro fue
+    su anfitrión.'
+  source: galatas-1
 checked_on: '2026-09-29'
 status: verified
 relations:
@@ -373,9 +377,9 @@ relations:
     de los libros.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: pedro
-  caption: visitante de
+  word: host
   date:
     from: 36
     to: 36
