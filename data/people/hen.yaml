@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hen
+name: Hen
+names:
+- name: Hen
+perspicacia: '1200001984'
+date:
+  from: -518
+  to: -517
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+summary: Hijo de un Sofonías que no es el profeta. La corona de Josué quedó en el templo como recuerdo de él y de otros tres
+  hombres. Perspicacia lo ve probablemente como el Josías de Zac 6:10.
+reason: Perspicacia «Hen»; Zac 6:14.
+sources:
+- it-hen
+- zacarias-6
+links:
+- title: 'Perspicacia: «Hen»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001984
+  type: perspicacia
+- title: Zacarías 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/6
+  type: bible
+not_claimed:
+- 'Que Hen y Josías hijo de Sofonías sean con certeza el mismo hombre: Perspicacia solo lo da como probable.'
+relations:
+- type: kin
+  person: sofonias-padre-de-josias
+  word: father
+  inferred: false
+  sources:
+  - zacarias-6
+  - it-hen
+  reason: Zac 6:14 lo llama Hen hijo de Sofonías.
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: josias-hijo-de-sofonias
+  certainty: probable
+  inferred: true
+  sources:
+  - it-hen
+  - it-josias
+  - zacarias-6
+  reason: Perspicacia «Hen» y «Josías», núm. 2, lo dan como probablemente el Josías hijo de Sofonías de Zac 6:10.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: betel-consulta-sobre-el-ayuno
+title: Betel consulta sobre el ayuno y Zacarías responde
+type: speech
+date:
+  from: -517
+  to: -517
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 4 de kislev de 518 a.e.c. (hacia el 1 de diciembre)
+  detail:
+    month: kislev
+    day: 4
+narrative_order:
+  series: zacarias
+  order: 7001
+places:
+- jerusalen
+- betel
+people:
+- zacarias-profeta
+- sarezer-de-betel
+- reguem-melec
+present:
+- zacarias-profeta
+- sarezer-de-betel
+- reguem-melec
+roles:
+  zacarias-profeta: spoke
+passages:
+- Zac 7:1-8:23
+summary: Betel manda a Sarézer y a Réguem-Mélec a preguntar a los sacerdotes del templo si deben seguir llorando en el quinto
+  mes. Por Zacarías, Jehová pide justicia y verdad y promete convertir esos ayunos en fiestas.
+reason: 'Zac 7:1: 4 de kislev del año cuarto de Darío, a comienzos de diciembre de 518 según Perspicacia «Zacarías, Libro
+  de», cuyo esquema lleva 7:1-8:23 como una unidad. «Toda Escritura» pone la consulta dos años después del primer mensaje.'
+sources:
+- zacarias-7
+- zacarias-8
+- it-zacarias-libro
+- si-zacarias
+- it-sarezer
+- it-reguem-melec
+- it-ayuno
+- w07-ageo-y-zacarias
+links:
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+- title: Zacarías 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zacarias-pastorea-el-rebano-destinado-al-matadero
+title: Zacarías pastorea el rebaño destinado al matadero
+date:
+  from: -517
+  to: -517
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 518 a.e.c.
+narrative_order:
+  series: zacarias
+  order: 11004
+places:
+- monte-moria
+- jerusalen
+people:
+- zacarias-profeta
+present:
+- zacarias-profeta
+passages:
+- Zac 11:4-14
+summary: Por mandato de Jehová, el profeta pastorea un rebaño explotado, parte los bastones Bondad y Unión y arroja al tesoro
+  del templo las 30 piezas de plata en que lo valoraron.
+reason: 'Parte de la primera declaración, que Perspicacia «Hadrac» pone hacia 518. «Toda Escritura», libro 38, párr. 19 y
+  20, y La Atalaya de 2007 lo ven hacer de pastor como figura de Jesús. Zac 11:13: tesoro del templo.'
+sources:
+- zacarias-11
+- si-zacarias
+- w07-ageo-y-zacarias
+- it-zacarias-libro
+- it-pastor
+- it-hadrac
+links:
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+- title: Zacarías 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

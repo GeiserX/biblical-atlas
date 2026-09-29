@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zacarias-anuncia-que-jehova-guerreara-y-reinara
+title: Zacarías anuncia que Jehová guerreará y será rey
+type: speech
+date:
+  from: -517
+  to: -517
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 518 a.e.c.
+narrative_order:
+  series: zacarias
+  order: 12001
+places:
+- jerusalen
+people:
+- zacarias-profeta
+present:
+- zacarias-profeta
+roles:
+  zacarias-profeta: spoke
+passages:
+- Zac 12:1-14:21
+summary: Zacarías anuncia que Jehová hará de Jerusalén una piedra pesada para las naciones, limpiará el país de ídolos y falsos
+  profetas, dejará herir al pastor y, tras luchar por la ciudad, reinará sobre toda la tierra.
+reason: 'Sigue a la declaración anterior, hacia 518 según Perspicacia «Hadrac»; el libro acabó en 518 («Toda Escritura», libro
+  38). Dónde habló no se dice; Jerusalén: Esd 5:1, la consulta de Betel y la tabla de los libros.'
+sources:
+- zacarias-13
+- si-zacarias
+- it-zacarias-libro
+- w07-ageo-y-zacarias
+- tnm-tabla
+- zacarias-12
+- it-hadadrimon
+- it-meguido
+- it-natan
+- it-simeitas
+- zacarias-14
+- w13-valle-de-jehova
+- rr-rios-de-bendiciones
+- it-hadrac
+- esdras-5
+links:
+- title: Zacarías 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/12
+  type: bible
+- title: Zacarías 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/13
+  type: bible
+- title: Zacarías 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/14
+  type: bible
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

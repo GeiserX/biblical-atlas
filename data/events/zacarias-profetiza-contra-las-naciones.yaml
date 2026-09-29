@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zacarias-profetiza-contra-las-naciones
+title: Zacarías declara juicio contra las naciones y los pastores falsos
+type: speech
+date:
+  from: -517
+  to: -517
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 518 a.e.c.
+narrative_order:
+  series: zacarias
+  order: 9001
+places:
+- jerusalen
+people:
+- zacarias-profeta
+present:
+- zacarias-profeta
+roles:
+  zacarias-profeta: spoke
+passages:
+- Zac 9:1-11:17
+summary: 'Primera declaración de la segunda parte del libro: juicio sobre las ciudades vecinas, un rey humilde que entra en
+  Jerusalén, reproche a los malos pastores y un profeta que pastorea un rebaño vendido para la matanza.'
+reason: 'Perspicacia «Hadrac», «Damasco» y «Asquelón» la ponen hacia 518; «Toda Escritura», libro 38, párr. 19, la lleva de
+  9:1 a 11:17. Dónde habló no se dice; Jerusalén: Esd 5:1, la consulta de Betel y la tabla de los libros.'
+sources:
+- zacarias-9
+- zacarias-10
+- it-hadrac
+- it-damasco
+- it-asquelon
+- it-zacarias-libro
+- si-zacarias
+- tnm-tabla
+- w07-ageo-y-zacarias
+- zacarias-11
+- it-cedro
+- it-arbol-grande
+- it-cisterna
+- it-lluvia
+- it-libano
+- it-efrain
+- esdras-5
+links:
+- title: Zacarías 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/9
+  type: bible
+- title: Zacarías 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/10
+  type: bible
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

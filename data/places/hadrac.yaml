@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hadrac
+name: Hadrac
+names:
+- name: Hadrac
+- name: Hatarikka
+  note: Nombre de las inscripciones asirias; Perspicacia recoge que se cree que es Hadrac.
+type: region
+lat: 35.905
+lon: 36.798611
+precision: uncertain
+coord_source: openbible:a3e8d63
+coord_url: https://www.openbible.info/geo/ancient/a3e8d63/hadrach
+coord_note: 'Punto de OpenBible en Tell Afis, al suroeste de Alepo: el montículo con que se identifica Hatarikka según Perspicacia,
+  que no lo da por seguro.'
+summary: Territorio de Siria contra el que Zacarías anuncia juicio, junto a Damasco y Hamat. Quizá fue una ciudad-estado con
+  dominio sobre sus vecinos; Tiglat-piléser III la contaba entre los distritos de Hamat.
+reason: 'Perspicacia «Hadrac», párr. 1 y 2; Zac 9:1. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que Hadrac sea con seguridad Tell Afis: Perspicacia solo dice que se cree.'
+sources:
+- it-hadrac
+- openbible-geo
+- zacarias-9
+links:
+- title: 'Perspicacia: «Hadrac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001807
+  type: perspicacia
+- title: Zacarías 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified
