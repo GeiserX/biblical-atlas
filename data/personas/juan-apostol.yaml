@@ -83,6 +83,7 @@ relaciones:
 - tipo: acompana
   persona: pedro
   relacion: compañero
+  relacion_inversa: compañero
   deducido: false
   fuentes:
   - it-juan

@@ -121,7 +121,8 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `linea` | `grande` | Línea de tiempo ampliada |
 | `meses` | `ambos`, `nuestros`, `hebreos` | Filas de meses de la línea a escala de meses y de días, y qué fecha va primero arriba. Sin él, ambos |
 | `ahora`, `sinc` | `1`; `<lugar>~<periodo>` | Vista «Ahora mismo»; sincronía de un lugar en un periodo |
-| `grafo`, `gvista`, `gtodo` | ids unidos por `.`; `lista` o `grafo`; `1` | Grafo de personas (el último id es el centro), su vista y si enseña todas las fechas |
+| `grafo`, `gvista`, `gtodo` | ids unidos por `.`; una persona va por su id y lo demás con su tipo (`pablo.lugar:listra.evento:concilio-de-jerusalen-49`); `lista` o `grafo`; `1` | Grafo (el último es el centro; cualquier selección puede serlo, y con el grafo abierto lo seleccionado pasa al centro), su vista y si enseña todas las fechas |
+| `vel` | `1-hora` … `2-dias` … `3-meses` … `1-anio` … `250-anios` | Velocidad de reproducción elegida a mano, en tiempo por segundo. Sin él, sigue a la escala |
 | `conexion`, `camino` | `<tipo>:<id>~<tipo>:<id>`; número | Conexión entre dos y el camino elegido |
 | `leer`, `pas` | `<libro>-<capítulo>`; número | Modo lectura y pasaje |
 | `paso` | número | Parada del recorrido guiado |
@@ -149,7 +150,7 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | `acerca.html` | Qué es el proyecto, cómo se lee, cómo tratamos las fuentes, gracias con cada licencia y cómo proponer una corrección. Su único script apunta «Volver al mapa» a la vista de `?desde=…` |
 | `calendario.html` | «El calendario de la Biblia»: los hechos de `explicacion` y la tabla de los trece meses, leídos de `data.json` (o de `data.js` desde `file://`). Acepta `?datos=_local/…` como `index.html` |
 | [`js/`](js/) | La aplicación, partida en módulos (ver abajo) |
-| [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css` y `estudio.css`, y `acerca.css` y `calendario.css` para las dos páginas sueltas |
+| [`css/`](css/) | Estilos propios: `base.css`, `mapa.css`, `linea.css`, `estudio.css` y `tactil.css` (el último: pantallas táctiles), y `acerca.css` y `calendario.css` para las dos páginas sueltas |
 | `kit/` | Tokens, componentes y fuentes copiados del kit de maquetas. Las fuentes tienen licencia SIL OFL 1.1 |
 | `maps/` | Relieve antiguo y actual en Web Mercator |
 | `_local/` | Datos de prueba. No va a git |
@@ -191,6 +192,7 @@ BE.tipo('lugar', {
   implicados(id, r) { … },              // añade claves («carta:romanos») a r.claves e ids a r.lugares
   momento: (id) => …,                   // fecha a la que salta el cursor al elegirlo; si falta, la primera de lo implicado
   momentoImplicado: (id) => …,          // su fecha cuando lo implica otra selección; si falta, no cuenta
+  encuadre: (id) => [a, b],             // tramo que la línea enseña entero al elegirlo; si falta, la escala no cambia
   ficha: (id) => '<html>',              // la ficha del panel
   buscar: (q, nq, puntuar) => [ … ],    // resultados { grupo, sel, titulo, meta, puntos }
 });
@@ -210,13 +212,27 @@ BE.tipo('lugar', {
 | `BE.inicios` | Funciones que se llaman una vez con los datos ya cargados, antes de leer la dirección |
 | `BE.parametros` | Parámetros extra de la dirección: `{ nombre, escribir() → texto o null, leer(texto, inicial) }` |
 
-`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js`; `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
+`base.js` lee a través de `BE` estos valores, que su dueño puede cambiar desde su propio fichero sin tocar `base.js`: `BE.T_MIN` y `BE.T_MAX` (rango del cursor), `BE.velocidad()`, `BE.textoVelocidad()` y `BE.hitos()`, que pone `linea.js` (redondea la velocidad a un escalón con nombre, «3 meses por segundo», y deja elegirla con − y +); `BE.urlCapitulo(libro, cap)` y `BE.ponerLibros(lista)`, que cambia la lista de libros que entienden `citas` y la búsqueda, y que pone `tipos/libro.js`.
 
-`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
+`trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.leerFecha(texto)`, `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.inicioPeriodo(p)` (el principio conocido de un periodo: su `desde`; si no tiene, `consta_desde`; si tampoco, el principio del tramo dibujado), `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
 `ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas, la portada y los carriles: punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
+
+### Marcos que cambian de tamaño
+
+Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-earth:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana.
+
+### Móvil, tableta y dedo
+
+El sitio se prueba a 390 × 844 y 430 × 932 (móvil) y a 768 × 1024 y 1024 × 768 (tableta), con toque. La página no se desplaza nunca: cada marco desplaza lo suyo.
+
+- **Por ancho.** Hasta 760 px la ficha es una hoja inferior sobre el mapa, con su asa arriba y, justo debajo, la fila del suceso de esta fecha y el botón «Leyenda»; las seis escalas de la línea van en un desplegable (`#zoom-select`, `linea.js`). Hasta 900 px los tres mapas y el modo reunión bajan a la esquina del mapa, el grafo y la conexión tapan el mapa entero, y la lectura va encima de la ficha para que el mapa la siga. El grafo y la conexión miden su propia vista (consultas `@container`), no la ventana: estrechos, la cadena va de arriba abajo y el grafo sale en lista salvo que se pida en círculo.
+- **Con el dedo** (`@media (pointer: coarse)`, `css/tactil.css`). Cada control ofrece una diana de al menos 44 × 44 px: crece, o un `::after` transparente agranda la zona que recibe el toque sin cambiar el dibujo (los puntos del mapa, las píldoras, los enlaces sueltos). La raya de 10 px entre el mapa y la línea se sustituye por un asa de 44 px en la barra de la línea (`#linea-alto`): se arrastra igual y, pulsada, amplía la línea o la devuelve. En la línea, un toque elige la forma que hay bajo el dedo o la más cercana con diana de 44 px, y un arrastre mueve el cursor aunque empiece encima de una forma (`itemCercano`, `linea.js`).
+- `BE.ajustarAyuda(input, ...cortos)` (`buscar.js`) pone en una caja de búsqueda el texto de ayuda más largo que quepa entero, en vez de cortarlo a media palabra.
+
+Lo que queda por debajo de 44 px tiene su equivalente de 44: «Carriles +N» y «¿Qué meses son estos?» están en el menú (…) de la línea, la barra de épocas de la portada repite las tarjetas de debajo, y los tramos del progreso de un recorrido tienen «anterior» y «siguiente». Los puntos del mapa muy juntos se pisan sus zonas: se separan al acercar el mapa.
 
 ### Puntos de montaje
 

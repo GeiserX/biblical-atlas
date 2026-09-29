@@ -37,3 +37,13 @@ relaciones:
   - it-matias
   razon: Hch 1:20-26 cuenta que, echando suertes, Matías ocupó entre los doce el puesto que Judas había dejado.
   estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: discípulo de
+  deducido: false
+  fuentes:
+  - hechos-1
+  - it-matias
+  razon: Hch 1:21, 22 pide un candidato que hubiera seguido a Jesús desde su bautismo hasta la ascensión; Perspicacia
+    «Matías» (párr. 2) dice que Matías lo siguió en todo su ministerio.
+  estado: verificado

@@ -13,11 +13,35 @@
 .zoom { display: inline-flex; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; background: var(--paper-2); flex: none; }
 .zoom button { border: 0; background: none; padding: 4px 10px; font-size: var(--fs-2xs); font-weight: 600; color: var(--ink-3); cursor: pointer; }
 .zoom button + button { border-left: 1px solid var(--line); }
-.zoom button.on { background: var(--ink); color: #fff; }
+/* La escala elegida en tinta invertida: en el modo reunión la tinta es clara y el texto blanco no se leía (be-64b.3). */
+.zoom button.on { background: var(--ink); color: var(--surface); }
 .zoom .z-corto { display: none; }
+.zoom-select { display: none; }   /* el desplegable de escalas es de la pantalla estrecha */
+/* Velocidad de reproducción (be-64b.2): − «3 meses por segundo» +. Fija el ancho del texto para que la barra no salte. */
+.velocidad { display: inline-flex; align-items: center; gap: 3px; flex: none; }
+.velocidad .be-speed { min-width: 19ch; text-align: center; }
+.velocidad.manual .be-speed { border-color: var(--ink-3); color: var(--ink); }
+.vel-boton { width: 24px; height: 24px; flex: none; display: inline-grid; place-items: center; padding: 0; border: 1px solid var(--line-2); border-radius: 50%; background: var(--surface); color: var(--ink); font: 700 15px/1 var(--font-sans); cursor: pointer; }
+.vel-boton:hover:not(:disabled) { background: var(--paper-2); }
+.vel-boton:disabled { cursor: default; color: var(--ink-4); }
+.menu-velocidad { padding: 2px 8px 4px; }
 .linea-estado { font-size: var(--fs-sm); color: var(--ink-2); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1 1 auto; }
 .linea-barra > .be-spacer { flex: 0 1 0; }
 .cronologia { flex: none; }
+/* «Sobre las fechas» (be-64b.6): un botón de texto que dice lo que hace, y su tarjeta. */
+.linea-barra .fechas-boton { border: 1px solid transparent; background: none; padding: 3px 8px; border-radius: var(--r-pill); color: var(--ink-2); font: 600 var(--fs-xs) var(--font-sans); cursor: pointer; white-space: nowrap; }
+.linea-barra .fechas-boton:hover, .linea-barra .fechas-boton[aria-expanded="true"] { background: var(--paper-2); border-color: var(--line); color: var(--ink); }
+.fechas-ayuda { position: fixed; z-index: 30; overflow: auto; padding: 12px 14px; box-shadow: var(--shadow-3); display: flex; flex-direction: column; gap: 8px; font-size: var(--fs-sm); color: var(--ink-2); }
+.fechas-ayuda[hidden] { display: none; }
+.fa-cabecera { display: flex; align-items: center; justify-content: space-between; }
+.fa-cabecera .be-card__eyebrow { margin: 0; }
+.fa-texto { margin: 0; color: var(--ink); line-height: 1.4; }
+.fa-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; line-height: 1.35; }
+.fa-lista li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; align-items: start; }
+.fa-muestra { margin-top: 2px; }
+.fa-c { font: 700 var(--fs-sm) var(--font-sans); color: var(--ink); text-align: center; }
+.fa-casilla { padding: 4px 0; }
+.fa-mas { color: var(--link); font-weight: 600; }
 .linea-botones { display: inline-flex; gap: 2px; flex: none; }
 .linea-boton { width: 32px; height: 32px; cursor: pointer; }
 .linea-boton[aria-pressed="true"], .linea-boton[aria-expanded="true"] { background: var(--gold-soft); color: var(--gold-ink); }
@@ -55,8 +79,7 @@
 .linea-svg .item-texto { cursor: pointer; }
 .linea-svg .item-texto text { pointer-events: auto; }
 .linea-svg .item-texto:hover text { text-decoration: underline; }
-.item-texto.atenuado { opacity: .2; }
-.fila-par { fill: rgba(246, 241, 231, .55); }
+.fila-par { fill: var(--surface-2); }
 .tick-mayor { stroke: var(--line-2); }
 .tick-menor { stroke: var(--line-2); opacity: .7; }
 .rejilla { stroke: var(--rejilla); }
@@ -66,43 +89,45 @@
 .item { cursor: pointer; }
 .item:focus { outline: none; }
 .item:focus-visible rect { stroke: var(--focus); stroke-width: 2.5; }
-.barra-viaje { opacity: .55; }
-.viaje.activo .barra-viaje { opacity: 1; }
-.viaje:hover .barra-viaje, .viaje.encima .barra-viaje { opacity: 1; }
+/* Contraste (be-64b.1): las barras van a color pleno y su texto en blanco o, si lee mejor, en tinta oscura (linea.js,
+   tonos). Una barra que casi no se distingue del fondo lleva borde. */
+.viaje:hover .barra-viaje, .viaje.encima .barra-viaje, .estancia:hover .barra-estancia, .estancia.encima .barra-estancia { stroke: var(--ink); stroke-width: 1.5; }
 .texto-barra { fill: #fff; }
+/* Halo del color pleno de su barra (linea.js pone el trazo): donde la barra se difumina, el texto se sigue leyendo. */
+.linea-svg .texto-barra { paint-order: stroke; stroke-width: 3px; stroke-linejoin: round; }
+.linea-svg .item-texto.atenuado text { stroke: none !important; }
+.linea-svg .sobre-claro { fill: #18221c; }
+.con-borde { stroke: var(--ink-3); stroke-width: 1; }
 .texto-fuera { fill: var(--ink-2); }
-.marca-parada { fill: rgba(255, 255, 255, .7); }
-.marca-parada.narrativa { fill: rgba(255, 255, 255, .4); }
-.parada:hover .marca-parada { fill: #fff; }
+/* Paradas en contorno: el color del viaje y su nombre se siguen leyendo debajo. La sombra oscura las separa también donde
+   la barra se difumina (fecha aproximada). */
+.marca-parada { fill: none; stroke: #fff; stroke-width: 1; pointer-events: all; filter: drop-shadow(0 0 .6px rgba(0, 0, 0, .75)); }
+.marca-parada.narrativa { stroke-dasharray: 2 2; }
+.marca-parada.en-borde, .parada.resaltado .marca-parada.en-borde { stroke: var(--ink); filter: none; }
+.parada:hover .marca-parada { fill: rgba(255, 255, 255, .3); stroke-width: 2; }
 .rombo { fill: var(--gold); stroke: #fff; stroke-width: 2; }
 .carta.seleccionada .rombo { fill: var(--accent); }
 .carta.seleccionada .tramo-carta { stroke: var(--accent); stroke-width: 2.5; }
 .texto-punto { fill: var(--ink-2); }
-.tramo-carta { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
-.texto-carta { fill: var(--gold-ink); }
-.tramo-evento { fill: rgba(255, 253, 248, .9); stroke: var(--gold); stroke-width: 1.5; }
+.tramo-carta { fill: var(--surface); stroke: var(--gold); stroke-width: 1.5; }
+.texto-carta { fill: var(--gold); }
+.tramo-evento { fill: var(--surface); stroke: var(--gold); stroke-width: 1.5; }
 .rombo-evento { fill: var(--gold); stroke: #fff; stroke-width: 2; }
-.evento-fondo .tramo-evento { fill: rgba(255, 253, 248, .6); stroke-opacity: .6; }
-.texto-evento { fill: var(--gold-ink); }
+.evento-fondo .tramo-evento { fill-opacity: .6; stroke-opacity: .85; }
+.texto-evento { fill: var(--gold); }
 /* Cálculo nuestro, sin verificar (C-03): rombo hueco y rosa, tramo rayado. */
 .rombo-evento.calculo { fill: var(--surface); stroke: var(--unverified); stroke-width: 1.6; }
 .tramo-evento.calculo { fill: var(--unverified-soft); stroke: var(--unverified); stroke-dasharray: 4 3; }
 .texto-calculo { fill: var(--unverified); }
 .pildora { fill: var(--ink); }
-.texto-pildora { fill: #fbf7ef; }
+.texto-pildora { fill: var(--surface); }
 .grupo-sucesos:hover .pildora { fill: var(--ink-2); }
-.barra-periodo { fill: var(--emp-roma); opacity: .9; }
-.periodo--gobernador .barra-periodo { fill: var(--node-periodo); }
-.periodo--reyes .barra-periodo { fill: var(--emp-persia); }
-.periodo--sacerdotes .barra-periodo { fill: var(--tier1); }
-.periodo--era .barra-periodo { fill: var(--node-periodo); opacity: .82; }
-.periodo--era:nth-of-type(even) .barra-periodo { opacity: .6; }
-.periodo--potencia .barra-periodo { opacity: .85; }
+/* El color de cada periodo lo pone linea.js (colorPeriodo); las eras alternan dos tonos. */
+.barra-periodo { fill: var(--emp-roma); }
 /* Personas: actividad de fondo, estancias encima (rayadas si la fecha es estimada) y el camino entre ellas. */
-.barra-actividad { opacity: .5; }
-.barra-estancia { opacity: .9; }
-.estancia.larga .barra-estancia { opacity: .45; }
-.estancia:hover .barra-estancia, .estancia.encima .barra-estancia { opacity: 1; }
+/* Las estancias largas («vivió en») van detrás, en contorno de su color: las cortas, llenas, se leen encima. */
+.estancia.larga .barra-estancia { fill: var(--surface-2); stroke-width: 1.5; }
+.texto-estancia-larga { fill: var(--ink-2); }
 .camino { stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .7; }
 .banda-juntos { fill: color-mix(in srgb, var(--gold) 16%, transparent); stroke: color-mix(in srgb, var(--gold) 45%, transparent); stroke-dasharray: 2 2; pointer-events: none; }
 /* Meses (T-19): nuestros meses en contorno y letra de interfaz; los hebreos rellenos, rayados y en letra de libro.
@@ -123,8 +148,7 @@
 .noche-hebrea rect { fill: rgba(31, 26, 20, .07); pointer-events: none; }
 /* Fiestas del calendario hebreo, a escala de días. */
 .fiesta-caja { fill: var(--gold-soft); stroke: var(--gold); stroke-width: 1.2; }
-.fiesta-texto { fill: var(--gold-ink); }
-.fiesta-texto--fuera { fill: var(--gold-ink); }
+.fiesta-texto, .fiesta-texto--fuera { fill: var(--ink); }
 /* Etiquetas de las filas de meses y el enlace a la página del calendario. */
 .linea-carriles .carril-mes--hebreos > span { font-family: var(--font-serif); font-size: 13.5px; font-weight: 700; color: var(--ink); }
 .linea-carriles .carril-mes--nuestros > span { font-weight: 500; }
@@ -148,12 +172,23 @@
 /* Fechas seculares como nota (C-02, C-04). */
 .tramo-secular { fill: var(--secular-soft); stroke: var(--secular); stroke-width: 1.2; stroke-dasharray: 4 3; }
 .texto-secular { fill: var(--secular); }
-.item.atenuado { opacity: .2; }
-/* Nada de lo que se ve tiene que ver con la selección: no se atenúa nada (linea.js, clase sin-foco). */
-.linea-svg.sin-foco .item.atenuado, .linea-svg.sin-foco .item-texto.atenuado { opacity: 1; }
-.item.resaltado .barra-viaje, .item.resaltado .barra-periodo, .item.resaltado .tramo-carta, .item.resaltado .tramo-evento, .item.resaltado .barra-estancia { stroke: var(--gold); stroke-width: 2; }
-.item.resaltado .rombo, .item.resaltado .rombo-evento { stroke: var(--gold); }
-.parada.resaltado .marca-parada { fill: #fff; stroke: var(--gold); stroke-width: 1.5; }
+/* Con algo seleccionado (be-64b.1). Lo que no tiene que ver pasa a gris y hueco, pero se sigue leyendo: texto a 4,5:1 y
+   borde a 3:1. Lo que tiene que ver conserva su color y lleva borde grueso. Lo seleccionado, además, un anillo de tinta.
+   La diferencia es de forma (lleno o hueco, anillo) y no solo de color. Si nada de lo que se ve tiene que ver con la
+   selección, no se atenúa nada (linea.js, clase sin-foco). */
+.linea-svg:not(.sin-foco) .item.atenuado :is(.barra-viaje, .barra-periodo, .barra-estancia, .barra-actividad, .tramo-carta, .tramo-evento, .tramo-secular, .pildora) { fill: var(--surface-2) !important; stroke: var(--ink-3) !important; stroke-width: 1; stroke-opacity: 1; stroke-dasharray: none; }
+.linea-svg:not(.sin-foco) .item.atenuado :is(.rombo, .rombo-evento) { fill: var(--surface-2); stroke: var(--ink-3); stroke-width: 1.5; }
+.linea-svg:not(.sin-foco) .item.atenuado .marca-parada { fill: none; stroke: var(--ink-3); stroke-width: 1; }
+.linea-svg:not(.sin-foco) .item.atenuado rect[fill="url(#p-rayas-claras)"] { fill: url(#p-rayas-grises); }
+.linea-svg:not(.sin-foco) .item.atenuado .texto-pildora, .linea-svg:not(.sin-foco) .item-texto.atenuado text { fill: var(--ink-3) !important; font-weight: 500; }
+.item.resaltado :is(.barra-viaje, .barra-periodo, .tramo-carta, .tramo-evento, .barra-estancia, .tramo-secular) { stroke: var(--gold); stroke-width: 2.5; }
+.item.resaltado :is(.tramo-carta, .tramo-evento) { fill: var(--gold-soft); }
+.item.resaltado :is(.rombo, .rombo-evento) { stroke: var(--gold); stroke-width: 2.5; }
+.parada.resaltado .marca-parada { stroke: #fff; stroke-width: 2; }
+.parada.elegido .marca-parada { fill: #fff; stroke: var(--ink); stroke-width: 1.5; }
+.item-texto.resaltado text { font-weight: 700; }
+.item-texto.resaltado :is(.texto-evento, .texto-carta) { fill: var(--ink); }
+.anillo-elegido { fill: none; stroke: var(--ink); stroke-width: 2.5; pointer-events: none; }
 .cursor-linea { stroke: var(--gold); stroke-width: 2; }
 .cursor-bandera { fill: var(--gold); }
 .cursor-texto { fill: #fff; font-weight: 700 !important; }
@@ -163,10 +198,10 @@
 .regla-banda { fill: color-mix(in srgb, var(--gold) 10%, transparent); pointer-events: none; }
 .regla-borde { stroke: var(--gold); stroke-dasharray: 3 3; pointer-events: none; }
 .regla-etiqueta { fill: var(--ink); }
-.regla-texto { fill: #fbf7ef; }
+.regla-texto { fill: var(--surface); }
 .regla-quitar { cursor: pointer; }
 .regla-quitar circle { fill: rgba(255, 255, 255, .18); }
-.regla-quitar path { stroke: #fbf7ef; stroke-width: 1.5; }
+.regla-quitar path { stroke: var(--surface); stroke-width: 1.5; }
 .bucle-marca { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .8; }
 .marcador { fill: var(--accent); cursor: pointer; }
 
@@ -242,7 +277,10 @@
 .sinc-rombo i { width: 10px; height: 10px; background: var(--gold); transform: rotate(45deg); border: 1.5px solid #fff; flex: none; }
 .sinc-rombo.calculo i { background: var(--surface); border-color: var(--unverified); }
 .sinc-rombo.calculo { color: var(--unverified); }
-.sinc-barra.fuera, .sinc-rombo.fuera { opacity: .3; }
+/* Lo que cae fuera del periodo elegido va hueco y gris, no transparente: con opacidad .3 su nombre bajaba a 1,9:1. */
+.sinc-barra.fuera { background: var(--surface); background-image: none; color: var(--ink-3); box-shadow: inset 0 0 0 1.5px var(--line-2); -webkit-mask-image: none; mask-image: none; }
+.sinc-rombo.fuera { color: var(--ink-3); }
+.sinc-rombo.fuera i { background: var(--surface); border-color: var(--ink-3); }
 .sinc-barra.corta { box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--gold); }
 .sinc-cursor { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; z-index: 3; }
 .sinc-cursor::before { content: attr(data-fecha); position: absolute; top: 2px; left: 50%; transform: translateX(-50%); background: var(--gold); color: #fff; font: 700 var(--fs-2xs)/18px var(--font-sans); padding: 0 7px; border-radius: 5px; white-space: nowrap; }
@@ -268,17 +306,32 @@
 .fecha-regla { margin: 8px 0 0; font-size: var(--fs-xs); color: var(--ink-3); }
 .prec { display: inline-grid; place-items: center; min-width: 22px; height: 20px; padding: 0 4px; border-radius: var(--r-xs); background: rgba(255, 255, 255, .7); border: 1px solid currentColor; font: 700 var(--fs-2xs) var(--font-sans); color: var(--gold-ink); }
 
+/* Barra compactada por pasos cuando no cabe (linea.js, ajustarBarra). */
+.linea-barra[data-compacta="1"] :is(.meses-etiqueta, .meses-que), .linea-barra[data-compacta="2"] :is(.meses-etiqueta, .meses-que), .linea-barra[data-compacta="3"] :is(.meses-etiqueta, .meses-que) { display: none; }
+.linea-barra:not([data-compacta="0"]) ~ .linea-carriles .carril-ayuda { display: inline-grid; }
+.linea-barra[data-compacta="2"] .zoom .z-largo, .linea-barra[data-compacta="3"] .zoom .z-largo { display: none; }
+.linea-barra[data-compacta="2"] .zoom .z-corto, .linea-barra[data-compacta="3"] .zoom .z-corto { display: inline; }
+.linea-barra[data-compacta="3"] :is(.velocidad, .cronologia) { display: none; }
+
+/* ---------- Tabletas: la barra no cabe entera. La velocidad y «Sobre las fechas» pasan al menú de la línea (…), como en
+   el móvil, y la frase de contexto se va: así el menú no se sale por la derecha. ---------- */
+@media (max-width: 900px) {
+  .linea-barra .velocidad, .linea-barra .cronologia, .linea-estado { display: none !important; }
+  .linea-barra > .be-spacer { flex: 1 1 0; min-width: 0; }
+}
+
 /* ---------- Pantallas estrechas ---------- */
 @media (max-width: 760px) {
-  .linea-estado, .be-speed, .cronologia, .minimapa { display: none !important; }
+  .linea-estado, .linea-barra .velocidad, .cronologia, .minimapa { display: none !important; }
   .linea-carriles .be-lane-label .be-i { display: none; }
   .linea { grid-template-columns: 92px 1fr; }
   .linea-barra { gap: 4px; padding: 0 6px; }
   .linea-barra > .be-spacer { flex: 1 1 0; min-width: 0; }
   .linea-barra .be-play { gap: 2px; }
-  .zoom .z-largo { display: none; }
-  .zoom .z-corto { display: inline; }
-  .zoom button { padding: 4px 5px; }
+  /* Las seis escalas, en un desplegable: en fila no caben con dianas para el dedo (be-f1w). */
+  .zoom { display: none; }
+  .zoom-select { display: block; flex: 0 1 auto; min-width: 0; height: 36px; padding: 0 26px 0 12px; border: 1px solid var(--line); border-radius: var(--r-pill); background: var(--paper-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 10 5 5 5-5' fill='none' stroke='%23555' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 8px center / 14px; color: var(--ink); font: 600 var(--fs-sm)/1 var(--font-sans); appearance: none; -webkit-appearance: none; cursor: pointer; }
+  .be-reunion .zoom-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 10 5 5 5-5' fill='none' stroke='%23d8cdb8' stroke-width='2'/%3E%3C/svg%3E"); }
   .linea-barra .meses-control { display: none; }   /* no cabe: el selector va en el menú de la línea */
   .carril-ayuda { display: inline-grid; }
   .linea-carriles .nombre-largo { display: none; }
