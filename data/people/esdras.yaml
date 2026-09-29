@@ -1,0 +1,94 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esdras
+name: Esdras
+names:
+- name: Esdras
+disambiguation: El sacerdote y copista de 468 a.e.c.; no el sacerdote homónimo que volvió con Zorobabel en 537.
+date:
+  from: -467
+  to: -454
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 468 a 455 a.e.c.
+summary: Sacerdote y copista experto en la Ley. En 468 a.e.c., con permiso de Artajerjes, llevó a Jerusalén a unos 1.500
+  hombres con sus familias y donativos para el templo; más tarde enseñó la Ley junto a Nehemías.
+reason: 'Perspicacia «Esdras», núm. 1: viaje de 468 con unos 1.500 hombres y sus familias; reaparece con Nehemías tras el
+  muro (Ne 8). Esd 7:1-9.'
+sources:
+- it-esdras
+- esdras-7
+- si-3
+links:
+- title: 'Perspicacia: «Esdras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001475
+  type: perspicacia
+- title: Esdras 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/7
+  type: bible
+not_claimed:
+- 'Que Esdras se quedara en Jerusalén sin interrupción desde 468 a.e.c.: Perspicacia dice que no se sabe.'
+relations:
+- type: lived_in
+  place: babilonia
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: hasta su salida en 468 a.e.c.
+  inferred: false
+  sources:
+  - it-esdras
+  - esdras-7
+  reason: 'Perspicacia «Esdras»: la Biblia solo dice que vivía en Babilonia antes de su viaje (Esd 7:6, 9).'
+  checked_on: '2026-09-28'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -467
+    to: -467
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 468 a.e.c.
+  inferred: false
+  sources:
+  - it-esdras
+  - esdras-7
+  reason: 'Esd 7:8, 9: llegó a Jerusalén en el quinto mes del séptimo año de Artajerjes.'
+  checked_on: '2026-09-28'
+  status: verified
+- type: accompanies
+  person: nehemias
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  inferred: false
+  sources:
+  - it-esdras
+  - it-nehemias
+  reason: 'Perspicacia «Esdras» y «Nehemías»: enseñaron juntos la Ley al pueblo reunido después de terminar el muro (Ne 8:9).'
+  checked_on: '2026-09-28'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - esdras-7
+  - it-esdras
+  reason: La carta de Artajerjes lo llama el sacerdote Esdras, copista de la Ley (Esd 7:11, 12).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

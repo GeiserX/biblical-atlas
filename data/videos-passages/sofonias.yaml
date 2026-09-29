@@ -1,0 +1,79 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: sofonias
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_360_VIDEO"
+    title: "Información sobre Sofonías"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_360_VIDEO"
+    published: "2017-11-27"
+chapters:
+  1:
+    - docid: "pub-jwb-103_13_VIDEO"
+      title: "James Mantz: “Hagan amigos usando las riquezas injustas” (Luc. 16:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-103_13_VIDEO"
+      published: "2023-02-24"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jwb_202104_9_VIDEO"
+      title: "William Turner: “Jehová levanta a los mansos” (Sal. 147:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202104_9_VIDEO"
+      published: "2021-04-12"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-098_14_VIDEO"
+      title: "Geoffrey Jackson: “Los mansos heredarán la tierra” (Sal. 37:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-098_14_VIDEO"
+      published: "2022-12-16"
+      matched_by: [subtitles]
+      citations: 1
+  3:
+    - docid: "pub-jwbvod26_4_VIDEO"
+      title: "Per Christensen: El \"idioma puro\" es un regalo de Jehová (Sof. 3:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_4_VIDEO"
+      published: "2026-01-23"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-jwb-099_12_VIDEO"
+      title: "Ronald Curzan: Vivamos juntos en unidad (Sal. 133:1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_12_VIDEO"
+      published: "2023-07-21"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-119_7_VIDEO"
+      title: "Mark Noumair: El dúo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-119_7_VIDEO"
+      published: "2024-11-18"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "702023003"
+      title: "2023 | Informe 1 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702023003"
+      published: "2023-01-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-133_5_VIDEO"
+      title: "Luke Saladino: Deténganse y disfruten del paisaje (graduación de la clase 158 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-133_5_VIDEO"
+      published: "2025-12-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201812_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2018 (graduación de la clase 145 de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201812_1_VIDEO"
+      published: "2018-12-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_202012_6_VIDEO"
+      title: "William Malenfant: ¿Estás aprendiendo un nuevo idioma? (Neh. 13:24)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_6_VIDEO"
+      published: "2020-12-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbrd_201610_3_VIDEO"
+      title: "La partida a Warwick"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbrd_201610_3_VIDEO"
+      published: "2016-12-14"
+      matched_by: [subtitles]
+      citations: 1

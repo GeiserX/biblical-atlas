@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por hallazgo. Esquema en docs/investigacion/README.md.
+id: osario-de-caifas
+name: Osario de Caifás
+found_at: jerusalen
+relates_to:
+- person:caifas
+- period:sumo-sacerdocio-de-caifas
+object_date:
+  from: 1
+  to: 70
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Siglo I, antes de la destrucción de Jerusalén
+summary: Cofre de piedra caliza para huesos, hallado en 1990 en una cueva funeraria de Jerusalén con el nombre de
+  la familia de Caifás. Se piensa que guardaba sus restos.
+reason: La Atalaya de 1997 (párr. 28) describe el hallazgo y el uso de osarios antes de 70; la de 2013 (párr. 3)
+  lo cita junto al osario de Míriam, pariente de Caifás.
+sources:
+- w97-arqueologia-jerusalen
+- w13-osario-caifas
+checked_on: '2026-09-28'
+status: verified

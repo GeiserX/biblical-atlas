@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: profecia-de-agabo
+title: Ágabo anuncia una gran hambre
+date:
+  from: 44
+  to: 44
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 44 e.c.
+narrative_order:
+  series: hechos
+  order: 1127
+places:
+- antioquia-de-siria
+- jerusalen
+people:
+- agabo
+passages:
+- Hch 11:27, 28
+summary: Profetas de Jerusalén bajan a Antioquía. Uno de ellos, Ágabo, anuncia por el espíritu una gran hambre en
+  toda la tierra; llegó hacia 46, en tiempos de Claudio, y los discípulos enviaron ayuda a Judea.
+reason: El estudio 3 (párr. 20 y 21) fecha la profecía en 44 y el hambre hacia 46; la nota de estudio de Hch 11:28
+  cita a Josefo, como hace Perspicacia «Ágabo» (párr. 3).
+sources:
+- si-3
+- it-agabo
+- hechos-11
+search: Ágabo hambre
+history:
+- date: '2026-09-29'
+  change: Los versículos 29 y 30, el envío de la ayuda, son del suceso socorro-a-jerusalen; aquí queda solo la profecía.
+  source: hechos-11
+checked_on: '2026-09-29'
+status: verified

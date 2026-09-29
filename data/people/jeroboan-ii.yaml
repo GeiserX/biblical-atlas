@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroboan-ii
+name: Jeroboán II
+names:
+- name: Jeroboán II
+disambiguation: Decimocuarto rey de Israel, de la dinastía de Jehú; no es Jeroboán hijo de Nebat.
+distinct_from:
+- jeroboan-i
+date:
+  from: -843
+  to: -802
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 844-803 a.e.c.
+summary: Hijo de Jehoás. Devolvió a Israel el límite desde Lebó-Hamat hasta el mar Salado, como había dicho Jonás. Hubo
+  prosperidad, pero Amós y Oseas denunciaron la corrupción.
+reason: Perspicacia «Jeroboán», núm. 2, párr. 11-13; 2Re 14:23-29. Comienzo en A6-A; Perspicacia «Zacarías», núm. 14, y A6-B
+  ponen su muerte en 803.
+sources:
+- it-jeroboan
+- 2-reyes-14
+- tnm-a6-a
+- tnm-a6-b
+- it-zacarias
+- amos-7
+links:
+- title: 'Perspicacia: «Jeroboán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
+  type: perspicacia
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+relations:
+- type: kin
+  person: jehoas-de-israel
+  word: father
+  inferred: false
+  sources:
+  - it-jeroboan
+  - 2-reyes-14
+  - amos-1
+  - it-jehoas
+  reason: Hijo y sucesor de Jehoás (2Re 14:16).
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: jehoas-de-israel
+  inferred: false
+  sources:
+  - it-jeroboan
+  - 2-reyes-14
+  reason: Reinó al morir su padre (2Re 14:16).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+perspicacia: 1200002431#2
+history:
+- date: '2026-09-29'
+  change: El resumen deja de repetir la frase de 2Re 14:25 y dice «hasta el mar Salado».
+  source: it-jeroboan
+- date: '2026-09-29'
+  change: 'El límite norte que recobró era Lebó-Hamat, no Hamat: así lo dice 2Re 14:25, y Am 6:14 usa el mismo par de límites.
+    Hamat es la ciudad, que 2Re 14:28 trata aparte.'
+  source: 2-reyes-14
+checked_on: '2026-09-29'
+status: verified

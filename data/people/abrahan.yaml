@@ -1,0 +1,245 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abrahan
+name: Abrahán
+names:
+- name: Abrahán
+- name: Abrán
+  note: Nombre anterior; Dios se lo cambió a los 99 años (Gé 17:5).
+date:
+  from: -2017
+  to: -1842
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 2018-1843 a.e.c.
+summary: Hijo de Taré, natural de Ur. Por fe dejó su tierra y vivió en tiendas en Canaán. Dios pactó con él que por su descendencia
+  se bendecirían las naciones. Padre de Ismael e Isaac, murió a los 175 años.
+reason: 'Perspicacia «Abrahán», párr. 3, 4, 8, 13, 14 y 17: nace en 2018 y muere en 1843 a.e.c. El cuadro del estudio 3 da
+  los mismos años.'
+sources:
+- it-abrahan
+- si-3
+- genesis-11
+- genesis-25
+- mateo-1
+- genesis-12
+- genesis-13
+- genesis-14
+- genesis-15
+- genesis-16
+- genesis-17
+- genesis-18
+- genesis-19
+- genesis-20
+- genesis-22
+- genesis-23
+- genesis-24
+- salmos-105
+- lucas-3
+- hechos-7
+- romanos-4
+- josue-24
+links:
+- title: 'Perspicacia: «Abrahán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
+  type: perspicacia
+- title: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  type: bible
+relations:
+- type: kin
+  person: tare
+  word: father
+  inferred: false
+  sources:
+  - it-abrahan
+  - genesis-11
+  - lucas-3
+  - josue-24
+  reason: 'Perspicacia «Abrahán», párr. 3: hijo de Taré, que tenía 130 años cuando nació (Gé 11:26, 32; 12:4).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: ur
+  date:
+    from: -2017
+    to: -2017
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 2018 a.e.c.
+  inferred: false
+  sources:
+  - it-abrahan
+  - si-3
+  reason: 'Perspicacia «Abrahán», párr. 3 y 4: nació en 2018 a.e.c. y su ciudad de origen era Ur, en Caldea.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: haran
+  inferred: false
+  sources:
+  - it-abrahan
+  - genesis-11
+  - genesis-12
+  - hechos-7
+  reason: 'Perspicacia «Abrahán», párr. 7 y 8: vivió en Harán hasta que murió su padre y salió de allí en 1943 a.e.c.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - it-abrahan
+  - genesis-12
+  reason: 'Perspicacia «Abrahán», párr. 9: un hambre muy severa lo obligó a vivir un tiempo en Egipto (Gé 12:10).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - it-abrahan
+  - genesis-13
+  - genesis-23
+  - genesis-35
+  reason: 'Perspicacia «Abrahán», párr. 10: se estableció junto a los árboles grandes de Mamré, en Hebrón (Gé 13:18).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: beer-seba
+  inferred: false
+  sources:
+  - it-beer-seba
+  - genesis-21
+  - genesis-22
+  reason: 'Perspicacia «Beer-seba», párr. 5: allí hizo un pacto con Abimélec, plantó un tamarisco y siguió viviendo tras volver
+    de Moria (Gé 21:31-33).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sara
+  word: wife
+  inferred: false
+  sources:
+  - genesis-11
+  - genesis-12
+  - it-sara
+  - genesis-17
+  - genesis-16
+  - genesis-20
+  - genesis-23
+  - genesis-49
+  reason: 'Gé 11:29: la esposa de Abrán se llamaba Sarái. Gé 20:12: era hija de su padre, pero no de su madre. Perspicacia
+    «Sara» dice que se casaron en Ur.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: nacor-hijo-de-tare
+  word: brother
+  inferred: false
+  sources:
+  - genesis-11
+  - genesis-22
+  - it-nacor
+  - genesis-24
+  reason: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré. Gé 22:20-23 y 24:15 vuelven a nombrarlo hermano de Abrahán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: haran-hijo-de-tare
+  word: brother
+  inferred: false
+  sources:
+  - genesis-11
+  reason: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ur
+  inferred: false
+  sources:
+  - genesis-11
+  - hechos-7
+  reason: 'Gé 11:31: Taré se lo llevó de Ur de los caldeos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: canaan
+  inferred: false
+  sources:
+  - genesis-12
+  - it-canaan
+  - genesis-13
+  - genesis-16
+  - genesis-17
+  - salmos-105
+  - hechos-7
+  - josue-24
+  reason: 'Gé 12:5; 13:12; 16:3; 17:8: vivió en la tierra de Canaán como extranjero.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mamre
+  inferred: false
+  sources:
+  - genesis-13
+  - it-mamre
+  - genesis-14
+  - genesis-18
+  - genesis-35
+  reason: 'Gé 13:18 y 14:13: vivía en tiendas entre los árboles grandes de Mamré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: agar
+  word: wife
+  inferred: false
+  sources:
+  - genesis-16
+  - it-agar
+  reason: 'Gé 16:3: Sarái se la dio a Abrán como esposa; Perspicacia «Agar» la llama concubina.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: negueb
+  inferred: false
+  sources:
+  - genesis-20
+  - it-negueb
+  reason: 'Gé 20:1: llevó su campamento a la tierra del Négueb y se quedó entre Cadés y Sur.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: guerar
+  inferred: false
+  sources:
+  - genesis-20
+  - it-guerar
+  reason: 'Gé 20:1, 15: vivió como forastero en Guerar, y Abimélec le ofreció quedarse donde quisiera en su tierra.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: filistea
+  inferred: false
+  sources:
+  - genesis-21
+  - it-filistea
+  reason: 'Gé 21:34: vivió como forastero mucho tiempo en la tierra de los filisteos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: quetura
+  word: wife
+  inferred: false
+  sources:
+  - it-quetura
+  - genesis-25
+  reason: 'Gé 25:1: Abrahán volvió a casarse con Queturá.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200000060'
+checked_on: '2026-09-29'
+status: verified

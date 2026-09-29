@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elon-juzga-a-israel
+title: Elón juzga a Israel diez años
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: después de Jefté y antes de Saúl)'
+narrative_order:
+  series: jueces
+  order: 12011
+places:
+- ayalon-de-zabulon
+- zabulon
+people:
+- elon-el-zabulonita
+passages:
+- Jue 12:11, 12
+summary: Tras Ibzán, Elón, de la tribu de Zabulón, juzga a Israel diez años. Muere y lo entierran en Ayalón, en la tierra
+  de Zabulón.
+reason: 'Jue 12:11, 12; Perspicacia «Elón», núm. 3. Fecha: después de Jefté, que empieza hacia 1173 a.e.c. («Jefté»), y antes
+  de Saúl, 1117 (estudio 3).'
+sources:
+- jueces-12
+- it-elon
+- it-jefte
+- si-3
+links:
+- title: Jueces 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

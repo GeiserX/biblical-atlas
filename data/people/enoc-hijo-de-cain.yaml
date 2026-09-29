@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: enoc-hijo-de-cain
+name: Enoc
+names:
+- name: Enoc
+disambiguation: Enoc hijo de Caín; no Enoc hijo de Jared, el que anduvo con Dios, ni la ciudad que lleva su nombre.
+distinct_from:
+- enoc-hijo-de-jared
+perspicacia: 1200001371#1
+summary: Nació de Caín en la región del Destierro, después de la muerte de Abel, y fue padre de Irad. Caín llamó con su nombre
+  a la ciudad que construyó.
+reason: Perspicacia «Enoc», núm. 1 y 3; Gé 4:17, 18.
+sources:
+- it-enoc
+- genesis-4
+links:
+- title: 'Perspicacia: «Enoc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001371
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+relations:
+- type: kin
+  person: cain
+  word: father
+  inferred: false
+  sources:
+  - genesis-4
+  - it-enoc
+  reason: 'Gé 4:17: Caín fue su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: nod
+  inferred: true
+  sources:
+  - it-enoc
+  - genesis-4
+  reason: 'Perspicacia «Enoc», núm. 1: nació en la tierra adonde Caín fue desterrado (Gé 4:16, 17).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

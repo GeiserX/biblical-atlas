@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: vaheb
+name: Vaheb
+names:
+- name: Vaheb
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Sufá
+  geometry:
+    type: zone
+    lat: 31.665609
+    lon: 35.81749
+    radius_km: 50
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-vaheb
+  - openbible-geo
+  reason: Perspicacia lo pone junto al Arnón, en Sufá. OpenBible solo dice que está a menos de 50 km de Sufá.
+  coord_source: openbible:adec54b
+  coord_url: https://www.openbible.info/geo/ancient/adec54b/waheb
+  note: Centro en el punto que OpenBible da a Sufá; el radio es el suyo.
+summary: Lugar cercano al Arnón, en Sufá, que nombra la cita del Libro de las Guerras de Jehová. No se sabe dónde estaba.
+reason: Perspicacia «Vaheb»; Nú 21:14.
+sources:
+- it-vaheb
+- it-sufa
+- openbible-geo
+- numeros-21
+links:
+- title: 'Perspicacia: «Vaheb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004538
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

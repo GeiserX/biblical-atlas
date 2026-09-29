@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-de-arimatea
+name: José de Arimatea
+names:
+- name: José
+- name: José de Arimatea
+  note: Arimatea era una ciudad de Judea (Lu 23:51).
+disambiguation: El de Arimatea, miembro del Sanedrín; no es José, el padre adoptivo de Jesús.
+distinct_from:
+- jose-esposo-de-maria
+- jose-hijo-de-jose
+summary: Hombre rico, miembro del Sanedrín y discípulo en secreto. No apoyó la decisión contra Jesús, pidió su cuerpo
+  a Pilato y lo puso en su propia tumba nueva.
+reason: Perspicacia «José», apartado 10, y la nota de Mt 27:57; Jn 19:38-42.
+sources:
+- it-jose
+- mateo-27
+- juan-19
+- marcos-15
+- lucas-23
+links:
+- title: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  type: perspicacia
+- title: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  type: bible
+search: José de Arimatea
+perspicacia: 1200002515#10
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: arimatea
+  inferred: false
+  sources:
+  - mateo-27
+  - it-arimatea
+  - marcos-15
+  - lucas-23
+  - juan-19
+  reason: 'Mt 27:57: un hombre rico de Arimatea.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-27
+  - juan-19
+  reason: Mt 27:57 dice que se había hecho discípulo de Jesús.
+  checked_on: '2026-09-29'
+  status: verified

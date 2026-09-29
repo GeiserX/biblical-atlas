@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hebron-hijo-de-cohat
+name: Hebrón
+names:
+- name: Hebrón
+perspicacia: 1200001956#1
+disambiguation: Hebrón hijo de Cohat; no el descendiente de Caleb, de Judá, ni la ciudad de Hebrón.
+summary: Levita, hijo de Cohat y nieto de Leví. Fue el antepasado de los hebronitas.
+reason: Perspicacia «Hebrón», núm. 1; Éx 6:18.
+sources:
+- it-hebron
+- exodo-6
+- numeros-3
+links:
+- title: 'Perspicacia: «Hebrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001956
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-hebron
+  - numeros-3
+  reason: 'Éx 6:18: tercero de los hijos de Cohat.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

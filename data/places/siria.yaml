@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: siria
+name: Siria
+names:
+- name: Siria
+- name: Aram
+  note: Nombre que le dan las Escrituras Hebreas, según Perspicacia «Siria».
+type: region
+lat: 33.511112
+lon: 36.30639
+precision: zone
+coord_source: openbible:a890adf
+coord_url: https://www.openbible.info/geo/ancient/a890adf/syria-2
+coord_note: Punto representativo que OpenBible da a la provincia romana, el mismo de Damasco; la región es mucho más amplia.
+summary: Tierra entre Mesopotamia, el Líbano, el Tauro y Palestina, llamada Aram en las Escrituras Hebreas. En el siglo I
+  era una provincia romana con capital en Antioquía que abarcaba también Palestina. La fama de Jesús corrió por toda ella.
+reason: 'Perspicacia «Siria», párr. 1 y apartado «En el siglo I E.C.»; nota de estudio de Mt 4:24. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-siria
+- mateo-4
+- openbible-geo
+- lucas-2
+- amos-1
+- amos-9
+- it-quir
+- hch-15
+links:
+- title: 'Perspicacia: «Siria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004285
+  type: perspicacia
+- title: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

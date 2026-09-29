@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: noche-en-betania-10-de-nisan
+title: Vuelve a Betania para pasar la noche
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 10 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 10
+places:
+- betania
+people:
+- jesus
+passages:
+- Mt 21:17
+- Mr 11:11
+- Lu 21:37, 38
+summary: Al caer la tarde, con la que empieza el 10 de nisán, Jesús sale de Jerusalén con los doce y duerme en Betania.
+  Así hará cada noche de esos días.
+reason: B12-A pone esta noche en Betania y A7-G fecha la semana en el 33; la nota de Lu 21:37 dice que dormían allí, y jy cap.
+  115 cuenta seis noches.
+sources:
+- tnm-b12-a
+- mateo-21
+- marcos-11
+- lucas-21
+- jy-cap-115
+- jy-cap-102
+- jy-cap-103
+- jy-cap-111
+- tnm-a7-g
+search: Vuelve a Betania para pasar la noche
+checked_on: '2026-09-28'
+status: verified

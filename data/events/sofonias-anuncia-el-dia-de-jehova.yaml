@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sofonias-anuncia-el-dia-de-jehova
+title: Sofonías anuncia el día de Jehová
+date:
+  from: -658
+  to: -647
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 659 y 648 a.e.c. (tiempo narrativo: al principio del reinado de Josías, antes de sus reformas)'
+narrative_order:
+  series: sofonias
+  order: 1001
+places:
+- juda
+- jerusalen
+- filistea
+- moab
+- ammon
+- etiopia
+- asiria
+- ninive
+people:
+- sofonias-profeta
+present: []
+passages:
+- Sof 1:1-3:20
+summary: Sofonías avisa de que el día de Jehová llega contra la Judá idólatra y contra filisteos, Moab, Ammón, Etiopía y Asiria.
+  Pide a los mansos que busquen a Jehová y promete restaurar a un resto humilde.
+reason: 'Perspicacia «Sofonías, Libro de» y «Toda Escritura», libro 36: en días de Josías, rey desde 659 (A6-B), antes de sus
+  reformas. El estudio 3 y la tabla cierran el libro antes de 648. No dice dónde habló.'
+sources:
+- sofonias-1
+- sofonias-2
+- sofonias-3
+- si-3
+- tnm-tabla
+- tnm-a6-b
+- it-sofonias
+- it-sofonias-libro
+- si-sofonias
+- w07-nahum-habacuc-y-sofonias
+- it-malcam
+- it-mactes
+- it-keretitas
+- it-etiopia
+- it-ninive
+links:
+- title: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  type: bible
+- title: Sofonías 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/2
+  type: bible
+- title: Sofonías 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/3
+  type: bible
+- title: 'Perspicacia: «Sofonías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004697
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

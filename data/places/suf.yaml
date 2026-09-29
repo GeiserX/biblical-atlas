@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: suf
+name: Suf
+names:
+- name: Suf
+  note: Quizá significa «juncos», según Perspicacia.
+type: region
+lat: 31.665609
+lon: 35.81749
+precision: uncertain
+coord_source: openbible:af725bb
+coord_url: https://www.openbible.info/geo/ancient/af725bb/suph
+coord_note: 'Punto de Sufeh, tercera identificación de OpenBible: es Khirbet Sufa, que Perspicacia da con reservas como
+  el sitio, a unos 6 km al sur-sureste de Madaba. Sufá comparte este mismo punto.'
+summary: Lugar al este del Jordán que, con otros, sirve para situar dónde habló Moisés a Israel al terminar los cuarenta años
+  en el desierto. No se sabe con seguridad dónde estaba.
+reason: 'Perspicacia «Suf»; Dt 1:1, 5. No es Sufá, que Perspicacia trata en otro artículo. OpenBible: solo el punto.'
+note: La Septuaginta y la Vulgata ponen «mar Rojo» en lugar de Suf, lo que apuntaría al golfo de ʽAqaba. Perspicacia sigue
+  el texto hebreo, que junto con el versículo 5 sitúa el lugar en Moab, al este del Jordán.
+sources:
+- it-suf
+- openbible-geo
+- deuteronomio-1
+links:
+- title: 'Perspicacia: «Suf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004263
+  type: perspicacia
+- title: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  type: bible
+history:
+- date: '2026-09-29'
+  change: Pasa de candidatos sin punto al punto de Khirbet Sufa con precisión incierta, porque Perspicacia nombra ese sitio
+    como identificación tentativa. La lectura «mar Rojo», descartada, queda en la nota.
+  source: it-suf
+checked_on: '2026-09-29'
+status: verified

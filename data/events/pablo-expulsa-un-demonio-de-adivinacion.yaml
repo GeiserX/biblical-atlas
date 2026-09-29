@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-expulsa-un-demonio-de-adivinacion
+title: Pablo expulsa un demonio de adivinación en Filipos
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1616
+places:
+- filipos
+people:
+- pablo
+- silas
+- lucas
+passages:
+- Hch 16:16-18
+summary: Camino del lugar de oración, una joven sirvienta con un demonio que predice el futuro los sigue muchos días gritando
+  quiénes son. Harto, Pablo manda al espíritu salir de ella en nombre de Jesucristo, y sale.
+reason: 'Perspicacia «Pablo», párr. 16; la nota de Hch 16:16 explica el espíritu de adivinación. Año: en Filipos tras cruzar
+  a Europa en la primavera de 50 (estudio 3, párr. 24).'
+sources:
+- it-pablo
+- nota-hechos-16
+- si-3
+- hch-16
+links:
+- title: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  type: bible
+search: espíritu de adivinación Filipos
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sidon
+name: Sidón
+names:
+- name: Sidón
+perspicacia: '1200004113'
+disambiguation: Sidón hijo de Canaán; no la ciudad de Sidón, que tomó su nombre.
+summary: Primogénito de Canaán y antepasado de los sidonios. Su nombre lo lleva el puerto de Sidón, durante mucho tiempo la
+  principal ciudad fenicia.
+reason: Perspicacia «Sidón, sidonios», párr. 1; Gé 10:15.
+sources:
+- it-sidon
+- genesis-10
+links:
+- title: 'Perspicacia: «Sidón, sidonios»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: canaan
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: 'Gé 10:15: Sidón fue el primer hijo de Canaán.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

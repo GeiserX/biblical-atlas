@@ -1,0 +1,69 @@
+# Nombres que busca scripts/videos/index.py en los subtítulos: lugares del carril «inciertos».
+# Mismo formato que scripts/videos/place_names/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español,
+# consultada el 28 de septiembre de 2026.
+#
+# cruce-del-mar-rojo busca frases del paso, no «mar Rojo» suelto, que sale en muchos otros contextos.
+#
+# Sin nombres buscables en este fichero, a propósito:
+#   monte-de-la-transfiguracion: la Biblia no le da nombre («una montaña alta»); «transfiguración» es el suceso.
+#   antipatris: ya está en nombres/pablo.yaml; «Afec» no sirve porque nombra al menos cinco ciudades.
+
+eden:
+  names: [Edén]
+  exclude: [Bet-edén]
+
+ararat:
+  names: [Ararat]
+
+monte-sinai:
+  names: [monte Sinaí, Monte Sinaí, Horeb]
+
+pihahirot:
+  names: [Pihahirot]
+
+cruce-del-mar-rojo:
+  names: [cruzar el mar Rojo, cruzaron el mar Rojo, cruce del mar Rojo, dividió el mar Rojo, abrió el mar Rojo]
+
+gosen:
+  names: [Gosén]
+
+rameses:
+  names: [Ramesés, Raamsés]
+
+ur:
+  names: [Ur de los caldeos, Ur]
+
+haran:
+  names: [Harán]
+  exclude: [hermano de Abrán, hermano de Abrahán]
+
+sodoma:
+  names: [Sodoma]
+  demonyms: [sodomitas]
+
+gomorra:
+  names: [Gomorra]
+
+cades:
+  names: [Cadés, Cadés-Barnea, Qadés]
+  accents: strict
+
+golgota:
+  names: [Gólgota, Calvario]
+
+betania-del-otro-lado-del-jordan:
+  names: [Betania del otro lado del Jordán]
+
+emaus:
+  names: [Emaús]
+
+ofir:
+  names: [Ofir]
+
+tarsis:
+  names: [Tarsis]
+  exclude: [naves de Tarsis, barcos de Tarsis]
+
+# Sin nombres buscables (motivo en la cabecera); la entrada vacía mantiene iguales los ids de nombres/ y de data/places/.
+monte-de-la-transfiguracion:
+  names: []

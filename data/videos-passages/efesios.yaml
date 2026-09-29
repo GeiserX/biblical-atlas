@@ -1,0 +1,370 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: efesios
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_490_VIDEO"
+    title: "Información sobre Efesios"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_490_VIDEO"
+    published: "2019-04-18"
+chapters:
+  1:
+    - docid: "pub-jwb_201707_2_VIDEO"
+      title: "Anthony Morris III: Organizados para hacer la voluntad de Dios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201707_2_VIDEO"
+      published: "2017-07-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201712_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2017 (graduación de la clase 143 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201712_1_VIDEO"
+      published: "2017-12-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jwbvod25_9_VIDEO"
+      title: "Stephen Lett: No respiremos el espíritu tóxico de este mundo (Efes. 2:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_9_VIDEO"
+      published: "2025-02-21"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r21_102_VIDEO"
+      title: "David Schafer: Por qué tenemos fe en la existencia de Dios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_102_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_1_VIDEO"
+      title: "Viernes mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_1_VIDEO"
+      published: "2021-06-28"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-097_10_VIDEO"
+      title: "James Mantz: Jehová nos da libertad verdadera (2 Cor. 3:17)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_10_VIDEO"
+      published: "2022-02-18"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-134_10_VIDEO"
+      title: "Gerrit Lösch: ¿De qué templos nos habla la Biblia? (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_10_VIDEO"
+      published: "2026-02-05"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-134_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2026 (reunión anual del 2025, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_9_VIDEO"
+      published: "2026-02-02"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201705_12_VIDEO"
+      title: "Geoffrey W. Jackson: Jesús cumplió la Ley (Mat. 5:43)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201705_12_VIDEO"
+      published: "2017-05-15"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201809_2_VIDEO"
+      title: "Kenneth Flodin: No permitamos que el mundo nos moldee"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201809_2_VIDEO"
+      published: "2018-09-17"
+      matched_by: [subtitles]
+      citations: 1
+  3:
+    - docid: "pub-jwban_201605_1_VIDEO"
+      title: "Anthony Morris III: Glorifiquemos a Jehová, Aquel a quien toda familia debe su nombre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201605_1_VIDEO"
+      published: "2016-05-16"
+      matched_by: [subtitles]
+      citations: 6
+    - docid: "pub-jwb_201906_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2019 (graduación de la clase 146 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201906_1_VIDEO"
+      published: "2019-06-03"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_105_VIDEO"
+      title: "Gerrit Lösch: Por qué tenemos fe en el amor de Dios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_105_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_1_VIDEO"
+      title: "Viernes mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_1_VIDEO"
+      published: "2021-06-28"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-091_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-091_1_VIDEO"
+      published: "2022-06-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-091_7_VIDEO"
+      title: "Gerrit Lösch: Demostremos el amor que nunca falla"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-091_7_VIDEO"
+      published: "2022-06-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-133_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2025 (graduación de la clase 158 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-133_1_VIDEO"
+      published: "2025-12-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201706_2_VIDEO"
+      title: "Robert Luccioni: ¿Deja usted que sus circunstancias le impidan darle a Jehová lo mejor?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201706_2_VIDEO"
+      published: "2017-06-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_202012_2_VIDEO"
+      title: "Anthony Morris: “Que cada uno vigile cómo construye”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_2_VIDEO"
+      published: "2020-12-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbcov25_10_VIDEO"
+      title: "Imitemos a los que amaron la adoración pura. Juan"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov25_10_VIDEO"
+      published: "2026-01-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbgg_201609_2_VIDEO"
+      title: "Graduación de la clase 141 de la Escuela de Galaad: Parte 2. Experiencias y entrevistas"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_2_VIDEO"
+      published: "2017-03-30"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod26_14_VIDEO"
+      title: "Mark Scott: Pongámonos metas que honren a Jehová (1 Cor. 9:26)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_14_VIDEO"
+      published: "2026-04-17"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwb-095_6_VIDEO"
+      title: "Robert Luccioni: Seamos como Gedeón (Efes. 4:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-095_6_VIDEO"
+      published: "2023-04-17"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-jwb-106_10_VIDEO"
+      title: "Paul Gillies: Reflejemos la personalidad de Jehová siguiendo el modelo de Jesús (Efes. 4:20, 21)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-106_10_VIDEO"
+      published: "2023-10-20"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-co-r22_136_VIDEO"
+      title: "David Splane: Protejamos nuestro “vínculo de la paz”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_136_VIDEO"
+      published: "2022-07-25"
+      matched_by: [subtitles]
+      citations: 5
+    - docid: "pub-co-r22_8_VIDEO"
+      title: "Sábado tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_8_VIDEO"
+      published: "2022-07-25"
+      matched_by: [subtitles]
+      citations: 5
+    - docid: "pub-co-r20_134_VIDEO"
+      title: "Anthony Morris: Ayudemos a los estudiantes… a abandonar los hábitos que Jehová odia"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_134_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r20_56_VIDEO"
+      title: "Sábado tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!” (con audiodescripciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_56_VIDEO"
+      published: "2020-08-03"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r20_7_VIDEO"
+      title: "Sábado tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_7_VIDEO"
+      published: "2020-08-03"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r22_7_VIDEO"
+      title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_7_VIDEO"
+      published: "2022-07-25"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-095_1_VIDEO"
+      title: "JW Broadcasting: Abril de 2023"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-095_1_VIDEO"
+      published: "2023-04-03"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb_202010_12_VIDEO"
+      title: "Gene Smalley: ¿Perdonamos a los demás? (Luc. 18:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202010_12_VIDEO"
+      published: "2020-10-26"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb_202012_11_VIDEO"
+      title: "Leonard Myers: Preocupémonos unos por otros (1 Cor. 12:25)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_11_VIDEO"
+      published: "2020-12-28"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwban_201502_1_VIDEO"
+      title: "Samuel F. Herd: Unidos en mente y corazón"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201502_1_VIDEO"
+      published: "2016-10-25"
+      matched_by: [subtitles]
+      citations: 3
+  5:
+    - docid: "pub-jwb_201803_7_VIDEO"
+      title: "Ronald Curzan: ¿Somos agradables a la vista de Jehová? (Efes. 5:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201803_7_VIDEO"
+      published: "2018-03-19"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-jwb_201807_10_VIDEO"
+      title: "John Ekrann: “Háganse imitadores de Dios” (Efes. 5:1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201807_10_VIDEO"
+      published: "2018-07-23"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-jwbvod24_36_VIDEO"
+      title: "Betty Georges: Sigamos “el camino del amor” (Efes. 5:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_36_VIDEO"
+      published: "2024-09-20"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-mwbv_201702_2_VIDEO"
+      title: "Ideas para la sección \"Enseñemos la verdad\" (Ef 5:33)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201702_2_VIDEO"
+      published: "2017-01-19"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_201807_1_VIDEO"
+      title: "2018-07 | Primera conversación (Ef 5:33)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201807_1_VIDEO"
+      published: "2018-06-11"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-jwb_202103_2_VIDEO"
+      title: "John Ekrann: Demostremos amor y respeto en el matrimonio"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202103_2_VIDEO"
+      published: "2021-03-15"
+      matched_by: [subtitles]
+      citations: 8
+    - docid: "pub-co-r22_113_VIDEO"
+      title: "Robert Luccioni: Sigan la ruta que lleva a la paz en la familia. Tengan una buena comunicación"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_113_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 4
+    - docid: "pub-co-r22_4_VIDEO"
+      title: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_4_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 4
+    - docid: "pub-jwb_201902_2_VIDEO"
+      title: "Anthony Morris: Tomemos la iniciativa en mostrarnos honra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201902_2_VIDEO"
+      published: "2019-02-19"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwbvod26_26_VIDEO"
+      title: "James Mantz: Prestemos atención a los mandamientos de Jehová (Is. 48:17, 18)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_26_VIDEO"
+      published: "2026-07-31"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-108_14_VIDEO"
+      title: "Jeffrey Winder: Ser modestos beneficia a los demás (Mat. 22:39)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_14_VIDEO"
+      published: "2023-11-17"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201708_8_VIDEO"
+      title: "Stephen Lett: Esposo, ama a tu esposa como a ti mismo (Cant. 8:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201708_8_VIDEO"
+      published: "2017-08-21"
+      matched_by: [subtitles]
+      citations: 2
+  6:
+    - docid: "pub-jwb-100_19_VIDEO"
+      title: "Christopher Mavor: Acerquémonos a Dios mediante la oración (Efes. 6:18)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_19_VIDEO"
+      published: "2023-01-27"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-jwb-091_5_VIDEO"
+      title: "Geoffrey Jackson: Llevemos “el cinturón de la verdad” siempre bien ajustado (Efes. 6:14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-091_5_VIDEO"
+      published: "2022-06-17"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r21_101_VIDEO"
+      title: "Mark Sanderson: ¿Cuánto poder tiene la fe?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_101_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r21_1_VIDEO"
+      title: "Viernes mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_1_VIDEO"
+      published: "2021-06-28"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-097_1_VIDEO"
+      title: "JW Broadcasting: Febrero de 2022 (reunión anual del 2021, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_1_VIDEO"
+      published: "2022-02-07"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-097_6_VIDEO"
+      title: "Stephen Lett: En la lucha contra Satanás, la victoria es nuestra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_6_VIDEO"
+      published: "2022-02-08"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r22_118_VIDEO"
+      title: "Kenneth Flodin: Esté listo para predicar “las buenas noticias de la paz”. No pierda el entusiasmo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_118_VIDEO"
+      published: "2022-07-18"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_110_VIDEO"
+      title: "Gary Breaux: Cómo tener una familia feliz. Padres, pueden ser felices con sus hijos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_110_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r20_3_VIDEO"
+      title: "Viernes tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_3_VIDEO"
+      published: "2020-07-15"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_12_VIDEO"
+      title: "Domingo tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_12_VIDEO"
+      published: "2021-08-16"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_149_VIDEO"
+      title: "Stephen Lett: Podemos ser poderosos gracias a la fe"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_149_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-100_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_1_VIDEO"
+      published: "2023-01-02"
+      matched_by: [subtitles]
+      citations: 1

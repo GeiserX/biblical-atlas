@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rimon-de-zabulon
+name: Rimón
+names:
+- name: Rimón
+  note: Rimón de Zabulón (Perspicacia, núm. 3).
+- name: Dimná
+  note: Así la llama Jos 21:35; Perspicacia «Dimná» dice que debe de ser Rimón.
+- name: Rimono
+  note: Así la llama 1Cr 6:77.
+type: city
+lat: 32.788056
+lon: 35.310556
+precision: point
+coord_source: openbible:a813f22
+coord_url: https://www.openbible.info/geo/ancient/a813f22/rimmon-3
+coord_note: Punto de OpenBible en Rummana.
+summary: Ciudad del límite oriental de Zabulón, llamada Dimná en Jos 21:35 y Rimono en 1Cr 6:77, que se dio a los levitas
+  de Merarí. Se identifica con Rummana, unos 10 km al norte de Nazaret.
+reason: 'Perspicacia «Rimón», núm. 3, y «Dimná»; Jos 19:13; 21:35; 1Cr 6:77. OpenBible: solo el punto.'
+sources:
+- it-rimon
+- openbible-geo
+- josue-19
+- it-dimna
+- josue-21
+links:
+- title: 'Perspicacia: «Rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003734
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 'Perspicacia: «Dimná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001179
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

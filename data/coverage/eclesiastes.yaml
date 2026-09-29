@@ -1,0 +1,93 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: eclesiastes
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: poetry, entities: [person:salomon, relation:salomon/kin/david, relation:salomon/lived_in/jerusalen], mentions: [person:david, place:jerusalen, period:salomon], note: "Título del libro: palabras del congregador, en hebreo Qohéleth, hijo de David y rey en Jerusalén. Perspicacia y «Toda Escritura» lo identifican con Salomón, el único hijo de David que reinó sobre todo Israel."}
+    - {v: 2-11, type: poetry, note: "Todo es vanidad: el esfuerzo bajo el sol no deja provecho. Las generaciones pasan y el sol, el viento y los ríos repiten su ciclo. No hay nada nuevo y nadie recuerda a los de antes."}
+    - {v: 12-18, type: poetry, entities: [person:salomon, relation:salomon/lived_in/jerusalen], mentions: [place:israel, place:jerusalen, period:salomon], note: "El congregador, rey de Israel en Jerusalén, se propone examinar con sabiduría cuanto se hace. Reúne más sabiduría que todos sus predecesores en la ciudad (1Re 4:29-31), pero comprueba que saber más trae más dolor."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: poetry, entities: [person:salomon, relation:salomon/lived_in/jerusalen, event:flota-de-salomon-a-ofir], mentions: [place:jerusalen, period:salomon], note: "Salomón prueba la risa, el vino y las grandes obras: casas, viñas, jardines, estanques, siervos, ganado, plata, oro, cantores y muchas mujeres. Todo le parece vano. Esas obras las narra 1 Reyes (1Re 7:1-8; 9:17-19; 10:14-29), que crea sus sucesos."}
+    - {v: 12-16, type: poetry, note: "Compara sabiduría y locura: la primera aventaja a la segunda como la luz a la oscuridad, pero el sabio muere igual que el necio y los dos acaban olvidados."}
+    - {v: 17-23, type: poetry, note: "Llega a odiar su trabajo porque lo heredará quien venga detrás, sea sabio o necio. Las referencias del v. 19 remiten a Rehoboam, su hijo y sucesor (1Re 12:6, 8). La fatiga no deja dormir."}
+    - {v: 24-26, type: poetry, note: "Lo mejor es comer, beber y disfrutar del propio trabajo, algo que viene de la mano de Dios. A quien le agrada le da sabiduría y alegría; el pecador acumula para otro."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-8, type: poetry, note: "Catorce parejas de contrarios: cada cosa tiene su tiempo fijado, desde nacer y morir hasta la guerra y la paz. «Toda Escritura» enlaza el v. 1 con los tiempos señalados de las naciones (Lu 21:24)."}
+    - {v: 9-15, type: poetry, note: "Dios da a los hombres su ocupación, hace hermosa cada cosa a su tiempo y pone en su corazón la eternidad. Lo que él hace permanece: nada se le añade ni se le quita."}
+    - {v: 16-22, type: poetry, note: "Donde debía haber justicia hay maldad, pero Dios juzgará al justo y al malvado. Hombres y animales mueren igual y vuelven al polvo; lo mejor es disfrutar del propio trabajo."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: poetry, note: "Los oprimidos lloran y nadie los consuela. El congregador llama más felices a los muertos y, más aún, a quien no ha nacido y no ha visto esos abusos."}
+    - {v: 4-6, type: poetry, note: "Mucho trabajo nace de la rivalidad con el prójimo. El perezoso se consume de brazos cruzados; más vale un puño lleno de reposo que dos llenos de fatiga."}
+    - {v: 7-12, type: poetry, note: "El hombre solo, sin hijo ni hermano, trabaja sin descanso y nunca se sacia. Dos rinden más: se levantan, se calientan y se defienden, y una cuerda de tres hilos resiste."}
+    - {v: 13-16, type: poetry, note: "Más vale un muchacho pobre y sabio que un rey viejo y necio que no escucha; ni el sucesor salido de la cárcel contentará a los venideros. Referencias del v. 14: José (Gé 41:14) y David (2Sa 7:8)."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: poetry, note: "Al ir a la casa del Dios verdadero conviene escuchar antes que ofrecer sacrificios como los necios. Hablar poco ante Dios y pagar sin demora lo prometido: vale más no hacer un voto que hacerlo y fallar."}
+    - {v: 8-9, type: poetry, note: "Que no sorprenda la opresión del pobre en una provincia: sobre cada funcionario vigila otro más alto. Todos, incluido el rey, viven del fruto del campo. La provincia no tiene nombre."}
+    - {v: 10-17, type: poetry, note: "Quien ama la plata nunca se sacia; al crecer los bienes crecen quienes los gastan. El rico no duerme, un mal negocio lo deja sin nada para su hijo y se va desnudo, como llegó."}
+    - {v: 18-20, type: poetry, note: "Lo bueno es comer, beber y disfrutar del trabajo en los pocos días que Dios concede. Poder gozar de riquezas y bienes es un regalo suyo, y la alegría hace que la vida pase deprisa."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: poetry, note: "Dios da a alguien riqueza y honra pero no la capacidad de disfrutarlas, y las goza un extraño. Aunque tenga cien hijos y viva dos mil años sin disfrutar, está peor que un niño nacido muerto."}
+    - {v: 7-9, type: poetry, note: "El hombre trabaja para comer y su apetito nunca se llena. El sabio no aventaja en eso al necio; mejor contentarse con lo que se tiene delante que ir detrás de los deseos."}
+    - {v: 10-12, type: poetry, note: "Todo tiene ya nombre y se sabe lo que es el hombre, que no puede pleitear con quien es más fuerte. Muchas palabras no aportan nada, y nadie sabe qué pasará después de su muerte."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: poetry, note: "Vale más un buen nombre que el aceite fino, y la casa del luto que la de la fiesta, porque todos mueren. Mejor la reprensión del sabio que el canto de los tontos, cuya risa crepita como espinos."}
+    - {v: 7-10, type: poetry, note: "La opresión trastorna al sabio y el soborno corrompe. Importa más cómo acaba un asunto que cómo empieza; la paciencia supera al orgullo, el enfado es de necios y añorar el pasado no es sabio."}
+    - {v: 11-14, type: poetry, note: "La sabiduría protege como el dinero y además conserva la vida de quien la tiene. Nadie endereza lo que Dios ha torcido; él permite días buenos y malos para que el hombre no sepa su futuro."}
+    - {v: 15-22, type: poetry, note: "Hay justos que mueren jóvenes y malvados que viven mucho. No pasarse de justo ni de malo; quien teme a Dios evita los dos extremos. Nadie deja de pecar, así que no hay que tomarse a pecho cada comentario."}
+    - {v: 23-29, type: poetry, mentions: [person:salomon], note: "El congregador, Salomón según Perspicacia (Ec 1:1, 12), cuenta su búsqueda: la sabiduría completa se le escapa, la mujer que atrapa como una red es peor que la muerte, y Dios creó recto al hombre."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-8, type: poetry, note: "La sabiduría suaviza el rostro. Obedecer al rey por el juramento hecho a Dios y no apoyar el mal; hay tiempo y manera para todo, pero nadie manda sobre el día de su muerte."}
+    - {v: 9-14, type: poetry, note: "Un hombre domina a otro para perjuicio suyo. Malvados que frecuentaban el lugar santo son enterrados y olvidados; la sentencia tardía anima a obrar mal, aunque al que teme a Dios le irá bien."}
+    - {v: 15-17, type: poetry, note: "Por eso recomienda la alegría: comer, beber y disfrutar mientras se trabaja. Aunque se pase noches sin dormir buscando sabiduría, nadie llega a comprender del todo la obra del Dios verdadero."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: poetry, note: "Justos y sabios están en manos de Dios, pero buenos y malos acaban igual, en la muerte. Vale más un perro vivo que un león muerto: los muertos ya no saben nada ni tienen parte en nada."}
+    - {v: 7-10, type: poetry, note: "Comer y beber con alegría, vestir de claro y disfrutar de la esposa en esta vida breve; hacer con empeño lo que uno pueda. La Tumba es el Seol, no un lugar del mapa."}
+    - {v: 11-12, type: poetry, note: "La carrera no siempre la gana el rápido ni la guerra el fuerte: a todos les alcanzan el tiempo y lo imprevisto, como al pez en la red o al pájaro en la trampa."}
+    - {v: 13-18, type: poetry, note: "Ejemplo sin nombres: un pobre sabio libra a una ciudad pequeña sitiada por un gran rey y luego nadie lo recuerda. Es una ilustración, no un suceso fechable. La sabiduría vale más que las armas."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: poetry, note: "Un poco de necedad estropea la fama del sabio como la mosca muerta el perfume. Ante un gobernante enfadado, calma. Los poderosos yerran al poner a necios arriba: siervos montados y príncipes a pie."}
+    - {v: 8-11, type: poetry, note: "Todo oficio tiene su peligro: el hoyo, el muro con culebra, la cantera, la leña. Con el hacha mellada cuesta más; la sabiduría hace que el trabajo rinda."}
+    - {v: 12-15, type: poetry, note: "Lo que dice el sabio le gana favor; al necio lo hunden sus propios labios y no calla nunca, aunque nadie sabe qué vendrá. Se cansa tanto que no acierta ni con el camino a la ciudad."}
+    - {v: 16-20, type: poetry, note: "Pobre del país con rey muchacho y príncipes que festejan de mañana; dichoso el de rey noble. La pereza hunde el techo; ni en secreto se maldice al rey. Referencias del v. 16: Rehoboam (2Cr 13:7) y Joaquín (2Cr 36:9)."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: poetry, note: "Ser generoso, repartir entre siete y aun ocho, porque nadie sabe qué desgracia vendrá. Quien espera el viento perfecto no siembra. Igual que no se ve crecer al bebé en el vientre, no se entienden las obras de Dios."}
+    - {v: 7-10, type: poetry, note: "La luz es dulce: que el que vive muchos años disfrute de ellos, sin olvidar los días oscuros. El joven puede gozar de su juventud, sabiendo que Dios le pedirá cuentas, y apartar de sí inquietudes y daños."}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: poetry, note: "Recordar al Creador desde joven, antes de la vejez, pintada con imágenes: guardianes que tiemblan, molinos que callan, el almendro en flor, el cordón de plata roto. El polvo vuelve a la tierra y el espíritu, a Dios."}
+    - {v: 8-10, type: narration, entities: [person:salomon], mentions: [period:salomon], note: "Epílogo: el congregador, que es Salomón según Perspicacia, enseñó al pueblo, estudió y ordenó muchos proverbios (1Re 4:32) y buscó palabras gratas y verdaderas. No es una escena fechable: sin evento."}
+    - {v: 11-14, type: poetry, note: "Los dichos de los sabios aguijan como la vara del boyero; los da un único pastor, que Perspicacia identifica con Jehová. Escribir libros no acaba nunca. Conclusión: temer a Dios y cumplir sus mandatos, porque él juzgará todo."}

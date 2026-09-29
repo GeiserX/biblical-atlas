@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-profeta
+name: Abdías
+names:
+- name: Abdías
+disambiguation: El profeta; no es Abdías, el mayordomo de Acab que escondió a cien profetas.
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 607 a.e.c.
+summary: Profeta del siglo VII a.e.c. y escritor del libro más corto de las Escrituras Hebreas. No se conoce nada de su vida.
+reason: Perspicacia «Abdías», núm. 8; Abd 1. La Tabla de los libros y el estudio 3 dan c. 607.
+sources:
+- it-abdias
+- abdias-1
+- tnm-tabla
+- si-3
+- it-abdias-libro
+- si-abdias
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003287
+  type: perspicacia
+- title: Abdías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/31/1
+  type: bible
+- title: 'Perspicacia: «Abdías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003288
+  type: perspicacia
+perspicacia: 1200003287#8
+checked_on: '2026-09-29'
+status: verified
+not_claimed:
+- 'Dónde nació, dónde vivió ni de qué tribu era: «Toda Escritura» dice que el libro no da ninguno de esos datos.'

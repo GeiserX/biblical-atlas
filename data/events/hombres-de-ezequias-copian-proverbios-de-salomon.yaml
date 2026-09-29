@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hombres-de-ezequias-copian-proverbios-de-salomon
+title: Los hombres de Ezequías copian proverbios de Salomón
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: durante el reinado de Ezequías)'
+narrative_order:
+  series: proverbios
+  order: 25001
+places:
+- jerusalen
+- juda
+people:
+- ezequias
+- salomon
+type: writing
+roles: {}
+present:
+- ezequias
+passages:
+- Pr 25:1
+summary: En el reinado de Ezequías, rey de Judá, sus hombres copian y reúnen otra colección de proverbios de Salomón, la que
+  ocupa los capítulos 25 a 29 del libro.
+reason: 'Pr 25:1 y su nota al pie; Perspicacia «Ezequías», núm. 1, apartado de sus escritos. Reinado de 746 a 716 (tabla A6-B);
+  Proverbios, en Jerusalén (tabla de libros). Copian hombres sin ficha: nadie lleva papel.'
+sources:
+- proverbios-25
+- it-ezequias
+- tnm-a6-b
+- tnm-tabla
+- si-proverbios
+- w06-proverbios
+links:
+- title: Proverbios 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/25
+  type: bible
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

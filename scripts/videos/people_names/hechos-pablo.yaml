@@ -1,0 +1,109 @@
+# Nombres de personas del carril hechos-pablo que busca scripts/videos/index.py en los subtítulos.
+# Mismo formato que nombres/pablo.yaml, con el id de data/people. Solo nombres que no se confunden o formas
+# calificadas. Sin entrada, a propósito: lucas, tito, dionisio, julio, segundo y tercio (nombres o palabras
+# corrientes hoy, que salen en experiencias; Julio es además un mes y Tito un general romano), gayo-de-macedonia,
+# gayo-de-corinto, erasto-colaborador-de-pablo y erasto-mayordomo-de-corinto (nombres compartidos entre dos personas).
+# «Demas» va con acentos estrictos para no contar la palabra «demás», y «Jasón» para no contar el nombre inglés Jason.
+
+pablo:
+  names: [apóstol Pablo, Saulo de Tarso]
+bernabe:
+  names: [Bernabé]
+silas:
+  names: [Silas, Silvano]
+timoteo:
+  names: [Timoteo]
+juan-marcos:
+  names: [Juan Marcos]
+aquila:
+  names: [Áquila]
+priscila:
+  names: [Priscila, Prisca]
+herodes-agripa-ii:
+  names: [Herodes Agripa II, Agripa II, rey Agripa]
+sergio-paulo:
+  names: [Sergio Paulo]
+elimas:
+  names: [Elimas, Bar-Jesús]
+ananias-de-damasco:
+  names: [Ananías de Damasco]
+manaen:
+  names: [Manaén]
+lucio-de-cirene:
+  names: [Lucio de Cirene]
+judas-barsabas:
+  names: [Judas Barsabás]
+loida:
+  names: [Loida]
+eunice:
+  names: [Eunice]
+lidia:
+  names: [Lidia]
+jason:
+  names: [Jasón]
+  accents: strict
+damaris:
+  names: [Dámaris]
+crispo:
+  names: [Crispo]
+sostenes:
+  names: [Sóstenes]
+galion:
+  names: [Galión]
+apolos:
+  names: [Apolos]
+demetrio-el-platero:
+  names: [Demetrio el platero, platero Demetrio]
+aristarco:
+  names: [Aristarco]
+estefanas:
+  names: [Estéfanas]
+febe:
+  names: [Febe]
+sopater:
+  names: [Sópater]
+tiquico:
+  names: [Tíquico]
+trofimo:
+  names: [Trófimo]
+eutico:
+  names: [Eutico]
+claudio-lisias:
+  names: [Claudio Lisias]
+ananias-sumo-sacerdote:
+  names: [sumo sacerdote Ananías]
+tertulo:
+  names: [Tértulo]
+felix:
+  names: [gobernador Félix, Antonio Félix]
+drusila:
+  names: [Drusila]
+festo:
+  names: [Festo, Porcio Festo]
+berenice:
+  names: [Berenice]
+publio:
+  names: [Publio]
+epafrodito:
+  names: [Epafrodito]
+epafras:
+  names: [Epafras]
+onesimo:
+  names: [Onésimo]
+filemon:
+  names: [Filemón]
+arquipo:
+  names: [Arquipo]
+demas:
+  names: [Demas]
+  accents: strict
+onesiforo:
+  names: [Onesíforo]
+evodia:
+  names: [Evodia]
+sintique:
+  names: [Síntique]
+andronico:
+  names: [Andrónico]
+junias:
+  names: [Junias]

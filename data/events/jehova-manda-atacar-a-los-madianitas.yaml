@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-manda-atacar-a-los-madianitas
+title: Jehová manda atacar a los madianitas
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+narrative_order:
+  series: numeros
+  order: 25016
+places:
+- sitim
+people:
+- moises
+passages:
+- Nú 25:16-18
+summary: Jehová ordena a Moisés hostigar a los madianitas y acabar con ellos, porque con sus engaños arrastraron a Israel
+  al pecado de Peor, como pasó con Cozbí, hija de un jefe de Madián.
+reason: 'Nú 25:16-18; Perspicacia «Sitim» une la derrota posterior de Madián con este pecado. Fecha: tras vencer a Og, hacia
+  1473 a.e.c. (Perspicacia «Basán»), y antes de acabar Números, en 1473 (estudio 3).'
+sources:
+- numeros-25
+- it-sitim
+- si-3
+- it-basan
+links:
+- title: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

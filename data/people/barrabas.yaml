@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barrabas
+name: Barrabás
+names:
+- name: Barrabás
+summary: Preso culpable de sedición, asesinato y robo. La multitud, empujada por los sacerdotes, pidió su libertad
+  en vez de la de Jesús, y Pilato lo soltó.
+reason: Perspicacia «Barrabás» (párr. 2-3); Mt 27:15-26 y Jn 18:39, 40.
+sources:
+- it-barrabas
+- mateo-27
+- juan-18
+- marcos-15
+- lucas-23
+links:
+- title: 'Perspicacia: «Barrabás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000556
+  type: perspicacia
+- title: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  type: bible
+search: Barrabás
+perspicacia: '1200000556'
+checked_on: '2026-09-29'
+status: verified

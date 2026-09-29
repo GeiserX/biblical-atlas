@@ -1,0 +1,97 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-levitas-reciben-48-ciudades
+title: Los levitas reciben por sorteo 48 ciudades
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras el reparto de la tierra en Siló y antes de la muerte de Josué)'
+narrative_order:
+  series: josue
+  order: 21001
+places:
+- silo
+- hebron
+- libna
+- jatir
+- estemoa
+- holon
+- debir
+- asan
+- juta
+- bet-semes
+- gabaon
+- gueba
+- anatot
+- almon
+- siquem
+- guezer
+- quibzaim
+- bet-horon-alta
+- bet-horon-baja
+- elteque
+- guibeton
+- ayalon
+- gat-rimon-de-dan
+- taanac
+- gat-rimon-de-manases
+- golan
+- astarot
+- quision
+- daberat
+- remet
+- en-ganim-de-isacar
+- misal
+- abdon
+- helcat
+- rehob-de-aser
+- quedes-de-neftali
+- hammat
+- cartan
+- jocneam
+- carta
+- rimon-de-zabulon
+- nahalal
+- bezer
+- jahaz
+- quedemot
+- mefaat
+- ramot-galaad
+- mahanaim
+- hesbon
+- jazer
+people:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+present:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+passages:
+- Jos 21:1-42
+- 1Cr 6:54-81
+summary: En Siló, los jefes levitas piden a Eleazar y a Josué las ciudades que Jehová había prometido por medio de Moisés.
+  Por sorteo reciben 48 con sus campos de pasto; 13 son para los sacerdotes, hijos de Aarón.
+reason: Jos 21:2 lo sitúa en Siló, adonde se llevó el tabernáculo tras la conquista general de 1467 a.e.c. (estudio 3); Josué
+  murió hacia 1450. 1Cr 6:54-81 da la lista paralela.
+sources:
+- josue-21
+- si-3
+- it-ciudades-levitas
+- it-ciudades-de-los-sacerdotes
+- it-silo
+- tnm-tabla
+links:
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+- title: 'Perspicacia: «Ciudades levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002730
+  type: perspicacia
+- title: 'Perspicacia: «Ciudades de los sacerdotes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003554
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-reclama-por-la-ofrenda-por-el-pecado
+title: Moisés pide cuentas por la ofrenda por el pecado y acepta la respuesta de Aarón
+date:
+  from: -1511
+  to: -1511
+  precision: day
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 8 de abib (nisán) de 1512 a.e.c.
+  detail:
+    month: nisan
+    day: 8
+narrative_order:
+  series: levitico
+  order: 10012
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+- eleazar-hijo-de-aaron
+- itamar
+passages:
+- Le 10:12-20
+summary: Moisés indica a Aarón y a sus dos hijos vivos dónde comer sus porciones. Al ver quemado el macho cabrío del pueblo,
+  se enoja con Eleazar e Itamar; Aarón le explica por qué no comió, y Moisés lo acepta.
+reason: Le 10:19 lo pone el mismo día de los primeros sacrificios, el 8 de nisán de 1512 a.e.c. según Perspicacia «Sacerdote».
+  Perspicacia «Itamar» recoge el episodio.
+sources:
+- levitico-10
+- it-sacerdote
+- it-itamar
+- it-eleazar
+links:
+- title: Levítico 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/10
+  type: bible
+- title: 'Perspicacia: «Itamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

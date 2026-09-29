@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: purificacion-de-los-levitas
+title: Los levitas se purifican y se presentan como ofrenda mecida
+date:
+  from: -1511
+  to: -1511
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: ziv (iyar) de 1512 a.e.c.
+  detail:
+    month: iyar
+  note: Mes más probable. Nú 8 va en el orden del libro, entre el 1 de ziv (Nú 1:1) y la partida del Sinaí el 20 de ziv (Nú
+    10:11); Perspicacia solo adelanta Nú 7:1-88 y 9:1-15.
+narrative_order:
+  series: numeros
+  order: 8005
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+passages:
+- Nú 8:5-22
+summary: Moisés rocía a los levitas con agua de purificación; se afeitan y lavan la ropa. El pueblo les impone las manos,
+  Aarón los presenta ante Jehová y empiezan a servir en lugar de los primogénitos.
+reason: Nú 8:5-22. Perspicacia «Números, Libro de» deja el campamento al pie del Sinaí; «Levitas» explica que Jehová los tomó
+  por los primogénitos. El mes se deduce del orden del libro.
+sources:
+- numeros-8
+- it-numeros-libro
+- it-levitas
+links:
+- title: Números 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/8
+  type: bible
+- title: 'Perspicacia: «Levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002731
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

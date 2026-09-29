@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amrafel
+name: Amrafel
+names:
+- name: Amrafel
+perspicacia: '1200000253'
+summary: Rey de Sinar, en el sur de Mesopotamia. Se unió a Kedorlaomer para aplastar la rebelión de cinco reyes del mar Salado,
+  y cayó derrotado cuando Abrán salió a rescatar a Lot.
+reason: Perspicacia «Amrafel»; Gé 14:1, 9.
+sources:
+- it-amrafel
+- genesis-14
+links:
+- title: 'Perspicacia: «Amrafel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000253
+  type: perspicacia
+not_claimed:
+- 'Que Amrafel fuera Hammurabi: Perspicacia dice que esa identificación es incierta.'
+relations:
+- type: lived_in
+  place: sinar
+  inferred: false
+  sources:
+  - genesis-14
+  reason: Gé 14:1, 9 lo llama rey de Sinar.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: kedorlaomer
+  word: ally
+  inferred: false
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

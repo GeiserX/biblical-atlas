@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: caifas
+name: Caifás
+names:
+- name: Caifás
+- name: José Caifás
+  note: Nombre completo que da Perspicacia.
+date:
+  from: 18
+  to: 36
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 18 a c. 36 e.c.
+relations:
+- type: kin
+  person: anas
+  word: father_in_law
+  inferred: false
+  sources:
+  - juan-18
+  - hechos-4
+  reason: Jn 18:13 dice que Anás era el suegro de Caifás.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - mateo-26
+  - tnm-b12-b
+  - marcos-14
+  - juan-18
+  reason: Mt 26:3 y 26:57 hablan del patio y la casa de Caifás; el apéndice B12-B pone esa casa en Jerusalén, con signo de
+    duda.
+  checked_on: '2026-09-29'
+  status: verified
+summary: Sumo sacerdote de c. 18 a c. 36 e.c. y yerno de Anás. Dirigió el complot contra Jesús, lo juzgó ante el
+  Sanedrín y siguió persiguiendo a los apóstoles.
+reason: Perspicacia «Caifás» (párr. 2-4) y las notas de Mt 26:3 y Jn 11:49 dan los años del cargo.
+sources:
+- it-caifas
+- mateo-26
+- juan-11
+- juan-18
+- marcos-14
+- hechos-4
+- hechos-5
+- bt-5
+- hechos-7
+- hch-9
+links:
+- title: 'Perspicacia: «Caifás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000856
+  type: perspicacia
+- title: Mateo 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
+  type: bible
+search: Caifás
+perspicacia: '1200000856'
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,94 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dan-hijo-de-jacob
+name: Dan
+names:
+- name: Dan
+disambiguation: Dan hijo de Jacob; no la tribu ni la ciudad del norte que se llamó Dan.
+summary: Quinto hijo de Jacob y primogénito de Bilhá, la sierva de Raquel, que lo tuvo por suyo. Nació en Padán-aram. Cuando
+  Jacob bajó a Egipto, Dan ya tenía un hijo, Husim.
+reason: Perspicacia «Dan», núm. 1, párr. 2; Gé 30:5, 6 y 46:23.
+sources:
+- it-dan
+- genesis-30
+- genesis-46
+- genesis-35
+- genesis-49
+- exodo-1
+- jueces-18
+links:
+- title: 'Perspicacia: «Dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001115
+  type: perspicacia
+- title: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  type: bible
+relations:
+- type: kin
+  person: jacob
+  word: father
+  inferred: false
+  sources:
+  - it-dan
+  - genesis-30
+  - genesis-35
+  - genesis-46
+  - genesis-49
+  - jueces-18
+  reason: 'Perspicacia «Dan», párr. 2: quinto hijo de Jacob, que tuvo con Bilhá (Gé 30:5, 6).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: haran
+  inferred: true
+  sources:
+  - it-dan
+  - genesis-30
+  - genesis-35
+  reason: 'Perspicacia «Dan», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 30:6; 35:26).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: bilha
+  word: mother
+  inferred: false
+  sources:
+  - genesis-30
+  - it-bilha
+  - genesis-35
+  - genesis-46
+  reason: 'Gé 30:5, 6: hijo que Bilhá le dio a Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: gosen
+  inferred: false
+  sources:
+  - genesis-47
+  - it-gosen
+  reason: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: egipto
+  inferred: false
+  sources:
+  - exodo-1
+  reason: 'Éx 1:1, 6: llegó a Egipto con Jacob y allí murió, como sus hermanos y toda aquella generación.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200001115'
+history:
+- date: '2026-09-29'
+  change: La razón de dónde nació cita Gé 30:6, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
+  source: genesis-30
+checked_on: '2026-09-29'
+status: verified

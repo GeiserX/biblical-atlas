@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasias-sacerdote-de-betel
+name: Amasías
+names:
+- name: Amasías
+perspicacia: 1200000224#3
+disambiguation: Sacerdote del becerro de Betel en días de Jeroboán II; no es Amasías, rey de Judá e hijo de Jehoás.
+distinct_from:
+- amasias
+date:
+  from: -828
+  to: -803
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 804 a.e.c. (tiempo narrativo: mientras Amós profetizaba, con Jeroboán II en el trono)'
+summary: Sacerdote de Betel, centro del culto al becerro. Acusó a Amós de conspirar contra Jeroboán II y quiso echarlo a Judá.
+  Amós le anunció que su familia caería y que él moriría en tierra impura.
+reason: Perspicacia «Amasías», núm. 3; Am 7:10-17. La fecha es la de su choque con Amós.
+sources:
+- it-amasias
+- amos-7
+links:
+- title: 'Perspicacia: «Amasías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
+  type: perspicacia
+- title: Amós 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/7
+  type: bible
+relations:
+- type: lived_in
+  place: betel
+  inferred: false
+  sources:
+  - amos-7
+  - it-amasias
+  reason: Am 7:10 lo presenta como sacerdote de Betel, y allí le prohíbe a Amós seguir profetizando (7:13).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

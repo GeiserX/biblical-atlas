@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: araba
+name: Arabá
+names:
+- name: Arabá
+  note: Perspicacia le da el sentido de «llanura desértica».
+- name: Torrente del Arabá
+  note: 'Am 6:14; la nota da «wadi». Perspicacia lo ciñe al tramo entre el sur del mar Muerto y el golfo de ʽAqaba: quizá
+    un cauce como el Zered, o toda esa región. Límite sur de Judá e Israel.'
+type: valley
+lat: 30.416944
+lon: 35.151389
+precision: zone
+coord_source: openbible:a2bb5ef
+coord_url: https://www.openbible.info/geo/ancient/a2bb5ef/arabah
+coord_note: Punto representativo de OpenBible, al sur del mar Muerto; el Arabá de la Biblia llega al norte hasta el mar de
+  Galilea.
+summary: Gran fosa que baja desde el pie del Hermón por el Jordán y el mar Muerto hasta el golfo de ʽAqaba, a lo largo de
+  unos 435 km. Al sur del mar Muerto es muy árida.
+reason: 'Perspicacia «Arabá», párr. 1 a 4; Dt 1:7 y 2:8. OpenBible: solo el punto.'
+sources:
+- it-araba
+- openbible-geo
+- amos-6
+- ip-araba-valle-torrencial
+- it-araba-valle-torrencial
+- deuteronomio-1
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-4
+- deuteronomio-11
+- josue-18
+links:
+- title: 'Perspicacia: «Arabá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000325
+  type: perspicacia
+- title: 'Perspicacia: «Arabá, Valle torrencial del»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000326
+  type: perspicacia
+- title: Amós 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/6
+  type: bible
+- title: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  type: bible
+- title: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  type: bible
+- title: Deuteronomio 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

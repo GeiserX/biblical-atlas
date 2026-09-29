@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amarias-hijo-de-ezequias
+name: Amarías
+names:
+- name: Amarías
+perspicacia: 1200000219#6
+disambiguation: El bisabuelo de Sofonías; Perspicacia registra otros nueve Amarías, casi todos sacerdotes o levitas.
+summary: Bisabuelo del profeta Sofonías. Su nombre significa «Jehová ha dicho». Era hijo de un Ezequías que, según Perspicacia,
+  probablemente fue el rey de Judá.
+reason: Perspicacia «Amarías», núm. 6; Sof 1:1.
+sources:
+- it-amarias
+- sofonias-1
+links:
+- title: 'Perspicacia: «Amarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000219
+  type: perspicacia
+- title: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  type: bible
+relations:
+- type: kin
+  person: ezequias-antepasado-de-sofonias
+  word: father
+  inferred: false
+  sources:
+  - sofonias-1
+  - it-amarias
+  reason: Sof 1:1 lo presenta como hijo de Ezequías.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

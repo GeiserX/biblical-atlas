@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazar-gada
+name: Hazar-Gadá
+names:
+- name: Hazar-Gadá
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 50 km de Beer-Seba
+  geometry:
+    type: zone
+    lat: 31.244722
+    lon: 34.840833
+    radius_km: 50
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-hazar-gada
+  - openbible-geo
+  reason: El texto la cuenta entre las ciudades del sur de Judá; OpenBible da este radio alrededor de Beer-Seba.
+  coord_source: openbible:a7672d8
+  coord_url: https://www.openbible.info/geo/ancient/a7672d8/hazar-gaddah
+summary: Ciudad del sur de Judá cuyo nombre significa «poblado de Gadá». No se sabe dónde estaba.
+reason: Perspicacia «Hazar-gadá»; Jos 15:27. OpenBible solo la pone a menos de 50 km de Beer-Seba.
+sources:
+- it-hazar-gada
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Hazar-gadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001927
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

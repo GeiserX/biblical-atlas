@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guelilot
+name: Guelilot
+names:
+- name: Guelilot
+  note: Nombre de Jos 18:17.
+- name: Guilgal
+  note: Nombre que da Jos 15:7 al punto de la frontera frente a la subida de Adumim; Perspicacia lo hace corresponder con
+    Guelilot.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Junto a Talʽat ed-Damm, la subida de Adumim
+  geometry:
+    type: point
+    lat: 31.818431
+    lon: 35.360304
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guelilot
+  - openbible-geo
+  reason: Para unos es un paraje pequeño junto a Talʽat ed-Damm, en el Wadi Qelt, al suroeste de Jericó.
+  coord_source: openbible:a0c9a06
+  coord_url: https://www.openbible.info/geo/ancient/a0c9a06/geliloth
+  note: Punto de Talʽat ed-Damm en la ficha «Geliloth» de OpenBible.
+- name: El Guilgal de cerca de Jericó
+  geometry:
+    type: point
+    lat: 31.881883
+    lon: 35.459969
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guelilot
+  - it-guilgal
+  - openbible-geo
+  reason: Para otros es otro nombre del Guilgal del campamento, junto a Jericó.
+  coord_source: openbible:ab94aea
+  coord_url: https://www.openbible.info/geo/ancient/ab94aea/gilgal-1
+  note: Primer punto de la ficha «Gilgal 1» de OpenBible (Khirbet el-Mefjir).
+summary: Punto de la frontera entre Judá y Benjamín, enfrente de la subida de Adumim. Jos 15:7 lo llama Guilgal. Quizá era
+  otro nombre del Guilgal cercano a Jericó, o un paraje junto a esa subida.
+reason: 'Perspicacia «Guelilot» y «Guilgal», núm. 1, último párr.; Jos 15:7; 18:17. Perspicacia no elige sitio. OpenBible:
+  solo los puntos.'
+sources:
+- it-guelilot
+- it-guilgal
+- openbible-geo
+- josue-15
+- josue-18
+links:
+- title: 'Perspicacia: «Guelilot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001643
+  type: perspicacia
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

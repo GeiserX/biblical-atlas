@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama-hijo-de-reuel
+name: Samá
+names:
+- name: Samá
+- name: Samah
+  note: Otra grafía que da la nota de Gé 36:13.
+perspicacia: 1200003942#1
+disambiguation: Samá hijo de Reuel; no Samah, hermano de David, ni los guerreros de David con ese nombre.
+summary: Jeque edomita, hijo de Reuel y nieto de Esaú.
+reason: Perspicacia «Samah», núm. 1; Gé 36:13, 17.
+sources:
+- it-samah
+- genesis-36
+links:
+- title: 'Perspicacia: «Samah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003942
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: reuel-hijo-de-esau
+  word: father
+  inferred: false
+  sources:
+  - it-samah
+  - genesis-36
+  reason: 'Gé 36:13: hijo de Reuel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: basemat-hija-de-ismael
+  word: grandmother
+  inferred: false
+  sources:
+  - genesis-36
+  reason: 'Gé 36:13: se cuenta entre los hijos de Basemat, esposa de Esaú.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: edom
+  inferred: false
+  sources:
+  - it-samah
+  - genesis-36
+  reason: 'Gé 36:17: fue jeque en la tierra de Edom.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

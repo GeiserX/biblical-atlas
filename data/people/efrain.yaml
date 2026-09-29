@@ -1,0 +1,75 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efrain
+name: Efraín
+names:
+- name: Efraín
+perspicacia: '1200001401'
+disambiguation: Efraín hijo de José; no la tribu, el territorio ni la ciudad de ese nombre.
+summary: Hijo menor de José y Asenat, nacido en Egipto antes del hambre. Jacob lo adoptó como hijo suyo y, al bendecirlo,
+  lo puso por delante de Manasés, su hermano mayor. De él viene la tribu de Efraín.
+reason: Perspicacia «Efraín», núm. 1; Gé 41:50, 52.
+sources:
+- it-efrain
+- genesis-41
+- genesis-46
+- genesis-48
+- genesis-50
+- numeros-26
+links:
+- title: 'Perspicacia: «Efraín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+- title: Génesis 48 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/48
+  type: bible
+relations:
+- type: kin
+  person: jose-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-efrain
+  - genesis-48
+  - numeros-26
+  reason: Gé 41:50, 52.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: asenat
+  word: mother
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-efrain
+  reason: Gé 41:50.
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-41
+  - it-efrain
+  - genesis-46
+  - genesis-48
+  reason: 'Gé 41:50, 52; Perspicacia «Efraín», núm. 1: nació en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jacob
+  word: grandfather
+  inferred: false
+  sources:
+  - genesis-48
+  - it-efrain
+  reason: 'Gé 48:5: Jacob, padre de José, lo declara hijo suyo, como a Rubén y Simeón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

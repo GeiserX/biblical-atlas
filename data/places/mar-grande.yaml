@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mar-grande
+name: Mar Grande
+names:
+- name: Mar Grande
+- name: Mar de los filisteos
+  note: Así lo llama Éx 23:31, según Perspicacia «Mar Grande».
+- name: Mar occidental
+  note: 'Otro nombre bíblico: cerraba por el oeste la tierra dada a Israel (Perspicacia).'
+- name: Mediterráneo
+  note: Nombre actual, de origen latino.
+type: sea
+lat: 31.804819
+lon: 34.17035
+precision: zone
+coord_source: openbible:aa805fb
+coord_url: https://www.openbible.info/geo/ancient/aa805fb/great-sea
+coord_note: Punto de OpenBible frente a la costa de Israel; la ficha representa todo el mar.
+summary: El Mediterráneo, que los hebreos llamaban mar Grande. Era el límite oeste de la tierra prometida a Israel, y Éx 23:31
+  lo llama mar de los filisteos.
+reason: 'Perspicacia «Mar Grande», párr. 1, 2 y 5; Éx 23:31. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-mar-grande
+- openbible-geo
+- exodo-23
+- numeros-34
+- deuteronomio-11
+- joel-2
+- josue-1
+- josue-15
+links:
+- title: 'Perspicacia: «Mar Grande»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001763
+  type: perspicacia
+- title: Éxodo 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

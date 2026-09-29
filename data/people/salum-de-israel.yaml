@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-de-israel
+name: Salum
+names:
+- name: Salum
+disambiguation: Rey de Israel; no es Salum, otro nombre de Jehoacaz de Judá.
+distinct_from:
+- jehoacaz-de-juda
+date:
+  from: -790
+  to: -790
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 791 a.e.c.
+summary: Hijo de Jabés. Mató a Zacarías en una conspiración y reinó un mes lunar en Samaria, hasta que Menahem lo mató.
+reason: Perspicacia «Salum», núm. 5; 2Re 15:10-15.
+sources:
+- it-salum
+- 2-reyes-15
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003933
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+relations:
+- type: succeeds
+  person: zacarias-de-israel
+  inferred: false
+  sources:
+  - it-salum
+  - 2-reyes-15
+  reason: Se hizo rey tras matar a Zacarías (2Re 15:10).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

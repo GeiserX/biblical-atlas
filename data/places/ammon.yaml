@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ammon
+name: Ammón
+names:
+- name: Ammón
+  note: Nombre del pueblo que descendía de Ammón, hijo de Lot, en Sl 83:7.
+type: country
+lat: 31.9547
+lon: 35.9343
+precision: zone
+coord_source: openbible:a6046fa
+coord_url: https://www.openbible.info/geo/ancient/a6046fa/ammon
+coord_note: Punto representativo de OpenBible para todo el territorio.
+summary: Tierra de los ammonitas, descendientes de Ammón, hijo de Lot, al este del bajo Jordán. Los amorreos los empujaron
+  al norte y al este; casi siempre fueron enemigos de Israel.
+reason: 'Perspicacia «Ammonitas», párr. 1 y 2, y «Ammón»; Sl 83:7, 8. OpenBible: solo el punto.'
+sources:
+- it-ammonitas
+- it-ammon
+- openbible-geo
+- salmos-83
+- amos-1
+- deuteronomio-2
+- deuteronomio-3
+- it-raba
+- josue-13
+- jueces-11
+- sofonias-2
+links:
+- title: 'Perspicacia: «Ammonitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000240
+  type: perspicacia
+- title: 'Perspicacia: «Ammón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000238
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified

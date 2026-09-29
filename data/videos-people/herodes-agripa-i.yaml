@@ -1,0 +1,29 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: herodes-agripa-i
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-co-r20_144_VIDEO"
+    title: "David Schafer: Podemos ser felices a pesar de la espada"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_144_VIDEO&appLanguage=S"
+    published: "2020-12-01"
+    hits: 2
+    terms:
+      "Agripa I": 1
+      "Herodes Agripa I": 1
+  - docid: "pub-co-r20_9_VIDEO"
+    title: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
+    published: "2020-08-13"
+    hits: 2
+    terms:
+      "Agripa I": 1
+      "Herodes Agripa I": 1
+  - docid: "pub-jwb_201912_4_VIDEO"
+    title: "Patrick LaFranca: “Acuérdense de los que los dirigen” (Heb. 13:7)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201912_4_VIDEO&appLanguage=S"
+    published: "2019-12-23"
+    hits: 2
+    terms:
+      "Agripa I": 1
+      "Herodes Agripa I": 1

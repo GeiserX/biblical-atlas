@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ada-esposa-de-lamec
+name: Adá
+names:
+- name: Adá
+disambiguation: Adá esposa de Lamec, de la línea de Caín; no Adá la hitita, esposa de Esaú.
+perspicacia: 1200000086#1
+summary: Primera de las dos esposas de Lamec, de la línea de Caín. Tuvo con él a Jabal, iniciador de la cría de ganado en
+  tiendas, y a Jubal, iniciador de la música.
+reason: Perspicacia «Adá», núm. 1; Gé 4:19-23.
+sources:
+- it-ada
+- genesis-4
+links:
+- title: 'Perspicacia: «Adá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000086
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hermanos-de-jose-vuelven-sin-simeon
+title: Los hermanos vuelven a Canaán sin Simeón
+date:
+  from: -1728
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+narrative_order:
+  series: genesis
+  order: 42026
+places:
+- canaan
+people:
+- jacob
+- ruben-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+passages:
+- Gé 42:26-38
+summary: De regreso descubren en los costales el dinero del grano y se asustan. Cuentan a Jacob lo ocurrido, pero él no deja
+  ir a Benjamín, aunque Rubén pone como garantía la vida de sus dos hijos.
+reason: Mismo viaje que Gé 42:1-25 (Perspicacia «Jacob», párr. 38, y «José», párr. 24); Gé 42:29 los sitúa ya con su padre
+  en Canaán.
+sources:
+- genesis-42
+- it-jacob
+- it-jose
+- si-3
+links:
+- title: Génesis 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/42
+  type: bible
+checked_on: '2026-09-29'
+status: verified

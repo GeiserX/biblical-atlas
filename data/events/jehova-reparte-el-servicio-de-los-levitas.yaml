@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-reparte-el-servicio-de-los-levitas
+title: Jehová reparte entre los levitas el transporte del tabernáculo
+date:
+  from: -1511
+  to: -1511
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: ziv (iyar) de 1512 a.e.c.
+  detail:
+    month: iyar
+  note: Números abre el 1 de ziv del segundo año tras la salida (Nú 1:1) y el campamento parte el 20 (Nú 10:11). Perspicacia
+    solo saca de orden Nú 7:1-88 y 9:1-15; el día no se sabe.
+narrative_order:
+  series: numeros
+  order: 4001
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+- eleazar-hijo-de-aaron
+- itamar
+present:
+- moises
+- aaron
+passages:
+- Nú 4:1-33
+summary: Jehová dice a Moisés y Aarón qué deben envolver los sacerdotes y qué cargan cohatitas, guersonitas y meraritas cuando
+  se mueve el campamento. Eleazar vigila el santuario; Itamar dirige a guersonitas y meraritas.
+reason: Nú 4:1-33. Perspicacia «Levitas» resume el reparto de las cargas; «Eleazar», núm. 1, e «Itamar» explican la supervisión
+  de cada uno. El mes se deduce del orden del libro.
+sources:
+- numeros-4
+- it-levitas
+- it-eleazar
+- it-itamar
+- it-numeros-libro
+- it-sinai
+links:
+- title: Números 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/4
+  type: bible
+- title: 'Perspicacia: «Levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002731
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

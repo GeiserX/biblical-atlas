@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadoram-hijo-de-joctan
+name: Hadoram
+names:
+- name: Hadoram
+perspicacia: 1200001806#1
+disambiguation: El hijo de Joctán; no Hadoram hijo de Tou ni el Hadoram de los trabajos forzados.
+summary: Hijo de Joctán y descendiente de Sem, entre los fundadores de las familias posteriores al Diluvio. Su familia se
+  asentó en Arabia, quizá en Yemen.
+reason: Perspicacia «Hadoram», núm. 1; Gé 10:27.
+sources:
+- it-hadoram
+- genesis-10
+links:
+- title: 'Perspicacia: «Hadoram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001806
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: joctan
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:27 lo cuenta entre los trece hijos de Joctán.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

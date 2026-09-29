@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dioses-en-listra
+title: En Listra los toman por dioses
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1408
+places:
+- listra
+people:
+- pablo
+- bernabe
+passages:
+- Hch 14:8-18
+summary: Pablo sana a un hombre cojo de nacimiento y la gente de Listra llama Zeus a Bernabé y Hermes a Pablo. A
+  duras penas impiden que les ofrezcan sacrificios.
+reason: Perspicacia «Bernabé» (párr. 5) y la nota de estudio de Hch 14:12 sobre Hermes.
+sources:
+- it-bernabe
+- nota-hechos-14
+- hch-14
+search: Listra Zeus Hermes
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: damasco
+name: Damasco
+names:
+- name: Damasco
+type: city
+lat: 33.511112
+lon: 36.30639
+precision: point
+coord_source: openbible:a69c1d4
+coord_url: https://www.openbible.info/geo/ancient/a69c1d4/damascus
+summary: Ciudad antigua de Siria al pie del Antilíbano; Pablo se convirtió camino de ella y empezó a predicar allí.
+reason: 'Perspicacia («Damasco») describe el lugar; aparece en Hch 9:1-19. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-damasco
+- hch-9
+- openbible-geo
+- genesis-14
+- genesis-15
+- amos-1
+- hch-22
+- 2-corintios-11
+links:
+- title: 'Perspicacia: «Damasco»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001114
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

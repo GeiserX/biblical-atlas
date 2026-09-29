@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rama-de-aser
+name: Ramá
+names:
+- name: Ramá
+  note: Ramá de Aser (Perspicacia, núm. 3).
+type: city
+lat: 33.1108
+lon: 35.3106
+precision: uncertain
+coord_source: openbible:a664d03
+coord_url: https://www.openbible.info/geo/ancient/a664d03/ramah-2
+coord_note: Punto de OpenBible en Ramyah. Perspicacia no la identifica.
+summary: Ciudad de Aser que solo se nombra en Jos 19:29. Parece haber estado al norte, hacia Tiro, pero no se ha identificado.
+reason: 'Perspicacia «Ramá», núm. 3; Jos 19:29. OpenBible: solo el punto.'
+sources:
+- it-rama
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Ramá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003630
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

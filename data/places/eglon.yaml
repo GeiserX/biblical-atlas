@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eglon
+name: Eglón
+names:
+- name: Eglón
+type: city
+lat: 31.5477
+lon: 34.7302
+precision: uncertain
+coord_source: openbible:a244d8f
+coord_url: https://www.openbible.info/geo/ancient/a244d8f/eglon
+coord_note: Primera resolución de la segunda identificación de OpenBible, Tel Hasi (Tell el-Hesi), donde Perspicacia cree
+  que estuvo. OpenBible pone primero Tell Eton.
+summary: Ciudad real cananea, cerca de las llanuras de Filistea. Su rey Debir se alió contra Gabaón y Josué lo mató; después
+  Josué tomó la ciudad y la destruyó. Quedó en el territorio de Judá.
+reason: 'Perspicacia «Eglón», núm. 2; Jos 10:3-5, 34, 35; 15:39. Tell el-Hesi está unos 11 km al O de Lakís; el nombre sigue
+  en Khirbet ʽAjlan, cerca. OpenBible: solo el punto.'
+sources:
+- it-eglon
+- openbible-geo
+- josue-10
+- josue-12
+- josue-15
+links:
+- title: 'Perspicacia: «Eglón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001264
+  type: perspicacia
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+- title: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

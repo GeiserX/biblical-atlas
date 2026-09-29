@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mujer-encorvada-y-grano-de-mostaza
+title: Cura a una mujer encorvada; el grano de mostaza y la levadura
+date:
+  from: 32
+  to: 32
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detail:
+    season: autumn
+places:
+- judea
+people:
+- jesus
+roles:
+  jesus: spoke
+passages:
+- Lu 13:1-21
+summary: Ante la matanza de galileos por Pilato, llama a arrepentirse y cuenta la higuera sin fruto. Un sábado, en una sinagoga,
+  cura a una mujer encorvada desde hacía 18 años. Compara el Reino con la mostaza y la levadura.
+reason: La tabla A7-E da cuándo y dónde. La tabla dice «probablemente Judea»; jy cap. 79.
+sources:
+- tnm-a7-e
+- lucas-13
+- jy-cap-79
+narrative_order:
+  series: a7
+  order: 72
+search: Cura a una mujer encorvada
+history:
+- date: '2026-09-29'
+  change: 'El resumen solo contaba Lu 13:10-21, aunque el suceso abarca Lu 13:1-21: se añaden el aviso por los galileos y
+    la comparación de la higuera.'
+  source: lucas-13
+checked_on: '2026-09-29'
+status: verified

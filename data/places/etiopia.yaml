@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: etiopia
+name: Etiopía
+names:
+- name: Etiopía
+- name: Cus
+  note: Término hebreo que Perspicacia hace corresponder más o menos con la Etiopía de los griegos.
+type: region
+lat: 16.935139
+lon: 33.75075
+precision: zone
+coord_source: openbible:ab45bd3
+coord_url: https://www.openbible.info/geo/ancient/ab45bd3/ethiopia
+coord_note: Punto representativo de la región antigua.
+summary: 'Para los griegos, la región de África al sur de Egipto: grosso modo el actual Sudán y el extremo sur de
+  Egipto. No es la Etiopía de hoy. De allí era el funcionario bautizado por Felipe.'
+reason: 'Perspicacia «Etiopía» (párr. 2 y 5) y «Cus», núm. 2, que cuenta el topacio entre sus productos (Job 28:19); Hch 8:27.
+  La coordenada es de OpenBible: solo tomamos el punto.'
+sources:
+- it-etiopia
+- hechos-8
+- openbible-geo
+- it-cus
+- job-28
+- nahum-3
+- sofonias-2
+- it-sofonias-libro
+- sofonias-3
+links:
+- title: 'Perspicacia: «Etiopía»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001438
+  type: perspicacia
+- title: Hechos 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'Se añade Perspicacia «Cus», núm. 2: el topacio de Cus de Job 28:19 era uno de los productos de esta tierra.'
+  source: job-28
+checked_on: '2026-09-29'
+status: verified

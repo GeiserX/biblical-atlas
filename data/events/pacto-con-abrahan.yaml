@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-con-abrahan
+title: Entra en vigor el pacto con Abrahán
+date:
+  from: -1942
+  to: -1942
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1943 a.e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- haran
+people:
+- abrahan
+- sara
+- lot
+passages:
+- Gé 12:1-5
+- Gál 3:17
+- Hch 7:4
+- Jos 24:3
+summary: Abrahán, con 75 años, deja Harán y cruza el Éufrates camino de Canaán. Ahí empieza a regir la promesa de Dios y
+  corren los 430 años hasta la Ley.
+reason: Perspicacia «Pacto» fecha el cruce el 14 de nisán de 1943 a.e.c.; el estudio 3 (párr. 9) lo apoya en Éxodo 12:40,
+  41 y Gálatas 3:17.
+sources:
+- it-pacto
+- si-3
+- genesis-12
+links:
+- title: 'Perspicacia: «Pacto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001054
+  type: perspicacia
+search: pacto abrahámico 1943
+history:
+- date: '2026-09-29'
+  change: La aparición de Jehová en Siquem (Gé 12:6, 7) es otra escena y otro lugar; pasa al suceso abran-llega-a-siquem.
+    Aquí quedan la llamada y la salida de Harán.
+  source: genesis-12
+checked_on: '2026-09-29'
+status: verified

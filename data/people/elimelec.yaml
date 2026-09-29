@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elimelec
+name: Elimélec
+names:
+- name: Elimélec
+perspicacia: '1200001310'
+summary: Hombre de Belén de Judá que, en una época de hambre en tiempos de los jueces, se trasladó a Moab con Noemí y sus
+  dos hijos. Murió allí.
+reason: Perspicacia «Elimélec»; Rut 1:1-3.
+sources:
+- it-elimelec
+- rut-1
+links:
+- title: 'Perspicacia: «Elimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001310
+  type: perspicacia
+relations:
+- type: kin
+  person: noemi
+  word: wife
+  inferred: false
+  sources:
+  - rut-1
+  reason: Rut 1:2 da a Noemí como su esposa.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - rut-1
+  reason: 'Rut 1:1, 2: la familia era de Belén de Judá, llamada también Efrata.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: moab
+  inferred: false
+  sources:
+  - rut-1
+  reason: 'Rut 1:1, 2: se fue a residir como extranjero en Moab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: moab
+  inferred: false
+  sources:
+  - rut-1
+  - it-elimelec
+  reason: 'Rut 1:2, 3: murió después de instalarse en Moab.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

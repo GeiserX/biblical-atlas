@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliaquim-hijo-de-melea
+name: Eliaquim
+names:
+- name: Eliaquim
+perspicacia: 1200001295#5
+disambiguation: Eliaquim hijo de Meleá (Lu 3:30, 31); no Eliaquim hijo de Abiud, de la lista de Mateo, ni el rey Jehoiaquim.
+distinct_from:
+- eliaquim-hijo-de-abiud
+- jehoiaquim
+summary: Antepasado de María, madre de Jesús, en la línea de Natán. Lucas lo llama hijo de Meleá y padre de Jonam.
+reason: Perspicacia «Eliaquim», núm. 5; Lu 3:30.
+sources:
+- it-eliaquim
+- lucas-3
+links:
+- title: 'Perspicacia: «Eliaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001295
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: melea
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:30, 31: Eliaquim, hijo de Meleá.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

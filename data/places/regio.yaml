@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: regio
+name: Regio
+names:
+- name: Regio
+- name: Reggio di Calabria
+  note: Nombre actual de la ciudad.
+type: port
+lat: 38.1088
+lon: 15.64412
+precision: point
+coord_source: openbible:a63bb26
+coord_url: https://www.openbible.info/geo/ancient/a63bb26/rhegium
+summary: Ciudad del sur de Italia en el estrecho de Mesina; un día después de llegar, un viento del sur llevó el
+  barco hasta Puteoli.
+reason: 'Perspicacia («Regio») describe el lugar; aparece en Hch 28:13. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-regio
+- hch-28
+- openbible-geo
+links:
+- title: 'Perspicacia: «Regio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003723
+  type: perspicacia
+- title: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  type: bible
+checked_on: '2026-09-27'
+status: verified

@@ -1,0 +1,832 @@
+# biblical-earth: decisiones de la migración sobre sucesos (E1 a E6 de docs/investigacion/modelo.md, sección 16).
+# El formato está en la cabecera de scripts/migration/migrate.py. Cada entrada pone el tipo y los papeles de un suceso,
+# o corrige lo que haría falso un papel, con las fuentes que lo sostienen y la razón en palabras nuestras.
+format: biblical-earth/migration-decisions/1
+decision: E1-E6
+checked_on: '2026-09-29'
+entries:
+- file: events/nacimiento-de-esau-y-jacob
+  set:
+    type: birth
+    roles:
+      esau: born
+      jacob: born
+  sources:
+  - genesis-25
+  reason: 'Gé 25:24-26: Rebeca da a luz gemelos; primero sale Esaú y después Jacob, agarrado a su talón. Nacen los dos.'
+- file: events/nacimiento-de-perez-y-zerah
+  set:
+    type: birth
+    roles:
+      perez: born
+      zerah-hijo-de-juda: born
+  sources:
+  - genesis-38
+  reason: 'Gé 38:27-30: Tamar da a luz gemelos; Zérah asoma la mano, pero Pérez sale antes. Nacen los dos.'
+- file: events/lot-y-sus-hijas-en-la-cueva
+  set:
+    type: birth
+    roles:
+      moab: born
+      ben-ammi: born
+  sources:
+  - genesis-19
+  reason: 'Gé 19:36-38: cada hija de Lot da a luz un hijo, Moab la mayor y Ben-Ammí la menor. Lot no nace ni muere aquí.'
+- file: events/lea-da-a-luz-cuatro-hijos
+  set:
+    type: birth
+    roles:
+      ruben-hijo-de-jacob: born
+      simeon-hijo-de-jacob: born
+      levi-hijo-de-jacob: born
+      juda-hijo-de-jacob: born
+  sources:
+  - genesis-29
+  reason: 'Gé 29:32-35: Lea da a luz a Rubén, Simeón, Leví y Judá, uno tras otro. El rango del suceso es la duda sobre cada
+    parto, así que ningún papel lleva fecha propia.'
+- file: events/bilha-y-zilpa-dan-hijos-a-jacob
+  set:
+    type: birth
+    roles:
+      dan-hijo-de-jacob: born
+      neftali-hijo-de-jacob: born
+      gad-hijo-de-jacob: born
+      aser-hijo-de-jacob: born
+  sources:
+  - genesis-30
+  reason: 'Gé 30:5-13: Bilhá da a luz a Dan y a Neftalí, y Zilpá a Gad y a Aser. Las madres, Raquel, Lea y Jacob no llevan
+    papel.'
+- file: events/lea-tiene-a-isacar-zabulon-y-dina
+  set:
+    type: birth
+    roles:
+      isacar-hijo-de-jacob: born
+      zabulon-hijo-de-jacob: born
+      dina: born
+  sources:
+  - genesis-30
+  reason: 'Gé 30:17-21: tras el trato de las mandrágoras, Lea da a luz a Isacar, a Zabulón y después a Dina. Los partos son
+    la mayor parte del pasaje.'
+- file: events/juda-se-casa-con-la-hija-de-sua
+  set:
+    type: birth
+    roles:
+      er-hijo-de-juda: born
+      onan: born
+      sela-hijo-de-juda:
+        role: born
+        place: aczib-de-juda
+  sources:
+  - genesis-38
+  - it-aczib
+  reason: 'Gé 38:3-5: la hija de Súa da a luz a Er, Onán y Selá. Judá estaba en Aczib cuando nació Selá, y Perspicacia «Aczib»
+    la da como su lugar de nacimiento, no Adulam.'
+- file: events/cain-edifica-enoc
+  set:
+    roles:
+      enoc-hijo-de-cain:
+        role: born
+        place: nod
+  sources:
+  - genesis-4
+  - it-enoc
+  reason: 'Gé 4:16, 17: Enoc nace cuando Caín ya vive en la región del Destierro, y la ciudad se edifica después. Perspicacia
+    «Enoc», núm. 1, lo sitúa allí. Sin tipo: lo principal es la ciudad.'
+- file: events/muerte-de-esteban
+  set:
+    type: death
+    roles:
+      esteban: died
+  sources:
+  - hechos-7
+  reason: 'Hch 7:58-60: sacan a Esteban de la ciudad y lo apedrean hasta que muere. Saulo y Jesús están en el suceso sin morir.'
+- file: events/muerte-de-josias
+  set:
+    type: death
+    roles:
+      josias: died
+    present:
+    - neko
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-35
+  - it-josias
+  - it-meguido
+  reason: 2Re 23:29 y Perspicacia «Meguidó» lo hacen morir en Meguidó; 2Cr 35:24 y «Josías», de camino a Jerusalén o al llegar.
+    El sitio queda abierto; present deja allí solo a Nekó, y Jehoacaz no estaba.
+- file: events/muerte-de-judas
+  set:
+    type: death
+    roles:
+      judas-iscariote: died
+  sources:
+  - mateo-27
+  - hechos-1
+  reason: 'Mt 27:5 y Hch 1:18: Judas se ahorca. Jesús está en el suceso por el relato, no porque muera aquí.'
+- file: events/muerte-de-juan-el-bautista
+  set:
+    type: death
+    roles:
+      juan-el-bautista: died
+  sources:
+  - mateo-14
+  - marcos-6
+  reason: 'Mt 14:10 y Mr 6:27: Herodes manda decapitar a Juan en la cárcel. Herodes, Herodías y su hija no llevan papel.'
+- file: events/muerte-de-santiago-hijo-de-zebedeo
+  set:
+    type: death
+    roles:
+      santiago-hijo-de-zebedeo: died
+  sources:
+  - hechos-12
+  reason: 'Hch 12:2: Herodes Agripa I ordena ejecutar a Santiago, hermano de Juan, con la espada.'
+- file: events/cain-mata-a-abel
+  set:
+    type: death
+    roles:
+      abel: died
+  sources:
+  - genesis-4
+  reason: 'Gé 4:8: Caín ataca a su hermano Abel en el campo y lo mata. Quien muere es Abel, no el primero de la lista.'
+- file: events/asesinato-de-guedalias
+  set:
+    type: death
+    roles:
+      guedalias: died
+  sources:
+  - 2-reyes-25
+  - jeremias-41
+  reason: '2Re 25:25 y Jer 41:2: Ismael mata en Mizpá al gobernador Guedalías. La huida a Egipto es la consecuencia de esa
+    muerte.'
+- file: events/jehoas-coronado
+  set:
+    roles:
+      atalia: died
+  sources:
+  - 2-reyes-11
+  reason: '2Re 11:16: sacan a Atalía del templo y la matan en la entrada de los caballos. Sin tipo: lo principal es la coronación
+    de Jehoás.'
+- file: events/jehu-acaba-con-la-casa-de-acab
+  set:
+    type: death
+    roles:
+      jehoram-de-israel: died
+      ocozias-de-juda:
+        role: died
+        place: meguido
+      jezabel: died
+  sources:
+  - 2-reyes-9
+  - it-ocozias
+  reason: '2Re 9:24, 27, 33: mueren Jehoram, Ocozías y Jezabel. Ocozías huye herido y muere en Meguidó, no en Jezreel (2Re
+    9:27; Perspicacia «Ocozías», que junta este relato con 2Cr 22:9).'
+- file: events/caida-de-babilonia
+  set:
+    roles:
+      belsasar: died
+  sources:
+  - daniel-5
+  reason: 'Da 5:30: esa misma noche matan a Belsasar. Sin tipo: lo principal es la caída de la ciudad.'
+- file: events/tamar-enviuda-de-er-y-onan
+  set:
+    type: death
+    roles:
+      er-hijo-de-juda: died
+      onan: died
+  sources:
+  - genesis-38
+  reason: 'Gé 38:7, 10: Jehová da muerte a Er y después a Onán. El suceso no sitúa a nadie, y el texto no dice dónde murieron.'
+- file: events/simeon-y-levi-matan-a-los-hombres-de-siquem
+  set:
+    type: death
+    roles:
+      hamor: died
+      siquem-hijo-de-hamor: died
+  sources:
+  - genesis-34
+  reason: 'Gé 34:25, 26: Simeón y Leví matan a todos los varones de la ciudad, y con ellos a Hamor y a su hijo Siquem.'
+- file: events/elimelec-se-va-a-moab
+  set:
+    roles:
+      elimelec: died
+      mahlon: died
+      kilion: died
+  sources:
+  - rut-1
+  reason: 'Rut 1:3-5: en Moab muere Elimélec y, unos diez años después, Mahlón y Kilión. El texto no da años: valen los del
+    suceso. Sin tipo: lo principal es el traslado.'
+- file: events/abrahan-compra-la-cueva-de-macpela
+  set:
+    roles:
+      sara: died
+  sources:
+  - genesis-23
+  reason: 'Gé 23:2: Sara muere en Quiryat-Arbá, es decir, Hebrón. Sin tipo: lo principal es la compra de la cueva y el entierro.'
+- file: events/dios-toma-a-enoc
+  set:
+    type: death
+    roles:
+      enoc-hijo-de-jared: died
+  sources:
+  - genesis-5
+  - hebreos-11
+  - it-enoc
+  reason: 'Perspicacia «Enoc», núm. 2: Dios interrumpió su vida a los 365 años para que no lo mataran, y Heb 11:13 lo cuenta
+    entre los que murieron. No lo llevó al cielo.'
+- file: events/jehova-restablece-a-job
+  set:
+    roles:
+      job:
+        role: died
+        date:
+          from: -1472
+          to: -1472
+          precision: year
+          approx: true
+          type: derived
+          chronology: tnm
+          text: c. 1473 a.e.c.
+          note: 'Perspicacia «Job»: Moisés acabó el libro hacia 1473 a.e.c., probablemente poco después de la muerte de Job,
+            que vivió 140 años más tras la prueba (Job 42:16).'
+      jemima: born
+      quesias: born
+      queren-hapuc: born
+    status: pending
+  sources:
+  - job-42
+  - it-job
+  reason: 'Job 42:13-17: tiene tres hijas y muere 140 años después. Perspicacia «Job» fecha el libro en 1473 a.e.c.,
+    probablemente poco después de su muerte: fecha derivada y suceso pendiente. Sin tipo: lo principal es la restauración.'
+- file: events/jacob-sube-a-betel
+  set:
+    roles:
+      debora-nodriza-de-rebeca: died
+  sources:
+  - genesis-35
+  reason: 'Gé 35:8: muere Débora, la nodriza de Rebeca, y la entierran al pie de la colina de Betel. Sin tipo: lo principal
+    es el altar.'
+- file: events/muerte-de-abrahan
+  set:
+    present:
+    - isaac
+    - ismael-hijo-de-abrahan
+  sources:
+  - genesis-25
+  reason: Gé 25:8-10 no dice dónde murió Abrahán; Isaac e Ismael lo entierran en Macpelá. Sin present, su papel lo haría morir
+    en la cueva donde lo enterraron.
+- file: events/muerte-de-ananias-y-safira
+  set:
+    type: death
+    roles:
+      ananias-de-jerusalen: died
+      safira: died
+  sources:
+  - hechos-5
+  reason: 'Hch 5:5, 10: Ananías cae muerto y, unas tres horas después, también Safira. Mueren los dos, no solo el primero
+    de la lista.'
+- file: events/muerte-de-alejandro
+  set:
+    type: death
+    roles: {}
+    reason: 'Perspicacia «Alejandro» y «Babilonia» fechan su muerte en 323 a.e.c.; «Veamos “la buena tierra”» da la misma
+      edad y la causa, la malaria. Alejandro no tiene ficha: nadie lleva el papel de morir.'
+  sources:
+  - it-alejandro
+  reason: Alejandro Magno no tiene ficha. El suceso es su muerte, así que lleva el tipo, roles vacío y la explicación en su
+    reason.
+- file: events/resurreccion-de-lazaro
+  set:
+    roles:
+      lazaro: raised
+  sources:
+  - juan-11
+  reason: 'Jn 11:14, 43, 44: Lázaro muere y, cuatro días después, Jesús lo llama y sale vivo. Muere y vuelve a vivir en el
+    mismo suceso, así que lleva solo raised.'
+- file: events/resurreccion-de-jesus
+  set:
+    roles:
+      jesus: raised
+  sources:
+  - mateo-28
+  reason: 'Mt 28:5-7: el ángel dice que Jesús ha sido resucitado. Su muerte es el suceso muerte-de-jesus; este papel hace
+    que deje de cerrar su vida.'
+- file: events/eutico-vuelve-a-la-vida
+  set:
+    roles:
+      eutico: raised
+  sources:
+  - hch-20
+  reason: 'Hch 20:9-12: Eutico cae del tercer piso y lo levantan muerto; Pablo lo devuelve con vida esa noche. Lleva solo
+    raised.'
+- file: events/pedro-resucita-a-dorcas
+  set:
+    roles:
+      dorcas: raised
+  sources:
+  - hch-9
+  reason: 'Hch 9:37-41: Dorcas enferma y muere; Pedro ora y ella vuelve a vivir. Muere y resucita en el mismo suceso, así
+    que lleva solo raised.'
+- file: events/primera-carta-de-pablo
+  set:
+    type: writing
+    roles:
+      pablo: wrote
+  sources:
+  - 1-tesalonicenses-1
+  - 1-tesalonicenses-2
+  reason: 1Te 1:1 nombra a Pablo, Silvano y Timoteo, pero en 2:18 habla Pablo solo, y la carta 1-tesalonicenses lo da como
+    escritor. Silas y Timoteo no llevan papel.
+- file: events/hombres-de-ezequias-copian-proverbios-de-salomon
+  set:
+    type: writing
+    roles: {}
+    reason: 'Pr 25:1 y su nota al pie; Perspicacia «Ezequías», núm. 1, apartado de sus escritos. Reinado de 746 a 716 (tabla
+      A6-B); Proverbios, en Jerusalén (tabla de libros). Copian hombres sin ficha: nadie lleva papel.'
+  sources:
+  - proverbios-25
+  reason: 'Pr 25:1: copian los hombres de Ezequías, que no tienen ficha. Ezequías no copia y Salomón compuso los proverbios
+    mucho antes, así que ninguno de los dos lleva papel.'
+- file: events/septuaginta
+  set:
+    type: writing
+    roles: {}
+    reason: 'El cuadro del estudio 3 pone hacia 280 a.e.c. el comienzo de la Septuaginta; «Veamos “la buena tierra”» destaca
+      su papel junto al griego koiné. Los traductores no tienen ficha: nadie lleva papel.'
+  sources:
+  - si-3
+  reason: Es el comienzo de una traducción escrita de las Escrituras Hebreas. Quienes la hicieron no tienen ficha, así que
+    el suceso lleva roles vacío.
+- file: events/decreto-de-haman
+  set:
+    roles:
+      haman:
+        role: died
+        date:
+          from: -483
+          to: -483
+          precision: month
+          approx: true
+          type: derived
+          chronology: tnm
+          text: nisán de 484 a.e.c. (cálculo nuestro)
+          detail:
+            month: nisan
+          note: 'Est 4:16, 5:1, 5:8 y 7:10: lo cuelgan pocos días después del decreto del 13 de nisán, el mismo año.'
+      mardoqueo:
+        role: wrote
+        date:
+          from: -483
+          to: -483
+          precision: day
+          approx: false
+          type: derived
+          chronology: tnm
+          text: 23 de siván de 484 a.e.c. (cálculo nuestro)
+          detail:
+            month: sivan
+            day: 23
+          note: Est 8:9 da el 23 de siván; el relato sigue en el año duodécimo de Asuero, el del primer decreto.
+  sources:
+  - ester-7
+  - ester-8
+  reason: 'Est 7:10: cuelgan a Hamán; Est 8:9, 10: Mardoqueo escribe el segundo decreto. Cada papel lleva su fecha, que no
+    es la del suceso. Sin tipo: el centro es el complot.'
+- file: events/job-maldice-el-dia-en-que-nacio
+  set:
+    type: speech
+    roles:
+      job: spoke
+  sources:
+  - job-3
+  reason: 'Job 3: tras siete días callado, Job habla y maldice el día en que nació. Es el primer discurso del debate.'
+- file: events/job-responde-al-segundo-discurso-de-bildad
+  set:
+    type: speech
+    roles:
+      job: spoke
+  sources:
+  - job-19
+  reason: Job 19 es entero la respuesta de Job a Bildad; el título perdió la palabra discurso, pero el suceso es como sus
+    hermanos del mapa.
+- file: events/job-responde-al-segundo-discurso-de-zofar
+  set:
+    type: speech
+    roles:
+      job: spoke
+  sources:
+  - job-21
+  reason: Job 21 es entero la respuesta de Job a Zofar; el suceso es como los discursos de Job que tipa el mapa.
+- file: events/job-responde-al-tercer-discurso-de-elifaz
+  set:
+    type: speech
+    roles:
+      job: spoke
+  sources:
+  - job-23
+  - job-24
+  reason: Job 23 y 24 son enteros la respuesta de Job a Elifaz; el suceso es como los discursos de Job que tipa el mapa.
+- file: events/elihu-corrige-a-job
+  set:
+    type: speech
+    roles:
+      elihu-hijo-de-barakel: spoke
+  sources:
+  - job-32
+  reason: 'Job 32 a 37: tras una breve introducción, habla solo Elihú, sin que nadie le conteste.'
+- file: events/jehova-responde-a-job-desde-la-tempestad
+  set:
+    type: speech
+    roles: {}
+    reason: 'Perspicacia «Job» fecha la prueba hacia 1613 a.e.c., contando hacia atrás los 140 años de Job 42:16. Pasa en Uz,
+      donde vivía Job. Habla Jehová, sin ficha: nadie lleva el papel. Job solo responde en 40:3-5 y 42:1-6.'
+  sources:
+  - job-38
+  - job-40
+  - job-42
+  reason: El discurso de Job 38 a 41 es de Jehová, que no tiene ficha, así que el suceso lleva roles vacío. Job solo le
+    responde en 40:3-5 y 42:1-6, y dar a Job el papel lo haría orador del discurso.
+- file: events/juda-se-ofrece-en-lugar-de-benjamin
+  set:
+    type: speech
+    roles:
+      juda-hijo-de-jacob: spoke
+  sources:
+  - genesis-44
+  reason: 'Gé 44:18-34: la mayor parte del pasaje es lo que Judá le dice a José para quedarse como esclavo en lugar de Benjamín.'
+- file: events/poema-de-lamec
+  set:
+    type: speech
+    roles:
+      lamec-hijo-de-metusael: spoke
+  sources:
+  - genesis-4
+  reason: 'Gé 4:23, 24: Lamec pide a sus esposas que oigan su voz y les dice unos versos. Todo el suceso son sus palabras.'
+- file: events/jacob-bendice-a-sus-hijos
+  set:
+    type: speech
+    roles:
+      jacob: spoke
+  sources:
+  - genesis-49
+  reason: 'Gé 49:1-28: Jacob reúne a sus hijos y les habla uno por uno. Todo el pasaje son sus palabras.'
+- file: events/consagracion-de-los-primogenitos
+  set:
+    type: speech
+    roles:
+      moises: spoke
+  sources:
+  - exodo-13
+  reason: 'Éx 13:3-16: tras la orden de Jehová, casi todo el pasaje es lo que Moisés dice al pueblo.'
+- file: events/sermon-del-monte
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-5
+  reason: 'Mt 5 a 7 y Lu 6:20-49: un discurso de Jesús de principio a fin.'
+- file: events/ultimo-discurso-y-oracion
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - juan-14
+  reason: 'Jn 14 a 17: Jesús habla a los apóstoles y después ora; las preguntas de Tomás y Felipe son breves.'
+- file: events/senal-de-su-presencia
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-24
+  reason: 'Mt 24, Mr 13 y Lu 21: casi todo es la respuesta de Jesús a los apóstoles en el monte de los Olivos.'
+- file: events/denuncia-a-escribas-y-fariseos
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-23
+  reason: 'Mt 23: un discurso de Jesús a la multitud y a los discípulos contra los escribas y los fariseos.'
+- file: events/pan-de-la-vida
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - juan-6
+  reason: 'Jn 6:26-58: la mayor parte del pasaje es lo que Jesús enseña en la sinagoga de Capernaúm; Pedro solo responde al
+    final.'
+- file: events/parabolas-del-reino
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-13
+  reason: 'Mt 13, Mr 4 y Lu 8: Jesús enseña con parábolas desde una barca y después las explica. Todo son sus palabras.'
+- file: events/oracion-modelo-y-amigo-insistente
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-11
+  reason: 'Lu 11:2-13: tras la petición de un discípulo, todo el pasaje es la enseñanza de Jesús.'
+- file: events/rico-insensato-y-mayordomo-fiel
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-12
+  reason: 'Lu 12: Jesús enseña durante todo el capítulo; las dos preguntas que le hacen son breves.'
+- file: events/puerta-angosta-y-lamento-por-jerusalen
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-13
+  reason: 'Lu 13:23-35: tras una pregunta y un aviso de los fariseos, el pasaje es lo que Jesús dice.'
+- file: events/invitados-a-una-comida
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-14
+  reason: 'Lu 14:7-24: tras la curación, la mayor parte del pasaje es la enseñanza de Jesús a los invitados.'
+- file: events/calcular-el-costo
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-14
+  reason: 'Lu 14:25-35: todo el pasaje es lo que Jesús dice a la multitud que lo sigue.'
+- file: events/oveja-moneda-e-hijo-perdidos
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-15
+  reason: 'Lu 15:3-32: tras la queja de los fariseos, todo son las tres parábolas que cuenta Jesús.'
+- file: events/mayordomo-injusto-y-rico-y-lazaro
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-16
+  reason: 'Lu 16: todo el capítulo es la enseñanza de Jesús, con dos parábolas.'
+- file: events/no-hacer-tropezar-perdonar-y-fe
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-17
+  reason: 'Lu 17:1-10: todo el pasaje es la enseñanza de Jesús a sus discípulos.'
+- file: events/viuda-persistente-y-fariseo-y-cobrador
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-18
+  reason: 'Lu 18:1-14: todo el pasaje son dos parábolas de Jesús.'
+- file: events/agricultores-asesinos-y-banquete-de-boda
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-21
+  - mateo-22
+  reason: 'Mt 21:33 a 22:14 y los relatos paralelos: casi todo son dos parábolas de Jesús a los líderes.'
+- file: events/senal-de-jonas-en-galilea
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-12
+  reason: 'Mt 12:38-45: tras la petición de una señal, el pasaje es la respuesta de Jesús.'
+- file: events/virgenes-talentos-ovejas-y-cabras
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-25
+  reason: 'Mt 25: tres parábolas de Jesús, que siguen su respuesta del monte de los Olivos.'
+- file: events/el-mayor-en-el-reino
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-18
+  reason: 'Mt 18: tras la pregunta de los discípulos, casi todo el capítulo es la enseñanza de Jesús.'
+- file: events/matrimonio-y-divorcio
+  set:
+    type: speech
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-19
+  reason: 'Mt 19:3-12 y Mr 10:2-12: a una pregunta de los fariseos, Jesús contesta enseñando; el título ya lo llama enseñanza.'
+- file: events/discurso-de-esteban
+  set:
+    type: speech
+    roles:
+      esteban: spoke
+  sources:
+  - hechos-7
+  reason: 'Hch 7:2-53: la mayor parte del pasaje es la defensa de Esteban ante el Sanedrín.'
+- file: events/discurso-en-el-areopago
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-17
+  reason: 'Hch 17:22-31: el centro del suceso es lo que Pablo dice en el Areópago.'
+- file: events/discurso-en-antioquia-de-pisidia
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-13
+  reason: 'Hch 13:16-41: el centro del suceso es lo que Pablo dice en la sinagoga.'
+- file: events/despedida-en-mileto
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-20
+  reason: 'Hch 20:18-35: el centro del suceso es lo que Pablo dice a los ancianos de Éfeso.'
+- file: events/defensa-ante-agripa
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-26
+  reason: 'Hch 26:2-23: el centro del suceso es la defensa de Pablo ante Agripa.'
+- file: events/juicio-ante-felix
+  set:
+    type: speech
+    roles:
+      tertulo: spoke
+      pablo: spoke
+  sources:
+  - hch-24
+  reason: 'Hch 24:2-8 es la acusación de Tértulo y 24:10-21 la defensa de Pablo: dos discursos ante Félix.'
+- file: events/pablo-habla-a-felix-y-drusila
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-24
+  reason: 'Hch 24:24, 25: Pablo habla a Félix y a Drusila de la fe en Cristo, la justicia y el juicio. Es todo el suceso.'
+- file: events/pablo-habla-a-los-judios-de-roma
+  set:
+    type: speech
+    roles:
+      pablo: spoke
+  sources:
+  - hch-28
+  reason: 'Hch 28:17-28: el suceso es lo que Pablo dice a los judíos principales de Roma.'
+- file: events/pedro-predica-a-cornelio
+  set:
+    type: speech
+    roles:
+      pedro: spoke
+  sources:
+  - hechos-10
+  reason: 'Hch 10:34-43: el centro del suceso es lo que Pedro dice en casa de Cornelio.'
+- file: events/pedro-da-cuentas-en-jerusalen
+  set:
+    type: speech
+    roles:
+      pedro: spoke
+  sources:
+  - hechos-11
+  reason: 'Hch 11:4-17: casi todo el pasaje es lo que Pedro cuenta a los hermanos.'
+- file: events/pedro-y-juan-ante-el-sanedrin
+  set:
+    type: speech
+    roles:
+      pedro: spoke
+      juan-apostol: spoke
+  sources:
+  - hechos-4
+  reason: Hch 4:8-12 habla Pedro ante los gobernantes, y en 4:19, 20 responden Pedro y Juan. La defensa es el centro del suceso.
+- file: events/consejo-de-gamaliel
+  set:
+    type: speech
+    roles:
+      pedro: spoke
+      gamaliel-fariseo: spoke
+  sources:
+  - hechos-5
+  reason: Hch 5:29-32 responden Pedro y los apóstoles, y 5:35-39 habla Gamaliel. Juan no se nombra, así que no lleva papel.
+- file: events/pentecostes-33
+  set:
+    roles:
+      pedro: spoke
+  sources:
+  - hch-2
+  reason: Hch 2:14-36 es el discurso de Pedro, pero el suceso es sobre todo el derramamiento del espíritu. Papel sin tipo.
+- file: events/juan-comienza-su-ministerio
+  set:
+    roles:
+      juan-el-bautista: spoke
+  sources:
+  - lucas-3
+  reason: Lu 3:7-18 recoge lo que Juan predicaba, pero el suceso es el comienzo de su ministerio. Papel sin tipo.
+- file: events/juan-envia-discipulos
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-11
+  reason: Mt 11:7-30 es lo que Jesús dice de Juan y de aquella generación, pero el suceso es la pregunta de Juan. Papel sin
+    tipo.
+- file: events/llaves-del-reino
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-16
+  reason: Mt 16:24-28 es una enseñanza de Jesús, pero el suceso es lo que reconoce Pedro. Papel sin tipo.
+- file: events/envio-de-los-setenta
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-10
+  reason: Lu 10:2-16 son las instrucciones de Jesús, pero el suceso es el envío y la vuelta de los setenta. Papel sin tipo.
+- file: events/buen-samaritano-y-casa-de-marta
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-10
+  reason: Lu 10:30-37 es la parábola de Jesús, pero el suceso es la pregunta del experto en la Ley. Papel sin tipo.
+- file: events/dedo-de-dios-y-senal-de-jonas
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-11
+  reason: Lu 11:17-36 es la respuesta de Jesús, pero el suceso empieza con una expulsión de demonios. Papel sin tipo.
+- file: events/come-con-un-fariseo
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-11
+  reason: Lu 11:39-52 es lo que Jesús denuncia, pero el suceso es la comida en casa del fariseo. Papel sin tipo.
+- file: events/mujer-encorvada-y-grano-de-mostaza
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-13
+  reason: Lu 13 reúne enseñanzas de Jesús con la curación de una mujer. Papel sin tipo.
+- file: events/jerico-ciegos-zaqueo-y-minas
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - lucas-19
+  reason: Lu 19:11-27 es la parábola de las minas, pero el suceso reúne dos curaciones y la visita a Zaqueo. Papel sin tipo.
+- file: events/pecado-sin-perdon
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-12
+  reason: Mt 12:25-37 es la respuesta de Jesús, pero el suceso empieza con la curación de un endemoniado. Papel sin tipo.
+- file: events/joven-rico-y-trabajadores-de-la-vina
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-20
+  reason: Mt 20:1-16 es una parábola de Jesús, pero el suceso es sobre todo su conversación con el joven rico. Papel sin tipo.
+- file: events/cuestionan-su-autoridad
+  set:
+    roles:
+      jesus: spoke
+  sources:
+  - mateo-21
+  reason: Mt 21:28-32 es una parábola de Jesús, pero el suceso es la pregunta sobre su autoridad. Papel sin tipo.

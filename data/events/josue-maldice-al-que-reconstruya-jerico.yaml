@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-maldice-al-que-reconstruya-jerico
+title: Josué maldice al que reconstruya Jericó
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 206026
+places:
+- jerico
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 6:26
+summary: 'Tras la destrucción, Josué pronuncia un juramento: quien levante de nuevo Jericó perderá a su primogénito al poner
+  los cimientos y a su hijo menor al colocar las puertas.'
+reason: 'Perspicacia «Josué», núm. 1, y «Jericó»: la maldición se cumplió más de 500 años después, cuando Hiel de Betel reconstruyó
+  la ciudad en el reinado de Acab (1Re 16:34).'
+sources:
+- josue-6
+- it-josue
+- it-jerico
+links:
+- title: Josué 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/6
+  type: bible
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+search: maldición Jericó Josué Hiel
+checked_on: '2026-09-29'
+status: verified

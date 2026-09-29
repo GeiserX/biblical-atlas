@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ritma
+name: Ritmá
+names:
+- name: Ritmá
+  note: Significa «retama» (Perspicacia).
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al norte de Hazerot, según el mapa B3
+  geometry:
+    type: zone
+    lat: 29.27
+    lon: 34.52
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-ritma
+  - tnm-b3
+  reason: Perspicacia no sabe dónde estaba; el mapa B3 lo pone con signo de duda en la ruta de Hazerot a Rimón-Pérez.
+  coord_source: calculation
+  note: 'Centro: sitio de Ritmá en el mapa B3, calculado ajustando la imagen a dieciséis lugares del mapa con punto de OpenBible.
+    Radio nuestro.'
+- name: El mismo sitio que Cadés
+  geometry:
+    type: zone
+    lat: 30.58
+    lon: 34.48
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-qades
+  reason: Perspicacia «Qadés» recoge una opinión antigua que hace de Ritmá y Cadés un solo lugar, porque la lista no nombra
+    Cadés tras Hazerot.
+  coord_source: calculation
+  note: 'Centro y radio: los de la zona de los tres manantiales de la ficha de Cadés.'
+summary: Campamento de Israel en el desierto, el siguiente a Hazerot. Hoy no se sabe dónde estaba; una opinión antigua lo
+  identifica con Cadés.
+reason: Perspicacia «Ritmá» y «Qadés»; Nú 33:18, 19.
+sources:
+- it-ritma
+- it-qades
+- tnm-b3
+- numeros-33
+links:
+- title: 'Perspicacia: «Ritmá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003744
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

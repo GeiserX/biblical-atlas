@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-comisiona-a-josue-en-la-tienda-de-reunion
+title: Jehová comisiona a Josué en la tienda de reunión
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 131014
+places:
+- llanuras-deserticas-de-moab
+people:
+- moises
+- josue-hijo-de-nun
+passages:
+- Dt 31:14-23
+summary: Cerca ya la muerte de Moisés, él y Josué se presentan en la tienda de reunión. Jehová aparece en la columna de nube,
+  anuncia que el pueblo lo abandonará, manda escribir una canción como testigo y nombra líder a Josué.
+reason: 'Perspicacia «Josué», núm. 1: en la tienda Jehová confirmó el nombramiento que Moisés ya había hecho en Números. La
+  nota de Dt 31:23 lo atribuye a Dios. «Moisés», párr. 32: 1473 a.e.c. Va tras Números en su serie.'
+sources:
+- deuteronomio-31
+- it-josue
+- it-moises
+- si-3
+links:
+- title: Deuteronomio 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/31
+  type: bible
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

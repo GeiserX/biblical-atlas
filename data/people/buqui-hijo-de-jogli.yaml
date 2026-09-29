@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: buqui-hijo-de-jogli
+name: Buquí
+names:
+- name: Buquí
+perspicacia: 1200000834#1
+disambiguation: Buquí hijo de Joglí, el jefe danita; no Buquí el descendiente de Aarón y antepasado de Esdras.
+summary: Jefe de la tribu de Dan, hijo de Joglí. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a dividir
+  Canaán en herencias.
+reason: Perspicacia «Buquí», núm. 1; Nú 34:22.
+sources:
+- it-buqui
+- numeros-34
+links:
+- title: 'Perspicacia: «Buquí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000834
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: jogli
+  word: father
+  inferred: false
+  sources:
+  - numeros-34
+  - it-buqui
+  reason: Nú 34:22 lo llama hijo de Joglí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: dan-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:22: era el jefe de la tribu de Dan.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

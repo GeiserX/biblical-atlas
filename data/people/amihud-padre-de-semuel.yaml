@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amihud-padre-de-semuel
+name: Amihud
+names:
+- name: Amihud
+perspicacia: 1200000234#2
+disambiguation: Amihud el simeonita, padre de Semuel; no el efraimita padre de Elisamá ni el padre de Pedahel, de Neftalí.
+distinct_from:
+- amihud-padre-de-pedahel
+- amihud-hijo-de-ladan
+summary: Simeonita, padre de Semuel, el jefe de su tribu que ayudó a repartir la tierra de Canaán.
+reason: Perspicacia «Amihud», núm. 2; Nú 34:20.
+sources:
+- it-amihud
+- numeros-34
+links:
+- title: 'Perspicacia: «Amihud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000234
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: simeon-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - it-amihud
+  - numeros-34
+  reason: Perspicacia «Amihud», núm. 2, lo llama simeonita; su hijo era el jefe de esa tribu (Nú 34:20).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

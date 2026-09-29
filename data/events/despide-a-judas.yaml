@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: despide-a-judas
+title: Señala al traidor y despide a Judas
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- jerusalen
+people:
+- jesus
+- judas-iscariote
+- pedro
+- juan-apostol
+- satanas
+passages:
+- Mt 26:21-25
+- Mr 14:18-21
+- Lu 22:21-23
+- Jn 13:21-30
+summary: Jesús anuncia que uno de ellos lo traicionará, señala a Judas dándole un bocado y le dice que haga pronto
+  lo que va a hacer. Judas sale de noche.
+reason: La tabla A7-H da el día y el lugar. Perspicacia «Judas» (párr. 14-15) muestra que salió antes de la Cena del Señor;
+  «Juan», núm. 3, párr. 26, sienta a Juan junto a Jesús (Jn 13:23).
+sources:
+- tnm-a7-h
+- mateo-26
+- marcos-14
+- lucas-22
+- juan-13
+- jy-cap-117
+- it-judas
+- it-juan
+narrative_order:
+  series: a7
+  order: 112
+search: Señala al traidor y despide a Judas
+history:
+- date: '2026-09-29'
+  change: La razón citaba la tabla A7-G, pero este suceso está en A7-H (parte 2), que es la que ya lleva en fuentes.
+  source: tnm-a7-h
+- date: '2026-09-29'
+  change: Entran Pedro y Juan, que preguntan por el traidor, y Satanás, que entra en Judas (Jn 13:23-27). Presentes deja fuera
+    a Satanás.
+  source: juan-13
+present:
+- jesus
+- judas-iscariote
+- pedro
+- juan-apostol
+checked_on: '2026-09-29'
+status: verified

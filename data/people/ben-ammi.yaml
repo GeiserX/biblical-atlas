@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-ammi
+name: Ben-Ammí
+names:
+- name: Ben-Ammí
+- name: Ammón
+  note: Otro nombre que le da Perspicacia; de él toman el suyo los ammonitas.
+perspicacia: '1200000633'
+summary: Hijo que Lot tuvo con su hija menor y medio hermano de Moab. De él vienen los ammonitas.
+reason: Perspicacia «Ben-ammí»; Gé 19:36, 38.
+sources:
+- it-ben-ammi
+- genesis-19
+links:
+- title: 'Perspicacia: «Ben-ammí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000633
+  type: perspicacia
+- title: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  type: bible
+relations:
+- type: kin
+  person: lot
+  word: father
+  inferred: false
+  sources:
+  - genesis-19
+  - it-ben-ammi
+  reason: 'Gé 19:36, 38: la hija menor de Lot lo concibió de su propio padre.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: horem
+name: Horem
+names:
+- name: Horem
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Territorio de Neftalí
+  geometry:
+    type: zone
+    lat: 32.965272
+    lon: 35.559775
+    radius_km: 25
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-horem
+  - it-neftali
+  - openbible-geo
+  reason: Jos 19:38 la cuenta entre las ciudades fortificadas de Neftalí; Perspicacia no sabe dónde estaba.
+  coord_source: calculation
+  note: 'La misma zona calculada de la ficha de Neftalí: punto medio entre el mar de Galilea y Quedes de OpenBible.'
+summary: Ciudad fortificada de Neftalí de lugar desconocido.
+reason: Perspicacia «Horem»; Jos 19:38. Zona calculada por nosotros.
+sources:
+- it-horem
+- it-neftali
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Horem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002074
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

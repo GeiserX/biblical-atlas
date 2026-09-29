@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: iconio
-generado: "2026-09-28"
+place: iconio
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwban_201504_1_VIDEO"
-    titulo: "Mark Sanderson: Siempre tenemos presente su aguante"
+    title: "Mark Sanderson: Siempre tenemos presente su aguante"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201504_1_VIDEO&appLanguage=S"
-    publicado: "2016-11-10"
-    menciones: 4
-    terminos:
+    published: "2016-11-10"
+    hits: 4
+    terms:
       "Iconio": 4

@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aser
+name: Aser
+names:
+- name: Aser
+  note: Territorio de la tribu que descendía de Aser, hijo de Jacob.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Llanura de la costa, de Dor hasta Sidón
+  geometry:
+    type: zone
+    lat: 33.0892
+    lon: 35.1442
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-aser
+  - openbible-geo
+  reason: 'Perspicacia: iba por la costa del Mediterráneo desde poco más al sur de Dor, pasado el Carmelo, hasta Sidón.'
+  note: 'Centro calculado por nosotros: punto medio entre Dor (32,617 N; 34,916 E) y Sidón (33,561 N; 35,372 E) de OpenBible.
+    El radio de 30 km también es nuestro.'
+  coord_source: calculation
+- name: Llanura de la costa, del Carmelo a Sidón
+  geometry:
+    type: zone
+    lat: 32.971667
+    lon: 35.109722
+    radius_km: 40
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-aser
+  - openbible-geo
+  reason: Perspicacia extiende su territorio por la costa, desde más abajo de Dor, al sur del Carmelo, hasta Sidón.
+  coord_source: calculation
+  note: 'Centro calculado por nosotros: punto medio entre el monte Carmelo y Tiro de OpenBible. El radio también es nuestro.'
+not_claimed:
+- No trazamos sus fronteras; la zona del mapa es solo una referencia dentro del territorio.
+summary: Territorio de la tribu de Aser, en la llanura de la costa norte, de tierra muy fértil. Lindaba con Manasés al sur;
+  dentro de él Manasés tuvo Dor y sus pueblos.
+reason: Perspicacia «Aser», núm. 2, párr. 2 y 3; Jos 17:7, 10, 11. Zona calculada por nosotros.
+sources:
+- it-aser
+- openbible-geo
+- josue-17
+- josue-19
+- jueces-6
+- jueces-7
+links:
+- title: 'Perspicacia: «Aser»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000414
+  type: perspicacia
+- title: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  type: bible
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

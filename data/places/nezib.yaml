@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nezib
+name: Nezib
+names:
+- name: Nezib
+type: city
+lat: 31.58586
+lon: 35.00979
+precision: point
+coord_source: openbible:aafe3bd
+coord_url: https://www.openbible.info/geo/ancient/aafe3bd/nezib
+summary: Lugar de Judá en la Sefelá. Por lo general se identifica con Khirbet Beit Nesib (Horvat Neziv), unos 11 km al noroeste
+  de Hebrón.
+reason: 'Perspicacia «Nezib»; Jos 15:43. OpenBible: solo el punto.'
+sources:
+- it-nezib
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Nezib»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003245
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

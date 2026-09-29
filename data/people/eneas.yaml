@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eneas
+name: Eneas
+names:
+- name: Eneas
+summary: Hombre de Lida que llevaba ocho años paralítico en cama. Pedro lo curó, y muchos de Lida y de la llanura
+  de Sarón se hicieron creyentes.
+reason: Perspicacia «Eneas» (párr. 2); Hch 9:32-35.
+sources:
+- it-eneas
+- hch-9
+relations:
+- type: lived_in
+  place: lida
+  inferred: false
+  sources:
+  - it-eneas
+  - hch-9
+  reason: Hch 9:32, 33.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Eneas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000126
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+perspicacia: '1200000126'
+date:
+  from: 36
+  to: 36
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 36 e.c.
+checked_on: '2026-09-29'
+status: verified

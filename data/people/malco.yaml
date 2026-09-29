@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malco
+name: Malco
+names:
+- name: Malco
+summary: Esclavo del sumo sacerdote. En Getsemaní, Pedro, espada en mano, le cortó la oreja derecha, y Jesús se
+  la curó.
+reason: Perspicacia «Malco» (párr. 2); Jn 18:10 da su nombre y Lu 22:50, 51, la curación.
+sources:
+- it-malco
+- juan-18
+- lucas-22
+- mateo-26
+- marcos-14
+links:
+- title: 'Perspicacia: «Malco»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002869
+  type: perspicacia
+- title: Juan 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/18
+  type: bible
+search: Malco
+perspicacia: '1200002869'
+checked_on: '2026-09-29'
+status: verified

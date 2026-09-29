@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abdon
+name: Abdón
+names:
+- name: Abdón
+- name: Ebrón
+  note: Así se lee en Jos 19:28. Muchos manuscritos hebreos dicen Abdón, y Perspicacia «Ebrón» recoge que la mayoría de los
+    eruditos lo tiene por error de copia.
+type: city
+lat: 33.047692
+lon: 35.161916
+precision: uncertain
+coord_source: openbible:a72a1ff
+coord_url: https://www.openbible.info/geo/ancient/a72a1ff/abdon
+coord_note: Khirbet ʽAbdeh (Tel ʽAvdon), al este de Aczib, que Perspicacia da como probable.
+summary: Ciudad levita de Aser, para la familia de Guersón, al norte de la llanura costera, donde empiezan las colinas de
+  Galilea. Jos 19:28 la llama Ebrón, que muchos manuscritos hebreos leen Abdón.
+reason: 'Perspicacia «Abdón», núm. 5, y «Ebrón»; Jos 19:28; 21:30; 1Cr 6:74. OpenBible: solo el punto.'
+sources:
+- it-abdon
+- openbible-geo
+- josue-21
+- it-ebron
+- josue-19
+links:
+- title: 'Perspicacia: «Abdón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000016
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+- title: 'Perspicacia: «Ebrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001253
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

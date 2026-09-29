@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-benjaminitas-se-llevan-a-las-jovenes-de-silo
+title: Los benjaminitas se llevan a las jóvenes de Siló
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 21016
+places:
+- silo
+- benjamin
+people: []
+passages:
+- Jue 21:16-24
+summary: Para no romper el juramento, los ancianos mandan a los benjaminitas esconderse en las viñas de Siló durante la fiesta
+  anual. Cada uno se lleva a una joven de las que bailan, y vuelven a reconstruir sus ciudades.
+reason: 'Perspicacia «Siló», núm. 2: raptos en los bailes de la fiesta anual. Fecha: «Jueces, Libro de», «Orden del libro»:
+  poco después de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia «Finehás»).'
+sources:
+- jueces-21
+- it-silo
+- it-jueces
+- si-3
+- it-finehas
+links:
+- title: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

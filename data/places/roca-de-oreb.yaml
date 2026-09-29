@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: roca-de-oreb
+name: Roca de Oreb
+names:
+- name: Roca de Oreb
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Roca donde los efraimitas mataron a Oreb, príncipe de Madián, y que desde entonces llevó su nombre. Isaías la recuerda
+  al anunciar un golpe de Jehová como el que dio a Madián.
+reason: 'Perspicacia «Oreb», núm. 2; Jue 7:25; Is 10:26. Sin punto: Perspicacia dice que no se conoce su ubicación. «Monte»
+  es el tipo más cercano de la lista.'
+sources:
+- it-oreb
+- jueces-7
+links:
+- title: 'Perspicacia: «Oreb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003339
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+checked_on: '2026-09-29'
+status: pending

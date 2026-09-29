@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: gedeon-captura-a-zebah-y-zalmuna
+title: Gedeón sorprende a Madián en Carcor y captura a sus reyes
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Josué y antes de que Jefté empezara a juzgar)'
+narrative_order:
+  series: jueces
+  order: 8010
+places:
+- carcor
+- nobah-de-gad
+- jogbeha
+people:
+- gedeon
+- zebah
+- zalmuna
+passages:
+- Jue 8:10-12
+summary: Quedan unos 15.000 hombres de los orientales, acampados en Carcor. Gedeón sube por el camino de los nómadas y cae
+  sobre el campamento confiado; los dos reyes huyen, pero los alcanza.
+reason: 'Desde Otniel el libro va en orden (Perspicacia «Jueces, Libro de»): tras morir Josué, c. 1450 a.e.c. (estudio 3),
+  y antes de Jefté, hacia 1173 a.e.c. (Perspicacia «Jefté»).'
+sources:
+- jueces-8
+- si-3
+- it-jueces
+- it-jefte
+- it-gedeon
+- it-qarqor
+- it-nobah
+- it-jogbeha
+- it-zebah
+- it-zalmuna
+links:
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

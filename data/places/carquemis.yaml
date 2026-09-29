@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: carquemis
+name: Carquemis
+names:
+- name: Carquemis
+type: city
+lat: 36.829722
+lon: 38.015
+precision: point
+coord_source: openbible:af6c730
+coord_url: https://www.openbible.info/geo/ancient/af6c730/carchemish
+summary: Ciudad comercial junto a un vado del alto Éufrates. Allí derrotó Nabucodonosor al faraón Nekó en 625 a.e.c.
+reason: 'Perspicacia «Carquemis», párr. 1 y 4; Jer 46:2. OpenBible: solo el punto.'
+sources:
+- it-carquemis
+- openbible-geo
+- jeremias-46
+links:
+- title: 'Perspicacia: «Carquemis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000889
+  type: perspicacia
+- title: Jeremías 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/46
+  type: bible
+checked_on: '2026-09-28'
+status: verified

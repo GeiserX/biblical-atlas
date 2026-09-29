@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esceva
+name: Esceva
+names:
+- name: Esceva
+perspicacia: '1200003855'
+not_claimed:
+- 'Que Esceva estuviera en Éfeso: el texto solo sitúa allí a sus siete hijos.'
+summary: Sacerdote principal judío. Sus siete hijos, exorcistas ambulantes, quisieron echar un demonio en Éfeso usando el
+  nombre de Jesús, y el poseído los dejó heridos y desnudos.
+reason: 'Perspicacia «Esceva»: no se conoce otro sacerdote con ese nombre, salvo que fuera el nombre latino de uno llamado
+  de otro modo en hebreo. Hch 19:13-16.'
+sources:
+- it-esceva
+- hch-19
+- bt-20
+links:
+- title: 'Perspicacia: «Esceva»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003855
+  type: perspicacia
+- title: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

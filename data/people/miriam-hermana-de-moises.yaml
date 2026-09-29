@@ -1,0 +1,104 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miriam-hermana-de-moises
+name: Míriam
+names:
+- name: Míriam
+disambiguation: Míriam hija de Amram, hermana de Moisés y Aarón; no la descendiente de Judá de 1 Crónicas 4.
+date:
+  from: -1592
+  to: -1473
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1593-1474 a.e.c. (de cuando vigila a Moisés en el Nilo a su muerte en Cadés)
+summary: Hermana mayor de Moisés y Aarón, y profetisa. Todo indica que vigiló a Moisés en el Nilo. Tras el mar Rojo dirigió
+  el canto de las mujeres. Por murmurar contra Moisés sufrió lepra. Murió en Cadés.
+reason: 'Perspicacia «Míriam», núm. 1, párr. 2 a 6, y «Moisés», párr. 2; Éx 15:20, 21, Nú 12 y 20:1. Años: el mar Rojo en
+  1513 a.e.c. (estudio 3); muere poco antes que Aarón, en 1474.'
+sources:
+- si-3
+- it-aaron
+- it-miriam
+- it-moises
+- exodo-15
+- numeros-20
+- exodo-2
+- numeros-12
+- numeros-26
+- deuteronomio-24
+- miqueas-6
+- w03-que-espera-jehova
+links:
+- title: 'Perspicacia: «Míriam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003074
+  type: perspicacia
+- title: Éxodo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/15
+  type: bible
+relations:
+- type: kin
+  person: moises
+  word: brother
+  inferred: false
+  sources:
+  - it-miriam
+  - it-moises
+  - exodo-2
+  - numeros-26
+  reason: 'Perspicacia «Míriam», párr. 2 (Nú 26:59); «Moisés», párr. 2: era unos años mayor que él.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: aaron
+  word: brother
+  inferred: false
+  sources:
+  - it-miriam
+  - exodo-15
+  - numeros-26
+  reason: 'Perspicacia «Míriam», párr. 2: hija de Amram y Jokébed, hermana de Aarón (Nú 26:59).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: cades
+  inferred: false
+  sources:
+  - it-miriam
+  - numeros-20
+  reason: 'Nú 20:1: murió y fue enterrada en Cadés; Perspicacia «Míriam», párr. 6.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amram-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-2
+  - it-miriam
+  - numeros-26
+  reason: 'Éx 2:1-4: es la hermana del niño nacido de aquel levita; Perspicacia «Míriam», núm. 1, la da como hija de Amram.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jokebed
+  word: mother
+  inferred: false
+  sources:
+  - exodo-2
+  - it-miriam
+  - numeros-26
+  reason: 'Éx 2:1-4: es la hermana del niño que dio a luz esta levita; Perspicacia «Míriam», núm. 1, la da como hija de Jokébed.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: 1200003074#1
+history:
+- date: '2026-09-29'
+  change: Su actividad empezaba en el mar Rojo; Perspicacia «Míriam», núm. 1, la ve como la hermana que vigiló a Moisés, nacido
+    en 1593 a.e.c. (Éx 2:4-8; estudio 3).
+  source: exodo-2
+- date: '2026-09-29'
+  change: Se añade lo que cuenta Éx 2:4-8, que Perspicacia «Míriam», núm. 1, atribuye a ella.
+  source: exodo-2
+checked_on: '2026-09-29'
+status: verified

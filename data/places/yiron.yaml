@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: yiron
+name: Yirón
+names:
+- name: Yirón
+type: city
+lat: 33.083333
+lon: 35.416667
+precision: uncertain
+coord_source: openbible:a78b87e
+coord_url: https://www.openbible.info/geo/ancient/a78b87e/yiron
+coord_note: Punto de OpenBible en Yaroun.
+summary: Ciudad fortificada de Neftalí que se identifica con reservas con Yaroun, unos 30 km al SO de Dan.
+reason: 'Perspicacia «Yirón»; Jos 19:38. OpenBible: solo el punto.'
+sources:
+- it-yiron
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Yirón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004637
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

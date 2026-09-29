@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guidom
+name: Guidom
+names:
+- name: Guidom
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Guibeá y el peñasco de Rimón
+  geometry:
+    type: zone
+    lat: 31.876418
+    lon: 35.264804
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-guidom
+  - jueces-20
+  - openbible-geo
+  reason: Jue 20:45 lo sitúa en la persecución de quienes huían de Guibeá hacia el peñasco de Rimón. Perspicacia dice que no
+    se conoce el sitio.
+  coord_source: calculation
+  note: 'Centro: punto medio entre Guibeá (Tell el-Ful) y Rammun, los puntos de OpenBible de esas dos fichas, a unos 13 km
+    uno de otro. Radio nuestro.'
+summary: Sitio hasta el que los israelitas persiguieron a los benjaminitas que escapaban hacia el peñasco de Rimón; por el
+  camino mataron a 2.000 más. Se ignora dónde quedaba.
+reason: Perspicacia «Guidom»; Jue 20:45. Zona calculada por nosotros.
+sources:
+- it-guidom
+- openbible-geo
+- jueces-20
+links:
+- title: 'Perspicacia: «Guidom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001687
+  type: perspicacia
+- title: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

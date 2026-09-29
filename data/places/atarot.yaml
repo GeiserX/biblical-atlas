@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atarot
+name: Atarot
+names:
+- name: Atarot
+type: city
+lat: 31.5753
+lon: 35.665938
+precision: point
+coord_source: openbible:abc9a1d
+coord_url: https://www.openbible.info/geo/ancient/abc9a1d/ataroth-1
+summary: Ciudad al este del mar Muerto que pidieron Gad y Rubén y que reconstruyeron los gaditas. La Piedra Moabita cuenta
+  que el rey Mesá la conquistó.
+reason: 'Perspicacia «Atarot», núm. 1: se suele situar en Khirbet ʽAttarus, unos 13 km al noroeste de Dibón; Nú 32:3, 34. OpenBible:
+  solo el punto.'
+sources:
+- it-atarot
+- openbible-geo
+- numeros-32
+links:
+- title: 'Perspicacia: «Atarot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000452
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

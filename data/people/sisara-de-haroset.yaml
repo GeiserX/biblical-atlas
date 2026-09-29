@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sisara-de-haroset
+name: Sísara
+names:
+- name: Sísara
+perspicacia: 1200004147#1
+summary: Jefe del ejército de Jabín, rey cananeo de Hazor, aunque él vivía en Haróset. Oprimió a Israel veinte años; Jehová
+  desbarató su ejército junto al Cisón y Jael lo mató en su tienda.
+reason: Perspicacia «Sísara», núm. 1; Jue 4:1-22; Sl 83:9.
+disambiguation: No es el otro Sísara, de cuya familia salieron netineos que regresaron con Zorobabel (Perspicacia, núm. 2).
+sources:
+- it-sisara
+- salmos-83
+- jueces-4
+- jueces-5
+links:
+- title: 'Perspicacia: «Sísara»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004147
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: haroset
+  inferred: false
+  sources:
+  - jueces-4
+  - it-sisara
+  - it-haroset
+  reason: 'Jue 4:2: vivía en Haróset de las naciones; Perspicacia «Sísara», núm. 1, subraya que no en Hazor.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: jabin-rey-de-canaan
+  caption: jefe del ejército de
+  inferred: false
+  sources:
+  - jueces-4
+  - it-sisara
+  reason: 'Jue 4:2, 7: mandaba el ejército de Jabín, rey de Canaán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: zaananim
+  inferred: true
+  sources:
+  - jueces-4
+  - it-zaananim
+  - it-jael
+  reason: 'Jue 4:17-21: muere en la tienda de Jael; Perspicacia «Zaananim» la pone junto a ese árbol, como dice Jue 4:11.'
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: siquem
+name: Siquem
+names:
+- name: Siquem
+- name: Dios, el Dios de Israel
+  note: Nombre que Jacob puso al altar que levantó junto a la ciudad (Gé 33:20).
+- name: Bet-Miló
+  note: 'Casa de Miló: quizá una fortaleza de Siquem, y tal vez la misma torre de Siquem. Su gente ayudó a hacer rey a Abimélec
+    (Perspicacia «Miló»).'
+- name: Torre de Siquem
+  note: Lugar fortificado de la ciudad. Sus líderes se escondieron en el templo de El-Berit y murieron en el incendio que
+    causó Abimélec.
+- name: Templo de Baal-Berit
+  note: Casa del Baal de Siquem, llamado también El-Berit. Guardaba plata, y en su bóveda murieron unas mil personas (Perspicacia
+    «Baal-berit»).
+- name: Árbol grande de Meonenim
+  note: Árbol que se veía desde Siquem. Su nombre significa practicantes de magia; quizá allí se practicaba (Perspicacia «Meonenim,
+    Árbol grande de»).
+type: city
+lat: 32.213611
+lon: 35.281944
+precision: point
+coord_source: openbible:adf74d4
+coord_url: https://www.openbible.info/geo/ancient/adf74d4/shechem
+summary: Ciudad entre los montes Guerizim y Ebal, en el centro del país. Allí coronaron a Rehoboam y allí edificó Jeroboán
+  su primera capital.
+reason: 'Perspicacia «Siquem», núm. 4, párr. 3 y 8: Tell Balata, junto a Nablus, unos 48 km al N de Jerusalén; 1Re 12:1, 25.
+  OpenBible: solo el punto.'
+sources:
+- it-siquem
+- openbible-geo
+- 1-reyes-12
+- genesis-12
+- genesis-33
+- genesis-34
+- genesis-35
+- genesis-37
+- hechos-7
+- oseas-6
+- josue-20
+- josue-21
+- josue-24
+- jueces-8
+- jueces-9
+- it-milo
+- it-meonenim
+- it-baal-berit
+links:
+- title: 'Perspicacia: «Siquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
+  type: perspicacia
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

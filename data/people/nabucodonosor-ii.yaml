@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-ii
+name: Nabucodonosor
+names:
+- name: Nabucodonosor
+- name: Nabucodonosor II
+  note: Así lo distinguen los historiadores de un rey babilonio anterior.
+date:
+  from: -623
+  to: -581
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 624-582 a.e.c.
+summary: Hijo de Nabopolasar y rey de Babilonia. Venció a Egipto en Carquemis, se llevó a Joaquín en 617 y destruyó Jerusalén
+  en 607. Daniel narra su sueño de la imagen y sus siete tiempos de locura.
+reason: Perspicacia «Nabucodonosor, Nabucodorosor», párr. 1-6. Subió al trono en 625; su primer año cuenta desde nisán de 624
+  (estudio 3).
+sources:
+- it-nabucodonosor
+- 2-reyes-24
+- daniel-4
+- si-3
+links:
+- title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003200
+  type: perspicacia
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+relations:
+- type: lived_in
+  place: babilonia
+  inferred: false
+  sources:
+  - it-nabucodonosor
+  - daniel-4
+  reason: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
+  checked_on: '2026-09-28'
+  status: verified
+- type: kin
+  person: nabopolasar
+  word: father
+  inferred: true
+  sources:
+  - it-nabucodonosor
+  - it-medos
+  reason: Perspicacia «Nabucodonosor», párr. 1, y «Medos, Media», párr. 12, lo hacen hijo de Nabopolasar; la Biblia no nombra
+    a su padre.
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: nabopolasar
+  inferred: true
+  sources:
+  - it-nabucodonosor
+  reason: 'Perspicacia «Nabucodonosor», párr. 1 y 3: segundo rey neobabilonio; al saber que su padre había muerto regresó a
+    Babilonia y ocupó el trono.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaac-se-casa-con-rebeca
+title: Isaac se casa con Rebeca
+date:
+  from: -1877
+  to: -1877
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1878 a.e.c.
+narrative_order:
+  series: genesis
+  order: 24062
+places:
+- negueb
+- beer-lahai-roi
+people:
+- isaac
+- rebeca
+- eliezer-de-damasco
+passages:
+- Gé 24:62-67
+- Gé 25:20
+summary: Isaac, que vivía en el Négueb, sale al campo al anochecer y ve llegar los camellos. Lleva a Rebeca a la tienda de
+  Sara, se casa con ella y halla consuelo tras la muerte de su madre.
+reason: El estudio 3 fecha la boda en 1878 a.e.c.; Perspicacia «Isaac», párr. 16, lo saca de que Isaac tenía 40 años.
+sources:
+- si-3
+- it-isaac
+- genesis-24
+- genesis-25
+links:
+- title: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  type: bible
+checked_on: '2026-09-29'
+status: verified

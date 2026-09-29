@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: benjamin
+name: Benjamín
+names:
+- name: Benjamín
+  note: Territorio de la tribu que descendía de Benjamín, hijo de Jacob.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Jericó y Gabaón, al norte de Jerusalén
+  geometry:
+    type: zone
+    lat: 31.859585
+    lon: 35.313958
+    radius_km: 22
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-benjamin
+  - openbible-geo
+  reason: Perspicacia la pone entre Efraín y Judá, del Jordán junto a Jericó hasta cerca de Bet-Horón y Quiryat-Jearim.
+  coord_source: calculation
+  note: 'Centro calculado por nosotros: punto medio entre Jericó (Tell es-Sultan) y Gabaón (el-Jib) de OpenBible. El radio
+    también es nuestro.'
+summary: 'Territorio de la tribu de Benjamín, entre Judá y los hijos de José: del Jordán, junto a Jericó, hasta cerca de Bet-Horón
+  y Quiryat-Jearim. Medía unos 45 km de este a oeste y 19 de norte a sur.'
+reason: Perspicacia «Benjamín», núm. 2, apartado del territorio; Jos 18:11-28. Zona calculada por nosotros.
+sources:
+- it-benjamin
+- openbible-geo
+- josue-18
+- jueces-20
+- jueces-21
+links:
+- title: 'Perspicacia: «Benjamín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000640
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

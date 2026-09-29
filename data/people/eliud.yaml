@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliud
+name: Eliud
+names:
+- name: Eliud
+perspicacia: '1200001322'
+summary: Antepasado de José, el esposo de María. Mateo lo pone como hijo de Aquim y padre de Eleazar.
+reason: Perspicacia «Eliud»; Mt 1:14, 15.
+sources:
+- it-eliud
+- mateo-1
+links:
+- title: 'Perspicacia: «Eliud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001322
+  type: perspicacia
+relations:
+- type: kin
+  person: aquim
+  word: father
+  inferred: false
+  sources:
+  - mateo-1
+  reason: Mt 1:14.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

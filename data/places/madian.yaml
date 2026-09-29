@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: madian
+name: Madián
+names:
+- name: Madián
+- name: Tierra de Madián
+  note: Así la llaman 1Re 11:18 y Hab 3:7.
+type: region
+lat: 28.4947
+lon: 35.0122
+precision: zone
+coord_source: openbible:acc6d8e
+coord_url: https://www.openbible.info/geo/ancient/acc6d8e/midian
+coord_note: Punto representativo de OpenBible, al este del golfo de Aqaba; la extensión de la región no se conoce. No sitúa
+  a los madianitas de Nú 22-31, que vivían junto a Moab.
+summary: Tierra de los madianitas, hijos de Madián, hijo de Abrahán; se cree que sobre todo al este del golfo de Aqaba. Allí
+  Moisés pasó unos cuarenta años y se casó con Ziporá. Parece que muchos vivían entonces junto a Moab.
+reason: 'Perspicacia «Madián, madianitas», núm. 3, párr. 13 y 14: su extensión no se sabe, y en vida de Moisés muchos habitaban
+  cerca de Moab y del reino de Sehón (Nú 22:4; 31:8-12). Éx 2:15-21. OpenBible: solo el punto.'
+sources:
+- it-madian
+- exodo-2
+- openbible-geo
+- exodo-4
+- exodo-18
+- hechos-7
+- numeros-25
+- numeros-31
+- habacuc-3
+links:
+- title: 'Perspicacia: «Madián, madianitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
+  type: perspicacia
+- title: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  type: bible
+history:
+- date: '2026-09-29'
+  source: numeros-31
+  change: Añade que en vida de Moisés muchos madianitas vivían junto a Moab y al reino de Sehón (Nú 31:8-12; Perspicacia «Madián,
+    madianitas», núm. 3).
+- date: '2026-09-29'
+  source: numeros-31
+  change: Cita el párrafo de Perspicacia que sitúa a los madianitas de Números junto a Moab y Sehón.
+- date: '2026-09-29'
+  source: numeros-31
+  change: Aclara que el punto de Aqaba no representa a los madianitas de Números 22-31.
+- date: '2026-09-29'
+  source: it-madian
+  change: Devuelve al resumen las cautelas de Perspicacia, que da la zona de Aqaba como lo que se cree y a los madianitas de
+    junto a Moab como lo que parece.
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-hijo-de-azor
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#7
+disambiguation: Sadoc hijo de Azor; no el sacerdote de David ni los demás Sadoc que numera Perspicacia.
+summary: Antepasado de José, el esposo de María, después del destierro. Mateo lo pone como hijo de Azor y padre de Aquim.
+reason: Perspicacia «Sadoc», núm. 7; Mt 1:14.
+sources:
+- it-sadoc
+- mateo-1
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004652
+  type: perspicacia
+relations:
+- type: kin
+  person: azor
+  word: father
+  inferred: false
+  sources:
+  - mateo-1
+  reason: Mt 1:14.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

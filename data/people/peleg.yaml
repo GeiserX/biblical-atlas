@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: peleg
+name: Péleg
+names:
+- name: Péleg
+perspicacia: '1200003421'
+date:
+  from: -2268
+  to: -2029
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 2269-2030 a.e.c.
+summary: Hijo de Éber y padre de Reú, antepasado de Abrahán y de Jesús. Su nombre significa «división», porque en sus días
+  se dividió la población de la tierra. Vivió 239 años.
+reason: Perspicacia «Péleg»; Gé 10:25, con sus notas, y 11:16-19.
+sources:
+- it-peleg
+- genesis-10
+- genesis-11
+- lucas-3
+links:
+- title: 'Perspicacia: «Péleg»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003421
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: eber-hijo-de-sela
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  - genesis-11
+  - lucas-3
+  reason: 'Gé 10:25: Péleg fue el primero de los dos hijos de Éber; Gé 11:16, a los 34 años.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: joctan
+  word: brother
+  inferred: false
+  sources:
+  - genesis-10
+  reason: 'Gé 10:25: su hermano se llamaba Joctán.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

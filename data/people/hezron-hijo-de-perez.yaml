@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezron-hijo-de-perez
+name: Hezrón
+names:
+- name: Hezrón
+perspicacia: 1200002015#2
+disambiguation: Hezrón hijo de Pérez, de Judá; no el hijo de Rubén ni la ciudad de la frontera sur de Judá.
+summary: Hijo de Pérez y cabeza de los hezronitas de Judá. Entró en Egipto con la familia de Jacob. Fue padre de Ram y antepasado
+  de David y de Jesús.
+reason: Perspicacia «Hezrón», núm. 2; Rut 4:18, 19.
+sources:
+- it-hezron
+- rut-4
+- mateo-1
+- genesis-46
+- lucas-3
+- numeros-26
+links:
+- title: 'Perspicacia: «Hezrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002015
+  type: perspicacia
+relations:
+- type: kin
+  person: perez
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - genesis-46
+  - lucas-3
+  - numeros-26
+  reason: Rut 4:18.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  - it-hezron
+  reason: 'Gé 46:12, 26, 27; Perspicacia «Hezrón», núm. 2: está entre las setenta almas y debió de morir en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

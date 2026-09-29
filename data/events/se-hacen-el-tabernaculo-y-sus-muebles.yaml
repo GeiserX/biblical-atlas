@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-hacen-el-tabernaculo-y-sus-muebles
+title: Bezalel y los artesanos hacen el tabernáculo y sus muebles
+date:
+  from: -1512
+  to: -1511
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+narrative_order:
+  series: exodo
+  order: 36008
+places:
+- desierto-de-sinai
+people:
+- bezalel-hijo-de-uri
+- oholiab
+passages:
+- Éx 36:8-38
+- Éx 37:1-29
+- Éx 38:1-20
+summary: Con los artesanos, Bezalel hace las telas y cubiertas, los armazones, las barras y las cortinas del tabernáculo;
+  luego el Arca, la mesa, el candelabro, los dos altares, la fuente y el patio con sus columnas.
+reason: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. La nota de Éx 36:8 señala a Bezalel.
+sources:
+- exodo-36
+- exodo-37
+- exodo-38
+- si-3
+- it-bezalel
+- it-tabernaculo
+links:
+- title: Éxodo 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/36
+  type: bible
+checked_on: '2026-09-29'
+status: verified

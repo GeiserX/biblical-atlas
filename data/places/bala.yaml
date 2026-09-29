@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bala
+name: Balá
+names:
+- name: Balá
+- name: Baalá
+  note: Perspicacia remite Balá a Baalá, núm. 3, la ciudad de Jos 15:29.
+- name: Bilhá
+  note: Así la llama 1Cr 4:29.
+type: city
+lat: 31.142053
+lon: 34.91217
+precision: uncertain
+coord_source: openbible:a8ac29f
+coord_url: https://www.openbible.info/geo/ancient/a8ac29f/balah
+coord_note: Punto de OpenBible en Tulul el-Medbah. Perspicacia no sabe dónde estaba; solo que debía de estar al SE de Beer-Seba.
+summary: Ciudad del Négueb de Judá que después se dio a Simeón. Probablemente es la Baalá de Jos 15:29 y la Bilhá de 1 Crónicas.
+  Estaría al sureste de Beer-Seba.
+reason: 'Perspicacia «Balá» y «Baalá», núm. 3; Jos 15:29; 19:3; 1Cr 4:29. OpenBible: solo el punto.'
+sources:
+- it-bala
+- it-baala
+- openbible-geo
+- josue-19
+- josue-15
+links:
+- title: 'Perspicacia: «Balá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000545
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 'Perspicacia: «Baalá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000506
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

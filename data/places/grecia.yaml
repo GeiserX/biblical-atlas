@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: grecia
+name: Grecia
+names:
+- name: Grecia
+- name: Hélade
+  note: Forma del griego Hel·lás, el nombre que usa Hch 20:2 (Perspicacia «Grecia, griegos»).
+- name: Javán
+  note: Nombre hebreo de la tierra y su gente, por Javán, nieto de Noé. En Joe 3:6 el hebreo dice «hijos de los javanitas»,
+    que la TNM vierte «griegos».
+type: region
+lat: 37.971851
+lon: 23.726738
+precision: zone
+coord_source: openbible:a4492a0
+coord_url: https://www.openbible.info/geo/ancient/a4492a0/greece
+coord_note: Punto representativo de OpenBible para Grecia, situado en Atenas; no marca una ciudad.
+summary: Tierra del sur de la península balcánica y de sus islas. Pablo llegó desde Macedonia, pasó allí tres meses y volvió
+  por tierra al enterarse de un complot.
+reason: 'Perspicacia «Grecia, griegos», párr. 2, 4 y 5: la Hélade de Hch 20:2, tierra de los hijos de Javán; desde 146 a.e.c.
+  su centro y sur se llamaron Acaya. Joe 3:4-6 la nombra por primera vez. OpenBible: solo el punto.'
+sources:
+- it-grecia
+- hch-20
+- openbible-geo
+- joel-3
+links:
+- title: 'Perspicacia: «Grecia, griegos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001765
+  type: perspicacia
+- title: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  type: bible
+- title: Joel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

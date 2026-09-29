@@ -1,0 +1,26 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: nicodemo
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwb-108_1_VIDEO"
+    title: "JW Broadcasting: Noviembre de 2023 (reunión anual del 2023, parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_1_VIDEO&appLanguage=S"
+    published: "2023-11-06"
+    hits: 6
+    terms:
+      "Nicodemo": 6
+  - docid: "pub-jwb-108_7_VIDEO"
+    title: "Mark Sanderson: Hacer discípulos: una obra de amor"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_7_VIDEO&appLanguage=S"
+    published: "2023-11-07"
+    hits: 6
+    terms:
+      "Nicodemo": 6
+  - docid: "pub-jwbcov25_22_VIDEO"
+    title: "Asamblea del 2025 “Adoración pura”: ¿Qué hemos aprendido?"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_22_VIDEO&appLanguage=S"
+    published: "2026-01-19"
+    hits: 2
+    terms:
+      "Nicodemo": 2

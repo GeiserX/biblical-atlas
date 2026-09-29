@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uz-hijo-de-disan
+name: Uz
+names:
+- name: Uz
+perspicacia: 1200004527#3
+disambiguation: Uz hijo de Disán; no Uz hijo de Aram ni Uz hijo de Nacor.
+summary: Descendiente de Seír el horeo por su padre, Disán.
+reason: Perspicacia «Uz», núm. 3; Gé 36:28.
+sources:
+- it-uz
+- genesis-36
+links:
+- title: 'Perspicacia: «Uz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004527
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: disan
+  word: father
+  inferred: false
+  sources:
+  - it-uz
+  - genesis-36
+  reason: 'Gé 36:28: hijo de Disán.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

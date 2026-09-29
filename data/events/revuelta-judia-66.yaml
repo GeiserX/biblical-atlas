@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: revuelta-judia-66
+title: Sublevación judía y retirada de Cestio Galo
+date:
+  from: 66
+  to: 66
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 66 e.c.
+places:
+- jerusalen
+people: []
+passages:
+- Lu 21:20-22
+- Mt 24:15, 16
+- Mr 13:14
+summary: Estalla la revuelta judía. Las tropas de Cestio Galo rodean Jerusalén y de pronto se retiran; los cristianos aprovechan
+  para huir, como Jesús había dicho.
+reason: Perspicacia «Jerusalén» cuenta la retirada de Cestio Galo en 66 e.c. y «César» fecha ese año el comienzo de la revuelta.
+sources:
+- it-jerusalen
+- it-cesar
+- mateo-24
+- marcos-13
+- lucas-21
+search: Cestio Galo 66
+checked_on: '2026-09-29'
+status: verified

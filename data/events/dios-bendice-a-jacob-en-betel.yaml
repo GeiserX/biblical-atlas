@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dios-bendice-a-jacob-en-betel
+title: Dios bendice a Jacob en Betel y confirma su nombre de Israel
+date:
+  from: -1760
+  to: -1750
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+narrative_order:
+  series: genesis
+  order: 35009
+places:
+- betel
+people:
+- jacob
+passages:
+- Gé 35:9-15
+summary: Dios se aparece de nuevo a Jacob, le confirma el nombre de Israel y le repite la promesa hecha a Abrahán e Isaac.
+  Jacob levanta una columna de piedra y derrama sobre ella una libación.
+reason: Jacob vuelve a Canaán en 1761 (estudio 3); Benjamín tenía de 40 a 50 años al morir Jacob en 1711 (Perspicacia «Benjamín»).
+sources:
+- si-3
+- it-benjamin
+- it-jacob
+- genesis-35
+links:
+- title: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  type: bible
+checked_on: '2026-09-29'
+status: verified

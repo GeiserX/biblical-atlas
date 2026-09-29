@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: otniel
+name: Otniel
+names:
+- name: Otniel
+summary: Sobrino de Caleb, hijo de su hermano Quenaz. Tomó Debir y recibió por esposa a Acsá, la hija de Caleb. Primer juez
+  que la Biblia nombra después de Josué, libró a Israel de Cusán-Risataim.
+reason: Perspicacia «Otniel», párr. 2 a 4; Jos 15:16-19 y Jue 3:8-11.
+sources:
+- it-otniel
+- jueces-3
+- josue-15
+- jueces-1
+links:
+- title: 'Perspicacia: «Otniel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
+  type: perspicacia
+- title: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  type: bible
+relations:
+- type: kin
+  person: caleb-hijo-de-jefune
+  word: uncle
+  inferred: true
+  sources:
+  - it-otniel
+  - jueces-3
+  - josue-15
+  - jueces-1
+  reason: 'Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: quenaz-padre-de-otniel
+  word: father
+  inferred: false
+  sources:
+  - josue-15
+  - it-quenaz
+  - jueces-1
+  - jueces-3
+  reason: 'Jos 15:17: Otniel hijo de Quenaz.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: acsa
+  word: wife
+  inferred: false
+  sources:
+  - josue-15
+  - it-acsa
+  - jueces-1
+  reason: 'Jos 15:17: Caleb le da a su hija Acsá por esposa.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003349'
+history:
+- date: '2026-09-29'
+  change: 'El parentesco de tío con Caleb pasa a deducido: Jos 15:17 admite dos lecturas y es Perspicacia «Otniel» la que
+    lo hace sobrino.'
+  source: josue-15
+- date: '2026-09-29'
+  change: Cusán-risataim pasa a Cusán-Risataim, la grafía de la TNM en Jue 3:8, 10.
+  source: jueces-3
+checked_on: '2026-09-29'
+status: verified

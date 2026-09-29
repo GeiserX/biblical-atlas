@@ -1,0 +1,56 @@
+# Nombres de lugares del carril «reyes» que busca scripts/videos/index.py en los subtítulos.
+# Mismo formato que nombres/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español
+# (wol.jw.org, 1 Samuel a 2 Reyes, Jeremías y Amós), consultada el 28 de septiembre de 2026.
+# jerusalen ya está en nombres/pablo.yaml; Jebús y Salem (sus nombres antiguos) se proponen en el informe del carril.
+
+samaria:
+  names: [Samaria]
+ninive:
+  names: [Nínive]
+  demonyms: [ninivitas]
+siquem:
+  names: [Siquem]
+betel:
+  names: [Betel]
+# «Dan» suelto es también la tribu, el hijo de Jacob y el verbo al principio de frase: solo la forma calificada.
+dan:
+  names: [ciudad de Dan]
+tirza:
+  names: [Tirzá]
+jezreel:
+  names: [Jezreel]
+  exclude: [valle de Jezreel, llanura de Jezreel]
+hebron:
+  names: [Hebrón]
+lakis:
+  names: [Lakís, Laquis]
+carquemis:
+  names: [Carquemis]
+meguido:
+  names: [Meguidó]
+ribla:
+  names: [Riblá]
+# «Carmelo» suelto es también un nombre de pila y la ciudad de Judá de 1 Samuel 25.
+monte-carmelo:
+  names: [monte Carmelo]
+anatot:
+  names: [Anatot]
+tecoa:
+  names: [Tecoa]
+guibea-de-benjamin:
+  names: [Guibeá]
+gabaon:
+  names: [Gabaón]
+  demonyms: [gabaonitas]
+monte-guilboa:
+  names: [monte Guilboa, Guilboa]
+gat-hefer:
+  names: [Gat-Héfer]
+abel-mehola:
+  names: [Abel-Meholá]
+# Hay varias Mizpá en la Biblia (Galaad, Benjamín, Judá) y en los subtítulos no se puede saber cuál se nombra.
+mizpa-de-benjamin:
+  names: []
+# «Judá» suelto es también el hijo de Jacob y la tribu; Judea tiene su id en nombres/pablo.yaml.
+juda:
+  names: [reino de Judá, tierra de Judá]

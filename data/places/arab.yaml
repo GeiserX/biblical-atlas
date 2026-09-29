@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arab
+name: Arab
+names:
+- name: Arab
+type: city
+lat: 31.43188
+lon: 35.02957
+precision: point
+coord_source: openbible:adbc03e
+coord_url: https://www.openbible.info/geo/ancient/adbc03e/arab
+summary: Ciudad de la montaña de Judá, en Khirbet er-Rabiyeh, entre Dumá y Carmelo, unos 12 km al suroeste de Hebrón. De allí
+  era probablemente el arbita que figura entre los valientes de David.
+reason: 'Perspicacia «Arab»; Jos 15:52; 2Sa 23:35. OpenBible: solo el punto.'
+sources:
+- it-arab
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Arab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000323
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

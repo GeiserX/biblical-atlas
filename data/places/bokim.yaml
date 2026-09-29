@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bokim
+name: Bokim
+names:
+- name: Bokim
+  note: Significa «llorones», según la nota de Jue 2:5.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al oeste de Guilgal
+  geometry:
+    type: zone
+    lat: 31.881883
+    lon: 35.30129
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-bokim
+  - jueces-2
+  reason: Perspicacia deduce de «subió de Guilgal a Bokim» que quizá estaba al oeste de Guilgal, en las alturas sobre el valle
+    del Jordán.
+  note: 'Centro: 15 km al oeste del punto de guilgal (31,8819; 35,4600), con un radio de 15 km. Cálculo nuestro.'
+  coord_source: calculation
+summary: Lugar donde el ángel de Jehová reprendió a Israel por pactar con los pueblos de la tierra. El pueblo lloró y ofreció
+  sacrificios, y de ahí su nombre. No se sabe dónde estaba.
+reason: 'Perspicacia «Bokim»; Jue 2:1-5 y su nota. Sin punto: una zona al oeste de Guilgal.'
+sources:
+- it-bokim
+- it-guilgal
+- jueces-2
+links:
+- title: 'Perspicacia: «Bokim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000782
+  type: perspicacia
+- title: Jueces 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

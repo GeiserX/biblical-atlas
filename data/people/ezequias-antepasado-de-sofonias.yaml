@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezequias-antepasado-de-sofonias
+name: Ezequías
+names:
+- name: Ezequías
+perspicacia: 1200002011#2
+disambiguation: El antepasado de Sofonías. Perspicacia lo registra aparte del rey Ezequías (ezequias), aunque cree que quizá
+  sean el mismo hombre.
+not_claimed:
+- 'No damos por hecho que sea el rey Ezequías: Perspicacia y «Toda Escritura» solo lo presentan como posible o probable.'
+summary: Padre de Amarías y tatarabuelo del profeta Sofonías. Perspicacia dice que quizá sea el rey Ezequías de Judá, y «Toda
+  Escritura» lo da como probable.
+reason: Perspicacia «Ezequías», núm. 2, «Amarías», núm. 6, y «Sofonías», núm. 2; «Toda Escritura», libro 36, párr. 1; Sof 1:1.
+sources:
+- it-ezequias
+- it-amarias
+- it-sofonias
+- si-sofonias
+- sofonias-1
+links:
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+- title: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  type: bible
+relations:
+- type: same_as
+  person: ezequias
+  inferred: true
+  sources:
+  - sofonias-1
+  - it-ezequias
+  - it-amarias
+  - it-sofonias
+  - si-sofonias
+  reason: Perspicacia dice «quizás» y «probablemente» el rey Ezequías; «Toda Escritura», que Sofonías probablemente descendía
+    de él. Sof 1:1 no lo llama rey.
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

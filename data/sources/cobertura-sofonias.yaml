@@ -1,0 +1,50 @@
+# biblical-earth: fuentes de la cobertura de sofonias. Esquema en docs/investigacion/README.md.
+it-sofonias-libro:
+  title: Sofonías, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004697
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+si-sofonias:
+  title: 'Libro bíblico número 36: Sofonías'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990097
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-cusi:
+  title: Cusí
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001092
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-amarias:
+  title: Amarías
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000219
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-mactes:
+  title: Mactés
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002859
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-malcam:
+  title: Malcam
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002862
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-keretitas:
+  title: Keretitas
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000943
+  level: 1
+  published: null
+  checked_on: '2026-09-29'

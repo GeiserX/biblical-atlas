@@ -1,0 +1,351 @@
+# biblical-earth: fuentes del carril «patriarcas» (de Adán a los jueces). Esquema en docs/investigacion/README.md.
+it-eva:
+  title: Eva
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001450
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-cain:
+  title: Caín
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000857
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-abel:
+  title: Abel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000018
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-set:
+  title: Set
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003911
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-enoc:
+  title: Enoc
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001371
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-matusalen:
+  title: Matusalén
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003022
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-lamec:
+  title: Lamec
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002673
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-noe:
+  title: Noé
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003266
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-sem:
+  title: Sem
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003997
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-cam:
+  title: Cam
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001832
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-jafet:
+  title: Jafet
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002323
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-nemrod:
+  title: Nemrod
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003259
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-tare:
+  title: Taré
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004368
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-abrahan:
+  title: Abrahán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-sara:
+  title: Sara
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003837
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-agar:
+  title: Agar
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001811
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-ismael:
+  title: Ismael
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002215
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-lot:
+  title: Lot
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002776
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-melquisedec:
+  title: Melquisedec
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002970
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-isaac:
+  title: Isaac
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-rebeca:
+  title: Rebeca
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003658
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-esau:
+  title: Esaú
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001417
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-jacob:
+  title: Jacob
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-lea:
+  title: Lea
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002702
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-raquel:
+  title: Raquel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003621
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-ruben:
+  title: Rubén
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003713
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-levi:
+  title: Leví
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002727
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-neftali:
+  title: Neftalí
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003180
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-gad:
+  title: Gad
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001583
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-aser:
+  title: Aser
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000414
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-isacar:
+  title: Isacar
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002230
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-zabulon:
+  title: Zabulón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004679
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-benjamin:
+  title: Benjamín
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000640
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-dina:
+  title: Dina
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001182
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-moises:
+  title: Moisés
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-aaron:
+  title: Aarón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-miriam:
+  title: Míriam
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003074
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-caleb:
+  title: Caleb
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000863
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-otniel:
+  title: Otniel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-ehud:
+  title: Ehúd
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001268
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-debora:
+  title: Débora
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001138
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-barac:
+  title: Barac
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000559
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-gedeon:
+  title: Gedeón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-jefte:
+  title: Jefté
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002413
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-sanson:
+  title: Sansón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-eli:
+  title: Elí, I
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001290
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-beer-seba:
+  title: Beer-seba
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000615
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-silo:
+  title: Siló
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004039
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-nebo:
+  title: Nebo
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003199
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-madian:
+  title: Madián, madianitas
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
+  level: 1
+  published: null
+  checked_on: '2026-09-28'

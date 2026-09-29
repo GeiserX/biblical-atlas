@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: daberat
+name: Daberat
+names:
+- name: Daberat
+- name: Rabit
+  note: Nombre de Jos 19:20 en el texto masorético; Perspicacia cree que es Daberat, como lee el Manuscrito Vaticano 1209.
+type: city
+lat: 32.697284
+lon: 35.377531
+precision: point
+coord_source: openbible:a6a5e97
+coord_url: https://www.openbible.info/geo/ancient/a6a5e97/daberath
+coord_note: Punto de OpenBible en Khirbet Dabura (Horvat Devora).
+summary: Ciudad nombrada en la frontera de Zabulón y contada como de Isacar al darse a los guersonitas; probablemente la Rabit
+  de Jos 19:20. Está junto al extremo noroeste del monte Tabor.
+reason: 'Perspicacia «Daberat» y «Rabit»; Jos 19:12, 20; 21:28; 1Cr 6:72. OpenBible: solo el punto.'
+sources:
+- it-daberat
+- openbible-geo
+- josue-19
+- josue-21
+- it-rabit
+links:
+- title: 'Perspicacia: «Daberat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001104
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+- title: 'Perspicacia: «Rabit»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003614
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

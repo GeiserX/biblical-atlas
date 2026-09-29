@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gedeon
+name: Gedeón
+names:
+- name: Gedeón
+- name: Jerubaal
+  note: Nombre que le dio su padre Joás cuando derribó el altar de Baal (Jue 6:32).
+summary: Juez de la tribu de Manasés, hijo de Joás, que vivía en Ofrá. Derribó el altar de Baal de su padre y con pocos
+  hombres libró a Israel de Madián. Hubo paz los cuarenta años que juzgó.
+reason: Perspicacia «Gedeón», párr. 2, 5, 6 y 16; Jue 6:11 a 8:28.
+sources:
+- it-gedeon
+- jueces-6
+- jueces-7
+- jueces-8
+links:
+- title: 'Perspicacia: «Gedeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
+  type: perspicacia
+- title: Jueces 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  type: bible
+perspicacia: '1200001685'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: joas-padre-de-gedeon
+  word: father
+  inferred: false
+  sources:
+  - jueces-6
+  - it-gedeon
+  - jueces-8
+  reason: 'Jue 6:11, 29, 30: Gedeón es hijo de Joás el abí-ezrita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abi-ezer-hijo-de-galaad
+  word: ancestor
+  inferred: false
+  sources:
+  - jueces-6
+  - it-abi-ezer
+  reason: 'Jue 6:11, 34: su padre era abí-ezrita y los abí-ezritas lo siguen. Perspicacia «Abí-ézer», núm. 1, lo da como antepasado
+    de Gedeón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ofra-de-gedeon
+  inferred: false
+  sources:
+  - jueces-6
+  - it-gedeon
+  - it-ofra
+  - jueces-8
+  reason: 'Jue 6:11, 27: el ángel lo encuentra trillando en Ofrá, en tierra de su padre, y teme a los hombres de la ciudad.
+    Perspicacia «Gedeón», párr. 1.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: ofra-de-gedeon
+  inferred: true
+  sources:
+  - it-ofra
+  - jueces-8
+  reason: Perspicacia «Ofrá», núm. 3, habla de su muerte y entierro en Ofrá; Jue 8:32 da solo la tumba de Joás allí.
+  checked_on: '2026-09-29'
+  status: verified

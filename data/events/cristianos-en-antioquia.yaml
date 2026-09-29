@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cristianos-en-antioquia
+title: Bernabé trae a Saulo a Antioquía, donde nace el nombre «cristianos»
+date:
+  from: 36
+  to: 46
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'antes de c. 46 e.c.: un año entero en Antioquía (Hch 11:26)'
+narrative_order:
+  series: hechos
+  order: 1125
+places:
+- antioquia-de-siria
+- tarso
+people:
+- pablo
+- bernabe
+passages:
+- Hch 11:25, 26
+summary: Bernabé va a Tarso a buscar a Saulo y trabajan un año en Antioquía de Siria. Allí, por guía divina, a los
+  discípulos se les llama cristianos por primera vez.
+reason: Perspicacia «Pablo» (párr. 10) y «Siria» (sobre Hch 11:19-26). El año de trabajo termina hacia 46, cuando
+  llevan el socorro.
+sources:
+- it-pablo
+- it-bernabe
+- it-siria
+- hechos-11
+search: discípulos llamados cristianos Antioquía
+history:
+- date: '2026-09-29'
+  change: 'Antioquía pasa a ser el primer lugar: allí trabajan un año y nace el nombre de cristianos; Tarso solo es donde
+    Bernabé busca a Saulo (Hch 11:25, 26).'
+  source: hechos-11
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,78 @@
+# biblical-earth: fuentes del carril «marco» (eras, potencias, emperadores, libros y calendario). Esquema en docs/investigacion/README.md.
+tnm-b9:
+  title: B9 Las potencias mundiales predichas por Daniel
+  work: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070229
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+tnm-b15:
+  title: B15 El calendario hebreo
+  work: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070237
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-asiria:
+  title: Asiria
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000447
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-grecia:
+  title: Grecia, griegos
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001765
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-alejandro:
+  title: Alejandro
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-partos:
+  title: Partos
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003390
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-fiesta-dedicacion:
+  title: Fiesta de la dedicación
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001506
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+it-bestias-simbolicas:
+  title: Bestias simbólicas
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000591
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+lbt-imperios:
+  title: Imperios que atacaron la Tierra Prometida
+  work: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003106
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+lbt-grecia-y-roma:
+  title: La influencia de Grecia y Roma en el pueblo judío
+  work: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003112
+  level: 1
+  published: null
+  checked_on: '2026-09-28'
+g10-egipto:
+  title: Un libro digno de confianza. Primera parte
+  work: ¡Despertad! (noviembre de 2010)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/102010407
+  level: 1
+  published: 2010
+  checked_on: '2026-09-28'

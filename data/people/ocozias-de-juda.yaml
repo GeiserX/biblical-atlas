@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ocozias-de-juda
+name: Ocozías
+names:
+- name: Ocozías
+- name: Jehoacaz
+  note: Variante de 2 Crónicas 21:17.
+- name: Azarías
+  note: 2 Crónicas 22:6.
+disambiguation: Rey de Judá, nieto de Jehosafat; su tío Ocozías, hijo de Acab, reinó antes en Israel.
+distinct_from:
+- ocozias-de-israel
+date:
+  from: -905
+  to: -904
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 906-905 a.e.c.
+summary: Hijo de Jehoram y Atalía. Reinó un año bajo la influencia de su madre. Visitaba a su tío Jehoram en Jezreel cuando
+  Jehú lo mandó matar.
+reason: Perspicacia «Ocozías», núm. 2; 2Re 8:25-29 y 9:21-28.
+sources:
+- it-ocozias
+- 2-reyes-9
+- 2-cronicas-22
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Ocozías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
+  type: perspicacia
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+relations:
+- type: kin
+  person: jehoram-de-juda
+  word: father
+  inferred: false
+  sources:
+  - it-ocozias
+  - 2-reyes-8
+  reason: Hijo de Jehoram y Atalía (2Re 8:25-26).
+  checked_on: '2026-09-28'
+  status: verified
+- type: kin
+  person: atalia
+  word: mother
+  inferred: false
+  sources:
+  - it-ocozias
+  - 2-reyes-8
+  reason: Su madre fue Atalía (2Re 8:26).
+  checked_on: '2026-09-28'
+  status: verified
+- type: succeeds
+  person: jehoram-de-juda
+  inferred: false
+  sources:
+  - it-ocozias
+  - 2-reyes-8
+  reason: Sucedió a su padre (2Re 8:24).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

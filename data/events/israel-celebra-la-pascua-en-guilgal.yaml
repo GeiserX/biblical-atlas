@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-celebra-la-pascua-en-guilgal
+title: Israel celebra la Pascua en Guilgal
+date:
+  from: -1472
+  to: -1472
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 1473 a.e.c.
+  detail:
+    month: nisan
+    day: 14
+narrative_order:
+  series: numeros
+  order: 205010
+places:
+- guilgal
+- llanuras-deserticas-de-jerico
+people: []
+passages:
+- Jos 5:10, 11
+summary: Ya circuncidados, los israelitas celebran la Pascua en su campamento de Guilgal, al caer la tarde del día 14. Al
+  día siguiente comen por primera vez pan sin levadura y grano tostado del país.
+reason: 'Jos 5:10 da el día 14 del mes, el primero, en que llegaron a Guilgal. Perspicacia «Pascua» la cuenta entre las registradas:
+  en Guilgal, en 1473 a.e.c., tras circuncidar a los varones.'
+sources:
+- josue-5
+- it-pascua
+- si-3
+links:
+- title: Josué 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/5
+  type: bible
+- title: 'Perspicacia: «Pascua»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003397
+  type: perspicacia
+search: Pascua Guilgal Josué 1473
+checked_on: '2026-09-29'
+status: verified

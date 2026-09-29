@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abimelec-de-tiempos-de-isaac
+name: Abimélec
+names:
+- name: Abimélec
+perspicacia: 1200000045#2
+disambiguation: El Abimélec de Guerar en tiempos de Isaac; quizá otro que el que trató con Abrahán. Abimélec pudo ser un título
+  de los reyes filisteos.
+distinct_from:
+- abimelec-de-tiempos-de-abrahan
+- abimelec-hijo-de-gedeon
+summary: Rey filisteo de Guerar cuando Isaac se instaló allí por el hambre. Protegió a Isaac y a Rebeca, luego le pidió que
+  se fuera y al final pactó la paz con él en Beer-Seba.
+reason: Perspicacia «Abimélec», núm. 2; Gé 26:1-31.
+sources:
+- it-abimelec
+- genesis-26
+links:
+- title: 'Perspicacia: «Abimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000045
+  type: perspicacia
+- title: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  type: bible
+relations:
+- type: lived_in
+  place: guerar
+  inferred: false
+  sources:
+  - it-abimelec
+  - genesis-26
+  reason: 'Gé 26:1, 26: rey de los filisteos en Guerar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: ahuzat
+  word: adviser
+  inferred: false
+  sources:
+  - it-ahuzat
+  - genesis-26
+  reason: 'Gé 26:26: Ahuzat, su consejero personal, fue con él desde Guerar a ver a Isaac.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

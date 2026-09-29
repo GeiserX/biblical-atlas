@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guedor-de-juda
+name: Guedor
+names:
+- name: Guedor
+type: city
+lat: 31.632629
+lon: 35.092145
+precision: point
+coord_source: openbible:af054ba
+coord_url: https://www.openbible.info/geo/ancient/af054ba/gedor-1
+summary: Población de la montaña de Judá, en Khirbet Jedur, unos 12 km al norte de Hebrón. Quizá su fundador o «padre» fue
+  Jéred (1Cr 4:18).
+reason: 'Perspicacia «Guedor», núm. 4; Jos 15:58. OpenBible: solo el punto.'
+sources:
+- it-guedor
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Guedor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001639
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

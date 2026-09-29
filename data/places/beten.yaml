@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beten
+name: Beten
+names:
+- name: Beten
+type: city
+lat: 32.764076
+lon: 35.10658
+precision: point
+coord_source: openbible:aafc721
+coord_url: https://www.openbible.info/geo/ancient/aafc721/beten
+coord_note: Punto de OpenBible en Khirbet Ibtin.
+summary: Ciudad de la frontera de Aser que solo nombra Jos 19:25. Se suele identificar con Khirbet Ibtin, en el extremo sur
+  de la llanura de Akkó.
+reason: 'Perspicacia «Beten»; Jos 19:25. OpenBible: solo el punto.'
+sources:
+- it-beten
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Beten»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000666
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified
