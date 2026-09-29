@@ -1634,6 +1634,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | openbible-geo | [Bible Geocoding Data](https://github.com/openbibleinfo/Bible-Geocoding-Data) | OpenBible.info (CC BY 4.0) | 2 | sin dato | 2026-09-27 |
 | oseas-1 | [Oseas 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-1 | [Proverbios 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| proverbios-10 | [Proverbios 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-25 | [Proverbios 25](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/25) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-30 | [Proverbios 30](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/30) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-31 | [Proverbios 31](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/31) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |

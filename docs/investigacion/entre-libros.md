@@ -105,7 +105,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para Eclesiastés, El Cantar de los Cantares y 1 Reyes
 
-- **Salomón.** Proverbios deja en `data/_propuestas/proverbios.json` un cambio a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios). Un cambio posterior a esos campos parte del texto que queda tras integrar Proverbios, no del de hoy.
+- **Salomón.** El cambio de Proverbios a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios) ya está integrado en `salomon.yaml`. Un cambio posterior a esos campos parte del texto actual, con su `antes`.
 
 ## Para Josué
 
