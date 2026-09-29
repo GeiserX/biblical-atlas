@@ -1,0 +1,684 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "filipenses",
+ "agente": "escritor-filipenses",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "hch-28",
+      "si-3",
+      "efesios-3",
+      "efesios-6",
+      "filipenses-1"
+     ],
+     "razon": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 49,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-timoteo",
+      "bt-15",
+      "hch-16",
+      "tnm-tabla",
+      "hch-17",
+      "hch-18",
+      "hch-19",
+      "hch-20",
+      "romanos-16",
+      "1-corintios-4",
+      "1-corintios-16",
+      "2-corintios-1",
+      "filipenses-1"
+     ],
+     "razon": "Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c. (con Pablo en su primer encierro)"
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-timoteo",
+      "filipenses-1"
+     ],
+     "razon": "Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el saludo de Filipenses, Colosenses y Filemón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "filipos",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "filipos",
+   "campo": "resumen",
+   "antes": "Ciudad principal de su distrito de Macedonia, en la vía Egnatia; Pablo fundó allí la congregación c. 50.",
+   "despues": "Colonia romana y ciudad principal de su distrito de Macedonia, en la vía Egnatia. Hacia el año 50 fue la primera ciudad europea donde predicó Pablo, que dejó allí una congregación que lo ayudó varias veces.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Añade que era colonia romana (nota de estudio de Flp 1:27; Perspicacia «Filipos»), la primera ciudad europea que oyó a Pablo, y la ayuda de su congregación.",
+    "fuente": "filipenses-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-queda-libre",
+   "campo": "pasajes",
+   "antes": [
+    "Flp 1:12-14",
+    "Flm 22"
+   ],
+   "despues": [
+    "Flp 1:19, 25, 26",
+    "Flp 2:24",
+    "Flm 22"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Flp 1:12-14 habla de cómo su encierro difunde las buenas noticias, no de la liberación. Entran Flp 1:19, 25, 26 y 2:24, donde Pablo confía en salir libre y volver a Filipos.",
+    "fuente": "filipenses-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-queda-libre",
+   "campo": "fuentes",
+   "valores": [
+    "it-filipenses",
+    "filipenses-1",
+    "filipenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-y-silas-azotados-y-encarcelados",
+   "campo": "pasajes",
+   "valores": [
+    "Flp 1:30"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "epafrodito",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001380"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafrodito",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "it-epafrodito",
+      "filipenses-2"
+     ],
+     "razon": "Perspicacia lo sitúa en la congregación de Filipos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 49,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-timoteo",
+      "bt-15",
+      "hch-16",
+      "tnm-tabla",
+      "hch-17",
+      "hch-18",
+      "hch-19",
+      "hch-20",
+      "romanos-16",
+      "1-corintios-4",
+      "1-corintios-16",
+      "2-corintios-1",
+      "filipenses-1",
+      "filipenses-2"
+     ],
+     "razon": "Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c. (con Pablo en su primer encierro)"
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-timoteo",
+      "filipenses-1",
+      "filipenses-2"
+     ],
+     "razon": "Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el saludo de Filipenses, Colosenses y Filemón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-3"
+     ],
+     "razon": "Flp 3:5: hebreo nacido de hebreos y de la nación de Israel.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-3"
+     ],
+     "razon": "Flp 3:5: de la nación de Israel, que desciende de Isaac.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-3"
+     ],
+     "razon": "Flp 3:5: se presenta como israelita de la tribu de Benjamín y hebreo hijo de hebreos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "saulo-persigue-a-la-congregacion",
+   "campo": "pasajes",
+   "valores": [
+    "Flp 3:6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "evodia",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001445"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "evodia",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Pablo le escribe dentro de la carta a la congregación de Filipos (Flp 4:2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaboradora",
+     "relacion_inversa": "colaborador",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4",
+      "it-evodia"
+     ],
+     "razon": "Flp 4:3: se esforzó con Pablo a favor de las buenas noticias. Perspicacia «Evodia» no dice dónde ni cuándo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sintique",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004283"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sintique",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Pablo le escribe dentro de la carta a la congregación de Filipos (Flp 4:2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaboradora",
+     "relacion_inversa": "colaborador",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4",
+      "it-sintique"
+     ],
+     "razon": "Flp 4:3: se esforzó con Pablo a favor de las buenas noticias. Perspicacia «Síntique» no dice dónde ni cuándo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafrodito",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafrodito",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Flp 4:18: entregó a Pablo lo que le mandaban los filipenses.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Flp 4:18: está con Pablo en Roma y le entrega el regalo de Filipos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Flp 4:22: le mandan saludos los santos de la casa de César.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tesalonica",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "filipos",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "roma",
+   "campo": "fuentes",
+   "valores": [
+    "filipenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "filipenses",
+   "campo": "personas",
+   "valores": [
+    "clemente"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "filipenses",
+   "campo": "fuentes",
+   "valores": [
+    "it-clemente"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "evodia",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "clemente",
+     "relacion": "colaboradora",
+     "relacion_inversa": "colaborador",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Flp 4:3: Evodia se esforzó por las buenas noticias junto a Pablo y también junto a Clemente.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sintique",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "clemente",
+     "relacion": "colaboradora",
+     "relacion_inversa": "colaborador",
+     "deducido": false,
+     "fuentes": [
+      "filipenses-4"
+     ],
+     "razon": "Flp 4:3: Síntique se esforzó por las buenas noticias junto a Pablo y también junto a Clemente.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "epafrodito",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "it-epafrodito",
+      "filipenses-2",
+      "filipenses-4"
+     ],
+     "razon": "Perspicacia lo sitúa en la congregación de Filipos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-epafrodito",
+      "filipenses-2",
+      "filipenses-4"
+     ],
+     "razon": "Está con Pablo en Roma y le sirve en nombre de los filipenses (Flp 2:25).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "deducido": false,
+     "fuentes": [
+      "it-epafrodito",
+      "filipenses-2",
+      "filipenses-4"
+     ],
+     "razon": "Perspicacia lo sitúa en la congregación de Filipos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-epafrodito",
+      "filipenses-2",
+      "filipenses-4"
+     ],
+     "razon": "Flp 2:25 lo llama colaborador y compañero de armas de Pablo; está con él en Roma y le sirve en nombre de los filipenses.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo pasa a decir colaborador en los dos sentidos, como lo llama Flp 2:25; el resto de la lista no cambia.",
+    "fuente": "filipenses-2"
+   }
+  }
+ ],
+ "preguntas": []
+}

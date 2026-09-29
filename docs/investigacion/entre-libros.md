@@ -247,10 +247,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Juan en Jerusalén (desde Gálatas).** `juan-apostol` lleva `vivio_en jerusalen`, c. 33-49, por Perspicacia «Juan», párr. 30, y Gál 2:9; no cita Hch 8:1. Hechos 8 puede añadir «hechos-8» a sus fuentes y ponerla en su tramo 1-3. Juan está en `concilio-de-jerusalen-49`, pero su ficha no cita Hechos 15.
 - **Pedro corregido en Antioquía (desde Gálatas).** `pablo-corrige-a-pedro-en-antioquia` es de c. 49, anclado en la nota de Gál 2:12, con `orden_relato` 1535 tras `la-carta-de-jerusalen-llega-a-antioquia`. Está entre Hch 15:35 y la separación de Pablo y Bernabé.
 
-## Para Filipenses
-
-- **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1; 2Co 11:22), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). Flp 3:5 solo añade su capítulo a las fuentes de esas relaciones, sin crear otras.
-
 ## Para 1 Corintios (si se relee) y 2 Timoteo
 
 - **El peligro de Asia.** 2 Corintios hizo de la tribulación de 2Co 1:8-11 un suceso propio, `pablo-en-peligro-de-muerte-en-asia`, y sacó «2Co 1:8» de `motin-de-efeso`: la nota de estudio solo ve posible que fuera el motín o las fieras de Éfeso. El tramo de 1Co 15:32 lo puede poner en `menciona`, sin añadirle el pasaje.
@@ -301,10 +297,18 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El mes del pacto de la Ley.** Gálatas corrigió el resumen de `pacto-de-la-ley`: los 430 años se cumplieron el día del éxodo, y el pacto llegó en el tercer mes (Éx 19:1). Éxodo 19 o 24 puede darle `fecha.detalle` con `mes: sivan`.
 - **Sara e Ismael en Gál 4.** El texto no los nombra, solo las notas: van en `menciona` y sus fichas no citan Gálatas 4. Isaac, Agar y Abrahán sí se nombran.
 
-## Para Colosenses, Filemón y Filipenses (desde Efesios)
+## Para Colosenses y Filemón (desde Efesios)
 
 - **El viaje de Tíquico.** Es un solo suceso, `pablo-envia-a-tiquico-a-efeso-y-colosas` (Ef 6:21, 22, c. 60-61), con `roma`, `efeso` y `colosas` en `lugares` y `tiquico`, `pablo` y `onesimo` en `personas`, por Perspicacia «Tíquico». Col 4:7-9 añade su pasaje con un `anadir` y pone el suceso en su tramo, sin crear otro. La relación `tiquico/acompana/pablo` de 60-61 ya cita Col 4:7 en su `razon`.
-- **El orden en Roma.** `pablo-escribe-efesios` lleva el número 2831 de la serie `hechos`, tras `pablo-predica-dos-anos-en-roma` (2830), y el viaje de Tíquico el 2834. Los sucesos de escribir Colosenses y Filemón, que salieron con Tíquico, usan el 2832 y el 2833; Filipenses va después del 2834, salvo que jw.org lo sitúe antes.
+- **El orden en Roma.** `pablo-escribe-efesios` lleva el número 2831 de la serie `hechos`, tras `pablo-predica-dos-anos-en-roma` (2830), y el viaje de Tíquico el 2834. Los sucesos de escribir Colosenses y Filemón, que salieron con Tíquico, usan el 2832 y el 2833. Filipenses tomó el 2835 (`epafrodito-lleva-a-pablo-el-regalo-de-filipos`), el 2839 (`pablo-escribe-filipenses`) y el 2840 (`pablo-envia-a-epafrodito-de-vuelta-a-filipos`).
+
+## Para Colosenses, Filemón, 1 Tesalonicenses, 1 Timoteo y Hebreos (desde Filipenses)
+
+- **Timoteo en Roma.** `timoteo/vivio_en/roma`, c. 60-61, deducida de la nota de Flp 1:1 y de Perspicacia «Timoteo», párr. 5, que lo pone en el saludo de Filipenses, Colosenses y Filemón, queda en la cola de Filipenses (`data/_propuestas/filipenses.json`); hasta la integración no está en la ficha. Col 1:1 y Flm 1 añaden su capítulo a sus fuentes con un `anadir`, sin crear otra.
+- **La ayuda de Filipos en Tesalónica.** Es `los-filipenses-envian-ayuda-a-pablo-en-tesalonica` (Flp 4:15, 16, c. 50, orden 1702 de la serie `hechos`). Si 1 Tesalonicenses habla de esa estancia (1Te 2:9), puede nombrarlo en `menciona`.
+- **Los azotes de Filipos.** «Flp 1:30» entra en `pablo-y-silas-azotados-y-encarcelados` por la cola de Filipenses (`data/_propuestas/filipenses.json`); hasta la integración no está en la ficha. La referencia marginal de ese versículo remite a Hch 16:22, 23 y a 1Te 2:2. 1Te 2:2 añade su pasaje a ese suceso con un `anadir`.
+- **Colaboradores de Pablo.** Cuando el texto llama a alguien colaborador de Pablo, su `acompana` lleva `relacion: colaborador` (o `colaboradora`) y `relacion_inversa: colaborador`: Epafrodito (Flp 2:25, con un `cambiar` en la cola), Evodia, Síntique y Clemente (Flp 4:3). Timoteo es la excepción: su `timoteo/acompana/pablo`, que tocan muchos libros a la vez, sigue sin `relacion`. «Como un hijo con su padre» (Flp 2:22) es una comparación, no parentesco. Ponerle `colaborador` (Ro 16:21) es un solo `cambiar` sobre la lista entera, y lo hace 1 Timoteo cuando ninguna otra cola abierta toque `timoteo`.
+- **Timoteo preso.** Perspicacia «Timoteo», párr. 5, dice que parece que estuvo preso en Roma entre Filipenses y Hebreos (Flp 2:19; Heb 13:23). Flp 2:19-23 solo cuenta que Pablo pensaba enviarlo a Filipos, sin suceso; Hebreos decide si su liberación es un suceso.
 
 ## Para Salmos (si se relee, desde Efesios)
 

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-epafrodito-de-vuelta-a-filipos
+titulo: Pablo devuelve a Epafrodito a Filipos con la carta
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2840
+lugares:
+- roma
+- filipos
+personas:
+- epafrodito
+- pablo
+presentes:
+- epafrodito
+- pablo
+pasajes:
+- Flp 2:25, 28-30
+resumen: Ya curado, Epafrodito echa de menos a los filipenses y sufre porque saben que enfermó. Pablo lo manda de vuelta sin
+  demora, con la carta, y les pide que lo acojan con alegría y lo estimen.
+razon: 'Perspicacia «Epafrodito»: Pablo lo envía en cuanto se recupera y le confía la carta. «Filipenses, Carta a los» y la
+  Tabla de los libros la fechan hacia 60 o 61; la nota de Flp 2:26 dice que así los tranquilizó.'
+fuentes:
+- filipenses-2
+- it-epafrodito
+- it-filipenses
+- tnm-tabla
+enlaces:
+- titulo: Filipenses 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Epafrodito»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001380
+  tipo: perspicacia
+buscar: Epafrodito vuelve a Filipos carta
+consultado: '2026-09-29'
+estado: verificado

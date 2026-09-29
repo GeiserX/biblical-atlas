@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: epafrodito-lleva-a-pablo-el-regalo-de-filipos
+titulo: Epafrodito lleva a Roma la ayuda de Filipos y enferma de gravedad
+fecha:
+  desde: 59
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 59-61 e.c. (primer encierro en Roma)
+orden_relato:
+  serie: hechos
+  orden: 2835
+lugares:
+- roma
+- filipos
+personas:
+- epafrodito
+- pablo
+presentes:
+- epafrodito
+- pablo
+pasajes:
+- Flp 2:25-27, 30
+- Flp 4:10, 14, 18
+resumen: La congregación de Filipos manda a Epafrodito con un regalo para Pablo, preso en Roma. Allí lo atiende, arriesga
+  la vida y cae tan enfermo que casi muere, pero Dios se compadece y sana.
+razon: 'Perspicacia «Epafrodito»: lo envían durante el primer encierro en Roma (c. 59-61) y enferma allí; «Filipenses, Carta
+  a los» dice que Filipos quedaba a unos 1.000 km. La nota de Flp 2:30 cree posible que el viaje lo enfermara.'
+fuentes:
+- filipenses-2
+- it-epafrodito
+- it-filipenses
+- filipenses-4
+enlaces:
+- titulo: Filipenses 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Epafrodito»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001380
+  tipo: perspicacia
+- titulo: Filipenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4
+  tipo: biblia
+buscar: Epafrodito regalo Pablo Roma enfermo
+consultado: '2026-09-29'
+estado: verificado

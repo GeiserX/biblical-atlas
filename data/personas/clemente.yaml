@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: clemente
+nombre: Clemente
+nombres:
+- nombre: Clemente
+perspicacia: '1200000991'
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c. (fecha de Filipenses)
+no_afirmamos:
+- 'Que sea Clemente de Roma: Perspicacia dice que el nombre era corriente y que no hay motivo para unirlos, como hizo Orígenes.'
+resumen: Cristiano que luchó junto a Pablo por las buenas noticias, probablemente en Filipos. Pablo lo nombra con Evodia,
+  Síntique y sus demás colaboradores, inscritos en el libro de la vida.
+razon: Perspicacia «Clemente»; Flp 4:3. La fecha es la de Filipenses, hacia 60-61 según la Tabla de los libros.
+fuentes:
+- it-clemente
+- filipenses-4
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Clemente»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000991
+  tipo: perspicacia
+- titulo: Filipenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: pablo
+  relacion: colaborador
+  relacion_inversa: colaborador
+  deducido: false
+  fuentes:
+  - filipenses-4
+  - it-clemente
+  razon: Flp 4:3 lo cuenta entre los que lucharon con Pablo por las buenas noticias; Perspicacia «Clemente» cree que fue en
+    Filipos. No dice cuándo.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
