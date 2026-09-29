@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-deja-a-sus-padres-con-el-rey-de-moab
+title: David deja a sus padres con el rey de Moab
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+narrative_order:
+  series: 1-samuel
+  order: 22003
+places:
+- mizpe-de-moab
+- moab
+people:
+- david
+- jese
+passages:
+- 1Sa 22:3, 4
+summary: David va a Mizpé de Moab y pide al rey moabita que acoja a su padre y a su madre hasta saber qué hará Dios con él.
+  Se quedan allí mientras él sigue en el refugio.
+reason: 1Sa 22:3, 4; Perspicacia «Mizpá, Mizpé», núm. 5, y «Jesé». Mizpé de Moab no tiene punto seguro. Entre 1107 (nace David,
+  estudio 3) y 1078 a.e.c. (muere Saúl, Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-samuel-22
+- it-mizpa
+- it-jese
+- si-3
+- it-jonatan
+- it-david
+links:
+- title: 1 Samuel 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

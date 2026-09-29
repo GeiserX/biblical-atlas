@@ -40,3 +40,5 @@ relations:
   status: verified
 checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- paltiel-hijo-de-lais

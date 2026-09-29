@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: goliat
+name: Goliat
+names:
+- name: Goliat
+perspicacia: '1200001739'
+summary: Gigante de Gat, de unos 2,9 m, campeón del ejército filisteo. Durante 40 días retó a Israel en el valle de Elá, hasta
+  que David lo derribó con su honda y le cortó la cabeza.
+reason: Perspicacia «Goliat», párr. 1 a 3; 1Sa 17:4-11, 16, 49-51. Perspicacia lo cuenta entre los refaím (1Cr 20:5, 8).
+sources:
+- it-goliat
+- 1-samuel-17
+- 1-samuel-21
+links:
+- title: 'Perspicacia: «Goliat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001739
+  type: perspicacia
+- title: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  type: bible
+not_claimed:
+- 'Que el Goliat de 2Sa 21:19 sea otro hombre: Perspicacia recoge varias explicaciones de ese pasaje y no se queda con ninguna.'
+relations:
+- type: born_in
+  place: gat
+  inferred: true
+  sources:
+  - 1-samuel-17
+  - it-gat
+  reason: 1Sa 17:4, 23 lo llama el filisteo de Gat; Perspicacia «Gat», párr. 1, dice que nació allí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: valle-de-ela
+  inferred: false
+  sources:
+  - 1-samuel-17
+  - it-elah
+  - 1-samuel-21
+  reason: '1Sa 17:2, 49-51: David lo mata en el combate del valle de Elá; Perspicacia «Elah», núm. 6.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

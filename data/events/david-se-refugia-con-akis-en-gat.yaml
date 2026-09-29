@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-se-refugia-con-akis-en-gat
+title: David se refugia con Akís en Gat
+date:
+  from: -1079
+  to: -1077
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1080-1078 a.e.c.
+  note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
+    (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+narrative_order:
+  series: 1-samuel
+  order: 27001
+places:
+- gat
+- filistea
+people:
+- david
+- akis
+- ahinoam-esposa-de-david
+- abigail-esposa-de-david
+- saul
+present:
+- david
+- akis
+- ahinoam-esposa-de-david
+- abigail-esposa-de-david
+passages:
+- 1Sa 27:1-4
+summary: Seguro de que Saúl acabará con él, David pasa a tierra filistea con sus seiscientos hombres y sus familias y se queda
+  en Gat con el rey Akís. Al saberlo, Saúl deja de perseguirlo.
+reason: 'Perspicacia «Akís», párr. 2: segunda vez que David se refugia con él. Fecha: cuenta nuestra, dieciséis meses (1Sa
+  27:7) hasta la muerte de Saúl en 1078 (estudio 3; Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-27
+- it-akis
+- it-david
+- it-gat
+- si-3
+- it-jonatan
+links:
+- title: 1 Samuel 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/27
+  type: bible
+checked_on: '2026-09-29'
+status: pending

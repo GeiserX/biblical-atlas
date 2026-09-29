@@ -21,7 +21,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Josué](../../../data/coverage/josue.yaml) | 24 de 24 | 658 de 658 | 100 % |
 | [Jueces](../../../data/coverage/jueces.yaml) | 21 de 21 | 618 de 618 | 100 % |
 | [Rut](../../../data/coverage/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
-| 1 Samuel | 0 de 31 | 0 de 810 | 0 % |
+| [1 Samuel](../../../data/coverage/1-samuel.yaml) | 31 de 31 | 810 de 810 | 100 % |
 | 2 Samuel | 0 de 24 | 0 de 695 | 0 % |
 | 1 Reyes | 0 de 22 | 0 de 816 | 0 % |
 | 2 Reyes | 0 de 25 | 0 de 719 | 0 % |
@@ -49,7 +49,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Nahúm](../../../data/coverage/nahum.yaml) | 3 de 3 | 47 de 47 | 100 % |
 | [Habacuc](../../../data/coverage/habacuc.yaml) | 3 de 3 | 56 de 56 | 100 % |
 | [Sofonías](../../../data/coverage/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
-| [Ageo](../../../data/coverage/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
+| Ageo | 0 de 2 | 0 de 38 | 0 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 690 de 1189 | 18655 de 31062 | 60 % |
+| **Total** | 719 de 1189 | 19427 de 31062 | 63 % |
 
 ## Capítulos empezados
 

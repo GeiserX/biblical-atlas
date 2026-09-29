@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-perdona-la-vida-a-saul-en-en-guedi
+title: David perdona la vida a Saúl en una cueva de En-Guedí
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, antes de la muerte del rey)'
+narrative_order:
+  series: 1-samuel
+  order: 24001
+places:
+- en-guedi
+people:
+- david
+- saul
+present:
+- david
+- saul
+passages:
+- 1Sa 24:1-7
+summary: 'Saúl busca a David con 3.000 soldados por los riscos de En-Guedí y entra solo en una cueva donde David y sus hombres
+  se esconden. David no deja que lo ataquen: solo le corta el borde de la túnica.'
+reason: '1Sa 24:1-7; Perspicacia «En-guedí», párr. 3, y «Cueva». Tiempo: huida de David, entre su nacimiento en 1107 (estudio
+  3) y la muerte de Saúl en 1078 a.e.c. (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-24
+- it-en-guedi
+- it-cueva
+- it-david
+- si-3
+- it-jonatan
+links:
+- title: 1 Samuel 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/24
+  type: bible
+checked_on: '2026-09-29'
+status: verified

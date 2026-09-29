@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elcana-hijo-de-jeroham
+name: Elcaná
+names:
+- name: Elcaná
+- name: Elqaná
+  note: Grafía de Perspicacia.
+perspicacia: 1200001326#4
+disambiguation: Elcaná hijo de Jeroham, padre del profeta Samuel; no el hijo de Coré ni los otros levitas de ese nombre.
+distinct_from:
+- elcana-hijo-de-core
+summary: Levita de la familia de Cohat con casa en Ramá, ciudad de la serranía de Efraín; por eso se le llama efraimita. Esposo
+  de Ana y de Peniná y padre de Samuel, iba cada año a Siló a adorar.
+reason: Perspicacia «Elqaná», núm. 4; 1Sa 1:1-8, 19-23; 2:11, 19-21.
+sources:
+- it-elqana
+- 1-samuel-1
+- 1-samuel-2
+links:
+- title: 'Perspicacia: «Elqaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001326
+  type: perspicacia
+- title: 1 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1
+  type: bible
+relations:
+- type: kin
+  person: jeroham-hijo-de-elihu
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: 1Sa 1:1 lo llama hijo de Jeroham.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ana-madre-de-samuel
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: '1Sa 1:2: una de sus dos esposas se llamaba Ana.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: penina
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: '1Sa 1:2: su otra esposa era Peniná, la que tenía hijos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ramataim-zofim
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  - it-rama
+  reason: '1Sa 1:1, 19 y 2:11: era de Ramataim-Zofim y volvía a su casa de Ramá. Perspicacia «Ramá», núm. 5, las da por la
+    misma ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-entra-al-servicio-de-saul
+title: David entra al servicio de Saúl como arpista
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+narrative_order:
+  series: 1-samuel
+  order: 16014
+places:
+- belen
+people:
+- david
+- saul
+- jese
+present: []
+passages:
+- 1Sa 16:14-23
+summary: Un mal espíritu atormenta a Saúl desde que lo deja el espíritu de Jehová. Por consejo de un siervo, manda llamar
+  al hijo de Jesé para que le toque el arpa. David lo alivia y llega a ser su escudero.
+reason: Entre 1107 (nace David, estudio 3) y 1078 (fin de Saúl, Perspicacia «Azeqá»), tras la unción (Perspicacia «Saúl», párr.
+  13). El texto no dice dónde estaba Saúl; Belén es de donde sale David, así que no sitúa a nadie.
+sources:
+- 1-samuel-16
+- si-3
+- it-azeqa
+- it-saul
+- it-david
+links:
+- title: 1 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16
+  type: bible
+- title: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

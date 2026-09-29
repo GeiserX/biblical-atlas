@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-reprende-a-abner-y-habla-con-saul
+title: David reprende a Abner y habla con Saúl desde la montaña
+date:
+  from: -1089
+  to: -1079
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: tras la muerte de Samuel y antes de que David se refugie en Gat)'
+narrative_order:
+  series: 1-samuel
+  order: 26013
+places:
+- hakila
+people:
+- david
+- abner
+- saul
+present:
+- saul
+- abner
+passages:
+- 1Sa 26:13-25
+summary: Desde una cumbre al otro lado del valle, David echa en cara a Abner que no guardó al rey. Saúl reconoce su voz, admite
+  su pecado y lo bendice. Es la última vez que se ven.
+reason: '«Abner», párr. 2, y «David»: último encuentro; «Saúl» pone la guerra final un año o dos después. David, en una cima
+  sin nombre. Fecha: tras morir Samuel (c. 1090 o después) y antes de ir David a Gat (c. 1080).'
+sources:
+- 1-samuel-26
+- tnm-tabla
+- it-david
+- it-saul
+- it-jonatan
+- it-abner
+links:
+- title: 1 Samuel 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/26
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'Iba de 1107 a 1078 y se ordenaba antes de la muerte de Samuel y de Nabal. Ahora va de c. 1090 a c. 1080: 1Sa 26
+    sigue a 1Sa 25 y precede a la huida a Gat.'
+  source: 1-samuel-26
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-manda-truenos-y-lluvia-en-la-cosecha-del-trigo
+title: Jehová manda truenos y lluvia en la siega del trigo
+date:
+  from: -1116
+  to: -1115
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: en la reunión de Guilgal, tras la victoria de Jabés)'
+narrative_order:
+  series: 1-samuel
+  order: 12016
+places:
+- guilgal
+people:
+- samuel
+passages:
+- 1Sa 12:16-19
+summary: Para que el pueblo vea lo malo de haber pedido rey, Samuel ora y Jehová manda truenos y lluvia en plena siega del
+  trigo. Asustados, piden a Samuel que ruegue por ellos.
+reason: '1Sa 12:16-19; Perspicacia «Siván»: la siega del trigo caía entre mayo y junio, ya en la estación seca. Fecha: la de
+  la victoria de Jabés, un mes tras la unción de 1117 (estudio 3; Perspicacia «Saúl»).'
+sources:
+- 1-samuel-12
+- it-sivan
+- it-samuel
+- si-3
+links:
+- title: 1 Samuel 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/12
+  type: bible
+- title: 'Perspicacia: «Siván»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004153
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

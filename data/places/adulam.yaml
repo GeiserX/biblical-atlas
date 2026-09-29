@@ -3,6 +3,8 @@ id: adulam
 name: Adulam
 names:
 - name: Adulam
+- name: Cueva de Adulam
+  note: Cueva cercana a la ciudad donde David se refugió de Saúl y reunió a unos 400 hombres (Perspicacia «Adulam» y «Cueva»).
 type: city
 lat: 31.651667
 lon: 35.001667
@@ -20,6 +22,8 @@ sources:
 - miqueas-1
 - josue-12
 - josue-15
+- 1-samuel-22
+- it-cueva
 links:
 - title: 'Perspicacia: «Adulam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000122

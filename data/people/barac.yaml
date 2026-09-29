@@ -54,6 +54,18 @@ relations:
     allí.'
   checked_on: '2026-09-29'
   status: verified
+- type: same_as
+  person: bedan-libertador
+  certainty: possible
+  inferred: true
+  sources:
+  - it-bedan
+  - it-barac
+  - 1-samuel-12
+  reason: Perspicacia «Barac» dice que puede ser el Bedán de 1Sa 12:11, y «Bedán», núm. 1, que algunos lo creen; el contexto
+    recuerda la opresión de Sísara.
+  checked_on: '2026-09-29'
+  status: pending
 perspicacia: '1200000559'
 checked_on: '2026-09-29'
 status: verified

@@ -11,6 +11,9 @@ reason: Perspicacia «Abiatar», párr. 1 a 4, 8 y 10. Jesús lo nombra en Mr 2:
 sources:
 - it-abiatar
 - marcos-2
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-30
 not_claimed:
 - 'Que Abiatar fuera ya sumo sacerdote cuando David comió los panes de la presentación: según la nota de estudio de Mr 2:26,
   lo era su padre, Ahimélec.'
@@ -23,3 +26,49 @@ links:
   type: bible
 checked_on: '2026-09-29'
 status: verified
+relations:
+- type: kin
+  person: ahimelec-hijo-de-ahitub
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-22
+  - 1-samuel-23
+  - it-abiatar
+  - 1-samuel-30
+  reason: 1Sa 22:20 lo llama hijo de Ahimélec hijo de Ahitub, y 1Sa 23:6, hijo de Ahimélec.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: david
+  word: companion
+  inferred: false
+  sources:
+  - 1-samuel-22
+  - 1-samuel-23
+  - it-abiatar
+  - 1-samuel-30
+  reason: '1Sa 22:23: David lo acoge y lo protege; en 1Sa 23:6, 9 le lleva el efod. Perspicacia «Abiatar»: fue con él y le
+    sirvió de sacerdote mientras estuvo proscrito.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: nob
+  inferred: true
+  sources:
+  - 1-samuel-22
+  - it-abiatar
+  reason: 'Perspicacia «Abiatar», párr. 2: vivía en Nob cuando Saúl hizo matar a su padre y a los demás sacerdotes (1Sa 22:11,
+    20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-samuel-23
+  - 1-samuel-30
+  - it-abiatar
+  reason: 1Sa 23:9 y 30:7 lo llaman el sacerdote Abiatar; David le pide el efod para consultar a Jehová.
+  checked_on: '2026-09-29'
+  status: verified

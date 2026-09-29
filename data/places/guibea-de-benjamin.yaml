@@ -4,7 +4,7 @@ name: Guibeá
 names:
 - name: Guibeá
 - name: Guibeá de Saúl
-  note: 2Sa 21:6.
+  note: 1Sa 11:4 es la primera vez; también 2Sa 21:6.
 - name: Guibeah
   note: Otra grafía que da la nota de Jue 19:12 para todo el libro; es la que usa Perspicacia.
 type: city
@@ -26,6 +26,13 @@ sources:
 - josue-18
 - jueces-19
 - jueces-20
+- 1-samuel-11
+- 1-samuel-13
+- 1-samuel-14
+- 1-samuel-15
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-26
 links:
 - title: 'Perspicacia: «Guibeah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001679
@@ -41,5 +48,8 @@ history:
 - date: '2026-09-29'
   change: El resumen añade que Israel incendió la ciudad al vencer a Benjamín (Jue 20:37-40; Perspicacia «Guibeah», núm. 2).
   source: jueces-20
+- date: '2026-09-29'
+  change: La nota de Guibeá de Saúl añade 1Sa 11:4, donde sale ese nombre por primera vez.
+  source: 1-samuel-11
 checked_on: '2026-09-29'
 status: verified

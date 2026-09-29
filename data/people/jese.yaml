@@ -11,6 +11,10 @@ sources:
 - rut-4
 - mateo-1
 - lucas-3
+- 1-samuel-16
+- 1-samuel-17
+- 1-samuel-22
+- it-mizpa
 links:
 - title: 'Perspicacia: «Jesé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002449
@@ -25,6 +29,27 @@ relations:
   - mateo-1
   - lucas-3
   reason: Rut 4:17 y 22.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - it-jese
+  - 1-samuel-17
+  reason: '1Sa 16:1, 4, 18: Jesé el betlemita recibe a Samuel en Belén. Perspicacia «Jesé», párr. 2: vivía allí y tenía ovejas.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mizpe-de-moab
+  inferred: false
+  sources:
+  - 1-samuel-22
+  - it-jese
+  - it-mizpa
+  reason: '1Sa 22:3, 4: David lo deja con su esposa junto al rey de Moab mientras está en el refugio; Perspicacia «Jesé» y
+    «Mizpá, Mizpé», núm. 5.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

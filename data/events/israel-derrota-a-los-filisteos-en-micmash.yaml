@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-derrota-a-los-filisteos-en-micmash
+title: Israel derrota a los filisteos en Micmash
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 14015
+places:
+- micmash
+- guibea-de-benjamin
+- migron
+- region-montanosa-de-efrain
+- bet-aven
+people:
+- saul
+- jonatan-hijo-de-saul
+- ahiya-hijo-de-ahitub
+present:
+- saul
+- jonatan-hijo-de-saul
+passages:
+- 1Sa 14:15-23
+summary: Un temblor de tierra y el pánico que manda Dios deshacen el campamento filisteo, cuyos soldados se atacan entre sí.
+  Saúl acude, se le suman desertores y escondidos, y la persecución llega hasta Bet-Aven.
+reason: '1Sa 14:15-23; Perspicacia «Micmás, Micmash», párr. 5, y «Bet-aven», núm. 1. Saúl habla antes con Ahíya junto a Guibeá.
+  Fecha: tras la unción de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-14
+- it-micmas
+- it-bet-aven
+- it-migron
+- it-ahiya
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

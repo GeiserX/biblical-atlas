@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-filisteos-salen-a-saquear-desde-micmash
+title: Los filisteos salen a saquear desde Micmash
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 13016
+places:
+- gueba
+- micmash
+- ofra-de-benjamin
+- sual
+- valle-de-zeboim
+people:
+- saul
+- jonatan-hijo-de-saul
+present:
+- saul
+- jonatan-hijo-de-saul
+passages:
+- 1Sa 13:15-18
+summary: 'Saúl cuenta unos 600 hombres y se queda con Jonatán en Gueba de Benjamín. Desde el campamento de Micmash salen tres
+  grupos filisteos de asalto: hacia Ofrá y Sual, hacia Bet-Horón y hacia el valle de Zeboím.'
+reason: '1Sa 13:15-18; Perspicacia «Ofrá», «Sual» y «Zeboím». Bet-Horón queda fuera: no se sabe cuál de las dos. Fecha: tras
+  la unción de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-13
+- it-ofra
+- it-sual
+- it-zeboim
+- it-bet-horon
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

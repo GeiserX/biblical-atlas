@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-filisteos-capturan-el-arca
+title: Los filisteos capturan el Arca y mueren Hofní y Finehás
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: poco antes de morir Elí)'
+narrative_order:
+  series: 1-samuel
+  order: 4010
+places:
+- ebenezer
+- antipatris
+people:
+- hofni
+- finehas-hijo-de-eli
+roles:
+  hofni: died
+  finehas-hijo-de-eli: died
+passages:
+- 1Sa 4:10, 11
+summary: 'En la segunda batalla los filisteos vuelven a vencer: caen 30.000 soldados de a pie de Israel, los demás huyen a
+  sus casas, mueren los dos hijos de Elí y el Arca queda en manos filisteas.'
+reason: '1Sa 4:10, 11; Perspicacia «Ebenézer», núm. 1, y «Siló», núm. 2. Fecha: Jefté juzga desde hacia 1173, con Samuel aún
+  niño («Jefté»); Saúl es ungido en 1117 (estudio 3).'
+sources:
+- 1-samuel-4
+- it-ebenezer
+- it-silo
+- it-hofni
+- it-finehas
+- it-jefte
+- si-3
+links:
+- title: 1 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4
+  type: bible
+- title: 'Perspicacia: «Ebenézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001248
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
+checked_on: '2026-09-29'
+status: verified

@@ -4,6 +4,9 @@ name: Mizpá
 names:
 - name: Mizpá
 - name: Mizpé
+- name: Ebenézer
+  note: Piedra que Samuel levantó entre Mizpá y Jesaná tras vencer a los filisteos; significa «piedra de ayuda». No es el
+    Ebenézer de 1Sa 4:1.
 type: city
 lat: null
 lon: null
@@ -48,6 +51,9 @@ sources:
 - josue-18
 - jueces-20
 - jueces-21
+- 1-samuel-7
+- it-ebenezer
+- 1-samuel-10
 links:
 - title: 'Perspicacia: «Mizpá, Mizpé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093

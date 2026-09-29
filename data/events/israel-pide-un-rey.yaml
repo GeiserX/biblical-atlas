@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-pide-un-rey
+title: Israel pide un rey a Samuel
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: justo antes de que Samuel unja a Saúl en 1117)'
+narrative_order:
+  series: 1-samuel
+  order: 8004
+places:
+- ramataim-zofim
+people:
+- samuel
+passages:
+- 1Sa 8:4-22
+- Hch 13:21
+summary: Los ancianos van a Ramá y piden a Samuel un rey como el de las demás naciones. Jehová dice que lo rechazan a él;
+  Samuel les advierte lo que el rey exigirá, pero insisten y Jehová manda dárselo.
+reason: 'Perspicacia «Samuel», párr. 6: los hijos de Samuel y la amenaza ammonita movieron la petición. Hch 13:21 la recuerda.
+  Fecha: Jefté juzga desde hacia 1173, con Samuel aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3).'
+sources:
+- 1-samuel-8
+- it-samuel
+- it-rama
+- it-jefte
+- si-3
+links:
+- title: 1 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified
