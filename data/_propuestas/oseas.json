@@ -1,0 +1,657 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "oseas",
+ "agente": "escritor-oseas",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002086"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "fuentes",
+   "valores": [
+    "it-oseas-libro",
+    "si-oseas",
+    "w05-profecias-de-oseas",
+    "oseas-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Oseas, Libro de»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002087",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "resumen",
+   "antes": "Profeta hijo de Beerí. Profetizó sobre todo al reino de Israel, durante Jeroboán II y los reyes de Judá de Uzías a Ezequías.",
+   "despues": "Profeta hijo de Beerí. Profetizó sobre todo al reino de Israel, durante Jeroboán II y los reyes de Judá de Uzías a Ezequías. Por orden de Jehová se casó con Gómer, cuya infidelidad ilustró la de Israel.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade su matrimonio con Gómer y lo que representaba, que cuentan Os 1:2-3 y 3:1-3.",
+    "fuente": "oseas-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "razon",
+   "antes": "Perspicacia «Oseas», párr. 1 y 2; Os 1:1. La Tabla de los libros da su libro desde antes de 804 hasta después de 745.",
+   "despues": "Perspicacia «Oseas», párr. 1 y 2, y «Oseas, Libro de», párr. 4 y 5; Os 1:1-3 y 3:1-3. La Tabla de los libros da su libro desde antes de 804 hasta después de 745.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también el artículo del libro y los pasajes de su matrimonio.",
+    "fuente": "oseas-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oseas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "beeri-padre-de-oseas",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "oseas-1",
+      "it-beeri"
+     ],
+     "razon": "Os 1:1 lo llama hijo de Beerí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "gomer-hija-de-diblaim",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "oseas-1",
+      "oseas-3",
+      "it-gomer"
+     ],
+     "razon": "Os 1:3: se casó con Gómer por mandato de Jehová; en Os 3:1-3 la compra y la vuelve a tomar.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "israel",
+     "deducido": true,
+     "fuentes": [
+      "w05-profecias-de-oseas",
+      "it-oseas"
+     ],
+     "razon": "La Atalaya (2005) dice que al parecer vivía en el reino de diez tribus; Perspicacia «Oseas», párr. 2, lo cree súbdito de ese reino (Os 1:1).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "beeri-padre-de-judit",
+   "campo": "no_confundir_con",
+   "valores": [
+    "beeri-padre-de-oseas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gomer-hijo-de-jafet",
+   "campo": "no_confundir_con",
+   "valores": [
+    "gomer-hija-de-diblaim"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jehu-de-israel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002401#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehu-de-israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jeroboan-ii",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002431#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jehoas-de-israel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002373#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jezreel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Efraín",
+     "desde": -996,
+     "nota": "Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8). Lo usan también Isaías y Jeremías."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Os 2:15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "it-efrain",
+    "si-oseas",
+    "oseas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "it-bet-aven",
+    "oseas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Bet-aven»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000673",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-tabor",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rama-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-7",
+    "it-efrain",
+    "it-oseas-libro",
+    "si-oseas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "samaria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-7",
+    "it-asiria"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "hosea-de-israel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002090#4"
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "samaria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-8",
+    "it-oseas-libro",
+    "si-oseas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "salmanasar-v",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003936#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-10",
+    "it-bet-aven"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Os 11:1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "padan-aram",
+     "deducido": false,
+     "fuentes": [
+      "it-padan",
+      "oseas-12"
+     ],
+     "razon": "Os 12:12: huyó al territorio de Aram y sirvió allí; Perspicacia «Padán» lo da por la misma región.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "padan-aram",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "padan-aram",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Territorio de Aram",
+     "nota": "Así lo llama Os 12:12 (lit. «campo de Aram»); Perspicacia «Padán» lo toma, al parecer, por la misma región."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-esau-y-jacob",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-lucha-con-un-angel",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:3, 4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-suena-con-una-escalera-en-betel",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "isaac-envia-a-jacob-a-padan-aram",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-se-casa-con-lea-y-raquel",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Os 12:13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-13",
+    "it-oseas-libro",
+    "it-efrain"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "samaria",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-14",
+    "it-oseas-libro",
+    "it-efrain"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "libano",
+   "campo": "fuentes",
+   "valores": [
+    "oseas-14"
+   ]
+  }
+ ],
+ "preguntas": []
+}
