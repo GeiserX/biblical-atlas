@@ -42,9 +42,9 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
 | [Oseas](../../../data/cobertura/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](../../../data/cobertura/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
-| Amós | 0 de 9 | 0 de 146 | 0 % |
-| Abdías | 0 de 1 | 0 de 21 | 0 % |
-| Jonás | 0 de 4 | 0 de 48 | 0 % |
+| [Amós](../../../data/cobertura/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
+| [Abdías](../../../data/cobertura/abdias.yaml) | 1 de 1 | 21 de 21 | 100 % |
+| [Jonás](../../../data/cobertura/jonas.yaml) | 4 de 4 | 48 de 48 | 100 % |
 | Miqueas | 0 de 7 | 0 de 105 | 0 % |
 | Nahúm | 0 de 3 | 0 de 47 | 0 % |
 | Habacuc | 0 de 3 | 0 de 56 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 519 de 1189 | 13870 de 31062 | 45 % |
+| **Total** | 533 de 1189 | 14085 de 31062 | 45 % |
 
 ## Capítulos empezados
 
