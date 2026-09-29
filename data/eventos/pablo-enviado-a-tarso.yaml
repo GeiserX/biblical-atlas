@@ -6,7 +6,7 @@ fecha:
   hasta: 36
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: c. 36 e.c.
 orden_relato:
@@ -28,5 +28,10 @@ fuentes:
 - it-tarso
 - hch-9
 buscar: Pablo enviado a Tarso
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa de narrativa a anclada: Perspicacia «Pablo», párr. 8, da quizás 36 para la visita a Jerusalén y en
+    el mismo párrafo el envío a Tarso. Una fecha narrativa de un solo año no cumple el protocolo.'
+  fuente: hch-9
+consultado: '2026-09-29'
 estado: verificado

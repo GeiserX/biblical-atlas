@@ -24,7 +24,8 @@ enlaces:
 - titulo: Hechos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200003407'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -32,5 +33,6 @@ relaciones:
   deducido: false
   fuentes:
   - it-paulo
+  - hch-13
   razon: Perspicacia dice que vivía en Pafos, en la costa oeste de Chipre.
   estado: verificado

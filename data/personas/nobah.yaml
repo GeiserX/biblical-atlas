@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nobah
+nombre: Nóbah
+nombres:
+- nombre: Nóbah
+perspicacia: '1200003268'
+resumen: Israelita, probablemente de Manasés. Conquistó Quenat y los pueblos de alrededor y llamó a la ciudad como él, aunque
+  ese nombre no perduró.
+razon: Perspicacia «Nóbah», núm. 1 y 2; Nú 32:42.
+fuentes:
+- it-nobah
+- numeros-32
+enlaces:
+- titulo: 'Perspicacia: «Nóbah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003268
+  tipo: perspicacia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

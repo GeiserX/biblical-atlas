@@ -13,12 +13,13 @@ fecha:
     mes: kislev
     dia: 25
 lugares:
+- monte-moria
 - jerusalen
 personas: []
 pasajes:
 - Jn 10:22
-resumen: Tres años después de la profanación, el templo se purifica y se dedica otra vez a Jehová. De ahí nace la fiesta
-  que Jesús celebró en Juan 10:22.
+resumen: Tres años después de la profanación, el templo se purifica y se dedica otra vez a Jehová. De ahí nace la fiesta de
+  invierno en la que Jesús estaba enseñando en el templo.
 razon: Perspicacia «Fiesta de la dedicación» da 165 a.e.c., un 25 de kislev; el cuadro del estudio 3 fecha la nueva dedicación
   ese año.
 fuentes:
@@ -26,5 +27,14 @@ fuentes:
 - si-3
 - juan-10
 buscar: fiesta de la Dedicación
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El texto no dice que Jesús celebrara la fiesta, solo que estaba en el templo durante ella; la nota de 10:22 dice
+    únicamente que no consta que la condenara.
+  fuente: juan-10
+- fecha: '2026-09-29'
+  cambio: 'La nueva dedicación pasa entera en el templo: monte-moria va primero y jerusalen después, como las demás escenas
+    del templo.'
+  fuente: juan-10
+consultado: '2026-09-29'
 estado: verificado

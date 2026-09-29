@@ -6,28 +6,46 @@ fecha:
   hasta: 50
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: c. 50 e.c.
 orden_relato:
   serie: hechos
-  orden: 1616
+  orden: 1625
 lugares:
 - filipos
 personas:
 - pablo
 - silas
 pasajes:
-- Hch 16:16-40
-resumen: Pablo expulsa un demonio de adivinación de una muchacha y sus amos los llevan ante los magistrados. Golpeados
-  y presos, un terremoto abre la cárcel y el carcelero se bautiza con su casa.
-razon: Perspicacia «Pablo» (párr. 16) y «Silas, Silvano» (párr. 4); la nota de estudio de Hch 16:16 explica el espíritu
-  de adivinación.
+- Hch 16:25-34
+resumen: Hacia medianoche Pablo y Silas oran y cantan en la cárcel. Un terremoto abre las puertas y suelta las cadenas; Pablo
+  impide que el carcelero se mate, y este se bautiza con su casa esa misma noche.
+razon: Perspicacia «Pablo» (párr. 16) y «Silas, Silvano» (párr. 4); la nota de Hch 16:33 explica el bautismo inmediato del
+  carcelero y su casa. El estudio 3 (párr. 24) pone Filipos en 50.
 fuentes:
 - it-pablo
 - it-silas
 - nota-hechos-16
 - hch-16
+- si-3
 buscar: carcelero de Filipos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El suceso se ciñe al terremoto y al carcelero (Hch 16:25-34); la expulsión del demonio, los azotes y la liberación
+    son sucesos propios.
+  fuente: hch-16
+- fecha: '2026-09-29'
+  cambio: El resumen cubría todo Hch 16:16-40; ahora cuenta solo la noche en la cárcel.
+  fuente: hch-16
+- fecha: '2026-09-29'
+  cambio: La razón citaba la nota de Hch 16:16, que pasa al suceso de la expulsión del demonio.
+  fuente: hch-16
+- fecha: '2026-09-29'
+  cambio: Pasa a Hch 16:25, tras la expulsión del demonio (1616) y los azotes (1619).
+  fuente: hch-16
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa de un solo año; el estudio 3 (párr. 24) pone Filipos en 50: es anclada.'
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

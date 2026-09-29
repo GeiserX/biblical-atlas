@@ -16,6 +16,7 @@ personas:
 pasajes:
 - Mt 19:1-12
 - Mr 10:1-12
+- 1Co 7:10, 11
 resumen: Jesús deja Galilea y pasa al otro lado del Jordán. Unos fariseos le preguntan por el divorcio y él recuerda
   que Dios unió al hombre y a la mujer.
 razon: 'A7-F da el orden; la nota de Mt 19:1 sitúa la región en Perea (jy cap. 95). Año: Perspicacia «Lázaro» (párr. 7) fecha
@@ -27,9 +28,10 @@ fuentes:
 - jy-cap-95
 - it-lazaro
 - tnm-a7-g
+- 1-corintios-7
 orden_relato:
   serie: a7
   orden: 86
 buscar: Enseña sobre el matrimonio y el divorcio
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

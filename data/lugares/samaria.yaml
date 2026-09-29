@@ -19,6 +19,10 @@ fuentes:
 - it-samaria
 - openbible-geo
 - 1-reyes-16
+- hechos-8
+- oseas-7
+- oseas-8
+- oseas-13
 enlaces:
 - titulo: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
@@ -26,5 +30,5 @@ enlaces:
 - titulo: 1 Reyes 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

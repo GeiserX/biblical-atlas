@@ -18,6 +18,11 @@ fuentes:
 - it-antioquia
 - hch-13
 - openbible-geo
+- hechos-6
+- hechos-11
+- hch-14
+- hch-15
+- hch-18
 enlaces:
 - titulo: 'Perspicacia: «Antioquía»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000292
@@ -25,5 +30,5 @@ enlaces:
 - titulo: Hechos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-29'
 estado: verificado

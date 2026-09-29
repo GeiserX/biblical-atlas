@@ -20,7 +20,7 @@ personas:
 - pedro
 - juan-apostol
 pasajes:
-- Hch 8:1-4
+- Hch 8:1, 4
 resumen: Tras la muerte de Esteban estalla una gran persecución. Todos, menos los apóstoles, se esparcen por Judea
   y Samaria, y van predicando por donde pasan.
 razon: Perspicacia «Juan» (párr. 30) y «Esteban» (párr. 6); la nota de estudio de Hch 8:5 recuerda que los apóstoles
@@ -32,5 +32,9 @@ fuentes:
 nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
   de 33 y la conversión de Saulo en 34).'
 buscar: persecución Hechos 8
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Los versículos 2 y 3 son el entierro de Esteban y la campaña de Saulo, que tienen su propio suceso.
+  fuente: hechos-8
+consultado: '2026-09-29'
 estado: verificado

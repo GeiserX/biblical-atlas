@@ -16,21 +16,19 @@ lugares:
 - damasco
 personas:
 - pablo
-- ananias-de-damasco
 - jesus
-presentes:
-- pablo
-- ananias-de-damasco
+presentes: []
 pasajes:
-- Hch 9:1-19
-- Hch 22:6-16
+- Hch 9:3-9
+- Hch 22:6-11
 - Hch 26:12-18
 - 1Co 15:8
-- Gál 1:15-18
-resumen: Saulo va a Damasco a detener discípulos; Jesús se le aparece en el camino, queda ciego tres días y, tras
-  recobrar la vista, empieza a predicar en la ciudad. Jesús también habla a Ananías en una visión.
-razon: El estudio 3 (párr. 22) cuenta los «tres años» de Gálatas 1:18 como 34-36, de modo que la conversión cae
-  en 34. Perspicacia «Pablo» (párr. 5) narra la aparición; Pablo la cuenta en Hch 22, Hch 26 y 1Co 15:8.
+- Gál 1:15, 16
+- 1Co 9:1
+resumen: Saulo va a Damasco a detener discípulos. Cerca de la ciudad lo envuelve una luz del cielo y Jesús le habla. Ciego,
+  lo llevan de la mano a Damasco, donde pasa tres días sin comer ni beber.
+razon: 'Estudio 3, párr. 22: los «tres años» de Gál 1:18 van de 34 a 36, así que la conversión cae en 34. Perspicacia «Pablo»,
+  párr. 5. Pasa en el camino, sin sitio nombrado, y no sitúa a nadie.'
 fuentes:
 - si-3
 - it-pablo
@@ -39,6 +37,26 @@ fuentes:
 - hch-22
 - hch-26
 - 1-corintios-15
+- bt-25
+- nota-hechos-26
+- 1-corintios-9
 buscar: conversión de Pablo
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se ciñe al camino (Hch 9:3-9; 22:6-11): lo de Ananías, tres días después en la calle Recta, es un suceso propio,
+    y Gál 1:18 es la visita a Cefas.'
+  fuente: hch-9
+- fecha: '2026-09-29'
+  cambio: Ananías pasa al suceso de la calle Recta.
+  fuente: hch-9
+- fecha: '2026-09-29'
+  cambio: 'La aparición pasa en el camino, en un sitio que el texto no nombra: el suceso no sitúa a nadie en Damasco.'
+  fuente: hch-9
+- fecha: '2026-09-29'
+  cambio: El resumen contaba también la escena de Ananías, que pasa a su propio suceso.
+  fuente: hch-9
+- fecha: '2026-09-29'
+  cambio: La razón explica ahora por qué el suceso no sitúa a nadie.
+  fuente: hch-9
 consultado: '2026-09-29'
 estado: verificado

@@ -11,6 +11,7 @@ razon: Perspicacia «Mahlí», núm. 1; Éx 6:19.
 fuentes:
 - it-mahli
 - exodo-6
+- numeros-3
 enlaces:
 - titulo: 'Perspicacia: «Mahlí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002850
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - exodo-6
   - it-mahli
+  - numeros-3
   razon: 'Éx 6:19: hijo de Merarí.'
   estado: verificado
 - tipo: pariente
@@ -35,6 +37,7 @@ relaciones:
   fuentes:
   - exodo-6
   - it-mahli
+  - numeros-3
   razon: 'Éx 6:19: Musí es el otro hijo de Merarí.'
   estado: verificado
 consultado: '2026-09-29'

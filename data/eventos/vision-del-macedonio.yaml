@@ -14,6 +14,7 @@ orden_relato:
   orden: 1609
 lugares:
 - troas
+- macedonia
 personas:
 - pablo
 - silas
@@ -30,5 +31,5 @@ fuentes:
 - it-lucas
 - hch-16
 buscar: Pasa a Macedonia y ayúdanos
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

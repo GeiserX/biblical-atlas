@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-predica-dos-anos-en-roma
+titulo: Dos años predicando en su casa alquilada
+fecha:
+  desde: 59
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 59-61 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2830
+lugares:
+- roma
+personas:
+- pablo
+pasajes:
+- Hch 28:30, 31
+resumen: Vigilado por un soldado pero libre para recibir visitas, Pablo pasa dos años enteros en una casa alquilada de Roma
+  y enseña sobre el Reino y el Señor Jesucristo con valor, sin que nadie se lo impida.
+razon: Hch 28:16, 30, 31 y la nota de estudio de 28:30; el estudio 3 (párr. 27) dice que siguió preso allí hasta cerca de
+  61.
+fuentes:
+- hch-28
+- nota-hechos-28
+- si-3
+- it-pablo
+enlaces:
+- titulo: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

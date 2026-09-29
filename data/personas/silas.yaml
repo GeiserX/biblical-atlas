@@ -12,6 +12,9 @@ razon: Perspicacia «Silas, Silvano» explica los dos nombres y su papel en el s
 fuentes:
 - it-silas
 - hch-15
+- hch-16
+- hch-17
+- hch-18
 enlaces:
 - titulo: 'Perspicacia: «Silas, Silvano»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004118
@@ -19,7 +22,8 @@ enlaces:
 - titulo: Hechos 15 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004118'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -46,6 +50,8 @@ relaciones:
   - hch-15
   - hch-18
   - si-3
+  - hch-16
+  - hch-17
   razon: Pablo lo escoge al separarse de Bernabé; van juntos por Filipos, Tesalónica y Berea, y se reúnen de nuevo en Corinto
     (Hch 15:40; 18:5). Segundo viaje, c. 49-52 (estudio 3, párr. 24).
   estado: verificado

@@ -12,6 +12,8 @@ fuentes:
 - it-amram
 - exodo-2
 - exodo-6
+- numeros-3
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Amram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000251
@@ -32,6 +34,7 @@ relaciones:
   - it-amram
   - it-jokebed
   - exodo-6
+  - numeros-26
   razon: 'Éx 2:1: el levita se casa con una hija de Leví; Perspicacia «Amram», núm. 1, y «Jokébed» dan sus nombres.'
   estado: verificado
 - tipo: pariente
@@ -41,6 +44,8 @@ relaciones:
   fuentes:
   - it-amram
   - exodo-6
+  - numeros-3
+  - numeros-26
   razon: 'Perspicacia «Amram», núm. 1: nieto de Leví por medio de Cohat.'
   estado: verificado
 - tipo: pariente
@@ -67,6 +72,7 @@ relaciones:
   deducido: false
   fuentes:
   - exodo-6
+  - numeros-3
   razon: 'Éx 6:18: Izhar es otro de los hijos de Cohat.'
   estado: verificado
 - tipo: pariente
@@ -75,6 +81,7 @@ relaciones:
   deducido: false
   fuentes:
   - exodo-6
+  - numeros-3
   razon: 'Éx 6:18: Hebrón es otro de los hijos de Cohat.'
   estado: verificado
 - tipo: pariente
@@ -83,6 +90,7 @@ relaciones:
   deducido: false
   fuentes:
   - exodo-6
+  - numeros-3
   razon: 'Éx 6:18: Uziel es otro de los hijos de Cohat.'
   estado: verificado
 consultado: '2026-09-29'

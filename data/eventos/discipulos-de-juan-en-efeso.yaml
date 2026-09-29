@@ -6,7 +6,7 @@ fecha:
   hasta: 53
   precision: estación
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: invierno de 52-53 e.c.
 orden_relato:
@@ -25,5 +25,9 @@ fuentes:
 - hch-19
 - si-3
 buscar: bautismo de Juan Éfeso
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa, pero el estudio 3 (párr. 26), que ya citaba, da el invierno de 52-53: es anclada.'
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

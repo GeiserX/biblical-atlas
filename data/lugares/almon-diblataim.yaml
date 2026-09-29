@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: almon-diblataim
+nombre: Almón-Diblataim
+nombres:
+- nombre: Almón-Diblataim
+tipo: ciudad
+lat: 31.638727
+lon: 35.826578
+precision: incierto
+coord_fuente: openbible:aeb052c
+coord_url: https://www.openbible.info/geo/ancient/aeb052c/almon-diblathaim
+coord_nota: Punto de OpenBible en Khirbet Deleilat esh-Sherqiyeh, unos 16 km al nor-noreste de Dibón, con que lo relacionan
+  algunos. El mapa B3 lo marca ahí.
+resumen: Uno de los últimos campamentos de Israel, entre Dibón-Gad y la cordillera de Abarim, en 1473 a.e.c. Quizá es la Bet-Diblataim
+  de Jeremías.
+razon: 'Perspicacia «Almón-diblataim»; Nú 33:46, 47. Su sitio es incierto. OpenBible: solo el punto.'
+fuentes:
+- it-almon-diblataim
+- tnm-b3
+- openbible-geo
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Almón-diblataim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000205
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

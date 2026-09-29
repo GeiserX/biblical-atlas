@@ -19,15 +19,23 @@ personas:
 - silas
 - lucas
 - lidia
+- timoteo
 pasajes:
 - Hch 16:13-15
 resumen: Un sábado, a la orilla de un río, fuera de Filipos, Pablo habla a unas mujeres. Lidia escucha, se bautiza
   con su casa y los convence para alojarse con ella.
-razon: Perspicacia «Lidia» (párr. 1 y 2) y la nota de estudio de Hch 16:14 fechan su conversión hacia 50.
+razon: Perspicacia «Lidia» (párr. 1 y 2) y la nota de estudio de Hch 16:14 fechan su conversión hacia 50. Perspicacia
+  «Timoteo» lo pone con Pablo en Filipos.
 fuentes:
 - it-lidia
 - nota-hechos-16
 - hch-16
+- it-timoteo
 buscar: Lidia Filipos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Timoteo, añadido a personas, no tenía fuente: Perspicacia «Timoteo» lo pone con Pablo en Filipos (Hch
+    16:11-17:10).'
+  fuente: it-timoteo
+consultado: '2026-09-29'
 estado: verificado

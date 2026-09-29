@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-saluda-a-la-congregacion-de-jerusalen
+titulo: Pablo desembarca en Cesarea y saluda a la congregación de Jerusalén
+fecha:
+  desde: 52
+  hasta: 52
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 52 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1822
+lugares:
+- jerusalen
+- cesarea
+personas:
+- pablo
+pasajes:
+- Hch 18:22
+resumen: Desde Éfeso, Pablo navega hasta Cesarea. De allí sube a saludar a la congregación, que por el verbo «subir» se entiende
+  la de Jerusalén, y luego baja a Antioquía.
+razon: 'El texto no nombra la ciudad: la nota de estudio de Hch 18:22, Perspicacia «Pablo» y el estudio 3, párr. 24, entienden
+  que es Jerusalén. El estudio 3 pone el regreso en 52.'
+fuentes:
+- nota-hechos-18
+- it-pablo
+- si-3
+- hch-18
+enlaces:
+- titulo: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

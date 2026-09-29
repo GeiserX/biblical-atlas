@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisama-hijo-de-amihud
+nombre: Elisamá
+nombres:
+- nombre: Elisamá
+perspicacia: 1200001318#1
+desambiguacion: Elisamá hijo de Amihud, jefe de Efraín y abuelo de Josué; no el hijo de David ni los otros Elisamás de Perspicacia.
+resumen: Efraimita, hijo de Amihud y abuelo de Josué. Jefe de su tribu, ayudó a registrar a Israel en el Sinaí y encabezaba
+  la división de tres tribus que acampaba al oeste.
+razon: Perspicacia «Elisamá», núm. 1; Nú 1:10, 16; 2:18; 1Cr 7:26, 27 lo pone entre Amihud y Nun.
+fuentes:
+- it-elisama
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Elisamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001318
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: amihud-hijo-de-ladan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-elisama
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  razon: Nú 1:10 y 2:18 lo llaman hijo de Amihud.
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 10, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 10, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

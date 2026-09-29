@@ -6,7 +6,7 @@ fecha:
   hasta: 56
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: c. 56 e.c.
 orden_relato:
@@ -23,10 +23,19 @@ pasajes:
 - Hch 21:8-14
 resumen: En Cesarea se alojan en casa de Felipe el evangelizador. El profeta Ágabo se ata con el cinturón de Pablo
   y anuncia que así lo atarán en Jerusalén; Pablo sigue adelante.
-razon: 'Perspicacia «Pablo» (apartado «Detención»): varios profetas le anunciaron cadenas (Hch 21:4-14).'
+razon: 'Perspicacia «Pablo» (apartado «Detención»): varios profetas le anunciaron cadenas (Hch 21:4-14). El estudio 3 (párr.
+  26) pone la llegada a Jerusalén en el Pentecostés de 56.'
 fuentes:
 - it-pablo
 - hch-21
+- si-3
 buscar: Ágabo cinturón Pablo
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa de un solo año; el estudio 3 (párr. 26) pone la llegada a Jerusalén en el Pentecostés de 56: es anclada.'
+  fuente: si-3
+- fecha: '2026-09-29'
+  cambio: La razón nombra la fuente del año.
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

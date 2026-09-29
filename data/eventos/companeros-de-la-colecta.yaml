@@ -21,7 +21,7 @@ personas:
 - sopater
 - aristarco
 - segundo
-- gayo-de-macedonia
+- gayo-de-derbe
 - timoteo
 - tiquico
 - trofimo
@@ -36,6 +36,12 @@ fuentes:
 - si-3
 - it-gayo
 - it-sopater
+- nota-hechos-20
 buscar: compañeros de Pablo Hechos 20:4
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El Gayo de Hch 20:4 es el de Derbe (Perspicacia «Gayo», núm. 2), no el macedonio de Hch 19:29; Perspicacia solo
+    ve posible que sean el mismo.
+  fuente: hch-20
+consultado: '2026-09-29'
 estado: verificado

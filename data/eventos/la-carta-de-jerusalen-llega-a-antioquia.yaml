@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-carta-de-jerusalen-llega-a-antioquia
+titulo: Judas y Silas llevan a Antioquía la carta de Jerusalén
+fecha:
+  desde: 49
+  hasta: 49
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 49 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1530
+lugares:
+- antioquia-de-siria
+personas:
+- judas-barsabas
+- silas
+- pablo
+- bernabe
+pasajes:
+- Hch 15:30-35
+resumen: Reúnen a la congregación de Antioquía y le entregan la carta, que la alegra. Judas y Silas, profetas, la animan con
+  muchos discursos y luego vuelven a Jerusalén; Pablo y Bernabé se quedan enseñando.
+razon: Perspicacia «Judas», núm. 7, y «Silas, Silvano», párr. 2. El estudio 3 (párr. 24) dice que, de vuelta de Jerusalén
+  en 49, Pablo pasó algún tiempo en Antioquía.
+fuentes:
+- it-judas
+- it-silas
+- si-3
+- hch-15
+enlaces:
+- titulo: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  tipo: biblia
+buscar: carta Antioquía Judas Silas
+consultado: '2026-09-29'
+estado: verificado

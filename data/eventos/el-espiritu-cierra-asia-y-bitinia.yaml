@@ -13,9 +13,12 @@ orden_relato:
   serie: hechos
   orden: 1606
 lugares:
+- frigia
+- galacia
+- misia
 - asia
 - bitinia
-- misia
+- troas
 personas:
 - pablo
 - silas
@@ -30,5 +33,10 @@ fuentes:
 - it-bitinia
 - hch-16
 buscar: espíritu prohibió Asia Bitinia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Asia iba primero y situaba a Pablo, Silas y Timoteo donde el espíritu les prohibió predicar. Van primero Frigia
+    y Galacia, que recorren (Hch 16:6), luego Misia y Troas.
+  fuente: hch-16
+consultado: '2026-09-29'
 estado: verificado

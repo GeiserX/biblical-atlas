@@ -19,7 +19,7 @@ personas:
 pasajes:
 - Mt 8:19-22
 - Lu 9:51-62
-- Jn 7:2-10
+- Jn 7:10
 resumen: Rumbo a Jerusalén, una aldea samaritana no lo recibe y Jesús reprende a Santiago y a Juan, que querían pedir fuego
   del cielo. A un escriba le avisa que no tiene casa; a otros, que el Reino va primero.
 razon: La tabla A7-E da cuándo y dónde. La tabla dice «Galilea y Samaria»; Lu 9:52 nombra una aldea samaritana.
@@ -42,5 +42,9 @@ historial:
   cambio: 'Faltaba lo que solo cuenta Lucas: la aldea samaritana que no lo recibió y la reprensión a Santiago y Juan (Lu 9:52-55).
     Los dos entran en personas.'
   fuente: lucas-9
+- fecha: '2026-09-29'
+  cambio: 'Jn 7:2-9 es otra escena, en Galilea y con sus hermanos, antes de salir: pasa a sus-hermanos-lo-animan-a-ir-a-judea.
+    Aquí queda la subida en secreto (Jn 7:10).'
+  fuente: juan-7
 consultado: '2026-09-29'
 estado: verificado

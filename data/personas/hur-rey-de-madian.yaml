@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hur-rey-de-madian
+nombre: Hur
+nombres:
+- nombre: Hur
+perspicacia: 1200002108#3
+desambiguacion: Hur, rey de Madián; no el compañero de Moisés ni el abuelo de Bezalel.
+no_confundir_con:
+- hur-companero-de-moises
+- hur-hijo-de-caleb
+resumen: Rey de Madián que dependía del amorreo Sehón hasta que Israel lo venció. Perspicacia cree que luego se alió con Balac;
+  murió en la guerra de Israel contra Madián, junto con Balaam.
+razon: 'Perspicacia «Hur», núm. 3; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a
+  Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.'
+fuentes:
+- it-hur
+- numeros-31
+- it-madian
+enlaces:
+- titulo: 'Perspicacia: «Hur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002108
+  tipo: perspicacia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

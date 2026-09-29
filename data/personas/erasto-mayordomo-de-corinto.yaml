@@ -31,7 +31,8 @@ enlaces:
 - titulo: Romanos 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200001413#2
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -42,3 +43,12 @@ relaciones:
   - romanos-16
   razon: Ro 16:23 lo llama mayordomo de la ciudad, escrita desde Corinto.
   estado: verificado
+- tipo: pariente
+  persona: cuarto
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - romanos-16
+  - it-cuarto
+  razon: Ro 16:23 dice «su hermano Cuarto»; la nota de estudio deja abierto si era hermano de sangre o hermano en la fe.
+  estado: pendiente

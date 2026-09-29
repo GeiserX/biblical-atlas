@@ -38,6 +38,7 @@ relaciones:
   - it-arimatea
   - marcos-15
   - lucas-23
+  - juan-19
   razon: 'Mt 27:57: un hombre rico de Arimatea.'
   estado: verificado
 - tipo: acompana
@@ -46,5 +47,6 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-27
+  - juan-19
   razon: Mt 27:57 dice que se había hecho discípulo de Jesús.
   estado: verificado

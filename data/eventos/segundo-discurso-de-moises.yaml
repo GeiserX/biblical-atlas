@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segundo-discurso-de-moises
+titulo: Segundo discurso de Moisés en las llanuras de Moab
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 105001
+lugares:
+- llanuras-deserticas-de-moab
+- bet-peor
+personas:
+- moises
+pasajes:
+- Dt 5:1-26:19
+resumen: Moisés reúne a todo Israel, le recuerda el pacto de Horeb y los Diez Mandamientos, lo anima a amar y obedecer a Jehová
+  y le explica las leyes que regirán su vida en la Tierra Prometida.
+razon: 'Perspicacia «Deuteronomio, Libro de»: cuatro discursos en las llanuras de Moab; su recuadro agrupa Dt 5:1-26:19. Dt
+  4:46 y «Bet-peor»: en el valle frente a Bet-Peor. Estudio 3: 1473 a.e.c. Va tras Números en su serie.'
+fuentes:
+- deuteronomio-5
+- deuteronomio-6
+- it-deuteronomio-libro
+- si-3
+- tnm-tabla
+- it-bet-peor
+- deuteronomio-7
+- deuteronomio-8
+- deuteronomio-9
+- deuteronomio-10
+- deuteronomio-11
+- deuteronomio-12
+- deuteronomio-13
+- deuteronomio-14
+- deuteronomio-15
+- deuteronomio-16
+- deuteronomio-17
+- deuteronomio-18
+- it-moises
+- deuteronomio-19
+- deuteronomio-20
+- deuteronomio-21
+- deuteronomio-22
+- deuteronomio-23
+- deuteronomio-24
+- deuteronomio-25
+- deuteronomio-26
+enlaces:
+- titulo: 'Perspicacia: «Deuteronomio, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001163
+  tipo: perspicacia
+- titulo: Deuteronomio 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/5
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

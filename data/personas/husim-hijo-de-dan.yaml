@@ -12,6 +12,7 @@ razon: Perspicacia «Husim», núm. 1; Gé 46:23.
 fuentes:
 - it-husim
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Husim»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002117
@@ -27,6 +28,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-husim
+  - numeros-26
   razon: 'Gé 46:23: el hijo de Dan era Husim.'
   estado: verificado
 - tipo: vivio_en

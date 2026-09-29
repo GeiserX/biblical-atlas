@@ -25,7 +25,8 @@ enlaces:
 - titulo: Hechos 20 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004184'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -45,4 +46,14 @@ relaciones:
   - hch-20
   - si-3
   razon: Va con Pablo hasta Asia (Hch 20:4). Es el viaje de la primavera de 56 (estudio 3, párr. 26).
+  estado: verificado
+- tipo: pariente
+  persona: pirro
+  relacion: padre
+  deducido: false
+  fuentes:
+  - hch-20
+  - it-pirro
+  - it-sopater
+  razon: Hch 20:4 lo llama hijo de Pirro; Perspicacia «Sópater» y «Pirro» lo repiten.
   estado: verificado
