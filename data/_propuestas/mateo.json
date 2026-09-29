@@ -1,0 +1,6960 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "mateo",
+ "agente": "escritor-mateo",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000060"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002203"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002279#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "juda-hijo-de-jacob",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002538#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001130"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004178"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "rehoboam",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003680"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "abias-de-juda",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000041#5"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "asa",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000397#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jehosafat",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002383#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jehoram-de-juda",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002381#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "uzias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004535#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jotan",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002529#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "acaz",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000144#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ezequias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002011#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "manases-de-juda",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002882#4"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "amon-de-juda",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000244#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "josias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002525#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "joaquin",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002375"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004716"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002451"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002515#8"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002918#1"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juda-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rehoboam",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abias-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asa",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehosafat",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoram-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "uzias",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jotan",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acaz",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ezequias",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amon-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josias",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "joaquin",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tamar-nuera-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-perez",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ram-hijo-de-hezron",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aminadab-hijo-de-ram",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salmon",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "boaz",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "obed-hijo-de-boaz",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rut",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jese",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juda-hijo-de-jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:12: Tamar se lo dio a luz a Judá.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "tamar-nuera-de-juda",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:12.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "perez",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:18.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ram-hijo-de-hezron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "hezron-hijo-de-perez",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:19.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aminadab-hijo-de-ram",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ram-hijo-de-hezron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:19.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aminadab-hijo-de-ram",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:20.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salmon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nahson",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:20.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "boaz",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "salmon",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:21.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "obed-hijo-de-boaz",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "boaz",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:13 y 21.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "obed-hijo-de-boaz",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rut",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:13.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jese",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "obed-hijo-de-boaz",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:17 y 22.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jese",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rut 4:17 y 22.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo de David y Bat-seba (2Sa 12:24).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rehoboam",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "salomon",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "1Re 11:43 lo presenta como hijo y sucesor de Salomón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abias-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rehoboam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asa",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abias-de-juda",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Perspicacia lo llama hijo de Abiyam (1Re 15:8).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehosafat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "asa",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo de Asá y de Azubá (1Re 22:42).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoram-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jehosafat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Era el primogénito de Jehosafat (2Cr 21:1-3).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jotan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "uzias",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo de Uzías y Jerusá (2Re 15:32-33).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acaz",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jotan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo del rey Jotán (2Re 16:1).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ezequias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "acaz",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo y sucesor de Acaz (2Re 16:20).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ezequias",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo y sucesor de Ezequías (2Re 20:21).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amon-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-de-juda",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo de Manasés (2Re 21:18-19).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "amon-de-juda",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Hijo de Amón y de Jedidá (2Re 21:26; 22:1).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Lu 2:7: María da a luz a su primer hijo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «José» (núm. 8) lo llama padre adoptivo; Lu 3:23 dice que la gente lo creía hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zerah-hijo-de-juda",
+     "relacion": "hermano gemelo",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-zerah"
+     ],
+     "razon": "Mt 1:3 los da como hijos de Judá y Tamar; Perspicacia «Zérah» (núm. 3) dice que eran gemelos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salmon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rahab",
+     "relacion": "esposa",
+     "deducido": true,
+     "fuentes": [
+      "mateo-1",
+      "it-rahab"
+     ],
+     "razon": "Mt 1:5 la nombra madre del hijo de Salmón; Perspicacia «Rahab» (núm. 1) dice que se casó con él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "boaz",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rahab",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:5.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "bat-seba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-bat-seba"
+     ],
+     "razon": "Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "bat-seba",
+     "relacion": "esposa",
+     "deducido": true,
+     "fuentes": [
+      "mateo-1",
+      "it-bat-seba"
+     ],
+     "razon": "Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "uzias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jehoram-de-juda",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:8 llama a Jehoram padre de Uzías; la nota aclara que es antepasado: en medio faltan Ocozías, Jehoás y Amasías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "joaquin",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "josias",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:11 hace a Josías padre de Jeconías; la nota explica que era su abuelo, por medio de Jehoiaquim.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jacob-hijo-de-mattan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "descendiente de David",
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel"
+     ],
+     "razon": "Perspicacia «Zorobabel» lo presenta como descendiente de David y antepasado de Jesús (1Cr 3:19; Mt 1:12, 13).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "fecha": {
+      "desde": -536,
+      "hasta": -514,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "de 537 a 515 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel",
+      "ageo-1"
+     ],
+     "razon": "Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-sumo-sacerdote",
+     "fecha": {
+      "desde": -536,
+      "hasta": -514,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "de 537 a 515 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel",
+      "it-jesua",
+      "esdras-3"
+     ],
+     "razon": "Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y del templo.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel",
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «Zorobabel» lo da como descendiente de David y antepasado de Jesús; Mt 1:6-13 traza esa línea por Salomón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "fecha": {
+      "desde": -536,
+      "hasta": -514,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "de 537 a 515 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel",
+      "ageo-1"
+     ],
+     "razon": "Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-sumo-sacerdote",
+     "fecha": {
+      "desde": -536,
+      "hasta": -514,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "de 537 a 515 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-zorobabel",
+      "it-jesua",
+      "esdras-3"
+     ],
+     "razon": "Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y del templo.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el antepasado. Se corrige a «antepasado».",
+    "fuente": "mateo-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "sealtiel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-sealtiel"
+     ],
+     "razon": "Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob-hijo-de-mattan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-jose"
+     ],
+     "razon": "Mt 1:16; Perspicacia «José» (núm. 8).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:6-16 lo pone en la línea de David, y en Mt 1:20 el ángel lo llama hijo de David.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "herodes-el-grande",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002000#1"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "arquelao",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000346"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "nazaret",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "belen",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Lu 2:4-7; Perspicacia «Jesucristo» («Primeros años»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Lu 1:26, 27; Perspicacia «Nazaret» (párr. 2).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "belen",
+     "deducido": true,
+     "fuentes": [
+      "mateo-2",
+      "it-jose"
+     ],
+     "razon": "Mt 2:11: los astrólogos lo hallan en una casa de Belén; Perspicacia «José» (núm. 8) dice que la familia residía allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Mt 2:14, 15: vivió en Egipto con sus padres hasta la muerte de Herodes.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "belen",
+     "deducido": true,
+     "fuentes": [
+      "mateo-2",
+      "it-jose"
+     ],
+     "razon": "Mt 2:11: los astrólogos la encuentran con el niño en una casa de Belén; Perspicacia «José» (núm. 8) dice que residían allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Mt 2:14, 15.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Mt 2:14, 15 y 19: se quedó en Egipto hasta la muerte de Herodes.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "herodes-el-grande",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2",
+      "jy-cap-7"
+     ],
+     "razon": "Mt 2:1-7: recibe a los astrólogos en Jerusalén y convoca allí a los jefes de los sacerdotes y a los escribas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "octavio-conquista-egipto",
+   "campo": "pasajes",
+   "antes": [
+    "Mt 2:13-15"
+   ],
+   "despues": [],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se quita Mt 2:13-15 de pasajes: ese texto cuenta la huida, no la conquista. El vínculo con la huida queda en el resumen.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "lugares",
+   "antes": [
+    "jerusalen",
+    "belen",
+    "egipto",
+    "nazaret"
+   ],
+   "despues": [
+    "egipto",
+    "belen"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Lugares de la huida sola: Egipto primero; Jerusalén y Nazaret pasan a los otros eventos.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "maria-madre-de-jesus",
+    "jose-esposo-de-maria",
+    "herodes-el-grande",
+    "arquelao"
+   ],
+   "despues": [
+    "jose-esposo-de-maria",
+    "jesus",
+    "maria-madre-de-jesus",
+    "herodes-el-grande"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Arquelao sale: aparece en el regreso (Mt 2:22), no en la huida.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "presentes",
+   "antes": null,
+   "despues": [
+    "jose-esposo-de-maria",
+    "jesus",
+    "maria-madre-de-jesus"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "pasajes",
+   "antes": [
+    "Mt 2:1-23",
+    "Lu 2:39, 40"
+   ],
+   "despues": [
+    "Mt 2:13-15"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Pasajes de la huida sola; Mt 2:1-12, 16-23 y Lu 2:39, 40 pasan a los otros eventos de la fila 7.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "resumen",
+   "antes": "Unos astrólogos de Oriente pasan por Jerusalén y encuentran al niño en una casa de Belén. Avisado en sueños, José huye a Egipto; Herodes manda matar a los niños de Belén. Muerto Herodes, la familia se instala en Nazaret.",
+   "despues": "Un ángel avisa a José en un sueño de que Herodes busca al niño para matarlo. Esa misma noche sale con María y Jesús hacia Egipto, a más de 120 km, y allí se quedan hasta que Herodes muere.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen cuenta ahora solo la huida.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "razon",
+   "antes": "A7-A, fila 7: 1 a.e.c. o bien 1 e.c. Perspicacia «Herodes» (núm. 1, «Fecha de su muerte») da como probable que Herodes muriera en 1 a.e.c.",
+   "despues": "A7-A, fila 7, la fecha entre 1 a.e.c. y 1 e.c. Perspicacia «Herodes» (núm. 1) cree probable que muriera en 1 a.e.c. La nota de Mt 2:14 da la distancia.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón añade la distancia de la nota de Mt 2:14.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "fuentes",
+   "antes": [
+    "tnm-a7-a",
+    "mateo-2",
+    "lucas-2",
+    "it-herodes",
+    "jy-cap-7",
+    "jy-cap-8"
+   ],
+   "despues": [
+    "tnm-a7-a",
+    "mateo-2",
+    "it-herodes",
+    "jy-cap-8"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Salen lucas-2 y jy-cap-7, que ahora sostienen el regreso y la visita de los astrólogos.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "titulo",
+   "antes": "Los astrólogos, la huida a Egipto y el regreso a Nazaret",
+   "despues": "La familia de Jesús huye a Egipto",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El suceso juntaba cuatro escenas de Mt 2 con lugares y personas distintos; ahora es solo la huida (2:13-15). Los astrólogos, la matanza y el regreso tienen evento propio.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002489#1"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "juan-comienza-su-ministerio",
+   "campo": "lugares",
+   "valores": [
+    "desierto-de-juda"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "juan-comienza-su-ministerio",
+   "campo": "fuentes",
+   "valores": [
+    "it-desierto-de-juda"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003451"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "andres",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:18 llama a Andrés hermano de Simón Pedro.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000273"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:18-20: deja las redes con Pedro y sigue a Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002313#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juan-apostol",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:21 lo nombra con Juan, su hermano, en la barca de su padre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:21, 22: estaba en la barca con su padre, Zebedeo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002489#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4"
+     ],
+     "razon": "Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zebedeo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004672"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Ciudad santa",
+     "nota": "Se la llamaba así porque en ella estaba el templo de Jehová (Mt 4:5; Ne 11:1)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Galilea de las naciones",
+     "nota": "Expresión de Isaías que cita Mateo (Is 9:1; Mt 4:15), quizá porque muchos de sus habitantes no eran israelitas."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "nazaret",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "decapolis",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "perea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tentacion-en-el-desierto",
+   "campo": "lugares",
+   "valores": [
+    "desierto-de-juda",
+    "jerusalen"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tentacion-en-el-desierto",
+   "campo": "personas",
+   "valores": [
+    "satanas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tentacion-en-el-desierto",
+   "campo": "fuentes",
+   "valores": [
+    "it-desierto-de-juda",
+    "it-satanas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "tentacion-en-el-desierto",
+   "campo": "razon",
+   "antes": "A7-B, fila 2: c. octubre de 29, desierto de Judea. No hay ficha de lugar para ese desierto porque OpenBible no le da coordenada; va en Judea.",
+   "despues": "A7-B, fila 2: c. octubre de 29, desierto de Judea. Esa ficha no tiene punto, así que Judea va primero. Mt 4:5 lo lleva también a la parte más alta del templo, en Jerusalén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El desierto de Judá tiene ya ficha propia; se añaden Jerusalén (Mt 4:5) y Satanás, que tienta a Jesús.",
+    "fuente": "mateo-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "encarcelamiento-de-juan",
+   "campo": "lugares",
+   "valores": [
+    "galilea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "hijo-del-funcionario-y-sinagoga-de-nazaret",
+   "campo": "lugares",
+   "valores": [
+    "zabulon",
+    "neftali"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "primera-gira-por-galilea",
+   "campo": "lugares",
+   "valores": [
+    "siria",
+    "decapolis",
+    "jerusalen",
+    "judea",
+    "perea"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "primera-gira-por-galilea",
+   "campo": "resumen",
+   "antes": "Jesús sale de Capernaúm con los cuatro pescadores a predicar en las sinagogas de otras ciudades de Galilea. Su fama llega a Siria, la Decápolis y el otro lado del Jordán.",
+   "despues": "Jesús sale de Capernaúm con los cuatro pescadores a predicar en las sinagogas de Galilea y a curar toda clase de males. Su fama corre por Siria, y lo siguen multitudes de Galilea, la Decápolis, Jerusalén, Judea y Perea.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Mt 4:24, 25 dice que la fama llegó a Siria y que las multitudes venían de la Decápolis, Jerusalén, Judea y el otro lado del Jordán; el resumen las mezclaba.",
+    "fuente": "mateo-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "suegra-de-pedro",
+     "relacion": "suegra",
+     "deducido": false,
+     "fuentes": [
+      "mateo-8"
+     ],
+     "razon": "Mt 8:14 habla de la suegra de Pedro, enferma en su casa.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "suegra-de-pedro",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": null
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "suegra-de-pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "dejarlo-todo-por-el-reino",
+   "campo": "resumen",
+   "antes": "Jesús sale hacia Jerusalén pasando por Samaria. A quienes dicen que lo seguirán más tarde les responde que el Reino pide no mirar atrás.",
+   "despues": "De camino a Jerusalén por Samaria, un escriba se ofrece a seguir a Jesús y él le avisa de que no tiene casa propia. A otros que quieren seguirlo más tarde les dice que el Reino va primero.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no contaba la oferta del escriba de Mt 8:19, 20, que es la parte de Mateo en este suceso; se añade.",
+    "fuente": "mateo-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "resumen",
+   "antes": "Ciudad de la orilla noroeste del mar de Galilea, con oficina de impuestos y sinagoga. Jesús vivió allí durante su ministerio en Galilea; Mateo la llama «su propia ciudad».",
+   "despues": "Ciudad de la orilla noroeste del mar de Galilea, con oficina de impuestos y sinagoga. Jesús vivió allí durante su ministerio en Galilea, y Mt 9:1 la llama «su ciudad».",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La cita de Mt 9:1 pasa de «su propia ciudad» a «su ciudad», que es lo que dice la edición de estudio de la TNM.",
+    "fuente": "mateo-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "mateo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002938"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mateo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": true,
+     "fuentes": [
+      "mateo-9"
+     ],
+     "razon": "Mt 9:9, 10 con sus notas de estudio: la oficina estaba en Capernaúm o cerca, y la casa del banquete era la de Mateo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jairo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002307"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jairo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Pedro",
+     "nota": "Nombre griego que en la Biblia solo lleva él."
+    },
+    {
+     "nombre": "Simón",
+     "nota": "Forma griega de su nombre."
+    },
+    {
+     "nombre": "Symeón",
+     "nota": "Forma hebrea (Hch 15:14)."
+    },
+    {
+     "nombre": "Cefas",
+     "nota": "Equivalente semítico de Pedro (Jn 1:42)."
+    },
+    {
+     "nombre": "Simón Pedro"
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Pedro",
+     "nota": "Nombre griego que en la Biblia solo lleva él."
+    },
+    {
+     "nombre": "Simón",
+     "nota": "Nombre griego; como Symeón, sale de un verbo hebreo que significa «oír» (nota de estudio de Mt 10:2)."
+    },
+    {
+     "nombre": "Symeón",
+     "nota": "Forma griega del nombre hebreo Simeón (Hch 15:14), según la nota de estudio de Mt 10:2."
+    },
+    {
+     "nombre": "Cefas",
+     "nota": "Equivalente semítico de Pedro (Jn 1:42)."
+    },
+    {
+     "nombre": "Simón Pedro"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Symeón deja de figurar como forma hebrea: la nota de estudio de Mt 10:2, más reciente que Perspicacia, dice que es la forma griega de Simeón.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "andres",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2: primero Simón, llamado Pedro, y su hermano Andrés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2-4 lo nombra entre los doce apóstoles a los que Jesús da autoridad y envía.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "pedro",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2 lo pone junto a su hermano Simón Pedro.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2 lo llama hijo de Zebedeo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juan-apostol",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2: Santiago y su hermano Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2-4 lo nombra entre los doce apóstoles a los que Jesús da autoridad y envía.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hijo-de-zebedeo",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2 los nombra hermanos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:2-4 lo nombra entre los doce apóstoles a los que Jesús da autoridad y envía.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003466#1"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003185"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004385"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mateo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002313#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "alfeo-padre-de-santiago",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-alfeo"
+     ],
+     "razon": "Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002541#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004131#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "nombre",
+   "antes": "Simón el cananita",
+   "despues": "Simón el Cananita",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El nombre se escribe como en la TNM de estudio, «Simón el Cananita», con mayúscula (Mt 10:4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Simón el cananita"
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Simón el Cananita"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La grafía del nombre sigue a Mt 10:4 en la TNM de estudio.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002541#4"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:4 lo nombra el último de los doce y dice que más tarde lo traicionó.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Natanael"
+    },
+    {
+     "nombre": "Bartolomé",
+     "nota": "Nombre que le dan Mateo, Marcos y Lucas; significa «hijo de Tolmai» (Perspicacia)."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Natanael"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sale el nombre Bartolomé, que ahora tiene ficha propia. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "resumen",
+   "antes": "Apóstol de Caná, llamado Bartolomé en los otros tres Evangelios. Felipe lo llevó a Jesús, que lo describió como un israelita sin engaño; tras la resurrección estuvo en la pesca del mar de Galilea.",
+   "despues": "Discípulo de Caná al que Felipe llevó ante Jesús, que lo llamó israelita sin engaño. Tras la resurrección estuvo en la pesca del mar de Galilea. Probablemente es el apóstol Bartolomé.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen daba por seguro que era Bartolomé. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "razon",
+   "antes": "Perspicacia «Natanael» (párr. 2-4) y «Bartolomé» explican que son la misma persona y cuentan su historia (Jn 1:45-49; 21:2).",
+   "despues": "Perspicacia «Natanael» (párr. 2-4) cuenta su historia (Jn 1:45-49; 21:2). Que sea Bartolomé lo da solo como probable, igual que «Bartolomé»; por eso van en dos fichas.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón decía que Perspicacia los da por la misma persona. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "cana",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-cana"
+     ],
+     "razon": "Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3 nombra a Bartolomé entre los doce.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "cana",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-cana"
+     ],
+     "razon": "Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-natanael"
+     ],
+     "razon": "Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación «apóstol de» (Mt 10:3) pasa a Bartolomé; aquí queda la de discípulo, con Jn 1:45-51. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "pedro",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres",
+      "mateo-10"
+     ],
+     "razon": "Jn 1:40 lo llama hermano de Simón Pedro.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres"
+     ],
+     "razon": "Jn 1:44 dice que era de Betsaida; Perspicacia la llama su ciudad natal.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "marcos-1",
+      "it-andres"
+     ],
+     "razon": "Mr 1:29 habla de la casa de Simón y Andrés en Capernaúm.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-el-bautista",
+     "relacion": "discípulo de",
+     "fecha": {
+      "desde": 29,
+      "hasta": 29,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "29 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres"
+     ],
+     "razon": "Jn 1:35, 40: era uno de los discípulos de Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-andres",
+      "mateo-4"
+     ],
+     "razon": "Mt 10:2 lo nombra entre los doce apóstoles.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "pedro",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres",
+      "mateo-10"
+     ],
+     "razon": "Jn 1:40 lo llama hermano de Simón Pedro.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres"
+     ],
+     "razon": "Jn 1:44 dice que era de Betsaida; Perspicacia la llama su ciudad natal.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "marcos-1",
+      "it-andres"
+     ],
+     "razon": "Mr 1:29 habla de la casa de Simón y Andrés en Capernaúm.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-el-bautista",
+     "relacion": "maestro",
+     "fecha": {
+      "desde": 29,
+      "hasta": 29,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "29 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-andres"
+     ],
+     "razon": "Jn 1:35, 40: era uno de los discípulos de Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-andres",
+      "mateo-4"
+     ],
+     "razon": "Mt 10:2 lo nombra entre los doce apóstoles.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Las relaciones con Jesús («apóstol de») y con Juan el Bautista («discípulo de») se leían al revés con la regla «Y es el R de X»; las dos pasan a «maestro».",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:44: era de Betsaida.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "natanael",
+     "relacion": "amigo",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-natanael"
+     ],
+     "razon": "Jn 1:45; Perspicacia «Natanael» (párr. 3) dice que fue a buscar a su amigo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3 lo nombra entre los doce.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:44: era de Betsaida.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "natanael",
+     "relacion": "amigo",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-natanael"
+     ],
+     "razon": "Jn 1:45; Perspicacia «Natanael» (párr. 3) dice que fue a buscar a su amigo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3 lo nombra entre los doce.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "mateo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": true,
+     "fuentes": [
+      "marcos-2",
+      "it-capernaum",
+      "mateo-9"
+     ],
+     "razon": "Perspicacia «Capernaum» (párr. 7) sitúa en Capernaúm su casa y el banquete (Mr 2:15).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": true,
+     "fuentes": [
+      "marcos-2",
+      "it-capernaum",
+      "mateo-9"
+     ],
+     "razon": "Perspicacia «Capernaum» (párr. 7) sitúa en Capernaúm su casa y el banquete (Mr 2:15).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-esposa-de-clopas",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "marcos-15"
+     ],
+     "razon": "Perspicacia «Santiago» (núm. 3): sería su madre si Alfeo y Clopas son la misma persona (Mr 15:40).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "alfeo-padre-de-santiago",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-alfeo"
+     ],
+     "razon": "Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-esposa-de-clopas",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "marcos-15"
+     ],
+     "razon": "Perspicacia «Santiago» (núm. 3): sería su madre si Alfeo y Clopas son la misma persona (Mr 15:40).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "alfeo-padre-de-santiago",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-alfeo"
+     ],
+     "razon": "Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "apóstol de",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:4.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:4.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como pide la tabla de relaciones (Mt 10:2-4).",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "tercera-gira-y-envio-de-los-doce",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "despues": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Mt 10:3 nombra a Bartolomé, que ahora tiene ficha propia; natanael sale de personas. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betsaida",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-11"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "juan-envia-discipulos",
+   "campo": "lugares",
+   "antes": [
+    "tiberiades",
+    "galilea"
+   ],
+   "despues": [
+    "galilea",
+    "nain",
+    "tiberiades"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Tiberíades iba primero y el mapa ponía allí a Jesús. A7-C sitúa la escena en Galilea, en Naín o cerca; Tiberíades es solo la cárcel de Juan.",
+    "fuente": "mateo-11"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "juan-envia-discipulos",
+   "campo": "presentes",
+   "antes": null,
+   "despues": [
+    "jesus"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "presentes: [jesus]. Juan estaba preso (Mt 11:2) y no en la escena, así que el mapa ya no lo sitúa en Galilea.",
+    "fuente": "mateo-11"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-12"
+     ],
+     "razon": "Mt 12:46, 47: su madre va a buscarlo mientras enseña.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pecado-sin-perdon",
+   "campo": "resumen",
+   "antes": "Jesús libra a un endemoniado ciego y mudo. Unos escribas venidos de Jerusalén lo atribuyen a Beelzebub, y él advierte que blasfemar contra el espíritu santo no tiene perdón.",
+   "despues": "Jesús libra a un endemoniado ciego y mudo. Los fariseos, y escribas llegados de Jerusalén, lo atribuyen a Belcebú; él advierte que blasfemar contra el espíritu santo no tiene perdón.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La TNM escribe Belcebú, no Beelzebub, y Mt 12:24 pone la acusación en boca de los fariseos; Mr 3:22 la da a los escribas.",
+    "fuente": "mateo-12"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Lu 2:7: María da a luz a su primer hijo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "Mt 13:55 nombra a José entre sus hermanos; Perspicacia «José», núm. 9, lo llama medio hermano.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-simon"
+     ],
+     "razon": "Mt 13:55 nombra a Simón entre sus hermanos; Perspicacia «Simón», núm. 4, lo llama medio hermano menor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-judas"
+     ],
+     "razon": "Mt 13:55 nombra a Judas entre sus hermanos; Perspicacia «Judas», núm. 5, cree que ese hermano escribió la carta de Judas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "hijo adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Perspicacia «José» (núm. 8) lo llama padre adoptivo de Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002313#4"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "mateo-13"
+     ],
+     "razon": "Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Jud 1; Perspicacia «Judas», apartado 5.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002541#5"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta entre ellos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "medio hermano",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Perspicacia deduce que es uno de los cuatro medio hermanos de Mt 13:55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "nazaret",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jesus-crece-en-nazaret",
+   "campo": "personas",
+   "valores": [
+    "jose-hijo-de-jose",
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jesus-crece-en-nazaret",
+   "campo": "fuentes",
+   "valores": [
+    "it-simon"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "parabolas-del-reino",
+   "campo": "resumen",
+   "antes": "Junto al mar, cerca de Capernaúm, Jesús enseña desde una barca con ejemplos del campo: el sembrador, la mala hierba, el grano de mostaza, la levadura y otros sobre el Reino.",
+   "despues": "Cerca de Capernaúm, Jesús enseña a la multitud desde una barca con comparaciones del Reino: sembrador, mala hierba, mostaza y levadura. Después, en casa, explica a los discípulos la mala hierba y añade tesoro, perla y red.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen ponía todas las comparaciones en la barca; Mt 13:36-52 cuenta que la explicación y las tres últimas fueron ya en la casa.",
+    "fuente": "mateo-13"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hermano-de-jesus",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-judas",
+      "judas-1"
+     ],
+     "razon": "Jud 1.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "medio hermano",
+     "deducido": true,
+     "fuentes": [
+      "it-judas",
+      "mateo-13"
+     ],
+     "razon": "Perspicacia deduce que es uno de los cuatro medio hermanos de Mt 13:55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-judas"
+     ],
+     "razon": "Perspicacia, párr. 23: acompañó a su madre María.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta entre ellos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hermano-de-jesus",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-judas",
+      "judas-1"
+     ],
+     "razon": "Jud 1.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-judas",
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 lo nombra entre los hermanos de Jesús; Perspicacia lo identifica con el escritor de la carta.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-judas"
+     ],
+     "razon": "Perspicacia, párr. 23: acompañó a su madre María.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta entre ellos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Jesús pasa a deducido: false, porque Mt 13:55 lo dice. Lo que deduce Perspicacia es que ese Judas escribió la carta.",
+    "fuente": "mateo-13"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "herodes-antipas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002000#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "herodes-antipas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "herodias",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "mateo-14",
+      "it-herodes"
+     ],
+     "razon": "Mt 14:3, 4: Juan le reprochaba tener por esposa a Herodías; Perspicacia «Herodes» (núm. 2) cuenta la boda.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "filipo-esposo-de-herodias",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-14",
+      "it-herodes"
+     ],
+     "razon": "Mt 14:3 llama a Filipo hermano de Herodes; Perspicacia «Herodes» (núm. 2 y 5) precisa que eran medio hermanos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "tiberiades",
+     "deducido": true,
+     "fuentes": [
+      "mateo-14",
+      "it-tiberiades"
+     ],
+     "razon": "Las notas de Mt 14:3 y 6 ponen su residencia en Tiberíades; Perspicacia «Tiberíades» (núm. 1) la da como sede de su tetrarquía.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "herodias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002002"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "herodias",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-juan-el-bautista",
+   "campo": "personas",
+   "valores": [
+    "salome-hija-de-filipo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "it-salome"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tradiciones-humanas",
+   "campo": "personas",
+   "valores": [
+    "pedro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "sirofenicia-y-4000",
+   "campo": "lugares",
+   "valores": [
+    "mar-de-galilea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "fenicia",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tiro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Barjonás",
+     "nota": "«Hijo de Jonás» con la palabra aramea bar; forma que da la nota de estudio de Mt 16:17."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-16",
+      "it-jonas"
+     ],
+     "razon": "Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "it-jonas"
+     ],
+     "razon": "Perspicacia «Jonás», núm. 2, lo da como padre de los dos hermanos; Mt 16:17 solo nombra a Simón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jonas-profeta",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jonas-padre-de-pedro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-17"
+     ],
+     "razon": "Mt 17:24: los cobradores del impuesto le preguntan por Jesús como «tu maestro».",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juan-apostol",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-17"
+     ],
+     "razon": "Mt 17:1 nombra a Juan como hermano de Santiago.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-17"
+     ],
+     "razon": "Mt 17:1-6: Jesús lo lleva a la montaña con Pedro y su hermano, y el texto los llama sus discípulos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-17"
+     ],
+     "razon": "Mt 17:1-6: Jesús lo lleva a la montaña con Pedro y Santiago, y el texto los llama sus discípulos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "el-mayor-en-el-reino",
+   "campo": "personas",
+   "valores": [
+    "pedro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-19"
+     ],
+     "razon": "Mt 19:27, 28: Pedro dice que él y los demás lo dejaron todo por seguir a Jesús, y Jesús promete tronos a quienes lo siguieron.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "joven-rico-y-trabajadores-de-la-vina",
+   "campo": "personas",
+   "valores": [
+    "pedro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20"
+     ],
+     "razon": "Mt 20:20 lo cuenta entre los hijos de Zebedeo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-apostol",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20"
+     ],
+     "razon": "Mt 20:24 llama a los dos «hermanos».",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20"
+     ],
+     "razon": "Mt 20:17-24: sube con Jesús entre los doce discípulos; los otros diez se indignan con él y con su hermano.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20"
+     ],
+     "razon": "Mt 20:20 lo cuenta entre los hijos de Zebedeo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20"
+     ],
+     "razon": "Mt 20:17-24: es uno de los doce que Jesús lleva aparte camino de Jerusalén; los otros diez se enfadan con los dos hermanos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "bartimeo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000570"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bartimeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "mateo-20",
+      "marcos-10",
+      "it-bartimeo"
+     ],
+     "razon": "Recobrada la vista, siguió a Jesús por el camino (Mt 20:34; Mr 10:52). Mateo no lo nombra; la nota de Mt 20:30 lo identifica.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "perea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-21"
+     ],
+     "razon": "Mt 21:11: la multitud lo presenta como el profeta de Nazaret de Galilea.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-21"
+     ],
+     "razon": "Mt 21:9, 15: lo aclaman como Hijo de David; la nota de estudio dice que así reconocían que venía de David y era el Mesías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-de-los-olivos",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-21"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "entrada-triunfal-en-jerusalen",
+   "campo": "lugares",
+   "antes": [
+    "betania",
+    "betfague",
+    "monte-de-los-olivos",
+    "jerusalen",
+    "monte-moria"
+   ],
+   "despues": [
+    "jerusalen",
+    "betania",
+    "betfague",
+    "monte-de-los-olivos",
+    "monte-moria"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jerusalén pasa a primer lugar: es donde ocurre lo principal (Mt 21:10), y el mapa situaba a Jesús en Betania.",
+    "fuente": "mateo-21"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "higuera-maldita-y-limpieza-del-templo",
+   "campo": "lugares",
+   "antes": [
+    "betania",
+    "jerusalen",
+    "monte-moria"
+   ],
+   "despues": [
+    "jerusalen",
+    "betania",
+    "monte-moria"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jerusalén pasa a primer lugar: la limpieza del templo es lo principal (Mt 21:12, 13), y el mapa situaba a Jesús en Betania.",
+    "fuente": "mateo-21"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-22"
+     ],
+     "razon": "Mt 21:9, 15: lo aclaman como Hijo de David; la nota de estudio dice que así reconocían que venía de David y era el Mesías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zacarias-profeta",
+   "campo": "no_confundir_con",
+   "valores": [
+    "zacarias-hijo-de-jehoiada"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zacarias-padre-de-juan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "zacarias-hijo-de-jehoiada"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zacarias-de-israel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "zacarias-hijo-de-jehoiada"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "senal-de-su-presencia",
+   "campo": "lugares",
+   "valores": [
+    "monte-moria"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "senal-de-su-presencia",
+   "campo": "resumen",
+   "antes": "Sentado en el monte de los Olivos frente al templo, Jesús predice su destrucción y explica a cuatro apóstoles la señal de su presencia.",
+   "despues": "Al salir del templo, Jesús predice que será demolido por completo. Después, sentado en el monte de los Olivos, explica a cuatro apóstoles qué señal marcará su presencia y el final del sistema.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La predicción sobre el templo la hizo al salir de él (Mt 24:1, 2; Mr 13:1, 2), antes de sentarse en el monte. Se corrige el resumen y se añade el monte Moria, donde estaba el templo, a los lugares.",
+    "fuente": "mateo-24"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "senal-de-su-presencia",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. La nota de Mt 24:3 nombra a Pedro, Santiago, Juan y Andrés (Mr 13:3); B12-A.",
+   "despues": "La tabla A7-G da el día y el lugar. Mt 24:1, 2 sitúa la predicción al dejar el templo, en el monte Moria; la nota de Mt 24:3 nombra a Andrés, Pedro, Santiago y Juan (Mr 13:3); B12-A.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica ahora por qué el monte Moria (el templo) es el segundo lugar del suceso.",
+    "fuente": "mateo-24"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "destruccion-de-jerusalen-70",
+   "campo": "pasajes",
+   "valores": [
+    "Mt 24:1, 2",
+    "Mt 24:15-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "destruccion-de-jerusalen-70",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "revuelta-judia-66",
+   "campo": "pasajes",
+   "valores": [
+    "Mt 24:15, 16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "revuelta-judia-66",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-24"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "razon",
+   "antes": "Perspicacia («Judea») describe el lugar; aparece en Heb 13:24. La coordenada es de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Judea»: límites en el párr. 1; en 66 e.c. los cristianos huyeron de allí a las montañas, como mandó Jesús en Mt 24:16. La coordenada es de OpenBible: solo tomamos el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón citaba Heb 13:24, pero Judea no sale en Hebreos 13: ese versículo nombra Italia. Se quita la cita y se pone Mt 24:16.",
+    "fuente": "mateo-24"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "antes": [
+    "it-judea",
+    "hebreos-13",
+    "openbible-geo",
+    "mateo-2",
+    "mateo-3"
+   ],
+   "despues": [
+    "it-judea",
+    "openbible-geo",
+    "mateo-2",
+    "mateo-3",
+    "mateo-24"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sale hebreos-13 de fuentes: Judea no aparece en Hebreos 13 (Heb 13:24 nombra Italia). Entra Mt 24:16.",
+    "fuente": "mateo-24"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "enlaces",
+   "antes": [
+    {
+     "titulo": "Perspicacia: «Judea»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002544",
+     "tipo": "perspicacia"
+    },
+    {
+     "titulo": "Hebreos 13 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/13",
+     "tipo": "biblia"
+    }
+   ],
+   "despues": [
+    {
+     "titulo": "Perspicacia: «Judea»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002544",
+     "tipo": "perspicacia"
+    },
+    {
+     "titulo": "Mateo 24 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/24",
+     "tipo": "biblia"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sale el enlace a Hebreos 13, que no nombra Judea; entra Mateo 24.",
+    "fuente": "mateo-24"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "virgenes-talentos-ovejas-y-cabras",
+   "campo": "personas",
+   "valores": [
+    "pedro",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "andres"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "virgenes-talentos-ovejas-y-cabras",
+   "campo": "fuentes",
+   "valores": [
+    "jy-cap-111"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "virgenes-talentos-ovejas-y-cabras",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. Mt 25:1-46.",
+   "despues": "La tabla A7-G da el día y el lugar. Mt 25:1-46. Jesús sigue contestando a los cuatro apóstoles que le pidieron la señal en el monte (jy cap. 111 y 112).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añaden como presentes Pedro, Santiago, Juan y Andrés: las parábolas continúan la respuesta que Jesús les daba en el monte de los Olivos.",
+    "fuente": "mateo-25"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caifas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000856"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-el-leproso",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004131#6"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "maria-de-betania",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002918#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "malco",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002869"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-de-betania",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "malco",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betania",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-de-los-olivos",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:14 y 26:47 lo llaman uno de los Doce.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:37 habla de los dos hijos de Zebedeo; la nota de estudio dice que eran Santiago y Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:36-40: uno de los discípulos que Jesús lleva aparte en Getsemaní para que velen con él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:37 habla de los dos hijos de Zebedeo; la nota de estudio dice que eran Santiago y Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:36-40: uno de los discípulos que Jesús lleva aparte en Getsemaní para que velen con él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:69-73: la sirvienta y los presentes lo reconocen como uno de los que andaban con Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-26"
+     ],
+     "razon": "Mt 26:71: una muchacha lo llama Jesús el Nazareno.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caifas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "mateo-26",
+      "tnm-b12-b"
+     ],
+     "razon": "Mt 26:3 y 26:57 hablan del patio y la casa de Caifás; el apéndice B12-B pone esa casa en Jerusalén, con signo de duda.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "despide-a-judas",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. Perspicacia «Judas» (párr. 14-15) muestra que salió antes de la Cena del Señor.",
+   "despues": "La tabla A7-H da el día y el lugar. Perspicacia «Judas» (párr. 14-15) muestra que salió antes de la Cena del Señor.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón citaba la tabla A7-G, pero este suceso está en A7-H (parte 2), que es la que ya lleva en fuentes.",
+    "fuente": "tnm-a7-h"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "cena-del-senor",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. La tabla remite también a 1Co 11:23-25; B12-B.",
+   "despues": "La tabla A7-H da el día y el lugar. La tabla remite también a 1Co 11:23-25; B12-B.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón citaba la tabla A7-G, pero este suceso está en A7-H (parte 2), que es la que ya lleva en fuentes.",
+    "fuente": "tnm-a7-h"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "predice-las-negaciones-de-pedro",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. Mt 26:31-35 y los pasajes paralelos.",
+   "despues": "La tabla A7-H da el día y el lugar. Mt 26:31-35 y los pasajes paralelos.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón citaba la tabla A7-G, pero este suceso está en A7-H (parte 2), que es la que ya lleva en fuentes.",
+    "fuente": "tnm-a7-h"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "poncio-pilato",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003485"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "barrabas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000556"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "simon-de-cirene",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004131#7"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002918#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "maria-esposa-de-clopas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002918#4"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jose-de-arimatea",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002515#10"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "golgota",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27",
+      "it-golgota"
+     ],
+     "razon": "Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "poncio-pilato",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "cesarea",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "it-pilato"
+     ],
+     "razon": "La nota de Mt 27:27 dice que residía habitualmente en Cesarea y subía a Jerusalén en las fiestas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-de-cirene",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "cirene",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "it-simon",
+      "it-cirene"
+     ],
+     "razon": "Mt 27:32 lo llama hombre de Cirene; Perspicacia «Simón», núm. 7, dice que era natural de allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-de-arimatea",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "arimatea",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27",
+      "it-arimatea"
+     ],
+     "razon": "Mt 27:57: un hombre rico de Arimatea.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27"
+     ],
+     "razon": "Mt 27:57 dice que se había hecho discípulo de Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-27",
+    "mateo-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27"
+     ],
+     "razon": "Mt 27:55, 56: estaba entre las mujeres que lo habían acompañado desde Galilea para atenderlo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "no_afirmamos",
+   "antes": [
+    "Se sabe si Magdala era su pueblo natal o solo el lugar donde vivía."
+   ],
+   "despues": [
+    "Que Magdala fuera su pueblo natal o solo el lugar donde vivía: Perspicacia dice que no se sabe con certeza."
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La frase decía lo contrario de lo que no afirmamos: Perspicacia y la nota de Mt 27:56 no saben si Magdala era su pueblo natal o su residencia.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-esposa-de-clopas",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-esposa-de-clopas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27"
+     ],
+     "razon": "Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-27",
+    "marcos-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-esposa-de-clopas",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27"
+     ],
+     "razon": "Mt 27:56 la llama madre de Santiago y de Josés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "joses",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "marcos-15",
+      "it-joses"
+     ],
+     "razon": "Mt 27:56 y Mr 15:40 dan a Santiago el Menor y a Josés la misma madre; la nota de Mr 15:40 identifica a ese Santiago con el hijo de Alfeo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Santiago, hijo de Alfeo"
+    },
+    {
+     "nombre": "Santiago el Menos",
+     "nota": "Probablemente el mismo, si Alfeo y Clopas eran la misma persona (Perspicacia)."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Santiago, hijo de Alfeo"
+    },
+    {
+     "nombre": "Santiago el Menor",
+     "nota": "Así lo llama Mr 15:40, y la nota de estudio de ese versículo lo identifica con el hijo de Alfeo. Perspicacia usa la forma antigua «el Menos»."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La TNM de estudio (Mr 15:40 y la nota de Mt 27:56) dice «Santiago el Menor» y lo identifica con el hijo de Alfeo; «el Menos» es la forma de Perspicacia.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "resumen",
+   "antes": "Uno de los doce apóstoles, hijo de Alfeo. Si Alfeo es el Clopas de Jn 19:25, como se cree, su madre sería María, la esposa de Clopas, y él sería Santiago el Menos.",
+   "despues": "Uno de los doce apóstoles, hijo de Alfeo. La TNM de estudio lo identifica con Santiago el Menor, hermano de Josés, cuya madre, María, presenció la muerte de Jesús.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nota de Mr 15:40 identifica sin reservas a Santiago el Menor con el hijo de Alfeo; lo que se cree es solo que Alfeo y Clopas son el mismo.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "razon",
+   "antes": "Perspicacia «Santiago» (núm. 3) da la identificación probable de Alfeo con Clopas.",
+   "despues": "Perspicacia «Santiago» (núm. 3) da como probable que Alfeo y Clopas sean el mismo. La nota de Mr 15:40 lo llama Santiago el Menor; Mt 27:56 nombra a su madre y a su hermano.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita ahora la nota de Mr 15:40 y Mt 27:56, que sostienen el nombre y la familia.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "salome-discipula",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "it-santiago",
+      "it-salome"
+     ],
+     "razon": "Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Santiago», núm. 2, y la nota de Mr 15:40 creen que era Salomé.",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "salome-discipula",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "it-juan",
+      "it-salome"
+     ],
+     "razon": "Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Juan», núm. 3, y la nota de Mr 15:40 creen que era Salomé.",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "golgota",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "akeldama",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Campo de Sangre",
+     "nota": "Así lo llama Mt 27:8; Hch 1:19 da la misma traducción de Akéldama."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-27",
+    "mateo-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Ciudad santa",
+     "nota": "Así la llama Mt 27:53 (nota de estudio; también Mt 4:5)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-jesus",
+   "campo": "personas",
+   "valores": [
+    "salome-discipula"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "muerte-de-judas",
+   "campo": "resumen",
+   "antes": "Arrepentido, Judas arroja en el templo las 30 piezas de plata y se ahorca. Con ese dinero los sacerdotes compran el campo de un alfarero, al que llaman Campo de Sangre.",
+   "despues": "Lleno de remordimiento, pero sin arrepentirse de verdad, Judas tira en el templo las 30 monedas de plata y se ahorca. Con ellas los sacerdotes compran el campo del alfarero, que pasa a llamarse Campo de Sangre.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nota de Mt 27:3 explica que Judas sintió remordimiento, pero que nada indica un arrepentimiento real; el resumen decía «arrepentido».",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "muerte-de-judas",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "judas-iscariote"
+   ],
+   "despues": [
+    "judas-iscariote",
+    "jesus"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Es la muerte de Judas: el protocolo pone primero a quien muere, y Jesús iba primero.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "golgota",
+   "campo": "tipo",
+   "antes": "monte",
+   "despues": "region",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "tipo pasa de monte a region: la nota de Mt 27:33 dice que la Biblia no lo pone en una colina, y la lista no tiene tipo para un sitio.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "mateo-28"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "mandato-de-hacer-discipulos",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "tomas",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "despues": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "tomas",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Entre los once de Mt 28:16 va Bartolomé (Mt 10:3), que ahora tiene ficha; sale natanael. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.",
+    "fuente": "mateo-28"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "eleccion-de-los-doce",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "despues": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Mr 3:18 y Lu 6:14 nombran a Bartolomé, que ahora tiene ficha propia; natanael sale de personas. Van en dos fichas con mismo_que pendiente, porque Perspicacia solo lo da como probable.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "segunda-gira-por-galilea",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "juana",
+    "maria-magdalena",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "despues": [
+    "jesus",
+    "juana",
+    "maria-magdalena",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "tomas",
+    "tadeo",
+    "simon-el-cananita",
+    "judas-iscariote"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Entre los doce de Lu 8:1 va Bartolomé, el nombre de las listas de apóstoles (Mt 10:3); sale natanael, que tiene ficha aparte con mismo_que pendiente.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ascension-de-jesus",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "tomas",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "despues": [
+    "jesus",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "tomas",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Hch 1:13 nombra a Bartolomé entre los once; sale natanael, que tiene ficha aparte con mismo_que pendiente.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-a-tomas",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "tomas",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "natanael",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "despues": [
+    "jesus",
+    "tomas",
+    "pedro",
+    "andres",
+    "santiago-hijo-de-zebedeo",
+    "juan-apostol",
+    "felipe-apostol",
+    "bartolome",
+    "mateo",
+    "santiago-hijo-de-alfeo",
+    "simon-el-cananita",
+    "tadeo"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Los once de este suceso siguen la lista de apóstoles, que nombra a Bartolomé (Mt 10:3); sale natanael, que tiene ficha aparte con mismo_que pendiente.",
+    "fuente": "mateo-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "belen",
+     "deducido": false,
+     "fuentes": [
+      "lucas-2",
+      "it-jesucristo",
+      "mateo-2"
+     ],
+     "razon": "Lu 2:4-7; Perspicacia «Jesucristo» («Primeros años»).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2",
+      "lucas-2",
+      "it-nazaret",
+      "mateo-13",
+      "mateo-21",
+      "mateo-26"
+     ],
+     "razon": "Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4",
+      "mateo-9",
+      "it-capernaum"
+     ],
+     "razon": "Mt 4:13 dice que se fue a vivir allí y Mt 9:1 la llama «su propia ciudad»; Perspicacia «Capernaum» (párr. 5 y 7).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "lucas-2",
+      "mateo-1",
+      "mateo-12",
+      "mateo-13"
+     ],
+     "razon": "Lu 2:7: María da a luz a su primer hijo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "it-jose",
+      "lucas-3",
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «José» (núm. 8) lo llama padre adoptivo; Lu 3:23 dice que la gente lo creía hijo de José.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-jesucristo"
+     ],
+     "razon": "Mt 13:55 nombra a Santiago entre sus hermanos; Perspicacia lo trata como medio hermano.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-el-bautista",
+     "relacion": "pariente",
+     "deducido": true,
+     "fuentes": [
+      "lucas-1",
+      "it-jesucristo"
+     ],
+     "razon": "Lu 1:36 hace a Elisabet pariente de María; Perspicacia «Jesucristo» llama a Juan pariente de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "mateo-21",
+      "mateo-22"
+     ],
+     "razon": "Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "belen",
+     "deducido": true,
+     "fuentes": [
+      "mateo-2",
+      "it-jose"
+     ],
+     "razon": "Mt 2:11: los astrólogos lo hallan en una casa de Belén; Perspicacia «José» (núm. 8) dice que la familia residía allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Mt 2:14, 15: vivió en Egipto con sus padres hasta la muerte de Herodes.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "Mt 13:55 nombra a José entre sus hermanos; Perspicacia «José», núm. 9, lo llama medio hermano.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-simon"
+     ],
+     "razon": "Mt 13:55 nombra a Simón entre sus hermanos; Perspicacia «Simón», núm. 4, lo llama medio hermano menor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-judas"
+     ],
+     "razon": "Mt 13:55 nombra a Judas entre sus hermanos; Perspicacia «Judas», núm. 5, cree que ese hermano escribió la carta de Judas.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "golgota",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27",
+      "it-golgota"
+     ],
+     "razon": "Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "belen",
+     "deducido": false,
+     "fuentes": [
+      "lucas-2",
+      "it-jesucristo",
+      "mateo-2"
+     ],
+     "razon": "Lu 2:4-7; Perspicacia «Jesucristo» («Primeros años»).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2",
+      "lucas-2",
+      "it-nazaret",
+      "mateo-13",
+      "mateo-21",
+      "mateo-26"
+     ],
+     "razon": "Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4",
+      "mateo-9",
+      "it-capernaum"
+     ],
+     "razon": "Mt 4:13 dice que se fue a vivir allí y Mt 9:1 la llama «su ciudad»; Perspicacia «Capernaum» (párr. 5 y 7).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "lucas-2",
+      "mateo-1",
+      "mateo-12",
+      "mateo-13"
+     ],
+     "razon": "Lu 2:7: María da a luz a su primer hijo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "it-jose",
+      "lucas-3",
+      "mateo-1"
+     ],
+     "razon": "Perspicacia «José» (núm. 8) lo llama padre adoptivo; Lu 3:23 dice que la gente lo creía hijo de José.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-jesucristo"
+     ],
+     "razon": "Mt 13:55 nombra a Santiago entre sus hermanos; Perspicacia lo trata como medio hermano.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-el-bautista",
+     "relacion": "pariente",
+     "deducido": true,
+     "fuentes": [
+      "lucas-1",
+      "it-jesucristo"
+     ],
+     "razon": "Lu 1:36 hace a Elisabet pariente de María; Perspicacia «Jesucristo» llama a Juan pariente de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "mateo-21",
+      "mateo-22"
+     ],
+     "razon": "Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1"
+     ],
+     "razon": "Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "belen",
+     "deducido": true,
+     "fuentes": [
+      "mateo-2",
+      "it-jose"
+     ],
+     "razon": "Mt 2:11: los astrólogos lo hallan en una casa de Belén; Perspicacia «José» (núm. 8) dice que la familia residía allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "mateo-2"
+     ],
+     "razon": "Mt 2:14, 15: vivió en Egipto con sus padres hasta la muerte de Herodes.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-jose"
+     ],
+     "razon": "Mt 13:55 nombra a José entre sus hermanos; Perspicacia «José», núm. 9, lo llama medio hermano.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-simon"
+     ],
+     "razon": "Mt 13:55 nombra a Simón entre sus hermanos; Perspicacia «Simón», núm. 4, lo llama medio hermano menor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13",
+      "it-judas"
+     ],
+     "razon": "Mt 13:55 nombra a Judas entre sus hermanos; Perspicacia «Judas», núm. 5, cree que ese hermano escribió la carta de Judas.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "golgota",
+     "deducido": false,
+     "fuentes": [
+      "mateo-27",
+      "it-golgota"
+     ],
+     "razon": "Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».",
+    "fuente": "mateo-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-alfeo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-esposa-de-clopas",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "marcos-15",
+      "mateo-27"
+     ],
+     "razon": "Perspicacia «Santiago» (núm. 3): sería su madre si Alfeo y Clopas son la misma persona (Mr 15:40).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "alfeo-padre-de-santiago",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-alfeo"
+     ],
+     "razon": "Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "joses",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "marcos-15",
+      "it-joses"
+     ],
+     "razon": "Mt 27:56 y Mr 15:40 dan a Santiago el Menor y a Josés la misma madre; la nota de Mr 15:40 identifica a ese Santiago con el hijo de Alfeo.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10"
+     ],
+     "razon": "Mt 10:3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-esposa-de-clopas",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "marcos-15",
+      "mateo-27",
+      "it-maria"
+     ],
+     "razon": "Mt 27:56 la llama madre de Santiago y Josés; la nota de Mr 15:40 hace a ese Santiago el hijo de Alfeo, y Perspicacia «María», núm. 4, a ella la esposa de Clopas.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "alfeo-padre-de-santiago",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-10",
+      "it-alfeo"
+     ],
+     "razon": "Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "joses",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "mateo-27",
+      "marcos-15",
+      "it-joses"
+     ],
+     "razon": "Mt 27:56 y Mr 15:40 dan a Santiago el Menor y a Josés la misma madre; la nota de Mr 15:40 identifica a ese Santiago con el hijo de Alfeo.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón de la relación con su madre era condicional («sería su madre si…»); la nota de Mr 15:40 ya identifica a este Santiago con el de Mt 27:56.",
+    "fuente": "mateo-27"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago",
+      "galatas-1"
+     ],
+     "razon": "Gál 1:19 lo llama hermano del Señor; Perspicacia, párr. 10: hijo de José y María.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago"
+     ],
+     "razon": "Perspicacia, párr. 10: hijo de José y María (Mt 13:55).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "it-judas",
+      "judas-1",
+      "mateo-13"
+     ],
+     "razon": "Jud 1: el escritor se presenta como hermano de Santiago; Perspicacia «Judas», apartado 5.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago-carta",
+      "galatas-1"
+     ],
+     "razon": "Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "mateo-13"
+     ],
+     "razon": "Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago",
+      "galatas-1"
+     ],
+     "razon": "Gál 1:19 lo llama hermano del Señor; Perspicacia, párr. 10: hijo de José y María.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago"
+     ],
+     "razon": "Perspicacia, párr. 10: hijo de José y María (Mt 13:55).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-judas",
+      "judas-1",
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 los nombra a los dos entre los hermanos de Jesús, y en Jud 1 el escritor se presenta como hermano de Santiago.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "it-santiago-carta",
+      "galatas-1"
+     ],
+     "razon": "Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "it-santiago",
+      "mateo-13"
+     ],
+     "razon": "Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Judas pasa a deducido: false, porque la afirman Mt 13:55 y Jud 1; la inversa ya lo decía así.",
+    "fuente": "mateo-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": true,
+     "fuentes": [
+      "mateo-13"
+     ],
+     "razon": "Mt 13:55 da a María como madre de Jesús y a Judas entre sus hermanos; la nota los hace hijos de María.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "levadura-y-ciego-de-betsaida",
+   "campo": "personas",
+   "antes": [
+    "jesus",
+    "herodes-antipas"
+   ],
+   "despues": [
+    "jesus"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sale herodes-antipas: Mr 8:15 solo nombra su levadura y él no está en la escena.",
+    "fuente": "mateo-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "levadura-y-ciego-de-betsaida",
+   "campo": "resumen",
+   "antes": "Cruzando en barca hacia Betsaida, Jesús advierte a sus discípulos contra la levadura, es decir, las enseñanzas, de fariseos y de Herodes. En Betsaida devuelve la vista a un ciego poco a poco.",
+   "despues": "Cruzando el lago hacia Betsaida, Jesús previene a sus discípulos contra la levadura, sus enseñanzas, de fariseos y saduceos (Mateo) y de Herodes (Marcos). En Betsaida devuelve la vista a un ciego poco a poco.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen omitía a los saduceos, que nombra Mt 16:6, 11, 12.",
+    "fuente": "mateo-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "levadura-y-ciego-de-betsaida",
+   "campo": "razon",
+   "antes": "La tabla A7-E da cuándo y dónde. Mt 16:12 explica la levadura; Mr 8:15 nombra a Herodes; jy cap. 58.",
+   "despues": "La tabla A7-E da cuándo y dónde. Mt 16:6, 12 nombra a fariseos y saduceos; Mr 8:15, a Herodes, que no está presente; jy cap. 58.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón dice ahora qué nombra cada Evangelio y que Herodes no está en la escena.",
+    "fuente": "mateo-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "lat",
+   "antes": 31.668687,
+   "despues": null,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sin punto de OpenBible ni de jw.org, lat y lon van a null y la zona calculada pasa a candidatos. Antes: 31.668687.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "lon",
+   "antes": 35.181342,
+   "despues": null,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sin punto de OpenBible ni de jw.org, lat y lon van a null y la zona calculada pasa a candidatos. Antes: 35.181342.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "coord_fuente",
+   "antes": "calculo",
+   "despues": null,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sin punto de OpenBible ni de jw.org, lat y lon van a null y la zona calculada pasa a candidatos. La cuenta va en la nota del candidato.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "coord_nota",
+   "antes": "Calculado: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. OpenBible no tiene ficha de Judá; el territorio es mucho más amplio que ese punto.",
+   "despues": null,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sin punto de OpenBible ni de jw.org, lat y lon van a null y la zona calculada pasa a candidatos. Esta nota explicaba el punto, que ya no existe.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "candidatos",
+   "antes": null,
+   "despues": [
+    {
+     "nombre": "El territorio de Judá, alrededor de Jerusalén, Belén y Hebrón",
+     "geometria": {
+      "tipo": "zona",
+      "lat": 31.668687,
+      "lon": 35.181342,
+      "radio_km": 50
+     },
+     "estado": "favorecido_nivel_1",
+     "fuentes": [
+      "it-juda",
+      "openbible-geo"
+     ],
+     "razon": "Perspicacia «Judá», núm. 2, párr. 15, lo extiende del mar Muerto al Mediterráneo; Jerusalén, Belén y Hebrón quedan dentro.",
+     "nota": "Centro: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. El radio de 50 km es nuestro, una referencia y no la frontera.",
+     "coord_fuente": "calculo"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "no_confundir_con",
+   "valores": [
+    "filipo-esposo-de-herodias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-evangelizador",
+   "campo": "no_confundir_con",
+   "valores": [
+    "filipo-esposo-de-herodias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-esposo-de-maria",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jose-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-de-arimatea",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jose-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jose-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-el-leproso",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-de-cirene",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-el-mago",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-el-curtidor",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-hijo-de-jose"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoiaquim",
+   "campo": "no_confundir_con",
+   "valores": [
+    "eliaquim-hijo-de-abiud"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jehoiaquim",
+   "campo": "desambiguacion",
+   "antes": null,
+   "despues": "Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud, antepasado de Jesús."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "octavio-conquista-egipto",
+   "campo": "razon",
+   "antes": "Perspicacia «Egipto, egipcio» fecha Accio en 31 a.e.c. y la conquista en 30 a.e.c.; añade la huida de Mateo 2:13-15 a esa provincia.",
+   "despues": "Perspicacia «Egipto, egipcio» fecha Accio en 31 a.e.c. y la conquista en 30 a.e.c.; también cuenta que a esa provincia huyó después la familia de Jesús.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón ya no cita Mt 2:13-15, que no narra la conquista; la huida a esa provincia queda como dato de Perspicacia.",
+    "fuente": "mateo-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "huida-a-egipto",
+   "campo": "fecha",
+   "antes": {
+    "desde": 0,
+    "hasta": 1,
+    "precision": "rango",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1 a.e.c. o 1 e.c."
+   },
+   "despues": {
+    "desde": 0,
+    "hasta": 1,
+    "precision": "rango",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "entre 1 a.e.c. y 1 e.c."
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El texto de la fecha dice «entre 1 a.e.c. y 1 e.c.», como los otros sucesos de Mt 2 de la fila 7 de A7-A; el rango no cambia.",
+    "fuente": "mateo-2"
+   }
+  }
+ ],
+ "preguntas": [
+  "Mt 16:17. Perspicacia trata al padre de Pedro en «Jonás», núm. 2 (1200002503#2), y en «Juan», núm. 2 (1200002489#2). La ficha es jonas-padre-de-pedro, con la primera clave; si Juan 1 o 21 lo necesita, debe usar ese id, porque la segunda clave no lo funde.",
+  "Mt 23:35. Perspicacia «Baraquías» recoge que Jehoiadá pudo tener dos nombres. Cuando 2 Reyes o 2 Crónicas creen a Jehoiadá, falta un mismo_que entre baraquias y ese id, con deducido: true y estado: pendiente. El parentesco de Zacarías con Jehoás (2Cr 24) también es de Crónicas.",
+  "Mt 23:35. La muerte de Zacarías, hijo de Jehoiadá, va en monte-moria (el patio del templo). Si Crónicas usa jerusalen, quedarán dos relaciones murio_en; conviene acordar una.",
+  "Jn 20:26-29. aparicion-a-tomas pasa de natanael a bartolome, igual que las demás listas de los once, porque Jn 20 no da nombres. El dueño de Juan puede revisarlo; natanael sigue donde el texto dice Natanael (Jn 1 y 21)."
+ ]
+}

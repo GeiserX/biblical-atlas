@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rahab
+nombre: Rahab
+nombres:
+- nombre: Rahab
+perspicacia: 1200003623#1
+desambiguacion: La mujer de Jericó; no el término simbólico Rahab que Perspicacia trata aparte (núm. 2).
+resumen: Prostituta de Jericó que escondió en su casa a dos espías israelitas en 1473 a.e.c. y se salvó con su familia. Adoró
+  a Jehová, se casó con Salmón y fue madre de Boaz.
+razon: Perspicacia «Rahab», núm. 1; Mt 1:5 y la nota de Mt 1:3.
+fuentes:
+- it-rahab
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Rahab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003623
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: jerico
+  deducido: false
+  fuentes:
+  - it-rahab
+  razon: 'Perspicacia «Rahab» (núm. 1): su casa estaba en el muro de la ciudad.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

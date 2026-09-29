@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: satanas
+nombre: Satanás
+nombres:
+- nombre: Satanás
+  nota: Palabra hebrea que significa opositor o enemigo (nota de Mt 4:10).
+- nombre: el Diablo
+  nota: Del griego diábolos, calumniador (nota de Mt 4:1).
+- nombre: el Tentador
+  nota: Así lo llama Mt 4:3.
+perspicacia: '1200003845'
+desambiguacion: El gran adversario de Dios. En hebreo, satán sin artículo nombra también a cualquiera que se opone a otro,
+  como el ángel que cortó el paso a Balaam.
+resumen: Criatura espiritual que se volvió contra Dios y engañó a Eva valiéndose de una serpiente. Después del bautismo de
+  Jesús lo tentó tres veces, en el desierto y en Jerusalén, y Jesús le contestó cada vez con las Escrituras.
+razon: Perspicacia «Satanás», párr. 1 a 4 y apartado «Sus esfuerzos por hacer tropezar a Jesús»; Mt 4:1-11.
+fuentes:
+- it-satanas
+- mateo-4
+enlaces:
+- titulo: 'Perspicacia: «Satanás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003845
+  tipo: perspicacia
+- titulo: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
