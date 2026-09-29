@@ -2,13 +2,13 @@
 id: pablo-en-peligro-de-muerte-en-asia
 titulo: Pablo, en peligro de muerte en la provincia de Asia
 fecha:
-  desde: 52
+  desde: 53
   hasta: 55
   precision: rango
   aprox: true
   tipo: narrativa
   cronologia: tnm
-  texto: 'entre 52 y 55 e.c. (tiempo narrativo: en la estancia de Pablo en Éfeso, antes de salir hacia Macedonia)'
+  texto: 'entre 53 y 55 e.c. (tiempo narrativo: en la estancia de Pablo en Éfeso, antes de salir hacia Macedonia)'
 orden_relato:
   serie: 2-corintios
   orden: 1008
@@ -41,5 +41,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000433
   tipo: perspicacia
 buscar: Pablo tribulación en Asia 2 Corintios 1:8
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Empezaba en 52 y caía en la breve visita a Éfeso de Hch 18:19-21, antes de su «tras». La estancia empieza en el
+    invierno de 52-53 (estudio 3, párr. 26): desde 53.'
+  fuente: si-3
 consultado: '2026-09-29'
 estado: verificado

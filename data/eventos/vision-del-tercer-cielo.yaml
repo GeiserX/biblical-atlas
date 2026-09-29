@@ -11,7 +11,7 @@ fecha:
   texto: c. 41 e.c.
 orden_relato:
   serie: 2-corintios
-  orden: 12002
+  orden: 1000
   tras: pablo-enviado-a-tarso
 lugares:
 - tarso
@@ -37,5 +37,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
   tipo: perspicacia
 buscar: Pablo visión tercer cielo paraíso
+historial:
+- fecha: '2026-09-29'
+  cambio: 'orden 12002 la ponía tras sucesos de 55, aunque es de hacia 41 (Perspicacia «Pablo», párr. 9): la serie sigue el
+    orden en que pasaron. Pasa a 1000, antes que todos.'
+  fuente: it-pablo
 consultado: '2026-09-29'
 estado: verificado
