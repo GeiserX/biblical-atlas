@@ -41,6 +41,18 @@ function verboRelacion(r, adelante, centro, otro) {
     return adelante ? `su ${rel}` : `${centro} es su ${rel}`;
   }
   if (r.tipo === 'sucede_a') return adelante ? `${centro} le sucede` : `sucede a ${centro}`;
+  // «acompana» con relacion dice qué eran el uno para el otro («discípulo de», «apóstol de», «amigo», «custodio»):
+  // antes todas salían como «viajan juntos», también «Pablo, discípulo de Gamaliel» (Hch 22:3). La relación describe a
+  // quien la escribe. Vista desde el otro lado, una que acaba en «de» es «su discípulo», «su apóstol»; las demás solo
+  // se leen al revés si el dato trae relacion_inversa («custodio» / «custodiado por»), y si no, «viajan juntos».
+  if (r.tipo === 'acompana' && r.relacion) {
+    const rel = r.relacion.trim();
+    if (adelante) return rel;
+    if (r.relacion_inversa) return r.relacion_inversa.trim();
+    if (/ de$/.test(rel)) return `su ${rel.replace(/ de$/, '')}`;
+  }
+  // Una aparición o una visión (Hch 9:3-6, 9:10, 7:55; 1Co 15:7) no es «juntos»: se dice con su propio verbo.
+  if (r.tipo === 'se_aparece_a') return adelante ? (r.relacion || 'se le aparece').trim() : (r.relacion_inversa || 'lo ve').trim();
   if (r.tipo === 'mismo_que') return r.deducido ? '¿la misma persona?' : 'la misma persona';
   return (VERBOS[r.tipo] || (() => r.tipo))(otro);
 }
@@ -92,7 +104,12 @@ function calcularAristas(id) {
     // Solo el primer lugar: es donde ocurre lo principal y el único donde el suceso sitúa a sus personas (docs/investigacion/README.md).
     const l = (e.lugares || [])[0];
     if (estuvo && l && BE.L[l]) poner({ ...base, sel: `lugar:${l}`, grupo: 'Lugares', verbo: e.titulo });
-    for (const g of e.personas) if (g !== id && BE.PERS[g]) poner({ ...base, sel: `persona:${g}`, grupo: 'Personas', verbo: `juntos: ${e.titulo}` });
+    // «Juntos» solo si los dos estuvieron allí: Jesús habló a Ananías en una visión, no estuvo con él en Damasco.
+    for (const g of e.personas) {
+      if (g === id || !BE.PERS[g]) continue;
+      const juntos = !e.presentes || (e.presentes.includes(id) && e.presentes.includes(g));
+      poner({ ...base, sel: `persona:${g}`, grupo: 'Personas', verbo: `${juntos ? 'juntos' : 'en el mismo suceso'}: ${e.titulo}` });
+    }
   }
   for (const c of BE.D.cartas || []) {
     const roles = [];

@@ -2,6 +2,8 @@
    El grafo pone una persona en el centro y sus conexiones alrededor, por sectores (G-02), según la fecha del cursor
    (G-03), con migas de los saltos (G-04), verbo, fecha y referencia en cada arista (G-06), grupos plegados (G-07),
    líneas según lo firme que es la relación (G-14), vista de lista (G-16) y el mapa resaltando lo que se toca (G-17).
+   El centro puede ser cualquier cosa seleccionable (persona, lugar, suceso, carta…): lo seleccionado es siempre el
+   centro, también cuando se elige en la búsqueda o en el mapa con el grafo abierto.
    La conexión busca caminos entre dos personas o lugares y los ordena por solidez (G-05).
    Dueño durante el reparto: app-estudio. */
 'use strict';
@@ -16,14 +18,21 @@ const SECTORES = [   // en este orden, en el sentido de las agujas del reloj emp
   { grupo: 'Personas', rotulo: 'Personas' },
 ];
 const MAX_SECTOR = 12;   // G-07: como mucho unos doce vecinos por sector a la vista
-const NODO_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'evento', periodo: 'periodo', hallazgo: 'hallazgo', carta: 'texto', viaje: 'evento' };
+const NODO_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'evento', periodo: 'periodo', hallazgo: 'hallazgo', carta: 'texto', viaje: 'evento', parada: 'evento', pasaje: 'texto', libro: 'texto', recorrido: 'evento' };
+/** Qué dice cada color de nodo, para la leyenda del grafo. */
+const COLOR_TEXTO = { persona: 'persona', lugar: 'lugar', evento: 'suceso o viaje', periodo: 'periodo', hallazgo: 'hallazgo', texto: 'carta o capítulo' };
+const tipoDe = (sel) => sel.slice(0, sel.indexOf(':'));
+const claseNodo = (sel) => NODO_TIPO[tipoDe(sel)] || 'evento';
+const grupoDe = (sel) => ({ persona: 'Personas', lugar: 'Lugares', carta: 'Cartas' })[tipoDe(sel)] || 'Hechos';
+/** En la dirección y en los botones, una persona va por su id («pablo») y lo demás con su tipo («lugar:creta»). */
+const aSel = (x) => (!x ? null : x.includes(':') ? x : `persona:${x}`);
 const ORDEN_ESTADO = { ahora: 0, siempre: 1, pasado: 2, futuro: 3 };
 const estrecha = () => matchMedia('(max-width: 760px)').matches;
 const reducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const nombreDe = (sel) => BE.nombreDeSel(sel);
 /** En el móvil la vista ocupa el mapa: la hoja de la ficha se pliega para dejarla a la vista. */
 function plegarHoja() { if (estrecha() && !BE.E.hojaPlegada) document.getElementById('hoja-asa')?.click(); }
-const inicial = (sel) => { const n = nombreDe(sel); return sel.startsWith('carta:') ? (BE.abrCarta?.(BE.D.cartas.find((c) => `carta:${c.id}` === sel)) || n[0]) : n[0]; };
+const inicial = (sel) => { const n = nombreDe(sel) || '?'; return sel.startsWith('carta:') ? (BE.abrCarta?.(BE.D.cartas.find((c) => `carta:${c.id}` === sel)) || n[0]) : n[0]; };
 
 // ---------------------------------------------------------------------------
 // Vistas de estudio que tapan el mapa: solo una a la vez (grafo, conexión o lectura)
@@ -42,7 +51,9 @@ estudio.relleno = () => {
   if (!estrecha()) {
     for (const id of ['vista-grafo', 'vista-conexion', 'vista-lectura']) {
       const el = document.getElementById(id);
-      if (el && !el.hidden && el.offsetParent) left = Math.max(left, Math.round(el.getBoundingClientRect().right - caja.left));
+      // Solo cuenta lo que tapa el mapa por la izquierda: en la tableta en vertical la lectura va encima de la ficha.
+      const r = el && !el.hidden && el.offsetParent ? el.getBoundingClientRect() : null;
+      if (r && r.left <= caja.left + 1) left = Math.max(left, Math.round(r.right - caja.left));
     }
   }
   left = Math.max(0, Math.min(left, caja.width - 240));
@@ -50,7 +61,7 @@ estudio.relleno = () => {
   rellenoPuesto = left;
   map.setPadding({ top: 0, right: 0, bottom: 0, left });
 };
-window.addEventListener('resize', () => estudio.relleno());
+window.addEventListener('resize', () => { estudio.relleno(); G.recorte = 0; });
 /** Abierta desde un enlace sin fecha ni selección (#leer=genesis-12, #grafo=jesus), la vista hace lo mismo que al
     abrirla a mano: selecciona, lleva el cursor a su momento y encuadra. Va después de que base.js lea la dirección. */
 estudio.trasEnlace = (fn) => {
@@ -62,14 +73,97 @@ estudio.trasEnlace = (fn) => {
 // ---------------------------------------------------------------------------
 // Grafo
 // ---------------------------------------------------------------------------
-const G = { ruta: [], vigente: true, modo: null, ocultos: new Set(), abiertos: new Set(), clave: '', previos: new Set(), hover: null };
+// G.ruta: selecciones en texto («persona:pablo», «lugar:creta»); la última es el centro. G.visto: la última selección
+// que el grafo ya siguió, para centrarse solo cuando la selección cambia fuera de él.
+const G = { ruta: [], vigente: true, modo: null, ocultos: new Set(), abiertos: new Set(), clave: '', previos: new Set(), hover: null, visto: null };
 const abierto = () => G.ruta.length > 0;
 const centro = () => G.ruta[G.ruta.length - 1];
 
-/** Nodos alrededor de una persona en el año t: las aristas agrupadas por vecino, con su estado en esa fecha. */
-function nodosDe(id, t) {
-  const as = BE.aristas(id).map((a) => ({ ...a, estadoT: BE.vigencia(a.tr, t) }));
-  const aqui = BE.lugarActual(id, t);
+/** Las aristas de cada persona, indexadas por lo que tocan: desde un lugar, un suceso o una carta se ven al revés. */
+let INV = null;
+function inversas() {
+  if (INV) return INV;
+  INV = new Map();
+  for (const p of Object.values(BE.PERS)) {
+    for (const a of BE.aristas(p.id)) {
+      if (!INV.has(a.sel)) INV.set(a.sel, []);
+      INV.get(a.sel).push({ ...a, sel: `persona:${p.id}`, grupo: 'Personas', fuerte: false, inversa: true });
+    }
+  }
+  return INV;
+}
+/** Conexiones de cualquier selección, con la forma de BE.aristas (verbo, tramo, referencia y fuentes). Una persona usa
+    las suyas; lo demás junta las de las personas que lo tocan y lo que el propio dato nombra (los lugares de un
+    suceso, dónde se escribió una carta, lo que pasó en un lugar). Una arista sin referencia ni fuente no entra (G-06). */
+const MEMO_SEL = new Map();
+function aristasSel(sel) {
+  const s = BE.parseSel(sel);
+  if (!s) return [];
+  if (s.tipo === 'persona') return BE.aristas(s.id);
+  if (MEMO_SEL.has(sel)) return MEMO_SEL.get(sel);
+  const out = [], vistas = new Set();
+  const poner = (a) => {
+    if (!a.sel || a.sel === sel || !BE.parseSel(a.sel)) return;
+    if (!((a.fuentes && a.fuentes.length) || a.ref)) return;
+    const k = `${a.sel}|${a.verbo}|${a.tr ? a.tr[0] : ''}`;
+    if (vistas.has(k)) return;
+    vistas.add(k);
+    out.push({ grupo: grupoDe(a.sel), ...a, tr: a.tr !== undefined ? a.tr : BE.tramoAbierto(a.fecha) });
+  };
+  for (const a of inversas().get(sel) || []) poner(a);
+  const o = BE.objetoSel?.(s) || {};
+  const refDe = (x) => x?.referencia || (x?.pasajes || []).filter(Boolean).join('; ') || '';
+  const base = { fecha: o.fecha, ref: refDe(o), fuentes: o.fuentes, razon: o.razon, estado: o.estado, origen: s.tipo };
+  if (s.tipo === 'lugar') {
+    const VERBO = { evento: 'ocurre aquí', periodo: 'abarca este lugar', parada: 'parada aquí', hallazgo: 'se halló aquí' };
+    for (const h of BE.hechosDe?.(s.id) || []) {
+      if (h.tipo === 'persona') continue;   // las personas ya llegan por sus propias aristas
+      const verbo = h.tipo === 'carta' ? h.titulo.split(', ').pop() : VERBO[h.tipo] || 'pasa aquí';
+      poner({ sel: h.sel, verbo, tr: h.tr || null, fecha: h.fecha, ref: (h.pasajes || []).filter(Boolean).join('; '), fuentes: h.fuentes, estado: h.estado, deducido: !!h.deducido, origen: h.tipo });
+    }
+  } else if (s.tipo === 'evento') {
+    const tr = BE.ventanaEvento?.(o) || undefined;
+    (o.lugares || []).forEach((l, i) => { if (BE.L[l]) poner({ ...base, tr, sel: `lugar:${l}`, verbo: i ? 'también aquí' : 'ocurre aquí' }); });
+  } else if (s.tipo === 'carta') {
+    const os = BE.origenesCarta?.(o) || [], ds = BE.destinosCarta?.(o) || [];
+    os.forEach((l) => poner({ ...base, sel: `lugar:${l}`, verbo: os.length > 1 ? 'quizá escrita aquí' : 'escrita aquí', deducido: os.length > 1 }));
+    ds.forEach((l) => poner({ ...base, sel: `lugar:${l}`, verbo: 'enviada aquí' }));
+  } else if (s.tipo === 'periodo') {
+    (o.lugares || []).forEach((l) => { if (BE.L[l]) poner({ ...base, sel: `lugar:${l}`, verbo: 'su territorio' }); });
+  } else if (s.tipo === 'viaje') {
+    for (const x of BE.P || []) if (x.viaje === o) poner({ sel: `lugar:${x.lugar.id}`, verbo: x.b - x.a > 0.4 ? 'se queda aquí' : 'pasa por aquí', tr: [x.a, x.b], fecha: x.p.fecha, ref: x.p.referencia, fuentes: x.p.fuentes || o.fuentes, estado: x.p.estado, incierto: !!x.narrativa, origen: 'parada' });
+    if ((o.persona || 'pablo') !== 'pablo') for (const p of o.paradas || []) if (BE.L[p.lugar]) poner({ ...base, sel: `lugar:${p.lugar}`, verbo: 'parada del viaje', fecha: p.fecha || o.fecha, ref: p.referencia || base.ref, fuentes: p.fuentes || o.fuentes });
+  } else if (s.tipo === 'parada') {
+    const x = (BE.P || []).find((y) => y.key === s.id);
+    if (x) {
+      const b = { tr: [x.a, x.b], fecha: x.p.fecha, ref: x.p.referencia, fuentes: x.p.fuentes || x.viaje.fuentes, estado: x.p.estado, incierto: !!x.narrativa, origen: 'parada' };
+      poner({ ...b, sel: `lugar:${x.lugar.id}`, verbo: 'aquí' });
+      poner({ ...b, sel: `persona:${x.viaje.persona || 'pablo'}`, verbo: 'de viaje' });
+      poner({ ...b, sel: `viaje:${x.viaje.id}`, verbo: 'parte de este viaje' });
+    }
+  } else if (s.tipo === 'hallazgo') {
+    for (const r of o.relaciona || []) poner({ ...base, fecha: o.fecha_objeto, sel: r, verbo: 'lo menciona' });
+    if (o.lugar_hallazgo) poner({ ...base, fecha: o.fecha_objeto, sel: `lugar:${o.lugar_hallazgo}`, verbo: 'se halló aquí' });
+  }
+  if (!out.length) {   // capítulos, libros y recorridos: lo que implican, con la fecha de cada cosa
+    const imp = BE.implicados(s);
+    for (const k of imp.claves) {
+      const ks = BE.parseSel(k);
+      const ok = ks && BE.objetoSel?.(ks);
+      if (ok) poner({ sel: k, verbo: s.tipo === 'recorrido' ? 'en el recorrido' : 'en este texto', fecha: ok.fecha, ref: refDe(ok) || nombreDe(sel), fuentes: ok.fuentes, estado: ok.estado, origen: s.tipo });
+    }
+    for (const l of imp.lugares) poner({ sel: `lugar:${l}`, verbo: s.tipo === 'recorrido' ? 'en el recorrido' : 'se nombra aquí', tr: null, ref: base.ref || nombreDe(sel), fuentes: o.fuentes, origen: s.tipo });
+  }
+  MEMO_SEL.set(sel, out);
+  return out;
+}
+
+/** Nodos alrededor de una selección en el año t: las aristas agrupadas por vecino, con su estado en esa fecha. */
+function nodosDe(sel, t) {
+  sel = aSel(sel);
+  const as = aristasSel(sel).map((a) => ({ ...a, estadoT: BE.vigencia(a.tr, t) }));
+  const id = sel.startsWith('persona:') ? sel.slice(8) : null;
+  const aqui = id && BE.lugarActual(id, t);
   if (aqui) as.push({ sel: `lugar:${aqui.id}`, grupo: 'Lugares', verbo: aqui.parada ? 'está aquí ahora' : 'de camino desde aquí', tr: [t - 0.01, t + 0.01], estadoT: 'ahora', fuerte: true, incierto: aqui.estimada, origen: 'donde', fuentes: [], ref: '' });
   const por = new Map();
   for (const a of as) {
@@ -113,59 +207,92 @@ function htmlTarjeta(n) {
     ${a.razon ? `<p class="tarjeta-razon">${esc(a.razon)}</p>` : ''}
     ${(a.fuentes || []).slice(0, 2).map((f) => BE.D.fuentes?.[f]).filter(Boolean).map((f) => `<span class="be-tier be-tier--${f.nivel === 1 ? 1 : 2}" data-n="${f.nivel}">${esc(f.titulo)}</span>`).join(' ')}
   </div>`).join('');
-  return `<div class="be-card__pad"><div class="be-card__eyebrow">${esc(BE.PERS[centro()].nombre)} · ${esc(nombreDe(n.sel))}</div>${filas}${n.aristas.length > 4 ? `<p class="be-muted">Y ${n.aristas.length - 4} conexiones más en la lista.</p>` : ''}</div>`;
+  return `<div class="be-card__pad"><div class="be-card__eyebrow">${esc(nombreDe(centro()))} · ${esc(nombreDe(n.sel))}</div>${filas}${n.aristas.length > 4 ? `<p class="be-muted">Y ${n.aristas.length - 4} conexiones más en la lista.</p>` : ''}</div>`;
 }
 
 function cabeceraGrafo(nodos, visibles) {
+  // Cuántos hay de cada sector en esta fecha, cuente o no el filtro de sectores: un sector oculto enseña lo que oculta.
   const cuenta = {};
-  for (const n of visibles) cuenta[n.grupo] = (cuenta[n.grupo] || 0) + 1;
-  const c = BE.PERS[centro()];
+  for (const n of filtrar(nodos, true)) cuenta[n.grupo] = (cuenta[n.grupo] || 0) + 1;
+  // Un sector sin nada en esta fecha no sale: «Cartas 0» en quien no tiene cartas no dice nada. Si está oculto sí,
+  // para poder volver a enseñarlo.
+  const sectores = SECTORES.filter((s) => cuenta[s.grupo] || G.ocultos.has(s.grupo));
+  const cuando = fmtCursor(E.t);
   return `<header class="vista-cab">
-    <nav class="be-crumbs migas-grafo" aria-label="Saltos en el grafo">${G.ruta.map((id, i) => `${i ? '<span class="be-sep" aria-hidden="true">›</span>' : ''}<button type="button" class="miga${i === G.ruta.length - 1 ? ' miga--actual' : ''}" data-grafo-miga="${i}"${i === G.ruta.length - 1 ? ' aria-current="true"' : ''}><span class="be-node be-node--persona be-node--sm" aria-hidden="true">${esc(BE.PERS[id]?.nombre[0] || '?')}</span>${esc(BE.PERS[id]?.nombre || id)}</button>`).join('')}</nav>
+    <nav class="be-crumbs migas-grafo" aria-label="Saltos en el grafo">${G.ruta.map((sel, i) => `${i ? '<span class="be-sep" aria-hidden="true">›</span>' : ''}<button type="button" class="miga${i === G.ruta.length - 1 ? ' miga--actual' : ''}" data-grafo-miga="${i}"${i === G.ruta.length - 1 ? ' aria-current="true"' : ''}><span class="be-node be-node--${claseNodo(sel)} be-node--sm" aria-hidden="true">${esc(inicial(sel))}</span>${esc(nombreDe(sel))}</button>`).join('')}</nav>
     <div class="be-seg grafo-modo" role="radiogroup" aria-label="Forma de ver las conexiones">
       <button type="button" role="radio" class="be-seg__opt${G.modo === 'grafo' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modo === 'grafo'}" data-grafo-modo="grafo">Grafo</button>
       <button type="button" role="radio" class="be-seg__opt${G.modo === 'lista' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modo === 'lista'}" data-grafo-modo="lista">Lista</button></div>
     <button type="button" class="be-btn be-btn--sm be-btn--ghost vista-cerrar" data-grafo-cerrar aria-label="Cerrar el grafo">Cerrar <span aria-hidden="true">×</span></button>
   </header>
   <div class="grafo-filtros" role="group" aria-label="Filtros del grafo">
-    ${SECTORES.map((s) => `<button type="button" class="be-chip${G.ocultos.has(s.grupo) ? '' : ' be-chip--active'}" aria-pressed="${!G.ocultos.has(s.grupo)}" data-grafo-sector="${s.grupo}"><span class="be-chip__dot sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo} ${cuenta[s.grupo] || 0}</button>`).join('')}
-    <button type="button" class="be-chip${G.vigente ? ' be-chip--active chip-vigente' : ''}" aria-pressed="${G.vigente}" data-grafo-vigente title="Al quitarlo aparecen las conexiones de otras fechas, atenuadas">Solo lo vigente en ${esc(fmtCursor(E.t))}</button>
+    ${sectores.map((s) => `<button type="button" class="be-chip${G.ocultos.has(s.grupo) ? '' : ' be-chip--active'}" aria-pressed="${!G.ocultos.has(s.grupo)}" data-grafo-sector="${s.grupo}" title="${G.ocultos.has(s.grupo) ? 'Oculto: pulsa para enseñarlo' : 'Pulsa para ocultarlo'}"><span class="be-chip__dot sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo}${cuenta[s.grupo] ? ` ${cuenta[s.grupo]}` : ''}</button>`).join('')}
+    <button type="button" role="switch" class="interruptor-grafo" aria-checked="${G.vigente}" data-grafo-vigente title="${G.vigente ? 'Encendido: solo se ven las conexiones de esta fecha. Apágalo para ver las de otras fechas, atenuadas' : 'Apagado: se ven también las conexiones de otras fechas, atenuadas'}"><span class="interruptor-pista" aria-hidden="true"><span class="interruptor-bola"></span></span><span>Solo lo vigente en ${esc(cuando)}</span><span class="interruptor-estado" aria-hidden="true">${G.vigente ? 'Sí' : 'No'}</span></button>
     <span class="grafo-oculto be-muted">${G.vigente && nodos.length > visibles.length ? `${nodos.length - visibles.length} de otras fechas ocultas` : ''}</span>
   </div>
-  <p class="sr-only">${esc(c.nombre)} en ${esc(fmtCursor(E.t))}: ${visibles.length} conexiones.</p>`;
+  <p class="sr-only">${esc(nombreDe(centro()))} en ${esc(cuando)}: ${visibles.length} conexiones.</p>`;
 }
 
-function filtrar(nodos) {
-  const enRuta = new Set(G.ruta.map((id) => `persona:${id}`));
-  return nodos.filter((n) => !G.ocultos.has(n.grupo) && (!G.vigente || n.estado === 'ahora' || n.estado === 'siempre' || enRuta.has(n.sel)));
+/** Lo que se ve: sin los sectores ocultos (salvo con sinSectores) y, con «Solo lo vigente», sin lo de otras fechas. */
+function filtrar(nodos, sinSectores = false) {
+  const enRuta = new Set(G.ruta);
+  return nodos.filter((n) => (sinSectores || !G.ocultos.has(n.grupo)) && (!G.vigente || n.estado === 'ahora' || n.estado === 'siempre' || enRuta.has(n.sel)));
+}
+/** Leyenda: qué es cada color de nodo (solo los que hay a la vista) y cada tipo de línea. */
+/** La leyenda empieza abierta solo si sobra sitio: en una vista baja, abierta le quita al círculo el alto que necesita. */
+const leyendaAbierta = () => { const vg = $('#vista-grafo'); return G.leyenda ?? (vg.clientWidth >= 480 && vg.clientHeight >= 600); };
+function leyendaHtml(visibles) {
+  const clases = new Set([claseNodo(centro()), ...visibles.map((n) => claseNodo(n.sel))]);
+  const colores = Object.entries(COLOR_TEXTO).filter(([k]) => clases.has(k))
+    .map(([k, t]) => `<span><i class="be-node be-node--${k} leyenda-nodo" aria-hidden="true"></i>${t}</span>`).join('');
+  // Abierta si cabe; en una vista estrecha (tableta, móvil) se pliega en «Leyenda» para no tapar la lista. Lo que
+  // elija la persona se respeta hasta cerrar el grafo.
+  const abierta = leyendaAbierta();
+  return `<details class="grafo-leyenda" data-grafo-leyenda${abierta ? ' open' : ''}><summary>Leyenda: colores y líneas</summary>
+      <div class="grafo-leyenda__filas">
+      <div class="grafo-leyenda__fila"><span class="be-caps">Colores</span>${colores}</div>
+      <div class="grafo-leyenda__fila"><span class="be-caps">Líneas</span><span><i class="lin lin--texto"></i>lo dice el texto</span><span><i class="lin lin--deducida"></i>deducido</span><span><i class="lin lin--incierta"></i>fecha o lugar inciertos</span><span><i class="lin lin--pasado"></i>ya pasó</span><span><i class="lin lin--futuro"></i>aún no ocurre</span></div></div></details>`;
 }
 
 function pintarGrafo(forzar) {
   const v = $('#vista-grafo');
   if (!abierto()) { if (!v.hidden) { v.hidden = true; v.innerHTML = ''; } return; }
   const id = centro();
-  if (!BE.PERS[id]) { cerrarGrafo(); return; }
+  if (!BE.parseSel(id)) { cerrarGrafo(); return; }
   const nodos = nodosDe(id, E.t);
   const visibles = filtrar(nodos);
   const clave = [G.ruta.join('.'), G.modo, G.vigente, [...G.ocultos].join(), [...G.abiertos].join(), visibles.map((n) => `${n.sel}:${n.estado}:${n.principal.verbo}`).join(','), G.vigente ? Math.floor(E.t) : ''].join('|');
   if (!forzar && clave === G.clave && !v.hidden) return;
   G.clave = clave;
   v.hidden = false;
+  // Una vista estrecha (el móvil, o la tableta en vertical con la ficha al lado) o baja (un portátil de 640 px de alto)
+  // no cabe en círculo: los rótulos se pisan y la leyenda queda fuera. Sale la lista, salvo que se haya pedido el grafo a mano.
+  if (G.modo === 'grafo' && !G.modoPedido && v.clientWidth && (v.clientWidth < 480 || v.clientHeight < 420)) G.modo = 'lista';
   v.classList.toggle('vista-grafo--lista', G.modo === 'lista');
   const cuerpo = G.modo === 'lista' ? listaHtml(visibles, nodos) : lienzoHtml(id, visibles, nodos);
+  // Repintar sustituye los controles: el que tenía el foco (el interruptor, Grafo/Lista, un sector) lo recupera.
+  const foco = v.contains(document.activeElement) ? document.activeElement : null;
+  const claveFoco = foco && ['data-grafo-vigente', 'data-grafo-modo', 'data-grafo-sector', 'data-grafo-abrir', 'data-grafo-centro', 'data-grafo-ir', 'data-grafo-miga']
+    .map((a) => (foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '')).find(Boolean);
   v.innerHTML = `${cabeceraGrafo(nodos, visibles)}${cuerpo}
-    <footer class="grafo-leyenda" aria-label="Tipos de línea"><span class="be-caps">Líneas</span>
-      <span><i class="lin lin--texto"></i>lo dice el texto</span><span><i class="lin lin--deducida"></i>deducido</span><span><i class="lin lin--incierta"></i>fecha o lugar inciertos</span><span><i class="lin lin--pasado"></i>ya pasó</span><span><i class="lin lin--futuro"></i>aún no ocurre</span></footer>
+    ${leyendaHtml(visibles)}
     <div class="be-pop grafo-tarjeta" role="tooltip" id="grafo-tarjeta" hidden></div>`;
-  G.nodos = visibles;
+  if (claveFoco) v.querySelector(claveFoco)?.focus({ preventScroll: true });
+  G.nodos = G.modo === 'lista' ? visibles : G.enLienzo || [];
+  // Si el círculo y la leyenda no caben juntos (pantallas bajas), el círculo encoge lo que sobra, una vez.
+  const sobra = v.scrollHeight - v.clientHeight;
+  if (G.modo === 'grafo' && sobra > 1 && G.altoLienzo > 240 && !G.reajuste) {
+    G.recorte = (G.recorte || 0) + sobra;
+    G.reajuste = true; pintarGrafo(true); G.reajuste = false;
+  }
 }
 
 function lienzoHtml(id, visibles, todos) {
-  const lienzo = { w: $('#vista-grafo').clientWidth || 800, h: Math.max(320, ($('#vista-grafo').clientHeight || 600) - 180) };
+  const lienzo = { w: $('#vista-grafo').clientWidth || 800, h: Math.max(240, ($('#vista-grafo').clientHeight || 600) - (leyendaAbierta() ? 210 : 180) - (G.recorte || 0)) };
+  G.altoLienzo = lienzo.h;
   const cx = lienzo.w / 2, cy = lienzo.h / 2;
-  const rx = Math.max(120, lienzo.w / 2 - 100), ry = Math.max(110, lienzo.h / 2 - 50);
-  const c = BE.PERS[id];
-  const aqui = BE.lugarActual(id, E.t);
+  const rx = Math.max(70, lienzo.w / 2 - 95), ry = Math.max(110, lienzo.h / 2 - 50);
+  const aqui = id.startsWith('persona:') ? BE.lugarActual(id.slice(8), E.t) : null;
   const puestos = [];
   const burbujas = [];
   // Cada sector ocupa un arco proporcional a sus nodos, en el mismo orden siempre (G-02): lugares arriba, hechos a la
@@ -208,39 +335,39 @@ function lienzoHtml(id, visibles, todos) {
   const nuevos = new Set();
   const nodosHtml = puestos.map(({ n, x, y }, i) => {
     if (!G.previos.has(n.sel)) nuevos.add(n.sel);
-    const tipo = n.sel.slice(0, n.sel.indexOf(':'));
+    const tipo = tipoDe(n.sel);
     const incierto = n.principal.incierto || (tipo === 'lugar' && BE.L[n.sel.slice(6)]?.lat == null);
-    return `<button type="button" class="be-gnode gnodo gnodo--${n.estado}${G.previos.size && !G.previos.has(n.sel) && !reducido() ? ' gnodo--nuevo' : ''}${incierto ? ' gnodo--incierto' : ''}" style="left:${x}px;top:${y}px" data-gnodo="${i}" aria-describedby="grafo-tarjeta" aria-label="${esc(`${nombreDe(n.sel)}: ${metaNodo(n)}`)}">
-      <span class="be-node be-node--${NODO_TIPO[tipo] || 'evento'}" aria-hidden="true">${esc(inicial(n.sel))}</span><span class="be-gnode__label">${esc(nombreDe(n.sel))}</span>${n.estado === 'ahora' || (n.estado === 'siempre' && puestos.length <= 10) ? `<span class="be-gnode__meta">${esc(metaNodo(n))}</span>` : ''}</button>`;
+    return `<button type="button" class="be-gnode gnodo gnodo--${n.estado}${G.previos.size && !G.previos.has(n.sel) && !reducido() ? ' gnodo--nuevo' : ''}${incierto ? ' gnodo--incierto' : ''}" style="left:${x}px;top:${y}px" data-gnodo="${i}" aria-describedby="grafo-tarjeta" aria-label="${esc(`${nombreDe(n.sel)}: ${metaNodo(n)}. Pulsa para ponerlo en el centro`)}">
+      <span class="be-node be-node--${claseNodo(n.sel)}" aria-hidden="true">${esc(inicial(n.sel))}</span><span class="be-gnode__label">${esc(nombreDe(n.sel))}</span>${n.estado === 'ahora' || (n.estado === 'siempre' && puestos.length <= 10) ? `<span class="be-gnode__meta">${esc(metaNodo(n))}</span>` : n.estado === 'pasado' || n.estado === 'futuro' ? `<span class="be-gnode__meta">${n.estado === 'pasado' ? 'ya pasó' : 'aún no'}</span>` : ''}</button>`;
   }).join('') + burbujas.map((b) => `<button type="button" class="be-gnode gnodo gnodo--grupo" style="left:${b.x}px;top:${b.y}px" data-grafo-abrir="${b.grupo}"><span class="be-node be-node--sm burbuja" aria-hidden="true">+${b.resto}</span><span class="be-gnode__label">${b.resto} ${b.grupo.toLowerCase()} más</span></button>`).join('');
   G.previos = new Set(puestos.map((p) => p.n.sel));
+  // data-gnodo es la posición en `puestos` (ordenados por sector), no en `visibles`: el clic y la tarjeta leen de aquí.
+  // Leerlos de `visibles` llevaba a otro nodo (pulsar Jerusalén centraba Antioquía o Pedro).
+  G.enLienzo = puestos.map((p) => p.n);
   const vacio = !puestos.length ? vacioHtml(id, todos) : '';
   return `<div class="be-graph grafo-lienzo" style="height:${lienzo.h}px">
     <svg viewBox="0 0 ${lienzo.w} ${lienzo.h}" aria-hidden="true">${lineas}</svg>${rotulos}
-    <div class="be-gnode be-gnode--center gnodo-centro" style="left:${cx}px;top:${cy}px"><span class="be-node be-node--persona be-node--lg" aria-hidden="true">${esc(c.nombre[0])}</span><span class="be-gnode__label">${esc(c.nombre)}</span><span class="be-gnode__meta">${aqui ? `${aqui.parada ? 'en' : 'saliendo de'} ${esc(BE.L[aqui.id].nombre)}` : esc(fmtCursor(E.t))}</span></div>
+    <div class="be-gnode be-gnode--center gnodo-centro" style="left:${cx}px;top:${cy}px"><span class="be-node be-node--${claseNodo(id)} be-node--lg" aria-hidden="true">${esc(inicial(id))}</span><span class="be-gnode__label">${esc(nombreDe(id))}</span><span class="be-gnode__meta">${aqui ? `${aqui.parada ? 'en' : 'saliendo de'} ${esc(BE.L[aqui.id].nombre)}` : esc(fmtCursor(E.t))}</span></div>
     ${nodosHtml}${vacio}</div>`;
 }
 function vacioHtml(id, todos) {
   const antes = todos.filter((n) => n.estado === 'pasado').map((n) => n.principal.tr[1]).sort((a, b) => b - a)[0];
   const despues = todos.filter((n) => n.estado === 'futuro').map((n) => n.principal.tr[0]).sort((a, b) => a - b)[0];
-  return `<div class="grafo-vacio be-card"><div class="be-card__pad"><p><b>En ${esc(fmtCursor(E.t))} no sabemos nada de ${esc(BE.PERS[id].nombre)}.</b></p>
+  return `<div class="grafo-vacio be-card"><div class="be-card__pad"><p><b>En ${esc(fmtCursor(E.t))} no sabemos nada de ${esc(nombreDe(id))}.</b></p>
     <div class="fila-chips">${antes != null && Number.isFinite(antes) ? `<button type="button" class="be-chip" data-grafo-ir="${antes - 0.05}">‹ Lo anterior (${esc(fmtAnio(Math.floor(antes - 0.05)))})</button>` : ''}${despues != null && Number.isFinite(despues) ? `<button type="button" class="be-chip" data-grafo-ir="${despues + 0.01}">Lo siguiente (${esc(fmtAnio(Math.floor(despues)))}) ›</button>` : ''}${!G.vigente ? '' : '<button type="button" class="be-chip" data-grafo-vigente>Ver todas las fechas</button>'}</div></div></div>`;
 }
 function listaHtml(visibles, todos) {
   if (!visibles.length) return `<div class="grafo-lista">${vacioHtml(centro(), todos)}</div>`;
   G.previos = new Set(visibles.map((n) => n.sel));
-  return `<div class="grafo-lista">${SECTORES.map((s) => {
+  return `<div class="grafo-lista"><div class="grafo-lista__cols">${SECTORES.map((s) => {
     const ns = visibles.filter((n) => n.grupo === s.grupo);
     if (!ns.length) return '';
     return `<section class="grafo-lista__sec"><h3 class="be-card__eyebrow"><span class="sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo} <b class="cuenta">${ns.length}</b></h3>
       <ul>${ns.map((n) => {
-        const i = G.nodos ? -1 : -1;
-        const tipo = n.sel.slice(0, n.sel.indexOf(':'));
-        const accion = tipo === 'persona' ? `data-grafo-centro="${esc(n.sel.slice(8))}"` : `data-sel="${esc(n.sel)}"`;
-        return `<li class="lista-fila lista-fila--${n.estado}"><button type="button" class="enlace-texto lista-nombre" ${accion}>${esc(nombreDe(n.sel))}</button>
-          ${n.aristas.slice(0, 3).map((a) => `<span class="lista-arista ${claseArista(a, a.estadoT)}"><span class="lista-verbo">${esc(a.verbo)}</span> · <span class="lista-fecha">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${a.deducido ? ' · <span class="etiqueta-deducido">deducido</span>' : ''} ${BE.chipsCitas(a.ref || '')}</span>`).join('')}</li>`;
+        return `<li class="lista-fila lista-fila--${n.estado}"><button type="button" class="enlace-texto lista-nombre" data-grafo-centro="${esc(n.sel)}" title="Ponerlo en el centro">${esc(nombreDe(n.sel))}</button>${n.estado === 'pasado' || n.estado === 'futuro' ? `<span class="lista-cuando">${n.estado === 'pasado' ? 'ya pasó' : 'aún no'}</span>` : ''}
+          ${n.aristas.slice(0, 3).map((a) => `<span class="lista-arista ${claseArista(a, a.estadoT)}"><span class="lista-que"><span class="lista-verbo">${esc(a.verbo)}</span>&nbsp;· <span class="lista-fecha">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${a.deducido ? '&nbsp;· <span class="etiqueta-deducido">deducido</span>' : ''}</span> ${BE.chipsCitas(a.ref || '')}</span>`).join('')}</li>`;
       }).join('')}</ul></section>`;
-  }).join('')}</div>`;
+  }).join('')}</div></div>`;
 }
 
 function mostrarTarjeta(i, ancla) {
@@ -272,30 +399,49 @@ function ocultarTarjeta() {
   if (G.hover) { G.hover = null; BE.mapa.resaltar(null); }
 }
 
-function abrirGrafo(id, { ruta = null, desdeHash = false } = {}) {
-  if (!BE.PERS[id]) return;
+/** Abre el grafo centrado en `x`: una selección («lugar:creta») o el id de una persona («pablo»). */
+function abrirGrafo(x, { ruta = null, desdeHash = false } = {}) {
+  const sel = aSel(x);
+  if (!BE.parseSel(sel)) return;
   estudio.abrirSolo('grafo');
-  G.ruta = ruta ? ruta.filter((x) => BE.PERS[x]) : [id];
-  if (!G.ruta.length) G.ruta = [id];
+  G.ruta = ruta ? ruta.map(aSel).filter((y) => BE.parseSel(y)) : [sel];
+  if (!G.ruta.length) G.ruta = [sel];
   if (!G.modo) G.modo = estrecha() ? 'lista' : 'grafo';
   G.previos = new Set();
+  G.recorte = 0;
+  G.visto = centro();
   pintarGrafo(true);
   plegarHoja();
   estudio.relleno();
-  if (!desdeHash) { BE.seleccionar({ tipo: 'persona', id: centro() }, { mover: !BE.E.sel, encuadrar: true }); BE.guardarHash(); }
-  else estudio.trasEnlace(() => { if (abierto() && !BE.E.sel) BE.seleccionar({ tipo: 'persona', id: centro() }, { mover: true, encuadrar: true }); });
+  if (!desdeHash) { BE.seleccionar(BE.parseSel(centro()), { mover: !BE.E.sel, encuadrar: true }); BE.guardarHash(); }
+  else estudio.trasEnlace(() => { if (abierto() && !BE.E.sel) BE.seleccionar(BE.parseSel(centro()), { mover: true, encuadrar: true }); });
   $('#vista-grafo').focus?.();
 }
-function centrarEn(id) {
-  const i = G.ruta.indexOf(id);
+/** Pone `sel` en el centro. Si ya estaba en la ruta, la ruta vuelve hasta él (las migas). Con seleccionar = false es
+    que la selección ya cambió fuera del grafo (búsqueda, mapa, ficha) y el grafo solo la sigue. */
+function centrarEn(x, { seleccionar = true } = {}) {
+  const sel = aSel(x);
+  const s = BE.parseSel(sel);
+  if (!s) return;
+  const i = G.ruta.indexOf(sel);
   if (i >= 0) G.ruta = G.ruta.slice(0, i + 1);
-  else G.ruta = [...G.ruta, id].slice(-8);
+  else G.ruta = [...G.ruta, sel].slice(-8);
+  G.visto = sel;
+  ocultarTarjeta();
   pintarGrafo(true);
-  BE.seleccionar({ tipo: 'persona', id }, { mover: false, encuadrar: true });
+  if (seleccionar) BE.seleccionar(s, { mover: false, encuadrar: true });
+}
+/** Con el grafo abierto, lo seleccionado en cualquier sitio pasa al centro (be-u66.1). */
+function seguirSeleccion() {
+  if (!abierto()) return;
+  const k = BE.E.sel ? BE.selTexto(BE.E.sel) : null;
+  if (!k || k === G.visto) return;
+  G.visto = k;
+  if (k !== centro()) centrarEn(k, { seleccionar: false });
 }
 function cerrarGrafo(silencioso) {
   if (!abierto()) return;
-  G.ruta = []; G.clave = '';
+  G.ruta = []; G.clave = ''; G.leyenda = null;
   ocultarTarjeta();
   pintarGrafo(true);
   estudio.relleno();
@@ -305,7 +451,7 @@ function cerrarGrafo(silencioso) {
 // ---------------------------------------------------------------------------
 // Conexión entre dos (G-05, pantalla 10)
 // ---------------------------------------------------------------------------
-const C = { a: null, b: null, deducciones: true, lugares: false, camino: 0, caminos: [], recorrer: 0 };
+const C = { a: null, b: null, deducciones: true, lugares: false, camino: 0, caminos: [], recorrer: 0, ultima: 'b' };
 const conAbierta = () => !!(C.a || C.b || C.forzada);
 
 /** Grafo de todo: personas, lugares y cartas, con aristas que llevan verbo, tramo y referencia. */
@@ -390,13 +536,15 @@ function nombreCamino(c, i, todos) {
   const base = fam ? 'Por la familia' : c.pasos.length === corto ? 'El más corto' : `Camino ${i + 1}`;
   return `${base} · ${c.pasos.length} ${c.pasos.length === 1 ? 'paso' : 'pasos'}${c.deducidos ? ` · ${c.deducidos} deducido${c.deducidos > 1 ? 's' : ''}` : ''}`;
 }
+/** Un paso en palabras. «discípulo de», «apóstol de» se leen enteros («Pablo, discípulo de Gamaliel»), no
+    «Pablo → Gamaliel: discípulo de». */
+function textoPaso(p) {
+  const e = p.e;
+  const [A, B] = e.inversa ? [nombreDe(p.a), nombreDe(p.de)] : [nombreDe(p.de), nombreDe(p.a)];
+  return / de$/.test(e.verbo) ? `${A}, ${e.verbo} ${B}` : `${A} → ${B}: ${e.verbo}`;
+}
 function fraseCamino(c) {
-  return c.pasos.map((p) => {
-    const e = p.e;
-    const A = nombreDe(p.de), B = nombreDe(p.a);
-    const verbo = e.inversa ? `${B} → ${A}: ${e.verbo}` : `${A} → ${B}: ${e.verbo}`;
-    return `${verbo}${e.tr ? ` (${e.textoFecha})` : ''}`;
-  }).join('; ') + '.';
+  return c.pasos.map((p) => `${textoPaso(p)}${p.e.tr ? ` (${p.e.textoFecha})` : ''}`).join('; ') + '.';
 }
 function opcionesConexion() {
   const nombres = {};
@@ -468,7 +616,7 @@ function caminoHtml(cam, vistos) {
   }).join('');
   const tarjetas = cam.pasos.map((p, i) => `<article class="be-card paso-tarjeta" id="paso-${i}"><div class="be-card__pad">
       <div class="be-card__eyebrow">Paso ${i + 1} · ${p.e.deducido ? '<span class="etiqueta-deducido">deducido</span>' : p.e.lugar ? '<span class="etiqueta-incierto">lugar compartido</span>' : '<span class="etiqueta-texto">lo dice el texto</span>'}</div>
-      <h3 class="paso-titulo">${esc(nombreDe(p.de))} → ${esc(nombreDe(p.a))}: ${esc(p.e.verbo)}</h3>
+      <h3 class="paso-titulo">${esc(textoPaso(p))}</h3>
       ${p.e.razon ? `<p class="be-card__body">${esc(p.e.razon)}</p>` : ''}
       <div class="fila-chips"><span class="be-chrono ${p.e.tr ? 'be-chrono--tnm' : 'be-chrono--approx'}">${esc(p.e.textoFecha)}</span>${BE.chipsCitas(p.e.ref || '')}</div>
       ${p.otras > 0 ? `<p class="be-muted">Hay ${p.otras} ${p.otras === 1 ? 'otra conexión' : 'otras conexiones'} entre los dos: están en el grafo.</p>` : ''}
@@ -491,6 +639,21 @@ function abrirConexion(a, b, { desdeHash = false } = {}) {
   estudio.relleno();
   if (!desdeHash) BE.guardarHash();
   if (!C.b) setTimeout(() => $('#conexion-b')?.focus(), 30);
+}
+/** Lo elegido en la búsqueda de arriba entra en la conexión abierta (be-u66.1): en la casilla que se tocó la última
+    vez, o en la vacía; por defecto, en la segunda («con…»). Solo personas, lugares y cartas tienen caminos. */
+function rellenarConexion(sel) {
+  if (!conAbierta() || !sel || sel === C.a || sel === C.b) return false;
+  if (!['persona', 'lugar', 'carta'].includes(tipoDe(sel))) {
+    BE.avisar('«¿Cómo se relaciona?» une personas, lugares y cartas: elige uno de ellos para cambiar la pregunta.');
+    return false;
+  }
+  const lado = !C.a ? 'a' : !C.b ? 'b' : C.ultima;
+  C[lado] = sel;
+  C.camino = 0;
+  pintarConexion();
+  BE.guardarHash();
+  return true;
 }
 function cerrarConexion(silencioso) {
   if (!conAbierta()) return;
@@ -532,9 +695,9 @@ function iniciar() {
   vg.addEventListener('click', (e) => {
     const t = e.target;
     const miga = t.closest('[data-grafo-miga]');
-    if (miga) { const i = +miga.dataset.grafoMiga; G.ruta = G.ruta.slice(0, i + 1); pintarGrafo(true); BE.seleccionar({ tipo: 'persona', id: centro() }, { mover: false, encuadrar: true }); return; }
+    if (miga) { centrarEn(G.ruta[+miga.dataset.grafoMiga]); return; }
     const modo = t.closest('[data-grafo-modo]');
-    if (modo) { G.modo = modo.dataset.grafoModo; pintarGrafo(true); BE.guardarHash(); return; }
+    if (modo) { G.modo = modo.dataset.grafoModo; G.modoPedido = true; pintarGrafo(true); BE.guardarHash(); return; }
     if (t.closest('[data-grafo-cerrar]')) { cerrarGrafo(); return; }
     const sector = t.closest('[data-grafo-sector]');
     if (sector) { const g = sector.dataset.grafoSector; if (G.ocultos.has(g)) G.ocultos.delete(g); else G.ocultos.add(g); pintarGrafo(true); return; }
@@ -549,9 +712,8 @@ function iniciar() {
     if (nodo) {
       const n = G.nodos[+nodo.dataset.gnodo];
       if (!n) return;
-      if (e.shiftKey) { abrirConexion(`persona:${centro()}`, n.sel); return; }   // Mayúsculas + clic: ¿cómo se relacionan?
-      if (n.sel.startsWith('persona:')) centrarEn(n.sel.slice(8));
-      else { const s = BE.parseSel(n.sel); if (s) BE.seleccionar(s, { mover: false, encuadrar: true }); }
+      if (e.shiftKey && ['persona', 'lugar', 'carta'].includes(tipoDe(centro()))) { abrirConexion(centro(), n.sel); return; }   // Mayúsculas + clic: ¿cómo se relacionan?
+      centrarEn(n.sel);   // lo que se pulsa pasa al centro, sea persona, lugar o suceso
     }
   });
   const sobre = (e) => { const n = e.target.closest?.('[data-gnodo], [data-arista]'); if (n) mostrarTarjeta(+(n.dataset.gnodo ?? n.dataset.arista), n.dataset.gnodo != null ? n : vg.querySelector(`[data-gnodo="${n.dataset.arista}"]`) || n); };
@@ -559,6 +721,7 @@ function iniciar() {
   vg.addEventListener('focusin', sobre);
   vg.addEventListener('pointerout', (e) => { if (e.target.closest?.('[data-gnodo], [data-arista]') && !e.relatedTarget?.closest?.('#grafo-tarjeta')) ocultarTarjeta(); });
   vg.addEventListener('focusout', ocultarTarjeta);
+  vg.addEventListener('toggle', (e) => { if (e.target.matches?.('[data-grafo-leyenda]')) G.leyenda = e.target.open; }, true);
 
   vc.addEventListener('click', (e) => {
     const t = e.target;
@@ -581,7 +744,7 @@ function iniciar() {
     if (t.closest('[data-conexion-recorrer]')) { recorrerCamino(); return; }
     if (t.closest('[data-conexion-grafo]')) {
       const c = C.caminos[C.camino];
-      const ps = (c?.nodos || []).filter((x) => x.startsWith('persona:')).map((x) => x.slice(8));
+      const ps = (c?.nodos || []).filter((x) => BE.parseSel(x));
       if (ps.length) abrirGrafo(ps[ps.length - 1], { ruta: ps });
       return;
     }
@@ -601,6 +764,7 @@ function iniciar() {
       if (!C.b) $('#conexion-b')?.focus();
     }
   });
+  vc.addEventListener('focusin', (e) => { if (e.target.matches?.('.casilla')) C.ultima = e.target.id === 'conexion-a' ? 'a' : 'b'; });
   vc.addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target.matches('.casilla')) { e.preventDefault(); e.target.dispatchEvent(new Event('change', { bubbles: true })); } });
 
   // «Ver en el grafo» y «Relacionar con…» desde cualquier ficha.
@@ -619,22 +783,23 @@ function iniciar() {
   new ResizeObserver(() => { if (abierto() && G.modo === 'grafo') pintarGrafo(true); }).observe(document.getElementById('mapa'));
 }
 BE.inicios.push(iniciar);
-BE.pintores.push((c) => { if (abierto() && (c.cursor || c.panel)) pintarGrafo(false); });
+BE.pintores.push((c) => { seguirSeleccion(); if (abierto() && (c.cursor || c.panel)) pintarGrafo(false); });
 
 estudio.vistas.grafo = { abierta: abierto, cerrar: cerrarGrafo };
 estudio.vistas.conexion = { abierta: conAbierta, cerrar: cerrarConexion };
 
-// Dirección: grafo=pablo.timoteo (la ruta de saltos; el último es el centro), gvista=lista, gtodo=1;
+// Dirección: grafo=pablo.timoteo.lugar:listra (la ruta de saltos; el último es el centro; las personas sin tipo),
+// gvista=lista, gtodo=1;
 // conexion=persona:loida~persona:pablo y camino=<n>.
 BE.parametros.push(
-  { nombre: 'grafo', historia: true, escribir: () => (abierto() ? G.ruta.join('.') : null),
-    leer(v, inicial) {
-      const ruta = (v || '').split('.').filter((x) => BE.PERS[x]);
+  { nombre: 'grafo', historia: true, escribir: () => (abierto() ? G.ruta.map((x) => (x.startsWith('persona:') ? x.slice(8) : x)).join('.') : null),
+    leer(v) {
+      const ruta = (v || '').split('.').map(aSel).filter((x) => BE.parseSel(x));
       if (ruta.length) { if (ruta.join('.') !== G.ruta.join('.')) abrirGrafo(ruta[ruta.length - 1], { ruta, desdeHash: true }); }
       else if (abierto()) cerrarGrafo(true);
     } },
   { nombre: 'gvista', escribir: () => (abierto() && G.modo === 'lista' && !estrecha() ? 'lista' : abierto() && G.modo === 'grafo' && estrecha() ? 'grafo' : null),
-    leer(v) { if (v === 'lista' || v === 'grafo') { G.modo = v; if (abierto()) pintarGrafo(true); } } },
+    leer(v) { if (v === 'lista' || v === 'grafo') { G.modo = v; G.modoPedido = true; if (abierto()) pintarGrafo(true); } } },
   { nombre: 'gtodo', escribir: () => (abierto() && !G.vigente ? '1' : null), leer(v) { G.vigente = v !== '1'; if (abierto()) pintarGrafo(true); } },
   { nombre: 'conexion', historia: true, escribir: () => (conAbierta() ? `${C.a || ''}~${C.b || ''}` : null),
     leer(v) {
@@ -644,6 +809,6 @@ BE.parametros.push(
   { nombre: 'camino', escribir: () => (conAbierta() && C.camino ? String(C.camino) : null), leer(v) { C.camino = +v || 0; if (conAbierta()) pintarConexion(); } },
 );
 
-BE.grafo = { abrir: abrirGrafo, cerrar: cerrarGrafo, centrar: centrarEn, nodos: nodosDe, get ruta() { return [...G.ruta]; } };
-BE.conexion = { abrir: abrirConexion, cerrar: cerrarConexion, caminos: (a, b) => caminos(a, b) };
+BE.grafo = { abrir: abrirGrafo, cerrar: cerrarGrafo, centrar: centrarEn, nodos: nodosDe, aristas: aristasSel, get ruta() { return [...G.ruta]; } };
+BE.conexion = { abrir: abrirConexion, cerrar: cerrarConexion, caminos: (a, b) => caminos(a, b), rellenar: rellenarConexion, get extremos() { return [C.a, C.b]; } };
 })();

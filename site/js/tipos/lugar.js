@@ -13,7 +13,14 @@ const persona = (id) => BE.PERS[id]?.nombre || id;
 
 /** Todo lo fechado que ocurre en un lugar: sucesos, periodos, paradas, cartas, hallazgos y personas que vivieron,
     nacieron o murieron aquí. Cada hecho: { sel, titulo, tr: [inicio, fin) o null, fecha, fuentes, estado, nivel, tipo }. */
+const MEMO_HECHOS = new Map();   // los datos no cambian después de cargar: los hechos de cada lugar se calculan una vez
 function hechosDe(id) {
+  if (MEMO_HECHOS.get(id)?.D === BE.D) return MEMO_HECHOS.get(id).out;
+  const out = calcularHechos(id);
+  MEMO_HECHOS.set(id, { D: BE.D, out });
+  return out;
+}
+function calcularHechos(id) {
   const D = BE.D, out = [];
   const add = (o) => out.push({ ...o, nivel: BE.nivelDe(o.fuentes) });
   for (const e of D.eventos || []) if ((e.lugares || []).includes(id)) add({ sel: `evento:${e.id}`, titulo: e.titulo, tr: BE.ventanaEvento(e), fecha: e.fecha, fuentes: e.fuentes, estado: e.estado, tipo: 'evento', pasajes: e.pasajes });
@@ -90,106 +97,104 @@ function ahoraHtml(id, t) {
     ${ahora.length && (antes.length || despues.length) ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Conectado con ${esc(nombre)}, visto desde ${esc(fmtAnio(Math.floor(t)))}</h3>${conectado('Antes', antes, true)}${conectado('Después', despues, false)}</div></section>` : ''}`;
 }
 
-// ---- Tira de la historia del lugar (F-02), con los tramos vacíos plegados ----
-const ANCHO = 360;
-function escalaPlegada(intervalos) {
-  const xs = intervalos.map(([a, b]) => [a, Math.max(b, a + 0.01)]).sort((p, q) => p[0] - q[0]);
-  const min = xs[0][0], max = Math.max(...xs.map((p) => p[1]));
-  const umbral = Math.max(8, (max - min) * 0.08);
-  const segs = [];
-  for (const [a, b] of xs) {
-    const u = segs[segs.length - 1];
-    if (u && a - u[1] < umbral) u[1] = Math.max(u[1], b); else segs.push([a, b]);
-  }
-  const HUECO = 16, MIN = 22;
-  const huecos = segs.length - 1;
-  const dur = segs.map(([a, b]) => Math.max(b - a, 0.01));
-  let k = (ANCHO - huecos * HUECO) / dur.reduce((s, d) => s + d, 0);
-  let anchos = dur.map((d) => d * k);
-  for (let it = 0; it < 3; it++) {
-    const cortos = anchos.map((w) => w < MIN);
-    const libre = ANCHO - huecos * HUECO - cortos.filter(Boolean).length * MIN;
-    const resto = dur.filter((_, i) => !cortos[i]).reduce((s, d) => s + d, 0);
-    k = resto > 0 ? libre / resto : k;
-    anchos = dur.map((d, i) => (cortos[i] ? MIN : d * k));
-  }
-  const x0 = []; let x = 0;
-  segs.forEach((_, i) => { x0.push(x); x += anchos[i] + HUECO; });
-  const escala = (y) => {
-    if (y <= segs[0][0]) return 0;
-    for (let i = 0; i < segs.length; i++) {
-      const [a, b] = segs[i];
-      if (y <= b) return x0[i] + ((y - a) / Math.max(b - a, 0.01)) * anchos[i];
-      if (i < segs.length - 1 && y < segs[i + 1][0]) return x0[i] + anchos[i] + ((y - b) / (segs[i + 1][0] - b)) * HUECO;
-    }
-    return ANCHO;
-  };
-  return { escala, segs, x0, anchos, min, max };
-}
-function tiraHtml(id) {
+// ---- Toda la historia del lugar (F-02): una lista por fechas, legible, con el cursor dentro ----
+// Antes era una tira de rombos sin nombres sobre un eje de años de 8 px (be-g9s). Ahora cada hecho es una fila con su
+// fecha, su tipo en palabras y su nombre; los tramos largos sin hechos se pliegan en una fila «≈ N años sin hechos», y
+// una fila «Estás aquí» marca el cursor. Con muchos hechos (Jerusalén tiene más de 150) se ven los que rodean al
+// cursor y un botón enseña todos.
+const conPunto = (x) => (x.endsWith('.') ? x : `${x}.`);
+const TIPO_HECHO = { evento: 'suceso', periodo: 'periodo', parada: 'parada de un viaje', carta: 'carta', hallazgo: 'hallazgo', persona: 'persona', nombre: 'nombre del lugar' };
+const VENTANA_HISTORIA = 10;       // filas a la vista sin desplegar
+const HUECO_HISTORIA = 10;         // años sin hechos a partir de los que se pliega el tramo
+const historiaAbierta = new Set(); // lugares con la historia desplegada entera
+/** Las filas de la historia: hechos fechados y nombres por época, por orden de inicio. */
+function filasHistoria(id) {
   const l = BE.L[id];
-  const hs = visibles(hechosDe(id));
-  const fechados = hs.filter((h) => h.tr);
-  const sinAnio = hs.filter((h) => !h.tr);
-  const epocas = (l.nombres || []).filter((n) => n.desde != null || n.hasta != null);
-  if (fechados.length + epocas.length < 2) {
+  // La fecha corta de la columna: el texto de la fuente si ya es corto («997-980 a.e.c.»), si no la fecha compacta.
+  const corta = (h) => (h.fecha?.texto && h.fecha.texto.length <= 16 ? h.fecha.texto : fechaCorta(h.fecha)) || fmtAnio(Math.floor(h.tr[0]));
+  const filas = visibles(hechosDe(id)).filter((h) => h.tr).map((h) => ({ ...h, corto: corta(h) }));
+  for (const n of (l.nombres || []).filter((x) => x.desde != null || x.hasta != null)) {
+    const a = n.desde ?? n.hasta - 50, b = n.hasta != null ? n.hasta + 1 : a + 50;
+    const texto = n.desde != null && n.hasta != null ? `de ${fmtAnio(n.desde)} a ${fmtAnio(n.hasta)}` : n.desde != null ? `desde ${fmtAnio(n.desde)}` : `hasta ${fmtAnio(n.hasta)}`;
+    filas.push({ sel: '', tipo: 'nombre', titulo: `Se llama ${n.nombre}`, tr: [a, b], corto: texto, fecha: { texto }, fuentes: n.fuentes, estado: n.estado });
+  }
+  return filas.sort((x, y) => x.tr[0] - y.tr[0] || x.tr[1] - y.tr[1]);
+}
+/** Dónde va el cursor: índice de la primera fila que empieza después de t. */
+const posicionCursor = (filas, t) => { const i = filas.findIndex((h) => h.tr[0] > t); return i < 0 ? filas.length : i; };
+function claveHistoria(id, t) {
+  const filas = filasHistoria(id);
+  const ahora = filas.filter((h) => t >= h.tr[0] && t < h.tr[1]).map((h) => h.sel || h.titulo).join(',');
+  return `${id}|${posicionCursor(filas, t)}|${ahora}|${historiaAbierta.has(id) ? 1 : 0}|${Math.floor(t)}`;
+}
+function historiaHtml(id) {
+  const l = BE.L[id];
+  const filas = filasHistoria(id);
+  const sinAnio = visibles(hechosDe(id)).filter((h) => !h.tr);
+  if (!filas.length) {
     return sinAnio.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Sin año</h3><ul class="hechos">${sinAnio.map((h) => `<li class="hecho"><button type="button" class="enlace-titulo" data-sel="${esc(h.sel)}">${esc(h.titulo)}</button></li>`).join('')}</ul></div></section>` : '';
   }
-  const ints = fechados.map((h) => h.tr);
-  for (const n of epocas) { const a = n.desde ?? n.hasta - 50, b = n.hasta != null ? n.hasta + 1 : a + 50; ints.push([a, b]); }
-  const S = escalaPlegada(ints);
-  const x = (y) => S.escala(y).toFixed(1);
-  const bandas = fechados.filter((h) => h.tipo === 'periodo' || h.tr[1] - h.tr[0] > (S.max - S.min) * 0.15);
-  const hitos = fechados.filter((h) => !bandas.includes(h)).sort((a, b) => a.tr[0] - b.tr[0]);
-  const H = 104;
+  const t = E.t;
+  const pos = posicionCursor(filas, t);
+  const todo = historiaAbierta.has(id) || filas.length <= VENTANA_HISTORIA + 2;
+  let de = 0, a = filas.length;
+  if (!todo) {
+    de = Math.max(0, Math.min(pos - 4, filas.length - VENTANA_HISTORIA));
+    a = de + VENTANA_HISTORIA;
+  }
+  const min = filas[0].tr[0], max = Math.max(...filas.map((h) => h.tr[1]));
+  const desde = fmtAnio(Math.floor(min)), hasta = fmtAnio(Math.floor(max - 0.001));
+  const rango = desde === hasta ? `Todo en ${desde}` : `De ${desde} a ${hasta}`;
   const partes = [];
-  // Ejes: el inicio de cada tramo con su año, y los huecos plegados con «≈».
-  let ultimaEtiqueta = -99;
-  S.segs.forEach(([a, b], i) => {
-    if (i > 0) partes.push(`<text class="tira-pliegue" x="${(S.x0[i] - 8).toFixed(1)}" y="${H - 2}" text-anchor="middle">≈</text>`);
-    // Año de inicio de cada tramo, y el final del último; se salta el que no cabe junto al anterior.
-    const marcas = [[S.x0[i], a]];
-    if (i === S.segs.length - 1) marcas.push([S.x0[i] + S.anchos[i], b]);
-    for (const [px, y] of marcas) {
-      if (px - ultimaEtiqueta < 50) continue;
-      ultimaEtiqueta = px;
-      partes.push(`<text class="tira-anio" x="${px.toFixed(1)}" y="${H - 2}"${px > ANCHO - 30 ? ' text-anchor="end"' : ''}>${esc(fmtAnio(Math.floor(y)))}</text>`);
-    }
-  });
-  partes.push(`<line class="tira-eje" x1="0" x2="${ANCHO}" y1="${H - 14}" y2="${H - 14}"/>`);
-  // Nombres por época
-  epocas.forEach((n) => {
-    const a = n.desde ?? S.min, b = n.hasta != null ? n.hasta + 1 : S.max;
-    partes.push(`<g class="tira-epoca"><rect x="${x(a)}" y="4" width="${Math.max(2, S.escala(b) - S.escala(a)).toFixed(1)}" height="14" rx="3"/><text x="${(+x(a) + 4).toFixed(1)}" y="15">${esc(n.nombre)}</text></g>`);
-  });
-  bandas.forEach((h, i) => {
-    const y = 22 + (i % 2) * 16;
-    const ancho = Math.max(3, S.escala(h.tr[1]) - S.escala(h.tr[0]));
-    partes.push(`<g class="tira-banda tira-banda--${h.nivel === 2 ? 2 : 1}${h.estado === 'pendiente' ? ' tira--pendiente' : ''}" data-ir-t="${((h.tr[0] + h.tr[1]) / 2).toFixed(2)}" data-ir-sel="${esc(h.sel)}" role="button" tabindex="0" aria-label="${esc(`${h.titulo}, ${fechaTexto(h)}`)}"><title>${esc(`${h.titulo} · ${fechaTexto(h)}`)}</title><rect x="${x(h.tr[0])}" y="${y}" width="${ancho.toFixed(1)}" height="13" rx="3"/>${ancho > 60 ? `<text x="${(+x(h.tr[0]) + 4).toFixed(1)}" y="${y + 10}">${esc(h.titulo.slice(0, Math.floor(ancho / 6.2)))}</text>` : ''}</g>`);
-  });
-  let ultimo = -99, fila = 0;
-  hitos.forEach((h) => {
-    const cx = S.escala(h.tr[0]);
-    fila = cx - ultimo < 9 ? (fila + 1) % 3 : 0;
-    ultimo = cx;
-    const y = 60 + fila * 9;
-    partes.push(`<g class="tira-hito tira-hito--${h.tipo}${h.nivel === 2 ? ' tira-hito--n2' : ''}${h.estado === 'pendiente' ? ' tira--pendiente' : ''}" data-ir-t="${((h.tr[0] + h.tr[1]) / 2).toFixed(2)}" data-ir-sel="${esc(h.sel)}" role="button" tabindex="0" aria-label="${esc(`${h.titulo}, ${fechaTexto(h)}`)}"><title>${esc(`${h.titulo} · ${fechaTexto(h)}`)}</title><line x1="${cx.toFixed(1)}" x2="${cx.toFixed(1)}" y1="${y + 4}" y2="${H - 14}"/><rect x="${(cx - 4).toFixed(1)}" y="${y - 4}" width="8" height="8" transform="rotate(45 ${cx.toFixed(1)} ${y})"/></g>`);
-  });
-  const t = clamp(E.t, S.min, S.max);
-  partes.push(`<g id="tira-cursor" class="tira-cursor" transform="translate(${x(t)} 0)"><line x1="0" x2="0" y1="0" y2="${H - 12}"/></g>`);
-  return `<section class="be-card ficha-sec tira-sec"><div class="be-card__pad">
-      <h3 class="be-card__eyebrow">Toda la historia del lugar</h3><p class="be-muted nota-tira">Pulsa un hito para ir a su fecha. Los tramos sin hechos se pliegan (≈).</p>
-      <svg class="tira" id="tira-lugar" viewBox="-6 0 ${ANCHO + 12} ${H}" data-min="${S.min}" data-max="${S.max}" role="group" aria-label="Historia de ${esc(l.nombre)}: pulsa un hito para ir a su fecha">${partes.join('')}</svg>
+  const cursor = () => `<li class="historia-cursor" id="historia-cursor"><span class="historia-fecha">${esc(fmtCursor(t))}</span><span class="historia-cursor__txt">Estás aquí</span></li>`;
+  if (de > 0) partes.push(`<li class="historia-mas"><button type="button" class="enlace-texto" data-historia-todo="${esc(id)}">${de} ${de === 1 ? 'hecho anterior' : 'hechos anteriores'}</button></li>`);
+  let fin = de > 0 ? Math.max(...filas.slice(0, de).map((h) => h.tr[1])) : -Infinity;
+  for (let i = de; i < a; i++) {
+    const h = filas[i];
+    const hueco = h.tr[0] - fin;
+    if (i > de && hueco >= HUECO_HISTORIA) partes.push(`<li class="historia-hueco"><span class="historia-fecha" aria-hidden="true">≈</span><span>${esc(distancia(hueco, false).replace(/ después$/, ''))} sin hechos aquí</span></li>`);
+    if (i === pos) partes.push(cursor());
+    const ahora = t >= h.tr[0] && t < h.tr[1];
+    const tipo = TIPO_HECHO[h.tipo] || 'hecho';
+    const largo = fechaTexto(h);
+    const medio = ((h.tr[0] + Math.min(h.tr[1], h.tr[0] + 1)) / 2).toFixed(4);
+    partes.push(`<li class="historia-fila historia-fila--${h.tipo}${ahora ? ' historia-fila--ahora' : ''}${h.nivel === 2 ? ' historia-fila--n2' : ''}">
+      <span class="historia-fecha">${esc(h.corto)}</span><span class="historia-marca" aria-hidden="true"></span>
+      <span class="historia-texto"><button type="button" class="enlace-titulo historia-titulo" data-ir-t="${medio}"${h.sel ? ` data-ir-sel="${esc(h.sel)}"` : ''} title="Llevar el cursor a ${esc(largo)}">${esc(h.titulo)}</button>
+      <span class="historia-meta">${ahora ? '<b class="historia-ahora">ahora</b> · ' : ''}${esc(tipo)}${largo && largo !== h.corto ? ` · ${esc(largo)}` : ''}${h.estado === 'pendiente' ? ' · <span class="sin-verificar">sin verificar</span>' : ''}${h.nivel === 2 ? ' · otra fuente que jw.org usa' : ''}</span></span></li>`);
+    fin = Math.max(fin, h.tr[1]);
+  }
+  if (pos >= a && (todo || pos === filas.length)) partes.push(cursor());
+  if (a < filas.length) partes.push(`<li class="historia-mas"><button type="button" class="enlace-texto" data-historia-todo="${esc(id)}">${filas.length - a} ${filas.length - a === 1 ? 'hecho posterior' : 'hechos posteriores'}</button></li>`);
+  const boton = filas.length > VENTANA_HISTORIA + 2 ? `<button type="button" class="be-btn be-btn--sm be-btn--ghost historia-boton" data-historia-todo="${esc(id)}" aria-expanded="${todo}">${todo ? 'Ver solo lo cercano a la fecha' : `Ver los ${filas.length} hechos`}</button>` : '';
+  return `<section class="be-card ficha-sec historia-sec" id="historia-lugar" data-lugar="${esc(id)}" data-clave="${esc(claveHistoria(id, t))}"><div class="be-card__pad">
+      <h3 class="be-card__eyebrow">Toda la historia del lugar <b class="cuenta">${filas.length}</b></h3>
+      <p class="be-muted nota-tira">${esc(conPunto(rango))} Pulsa un hecho para llevar el cursor a su fecha.</p>
+      <ol class="historia" aria-label="Historia de ${esc(l.nombre)} por fechas">${partes.join('')}</ol>
+      ${boton}
       ${sinAnio.length ? `<div class="sin-anio"><span class="be-caps">Sin año</span> ${sinAnio.map((h) => `<button type="button" class="be-chip" data-sel="${esc(h.sel)}">${esc(h.titulo)}</button>`).join('')}</div>` : ''}
     </div></section>`;
 }
-let escalaTira = null;
-function moverCursorTira() {
-  const svg = document.getElementById('tira-lugar'), g = document.getElementById('tira-cursor');
-  if (!svg || !g || !escalaTira) return;
-  const t = clamp(E.t, escalaTira.min, escalaTira.max);
-  g.setAttribute('transform', `translate(${escalaTira.escala(t).toFixed(1)} 0)`);
+/** Con el cursor en otra fecha, solo se repinta la historia, y el foco vuelve a la fila que lo tenía. */
+function actualizarHistoria() {
+  const el = document.getElementById('historia-lugar');
+  if (!el || E.sel?.tipo !== 'lugar' || el.dataset.lugar !== E.sel.id) return;
+  if (el.dataset.clave === claveHistoria(E.sel.id, E.t)) return;
+  const foco = el.contains(document.activeElement) ? (document.activeElement.dataset.irSel || document.activeElement.textContent) : null;
+  const esBoton = document.activeElement?.classList?.contains('historia-boton');
+  el.outerHTML = historiaHtml(E.sel.id);
+  if (foco == null) return;
+  const nuevo = document.getElementById('historia-lugar');
+  const destino = esBoton ? nuevo.querySelector('.historia-boton') : [...nuevo.querySelectorAll('.historia-titulo')].find((b) => (b.dataset.irSel || b.textContent) === foco);
+  destino?.focus({ preventScroll: true });
 }
+document.addEventListener('click', (e) => {
+  const b = e.target.closest?.('[data-historia-todo]');
+  if (!b) return;
+  const id = b.dataset.historiaTodo;
+  if (historiaAbierta.has(id)) historiaAbierta.delete(id); else historiaAbierta.add(id);
+  actualizarHistoria();
+});
 
 // ---- Candidatos de ubicación (M-10, M-11, C-07, C-08, C-09) ----
 function candidatosHtml(l) {
@@ -260,12 +265,7 @@ function fichaLugar(id) {
   const noSabemos = [...(l.no_afirmamos || [])];
   if (cands) noSabemos.unshift(`No sabemos con seguridad dónde estaba ${l.nombre}.`);
   else if (l.precision === 'incierto') noSabemos.unshift(`No se conoce el sitio exacto de ${l.nombre}: el punto es aproximado.`);
-  escalaTira = null;
-  const tira = tiraHtml(id);
-  // La escala de la tira se guarda para mover el cursor sin repintar la ficha.
-  const hs = visibles(hechosDe(id)).filter((h) => h.tr).map((h) => h.tr);
-  for (const n of (l.nombres || []).filter((x) => x.desde != null || x.hasta != null)) { const a = n.desde ?? n.hasta - 50; hs.push([a, n.hasta != null ? n.hasta + 1 : a + 50]); }
-  if (hs.length >= 2) escalaTira = escalaPlegada(hs);
+  const tira = historiaHtml(id);
   return `${BE.migas('Lugares', l.nombre)}${BE.cerrarHtml()}
     <section class="be-card"><div class="be-card__pad">
       <div class="be-card__eyebrow"><span class="icono-lugar" aria-hidden="true"></span>${esc(tipo + prec)}</div>${incierta ? '<span class="insignia-incierta">identificación incierta</span>' : ''}
@@ -293,21 +293,39 @@ function fichaLugar(id) {
 
 /** Hechos fechados del lugar que caen en la vista de la línea de tiempo. */
 const hechosEnVista = (hs) => hs.filter((h) => h.tr[0] < E.vista[1] && h.tr[1] > E.vista[0]);
+/** Un suceso que abarca más de medio siglo («Una colonia judía vive en Babilonia», todo el siglo I) no dice qué pasa
+    aquí en una fecha concreta: ni retiene el cursor ni cuenta como el hecho más cercano (be-64b.7). Las estancias de
+    personas, los reinados y los periodos, aunque sean largos, sí cuentan. */
+const sucesoLargo = (h) => h.tipo === 'evento' && h.tr[1] - h.tr[0] > 50;
 /** Fecha a la que salta el cursor al elegir un lugar: ninguna si ya pasa algo aquí o no tiene nada fechado. Si nada suyo
-    cae en la vista (Edén elegido en 1473 a.e.c.), su primer hecho, como una persona; si no, el hecho más cercano. */
+    cae en la vista (Edén elegido en 1473 a.e.c.), la sede de una potencia va al inicio de esa potencia (Babilonia
+    elegida en 33 e.c. va a 632 a.e.c.) y cualquier otro lugar a su primer hecho, como una persona; si algo cae en la
+    vista, el hecho más cercano. */
 function momentoLugar(id) {
-  const hs = visibles(hechosDe(id)).filter((h) => h.tr);
-  if (!hs.length) return null;
+  const todos = visibles(hechosDe(id)).filter((h) => h.tr);
+  if (!todos.length) return null;
+  const cortos = todos.filter((h) => !sucesoLargo(h));
+  const hs = cortos.length ? cortos : todos;
   const t = E.t;
   if (hs.some((h) => t >= h.tr[0] && t < h.tr[1])) return null;
   const en = (h) => (h.tr[1] - h.tr[0] > 3 ? h.tr[0] + 0.01 : (h.tr[0] + h.tr[1]) / 2);
-  if (!hechosEnVista(hs).length) return en(hs.reduce((m, x) => (x.tr[0] < m.tr[0] || (x.tr[0] === m.tr[0] && x.tr[1] < m.tr[1]) ? x : m)));
+  if (!hechosEnVista(hs).length) {
+    const pot = (BE.D.periodos || []).find((p) => p.tipo === 'potencia' && p.lugares?.[0] === id);
+    const trp = pot && BE.tramoPeriodo(pot);
+    const a = trp && (t < trp[0] || t >= trp[1]) ? BE.inicioPeriodo(pot) : null;
+    if (a != null) return a + 0.01;
+    return en(hs.reduce((m, x) => (x.tr[0] < m.tr[0] || (x.tr[0] === m.tr[0] && x.tr[1] < m.tr[1]) ? x : m)));
+  }
   const d = (h) => (t < h.tr[0] ? h.tr[0] - t : t - h.tr[1]);
   const h = hs.reduce((m, x) => (d(x) < d(m) ? x : m));
   return h.tr[1] - h.tr[0] > 3 ? (t < h.tr[0] ? h.tr[0] + 0.01 : h.tr[1] - 0.01) : (h.tr[0] + h.tr[1]) / 2;
 }
 /** ¿Tiene el lugar hechos fechados y ninguno en la vista? Entonces elegirlo en el mapa también mueve el cursor. */
-const lugarFueraDeVista = (id) => { const hs = visibles(hechosDe(id)).filter((h) => h.tr); return hs.length > 0 && !hechosEnVista(hs).length; };
+const lugarFueraDeVista = (id) => {
+  const todos = visibles(hechosDe(id)).filter((h) => h.tr);
+  const cortos = todos.filter((h) => !sucesoLargo(h));
+  return todos.length > 0 && !hechosEnVista(cortos.length ? cortos : todos).length;
+};
 
 BE.tipo('lugar', {
   nodo: 'lugar',
@@ -329,8 +347,10 @@ BE.tipo('lugar', {
       const p = puntuar([l.nombre, ...(l.nombres || []).map((n) => n.nombre), ...(BE.candidatosDe(l) || []).map((c) => c.nombre)]);
       if (!p) continue;
       const hoy = BE.nombreHoy(l);
-      const n = BE.P.filter((s) => s.lugar.id === l.id).length;
-      out.push({ grupo: 'Lugares', sel: { tipo: 'lugar', id: l.id }, titulo: l.nombre, meta: [hoy ? `hoy ${hoy}` : '', BE.candidatosDe(l) || l.precision === 'incierto' ? 'ubicación incierta' : '', `${n} paradas`].filter(Boolean).join(' · '), puntos: p });
+      // Cuántos hechos fechados tiene; sin ninguno no se dice «0» (be-u66.3), y uno es «1 hecho», no «1 paradas».
+      const n = hechosDe(l.id).length;
+      const cuantos = n ? `${n} ${n === 1 ? 'hecho' : 'hechos'}` : '';
+      out.push({ grupo: 'Lugares', sel: { tipo: 'lugar', id: l.id }, titulo: l.nombre, meta: [hoy ? `hoy ${hoy}` : '', BE.candidatosDe(l) || l.precision === 'incierto' ? 'ubicación incierta' : '', cuantos].filter(Boolean).join(' · '), puntos: p });
     }
     return out;
   },
@@ -339,7 +359,7 @@ BE.tipo('lugar', {
 // La ficha de un lugar cambia con el cursor: solo se repinta el bloque «Qué pasaba aquí ahora» y el cursor de la tira.
 BE.pintores.push((c) => {
   if (E.sel?.tipo !== 'lugar' || !(c.cursor || c.panel)) return;
-  moverCursorTira();
+  actualizarHistoria();
   const el = document.getElementById('lugar-ahora');
   if (!el) return;
   const clave = claveAhora(E.sel.id, E.t);

@@ -223,7 +223,6 @@ function pintarMenu() {
     <button type="button" role="menuitem" data-menu="conexion">¿Cómo se relacionan dos?</button>
     <div class="be-caps menu-titulo">Ver</div>
     <button type="button" role="menuitemcheckbox" aria-checked="${on('letra-grande')}" data-menu="letra-grande">Letra grande</button>
-    <button type="button" role="menuitemcheckbox" aria-checked="${on('reunion')}" data-menu="reunion">Modo reunión (oscuro, sin animaciones)</button>
     <button type="button" role="menuitemcheckbox" aria-checked="${on('presentando')}" data-menu="presentar">Presentación a pantalla completa</button>`;
 }
 function menu(abrir) {
@@ -242,14 +241,14 @@ function accionMenu(a) {
     else if (sel?.tipo === 'libro') id = BE.idPasaje(BE.libroPorSlug(sel.id), 1);
     else { const o = BE.objetoSel?.(sel); const c = o && BE.citas(o.referencia || (o.pasajes || []).join('; '))[0]; if (c) id = BE.idPasaje(c.libro, c.cap); }
     BE.lectura.abrir(id);
-  } else if (a === 'grafo') BE.grafo.abrir(sel?.tipo === 'persona' ? sel.id : 'pablo');
-  else if (a === 'conexion') BE.conexion.abrir(sel && ['persona', 'lugar'].includes(sel.tipo) ? BE.selTexto(sel) : null, null);
-  else if (a === 'letra-grande' || a === 'reunion') ponerClase(a, !raiz.classList.contains(`be-${a}`));
+  } else if (a === 'grafo') BE.grafo.abrir(sel ? BE.selTexto(sel) : 'pablo');
+  else if (a === 'conexion') BE.conexion.abrir(sel && ['persona', 'lugar', 'carta'].includes(sel.tipo) ? BE.selTexto(sel) : null, null);
+  else if (a === 'letra-grande') ponerClase(a, !raiz.classList.contains(`be-${a}`));
   else if (a === 'presentar') presentar(!raiz.classList.contains('be-presentando'));
 }
 function iniciar() {
   if (pref('letra-grande')) raiz.classList.add('be-letra-grande');
-  if (pref('reunion')) raiz.classList.add('be-reunion');
+  if (pref('reunion')) raiz.classList.add('be-reunion');   // el modo reunión se pone y se quita con el botón de la luna (base.js)
   // El botón va en la barra superior, delante de «compartir» (index.html está congelado: lo pone este módulo).
   const cont = document.createElement('div');
   cont.className = 'estudio-ajustes';

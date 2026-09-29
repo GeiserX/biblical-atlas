@@ -87,6 +87,76 @@ relaciones:
   - it-jesucristo
   razon: Lu 1:36 hace a Elisabet pariente de María; Perspicacia «Jesucristo» llama a Juan pariente de Jesús.
   estado: verificado
+- tipo: se_aparece_a
+  persona: pablo
+  relacion: se le aparece camino de Damasco
+  relacion_inversa: lo ve resucitado camino de Damasco
+  fecha:
+    desde: 34
+    hasta: 34
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 34 e.c.
+  deducido: false
+  fuentes:
+  - hch-9
+  - hch-22
+  - 1-corintios-15
+  - it-pablo
+  razon: Hch 9:3-6 y 22:6-10 cuentan la luz y la voz de Jesús en el camino; en 1Co 15:8 Pablo se pone el último entre
+    aquellos a quienes se apareció. Perspicacia «Pablo» (párr. 5) lo narra.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: ananias-de-damasco
+  relacion: le habla en una visión
+  relacion_inversa: Jesús le habla en una visión
+  fecha:
+    desde: 34
+    hasta: 34
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 34 e.c.
+  deducido: false
+  fuentes:
+  - hch-9
+  - it-ananias
+  razon: En Hch 9:10-16 el Señor le habla en una visión y lo manda a buscar a Saulo; en 9:17 Ananías dice que ese Señor
+    es Jesús, el que se le apareció a Saulo en el camino.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: santiago-hermano-de-jesus
+  relacion: se le aparece resucitado
+  relacion_inversa: lo ve resucitado
+  fecha:
+    desde: 33
+    hasta: 33
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+  deducido: true
+  fuentes:
+  - 1-corintios-15
+  - it-santiago
+  razon: 1Co 15:7 dice solo «Santiago»; Perspicacia «Santiago» (apartado 4, párr. 3) cree que fue este, su medio hermano,
+    que antes no creía en él.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: esteban
+  relacion: Esteban lo ve en el cielo, en una visión
+  relacion_inversa: lo ve en una visión, de pie a la derecha de Dios
+  deducido: false
+  fuentes:
+  - hechos-7
+  - it-esteban
+  razon: Hch 7:55, 56; Perspicacia «Esteban» dice que fue el primero en contar que lo había visto resucitado en el cielo,
+    en una visión, poco antes de que lo mataran.
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Jesucristo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002451
@@ -94,5 +164,5 @@ enlaces:
 - titulo: Lucas 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

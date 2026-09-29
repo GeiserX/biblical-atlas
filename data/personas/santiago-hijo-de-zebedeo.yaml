@@ -48,6 +48,7 @@ relaciones:
 - tipo: acompana
   persona: pedro
   relacion: socio en la pesca
+  relacion_inversa: socio en la pesca
   deducido: false
   fuentes:
   - it-santiago

@@ -30,6 +30,7 @@ relaciones:
 - tipo: acompana
   persona: esteban
   relacion: compañero entre los siete
+  relacion_inversa: compañero entre los siete
   deducido: false
   fuentes:
   - it-felipe

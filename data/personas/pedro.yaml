@@ -63,6 +63,7 @@ relaciones:
 - tipo: acompana
   persona: juan-apostol
   relacion: compañero
+  relacion_inversa: compañero
   deducido: false
   fuentes:
   - it-pedro
@@ -74,6 +75,7 @@ relaciones:
 - tipo: acompana
   persona: santiago-hijo-de-zebedeo
   relacion: socio en la pesca
+  relacion_inversa: socio en la pesca
   deducido: false
   fuentes:
   - it-pedro
@@ -111,6 +113,7 @@ relaciones:
 - tipo: acompana
   persona: juan-marcos
   relacion: «Marcos mi hijo»
+  relacion_inversa: Pedro lo llama «Marcos mi hijo»
   fecha:
     desde: 62
     hasta: 64
@@ -128,7 +131,8 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: silas
-  relacion: amanuense de 1 Pedro
+  relacion: escribió 1 Pedro por medio de él
+  relacion_inversa: amanuense de 1 Pedro
   fecha:
     desde: 62
     hasta: 64

@@ -1,0 +1,118 @@
+/* biblical-earth · pantallas táctiles (be-f1w). Donde se pulsa con el dedo, cada control ofrece una diana de al menos
+   44 × 44 px: o crece, o un ::after transparente agranda la zona que recibe el toque sin cambiar el dibujo. Con ratón
+   no cambia nada. Va la última de las hojas: gana a las reglas del mismo peso. */
+
+/* El asa de la línea solo existe para el dedo (con ratón está la raya entre el mapa y la línea). */
+.linea-alto { display: none; }
+
+@media (pointer: coarse) {
+  /* ---------- Barra superior ---------- */
+  #inicio { min-width: 44px; min-height: 44px; justify-content: center; margin-left: -8px; margin-right: -8px; }
+  .buscador .be-search { height: 44px; }
+  #fecha { min-height: 44px; align-items: center; }
+  #estudio-boton, #acerca, #compartir, #reunion-boton { min-width: 44px; height: 44px; }
+  .filtro { min-height: 44px; }
+  .modos .be-seg__opt { height: 44px; min-width: 44px; justify-content: center; }
+
+  /* ---------- Mapa ---------- */
+  .maplibregl-ctrl-group button { width: 44px; height: 44px; }
+  /* La (i) de la atribución en el móvil: un círculo de 44 px con el icono de 26 px, sin repetirse. */
+  .maplibregl-ctrl-attrib-button { width: 44px; height: 44px; border-radius: 22px; background-size: 26px; background-repeat: no-repeat; background-position: center; }
+  .maplibregl-ctrl-attrib.maplibregl-compact { min-height: 44px; padding: 0 44px 0 0; border-radius: 22px; }
+  .maplibregl-ctrl-attrib.maplibregl-compact-show { padding: 4px 48px 4px 10px; line-height: 1.5; }
+  /* Los puntos del mapa miden 10 px: la zona que recibe el toque es un cuadrado de 44 px centrado en el punto. */
+  .marca-lugar::after, .marca-hallazgo::after, .grupo-lugares::after, .cand::after, .marca-agua::after {
+    content: ""; position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px;
+  }
+  .marca-region::after, .marca-num::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 44px; margin-top: -22px; }
+  .marca-region, .marca-num { min-width: 44px; }
+
+  /* ---------- Línea de tiempo ---------- */
+  .be-timeline { grid-template-rows: 48px 1fr; }
+  .be-play__btn, .be-play__main { width: 44px; height: 44px; }
+  .linea-botones .be-btn--icon, #ahora-boton, #linea-menu-boton { width: 44px; height: 44px; }
+  .zoom button { min-width: 44px; min-height: 44px; }
+  .zoom-select { height: 44px; }
+  .linea-barra .fechas-boton { min-height: 44px; }
+  /* La raya de 10 px entre el mapa y la línea no es una diana para el dedo: la sustituye el asa de la barra (base.js). */
+  #sep-linea { display: none; }
+  .linea-alto { display: inline-flex; flex: none; width: 44px; height: 44px; touch-action: none; cursor: row-resize; }
+  .linea-alto.arrastrando { background: var(--paper-2); color: var(--ink); }
+  /* El separador de la ficha (tabletas): una zona de 44 × 88 px alrededor de su asa. */
+  .separador--panel::before { opacity: 0 !important; left: -17px; width: 44px; top: 50%; bottom: auto; height: 88px; margin-top: -44px; background: transparent; }
+
+  /* ---------- Fichas, vistas y menús ---------- */
+  /* Enlaces, píldoras y botones pequeños: un ::after transparente que llega a 44 × 44 px alrededor de su centro. El
+     dibujo no cambia; el dedo acierta aunque caiga junto al texto. (La base: ::before en .be-wol, que ya usa ::after
+     para su flecha.) */
+  :is(.be-ref, .enlace-titulo, .enlace-texto, .be-btn--sm, .be-chip, .miga, .interruptor-grafo, .be-tab, .carril-ayuda,
+      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .pregunta-guia, .candidato,
+      .grafo-leyenda > summary, .be-wol, .lectura-libro select, .casilla, .menu-fila, .be-result, .meses-que):not(.maplibregl-marker) { position: relative; }
+  :is(.be-ref, .enlace-titulo, .enlace-texto, .be-btn--sm, .be-chip, .miga, .interruptor-grafo, .be-tab, .carril-ayuda,
+      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .pregunta-guia, .candidato,
+      .grafo-leyenda > summary, .menu-fila, .be-result, .meses-que, .sinc-rombo)::after,
+  /* Estos ya van posicionados (marcadores del mapa, la cortina, las barras de la sincronía): solo el ::after. */
+  :is(.pildora-carta, .proxima, .cortina-tag, .cortina-asa, .sinc-barra)::after,
+  .be-wol::before {
+    content: ""; position: absolute;
+    left: min(0px, calc(50% - 22px)); right: min(0px, calc(50% - 22px));
+    top: min(0px, calc(50% - 22px)); bottom: min(0px, calc(50% - 22px));
+  }
+  /* Lo que recorta su propio contenido (texto cortado con «…») no puede sacar su zona fuera: crece de verdad. */
+  .tira-suceso, .leyenda-boton { height: 44px; }
+  .mientras-titulo { min-height: 44px; display: flex; align-items: center; }
+  /* Lo que no admite un ::after (campos y desplegables) o va en fila con sus vecinos crece de verdad. */
+  .cap { min-width: 44px; height: 44px; }
+  .be-seg__opt { min-height: 44px; }
+  .casilla, .lectura-libro select, .lectura-wol { min-height: 44px; }
+  .be-tab { min-height: 44px; }
+  .pestanas-camino { row-gap: 4px; }
+  /* Filas de píldoras: 44 px de un centro al siguiente, para que las dianas no se pisen. */
+  .fila-chips, .grafo-filtros { row-gap: 16px; }
+  /* Enlaces uno debajo de otro: cada uno en su línea de 44 px. */
+  .be-wol { min-height: 44px; }
+  .grafo-lista ul { gap: 14px; }
+  .ahora-kv { row-gap: 14px; }
+  /* Las casillas de un formulario: el rótulo entero es la diana. */
+  label:has(input[type="checkbox"], input[type="radio"]) { min-height: 44px; display: inline-flex; align-items: center; }
+  /* Menús: una fila de 44 px por opción; el − y el + de la velocidad, de 44 × 44. */
+  .menu-fila, .estudio-menu button { min-height: 44px; }
+  .vel-boton { width: 44px; height: 44px; }
+  /* La fecha que se escribe ocupa toda la caja de la fecha. */
+  .fecha-entrada { inset: -1px; width: calc(100% + 2px); }
+  /* Sincronía: filas de 44 px, con la barra en medio y su zona de toque de alto a alto. */
+  .sinc-fila { min-height: 44px; }
+  .sinc-fila:not(.sinc-eje) .sinc-barra, .sinc-fila:not(.sinc-eje) .sinc-rombo { top: 12px; }
+  .sinc-barra { overflow: visible; }
+
+  /* ---------- Hoja del móvil ---------- */
+  .panel-cuerpo { padding-top: 10px; }   /* la zona de toque de «Cerrar ficha» no queda cortada por arriba */
+  .hoja-asa { height: 24px; padding: 0 !important; position: relative; }
+  .hoja-asa .be-sheet__grip { margin: 0 auto; }
+  .hoja-asa::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 20px; }
+}
+
+/* ---------- Tabletas en vertical y móviles con el dedo ---------- */
+@media (pointer: coarse) and (max-width: 900px) {
+  .modos .be-seg__opt { height: 44px; padding: 0; }
+  #reunion-boton { left: 162px; width: 44px; height: 44px; }
+  /* Lo que flota arriba del mapa baja por debajo de la fila de los tres mapas, que ahora mide 50 px. */
+  .mientras, .situacion, .cortina-tag, .panel-mapa, .vista-ahora, .vista-recorrido, .leyenda.abierta { top: 64px; }
+}
+@media (pointer: coarse) and (max-width: 760px) {
+  /* En la barra del móvil, «Estudio» y «Acerca de» se dibujan de 36 px y su zona de toque llega a 44 por los lados,
+     hasta tocarse sin pisarse: la búsqueda, que es lo principal, recupera 16 px. */
+  #estudio-boton, #acerca { min-width: 36px; width: 36px; position: relative; }
+  #estudio-boton::after, #acerca::after { content: ""; position: absolute; inset: 0 -5px; }
+  #acerca { margin-left: 4px; }   /* la separación de la barra es de 6 px: con 4 más, las dos zonas de 44 no se pisan */
+  .buscador .be-search { padding: 0 10px; gap: 6px; }
+  /* Los botones del mapa, en dos columnas: cinco de 44 px en una sola no caben encima de la hoja. */
+  .maplibregl-ctrl-top-right { display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: flex-start; width: 108px; }
+  .maplibregl-ctrl-top-right > .maplibregl-ctrl { float: none; }
+  /* La leyenda abierta y el menú de capas tampoco. */
+  .leyenda.abierta { max-width: calc(100% - 128px); }
+  .panel-mapa { right: 118px; }
+  .leyenda.abierta .be-legend__row { white-space: normal; }
+  /* «Ahora mismo» no tapa los botones del mapa ni se mete bajo la hoja. */
+  .vista-ahora { right: 118px; max-height: calc(100% - 72px - var(--hoja-max)); }
+}
