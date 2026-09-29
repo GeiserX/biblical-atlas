@@ -126,7 +126,12 @@ function nombresHtml(obj) {
 }
 const botonSel = (sel, titulo, meta = '') => `<button type="button" class="be-row fila-boton" data-sel="${esc(sel)}"><span><span class="be-row__title">${esc(titulo)}</span>${meta ? `<span class="be-row__meta">${meta}</span>` : ''}</span><span class="be-row__end" aria-hidden="true">›</span></button>`;
 const migas = (...xs) => `<nav class="be-crumbs" aria-label="Ruta">${xs.map((x) => `<span>${esc(x)}</span>`).join('<span class="be-sep" aria-hidden="true">›</span>')}</nav>`;
-const cerrarHtml = () => '<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-accion="cerrar">Cerrar ficha <span aria-hidden="true">×</span></button>';
+/** «Cerrar ficha» y, a su lado, el lápiz de la nota privada de lo seleccionado (notes.js). */
+const cerrarHtml = () => {
+  const cerrar = '<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-accion="cerrar">Cerrar ficha <span aria-hidden="true">×</span></button>';
+  const lapiz = BE.notes?.pencilForSel(E.sel) || '';
+  return lapiz ? `<div class="card-tools">${lapiz}${cerrar}</div>` : cerrar;
+};
 
 Object.assign(BE, {
   chipsCitas, estadoHtml, fuentesHtml, porQueHtml, notaHtml, enlacesHtml, videosHtml, nombresHtml, botonSel, migas, cerrarHtml,

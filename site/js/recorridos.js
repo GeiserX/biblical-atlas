@@ -46,7 +46,7 @@ function fichaRecorrido(id) {
   const nombreDe = (x) => { const y = BE.parseSel(x.sel); return y ? BE.nombreSel(y) : x.sel; };
   const libros = librosDe(rc);
   return `${BE.migas('Recorridos', rc.titulo)}
-    <button type="button" class="be-btn be-btn--sm cerrar-ficha" data-recorrido-salir>Salir y explorar <span aria-hidden="true">×</span></button>
+    <div class="card-tools">${BE.notes?.pencilForSel({ tipo: 'recorrido', id }) || ''}<button type="button" class="be-btn be-btn--sm cerrar-ficha" data-recorrido-salir>Salir y explorar <span aria-hidden="true">×</span></button></div>
     <section class="be-card recorrido"><div class="be-card__pad">
       <div class="be-card__eyebrow">Recorrido guiado · parada ${i + 1} de ${n}${libros.length ? ` · ${esc(libros.slice(0, 3).join(', '))}` : ''}</div>
       <div class="progreso" role="list" aria-label="Paradas del recorrido">${rc.paradas.map((x, k) => `<button type="button" role="listitem" class="progreso-tramo${k < i ? ' progreso-tramo--visto' : ''}${k === i ? ' progreso-tramo--actual' : ''}" data-recorrido-ir="${k}" aria-label="Parada ${k + 1}: ${esc(nombreDe(x))}"${k === i ? ' aria-current="step"' : ''}><span class="progreso-barra"></span><span class="progreso-anio">${esc(fmtAnio(Math.floor(x.t)))}</span></button>`).join('')}</div>
@@ -204,7 +204,8 @@ function presentar(on) {
 }
 document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && raiz.classList.contains('be-presentando')) presentar(false); });
 window.addEventListener('keydown', (e) => {
-  if (!raiz.classList.contains('be-presentando') || e.target.matches?.('input, textarea, select')) return;
+  // Un diálogo abierto (las notas) se queda sus teclas: flechas y avance de página no mueven la presentación de debajo.
+  if (!raiz.classList.contains('be-presentando') || e.target.matches?.('input, textarea, select') || e.target.closest?.('dialog[open]')) return;
   const k = e.key;
   if (['ArrowRight', 'PageDown', 'ArrowDown'].includes(k) || (k === ' ' && !e.target.matches?.('button, a'))) { e.preventDefault(); e.stopImmediatePropagation(); avanzar(1); }
   else if (['ArrowLeft', 'PageUp', 'ArrowUp'].includes(k)) { e.preventDefault(); e.stopImmediatePropagation(); avanzar(-1); }
@@ -221,6 +222,7 @@ function pintarMenu() {
     <button type="button" role="menuitem" data-menu="lectura">Modo lectura</button>
     <button type="button" role="menuitem" data-menu="grafo">Grafo de personas</button>
     <button type="button" role="menuitem" data-menu="conexion">¿Cómo se relacionan dos?</button>
+    <button type="button" role="menuitem" data-menu="notas">Mis notas</button>
     <div class="be-caps menu-titulo">Ver</div>
     <button type="button" role="menuitemcheckbox" aria-checked="${on('letra-grande')}" data-menu="letra-grande">Letra grande</button>
     <button type="button" role="menuitemcheckbox" aria-checked="${on('presentando')}" data-menu="presentar">Presentación a pantalla completa</button>`;
@@ -243,6 +245,7 @@ function accionMenu(a) {
     BE.lectura.abrir(id);
   } else if (a === 'grafo') BE.grafo.abrir(sel ? BE.selTexto(sel) : 'pablo');
   else if (a === 'conexion') BE.conexion.abrir(sel && ['persona', 'lugar', 'carta'].includes(sel.tipo) ? BE.selTexto(sel) : null, null);
+  else if (a === 'notas') BE.notes?.openList();
   else if (a === 'letra-grande') ponerClase(a, !raiz.classList.contains(`be-${a}`));
   else if (a === 'presentar') presentar(!raiz.classList.contains('be-presentando'));
 }
