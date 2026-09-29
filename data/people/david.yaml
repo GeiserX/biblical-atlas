@@ -40,6 +40,21 @@ sources:
 - amos-6
 - hch-2
 - hechos-7
+- 1-samuel-16
+- 1-samuel-17
+- 1-samuel-18
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-21
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-24
+- 1-samuel-25
+- 1-samuel-26
+- 1-samuel-27
+- 1-samuel-28
+- 1-samuel-29
+- 1-samuel-30
 links:
 - title: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -87,6 +102,11 @@ relations:
   - salmos-72
   - lucas-3
   - hch-13
+  - 1-samuel-16
+  - 1-samuel-17
+  - 1-samuel-20
+  - 1-samuel-22
+  - 1-samuel-25
   reason: Rut 4:17 y 22.
   checked_on: '2026-09-29'
   status: verified
@@ -108,6 +128,129 @@ relations:
   - it-david
   reason: 'Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo
     da sepultado en la Ciudad de David (1Re 2:10).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: saul
+  word: master
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - 1-samuel-22
+  - it-david
+  - 1-samuel-17
+  reason: '1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo
+    llama jefe de la guardia del rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - 1-samuel-17
+  - 1-samuel-20
+  - it-david
+  reason: '1Sa 17:15: iba y venía a Belén para cuidar las ovejas de su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: mical
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - 1-samuel-19
+  - it-mical
+  - 1-samuel-25
+  reason: '1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: saul
+  word: father_in_law
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - it-mical
+  - 1-samuel-22
+  - 1-samuel-25
+  reason: '1Sa 18:18-27: se convierte en yerno del rey al casarse con Mical.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: queila
+  inferred: false
+  sources:
+  - 1-samuel-23
+  - it-saul
+  - it-david
+  reason: '1Sa 23:5, 7, 13: tras salvar Queilá se queda en la ciudad hasta que huye de Saúl; Perspicacia «Saúl» y «David» dicen
+    que vivía allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abigail-esposa-de-david
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-abigail
+  - 1-samuel-27
+  - 1-samuel-30
+  reason: '1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahinoam-esposa-de-david
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-ahinoam
+  - 1-samuel-27
+  - 1-samuel-30
+  reason: '1Sa 25:43: también se había casado con Ahinoam, de Jezreel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: gat
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-akis
+  reason: '1Sa 27:3: se instala en Gat con Akís, con sus hombres y sus familias.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ziclag
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-ziqlag
+  - 1-samuel-30
+  reason: '1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: gad-profeta
+  word: adviser
+  inferred: false
+  sources:
+  - 1-samuel-22
+  - it-gad
+  reason: '1Sa 22:5: el profeta Gad aconseja a David que deje el refugio y vuelva a Judá; Perspicacia «Gad», núm. 3.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: akis
+  word: master
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-akis
+  - 1-samuel-28
+  - 1-samuel-29
+  reason: '1Sa 27:5, 12: David se llama siervo de Akís, y el rey cree que lo será siempre. Perspicacia «Akís», párr. 2.'
   checked_on: '2026-09-29'
   status: verified
 - type: tie

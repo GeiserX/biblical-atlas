@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-ofrece-el-sacrificio-sin-esperar-a-samuel
+title: Saúl ofrece el sacrificio sin esperar a Samuel
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 13008
+places:
+- guilgal
+- guibea-de-benjamin
+people:
+- saul
+- samuel
+present:
+- saul
+- samuel
+passages:
+- 1Sa 13:8-15
+summary: Pasado el plazo de siete días sin que llegue Samuel, y viendo que su tropa se dispersa, Saúl ofrece él mismo el sacrificio
+  quemado. Samuel le reprocha la desobediencia, le anuncia que su reino no durará y sube a Guibeá.
+reason: '1Sa 13:8-15; Perspicacia «Saúl», apartado «Peca presuntuosamente», y «Guilgal», núm. 1. Fecha: tras la unción de Saúl
+  (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-13
+- it-saul
+- it-guilgal
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

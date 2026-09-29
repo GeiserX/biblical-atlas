@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adriel
+name: Adriel
+names:
+- name: Adriel
+perspicacia: '1200000121'
+summary: Meholatita, hijo de Barzilai. Saúl le dio por esposa a su hija mayor, Merab, que había prometido a David. Más tarde
+  sus cinco hijos murieron a manos de los gabaonitas por la culpa de Saúl.
+reason: Perspicacia «Adriel» y «Meholatita»; 1Sa 18:19; 2Sa 21:8, 9.
+sources:
+- it-adriel
+- it-meholatita
+- 1-samuel-18
+links:
+- title: 'Perspicacia: «Adriel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000121
+  type: perspicacia
+- title: 1 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/18
+  type: bible
+relations:
+- type: kin
+  person: merab
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - it-adriel
+  reason: '1Sa 18:19: Merab, hija de Saúl, fue dada por esposa a Adriel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: saul
+  word: father_in_law
+  inferred: true
+  sources:
+  - 1-samuel-18
+  - it-meholatita
+  reason: Se casó con Merab, hija de Saúl (1Sa 18:19); Perspicacia «Meholatita» lo llama yerno de Saúl.
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: abel-mehola
+  inferred: true
+  sources:
+  - 1-samuel-18
+  - it-meholatita
+  reason: El sobrenombre meholatita de 1Sa 18:19 indica, según Perspicacia «Meholatita», que casi seguro era natural de Abel-meholá.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

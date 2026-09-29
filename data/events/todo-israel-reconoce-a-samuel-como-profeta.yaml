@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: todo-israel-reconoce-a-samuel-como-profeta
+title: Todo Israel reconoce a Samuel como profeta de Jehová
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de la batalla de Ebenézer en que muere Elí)'
+narrative_order:
+  series: 1-samuel
+  order: 3019
+places:
+- silo
+people:
+- samuel
+passages:
+- 1Sa 3:19-21
+- 1Sa 4:1
+summary: Samuel crece y Jehová hace que se cumpla todo lo que dice. Desde Dan hasta Beer-Seba el pueblo entiende que es profeta
+  de Jehová, que sigue revelándose en Siló, y su palabra llega a todo Israel.
+reason: '1Sa 3:19-4:1; Perspicacia «Samuel», párr. 4. Fecha: Jefté juzga desde hacia 1173, con Samuel aún niño («Jefté»),
+  y aquí Samuel ya es profeta conocido; Saúl es ungido en 1117 (estudio 3).'
+sources:
+- 1-samuel-3
+- 1-samuel-4
+- it-samuel
+- it-jefte
+- si-3
+links:
+- title: 1 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/3
+  type: bible
+- title: 'Perspicacia: «Samuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003824
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
+checked_on: '2026-09-29'
+status: verified

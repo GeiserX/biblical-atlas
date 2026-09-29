@@ -199,7 +199,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-10, type: poetry, entities: [person:akis, person:david], note: "Encabezamiento: David fingió locura ante Abimélec, título de Akís, rey de Gat, que lo echó. Es el suceso de 1Sa 21:10-15; lo crea Samuel. Salmo acróstico: el ángel de Jehová protege a quienes temen a Dios."}
+    - {v: 1-10, type: poetry, entities: [person:akis, person:david, event:david-se-hace-el-loco-ante-akis], note: "Encabezamiento: David fingió locura ante Abimélec, título de Akís, rey de Gat, que lo echó. Es el suceso de 1Sa 21:10-15. Salmo acróstico: el ángel de Jehová protege a quienes temen a Dios."}
     - {v: 11-22, type: poetry, mentions: [person:jesus], note: "David enseña el temor de Jehová: refrenar la lengua, apartarse del mal y buscar la paz. Jehová guarda los huesos del justo; Juan 19:36 aplica el versículo 20 a Jesús."}
   35:
     status: complete
@@ -311,7 +311,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-4, type: poetry, entities: [person:david, person:doeg, person:ahimelec-hijo-de-ahitub, relation:doeg/kin/esau], mentions: [person:saul, place:edom], note: "Encabezamiento: maskil de David, de cuando el edomita Doeg avisó a Saúl de que David había ido a casa de Ahimélec (1Sa 22:9, 10; el suceso lo crea Samuel). Perspicacia aplica a Doeg la lengua afilada y engañosa."}
+    - {v: 1-4, type: poetry, entities: [person:david, person:doeg, person:ahimelec-hijo-de-ahitub, relation:doeg/kin/esau, event:saul-manda-matar-a-los-sacerdotes-de-nob], mentions: [person:saul, place:edom], note: "Encabezamiento: maskil de David, de cuando el edomita Doeg avisó a Saúl de que David había ido a casa de Ahimélec (1Sa 22:9, 10). Perspicacia aplica a Doeg la lengua afilada y engañosa."}
     - {v: 5-9, type: poetry, note: "Dios sacará de su tienda al que se fió de sus riquezas y no de él, y los justos se burlarán. El salmista, en cambio, crecerá como un olivo lleno de hojas junto al santuario."}
   53:
     status: complete
@@ -323,7 +323,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-3, type: poetry, entities: [person:david, place:zif], mentions: [person:saul], note: "Encabezamiento: maskil de David, con instrumentos de cuerda, cuando los zifeos, habitantes de Zif, dijeron a Saúl que David se escondía entre ellos (1Sa 23:19; 26:1; el suceso lo crea Samuel). Pide a Dios que lo salve."}
+    - {v: 1-3, type: poetry, entities: [person:david, place:zif], mentions: [person:saul, event:los-de-zif-delatan-a-david-ante-saul, event:saul-vuelve-a-buscar-a-david-en-el-desierto-de-zif], note: "Encabezamiento: maskil de David, con instrumentos de cuerda, cuando los zifeos dijeron a Saúl que David se escondía entre ellos. Remite a las dos delaciones (1Sa 23:19; 26:1) sin elegir. Pide a Dios que lo salve."}
     - {v: 4-7, type: poetry, note: "Dios lo ayuda y pagará a sus opositores con su propia maldad. Le ofrecerá sacrificios y alabará su nombre porque lo salva de toda angustia."}
   55:
     status: complete
@@ -337,13 +337,13 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-7, type: poetry, entities: [person:david, place:gat], mentions: [place:filistea], note: "Encabezamiento: miktam de David, con la melodía «La paloma silenciosa que está lejos», cuando lo apresaron los filisteos en Gat (1Sa 21:10-15; el suceso lo crea Samuel). Confía en Dios aunque lo acosen."}
+    - {v: 1-7, type: poetry, entities: [person:david, place:gat, event:david-se-hace-el-loco-ante-akis], mentions: [place:filistea], note: "Encabezamiento: miktam de David, con la melodía «La paloma silenciosa que está lejos», cuando lo apresaron los filisteos en Gat (1Sa 21:10-15). Confía en Dios aunque lo acosen."}
     - {v: 8-13, type: poetry, note: "Dios lleva cuenta de su vida errante y guarda sus lágrimas en su odre. Sus enemigos retrocederán. Cumplirá sus votos, porque Dios lo libró de la muerte."}
   57:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: poetry, entities: [person:david], mentions: [person:saul], note: "Encabezamiento: miktam de David, con la melodía «No destruyas», cuando huía de Saúl y se metió en la cueva. No la nombra; las referencias llevan a Adulam (1Sa 22:1) y a En-Guedí (1Sa 24:3). Lo crea Samuel."}
+    - {v: 1-6, type: poetry, entities: [person:david], mentions: [person:saul, event:david-se-refugia-en-la-cueva-de-adulam, event:david-perdona-la-vida-a-saul-en-en-guedi], note: "Encabezamiento: miktam de David, con la melodía «No destruyas», cuando huía de Saúl y se metió en la cueva. No la nombra; las referencias llevan a Adulam (1Sa 22:1) y a En-Guedí (1Sa 24:3)."}
     - {v: 7-11, type: poetry, note: "Su corazón está firme: tocará el arpa, despertará al amanecer y alabará a Jehová entre las naciones, porque su amor leal llega a los cielos. Estos versículos reaparecen en Sl 108:1-5."}
   58:
     status: complete
@@ -355,7 +355,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: poetry, entities: [person:david, person:saul], note: "Encabezamiento: miktam de David, cuando Saúl mandó hombres a vigilar su casa para matarlo (1Sa 19:11; el suceso lo crea Samuel). Pide al Dios de Israel que lo libre, aunque no ha pecado."}
+    - {v: 1-5, type: poetry, entities: [person:david, person:saul, event:mical-ayuda-a-david-a-escapar], note: "Encabezamiento: miktam de David, cuando Saúl mandó hombres a vigilar su casa para matarlo (1Sa 19:11). Pide al Dios de Israel que lo libre, aunque no ha pecado."}
     - {v: 6-10, type: poetry, note: "Cada noche vuelven, gruñen como perros y rondan la ciudad; Jehová se ríe de ellos. Dios es su refugio y su fuerza."}
     - {v: 11-17, type: poetry, note: "Que no mueran enseguida, para que el pueblo no olvide; que su orgullo los atrape y se sepa que Dios gobierna en Jacob, el pueblo, y hasta el fin de la tierra."}
   60:
@@ -380,7 +380,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: poetry, entities: [person:david, place:desierto-de-juda], note: "Encabezamiento: David en el desierto de Judá. La referencia remite a 1Sa 23:14, huyendo de Saúl; La Atalaya de 1986 piensa en la rebelión de Absalón. Suceso de Samuel, sin evento aún."}
+    - {v: 1-8, type: poetry, entities: [person:david, place:desierto-de-juda], note: "Encabezamiento: David en el desierto de Judá. La referencia remite a 1Sa 23:14, huyendo de Saúl; La Atalaya de 1986 piensa en la rebelión de Absalón. Sin suceso: ninguno de 1 Samuel encaja solo."}
     - {v: 9-11, type: poetry, note: "Los que quieren matarlo caerán a espada y serán comida de chacales; el rey se alegrará en Dios y los mentirosos callarán."}
   64:
     status: complete
@@ -486,9 +486,9 @@ chapters:
     - {v: 32-41, type: poetry, mentions: [event:jehova-condena-a-israel-a-40-anos-en-el-desierto], note: "Aun así siguen pecando: Dios acorta sus años en el desierto; ellos lo buscan, pero le mienten, y él, compasivo, contiene su furia. El castigo es el de Nú 14."}
     - {v: 42-53, type: poetry, entities: [event:israel-cruza-el-mar-rojo, event:primera-plaga-el-agua-se-convierte-en-sangre, event:segunda-plaga-las-ranas, event:cuarta-plaga-los-tabanos, event:septima-plaga-el-granizo, event:octava-plaga-las-langostas, event:decima-plaga-mueren-los-primogenitos, event:exodo, place:egipto, place:zoan, place:rio-nilo], note: "Plagas de Egipto: el Nilo en sangre, tábanos, ranas, langostas, granizo y la muerte de los primogénitos en las tiendas de Cam, es decir, Egipto. Dios saca a su pueblo y el mar cubre al enemigo."}
     - {v: 54-55, type: poetry, entities: [event:entrada-en-canaan, event:conquista-de-canaan], note: "Dios lleva a Israel a su territorio santo, expulsa a las naciones y reparte la herencia entre las tribus."}
-    - {v: 56-64, type: poetry, entities: [place:silo], note: "Israel lo irrita con lugares altos e ídolos. Dios abandona el tabernáculo de Siló, deja que el Arca caiga en manos enemigas y mueren sacerdotes y jóvenes. Sucesos de 1Sa 4; los crea 1 Samuel."}
+    - {v: 56-64, type: poetry, entities: [place:silo], mentions: [event:los-filisteos-capturan-el-arca], note: "Israel lo irrita con lugares altos e ídolos. Dios abandona el tabernáculo de Siló, deja que el Arca caiga en manos enemigas y mueren sacerdotes y jóvenes: los sucesos de 1Sa 4."}
     - {v: 65-69, type: poetry, entities: [place:jerusalen], mentions: [person:jose-hijo-de-jacob], note: "Jehová rechaza a los enemigos y, en vez de la tribu de Efraín, descendiente de José, escoge la de Judá y el monte Sion para su santuario. Las tribus son pueblos, sin ficha."}
-    - {v: 70-72, type: poetry, entities: [person:david], mentions: [event:david-rey-de-todo-israel], note: "Dios escoge a David, lo saca de los rediles y lo hace pastor de Israel, al que guía con integridad. La unción de 1Sa 16 la crea 1 Samuel."}
+    - {v: 70-72, type: poetry, entities: [person:david], mentions: [event:david-rey-de-todo-israel, event:samuel-unge-a-david], note: "Dios escoge a David, lo saca de los rediles y lo hace pastor de Israel, al que guía con integridad. Las referencias remiten a su unción (1Sa 16:11, 12)."}
   79:
     status: complete
     reviewed_on: 2026-09-29
@@ -561,7 +561,7 @@ chapters:
     spans:
     - {v: 1-4, type: poetry, entities: [event:pacto-con-david, person:david, person:etan-el-ezrahita, relation:etan-el-ezrahita/kin/zerah-hijo-de-juda], note: "Encabezamiento: maskil de Etán el ezrahíta, quizá el sabio de 1Re 4:31. Canta el amor leal de Jehová y su pacto con David: su descendencia y su trono durarán para siempre."}
     - {v: 5-18, type: poetry, mentions: [place:egipto, place:monte-tabor, place:monte-hermon], note: "Nadie en los cielos se compara con Jehová; calma el mar y destrozó a Rahab, que simboliza a Egipto. El norte y el sur son obra suya, y el Tabor y el Hermón lo alaban."}
-    - {v: 19-37, type: poetry, entities: [event:pacto-con-david, person:david], note: "En visión, Dios dice que ungió a David, que lo hará primogénito y el más alto de los reyes; si sus hijos desobedecen, los castigará, pero el pacto y el trono no fallarán."}
+    - {v: 19-37, type: poetry, entities: [event:pacto-con-david, person:david], mentions: [event:samuel-unge-a-david], note: "En visión, Dios dice que ungió a David, que lo hará primogénito y el más alto de los reyes; si sus hijos desobedecen, los castigará, pero el pacto y el trono no fallarán."}
     - {v: 38-45, type: poetry, note: "Pero ahora Dios parece rechazar a su ungido: su corona está en el suelo, sus murallas en ruinas y sus enemigos lo celebran. El salmo no nombra a ese rey."}
     - {v: 46-52, type: poetry, mentions: [person:david], note: "¿Hasta cuándo? El salmista recuerda lo corta que es la vida y pide a Jehová que se acuerde de lo que juró a David. Cierra el libro tercero con «Amén y amén»."}
   90:
@@ -917,7 +917,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-7, type: poetry, entities: [person:david], note: "Encabezamiento: maskil de David en la cueva, quizá la de Adulam o la de En-guedí (1Sa 22:1; 24:3; Perspicacia «Cueva»); el suceso lo crea 1 Samuel. Sin nadie que lo ayude, pide salir del calabozo."}
+    - {v: 1-7, type: poetry, entities: [person:david], mentions: [event:david-se-refugia-en-la-cueva-de-adulam, event:david-perdona-la-vida-a-saul-en-en-guedi], note: "Encabezamiento: maskil de David en la cueva, quizá la de Adulam o la de En-guedí (1Sa 22:1; 24:3; Perspicacia «Cueva»). Sin nadie que lo ayude, pide salir del calabozo."}
   143:
     status: complete
     reviewed_on: 2026-09-29

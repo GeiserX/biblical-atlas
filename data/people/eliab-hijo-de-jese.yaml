@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliab-hijo-de-jese
+name: Eliab
+names:
+- name: Eliab
+perspicacia: 1200001292#4
+disambiguation: Eliab, primogénito de Jesé y hermano mayor de David; no el jefe de Zabulón hijo de Helón ni el rubenita hijo
+  de Palú.
+distinct_from:
+- eliab-hijo-de-helon
+- eliab-hijo-de-palu
+summary: Hijo mayor de Jesé, de Belén. Su porte y su estatura hicieron creer a Samuel que era el elegido para rey, pero Jehová
+  lo descartó. Después sirvió en el ejército de Saúl.
+reason: Perspicacia «Eliab», núm. 4, párr. 1 y 2; 1Sa 16:6, 7; 17:13, 28.
+sources:
+- it-eliab
+- 1-samuel-16
+- 1-samuel-17
+links:
+- title: 'Perspicacia: «Eliab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001292
+  type: perspicacia
+- title: 1 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16
+  type: bible
+relations:
+- type: kin
+  person: jese
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - it-eliab
+  - 1-samuel-17
+  reason: '1Sa 16:5, 6: Samuel lo ve entre los hijos de Jesé; Perspicacia lo llama primogénito.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abinadab-hijo-de-jese
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - 1-samuel-17
+  reason: '1Sa 16:6-8: Jesé presenta a los dos, uno detrás del otro, entre sus hijos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sama-hijo-de-jese
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - 1-samuel-17
+  reason: '1Sa 16:6-9: los dos pasan ante Samuel entre los hijos de Jesé.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - 1-samuel-17
+  reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

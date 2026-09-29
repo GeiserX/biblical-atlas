@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-principes-filisteos-rechazan-a-david
+title: Los príncipes filisteos no dejan a David ir a la batalla
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 29001
+places:
+- afec-cerca-de-jezreel
+- valle-de-jezreel
+- filistea
+people:
+- david
+- akis
+passages:
+- 1Sa 29:1-11
+- 1Cr 12:19
+summary: En Afec los príncipes filisteos ven a David y a sus hombres detrás de Akís y temen que se vuelvan contra ellos. Akís
+  lo despide, y al amanecer David regresa a Filistea mientras los filisteos suben a Jezreel.
+reason: Perspicacia «Afeq», núm. 4, y «Akís»; 1Cr 12:19 cuenta la despedida. Días antes de la batalla en que mueren Saúl y
+  Jonatán, en 1078 (Perspicacia «Jonatán», núm. 2; el estudio 3 cierra 1 Samuel hacia 1078).
+sources:
+- 1-samuel-29
+- it-afeq
+- it-akis
+- it-jezreel
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/29
+  type: bible
+- title: 'Perspicacia: «Afeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
+  type: perspicacia
+- title: 'Perspicacia: «Akís»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000078
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -19,6 +19,8 @@ roles:
 passages:
 - 1Sa 16:1
 - Rut 4:17-22
+- 1Sa 16:10, 11
+- 1Sa 17:12-14
 summary: Nace David, el menor de los hijos de Jesé, en Belén, la ciudad de sus antepasados Obed y Boaz.
 reason: El cuadro del estudio 3 fecha su nacimiento en 1107; Perspicacia «David», párr. 3-4, da su familia y Belén como pueblo
   natal.
@@ -26,6 +28,7 @@ sources:
 - si-3
 - it-david
 - 1-samuel-16
+- 1-samuel-17
 links:
 - title: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -34,5 +37,5 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16
   type: bible
 search: David Belén Jesé
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: borasan
+name: Borasán
+names:
+- name: Borasán
+type: city
+lat: 31.281372
+lon: 34.797404
+precision: uncertain
+coord_source: openbible:ab624f3
+coord_url: https://www.openbible.info/geo/ancient/ab624f3/bor-ashan
+coord_note: Punto de Khirbet ʽAsan, primera identificación de OpenBible, que la da por Asán. Perspicacia solo dice que algunos
+  eruditos lo creen.
+summary: Sitio por donde solían pasar David y sus hombres mientras huían de Saúl; le tocó parte del botín de los amalequitas.
+  Algunos eruditos creen que es Asán, enclave de Simeón cerca de Beer-Seba.
+reason: 'Perspicacia «Borasán»; 1Sa 30:30, 31. OpenBible: solo el punto.'
+sources:
+- it-borasan
+- openbible-geo
+- 1-samuel-30
+links:
+- title: 'Perspicacia: «Borasán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000792
+  type: perspicacia
+- title: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-avisa-a-david-con-las-flechas
+title: Jonatán avisa a David con las flechas y se despiden
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+narrative_order:
+  series: 1-samuel
+  order: 20035
+places: []
+people:
+- jonatan-hijo-de-saul
+- david
+present: []
+passages:
+- 1Sa 20:35-42
+summary: Jonatán sale al campo con un muchacho y dispara una flecha más allá de él, la señal de que David debe irse. Luego
+  se despiden llorando y recuerdan su juramento ante Jehová.
+reason: 'Sitio sin nombre. Tiempo: huida de David (Perspicacia «David», «Fugitivo»), entre su nacimiento en 1107 (estudio 3)
+  y la muerte de Saúl y Jonatán en 1078 (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-20
+- si-3
+- it-jonatan
+- it-david
+links:
+- title: 1 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

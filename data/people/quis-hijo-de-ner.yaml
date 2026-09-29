@@ -12,6 +12,9 @@ reason: Perspicacia «Quis», núm. 3; Hch 13:21 lo nombra como padre de Saúl.
 sources:
 - it-quis
 - hch-13
+- 1-samuel-9
+- 1-samuel-10
+- 1-samuel-14
 links:
 - title: 'Perspicacia: «Quis»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002631
@@ -21,3 +24,36 @@ links:
   type: bible
 checked_on: '2026-09-29'
 status: verified
+relations:
+- type: kin
+  person: abiel-hijo-de-zeror
+  word: grandfather
+  inferred: true
+  sources:
+  - 1-samuel-9
+  - it-quis
+  - it-abiel
+  reason: '1Sa 9:1 lo llama hijo de Abiel. Perspicacia «Quis», núm. 3, y «Abiel», núm. 1, entienden nieto: su padre inmediato
+    era Ner.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: guibea-de-benjamin
+  inferred: true
+  sources:
+  - it-quis
+  - 1-samuel-10
+  reason: Perspicacia «Quis», núm. 3, cree que su casa estaba en Guibeá, adonde volvió Saúl (1Sa 10:26).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ner
+  word: father
+  inferred: true
+  sources:
+  - it-ner
+  - it-abner
+  - 1-samuel-14
+  reason: 'Perspicacia «Ner» y «Abner»: 1 Crónicas hace a Quis hijo de Ner; 1Sa 14:51 solo da a Ner como padre de Abner.'
+  checked_on: '2026-09-29'
+  status: verified

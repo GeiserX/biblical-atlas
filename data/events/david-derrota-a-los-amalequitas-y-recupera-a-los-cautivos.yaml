@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-derrota-a-los-amalequitas-y-recupera-a-los-cautivos
+title: David derrota a los amalequitas y recupera a los cautivos
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 30016
+places:
+- negueb
+people:
+- david
+- ahinoam-esposa-de-david
+- abigail-esposa-de-david
+passages:
+- 1Sa 30:16-20
+summary: David cae sobre los amalequitas mientras celebran el botín y lucha con ellos hasta el anochecer siguiente; solo huyen
+  400 en camellos. Recupera a sus dos esposas, a todos los cautivos y los bienes, y se queda con el ganado.
+reason: 1Sa 30:16-20; Perspicacia «Amaleq, amalequitas» y «Abigail», núm. 1. El sitio no tiene nombre; según «Besor», iban
+  hacia el Négueb. Mismo año que la muerte de Saúl y Jonatán, 1078 (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-samuel-30
+- it-amaleq
+- it-abigail
+- it-besor
+- it-jonatan
+links:
+- title: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  type: bible
+- title: 'Perspicacia: «Amaleq, amalequitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000216
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
