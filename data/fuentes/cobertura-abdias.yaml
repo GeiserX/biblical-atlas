@@ -1,0 +1,29 @@
+# biblical-earth: fuentes de la cobertura de abdias. Esquema en docs/investigacion/README.md.
+it-abdias-libro:
+  titulo: Abdías, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003288
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+si-abdias:
+  titulo: 'Libro bíblico número 31: Abdías'
+  obra: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990092
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sefarad:
+  titulo: Sefarad
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003900
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sefela:
+  titulo: Sefelá
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004014
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'

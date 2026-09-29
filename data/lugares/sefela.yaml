@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sefela
+nombre: Sefelá
+nombres:
+- nombre: Sefelá
+  nota: 'Perspicacia traduce el nombre como «Tierra Baja»: sus colinas son bajas al lado de la cordillera central.'
+tipo: region
+lat: 31.691667
+lon: 34.875
+precision: zona
+coord_fuente: openbible:af084cf
+coord_url: https://www.openbible.info/geo/ancient/af084cf/shephelah
+coord_nota: Punto representativo de OpenBible para la franja de colinas.
+resumen: Franja de colinas bajas entre las montañas centrales y la llanura filistea, parte del territorio de Judá. Lindaba
+  al sur con el Négueb; tierra fértil de sicómoros, olivares y pastos.
+razon: 'Perspicacia «Sefelá», párr. 1 y 2; Abd 19. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-sefela
+- openbible-geo
+- abdias-1
+enlaces:
+- titulo: 'Perspicacia: «Sefelá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004014
+  tipo: perspicacia
+- titulo: Abdías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/31/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
