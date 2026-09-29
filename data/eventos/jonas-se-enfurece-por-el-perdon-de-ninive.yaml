@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonas-se-enfurece-por-el-perdon-de-ninive
+titulo: El enojo de Jonás ante el perdón de Nínive
+fecha:
+  desde: -843
+  hasta: -843
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 844 a.e.c.
+orden_relato:
+  serie: jonas
+  orden: 4001
+lugares:
+- ninive
+personas:
+- jonas-profeta
+pasajes:
+- Jon 4:1-4
+resumen: A Jonás le disgusta que Jehová perdone a Nínive. Ora diciendo que por eso huyó a Tarsis, porque lo sabía compasivo,
+  y pide morir. Jehová le pregunta si hace bien en enfurecerse.
+razon: Jon 4:1-4, aún en la ciudad, que deja en 4:5; Perspicacia «Jonás», núm. 1, párr. 7, sitúa el enojo pasados los 40 días.
+  Año c. 844; «Jonás, Libro de», párr. 1, solo da el reinado de Jeroboán II (c. 844-804).
+fuentes:
+- jonas-4
+- it-jonas
+- it-jonas-libro
+- it-asiria
+- si-3
+- si-jonas
+enlaces:
+- titulo: Jonás 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/4
+  tipo: biblia
+- titulo: 'Perspicacia: «Jonás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002503
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -255,3 +255,12 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Amós (desde Abdías)
 
 - **Isaac como pueblo.** La regla de `versiculos.md` sección 4 deja fuera de `menciona` al patriarca cuando su nombre designa al pueblo. Los tramos Amós 7:7-9 y 7:10-17 llevan `persona:isaac` por «lugares altos de Isaac» y «casa de Isaac», el pueblo de Israel: sobra en los dos. «Dios de Jacob» (Sl 20) y «descendencia de Jacob» (Sl 22) nombran al hombre y se quedan.
+
+## Para Mateo y Lucas (desde Jonás, lo aplica la integración)
+
+- **Jonás en el pez y en Nínive.** Jonás crea `un-gran-pez-se-traga-a-jonas` (Jon 1:17-2:10) y `ninive-se-arrepiente` (Jon 3:5-10). Jesús los recuerda: la señal de Jonás y el pez en Mt 12:39, 40, 16:4 y Lu 11:29, 30; el arrepentimiento de Nínive en Mt 12:41 y Lu 11:32 (Perspicacia «Nínive» los cita). Los dos sucesos van a `menciona` de los tramos Mateo 12:38-42 y Lucas 11:29-36, y el pez a `menciona` de Mateo 16:1-4. No van a `pasajes`: esos versículos recuerdan los sucesos, no los narran, y la sección 6 de `versiculos.md` reserva `pasajes` para los versículos del suceso y sus relatos paralelos. La nota de Mateo 12:38-42 que dice que Jonás en Nínive aún no es un suceso se corrige. Jonás, por su parte, ya pone `senal-de-jonas-en-galilea` y `dedo-de-dios-y-senal-de-jonas` en `menciona` de Jon 1:1-3, 1:17 y 3:5-10.
+
+## Para 2 Reyes (desde Jonás)
+
+- **Amitái.** `amitai` existe (clave `1200000231`), con `vivio_en` `gat-hefer` deducido de Perspicacia «Amitai», y `jonas-profeta` lleva `pariente` `amitai` (padre). Las dos relaciones y la de `jonas-profeta` `vivio_en` `gat-hefer` citan o pueden citar 2Re 14:25: el tramo de 2 Reyes 14 las lleva al cerrarse. La profecía de Jonás sobre Jeroboán II es un suceso de Reyes.
+- **Fecha de Jonás.** Los sucesos de Jonás van en c. 844 a.e.c., serie `jonas`, como la ficha del profeta. Si Reyes fecha su profecía a Jeroboán II, no cambia esos sucesos.

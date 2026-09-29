@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amitai
+nombre: Amitái
+nombres:
+- nombre: Amitái
+- nombre: Amitai
+  nota: Grafía de Perspicacia.
+perspicacia: '1200000231'
+resumen: Solo se le conoce como padre del profeta Jonás (Jon 1:1; 2Re 14:25). Perspicacia lo hace natural de Gat-Héfer, en
+  la tribu de Zabulón.
+razon: Perspicacia «Amitai»; Jon 1:1 y 2Re 14:25 lo nombran como padre de Jonás.
+fuentes:
+- it-amitai
+- jonas-1
+- 2-reyes-14
+enlaces:
+- titulo: 'Perspicacia: «Amitai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000231
+  tipo: perspicacia
+- titulo: Jonás 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: gat-hefer
+  deducido: true
+  fuentes:
+  - it-amitai
+  - 2-reyes-14
+  razon: Perspicacia «Amitai» lo hace de Gat-Héfer; 2Re 14:25 da esa ciudad al profeta, su hijo.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
