@@ -109,7 +109,21 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Itiel.** `itiel-oyente-de-agur` (clave `1200002237#1`, Pr 30:1) ya existe. El benjamita de Ne 11:7 es la entrada núm. 2 de Perspicacia «Itiel» (`1200002237#2`): va en ficha aparte, con `no_confundir_con` en las dos.
 
-## Para El Cantar de los Cantares y 1 Reyes
+## Para 1 Reyes (Salomón)
 
-- **Salomón.** Eclesiastés deja en `data/_propuestas/eclesiastes.json` un cambio a su `resumen` y a su `razon` (escribió Eclesiastés; «En su vejez» pasa a «Ya anciano»), sobre el texto que dejó Proverbios. Un cambio posterior a esos campos parte del texto que queda tras integrar Eclesiastés. El resumen ya tiene 40 palabras: añadir El Cantar obliga a recortar otra cosa.
+- **Salomón.** El Cantar deja en `data/_propuestas/cantar-de-los-cantares.json` un cambio a su `resumen` y a su `razon` (escribió El Cantar; «la mayor parte de Proverbios» pasa a «casi todo Proverbios» y se abrevian la idolatría y la división), sobre el texto que dejó Eclesiastés. Un cambio posterior parte del texto que queda tras integrar El Cantar. El resumen sigue en 40 palabras.
 - **Congregador.** Eclesiastés añade ese nombre a `salomon` y las relaciones `vivio_en` `jerusalen` y `pariente` `david` con sus capítulos. No hace falta volver a proponerlos.
+- **Abisag.** Es de `sunem`, que existe desde El Cantar. La `sulamita` dice en `no_afirmamos` que no la damos por Abisag: Perspicacia «Sulamita» solo compara 1Re 1:3 con Can 6:13.
+
+## Para Josué, 1 Samuel y 2 Reyes
+
+- **Sunem.** `sunem` existe desde El Cantar (OpenBible ac86af5, con Sulem en `nombres`). Jos 19:18, 1Sa 28:4 y 2Re 4:8 usan ese id.
+
+## Para Números, Deuteronomio y Josué
+
+- **Hesbón.** `hesbon` existe desde Can 7:4, con su puerta Bat-Rabim en `nombres`. Falta en `sehon` la relación `vivio_en` `hesbon` (Nú 21:26; Perspicacia «Hesbón», párr. 2), y los sucesos de su conquista.
+- **Amaná y Senir.** Amaná es un nombre de `antilibano` (Can 4:8); Senir sigue en `monte-hermon`.
+
+## Para Nehemías
+
+- **La torre de David.** Está en `nombres` de `jerusalen` desde Can 4:4, con una nota: Perspicacia «Torre» recoge que quizá sea la torre de la Casa del Rey de Ne 3:25. Si Nehemías apunta esa torre, la relaciona con esta nota.
