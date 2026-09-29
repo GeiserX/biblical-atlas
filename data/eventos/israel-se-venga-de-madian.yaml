@@ -15,8 +15,8 @@ orden_relato:
   serie: numeros
   orden: 31001
 lugares:
-- madian
 - llanuras-deserticas-de-moab
+- madian
 personas:
 - finehas-hijo-de-eleazar
 - evi
@@ -33,13 +33,12 @@ pasajes:
 - Jos 13:21, 22
 resumen: Por orden de Jehová, Moisés envía mil hombres de cada tribu con el sacerdote Finehás. Matan a los varones, a los
   cinco reyes y a Balaam, queman las ciudades y vuelven al campamento con cautivos y botín.
-razon: 'Nú 31:1-12. Perspicacia «Madián, madianitas», núm. 2 y 3: estos madianitas vivían cerca de Moab y del reino de Sehón,
-  lejos del punto de la ficha de Madián.'
+razon: Nú 31:1-12 no dice dónde estaban las ciudades; Perspicacia «Madián, madianitas», núm. 3, pone a estos madianitas cerca
+  de Moab y de Sehón. Va en el campamento que envía y recibe al ejército (v. 12), sin situar a nadie.
 fuentes:
 - numeros-31
 - it-madian
 - it-balaam
-- it-aaron
 - si-3
 - it-basan
 enlaces:

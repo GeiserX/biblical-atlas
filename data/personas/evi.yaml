@@ -6,10 +6,12 @@ nombres:
 perspicacia: '1200001451'
 resumen: Rey de Madián, uno de los cinco que cayeron cuando Israel castigó a los madianitas por haberlo arrastrado al culto
   de Baal de Peor. Perspicacia lo cuenta entre los vasallos del rey amorreo Sehón.
-razon: Perspicacia «Eví»; Nú 31:8.
+razon: 'Perspicacia «Eví»; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y
+  Sehón, en sitios sin nombre: no lleva relación de lugar.'
 fuentes:
 - it-evi
 - numeros-31
+- it-madian
 enlaces:
 - titulo: 'Perspicacia: «Eví»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001451
@@ -17,26 +19,5 @@ enlaces:
 - titulo: Números 31 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
   tipo: biblia
-relaciones:
-- tipo: vivio_en
-  lugar: madian
-  deducido: false
-  fuentes:
-  - numeros-31
-  - it-evi
-  - it-madian
-  razon: Nú 31:8 lo nombra entre los cinco reyes de Madián. Es el Madián de junto a Moab y Sehón (Perspicacia «Madián, madianitas»,
-    núm. 3), no el del golfo de Aqaba.
-  estado: verificado
-- tipo: murio_en
-  lugar: madian
-  deducido: false
-  fuentes:
-  - numeros-31
-  - it-evi
-  - it-madian
-  razon: 'Nú 31:7, 8: murió en la guerra de Israel contra Madián. Es el Madián de junto a Moab y Sehón (Perspicacia «Madián,
-    madianitas», núm. 3), no el del golfo de Aqaba.'
-  estado: verificado
 consultado: '2026-09-29'
 estado: verificado

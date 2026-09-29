@@ -6,12 +6,12 @@ nombres:
 tipo: region
 lat: 29.672913
 lon: 35.013917
-precision: punto
+precision: incierto
 coord_fuente: openbible:a7560c2
 coord_url: https://www.openbible.info/geo/ancient/a7560c2/abronah
-coord_nota: Punto de ʽEin Evrona, tercera resolución de OpenBible, el oasis con que lo identifica Perspicacia. El mapa B3
-  lo marca ahí.
-resumen: Campamento de Israel entre Jotbatá y Ezión-Guéber. Se identifica con el oasis de ʽEn ʽAvrona, a unos 14 km al nor-noreste
+coord_nota: 'Punto de ʽEin Evrona, segunda identificación de OpenBible: el oasis con que se ha identificado según Perspicacia,
+  y el del mapa B3. La primera cae en Ezión-Guéber, y Perspicacia lo pone 14,5 km al nor-noreste.'
+resumen: Campamento de Israel entre Jotbatá y Ezión-Guéber. Se ha identificado con el oasis de ʽEn ʽAvrona, a unos 14 km al nor-noreste
   de Ezión-Guéber.
 razon: 'Perspicacia «Abroná»; Nú 33:34, 35. OpenBible: solo el punto.'
 fuentes:

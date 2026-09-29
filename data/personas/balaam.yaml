@@ -14,7 +14,8 @@ fecha:
   texto: c. 1473 a.e.c.
 resumen: Profeta de Petor, hijo de Beor. Balac lo llamó para maldecir a Israel, pero Jehová solo le dejó bendecirlo. Después
   enseñó a Balac a hacer pecar a Israel en Peor y murió a espada con los madianitas.
-razon: Perspicacia «Balaam» (siglo XV a.e.c.) y «Agag», núm. 1 (hacia 1473 a.e.c.); Nú 22:5-24:25; 31:8, 16.
+razon: 'Perspicacia «Balaam» (siglo XV a.e.c.) y «Agag», núm. 1 (hacia 1473 a.e.c.); Nú 22:5-24:25; 31:8, 16. Murió con los
+  madianitas que, al parecer, vivían junto a Moab («Madián, madianitas», núm. 3), en un sitio sin nombre: no lleva murio_en.'
 fuentes:
 - it-balaam
 - it-agag
@@ -22,6 +23,7 @@ fuentes:
 - numeros-23
 - numeros-24
 - numeros-31
+- it-madian
 enlaces:
 - titulo: 'Perspicacia: «Balaam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000543
@@ -69,16 +71,6 @@ relaciones:
   - it-aram
   razon: 'Nú 23:7: Balac lo trajo de Aram, de las montañas del este. Perspicacia «Aram», núm. 5, lo sitúa en el norte de Mesopotamia,
     en Aram-Naharaim.'
-  estado: verificado
-- tipo: murio_en
-  lugar: madian
-  deducido: false
-  fuentes:
-  - numeros-31
-  - it-balaam
-  - it-madian
-  razon: 'Nú 31:8: murió a espada en la guerra contra Madián; Perspicacia «Balaam»: se había quedado con los madianitas. Es
-    el Madián de junto a Moab y Sehón («Madián, madianitas», núm. 3), no el del golfo de Aqaba.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

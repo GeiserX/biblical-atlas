@@ -12,7 +12,7 @@ fecha:
     el año cuarenta)'
 orden_relato:
   serie: numeros
-  orden: 33018
+  orden: 19500
 lugares:
 - ritma
 - rimon-perez
@@ -41,7 +41,7 @@ pasajes:
 resumen: Después de Hazerot, Israel levanta el campamento dieciocho veces, de Ritmá a Ezión-Guéber, mientras muere en el desierto
   la generación que no quiso entrar en Canaán.
 razon: 'Perspicacia «Qadés»: tras los espías, en 1512, vagaron 38 años con 18 etapas desde Hazerot y volvieron a Cadés el
-  año cuarenta. Son muchos sitios inciertos: no sitúa a nadie.'
+  año cuarenta: va justo antes de esa vuelta. Hay muchos sitios inciertos: no sitúa a nadie.'
 fuentes:
 - numeros-33
 - it-qades
