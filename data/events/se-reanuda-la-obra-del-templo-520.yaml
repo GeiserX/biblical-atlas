@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-reanuda-la-obra-del-templo-520
+title: Zorobabel, Josué y el pueblo reanudan el templo
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de elul de 520 a.e.c.
+  detail:
+    month: elul
+    day: 24
+places:
+- jerusalen
+people:
+- zorobabel
+- josue-sumo-sacerdote
+- ageo
+passages:
+- Ag 1:12-15
+- Esd 5:1, 2
+summary: El día 24 del sexto mes del segundo año de Darío I, movidos por los mensajes de Ageo, Zorobabel, el sumo sacerdote
+  Josué y el resto del pueblo empezaron a trabajar en el templo, aunque la prohibición seguía vigente.
+reason: Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:15 fecha el comienzo de la obra el día 24 del sexto mes.
+  Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»), así que no va en este día.
+sources:
+- it-ageo
+- it-zorobabel
+- it-dario
+- ageo-1
+links:
+- title: 'Perspicacia: «Ageo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001812
+  type: perspicacia
+- title: Ageo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'Ag 1:1-11 es el primer mensaje de Ageo, del 1 de elul, y pasa a primer-mensaje-de-ageo. Sale Zac 1:1: Zacarías
+    empezó en el mes octavo, no el día 24 de este suceso.'
+  source: ageo-1
+- date: '2026-09-29'
+  change: 'Se quita a zacarias-profeta: Ag 1:15 fecha el suceso el día 24 del sexto mes y Zac 1:1 sitúa el comienzo de Zacarías
+    en el mes octavo, unos dos meses más tarde (Perspicacia «Ageo»).'
+  source: ageo-1
+- date: '2026-09-29'
+  change: El título hablaba de Ageo y Zacarías; el suceso es el día 24 del sexto mes (Ag 1:14, 15), cuando los jefes y el
+    pueblo empiezan a trabajar y Zacarías aún no profetizaba (Zac 1:1).
+  source: ageo-1
+- date: '2026-09-29'
+  change: El resumen incluía a Zacarías, que empezó en el mes octavo (Zac 1:1); ahora cuenta solo lo del día 24 del sexto
+    mes (Ag 1:12-15).
+  source: ageo-1
+- date: '2026-09-29'
+  change: La razón explica ahora por qué Zacarías no figura en el suceso; el primer mensaje del día 1 tiene su propio suceso.
+  source: ageo-1
+checked_on: '2026-09-29'
+status: verified

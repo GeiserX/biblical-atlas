@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: resurreccion-en-nain
+title: Resucita al hijo de una viuda en Naín
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 35
+places:
+- nain
+people:
+- jesus
+passages:
+- Lu 7:11-17
+summary: Llegando a Naín, Jesús se encuentra con el entierro del único hijo de una viuda. Conmovido, toca el féretro y devuelve
+  la vida al joven.
+reason: 'A7-C, fila 16: Naín. Perspicacia «Naín» (párr. 3) y la nota de Lu 7:11 dicen que venía de Capernaúm, a unos 35 km.'
+sources:
+- tnm-a7-c
+- lucas-7
+- it-nain
+- jy-cap-37
+checked_on: '2026-09-28'
+status: verified

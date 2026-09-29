@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: nabonido
+name: Nabonido, rey de Babilonia
+type: king
+date:
+  from: -555
+  to: -538
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 556-539 a.e.c.
+places:
+- babilonia
+person: nabonido
+summary: Último rey supremo de Babilonia. Desde su tercer año dejó el gobierno de la capital a su hijo Belsasar y vivió
+  años en Temá.
+reason: 'Perspicacia «Nabonido»: se cree que reinó unos 17 años, de 556 a 539, según los textos cuneiformes.'
+sources:
+- it-nabonido
+search: Nabonido
+checked_on: '2026-09-28'
+status: verified

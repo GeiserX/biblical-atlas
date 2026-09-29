@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-refaim
+name: Valle de Refaím
+names:
+- name: Valle de Refaím
+- name: Llanura baja de Refaím
+  note: Otra traducción que da la nota de Jos 15:8; es el nombre del artículo de Perspicacia.
+type: valley
+lat: 31.763203
+lon: 35.219122
+precision: zone
+coord_source: openbible:a7559e6
+coord_url: https://www.openbible.info/geo/ancient/a7559e6/valley-of-rephaim
+coord_note: Punto representativo del valle en OpenBible. Por tradición es la llanura de Baqaʽ, al suroeste del monte del templo.
+summary: Llanura amplia y fértil al suroeste de Jerusalén, en el límite entre Judá y Benjamín. Quizá tomó el nombre de los
+  refaím. Más tarde los filisteos la invadieron y David los venció allí.
+reason: 'Perspicacia «Refaím, Llanura baja de»; Jos 15:8; 18:16; 2Sa 5:17-25. OpenBible: solo el punto.'
+sources:
+- it-llanura-baja-de-refaim
+- openbible-geo
+- josue-15
+- it-refaim-llanura-baja-de
+- josue-18
+links:
+- title: 'Perspicacia: «Refaím, Llanura baja de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003696
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

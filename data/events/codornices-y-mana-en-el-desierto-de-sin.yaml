@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: codornices-y-mana-en-el-desierto-de-sin
+title: Jehová da codornices y maná en el desierto de Sin
+date:
+  from: -1512
+  to: -1512
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: segundo mes de 1513 a.e.c.
+  detail:
+    month: iyar
+narrative_order:
+  series: exodo
+  order: 16001
+places:
+- desierto-de-sin
+people:
+- moises
+- aaron
+passages:
+- Éx 16:1-21
+- Sl 78:19, 24, 25
+- Sl 105:40
+- 1Co 10:3
+- Nú 33:11
+- Dt 8:3, 16
+summary: Israel llega al desierto de Sin el día 15 del segundo mes y se queja de Moisés y Aarón porque no tiene qué comer.
+  Esa tarde llegan codornices y a la mañana siguiente aparece el maná.
+reason: Éx 16:1 da el día y el mes. Perspicacia «Maná», párr. 1, pone el primer maná en la segunda mitad del segundo mes de
+  1513 a.e.c., el año del éxodo según el estudio 3.
+sources:
+- exodo-16
+- it-mana
+- it-codorniz
+- it-sin
+- si-3
+- 1-corintios-10
+links:
+- title: Éxodo 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

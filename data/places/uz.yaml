@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: uz
+name: Uz
+names:
+- name: Uz
+- name: Tierra de Uz
+  note: Así la llama Job 1:1.
+type: region
+lat: 30.745843
+lon: 35.603919
+precision: zone
+coord_source: openbible:a324c4d
+coord_url: https://www.openbible.info/geo/ancient/a324c4d/uz
+coord_note: 'Punto representativo que usa OpenBible, el mismo que da para Edom y Temán. Perspicacia no fija el sitio: solo
+  lo pone cerca de Edom, en el norte de Arabia.'
+summary: Tierra donde vivía Job. No se sabe dónde estaba exactamente; todo apunta al este de la Tierra Prometida, cerca de
+  Edom, en el norte de Arabia.
+reason: 'Perspicacia «Uz», núm. 4: se desconoce el sitio exacto. Job 1:1. Pudo poblarla Uz, hijo de Aram, o Uz, hijo de Nacor;
+  no se sabe cuál.'
+sources:
+- it-uz
+- job-1
+- openbible-geo
+links:
+- title: 'Perspicacia: «Uz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004527
+  type: perspicacia
+- title: Job 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

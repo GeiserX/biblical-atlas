@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: saleca
+name: Salecá
+names:
+- name: Salecá
+type: city
+lat: 32.4939
+lon: 36.7105
+precision: point
+coord_source: openbible:ac3bc41
+coord_url: https://www.openbible.info/geo/ancient/ac3bc41/salecah
+summary: Ciudad del extremo oriental de Basán, en el reino de Og. Israel la tomó en tiempos de Moisés y más tarde vivieron
+  en ella los de Gad.
+reason: 'Perspicacia «Salecá»: se suele identificar con Salkhad, en el sur del Jebel Hauran; Dt 3:10. OpenBible: solo el punto.'
+sources:
+- it-saleca
+- openbible-geo
+- deuteronomio-3
+- josue-13
+links:
+- title: 'Perspicacia: «Salecá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003799
+  type: perspicacia
+- title: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

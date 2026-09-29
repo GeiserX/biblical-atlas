@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nain
+name: Naín
+names:
+- name: Naín
+type: city
+lat: 32.630694
+lon: 35.350139
+precision: point
+coord_source: openbible:aee679c
+coord_url: https://www.openbible.info/geo/ancient/aee679c/nain
+summary: Ciudad de Galilea situada en la falda noroeste del monte de Moré, a unos 10 km de Nazaret hacia el sur-sureste. En
+  31, Jesús devolvió allí la vida al único hijo de una viuda.
+reason: 'Perspicacia «Naín» (párr. 2 y 3) y la nota de Lu 7:11 la identifican con la aldea de Nein. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-nain
+- lucas-7
+- openbible-geo
+links:
+- title: 'Perspicacia: «Naín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003175
+  type: perspicacia
+- title: Lucas 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/7
+  type: bible
+checked_on: '2026-09-28'
+status: verified

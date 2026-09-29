@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: taanat-silo
+name: Taanat-Siló
+names:
+- name: Taanat-Siló
+type: city
+lat: 32.176348
+lon: 35.370933
+precision: point
+coord_source: openbible:a5d37f9
+coord_url: https://www.openbible.info/geo/ancient/a5d37f9/taanath-shiloh
+coord_note: Punto de Khirbet Taʽna el-Fauqa, el sitio que da Perspicacia.
+summary: Lugar del límite de Efraín, unos 10 km al este-sureste de Siquem. Desde Micmetat la frontera daba la vuelta hasta
+  él y seguía hacia Janóah.
+reason: 'Perspicacia «Taanat-siló»; Jos 16:6. OpenBible: solo el punto.'
+sources:
+- it-taanat-silo
+- openbible-geo
+- josue-16
+links:
+- title: 'Perspicacia: «Taanat-siló»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004290
+  type: perspicacia
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

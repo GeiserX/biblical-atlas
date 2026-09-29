@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahas
+name: Tahas
+names:
+- name: Tahas
+perspicacia: '1200004302'
+summary: Hijo de Nacor y de su concubina Reumá.
+reason: Perspicacia «Tahas»; Gé 22:24.
+sources:
+- it-tahas
+- genesis-22
+links:
+- title: 'Perspicacia: «Tahas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004302
+  type: perspicacia
+- title: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  type: bible
+relations:
+- type: kin
+  person: nacor-hijo-de-tare
+  word: father
+  inferred: false
+  sources:
+  - genesis-22
+  - it-tahas
+  reason: 'Gé 22:24: hijo de Nacor, el hermano de Abrahán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: reuma
+  word: mother
+  inferred: false
+  sources:
+  - genesis-22
+  - it-tahas
+  reason: 'Gé 22:24: uno de los cuatro hijos que Reumá, la concubina de Nacor, le dio.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

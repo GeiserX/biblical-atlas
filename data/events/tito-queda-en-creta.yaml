@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tito-queda-en-creta
+title: Pablo deja a Tito en Creta
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre c. 61 y 64 e.c.
+places:
+- creta
+people:
+- pablo
+- tito
+passages:
+- Tit 1:5
+summary: Tras quedar libre, Pablo está en Creta con Tito y lo deja allí para corregir lo que falta y nombrar ancianos
+  en cada ciudad.
+reason: 'Perspicacia «Tito, Carta a» (párr. 2): no consta que Pablo predicara en Creta antes; tuvo que ser entre
+  su liberación y su último encierro.'
+sources:
+- it-tito
+- it-tito-persona
+- tito-1
+search: Tito Creta
+checked_on: '2026-09-28'
+status: verified

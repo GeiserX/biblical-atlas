@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jafia
+name: Jafía
+names:
+- name: Jafía
+type: city
+lat: 32.687019
+lon: 35.27535
+precision: point
+coord_source: openbible:ab15bb3
+coord_url: https://www.openbible.info/geo/ancient/ab15bb3/japhia
+coord_note: Punto de OpenBible en Yafa (Yafia).
+summary: Lugar del límite de Zabulón que suele identificarse con Yafa, a menos de 3 km al suroeste de Nazaret.
+reason: 'Perspicacia «Jafía», núm. 3; Jos 19:12. OpenBible: solo el punto.'
+sources:
+- it-jafia
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Jafía»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002324
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

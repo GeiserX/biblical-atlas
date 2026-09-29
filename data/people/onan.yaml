@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: onan
+name: Onán
+names:
+- name: Onán
+perspicacia: '1200003327'
+summary: Segundo hijo de Judá. Obligado a casarse con Tamar, la viuda de su hermano, evitó darle descendencia a Er, y Jehová
+  le quitó también la vida.
+reason: Perspicacia «Onán»; Gé 38:4, 8-10.
+sources:
+- it-onan
+- genesis-38
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Onán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003327
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: juda-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-38
+  - genesis-46
+  - it-onan
+  - numeros-26
+  reason: Gé 38:4, 8.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sua-suegro-de-juda
+  word: grandfather
+  inferred: false
+  sources:
+  - genesis-38
+  - it-sua
+  reason: Gé 38:2-4.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tamar-nuera-de-juda
+  word: wife
+  inferred: false
+  sources:
+  - genesis-38
+  - it-tamar
+  reason: 'Gé 38:8, 9: la toma en matrimonio de cuñado.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: canaan
+  inferred: false
+  sources:
+  - genesis-46
+  - it-onan
+  - numeros-26
+  reason: 'Gé 46:12: murió en Canaán, antes del traslado a Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

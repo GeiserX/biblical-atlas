@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehoiaquim
+name: Reinado de Jehoiaquim en Judá
+type: king
+person: jehoiaquim
+date:
+  from: -627
+  to: -617
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628-618 a.e.c.
+places:
+- jerusalen
+summary: Once años en Jerusalén.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 23.
+sources:
+- tnm-a6-b
+- 2-reyes-23
+- it-jehoiaquim
+search: Jehoiaquim rey
+checked_on: '2026-09-28'
+status: verified

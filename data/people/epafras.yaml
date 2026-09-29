@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: epafras
+name: Epafras
+names:
+- name: Epafras
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+disambiguation: El de Colosas. No es Epafrodito de Filipos.
+distinct_from:
+- epafrodito
+summary: Predicó a los colosenses y quizás fundó su congregación. Fue a Roma con buenas noticias de Colosas mientras
+  Pablo estaba preso y se esforzó también por Laodicea y Hierápolis.
+reason: Perspicacia «Epafras»; Col 1:7, 8; 4:12, 13; Flm 23. Fecha de Colosenses y Filemón, hacia 60-61 según la Tabla de los
+  libros.
+sources:
+- it-epafras
+- colosenses-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Epafras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001379
+  type: perspicacia
+- title: Colosenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: colosas
+  inferred: false
+  sources:
+  - it-epafras
+  - colosenses-4
+  reason: Col 4:12 lo llama «uno de ustedes».
+  checked_on: '2026-09-28'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  inferred: false
+  sources:
+  - it-epafras
+  - filemon-1
+  - tnm-tabla
+  reason: Pablo lo llama su compañero en cautiverio (Flm 23). La Tabla de los libros fecha Filemón hacia 60-61.
+  checked_on: '2026-09-28'
+  status: verified

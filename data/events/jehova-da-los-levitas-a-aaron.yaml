@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-los-levitas-a-aaron
+title: Jehová da los levitas a Aarón en lugar de los primogénitos
+date:
+  from: -1511
+  to: -1511
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: ziv (iyar) de 1512 a.e.c.
+  detail:
+    month: iyar
+  note: Números abre el 1 de ziv del segundo año tras la salida (Nú 1:1) y el campamento parte el 20 (Nú 10:11). Perspicacia
+    solo saca de orden Nú 7:1-88 y 9:1-15; el día no se sabe.
+narrative_order:
+  series: numeros
+  order: 3005
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+present:
+- moises
+passages:
+- Nú 3:5-13
+- Dt 10:8
+summary: Jehová manda a Moisés poner a la tribu de Leví al servicio de Aarón y sus hijos, para que cuide del tabernáculo.
+  Los levitas pasan a ser suyos en vez de los primogénitos de Israel.
+reason: 'Nú 3:5-13; el versículo 14 sigue en el desierto de Sinaí. Perspicacia «Levitas»: ayudaban a los sacerdotes y Dios
+  los tomó a cambio de los primogénitos. El mes se deduce del orden del libro.'
+sources:
+- numeros-3
+- it-levitas
+- it-primogenito
+- it-numeros-libro
+- it-eleazar
+links:
+- title: Números 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/3
+  type: bible
+- title: 'Perspicacia: «Levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002731
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

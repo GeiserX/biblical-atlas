@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: madon
+name: Madón
+names:
+- name: Madón
+type: city
+lat: 32.799722
+lon: 35.459722
+precision: uncertain
+coord_source: openbible:a6c2936
+coord_url: https://www.openbible.info/geo/ancient/a6c2936/madon
+coord_note: Punto de Qarn Hattin, el sitio que da Perspicacia. OpenBible pone primero otra identificación.
+summary: Ciudad real cananea del norte. Su rey, Jobab, se unió a Hazor contra Israel y fue vencido.
+reason: 'Perspicacia «Madón»: suele identificarse con Qarn Hattin, unos 8 km al ONO de Tiberíades; Khirbet Madin conserva el
+  nombre, pero hay dudas. Jos 11:1-12; 12:19. OpenBible: solo el punto.'
+sources:
+- it-madon
+- openbible-geo
+- josue-11
+- josue-12
+links:
+- title: 'Perspicacia: «Madón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002828
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

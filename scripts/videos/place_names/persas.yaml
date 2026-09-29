@@ -1,0 +1,30 @@
+# Nombres que busca scripts/videos/index.py en los subtítulos: lugares del carril «persas».
+# Mismo formato que scripts/videos/place_names/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español.
+# «Media» y «Dura» sueltas no cuentan: son palabras comunes («media hora», «piedra dura»).
+
+susa:
+  names: [Susa]
+
+media:
+  names: [tierra de Media, provincia de Media, Persia y Media]
+  demonyms: [medos]
+
+persia:
+  names: [Persia]
+  demonyms: [persas]
+
+ecbatana:
+  names: [Ecbátana]
+
+elam:
+  names: [Elam]
+  demonyms: [elamitas]
+
+llanura-de-dura:
+  names: [llanura de Dura]
+
+rio-ahava:
+  names: [Ahavá]
+
+rio-ulai:
+  names: [Ulai]

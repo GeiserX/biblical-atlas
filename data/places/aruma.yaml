@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aruma
+name: Arumá
+names:
+- name: Arumá
+type: city
+lat: 32.147556
+lon: 35.321583
+precision: uncertain
+coord_source: openbible:af536fb
+coord_url: https://www.openbible.info/geo/ancient/af536fb/arumah
+coord_note: Primera identificación de OpenBible, Khirbet el-ʽOrmah, que Perspicacia recoge como propuesta, unos 8 km al sureste
+  de Siquem.
+summary: Ciudad del territorio de Efraín, cerca de Siquem, donde residía Abimélec mientras Zebul gobernaba Siquem por él.
+reason: 'Perspicacia «Arumá»; Jue 9:41. Según Perspicacia «Rumá», hay quien iguala las dos, pero también sitúa Arumá cerca
+  de Siquem. OpenBible: solo el punto.'
+sources:
+- it-aruma
+- it-ruma
+- openbible-geo
+- jueces-9
+links:
+- title: 'Perspicacia: «Arumá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000393
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

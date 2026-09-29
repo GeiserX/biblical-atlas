@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quedar
+name: Quedar
+names:
+- name: Quedar
+type: region
+lat: 29.811417
+lon: 39.868306
+precision: zone
+coord_source: openbible:a68d1a9
+coord_url: https://www.openbible.info/geo/ancient/a68d1a9/kedar
+coord_note: Punto representativo de OpenBible en el noroeste de Arabia; la tribu era nómada y no tenía un sitio fijo.
+summary: 'País de la tribu árabe que descendía de Quedar, hijo de Ismael: pastores nómadas de ovejas, cabras y camellos que
+  vivían en tiendas, probablemente en el desierto al este de Palestina.'
+reason: 'Perspicacia «Quedar», núm. 2, párr. 1 y 2: su país también se llamó Quedar y sus tiendas serían de pelo negro de cabra.
+  Sl 120:5; Can 1:5. OpenBible: solo el punto.'
+sources:
+- it-quedar
+- salmos-120
+- openbible-geo
+- cantar-de-los-cantares-1
+links:
+- title: 'Perspicacia: «Quedar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002579
+  type: perspicacia
+- title: Salmo 120 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/120
+  type: bible
+history:
+- date: '2026-09-29'
+  change: La razón cita Can 1:5, el versículo del que Perspicacia saca las tiendas de pelo negro de cabra.
+  source: cantar-de-los-cantares-1
+checked_on: '2026-09-29'
+status: verified

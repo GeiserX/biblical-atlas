@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-es-derrotado-hasta-horma
+title: Israel ataca sin Jehová y es derrotado hasta Hormá
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+narrative_order:
+  series: numeros
+  order: 14040
+places:
+- horma
+- cades
+- seir
+people:
+- moises
+present: []
+passages:
+- Nú 14:40-45
+- Dt 1:41-46
+summary: Contra la orden de Jehová, los israelitas suben de madrugada a la montaña, sin el arca ni Moisés. Amalequitas y cananeos,
+  a los que Dt 1:44 llama amorreos, los vencen y los dispersan por Seír hasta Hormá.
+reason: 'Perspicacia «Hormá»: pasó poco después del informe y los vencidos volvieron a Cadés (Dt 1:45, 46). La batalla fue
+  en la montaña, que el texto no nombra, así que el suceso no sitúa a nadie.'
+sources:
+- numeros-14
+- it-horma
+- it-espias
+- deuteronomio-1
+- it-amorreo
+links:
+- title: Números 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/14
+  type: bible
+- title: 'Perspicacia: «Hormá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002079
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: Dt 1:44 llama amorreos a los atacantes y dice que dispersaron a Israel en Seír; Perspicacia «Amorreo» y «Hormá»
+    lo explican. Se añade Seír a los lugares.
+  source: deuteronomio-1
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alejandro-pariente-de-anas
+name: Alejandro
+names:
+- name: Alejandro
+perspicacia: 1200000192#3
+disambiguation: Pariente de Anás que estuvo cuando juzgaron a Pedro y a Juan (Hch 4:6). No es el hijo de Simón de Cirene ni
+  los Alejandros de Éfeso y de las cartas a Timoteo.
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33 e.c.
+  note: Solo sale en este juicio, que Perspicacia «Herodes», núm. 2, pone en 33, poco después de Pentecostés.
+summary: Pariente del sacerdote principal Anás. Estuvo entre los gobernantes que interrogaron a Pedro y a Juan en Jerusalén
+  por la curación del cojo.
+reason: Perspicacia «Alejandro», núm. 3; Hch 4:5-7.
+sources:
+- it-alejandro
+- it-herodes
+- hechos-4
+links:
+- title: 'Perspicacia: «Alejandro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  type: perspicacia
+distinct_from:
+- alejandro-hijo-de-simon
+- alejandro-de-efeso
+relations:
+- type: kin
+  person: anas
+  inferred: true
+  sources:
+  - it-alejandro
+  - hechos-4
+  reason: Hch 4:6 lo pone entre Caifás y los parientes del sacerdote principal; Perspicacia «Alejandro», núm. 3, lo llama pariente
+    de Anás.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

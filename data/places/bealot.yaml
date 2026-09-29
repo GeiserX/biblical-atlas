@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bealot
+name: Bealot
+names:
+- name: Bealot
+type: city
+lat: 30.991038
+lon: 34.911322
+precision: uncertain
+coord_source: openbible:a14325e
+coord_url: https://www.openbible.info/geo/ancient/a14325e/bealoth-1
+coord_note: 'Beer Yeroham: OpenBible la iguala en primer lugar con Baalat-Beer. Perspicacia no la sitúa.'
+summary: Ciudad del extremo sur de Judá. No se sabe dónde estaba. No es el distrito de Bealot que administraba Baaná en tiempos
+  de Salomón.
+reason: 'Perspicacia «Bealot», núm. 1 y 2; Jos 15:24; 1Re 4:16. OpenBible: solo el punto.'
+sources:
+- it-bealot
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Bealot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000588
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

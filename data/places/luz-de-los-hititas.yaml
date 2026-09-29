@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: luz-de-los-hititas
+name: Luz
+names:
+- name: Luz
+  note: La ciudad que fundó el hombre de Betel (Perspicacia «Luz, II», núm. 2); no el nombre antiguo de Betel, que está en
+    su ficha.
+type: city
+lat: 33.46028
+lon: 35.53556
+precision: uncertain
+coord_source: openbible:a422a1f
+coord_url: https://www.openbible.info/geo/ancient/a422a1f/luz-2
+coord_note: Punto de OpenBible en Luweizeh, el el-Louaize donde Perspicacia dice que algunos ven el nombre, unos 20 km al
+  ESE de Sidón.
+summary: Ciudad que edificó en la tierra de los hititas el hombre de Betel que enseñó la entrada a los espías de la casa de
+  José. Le puso el nombre antiguo de su ciudad. Quizá estaba cerca de Sidón.
+reason: 'Perspicacia «Luz, II», núm. 2; Jue 1:23-26. OpenBible: solo el punto.'
+sources:
+- it-luz-ii
+- openbible-geo
+- jueces-1
+links:
+- title: 'Perspicacia: «Luz, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002794
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: abias-de-juda
+name: Reinado de Abías en Judá
+type: king
+person: abias-de-juda
+date:
+  from: -979
+  to: -977
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 980-978 a.e.c.
+places:
+- jerusalen
+summary: Tres años de reinado en Jerusalén.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Crónicas 13.
+sources:
+- tnm-a6-a
+- 2-cronicas-13
+- it-abias
+search: Abías rey
+checked_on: '2026-09-28'
+status: verified

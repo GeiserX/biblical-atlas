@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pura
+name: Purá
+names:
+- name: Purá
+perspicacia: '1200003585'
+summary: Ayudante de Gedeón, probablemente su escudero. La noche antes del ataque bajó con él hasta el borde del campamento
+  madianita y oyó el sueño del pan de cebada.
+reason: Perspicacia «Purá»; Jue 7:9-15.
+sources:
+- it-pura
+- jueces-7
+links:
+- title: 'Perspicacia: «Purá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003585
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+relations:
+- type: accompanies
+  person: gedeon
+  caption: ayudante de
+  inferred: false
+  sources:
+  - jueces-7
+  - it-pura
+  reason: 'Jue 7:10, 11: Jehová lo llama ayudante de Gedeón. Perspicacia «Purá» cree que era su escudero.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

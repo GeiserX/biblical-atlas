@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: queriyot
+name: Queriyot
+names:
+- name: Queriyot
+  note: Quiere decir «ciudades»; según Perspicacia, quizá la formaban varios núcleos menores.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Ar, al sur del Arnón
+  geometry:
+    type: point
+    lat: 31.359913
+    lon: 35.782764
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-queriyot
+  - openbible-geo
+  reason: 'Perspicacia «Queriyot» ve un apoyo para esta idea: Ar y Queriyot eran importantes y nunca salen juntas en las listas
+    de ciudades de Moab.'
+  note: Punto de OpenBible para Ar (Khirbet al Balua); solo tomamos el punto.
+  coord_source: openbible:a38ad07
+  coord_url: https://www.openbible.info/geo/ancient/a38ad07/ar
+- name: Saliyá, al ESE de Dibón y al norte del Arnón
+  geometry:
+    type: zone
+    lat: 31.4472
+    lon: 35.9323
+    radius_km: 5
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-queriyot
+  - openbible-geo
+  reason: 'Perspicacia «Queriyot»: algunos eruditos la ponen en Saliyá, unos 16 km al ESE de Dibón.'
+  note: 'Centro: 16 km con rumbo 112,5° desde el punto de OpenBible para Dibón (31,5022 N; 35,7766 E), que da 31.4472 N; 35.9323
+    E. El radio de 5 km es nuestro.'
+  coord_source: calculation
+summary: Ciudad de Moab con torres fortificadas, que según la Piedra Moabita tenía un santuario de Kemós. Amós anunció que
+  el fuego las consumiría. No se sabe dónde estaba exactamente.
+reason: Perspicacia «Queriyot»; Am 2:2; Jer 48:24. Los dos sitios solo se proponen como posibles.
+not_claimed:
+- 'Que sea con seguridad Ar: Perspicacia dice que se desconoce su ubicación exacta.'
+sources:
+- it-queriyot
+- openbible-geo
+- amos-2
+links:
+- title: 'Perspicacia: «Queriyot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002594
+  type: perspicacia
+- title: Amós 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

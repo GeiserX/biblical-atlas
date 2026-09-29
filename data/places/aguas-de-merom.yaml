@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aguas-de-merom
+name: Aguas de Merom
+names:
+- name: Aguas de Merom
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Manantiales de Meirun (En Meron)
+  geometry:
+    type: point
+    lat: 32.978889
+    lon: 35.437778
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-merom
+  - openbible-geo
+  reason: 'Perspicacia cita a Y. Aharoni: Meirun es el sitio más aceptado para Merom, aunque allí no hay un tell adecuado.'
+  coord_source: openbible:a6ee047
+  coord_url: https://www.openbible.info/geo/ancient/a6ee047/waters-of-merom
+- name: Manantial de Tell el-Khirbeh, más al norte
+  geometry:
+    type: point
+    lat: 33.073744
+    lon: 35.43592
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-merom
+  - openbible-geo
+  reason: El mismo autor, citado por Perspicacia, prefiere buscar Merom más al norte, quizá en Tell el-Khirbeh.
+  coord_source: openbible:a6ee047
+  coord_url: https://www.openbible.info/geo/ancient/a6ee047/waters-of-merom
+summary: Agua junto a la ciudad de Merom, en Galilea, donde acamparon los reyes del norte con sus carros. Josué los atacó
+  por sorpresa y los venció.
+reason: Perspicacia «Merom, Aguas de»; Jos 11:5, 7. Perspicacia cita dos sitios para Merom, a unos 11 o 13 km de Hazor.
+sources:
+- it-merom
+- openbible-geo
+- josue-11
+links:
+- title: 'Perspicacia: «Merom, Aguas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003003
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

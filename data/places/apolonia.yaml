@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: apolonia
+name: Apolonia
+names:
+- name: Apolonia
+type: city
+lat: 40.6237
+lon: 23.46968
+precision: point
+coord_source: openbible:ab20df9
+coord_url: https://www.openbible.info/geo/ancient/ab20df9/apollonia
+summary: Ciudad macedonia en la vía Egnatia, a un día de camino de Anfípolis y de Tesalónica.
+reason: 'Perspicacia («Apolonia») describe el lugar; aparece en Hch 17:1. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-apolonia
+- hch-17
+- openbible-geo
+links:
+- title: 'Perspicacia: «Apolonia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000306
+  type: perspicacia
+- title: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  type: bible
+checked_on: '2026-09-27'
+status: verified

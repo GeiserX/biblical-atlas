@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dinhaba
+name: Dinhabá
+names:
+- name: Dinhabá
+type: city
+lat: 31.798459
+lon: 35.722377
+precision: uncertain
+coord_source: openbible:ae28fc7
+coord_url: https://www.openbible.info/geo/ancient/ae28fc7/dinhabah
+coord_note: Perspicacia no la sitúa; el punto es el de OpenBible y puede no ser el correcto.
+summary: Ciudad de Bela, el primer rey de Edom que se nombra.
+reason: 'Perspicacia «Dinhabá»: su ubicación es incierta; Gé 36:32. OpenBible: solo el punto.'
+sources:
+- it-dinhaba
+- openbible-geo
+- genesis-36
+links:
+- title: 'Perspicacia: «Dinhabá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001183
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-las-mujeres
+title: Se aparece a otras mujeres
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 16
+places:
+- jerusalen
+people:
+- jesus
+- maria-esposa-de-clopas
+passages:
+- Mt 28:8-10
+summary: Cuando van a contar la noticia, Jesús sale al encuentro de las mujeres. Ellas se postran y él les pide
+  que digan a sus hermanos que vayan a Galilea.
+reason: A7-H cuenta cinco apariciones ese día; Perspicacia «María» (apartado 4, párr. 29) dice que la otra María estaba entre
+  ellas. El año 33 lo da la cabecera de A7-G (8 de nisán del 33).
+sources:
+- tnm-a7-h
+- mateo-28
+- it-maria
+- jy-cap-134
+- tnm-a7-g
+search: Se aparece a otras mujeres
+narrative_order:
+  series: a7
+  order: 125
+checked_on: '2026-09-29'
+status: verified

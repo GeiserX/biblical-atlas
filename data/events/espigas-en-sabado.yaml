@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: espigas-en-sabado
+title: Los discípulos arrancan espigas en sábado
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 30
+places: []
+people:
+- jesus
+passages:
+- Mt 12:1-8
+- Mr 2:23-28
+- Lu 6:1-5
+summary: Camino de Galilea, los discípulos arrancan espigas en sábado y los fariseos protestan. Jesús recuerda lo que hizo
+  David y se llama Señor del sábado.
+reason: A7-C, fila 11. La tabla da como lugar «al volver de Jerusalén (?)», así que no ponemos ninguno; el libro jy (cap. 31)
+  dice que era primavera.
+sources:
+- tnm-a7-c
+- mateo-12
+- marcos-2
+- lucas-6
+- jy-cap-31
+checked_on: '2026-09-28'
+status: verified

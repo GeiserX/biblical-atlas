@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sela-de-los-amorreos
+name: Sela
+names:
+- name: Sela
+  note: La de Jue 1:36 (Perspicacia «Sela», núm. 1); no la ciudad edomita de 2Re 14:7, la núm. 2.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 30 km de la subida de Acrabim
+  geometry:
+    type: zone
+    lat: 30.906602
+    lon: 35.131259
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - jueces-1
+  - it-sela
+  - openbible-geo
+  reason: Jue 1:36 la nombra con la subida de Acrabim al trazar el límite amorreo. OpenBible da este radio alrededor de Acrabim.
+  coord_source: openbible:a98b02e
+  coord_url: https://www.openbible.info/geo/ancient/a98b02e/sela-1
+- name: La Sela de Edom (es-Selaʽ)
+  geometry:
+    type: point
+    lat: 30.78087
+    lon: 35.574455
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-sela
+  - openbible-geo
+  reason: Hay quien la identifica con la Sela edomita, pero Perspicacia no ve pruebas de que el territorio amorreo llegara
+    tan al sur.
+  coord_source: openbible:af8ce6a
+  coord_url: https://www.openbible.info/geo/ancient/af8ce6a/sela-2
+summary: Lugar en el límite del territorio de los amorreos, nombrado junto a la subida de Acrabim, después de la conquista.
+  No se sabe dónde estaba.
+reason: 'Perspicacia «Sela», núm. 1; Jue 1:36. Perspicacia no ve pruebas de que sea la Sela de Edom. Sin punto: dos candidatos.'
+sources:
+- it-sela
+- openbible-geo
+- jueces-1
+links:
+- title: 'Perspicacia: «Sela»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003886
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

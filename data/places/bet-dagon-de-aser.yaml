@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-dagon-de-aser
+name: Bet-Dagón
+names:
+- name: Bet-Dagón
+  note: Bet-Dagón de Aser (Perspicacia, núm. 2).
+type: city
+lat: 32.722583
+lon: 35.090628
+precision: uncertain
+coord_source: openbible:a0cc925
+coord_url: https://www.openbible.info/geo/ancient/a0cc925/beth-dagon-2
+coord_note: Punto de OpenBible en Khirbet Jelameh. Perspicacia no da sitio.
+summary: Ciudad de Aser, probablemente en su parte oriental, cerca de la frontera con Zabulón. No se sabe dónde estaba. No
+  es la Bet-Dagón de Judá.
+reason: 'Perspicacia «Bet-dagón», núm. 2; Jos 19:27. OpenBible: solo el punto.'
+sources:
+- it-bet-dagon
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Bet-dagón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000679
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

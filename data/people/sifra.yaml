@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sifra
+name: Sifrá
+names:
+- name: Sifrá
+perspicacia: '1200004066'
+summary: Partera hebrea en Egipto. Con Pua se negó a matar a los varones recién nacidos, como le mandaba el rey, porque temía
+  a Dios. Él la premió con una familia propia.
+reason: 'Perspicacia «Sifrá» y «Partera»: probablemente eran las parteras principales, encargadas de pasar la orden a las demás.
+  Éx 1:15-21.'
+sources:
+- it-sifra
+- it-partera
+- exodo-1
+links:
+- title: 'Perspicacia: «Sifrá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004066
+  type: perspicacia
+- title: Éxodo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  type: bible
+relations:
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - exodo-1
+  - it-sifra
+  reason: 'Éx 1:15: partera de las hebreas en Egipto, en tiempos de la esclavitud.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

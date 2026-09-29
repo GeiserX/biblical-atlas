@@ -1,0 +1,80 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sofonias-profeta
+name: Sofonías
+names:
+- name: Sofonías
+disambiguation: 'El profeta, hijo de Cusí. Perspicacia registra otros tres: un levita de la línea de Qohat, el sacerdote hijo
+  de Maaseya en días de Sedequías y el padre de Josías o Hen.'
+date:
+  from: -658
+  to: -647
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 659 y 648 a.e.c. (tiempo narrativo: al principio del reinado de Josías, antes de sus reformas)'
+summary: Profeta de Judá, hijo de Cusí; su nombre significa «Jehová ha ocultado». Profetizó al principio del reinado de Josías,
+  antes de 648 a.e.c. Al parecer era tataranieto del rey Ezequías.
+reason: Perspicacia «Sofonías», núm. 2, y «Sofonías, Libro de»; «Toda Escritura», libro 36, párr. 1 y 3; Sof 1:1 y su nota.
+  Josías reinó desde 659 (A6-B); la tabla y el estudio 3 cierran el libro antes de 648.
+sources:
+- it-sofonias
+- sofonias-1
+- tnm-tabla
+- tnm-a6-b
+- it-sofonias-libro
+- si-sofonias
+- si-3
+- w07-nahum-habacuc-y-sofonias
+- it-cusi
+links:
+- title: 'Perspicacia: «Sofonías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004696
+  type: perspicacia
+- title: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  type: bible
+- title: 'Perspicacia: «Sofonías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004697
+  type: perspicacia
+perspicacia: 1200004696#2
+history:
+- date: '2026-09-29'
+  change: El resumen añade su padre, el sentido de su nombre (nota al pie de Sof 1:1) y que el libro es anterior a 648 a.e.c.
+  source: sofonias-1
+- date: '2026-09-29'
+  change: Solo nombraba al sacerdote; Perspicacia «Sofonías» registra cuatro hombres con este nombre, y se nombran los otros
+    tres.
+  source: it-sofonias
+- date: '2026-09-29'
+  change: La razón cita también «Sofonías, Libro de», «Toda Escritura» y el estudio 3, de donde salen el resumen y la fecha.
+  source: it-sofonias-libro
+- date: '2026-09-29'
+  change: 'La fecha pasa de anclada a narrativa: nadie da ese rango; queda entre dos años anclados, 659 (Josías, A6-B) y 648
+    (estudio 3), como el evento del libro.'
+  source: sofonias-1
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: cusi-hijo-de-guedalias
+  word: father
+  inferred: false
+  sources:
+  - sofonias-1
+  - it-cusi
+  reason: Sof 1:1 lo presenta como hijo de Cusí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: juda
+  inferred: true
+  sources:
+  - it-sofonias
+  - si-sofonias
+  - tnm-tabla
+  - sofonias-1
+  reason: Perspicacia lo llama profeta en Judá, y «Toda Escritura», libro 36, párr. 3, deduce que vivía allí por lo bien que
+    conoce Jerusalén.
+  checked_on: '2026-09-29'
+  status: verified

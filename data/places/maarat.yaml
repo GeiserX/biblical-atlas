@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: maarat
+name: Maarat
+names:
+- name: Maarat
+type: city
+lat: 31.621389
+lon: 35.102222
+precision: uncertain
+coord_source: openbible:ae60c0c
+coord_url: https://www.openbible.info/geo/ancient/ae60c0c/maarath
+coord_note: 'Beit Ummar, sexta identificación de OpenBible: Perspicacia la sitúa cerca de esa aldea. La primera es Khirbet
+  Qufin.'
+summary: Población de la montaña de Judá. Lo más probable es que estuviera cerca de Beit Ummar, unos 11 km al norte de Hebrón.
+  Hay quien la iguala con Marot, de Miq 1:12.
+reason: 'Perspicacia «Maarat»; Jos 15:59. OpenBible: solo el punto.'
+sources:
+- it-maarat
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Maarat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002809
+  type: perspicacia
+not_claimed:
+- No afirmamos que Maarat (Jos 15:59) sea la Marot de Miq 1:12. Perspicacia solo recoge que algunos las igualan.
+history:
+- date: '2026-09-29'
+  change: Se anota que no se afirma su identidad con la ciudad homónima de Miqueas 1, como hace la ficha de esa ciudad.
+  source: it-maarat
+checked_on: '2026-09-29'
+status: verified

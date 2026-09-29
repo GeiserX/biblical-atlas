@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: claudio
+name: Claudio
+names:
+- name: Claudio
+- name: César
+  note: Hch 17:7 lo nombra por el título; la nota de estudio de ese versículo dice que el emperador era Claudio.
+perspicacia: '1200000987'
+disambiguation: El emperador romano de Hch 11:28 y 18:2. No es Claudio Lisias, el comandante de la guarnición de Jerusalén.
+date:
+  from: 41
+  to: 54
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 41-54 e.c.
+  note: Los años de su reinado.
+summary: Cuarto emperador romano, tío y sucesor de Calígula desde 41. Bajo su gobierno llegó hacia 46 el hambre que Ágabo
+  anunció, y hacia 49 echó de Roma a los judíos. Murió en 54.
+reason: Perspicacia «Claudio» da su reinado, el hambre de hacia 46 y la expulsión de 49 o 50; Hch 11:28 pone el hambre en sus
+  días.
+sources:
+- it-claudio
+- hechos-11
+- si-3
+- nota-hechos-17
+- hch-17
+- hch-18
+links:
+- title: 'Perspicacia: «Claudio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000987
+  type: perspicacia
+- title: Hechos 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/11
+  type: bible
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+distinct_from:
+- claudio-lisias
+checked_on: '2026-09-29'
+status: verified

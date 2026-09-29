@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: instalacion-del-sacerdocio
+title: Moisés instala a Aarón y a sus hijos como sacerdotes
+date:
+  from: -1511
+  to: -1511
+  precision: day
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1 de abib (nisán) de 1512 a.e.c. (empieza; la ceremonia dura siete días)
+  detail:
+    month: nisan
+    day: 1
+narrative_order:
+  series: levitico
+  order: 8001
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+- nadab-hijo-de-aaron
+- abihu
+- eleazar-hijo-de-aaron
+- itamar
+passages:
+- Le 8:1-36
+summary: Ante el pueblo reunido a la entrada de la tienda, Moisés lava y viste a Aarón y a sus hijos, unge el tabernáculo
+  y a Aarón, y ofrece los sacrificios. Los sacerdotes pasan allí siete días.
+reason: Perspicacia «Instalación» y «Sumo sacerdote» ponen la ceremonia, al parecer, entre el 1 y el 7 de nisán, año 1512 a.e.c.,
+  junto al Sinaí, desde el día en que se montó la tienda. «Instalación» nombra a los cuatro hijos.
+sources:
+- levitico-8
+- it-instalacion
+- it-sumo-sacerdote
+- it-sacerdote
+- it-tabernaculo
+- it-aaron
+- si-3
+links:
+- title: Levítico 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/8
+  type: bible
+- title: 'Perspicacia: «Instalación»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002179
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

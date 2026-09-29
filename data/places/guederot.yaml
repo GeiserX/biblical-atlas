@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guederot
+name: Guederot
+names:
+- name: Guederot
+type: city
+lat: 31.822936
+lon: 34.777744
+precision: uncertain
+coord_source: openbible:a728f1b
+coord_url: https://www.openbible.info/geo/ancient/a728f1b/gederoth
+coord_note: 'Qatra, sexta identificación de OpenBible: es la Katrah que nombra Perspicacia. Hay quien la ve demasiado al oeste
+  para la Sefelá.'
+summary: Ciudad de la Sefelá dada a Judá, que los filisteos tomaron en tiempos de Acaz. Hay geógrafos que la ponen en Katrah,
+  dentro de la actual Gedera, unos 13 km al estenoreste de Asdod.
+reason: 'Perspicacia «Guederot»; Jos 15:41; 2Cr 28:18. OpenBible: solo el punto.'
+sources:
+- it-guederot
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Guederot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001637
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,82 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zorobabel
+name: Zorobabel
+names:
+- name: Zorobabel
+disambiguation: Gobernador de Judá después del destierro, hijo legal de Sealtiel; probablemente el mismo que Sesbazar.
+date:
+  from: -536
+  to: -514
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: de 537 a 515 a.e.c.
+summary: Descendiente de David y primer gobernador de los judíos repatriados. Guio el regreso de 537 a.e.c. y, con el sumo
+  sacerdote Josué, levantó el altar y reconstruyó el templo hasta terminarlo en 515.
+reason: 'Perspicacia «Zorobabel»: nombrado gobernador por Ciro; altar en tisri de 537, cimientos en 536, obra prohibida en
+  522, reanudada en 520 y terminada en 515. Ag 2:21 lo llama gobernador de Judá.'
+sources:
+- it-zorobabel
+- esdras-3
+- ageo-1
+- si-3
+- mateo-1
+- lucas-3
+- ageo-2
+links:
+- title: 'Perspicacia: «Zorobabel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716
+  type: perspicacia
+- title: Esdras 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - it-zorobabel
+  - mateo-1
+  reason: Perspicacia «Zorobabel» lo da como descendiente de David y antepasado de Jesús; Mt 1:6-13 traza esa línea por Salomón.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -536
+    to: -514
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: de 537 a 515 a.e.c.
+  inferred: false
+  sources:
+  - it-zorobabel
+  - ageo-1
+  reason: 'Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sealtiel
+  word: father
+  inferred: false
+  sources:
+  - mateo-1
+  - it-sealtiel
+  - lucas-3
+  - ageo-1
+  - ageo-2
+  reason: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200004716'
+history:
+- date: '2026-09-29'
+  change: La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el
+    antepasado. Se corrige a «antepasado».
+  source: mateo-1
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zela
+name: Zelá
+names:
+- name: Zelá
+- name: Zelah
+  note: Otra grafía, en la nota de Jos 18:28.
+type: city
+lat: 31.802528
+lon: 35.209636
+precision: uncertain
+coord_source: openbible:a597dd0
+coord_url: https://www.openbible.info/geo/ancient/a597dd0/zela
+coord_note: Punto de OpenBible en Khirbet Salah. Perspicacia no sabe dónde estaba.
+summary: Ciudad de Benjamín donde estaba la tumba de Quis. Allí enterraron también los huesos de Saúl y de Jonatán. No se
+  sabe dónde estaba.
+reason: 'Perspicacia «Zelá, Zelah»; Jos 18:28; 2Sa 21:14. OpenBible: solo el punto.'
+sources:
+- it-zela
+- openbible-geo
+- josue-18
+links:
+- title: 'Perspicacia: «Zelá, Zelah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004687
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

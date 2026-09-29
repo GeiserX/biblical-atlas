@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paltiel-hijo-de-azan
+name: Paltiel
+names:
+- name: Paltiel
+perspicacia: 1200003371#1
+disambiguation: Paltiel hijo de Azán, el jefe de Isacar; no Paltiel hijo de Lais, a quien Saúl dio a Mical.
+summary: Jefe de la tribu de Isacar, hijo de Azán. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a dividir
+  Canaán en herencias.
+reason: Perspicacia «Paltiel», núm. 1; Nú 34:26.
+sources:
+- it-paltiel
+- numeros-34
+links:
+- title: 'Perspicacia: «Paltiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003371
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: azan
+  word: father
+  inferred: false
+  sources:
+  - numeros-34
+  - it-paltiel
+  reason: Nú 34:26 lo llama hijo de Azán.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: isacar-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:26: era el jefe de la tribu de Isacar.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

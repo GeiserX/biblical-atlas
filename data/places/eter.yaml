@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eter
+name: Éter
+names:
+- name: Éter
+- name: Token
+  note: Parece ser su nombre en 1Cr 4:32.
+type: city
+lat: 31.61593
+lon: 34.8783
+precision: point
+coord_source: openbible:a82f7b4
+coord_url: https://www.openbible.info/geo/ancient/a82f7b4/ether-1
+coord_note: Punto de OpenBible en Khirbet el-ʽAter (Tel ʽEter).
+summary: Ciudad de la Sefelá en la tierra de Judá que luego se dio a Simeón. Suele ponerse en Khirbet el-ʽAter, 1,5 km al
+  noroeste de Beit Jibrin; quizá 1Cr 4:32 la llama Token.
+reason: 'Perspicacia «Éter»; Jos 15:42; 19:7. Hay quien piensa en dos Éter, pero Asán sale en las dos listas. OpenBible: solo
+  el punto.'
+sources:
+- it-eter
+- openbible-geo
+- josue-15
+- josue-19
+links:
+- title: 'Perspicacia: «Éter»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001437
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

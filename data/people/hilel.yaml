@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilel
+name: Hilel
+names:
+- name: Hilel
+perspicacia: '1200002028'
+summary: Piratonita, vecino de Piratón, en Efraín. Fue el padre del juez Abdón.
+reason: Perspicacia «Hilel»; Jue 12:13, 15.
+sources:
+- it-hilel
+- jueces-12
+links:
+- title: 'Perspicacia: «Hilel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002028
+  type: perspicacia
+- title: Jueces 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  type: bible
+relations:
+- type: lived_in
+  place: piraton
+  inferred: false
+  sources:
+  - jueces-12
+  - it-hilel
+  reason: Jue 12:13 lo llama el piratonita; Perspicacia «Hilel» lo hace vecino de Piratón.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

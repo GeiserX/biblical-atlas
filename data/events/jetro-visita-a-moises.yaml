@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jetro-visita-a-moises
+title: Jetró lleva a Moisés su esposa y sus hijos
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+narrative_order:
+  series: exodo
+  order: 18001
+places:
+- desierto-de-sinai
+- refidim
+people:
+- jetro
+- moises
+- zipora
+- guersom-hijo-de-moises
+- eliezer-hijo-de-moises
+- aaron
+passages:
+- Éx 18:1-12
+summary: Jetró llega al campamento con Ziporá y sus dos hijos. Moisés le cuenta cómo Jehová libró a Israel; Jetró lo alaba,
+  ofrece sacrificios y come con Aarón y los ancianos.
+reason: Perspicacia la sitúa en Horeb, el desierto de Sinaí («Jetró», párr. 4; «Sinaí», núm. 2); «Refidim», párr. 2, cree que
+  Israel aún acampaba en Refidim. Año 1513 a.e.c. (estudio 3).
+sources:
+- exodo-18
+- it-jetro
+- it-sinai
+- it-refidim
+- it-zipora
+- si-3
+links:
+- title: Éxodo 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

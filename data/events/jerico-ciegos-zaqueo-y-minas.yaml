@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jerico-ciegos-zaqueo-y-minas
+title: 'En Jericó: dos ciegos, Zaqueo y la parábola de las minas'
+date:
+  from: 33
+  to: 33
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Primavera de 33 e.c., antes del 8 de nisán
+  detail:
+    season: spring
+places:
+- jerico
+people:
+- jesus
+- bartimeo
+- zaqueo
+roles:
+  jesus: spoke
+passages:
+- Mt 20:29-34
+- Mr 10:46-52
+- Lu 18:35-19:28
+summary: Al pasar por Jericó, Jesús cura a dos ciegos, uno de ellos Bartimeo. Se aloja en casa de Zaqueo y cuenta
+  la parábola de las diez minas.
+reason: La tabla A7-F da cuándo y dónde. Perspicacia «Zaqueo» (párr. 3) pone la visita en la primavera de 33; la
+  nota de Mt 20:29 explica las dos Jericós.
+sources:
+- tnm-a7-f
+- mateo-20
+- marcos-10
+- lucas-18
+- lucas-19
+- jy-cap-99
+- jy-cap-100
+- it-zaqueo
+- it-jerico
+narrative_order:
+  series: a7
+  order: 91
+search: En Jericó
+checked_on: '2026-09-29'
+status: verified

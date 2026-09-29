@@ -1,0 +1,81 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cain
+name: Caín
+names:
+- name: Caín
+date:
+  from: -4025
+  to: -3095
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 4026 y 3096 a.e.c. (tiempo narrativo: nace tras la creación de Adán y funda una ciudad que Adán llegó a ver)'
+summary: Primer hijo de Adán y Eva, agricultor. Dios no aceptó su ofrenda porque le faltaba fe. Mató por envidia a su hermano
+  Abel y fue desterrado al este de Edén, donde edificó una ciudad.
+reason: Perspicacia «Caín», párr. 2, 4, 6 y 8; Gé 4:1-17. El estudio 3 pone la creación de Adán en 4026 a.e.c.; Perspicacia
+  «Adán» dice que Adán, muerto en 3096, vio edificar una ciudad, la de Caín.
+sources:
+- si-3
+- it-cain
+- genesis-4
+- it-adan
+links:
+- title: 'Perspicacia: «Caín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000857
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+relations:
+- type: kin
+  person: adan
+  word: father
+  inferred: false
+  sources:
+  - it-cain
+  - genesis-4
+  reason: 'Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eva
+  word: mother
+  inferred: false
+  sources:
+  - it-cain
+  - genesis-4
+  reason: 'Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abel
+  word: brother
+  inferred: false
+  sources:
+  - genesis-4
+  - it-cain
+  reason: 'Gé 4:2, 8: Abel era su hermano menor.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: nod
+  inferred: false
+  sources:
+  - genesis-4
+  - it-condicion-de-fugitivo
+  reason: 'Gé 4:16: se instaló en la región del Destierro, al este de Edén.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200000857'
+history:
+- date: '2026-09-29'
+  change: La fecha acababa en 3896, antes de la muerte de Abel, pero Caín siguió vivo y fundó una ciudad que Adán, muerto
+    en 3096, vio construir. Se amplía hasta 3096.
+  source: genesis-4
+- date: '2026-09-29'
+  change: La razón decía que lo posterior a la muerte de Abel no tenía año; ahora da el límite de 3096 que sale de Perspicacia
+    «Adán».
+  source: genesis-4
+checked_on: '2026-09-29'
+status: verified

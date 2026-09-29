@@ -1,0 +1,86 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: amos
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: narration, entities: [person:amos-profeta, place:tecoa, relation:amos-profeta/lived_in/tecoa, place:israel, relation:jeroboan-ii/kin/jehoas-de-israel, event:amos-profetiza-contra-israel, event:terremoto-en-dias-de-uzias], mentions: [person:uzias, person:jeroboan-ii, person:jehoas-de-israel, place:juda], note: "Encabezamiento. La nota explica que el nombre Amós quiere decir cargar o ser una carga. Vio el mensaje en visión sobre Israel, reinando Uzías en Judá y Jeroboán II, hijo de Joás (Jehoás), en Israel."}
+    - {v: "2", type: prophecy, entities: [event:amos-profetiza-contra-israel, place:jerusalen, place:monte-carmelo], note: "Jehová rugirá desde Sion, en Jerusalén, y se secarán los pastos y la cumbre del Carmelo, que para Perspicacia es símbolo del juicio contra Israel. Joel 3:16 dice casi lo mismo."}
+    - {v: 3-5, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:damasco, place:galaad, person:hazael, person:ben-hadad-hijo-de-hazael, relation:hazael/lived_in/damasco, relation:ben-hadad-hijo-de-hazael/lived_in/damasco, place:bicat-aven, place:bet-eden, place:siria, place:quir], note: "Damasco trilló Galaad con hierro, como hicieron Hazael y su hijo (2Re 10:32, 33; 13:3-7). Perspicacia lo ve cumplido cuando Tiglat-piléser III tomó Damasco y desterró a los sirios a Quir: suceso de 2Re 16:9; lo crea Reyes."}
+    - {v: 6-8, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:gaza, place:edom, place:asdod, place:asquelon, place:ecron, place:filistea], note: "Gaza entregó a Edom grupos enteros de desterrados, según Perspicacia quizá cautivos de Judá (Joe 3:4-6; 2Cr 21:16, 17). Para Asdod ve un cumplimiento parcial en la campaña de Sargón II (Is 20:1)."}
+    - {v: 9-10, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:tiro], mentions: [place:edom], note: "Tiro también entregó desterrados a Edom y olvidó un pacto de hermanos. Perspicacia une este mensaje al de Joe 3:4-8: se quedó con el oro y la plata de Jehová y vendió a su pueblo como esclavo."}
+    - {v: 11-12, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:edom, place:teman, place:bozra], note: "Edom persiguió con la espada a su hermano: Edom es Esaú, gemelo de Jacob (Perspicacia «Edom»). El fuego alcanzará a Temán y a Bozrá, ciudad que Perspicacia toma como representante de todo Edom."}
+    - {v: 13-15, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:ammon, place:galaad, place:raba], note: "Los ammonitas, un pueblo, abrieron el vientre de embarazadas de Galaad para ensanchar su tierra. Arderá Rabá y su rey irá al destierro con sus príncipes; Perspicacia «Ammonitas» da por cumplido el anuncio."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:moab, place:queriyot], mentions: [place:edom], note: "Moab quemó hasta la cal los huesos de un rey de Edom sin nombre. Perspicacia no ve probable que 2Re 3:27 hable del hijo del edomita; cita una tradición judía que sitúa el hecho tras la guerra con Mesá."}
+    - {v: 4-5, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:juda, place:jerusalen], mentions: [event:destruccion-de-jerusalen-607], note: "Judá rechazó la ley de Jehová y se dejó engañar por las mentiras de sus antepasados. Perspicacia «Amós, Libro de» ve cumplido el fuego sobre Jerusalén en su destrucción de 607 a.e.c."}
+    - {v: 6-8, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], mentions: [person:jeroboan-ii, event:caida-de-samaria], note: "Israel vende al justo y al pobre, aplasta a los humildes, profana el nombre de Jehová con inmoralidad y bebe en sus templos lo sacado con multas. Perspicacia «Jeroboán» lo aplica a ese rey y a los suyos."}
+    - {v: 9-12, type: prophecy, entities: [event:amos-profetiza-contra-israel, event:exodo, event:conquista-de-canaan], mentions: [place:egipto, place:canaan, period:exodo-y-desierto], note: "Jehová acabó con el amorreo, alto como un cedro, y sacó a Israel de Egipto. Los amorreos son un pueblo; vencer a Sehón (Nú 21) es de Números. Israel dio vino a los nazareos y calló a los profetas."}
+    - {v: 13-16, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Jehová aplastará a Israel como una carreta llena de grano: ni el veloz, ni el fuerte, ni el arquero, ni el jinete escaparán, y el más valiente huirá desnudo ese día."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: prophecy, entities: [event:amos-profetiza-contra-israel, event:exodo], mentions: [place:egipto], note: "Jehová habla a la familia que sacó de Egipto: solo a ella conoció entre todas las de la tierra, y por eso le pedirá cuentas. Israel es aquí el pueblo, sin ficha."}
+    - {v: 3-8, type: prophecy, entities: [event:amos-profetiza-contra-israel, person:amos-profeta], note: "Preguntas de causa y efecto: dos que caminan juntos, el león que ruge, la trampa, el cuerno de alarma. Jehová revela su secreto a los profetas; La Atalaya de 2004 lo aplica a Amós, que no puede callar."}
+    - {v: 9-12, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:samaria, place:israel], mentions: [place:asdod, place:egipto, place:damasco, event:caida-de-samaria], note: "Las fortalezas de Asdod y Egipto son testigos del fraude en los montes de Samaria. Un enemigo cercará el país (2Re 17:6); de sus ricos quedará lo que un pastor salva del león. Una nota lee «divanes de Damasco»."}
+    - {v: 13-15, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:betel, place:israel], note: "Jehová castigará los altares de Betel, cuyos cuernos caerán (1Re 12:32, 33; 2Re 23:15, 16), y las casas de invierno, de verano y de marfil. La casa de Jacob es el pueblo. En Samaria se hallaron muchos marfiles."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:samaria, place:basan, place:harmon], mentions: [event:caida-de-samaria], note: "Las mujeres ricas del monte de Samaria, llamadas vacas de Basán, estafan a los pobres y exigen bebida a sus maridos. Jehová jura que serán sacadas con ganchos por las brechas del muro y echadas a Harmón."}
+    - {v: 4-5, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:betel, place:guilgal-cerca-de-betel, place:israel], note: "Con ironía, Jehová invita a pecar en Betel y en Guilgal con sacrificios, diezmos y ofrendas pregonadas. Las referencias remiten a los becerros de Jeroboán (1Re 12:28, 29)."}
+    - {v: 6-11, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], mentions: [place:egipto, place:sodoma, place:gomorra, event:destruccion-de-sodoma-y-gomorra, event:quinta-plaga-muere-el-ganado-de-egipto], note: "Hambre, sequía, tizón, langosta, una epidemia como la de Egipto (la referencia remite a Éx 9:3), espada y una ruina como la de Sodoma: cinco veces no volvieron. Castigos sin fecha; otras referencias llevan a Elías y Eliseo."}
+    - {v: 12-13, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], mentions: [event:caida-de-samaria], note: "Israel debe prepararse para encontrarse con su Dios, que formó los montes, creó el viento y pisa las alturas. Según La Atalaya de 2004, ese encuentro llegó con la conquista asiria."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], mentions: [person:amos-profeta], note: "Amós entona un canto fúnebre por Israel, virgen caída a la que nadie alza, como si su ruina ya hubiera llegado. De la ciudad que salga a la guerra con mil volverán cien, y de la de cien, diez."}
+    - {v: 4-6, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:betel, place:guilgal-cerca-de-betel, place:beer-seba, place:israel], mentions: [event:caida-de-samaria], note: "Jehová pide que lo busquen a él y no peregrinen a Betel, Guilgal ni Beer-Seba. La Atalaya de 2007: Betel era centro de culto falso, y las otras dos probablemente también. José es aquí el reino del norte."}
+    - {v: 7-9, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Tuercen la justicia hasta volverla amarga. Jehová hizo las constelaciones de Kimá y Kesil, que las notas y Perspicacia creen las Pléyades y Orión; trae la luz y la noche, vierte el mar sobre la tierra y arrasa fortalezas."}
+    - {v: 10-13, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Odian a quien corrige en la puerta, donde se juzgaba. Sacan a los pobres renta y grano, aceptan sobornos y les niegan justicia; no habitarán sus casas de piedra labrada ni beberán el vino de sus viñas."}
+    - {v: 14-15, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], note: "Que busquen el bien, odien el mal y hagan justicia en la puerta. Quizá entonces Jehová, el Dios de los ejércitos, tenga favor con lo que quede de José, el reino del norte (Perspicacia «José»)."}
+    - {v: 16-17, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Habrá llanto en plazas, calles y viñas. Llamarán a los campesinos y a los que lloran a sueldo para hacer duelo, porque Jehová pasará por en medio del pueblo."}
+    - {v: 18-20, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Ay de quienes desean el día de Jehová: les traerá tinieblas y no luz. Será como escapar de un león y topar con un oso, o apoyarse en la pared de casa y sufrir la mordedura de una serpiente."}
+    - {v: 21-24, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Jehová rechaza sus fiestas, sus asambleas, sus ofrendas y sacrificios de paz, y hasta la música de sus arpas. Lo que pide es que la justicia y la rectitud corran como un río que nunca se seca."}
+    - {v: 25-27, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel], mentions: [place:damasco, place:asiria, event:caida-de-samaria, event:discurso-de-esteban, period:exodo-y-desierto], note: "No le llevaron sacrificios en los 40 años del desierto (suceso de Números). Cargarán con Sakut y Keván, dioses sin ficha, quizá Saturno, e irán desterrados más allá de Damasco, a Asiria. Esteban lo citó (Hch 7:42, 43)."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:jerusalen, place:samaria, place:calne-de-siria, place:hamat, place:gat, place:israel], mentions: [place:juda, place:filistea], note: "Ay de los confiados de Sion y de los que se creen seguros en el monte de Samaria. Que miren Calné, Hamat la Grande y Gat, no mayores que Judá e Israel según la nota. Alejan el día malo."}
+    - {v: 4-7, type: prophecy, entities: [event:amos-profetiza-contra-israel, person:david, place:samaria], mentions: [place:israel, event:caida-de-samaria], note: "Los ricos se tumban en camas de marfil, como las halladas en Samaria; comen lo mejor, improvisan con el arpa e inventan instrumentos como David, y no les duele la ruina de José. Encabezarán el destierro."}
+    - {v: 8-11, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Jehová jura por sí mismo: odia el orgullo de Jacob, aquí el pueblo, y entregará la ciudad. Morirán hasta los diez de una casa; quien queme los cuerpos pedirá callar el nombre de Jehová. Toda casa acabará en ruinas."}
+    - {v: 12-14, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:lebo-hamat, place:araba, place:israel], mentions: [event:caida-de-samaria, place:asiria], note: "Hacen de la justicia veneno y presumen de su fuerza. Una nación oprimirá desde Lebó-Hamat, límite norte (Nú 34:8), hasta el torrente del Arabá: para Perspicacia, toda la tierra de Judá e Israel, invadida luego por Asiria."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: vision, entities: [event:amos-profetiza-contra-israel, person:amos-profeta], note: "Primera visión: un enjambre de langostas devora el cultivo tardío, sembrado tras el corte del rey, quizá un tributo (La Atalaya, 2007). Amós ruega por Jacob, aquí el pueblo, y Jehová desiste."}
+    - {v: 4-6, type: vision, entities: [event:amos-profetiza-contra-israel, person:amos-profeta], note: "Segunda visión: un fuego de castigo seca las aguas profundas y quema parte del país. Amós vuelve a pedir por Jacob, el pueblo, y Jehová tampoco lo lleva a cabo."}
+    - {v: 7-9, type: vision, entities: [event:amos-profetiza-contra-israel, person:amos-profeta, person:jeroboan-ii, place:israel], mentions: [person:isaac, event:caida-de-samaria], note: "Tercera visión: una plomada en medio de Israel; no habrá más perdón y caerán sus lugares altos y la casa de Jeroboán. Perspicacia lo ve cumplido en 740; las referencias remiten a la muerte de Zacarías (2Re 15:10)."}
+    - {v: 10-17, type: narration, entities: [event:amasias-intenta-echar-a-amos-de-betel, event:amos-profetiza-contra-israel, person:amasias-sacerdote-de-betel, person:amos-profeta, person:jeroboan-ii, place:betel, place:israel, relation:amasias-sacerdote-de-betel/lived_in/betel], mentions: [place:juda, person:isaac, event:caida-de-samaria], note: "Amós no venía de los profetas: era pastor y punzaba higos de sicómoro. Anuncia a Amasías que su esposa se prostituirá, sus hijos morirán a espada y perderá su tierra. Isaac, el antepasado, va en paralelo con Israel (Perspicacia «Isaac»)."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: vision, entities: [event:amos-profetiza-contra-israel, person:amos-profeta], mentions: [place:israel, event:caida-de-samaria], note: "Cuarta visión: una canasta de fruta de verano, la que se recoge al cerrar el año agrícola, anuncia que a Israel le llega el fin. Los cantos del templo serán lamentos y habrá cadáveres por doquier."}
+    - {v: 4-6, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Contra los que aplastan al pobre: esperan impacientes a que pasen la luna nueva y el sábado para vender grano, achican el efá, inflan el siclo (apéndice B14), trucan la balanza y venden hasta los desechos."}
+    - {v: 7-10, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:rio-nilo], mentions: [place:egipto], note: "Jehová jura por el Orgullo de Jacob (las referencias remiten a Dt 33:26 y Sl 68:34) que no olvidará. La tierra subirá y bajará como el Nilo; el sol se pondrá a mediodía y las fiestas serán duelo."}
+    - {v: 11-13, type: prophecy, entities: [event:amos-profetiza-contra-israel], note: "Vendrá un hambre, no de pan ni de agua, sino de oír la palabra de Jehová. Irán de un mar a otro y del norte al este sin hallarla, y hasta los jóvenes se desmayarán de sed."}
+    - {v: "14", type: prophecy, entities: [event:amos-profetiza-contra-israel, place:samaria, place:dan, place:beer-seba], mentions: [event:caida-de-samaria], note: "Caerán para siempre quienes juran por el pecado de Samaria, por el dios de Dan (el becerro de Jeroboán) y por el camino a Beer-Seba, donde Perspicacia ve alguna idolatría en tiempos de Amós."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: vision, entities: [event:amos-profetiza-contra-israel, person:amos-profeta, place:monte-carmelo], note: "Última visión: Amós ve a Jehová sobre el altar, que Perspicacia «Altar» liga al juicio divino. Nadie escapará, aunque cave hasta la Tumba (Seol, sin ficha), suba al cielo, se oculte en las cuevas del Carmelo o en el mar."}
+    - {v: 5-6, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:rio-nilo], mentions: [place:egipto], note: "Jehová toca el país y este se derrite; subirá y bajará como el Nilo en su crecida, imagen que Perspicacia «Nilo» aplica a la agitación del Israel infiel. Él construye su escalera en los cielos."}
+    - {v: 7-10, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:israel, event:exodo, place:filistea, place:creta, place:siria, place:quir], mentions: [place:egipto, place:etiopia, event:caida-de-samaria], note: "Para Jehová, Israel no vale más que los cusitas: lo sacó de Egipto como a los filisteos de Creta (Caftor) y a los arameos de Quir. Borrará el reino pecador, no toda la casa de Jacob."}
+    - {v: 11-12, type: prophecy, entities: [event:amos-profetiza-contra-israel, place:edom], mentions: [person:david, person:jesus, event:pacto-con-david, event:concilio-de-jerusalen-49], note: "Jehová alzará la cabaña caída de David, su casa real, para que tomen lo que quede de Edom y de las naciones. Perspicacia «Cabaña» la une a Jesús, rey de su línea; Santiago lo aplicó a los creyentes (Hch 15:14-18)."}
+    - {v: 13-15, type: prophecy, entities: [event:amos-profetiza-contra-israel], mentions: [event:regreso-de-537], note: "Tanta cosecha que el que ara alcanzará al que siega; los montes destilarán vino dulce (Joe 3:18). Los cautivos de «mi pueblo Israel», aquí el pueblo, sin ficha, volverán a construir y plantar. Perspicacia lo ve cumplido en 537 a.e.c."}

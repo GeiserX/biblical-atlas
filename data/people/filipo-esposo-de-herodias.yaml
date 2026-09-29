@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: filipo-esposo-de-herodias
+name: Filipo
+names:
+- name: Filipo
+- name: Herodes Filipo
+  note: Así lo llama Perspicacia para separarlo de Filipo el tetrarca, otro hijo de Herodes el Grande.
+perspicacia: 1200005013#1
+disambiguation: Primer esposo de Herodías y padre de Salomé. No es Filipo el tetrarca de Iturea y Traconítide (Lu 3:1), ni
+  el apóstol Felipe, ni Felipe el evangelizador.
+distinct_from:
+- felipe-apostol
+- felipe-evangelizador
+- filipo-el-tetrarca
+summary: Hijo de Herodes el Grande y de Mariamne II. Vivía en Roma cuando Herodías, su esposa y madre de su hija Salomé, lo
+  dejó para casarse con Herodes Antipas, medio hermano de él.
+reason: Perspicacia «Filipo», núm. 1, y «Herodes», núm. 5; Mt 14:3. La Biblia solo lo nombra de pasada.
+sources:
+- it-filipo
+- it-herodes
+- mateo-14
+- marcos-6
+- lucas-3
+links:
+- title: 'Perspicacia: «Filipo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200005013
+  type: perspicacia
+- title: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  type: perspicacia
+relations:
+- type: kin
+  person: herodias
+  word: wife
+  inferred: false
+  sources:
+  - mateo-14
+  - it-herodias
+  - marcos-6
+  - lucas-3
+  reason: Mt 14:3 llama a Herodías esposa de Filipo; Perspicacia «Herodías» cuenta que se divorció de él.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: herodes-el-grande
+  word: father
+  inferred: true
+  sources:
+  - it-filipo
+  - it-herodes
+  reason: 'Perspicacia «Filipo» (núm. 1) y «Herodes» (núm. 5): hijo de Herodes el Grande y de Mariamne II.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: roma
+  inferred: true
+  sources:
+  - it-filipo
+  reason: 'Perspicacia «Filipo» (núm. 1): estaba en Roma cuando Herodías lo abandonó.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

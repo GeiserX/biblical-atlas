@@ -1,49 +1,49 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: fenicia
-generado: "2026-09-28"
+place: fenicia
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-098_1_VIDEO"
-    titulo: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
+    title: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_1_VIDEO&appLanguage=S"
-    publicado: "2022-12-05"
-    menciones: 6
-    terminos:
+    published: "2022-12-05"
+    hits: 6
+    terms:
       "Fenicia": 1
       "sirofenicia": 5
   - docid: "pub-jwb-098_4_VIDEO"
-    titulo: "Geoffrey Jackson: Tengamos entusiasmo, pero también paciencia"
+    title: "Geoffrey Jackson: Tengamos entusiasmo, pero también paciencia"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_4_VIDEO&appLanguage=S"
-    publicado: "2022-12-06"
-    menciones: 5
-    terminos:
+    published: "2022-12-06"
+    hits: 5
+    terms:
       "sirofenicia": 5
   - docid: "pub-jwb_201812_1_VIDEO"
-    titulo: "JW Broadcasting: Diciembre de 2018 (graduación de la clase 145 de Galaad)"
+    title: "JW Broadcasting: Diciembre de 2018 (graduación de la clase 145 de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201812_1_VIDEO&appLanguage=S"
-    publicado: "2018-12-03"
-    menciones: 4
-    terminos:
+    published: "2018-12-03"
+    hits: 4
+    terms:
       "sirofenicia": 4
   - docid: "pub-co-r21_143_VIDEO"
-    titulo: "Leonard Myers: Imitemos a las mujeres de fe. La mujer fenicia"
+    title: "Leonard Myers: Imitemos a las mujeres de fe. La mujer fenicia"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_143_VIDEO&appLanguage=S"
-    publicado: "2021-09-13"
-    menciones: 2
-    terminos:
+    published: "2021-09-13"
+    hits: 2
+    terms:
       "Fenicia": 2
   - docid: "pub-co-r21_9_VIDEO"
-    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    title: "Domingo mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_9_VIDEO&appLanguage=S"
-    publicado: "2021-08-09"
-    menciones: 2
-    terminos:
+    published: "2021-08-09"
+    hits: 2
+    terms:
       "Fenicia": 2
   - docid: "pub-jwbcov25_7_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    title: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
-    publicado: "2026-01-19"
-    menciones: 2
-    terminos:
+    published: "2026-01-19"
+    hits: 2
+    terms:
       "Fenicia": 1
       "fenicios": 1

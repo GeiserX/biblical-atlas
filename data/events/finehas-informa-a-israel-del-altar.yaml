@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: finehas-informa-a-israel-del-altar
+title: Finehás informa a Israel y se evita la guerra
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 22032
+places:
+- canaan
+- rio-jordan
+people:
+- finehas-hijo-de-eleazar
+passages:
+- Jos 22:32-34
+summary: Finehás y los jefes vuelven a Canaán y cuentan lo ocurrido. Israel alaba a Dios y deja la idea de la guerra. Rubenitas
+  y gaditas dan un nombre al altar, probablemente Testigo, según la nota.
+reason: 'Jos 22:32-34 y la nota del v. 34; Perspicacia «Siló», párr. 8: aclarado el motivo del altar, siguió la paz. Fecha:
+  tras la conquista general (1467 a.e.c.) y antes de morir Josué, hacia 1450 (estudio 3).'
+sources:
+- josue-22
+- it-silo
+- si-3
+links:
+- title: Josué 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

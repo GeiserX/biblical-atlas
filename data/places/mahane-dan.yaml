@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mahane-dan
+name: Mahané-Dan
+names:
+- name: Mahané-Dan
+  note: Significa «campamento de Dan», según la nota de Jue 18:12.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al oeste de Quiryat-Jearim
+  geometry:
+    type: zone
+    lat: 31.809
+    lon: 35.072
+    radius_km: 5
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-mahane-dan
+  - jueces-18
+  reason: Jue 18:12 pone el campamento de los danitas en Judá, al oeste de Quiryat-Jearim. Perspicacia dice que hoy no se puede
+    situar.
+  coord_source: calculation
+  note: 'Centro: unos 3 km al oeste del punto de OpenBible para Quiryat-Jearim (Deir el-ʽAzar). Radio nuestro.'
+- name: Entre Zorá y Estaol
+  geometry:
+    type: zone
+    lat: 31.7776
+    lon: 34.9977
+    radius_km: 3
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-mahane-dan
+  - it-zora
+  - it-estaol
+  - jueces-13
+  reason: Jue 13:25 da un Mahané-Dan entre Zorá y Estaol, a varios kilómetros al suroeste. Perspicacia ve posible que fueran
+    dos sitios.
+  coord_source: calculation
+  note: 'Centro: punto medio entre los puntos de OpenBible para Zorá y Estaol. Radio nuestro.'
+summary: Sitio cuyo nombre significa «campamento de Dan». Jue 13:25 lo pone entre Zorá y Estaol, donde el espíritu de Jehová
+  empezó a mover a Sansón; Jue 18:12, al oeste de Quiryat-Jearim. Quizá fueron dos sitios.
+reason: 'Perspicacia «Mahané-dan»: hoy no se sabe dónde estaba y, como pudo ser un campamento pasajero, el nombre quizá valió
+  para más de un sitio. Jue 13:25; 18:12. Zonas calculadas por nosotros.'
+sources:
+- it-mahane-dan
+- jueces-18
+- jueces-13
+- openbible-geo
+links:
+- title: 'Perspicacia: «Mahané-dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002843
+  type: perspicacia
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+- title: Jueces 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

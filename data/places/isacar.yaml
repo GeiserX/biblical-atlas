@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: isacar
+name: Isacar
+names:
+- name: Isacar
+  note: Territorio de la tribu que descendía de Isacar, hijo de Jacob.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Valle de Jezreel, entre el Tabor, Meguidó y Bet-Seán
+  geometry:
+    type: zone
+    lat: 32.591713
+    lon: 35.360139
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-isacar
+  - openbible-geo
+  reason: 'Perspicacia: su parte era sobre todo el valle de Jezreel, con el Tabor en el norte, Meguidó al suroeste y Bet-Seán
+    al sureste.'
+  note: 'Centro calculado por nosotros: media de los puntos de OpenBible de Meguidó, Bet-Seán y el monte Tabor. El radio de
+    20 km también es nuestro.'
+  coord_source: calculation
+- name: Valle de Jezreel, entre Jezreel y el Tabor
+  geometry:
+    type: zone
+    lat: 32.622052
+    lon: 35.360435
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-isacar
+  - openbible-geo
+  reason: Perspicacia dice que su herencia era sobre todo el valle de Jezreel, con el Tabor al norte y el Jordán al este.
+  coord_source: calculation
+  note: 'Centro calculado por nosotros: punto medio entre Jezreel y el monte Tabor de OpenBible. El radio también es nuestro.'
+not_claimed:
+- No trazamos sus fronteras; la zona del mapa es solo una referencia dentro del territorio.
+summary: Territorio de la tribu de Isacar, casi todo en el fértil valle de Jezreel. Tenía a Zabulón y Neftalí al norte, el
+  Jordán al este y Manasés al sur.
+reason: Perspicacia «Isacar», núm. 2, párr. 4 y 7; Jos 17:10, 11. Zona calculada por nosotros.
+sources:
+- it-isacar
+- openbible-geo
+- josue-17
+- josue-19
+links:
+- title: 'Perspicacia: «Isacar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002230
+  type: perspicacia
+- title: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  type: bible
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: migdal-el
+name: Migdal-El
+names:
+- name: Migdal-El
+type: city
+lat: 33.221667
+lon: 35.464444
+precision: uncertain
+coord_source: openbible:a5f0bc3
+coord_url: https://www.openbible.info/geo/ancient/a5f0bc3/migdal-el
+coord_note: Punto de OpenBible en Majdel Selem. Perspicacia propone Majadel, sobre una colina unos 17 km al ESE de Tiro.
+summary: Ciudad fortificada de Neftalí. Se ha propuesto Majadel, sobre una colina unos 17 km al ESE de Tiro.
+reason: 'Perspicacia «Migdal-el»; Jos 19:38. OpenBible: solo el punto.'
+sources:
+- it-migdal-el
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Migdal-el»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003043
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

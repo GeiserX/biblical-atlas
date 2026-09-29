@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: seleucidas-toman-judea
+title: Los seléucidas arrebatan Judea a Egipto
+date:
+  from: -197
+  to: -197
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 198 a.e.c.
+places:
+- judea
+people: []
+passages: []
+summary: El rey seléucida Antíoco III vence al ejército de Tolomeo V, y Egipto pierde Palestina. Judea pasa a depender de
+  Siria.
+reason: Perspicacia «Egipto, egipcio» y «Grecia, griegos» fechan en 198 a.e.c. el paso de Judea del Egipto tolemaico a los
+  seléucidas.
+sources:
+- it-egipto
+- it-grecia
+search: Antíoco III Judea
+checked_on: '2026-09-28'
+status: verified

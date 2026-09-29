@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gamaliel-hijo-de-pedahzur
+name: Gamaliel
+names:
+- name: Gamaliel
+perspicacia: 1200001604#1
+disambiguation: Gamaliel hijo de Pedahzur, jefe de Manasés en el desierto; no el fariseo maestro de Pablo.
+distinct_from:
+- gamaliel-fariseo
+summary: Hijo de Pedahzur y jefe de la tribu de Manasés. Ayudó en el censo del Sinaí y mandaba las tropas de su tribu, que
+  acampaban al oeste junto a Efraín.
+reason: Perspicacia «Gamaliel», núm. 1; Nú 1:10, 16; 2:20.
+sources:
+- it-gamaliel
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+links:
+- title: 'Perspicacia: «Gamaliel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001604
+  type: perspicacia
+relations:
+- type: kin
+  person: pedahzur
+  word: father
+  inferred: false
+  sources:
+  - it-gamaliel
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  reason: Nú 1:10 y 2:20 lo llaman hijo de Pedahzur.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: moises
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 10, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: aaron
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 10, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

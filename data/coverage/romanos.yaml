@@ -1,0 +1,156 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: romanos
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta, sin sucesos narrados. Solo nombra a Pablo, Jesús, David y Roma."
+    spans:
+    - {v: 1-7, type: letter, entities: [letter:romanos, person:pablo, person:jesus, relation:jesus/kin/david], mentions: [person:david, event:resurreccion-de-jesus, place:roma], note: "Saludo. Pablo se presenta como apóstol elegido para anunciar las buenas noticias. Jesús viene del linaje de David como hombre, y al resucitar quedó declarado Hijo de Dios (Ro 1:3, 4)."}
+    - {v: 8-15, type: letter, entities: [person:pablo, place:roma], note: "La fe de los cristianos de Roma es conocida en todas partes. Pablo, que aún no ha estado allí, dice que quiso ir muchas veces y algo se lo impidió (Perspicacia «Roma» y «Romanos»)."}
+    - {v: 16-17, type: letter, note: "Idea central de la carta: las buenas noticias salvan a todo el que cree, judío o griego. Cita Hab 2:4 sin nombrar al profeta; griegos y judíos son pueblos, sin ficha."}
+    - {v: 18-23, type: letter, note: "La creación deja ver el poder de Dios, y nadie tiene excusa. Aun así, muchos cambiaron su gloria por imágenes de personas y animales. No se nombra ningún dios."}
+    - {v: 24-32, type: letter, note: "Por eso Dios los dejó seguir en la impureza: relaciones homosexuales y una larga lista de vicios. La nota de estudio cree que quizá piensa en los israelitas apóstatas, aunque también alcanza a las naciones."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta, sin sucesos ni lugares. Solo nombra a Cristo Jesús; judíos y griegos son pueblos, sin ficha."
+    spans:
+    - {v: 1-11, type: letter, entities: [letter:romanos], note: "El que condena a otros y hace lo mismo no escapará del juicio. Dios paga a cada uno según lo que hace, primero al judío y luego al griego, sin favoritismos."}
+    - {v: 12-16, type: letter, mentions: [person:jesus], note: "Quien no tiene la Ley muestra su esencia escrita en el corazón, y la conciencia lo acusa o lo excusa. Dios juzgará lo oculto por medio de Cristo Jesús."}
+    - {v: 17-24, type: letter, note: "Al judío que presume de la Ley y la enseña sin cumplirla: roba, comete adulterio y saquea templos. Así hace que se blasfeme el nombre de Dios (cita Is 52:5 sin nombrar al profeta)."}
+    - {v: 25-29, type: letter, mentions: [event:concilio-de-jerusalen-49], note: "La circuncisión solo sirve si se obedece la Ley. El judío verdadero lo es por dentro, con el corazón circuncidado por el espíritu. La nota de estudio recuerda la decisión tomada en Jerusalén en 49."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta, sin sucesos ni lugares. Solo nombra a Jesucristo; las citas de las Escrituras no nombran a sus autores."
+    spans:
+    - {v: 1-8, type: letter, entities: [letter:romanos], note: "Los judíos tienen ventaja: Dios les confió sus declaraciones. La falta de fe de algunos no anula su fidelidad (cita Sl 51:4, de David, sin nombrarlo). Algunos acusan en falso a Pablo de enseñar a hacer el mal."}
+    - {v: 9-20, type: letter, note: "Judíos y griegos están todos bajo el pecado, y lo prueban citas de los Salmos, Proverbios e Isaías sin nombrar autores. La Ley enseña qué es pecado, pero no hace justo a nadie."}
+    - {v: 21-26, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "Sin depender de la Ley, Dios declara justos como un regalo a quienes creen en Jesucristo, gracias al rescate. Presentó a Cristo como ofrenda de reconciliación por medio de su sangre."}
+    - {v: 27-31, type: letter, note: "Nadie puede presumir: Dios declara justo a quien cree, no a quien cumple las obras que pide la Ley. Dios lo es de judíos y de las naciones, y la fe no anula la Ley, sino que la confirma."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Abrahán, ejemplo de justicia por la fe; sin sucesos nuevos: recuerda los de Génesis 15, 17 y 18."
+    spans:
+    - {v: 1-8, type: letter, entities: [letter:romanos, person:abrahan, event:pacto-de-los-animales-partidos, person:pablo, relation:pablo/kin/abrahan], mentions: [person:david], note: "Abrahán no fue declarado justo por sus obras: creyó a Jehová (Gé 15:6). El salario se debe; la justicia por fe es un regalo. David dice lo mismo en Sl 32:1, 2."}
+    - {v: 9-12, type: letter, entities: [person:abrahan, event:pacto-de-los-animales-partidos, event:pacto-de-la-circuncision], note: "Dios lo consideró justo antes de circuncidarse; la circuncisión llegó después como sello de esa fe. Por eso es padre de los creyentes incircuncisos y también de los circuncisos que siguen su fe."}
+    - {v: 13-17, type: letter, entities: [person:abrahan, event:pacto-de-la-circuncision], mentions: [event:pacto-con-abrahan], note: "La promesa de heredar un mundo no llegó por la ley sino por la fe, para que valga para toda su descendencia. Cita Gé 17:5, cuando Dios lo nombró padre de muchas naciones."}
+    - {v: 18-22, type: letter, entities: [person:abrahan, person:sara, event:pacto-de-los-animales-partidos, event:pacto-de-la-circuncision, event:tres-angeles-visitan-a-abrahan], note: "Con unos 100 años y Sara estéril, Abrahán siguió confiando en la promesa de una descendencia numerosa (Gé 15:5) sin dudar, y dio gloria a Dios. Por eso se le contó como justicia."}
+    - {v: 23-25, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Lo de Abrahán se escribió también para los cristianos, que serán declarados justos por creer en quien resucitó a Jesús, entregado por nuestras ofensas y levantado para declararnos justos."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal: paz con Dios por Jesucristo y contraste entre Adán y Jesús; sin sucesos propios."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:romanos], mentions: [person:pablo, person:jesus], note: "Declarados justos por la fe, los cristianos tienen paz con Dios por Jesucristo. Hasta las dificultades traen aguante, aprobación y una esperanza que no falla, porque el espíritu santo derrama el amor de Dios."}
+    - {v: 6-11, type: letter, mentions: [person:jesus, event:muerte-de-jesus], note: "Cristo murió por los pecadores en el momento fijado: así prueba Dios su amor. Su sangre declara justos y su muerte reconcilia con Dios a quienes eran enemigos suyos."}
+    - {v: 12-14, type: letter, entities: [person:adan, event:pecado-de-adan-y-eva], mentions: [person:moises, person:jesus, event:pacto-de-la-ley], note: "Por Adán entraron el pecado y la muerte, que alcanzó a todos. La muerte reinó de Adán a Moisés, antes de la Ley. Adán se parece en algo a Jesús, el que iba a venir (nota del v. 14)."}
+    - {v: 15-19, type: letter, entities: [event:pecado-de-adan-y-eva, event:juicio-en-eden], mentions: [person:adan, person:jesus], note: "Contraste entre la ofensa de un solo hombre, que trajo condena y muerte, y el regalo de Dios por Jesucristo. Su único acto de justicia, su vida íntegra hasta el sacrificio según la nota, da vida a muchos."}
+    - {v: 20-21, type: letter, mentions: [person:jesus, event:pacto-de-la-ley], note: "La Ley hizo más visibles las ofensas, pero la bondad inmerecida fue aún mayor, para que reine por la justicia y lleve a vida eterna mediante Jesucristo."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal sobre el bautismo en la muerte de Cristo y la esclavitud al pecado o a la justicia; sin nombres nuevos ni sucesos."
+    spans:
+    - {v: 1-7, type: letter, entities: [letter:romanos], mentions: [person:pablo, person:jesus, event:muerte-de-jesus, event:entierro-de-jesus, event:resurreccion-de-jesus], note: "No hay que seguir pecando para recibir más bondad. Los bautizados en Cristo lo son en su muerte y quedan enterrados con él para vivir de nuevo; la vieja personalidad muere en el madero con él."}
+    - {v: 8-11, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Cristo, levantado de entre los muertos, ya no muere: murió una sola vez para quitar el pecado y ahora vive para Dios. Los cristianos deben verse muertos al pecado y vivos para Dios."}
+    - {v: 12-14, type: letter, note: "Que el pecado no reine en el cuerpo: sus miembros han de servir a Dios como armas de la justicia, porque ahora los rige la bondad inmerecida de Dios y no la ley."}
+    - {v: 15-20, type: letter, note: "Ejemplo de la esclavitud: cada uno es esclavo de aquel a quien obedece, del pecado que lleva a muerte o de la justicia. Liberados del pecado, ahora sirven a la justicia."}
+    - {v: 21-23, type: letter, mentions: [person:jesus], note: "Lo de antes daba vergüenza y acababa en muerte; ahora el fruto es la santidad y la vida eterna. El pecado paga con la muerte, pero Dios regala vida eterna por Cristo Jesús."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta: la Ley y el pecado, sin sucesos ni lugares."
+    spans:
+    - {v: 1-6, type: letter, entities: [letter:romanos], mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Ejemplo del matrimonio: la esposa queda libre cuando muere el marido. Así los cristianos judíos murieron a la Ley por el cuerpo de Cristo, el rescate según la nota del v. 6, y pertenecen al resucitado."}
+    - {v: 7-13, type: letter, entities: [event:diez-mandamientos], note: "La Ley no es pecado: da a conocer el pecado. Cita el mandato contra la codicia (Éx 20:17; Dt 5:21), que el pecado usó para matar. La Ley y el mandamiento son santos y buenos."}
+    - {v: 14-25, type: letter, entities: [person:pablo], mentions: [person:jesus], note: "Lucha entre la mente, que ama la ley de Dios, y la carne vendida al pecado. Perspicacia «Pablo», párr. 29, lo toma como el conflicto que el propio Pablo vivía. Gracias a Dios por Jesucristo."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta: vida guiada por el espíritu y esperanza de los hijos de Dios, sin sucesos ni lugares."
+    spans:
+    - {v: 1-11, type: letter, entities: [letter:romanos], mentions: [person:jesus, event:resurreccion-de-jesus], note: "La ley del espíritu, un principio que impulsa a actuar (nota del v. 2), libra de la del pecado. Dios mandó a su Hijo en carne semejante a la pecadora; el espíritu del que resucitó a Jesús da vida."}
+    - {v: 12-17, type: letter, mentions: [person:jesus], note: "Los guiados por el espíritu son hijos adoptivos de Dios y lo llaman «Abba, Padre», trato cariñoso de un hijo. La nota del v. 15 explica la adopción romana. Son coherederos con Cristo si sufren con él."}
+    - {v: 18-25, type: letter, entities: [person:pablo], note: "Los sufrimientos no pesan ante la gloria futura; Perspicacia «Pablo», párr. 29, lo aplica al propio Pablo. La creación, la humanidad según la nota, sometida por Dios con esperanza, espera la libertad de los hijos de Dios."}
+    - {v: 26-27, type: letter, note: "Cuando no saben qué pedir, el espíritu ruega por los santos. Según la nota, Dios toma como su ruego pasajes inspirados que expresan lo que ellos sienten."}
+    - {v: 28-30, type: letter, note: "Dios hace cooperar sus obras para bien de los llamados según su propósito. Según la nota del v. 28, prevé el grupo de llamados, sin fijar de antemano quiénes lo forman."}
+    - {v: 31-39, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "Si Dios no retuvo a su Hijo, nadie acusará a sus escogidos. Cristo murió, resucitó, está a la derecha de Dios y ruega por ellos. Cita Sl 44:22; nada separa del amor de Dios."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo doctrinal de la carta: Dios escoge por misericordia y no por linaje, con ejemplos de Génesis y Éxodo y citas de los profetas."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:romanos, person:pablo], mentions: [person:jesus], note: "Pablo siente dolor por sus parientes carnales, los israelitas, que tenían la adopción, los pactos, la Ley, los patriarcas y de quienes vino el Cristo. Según la nota del v. 5, la alabanza final es para Jehová."}
+    - {v: 6-9, type: letter, entities: [person:isaac, person:sara, event:isaac-destetado-e-ismael-se-burla, event:tres-angeles-visitan-a-abrahan, relation:isaac/kin/abrahan, relation:isaac/kin/sara], mentions: [person:abrahan, person:jacob], note: "No todo descendiente de Israel, es decir de Jacob, es Israel. La descendencia viene por Isaac (Gé 21:12) y son hijos los de la promesa: Sara tendría un hijo (Gé 18:10, 14)."}
+    - {v: 10-13, type: letter, entities: [person:pablo, person:isaac, person:rebeca, person:jacob, person:esau, event:nacimiento-de-esau-y-jacob, relation:pablo/kin/isaac, relation:isaac/kin/rebeca, relation:jacob/kin/isaac, relation:jacob/kin/rebeca, relation:esau/kin/isaac, relation:esau/kin/rebeca, relation:esau/kin/jacob], note: "Rebeca concibe gemelos de Isaac, antepasado de Pablo y de los judíos, y antes del parto se le anuncia que el hermano mayor serviría al menor (Gé 25:23). Cita Mal 1:2, 3; Malaquías no se nombra."}
+    - {v: 14-18, type: letter, entities: [event:moises-pide-ver-la-gloria-de-jehova, event:septima-plaga-el-granizo], mentions: [person:moises], note: "Dios no es injusto: muestra misericordia a quien quiere, como dijo a Moisés (Éx 33:19). Al faraón, sin nombre (Perspicacia «Faraón»), le dejó vivir para mostrar su poder (Éx 9:16, antes de la séptima plaga)."}
+    - {v: 19-24, type: letter, note: "El alfarero puede hacer con el mismo barro vasijas para usos distintos. Dios soporta con paciencia las vasijas de ira y prepara las de misericordia, llamadas de entre judíos y naciones."}
+    - {v: 25-29, type: letter, mentions: [person:oseas, person:isaias, place:sodoma, place:gomorra, event:destruccion-de-sodoma-y-gomorra, event:destruccion-de-jerusalen-607, event:destruccion-de-jerusalen-70], note: "Cita a Oseas (Os 2:23; 1:10) y a Isaías (Is 10:22, 23; 1:9): solo un resto se salvará, o serían como Sodoma y Gomorra. Según la nota del v. 28, se cumplió en Jerusalén en 607 a.e.c. y 70 e.c."}
+    - {v: 30-33, type: letter, mentions: [place:jerusalen, person:jesus], note: "Las naciones logran la justicia por la fe; Israel, que la buscó por obras, tropieza. Cita Is 28:16 y 8:14: la piedra puesta en Sion, que es Jerusalén, es Jesucristo según la nota del v. 33."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Parte doctrinal de la carta, sin sucesos ni lugares: solo citas de la Ley, los Profetas y los Salmos."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:romanos], mentions: [person:jesus], note: "Pablo pide a Dios que los judíos se salven: tienen celo por él, pero sin conocimiento exacto, y buscan su propia justicia. Cristo es el fin de la Ley y también su meta, según la nota del v. 4."}
+    - {v: 5-10, type: letter, mentions: [person:moises, person:jesus, event:resurreccion-de-jesus], note: "Moisés habla de la justicia por la Ley (Le 18:5); la que viene de la fe usa Dt 30:12-14. Se salva quien declara en público que Jesús es Señor y cree que Dios lo resucitó."}
+    - {v: 11-15, type: letter, note: "Con Is 28:16 y Joe 2:32, que lleva el nombre de Jehová, dice que judíos y griegos tienen un mismo Señor. Para invocarlo hay que oír a alguien enviado a predicar (Is 52:7). Judíos y griegos son pueblos."}
+    - {v: 16-21, type: letter, mentions: [person:isaias, person:moises, person:jesus], note: "No todos creyeron (Is 53:1), aunque el mensaje llegó a toda la tierra (Sl 19:4). Moisés (Dt 32:21) e Isaías (Is 65:1, 2) anunciaron los celos y la terquedad de Israel, que aquí es el pueblo, sin ficha."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Parte doctrinal de la carta, sin sucesos propios."
+    spans:
+    - {v: 1-6, type: letter, entities: [letter:romanos, person:pablo, relation:pablo/kin/abrahan, relation:pablo/kin/benjamin-hijo-de-jacob], mentions: [person:abrahan, person:benjamin-hijo-de-jacob, person:elias-profeta], note: "Dios no rechazó a su pueblo: queda un resto, como en la queja de Elías y los 7.000 fieles (1Re 19:10, 14, 18). Suceso de 1 Reyes, aún sin crear. Baal es un dios cananeo, sin ficha."}
+    - {v: 7-10, type: letter, mentions: [person:david], note: "Solo los escogidos logran lo que Israel buscaba; los demás quedan insensibles, según Dt 29:4 e Is 29:10. David lo había dicho en Sl 69:22, 23."}
+    - {v: 11-16, type: letter, entities: [person:pablo], mentions: [event:ananias-devuelve-la-vista-a-saulo], note: "El tropiezo de Israel abre la salvación a las naciones y busca darle celos. Pablo, apóstol enviado a los gentiles (Hch 9:15, según la nota del v. 13), estima mucho su ministerio. Primicias y raíz santas."}
+    - {v: 17-24, type: letter, note: "Ejemplo del olivo: se cortan ramas naturales, los judíos sin fe, y se injertan ramas silvestres, los cristianos gentiles. Pablo les advierte que no se crean superiores. Ilustración, sin personas."}
+    - {v: 25-32, type: letter, mentions: [place:jerusalen], note: "Secreto sagrado: parte de Israel queda insensible hasta que entren los gentiles; así se salvará todo Israel, el espiritual según la nota. Cita Is 59:20, 21 y 27:9: Sion es Jerusalén y Jacob, el pueblo."}
+    - {v: 33-36, type: letter, note: "Alabanza a la sabiduría y los caminos de Dios, con Is 40:13, que lleva el nombre de Jehová, y Job 41:11."}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Consejos para la vida cristiana, sin personas con nombre salvo Cristo, sin lugares y sin sucesos."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:romanos], note: "Ofrecerse a Dios como sacrificio vivo y adorarlo con la razón. Dejar de amoldarse al sistema, que la nota del v. 2 describe como las costumbres de la sociedad romana hacia el año 56."}
+    - {v: 3-8, type: letter, mentions: [person:jesus], note: "Nadie debe creerse más de lo que es. Todos forman un cuerpo en unión con Cristo, con dones distintos: profetizar, servir, enseñar, animar, dar, dirigir y mostrar misericordia."}
+    - {v: 9-16, type: letter, note: "Amor sin hipocresía y cariño de familia. Trabajar con fervor del espíritu como esclavos de Jehová (nombre restituido, apén. C3), orar, compartir, ser hospitalarios, bendecir a quien persigue y ser humildes."}
+    - {v: 17-21, type: letter, note: "No devolver mal por mal ni vengarse: la venganza es de Jehová (Dt 32:35). Dar de comer al enemigo, como dice Pr 25:21, 22, y vencer el mal con el bien."}
+  13:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: letter, entities: [letter:romanos], mentions: [person:neron], note: "Someterse a las autoridades superiores, que existen con permiso de Dios en posiciones relativas y castigan al que obra mal. Pagar impuestos y dar honra. La nota del v. 2 piensa sobre todo en Roma y en Nerón (54-68)."}
+    - {v: 8-10, type: letter, entities: [event:diez-mandamientos], note: "La única deuda es el amor. No cometer adulterio, no asesinar, no robar ni codiciar se resume en amar al prójimo como a uno mismo: el amor cumple la ley."}
+    - {v: 11-14, type: letter, mentions: [person:jesus], note: "La salvación está más cerca: dejar las obras de la oscuridad, como las fiestas desenfrenadas, la borrachera, la inmoralidad y las peleas, y vestirse del Señor Jesucristo, es decir, imitarlo."}
+  14:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-12, type: letter, entities: [letter:romanos], mentions: [person:jesus, event:muerte-de-jesus, event:resurreccion-de-jesus], note: "No juzgar al hermano en asuntos de conciencia, como comer de todo o solo verduras, o tener un día por especial. Cada uno dará cuentas a Jehová; se cita Is 45:23 (quizá también 49:18). Cristo murió y volvió a vivir."}
+    - {v: 13-23, type: letter, mentions: [person:jesus], note: "No hacer tropezar al hermano por la comida: nada es impuro en sí, pero el amor manda. El Reino no consiste en comer y beber, sino en justicia, paz y gozo. Lo que no nace de la fe es pecado."}
+  15:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: letter, entities: [letter:romanos], mentions: [person:jesus], note: "Los fuertes cargan con las debilidades de los demás, como Cristo, que no buscó agradarse (Sl 69:9). Lo escrito antes enseña y da esperanza; que judíos y gentiles alaben a Dios a una sola voz."}
+    - {v: 7-13, type: letter, mentions: [person:jesus, person:isaias, person:jese], note: "Recibirse unos a otros como Cristo los recibió. Cristo sirvió a los circuncisos y las naciones también alaban a Dios: citas de Sl 18:49, Dt 32:43, Sl 117:1 e Is 11:10, la raíz de Jesé."}
+    - {v: 14-21, type: letter, entities: [person:pablo, place:ilirico], mentions: [place:jerusalen, person:jesus], note: "Pablo, siervo público de Cristo para las naciones, les ha escrito con franqueza. Ha predicado desde Jerusalén hasta Ilírico sin construir sobre cimiento ajeno (Is 52:15). La nota no aclara si entró en Ilírico."}
+    - {v: 22-29, type: letter, entities: [person:pablo, place:espana, event:colecta-de-macedonia-y-acaya], mentions: [place:macedonia, place:acaya, place:jerusalen, place:roma, journey:tercer-viaje, event:pablo-envia-a-timoteo-y-erasto-a-macedonia], note: "Pablo piensa ver a los de Roma camino de España, después de llevar a Jerusalén lo reunido en Macedonia y Acaya. La nota del v. 23 lo sitúa al final del tercer viaje, a comienzos de 56."}
+    - {v: 30-33, type: letter, entities: [person:pablo], mentions: [place:judea, place:jerusalen, person:jesus, event:colecta-de-macedonia-y-acaya], note: "Pide que oren para que lo libren de los incrédulos de Judea y para que los santos de Jerusalén acepten su servicio; después irá a verlos con alegría."}
+  16:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:romanos, person:febe, place:cencreas, relation:febe/lived_in/cencreas], note: "Pablo presenta a Febe, ministra de la congregación de Cencreas, puerto de Corinto, y pide que la ayuden, pues había defendido a muchos, a él también. Quizá llevó la carta a Roma."}
+    - {v: 3-5, type: letter, entities: [person:priscila, person:aquila, person:epeneto, relation:aquila/lived_in/roma, relation:priscila/lived_in/roma, relation:aquila/accompanies/pablo, relation:priscila/accompanies/pablo, relation:epeneto/lived_in/roma, relation:epeneto/lived_in/asia], mentions: [place:roma, place:asia], note: "Prisca y Áquila, colaboradores que arriesgaron la vida por Pablo (la Biblia no dice cuándo), tienen una congregación en su casa. Epéneto fue de los primeros cristianos de Asia."}
+    - {v: 6-7, type: letter, entities: [person:maria-de-roma, person:andronico, person:junias, relation:maria-de-roma/lived_in/roma, relation:andronico/lived_in/roma, relation:junias/lived_in/roma, relation:andronico/kin/pablo, relation:junias/kin/pablo, relation:andronico/accompanies/pablo, relation:junias/accompanies/pablo], note: "María trabajó mucho por ellos. Andrónico y Junias, parientes de Pablo y presos como él, eran cristianos antes que él; Perspicacia «Romanos» ve posible que ayudaran a fundar la congregación."}
+    - {v: 8-10, type: letter, entities: [person:ampliato, person:urbano, person:estaquis, person:apeles, person:aristobulo, relation:ampliato/lived_in/roma, relation:urbano/lived_in/roma, relation:urbano/accompanies/pablo, relation:estaquis/lived_in/roma, relation:apeles/lived_in/roma, relation:aristobulo/lived_in/roma], note: "Saludos a Ampliato, a Urbano, a Estaquis y a Apeles, y a los de la casa de Aristóbulo."}
+    - {v: 11-12, type: letter, entities: [person:herodion, person:narciso, person:trifena, person:trifosa, person:persida, relation:herodion/lived_in/roma, relation:herodion/kin/pablo, relation:narciso/lived_in/roma, relation:trifena/lived_in/roma, relation:trifena/kin/trifosa, relation:trifosa/lived_in/roma, relation:persida/lived_in/roma], note: "Saludos a Herodión, pariente de Pablo, a los cristianos de la casa de Narciso, a Trifena y Trifosa y a Pérsida."}
+    - {v: 13-15, type: letter, entities: [person:rufo-de-roma, person:asincrito, person:flegonte, person:hermes, person:patrobas, person:hermas, person:filologo, person:julia, person:nereo, person:olimpas, relation:rufo-de-roma/lived_in/roma, relation:asincrito/lived_in/roma, relation:flegonte/lived_in/roma, relation:hermes/lived_in/roma, relation:patrobas/lived_in/roma, relation:hermas/lived_in/roma, relation:filologo/lived_in/roma, relation:filologo/kin/julia, relation:julia/lived_in/roma, relation:nereo/lived_in/roma, relation:olimpas/lived_in/roma], mentions: [person:rufo-hijo-de-simon], note: "Rufo y su madre, que fue como una madre para Pablo; dos grupos con los hermanos que los acompañan. Ni la hermana de Nereo ni la madre de Rufo tienen nombre, así que no llevan ficha."}
+    - {v: 16-20, type: letter, mentions: [person:satanas, person:jesus, event:juicio-en-eden], note: "Un beso santo y los saludos de las congregaciones. Apartarse de quienes dividen con halagos; Dios aplastará pronto a Satanás bajo sus pies, en eco de Gé 3:15."}
+    - {v: 21-23, type: letter, entities: [event:pablo-escribe-romanos, person:pablo, person:timoteo, person:lucio-pariente-de-pablo, person:jason, person:sosipatro, person:tercio, person:gayo-de-corinto, person:erasto-mayordomo-de-corinto, person:cuarto, find:pavimento-de-erasto, relation:timoteo/accompanies/pablo, relation:lucio-pariente-de-pablo/kin/pablo, relation:lucio-pariente-de-pablo/accompanies/pablo, relation:jason/kin/pablo, relation:sosipatro/kin/pablo, relation:sosipatro/accompanies/pablo, relation:sosipatro/same_as/sopater, relation:tercio/accompanies/pablo, relation:pablo/tie/gayo-de-corinto, relation:gayo-de-corinto/lived_in/corinto, relation:erasto-mayordomo-de-corinto/lived_in/corinto, relation:erasto-mayordomo-de-corinto/kin/cuarto, relation:cuarto/lived_in/corinto], mentions: [place:corinto, person:sopater, person:lucio-de-cirene, person:erasto-colaborador-de-pablo, journey:tercer-viaje], note: "Saludos desde Corinto: Timoteo; los parientes Lucio, Jasón y Sosípatro; Tercio, que escribe la carta; Gayo, anfitrión de Pablo y de la congregación; Erasto, tesorero de la ciudad, y Cuarto."}
+    - {v: 25-27, type: letter, mentions: [person:jesus], note: "Gloria final a Dios, el único sabio, por el secreto sagrado que ahora se da a conocer a las naciones. El v. 24 falta en los manuscritos más antiguos y la TNM no lo trae."}

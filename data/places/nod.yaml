@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nod
+name: Región del Destierro
+names:
+- name: Región del Destierro
+- name: Nod
+  note: Nombre hebreo que da la nota de Gé 4:16.
+- name: Tierra de la Condición de Fugitivo
+  note: Nombre del artículo de Perspicacia.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Tierra al este de Edén adonde se fue a vivir Caín, condenado por matar a Abel. Su nombre viene de la raíz hebrea
+  de «fugitivo». No se sabe dónde estaba.
+reason: 'Perspicacia «Condición de fugitivo, Tierra de la»; Gé 4:16. Sin punto: Perspicacia dice que se desconoce y OpenBible
+  no la sitúa.'
+sources:
+- it-condicion-de-fugitivo
+- openbible-geo
+- genesis-4
+links:
+- title: 'Perspicacia: «Condición de fugitivo, Tierra de la»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001574
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+checked_on: '2026-09-29'
+status: pending

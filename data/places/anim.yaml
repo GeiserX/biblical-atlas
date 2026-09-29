@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: anim
+name: Anim
+names:
+- name: Anim
+type: city
+lat: 31.353601
+lon: 35.063521
+precision: point
+coord_source: openbible:ac22b90
+coord_url: https://www.openbible.info/geo/ancient/ac22b90/anim
+summary: Ciudad del sur de la montaña de Judá, en Khirbet Ghuwein et-Tahta (Horvat ʽAnim), unos 5 km al sur de Estemoa y 19
+  km al sursuroeste de Hebrón.
+reason: 'Perspicacia «Anim»; Jos 15:50. OpenBible: solo el punto.'
+sources:
+- it-anim
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Anim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000280
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

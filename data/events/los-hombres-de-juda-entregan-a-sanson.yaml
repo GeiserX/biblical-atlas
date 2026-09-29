@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-hombres-de-juda-entregan-a-sanson
+title: Los hombres de Judá entregan a Sansón a los filisteos
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+narrative_order:
+  series: jueces
+  order: 15009
+places:
+- penasco-de-etam
+- lehi
+- juda
+people:
+- sanson
+passages:
+- Jue 15:9-13
+summary: Los filisteos acampan en Judá, por Lehí, en busca de Sansón. Tres mil judaítas bajan al peñasco de Etam, le reprochan
+  lo hecho y, tras prometerle no matarlo, lo atan con dos sogas nuevas y se lo llevan.
+reason: 'Jue 15:9-13; Perspicacia «Etam», núm. 2, y «Lehí». Fecha: tras Jefté (c. 1173, «Jefté»), pues el libro va casi en
+  orden («Jueces, Libro de»), y antes de Saúl (1117, estudio 3).'
+sources:
+- jueces-15
+- it-sanson
+- it-etam
+- it-lehi
+- it-jefte
+- it-jueces
+- si-3
+links:
+- title: Jueces 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/15
+  type: bible
+- title: 'Perspicacia: «Sansón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

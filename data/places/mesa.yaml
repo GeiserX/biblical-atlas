@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mesa
+name: Mesá
+names:
+- name: Mesá
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Norte de Arabia (Masá)
+  geometry:
+    type: zone
+    lat: 29.61094
+    lon: 41.552048
+    radius_km: 250
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-mesa
+  - openbible-geo
+  reason: 'Perspicacia: si Mesá es una variante de Masá, estaría en Arabia, donde se asentaron los descendientes del ismaelita
+    Masá.'
+  note: 'Centro: punto de OpenBible para Massa. Radio nuestro.'
+  coord_source: openbible:a6b4fb2
+  coord_url: https://www.openbible.info/geo/ancient/a6b4fb2/mesha
+summary: Uno de los dos extremos de la tierra que ocuparon los hijos de Joctán; el otro es Sefar. Por la Septuaginta se cree
+  que es otra forma de Masá, nombre ismaelita de Arabia.
+reason: Perspicacia «Mesá», núm. 4, y «Joqtán»; Gé 10:30.
+sources:
+- it-mesa
+- it-joctan
+- genesis-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Mesá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003006
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: parnac
+name: Parnac
+names:
+- name: Parnac
+perspicacia: '1200003386'
+summary: Zabulonita, padre de Elizafán, el jefe de Zabulón en el reparto de Canaán.
+reason: Perspicacia «Parnac»; Nú 34:25.
+sources:
+- it-parnac
+- numeros-34
+links:
+- title: 'Perspicacia: «Parnac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003386
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: zabulon-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - it-parnac
+  - numeros-34
+  reason: Perspicacia «Parnac» lo llama zabulonita; su hijo era el jefe de esa tribu (Nú 34:25).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

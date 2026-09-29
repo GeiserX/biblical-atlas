@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jason
+name: Jasón
+names:
+- name: Jasón
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+summary: Cristiano de Tesalónica que hospedó a Pablo y Silas; una turba lo llevó ante los gobernantes y tuvo que dar fianza.
+  Perspicacia deja abierto que sea el pariente que saluda desde Corinto (Ro 16:21).
+reason: Perspicacia «Jasón» (párr. 1 y 2); Hch 17:5-9 y Ro 16:21. Pablo predica en Tesalónica en 50 (estudio 3, párr. 24).
+sources:
+- it-jason
+- hch-17
+- si-3
+- romanos-16
+links:
+- title: 'Perspicacia: «Jasón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002340
+  type: perspicacia
+- title: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  type: bible
+perspicacia: '1200002340'
+history:
+- date: '2026-09-29'
+  change: El resumen no decía que Ro 16:21 lo nombra; ahora lo cuenta como posibilidad, porque Perspicacia «Jasón» no afirma
+    que sea el mismo.
+  source: romanos-16
+- date: '2026-09-29'
+  change: La relación con Pablo repetía el tipo en «relacion» y daba por segura la identidad con el Jasón de Ro 16:21. Queda
+    sin grado y pendiente, porque Perspicacia solo la plantea como posibilidad.
+  source: romanos-16
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: tesalonica
+  inferred: false
+  sources:
+  - it-jason
+  - hch-17
+  reason: La turba va a su casa de Tesalónica a buscar a Pablo (Hch 17:5).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: pablo
+  inferred: true
+  sources:
+  - it-jason
+  - romanos-16
+  reason: Ro 16:21 llama pariente de Pablo a un Jasón. Perspicacia no afirma que sea el de Tesalónica; la palabra puede ser
+    paisano, pero su sentido principal es familiar de sangre.
+  checked_on: '2026-09-29'
+  status: pending

@@ -1,0 +1,40 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: mardoqueo
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwbrd_201501_7_VIDEO"
+    title: "En su propio idioma y en su propia escritura"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbrd_201501_7_VIDEO&appLanguage=S"
+    published: "2021-08-03"
+    hits: 5
+    terms:
+      "Mardoqueo": 5
+  - docid: "pub-jwb_201804_13_VIDEO"
+    title: "Kenneth Cook: Cumpla sus promesas y reciba bendiciones (Sal. 15:4)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201804_13_VIDEO&appLanguage=S"
+    published: "2018-04-30"
+    hits: 3
+    terms:
+      "Mardoqueo": 3
+  - docid: "pub-jwb_202010_14_VIDEO"
+    title: "Samuel Herd: Mantengamos la calma en tiempos de angustia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202010_14_VIDEO&appLanguage=S"
+    published: "2020-10-19"
+    hits: 3
+    terms:
+      "Mardoqueo": 3
+  - docid: "pub-co-r22_126_VIDEO"
+    title: "Harold Corkern: Evitemos las cosas que destruyen la paz. Presumir de lo que no debemos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_126_VIDEO&appLanguage=S"
+    published: "2022-07-25"
+    hits: 2
+    terms:
+      "Mardoqueo": 2
+  - docid: "pub-co-r22_7_VIDEO"
+    title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
+    published: "2022-07-25"
+    hits: 2
+    terms:
+      "Mardoqueo": 2

@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jeroboan-ii
+name: Reinado de Jeroboán II en Israel
+type: king
+person: jeroboan-ii
+date:
+  from: -843
+  to: -802
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 844-803 a.e.c.
+places:
+- samaria
+summary: Cuarenta y un años en Samaria.
+reason: A6-A pone su comienzo hacia 844 y A6-B el de Zacarías hacia 803; Perspicacia «Zacarías», núm. 14, fecha su muerte en
+  803.
+sources:
+- tnm-a6-a
+- 2-reyes-14
+- it-jeroboan
+- tnm-a6-b
+- it-zacarias
+search: Jeroboán II rey
+checked_on: '2026-09-28'
+status: verified

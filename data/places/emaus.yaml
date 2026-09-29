@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: emaus
+name: Emaús
+names:
+- name: Emaús
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: El-Qubeiba
+  geometry:
+    type: point
+    lat: 31.839933
+    lon: 35.13685
+  checked_on: '2026-09-28'
+  status: favored_level_1
+  sources:
+  - it-emaus
+  reason: A unos 11 km al NO de Jerusalén, en una calzada romana y con restos del siglo I. Perspicacia dice que su distancia
+    armoniza con Lucas, aunque no se puede concluir (párr. 4).
+  coord_source: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+- name: ʽAmwas
+  geometry:
+    type: point
+    lat: 31.8393
+    lon: 34.989458
+  checked_on: '2026-09-28'
+  status: rejected_level_1
+  sources:
+  - it-emaus
+  - lucas-24
+  reason: Es el candidato más conocido, pero está a unos 32 km de Jerusalén, casi el triple de los 60 estadios de Lu 24:13
+    (párr. 4).
+  coord_source: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+- name: Qalunyah (Mevasseret Ziyyon)
+  geometry:
+    type: point
+    lat: 31.79289
+    lon: 35.16419
+  checked_on: '2026-09-28'
+  status: rejected_level_1
+  sources:
+  - it-emaus
+  - lucas-24
+  reason: 'Queda a unos 6,5 km de Jerusalén: no alcanza los 60 estadios de Lucas (párr. 4).'
+  coord_source: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+summary: Aldea adonde iban Cleopas y otro discípulo cuando Jesús resucitado caminó con ellos. Lucas la pone a unos 11 km de
+  Jerusalén. Se han propuesto una docena de sitios y ninguno es seguro.
+reason: Perspicacia «Emaús» (párr. 3-4), Lu 24:13-33 y su nota de estudio, que da 60 estadios. El mapa B10 la dibuja.
+sources:
+- it-emaus
+- lucas-24
+- nota-lucas-24
+- tnm-b10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Emaús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001353
+  type: perspicacia
+- title: Lucas 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/24
+  type: bible
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guilgal-de-goyim
+name: Guilgal
+names:
+- name: Guilgal
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lugar al oeste del Jordán, quizá la capital de Goyim. No es el Guilgal del campamento junto a Jericó. Algunos prefieren
+  leer Galilea, como la Septuaginta.
+reason: Perspicacia «Guilgal», núm. 3, y «Goyim», núm. 2; Jos 12:23. Sin sitio conocido, no damos punto ni zona.
+sources:
+- it-guilgal
+- it-goyim
+- josue-12
+links:
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+- title: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  type: bible
+checked_on: '2026-09-29'
+status: pending

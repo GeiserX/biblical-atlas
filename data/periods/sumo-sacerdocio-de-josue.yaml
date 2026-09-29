@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sumo-sacerdocio-de-josue
+name: Josué (Jesúa), sumo sacerdote
+type: high_priest
+date:
+  from: -536
+  to: -514
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 537 a por lo menos 515 a.e.c.
+places:
+- jerusalen
+person: josue-sumo-sacerdote
+summary: Primer sumo sacerdote de los repatriados. Servía cuando volvieron en 537 y cuando se reanudó el templo en 520;
+  no se sabe cuándo terminó.
+reason: Perspicacia «Jesúa», núm. 4; Ag 1:1 lo llama sumo sacerdote en el segundo año de Darío. El templo se acaba en 515 (estudio
+  3, tabla de sucesos).
+sources:
+- it-jesua
+- ageo-1
+- si-3
+- ageo-2
+search: Jesúa
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliezer-hijo-de-jorim
+name: Eliezer
+names:
+- name: Eliezer
+perspicacia: 1200001304#11
+disambiguation: Eliezer hijo de Jorim (Lu 3:29); no Eliezer de Damasco, el siervo de Abrahán.
+distinct_from:
+- eliezer-de-damasco
+summary: Antepasado de María, madre de Jesús. En la lista de Lucas es hijo de Jorim y padre de Jesús.
+reason: Perspicacia «Eliezer», núm. 11; Lu 3:29.
+sources:
+- it-eliezer
+- lucas-3
+links:
+- title: 'Perspicacia: «Eliezer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001304
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: jorim
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:29: Eliezer, hijo de Jorim.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

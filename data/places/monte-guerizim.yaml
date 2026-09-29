@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-guerizim
+name: Monte Guerizim
+names:
+- name: Monte Guerizim
+- name: Garizim
+  note: Otra grafía que Perspicacia pone entre paréntesis al hablar del templo samaritano.
+type: mountain
+lat: 32.199444
+lon: 35.272778
+precision: point
+coord_source: openbible:a30e967
+coord_url: https://www.openbible.info/geo/ancient/a30e967/mount-gerizim
+coord_note: Punto de OpenBible en Jebel et Tur (Har Gerizim), el monte con que Perspicacia lo identifica.
+summary: Monte de Samaria de unos 850 m, frente al Ebal y con el valle de Siquem entre los dos. Allí debía darse la bendición
+  al entrar en la tierra; siglos después los samaritanos adoraban en él.
+reason: 'Perspicacia «Guerizim, Monte», párr. 1, 2, 4 y 6; Dt 11:29, 30; la nota de estudio de Jn 4:20 identifica con él «esta
+  montaña» de la samaritana. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-guerizim
+- openbible-geo
+- deuteronomio-11
+- deuteronomio-27
+- juan-4
+- josue-8
+- jueces-9
+links:
+- title: 'Perspicacia: «Guerizim, Monte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001661
+  type: perspicacia
+- title: Deuteronomio 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/11
+  type: bible
+- title: Deuteronomio 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/27
+  type: bible
+- title: Juan 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

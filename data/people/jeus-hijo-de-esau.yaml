@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeus-hijo-de-esau
+name: Jeús
+names:
+- name: Jeús
+perspicacia: 1200002457#1
+disambiguation: Jeús hijo de Esaú; no los Jeús de Benjamín, de Leví ni el hijo de Rehoboam.
+summary: Hijo de Esaú y de Oholibamá. Nació en Canaán, se fue con su familia a Seír y llegó a ser jeque de Edom.
+reason: Perspicacia «Jeús», núm. 1; Gé 36:5-8, 14, 18.
+sources:
+- it-jeus
+- genesis-36
+links:
+- title: 'Perspicacia: «Jeús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002457
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: esau
+  word: father
+  inferred: false
+  sources:
+  - it-jeus
+  - genesis-36
+  reason: 'Gé 36:5, 14: hijo de Esaú.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: oholibama-hija-de-ana
+  word: mother
+  inferred: false
+  sources:
+  - it-jeus
+  - genesis-36
+  reason: 'Gé 36:5, 14: hijo de Oholibamá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: canaan
+  inferred: false
+  sources:
+  - it-jeus
+  - genesis-36
+  reason: 'Gé 36:5: nació en la tierra de Canaán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - it-jeus
+  - genesis-36
+  reason: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

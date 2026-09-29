@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sefarad
+name: Sefarad
+names:
+- name: Sefarad
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Saparda, territorio de Media
+  geometry:
+    type: zone
+    lat: 34.8065
+    lon: 48.516247
+    radius_km: 300
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sefarad
+  - it-medos
+  - openbible-geo
+  reason: Perspicacia «Sefarad» da como probable Saparda, que los anales asirios sitúan en Media, adonde Asiria llevó a parte
+    de Israel (2Re 17:6).
+  note: 'Centro: punto de OpenBible para Media (el de Ecbátana), que ya usa la ficha media. El radio de 300 km es nuestro.'
+  coord_source: openbible:ad2fadf
+  coord_url: https://www.openbible.info/geo/ancient/ad2fadf/media
+summary: Tierra donde vivían desterrados de Jerusalén que, según Abdías, volverían a ocupar las ciudades del Négueb. No se
+  sabe dónde estaba.
+reason: 'Perspicacia «Sefarad»; Abd 20. Su sitio exacto se desconoce: el mapa solo muestra la zona que Perspicacia ve probable.'
+not_claimed:
+- 'Que Sefarad fuera con seguridad Saparda: Perspicacia la da solo como una de varias propuestas, la que cree probable.'
+sources:
+- it-sefarad
+- openbible-geo
+- abdias-1
+links:
+- title: 'Perspicacia: «Sefarad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003900
+  type: perspicacia
+- title: Abdías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/31/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

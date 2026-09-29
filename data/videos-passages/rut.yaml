@@ -1,0 +1,61 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: rut
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_80_VIDEO"
+    title: "Información sobre Rut"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_80_VIDEO"
+    published: "2021-12-24"
+chapters:
+  1:
+    - docid: "pub-jwb-104_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-104_1_VIDEO"
+      published: "2023-06-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-104_8_VIDEO"
+      title: "Richard Chilton: “Adonde tú vayas yo iré”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-104_8_VIDEO"
+      published: "2023-06-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201806_1_VIDEO"
+      title: "JW Broadcasting: junio de 2018 (graduación de la clase 144 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201806_1_VIDEO"
+      published: "2018-06-04"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "702023003"
+      title: "2023 | Informe 1 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702023003"
+      published: "2023-01-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbrd_201610_3_VIDEO"
+      title: "La partida a Warwick"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbrd_201610_3_VIDEO"
+      published: "2016-12-14"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwb-091_10_VIDEO"
+      title: "Richard Chilton: “¿Quién se levantará a mi favor?”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-091_10_VIDEO"
+      published: "2022-06-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-091_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-091_1_VIDEO"
+      published: "2022-06-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-125_7_VIDEO"
+      title: "Richard Chilton: La otra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-125_7_VIDEO"
+      published: "2025-06-16"
+      matched_by: [subtitles]
+      citations: 1

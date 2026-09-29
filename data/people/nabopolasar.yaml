@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nabopolasar
+name: Nabopolasar
+names:
+- name: Nabopolasar
+perspicacia: null
+date:
+  from: -644
+  to: -624
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 645-625 a.e.c.
+summary: Rey de Babilonia que abrió la dinastía caldea y padre de Nabucodonosor. En su año 14, con el medo Ciaxares como aliado,
+  tomó Nínive (632 a.e.c.). La Biblia no lo nombra.
+reason: Perspicacia «Babilonia», núm. 1 (dinastía hacia 645), «Nínive» (su año 14 fue 632 y el 21, 625) y «Medos, Media», párr.
+  12 y 13.
+sources:
+- it-babilonia
+- it-ninive
+- it-medos
+- it-nabucodonosor
+- w89-salvacion-venganza
+links:
+- title: 'Perspicacia: «Medos, Media»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002956
+  type: perspicacia
+- title: 'Perspicacia: «Nínive»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003261
+  type: perspicacia
+relations:
+- type: lived_in
+  place: babilonia
+  inferred: true
+  sources:
+  - it-medos
+  - it-babilonia
+  reason: Perspicacia lo presenta como rey de Babilonia, donde empezó su dinastía.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

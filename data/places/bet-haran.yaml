@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-haran
+name: Bet-Harán
+names:
+- name: Bet-Harán
+- name: Bet-Haram
+  note: Así la llama Jos 13:27.
+type: city
+lat: 31.819256
+lon: 35.671878
+precision: point
+coord_source: openbible:a4590cd
+coord_url: https://www.openbible.info/geo/ancient/a4590cd/beth-haram
+summary: Ciudad fortificada que los gaditas reconstruyeron en la llanura baja al este del Jordán, cerca de unas fuentes termales.
+reason: 'Perspicacia «Bet-harán, Bet-haram»: el sitio original sería Tell Iktanu, unos 13 km al este-nordeste de la desembocadura
+  del Jordán; Nú 32:36. OpenBible: solo el punto.'
+sources:
+- it-bet-haran
+- openbible-geo
+- numeros-32
+- josue-13
+links:
+- title: 'Perspicacia: «Bet-harán, Bet-haram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000689
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

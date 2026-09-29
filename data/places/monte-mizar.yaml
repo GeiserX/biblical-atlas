@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-mizar
+name: Monte Mizar
+names:
+- name: Mizar
+  note: La nota de Sal 42:6 da también la lectura «la montaña pequeña».
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de los picos del Hermón
+  geometry:
+    type: zone
+    lat: 33.4
+    lon: 35.85
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - salmos-42
+  - openbible-geo
+  reason: El versículo lo pone con el Jordán y las cumbres del Hermón; jw.org no dice nada más de su sitio.
+  note: 'Centro y radio de la primera resolución de OpenBible: a menos de 30 km del punto del Hermón.'
+  coord_source: openbible:a597123
+  coord_url: https://www.openbible.info/geo/ancient/a597123/mount-mizar
+summary: 'Monte que el Salmo 42 cita con el Jordán y las cumbres del Hermón: desde allí el salmista recuerda a Dios. No se
+  sabe dónde estaba.'
+reason: Sal 42:6 y su nota. Pendiente porque Perspicacia no tiene artículo sobre Mizar y el buscador de wol.jw.org solo lo
+  halla en el propio versículo.
+sources:
+- salmos-42
+- openbible-geo
+links:
+- title: Salmo 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/42
+  type: bible
+checked_on: '2026-09-29'
+status: pending

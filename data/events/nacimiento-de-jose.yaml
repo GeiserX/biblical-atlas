@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-jose
+title: Nace José
+date:
+  from: -1766
+  to: -1766
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1767 a.e.c.
+narrative_order:
+  series: genesis
+  order: 30022
+places:
+- haran
+people:
+- jose-hijo-de-jacob
+- raquel
+type: birth
+roles:
+  jose-hijo-de-jacob: born
+passages:
+- Gé 30:22-24
+summary: Después de años estéril, Raquel da a luz a su primer hijo y lo llama José, con la esperanza de que Jehová le añada
+  otro.
+reason: 'El estudio 3 fecha en 1767 a.e.c. el nacimiento de José (Gé 30:23, 24). Perspicacia «José», núm. 1, párr. 2 y 3: Jacob
+  salió de Padán-aram unos seis años después.'
+sources:
+- si-3
+- it-jose
+- genesis-30
+links:
+- title: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  type: bible
+checked_on: '2026-09-29'
+status: verified

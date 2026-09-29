@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-castiga-a-jabes-galaad
+title: Israel castiga a Jabés-Galaad
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 21005
+places:
+- jabes-galaad
+- silo
+people: []
+passages:
+- Jue 21:5-12
+summary: Nadie de Jabés-Galaad acudió a Mizpá. Israel envía 12.000 hombres, que matan a los habitantes salvo a 400 vírgenes,
+  y las llevan al campamento de Siló, en Canaán.
+reason: 'Perspicacia «Jabés-galaad», párr. 2, y «Siló», núm. 2. Fecha: «Jueces, Libro de», «Orden del libro»: poco después
+  de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia «Finehás»).'
+sources:
+- jueces-21
+- it-jabes-galaad
+- it-silo
+- it-jueces
+- si-3
+- it-finehas
+links:
+- title: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ruben-se-acuesta-con-bilha
+title: Rubén se acuesta con Bilhá
+date:
+  from: -1760
+  to: -1749
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1761 y 1750 a.e.c. (tiempo narrativo: tras nacer Benjamín y antes de la venta de José)'
+narrative_order:
+  series: genesis
+  order: 35021
+places:
+- torre-de-eder
+people:
+- ruben-hijo-de-jacob
+- bilha
+- jacob
+present: []
+passages:
+- Gé 35:21, 22
+summary: Jacob acampa más allá de la torre de Éder. Mientras vive allí, Rubén se acuesta con Bilhá, concubina de su padre,
+  y Jacob se entera.
+reason: Pasa después de nacer Benjamín (entre 1761 y 1751, Perspicacia «Benjamín») y antes de que Jacob, ya en Hebrón, enviara
+  a José a sus hermanos (1750, estudio 3). El texto sitúa el campamento más allá de la torre, sin nombre.
+sources:
+- si-3
+- it-benjamin
+- it-eder
+- it-jacob
+- genesis-35
+links:
+- title: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  type: bible
+checked_on: '2026-09-29'
+status: verified

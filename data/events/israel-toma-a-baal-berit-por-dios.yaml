@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-toma-a-baal-berit-por-dios
+title: Israel toma a Baal-Berit por dios
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Josué y antes de que Jefté empezara a juzgar)'
+narrative_order:
+  series: jueces
+  order: 8033
+places:
+- israel
+people: []
+present: []
+passages:
+- Jue 8:33-35
+summary: En cuanto muere Gedeón, los israelitas vuelven a los Baales, eligen por dios a Baal-Berit, olvidan a Jehová y no
+  son leales con la familia de Jerubaal.
+reason: 'Pasa en todo Israel y no sitúa a nadie. Desde Otniel el libro va en orden (Perspicacia «Jueces, Libro de»): tras morir
+  Josué, c. 1450 a.e.c. (estudio 3), y antes de Jefté, hacia 1173 a.e.c. (Perspicacia «Jefté»).'
+sources:
+- jueces-8
+- si-3
+- it-jueces
+- it-jefte
+- it-gedeon
+links:
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

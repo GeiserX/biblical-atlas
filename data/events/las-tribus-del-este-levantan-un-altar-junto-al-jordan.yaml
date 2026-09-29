@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-tribus-del-este-levantan-un-altar-junto-al-jordan
+title: Las tribus del este levantan un altar junto al Jordán
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 22009
+places:
+- rio-jordan
+- silo
+people: []
+passages:
+- Jos 22:9-12
+summary: Camino de Galaad, rubenitas, gaditas y media tribu de Manasés construyen junto al Jordán, del lado de Canaán, un
+  altar enorme. Al enterarse, el resto de Israel se junta en Siló para ir a combatirlos.
+reason: 'Jos 22:9-12; Perspicacia «Siló», párr. 8, y «Altar», apartado «Otros altares»: Israel debía tener un solo altar, donde
+  Jehová escogiera. Fecha: tras la conquista general (1467 a.e.c.) y antes de morir Josué, hacia 1450 (estudio 3).'
+sources:
+- josue-22
+- it-silo
+- it-altar
+- si-3
+links:
+- title: Josué 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimelec-hijo-de-ahitub
+name: Ahimélec
+names:
+- name: Ahimélec
+perspicacia: 1200000158#1
+disambiguation: El sumo sacerdote de Nob, bisnieto de Elí; no su nieto Ahimélec, hijo de Abiatar, ni Ahimélec el hitita que
+  estuvo con David.
+summary: Sumo sacerdote en Nob, donde estaba el tabernáculo. Ayudó a David, que huía de Saúl, sin saberlo. Por eso Saúl lo
+  mandó matar con otros 84 sacerdotes; solo escapó su hijo Abiatar.
+reason: Perspicacia «Ahimélec», núm. 1; 1Sa 21:1-9 y 22:9-20. El encabezamiento de Sal 52 cuenta que David fue a su casa.
+sources:
+- it-ahimelec
+- salmos-52
+links:
+- title: 'Perspicacia: «Ahimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000158
+  type: perspicacia
+- title: Salmo 52 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/52
+  type: bible
+checked_on: '2026-09-29'
+status: verified

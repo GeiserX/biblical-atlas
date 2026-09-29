@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hijo-del-funcionario-y-sinagoga-de-nazaret
+title: Cura desde Caná a un muchacho y lee a Isaías en Nazaret
+date:
+  from: 30
+  to: 30
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 30 e.c.
+narrative_order:
+  series: a7
+  order: 21
+places:
+- cana
+- nazaret
+- capernaum
+- zabulon
+- neftali
+people:
+- jesus
+passages:
+- Jn 4:46-54
+- Lu 4:16-31
+- Mt 4:13-16
+summary: Desde Caná, Jesús cura al hijo de un servidor del rey que yace en Capernaúm, a unos 26 km. En la sinagoga de Nazaret
+  lee Isaías 61; lo intentan despeñar y se va a vivir a Capernaúm.
+reason: 'A7-C, fila 2: Caná, Nazaret y Capernaúm. Perspicacia «Capernaum» (párr. 5) da la distancia y el orden de estos pasos.'
+sources:
+- tnm-a7-c
+- juan-4
+- lucas-4
+- mateo-4
+- it-capernaum
+- jy-cap-20
+- jy-cap-21
+checked_on: '2026-09-29'
+status: verified

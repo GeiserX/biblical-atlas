@@ -1,0 +1,742 @@
+# biblical-earth: mapa de renombres del núcleo al inglés. Lo lee scripts/migration/migrate.py (de español a
+# inglés, una vez por rama) y scripts/build.py (de inglés a español, al compilar lo que el sitio ya lee).
+# La especificación está en docs/investigacion/modelo.md. Aquí solo hay cambios mecánicos: lo que pide leer el
+# texto está en la sección «Decisiones que necesita la migración» de ese documento.
+# Medido sobre el commit de `measured_on`. Una clave o un valor cerrado que no esté aquí para la migración; una
+# palabra de relación que no esté aquí pasa a `caption` tal como está (relation_fallback).
+# Las rutas de `at` y de `id_maps` son rutas del esquema antiguo, que es el que lee la migración: la carpeta o el
+# fichero raíz sin extensión, las claves separadas por puntos, `[]` por cada lista y `<id>` por cada clave de un mapa
+# de ids. `at` es una expresión regular sobre esa ruta.
+format: biblical-earth/migration-map/1
+measured_on: 14b6c01
+checked_on: '2026-09-29'
+
+# ---------------------------------------------------------------- carpetas, ficheros y scripts
+directories:
+  data/lugares: data/places
+  data/personas: data/people
+  data/viajes: data/journeys
+  data/cartas: data/letters
+  data/eventos: data/events
+  data/periodos: data/periods
+  data/hallazgos: data/finds
+  data/recorridos: data/tours
+  data/fuentes: data/sources
+  data/cobertura: data/coverage
+  data/_propuestas: data/_proposals
+  data/videos: data/videos
+  data/videos-personas: data/videos-people
+  data/videos-pasajes: data/videos-passages
+  scripts/videos/nombres: scripts/videos/place_names
+  scripts/videos/personas: scripts/videos/people_names
+
+files:
+  data/libros.yaml: data/books.yaml
+  data/calendario.yaml: data/calendar.yaml
+  data/cobertura/README.md: data/coverage/README.md
+
+# El módulo de la cobertura no se llama coverage.py: taparía el paquete `coverage` de Python al importarlo.
+scripts:
+  scripts/build.py: scripts/build.py
+  scripts/validate.py: scripts/validate.py
+  scripts/aplicar.py: scripts/apply.py
+  scripts/test_aplicar.py: scripts/test_apply.py
+  scripts/cobertura.py: scripts/bible_coverage.py
+  scripts/revisar.py: scripts/review.py
+  scripts/videos/indexar.py: scripts/videos/index.py
+  scripts/videos/pasajes.py: scripts/videos/passages.py
+
+# Opciones de los scripts. El nombre nuevo es el que se documenta; el antiguo se sigue aceptando como alias hasta
+# que las ramas de libro en marcha estén fusionadas, y entonces se quita. revisar.py ya aceptaba --dias y --days.
+flags:
+  --salida: --out
+  --fallar: --fail
+  --seco: --dry-run
+  --sin-red: --offline
+  --paralelo: --parallel
+  --faltan: --missing
+  --fugas: --leaks
+  --hoy: --today
+  --raiz: --root
+  --dias: --days
+  --datos: --data
+  --libros: --books
+  --nombres: --names
+  --personas: --people
+flags_unchanged: [--data, --days, --links]
+
+# Ficheros que nombran una carpeta, un fichero, un script o una opción que cambia de nombre y que no se renombran
+# ellos mismos. La migración los reescribe en el mismo cambio, con `directories`, `files`, `scripts` y `flags`.
+# Las rutas de esta lista son las de después de renombrar.
+references:
+  rewrite:
+    - .github/workflows/validar.yml
+    - CLAUDE.md
+    - CONTRIBUTING.md
+    - README.md
+    - scripts/README.md
+    - scripts/videos/people_names/README.md
+    - site/README.md
+    - data/coverage/README.md
+    - docs/decisiones.md
+    - docs/hoja-de-ruta.md
+    - docs/investigacion/README.md
+    - docs/investigacion/versiculos.md
+    - docs/investigacion/entre-libros.md
+    - docs/investigacion/videos-jw.md
+    - la primera línea de comentario de cada fichero de data/ y de scripts/videos/ que nombra una ruta
+    - el texto de los scripts renombrados (rutas por defecto, mensajes y ayuda)
+  exempt:
+    - path: docs/ideas/
+      why: Son propuestas ancladas en un commit; nombran el código como era ese día.
+    - path: docs/investigacion/registro/
+      why: Lo escribe build.py; se genera de nuevo después de migrar.
+    - path: docs/investigacion/modelo.md, scripts/migration/
+      why: Nombran lo antiguo a propósito, para decir a qué pasa.
+    - path: .beads/
+      why: Es el historial de las tareas.
+
+# Lo que no cambia de nombre en esta ola, y por qué.
+not_renamed:
+  - path: site/data.json, site/data.js, site/videos*.json
+    why: Es lo que lee el sitio; build.py y los scripts de vídeos lo siguen escribiendo con la forma de hoy.
+  - path: dist/data.json, dist/biblical-earth.sqlite
+    why: >-
+      dist/data.json es el mismo fichero que site/data.json. La base SQLite conserva sus tablas y sus columnas
+      de hoy y gana las columnas de `compiled.sqlite`; su esquema pasa al inglés con la tabla de afirmaciones.
+  - path: .github/workflows/validar.yml, .github/workflows/pages.yml
+    why: >-
+      El nombre del flujo puede ser una comprobación obligatoria de la rama; lo decide el dueño. Su contenido sí
+      cambia: está en `references`.
+  - path: docs/
+    why: Es prosa en español.
+  - path: data/fuentes/<carril>.yaml, data/fuentes/cobertura-<slug>.yaml
+    why: Son nombres de carril y de libro, que son contenido; solo cambia la carpeta.
+  - path: las claves y los valores del sobre de una propuesta
+    why: Tres carriles escriben hoy el formato 1; ver `proposal`.
+
+# ---------------------------------------------------------------- claves de los YAML de data/
+# Vale en cualquier nivel de un fichero de data/, y dentro de una propuesta solo en lo que lleva datos de una
+# ficha (ver `proposal`). Las claves de `keys` son una biyección: build.py las lee al revés.
+keys:
+  abarca: covers
+  abr: abbr
+  alternativas: alternatives
+  aprox: approx
+  buscar: search
+  cambio: change
+  campo: harvest
+  candidatos: candidates
+  capitulos: chapters
+  citas: citations
+  clima: weather
+  companeros: companions
+  consta_desde: attested_from
+  consultado: checked_on
+  contexto_destino: context_destination
+  contexto_origen: context_origin
+  coord_fuente: coord_source
+  coord_nota: coord_note
+  coord_url: coord_url
+  cronologia: chronology
+  deducido: inferred
+  desambiguacion: disambiguation
+  desde: from
+  destinatarios: recipients
+  detalle: detail
+  dia: day
+  docid: docid
+  donde_hoy: kept_at
+  enlaces: links
+  entidades: entities
+  equivale: equivalent
+  escrita_en: written_in
+  escritor: writer
+  estacion: season
+  estado: status
+  explicacion: explanation
+  fecha: date
+  fecha_objeto: object_date
+  fiestas: festivals
+  formas: forms
+  fuente: source
+  fuentes: sources
+  generado: generated_on
+  geometria: geometry
+  habladas: spoken
+  hasta: to
+  historial: history
+  id: id
+  identificacion: identification
+  instituida: instituted_in
+  lat: lat
+  libro: book
+  libros: books
+  lon: lon
+  lugar: place
+  lugar_hallazgo: found_at
+  lugares: places
+  menciona: mentions
+  menciones: hits
+  mes: month
+  meses: months
+  nivel: level
+  no_afirmamos: not_claimed
+  no_confundir_con: distinct_from
+  no_sabemos: unknown
+  nombre: name
+  nombres: names
+  nota: note
+  num: num
+  obra: work
+  omitidos: omitted
+  opciones: options
+  orden: order
+  orden_relato: narrative_order
+  otros_nombres: other_names
+  paradas: stops
+  pasajes: passages
+  persona: person
+  personas: people
+  perspicacia: perspicacia
+  por: matched_by
+  portadores: carriers
+  precision: precision
+  pregunta: question
+  presentes: present
+  publicado: published
+  radio_km: radius_km
+  razon: reason
+  referencia: reference
+  relaciona: relates_to
+  relaciones: relations
+  respuesta: answer
+  resumen: summary
+  revisado: reviewed_on
+  sel: sel
+  serie: series
+  slug: slug
+  sucesos: events
+  t: t
+  terminos: terms
+  texto: text
+  tipo: type
+  titulo: title
+  tramos: spans
+  tras: after
+  url: url
+  v: v
+  versiculos: verses
+  videos: videos
+
+# Las dos claves de una relación que dependen de su regla de `relation_rewrites`: la palabra antigua pasa a
+# `word` si está en el vocabulario y a `caption` si se queda fuera.
+relation_keys:
+  relacion: [word, caption]
+  relacion_inversa: [inverse_caption]
+
+# Claves nuevas del modelo: no tienen nombre antiguo. build.py no las traduce, las añade con este mismo nombre.
+new_keys:
+  relations[]: [word, caption, inverse_caption, office, certainty, checked_on]
+  journeys.stops[]: [checked_on]
+  places.candidates[]: [checked_on]
+  calendar.months[].names[]: [checked_on]
+  calendar.months[].festivals[]: [checked_on]
+  events: [type, roles]
+  events.roles.<id>: [role, date, place]
+  periods: [office]
+
+# Mapas cuyas claves son ids o números y no cambian. `events.roles` es nuevo y también lo es.
+id_maps:
+  - fuentes
+  - cobertura.capitulos
+  - libros.libros[].omitidos
+  - videos.videos[].terminos
+  - videos-personas.videos[].terminos
+  - videos-pasajes.capitulos
+
+# Claves que llevan un objeto fecha: dentro de ellas valen los valores cerrados `date.*`.
+date_keys: [fecha, fecha_objeto, abarca]
+
+# Claves de la configuración de los vídeos (scripts/videos/place_names y people_names).
+video_config_keys:
+  nombres: names
+  gentilicios: demonyms
+  excluir: exclude
+  acentos: accents
+  ambiguo: ambiguous
+  contexto: context
+  por_defecto: default
+
+# ---------------------------------------------------------------- valores cerrados
+# `field` es el nombre para quien lee; `at` dice dónde vive hoy, y es lo que usan la migración y su puerta. Cada
+# ruta de data/ que acaba en una clave que lleva un valor cerrado casa con un solo `at`. Lo que no está aquí es
+# contenido y se queda en español: ids, slugs de libro, series de orden_relato, ids de mes, ids de fuente, textos.
+enums:
+  - field: status
+    at: '^(?!cobertura\.)(?!lugares\.candidatos).*\.estado$'
+    values: {verificado: verified, pendiente: pending}
+  - field: coverage.chapters.<n>.status
+    at: '^cobertura\.capitulos\.<id>\.estado$'
+    values: {pendiente: pending, completo: complete}
+  - field: places.candidates[].status
+    at: '^lugares\.candidatos\[\]\.estado$'
+    values:
+      seguro: certain
+      favorecido_nivel_1: favored_level_1
+      tradicion: tradition
+      alternativa: alternative
+      solo_nivel_2: level_2_only
+      descartado_nivel_1: rejected_level_1
+  - field: date.precision
+    at: '\.(fecha|fecha_objeto|abarca)\.precision$'
+    values: {día: day, mes: month, estación: season, año: year, rango: range}
+  - field: date.type
+    at: '\.(fecha|fecha_objeto|abarca)\.tipo$'
+    values: {anclada: anchored, narrativa: narrative, derivada: derived}
+  - field: date.chronology
+    at: '\.cronologia$'
+    values: {tnm: tnm, secular: secular}
+  - field: date.detail.season
+    at: '\.detalle\.estacion$'
+    values: {primavera: spring, verano: summer, otoño: autumn, invierno: winter}
+  - field: places.type
+    at: '^lugares\.tipo$'
+    values:
+      ciudad: city
+      region: region
+      isla: island
+      provincia: province
+      puerto: port
+      cabo: cape
+      monte: mountain
+      rio: river
+      mar: sea
+      lago: lake
+      desierto: desert
+      valle: valley
+      llanura: plain
+      pais: country
+      reino: kingdom
+  - field: places.precision
+    at: '^lugares\.precision$'
+    values: {punto: point, zona: zone, incierto: uncertain}
+  - field: places.candidates[].geometry.type
+    at: '\.geometria\.tipo$'
+    values: {punto: point, zona: zone, franja: strip}
+  - field: coord_source
+    at: '\.coord_fuente$'
+    value_is: lo que va antes de los dos puntos; openbible:<id> conserva su id
+    values: {calculo: calculation, openbible: openbible}
+  - field: links[].type
+    at: '\.enlaces\[\]\.tipo$'
+    values: {perspicacia: perspicacia, biblia: bible, video: video, externo: external}
+  - field: periods.type
+    at: '^periodos\.tipo$'
+    values:
+      emperador: emperor
+      gobernador: governor
+      potencia: power
+      rey: king
+      era: era
+      sumo-sacerdote: high_priest
+  - field: finds.identification
+    at: '^hallazgos\.identificacion$'
+    values: {segura: certain, incierta: uncertain}
+  - field: coverage.chapters.<n>.spans[].type
+    at: '^cobertura\.capitulos\.<id>\.tramos\[\]\.tipo$'
+    values:
+      narracion: narration
+      genealogia: genealogy
+      ley: law
+      poesia: poetry
+      profecia: prophecy
+      discurso: speech
+      carta: letter
+      lista: list
+      vision: vision
+  - field: videos-passages.chapters.<n>[].matched_by
+    at: '^videos-pasajes\.capitulos\.<id>\[\]\.por\[\]$'
+    values: {titulo: title, subtitulos: subtitles}
+  - field: relations[].type
+    at: '^personas\.relaciones\[\]\.tipo$'
+    values_from: relation_types
+  - field: video_config.accents
+    at: null
+    outside_data: scripts/videos/nombres y scripts/videos/personas, clave `acentos`
+    values: {estricto: strict}
+
+# ---------------------------------------------------------------- selecciones y referencias de la cobertura
+# En los YAML (coverage entities y mentions, finds.relates_to, tours.stops[].sel) van en inglés. En data.json y en
+# la dirección del sitio siguen en español: build.py las devuelve con el nombre antiguo.
+selection_types:
+  persona: person
+  lugar: place
+  evento: event
+  periodo: period
+  viaje: journey
+  carta: letter
+  hallazgo: find
+  recorrido: tour
+  libro: book
+  parada: stop
+  pasaje: passage
+coverage_prefixes:
+  persona: person
+  lugar: place
+  evento: event
+  periodo: period
+  viaje: journey
+  carta: letter
+  hallazgo: find
+  relacion: relation
+# Dónde hay selecciones y referencias en los YAML de hoy.
+selection_at:
+  - '^recorridos\.paradas\[\]\.sel$'
+  - '^hallazgos\.relaciona\[\]$'
+  - '^cobertura\.capitulos\.<id>\.tramos\[\]\.(entidades|menciona)\[\]$'
+relation_reference:
+  old: 'relacion:<persona>/<tipo>/<otro>'
+  new: 'relation:<person>/<type>/<target>[/<word u office>][@<date.from>]'
+  no_target: '-'
+  canonical: >-
+    Una referencia se escribe de una sola manera, la más corta que casa con una sola relación, probando en este
+    orden: sin nada más; con @<date.from>; con /<word u office>; con los dos. El `caption` nunca entra.
+    validate rechaza cualquier otra forma y dice la que toca.
+  rule: >-
+    Cada cita sigue a su relación: cambia el prefijo y el tipo como la relación. Si casa con una sola relación,
+    se escribe en su forma canónica.
+  several_spans: >-
+    Una cita del capítulo C que casa con varias relaciones se queda con las relaciones cuya razón o cuyas
+    fuentes citan el capítulo C, leídas con la función de citas de la cobertura. Una: se escribe con su
+    @<date.from>. Varias: una cita por cada una, en el mismo tramo. Ninguna: la migración se para y nombra la
+    cita, para que alguien lea el tramo.
+  redirects: scripts/migration/redirects.yaml
+
+# ---------------------------------------------------------------- relaciones
+relation_types:
+  pariente: kin
+  acompana: accompanies
+  vivio_en: lived_in
+  nacio_en: born_in
+  murio_en: died_in
+  sucede_a: succeeds
+  mismo_que: same_as
+  se_aparece_a: appears_to
+
+# Reescrituras por (tipo antiguo, relacion antigua). Se aplica la primera regla que casa. `inverse_was` lista los
+# valores de relacion_inversa con los que la regla vale (null: sin ella); con otro valor no casa.
+# `word: null` deja la relación sin palabra. `reversed: true` dice que el texto antiguo decía lo que es la ficha
+# y la palabra nueva dice lo mismo desde el destino («huésped de» y `host`), sin cambiar de ficha.
+# Ninguna regla cambia una relación de ficha ni la quita: su razón está escrita desde la ficha en la que está, y
+# moverla pide volver a escribirla (decisiones K2, K3, T1, T2 y O3).
+relation_rewrites:
+  # kin: la palabra pasa a su id del vocabulario
+  - {from: {tipo: pariente, relacion: padre}, to: {type: kin, word: father}}
+  - {from: {tipo: pariente, relacion: madre}, to: {type: kin, word: mother}}
+  - {from: {tipo: pariente, relacion: padre adoptivo}, to: {type: kin, word: adoptive_father}}
+  - {from: {tipo: pariente, relacion: padrastro}, to: {type: kin, word: stepfather}}
+  - {from: {tipo: pariente, relacion: abuelo}, to: {type: kin, word: grandfather}}
+  - {from: {tipo: pariente, relacion: abuela}, to: {type: kin, word: grandmother}}
+  - {from: {tipo: pariente, relacion: bisabuelo}, to: {type: kin, word: great_grandfather}}
+  - {from: {tipo: pariente, relacion: antepasado}, to: {type: kin, word: ancestor}}
+  - {from: {tipo: pariente, relacion: tío}, to: {type: kin, word: uncle}}
+  - {from: {tipo: pariente, relacion: tío abuelo}, to: {type: kin, word: great_uncle}}
+  - {from: {tipo: pariente, relacion: suegro}, to: {type: kin, word: father_in_law}}
+  - {from: {tipo: pariente, relacion: suegra}, to: {type: kin, word: mother_in_law}}
+  - {from: {tipo: pariente, relacion: hijo}, to: {type: kin, word: son}}
+  - {from: {tipo: pariente, relacion: hija}, to: {type: kin, word: daughter}}
+  - {from: {tipo: pariente, relacion: hijo adoptivo}, to: {type: kin, word: adopted_son}}
+  - {from: {tipo: pariente, relacion: nieto}, to: {type: kin, word: grandson}}
+  - {from: {tipo: pariente, relacion: sobrino}, to: {type: kin, word: nephew}}
+  - {from: {tipo: pariente, relacion: yerno}, to: {type: kin, word: son_in_law}}
+  - {from: {tipo: pariente, relacion: esposa}, to: {type: kin, word: wife}}
+  - {from: {tipo: pariente, relacion: esposa secundaria}, to: {type: kin, word: secondary_wife}}
+  - {from: {tipo: pariente, relacion: concubina}, to: {type: kin, word: concubine}}
+  - {from: {tipo: pariente, relacion: esposo}, to: {type: kin, word: husband}}
+  - {from: {tipo: pariente, relacion: hermano}, to: {type: kin, word: brother}}
+  - {from: {tipo: pariente, relacion: hermana}, to: {type: kin, word: sister}}
+  - {from: {tipo: pariente, relacion: medio hermano}, to: {type: kin, word: half_brother}}
+  - {from: {tipo: pariente, relacion: hermano gemelo}, to: {type: kin, word: twin_brother}}
+  - {from: {tipo: pariente, relacion: primo}, to: {type: kin, word: cousin}}
+  - {from: {tipo: pariente, relacion: pariente}, to: {type: kin, word: relative}}
+  - {from: {tipo: pariente, relacion: cuñado}, to: {type: kin, word: brother_in_law}}
+  # sin palabra se quedan sin palabra: darles una es la decisión K5
+  - {from: {tipo: pariente, relacion: null}, to: {type: kin, word: null}}
+  # kin fuera del vocabulario: el texto se queda en caption hasta su decisión (K1, K2)
+  - {from: {tipo: pariente, relacion: hijo de Jerjes I}, to: {type: kin, caption: hijo de Jerjes I}}
+  - {from: {tipo: pariente, relacion: hijo de Darío I}, to: {type: kin, caption: hijo de Darío I}}
+  - {from: {tipo: pariente, relacion: hijo de Nabonido}, to: {type: kin, caption: hijo de Nabonido}}
+  - {from: {tipo: pariente, relacion: padre de Cambises II}, to: {type: kin, caption: padre de Cambises II}}
+  - {from: {tipo: pariente, relacion: prima de Mardoqueo}, to: {type: kin, caption: prima de Mardoqueo}}
+  - {from: {tipo: pariente, relacion: esposa de Asuero}, to: {type: kin, caption: esposa de Asuero}}
+  - {from: {tipo: pariente, relacion: hijastro e hijo adoptivo}, to: {type: kin, caption: hijastro e hijo adoptivo}}
+  - {from: {tipo: pariente, relacion: quizás hijo}, to: {type: kin, caption: quizás hijo}}
+  # discípulos: el tipo lo dice todo y la relación ya está en la ficha del discípulo
+  - {from: {tipo: acompana, relacion: maestro}, inverse_was: [null], to: {type: disciple_of, word: null}}
+  - from: {tipo: acompana, relacion: discípulo de}
+    inverse_was: [null]
+    reversed: true
+    to: {type: disciple_of, word: null}
+  # tratos
+  - {from: {tipo: acompana, relacion: amigo}, inverse_was: [null, amigo], to: {type: tie, word: friend}}
+  - {from: {tipo: acompana, relacion: señor}, inverse_was: [null], to: {type: tie, word: master}}
+  - {from: {tipo: acompana, relacion: señora}, inverse_was: [null], to: {type: tie, word: mistress}}
+  - {from: {tipo: acompana, relacion: huésped de}, inverse_was: [null], reversed: true, to: {type: tie, word: host}}
+  # tratos escritos desde el otro lado: se quedan en su ficha con sus dos textos hasta la decisión T1
+  - from: {tipo: acompana, relacion: custodio}
+    inverse_was: [custodiado por]
+    to: {type: tie, caption: custodio, inverse_caption: custodiado por}
+  - from: {tipo: acompana, relacion: consejero}
+    inverse_was: [lo tenía de consejero]
+    to: {type: tie, caption: consejero, inverse_caption: lo tenía de consejero}
+  # compañeros
+  - {from: {tipo: acompana, relacion: compañero}, inverse_was: [null, compañero], to: {type: accompanies, word: companion}}
+  - {from: {tipo: acompana, relacion: compañera}, inverse_was: [null], to: {type: accompanies, word: female_companion}}
+  - from: {tipo: acompana, relacion: colaborador}
+    inverse_was: [null, colaborador]
+    to: {type: accompanies, word: fellow_worker}
+  - {from: {tipo: acompana, relacion: null}, inverse_was: [null], to: {type: accompanies, word: null}}
+  # fuera del vocabulario: los dos textos se quedan como están
+  - from: {tipo: acompana, relacion: compañero entre los siete}
+    inverse_was: [compañero entre los siete]
+    to: {type: accompanies, caption: compañero entre los siete, inverse_caption: compañero entre los siete}
+  - from: {tipo: acompana, relacion: socio en la pesca}
+    inverse_was: [socio en la pesca]
+    to: {type: accompanies, caption: socio en la pesca, inverse_caption: socio en la pesca}
+  - from: {tipo: acompana, relacion: instruido por él en Éfeso}
+    inverse_was: [lo instruye en Éfeso]
+    to: {type: accompanies, caption: instruido por él en Éfeso, inverse_caption: lo instruye en Éfeso}
+  - from: {tipo: acompana, relacion: instruido por ella en Éfeso}
+    inverse_was: [lo instruye en Éfeso]
+    to: {type: accompanies, caption: instruido por ella en Éfeso, inverse_caption: lo instruye en Éfeso}
+  - from: {tipo: acompana, relacion: '«Marcos mi hijo»'}
+    inverse_was: ['Pedro lo llama «Marcos mi hijo»']
+    to: {type: accompanies, caption: '«Marcos mi hijo»', inverse_caption: 'Pedro lo llama «Marcos mi hijo»'}
+  - from: {tipo: acompana, relacion: escribió 1 Pedro por medio de él}
+    inverse_was: [amanuense de 1 Pedro]
+    to: {type: accompanies, caption: escribió 1 Pedro por medio de él, inverse_caption: amanuense de 1 Pedro}
+  # apariciones: los dos textos se quedan como están
+  - from: {tipo: se_aparece_a, relacion: se le aparece camino de Damasco}
+    inverse_was: [lo ve resucitado camino de Damasco]
+    to: {type: appears_to, caption: se le aparece camino de Damasco, inverse_caption: lo ve resucitado camino de Damasco}
+  - from: {tipo: se_aparece_a, relacion: le habla en una visión}
+    inverse_was: [Jesús le habla en una visión]
+    to: {type: appears_to, caption: le habla en una visión, inverse_caption: Jesús le habla en una visión}
+  - from: {tipo: se_aparece_a, relacion: se le aparece resucitado}
+    inverse_was: [lo ve resucitado]
+    to: {type: appears_to, caption: se le aparece resucitado, inverse_caption: lo ve resucitado}
+  - from: {tipo: se_aparece_a, relacion: 'se le muestra en una visión, de pie a la derecha de Dios'}
+    inverse_was: ['lo ve en el cielo, en una visión']
+    to:
+      type: appears_to
+      caption: 'se le muestra en una visión, de pie a la derecha de Dios'
+      inverse_caption: 'lo ve en el cielo, en una visión'
+  - {from: {tipo: se_aparece_a, relacion: null}, inverse_was: [null], to: {type: appears_to, word: null}}
+  # identidades: la palabra que decía la certeza pasa al campo certainty; las demás certezas son la decisión O2
+  - from: {tipo: mismo_que, relacion: probablemente la misma persona}
+    inverse_was: [null]
+    to: {type: same_as, word: null, certainty: probable}
+  - {from: {tipo: mismo_que, relacion: null}, inverse_was: [null], to: {type: same_as, word: null}}
+  # sucesiones y lugares: solo cambia el tipo; el cargo de cada sucesión es la decisión O1
+  - {from: {tipo: sucede_a, relacion: null}, inverse_was: [null], to: {type: succeeds, word: null}}
+  - {from: {tipo: vivio_en, relacion: null}, inverse_was: [null], to: {type: lived_in, word: null}}
+  - {from: {tipo: nacio_en, relacion: null}, inverse_was: [null], to: {type: born_in, word: null}}
+  - {from: {tipo: murio_en, relacion: null}, inverse_was: [null], to: {type: died_in, word: null}}
+
+# Una relación cuya `relacion` no casa con ninguna regla no para la migración ni pierde su texto.
+relation_fallback:
+  type: el de `relation_types` para su tipo antiguo
+  caption: el texto de `relacion`, tal como está
+  inverse_caption: el texto de `relacion_inversa`, si lo lleva
+  warns: unlisted_caption
+  report: true
+  gate: En main tiene que dar 0 antes de migrar. En una rama de libro se cuenta y se decide al leerla (decisión T3).
+
+# Reglas que tocan más de un hecho. Se aplican después de las reescrituras, en este orden.
+relation_rules:
+  - id: checked_on
+    baseline: el commit de main anterior a su migración (P); en main, el propio commit que se migra
+    does: >-
+      Pone checked_on en cada hecho anidado que no lo tenga: relations[], stops[], candidates[], y names[] y
+      festivals[] de cada mes. El valor es el checked_on del hecho que lo contiene, el más cercano: el mes para
+      un nombre o una fiesta, el fichero para los demás. Un hecho anidado que está igual en `baseline` toma el
+      valor que ese hecho tenía allí; uno que la rama añadió o cambió toma el de la rama. Si el hecho que lo
+      contiene no lleva checked_on, la migración se para.
+  - id: status
+    does: >-
+      No copia `status`. Es obligatorio en relations[], stops[] y candidates[], que ya lo llevan todos. Un nombre
+      o una fiesta de un mes que no lo lleva vale con el del mes.
+  - id: pairs
+    does: >-
+      No quita ninguna copia de un par escrito en las dos fichas. Las dos se quedan con `pair_twice` hasta que
+      alguien las lee (decisiones K3 y K4); build.py marca la copia que no manda y el sitio dibuja una sola.
+  - id: report
+    path: scripts/migration/reports/<commit>.yaml
+    does: >-
+      La migración escribe un informe con cada relación cuya palabra cambió o se quitó, cada texto que pasó por
+      `relation_fallback`, cada cita de la cobertura que cambió y cada línea añadida. <commit> es el commit del
+      que partió. Si el fichero ya existe, no lo pisa: una segunda ejecución no tiene nada que escribir.
+  - id: redirects
+    path: scripts/migration/redirects.yaml
+    does: >-
+      La migración lo crea vacío. Quien quita o mueve una relación a mano añade una fila {from, to, removed_on,
+      reason} con la clave que desaparece y la que queda. apply.py y bible_coverage.py lo leen: una cita o un
+      `anadir` de una propuesta que nombra la clave antigua pasa a la nueva.
+
+# ---------------------------------------------------------------- sucesos
+# Tipo y papel de los sucesos en los que el sitio ya leía del título quién nace, muere o habla, y acertaba.
+# Se nombran uno a uno: una regla por título tiparía sin leer los sucesos nuevos de las ramas de libro.
+events:
+  birth:
+    role: born
+    who: first_of_people
+    ids:
+      - nacimiento-de-abrahan
+      - nacimiento-de-cain
+      - nacimiento-de-david
+      - nacimiento-de-efrain
+      - nacimiento-de-guersom
+      - nacimiento-de-isaac
+      - nacimiento-de-ismael
+      - nacimiento-de-jesus
+      - nacimiento-de-jose
+      - nacimiento-de-juan-el-bautista
+      - nacimiento-de-manases
+      - nacimiento-de-moises
+      - nacimiento-de-noe
+      - nacimiento-de-obed
+      - nacimiento-de-set
+  death:
+    role: died
+    who: first_of_people
+    also:
+      muere-raquel-al-dar-a-luz-a-benjamin: {benjamin-hijo-de-jacob: born}
+    ids:
+      - muere-isaac
+      - muere-raquel-al-dar-a-luz-a-benjamin
+      - muerte-de-abrahan
+      - muerte-de-adan
+      - muerte-de-herodes-agripa-i
+      - muerte-de-jacob
+      - muerte-de-jesus
+      - muerte-de-jose
+      - muerte-de-josue
+      - muerte-de-moises
+      - muerte-del-apostol-juan
+  speech:
+    role: spoke
+    who: first_of_people
+    ids:
+      - job-responde-al-primer-discurso-de-bildad
+      - job-responde-al-primer-discurso-de-elifaz
+      - job-responde-al-primer-discurso-de-zofar
+      - job-responde-al-segundo-discurso-de-elifaz
+      - job-responde-al-tercer-discurso-de-bildad
+      - primer-discurso-de-bildad
+      - primer-discurso-de-elifaz
+      - primer-discurso-de-zofar
+      - segundo-discurso-de-bildad
+      - segundo-discurso-de-elifaz
+      - segundo-discurso-de-zofar
+      - tercer-discurso-de-bildad
+      - tercer-discurso-de-elifaz
+
+# ---------------------------------------------------------------- la propuesta de un lector
+# En esta ola solo se escribe el formato 1, que es el que escriben los carriles en marcha. Su sobre no cambia.
+# apply.py traduce lo que la propuesta lleva de una ficha antes de aplicarla.
+proposal:
+  format: biblical-earth/propuesta-cobertura/1
+  envelope_unchanged:
+    [formato, libro, capitulos, agente, leido, cobertura, fuentes, cambios, op, tipo, id, datos, campo, valores,
+     antes, despues, historial, preguntas]
+  ops_unchanged: [crear, anadir, cambiar]
+  translate:
+    tipo: el valor, con `proposal_types`
+    campo: el valor, con `keys`
+    datos: claves con `keys`; valores con `enums` por su ruta, `relation_rewrites`, `relation_fallback` y `selection_types`
+    valores: como `datos`, en la ruta <tipo>.<campo>[]
+    antes: como `datos`, en la ruta <tipo>.<campo>
+    despues: como `datos`, en la ruta <tipo>.<campo>
+    historial: claves con `keys` (fecha, cambio, fuente)
+    cobertura: claves con `keys`, valores con `enums`, referencias con `coverage_prefixes` y `relation_reference`
+    fuentes: no se traduce; sus claves son ids de fuente
+  proposal_types:
+    lugares: places
+    personas: people
+    viajes: journeys
+    cartas: letters
+    eventos: events
+    periodos: periods
+    hallazgos: finds
+    recorridos: tours
+  owner_rule: >-
+    Un `anadir` de una relación cuya palabra lleva owns: target no se aplica: apply.py se para y dice en qué
+    ficha va y con qué palabras inversas. No la escribe él en la otra ficha, porque la razón habría que
+    escribirla desde allí.
+  deferred: >-
+    El formato 2, con el sobre en inglés, se diseña cuando los tres carriles hayan terminado. Dos trampas para
+    quien lo diseñe: «campo» es aquí el nombre de un campo y en el calendario las cosechas del mes (harvest), y
+    «despues» no puede llamarse after, que ya es el nombre de «tras».
+
+# ---------------------------------------------------------------- lo que compila build.py
+# Todo lo que el sitio lee hoy conserva nombre y valor: build.py aplica `keys`, `enums`, `selection_types` y
+# `relation_types` al revés. Las claves de `new_keys` no se traducen en su ruta: `type` de un suceso y `checked_on`
+# de una parada salen con ese nombre, aunque `tipo` y `consultado` de un fichero salgan con el suyo de siempre.
+# Un objeto fecha dentro de un campo nuevo sale con la forma que el sitio ya lee (desde, hasta, precision...),
+# para que sirvan sus funciones de fecha.
+# `differences` es la lista entera de lo que puede cambiar en data.json respecto al de antes de migrar.
+compiled:
+  top_level_unchanged:
+    [formato, generado, fuentes, libros, calendario, lugares, personas, viajes, cartas, eventos, periodos,
+     hallazgos, recorridos, cobertura]
+  relation:
+    legacy:
+      tipo: el tipo antiguo de `types.<type>.legacy` del vocabulario
+      persona: person
+      lugar: place
+      relacion: la palabra en español (`es`) o el caption; falta si la relación no lleva ninguno de los dos
+      relacion_inversa: inverse_caption
+      fecha: date
+      deducido: inferred
+      estado: status
+      fuentes: sources
+      razon: reason
+    added:
+      [type, word, office, certainty, checked_on, verb, inverse_verb, key, reference, family, inverse_family,
+       inverse_label, duplicate_of]
+  differences:
+    - path: personas[].relaciones[]
+      what: los campos de `relation.added`
+    - path: personas[].relaciones[].relacion
+      what: >-
+        Cambia en las relaciones que una regla reescribe con otro texto: falta en las 21 de disciple_of y en la
+        same_as que lo llevaba, y es el `es` de la palabra en las de `reversed: true`.
+    - path: personas[].relaciones[]
+      what: no salen las de tipo holds_office, que hoy no existen
+    - path: personas[].offices[]
+      what: >-
+        Nuevo. Cada cargo con office, es, place, date, inferred, sources, reason, status, checked_on y origin
+        (relation o period:<id>).
+    - path: viajes[].paradas[].checked_on
+      what: nuevo
+    - path: lugares[].candidatos[].checked_on
+      what: nuevo
+    - path: calendario.meses[].nombres[].checked_on, calendario.meses[].fiestas[].checked_on
+      what: nuevo
+    - path: eventos[].type, eventos[].roles
+      what: nuevo; cada papel sale como {role, date, place}, con la fecha y el lugar ya resueltos
+    - path: periodos[].office
+      what: nuevo
+  sqlite:
+    unchanged: las tablas y las columnas de hoy, con los valores del lado `legacy`
+    added_columns:
+      relaciones: [type, word, office, certainty, checked_on, key]
+      paradas: [checked_on]
+      candidatos: [checked_on]
+      eventos: [type, roles]
+      periodos: [office]
+    note: >-
+      Las relaciones holds_office no entran en la tabla relaciones. Si el esquema pasa al inglés, from, to y
+      order son palabras reservadas de SQL y allí necesitan otro nombre.
+  registry: docs/investigacion/registro/ escribe cada relación con su verbo y con su propio checked_on

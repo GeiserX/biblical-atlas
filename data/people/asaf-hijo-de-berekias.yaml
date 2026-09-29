@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaf-hijo-de-berekias
+name: Asaf
+names:
+- name: Asaf
+perspicacia: 1200000400#1
+disambiguation: El músico levita de David, hijo de Berekías; no el padre de Joah en tiempos de Ezequías ni el guarda del parque
+  del rey Artajerjes.
+date:
+  from: -1076
+  to: -1037
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1077-1038 a.e.c. (en el reinado de David)
+summary: Levita descendiente de Guersom al que David puso al frente de los cantores, con címbalos; acompañó el traslado del
+  Arca. Doce salmos llevan su nombre, quizá por la casa de cantores que salió de él.
+reason: Perspicacia «Asaf», núm. 1, y «Berekías», núm. 1; 1Cr 6:39 lo da como hijo de Berekías. El encabezamiento de Sal 50
+  le atribuye el salmo.
+not_claimed:
+- 'Que Asaf escribiera en persona todos los salmos con su nombre: el 74 llora la destrucción de Jerusalén, muy posterior a
+  él.'
+sources:
+- it-asaf
+- it-berekias
+- salmos-50
+- it-salmos-libro
+- w06-salmos-libros-3-4
+- salmos-73
+- salmos-74
+- salmos-75
+- w08-salmo-83
+- salmos-76
+- salmos-77
+- salmos-78
+- salmos-79
+- salmos-80
+- salmos-81
+- salmos-82
+- salmos-83
+links:
+- title: 'Perspicacia: «Asaf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000400
+  type: perspicacia
+- title: 'Perspicacia: «Berekías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000650
+  type: perspicacia
+- title: Salmo 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/50
+  type: bible
+- title: Salmo 73 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/73
+  type: bible
+- title: Salmo 74 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/74
+  type: bible
+- title: Salmo 75 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/75
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezequias
+name: Ezequías
+names:
+- name: Ezequías
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 746-716 a.e.c.
+summary: Hijo de Acaz. Reabrió el templo, celebró una gran Pascua y se rebeló contra Asiria. Hizo el túnel de Guihón a Siloam;
+  Jehová libró Jerusalén de Senaquerib.
+reason: Perspicacia «Ezequías», núm. 1, párr. 1, 5, 6, 11, 13 y 16; 2Re 18-20.
+sources:
+- it-ezequias
+- 2-reyes-18
+- 2-cronicas-29
+- tnm-a6-b
+- mateo-1
+- proverbios-25
+links:
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+relations:
+- type: kin
+  person: acaz
+  word: father
+  inferred: false
+  sources:
+  - it-ezequias
+  - 2-reyes-16
+  - mateo-1
+  reason: Hijo y sucesor de Acaz (2Re 16:20).
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: acaz
+  inferred: false
+  sources:
+  - it-ezequias
+  - 2-reyes-16
+  reason: Reinó al morir su padre (2Re 16:20).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Ezequías» y el estudio 3 daban 745-717 a.e.c.; A6-B, más reciente, da 746 para su comienzo y 716 para
+    Manasés.
+  source: tnm-a6-b
+perspicacia: 1200002011#1
+disambiguation: El rey de Judá, hijo de Acaz. Perspicacia registra aparte al antepasado de Sofonías (ezequias-antepasado-de-sofonias),
+  que quizá sea él, y a otro cuyos descendientes volvieron del destierro.
+checked_on: '2026-09-29'
+status: verified

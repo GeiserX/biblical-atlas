@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amihud-hijo-de-ladan
+name: Amihud
+names:
+- name: Amihud
+perspicacia: 1200000234#1
+disambiguation: Amihud el efraimita, padre de Elisamá y antepasado de Josué; no el simeonita, el neftalita, el padre de Talmai
+  ni el de Judá.
+summary: Efraimita, hijo de Ladán y padre de Elisamá, jefe de Efraín en 1512 a.e.c. Fue antepasado de Josué.
+reason: Perspicacia «Amihud», núm. 1; Nú 1:10 y 2:18. Según 1Cr 7:26, su padre fue Ladán.
+sources:
+- it-amihud
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+links:
+- title: 'Perspicacia: «Amihud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000234
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- amihud-padre-de-semuel
+- amihud-padre-de-pedahel

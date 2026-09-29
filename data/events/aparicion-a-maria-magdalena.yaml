@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-maria-magdalena
+title: Se aparece a María Magdalena
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 16
+places:
+- golgota
+- jerusalen
+people:
+- jesus
+- maria-magdalena
+passages:
+- Jn 20:11-18
+summary: Junto a la tumba, María Magdalena confunde a Jesús con el jardinero hasta que él la llama por su nombre.
+  Jesús la manda a avisar a sus hermanos.
+reason: A7-H cuenta cinco apariciones el 16 de nisán y A7-G da el año 33. Pasa junto a la tumba (Jn 20:11), en el jardín donde
+  lo enterraron; Perspicacia «María», apartado 3, párr. 27.
+sources:
+- tnm-a7-h
+- juan-20
+- it-maria
+- jy-cap-134
+- tnm-a7-g
+search: Se aparece a María Magdalena
+narrative_order:
+  series: a7
+  order: 126
+history:
+- date: '2026-09-29'
+  change: 'Pasa junto a la tumba (Jn 20:11), la del jardín del lugar de la ejecución: Gólgota va primero, como en entierro-de-jesus.
+    Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  source: juan-20
+- date: '2026-09-29'
+  change: La razón explica ahora por qué el primer lugar es el Gólgota.
+  source: juan-20
+checked_on: '2026-09-29'
+status: verified

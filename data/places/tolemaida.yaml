@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tolemaida
+name: Tolemaida
+names:
+- name: Tolemaida
+- name: Akkó
+  note: Nombre anterior de la ciudad; Tolemaida es el que recibió después.
+type: port
+lat: 32.9214
+lon: 35.0692
+precision: point
+coord_source: openbible:abc2af0
+coord_url: https://www.openbible.info/geo/ancient/abc2af0/ptolemais
+summary: Puerto en el extremo norte de la bahía que cierra el monte Carmelo, llamado Akkó antes de Tolemaida. Aser no expulsó
+  a sus cananeos. Pablo se detuvo allí camino de Jerusalén c. 56.
+reason: 'Perspicacia «Tolemaida» y «Akkó» describen el lugar; Jue 1:31 y Hch 21:7. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-tolemaida
+- hch-21
+- openbible-geo
+- jueces-1
+- it-akko
+links:
+- title: 'Perspicacia: «Tolemaida»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003573
+  type: perspicacia
+- title: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  type: bible
+- title: 'Perspicacia: «Akkó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000070
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: El resumen recoge su nombre antiguo, Akkó, y que Aser no echó a sus cananeos (Jue 1:31; Perspicacia «Akkó»).
+  source: jueces-1
+- date: '2026-09-29'
+  change: La razón cita Perspicacia «Akkó» y Jue 1:31.
+  source: jueces-1
+checked_on: '2026-09-29'
+status: verified

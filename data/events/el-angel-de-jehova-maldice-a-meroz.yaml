@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-angel-de-jehova-maldice-a-meroz
+title: El ángel de Jehová maldice a Meroz
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: después de Ehúd y antes de Jefté)'
+narrative_order:
+  series: jueces
+  order: 5023
+places:
+- meroz
+people: []
+present: []
+passages:
+- Jue 5:23
+summary: El ángel de Jehová manda maldecir a Meroz y a su gente porque no acudieron a ayudar a Jehová contra los poderosos.
+  Quizá no apoyaron a Barac, o dejaron pasar a Sísara cuando huía.
+reason: 'Perspicacia «Meroz» da dos lecturas y prefiere la de Sísara en fuga, porque el canto sigue con Jael. Fecha: la de
+  la victoria de Barac, entre Ehúd y Jefté («Jueces, Libro de»; «Jefté»; estudio 3).'
+sources:
+- jueces-5
+- it-meroz
+- it-jueces
+- it-jefte
+- si-3
+links:
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+- title: 'Perspicacia: «Meroz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003005
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

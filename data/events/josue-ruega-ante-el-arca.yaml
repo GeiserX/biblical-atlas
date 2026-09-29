@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-ruega-ante-el-arca
+title: Josué ruega a Jehová ante el Arca
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 207006
+places: []
+people:
+- josue-hijo-de-nun
+present: []
+passages:
+- Jos 7:6-15
+summary: Josué y los ancianos, con la ropa rasgada y polvo en la cabeza, pasan el día postrados ante el Arca. Jehová le dice
+  que alguien se quedó con lo reservado y manda buscarlo por suertes.
+reason: Mismo año que la derrota (Perspicacia «Hai», párr. 3). Pasa en el campamento, que el capítulo no nombra; Jericó ya
+  estaba quemada, así que el suceso queda sin lugar y no sitúa a nadie.
+sources:
+- josue-7
+- it-hai
+links:
+- title: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

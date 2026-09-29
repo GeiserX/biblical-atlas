@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adoni-bezec
+name: Adoni-Bézec
+names:
+- name: Adoni-Bézec
+- name: Adoni-bézeq
+  note: Grafía de Perspicacia, que da al nombre el sentido de «señor de Bézeq».
+perspicacia: '1200000109'
+summary: Gobernante cananeo de Bézec que había mutilado a 70 reyes. Vencido por Judá y Simeón, sufrió el mismo castigo, reconoció
+  que Dios le pagaba lo que hizo y murió en Jerusalén.
+reason: Perspicacia «Adoni-bézeq» y «Bézeq», núm. 1; Jue 1:4-7.
+sources:
+- it-adoni-bezeq
+- it-bezeq
+- jueces-1
+links:
+- title: 'Perspicacia: «Adoni-bézeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000109
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+relations:
+- type: lived_in
+  place: bezec
+  inferred: true
+  sources:
+  - it-adoni-bezeq
+  - it-bezeq
+  - jueces-1
+  reason: Su nombre significa «señor de Bézeq», y Perspicacia «Bézeq», núm. 1, la llama su ciudad (Jue 1:5).
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - jueces-1
+  reason: 'Jue 1:7: lo llevaron a Jerusalén y allí murió.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

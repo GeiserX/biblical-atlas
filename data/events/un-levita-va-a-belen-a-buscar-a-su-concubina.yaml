@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-levita-va-a-belen-a-buscar-a-su-concubina
+title: Un levita va a Belén a buscar a su concubina
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 19001
+  after: muerte-de-josue
+places:
+- belen
+- region-montanosa-de-efrain
+people: []
+passages:
+- Jue 19:1-9
+summary: La concubina de un levita de Efraín le es infiel y se vuelve con su padre a Belén de Judá. Cuatro meses después él
+  va a buscarla, y el suegro lo retiene varios días con comida y bebida.
+reason: 'Perspicacia «Jueces, Libro de», «Orden del libro»: los capítulos 19 a 21 pasaron probablemente pocos años después
+  de morir Josué, hacia 1450 a.e.c. (estudio 3). Límite final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+sources:
+- jueces-19
+- it-jueces
+- si-3
+- it-finehas
+links:
+- title: Jueces 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

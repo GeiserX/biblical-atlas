@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lot-huye-a-zoar
+title: Lot sale de Sodoma y huye a Zóar
+date:
+  from: -1918
+  to: -1918
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1919 a.e.c.
+narrative_order:
+  series: genesis
+  order: 19012
+places:
+- zoar
+- sodoma
+- distrito-del-jordan
+people:
+- lot
+passages:
+- Gé 19:12-23
+summary: Los ángeles avisan a Lot de que van a destruir la ciudad. Sus futuros yernos creen que bromea. Al amanecer sacan
+  de la mano a Lot, a su esposa y a sus hijas, y Lot pide huir a Zóar.
+reason: Perspicacia «Lot», párr. 7, y «Zóar», párr. 1; Gé 19:12-23. El estudio 3 pone el juicio de Sodoma en 1919 a.e.c.
+sources:
+- genesis-19
+- si-3
+- it-lot
+- it-zoar
+links:
+- title: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

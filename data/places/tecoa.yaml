@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tecoa
+name: Tecoa
+names:
+- name: Tecoa
+- name: Teqoa
+  note: Grafía que usa Perspicacia.
+type: city
+lat: 31.63247
+lon: 35.21048
+precision: point
+coord_source: openbible:a2e3aa0
+coord_url: https://www.openbible.info/geo/ancient/a2e3aa0/tekoa
+summary: Ciudad de Judá unos 16 km al sur de Jerusalén, al borde del desierto. Allí vivía Amós, que cuidaba ganado antes de
+  ser profeta.
+reason: 'Perspicacia «Teqoa» (grafía antigua), párr. 1: se identifica con Khirbet et-Tuquʽ; «Amós», núm. 1, párr. 2; Am 1:1.
+  OpenBible: solo el punto.'
+sources:
+- it-teqoa
+- it-amos
+- openbible-geo
+- amos-1
+links:
+- title: 'Perspicacia: «Teqoa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004344
+  type: perspicacia
+- title: 'Perspicacia: «Amós»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000246
+  type: perspicacia
+- title: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

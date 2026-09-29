@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: nadab-de-israel
+name: Reinado de Nadab en Israel
+type: king
+person: nadab-de-israel
+date:
+  from: -975
+  to: -974
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 976-975 a.e.c.
+places:
+- tirza
+summary: Menos de dos años.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 15.
+sources:
+- tnm-a6-a
+- 1-reyes-15
+- it-nadab
+search: Nadab rey
+checked_on: '2026-09-28'
+status: verified

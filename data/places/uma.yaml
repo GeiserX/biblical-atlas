@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: uma
+name: Umá
+names:
+- name: Umá
+type: city
+lat: 32.921111
+lon: 35.088333
+precision: uncertain
+coord_source: openbible:afa792e
+coord_url: https://www.openbible.info/geo/ancient/afa792e/ummah
+coord_note: OpenBible la toma por Akkó; el punto es Tel Akko. Perspicacia dice que no se puede asegurar.
+summary: Ciudad del límite de Aser de lugar desconocido. Algunos eruditos creen que el nombre es una alteración de Akkó, que
+  la Septuaginta pone aquí, pero no es seguro.
+reason: 'Perspicacia «Umá»; Jos 19:30. OpenBible: solo el punto.'
+sources:
+- it-uma
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Umá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004506
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

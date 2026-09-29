@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: paso-de-heres
+name: Paso de Heres
+names:
+- name: Paso de Heres
+- name: Heres
+  note: Jue 8:13 habla del paso que sube a Heres. No es el monte Heres de la tribu de Dan (Perspicacia «Heres», núm. 1).
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este del Jordán, entre Jogbehá y Sucot
+  geometry:
+    type: zone
+    lat: 32.105
+    lon: 35.7385
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-heres
+  - jueces-8
+  reason: 'Jue 8:13, 14: Gedeón volvía por ese paso desde la batalla hacia Sucot cuando atrapó a un joven de la ciudad. Nada
+    más lo sitúa.'
+  coord_source: calculation
+  note: 'Centro nuestro: punto medio entre Jogbehá (32,0135 N; 35,8558 E) y Sucot (32,1966 N; 35,6212 E) de OpenBible. Radio
+    nuestro.'
+summary: Paso que sube a Heres, por donde volvió Gedeón tras vencer a los reyes de Madián, poco antes de atrapar a un joven
+  de Sucot. No sale en ningún otro pasaje.
+reason: 'Perspicacia «Heres», núm. 2: única mención, y hay eruditos que leen ahí otra frase y no un lugar. Es un paso: «monte»
+  es el tipo más cercano.'
+sources:
+- it-heres
+- jueces-8
+links:
+- title: 'Perspicacia: «Heres»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001993
+  type: perspicacia
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

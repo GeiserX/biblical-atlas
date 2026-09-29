@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zaqueo
+name: Zaqueo
+names:
+- name: Zaqueo
+relations:
+- type: lived_in
+  place: jerico
+  inferred: true
+  sources:
+  - lucas-19
+  - it-zaqueo
+  reason: Lu 19:1-5 lo sitúa en Jericó y Jesús se aloja en su casa; que viviera allí se deduce del relato.
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: true
+  sources:
+  - it-zaqueo
+  - lucas-19
+  reason: Perspicacia «Zaqueo» (párr. 1) dice que llegó a ser discípulo de Cristo; en Lu 19:6-10 lo recibe en casa y cambia
+    de conducta.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abrahan
+  word: ancestor
+  inferred: false
+  sources:
+  - lucas-19
+  - jy-cap-99
+  reason: 'Lu 19:9: Jesús dice que también él es hijo de Abrahán; el capítulo 99 de jy lo cuenta entre los descendientes perdidos
+    que Jesús buscaba.'
+  checked_on: '2026-09-29'
+  status: verified
+summary: Rico jefe de cobradores de impuestos en Jericó, de baja estatura. Se subió a un árbol para ver a Jesús,
+  lo hospedó en su casa y prometió devolver cuatro veces lo que había sacado con engaño.
+reason: Perspicacia «Zaqueo» (párr. 2-3), que sitúa la visita en la primavera de 33; Lu 19:1-10.
+sources:
+- it-zaqueo
+- lucas-19
+links:
+- title: 'Perspicacia: «Zaqueo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004650
+  type: perspicacia
+- title: Lucas 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/19
+  type: bible
+search: Zaqueo
+perspicacia: '1200004650'
+checked_on: '2026-09-29'
+status: verified

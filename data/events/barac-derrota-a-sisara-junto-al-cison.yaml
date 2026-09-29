@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: barac-derrota-a-sisara-junto-al-cison
+title: Barac derrota al ejército de Sísara junto al Cisón
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+narrative_order:
+  series: jueces
+  order: 4012
+places:
+- cison
+- monte-tabor
+- haroset
+- en-dor
+people:
+- barac
+- sisara-de-haroset
+- debora-profetisa
+present:
+- barac
+- sisara-de-haroset
+passages:
+- Jue 4:12-16
+- Jue 5:19-22
+- Sl 83:9, 10
+summary: Sísara lleva sus 900 carros al Cisón. Animado por Débora, Barac baja del Tabor con 10.000 hombres; Jehová siembra
+  el caos entre los cananeos, Sísara huye a pie y Barac persigue al ejército hasta Haróset. No queda ninguno.
+reason: 'Perspicacia «Barac», «Sísara», núm. 1, y «En-dor»: el Cisón crecido frenó los carros, cayeron fugitivos hasta En-Dor
+  (Sl 83:9, 10) y acabó la opresión de Jue 4:3. Límites: c. 1450 (estudio 3) y c. 1173 («Jefté»).'
+sources:
+- jueces-4
+- it-barac
+- it-sisara
+- it-cison
+- it-tabor
+- it-haroset
+- si-3
+- it-jefte
+- jueces-5
+- it-en-dor
+- salmos-83
+links:
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

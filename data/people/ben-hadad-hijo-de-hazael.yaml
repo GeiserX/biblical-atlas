@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-hadad-hijo-de-hazael
+name: Ben-Hadad
+names:
+- name: Ben-Hadad
+- name: Ben-Hadad III
+  note: Número que le da Perspicacia para distinguirlo de otros dos reyes sirios así llamados.
+perspicacia: 1200000636#3
+disambiguation: Tercer rey sirio de ese nombre, hijo de Hazael; no es el Ben-Hadad de los días de Asá ni el de los de Acab,
+  al que mató Hazael.
+date:
+  from: -875
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 876 y 844 a.e.c. (tiempo narrativo: hostigó a Israel reinando Jehoacaz y Jehoás lo venció tres veces)'
+summary: Rey de Siria, hijo y sucesor de Hazael. Junto con su padre hostigó a Israel en días de Jehoacaz, pero Jehoás lo derrotó
+  tres veces y recobró las ciudades perdidas.
+reason: Perspicacia «Ben-hadad», núm. 3; 2Re 13:3, 24, 25. Actuó entre el comienzo de Jehoacaz (876) y el final de Jehoás
+  (c. 844), según A6-A. Amós llama torres de Ben-Hadad a los palacios de Damasco (Am 1:4).
+sources:
+- it-ben-hadad
+- amos-1
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+- title: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  type: bible
+relations:
+- type: kin
+  person: hazael
+  word: father
+  inferred: false
+  sources:
+  - it-ben-hadad
+  - 2-reyes-13
+  reason: 2Re 13:3, 24 lo llama hijo de Hazael.
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: hazael
+  inferred: false
+  sources:
+  - it-ben-hadad
+  - 2-reyes-13
+  reason: Reinó en Siria al morir su padre (2Re 13:24).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: damasco
+  inferred: true
+  sources:
+  - it-ben-hadad
+  - amos-1
+  reason: Perspicacia «Ben-hadad», núm. 3, lee sus torres de Am 1:4 como los palacios reales de Damasco.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

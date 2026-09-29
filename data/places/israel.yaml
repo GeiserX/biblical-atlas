@@ -1,0 +1,81 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: israel
+name: Israel
+names:
+- name: Israel
+- name: Tierra de Israel
+  note: Así la llama Mateo al contar el regreso desde Egipto.
+- name: Efraín
+  from: -996
+  note: Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8).
+    Lo usan también Isaías y Jeremías.
+- name: José
+  note: Amós llama así al reino del norte, por José, padre de Efraín y Manasés (Am 5:6, 15; 6:6). Perspicacia «José» dice
+    que el nombre designa a veces a todas las tribus.
+- name: Samaria
+  note: Nombre de la capital aplicado a todo el reino del norte (Perspicacia «Samaria», núm. 2). Así se lee «el campo de Samaria»
+    de Abd 19, cuyas referencias remiten a 2Re 17:24 y Jer 31:5.
+type: country
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: La tierra de Israel, de Dan a Beer-seba
+  geometry:
+    type: zone
+    lat: 32.246861
+    lon: 35.246417
+    radius_km: 120
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-israel
+  - it-beer-seba
+  - openbible-geo
+  reason: Perspicacia «Beer-seba» (párr. 2 y 3) toma Dan y Beer-seba como las fronteras naturales del país, al norte y al sur.
+  note: 'Centro: punto medio de los de OpenBible para Dan (33,249 N; 35,652 E) y Beer-seba (31,2447 N; 34,8408 E), a unos
+    236 km uno de otro. El radio de 120 km es nuestro.'
+  coord_source: calculation
+summary: La Tierra Prometida, repartida entre las doce tribus y gobernada por sus reyes. Tras la división del reino el nombre
+  designó a veces solo al reino del norte; luego, a la tierra de los judíos.
+reason: Perspicacia «Israel», núm. 3 y 4; Mt 2:20, 21. La zona del mapa es un cálculo nuestro.
+not_claimed:
+- No trazamos sus fronteras; el punto del mapa es solo una referencia dentro del territorio.
+sources:
+- it-israel
+- it-beer-seba
+- openbible-geo
+- mateo-2
+- oseas-1
+- it-efrain
+- si-oseas
+- oseas-4
+- oseas-5
+- oseas-6
+- oseas-7
+- it-oseas-libro
+- oseas-8
+- oseas-9
+- oseas-13
+- oseas-14
+- amos-1
+- amos-2
+- amos-3
+- amos-4
+- amos-5
+- it-jose
+- amos-6
+- amos-7
+- amos-9
+- abdias-1
+- it-samaria
+- jueces-6
+- jueces-19
+links:
+- title: 'Perspicacia: «Israel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

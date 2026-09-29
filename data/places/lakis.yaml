@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lakis
+name: Lakís
+names:
+- name: Lakís
+type: city
+lat: 31.565278
+lon: 34.849167
+precision: point
+coord_source: openbible:a3cc590
+coord_url: https://www.openbible.info/geo/ancient/a3cc590/lachish
+summary: Ciudad fortificada de la Sefelá, en el camino de Jerusalén a Egipto. Josué la tomó al segundo día de asedio; Senaquerib
+  la sitió en 732 y fue de las últimas en caer ante Babilonia.
+reason: 'Perspicacia «Lakís», párr. 1, 2, 5 y 7: Tell ed-Duweir, unos 24 km al O de Hebrón; Jos 10:31, 32; 2Re 18:14 y Jer
+  34:7. OpenBible: solo el punto.'
+sources:
+- it-lakis
+- openbible-geo
+- 2-reyes-18
+- miqueas-1
+- josue-10
+- josue-12
+- josue-15
+links:
+- title: 'Perspicacia: «Lakís»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002659
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+history:
+- date: '2026-09-29'
+  change: El resumen no decía que Josué conquistó la ciudad (Jos 10:31, 32; Perspicacia «Lakís», párr. 2).
+  source: josue-10
+- date: '2026-09-29'
+  change: La razón cita ahora la conquista de Josué y el párrafo de Perspicacia que la cuenta.
+  source: josue-10
+checked_on: '2026-09-29'
+status: verified

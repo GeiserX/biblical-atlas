@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ilirico
+name: Ilírico
+names:
+- name: Ilírico
+- name: Dalmacia
+  note: La parte sur de Ilírico; después del año 9 los dos nombres se usaban casi por igual (Perspicacia «Dalmacia»).
+type: province
+lat: 43.539444
+lon: 16.483056
+precision: zone
+coord_source: openbible:ac405c0
+coord_url: https://www.openbible.info/geo/ancient/ac405c0/illyricum
+coord_note: Punto representativo de la provincia (Salona, su capital, según OpenBible).
+summary: Provincia romana de la costa del Adriático. Pablo dice que predicó «hasta Ilírico»; no se sabe si entró
+  en ella. Su parte sur, Dalmacia, fue adonde fue Tito.
+reason: 'Perspicacia «Ilírico» y «Dalmacia»; Ro 15:19; 2Ti 4:10. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-ilirico
+- it-dalmacia
+- romanos-15
+- openbible-geo
+links:
+- title: 'Perspicacia: «Ilírico»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002148
+  type: perspicacia
+- title: Romanos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15
+  type: bible
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jocdeam
+name: Jocdeam
+names:
+- name: Jocdeam
+- name: Joqdeam
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.461967
+lon: 35.118489
+precision: uncertain
+coord_source: openbible:a56cad5
+coord_url: https://www.openbible.info/geo/ancient/a56cad5/jokdeam
+coord_note: 'Khirbet er-Raqqa, única identificación de OpenBible: el Khirbet Raqʽa que Perspicacia ve posible.'
+summary: Ciudad de la montaña de Judá. Quizá estaba en Khirbet Raqʽa, unos 7 km al sur de Hebrón.
+reason: 'Perspicacia «Joqdeam»; Jos 15:56. OpenBible: solo el punto.'
+sources:
+- it-joqdeam
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Joqdeam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002495
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

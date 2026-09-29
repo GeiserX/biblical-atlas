@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guedera
+name: Guederá
+names:
+- name: Guederá
+type: city
+lat: 31.822936
+lon: 34.777744
+precision: uncertain
+coord_source: openbible:a12012d
+coord_url: https://www.openbible.info/geo/ancient/a12012d/gederah-1
+coord_note: 'Qatra, tercera identificación de OpenBible, en la actual Gedera: encaja con Jedire (Gedera), unos 22 km al oestenoroeste
+  de Estaol, que da Perspicacia. La primera es Khirbet Judraya.'
+summary: Ciudad de la Sefelá dada a Judá, que suele identificarse con Jedire (Gedera). Algunos de sus vecinos eran alfareros.
+reason: 'Perspicacia «Guederá», núm. 1; Jos 15:36; 1Cr 4:23. No es la Guederá de Benjamín. OpenBible: solo el punto.'
+sources:
+- it-guedera
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Guederá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001634
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

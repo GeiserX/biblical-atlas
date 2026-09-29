@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: parabolas-del-reino
+title: Parábolas del Reino desde una barca
+date:
+  from: 31
+  to: 32
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 o 32 e.c.
+narrative_order:
+  series: a7
+  order: 42
+places:
+- capernaum
+- mar-de-galilea
+people:
+- jesus
+type: speech
+roles:
+  jesus: spoke
+passages:
+- Mt 13:1-53
+- Mr 4:1-34
+- Lu 8:4-18
+summary: 'Cerca de Capernaúm, Jesús enseña a la multitud desde una barca con comparaciones del Reino: sembrador, semilla que
+  crece sola, mostaza, mala hierba y levadura. A solas, y luego en casa, las explica y añade tesoro, perla y red.'
+reason: 'A7-D, fila 1: año 31 o 32, por Capernaúm. El libro jy (cap. 43) dice que salió de una casa de Capernaúm hacia el lago.'
+sources:
+- tnm-a7-d
+- mateo-13
+- marcos-4
+- lucas-8
+- jy-cap-43
+history:
+- date: '2026-09-29'
+  change: El resumen ponía todas las comparaciones en la barca; Mt 13:36-52 cuenta que la explicación y las tres últimas fueron
+    ya en la casa.
+  source: mateo-13
+- date: '2026-09-29'
+  change: El resumen no nombraba la comparación de la semilla que crece sola, que solo cuenta Marcos (nota de Mr 4:26), ni
+    la explicación a solas de Mr 4:10.
+  source: marcos-4
+checked_on: '2026-09-29'
+status: verified

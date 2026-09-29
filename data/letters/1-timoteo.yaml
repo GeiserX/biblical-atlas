@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 1-timoteo
+book: 1 Timoteo
+writer: pablo
+reference: 1Ti 1:3
+written_in:
+- macedonia
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-64 e.c.
+recipients:
+  text: Timoteo, a quien Pablo dejó en Éfeso
+  places:
+  - efeso
+  people:
+  - timoteo
+people:
+- timoteo
+context_origin:
+  summary: Entre el primer y el segundo encarcelamiento en Roma; Hechos no narra este periodo.
+  sources:
+  - it-timoteo-cartas
+  - it-pablo
+context_destination:
+  summary: En Éfeso la enseñanza falsa ya era un problema serio, como Pablo había advertido a los ancianos en Mileto
+    c. 56.
+  sources:
+  - it-timoteo-cartas
+reason: La Tabla y el estudio 3 dan Macedonia y c. 61-64; Perspicacia dice que «al parecer» se escribió desde allí.
+  1Ti 1:3 sitúa a Timoteo en Éfeso.
+sources:
+- tnm-tabla
+- si-3
+- it-timoteo-cartas
+- 1-timoteo-1
+- it-timoteo
+links:
+- title: 'Perspicacia: «Timoteo, Cartas a»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004417
+  type: perspicacia
+- title: 1 Timoteo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/54/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

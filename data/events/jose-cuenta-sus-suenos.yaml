@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-cuenta-sus-suenos
+title: José cuenta sus sueños y sus hermanos lo odian
+date:
+  from: -1749
+  to: -1749
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1750 a.e.c.
+narrative_order:
+  series: genesis
+  order: 37002
+places:
+- hebron
+people:
+- jose-hijo-de-jacob
+- jacob
+passages:
+- Gé 37:2-11
+summary: Con 17 años, José es el preferido de Jacob, que le hace una túnica especial. Sueña que las gavillas y luego el sol,
+  la luna y once estrellas se inclinan ante él; sus hermanos lo odian más.
+reason: El estudio 3 fecha en 1750 a.e.c. la venta de José y cita Gé 37:2, donde tiene 17 años; los sueños son de esa misma
+  edad. Jacob vivía en Hebrón (Gé 37:14).
+sources:
+- genesis-37
+- si-3
+- it-jose
+- it-jacob
+links:
+- title: Génesis 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/37
+  type: bible
+checked_on: '2026-09-29'
+status: verified

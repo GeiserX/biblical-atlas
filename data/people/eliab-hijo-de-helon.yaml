@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliab-hijo-de-helon
+name: Eliab
+names:
+- name: Eliab
+perspicacia: 1200001292#1
+disambiguation: Eliab hijo de Helón, jefe de Zabulón; no el rubenita padre de Datán y Abiram ni el hermano mayor de David.
+summary: Zabulonita, hijo de Helón. Uno de los doce jefes que Jehová nombró para ayudar en el censo del Sinaí; mandaba el
+  ejército de Zabulón, en la división de Judá.
+reason: Perspicacia «Eliab», núm. 1; Nú 1:9, 16; 2:7.
+sources:
+- it-eliab
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+links:
+- title: 'Perspicacia: «Eliab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001292
+  type: perspicacia
+relations:
+- type: kin
+  person: helon
+  word: father
+  inferred: false
+  sources:
+  - it-eliab
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  reason: Nú 1:9 y 2:7 lo llaman hijo de Helón.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: moises
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 9, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: aaron
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 9, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- eliab-hijo-de-palu

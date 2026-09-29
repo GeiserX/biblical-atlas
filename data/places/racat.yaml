@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: racat
+name: Racat
+names:
+- name: Racat
+- name: Raqat
+  note: Grafía de Perspicacia.
+type: city
+lat: 32.806389
+lon: 35.525833
+precision: point
+coord_source: openbible:a204528
+coord_url: https://www.openbible.info/geo/ancient/a204528/rakkath
+coord_note: Punto de OpenBible en Khirbet el-Quneitireh (Tel Raqqat).
+summary: Ciudad fortificada de Neftalí a orillas del mar de Galilea, un poco al norte de Tiberíades.
+reason: 'Perspicacia «Raqat»; Jos 19:35. OpenBible: solo el punto.'
+sources:
+- it-raqat
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Raqat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003627
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

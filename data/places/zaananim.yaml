@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zaananim
+name: Zaananim
+names:
+- name: Zaananim
+- name: Árbol grande de Zaananim
+  note: Así lo nombran Jos 19:33 y Jue 4:11.
+type: region
+lat: 32.72113
+lon: 35.41064
+precision: uncertain
+coord_source: openbible:a0c4f5e
+coord_url: https://www.openbible.info/geo/ancient/a0c4f5e/zaanannim
+coord_note: 'Punto de OpenBible en Hanot Taggarim. Perspicacia dice que no se ha identificado. Es un árbol: «region» es el
+  tipo más cercano de la lista.'
+summary: Lugar señalado por un árbol grande, al parecer en el límite sur de Neftalí. Allí cerca estaba la tienda de Héber
+  el quenita, donde Jael mató a Sísara.
+reason: 'Perspicacia «Zaananim»; Jos 19:33; Jue 4:11, 17-21. OpenBible: solo el punto.'
+sources:
+- it-zaananim
+- openbible-geo
+- josue-19
+- jueces-4
+links:
+- title: 'Perspicacia: «Zaananim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004641
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

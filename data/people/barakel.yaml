@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barakel
+name: Barakel
+names:
+- name: Barakel
+perspicacia: '1200000557'
+summary: Buzita, padre de Elihú, el joven que corrigió a Job y a sus tres compañeros. Probablemente descendía de Buz, sobrino
+  de Abrahán.
+reason: Perspicacia «Barakel»; Job 32:2, 6.
+sources:
+- it-barakel
+- job-32
+links:
+- title: 'Perspicacia: «Barakel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000557
+  type: perspicacia
+relations:
+- type: kin
+  person: buz-hijo-de-nacor
+  word: ancestor
+  inferred: true
+  sources:
+  - it-barakel
+  - it-buz
+  - job-32
+  reason: Job 32:2, 6 lo llama buzita; Perspicacia «Barakel» y «Buz», núm. 1, lo hacen probablemente descendiente de Buz, sin
+    darlo por seguro. Su hijo Elihú lleva el mismo estado.
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

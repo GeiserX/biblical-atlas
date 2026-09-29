@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: musi
+name: Musí
+names:
+- name: Musí
+perspicacia: '1200003135'
+summary: Levita de la rama de Merarí, su padre, y hermano de Mahlí. Tuvo tres hijos, y de él toma el nombre la familia
+  de los musitas.
+reason: Perspicacia «Musí»; Éx 6:19.
+sources:
+- it-musi
+- exodo-6
+- numeros-3
+links:
+- title: 'Perspicacia: «Musí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003135
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: merari
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-musi
+  - numeros-3
+  reason: 'Éx 6:19: hijo de Merarí.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

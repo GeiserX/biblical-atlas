@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lo-ruhama
+name: Lo-Ruhamá
+names:
+- name: Lo-Ruhamá
+perspicacia: '1200002774'
+summary: Hija de Gómer, nacida después de Jezreel. Su nombre, «no se le mostró misericordia», anunciaba que Jehová dejaría
+  de compadecerse de la casa de Israel.
+reason: Perspicacia «Lo-ruhamá»; Os 1:6-8.
+not_claimed:
+- 'No la damos por hija de Oseas: el texto no lo dice y Perspicacia cree que nació del adulterio de Gómer.'
+sources:
+- it-lo-ruhama
+- oseas-1
+links:
+- title: 'Perspicacia: «Lo-ruhamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002774
+  type: perspicacia
+- title: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  type: bible
+relations:
+- type: kin
+  person: gomer-hija-de-diblaim
+  word: mother
+  inferred: false
+  sources:
+  - oseas-1
+  - it-lo-ruhama
+  reason: 'Os 1:6: la niña es el segundo parto de Gómer.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: lo-ammi
+  word: brother
+  inferred: false
+  sources:
+  - oseas-1
+  - it-lo-ammi
+  reason: 'Os 1:8: Gómer lo dio a luz después de destetarla a ella.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

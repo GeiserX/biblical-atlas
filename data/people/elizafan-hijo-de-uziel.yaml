@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elizafan-hijo-de-uziel
+name: Elizafán
+names:
+- name: Elizafán
+- name: Elzafán
+  note: Forma que usan Éx 6:22 y Le 10:4; Perspicacia da las dos.
+perspicacia: 1200001324#1
+disambiguation: Elizafán hijo de Uziel; no Elizafán hijo de Parnac, el principal de Zabulón.
+summary: Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú. En el desierto encabezó
+  la casa paterna de los cohatitas, y de él viene una familia de levitas.
+reason: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5; Nú 3:30.
+sources:
+- it-elizafan
+- exodo-6
+- levitico-10
+- numeros-3
+links:
+- title: 'Perspicacia: «Elizafán, Elzafán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001324
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-elizafan
+  - levitico-10
+  - numeros-3
+  reason: 'Éx 6:22: hijo de Uziel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: desierto-de-sinai
+  inferred: false
+  sources:
+  - numeros-3
+  - it-levitas
+  reason: 'Nú 3:14, 29, 30: las familias cohatitas que encabezaba acampaban al sur del tabernáculo cuando se registró a los
+    levitas en el desierto de Sinaí.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: El resumen cuenta que retiró los cuerpos de Nadab y Abihú y lo llama primo de Aarón, pero la ficha no citaba Le
+    10, de donde sale.
+  source: levitico-10
+- date: '2026-09-29'
+  change: El resumen añade que estuvo al frente de la casa paterna de los cohatitas (Nú 3:30).
+  source: numeros-3
+- date: '2026-09-29'
+  change: La razón cita Nú 3:30, de donde sale su cargo.
+  source: numeros-3
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elizafan-hijo-de-parnac

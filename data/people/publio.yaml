@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: publio
+name: Publio
+names:
+- name: Publio
+date:
+  from: 58
+  to: 59
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: invierno de 58-59 e.c.
+summary: Hombre principal de Malta, quizás el oficial romano de la isla. Hospedó tres días a los náufragos y Pablo
+  sanó a su padre.
+reason: Perspicacia «Publio»; Hch 28:7, 8. El invierno en Malta, tras el naufragio, es el de 58-59 (estudio 3, párr. 27).
+sources:
+- it-publio
+- hch-28
+- si-3
+links:
+- title: 'Perspicacia: «Publio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003577
+  type: perspicacia
+- title: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  type: bible
+perspicacia: '1200003577'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: malta
+  inferred: false
+  sources:
+  - it-publio
+  - hch-28
+  reason: Tenía tierras en Malta (Hch 28:7).
+  checked_on: '2026-09-29'
+  status: verified

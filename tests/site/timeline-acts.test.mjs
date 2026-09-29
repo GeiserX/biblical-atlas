@@ -69,7 +69,7 @@ async function open(hash = '', opts = DESKTOP) {
 }
 before(async () => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'be-timeline-hechos-'));
-  execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--salida', tmp], { cwd: ROOT, stdio: 'pipe' });
+  execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   server = await serve(path.join(ROOT, 'site'), tmp);
   base = `http://127.0.0.1:${server.address().port}/index.html`;
   const chromium = await loadChromium();

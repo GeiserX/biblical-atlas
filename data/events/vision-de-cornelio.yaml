@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-cornelio
+title: Un ángel se aparece a Cornelio
+date:
+  from: 36
+  to: 36
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 36 e.c.
+  detail:
+    season: autumn
+narrative_order:
+  series: hechos
+  order: 1001
+places:
+- cesarea
+people:
+- cornelio
+passages:
+- Hch 10:1-8
+- Hch 11:13, 14
+summary: Hacia las tres de la tarde, un ángel dice a Cornelio, centurión de Cesarea, que Dios ha tenido en cuenta
+  sus oraciones y sus donativos, y que mande llamar a Pedro, que está en Jope.
+reason: Perspicacia «Cornelio» (párr. 2) fecha la visión en el otoño de 36; la nota de estudio de Hch 10:3 explica
+  la hora.
+sources:
+- it-cornelio
+- hechos-10
+- bt-9
+search: Cornelio visión
+checked_on: '2026-09-29'
+status: verified

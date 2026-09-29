@@ -1,0 +1,72 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: colecta-de-macedonia-y-acaya
+title: Macedonia y Acaya reúnen una colecta para Jerusalén
+date:
+  from: 54
+  to: 56
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 'c. 54-56 e.c. (cálculo nuestro: empieza un año antes de 2 Corintios)'
+  note: '2Co 8:10 y 9:2: Acaya empezó un año antes de la carta, que Perspicacia fecha a finales del verano u otoño de 55;
+    eso da 54. Ro 15:26, de c. 56, la da por reunida.'
+places:
+- macedonia
+- acaya
+- jerusalen
+- galacia
+people:
+- pablo
+- tito
+present: []
+passages:
+- Ro 15:25-28
+- Ro 15:31
+- 1Co 16:1-4
+- 2Co 1:16
+- 2Co 8:1-15
+- 2Co 9:1-15
+summary: Las congregaciones de Macedonia y de Acaya, y también las de Galacia, dan de buena gana dinero para los cristianos
+  pobres de Jerusalén. Pablo, que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.
+reason: 'Pablo la dirige (Perspicacia «Colecta»). 2Co 8:10 y 9:2: empezó un año antes de esa carta, del otoño de 55 («Corintios,
+  Cartas a los»). Ro 15:26 la da por reunida hacia 56; 1Co 16:1 suma Galacia. No sitúa a nadie.'
+sources:
+- romanos-15
+- it-colecta
+- it-contribucion
+- tnm-tabla
+- 1-corintios-16
+- 2-corintios-1
+- 2-corintios-8
+- it-macedonia
+- it-tito-persona
+- 2-corintios-9
+- it-corintios
+links:
+- title: Romanos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15
+  type: bible
+- title: 'Perspicacia: «Colecta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001007
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: '1Co 16:1 dice que Pablo dio las mismas instrucciones a las congregaciones de Galacia, y Perspicacia «Colecta» lo
+    recoge: Galacia entra en el resumen y en lugares.'
+  source: 1-corintios-16
+- date: '2026-09-29'
+  change: 1Co 16:1 añade Galacia a sus lugares; la razón pasa de dos regiones a tres.
+  source: 1-corintios-16
+- date: '2026-09-29'
+  change: 'La fecha empezaba en 55, pero 2Co 8:10 y 9:2 dicen que los corintios llevaban un año con la colecta al escribirse
+    la carta, en 55: pasa a 54-56, derivada.'
+  source: 2-corintios-8
+- date: '2026-09-29'
+  change: Con una fecha derivada, cálculo nuestro, el suceso queda pendiente de revisión.
+  source: 2-corintios-8
+- date: '2026-09-29'
+  change: La razón cita 2Co 8:10 y 9:2, que adelantan el comienzo de la colecta a 54.
+  source: 2-corintios-9
+checked_on: '2026-09-29'
+status: pending

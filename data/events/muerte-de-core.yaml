@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-core
+title: Muerte de Coré y de los 250 que ofrecían incienso
+date:
+  from: -1511
+  to: -1473
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: tras la sentencia de Cadés y en vida de Aarón)'
+narrative_order:
+  series: numeros
+  order: 16035
+places: []
+people:
+- core-hijo-de-izhar
+present: []
+passages:
+- Nú 16:35
+- Nú 26:10
+- Jud 11
+- Sl 106:18
+summary: Un fuego que sale de Jehová consume a los 250 hombres que ofrecían incienso ante la tienda de reunión. Coré, que
+  estaba entre ellos, muere en ese mismo fuego.
+reason: 'Nú 16:35. Perspicacia «Coré», núm. 3: murió en el fuego, no tragado por la tierra. Fecha: tras la sentencia de Cadés
+  (1512 a.e.c., Perspicacia «Qadés») y antes de morir Aarón en 1474 (Perspicacia «Aarón»).'
+sources:
+- numeros-16
+- it-core
+- it-braserillo
+- it-qades
+- it-aaron
+- si-3
+- tnm-tabla
+- salmos-106
+links:
+- title: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  type: bible
+- title: 'Perspicacia: «Coré»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002648
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

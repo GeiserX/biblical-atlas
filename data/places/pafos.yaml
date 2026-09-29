@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pafos
+name: Pafos
+names:
+- name: Pafos
+- name: Nueva Pafos
+  note: La Pafos de Hechos es la nueva, capital de la provincia de Chipre, distinta de la Antigua Pafos.
+type: city
+lat: 34.75567
+lon: 32.40417
+precision: point
+coord_source: openbible:a314765
+coord_url: https://www.openbible.info/geo/ancient/a314765/paphos
+summary: Capital de Chipre en la costa oeste; allí Pablo se enfrentó al hechicero Elimas y creyó el procónsul Sergio
+  Paulo.
+reason: 'Perspicacia («Pafos») describe el lugar; aparece en Hch 13:6-12. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-pafos
+- hch-13
+- openbible-geo
+links:
+- title: 'Perspicacia: «Pafos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003375
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-27'
+status: verified

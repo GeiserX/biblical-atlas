@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pecadora-unge-los-pies
+title: Una pecadora unge los pies de Jesús
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 37
+places:
+- galilea
+- nain
+people:
+- jesus
+- simon-el-fariseo
+passages:
+- Lu 7:36-50
+summary: En casa de Simón el fariseo, una mujer conocida como pecadora moja con lágrimas los pies de Jesús y los unge con
+  aceite. Él enseña con dos deudores que ama más quien más perdón recibe.
+reason: 'A7-C, fila 18: Galilea, en Naín o cerca. Perspicacia «Simón» (núm. 5) identifica al anfitrión fariseo.'
+sources:
+- tnm-a7-c
+- lucas-7
+- it-simon
+- jy-cap-40
+checked_on: '2026-09-29'
+status: verified

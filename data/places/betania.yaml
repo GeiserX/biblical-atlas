@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betania
+name: Betania
+names:
+- name: Betania
+- name: el-ʽAzariyeh (El ʽEizariya)
+  note: Pueblo actual en el lugar; su nombre árabe recuerda a Lázaro.
+- name: Ananíah
+  note: Se suele pensar que era la ciudad benjamita de Ne 11:32.
+type: city
+lat: 31.771661
+lon: 35.255903
+precision: point
+coord_source: openbible:a4f35bc
+coord_url: https://www.openbible.info/geo/ancient/a4f35bc/bethany-1
+summary: Pueblo situado a unos 3 km de Jerusalén, en la cara este del monte de los Olivos. Allí vivían Lázaro, Marta
+  y María; Jesús resucitó a Lázaro y durmió allí en su última semana.
+reason: 'Perspicacia «Betania», apartado 1 (párr. 2-7), y la nota de Mt 21:17; Jn 11:18 da la distancia. La coordenada
+  es de OpenBible: solo tomamos el punto.'
+sources:
+- it-betania
+- juan-11
+- mateo-21
+- openbible-geo
+- mateo-26
+- marcos-11
+- marcos-14
+- lucas-10
+- lucas-19
+- lucas-24
+- juan-12
+links:
+- title: 'Perspicacia: «Betania»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000670
+  type: perspicacia
+- title: Juan 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11
+  type: bible
+search: Betania
+checked_on: '2026-09-29'
+status: verified

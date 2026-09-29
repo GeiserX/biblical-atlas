@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 3-juan
+book: 3 Juan
+writer: juan-apostol
+reference: 3Jn 1, 9, 12
+written_in:
+- efeso
+date:
+  from: 98
+  to: 98
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 98 e.c.
+recipients:
+  text: Gayo, un cristiano hospitalario.
+  people:
+  - gayo-de-3-juan
+context_origin:
+  summary: Juan escribe hacia 98; recomienda a Demetrio, que quizá llevó la carta, y espera ir en persona.
+  sources:
+  - it-juan-cartas
+  - it-demetrio
+context_destination:
+  summary: Diótrefes quería el primer lugar, no respetaba a Juan y echaba a quienes hospedaban a los hermanos que
+    viajaban.
+  sources:
+  - it-juan-cartas
+  - it-diotrefes
+reason: La Tabla da «Éfeso o cerca» y c. 98; Perspicacia «Juan, Cartas de» (párr. 16 y 17), «Gayo» (párr. 5) y «Demetrio»
+  (párr. 4).
+note: '«Éfeso o cerca»: la ubicamos en Éfeso. No damos a Demetrio como portador porque la fuente solo dice «puede
+  ser».'
+sources:
+- tnm-tabla
+- si-3
+- it-juan-cartas
+- it-gayo
+- it-demetrio
+- 3-juan-1
+links:
+- title: 'Perspicacia: «Juan, Cartas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002491
+  type: perspicacia
+- title: 3 Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/64/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

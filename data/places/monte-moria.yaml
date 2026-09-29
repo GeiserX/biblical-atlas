@@ -1,0 +1,75 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-moria
+name: Monte Moria
+names:
+- name: Monte Moria
+- name: Monte del templo
+  note: Nombre de la lámina B11 para el recinto del templo en el siglo I.
+- name: Tierra de Moria
+  note: Región de montañas que, según Perspicacia, rodeaba el sitio de Jerusalén; en una de ellas iba a ofrecer Abrahán a
+    Isaac.
+- name: Pórtico de Salomón
+  note: Columnata del lado este del recinto del templo por la que Jesús caminaba en la Dedicación (lámina B11). Perspicacia
+    la llama Columnata de Salomón.
+- name: Puerta Hermosa
+  note: Una entrada del templo donde a diario dejaban a pedir limosna al cojo que curó Pedro (Hch 3:2, 10; «Testimonio completo»,
+    capítulo 4). OpenBible solo le da el punto de Jerusalén.
+- name: Montaña de la Casa
+  note: Así llama Miq 3:12 al monte del templo, como aclara su nota; Perspicacia «Sion» sitúa el recinto del templo en Moria.
+type: mountain
+lat: 31.777778
+lon: 35.235556
+precision: point
+coord_source: openbible:aac1fcf
+coord_url: https://www.openbible.info/geo/ancient/aac1fcf/mount-moriah
+summary: Elevación rocosa de Jerusalén donde Salomón construyó el templo; Perspicacia sitúa allí el intento de Abrahán de
+  ofrecer a Isaac. En el siglo I la ocupaba el templo que amplió Herodes, donde enseñó Jesús.
+reason: 'Perspicacia «Moria» (párr. 2), la lámina B11 y «Jerusalén y el templo que Jesús conoció» (párr. 1-2). La
+  coordenada es de OpenBible: solo tomamos el punto.'
+sources:
+- it-moria
+- tnm-b11
+- vbt-jerusalen-templo
+- openbible-geo
+- mateo-21
+- mateo-23
+- mateo-24
+- genesis-22
+- it-abrahan
+- it-jehova-yire
+- marcos-11
+- marcos-12
+- marcos-13
+- lucas-1
+- lucas-2
+- lucas-11
+- lucas-19
+- lucas-20
+- lucas-21
+- juan-2
+- juan-5
+- juan-7
+- juan-8
+- juan-10
+- it-columnata-de-salomon
+- hechos-3
+- bt-4
+- hechos-4
+- hechos-5
+- hch-21
+- hch-22
+- miqueas-3
+links:
+- title: 'Perspicacia: «Moria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
+  type: perspicacia
+- title: Mateo 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/21
+  type: bible
+search: Monte Moria
+history:
+- date: '2026-09-29'
+  change: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
+  source: genesis-22
+checked_on: '2026-09-29'
+status: verified

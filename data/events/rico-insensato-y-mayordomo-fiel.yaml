@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rico-insensato-y-mayordomo-fiel
+title: Parábolas del rico insensato y del mayordomo fiel
+date:
+  from: 32
+  to: 32
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detail:
+    season: autumn
+places:
+- judea
+people:
+- jesus
+- pedro
+type: speech
+roles:
+  jesus: spoke
+passages:
+- Lu 12:1-59
+summary: Con la parábola del rico insensato, Jesús advierte contra la codicia; con la del mayordomo fiel, pide estar
+  preparados para la vuelta del amo.
+reason: La tabla A7-E da cuándo y dónde. La tabla dice «probablemente Judea»; jy caps. 77 y 78.
+sources:
+- tnm-a7-e
+- lucas-12
+- jy-cap-77
+- jy-cap-78
+narrative_order:
+  series: a7
+  order: 71
+search: Parábolas del rico insensato y del mayordomo fiel
+checked_on: '2026-09-29'
+status: verified

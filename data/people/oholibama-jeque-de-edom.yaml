@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oholibama-jeque-de-edom
+name: Oholibamá
+names:
+- name: Oholibamá
+perspicacia: 1200003312#2
+disambiguation: El jeque Oholibamá; no Oholibamá, la esposa de Esaú.
+distinct_from:
+- oholibama-hija-de-ana
+summary: 'Jeque edomita de la lista final de descendientes de Esaú. Algunos creen que estos nombres son de lugares: el jeque
+  de Oholibamá.'
+reason: Perspicacia «Oholibamá», núm. 2; Gé 36:41.
+sources:
+- it-oholibama
+- genesis-36
+links:
+- title: 'Perspicacia: «Oholibamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003312
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: esau
+  word: ancestor
+  inferred: false
+  sources:
+  - it-oholibama
+  - genesis-36
+  reason: 'Gé 36:40, 43: jeque de los que descendieron de Esaú.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: edom
+  inferred: false
+  sources:
+  - it-oholibama
+  - genesis-36
+  reason: 'Gé 36:43: jeques de Edom, según las regiones que ocuparon.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
