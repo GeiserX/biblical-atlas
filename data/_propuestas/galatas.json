@@ -1,0 +1,904 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "galatas",
+ "agente": "escritor-galatas",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1",
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "damasco",
+     "deducido": false,
+     "fuentes": [
+      "galatas-1"
+     ],
+     "razon": "Gál 1:17: vuelve a Damasco desde Arabia.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "tarso",
+     "deducido": false,
+     "fuentes": [
+      "galatas-1"
+     ],
+     "razon": "Gál 1:21 y su nota: la región de Cilicia es la de Tarso.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "visitante de",
+     "fecha": {
+      "desde": 36,
+      "hasta": 36,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 36 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "galatas-1",
+      "it-pedro",
+      "si-3"
+     ],
+     "razon": "Gál 1:18: tres años después de convertirse sube a Jerusalén a ver a Cefas y se queda con él 15 días. Perspicacia «Pedro», párr. 20, lo pone quizás en 36; el estudio 3, párr. 22, cuenta 34-36.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1",
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galacia",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "damasco",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1",
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siria",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cilicia",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-va-a-arabia",
+   "campo": "orden_relato",
+   "antes": null,
+   "despues": {
+    "serie": "hechos",
+    "orden": 921
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-va-a-arabia",
+   "campo": "razon",
+   "antes": "Perspicacia «Pablo» (párr. 6 y 7) y «Arabia» (sobre Gál 1:17): los dos relatos se complementan y solo es dudoso el orden.",
+   "despues": "Perspicacia «Pablo» (párr. 6 y 7) y «Arabia» (sobre Gál 1:17): solo es dudoso el orden. Va entre la predicación en Damasco y la huida: la nota de Gál 1:17 ve posible que predicara antes y después.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Recibe orden en la serie de Hechos, entre pablo-predica-en-damasco (919) y huida-de-damasco (923), y la razón dice por qué.",
+    "fuente": "galatas-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bernabe",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "bernabe",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "chipre",
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "it-chipre",
+      "hechos-4"
+     ],
+     "razon": "Hch 4:36 lo presenta como levita nativo de Chipre (Perspicacia «Bernabé», párr. 1).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-marcos",
+     "relacion": "primo",
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "colosenses-4"
+     ],
+     "razon": "Col 4:10 llama a Marcos primo de Bernabé.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 36,
+      "hasta": 36,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 36 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "hch-9"
+     ],
+     "razon": "Lo presenta a los apóstoles en Jerusalén (Hch 9:27; Gál 1:18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 45,
+      "hasta": 49,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "hasta c. 49 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "it-pablo",
+      "si-3",
+      "hechos-11",
+      "hch-13",
+      "hch-15"
+     ],
+     "razon": "Lo busca en Tarso, trabajan en Antioquía, llevan el socorro a Jerusalén, hacen juntos el primer viaje y suben a Jerusalén por la circuncisión (Hch 11:25-30; 13:2; 15:2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "hechos-4",
+      "hechos-11"
+     ],
+     "razon": "Hch 4:36, 37 lo pone con los apóstoles en Jerusalén, y Hch 11:22 dice que la congregación de allí lo envió a Antioquía.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "deducido": false,
+     "fuentes": [
+      "hechos-11",
+      "it-bernabe",
+      "hch-13",
+      "hch-14"
+     ],
+     "razon": "Hch 11:22-26: enviado a Antioquía, se quedó allí un año entero con Saulo; Hch 13:1 lo cuenta entre sus profetas y maestros.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "chipre",
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "it-chipre",
+      "hechos-4"
+     ],
+     "razon": "Hch 4:36 lo presenta como levita nativo de Chipre (Perspicacia «Bernabé», párr. 1).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-marcos",
+     "relacion": "primo",
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "colosenses-4"
+     ],
+     "razon": "Col 4:10 llama a Marcos primo de Bernabé.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 36,
+      "hasta": 36,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 36 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "hch-9"
+     ],
+     "razon": "Lo presenta a los apóstoles en Jerusalén (Hch 9:27; Gál 1:18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 45,
+      "hasta": 49,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "hasta c. 49 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "it-pablo",
+      "si-3",
+      "hechos-11",
+      "hch-13",
+      "hch-15",
+      "galatas-2"
+     ],
+     "razon": "Lo busca en Tarso, trabajan en Antioquía, llevan el socorro a Jerusalén, hacen juntos el primer viaje y suben a Jerusalén por la circuncisión (Hch 11:25-30; 13:2; 15:2; Gál 2:1, 9, 13).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "it-bernabe",
+      "hechos-4",
+      "hechos-11"
+     ],
+     "razon": "Hch 4:36, 37 lo pone con los apóstoles en Jerusalén, y Hch 11:22 dice que la congregación de allí lo envió a Antioquía.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "deducido": false,
+     "fuentes": [
+      "hechos-11",
+      "it-bernabe",
+      "hch-13",
+      "hch-14"
+     ],
+     "razon": "Hch 11:22-26: enviado a Antioquía, se quedó allí un año entero con Saulo; Hch 13:1 lo cuenta entre sus profetas y maestros.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la mano y Bernabé sigue a su lado en Antioquía.",
+    "fuente": "galatas-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bernabe",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "deducido": false,
+     "fuentes": [
+      "galatas-2"
+     ],
+     "razon": "Gál 2:13: está en Antioquía cuando llega Cefas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "fecha": {
+      "desde": 33,
+      "hasta": 49,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 33-49 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-juan",
+      "galatas-2",
+      "si-3"
+     ],
+     "razon": "Perspicacia «Juan», párr. 30: cuando se dispersa a los discípulos tras la muerte de Esteban, él y los apóstoles siguen en Jerusalén; hacia 49 es una de las columnas de aquella congregación (Gál 2:9).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "juan-apostol",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "galatas-2"
+     ],
+     "razon": "Gál 2:9 los nombra juntos entre las columnas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "galatas-2"
+     ],
+     "razon": "Nota de Gál 2:12: los que llegan de parte de Santiago serían de Jerusalén, donde al parecer estaba él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "deducido": false,
+     "fuentes": [
+      "galatas-2"
+     ],
+     "razon": "Gál 2:11: está en Antioquía cuando llega Cefas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "antioquia-de-siria",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-corrige-a-pedro-en-antioquia",
+   "campo": "fecha",
+   "antes": {
+    "desde": 49,
+    "hasta": 52,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 49 y 52 e.c. (después de la reunión de Jerusalén)"
+   },
+   "despues": {
+    "desde": 49,
+    "hasta": 49,
+    "precision": "año",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 49 e.c."
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fecha pasa de 49-52 narrativa a c. 49 anclada: la nota de Gál 2:12, más reciente que Perspicacia, lo pone el mismo año que la decisión de Jerusalén.",
+    "fuente": "galatas-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-corrige-a-pedro-en-antioquia",
+   "campo": "razon",
+   "antes": "Perspicacia «Pedro» (párr. 23) y «Pablo» (párr. 14 y 15) lo ponen algún tiempo después de la reunión de c. 49.",
+   "despues": "Nota de estudio de Gál 2:12: unos 13 años después de lo de Cornelio (36) y el mismo año de la decisión de Jerusalén, hacia 49. Perspicacia «Pedro», párr. 23, y «Pablo» lo ponen algo después de esa reunión.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón da la fuente del año, la nota de Gál 2:12.",
+    "fuente": "galatas-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-corrige-a-pedro-en-antioquia",
+   "campo": "nota",
+   "antes": "Ninguna fuente da el año; lo acotamos entre la reunión de Jerusalén (c. 49) y la vuelta de Pablo a Antioquía al final del segundo viaje (52).",
+   "despues": "Pasa mientras Pablo y Bernabé siguen en Antioquía tras la reunión (Hch 15:35, referencia de Gál 2:11) y antes de separarse; el estudio 3, párr. 24, los deja allí hasta finales del verano de 49.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nota decía que ninguna fuente da el año; la nota de estudio de Gál 2:12 lo da.",
+    "fuente": "galatas-2"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pablo-corrige-a-pedro-en-antioquia",
+   "campo": "orden_relato",
+   "antes": null,
+   "despues": {
+    "serie": "hechos",
+    "orden": 1535,
+    "tras": "la-carta-de-jerusalen-llega-a-antioquia"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-corrige-a-pedro-en-antioquia",
+   "campo": "fuentes",
+   "valores": [
+    "si-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "galatas-3"
+     ],
+     "razon": "Gál 3:16: Cristo es la descendencia prometida a Abrahán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-los-animales-partidos",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 3:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-abrahan",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 3:8, 14, 16, 18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-la-ley",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 3:19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-la-ley",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "pacto-de-la-ley",
+   "campo": "resumen",
+   "antes": "Al pie del Sinaí, Israel acepta el pacto de la Ley con Moisés como mediador. Se cumplen justo 430 años desde que entró en vigor el pacto con Abrahán.",
+   "despues": "Al pie del Sinaí, en el tercer mes tras salir de Egipto, Israel acepta el pacto de la Ley con Moisés como mediador. Llega 430 años después del pacto con Abrahán, plazo que se cumplió el día del éxodo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Decía que el pacto de la Ley cumplía justo 430 años. La nota de Gál 3:17 cierra ese plazo el 14 de nisán, día del éxodo, y Perspicacia «Pacto» pone el pacto en el tercer mes.",
+    "fuente": "galatas-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-jesus",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galacia",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "agar",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "galatas-4"
+     ],
+     "razon": "Gál 4:22, 23: el hijo de Abrahán y de la mujer libre.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-ismael",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:22, 23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-isaac",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:22, 23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "isaac-destetado-e-ismael-se-burla",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:29, 30"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-la-ley",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:24, 25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-abrahan",
+   "campo": "pasajes",
+   "valores": [
+    "Gál 4:24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "monte-sinai",
+   "campo": "resumen",
+   "antes": "Monte donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad; lo más citado es un macizo de dos cumbres en el sur de la península del Sinaí.",
+   "despues": "Monte de Arabia, según Gál 4:25, donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad; lo más citado es un macizo de dos cumbres en el sur de la península del Sinaí.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Añade que Pablo lo llama montaña de Arabia (Gál 4:25), con lo que abre Perspicacia «Sinaí», párr. 1.",
+    "fuente": "galatas-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "monte-sinai",
+   "campo": "razon",
+   "antes": "Perspicacia «Sinaí» (párr. 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin Bishar no aparecen en wol.jw.org, así que no los incluimos.",
+   "despues": "Perspicacia «Sinaí» (párr. 1, con Gál 4:25, y 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin Bishar no aparecen en wol.jw.org, así que no los incluimos.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita el párr. 1 de Perspicacia «Sinaí», que apoya lo de Arabia.",
+    "fuente": "galatas-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arabia",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "arabia",
+   "campo": "resumen",
+   "antes": "La península arábiga y sus desiertos del norte. Tras su conversión, Pablo fue a Arabia y volvió a Damasco; no se sabe a qué parte fue.",
+   "despues": "La península arábiga y sus desiertos del norte, con la península del Sinaí: Pablo llama al Sinaí montaña de Arabia (Gál 4:25). Tras su conversión fue a Arabia y volvió a Damasco; no se sabe a qué parte.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Añade que Gál 4:25 sitúa el monte Sinaí en Arabia, como recoge Perspicacia «Arabia».",
+    "fuente": "galatas-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "arabia",
+   "campo": "razon",
+   "antes": "Perspicacia «Arabia», párrafo sobre Gál 1:17: pudo ser el desierto de Siria o cualquier parte de la península. Coordenada de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Arabia»: sobre Gál 1:17, pudo ser el desierto de Siria o cualquier parte de la península; en otro párrafo, el Sinaí queda en Arabia (Gál 4:25). Coordenada de OpenBible: solo tomamos el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también el párrafo de Perspicacia «Arabia» sobre el Sinaí y Gál 4:25.",
+    "fuente": "galatas-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "galatas-6",
+    "it-marca"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "no_afirmamos",
+   "valores": [
+    "Que las marcas de esclavo de Jesús que llevaba en el cuerpo (Gál 6:17) fueran cicatrices: Perspicacia «Marca» lo ve posible, pero quizás aludía a su vida de ministro."
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "galacia",
+   "campo": "coord_nota",
+   "antes": null,
+   "despues": "Punto representativo de OpenBible para toda la provincia romana; no es una ciudad."
+  }
+ ],
+ "preguntas": [
+  "Para la integración: si el cambiar de personas/bernabe «relaciones» choca porque otra operación tocó antes la lista, la segunda relación acompana pablo (45-49) recibe a mano galatas-2 en fuentes y «Gál 2:1, 9, 13» en su razón. Un anadir se fundiría en la de c. 36."
+ ]
+}

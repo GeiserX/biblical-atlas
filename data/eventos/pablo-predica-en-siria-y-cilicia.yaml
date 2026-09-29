@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-predica-en-siria-y-cilicia
+titulo: Pablo predica en las regiones de Siria y Cilicia
+fecha:
+  desde: 36
+  hasta: 45
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 36-45 e.c.
+orden_relato:
+  serie: hechos
+  orden: 931
+  tras: pablo-enviado-a-tarso
+lugares:
+- cilicia
+- tarso
+- siria
+personas:
+- pablo
+presentes:
+- pablo
+pasajes:
+- Gál 1:21-24
+resumen: Tras su primera visita a Jerusalén, Pablo pasa unos años por Siria y Cilicia. Las congregaciones de Judea no lo conocen
+  en persona, pero oyen que su antiguo perseguidor anuncia la fe y alaban a Dios.
+razon: 'Nota de Gál 1:21: Cilicia sería la zona de Tarso y Siria la de Antioquía; unos ocho años, de c. 36 a la llegada a
+  Antioquía hacia 45. Cilicia va primero: según esa nota, antes de Antioquía estuvo en Tarso.'
+fuentes:
+- galatas-1
+- it-pablo
+- it-cilicia
+- it-siria
+- si-3
+enlaces:
+- titulo: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Cilicia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000975
+  tipo: perspicacia
+buscar: Pablo predica en Siria y Cilicia
+consultado: '2026-09-29'
+estado: verificado
