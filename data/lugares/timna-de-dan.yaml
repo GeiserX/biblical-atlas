@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: timna-de-dan
+nombre: Timná
+nombres:
+- nombre: Timná
+- nombre: Timnah
+  nota: Otra grafía que da la nota de Jos 15:10; es la de Perspicacia.
+tipo: ciudad
+lat: 31.784831
+lon: 34.910297
+precision: incierto
+coord_fuente: openbible:a21f909
+coord_url: https://www.openbible.info/geo/ancient/a21f909/timnah-1
+coord_nota: Tel Batash (Tell el-Batashi), primera identificación de OpenBible; según Perspicacia, muchos se inclinan por ella.
+resumen: Ciudad en el límite entre Judá y Dan, junto al valle de Soreq y al oeste de Bet-Semes. Allí tomó Sansón una esposa
+  filistea. No es la Timná de la montaña de Judá.
+razon: 'Perspicacia «Timnah», núm. 1; Jos 15:10; 19:43; Jue 14:1-6. OpenBible: solo el punto.'
+fuentes:
+- it-timnah
+- openbible-geo
+- josue-15
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Timnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004411
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

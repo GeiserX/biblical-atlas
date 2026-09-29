@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zior
+nombre: Zior
+nombres:
+- nombre: Zior
+tipo: ciudad
+lat: 31.584444
+lon: 35.145278
+precision: incierto
+coord_fuente: openbible:ac2907d
+coord_url: https://www.openbible.info/geo/ancient/ac2907d/zior
+coord_nota: 'Siʽir (Sair), segunda identificación de OpenBible: es la que da Perspicacia. La primera solo la pone a menos
+  de 10 km de Hebrón.'
+resumen: Ciudad de la montaña de Judá, identificada con Siʽir, unos 7 km al nornoreste de Hebrón.
+razon: 'Perspicacia «Zior»; Jos 15:54. OpenBible: solo el punto.'
+fuentes:
+- it-zior
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Zior»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004741
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

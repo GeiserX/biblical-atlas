@@ -1,8 +1,10 @@
 # biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: abi-ezer-hijo-de-galaad
-nombre: Abí-ézer
+nombre: Abí-Ézer
 nombres:
+- nombre: Abí-Ézer
 - nombre: Abí-ézer
+  nota: Grafía de Perspicacia.
 - nombre: Yézer
   nota: Forma corta del nombre, sin el «Ab» inicial, que usa Nú 26:30; Perspicacia lo ve comparando con Josué 17.
 perspicacia: 1200000035#1
@@ -13,6 +15,7 @@ fuentes:
 - it-abi-ezer
 - it-yezer
 - numeros-26
+- josue-17
 enlaces:
 - titulo: 'Perspicacia: «Abí-ézer»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000035
@@ -73,5 +76,20 @@ relaciones:
   - numeros-26
   razon: 'Nú 26:32: Héfer es otro hijo de Galaad.'
   estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El nombre pasa a la grafía de la TNM, Abí-Ézer (Jos 17:2); Abí-ézer queda como grafía de Perspicacia.
+  fuente: josue-17
+- fecha: '2026-09-29'
+  cambio: Se añade Abí-Ézer, la grafía de la TNM en Jos 17:2, como nombre principal.
+  fuente: josue-17
 consultado: '2026-09-29'
 estado: verificado

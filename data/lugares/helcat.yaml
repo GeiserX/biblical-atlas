@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: helcat
+nombre: Helcat
+nombres:
+- nombre: Helcat
+- nombre: Helqat
+  nota: Grafía de Perspicacia.
+- nombre: Huqoq
+  nota: Al parecer, otro nombre de la ciudad (1Cr 6:75).
+- nombre: Hucoc
+  nota: Grafía que usa 1Cr 6:75. No es la Hucoc de Neftalí.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Tell el-Qasis (Tel Qashish)
+  geometria:
+    tipo: punto
+    lat: 32.685278
+    lon: 35.109722
+  estado: alternativa
+  fuentes:
+  - it-helqat
+  - openbible-geo
+  razon: Una obra de consulta que cita Perspicacia la prefiere, a la entrada del valle de Jezreel.
+  coord_fuente: openbible:a1d1918
+  coord_url: https://www.openbible.info/geo/ancient/a1d1918/helkath
+  nota: Primer punto de la ficha «Helkath» de OpenBible.
+- nombre: Khirbet el-Harbaj (Tel Regev)
+  geometria:
+    tipo: punto
+    lat: 32.75885
+    lon: 35.09027
+  estado: alternativa
+  fuentes:
+  - it-helqat
+  - openbible-geo
+  razon: Hay quien la identifica con este lugar al pie del Carmelo, unos 18 km al sur de Akkó.
+  coord_fuente: openbible:a1d1918
+  coord_url: https://www.openbible.info/geo/ancient/a1d1918/helkath
+  nota: Punto de la tercera identificación de la ficha «Helkath» de OpenBible.
+resumen: Ciudad de la frontera de Aser que después se dio a los guersonitas. 1Cr 6:75 la llama Huqoq. Dónde estaba es una
+  conjetura.
+razon: Perspicacia «Helqat» y «Huqoq»; Jos 19:25; 1Cr 6:75. Dos propuestas, sin identificación segura.
+fuentes:
+- it-helqat
+- it-huqoq
+- openbible-geo
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Helqat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001976
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

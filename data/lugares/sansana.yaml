@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sansana
+nombre: Sansaná
+nombres:
+- nombre: Sansaná
+tipo: ciudad
+lat: 31.3445
+lon: 34.9014
+precision: punto
+coord_fuente: openbible:aeedde4
+coord_url: https://www.openbible.info/geo/ancient/aeedde4/sansannah
+resumen: Población del sur de Judá, en Khirbet esh-Shamsaniyat, unos 12 km al nornoreste de Beer-Seba. Las listas paralelas
+  sugieren que podría ser la ciudad que Jos 19:5 nombra en su lugar.
+razon: 'Perspicacia «Sansaná»; Jos 15:31. OpenBible: solo el punto.'
+fuentes:
+- it-sansana
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Sansaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003833
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

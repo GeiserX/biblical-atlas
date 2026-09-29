@@ -97,6 +97,7 @@ function pintar() {
     <div class="lectura-controles">
       <label class="interruptor"><input type="checkbox" data-lectura-sigue ${L.sigue ? 'checked' : ''}> El mapa sigue la lectura</label>
       <label class="interruptor"><input type="checkbox" data-lectura-leido ${leido ? 'checked' : ''}> Leído</label>
+      ${BE.notes?.pencilForChapter(lib, cap) || ''}
     </div>
     ${ps.length ? `<div class="lectura-fecha be-note${anclada ? '' : ' be-note--uncertain'}">${anclada && ps.some((x) => x.narrativa) ? 'Orden cierto; fechas aproximadas salvo donde la fuente las da.' : anclada ? 'Cada pasaje con su fecha según la fuente.' : 'Orden cierto; sin fecha exacta: tiempo narrativo.'}</div>
     <div class="lectura-acciones"><button type="button" class="be-btn be-btn--sm" data-lectura-play>${L.play ? 'Pausar' : 'Seguir en el mapa ▶'}</button>

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-del-libano
+nombre: Valle del Líbano
+nombres:
+- nombre: Valle del Líbano
+tipo: valle
+lat: 34.008889
+lon: 36.145278
+precision: zona
+coord_fuente: openbible:ac2192b
+coord_url: https://www.openbible.info/geo/ancient/ac2192b/valley-of-lebanon
+coord_nota: Punto representativo de la Becá en OpenBible, el valle que Perspicacia sitúa entre las dos cordilleras.
+resumen: Valle largo y fértil, de 10 a 16 km de ancho, entre las cordilleras del Líbano y del Antilíbano. En él estaba Baal-Gad,
+  el límite norte de la conquista.
+razon: 'Perspicacia «Líbano», párr. 1: la Becá o Celesiria, con Jos 11:17 y 12:7. OpenBible: solo el punto.'
+fuentes:
+- it-libano
+- openbible-geo
+- josue-11
+- josue-12
+enlaces:
+- titulo: 'Perspicacia: «Líbano»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002705
+  tipo: perspicacia
+- titulo: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: anab
+nombre: Anab
+nombres:
+- nombre: Anab
+tipo: ciudad
+lat: 31.4121
+lon: 34.9549
+precision: punto
+coord_fuente: openbible:a234727
+coord_url: https://www.openbible.info/geo/ancient/a234727/anab
+resumen: Pueblo del sur de la región montañosa de Judá, entre Hebrón y Beer-seba, a mitad de trayecto. Josué echó de allí
+  a los anaquim.
+razon: 'Perspicacia «Anab»: Khirbet ʽAnab es-Saghireh, 1,5 km al oeste de Edh Dhahiriya; Jos 11:21. OpenBible: solo el punto.'
+fuentes:
+- it-anab
+- openbible-geo
+- josue-11
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Anab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000256
+  tipo: perspicacia
+- titulo: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-seir-de-juda
+nombre: Monte Seír
+nombres:
+- nombre: Monte Seír
+tipo: monte
+lat: 31.7966
+lon: 35.0653
+precision: incierto
+coord_fuente: openbible:a36c283
+coord_url: https://www.openbible.info/geo/ancient/a36c283/mount-seir-2
+coord_nota: Punto del pueblo de Shoresh en OpenBible; Perspicacia pone el monte en la cumbre que tiene ese pueblo en su parte
+  sur.
+resumen: Montaña de la frontera norte de Judá, entre Baalá, que es Quiryat-Jearim, y Kesalón, unos 15 km al oeste de Jerusalén.
+  No es la región de Seír, en Edom.
+razon: 'Perspicacia «Seír», núm. 3; Jos 15:10. OpenBible: solo el punto.'
+fuentes:
+- it-seir
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Seír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003884
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

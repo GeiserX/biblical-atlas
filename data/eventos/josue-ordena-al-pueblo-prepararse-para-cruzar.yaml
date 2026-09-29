@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-ordena-al-pueblo-prepararse-para-cruzar
+titulo: Josué ordena al pueblo prepararse para cruzar
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 201010
+lugares:
+- sitim
+- llanuras-deserticas-de-moab
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 1:10, 11
+resumen: Josué manda a los funcionarios recorrer el campamento y avisar de que cada cual prepare comida, porque en tres días
+  pasarán el Jordán para tomar la tierra.
+razon: 'Perspicacia «Josué», núm. 1: muerto Moisés, dispuso el paso del río (Jos 1:10, 11). Año del estudio 3. El capítulo
+  no nombra el campamento: seguía en Sitim, en las llanuras de Moab.'
+fuentes:
+- josue-1
+- it-josue
+- si-3
+enlaces:
+- titulo: Josué 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  tipo: perspicacia
+buscar: Josué funcionarios provisiones tres días
+consultado: '2026-09-29'
+estado: verificado

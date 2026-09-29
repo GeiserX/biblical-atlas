@@ -9,6 +9,7 @@ razon: Perspicacia «Otniel», párr. 2 a 4; Jos 15:16-19 y Jue 3:8-11.
 fuentes:
 - it-otniel
 - jueces-3
+- josue-15
 enlaces:
 - titulo: 'Perspicacia: «Otniel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
@@ -20,11 +21,36 @@ relaciones:
 - tipo: pariente
   persona: caleb-hijo-de-jefune
   relacion: tío
-  deducido: false
+  deducido: true
   fuentes:
   - it-otniel
   - jueces-3
+  - josue-15
   razon: 'Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: quenaz-padre-de-otniel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - josue-15
+  - it-quenaz
+  razon: 'Jos 15:17: Otniel hijo de Quenaz.'
+  estado: verificado
+- tipo: pariente
+  persona: acsa
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - josue-15
+  - it-acsa
+  razon: 'Jos 15:17: Caleb le da a su hija Acsá por esposa.'
+  estado: verificado
+perspicacia: '1200003349'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El parentesco de tío con Caleb pasa a deducido: Jos 15:17 admite dos lecturas y es Perspicacia «Otniel» la que
+    lo hace sobrino.'
+  fuente: josue-15
+consultado: '2026-09-29'
 estado: verificado

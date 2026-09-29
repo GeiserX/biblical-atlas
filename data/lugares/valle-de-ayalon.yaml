@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-ayalon
+nombre: Valle de Ayalón
+nombres:
+- nombre: Valle de Ayalón
+  nota: La nota de Jos 10:12 da también «la llanura baja».
+tipo: valle
+lat: 31.8675
+lon: 34.959444
+precision: zona
+coord_fuente: openbible:a2e6de9
+coord_url: https://www.openbible.info/geo/ancient/a2e6de9/valley-of-aijalon
+coord_nota: Punto representativo de OpenBible para el valle.
+resumen: Llanura baja, la más septentrional de las que cruzan la Sefelá, paso de la costa a la región montañosa. Josué pidió
+  que la luna se detuviera sobre ella. La ciudad de Ayalón estaba en su extremo sur.
+razon: 'Perspicacia «Ayalón», núm. 1, apartado de la llanura baja; Jos 10:12. OpenBible: solo el punto.'
+fuentes:
+- it-ayalon
+- openbible-geo
+- josue-10
+enlaces:
+- titulo: 'Perspicacia: «Ayalón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000182
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

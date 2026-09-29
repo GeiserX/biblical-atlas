@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jabneel-de-neftali
+nombre: Jabneel
+nombres:
+- nombre: Jabneel
+  nota: Jabneel de Neftalí (Perspicacia, núm. 2).
+tipo: ciudad
+lat: 32.713333
+lon: 35.5125
+precision: punto
+coord_fuente: openbible:abff89f
+coord_url: https://www.openbible.info/geo/ancient/abff89f/jabneel-2
+coord_nota: Punto de OpenBible en Tell en-Naʽam (Tel Yinʽam).
+resumen: Lugar de la frontera de Neftalí, unos 8 km al SSO de Tiberíades, junto a un manantial. El nombre sigue en la aldea
+  cercana de Yavneʼel. No es la Jabneel de Judá.
+razon: 'Perspicacia «Jabneel», núm. 2; Jos 19:33. OpenBible: solo el punto.'
+fuentes:
+- it-jabneel
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Jabneel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002273
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-halac
+nombre: Monte Halac
+nombres:
+- nombre: Monte Halac
+- nombre: Halaq
+  nota: Grafía de Perspicacia.
+tipo: monte
+lat: 30.9144
+lon: 34.8287
+precision: punto
+coord_fuente: openbible:a11fadd
+coord_url: https://www.openbible.info/geo/ancient/a11fadd/mount-halak
+resumen: Monte del sur que marca el límite meridional de la tierra que conquistó Josué, orientado hacia Seír. Baal-Gad marca
+  el límite norte.
+razon: 'Perspicacia «Halaq, Monte»: se suele identificar con Jebel Halaq, junto a la ruta que baja de Beer-seba hacia el Arabá;
+  Jos 11:17; 12:7. OpenBible: solo el punto.'
+fuentes:
+- it-halaq
+- openbible-geo
+- josue-11
+- josue-12
+enlaces:
+- titulo: 'Perspicacia: «Halaq, Monte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001826
+  tipo: perspicacia
+- titulo: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

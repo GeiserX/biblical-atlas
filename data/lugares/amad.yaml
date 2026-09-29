@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: amad
+nombre: Amad
+nombres:
+- nombre: Amad
+tipo: ciudad
+lat: 32.6725
+lon: 35.023333
+precision: incierto
+coord_fuente: openbible:a2f1fa1
+coord_url: https://www.openbible.info/geo/ancient/a2f1fa1/amad
+coord_nota: OpenBible solo la pone a menos de 10 km del Carmelo; el punto es el del monte. Perspicacia no sabe dónde estaba.
+resumen: Ciudad de Aser en las llanuras de la costa, al norte del Carmelo. Hay varias ruinas llamadas ʽAmud en la zona, pero
+  no se sabe cuál es.
+razon: 'Perspicacia «Amad»; Jos 19:26. OpenBible: solo el punto.'
+fuentes:
+- it-amad
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Amad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000214
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

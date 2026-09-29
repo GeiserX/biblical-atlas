@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-manda-a-josue-cruzar-el-jordan
+titulo: Jehová manda a Josué cruzar el Jordán
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 201001
+lugares:
+- sitim
+- llanuras-deserticas-de-moab
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 1:1-9
+resumen: Muerto Moisés, Jehová encarga a Josué que cruce el Jordán con el pueblo y le marca las fronteras de la tierra. Le
+  pide valor y que medite a diario en la Ley, y promete estar con él.
+razon: El estudio 3 pone en 1473 a.e.c. la muerte de Moisés y la entrada en Canaán; esto pasa entre las dos, con el campamento
+  aún en Sitim. Josué suma 200000 en la serie numeros.
+fuentes:
+- josue-1
+- si-3
+- it-josue
+- it-sitim
+enlaces:
+- titulo: Josué 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  tipo: perspicacia
+buscar: Josué recibe el mando cruzar el Jordán
+consultado: '2026-09-29'
+estado: verificado

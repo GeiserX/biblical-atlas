@@ -18,6 +18,9 @@ fuentes:
 - it-gaza
 - hechos-8
 - openbible-geo
+- josue-10
+- josue-11
+- josue-15
 enlaces:
 - titulo: 'Perspicacia: «Gaza»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001622
@@ -25,5 +28,5 @@ enlaces:
 - titulo: Hechos 8 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

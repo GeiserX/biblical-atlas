@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baalat
+nombre: Baalat
+nombres:
+- nombre: Baalat
+tipo: ciudad
+lat: 31.838514
+lon: 34.78225
+precision: incierto
+coord_fuente: openbible:abc1b7c
+coord_url: https://www.openbible.info/geo/ancient/abc1b7c/baalath-1
+coord_nota: Punto de OpenBible en el-Mughar. Perspicacia dice que su identificación es incierta.
+resumen: Ciudad de la frontera de Dan, entre Guibetón y Jehúd. Debe de ser la que reconstruyó Salomón; Josefo la pone no lejos
+  de Guézer.
+razon: 'Perspicacia «Baalat»; Jos 19:44; 2Cr 8:6. OpenBible: solo el punto.'
+fuentes:
+- it-baalat
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Baalat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000507
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

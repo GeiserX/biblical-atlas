@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-instala-la-tienda-de-reunion-en-silo
+titulo: Israel instala la tienda de reunión en Siló
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras la conquista general y antes de la muerte de Josué)'
+lugares:
+- silo
+personas: []
+pasajes:
+- Jos 18:1
+resumen: Con la tierra ya sometida, todo el pueblo se reúne en Siló y levanta allí la tienda de reunión, el tabernáculo. Desde
+  ese lugar se termina de repartir la tierra.
+razon: El estudio 3 cierra la conquista general en 1467 a.e.c. y pone hacia 1450 la muerte de Josué; el reparto en Siló cae
+  entre las dos (Perspicacia «Siló», párr. 3). Jos 18:1.
+fuentes:
+- josue-18
+- si-3
+- it-silo
+- it-tabernaculo
+- it-tienda-de-reunion
+enlaces:
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+orden_relato:
+  serie: josue
+  orden: 18001
+consultado: '2026-09-29'
+estado: verificado

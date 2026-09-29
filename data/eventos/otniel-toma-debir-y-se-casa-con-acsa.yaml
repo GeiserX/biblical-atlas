@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: otniel-toma-debir-y-se-casa-con-acsa
+titulo: Otniel toma Debir y se casa con Acsá
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: después del reparto de 1467 y antes de que se acabara el libro de Josué)'
+orden_relato:
+  serie: josue
+  orden: 15015
+lugares:
+- debir
+personas:
+- otniel
+- caleb-hijo-de-jefune
+- acsa
+presentes:
+- otniel
+- caleb-hijo-de-jefune
+pasajes:
+- Jos 15:15-17
+- Jue 1:11-13
+resumen: Caleb sube contra Debir, antes Quiryat-Séfer, y promete su hija Acsá a quien conquiste la ciudad. La toma Otniel,
+  hijo de Quenaz y sobrino de Caleb, que recibe a Acsá por esposa.
+razon: 'Perspicacia «Debir», núm. 2: fue una segunda conquista, tras la de Josué, y no se sabe cuándo; hay quien la pone tras
+  su muerte. Límites: 1467 a.e.c. (estudio 3) y c. 1450 a.e.c. (tabla de libros).'
+fuentes:
+- josue-15
+- it-debir
+- it-otniel
+- it-acsa
+- si-3
+- tnm-tabla
+enlaces:
+- titulo: Josué 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/15
+  tipo: biblia
+- titulo: 'Perspicacia: «Otniel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

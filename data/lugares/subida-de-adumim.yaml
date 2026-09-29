@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: subida-de-adumim
+nombre: Subida de Adumim
+nombres:
+- nombre: Subida de Adumim
+- nombre: Adumim
+  nota: Quizá «rocas rojas», por el color del suelo (Perspicacia).
+tipo: monte
+lat: 31.8175
+lon: 35.361505
+precision: punto
+coord_fuente: openbible:acf8790
+coord_url: https://www.openbible.info/geo/ancient/acf8790/adummim
+coord_nota: 'Punto de OpenBible en el paso, hoy Talʽat ed-Damm. Es una cuesta: «monte» es el tipo más cercano de la lista.'
+resumen: Cuesta empinada del camino de Jericó a Jerusalén, unos 12 km al estenoreste de Jerusalén, que sube del valle del
+  Jordán a la montaña de Judá. Marcaba el límite entre Judá y Benjamín.
+razon: 'Perspicacia «Adumim»; Jos 15:7; 18:17. El torrente al sur del cual quedaba es, según Perspicacia, el Wadi Qelt. OpenBible:
+  solo el punto.'
+fuentes:
+- it-adumim
+- openbible-geo
+- josue-15
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Adumim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000124
+  tipo: perspicacia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

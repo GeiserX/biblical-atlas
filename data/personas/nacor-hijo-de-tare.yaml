@@ -17,6 +17,7 @@ fuentes:
 - genesis-24
 - genesis-29
 - genesis-31
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Nacor»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003170
@@ -41,6 +42,7 @@ relaciones:
   fuentes:
   - genesis-11
   - it-nacor
+  - josue-24
   razon: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré.'
   estado: verificado
 - tipo: pariente

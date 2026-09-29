@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: holon
+nombre: Holón
+nombres:
+- nombre: Holón
+tipo: ciudad
+lat: 31.662152
+lon: 35.030496
+precision: incierto
+coord_fuente: openbible:a8819e0
+coord_url: https://www.openbible.info/geo/ancient/a8819e0/holon-1
+coord_nota: 'Khirbet ʽAlin, primera identificación de OpenBible: el Khirbet ʽIllin que nombra Perspicacia.'
+resumen: Ciudad de la montaña de Judá dada a los sacerdotes; al parecer 1Cr 6:58 la llama Hilén. Se ha querido ver en Khirbet
+  ʽIllin, unos 17 km al nornoroeste de Hebrón. No es la Holón de Moab.
+razon: 'Perspicacia «Holón», núm. 1; Jos 15:51; 21:15. OpenBible: solo el punto.'
+fuentes:
+- it-holon
+- openbible-geo
+- josue-15
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Holón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002056
+  tipo: perspicacia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

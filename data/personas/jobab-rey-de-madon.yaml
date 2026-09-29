@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jobab-rey-de-madon
+nombre: Jobab
+nombres:
+- nombre: Jobab
+perspicacia: 1200002477#3
+desambiguacion: El rey de Madón (Perspicacia, núm. 3); no Jobab hijo de Joctán, ni el rey edomita hijo de Zérah, ni los benjamitas
+  de 1 Crónicas.
+no_confundir_con:
+- jobab-hijo-de-joctan
+- jobab-hijo-de-zerah
+resumen: Rey de Madón, ciudad cananea del norte. Cuando Jabín, rey de Hazor, lo convocó, se unió a la alianza y cayó vencido
+  con los demás reyes junto a las aguas de Merom.
+razon: Perspicacia «Jobab», núm. 3; Jos 11:1-8 y 12:19.
+fuentes:
+- it-jobab
+- josue-11
+- josue-12
+enlaces:
+- titulo: 'Perspicacia: «Jobab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002477
+  tipo: perspicacia
+- titulo: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: madon
+  deducido: false
+  fuentes:
+  - josue-11
+  - it-jobab
+  razon: 'Jos 11:1: Jabín envió mensajeros a Jobab, rey de Madón.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

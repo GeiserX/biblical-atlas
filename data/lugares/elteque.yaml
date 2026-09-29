@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elteque
+nombre: Eltequé
+nombres:
+- nombre: Eltequé
+- nombre: Eltequeh
+  nota: Grafía de la nota de Jos 19:44.
+tipo: ciudad
+lat: 31.8925
+lon: 34.767778
+precision: incierto
+coord_fuente: openbible:a3c4559
+coord_url: https://www.openbible.info/geo/ancient/a3c4559/eltekeh
+coord_nota: Punto de OpenBible en Tell esh-Shallaf (Tel Shalaf), que algunos proponen.
+resumen: Ciudad de Dan dada a los levitas qohatitas. Senaquerib dice haberla asediado y tomado. No se puede situar con seguridad;
+  algunos proponen Tel Shalaf, unos 18 km al NE de Asdod.
+razon: 'Perspicacia «Eltequé, Eltequeh»; Jos 19:44. OpenBible: solo el punto.'
+fuentes:
+- it-elteque
+- openbible-geo
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Eltequé, Eltequeh»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001340
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

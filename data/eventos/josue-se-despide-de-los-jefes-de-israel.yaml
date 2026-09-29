@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-se-despide-de-los-jefes-de-israel
+titulo: Josué, ya anciano, advierte a los jefes de Israel
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: mucho después de la conquista, con Josué ya viejo)'
+orden_relato:
+  serie: josue
+  orden: 23001
+lugares: []
+personas:
+- josue-hijo-de-nun
+presentes: []
+pasajes:
+- Jos 23:1-16
+resumen: Viejo y cerca de la muerte, Josué reúne a ancianos, jefes, jueces y funcionarios. Les recuerda que Jehová peleó por
+  ellos y les pide obedecer la Ley, no mezclarse con las naciones que quedan ni servir a sus dioses.
+razon: 'Perspicacia «Josué», núm. 1, apartado sobre su advertencia final: lo hizo hacia el final de su vida. El texto no dice
+  dónde. Límites: fin de la conquista general en 1467 y muerte de Josué hacia 1450 (estudio 3).'
+fuentes:
+- josue-23
+- it-josue
+- si-3
+enlaces:
+- titulo: Josué 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/23
+  tipo: biblia
+- titulo: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  tipo: perspicacia
+buscar: Josué exhorta a los ancianos de Israel
+consultado: '2026-09-29'
+estado: verificado

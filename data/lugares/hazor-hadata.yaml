@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazor-hadata
+nombre: Hazor-Hadatá
+nombres:
+- nombre: Hazor-Hadatá
+tipo: ciudad
+lat: 31.373333
+lon: 35.233611
+precision: incierto
+coord_fuente: openbible:acce8c8
+coord_url: https://www.openbible.info/geo/ancient/acce8c8/hazor-hadattah
+coord_nota: Har Hezron, primera identificación de OpenBible; Perspicacia no la sitúa.
+resumen: Ciudad del sur de Judá cuyo nombre quizá significa «poblado nuevo». No se sabe exactamente dónde estaba.
+razon: 'Perspicacia «Hazor-hadatá»; Jos 15:25. OpenBible: solo el punto.'
+fuentes:
+- it-hazor-hadata
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Hazor-hadatá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001938
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

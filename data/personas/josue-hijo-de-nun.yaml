@@ -18,7 +18,7 @@ fecha:
 desambiguacion: Josué hijo de Nun, sucesor de Moisés; no Josué (Jesúa), el sumo sacerdote que volvió de Babilonia.
 no_confundir_con:
 - josue-sumo-sacerdote
-resumen: Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amaleq, fue uno de los dos espías fieles y sucedió
+resumen: Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amalec, fue uno de los dos espías fieles y sucedió
   a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.
 razon: 'Perspicacia «Josué», núm. 1, párr. 2, 3, 7, 9 y 19: en 1513 a.e.c. mandaba contra Amaleq; el cuadro del estudio
   3 pone su muerte hacia 1450.'
@@ -44,6 +44,29 @@ fuentes:
 - deuteronomio-3
 - deuteronomio-31
 - deuteronomio-32
+- josue-1
+- josue-2
+- josue-3
+- josue-4
+- josue-5
+- josue-6
+- josue-7
+- josue-8
+- josue-9
+- josue-10
+- josue-11
+- josue-12
+- josue-13
+- josue-14
+- it-guilgal
+- josue-15
+- josue-17
+- josue-18
+- josue-19
+- josue-20
+- josue-21
+- josue-22
+- josue-23
 enlaces:
 - titulo: 'Perspicacia: «Josué»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
@@ -62,6 +85,9 @@ relaciones:
   - deuteronomio-1
   - deuteronomio-3
   - deuteronomio-31
+  - josue-1
+  - josue-3
+  - josue-4
   razon: 'Perspicacia «Josué», párr. 2 y 9: por mandato de Dios, Moisés lo nombró su sucesor (Dt 34:9; Jos 1:1, 2).'
   estado: verificado
 - tipo: acompana
@@ -74,6 +100,7 @@ relaciones:
   - exodo-33
   - numeros-11
   - deuteronomio-1
+  - josue-1
   razon: Éx 24:13 lo llama ayudante de Moisés y lo hace subir con él a la montaña.
   estado: verificado
 - tipo: pariente
@@ -93,8 +120,50 @@ relaciones:
   - deuteronomio-31
   - deuteronomio-32
   - deuteronomio-34
+  - josue-1
+  - josue-2
+  - josue-14
+  - josue-17
+  - josue-19
+  - josue-21
+  - josue-24
   razon: Éx 33:11 lo llama Josué hijo de Nun.
   estado: verificado
+- tipo: vivio_en
+  lugar: sitim
+  deducido: false
+  fuentes:
+  - josue-2
+  - it-sitim
+  - josue-3
+  razon: 'Jos 2:1: envía a los espías desde Sitim, donde acampaba Israel antes de cruzar el Jordán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: guilgal
+  deducido: false
+  fuentes:
+  - josue-4
+  - it-guilgal
+  - josue-5
+  - josue-9
+  - josue-10
+  - josue-14
+  razon: 'Jos 4:19, 20: tras cruzar, Josué acampa con el pueblo en Guilgal, que Perspicacia llama su primer campamento al
+    oeste del Jordán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: timnat-serah
+  deducido: false
+  fuentes:
+  - josue-19
+  - it-timnat-serah
+  - josue-24
+  razon: 'Jos 19:50: reconstruyó la ciudad que había pedido y se quedó a vivir en ella.'
+  estado: verificado
 perspicacia: 1200002523#1
+historial:
+- fecha: '2026-09-29'
+  cambio: Amaleq es la grafía de Perspicacia; la Traducción del Nuevo Mundo escribe Amalec (Éx 17:8-13).
+  fuente: exodo-17
 consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: asan
+nombre: Asán
+nombres:
+- nombre: Asán
+- nombre: Ain
+  nota: Nombre que le da Jos 21:16 en la lista de las ciudades levitas (Perspicacia «Ain», núm. 3; 1Cr 6:59).
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Khirbet ʽAsan
+  geometria:
+    tipo: punto
+    lat: 31.281372
+    lon: 34.797404
+  estado: alternativa
+  fuentes:
+  - it-asan
+  - openbible-geo
+  razon: Hay quien la pone aquí, unos 2,5 km al noroeste de Beer-Seba, junto al Nahal ʽAsan.
+  coord_fuente: openbible:ab5175f
+  coord_url: https://www.openbible.info/geo/ancient/ab5175f/ashan
+  nota: Primer punto de la ficha «Ashan» de OpenBible.
+- nombre: Tell Beit Mirsim
+  geometria:
+    tipo: punto
+    lat: 31.4558
+    lon: 34.9098
+  estado: alternativa
+  fuentes:
+  - it-asan
+  - openbible-geo
+  razon: Aharoni la ve en Tel Bet Mirsham, unos 25 km al nornoreste de Beer-Seba; OpenBible lo llama Tell Beit Mirsim.
+  coord_fuente: openbible:ab5175f
+  coord_url: https://www.openbible.info/geo/ancient/ab5175f/ashan
+  nota: Punto de Tell Beit Mirsim, segunda identificación de la ficha «Ashan» de OpenBible.
+resumen: Ciudad de la Sefelá dada primero a Judá, luego a Simeón y después a los levitas descendientes de Cohat. Jos 21:16
+  parece llamarla Ain. Perspicacia recoge dos sitios posibles.
+razon: 'Perspicacia «Asán» y «Ain», núm. 3; Jos 15:42; 19:7; 1Cr 6:59. OpenBible: solo los puntos.'
+fuentes:
+- it-asan
+- openbible-geo
+- josue-15
+- josue-19
+- it-ain
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Asán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000407
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
