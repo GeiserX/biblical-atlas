@@ -293,3 +293,11 @@
   to: timna-concubina-de-elifaz/same_as/timna-hija-de-seir
   removed_on: '2026-09-29'
   reason: La misma identidad queda escrita en la ficha de la concubina de Elifaz, cuyo id va primero.
+- from: ezequias-antepasado-de-sofonias/same_as/ezequias
+  to: ezequias/same_as/ezequias-antepasado-de-sofonias
+  removed_on: '2026-09-29'
+  reason: La misma identidad queda escrita en la ficha del rey Ezequías, cuyo id va primero.
+- from: ciaxares/accompanies/nabopolasar
+  to: ciaxares/tie/nabopolasar/ally
+  removed_on: '2026-09-29'
+  reason: 'Perspicacia «Medos, Media», párr. 12: se alió con Nabopolasar contra Asiria. Es una alianza, no una compañía.'

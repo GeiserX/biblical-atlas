@@ -19,6 +19,8 @@ sources:
 - 1-reyes-16
 - 1-reyes-21
 - tnm-a6-a
+- miqueas-6
+- si-miqueas
 links:
 - title: 'Perspicacia: «Acab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000138
@@ -58,5 +60,6 @@ relations:
   reason: Se casó con Jezabel, hija de Etbaal (1Re 16:31).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200000138#1
+checked_on: '2026-09-29'
 status: verified

@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ciaxares
+name: Ciaxares
+names:
+- name: Ciaxares
+- name: Ú-ma-kis-tar
+  note: Así lo llaman los registros babilonios, según Perspicacia «Medos, Media».
+perspicacia: null
+date:
+  from: -633
+  to: -631
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 634-632 a.e.c.
+summary: 'Rey de los medos. Se alió con Nabopolasar de Babilonia contra Asiria: los medos tomaron Asur en 634 a.e.c. y los
+  dos ejércitos, Nínive en 632. Después extendió su imperio hasta el río Halys. La Biblia no lo nombra.'
+reason: Perspicacia «Medos, Media», párr. 11 a 13; «Asiria», apartado «La caída del imperio», y «Nínive».
+sources:
+- it-medos
+- it-asiria
+- it-ninive
+- w89-salvacion-venganza
+links:
+- title: 'Perspicacia: «Medos, Media»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002956
+  type: perspicacia
+relations:
+- type: tie
+  person: nabopolasar
+  word: ally
+  inferred: true
+  sources:
+  - it-medos
+  - it-asiria
+  reason: 'Perspicacia «Medos, Media», párr. 12: se alió con Nabopolasar contra Asiria.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: media
+  inferred: true
+  sources:
+  - it-medos
+  reason: Perspicacia lo llama Ciaxares el medo y lo pone al frente de los reyes de Media.
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: La alianza con Nabopolasar pasa de accompanies con el texto «aliado» a tie con la palabra ally del vocabulario.
+  source: it-medos
+checked_on: '2026-09-29'
+status: verified

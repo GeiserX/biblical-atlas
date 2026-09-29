@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quir
+name: Quir
+names:
+- name: Quir
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Región de Elam, al este del Tigris
+  geometry:
+    type: zone
+    lat: 32.18922
+    lon: 48.25778
+    radius_km: 250
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-quir
+  - it-elam
+  - openbible-geo
+  reason: Perspicacia «Quir» recoge que, como Is 22:6 la nombra junto a Elam, se ha pensado que estaba en esa región. Añade
+    que hoy no se sabe dónde estaba.
+  note: 'Centro: punto de OpenBible para Elam (el de Susa). El radio de 250 km es nuestro.'
+  coord_source: openbible:a7e3a59
+  coord_url: https://www.openbible.info/geo/ancient/a7e3a59/elam
+summary: Tierra de la que Jehová sacó a los arameos para llevarlos a Siria. Amós anunció que volverían allí como desterrados;
+  se cumplió cuando Tiglat-piléser III tomó Damasco y deportó allí a su gente.
+reason: 'Perspicacia «Quir»; Am 1:5 y 9:7, con la referencia a 2Re 16:9. No sabemos dónde estaba: el mapa solo muestra la zona
+  que se ha propuesto.'
+not_claimed:
+- 'Que Quir estuviera en Elam: Perspicacia solo recoge esa opinión y dice que su sitio exacto se desconoce.'
+- 'Que los arameos fueran originarios de Quir: el texto solo dice que salieron de allí.'
+sources:
+- it-quir
+- openbible-geo
+- amos-9
+- amos-1
+links:
+- title: 'Perspicacia: «Quir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002619
+  type: perspicacia
+- title: Amós 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/9
+  type: bible
+- title: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

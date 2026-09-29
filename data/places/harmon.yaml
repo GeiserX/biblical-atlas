@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: harmon
+name: Harmón
+names:
+- name: Harmón
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Peñasco de Rimón (Rammun)
+  geometry:
+    type: point
+    lat: 31.929722
+    lon: 35.298889
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-harmon
+  - it-rimon
+  - openbible-geo
+  reason: Perspicacia «Harmón» lo ve posible si la Septuaginta, que dice «la montaña Remman», refleja el hebreo. «Rimón», núm.
+    4, pone ese peñasco en Rammun, a unos 6 km al este de Betel.
+  note: Punto de Rammun, la segunda resolución de OpenBible para Rimmon 1, porque Perspicacia identifica el peñasco con Rammun.
+  coord_source: openbible:a45acc3
+  coord_url: https://www.openbible.info/geo/ancient/a45acc3/rimmon-1
+summary: Sitio adonde, según Amós, serían echadas las mujeres ricas de Samaria. No se sabe qué designa la palabra hebrea;
+  quizá el peñasco de Rimón, cerca de Betel.
+reason: 'Perspicacia «Harmón»: no se puede precisar; otras versiones traducen «palacio» o «estiércol». Am 4:3. El punto del
+  candidato es de OpenBible.'
+not_claimed:
+- 'Que Harmón sea con seguridad un lugar con nombre propio: Perspicacia no sabe a qué alude la palabra hebrea.'
+- 'Que Harmón esté en el monte Hermón, como propone OpenBible: esa identificación no viene de jw.org.'
+sources:
+- it-harmon
+- it-rimon
+- openbible-geo
+- amos-4
+links:
+- title: 'Perspicacia: «Harmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001885
+  type: perspicacia
+- title: 'Perspicacia: «Rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003734
+  type: perspicacia
+- title: Amós 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

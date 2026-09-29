@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-gran-pez-se-traga-a-jonas
+title: Un gran pez se traga a Jonás
+date:
+  from: -843
+  to: -843
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 844 a.e.c.
+narrative_order:
+  series: jonas
+  order: 1017
+places: []
+people:
+- jonas-profeta
+present: []
+passages:
+- Jon 1:17-2:10
+summary: Jehová manda un pez enorme que se traga a Jonás. Pasa tres días y tres noches en su vientre y desde allí ora, agradecido,
+  prometiendo cumplir sus votos. Cuando Jehová lo ordena, el pez lo devuelve a la orilla.
+reason: 'Jon 1:17-2:10. Perspicacia «Jonás, Libro de» nota que no se dice qué pez era ni dónde dejó a Jonás: sin lugar ni presentes.
+  Año c. 844; su párr. 1 solo da el reinado de Jeroboán II (c. 844-804).'
+sources:
+- jonas-1
+- jonas-2
+- it-jonas
+- it-jonas-libro
+- si-jonas
+- si-3
+links:
+- title: Jonás 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1
+  type: bible
+- title: Jonás 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/2
+  type: bible
+- title: 'Perspicacia: «Jonás, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002504
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

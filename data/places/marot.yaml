@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+checked_on: '2026-09-29'
+status: verified
+id: marot
+name: Marot
+names:
+- name: Marot
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Beit Ummar, si es la Maarat de Jos 15:59
+  geometry:
+    type: point
+    lat: 31.621389
+    lon: 35.102222
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-marot
+  - it-maarat
+  - openbible-geo
+  reason: Perspicacia «Marot» recoge que hay quien la iguala a Maarat, y «Maarat» pone esta cerca de Beit Ummar, unos 11 km
+    al norte de Hebrón.
+  note: Punto de Beit Ummar, segunda resolución de OpenBible para Maroth, porque es el sitio que Perspicacia da a Maarat.
+  coord_source: openbible:a1ba491
+  coord_url: https://www.openbible.info/geo/ancient/a1ba491/maroth
+summary: 'Localidad que Miqueas nombra al anunciar el juicio sobre Judá y Jerusalén: sus habitantes esperaban algo bueno.
+  El nombre viene de una raíz que significa «ser amargo».'
+reason: 'Perspicacia «Marot»; Miq 1:12. Su sitio exacto se ignora: el candidato solo recoge una propuesta.'
+not_claimed:
+- 'Que Marot sea la Maarat de Jos 15:59: Perspicacia solo dice que hay quien lo piensa.'
+sources:
+- it-marot
+- it-maarat
+- openbible-geo
+- miqueas-1
+links:
+- title: 'Perspicacia: «Marot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002911
+  type: perspicacia
+- title: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  type: bible

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-eden
+name: Bet-Edén
+names:
+- name: Bet-Edén
+  note: Casa de Edén, según Perspicacia, que escribe Bet-edén.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bit-adini, entre el Éufrates y el Balij
+  geometry:
+    type: zone
+    lat: 36.7014
+    lon: 38.0865
+    radius_km: 60
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-bet-eden
+  - openbible-geo
+  reason: 'Perspicacia «Bet-edén»: hoy suele relacionarse con esa región de las inscripciones asirias, pero solo encaja si
+    Damasco representa a todos los reinos arameos, porque queda unos 480 km al norte.'
+  note: Punto de OpenBible para Bet-Edén; solo tomamos el punto. El radio de 60 km es nuestro.
+  coord_source: openbible:a84c5a4
+  coord_url: https://www.openbible.info/geo/ancient/a84c5a4/beth-eden
+summary: 'Ciudad o región que Amós nombra en su mensaje contra Damasco: Jehová acabaría con quien gobernaba allí. Quizá sus
+  habitantes sean los hijos de Edén de 2Re 19:12.'
+reason: Perspicacia «Bet-edén», párr. 1-3; Am 1:5 y su nota. El candidato solo se propone como posible.
+not_claimed:
+- 'Que sea con seguridad Bit-adini: Perspicacia pone condiciones a esa identificación.'
+sources:
+- it-bet-eden
+- openbible-geo
+- amos-1
+links:
+- title: 'Perspicacia: «Bet-edén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000681
+  type: perspicacia
+- title: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

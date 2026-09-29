@@ -17,8 +17,8 @@ coord_note: Khirbet el-Mefjir, primera identificación de OpenBible, unos 2 km a
   la da como propuesta, no como sitio seguro.
 summary: Primer campamento de Israel al oeste del Jordán, en el límite oriental de Jericó. Allí levantó Josué las doce piedras
   del río y desde allí dirigió la conquista.
-reason: 'Perspicacia «Guilgal», núm. 1, párr. 1 a 3; Jos 4:19, 20. No es el núm. 2, el de cerca de Betel. OpenBible: solo el
-  punto.'
+reason: 'Perspicacia «Guilgal», núm. 1, párr. 1 a 3; Jos 4:19, 20 y Miq 6:5. No es el núm. 2, el de cerca de Betel. OpenBible:
+  solo el punto.'
 sources:
 - it-guilgal
 - openbible-geo
@@ -29,6 +29,8 @@ sources:
 - josue-9
 - josue-10
 - josue-14
+- miqueas-6
+- w03-que-espera-jehova
 - jueces-2
 - jueces-3
 links:
@@ -44,5 +46,15 @@ links:
 - title: Josué 14 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
   type: bible
+- title: Miqueas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6
+  type: bible
+not_claimed:
+- 'Que sea con seguridad la Guilgal de Os 4:15; 9:15; 12:11 y Am 4:4; 5:5, que el atlas pone en guilgal-cerca-de-betel: Perspicacia
+  «Guilgal», núm. 2, solo admite que quizá fuera esta.'
+history:
+- date: '2026-09-29'
+  change: La razón cita también Miq 6:5, que nombra esta Guilgal; la ficha se fundió con la de Miqueas.
+  source: miqueas-6
 checked_on: '2026-09-29'
 status: verified

@@ -25,6 +25,7 @@ sources:
 - numeros-31
 - it-madian
 - deuteronomio-23
+- miqueas-6
 - josue-13
 - josue-24
 links:
@@ -49,6 +50,7 @@ relations:
   - it-beor
   - numeros-31
   - deuteronomio-23
+  - miqueas-6
   - josue-13
   - josue-24
   reason: 'Nú 22:5: Balaam hijo de Beor.'
