@@ -19,14 +19,23 @@ personas:
 - ananias-sumo-sacerdote
 - claudio-lisias
 pasajes:
-- Hch 22:30–23:11
-resumen: El sumo sacerdote Ananías manda golpearlo. Pablo se declara fariseo y habla de la resurrección, y fariseos
-  y saduceos se enfrentan. Esa noche el Señor le dice que dará testimonio en Roma.
+- Hch 22:30–23:10
+resumen: El sumo sacerdote Ananías manda golpear a Pablo. Él se presenta como fariseo que espera la resurrección, fariseos
+  y saduceos se enfrentan y el comandante manda sacarlo de allí.
 razon: Perspicacia «Ananías» (núm. 3) fecha el juicio hacia 56; «Pablo» (apartado «Detención»).
 fuentes:
 - it-ananias
 - it-pablo
 - hch-23
+- bt-23
 buscar: Pablo Sanedrín Ananías
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El v. 11 es otra escena (esa noche, en el cuartel, con el Señor): pasa al suceso el-senor-anima-a-pablo-en-jerusalen.'
+  fuente: hch-23
+- fecha: '2026-09-29'
+  cambio: Se quita la aparición de esa noche, que ahora es su propio suceso, y se añade que el comandante lo rescata (Hch
+    23:10).
+  fuente: hch-23
+consultado: '2026-09-29'
 estado: verificado

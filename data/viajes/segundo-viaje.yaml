@@ -31,7 +31,12 @@ fuentes:
 - hch-16
 - hch-17
 - hch-18
-consultado: '2026-09-27'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añaden Siria (Hch 15:41) y Galacia (Hch 16:6). Las paradas que heredaban c. 49-52 se acotan con el estudio 3:
+    el invierno de 49-50 en Asia Menor, 50 en Macedonia y Grecia, 52 a la vuelta.'
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -46,93 +51,138 @@ paradas:
     cronologia: tnm
     texto: finales del verano de 49
   nota: null
-  razon: 'Hch 15:35-40 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: finales del verano de
-    49.'
+  razon: 'Hch 15:35-40 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: finales del verano de 49.'
   fuentes:
   - hch-15
   - si-3
   estado: verificado
 - orden: 2
+  lugar: siria
+  referencia: Hch 15:41
+  fecha:
+    desde: 49
+    hasta: 49
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 49 e.c. (tras salir de Antioquía a finales del verano)
+  nota: null
+  razon: 'Hch 15:41: recorre Siria y Cilicia fortaleciendo las congregaciones. Sale de Antioquía a finales del verano de 49
+    (estudio 3, párr. 24).'
+  fuentes:
+  - hch-15
+  - si-3
+  estado: verificado
+- orden: 3
   lugar: cilicia
   referencia: Hch 15:41
   fecha:
     desde: 49
-    hasta: 52
-    precision: rango
+    hasta: 49
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 49 e.c. (tras salir de Antioquía a finales del verano)
   nota: '“Siria y Cilicia”: región, no ciudad.'
-  razon: Hechos 15:41 dice que recorrió Siria y Cilicia. Es una región, no una ciudad.
+  razon: 'Hch 15:41: recorre Siria y Cilicia fortaleciendo las congregaciones. Sale de Antioquía a finales del verano de 49
+    (estudio 3, párr. 24).'
   fuentes:
   - hch-15
+  - si-3
   estado: verificado
-- orden: 3
+- orden: 4
   lugar: derbe
   referencia: Hch 16:1
   fecha:
     desde: 49
-    hasta: 52
+    hasta: 50
     precision: rango
     aprox: true
     tipo: narrativa
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: 'entre 49 y 50 e.c. (tiempo narrativo: de la salida de Antioquía a la primavera en Troas)'
   nota: null
-  razon: 'Hch 16:1 nombra Derbe en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 16:1 nombra Derbe. Cae entre la salida de Antioquía, a finales del verano de 49, y la visión de Troas, en la
+    primavera de 50 (estudio 3, párr. 24).
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 4
+- orden: 5
   lugar: listra
   referencia: Hch 16:1-3
   fecha:
     desde: 49
-    hasta: 52
+    hasta: 50
     precision: rango
     aprox: true
     tipo: narrativa
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: 'entre 49 y 50 e.c. (tiempo narrativo: de la salida de Antioquía a la primavera en Troas)'
   nota: Timoteo se une.
-  razon: 'Hch 16:1-3 nombra Listra en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 16:1-3: en Listra se le une Timoteo. Cae entre la salida de Antioquía, a finales del verano de 49, y la visión
+    de Troas, en la primavera de 50 (estudio 3, párr. 24).'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 5
+- orden: 6
   lugar: frigia
   referencia: Hch 16:6
   fecha:
     desde: 49
-    hasta: 52
+    hasta: 50
     precision: rango
     aprox: true
     tipo: narrativa
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: 'entre 49 y 50 e.c. (tiempo narrativo: de la salida de Antioquía a la primavera en Troas)'
   nota: El texto nombra Frigia y Galacia como regiones.
-  razon: Hechos 16:6 nombra Frigia y Galacia como regiones que atravesaron.
+  razon: 'Hch 16:6: recorren Frigia. Cae entre la salida de Antioquía, a finales del verano de 49, y la visión de Troas, en
+    la primavera de 50 (estudio 3, párr. 24).'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 6
+- orden: 7
+  lugar: galacia
+  referencia: Hch 16:6
+  fecha:
+    desde: 49
+    hasta: 50
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'entre 49 y 50 e.c. (tiempo narrativo: de la salida de Antioquía a la primavera en Troas)'
+  nota: null
+  razon: 'Hch 16:6: recorren también la región de Galacia. Cae entre la salida de Antioquía, a finales del verano de 49, y
+    la visión de Troas, en la primavera de 50 (estudio 3, párr. 24).'
+  fuentes:
+  - hch-16
+  - si-3
+  estado: verificado
+- orden: 8
   lugar: misia
   referencia: Hch 16:7, 8
   fecha:
     desde: 49
-    hasta: 52
+    hasta: 50
     precision: rango
     aprox: true
     tipo: narrativa
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: 'entre 49 y 50 e.c. (tiempo narrativo: de la salida de Antioquía a la primavera en Troas)'
   nota: null
-  razon: 'Hch 16:7, 8 nombra Misia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 16:7, 8: llegan a Misia y la cruzan hasta Troas. Cae entre la salida de Antioquía, a finales del verano de 49,
+    y la visión de Troas, en la primavera de 50 (estudio 3, párr. 24).'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 7
+- orden: 9
   lugar: troas
   referencia: Hch 16:8-10
   fecha:
@@ -149,135 +199,149 @@ paradas:
   - hch-16
   - si-3
   estado: verificado
-- orden: 8
+- orden: 10
   lugar: samotracia
   referencia: Hch 16:11
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 50
   nota: null
-  razon: 'Hch 16:11 nombra Samotracia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 16:11: la travesía sigue a la visión de Troas, en la primavera de 50 (estudio 3, párr. 24).'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 9
+- orden: 11
   lugar: neapolis
   referencia: Hch 16:11
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 50
   nota: null
-  razon: 'Hch 16:11 nombra Neápolis en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 16:11: desembarcan en Neápolis al día siguiente de Samotracia, en la primavera de 50 (estudio 3, párr. 24).'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 10
+- orden: 12
   lugar: filipos
   referencia: Hch 16:12-40
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: Lidia; cárcel y terremoto.
-  razon: 'Hch 16:12-40 nombra Filipos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 16:12-40: primera congregación de Europa. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y Grecia,
+    antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-16
+  - si-3
   estado: verificado
-- orden: 11
+- orden: 13
   lugar: anfipolis
   referencia: Hch 17:1
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: null
-  razon: 'Hch 17:1 nombra Anfípolis en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 17:1: pasan por Anfípolis camino de Tesalónica. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y Grecia,
+    antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-17
+  - si-3
   estado: verificado
-- orden: 12
+- orden: 14
   lugar: apolonia
   referencia: Hch 17:1
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: null
-  razon: 'Hch 17:1 nombra Apolonia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 17:1: pasan por Apolonia camino de Tesalónica. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y Grecia,
+    antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-17
+  - si-3
   estado: verificado
-- orden: 13
+- orden: 15
   lugar: tesalonica
   referencia: Hch 17:1-9
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: null
-  razon: 'Hch 17:1-9 nombra Tesalónica en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 17:1-9: tres sábados en la sinagoga y el alboroto. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y
+    Grecia, antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-17
+  - si-3
   estado: verificado
-- orden: 14
+- orden: 16
   lugar: berea
   referencia: Hch 17:10-14
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: null
-  razon: 'Hch 17:10-14 nombra Berea en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 17:10-14: los de Berea examinan las Escrituras. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y Grecia,
+    antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-17
+  - si-3
   estado: verificado
-- orden: 15
+- orden: 17
   lugar: atenas
   referencia: Hch 17:15-34
   fecha:
-    desde: 49
-    hasta: 52
-    precision: rango
+    desde: 50
+    hasta: 50
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 50 e.c.
   nota: Areópago.
-  razon: 'Hch 17:15-34 nombra Atenas en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 17:15-34: predica en la plaza y en el Areópago. El estudio 3 (párr. 24) pone en 50 la obra en Macedonia y Grecia,
+    antes de llegar a Corinto en otoño.'
   fuentes:
   - hch-17
+  - si-3
   estado: verificado
-- orden: 16
+- orden: 18
   lugar: corinto
   referencia: Hch 18:1-17
   fecha:
@@ -289,79 +353,85 @@ paradas:
     cronologia: tnm
     texto: otoño de 50 a primavera de 52 (18 meses)
   nota: Áquila y Priscila; Galión.
-  razon: 'Hch 18:1-17 nombra Corinto en el recorrido. El estudio 3 da la fecha: otoño de 50 a primavera de 52 (18
-    meses).'
+  razon: 'Hch 18:1-17 nombra Corinto en el recorrido. El estudio 3 da la fecha: otoño de 50 a primavera de 52 (18 meses).'
   fuentes:
   - hch-18
   - si-3
   estado: verificado
-- orden: 17
+- orden: 19
   lugar: cencreas
   referencia: Hch 18:18
   fecha:
-    desde: 49
+    desde: 52
     hasta: 52
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 52
   nota: null
-  razon: 'Hch 18:18 nombra Cencreas en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 18:18: se corta el pelo por un voto al embarcarse. El estudio 3 (párr. 24 y 25) pone la salida de Corinto en
+    la primavera de 52 y la llegada a Antioquía en el verano.'
   fuentes:
   - hch-18
+  - si-3
   estado: verificado
-- orden: 18
+- orden: 20
   lugar: efeso
   referencia: Hch 18:19-21
   fecha:
-    desde: 49
+    desde: 52
     hasta: 52
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 52
   nota: null
-  razon: 'Hch 18:19-21 nombra Éfeso en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 18:19-21: breve parada en Éfeso camino de Siria. El estudio 3 (párr. 24 y 25) pone la salida de Corinto en la
+    primavera de 52 y la llegada a Antioquía en el verano.'
   fuentes:
   - hch-18
+  - si-3
   estado: verificado
-- orden: 19
+- orden: 21
   lugar: cesarea
   referencia: Hch 18:22
   fecha:
-    desde: 49
+    desde: 52
     hasta: 52
-    precision: rango
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 52 e.c.
   nota: null
-  razon: 'Hch 18:22 nombra Cesarea en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 18:22: desembarca en Cesarea. El estudio 3 (párr. 24 y 25) pone la salida de Corinto en la primavera de 52 y
+    la llegada a Antioquía en el verano.'
   fuentes:
   - hch-18
+  - si-3
   estado: verificado
-- orden: 20
+- orden: 22
   lugar: jerusalen
   referencia: Hch 18:22
   fecha:
-    desde: 49
+    desde: 52
     hasta: 52
-    precision: rango
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 49-52 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 52 e.c.
   nota: El texto no nombra la ciudad donde saluda a la congregación; Perspicacia lo entiende como Jerusalén.
-  razon: Hechos 18:22 no nombra la ciudad donde saluda a la congregación; el estudio 3 (párr. 24) y Perspicacia
-    «Pablo» entienden que fue Jerusalén.
+  razon: 'Hch 18:22: sube a saludar a la congregación, al parecer la de Jerusalén. El estudio 3 (párr. 24 y 25) pone la salida
+    de Corinto en la primavera de 52 y la llegada a Antioquía en el verano.'
   fuentes:
   - hch-18
   - it-pablo
+  - si-3
   estado: verificado
-- orden: 21
+- orden: 23
   lugar: antioquia-de-siria
   referencia: Hch 18:22
   fecha:
@@ -373,8 +443,7 @@ paradas:
     cronologia: tnm
     texto: probablemente verano de 52
   nota: null
-  razon: 'Hch 18:22 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: probablemente verano de
-    52.'
+  razon: 'Hch 18:22 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: probablemente verano de 52.'
   fuentes:
   - hch-18
   - si-3

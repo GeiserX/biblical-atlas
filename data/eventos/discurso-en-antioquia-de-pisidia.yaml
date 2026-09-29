@@ -18,14 +18,24 @@ personas:
 - pablo
 - bernabe
 pasajes:
-- Hch 13:14-52
-resumen: Tras la lectura de la Ley y los Profetas, Pablo repasa la historia de Israel hasta Jesús. Muchos gentiles
-  creen; los judíos hacen que los echen de la región.
-razon: Hch 13:14-50 y sus notas de estudio (13:15, 13:20, 13:48); Perspicacia «Pablo» (párr. 12).
+- Hch 13:14-43
+resumen: Un sábado, tras la lectura de la Ley y los Profetas, Pablo repasa la historia de Israel hasta Jesús, muerto y resucitado.
+  Al salir, les piden que vuelvan a hablar y muchos judíos y prosélitos los siguen.
+razon: Hch 13:14-43 y sus notas de estudio (13:15, 13:20, 13:43); Perspicacia «Pablo» (párr. 12).
 fuentes:
 - hch-13
 - nota-hechos-13
 - it-pablo
 buscar: Antioquía de Pisidia sinagoga Pablo
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El suceso acaba en 13:43; lo del sábado siguiente (13:44-52) pasa a su propio suceso, expulsados-de-antioquia-de-pisidia.
+  fuente: hch-13
+- fecha: '2026-09-29'
+  cambio: El resumen se ciñe a 13:14-43; la expulsión se cuenta en el suceso nuevo.
+  fuente: hch-13
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora los versículos y las notas del suceso recortado.
+  fuente: hch-13
+consultado: '2026-09-29'
 estado: verificado

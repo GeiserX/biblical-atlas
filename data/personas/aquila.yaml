@@ -17,7 +17,13 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200000320'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La relación con Roma pierde la fecha c. 56: Hch 18:2 dice que ya vivía allí antes de que Claudio echara a los judíos
+    (Perspicacia «Claudio»), y volvió hacia 56.'
+  fuente: hch-18
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: pariente
@@ -59,24 +65,18 @@ relaciones:
   fuentes:
   - it-aquila
   - hch-18
-  razon: Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co
-    16:19).
+  razon: Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).
   estado: verificado
 - tipo: vivio_en
   lugar: roma
-  fecha:
-    desde: 56
-    hasta: 56
-    precision: año
-    aprox: true
-    tipo: anclada
-    cronologia: tnm
-    texto: c. 56 e.c.
   deducido: false
   fuentes:
   - it-aquila
   - romanos-16
-  razon: Cuando Pablo escribe Romanos han vuelto a Roma, con una congregación en su casa (Ro 16:3-5).
+  - hch-18
+  - it-claudio
+  razon: 'Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación
+    en su casa (Ro 16:3-5).'
   estado: verificado
 - tipo: acompana
   persona: pablo
@@ -93,4 +93,21 @@ relaciones:
   - it-aquila
   - hch-18
   razon: Hacen tiendas juntos en Corinto y viajan con él hasta Éfeso (Hch 18:3, 18, 19).
+  estado: verificado
+- tipo: nacio_en
+  lugar: ponto
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  razon: Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.
+  estado: verificado
+- tipo: vivio_en
+  lugar: italia
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  - it-italia
+  razon: 'Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.'
   estado: verificado

@@ -18,6 +18,8 @@ fuentes:
 - it-berenice
 - nota-hechos-25
 - hch-25
+- bt-25
+- hch-26
 enlaces:
 - titulo: 'Perspicacia: «Berenice»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000655
@@ -25,7 +27,8 @@ enlaces:
 - titulo: Hechos 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200000655'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: pariente
@@ -50,5 +53,6 @@ relaciones:
   fuentes:
   - it-berenice
   - hch-25
+  - hch-26
   razon: Llegan juntos a Cesarea y entran juntos en la audiencia (Hch 25:13, 23).
   estado: verificado

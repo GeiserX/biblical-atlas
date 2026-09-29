@@ -19,6 +19,8 @@ fuentes:
 - it-festo
 - bt-25
 - hch-25
+- nota-hechos-25
+- hch-26
 enlaces:
 - titulo: 'Perspicacia: «Festo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001512
@@ -26,7 +28,8 @@ enlaces:
 - titulo: Hechos 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001512'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: sucede_a
@@ -60,4 +63,22 @@ relaciones:
   - it-festo
   - hch-25
   razon: Llega a Cesarea y juzga allí a Pablo (Hch 25:1, 6).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  relacion: custodio
+  relacion_inversa: custodiado por
+  fecha:
+    desde: 58
+    hasta: 58
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 58 e.c.
+  deducido: false
+  fuentes:
+  - hch-25
+  - it-festo
+  razon: 'Hch 25:4, 21: al llegar dispone que Pablo siga preso en Cesarea y lo mantiene arrestado hasta mandarlo a César.'
   estado: verificado

@@ -45,6 +45,7 @@ fuentes:
 - salmos-105
 - lucas-3
 - juan-4
+- hechos-7
 enlaces:
 - titulo: 'Perspicacia: «Jacob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
@@ -63,6 +64,7 @@ relaciones:
   - mateo-1
   - genesis-48
   - lucas-3
+  - hechos-7
   razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
   estado: verificado
 - tipo: pariente
@@ -136,6 +138,7 @@ relaciones:
   - genesis-46
   - salmos-105
   - it-cam
+  - hechos-7
   razon: 'Perspicacia «Jacob», párr. 38 y 41: llegó a Egipto en 1728 y murió allí en 1711, tras 17 años (Gé 47:28).'
   estado: verificado
 - tipo: murio_en
@@ -154,6 +157,7 @@ relaciones:
   - si-3
   - genesis-47
   - genesis-49
+  - hechos-7
   razon: 'Perspicacia «Jacob», párr. 41: murió en 1711 a.e.c. después de vivir 17 años en Egipto (Gé 47:28).'
   estado: verificado
 - tipo: vivio_en
@@ -260,6 +264,7 @@ relaciones:
   - genesis-46
   - salmos-105
   - it-canaan
+  - hechos-7
   razon: 'Gé 37:1: siguió viviendo en Canaán, donde su padre había residido como extranjero.'
   estado: verificado
 - tipo: vivio_en

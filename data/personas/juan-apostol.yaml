@@ -52,9 +52,15 @@ fuentes:
 - juan-19
 - juan-20
 - juan-21
+- hechos-1
+- hechos-3
+- hechos-4
+- hechos-5
+- hechos-8
 no_confundir_con:
 - juan-el-bautista
 - juan-marcos
+- juan-gobernante-judio
 no_afirmamos:
 - 'Que el emperador que lo desterró fuera Domiciano y el que lo liberó, Nerva: Perspicacia lo da como creencia general,
   no como dato bíblico.'
@@ -98,6 +104,8 @@ relaciones:
   - lucas-5
   - juan-20
   - juan-21
+  - hechos-3
+  - hechos-4
   razon: Enviados juntos a Samaria (Hch 8:14); Perspicacia «Juan», párr. 30.
   estado: verificado
 - tipo: vivio_en
@@ -180,6 +188,7 @@ relaciones:
   - juan-19
   - juan-20
   - juan-21
+  - hechos-4
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente

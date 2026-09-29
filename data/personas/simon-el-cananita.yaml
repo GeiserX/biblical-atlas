@@ -19,6 +19,7 @@ fuentes:
 - mateo-10
 - marcos-3
 - lucas-6
+- hechos-1
 relaciones:
 - tipo: acompana
   persona: jesus

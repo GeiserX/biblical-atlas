@@ -28,6 +28,7 @@ fuentes:
 - bt-7
 - hechos-8
 - hch-21
+- hechos-6
 relaciones:
 - tipo: acompana
   persona: esteban
@@ -55,6 +56,15 @@ relaciones:
   - hch-21
   razon: 'Hch 21:8, 9: Pablo se aloja en su casa de Cesarea; Perspicacia (párr. 9) lo fecha hacia 56.'
   estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - hechos-6
+  - it-felipe
+  razon: 'Hch 6:5-7: es uno de los siete de la congregación de Jerusalén, hasta que la persecución lo lleva a Samaria (Hch
+    8:1, 5).'
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Felipe»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003466
@@ -62,5 +72,6 @@ enlaces:
 - titulo: Hechos 8 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
   tipo: biblia
+perspicacia: 1200003466#2
 consultado: '2026-09-29'
 estado: verificado

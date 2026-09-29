@@ -13,8 +13,8 @@ orden_relato:
   serie: hechos
   orden: 1129
 lugares:
-- antioquia-de-siria
 - jerusalen
+- antioquia-de-siria
 personas:
 - pablo
 - bernabe
@@ -32,5 +32,10 @@ fuentes:
 - hechos-11
 - hechos-12
 buscar: ministración de socorro Jerusalén
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Jerusalén pasa a ser el primer lugar: allí entregan la ayuda a los ancianos y de allí vuelven con Marcos (Hch 11:30;
+    12:25; estudio 3, párr. 21).'
+  fuente: hechos-11
+consultado: '2026-09-29'
 estado: verificado

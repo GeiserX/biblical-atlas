@@ -21,6 +21,9 @@ nombres:
 - nombre: Puerta de las Ovejas
   nota: Puerta del norte, cerca del templo, junto al estanque de Betzata (Jn 5:2). Perspicacia ve probable que sea la que
     reconstruyeron los sacerdotes con Nehemías (Ne 3:1) u otra en el mismo sitio.
+- nombre: Fortaleza Antonia
+  nota: Cuartel de la tropa romana pegado al recinto del templo, en su ángulo noroeste; allí subieron a Pablo tras el motín
+    (nota de estudio de Hch 21:34).
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -76,6 +79,18 @@ fuentes:
 - juan-10
 - juan-11
 - juan-12
+- hechos-1
+- hch-2
+- hechos-4
+- hechos-7
+- hechos-8
+- hch-9
+- hechos-11
+- hechos-12
+- hch-18
+- hch-21
+- hch-22
+- hch-25
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

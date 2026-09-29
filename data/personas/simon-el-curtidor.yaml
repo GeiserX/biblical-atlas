@@ -12,6 +12,7 @@ fuentes:
 - it-simon
 - hechos-10
 - bt-9
+- hch-9
 no_confundir_con:
 - pedro
 - simon-el-mago
@@ -23,6 +24,7 @@ relaciones:
   fuentes:
   - it-simon
   - hechos-10
+  - hch-9
   razon: 'Hch 10:6: su casa estaba junto al mar.'
   estado: verificado
 enlaces:
@@ -32,5 +34,14 @@ enlaces:
 - titulo: Hechos 10 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/10
   tipo: biblia
+perspicacia: 1200004131#9
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 36 e.c.
 consultado: '2026-09-29'
 estado: verificado

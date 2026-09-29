@@ -11,6 +11,7 @@ fuentes:
 - it-hamor
 - genesis-33
 - genesis-34
+- hechos-7
 enlaces:
 - titulo: 'Perspicacia: «Hamor»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001845
@@ -26,6 +27,7 @@ relaciones:
   - it-hamor
   - genesis-33
   - genesis-34
+  - hechos-7
   razon: 'Gé 33:19: los hijos de Hamor tenían el campo junto a Siquem; en Gé 34:20 habla a los hombres de su ciudad.'
   estado: verificado
 - tipo: murio_en

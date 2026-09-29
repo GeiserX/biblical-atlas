@@ -14,7 +14,6 @@ personas:
 - jesus
 pasajes:
 - 1Co 15:7
-- Hch 1:14
 resumen: Pablo cuenta que el resucitado se apareció a Santiago antes de hacerlo a todos los apóstoles. Perspicacia
   cree que es su medio hermano, que hasta entonces no creía en él. El texto no dice dónde.
 razon: Perspicacia «Santiago», apartado 4 (párr. 3), identifica a este Santiago con el medio hermano. La tabla A7-H
@@ -30,5 +29,10 @@ orden_relato:
   serie: a7
   orden: 125
 buscar: Jesús se aparece a Santiago
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Hch 1:14 no narra la aparición: solo pone a los hermanos de Jesús entre los discípulos que oran. Sale de pasajes
+    y sigue en fuentes como apoyo.'
+  fuente: hechos-1
 consultado: '2026-09-29'
 estado: verificado

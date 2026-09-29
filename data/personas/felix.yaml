@@ -26,7 +26,8 @@ enlaces:
 - titulo: Hechos 24 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/24
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001502'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: pariente
@@ -53,4 +54,25 @@ relaciones:
   - it-felix
   - hch-23
   razon: Tiene a Pablo preso en el palacio de Herodes, en Cesarea (Hch 23:35).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  relacion: custodio
+  relacion_inversa: custodiado por
+  fecha:
+    desde: 56
+    hasta: 58
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56-58 e.c.
+  deducido: false
+  fuentes:
+  - hch-23
+  - hch-24
+  - it-felix
+  - si-3
+  razon: Recibe a Pablo en Cesarea y lo mantiene vigilado dos años, con cierta libertad, hasta que llega Festo (Hch 23:33-35;
+    24:23, 27).
   estado: verificado

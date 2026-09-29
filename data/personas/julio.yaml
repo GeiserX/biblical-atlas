@@ -11,8 +11,8 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 58-59 e.c.
-resumen: Oficial romano de la banda de Augusto encargado de Pablo en el viaje a Roma. Lo trató con bondad y, en
-  el naufragio, impidió que mataran a los presos.
+resumen: Oficial romano del regimiento de Augusto encargado de Pablo en el viaje a Roma. Lo trató con bondad y, en el naufragio,
+  impidió que mataran a los presos.
 razon: Perspicacia «Julio»; Hch 27:1-44. El viaje sale hacia 58 y llega a Roma hacia 59 (estudio 3, párr. 27).
 fuentes:
 - it-julio
@@ -25,7 +25,13 @@ enlaces:
 - titulo: Hechos 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200002553'
+historial:
+- fecha: '2026-09-29'
+  cambio: «Banda de Augusto» pasa a «regimiento de Augusto», la forma de la TNM actual en Hch 27:1; Perspicacia «Julio» aún
+    usa la antigua.
+  fuente: hch-27
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: acompana

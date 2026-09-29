@@ -25,6 +25,7 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
+perspicacia: '1200000307'
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -82,4 +83,13 @@ relaciones:
   - hch-18
   razon: Priscila y Áquila lo llevan aparte y le enseñan lo que le faltaba (Hch 18:26); Perspicacia «Apolos» dice que
     le ayudaron a entender mejor la enseñanza cristiana.
+  estado: verificado
+- tipo: nacio_en
+  lugar: alejandria
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-apolos
+  - it-alejandria
+  razon: Hch 18:24 lo llama natural de Alejandría; Perspicacia «Alejandría» la da como su ciudad natal.
   estado: verificado

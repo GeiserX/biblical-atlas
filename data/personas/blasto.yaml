@@ -26,5 +26,17 @@ enlaces:
 - titulo: Hechos 12 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200000770'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: acompana
+  persona: herodes-agripa-i
+  relacion: encargado de su casa
+  relacion_inversa: señor
+  deducido: false
+  fuentes:
+  - hechos-12
+  - it-blasto
+  razon: Hch 12:20 lo pone al frente de la casa real; según la nota de estudio, literalmente, de su dormitorio.
+  estado: verificado

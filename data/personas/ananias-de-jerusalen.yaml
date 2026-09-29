@@ -30,6 +30,14 @@ relaciones:
   - it-ananias
   razon: Perspicacia lo sitúa en la congregación de Jerusalén.
   estado: verificado
+- tipo: murio_en
+  lugar: jerusalen
+  deducido: true
+  fuentes:
+  - hechos-5
+  - it-ananias
+  razon: 'Hch 5:5, 6: cae muerto ante Pedro y los jóvenes lo entierran. Perspicacia lo pone en la congregación de Jerusalén.'
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Ananías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000267
@@ -37,5 +45,6 @@ enlaces:
 - titulo: Hechos 5 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/5
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200000267#1
+consultado: '2026-09-29'
 estado: verificado

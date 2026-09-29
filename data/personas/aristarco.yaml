@@ -26,7 +26,8 @@ enlaces:
 - titulo: Hechos 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200000365'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -35,6 +36,7 @@ relaciones:
   fuentes:
   - it-aristarco
   - hch-20
+  - hch-27
   razon: Hch 20:4 y 27:2 lo dan como de Tesalónica.
   estado: verificado
 - tipo: acompana

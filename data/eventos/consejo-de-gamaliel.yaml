@@ -14,10 +14,12 @@ orden_relato:
   orden: 527
 lugares:
 - jerusalen
+- monte-moria
 personas:
 - pedro
 - juan-apostol
 - gamaliel-fariseo
+- caifas
 pasajes:
 - Hch 5:27-42
 resumen: Pedro y los apóstoles dicen al Sanedrín que tienen que obedecer a Dios antes que a los hombres. Gamaliel
@@ -30,8 +32,9 @@ fuentes:
 - it-gamaliel
 - hechos-5
 - bt-5
+- si-3
 nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
   de 33 y la conversión de Saulo en 34).'
 buscar: Gamaliel
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

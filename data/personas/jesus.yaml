@@ -111,6 +111,11 @@ fuentes:
 - juan-19
 - juan-20
 - juan-21
+- hechos-1
+- hch-2
+- hch-13
+- hch-18
+- hch-23
 no_afirmamos:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -143,6 +148,7 @@ relaciones:
   - juan-1
   - juan-18
   - juan-19
+  - hch-2
   razon: Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).
   estado: verificado
 - tipo: vivio_en
@@ -171,6 +177,7 @@ relaciones:
   - juan-2
   - juan-6
   - juan-19
+  - hechos-1
   razon: 'Lu 2:7: María da a luz a su primer hijo.'
   estado: verificado
 - tipo: pariente
@@ -226,6 +233,7 @@ relaciones:
   - hch-22
   - 1-corintios-15
   - it-pablo
+  - hch-26
   razon: Hch 9:3-6 y 22:6-10 cuentan la luz y la voz de Jesús en el camino; en 1Co 15:8 Pablo se pone el último entre aquellos
     a quienes se apareció. Perspicacia «Pablo» (párr. 5) lo narra.
   estado: verificado
@@ -292,6 +300,8 @@ relaciones:
   - lucas-3
   - lucas-18
   - lucas-20
+  - hch-2
+  - hch-13
   razon: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
   estado: verificado
 - tipo: pariente

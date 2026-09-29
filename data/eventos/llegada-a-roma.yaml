@@ -11,7 +11,7 @@ fecha:
   texto: c. 59 e.c.
 orden_relato:
   serie: hechos
-  orden: 2814
+  orden: 2816
 lugares:
 - roma
 personas:
@@ -30,5 +30,10 @@ fuentes:
 - it-aristarco
 - it-julio
 buscar: Pablo llega a Roma
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Iba en 2814, antes que la salida de los hermanos (2815); pero Hch 28:15, 16 cuenta que los encontraron en el camino
+    y después entraron en Roma.
+  fuente: hch-28
+consultado: '2026-09-29'
 estado: verificado

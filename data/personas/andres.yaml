@@ -18,6 +18,7 @@ fuentes:
 - lucas-6
 - juan-6
 - juan-12
+- hechos-1
 relaciones:
 - tipo: pariente
   persona: pedro

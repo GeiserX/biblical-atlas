@@ -37,6 +37,15 @@ relaciones:
   - it-guibeah
   razon: Perspicacia «Guibeah», núm. 2, dice que era su hogar (1Sa 10:26).
   estado: verificado
+- tipo: pariente
+  persona: quis-hijo-de-ner
+  relacion: padre
+  deducido: false
+  fuentes:
+  - hch-13
+  - it-quis
+  razon: Hch 13:21 lo llama Saúl hijo de Quis; Perspicacia «Quis», núm. 3.
+  estado: verificado
 perspicacia: '1200003847'
 consultado: '2026-09-29'
 estado: verificado

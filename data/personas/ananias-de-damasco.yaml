@@ -11,7 +11,7 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 34 e.c.
-desambiguacion: El discípulo de Damasco (Hch 9). No es el marido de Safira ni el sumo sacerdote de Hch 23.
+desambiguacion: El discípulo de Damasco (Hch 9). No es el marido de Safira ni el sumo sacerdote que mandó golpear a Pablo.
 no_confundir_con:
 - ananias-sumo-sacerdote
 - ananias-de-jerusalen
@@ -28,7 +28,12 @@ enlaces:
 - titulo: Hechos 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200000267#2
+historial:
+- fecha: '2026-09-29'
+  cambio: La desambiguación deja de citar Hch 23, donde este Ananías no sale; no_confundir_con ya enlaza al sumo sacerdote.
+  fuente: hch-23
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -37,5 +42,6 @@ relaciones:
   fuentes:
   - it-ananias
   - hch-22
+  - hch-9
   razon: Hch 22:12 dice que los judíos que vivían en Damasco hablaban bien de él.
   estado: verificado
