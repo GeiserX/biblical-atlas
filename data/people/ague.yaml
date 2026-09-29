@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ague
+name: Agué
+names:
+- name: Agué
+perspicacia: '1200000134'
+summary: Hararita, padre de Samá, uno de los tres primeros guerreros de David.
+reason: Perspicacia «Agué»; 2Sa 23:11.
+sources:
+- it-ague
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Agué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000134
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

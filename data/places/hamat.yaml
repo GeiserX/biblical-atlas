@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hamat
+name: Hamat
+names:
+- name: Hamat
+type: city
+lat: 35.1365
+lon: 36.75
+precision: point
+coord_source: openbible:ac62cbc
+coord_url: https://www.openbible.info/geo/ancient/ac62cbc/hamath-1
+coord_note: Hama, a orillas del Orontes, la ciudad actual que Perspicacia identifica con Hamat.
+summary: Capital de un pequeño reino de Siria junto al Orontes, unos 190 km al norte de Damasco. En tiempos de David era independiente;
+  su rey Toi lo felicitó por vencer a Hadadézer.
+reason: 'Perspicacia «Hamat, hamateo», párr. 1 y 2 y apartado «Relaciones con Israel»; 2Sa 8:9, 10. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-hamat
+- openbible-geo
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Hamat, hamateo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001834
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

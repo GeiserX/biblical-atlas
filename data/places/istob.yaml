@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: istob
+name: Istob
+names:
+- name: Istob
+- name: Hombres de Tob
+  note: Otra lectura que da la nota al pie de 2Sa 10:6, 8.
+type: kingdom
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Tierra de Tob, en torno a Et Tayibeh
+  geometry:
+    type: point
+    lat: 32.563333
+    lon: 36.243889
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-tob
+  - it-istob
+  - openbible-geo
+  reason: Perspicacia «Tob» ve posible que Istob signifique «hombres de Tob». Punto de OpenBible de Tob.
+  coord_source: openbible:aaff3e1
+  coord_url: https://www.openbible.info/geo/ancient/aaff3e1/tob
+  note: Primer punto de la ficha «Tob» de OpenBible, el mismo de la ficha `tob`.
+summary: Pequeño reino que mandó 12.000 hombres a luchar a sueldo de los ammonitas contra David y salió derrotado. Hoy no
+  se sabe dónde estaba.
+reason: 'Perspicacia «Istob» y «Tob»; 2Sa 10:6, 8. Sin sitio conocido: damos Tob como candidato.'
+not_claimed:
+- 'Que sea la tierra de Tob donde vivió Jefté: Perspicacia solo lo ve posible.'
+sources:
+- it-istob
+- it-tob
+- openbible-geo
+- 2-samuel-10
+links:
+- title: 'Perspicacia: «Istob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002221
+  type: perspicacia
+- title: 'Perspicacia: «Tob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004435
+  type: perspicacia
+- title: 2 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

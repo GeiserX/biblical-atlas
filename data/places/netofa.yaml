@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: netofa
+name: Netofá
+names:
+- name: Netofá
+type: city
+lat: 31.66765
+lon: 35.22103
+precision: uncertain
+coord_source: openbible:a9ad5ae
+coord_url: https://www.openbible.info/geo/ancient/a9ad5ae/netophah
+coord_note: Khirbet Badd Faluh, primera identificación de OpenBible; Perspicacia la da solo como probable.
+summary: Pequeña población de Judá, probablemente unos 4 km al sursureste de Belén. De allí eran Maharái y Héleb, guerreros
+  de David.
+reason: 'Perspicacia «Netofá»; 2Sa 23:28, 29. OpenBible: solo el punto.'
+sources:
+- it-netofa
+- openbible-geo
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Netofá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003239
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

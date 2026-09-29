@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guitaim
+name: Guitaim
+names:
+- name: Guitaim
+type: city
+lat: 31.9318
+lon: 34.873556
+precision: uncertain
+coord_source: openbible:ab98f8c
+coord_url: https://www.openbible.info/geo/ancient/ab98f8c/gittaim
+coord_note: Ramla, segunda identificación de OpenBible. Perspicacia no conoce el sitio y solo recoge la propuesta de un lugar
+  cercano a la moderna Ramleh.
+summary: Lugar adonde huyeron los de Beerot, sin que se sepa por qué, y donde vivían aún como extranjeros. Tras el exilio
+  se asentaron allí benjamitas.
+reason: 'Perspicacia «Guitaim» y «Beerot»; 2Sa 4:3. OpenBible: solo el punto.'
+sources:
+- it-guitaim
+- it-beerot
+- openbible-geo
+- 2-samuel-4
+links:
+- title: 'Perspicacia: «Guitaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001714
+  type: perspicacia
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliam-hijo-de-ahitofel
+name: Eliam
+names:
+- name: Eliam
+perspicacia: 1200001296#2
+disambiguation: Eliam hijo de Ahitofel, guerrero de David. Perspicacia ve posible («Eliam», «Ahitofel») o probable («Amiel»,
+  núm. 3) que sea el padre de Bat-Seba.
+summary: Hijo de Ahitofel el guilonita y uno de los treinta guerreros de David.
+reason: Perspicacia «Eliam», núm. 2, y «Ahitofel»; 2Sa 23:34.
+sources:
+- it-eliam
+- it-ahitofel
+- 2-samuel-23
+- it-amiel
+links:
+- title: 'Perspicacia: «Eliam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001296
+  type: perspicacia
+relations:
+- type: kin
+  person: ahitofel
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:34: Eliam, hijo de Ahitofel el guilonita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: eliam-padre-de-bat-seba
+  certainty: possible
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-eliam
+  - it-ahitofel
+  - it-amiel
+  reason: '2Sa 23:34. Perspicacia «Eliam», núm. 2, y «Ahitofel» lo ven posible, y «Amiel», núm. 3, probable: el padre de Bat-Seba
+    sería este hijo de Ahitofel. Queda possible hasta que decida el dueño.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:34: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

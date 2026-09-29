@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abner-ofrece-un-pacto-a-david
+title: Abner ofrece un pacto a David
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 3012
+places:
+- hebron
+people:
+- abner
+- david
+present:
+- david
+passages:
+- 2Sa 3:12, 13
+summary: Abner envía mensajeros a David para pactar con él y ponerle a Israel de su lado. David acepta, pero le exige que
+  antes le devuelva a Mical, la hija de Saúl.
+reason: '2Sa 3:12, 13; David residía en Hebrón (3:2, 20). Abner habla por mensajeros y no está allí. Fecha: Perspicacia «David»
+  e «Is-bóset»; «Hebrón» la retrasaría hasta c. 1070.'
+sources:
+- 2-samuel-3
+- it-abner
+- si-3
+- it-david
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

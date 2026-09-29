@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: husai
+name: Husái
+names:
+- name: Husái
+- name: Husai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002114'
+summary: Arkita, amigo leal de David. Cuando el rey huía de Absalón, volvió a Jerusalén por encargo suyo, fingió servir al
+  nuevo rey y consiguió que el consejo de Ahitofel se desechara.
+reason: Perspicacia «Husai»; 2Sa 15:32-37; 16:16-19.
+sources:
+- it-husai
+- 2-samuel-15
+- 2-samuel-16
+- it-arkita
+- 2-samuel-17
+links:
+- title: 'Perspicacia: «Husai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002114
+  type: perspicacia
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: tie
+  person: david
+  word: friend
+  sources:
+  - 2-samuel-15
+  - 2-samuel-16
+  - it-husai
+  reason: 2Sa 15:37 y 16:16, 17 lo llaman amigo de David; la nota al pie da también «confidente».
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

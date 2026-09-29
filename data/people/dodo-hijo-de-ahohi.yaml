@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodo-hijo-de-ahohi
+name: Dodó
+names:
+- name: Dodó
+perspicacia: 1200001207#2
+disambiguation: Dodó el benjaminita, padre de Eleazar; no el de Isacar, antepasado de Tolá, ni Dodó de Belén, padre de Elhanán.
+distinct_from:
+- dodo-de-isacar
+- dodo-de-belen
+summary: Benjaminita del linaje de Ahohí, padre de Eleazar, uno de los tres primeros guerreros de David. Perspicacia cree
+  que quizá sea el Dodai de 1 Crónicas 27.
+reason: Perspicacia «Dodó», núm. 2; 2Sa 23:9.
+sources:
+- it-dodo
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Dodó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001207
+  type: perspicacia
+relations:
+- type: kin
+  person: ahoah
+  word: ancestor
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-dodo
+  reason: 2Sa 23:9 lo llama hijo de Ahohí; Perspicacia «Dodó», núm. 2, entiende que descendía de él.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

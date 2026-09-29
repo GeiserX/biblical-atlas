@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tahtim-hodsi
+name: Tahtim-Hodsí
+names:
+- name: Tahtim-Hodsí
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Norte del país, entre Galaad y Dan
+  geometry:
+    type: zone
+    lat: 32.718
+    lon: 35.672
+    radius_km: 60
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-tahtim-hodsi
+  - openbible-geo
+  reason: Perspicacia «Tahtim-hodsí» no da el sitio exacto; solo la pone en el norte, entre Galaad y Dan-Jaán.
+  coord_source: calculation
+  note: 'Centro: punto medio entre los puntos de OpenBible de Galaad y Dan. Radio nuestro, la mitad de esa distancia.'
+summary: Tierra del norte que recorrieron los hombres de Joab con el censo, entre Galaad y Dan-Jaán. No se sabe dónde estaba
+  exactamente.
+reason: Perspicacia «Tahtim-hodsí»; 2Sa 24:6.
+sources:
+- it-tahtim-hodsi
+- openbible-geo
+- 2-samuel-24
+links:
+- title: 'Perspicacia: «Tahtim-hodsí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004308
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

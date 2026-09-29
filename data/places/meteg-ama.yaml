@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: meteg-ama
+name: Meteg-Amá
+names:
+- name: Meteg-Amá
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Gat, que nombra en su lugar el relato paralelo de 1Cr 18:1
+  geometry:
+    type: point
+    lat: 31.69972
+    lon: 34.84694
+  status: alternative
+  sources:
+  - it-meteg-ama
+  - openbible-geo
+  - 2-samuel-8
+  reason: Perspicacia ve posible que el nombre designe en figura a una ciudad filistea principal, y Crónicas dice Gat. Punto
+    de OpenBible para esa identificación, el de Gat.
+  coord_source: openbible:a0a52ec
+  coord_url: https://www.openbible.info/geo/ancient/a0a52ec/metheg-ammah
+  checked_on: '2026-09-29'
+summary: 'Lugar que David arrebató a los filisteos. Ningún sitio conocido lleva ese nombre: quizá sea una manera figurada
+  de llamar a una ciudad filistea principal. Crónicas habla de Gat y sus pueblos.'
+reason: Perspicacia «Meteg-amá»; 2Sa 8:1; 1Cr 18:1. OpenBible da como primera identificación Gat; solo tomamos el punto.
+sources:
+- it-meteg-ama
+- openbible-geo
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Meteg-amá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003021
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

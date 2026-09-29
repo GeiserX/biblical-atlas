@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: absalon-cruza-el-jordan-con-amasa-al-frente-del-ejercito
+title: Absalón cruza el Jordán y pone a Amasá al frente del ejército
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 17024
+places:
+- galaad
+- rio-jordan
+people:
+- absalon
+- amasa-hijo-de-itra
+- joab-hijo-de-zeruya
+present:
+- absalon
+- amasa-hijo-de-itra
+passages:
+- 2Sa 17:24-26
+summary: Absalón pasa el Jordán con los hombres de Israel, da el mando del ejército a su primo Amasá en lugar de Joab y acampa
+  en la tierra de Galaad.
+reason: '2Sa 17:24-26; Perspicacia «Amasá», núm. 1. Fecha: después del pacto con David (después de 1070) y antes de que Gad
+  y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-17
+- it-amasa
+- si-3
+links:
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

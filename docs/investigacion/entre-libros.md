@@ -10,13 +10,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **El autor de una cita.** Si el texto bíblico no lo nombra, se queda en la `note` del tramo aunque la nota de estudio lo nombre (Elifaz en 1Co 3:19, Isaías en 1Co 14:21), como en Romanos. Si el texto lo nombra, va en `mentions`.
 - **Una identificación que la nota solo ve posible** («podría ser la misma ocasión») deja el suceso en `mentions`, sin añadirle el pasaje. Si la da por probable o «al parecer», el pasaje entra.
 
-## Para 2 Samuel
-
-- **Rabá (2Sa 11:1; 12:26-31).** Es `raba`, con Filadelfia en `names`.
-- **David huye de Absalón.** Cuando 2 Samuel cree el suceso (2Sa 15:13-17:22), añade «Sl 3» a sus pasajes y ese suceso al tramo 1-8 de `data/coverage/salmos.yaml`.
-- **Cus el benjaminita.** Existe (`cus-el-benjaminita`) desde el Salmo 7. Perspicacia duda entre la corte de Saúl y Simeí; si 1 o 2 Samuel lo aclara, se añade la relación.
-- **Rehob.** `rehob` (Nú 13:21) no lleva Bet-Rehob en `names`, porque Perspicacia solo lo ve probable. 2Sa 10:6, 8 decide.
-
 ## Para 2 Reyes y 2 Crónicas
 
 - **Jehoiadá y Baraquías.** Cuando se cree a Jehoiadá, falta un `same_as` entre `baraquias` y su id, en la ficha cuyo id va primero, con `inferred: true` y `certainty: possible` (Perspicacia «Baraquías»: Jehoiadá pudo tener dos nombres; Mt 23:35).
@@ -71,13 +64,11 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Alejandro.** Ya existen `alejandro-hijo-de-simon` (`1200000192#2`, Mr 15:21), `alejandro-pariente-de-anas` (`#3`, Hch 4:6) y `alejandro-de-efeso` (`#4`, Hch 19:33). El de 1Ti 1:20 es la entrada núm. 5 y el calderero de 2Ti 4:14, la núm. 6; Perspicacia ve posible que sean el mismo, así que van dos fichas y un `same_as` con `certainty: possible`. Todos llevan `distinct_from` entre sí.
 
-## Para 2 Samuel y 1 Crónicas
+## Para 1 Crónicas (desde los Evangelios)
 
-- **Natán, hijo de David.** `natan-hijo-de-david` (clave `1200003184#4`) existe desde Lu 3:31. 2Sa 5:14, 1Cr 3:5 y 1Cr 14:4 usan ese id; `natan-profeta` sigue sin clave.
+- **Natán, hijo de David.** `natan-hijo-de-david` (clave `1200003184#4`) existe desde Lu 3:31 y 2 Samuel 5 ya lo usa. 1Cr 3:5 y 14:4 usan ese id; el profeta es `natan-profeta` (clave `1200003184#2`).
 - **Abías, el de la división sacerdotal.** `abias-de-tiempos-de-david` (clave `1200000041#4`) existe desde Lu 1:5. 1Cr 24:10 usa ese id y añade su pasaje.
-- **David quiere construir una casa a Dios (2Sa 7:1-3).** Hch 7:46 lo recuerda y `pacto-con-david` no incluye esos versículos. El suceso que cree 2 Samuel añade «Hch 7:46» a sus pasajes y va en el tramo 44-50 de Hechos 7.
 - **Cainán y Selá.** `sela-hijo-de-arpaksad` lleva dos padres: Arpaksad (Gé 11:12) y, con `status: pending`, `cainan-hijo-de-arpaksad` (Lu 3:36), que falta en el texto hebreo. 1Cr 1:18 no cambia ninguno de los dos.
-
 ## Para 1 y 2 Reyes
 
 - **Sarepta (1Re 17).** `sarepta` existe desde Lu 4:26. Faltan la relación `elias-profeta` `lived_in` `sarepta` (1Re 17:9, 10) y el suceso de la viuda; cuando exista, va en `mentions` del tramo Lucas 4:23-27.
@@ -223,14 +214,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Apolos y Pablo.** `apolos` lleva `accompanies` `pablo` con la palabra `fellow_worker`, c. 55 (1Co 3, 4 y 16): trabajaron el mismo campo en momentos distintos y solo se les ve cerca al escribirse 1 Corintios. Tit 3:13 añade su capítulo a las fuentes de esa relación con un `anadir` y puede alargar su fecha con un `cambiar` sobre esa relación.
 - **Tito y Pablo.** `tito` lleva tres relaciones `accompanies` con `pablo`: c. 49 (Gál 2), c. 55 (2 Corintios, ya con la palabra `companion` y con 2Co 2, 7, 8 y 12) y c. 61-64 (Tito). `apply.py` funde un `anadir` de relación en la primera con el mismo tipo y persona, la de 49. Para tocar la de 55 o la de 61-64, 2 Corintios usó un `cambiar` de toda la lista `relations`, con su `antes`; si choca, va a `preguntas` para una edición a mano.
 
-## Para 2 Samuel (desde Josué)
-
-- **Ids de Josué.** `guilgal` es Perspicacia «Guilgal», núm. 1 (2Sa 19:15). 1 Samuel ya usa `bet-aven`, `bet-semes`, `quiryat-jearim`, `ecron`, `asquelon`, `ziclag`, `queila`, `maon`, `carmelo-de-juda`, `soco`, `estemoa`, `jatir` y `saaraim`; 2 Samuel reutiliza los que nombre.
-- **Debir de Gad.** `debir-de-gad` (Jos 13:26); Perspicacia cree que es Lo-debar (2Sa 9:4; 17:27). 2 Samuel decide si crea `lo-debar` o la reutiliza.
-- **Jafía.** El hijo de David (2Sa 5:15) es Perspicacia «Jafía», núm. 2: otro id y `distinct_from` con `jafia-rey-de-lakis`.
-- **Gaas.** 2Sa 23:30 nombra los valles torrenciales de Gaas, junto a `monte-gaas`.
-- **El libro de Jasar.** Jos 10:13 y 2Sa 1:18 lo citan; no lleva ficha.
-
 ## Para 1 Reyes (desde Josué)
 
 - **Hiel (1Re 16:34).** La razón de `josue-maldice-al-que-reconstruya-jerico` cita 1Re 16:34: cuando 1 Reyes 16 se cierre, ese suceso va en su tramo y el de Hiel cumple la maldición.
@@ -257,17 +240,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Pasajes sin poner.** Hch 7:44, 45 (el tabernáculo entra con Josué) puede ir en `entrada-en-canaan`; Hch 7:15, 16 y Heb 11:22, en `entierran-los-huesos-de-jose-en-siquem`.
 
-## Para 2 Samuel (desde 1 Samuel)
-
-- **Nahás (2Sa 10:1, 2; 1Cr 19:1, 2).** `nahas-rey-de-ammon` es Perspicacia «Nahás», núm. 1, que pone en la misma entrada al de Jabés y al que trató bien a David, aunque ve posible que este fuera su hijo. 2 Samuel decide si lo reutiliza o crea otra ficha.
-- **Familia de Saúl.** Existen `jonatan-hijo-de-saul`, `mical`, `merab`, `adriel`, `abner`, `ner`, `abinadab-hijo-de-saul`, `malki-sua` e `isvi-hijo-de-saul`. 2Sa 21:8 nombra a Barzilai el meholatita, padre de Adriel: se crea con su número de Perspicacia «Barzilai» y la relación va en `adriel`. 2Sa 3:15 usa `paltiel-hijo-de-lais` y `lais-de-galim`.
-- **Esposas y hermanas de David.** 2Sa 2:2 y 3:2, 3 usan `ahinoam-esposa-de-david` y `abigail-esposa-de-david`. La Abigaíl hermana de David (2Sa 17:25; 1Cr 2:16) es la núm. 2 de Perspicacia «Abigail»: otro id y `distinct_from` en las dos. `zeruya` y `abisai` existen; falta la relación de Zeruyá con David.
-- **Tras la muerte de Saúl.** El amalequita de 2Sa 1:1-16 (`saul` ya dice en `not_claimed` que mintió), David y los de Jabés (2Sa 2:4-7) y los huesos llevados a Zelá (2Sa 21:12-14) usan `muerte-de-saul`, `los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos` y `jabes-galaad`.
-- **Otros ids.** `gad-profeta` (2Sa 24; 1Cr 21; 29:29), `goliat` (2Sa 21:19), `abiatar`, `ahimelec-hijo-de-ahitub` y la «Cueva de Adulam» de `adulam` (2Sa 23:13).
-
 ## Para 1 Reyes (desde 1 Samuel)
 
-- **La casa de Elí.** Cuando 1 Reyes cree la destitución de Abiatar (1Re 2:26, 27, 35), `un-hombre-de-dios-anuncia-el-juicio-contra-la-casa-de-eli` va en su `mentions`. El sacerdote Sadoc (Perspicacia «Sadoc», núm. 1) aún no tiene ficha; `sadoc-hijo-de-azor` es el de Mt 1.
+- **La casa de Elí.** Cuando 1 Reyes cree la destitución de Abiatar (1Re 2:26, 27, 35), `un-hombre-de-dios-anuncia-el-juicio-contra-la-casa-de-eli` va en su `mentions`. El sacerdote Sadoc (Perspicacia «Sadoc», núm. 1) es `sadoc-hijo-de-ahitub` desde 2 Samuel; `sadoc-hijo-de-azor` es el de Mt 1.
 
 ## Para 1 Crónicas (desde 1 Samuel)
 
@@ -286,12 +261,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para Esdras, Hageo y Zacarías (desde 1 Samuel)
 
 - **La clave de Josué el sumo sacerdote.** `josue-sumo-sacerdote` no lleva `perspicacia`: es la núm. 4 de «Josué» (`1200002523`), pero su ficha enlaza «Jesúa» (`1200002446`). El libro que lo lea elige el documento.
-
-## Para 2 Samuel (desde Jueces)
-
-- **La muerte de Abimélec.** `muerte-de-abimelec` lleva 2Sa 11:21 en `passages`: va en el tramo de 2 Samuel 11. Ese versículo llama Jerubeset a Gedeón; el nombre se añade a `names` de `gedeon`.
-- **Lehí.** La razón de `lehi` cita 2Sa 23:11, la batalla de Samá: va en ese tramo.
-- **Tob y Bet-Rehob (2Sa 10:6, 8).** Bet-Rehob es `bet-rehob`. Perspicacia solo cree que Istob sea `tob`: ficha aparte o mención, según su artículo.
 
 ## Para 1 y 2 Crónicas (desde Jueces)
 
@@ -314,3 +283,27 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para Hebreos (desde Jueces)
 
 - **Los jueces de Heb 11:32-34.** Gedeón, Barac, Sansón y Jefté son `gedeon`, `barac`, `sanson` y `jefte`; van en `mentions` del tramo.
+
+## Para 1 Crónicas (desde 2 Samuel)
+
+- **Otros nombres que Perspicacia solo da por probables.** Esbaal (1Cr 8:33; 9:39) lleva ficha aparte y un `same_as` probable hacia `is-boset`, en la ficha de Esbaal. Merib-baal (1Cr 8:34; 9:40) también, pero el `same_as` va en `mefiboset-hijo-de-jonatan`, cuyo id va primero.
+- **Hijos de David (1Cr 3:1-9; 14:3-7).** Reutilizan `amnon-hijo-de-david`, `kileab` (Daniel en `names`), `absalon`, `adonias-hijo-de-david`, `sefatias-hijo-de-david`, `itream`, `samua-hijo-de-david` (Simeá), `sobab-hijo-de-david`, `natan-hijo-de-david`, `salomon`, `ibhar`, `elisua` (el Elisamá de 1Cr 3:6), `nefeg-hijo-de-david`, `jafia-hijo-de-david`, `elisama-hijo-de-david`, `eliada-hijo-de-david` (Beeliadá) y `elifelet-hijo-de-david` (el núm. 3). El Elifélet núm. 2 (Elpélet) y Noga son fichas nuevas; el primero, con otro id y `distinct_from`. Las relaciones de Samúa y Sobab con `bat-seba` citan 1Cr 3:5.
+- **Madres y abuelos.** Amiel, padre de Bat-Seba (1Cr 3:5), es `eliam-padre-de-bat-seba`: no se crea otra ficha con la clave `1200000233#3`. Maacá, madre de Absalón, es `maaca-hija-de-talmai`.
+- **Hermanas de David (1Cr 2:16, 17).** `david/kin/zeruya` y `david/kin/abigail-hija-de-nahas` citan 1Cr 2:16 y van en su tramo. Jéter, padre de Amasá, es `itra` (Perspicacia «Itrá» remite a «Jéter», núm. 6) y Amasá es `amasa-hijo-de-itra`.
+- **Zebadías (1Cr 27:7).** Hijo de `asahel-hijo-de-zeruya`: la relación `kin` `father` va en su ficha.
+- **Obed-Edom (1Cr 15:18-24; 16:38).** Los núm. 2 y 3 de Perspicacia llevan ficha aparte y un `same_as` posible con `obed-edom-el-guitita`, en la ficha cuyo id va primero.
+- **1Cr 18.** Tou es `toi`, Hadoram es `joram-hijo-de-toi` y Tibhat es `betah`. Cun no entra en `names` de `berota`. Savsá (1Cr 18:16) lleva ficha aparte y un `same_as` probable con `seraya-secretario-de-david`, en la ficha cuyo id va primero.
+- **Los poderosos de David (1Cr 11:10-47; 27).** Reutilizan `joseb-basebet` (no otra ficha con la clave de Jasobeam núm. 2), `ittai-hijo-de-ribai` y los demás ids de 2 Samuel 23. Quedan por escribir los `same_as` de Zalmón con Ilai, Héleb con Heldai, Paarái con Naarai, Elifélet con Elifal y Azmávet núm. 1 con núm. 2, según diga cada artículo. Jonatán (1Cr 27:32) es probablemente `jonatan-hijo-de-sama`. Sagué (1Cr 11:34, clave `1200003928`) es ficha nueva con un `same_as` probable hacia `sama-hijo-de-ague` (Perspicacia «Sagué»); la relación `father` de `jonatan-hijo-de-sague` se decide allí, para que no tenga dos padres. Las hazañas de 1Cr 11:11, 20-23 ya son sucesos de 2 Samuel 23 (`joseb-basebet-mata-a-800-hombres-con-su-lanza`, que Perspicacia no iguala con los 300 de 1Cr 11:11; `abisai-mata-a-300-hombres-con-su-lanza` y las tres de Benaya): van en `entities` o, la de Jasobeam, en `mentions`.
+- **Gigantes (1Cr 20:4-8).** Lahmí, hermano de Goliat, es ficha nueva. Jaír, padre de Elhanán, se crea con la clave `1200002305#4` y un `same_as` probable en `jaare-oreguim`. `sibecai-mata-a-saf-en-gob`, `elhanan-derriba-a-un-gigante-en-gob` y `jonatan-mata-al-gigante-de-gat` ya llevan esos versículos.
+- **Sucesos con pasaje de Crónicas.** Los de 2 Samuel 5-8, 10-12, 21, 23 y 24 ya citan 1Cr 11-21 en `passages`: van en `entities` de sus tramos. 1Cr 15:1-24 y 16:4-43 pueden añadirse a `david-sube-el-arca-a-la-ciudad-de-david` o ser sucesos propios.
+
+## Para 1 Reyes (desde 2 Samuel)
+
+- **Ids de la corte.** 1 Reyes 1-4 reutiliza `adonias-hijo-de-david`, `sadoc-hijo-de-ahitub`, `benaya-hijo-de-jehoiada`, `natan-profeta`, `jonatan-hijo-de-abiatar`, `simei-hijo-de-guera`, `barzilai-el-galaadita`, `adoniram` (Adoram en `names`), `jehosafat-hijo-de-ahilud` y `hiram-rey-de-tiro`. Sisá (1Re 4:3) lleva ficha aparte y un `same_as` probable con `seraya-secretario-de-david`, en la ficha cuyo id va primero.
+- **La muerte de Abner.** 1Re 2:5, 32 la recuerda: esos versículos van en `passages` de `joab-mata-a-abner` y el suceso en su tramo. `joab-mata-a-amasa` ya lleva esos versículos.
+
+## Para Isaías, Jeremías y Ezequiel (desde 2 Samuel)
+
+- **Monte Perazim (Is 28:21).** `baal-perazim` y `david-vence-a-los-filisteos-en-baal-perazim` van en `mentions` del tramo.
+- **Kimham (Jer 41:17).** Perspicacia no sabe si el alojamiento de Kimham es de `kimham`: lo decide Jeremías.
+- **Berotá (Ez 47:16).** Reutiliza `berota`.

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: toi
+name: Toi
+names:
+- name: Toi
+- name: Tou
+  note: Así lo llama el relato paralelo de 1Cr 18:9, 10.
+perspicacia: '1200004443'
+summary: Rey de Hamat cuando aún era un reino independiente. Hadadézer de Zobá había guerreado muchas veces contra él; cuando
+  David lo venció, Toi le envió a su hijo Joram con felicitaciones y regalos.
+reason: Perspicacia «Toi, Tou» y «Hamat, hamateo», apartado «Relaciones con Israel»; 1Cr 18:9-11; 2Sa 8:9-12.
+sources:
+- it-toi
+- it-hamat
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Toi, Tou»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004443
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+relations:
+- type: holds_office
+  place: hamat
+  office: king
+  sources:
+  - 2-samuel-8
+  - it-toi
+  reason: '2Sa 8:9: el rey Toi de Hamat.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: hadadezer
+  word: enemy
+  sources:
+  - 2-samuel-8
+  - it-hamat
+  reason: '2Sa 8:10: Toi y Hadadézer estaban en guerra a menudo. Perspicacia «Hamat» ve en Hadadézer al enemigo que Toi y
+    David compartían.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

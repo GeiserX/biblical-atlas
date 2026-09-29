@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-el-piratonita
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#2
+disambiguation: Benaya el piratonita, de Efraín; no Benaya hijo de Jehoiadá, jefe de la guardia de David.
+distinct_from:
+- benaya-hijo-de-jehoiada
+summary: Efraimita de Piratón, uno de los treinta guerreros de David. Estuvo al frente de la división del undécimo mes.
+reason: Perspicacia «Benaya», núm. 2; 2Sa 23:30.
+sources:
+- it-benaya
+- it-piraton
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000632
+  type: perspicacia
+relations:
+- type: lived_in
+  place: piraton
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - it-piraton
+  reason: '2Sa 23:30: un piratonita; Perspicacia «Piratón, piratonita».'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:30: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

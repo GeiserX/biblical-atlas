@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-perdona-a-simei-junto-al-jordan
+title: David perdona a Simeí junto al Jordán
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 19015
+places:
+- rio-jordan
+- guilgal
+- bahurim
+people:
+- david
+- simei-hijo-de-guera
+- ziba
+- abisai
+present:
+- david
+- simei-hijo-de-guera
+- ziba
+- abisai
+passages:
+- 2Sa 19:15-23
+summary: Judá acude a Guilgal a escoltar al rey. Simeí baja con mil benjaminitas, cae a los pies de David y pide perdón; Zibá
+  cruza con los suyos. David frena a Abisái y jura a Simeí que no morirá.
+reason: '2Sa 19:15-23; Perspicacia «Simeí», núm. 12. Fecha: desde 1070 (estudio 3) hasta hacia 1040, final de 2 Samuel (tabla
+  de los libros).'
+sources:
+- 2-samuel-19
+- it-simei
+- it-ziba
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

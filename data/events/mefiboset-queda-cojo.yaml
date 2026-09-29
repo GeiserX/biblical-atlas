@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mefiboset-queda-cojo
+title: Mefibóset queda cojo de niño
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 4004
+  after: muerte-de-saul
+places:
+- valle-de-jezreel
+people:
+- mefiboset-hijo-de-jonatan
+present: []
+passages:
+- 2Sa 4:4
+summary: Cuando desde Jezreel llega la noticia de la muerte de Saúl y Jonatán, la nodriza huye con Mefibóset, de cinco años,
+  en brazos; con las prisas el niño cae y queda cojo.
+reason: 2Sa 4:4; Perspicacia «Mefibóset», núm. 2. Jonatán murió en 1078 («Jonatán», núm. 2). La noticia llega de Jezreel,
+  que «Jezreel», núm. 5, párr. 2, cuenta en la llanura; no se sabe dónde vivía el niño.
+sources:
+- 2-samuel-4
+- it-mefiboset
+- it-jonatan
+- it-jezreel
+links:
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

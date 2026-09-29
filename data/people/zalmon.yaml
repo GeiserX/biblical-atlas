@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zalmon
+name: Zalmón
+names:
+- name: Zalmón
+perspicacia: 1200004656#1
+summary: Ahohíta, uno de los treinta guerreros de David. Perspicacia cree que es el Ilai de 1Cr 11:29.
+reason: Perspicacia «Zalmón», núm. 1; 2Sa 23:28.
+sources:
+- it-zalmon
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Zalmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004656
+  type: perspicacia
+relations:
+- type: kin
+  person: ahoah
+  word: ancestor
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-ahoah
+  reason: 2Sa 23:28 lo llama ahohíta; Perspicacia «Ahoah» cuenta a los ahohítas entre sus descendientes.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:28: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

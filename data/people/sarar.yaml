@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sarar
+name: Sarar
+names:
+- name: Sarar
+- name: Sacar
+  note: Así lo llama 1Cr 11:35.
+perspicacia: '1200003953'
+summary: Hararita; su hijo Ahiam fue uno de los treinta de David. 1 Crónicas lo llama Sacar (1Cr 11:35).
+reason: Perspicacia «Sarar»; 2Sa 23:33.
+sources:
+- it-sarar
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Sarar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003953
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

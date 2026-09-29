@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-sama
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#4
+disambiguation: Jonatán sobrino de David, hijo de su hermano Samá (Simeí en 2Sa 21:21), entrada núm. 4 de Perspicacia «Jonatán»;
+  no el hijo de Saúl ni el levita de Miqueas.
+distinct_from:
+- jonatan-hijo-de-saul
+- jonatan-levita
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-sague
+summary: Sobrino de David, hijo de su hermano Simeí, llamado también Samá y Simeá. En una guerra en Gat mató a un gigante
+  de los refaím con veinticuatro dedos que no dejaba de retar a Israel.
+reason: Perspicacia «Jonatán», núm. 4; 2Sa 21:20-22.
+sources:
+- it-jonatan
+- it-samah
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  type: perspicacia
+relations:
+- type: kin
+  person: sama-hijo-de-jese
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-jonatan
+  reason: '2Sa 21:21: Jonatán hijo de Simeí, el hermano de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: uncle
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-jonatan
+  reason: 2Sa 21:21 hace a su padre hermano de David; Perspicacia «Jonatán», núm. 4, lo llama sobrino del rey.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-jonatan
+  reason: '2Sa 21:22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Jonatán.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

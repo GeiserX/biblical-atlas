@@ -1,0 +1,6412 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "2-samuel",
+ "agente": "escritor-2-samuel",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "ziclag",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-ziqlag",
+      "1-samuel-30",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "1-samuel-13",
+      "it-jonatan",
+      "1-samuel-14",
+      "1-samuel-19",
+      "1-samuel-20",
+      "1-samuel-23",
+      "1-samuel-31",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 13:16, 22 lo llama hijo de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "friend",
+     "inferred": false,
+     "sources": [
+      "1-samuel-18",
+      "1-samuel-19",
+      "it-jonatan",
+      "1-samuel-20",
+      "1-samuel-23",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 18:1, 3: nace entre los dos una gran amistad y hacen un pacto; en 19:2 Jonatán lo protege.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "died_in",
+     "place": "monte-guilboa",
+     "inferred": false,
+     "sources": [
+      "1-samuel-31",
+      "it-guilboa",
+      "it-jonatan",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 31:1, 2, 8: los filisteos lo mataron en el monte Guilboa, en la batalla de 1078 (Perspicacia «Jonatán», núm. 2).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "died_in",
+     "place": "monte-guilboa",
+     "inferred": false,
+     "sources": [
+      "1-samuel-31",
+      "it-saul",
+      "it-jonatan",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 31:1-6: herido por los arqueros, se echó sobre su propia espada en el monte Guilboa. Perspicacia «Jonatán», núm. 2, fecha la batalla en 1078.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ziclag",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-guilboa",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-guilboa",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Montañas de Guilboa",
+     "note": "Así lo llama la endecha de David por Saúl y Jonatán (2Sa 1:21)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "david-rey-en-hebron",
+   "campo": "people",
+   "valores": [
+    "ahinoam-esposa-de-david",
+    "abigail-esposa-de-david"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "david-rey-en-hebron",
+   "campo": "passages",
+   "valores": [
+    "2Sa 2:11"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-en-hebron",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "2-samuel",
+    "order": 2001
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-en-hebron",
+   "campo": "summary",
+   "antes": "Muerto Saúl, los hombres de Judá ungen a David en Hebrón. Tiene treinta años y reina allí siete años y medio mientras Is-bóset gobierna a las demás tribus.",
+   "despues": "Muerto Saúl, los hombres de Judá ungen a David en Hebrón. Tiene treinta años y reina allí siete años y medio; Is-Bóset reina dos años sobre las demás tribus (2Sa 2:10).",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12, y su reinado es de dos años (2Sa 2:10), no todo el tiempo de David en Hebrón.",
+    "source": "2-samuel-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "periods",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "date": {
+      "from": -1076,
+      "to": -1069,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "1077-1070 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-david",
+      "it-hebron",
+      "si-3"
+     ],
+     "reason": "2Sa 2:1-3, 11: sube a Hebrón con los suyos y reina allí siete años y seis meses, de 1077 a 1070 a.e.c. (estudio 3).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-zeruya",
+      "it-david"
+     ],
+     "reason": "1Cr 2:16 da a Zeruyá por hermana de los hijos de Jesé; Perspicacia «Zeruyá» y «David» ven posible que solo fuera media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ahinoam-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-ahinoam",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 25:43: también se había casado con Ahinoam, de Jezreel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-abigail",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahinoam-esposa-de-david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahinoam-esposa-de-david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-ahinoam"
+     ],
+     "reason": "2Sa 2:2, 3: sube con David a Hebrón y se quedan a vivir allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahinoam-esposa-de-david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jezreel-de-juda",
+     "inferred": true,
+     "sources": [
+      "1-samuel-25",
+      "it-jezreel",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 25:43: era de Jezreel. La referencia remite a la Jezreel de la montaña de Judá, y Perspicacia «Jezreel», núm. 3, lo da como probable.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abigail-esposa-de-david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abigail-esposa-de-david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-abigail"
+     ],
+     "reason": "2Sa 2:2, 3: sube con David a Hebrón y se quedan a vivir allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabal",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabal",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "1-samuel-27",
+      "1-samuel-30",
+      "it-nabal",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 25:3: su esposa se llamaba Abigaíl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabal",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "carmelo-de-juda",
+     "inferred": false,
+     "sources": [
+      "1-samuel-30",
+      "it-nabal",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 30:5 lo llama Nabal el carmelita. Según Perspicacia «Nabal», sus ovejas pastaban en Carmelo de Judá y allí se esquilaban.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ner",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "1-samuel-14",
+      "it-abner",
+      "1-samuel-26",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 14:50, 51: Abner hijo de Ner.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "accompanies",
+     "person": "saul",
+     "caption": "jefe del ejército de",
+     "inferred": false,
+     "sources": [
+      "1-samuel-14",
+      "it-abner",
+      "1-samuel-17",
+      "1-samuel-26",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 14:50: era el jefe del ejército de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "is-boset",
+     "word": "master",
+     "inferred": true,
+     "sources": [
+      "2-samuel-2",
+      "it-joab",
+      "it-is-boset"
+     ],
+     "reason": "2Sa 2:8, 12: lo hace rey y sale a Gabaón con sus siervos. Perspicacia «Joab», núm. 2, dice que mandaba sus fuerzas.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "summary",
+   "antes": "Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-bóset en Mahanaim; más tarde pactó con David, y Joab lo mató.",
+   "despues": "Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-Bóset en Mahanaim; más tarde pactó con David, y Joab lo mató.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12.",
+    "source": "2-samuel-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "1-samuel-26",
+      "it-zeruya",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 26:6 llama a Abisái hijo de Zeruyá y hermano de Joab; Perspicacia «Zeruyá» la da por madre de los dos.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "asahel-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-asahel"
+     ],
+     "reason": "2Sa 2:18, 22: Joab, Abisái y Asahel son los tres hijos de Zeruyá, y Abner llama a Joab hermano de Asahel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-joab"
+     ],
+     "reason": "2Sa 2:13, 30: sale al frente de los siervos de David (Perspicacia «Joab», núm. 2); en 14:19, 20, 22 él mismo se presenta como siervo del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "1-samuel-26",
+      "it-abisai",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 26:6 lo llama hijo de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "1-samuel-26",
+      "it-abisai",
+      "2-samuel-2"
+     ],
+     "reason": "1Sa 26:6 lo presenta como hermano de Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "asahel-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-asahel"
+     ],
+     "reason": "2Sa 2:18 nombra a Abisái y a Asahel entre los tres hijos de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jabes-galaad",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "summary",
+   "antes": "Lugar al este del Jordán donde unos ángeles salieron al encuentro de Jacob cuando volvía de Harán. Más tarde hubo allí una ciudad, capital de Is-bóset y refugio de David.",
+   "despues": "Lugar al este del Jordán donde unos ángeles salieron al encuentro de Jacob cuando volvía de Harán. Más tarde hubo allí una ciudad, capital de Is-Bóset y refugio de David.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12.",
+    "source": "2-samuel-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Estanque de Gabaón",
+     "note": "Allí se enfrentaron los hombres de Abner y los de Joab (2Sa 2:13). Perspicacia no asegura que sea el gran pozo excavado en el-Jib."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "araba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-jordan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "belen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "date": {
+      "from": -1076,
+      "to": -1069,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "1077-1070 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-david",
+      "it-sefatias",
+      "si-3"
+     ],
+     "reason": "2Sa 3:2, 5, 19-22: reinaba en Hebrón, donde le nacieron seis hijos; Perspicacia «Sefatías», núm. 2, fecha ese reinado en 1077-1070.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "maaca-hija-de-talmai",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-maaca"
+     ],
+     "reason": "2Sa 3:3 la da como madre de su hijo Absalón; Perspicacia «Maacá», núm. 5, la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "haguit",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-haguit"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Adonías; Perspicacia «Haguit» la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abital",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-abital"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Sefatías; Perspicacia «Abital» la cuenta entre sus esposas.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "egla",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-egla"
+     ],
+     "reason": "2Sa 3:5: Itream era hijo de su esposa Eglá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "ahinoam-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:2: Ahinoam de Jezreel le dio su primogénito.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:3: Abigaíl, la viuda de Nabal, le dio a Kileab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "mical",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:14: David la reclama como su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:3: el tercer hijo de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "hebron",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:3, 5: nació en Hebrón.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "maaca-hija-de-talmai",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-maaca"
+     ],
+     "reason": "2Sa 3:3: hijo de Maacá, hija de Talmái.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "talmai-hijo-de-amihud",
+     "word": "grandfather",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-talmai"
+     ],
+     "reason": "2Sa 3:3: su madre era hija de Talmái; Perspicacia «Talmai», núm. 2, lo llama su abuelo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahinoam-esposa-de-david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahinoam-esposa-de-david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jezreel-de-juda",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:2 la llama otra vez Ahinoam de Jezreel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abigail-esposa-de-david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabal",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nabal",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:3: Abigaíl era la viuda de Nabal.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "carmelo-de-juda",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:3 lo llama Nabal el carmelita.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hebron",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guesur",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "rizpa",
+     "word": "concubine",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-rizpa"
+     ],
+     "reason": "2Sa 3:7: Saúl había tenido una concubina llamada Rizpá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "ner",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:23, 25, 28, 37: Abner hijo de Ner.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "ally",
+     "date": {
+      "from": -1076,
+      "to": -1074,
+      "precision": "range",
+      "approx": true,
+      "type": "narrative",
+      "chronology": "tnm",
+      "text": "c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)"
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-abner",
+      "it-david",
+      "it-is-boset"
+     ],
+     "reason": "2Sa 3:12, 13, 21: Abner propone un pacto a David, que lo acepta; Perspicacia «Abner» dice que se pasó a su lado. Fecha como su muerte («David», párr. 20).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "hebron",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-abner"
+     ],
+     "reason": "2Sa 3:27, 32: Joab lo mata en la puerta de Hebrón, donde lo entierran.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "summary",
+   "antes": "Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-Bóset en Mahanaim; más tarde pactó con David, y Joab lo mató.",
+   "despues": "Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-Bóset en Mahanaim; más tarde pactó con David, y Joab lo mató en Hebrón.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Se dice dónde lo mató Joab: en Hebrón (2Sa 3:27).",
+    "source": "2-samuel-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:13: Mical, la hija de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "is-boset",
+     "word": "brother",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-is-boset"
+     ],
+     "reason": "2Sa 3:13, 14: los dos son hijos de Saúl; Perspicacia «Is-bóset» la llama su hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "paltiel-hijo-de-lais",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "paltiel-hijo-de-lais",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "mical",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:15: le quitan a Mical, su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "lais-de-galim",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:15: Paltiel hijo de Lais.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "lais-de-galim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "asahel-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-asahel"
+     ],
+     "reason": "2Sa 3:27: mató a Abner por la sangre de su hermano Asahel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:39: David llama a Joab y a Abisái los hijos de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:30: Abisái, hermano de Joab, tomó parte con él en la muerte de Abner.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "asahel-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-asahel"
+     ],
+     "reason": "2Sa 3:30: Asahel era hermano de Joab y de Abisái.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3"
+     ],
+     "reason": "2Sa 3:39: David llama a Joab y a Abisái los hijos de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "daniel",
+   "campo": "distinct_from",
+   "valores": [
+    "kileab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "maaca-hijo-de-nacor",
+   "campo": "distinct_from",
+   "valores": [
+    "maaca-hija-de-talmai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "talmai-hijo-de-anac",
+   "campo": "distinct_from",
+   "valores": [
+    "talmai-hijo-de-amihud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "aya-hijo-de-zibeon",
+   "campo": "distinct_from",
+   "valores": [
+    "aya-padre-de-rizpa"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-4"
+     ],
+     "reason": "2Sa 4:4: Jonatán, hijo de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abner",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hebron",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hebron",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Estanque de Hebrón",
+     "note": "Junto a él colgaron a los asesinos de Is-Bóset; OpenBible no lo sitúa aparte."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "beerot",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "araba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "title",
+   "antes": "David, rey de todo Israel, toma Jerusalén",
+   "despues": "Las tribus hacen a David rey de todo Israel en Hebrón",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El suceso juntaba dos escenas: el pacto y la unción en Hebrón (2Sa 5:1-3) y la toma de Sion (5:6-10), que pasa a david-toma-la-fortaleza-de-sion.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "places",
+   "antes": [
+    "hebron",
+    "jerusalen"
+   ],
+   "despues": [
+    "hebron"
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Jerusalén sale: la toma de Sion es ahora su propio suceso.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "passages",
+   "antes": [
+    "2Sa 5:1-10",
+    "1Cr 11:1-9"
+   ],
+   "despues": [
+    "2Sa 5:1-3",
+    "1Cr 11:1-3",
+    "1Cr 12:23-40"
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "2Sa 5:6-10 y 1Cr 11:4-9 pasan a la toma de Sion. Entra 1Cr 12:23-40, que Perspicacia «David», párr. 20, junta con esta unción.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "summary",
+   "antes": "Las tribus van a Hebrón y hacen a David rey de todo Israel. Después toma a los jebuseos la fortaleza de Sion y hace de Jerusalén su capital.",
+   "despues": "Los ancianos de todas las tribus van a Hebrón, recuerdan que David ya dirigía a Israel en tiempos de Saúl, hacen un pacto con él ante Jehová y lo ungen rey de todo Israel.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El resumen deja la toma de Sion, que es otro suceso, y cuenta el pacto de 2Sa 5:1-3.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "reason",
+   "antes": "El estudio 3 fecha el suceso en 1070; Perspicacia «Jerusalén», párr. 21-22, explica el traslado de la capital y la toma de la fortaleza.",
+   "despues": "El estudio 3 fecha en 1070 su subida al trono de todo Israel (2Sa 5:3). Perspicacia «David», párr. 20, añade la fuerza que se le unió (1Cr 12:23-40).",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La razón citaba la toma de la fortaleza, que pasa a su propio suceso.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "search",
+   "antes": "David toma Jerusalén jebuseos",
+   "despues": "David rey de todo Israel Hebrón",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La búsqueda era la de la toma de Jerusalén, que pasa a su propio suceso.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "david-rey-de-todo-israel",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "2-samuel",
+    "order": 5001
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Montículo",
+     "note": "Construcción de la Ciudad de David, dentro de ella o junto a ella, desde la que David edificó (2Sa 5:9). La nota la llama también Miló. Perspicacia no sabe qué era exactamente."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "it-monticulo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "links",
+   "valores": [
+    {
+     "title": "Perspicacia: «Montículo»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200003124",
+     "type": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hebron",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "date": {
+      "from": -1076,
+      "to": -1069,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "1077-1070 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-5",
+      "it-david"
+     ],
+     "reason": "2Sa 5:5: reinó desde Hebrón sobre Judá siete años y seis meses.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 5:13, 14: uno de los hijos que David tuvo en Jerusalén.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 5:13, 14: uno de los hijos que David tuvo en Jerusalén.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 5:13, 14 lo pone en la lista de hijos que David tuvo en Jerusalén.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "samua-hijo-de-zacur",
+   "campo": "distinct_from",
+   "valores": [
+    "samua-hijo-de-david"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-hijo-de-amihud",
+   "campo": "distinct_from",
+   "valores": [
+    "elisama-hijo-de-david"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nefeg-hijo-de-izhar",
+   "campo": "distinct_from",
+   "valores": [
+    "nefeg-hijo-de-david"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jafia-rey-de-lakis",
+   "campo": "distinct_from",
+   "valores": [
+    "jafia-hijo-de-david"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-refaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gueba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guezer",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "adulam",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "adulam",
+   "campo": "summary",
+   "antes": "Ciudad de la Sefelá de Judá, entre Belén y Lakís. De allí era Hirá, amigo de Judá; siglos después David se escondió en una cueva de la zona.",
+   "despues": "Ciudad de la Sefelá de Judá, entre Belén y Lakís. De allí era Hirá, amigo de Judá. Siglos después David se escondió en una cueva de la zona y, ya rey, la usó de base contra los filisteos.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Perspicacia «Adulam», párr. 3, identifica con este lugar el refugio al que baja David en 2Sa 5:17.",
+    "source": "2-samuel-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abinadab-de-quiryat-jearim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abinadab-de-quiryat-jearim",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "quiryat-jearim",
+     "inferred": false,
+     "sources": [
+      "2-samuel-6"
+     ],
+     "reason": "2Sa 6:2-4: el Arca sale de su casa en la colina de Baale-Judá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-abinadab",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "uza-hijo-de-abinadab",
+     "word": "brother",
+     "inferred": true,
+     "sources": [
+      "it-abinadab"
+     ],
+     "reason": "Perspicacia «Abinadab», núm. 1: Uzá, muerto en 2Sa 6:7, era otro de los hijos de Abinadab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "quiryat-jearim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-6"
+     ],
+     "reason": "2Sa 6:16, 20, 23 la llaman hija de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "mical",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-6",
+      "it-david"
+     ],
+     "reason": "2Sa 6:20-23: Mical le sale al encuentro al volver a su casa; Perspicacia «David», párr. 26, la llama su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "passages",
+   "antes": [
+    "2Sa 6:12-15",
+    "2Sa 7:12-16",
+    "Sl 89:3, 4",
+    "Sl 89:19-37",
+    "Sl 132:6-8",
+    "Sl 132:11, 12"
+   ],
+   "despues": [
+    "2Sa 7:12-16",
+    "Sl 89:3, 4",
+    "Sl 89:19-37",
+    "Sl 132:11, 12"
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "2Sa 6:12-15 y Sl 132:6-8, la subida del Arca, pasan a su propio suceso, david-sube-el-arca-a-la-ciudad-de-david: es otra escena, anterior al pacto.",
+    "source": "2-samuel-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "title",
+   "antes": "El Arca llega a Jerusalén y Jehová pacta un reino con David",
+   "despues": "Jehová pacta con David un reino para siempre",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La llegada del Arca es ahora david-sube-el-arca-a-la-ciudad-de-david.",
+    "source": "2-samuel-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "summary",
+   "antes": "David sube el arca del pacto a Jerusalén. Por medio de Natán, Jehová le promete que su descendencia tendrá un reino estable para siempre.",
+   "despues": "Por medio de Natán, Jehová promete a David que su descendencia tendrá un reino estable para siempre.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La subida del Arca sale del resumen: es david-sube-el-arca-a-la-ciudad-de-david.",
+    "source": "2-samuel-6"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "passages",
+   "valores": [
+    "2Sa 7:4-11",
+    "2Sa 7:17",
+    "1Cr 17:3-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "sources": [
+      "2-samuel-7",
+      "it-natan"
+     ],
+     "reason": "2Sa 7:2 lo llama el profeta Natán; en 7:4-17 transmite a David el mensaje de Jehová.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "events",
+   "id": "pacto-con-david",
+   "campo": "narrative_order",
+   "antes": null,
+   "despues": {
+    "series": "2-samuel",
+    "order": 7004
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hadoram-hijo-de-joctan",
+   "campo": "distinct_from",
+   "valores": [
+    "joram-hijo-de-toi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoram-de-israel",
+   "campo": "distinct_from",
+   "valores": [
+    "joram-hijo-de-toi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehoram-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "joram-hijo-de-toi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "jehosafat-hijo-de-ahilud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitub-hijo-de-finehas",
+   "campo": "distinct_from",
+   "valores": [
+    "ahitub-hijo-de-amarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahimelec-hijo-de-ahitub",
+   "campo": "distinct_from",
+   "valores": [
+    "ahimelec-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahimelec-el-hitita",
+   "campo": "distinct_from",
+   "valores": [
+    "ahimelec-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "sources": [
+      "2-samuel-8"
+     ],
+     "reason": "2Sa 8:16: Joab hijo de Zeruyá.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "david",
+     "caption": "jefe del ejército de",
+     "inverse_caption": "su jefe del ejército",
+     "sources": [
+      "2-samuel-8",
+      "it-joab",
+      "2-samuel-20"
+     ],
+     "reason": "2Sa 8:16; 20:23: Joab estaba al mando del ejército de David.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "zoba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-la-sal",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "filistea",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "edom",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "damasco",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "siria",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "makir-hijo-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "makir-hijo-de-amiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amiel-hijo-de-guemali",
+   "campo": "distinct_from",
+   "valores": [
+    "amiel-padre-de-makir"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "friend",
+     "inferred": false,
+     "sources": [
+      "2-samuel-9"
+     ],
+     "reason": "2Sa 9:1, 7: por Jonatán, David muestra amor leal a su hijo Mefibóset.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "reason",
+   "antes": "Perspicacia «Nahás», núm. 1, y «Samuel»; 1Sa 11:1-11; 12:12.",
+   "despues": "Perspicacia «Nahás», núm. 1, y «Samuel»; 1Sa 11:1-11; 12:12. La misma entrada incluye al Nahás de 2Sa 10:1, 2, padre de Hanún, aunque ve posible que fuera hijo del primero.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La ficha cubre también al Nahás de 2Sa 10, padre de Hanún, porque Perspicacia lo pone en la misma entrada núm. 1.",
+    "source": "2-samuel-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-10"
+     ],
+     "reason": "2Sa 10:10: Joab pone al resto de la tropa bajo su hermano Abisái.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bet-rehob",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Rehob",
+     "note": "Forma breve que usa 2Sa 10:8, según Perspicacia «Bet-rehob»."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bet-rehob",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "zoba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "maaca",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerico",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amiel-hijo-de-guemali",
+   "campo": "distinct_from",
+   "valores": [
+    "eliam-padre-de-bat-seba"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bat-seba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "bat-seba",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "eliam-padre-de-bat-seba",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "it-eliam"
+     ],
+     "reason": "2Sa 11:3 la presenta como hija de Eliam.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "2-samuel-11",
+      "it-urias"
+     ],
+     "reason": "2Sa 11:2-4: David la ve desde la azotea del palacio y ella vuelve a su casa; Perspicacia «Urías», núm. 1, sitúa su casa en Jerusalén, cerca del palacio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "urias-el-hitita",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "urias-el-hitita",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11"
+     ],
+     "reason": "Mt 1:6 la llama la esposa de Urías.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "2-samuel-11"
+     ],
+     "reason": "Perspicacia «Urías» (núm. 1): vivía en Jerusalén, cerca del palacio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "raba",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "it-urias",
+      "it-raba"
+     ],
+     "reason": "2Sa 11:16, 17: muere en el combate contra los hombres que salen de Rabá, junto a la muralla.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11"
+     ],
+     "reason": "2Sa 11:9, 21, 24: duerme con los siervos de su señor, y Joab y el mensajero lo llaman siervo del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11"
+     ],
+     "reason": "Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-11",
+      "2-samuel-12"
+     ],
+     "reason": "Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gedeon",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Jerubéset",
+     "note": "Así lo llama 2Sa 11:21. Perspicacia «Jerubéset» lo toma por una variante de Jerubaal; quizá el escritor cambió Baal por la palabra hebrea para «vergüenza»."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gedeon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11",
+    "it-jerubeset"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gedeon",
+   "campo": "links",
+   "valores": [
+    {
+     "title": "Perspicacia: «Jerubéset»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002434",
+     "type": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abimelec-hijo-de-gedeon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abimelec-hijo-de-gedeon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "gedeon",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11"
+     ],
+     "reason": "Jue 8:31: la concubina de Gedeón en Siquem le dio este hijo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 12:25 lo llama el profeta Natán; Jehová lo envía a David en 12:1.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "saul",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 12:7, 8: Jehová le recuerda que lo libró de Saúl y le dio la casa y las esposas de su amo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Jedidías",
+     "note": "Nombre que Jehová le hizo poner por medio de Natán (2Sa 12:25); quiere decir «amado de Jah». Perspicacia dice que se le conoció mucho menos por él."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "sources",
+   "valores": [
+    "it-jedidias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12",
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 5:13, 14 lo pone en la lista de hijos de David nacidos en Jerusalén; 2Sa 12:24 narra su nacimiento.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "ammon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Ciudad de las aguas",
+     "note": "Parte de Rabá que tomó Joab antes de llamar a David (2Sa 12:27). Perspicacia «Rabá» piensa en la zona junto al agua o en el control de su suministro."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "summary",
+   "antes": "Probable capital de Ammón, la única ciudad ammonita que nombra la Biblia, junto a un afluente del alto Jaboc. Allí se conservaba el enorme ataúd de hierro de Og, rey de Basán.",
+   "despues": "Probable capital de Ammón y única ciudad ammonita que nombra la Biblia, junto a un afluente del alto Jaboc. Guardaba el ataúd de hierro de Og. Joab la sitió y David la conquistó.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El resumen añade el asedio de Joab y la conquista de David (2Sa 11:1; 12:26-31).",
+    "source": "2-samuel-12"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "reason",
+   "antes": "Perspicacia «Rabá», núm. 1: estaba donde hoy está Ammán, a unos 37 km al este del Jordán; Dt 3:11. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Rabá», núm. 1: estaba donde hoy está Ammán, a unos 37 km al este del Jordán; Dt 3:11; 2Sa 11:1; 12:26-31. OpenBible: solo el punto.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La razón cita los pasajes del asedio y la conquista de Rabá (2Sa 11:1; 12:26-31).",
+    "source": "2-samuel-12"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "tamar-hija-de-david",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "2-samuel-13",
+      "it-tamar"
+     ],
+     "reason": "2Sa 13:1, 4, 20, 22: Tamar era su hermana. Perspicacia «Tamar», núm. 2, la da por hermana de padre y madre.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "amnon-hijo-de-david",
+     "word": "half_brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-13",
+      "it-amnon"
+     ],
+     "reason": "2Sa 13:4, 20, 26: los dos se llaman hermanos. Perspicacia «Amnón», núm. 1, los da por medio hermanos.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "talmai-hijo-de-amihud",
+     "word": "grandfather",
+     "inferred": true,
+     "sources": [
+      "2-samuel-13",
+      "it-talmai",
+      "it-guesur"
+     ],
+     "reason": "2Sa 13:37: huyó adonde estaba Talmái. Perspicacia «Talmai», núm. 2, y «Guesur», núm. 1, lo llaman su abuelo materno.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "guesur",
+     "inferred": false,
+     "sources": [
+      "2-samuel-13",
+      "2-samuel-14",
+      "it-guesur"
+     ],
+     "reason": "2Sa 13:37, 38: huyó a Guesur y se quedó allí tres años; 14:23, 32: Joab lo trae de allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Simeah",
+     "note": "Otra grafía de Simeá que da la nota al pie de 2Sa 13:3 y 32."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-13"
+     ],
+     "reason": "2Sa 13:3, 32: Simeá, hermano de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guesur",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-13"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "guesur",
+   "campo": "summary",
+   "antes": "Reino arameo vecino de la región de Argob, en Basán, con Maacá al norte. Israel llegó hasta su frontera pero no lo tomó. Absalón se refugió allí, en la tierra de su abuelo Talmai.",
+   "despues": "Reino arameo vecino de la región de Argob, en Basán, con Maacá al norte. Israel llegó hasta su frontera pero no lo tomó. Absalón se refugió allí tres años con su abuelo Talmái, el rey.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El nombre del rey va con la grafía de la TNM, Talmái (2Sa 13:37), y se añaden los tres años de 13:38.",
+    "source": "2-samuel-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amihud-hijo-de-ladan",
+   "campo": "distinct_from",
+   "valores": [
+    "amihud-padre-de-talmai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amihud-padre-de-semuel",
+   "campo": "distinct_from",
+   "valores": [
+    "amihud-padre-de-talmai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amihud-padre-de-pedahel",
+   "campo": "distinct_from",
+   "valores": [
+    "amihud-padre-de-talmai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "talmai-hijo-de-anac",
+   "campo": "distinct_from",
+   "valores": [
+    "talmai-hijo-de-amihud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "tamar-nuera-de-juda",
+   "campo": "distinct_from",
+   "valores": [
+    "tamar-hija-de-david",
+    "tamar-hija-de-absalon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "guesur",
+     "inferred": false,
+     "sources": [
+      "2-samuel-13",
+      "2-samuel-14",
+      "it-guesur"
+     ],
+     "reason": "2Sa 13:37, 38: huyó a Guesur y se quedó allí tres años; 14:23, 32: Joab lo trae de allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-14",
+      "it-absalon"
+     ],
+     "reason": "2Sa 14:23, 24, 28: Joab lo trae a Jerusalén, donde vive dos años en su casa sin ver al rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-14"
+     ],
+     "reason": "2Sa 14:1: Joab hijo de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-14",
+      "it-joab"
+     ],
+     "reason": "2Sa 14:19, 20, 22: la mujer lo llama siervo del rey y él mismo se presenta así ante David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tecoa",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "tecoa",
+   "campo": "summary",
+   "antes": "Ciudad de Judá unos 16 km al sur de Jerusalén, al borde del desierto. Allí vivía Amós, que cuidaba ganado antes de ser profeta.",
+   "despues": "Ciudad de Judá, 16 km al sur de Jerusalén, junto al desierto. De allí trajo Joab a la mujer astuta que pidió a David el regreso de Absalón. Allí vivía Amós, que cuidaba ganado antes de ser profeta.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El resumen añade a la mujer de Tecoa que Joab mandó ante David (2Sa 14:2-20).",
+    "source": "2-samuel-14"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guesur",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "guesur",
+     "sources": [
+      "2-samuel-15",
+      "it-absalon"
+     ],
+     "reason": "2Sa 15:8: Absalón hizo su voto cuando vivía en Guesur, en Siria.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "sources": [
+      "2-samuel-15"
+     ],
+     "reason": "2Sa 15:34: Husái dirá a Absalón que antes servía a su padre, David.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "guilo",
+     "sources": [
+      "2-samuel-15",
+      "it-ahitofel"
+     ],
+     "reason": "2Sa 15:12: Ahitofel el guilonita estaba en Guiló, su ciudad.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "sources": [
+      "2-samuel-15",
+      "it-abiatar"
+     ],
+     "reason": "2Sa 15:35: David nombra a los sacerdotes Sadoc y Abiatar.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahimaaz-padre-de-ahinoam",
+   "campo": "distinct_from",
+   "valores": [
+    "ahimaaz-hijo-de-sadoc"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadoc-hijo-de-azor",
+   "campo": "distinct_from",
+   "valores": [
+    "sadoc-hijo-de-ahitub"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15",
+    "it-bet-merhaq"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Bet-Merhac",
+     "note": "Sitio donde se detuvo David al dejar la ciudad huyendo de Absalón (2Sa 15:17). Perspicacia «Bet-merhaq» cree que quizá fuera la última casa del lado del monte de los Olivos."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "hebron",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guesur",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guilo",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-cedron",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-de-los-olivos",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "sources": [
+      "2-samuel-16"
+     ],
+     "reason": "2Sa 16:8, 11: Simeí llama a Absalón hijo de David, y David dice que su propio hijo busca su vida.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ahitofel",
+     "word": "adviser",
+     "sources": [
+      "2-samuel-16",
+      "it-ahitofel"
+     ],
+     "reason": "2Sa 16:20-23: Absalón pide consejo a Ahitofel y lo sigue, como antes lo hacía David.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "sources": [
+      "2-samuel-16"
+     ],
+     "reason": "2Sa 16:9 lo llama Abisái hijo de Zeruyá.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guera-hijo-de-bela",
+   "campo": "distinct_from",
+   "valores": [
+    "guera-padre-de-simei"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guera-padre-de-ehud",
+   "campo": "distinct_from",
+   "valores": [
+    "guera-padre-de-simei"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-hijo-de-guera"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-de-los-olivos",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "en-roguel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "galaad",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "raba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-jordan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "ahitofel",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-ahitofel"
+     ],
+     "reason": "2Sa 17:1-4: Ahitofel le aconseja salir en persecución de David esa misma noche.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "husai",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-husai"
+     ],
+     "reason": "2Sa 17:5-14: Absalón le pide consejo y lo sigue, aunque Husái trabajaba para David (Perspicacia «Husai»).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "amasa-hijo-de-itra",
+     "word": "cousin",
+     "inferred": true,
+     "sources": [
+      "2-samuel-17",
+      "it-amasa"
+     ],
+     "reason": "2Sa 17:25: pone al frente a Amasá, hijo de una hermana de David; Perspicacia «Amasá», núm. 1, lo llama primo de Absalón.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "guilo",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-ahitofel",
+      "it-guilo"
+     ],
+     "reason": "2Sa 17:23: vuelve a su casa, en su pueblo, que era Guiló (Perspicacia «Ahitofel»).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "guilo",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-ahitofel"
+     ],
+     "reason": "2Sa 17:23: se ahorca en su casa, en su ciudad, que 15:12 llama Guiló, y lo entierran en la tumba de sus antepasados.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-abiatar"
+     ],
+     "reason": "2Sa 17:15: Husái habla con los sacerdotes Sadoc y Abiatar.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-17",
+      "it-zeruya"
+     ],
+     "reason": "2Sa 17:25 llama a Zeruyá la madre de Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-zeruya"
+     ],
+     "reason": "1Cr 2:13-16 la pone entre las hermanas de los hijos de Jesé; Perspicacia «Zeruyá» duda si era media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-hija-de-nahas",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-abigail"
+     ],
+     "reason": "1Cr 2:13-16 la pone entre las hermanas de los hijos de Jesé; Perspicacia «Abigail», núm. 2, duda si era media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "distinct_from",
+   "valores": [
+    "nahas-padre-de-abigail",
+    "nahas-de-raba"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abigail-esposa-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "abigail-hija-de-nahas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-abiatar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahimaaz-padre-de-ahinoam",
+   "campo": "distinct_from",
+   "valores": [
+    "ahimaaz-hijo-de-sadoc"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadoc-hijo-de-azor",
+   "campo": "distinct_from",
+   "valores": [
+    "sadoc-hijo-de-ahitub"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "amiel-hijo-de-guemali",
+   "campo": "distinct_from",
+   "valores": [
+    "amiel-padre-de-makir"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "makir-hijo-de-manases",
+   "campo": "distinct_from",
+   "valores": [
+    "makir-hijo-de-amiel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jeter-hijo-de-gedeon",
+   "campo": "distinct_from",
+   "valores": [
+    "itra"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "distrito-del-jordan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-save",
+   "campo": "sources",
+   "valores": [
+    "it-absalon",
+    "2-samuel-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "absalon",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "died_in",
+     "place": "bosque-de-efrain",
+     "inferred": false,
+     "sources": [
+      "2-samuel-18",
+      "it-absalon"
+     ],
+     "reason": "2Sa 18:9-17: Joab y sus escuderos lo matan en el bosque de Efraín, y allí lo echan a un hoyo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-18"
+     ],
+     "reason": "2Sa 18:2 lo llama hijo de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-18"
+     ],
+     "reason": "2Sa 18:2 lo presenta como hermano de Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-save",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Monumento de Absalón",
+     "note": "Columna que Absalón se levantó en este valle por no tener hijo varón (2Sa 18:18; Perspicacia «Absalón»). No es otro nombre del valle."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "valle-de-save",
+   "campo": "summary",
+   "antes": "Valle donde el rey de Sodoma salió al encuentro de Abrán tras su victoria y donde Melquisedec lo bendijo. Estaba, probablemente, cerca de Jerusalén.",
+   "despues": "Valle donde el rey de Sodoma salió al encuentro de Abrán tras su victoria y donde Melquisedec lo bendijo. Estaba, probablemente, cerca de Jerusalén. Absalón se levantó allí una columna con su nombre.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El resumen añade la columna de Absalón en el valle del Rey (2Sa 18:18; Perspicacia «Absalón»).",
+    "source": "2-samuel-18"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-jordan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guilgal",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "mahanaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "sources": [
+      "2-samuel-19"
+     ],
+     "reason": "2Sa 19:21 vuelve a llamarlo hijo de Zeruyá.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "sources": [
+      "2-samuel-19"
+     ],
+     "reason": "2Sa 19:11 lo llama sacerdote junto con Sadoc.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "simei-hijo-de-guera"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sadoc-hijo-de-azor",
+   "campo": "distinct_from",
+   "valores": [
+    "sadoc-hijo-de-ahitub"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guera-hijo-de-bela",
+   "campo": "distinct_from",
+   "valores": [
+    "guera-padre-de-simei"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "guera-padre-de-ehud",
+   "campo": "distinct_from",
+   "valores": [
+    "guera-padre-de-simei"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "sources": [
+      "2-samuel-20"
+     ],
+     "reason": "2Sa 20:10: Joab y su hermano Abisái persiguen a Seba.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiatar",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "priest",
+     "sources": [
+      "2-samuel-20"
+     ],
+     "reason": "2Sa 20:25: Sadoc y Abiatar eran sacerdotes.",
+     "inferred": false,
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jehosafat",
+   "campo": "distinct_from",
+   "valores": [
+    "jehosafat-hijo-de-ahilud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seba-hijo-de-raama",
+   "campo": "distinct_from",
+   "valores": [
+    "seba-hijo-de-bicri"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seba-hijo-de-joctan",
+   "campo": "distinct_from",
+   "valores": [
+    "seba-hijo-de-bicri"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seba-hijo-de-jocsan",
+   "campo": "distinct_from",
+   "valores": [
+    "seba-hijo-de-bicri"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gabaon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "region-montanosa-de-efrain",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "merab",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adriel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "quis-hijo-de-ner",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guibea-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "zela",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jabes-galaad",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "benjamin",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gat",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "rizpa",
+     "word": "concubine",
+     "inferred": false,
+     "sources": [
+      "2-samuel-21",
+      "it-rizpa"
+     ],
+     "reason": "2Sa 21:8, 11: Rizpá hija de Ayá, la concubina de Saúl, que le dio dos hijos.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "adriel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "barzilai-meholatita",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-21",
+      "it-barzilai"
+     ],
+     "reason": "2Sa 21:8: Adriel hijo de Barzilái el meholatita.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-21"
+     ],
+     "reason": "2Sa 21:7, 12: Jonatán, el hijo de Saúl.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-21"
+     ],
+     "reason": "2Sa 21:17: Abisái hijo de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "david",
+     "inferred": false,
+     "sources": [
+      "2-samuel-21"
+     ],
+     "reason": "2Sa 21:17: acude en ayuda de David y mata a Isbí-Benob.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "aya-hijo-de-zibeon",
+   "campo": "distinct_from",
+   "valores": [
+    "aya-padre-de-rizpa"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-sama"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-sama"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "mical",
+   "campo": "summary",
+   "antes": "Hija menor del rey Saúl. Se casó con David y lo ayudó a huir de su padre; después despreció a David cuando danzó delante del Arca, y murió sin hijos.",
+   "despues": "Hija menor de Saúl, casada con David, a quien ayudó a huir. Saúl la dio a Paltiel y David la recuperó. Despreció a David cuando danzó ante el Arca; sin hijos propios, quizá crió a los de Merab.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Se añade que Saúl la dio a Paltiel y David la recuperó (2Sa 3:13-16). 2Sa 21:8 llama hijos de Mical a los cinco de Adriel; Perspicacia «Mical» y «Merab»: eran de Merab y ella los crió.",
+    "source": "2-samuel-21"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "quis-hijo-de-ner",
+   "campo": "summary",
+   "antes": "Benjamita de buena posición, de la familia de los matritas, padre de Saúl, el primer rey de Israel. Perspicacia lo hace hijo de Ner y hermano de Abner.",
+   "despues": "Benjamita de buena posición, de la familia de los matritas, padre de Saúl, el primer rey de Israel. Perspicacia lo hace hijo de Ner y hermano de Abner. Su tumba estaba en Zelá, en Benjamín.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Se añade su tumba en Zelá, donde David enterró los huesos de Saúl y de Jonatán (2Sa 21:14).",
+    "source": "2-samuel-21"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23",
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "jese",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:1: David, hijo de Jesé.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "adulam",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "valle-de-refaim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "belen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "lehi",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "efes-damim",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23",
+    "it-pas-damim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abisai",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "joab-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:18: Abisái, hermano de Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:18: hijo de Zeruyá, como Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:18, 19: jefe de otros tres guerreros de David; mató a 300 hombres con su lanza.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23",
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:18, 37 lo llaman hijo de Zeruyá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "asahel-hijo-de-zeruya",
+     "word": "brother",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:24: Asahel, hermano de Joab.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "zeruya",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "cabzeel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "places",
+   "id": "cabzeel",
+   "campo": "summary",
+   "antes": "Ciudad del extremo sur de Judá, quizá en Khirbet Hora, unos 10 km al estenoreste de Beer-Seba. Pudo ser la tierra de Benaya, el guerrero de David. Ne 11:25 da otra forma del nombre.",
+   "despues": "Ciudad del extremo sur de Judá, quizá en Khirbet Hora, unos 10 km al estenoreste de Beer-Seba. La TNM pone allí las hazañas de Benaya, guerrero de David. Ne 11:25 da otra forma del nombre.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "2Sa 23:20 en la TNM dice que Benaya hizo sus hazañas en Cabzeel; Perspicacia «Qabzeel» recoge esa lectura entre las posibles. El resumen decía solo que pudo ser su tierra.",
+    "source": "2-samuel-23"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "moab",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bet-pelet",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23",
+    "it-paltita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tecoa",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "anatot",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guibea-de-benjamin",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "ahitofel",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "lived_in",
+     "place": "guilo",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23",
+      "it-ahitofel"
+     ],
+     "reason": "2Sa 23:34 lo llama el guilonita; Perspicacia «Ahitofel»: era natural de Guiló.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "piraton",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-gaas",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-gaas",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Valles torrenciales de Gaas",
+     "note": "Barrancos junto al monte, tierra de Hidái (2Sa 23:30); así los entiende Perspicacia «Gaas»."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "bet-araba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23",
+    "it-arbatita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "guilo",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "carmelo-de-juda",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "arab",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "urias-el-hitita",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "urias-el-hitita",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 23:39: Urías el hitita cierra la lista de los guerreros de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "zoba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "beerot",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-dodo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-abinadab",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-dodo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "eleazar-hijo-de-eliud",
+   "campo": "distinct_from",
+   "valores": [
+    "eleazar-hijo-de-dodo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "dodo-de-isacar",
+   "campo": "distinct_from",
+   "valores": [
+    "dodo-hijo-de-ahohi",
+    "dodo-de-belen"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "distinct_from",
+   "valores": [
+    "sama-hijo-de-ague",
+    "sama-el-harodita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-reuel",
+   "campo": "distinct_from",
+   "valores": [
+    "sama-hijo-de-ague",
+    "sama-el-harodita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-hijo-de-saul",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-sague"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jonatan-levita",
+   "campo": "distinct_from",
+   "valores": [
+    "jonatan-hijo-de-sague"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-de-zoba"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "natan-hijo-de-david",
+   "campo": "distinct_from",
+   "valores": [
+    "natan-de-zoba"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "igal-hijo-de-jose",
+   "campo": "distinct_from",
+   "valores": [
+    "igal-hijo-de-natan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abi-ezer-hijo-de-galaad",
+   "campo": "distinct_from",
+   "valores": [
+    "abi-ezer-el-anatotita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "joab-hijo-de-zeruya",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-24"
+     ],
+     "reason": "2Sa 24:2-4: Joab, jefe del ejército, obedece la orden del rey de hacer el censo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gad-profeta",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "gad-profeta",
+   "campo": "relations",
+   "valores": [
+    {
+     "type": "holds_office",
+     "office": "prophet",
+     "inferred": false,
+     "sources": [
+      "2-samuel-24",
+      "it-gad"
+     ],
+     "reason": "2Sa 24:11 llama a Gad profeta y hombre de visiones de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jerusalen",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "rio-jordan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "aroer",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "gad",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "jazer",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "galaad",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "sidon",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "tiro",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "negueb",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "beer-seba",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "dan",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "sources",
+   "valores": [
+    "2-samuel-24",
+    "it-arauna"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "places",
+   "id": "monte-moria",
+   "campo": "names",
+   "valores": [
+    {
+     "name": "Era de Arauna",
+     "note": "La era que David compró a Arauna el jebuseo para el altar (2Sa 24:18-25); luego se levantó allí el templo."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "abiel-hijo-de-zeror",
+   "campo": "distinct_from",
+   "valores": [
+    "abi-albon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "elisama-hijo-de-amihud",
+   "campo": "distinct_from",
+   "valores": [
+    "elisua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "hadoram-hijo-de-joctan",
+   "campo": "distinct_from",
+   "valores": [
+    "adoniram"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "jetro",
+   "campo": "distinct_from",
+   "valores": [
+    "itra"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miqueas-de-efrain",
+   "campo": "distinct_from",
+   "valores": [
+    "mica-hijo-de-mefiboset"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "miqueas-profeta",
+   "campo": "distinct_from",
+   "valores": [
+    "mica-hijo-de-mefiboset"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "sama-hijo-de-jese",
+   "campo": "distinct_from",
+   "valores": [
+    "samua-hijo-de-david",
+    "simei-hijo-de-guera",
+    "simei-hijo-de-guerson"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "seba-hijo-de-cus",
+   "campo": "distinct_from",
+   "valores": [
+    "seba-hijo-de-bicri"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "people",
+   "id": "simei-hijo-de-guerson",
+   "campo": "distinct_from",
+   "valores": [
+    "sama-hijo-de-jese"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "summary",
+   "antes": "Rey de los ammonitas cuando Saúl empezó a reinar. Su amenaza empujó a Israel a pedir rey. Sitió Jabés de Galaad y quiso sacar el ojo derecho a sus hombres, pero Saúl deshizo su ejército.",
+   "despues": "Rey ammonita cuando Saúl empezó a reinar. Su amenaza empujó a Israel a pedir rey, y Saúl deshizo su ejército en Jabés. Bajo este nombre va también el Nahás leal a David, cuya muerte abrió la guerra con Hanún.",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "El resumen añade al Nahás de 2Sa 10:1, 2, que fue leal a David y cuya muerte llevó a la guerra con Hanún, su hijo.",
+    "source": "2-samuel-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "not_claimed",
+   "antes": [
+    "Que muriera en la batalla de Jabés: eso lo cuenta Josefo, no la Biblia.",
+    "Que sea el mismo Nahás que después trató bien a David: Perspicacia ve posible que aquel fuera su hijo y sucesor."
+   ],
+   "despues": [
+    "Que muriera en la batalla de Jabés: eso lo cuenta Josefo, no la Biblia.",
+    "Que el rey de 1Sa 11 y el padre de Hanún sean un solo hombre: si Nahás murió luchando contra Saúl, como dice Josefo, Perspicacia ve en el segundo a su hijo y sucesor."
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La ficha ya es la del padre de Hanún (misma entrada de Perspicacia): lo que no afirmamos es que sean un solo hombre y no padre e hijo.",
+    "source": "2-samuel-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "nahas-rey-de-ammon",
+   "campo": "disambiguation",
+   "antes": "El rey ammonita que sitió Jabés al empezar el reinado de Saúl (Perspicacia, núm. 1); no el padre de Abigail ni el de Sobí (núm. 2 y 3).",
+   "despues": "El rey ammonita que sitió Jabés al empezar el reinado de Saúl y el padre de Hanún (Perspicacia, núm. 1); no el padre de Abigail ni el de Sobí (núm. 2 y 3).",
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La entrada núm. 1 incluye al padre de Hanún (2Sa 10:1, 2).",
+    "source": "2-samuel-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "david",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "born_in",
+     "place": "belen",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "juan-7"
+     ],
+     "reason": "Perspicacia «David», párr. 4: Belén era su pueblo natal.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "saul",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "2-samuel-2",
+      "2-samuel-5"
+     ],
+     "reason": "En 1077 los de Judá lo ungieron rey en Hebrón tras la muerte de Saúl (2Sa 2:4).",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "2-samuel-5",
+      "2-samuel-11"
+     ],
+     "reason": "Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "jese",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "rut-4",
+      "mateo-1",
+      "salmos-72",
+      "lucas-3",
+      "hch-13",
+      "1-samuel-16",
+      "1-samuel-17",
+      "1-samuel-20",
+      "1-samuel-22",
+      "1-samuel-25",
+      "2-samuel-23"
+     ],
+     "reason": "Rut 4:17 y 22.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "mateo-1",
+      "it-bat-seba",
+      "2-samuel-11",
+      "2-samuel-12"
+     ],
+     "reason": "Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "hch-2",
+      "it-david"
+     ],
+     "reason": "Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo da sepultado en la Ciudad de David (1Re 2:10).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "saul",
+     "caption": "escudero y jefe de la guardia de",
+     "inferred": false,
+     "sources": [
+      "1-samuel-16",
+      "1-samuel-22",
+      "it-david",
+      "1-samuel-17"
+     ],
+     "reason": "1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo llama jefe de la guardia del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "belen",
+     "inferred": false,
+     "sources": [
+      "1-samuel-17",
+      "1-samuel-20",
+      "it-david"
+     ],
+     "reason": "1Sa 17:15: iba y venía a Belén para cuidar las ovejas de su padre.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "mical",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-18",
+      "1-samuel-19",
+      "it-mical",
+      "1-samuel-25",
+      "2-samuel-3",
+      "2-samuel-6",
+      "it-david"
+     ],
+     "reason": "1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father_in_law",
+     "inferred": false,
+     "sources": [
+      "1-samuel-18",
+      "it-mical",
+      "1-samuel-22",
+      "1-samuel-25"
+     ],
+     "reason": "1Sa 18:18-27: se convierte en yerno del rey al casarse con Mical.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "queila",
+     "inferred": false,
+     "sources": [
+      "1-samuel-23",
+      "it-saul",
+      "it-david"
+     ],
+     "reason": "1Sa 23:5, 7, 13: tras salvar Queilá se queda en la ciudad hasta que huye de Saúl; Perspicacia «Saúl» y «David» dicen que vivía allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-abigail",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2",
+      "2-samuel-3"
+     ],
+     "reason": "1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "ahinoam-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-ahinoam",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2",
+      "2-samuel-3"
+     ],
+     "reason": "1Sa 25:43: también se había casado con Ahinoam, de Jezreel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "gat",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-akis"
+     ],
+     "reason": "1Sa 27:3: se instala en Gat con Akís, con sus hombres y sus familias.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "ziclag",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-ziqlag",
+      "1-samuel-30",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "akis",
+     "caption": "siervo de",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-akis",
+      "1-samuel-28",
+      "1-samuel-29"
+     ],
+     "reason": "1Sa 27:5, 12: David se llama siervo de Akís, y el rey cree que lo será siempre. Perspicacia «Akís», párr. 2.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ahitofel",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "it-ahitofel",
+      "2-samuel-15",
+      "2-samuel-16"
+     ],
+     "reason": "2Sa 15:12 llama a Ahitofel consejero de David, y 16:23 dice que su consejo se tenía como si viniera de Dios.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "date": {
+      "from": -1076,
+      "to": -1069,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "1077-1070 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-david",
+      "it-hebron",
+      "si-3",
+      "2-samuel-3",
+      "it-sefatias",
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 2:1-3, 11: sube a Hebrón con los suyos y reina allí siete años y seis meses, de 1077 a 1070 a.e.c. (estudio 3).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-zeruya",
+      "it-david"
+     ],
+     "reason": "1Cr 2:16 da a Zeruyá por hermana de los hijos de Jesé; Perspicacia «Zeruyá» y «David» ven posible que solo fuera media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "maaca-hija-de-talmai",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-maaca"
+     ],
+     "reason": "2Sa 3:3 la da como madre de su hijo Absalón; Perspicacia «Maacá», núm. 5, la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "haguit",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-haguit"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Adonías; Perspicacia «Haguit» la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abital",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-abital"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Sefatías; Perspicacia «Abital» la cuenta entre sus esposas.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "egla",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-egla"
+     ],
+     "reason": "2Sa 3:5: Itream era hijo de su esposa Eglá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "saul",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 12:7, 8: Jehová le recuerda que lo libró de Saúl y le dio la casa y las esposas de su amo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-hija-de-nahas",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-abigail"
+     ],
+     "reason": "1Cr 2:13-16 la pone entre las hermanas de los hijos de Jesé; Perspicacia «Abigail», núm. 2, duda si era media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "born_in",
+     "place": "belen",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "juan-7"
+     ],
+     "reason": "Perspicacia «David», párr. 4: Belén era su pueblo natal.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "saul",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "2-samuel-2",
+      "2-samuel-5"
+     ],
+     "reason": "En 1077 los de Judá lo ungieron rey en Hebrón tras la muerte de Saúl (2Sa 2:4).",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "it-david",
+      "2-samuel-5",
+      "2-samuel-11"
+     ],
+     "reason": "Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "jese",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "rut-4",
+      "mateo-1",
+      "salmos-72",
+      "lucas-3",
+      "hch-13",
+      "1-samuel-16",
+      "1-samuel-17",
+      "1-samuel-20",
+      "1-samuel-22",
+      "1-samuel-25",
+      "2-samuel-23"
+     ],
+     "reason": "Rut 4:17 y 22.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "mateo-1",
+      "it-bat-seba",
+      "2-samuel-11",
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 11:27: tras el luto, David la lleva a su casa y se casa con ella; 12:24 la llama su esposa. Mt 1:6: tuvo a Salomón con ella.",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "hch-2",
+      "it-david"
+     ],
+     "reason": "Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo da sepultado en la Ciudad de David (1Re 2:10).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "saul",
+     "caption": "escudero y jefe de la guardia de",
+     "inferred": false,
+     "sources": [
+      "1-samuel-16",
+      "1-samuel-22",
+      "it-david",
+      "1-samuel-17"
+     ],
+     "reason": "1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo llama jefe de la guardia del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "belen",
+     "inferred": false,
+     "sources": [
+      "1-samuel-17",
+      "1-samuel-20",
+      "it-david"
+     ],
+     "reason": "1Sa 17:15: iba y venía a Belén para cuidar las ovejas de su padre.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "mical",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-18",
+      "1-samuel-19",
+      "it-mical",
+      "1-samuel-25",
+      "2-samuel-3",
+      "2-samuel-6",
+      "it-david"
+     ],
+     "reason": "1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "saul",
+     "word": "father_in_law",
+     "inferred": false,
+     "sources": [
+      "1-samuel-18",
+      "it-mical",
+      "1-samuel-22",
+      "1-samuel-25"
+     ],
+     "reason": "1Sa 18:18-27: se convierte en yerno del rey al casarse con Mical.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "queila",
+     "inferred": false,
+     "sources": [
+      "1-samuel-23",
+      "it-saul",
+      "it-david"
+     ],
+     "reason": "1Sa 23:5, 7, 13: tras salvar Queilá se queda en la ciudad hasta que huye de Saúl; Perspicacia «Saúl» y «David» dicen que vivía allí.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-abigail",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2",
+      "2-samuel-3"
+     ],
+     "reason": "1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "ahinoam-esposa-de-david",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "1-samuel-25",
+      "it-ahinoam",
+      "1-samuel-27",
+      "1-samuel-30",
+      "2-samuel-2",
+      "2-samuel-3"
+     ],
+     "reason": "1Sa 25:43: también se había casado con Ahinoam, de Jezreel.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "gat",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-akis"
+     ],
+     "reason": "1Sa 27:3: se instala en Gat con Akís, con sus hombres y sus familias.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "ziclag",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-ziqlag",
+      "1-samuel-30",
+      "2-samuel-1"
+     ],
+     "reason": "1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "accompanies",
+     "person": "akis",
+     "caption": "siervo de",
+     "inferred": false,
+     "sources": [
+      "1-samuel-27",
+      "it-akis",
+      "1-samuel-28",
+      "1-samuel-29"
+     ],
+     "reason": "1Sa 27:5, 12: David se llama siervo de Akís, y el rey cree que lo será siempre. Perspicacia «Akís», párr. 2.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "ahitofel",
+     "word": "adviser",
+     "inferred": false,
+     "sources": [
+      "it-ahitofel",
+      "2-samuel-15",
+      "2-samuel-16"
+     ],
+     "reason": "2Sa 15:12 llama a Ahitofel consejero de David, y 16:23 dice que su consejo se tenía como si viniera de Dios.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "hebron",
+     "date": {
+      "from": -1076,
+      "to": -1069,
+      "precision": "range",
+      "approx": false,
+      "type": "anchored",
+      "chronology": "tnm",
+      "text": "1077-1070 a.e.c."
+     },
+     "inferred": false,
+     "sources": [
+      "2-samuel-2",
+      "it-david",
+      "it-hebron",
+      "si-3",
+      "2-samuel-3",
+      "it-sefatias",
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 2:1-3, 11: sube a Hebrón con los suyos y reina allí siete años y seis meses, de 1077 a 1070 a.e.c. (estudio 3).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "zeruya",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-zeruya",
+      "it-david"
+     ],
+     "reason": "1Cr 2:16 da a Zeruyá por hermana de los hijos de Jesé; Perspicacia «Zeruyá» y «David» ven posible que solo fuera media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "maaca-hija-de-talmai",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-maaca"
+     ],
+     "reason": "2Sa 3:3 la da como madre de su hijo Absalón; Perspicacia «Maacá», núm. 5, la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "haguit",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-haguit"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Adonías; Perspicacia «Haguit» la llama esposa de David.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abital",
+     "word": "wife",
+     "inferred": true,
+     "sources": [
+      "2-samuel-3",
+      "it-abital"
+     ],
+     "reason": "2Sa 3:4 la da como madre de su hijo Sefatías; Perspicacia «Abital» la cuenta entre sus esposas.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "egla",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "2-samuel-3",
+      "it-egla"
+     ],
+     "reason": "2Sa 3:5: Itream era hijo de su esposa Eglá.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "saul",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 12:7, 8: Jehová le recuerda que lo libró de Saúl y le dio la casa y las esposas de su amo.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "abigail-hija-de-nahas",
+     "word": "sister",
+     "inferred": false,
+     "sources": [
+      "it-abigail"
+     ],
+     "reason": "1Cr 2:13-16 la pone entre las hermanas de los hijos de Jesé; Perspicacia «Abigail», núm. 2, duda si era media hermana.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La relación con Bat-Seba la dice el texto (2Sa 11:27; 12:24): pasa a inferred false y la razón cita esos versículos.",
+    "source": "2-samuel-11"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "urias-el-hitita",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "mateo-1",
+      "2-samuel-11"
+     ],
+     "reason": "Mt 1:6 la llama la esposa de Urías.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "it-urias",
+      "2-samuel-11"
+     ],
+     "reason": "Perspicacia «Urías» (núm. 1): vivía en Jerusalén, cerca del palacio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "raba",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "it-urias",
+      "it-raba"
+     ],
+     "reason": "2Sa 11:16, 17: muere en el combate contra los hombres que salen de Rabá, junto a la muralla.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 11:9, 21, 24: duerme con los siervos de su señor, y Joab y el mensajero lo llaman siervo del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "wife",
+     "inferred": false,
+     "sources": [
+      "mateo-1",
+      "2-samuel-11"
+     ],
+     "reason": "2Sa 11:3 la presenta como esposa de Urías, y Mt 1:6 la nombra por él.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": true,
+     "sources": [
+      "it-urias",
+      "2-samuel-11"
+     ],
+     "reason": "Perspicacia «Urías» (núm. 1): vivía en Jerusalén, cerca del palacio.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "died_in",
+     "place": "raba",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "it-urias",
+      "it-raba"
+     ],
+     "reason": "2Sa 11:16, 17: muere en el combate contra los hombres que salen de Rabá, junto a la muralla.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "tie",
+     "person": "david",
+     "word": "master",
+     "inferred": false,
+     "sources": [
+      "2-samuel-11",
+      "2-samuel-23"
+     ],
+     "reason": "2Sa 11:9, 21, 24: duerme con los siervos de su señor, y Joab y el mensajero lo llaman siervo del rey.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "La razón cita 2Sa 11:3, que da a Bat-Seba como esposa de Urías.",
+    "source": "2-samuel-11"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "people",
+   "id": "salomon",
+   "campo": "relations",
+   "antes": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "it-salomon",
+      "2-samuel-12",
+      "mateo-1",
+      "salmos-72",
+      "proverbios-1",
+      "eclesiastes-1",
+      "2-samuel-5"
+     ],
+     "reason": "Hijo de David y Bat-Seba (2Sa 12:24).",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "david",
+     "inferred": false,
+     "sources": [
+      "it-salomon",
+      "1-reyes-1"
+     ],
+     "reason": "Fue ungido y puesto en el trono antes de morir David (1Re 1:39).",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "mateo-1",
+      "it-bat-seba",
+      "2-samuel-12"
+     ],
+     "reason": "Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "eclesiastes-1",
+      "it-eclesiastes-libro",
+      "si-eclesiastes",
+      "1-reyes-11",
+      "eclesiastes-2",
+      "cantar-de-los-cantares-3",
+      "si-cantar-de-los-cantares"
+     ],
+     "reason": "Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia «Eclesiastés, Libro de» dice que es Salomón.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5",
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 5:13, 14 lo pone en la lista de hijos que David tuvo en Jerusalén.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "despues": [
+    {
+     "type": "kin",
+     "person": "david",
+     "word": "father",
+     "inferred": false,
+     "sources": [
+      "it-salomon",
+      "2-samuel-12",
+      "mateo-1",
+      "salmos-72",
+      "proverbios-1",
+      "eclesiastes-1",
+      "2-samuel-5"
+     ],
+     "reason": "2Sa 12:24: David y Bat-Seba tienen a Salomón.",
+     "status": "verified"
+    },
+    {
+     "type": "succeeds",
+     "person": "david",
+     "inferred": false,
+     "sources": [
+      "it-salomon",
+      "1-reyes-1"
+     ],
+     "reason": "Fue ungido y puesto en el trono antes de morir David (1Re 1:39).",
+     "checked_on": "2026-09-29",
+     "office": "king",
+     "status": "verified"
+    },
+    {
+     "type": "kin",
+     "person": "bat-seba",
+     "word": "mother",
+     "inferred": false,
+     "sources": [
+      "mateo-1",
+      "it-bat-seba",
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 12:24: Bat-Seba, ya esposa de David, da a luz a Salomón. Mt 1:6 la llama la esposa de Urías.",
+     "status": "verified"
+    },
+    {
+     "type": "lived_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "eclesiastes-1",
+      "it-eclesiastes-libro",
+      "si-eclesiastes",
+      "1-reyes-11",
+      "eclesiastes-2",
+      "cantar-de-los-cantares-3",
+      "si-cantar-de-los-cantares"
+     ],
+     "reason": "Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia «Eclesiastés, Libro de» dice que es Salomón.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    },
+    {
+     "type": "born_in",
+     "place": "jerusalen",
+     "inferred": false,
+     "sources": [
+      "2-samuel-5",
+      "2-samuel-12"
+     ],
+     "reason": "2Sa 5:13, 14 lo pone en la lista de hijos que David tuvo en Jerusalén.",
+     "checked_on": "2026-09-29",
+     "status": "verified"
+    }
+   ],
+   "historial": {
+    "date": "2026-09-29",
+    "change": "Las razones de su madre y de su padre citan 2Sa 12:24, donde Bat-Seba da a luz a Salomón; la del padre, con palabras nuestras.",
+    "source": "2-samuel-12"
+   }
+  }
+ ],
+ "preguntas": [
+  "2Sa 2:10, 11; 3:6-4:12. Fecha de la muerte de Abner y de Is-Bóset. Seguimos a Perspicacia «David», párr. 20, e «Is-bóset», párr. 3 (unos dos años después de 1077): los sucesos de 2Sa 2-4, abner/tie/david y el cargo de Is-Bóset van en c. 1077-1075. «Hebrón», núm. 3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (c. 1070). Si el dueño prefiere esa lectura, se pasan todos a 1077-1070 a la vez.",
+  "2Sa 2:8-10. Is-Bóset lleva holds_office king (c. 1078-1075) y succeeds saul, sin periodo propio. ¿Se prefiere un periodo del reino de Is-Bóset, que sustituiría a la relación holds_office?",
+  "2Sa 2:8; 8:16-18; 10:16; 17:25; 19:13; 20:23-26. Cargos sin palabra en el vocabulario: jefe del ejército (Abner, Joab, Sobac, Amasá), registrador (Jehosafat), secretario (Seraya, Sevá), jefe de keretitas y peletitas (Benaya) y encargado del trabajo obligatorio (Adoram). Van como accompanies con caption y dan avisos unlisted_caption. ¿Se añaden cargos a offices (army_commander, recorder, secretary...) o esos textos a outside? Ficol de tiempos de Abrahán usa tie master para lo mismo.",
+  "2Sa 24:11. gad-profeta lleva holds_office prophet y, desde 1 Samuel, accompanies con caption «profeta de» hacia David; natan-profeta solo lleva holds_office prophet. ¿Se quita la caption de Gad, con su fila en redirects.yaml?",
+  "2Sa 9:6-13. Mefibóset lleva tie host hacia David porque come siempre a su mesa. ¿O master, porque se llama a sí mismo siervo de David (9:6, 8)?",
+  "2Sa 4:5-7. El texto no dice dónde mataron a Is-Bóset; Perspicacia «Mahanaim» dice que debió de ser en su capital. died_in lleva inferred true, y el suceso pone Mahanaim primero y sitúa allí a Is-Bóset, Recab y Baaná. ¿Basta, o el suceso debe llevar present vacío?",
+  "2Sa 12:24-31. El nacimiento de Salomón va antes de la toma de Rabá, en el orden del libro; ninguna fuente de jw.org leída dice cuál fue antes. Si el dueño sabe de una, se ajusta narrative_order.",
+  "2Sa 11:3; 23:34. Eliam hijo de Ahitofel y el padre de Bat-Seba: el same_as lleva certainty possible porque Perspicacia «Eliam», núm. 2, y «Ahitofel» dicen quizás o posiblemente, pero «Amiel», núm. 3, dice probable. Las tres son de la misma obra, así que «lo más reciente gana» no decide. ¿possible o probable?",
+  "2Sa 15:27. Sadoc es llamado vidente y Perspicacia «Sadoc», núm. 1, dice que quizá era también profeta. Solo lleva holds_office priest. ¿Se añade prophet, o un cargo nuevo para vidente?",
+  "2Sa 15:10; 16:16. Absalón se proclama rey en Hebrón y Husái lo aclama. No lleva holds_office king porque Perspicacia lo trata como usurpador. ¿Se añade, con fecha de la rebelión?",
+  "2Sa 23:8-39. Cada uno de los treinta lleva tie master hacia David, como Ficol con Abimélec; Abisái lleva desde 1 Samuel 26 accompanies sin palabra ni fecha (aviso bare_company). ¿master para todos, o accompanies con fecha? Es un cambio de todos a la vez.",
+  "2Sa 23:8-23. Las hazañas de Joseb-Basébet, Eleazar, Samá, Abisái y las tres de Benaya no tienen año: van entre 1107 (nace David) y c. 1040 (fin de 2 Samuel), el único límite anclado, y el sitio las dibuja antes de 2 Samuel 1. ¿Se dejan así, se acotan desde 1077 (lo que abarca 2 Samuel) o pasan a notas?",
+  "2Sa 13:3; 17:23; 21:21. Dos versículos del propio texto juntos cuentan como texto: ahitofel/died_in/guilo (15:12 da la ciudad y 17:23 dice que murió en ella) y los tíos de Jonatán hijo de Samá y de Jehonadab (el texto da a su padre como hermano de David, como en Lot) llevan inferred false. Si el dueño quiere inferred true cuando hace falta juntar versículos, se cambian los tres.",
+  "2Sa 6:6-8. Pérez-Uzá toma el punto de OpenBible (ae67841, a menos de 1 km de Jerusalén) con precision uncertain, como pide el protocolo. Perspicacia no sabe dónde estaba y el texto la pone en el camino, antes de llegar: el sitio sitúa la muerte de Uzá en Jerusalén. ¿Se prefiere la zona calculada entre Quiryat-Jearim y Jerusalén?",
+  "2Sa 12:26. Rabá sigue como «probable capital de Ammón»: Perspicacia «Rabá», núm. 1, lo supone porque es la única ciudad ammonita que nombra la Biblia, y la «ciudad real» de 12:26 es la parte que tomó Joab. Si el dueño quiere «capital», se cambia el resumen."
+ ]
+}

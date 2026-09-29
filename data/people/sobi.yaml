@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobi
+name: Sobí
+names:
+- name: Sobí
+perspicacia: '1200004079'
+summary: Hijo de Nahás, de Rabá, la ciudad de los ammonitas. Con Makir y Barzilái llevó a David y a su gente, en Mahanaim,
+  camas, vasijas y comida mientras huían de Absalón.
+reason: Perspicacia «Sobí»; 2Sa 17:27-29.
+sources:
+- it-sobi
+- 2-samuel-17
+links:
+- title: 'Perspicacia: «Sobí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004079
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: kin
+  person: nahas-de-raba
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-sobi
+  reason: 2Sa 17:27 lo llama hijo de Nahás.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: raba
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-sobi
+  reason: '2Sa 17:27: Sobí era de Rabá de los ammonitas.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

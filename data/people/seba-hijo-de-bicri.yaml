@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seba-hijo-de-bicri
+name: Seba
+names:
+- name: Seba
+perspicacia: 1200003970#4
+disambiguation: Seba hijo de Bicrí, el benjaminita que se sublevó contra David; no los Seba de Génesis, el gadita de 1Cr 5:13
+  ni el reino de Seba.
+distinct_from:
+- seba-hijo-de-raama
+- seba-hijo-de-joctan
+- seba-hijo-de-jocsan
+- seba-hijo-de-cus
+summary: Benjaminita alborotador que, tras la rebelión de Absalón, arrastró a las tribus del norte contra David. Perseguido
+  por Joab, se encerró en Abel de Bet-Maacá, cuyos vecinos le cortaron la cabeza.
+reason: Perspicacia «Seba», núm. 4; 2Sa 20:1-22.
+sources:
+- it-seba
+- 2-samuel-20
+links:
+- title: 'Perspicacia: «Seba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003970
+  type: perspicacia
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+relations:
+- type: kin
+  person: bicri
+  word: father
+  sources:
+  - 2-samuel-20
+  - it-bicri
+  reason: 2Sa 20:1 lo llama hijo de Bicrí; Perspicacia «Bicrí» admite que fuera su padre o un antepasado.
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: region-montanosa-de-efrain
+  sources:
+  - 2-samuel-20
+  reason: '2Sa 20:21: Joab dice que era de la región montañosa de Efraín.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: abel-de-bet-maaca
+  sources:
+  - 2-samuel-20
+  - it-seba
+  - it-abel-bet-maaca
+  reason: '2Sa 20:22: los de la ciudad le cortan la cabeza y la lanzan a Joab.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

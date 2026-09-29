@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiam
+name: Ahiam
+names:
+- name: Ahiam
+perspicacia: '1200000149'
+summary: Hijo de Sarar el hararita y uno de los treinta guerreros de David.
+reason: Perspicacia «Ahiam»; 2Sa 23:33.
+sources:
+- it-ahiam
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Ahiam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000149
+  type: perspicacia
+relations:
+- type: kin
+  person: sarar
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:33: Ahiam, hijo de Sarar el hararita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:33: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

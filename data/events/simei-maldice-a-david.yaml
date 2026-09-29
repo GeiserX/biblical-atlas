@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: simei-maldice-a-david
+title: Simeí maldice a David en Bahurim
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 16005
+places:
+- bahurim
+people:
+- david
+- simei-hijo-de-guera
+- abisai
+present:
+- david
+- simei-hijo-de-guera
+- abisai
+passages:
+- 2Sa 16:5-14
+summary: En Bahurim, Simeí, de la casa de Saúl, apedrea a David y lo llama sanguinario. Abisái quiere matarlo, pero David
+  lo impide y deja el asunto en manos de Jehová. Llegan agotados a su destino.
+reason: '2Sa 16:5-14; Perspicacia «Simeí», núm. 12, y «Bahurim». Fecha: tras el pacto con David (c. 1070) y antes de acabarse
+  2 Samuel (c. 1040, tabla de libros); lámina B7.'
+sources:
+- 2-samuel-16
+- it-simei
+- it-bahurim
+- tnm-b7
+- it-absalon
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004047
+  type: perspicacia
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

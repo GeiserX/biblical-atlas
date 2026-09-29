@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ziba-lleva-provisiones-a-david
+title: Zibá lleva provisiones a David y acusa a Mefibóset
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 16001
+places:
+- monte-de-los-olivos
+people:
+- david
+- ziba
+- mefiboset-hijo-de-jonatan
+present:
+- david
+- ziba
+passages:
+- 2Sa 16:1-4
+summary: Pasada la cima, Zibá espera a David con dos burros cargados de pan, pasas, fruta y vino. Dice que Mefibóset se quedó
+  esperando el reino de Saúl, y David le da todo lo de su amo.
+reason: '2Sa 16:1-4. Perspicacia «Zibá» y «Mefibóset», núm. 2: era una calumnia. Fecha: tras el pacto con David (c. 1070)
+  y antes de acabarse 2 Samuel (c. 1040, tabla de libros); lámina B7.'
+sources:
+- 2-samuel-16
+- it-ziba
+- it-mefiboset
+- tnm-b7
+- it-absalon
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Zibá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004724
+  type: perspicacia
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

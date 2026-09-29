@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rehob-padre-de-hadadezer
+name: Rehob
+names:
+- name: Rehob
+perspicacia: 1200003679#1
+disambiguation: El padre del rey Hadadézer de Zobá; no el levita que selló el pacto en días de Nehemías, ni las ciudades llamadas
+  Rehob.
+summary: Padre de Hadadézer, el rey arameo de Zobá al que venció David. De él no se cuenta nada más.
+reason: Perspicacia «Rehob», núm. 1; 2Sa 8:3, 12.
+sources:
+- it-rehob
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Rehob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003679
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

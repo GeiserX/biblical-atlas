@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joseb-basebet-mata-a-800-hombres-con-su-lanza
+title: Joseb-Basébet mata a 800 hombres con su lanza
+date:
+  from: -1106
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y c. 1040 a.e.c. (tiempo narrativo: entre las hazañas de los guerreros de David)'
+narrative_order:
+  series: 2-samuel
+  order: 23008
+places: []
+people:
+- joseb-basebet
+present: []
+passages:
+- 2Sa 23:8
+summary: Joseb-Basébet, el tahkemonita que encabezaba a los tres más destacados de los guerreros de David, abate en una ocasión
+  a 800 hombres con su lanza.
+reason: '2Sa 23:8, sin lugar. Perspicacia «Joseb-basébet» ve posible que no sea la hazaña de 1Cr 11:11, que da 300. Sin año:
+  el único límite anclado va del nacimiento de David (1107) al fin de 2 Samuel (c. 1040), estudio 3.'
+sources:
+- 2-samuel-23
+- it-joseb-basebet
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

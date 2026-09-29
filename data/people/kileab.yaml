@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kileab
+name: Kileab
+names:
+- name: Kileab
+- name: Daniel
+  note: Así se llama en la lista de Crónicas, según Perspicacia «Kileab».
+perspicacia: '1200000954'
+disambiguation: El hijo de David y de Abigaíl, llamado también Daniel; no Daniel el profeta.
+distinct_from:
+- daniel
+summary: 'Hijo de David y de Abigaíl, la viuda de Nabal: el segundo de los nacidos en Hebrón. En 1 Crónicas se le llama Daniel.'
+reason: Perspicacia «Kileab»; 2Sa 3:3.
+sources:
+- it-kileab
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Kileab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000954
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-kileab
+  reason: '2Sa 3:2, 3: el segundo hijo de David en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abigail-esposa-de-david
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-kileab
+  reason: '2Sa 3:3: hijo de Abigaíl, la viuda de Nabal.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-kileab
+  reason: '2Sa 3:2, 3, 5: uno de los hijos que David tuvo en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

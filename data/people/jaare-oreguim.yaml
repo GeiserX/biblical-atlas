@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaare-oreguim
+name: Jaaré-Oreguim
+names:
+- name: Jaaré-Oreguim
+- name: Jaaré-oreguim
+  note: Grafía de Perspicacia.
+perspicacia: '1200002260'
+summary: 'Padre de Elhanán según 2Sa 21:19, el único pasaje que da este nombre. Perspicacia lo toma por un error de copia:
+  el relato paralelo de 1Cr 20:5 llama Jaír al padre.'
+reason: Perspicacia «Jaaré-oreguim» y «Jaír», núm. 4; 2Sa 21:19.
+sources:
+- it-jaare-oreguim
+- it-jair
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Jaaré-oreguim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002260
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

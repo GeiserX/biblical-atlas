@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobac
+name: Sobac
+names:
+- name: Sobac
+- name: Sofac
+  note: Así lo llama 1 Crónicas 19, según Perspicacia «Sobac».
+perspicacia: '1200004075'
+summary: Jefe del ejército de Hadadézer, rey de Zobá. Mandó a los sirios reunidos en Helam contra David; allí cayó herido
+  y murió. Crónicas lo llama Sofac.
+reason: Perspicacia «Sobac»; 2Sa 10:16-18.
+sources:
+- it-sobac
+- 2-samuel-10
+links:
+- title: 'Perspicacia: «Sobac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004075
+  type: perspicacia
+- title: 2 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  type: bible
+relations:
+- type: accompanies
+  person: hadadezer
+  caption: jefe del ejército de
+  inverse_caption: tiene de jefe del ejército a
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-sobac
+  reason: '2Sa 10:16, 18: Sobac era el jefe del ejército de Hadadézer.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: helam
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-sobac
+  - it-helam
+  reason: '2Sa 10:18: David lo hiere y muere allí, en Helam.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: benaya-mata-a-un-egipcio-con-su-propia-lanza
+title: Benaya mata a un egipcio con su propia lanza
+date:
+  from: -1106
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y c. 1040 a.e.c. (tiempo narrativo: entre las hazañas de los guerreros de David)'
+narrative_order:
+  series: 2-samuel
+  order: 23021
+places:
+- cabzeel
+people:
+- benaya-hijo-de-jehoiada
+present: []
+passages:
+- 2Sa 23:21
+- 1Cr 11:23
+summary: Con solo un palo, Benaya hace frente a un egipcio enorme armado de lanza, se la arranca de la mano y lo mata con
+  ella.
+reason: '2Sa 23:21; «Benaya», núm. 1. Cabzeel: así lee la TNM, pero Perspicacia «Qabzeel» admite otras lecturas; no sitúa
+  a nadie. El único límite anclado va del nacimiento de David (1107) al fin de 2 Samuel (c. 1040), estudio 3.'
+sources:
+- 2-samuel-23
+- it-benaya
+- it-qabzeel
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

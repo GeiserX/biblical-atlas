@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abi-ezer-el-anatotita
+name: Abí-Ézer
+names:
+- name: Abí-Ézer
+perspicacia: 1200000035#3
+disambiguation: Abí-Ézer de Anatot, guerrero de David; no Abí-Ézer hijo de Galaad, antepasado de Gedeón.
+distinct_from:
+- abi-ezer-hijo-de-galaad
+summary: Benjaminita de Anatot, uno de los treinta y siete guerreros más valientes de David. Tenía a su cargo la división
+  que servía al rey el noveno mes.
+reason: Perspicacia «Abí-ézer», núm. 3; 2Sa 23:27.
+sources:
+- it-abi-ezer
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Abí-ézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000035
+  type: perspicacia
+relations:
+- type: lived_in
+  place: anatot
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - it-abi-ezer
+  reason: '2Sa 23:27: Abí-Ézer el anatotita; Perspicacia «Abí-ézer», núm. 3, da Anatot como su ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:27: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

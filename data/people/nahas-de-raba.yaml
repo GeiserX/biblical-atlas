@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahas-de-raba
+name: Nahás
+names:
+- name: Nahás
+perspicacia: 1200003167#3
+disambiguation: El Nahás de Rabá, padre de Sobí; no Nahás, rey de los ammonitas, ni el padre de Abigaíl.
+distinct_from:
+- nahas-rey-de-ammon
+- nahas-padre-de-abigail
+summary: Vecino de Rabá de los ammonitas y padre de Sobí, que llevó víveres a David en Mahanaim. Perspicacia ve posible que
+  fuera un israelita asentado allí después de que David tomó la ciudad.
+reason: Perspicacia «Nahás», núm. 3; 2Sa 17:27.
+sources:
+- it-nahas
+- 2-samuel-17
+links:
+- title: 'Perspicacia: «Nahás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003167
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: lived_in
+  place: raba
+  inferred: true
+  sources:
+  - 2-samuel-17
+  - it-nahas
+  reason: 2Sa 17:27 nombra a Sobí hijo de Nahás, de Rabá; Perspicacia «Nahás», núm. 3, lo da por habitante de la ciudad.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
