@@ -42,8 +42,13 @@ relaciones:
   fuentes:
   - it-epeneto
   - romanos-16
-  razon: 'Ro 16:5 lo cuenta entre las primicias de Asia para Cristo: se hizo cristiano allí. El texto no dice cuánto tiempo
-    vivió en Asia.'
-  estado: verificado
+  razon: 'Ro 16:5 lo cuenta entre las primicias de Asia para Cristo. Deducción nuestra: ni el texto ni Perspicacia dicen
+    que viviera allí, ni cuánto tiempo.'
+  estado: pendiente
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Asia estaba verificada, pero Perspicacia «Epéneto» solo lo llama primicias de Asia y no dice que
+    viviera allí. Queda pendiente.
+  fuente: it-epeneto
 consultado: '2026-09-29'
 estado: verificado
