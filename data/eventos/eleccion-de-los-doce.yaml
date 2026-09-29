@@ -21,7 +21,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - mateo
 - santiago-hijo-de-alfeo
 - tomas
@@ -42,5 +42,10 @@ fuentes:
 - it-capernaum
 - it-judas
 - jy-cap-34
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Mr 3:18 y Lu 6:14 nombran a Bartolomé, que ahora tiene ficha propia; natanael sale de personas. Van en dos fichas
+    con mismo_que pendiente, porque Perspicacia solo lo da como probable.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

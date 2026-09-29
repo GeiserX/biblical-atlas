@@ -28,6 +28,11 @@ fuentes:
 - bt-4
 - si-3
 - tnm-tabla
+- mateo-4
+- mateo-10
+- mateo-17
+- mateo-20
+- mateo-26
 no_confundir_con:
 - juan-el-bautista
 - juan-marcos
@@ -42,6 +47,7 @@ relaciones:
   fuentes:
   - it-juan
   - it-santiago
+  - mateo-10
   razon: Mt 10:2 los nombra hermanos; Perspicacia cree a Juan el menor porque Santiago suele ir primero (párr. 21).
   estado: verificado
 - tipo: pariente
@@ -51,6 +57,9 @@ relaciones:
   fuentes:
   - it-juan
   - it-zebedeo
+  - mateo-4
+  - mateo-20
+  - mateo-26
   razon: Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.
   estado: verificado
 - tipo: acompana
@@ -94,8 +103,8 @@ relaciones:
   - bt-4
   - it-juan-cartas
   - tnm-tabla
-  razon: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se
-    fue allí al salir libre.
+  razon: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí
+    al salir libre.
   estado: verificado
 - tipo: murio_en
   lugar: efeso
@@ -111,9 +120,31 @@ relaciones:
   fuentes:
   - bt-4
   - it-juan
-  razon: El recuadro del capítulo 4 de «Testimonio completo» dice que al parecer murió allí hacia 100; Perspicacia
-    (párr. 32) lo atribuye a la tradición.
+  razon: El recuadro del capítulo 4 de «Testimonio completo» dice que al parecer murió allí hacia 100; Perspicacia (párr.
+    32) lo atribuye a la tradición.
   estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: maestro
+  deducido: false
+  fuentes:
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-20
+  - mateo-26
+  razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
+  estado: verificado
+- tipo: pariente
+  persona: salome-discipula
+  relacion: madre
+  deducido: true
+  fuentes:
+  - mateo-27
+  - it-juan
+  - it-salome
+  razon: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Juan», núm. 3, y la nota de Mr 15:40 creen que era Salomé.
+  estado: pendiente
 enlaces:
 - titulo: 'Perspicacia: «Juan»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
@@ -121,5 +152,6 @@ enlaces:
 - titulo: Apocalipsis 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002489#3
+consultado: '2026-09-29'
 estado: verificado

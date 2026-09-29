@@ -18,7 +18,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - tomas
 - mateo
 - santiago-hijo-de-alfeo
@@ -42,5 +42,10 @@ orden_relato:
   serie: a7
   orden: 125
 buscar: En Galilea manda hacer discípulos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Entre los once de Mt 28:16 va Bartolomé (Mt 10:3), que ahora tiene ficha; sale natanael. Van en dos fichas con mismo_que
+    pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-28
+consultado: '2026-09-29'
 estado: verificado

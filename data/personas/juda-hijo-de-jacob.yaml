@@ -11,6 +11,7 @@ fuentes:
 - it-juda
 - it-lea
 - genesis-29
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Judá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - it-juda
   - genesis-29
+  - mateo-1
   razon: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
   estado: verificado
 - tipo: pariente
@@ -42,8 +44,9 @@ relaciones:
   deducido: true
   fuentes:
   - it-juda
-  razon: 'Perspicacia «Judá», párr. 2: vivió unos nueve años en Harán (Padán-aram) antes de salir con la casa de Jacob;
-    ahí nació.'
+  razon: 'Perspicacia «Judá», párr. 2: vivió unos nueve años en Harán (Padán-aram) antes de salir con la casa de Jacob; ahí
+    nació.'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200002538#1
+consultado: '2026-09-29'
 estado: verificado

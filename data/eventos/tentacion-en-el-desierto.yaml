@@ -16,21 +16,30 @@ orden_relato:
   orden: 12
 lugares:
 - judea
+- desierto-de-juda
+- jerusalen
 personas:
 - jesus
+- satanas
 pasajes:
 - Mt 4:1-11
 - Mr 1:12, 13
 - Lu 4:1-13
 resumen: Después del bautismo, Jesús pasa 40 días sin comer en el desierto de Judea. El Diablo lo tienta tres veces y él responde
   cada vez con las Escrituras.
-razon: 'A7-B, fila 2: c. octubre de 29, desierto de Judea. No hay ficha de lugar para ese desierto porque OpenBible no le
-  da coordenada; va en Judea.'
+razon: 'A7-B, fila 2: c. octubre de 29, desierto de Judea. Esa ficha no tiene punto, así que Judea va primero. Mt 4:5 lo lleva
+  también a la parte más alta del templo, en Jerusalén.'
 fuentes:
 - tnm-a7-b
 - mateo-4
 - marcos-1
 - lucas-4
 - jy-cap-13
-consultado: '2026-09-28'
+- it-desierto-de-juda
+- it-satanas
+historial:
+- fecha: '2026-09-29'
+  cambio: El desierto de Judá tiene ya ficha propia; se añaden Jerusalén (Mt 4:5) y Satanás, que tienta a Jesús.
+  fuente: mateo-4
+consultado: '2026-09-29'
 estado: verificado

@@ -7,7 +7,7 @@ nombres:
   nota: Significado del nombre (Jn 19:17).
 - nombre: Calvario
   nota: Del latín calvaria; lo usan algunas traducciones en Lu 23:33.
-tipo: monte
+tipo: region
 lat: null
 lon: null
 precision: incierto
@@ -50,6 +50,7 @@ fuentes:
 - tnm-b12-a
 - juan-19
 - openbible-geo
+- mateo-27
 enlaces:
 - titulo: 'Perspicacia: «Gólgotha»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001738
@@ -57,5 +58,10 @@ enlaces:
 - titulo: Juan 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/19
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'tipo pasa de monte a region: la nota de Mt 27:33 dice que la Biblia no lo pone en una colina, y la lista no tiene
+    tipo para un sitio.'
+  fuente: mateo-27
+consultado: '2026-09-29'
 estado: verificado

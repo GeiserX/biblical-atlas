@@ -27,6 +27,7 @@ fuentes:
 - it-judas-carta
 - tnm-tabla
 - judas-1
+- mateo-13
 relaciones:
 - tipo: pariente
   persona: santiago-hermano-de-jesus
@@ -40,10 +41,11 @@ relaciones:
 - tipo: pariente
   persona: jesus
   relacion: medio hermano
-  deducido: true
+  deducido: false
   fuentes:
   - it-judas
-  razon: Perspicacia deduce que es uno de los cuatro medio hermanos de Mt 13:55.
+  - mateo-13
+  razon: Mt 13:55 lo nombra entre los hermanos de Jesús; Perspicacia lo identifica con el escritor de la carta.
   estado: verificado
 - tipo: pariente
   persona: maria-madre-de-jesus
@@ -51,7 +53,25 @@ relaciones:
   deducido: true
   fuentes:
   - it-judas
+  - mateo-13
   razon: 'Perspicacia, párr. 23: acompañó a su madre María.'
+  estado: verificado
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: padre
+  deducido: true
+  fuentes:
+  - mateo-13
+  - it-jose
+  razon: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
+    entre ellos.
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: true
+  fuentes:
+  - mateo-13
+  razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Judas»'
@@ -60,5 +80,11 @@ enlaces:
 - titulo: 'Perspicacia: «Judas, Carta de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002543
   tipo: perspicacia
-consultado: '2026-09-28'
+perspicacia: 1200002541#5
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La relación con Jesús pasa a deducido: false, porque Mt 13:55 lo dice. Lo que deduce Perspicacia es que ese Judas
+    escribió la carta.'
+  fuente: mateo-13
+consultado: '2026-09-29'
 estado: verificado

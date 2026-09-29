@@ -13,8 +13,8 @@ fecha:
     mes: nisan
     dia: 10
 lugares:
-- betania
 - jerusalen
+- betania
 - monte-moria
 personas:
 - jesus
@@ -41,5 +41,10 @@ orden_relato:
   serie: a7
   orden: 95
 buscar: Maldice una higuera y vuelve a limpiar el templo
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Jerusalén pasa a primer lugar: la limpieza del templo es lo principal (Mt 21:12, 13), y el mapa situaba a Jesús
+    en Betania.'
+  fuente: mateo-21
+consultado: '2026-09-29'
 estado: verificado

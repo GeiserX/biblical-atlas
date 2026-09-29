@@ -22,6 +22,33 @@ relaciones:
   razon: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace; el dato sale de la historia,
     no del texto bíblico.
   estado: verificado
+- tipo: pariente
+  persona: herodias
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - mateo-14
+  - it-herodes
+  razon: 'Mt 14:3, 4: Juan le reprochaba tener por esposa a Herodías; Perspicacia «Herodes» (núm. 2) cuenta la boda.'
+  estado: verificado
+- tipo: pariente
+  persona: filipo-esposo-de-herodias
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - mateo-14
+  - it-herodes
+  razon: Mt 14:3 llama a Filipo hermano de Herodes; Perspicacia «Herodes» (núm. 2 y 5) precisa que eran medio hermanos.
+  estado: verificado
+- tipo: vivio_en
+  lugar: tiberiades
+  deducido: true
+  fuentes:
+  - mateo-14
+  - it-tiberiades
+  razon: Las notas de Mt 14:3 y 6 ponen su residencia en Tiberíades; Perspicacia «Tiberíades» (núm. 1) la da como sede de
+    su tetrarquía.
+  estado: verificado
 resumen: Tetrarca de Galilea y Perea, nacido de Herodes el Grande. Hizo decapitar a Juan el Bautista y, el día en
   que murió Jesús, lo interrogó en Jerusalén y se burló de él.
 razon: Perspicacia «Herodes», apartado 2 (párrafos sobre Juan el Bautista y «Se burla de Jesús»); Lu 23:6-12 narra
@@ -38,5 +65,6 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/23
   tipo: biblia
 buscar: Herodes Antipas
-consultado: '2026-09-28'
+perspicacia: 1200002000#2
+consultado: '2026-09-29'
 estado: verificado

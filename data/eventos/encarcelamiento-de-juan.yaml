@@ -15,6 +15,7 @@ orden_relato:
 lugares:
 - tiberiades
 - judea
+- galilea
 personas:
 - juan-el-bautista
 - herodes-antipas
@@ -40,5 +41,5 @@ fuentes:
 - it-herodias
 - jy-cap-18
 - jy-cap-19
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

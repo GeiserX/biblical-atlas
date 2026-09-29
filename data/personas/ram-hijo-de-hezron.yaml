@@ -13,6 +13,7 @@ razon: Perspicacia «Ram», núm. 1; Rut 4:19.
 fuentes:
 - it-ram
 - rut-4
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Ram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003629
@@ -24,6 +25,7 @@ relaciones:
   deducido: false
   fuentes:
   - rut-4
+  - mateo-1
   razon: Rut 4:19.
   estado: verificado
 no_confundir_con:

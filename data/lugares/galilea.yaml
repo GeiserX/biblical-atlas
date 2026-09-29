@@ -3,6 +3,8 @@ id: galilea
 nombre: Galilea
 nombres:
 - nombre: Galilea
+- nombre: Galilea de las naciones
+  nota: Expresión de Isaías que cita Mateo (Is 9:1; Mt 4:15), quizá porque muchos de sus habitantes no eran israelitas.
 tipo: region
 lat: 32.76
 lon: 35.527
@@ -18,9 +20,13 @@ fuentes:
 - it-galilea
 - tnm-b10
 - openbible-geo
+- mateo-2
+- mateo-4
+- mateo-17
+- mateo-28
 enlaces:
 - titulo: 'Perspicacia: «Galilea»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001598
   tipo: perspicacia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

@@ -19,6 +19,7 @@ fuentes:
 - 1-reyes-12
 - 1-reyes-14
 - tnm-a6-a
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Rehoboam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003680
@@ -34,6 +35,7 @@ relaciones:
   fuentes:
   - it-rehoboam
   - 1-reyes-11
+  - mateo-1
   razon: 1Re 11:43 lo presenta como hijo y sucesor de Salomón.
   estado: verificado
 - tipo: sucede_a
@@ -44,5 +46,6 @@ relaciones:
   - 1-reyes-11
   razon: Subió al trono al morir su padre (1Re 11:43).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200003680'
+consultado: '2026-09-29'
 estado: verificado
