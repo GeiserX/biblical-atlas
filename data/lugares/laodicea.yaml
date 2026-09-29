@@ -13,14 +13,16 @@ lon: 29.1075
 precision: punto
 coord_fuente: openbible:a83fb1e
 coord_url: https://www.openbible.info/geo/ancient/a83fb1e/laodicea
-resumen: Ciudad rica del valle del Lico, centro bancario y de lana negra, sin agua propia. Pablo escribió a su congregación;
-  en Apocalipsis Jesús la halla tibia y pobre en sentido espiritual.
+resumen: Ciudad rica del valle del Lico, centro bancario y de lana negra, sin agua propia. Pablo, que no predicó allí, se
+  preocupó por su congregación y le escribió; en Apocalipsis Jesús la halla tibia y pobre en sentido espiritual.
 razon: 'Perspicacia «Laodicea, laodicenses» (párr. 2 a 7); Col 4:16 y Ap 3:14-22. La coordenada es de OpenBible:
   solo tomamos el punto.'
 fuentes:
 - it-laodicea
 - apocalipsis-3
 - openbible-geo
+- colosenses-2
+- colosenses-4
 enlaces:
 - titulo: 'Perspicacia: «Laodicea, laodicenses»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002681
@@ -28,5 +30,10 @@ enlaces:
 - titulo: Apocalipsis 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/3
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Añade que Pablo no predicó en la ciudad pero luchaba por sus cristianos (Col 2:1; nota de estudio de ese versículo
+    y Perspicacia «Laodicea, laodicenses», párr. 5).
+  fuente: colosenses-2
+consultado: '2026-09-29'
 estado: verificado

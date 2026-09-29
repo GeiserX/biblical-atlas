@@ -21,6 +21,7 @@ fuentes:
 - hch-13
 - marcos-14
 - hechos-12
+- colosenses-4
 enlaces:
 - titulo: 'Perspicacia: «Marcos»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002902
@@ -37,6 +38,10 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón cita ahora Mr 14:51, 52, de donde sale lo del joven que huyó.
   fuente: marcos-14
+- fecha: '2026-09-29'
+  cambio: La relación con Pablo de 60-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de
+    la lista no cambia.
+  fuente: colosenses-4
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -75,6 +80,8 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: pablo
+  relacion: colaborador
+  relacion_inversa: colaborador
   fecha:
     desde: 60
     hasta: 61
@@ -87,7 +94,7 @@ relaciones:
   fuentes:
   - it-marcos
   - colosenses-4
-  razon: Está con Pablo en Roma y saluda a Colosas y a Filemón (Col 4:10; Flm 24).
+  razon: Está con Pablo en Roma, es uno de sus colaboradores judíos y saluda a Colosas y a Filemón (Col 4:10, 11; Flm 24).
   estado: verificado
 - tipo: pariente
   persona: maria-madre-de-juan-marcos

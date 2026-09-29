@@ -19,6 +19,7 @@ fuentes:
 - it-onesimo
 - filemon-1
 - tnm-tabla
+- colosenses-4
 enlaces:
 - titulo: 'Perspicacia: «Onésimo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003328
@@ -26,7 +27,11 @@ enlaces:
 - titulo: Filemón 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1
   tipo: biblia
-consultado: '2026-09-28'
+- titulo: Colosenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
+  tipo: biblia
+perspicacia: '1200003328'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -52,6 +57,7 @@ relaciones:
   - it-onesimo
   - filemon-1
   - tnm-tabla
+  - colosenses-4
   razon: Pablo lo llama su hijo y le es muy útil en Roma (Flm 10-13). La Tabla de los libros fecha Filemón hacia 60-61.
   estado: verificado
 - tipo: acompana
