@@ -19,27 +19,22 @@ resumen: Primer campamento de Israel al oeste del Jordán, en el límite orienta
   del río y desde allí dirigió la conquista.
 razon: 'Perspicacia «Guilgal», núm. 1, párr. 1 a 3; Jos 4:19, 20. No es el núm. 2, el de cerca de Betel. OpenBible: solo el
   punto.'
-no_afirmamos:
-- 'Que sea con seguridad la Guilgal de Os 4:15; 9:15; 12:11 y Am 4:4; 5:5, que el atlas pone en guilgal-cerca-de-betel:
-  Perspicacia «Guilgal», núm. 2, solo admite que quizá fuera esta.'
 fuentes:
 - it-guilgal
 - openbible-geo
 - josue-4
-- miqueas-6
-- w03-que-espera-jehova
 - tnm-b4
 - josue-5
 - it-guibeat-haaralot
 - josue-9
 - josue-10
 - josue-14
+- miqueas-6
+- w03-que-espera-jehova
 enlaces:
 - titulo: 'Perspicacia: «Guilgal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
   tipo: perspicacia
-- titulo: Miqueas 6 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6
 - titulo: Josué 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/4
   tipo: biblia
@@ -49,5 +44,11 @@ enlaces:
 - titulo: Josué 14 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
   tipo: biblia
+- titulo: Miqueas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6
+  tipo: biblia
+no_afirmamos:
+- 'Que sea con seguridad la Guilgal de Os 4:15; 9:15; 12:11 y Am 4:4; 5:5, que el atlas pone en guilgal-cerca-de-betel: Perspicacia
+  «Guilgal», núm. 2, solo admite que quizá fuera esta.'
 consultado: '2026-09-29'
 estado: verificado
