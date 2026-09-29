@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-tiquico-a-efeso-y-colosas
+titulo: Pablo envía a Tíquico desde Roma a Éfeso y Colosas
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2834
+lugares:
+- roma
+- efeso
+- colosas
+personas:
+- tiquico
+- pablo
+- onesimo
+presentes:
+- tiquico
+- pablo
+- onesimo
+pasajes:
+- Ef 6:21, 22
+resumen: Preso en Roma, Pablo confía a Tíquico sus cartas a las congregaciones de Éfeso y de Colosas. Tíquico les dará noticias
+  de él y los animará; en el viaje lo acompaña Onésimo.
+razon: 'Perspicacia «Tíquico»: lo manda desde la prisión romana con las dos cartas, y Colosenses dice que iba con Onésimo
+  (Ef 6:21, 22, y Col 4:7-9). «Efesios» y la Tabla de los libros fechan la carta hacia 60-61.'
+fuentes:
+- efesios-6
+- it-tiquico
+- it-efesios
+- it-onesimo
+- tnm-tabla
+enlaces:
+- titulo: Efesios 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/6
+  tipo: biblia
+- titulo: 'Perspicacia: «Tíquico»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004496
+  tipo: perspicacia
+buscar: Tíquico lleva cartas Éfeso Colosas Onésimo
+consultado: '2026-09-29'
+estado: verificado

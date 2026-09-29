@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-efesios
+titulo: Pablo escribe preso en Roma la carta a los Efesios
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2831
+lugares:
+- roma
+- efeso
+personas:
+- pablo
+presentes:
+- pablo
+pasajes:
+- Ef 1:1, 2
+- Ef 3:1, 13
+- Ef 4:1
+- Ef 6:20
+resumen: 'Encarcelado en Roma, Pablo escribe a los santos de Éfeso: por Cristo, Dios une a judíos y gentiles en un solo cuerpo
+  que tiene a Cristo por cabeza, y les pide vivir con la nueva personalidad.'
+razon: Perspicacia «Efesios, Carta a los», párr. 1, la da escrita en prisión en Roma hacia 60-61 (Ef 3:1; 4:1; 6:20). La Tabla
+  de los libros y el estudio 3 coinciden en lugar y fecha.
+fuentes:
+- efesios-1
+- tnm-tabla
+- si-3
+- it-efesios
+- efesios-3
+- efesios-4
+- efesios-6
+enlaces:
+- titulo: Efesios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Efesios, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001386
+  tipo: perspicacia
+buscar: Pablo escribe carta Efesios Roma
+consultado: '2026-09-29'
+estado: verificado

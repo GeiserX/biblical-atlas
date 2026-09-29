@@ -229,6 +229,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para las Escrituras Griegas
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
+- **Una cita literal de las Escrituras Hebreas.** Si la carta la usa como mandato que sigue en vigor o dice algo del propio texto citado, su pasaje entra en el suceso y el suceso en `entidades`: Ro 7:7, Ro 13:9 y Ef 6:2, 3 en `diez-mandamientos` (Ef 6:2 lo llama el primer mandato con promesa). Si solo toma la frase como apoyo de un consejo, el suceso va en `menciona` sin pasaje: Gé 2:24 en 1Co 6:16 y Ef 5:31, con `creacion-de-eva`.
 - **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Deuteronomio, Josué y Jueces
@@ -264,3 +265,16 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El pacto con Abrahán y el Éufrates.** La nota de Gál 3:17 y Perspicacia «Pacto» dicen que el pacto entró en vigor cuando Abrahán cruzó el Éufrates, en 1943 a.e.c. `pacto-con-abrahan` solo lleva `haran` en `lugares`; Génesis 12 puede añadir `rio-eufrates`.
 - **El mes del pacto de la Ley.** Gálatas corrigió el resumen de `pacto-de-la-ley`: los 430 años se cumplieron el día del éxodo, y el pacto llegó en el tercer mes (Éx 19:1). Éxodo 19 o 24 puede darle `fecha.detalle` con `mes: sivan`.
 - **Sara e Ismael en Gál 4.** El texto no los nombra, solo las notas: van en `menciona` y sus fichas no citan Gálatas 4. Isaac, Agar y Abrahán sí se nombran.
+
+## Para Colosenses, Filemón y Filipenses (desde Efesios)
+
+- **El viaje de Tíquico.** Es un solo suceso, `pablo-envia-a-tiquico-a-efeso-y-colosas` (Ef 6:21, 22, c. 60-61), con `roma`, `efeso` y `colosas` en `lugares` y `tiquico`, `pablo` y `onesimo` en `personas`, por Perspicacia «Tíquico». Col 4:7-9 añade su pasaje con un `anadir` y pone el suceso en su tramo, sin crear otro. La relación `tiquico/acompana/pablo` de 60-61 ya cita Col 4:7 en su `razon`.
+- **El orden en Roma.** `pablo-escribe-efesios` lleva el número 2831 de la serie `hechos`, tras `pablo-predica-dos-anos-en-roma` (2830), y el viaje de Tíquico el 2834. Los sucesos de escribir Colosenses y Filemón, que salieron con Tíquico, usan el 2832 y el 2833; Filipenses va después del 2834, salvo que jw.org lo sitúe antes.
+
+## Para Salmos (si se relee, desde Efesios)
+
+- **Sl 68:18.** La nota del tramo 15-18 sigue a La Atalaya de 2006: los cautivos serían de la conquista de Canaán, y el tramo lleva `conquista-de-canaan` en `menciona`. La nota de estudio de Ef 4:8, más reciente, dice que el salmo celebra la toma de Jerusalén (Sion) por David, y la referencia de Sl 68:18 lleva a 2Sa 5:7. Manda la más reciente: se corrige la nota, se quita esa mención y se pone `david-rey-de-todo-israel` (2Sa 5:1-10, 1070 a.e.c.), que ya existe y lleva la toma de Jerusalén. Ef 4:7-10 ya lo tiene en `menciona`.
+
+## Para Hechos (si se relee, desde Efesios)
+
+- **La carta escrita en Roma.** El tramo Hch 28:30, 31 ya nombra `carta:efesios` en `menciona`; puede nombrar también `pablo-escribe-efesios`.
