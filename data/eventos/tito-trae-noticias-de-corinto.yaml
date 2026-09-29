@@ -9,6 +9,10 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 55 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2003
+  tras: pablo-predica-en-troas-y-no-encuentra-a-tito
 lugares:
 - macedonia
 personas:
@@ -34,5 +38,9 @@ historial:
 - fecha: '2026-09-29'
   cambio: 'Sale 2Co 2:12, 13, que cuenta la parada en Troas: ese pasaje es de pablo-predica-en-troas-y-no-encuentra-a-tito.'
   fuente: 2-corintios-2
+- fecha: '2026-09-29'
+  cambio: 'Entra en la serie hechos con el número 2003, detrás de Troas: sin orden_relato salía el primero de 55, antes de
+    1 Corintios. Perspicacia pone Éfeso, Troas y luego Macedonia, donde llega Tito.'
+  fuente: it-corintios
 consultado: '2026-09-29'
 estado: verificado

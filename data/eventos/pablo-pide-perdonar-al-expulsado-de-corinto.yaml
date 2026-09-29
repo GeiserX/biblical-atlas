@@ -10,8 +10,8 @@ fecha:
   cronologia: tnm
   texto: c. 55 e.c.
 orden_relato:
-  serie: 2-corintios
-  orden: 2005
+  serie: hechos
+  orden: 2004
   tras: tito-trae-noticias-de-corinto
 lugares:
 - corinto
@@ -37,5 +37,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
   tipo: perspicacia
 buscar: perdonar al expulsado arrepentido 2 Corintios 2
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de la serie 2-corintios a hechos con el número 2004, tras Hch 20:1: build.py ordena por serie y lo ponía antes
+    de que Pablo dejara Éfeso. Perspicacia pone Éfeso, Troas y luego Macedonia.'
+  fuente: it-corintios
 consultado: '2026-09-29'
 estado: verificado

@@ -25,7 +25,7 @@ capitulos:
   3:
     estado: completo
     revisado: 2026-09-29
-    nota: "Pablo compara el ministerio del nuevo pacto con el de la Ley: la gloria que reflejaba el rostro de Moisés y el velo con que lo cubría."
+    nota: "Pablo compara el ministerio del nuevo pacto con el de la Ley: el brillo que salía de la cara de Moisés y el velo que se ponía."
     tramos:
     - {v: 1-3, tipo: carta, entidades: [carta:2-corintios, persona:pablo], menciona: [lugar:corinto, persona:jesus, evento:pablo-llega-a-corinto, evento:dios-da-a-moises-las-tablas-del-testimonio, evento:moises-recibe-las-segundas-tablas], nota: "Pablo no necesita cartas de recomendación: los corintios, a quienes predicó en su ciudad (nota del v. 3, Hch 18:4-11), son su carta, escrita con espíritu en corazones y no en tablas de piedra como la Ley."}
     - {v: 4-6, tipo: carta, entidades: [persona:pablo], menciona: [persona:timoteo, persona:jesus], nota: "Dios los capacitó como ministros de un nuevo pacto, del espíritu, que da vida, y no de un código escrito, que condena a muerte. La nota del v. 6 incluye a Timoteo y remite a Jer 31:31-34."}

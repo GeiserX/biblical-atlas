@@ -10,8 +10,8 @@ fecha:
   cronologia: tnm
   texto: c. 55 e.c. (final del verano o principios del otoño)
 orden_relato:
-  serie: 2-corintios
-  orden: 8016
+  serie: hechos
+  orden: 2006
   tras: pablo-escribe-2-corintios
 lugares:
 - corinto
@@ -46,5 +46,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
   tipo: perspicacia
 buscar: Tito Corinto colecta dos hermanos 2 Corintios 8
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de la serie 2-corintios a hechos con el número 2006, tras Hch 20:1: build.py ordena por serie y lo ponía antes
+    de que Pablo dejara Éfeso. Perspicacia pone Éfeso, Troas y luego Macedonia.'
+  fuente: it-corintios
 consultado: '2026-09-29'
 estado: verificado

@@ -10,8 +10,8 @@ fecha:
   cronologia: tnm
   texto: c. 55 e.c.
 orden_relato:
-  serie: 2-corintios
-  orden: 2012
+  serie: hechos
+  orden: 2002
   tras: pablo-deja-efeso-hacia-macedonia
 lugares:
 - troas
@@ -41,5 +41,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004480
   tipo: perspicacia
 buscar: Pablo Troas Tito 2 Corintios 2:12
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de la serie 2-corintios a hechos con el número 2002, tras Hch 20:1: build.py ordena por serie y lo ponía antes
+    de que Pablo dejara Éfeso. Perspicacia pone Éfeso, Troas y luego Macedonia.'
+  fuente: it-corintios
 consultado: '2026-09-29'
 estado: verificado

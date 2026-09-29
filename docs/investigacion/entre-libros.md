@@ -249,7 +249,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1; 2Co 11:22), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). Flp 3:5 solo añade su capítulo a las fuentes de esas relaciones, sin crear otras.
 
-## Para 1 Corintios
+## Para 1 Corintios (si se relee) y 2 Timoteo
 
 - **El peligro de Asia.** 2 Corintios hizo de la tribulación de 2Co 1:8-11 un suceso propio, `pablo-en-peligro-de-muerte-en-asia`, y sacó «2Co 1:8» de `motin-de-efeso`: la nota de estudio solo ve posible que fuera el motín o las fieras de Éfeso. El tramo de 1Co 15:32 lo puede poner en `menciona`, sin añadirle el pasaje.
 - **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`. 1Co 16:19 y 2Ti 4:19 añaden su capítulo a las fuentes de esa relación, sin crear otra.

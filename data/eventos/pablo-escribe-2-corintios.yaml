@@ -10,8 +10,8 @@ fecha:
   cronologia: tnm
   texto: c. 55 e.c. (final del verano o principios del otoño)
 orden_relato:
-  serie: 2-corintios
-  orden: 13010
+  serie: hechos
+  orden: 2005
   tras: tito-trae-noticias-de-corinto
 lugares:
 - macedonia
@@ -50,5 +50,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/13
   tipo: biblia
 buscar: Pablo escribe segunda carta Corintios Macedonia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de la serie 2-corintios a hechos con el número 2005, tras Hch 20:1: build.py ordena por serie y lo ponía antes
+    de que Pablo dejara Éfeso. Perspicacia pone Éfeso, Troas y luego Macedonia.'
+  fuente: it-corintios
 consultado: '2026-09-29'
 estado: verificado
