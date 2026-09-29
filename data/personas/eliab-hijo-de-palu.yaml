@@ -13,6 +13,7 @@ fuentes:
 - it-eliab
 - numeros-16
 - numeros-26
+- deuteronomio-11
 enlaces:
 - titulo: 'Perspicacia: «Eliab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001292
@@ -39,6 +40,7 @@ relaciones:
   deducido: false
   fuentes:
   - numeros-26
+  - deuteronomio-11
   razon: 'Nú 26:5, 8: Palú, su padre, era hijo de Rubén.'
   estado: verificado
 historial:

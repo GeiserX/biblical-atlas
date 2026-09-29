@@ -77,6 +77,9 @@ fuentes:
 - it-hor
 - numeros-26
 - numeros-33
+- deuteronomio-9
+- deuteronomio-10
+- deuteronomio-32
 enlaces:
 - titulo: 'Perspicacia: «Aarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
@@ -207,6 +210,9 @@ relaciones:
   - it-aaron
   - it-hor
   - numeros-33
+  - deuteronomio-10
+  - it-mosera
+  - deuteronomio-32
   razon: 'Nú 20:28: murió en la cima del monte Hor; Perspicacia «Aarón», párr. 4 y 19, da el año y el día.'
   estado: verificado
 perspicacia: '1200000005'

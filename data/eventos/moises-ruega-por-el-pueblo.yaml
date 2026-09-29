@@ -18,7 +18,7 @@ personas:
 - moises
 pasajes:
 - Éx 32:7-14
-- Dt 9:12-14, 19, 26-29
+- Dt 9:12-14, 19, 20, 26-29
 - Sl 106:23
 resumen: Jehová avisa a Moisés, en el monte, de la idolatría y propone acabar con el pueblo y hacer de Moisés una gran nación.
   Él apela al nombre de Dios y a lo jurado a Abrahán, Isaac e Israel; Jehová desiste.
@@ -29,6 +29,8 @@ fuentes:
 - it-moises
 - si-3
 - it-diez-palabras
+- it-aaron
+- deuteronomio-9
 enlaces:
 - titulo: Éxodo 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/32
@@ -36,5 +38,10 @@ enlaces:
 - titulo: 'Perspicacia: «Moisés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
   tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade Dt 9:20, la oración de Moisés por Aarón, que Perspicacia «Aarón», párr. 16, cita junto a Éx 32:11. Antes
+    estaba en moises-pide-perdon-por-el-pueblo.
+  fuente: deuteronomio-9
 consultado: '2026-09-29'
 estado: verificado

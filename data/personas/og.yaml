@@ -22,6 +22,13 @@ fuentes:
 - salmos-136
 - numeros-21
 - it-edrei
+- deuteronomio-1
+- it-astarot
+- deuteronomio-3
+- deuteronomio-4
+- it-refaim
+- deuteronomio-29
+- deuteronomio-31
 enlaces:
 - titulo: 'Perspicacia: «Og»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003306
@@ -41,6 +48,10 @@ relaciones:
   - it-og
   - salmos-136
   - numeros-21
+  - deuteronomio-1
+  - deuteronomio-3
+  - deuteronomio-4
+  - deuteronomio-29
   razon: Sl 135:11 lo llama rey de Basán.
   estado: verificado
 - tipo: murio_en
@@ -50,7 +61,26 @@ relaciones:
   - numeros-21
   - it-og
   - it-edrei
+  - deuteronomio-3
   razon: 'Nú 21:33-35: salió a pelear en Edréi y allí lo mataron con sus hijos y su ejército.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: astarot
+  deducido: false
+  fuentes:
+  - deuteronomio-1
+  - it-og
+  - it-astarot
+  razon: 'Dt 1:4: Og vivía en Astarot; Perspicacia «Og» la da como una de sus dos ciudades principales.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edrei
+  deducido: false
+  fuentes:
+  - deuteronomio-1
+  - it-og
+  - it-edrei
+  razon: 'Dt 1:4: Og vivía en Astarot, en Edréi; Perspicacia «Edrei», núm. 1, la llama ciudad real de Og.'
   estado: verificado
 historial:
 - fecha: '2026-09-29'

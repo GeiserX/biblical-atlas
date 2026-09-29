@@ -4,6 +4,8 @@ nombre: Desierto de Parán
 nombres:
 - nombre: Desierto de Parán
 - nombre: Parán
+- nombre: Región montañosa de Parán
+  nota: Así lo llama Dt 33:2. Perspicacia dice que su parte central es montañosa, de 600 a 750 m de altura.
 tipo: desierto
 lat: 30.303218
 lon: 34.776667
@@ -22,6 +24,8 @@ fuentes:
 - numeros-12
 - numeros-13
 - it-espias
+- deuteronomio-1
+- deuteronomio-33
 enlaces:
 - titulo: 'Perspicacia: «Parán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003380

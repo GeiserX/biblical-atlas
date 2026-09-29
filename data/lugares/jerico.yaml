@@ -7,6 +7,8 @@ nombres:
   nota: Montículo de la ciudad antigua, unos 22 km al ENE de Jerusalén.
 - nombre: Tulul Abu el-ʽAlayiq
   nota: Sitio donde se sitúa la Jericó del siglo I, la ciudad nueva.
+- nombre: Ciudad de las palmeras
+  nota: Así la llama Dt 34:3. Perspicacia recuerda que las palmeras siguen creciendo en la zona.
 tipo: ciudad
 lat: 31.871719
 lon: 35.444564
@@ -25,6 +27,7 @@ fuentes:
 - openbible-geo
 - marcos-10
 - lucas-18
+- deuteronomio-34
 enlaces:
 - titulo: 'Perspicacia: «Jericó»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
