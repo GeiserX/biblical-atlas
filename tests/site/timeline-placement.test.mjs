@@ -60,7 +60,7 @@ const EXPECTED_CHANGES = {
   'evento:dedo-de-dios-y-senal-de-jonas': 1, 'evento:come-con-un-fariseo': 1, 'evento:rico-insensato-y-mayordomo-fiel': 1,
   'evento:mujer-encorvada-y-grano-de-mostaza': 1,
   'evento:tito-trae-noticias-de-corinto': 2, 'evento:segundo-encierro-en-roma': 2, 'carta:2-corintios': 2, 'carta:2-timoteo': 2,
-  'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3,
+  'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3, 'evento:joel-anuncia-el-dia-de-jehova': 3,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {

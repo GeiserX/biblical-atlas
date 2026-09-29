@@ -4,15 +4,16 @@ titulo: Los doce jefes presentan sus ofrendas para inaugurar el altar
 fecha:
   desde: -1511
   hasta: -1511
-  precision: mes
+  precision: día
   aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: nisán de 1512 a.e.c.
+  texto: 1 de abib (nisán) de 1512 a.e.c. (empieza; las ofrendas duran doce días)
   detalle:
     mes: nisan
+    dia: 1
   nota: 'Doce días seguidos desde que se ungió el altar, el día en que se montó el tabernáculo (Nú 7:1, 10, 11; Éx 40:17):
-    en la primera mitad de nisán.'
+    del 1 al 12 de nisán.'
 orden_relato:
   serie: numeros
   orden: 710
@@ -49,5 +50,10 @@ enlaces:
 - titulo: Números 7 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/7
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La fecha pasa de «nisán» a «1 de nisán», el día en que se montó el tabernáculo y se ungió el altar; desde ahí
+    siguen los doce días de ofrendas.
+  fuente: numeros-7
 consultado: '2026-09-29'
 estado: verificado
