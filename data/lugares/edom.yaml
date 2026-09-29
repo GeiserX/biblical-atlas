@@ -5,6 +5,9 @@ nombres:
 - nombre: Edom
 - nombre: Territorio de Edom
   nota: La nota de Gé 32:3 da la lectura literal «campo de Edom».
+- nombre: Región montañosa de Esaú
+  nota: Así la llama Abdías (Abd 8, 9, 19, 21), en paralelo con Edom. «Toda Escritura» recuerda que su tierra se llamaba también
+    monte Seír.
 tipo: pais
 lat: 30.745843
 lon: 35.603919
@@ -26,6 +29,9 @@ fuentes:
 - joel-3
 - amos-1
 - amos-9
+- abdias-1
+- it-abdias-libro
+- si-abdias
 enlaces:
 - titulo: 'Perspicacia: «Edom»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001258

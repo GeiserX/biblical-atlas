@@ -19,6 +19,8 @@ fuentes:
 - abdias-1
 - tnm-tabla
 - si-3
+- it-abdias-libro
+- si-abdias
 enlaces:
 - titulo: 'Perspicacia: «Abdías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003287
@@ -26,5 +28,11 @@ enlaces:
 - titulo: Abdías 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/31/1
   tipo: biblia
-consultado: '2026-09-28'
+- titulo: 'Perspicacia: «Abdías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003288
+  tipo: perspicacia
+perspicacia: 1200003287#8
+consultado: '2026-09-29'
 estado: verificado
+no_afirmamos:
+- 'Dónde nació, dónde vivió ni de qué tribu era: «Toda Escritura» dice que el libro no da ninguno de esos datos.'

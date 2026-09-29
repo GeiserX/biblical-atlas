@@ -12,6 +12,9 @@ nombres:
 - nombre: José
   nota: Amós llama así al reino del norte, por José, padre de Efraín y Manasés (Am 5:6, 15; 6:6). Perspicacia «José» dice
     que el nombre designa a veces a todas las tribus.
+- nombre: Samaria
+  nota: Nombre de la capital aplicado a todo el reino del norte (Perspicacia «Samaria», núm. 2). Así se lee «el campo de Samaria»
+    de Abd 19, cuyas referencias remiten a 2Re 17:24 y Jer 31:5.
 tipo: pais
 lat: null
 lon: null
@@ -65,6 +68,8 @@ fuentes:
 - amos-6
 - amos-7
 - amos-9
+- abdias-1
+- it-samaria
 enlaces:
 - titulo: 'Perspicacia: «Israel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
