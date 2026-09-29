@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-pide-perdonar-al-expulsado-de-corinto
+titulo: Pablo pide perdonar al expulsado arrepentido de Corinto
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+orden_relato:
+  serie: 2-corintios
+  orden: 2005
+  tras: tito-trae-noticias-de-corinto
+lugares:
+- corinto
+- macedonia
+personas:
+- pablo
+presentes: []
+pasajes:
+- 2Co 2:5-11
+resumen: El hombre que la congregación de Corinto expulsó ya tuvo bastante con la reprensión de la mayoría. Desde Macedonia,
+  Pablo les pide que lo perdonen, lo consuelen y le demuestren su amor.
+razon: 'La nota de 2Co 2:6 lo identifica con el inmoral que 1 Corintios mandó expulsar y dice que se arrepintió. Perspicacia
+  «Corintios, Cartas a los» sitúa la carta en Macedonia hacia 55. Pasa en dos sitios: no sitúa a nadie.'
+fuentes:
+- 2-corintios-2
+- it-corintios
+- tnm-tabla
+enlaces:
+- titulo: 2 Corintios 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  tipo: perspicacia
+buscar: perdonar al expulsado arrepentido 2 Corintios 2
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-predica-en-troas-y-no-encuentra-a-tito
+titulo: Pablo predica en Troas y, sin noticias de Tito, sigue a Macedonia
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+orden_relato:
+  serie: 2-corintios
+  orden: 2012
+  tras: pablo-deja-efeso-hacia-macedonia
+lugares:
+- troas
+- macedonia
+personas:
+- pablo
+- tito
+presentes:
+- pablo
+pasajes:
+- 2Co 2:12, 13
+resumen: Al dejar Éfeso, Pablo se detiene en Troas a predicar y encuentra buena acogida. Pero Tito, que venía de Corinto,
+  no llega; inquieto, se despide y pasa a Macedonia.
+razon: Perspicacia «Troas», párr. 4, cuenta esta parada del tercer viaje, de duración desconocida. «Corintios, Cartas a los»
+  la pone después de Pentecostés de 55. El relato de Hechos no la nombra.
+fuentes:
+- 2-corintios-2
+- it-troas
+- it-corintios
+- it-tito-persona
+- si-3
+enlaces:
+- titulo: 2 Corintios 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Troas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004480
+  tipo: perspicacia
+buscar: Pablo Troas Tito 2 Corintios 2:12
+consultado: '2026-09-29'
+estado: verificado

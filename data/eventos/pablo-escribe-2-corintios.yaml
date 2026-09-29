@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-2-corintios
+titulo: Pablo escribe 2 Corintios en Macedonia
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c. (final del verano o principios del otoño)
+orden_relato:
+  serie: 2-corintios
+  orden: 13010
+  tras: tito-trae-noticias-de-corinto
+lugares:
+- macedonia
+- corinto
+- acaya
+personas:
+- pablo
+- timoteo
+- tito
+presentes:
+- pablo
+- timoteo
+- tito
+pasajes:
+- 2Co 1:1
+- 2Co 13:10
+resumen: En Macedonia, animado por lo que le cuenta Tito, Pablo escribe junto con Timoteo a la congregación de Corinto y a
+  los santos de toda Acaya, unos meses antes de volver a visitarlos.
+razon: 'Perspicacia «Corintios, Cartas a los»: la escribe en Macedonia a finales del verano o comienzos del otoño de 55, y
+  seguramente la lleva Tito. «Timoteo» lo sitúa allí con Pablo (2Co 1:1; 2:13).'
+fuentes:
+- 2-corintios-1
+- it-corintios
+- it-timoteo
+- tnm-tabla
+- si-3
+- 2-corintios-13
+enlaces:
+- titulo: 2 Corintios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  tipo: perspicacia
+- titulo: 2 Corintios 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/13
+  tipo: biblia
+buscar: Pablo escribe segunda carta Corintios Macedonia
+consultado: '2026-09-29'
+estado: verificado

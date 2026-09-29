@@ -125,19 +125,21 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Pasajes ya puestos en sucesos de Hechos.** Gál 1:15, 16 en `conversion-de-pablo`; Gál 1:18, 19 en `pablo-visita-a-cefas`; Gál 2:1-10 en `concilio-de-jerusalen-49`. Van en los tramos de esos capítulos. Hechos es el dueño de estos sucesos (sección 6 de `versiculos.md`).
 
-## Para 2 Corintios y Hechos
+## Para Hechos
 
-- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1 Corintios ya añadió 1Co 16:1-4 y Galacia. 2Co 8 y 9 añaden su pasaje con un `anadir` y ponen el suceso en su tramo. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
+- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1 Corintios y 2 Corintios (1:16; 8:1-15; 9:1-15) ya pusieron sus pasajes. 2Co 8:10 y 9:2 adelantan su comienzo: la fecha es derivada, c. 54-56, y el suceso queda pendiente. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
+- **La ayuda de Macedonia en Corinto.** `crispo-cree` (Hch 18:5-8) lleva «2Co 11:9», porque «Testimonio completo», cap. 19, párr. 8, dice que Silas y Timoteo trajeron esa ayuda. Si Hechos hace de su llegada un suceso propio, el pasaje pasa a él y el tramo 7-11 de 2 Corintios 11 lo nombra.
+- **Troas camino de Macedonia (2Co 2:12, 13).** La parada tiene suceso propio, `pablo-predica-en-troas-y-no-encuentra-a-tito`, y es la parada 5 de `tercer-viaje` (las de después se renumeraron). `pablo-deja-efeso-hacia-macedonia` sigue con «2Co 2:12, 13» en `pasajes` y en su `razon`; Hechos 20 puede quitarlo con un `cambiar`, y entonces ese suceso pasa a `menciona` del tramo 12-13 de 2 Corintios 2.
 
-## Para 2 Corintios y Filipenses
+## Para Filipenses
 
-- **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). 2Co 11:22 y Flp 3:5 solo añaden su capítulo a las fuentes de esas relaciones, sin crear otras.
+- **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1; 2Co 11:22), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). Flp 3:5 solo añade su capítulo a las fuentes de esas relaciones, sin crear otras.
 
-## Para 2 Corintios
+## Para 1 Corintios
 
-- **El expulsado de 1Co 5.** `pablo-manda-expulsar-al-inmoral-de-corinto` cita 2Co 2:1-11 en su `razon`, porque Perspicacia «Corintios, Cartas a los» lo identifica con el arrepentido al que 2Co 2:5-11 y 7:8-12 piden perdonar. El tramo de 2Co 2 que lo cuenta lo pone en `entidades` o en `menciona`, y 2 Corintios decide si el perdón es un suceso propio o un pasaje más de este.
-- **El peligro de Éfeso.** 1Co 15:32 (las fieras de Éfeso) quedó en `pablo-escribe-1-corintios`, sin suceso propio, porque la nota duda entre sentido literal y figurado. `motin-de-efeso` ya lleva «2Co 1:8» en sus pasajes: 2 Corintios decide si se queda ahí o pasa a un suceso propio de la tribulación en Asia, y en ese caso 1Co 15:32 puede ir en su `menciona`.
+- **El peligro de Asia.** 2 Corintios hizo de la tribulación de 2Co 1:8-11 un suceso propio, `pablo-en-peligro-de-muerte-en-asia`, y sacó «2Co 1:8» de `motin-de-efeso`: la nota de estudio solo ve posible que fuera el motín o las fieras de Éfeso. El tramo de 1Co 15:32 lo puede poner en `menciona`, sin añadirle el pasaje.
 
 ## Para Tito
 
 - **Apolos y Pablo.** `apolos` lleva `acompana` `pablo` como `colaborador`, c. 55 (1Co 3, 4 y 16): trabajaron el mismo campo en momentos distintos y solo se les ve cerca al escribirse 1 Corintios. Tit 3:13 añade su capítulo a las fuentes de esa relación con un `anadir` y puede alargar su fecha con un `cambiar` sobre esa relación.
+- **Tito y Pablo.** `tito` lleva tres relaciones `acompana` con `pablo`: c. 49 (Gál 2), c. 55 (2 Corintios, ya como `compañero` y con 2Co 2, 7, 8 y 12) y c. 61-64 (Tito). `aplicar.py` funde un `anadir` de relación en la primera con el mismo tipo y persona, la de 49. Para tocar la de 55 o la de 61-64, 2 Corintios usó un `cambiar` de toda la lista `relaciones`, con su `antes`; si choca, va a `preguntas` para una edición a mano.
