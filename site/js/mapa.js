@@ -81,10 +81,13 @@ function filtrosCambiados(guardar = true) {
 
 // ---------------------------------------------------------------------------
 // Colores calculados (D-09): viajes por persona y orden, cartas por escritor. Tonos con claridad distinta y
-// nunca solos: lo incierto va rayado o discontinuo, lo pendiente con borde de trazos.
+// nunca solos: lo incierto va rayado o discontinuo, lo pendiente con borde de trazos. Las listas viven en
+// site/kit/tokens.css (--viajes, --cartas) y se leen una vez al cargar; la de aquí es la misma, por si falta el CSS.
 // ---------------------------------------------------------------------------
-const PALETA = ['#a3432b', '#8a6d1f', '#2f6f73', '#6b4c8a', '#7b6f60', '#2c5f8a', '#62743a', '#9b3d5a', '#56657a', '#c47a2c'];
-const PALETA_ESCRITOR = ['#b8892f', '#2c5f8a', '#62743a', '#9b3d5a', '#6b4c8a', '#2f6f73', '#56657a'];
+const cssVar = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const leerLista = (v, def) => { const s = cssVar(v); return s ? s.split(/\s*,\s*/) : def; };
+const PALETA = leerLista('--viajes', ['#b34962', '#357589', '#805da8', '#6b445c', '#a75733', '#2f5085', '#756f19', '#654b2f', '#803b37', '#91615b']);
+const PALETA_ESCRITOR = leerLista('--cartas', ['#1f3b30', '#b34962', '#a75733', '#805da8', '#6b445c', '#756f19', '#2f5085']);
 const hash = (s) => [...String(s)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
 const claveFecha = (f) => [f?.desde ?? 1e6, f?.hasta ?? 1e6];
 let coloresViaje = null, coloresEscritor = null;
@@ -97,7 +100,7 @@ function calcularColores() {
     const base = p === 'pablo' ? 0 : 3 + (hash(p) % (PALETA.length - 3));
     vs.forEach((v, i) => coloresViaje.set(v.id, PALETA[(base + i) % PALETA.length]));
   }
-  // Escritores por la fecha de su primera carta; Pablo, el primero, conserva el dorado de v0.
+  // Escritores por la fecha de su primera carta; Pablo, el primero, lleva el color del tiempo (--gold), como el cursor.
   coloresEscritor = new Map();
   const primera = new Map();
   for (const c of BE.D.cartas) { const e = c.escritor || 'pablo'; const d = claveFecha(c.fecha)[0]; if (!primera.has(e) || d < primera.get(e)) primera.set(e, d); }
@@ -105,7 +108,11 @@ function calcularColores() {
     .forEach(([e], i) => coloresEscritor.set(e, PALETA_ESCRITOR[i % PALETA_ESCRITOR.length]));
 }
 const colorViaje = (id) => { if (!coloresViaje) calcularColores(); return coloresViaje.get(id) || PALETA[0]; };
-const colorEscritor = (id) => { if (!coloresEscritor) calcularColores(); return coloresEscritor.get(id || 'pablo') || PALETA_ESCRITOR[0]; };
+// Pablo (el primer escritor) lleva el color del tiempo: se lee de --gold cada vez que cambian las clases de la raíz,
+// así en el modo reunión sus cartas vuelven al oro como el cursor.
+let oroClase = null, oroValor = null;
+const oro = () => { const k = document.documentElement.className; if (k !== oroClase) { oroClase = k; oroValor = cssVar('--gold') || PALETA_ESCRITOR[0]; } return oroValor; };
+const colorEscritor = (id) => { if (!coloresEscritor) calcularColores(); const c = coloresEscritor.get(id || 'pablo'); return !c || c === PALETA_ESCRITOR[0] ? oro() : c; };
 const colorPersona = (id) => { const v = BE.D.viajes.find((x) => (x.persona || 'pablo') === id); return v ? colorViaje(v.id) : PALETA[hash(id) % PALETA.length]; };
 /** Mezcla un color con el gris del papel: el rastro de un viaje ya hecho (M-09). */
 function apagar(hex, f = 0.5) {
@@ -118,7 +125,7 @@ function apagar(hex, f = 0.5) {
 // Estados de los candidatos de ubicación (M-10, M-11, C-07): color y patrón
 // ---------------------------------------------------------------------------
 const CAND = {
-  seguro: { color: '#2f5d50', rotulo: 'Seguro', corto: 'seguro', trazo: 'solido' },
+  seguro: { color: cssVar('--tier1') || '#2f5d50', rotulo: 'Seguro', corto: 'seguro', trazo: 'solido' },
   favorecido_nivel_1: { color: '#7a5c8e', rotulo: 'Favorecido por jw.org', corto: 'favorecido', trazo: 'raya' },
   tradicion: { color: '#86601c', rotulo: 'Tradición que cita jw.org', corto: 'tradición', trazo: 'raya' },
   alternativa: { color: '#8a8295', rotulo: 'Otra propuesta que cita jw.org', corto: 'otra propuesta', trazo: 'raya' },
@@ -232,7 +239,7 @@ function montarCapas() {
   const lineas = { 'line-cap': 'round', 'line-join': 'round' };
   for (const v of BE.D.viajes) map.addImage(`be-flecha-${v.id}`, imagenFlecha(colorViaje(v.id)));
   for (const [k, s] of Object.entries(CAND)) map.addImage(`be-rayado-${k}`, imagenRayado(s.color, k));
-  map.addImage('be-rayado-carta', imagenRayado('#b8892f', 'alternativa'));
+  map.addImage('be-rayado-carta', imagenRayado(cssVar('--gold') || '#1f3b30', 'alternativa'));
   const color = ['get', 'color'];
   const flecha = (placement, opacity, spacing) => ({ type: 'symbol', layout: { 'symbol-placement': placement, 'symbol-spacing': spacing, 'icon-image': ['concat', 'be-flecha-', ['get', 'viaje']], 'icon-size': 0.5, 'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true }, paint: { 'icon-opacity': opacity } });
   // Lugares inciertos: zonas rayadas con borde difuminado, franjas y el abanico que une a los candidatos.
@@ -256,7 +263,7 @@ function montarCapas() {
   map.addLayer({ id: 'be-cartas-escrita', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'escrita'], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 1.8, 'line-dasharray': [3, 2.5], 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel-casing', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: lineas, paint: { 'line-color': '#fffdf8', 'line-width': 7, 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 4, 'line-dasharray': [2.2, 1] } });
-  map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': 'rgba(184,137,47,0.12)', 'circle-stroke-color': color, 'circle-stroke-width': 1.5 } });
+  map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': color, 'circle-opacity': 0.12, 'circle-stroke-color': color, 'circle-stroke-width': 1.5 } });
   map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': color, 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': color, 'line-width': 3.5 } });
@@ -813,7 +820,14 @@ function pintarMapa() {
   map.getSource('be-falta').setData({ type: 'FeatureCollection', features: g.falta });
   map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: g.rastro });
   const { arcos, halos, oes, zonas, grupos } = geoCartas(t);
-  const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('') + E.sel?.id;
+  // El color de las cartas de Pablo sale de --gold, que cambia con el modo reunión: la clase de la raíz entra en la clave,
+  // y el rayado de sus zonas se vuelve a pintar con el color nuevo.
+  const clase = document.documentElement.className;
+  if (clase !== pintarMapa.clase) {
+    if (pintarMapa.clase !== undefined && map.hasImage('be-rayado-carta')) map.updateImage('be-rayado-carta', imagenRayado(cssVar('--gold') || '#1f3b30', 'alternativa'));
+    pintarMapa.clase = clase;
+  }
+  const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('') + E.sel?.id + clase;
   if (claveCartas !== pintarMapa.claveCartas) {
     pintarMapa.claveCartas = claveCartas;
     map.getSource('be-cartas').setData({ type: 'FeatureCollection', features: arcos });
