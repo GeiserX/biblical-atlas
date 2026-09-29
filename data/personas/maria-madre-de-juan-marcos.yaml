@@ -12,6 +12,7 @@ fuentes:
 - hechos-12
 no_confundir_con:
 - maria-madre-de-jesus
+- maria-de-roma
 relaciones:
 - tipo: pariente
   persona: juan-marcos

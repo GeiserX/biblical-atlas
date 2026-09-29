@@ -31,6 +31,7 @@ fuentes:
 - salmos-105
 - lucas-3
 - hechos-7
+- romanos-9
 enlaces:
 - titulo: 'Perspicacia: «Isaac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
@@ -54,6 +55,7 @@ relaciones:
   - genesis-26
   - lucas-3
   - hechos-7
+  - romanos-9
   razon: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
   estado: verificado
 - tipo: pariente
@@ -65,6 +67,7 @@ relaciones:
   - genesis-21
   - genesis-17
   - genesis-24
+  - romanos-9
   razon: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
   estado: verificado
 - tipo: vivio_en
@@ -149,6 +152,7 @@ relaciones:
   fuentes:
   - genesis-24
   - genesis-25
+  - romanos-9
   razon: 'Gé 24:67: Isaac tomó a Rebeca por esposa; Gé 25:20: tenía 40 años cuando se casó con ella.'
   estado: verificado
 - tipo: vivio_en
