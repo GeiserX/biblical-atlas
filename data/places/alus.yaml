@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: alus
+name: Alús
+names:
+- name: Alús
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Dofcá y Refidim, según el mapa B3
+  geometry:
+    type: zone
+    lat: 28.9
+    lon: 33.63
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-alus
+  - tnm-b3
+  reason: Perspicacia no sabe su sitio, solo que quedaba entre Dofcá y Refidim; el mapa B3 lo marca con signo de duda.
+  coord_source: calculation
+  note: 'Centro: sitio de Alús en el mapa B3, calculado ajustando la imagen a dieciséis lugares del mapa con punto de OpenBible.
+    Radio nuestro.'
+summary: Campamento de Israel en la península del Sinaí, entre Dofcá y Refidim. No se sabe dónde estaba.
+reason: Perspicacia «Alús»; Nú 33:13, 14. El mapa B3 lo pone con signo de duda.
+sources:
+- it-alus
+- tnm-b3
+- numeros-33
+links:
+- title: 'Perspicacia: «Alús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000211
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

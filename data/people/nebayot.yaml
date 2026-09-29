@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nebayot
+name: Nebayot
+names:
+- name: Nebayot
+perspicacia: '1200003196'
+summary: Primogénito de Ismael y fundador de una gran tribu árabe, que seguramente vivía como nómada. Su hermana se casó con
+  su primo Esaú.
+reason: Perspicacia «Nebayot»; Gé 25:13.
+sources:
+- it-nebayot
+- genesis-25
+- genesis-28
+- genesis-36
+links:
+- title: 'Perspicacia: «Nebayot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003196
+  type: perspicacia
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+- title: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  type: bible
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: ismael-hijo-de-abrahan
+  word: father
+  inferred: false
+  sources:
+  - it-nebayot
+  - genesis-25
+  - genesis-36
+  reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

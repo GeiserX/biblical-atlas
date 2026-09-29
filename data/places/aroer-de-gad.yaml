@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aroer-de-gad
+name: Aroer
+names:
+- name: Aroer
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este de Rabá
+  geometry:
+    type: zone
+    lat: 31.9547
+    lon: 36.0403
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-aroer
+  - it-raba
+  reason: 'Perspicacia: el sitio es incierto; «enfrente de» Rabá suele entenderse como al este de la ciudad.'
+  coord_source: calculation
+  note: 'Centro nuestro: unos 10 km al este del punto de Rabá de OpenBible (31,9547 N; 35,9343 E). El radio de 10 km también
+    es nuestro; OpenBible propone sitios al oeste.'
+summary: Ciudad de Gad situada frente a Rabá, la capital ammonita. Quizá sea la Aroer de la victoria de Jefté sobre Ammón.
+  Es otra que la Aroer del borde del Arnón.
+reason: Perspicacia «Aroer», núm. 2; Jos 13:25.
+sources:
+- it-aroer
+- josue-13
+links:
+- title: 'Perspicacia: «Aroer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000382
+  type: perspicacia
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

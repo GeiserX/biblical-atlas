@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: tito
+book: Tito
+writer: pablo
+reference: Tit 1:5
+written_in:
+- macedonia
+date:
+  from: 61
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61-64 e.c.
+recipients:
+  text: Tito, a quien Pablo dejó en Creta
+  places:
+  - creta
+  people:
+  - tito
+people:
+- tito
+- tiquico
+- apolos
+context_origin:
+  summary: Tras salir libre de su primera prisión y antes de la última, Pablo estuvo en Creta con Tito.
+  sources:
+  - it-tito
+context_destination:
+  summary: Tito debía corregir lo que faltaba y nombrar ancianos en las ciudades de Creta, frente a gente rebelde.
+  sources:
+  - it-tito
+reason: 'La Tabla pone «Macedonia (?)» y c. 61-64: el lugar es dudoso en la propia fuente. Tit 1:5 sitúa a Tito en
+  Creta.'
+sources:
+- tnm-tabla
+- si-3
+- it-tito
+- tito-1
+- it-tito-persona
+links:
+- title: 'Perspicacia: «Tito, Carta a»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004432
+  type: perspicacia
+- title: Tito 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

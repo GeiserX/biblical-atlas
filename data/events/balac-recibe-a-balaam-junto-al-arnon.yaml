@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balac-recibe-a-balaam-junto-al-arnon
+title: Balac sale a recibir a Balaam junto al Arnón
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 22036
+places:
+- arnon
+- moab
+people:
+- balac
+- balaam
+present:
+- balac
+- balaam
+passages:
+- Nú 22:36-38
+summary: Al saber que Balaam llega, Balac va a su encuentro a la ciudad de Moab de la frontera, a orillas del Arnón, y le
+  reprocha la tardanza. Balaam avisa de que solo dirá lo que Dios le dé.
+reason: 'Nú 22:36-38; Perspicacia «Balac», párr. 1. «Ar» solo recoge que algunos ven en esa ciudad a Ar, así que no la situamos
+  allí. Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+sources:
+- numeros-22
+- it-balac
+- it-ar
+- it-arnon
+- it-agag
+links:
+- title: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

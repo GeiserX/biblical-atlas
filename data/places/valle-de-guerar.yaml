@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-guerar
+name: Valle de Guerar
+names:
+- name: Valle de Guerar
+type: valley
+lat: 31.3821
+lon: 34.6065
+precision: zone
+coord_source: openbible:a816ed9
+coord_url: https://www.openbible.info/geo/ancient/a816ed9/valley-of-gerar
+coord_note: Punto de OpenBible en Tel Haror, con unos 3 km alrededor; el valle sigue la identificación de Guerar.
+summary: Valle torrencial junto a Guerar donde acampó Isaac cuando Abimélec le pidió que se fuera. Allí sus siervos cavaron
+  pozos y discutieron por ellos con los pastores de Guerar.
+reason: 'Gé 26:17-21; Perspicacia «Éseq» lo llama valle torrencial de Guerar. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-esec
+- genesis-26
+- openbible-geo
+links:
+- title: 'Perspicacia: «Éseq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001419
+  type: perspicacia
+- title: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  type: bible
+checked_on: '2026-09-29'
+status: verified

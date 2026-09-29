@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazor-del-negueb
+name: Hazor
+names:
+- name: Hazor
+type: city
+lat: 30.722781
+lon: 34.645224
+precision: uncertain
+coord_source: openbible:ae5657c
+coord_url: https://www.openbible.info/geo/ancient/ae5657c/hazor-2
+coord_note: El-Jebariyeh, primera identificación de OpenBible, que Perspicacia ve posible.
+summary: Ciudad del Négueb de Judá, quizá en el-Jebariyeh, unos 24 km al estenoreste del sitio que se supone de Cadés-Barnea.
+  No es la Hazor del norte de Canaán.
+reason: 'Perspicacia «Hazor», núm. 2; Jos 15:23. OpenBible: solo el punto.'
+sources:
+- it-hazor
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Hazor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001937
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

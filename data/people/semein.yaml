@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semein
+name: Semeín
+names:
+- name: Semeín
+perspicacia: '1200003893'
+summary: Descendiente de David y antepasado de María. Lucas lo pone como hijo de Josec y padre de Matatías.
+reason: Perspicacia «Semeín»; Lu 3:26.
+sources:
+- it-semein
+- lucas-3
+links:
+- title: 'Perspicacia: «Semeín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003893
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: josec
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:26: Semeín, hijo de Josec.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

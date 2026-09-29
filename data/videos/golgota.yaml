@@ -1,19 +1,19 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: golgota
-generado: "2026-09-28"
+place: golgota
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-091_11_VIDEO"
-    titulo: "Trent Lippold: ¿Seré yo mucho más?"
+    title: "Trent Lippold: ¿Seré yo mucho más?"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_11_VIDEO&appLanguage=S"
-    publicado: "2022-06-07"
-    menciones: 2
-    terminos:
+    published: "2022-06-07"
+    hits: 2
+    terms:
       "Gólgota": 2
   - docid: "pub-jwb-091_1_VIDEO"
-    titulo: "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)"
+    title: "JW Broadcasting: Junio de 2022 (graduación de la clase 151 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_1_VIDEO&appLanguage=S"
-    publicado: "2022-06-06"
-    menciones: 2
-    terminos:
+    published: "2022-06-06"
+    hits: 2
+    terms:
       "Gólgota": 2

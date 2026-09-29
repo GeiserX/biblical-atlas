@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: job-responde-al-segundo-discurso-de-bildad
+title: 'Job responde a Bildad: «Mi redentor vive»'
+date:
+  from: -1612
+  to: -1612
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1613 a.e.c.
+narrative_order:
+  series: job
+  order: 19001
+places:
+- uz
+present:
+- job
+- bildad
+- elifaz-el-temanita
+- zofar
+people:
+- job
+- bildad
+- elifaz-el-temanita
+- zofar
+type: speech
+roles:
+  job: spoke
+passages:
+- Job 19:1-29
+summary: Job se queja de que sus compañeros lo atormentan y de que Dios lo trata como enemigo; hasta su esposa y su familia
+  lo rechazan. Aun así afirma que su redentor vive y que él verá a Dios.
+reason: 'Job 19:1-29; Perspicacia «Job, Libro de» (orden del libro). Perspicacia «Job», párr. 2: la prueba, y con ella el debate,
+  hacia 1613 a.e.c. En Uz, donde vivía Job, con los tres compañeros.'
+sources:
+- job-19
+- it-job-libro
+- it-job
+- it-uz
+links:
+- title: Job 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-peor
+name: Bet-Peor
+names:
+- name: Bet-Peor
+type: city
+lat: 31.777021
+lon: 35.738498
+precision: uncertain
+coord_source: openbible:af3ce34
+coord_url: https://www.openbible.info/geo/ancient/af3ce34/beth-peor
+coord_note: 'OpenBible lo pone en Khirbet ʽAyun Musa, el mismo punto que da a Peor. Perspicacia no conoce el sitio exacto:
+  cerca del extremo noreste del mar Muerto; algunos proponen Khirbet esh-Sheikh-Jayil.'
+summary: Ciudad de la tierra de Moab, entonces del reino de Sehón, quizá en la ladera de Peor. Israel acampó en el valle de
+  enfrente, donde Moisés repitió la Ley y fue enterrado. Luego fue de Rubén.
+reason: 'Perspicacia «Bet-peor»; Dt 3:29; 4:46. OpenBible: solo el punto.'
+sources:
+- it-bet-peor
+- openbible-geo
+- deuteronomio-3
+- deuteronomio-4
+- deuteronomio-34
+- josue-13
+links:
+- title: 'Perspicacia: «Bet-peor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000704
+  type: perspicacia
+- title: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  type: bible
+- title: Deuteronomio 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+not_claimed:
+- 'Que se sepa dónde estaba: Perspicacia dice que no se conoce su emplazamiento preciso.'

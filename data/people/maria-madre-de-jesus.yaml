@@ -1,0 +1,113 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-madre-de-jesus
+name: María
+names:
+- name: María
+- name: María, la madre de Jesús
+  note: Así se la distingue de las otras cinco Marías de la Biblia (Perspicacia).
+disambiguation: La madre de Jesús, esposa de José, de Nazaret.
+distinct_from:
+- maria-magdalena
+- maria-de-betania
+- maria-esposa-de-clopas
+- maria-madre-de-juan-marcos
+- maria-de-roma
+summary: Madre de Jesús, descendiente de David, de la tribu de Judá. Vivía en Nazaret, comprometida con José, cuando Gabriel
+  le anunció el nacimiento. Pariente de Elisabet, siguió siendo discípula fiel tras la ascensión de Jesús.
+reason: 'Perspicacia «María» (núm. 1: párr. 4, 6, 7 y 18) da su linaje, el anuncio, el parentesco con Elisabet y su última
+  mención en Hch 1:14.'
+sources:
+- it-maria
+- lucas-1
+- mateo-1
+- mateo-2
+- mateo-12
+- marcos-3
+- marcos-6
+- lucas-2
+- lucas-3
+- lucas-8
+- juan-2
+- juan-19
+- hechos-1
+- bt-2
+relations:
+- type: kin
+  person: elisabet
+  word: relative
+  inferred: false
+  sources:
+  - lucas-1
+  - it-maria
+  reason: 'Lu 1:36: Gabriel llama a Elisabet pariente de María.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: nazaret
+  inferred: false
+  sources:
+  - lucas-1
+  - it-nazaret
+  - mateo-2
+  - lucas-2
+  reason: Lu 1:26, 27; Perspicacia «Nazaret» (párr. 2).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: true
+  sources:
+  - mateo-2
+  - it-jose
+  reason: 'Mt 2:11: los astrólogos la encuentran con el niño en una casa de Belén; Perspicacia «José» (núm. 8) dice que residían
+    allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - mateo-2
+  reason: Mt 2:14, 15.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: true
+  sources:
+  - it-maria
+  - lucas-1
+  reason: 'Perspicacia «María», núm. 1: era judía, del linaje de David; por eso Lu 1:32 puede llamar a David padre de Jesús.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: heli
+  word: father
+  inferred: true
+  sources:
+  - lucas-3
+  - it-heli
+  reason: 'Perspicacia «Helí» y la nota de Lu 3:23: Lucas sigue la línea de María, y Helí era su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: juan-apostol
+  caption: cuidada por
+  inverse_caption: cuida a
+  inferred: true
+  sources:
+  - juan-19
+  reason: 'Jn 19:26, 27: Jesús la confía al discípulo que amaba, que la acoge en su casa; la nota del v. 27 dice que era Juan.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  type: perspicacia
+- title: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  type: bible
+perspicacia: 1200002918#1
+checked_on: '2026-09-29'
+status: verified

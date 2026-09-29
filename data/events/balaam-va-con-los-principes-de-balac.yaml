@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balaam-va-con-los-principes-de-balac
+title: Balaam se va con los príncipes de Balac
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 22015
+places:
+- petor
+people:
+- balaam
+- balac
+present:
+- balaam
+passages:
+- Nú 22:15-21
+summary: Balac envía más príncipes, de más rango, con promesa de grandes honores. Balaam dice que ni por plata ni oro irá
+  contra lo que Jehová mande; Dios le deja ir, pero solo a decir lo que él le indique.
+reason: 'Nú 22:15-21; Perspicacia «Balaam», párr. 2. Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+sources:
+- numeros-22
+- it-balaam
+- it-agag
+links:
+- title: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

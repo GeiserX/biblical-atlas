@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: agabo-anuncia-cadenas
+title: Ágabo anuncia a Pablo las cadenas de Jerusalén
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c.
+narrative_order:
+  series: hechos
+  order: 2108
+places:
+- cesarea
+people:
+- pablo
+- lucas
+- felipe-evangelizador
+- agabo
+passages:
+- Hch 21:8-14
+summary: En Cesarea se alojan en casa de Felipe el evangelizador. El profeta Ágabo se ata con el cinturón de Pablo
+  y anuncia que así lo atarán en Jerusalén; Pablo sigue adelante.
+reason: 'Perspicacia «Pablo» (apartado «Detención»): varios profetas le anunciaron cadenas (Hch 21:4-14). El estudio 3 (párr.
+  26) pone la llegada a Jerusalén en el Pentecostés de 56.'
+sources:
+- it-pablo
+- hch-21
+- si-3
+search: Ágabo cinturón Pablo
+history:
+- date: '2026-09-29'
+  change: 'Era narrativa de un solo año; el estudio 3 (párr. 26) pone la llegada a Jerusalén en el Pentecostés de 56: es anclada.'
+  source: si-3
+- date: '2026-09-29'
+  change: La razón nombra la fuente del año.
+  source: si-3
+checked_on: '2026-09-29'
+status: verified

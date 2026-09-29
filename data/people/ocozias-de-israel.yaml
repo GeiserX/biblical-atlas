@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ocozias-de-israel
+name: Ocozías
+names:
+- name: Ocozías
+disambiguation: Rey de Israel, hijo de Acab; su sobrino Ocozías reinó después en Judá.
+distinct_from:
+- ocozias-de-juda
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920-917 a.e.c.
+summary: Hijo de Acab y Jezabel, adorador de Baal. Cayó por un enrejado de su casa y consultó a Baal-zebub; Elías le anunció
+  que no se levantaría de la cama.
+reason: Perspicacia «Ocozías», núm. 1; 1Re 22:51-53 y 2Re 1.
+sources:
+- it-ocozias
+- 1-reyes-22
+- 2-reyes-1
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Ocozías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
+  type: perspicacia
+- title: 1 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22
+  type: bible
+relations:
+- type: kin
+  person: acab
+  word: father
+  inferred: false
+  sources:
+  - it-ocozias
+  - 1-reyes-22
+  reason: Hijo de Acab (1Re 22:40, 51).
+  checked_on: '2026-09-28'
+  status: verified
+- type: succeeds
+  person: acab
+  inferred: false
+  sources:
+  - it-ocozias
+  - 1-reyes-22
+  reason: Reinó al morir su padre (1Re 22:40).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Ocozías» y el estudio 3 dan su comienzo hacia 919 a.e.c.; A6-A, más reciente, lo pone hacia 920.
+  source: tnm-a6-a
+checked_on: '2026-09-28'
+status: verified

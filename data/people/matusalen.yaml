@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matusalen
+name: Matusalén
+names:
+- name: Matusalén
+date:
+  from: -3338
+  to: -2369
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 3339-2370 a.e.c.
+summary: Hijo de Enoc; su hijo Lamec fue el padre de Noé. Vivió 969 años, la vida más larga de la Biblia. Murió el año del
+  Diluvio, 2370 a.e.c., pero el texto no dice que muriera en él.
+reason: Perspicacia «Matusalén», párr. 2. El estudio 3 da su nacimiento en 3339 y su muerte en 2370 a.e.c. Gé 5:21-27.
+sources:
+- it-matusalen
+- si-3
+- genesis-5
+- lucas-3
+links:
+- title: 'Perspicacia: «Matusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003022
+  type: perspicacia
+- title: Génesis 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/5
+  type: bible
+relations:
+- type: kin
+  person: enoc-hijo-de-jared
+  word: father
+  inferred: false
+  sources:
+  - it-matusalen
+  - genesis-5
+  - lucas-3
+  reason: 'Perspicacia «Matusalén», párr. 2: hijo del profeta Enoc (Gé 5:21).'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003022'
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berenice
+name: Berenice
+names:
+- name: Berenice
+date:
+  from: 58
+  to: 58
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 58 e.c.
+summary: Hija de Herodes Agripa I, nacida hacia 28 y hermana de Agripa II. En 58 fue con él a Cesarea y asistió
+  a la defensa de Pablo.
+reason: Perspicacia «Berenice» (párr. 1); Hch 25:13, 23 y su nota de estudio.
+sources:
+- it-berenice
+- nota-hechos-25
+- hch-25
+- bt-25
+- hch-26
+links:
+- title: 'Perspicacia: «Berenice»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000655
+  type: perspicacia
+- title: Hechos 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
+  type: bible
+perspicacia: '1200000655'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: herodes-agripa-i
+  word: father
+  inferred: false
+  sources:
+  - it-berenice
+  reason: Perspicacia la presenta como hija de Herodes Agripa I y Cipros.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: herodes-agripa-ii
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  inferred: false
+  sources:
+  - it-berenice
+  - hch-25
+  - hch-26
+  reason: Llegan juntos a Cesarea y entran juntos en la audiencia (Hch 25:13, 23).
+  checked_on: '2026-09-29'
+  status: verified

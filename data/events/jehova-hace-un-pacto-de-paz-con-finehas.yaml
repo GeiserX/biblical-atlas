@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-hace-un-pacto-de-paz-con-finehas
+title: Jehová hace con Finehás un pacto de paz
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+narrative_order:
+  series: numeros
+  order: 25010
+places:
+- sitim
+people:
+- finehas-hijo-de-eleazar
+- moises
+passages:
+- Nú 25:10-13
+- Sl 106:31
+summary: Jehová dice a Moisés que Finehás ha calmado su ira al no tolerar rivales de Dios en Israel. Por eso pacta con él
+  que el sacerdocio seguirá siempre en su descendencia.
+reason: 'Nú 25:10-13; Perspicacia «Finehás», núm. 1. Sigue al azote de Peor. Fecha: tras vencer a Og, hacia 1473 a.e.c. (Perspicacia
+  «Basán»), y antes de acabar Números, en 1473 (estudio 3).'
+sources:
+- numeros-25
+- it-finehas
+- si-3
+- it-basan
+links:
+- title: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

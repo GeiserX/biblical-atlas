@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: queren-hapuc
+name: Querén-Hapuc
+names:
+- name: Querén-Hapuc
+perspicacia: '1200002593'
+summary: Tercera y menor de las hijas de Job nacidas tras su prueba. Su nombre, tal vez un recipiente del tinte negro con
+  que se pintaban los ojos, pudo aludir a su hermosura.
+reason: Perspicacia «Querén-hapuc»; Job 42:14, 15.
+sources:
+- it-queren-hapuc
+- job-42
+links:
+- title: 'Perspicacia: «Querén-hapuc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002593
+  type: perspicacia
+- title: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  type: bible
+relations:
+- type: kin
+  person: job
+  word: father
+  inferred: false
+  sources:
+  - job-42
+  reason: 'Job 42:13, 14: la tercera de las hijas que Job tuvo tras su prueba.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

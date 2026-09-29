@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matatias-hijo-de-amos
+name: Matatías
+names:
+- name: Matatías
+perspicacia: 1200002933#3
+disambiguation: Matatías hijo de Amós (Lu 3:25); no Matatías hijo de Semeín (Lu 3:26).
+distinct_from:
+- matatias-hijo-de-semein
+summary: Hombre de la tribu de Judá, antepasado de Jesús por parte de madre. Lucas lo pone como hijo de Amós y padre de José.
+reason: Perspicacia «Matatías», núm. 3; Lu 3:25.
+sources:
+- it-matatias
+- lucas-3
+links:
+- title: 'Perspicacia: «Matatías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002933
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: amos-hijo-de-nahum
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:25: Matatías, hijo de Amós.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

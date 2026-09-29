@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: antipatris
+name: Antípatris
+names:
+- name: Afec
+  to: -8
+  note: Ciudad anterior en el mismo sitio (1Sa 4:1); Perspicacia escribe «Afeq». El nombre cambia con la reconstrucción de
+    9 a.e.c.
+- name: Antípatris
+  from: -8
+  note: Herodes el Grande la reconstruyó en 9 a.e.c. y le dio el nombre de su padre, Antípater.
+- name: Ras el-ʽAin (Tel Afeq)
+  note: Sitio con el que se identifica hoy.
+type: city
+lat: 32.105
+lon: 34.93042
+precision: point
+coord_source: openbible:a7b2e63
+coord_url: https://www.openbible.info/geo/ancient/a7b2e63/aphek-2
+summary: Ciudad de la llanura de Sarón, en el cruce de calzadas romanas hacia Cesarea. La escolta romana llevó allí a Pablo
+  de noche desde Jerusalén. Antes se llamó Afec.
+reason: 'Perspicacia «Antípatris» (párr. 3-4) y «Afeq» (núm. 3, párr. 5); Hch 23:31 y 1Sa 4:1. Las excavaciones de 1946, 1961
+  y 1974 apoyan que Afec estaba en el mismo sitio. OpenBible: solo el punto.'
+sources:
+- it-antipatris
+- it-afeq
+- hch-23
+- 1-samuel-4
+- openbible-geo
+- josue-12
+links:
+- title: 'Perspicacia: «Antípatris»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000294
+  type: perspicacia
+- title: 'Perspicacia: «Afeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
+  type: perspicacia
+- title: Hechos 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

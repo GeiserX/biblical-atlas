@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zofar
+name: Zofar
+names:
+- name: Zofar
+perspicacia: '1200004764'
+summary: Naamatita, uno de los tres compañeros de Job. Fue con Elifaz y Bildad a consolarlo; habló en tercer lugar y en la
+  última ronda del debate ya no dijo nada.
+reason: 'Perspicacia «Zofar» y «Naamatita»: el apelativo alude a su familia o a su tierra, que no se conoce con certeza. Job
+  2:11.'
+sources:
+- it-zofar
+- it-naamatita
+- job-2
+- job-11
+- job-20
+- job-32
+- job-42
+links:
+- title: 'Perspicacia: «Zofar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004764
+  type: perspicacia
+- title: Job 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/2
+  type: bible
+- title: 'Perspicacia: «Naamatita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003150
+  type: perspicacia
+- title: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  type: bible
+relations:
+- type: accompanies
+  person: elifaz-el-temanita
+  word: companion
+  inferred: false
+  sources:
+  - job-2
+  reason: 'Job 2:11: los tres se pusieron de acuerdo para ir juntos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: job
+  word: friend
+  inferred: false
+  sources:
+  - job-2
+  - job-12
+  - job-16
+  - job-19
+  - it-zofar
+  - job-32
+  - job-42
+  reason: 'Job 2:11: uno de los tres amigos que fueron a consolarlo.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

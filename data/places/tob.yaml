@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tob
+name: Tob
+names:
+- name: Tob
+- name: Tierra de Tob
+type: region
+lat: 32.563333
+lon: 36.243889
+precision: zone
+coord_source: openbible:aaff3e1
+coord_url: https://www.openbible.info/geo/ancient/aaff3e1/tob
+coord_note: Perspicacia dice que no se puede precisar y que se suele poner en la zona de Taiyiba, al este del mar de Galilea;
+  el punto de OpenBible, Et Tayibeh, representa esa zona.
+summary: Tierra al este de Galaad, al parecer fuera de Israel, donde vivió Jefté al echarlo sus medio hermanos. Allí se le
+  unieron hombres sin trabajo y allí fueron a buscarlo los ancianos de Galaad.
+reason: 'Perspicacia «Tob» y «Jefté», párr. 4; Jue 11:3-11. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que el Istob de 2 Samuel 10:6 sea Tob: Perspicacia solo lo ve posible.'
+sources:
+- it-tob
+- it-jefte
+- openbible-geo
+- jueces-11
+links:
+- title: 'Perspicacia: «Tob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004435
+  type: perspicacia
+- title: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

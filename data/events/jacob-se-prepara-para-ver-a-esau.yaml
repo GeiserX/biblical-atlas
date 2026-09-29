@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-se-prepara-para-ver-a-esau
+title: Jacob se prepara para encontrarse con Esaú
+date:
+  from: -1760
+  to: -1760
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1761 a.e.c.
+narrative_order:
+  series: genesis
+  order: 32003
+places:
+- mahanaim
+- seir
+- edom
+people:
+- jacob
+- esau
+present:
+- jacob
+passages:
+- Gé 32:3-21
+summary: Jacob manda aviso a Esaú, que está en Seír. Al saber que viene con 400 hombres, divide su campamento, ora a Dios
+  y envía por delante rebaños de regalo.
+reason: 'Estudio 3: Jacob vuelve a Canaán en 1761 a.e.c. El texto sigue en el campamento de Mahanaim (pasa allí la noche);
+  Esaú está en Seír, así que solo sitúa a Jacob.'
+sources:
+- si-3
+- it-jacob
+- it-esau
+- genesis-32
+links:
+- title: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

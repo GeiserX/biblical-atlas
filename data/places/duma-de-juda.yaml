@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: duma-de-juda
+name: Dumá
+names:
+- name: Dumá
+type: city
+lat: 31.4306
+lon: 34.9861
+precision: point
+coord_source: openbible:a75d2ab
+coord_url: https://www.openbible.info/geo/ancient/a75d2ab/dumah-1
+summary: Ciudad de la montaña de Judá, en Khirbet Domeh ed-Deir, unos 15 km al suroeste de Hebrón. No es la región de Dumá,
+  hijo de Ismael.
+reason: 'Perspicacia «Dumá», núm. 2; Jos 15:52. OpenBible: solo el punto.'
+sources:
+- it-duma
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Dumá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001229
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

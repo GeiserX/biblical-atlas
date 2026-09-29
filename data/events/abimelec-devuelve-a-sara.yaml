@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abimelec-devuelve-a-sara
+title: Abimélec se lleva a Sara en Guerar y se la devuelve a Abrahán
+date:
+  from: -1918
+  to: -1918
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1919 a.e.c.
+narrative_order:
+  series: genesis
+  order: 20001
+places:
+- guerar
+- negueb
+people:
+- abrahan
+- sara
+- abimelec-de-tiempos-de-abrahan
+passages:
+- Gé 20:1-18
+summary: En Guerar, Abrahán vuelve a decir que Sara es su hermana y el rey Abimélec se la lleva. Dios lo avisa en un sueño;
+  el rey la devuelve con ganado, siervos y plata, y Abrahán ora por él.
+reason: Perspicacia «Abimélec», núm. 1, pone la estancia en Guerar hacia 1919 a.e.c.; «Abrahán», párr. 16, entre la destrucción
+  de Sodoma y el nacimiento de Isaac.
+sources:
+- genesis-20
+- it-abimelec
+- it-abrahan
+- it-guerar
+links:
+- title: Génesis 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

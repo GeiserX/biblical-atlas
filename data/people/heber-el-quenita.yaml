@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heber-el-quenita
+name: Héber
+names:
+- name: Héber
+perspicacia: 1200001950#2
+disambiguation: Héber el quenita, esposo de Jael (Perspicacia, núm. 2); no el nieto de Aser ni los dos Héber de las genealogías
+  de Judá y Benjamín.
+distinct_from:
+- heber-hijo-de-berias
+summary: Quenita de la descendencia de Hobab que se apartó de los demás quenitas y acampó con su tienda al lado del árbol
+  grande de Zaananim. Su casa estaba en paz con Jabín; allí su esposa Jael mató a Sísara.
+reason: Perspicacia «Héber», núm. 2, y «Quenita»; Jue 4:11, 17.
+sources:
+- it-heber
+- it-quenita
+- jueces-4
+- jueces-5
+links:
+- title: 'Perspicacia: «Héber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001950
+  type: perspicacia
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+relations:
+- type: kin
+  person: jael
+  word: wife
+  inferred: false
+  sources:
+  - jueces-4
+  - it-heber
+  - jueces-5
+  - it-jael
+  reason: 'Jue 4:17, 21: Jael era la esposa de Héber.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: hobab
+  word: ancestor
+  inferred: false
+  sources:
+  - jueces-4
+  - it-heber
+  reason: 'Jue 4:11: los quenitas de los que se apartó descendían de Hobab; Perspicacia «Héber», núm. 2, lo cuenta entre ellos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: zaananim
+  inferred: false
+  sources:
+  - jueces-4
+  - it-zaananim
+  reason: 'Jue 4:11: había plantado la tienda al lado del árbol grande de Zaananim, cerca de Quedes.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

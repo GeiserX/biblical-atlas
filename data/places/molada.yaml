@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: molada
+name: Moladá
+names:
+- name: Moladá
+type: city
+lat: 31.2573
+lon: 34.92141
+precision: uncertain
+coord_source: openbible:a03a5d0
+coord_url: https://www.openbible.info/geo/ancient/a03a5d0/moladah
+coord_note: Khirbet el-Waten, primera identificación de OpenBible; Perspicacia no la identifica con seguridad.
+summary: Ciudad del sur de Judá que pasó a Simeón y siguió en sus manos al menos hasta David. Tras el destierro la volvieron
+  a poblar hombres de Judá.
+reason: 'Perspicacia «Moladá»; Jos 15:26; 19:2; 1Cr 4:28; Ne 11:26. OpenBible: solo el punto.'
+sources:
+- it-molada
+- openbible-geo
+- josue-15
+- josue-19
+links:
+- title: 'Perspicacia: «Moladá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003100
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

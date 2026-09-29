@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muros-de-jerusalen-455
+title: Nehemías reconstruye los muros de Jerusalén
+date:
+  from: -454
+  to: -454
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (del 4 de ab al 25 de elul)
+  detail:
+    month: elul
+    day: 25
+places:
+- jerusalen
+- susa
+people:
+- nehemias
+- artajerjes-i
+- sanbalat
+passages:
+- Ne 2:1-20
+- Ne 4:1-23
+- Ne 6:15
+summary: Con permiso de Artajerjes en su año veinte, Nehemías fue de Susa a Jerusalén y dirigió la reparación del muro,
+  acabada en 52 días pese a las amenazas. De ese año parten las setenta semanas de Da 9.
+reason: 'Perspicacia «Nehemías», núm. 3: obra del 4 de ab al 25 de elul; «Artajerjes», núm. 2, y estudio 3 (párr. 18, 19):
+  el año veinte es 455.'
+sources:
+- si-3
+- it-nehemias
+- it-artajerjes
+- nehemias-6
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003212
+  type: perspicacia
+- title: Nehemías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

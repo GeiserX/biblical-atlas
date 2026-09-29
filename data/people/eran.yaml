@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eran
+name: Erán
+names:
+- name: Erán
+perspicacia: '1200001412'
+summary: Hijo de Sutélah y nieto de Efraín; de él vienen los eranitas.
+reason: Perspicacia «Erán»; Nú 26:36.
+sources:
+- it-eran
+- numeros-26
+links:
+- title: 'Perspicacia: «Erán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001412
+  type: perspicacia
+- title: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  type: bible
+relations:
+- type: kin
+  person: sutelah-hijo-de-efrain
+  word: father
+  inferred: false
+  sources:
+  - numeros-26
+  - it-eran
+  reason: 'Nú 26:36: Erán es hijo de Sutélah.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: efrain
+  word: grandfather
+  inferred: false
+  sources:
+  - numeros-26
+  - it-eran
+  reason: 'Nú 26:35, 36: Sutélah, su padre, era hijo de Efraín.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

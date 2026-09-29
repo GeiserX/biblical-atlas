@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quina
+name: Quiná
+names:
+- name: Quiná
+type: city
+lat: 31.30283
+lon: 35.14909
+precision: uncertain
+coord_source: openbible:ae8f9cf
+coord_url: https://www.openbible.info/geo/ancient/ae8f9cf/kinah
+coord_note: 'Horbat Tayyav, tercera identificación de OpenBible: la tomamos porque está a los unos 30 km al estenoreste de
+  Beer-Seba que da Perspicacia para Khirbet Taiyib. La primera es Horbat ʽUza.'
+summary: Ciudad del sur de Judá. Se la ha identificado con Khirbet Taiyib, unos 30 km al estenoreste de Beer-Seba; su nombre
+  antiguo parece seguir en el cercano Wadi el-Qeini.
+reason: 'Perspicacia «Quiná»; Jos 15:22. OpenBible: solo el punto.'
+sources:
+- it-quina
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Quiná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002610
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

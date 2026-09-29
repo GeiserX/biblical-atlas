@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedahel
+name: Pedahel
+names:
+- name: Pedahel
+perspicacia: '1200003412'
+summary: Jefe de la tribu de Neftalí, hijo de Amihud. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a
+  dividir Canaán en herencias.
+reason: Perspicacia «Pedahel»; Nú 34:28.
+sources:
+- it-pedahel
+- numeros-34
+links:
+- title: 'Perspicacia: «Pedahel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003412
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: amihud-padre-de-pedahel
+  word: father
+  inferred: false
+  sources:
+  - numeros-34
+  - it-pedahel
+  reason: Nú 34:28 lo llama hijo de Amihud.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: neftali-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:28: era el jefe de la tribu de Neftalí.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,19 +1,19 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: malta
-generado: "2026-09-28"
+place: malta
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-096_1_VIDEO"
-    titulo: "JW Broadcasting: Mayo de 2023"
+    title: "JW Broadcasting: Mayo de 2023"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-096_1_VIDEO&appLanguage=S"
-    publicado: "2023-05-01"
-    menciones: 7
-    terminos:
+    published: "2023-05-01"
+    hits: 7
+    terms:
       "Malta": 7
   - docid: "pub-jwbrd_201608_2_VIDEO"
-    titulo: "Malta 2015: Una gran asamblea en una isla pequeña"
+    title: "Malta 2015: Una gran asamblea en una isla pequeña"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbrd_201608_2_VIDEO&appLanguage=S"
-    publicado: "2016-08-08"
-    menciones: 4
-    terminos:
+    published: "2016-08-08"
+    hits: 4
+    terms:
       "Malta": 4

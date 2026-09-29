@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sahazuma
+name: Sahazuma
+names:
+- name: Sahazuma
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre el monte Tabor y Bet-Semes de Isacar
+  geometry:
+    type: zone
+    lat: 32.687575
+    lon: 35.477009
+    radius_km: 8
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sahazuma
+  - openbible-geo
+  reason: Perspicacia la pone entre Bet-Semes y el monte Tabor, en la frontera de Isacar.
+  coord_source: calculation
+  note: 'Centro nuestro: punto medio entre el Tabor (Jebel et-Tur) y el-ʽAbeidiyeh de OpenBible. Radio nuestro.'
+summary: Lugar de la frontera de Isacar, entre el monte Tabor y Bet-Semes. No se ha identificado.
+reason: Perspicacia «Sahazuma»; Jos 19:22. Zona calculada por nosotros.
+sources:
+- it-sahazuma
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Sahazuma»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003930
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

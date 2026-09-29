@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: edrei-de-neftali
+name: Edréi
+names:
+- name: Edréi
+  note: Edréi de Neftalí (Perspicacia, núm. 2).
+type: city
+lat: 33.075833
+lon: 35.528333
+precision: uncertain
+coord_source: openbible:a85eb38
+coord_url: https://www.openbible.info/geo/ancient/a85eb38/edrei-2
+coord_note: Punto de OpenBible en Har Zevi. Perspicacia la relaciona con Tell Khureibeh, unos 7 km al NNO de Hazor, que OpenBible
+  no recoge.
+summary: Ciudad fortificada de Neftalí, que se ha relacionado con Tell Khureibeh, unos 7 km al NNO de Hazor. No es la Edréi
+  de Og, en Basán.
+reason: 'Perspicacia «Edrei», núm. 2; Jos 19:37. OpenBible: solo el punto.'
+sources:
+- it-edrei
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Edrei»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001259
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

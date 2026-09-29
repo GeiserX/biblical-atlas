@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quenaz-padre-de-otniel
+name: Quenaz
+names:
+- name: Quenaz
+perspicacia: 1200002590#2
+disambiguation: Quenaz padre de Otniel y hermano de Caleb; no el jeque edomita hijo de Elifaz ni el descendiente de Caleb
+  de 1Cr 4:15.
+distinct_from:
+- quenaz-hijo-de-elifaz
+summary: Hermano de Caleb, de la tribu de Judá, y padre de Otniel, el que conquistó Debir, y de Seraya.
+reason: Perspicacia «Quenaz», núm. 2, y «Otniel», párr. 1; Jos 15:17; Jue 1:13; 1Cr 4:13.
+sources:
+- it-quenaz
+- it-otniel
+- josue-15
+- jueces-1
+- jueces-3
+links:
+- title: 'Perspicacia: «Quenaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002590
+  type: perspicacia
+- title: 'Perspicacia: «Otniel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
+  type: perspicacia
+relations:
+- type: kin
+  person: caleb-hijo-de-jefune
+  word: brother
+  inferred: true
+  sources:
+  - josue-15
+  - it-quenaz
+  - it-otniel
+  - jueces-1
+  - jueces-3
+  reason: Jos 15:17 admite leer que el hermano de Caleb es Otniel o Quenaz; Perspicacia «Otniel» y «Quenaz», núm. 2, lo entienden
+    de Quenaz.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

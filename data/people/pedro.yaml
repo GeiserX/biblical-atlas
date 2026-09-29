@@ -1,0 +1,318 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedro
+name: Pedro
+names:
+- name: Pedro
+  note: Nombre griego que en la Biblia solo lleva él.
+- name: Simón
+  note: Nombre griego; como Symeón, sale de un verbo hebreo que significa «oír» (nota de estudio de Mt 10:2).
+- name: Symeón
+  note: Forma griega del nombre hebreo Simeón (Hch 15:14), según la nota de estudio de Mt 10:2.
+- name: Cefas
+  note: Equivalente semítico de Pedro (Jn 1:42).
+- name: Simón Pedro
+- name: Barjonás
+  note: «Hijo de Jonás» con la palabra aramea bar; forma que da la nota de estudio de Mt 16:17.
+disambiguation: El apóstol. No es Simón el mago de Samaria ni Simón el curtidor de Jope, con quien se hospedó.
+date:
+  from: 29
+  to: 64
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 29-64 e.c.
+  note: 'Actividad conocida: desde que conoce a Jesús, en el otoño de 29, hasta su segunda carta, hacia 64.'
+summary: Apóstol, hijo de Juan o Jonás y hermano de Andrés. Pescador en el mar de Galilea, casado. Portavoz en Pentecostés,
+  abrió el camino a samaritanos y gentiles. Desde Babilonia escribió su primera carta y quizá la segunda.
+reason: Perspicacia «Pedro» da sus cinco nombres (párr. 2), su familia y su oficio (párr. 3 y 4; casado según 1Co 9:5) y su
+  papel en Hechos (párr. 17 a 22); «Pedro, Cartas de» sitúa las cartas en Babilonia.
+sources:
+- it-pedro
+- it-pedro-cartas
+- juan-1
+- marcos-1
+- mateo-4
+- mateo-10
+- mateo-14
+- mateo-15
+- mateo-16
+- mateo-17
+- mateo-18
+- mateo-19
+- mateo-26
+- marcos-3
+- marcos-5
+- marcos-8
+- marcos-9
+- marcos-10
+- marcos-11
+- marcos-13
+- marcos-14
+- marcos-16
+- lucas-4
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
+- lucas-12
+- lucas-18
+- lucas-22
+- lucas-24
+- juan-6
+- juan-13
+- juan-18
+- juan-20
+- juan-21
+- hechos-1
+- hch-2
+- hechos-3
+- hechos-4
+- hechos-5
+- hechos-8
+- hch-9
+- hechos-10
+- hechos-11
+- hechos-12
+- hch-15
+- 1-corintios-9
+- 1-corintios-15
+distinct_from:
+- simon-el-mago
+- simon-el-curtidor
+- simon-el-cananita
+- simon-hijo-de-jose
+- simon-iscariote
+- symeon-niger
+not_claimed:
+- 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
+  tradiciones dudosas.'
+- 'El año y el lugar de su muerte: Jn 21:18, 19 anuncia cómo moriría, pero ninguna fuente que leímos da fecha ni
+  sitio.'
+- 'Que tuviera por nombramiento autoridad sobre los demás apóstoles: Perspicacia muestra que lo enviaban y que actuó
+  como testigo, no como juez.'
+relations:
+- type: kin
+  person: suegra-de-pedro
+  word: mother_in_law
+  inferred: false
+  sources:
+  - it-pedro
+  - marcos-1
+  - mateo-8
+  - lucas-4
+  - 1-corintios-9
+  reason: Mr 1:29-31 nombra a su suegra; Perspicacia «Pedro», párr. 4, da su matrimonio por 1Co 9:5.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: juan-apostol
+  word: companion
+  inferred: false
+  sources:
+  - it-pedro
+  - hechos-3
+  - hechos-8
+  - lucas-22
+  - juan-18
+  - it-juan
+  - lucas-5
+  - juan-20
+  - juan-21
+  - hechos-4
+  reason: 'Lu 22:8: Jesús los envía juntos a preparar la Pascua; después van juntos al templo (Hch 3:1) y a Samaria (Hch 8:14).
+    Perspicacia «Pedro», párr. 7, y «Juan», párr. 30.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: santiago-hijo-de-zebedeo
+  caption: socio en la pesca
+  inverse_caption: socio en la pesca
+  inferred: false
+  sources:
+  - it-pedro
+  - it-santiago
+  - lucas-5
+  - juan-21
+  reason: 'Lu 5:10: Santiago y Juan eran socios de Simón en la pesca. Con Juan, fueron los tres que Jesús llevó a la transfiguración
+    y a Getsemaní (Perspicacia «Pedro», párr. 3 y 7).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: capernaum
+  inferred: false
+  sources:
+  - it-pedro
+  - marcos-1
+  - lucas-4
+  reason: 'Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía
+    casa con Andrés.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: babilonia
+  date:
+    from: 62
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 62-64 e.c.
+  inferred: true
+  sources:
+  - it-pedro-cartas
+  - bt-4
+  - 1-pedro-5
+  reason: 1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto
+    no lo aclara.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: juan-marcos
+  caption: «Marcos mi hijo»
+  inverse_caption: Pedro lo llama «Marcos mi hijo»
+  date:
+    from: 62
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 62-64 e.c.
+  inferred: false
+  sources:
+  - it-pedro-cartas
+  - 1-pedro-5
+  reason: Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: silas
+  caption: escribió 1 Pedro por medio de él
+  inverse_caption: amanuense de 1 Pedro
+  date:
+    from: 62
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 62-64 e.c.
+  inferred: false
+  sources:
+  - it-pedro-cartas
+  - 1-pedro-5
+  reason: Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: betsaida
+  inferred: false
+  sources:
+  - it-pedro
+  - juan-1
+  reason: Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de
+    mudarse a Capernaúm.
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-19
+  - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-11
+  - marcos-13
+  - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
+  - lucas-12
+  - lucas-18
+  - lucas-22
+  - juan-1
+  - juan-6
+  - juan-13
+  - juan-18
+  - juan-21
+  - hechos-4
+  reason: 'Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jonas-padre-de-pedro
+  word: father
+  inferred: false
+  sources:
+  - mateo-16
+  - it-jonas
+  - juan-1
+  - juan-21
+  - it-juan
+  reason: 'Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: galilea
+  inferred: false
+  sources:
+  - marcos-14
+  - lucas-22
+  reason: 'Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: simon-el-curtidor
+  word: host
+  date:
+    from: 36
+    to: 36
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 36 e.c.
+  inferred: false
+  sources:
+  - hch-9
+  - hechos-10
+  - it-simon
+  reason: 'Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Pedro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003451
+  type: perspicacia
+- title: 'Perspicacia: «Pedro, Cartas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003452
+  type: perspicacia
+- title: Hechos 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/10
+  type: bible
+perspicacia: '1200003451'
+history:
+- date: '2026-09-29'
+  change: 'Symeón deja de figurar como forma hebrea: la nota de estudio de Mt 10:2, más reciente que Perspicacia, dice que
+    es la forma griega de Simeón.'
+  source: mateo-10
+- date: '2026-09-29'
+  change: 'La razón no citaba el texto que lo da por casado: 1Co 9:5, que Perspicacia «Pedro», párr. 4, usa como prueba en
+    vez de deducirlo de la suegra.'
+  source: 1-corintios-9
+- date: '2026-09-29'
+  change: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
+    por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
+  source: 1-corintios-9
+checked_on: '2026-09-29'
+status: verified

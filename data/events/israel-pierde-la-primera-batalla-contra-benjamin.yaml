@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-pierde-la-primera-batalla-contra-benjamin
+title: Israel pierde la primera batalla contra Benjamín
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 20017
+places:
+- guibea-de-benjamin
+- betel
+people: []
+passages:
+- Jue 20:17-22
+summary: Con 400.000 hombres, Israel sube a Betel a preguntar quién atacará primero, y Jehová señala a Judá. Ante Guibeá,
+  los benjaminitas matan a 22.000 israelitas, que vuelven a formar en el mismo sitio.
+reason: 'Perspicacia «Guibeah», núm. 2, y «Betel», párr. 12: el Arca estaba en Betel. Fecha: «Jueces, Libro de», «Orden del
+  libro»: poco después de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+sources:
+- jueces-20
+- it-guibeah
+- it-betel
+- it-jueces
+- si-3
+- it-finehas
+links:
+- title: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

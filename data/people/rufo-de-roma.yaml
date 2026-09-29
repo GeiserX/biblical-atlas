@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rufo-de-roma
+name: Rufo de Roma
+names:
+- name: Rufo
+perspicacia: 1200003769#2
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c. (fecha de Romanos)
+disambiguation: El Rufo de la congregación de Roma. Perspicacia lo separa del hijo de Simón de Cirene.
+distinct_from:
+- rufo-hijo-de-simon
+summary: Cristiano de Roma al que Pablo llama escogido en el Señor. Saluda también a la madre de Rufo, que había sido para
+  Pablo como una madre.
+reason: Perspicacia «Rufo»; Ro 16:13. Es la núm. 2. La fecha es la de Romanos, hacia 56 según la Tabla de los libros.
+sources:
+- it-rufo
+- romanos-16
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Rufo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003769
+  type: perspicacia
+- title: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  type: bible
+relations:
+- type: lived_in
+  place: roma
+  inferred: false
+  sources:
+  - it-rufo
+  - romanos-16
+  reason: Pablo lo saluda entre los cristianos de Roma (Ro 16:13).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

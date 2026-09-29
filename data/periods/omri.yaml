@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: omri
+name: Reinado de Omrí en Israel
+type: king
+person: omri
+date:
+  from: -950
+  to: -939
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951-940 a.e.c.
+places:
+- tirza
+- samaria
+summary: 'Doce años: cuatro disputados con Tibní y ocho en solitario, primero en Tirzá y luego en Samaria.'
+reason: 'A6-A: «Omrí y Tibní, 4 años» desde c. 951 y «Omrí solo, 8 años» desde c. 947; 1Re 16:23 le da doce años.'
+sources:
+- tnm-a6-a
+- 1-reyes-16
+- it-omri
+search: Omrí rey
+checked_on: '2026-09-28'
+status: verified

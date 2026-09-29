@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mehujael
+name: Mehujael
+names:
+- name: Mehujael
+perspicacia: '1200002965'
+summary: Hijo de Irad y bisnieto de Caín. Fue padre de Metusael y abuelo de Lamec, el descendiente de Caín.
+reason: Perspicacia «Mehujael»; Gé 4:18.
+sources:
+- it-mehujael
+- genesis-4
+links:
+- title: 'Perspicacia: «Mehujael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002965
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+relations:
+- type: kin
+  person: irad
+  word: father
+  inferred: false
+  sources:
+  - genesis-4
+  reason: 'Gé 4:18: Irad fue padre de Mehujael.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

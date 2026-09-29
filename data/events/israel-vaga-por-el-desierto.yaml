@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-vaga-por-el-desierto
+title: Israel anda errante por el desierto
+date:
+  from: -1511
+  to: -1473
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+    el año cuarenta)'
+narrative_order:
+  series: numeros
+  order: 19500
+places:
+- ritma
+- rimon-perez
+- libna-del-desierto
+- risa
+- quehelata
+- monte-sefer
+- harada
+- maquelot
+- tahat
+- tare
+- mitca
+- hasmona
+- moserot
+- bene-jaacan
+- hor-haguidgad
+- jotbata
+- abrona
+- ezion-gueber
+- seir
+people:
+- moises
+- aaron
+present: []
+passages:
+- Nú 33:18-35
+- Dt 2:1
+- Dt 2:14, 15
+summary: Después de Hazerot, Israel levanta el campamento dieciocho veces, de Ritmá a Ezión-Guéber, mientras muere en el desierto
+  la generación que no quiso entrar en Canaán.
+reason: 'Perspicacia «Qadés»: tras los espías, en 1512, vagaron 38 años con 18 etapas desde Hazerot y volvieron a Cadés el
+  año cuarenta: va justo antes de esa vuelta. Hay muchos sitios inciertos: no sitúa a nadie.'
+sources:
+- numeros-33
+- it-qades
+- it-numeros-libro
+- tnm-b3
+- deuteronomio-2
+links:
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+- title: 'Perspicacia: «Qadés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002564
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

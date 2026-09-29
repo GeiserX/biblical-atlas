@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eglon
+name: Eglón
+names:
+- name: Eglón
+perspicacia: 1200001264#1
+disambiguation: Eglón, el rey moabita del tiempo de los jueces; no la ciudad cananea de Eglón que tomó Josué (Perspicacia,
+  núm. 2).
+summary: Rey de Moab que, con ammonitas y amalequitas, tomó la ciudad de las palmeras y tuvo a Israel dieciocho años pagándole
+  tributo. Era muy gordo. Ehúd lo mató a solas en su cámara fresca.
+reason: Perspicacia «Eglón», núm. 1; Jue 3:12-25. La Atalaya del 15 de marzo de 1997 sitúa su palacio en Jericó.
+sources:
+- it-eglon
+- jueces-3
+- w97-ehud
+links:
+- title: 'Perspicacia: «Eglón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001264
+  type: perspicacia
+- title: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  type: bible
+relations:
+- type: lived_in
+  place: moab
+  inferred: false
+  sources:
+  - jueces-3
+  - it-eglon
+  reason: 'Jue 3:12, 14, 17: era el rey de Moab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerico
+  inferred: true
+  sources:
+  - jueces-3
+  - w97-ehud
+  reason: Tras tomar la ciudad de las palmeras (Jue 3:13), dice La Atalaya del 15 de marzo de 1997, levantó allí su palacio.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: jerico
+  inferred: true
+  sources:
+  - jueces-3
+  - w97-ehud
+  reason: 'Jue 3:20-25: Ehúd lo mata en la cámara de la azotea de su palacio, que esa Atalaya pone en Jericó.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

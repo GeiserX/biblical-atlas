@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: batalla-de-las-aguas-de-merom
+title: Josué vence a los reyes del norte en las aguas de Merom
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+narrative_order:
+  series: josue
+  order: 11001
+places:
+- aguas-de-merom
+- hazor
+- madon
+- simron
+- acsaf
+- dor
+- sidon
+- misrefot-maim
+- tierra-de-mizpa
+people:
+- josue-hijo-de-nun
+- jabin-rey-de-hazor
+- jobab-rey-de-madon
+passages:
+- Jos 11:1-9
+summary: Jabín de Hazor reúne a los reyes del norte, con muchos caballos y carros, junto a las aguas de Merom. Jehová anima
+  a Josué, que los ataca por sorpresa, los persigue y quema sus carros.
+reason: 'Estudio 3: entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467). Perspicacia «Josué»,
+  núm. 1: la campaña del norte siguió a la del sur.'
+sources:
+- josue-11
+- si-3
+- it-josue
+- it-jabin
+- it-merom
+links:
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: 'Perspicacia: «Merom, Aguas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003003
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: onesiforo
+name: Onesíforo
+names:
+- name: Onesíforo
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+summary: Cristiano de Éfeso que, cuando otros de Asia se apartaron de Pablo, lo buscó en Roma hasta encontrarlo
+  sin avergonzarse de sus cadenas.
+reason: Perspicacia «Onesíforo» y «Asia» (último párrafo sobre 2 Timoteo); 2Ti 1:15-18; 4:19.
+sources:
+- it-onesiforo
+- it-asia
+- 2-timoteo-1
+links:
+- title: 'Perspicacia: «Onesíforo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003329
+  type: perspicacia
+- title: 2 Timoteo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: efeso
+  inferred: false
+  sources:
+  - it-asia
+  reason: Perspicacia «Asia» dice que parece fuera de duda que vivía en Éfeso.
+  checked_on: '2026-09-28'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: false
+  sources:
+  - it-onesiforo
+  - 2-timoteo-1
+  - tnm-tabla
+  reason: Lo busca en Roma y lo encuentra (2Ti 1:17). La Tabla de los libros fecha 2 Timoteo hacia 65.
+  checked_on: '2026-09-28'
+  status: verified

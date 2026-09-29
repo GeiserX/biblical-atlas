@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lagar-de-zeeb
+name: Lagar de Zeeb
+names:
+- name: Lagar de Zeeb
+- name: Lagar de vino de Zeeb
+  note: Forma completa de Jue 7:25.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lagar donde los efraimitas mataron a Zeeb, príncipe de Madián, en la persecución que siguió a la victoria de Gedeón.
+  Desde entonces se le conoció por su nombre.
+reason: 'Perspicacia «Zeeb»; Jue 7:25. Sin punto: ni el texto ni Perspicacia dicen dónde estaba. Es un lagar; ningún tipo de
+  la lista le encaja mejor que «región».'
+sources:
+- it-zeeb
+- jueces-7
+links:
+- title: 'Perspicacia: «Zeeb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004686
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+checked_on: '2026-09-29'
+status: pending

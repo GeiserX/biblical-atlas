@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elon-el-zabulonita
+name: Elón
+names:
+- name: Elón
+perspicacia: 1200001333#3
+disambiguation: El juez Elón, de la tribu de Zabulón; no el hitita suegro de Esaú ni el hijo de Zabulón.
+distinct_from:
+- elon-el-hitita
+- elon-hijo-de-zabulon
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: juez después de Ibzán)'
+summary: Juez de la tribu de Zabulón que gobernó a Israel diez años después de Ibzán. Lo enterraron en Ayalón, en la tierra
+  de Zabulón.
+reason: 'Perspicacia «Elón», núm. 3; Jue 12:11, 12. Fecha: tras Jefté (c. 1173, «Jefté»), pues el libro va casi en orden («Jueces,
+  Libro de»), y antes de Saúl (1117, estudio 3).'
+sources:
+- it-elon
+- it-jefte
+- it-jueces
+- si-3
+- jueces-12
+links:
+- title: 'Perspicacia: «Elón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001333
+  type: perspicacia
+- title: Jueces 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  type: bible
+relations:
+- type: succeeds
+  person: ibzan
+  inferred: false
+  sources:
+  - jueces-12
+  - it-elon
+  reason: 'Jue 12:11: juzgó a Israel después de Ibzán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: ayalon-de-zabulon
+  inferred: false
+  sources:
+  - jueces-12
+  - it-elon
+  - it-ayalon
+  reason: 'Jue 12:12: murió y lo enterraron en Ayalón, en la tierra de Zabulón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeter-hijo-de-gedeon
+name: Jéter
+names:
+- name: Jéter
+perspicacia: 1200002452#5
+disambiguation: Primogénito de Gedeón; no Jetró, suegro de Moisés, al que el texto masorético llama una vez Jéter, ni el padre
+  de Amasá.
+distinct_from:
+- jetro
+summary: Hijo mayor de Gedeón. Al parecer acompañó a su padre tras los reyes de Madián, pero, muy joven, no se atrevió a matarlos.
+  Muerto Gedeón, Abimélec lo mató en Ofrá con sus hermanos.
+reason: Perspicacia «Jéter», núm. 5; Jue 8:20; 9:5, 18.
+sources:
+- it-jeter
+- jueces-8
+- jueces-9
+links:
+- title: 'Perspicacia: «Jéter»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002452
+  type: perspicacia
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+relations:
+- type: kin
+  person: gedeon
+  word: father
+  inferred: false
+  sources:
+  - jueces-8
+  - it-jeter
+  reason: Jue 8:20 lo llama hijo mayor de Gedeón.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abimelec-hijo-de-gedeon
+  word: half_brother
+  inferred: true
+  sources:
+  - it-jeter
+  - jueces-9
+  reason: 'Perspicacia «Jéter», núm. 5: lo mató su medio hermano Abimélec, hijo de Gedeón y de su concubina de Siquem.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: ofra-de-gedeon
+  inferred: true
+  sources:
+  - it-jeter
+  - jueces-9
+  reason: 'Jue 9:5: en Ofrá Abimélec mató a los hijos de Jerubaal, salvo Jotán. Perspicacia «Jéter», núm. 5, pone a Jéter entre
+    ellos (Jue 9:5, 18).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

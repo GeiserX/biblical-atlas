@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cosam
+name: Cosam
+names:
+- name: Cosam
+perspicacia: '1200001045'
+summary: Descendiente de Natán, hijo de David, y antepasado de María. Lucas lo pone como hijo de Elmadam y padre de Adí.
+reason: Perspicacia «Cosam»; Lu 3:28.
+sources:
+- it-cosam
+- lucas-3
+links:
+- title: 'Perspicacia: «Cosam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001045
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: elmadam
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:28: Cosam, hijo de Elmadam.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

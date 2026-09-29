@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: josias
+name: Reinado de Josías en Judá
+type: king
+person: josias
+date:
+  from: -658
+  to: -627
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 659-628 a.e.c.
+places:
+- jerusalen
+summary: Treinta y un años en Jerusalén.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 22.
+sources:
+- tnm-a6-b
+- 2-reyes-22
+- it-josias
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Josías» cerraba su reinado en 629 a.e.c.; A6-B, más reciente, empieza el de Jehoacaz en 628, como el
+    estudio 3.
+  source: tnm-a6-b
+search: Josías rey
+checked_on: '2026-09-28'
+status: verified

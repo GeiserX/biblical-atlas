@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sentencia-y-barrabas
+title: Prefieren a Barrabás; Jesús es sentenciado a muerte
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- empedrado
+- jerusalen
+people:
+- jesus
+- poncio-pilato
+- barrabas
+passages:
+- Mt 27:15-30
+- Mr 15:6-19
+- Lu 23:13-25
+- Jn 18:39-19:16
+- Hch 13:28
+summary: Pilato ofrece soltar a Jesús, pero la multitud pide a Barrabás. Tras hacerlo azotar, Pilato lo entrega
+  para que lo ejecuten en un madero.
+reason: La tabla A7-H da el día y el lugar. Perspicacia «Pilato» (párr. 9-10) y «Barrabás». Pilato ya estaba en el tribunal
+  (Mt 27:19), que Jn 19:13 y Perspicacia «Empedrado, El» ponen en el Empedrado.
+sources:
+- tnm-a7-h
+- mateo-27
+- marcos-15
+- lucas-23
+- juan-18
+- juan-19
+- jy-cap-128
+- jy-cap-129
+- jy-cap-130
+- it-pilato
+- it-barrabas
+- it-empedrado
+narrative_order:
+  series: a7
+  order: 120
+search: Prefieren a Barrabás
+history:
+- date: '2026-09-29'
+  change: 'El Empedrado va primero: Mt 27:19 pone a Pilato en el tribunal durante la elección de Barrabás y Jn 19:13 sitúa
+    ese tribunal allí. Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  source: juan-19
+- date: '2026-09-29'
+  change: La razón explica por qué el primer lugar es el Empedrado.
+  source: juan-19
+checked_on: '2026-09-29'
+status: verified

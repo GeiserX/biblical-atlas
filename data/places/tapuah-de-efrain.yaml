@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tapuah-de-efrain
+name: Tapúah
+names:
+- name: Tapúah
+  note: No es la Tapúah de la Sefelá de Judá (Jos 15:34; Perspicacia, núm. 2).
+- name: En-Tapúah
+  note: Jos 17:7. Perspicacia cree que es un manantial cercano o un nombre más completo de la ciudad.
+type: city
+lat: 32.10415
+lon: 35.23007
+precision: point
+coord_source: openbible:a03be2e
+coord_url: https://www.openbible.info/geo/ancient/a03be2e/tappuah-1
+summary: Ciudad en la frontera entre Efraín y Manasés, de Efraín, mientras su tierra era de Manasés. Josué venció a su rey
+  cananeo.
+reason: 'Perspicacia «Tapúah», núm. 3: el rey de Jos 12:17 parece ser el de esta ciudad, que se identifica con Tell Sheikh
+  Abu Zarad, 13 km al SSO de Siquem. OpenBible: solo el punto.'
+sources:
+- it-tapuah
+- openbible-geo
+- josue-12
+- josue-16
+- josue-17
+- it-en-tapuah
+links:
+- title: 'Perspicacia: «Tapúah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004321
+  type: perspicacia
+- title: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  type: bible
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+- title: 'Perspicacia: «En-Tapúah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001376
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
+coord_note: Punto de Tell Sheikh Abu Zarad, unos 13 km al sur-suroeste de Siquem, el sitio que da Perspicacia.

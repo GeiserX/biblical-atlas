@@ -1,0 +1,33 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: baasa
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwb-131_1_VIDEO"
+    title: "JW Broadcasting: Octubre de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-131_1_VIDEO&appLanguage=S"
+    published: "2025-10-06"
+    hits: 5
+    terms:
+      "Baasá": 5
+  - docid: "pub-jwb-131_3_VIDEO"
+    title: "Harold Corkern: La sabiduría divina siempre es mejor que la del mundo (Sant. 3:17)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-131_3_VIDEO&appLanguage=S"
+    published: "2025-10-20"
+    hits: 5
+    terms:
+      "Baasá": 5
+  - docid: "pub-jwb_201707_9_VIDEO"
+    title: "Seth Hyatt: Decida con la ayuda de Jehová (2 Crón. 16:9)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201707_9_VIDEO&appLanguage=S"
+    published: "2017-07-10"
+    hits: 5
+    terms:
+      "Baasá": 5
+  - docid: "pub-jwb-102_10_VIDEO"
+    title: "David Schafer: “Confía en Jehová y haz el bien” (Sal. 37:3)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-102_10_VIDEO&appLanguage=S"
+    published: "2023-09-22"
+    hits: 3
+    terms:
+      "Baasá": 3

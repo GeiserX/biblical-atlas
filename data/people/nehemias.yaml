@@ -1,0 +1,73 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nehemias
+name: Nehemías
+names:
+- name: Nehemías
+disambiguation: El gobernador y escritor del libro de Nehemías; no el Nehemías de Esd 2:2 ni el hijo de Azbuq de Ne 3:16.
+date:
+  from: -455
+  to: -442
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 456 a después de 443 a.e.c.
+summary: Hijo de Hacalías, copero de Artajerjes en Susa y después gobernador de Judá. En 455 a.e.c. reconstruyó el muro
+  de Jerusalén en 52 días pese a Sanbalat y Tobías; en 443 volvió un tiempo al rey.
+reason: 'Perspicacia «Nehemías», núm. 3: noticias en kislev, permiso en nisán del año 20, muro del 4 de ab al 25 de elul
+  y salida en el año 32. Ne 5:14 da doce años de gobierno.'
+sources:
+- it-nehemias
+- it-artajerjes
+- nehemias-1
+- nehemias-5
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003212
+  type: perspicacia
+- title: Nehemías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  type: bible
+relations:
+- type: lived_in
+  place: susa
+  date:
+    from: -455
+    to: -454
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 456-455 a.e.c.
+  inferred: false
+  sources:
+  - it-nehemias
+  - it-susa
+  - nehemias-1
+  - tnm-tabla
+  - si-3
+  reason: 'Ne 1:1 y Perspicacia «Susa»: servía de copero en el castillo de Susa. Nehemías abarca desde 456 (Tabla de los libros);
+    el año 20 de Artajerjes es 455 (estudio 3, párr. 19).'
+  checked_on: '2026-09-28'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -454
+    to: -442
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 455-443 a.e.c.
+  inferred: false
+  sources:
+  - it-nehemias
+  - nehemias-5
+  - si-3
+  reason: 'Ne 5:14: gobernador de Judá del año 20 al 32 de Artajerjes (455-443). Años del estudio 3 (párr. 19 y tabla de sucesos).'
+  checked_on: '2026-09-28'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

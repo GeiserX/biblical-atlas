@@ -1,0 +1,23 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: filemon
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_570_VIDEO"
+    title: "Información sobre Filemón"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_570_VIDEO"
+    published: "2019-08-06"
+chapters:
+  1:
+    - docid: "pub-jwb-113_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2024 (graduación de la clase 155 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-113_1_VIDEO"
+      published: "2024-06-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-113_8_VIDEO"
+      title: "Trent Lippold: Sean como el aceite del motor"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-113_8_VIDEO"
+      published: "2024-06-04"
+      matched_by: [subtitles]
+      citations: 1

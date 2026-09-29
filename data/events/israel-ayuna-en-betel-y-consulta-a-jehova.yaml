@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-ayuna-en-betel-y-consulta-a-jehova
+title: Israel ayuna en Betel y consulta a Jehová
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 20026
+places:
+- betel
+people:
+- finehas-hijo-de-eleazar
+present:
+- finehas-hijo-de-eleazar
+passages:
+- Jue 20:26-28
+summary: Todo Israel llora y ayuna en Betel, y ofrece sacrificios quemados y de paz. El Arca estaba allí, y Finehás, nieto
+  de Aarón, servía ante ella. Jehová promete darles la victoria al día siguiente.
+reason: 'Perspicacia «Betel», párr. 12: al parecer trajeron el Arca desde Siló; «Finehás», núm. 1: ya era sumo sacerdote. Fecha:
+  «Jueces, Libro de», «Orden del libro»: poco después de morir Josué (c. 1450 a.e.c.); final, una generación.'
+sources:
+- jueces-20
+- it-betel
+- it-finehas
+- it-jueces
+- si-3
+links:
+- title: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

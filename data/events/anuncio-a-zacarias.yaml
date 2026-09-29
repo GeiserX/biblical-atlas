@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: anuncio-a-zacarias
+title: Gabriel anuncia a Zacarías el nacimiento de Juan
+date:
+  from: -2
+  to: -2
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. finales de la primavera de 3 a.e.c.
+  detail:
+    season: spring
+narrative_order:
+  series: a7
+  order: 1
+places:
+- monte-moria
+- jerusalen
+people:
+- zacarias-padre-de-juan
+- elisabet
+- gabriel
+passages:
+- Lu 1:5-25
+summary: Mientras Zacarías ofrece incienso en el santuario, Gabriel le anuncia que Elisabet, ya mayor, tendrá un hijo llamado
+  Juan. Por no creerlo, queda mudo hasta que el niño nazca.
+reason: 'A7-A, fila 1: templo de Jerusalén en 3 a.e.c. Perspicacia «Zacarías» (núm. 31) sitúa el turno de Abías hacia el final
+  de la primavera o el comienzo del verano.'
+sources:
+- tnm-a7-a
+- lucas-1
+- it-zacarias
+- jy-cap-1
+search: Zacarías Gabriel templo
+present:
+- zacarias-padre-de-juan
+- gabriel
+history:
+- date: '2026-09-29'
+  change: 'Elisabet no estaba en el santuario (Lu 1:8-23): solo Zacarías y Gabriel quedan situados en Jerusalén.'
+  source: lucas-1
+- date: '2026-09-29'
+  change: 'El anuncio pasa en el santuario del templo (Lu 1:9-11): el sitio principal es monte-moria, como en los sucesos
+    del templo de Mateo, y Jerusalén queda segunda.'
+  source: lucas-1
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asriel
+name: Asriel
+names:
+- name: Asriel
+perspicacia: '1200000438'
+summary: Descendiente de Manasés y cabeza de los asrielitas. Nú 26 lo pone entre los hijos de Galaad; 1 Crónicas 7 lo llama
+  hijo de Manasés, que Perspicacia lee como descendiente.
+reason: Perspicacia «Asriel»; Nú 26:29-31.
+sources:
+- it-asriel
+- numeros-26
+- josue-17
+links:
+- title: 'Perspicacia: «Asriel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000438
+  type: perspicacia
+- title: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  type: bible
+relations:
+- type: kin
+  person: galaad-hijo-de-makir
+  word: father
+  inferred: false
+  sources:
+  - numeros-26
+  - it-asriel
+  reason: Nú 26:30-32 lo cuenta entre los hijos de Galaad.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: false
+  sources:
+  - josue-17
+  reason: Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

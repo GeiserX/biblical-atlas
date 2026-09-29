@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tres-tabernas
+name: Tres Tabernas
+names:
+- name: Tres Tabernas
+type: city
+lat: 41.56194
+lon: 12.87389
+precision: point
+coord_source: openbible:afef438
+coord_url: https://www.openbible.info/geo/ancient/afef438/three-taverns
+summary: Parada de la vía Apia a unos 49 km de Roma donde otro grupo de hermanos esperaba a Pablo.
+reason: 'Perspicacia («Tres Tabernas») describe el lugar; aparece en Hch 28:15. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+sources:
+- it-tres-tabernas
+- hch-28
+- openbible-geo
+links:
+- title: 'Perspicacia: «Tres Tabernas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004388
+  type: perspicacia
+- title: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  type: bible
+checked_on: '2026-09-27'
+status: verified

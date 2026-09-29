@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: helba
+name: Helbá
+names:
+- name: Helbá
+  note: Algunos la creen la misma que Ahlab, según Perspicacia; va en ficha aparte porque no lo afirma.
+type: city
+lat: 33.317804
+lon: 35.243368
+precision: uncertain
+coord_source: openbible:a3cb036
+coord_url: https://www.openbible.info/geo/ancient/a3cb036/helbah
+coord_note: Punto de OpenBible en Khirbet el-Mahalib, unos 6 km al NE de Tiro, el sitio que algunos proponen según Perspicacia.
+  Es el mismo punto de Ahlab.
+summary: Ciudad del territorio de Aser de la que la tribu no expulsó a los cananeos. Hay quien la sitúa cerca de Tiro y la
+  cree la misma que Ahlab, pero su sitio no puede precisarse.
+reason: 'Perspicacia «Helbá»; Jue 1:31, 32. OpenBible: solo el punto.'
+sources:
+- it-helba
+- openbible-geo
+- jueces-1
+links:
+- title: 'Perspicacia: «Helbá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001965
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quis-hijo-de-ner
+name: Quis
+names:
+- name: Quis
+perspicacia: 1200002631#3
+disambiguation: El padre del rey Saúl, entrada núm. 3 de Perspicacia «Quis». No es su tío, el Quis hijo de Jeiel, ni los levitas
+  de ese nombre.
+summary: Benjamita de buena posición, de la familia de los matritas, padre de Saúl, el primer rey de Israel. Perspicacia lo
+  hace hijo de Ner y hermano de Abner.
+reason: Perspicacia «Quis», núm. 3; Hch 13:21 lo nombra como padre de Saúl.
+sources:
+- it-quis
+- hch-13
+links:
+- title: 'Perspicacia: «Quis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002631
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

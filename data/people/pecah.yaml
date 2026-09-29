@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pecah
+name: Pécah
+names:
+- name: Pécah
+date:
+  from: -777
+  to: -757
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778-758 a.e.c.
+summary: Hijo de Remalías. Mató a Pecahías con cincuenta galaaditas. Se alió con Rezín de Siria contra Judá; Tiglat-Piléser
+  III le quitó territorio y Hosea lo asesinó.
+reason: Perspicacia «Péqah» (grafía antigua), párr. 1-4; 2Re 15:25-31 e Is 7:1-9.
+sources:
+- it-peqah
+- 2-reyes-15
+- 2-reyes-16
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Péqah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003415
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+relations:
+- type: succeeds
+  person: pecahias
+  inferred: false
+  sources:
+  - it-peqah
+  - 2-reyes-15
+  reason: Se hizo rey tras matar a Pecahías (2Re 15:25).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

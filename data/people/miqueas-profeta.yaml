@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miqueas-profeta
+name: Miqueas
+names:
+- name: Miqueas
+disambiguation: El profeta de Moréset; Perspicacia registra otros seis hombres llamados Miqueas.
+date:
+  from: -776
+  to: -716
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 777-717 a.e.c.
+summary: Profeta de Moréset, en la Sefelá, durante Jotán, Acaz y Ezequías. Contemporáneo de Isaías y Oseas.
+reason: 'Perspicacia «Miqueas», núm. 7; Miq 1:1 y Jer 26:18. La Tabla de los libros: c. 777-717.'
+sources:
+- it-miqueas
+- miqueas-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Miqueas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003032
+  type: perspicacia
+- title: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- miqueas-de-efrain

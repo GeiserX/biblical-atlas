@@ -1,0 +1,105 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: amos
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_300_VIDEO"
+    title: "Información sobre Amós"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_300_VIDEO"
+    published: "2017-10-30"
+chapters:
+  3:
+    - docid: "pub-jwb-108_8_VIDEO"
+      title: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_8_VIDEO"
+      published: "2024-01-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_9_VIDEO"
+      title: "Jeffrey Winder: ¿Cómo se hace cada vez más brillante la luz?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_9_VIDEO"
+      published: "2024-01-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod25_10_VIDEO"
+      title: "Troy Snyder: Sigamos el ejemplo de aguante de los profetas (Sant. 5:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_10_VIDEO"
+      published: "2025-02-28"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod26_35_VIDEO"
+      title: "Jody Jedele: La senda de los justos brilla cada vez más (Prov. 4:18)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_35_VIDEO"
+      published: "2026-09-25"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwb-100_14_VIDEO"
+      title: "Stephen Lett: ¿Por qué deben besar todos al Hijo de Dios?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_14_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_202012_9_VIDEO"
+      title: "Mark Noumair: La predicación vence a Satanás (Apoc. 12:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_9_VIDEO"
+      published: "2020-12-14"
+      matched_by: [subtitles]
+      citations: 1
+  5:
+    - docid: "pub-jwb_201708_10_VIDEO"
+      title: "William Malenfant: Hagamos sacrificios de buena gana (Sal. 54:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201708_10_VIDEO"
+      published: "2017-08-14"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-131_1_VIDEO"
+      title: "JW Broadcasting: Octubre de 2025"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-131_1_VIDEO"
+      published: "2025-10-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-131_6_VIDEO"
+      title: "Descubramos más tesoros: Amós"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-131_6_VIDEO"
+      published: "2025-10-20"
+      matched_by: [subtitles]
+      citations: 1
+  7:
+    - docid: "pub-jwbmw_201612_1_VIDEO"
+      title: "Robert Luccioni: Que nada limite lo que usted puede dar (Amós 7:14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201612_1_VIDEO"
+      published: "2016-12-19"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-jwb_202012_9_VIDEO"
+      title: "Mark Noumair: La predicación vence a Satanás (Apoc. 12:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_9_VIDEO"
+      published: "2020-12-14"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201702_10_VIDEO"
+      title: "Harold Corkern: Oremos para conseguir “la paz de Dios” (Filip. 4:7)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201702_10_VIDEO"
+      published: "2017-02-27"
+      matched_by: [subtitles]
+      citations: 1
+  9:
+    - docid: "pub-jwb-108_8_VIDEO"
+      title: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_8_VIDEO"
+      published: "2024-01-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_9_VIDEO"
+      title: "Jeffrey Winder: ¿Cómo se hace cada vez más brillante la luz?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_9_VIDEO"
+      published: "2024-01-02"
+      matched_by: [subtitles]
+      citations: 1

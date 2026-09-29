@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selomit-hija-de-dibri
+name: Selomit
+names:
+- name: Selomit
+perspicacia: 1200003994#1
+disambiguation: La danita de Le 24, madre del que maldijo el nombre de Dios. Perspicacia «Selomit» trata a otros cinco con
+  ese nombre, todos posteriores.
+summary: Israelita de la tribu de Dan, hija de Dibrí y casada con un egipcio. Su hijo maldijo el nombre de Jehová durante
+  una pelea en el campamento y murió apedreado.
+reason: Perspicacia «Selomit», núm. 1; Le 24:10-14, 23.
+sources:
+- it-selomit
+- levitico-24
+links:
+- title: 'Perspicacia: «Selomit»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003994
+  type: perspicacia
+- title: Levítico 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/24
+  type: bible
+relations:
+- type: kin
+  person: dibri
+  word: father
+  inferred: false
+  sources:
+  - levitico-24
+  - it-selomit
+  - it-dibri
+  reason: Le 24:11 la llama hija de Dibrí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: dan-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - levitico-24
+  - it-selomit
+  reason: 'Le 24:11: era de la tribu de Dan.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

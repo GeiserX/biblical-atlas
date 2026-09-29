@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: talmai-hijo-de-anac
+name: Talmái
+names:
+- name: Talmái
+- name: Talmai
+  note: Grafía de Perspicacia.
+perspicacia: 1200004311#1
+date:
+  from: -1511
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de la visita de los espías a la toma de Hebrón por Caleb)'
+disambiguation: Talmái el anaquita de Hebrón; no Talmái, rey de Guesur y abuelo de Absalón.
+summary: Anaquita de Hebrón, hermano de Ahimán y Sesái. Los espías lo encontraron en la ciudad, que Caleb conquistaría después.
+reason: 'Perspicacia «Talmai», núm. 1, y «Ahimán», núm. 1; Nú 13:22; Jos 15:14. Fecha: los espías lo ven en 1512 a.e.c. y Caleb
+  lo echa de Hebrón tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).'
+sources:
+- it-talmai
+- numeros-13
+- josue-15
+- it-anaq
+- it-ahiman
+- si-3
+- tnm-tabla
+- jueces-1
+links:
+- title: 'Perspicacia: «Talmai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004311
+  type: perspicacia
+relations:
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - numeros-13
+  - josue-15
+  - jueces-1
+  reason: 'Nú 13:22: Talmái vivía en Hebrón cuando llegaron los espías.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: anac
+  word: ancestor
+  inferred: true
+  sources:
+  - josue-15
+  - it-anaq
+  - jueces-1
+  reason: Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: 'Jos 15:14 lo muestra expulsado de Hebrón por Caleb, después de 1467 a.e.c.: la fecha pasa de 1512 a un rango hasta
+    c. 1450, con Perspicacia «Ahimán», núm. 1.'
+  source: josue-15
+- date: '2026-09-29'
+  change: 'La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.'
+  source: josue-15
+checked_on: '2026-09-29'
+status: verified

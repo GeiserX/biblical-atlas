@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-escribe-la-ley-y-la-confia-a-los-sacerdotes
+title: Moisés escribe la Ley y la confía a los sacerdotes
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 131009
+places:
+- llanuras-deserticas-de-moab
+people:
+- moises
+passages:
+- Dt 31:9-13
+- Dt 31:24-29
+summary: Moisés pone la Ley por escrito y la da a los sacerdotes levitas y a los ancianos. Manda leerla ante el pueblo cada
+  siete años, en la Fiesta de las Cabañas, y guardar el libro junto al arca del pacto.
+reason: El estudio 3 pone en 1473 a.e.c. la escritura de Deuteronomio. Perspicacia «Deuteronomio, Libro de» cita la lectura
+  cada séptimo año (Dt 31:10-13). Va tras Números en su serie.
+sources:
+- deuteronomio-31
+- si-3
+- it-deuteronomio-libro
+links:
+- title: Deuteronomio 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/31
+  type: bible
+- title: 'Perspicacia: «Deuteronomio, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001163
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

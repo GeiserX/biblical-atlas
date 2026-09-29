@@ -1,0 +1,207 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-hijo-de-jacob
+name: José
+names:
+- name: José
+- name: Zafenat-Panéah
+  note: Nombre egipcio que le puso el faraón (Gé 41:45).
+date:
+  from: -1766
+  to: -1656
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1767-1657 a.e.c.
+disambiguation: José hijo de Jacob, gobernante en Egipto; no José el esposo de María ni José de Arimatea.
+distinct_from:
+- jose-esposo-de-maria
+- jose-de-arimatea
+- jose-hijo-de-jose
+- jose-padre-de-igal
+summary: Primer hijo de Jacob y Raquel. Sus medio hermanos lo vendieron como esclavo a los 17 años. En Egipto resistió la
+  tentación, estuvo preso y Faraón lo hizo segundo gobernante. Así salvó a su familia del hambre.
+reason: 'Perspicacia «José», núm. 1, párr. 2, 5, 8, 11, 17 y 40. El estudio 3: nace en 1767, lo venden en 1750 y muere en
+  1657 a.e.c.'
+sources:
+- it-jose
+- si-3
+- genesis-41
+- genesis-50
+- genesis-33
+- genesis-35
+- genesis-37
+- genesis-39
+- genesis-40
+- genesis-42
+- genesis-43
+- genesis-44
+- genesis-45
+- genesis-46
+- genesis-47
+- genesis-48
+- genesis-49
+- salmos-105
+- exodo-1
+- exodo-13
+- juan-4
+- hechos-7
+- josue-24
+links:
+- title: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  type: perspicacia
+- title: Génesis 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41
+  type: bible
+relations:
+- type: kin
+  person: jacob
+  word: father
+  inferred: false
+  sources:
+  - it-jose
+  - genesis-30
+  - genesis-35
+  - genesis-37
+  - genesis-46
+  - genesis-47
+  - genesis-48
+  - genesis-49
+  - genesis-50
+  - juan-4
+  - hechos-7
+  reason: 'Perspicacia «José», párr. 2: el mayor de los dos hijos de Jacob y Raquel (Gé 30:22-24).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: raquel
+  word: mother
+  inferred: false
+  sources:
+  - it-jose
+  - genesis-30
+  - genesis-35
+  - genesis-44
+  - genesis-46
+  reason: 'Perspicacia «José», párr. 2: el mayor de los dos hijos de Jacob y Raquel (Gé 30:22-24).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: haran
+  date:
+    from: -1766
+    to: -1766
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1767 a.e.c.
+  inferred: true
+  sources:
+  - si-3
+  - it-jose
+  - genesis-30
+  - genesis-35
+  reason: 'El estudio 3 fecha su nacimiento en 1767 a.e.c.; Perspicacia «José», párr. 3: unos seis años después Jacob salió
+    de Padán-aram, junto a Harán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  date:
+    from: -1749
+    to: -1656
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1750-1657 a.e.c.
+  inferred: false
+  sources:
+  - si-3
+  - it-jose
+  - genesis-39
+  - genesis-41
+  - genesis-45
+  - genesis-50
+  - salmos-105
+  - hechos-7
+  reason: 'El estudio 3: vendido como esclavo en 1750 y muerto en 1657 a.e.c.; Perspicacia «José», párr. 9 y 40: vivió en Egipto
+    hasta su muerte.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: egipto
+  date:
+    from: -1656
+    to: -1656
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1657 a.e.c.
+  inferred: false
+  sources:
+  - genesis-50
+  - si-3
+  - it-jose
+  - exodo-1
+  reason: Gé 50:26 sitúa su muerte y su embalsamamiento en Egipto. El estudio 3 da el año 1657 a.e.c.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ruben-hijo-de-jacob
+  word: brother
+  inferred: false
+  sources:
+  - genesis-37
+  - it-ruben
+  reason: 'Gé 37:21, 22: Rubén, su medio hermano, intenta librarlo de los demás.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: juda-hijo-de-jacob
+  word: brother
+  inferred: false
+  sources:
+  - genesis-37
+  reason: 'Gé 37:26, 27: Judá lo llama nuestro hermano y propone venderlo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - genesis-37
+  reason: 'Gé 37:14: su padre lo envía desde el valle de Hebrón, donde vivía la familia.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: asenat
+  word: wife
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-asenat
+  reason: 'Gé 41:45, 50: el faraón le da por esposa a Asenat.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: potifera
+  word: father_in_law
+  inferred: false
+  sources:
+  - genesis-41
+  - it-potifera
+  reason: 'Gé 41:45: se casa con la hija de Potifera; Perspicacia lo llama su suegro.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: 1200002515#1
+history:
+- date: '2026-09-29'
+  change: El nombre egipcio pasa a escribirse Zafenat-Panéah, como en el texto de la TNM de Gé 41:45.
+  source: genesis-41
+checked_on: '2026-09-29'
+status: verified

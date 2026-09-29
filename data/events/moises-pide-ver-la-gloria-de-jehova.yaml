@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-pide-ver-la-gloria-de-jehova
+title: Moisés pide ver la gloria de Jehová
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+narrative_order:
+  series: exodo
+  order: 33012
+places:
+- monte-sinai
+people:
+- moises
+passages:
+- Éx 33:12-23
+- Ro 9:15
+summary: Moisés ruega a Jehová que vaya con su pueblo y le enseñe sus caminos. Jehová accede y, cuando Moisés pide ver su
+  gloria, le anuncia que la verá de espaldas desde una grieta de la roca, nunca su rostro.
+reason: 'Perspicacia «Moisés», párr. 20 y 21. 1513 a.e.c.: en las dos estancias de 40 días tras el pacto del tercer mes, o
+  entre ellas (Perspicacia «Moisés» y «Diez Palabras»; estudio 3).'
+sources:
+- exodo-33
+- it-moises
+- si-3
+- it-diez-palabras
+links:
+- title: Éxodo 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/33
+  type: bible
+- title: 'Perspicacia: «Moisés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

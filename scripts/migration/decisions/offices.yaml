@@ -869,3 +869,9 @@ entries:
   entities: [relation:matias/holds_office/-]
   sources: [hechos-1]
   reason: Hch 1:25, 26 habla del apostolado que Judas abandonó y cuenta que Matías, elegido por suertes, se contó con los once apóstoles.
+- file: coverage/jueces
+  chapter: 4
+  span: 4-10
+  entities: [relation:debora-profetisa/holds_office/-]
+  sources: [jueces-4]
+  reason: Jue 4:4 llama profetisa a Débora, que juzgaba a Israel bajo su palmera; el tramo ya la tiene.

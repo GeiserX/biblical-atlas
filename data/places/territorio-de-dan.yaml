@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: territorio-de-dan
+name: Dan
+names:
+- name: Dan
+  note: Territorio de la tribu que descendía de Dan, hijo de Jacob. No es la ciudad de Dan, que tiene su propia ficha.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: De la Sefelá a la costa, entre Zorá y Jope
+  geometry:
+    type: zone
+    lat: 31.914237
+    lon: 34.869164
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-dan
+  - openbible-geo
+  reason: Perspicacia lo pone entre Judá, Efraín y Benjamín, de los valles de la Sefelá a la costa del Mediterráneo.
+  coord_source: calculation
+  note: 'Centro calculado por nosotros: punto medio entre Zorá y Jope de OpenBible. El radio también es nuestro.'
+summary: Territorio de la tribu de Dan, uno de los más pequeños, de la Sefelá a la costa entre Judá, Benjamín y Efraín. Como
+  le resultó estrecho, parte de la tribu se fue al norte y tomó Lésem.
+reason: Perspicacia «Dan», núm. 2; Jos 19:40-48. Zona calculada por nosotros.
+sources:
+- it-dan
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001115
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

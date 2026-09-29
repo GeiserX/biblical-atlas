@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-resucita-a-dorcas
+title: Pedro resucita a Dorcas en Jope
+date:
+  from: 36
+  to: 36
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 36 e.c.
+narrative_order:
+  series: hechos
+  order: 936
+places:
+- jope
+- lida
+people:
+- pedro
+- dorcas
+- simon-el-curtidor
+roles:
+  dorcas: raised
+passages:
+- Hch 9:36-43
+summary: Muere Dorcas, conocida en Jope por sus buenas obras. Llaman a Pedro desde Lida, que ora a solas y la resucita.
+  Muchos creen, y Pedro se queda bastantes días en casa de Simón el curtidor.
+reason: Perspicacia «Dorcas» (párr. 2 a 4) da el año 36; la nota de estudio de Hch 9:40 la llama la primera resurrección
+  hecha por un apóstol.
+sources:
+- it-dorcas
+- it-jope
+- hch-9
+- bt-8
+search: Dorcas Tabita
+checked_on: '2026-09-29'
+status: verified

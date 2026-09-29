@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-ganim
+name: En-Ganim
+names:
+- name: En-Ganim
+  note: Significa «fuente de jardines» (Perspicacia).
+type: city
+lat: 31.725
+lon: 34.976389
+precision: uncertain
+coord_source: openbible:abe5f95
+coord_url: https://www.openbible.info/geo/ancient/abe5f95/en-gannim-1
+coord_note: Beit Jimal, segunda identificación de OpenBible, que Perspicacia ve posible. La primera, Umm Jina, le parece menos
+  probable porque allí no hay fuente.
+summary: Ciudad de la Sefelá de Judá, en el grupo de Adulam. Quizá estaba en Beit Jimal, unos 2,5 km al sur de Bet-Semes,
+  o cerca. No es la En-Ganim de Isacar.
+reason: 'Perspicacia «En-ganim», núm. 1; Jos 15:34. OpenBible: solo el punto.'
+sources:
+- it-en-ganim
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «En-ganim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001364
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

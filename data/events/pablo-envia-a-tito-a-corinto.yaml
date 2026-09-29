@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-tito-a-corinto
+title: Pablo envía a Tito a Corinto
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: 2-corintios
+  order: 12018
+  after: pablo-escribe-1-corintios
+places:
+- efeso
+- corinto
+people:
+- pablo
+- tito
+present:
+- pablo
+- tito
+passages:
+- 2Co 7:13-15
+- 2Co 8:6
+- 2Co 12:17, 18
+summary: Hacia 55, al parecer desde Éfeso, Pablo manda a Tito a Corinto con otro hermano para ayudar con la colecta para Judea.
+  Tito la empieza allí sin aprovecharse de nadie, y los corintios lo reciben con respeto y obediencia.
+reason: 'Perspicacia «Tito», párr. 1: lo envió hacia 55 por la colecta y quizá para ver cómo tomaron la primera carta. «Pablo»,
+  tercer viaje: al parecer desde Éfeso, tras escribirla. 2Co 8:6: Tito empezó la colecta.'
+sources:
+- 2-corintios-7
+- 2-corintios-8
+- it-tito-persona
+- it-pablo
+- 2-corintios-12
+links:
+- title: 2 Corintios 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/7
+  type: bible
+- title: 'Perspicacia: «Tito»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004431
+  type: perspicacia
+- title: 2 Corintios 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/12
+  type: bible
+search: Tito enviado a Corinto colecta
+checked_on: '2026-09-29'
+status: verified

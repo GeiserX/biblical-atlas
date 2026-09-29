@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: piram
+name: Piram
+names:
+- name: Piram
+perspicacia: '1200003495'
+summary: Rey amorreo de Jarmut. Conspiró con otros cuatro reyes contra Gabaón; vencido, se escondió con ellos en Maquedá,
+  en la cueva que después fue la tumba de todos.
+reason: Perspicacia «Piram»; Jos 10:3-5, 16-27.
+sources:
+- it-piram
+- josue-10
+links:
+- title: 'Perspicacia: «Piram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003495
+  type: perspicacia
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+relations:
+- type: lived_in
+  place: jarmut
+  inferred: false
+  sources:
+  - josue-10
+  - it-piram
+  reason: Jos 10:3 lo llama rey de Jarmut.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: adoni-zedec
+  inferred: false
+  sources:
+  - josue-10
+  - it-piram
+  reason: 'Jos 10:3-5: respondió a la llamada de Adoni-Zédec y se alió con él contra Gabaón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: maqueda
+  inferred: false
+  sources:
+  - josue-10
+  - it-piram
+  - it-maqueda
+  reason: 'Jos 10:16-27: sacado de la cueva de Maquedá, junto al campamento, Josué lo mató y lo echó en ella.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

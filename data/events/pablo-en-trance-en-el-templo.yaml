@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-en-trance-en-el-templo
+title: En un trance en el templo, Jesús manda a Pablo salir de Jerusalén
+date:
+  from: 36
+  to: 36
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: quizás 36 e.c.
+narrative_order:
+  series: hechos
+  order: 929
+places:
+- monte-moria
+- jerusalen
+people:
+- pablo
+- jesus
+present:
+- pablo
+passages:
+- Hch 22:17-21
+summary: De vuelta en Jerusalén tras su conversión, Pablo ora en el templo y en un trance ve a Jesús, que le dice que se vaya
+  pronto porque allí no lo escucharán y que lo enviará a naciones lejanas.
+reason: Pablo lo cuenta en Hch 22:17-21; la nota del v. 17 lo remite a su primera visita a Jerusalén como cristiano, que Perspicacia
+  «Pablo» (párr. 8) pone quizás en 36. Orden ajustado al de esa visita.
+sources:
+- it-pablo
+- si-3
+- hch-22
+links:
+- title: Hechos 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/22
+  type: bible
+search: Pablo trance templo Jerusalén
+checked_on: '2026-09-29'
+status: verified

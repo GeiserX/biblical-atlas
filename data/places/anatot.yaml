@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: anatot
+name: Anatot
+names:
+- name: Anatot
+type: city
+lat: 31.80752
+lon: 35.25758
+precision: point
+coord_source: openbible:ab34789
+coord_url: https://www.openbible.info/geo/ancient/ab34789/anathoth
+summary: Ciudad levita de Benjamín, unos 5 km al NNE de Jerusalén. Era la ciudad del profeta Jeremías, donde lo amenazaron
+  de muerte.
+reason: 'Perspicacia «Anatot», núm. 3: se cree que estaba en Ras el-Kharrubeh, junto a la aldea de Anata; Jer 1:1 y 11:21.
+  OpenBible: solo el punto.'
+sources:
+- it-anatot
+- openbible-geo
+- jeremias-1
+- josue-21
+links:
+- title: 'Perspicacia: «Anatot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000269
+  type: perspicacia
+- title: Jeremías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

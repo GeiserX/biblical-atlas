@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-el-galileo
+name: Judas el galileo
+names:
+- name: Judas
+- name: Judas el galileo
+  note: Así lo llama Gamaliel en Hch 5:37.
+perspicacia: 1200002541#2
+disambiguation: El rebelde galileo que recordó Gamaliel ante el Sanedrín. No es Judas Iscariote ni ningún otro Judas del Nuevo
+  Testamento.
+date:
+  from: 6
+  to: 6
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 6 e.c.
+summary: Galileo que levantó a los judíos contra Roma en el año 6, cuando Quirinio, gobernador de Siria, hizo el censo. Murió
+  y sus partidarios se dispersaron; Gamaliel lo puso de ejemplo ante el Sanedrín.
+reason: Perspicacia «Judas», núm. 2, que da el año y el censo de Quirinio; Hch 5:37.
+sources:
+- it-judas
+- hechos-5
+relations:
+- type: lived_in
+  place: galilea
+  inferred: false
+  sources:
+  - hechos-5
+  - it-judas
+  reason: Hch 5:37 lo llama el galileo. Perspicacia añade que Josefo también lo hace, aunque en otro pasaje lo llama gaulanita.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  type: perspicacia
+- title: Hechos 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- judas-iscariote
+- tadeo
+- judas-hermano-de-jesus
+- judas-hijo-de-jose
+- judas-barsabas
+- judas-de-damasco

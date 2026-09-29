@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: carcel-de-filipos
+title: 'Presos en Filipos: el terremoto y el carcelero'
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1625
+places:
+- filipos
+people:
+- pablo
+- silas
+passages:
+- Hch 16:25-34
+summary: Hacia medianoche Pablo y Silas oran y cantan en la cárcel. Un terremoto abre las puertas y suelta las cadenas; Pablo
+  impide que el carcelero se mate, y este se bautiza con su casa esa misma noche.
+reason: Perspicacia «Pablo» (párr. 16) y «Silas, Silvano» (párr. 4); la nota de Hch 16:33 explica el bautismo inmediato del
+  carcelero y su casa. El estudio 3 (párr. 24) pone Filipos en 50.
+sources:
+- it-pablo
+- it-silas
+- nota-hechos-16
+- hch-16
+- si-3
+search: carcelero de Filipos
+history:
+- date: '2026-09-29'
+  change: El suceso se ciñe al terremoto y al carcelero (Hch 16:25-34); la expulsión del demonio, los azotes y la liberación
+    son sucesos propios.
+  source: hch-16
+- date: '2026-09-29'
+  change: El resumen cubría todo Hch 16:16-40; ahora cuenta solo la noche en la cárcel.
+  source: hch-16
+- date: '2026-09-29'
+  change: La razón citaba la nota de Hch 16:16, que pasa al suceso de la expulsión del demonio.
+  source: hch-16
+- date: '2026-09-29'
+  change: Pasa a Hch 16:25, tras la expulsión del demonio (1616) y los azotes (1619).
+  source: hch-16
+- date: '2026-09-29'
+  change: 'Era narrativa de un solo año; el estudio 3 (párr. 24) pone Filipos en 50: es anclada.'
+  source: si-3
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salmanasar-v
+name: Salmanasar V
+names:
+- name: Salmanasar V
+- name: Salmanasar
+  note: Nombre que usa la Biblia.
+disambiguation: El rey asirio de 2 Reyes 17; no es Salmanasar III, cuyo obelisco nombra a Jehú.
+summary: Sucesor de Tiglat-Piléser III. Hizo vasallo a Hosea, lo encarceló por aliarse con Egipto y sitió Samaria tres años.
+  La Biblia no le atribuye con claridad la toma final.
+reason: Perspicacia «Salmanasar», núm. 2, párr. 12-15; 2Re 17:3-6 y 18:9-10.
+sources:
+- it-salmanasar
+- 2-reyes-17
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Salmanasar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003936
+  type: perspicacia
+- title: 2 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  type: bible
+perspicacia: 1200003936#2
+checked_on: '2026-09-29'
+status: verified

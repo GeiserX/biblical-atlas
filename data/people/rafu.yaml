@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rafu
+name: Rafú
+names:
+- name: Rafú
+perspicacia: '1200003650'
+summary: Benjamita, padre de Paltí, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+reason: Perspicacia «Rafú»; Nú 13:9.
+sources:
+- it-rafu
+- numeros-13
+links:
+- title: 'Perspicacia: «Rafú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003650
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

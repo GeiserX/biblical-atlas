@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: alejandro-toma-babilonia
+title: Alejandro Magno toma Babilonia
+date:
+  from: -330
+  to: -330
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 331 a.e.c.
+places:
+- babilonia
+people: []
+passages:
+- Da 8:5-8, 21
+summary: Alejandro vence a los persas cerca de Gaugamela, y Babilonia se le rinde. Acaba así el dominio persa sobre la ciudad,
+  unos dos siglos después de Ciro.
+reason: Perspicacia «Babilonia» (núm. 2) fecha la captura en 331 a.e.c.; B9 da ese año a la conquista de Persia y «Alejandro»
+  cuenta Gaugamela.
+sources:
+- it-babilonia
+- tnm-b9
+- it-alejandro
+search: Alejandro Magno Babilonia
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rechazado-otra-vez-en-nazaret
+title: Lo rechazan otra vez en Nazaret
+date:
+  from: 31
+  to: 32
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 o 32 e.c.
+narrative_order:
+  series: a7
+  order: 47
+places:
+- nazaret
+people:
+- jesus
+passages:
+- Mt 13:54-58
+- Mr 6:1-5
+summary: Jesús vuelve a enseñar en la sinagoga de Nazaret. Sus vecinos se escandalizan porque lo conocen como el carpintero,
+  y por su falta de fe hace allí pocas obras poderosas.
+reason: A7-D, fila 6. Perspicacia «Nazaret» (párr. 8) explica por qué es una visita distinta de la de Lu 4 y que esta vez no
+  intentaron matarlo.
+sources:
+- tnm-a7-d
+- mateo-13
+- marcos-6
+- it-nazaret
+- jy-cap-48
+checked_on: '2026-09-28'
+status: verified

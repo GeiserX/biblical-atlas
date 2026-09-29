@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jabin-rey-de-hazor
+name: Jabín
+names:
+- name: Jabín
+  note: Perspicacia cree que quizá era un nombre dinástico o un título de los reyes de Hazor.
+perspicacia: 1200002272#1
+disambiguation: El rey de Hazor al que venció Josué (Perspicacia, núm. 1); no el Jabín posterior, llamado rey de Canaán, al
+  que vencieron Barac y Débora.
+distinct_from:
+- jabin-rey-de-canaan
+summary: Rey cananeo de Hazor cuando Israel conquistaba Canaán. Convocó a los reyes del norte contra Israel; tras la derrota
+  junto a las aguas de Merom, Josué tomó Hazor, lo mató y quemó la ciudad.
+reason: Perspicacia «Jabín», núm. 1; Jos 11:1-14 y 12:19.
+sources:
+- it-jabin
+- josue-11
+- josue-12
+links:
+- title: 'Perspicacia: «Jabín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002272
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+relations:
+- type: lived_in
+  place: hazor
+  inferred: false
+  sources:
+  - josue-11
+  - it-jabin
+  reason: 'Jos 11:1, 10: era rey de Hazor, la ciudad que mandaba sobre aquellos reinos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hazor
+  inferred: false
+  sources:
+  - josue-11
+  - it-jabin
+  reason: 'Jos 11:10: Josué volvió, tomó Hazor y mató a su rey a espada.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

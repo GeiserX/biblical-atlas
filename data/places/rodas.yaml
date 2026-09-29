@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rodas
+name: Rodas
+names:
+- name: Rodas
+type: island
+lat: 36.4402
+lon: 28.2109
+precision: point
+coord_source: openbible:a4218ee
+coord_url: https://www.openbible.info/geo/ancient/a4218ee/rhodes-1
+coord_note: OpenBible registra 2 identificaciones; se usa la de mayor puntuación (471/1000).
+summary: Una de las islas mayores del Egeo, cuya capital también se llama Rodas; Pablo navegó allí desde Cos en
+  56.
+reason: 'Perspicacia («Rodas») describe el lugar; aparece en Hch 21:1. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-rodas
+- hch-21
+- openbible-geo
+links:
+- title: 'Perspicacia: «Rodas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003726
+  type: perspicacia
+- title: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  type: bible
+checked_on: '2026-09-27'
+status: verified

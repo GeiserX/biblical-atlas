@@ -1,0 +1,128 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sara
+name: Sara
+names:
+- name: Sara
+- name: Sarái
+  note: Nombre anterior (Gé 17:15); Perspicacia escribe Sarai.
+date:
+  from: -1942
+  to: -1880
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1943-1881 a.e.c. (de la entrada en Canaán a su muerte)
+summary: Esposa y media hermana de Abrahán, diez años menor que él. Fue estéril hasta que Dios le permitió dar a luz a Isaac
+  a los 90 años. Murió en Hebrón a los 127.
+reason: 'Perspicacia «Sara», párr. 1, 2, 9 y 10, y «Abrahán», párr. 16; Gé 12:5 y 21:1-7. Años: el estudio 3 pone la
+  entrada en Canaán en 1943 a.e.c. y su muerte en Hebrón en 1881.'
+sources:
+- it-sara
+- it-abrahan
+- si-3
+- genesis-21
+- genesis-11
+- genesis-12
+- genesis-13
+- genesis-16
+- genesis-17
+- genesis-18
+- genesis-20
+- genesis-23
+- genesis-24
+- romanos-4
+- romanos-9
+links:
+- title: 'Perspicacia: «Sara»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003837
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+relations:
+- type: lived_in
+  place: ur
+  inferred: false
+  sources:
+  - it-sara
+  - genesis-11
+  reason: 'Perspicacia «Sara», párr. 2 y 3: vivía en Ur cuando se casó y de allí salió con Abrahán hacia Harán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hebron
+  date:
+    from: -1880
+    to: -1880
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1881 a.e.c.
+  inferred: false
+  sources:
+  - it-abrahan
+  - si-3
+  - genesis-23
+  reason: 'Perspicacia «Abrahán», párr. 16: Sara falleció en Hebrón, en 1881 a.e.c., con 127 años.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tare
+  word: father
+  inferred: false
+  sources:
+  - genesis-11
+  - genesis-20
+  - it-sara
+  reason: Gé 11:31 la llama nuera de Taré; por Gé 20:12 era además hija de Taré, aunque de otra madre.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: haran
+  inferred: false
+  sources:
+  - genesis-11
+  - genesis-12
+  - it-sara
+  reason: 'Gé 11:31: al llegar a Harán comenzaron a vivir allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-12
+  - it-sara
+  reason: 'Gé 12:10-20: estuvo con Abrán en Egipto durante el hambre, y el faraón se la llevó a su casa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: canaan
+  inferred: false
+  sources:
+  - genesis-12
+  - genesis-16
+  reason: 'Gé 12:5; 16:3: llegó a Canaán con Abrán y seguía allí diez años después.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mamre
+  inferred: false
+  sources:
+  - genesis-18
+  reason: 'Gé 18:1, 9, 10: estaba en la tienda de Abrahán, junto a los árboles de Mamré, cuando le anunciaron el hijo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: guerar
+  inferred: false
+  sources:
+  - genesis-20
+  reason: 'Gé 20:1, 2: estaba con Abrahán en Guerar cuando el rey mandó llevársela.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003837'
+checked_on: '2026-09-29'
+status: verified

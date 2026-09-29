@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atarot-de-los-arkitas
+name: Atarot
+names:
+- name: Atarot
+  note: Perspicacia «Atarot», núm. 2. Dice que quizá sea la Atarot-Addar de Jos 16:5, sin afirmarlo.
+type: city
+lat: 31.8805
+lon: 35.2285
+precision: uncertain
+coord_source: openbible:a919ab0
+coord_url: https://www.openbible.info/geo/ancient/a919ab0/ataroth-2
+coord_note: Punto de Kafr Aqab, primera identificación de OpenBible. Perspicacia no propone ningún sitio para esta Atarot.
+summary: Ciudad del límite sur de los hijos de José, entre Efraín y Benjamín, junto a las tierras del clan de los arkitas.
+  No es la Atarot de Gad, al este del mar Muerto.
+reason: 'Perspicacia «Atarot», núm. 2, y «Arkita»; Jos 16:2. OpenBible: solo el punto.'
+sources:
+- it-atarot
+- it-arkita
+- openbible-geo
+- josue-16
+links:
+- title: 'Perspicacia: «Atarot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000452
+  type: perspicacia
+- title: 'Perspicacia: «Arkita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000349
+  type: perspicacia
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

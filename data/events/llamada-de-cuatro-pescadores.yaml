@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: llamada-de-cuatro-pescadores
+title: Jesús llama a cuatro pescadores
+date:
+  from: 30
+  to: 30
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 30 e.c.
+narrative_order:
+  series: a7
+  order: 22
+places:
+- mar-de-galilea
+- capernaum
+people:
+- jesus
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- zebedeo
+passages:
+- Mt 4:18-22
+- Mr 1:16-20
+- Lu 5:1-11
+summary: A orillas del lago, cerca de Capernaúm, Jesús enseña desde la barca de Pedro y provoca una pesca enorme. Pedro, Andrés,
+  Santiago y Juan dejan las redes para acompañarlo siempre.
+reason: A7-C, fila 3. Perspicacia «Capernaum» (párr. 6) cree posible que la llamada fuera en la llanura de Genesaret, al suroeste
+  de la ciudad.
+sources:
+- tnm-a7-c
+- mateo-4
+- marcos-1
+- lucas-5
+- it-capernaum
+- jy-cap-22
+checked_on: '2026-09-28'
+status: verified

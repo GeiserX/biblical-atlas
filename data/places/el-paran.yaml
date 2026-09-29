@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: el-paran
+name: El-Parán
+names:
+- name: El-Parán
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Borde oriental del desierto de Parán
+  geometry:
+    type: zone
+    lat: 29.530676
+    lon: 34.999999
+    radius_km: 40
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-el-paran
+  - it-paran
+  - genesis-14
+  reason: Gé 14:6 la pone junto al desierto, y Perspicacia la lleva al borde este del desierto de Parán, al sur de lo conquistado.
+  note: 'Centro: punto de Elat en OpenBible. Radio nuestro.'
+  coord_source: openbible:a738bf1
+  coord_url: https://www.openbible.info/geo/ancient/a738bf1/el-paran
+- name: Elat
+  geometry:
+    type: point
+    lat: 29.530676
+    lon: 34.999999
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-el-paran
+  reason: Algunos eruditos creen que El-Parán fue el nombre antiguo de Elat.
+  coord_source: openbible:a738bf1
+  coord_url: https://www.openbible.info/geo/ancient/a738bf1/el-paran
+summary: Lugar junto al desierto, en el límite sur de las tierras que arrasaron Kedorlaomer y sus aliados. Al parecer quedaba
+  en el borde este del desierto de Parán.
+reason: Perspicacia «El-parán» y «Parán», párr. 4; Gé 14:6. Su sitio exacto no se conoce.
+sources:
+- it-el-paran
+- it-paran
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «El-parán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001338
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

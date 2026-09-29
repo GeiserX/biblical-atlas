@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: efrain-y-manases-reciben-su-herencia
+title: Efraín y Manasés reciben su herencia por sorteo
+date:
+  from: -1466
+  to: -1466
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1467 a.e.c.
+narrative_order:
+  series: josue
+  order: 16001
+places:
+- guilgal
+- territorio-de-efrain
+- manases
+- guezer
+- bet-sean
+- ibleam
+- dor
+- en-dor
+- taanac
+- meguido
+people:
+- josue-hijo-de-nun
+- eleazar-hijo-de-aaron
+passages:
+- Jos 16:1-10
+- Jos 17:1, 2
+- Jos 17:5-13
+summary: 'Por sorteo, los descendientes de José reciben el centro del país: Efraín al sur y Manasés al norte, que ya tenía
+  Galaad y Basán. Ninguno expulsa a los cananeos de Guézer ni de las ciudades del valle.'
+reason: 'Perspicacia «Guilgal», núm. 1: allí empezó el reparto, aunque este pasaje no lo nombra. «Isaac» fecha en 1467 a.e.c.
+  el fin de la campaña y el reparto entre las tribus; estudio 3.'
+sources:
+- josue-16
+- si-3
+- it-guilgal
+- it-josue
+- it-efrain
+- it-manases
+- josue-17
+- it-bet-sean
+- it-isaac
+links:
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+- title: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

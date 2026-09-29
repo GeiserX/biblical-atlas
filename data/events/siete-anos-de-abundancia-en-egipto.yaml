@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: siete-anos-de-abundancia-en-egipto
+title: José almacena grano en los siete años de abundancia
+date:
+  from: -1736
+  to: -1729
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1737 y 1730 a.e.c. (tiempo narrativo: los siete años de abundancia que siguen al nombramiento de José)'
+narrative_order:
+  series: genesis
+  order: 41046
+places:
+- egipto
+people:
+- jose-hijo-de-jacob
+passages:
+- Gé 41:46-49
+summary: José recorre Egipto y, durante siete años de grandes cosechas, guarda en cada ciudad el grano de sus campos, tanto
+  que dejan de medirlo.
+reason: Tras el nombramiento de 1737 a.e.c. (estudio 3). Jacob llega en 1728 (estudio 3), segundo año de hambre, así que la
+  abundancia acaba hacia 1730.
+sources:
+- genesis-41
+- si-3
+- it-jose
+links:
+- title: Génesis 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41
+  type: bible
+checked_on: '2026-09-29'
+status: verified

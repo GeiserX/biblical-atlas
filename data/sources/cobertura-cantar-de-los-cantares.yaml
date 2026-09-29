@@ -1,0 +1,85 @@
+# biblical-earth: fuentes de la cobertura de cantar-de-los-cantares. Esquema en docs/investigacion/README.md.
+it-cantar-de-los-cantares:
+  title: Cantar de los Cantares, El
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+si-cantar-de-los-cantares:
+  title: 'Libro bíblico número 22: El Cantar de los Cantares'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990083
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-sulamita:
+  title: Sulamita
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004094
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-sunem:
+  title: Sunem
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004097
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-litera:
+  title: Litera
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002753
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-antilibano:
+  title: Antilíbano
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000291
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-amana:
+  title: Amaná
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000218
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-senir:
+  title: Senir
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003896
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-torre:
+  title: Torre
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004459
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-hesbon:
+  title: Hesbón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002006
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-bat-rabim:
+  title: Bat-rabim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000580
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-baal-hamon:
+  title: Baal-hamón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000512
+  level: 1
+  published: null
+  checked_on: '2026-09-29'

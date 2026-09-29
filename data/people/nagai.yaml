@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nagai
+name: Nagái
+names:
+- name: Nagái
+- name: Nagai
+  note: Grafía de Perspicacia.
+perspicacia: '1200003160'
+summary: Antepasado de Jesús que solo aparece en la genealogía de Lucas, como hijo de Maat y padre de Eslí.
+reason: Perspicacia «Nagai»; Lu 3:25.
+sources:
+- it-nagai
+- lucas-3
+links:
+- title: 'Perspicacia: «Nagai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003160
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: maat
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:25, 26: Nagái, hijo de Maat.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

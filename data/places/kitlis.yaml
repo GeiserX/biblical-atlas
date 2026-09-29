@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kitlis
+name: Kitlís
+names:
+- name: Kitlís
+type: city
+lat: 31.511
+lon: 34.799139
+precision: uncertain
+coord_source: openbible:a0ff819
+coord_url: https://www.openbible.info/geo/ancient/a0ff819/chitlish
+coord_note: 'Khirbet Makhaz, quinta identificación de OpenBible: es el Khirbet el-Maghaz que nombra Perspicacia. La primera
+  es Khirbet Umm al-Baqar.'
+summary: Población de la Sefelá en la herencia de Judá, identificada con dudas con Khirbet el-Maghaz, unos 7 km al suroeste
+  de Lakís.
+reason: 'Perspicacia «Kitlís»; Jos 15:40. OpenBible: solo el punto.'
+sources:
+- it-kitlis
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Kitlís»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000963
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
