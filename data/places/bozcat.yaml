@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bozcat
+name: Bozcat
+names:
+- name: Bozcat
+- name: Bozqat
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.536874
+lon: 34.913176
+precision: uncertain
+coord_source: openbible:a58252b
+coord_url: https://www.openbible.info/geo/ancient/a58252b/bozkath
+coord_note: Ed-Dawaʼimeh, única identificación de OpenBible; Perspicacia la da como una propuesta.
+summary: Ciudad de Judá nombrada entre Eglón y Lakís, quizá en la Sefelá. De allí era Adaya, abuelo materno del rey Josías.
+  Algunos la ponen en Dawaʼimeh, unos 19 km al oeste de Hebrón.
+reason: 'Perspicacia «Bozqat»; Jos 15:39; 2Re 22:1. OpenBible: solo el punto.'
+sources:
+- it-bozqat
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Bozqat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000807
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

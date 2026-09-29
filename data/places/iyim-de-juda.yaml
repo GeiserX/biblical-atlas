@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: iyim-de-juda
+name: Iyim
+names:
+- name: Iyim
+type: city
+lat: 31.36475
+lon: 34.92061
+precision: uncertain
+coord_source: openbible:ad161d1
+coord_url: https://www.openbible.info/geo/ancient/ad161d1/iim
+coord_note: Deir al-Ghawi, primera identificación de OpenBible; Perspicacia no la sitúa.
+summary: Ciudad del sur de Judá cuyo nombre significa «montones de ruinas». No se sabe dónde estaba. No es la Iyim de Nú 33:45.
+reason: 'Perspicacia «Iyim», núm. 2; Jos 15:29. OpenBible: solo el punto.'
+sources:
+- it-iyim
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Iyim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002250
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

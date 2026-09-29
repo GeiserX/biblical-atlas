@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabdi-abuelo-de-acan
+name: Zabdí
+names:
+- name: Zabdí
+perspicacia: 1200004646#1
+disambiguation: Zabdí de Judá, abuelo de Acán; no el cabeza benjamita de Jerusalén, el encargado del vino de David ni el levita
+  antepasado de Matanías.
+summary: Judaíta de la familia de los zerahítas y abuelo de Acán. Cuando Josué buscó por suertes al culpable del robo, la
+  suerte cayó en su casa.
+reason: Perspicacia «Zabdí», núm. 1; Jos 7:1, 17, 18. Perspicacia no da el nombre de su padre.
+sources:
+- it-zabdi
+- josue-7
+links:
+- title: 'Perspicacia: «Zabdí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004646
+  type: perspicacia
+- title: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  type: bible
+relations:
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - josue-7
+  - it-zabdi
+  - it-zerah
+  reason: Jos 7:1, 18 lo llama hijo de Zérah. Perspicacia «Zérah», núm. 3, dice que Acán salió con el tiempo de esa familia
+    de Judá, así que lo leemos como descendiente, no como hijo.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

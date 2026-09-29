@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: senaquerib
+name: Senaquerib
+names:
+- name: Senaquerib
+summary: 'Rey de Asiria, hijo de Sargón II. En 732 tomó ciudades de Judá y sitió Lakís, pero no Jerusalén: un ángel mató a
+  185.000 de sus soldados. Sus hijos lo asesinaron en Nínive.'
+reason: Perspicacia «Senaquerib», párr. 2-4, y «Ezequías», párr. 11 y 14-16; 2Re 18:13-19:37.
+sources:
+- it-senaquerib
+- 2-reyes-18
+- 2-reyes-19
+- si-3
+links:
+- title: 'Perspicacia: «Senaquerib»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003897
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+relations:
+- type: died_in
+  place: ninive
+  inferred: false
+  sources:
+  - it-senaquerib
+  - 2-reyes-19
+  reason: Lo mataron sus hijos en la casa de su dios Nisroc, en Nínive (2Re 19:36-37).
+  checked_on: '2026-09-28'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

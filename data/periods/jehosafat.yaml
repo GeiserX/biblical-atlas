@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehosafat
+name: Reinado de Jehosafat en Judá
+type: king
+person: jehosafat
+date:
+  from: -936
+  to: -912
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 937-913 a.e.c.
+places:
+- jerusalen
+summary: Veinticinco años en Jerusalén, con paz y prosperidad relativas.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 22.
+sources:
+- tnm-a6-a
+- 1-reyes-22
+- it-jehosafat
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Jehosafat» y el estudio 3 daban 936 a.e.c.; la tabla A6-A, más reciente, da 937.
+  source: tnm-a6-a
+search: Jehosafat rey
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,76 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibzan
+name: Ibzán
+names:
+- name: Ibzán
+perspicacia: '1200002129'
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: juez después de Jefté)'
+summary: Juez de Israel después de Jefté, durante siete años. Tuvo 30 hijos y 30 hijas; casó a ellas con hombres de otros
+  clanes y buscó 30 esposas para ellos. Lo enterraron en Belén.
+reason: 'Perspicacia «Ibzán»: por tantos hijos, al parecer tenía varias esposas y buena posición; Jue 12:8-10. Fecha: tras
+  Jefté (c. 1173, «Jefté»), pues el libro va casi en orden («Jueces, Libro de»), y antes de Saúl (1117, estudio 3).'
+sources:
+- it-ibzan
+- it-belen
+- it-jefte
+- it-jueces
+- si-3
+- jueces-12
+links:
+- title: 'Perspicacia: «Ibzán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002129
+  type: perspicacia
+- title: Jueces 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  type: bible
+relations:
+- type: succeeds
+  person: jefte
+  inferred: false
+  sources:
+  - jueces-12
+  - it-ibzan
+  reason: 'Jue 12:8: juzgó a Israel después de Jefté.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen-de-zabulon
+  inferred: true
+  sources:
+  - jueces-12
+  - it-ibzan
+  - it-belen
+  reason: 'Jue 12:8 lo llama Ibzán de Belén. Perspicacia «Ibzán» y «Belén», núm. 2: probablemente la de Zabulón, porque el
+    relato no nombra Judá ni Efrata.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: belen-de-zabulon
+  inferred: true
+  sources:
+  - jueces-12
+  - it-ibzan
+  - it-belen
+  reason: 'Jue 12:10: murió y lo enterraron en Belén, probablemente la de Zabulón según Perspicacia «Ibzán».'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: belen-de-zabulon
+  inferred: true
+  sources:
+  - jueces-12
+  - it-ibzan
+  - it-belen
+  reason: 'Perspicacia «Ibzán»: Belén, donde lo enterraron, era su ciudad natal; probablemente la de Zabulón, según «Belén»,
+    núm. 2.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

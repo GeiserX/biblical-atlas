@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serah
+name: Sérah
+names:
+- name: Sérah
+perspicacia: '1200003903'
+summary: Hija de Aser, una de las pocas mujeres de la lista de la casa de Jacob que entró en Egipto.
+reason: Perspicacia «Sérah»; Gé 46:17.
+sources:
+- it-serah
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Sérah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003903
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: aser-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-serah
+  - numeros-26
+  reason: Gé 46:17 la da como hermana de los hijos de Aser; Perspicacia «Sérah» la llama hija de Aser.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

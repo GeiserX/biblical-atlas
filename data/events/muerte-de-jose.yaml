@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-jose
+title: Muere José en Egipto
+date:
+  from: -1656
+  to: -1656
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1657 a.e.c.
+places:
+- egipto
+people:
+- jose-hijo-de-jacob
+type: death
+roles:
+  jose-hijo-de-jacob: died
+passages:
+- Gé 50:22-26
+- Éx 1:6
+- Hch 7:15
+summary: José muere en Egipto a los 110 años y lo embalsaman. Aquí termina el relato de Génesis.
+reason: El cuadro del estudio 3 fecha su muerte en 1657 a.e.c., y la Tabla de los libros cierra Génesis en ese mismo año.
+sources:
+- si-3
+- tnm-tabla
+- genesis-50
+search: muerte de José
+checked_on: '2026-09-29'
+status: verified

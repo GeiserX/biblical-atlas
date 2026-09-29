@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: queriyot-hezron
+name: Queriyot-Hezrón
+names:
+- name: Queriyot-Hezrón
+  note: Significa «ciudades de Hezrón» (Perspicacia).
+- name: Hazor
+  note: Jos 15:25 dice que es la misma ciudad; Perspicacia la trata como Hazor, núm. 3.
+type: city
+lat: 31.344952
+lon: 35.124376
+precision: uncertain
+coord_source: openbible:af66926
+coord_url: https://www.openbible.info/geo/ancient/af66926/kerioth-hezron
+coord_note: Khirbet el-Qaryatein (Tel Qeriyyot), primera identificación de OpenBible, que Perspicacia da como tentativa.
+summary: Ciudad del sur de Judá, llamada también Hazor. Se la identifica, sin seguridad, con Khirbet el-Qaryatein, unos 20
+  km al sur de Hebrón.
+reason: 'Perspicacia «Queriyot-hezrón» y «Hazor», núm. 3; Jos 15:25. OpenBible: solo el punto.'
+sources:
+- it-queriyot-hezron
+- it-hazor
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Queriyot-hezrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002595
+  type: perspicacia
+- title: 'Perspicacia: «Hazor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001937
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dimona
+name: Dimoná
+names:
+- name: Dimoná
+type: city
+lat: 31.29606
+lon: 35.1562
+precision: uncertain
+coord_source: openbible:ac17675
+coord_url: https://www.openbible.info/geo/ancient/ac17675/dimonah
+coord_note: Khirbet edh-Dheiba, segunda identificación de OpenBible. La primera la iguala con Dibón 2, pero su punto cae en
+  Dhibán de Moab, al este del mar Muerto, lejos del Négueb.
+summary: Ciudad del sur de Judá, cerca de la frontera de Edom. Hay quien la iguala con la Dibón de Ne 11:25; no se sabe dónde
+  estaba.
+reason: 'Perspicacia «Dimoná»; Jos 15:22; Ne 11:25. OpenBible: solo el punto.'
+sources:
+- it-dimona
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Dimoná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001181
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ebez
+name: Ébez
+names:
+- name: Ébez
+type: city
+lat: 32.658056
+lon: 35.505833
+precision: uncertain
+coord_source: openbible:acd9b19
+coord_url: https://www.openbible.info/geo/ancient/acd9b19/ebez
+coord_note: Punto de OpenBible en ʽAin el-Habus. Perspicacia no sabe dónde estaba.
+summary: Ciudad del territorio de Isacar. No se sabe dónde estaba.
+reason: 'Perspicacia «Ébez»; Jos 19:20. OpenBible: solo el punto.'
+sources:
+- it-ebez
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Ébez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001250
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

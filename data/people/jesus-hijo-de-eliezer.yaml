@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesus-hijo-de-eliezer
+name: Jesús
+names:
+- name: Jesús
+- name: José
+  note: Así leen algunos manuscritos antiguos, según la nota de Lu 3:29 y Perspicacia.
+perspicacia: 1200002450#2
+disambiguation: Jesús hijo de Eliezer (Lu 3:29), antepasado de Jesucristo; no es Jesucristo.
+distinct_from:
+- jesus
+- jesus-justo
+summary: Antepasado de Jesucristo, al parecer por la línea de María. La nota de estudio recuerda que el nombre equivale a
+  Josué.
+reason: Perspicacia «Jesús», núm. 2; Lu 3:29.
+sources:
+- it-jesus
+- lucas-3
+links:
+- title: 'Perspicacia: «Jesús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002450
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: eliezer-hijo-de-jorim
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:29: Jesús, hijo de Eliezer.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: core-hijo-de-esau
+name: Coré
+names:
+- name: Coré
+perspicacia: 1200002648#1
+disambiguation: Coré hijo de Esaú; no el levita Coré que se rebeló contra Moisés.
+summary: Hijo de Esaú y de Oholibamá, nacido en Canaán antes de que la familia se fuera a Seír. Fue jeque de Edom. El jeque
+  Coré de la lista de Elifaz quizá sea un error de copista.
+reason: Perspicacia «Coré», núm. 1; Gé 36:5, 14, 16, 18.
+sources:
+- it-core
+- it-jeque
+- genesis-36
+links:
+- title: 'Perspicacia: «Coré»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002648
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: esau
+  word: father
+  inferred: false
+  sources:
+  - it-core
+  - genesis-36
+  reason: 'Gé 36:5, 14: hijo de Esaú.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: oholibama-hija-de-ana
+  word: mother
+  inferred: false
+  sources:
+  - it-core
+  - genesis-36
+  reason: 'Gé 36:5, 14: hijo de Oholibamá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: canaan
+  inferred: false
+  sources:
+  - it-core
+  - genesis-36
+  reason: 'Gé 36:5: nació en la tierra de Canaán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - it-core
+  - genesis-36
+  reason: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
+  checked_on: '2026-09-29'
+  status: verified
+distinct_from:
+- core-hijo-de-izhar
+checked_on: '2026-09-29'
+status: verified

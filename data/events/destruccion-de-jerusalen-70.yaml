@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: destruccion-de-jerusalen-70
+title: Los romanos destruyen Jerusalén
+date:
+  from: 70
+  to: 70
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: abril-agosto de 70 e.c.
+places:
+- jerusalen
+people: []
+passages:
+- Da 9:27
+- Mt 23:37, 38
+- Lu 19:42-44
+- Lu 21:20-24
+- Mt 24:1, 2
+- Mt 24:15-22
+- Mr 13:1, 2
+- Mr 13:14-20
+- Lu 21:5, 6
+summary: Las tropas de Tito sitian la ciudad llena por la Pascua y en unos cinco meses la arrasan con su templo. Se cumple
+  lo que Jesús predijo.
+reason: Perspicacia «Jerusalén» fecha el asedio del 3 de abril al 30 de agosto de 70 e.c.; el cuadro del estudio 3 da el
+  año y los textos.
+sources:
+- it-jerusalen
+- si-3
+- lucas-19
+- mateo-24
+- marcos-13
+- lucas-21
+links:
+- title: 'Perspicacia: «Jerusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
+  type: perspicacia
+search: destrucción de Jerusalén 70
+checked_on: '2026-09-29'
+status: verified

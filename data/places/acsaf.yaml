@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: acsaf
+name: Acsaf
+names:
+- name: Acsaf
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Tell Keisan (Tel Kison), unos 10 km al SE de Aco
+  geometry:
+    type: point
+    lat: 32.872761
+    lon: 35.15133
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-acsaf
+  - openbible-geo
+  reason: Perspicacia dice que algunos eruditos la sitúan aquí. Punto de OpenBible.
+  coord_source: openbible:a8ce5c4
+  coord_url: https://www.openbible.info/geo/ancient/a8ce5c4/achshaph
+  note: Punto de la segunda identificación de la ficha «Achshaph» de OpenBible.
+- name: Khirbet el-Harbaj (Tel Regev), unos 11 km al SE de Haifa
+  geometry:
+    type: point
+    lat: 32.75885
+    lon: 35.09027
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-acsaf
+  - openbible-geo
+  reason: Otros eruditos, según Perspicacia, prefieren este sitio. Punto de OpenBible.
+  coord_source: openbible:a8ce5c4
+  coord_url: https://www.openbible.info/geo/ancient/a8ce5c4/achshaph
+  note: Primer punto de la ficha «Achshaph» de OpenBible.
+summary: Ciudad real cananea. Su rey respondió a Jabín, acampó con los demás junto a las aguas de Merom y murió en la derrota.
+  Más tarde fue de la tribu de Aser.
+reason: Perspicacia «Acsaf»; Jos 11:1, 5; 12:20. Duda entre dos sitios, así que damos los dos como candidatos.
+sources:
+- it-acsaf
+- openbible-geo
+- josue-11
+- josue-12
+- josue-19
+links:
+- title: 'Perspicacia: «Acsaf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000081
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

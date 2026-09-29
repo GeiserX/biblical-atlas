@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quenat
+name: Quenat
+names:
+- name: Quenat
+- name: Nóbah
+  note: Nombre que le puso Nóbah al tomarla (Nú 32:42); no duró, porque después se la vuelve a llamar Quenat.
+- name: Canata
+  note: Nombre posterior, cuando era una de las ciudades de la Decápolis (Perspicacia «Quenat»).
+type: city
+lat: 32.75616
+lon: 36.61899
+precision: point
+coord_source: openbible:a4f650b
+coord_url: https://www.openbible.info/geo/ancient/a4f650b/kenath
+summary: Ciudad al este del Jordán, en el norte, que Nóbah tomó con sus pueblos y llamó con su nombre. Luego recuperó el suyo
+  y más tarde, como Canata, fue de la Decápolis.
+reason: 'Perspicacia «Quenat» y «Nóbah», núm. 2: las ruinas de Qanawat, unos 90 km al sur-sureste de Damasco; Nú 32:42. OpenBible:
+  solo el punto.'
+sources:
+- it-quenat
+- it-nobah
+- openbible-geo
+- numeros-32
+links:
+- title: 'Perspicacia: «Quenat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002589
+  type: perspicacia
+- title: 'Perspicacia: «Nóbah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003268
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

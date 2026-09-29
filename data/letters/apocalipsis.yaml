@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: apocalipsis
+book: Apocalipsis
+writer: juan-apostol
+reference: Ap 1:1, 4, 9, 11
+written_in:
+- patmos
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+recipients:
+  text: Las siete congregaciones de la provincia de Asia (Ap 1:11).
+  places:
+  - efeso
+  - esmirna
+  - pergamo
+  - tiatira
+  - sardis
+  - filadelfia
+  - laodicea
+context_origin:
+  summary: Juan, exiliado en Patmos por dar testimonio de Jesús, escribe las visiones hacia 96, en forma de carta.
+  sources:
+  - it-revelacion-a-juan
+  - it-juan
+context_destination:
+  summary: Jesús envía un mensaje propio a cada una de las siete congregaciones, con elogios y correcciones, antes
+    de las visiones.
+  sources:
+  - it-revelacion-a-juan
+reason: La Tabla y el estudio 3 dan Patmos y c. 96; Perspicacia «Revelación a Juan, Una» (párr. 2, 3 y 10).
+sources:
+- tnm-tabla
+- si-3
+- it-revelacion-a-juan
+- apocalipsis-1
+links:
+- title: 'Perspicacia: «Revelación a Juan, Una»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003717
+  type: perspicacia
+- title: Apocalipsis 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

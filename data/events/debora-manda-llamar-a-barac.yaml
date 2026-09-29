@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: debora-manda-llamar-a-barac
+title: Débora manda llamar a Barac
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+narrative_order:
+  series: jueces
+  order: 4004
+places:
+- region-montanosa-de-efrain
+- quedes-de-neftali
+people:
+- debora-profetisa
+- barac
+present:
+- debora-profetisa
+- barac
+passages:
+- Jue 4:4-9
+summary: 'Débora, profetisa y jueza, hace venir a Barac y le da la orden de Jehová: ir al Tabor con 10.000 hombres. Él solo
+  irá si ella va; Débora acepta, pero anuncia que Sísara caerá en manos de una mujer.'
+reason: 'Perspicacia «Débora», núm. 2, y «Barac»: juzgaba bajo su palmera, entre Ramá y Betel. Límites: muerte de Josué, c.
+  1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-4
+- it-debora
+- it-barac
+- si-3
+- it-jefte
+links:
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

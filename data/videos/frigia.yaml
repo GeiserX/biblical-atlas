@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: frigia
-generado: "2026-09-28"
+place: frigia
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb_201709_9_VIDEO"
-    titulo: "James Mantz: “Toda cosa a gente de toda clase” (1 Cor. 9:22)"
+    title: "James Mantz: “Toda cosa a gente de toda clase” (1 Cor. 9:22)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201709_9_VIDEO&appLanguage=S"
-    publicado: "2017-09-11"
-    menciones: 2
-    terminos:
+    published: "2017-09-11"
+    hits: 2
+    terms:
       "Frigia": 2

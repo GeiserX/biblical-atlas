@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-despide-a-las-tribus-del-este
+title: Josué despide a las tribus del este del Jordán
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 22001
+places:
+- silo
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 22:1-8
+summary: Acabado el reparto, Josué elogia a rubenitas, gaditas y media tribu de Manasés por no dejar solos a sus hermanos,
+  los bendice y los manda a casa con su parte del botín, pidiéndoles fidelidad a Jehová.
+reason: 'Jos 22:1-8; Perspicacia «Manasés», apartado «Historia». El texto no dice dónde, pero salen de Siló (Jos 22:9). Fecha:
+  tras la conquista general (1467 a.e.c.) y antes de morir Josué, hacia 1450 (estudio 3).'
+sources:
+- josue-22
+- it-manases
+- si-3
+links:
+- title: Josué 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

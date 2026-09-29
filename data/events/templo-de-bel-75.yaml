@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: templo-de-bel-75
+title: El templo de Bel sigue en pie
+date:
+  from: 75
+  to: 75
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 75 e.c.
+places:
+- babilonia
+people: []
+passages: []
+summary: Inscripciones halladas en Babilonia muestran que el templo del dios Bel seguía en pie en el año 75.
+reason: Perspicacia «Babilonia» (núm. 1, apartado «Historia») cita esas inscripciones para el año 75 e.c.
+sources:
+- it-babilonia
+search: templo de Bel Babilonia
+checked_on: '2026-09-28'
+status: verified

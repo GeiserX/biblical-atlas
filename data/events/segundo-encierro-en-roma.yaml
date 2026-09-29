@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segundo-encierro-en-roma
+title: Segundo encierro de Pablo en Roma
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+places:
+- roma
+people:
+- pablo
+- lucas
+- onesiforo
+passages:
+- 2Ti 1:15-17
+- 2Ti 4:6-18
+summary: Tras el incendio de Roma de 64 y la persecución de Nerón, Pablo está de nuevo en cadenas. Muchos lo han
+  dejado; solo Lucas está con él y siente cercana su muerte.
+reason: Perspicacia «Timoteo, Cartas a» (marco de Segunda) y el estudio 3 (párr. 28) fechan el encierro hacia 65.
+sources:
+- it-timoteo-cartas
+- si-3
+- 2-timoteo-4
+search: Pablo prisión Roma Nerón
+checked_on: '2026-09-28'
+status: verified

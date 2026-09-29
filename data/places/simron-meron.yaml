@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: simron-meron
+name: Simrón-Merón
+names:
+- name: Simrón-Merón
+type: city
+lat: 32.703889
+lon: 35.213333
+precision: uncertain
+coord_source: openbible:ae20466
+coord_url: https://www.openbible.info/geo/ancient/ae20466/shimron-meron
+coord_note: OpenBible la da como otro nombre de Simrón y usa su punto; Perspicacia solo lo ve posible.
+summary: Ciudad de uno de los reyes que venció Josué. Quizá sea el nombre completo de Simrón, o indique que el rey de Simrón
+  cayó en Merom.
+reason: Perspicacia «Simrón-merón»; Jos 12:20. Algunos manuscritos la separan en Simrón y Merón. No la fundimos con Simrón
+  porque jw.org no lo asegura.
+sources:
+- it-simron-meron
+- openbible-geo
+- josue-12
+links:
+- title: 'Perspicacia: «Simrón-merón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004056
+  type: perspicacia
+- title: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

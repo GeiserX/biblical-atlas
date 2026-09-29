@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: acab
+name: Reinado de Acab en Israel
+type: king
+person: acab
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 940-920 a.e.c.
+places:
+- samaria
+- jezreel
+summary: Veintidós años en Samaria, con residencia también en Jezreel.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 16.
+sources:
+- tnm-a6-a
+- 1-reyes-16
+- it-acab
+search: Acab rey
+checked_on: '2026-09-28'
+status: verified

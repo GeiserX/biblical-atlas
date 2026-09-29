@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beer-de-jotan
+name: Beer
+names:
+- name: Beer
+  note: Significa pozo. Es otro lugar que el Beer del desierto, al norte del Arnón.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: El-Bira, al norte de Bet-san
+  geometry:
+    type: point
+    lat: 32.60823
+    lon: 35.50415
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-beer
+  - openbible-geo
+  reason: Perspicacia recoge que algunos lo ponen aquí, unos 12 km al norte de Bet-san y al sureste del Tabor.
+  coord_source: openbible:a520374
+  coord_url: https://www.openbible.info/geo/ancient/a520374/beer-2
+  note: Primera resolución de la primera identificación de la ficha «Beer 2» de OpenBible (El Bira).
+- name: Beerot
+  geometry:
+    type: point
+    lat: 31.82383
+    lon: 35.1872
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-beer
+  - it-beerot
+  - openbible-geo
+  reason: Otros, según Perspicacia, lo igualan con Beerot, cuya ubicación tampoco es segura.
+  coord_source: openbible:a520374
+  coord_url: https://www.openbible.info/geo/ancient/a520374/beer-2
+  note: Primera resolución de la segunda identificación de «Beer 2» en OpenBible, que lo da por otro nombre de Beeroth (Khirbet
+    el-Burj).
+summary: Lugar donde se instaló Jotán, hijo de Gedeón, huyendo de su hermano Abimélec. No se sabe qué dirección tomó desde
+  el Guerizim, así que su sitio es incierto.
+reason: 'Perspicacia «Beer», núm. 2; Jue 9:21. OpenBible: solo los puntos de los candidatos.'
+sources:
+- it-beer
+- openbible-geo
+- jueces-9
+links:
+- title: 'Perspicacia: «Beer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000605
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

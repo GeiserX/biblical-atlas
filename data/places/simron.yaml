@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: simron
+name: Simrón
+names:
+- name: Simrón
+type: city
+lat: 32.703889
+lon: 35.213333
+precision: point
+coord_source: openbible:a072bae
+coord_url: https://www.openbible.info/geo/ancient/a072bae/shimron
+summary: Ciudad cuyo rey se sumó a la alianza del norte de Canaán y cayó ante Josué junto a las aguas de Merom. Después quedó
+  dentro de la herencia de Zabulón.
+reason: 'Perspicacia «Simrón», núm. 2: Khirbet Sammuniyeh (Tel Shimron), unos 8 km al oeste de Nazaret; Jos 11:1, 5, 8. OpenBible:
+  solo el punto.'
+sources:
+- it-simron
+- openbible-geo
+- josue-11
+- josue-19
+links:
+- title: 'Perspicacia: «Simrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004054
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+coord_note: Punto de OpenBible en Khirbet Sammuniyeh (Tel Shimron).

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-pedro
+title: Se aparece a Pedro
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 16
+places: []
+people:
+- jesus
+- pedro
+passages:
+- Lu 24:34
+- 1Co 15:5
+summary: Ese mismo día Jesús se aparece a Pedro. Los dos que vuelven de Emaús oyen decir a los apóstoles que el
+  Señor se ha aparecido a Simón. El texto no dice dónde.
+reason: A7-H cuenta cinco apariciones ese día; Lu 24:34 y 1Co 15:5 mencionan esta sin dar el lugar. El año 33 lo da la cabecera
+  de A7-G (8 de nisán del 33).
+sources:
+- tnm-a7-h
+- lucas-24
+- 1-corintios-15
+- jy-cap-135
+- tnm-a7-g
+search: Se aparece a Pedro
+narrative_order:
+  series: a7
+  order: 127
+checked_on: '2026-09-29'
+status: verified

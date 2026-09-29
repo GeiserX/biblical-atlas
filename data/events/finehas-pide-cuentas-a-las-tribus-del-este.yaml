@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: finehas-pide-cuentas-a-las-tribus-del-este
+title: Finehás pide cuentas a las tribus del este por el altar
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: acabado el reparto desde Siló y en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 22013
+places:
+- galaad
+people:
+- finehas-hijo-de-eleazar
+passages:
+- Jos 22:13-31
+summary: Finehás y diez jefes, uno por tribu, van a Galaad y acusan de rebeldía a los del este, recordando Peor y a Acán.
+  Ellos juran que el altar solo atestigua su culto a Jehová, y Finehás queda satisfecho.
+reason: 'Jos 22:13-31; Perspicacia «Finehás», núm. 1: encabezó la investigación; «Galaad», núm. 4: aquí Galaad es todo el territorio
+  israelita al este del Jordán. Fecha: tras la conquista general (1467 a.e.c.) y antes de morir Josué, hacia 1450 (estudio
+  3).'
+sources:
+- josue-22
+- it-finehas
+- it-galaad
+- si-3
+links:
+- title: Josué 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,100 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tiquico
+name: Tíquico
+names:
+- name: Tíquico
+date:
+  from: 56
+  to: 65
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56-65 e.c.
+summary: Ayudante de Pablo, del distrito de Asia. Volvió con él de Grecia, llevó sus cartas a Éfeso y Colosas con
+  Onésimo y más tarde fue enviado a Éfeso.
+reason: Perspicacia «Tíquico», que sigue Hechos 20, las cartas a Éfeso y Colosas y 2 Timoteo 4. Fechas del estudio 3 (párr.
+  26) y de la Tabla de los libros.
+sources:
+- it-tiquico
+- hch-20
+- colosenses-4
+- si-3
+- tnm-tabla
+- efesios-6
+links:
+- title: 'Perspicacia: «Tíquico»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004496
+  type: perspicacia
+- title: Colosenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
+  type: bible
+perspicacia: '1200004496'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: asia
+  inferred: false
+  sources:
+  - it-tiquico
+  - hch-20
+  reason: Hch 20:4 lo cuenta entre los del distrito de Asia.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56 e.c.
+  inferred: false
+  sources:
+  - it-tiquico
+  - hch-20
+  - si-3
+  reason: Vuelve con Pablo de Grecia por Macedonia hasta Asia (Hch 20:2-4). Es el viaje de la primavera de 56 (estudio 3, párr.
+    26).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  inferred: false
+  sources:
+  - it-tiquico
+  - colosenses-4
+  - tnm-tabla
+  reason: Está con Pablo en Roma y sale con sus cartas a Éfeso y Colosas (Ef 6:21; Col 4:7). La Tabla de los libros fecha las
+    dos cartas hacia 60-61.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: false
+  sources:
+  - it-tiquico
+  - 2-timoteo-4
+  - tnm-tabla
+  reason: En el segundo encierro, Pablo lo manda a Éfeso (2Ti 4:12). La Tabla de los libros fecha 2 Timoteo hacia 65.
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tesalonica
+name: Tesalónica
+names:
+- name: Tesalónica
+- name: Salónica (Thessaloníki)
+  note: Nombre actual de la ciudad.
+type: city
+lat: 40.63777
+lon: 22.94577
+precision: point
+coord_source: openbible:afa9d8e
+coord_url: https://www.openbible.info/geo/ancient/afa9d8e/thessalonica
+summary: Puerto principal de Macedonia; Pablo fundó la congregación c. 50 y tuvo que salir de noche por una turba.
+reason: 'Perspicacia («Tesalónica») describe el lugar; aparece en Hch 17:1-9. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+sources:
+- it-tesalonica
+- hch-17
+- openbible-geo
+- filipenses-4
+links:
+- title: 'Perspicacia: «Tesalónica»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004379
+  type: perspicacia
+- title: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

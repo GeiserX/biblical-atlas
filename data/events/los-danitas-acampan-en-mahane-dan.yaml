@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-danitas-acampan-en-mahane-dan
+title: Los danitas acampan en Mahané-Dan
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 19045
+places:
+- mahane-dan
+- quiryat-jearim
+- zora
+- estaol
+- juda
+people: []
+passages:
+- Jue 18:11, 12
+summary: Seiscientos danitas armados salen de Zorá y Estaol y acampan en Judá, al oeste de Quiryat-Jearim. Por eso aquel sitio
+  se llamó Mahané-Dan, que significa «campamento de Dan».
+reason: Jue 18 lo pone poco antes de tomar Lais, que Perspicacia «Jueces, Libro de», «Orden del libro», sitúa antes de morir
+  Josué, c. 1450; la conquista general acabó en 1467 (estudio 3). Va en la serie josue, antes de los-danitas-toman-lesem.
+sources:
+- jueces-18
+- it-mahane-dan
+- it-dan
+- si-3
+- it-jueces
+links:
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

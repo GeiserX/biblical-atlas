@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pua-hijo-de-dodo
+name: Pua
+names:
+- name: Pua
+- name: Puá
+  note: Grafía de Perspicacia.
+perspicacia: 1200003574#3
+disambiguation: Pua de Isacar, padre del juez Tolá; no Puvá hijo de Isacar ni la partera hebrea de tiempos de Moisés, que
+  la TNM también llama Pua.
+distinct_from:
+- puva
+- pua-partera
+summary: Hombre de la tribu de Isacar, hijo de Dodó y padre del juez Tolá.
+reason: Perspicacia «Puá», núm. 3; Jue 10:1.
+sources:
+- it-pua
+- jueces-10
+links:
+- title: 'Perspicacia: «Puá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003574
+  type: perspicacia
+- title: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  type: bible
+relations:
+- type: kin
+  person: dodo-de-isacar
+  word: father
+  inferred: false
+  sources:
+  - jueces-10
+  - it-pua
+  reason: Jue 10:1; Perspicacia «Puá», núm. 3, lo da como hijo de Dodó.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

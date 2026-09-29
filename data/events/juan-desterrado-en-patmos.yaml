@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-desterrado-en-patmos
+title: Juan, desterrado en Patmos, recibe Apocalipsis
+date:
+  from: 96
+  to: 96
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 96 e.c.
+places:
+- patmos
+people:
+- juan-apostol
+passages:
+- Ap 1:1, 2, 9-11
+summary: Ya anciano, Juan está exiliado en la isla de Patmos por dar testimonio de Jesús. Allí recibe las visiones
+  de Apocalipsis y el encargo de escribir a siete congregaciones de Asia.
+reason: El estudio 3 (párr. 29) y la Tabla de los libros dan c. 96; Perspicacia «Juan» (párr. 31) y «Patmos» (párr.
+  2).
+sources:
+- si-3
+- tnm-tabla
+- it-juan
+- it-patmos
+- apocalipsis-1
+search: Juan en Patmos
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dana
+name: Daná
+names:
+- name: Daná
+type: city
+lat: 31.3698
+lon: 34.995
+precision: uncertain
+coord_source: openbible:a65c305
+coord_url: https://www.openbible.info/geo/ancient/a65c305/dannah
+coord_note: Khirbet Zanuta, primera identificación de OpenBible; Perspicacia no la sitúa.
+summary: Ciudad de la montaña de Judá. Hoy no se sabe dónde estaba exactamente.
+reason: 'Perspicacia «Daná»; Jos 15:49. OpenBible: solo el punto.'
+sources:
+- it-dana
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Daná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001121
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

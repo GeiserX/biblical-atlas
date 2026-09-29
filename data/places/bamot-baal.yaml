@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bamot-baal
+name: Bamot-Baal
+names:
+- name: Bamot-Baal
+- name: Bamot
+  note: Etapa del viaje de Israel. Perspicacia la cree, probablemente, una forma breve de Bamot-Baal.
+- name: Bet-Bamot
+  note: Nombre de la Piedra Moabita. Perspicacia ve probable que sea el mismo lugar.
+type: city
+lat: 31.731791
+lon: 35.740891
+precision: uncertain
+coord_source: openbible:a577c27
+coord_url: https://www.openbible.info/geo/ancient/a577c27/bamoth-baal
+coord_note: Punto de OpenBible, el mismo que da a Bamot. Perspicacia cita, como identificación solo tentativa, Khirbet Quweijiya,
+  cerca del monte Nebo.
+summary: Pueblo moabita en un alto de la meseta, al noreste del mar Muerto. Israel acampó en Bamot antes de llegar a Pisgá;
+  luego Balac llevó allí a Balaam para maldecir a Israel, pero lo bendijo.
+reason: 'Perspicacia «Bamot-baal» y «Bamot»; Nú 21:19, 20; 22:41; 23:1-10. OpenBible: solo el punto.'
+sources:
+- it-bamot-baal
+- it-bamot
+- openbible-geo
+- numeros-21
+- numeros-22
+- numeros-23
+- josue-13
+links:
+- title: 'Perspicacia: «Bamot-baal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000550
+  type: perspicacia
+- title: 'Perspicacia: «Bamot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000549
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+- title: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  type: bible
+- title: Números 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

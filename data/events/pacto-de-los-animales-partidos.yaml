@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-de-los-animales-partidos
+title: Jehová pacta con Abrán entre los animales partidos
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+narrative_order:
+  series: genesis
+  order: 15001
+places: []
+people:
+- abrahan
+passages:
+- Gé 15:1-21
+- Hch 7:6, 7
+- Ro 4:3, 9, 10, 18, 22
+- Gál 3:6
+summary: Abrán, sin hijos, teme que lo herede Eliezer. Jehová le promete un hijo y una descendencia como las estrellas, y
+  Abrán le cree. Entre animales partidos, pacta darle la tierra del río de Egipto al Éufrates.
+reason: Después del rescate de Lot y antes de los diez años de Abrán en Canaán, que el estudio 3 pone en 1933 a.e.c.; llegó
+  en 1943. El texto no nombra el lugar. Perspicacia «Abrahán», párr. 12.
+sources:
+- si-3
+- it-abrahan
+- it-pacto
+- genesis-15
+links:
+- title: Génesis 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

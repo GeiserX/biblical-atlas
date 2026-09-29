@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: colina-de-finehas
+name: Colina de Finehás
+names:
+- name: Colina de Finehás
+  note: Perspicacia «Finehás», núm. 1, la escribe como nombre propio; la TNM dice «la colina de su hijo Finehás».
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Región montañosa de Efraín
+  geometry:
+    type: zone
+    lat: 32.134657
+    lon: 35.28574
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - josue-24
+  - it-efrain
+  reason: Jos 24:33 solo la sitúa en la región montañosa de Efraín, y jw.org no le da un sitio.
+  note: 'Tomamos la misma zona que el territorio de Efraín: punto medio entre Siló y Siquem de OpenBible, con un radio de
+    20 km, cálculo nuestro.'
+  coord_source: calculation
+summary: Colina de la región montañosa de Efraín que se había dado a Finehás, hijo de Eleazar. Allí enterraron a Eleazar.
+reason: 'Jos 24:33; Perspicacia «Finehás», núm. 1: tras enterrar allí a su padre, Finehás fue sumo sacerdote; «Efraín», núm.
+  2: Eleazar fue enterrado en la región montañosa de Efraín.'
+sources:
+- josue-24
+- it-finehas
+- it-efrain
+links:
+- title: 'Perspicacia: «Finehás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
+  type: perspicacia
+- title: Josué 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/24
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hazo
+name: Hazó
+names:
+- name: Hazó
+perspicacia: '1200001936'
+summary: Quinto de los hijos de Nacor y Milcá que se nombran, sobrino de Abrahán.
+reason: Perspicacia «Hazó»; Gé 22:20-22.
+sources:
+- it-hazo
+- genesis-22
+links:
+- title: 'Perspicacia: «Hazó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001936
+  type: perspicacia
+- title: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  type: bible
+relations:
+- type: kin
+  person: nacor-hijo-de-tare
+  word: father
+  inferred: false
+  sources:
+  - genesis-22
+  - it-hazo
+  reason: 'Gé 22:20-23: hijo de Nacor, el hermano de Abrahán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: milca-hija-de-haran
+  word: mother
+  inferred: false
+  sources:
+  - genesis-22
+  - it-hazo
+  reason: 'Gé 22:20-23: uno de los ocho hijos que Milcá dio a Nacor.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

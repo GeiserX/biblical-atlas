@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jezreel-hijo-de-oseas
+name: Jezreel
+names:
+- name: Jezreel
+perspicacia: 1200002467#2
+disambiguation: El primer hijo del profeta Oseas; no la ciudad de Isacar ni el valle que llevan ese nombre.
+summary: Primer hijo de Oseas y Gómer. Su nombre, «Dios sembrará semilla», anunciaba que Jehová pediría cuentas a la casa
+  de Jehú; más tarde se aplica a la vuelta del pueblo a su tierra.
+reason: Perspicacia «Jezreel», núm. 2 y núm. 4, párr. 6-8; Os 1:3-5, 11.
+sources:
+- it-jezreel
+- it-oseas-libro
+- oseas-1
+links:
+- title: 'Perspicacia: «Jezreel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
+  type: perspicacia
+- title: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  type: bible
+relations:
+- type: kin
+  person: oseas
+  word: father
+  inferred: false
+  sources:
+  - oseas-1
+  - it-jezreel
+  reason: 'Os 1:3: Gómer le dio a Oseas un hijo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: gomer-hija-de-diblaim
+  word: mother
+  inferred: false
+  sources:
+  - oseas-1
+  - it-gomer
+  reason: 'Os 1:3, 4: Gómer lo dio a luz.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: lo-ruhama
+  word: sister
+  inferred: false
+  sources:
+  - oseas-1
+  - it-lo-ruhama
+  reason: Los dos nacieron de Gómer (Os 1:3, 6); Perspicacia cree que ella no era hija de Oseas.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: lo-ammi
+  word: brother
+  inferred: false
+  sources:
+  - oseas-1
+  - it-lo-ammi
+  reason: Los dos nacieron de Gómer (Os 1:3, 8); quizá no del mismo padre, según Perspicacia «Lo-ammí».
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

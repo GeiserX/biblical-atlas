@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: onam-hijo-de-sobal
+name: Onam
+names:
+- name: Onam
+perspicacia: 1200003326#1
+disambiguation: Onam hijo de Sobal; no Onam hijo de Jerahmeel, de Judá.
+summary: El quinto hijo que se nombra de Sobal, jeque horeo; era nieto de Seír.
+reason: Perspicacia «Onam», núm. 1; Gé 36:23.
+sources:
+- it-onam
+- genesis-36
+links:
+- title: 'Perspicacia: «Onam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003326
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: sobal-hijo-de-seir
+  word: father
+  inferred: false
+  sources:
+  - it-onam
+  - genesis-36
+  reason: 'Gé 36:23: hijo de Sobal.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

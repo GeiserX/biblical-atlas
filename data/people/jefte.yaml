@@ -1,0 +1,81 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jefte
+name: Jefté
+names:
+- name: Jefté
+date:
+  from: -1172
+  to: -1172
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1173 a.e.c.
+summary: Galaadita de la tribu de Manasés al que sus medio hermanos echaron de casa. Los de Galaad lo llamaron para luchar
+  contra Ammón y, tras vencer, juzgó a Israel seis años en Galaad.
+reason: 'Perspicacia «Jefté», párr. 2 a 7: sus seis años de juez empezaron hacia 1173 a.e.c., según los 300 años de Jue 11:26.
+  Jue 11 y 12:7.'
+sources:
+- it-jefte
+- jueces-11
+- jueces-12
+links:
+- title: 'Perspicacia: «Jefté»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002413
+  type: perspicacia
+- title: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  type: bible
+perspicacia: '1200002413'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: galaad-padre-de-jefte
+  word: father
+  inferred: false
+  sources:
+  - jueces-11
+  - it-jefte
+  - it-galaad
+  reason: 'Jue 11:1: su padre se llamaba Galaad; su madre había sido prostituta.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: tob
+  inferred: false
+  sources:
+  - jueces-11
+  - it-tob
+  - it-jefte
+  reason: 'Jue 11:3: huyó de sus medio hermanos y se asentó en la tierra de Tob.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mizpa-de-galaad
+  inferred: false
+  sources:
+  - jueces-11
+  - it-mizpa
+  reason: 'Jue 11:34: al volver de la batalla fue a su casa, en Mizpá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: manases-hijo-de-jose
+  word: ancestor
+  inferred: true
+  sources:
+  - it-jefte
+  - jueces-11
+  reason: Perspicacia «Jefté», párr. 1, lo cuenta entre los manasitas; Jue 11:1 lo llama galaadita.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: galaad
+  inferred: false
+  sources:
+  - jueces-12
+  - it-jefte
+  reason: 'Jue 12:7: tras seis años de juez murió y lo enterraron en su ciudad, en Galaad. El texto no nombra la ciudad.'
+  checked_on: '2026-09-29'
+  status: verified

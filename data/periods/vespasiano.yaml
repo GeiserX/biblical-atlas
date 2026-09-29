@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: vespasiano
+name: Vespasiano, emperador de Roma
+type: emperor
+date:
+  from: 69
+  to: 79
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 69-79 e.c.
+places:
+- roma
+summary: 'En su reinado termina la revuelta judía empezada en 66: el general Tito destruye Jerusalén en el año 70.'
+reason: Perspicacia «César» (recuadro y apartado sobre Nerón) y «Roma» le dan 69-79 e.c. y ponen en su reinado la destrucción
+  de Jerusalén.
+sources:
+- it-cesar
+- it-roma
+search: Vespasiano
+checked_on: '2026-09-28'
+status: verified

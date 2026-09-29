@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: judea
+name: Judea
+names:
+- name: Judea
+type: region
+lat: 31.77667
+lon: 35.23417
+precision: zone
+coord_source: openbible:a149f13
+coord_url: https://www.openbible.info/geo/ancient/a149f13/judea-1
+coord_note: Punto representativo que da OpenBible, el mismo de Jerusalén; la región es mucho más amplia.
+summary: Región de Palestina al sur de Samaria, con Jerusalén; sus límites exactos no se conocen.
+reason: 'Perspicacia «Judea»: límites en el párr. 1; en 66 e.c. los cristianos huyeron de allí a las montañas, como mandó Jesús
+  en Mt 24:16. La coordenada es de OpenBible: solo tomamos el punto.'
+sources:
+- it-judea
+- openbible-geo
+- mateo-2
+- mateo-3
+- mateo-24
+- marcos-1
+- marcos-3
+- marcos-13
+- lucas-1
+- lucas-2
+- lucas-3
+- lucas-4
+- lucas-12
+- lucas-13
+- lucas-21
+- juan-3
+- juan-4
+- juan-7
+- hechos-8
+- hechos-11
+- hechos-12
+- galatas-1
+links:
+- title: 'Perspicacia: «Judea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002544
+  type: perspicacia
+- title: Mateo 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/24
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'La razón citaba Heb 13:24, pero Judea no sale en Hebreos 13: ese versículo nombra Italia. Se quita la cita y se
+    pone Mt 24:16.'
+  source: mateo-24
+- date: '2026-09-29'
+  change: 'Sale hebreos-13 de fuentes: Judea no aparece en Hebreos 13 (Heb 13:24 nombra Italia). Entra Mt 24:16.'
+  source: mateo-24
+- date: '2026-09-29'
+  change: Sale el enlace a Hebreos 13, que no nombra Judea; entra Mateo 24.
+  source: mateo-24
+checked_on: '2026-09-29'
+status: verified

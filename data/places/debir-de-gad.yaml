@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: debir-de-gad
+name: Debir
+names:
+- name: Debir
+type: city
+lat: 32.56576
+lon: 35.61221
+precision: uncertain
+coord_source: openbible:ac6416d
+coord_url: https://www.openbible.info/geo/ancient/ac6416d/debir-3
+coord_note: OpenBible pone primero Lo-debar; tomamos Umm ed-Dabar, unos 16 km al sur del mar de Galilea, que Perspicacia cita
+  con reservas.
+summary: Lugar de la frontera de Gad, en Galaad. Se suele pensar que era Lo-debar, donde vivía el Makir que acogió a Mefibóset
+  y después a David. Es otra que la Debir de Judá.
+reason: 'Perspicacia «Debir», núm. 4; Jos 13:26. OpenBible: solo el punto.'
+sources:
+- it-debir
+- openbible-geo
+- josue-13
+links:
+- title: 'Perspicacia: «Debir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001137
+  type: perspicacia
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

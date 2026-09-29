@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-de-damasco
+name: Judas de Damasco
+names:
+- name: Judas
+perspicacia: 1200002541#6
+date:
+  from: 34
+  to: 34
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 34 e.c.
+disambiguation: El dueño de la casa de la calle Recta donde se alojó Saulo (Hch 9:11). No es Judas Iscariote, ni el apóstol
+  Tadeo, ni Judas Barsabás.
+distinct_from:
+- judas-iscariote
+- tadeo
+- judas-hermano-de-jesus
+- judas-hijo-de-jose
+- judas-barsabas
+- judas-el-galileo
+summary: Vecino de Damasco con casa en la calle Recta. Allí se hospedó Saulo, ciego, después de ver a Jesús, y allí fue Ananías
+  a devolverle la vista. Perspicacia duda de que Judas fuera ya discípulo.
+reason: Perspicacia «Judas», núm. 6, y «Recta»; Hch 9:11, 17.
+sources:
+- it-judas
+- it-recta
+- hch-9
+links:
+- title: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+relations:
+- type: lived_in
+  place: calle-recta
+  inferred: false
+  sources:
+  - hch-9
+  - it-recta
+  reason: 'Hch 9:11: el Señor manda a Ananías a la casa de Judas, en la calle llamada Recta.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-hacen-las-prendas-de-los-sacerdotes
+title: Se hacen las prendas santas de Aarón y sus hijos
+date:
+  from: -1512
+  to: -1511
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+narrative_order:
+  series: exodo
+  order: 39001
+places:
+- desierto-de-sinai
+people:
+- bezalel-hijo-de-uri
+- oholiab
+passages:
+- Éx 39:1-31
+summary: Los artesanos hacen el efod con su cinturón y sus piedras de ónice, el pectoral con doce piedras por las tribus,
+  la túnica azul con granadas y campanillas, las túnicas, los turbantes y la placa de oro.
+reason: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. Perspicacia «Bezalel», núm. 1.
+sources:
+- exodo-39
+- si-3
+- it-bezalel
+links:
+- title: Éxodo 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/39
+  type: bible
+checked_on: '2026-09-29'
+status: verified

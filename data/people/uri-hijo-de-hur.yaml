@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uri-hijo-de-hur
+name: Urí
+names:
+- name: Urí
+perspicacia: 1200004520#1
+disambiguation: Padre de Bezalel; no el padre de Guéber ni el portero levita de tiempos de Esdras.
+summary: Hombre de Judá, hijo de Hur y padre de Bezalel, el artesano que dirigió la obra del tabernáculo.
+reason: Perspicacia «Urí», núm. 1; Éx 31:2; 35:30.
+sources:
+- it-uri
+- exodo-31
+- exodo-35
+- exodo-38
+links:
+- title: 'Perspicacia: «Urí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004520
+  type: perspicacia
+- title: Éxodo 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/35
+  type: bible
+relations:
+- type: kin
+  person: hur-hijo-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - exodo-31
+  - it-uri
+  - exodo-35
+  - exodo-38
+  reason: Éx 31:2 da a Urí como hijo de Hur.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

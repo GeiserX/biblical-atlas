@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abran-llega-a-siquem
+title: Jehová se aparece a Abrán en Siquem
+date:
+  from: -1942
+  to: -1942
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1943 a.e.c.
+narrative_order:
+  series: genesis
+  order: 12006
+places:
+- siquem
+- more
+- canaan
+people:
+- abrahan
+- sara
+- lot
+passages:
+- Gé 12:6, 7
+summary: Abrán atraviesa Canaán hasta Siquem y acampa junto a los árboles grandes de Moré. Jehová se le aparece y promete
+  la tierra a su descendencia, y Abrán le levanta un altar.
+reason: Según el estudio 3 (párr. 11), Abrahán tenía 75 años al llegar a Canaán, en 1943 a.e.c. Perspicacia «Pacto», párr.
+  16, pone en Siquem esta aparición.
+sources:
+- si-3
+- it-pacto
+- it-siquem
+- it-more
+- genesis-12
+links:
+- title: Génesis 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

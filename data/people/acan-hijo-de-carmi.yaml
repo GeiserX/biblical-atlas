@@ -1,0 +1,82 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acan-hijo-de-carmi
+name: Acán
+names:
+- name: Acán
+- name: Acar
+  note: 'Así lo llama 1Cr 2:7. Perspicacia une los dos nombres por un juego de palabras: Acar evoca al que trae problemas.'
+perspicacia: '1200000074'
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+disambiguation: Acán de Judá, hijo de Carmí, que robó del botín de Jericó; no Acán hijo de Ézer, el jeque horeo de Seír.
+distinct_from:
+- acan-hijo-de-ezer
+summary: Judaíta de la familia de Zérah. Tras la caída de Jericó se guardó una prenda de Sinar, plata y un lingote de oro
+  que eran de Jehová. Descubierto por suertes, murió apedreado con su familia en el valle de Acor.
+reason: Perspicacia «Acán»; Jos 7:1, 16-26. Perspicacia «Hai», núm. 1, pone en 1473 a.e.c. la derrota que causó su robo.
+sources:
+- it-acan
+- josue-7
+- it-hai
+- josue-22
+links:
+- title: 'Perspicacia: «Acán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000074
+  type: perspicacia
+- title: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  type: bible
+- title: Josué 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/22
+  type: bible
+relations:
+- type: kin
+  person: carmi-hijo-de-zabdi
+  word: father
+  inferred: false
+  sources:
+  - josue-7
+  - it-acan
+  reason: 'Jos 7:1, 18: Acán, hijo de Carmí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zabdi-abuelo-de-acan
+  word: grandfather
+  inferred: false
+  sources:
+  - josue-7
+  - it-zabdi
+  reason: Jos 7:1, 18 da la línea Acán, Carmí, Zabdí; Perspicacia «Zabdí», núm. 1, lo llama abuelo de Acán.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - josue-7
+  - it-acan
+  - it-zerah
+  - josue-22
+  reason: Jos 7:1, 24 lo llama hijo de Zérah en el sentido de descendiente; Perspicacia «Zérah», núm. 3, lo cuenta entre los
+    de esa familia.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: valle-de-acor
+  inferred: false
+  sources:
+  - josue-7
+  - it-acor
+  reason: 'Jos 7:24-26: allí lo mataron a pedradas y quemaron lo suyo.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

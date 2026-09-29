@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juan-gobernante-judio
+name: Juan
+names:
+- name: Juan
+perspicacia: 1200002489#5
+disambiguation: Gobernante judío del juicio de Hch 4:6, quizá pariente de Anás. No es el apóstol Juan, al que juzgaban, ni
+  Juan el Bautista ni Juan Marcos.
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33 e.c.
+  note: Solo sale en este juicio, que Perspicacia «Herodes», núm. 2, pone en 33, poco después de Pentecostés.
+summary: Gobernante judío que, con Anás y Caifás, interrogó a Pedro y a Juan por la curación del cojo. Les prohibieron predicar
+  y, sin base para castigarlos, los soltaron con amenazas.
+reason: Perspicacia «Juan», núm. 5; Hch 4:5-22.
+sources:
+- it-juan
+- it-herodes
+- hechos-4
+links:
+- title: 'Perspicacia: «Juan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
+  type: perspicacia
+distinct_from:
+- juan-apostol
+- juan-el-bautista
+- juan-marcos
+relations:
+- type: kin
+  person: anas
+  inferred: true
+  sources:
+  - it-juan
+  - hechos-4
+  reason: Hch 4:6 lo nombra junto a los parientes del sacerdote principal; Perspicacia «Juan», núm. 5, dice que posiblemente
+    era pariente de Anás.
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

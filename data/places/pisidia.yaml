@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pisidia
+name: Pisidia
+names:
+- name: Pisidia
+type: region
+lat: 38.306111
+lon: 31.189167
+precision: zone
+coord_source: openbible:a55aded
+coord_url: https://www.openbible.info/geo/ancient/a55aded/pisidia
+coord_note: OpenBible da para la región el punto de Antioquía de Pisidia; aquí representa toda la zona montañosa, no una ciudad.
+summary: Región de montañas del sur de Asia Menor, al norte de Panfilia, en la parte oeste del Tauro, con fama de salteadores.
+  Desde 25 a.e.c. era parte de la provincia romana de Galacia.
+reason: 'Perspicacia «Pisidia», párr. 1 a 3; Pablo y Bernabé la cruzan al subir a Antioquía y al bajar a la costa (Hch 13:14;
+  14:24). Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-pisidia
+- hch-13
+- hch-14
+- openbible-geo
+links:
+- title: 'Perspicacia: «Pisidia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003499
+  type: perspicacia
+- title: Hechos 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

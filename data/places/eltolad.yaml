@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eltolad
+name: Eltolad
+names:
+- name: Eltolad
+- name: Tolad
+  note: Nombre que le da 1Cr 4:29 (Perspicacia).
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 10 km de Beer-Seba
+  geometry:
+    type: zone
+    lat: 31.244722
+    lon: 34.840833
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-eltolad
+  - openbible-geo
+  reason: El texto la pone en el sur de Judá, cerca de Edom; OpenBible da este radio alrededor de Beer-Seba.
+  coord_source: openbible:a5709da
+  coord_url: https://www.openbible.info/geo/ancient/a5709da/eltolad
+summary: Ciudad del sur de Judá, cerca de la frontera de Edom, que se dio a Simeón; siguió en sus manos hasta el reinado de
+  David.
+reason: Perspicacia «Eltolad»; Jos 15:30; 19:4; 1Cr 4:29. OpenBible solo la pone a menos de 10 km de Beer-Seba.
+sources:
+- it-eltolad
+- openbible-geo
+- josue-15
+- josue-19
+links:
+- title: 'Perspicacia: «Eltolad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001342
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+coord_note: OpenBible solo la pone a menos de 10 km de Beer-Seba; el punto es el de Beer-Seba. Perspicacia no da sitio.

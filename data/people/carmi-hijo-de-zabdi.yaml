@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: carmi-hijo-de-zabdi
+name: Carmí
+names:
+- name: Carmí
+perspicacia: 1200000894#2
+disambiguation: Carmí de Judá, padre de Acán; no Carmí hijo de Rubén, que bajó a Egipto con Jacob.
+distinct_from:
+- carmi-hijo-de-ruben
+summary: Judaíta de la familia de Zérah, hijo de Zabdí y padre de Acán, el israelita que se quedó con parte de lo reservado
+  de Jericó.
+reason: Perspicacia «Carmí», núm. 2; Jos 7:1, 18. Perspicacia lo ve también entre los «hijos de Judá» de 1Cr 4:1, entendidos
+  como descendientes.
+sources:
+- it-carmi
+- josue-7
+links:
+- title: 'Perspicacia: «Carmí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000894
+  type: perspicacia
+- title: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  type: bible
+relations:
+- type: kin
+  person: zabdi-abuelo-de-acan
+  word: father
+  inferred: false
+  sources:
+  - josue-7
+  - it-carmi
+  reason: 'Jos 7:1, 18: Carmí, hijo de Zabdí.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

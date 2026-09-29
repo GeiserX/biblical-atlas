@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guilgal-frente-a-guerizim-y-ebal
+name: Guilgal
+names:
+- name: Guilgal
+  note: El nombre significa «rodadura» (Perspicacia). Perspicacia no asegura que sea el de cerca de Betel.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Jiljilya, el Guilgal de cerca de Betel
+  geometry:
+    type: point
+    lat: 32.030556
+    lon: 35.225
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guilgal
+  reason: 'Perspicacia «Guilgal», núm. 2: el Guilgal de Dt 11:30 puede ser este, o quizá otro.'
+  coord_source: openbible:a84a509
+  coord_url: https://www.openbible.info/geo/ancient/a84a509/gilgal-4
+  note: 'Ficha «Gilgal 4» de OpenBible, la de Dt 11:30: primera resolución de su segunda identificación, la que la da como Gilgal
+    2, en Jiljilya, unos 11 km al norte de Betel.'
+summary: Lugar que Dt 11:30 usa para situar los montes Guerizim y Ebal, al oeste del Jordán. Perspicacia ve posible que sea
+  el Guilgal de cerca de Betel, sin asegurarlo.
+reason: Perspicacia «Guilgal», núm. 2, párr. 1; Dt 11:30. OpenBible le da ficha propia («Gilgal 4») con varias identificaciones.
+sources:
+- it-guilgal
+- openbible-geo
+- deuteronomio-11
+links:
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+- title: Deuteronomio 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

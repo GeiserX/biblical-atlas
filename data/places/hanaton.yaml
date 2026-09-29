@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hanaton
+name: Hanatón
+names:
+- name: Hanatón
+type: city
+lat: 32.785556
+lon: 35.256944
+precision: uncertain
+coord_source: openbible:a412c43
+coord_url: https://www.openbible.info/geo/ancient/a412c43/hannathon
+coord_note: Punto de OpenBible en Tell el-Bedeiwiyeh (Tel Hannaton).
+summary: Ciudad de la frontera norte de Zabulón, que la mayoría asocia con reservas a Tel Hannaton, unos 10 km al NNO de Nazaret.
+  La nombran textos asirios y las tablillas de el-Amarna.
+reason: 'Perspicacia «Hanatón»; Jos 19:14. OpenBible: solo el punto.'
+sources:
+- it-hanaton
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Hanatón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001862
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

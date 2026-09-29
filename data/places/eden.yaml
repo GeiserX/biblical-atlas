@@ -1,0 +1,80 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eden
+name: Edén
+names:
+- name: Edén
+- name: Jardín de Edén
+  note: El jardín ocupaba solo una parte de la región, hacia el este (Gé 2:8).
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Tierras altas donde hoy nacen el Tigris y el Éufrates
+  geometry:
+    type: zone
+    lat: 38.26
+    lon: 42.48
+    radius_km: 300
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-eden
+  - genesis-2
+  reason: Perspicacia dice que el texto hebreo apunta a la región montañosa al norte de las llanuras de Mesopotamia (párr.
+    13).
+  note: 'Centro: el mismo punto calculado de la ubicación tradicional. El radio de 300 km es nuestro y abarca las cabeceras
+    de los dos ríos.'
+  coord_source: calculation
+- name: Montañas al sur del lago Van (ubicación tradicional)
+  geometry:
+    type: zone
+    lat: 38.26
+    lon: 42.48
+    radius_km: 100
+  checked_on: '2026-09-29'
+  status: tradition
+  sources:
+  - it-eden
+  - openbible-geo
+  reason: Perspicacia recoge como tradicional una zona de montañas situada 225 km al suroeste del Ararat y poco al sur del
+    lago Van (párr. 14).
+  note: 'Centro calculado por nosotros: 225 km con rumbo 225° desde el punto del monte Ararat de OpenBible (39,7028 N; 44,3004
+    E). El radio de 100 km es nuestro.'
+  coord_source: calculation
+- name: Baja Mesopotamia, cerca de la cabecera del golfo Pérsico
+  geometry:
+    type: zone
+    lat: 30.962222
+    lon: 46.104444
+    radius_km: 200
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-eden
+  - openbible-geo
+  reason: Calvino y Delitzsch la propusieron. Perspicacia objeta que así el Pisón y el Guihón serían afluentes y no brazos
+    del mismo río (párr. 13).
+  note: Zona de 200 km alrededor de Ur, tal como la da OpenBible.
+  coord_source: openbible:af3daeb
+  coord_url: https://www.openbible.info/geo/ancient/af3daeb/eden-1
+summary: Región donde Dios plantó el jardín del primer hombre. Solo se conocen dos de sus cuatro ríos, el Éufrates y el Tigris,
+  y el Diluvio borró el jardín, así que su sitio exacto es una conjetura.
+reason: 'Perspicacia «Edén»: ubicación conjetural (párr. 12), preferencia del texto hebreo (párr. 13), ubicación tradicional
+  (párr. 14) y desaparición en el Diluvio (párr. 15). Gé 2:8-14 describe los ríos.'
+sources:
+- it-eden
+- genesis-2
+- openbible-geo
+- genesis-3
+links:
+- title: 'Perspicacia: «Edén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
+  type: perspicacia
+- title: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

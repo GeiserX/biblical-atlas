@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-cobra-el-rescate-de-los-primogenitos
+title: Moisés cobra el rescate de los primogénitos que superan a los levitas
+date:
+  from: -1511
+  to: -1511
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: ziv (iyar) de 1512 a.e.c.
+  detail:
+    month: iyar
+  note: Números abre el 1 de ziv del segundo año tras la salida (Nú 1:1) y el campamento parte el 20 (Nú 10:11). Perspicacia
+    solo saca de orden Nú 7:1-88 y 9:1-15; el día no se sabe.
+narrative_order:
+  series: numeros
+  order: 3040
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+- eleazar-hijo-de-aaron
+- itamar
+passages:
+- Nú 3:40-51
+summary: Moisés cuenta 22.273 primogénitos varones de Israel, 273 más que los levitas. Por cada uno de esos 273 cobra cinco
+  siclos, 1.365 en total, y se lo entrega a Aarón y sus hijos.
+reason: Nú 3:40-51. Perspicacia «Primogénito» y «Levitas» explican el cambio de los levitas por los primogénitos y el precio
+  de cinco siclos por cada primogénito que sobraba. El mes se deduce del orden del libro.
+sources:
+- numeros-3
+- it-primogenito
+- it-levitas
+- it-numeros-libro
+- it-eleazar
+links:
+- title: Números 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/3
+  type: bible
+- title: 'Perspicacia: «Primogénito»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001525
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

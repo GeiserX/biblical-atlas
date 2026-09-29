@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: laodicea
+name: Laodicea
+names:
+- name: Laodicea
+- name: Dióspolis
+  note: Nombre anterior, según Perspicacia.
+- name: Roas
+  note: Otro nombre anterior, según Perspicacia.
+type: city
+lat: 37.835833
+lon: 29.1075
+precision: point
+coord_source: openbible:a83fb1e
+coord_url: https://www.openbible.info/geo/ancient/a83fb1e/laodicea
+summary: Ciudad rica del valle del Lico, centro bancario y de lana negra, sin agua propia. Pablo, que no predicó allí, se
+  preocupó por su congregación y le escribió; en Apocalipsis Jesús la halla tibia y pobre en sentido espiritual.
+reason: 'Perspicacia «Laodicea, laodicenses» (párr. 2 a 7); Col 4:16 y Ap 3:14-22. La coordenada es de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-laodicea
+- apocalipsis-3
+- openbible-geo
+- colosenses-2
+- colosenses-4
+links:
+- title: 'Perspicacia: «Laodicea, laodicenses»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002681
+  type: perspicacia
+- title: Apocalipsis 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/3
+  type: bible
+history:
+- date: '2026-09-29'
+  change: Añade que Pablo no predicó en la ciudad pero luchaba por sus cristianos (Col 2:1; nota de estudio de ese versículo
+    y Perspicacia «Laodicea, laodicenses», párr. 5).
+  source: colosenses-2
+checked_on: '2026-09-29'
+status: verified

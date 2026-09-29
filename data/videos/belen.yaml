@@ -1,61 +1,61 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: belen
-generado: "2026-09-28"
+place: belen
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-gnj_1_VIDEO"
-    titulo: "Episodio 1: La verdadera luz del mundo"
+    title: "Episodio 1: La verdadera luz del mundo"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-1-verdadera-luz-del-mundo/"
-    publicado: "2024-12-23"
-    menciones: 7
-    terminos:
+    published: "2024-12-23"
+    hits: 7
+    terms:
       "Belén": 7
   - docid: "pub-jwban_201503_1_VIDEO"
-    titulo: "Gerrit Lösch: “La palabra profética” nos fortalece"
+    title: "Gerrit Lösch: “La palabra profética” nos fortalece"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201503_1_VIDEO&appLanguage=S"
-    publicado: "2016-11-02"
-    menciones: 5
-    terminos:
+    published: "2016-11-02"
+    hits: 5
+    terms:
       "Belén": 5
   - docid: "pub-lffv_151_VIDEO"
-    titulo: "Profecías cumplidas en Jesús"
+    title: "Profecías cumplidas en Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-lffv_151_VIDEO&appLanguage=S"
-    publicado: "2021-01-13"
-    menciones: 5
-    terminos:
+    published: "2021-01-13"
+    hits: 5
+    terms:
       "Belén": 5
   - docid: "pub-jwbcov24_9_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús"
+    title: "Lecciones sobre la tierra en la que vivió Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_9_VIDEO&appLanguage=S"
-    publicado: "2025-01-20"
-    menciones: 3
-    terminos:
+    published: "2025-01-20"
+    hits: 3
+    terms:
       "Belén": 3
   - docid: "pub-jwbcov_201805_14_VIDEO"
-    titulo: "Sean valientes, padres"
+    title: "Sean valientes, padres"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov_201805_14_VIDEO&appLanguage=S"
-    publicado: "2019-03-25"
-    menciones: 3
-    terminos:
+    published: "2019-03-25"
+    hits: 3
+    terms:
       "Belén": 3
   - docid: "pub-jwb-115_1_VIDEO"
-    titulo: "JW Broadcasting: Agosto de 2024"
+    title: "JW Broadcasting: Agosto de 2024"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-115_1_VIDEO&appLanguage=S"
-    publicado: "2024-08-05"
-    menciones: 2
-    terminos:
+    published: "2024-08-05"
+    hits: 2
+    terms:
       "Belén": 2
   - docid: "pub-jwb-115_2_VIDEO"
-    titulo: "Gage Fleegle: ¡Declaremos el secreto sagrado de Jehová!"
+    title: "Gage Fleegle: ¡Declaremos el secreto sagrado de Jehová!"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-115_2_VIDEO&appLanguage=S"
-    publicado: "2024-08-19"
-    menciones: 2
-    terminos:
+    published: "2024-08-19"
+    hits: 2
+    terms:
       "Belén": 2
   - docid: "pub-jwbcov24_7_VIDEO"
-    titulo: "La verdad sobre Jesús: Su nacimiento. ¿Qué dice la Biblia?"
+    title: "La verdad sobre Jesús: Su nacimiento. ¿Qué dice la Biblia?"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_7_VIDEO&appLanguage=S"
-    publicado: "2025-01-20"
-    menciones: 2
-    terminos:
+    published: "2025-01-20"
+    hits: 2
+    terms:
       "Belén": 2

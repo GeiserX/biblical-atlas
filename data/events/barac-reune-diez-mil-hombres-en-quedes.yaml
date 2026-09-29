@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: barac-reune-diez-mil-hombres-en-quedes
+title: Barac reúne en Quedes a 10.000 hombres
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+narrative_order:
+  series: jueces
+  order: 4009
+places:
+- quedes-de-neftali
+people:
+- barac
+- debora-profetisa
+present:
+- barac
+- debora-profetisa
+passages:
+- Jue 4:9, 10
+summary: Débora va con Barac a Quedes. Allí él convoca a Zabulón y a Neftalí, y 10.000 hombres se ponen a sus órdenes.
+reason: 'Perspicacia «Quedes», núm. 2: en esa ciudad se juntaron sus hombres antes de la batalla. Límites: muerte de Josué,
+  c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-4
+- it-quedes
+- it-barac
+- si-3
+- it-jefte
+links:
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

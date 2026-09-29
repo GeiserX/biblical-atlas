@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: tibni
+name: Reinado de Tibní en Israel
+type: king
+person: tibni
+date:
+  from: -950
+  to: -946
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951-947 a.e.c.
+places:
+- tirza
+summary: Rey rival de Omrí durante cuatro años; los dos periodos se solapan.
+reason: 'A6-A cuenta «Omrí y Tibní: 4 años» desde c. 951; Perspicacia «Omrí» sitúa la muerte de Tibní hacia 947, año 31 de
+  Asá.'
+sources:
+- tnm-a6-a
+- 1-reyes-16
+- it-tibni
+search: Tibní rey
+checked_on: '2026-09-28'
+status: verified

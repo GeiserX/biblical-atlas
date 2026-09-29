@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: misael-hijo-de-uziel
+name: Misael
+names:
+- name: Misael
+perspicacia: 1200003078#1
+disambiguation: Misael hijo de Uziel; no el compañero de Daniel, llamado Mesac, ni el que estuvo junto a Esdras al leer la
+  Ley.
+summary: Levita cohatita, hijo de Uziel. Con su hermano Elzafán sacó del campamento los cuerpos de Nadab y Abihú.
+reason: Perspicacia «Misael», núm. 1; Éx 6:22; Le 10:4, 5.
+sources:
+- it-misael
+- exodo-6
+- levitico-10
+links:
+- title: 'Perspicacia: «Misael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003078
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-misael
+  - levitico-10
+  reason: 'Éx 6:22: hijo de Uziel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: elizafan-hijo-de-uziel
+  word: brother
+  inferred: false
+  sources:
+  - exodo-6
+  - levitico-10
+  reason: 'Éx 6:22: Elzafán es otro hijo de Uziel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sitri
+  word: brother
+  inferred: false
+  sources:
+  - exodo-6
+  reason: 'Éx 6:22: Sitrí es otro hijo de Uziel.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: El resumen cuenta que sacó los cuerpos de Nadab y Abihú, pero la ficha no citaba Le 10, de donde sale.
+  source: levitico-10
+checked_on: '2026-09-29'
+status: verified

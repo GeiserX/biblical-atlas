@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ficol-de-tiempos-de-isaac
+name: Ficol
+names:
+- name: Ficol
+perspicacia: null
+disambiguation: El Ficol que fue con el Abimélec de tiempos de Isaac; no el del pacto con Abrahán, más de 75 años antes.
+distinct_from:
+- ficol-de-tiempos-de-abrahan
+summary: Jefe militar de Abimélec, rey filisteo de Guerar, en tiempos de Isaac. Fue con él y con Ahuzat a Beer-Seba a pactar
+  la paz.
+reason: 'Perspicacia «Ficol»: entre los dos pactos pasaron más de 75 años, así que Ficol sería el título del cargo y no un
+  mismo hombre. Su artículo es la clave del primero; Gé 26:26.'
+sources:
+- it-ficol
+- genesis-26
+links:
+- title: 'Perspicacia: «Ficol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003461
+  type: perspicacia
+- title: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  type: bible
+relations:
+- type: tie
+  person: abimelec-de-tiempos-de-isaac
+  word: master
+  inferred: false
+  sources:
+  - it-ficol
+  - genesis-26
+  reason: 'Gé 26:26: jefe del ejército de Abimélec, fue con él a ver a Isaac.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

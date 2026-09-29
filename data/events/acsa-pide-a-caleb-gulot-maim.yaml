@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acsa-pide-a-caleb-gulot-maim
+title: Acsá pide a Caleb Gulot-Maim
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: después del reparto de 1467 y antes de que se acabara el libro de Josué)'
+narrative_order:
+  series: josue
+  order: 15018
+places:
+- gulot-maim
+- negueb
+people:
+- acsa
+- caleb-hijo-de-jefune
+- otniel
+present: []
+passages:
+- Jos 15:18, 19
+- Jue 1:14, 15
+summary: 'Camino de su nueva casa, Acsá insiste a Otniel en pedir un terreno, baja del burro y pide a su padre una bendición:
+  además de la tierra del Négueb, Gulot-Maim. Caleb le da Gulot Alto y Gulot Bajo.'
+reason: 'Perspicacia «Acsá» y «Gulot-maim». Pasa en el camino, que el texto no nombra: el suceso no sitúa a nadie. Mismos límites
+  que la toma de Debir.'
+sources:
+- josue-15
+- it-acsa
+- it-gulot-maim
+- si-3
+- tnm-tabla
+links:
+- title: Josué 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/15
+  type: bible
+- title: 'Perspicacia: «Acsá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000080
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

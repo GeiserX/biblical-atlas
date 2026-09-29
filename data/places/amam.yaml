@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: amam
+name: Amam
+names:
+- name: Amam
+type: city
+lat: 31.2185
+lon: 34.90684
+precision: uncertain
+coord_source: openbible:a3e2b20
+coord_url: https://www.openbible.info/geo/ancient/a3e2b20/amam
+coord_note: Beʼer Nevatim, primera identificación de OpenBible; Perspicacia no la sitúa.
+summary: Población del Négueb, en el sur del territorio de Judá. No se sabe dónde estaba.
+reason: 'Perspicacia «Amam»; Jos 15:26. OpenBible: solo el punto.'
+sources:
+- it-amam
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Amam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000217
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-va-a-arabia
+title: Pablo va a Arabia
+date:
+  from: 34
+  to: 36
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre c. 34 y 36 e.c. (Gálatas no da la fecha)
+places:
+- arabia
+- damasco
+people:
+- pablo
+passages:
+- Gál 1:15-17
+summary: Después de su conversión, Pablo pasa un tiempo en Arabia y vuelve a Damasco. No se sabe a qué parte fue
+  ni si fue antes o después de sus primeros días de predicación.
+reason: 'Perspicacia «Pablo» (párr. 6 y 7) y «Arabia» (sobre Gál 1:17): solo es dudoso el orden. Va entre la predicación en
+  Damasco y la huida: la nota de Gál 1:17 ve posible que predicara antes y después.'
+sources:
+- it-pablo
+- it-arabia
+- galatas-1
+search: Pablo en Arabia
+narrative_order:
+  series: hechos
+  order: 921
+history:
+- date: '2026-09-29'
+  change: Recibe orden en la serie de Hechos, entre pablo-predica-en-damasco (919) y huida-de-damasco (923), y la razón dice
+    por qué.
+  source: galatas-1
+checked_on: '2026-09-29'
+status: verified

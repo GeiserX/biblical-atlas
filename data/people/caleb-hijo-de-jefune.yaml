@@ -1,0 +1,100 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: caleb-hijo-de-jefune
+name: Caleb
+names:
+- name: Caleb
+disambiguation: Caleb hijo de Jefuné, compañero de Josué entre los espías; no Caleb hijo de Hezrón.
+summary: Quenizita de la tribu de Judá y tío de Otniel. A los 40 años fue uno de los doce espías y, con Josué, animó a entrar
+  en Canaán. Recibió Hebrón como herencia.
+reason: Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30; Jos 14:6-15; 15:13-19. Espía en 1512 a.e.c. (Perspicacia «Espías»);
+  toma Hebrón y casa a Acsá tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).
+sources:
+- it-caleb
+- numeros-13
+- josue-14
+- numeros-14
+- it-espias
+- numeros-26
+- numeros-32
+- numeros-34
+- it-jefune
+- deuteronomio-1
+- si-3
+- josue-15
+- it-acsa
+- josue-21
+- tnm-tabla
+- jueces-1
+links:
+- title: 'Perspicacia: «Caleb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000863
+  type: perspicacia
+- title: Josué 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
+  type: bible
+relations:
+- type: accompanies
+  person: josue-hijo-de-nun
+  inferred: false
+  sources:
+  - it-caleb
+  - numeros-14
+  - numeros-32
+  - josue-14
+  - numeros-13
+  reason: 'Perspicacia «Caleb», párr. 3: de los doce espías, solo él y Josué volvieron con un informe favorable (Nú 14:6-9).'
+  checked_on: '2026-09-29'
+  word: companion
+  status: verified
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - it-caleb
+  - josue-14
+  - josue-15
+  - jueces-1
+  reason: 'Jos 14:13, 14: Josué le dio Hebrón como herencia; Perspicacia «Caleb», párr. 4.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jefune-padre-de-caleb
+  word: father
+  inferred: false
+  sources:
+  - numeros-13
+  - numeros-14
+  - it-jefune
+  - numeros-26
+  - it-caleb
+  - numeros-32
+  - numeros-34
+  - deuteronomio-1
+  - josue-14
+  - josue-15
+  - josue-21
+  reason: Nú 13:6 y 14:6, 30, 38 lo llaman Caleb hijo de Jefuné.
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: 1200000863#2
+date:
+  from: -1511
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de su misión de espía a la toma de Hebrón y de Debir)'
+history:
+- date: '2026-09-29'
+  change: Se añade su fecha de actividad, de 1512 a 1467 a.e.c., con Jos 14:7, 10 y el estudio 3.
+  source: josue-14
+- date: '2026-09-29'
+  change: 'Jos 15:13-19 lo muestra echando a los anaquim y casando a Acsá después de 1467 a.e.c.: el rango llega hasta c.
+    1450 (tabla de libros).'
+  source: josue-15
+- date: '2026-09-29'
+  change: La razón explica el nuevo final del rango, con Jos 15:13-19 y la tabla de libros.
+  source: josue-15
+checked_on: '2026-09-29'
+status: verified

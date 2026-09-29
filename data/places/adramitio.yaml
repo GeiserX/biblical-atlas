@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adramitio
+name: Adramitio
+names:
+- name: Adramitio
+type: port
+lat: 39.500667
+lon: 26.932716
+precision: point
+coord_source: openbible:a184f3a
+coord_url: https://www.openbible.info/geo/ancient/a184f3a/adramyttium
+summary: Puerto de Misia, en la provincia de Asia. En Cesarea, Pablo embarcó preso en un barco de Adramitio que
+  iba a la costa de Asia.
+reason: 'Perspicacia «Adramitio» (párr. 1 y 2); Hch 27:2. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-adramitio
+- hch-27
+- openbible-geo
+links:
+- title: 'Perspicacia: «Adramitio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000119
+  type: perspicacia
+- title: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  type: bible
+checked_on: '2026-09-28'
+status: verified

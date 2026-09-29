@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: raama
+name: Raamá
+names:
+- name: Raamá
+perspicacia: '1200003609'
+summary: Hijo de Cus y hermano de Nemrod. Con sus hijos Seba y Dedán dio origen a tres familias, que siglos más tarde comerciaban
+  con Tiro. Quizá se asentaron en el suroeste de Arabia.
+reason: Perspicacia «Raamá»; Gé 10:7.
+sources:
+- it-raama
+- genesis-10
+links:
+- title: 'Perspicacia: «Raamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003609
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: cus-hijo-de-cam
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:7 lo nombra entre los hijos de Cus.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

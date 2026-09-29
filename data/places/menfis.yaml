@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: menfis
+name: Menfis
+names:
+- name: Menfis
+- name: Nof
+  note: Así la llama el texto hebreo de Isaías, Jeremías y Ezequiel; en Oseas el hebreo dice Mof.
+type: city
+lat: 29.8488
+lon: 31.253
+precision: point
+coord_source: openbible:a8ec269
+coord_url: https://www.openbible.info/geo/ancient/a8ec269/memphis
+summary: Antigua capital del Bajo Egipto, en la orilla oeste del Nilo, junto a la actual Mit Rahineh. Fue centro de comercio
+  y de culto, con grandes cementerios reales y pirámides en sus alrededores.
+reason: 'Perspicacia «Menfis», párr. 1, 2 y apartado «Sepulcros reales»: Os 9:6 la presenta como el lugar donde se enterraría
+  a los israelitas que huyeran a Egipto. OpenBible: solo el punto.'
+sources:
+- it-menfis
+- openbible-geo
+- oseas-9
+links:
+- title: 'Perspicacia: «Menfis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002976
+  type: perspicacia
+- title: Oseas 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

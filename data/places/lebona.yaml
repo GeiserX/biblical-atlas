@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lebona
+name: Leboná
+names:
+- name: Leboná
+type: city
+lat: 32.071111
+lon: 35.241111
+precision: uncertain
+coord_source: openbible:ab6bb68
+coord_url: https://www.openbible.info/geo/ancient/ab6bb68/lebonah
+coord_note: 'Punto de Lubban Sharqiya, segunda identificación de OpenBible: la que Perspicacia propone con reservas. La primera
+  es Khan el-Lubban.'
+summary: Población que sirve en Jue 21:19 para situar Siló, que quedaba al sur. Se la identifica con reservas con el-Lubban,
+  a unos 5 km de Siló; Perspicacia cree que quizá estuvo antes más al este.
+reason: 'Perspicacia «Leboná»; Jue 21:19. OpenBible: solo el punto.'
+sources:
+- it-lebona
+- openbible-geo
+- jueces-21
+links:
+- title: 'Perspicacia: «Leboná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002708
+  type: perspicacia
+- title: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

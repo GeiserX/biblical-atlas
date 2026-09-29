@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sanson-se-lleva-las-puertas-de-gaza
+title: Sansón se lleva las puertas de Gaza
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en la judicatura de Sansón, después de Jefté)'
+narrative_order:
+  series: jueces
+  order: 16001
+places:
+- gaza
+- hebron
+people:
+- sanson
+passages:
+- Jue 16:1-3
+summary: Sansón duerme en casa de una prostituta de Gaza mientras los gazeos lo acechan en la puerta para matarlo al amanecer.
+  A medianoche arranca las puertas con postes y barra y las sube a un monte frente a Hebrón.
+reason: '«Gaza», núm. 1: Hebrón queda a unos 60 km; el monte no se conoce. Fecha: tras Jefté, que juzga desde c. 1173 («Jefté»;
+  el libro va casi en orden), y antes de Saúl, 1117 (estudio 3).'
+sources:
+- jueces-16
+- it-gaza
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+links:
+- title: Jueces 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/16
+  type: bible
+- title: 'Perspicacia: «Gaza»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001622
+  type: perspicacia
+search: Sansón puertas de Gaza Hebrón
+checked_on: '2026-09-29'
+status: verified

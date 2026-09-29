@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sarid
+name: Sarid
+names:
+- name: Sarid
+type: city
+lat: 32.660363
+lon: 35.234202
+precision: point
+coord_source: openbible:ab5b542
+coord_url: https://www.openbible.info/geo/ancient/ab5b542/sarid
+coord_note: Punto de OpenBible en Tell Shadud.
+summary: Ciudad de la frontera de Zabulón, desde la que el límite iba al oeste y al este. Se identifica con Tell Shadud, unos
+  10 km al NNE de Meguidó.
+reason: 'Perspicacia «Sarid»; Jos 19:10, 12. OpenBible: solo el punto.'
+sources:
+- it-sarid
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Sarid»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003843
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

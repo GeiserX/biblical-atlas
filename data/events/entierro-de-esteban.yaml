@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entierro-de-esteban
+title: Entierran a Esteban
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+narrative_order:
+  series: hechos
+  order: 802
+places:
+- jerusalen
+people:
+- esteban
+present: []
+passages:
+- Hch 8:2
+summary: Unos hombres temerosos de Dios se llevan el cuerpo de Esteban, lo entierran y hacen gran duelo por él, mientras empieza
+  la persecución.
+reason: Hch 8:2; Perspicacia «Esteban», párr. 5. Murió fuera de la ciudad (Hch 7:58) y la tumba no se nombra, así que no sitúa
+  a nadie. Año entre Pentecostés de 33 y la conversión de Saulo, c. 34 (estudio 3).
+sources:
+- hechos-8
+- it-esteban
+- si-3
+links:
+- title: 'Perspicacia: «Esteban»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004230
+  type: perspicacia
+- title: Hechos 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  type: bible
+search: entierro de Esteban
+checked_on: '2026-09-29'
+status: verified

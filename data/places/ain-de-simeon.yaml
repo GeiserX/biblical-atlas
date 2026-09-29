@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ain-de-simeon
+name: Ain
+names:
+- name: Ain
+  note: Significa «fuente» o «manantial» (Perspicacia).
+type: city
+lat: 31.37124
+lon: 34.86489
+precision: uncertain
+coord_source: openbible:afb265c
+coord_url: https://www.openbible.info/geo/ancient/afb265c/ain-2
+coord_note: 'Khirbet Umm er-Ramamin, segunda resolución de la primera identificación de OpenBible, que la iguala con En-Rimón:
+  es el sitio que nombra Perspicacia.'
+summary: Una de las ciudades más al sur de Judá, que luego pasó a Simeón. Estaba junto a Rimón, y tras el destierro las dos
+  parecen nombrarse juntas como En-Rimón.
+reason: 'Perspicacia «Ain», núm. 2, y «Rimón», núm. 2; Jos 15:32; 19:7; Ne 11:29. OpenBible: solo el punto.'
+sources:
+- it-ain
+- it-rimon
+- openbible-geo
+- josue-15
+- josue-19
+links:
+- title: 'Perspicacia: «Ain»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000183
+  type: perspicacia
+- title: 'Perspicacia: «Rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003734
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

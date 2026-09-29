@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-empieza-a-profetizar
+title: Isaías empieza a profetizar
+date:
+  from: -777
+  to: -777
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778 a.e.c.
+places:
+- jerusalen
+people:
+- isaias
+- uzias
+passages:
+- Is 1:1
+- Is 6:1-8
+summary: En los últimos años de Uzías, Isaías hijo de Amoz empieza su larga obra de profeta en Judá y Jerusalén.
+reason: El estudio 3 y Perspicacia «Isaías», párr. 3, sitúan el comienzo hacia 778.
+sources:
+- si-3
+- it-isaias
+- isaias-1
+links:
+- title: 'Perspicacia: «Isaías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002204
+  type: perspicacia
+- title: Isaías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/1
+  type: bible
+search: Isaías empieza a profetizar
+checked_on: '2026-09-28'
+status: verified

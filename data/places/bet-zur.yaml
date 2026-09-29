@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-zur
+name: Bet-Zur
+names:
+- name: Bet-Zur
+  note: Significa «casa de la roca» (Perspicacia).
+type: city
+lat: 31.589383
+lon: 35.094155
+precision: point
+coord_source: openbible:addba2a
+coord_url: https://www.openbible.info/geo/ancient/addba2a/beth-zur
+summary: Ciudad alta de la montaña de Judá, en Khirbet et-Tubeiqah, unos 7,5 km al norte de Hebrón, junto al camino de la
+  cordillera. Rehoboam la fortificó y se volvió a habitar tras el destierro.
+reason: 'Perspicacia «Bet-zur»; Jos 15:58; 2Cr 11:7; Ne 3:16. OpenBible: solo el punto.'
+sources:
+- it-bet-zur
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Bet-zur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000717
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

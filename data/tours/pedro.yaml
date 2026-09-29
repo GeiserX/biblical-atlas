@@ -1,0 +1,147 @@
+# biblical-earth: un fichero por recorrido. Esquema en docs/investigacion/README.md.
+id: pedro
+title: Pedro, de las redes de Galilea a Babilonia
+stops:
+- sel: passage:jn-1
+  t: 29.8
+  text: Otoño de 29. Andrés, discípulo de Juan el Bautista, lleva a su hermano Simón ante Jesús, que le da el nombre de Cefas,
+    es decir, Pedro.
+  passages:
+  - Jn 1:35-42
+  unknown: 'El sitio exacto: el estudio 3 habla del valle del alto Jordán y Jn 1:28 nombra una Betania al otro lado del
+    Jordán de ubicación incierta.'
+- sel: place:mar-de-galilea
+  t: 30.3
+  text: En 30, junto al mar de Galilea, Pedro, Andrés, Santiago y Juan dejan su negocio de pesca para ser pescadores de hombres.
+  passages:
+  - Mt 4:18-22
+  - Lu 5:1-11
+  question:
+    text: ¿Con quién tenía Pedro su negocio de pesca?
+    options:
+    - Solo con Andrés
+    - Con Andrés y los hijos de Zebedeo
+    - Con Mateo
+    answer: Con Andrés y los hijos de Zebedeo
+    explanation: Lu 5:10 llama a Santiago y Juan socios de Simón; Perspicacia lo describe como un negocio grande.
+- sel: place:capernaum
+  t: 30.4
+  text: En Capernaúm, en la casa que Pedro compartía con Andrés, Jesús cura a la suegra de Pedro. Pedro estaba casado.
+  passages:
+  - Mr 1:29-31
+- sel: passage:mt-16
+  t: 32.4
+  text: En 32, cerca de Cesarea de Filipo, Pedro declara que Jesús es el Cristo, el Hijo del Dios vivo.
+  passages:
+  - Mt 16:13-19
+- sel: passage:mt-26
+  t: 33.2449
+  text: Ya de noche, el 14 de nisán de 33, en el patio del sumo sacerdote, Pedro niega tres veces conocer a Jesús y después
+    llora amargamente.
+  passages:
+  - Mt 26:69-75
+  - Lu 22:54-62
+- sel: event:pentecostes-33
+  t: 33.385
+  text: 'El 6 de siván de 33 Pedro habla a la multitud en Jerusalén. Es la primera de las llaves del Reino: se abre el camino
+    a judíos y prosélitos.'
+  passages:
+  - Hch 2:14-41
+  question:
+    text: ¿Cuántas personas se bautizaron aquel día?
+    options:
+    - Unas 120
+    - Unas 3.000
+    - Unas 5.000
+    answer: Unas 3.000
+    explanation: Hch 2:41. Los 120 eran los discípulos reunidos antes; los 5.000 hombres se cuentan más tarde, en Hch 4:4.
+- sel: event:curacion-del-cojo-en-la-puerta-hermosa
+  t: 33.6
+  text: Con Juan, cura a un cojo de nacimiento a la puerta del templo. Luego los dos declaran ante el Sanedrín que no pueden
+    callar lo que han visto.
+  passages:
+  - Hch 3:1-10
+  - Hch 4:18-20
+  unknown: 'El día: Perspicacia «Herodes», núm. 2, lo pone en 33, poco después de Pentecostés, y no da fecha más precisa.'
+- sel: event:pedro-y-juan-en-samaria
+  t: 34.5
+  text: 'Pedro y Juan van a Samaria. Los bautizados por Felipe reciben espíritu santo: la segunda llave. Pedro reprende a
+    Simón el mago.'
+  passages:
+  - Hch 8:14-25
+  unknown: 'El año: poco después de la muerte de Esteban, sin fecha en las fuentes.'
+- sel: event:pedro-resucita-a-dorcas
+  t: 36.4
+  text: En 36 cura a Eneas en Lida y resucita a Dorcas en Jope, la primera resurrección hecha por un apóstol. Se aloja con
+    Simón el curtidor.
+  passages:
+  - Hch 9:32-43
+- sel: event:pedro-predica-a-cornelio
+  t: 36.8
+  text: 'Otoño de 36. Tras una visión en Jope, Pedro va a Cesarea y predica a Cornelio. El espíritu cae sobre gentiles incircuncisos:
+    la tercera llave.'
+  passages:
+  - Hch 10:1-48
+  question:
+    text: ¿Qué tenía de nuevo lo que pasó en casa de Cornelio?
+    options:
+    - Eran los primeros samaritanos
+    - Eran los primeros gentiles incircuncisos
+    - Era el primer bautismo en Cesarea
+    answer: Eran los primeros gentiles incircuncisos
+    explanation: 'Perspicacia «Cornelio»: no era prosélito; por eso los seis hermanos de Jope se asombraron.'
+- sel: event:pablo-visita-a-cefas
+  t: 36.9
+  text: Quizás en 36, Pablo sube a Jerusalén para visitar a Cefas y pasa quince días con él.
+  passages:
+  - Gál 1:18, 19
+- sel: event:pedro-liberado-de-la-carcel
+  t: 44.25
+  text: Pascua de 44. Herodes Agripa I ha matado a Santiago y encierra a Pedro. Un ángel lo saca; Pedro avisa en casa de
+    María y se va a otro lugar.
+  passages:
+  - Hch 12:1-17
+  unknown: 'Adónde fue después: Hch 12:17 no lo dice.'
+- sel: event:concilio-de-jerusalen-49
+  t: 49.5
+  text: Hacia 49, en la reunión de apóstoles y ancianos, Pedro cuenta cómo Dios aceptó a los gentiles. Habla como testigo,
+    no como juez.
+  passages:
+  - Hch 15:6-11
+- sel: event:pablo-corrige-a-pedro-en-antioquia
+  t: 50
+  text: En Antioquía, Pedro deja de comer con los cristianos gentiles por miedo a los que venían de Jerusalén, y Pablo lo
+    corrige delante de todos.
+  passages:
+  - Gál 2:11-14
+  unknown: 'El año: después de la reunión de c. 49, sin fecha exacta.'
+- sel: letter:1-pedro
+  t: 63
+  text: Hacia 62-64 Pedro está en Babilonia, donde vivían muchos judíos. Con Silvano como amanuense y Marcos a su lado, escribe
+    a los cristianos de Asia Menor.
+  passages:
+  - 1Pe 1:1
+  - 1Pe 5:12, 13
+- sel: letter:2-pedro
+  t: 64
+  text: Hacia 64 escribe su segunda carta, sabiendo que pronto moriría, como Jesús le había anunciado.
+  passages:
+  - 2Pe 1:14
+  - Jn 21:18, 19
+  unknown: Dónde y cuándo murió. Tampoco hay base para decir que estuvo en Roma.
+sources:
+- it-pedro
+- it-pedro-cartas
+- si-3
+- bt-7
+- it-cornelio
+- tnm-tabla
+- it-herodes
+reason: Recorrido nuestro por los sucesos de Pedro. Fechas del estudio 3 y de Perspicacia «Pedro»; las llaves, del
+  recuadro del capítulo 7 de «Testimonio completo»; las cartas, de la Tabla de los libros.
+history:
+- date: '2026-09-29'
+  change: La parada de la curación del cojo decía que no se sabía el año; Perspicacia «Herodes», núm. 2, lo pone en 33.
+  source: it-herodes
+checked_on: '2026-09-29'
+status: verified

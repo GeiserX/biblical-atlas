@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: samir-de-efrain
+name: Samir
+names:
+- name: Samir
+type: city
+lat: 32.276111
+lon: 35.195
+precision: uncertain
+coord_source: openbible:af6476f
+coord_url: https://www.openbible.info/geo/ancient/af6476f/shamir-2
+coord_note: Perspicacia dice que quizá estaba donde después se levantó Samaria o cerca; el punto es el de esa identificación
+  en OpenBible.
+summary: Pueblo de la región montañosa de Efraín donde vivió el juez Tolá y donde lo enterraron. Es otro que la Samir de Judá.
+reason: 'Perspicacia «Samir», núm. 3; Jue 10:1, 2. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-samir
+- openbible-geo
+- jueces-10
+links:
+- title: 'Perspicacia: «Samir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003940
+  type: perspicacia
+- title: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

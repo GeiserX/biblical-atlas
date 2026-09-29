@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tapuah-de-juda
+name: Tapúah
+names:
+- name: Tapúah
+type: city
+lat: 31.695528
+lon: 34.996
+precision: uncertain
+coord_source: openbible:a2e9e40
+coord_url: https://www.openbible.info/geo/ancient/a2e9e40/tappuah-2
+coord_note: Beit Nattif, primera identificación de OpenBible, que Perspicacia da como tentativa.
+summary: Localidad de la Sefelá de Judá, distinta de Bet-Tapúah, cerca de Hebrón, y de la Tapúah de Efraín. Se la identifica,
+  con dudas, con Beit Nattif, unos 20 km al oeste de Belén.
+reason: 'Perspicacia «Tapúah», núm. 2; Jos 15:34. OpenBible: solo el punto.'
+sources:
+- it-tapuah
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Tapúah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004321
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

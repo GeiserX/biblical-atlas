@@ -1,0 +1,145 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bernabe
+name: Bernabé
+names:
+- name: José
+  note: Su nombre; Bernabé es un sobrenombre que le dieron los apóstoles.
+- name: Bernabé
+  note: Sobrenombre que significa «hijo del consuelo» (Hch 4:36); la nota de estudio lo liga a su don para animar a otros.
+summary: Levita nacido en Chipre, llamado José; los apóstoles le pusieron Bernabé. En Jerusalén vendió un terreno y dio el
+  dinero a los apóstoles. Acompañó a Pablo en el primer viaje y a la reunión de Jerusalén de 49.
+reason: Perspicacia «Bernabé» lo presenta como levita chipriota y compañero de Pablo; Hechos 13 a 15 narra los viajes
+  juntos.
+sources:
+- it-bernabe
+- hch-13
+- hch-15
+- hechos-4
+- bt-4
+- hch-9
+- hechos-11
+- hechos-12
+- hch-14
+- 1-corintios-9
+- galatas-2
+- colosenses-4
+links:
+- title: 'Perspicacia: «Bernabé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000566
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+perspicacia: '1200000566'
+history:
+- date: '2026-09-29'
+  change: Se añade el significado del sobrenombre (Hch 4:36).
+  source: hechos-4
+- date: '2026-09-29'
+  change: Se añaden su nombre y la venta del terreno de Hch 4:36, 37.
+  source: hechos-4
+- date: '2026-09-29'
+  change: La relación con Pablo hasta c. 49 cita ahora Hch 15:2, la subida juntos a Jerusalén, que ya entraba en su fecha
+    y no tenía fuente.
+  source: hch-15
+- date: '2026-09-29'
+  change: 'La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la
+    mano y Bernabé sigue a su lado en Antioquía.'
+  source: galatas-2
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: born_in
+  place: chipre
+  inferred: false
+  sources:
+  - it-bernabe
+  - it-chipre
+  - hechos-4
+  reason: Hch 4:36 lo presenta como levita nativo de Chipre (Perspicacia «Bernabé», párr. 1).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: juan-marcos
+  word: cousin
+  inferred: false
+  sources:
+  - it-marcos
+  - colosenses-4
+  reason: Col 4:10 llama a Marcos primo de Bernabé.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 36
+    to: 36
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 36 e.c.
+  inferred: false
+  sources:
+  - it-bernabe
+  - hch-9
+  reason: Lo presenta a los apóstoles en Jerusalén (Hch 9:27; Gál 1:18, 19).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 45
+    to: 49
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: hasta c. 49 e.c.
+  inferred: false
+  sources:
+  - it-bernabe
+  - it-pablo
+  - si-3
+  - hechos-11
+  - hch-13
+  - hch-15
+  - galatas-2
+  reason: Lo busca en Tarso, trabajan en Antioquía, llevan el socorro a Jerusalén, hacen juntos el primer viaje y suben a Jerusalén
+    por la circuncisión (Hch 11:25-30; 13:2; 15:2; Gál 2:1, 9, 13).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - it-bernabe
+  - hechos-4
+  - hechos-11
+  reason: Hch 4:36, 37 lo pone con los apóstoles en Jerusalén, y Hch 11:22 dice que la congregación de allí lo envió a Antioquía.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: antioquia-de-siria
+  inferred: false
+  sources:
+  - hechos-11
+  - it-bernabe
+  - hch-13
+  - hch-14
+  - galatas-2
+  reason: 'Hch 11:22-26: enviado a Antioquía, se quedó allí un año entero con Saulo; Hch 13:1 lo cuenta entre sus profetas
+    y maestros.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maria-madre-de-juan-marcos
+  word: aunt
+  inferred: true
+  sources:
+  - it-maria
+  - colosenses-4
+  reason: Col 4:10 llama a Marcos primo de Bernabé; Perspicacia «María», núm. 5, deduce que la madre de Marcos era tía de
+    Bernabé.
+  checked_on: '2026-09-29'
+  status: verified

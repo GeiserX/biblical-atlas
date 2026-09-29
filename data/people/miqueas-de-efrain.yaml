@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miqueas-de-efrain
+name: Miqueas
+names:
+- name: Miqueas
+perspicacia: 1200003032#1
+disambiguation: Miqueas de la región montañosa de Efraín, en tiempos de los jueces; no el profeta de Moréset ni los demás
+  Miqueas de Perspicacia.
+distinct_from:
+- miqueas-profeta
+summary: Efraimita que devolvió a su madre la plata que le había quitado. Con parte de ella se hizo una imagen tallada y montó
+  un santuario en su casa, con un levita de sacerdote. Los danitas se lo llevaron todo.
+reason: Perspicacia «Miqueas», núm. 1; Jue 17:1-13 y 18:2-26.
+sources:
+- it-miqueas
+- jueces-17
+- jueces-18
+links:
+- title: 'Perspicacia: «Miqueas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003032
+  type: perspicacia
+- title: Jueces 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/17
+  type: bible
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+not_claimed:
+- 'Que actuara contra Jehová a sabiendas: Perspicacia dice que quería honrarlo, aunque violó la prohibición de las imágenes
+  y pasó por alto el tabernáculo.'
+relations:
+- type: lived_in
+  place: region-montanosa-de-efrain
+  inferred: false
+  sources:
+  - jueces-17
+  - jueces-18
+  - it-miqueas
+  reason: 'Jue 17:1, 8 y 18:2, 13: su casa estaba en la región montañosa de Efraín.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-rehob
+name: Bet-Rehob
+names:
+- name: Bet-Rehob
+type: kingdom
+lat: 34.008889
+lon: 36.145278
+precision: zone
+coord_source: openbible:ad44b24
+coord_url: https://www.openbible.info/geo/ancient/ad44b24/beth-rehob
+coord_note: 'Primera identificación de OpenBible: punto representativo de la Becá, a la altura de Baalbek y unos 95 km al
+  norte de Dan. Perspicacia la pone probablemente en el sur del valle, sin sitio exacto.'
+summary: Pequeño reino arameo, quizá con una capital del mismo nombre. La llanura donde estaba Lais, luego Dan, le pertenecía.
+  En días de David, los ammonitas contrataron soldados sirios de allí.
+reason: 'Perspicacia «Bet-rehob»: probablemente en el sur de la Becá, entre el Líbano y el Antilíbano, y quizá el Rehob al
+  que llegaron los espías de Moisés. Jue 18:28. OpenBible: solo el punto.'
+sources:
+- it-bet-rehob
+- openbible-geo
+- jueces-18
+links:
+- title: 'Perspicacia: «Bet-rehob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000707
+  type: perspicacia
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

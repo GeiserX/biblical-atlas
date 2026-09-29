@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: maresa
+name: Maresá
+names:
+- name: Maresá
+- name: Maresah
+  note: Otra grafía que da la nota de Jos 15:44.
+type: city
+lat: 31.592963
+lon: 34.898241
+precision: point
+coord_source: openbible:a5cda86
+coord_url: https://www.openbible.info/geo/ancient/a5cda86/mareshah
+coord_note: Punto de OpenBible en Tell Sandahannah (Tel Maresha).
+summary: Ciudad de la Sefelá de Judá junto a un valle que subía de la costa hacia Hebrón. Rehoboam la fortificó y cerca de
+  ella venció Asá a Zérah el etíope.
+reason: 'Perspicacia «Maresá, Maresah», núm. 3; Jos 15:44; 2Cr 11:8; 14:9-13. OpenBible: solo el punto.'
+sources:
+- it-maresa
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Maresá, Maresah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002900
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

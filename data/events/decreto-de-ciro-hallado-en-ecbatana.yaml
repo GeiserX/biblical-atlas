@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: decreto-de-ciro-hallado-en-ecbatana
+title: Se encuentra en Ecbátana el decreto de Ciro
+date:
+  from: -519
+  to: -518
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 520-519 a.e.c. (cálculo nuestro)
+  note: 'Perspicacia dice que se halló unos 18 años después de emitirse (finales de 538 o principios de 537): unos 520-519.
+    Esd 5 y 6 no dan el año.'
+places:
+- ecbatana
+people: []
+passages:
+- Esd 5:3-17
+- Esd 6:1-12
+summary: Tatenai, gobernador al oeste del Éufrates, preguntó al rey si la obra era legal. En los archivos de Ecbátana apareció
+  el memorándum de Ciro, y Darío ordenó apoyar la obra con fondos reales.
+reason: Perspicacia «Darío», núm. 2, y «Ecbátana»; «Persia, persas» da los 18 años. El año es cálculo nuestro, por eso queda
+  pendiente.
+sources:
+- it-dario
+- it-ecbatana
+- it-persia
+- esdras-6
+links:
+- title: 'Perspicacia: «Ecbátana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001254
+  type: perspicacia
+- title: Esdras 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6
+  type: bible
+checked_on: '2026-09-28'
+status: pending

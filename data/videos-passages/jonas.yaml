@@ -1,0 +1,48 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: jonas
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_320_VIDEO"
+    title: "Información sobre Jonás"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_320_VIDEO"
+    published: "2017-11-06"
+chapters:
+  3:
+    - docid: "pub-co-r21_121_VIDEO"
+      title: "Ronald Curzan: Recuerde: los que no tienen fe pueden obtenerla. Los ninivitas"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_121_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_5_VIDEO"
+      title: "Sábado mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_5_VIDEO"
+      published: "2021-07-19"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-135_1_VIDEO"
+      title: "JW Broadcasting: Marzo de 2026"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_1_VIDEO"
+      published: "2026-03-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-135_3_VIDEO"
+      title: "Descubramos más tesoros: Jonás"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_3_VIDEO"
+      published: "2026-03-03"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwb-135_1_VIDEO"
+      title: "JW Broadcasting: Marzo de 2026"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_1_VIDEO"
+      published: "2026-03-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-135_3_VIDEO"
+      title: "Descubramos más tesoros: Jonás"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_3_VIDEO"
+      published: "2026-03-03"
+      matched_by: [subtitles]
+      citations: 1

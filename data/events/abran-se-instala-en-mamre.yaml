@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abran-se-instala-en-mamre
+title: Abrán se instala en Mamré, junto a Hebrón
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+narrative_order:
+  series: genesis
+  order: 13014
+places:
+- mamre
+- hebron
+- betel
+people:
+- abrahan
+passages:
+- Gé 13:14-18
+summary: Ya separado de Lot, Jehová promete a Abrán toda la tierra que alcanza a ver y una descendencia incontable. Abrán
+  recorre el país y se asienta junto a los árboles grandes de Mamré, en Hebrón.
+reason: Entre 1943 y 1933 a.e.c. (estudio 3). Perspicacia «Abrahán», párr. 10, y «Mamré», núm. 2. La promesa la recibe aún
+  junto a Betel.
+sources:
+- si-3
+- it-abrahan
+- it-mamre
+- genesis-13
+links:
+- title: Génesis 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

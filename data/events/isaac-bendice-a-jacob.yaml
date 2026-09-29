@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaac-bendice-a-jacob
+title: Isaac bendice a Jacob creyendo que es Esaú
+date:
+  from: -1780
+  to: -1780
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1781 a.e.c.
+narrative_order:
+  series: genesis
+  order: 27001
+places:
+- beer-seba
+people:
+- isaac
+- jacob
+- rebeca
+- esau
+passages:
+- Gé 27:1-29
+summary: Isaac, viejo y casi ciego, pide a Esaú una comida antes de bendecirlo. Rebeca disfraza a Jacob con la ropa de su
+  hermano y pieles de cabrito, y Jacob recibe la bendición del primogénito.
+reason: 'Perspicacia «Jacob», núm. 1: Isaac lo envió a Harán poco después de bendecirlo, a los 77 años; el estudio 3 fecha
+  esa salida en 1781 a.e.c., y Gé 27:41-45 la enlaza con la bendición. Jacob sale de Beer-Seba.'
+sources:
+- si-3
+- it-jacob
+- it-isaac
+- genesis-27
+links:
+- title: Génesis 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/27
+  type: bible
+checked_on: '2026-09-29'
+status: verified

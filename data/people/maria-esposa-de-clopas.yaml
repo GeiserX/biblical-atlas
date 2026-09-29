@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-esposa-de-clopas
+name: María, la esposa de Clopas
+names:
+- name: María
+- name: la otra María
+  note: Así la llama Mateo (Mt 27:61; 28:1).
+- name: María la madre de Santiago
+  note: Así la llaman Mr 16:1 y Lu 24:10.
+disambiguation: «La otra María» de Mateo; no es María Magdalena ni la madre de Jesús.
+distinct_from:
+- maria-magdalena
+- maria-madre-de-jesus
+- maria-de-betania
+- maria-de-roma
+not_claimed:
+- 'María, la esposa de Clopas, era tía de Jesús: lo dice solo la tradición.'
+summary: Esposa de Clopas; sus hijos eran Santiago el Menor y Josés. Estuvo junto al madero, vio dónde pusieron
+  el cuerpo de Jesús y fue a la tumba el 16 de nisán con otras mujeres.
+reason: Perspicacia «María», apartado 4 (párr. 28-29), y «Clopas»; Mt 27:56, 61; 28:1 y Jn 19:25.
+sources:
+- it-maria
+- it-clopas
+- mateo-27
+- juan-19
+- mateo-28
+- marcos-15
+- marcos-16
+- lucas-24
+links:
+- title: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  type: perspicacia
+- title: 'Perspicacia: «Clopas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000993
+  type: perspicacia
+- title: Juan 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/19
+  type: bible
+search: María
+perspicacia: 1200002918#4
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-27
+  - marcos-15
+  - juan-19
+  reason: 'Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.'
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,218 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: zacarias
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_380_VIDEO"
+    title: "Información sobre Zacarías"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_380_VIDEO"
+    published: "2017-12-04"
+chapters:
+  1:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-092_13_VIDEO"
+      title: "Izak Marais: Usemos siempre palabras agradables (Col. 4:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-092_13_VIDEO"
+      published: "2023-03-24"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_11_VIDEO"
+      title: "JW Broadcasting: Enero de 2025 (reunión anual del 2024, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_11_VIDEO"
+      published: "2025-01-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_12_VIDEO"
+      title: "Kenneth Cook: Ayudemos a derribar y a edificar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_12_VIDEO"
+      published: "2025-01-07"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod26_27_VIDEO"
+      title: "Leonard Myers: Jehová nos sostiene en los momentos difíciles (Sal. 55:22)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_27_VIDEO"
+      published: "2026-08-21"
+      matched_by: [subtitles]
+      citations: 1
+  3:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwb-135_7_VIDEO"
+      title: "Stephen Lett: Con la ayuda del espíritu santo aguantamos la persecución (Zac. 4:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_7_VIDEO"
+      published: "2026-03-03"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-097_1_VIDEO"
+      title: "JW Broadcasting: Febrero de 2022 (reunión anual del 2021, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_1_VIDEO"
+      published: "2022-02-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-097_6_VIDEO"
+      title: "Stephen Lett: En la lucha contra Satanás, la victoria es nuestra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_6_VIDEO"
+      published: "2022-02-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-135_1_VIDEO"
+      title: "JW Broadcasting: Marzo de 2026"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_1_VIDEO"
+      published: "2026-03-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201707_2_VIDEO"
+      title: "Anthony Morris III: Organizados para hacer la voluntad de Dios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201707_2_VIDEO"
+      published: "2017-07-27"
+      matched_by: [subtitles]
+      citations: 1
+  5:
+    - docid: "pub-jwb-120_11_VIDEO"
+      title: "JW Broadcasting: Enero de 2025 (reunión anual del 2024, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_11_VIDEO"
+      published: "2025-01-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-120_12_VIDEO"
+      title: "Kenneth Cook: Ayudemos a derribar y a edificar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_12_VIDEO"
+      published: "2025-01-07"
+      matched_by: [subtitles]
+      citations: 2
+  7:
+    - docid: "pub-jwbvod26_7_VIDEO"
+      title: "Anthony Griffin: ¿Ayunan por Jehová? (Zac. 7:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_7_VIDEO"
+      published: "2026-02-20"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-jwb-125_1_VIDEO"
+      title: "JW Broadcasting: Junio de 2025 (graduación de la clase 157 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-125_1_VIDEO"
+      published: "2025-06-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-125_8_VIDEO"
+      title: "Mark Sanderson: \"Lo deseable en un hombre es...\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-125_8_VIDEO"
+      published: "2025-06-03"
+      matched_by: [subtitles]
+      citations: 1
+  8:
+    - docid: "pub-jwbvod24_14_VIDEO"
+      title: "Mark Noumair: Jehová está con ellos (Zac. 8:23)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_14_VIDEO"
+      published: "2024-03-22"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-co-r21_131_VIDEO"
+      title: "David Schafer: Entre con fe por la puerta para trabajar más. Aprenda un nuevo idioma"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_131_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 5
+    - docid: "pub-co-r21_7_VIDEO"
+      title: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_7_VIDEO"
+      published: "2021-07-26"
+      matched_by: [subtitles]
+      citations: 5
+    - docid: "pub-jwbrd_201501_7_VIDEO"
+      title: "En su propio idioma y en su propia escritura"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbrd_201501_7_VIDEO"
+      published: "2021-08-03"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-092_12_VIDEO"
+      title: "Gajus Glockentin: Meditar en el rescate protege nuestra valiosa unidad (Juan 10:16)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-092_12_VIDEO"
+      published: "2023-03-17"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbam_201610_1_VIDEO"
+      title: "Reunión anual del 2016: Parte 1. Central mundial (Warwick, Nueva York)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbam_201610_1_VIDEO"
+      published: "2017-06-09"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbcov21_21_VIDEO"
+      title: "Entre con fe por la puerta para trabajar más"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov21_21_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+  11:
+    - docid: "pub-jwban_201503_1_VIDEO"
+      title: "Gerrit Lösch: “La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201503_1_VIDEO"
+      published: "2016-11-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-lffv_151_VIDEO"
+      title: "Profecías cumplidas en Jesús"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-lffv_151_VIDEO"
+      published: "2021-01-13"
+      matched_by: [subtitles]
+      citations: 1
+  13:
+    - docid: "pub-jwbvod24_5_VIDEO"
+      title: "Robert Ciranko: ¿Qué significa ser un amigo verdadero? (Mat. 7:12)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_5_VIDEO"
+      published: "2024-01-26"
+      matched_by: [subtitles]
+      citations: 1
+  14:
+    - docid: "pub-jwb_202102_10_VIDEO"
+      title: "Alex Reinmueller: \"Jehová nuestro Dios es un solo Jehová\" (Deut. 6:4, 5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202102_10_VIDEO"
+      published: "2021-02-08"
+      matched_by: [subtitles]
+      citations: 1

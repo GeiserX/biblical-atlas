@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ninfa
+name: Ninfa
+names:
+- name: Ninfa
+perspicacia: '1200003284'
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c. (fecha de Colosenses)
+summary: Cristiana en cuya casa se reunía una congregación a la que Pablo manda saludos. Perspicacia la sitúa en Colosas o
+  en Laodicea, o cerca; su artículo sobre Laodicea la pone, al parecer, allí.
+reason: Perspicacia «Ninfa» y «Laodicea, laodicenses», párr. 5; Col 4:15. La fecha es la de Colosenses, hacia 60-61 según la
+  Tabla de los libros.
+sources:
+- it-ninfa
+- it-laodicea
+- colosenses-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Ninfa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003284
+  type: perspicacia
+- title: Colosenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
+  type: bible
+relations:
+- type: lived_in
+  place: laodicea
+  inferred: true
+  sources:
+  - it-laodicea
+  - it-ninfa
+  - colosenses-4
+  reason: Col 4:15 la saluda junto a los hermanos de Laodicea, y Perspicacia «Laodicea» cree que la congregación de allí se
+    reunía en su casa. «Ninfa» deja abierta también Colosas.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

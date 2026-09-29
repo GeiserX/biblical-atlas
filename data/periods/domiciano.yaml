@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: domiciano
+name: Domiciano, emperador de Roma
+type: emperor
+date:
+  from: 81
+  to: 96
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 81-96 e.c.
+places:
+- roma
+summary: Persigue con dureza a los cristianos, sobre todo en sus tres últimos años. Se cree que en su reinado Juan fue desterrado
+  a Patmos, donde escribió Apocalipsis.
+reason: Perspicacia «César» y «Cronología» le dan 81-96 e.c. y le atribuyen, por tradición, el destierro de Juan; el estudio
+  3 (párr. 29) describe su persecución.
+sources:
+- it-cesar
+- it-cronologia
+- si-3
+search: Domiciano
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: secaca
+name: Secacá
+names:
+- name: Secacá
+type: city
+lat: 31.71684
+lon: 35.391592
+precision: point
+coord_source: openbible:af74b9f
+coord_url: https://www.openbible.info/geo/ancient/af74b9f/secacah
+summary: Ciudad del desierto de Judá, que suele identificarse con Khirbet es-Samrah, en una colina unos 6 km al oeste de la
+  parte norte del mar Muerto, en la meseta de el-Buqeiʽah.
+reason: 'Perspicacia «Secacá»; Jos 15:61. OpenBible: solo el punto.'
+sources:
+- it-secaca
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Secacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003873
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

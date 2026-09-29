@@ -1,0 +1,19 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: loida
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-co-r21_6_VIDEO"
+    title: "Sábado mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_6_VIDEO&appLanguage=S"
+    published: "2021-07-19"
+    hits: 4
+    terms:
+      "Loida": 4
+  - docid: "pub-co-r21_127_VIDEO"
+    title: "Seth Hyatt: Luchan con éxito por la fe. Los que solo cuentan con uno de sus padres"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_127_VIDEO&appLanguage=S"
+    published: "2021-09-13"
+    hits: 3
+    terms:
+      "Loida": 3

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: filipos
+name: Filipos
+names:
+- name: Filipos
+type: city
+lat: 41.01207
+lon: 24.28458
+precision: point
+coord_source: openbible:a49e1d0
+coord_url: https://www.openbible.info/geo/ancient/a49e1d0/philippi
+summary: Colonia romana y ciudad principal de su distrito de Macedonia, en la vía Egnatia. Hacia el año 50 fue la primera
+  ciudad europea donde predicó Pablo, que dejó allí una congregación que lo ayudó varias veces.
+reason: 'Perspicacia («Filipos») describe el lugar; aparece en Hch 16:12-40. La coordenada es de OpenBible: solo
+  tomamos el punto.'
+sources:
+- it-filipos
+- hch-16
+- openbible-geo
+- hch-20
+- filipenses-1
+- filipenses-4
+links:
+- title: 'Perspicacia: «Filipos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003467
+  type: perspicacia
+- title: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  type: bible
+history:
+- date: '2026-09-29'
+  change: Añade que era colonia romana (nota de estudio de Flp 1:27; Perspicacia «Filipos»), la primera ciudad europea que
+    oyó a Pablo, y la ayuda de su congregación.
+  source: filipenses-1
+checked_on: '2026-09-29'
+status: verified

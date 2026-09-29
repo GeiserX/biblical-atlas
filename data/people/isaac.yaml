@@ -1,0 +1,191 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isaac
+name: Isaac
+names:
+- name: Isaac
+date:
+  from: -1917
+  to: -1737
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1918-1738 a.e.c.
+summary: Hijo único de Abrahán y Sara, el heredero prometido. Se dejó atar sobre el altar en Moria. Se casó con Rebeca,
+  fue padre de Esaú y Jacob, y murió a los 180 años.
+reason: 'Perspicacia «Isaac», párr. 2, 11, 12, 16 y 21: nace en 1918 y muere en 1738 a.e.c. El cuadro del estudio 3 da los
+  mismos años.'
+sources:
+- it-isaac
+- si-3
+- genesis-21
+- genesis-35
+- mateo-1
+- genesis-17
+- genesis-22
+- genesis-24
+- genesis-25
+- genesis-26
+- genesis-27
+- genesis-28
+- salmos-105
+- lucas-3
+- hechos-7
+- romanos-9
+- galatas-4
+- josue-24
+links:
+- title: 'Perspicacia: «Isaac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+relations:
+- type: kin
+  person: abrahan
+  word: father
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-21
+  - mateo-1
+  - genesis-17
+  - genesis-22
+  - genesis-24
+  - genesis-25
+  - genesis-26
+  - lucas-3
+  - hechos-7
+  - romanos-9
+  - galatas-4
+  - josue-24
+  reason: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sara
+  word: mother
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-21
+  - genesis-17
+  - genesis-24
+  - romanos-9
+  reason: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: beer-seba
+  inferred: false
+  sources:
+  - it-isaac
+  - it-beer-seba
+  - genesis-26
+  reason: 'Perspicacia «Isaac», párr. 19, y «Beer-seba», párr. 6: acosado por los filisteos, pasó de Guerar a Beer-Seba (Gé
+    26:23).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-35
+  reason: 'Perspicacia «Isaac», párr. 21: cuando Jacob volvió, Isaac vivía en Hebrón (Gé 35:27).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: negueb
+  inferred: false
+  sources:
+  - it-negueb
+  - genesis-24
+  reason: 'Gé 24:62: vivía en la tierra del Négueb.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ismael-hijo-de-abrahan
+  word: half_brother
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-25
+  - genesis-21
+  - it-ismael
+  reason: 'Gé 25:9: sus hijos Isaac e Ismael entierran a Abrahán; uno es hijo de Sara y otro de Agar (Gé 21:9, 10). Perspicacia
+    «Isaac» e «Ismael» los llaman medios hermanos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: beer-lahai-roi
+  inferred: false
+  sources:
+  - it-beer-lahai-roi
+  - genesis-25
+  reason: 'Gé 25:11: tras la muerte de Abrahán, Isaac vivía cerca de Beer-Lahái-Roí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: guerar
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-26
+  reason: 'Gé 26:1, 6: por el hambre se fue a Guerar y se quedó a vivir allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: valle-de-guerar
+  inferred: false
+  sources:
+  - it-isaac
+  - genesis-26
+  reason: 'Gé 26:17: tras irse de Guerar, puso su campamento en el valle y vivió allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mamre
+  inferred: false
+  sources:
+  - it-mamre
+  - genesis-35
+  reason: 'Gé 35:27: Abrahán e Isaac vivieron como extranjeros en Mamré; Perspicacia «Mamré», núm. 2.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hebron
+  inferred: true
+  sources:
+  - it-isaac
+  - genesis-35
+  reason: 'Gé 35:27-29: Jacob llegó adonde estaba Isaac, en Hebrón, y allí murió. Perspicacia «Isaac», párr. 21.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rebeca
+  word: wife
+  inferred: false
+  sources:
+  - genesis-24
+  - genesis-25
+  - romanos-9
+  - it-rebeca
+  - genesis-26
+  - genesis-49
+  reason: 'Gé 24:67: Isaac tomó a Rebeca por esposa; Gé 25:20: tenía 40 años. Perspicacia «Rebeca», párr. 6.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: canaan
+  inferred: false
+  sources:
+  - salmos-105
+  - it-canaan
+  reason: 'Sl 105:9-12: heredero del juramento sobre Canaán, vivió allí como extranjero.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200002203'
+checked_on: '2026-09-29'
+status: verified

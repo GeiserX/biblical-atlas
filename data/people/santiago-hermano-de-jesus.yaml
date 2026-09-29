@@ -1,0 +1,140 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: santiago-hermano-de-jesus
+name: Santiago, hermano de Jesús
+names:
+- name: Santiago
+- name: Santiago, hermano de Jesús
+- name: Santiago el hermano del Señor
+  note: Así lo llama Pablo (Gál 1:19).
+disambiguation: El medio hermano de Jesús, no apóstol de los doce. No es Santiago hijo de Zebedeo ni Santiago hijo
+  de Alfeo.
+date:
+  from: 33
+  to: 62
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33-62 e.c.
+  note: Desde que ora con los apóstoles en 33 hasta antes de 62, fecha límite de su carta.
+summary: Medio hermano de Jesús, hijo de José y María, y casado. No creía durante el ministerio, pero antes de Pentecostés
+  oraba con los apóstoles. Fue columna de la congregación de Jerusalén y escribió la carta de Santiago.
+reason: Perspicacia «Santiago», apartado 4 (párr. 10 a 14; en el 10 lee en 1Co 9:5 que estaba casado), y «Santiago, Carta de»,
+  que lo identifica como el escritor.
+sources:
+- it-santiago
+- it-santiago-carta
+- galatas-1
+- mateo-13
+- marcos-6
+- juan-7
+- jy-cap-65
+- hechos-12
+- hch-15
+- hch-21
+- 1-corintios-9
+- galatas-2
+distinct_from:
+- santiago-hijo-de-zebedeo
+- santiago-hijo-de-alfeo
+- santiago-padre-de-tadeo
+not_claimed:
+- 'Cómo y cuándo murió: la Biblia no lo cuenta; Perspicacia recoge el relato del historiador Josefo sin darlo como
+  dato bíblico.'
+relations:
+- type: kin
+  person: maria-madre-de-jesus
+  word: mother
+  inferred: false
+  sources:
+  - it-santiago
+  - marcos-6
+  reason: 'Perspicacia, párr. 10: hijo de José y María (Mt 13:55).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: judas-hermano-de-jesus
+  word: brother
+  inferred: false
+  sources:
+  - it-judas
+  - judas-1
+  - mateo-13
+  - marcos-6
+  reason: Mt 13:55 los nombra a los dos entre los hermanos de Jesús, y en Jud 1 el escritor se presenta como hermano de Santiago.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - it-santiago-carta
+  - galatas-1
+  - hechos-12
+  - hch-21
+  - galatas-2
+  reason: Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jose-esposo-de-maria
+  word: father
+  inferred: true
+  sources:
+  - it-santiago
+  - mateo-13
+  - marcos-6
+  reason: Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jose-hijo-de-jose
+  word: brother
+  inferred: false
+  sources:
+  - mateo-13
+  - marcos-6
+  reason: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: simon-hijo-de-jose
+  word: brother
+  inferred: false
+  sources:
+  - mateo-13
+  - marcos-6
+  reason: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: nazaret
+  inferred: true
+  sources:
+  - mateo-13
+  reason: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Santiago»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
+  type: perspicacia
+- title: 'Perspicacia: «Santiago, Carta de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002314
+  type: perspicacia
+- title: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  type: bible
+perspicacia: 1200002313#4
+history:
+- date: '2026-09-29'
+  change: 'La relación con Judas pasa a deducido: false, porque la afirman Mt 13:55 y Jud 1; la inversa ya lo decía así.'
+  source: mateo-13
+- date: '2026-09-29'
+  change: 'El resumen añade que estaba casado: Perspicacia «Santiago», apartado 4, lo lee en 1Co 9:5.'
+  source: 1-corintios-9
+- date: '2026-09-29'
+  change: La razón cita de dónde sale que estaba casado.
+  source: 1-corintios-9
+checked_on: '2026-09-29'
+status: verified

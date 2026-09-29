@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: camino-de-emaus
+title: Con dos discípulos camino de Emaús
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 16
+places:
+- emaus
+- jerusalen
+people:
+- jesus
+- cleopas
+passages:
+- Lu 24:13-35
+summary: Jesús camina con Cleopas y otro discípulo hacia Emaús y les explica las Escrituras. Lo reconocen al partir
+  el pan, y esa misma noche vuelven a Jerusalén.
+reason: A7-H pone Emaús entre los lugares del 16 de nisán; Perspicacia «Cleopas» y «Emaús» (párr. 2).
+sources:
+- tnm-a7-h
+- lucas-24
+- it-cleopas
+- it-emaus
+- jy-cap-135
+search: Con dos discípulos camino de Emaús
+narrative_order:
+  series: a7
+  order: 128
+history:
+- date: '2026-09-29'
+  change: 'El encuentro y la cena pasan camino de Emaús y en la aldea (Lu 24:13-31): Emaús es el sitio principal y va primero.
+    Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  source: lucas-24
+checked_on: '2026-09-29'
+status: verified

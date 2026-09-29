@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: parmenas
+name: Parmenas
+names:
+- name: Parmenas
+perspicacia: '1200003385'
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre 33 y 34 e.c.
+  note: 'Orden del relato: después de Pentecostés de 33 y antes de la conversión de Saulo, que el estudio 3 pone en 34.'
+summary: Discípulo de Jerusalén al que los apóstoles, tras orar, impusieron las manos junto con otros seis para que el reparto
+  diario de alimentos fuera justo, poco después de Pentecostés de 33.
+reason: Perspicacia «Parmenas»; Hch 6:1-6 y la nota de estudio de Hch 6:5, que comenta los siete nombres griegos.
+sources:
+- it-parmenas
+- hechos-6
+- si-3
+relations:
+- type: accompanies
+  person: esteban
+  caption: compañero entre los siete
+  inverse_caption: compañero entre los siete
+  inferred: false
+  sources:
+  - hechos-6
+  reason: Hch 6:5 los nombra juntos entre los siete.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - hechos-6
+  - it-parmenas
+  reason: 'Hch 6:5-7: lo eligen en la congregación de Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Parmenas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003385
+  type: perspicacia
+- title: Hechos 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,71 @@
+# biblical-earth: fuentes de la cobertura de levitico. Esquema en docs/investigacion/README.md.
+it-levitico-libro:
+  title: Levítico, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002732
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-instalacion:
+  title: Instalación
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002179
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-sacerdote:
+  title: Sacerdote
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003553
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-sumo-sacerdote:
+  title: Sumo sacerdote
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002023
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-fuego:
+  title: Fuego
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001523
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-lepra:
+  title: Lepra
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002720
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-dia-de-expiacion:
+  title: Día de Expiación
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000462
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-azazel:
+  title: Azazel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000488
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-selomit:
+  title: Selomit
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003994
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-dibri:
+  title: Dibrí
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001174
+  level: 1
+  published: null
+  checked_on: '2026-09-29'

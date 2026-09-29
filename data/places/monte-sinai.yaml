@@ -1,0 +1,111 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-sinai
+name: Monte Sinaí
+names:
+- name: Monte Sinaí
+- name: Horeb
+  note: Al parecer, otro nombre del monte o de la zona montañosa que lo rodea (Éx 3:1).
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Macizo de dos cumbres en el sur de la península
+  geometry:
+    type: zone
+    lat: 28.547639
+    lon: 33.970278
+    radius_km: 4
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sinai
+  - w93-sinai
+  - g99-monte-sinai
+  - lbt-egipto-a-la-tierra-prometida
+  reason: La tradición lo liga a una cordillera de granito de unos 3 km con dos cumbres (Perspicacia, párr. 4). La Atalaya
+    de 1993 lo ve muy posible; la ruta de Israel iba hacia las montañas del sur.
+  note: 'Centro calculado: punto medio entre Jebel Musa y Ras Safsafa de OpenBible. Radio nuestro.'
+  coord_source: calculation
+- name: Ras Safsafa, la cumbre norte
+  geometry:
+    type: point
+    lat: 28.555556
+    lon: 33.967222
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-sinai
+  - g99-monte-sinai
+  reason: Muchos eruditos la prefieren porque a su pie se abre la llanura de er-Raha, de unos 3 por 1 km; frente a Jebel Musa
+    no hay una llanura así (Perspicacia, párr. 4-6).
+  coord_source: openbible:abfba2a
+  coord_url: https://www.openbible.info/geo/ancient/abfba2a/mount-sinai
+- name: Jebel Musa, la cumbre sur
+  geometry:
+    type: point
+    lat: 28.539722
+    lon: 33.973333
+  checked_on: '2026-09-29'
+  status: tradition
+  sources:
+  - it-sinai
+  - g99-monte-sinai
+  reason: Es la cumbre que la tradición identifica con el Sinaí, la más alta del macizo (Perspicacia, párr. 6; ¡Despertad!
+    1999, párr. 5).
+  coord_source: openbible:abfba2a
+  coord_url: https://www.openbible.info/geo/ancient/abfba2a/mount-sinai
+summary: Monte de Arabia, según Gál 4:25, donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad;
+  lo más citado es un macizo de dos cumbres en el sur de la península del Sinaí.
+reason: Perspicacia «Sinaí» (párr. 1, con Gál 4:25, y 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin
+  Bishar no aparecen en wol.jw.org, así que no los incluimos.
+sources:
+- it-sinai
+- it-horeb
+- tnm-b3
+- exodo-19
+- openbible-geo
+- salmos-106
+- exodo-3
+- exodo-4
+- exodo-20
+- exodo-24
+- exodo-25
+- exodo-26
+- exodo-27
+- exodo-31
+- exodo-32
+- exodo-33
+- exodo-34
+- hechos-7
+- levitico-7
+- levitico-25
+- levitico-26
+- levitico-27
+- numeros-10
+- deuteronomio-1
+- deuteronomio-4
+- deuteronomio-5
+- deuteronomio-9
+- galatas-4
+links:
+- title: 'Perspicacia: «Sinaí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
+  type: perspicacia
+- title: 'Perspicacia: «Horeb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002073
+  type: perspicacia
+- title: Éxodo 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
+  type: bible
+history:
+- date: '2026-09-29'
+  change: Añade que Pablo lo llama montaña de Arabia (Gál 4:25), con lo que abre Perspicacia «Sinaí», párr. 1.
+  source: galatas-4
+- date: '2026-09-29'
+  change: La razón cita el párr. 1 de Perspicacia «Sinaí», que apoya lo de Arabia.
+  source: galatas-4
+checked_on: '2026-09-29'
+status: verified

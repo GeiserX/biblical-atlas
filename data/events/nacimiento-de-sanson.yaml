@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-sanson
+title: Nace Sansón
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: Sansón es el último juez del relato principal)'
+narrative_order:
+  series: jueces
+  order: 13024
+places:
+- zora
+people:
+- sanson
+- manoah
+passages:
+- Jue 13:24
+summary: La esposa de Manóah da a luz un hijo y lo llama Sansón. El niño crece con la bendición de Jehová.
+reason: 'Jue 13:24; Perspicacia «Zorá»: Sansón nació en Zorá. Fecha: tras Jefté (c. 1173, «Jefté»), pues el libro va casi en
+  orden («Jueces, Libro de»), y antes de Saúl (1117, estudio 3).'
+sources:
+- jueces-13
+- it-zora
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+links:
+- title: Jueces 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/13
+  type: bible
+- title: 'Perspicacia: «Sansón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

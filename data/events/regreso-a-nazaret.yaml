@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: regreso-a-nazaret
+title: José regresa de Egipto y la familia se instala en Nazaret
+date:
+  from: 0
+  to: 1
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 1 a.e.c. y 1 e.c.
+narrative_order:
+  series: a7
+  order: 7
+places:
+- nazaret
+- egipto
+- israel
+- judea
+- galilea
+people:
+- jose-esposo-de-maria
+- jesus
+- maria-madre-de-jesus
+- arquelao
+- herodes-el-grande
+present:
+- jose-esposo-de-maria
+- jesus
+- maria-madre-de-jesus
+passages:
+- Mt 2:19-23
+- Lu 2:39, 40
+summary: Muerto Herodes, un ángel manda a José volver a la tierra de Israel. Al saber que Arquelao reina en Judea, y avisado
+  de nuevo en sueños, se aparta a Galilea y se queda a vivir en Nazaret.
+reason: A7-A, fila 7, junta Mt 2:19-23 y Lu 2:39, 40. Perspicacia «José» (núm. 8) explica que Lucas resume mucho y deja fuera
+  la estancia en Egipto.
+sources:
+- mateo-2
+- lucas-2
+- tnm-a7-a
+- it-jose
+- it-arquelao
+- jy-cap-8
+links:
+- title: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

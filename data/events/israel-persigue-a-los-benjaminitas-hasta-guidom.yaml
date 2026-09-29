@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-persigue-a-los-benjaminitas-hasta-guidom
+title: Israel persigue a los benjaminitas hasta Guidom
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 20042
+places:
+- guibea-de-benjamin
+- guidom
+- penasco-de-rimon
+people: []
+passages:
+- Jue 20:42-46
+summary: 'Los benjaminitas huyen hacia el desierto y el peñasco de Rimón. Caen 18.000 al este de Guibeá, 5.000 por los caminos
+  y 2.000 más hasta Guidom: 25.000 guerreros en un solo día.'
+reason: 'Perspicacia «Guidom»: hasta allí los persiguieron las otras tribus; «Rimón», núm. 4. Fecha: «Jueces, Libro de», «Orden
+  del libro»: poco después de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+sources:
+- jueces-20
+- it-guidom
+- it-rimon
+- it-jueces
+- si-3
+- it-finehas
+links:
+- title: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

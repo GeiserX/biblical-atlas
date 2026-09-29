@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: colosenses
+book: Colosenses
+writer: pablo
+reference: Col 1:2; 4:7-9
+written_in:
+- roma
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+recipients:
+  text: Congregación de Colosas (la llevaron Tíquico y Onésimo)
+  places:
+  - colosas
+carriers:
+- tiquico
+- onesimo
+people:
+- timoteo
+- tiquico
+- onesimo
+- aristarco
+- juan-marcos
+- epafras
+- lucas
+- demas
+- arquipo
+- bernabe
+- jesus-justo
+- ninfa
+context_origin:
+  summary: Hacia el final del primer encarcelamiento en Roma; Epafras le había informado del estado de la congregación.
+  sources:
+  - it-colosenses
+context_destination:
+  summary: Pablo no había predicado en la ciudad. Algunos promovían una filosofía engañosa y el ascetismo.
+  sources:
+  - it-colosenses
+  - it-filemon
+reason: La Tabla y el estudio 3 dan Roma y c. 60-61; Col 4:7-9 dice que la llevan Tíquico y Onésimo.
+sources:
+- tnm-tabla
+- si-3
+- it-colosenses
+- colosenses-1
+- it-tiquico
+- it-onesimo
+- it-epafras
+- it-aristarco
+- colosenses-4
+- it-laodicea
+links:
+- title: 'Perspicacia: «Colosenses, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001011
+  type: perspicacia
+- title: Colosenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified
