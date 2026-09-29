@@ -106,6 +106,7 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 - Daniel 7 y 8 son de los años primero y tercero de Belsasar, antes de Daniel 5.
 - Ezequiel 29:17-21 es del año 27 del destierro, posterior a los capítulos que lo siguen (40:1 es del año 25).
 - Salmos: cada salmo con encabezamiento se ordena por el suceso que nombra; los demás no son sucesos.
+- 1473 a.e.c., de la victoria sobre Og al cruce del Jordán: Números, Deuteronomio y Josué 1-5 van en la serie `numeros`, porque `build.py` ordena las series de un mismo año por su nombre y `deuteronomio` o `josue` saldrían antes que Números. Números usa su capítulo y versículo; Deuteronomio les suma 100000 (`primer-discurso-de-moises` es 101001) y Josué, 200000 (`entrada-en-canaan` es 203014).
 
 Las series `a7` y `hechos` ya tienen su propia numeración.
 

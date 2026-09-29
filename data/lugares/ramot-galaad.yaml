@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ramot-galaad
+nombre: Ramot-Galaad
+nombres:
+- nombre: Ramot-Galaad
+- nombre: Ramot
+  nota: 'Así la llama Dt 4:43: Ramot, en Galaad.'
+- nombre: Ramá
+  nota: Forma breve que usan 2Re 8:28, 29 y 2Cr 22:5, 6.
+tipo: ciudad
+lat: 32.499852
+lon: 36.014988
+precision: incierto
+coord_fuente: openbible:a2fe63c
+coord_url: https://www.openbible.info/geo/ancient/a2fe63c/ramoth-gilead
+coord_nota: OpenBible lo pone en Tell er-Rumeith. Perspicacia no conoce el sitio seguro y da Tell Ramith, unos 45 km al sureste
+  del mar de Galilea, como una de las propuestas.
+resumen: Ciudad de Gad en Galaad, levita y de refugio, una de las tres que apartó Moisés al este del Jordán. Por su posición
+  fue clave en las guerras entre Israel y Siria.
+razon: 'Perspicacia «Ramot-galaad»; Dt 4:43. OpenBible: solo el punto.'
+fuentes:
+- it-ramot-galaad
+- openbible-geo
+- deuteronomio-4
+enlaces:
+- titulo: 'Perspicacia: «Ramot-galaad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003638
+  tipo: perspicacia
+- titulo: Deuteronomio 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
