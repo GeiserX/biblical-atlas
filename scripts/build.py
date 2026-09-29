@@ -385,7 +385,7 @@ def escribir_sqlite(salida, ruta):
     CREATE TABLE personas (id TEXT PRIMARY KEY, nombre TEXT, nombres TEXT, {fecha}, desambiguacion TEXT,
         resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE relaciones (persona_id TEXT REFERENCES personas(id), orden INTEGER, tipo TEXT, persona TEXT,
-        lugar TEXT, relacion TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT);
+        lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT);
     CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), referencia TEXT,
         {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
@@ -440,7 +440,7 @@ def escribir_sqlite(salida, ruta):
                          o.get("desambiguacion"), o["resumen"], o["razon"], o["consultado"], o["estado"]))
         for i, r in enumerate(o.get("relaciones") or []):
             ins("relaciones", (o["id"], i, r.get("tipo"), r.get("persona"), r.get("lugar"), r.get("relacion"),
-                               *_fecha_cols(r.get("fecha")), int(bool(r.get("deducido"))), r.get("razon"), r.get("estado")))
+                               r.get("relacion_inversa"), *_fecha_cols(r.get("fecha")), int(bool(r.get("deducido"))), r.get("razon"), r.get("estado")))
         fuentes_hecho("persona", o["id"], o)
     for o in salida["viajes"]:
         ins("viajes", (o["id"], o["nombre"], o["persona"], o["referencia"], *_fecha_cols(o.get("fecha")),

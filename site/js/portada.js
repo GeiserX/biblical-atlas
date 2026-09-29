@@ -63,6 +63,7 @@ function pintar() {
     </section>
     <footer class="portada-pie"><span>Código libre, GPL-3.0</span><span class="be-spacer"></span><a href="acerca.html">Qué es biblical-earth y a quién damos las gracias</a></footer>
   </div>`;
+  BE.ajustarAyuda?.(v.querySelector('input[name="q"]'), 'Persona, lugar, capítulo o año', 'Persona, lugar o año', 'Buscar');
 }
 
 function abrir({ desdeHash = false } = {}) {

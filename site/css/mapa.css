@@ -4,7 +4,7 @@
 .mapa { background: #b8c7c0; }   /* el mar del relieve antiguo, por si asoma en una animación */
 .app[data-mapa="actual"] .mapa, .app[data-mapa="cortina"] .mapa { background: #dfe8ec; }
 .mapa::after { z-index: 1; }
-.mapa-gl { position: absolute; inset: 0; }
+.mapa-gl { position: absolute; inset: 0; isolation: isolate; }   /* los marcadores del mapa quedan debajo de las tarjetas que flotan encima (suceso, leyenda, vistas), no por medio */
 .antiguo-dom { position: absolute; max-width: none; pointer-events: none; user-select: none; }
 .maplibregl-ctrl-attrib { font-size: 10px; background: rgba(255, 252, 245, .8) !important; }
 .maplibregl-ctrl-group { border-radius: var(--r-md) !important; box-shadow: var(--shadow-2) !important; }
@@ -67,7 +67,7 @@
 .mientras-titulo { display: block; border: 0; background: none; padding: 0; margin: 4px 0; text-align: left; cursor: pointer; font: 600 var(--fs-xl)/1.2 var(--font-serif); color: var(--ink); }
 .mientras p { margin: 0 0 8px; font-size: var(--fs-sm); color: var(--ink-2); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .mientras-titulo { font-size: var(--fs-lg) !important; }
-.leyenda { position: absolute; left: 14px; bottom: 28px; z-index: 2; }
+.leyenda { position: absolute; left: 14px; bottom: 28px; z-index: 2; max-height: calc(100% - 120px); overflow: auto; }   /* con el mapa bajo (línea ampliada), la leyenda se desplaza en vez de tapar los botones del mapa */
 .leyenda .be-card__eyebrow { margin-bottom: 2px; }
 .leyenda-rastro { width: 26px; border-top: 2px solid var(--ink-3); opacity: .5; }
 .nota-carta { margin: 10px 0 0; font-size: var(--fs-sm); }
@@ -85,13 +85,15 @@
 
 /* ---------- Ficha: contenido ---------- */
 .cerrar-ficha { align-self: flex-end; margin-top: -30px; cursor: pointer; }
+/* Las migas no se meten debajo del botón que sube a su fila: parten en líneas antes de llegar a él. */
+.be-crumbs:has(+ .cerrar-ficha) { padding-right: 136px; min-height: 28px; }
 .enlace-titulo { border: 0; background: none; padding: 0; font: inherit; color: inherit; cursor: pointer; text-align: left; }
 .enlace-titulo:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .icono-lugar { width: 10px; height: 10px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 1.8px solid currentColor; display: inline-block; margin-right: 2px; }
 .fila-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .fila-chips .be-chip { cursor: pointer; }
 .be-ref:hover { background: #d4e6db; }
-.be-card__eyebrow .cuenta, .cuenta { color: var(--ink-4); font-weight: 700; margin-left: 2px; }
+.be-card__eyebrow .cuenta, .cuenta { color: var(--ink-3); font-weight: 700; margin-left: 2px; }
 .be-card__eyebrow { margin: 0; }
 .ficha-sec .be-card__eyebrow { margin-bottom: 8px; }
 .razon { margin: 0 0 10px; font-size: var(--fs-md); color: var(--ink-2); line-height: 1.45; }
@@ -140,6 +142,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
   .tira-suceso__tipo { color: var(--ink-3); font-weight: 700; font-size: var(--fs-2xs); letter-spacing: .04em; text-transform: uppercase; }
   .leyenda-boton { flex: none; margin-left: auto; height: 32px; }
   .leyenda.abierta { display: block !important; position: absolute; top: 54px; left: 10px; bottom: auto !important; max-width: calc(100% - 20px); z-index: 4; gap: 3px; }
+  .leyenda.abierta { max-height: calc(100% - 72px - var(--hoja-max, 0px)); }   /* no se mete bajo la hoja */
   .be-ends { grid-template-columns: 1fr; }
   .be-ends__arrow { transform: rotate(90deg); padding: 4px 0; }
   .maplibregl-ctrl-attrib { font-size: 9px; }
@@ -293,28 +296,33 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .hecho .be-row__meta { display: block; }
 .sub-bloque { margin: 10px 0 2px; font-size: var(--fs-2xs); color: var(--ink-3); }
 .distancia { color: var(--ink-2); }
-.tira { display: block; width: 100%; height: auto; margin-top: 4px; overflow: visible; font-family: var(--font-sans); }
-.tira-eje { stroke: var(--line-2); }
-.tira-anio { font-size: 8.5px; fill: var(--ink-3); }
-.tira-pliegue { font-size: 11px; fill: var(--ink-4); }
-.tira-epoca rect { fill: var(--paper-2); stroke: var(--line-2); }
-.tira-epoca text { font-size: 9px; font-style: italic; fill: var(--ink-2); font-family: var(--font-serif); }
-.tira-banda { cursor: pointer; }
-.tira-banda rect { fill: color-mix(in srgb, var(--node-periodo) 55%, #fff); stroke: var(--node-periodo); stroke-width: .6; }
-.tira-banda--2 rect { fill: var(--tier2-soft); stroke: var(--tier2); stroke-dasharray: 3 2; }
-.tira-banda text { font-size: 8.5px; font-weight: 600; fill: #fff; pointer-events: none; }
-.tira-banda--2 text { fill: var(--tier2); }
-.tira-hito { cursor: pointer; }
-.tira-hito line { stroke: var(--ink-4); stroke-width: .8; }
-.tira-hito rect { fill: var(--node-evento); stroke: #fff; stroke-width: 1; }
-.tira-hito--parada rect { fill: var(--accent); }
-.tira-hito--carta rect { fill: var(--node-texto); }
-.tira-hito--hallazgo rect { fill: var(--node-hallazgo); }
-.tira-hito--persona rect { fill: var(--node-persona); }
-.tira-hito--n2 rect { fill: #fff; stroke: var(--tier2); stroke-dasharray: 2 1; }
-.tira--pendiente rect { stroke: var(--unverified); stroke-dasharray: 2 1.5; stroke-width: 1.2; }
-.tira-hito:hover rect, .tira-hito:focus rect, .tira-banda:hover rect { stroke: var(--ink); stroke-width: 1.5; }
-.tira-cursor line { stroke: var(--gold); stroke-width: 2; }
+/* Toda la historia del lugar (be-g9s): una lista por fechas, con su marca y su tipo en palabras. */
+.historia { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; }
+.historia > li { display: grid; grid-template-columns: 5.6rem 14px minmax(0, 1fr); column-gap: 8px; align-items: start; padding: 5px 0; border-top: 1px solid var(--line); font-size: var(--fs-sm); }
+.historia > li:first-child { border-top: 0; }
+.historia-fecha { color: var(--ink-2); font-size: var(--fs-xs); font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.35; padding-top: 1px; }
+.historia-marca { width: 10px; height: 10px; margin-top: 4px; transform: rotate(45deg); background: var(--node-evento); box-shadow: 0 0 0 1px var(--surface), 0 0 0 2px var(--ink-3); }
+.historia-fila--parada .historia-marca { border-radius: 50%; transform: none; background: var(--accent); }
+.historia-fila--carta .historia-marca { transform: none; background: var(--node-texto); }
+.historia-fila--hallazgo .historia-marca { background: var(--node-hallazgo); }
+.historia-fila--periodo .historia-marca { transform: none; width: 12px; height: 8px; margin-top: 5px; border-radius: 2px; background: var(--node-periodo); }
+.historia-fila--persona .historia-marca { border-radius: 50%; transform: none; background: var(--node-persona); }
+.historia-fila--nombre .historia-marca { transform: none; background: transparent; box-shadow: inset 0 0 0 1.5px var(--ink-3); }
+.historia-fila--n2 .historia-marca { background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--tier2); }
+.historia-texto { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.historia-titulo { font-weight: 600; line-height: 1.3; color: var(--ink); }
+.historia-titulo:hover, .historia-titulo:focus-visible { color: var(--link); text-decoration: underline; }
+.historia-meta { font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.35; }
+.historia-fila--ahora { background: var(--gold-soft); box-shadow: inset 3px 0 0 var(--gold); border-radius: 4px; padding-left: 6px !important; margin-left: -6px; }
+.historia-ahora { color: var(--ink); }
+.historia-cursor { align-items: center !important; border-top: 2px solid var(--gold) !important; color: var(--ink); }
+.historia-cursor .historia-fecha { grid-column: 1; color: var(--ink); }
+.historia-cursor__txt { grid-column: 3; font-size: var(--fs-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.historia-hueco { color: var(--ink-2); font-size: var(--fs-xs) !important; font-style: italic; }
+.historia-hueco > span:last-child { grid-column: 3; }
+.historia-mas { display: block !important; padding: 6px 0 !important; font-size: var(--fs-xs) !important; }
+.historia-boton { margin-top: 8px; cursor: pointer; }
+@media (max-width: 420px) { .historia > li { grid-template-columns: 4.6rem 12px minmax(0, 1fr); } }
 .sin-anio { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 8px; }
 .sin-anio .be-chip { cursor: pointer; background: repeating-linear-gradient(135deg, var(--surface-2) 0 5px, var(--paper-2) 5px 10px); }
 
@@ -341,14 +349,38 @@ ol.paradas li:first-child .be-row { border-top: 0; }
 .conecta .be-chip, .be-ref[data-sel] { cursor: pointer; }
 
 @media (max-width: 760px) {
-  .panel-mapa { top: 54px; right: 10px; left: 10px; width: auto; max-height: 55%; }
+  .panel-mapa { top: 54px; right: 10px; left: 10px; width: auto; max-height: calc(100% - 72px - var(--hoja-max, 0px)); }   /* no se mete bajo la hoja */
   .situacion { display: none !important; }
   .cand-rotulo { font-size: var(--fs-2xs); }
 }
 .panel-mapa[hidden], .situacion[hidden] { display: none; }
+/* Mapa encogido por los separadores (base.js): la tarjeta del suceso y la leyenda no caben juntas; la tarjeta se quita.
+   Y si la leyenda llega hasta el mapa de situación, este se quita. */
+.app.mapa-bajo .mientras, .app.situacion-tapada .situacion { display: none !important; }
+/* El mapa de situación (arriba a la izquierda) no queda debajo de la tarjeta del recorrido o de «Ahora mismo». */
+.app:has(#vista-recorrido:not([hidden]), #vista-ahora:not([hidden])) .situacion { display: none !important; }
 .be-card__eyebrow .insignia-incierta { margin-left: 0; margin-top: 4px; }
 .nota-tira { margin: 2px 0 0; font-size: var(--fs-xs); }
 .acompana { font-size: var(--fs-xs); margin-left: 6px; }
 .posibles li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; }
 .posible { font-family: var(--font-sans); letter-spacing: .02em; line-height: 1.6; }
 .pildora-carta.sin-etiqueta { visibility: hidden; }
+
+/* Tabletas en vertical: los tres mapas y el modo reunión están arriba a la izquierda del mapa (base.css), así que lo
+   que flota arriba baja por debajo de ellos. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .mientras, .situacion, .cortina-tag, .panel-mapa { top: 64px; }
+}
+/* Con el recorrido o «Ahora mismo» abiertos, su tarjeta ya dice qué pasa: la del suceso no se pone debajo. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .app:has(#vista-recorrido:not([hidden]), #vista-ahora:not([hidden])) .mientras { display: none; }
+  /* En vertical la tarjeta del suceso ocupa la esquina del mapa de situación: con ella a la vista, el mapa de
+     situación se quita, como con el recorrido (be-f1w). */
+  .app:not(.mapa-bajo):has(#mientras:not([hidden])) .situacion { display: none !important; }
+}
+/* La leyenda no pasa del ancho del mapa ni tapa su columna de botones: sus filas parten en dos líneas en vez de
+   cortarse en el borde. */
+@media (max-width: 900px) {
+  .leyenda { max-width: calc(100% - 82px); }
+  .leyenda .be-legend__row { white-space: normal; }
+}

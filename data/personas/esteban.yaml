@@ -25,6 +25,7 @@ relaciones:
 - tipo: acompana
   persona: felipe-evangelizador
   relacion: compañero entre los siete
+  relacion_inversa: compañero entre los siete
   deducido: false
   fuentes:
   - it-felipe

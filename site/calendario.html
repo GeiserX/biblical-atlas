@@ -98,7 +98,7 @@ function pintar(D) {
 
   // La tabla de los meses: año sagrado desde Nisán (Éx 12:2) y civil desde Tisri, siete meses después.
   const meses = [...(cal.meses || [])].sort((a, b) => a.orden - b.orden);
-  const civil = (o) => (o > 12 ? '·' : String(o >= 7 ? o - 6 : o + 6));
+  const civil = (o) => (o > 12 ? '<span class="cal-nada" title="Veadar no tiene número en el año civil">·</span>' : String(o >= 7 ? o - 6 : o + 6));
   const epoca = (n) => (n.hasta != null && n.desde == null ? `hasta c. ${fmtAnio(n.hasta)}` : n.desde != null && n.hasta == null ? `desde c. ${fmtAnio(n.desde)}` : n.desde != null ? `c. ${fmtAnio(n.desde)} - ${fmtAnio(n.hasta)}` : '');
   const fila = (m) => {
     const nombres = (m.nombres && m.nombres.length ? m.nombres : [{ nombre: m.nombre }]);
@@ -144,7 +144,9 @@ function pintar(D) {
   document.getElementById('contenido').innerHTML = secciones.map((s) => `<section id="${s.id}"><h2>${esc(s.titulo)}</h2>${s.html}</section>`).join('');
   // Con la página ya pintada, un ancla de la dirección (#mes-nisan, #dia-hebreo) lleva a su sitio.
   const ancla = location.hash.slice(1);
-  if (ancla && !ancla.includes('=')) document.getElementById(ancla)?.scrollIntoView();
+  const mes = new URLSearchParams(ancla).get('mes');
+  if (mes) document.getElementById(`mes-${mes}`)?.scrollIntoView();
+  else if (ancla && !ancla.includes('=')) document.getElementById(ancla)?.scrollIntoView();
 }
 
 cargar().then(pintar).catch((err) => {

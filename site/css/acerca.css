@@ -63,3 +63,13 @@ a { color: var(--link); }
   .pasos li { padding-left: 52px; }
   .pasos li::before { left: 12px; }
 }
+
+/* Con el dedo (be-f1w): dianas de 44 px en la barra y en el índice. */
+@media (any-pointer: coarse) {
+  .acerca-cab .be-logo { min-height: 44px; }
+  .acerca-cab .be-btn { height: 44px; }
+  .acerca .acerca-indice { row-gap: 10px; }
+  .acerca-indice a { height: 44px; }
+  /* Los nombres de «Gracias» y su licencia: la zona de toque crece sin mover el texto. */
+  .acerca h3 > a, .licencia > a:only-child { position: relative; display: inline-block; padding: 12px 0; margin: -12px 0; }
+}

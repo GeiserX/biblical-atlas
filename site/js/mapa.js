@@ -895,12 +895,13 @@ function pintarViajeros(ver) {
     if (!m.puesta) { m.marker.addTo(map); m.puesta = true; }
   }
 }
-/** Alto que tapa la hoja inferior en pantallas estrechas, contando la fila del suceso y la leyenda que va encima. */
+/** Alto que tapa la hoja inferior en pantallas estrechas. La fila del suceso y la leyenda va dentro de la hoja, así que
+    cuenta también plegada; 12 px de aire. */
 function altoHoja() {
   if (!estrecha()) return 0;
   // La hoja de lectura (46vh) tapa más que la de la ficha cuando está abierta.
   const lec = document.getElementById('vista-lectura');
-  return Math.max(E.hojaPlegada ? 0 : $('#panel').offsetHeight, lec && !lec.hidden ? lec.offsetHeight : 0) + 44;
+  return Math.max($('#panel').offsetHeight, lec && !lec.hidden ? lec.offsetHeight : 0) + 12;
 }
 /** Parte del mapa que se ve de verdad, en píxeles del contenedor: sin el relleno propio del mapa (grafo, conexión y
     lectura tapan la izquierda en escritorio, estudio.relleno de grafo.js) ni la hoja inferior del móvil. */

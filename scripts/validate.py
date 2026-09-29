@@ -32,7 +32,7 @@ TIPOS_LUGAR = {"ciudad", "region", "isla", "provincia", "puerto", "cabo",
 PRECISION_LUGAR = {"punto", "zona", "incierto"}
 GEOMETRIAS = {"punto", "zona", "franja"}
 ESTADOS_CANDIDATO = {"seguro", "favorecido_nivel_1", "tradicion", "alternativa", "solo_nivel_2", "descartado_nivel_1"}
-TIPOS_RELACION = {"pariente", "acompana", "vivio_en", "nacio_en", "murio_en", "sucede_a", "mismo_que"}
+TIPOS_RELACION = {"pariente", "acompana", "vivio_en", "nacio_en", "murio_en", "sucede_a", "mismo_que", "se_aparece_a"}
 RELACION_CON_LUGAR = {"vivio_en", "nacio_en", "murio_en"}
 TIPOS_ENLACE = {"perspicacia", "biblia", "video", "externo"}
 TIPOS_PERIODO = {"emperador", "gobernador", "potencia", "rey", "era", "sumo-sacerdote"}
@@ -630,6 +630,9 @@ def validar_persona(o, donde, err, fuentes, meses):
                 err(f"{rd}: una persona no se relaciona consigo misma")
         if "relacion" in r and not str(r.get("relacion") or "").strip():
             err(f"{rd}: relacion vacía")
+        if "relacion_inversa" in r and (t not in ("acompana", "se_aparece_a") or not str(r.get("relacion") or "").strip()
+                                        or not str(r.get("relacion_inversa") or "").strip()):
+            err(f"{rd}: relacion_inversa solo vale, no vacía, en una relación acompana o se_aparece_a con relacion")
         if not isinstance(r.get("deducido"), bool):
             err(f"{rd}: deducido debe ser true o false")
         validar_hecho(r, rd, err, fuentes)
@@ -795,6 +798,15 @@ def validar(datos):
                     err(f"{donde}: consta_desde solo vale en una potencia sin fecha.desde")
                 elif not _entero(cd) or (_entero(fd.get("hasta")) and cd > fd["hasta"]):
                     err(f"{donde}: consta_desde debe ser un año astronómico entero anterior a fecha.hasta")
+            if tipo == "periodos" and "sucesos" in limpio:
+                ids_ev = {e.get("id") for e in datos.get("eventos") or []}
+                sc = limpio["sucesos"]
+                if limpio.get("tipo") != "potencia" or not isinstance(sc, list) or not sc:
+                    err(f"{donde}: sucesos solo vale en una potencia, como lista no vacía de ids de sucesos")
+                else:
+                    for e in sc:
+                        if e not in ids_ev:
+                            err(f"{donde}: sucesos cita '{e}', que no es un suceso")
             if tipo == "periodos" and limpio.get("tipo") not in TIPOS_PERIODO:
                 err(f"{donde}: tipo '{limpio.get('tipo')}' no es uno de {sorted(TIPOS_PERIODO)}")
             if tipo == "hallazgos":

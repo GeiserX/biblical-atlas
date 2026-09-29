@@ -126,7 +126,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .gnodo--grupo .burbuja { background: var(--surface); color: var(--ink-2); box-shadow: inset 0 0 0 1.5px var(--line-2); font-family: var(--font-sans); font-size: 11px; width: 34px; height: 34px; }
 .gnodo-centro { z-index: 2; pointer-events: none; }
 .gnodo-centro .be-gnode__label { font: 600 var(--fs-xl)/1.2 var(--font-serif); }
-.sector-rotulo { position: absolute; transform: translate(-50%, -50%); color: var(--ink-4); font-size: var(--fs-2xs); pointer-events: none; }
+.sector-rotulo { position: absolute; transform: translate(-50%, -50%); color: var(--ink-3); font-size: var(--fs-2xs); pointer-events: none; }
 .grafo-vacio { position: absolute; left: 50%; top: 68%; transform: translateX(-50%); width: min(420px, 90%); text-align: center; }
 .grafo-vacio .fila-chips { justify-content: center; }
 .grafo-vacio .be-chip { cursor: pointer; }
@@ -161,8 +161,10 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .casilla:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 15%, transparent); }
 .conexion-cuerpo { padding: 0 16px 16px; display: flex; flex-direction: column; gap: 12px; }
 .conexion-pista { font-size: var(--fs-md); }
-.pestanas-camino { margin: 0; overflow-x: auto; }
-.pestanas-camino .be-tab { border: 0; border-bottom: 2px solid transparent; background: none; cursor: pointer; }
+/* overflow-y: hidden y sin margen negativo: la raya de la pestaña ya no sobresale un píxel, y sin ese píxel no sale una
+   barra vertical diminuta con sus dos flechas junto a las pestañas. */
+.pestanas-camino { margin: 0; overflow-x: auto; overflow-y: hidden; }
+.pestanas-camino .be-tab { border: 0; border-bottom: 2px solid transparent; margin-bottom: 0; background: none; cursor: pointer; }
 .pestanas-camino .be-tab--on { border-bottom-color: var(--ink); }
 .be-tab--debil { font-style: italic; }
 .cadena { display: flex; align-items: center; gap: 0; overflow-x: auto; padding: 8px 2px; }
@@ -225,6 +227,10 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .progreso-tramo--actual .progreso-barra { background: var(--gold); }
 .progreso-anio { font-size: var(--fs-2xs); color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
 .progreso-tramo--actual .progreso-anio { color: var(--ink); font-weight: 700; }
+/* Con muchas paradas cada tramo mide 20 px y su año quedaba en «3…»: sin sitio para el año entero, no se escribe (la
+   fecha de la parada va en su píldora, debajo). El tramo sigue siendo el mismo botón, con su nombre para el lector. */
+.progreso-tramo { container-type: inline-size; }
+@container (max-width: 46px) { .progreso-anio { visibility: hidden; } }
 .recorrido-entrada { margin-bottom: 10px; }
 .parada-cab { display: flex; align-items: center; gap: 8px; }
 .parada-num { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--gold); color: #fff; font-weight: 700; }
@@ -326,25 +332,71 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .be-letra-grande .be-node--sm { width: 26px; height: 26px; font-size: 13px; }
 
 /* ---------- Modo reunión (D-02): fondo oscuro, brillo bajo, sin animaciones ---------- */
-.be-reunion { --paper: #1b1813; --paper-2: #24201a; --surface: #211d17; --surface-2: #28231c; --ink: #efe7d8; --ink-2: #cfc4b1; --ink-3: #a3977f; --ink-4: #75695a; --line: #3a3328; --line-2: #4a4234; --gold-soft: #3a3020; --accent-soft: #3b2a22; --tier1-soft: #1f322b; --tier2-soft: #36301f; --secular-soft: #262d38; --unverified-soft: #3a222b; --link: #8fb8d3; --map-label: #efe7d8; --map-label-halo: rgba(27, 24, 19, .9); color-scheme: dark;
-  /* El modo reunión conserva sus colores cálidos: fija lo que el tema verde de :root cambia y él no define. */
-  --focus: #2f6f73; --accent: #a3432b; --accent-2: #c7684d; --gold: #b8892f; --gold-ink: #6e4f15; --gold-line: #ead9b3; --gold-hint: #8a6a2a; --gold-wash: #fff8e6;
-  --tier1: #2f5d50; --tier1-line: #cfe0d6; --node-persona: #a3432b; --node-lugar: #2f6f73; --node-evento: #b8892f; --route-todo: #a3432b; --rejilla: rgba(211, 198, 176, .45);
+/* Cálido, como siempre, y con cada par de texto y fondo en AA (4,5:1; 3:1 el texto grande). Los colores que en claro
+   sirven de texto sobre un fondo suave (fuentes, fechas, enlaces, avisos) pasan a tonos claros; los que sirven de relleno
+   bajo letra blanca (personas, lugares, Pablo, reproducir) se quedan en su tono medio, y donde un relleno claro lleva
+   letra encima, esa letra pasa a oscura. Medido con el guion de contraste del informe de be-68c.1. */
+.be-reunion { color-scheme: dark;
+  --paper: #1b1813; --paper-2: #24201a; --surface: #211d17; --surface-2: #28231c;
+  --ink: #efe7d8; --ink-2: #cfc4b1; --ink-3: #b1a58d; --ink-4: #9c907c; --line: #3a3328; --line-2: #5a5042; --focus: #6cb8bd;
+  --accent: #a3432b; --accent-2: #c7684d; --accent-soft: #3b2a22; --accent-ink: #e0856c;
+  --gold: #b8892f; --gold-soft: #3a3020; --gold-ink: #e8c983; --gold-line: #6b5629; --gold-hint: #cdb27a; --gold-wash: #fff8e6;
+  --tier1: #86c7ab; --tier1-soft: #1f322b; --tier1-line: #2e4a3f; --tier2: #d9b36a; --tier2-soft: #36301f;
+  --secular: #a9b8cc; --secular-soft: #262d38; --unverified: #e59ab0; --unverified-soft: #3a222b; --zone: #c1a6d6; --link: #8fb8d3;
+  --node-persona: #a3432b; --node-lugar: #2f6f73; --node-evento: #b8892f; --route-todo: #a3432b; --rejilla: rgba(211, 198, 176, .16);
   --emp-egipto: #c29a3b; --emp-asiria: #8e4b3a; --emp-babilonia: #3f5e8c; --emp-persia: #7a5c8e; --emp-grecia: #3c7f86; --emp-roma: #a23b2e; --emp-israel: #5b7d3a;
-  --shadow-1: 0 1px 0 rgba(60, 40, 10, 0.04), 0 1px 3px rgba(60, 40, 10, 0.08); --shadow-2: 0 1px 2px rgba(60, 40, 10, 0.06), 0 6px 18px rgba(60, 40, 10, 0.10); --shadow-3: 0 2px 6px rgba(60, 40, 10, 0.08), 0 18px 48px rgba(60, 40, 10, 0.18); }
+  --map-label: #efe7d8; --map-label-halo: rgba(27, 24, 19, .9);
+  --shadow-1: 0 1px 0 rgba(0, 0, 0, .2), 0 1px 3px rgba(0, 0, 0, .3); --shadow-2: 0 1px 2px rgba(0, 0, 0, .25), 0 6px 18px rgba(0, 0, 0, .35); --shadow-3: 0 2px 6px rgba(0, 0, 0, .3), 0 18px 48px rgba(0, 0, 0, .45); }
 .be-reunion body { background: var(--paper); color: var(--ink); }
+.be-reunion *, .be-reunion *::before, .be-reunion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+/* Mapa: más oscuro, y sus controles con el fondo del resto. */
 .be-reunion .mapa-gl { filter: brightness(.72) saturate(.8); }
 .be-reunion .be-float { background: rgba(33, 29, 23, .96); }
+.be-reunion .maplibregl-ctrl-group { background: var(--surface); }
+.be-reunion .maplibregl-ctrl-group button + button { border-top-color: var(--line); }
+.be-reunion .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1) sepia(.2); }
+.be-reunion .maplibregl-ctrl-attrib { background: rgba(33, 29, 23, .88) !important; color: var(--ink-2); }
+.be-reunion .maplibregl-ctrl-attrib a { color: var(--ink-2); }
+.be-reunion .maplibregl-ctrl-attrib-button { filter: invert(1); }
+.be-reunion .maplibregl-ctrl-scale { background: rgba(33, 29, 23, .9); }
+/* Rellenos claros (la tinta, que en oscuro es clara) con letra oscura encima. */
 .be-reunion .be-btn--primary, .be-reunion .be-chip--active, .be-reunion .filtro, .be-reunion .siguiente-cap, .be-reunion .cap--actual { background: #efe7d8; color: #1b1813; border-color: #efe7d8; }
+.be-reunion .grafo-filtros .be-chip.chip-vigente, .be-reunion .cadena-num, .be-reunion .aviso { color: #1b1813; }
+.be-reunion .filtro-x { background: rgba(0, 0, 0, .12); }
+.be-reunion .recorrido-sig .be-caps { color: #5b503f; }
+.be-reunion .regla-texto { fill: #1b1813; }
+.be-reunion .regla-quitar path { stroke: #1b1813; }
+/* El oro y el verde de las fuentes, rellenos bajo letra: letra oscura, que en blanco no llega a 4,5:1. */
+.be-reunion .be-node--evento, .be-reunion .be-cursor__flag, .be-reunion .marca-num--activa, .be-reunion .marca-num--vista,
+.be-reunion .pasaje-item--abierto .pasaje-num, .be-reunion .pasaje-item--visto .pasaje-num, .be-reunion .parada-num,
+.be-reunion .insignia summary, .be-reunion .be-tier--unverified::before { color: #1b1813; }
+.be-reunion .cursor-texto { fill: #1b1813; }
+.be-reunion .sinc-cursor::before { color: #1b1813; }
+/* El color de Pablo como texto: un tono más claro que el del relleno. */
+.be-reunion .enlace-titulo:hover, .be-reunion .pregunta-guia span:last-child, .be-reunion .carriles-boton b, .be-reunion .carril-pin.on,
+.be-reunion .menu-carril.on .be-i, .be-reunion .proxima b, .be-reunion .proxima-icono { color: var(--accent-ink); }
+/* Búsqueda: el trozo que coincide, en marcador ámbar con letra oscura (antes, amarillo claro con letra clara). */
+.be-reunion .be-result mark { background: #e8c983; color: #1b1813; }
+/* Fondos pastel fijos de las fichas, las etiquetas y los avisos. */
 .be-reunion .be-gnode__label { background: rgba(33, 29, 23, .92); }
-.be-reunion .be-chrono--tnm, .be-reunion .res-fecha { color: #e8c983; border-color: #6b5629; }
-.be-reunion .be-ref { color: #9fd1b8; border-color: #2e4a3f; }
-.be-reunion .grafo-filtros .be-chip.chip-vigente, .be-reunion .be-chip--active { color: #1b1813; }
-.be-reunion .be-date { background: var(--gold-soft); border-color: #6b5629; }
+.be-reunion .be-date { background: var(--gold-soft); border-color: var(--gold-line); }
 .be-reunion .be-date__value { color: #efe7d8; }
 .be-reunion .be-note { background: #262d38; color: #cfd8e3; }
-.be-reunion .be-note--uncertain { background: #2e2638; color: #d9cfe6; }
-.be-reunion *, .be-reunion *::before, .be-reunion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+.be-reunion .be-note--uncertain, .be-reunion .recorrido-nosabemos { background: #2e2638; color: #d9cfe6; }
+.be-reunion .etiqueta-deducido { color: #d9cfe6; background: #2e2638; border-color: #4a3d5c; }
+.be-reunion .etiqueta-incierto { background: #2e2638; }
+.be-reunion .cap--leido { border-color: var(--tier1-line); }
+.be-reunion .bloque-nivel--1 { background: #1f2a25; }
+.be-reunion .bloque-nivel--2 { background: #2b2518; }
+.be-reunion .fecha-secular .fecha-grande { color: #cfd8e3; }
+.be-reunion .fecha-secular, .be-reunion .be-chrono--secular { border-color: #56657a; }
+.be-reunion .prec { background: rgba(0, 0, 0, .25); }
+.be-reunion .sin-verificar { background: repeating-linear-gradient(45deg, var(--unverified-soft) 0 3px, #2a1a20 3px 6px); }
+/* Línea de tiempo: las cajas de cartas y sucesos, y las filas alternas, con el fondo oscuro. */
+.be-reunion .tramo-carta, .be-reunion .tramo-evento { fill: #2b261e; }
+.be-reunion .texto-carta, .be-reunion .texto-evento { fill: var(--gold-ink); }
+.be-reunion .evento-fondo .tramo-evento { fill: rgba(43, 38, 30, .7); }
+.be-reunion .sinc-fila:nth-child(even) .sinc-pista { background: rgba(255, 255, 255, .03); }
 
 /* ---------- Presentación (A-11): pantalla completa, letra grande, se avanza con flechas o mando ---------- */
 .be-presentando { --fs-sm: 16px; --fs-md: 18px; --fs-lg: 20px; --fs-xl: 25px; --fs-2xl: 30px; --fs-3xl: 40px; --panel-w: 500px; }
@@ -373,7 +425,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
   .capitulos--lectura .cap { flex: none; }
   .estudio-menu { position: fixed; top: calc(var(--topbar-h) - 4px); right: 8px; width: min(300px, calc(100vw - 16px)); }
   .vista-grafo, .vista-conexion { width: 100%; border-right: 0; padding-bottom: 36vh; }
-  .vista-grafo { padding-bottom: 64px; }   /* el grafo pliega la hoja: solo queda la tira de encima */
+  .vista-grafo { padding-bottom: 92px; }   /* el grafo pliega la hoja: quedan su asa y la fila del suceso */
   .vista-grafo .grafo-leyenda { display: none; }
   .grafo-lista { grid-template-columns: 1fr; }
   .gnodo .be-gnode__meta { display: none; }
@@ -413,3 +465,66 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
    llevan la misma marca en lugar del número 1 o 2 del kit. */
 .be-tier--1::before, .be-tier--2::before { content: ""; width: 10px; height: 10px; }
 .be-tier--2::before { background: transparent; box-shadow: inset 0 0 0 2px var(--tier2); }
+
+/* Grafo (ronda 3): interruptor «Solo lo vigente», leyenda plegable, lista en columnas, pestañas de caminos que parten
+   en líneas y lo de otras fechas sin opacidad en el texto. */
+.interruptor-grafo { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 12px 0 6px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font: 600 var(--fs-xs)/1 var(--font-sans); cursor: pointer; }
+.interruptor-grafo:hover { border-color: var(--ink-3); }
+.interruptor-grafo:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.interruptor-pista { position: relative; flex: none; width: 36px; height: 20px; border-radius: 10px; background: var(--paper-2); box-shadow: inset 0 0 0 1.5px var(--ink-3); transition: background .15s; }
+.interruptor-bola { position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--ink-3); transition: left .15s; }
+.interruptor-grafo[aria-checked="true"] .interruptor-pista { background: var(--ink); box-shadow: none; }
+.interruptor-grafo[aria-checked="true"] .interruptor-bola { left: 19px; background: var(--surface); }
+.interruptor-estado { min-width: 2ch; color: var(--ink-2); font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .interruptor-pista, .interruptor-bola { transition: none; } }
+details.grafo-leyenda { display: block; }
+.grafo-leyenda > summary { cursor: pointer; font-weight: 600; color: var(--ink-2); }
+.grafo-leyenda[open] > summary { margin-bottom: 6px; }
+.grafo-leyenda__filas { display: flex; flex-direction: column; gap: 6px; }
+.grafo-leyenda__fila { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.grafo-leyenda__fila > .be-caps { min-width: 4.5em; }
+.leyenda-nodo { width: 14px; height: 14px; font-size: 0; box-shadow: none; }
+.grafo-lista { display: block; }
+.grafo-lista__cols { columns: 230px; column-gap: 12px; }
+.grafo-lista__sec { break-inside: auto; -webkit-box-decoration-break: clone; box-decoration-break: clone; margin: 0 0 12px; }
+.grafo-lista__sec h3 { break-after: avoid; }
+.lista-fila { break-inside: avoid; }
+/* Lo de otras fechas se distingue por su palabra («ya pasó», «aún no») y un círculo más tenue, no por texto
+   transparente: con opacidad .5 los nombres bajaban de 4,5:1. */
+.gnodo--pasado, .gnodo--futuro, .lista-fila--pasado, .lista-fila--futuro { opacity: 1; }
+.gnodo--pasado .be-node, .gnodo--futuro .be-node { opacity: .55; }
+.gnodo--pasado .be-gnode__label, .gnodo--futuro .be-gnode__label { color: var(--ink-2); font-weight: 500; }
+.lista-cuando { margin-left: 6px; font-size: var(--fs-2xs); font-weight: 700; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+/* Las pestañas de los caminos parten en líneas en vez de desplazarse: su desplazamiento sacaba dos barras dentro de
+   «¿Cómo se relaciona?» (una horizontal y otra vertical de 2 px por el margen negativo de cada pestaña). */
+.pestanas-camino { overflow: visible; flex-wrap: wrap; column-gap: 18px; row-gap: 0; }
+@media (max-width: 560px) { .pregunta-fija .casilla { flex: 1 1 130px; width: auto; min-width: 0; } }
+
+/* ---------- Tabletas en vertical (761 a 900 px) ---------- */
+/* Junto a la ficha el mapa mide unos 370 px: el grafo y la conexión lo tapan entero en vez de dejar una columna de
+   235 px, y la lectura va encima de la ficha, así el mapa sigue a la vista mientras se lee. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .vista-grafo, .vista-conexion { width: 100%; border-right: 0; }
+  .vista-lectura { left: auto; right: 0; width: var(--panel-w); border-right: 0; border-left: 1px solid var(--line); }
+  /* Las tarjetas de arriba a la izquierda no tapan la columna de botones del mapa. */
+  .vista-ahora { max-width: calc(100% - 82px); }
+  .vista-recorrido { max-width: min(300px, calc(100% - 82px)); }
+}
+/* Grafo y conexión estrechos, en el móvil o en la tableta: la cadena de la conexión va de arriba abajo, como en el
+   móvil. Mide la vista, no la ventana: a 768 px la vista es tan estrecha como un móvil. */
+.vista-grafo, .vista-conexion { container-type: inline-size; }
+@container (max-width: 560px) {
+  .cadena { flex-direction: column; align-items: stretch; }
+  .cadena-arista { min-height: 64px; flex-direction: row; justify-content: center; gap: 8px; }
+  .cadena-arista::before { left: 50%; right: auto; top: 0; bottom: 0; border-top: 0; border-left: 2.5px solid var(--ink-3); }
+  .cadena-arista--deducida::before { border-left-style: dashed; }
+  .cadena-arista--lugar::before { border-top: 0; border-left: 2.5px dashed var(--line-2); }
+  .cadena-verbo, .cadena-fecha { background: var(--paper); position: relative; z-index: 1; padding: 0 4px; }
+  .pregunta-fija { font-size: var(--fs-lg); }
+  .pregunta-fija .casilla { flex: 1 1 130px; width: auto; min-width: 0; }
+  .gnodo .be-gnode__meta { display: none; }
+}
+/* En círculo y estrecho (pedido a mano), los rótulos más cortos se pisan menos entre vecinos. */
+@container (max-width: 480px) {
+  .gnodo, .gnodo .be-gnode__label { max-width: 104px; }
+}
