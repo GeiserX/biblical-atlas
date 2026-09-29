@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: escol
+nombre: Escol
+nombres:
+- nombre: Escol
+perspicacia: '1200001423'
+desambiguacion: Escol, aliado de Abrán; no el valle de Escol de donde los espías trajeron el racimo.
+resumen: Hermano de Mamré el amorreo y de Aner. Aliado de Abrán, fue con él tras los reyes que se habían llevado a Lot y recibió
+  su parte de lo recuperado.
+razon: Perspicacia «Escol», núm. 1; Gé 14:13, 24.
+fuentes:
+- it-escol
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Escol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001423
+  tipo: perspicacia
+relaciones:
+- tipo: acompana
+  persona: abrahan
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: 'Gé 14:13, 24: aliado de Abrán, fue con él a rescatar a Lot.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -24,6 +24,8 @@ fuentes:
 - it-santiago
 - it-santiago-carta
 - galatas-1
+- mateo-13
+- marcos-6
 no_confundir_con:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -38,6 +40,7 @@ relaciones:
   fuentes:
   - it-santiago
   - galatas-1
+  - marcos-6
   razon: 'Gál 1:19 lo llama hermano del Señor; Perspicacia, párr. 10: hijo de José y María.'
   estado: verificado
 - tipo: pariente
@@ -46,16 +49,19 @@ relaciones:
   deducido: false
   fuentes:
   - it-santiago
+  - marcos-6
   razon: 'Perspicacia, párr. 10: hijo de José y María (Mt 13:55).'
   estado: verificado
 - tipo: pariente
   persona: judas-hermano-de-jesus
   relacion: hermano
-  deducido: true
+  deducido: false
   fuentes:
   - it-judas
   - judas-1
-  razon: 'Jud 1: el escritor se presenta como hermano de Santiago; Perspicacia «Judas», apartado 5.'
+  - mateo-13
+  - marcos-6
+  razon: Mt 13:55 los nombra a los dos entre los hermanos de Jesús, y en Jud 1 el escritor se presenta como hermano de Santiago.
   estado: verificado
 - tipo: vivio_en
   lugar: jerusalen
@@ -64,6 +70,41 @@ relaciones:
   - it-santiago-carta
   - galatas-1
   razon: Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).
+  estado: verificado
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-santiago
+  - mateo-13
+  - marcos-6
+  razon: Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.
+  estado: verificado
+- tipo: pariente
+  persona: jose-hijo-de-jose
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - marcos-6
+  razon: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
+  estado: verificado
+- tipo: pariente
+  persona: simon-hijo-de-jose
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - marcos-6
+  razon: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: true
+  fuentes:
+  - mateo-13
+  razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Santiago»'
@@ -75,5 +116,10 @@ enlaces:
 - titulo: Gálatas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002313#4
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La relación con Judas pasa a deducido: false, porque la afirman Mt 13:55 y Jud 1; la inversa ya lo decía así.'
+  fuente: mateo-13
+consultado: '2026-09-29'
 estado: verificado

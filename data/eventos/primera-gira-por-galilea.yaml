@@ -14,6 +14,11 @@ orden_relato:
   orden: 24
 lugares:
 - galilea
+- siria
+- decapolis
+- jerusalen
+- judea
+- perea
 personas:
 - jesus
 - pedro
@@ -24,8 +29,8 @@ pasajes:
 - Mt 4:23-25
 - Mr 1:35-39
 - Lu 4:42, 43
-resumen: Jesús sale de Capernaúm con los cuatro pescadores a predicar en las sinagogas de otras ciudades de Galilea. Su fama
-  llega a Siria, la Decápolis y el otro lado del Jordán.
+resumen: Jesús sale de Capernaúm con los cuatro pescadores a predicar en las sinagogas de Galilea y a curar toda clase de
+  males. Su fama corre por Siria, y lo siguen multitudes de Galilea, la Decápolis, Jerusalén, Judea y Perea.
 razon: 'A7-C, fila 5: Galilea, con los cuatro. El libro jy (cap. 24) nombra las regiones a las que llegó su fama (Mt 4:24,
   25).'
 fuentes:
@@ -34,5 +39,10 @@ fuentes:
 - marcos-1
 - lucas-4
 - jy-cap-24
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Mt 4:24, 25 dice que la fama llegó a Siria y que las multitudes venían de la Decápolis, Jerusalén, Judea y el otro
+    lado del Jordán; el resumen las mezclaba.
+  fuente: mateo-4
+consultado: '2026-09-29'
 estado: verificado

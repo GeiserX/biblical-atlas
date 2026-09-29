@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: urias-el-hitita
+nombre: Urías
+nombres:
+- nombre: Urías
+perspicacia: 1200004521#1
+desambiguacion: Urías el hitita, primer esposo de Bat-Seba; no el sacerdote de tiempos de Isaías ni el que estuvo junto a
+  Esdras.
+resumen: Hitita, guerrero extranjero del ejército de David y esposo de Bat-Seba. Mientras él combatía, David se acostó con
+  su mujer y después hizo que muriera en la batalla.
+razon: Perspicacia «Urías», núm. 1; Mt 1:6 y su nota.
+fuentes:
+- it-urias
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Urías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004521
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: bat-seba
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:6 la llama la esposa de Urías.
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: true
+  fuentes:
+  - it-urias
+  razon: 'Perspicacia «Urías» (núm. 1): vivía en Jerusalén, cerca del palacio.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

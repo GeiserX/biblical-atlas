@@ -25,6 +25,8 @@ relaciones:
   fuentes:
   - it-dina
   - genesis-30
+  - genesis-34
+  - genesis-46
   razon: 'Perspicacia «Dina», párr. 2: hija de Jacob y Lea (Gé 30:21).'
   estado: verificado
 - tipo: pariente
@@ -34,6 +36,8 @@ relaciones:
   fuentes:
   - it-dina
   - genesis-30
+  - genesis-34
+  - genesis-46
   razon: 'Perspicacia «Dina», párr. 2: hija de Jacob y Lea (Gé 30:21).'
   estado: verificado
 - tipo: nacio_en
@@ -41,7 +45,17 @@ relaciones:
   deducido: false
   fuentes:
   - it-dina
+  - genesis-30
+  - genesis-46
   razon: 'Perspicacia «Dina», párr. 2: nació en Harán cuando su padre vivía allí.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:15, 26: cuenta entre la casa de Jacob que entró en Egipto.'
+  estado: verificado
+perspicacia: '1200001182'
+consultado: '2026-09-29'
 estado: verificado

@@ -18,6 +18,11 @@ razon: 'Perspicacia «María» (núm. 1: párr. 4, 6, 7 y 18) da su linaje, el a
 fuentes:
 - it-maria
 - lucas-1
+- mateo-1
+- mateo-2
+- mateo-12
+- marcos-3
+- marcos-6
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria
@@ -51,7 +56,24 @@ relaciones:
   fuentes:
   - lucas-1
   - it-nazaret
+  - mateo-2
   razon: Lu 1:26, 27; Perspicacia «Nazaret» (párr. 2).
+  estado: verificado
+- tipo: vivio_en
+  lugar: belen
+  deducido: true
+  fuentes:
+  - mateo-2
+  - it-jose
+  razon: 'Mt 2:11: los astrólogos la encuentran con el niño en una casa de Belén; Perspicacia «José» (núm. 8) dice que residían
+    allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - mateo-2
+  razon: Mt 2:14, 15.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «María»'
@@ -60,5 +82,6 @@ enlaces:
 - titulo: Lucas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002918#1
+consultado: '2026-09-29'
 estado: verificado

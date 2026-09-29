@@ -6,6 +6,7 @@ nombres:
 desambiguacion: El apóstol, de Betsaida; no es Felipe el evangelizador de Hechos.
 no_confundir_con:
 - felipe-evangelizador
+- filipo-esposo-de-herodias
 resumen: Apóstol de Betsaida, la ciudad de Pedro y Andrés. Siguió a Jesús un día después que Andrés y llevó ante él a Natanael.
   Antes de alimentar a los 5.000, Jesús le preguntó dónde comprar pan.
 razon: Perspicacia «Felipe» (núm. 1) da su ciudad y sus apariciones en Juan (Jn 1:43-49; 6:5-7).
@@ -13,6 +14,8 @@ fuentes:
 - it-felipe
 - juan-1
 - juan-6
+- mateo-10
+- marcos-3
 relaciones:
 - tipo: vivio_en
   lugar: betsaida
@@ -32,10 +35,11 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: jesus
-  relacion: apóstol de
+  relacion: maestro
   deducido: false
   fuentes:
   - mateo-10
+  - marcos-3
   razon: Mt 10:3 lo nombra entre los doce.
   estado: verificado
 enlaces:
@@ -45,5 +49,11 @@ enlaces:
 - titulo: Juan 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200003466#1
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como
+    pide la tabla de relaciones (Mt 10:2-4).
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

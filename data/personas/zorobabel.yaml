@@ -21,6 +21,7 @@ fuentes:
 - esdras-3
 - ageo-1
 - si-3
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Zorobabel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716
@@ -31,11 +32,12 @@ enlaces:
 relaciones:
 - tipo: pariente
   persona: david
-  relacion: descendiente de David
+  relacion: antepasado
   deducido: false
   fuentes:
   - it-zorobabel
-  razon: Perspicacia «Zorobabel» lo presenta como descendiente de David y antepasado de Jesús (1Cr 3:19; Mt 1:12, 13).
+  - mateo-1
+  razon: Perspicacia «Zorobabel» lo da como descendiente de David y antepasado de Jesús; Mt 1:6-13 traza esa línea por Salomón.
   estado: verificado
 - tipo: vivio_en
   lugar: jerusalen
@@ -70,5 +72,20 @@ relaciones:
   - esdras-3
   razon: Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y del templo.
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: sealtiel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-sealtiel
+  razon: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
+  estado: verificado
+perspicacia: '1200004716'
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el
+    antepasado. Se corrige a «antepasado».
+  fuente: mateo-1
+consultado: '2026-09-29'
 estado: verificado

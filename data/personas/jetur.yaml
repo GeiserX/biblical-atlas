@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jetur
+nombre: Jetur
+nombres:
+- nombre: Jetur
+perspicacia: '1200002455'
+resumen: Hijo de Ismael. De él salió un pueblo que se enfrentó a los israelitas, y quizá los itureos eran de su linaje.
+razon: Perspicacia «Jetur»; Gé 25:15.
+fuentes:
+- it-jetur
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Jetur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002455
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jetur
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

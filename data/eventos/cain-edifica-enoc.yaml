@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cain-edifica-enoc
+titulo: Caín se va a la región del Destierro y edifica Enoc
+fecha:
+  desde: -4025
+  hasta: -3095
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 4026 y 3096 a.e.c. (tiempo narrativo: después de la muerte de Abel; Adán, que murió en 3096, vio construir
+    la ciudad)'
+orden_relato:
+  serie: genesis
+  orden: 4016
+  tras: cain-mata-a-abel
+lugares:
+- enoc
+- nod
+personas:
+- cain
+- enoc-hijo-de-cain
+pasajes:
+- Gé 4:16, 17
+resumen: Caín deja la presencia de Jehová y se instala al este de Edén con su esposa. Nace su hijo Enoc, y Caín construye
+  una ciudad a la que da el nombre del niño.
+razon: Perspicacia «Caín», párr. 8, y «Enoc», núm. 1 y 3. Perspicacia «Adán» cuenta una ciudad entre lo que Adán vio antes
+  de morir en 3096 a.e.c.
+fuentes:
+- it-cain
+- it-enoc
+- it-adan
+- genesis-4
+enlaces:
+- titulo: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

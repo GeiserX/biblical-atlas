@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beker-hijo-de-benjamin
+nombre: Béker
+nombres:
+- nombre: Béker
+perspicacia: 1200000595#1
+desambiguacion: Béker hijo de Benjamín; no el efrainita cabeza de los bekeritas.
+resumen: Hijo de Benjamín, segundo en la lista. Falta en Números 26, pero sus nueve hijos tuvieron 20.200 guerreros según
+  1 Crónicas 7.
+razon: Perspicacia «Béker», núm. 1; Gé 46:21.
+fuentes:
+- it-beker
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Béker»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000595
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-beker
+  razon: 'Gé 46:21: aparece entre los hijos de Benjamín.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

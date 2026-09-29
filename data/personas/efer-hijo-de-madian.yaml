@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efer-hijo-de-madian
+nombre: Éfer
+nombres:
+- nombre: Éfer
+perspicacia: 1200001384#1
+desambiguacion: Éfer hijo de Madián; no Éfer de Judá ni el cabeza de Manasés.
+resumen: Segundo hijo de Madián que nombra la Biblia; nieto de Abrahán y Queturá.
+razon: Perspicacia «Éfer», núm. 1; Gé 25:4.
+fuentes:
+- it-efer
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Éfer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001384
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: madian
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-efer
+  - genesis-25
+  razon: Gé 25:4.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

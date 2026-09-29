@@ -10,6 +10,8 @@ razon: Perspicacia «Cam», núm. 1, párr. 1 a 4; Gé 9:18-27 y 10:6.
 fuentes:
 - it-cam
 - genesis-10
+- genesis-6
+- genesis-9
 enlaces:
 - titulo: 'Perspicacia: «Cam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001832
@@ -25,7 +27,20 @@ relaciones:
   fuentes:
   - it-cam
   - genesis-7
+  - genesis-5
+  - genesis-6
+  - genesis-9
+  - genesis-10
   razon: 'Perspicacia «Cam», párr. 1 y 3: hijo de Noé que entró con él en el arca (Gé 7:13).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: jafet
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-9
+  razon: 'Gé 9:22: Cam se lo cuenta a sus dos hermanos, uno de ellos Jafet.'
+  estado: verificado
+perspicacia: '1200001832'
+consultado: '2026-09-29'
 estado: verificado

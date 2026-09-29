@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-sienta-a-sus-hermanos-a-su-mesa
+titulo: José sienta a sus hermanos a su mesa
+fecha:
+  desde: -1727
+  hasta: -1727
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1728 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 43015
+lugares:
+- egipto
+personas:
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- benjamin-hijo-de-jacob
+pasajes:
+- Gé 43:15-34
+resumen: Llegan con Benjamín y el regalo, y el encargado de la casa les devuelve a Simeón. José se aparta a llorar al ver
+  a Benjamín; en la comida los sienta por edad y a Benjamín le sirve cinco veces más.
+razon: El estudio 3 fecha en 1728 a.e.c. el traslado de Jacob a Egipto y lo apoya en el segundo año del hambre, cuando José
+  se da a conocer. Este viaje es de pocos días antes. Perspicacia «José», párr. 25.
+fuentes:
+- genesis-43
+- si-3
+- it-jose
+enlaces:
+- titulo: Génesis 43 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/43
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

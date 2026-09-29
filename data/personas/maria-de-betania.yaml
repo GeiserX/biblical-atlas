@@ -42,6 +42,8 @@ fuentes:
 - it-maria
 - lucas-10
 - juan-12
+- mateo-26
+- marcos-14
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
@@ -50,5 +52,6 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/12
   tipo: biblia
 buscar: María de Betania
-consultado: '2026-09-28'
+perspicacia: 1200002918#2
+consultado: '2026-09-29'
 estado: verificado

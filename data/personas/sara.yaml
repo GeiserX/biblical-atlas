@@ -22,6 +22,15 @@ fuentes:
 - it-abrahan
 - si-3
 - genesis-21
+- genesis-11
+- genesis-12
+- genesis-13
+- genesis-16
+- genesis-17
+- genesis-18
+- genesis-20
+- genesis-23
+- genesis-24
 enlaces:
 - titulo: 'Perspicacia: «Sara»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003837
@@ -36,6 +45,12 @@ relaciones:
   deducido: false
   fuentes:
   - it-sara
+  - genesis-12
+  - genesis-16
+  - genesis-17
+  - genesis-20
+  - genesis-23
+  - genesis-49
   razon: 'Perspicacia «Sara», párr. 2: se casó con Abrahán en Ur; eran hijos del mismo padre y de distinta madre (Gé 20:12).'
   estado: verificado
 - tipo: vivio_en
@@ -43,6 +58,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-sara
+  - genesis-11
   razon: 'Perspicacia «Sara», párr. 2 y 3: vivía en Ur cuando se casó y de allí salió con Abrahán hacia Harán.'
   estado: verificado
 - tipo: murio_en
@@ -59,7 +75,58 @@ relaciones:
   fuentes:
   - it-abrahan
   - si-3
+  - genesis-23
   razon: 'Perspicacia «Abrahán», párr. 16: Sara falleció en Hebrón, en 1881 a.e.c., con 127 años.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-11
+  - genesis-20
+  - it-sara
+  razon: Gé 11:31 la llama nuera de Taré; por Gé 20:12 era además hija de Taré, aunque de otra madre.
+  estado: verificado
+- tipo: vivio_en
+  lugar: haran
+  deducido: false
+  fuentes:
+  - genesis-11
+  - genesis-12
+  - it-sara
+  razon: 'Gé 11:31: al llegar a Harán comenzaron a vivir allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-12
+  - it-sara
+  razon: 'Gé 12:10-20: estuvo con Abrán en Egipto durante el hambre, y el faraón se la llevó a su casa.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - genesis-12
+  - genesis-16
+  razon: 'Gé 12:5; 16:3: llegó a Canaán con Abrán y seguía allí diez años después.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mamre
+  deducido: false
+  fuentes:
+  - genesis-18
+  razon: 'Gé 18:1, 9, 10: estaba en la tienda de Abrahán, junto a los árboles de Mamré, cuando le anunciaron el hijo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: guerar
+  deducido: false
+  fuentes:
+  - genesis-20
+  razon: 'Gé 20:1, 2: estaba con Abrahán en Guerar cuando el rey mandó llevársela.'
+  estado: verificado
+perspicacia: '1200003837'
+consultado: '2026-09-29'
 estado: verificado

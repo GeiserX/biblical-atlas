@@ -11,9 +11,20 @@ razon: Perspicacia «Tamar», núm. 1 (Gé 38:6-30); Rut 4:12.
 fuentes:
 - it-tamar
 - rut-4
+- mateo-1
+- genesis-38
 enlaces:
 - titulo: 'Perspicacia: «Tamar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004313
   tipo: perspicacia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: juda-hijo-de-jacob
+  relacion: suegro
+  deducido: false
+  fuentes:
+  - genesis-38
+  razon: 'Gé 38:11, 13, 24: Judá es su suegro y ella, su nuera.'
+  estado: verificado

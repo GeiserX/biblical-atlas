@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ebal
+nombre: Ebal
+nombres:
+- nombre: Ebal
+perspicacia: '1200001244'
+desambiguacion: Ebal el horeo; no el monte Ebal.
+resumen: Tercer hijo nombrado del jeque horeo Sobal, descendiente de Seír.
+razon: Perspicacia «Ebal»; Gé 36:23.
+fuentes:
+- it-ebal
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Ebal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001244
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: sobal-hijo-de-seir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-ebal
+  - genesis-36
+  razon: 'Gé 36:23: hijo de Sobal.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

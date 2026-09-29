@@ -11,6 +11,14 @@ fuentes:
 - it-juda
 - it-lea
 - genesis-29
+- mateo-1
+- genesis-35
+- genesis-37
+- genesis-38
+- genesis-43
+- genesis-44
+- genesis-46
+- genesis-49
 enlaces:
 - titulo: 'Perspicacia: «Judá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
@@ -26,6 +34,10 @@ relaciones:
   fuentes:
   - it-juda
   - genesis-29
+  - mateo-1
+  - genesis-35
+  - genesis-46
+  - genesis-49
   razon: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
   estado: verificado
 - tipo: pariente
@@ -35,6 +47,8 @@ relaciones:
   fuentes:
   - it-juda
   - genesis-29
+  - genesis-35
+  - genesis-46
   razon: 'Perspicacia «Judá», párr. 2: cuarto hijo de Jacob y su esposa Lea (Gé 29:35).'
   estado: verificado
 - tipo: nacio_en
@@ -42,8 +56,46 @@ relaciones:
   deducido: true
   fuentes:
   - it-juda
-  razon: 'Perspicacia «Judá», párr. 2: vivió unos nueve años en Harán (Padán-aram) antes de salir con la casa de Jacob;
-    ahí nació.'
+  - genesis-29
+  - genesis-35
+  - genesis-46
+  razon: 'Perspicacia «Judá», párr. 2: vivió unos nueve años en Harán (Padán-aram) antes de salir con la casa de Jacob; ahí
+    nació.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: sua-suegro-de-juda
+  relacion: suegro
+  deducido: false
+  fuentes:
+  - genesis-38
+  - it-sua
+  razon: 'Gé 38:2: Judá se casa con la hija de Súa, un cananeo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: adulam
+  deducido: true
+  fuentes:
+  - genesis-38
+  - it-juda
+  - it-adulam
+  razon: 'Gé 38:1: pone su tienda junto a Hirá, el adulamita; Perspicacia «Judá» dice que se estableció cerca de él.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  estado: verificado
+perspicacia: 1200002538#1
+consultado: '2026-09-29'
 estado: verificado

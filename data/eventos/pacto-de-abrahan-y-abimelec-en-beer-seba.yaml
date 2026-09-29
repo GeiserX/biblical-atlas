@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-de-abrahan-y-abimelec-en-beer-seba
+titulo: Abrahán y Abimélec pactan en Beer-Seba
+fecha:
+  desde: -1912
+  hasta: -1880
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1913 y 1881 a.e.c. (tiempo narrativo: después del despido de Ismael y antes de la muerte de Sara)'
+orden_relato:
+  serie: genesis
+  orden: 21022
+lugares:
+- beer-seba
+- filistea
+personas:
+- abrahan
+- abimelec-de-tiempos-de-abrahan
+- ficol-de-tiempos-de-abrahan
+presentes:
+- abrahan
+- abimelec-de-tiempos-de-abrahan
+- ficol-de-tiempos-de-abrahan
+pasajes:
+- Gé 21:22-34
+resumen: Abimélec y Ficol piden a Abrahán que jure lealtad. Abrahán reclama un pozo que le quitaron; hacen un pacto, él da
+  siete corderas como prueba de que cavó el pozo, llama al lugar Beer-Seba y planta un tamarisco.
+razon: Perspicacia «Beer-seba», párr. 4, cuenta el pacto después del episodio de Agar (1913 a.e.c., estudio 3); el viaje a
+  Moria sale luego de Beer-Seba, antes de la muerte de Sara en 1881.
+fuentes:
+- genesis-21
+- it-beer-seba
+- it-abimelec
+- si-3
+enlaces:
+- titulo: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

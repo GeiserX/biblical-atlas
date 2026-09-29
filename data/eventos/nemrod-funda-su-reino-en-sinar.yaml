@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nemrod-funda-su-reino-en-sinar
+titulo: Nemrod funda su reino en Sinar
+fecha:
+  desde: -2369
+  hasta: -2029
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 2370 y 2030 a.e.c. (tiempo narrativo: después del Diluvio y antes de la dispersión en días de Péleg)'
+orden_relato:
+  serie: genesis
+  orden: 10008
+lugares:
+- babilonia
+- erec
+- akkad
+- calne
+- sinar
+personas:
+- nemrod
+pasajes:
+- Gé 10:8-10
+resumen: Nemrod, hijo de Cus, se hace poderoso como cazador en oposición a Jehová y funda el primer reino después del Diluvio.
+  Sus primeras ciudades son Babel, Erec, Akkad y Calné.
+razon: 'Perspicacia «Nemrod», párr. 2 y 3. Límites: el Diluvio, en 2370 (estudio 3), y el fin de la vida de Péleg, en 2030,
+  porque Babel ya existía al dispersarse la gente («Cronología»).'
+fuentes:
+- genesis-10
+- it-nemrod
+- si-3
+- it-cronologia
+- it-sinar
+enlaces:
+- titulo: 'Perspicacia: «Nemrod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003259
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

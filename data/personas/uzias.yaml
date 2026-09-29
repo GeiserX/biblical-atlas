@@ -22,6 +22,7 @@ fuentes:
 - 2-reyes-15
 - tnm-a6-a
 - tnm-a6-b
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Uzías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004535
@@ -47,9 +48,18 @@ relaciones:
   - 2-reyes-14
   razon: El pueblo lo hizo rey al morir su padre (2Re 14:21).
   estado: verificado
+- tipo: pariente
+  persona: jehoram-de-juda
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: 'Mt 1:8 llama a Jehoram padre de Uzías; la nota aclara que es antepasado: en medio faltan Ocozías, Jehoás y Amasías.'
+  estado: verificado
 historial:
 - fecha: '2026-09-28'
   cambio: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
   fuente: tnm-a6-a
-consultado: '2026-09-28'
+perspicacia: 1200004535#3
+consultado: '2026-09-29'
 estado: verificado

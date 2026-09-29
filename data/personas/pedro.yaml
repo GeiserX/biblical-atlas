@@ -5,12 +5,14 @@ nombres:
 - nombre: Pedro
   nota: Nombre griego que en la Biblia solo lleva él.
 - nombre: Simón
-  nota: Forma griega de su nombre.
+  nota: Nombre griego; como Symeón, sale de un verbo hebreo que significa «oír» (nota de estudio de Mt 10:2).
 - nombre: Symeón
-  nota: Forma hebrea (Hch 15:14).
+  nota: Forma griega del nombre hebreo Simeón (Hch 15:14), según la nota de estudio de Mt 10:2.
 - nombre: Cefas
   nota: Equivalente semítico de Pedro (Jn 1:42).
 - nombre: Simón Pedro
+- nombre: Barjonás
+  nota: «Hijo de Jonás» con la palabra aramea bar; forma que da la nota de estudio de Mt 16:17.
 desambiguacion: El apóstol. No es Simón el mago de Samaria ni Simón el curtidor de Jope, con quien se hospedó.
 fecha:
   desde: 29
@@ -30,10 +32,29 @@ fuentes:
 - it-pedro-cartas
 - juan-1
 - marcos-1
+- mateo-4
+- mateo-10
+- mateo-14
+- mateo-15
+- mateo-16
+- mateo-17
+- mateo-18
+- mateo-19
+- mateo-26
+- marcos-3
+- marcos-5
+- marcos-8
+- marcos-9
+- marcos-10
+- marcos-11
+- marcos-13
+- marcos-14
+- marcos-16
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
 - simon-el-cananita
+- simon-hijo-de-jose
 no_afirmamos:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
@@ -49,6 +70,9 @@ relaciones:
   fuentes:
   - it-pedro
   - juan-1
+  - mateo-4
+  - mateo-10
+  - marcos-1
   razon: 'Jn 1:40-42: Andrés lleva a su hermano Simón a Jesús. Perspicacia «Pedro», párr. 3.'
   estado: verificado
 - tipo: pariente
@@ -58,6 +82,7 @@ relaciones:
   fuentes:
   - it-pedro
   - marcos-1
+  - mateo-8
   razon: Mr 1:29-31 menciona a su suegra; Perspicacia deduce de ahí que estaba casado (párr. 4).
   estado: verificado
 - tipo: acompana
@@ -68,8 +93,8 @@ relaciones:
   - it-pedro
   - hechos-3
   - hechos-8
-  razon: 'Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch
-    8). Perspicacia «Pedro», párr. 7.'
+  razon: 'Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia
+    «Pedro», párr. 7.'
   estado: verificado
 - tipo: acompana
   persona: santiago-hijo-de-zebedeo
@@ -78,8 +103,8 @@ relaciones:
   fuentes:
   - it-pedro
   - it-santiago
-  razon: Socios en la pesca y, con Juan, los tres que Jesús llevó a la transfiguración y a Getsemaní. Perspicacia
-    «Pedro», párr. 3 y 7.
+  razon: Socios en la pesca y, con Juan, los tres que Jesús llevó a la transfiguración y a Getsemaní. Perspicacia «Pedro»,
+    párr. 3 y 7.
   estado: verificado
 - tipo: vivio_en
   lugar: capernaum
@@ -87,8 +112,8 @@ relaciones:
   fuentes:
   - it-pedro
   - marcos-1
-  razon: 'Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38),
-    donde compartía casa con Andrés.'
+  razon: 'Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía
+    casa con Andrés.'
   estado: verificado
 - tipo: vivio_en
   lugar: babilonia
@@ -105,8 +130,8 @@ relaciones:
   - it-pedro-cartas
   - bt-4
   - 1-pedro-5
-  razon: 1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos;
-    el texto no lo aclara.
+  razon: 1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto
+    no lo aclara.
   estado: verificado
 - tipo: acompana
   persona: juan-marcos
@@ -123,8 +148,7 @@ relaciones:
   fuentes:
   - it-pedro-cartas
   - 1-pedro-5
-  razon: Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr.
-    3.
+  razon: Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.
   estado: verificado
 - tipo: acompana
   persona: silas
@@ -141,8 +165,7 @@ relaciones:
   fuentes:
   - it-pedro-cartas
   - 1-pedro-5
-  razon: Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe
-    5:12).
+  razon: Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).
   estado: verificado
 - tipo: vivio_en
   lugar: betsaida
@@ -150,8 +173,44 @@ relaciones:
   fuentes:
   - it-pedro
   - juan-1
-  razon: 'Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí
-    antes de mudarse a Capernaúm.'
+  razon: Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de
+    mudarse a Capernaúm.
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: maestro
+  deducido: false
+  fuentes:
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-19
+  - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-11
+  - marcos-13
+  - marcos-14
+  razon: 'Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.'
+  estado: verificado
+- tipo: pariente
+  persona: jonas-padre-de-pedro
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-16
+  - it-jonas
+  razon: 'Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: galilea
+  deducido: false
+  fuentes:
+  - marcos-14
+  razon: 'Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Pedro»'
@@ -163,5 +222,11 @@ enlaces:
 - titulo: Hechos 10 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/10
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200003451'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Symeón deja de figurar como forma hebrea: la nota de estudio de Mt 10:2, más reciente que Perspicacia, dice que
+    es la forma griega de Simeón.'
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

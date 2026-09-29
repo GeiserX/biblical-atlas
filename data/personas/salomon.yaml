@@ -19,6 +19,7 @@ fuentes:
 - 1-reyes-6
 - 1-reyes-11
 - tnm-b7
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -34,6 +35,7 @@ relaciones:
   fuentes:
   - it-salomon
   - 2-samuel-12
+  - mateo-1
   razon: Hijo de David y Bat-seba (2Sa 12:24).
   estado: verificado
 - tipo: sucede_a
@@ -44,5 +46,15 @@ relaciones:
   - 1-reyes-1
   razon: Fue ungido y puesto en el trono antes de morir David (1Re 1:39).
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: bat-seba
+  relacion: madre
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-bat-seba
+  razon: Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.
+  estado: verificado
+perspicacia: '1200004178'
+consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: goyim
+nombre: Goyim
+nombres:
+- nombre: Goyim
+tipo: reino
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos: []
+resumen: Dominios del rey Tidal, aliado de Kedorlaomer. Nadie ha identificado dónde estaban; como la palabra significa «naciones»,
+  hay quien piensa en un grupo de tribus.
+razon: Perspicacia «Goyim», núm. 1; Gé 14:1, 9. Sin sitio conocido, no damos punto ni zona.
+fuentes:
+- it-goyim
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Goyim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001735
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: pendiente

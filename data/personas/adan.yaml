@@ -20,6 +20,9 @@ fuentes:
 - si-3
 - genesis-2
 - genesis-5
+- genesis-1
+- genesis-3
+- genesis-4
 enlaces:
 - titulo: 'Perspicacia: «Adán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000089
@@ -34,7 +37,18 @@ relaciones:
   fuentes:
   - it-adan
   - genesis-2
+  - genesis-3
   razon: 'Perspicacia «Adán», párr. 7: su hogar era el jardín de Edén (Gé 2:8, 15); del párr. 11: Dios lo expulsó de allí.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: eva
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-2
+  - it-adan
+  razon: 'Gé 2:22-25: Dios le lleva la mujer y el texto la llama su esposa. Perspicacia «Adán», párr. 7.'
+  estado: verificado
+perspicacia: '1200000089'
+consultado: '2026-09-29'
 estado: verificado

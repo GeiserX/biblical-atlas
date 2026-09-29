@@ -14,14 +14,16 @@ orden_relato:
   orden: 44
 lugares:
 - gadara
+- mar-de-galilea
+- decapolis
 personas:
 - jesus
 pasajes:
 - Mt 8:28-34
 - Mr 5:1-20
 - Lu 8:26-39
-resumen: En la orilla oriental, Jesús libra a dos endemoniados muy violentos que vivían entre tumbas. Los demonios entran
-  en una piara que se precipita al mar, y la gente le pide que se vaya.
+resumen: En la orilla oriental, Jesús libra a dos endemoniados violentos que vivían entre tumbas. Los demonios entran en una
+  piara que se ahoga en el mar; le piden que se vaya y un curado lo anuncia por la Decápolis.
 razon: 'A7-D, fila 3: región de Gadara. Perspicacia «Gadarenos» (párr. 3-5) explica la región y por qué Marcos y Lucas hablan
   de un solo hombre.'
 fuentes:
@@ -31,5 +33,12 @@ fuentes:
 - lucas-8
 - it-gadarenos
 - jy-cap-45
-consultado: '2026-09-28'
+- it-gerasenos
+- it-decapolis
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen añade lo que cuenta Mr 5:18-20: el hombre curado proclama por la Decápolis lo que Jesús hizo, y la Decápolis
+    entra en lugares.'
+  fuente: marcos-5
+consultado: '2026-09-29'
 estado: verificado

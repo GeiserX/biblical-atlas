@@ -22,6 +22,7 @@ fuentes:
 - 2-cronicas-13
 - 1-reyes-15
 - tnm-a6-a
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Abías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
@@ -37,6 +38,7 @@ relaciones:
   fuentes:
   - it-abias
   - 2-cronicas-11
+  - mateo-1
   razon: Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).
   estado: verificado
 - tipo: sucede_a
@@ -47,5 +49,6 @@ relaciones:
   - 1-reyes-14
   razon: Reinó a la muerte de su padre (1Re 14:31).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200000041#5
+consultado: '2026-09-29'
 estado: verificado

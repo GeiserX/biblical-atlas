@@ -20,6 +20,14 @@ fuentes:
 - si-3
 - genesis-21
 - genesis-35
+- mateo-1
+- genesis-17
+- genesis-22
+- genesis-24
+- genesis-25
+- genesis-26
+- genesis-27
+- genesis-28
 enlaces:
 - titulo: 'Perspicacia: «Isaac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
@@ -35,6 +43,12 @@ relaciones:
   fuentes:
   - it-isaac
   - genesis-21
+  - mateo-1
+  - genesis-17
+  - genesis-22
+  - genesis-24
+  - genesis-25
+  - genesis-26
   razon: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
   estado: verificado
 - tipo: pariente
@@ -44,6 +58,8 @@ relaciones:
   fuentes:
   - it-isaac
   - genesis-21
+  - genesis-17
+  - genesis-24
   razon: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
   estado: verificado
 - tipo: vivio_en
@@ -52,6 +68,7 @@ relaciones:
   fuentes:
   - it-isaac
   - it-beer-seba
+  - genesis-26
   razon: 'Perspicacia «Isaac», párr. 19, y «Beer-seba», párr. 6: acosado por los filisteos, pasó de Guerar a Beer-Seba (Gé
     26:23).'
   estado: verificado
@@ -63,5 +80,72 @@ relaciones:
   - genesis-35
   razon: 'Perspicacia «Isaac», párr. 21: cuando Jacob volvió, Isaac vivía en Hebrón (Gé 35:27).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: vivio_en
+  lugar: negueb
+  deducido: false
+  fuentes:
+  - it-negueb
+  - genesis-24
+  razon: 'Gé 24:62: vivía en la tierra del Négueb.'
+  estado: verificado
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - it-isaac
+  - genesis-25
+  razon: 'Gé 25:9: sus hijos Isaac e Ismael entierran a Abrahán; Perspicacia «Isaac», párr. 6, los llama medios hermanos.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: beer-lahai-roi
+  deducido: false
+  fuentes:
+  - it-beer-lahai-roi
+  - genesis-25
+  razon: 'Gé 25:11: tras la muerte de Abrahán, Isaac vivía cerca de Beer-Lahái-Roí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: guerar
+  deducido: false
+  fuentes:
+  - it-isaac
+  - genesis-26
+  razon: 'Gé 26:1, 6: por el hambre se fue a Guerar y se quedó a vivir allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: valle-de-guerar
+  deducido: false
+  fuentes:
+  - it-isaac
+  - genesis-26
+  razon: 'Gé 26:17: tras irse de Guerar, puso su campamento en el valle y vivió allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mamre
+  deducido: false
+  fuentes:
+  - it-mamre
+  - genesis-35
+  razon: 'Gé 35:27: Abrahán e Isaac vivieron como extranjeros en Mamré; Perspicacia «Mamré», núm. 2.'
+  estado: verificado
+- tipo: murio_en
+  lugar: hebron
+  deducido: true
+  fuentes:
+  - it-isaac
+  - genesis-35
+  razon: 'Gé 35:27-29: Jacob llegó adonde estaba Isaac, en Hebrón, y allí murió. Perspicacia «Isaac», párr. 21.'
+  estado: verificado
+- tipo: pariente
+  persona: rebeca
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-24
+  - genesis-25
+  razon: 'Gé 24:67: Isaac tomó a Rebeca por esposa; Gé 25:20: tenía 40 años cuando se casó con ella.'
+  estado: verificado
+perspicacia: '1200002203'
+consultado: '2026-09-29'
 estado: verificado

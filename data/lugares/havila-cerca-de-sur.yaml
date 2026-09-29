@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: havila-cerca-de-sur
+nombre: Havilá
+nombres:
+- nombre: Havilá
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Del desierto de Sur al noroeste de Arabia
+  geometria:
+    tipo: zona
+    lat: 29.0615
+    lon: 35.7541
+    radio_km: 320
+  estado: favorecido_nivel_1
+  coord_fuente: calculo
+  nota: 'Punto medio entre Sur (OpenBible acdbce0: 30.4933, 32.9567) y Temá (acd48d6: 27.6297, 38.5516). Distan 630 km; el
+    radio de 320 km cubre los dos.'
+  fuentes:
+  - it-havila
+  - openbible-geo
+  razon: 'Perspicacia «Havilá», núm. 2: abarcaba al menos el noroeste de Arabia y llegaba cerca del Sinaí, donde estaba el
+    desierto de Sur.'
+- nombre: Península arábiga
+  geometria:
+    tipo: zona
+    lat: 23.0
+    lon: 46.0
+    radio_km: 900
+  estado: alternativa
+  coord_fuente: openbible:ac5e5c4
+  coord_url: https://www.openbible.info/geo/ancient/ac5e5c4/havilah-2
+  fuentes:
+  - it-havila
+  - openbible-geo
+  razon: Perspicacia «Havilá», núm. 2, deja abierto que ocupara un área mucho mayor. El punto es la primera resolución de
+    OpenBible para Havilá 2 (Gé 25:18); el radio es nuestro.
+resumen: Tierra que marcaba un extremo del territorio de los ismaelitas, cerca de Sur. Abarcaba al menos el noroeste de la
+  península arábiga y quizá llegaba hasta el Sinaí.
+razon: Perspicacia «Havilá», núm. 2; Gé 25:18. Perspicacia no da un sitio; va una zona.
+fuentes:
+- it-havila
+- openbible-geo
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Havilá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001921
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

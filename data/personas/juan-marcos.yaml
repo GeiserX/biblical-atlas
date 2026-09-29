@@ -11,12 +11,14 @@ nombres:
 no_confundir_con:
 - juan-el-bautista
 - juan-apostol
-resumen: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Dejó el primer viaje en
-  Perga y volvió a Jerusalén.
-razon: Perspicacia «Marcos» lo identifica con el Juan Marcos de Hechos y con el Juan de Hch 13:5, 13.
+resumen: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Quizá fue el joven que huyó desnudo
+  de Getsemaní. Dejó el primer viaje en Perga y volvió a Jerusalén.
+razon: Perspicacia «Marcos» lo identifica con el Juan Marcos de Hechos y con el Juan de Hch 13:5, 13, y ve probable que fuera
+  el joven de Mr 14:51, 52.
 fuentes:
 - it-marcos
 - hch-13
+- marcos-14
 enlaces:
 - titulo: 'Perspicacia: «Marcos»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002902
@@ -24,7 +26,16 @@ enlaces:
 - titulo: Hechos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200002902'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade que quizá era el joven de Mr 14:51, 52: Perspicacia «Marcos» lo cree probable y la nota de estudio lo
+    da como posible.'
+  fuente: marcos-14
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora Mr 14:51, 52, de donde sale lo del joven que huyó.
+  fuente: marcos-14
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: acompana

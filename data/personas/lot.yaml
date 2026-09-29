@@ -13,13 +13,16 @@ fecha:
   texto: 1943-1919 a.e.c. (de la entrada en Canaán a la destrucción de Sodoma)
 resumen: Sobrino de Abrahán, hijo de su hermano Harán. Fue con él de Ur a Canaán y luego se instaló cerca de Sodoma. Unos
   ángeles lo sacaron antes de la destrucción; de él vienen moabitas y ammonitas.
-razon: 'Perspicacia «Lot», párr. 1 a 6; Gé 11:27-31, 13:5-12 y 19:1-38. El estudio 3: Abrahán cruza el Éufrates en 1943
-  a.e.c., con Lot (Gé 12:4); Lot es rescatado antes de 1933 y Sodoma es juzgada en 1919.'
+razon: 'Perspicacia «Lot», párr. 1 a 6; Gé 11:27-31; 13:5-12; 19:1-38. El estudio 3: Abrahán cruza el Éufrates en 1943 a.e.c.,
+  con Lot (Gé 12:4); Lot es rescatado antes de 1933 y Sodoma es juzgada en 1919.'
 fuentes:
 - si-3
 - it-lot
 - genesis-11
 - genesis-14
+- genesis-12
+- genesis-13
+- genesis-19
 enlaces:
 - titulo: 'Perspicacia: «Lot»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002776
@@ -35,6 +38,9 @@ relaciones:
   fuentes:
   - it-lot
   - genesis-11
+  - genesis-12
+  - genesis-13
+  - genesis-14
   razon: 'Perspicacia «Lot», párr. 1: hijo de Harán, hermano de Abrahán (Gé 11:27).'
   estado: verificado
 - tipo: pariente
@@ -52,8 +58,90 @@ relaciones:
   fuentes:
   - it-lot
   - genesis-14
-  razon: 'Perspicacia «Lot», párr. 3 a 5: vivía en Sodoma cuando lo capturaron y cuando llegaron los ángeles (Gé 14:12;
-    19:1).'
+  - genesis-13
+  - genesis-19
+  razon: 'Perspicacia «Lot», párr. 3 a 5: vivía en Sodoma cuando lo capturaron y cuando llegaron los ángeles (Gé 14:12; 19:1).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: haran-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:27, 31: Harán fue padre de Lot.'
+  estado: verificado
+- tipo: pariente
+  persona: milca-hija-de-haran
+  relacion: hermana
+  deducido: true
+  fuentes:
+  - it-milca
+  - genesis-11
+  razon: 'Perspicacia «Milcá», núm. 1: era hermana de Lot; los dos eran hijos de Harán (Gé 11:27, 29).'
+  estado: verificado
+- tipo: pariente
+  persona: isca
+  relacion: hermana
+  deducido: true
+  fuentes:
+  - it-isca
+  - genesis-11
+  razon: 'Perspicacia «Iscá»: era hermana de Lot; los dos eran hijos de Harán (Gé 11:27, 29).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ur
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:31: Taré se llevó a su nieto Lot de Ur de los caldeos.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: haran
+  deducido: false
+  fuentes:
+  - genesis-11
+  - genesis-12
+  - it-lot
+  razon: 'Gé 11:31: al llegar a Harán comenzaron a vivir allí.'
+  estado: verificado
+- tipo: acompana
+  persona: abrahan
+  deducido: false
+  fuentes:
+  - genesis-12
+  - it-lot
+  - genesis-13
+  razon: 'Gé 12:4 y 13:1, 5: viajó con Abrán de Harán a Canaán, bajó con él a Egipto y volvió con él.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-13
+  - it-lot
+  razon: 'Gé 13:1: salió de Egipto con Abrán y Sarái.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: distrito-del-jordan
+  deducido: false
+  fuentes:
+  - genesis-13
+  - it-lot
+  razon: 'Gé 13:10-12: eligió el Distrito del Jordán y se fue a vivir cerca de sus ciudades.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: zoar
+  deducido: false
+  fuentes:
+  - genesis-19
+  - it-zoar
+  razon: 'Gé 19:23, 30: llegó a Zóar al salir el sol y vivió allí hasta que el miedo lo llevó a los montes.'
+  estado: verificado
+perspicacia: '1200002776'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Las citas de Génesis 13 y 19 van separadas por punto y coma: con la coma y la «y», el sitio no las reconocía y
+    Lot no salía en esos capítulos.'
+  fuente: genesis-13
+consultado: '2026-09-29'
 estado: verificado

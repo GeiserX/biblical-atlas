@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cam
+nombre: Cam
+nombres:
+- nombre: Cam
+tipo: ciudad
+lat: 32.514213
+lon: 35.812384
+precision: zona
+coord_fuente: openbible:a7a5f29
+coord_url: https://www.openbible.info/geo/ancient/a7a5f29/ham-1
+coord_nota: Punto de OpenBible en Tell Ham; Perspicacia dice que la ciudad antigua quizá esté en ese montículo, junto al pueblo
+  moderno.
+resumen: Ciudad de los zuzim al este del Jordán, vencida por Kedorlaomer. Su nombre sigue vivo en el pueblo de Cam, unos 6
+  km al sur de Irbid.
+razon: 'Perspicacia «Cam», núm. 2; Gé 14:5. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-cam
+- openbible-geo
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Cam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001832
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

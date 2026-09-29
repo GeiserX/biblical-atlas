@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lamec-hijo-de-metusael
+nombre: Lamec
+nombres:
+- nombre: Lamec
+desambiguacion: Lamec hijo de Metusael, de la línea de Caín; no Lamec hijo de Matusalén, el padre de Noé.
+no_confundir_con:
+- lamec-padre-de-noe
+perspicacia: 1200002673#1
+resumen: Descendiente de Caín y el primer hombre de la Biblia con dos esposas, Adá y Zilá. Su vida coincidió en parte con
+  la de Adán. Compuso un poema en el que alegaba haber matado en defensa propia.
+razon: Perspicacia «Lamec», núm. 1; Gé 4:18-24.
+fuentes:
+- it-lamec
+- genesis-4
+enlaces:
+- titulo: 'Perspicacia: «Lamec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002673
+  tipo: perspicacia
+- titulo: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: metusael
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-4
+  razon: 'Gé 4:18: Metusael fue padre de Lamec.'
+  estado: verificado
+- tipo: pariente
+  persona: ada-esposa-de-lamec
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-4
+  razon: 'Gé 4:19: Adá fue la primera de sus dos esposas.'
+  estado: verificado
+- tipo: pariente
+  persona: zila
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-4
+  razon: 'Gé 4:19: Zilá fue la segunda de sus dos esposas.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dios-fija-120-anos
+titulo: Dios da a aquel mundo 120 años
+fecha:
+  desde: -2489
+  hasta: -2489
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2490 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 6003
+lugares: []
+personas:
+- noe
+pasajes:
+- Gé 6:3
+- Gé 6:5-8
+resumen: Jehová ve que la maldad humana no deja de crecer, le duele haber creado al hombre y fija 120 años de plazo antes
+  de borrarlo de la tierra. Solo Noé tiene su aprobación.
+razon: El cuadro del estudio 3 pone en 2490 a.e.c. la declaración de Gé 6:3. Perspicacia «Noé», párr. 3, la trata como un
+  decreto judicial dictado unos veinte años antes del primer hijo de Noé.
+fuentes:
+- si-3
+- it-noe
+- genesis-6
+enlaces:
+- titulo: 'Perspicacia: «Noé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003266
+  tipo: perspicacia
+- titulo: Génesis 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/6
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

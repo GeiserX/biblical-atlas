@@ -19,8 +19,8 @@ personas:
 pasajes:
 - Mt 15:39-16:4
 - Mr 8:10-12
-resumen: Jesús cruza en barca a Magadán, que Marcos llama Dalmanuta. Fariseos y saduceos le piden una señal del cielo y él
-  vuelve a decir que solo recibirán la de Jonás.
+resumen: Jesús cruza en barca a Magadán; Marcos escribe Dalmanuta, quizá otro nombre del mismo sitio. Fariseos y saduceos
+  le piden una señal del cielo y él vuelve a decir que solo recibirán la de Jonás.
 razon: 'A7-D, fila 14: Magadán. Las notas de Mt 15:39 y Mr 8:10 explican los dos nombres y la orilla occidental.'
 fuentes:
 - tnm-a7-d
@@ -29,5 +29,11 @@ fuentes:
 - marcos-8
 - it-magadan
 - jy-cap-58
-consultado: '2026-09-28'
+- it-dalmanuta
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen daba por seguro que Dalmanuta es Magadán; la nota de Mr 8:10 y Perspicacia «Dalmanuta» solo lo dan como
+    posible.
+  fuente: marcos-8
+consultado: '2026-09-29'
 estado: verificado

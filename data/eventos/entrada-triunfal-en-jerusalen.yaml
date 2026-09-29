@@ -13,10 +13,10 @@ fecha:
     mes: nisan
     dia: 9
 lugares:
+- jerusalen
 - betania
 - betfague
 - monte-de-los-olivos
-- jerusalen
 - monte-moria
 personas:
 - jesus
@@ -43,5 +43,9 @@ orden_relato:
   serie: a7
   orden: 94
 buscar: Entra en Jerusalén montado en un burro
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Jerusalén pasa a primer lugar: es donde ocurre lo principal (Mt 21:10), y el mapa situaba a Jesús en Betania.'
+  fuente: mateo-21
+consultado: '2026-09-29'
 estado: verificado

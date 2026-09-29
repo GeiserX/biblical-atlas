@@ -52,6 +52,9 @@ fuentes:
 - genesis-19
 - lbt-patriarcas
 - openbible-geo
+- genesis-13
+- genesis-14
+- genesis-18
 enlaces:
 - titulo: 'Perspicacia: «Sodoma»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004176
@@ -62,5 +65,5 @@ enlaces:
 - titulo: Génesis 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

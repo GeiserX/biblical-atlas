@@ -22,7 +22,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - tomas
 - mateo
 - santiago-hijo-de-alfeo
@@ -51,5 +51,9 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000402
   tipo: perspicacia
 buscar: Ascensión de Jesús
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Hch 1:13 nombra a Bartolomé entre los once; sale natanael, que tiene ficha aparte con mismo_que pendiente.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

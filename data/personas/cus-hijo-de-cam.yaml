@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cus-hijo-de-cam
+nombre: Cus
+nombres:
+- nombre: Cus
+perspicacia: 1200001089#1
+desambiguacion: Cus hijo de Cam; no el benjaminita que nombra el encabezamiento de un salmo de David, ni la tierra de Cus.
+resumen: Primer hijo de Cam y padre de Sebá, Havilá, Sabtá, Raamá, Sabtecá y Nemrod. Su nombre pasó a sus descendientes y
+  a su tierra, que la Biblia usa casi como Etiopía.
+razon: Perspicacia «Cus», núm. 1 y 2; Gé 10:6-8.
+fuentes:
+- it-cus
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Cus»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001089
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: cam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:6 lo nombra el primero de los hijos de Cam.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

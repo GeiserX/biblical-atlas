@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: husam
+nombre: Husam
+nombres:
+- nombre: Husam
+perspicacia: '1200002115'
+resumen: Rey edomita procedente de Temán, tierra de los temanitas. Ocupó el trono al morir Jobab, antes de que Israel tuviera
+  rey.
+razon: Perspicacia «Husam» y «Temanita»; Gé 36:34, 35.
+fuentes:
+- it-husam
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Husam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002115
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: sucede_a
+  persona: jobab-hijo-de-zerah
+  deducido: false
+  fuentes:
+  - it-husam
+  - genesis-36
+  razon: 'Gé 36:34: reinó en lugar de Jobab.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: teman
+  deducido: false
+  fuentes:
+  - it-temanita
+  - genesis-36
+  razon: 'Gé 36:34: era de la tierra de los temanitas.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
