@@ -24,7 +24,7 @@ Aceptamos las catorce propuestas y este documento manda sobre el modelo: lo que 
 
 - **A quién va dirigido.** El sitio no se presenta como ayuda «en familia»: quien estudia puede hacerlo solo. La frase seguía en la página «Acerca de», en decisiones.md, en la hoja de ruta y en el índice de esta carpeta; se quita en un PR aparte. A-10 «Modo familia» y el perfil «Una familia» del catálogo se renombran a varias personas ante una pantalla.
 - **`consultado` en los hechos anidados.** CLAUDE.md:26 y [investigacion/README.md:16-22](../investigacion/README.md) lo piden en cada hecho, relaciones incluidas, y docs/decisiones.md:32 dice que sin él no se valida. Es falso hoy: ninguna de las 1435 relaciones lo lleva y `validar_hecho` ([validate.py:185-192](../../scripts/validate.py)) no lo pide. Lo exigimos: la migración copia el `consultado` del fichero a cada relación y la validación lo pide.
-- **Cada arista lleva verbo, fecha y referencia.** Está en [pantallas-grafo-y-contexto.md:17](pantallas-grafo-y-contexto.md), no en CLAUDE.md. `aristasSel` ([grafo.js:107](../../site/js/grafo.js)) y `calcularAristas` ([persona.js:73](../../site/js/tipos/persona.js)) la cumplen; grafo.js:167 la rompe con «está aquí ahora» (`fuentes: [], ref: ''`). Añadirla junto a CLAUDE.md:26 y que esa arista tome la referencia de la estancia o no se dibuje (horas).
+- **Cada arista lleva verbo, fecha y referencia.** Está en [pantallas-grafo-y-contexto.md:17](pantallas-grafo-y-contexto.md), no en CLAUDE.md. `aristasSel` ([grafo.js:107](../../site/js/grafo.js)) y `calcularAristas` ([persona.js:73](../../site/js/tipos/persona.js)) la cumplen a medias: `poner` conserva una arista que tiene `fuentes` aunque su `razon` no cite ningún pasaje y `ref` quede vacía, y grafo.js:167 dibuja «está aquí ahora» con `fuentes: [], ref: ''`. Añadirla junto a CLAUDE.md:26. Una arista sin referencia la toma de su estancia, de su suceso o de los pasajes de la cobertura que citan esa relación (propuesta 7); si no hay ninguna, no se dibuja y la validación avisa (horas).
 
 ## Modelo conceptual
 
@@ -48,7 +48,7 @@ Las migraciones de datos de esta sección van en las rondas de be-isk.2, libro p
 
 **Problema.** `clave_rel` ([aplicar.py:118-119](../../scripts/aplicar.py)) identifica una relación por (tipo, destino). Lucas acompaña a Pablo en tres tramos (lucas.yaml:28, :46, :64); un `anadir` con un tramo nuevo se funde con el primero y pierde fecha y razón sin aviso. Hay 7 claves repetidas, y la cobertura cita `relacion:<persona>/<tipo>/<otro>` ([data/cobertura/README.md:59](../../data/cobertura/README.md)) sin distinguir tramos.
 
-**Propuesta.** `clave_rel = (tipo, destino, relacion, fecha.desde)`; la cobertura admite `@56` y `validate.py` rechaza una clave ambigua.
+**Propuesta.** `clave_rel = (tipo, destino, relacion, fecha.desde)`; la cobertura admite `@56` y `validate.py` rechaza una clave ambigua. Sin fecha, la clave es (tipo, destino, relacion): dos entradas sin fecha con esa misma clave son la misma relación y se funden sumando fuentes, como hoy. Para apuntar dos tramos distintos cada uno lleva su fecha; una entrada sin fecha junto a otra con fecha de la misma terna es ambigua y `validate.py` la rechaza.
 
 **Coste.** Horas. **Cómo sabremos que funciona.** Un caso en `test_aplicar.py`: añadir el tramo 56-61 a Lucas deja dos entradas.
 
