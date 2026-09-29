@@ -6,20 +6,29 @@ nombres:
   nota: 'Significa «resistidor»: el nombre le vino de oponerse a Dios.'
 - nombre: Diablo
   nota: Título que significa «calumniador».
+- nombre: el Tentador
+  nota: Así lo llama Mt 4:3.
 perspicacia: '1200003845'
-resumen: Criatura espiritual que se rebeló contra Dios. Ante Jehová acusó a Job de servirle por interés y, con su permiso,
-  le arrebató bienes, hijos y salud, pero no pudo quitarle la vida.
-razon: Perspicacia «Satanás» (párr. 1, 2 y los que tratan de Job); Job 1:6-12.
+desambiguacion: El gran adversario de Dios. En hebreo, satán sin artículo nombra también a cualquiera que se opone a otro,
+  como el ángel que cortó el paso a Balaam.
+resumen: Criatura espiritual que se rebeló contra Dios. Acusó a Job ante Jehová y, con su permiso, le quitó bienes, hijos
+  y salud; después del bautismo de Jesús lo tentó tres veces, y Jesús le contestó con las Escrituras.
+razon: Perspicacia «Satanás», párr. 1 a 4, los párrafos sobre Job y el apartado «Sus esfuerzos por hacer tropezar a Jesús»;
+  Job 1:6-12; Mt 4:1-11.
 fuentes:
 - it-satanas
 - job-1
 - job-2
+- mateo-4
 enlaces:
 - titulo: 'Perspicacia: «Satanás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003845
   tipo: perspicacia
 - titulo: Job 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
+  tipo: biblia
+- titulo: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

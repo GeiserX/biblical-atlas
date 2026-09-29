@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bat-seba
+nombre: Bat-Seba
+nombres:
+- nombre: Bat-Seba
+perspicacia: '1200000581'
+resumen: Hija de Eliam y esposa de Urías el hitita. David cometió adulterio con ella y, muerto Urías, se casó con ella. Fue
+  madre de Salomón y llegó a reina madre.
+razon: Perspicacia «Bat-seba»; la nota de Mt 1:6 la identifica con la esposa de Urías.
+fuentes:
+- it-bat-seba
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Bat-seba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000581
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

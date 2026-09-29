@@ -22,6 +22,7 @@ fuentes:
 - si-3
 - genesis-11
 - genesis-25
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Abrahán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
@@ -85,5 +86,6 @@ relaciones:
   razon: 'Perspicacia «Beer-seba», párr. 5: allí hizo un pacto con Abimélec, plantó un tamarisco y siguió viviendo tras
     volver de Moria (Gé 21:31-33).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200000060'
+consultado: '2026-09-29'
 estado: verificado

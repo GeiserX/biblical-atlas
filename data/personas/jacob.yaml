@@ -23,6 +23,7 @@ fuentes:
 - si-3
 - genesis-25
 - genesis-47
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Jacob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
@@ -38,6 +39,7 @@ relaciones:
   fuentes:
   - it-jacob
   - genesis-25
+  - mateo-1
   razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
   estado: verificado
 - tipo: pariente
@@ -63,8 +65,8 @@ relaciones:
   fuentes:
   - si-3
   - it-jacob
-  razon: El estudio 3 fecha su huida a Harán en 1781 y su regreso en 1761 a.e.c.; Perspicacia «Jacob», párr. 10, cuenta
-    veinte años.
+  razon: El estudio 3 fecha su huida a Harán en 1781 y su regreso en 1761 a.e.c.; Perspicacia «Jacob», párr. 10, cuenta veinte
+    años.
   estado: verificado
 - tipo: vivio_en
   lugar: siquem
@@ -121,5 +123,8 @@ relaciones:
   - genesis-47
   razon: 'Perspicacia «Jacob», párr. 41: murió en 1711 a.e.c. después de vivir 17 años en Egipto (Gé 47:28).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200002279#1
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- jacob-hijo-de-mattan

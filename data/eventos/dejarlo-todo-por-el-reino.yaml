@@ -18,8 +18,8 @@ pasajes:
 - Mt 8:19-22
 - Lu 9:51-62
 - Jn 7:2-10
-resumen: Jesús sale hacia Jerusalén pasando por Samaria. A quienes dicen que lo seguirán más tarde les responde
-  que el Reino pide no mirar atrás.
+resumen: De camino a Jerusalén por Samaria, un escriba se ofrece a seguir a Jesús y él le avisa de que no tiene casa propia.
+  A otros que quieren seguirlo más tarde les dice que el Reino va primero.
 razon: La tabla A7-E da cuándo y dónde. La tabla dice «Galilea y Samaria»; Lu 9:52 nombra una aldea samaritana.
   jy cap. 65.
 fuentes:
@@ -32,5 +32,9 @@ orden_relato:
   serie: a7
   orden: 63
 buscar: Camino de Jerusalén
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen no contaba la oferta del escriba de Mt 8:19, 20, que es la parte de Mateo en este suceso; se añade.
+  fuente: mateo-8
+consultado: '2026-09-29'
 estado: verificado

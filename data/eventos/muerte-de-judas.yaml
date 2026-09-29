@@ -16,13 +16,13 @@ lugares:
 - jerusalen
 - akeldama
 personas:
-- jesus
 - judas-iscariote
+- jesus
 pasajes:
 - Mt 27:3-10
 - Hch 1:18, 19
-resumen: Arrepentido, Judas arroja en el templo las 30 piezas de plata y se ahorca. Con ese dinero los sacerdotes
-  compran el campo de un alfarero, al que llaman Campo de Sangre.
+resumen: Lleno de remordimiento, pero sin arrepentirse de verdad, Judas tira en el templo las 30 monedas de plata y se ahorca.
+  Con ellas los sacerdotes compran el campo del alfarero, que pasa a llamarse Campo de Sangre.
 razon: La tabla A7-H da el día y el lugar. La tabla remite a Hch 1:18, 19; Perspicacia «Judas» (párr. 16-18) y «Akéldama».
 fuentes:
 - tnm-a7-h
@@ -35,5 +35,13 @@ orden_relato:
   serie: a7
   orden: 118
 buscar: Judas se ahorca
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La nota de Mt 27:3 explica que Judas sintió remordimiento, pero que nada indica un arrepentimiento real; el resumen
+    decía «arrepentido».
+  fuente: mateo-27
+- fecha: '2026-09-29'
+  cambio: 'Es la muerte de Judas: el protocolo pone primero a quien muere, y Jesús iba primero.'
+  fuente: mateo-27
+consultado: '2026-09-29'
 estado: verificado

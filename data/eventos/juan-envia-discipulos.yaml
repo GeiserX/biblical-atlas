@@ -13,8 +13,9 @@ orden_relato:
   serie: a7
   orden: 36
 lugares:
-- tiberiades
 - galilea
+- nain
+- tiberiades
 personas:
 - jesus
 - juan-el-bautista
@@ -32,5 +33,15 @@ fuentes:
 - it-juan
 - jy-cap-38
 - jy-cap-39
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Tiberíades iba primero y el mapa ponía allí a Jesús. A7-C sitúa la escena en Galilea, en Naín o cerca; Tiberíades
+    es solo la cárcel de Juan.
+  fuente: mateo-11
+- fecha: '2026-09-29'
+  cambio: 'presentes: [jesus]. Juan estaba preso (Mt 11:2) y no en la escena, así que el mapa ya no lo sitúa en Galilea.'
+  fuente: mateo-11
+presentes:
+- jesus
+consultado: '2026-09-29'
 estado: verificado

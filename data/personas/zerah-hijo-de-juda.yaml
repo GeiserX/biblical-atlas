@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerah-hijo-de-juda
+nombre: Zérah
+nombres:
+- nombre: Zérah
+perspicacia: 1200004704#3
+desambiguacion: Zérah hijo de Judá y Tamar; no el jeque edomita, el hijo de Simeón, el levita ni el etíope que atacó a Judá.
+resumen: Hijo de Judá y de Tamar, nacido gemelo con Pérez. Fue a Egipto con la familia de Jacob, y sus cinco hijos formaron
+  un clan de la tribu de Judá.
+razon: Perspicacia «Zérah», núm. 3; Mt 1:3.
+fuentes:
+- it-zerah
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Zérah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004704
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: juda-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:3.
+  estado: verificado
+- tipo: pariente
+  persona: tamar-nuera-de-juda
+  relacion: madre
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:3.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

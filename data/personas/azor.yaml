@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azor
+nombre: Azor
+nombres:
+- nombre: Azor
+perspicacia: '1200000499'
+resumen: Antepasado de José, el esposo de María, después del destierro. Mateo lo pone como hijo de Eliaquim y padre de Sadoc.
+razon: Perspicacia «Azor»; Mt 1:13, 14.
+fuentes:
+- it-azor
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Azor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000499
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: eliaquim-hijo-de-abiud
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:13.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

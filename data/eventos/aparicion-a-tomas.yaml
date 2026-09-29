@@ -19,7 +19,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - mateo
 - santiago-hijo-de-alfeo
 - simon-el-cananita
@@ -40,5 +40,10 @@ orden_relato:
   serie: a7
   orden: 125
 buscar: Se aparece a los discípulos con Tomás
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Los once de este suceso siguen la lista de apóstoles, que nombra a Bartolomé (Mt 10:3); sale natanael, que tiene
+    ficha aparte con mismo_que pendiente.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

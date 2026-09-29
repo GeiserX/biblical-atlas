@@ -10,6 +10,7 @@ razon: Perspicacia «Pérez», párr. 1 y 2; Rut 4:12 y 18.
 fuentes:
 - it-perez
 - rut-4
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Pérez»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003438
@@ -21,6 +22,7 @@ relaciones:
   deducido: false
   fuentes:
   - rut-4
+  - mateo-1
   razon: 'Rut 4:12: Tamar se lo dio a luz a Judá.'
   estado: verificado
 - tipo: pariente
@@ -29,7 +31,17 @@ relaciones:
   deducido: false
   fuentes:
   - rut-4
+  - mateo-1
   razon: Rut 4:12.
+  estado: verificado
+- tipo: pariente
+  persona: zerah-hijo-de-juda
+  relacion: hermano gemelo
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-zerah
+  razon: Mt 1:3 los da como hijos de Judá y Tamar; Perspicacia «Zérah» (núm. 3) dice que eran gemelos.
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

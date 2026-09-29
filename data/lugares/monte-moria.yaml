@@ -20,6 +20,9 @@ fuentes:
 - tnm-b11
 - vbt-jerusalen-templo
 - openbible-geo
+- mateo-21
+- mateo-23
+- mateo-24
 enlaces:
 - titulo: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
@@ -28,5 +31,5 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/21
   tipo: biblia
 buscar: Monte Moria
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

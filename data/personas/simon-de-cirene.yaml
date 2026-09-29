@@ -21,5 +21,18 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/15
   tipo: biblia
 buscar: Simón de Cirene
-consultado: '2026-09-28'
+perspicacia: 1200004131#7
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: nacio_en
+  lugar: cirene
+  deducido: true
+  fuentes:
+  - mateo-27
+  - it-simon
+  - it-cirene
+  razon: Mt 27:32 lo llama hombre de Cirene; Perspicacia «Simón», núm. 7, dice que era natural de allí.
+  estado: verificado
+no_confundir_con:
+- simon-hijo-de-jose

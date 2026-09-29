@@ -19,5 +19,17 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/10
   tipo: biblia
 buscar: Bartimeo
-consultado: '2026-09-28'
+perspicacia: '1200000570'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: acompana
+  persona: jesus
+  deducido: false
+  fuentes:
+  - mateo-20
+  - marcos-10
+  - it-bartimeo
+  razon: Recobrada la vista, siguió a Jesús por el camino (Mt 20:34; Mr 10:52). Mateo no lo nombra; la nota de Mt 20:30 lo
+    identifica.
+  estado: verificado

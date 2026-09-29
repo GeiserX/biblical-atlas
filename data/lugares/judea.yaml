@@ -11,18 +11,31 @@ coord_fuente: openbible:a149f13
 coord_url: https://www.openbible.info/geo/ancient/a149f13/judea-1
 coord_nota: Punto representativo que da OpenBible, el mismo de Jerusalén; la región es mucho más amplia.
 resumen: Región de Palestina al sur de Samaria, con Jerusalén; sus límites exactos no se conocen.
-razon: 'Perspicacia («Judea») describe el lugar; aparece en Heb 13:24. La coordenada es de OpenBible: solo tomamos
-  el punto.'
+razon: 'Perspicacia «Judea»: límites en el párr. 1; en 66 e.c. los cristianos huyeron de allí a las montañas, como mandó Jesús
+  en Mt 24:16. La coordenada es de OpenBible: solo tomamos el punto.'
 fuentes:
 - it-judea
-- hebreos-13
 - openbible-geo
+- mateo-2
+- mateo-3
+- mateo-24
 enlaces:
 - titulo: 'Perspicacia: «Judea»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002544
   tipo: perspicacia
-- titulo: Hebreos 13 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/13
+- titulo: Mateo 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/24
   tipo: biblia
-consultado: '2026-09-27'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La razón citaba Heb 13:24, pero Judea no sale en Hebreos 13: ese versículo nombra Italia. Se quita la cita y se
+    pone Mt 24:16.'
+  fuente: mateo-24
+- fecha: '2026-09-29'
+  cambio: 'Sale hebreos-13 de fuentes: Judea no aparece en Hebreos 13 (Heb 13:24 nombra Italia). Entra Mt 24:16.'
+  fuente: mateo-24
+- fecha: '2026-09-29'
+  cambio: Sale el enlace a Hebreos 13, que no nombra Judea; entra Mateo 24.
+  fuente: mateo-24
+consultado: '2026-09-29'
 estado: verificado

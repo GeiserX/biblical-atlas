@@ -20,6 +20,7 @@ fuentes:
 - it-clopas
 - mateo-27
 - juan-19
+- mateo-28
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
@@ -31,5 +32,14 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/19
   tipo: biblia
 buscar: María
-consultado: '2026-09-28'
+perspicacia: 1200002918#4
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: acompana
+  persona: jesus
+  deducido: false
+  fuentes:
+  - mateo-27
+  razon: 'Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.'
+  estado: verificado

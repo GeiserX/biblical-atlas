@@ -6,6 +6,7 @@ nombres:
 desambiguacion: Esposo de María y padre adoptivo de Jesús; no es José de Arimatea ni José, el medio hermano de Jesús.
 no_confundir_con:
 - jose-de-arimatea
+- jose-hijo-de-jose
 resumen: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
   en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
 razon: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
@@ -13,6 +14,7 @@ fuentes:
 - it-jose
 - mateo-1
 - mateo-2
+- mateo-13
 relaciones:
 - tipo: pariente
   persona: maria-madre-de-jesus
@@ -28,6 +30,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-jose
+  - mateo-13
   razon: Perspicacia «José» (núm. 8) lo llama padre adoptivo de Jesús.
   estado: verificado
 - tipo: vivio_en
@@ -46,6 +49,30 @@ relaciones:
   - it-jose
   razon: Mt 2:11 habla de una casa; Perspicacia «José» (núm. 8) dice que residían en Belén cuando llegaron los astrólogos.
   estado: verificado
+- tipo: pariente
+  persona: jacob-hijo-de-mattan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-jose
+  razon: Mt 1:16; Perspicacia «José» (núm. 8).
+  estado: verificado
+- tipo: pariente
+  persona: david
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:6-16 lo pone en la línea de David, y en Mt 1:20 el ángel lo llama hijo de David.
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - mateo-2
+  razon: 'Mt 2:14, 15 y 19: se quedó en Egipto hasta la muerte de Herodes.'
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «José»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
@@ -53,5 +80,6 @@ enlaces:
 - titulo: Mateo 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002515#8
+consultado: '2026-09-29'
 estado: verificado

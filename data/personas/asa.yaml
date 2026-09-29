@@ -19,6 +19,7 @@ fuentes:
 - 1-reyes-15
 - 2-cronicas-14
 - tnm-a6-a
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Asá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
@@ -34,6 +35,7 @@ relaciones:
   fuentes:
   - it-asa
   - 1-reyes-15
+  - mateo-1
   razon: Perspicacia lo llama hijo de Abiyam (1Re 15:8).
   estado: verificado
 - tipo: sucede_a
@@ -48,5 +50,6 @@ historial:
 - fecha: '2026-09-28'
   cambio: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
   fuente: tnm-a6-a
-consultado: '2026-09-28'
+perspicacia: 1200000397#1
+consultado: '2026-09-29'
 estado: verificado

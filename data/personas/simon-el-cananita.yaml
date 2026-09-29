@@ -1,11 +1,12 @@
 # biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: simon-el-cananita
-nombre: Simón el cananita
+nombre: Simón el Cananita
 nombres:
-- nombre: Simón el cananita
+- nombre: Simón el Cananita
 desambiguacion: El apóstol Simón al que se llama «el cananita»; no es Simón Pedro.
 no_confundir_con:
 - pedro
+- simon-hijo-de-jose
 resumen: Apóstol distinguido de Simón Pedro con el apelativo de «cananita». Puede indicar que fue de los celotes o solo que
   era celoso en sentido religioso.
 razon: Perspicacia «Simón» (núm. 3); Mt 10:4 y Lu 6:15.
@@ -15,7 +16,7 @@ fuentes:
 relaciones:
 - tipo: acompana
   persona: jesus
-  relacion: apóstol de
+  relacion: maestro
   deducido: false
   fuentes:
   - mateo-10
@@ -28,5 +29,17 @@ enlaces:
 - titulo: Mateo 10 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/10
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200004131#3
+historial:
+- fecha: '2026-09-29'
+  cambio: El nombre se escribe como en la TNM de estudio, «Simón el Cananita», con mayúscula (Mt 10:4).
+  fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: La grafía del nombre sigue a Mt 10:4 en la TNM de estudio.
+  fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como
+    pide la tabla de relaciones (Mt 10:2-4).
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

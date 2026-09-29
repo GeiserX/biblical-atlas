@@ -21,6 +21,7 @@ fuentes:
 - it-pedro
 - bt-4
 - marcos-1
+- mateo-8
 relaciones:
 - tipo: vivio_en
   lugar: capernaum
@@ -38,5 +39,6 @@ enlaces:
 - titulo: Marcos 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: null
+consultado: '2026-09-29'
 estado: verificado
