@@ -1,0 +1,151 @@
+{
+  "formato": "biblical-earth/propuesta-cobertura/1",
+  "libro": "eclesiastes",
+  "agente": "escritor-eclesiastes",
+  "leido": "2026-09-29",
+  "cobertura": {},
+  "fuentes": {},
+  "cambios": [
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "fuentes",
+      "valores": [
+        "eclesiastes-1",
+        "it-eclesiastes-libro",
+        "si-eclesiastes"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "david",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "eclesiastes-1"
+          ],
+          "razon": "Ec 1:1 presenta al congregador como hijo de David.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "vivio_en",
+          "lugar": "jerusalen",
+          "deducido": false,
+          "fuentes": [
+            "eclesiastes-1",
+            "it-eclesiastes-libro",
+            "si-eclesiastes",
+            "1-reyes-11"
+          ],
+          "razon": "Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia «Eclesiastés, Libro de» dice que es Salomón.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "resumen",
+      "antes": "Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y compuso la mayor parte de Proverbios. En su vejez sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.",
+      "despues": "Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y escribió Eclesiastés y la mayor parte de Proverbios. Ya anciano, sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "El resumen añade que escribió Eclesiastés (Perspicacia «Eclesiastés, Libro de» y «Salomón», apartado «Se aparta de la justicia»). «En su vejez» pasa a «Ya anciano» para no pasar de 40 palabras.",
+        "fuente": "eclesiastes-1"
+      }
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "razon",
+      "antes": "Perspicacia «Salomón», párr. 1, 10, 12 y 31, y apartado «Se aparta de la justicia»; Perspicacia «Proverbios, Libro de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1.",
+      "despues": "Perspicacia «Salomón», párr. 1, 10, 12 y 31, y apartado «Se aparta de la justicia»; Perspicacia «Proverbios, Libro de» y «Eclesiastés, Libro de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1; Ec 1:1.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "La razón cita Ec 1:1 y el artículo de Perspicacia que le atribuye el libro de Eclesiastés.",
+        "fuente": "it-eclesiastes-libro"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "fuentes",
+      "valores": [
+        "eclesiastes-2"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "vivio_en",
+          "lugar": "jerusalen",
+          "deducido": false,
+          "fuentes": [
+            "eclesiastes-2"
+          ],
+          "razon": "Ec 2:7, 9: se compara con todos los que vivieron antes que él en Jerusalén.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "fuentes",
+      "valores": [
+        "eclesiastes-12",
+        "it-eclesiastes-libro"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "nombres",
+      "valores": [
+        {
+          "nombre": "Congregador",
+          "nota": "Título con que se presenta en Eclesiastés (Ec 1:1, 12; 7:27; 12:8-10), del hebreo Qohéleth. Perspicacia «Eclesiastés, Libro de» dice que es Salomón."
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "salomon",
+      "campo": "enlaces",
+      "valores": [
+        {
+          "titulo": "Perspicacia: «Eclesiastés, Libro de»",
+          "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001255",
+          "tipo": "perspicacia"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "eventos",
+      "id": "flota-de-salomon-a-ofir",
+      "campo": "pasajes",
+      "valores": [
+        "Ec 2:8"
+      ]
+    }
+  ],
+  "preguntas": []
+}

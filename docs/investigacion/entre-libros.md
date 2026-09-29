@@ -95,6 +95,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Sarepta (1Re 17).** `sarepta` existe desde Lu 4:26. Faltan la relación `elias-profeta` `vivio_en` `sarepta` (1Re 17:9, 10) y el suceso de la viuda; cuando exista, va en `menciona` del tramo Lucas 4:23-27.
 - **La reina de Saba (1Re 10).** Lu 11:31 y Mt 12:42 la llaman reina del sur. El lugar `saba` es el de Job 6:19. Si 1 Reyes crea el reino de Saba (Perspicacia «Seba», núm. 6), se añade a `menciona` de los tramos Lucas 11:29-36 y Mateo 12:38-42.
+- **Obras y riqueza de Salomón.** Ec 2:4-9 cuenta sus casas, viñas, estanques, siervos, oro y cantores, que narran 1Re 7:1-8, 9:17-19 y 10:14-29. Cuando 1 Reyes cree esos sucesos, añade «Ec 2:4-9» a sus `pasajes` y el suceso al tramo 1-11 de `data/cobertura/eclesiastes.yaml`. El único que ya existe, `flota-de-salomon-a-ofir`, lleva Ec 2:8 desde Eclesiastés.
 
 ## Para 2 Reyes
 
@@ -108,6 +109,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Itiel.** `itiel-oyente-de-agur` (clave `1200002237#1`, Pr 30:1) ya existe. El benjamita de Ne 11:7 es la entrada núm. 2 de Perspicacia «Itiel» (`1200002237#2`): va en ficha aparte, con `no_confundir_con` en las dos.
 
-## Para Eclesiastés, El Cantar de los Cantares y 1 Reyes
+## Para El Cantar de los Cantares y 1 Reyes
 
-- **Salomón.** Proverbios deja en `data/_propuestas/proverbios.json` un cambio a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios). Un cambio posterior a esos campos parte del texto que queda tras integrar Proverbios, no del de hoy.
+- **Salomón.** Eclesiastés deja en `data/_propuestas/eclesiastes.json` un cambio a su `resumen` y a su `razon` (escribió Eclesiastés; «En su vejez» pasa a «Ya anciano»), sobre el texto que dejó Proverbios. Un cambio posterior a esos campos parte del texto que queda tras integrar Eclesiastés. El resumen ya tiene 40 palabras: añadir El Cantar obliga a recortar otra cosa.
+- **Congregador.** Eclesiastés añade ese nombre a `salomon` y las relaciones `vivio_en` `jerusalen` y `pariente` `david` con sus capítulos. No hace falta volver a proponerlos.
