@@ -52,5 +52,9 @@ relaciones:
   - 2-reyes-14
   razon: Huyó a Lakís y allí lo mataron (2Re 14:19).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200000224#2
+desambiguacion: Rey de Judá, hijo de Jehoás; no es el sacerdote de Betel que se enfrentó al profeta Amós.
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- amasias-sacerdote-de-betel

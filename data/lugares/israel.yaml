@@ -9,6 +9,9 @@ nombres:
   desde: -996
   nota: Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8).
     Lo usan también Isaías y Jeremías.
+- nombre: José
+  nota: Amós llama así al reino del norte, por José, padre de Efraín y Manasés (Am 5:6, 15; 6:6). Perspicacia «José» dice
+    que el nombre designa a veces a todas las tribus.
 tipo: pais
 lat: null
 lon: null
@@ -53,6 +56,15 @@ fuentes:
 - oseas-9
 - oseas-13
 - oseas-14
+- amos-1
+- amos-2
+- amos-3
+- amos-4
+- amos-5
+- it-jose
+- amos-6
+- amos-7
+- amos-9
 enlaces:
 - titulo: 'Perspicacia: «Israel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227

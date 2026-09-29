@@ -14,8 +14,8 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 844-803 a.e.c.
-resumen: Hijo de Jehoás. Devolvió a Israel el límite desde Hamat hasta el mar del Arabá, como había dicho Jonás. Hubo prosperidad,
-  pero Amós y Oseas denunciaron la corrupción.
+resumen: Hijo de Jehoás. Devolvió a Israel el límite desde Lebó-Hamat hasta el mar del Arabá, como había dicho Jonás. Hubo
+  prosperidad, pero Amós y Oseas denunciaron la corrupción.
 razon: Perspicacia «Jeroboán», núm. 2, párr. 11-13; 2Re 14:23-29. Comienzo en A6-A; Perspicacia «Zacarías», núm. 14, y A6-B
   ponen su muerte en 803.
 fuentes:
@@ -24,6 +24,7 @@ fuentes:
 - tnm-a6-a
 - tnm-a6-b
 - it-zacarias
+- amos-7
 enlaces:
 - titulo: 'Perspicacia: «Jeroboán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
@@ -39,6 +40,8 @@ relaciones:
   fuentes:
   - it-jeroboan
   - 2-reyes-14
+  - amos-1
+  - it-jehoas
   razon: Hijo y sucesor de Jehoás (2Re 14:16).
   estado: verificado
 - tipo: sucede_a
@@ -50,5 +53,10 @@ relaciones:
   razon: Reinó al morir su padre (2Re 14:16).
   estado: verificado
 perspicacia: 1200002431#2
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El límite norte que recobró era Lebó-Hamat, no Hamat: así lo dice 2Re 14:25, y Am 6:14 usa el mismo par de límites.
+    Hamat es la ciudad, que 2Re 14:28 trata aparte.'
+  fuente: 2-reyes-14
 consultado: '2026-09-29'
 estado: verificado

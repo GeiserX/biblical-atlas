@@ -5,6 +5,9 @@ nombres:
 - nombre: Samaria
 - nombre: Sebaste
   nota: Nombre griego que le dio Herodes el Grande en honor de Augusto.
+- nombre: Montaña de Samaria
+  nota: Así llama Amós al monte de la ciudad (Am 4:1; 6:1). Monte y ciudad llevaban el nombre de Sémer, su dueño antes de
+    Omrí (Perspicacia «Samaria», núm. 1).
 tipo: ciudad
 lat: 32.276111
 lon: 35.195
@@ -22,6 +25,11 @@ fuentes:
 - oseas-7
 - oseas-8
 - oseas-13
+- amos-3
+- it-amos-libro
+- amos-4
+- amos-6
+- amos-8
 enlaces:
 - titulo: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816

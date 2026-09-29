@@ -17,13 +17,16 @@ resumen: Ciudad de la región montañosa cercana a Betel. Elías y Eliseo bajaro
 razon: 'Perspicacia «Guilgal», núm. 2: 2Re 2:1-5; 4:38-41; Os 4:15; 9:15; 12:11; Am 4:4; 5:5. Coordenada de OpenBible: solo
   tomamos el punto.'
 no_afirmamos:
-- 'Que la Guilgal de Os 4:15, 9:15 y 12:11 sea con seguridad esta: Perspicacia admite que quizá sea la de junto a Jericó.'
+- 'Que la Guilgal de Os 4:15, 9:15 y 12:11 y de Am 4:4 y 5:5 sea con seguridad esta: Perspicacia admite que el centro de culto
+  falso quizá fuera la de junto a Jericó.'
 fuentes:
 - it-guilgal
 - openbible-geo
 - oseas-4
 - oseas-9
 - oseas-12
+- amos-4
+- amos-5
 enlaces:
 - titulo: 'Perspicacia: «Guilgal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
@@ -37,5 +40,10 @@ enlaces:
 - titulo: Oseas 12 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/12
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La duda se extiende a Am 4:4 y 5:5: Perspicacia «Guilgal», núm. 2, los cita en el mismo párrafo que la duda sobre
+    qué Guilgal fue centro de culto falso.'
+  fuente: amos-4
 consultado: '2026-09-29'
 estado: verificado
