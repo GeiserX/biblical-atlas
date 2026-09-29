@@ -34,6 +34,8 @@ fuentes:
 - genesis-46
 - genesis-47
 - genesis-50
+- salmos-105
+- salmos-135
 enlaces:
 - titulo: 'Perspicacia: «Canaán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
@@ -49,6 +51,12 @@ enlaces:
   tipo: biblia
 - titulo: Génesis 42 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/42
+  tipo: biblia
+- titulo: Salmo 105 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/105
+  tipo: biblia
+- titulo: Salmo 135 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

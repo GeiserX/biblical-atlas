@@ -11,7 +11,7 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 1037-998 a.e.c.
-resumen: Hijo de David y Bat-seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras
+resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras
   lo llevaron a otros dioses; tras su muerte el reino se dividió.
 razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31; 1Re 6:1 y 11:4-13, 42.
 fuentes:
@@ -20,6 +20,8 @@ fuentes:
 - 1-reyes-11
 - tnm-b7
 - mateo-1
+- salmos-72
+- w10-salmo-72
 enlaces:
 - titulo: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -36,7 +38,8 @@ relaciones:
   - it-salomon
   - 2-samuel-12
   - mateo-1
-  razon: Hijo de David y Bat-seba (2Sa 12:24).
+  - salmos-72
+  razon: Hijo de David y Bat-Seba (2Sa 12:24).
   estado: verificado
 - tipo: sucede_a
   persona: david
@@ -56,5 +59,14 @@ relaciones:
   razon: Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.
   estado: verificado
 perspicacia: '1200004178'
+historial:
+- fecha: '2026-09-29'
+  cambio: Grafía «Bat-seba» cambiada a «Bat-Seba», la de la TNM revisada en el encabezamiento de Sal 51 y la del nombre de
+    su ficha.
+  fuente: salmos-51
+- fecha: '2026-09-29'
+  cambio: En la razón de su relación con David, «Bat-seba» pasa a «Bat-Seba», la grafía de la TNM (Sl 51, encabezamiento;
+    2Sa 12:24).
+  fuente: salmos-51
 consultado: '2026-09-29'
 estado: verificado

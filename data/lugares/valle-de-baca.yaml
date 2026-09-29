@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-baca
+nombre: Valle de Bacá
+nombres:
+- nombre: Valle de Bacá
+  nota: La nota de Sl 84:6 da «valle de los arbustos bacá (bekja)».
+tipo: valle
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Llanura baja de Refaím, al suroeste de Jerusalén
+  geometria:
+    tipo: punto
+    lat: 31.763203
+    lon: 35.219122
+  estado: alternativa
+  fuentes:
+  - it-bekja
+  - openbible-geo
+  razon: 'Perspicacia «Bekja»: el salmo puede aludir a la llanura donde David luchó contra los filisteos.'
+  coord_fuente: openbible:a7559e6
+  coord_url: https://www.openbible.info/geo/ancient/a7559e6/valley-of-rephaim
+resumen: Valle que cruzan los que suben a la casa de Dios en el Salmo 84. Su nombre remite a los arbustos bekja, que rezuman
+  savia o resina; no se sabe dónde estaba.
+razon: Perspicacia «Bekja», párr. 1 y 2; Sl 84:6 y su nota.
+no_afirmamos:
+- 'Que sea con seguridad la llanura de Refaím: Perspicacia solo dice que el salmo puede aludir a ella.'
+fuentes:
+- it-bekja
+- openbible-geo
+- salmos-84
+enlaces:
+- titulo: 'Perspicacia: «Bekja»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000532
+  tipo: perspicacia
+- titulo: Salmo 84 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/84
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

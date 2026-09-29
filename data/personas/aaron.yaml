@@ -18,6 +18,11 @@ fuentes:
 - it-aaron
 - exodo-6
 - numeros-20
+- salmos-77
+- salmos-99
+- salmos-105
+- salmos-106
+- salmos-133
 enlaces:
 - titulo: 'Perspicacia: «Aarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
@@ -50,5 +55,15 @@ relaciones:
   - it-aaron
   razon: 'Perspicacia «Aarón», párr. 2: nació en Egipto en 1597 a.e.c.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - salmos-77
+  - salmos-105
+  razon: 'Sl 77:20: Dios guio a su pueblo como a un rebaño por mano de Moisés y Aarón.'
+  estado: verificado
+perspicacia: '1200000005'
+consultado: '2026-09-29'
 estado: verificado
