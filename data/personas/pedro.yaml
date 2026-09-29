@@ -59,11 +59,17 @@ fuentes:
 - lucas-18
 - lucas-22
 - lucas-24
+- juan-6
+- juan-13
+- juan-18
+- juan-20
+- juan-21
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
 - simon-el-cananita
 - simon-hijo-de-jose
+- simon-iscariote
 no_afirmamos:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
@@ -106,6 +112,7 @@ relaciones:
   - hechos-3
   - hechos-8
   - lucas-22
+  - juan-18
   razon: 'Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia
     «Pedro», párr. 7.'
   estado: verificado
@@ -218,6 +225,11 @@ relaciones:
   - lucas-12
   - lucas-18
   - lucas-22
+  - juan-1
+  - juan-6
+  - juan-13
+  - juan-18
+  - juan-21
   razon: 'Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.'
   estado: verificado
 - tipo: pariente
@@ -227,6 +239,9 @@ relaciones:
   fuentes:
   - mateo-16
   - it-jonas
+  - juan-1
+  - juan-21
+  - it-juan
   razon: 'Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.'
   estado: verificado
 - tipo: vivio_en

@@ -50,6 +50,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-david
+  - juan-7
   razon: 'Perspicacia «David», párr. 4: Belén era su pueblo natal.'
   estado: verificado
 - tipo: sucede_a

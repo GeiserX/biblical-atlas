@@ -16,6 +16,7 @@ orden_relato:
   orden: 19
 lugares:
 - sicar
+- region-de-samaria
 personas:
 - jesus
 pasajes:
@@ -29,5 +30,6 @@ fuentes:
 - juan-4
 - it-sicar
 - jy-cap-19
-consultado: '2026-09-28'
+- it-fuente-de-jacob
+consultado: '2026-09-29'
 estado: verificado

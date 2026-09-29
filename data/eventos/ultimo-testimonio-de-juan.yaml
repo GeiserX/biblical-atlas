@@ -15,6 +15,7 @@ orden_relato:
 lugares:
 - judea
 - enon
+- salim
 personas:
 - jesus
 - juan-el-bautista
@@ -28,5 +29,13 @@ fuentes:
 - juan-3
 - it-enon
 - jy-cap-18
-consultado: '2026-09-28'
+- it-salim
+presentes:
+- jesus
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade presentes: el sitio ponía a Juan el Bautista en Judea, y Jn 3:23 lo sitúa en Enón, junto a Salim, en el
+    valle del Jordán.'
+  fuente: juan-3
+consultado: '2026-09-29'
 estado: verificado

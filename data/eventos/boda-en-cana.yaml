@@ -26,11 +26,17 @@ pasajes:
 resumen: En una boda en Caná, ciudad de Natanael, se acaba el vino y Jesús convierte en vino el agua de seis tinajas de piedra.
   Luego se va a Capernaúm acompañado de su familia y de los discípulos.
 razon: 'A7-B, fila 4: Caná de Galilea y Capernaúm. Perspicacia «Caná» (párr. 2) cuenta el milagro tres días después de que
-  Natanael conociera a Jesús.'
+  Natanael conociera a Jesús; «Juan», núm. 3, supone que el apóstol lo vio, sin apoyo del relato.'
 fuentes:
 - tnm-a7-b
 - juan-2
 - it-cana
 - jy-cap-15
-consultado: '2026-09-28'
+- it-juan
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón recoge que Perspicacia «Juan», núm. 3, supone al apóstol en la boda. Jn 2:2 solo dice «sus discípulos»,
+    así que no va en personas.
+  fuente: juan-2
+consultado: '2026-09-29'
 estado: verificado

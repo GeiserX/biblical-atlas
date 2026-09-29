@@ -18,12 +18,15 @@ fuentes:
 - mateo-10
 - marcos-3
 - lucas-6
+- juan-12
+- juan-14
 relaciones:
 - tipo: vivio_en
   lugar: betsaida
   deducido: false
   fuentes:
   - juan-1
+  - juan-12
   razon: 'Jn 1:44: era de Betsaida.'
   estado: verificado
 - tipo: acompana
@@ -44,6 +47,9 @@ relaciones:
   - mateo-10
   - marcos-3
   - lucas-6
+  - juan-1
+  - juan-6
+  - juan-14
   razon: Mt 10:3 lo nombra entre los doce.
   estado: verificado
 enlaces:

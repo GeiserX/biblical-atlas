@@ -17,9 +17,9 @@ lugares:
 personas:
 - jesus
 pasajes:
-- Jn 7:11-52
-resumen: A mitad de la fiesta, Jesús enseña en el templo y muchos creen en él. Los fariseos y los sacerdotes mandan
-  guardias a arrestarlo, pero estos vuelven sin él.
+- Jn 7:11-36
+resumen: En la fiesta la gente murmura sobre Jesús. A mitad de ella enseña en el templo; unos dicen que tiene un demonio y
+  muchos creen en él. Los fariseos y los sacerdotes principales mandan guardias a arrestarlo.
 razon: La tabla A7-E da cuándo y dónde. Las notas de Jn 7:2 y 7:37 ponen la fiesta en el otoño de 32 y su último
   día el 21 de tisri.
 fuentes:
@@ -31,5 +31,13 @@ orden_relato:
   serie: a7
   orden: 64
 buscar: Enseña en la Fiesta de los Tabernáculos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El último día (Jn 7:37-44, 21 de tisri) y la vuelta de los guardias con la defensa de Nicodemo (Jn 7:45-52) pasan
+    a dos sucesos propios.
+  fuente: juan-7
+- fecha: '2026-09-29'
+  cambio: 'La vuelta de los guardias sin él sale del resumen: ahora es parte de nicodemo-defiende-a-jesus.'
+  fuente: juan-7
+consultado: '2026-09-29'
 estado: verificado

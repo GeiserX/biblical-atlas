@@ -27,5 +27,12 @@ orden_relato:
   serie: a7
   orden: 74
 buscar: Va adonde Juan bautizaba
-consultado: '2026-09-28'
+presentes:
+- jesus
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Juan el Bautista solo se nombra: había muerto a comienzos de 32 (muerte-de-juan-el-bautista) y la gente habla de
+    él en pasado. Solo Jesús estaba allí.'
+  fuente: juan-10
+consultado: '2026-09-29'
 estado: verificado
