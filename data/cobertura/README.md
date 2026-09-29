@@ -44,7 +44,7 @@ Pocos a propósito. Si un tramo mezcla dos, se parte o se pone el que domina.
 | `narracion` | Relato de hechos: quién hizo qué, dónde. |
 | `genealogia` | Listas de padres e hijos. |
 | `ley` | Mandatos, normas, instrucciones del culto o del tabernáculo. |
-| `poesia` | Salmos, cantos, proverbios, lamentos, oraciones en verso. |
+| `poesia` | Salmos, cantos, proverbios, lamentos, oraciones en verso. También los libros sapienciales que la TNM imprime en prosa (Eclesiastés). |
 | `profecia` | Mensajes de un profeta sobre el futuro o contra una nación. |
 | `discurso` | Un discurso largo o un sermón dentro de un relato (Moisés en Deuteronomio, el Sermón del Monte). |
 | `carta` | El cuerpo de una carta. |

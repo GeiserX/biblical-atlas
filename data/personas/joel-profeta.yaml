@@ -20,6 +20,11 @@ fuentes:
 - joel-1
 - tnm-tabla
 - si-3
+- it-joel-libro
+- si-joel
+- w07-joel-y-amos
+- joel-2
+- joel-3
 enlaces:
 - titulo: 'Perspicacia: «Joel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002481
@@ -27,5 +32,48 @@ enlaces:
 - titulo: Joel 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/1
   tipo: biblia
-consultado: '2026-09-28'
+- titulo: 'Perspicacia: «Joel, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002482
+  tipo: perspicacia
+perspicacia: 1200002481#9
+no_afirmamos:
+- 'Que viviera con seguridad en Jerusalén: Perspicacia «Joel, Libro de» solo dice «quizás», y «Toda Escritura» duda entre
+  Jerusalén y Judá.'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: petuel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - joel-1
+  - it-petuel
+  razon: Joe 1:1 lo presenta como hijo de Petuel.
+  estado: verificado
+- tipo: vivio_en
+  lugar: juda
+  deducido: true
+  fuentes:
+  - it-joel-libro
+  - si-joel
+  - w07-joel-y-amos
+  - tnm-tabla
+  - joel-1
+  - joel-2
+  - joel-3
+  razon: Perspicacia «Joel, Libro de» lo deduce de cómo nombra a Judá, Jerusalén y el templo (Joe 3:1, 2, 16-20; 1:9, 14;
+    2:17, 32). «Toda Escritura», la tabla de libros y La Atalaya de 2007 dan Judá.
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: true
+  fuentes:
+  - it-joel-libro
+  - si-joel
+  - joel-1
+  - joel-2
+  - joel-3
+  razon: Perspicacia «Joel, Libro de» dice que quizás residió en Jerusalén (Joe 3:1, 2, 16-20; 1:9, 14; 2:17, 32). «Toda Escritura»
+    duda entre Jerusalén y Judá, por su trato con el templo (Joe 1:13, 14; 2:1, 15, 16).
+  estado: pendiente

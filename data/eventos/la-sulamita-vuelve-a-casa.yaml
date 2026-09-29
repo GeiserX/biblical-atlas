@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-sulamita-vuelve-a-casa
+titulo: La sulamita vuelve a casa con su amado
+fecha:
+  desde: -1036
+  hasta: -1019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 1020 a.e.c. (tiempo narrativo: al principio del reinado de Salomón, antes de escribirse El Cantar)'
+orden_relato:
+  serie: cantar-de-los-cantares
+  orden: 8005
+lugares:
+- sunem
+personas:
+- sulamita
+pasajes:
+- Can 8:5-14
+resumen: Salomón la deja marchar. Sus hermanos la ven subir del desierto apoyada en su pastor. Ella proclama que su amor no
+  se apaga ni se compra, deja al rey sus riquezas y se queda con su propia viña.
+razon: '«Toda Escritura», párr. 5 y 15, y Perspicacia «Cantar de los Cantares, El»: vuelve a casa, cerca de Sunem. Fecha:
+  Perspicacia pone el poema al principio del reinado (1037-998 a.e.c.); la tabla de libros, hacia 1020 a.e.c.'
+fuentes:
+- cantar-de-los-cantares-8
+- it-cantar-de-los-cantares
+- si-cantar-de-los-cantares
+- it-sunem
+- tnm-tabla
+enlaces:
+- titulo: El Cantar de los Cantares 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/8
+  tipo: biblia
+- titulo: 'Perspicacia: «Cantar de los Cantares, El»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado
