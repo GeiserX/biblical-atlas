@@ -68,6 +68,20 @@
   --node-periodo: #6a5a8c;
   --node-hallazgo: #62743a;
   --node-texto: #4b5d73;
+  /* Forma de cada tipo: el tipo no va solo en el color (en claro, persona y suceso son dos verdes). Radio del borde y
+     transformación del relleno; los anillos de foco siguen la forma. */
+  --node-shape-persona: 50%;                        /* círculo */
+  --node-turn-persona: none;
+  --node-shape-lugar: 50% 50% 50% 0;                /* chincheta de mapa, con la punta abajo */
+  --node-turn-lugar: rotate(-45deg) scale(.78);
+  --node-shape-evento: 3px;                         /* rombo */
+  --node-turn-evento: rotate(45deg) scale(.76);
+  --node-shape-periodo: 5px;                        /* barra: un tramo de tiempo */
+  --node-turn-periodo: scale(1.16, .68);
+  --node-shape-hallazgo: 50% 50% 2px 2px / 36% 36% 2px 2px;   /* estela, con la parte de arriba redonda */
+  --node-turn-hallazgo: scale(.82, 1);
+  --node-shape-texto: 2px;                          /* cuadrado: una página */
+  --node-turn-texto: scale(.9);
 
   /* ---------- Imperios (carriles y zonas) ---------- */
   --emp-egipto: #a8863c;
