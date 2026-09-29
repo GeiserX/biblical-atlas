@@ -3,6 +3,9 @@ id: salomon
 nombre: Salomón
 nombres:
 - nombre: Salomón
+- nombre: Congregador
+  nota: Título con que se presenta en Eclesiastés (Ec 1:1, 12; 7:27; 12:8-10), del hebreo Qohéleth. Perspicacia «Eclesiastés,
+    Libro de» dice que es Salomón.
 fecha:
   desde: -1036
   hasta: -997
@@ -11,10 +14,10 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 1037-998 a.e.c.
-resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y compuso la mayor parte de
-  Proverbios. En su vejez sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.
+resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y escribió Eclesiastés y la
+  mayor parte de Proverbios. Ya anciano, sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.
 razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31, y apartado «Se aparta de la justicia»; Perspicacia «Proverbios, Libro
-  de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1.
+  de» y «Eclesiastés, Libro de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1; Ec 1:1.
 fuentes:
 - it-salomon
 - 1-reyes-6
@@ -27,6 +30,11 @@ fuentes:
 - proverbios-10
 - it-proverbios-libro
 - proverbios-25
+- eclesiastes-1
+- it-eclesiastes-libro
+- si-eclesiastes
+- eclesiastes-2
+- eclesiastes-12
 enlaces:
 - titulo: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -34,6 +42,9 @@ enlaces:
 - titulo: 1 Reyes 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
   tipo: biblia
+- titulo: 'Perspicacia: «Eclesiastés, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001255
+  tipo: perspicacia
 relaciones:
 - tipo: pariente
   persona: david
@@ -45,6 +56,7 @@ relaciones:
   - mateo-1
   - salmos-72
   - proverbios-1
+  - eclesiastes-1
   razon: Hijo de David y Bat-Seba (2Sa 12:24).
   estado: verificado
 - tipo: sucede_a
@@ -64,6 +76,18 @@ relaciones:
   - it-bat-seba
   razon: Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.
   estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - eclesiastes-1
+  - it-eclesiastes-libro
+  - si-eclesiastes
+  - 1-reyes-11
+  - eclesiastes-2
+  razon: 'Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia
+    «Eclesiastés, Libro de» dice que es Salomón.'
+  estado: verificado
 perspicacia: '1200004178'
 historial:
 - fecha: '2026-09-29'
@@ -81,5 +105,12 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón cita Pr 1:1 y los artículos de Perspicacia que le atribuyen los proverbios.
   fuente: it-proverbios-libro
+- fecha: '2026-09-29'
+  cambio: El resumen añade que escribió Eclesiastés (Perspicacia «Eclesiastés, Libro de» y «Salomón», apartado «Se aparta
+    de la justicia»). «En su vejez» pasa a «Ya anciano» para no pasar de 40 palabras.
+  fuente: eclesiastes-1
+- fecha: '2026-09-29'
+  cambio: La razón cita Ec 1:1 y el artículo de Perspicacia que le atribuye el libro de Eclesiastés.
+  fuente: it-eclesiastes-libro
 consultado: '2026-09-29'
 estado: verificado
