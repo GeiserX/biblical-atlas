@@ -2,13 +2,13 @@
 id: los-filisteos-derrotan-a-israel-junto-a-ebenezer
 title: Los filisteos derrotan a Israel junto a Ebenézer
 date:
-  from: -1179
+  from: -1172
   to: -1116
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: poco antes de morir Elí)'
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: poco antes de morir Elí)'
 narrative_order:
   series: 1-samuel
   order: 4001
@@ -20,14 +20,14 @@ passages:
 - 1Sa 4:1, 2
 summary: Israel sale contra los filisteos y acampa junto a Ebenézer, y ellos en Afec. En la primera batalla caen unos 4.000
   israelitas.
-reason: '1Sa 4:1, 2; Perspicacia «Ebenézer», núm. 1, «Afeq», núm. 3, y «Siló» (poco antes de morir Elí). Fecha: entre c. 1180,
-  inicio de 1 Samuel (Tabla de los libros), y la unción de Saúl en 1117 (estudio 3).'
+reason: '1Sa 4:1, 2; Perspicacia «Ebenézer», núm. 1, «Afeq», núm. 3, y «Siló» (poco antes de morir Elí). Fecha: Jefté juzga
+  desde hacia 1173, con Samuel aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3).'
 sources:
 - 1-samuel-4
 - it-ebenezer
 - it-afeq
 - it-silo
-- tnm-tabla
+- it-jefte
 - si-3
 links:
 - title: 1 Samuel 4 (TNM)
@@ -36,5 +36,10 @@ links:
 - title: 'Perspicacia: «Ebenézer»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001248
   type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
 checked_on: '2026-09-29'
 status: verified

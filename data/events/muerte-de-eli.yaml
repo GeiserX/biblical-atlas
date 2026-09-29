@@ -2,13 +2,13 @@
 id: muerte-de-eli
 title: Muere Elí al saber que los filisteos se llevaron el Arca
 date:
-  from: -1179
+  from: -1172
   to: -1116
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: el mismo día de la derrota junto a Ebenézer)'
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: el mismo día de la derrota junto a Ebenézer)'
 narrative_order:
   series: 1-samuel
   order: 4012
@@ -16,16 +16,19 @@ places:
 - silo
 people:
 - eli
+type: death
+roles:
+  eli: died
 passages:
 - 1Sa 4:12-18
 summary: Un benjaminita llega corriendo del frente a Siló con la ropa rasgada. Elí, ciego y de 98 años, espera junto al camino;
   al oír que el Arca fue tomada se cae del asiento, se rompe el cuello y muere.
-reason: '1Sa 4:12-18; Perspicacia «Elí, I»: había juzgado a Israel 40 años. Fecha: entre c. 1180, inicio de 1 Samuel (Tabla
-  de los libros), y la unción de Saúl en 1117 (estudio 3).'
+reason: '1Sa 4:12-18; Perspicacia «Elí, I»: había juzgado a Israel 40 años. Fecha: Jefté juzga desde hacia 1173, con Samuel
+  aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3).'
 sources:
 - 1-samuel-4
 - it-eli
-- tnm-tabla
+- it-jefte
 - si-3
 links:
 - title: 1 Samuel 4 (TNM)
@@ -34,5 +37,10 @@ links:
 - title: 'Perspicacia: «Elí, I»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001290
   type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
 checked_on: '2026-09-29'
 status: verified

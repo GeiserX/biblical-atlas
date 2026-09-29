@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasias-intenta-echar-a-amos-de-betel
+title: Amasías intenta echar a Amós de Betel
+date:
+  from: -828
+  to: -803
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 804 a.e.c. (tiempo narrativo: mientras Amós profetizaba, con Jeroboán II en el trono)'
+narrative_order:
+  series: amos
+  order: 7010
+places:
+- betel
+people:
+- amasias-sacerdote-de-betel
+- amos-profeta
+- jeroboan-ii
+present:
+- amasias-sacerdote-de-betel
+- amos-profeta
+passages:
+- Am 7:10-17
+summary: El sacerdote Amasías acusa a Amós ante Jeroboán II de conspirar y le manda volver a Judá sin profetizar más en Betel.
+  Amós responde que Jehová lo sacó del rebaño y anuncia la ruina de Amasías.
+reason: 'Am 7:10-17. Perspicacia «Betel» dice que Amós había hablado en la propia ciudad. Nadie da el año: cae en los años
+  de su profecía, 829-804 (Perspicacia «Amós», núm. 1), y Jeroboán II seguía reinando.'
+sources:
+- amos-7
+- it-amasias
+- it-amos
+- it-betel
+- si-amos
+- it-jeroboan
+- w07-joel-y-amos
+links:
+- title: Amós 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/7
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
+  type: perspicacia
+- title: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

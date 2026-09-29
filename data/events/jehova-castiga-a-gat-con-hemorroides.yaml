@@ -2,13 +2,13 @@
 id: jehova-castiga-a-gat-con-hemorroides
 title: 'El Arca en Gat: Jehová castiga la ciudad'
 date:
-  from: -1179
+  from: -1172
   to: -1116
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 1180 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
 narrative_order:
   series: 1-samuel
   order: 5008
@@ -20,13 +20,13 @@ passages:
 - 1Sa 5:8, 9
 summary: 'Llevan el Arca de Asdod a Gat y allí también se extiende el pánico: Jehová castiga con hemorroides a todos sus habitantes,
   pequeños y grandes.'
-reason: '1Sa 5:8, 9; Perspicacia «Gat», párr. 4. Fecha: 1 Samuel empieza hacia 1180 (tabla de libros) y Saúl es ungido en 1117
-  (estudio 3); Perspicacia «Quiryat-jearim» pone la vuelta del Arca en el siglo XII.'
+reason: '1Sa 5:8, 9; Perspicacia «Gat», párr. 4. Fecha: Jefté juzga desde hacia 1173, con Samuel aún niño («Jefté»); Saúl
+  es ungido en 1117 (estudio 3). Perspicacia «Quiryat-jearim»: siglo XII.'
 sources:
 - 1-samuel-5
 - it-gat
 - it-hemorroides
-- tnm-tabla
+- it-jefte
 - si-3
 - it-quiryat-jearim
 links:
@@ -37,5 +37,10 @@ links:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001619
   type: perspicacia
 search: Arca Gat hemorroides
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
 checked_on: '2026-09-29'
 status: verified

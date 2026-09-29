@@ -18,6 +18,9 @@ people:
 - samuel
 - ana-madre-de-samuel
 - elcana-hijo-de-jeroham
+type: birth
+roles:
+  samuel: born
 passages:
 - 1Sa 1:19, 20
 summary: De vuelta en Ramá, Ana queda embarazada y da a luz un hijo. Le pone por nombre Samuel porque se lo había pedido a

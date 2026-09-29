@@ -32,8 +32,9 @@ relations:
   reason: 1Sa 8:2 lo nombra como el segundo hijo de Samuel.
   checked_on: '2026-09-29'
   status: verified
-- type: lived_in
+- type: holds_office
   place: beer-seba
+  office: judge
   inferred: false
   sources:
   - 1-samuel-8

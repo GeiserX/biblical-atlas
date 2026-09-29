@@ -37,6 +37,7 @@ sources:
 - salmos-132
 - salmos-142
 - lucas-3
+- amos-6
 - hch-2
 - hechos-7
 - 1-samuel-16
@@ -129,9 +130,9 @@ relations:
     da sepultado en la Ciudad de David (1Re 2:10).'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: saul
-  caption: escudero y jefe de la guardia de
+  word: master
   inferred: false
   sources:
   - 1-samuel-16
@@ -230,9 +231,19 @@ relations:
   reason: '1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
+  person: gad-profeta
+  word: adviser
+  inferred: false
+  sources:
+  - 1-samuel-22
+  - it-gad
+  reason: '1Sa 22:5: el profeta Gad aconseja a David que deje el refugio y vuelva a Judá; Perspicacia «Gad», núm. 3.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
   person: akis
-  caption: siervo de
+  word: master
   inferred: false
   sources:
   - 1-samuel-27

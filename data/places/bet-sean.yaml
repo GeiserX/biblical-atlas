@@ -14,9 +14,9 @@ precision: point
 coord_source: openbible:a2a8df0
 coord_url: https://www.openbible.info/geo/ancient/a2a8df0/beth-shan
 coord_note: Punto de Tel Bet Sheʼan (Tell el-Husn), el sitio que da Perspicacia.
-summary: Ciudad cananea fortificada que dominaba la entrada del valle de Jezreel desde el Jordán. Estaba en Isacar, pero tocó
-  a Manasés. Siendo filistea, en su muralla colgaron los cadáveres de Saúl y sus hijos.
-reason: 'Perspicacia «Bet-seán, Bet-san», párr. 1 y 5; Jos 17:11, 12, 16. OpenBible: solo el punto.'
+summary: Ciudad fortificada a la entrada del valle de Jezreel. Estaba en Isacar, pero tocó a Manasés, que no echó a sus cananeos
+  por miedo a sus carros. Ya filistea, en su muralla colgaron los cuerpos de Saúl y sus hijos.
+reason: 'Perspicacia «Bet-seán, Bet-san», párr. 1, 5 y 6; Jos 17:11, 12, 16; 1Sa 31:10-12. OpenBible: solo el punto.'
 sources:
 - it-bet-sean
 - openbible-geo
@@ -32,8 +32,8 @@ links:
   type: bible
 history:
 - date: '2026-09-29'
-  change: 'Se añade lo que cuenta 1Sa 31:10-12 y Perspicacia «Bet-seán, Bet-san», párr. 9: en tiempos de Saúl la dominaban
-    los filisteos, que colgaron allí su cuerpo y el de sus hijos.'
+  change: 'Se añade lo que cuenta 1Sa 31:10-12 y Perspicacia «Bet-seán, Bet-san», párr. 6: en tiempos de Saúl la dominaban
+    los filisteos, que colgaron allí su cuerpo y el de sus hijos. La primera frase se acorta.'
   source: 1-samuel-31
 checked_on: '2026-09-29'
 status: verified

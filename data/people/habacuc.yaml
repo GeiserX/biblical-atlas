@@ -11,13 +11,21 @@ date:
   type: anchored
   chronology: tnm
   text: c. 628 a.e.c. (?)
-summary: Profeta de Judá, autor del libro de Habacuc. No se sabe con certeza si era músico levita.
-reason: Perspicacia «Habacuc», párr. 1; Hab 1:1. La Tabla de los libros pone «c. 628 (?)», con duda.
+summary: Profeta de Judá que escribió el libro de Habacuc; su nombre quizá signifique «abrazo ardiente». Profetizó al comenzar
+  el reinado de Jehoiaquim, antes de la batalla de Carquemis, y fue contemporáneo de Jeremías. No se sabe si era músico levita.
+reason: Perspicacia «Habacuc» y «Habacuc, Libro de»; «Toda Escritura», libro 35, párr. 2 y 3; Hab 1:1 y su nota al pie. La
+  Tabla de los libros pone «c. 628 (?)», con duda.
 sources:
 - it-habacuc
 - habacuc-1
 - tnm-tabla
 - si-3
+- it-habacuc-libro
+- si-habacuc
+- w07-nahum-habacuc-y-sofonias
+- w00-inicuos
+- habacuc-2
+- habacuc-3
 links:
 - title: 'Perspicacia: «Habacuc»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001789
@@ -25,5 +33,30 @@ links:
 - title: Habacuc 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/35/1
   type: bible
-checked_on: '2026-09-28'
+- title: 'Perspicacia: «Habacuc, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001790
+  type: perspicacia
+perspicacia: '1200001789'
+history:
+- date: '2026-09-29'
+  change: El resumen añade cuándo profetizó (comienzo del reinado de Jehoiaquim, antes de Carquemis), que fue contemporáneo
+    de Jeremías y el sentido de su nombre.
+  source: si-habacuc
+- date: '2026-09-29'
+  change: La razón cita también «Habacuc, Libro de» y «Toda Escritura», de donde salen la fecha y el contexto del resumen.
+  source: it-habacuc-libro
+checked_on: '2026-09-29'
 status: verified
+relations:
+- type: lived_in
+  place: juda
+  inferred: true
+  sources:
+  - it-habacuc
+  - si-habacuc
+  - tnm-tabla
+  - habacuc-1
+  reason: Perspicacia lo llama profeta hebreo de Judá, y la tabla de libros y «Toda Escritura» dicen que escribió allí. El
+    libro no lo dice.
+  checked_on: '2026-09-29'
+  status: verified

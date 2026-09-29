@@ -8,7 +8,7 @@ names:
   note: La TNM lo llama así en Jn 1:42 y 21:15-17; otros manuscritos antiguos dicen Joná.
 perspicacia: 1200002503#2
 disambiguation: El padre de Simón Pedro y de Andrés, del siglo I, al que Jn 1:42 y 21:15-17 llaman Juan (Perspicacia «Juan»,
-  núm. 2). No es el profeta Jonás, hijo de Amitai.
+  núm. 2). No es el profeta Jonás, hijo de Amitái.
 distinct_from:
 - jonas-profeta
 summary: Padre de Simón Pedro y de su hermano Andrés, los dos apóstoles. Solo sale como nombre de familia de Pedro.
@@ -30,5 +30,9 @@ links:
 - title: Mateo 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/16
   type: bible
+history:
+- date: '2026-09-29'
+  change: Amitái con la grafía de la TNM (Jon 1:1); Amitai es la de Perspicacia.
+  source: jonas-1
 checked_on: '2026-09-29'
 status: verified

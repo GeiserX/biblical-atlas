@@ -11,10 +11,11 @@ lon: 35.334306
 precision: point
 coord_source: openbible:ac86af5
 coord_url: https://www.openbible.info/geo/ancient/ac86af5/shunem
-summary: Ciudad de Isacar, cerca de Jezreel y del monte Guilboa, hoy Sulam. Allí acamparon los filisteos antes de la batalla
-  en que murió Saúl. Era la tierra de la sulamita, y junto a ella acampó Salomón en el Cantar.
-reason: 'Perspicacia «Sunem», párr. 1. La sulamita es campesina de Sunem según Perspicacia «Cantar de los Cantares, El», párr.
-  1, y «Toda Escritura», libro 22, párr. 5, que sitúa el drama cerca; «Sulamita» dice probablemente. OpenBible: solo el punto.'
+summary: Ciudad de Isacar, cerca de Jezreel y del monte Guilboa, identificada con Sulam. Allí acamparon los filisteos antes
+  de la batalla en que murió Saúl. Era la tierra de la sulamita, y junto a ella acampó Salomón en el Cantar.
+reason: 'Perspicacia «Sunem», párr. 1 y 2; 1Sa 28:4. La sulamita es campesina de Sunem según «Cantar de los Cantares, El»,
+  párr. 1, y «Toda Escritura», libro 22, párr. 5, que sitúa el drama cerca; «Sulamita»: probablemente. OpenBible: solo el
+  punto.'
 sources:
 - it-sunem
 - it-sulamita

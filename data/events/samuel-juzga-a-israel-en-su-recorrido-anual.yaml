@@ -3,12 +3,13 @@ id: samuel-juzga-a-israel-en-su-recorrido-anual
 title: Samuel juzga a Israel en su recorrido anual
 date:
   from: -1172
-  to: -1077
+  to: -1079
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre c. 1173 y 1078 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte, antes de la de Saúl)'
+  text: 'entre c. 1173 y c. 1080 a.e.c. (tiempo narrativo: desde la victoria de Mizpá hasta su muerte, antes de que David
+    se refugie en Gat)'
 narrative_order:
   series: 1-samuel
   order: 7015
@@ -23,7 +24,7 @@ passages:
 summary: Toda su vida, Samuel recorre cada año Betel, Guilgal y Mizpá para juzgar a Israel, y vuelve a Ramá, donde tiene su
   casa, juzga también y ha levantado un altar a Jehová.
 reason: Perspicacia «Samuel», párr. 5, y «Ramá», núm. 5. Guilgal no va en lugares porque Perspicacia «Guilgal» no sabe cuál
-  es. Acaba con la muerte de Samuel, anterior a la de Saúl en 1078 a.e.c. (Perspicacia «Jonatán», núm. 2).
+  es. Acaba con la muerte de Samuel, antes de que David se vaya a Gat hacia 1080.
 sources:
 - 1-samuel-7
 - it-samuel
@@ -36,5 +37,10 @@ links:
 - title: 1 Samuel 7 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/7
   type: bible
+history:
+- date: '2026-09-29'
+  change: 'Acababa en 1078, con la muerte de Saúl. Ahora acaba c. 1080, con la de Samuel, que muere antes de que David se refugie
+    en Gat.'
+  source: 1-samuel-7
 checked_on: '2026-09-29'
 status: verified

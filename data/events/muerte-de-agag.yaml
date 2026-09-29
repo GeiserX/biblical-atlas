@@ -17,6 +17,9 @@ places:
 people:
 - agag-de-tiempos-de-saul
 - samuel
+type: death
+roles:
+  agag-de-tiempos-de-saul: died
 passages:
 - 1Sa 15:32, 33
 summary: Samuel hace traer a Agag, que se creía ya fuera de peligro. Le anuncia que su madre quedará sin hijos, como su espada

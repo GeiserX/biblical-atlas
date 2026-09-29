@@ -33,9 +33,9 @@ relations:
   reason: 'Sl 52, encabezamiento: lo llama edomita, del pueblo que descendía de Esaú, a quien también se llamaba Edom.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: saul
-  caption: siervo de
+  word: master
   inferred: false
   sources:
   - 1-samuel-21

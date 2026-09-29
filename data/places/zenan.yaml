@@ -22,5 +22,11 @@ links:
 - title: 'Perspicacia: «Zenán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004694
   type: perspicacia
+not_claimed:
+- No afirmamos que Zenán (Jos 15:37) sea la Zaanán de Miq 1:11. Perspicacia solo recoge que muchos las igualan.
+history:
+- date: '2026-09-29'
+  change: Se anota que no se afirma su identidad con la ciudad homónima de Miqueas 1, como hace la ficha de esa ciudad.
+  source: it-zenan
 checked_on: '2026-09-29'
 status: verified

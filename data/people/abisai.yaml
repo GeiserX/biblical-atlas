@@ -47,11 +47,13 @@ relations:
   sources:
   - it-abisai
   - it-zeruya
-  reason: 'Perspicacia «Abisai»: su madre era hermana o media hermana de David, a quien apoyó con lealtad.'
+  reason: 'Perspicacia «Abisai»: su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:15, 16), a quien apoyó con
+    lealtad.'
   checked_on: '2026-09-29'
   status: verified
 - type: accompanies
   person: david
+  word: companion
   inferred: false
   sources:
   - 1-samuel-26

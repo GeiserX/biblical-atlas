@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cusan
+name: Cusán
+names:
+- name: Cusán
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Madián, si Cusán es otro nombre suyo
+  geometry:
+    type: zone
+    lat: 28.4947
+    lon: 35.0122
+    radius_km: 100
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-cusan
+  - openbible-geo
+  reason: Perspicacia dice que, por ir en paralelo con la tierra de Madián, Cusán puede ser otro nombre de Madián.
+  note: 'Centro: primera resolución de la primera identificación de OpenBible para Cushan, que es el punto de Madián. El radio
+    de 100 km es nuestro.'
+  coord_source: openbible:a567e0e
+  coord_url: https://www.openbible.info/geo/ancient/a567e0e/cushan
+- name: Tierra vecina de Madián, en Arabia
+  geometry:
+    type: zone
+    lat: 28.4947
+    lon: 35.0122
+    radius_km: 250
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-cusan
+  - it-cus
+  - openbible-geo
+  reason: 'Perspicacia también lo ve como un país junto a Madián: algunos cusitas vivieron en Arabia y el nombre Kusi designó
+    a pueblos árabes.'
+  note: 'Centro: el punto de Madián en OpenBible. El radio de 250 km, que abarca las tierras vecinas, es nuestro.'
+  coord_source: openbible:acc6d8e
+  coord_url: https://www.openbible.info/geo/ancient/acc6d8e/midian
+summary: 'Tierra que Hab 3:7 nombra junto a Madián: sus tiendas se estremecen ante Jehová. Quizá sea otro nombre de Madián
+  o un país vecino, en Arabia.'
+reason: 'Perspicacia «Cusán» y «Cus», núm. 2; Hab 3:7. Su sitio no se sabe: los dos candidatos son de Perspicacia y el punto,
+  de OpenBible.'
+not_claimed:
+- 'Que Cusán sea la misma tierra que Madián: Perspicacia deja abierta también la opción de un país vecino.'
+sources:
+- it-cusan
+- it-cus
+- openbible-geo
+- habacuc-3
+links:
+- title: 'Perspicacia: «Cusán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001090
+  type: perspicacia
+- title: Habacuc 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/35/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -90,7 +90,7 @@ relations:
 - type: kin
   person: abner
   word: uncle
-  inferred: false
+  inferred: true
   sources:
   - 1-samuel-14
   - it-abner

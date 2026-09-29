@@ -25,6 +25,8 @@ sources:
 - it-bet-jesimot
 - tnm-b3
 - numeros-33
+- miqueas-6
+- w03-que-espera-jehova
 - josue-2
 - josue-3
 links:
@@ -39,3 +41,5 @@ links:
   type: bible
 checked_on: '2026-09-29'
 status: verified
+not_claimed:
+- 'Que sea el valle de las Acacias de Joe 3:18: Perspicacia «Sitim» lo trata aparte, como núm. 2, y es la ficha valle-de-las-acacias.'

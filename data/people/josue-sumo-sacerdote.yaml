@@ -4,7 +4,7 @@ name: Josué (Jesúa), sumo sacerdote
 names:
 - name: Josué
 - name: Jesúa
-disambiguation: El sumo sacerdote del regreso de Babilonia; no Josué hijo de Nun, el sucesor de Moisés.
+disambiguation: El sumo sacerdote del regreso de Babilonia; no el hijo de Nun que sucedió a Moisés al frente de Israel.
 date:
   from: -536
   to: -514
@@ -70,6 +70,10 @@ relations:
     tabla). Perspicacia «Jesúa» y «Zorobabel».
   checked_on: '2026-09-29'
   status: verified
+history:
+- date: '2026-09-29'
+  change: La desambiguación se escribe con palabras propias; repetía ocho palabras seguidas de una nota de estudio.
+  source: it-josue
 checked_on: '2026-09-29'
 status: verified
 distinct_from:

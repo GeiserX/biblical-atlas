@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guedalias-hijo-de-amarias
+name: Guedalías
+names:
+- name: Guedalías
+perspicacia: 1200001632#2
+disambiguation: El abuelo de Sofonías; no es el gobernador hijo de Ahiqam (guedalias) ni los otros tres hombres de ese nombre
+  que da Perspicacia.
+distinct_from:
+- guedalias
+summary: Abuelo del profeta Sofonías e hijo de Amarías. Su nombre significa «Jehová es grande». Perspicacia dice que posiblemente
+  descendía del rey Ezequías.
+reason: Perspicacia «Guedalías», núm. 2; Sof 1:1.
+sources:
+- it-guedalias
+- sofonias-1
+links:
+- title: 'Perspicacia: «Guedalías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001632
+  type: perspicacia
+- title: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  type: bible
+relations:
+- type: kin
+  person: amarias-hijo-de-ezequias
+  word: father
+  inferred: false
+  sources:
+  - sofonias-1
+  reason: Sof 1:1 lo presenta como hijo de Amarías.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

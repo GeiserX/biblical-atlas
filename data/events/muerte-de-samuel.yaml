@@ -3,19 +3,23 @@ id: muerte-de-samuel
 title: Muere Samuel y lo entierran en Ramá
 date:
   from: -1089
-  to: -1077
+  to: -1079
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre c. 1090 y 1078 a.e.c. (tiempo narrativo: después de que Samuel completara Rut y antes de la muerte de Saúl)'
+  text: 'entre c. 1090 y c. 1080 a.e.c. (tiempo narrativo: después de que Samuel completara Rut y antes de que David se refugie
+    en Gat)'
 narrative_order:
   series: 1-samuel
-  order: 25001
+  order: 25000
 places:
 - ramataim-zofim
 people:
 - samuel
+type: death
+roles:
+  samuel: died
 present:
 - samuel
 passages:
@@ -23,8 +27,8 @@ passages:
 - 1Sa 28:3
 summary: Samuel muere mientras David sigue perseguido por Saúl. Todo Israel se reúne a llorarlo, y lo entierran en Ramá, donde
   tenía su casa.
-reason: 1Sa 25:1; Perspicacia «Samuel». Entre c. 1090, Rut completada por Samuel (tabla de los libros), y 1078 a.e.c., muerte
-  de Saúl (Perspicacia «Jonatán», núm. 2).
+reason: '1Sa 25:1; Perspicacia «Samuel». Fecha: entre c. 1090, Rut completada por Samuel (tabla de los libros), y c. 1080,
+  cuando David se va a Gat. Va antes de la bajada a Parán.'
 sources:
 - 1-samuel-25
 - it-samuel
@@ -34,5 +38,10 @@ links:
 - title: 1 Samuel 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
   type: bible
+history:
+- date: '2026-09-29'
+  change: 'Acababa en 1078, con la muerte de Saúl. Ahora acaba c. 1080: Samuel muere antes de que David se refugie en Gat,
+    donde pasa dieciséis meses hasta esa muerte.'
+  source: 1-samuel-25
 checked_on: '2026-09-29'
 status: verified
