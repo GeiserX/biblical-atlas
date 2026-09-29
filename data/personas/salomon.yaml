@@ -11,9 +11,10 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 1037-998 a.e.c.
-resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras
-  lo llevaron a otros dioses; tras su muerte el reino se dividió.
-razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31; 1Re 6:1 y 11:4-13, 42.
+resumen: Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón, construyó el templo de Jerusalén y compuso la mayor parte de
+  Proverbios. En su vejez sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.
+razon: Perspicacia «Salomón», párr. 1, 10, 12 y 31, y apartado «Se aparta de la justicia»; Perspicacia «Proverbios, Libro
+  de»; 1Re 6:1 y 11:4-13, 42; Pr 1:1.
 fuentes:
 - it-salomon
 - 1-reyes-6
@@ -22,6 +23,9 @@ fuentes:
 - mateo-1
 - salmos-72
 - w10-salmo-72
+- proverbios-1
+- it-proverbios-libro
+- proverbios-25
 enlaces:
 - titulo: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -39,6 +43,7 @@ relaciones:
   - 2-samuel-12
   - mateo-1
   - salmos-72
+  - proverbios-1
   razon: Hijo de David y Bat-Seba (2Sa 12:24).
   estado: verificado
 - tipo: sucede_a
@@ -68,5 +73,12 @@ historial:
   cambio: En la razón de su relación con David, «Bat-seba» pasa a «Bat-Seba», la grafía de la TNM (Sl 51, encabezamiento;
     2Sa 12:24).
   fuente: salmos-51
+- fecha: '2026-09-29'
+  cambio: El resumen añade que compuso la mayor parte de Proverbios (Pr 1:1; 10:1; 25:1), como dice Perspicacia «Proverbios,
+    Libro de».
+  fuente: proverbios-1
+- fecha: '2026-09-29'
+  cambio: La razón cita Pr 1:1 y los artículos de Perspicacia que le atribuyen los proverbios.
+  fuente: it-proverbios-libro
 consultado: '2026-09-29'
 estado: verificado
