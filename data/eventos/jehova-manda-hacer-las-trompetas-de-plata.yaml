@@ -4,11 +4,15 @@ titulo: Jehová manda a Moisés hacer dos trompetas de plata
 fecha:
   desde: -1511
   hasta: -1511
-  precision: año
-  aprox: false
+  precision: mes
+  aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: 1512 a.e.c., antes de salir del Sinaí
+  texto: ziv (iyar) de 1512 a.e.c., antes de salir del Sinaí
+  detalle:
+    mes: iyar
+  nota: Mes más probable. Nú 10:1-10 va en el orden del libro, antes de la partida del Sinaí el 20 de ziv (Nú 10:11), como
+    los sucesos de Nú 1 a 8.
 orden_relato:
   serie: numeros
   orden: 10001

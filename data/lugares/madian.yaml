@@ -13,8 +13,8 @@ coord_fuente: openbible:acc6d8e
 coord_url: https://www.openbible.info/geo/ancient/acc6d8e/midian
 coord_nota: Punto representativo de OpenBible, al este del golfo de Aqaba; la extensión de la región no se conoce. No sitúa
   a los madianitas de Nú 22-31, que vivían junto a Moab.
-resumen: Tierra de los madianitas, descendientes de Madián, hijo de Abrahán, sobre todo al este del golfo de Aqaba. Moisés
-  vivió allí unos cuarenta años y se casó con Ziporá. En su época muchos madianitas vivían junto a Moab.
+resumen: Tierra de los madianitas, hijos de Madián, hijo de Abrahán; se cree que sobre todo al este del golfo de Aqaba. Allí
+  Moisés pasó unos cuarenta años y se casó con Ziporá. Parece que muchos vivían entonces junto a Moab.
 razon: 'Perspicacia «Madián, madianitas», núm. 3, párr. 13 y 14: su extensión no se sabe, y en vida de Moisés muchos habitaban
   cerca de Moab y del reino de Sehón (Nú 22:4; 31:8-12). Éx 2:15-21. OpenBible: solo el punto.'
 fuentes:
@@ -43,5 +43,9 @@ historial:
 - fecha: '2026-09-29'
   fuente: numeros-31
   cambio: Aclara que el punto de Aqaba no representa a los madianitas de Números 22-31.
+- fecha: '2026-09-29'
+  fuente: it-madian
+  cambio: Devuelve al resumen las cautelas de Perspicacia, que da la zona de Aqaba como lo que se cree y a los madianitas de
+    junto a Moab como lo que parece.
 consultado: '2026-09-29'
 estado: verificado
