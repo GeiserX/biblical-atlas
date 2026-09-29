@@ -1,0 +1,1498 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "salmos",
+ "agente": "escritor-salmos",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "core-hijo-de-esau",
+   "campo": "no_confundir_con",
+   "antes": null,
+   "despues": [
+    "core-hijo-de-izhar"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "cus-hijo-de-cam",
+   "campo": "no_confundir_con",
+   "antes": null,
+   "despues": [
+    "cus-el-benjaminita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-eufrates",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-72"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-eufrates",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 72 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105",
+    "salmos-135"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 105 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/105",
+     "tipo": "biblia"
+    },
+    {
+     "titulo": "Salmo 135 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Valle de Sucot",
+     "nota": "Sl 108:7 (la nota da «la llanura baja»). Perspicacia cree que es la llanura fértil que domina el sitio de la ciudad."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-108",
+    "salmos-60"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 108 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/108",
+     "tipo": "biblia"
+    },
+    {
+     "titulo": "Salmo 60 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-60"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 60 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mesopotamia",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-60"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mesopotamia",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 60 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-nilo",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-78"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "mesopotamia",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Mesopotamia"
+    },
+    {
+     "nombre": "Aram-naharaim",
+     "nota": "Nombre hebreo de sentido parecido, que la Septuaginta traduce «Mesopotamia»."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Mesopotamia"
+    },
+    {
+     "nombre": "Aram-Naharaim",
+     "nota": "Nombre hebreo de sentido parecido, que la Septuaginta traduce «Mesopotamia»."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "«Aram-naharaim» pasa a «Aram-Naharaim», como lo escribe la TNM en el encabezamiento de Sl 60 y en las notas de Jue 3:8.",
+    "fuente": "salmos-60"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "mesopotamia",
+   "campo": "coord_nota",
+   "antes": "Punto de OpenBible en Harán, que representa Aram-naharaim; la región se extiende entre el Tigris y el Éufrates.",
+   "despues": "Punto de OpenBible en Harán, que representa Aram-Naharaim; la región se extiende entre el Tigris y el Éufrates.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "En la nota de la coordenada, «Aram-naharaim» pasa a «Aram-Naharaim», la grafía de la TNM (Sl 60, encabezamiento).",
+    "fuente": "salmos-60"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-42"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-48",
+    "it-sion"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Sión»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004740",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "natan-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bat-seba",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-51"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bat-seba",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 51 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/51",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bat-seba",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ahitofel",
+     "relacion": "abuelo",
+     "deducido": true,
+     "fuentes": [
+      "it-bat-seba",
+      "it-ahitofel"
+     ],
+     "razon": "Perspicacia «Bat-seba» y «Ahitofel»: su padre Eliam era hijo de Ahitofel, así que este sería su abuelo, aunque no es seguro que sea el mismo Eliam (2Sa 11:3; 23:34).",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natan-profeta",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003184#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natan-profeta",
+   "campo": "resumen",
+   "antes": "Profeta en la corte de David. Le transmitió el pacto de un reino duradero, le echó en cara su pecado con Bat-seba y ayudó a poner en el trono a Salomón.",
+   "despues": "Profeta en la corte de David. Le transmitió el pacto de un reino duradero, le echó en cara su pecado con Bat-Seba y ayudó a poner en el trono a Salomón.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Grafía «Bat-seba» cambiada a «Bat-Seba», la de la TNM revisada en el encabezamiento de Sal 51 y la del nombre de su ficha.",
+    "fuente": "salmos-51"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "resumen",
+   "antes": "Hijo de David y Bat-seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.",
+   "despues": "Hijo de David y Bat-Seba. Pidió sabiduría en Gabaón y construyó el templo de Jerusalén. En su vejez sus esposas extranjeras lo llevaron a otros dioses; tras su muerte el reino se dividió.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Grafía «Bat-seba» cambiada a «Bat-Seba», la de la TNM revisada en el encabezamiento de Sal 51 y la del nombre de su ficha.",
+    "fuente": "salmos-51"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "it-salomon",
+      "2-samuel-12",
+      "mateo-1"
+     ],
+     "razon": "Hijo de David y Bat-seba (2Sa 12:24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "sucede_a",
+     "persona": "david",
+     "deducido": false,
+     "fuentes": [
+      "it-salomon",
+      "1-reyes-1"
+     ],
+     "razon": "Fue ungido y puesto en el trono antes de morir David (1Re 1:39).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "bat-seba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-bat-seba"
+     ],
+     "razon": "Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "it-salomon",
+      "2-samuel-12",
+      "mateo-1"
+     ],
+     "razon": "Hijo de David y Bat-Seba (2Sa 12:24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "sucede_a",
+     "persona": "david",
+     "deducido": false,
+     "fuentes": [
+      "it-salomon",
+      "1-reyes-1"
+     ],
+     "razon": "Fue ungido y puesto en el trono antes de morir David (1Re 1:39).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "bat-seba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-bat-seba"
+     ],
+     "razon": "Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "En la razón de su relación con David, «Bat-seba» pasa a «Bat-Seba», la grafía de la TNM (Sl 51, encabezamiento; 2Sa 12:24).",
+    "fuente": "salmos-51"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-52"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-54"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-56"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-57"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-59"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "saul",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003847"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "saul",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-59"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-60"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-63"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-63"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-juda",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Salmo 63 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/63",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-72",
+    "w10-salmo-72"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "salomon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "salmos-72"
+     ],
+     "razon": "Sl 72:1 y encabezamiento: el salmo, acerca de Salomón, pide justicia para el hijo del rey.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-72"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jese",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "salmos-72"
+     ],
+     "razon": "Sl 72:20 lo llama David hijo de Jesé.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-76"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 77:16-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-77"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-77"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "salmos-77"
+     ],
+     "razon": "Sl 77:20: Dios guio a su pueblo como a un rebaño por mano de Moisés y Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-78"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 78:12, 13",
+    "Sl 78:42-53"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 78:54"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 78:55"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-78"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-78"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-78"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-79"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 79:1-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "fuentes",
+   "valores": [
+    "w06-salmos-libros-3-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 81:5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "regreso-de-537",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 85:1-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "regreso-de-537",
+   "campo": "fuentes",
+   "valores": [
+    "w06-salmos-libros-3-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-87"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-89"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-david",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 89:3, 4",
+    "Sl 89:19-37"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-99"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000005"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-99"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "samuel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003824"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "samuel",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-99"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-103"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105",
+      "it-canaan"
+     ],
+     "razon": "Sl 105:9-12: Dios le prometió la tierra de Canaán, donde vivió como extranjero con Isaac y Jacob.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105",
+      "it-canaan"
+     ],
+     "razon": "Sl 105:9-12: heredero del juramento sobre Canaán, vivió allí como extranjero.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105",
+      "it-canaan"
+     ],
+     "razon": "Sl 105:10-12: el decreto sobre Canaán se le dio a él, que vivió allí como extranjero.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105",
+      "it-cam"
+     ],
+     "razon": "Sl 105:23: residió como forastero en Egipto, al que el salmo llama tierra de Cam.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105",
+      "it-jose"
+     ],
+     "razon": "Sl 105:17-23: vendido como esclavo, encadenado y después administrador de la casa del rey, antes de que Israel entrara en Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "empiezan-los-siete-anos-de-hambre",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "sus-hermanos-venden-a-jose",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jose-encarcelado-en-egipto",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:18, 19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jose-gobernador-de-egipto",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:20-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "salmos-105"
+     ],
+     "razon": "Sl 105:26, 27: Dios envió a Moisés y también a Aarón, y los dos hicieron sus señales en Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Tierra de Cam",
+     "nota": "Nombre que le dan los Salmos (Sl 105:23, 27), porque Cam era el padre de Mizraim."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "it-cam",
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-entra-en-egipto",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-entra-en-egipto",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:36-38",
+    "Sl 105:43"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 105:44"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-105"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "lugares",
+   "valores": [
+    "canaan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-106"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-106"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Tierra de Cam",
+     "nota": "Nombre que le dan los Salmos (Sl 105:23, 27), porque Cam era el padre de Mizraim."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "it-cam",
+    "salmos-106"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-106"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 106:7-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "lugares",
+   "valores": [
+    "cruce-del-mar-rojo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 114:1-3, 5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 114:3, 5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-122"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-125"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "regreso-de-537",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 126:1-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "regreso-de-537",
+   "campo": "fuentes",
+   "valores": [
+    "it-salmos-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-132"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-142"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-david",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 132:6-8",
+    "Sl 132:11, 12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-132",
+    "it-efrata"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-132"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-133"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-135"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 135:8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 135:10-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-136"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cruce-del-mar-rojo",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-136"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 136:10-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "lugares",
+   "valores": [
+    "cruce-del-mar-rojo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "babilonia",
+   "campo": "fuentes",
+   "valores": [
+    "salmos-137"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "destruccion-de-jerusalen-607",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 137:7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Jerusalén"
+    },
+    {
+     "nombre": "Salem",
+     "nota": "Nombre más antiguo que se conoce de la ciudad, en tiempos de Abrahán (Gé 14:18)."
+    },
+    {
+     "nombre": "Jebús",
+     "hasta": -1069,
+     "nota": "Nombre que a veces recibió mientras la ocupaban los jebuseos, hasta que David la tomó en 1070 a.e.c. (Jue 19:10)."
+    },
+    {
+     "nombre": "Ciudad de David",
+     "desde": -1069,
+     "nota": "Nombre de la fortaleza de Sión que David tomó y habitó (2Sa 5:7)."
+    },
+    {
+     "nombre": "Sión",
+     "nota": "Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20)."
+    },
+    {
+     "nombre": "Ciudad santa",
+     "nota": "Se la llamaba así porque en ella estaba el templo de Jehová (Mt 4:5; Ne 11:1)."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Jerusalén"
+    },
+    {
+     "nombre": "Salem",
+     "nota": "Nombre más antiguo que se conoce de la ciudad, en tiempos de Abrahán (Gé 14:18)."
+    },
+    {
+     "nombre": "Jebús",
+     "hasta": -1069,
+     "nota": "Nombre que a veces recibió mientras la ocupaban los jebuseos, hasta que David la tomó en 1070 a.e.c. (Jue 19:10)."
+    },
+    {
+     "nombre": "Ciudad de David",
+     "desde": -1069,
+     "nota": "Nombre de la fortaleza de Sion que David tomó y habitó (2Sa 5:7)."
+    },
+    {
+     "nombre": "Sion",
+     "nota": "Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20). Es la grafía de la TNM; Perspicacia escribe «Sión»."
+    },
+    {
+     "nombre": "Ciudad santa",
+     "nota": "Se la llamaba así porque en ella estaba el templo de Jehová (Mt 4:5; Ne 11:1)."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "«Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.",
+    "fuente": "salmos-137"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "david-rey-de-todo-israel",
+   "campo": "resumen",
+   "antes": "Las tribus van a Hebrón y hacen a David rey de todo Israel. Después toma a los jebuseos la fortaleza de Sión y hace de Jerusalén su capital.",
+   "despues": "Las tribus van a Hebrón y hacen a David rey de todo Israel. Después toma a los jebuseos la fortaleza de Sion y hace de Jerusalén su capital.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "«Sión» pasa a «Sion», la grafía de la TNM en 2Sa 5:7.",
+    "fuente": "2-samuel-5"
+   }
+  }
+ ],
+ "preguntas": [
+  "Génesis (ya en main): las personas quedar y mesec llevan perspicacia '1200002579' y '1200003008', pero esos artículos tratan dos entradas cada uno (Quedar: 1. el hijo de Ismael, 2. la tribu; Mesec: 1. el hijo de Jafet, 2. la lectura de 1Cr 1:17). La clave correcta es '#1' en las dos. Lo corrige el dueño de Génesis; Salmos solo usa los lugares quedar y mesec (Sl 120:5).",
+  "Sl 142, encabezamiento: «cuando estaba en la cueva». La referencia lleva a 1Sa 22:1 (Adulam) y a 1Sa 24:3 (En-guedí), y Perspicacia «Cueva» no elige. Cuando 1 Samuel cree esos sucesos, ¿a cuál se añade «Sl 142» en pasajes? Mientras tanto el tramo lo explica en su nota."
+ ]
+}

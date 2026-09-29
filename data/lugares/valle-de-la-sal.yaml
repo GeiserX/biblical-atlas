@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-la-sal
+nombre: Valle de la Sal
+nombres:
+- nombre: Valle de la Sal
+tipo: valle
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Wadi el-Milh, al este de Beer-Seba, en el Négueb
+  geometria:
+    tipo: punto
+    lat: 31.216
+    lon: 35.05055
+  estado: alternativa
+  fuentes:
+  - it-valle-de-la-sal
+  - openbible-geo
+  razon: 'Perspicacia lo da como una de las dos propuestas: el nombre árabe significa valle de la Sal. Punto de OpenBible.'
+  coord_fuente: openbible:af936bd
+  coord_url: https://www.openbible.info/geo/ancient/af936bd/valley-of-salt
+- nombre: Llanura al sur del mar Salado, en tierra de Edom
+  geometria:
+    tipo: punto
+    lat: 31.050508
+    lon: 35.406271
+  estado: alternativa
+  fuentes:
+  - it-valle-de-la-sal
+  - openbible-geo
+  razon: La otra propuesta que recoge Perspicacia; hoy es terreno pantanoso, pero quizá no lo era entonces. Punto de OpenBible
+    (Es Sebkha).
+  coord_fuente: openbible:af936bd
+  coord_url: https://www.openbible.info/geo/ancient/af936bd/valley-of-salt
+resumen: 'Valle donde Israel derrotó dos veces a los edomitas: en tiempos de David, con Joab, y siglos después con el rey
+  Amasías. No se sabe con certeza dónde estaba.'
+razon: Perspicacia «Sal, Valle de la»; 2Sa 8:13; 2Re 14:7; encabezamiento de Sal 60. Perspicacia no elige entre los dos sitios.
+fuentes:
+- it-valle-de-la-sal
+- it-salmos-libro
+- openbible-geo
+- salmos-60
+enlaces:
+- titulo: 'Perspicacia: «Sal, Valle de la»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003811
+  tipo: perspicacia
+- titulo: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quedar
+nombre: Quedar
+nombres:
+- nombre: Quedar
+tipo: region
+lat: 29.811417
+lon: 39.868306
+precision: zona
+coord_fuente: openbible:a68d1a9
+coord_url: https://www.openbible.info/geo/ancient/a68d1a9/kedar
+coord_nota: Punto representativo de OpenBible en el noroeste de Arabia; la tribu era nómada y no tenía un sitio fijo.
+resumen: 'País de la tribu árabe que descendía de Quedar, hijo de Ismael: pastores nómadas de ovejas, cabras y camellos que
+  vivían en tiendas, probablemente en el desierto al este de Palestina.'
+razon: 'Perspicacia «Quedar», núm. 2, párr. 1 y 2: su país también se llamó Quedar y sus tiendas serían de pelo negro de cabra.
+  Sl 120:5. OpenBible: solo el punto.'
+fuentes:
+- it-quedar
+- salmos-120
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Quedar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002579
+  tipo: perspicacia
+- titulo: Salmo 120 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/120
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
