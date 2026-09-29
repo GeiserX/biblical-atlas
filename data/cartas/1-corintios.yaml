@@ -18,7 +18,7 @@ destinatarios:
   lugares:
   - corinto
 personas:
-- sostenes
+- sostenes-companero-de-pablo
 - apolos
 - pedro
 - crispo
@@ -64,5 +64,8 @@ historial:
   cambio: El contexto añade la carta con preguntas que la congregación de Corinto mandó a Pablo (1Co 7:1), que Perspicacia
     cuenta entre los motivos de la carta.
   fuente: 1-corintios-7
+- fecha: '2026-09-29'
+  cambio: El Sóstenes que nombra la carta es sostenes-companero-de-pablo; que sea el jefe de sinagoga de Hch 18 solo es posible.
+  fuente: it-sostenes
 consultado: '2026-09-29'
 estado: verificado

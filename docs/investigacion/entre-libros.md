@@ -41,10 +41,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El día de la salida.** Nú 33:3 dice que salieron de Ramesés el día 15. `exodo` se queda en el 14 de nisán: Perspicacia «Éxodo» pone el comienzo de la marcha hacia Sucot antes de que acabara el 14.
 - **La serpiente de cobre (Nú 21:8, 9).** Jn 3:14 la recuerda. Cuando Números cree el suceso, va en `menciona` del tramo Juan 3:11-21.
 
-## Para Números y 1 Corintios
-
-- **Los ejemplos de 1Co 10.** Números ya los tiene: `agua-del-penasco-en-meriba` «1Co 10:4»; `jehova-condena-a-israel-a-40-anos-en-el-desierto` «1Co 10:5» y «1Co 10:10» (Nú 14:36, 37); `el-pueblo-pide-carne` y `codornices-en-quibrot-hataava` «1Co 10:6»; `israel-adora-al-baal-de-peor` «1Co 10:8»; `moises-hace-la-serpiente-de-cobre` «1Co 10:9»; `israel-se-niega-a-entrar-en-canaan` y `aaron-detiene-la-plaga` «1Co 10:10». Quien integre el segundo de los dos libros añade a cada suceso su pasaje y la fuente `1-corintios-10`, y lo pone en `entidades` del tramo 1-5 (v. 4 y 5) o del 6-11 (los demás). En `menciona` del 6-11 van `lugar:sitim` (nota del v. 8), `rebelion-de-core` y `muerte-de-core` (nota del v. 10). Hasta entonces `validate.py` falla con los dos libros juntos, porque la razón de `israel-adora-al-baal-de-peor` ya cita 1Co 10:8. Ese suceso ya explica los 23.000 de 1Co 10:8 frente a los 24.000 de Nú 25:9.
-
 ## Para Deuteronomio
 
 - **Pasajes paralelos ya puestos en sucesos de Éxodo.** Dt 5:4-27 en `diez-mandamientos`; Dt 9:9 en `primeros-cuarenta-dias-de-moises-en-el-sinai`; Dt 9:10, 11 en `dios-da-a-moises-las-tablas-del-testimonio`; Dt 9:12-14, 19, 26-29 en `moises-ruega-por-el-pueblo`; Dt 9:15-17, 21 en `moises-rompe-las-tablas`; Dt 9:16 en `becerro-de-oro`; Dt 9:20 en `moises-pide-perdon-por-el-pueblo`; Dt 9:18, 25 y Dt 10:1-5, 10 en `moises-recibe-las-segundas-tablas`, porque los 40 días postrado de Dt 9:18 y 9:25 son los segundos (Éx 34:28). Cada uno va en el tramo de su capítulo.
@@ -210,7 +206,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para las Escrituras Griegas
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
 
 ## Para Gálatas y 1 Corintios
 
