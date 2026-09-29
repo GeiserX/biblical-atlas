@@ -4,17 +4,17 @@ nombre: Samuel
 nombres:
 - nombre: Samuel
 fecha:
-  desde: -1116
-  hasta: -1089
+  desde: -1179
+  hasta: -1077
   precision: rango
   aprox: true
-  tipo: anclada
+  tipo: narrativa
   cronologia: tnm
-  texto: 1117-c. 1090 a.e.c.
-resumen: Profeta levita, hijo de Elqaná y Ana, criado en el tabernáculo de Siló. Juzgó a Israel desde Ramá, ungió a Saúl y
+  texto: 'c. 1180-c. 1078 a.e.c. (tiempo narrativo: de su niñez en Siló a su muerte, en vida de Saúl, 1Sa 25:1)'
+resumen: Profeta levita, hijo de Elcaná y Ana, criado en el tabernáculo de Siló. Juzgó a Israel desde Ramá, ungió a Saúl y
   después a David. Murió antes de que David reinara.
-razon: 'Perspicacia «Samuel», párr. 1, 2, 6, 7, 10 y 11. Fechas: el estudio 3 pone la unción de Saúl en 1117 y la Tabla de
-  los libros cierra Rut hacia 1090.'
+razon: Perspicacia «Samuel», párr. 1-4, 6, 7, 10, 11. Profeta ya antes de ungir a Saúl en 1117 (1Sa 3; estudio 3). Vive de
+  c. 1180 (tabla de libros) hasta antes de 1078, cuando muere Saúl (1Sa 25:1; «Jonatán» 2).
 fuentes:
 - it-samuel
 - 1-samuel-3
@@ -22,6 +22,22 @@ fuentes:
 - si-3
 - tnm-tabla
 - salmos-99
+- 1-samuel-1
+- 1-samuel-2
+- it-jonatan
+- 1-samuel-7
+- it-jefte
+- 1-samuel-8
+- 1-samuel-9
+- 1-samuel-11
+- 1-samuel-12
+- 1-samuel-13
+- 1-samuel-15
+- it-rama
+- 1-samuel-16
+- 1-samuel-19
+- 1-samuel-25
+- 1-samuel-28
 enlaces:
 - titulo: 'Perspicacia: «Samuel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003824
@@ -30,5 +46,79 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/3
   tipo: biblia
 perspicacia: '1200003824'
+historial:
+- fecha: '2026-09-29'
+  cambio: El nombre del padre pasa a la grafía de la TNM, Elcaná (1Sa 1:1); Elqaná es la de Perspicacia.
+  fuente: 1-samuel-1
+- fecha: '2026-09-29'
+  cambio: 'Empezaba en 1117, pero 1Sa 3 lo muestra profeta en Siló en vida de Elí: ahora arranca c. 1180, inicio de 1 Samuel,
+    y acaba con su muerte, anterior a la de Saúl en 1078 (1Sa 25:1).'
+  fuente: 1-samuel-3
+- fecha: '2026-09-29'
+  cambio: La razón explica la nueva fecha de su vida, de c. 1180 a su muerte antes que Saúl.
+  fuente: 1-samuel-3
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: elcana-hijo-de-jeroham
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-1
+  razon: '1Sa 1:19, 20: Ana concibió de Elcaná y dio a luz a Samuel.'
+  estado: verificado
+- tipo: pariente
+  persona: ana-madre-de-samuel
+  relacion: madre
+  deducido: false
+  fuentes:
+  - 1-samuel-1
+  - 1-samuel-2
+  razon: '1Sa 1:20 y 2:19: Ana lo dio a luz y es llamada su madre.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: ramataim-zofim
+  deducido: true
+  fuentes:
+  - it-rama
+  - 1-samuel-1
+  razon: 'Perspicacia «Ramá», núm. 5: allí nació Samuel. 1Sa 1:19, 20 cuenta que Ana concibió tras volver a su casa de Ramá.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: silo
+  deducido: false
+  fuentes:
+  - 1-samuel-1
+  - 1-samuel-2
+  - 1-samuel-3
+  razon: '1Sa 1:24, 28 y 2:11, 18: Ana lo dejó en Siló, donde servía delante de Jehová.'
+  estado: verificado
+- tipo: acompana
+  persona: eli
+  relacion: ayudante de
+  deducido: false
+  fuentes:
+  - 1-samuel-2
+  - it-samuel
+  - 1-samuel-3
+  razon: '1Sa 2:11: Samuel siguió en Siló al servicio de Jehová, a cargo de Elí; Perspicacia «Samuel», párr. 2.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ramataim-zofim
+  deducido: false
+  fuentes:
+  - 1-samuel-7
+  - it-rama
+  - 1-samuel-15
+  - 1-samuel-16
+  - 1-samuel-19
+  - it-saul
+  - 1-samuel-25
+  - it-samuel
+  - 1-samuel-28
+  razon: '1Sa 7:17: allí estaba su casa y allí levantó un altar; Perspicacia «Ramá», núm. 5.'
+  estado: verificado
+no_afirmamos:
+- 'Que Samuel volviera de la muerte para hablar con Saúl en En-Dor: Perspicacia «Saúl» dice que lo que dijo la médium era
+  de origen demoníaco.'

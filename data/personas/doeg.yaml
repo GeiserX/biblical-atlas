@@ -11,6 +11,8 @@ razon: Perspicacia «Doeg»; 1Sa 21:7 y 22:9-19. El encabezamiento de Sal 52 lo 
 fuentes:
 - it-doeg
 - salmos-52
+- 1-samuel-21
+- 1-samuel-22
 enlaces:
 - titulo: 'Perspicacia: «Doeg»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001208
@@ -26,7 +28,19 @@ relaciones:
   fuentes:
   - salmos-52
   - it-edom
+  - 1-samuel-21
+  - 1-samuel-22
   razon: 'Sl 52, encabezamiento: lo llama edomita, del pueblo que descendía de Esaú, a quien también se llamaba Edom.'
+  estado: verificado
+- tipo: acompana
+  persona: saul
+  relacion: siervo de
+  deducido: false
+  fuentes:
+  - 1-samuel-21
+  - it-doeg
+  - 1-samuel-22
+  razon: '1Sa 21:7: servía a Saúl como jefe de sus pastores; Perspicacia «Doeg».'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

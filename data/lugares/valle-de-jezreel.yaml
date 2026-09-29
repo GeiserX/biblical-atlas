@@ -7,6 +7,9 @@ nombres:
   nota: Otra lectura que da la nota de Os 1:5.
 - nombre: Llanura de Esdrelón
   nota: Forma griega del nombre; en sentido amplio cubre toda la llanura del Carmelo al Jordán.
+- nombre: Manantial de Jezreel
+  nota: Fuente junto a la que acampó Israel antes de la batalla contra los filisteos (1Sa 29:1). Perspicacia duda entre ʽAin
+    Jalud y ʽAin el-Meiyiteh.
 tipo: valle
 lat: 32.596389
 lon: 35.241944
@@ -25,6 +28,7 @@ fuentes:
 - josue-17
 - jueces-6
 - jueces-7
+- 1-samuel-29
 enlaces:
 - titulo: 'Perspicacia: «Jezreel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467

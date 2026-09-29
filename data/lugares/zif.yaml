@@ -3,6 +3,8 @@ id: zif
 nombre: Zif
 nombres:
 - nombre: Zif
+- nombre: Desierto de Zif
+  nota: El desierto que rodeaba la ciudad, donde se escondió David (Perspicacia «Zif», núm. 3).
 tipo: ciudad
 lat: 31.47475
 lon: 35.13514
@@ -18,6 +20,8 @@ fuentes:
 - openbible-geo
 - salmos-54
 - josue-15
+- 1-samuel-23
+- 1-samuel-26
 enlaces:
 - titulo: 'Perspicacia: «Zif»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004742

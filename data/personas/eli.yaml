@@ -4,12 +4,15 @@ nombre: Elí
 nombres:
 - nombre: Elí
 desambiguacion: Elí, sumo sacerdote en Siló en la niñez de Samuel; no las palabras «Elí, Elí» que dijo Jesús en el madero.
-resumen: Sumo sacerdote que juzgó a Israel cuarenta años en Siló. No corrigió a sus hijos Hofní y Finehás. Al saber que
-  el Arca había caído en manos filisteas, cayó hacia atrás y murió a los 98 años.
-razon: Perspicacia «Elí, I», párr. 2, 4 y 6; 1Sa 4:12-18.
+resumen: Sumo sacerdote que juzgó a Israel cuarenta años en Siló. Reprendió con blandura a sus hijos Hofní y Finehás, pero
+  los dejó en el cargo. Al saber que el Arca estaba en manos filisteas, cayó y murió con 98 años.
+razon: Perspicacia «Elí, I», párr. 1 a 4 y 6; 1Sa 1:9-17; 2:22-36; 4:12-18.
 fuentes:
 - it-eli
 - 1-samuel-4
+- 1-samuel-1
+- 1-samuel-2
+- 1-samuel-3
 enlaces:
 - titulo: 'Perspicacia: «Elí, I»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001290
@@ -18,28 +21,47 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4
   tipo: biblia
 relaciones:
-- tipo: acompana
-  persona: samuel
-  deducido: false
-  fuentes:
-  - it-eli
-  razon: 'Perspicacia «Elí, I», párr. 2 y 3: Samuel servía de niño en el tabernáculo en sus días (1Sa 3:1).'
-  estado: verificado
 - tipo: vivio_en
   lugar: silo
   deducido: false
   fuentes:
   - it-eli
   - it-silo
+  - 1-samuel-1
+  - 1-samuel-3
   razon: 'Perspicacia «Siló», párr. 8, y «Elí, I», párr. 3 y 6: el tabernáculo estaba en Siló y allí servía Elí.'
   estado: verificado
 - tipo: murio_en
   lugar: silo
-  deducido: true
+  deducido: false
   fuentes:
   - 1-samuel-4
   - it-eli
-  razon: '1Sa 4:12-18: el mensajero llegó a Siló y Elí murió al oír la noticia. Perspicacia «Elí, I», párr. 6.'
+  razon: '1Sa 4:12-18: el mensajero llegó a Siló, donde Elí esperaba junto al camino, y allí murió al oír la noticia. Perspicacia
+    «Elí, I», párr. 6.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: aaron
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - 1-samuel-2
+  - it-eli
+  razon: 1Sa 2:27, 28 habla del antepasado de Elí elegido para el sacerdocio cuando Israel estaba en Egipto; las referencias
+    remiten a Aarón. Perspicacia «Elí, I» lo tiene por sumo sacerdote de su línea.
+  estado: verificado
+perspicacia: '1200001290'
+historial:
+- fecha: '2026-09-29'
+  cambio: Decía que no corrigió a sus hijos, pero 1Sa 2:23-25 muestra que los reprendió; Perspicacia «Elí, I» precisa que
+    fue con suavidad y sin quitarlos del cargo.
+  fuente: 1-samuel-2
+- fecha: '2026-09-29'
+  cambio: La razón cita los párrafos y versículos del nuevo resumen.
+  fuente: 1-samuel-2
+- fecha: '2026-09-29'
+  cambio: 'Sale acompana/samuel: va en la ficha del que acompaña, y samuel ya lleva acompana/eli. murio_en silo pasa a deducido
+    false (1Sa 4:12-18). Entran Aarón como antepasado y 1Sa 1 y 3 en vivio_en silo.'
+  fuente: 1-samuel-3
+consultado: '2026-09-29'
 estado: verificado

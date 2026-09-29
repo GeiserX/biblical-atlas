@@ -6,8 +6,8 @@ nombres:
 - nombre: Abimélec
   nota: Así lo llama el encabezamiento del Salmo 34; Perspicacia lo ve como un título de los reyes filisteos, parecido a faraón.
 perspicacia: '1200000078'
-resumen: 'Rey filisteo de Gat en tiempos de David y de Salomón. David, huyendo de Saúl, buscó refugio en su tierra dos veces:
-  la primera se hizo pasar por loco y la segunda vivió en Ziqlag.'
+resumen: 'Rey filisteo de Gat en tiempos de David y de Salomón. David, huyendo de Saúl, se refugió dos veces en su tierra:
+  primero se fingió loco y luego vivió en Ziclag. Akís llegó a hacerlo su guardaespaldas.'
 razon: Perspicacia «Akís», párr. 1 y 2, y «Abimélec», núm. 3; encabezamiento del Salmo 34.
 desambiguacion: 'No es ninguno de los reyes de Guerar llamados Abimélec en Génesis: en el Salmo 34 Abimélec es un título de
   Akís, rey de Gat.'
@@ -15,6 +15,10 @@ fuentes:
 - it-akis
 - it-abimelec
 - salmos-34
+- 1-samuel-21
+- 1-samuel-27
+- 1-samuel-28
+- 1-samuel-29
 enlaces:
 - titulo: 'Perspicacia: «Akís»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000078
@@ -25,7 +29,32 @@ enlaces:
 - titulo: Salmo 34 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/34
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen escribía Ziqlag, la grafía de Perspicacia; la TNM y el lugar del atlas dicen Ziclag. Se añade que Akís
+    nombró a David su guardaespaldas (1Sa 28:2).
+  fuente: 1-samuel-28
 consultado: '2026-09-29'
 estado: verificado
 no_confundir_con:
 - abimelec-hijo-de-gedeon
+relaciones:
+- tipo: vivio_en
+  lugar: gat
+  deducido: false
+  fuentes:
+  - 1-samuel-21
+  - it-akis
+  - 1-samuel-27
+  razon: '1Sa 21:10 y 12: el rey Akís de Gat.'
+  estado: verificado
+- tipo: pariente
+  persona: maoc
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-maoc
+  - it-akis
+  razon: '1Sa 27:2: Akís hijo de Maoc, rey de Gat.'
+  estado: verificado

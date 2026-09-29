@@ -12,6 +12,9 @@ razon: Perspicacia «Ahimélec», núm. 1; 1Sa 21:1-9 y 22:9-20. El encabezamien
 fuentes:
 - it-ahimelec
 - salmos-52
+- 1-samuel-21
+- 1-samuel-22
+- it-nob
 enlaces:
 - titulo: 'Perspicacia: «Ahimélec»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000158
@@ -21,3 +24,33 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: nob
+  deducido: false
+  fuentes:
+  - 1-samuel-21
+  - it-nob
+  - 1-samuel-22
+  razon: 1Sa 21:1 sitúa en Nob al sacerdote Ahimélec cuando llega David; Perspicacia «Nob», párr. 2.
+  estado: verificado
+- tipo: pariente
+  persona: ahitub-hijo-de-finehas
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-22
+  - it-ahitub
+  razon: 1Sa 22:9, 11, 12 y 20 lo llaman hijo de Ahitub; Perspicacia «Ahitub», núm. 1.
+  estado: verificado
+- tipo: murio_en
+  lugar: guibea-de-benjamin
+  deducido: true
+  fuentes:
+  - 1-samuel-22
+  - it-ahimelec
+  razon: '1Sa 22:6, 11 y 18: Saúl estaba en Guibeá, hizo venir allí a los sacerdotes y Doeg los mató. El texto no nombra el
+    sitio de la muerte.'
+  estado: verificado
+no_confundir_con:
+- ahimelec-el-hitita

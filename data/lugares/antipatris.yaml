@@ -17,8 +17,8 @@ lon: 34.93042
 precision: punto
 coord_fuente: openbible:a7b2e63
 coord_url: https://www.openbible.info/geo/ancient/a7b2e63/aphek-2
-resumen: Ciudad de la llanura de Sarón, en el cruce de calzadas romanas hacia Cesarea. La escolta romana llevó allí a Pablo
-  de noche desde Jerusalén. Antes se llamó Afec.
+resumen: Ciudad de la llanura de Sarón, en el cruce de calzadas romanas hacia Cesarea. Antes se llamó Afec, y allí acamparon
+  los filisteos cuando tomaron el Arca. La escolta romana llevó a Pablo allí de noche.
 razon: 'Perspicacia «Antípatris» (párr. 3-4) y «Afeq» (núm. 3, párr. 5); Hch 23:31 y 1Sa 4:1. Las excavaciones de 1946, 1961
   y 1974 apoyan que Afec estaba en el mismo sitio. OpenBible: solo el punto.'
 fuentes:
@@ -38,5 +38,9 @@ enlaces:
 - titulo: Hechos 23 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen añade lo que cuenta 1Sa 4:1 de Afec, que la ficha ya citaba.
+  fuente: 1-samuel-4
 consultado: '2026-09-29'
 estado: verificado

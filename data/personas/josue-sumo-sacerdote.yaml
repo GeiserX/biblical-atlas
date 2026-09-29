@@ -66,5 +66,8 @@ relaciones:
   - si-3
   razon: Esd 3:2, 8 y 5:2 los nombran juntos al frente de la obra. El templo se acaba en 515 (estudio 3, tabla).
   estado: verificado
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- josue-el-betsemita
+- josue-hijo-de-nun

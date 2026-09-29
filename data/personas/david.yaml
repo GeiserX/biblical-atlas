@@ -39,6 +39,21 @@ fuentes:
 - lucas-3
 - hch-2
 - hechos-7
+- 1-samuel-16
+- 1-samuel-17
+- 1-samuel-18
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-21
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-24
+- 1-samuel-25
+- 1-samuel-26
+- 1-samuel-27
+- 1-samuel-28
+- 1-samuel-29
+- 1-samuel-30
 enlaces:
 - titulo: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -81,6 +96,11 @@ relaciones:
   - salmos-72
   - lucas-3
   - hch-13
+  - 1-samuel-16
+  - 1-samuel-17
+  - 1-samuel-20
+  - 1-samuel-22
+  - 1-samuel-25
   razon: Rut 4:17 y 22.
   estado: verificado
 - tipo: pariente
@@ -100,6 +120,109 @@ relaciones:
   - it-david
   razon: 'Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo
     da sepultado en la Ciudad de David (1Re 2:10).'
+  estado: verificado
+- tipo: acompana
+  persona: saul
+  relacion: escudero y jefe de la guardia de
+  deducido: false
+  fuentes:
+  - 1-samuel-16
+  - 1-samuel-22
+  - it-david
+  - 1-samuel-17
+  razon: '1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo
+    llama jefe de la guardia del rey.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - 1-samuel-17
+  - 1-samuel-20
+  - it-david
+  razon: '1Sa 17:15: iba y venía a Belén para cuidar las ovejas de su padre.'
+  estado: verificado
+- tipo: pariente
+  persona: mical
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - 1-samuel-18
+  - 1-samuel-19
+  - it-mical
+  - 1-samuel-25
+  razon: '1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.'
+  estado: verificado
+- tipo: pariente
+  persona: saul
+  relacion: suegro
+  deducido: false
+  fuentes:
+  - 1-samuel-18
+  - it-mical
+  - 1-samuel-22
+  - 1-samuel-25
+  razon: '1Sa 18:18-27: se convierte en yerno del rey al casarse con Mical.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: queila
+  deducido: false
+  fuentes:
+  - 1-samuel-23
+  - it-saul
+  - it-david
+  razon: '1Sa 23:5, 7, 13: tras salvar Queilá se queda en la ciudad hasta que huye de Saúl; Perspicacia «Saúl» y «David» dicen
+    que vivía allí.'
+  estado: verificado
+- tipo: pariente
+  persona: abigail-esposa-de-david
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - 1-samuel-25
+  - it-abigail
+  - 1-samuel-27
+  - 1-samuel-30
+  razon: '1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.'
+  estado: verificado
+- tipo: pariente
+  persona: ahinoam-esposa-de-david
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - 1-samuel-25
+  - it-ahinoam
+  - 1-samuel-27
+  - 1-samuel-30
+  razon: '1Sa 25:43: también se había casado con Ahinoam, de Jezreel.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gat
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-akis
+  razon: '1Sa 27:3: se instala en Gat con Akís, con sus hombres y sus familias.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ziclag
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-ziqlag
+  - 1-samuel-30
+  razon: '1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.'
+  estado: verificado
+- tipo: acompana
+  persona: akis
+  relacion: siervo de
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-akis
+  - 1-samuel-28
+  - 1-samuel-29
+  razon: '1Sa 27:5, 12: David se llama siervo de Akís, y el rey cree que lo será siempre. Perspicacia «Akís», párr. 2.'
   estado: verificado
 perspicacia: '1200001130'
 consultado: '2026-09-29'
