@@ -26,5 +26,7 @@ relaciones:
   - rut-4
   razon: Rut 4:19.
   estado: verificado
+no_confundir_con:
+- ram-antepasado-de-elihu
 consultado: '2026-09-29'
 estado: verificado

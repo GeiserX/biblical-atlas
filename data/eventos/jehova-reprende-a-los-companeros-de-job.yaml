@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-reprende-a-los-companeros-de-job
+titulo: Jehová reprende a los compañeros de Job
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 42007
+lugares:
+- uz
+presentes:
+- elifaz-el-temanita
+- bildad
+- zofar
+- job
+personas:
+- elifaz-el-temanita
+- bildad
+- zofar
+- job
+pasajes:
+- Job 42:7-9
+resumen: Jehová le dice a Elifaz que está indignado con él y sus dos amigos porque, a diferencia de Job, no hablaron con verdad
+  de él. Llevan siete toros y siete carneros, y Jehová acepta la oración de Job por ellos.
+razon: Sigue al discurso de Jehová (Job 42:7). Perspicacia «Job» sitúa la prueba hacia 1613 a.e.c. Pasa en Uz, donde vivía
+  Job.
+fuentes:
+- it-job
+- it-elifaz
+- it-bildad
+- it-zofar
+- job-42
+- it-uz
+enlaces:
+- titulo: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

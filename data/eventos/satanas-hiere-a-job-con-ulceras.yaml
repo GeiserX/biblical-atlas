@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: satanas-hiere-a-job-con-ulceras
+titulo: Satanás hiere a Job con úlceras
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 2007
+lugares:
+- uz
+personas:
+- job
+- satanas
+presentes:
+- job
+pasajes:
+- Job 2:7-10
+resumen: Satanás cubre a Job de llagas de los pies a la cabeza. Sentado en la ceniza, Job se rasca con un trozo de vasija.
+  Su esposa le pide que maldiga a Dios y él se niega.
+razon: Job 2:7-10; Perspicacia «Job» (párr. 5) y «Satanás». La esposa no tiene nombre ni ficha. El cuadro del estudio 3 pone
+  la prueba de Job antes de 1613 a.e.c.; Perspicacia «Job» (párr. 2), hacia 1613.
+fuentes:
+- job-2
+- si-3
+- it-job
+- it-satanas
+enlaces:
+- titulo: Job 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

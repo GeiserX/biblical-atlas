@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: job-responde-al-segundo-discurso-de-zofar
+titulo: 'Job responde a Zofar: los malvados también prosperan'
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 21001
+lugares:
+- uz
+presentes:
+- job
+- zofar
+- elifaz-el-temanita
+- bildad
+personas:
+- job
+- zofar
+- elifaz-el-temanita
+- bildad
+pasajes:
+- Job 21:1-34
+resumen: 'Job rebate a Zofar: muchos malvados envejecen ricos, ven crecer a sus hijos y mueren en paz, y al final justo y
+  malvado quedan igual bajo tierra. Tacha de engaño el consuelo de sus compañeros.'
+razon: 'Job 21:1-34; Perspicacia «Job, Libro de» (orden del libro). Perspicacia «Job», párr. 2: la prueba, y con ella el debate,
+  hacia 1613 a.e.c. En Uz, donde vivía Job, con los tres compañeros.'
+fuentes:
+- job-21
+- it-job-libro
+- it-job
+- it-uz
+enlaces:
+- titulo: Job 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

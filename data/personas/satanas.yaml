@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: satanas
+nombre: Satanás
+nombres:
+- nombre: Satanás
+  nota: 'Significa «resistidor»: el nombre le vino de oponerse a Dios.'
+- nombre: Diablo
+  nota: Título que significa «calumniador».
+perspicacia: '1200003845'
+resumen: Criatura espiritual que se rebeló contra Dios. Ante Jehová acusó a Job de servirle por interés y, con su permiso,
+  le arrebató bienes, hijos y salud, pero no pudo quitarle la vida.
+razon: Perspicacia «Satanás» (párr. 1, 2 y los que tratan de Job); Job 1:6-12.
+fuentes:
+- it-satanas
+- job-1
+- job-2
+enlaces:
+- titulo: 'Perspicacia: «Satanás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003845
+  tipo: perspicacia
+- titulo: Job 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
