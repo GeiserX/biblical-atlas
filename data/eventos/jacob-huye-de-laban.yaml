@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-huye-de-laban
+titulo: Jacob sale de Padán-Aram hacia Canaán sin avisar a Labán
+fecha:
+  desde: -1760
+  hasta: -1760
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 31017
+lugares:
+- padan-aram
+- rio-eufrates
+- galaad
+- canaan
+personas:
+- jacob
+- raquel
+- lea
+- laban
+presentes:
+- jacob
+- raquel
+- lea
+pasajes:
+- Gé 31:17-21
+resumen: Mientras Labán esquila sus ovejas, Jacob sube a su familia en camellos y se marcha con todos sus bienes. Raquel roba
+  los ídolos de su padre. Jacob cruza el Éufrates rumbo a Galaad.
+razon: El estudio 3 fecha en 1761 a.e.c. la vuelta de Jacob a Canaán (Gé 31:18, 41). Perspicacia «Jacob», párr. 19.
+fuentes:
+- si-3
+- it-jacob
+- it-raquel
+- genesis-31
+enlaces:
+- titulo: Génesis 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

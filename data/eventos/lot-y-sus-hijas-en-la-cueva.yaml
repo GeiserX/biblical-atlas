@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lot-y-sus-hijas-en-la-cueva
+titulo: Lot y sus hijas en la cueva; nacen Moab y Ben-Ammí
+fecha:
+  desde: -1918
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1919 y 1513 a.e.c. (tiempo narrativo: después de la destrucción de Sodoma y antes de que Moisés terminara
+    Génesis)'
+orden_relato:
+  serie: genesis
+  orden: 19030
+lugares:
+- zoar
+personas:
+- lot
+- moab
+- ben-ammi
+presentes: []
+pasajes:
+- Gé 19:30-38
+resumen: Por miedo, Lot deja Zóar y se va a vivir a una cueva de los montes con sus dos hijas. Ellas lo emborrachan dos noches
+  seguidas para tener hijos de él, y nacen Moab y Ben-Ammí.
+razon: Sigue a la destrucción de 1919 a.e.c. (estudio 3). Gé 19:37, 38 habla de moabitas y ammonitas como pueblos ya formados
+  cuando Moisés terminó Génesis, en 1513 a.e.c. (tabla de los libros). La cueva no tiene nombre.
+fuentes:
+- genesis-19
+- si-3
+- tnm-tabla
+- it-lot
+- it-moab
+- it-ben-ammi
+enlaces:
+- titulo: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

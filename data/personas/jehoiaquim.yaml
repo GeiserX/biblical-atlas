@@ -46,5 +46,8 @@ relaciones:
   - 2-reyes-23
   razon: Nekó lo puso en lugar de su hermano Jehoacaz (2Re 23:34).
   estado: verificado
-consultado: '2026-09-28'
+desambiguacion: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud, antepasado de Jesús.
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- eliaquim-hijo-de-abiud

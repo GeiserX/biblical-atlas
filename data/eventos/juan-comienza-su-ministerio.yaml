@@ -17,6 +17,7 @@ orden_relato:
 lugares:
 - judea
 - rio-jordan
+- desierto-de-juda
 personas:
 - juan-el-bautista
 - tiberio
@@ -37,5 +38,6 @@ fuentes:
 - juan-1
 - it-juan
 - jy-cap-11
-consultado: '2026-09-28'
+- it-desierto-de-juda
+consultado: '2026-09-29'
 estado: verificado

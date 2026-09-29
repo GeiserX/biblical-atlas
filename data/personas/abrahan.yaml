@@ -22,6 +22,20 @@ fuentes:
 - si-3
 - genesis-11
 - genesis-25
+- mateo-1
+- genesis-12
+- genesis-13
+- genesis-14
+- genesis-15
+- genesis-16
+- genesis-17
+- genesis-18
+- genesis-19
+- genesis-20
+- genesis-22
+- genesis-23
+- genesis-24
+- salmos-105
 enlaces:
 - titulo: 'Perspicacia: «Abrahán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
@@ -60,6 +74,8 @@ relaciones:
   deducido: false
   fuentes:
   - it-abrahan
+  - genesis-11
+  - genesis-12
   razon: 'Perspicacia «Abrahán», párr. 7 y 8: vivió en Harán hasta que murió su padre y salió de allí en 1943 a.e.c.'
   estado: verificado
 - tipo: vivio_en
@@ -67,6 +83,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-abrahan
+  - genesis-12
   razon: 'Perspicacia «Abrahán», párr. 9: un hambre muy severa lo obligó a vivir un tiempo en Egipto (Gé 12:10).'
   estado: verificado
 - tipo: vivio_en
@@ -74,6 +91,9 @@ relaciones:
   deducido: false
   fuentes:
   - it-abrahan
+  - genesis-13
+  - genesis-23
+  - genesis-35
   razon: 'Perspicacia «Abrahán», párr. 10: se estableció junto a los árboles grandes de Mamré, en Hebrón (Gé 13:18).'
   estado: verificado
 - tipo: vivio_en
@@ -82,8 +102,109 @@ relaciones:
   fuentes:
   - it-beer-seba
   - genesis-21
-  razon: 'Perspicacia «Beer-seba», párr. 5: allí hizo un pacto con Abimélec, plantó un tamarisco y siguió viviendo tras
-    volver de Moria (Gé 21:31-33).'
+  - genesis-22
+  razon: 'Perspicacia «Beer-seba», párr. 5: allí hizo un pacto con Abimélec, plantó un tamarisco y siguió viviendo tras volver
+    de Moria (Gé 21:31-33).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: sara
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-11
+  - genesis-12
+  - it-sara
+  - genesis-17
+  razon: 'Gé 11:29: la esposa de Abrán se llamaba Sarái.'
+  estado: verificado
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré.'
+  estado: verificado
+- tipo: pariente
+  persona: haran-hijo-de-tare
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ur
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:31: Taré se lo llevó de Ur de los caldeos.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - genesis-12
+  - it-canaan
+  - genesis-13
+  - genesis-16
+  - genesis-17
+  - salmos-105
+  razon: 'Gé 12:5; 13:12; 16:3; 17:8: vivió en la tierra de Canaán como extranjero.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mamre
+  deducido: false
+  fuentes:
+  - genesis-13
+  - it-mamre
+  - genesis-14
+  - genesis-18
+  - genesis-35
+  razon: 'Gé 13:18 y 14:13: vivía en tiendas entre los árboles grandes de Mamré.'
+  estado: verificado
+- tipo: pariente
+  persona: agar
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-16
+  - it-agar
+  razon: 'Gé 16:3: Sarái se la dio a Abrán como esposa; Perspicacia «Agar» la llama concubina.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: negueb
+  deducido: false
+  fuentes:
+  - genesis-20
+  - it-negueb
+  razon: 'Gé 20:1: llevó su campamento a la tierra del Négueb y se quedó entre Cadés y Sur.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: guerar
+  deducido: false
+  fuentes:
+  - genesis-20
+  - it-guerar
+  razon: 'Gé 20:1, 15: vivió como forastero en Guerar, y Abimélec le ofreció quedarse donde quisiera en su tierra.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: filistea
+  deducido: false
+  fuentes:
+  - genesis-21
+  - it-filistea
+  razon: 'Gé 21:34: vivió como forastero mucho tiempo en la tierra de los filisteos.'
+  estado: verificado
+- tipo: pariente
+  persona: quetura
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-quetura
+  - genesis-25
+  razon: 'Gé 25:1: Abrahán volvió a casarse con Queturá.'
+  estado: verificado
+perspicacia: '1200000060'
+consultado: '2026-09-29'
 estado: verificado

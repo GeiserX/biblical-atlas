@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itran-hijo-de-dison
+nombre: Itrán
+nombres:
+- nombre: Itrán
+perspicacia: 1200002242#1
+desambiguacion: Itrán hijo de Disón; no Itrán, descendiente de Aser.
+resumen: Hijo del jeque Disón y descendiente de Seír el horeo.
+razon: Perspicacia «Itrán», núm. 1; Gé 36:26.
+fuentes:
+- it-itran
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Itrán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002242
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: dison
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-itran
+  - genesis-36
+  razon: 'Gé 36:26: hijo de Disón.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

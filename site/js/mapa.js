@@ -263,7 +263,7 @@ function montarCapas() {
   map.addLayer({ id: 'be-cartas-escrita', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'escrita'], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 1.8, 'line-dasharray': [3, 2.5], 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel-casing', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: lineas, paint: { 'line-color': '#fffdf8', 'line-width': 7, 'line-opacity': 0.85 } });
   map.addLayer({ id: 'be-cartas-sel', type: 'line', source: 'be-cartas', filter: ['==', ['get', 'estado'], 'sel'], layout: { 'line-join': 'round' }, paint: { 'line-color': color, 'line-width': 4, 'line-dasharray': [2.2, 1] } });
-  map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': 'rgba(184,137,47,0.12)', 'circle-stroke-color': color, 'circle-stroke-width': 1.5 } });
+  map.addLayer({ id: 'be-halo', type: 'circle', source: 'be-halo', paint: { 'circle-radius': 16, 'circle-color': color, 'circle-opacity': 0.12, 'circle-stroke-color': color, 'circle-stroke-width': 1.5 } });
   map.addLayer({ id: 'be-falta', type: 'line', source: 'be-falta', layout: lineas, paint: { 'line-color': color, 'line-width': 2.5, 'line-dasharray': [0.3, 2.6], 'line-opacity': 0.75 } });
   map.addLayer({ id: 'be-hecho-casing', type: 'line', source: 'be-hecho', layout: lineas, paint: { 'line-color': '#fffcf4', 'line-width': 7, 'line-opacity': 0.8 } });
   map.addLayer({ id: 'be-hecho', type: 'line', source: 'be-hecho', filter: ['!', ['get', 'incierto']], layout: lineas, paint: { 'line-color': color, 'line-width': 3.5 } });
@@ -820,7 +820,14 @@ function pintarMapa() {
   map.getSource('be-falta').setData({ type: 'FeatureCollection', features: g.falta });
   map.getSource('be-rastro').setData({ type: 'FeatureCollection', features: g.rastro });
   const { arcos, halos, oes, zonas, grupos } = geoCartas(t);
-  const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('') + E.sel?.id;
+  // El color de las cartas de Pablo sale de --gold, que cambia con el modo reunión: la clase de la raíz entra en la clave,
+  // y el rayado de sus zonas se vuelve a pintar con el color nuevo.
+  const clase = document.documentElement.className;
+  if (clase !== pintarMapa.clase) {
+    if (pintarMapa.clase !== undefined && map.hasImage('be-rayado-carta')) map.updateImage('be-rayado-carta', imagenRayado(cssVar('--gold') || '#1f3b30', 'alternativa'));
+    pintarMapa.clase = clase;
+  }
+  const claveCartas = [...grupos.keys()].join(',') + arcos.map((a) => a.properties.estado).join('') + E.sel?.id + clase;
   if (claveCartas !== pintarMapa.claveCartas) {
     pintarMapa.claveCartas = claveCartas;
     map.getSource('be-cartas').setData({ type: 'FeatureCollection', features: arcos });

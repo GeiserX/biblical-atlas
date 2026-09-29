@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-hijo-de-boaz
+nombre: Obed
+nombres:
+- nombre: Obed
+perspicacia: 1200003290#2
+desambiguacion: Obed hijo de Boaz y Rut, abuelo de David; no los otros cuatro Obed de Perspicacia.
+resumen: Hijo de Boaz y de la moabita Rut. Las vecinas le pusieron nombre y Noemí lo crió. Fue padre de Jesé y abuelo del
+  rey David.
+razon: Perspicacia «Obed», núm. 2; Rut 4:13-17, 21 y 22.
+fuentes:
+- it-obed
+- rut-4
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Obed»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003290
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: boaz
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  razon: Rut 4:13 y 21.
+  estado: verificado
+- tipo: pariente
+  persona: rut
+  relacion: madre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  razon: Rut 4:13.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

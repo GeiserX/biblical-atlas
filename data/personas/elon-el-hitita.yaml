@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elon-el-hitita
+nombre: Elón
+nombres:
+- nombre: Elón
+perspicacia: 1200001333#1
+desambiguacion: Elón el hitita, suegro de Esaú; no Elón hijo de Zabulón ni el juez Elón.
+resumen: Hitita de Canaán, suegro de Esaú. Gé 26:34 da como hija suya a Basemat y Gé 36:2 a Adá; Perspicacia admite que sean
+  la misma mujer.
+razon: Perspicacia «Elón», núm. 1; Gé 26:34.
+fuentes:
+- it-elon
+- genesis-26
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Elón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001333
+  tipo: perspicacia
+- titulo: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  tipo: biblia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

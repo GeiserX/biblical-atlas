@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadar
+nombre: Hadar
+nombres:
+- nombre: Hadar
+- nombre: Hadad
+  nota: Así lo llama la lista paralela; Perspicacia cree que Hadar puede venir de confundir dos letras hebreas parecidas.
+perspicacia: '1200001800'
+desambiguacion: Hadar, último rey de Edom de la lista; no Hadad hijo de Bedad.
+no_confundir_con:
+- hadad-hijo-de-bedad
+resumen: Rey de Edom que sucedió a Baal-Hanán; su ciudad era Paú y su esposa, Mehetabel. Otra lista lo llama Hadad.
+razon: Perspicacia «Hadar» y «Hadad», núm. 3; Gé 36:39.
+fuentes:
+- it-hadar
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Hadar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001800
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: sucede_a
+  persona: baal-hanan-hijo-de-acbor
+  deducido: false
+  fuentes:
+  - it-hadar
+  - genesis-36
+  razon: 'Gé 36:39: reinó cuando murió Baal-Hanán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: pau
+  deducido: false
+  fuentes:
+  - it-pau
+  - genesis-36
+  razon: 'Gé 36:39: su ciudad se llamaba Paú.'
+  estado: verificado
+- tipo: pariente
+  persona: mehetabel-esposa-de-hadar
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-mehetabel
+  - genesis-36
+  razon: 'Gé 36:39: su esposa se llamaba Mehetabel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

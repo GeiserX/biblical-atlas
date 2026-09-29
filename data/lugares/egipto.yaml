@@ -5,6 +5,8 @@ nombres:
 - nombre: Egipto
 - nombre: Mizraim
   nota: Nombre hebreo habitual, por el hijo de Cam (Génesis 10:6).
+- nombre: Tierra de Cam
+  nota: Nombre que le dan los Salmos (Sl 105:23, 27), porque Cam era el padre de Mizraim.
 tipo: pais
 lat: 30.129444
 lon: 31.3075
@@ -20,10 +22,29 @@ fuentes:
 - it-egipto
 - g10-egipto
 - openbible-geo
+- mateo-2
+- genesis-12
+- genesis-13
+- genesis-37
+- genesis-39
+- genesis-40
+- genesis-41
+- genesis-42
+- genesis-43
+- genesis-45
+- genesis-46
+- genesis-47
+- genesis-50
+- salmos-78
+- it-cam
+- salmos-105
+- salmos-106
+- salmos-135
+- salmos-136
 enlaces:
 - titulo: 'Perspicacia: «Egipto, egipcio»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001265
   tipo: perspicacia
 buscar: Egipto
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

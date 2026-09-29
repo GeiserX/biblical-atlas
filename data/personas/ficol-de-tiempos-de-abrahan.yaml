@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ficol-de-tiempos-de-abrahan
+nombre: Ficol
+nombres:
+- nombre: Ficol
+perspicacia: '1200003461'
+desambiguacion: El Ficol del pacto con Abrahán en Beer-Seba; no el que acompañó al Abimélec de tiempos de Isaac.
+no_confundir_con:
+- ficol-de-tiempos-de-isaac
+resumen: Mandaba el ejército de Abimélec, rey de Guerar, cuando este fue a pactar con Abrahán en Beer-Seba. Perspicacia entiende
+  que Ficol era quizá el nombre del cargo y no de un solo hombre.
+razon: Perspicacia «Ficol»; Gé 21:22, 32.
+fuentes:
+- it-ficol
+- genesis-21
+enlaces:
+- titulo: 'Perspicacia: «Ficol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003461
+  tipo: perspicacia
+- titulo: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: abimelec-de-tiempos-de-abrahan
+  deducido: false
+  fuentes:
+  - genesis-21
+  - it-ficol
+  razon: 'Gé 21:22, 32: jefe del ejército de Abimélec, fue con él a ver a Abrahán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: filistea
+  deducido: false
+  fuentes:
+  - genesis-21
+  razon: 'Gé 21:32: volvió con Abimélec a la tierra de los filisteos.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jalam
+nombre: Jalam
+nombres:
+- nombre: Jalam
+perspicacia: '1200002310'
+resumen: Segundo de los tres hijos que Esaú tuvo con Oholibamá. Vino al mundo en Canaán y creció en Seír, adonde Esaú se llevó
+  a su casa; allí fue jeque.
+razon: Perspicacia «Jalam»; Gé 36:5-8, 14, 18.
+fuentes:
+- it-jalam
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Jalam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002310
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: esau
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jalam
+  - genesis-36
+  razon: 'Gé 36:5, 14: hijo de Esaú.'
+  estado: verificado
+- tipo: pariente
+  persona: oholibama-hija-de-ana
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-jalam
+  - genesis-36
+  razon: 'Gé 36:5, 14: hijo de Oholibamá.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - it-jalam
+  - genesis-36
+  razon: 'Gé 36:5: nació en la tierra de Canaán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: seir
+  deducido: false
+  fuentes:
+  - it-jalam
+  - genesis-36
+  razon: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

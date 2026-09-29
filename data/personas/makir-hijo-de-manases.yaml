@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: makir-hijo-de-manases
+nombre: Makir
+nombres:
+- nombre: Makir
+perspicacia: 1200002819#1
+desambiguacion: Makir hijo de Manasés; no Makir hijo de Amiel, que acogió a Mefibóset en Lo-debar.
+resumen: Hijo de Manasés y nieto de José, que llegó a ver a sus hijos. De él vienen los makiritas; sus descendientes tomaron
+  Galaad y la recibieron como herencia.
+razon: Perspicacia «Makir», núm. 1; Gé 50:23.
+fuentes:
+- it-makir
+- genesis-50
+enlaces:
+- titulo: 'Perspicacia: «Makir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002819
+  tipo: perspicacia
+- titulo: Génesis 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/50
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-50
+  - it-makir
+  razon: Gé 50:23 lo llama hijo de Manasés.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-hace-jurar-a-jose
+titulo: Jacob hace jurar a José que no lo enterrará en Egipto
+fecha:
+  desde: -1710
+  hasta: -1710
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1711 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 47029
+lugares:
+- egipto
+- gosen
+personas:
+- jacob
+- jose-hijo-de-jacob
+pasajes:
+- Gé 47:29-31
+resumen: Cerca de morir, Jacob pide a José que ponga la mano bajo su muslo y le jure que lo llevará a la tumba de sus antepasados.
+  José lo jura y Jacob se inclina en la cabecera de la cama.
+razon: Gé 47:29 lo sitúa al acercarse su muerte, que el estudio 3 y Perspicacia «Jacob», párr. 41, fechan en 1711 a.e.c. Gé
+  47:27 dice que vivía en Gosén.
+fuentes:
+- genesis-47
+- si-3
+- it-jacob
+enlaces:
+- titulo: Génesis 47 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/47
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

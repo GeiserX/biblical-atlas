@@ -19,6 +19,23 @@ fuentes:
 - 2-samuel-5
 - 1-reyes-2
 - tnm-b7
+- mateo-1
+- salmos-3
+- salmos-7
+- salmos-34
+- salmos-51
+- salmos-52
+- salmos-54
+- salmos-56
+- salmos-57
+- salmos-59
+- salmos-60
+- salmos-63
+- salmos-72
+- salmos-78
+- salmos-89
+- salmos-132
+- salmos-142
 enlaces:
 - titulo: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -50,5 +67,25 @@ relaciones:
   - 2-samuel-5
   razon: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: jese
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  - salmos-72
+  razon: Rut 4:17 y 22.
+  estado: verificado
+- tipo: pariente
+  persona: bat-seba
+  relacion: esposa
+  deducido: true
+  fuentes:
+  - mateo-1
+  - it-bat-seba
+  razon: 'Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.'
+  estado: verificado
+perspicacia: '1200001130'
+consultado: '2026-09-29'
 estado: verificado

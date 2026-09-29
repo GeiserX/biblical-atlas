@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-de-egipto
+nombre: Río de Egipto
+nombres:
+- nombre: Río de Egipto
+tipo: rio
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Wadi el-ʽArish (valle torrencial de Egipto)
+  geometria:
+    tipo: punto
+    lat: 31.145708
+    lon: 33.80649
+  estado: alternativa
+  fuentes:
+  - it-rio-de-egipto
+  - it-sihor
+  razon: Los comentaristas suelen igualarlo con el valle torrencial de Egipto; encaja si la promesa habla del territorio repartido
+    a las tribus.
+  coord_fuente: openbible:a7a59b4
+  coord_url: https://www.openbible.info/geo/ancient/a7a59b4/brook-of-egypt
+- nombre: Brazo más oriental del Nilo (Sihor)
+  geometria:
+    tipo: punto
+    lat: 31.042512
+    lon: 32.546139
+  estado: alternativa
+  fuentes:
+  - it-sihor
+  - it-rio-de-egipto
+  razon: Encaja si la promesa abarca todo lo que llegaría a dominar el reino de Israel, hasta la frontera de Egipto.
+  coord_fuente: openbible:a305f43
+  coord_url: https://www.openbible.info/geo/ancient/a305f43/shihor-1
+resumen: Límite suroeste de la tierra que Jehová prometió a la descendencia de Abrán. No está claro si es el valle torrencial
+  de Egipto o un brazo del Nilo.
+razon: Perspicacia «Río de Egipto» y «Sihor», último párrafo; Gé 15:18. Depende de si la promesa habla de la tierra de las
+  tribus o de todo lo que dominaría Israel.
+fuentes:
+- it-rio-de-egipto
+- it-sihor
+- openbible-geo
+- genesis-15
+enlaces:
+- titulo: 'Perspicacia: «Río de Egipto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003746
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Sihor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004032
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

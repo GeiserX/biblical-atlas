@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-se-establece-en-sucot
+titulo: Jacob se establece en Sucot
+fecha:
+  desde: -1760
+  hasta: -1760
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 33017
+lugares:
+- sucot
+personas:
+- jacob
+pasajes:
+- Gé 33:17
+resumen: Tras separarse de Esaú, Jacob va a Sucot, se construye una casa y levanta refugios para el ganado. Por eso el lugar
+  se llama Sucot.
+razon: 'Estudio 3: vuelta de Jacob en 1761 a.e.c.; Perspicacia «Jacob», núm. 1: fue el primer lugar donde se quedó un tiempo,
+  quizá años.'
+fuentes:
+- si-3
+- it-jacob
+- it-sucot
+- genesis-33
+enlaces:
+- titulo: Génesis 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

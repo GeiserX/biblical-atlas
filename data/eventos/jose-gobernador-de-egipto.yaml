@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-gobernador-de-egipto
+titulo: El faraón pone a José al frente de Egipto
+fecha:
+  desde: -1736
+  hasta: -1736
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1737 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 41037
+lugares:
+- egipto
+personas:
+- jose-hijo-de-jacob
+- asenat
+- potifera
+presentes:
+- jose-hijo-de-jacob
+pasajes:
+- Gé 41:37-46
+- Sl 105:20-22
+resumen: El faraón da a José su anillo, ropa de lino y un collar de oro, lo llama Zafenat-Panéah y le da por esposa a Asenat.
+  José tiene 30 años.
+razon: El estudio 3 fecha en 1737 a.e.c. el nombramiento de José como primer ministro (Gé 41:40, 46).
+fuentes:
+- genesis-41
+- si-3
+- it-jose
+- it-asenat
+enlaces:
+- titulo: Génesis 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

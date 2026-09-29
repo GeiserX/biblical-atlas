@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahitofel
+nombre: Ahitofel
+nombres:
+- nombre: Ahitofel
+perspicacia: '1200000169'
+resumen: Consejero de David, de Guiló, en las montañas de Judá; su consejo se tenía por palabra de Dios. Traicionó al rey
+  y se unió a la rebelión de Absalón; al ver que fracasaba, se suicidó.
+razon: Perspicacia «Ahitofel»; 2Sa 15:12, 31 y 17:23. Perspicacia cree que Sal 55:12-14 alude a su traición, aunque el salmo
+  no da su nombre.
+fuentes:
+- it-ahitofel
+- salmos-55
+enlaces:
+- titulo: 'Perspicacia: «Ahitofel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000169
+  tipo: perspicacia
+- titulo: Salmo 55 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/55
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: david
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - it-ahitofel
+  razon: 2Sa 15:12 y 16:23 lo presentan como consejero de David, que seguía su consejo como si viniera de Dios.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -23,7 +23,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - mateo
 - santiago-hijo-de-alfeo
 - tomas
@@ -40,5 +40,10 @@ fuentes:
 - lucas-8
 - it-juana
 - jy-cap-41
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Entre los doce de Lu 8:1 va Bartolomé, el nombre de las listas de apóstoles (Mt 10:3); sale natanael, que tiene
+    ficha aparte con mismo_que pendiente.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

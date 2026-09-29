@@ -5,20 +5,21 @@ nombres:
 - nombre: Caín
 fecha:
   desde: -4025
-  hasta: -3895
+  hasta: -3095
   precision: rango
   aprox: true
-  tipo: anclada
+  tipo: narrativa
   cronologia: tnm
-  texto: entre 4026 y 3896 a.e.c.
+  texto: 'entre 4026 y 3096 a.e.c. (tiempo narrativo: nace tras la creación de Adán y funda una ciudad que Adán llegó a ver)'
 resumen: Primer hijo de Adán y Eva, agricultor. Dios no aceptó su ofrenda porque le faltaba fe. Mató por envidia a su hermano
   Abel y fue desterrado al este de Edén, donde edificó una ciudad.
-razon: 'Perspicacia «Caín», párr. 2, 4, 6 y 8; Gé 4:1-17. El estudio 3 pone la creación de Adán en 4026 a.e.c. y la
-  muerte de Abel a manos de Caín antes de 3896; lo que hizo después no tiene año.'
+razon: Perspicacia «Caín», párr. 2, 4, 6 y 8; Gé 4:1-17. El estudio 3 pone la creación de Adán en 4026 a.e.c.; Perspicacia
+  «Adán» dice que Adán, muerto en 3096, vio edificar una ciudad, la de Caín.
 fuentes:
 - si-3
 - it-cain
 - genesis-4
+- it-adan
 enlaces:
 - titulo: 'Perspicacia: «Caín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000857
@@ -45,5 +46,32 @@ relaciones:
   - genesis-4
   razon: 'Perspicacia «Caín», párr. 2: el primer niño que nació de Adán y Eva (Gé 4:1).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: abel
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-4
+  - it-cain
+  razon: 'Gé 4:2, 8: Abel era su hermano menor.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: nod
+  deducido: false
+  fuentes:
+  - genesis-4
+  - it-condicion-de-fugitivo
+  razon: 'Gé 4:16: se instaló en la región del Destierro, al este de Edén.'
+  estado: verificado
+perspicacia: '1200000857'
+historial:
+- fecha: '2026-09-29'
+  cambio: La fecha acababa en 3896, antes de la muerte de Abel, pero Caín siguió vivo y fundó una ciudad que Adán, muerto
+    en 3096, vio construir. Se amplía hasta 3096.
+  fuente: genesis-4
+- fecha: '2026-09-29'
+  cambio: La razón decía que lo posterior a la muerte de Abel no tenía año; ahora da el límite de 3096 que sale de Perspicacia
+    «Adán».
+  fuente: genesis-4
+consultado: '2026-09-29'
 estado: verificado

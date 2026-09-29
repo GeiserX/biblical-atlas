@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: territorio-de-efrain
+nombre: Efraín
+nombres:
+- nombre: Efraín
+  nota: Territorio de la tribu que descendía de Efraín, hijo de José. No es la ciudad de Efraín, que tiene su propia ficha.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Centro de la tierra, al oeste del Jordán
+  geometria:
+    tipo: zona
+    lat: 32.134657
+    lon: 35.28574
+    radio_km: 20
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-efrain
+  - openbible-geo
+  razon: Perspicacia lo pone en la parte central, al oeste del Jordán, entre Manasés al norte y Benjamín y Dan al sur; Siló
+    y Siquem eran ciudades suyas.
+  nota: 'Centro calculado por nosotros: punto medio entre Siló (32,0557 N; 35,2895 E) y Siquem (32,2136 N; 35,2819 E) de OpenBible.
+    El radio de 20 km también es nuestro.'
+  coord_fuente: calculo
+resumen: 'Territorio de la tribu de Efraín, en el centro de la tierra al oeste del Jordán: montañoso, de suelo fértil y antes
+  muy arbolado. Allí estaban Siló, con el tabernáculo, y Siquem.'
+razon: Perspicacia «Efraín», núm. 2, apartado «Territorio tribal»; Sl 108:8. Zona calculada por nosotros.
+no_afirmamos:
+- No trazamos sus fronteras; el punto del mapa es solo una referencia dentro del territorio.
+fuentes:
+- it-efrain
+- openbible-geo
+- salmos-108
+- salmos-60
+enlaces:
+- titulo: 'Perspicacia: «Efraín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
+  tipo: perspicacia
+- titulo: Salmo 108 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/108
+  tipo: biblia
+- titulo: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

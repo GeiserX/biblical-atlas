@@ -6,6 +6,8 @@ nombres:
   nota: Significa «Campo de Sangre».
 - nombre: Campo del alfarero
   nota: Lo que era antes de la compra (Mt 27:7).
+- nombre: Campo de Sangre
+  nota: Así lo llama Mt 27:8; Hch 1:19 da la misma traducción de Akéldama.
 tipo: llanura
 lat: null
 lon: null
@@ -41,5 +43,5 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
   tipo: biblia
 buscar: Akéldama
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

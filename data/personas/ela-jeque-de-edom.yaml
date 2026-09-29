@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ela-jeque-de-edom
+nombre: Elá
+nombres:
+- nombre: Elá
+- nombre: Elah
+  nota: Otra grafía que da la nota de Gé 36:41; es la de Perspicacia.
+perspicacia: 1200001273#1
+desambiguacion: Elá, jeque de Edom; no Elá, rey de Israel.
+no_confundir_con:
+- ela-de-israel
+resumen: Jeque de Edom del linaje de Esaú; parece que se asentó en Elat.
+razon: Perspicacia «Elah», núm. 1; Gé 36:41.
+fuentes:
+- it-elah
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Elah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001273
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: esau
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - it-elah
+  - genesis-36
+  razon: 'Gé 36:40, 43: jeque de los que descendieron de Esaú.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edom
+  deducido: false
+  fuentes:
+  - it-elah
+  - genesis-36
+  razon: 'Gé 36:43: jeques de Edom, según las regiones que ocuparon.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

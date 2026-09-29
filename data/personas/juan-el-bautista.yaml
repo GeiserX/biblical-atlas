@@ -24,6 +24,15 @@ fuentes:
 - it-juan
 - lucas-3
 - it-herodias
+- mateo-3
+- mateo-4
+- mateo-11
+- mateo-14
+- mateo-17
+- mateo-21
+- marcos-1
+- marcos-6
+- marcos-11
 relaciones:
 - tipo: pariente
   persona: zacarias-padre-de-juan
@@ -56,6 +65,7 @@ relaciones:
   fuentes:
   - mateo-14
   - tnm-a7-d
+  - marcos-6
   razon: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
   estado: verificado
 enlaces:
@@ -65,5 +75,6 @@ enlaces:
 - titulo: Lucas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002489#1
+consultado: '2026-09-29'
 estado: verificado

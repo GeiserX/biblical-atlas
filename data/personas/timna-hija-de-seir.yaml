@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: timna-hija-de-seir
+nombre: Timná
+nombres:
+- nombre: Timná
+perspicacia: 1200004410#2
+desambiguacion: Timná hija de Seír; quizá la misma que la concubina de Elifaz; no el jeque Timná.
+resumen: Hermana de Lotán y, por tanto, hija de Seír el horeo. Perspicacia no descarta que sea Timná, la concubina de Elifaz.
+razon: Perspicacia «Timná», núm. 2; Gé 36:22.
+fuentes:
+- it-timna
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Timná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004410
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: lotan
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-timna
+  - genesis-36
+  razon: 'Gé 36:22: Timná era hermana de Lotán.'
+  estado: verificado
+- tipo: pariente
+  persona: seir
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-timna
+  - genesis-36
+  razon: 'Perspicacia «Timná», núm. 2: hija de Seír, por ser hermana de Lotán (Gé 36:22).'
+  estado: verificado
+- tipo: mismo_que
+  persona: timna-concubina-de-elifaz
+  deducido: true
+  fuentes:
+  - it-timna
+  - genesis-36
+  razon: 'Perspicacia «Timná», núm. 2: posiblemente la misma que la concubina de Elifaz (Gé 36:12).'
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

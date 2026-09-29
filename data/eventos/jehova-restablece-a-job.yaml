@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-restablece-a-job
+titulo: Jehová restablece a Job
+fecha:
+  desde: -1612
+  hasta: -1472
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613-1473 a.e.c.
+orden_relato:
+  serie: job
+  orden: 42010
+lugares:
+- uz
+presentes:
+- job
+- jemima
+- quesias
+- queren-hapuc
+personas:
+- job
+- jemima
+- quesias
+- queren-hapuc
+pasajes:
+- Job 42:10-17
+resumen: Cuando Job ora por sus amigos, Jehová le da el doble de lo que tenía. Parientes y amigos comen con él y le regalan
+  dinero y anillos. Tiene siete hijos y tres hijas, ve cuatro generaciones y muere anciano.
+razon: 'Perspicacia «Job»: la prueba acaba hacia 1613 a.e.c. y Job vive después 140 años (Job 42:16), hasta poco antes de
+  1473 a.e.c. Las hijas nacen en esos años. Pasa en Uz, donde vivía Job.'
+fuentes:
+- it-job
+- it-jemima
+- it-quesias
+- it-queren-hapuc
+- job-42
+- it-uz
+enlaces:
+- titulo: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

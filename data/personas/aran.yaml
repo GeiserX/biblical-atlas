@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aran
+nombre: Arán
+nombres:
+- nombre: Arán
+perspicacia: '1200000337'
+resumen: Hijo del jeque Disán y descendiente de Seír el horeo.
+razon: Perspicacia «Arán»; Gé 36:28.
+fuentes:
+- it-aran
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Arán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000337
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: disan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-aran
+  - genesis-36
+  razon: 'Gé 36:28: hijo de Disán.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primer-discurso-de-elifaz
+titulo: Primer discurso de Elifaz
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 4001
+lugares:
+- uz
+presentes:
+- elifaz-el-temanita
+- job
+- bildad
+- zofar
+personas:
+- elifaz-el-temanita
+- job
+- bildad
+- zofar
+pasajes:
+- Job 4:1-5:27
+resumen: 'Elifaz abre la primera ronda: dice que el que sufre así ha sembrado maldad, cuenta la visión de un espíritu y aconseja
+  a Job aceptar la corrección de Dios.'
+razon: 'Perspicacia «Job», párr. 2: la prueba, hacia 1613 a.e.c.; «Job, Libro de»: tres rondas de discursos. La Atalaya de
+  2005: el espíritu de la visión era malo. En Uz, donde vivía Job, con los tres compañeros.'
+fuentes:
+- job-4
+- job-5
+- it-job
+- it-job-libro
+- it-elifaz
+- w05-pensamientos-nocivos
+- it-uz
+enlaces:
+- titulo: Job 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

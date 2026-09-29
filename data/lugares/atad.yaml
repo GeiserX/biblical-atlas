@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atad
+nombre: Atad
+nombres:
+- nombre: Atad
+- nombre: Era de Atad
+  nota: Así la llama Gé 50:10, 11; Perspicacia cree que es un lugar, aunque Atad podría ser una persona.
+- nombre: Abel-Mizraim
+  nota: Significa «duelo de los egipcios»; se lo pusieron los cananeos por el luto por Jacob (Gé 50:11).
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: En la región del Jordán, sitio desconocido
+  geometria:
+    tipo: zona
+    lat: 31.914888
+    lon: 35.530445
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-atad
+  - genesis-50
+  - openbible-geo
+  razon: Gé 50:10, 11 la pone en la región del Jordán. Perspicacia no sabe dónde estaba y dice que la expresión vale para
+    las dos orillas del río.
+  nota: 'Centro: punto de OpenBible para Atad, cerca de la desembocadura del Jordán. Radio nuestro, para abarcar las dos orillas.'
+  coord_fuente: openbible:a2f186d
+  coord_url: https://www.openbible.info/geo/ancient/a2f186d/atad
+resumen: Era de la región del Jordán donde el cortejo que llevaba a Jacob a Canaán guardó siete días de duelo. Por eso los
+  cananeos la llamaron Abel-Mizraim. No se sabe dónde estaba.
+razon: 'Perspicacia «Atad» (y «Abel-mizraim», que remite a ella); Gé 50:10, 11. Centro de la zona: punto de OpenBible.'
+fuentes:
+- it-atad
+- genesis-50
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Atad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000450
+  tipo: perspicacia
+- titulo: Génesis 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/50
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

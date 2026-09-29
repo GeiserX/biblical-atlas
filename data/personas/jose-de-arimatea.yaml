@@ -8,6 +8,7 @@ nombres:
 desambiguacion: El de Arimatea, miembro del Sanedrín; no es José, el padre adoptivo de Jesús.
 no_confundir_con:
 - jose-esposo-de-maria
+- jose-hijo-de-jose
 resumen: Hombre rico, miembro del Sanedrín y discípulo en secreto. No apoyó la decisión contra Jesús, pidió su cuerpo
   a Pilato y lo puso en su propia tumba nueva.
 razon: Perspicacia «José», apartado 10, y la nota de Mt 27:57; Jn 19:38-42.
@@ -15,6 +16,7 @@ fuentes:
 - it-jose
 - mateo-27
 - juan-19
+- marcos-15
 enlaces:
 - titulo: 'Perspicacia: «José»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
@@ -23,5 +25,24 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
   tipo: biblia
 buscar: José de Arimatea
-consultado: '2026-09-28'
+perspicacia: 1200002515#10
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: arimatea
+  deducido: false
+  fuentes:
+  - mateo-27
+  - it-arimatea
+  - marcos-15
+  razon: 'Mt 27:57: un hombre rico de Arimatea.'
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: maestro
+  deducido: false
+  fuentes:
+  - mateo-27
+  razon: Mt 27:57 dice que se había hecho discípulo de Jesús.
+  estado: verificado

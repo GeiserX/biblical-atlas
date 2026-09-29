@@ -13,6 +13,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-26
+  - marcos-14
   razon: Mt 26:6 pone su casa en Betania.
   estado: verificado
 resumen: Vecino de Betania en cuya casa comieron Jesús, sus discípulos y la familia de Lázaro el 9 de nisán; allí
@@ -30,5 +31,8 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
   tipo: biblia
 buscar: Simón el leproso
-consultado: '2026-09-28'
+perspicacia: 1200004131#6
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- simon-hijo-de-jose

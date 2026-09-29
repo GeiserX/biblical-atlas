@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: laban-alcanza-a-jacob-en-galaad
+titulo: Labán alcanza a Jacob en los montes de Galaad
+fecha:
+  desde: -1760
+  hasta: -1760
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 31022
+lugares:
+- galaad
+personas:
+- laban
+- jacob
+- raquel
+- lea
+pasajes:
+- Gé 31:22-42
+resumen: Labán persigue a Jacob siete días. Dios le advierte en un sueño que no le haga daño. Busca sus dioses sin hallarlos,
+  porque Raquel los esconde, y Jacob le reprocha veinte años de abusos.
+razon: 'Perspicacia «Galeed», párr. 2: el pacto que cierra este encuentro fue hacia 1761 a.e.c., el año de la vuelta según
+  el estudio 3. Perspicacia «Jacob», párr. 19 y 20.'
+fuentes:
+- si-3
+- it-galeed
+- it-jacob
+- it-laban
+- genesis-31
+enlaces:
+- titulo: Génesis 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -23,6 +23,7 @@ fuentes:
 - 2-reyes-24
 - 2-reyes-25
 - tnm-a6-b
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Joaquín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002375
@@ -56,5 +57,14 @@ relaciones:
   - 2-reyes-24
   razon: Pasó el resto de su vida desterrado en Babilonia (2Re 24:15; 25:27-30).
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: josias
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:11 hace a Josías padre de Jeconías; la nota explica que era su abuelo, por medio de Jehoiaquim.
+  estado: verificado
+perspicacia: '1200002375'
+consultado: '2026-09-29'
 estado: verificado

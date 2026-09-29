@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-hijo-de-jose
+nombre: José
+nombres:
+- nombre: José
+perspicacia: 1200002515#9
+desambiguacion: Medio hermano de Jesús, hijo de José y María. No es José, el esposo de María, ni José de Arimatea, ni José
+  hijo de Jacob.
+no_confundir_con:
+- jose-esposo-de-maria
+- jose-de-arimatea
+- jose-hijo-de-jacob
+- joses
+resumen: Uno de los cuatro medio hermanos de Jesús que nombran en Nazaret. Al principio no creía en él; Perspicacia cree que
+  después sí y ve muy posible que estuviera con los discípulos reunidos en Jerusalén en 33.
+razon: Perspicacia «José», núm. 9; Mt 13:55 y Mr 6:3.
+fuentes:
+- it-jose
+- mateo-13
+- marcos-6
+enlaces:
+- titulo: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: padre
+  deducido: true
+  fuentes:
+  - mateo-13
+  - it-jose
+  - marcos-6
+  razon: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
+    entre ellos.
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: madre
+  deducido: true
+  fuentes:
+  - mateo-13
+  - marcos-6
+  razon: Mt 13:55 da a María como madre de Jesús y a José entre sus hermanos; la nota los hace hijos de María.
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: true
+  fuentes:
+  - mateo-13
+  razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

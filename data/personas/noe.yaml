@@ -19,6 +19,9 @@ fuentes:
 - it-noe
 - si-3
 - genesis-7
+- genesis-6
+- genesis-8
+- genesis-9
 enlaces:
 - titulo: 'Perspicacia: «Noé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003266
@@ -36,5 +39,6 @@ relaciones:
   - genesis-5
   razon: 'Perspicacia «Noé», párr. 2: hijo de Lamec (Gé 5:28, 29).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200003266'
+consultado: '2026-09-29'
 estado: verificado

@@ -3,12 +3,10 @@ id: natanael
 nombre: Natanael
 nombres:
 - nombre: Natanael
-- nombre: Bartolomé
-  nota: Nombre que le dan Mateo, Marcos y Lucas; significa «hijo de Tolmai» (Perspicacia).
-resumen: Apóstol de Caná, llamado Bartolomé en los otros tres Evangelios. Felipe lo llevó a Jesús, que lo describió como un
-  israelita sin engaño; tras la resurrección estuvo en la pesca del mar de Galilea.
-razon: Perspicacia «Natanael» (párr. 2-4) y «Bartolomé» explican que son la misma persona y cuentan su historia (Jn 1:45-49;
-  21:2).
+resumen: Discípulo de Caná al que Felipe llevó ante Jesús, que lo llamó israelita sin engaño. Tras la resurrección estuvo
+  en la pesca del mar de Galilea. Probablemente es el apóstol Bartolomé.
+razon: Perspicacia «Natanael» (párr. 2-4) cuenta su historia (Jn 1:45-49; 21:2). Que sea Bartolomé lo da solo como probable,
+  igual que «Bartolomé»; por eso van en dos fichas.
 fuentes:
 - it-natanael
 - it-bartolome
@@ -25,11 +23,12 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: jesus
-  relacion: apóstol de
+  relacion: maestro
   deducido: false
   fuentes:
-  - mateo-10
-  razon: Mt 10:3 nombra a Bartolomé entre los doce.
+  - juan-1
+  - it-natanael
+  razon: 'Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Natanael»'
@@ -38,5 +37,23 @@ enlaces:
 - titulo: Juan 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200003185'
+historial:
+- fecha: '2026-09-29'
+  cambio: Sale el nombre Bartolomé, que ahora tiene ficha propia. Van en dos fichas con mismo_que pendiente, porque Perspicacia
+    y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: El resumen daba por seguro que era Bartolomé. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la
+    nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: La razón decía que Perspicacia los da por la misma persona. Van en dos fichas con mismo_que pendiente, porque Perspicacia
+    y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: La relación «apóstol de» (Mt 10:3) pasa a Bartolomé; aquí queda la de discípulo, con Jn 1:45-51. Van en dos fichas
+    con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

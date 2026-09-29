@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: meriba-de-cades
+nombre: Meribá
+nombres:
+- nombre: Meribá
+  nota: Significa «riña». No es el Meribá de junto a Refidim, que también se llamó Masá y tiene su propia ficha.
+- nombre: Aguas de Meribá
+  nota: Así lo llama Sl 106:32; otros pasajes añaden «en Cadés».
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Cerca de Cadés
+  geometria:
+    tipo: zona
+    lat: 30.583378
+    lon: 34.484081
+    radio_km: 15
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-meriba
+  - it-qades
+  - openbible-geo
+  razon: Perspicacia lo sitúa cerca de Cadés sin precisar más, y el sitio de Cadés tampoco es seguro.
+  nota: 'Centro: ʽAin Qedeis, el candidato favorecido de Cadés, con su punto de OpenBible. El radio de 15 km es nuestro, el
+    mismo de la zona de los tres manantiales de Cadés.'
+  coord_fuente: openbible:ac2cef0
+  coord_url: https://www.openbible.info/geo/ancient/ac2cef0/kadesh-barnea
+resumen: Paraje junto a Cadés donde, hacia el año cuarenta en el desierto, Israel riñó con Moisés por falta de agua. Moisés
+  y Aarón no honraron allí a Jehová como santo, y por eso no entraron en la Tierra Prometida.
+razon: Perspicacia «Meribá», núm. 2; Sl 106:32, 33.
+no_afirmamos:
+- 'Que se sepa el sitio exacto: Perspicacia solo dice que estaba cerca de Cadés.'
+fuentes:
+- it-meriba
+- it-qades
+- openbible-geo
+- salmos-106
+enlaces:
+- titulo: 'Perspicacia: «Meribá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002998
+  tipo: perspicacia
+- titulo: Salmo 106 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

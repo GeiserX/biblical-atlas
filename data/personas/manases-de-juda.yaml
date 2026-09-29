@@ -20,6 +20,7 @@ fuentes:
 - 2-reyes-21
 - 2-cronicas-33
 - tnm-a6-b
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Manasés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
@@ -35,6 +36,7 @@ relaciones:
   fuentes:
   - it-manases
   - 2-reyes-20
+  - mateo-1
   razon: Hijo y sucesor de Ezequías (2Re 20:21).
   estado: verificado
 - tipo: sucede_a
@@ -45,5 +47,8 @@ relaciones:
   - 2-reyes-20
   razon: Reinó al morir su padre (2Re 20:21).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200002882#4
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- manases-hijo-de-jose

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: duma
+nombre: Dumá
+nombres:
+- nombre: Dumá
+perspicacia: '1200001229'
+desambiguacion: Dumá hijo de Ismael; no la ciudad de Judá del mismo nombre.
+resumen: Sexto hijo de Ismael y jefe de un clan. Quizá dio nombre a una región del norte de Arabia, entre Canaán y el sur
+  de Babilonia.
+razon: Perspicacia «Dumá», núm. 1; Gé 25:14, 16.
+fuentes:
+- it-duma
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Dumá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001229
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-duma
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

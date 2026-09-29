@@ -19,6 +19,8 @@ fuentes:
 - 2-reyes-18
 - 2-cronicas-29
 - tnm-a6-b
+- mateo-1
+- proverbios-25
 enlaces:
 - titulo: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
@@ -34,6 +36,7 @@ relaciones:
   fuentes:
   - it-ezequias
   - 2-reyes-16
+  - mateo-1
   razon: Hijo y sucesor de Acaz (2Re 16:20).
   estado: verificado
 - tipo: sucede_a
@@ -49,5 +52,6 @@ historial:
   cambio: Perspicacia «Ezequías» y el estudio 3 daban 745-717 a.e.c.; A6-B, más reciente, da 746 para su comienzo y 716 para
     Manasés.
   fuente: tnm-a6-b
-consultado: '2026-09-28'
+perspicacia: 1200002011#1
+consultado: '2026-09-29'
 estado: verificado

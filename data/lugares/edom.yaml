@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: edom
+nombre: Edom
+nombres:
+- nombre: Edom
+- nombre: Territorio de Edom
+  nota: La nota de Gé 32:3 da la lectura literal «campo de Edom».
+tipo: pais
+lat: 30.745843
+lon: 35.603919
+precision: zona
+coord_fuente: openbible:a2735ff
+coord_url: https://www.openbible.info/geo/ancient/a2735ff/edom
+coord_nota: Punto representativo de OpenBible para el país; coincide con el de Bozrá.
+resumen: Territorio de los edomitas, descendientes de Esaú, al sur del mar Muerto. Tomó el nombre de Edom, apodo de Esaú,
+  y abarcó la región montañosa de Seír.
+razon: 'Perspicacia «Edom», párr. 1 y 2, y «Seír», núm. 2; Gé 32:3 y 36:1, 8, 43. OpenBible: solo el punto.'
+fuentes:
+- it-edom
+- openbible-geo
+- genesis-32
+- genesis-36
+- salmos-60
+enlaces:
+- titulo: 'Perspicacia: «Edom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001258
+  tipo: perspicacia
+- titulo: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+- titulo: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

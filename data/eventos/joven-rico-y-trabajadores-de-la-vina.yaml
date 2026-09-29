@@ -13,6 +13,7 @@ lugares:
 - perea
 personas:
 - jesus
+- pedro
 pasajes:
 - Mt 19:16-20:16
 - Mr 10:17-31
@@ -35,5 +36,5 @@ orden_relato:
   serie: a7
   orden: 88
 buscar: El joven rico
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado
