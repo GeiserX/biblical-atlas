@@ -205,6 +205,9 @@ function seleccionar(sel, { mover = true, encuadrar = true } = {}) {
   if (sel && mover) {
     const t = momentoDe(sel);
     if (t != null) { setT(t); asegurarVisible(t, true); }
+    // Un tipo puede pedir que la línea enseñe un tramo entero al elegirlo (una era o una potencia: tipos/periodo.js).
+    const tv = TIPOS.get(sel.tipo)?.encuadre?.(sel.id);
+    if (tv) BE.encuadrarTiempo(tv[0], tv[1]);
   }
   pintarPanel(true);
   if (sel && encuadrar) BE.mapa.encuadrar([...E.resaltado.lugares]);   // después de la ficha: en móvil su alto cuenta
@@ -264,7 +267,7 @@ function reproducir(on) {
 }
 function paso(ahora) {
   if (!E.play) return;
-  const dt = Math.min(0.1, (ahora - ultimoFrame) / 1000);
+  const dt = clamp((ahora - ultimoFrame) / 1000, 0, 0.1);
   ultimoFrame = ahora;
   const t = E.t + dt * BE.velocidad();
   if (t >= BE.T_MAX) { setT(BE.T_MAX); reproducir(false); return; }
@@ -443,11 +446,157 @@ function iniciarEventos() {
 }
 
 // ---------------------------------------------------------------------------
+// Marcos: la ficha y la línea de tiempo cambian de tamaño; el modo reunión tiene su botón
+// ---------------------------------------------------------------------------
+/** Cada tamaño es una variable de CSS en #app que se guarda en la sesión y se recorta a lo que cabe en la ventana.
+    La línea ampliada y la sincronía (clases de #app, de linea.js y ahora.js) y la presentación ponen su propio tamaño:
+    al activarlas manda el suyo; si después se arrastra, manda el arrastre; al quitarlas vuelve el guardado.
+    En el móvil no hay ficha al lado: el asa de la hoja cambia su alto. */
+const estrechaMarco = () => matchMedia('(max-width: 760px)').matches;
+const altoLinea = () => $('#linea').offsetHeight || 250;
+const MARCOS = {
+  panel: { var: '--panel-w', sep: '#sep-panel', medir: () => $('#panel').offsetWidth, min: () => 300,
+    // El mapa conserva al menos 480 px de ancho en escritorio (360 en la tableta), para que se lea lo que flota encima.
+    max: () => Math.max(300, Math.min(760, innerWidth - (innerWidth > 900 ? 480 : 360))), texto: (v) => `Ficha de ${v} píxeles de ancho`,
+    propio: () => document.documentElement.classList.contains('be-presentando') },
+  linea: { var: '--timeline-h', sep: '#sep-linea', medir: altoLinea, min: () => 132,
+    max: () => Math.max(132, innerHeight - (estrechaMarco() ? 56 + 150 : 60 + 280)), texto: (v) => `Línea de tiempo de ${v} píxeles de alto`,
+    propio: () => /\b(linea-grande|con-sincronia)\b/.test($('#app').className) },
+  hoja: { var: '--hoja-h', medir: () => $('#panel').offsetHeight, min: () => 96,
+    max: () => Math.max(96, innerHeight - 56 - altoLinea() - 40), propio: () => false },
+};
+const CLAVE_MARCO = 'biblical-earth:marco:';
+// Con la línea y la ficha muy grandes, el mapa se queda sin sitio para la tarjeta del suceso y la leyenda a la vez: ni
+// una encima de la otra (unos 400 px de alto) ni una al lado de la otra (unos 720 de ancho). Entonces la tarjeta se quita
+// (mapa.css, .mapa-bajo): lo que cuenta ya está en la línea y en la ficha, y la leyenda hace falta para leer el mapa.
+// El mapa de situación (arriba a la izquierda) se quita solo si la leyenda, que crece con un viaje, llega hasta él.
+const vigilarTapas = () => {
+  const m = $('#mapa').getBoundingClientRect(), ley = $('#leyenda').getBoundingClientRect(), sit = $('#situacion');
+  $('#app').classList.toggle('mapa-bajo', m.height < 400 && m.width < 720);
+  if (!sit) return;   // mapa.js lo crea al arrancar; la leyenda cambia de alto después y vuelve a mirar
+  const cs = getComputedStyle(sit);
+  $('#app').classList.toggle('situacion-tapada', ley.height > 0 && ley.top < m.top + parseFloat(cs.top) + parseFloat(cs.height) + 8);
+};
+const tapasObs = new ResizeObserver(vigilarTapas);
+tapasObs.observe($('#mapa')); tapasObs.observe($('#leyenda'));
+const marco = Object.fromEntries(Object.keys(MARCOS).map((k) => [k, { propio: false, manda: 'nuestro' }]));
+function leerMarco(k) { try { const v = parseFloat(sessionStorage.getItem(CLAVE_MARCO + k)); return Number.isFinite(v) ? v : null; } catch { return null; } }
+function guardarMarco(k, v) { try { if (v == null) sessionStorage.removeItem(CLAVE_MARCO + k); else sessionStorage.setItem(CLAVE_MARCO + k, String(Math.round(v))); } catch { /* sin almacenamiento */ } }
+/** Pone en #app el tamaño guardado, salvo que mande el de una clase, y actualiza el separador. */
+function aplicarMarco(k) {
+  const m = MARCOS[k], app = $('#app'), st = marco[k];
+  const propio = m.propio();
+  if (propio !== st.propio) { st.propio = propio; st.manda = propio ? 'clase' : 'nuestro'; }
+  const v = leerMarco(k);
+  if (v == null || st.manda === 'clase') app.style.removeProperty(m.var);
+  else app.style.setProperty(m.var, `${Math.round(clamp(v, m.min(), m.max()))}px`);
+  const sep = m.sep && $(m.sep);
+  if (sep) {
+    const ahora = Math.round(m.medir());
+    sep.setAttribute('aria-valuemin', String(Math.round(m.min())));
+    sep.setAttribute('aria-valuemax', String(Math.round(m.max())));
+    sep.setAttribute('aria-valuenow', String(ahora));
+    sep.setAttribute('aria-valuetext', m.texto(ahora));
+  }
+}
+/** Tamaño elegido a mano (arrastre o teclado); null vuelve al de siempre. */
+function ponerMarco(k, v) {
+  const m = MARCOS[k];
+  guardarMarco(k, v == null ? null : clamp(v, m.min(), m.max()));
+  marco[k].manda = 'nuestro';
+  aplicarMarco(k);
+  sucio.linea = sucio.etiquetas = true; programar();
+}
+/** Arrastre con ratón, lápiz o dedo. Un arrastre de verdad no cuenta además como clic (el asa de la hoja pliega con un clic). */
+function arrastrarMarco(asa, k) {
+  const m = MARCOS[k];
+  let inicio = null;
+  asa.addEventListener('pointerdown', (e) => {
+    if (e.button !== 0) return;
+    inicio = { x: e.clientX, y: e.clientY, v: m.medir(), movido: false };
+    try { asa.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
+  });
+  asa.addEventListener('pointermove', (e) => {
+    if (!inicio) return;
+    const dx = e.clientX - inicio.x, dy = e.clientY - inicio.y;
+    if (!inicio.movido && Math.hypot(dx, dy) < 4) return;
+    if (!inicio.movido) { inicio.movido = true; asa.classList.add('arrastrando'); document.documentElement.classList.add('marco-arrastrando'); }
+    e.preventDefault();
+    ponerMarco(k, inicio.v - (k === 'panel' ? dx : dy));   // hacia la izquierda, ficha más ancha; hacia arriba, más alto
+  });
+  const soltar = () => {
+    if (!inicio) return;
+    if (inicio.movido) { asa.dataset.arrastrado = '1'; setTimeout(() => { delete asa.dataset.arrastrado; }, 0); }
+    inicio = null;
+    asa.classList.remove('arrastrando'); document.documentElement.classList.remove('marco-arrastrando');
+  };
+  asa.addEventListener('pointerup', soltar);
+  asa.addEventListener('pointercancel', soltar);
+  asa.addEventListener('click', (e) => { if (asa.dataset.arrastrado) { e.stopImmediatePropagation(); e.preventDefault(); } }, true);
+}
+/** Flechas: 20 px (80 con Mayúsculas); Inicio y Fin, el mínimo y el máximo; Intro, el de siempre (en un botón, Intro
+    lo pulsa). */
+function teclaMarco(e, k, conIntro) {
+  const m = MARCOS[k];
+  const flechas = k === 'panel' ? { ArrowLeft: 1, ArrowRight: -1 } : { ArrowUp: 1, ArrowDown: -1 };
+  let v;
+  if (e.key in flechas) v = m.medir() + flechas[e.key] * (e.shiftKey ? 80 : 20);
+  else if (e.key === 'Home') v = m.min();
+  else if (e.key === 'End') v = m.max();
+  else if (e.key === 'Enter' && conIntro) v = null;
+  else return;
+  e.preventDefault(); e.stopPropagation();
+  ponerMarco(k, v);
+}
+function iniciarMarcos() {
+  for (const k of ['panel', 'linea']) {
+    const m = MARCOS[k], sep = $(m.sep);
+    arrastrarMarco(sep, k);
+    sep.addEventListener('dblclick', () => { ponerMarco(k, null); avisar(k === 'panel' ? 'La ficha vuelve a su ancho de siempre.' : 'La línea de tiempo vuelve a su alto de siempre.', 2000); });
+    sep.addEventListener('keydown', (e) => teclaMarco(e, k, true));
+  }
+  arrastrarMarco($('#hoja-asa'), 'hoja');
+  // Con el dedo, la raya de 10 px entre el mapa y la línea no es una diana: en su lugar, un botón de 44 px en la barra
+  // de la línea (css/tactil.css) que se arrastra igual y que, pulsado, amplía la línea o la devuelve (be-f1w).
+  const alto = $('#linea-alto');
+  if (alto) {
+    arrastrarMarco(alto, 'linea');
+    alto.addEventListener('click', () => BE.ponerGrande?.(!BE.lineaEstado?.grande));
+    alto.addEventListener('keydown', (e) => teclaMarco(e, 'linea', false));
+  }
+  const recalcular = () => { for (const k of Object.keys(MARCOS)) aplicarMarco(k); };
+  recalcular();
+  new MutationObserver(recalcular).observe($('#app'), { attributes: true, attributeFilter: ['class'] });
+  new MutationObserver(recalcular).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  window.addEventListener('resize', recalcular);
+  iniciarReunion();
+}
+/** Modo reunión (D-02): solo el botón de la barra lo pone y lo quita (be-68c.2). recorridos.js lee la preferencia al arrancar. */
+function iniciarReunion() {
+  const b = $('#reunion-boton'), raiz = document.documentElement;
+  const pintarBoton = () => {
+    const on = raiz.classList.contains('be-reunion');
+    b.setAttribute('aria-pressed', String(on));
+    b.title = on ? 'Salir del modo reunión: vuelve el fondo claro' : 'Modo reunión: fondo oscuro, brillo bajo y sin animaciones';
+  };
+  b.addEventListener('click', () => {
+    const on = !raiz.classList.contains('be-reunion');
+    raiz.classList.toggle('be-reunion', on);
+    try { localStorage.setItem('biblical-earth:pref:reunion', on ? '1' : '0'); } catch { /* sin almacenamiento */ }
+    sucio.etiquetas = sucio.panel = sucio.linea = true; programar();
+    avisar(on ? 'Modo reunión: fondo oscuro y sin animaciones.' : 'Fondo claro de nuevo.', 2000);
+  });
+  new MutationObserver(pintarBoton).observe(raiz, { attributes: true, attributeFilter: ['class'] });
+  pintarBoton();
+}
+
+// ---------------------------------------------------------------------------
 // Arranque
 // ---------------------------------------------------------------------------
 /** BE.inicios: funciones que se llaman una vez, con los datos ya cargados, antes de leer la dirección. */
 const inicios = [];
 async function iniciar() {
+  iniciarMarcos();
   try {
     [BE.D, BE.VIDEOS] = await Promise.all([cargarDatos(), cargarVideos()]);
   } catch (err) {

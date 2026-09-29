@@ -9,8 +9,23 @@ const BE = window.BE;
 const { E, norm, esc, $, seleccionar, limpiarSeleccion, fechaCorta, fmtAnio, fmtCursor } = BE;
 
 // Orden de los grupos en la lista. Un grupo que no está aquí va al final.
-const ORDEN_GRUPOS = ['Preguntas', 'Fechas', 'Pasajes', 'Personas', 'Lugares', 'Libros', 'Cartas', 'Viajes', 'Sucesos', 'Periodos', 'Hallazgos', 'Recorridos'];
+const ORDEN_GRUPOS = ['Preguntas', 'Fechas', 'Meses hebreos', 'Pasajes', 'Personas', 'Lugares', 'Libros', 'Cartas', 'Viajes', 'Sucesos', 'Periodos', 'Hallazgos', 'Recorridos'];
 const ordenGrupo = (g) => { const i = ORDEN_GRUPOS.indexOf(g); return i < 0 ? ORDEN_GRUPOS.length : i; };
+// El texto de ayuda de una caja de búsqueda: el más largo que quepa entero de los que se le dan, y si ninguno cabe,
+// ninguno. Cortado se leía «Buscar pe» en el móvil y «Buscar persona, lugar» en la tableta.
+// BE.ajustarAyuda(input, ...cortos) lo usa también la portada.
+const lienzoAyuda = document.createElement('canvas').getContext('2d');
+BE.ajustarAyuda = (input, ...cortos) => {
+  if (!input || !lienzoAyuda) return;
+  const textos = [input.placeholder, ...cortos];
+  const poner = () => {
+    lienzoAyuda.font = getComputedStyle(input).font;
+    input.placeholder = textos.find((t) => lienzoAyuda.measureText(t).width <= input.clientWidth - 4) || '';
+  };
+  if (window.ResizeObserver) new ResizeObserver(poner).observe(input);
+  document.fonts?.ready.then(poner);
+};
+BE.ajustarAyuda(document.getElementById('q'), 'Persona, lugar o año', 'Buscar');
 const TIPO_TEXTO = { persona: 'persona', lugar: 'lugar', carta: 'carta', viaje: 'viaje', evento: 'suceso', periodo: 'periodo', pasaje: 'capítulo', libro: 'libro', hallazgo: 'hallazgo', recorrido: 'recorrido', parada: 'parada' };
 
 function puntuador(nq) {
@@ -94,9 +109,91 @@ function saltarA(t, sel) {
   BE.setT(t);
   BE.asegurarVisible(BE.E.t, true);
 }
+// ---------------------------------------------------------------------------
+// Meses hebreos (be-64b.8): «Adar», «Veadar», «nisán 33», «14 nisán 33». Llevan al mes en la línea de tiempo o a su
+// explicación en la página del calendario.
+// ---------------------------------------------------------------------------
+/** Todos los nombres de cada mes (el de siempre, los de otras épocas y los otros), normalizados. */
+function nombresMes(m) {
+  return [...new Set([m.nombre, ...(m.otros_nombres || []), ...(m.nombres || []).map((n) => n.nombre)].filter(Boolean).map((x) => norm(x)))];
+}
+/** Meses cuyo nombre es `palabra` (exacto) o empieza por ella (con tres letras o más). */
+function mesesPorNombre(palabra) {
+  const meses = BE.calendario?.().meses || [];
+  const exactos = meses.filter((m) => nombresMes(m).includes(palabra));
+  if (exactos.length || palabra.length < 3) return { meses: exactos, exacto: true };
+  return { meses: meses.filter((m) => nombresMes(m).some((n) => n.startsWith(palabra))), exacto: false };
+}
+/** El mes `m` del año hebreo que contiene t; Veadar, que solo tienen algunos años, en el año más cercano que lo tenga. */
+function mesCercano(m, t) {
+  const d = BE.diaHebreo(t);
+  if (!d) return null;
+  let mejor = null;
+  for (let k = -3; k <= 3; k++) {
+    const A = BE.anioHebreo(d.anio + k);
+    const M = A.meses[m.orden - 1];
+    if (!M || M.mes.id !== m.id) continue;
+    const dist = t >= M.a && t < M.b ? 0 : Math.min(Math.abs(M.a - t), Math.abs(M.b - t));
+    if (!mejor || dist < mejor.dist) mejor = { t: M.a, anio: A.anio, M, dist };
+  }
+  return mejor;
+}
+/** Nombre del mes en la época del año hebreo que empieza en y (Abib antes del exilio, Nisán después). */
+const nombreMesEn = (m, y) => BE.nombreMes?.(m, y)?.nombre || m.nombre;
+function irAMes(t, escala) {
+  BE.historia.marcar();
+  BE.irA ? BE.irA(t, escala) : BE.setT(t);
+  BE.asegurarVisible(BE.E.t, true);
+}
+function enlaceMes(m) {
+  const vista = BE.textoHash ? BE.textoHash() : location.hash.slice(1);
+  location.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}&mes=${encodeURIComponent(m.id)}`;
+}
+function preguntasMes(nq) {
+  // «segundo Adar» es lo que quiere decir Veadar; «de adar» es como lo dice quien lo oyó y no lo leyó.
+  const q = nq.replace(/\b(?:segundo\s+adar|adar\s+segundo|adar\s+ii)\b/, 'veadar');
+  const r = q.replace(/^(?:el\s+)?(?:mes\s+)?(?:de\s+)?/, '').match(/^(?:(\d{1,2})\s+(?:de\s+)?)?([a-z]+)(?:\s+(?:de\s+|del\s+(?:ano\s+)?|en\s+)?(.+))?$/);
+  if (!r) return [];
+  const dia = r[1] ? +r[1] : null, anio = r[3] != null ? leerAnio(r[3]) : null;
+  if (r[3] != null && anio == null) return [];
+  if (dia != null && (dia < 1 || dia > 30)) return [];
+  const { meses, exacto } = mesesPorNombre(r[2]);
+  if (!meses.length || (!exacto && (dia != null || anio != null))) return [];
+  const out = [];
+  // «Ab» suelto, sin día ni año, es también el principio de Abrahán o Abdías: cuenta como un nombre a medio escribir.
+  const corto = exacto && r[2].length < 3 && dia == null && anio == null;
+  for (const m of meses.slice(0, 3)) {
+    const puntos = exacto && !corto ? 920 : 500;
+    // Un nombre a medio escribir («tam») va detrás de las personas y los lugares que también empiezan así.
+    const alFinal = !exacto || corto;
+    const equivale = m.equivale ? `más o menos ${m.equivale}` : '';
+    if (anio != null) {
+      // Con año: el mes (o el día) de ese año, calculado al elegirlo; inicioMes avisa si ese año no tuvo Veadar.
+      const titulo = dia != null ? `Ir al ${dia} de ${nombreMesEn(m, anio)} de ${fmtAnio(anio)}` : `Ir a ${nombreMesEn(m, anio)} de ${fmtAnio(anio)}`;
+      out.push({ grupo: 'Meses hebreos', alFinal, titulo, meta: `mes hebreo${equivale ? ` · ${equivale}` : ''} · fecha aproximada, de lunas medias`, puntos: puntos + 30, accion: () => {
+        const a = BE.inicioMes(anio, m.id);
+        if (a != null) irAMes(dia != null ? a + (dia - 0.5) * BE.DIA : a + 0.5 * BE.DIA, dia != null ? 0.12 : 1.5);
+      } });
+    } else {
+      const c = mesCercano(m, BE.E.t);
+      if (c) {
+        const t = dia != null ? c.M.a + (dia - 0.5) * BE.DIA : c.M.a + 0.5 * BE.DIA;
+        const nombre = nombreMesEn(m, c.anio);
+        out.push({ grupo: 'Meses hebreos', alFinal, titulo: dia != null ? `Ir al ${dia} de ${nombre} de ${fmtAnio(Math.floor(t))}` : `Ir a ${nombre} de ${fmtAnio(Math.floor(t))}`,
+          meta: `el ${m.id === 'veadar' ? 'Veadar' : 'mes'} más cercano a la fecha del cursor${equivale ? ` · ${equivale}` : ''}`, puntos: puntos + 20, accion: () => irAMes(t, dia != null ? 0.12 : 1.5) });
+      }
+    }
+    const nota = m.id === 'veadar' ? 'el mes que se añadía algunos años; qué es y cuándo' : `qué mes era${m.fiestas?.length ? ', sus fiestas' : ''} y sus nombres`;
+    out.push({ grupo: 'Meses hebreos', alFinal, titulo: `${m.nombre} en «El calendario de la Biblia»`, meta: `${nota} · abre la página del calendario`, puntos, accion: () => enlaceMes(m) });
+  }
+  return out;
+}
+
 function preguntas(q) {
   const out = [];
   const nq = norm(q).trim().replace(/[¿?]/g, '').replace(/\s+/g, ' ');
+  out.push(...preguntasMes(nq));
+  if (out.length && out.some((r) => r.puntos >= 900)) return out;
   // Un año suelto
   const y = leerAnio(q);
   if (y != null) {
@@ -164,7 +261,11 @@ function fechaSel(sel) {
 function buscar(q) {
   const out = [...preguntas(q), ...resultadosTipos(q)];
   for (const r of out) if (r.sel && r.fechaTexto == null) r.fechaTexto = fechaSel(r.sel);
-  out.sort((a, b) => ordenGrupo(a.grupo) - ordenGrupo(b.grupo) || b.puntos - a.puntos || a.titulo.localeCompare(b.titulo, 'es'));
+  const orden = (r) => (r.alFinal ? ORDEN_GRUPOS.length + 1 : ordenGrupo(r.grupo));
+  // Lo que se llama exactamente como lo escrito va primero: «Jerusalén» es la ciudad, no «Ananías de Jerusalén»,
+  // aunque las personas vayan antes que los lugares; con el grafo abierto, Intro lo pone en el centro (be-u66.1).
+  const nq = norm(q).trim(), exacta = (r) => (r.sel && norm(r.titulo) === nq ? 0 : 1);
+  out.sort((a, b) => exacta(a) - exacta(b) || orden(a) - orden(b) || b.puntos - a.puntos || a.titulo.localeCompare(b.titulo, 'es'));
   const cuenta = {};   // máximo 6 por grupo
   return out.filter((r) => (cuenta[r.grupo] = (cuenta[r.grupo] || 0) + 1) <= 6);
 }
@@ -207,7 +308,7 @@ function pintarResultados() {
       const cab = r.grupo !== grupo ? `<div class="be-results__group be-caps" role="presentation">${esc(r.grupo)}</div>` : '';
       grupo = r.grupo;
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
-      const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' ? '◷' : '?') : r.titulo[0];
+      const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
         <span class="res-texto"><span class="be-result__title">${marcar(r.titulo)}${r.etiqueta ? ` <span class="res-etiqueta">${esc(r.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${r.sel && TIPO_TEXTO[r.sel.tipo] && !r.accion ? `${TIPO_TEXTO[r.sel.tipo]}${r.meta ? ' · ' : ''}` : ''}${esc(r.meta || '')}</span></span>
@@ -248,7 +349,12 @@ function elegir(i) {
   $('#q').value = r.titulo;
   cerrarResultados();
   if (r.accion) r.accion();
-  else seleccionar(r.sel);
+  else {
+    // Con «¿Cómo se relaciona?» abierto, lo buscado entra en la pregunta; con el grafo abierto, pasa al centro al
+    // seleccionarse (grafo.js sigue la selección).
+    BE.conexion?.rellenar?.(BE.selTexto(r.sel));
+    seleccionar(r.sel);
+  }
   $('#q').blur();
 }
 function iniciarBusqueda() {
@@ -321,8 +427,10 @@ function accionesFicha() {
   const primera = cuerpo.querySelector('.be-card');
   if (!primera) return;
   const s = BE.selTexto(E.sel);
-  const relacionar = ['lugar'].includes(E.sel.tipo) ? `<button type="button" class="be-btn be-btn--sm be-btn--ghost" data-relacionar="${esc(s)}">Relacionar con…</button>` : '';
-  primera.insertAdjacentHTML('afterend', `<div class="acciones-estudio">${relacionar}<button type="button" class="be-btn be-btn--sm be-btn--ghost" data-citar="${esc(s)}" title="Copia el resumen, las referencias, la fuente y el enlace a esta vista">Citar</button></div>`);
+  const relacionar = ['lugar', 'carta'].includes(E.sel.tipo) ? `<button type="button" class="be-btn be-btn--sm be-btn--ghost" data-relacionar="${esc(s)}">Relacionar con…</button>` : '';
+  // La persona ya lleva «Ver en el grafo» en su ficha; lo demás también puede ser el centro del grafo.
+  const grafo = E.sel.tipo !== 'persona' && BE.grafo ? `<button type="button" class="be-btn be-btn--sm be-btn--ghost" data-grafo="${esc(s)}">Ver en el grafo</button>` : '';
+  primera.insertAdjacentHTML('afterend', `<div class="acciones-estudio">${grafo}${relacionar}<button type="button" class="be-btn be-btn--sm be-btn--ghost" data-citar="${esc(s)}" title="Copia el resumen, las referencias, la fuente y el enlace a esta vista">Citar</button></div>`);
 }
 BE.pintores.push(accionesFicha);
 document.addEventListener('click', async (e) => {

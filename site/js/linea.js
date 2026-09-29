@@ -28,6 +28,7 @@ const L = {
   modoRegla: false,
   grupo: null,            // sucesos de la última píldora pulsada: { claves, trs, sel }. Van resaltados, nunca atenuados
   meses: null,            // «ambos», «nuestros» o «hebreos»; null: lo de siempre, ambos
+  vel: null,              // velocidad elegida a mano: índice de VELOCIDADES; null: según la escala
 };
 
 const ICONOS = {
@@ -40,6 +41,7 @@ const ICONOS = {
   calendario: '<svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 10h16M9 3v4M15 3v4" stroke="currentColor" stroke-width="1.7"/></svg>',
   secular: '<svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-dasharray="3 2.4"/></svg>',
   alfiler: '<svg class="be-i be-i--sm" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 3H7l3-3Zm3 9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>',
+  info: '<svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.2" fill="currentColor"/></svg>',
   menu: '<svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.8" fill="currentColor"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><circle cx="19" cy="12" r="1.8" fill="currentColor"/></svg>',
 };
 function colorPotencia(p) {
@@ -52,6 +54,49 @@ function colorPotencia(p) {
   if (/roma/.test(n)) return 'var(--emp-roma)';
   if (/israel|juda/.test(n)) return 'var(--emp-israel)';
   return 'var(--node-periodo)';
+}
+
+// ---------------------------------------------------------------------------
+// Contraste (be-64b.1): el color de cada barra se resuelve, y el texto de encima va en blanco o en tinta oscura, lo que
+// lea mejor. Una barra que casi no se distingue del fondo de la línea lleva borde. Se recalcula al cambiar el tema.
+// ---------------------------------------------------------------------------
+const colores = new Map();
+let raizColores = null;
+function rgbDe(color) {
+  const raiz = document.documentElement.className;
+  if (raiz !== raizColores) { raizColores = raiz; colores.clear(); }
+  if (colores.has(color)) return colores.get(color);
+  const v = /^var\((--[\w-]+)\)$/.exec(color);
+  const c = v ? getComputedStyle(document.documentElement).getPropertyValue(v[1]).trim() : color;
+  let rgb = null;
+  const h = /^#([\da-f]{3}|[\da-f]{6})$/i.exec(c);
+  if (h) { const s = h[1].length === 3 ? [...h[1]].map((x) => x + x).join('') : h[1]; const n = parseInt(s, 16); rgb = [(n >> 16) & 255, (n >> 8) & 255, n & 255]; }
+  else { const m = /rgba?\(([^)]+)\)/.exec(c); if (m) rgb = m[1].split(/[\s,/]+/).slice(0, 3).map(Number); }
+  colores.set(color, rgb);
+  return rgb;
+}
+const luz = (rgb) => { const [r, g, b] = rgb.map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+const contraste = (a, b) => { const x = luz(a), y = luz(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+const BLANCO = [255, 255, 255], TINTA = [24, 34, 28];
+/** Clases del texto y de la forma de una barra de ese color: «sobre-claro» si la tinta oscura lee mejor que el blanco;
+    «con-borde» si la barra y el fondo de la línea no llegan a 3:1. */
+function tonos(color) {
+  const c = rgbDe(color);
+  if (!c) return { texto: '', forma: '' };
+  const fondo = rgbDe('var(--surface)') || BLANCO;
+  return { texto: contraste(c, BLANCO) >= contraste(c, TINTA) ? '' : ' sobre-claro', forma: contraste(c, fondo) < 3 ? ' con-borde' : '' };
+}
+/** El color mezclado con negro en la fracción f: el segundo tono de las eras, para que dos vecinas no se fundan. */
+function oscurecer(color, f) {
+  const c = rgbDe(color);
+  return c ? `rgb(${c.map((v) => Math.round(v * (1 - f))).join(', ')})` : color;
+}
+/** Color de la barra de un periodo según su carril. */
+function colorPeriodo(c, p) {
+  if (c.clase === 'potencia') return colorPotencia(p);
+  if (c.clase === 'era') return c.ps.indexOf(p) % 2 ? oscurecer('var(--node-periodo)', 0.22) : 'var(--node-periodo)';
+  const k = c.id.replace(/-.*/, '');
+  return { reyes: 'var(--emp-persia)', sacerdotes: 'var(--tier1)', gobernadores: 'var(--node-periodo)' }[k] || 'var(--emp-roma)';
 }
 
 let anchoLinea = 800, altoPista = 200;
@@ -264,6 +309,7 @@ function defs() {
     <mask id="m-cambio-i" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-cambio-i)"/></mask>
     <pattern id="p-rayas" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="8" fill="rgba(122,92,142,.13)"/></pattern>
     <pattern id="p-rayas-claras" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(255,255,255,.45)"/></pattern>
+    <pattern id="p-rayas-grises" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="2.5" height="7" fill="var(--ink-3)" fill-opacity=".35"/></pattern>
     <pattern id="p-hebreo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="6" fill="rgba(74,65,54,.16)"/></pattern>
     <pattern id="p-calculo" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(155,61,90,.18)"/></pattern>
   </defs>`;
@@ -309,17 +355,38 @@ function pintarLineaFija() {
   // Atenuar solo tiene sentido si en la vista hay algo que resaltar: si nada de lo que se ve tiene que ver con la
   // selección (Edén en 1473 a.e.c.), todo va a opacidad plena en vez de quedar gris.
   svg.classList.toggle('sin-foco', !![...svg.querySelectorAll('.item.atenuado')].length && ![...svg.querySelectorAll('.item.resaltado')].some((g) => { const b = g.getBBox(); return b.x + b.width > 0 && b.x < anchoLinea; }));
+  marcarElegido(svg);
   if (conFoco) ((foco && svg.querySelector(`g.item[data-sel="${CSS.escape(foco)}"]`)) || pista).focus({ preventScroll: true });
   sucio.cursor = true;
-  $('#velocidad').textContent = BE.textoVelocidad();
+  pintarVelocidad();
+  let zon = '';
   document.querySelectorAll('[data-zoom]').forEach((b) => {
     const z = +b.dataset.zoom;
     const on = Math.abs(Math.log(s / z)) < Math.log(2.2);
     b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on));
+    if (on) zon = b.dataset.zoom;
   });
+  const zsel = $('#zoom-select');
+  if (zsel && zsel.value !== zon) zsel.value = zon;
   pintarMinimapa();
   pintarSelectorMeses();
+  ajustarBarra();
   pintarLineaFija.claveV = V?.id;
+}
+
+/** Lo seleccionado se distingue de todo lo demás (be-64b.1): un anillo de tinta alrededor de su forma, con un hueco,
+    que no depende del color. */
+function marcarElegido(svg) {
+  if (!E.sel) return;
+  for (const g of svg.querySelectorAll(`g.item[data-sel="${CSS.escape(BE.selTexto(E.sel))}"]`)) {
+    const b = g.getBBox();
+    if (!b.width && !b.height) continue;
+    g.classList.add('elegido');
+    const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    r.setAttribute('class', 'anillo-elegido');
+    r.setAttribute('x', b.x - 4); r.setAttribute('y', b.y - 4); r.setAttribute('width', b.width + 8); r.setAttribute('height', b.height + 8); r.setAttribute('rx', 8);
+    g.insertBefore(r, g.querySelector('title')?.nextSibling || g.firstChild);   // el título sigue siendo el primer hijo
+  }
 }
 
 /** Pablo: un tramo por viaje, con sus paradas como marcas (v0). */
@@ -333,17 +400,23 @@ function pintarPablo(partes, yP, V, pxAnio) {
     const algunaRes = E.resaltado && ps.some((x) => E.resaltado.claves.has(`parada:${x.key}`));
     const cls = E.resaltado ? (E.resaltado.claves.has(`viaje:${v.id}`) || algunaRes ? ' resaltado' : ' atenuado') : '';
     const w = x1 - x0;
+    const color = BE.colorViaje(v.id), tn = tonos(color);
     const etiqueta = recortar(`${v.nombre} · ${fechaCorta(v.fecha)}`, w - 14);
     // El tramo del viaje es el fondo de sus paradas: un clic en una parada no pregunta si se quería el viaje.
     partes.push(`<g class="item viaje${v === V ? ' activo' : ''}${cls}" data-sel="viaje:${esc(v.id)}" data-fondo="1" tabindex="0" role="button" aria-label="${esc(v.nombre)}, ${esc(fechaCorta(v.fecha))}">
-      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje" style="fill:${BE.colorViaje(v.id)}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/></g>`);
-    if (etiqueta) rotulo(`viaje:${v.id}`, cls, `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra">${esc(etiqueta)}</text>`);
+      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje${tn.forma}" style="fill:${color}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/></g>`);
+    if (etiqueta) rotulo(`viaje:${v.id}`, cls, `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(etiqueta)}</text>`);
     if (pxAnio > 45) {
       for (const st of ps) {
         const x = xDe(st.a);
-        const c2 = dim(`parada:${st.key}`);
+        // Una parada solo pasa a gris si su viaje también: sobre la barra de color, el gris no se leería.
+        const c2 = cls === ' atenuado' ? dim(`parada:${st.key}`) : dim(`parada:${st.key}`).replace(' atenuado', '');
+        // En los bordes difuminados de un viaje con fecha aproximada la barra casi no pinta: ahí el contorno blanco se
+        // perdería sobre el fondo, así que va en el color de la tinta (be-64b.1).
+        const f = w > 0 ? (x - x0) / w : 0.5;
+        const enBorde = v.fecha?.aprox && Math.min(f, 1 - f) < 0.06 * 0.7 ? ' en-borde' : '';
         partes.push(`<g class="item parada${c2}" data-sel="parada:${esc(st.key)}"><title>${esc(st.lugar.nombre)} · ${esc(st.p.referencia)}</title>
-          <rect x="${x - 1}" y="${yP + 7}" width="${Math.max(2, xDe(st.b) - x + 2)}" height="16" rx="1" class="marca-parada${st.narrativa ? ' narrativa' : ''}"/></g>`);
+          <rect x="${x - 1}" y="${yP + 7}" width="${Math.max(2, xDe(st.b) - x + 2)}" height="16" rx="1" class="marca-parada${st.narrativa ? ' narrativa' : ''}${enBorde}"/></g>`);
       }
     }
   }
@@ -516,23 +589,23 @@ function pintarPeriodos(partes, c) {
     const sig = items.slice(i + 1).find((o) => o.fila === fila && !pareja(o));
     const fin = Math.min(sig && sig.x0 < x1 ? sig.x0 : x1, anchoLinea);   // el siguiente de la fila se dibuja encima: el texto acaba antes
     const medio = (x0 + x1) / 2;
+    const color = colorPeriodo(c, p), tn = tonos(color);
     let etiqueta = '';
     if (cruce && it.abierto === 'i') {
       const t2 = recortar(texto, fin - 8 - Math.max(medio, 0) - 6);
-      if (t2) etiqueta = `<text x="${fin - 8}" y="${y + 19}" text-anchor="end" class="texto-barra">${esc(t2)}</text>`;
+      if (t2) etiqueta = `<text x="${fin - 8}" y="${y + 19}" text-anchor="end" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(t2)}</text>`;
     } else {
       const xi = Math.max(x0, 0) + 8;
       const ancho = (cruce ? Math.min(medio, fin) : fin) - xi - 6;
       const conCambio = cruce ? `${texto} · cambio sin fechar →` : '';
       const dentro = conCambio && recortar(conCambio, ancho) === conCambio ? conCambio : recortar(texto, ancho);
-      if (dentro && (dentro === texto || dentro.length > 6)) etiqueta = `<text x="${xi}" y="${y + 19}" class="texto-barra">${esc(dentro)}</text>`;
+      if (dentro && (dentro === texto || dentro.length > 6)) etiqueta = `<text x="${xi}" y="${y + 19}" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(dentro)}</text>`;
       else if (!cruce) {
         const libre = (sig ? sig.x0 : anchoLinea + 400) - x1 - 10;
         const fuera = recortar(p.nombre, libre);
         if (fuera) etiqueta = `<text x="${x1 + 5}" y="${y + 19}" class="texto-fuera">${esc(fuera)}</text>`;
       }
     }
-    const color = c.clase === 'potencia' ? colorPotencia(p) : null;
     const trP = BE.tramoPeriodo(p);
     const rango = c.clase === 'era' || c.clase === 'potencia' ? ` data-rango="${trP[0]}~${trP[1]}"` : '';
     const narr = p.fecha?.tipo === 'narrativa';
@@ -540,7 +613,7 @@ function pintarPeriodos(partes, c) {
     const mk = it.abierto ? ` mask="url(#m-cambio-${it.abierto})"` : mascara(difuso(p.fecha));
     const d = dim(`periodo:${p.id}`);
     partes.push(`<g class="item periodo periodo--${c.clase || c.id.replace(/-.*/, '')}${d}${narr ? ' narrativa' : ''}" data-sel="periodo:${esc(p.id)}"${rango} tabindex="0" role="button" aria-label="${esc(p.nombre)}, ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}"><title>${esc(p.nombre)} · ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}</title>
-      <rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" class="barra-periodo"${color ? ` style="fill:${color}"` : ''}${mk}/>${narr ? `<rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
+      <rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" class="barra-periodo${tn.forma}" style="fill:${color}"${mk}/>${narr ? `<rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
     rotulo(`periodo:${p.id}`, d, etiqueta, rango);
   });
 }
@@ -570,13 +643,14 @@ function pintarPersona(partes, c) {
   const cortas = items.filter((it) => !it.s.larga);
   for (const it of items) {
     const s = it.s, w = it.x1 - it.x0;
+    const tn = tonos(color);
     const cls = `item estancia${s.larga ? ' larga' : ''}${s.narrativa ? ' estimada' : ''}${dim(s.sel)}`;
     let lx = Math.max(it.x0, 0) + 5, fin = Math.min(it.x1, anchoLinea) - 5;
     if (s.larga) for (const o of cortas) if (o.x0 <= lx + 4 && o.x1 >= lx - 2 && o.x1 < fin) lx = o.x1 + 4;
     const dentro = fin - lx > 22 ? recortar(s.lugar.nombre, fin - lx) : '';
     partes.push(`<g class="${cls}" data-sel="${esc(s.sel)}"${s.larga ? ' data-fondo="1"' : ''} tabindex="0" role="button" aria-label="${esc(s.titulo)}, ${esc(s.lugar.nombre)}"><title>${esc(s.titulo)} · ${esc(s.lugar.nombre)}${s.referencia ? ` · ${esc(s.referencia)}` : ''}${s.narrativa ? ' · fecha estimada' : ''}</title>
-      <rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" class="barra-estancia" style="fill:${color}"/>${s.narrativa ? `<rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
-    if (dentro && (s.larga || w > 40)) rotulo(s.sel, dim(s.sel), `<text x="${lx}" y="${y + 19}" class="texto-barra texto-estancia">${esc(dentro)}</text>`);
+      <rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" class="barra-estancia${s.larga ? '' : tn.forma}" style="${s.larga ? `stroke:${color}` : `fill:${color}`}"/>${s.narrativa ? `<rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
+    if (dentro && (s.larga || w > 40)) rotulo(s.sel, dim(s.sel), `<text x="${lx}" y="${y + 19}" class="${s.larga ? 'texto-estancia-larga' : `texto-barra${tn.texto}`}"${s.larga ? '' : ` style="stroke:${color}"`}>${esc(dentro)}</text>`);
   }
 }
 /** Donde dos carriles de persona vecinos coinciden en el mismo lugar a la vez, una banda los une (T-06). */
@@ -1142,7 +1216,7 @@ function pintarCursor() {
     banda = `<rect x="${b0}" y="${EJE}" width="${Math.max(0, b1 - b0)}" height="${alto - EJE}" fill="url(#p-rayas)" class="banda-incierta"><title>Tiempo narrativo: sabemos el orden, no la fecha exacta</title></rect>`;
   }
   g.innerHTML = `${banda}<line x1="${x}" x2="${x}" y1="0" y2="${alto}" class="cursor-linea"/>
-    <rect x="${bx}" y="3" width="${anchoB}" height="20" rx="5" class="cursor-bandera"/><text x="${bx + anchoB / 2}" y="17" text-anchor="middle" class="cursor-texto">${esc(bandera)}</text>`;
+    <rect x="${bx}" y="3" width="${anchoB}" height="20" rx="5" class="cursor-bandera"/><text x="${bx + anchoB / 2}" y="17" text-anchor="middle" class="cursor-texto${tonos('var(--gold)').texto}">${esc(bandera)}</text>`;
   const pista = $('#pista');
   pista.setAttribute('aria-valuenow', E.t.toFixed(2));
   pista.setAttribute('aria-valuetext', bandera);
@@ -1207,6 +1281,8 @@ function editarFecha() {
   input.setAttribute('aria-label', 'Escribe una fecha: 607 a.e.c., 51, c. 50 o 14 nisán 33');
   caja.appendChild(input);
   caja.classList.add('editando');
+  // En una caja estrecha (el móvil), un ejemplo más corto que se lea entero.
+  if (input.clientWidth < 210) input.placeholder = '607 a.e.c. · 14 nisán 33';
   input.focus();
   const cerrar = () => { input.remove(); caja.classList.remove('editando'); };
   input.addEventListener('keydown', (e) => {
@@ -1296,7 +1372,7 @@ function cerrarMenu() {
 function abrirMenu(seccion = 'todo') {
   const yaAbierto = !!menuEl && !menuEl.hidden;
   const foco = yaAbierto && menuEl.contains(document.activeElement) ? document.activeElement : null;
-  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador', 'data-meses'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
+  const claveFoco = foco && ['data-fijar', 'data-linea', 'data-ir-marcador', 'data-meses', 'data-vel'].map((a) => foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '').find(Boolean);
   if (!menuEl) {
     menuEl = document.createElement('div');
     menuEl.className = 'linea-menu be-card';
@@ -1317,11 +1393,15 @@ function abrirMenu(seccion = 'todo') {
     ${seccion === 'todo' ? `<div class="be-card__eyebrow">Línea de tiempo</div>
     ${boton('grande', `${L.grande ? 'Reducir' : 'Ampliar'} la línea <kbd class="be-kbd">T</kbd>`)}
     ${BE.sincronia ? boton('sincronia', sinc ? 'Cerrar la sincronía' : '¿Quién había en un lugar? (sincronía)') : ''}
+    <div class="menu-sub">Velocidad al reproducir</div>
+    <div class="velocidad menu-velocidad${L.vel != null ? ' manual' : ''}" role="group" aria-label="Velocidad de reproducción">${botonesVelocidad()}</div>
+    ${casilla('vel-auto', L.vel == null, 'Según la escala de la línea')}
     ${casilla('pausa', L.pausa, 'Pausar un momento en cada suceso al reproducir')}
     ${casilla('secular', L.secular, 'Fechas seculares como nota')}
     ${boton('regla', L.regla ? 'Quitar la regla' : 'Medir entre dos fechas (regla) <kbd class="be-kbd">Alt</kbd>+arrastrar')}
     ${boton('bucle', L.bucle ? 'Quitar el bucle' : `Repetir en bucle ${L.regla ? 'lo medido' : (E.sel ? 'lo seleccionado' : 'el tramo a la vista')}`)}
     ${boton('marcar', 'Guardar esta fecha como marcador')}
+    ${boton('fechas', 'Sobre las fechas: de dónde salen y qué quiere decir cada marca')}
     ${ms.length ? `<div class="menu-sub">Marcadores</div>${ms.map((m, i) => `<div class="menu-marcador"><button type="button" class="enlace-titulo" data-ir-marcador="${i}">${esc(m.nombre)}</button><button type="button" class="menu-x" data-borrar-marcador="${i}" aria-label="Borrar el marcador ${esc(m.nombre)}">×</button></div>`).join('')}` : ''}` : ''}
     ${BE.calendario().meses.length ? `<div class="be-card__eyebrow">Meses</div>
     <div class="menu-meses"><div class="be-seg meses-seg" role="radiogroup" aria-label="Meses">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt${modoMeses() === k ? ' be-seg__opt--on' : ''}" role="radio" aria-checked="${modoMeses() === k}" data-meses="${k}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}</div>` : ''}
@@ -1348,6 +1428,8 @@ function clicMenu(e) {
   if (f) { fijar(f.dataset.fijar); return; }
   const mm = e.target.closest('[data-meses]');
   if (mm) { ponerMeses(mm.dataset.meses); abrirMenu(menuAbierto()); return; }
+  const v = e.target.closest('[data-vel]');
+  if (v) { cambiarVelocidad(+v.dataset.vel); abrirMenu(menuAbierto()); return; }
   const ir = e.target.closest('[data-ir-marcador]');
   if (ir) { cerrarMenu(); irAMarcador(+ir.dataset.irMarcador); return; }
   const borrar = e.target.closest('[data-borrar-marcador]');
@@ -1356,13 +1438,72 @@ function clicMenu(e) {
   if (!b || b.tagName === 'SELECT') return;
   const que = b.dataset.linea;
   if (que === 'pausa') { L.pausa = b.checked; BE.guardarHash(); return; }
-  if (que === 'secular') { L.secular = b.checked; cacheCat = null; sucio.linea = sucio.panel = true; BE.pintarPanel(true); programar(); BE.guardarHash(); return; }
+  if (que === 'vel-auto') { L.vel = b.checked ? null : VELOCIDADES.indexOf(velocidadAuto()); pintarVelocidad(); BE.guardarHash(); abrirMenu(menuAbierto()); return; }
+  if (que === 'secular') { ponerSecular(b.checked); return; }
   cerrarMenu();
   if (que === 'grande') ponerGrande(!L.grande);
   else if (que === 'sincronia') BE.sincronia.alternar();
   else if (que === 'regla') { if (L.regla) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); } else { L.modoRegla = true; $('#pista').classList.add('modo-regla'); BE.avisar('Arrastra sobre la línea entre las dos fechas.'); } }
   else if (que === 'bucle') ponerBucle();
   else if (que === 'marcar') nuevoMarcador();
+  else if (que === 'fechas') abrirAyudaFechas($('#linea-menu-boton'));
+}
+function ponerSecular(on) {
+  L.secular = on; cacheCat = null;
+  sucio.linea = sucio.panel = true; BE.pintarPanel(true); programar(); BE.guardarHash();
+}
+
+// ---------------------------------------------------------------------------
+// «Sobre las fechas» (be-64b.6): de dónde salen las fechas y qué quiere decir cada marca, con una muestra de cada una.
+// ---------------------------------------------------------------------------
+let ayudaFechas = null, origenAyuda = null;
+const muestra = (cuerpo) => `<svg class="fa-muestra" viewBox="0 0 34 14" width="34" height="14" aria-hidden="true">${cuerpo}</svg>`;
+function abrirAyudaFechas(origen) {
+  if (!ayudaFechas) {
+    ayudaFechas = document.createElement('div');
+    ayudaFechas.id = 'fechas-ayuda';
+    ayudaFechas.className = 'fechas-ayuda be-card';
+    ayudaFechas.setAttribute('role', 'dialog');
+    ayudaFechas.setAttribute('aria-labelledby', 'fechas-ayuda-titulo');
+    document.body.appendChild(ayudaFechas);
+    ayudaFechas.addEventListener('change', (e) => { if (e.target.matches('[data-fa="secular"]')) ponerSecular(e.target.checked); });
+    ayudaFechas.addEventListener('click', (e) => { if (e.target.closest('[data-fa="cerrar"]')) cerrarAyudaFechas(); });
+    ayudaFechas.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); cerrarAyudaFechas(); return; }
+      if (e.key === 'Tab') {   // el foco se queda dentro mientras está abierta
+        const fs = [...ayudaFechas.querySelectorAll('a, button, input')], i = fs.indexOf(document.activeElement);
+        e.preventDefault(); fs[(i + (e.shiftKey ? -1 : 1) + fs.length) % fs.length].focus();
+      }
+      if (e.key !== 'Tab') e.stopPropagation();   // las flechas y el espacio no mueven el cursor detrás
+    });
+  }
+  ayudaFechas.innerHTML = `<div class="fa-cabecera"><h2 class="be-card__eyebrow" id="fechas-ayuda-titulo">Sobre las fechas</h2><button type="button" class="menu-x" data-fa="cerrar" aria-label="Cerrar">×</button></div>
+    <p class="fa-texto">Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de las publicaciones de jw.org.</p>
+    <ul class="fa-lista">
+      <li><span class="fa-c">c.</span><span>Fecha aproximada: la fuente da el año más o menos, la sacamos del orden del relato, o es un mes o un día de un calendario que solo podemos aproximar.</span></li>
+      <li>${muestra('<defs><pattern id="fa-rayas" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="2.4" height="6" fill="rgba(255,255,255,.55)"/></pattern><linearGradient id="fa-dif"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff"/></linearGradient><mask id="fa-m"><rect width="34" height="14" fill="url(#fa-dif)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-m)"/><rect x="1" y="2" width="32" height="10" rx="3" fill="url(#fa-rayas)"/>')}<span>Rayado o con el borde difuminado: sabemos el orden, no la fecha exacta, o no sabemos cuándo empezó o acabó.</span></li>
+      <li>${muestra('<rect x="1.5" y="2.5" width="31" height="9" rx="3" fill="var(--secular-soft)" stroke="var(--secular)" stroke-width="1.2" stroke-dasharray="4 3"/>')}<span>Borde de trazos gris azulado: fecha de la historia secular cuando difiere. Va solo como nota y no mueve el cursor.</span></li>
+      <li>${muestra('<rect x="1.5" y="2.5" width="31" height="9" rx="3" fill="var(--unverified-soft)" stroke="var(--unverified)" stroke-width="1.2" stroke-dasharray="4 3"/>')}<span>Rosa y de trazos: un cálculo nuestro, sin verificar. La ficha explica la cuenta.</span></li>
+    </ul>
+    <label class="menu-fila fa-casilla"><input type="checkbox" data-fa="secular"${L.secular ? ' checked' : ''}> Enseñar las fechas seculares como nota</label>
+    <a class="fa-mas" href="acerca.html#datos">Cómo tratamos las fuentes y las fechas</a>`;
+  ayudaFechas.hidden = false;
+  const r = (origen && document.contains(origen) && origen.offsetParent ? origen : $('#linea-menu-boton')).getBoundingClientRect();
+  const w = Math.min(340, window.innerWidth - 16);
+  ayudaFechas.style.width = `${w}px`;
+  ayudaFechas.style.left = `${clamp(r.right - w, 8, window.innerWidth - w - 8)}px`;
+  ayudaFechas.style.bottom = `${window.innerHeight - r.top + 8}px`;
+  ayudaFechas.style.maxHeight = `${Math.max(160, r.top - 16)}px`;
+  origenAyuda = origen;
+  $('#fechas-boton')?.setAttribute('aria-expanded', 'true');
+  ayudaFechas.querySelector('input').focus();
+}
+function cerrarAyudaFechas() {
+  if (!ayudaFechas || ayudaFechas.hidden) return;
+  const dentro = ayudaFechas.contains(document.activeElement);
+  ayudaFechas.hidden = true;
+  $('#fechas-boton')?.setAttribute('aria-expanded', 'false');
+  if (dentro) ((origenAyuda && origenAyuda.offsetParent && origenAyuda) || $('#linea-menu-boton'))?.focus();
 }
 
 // ---------------------------------------------------------------------------
@@ -1370,6 +1511,22 @@ function clicMenu(e) {
 // ---------------------------------------------------------------------------
 /** Elementos de la línea bajo un punto de la pantalla, sin repetir y sin los rótulos. Si alguno no es de fondo, los de
     fondo no cuentan: el tramo de un viaje bajo sus paradas, la actividad y las estancias largas de una persona. */
+/** La forma más cercana al dedo cuya diana de 44 × 44 px alrededor de su centro (o su caja, si es mayor) contiene el
+    punto. Las de fondo (eras e imperios bajo otras) solo cuentan si no hay otra. */
+function itemCercano(x, y) {
+  let mejor = null, dMejor = Infinity;
+  const pr = $('#pista').getBoundingClientRect();
+  for (const g of document.querySelectorAll('#linea-svg g.item[data-sel]')) {
+    const r = g.getBoundingClientRect();
+    if (!r.width || r.right < pr.left || r.left > pr.right || r.bottom < pr.top || r.top > pr.bottom) continue;
+    const mx = Math.max(0, (44 - r.width) / 2), my = Math.max(0, (44 - r.height) / 2);
+    const dx = Math.max(0, r.left - x, x - r.right), dy = Math.max(0, r.top - y, y - r.bottom);
+    if (dx > mx || dy > my) continue;
+    const d = Math.hypot(dx, dy) + (g.dataset.fondo ? 1000 : 0);
+    if (d < dMejor) { dMejor = d; mejor = g; }
+  }
+  return mejor;
+}
 function itemsEn(x, y) {
   const vistos = new Map();
   for (const el of document.elementsFromPoint(x, y)) {
@@ -1449,7 +1606,34 @@ function abrirGrupo(g) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
-let tAnterior = null, reanudar = 0;
+// Velocidad (be-64b.2): cuánto tiempo pasa en cada segundo de reproducción, dicho con palabras. Sin elegir, sigue a la
+// escala (la línea entera en unos 160 s, redondeado al escalón más cercano); con − y +, queda fija aunque cambie la escala.
+const DIA1 = 1 / 365.2425, HORA1 = DIA1 / 24;
+const VELOCIDADES = [
+  [HORA1, '1 hora'], [3 * HORA1, '3 horas'], [6 * HORA1, '6 horas'], [12 * HORA1, '12 horas'],
+  [DIA1, '1 día'], [2 * DIA1, '2 días'], [3 * DIA1, '3 días'], [7 * DIA1, '1 semana'], [14 * DIA1, '2 semanas'],
+  [1 / 12, '1 mes'], [2 / 12, '2 meses'], [3 / 12, '3 meses'], [6 / 12, '6 meses'],
+  [1, '1 año'], [2, '2 años'], [5, '5 años'], [10, '10 años'], [25, '25 años'], [50, '50 años'], [100, '100 años'], [250, '250 años'],
+];
+const velocidadAuto = () => { const v = span() / 160; return VELOCIDADES.reduce((m, x) => (Math.abs(Math.log(x[0] / v)) < Math.abs(Math.log(m[0] / v)) ? x : m)); };
+const velocidadActual = () => (L.vel != null ? VELOCIDADES[L.vel] : velocidadAuto());
+BE.velocidad = () => velocidadActual()[0];
+BE.textoVelocidad = () => `${velocidadActual()[1]} por segundo`;
+const claveVel = (x) => norm(x[1].replace('ñ', 'ni')).replace(' ', '-');   // «vel=3-meses», «vel=1-anio», «vel=2-dias»: sin tildes en la dirección
+function cambiarVelocidad(d) {
+  L.vel = clamp(VELOCIDADES.indexOf(velocidadActual()) + d, 0, VELOCIDADES.length - 1);
+  pintarVelocidad(); BE.guardarHash();
+}
+function pintarVelocidad() {
+  const i = VELOCIDADES.indexOf(velocidadActual()), texto = BE.textoVelocidad();
+  const ayuda = `Velocidad al reproducir: ${texto}. ${L.vel == null ? 'Sigue a la escala de la línea.' : 'Elegida a mano: no cambia con la escala.'}`;
+  for (const el of document.querySelectorAll('[data-vel-texto]')) { if (el.textContent !== texto) el.textContent = texto; el.title = ayuda; }
+  for (const b of document.querySelectorAll('[data-vel]')) b.disabled = +b.dataset.vel < 0 ? i <= 0 : i >= VELOCIDADES.length - 1;
+  document.querySelectorAll('.velocidad').forEach((g) => g.classList.toggle('manual', L.vel != null));
+}
+const botonesVelocidad = () => `<button type="button" class="vel-boton" data-vel="-1" aria-label="Más despacio" title="Más despacio">−</button><span class="be-speed" data-vel-texto aria-live="polite">${esc(BE.textoVelocidad())}</span><button type="button" class="vel-boton" data-vel="1" aria-label="Más deprisa" title="Más deprisa">+</button>`;
+
+let tAnterior = null, reanudar = 0, paradoEnFin = null;
 function momentosFoco() {
   const out = [];
   const foco = E.resaltado?.claves;
@@ -1468,6 +1652,21 @@ function vigilarReproduccion() {
   if (!E.play) { tAnterior = null; return; }
   if (L.bucle && (E.t >= L.bucle[1] || E.t < L.bucle[0] - 1e-6)) {
     tAnterior = null; setT(L.bucle[0]); BE.asegurarVisible(L.bucle[0], false); return;
+  }
+  // Con un periodo elegido, la reproducción se para donde acaba (be-64b.7): no sigue siglos después sin que se vea nada.
+  // Se para una vez: si se vuelve a pulsar reproducir, sigue.
+  const p = E.sel?.tipo === 'periodo' && BE.D.periodos.find((x) => x.id === E.sel.id), tr = p && BE.tramoPeriodo(p);
+  // El primer fotograma de base.js puede retroceder un pelo (su dt sale negativo): la vuelta atrás que rearma la parada
+  // tiene que ser mayor que eso.
+  if (paradoEnFin && (!tr || paradoEnFin !== p.id || E.t < tr[1] - Math.max(0.01, BE.velocidad() * 0.25))) paradoEnFin = null;
+  if (tAnterior != null && tr && !paradoEnFin && tAnterior < tr[1] && E.t >= tr[1]) {
+    reproducir(false);
+    clearTimeout(reanudar);
+    setT(tr[1] - 1e-4);
+    paradoEnFin = p.id;
+    BE.avisar(`${tr.abierto === 'd' ? `Aquí acaba lo que dibujamos de ${p.nombre}: no sabemos cuándo dejó de serlo.` : `Fin de ${p.nombre} (${p.fecha.texto || fechaCorta(p.fecha)}).`} Pulsa reproducir para seguir.`, 5000);
+    tAnterior = null;
+    return;
   }
   if (tAnterior != null && L.pausa && E.t > tAnterior) {
     const hit = momentosFoco().find((m) => m.t > tAnterior && m.t <= E.t);
@@ -1490,6 +1689,18 @@ function vigilarReproduccion() {
 function montarBarra() {
   const zoom = $('.zoom');
   zoom.innerHTML = ZOOMS.map((z) => `<button type="button" data-zoom="${z.s}" title="${z.n}"><span class="z-largo">${z.n}</span><span class="z-corto" aria-hidden="true">${z.c}</span></button>`).join('');
+  // En el móvil las seis escalas no caben con dianas de 44 px: la misma elección va en un desplegable (be-f1w).
+  const zsel = document.createElement('select');
+  zsel.className = 'zoom-select'; zsel.id = 'zoom-select';
+  zsel.setAttribute('aria-label', 'Escala de la línea de tiempo');
+  zsel.innerHTML = `<option value="" disabled hidden>Escala</option>${ZOOMS.map((z) => `<option value="${z.s}">${z.n}</option>`).join('')}`;
+  zoom.after(zsel);
+  zsel.addEventListener('change', () => { if (zsel.value) ponerEscala(+zsel.value); });
+  const vel = document.createElement('div');
+  vel.className = 'velocidad'; vel.setAttribute('role', 'group'); vel.setAttribute('aria-label', 'Velocidad de reproducción');
+  vel.innerHTML = botonesVelocidad();
+  $('#velocidad').replaceWith(vel);
+  vel.addEventListener('click', (e) => { const b = e.target.closest('[data-vel]'); if (b) cambiarVelocidad(+b.dataset.vel); });
   const crono = $('.linea-barra .cronologia');
   const mm = document.createElement('div');
   mm.id = 'minimapa'; mm.className = 'be-minimap minimapa';
@@ -1502,6 +1713,15 @@ function montarBarra() {
   botones.className = 'linea-botones'; botones.id = 'linea-botones';
   botones.innerHTML = `<button type="button" class="be-btn be-btn--icon be-btn--ghost linea-boton" id="linea-menu-boton" aria-haspopup="dialog" aria-expanded="false" aria-label="Opciones de la línea de tiempo" title="Opciones: ampliar, sincronía, regla, bucle, marcadores y carriles">${ICONOS.menu}</button>`;
   crono.after(botones);
+  // «Sobre las fechas» (be-64b.6): la píldora «Cronología TNM» parecía un botón y no hacía nada. Ahora es un botón que
+  // dice lo que hace: explica de dónde salen las fechas y qué quiere decir cada marca de la línea.
+  const fechasBoton = document.createElement('button');
+  fechasBoton.type = 'button'; fechasBoton.className = 'cronologia fechas-boton'; fechasBoton.id = 'fechas-boton';
+  fechasBoton.setAttribute('aria-haspopup', 'dialog'); fechasBoton.setAttribute('aria-expanded', 'false');
+  fechasBoton.title = 'De dónde salen las fechas y qué quiere decir cada marca';
+  fechasBoton.innerHTML = `${ICONOS.info}<span>Sobre las fechas</span>`;
+  crono.replaceWith(fechasBoton);
+  fechasBoton.addEventListener('click', (e) => { e.stopPropagation(); if (ayudaFechas && !ayudaFechas.hidden) cerrarAyudaFechas(); else abrirAyudaFechas(fechasBoton); });
   // Selector «Meses»: qué filas de meses enseña la regla y qué fecha va primero. Sale a escala de meses y de días.
   const meses = document.createElement('div');
   meses.className = 'meses-control';
@@ -1555,6 +1775,7 @@ function montarBarra() {
   $('#fecha').addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target === $('#fecha')) editarFecha(); });
   document.addEventListener('pointerdown', (e) => {
     if (menuAbierto() && !e.target.closest('#linea-menu, #linea-menu-boton, .carriles-boton')) cerrarMenu();
+    if (ayudaFechas && !ayudaFechas.hidden && !e.target.closest('#fechas-ayuda, #fechas-boton, #linea-menu')) cerrarAyudaFechas();
     if (eleccion && !e.target.closest('.linea-eleccion')) cerrarEleccion();
   });
   $('#carriles').addEventListener('click', (e) => {
@@ -1590,6 +1811,27 @@ function pintarSelectorMeses() {
     b.classList.toggle('be-seg__opt--on', on); b.setAttribute('aria-checked', String(on)); b.tabIndex = on ? 0 : -1;
   });
 }
+/** La barra de la línea tiene un alto fijo: si lo que lleva no cabe a lo ancho, se compacta por pasos hasta que cabe, en
+    vez de dejar el menú (…) fuera de la pantalla. 1: el selector «Meses» sin su rótulo ni su enlace (el «?» va al carril);
+    2: las escalas abreviadas («Mil», «Sig»…); 3: la velocidad y «Sobre las fechas» pasan al menú de la línea. */
+let claveBarra = '';
+function ajustarBarra() {
+  const barra = $('.linea-barra');
+  if (!barra) return;
+  const clave = `${barra.clientWidth}|${$('#meses-control')?.hidden}`;
+  if (clave === claveBarra) return;
+  claveBarra = clave;
+  let n = 0;
+  barra.dataset.compacta = '0';
+  while (barra.scrollWidth > barra.clientWidth + 1 && n < 3) barra.dataset.compacta = String(++n);
+}
+
+/** Escala de la línea (años que abarca), con el cursor a un 40 % del borde izquierdo. */
+function ponerEscala(s) {
+  const v0 = clamp(E.t - s * 0.4, BE.T_MIN, BE.T_MAX - s);
+  E.vista = [v0, v0 + s]; sucio.linea = true; programar();
+}
+
 function iniciarLinea() {
   montarBarra();
   const pista = $('#pista');
@@ -1608,7 +1850,8 @@ function iniciarLinea() {
       zoomEn(Math.exp(e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)), tDe(e.clientX - r.left));
     }
   }, { passive: false });
-  let toqueMes = null;
+  let toqueMes = null, toqueItem = null, tragarClic = 0;
+  pista.addEventListener('click', (e) => { if (performance.now() < tragarClic) { tragarClic = 0; e.stopPropagation(); e.preventDefault(); } }, true);
   pista.addEventListener('pointerdown', (e) => {
     const r = pista.getBoundingClientRect();
     punteros.set(e.pointerId, e.clientX);
@@ -1617,7 +1860,17 @@ function iniciarLinea() {
       pinza = { d: Math.abs(xs[0] - xs[1]), s: span(), t: tDe((xs[0] + xs[1]) / 2 - r.left) };
       arrastre = null; regla = null; toqueMes = null; return;   // una pinza nunca es un toque sobre un mes
     }
-    if (e.target.closest('[data-sel], [data-rango], [data-linea], [data-marcador]')) return;   // lo gestionan los clics
+    // Con el dedo (be-f1w): la forma que hay justo bajo el dedo o, si no hay, la más cercana con una diana de 44 px (un
+    // rombo mide 17). Lo decide esta línea, no el navegador, que ajusta el toque a su manera y a veces a otra forma. Si
+    // el dedo se mueve, es un arrastre del cursor aunque empiece encima de una forma: en el móvil los carriles van
+    // llenos y casi todo arrastre empezaba encima de algo y no hacía nada.
+    toqueItem = null;
+    const FORMA = '[data-sel], [data-rango], [data-linea], [data-marcador]';
+    if (e.pointerType !== 'mouse' && !e.altKey && !L.modoRegla) {
+      const bajo = document.elementFromPoint(e.clientX, e.clientY)?.closest?.(FORMA);
+      const g = (bajo && pista.contains(bajo) ? bajo : null) || itemCercano(e.clientX, e.clientY);
+      if (g) { toqueItem = { g, x: e.clientX, y: e.clientY, id: e.pointerId }; return; }
+    } else if (e.target.closest(FORMA)) return;   // con ratón, lo gestionan los clics
     const mes = e.target.closest?.('g.mes[data-aviso]');
     toqueMes = mes ? { texto: mes.dataset.aviso, x: e.clientX, y: e.clientY, lejos: 0 } : null;
     if (e.altKey || L.modoRegla) {
@@ -1637,6 +1890,12 @@ function iniciarLinea() {
     if (punteros.has(e.pointerId)) punteros.set(e.pointerId, e.clientX);
     // Lo más lejos que llegó el dedo: un arrastre que vuelve a donde empezó no es un toque.
     if (toqueMes) toqueMes.lejos = Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y));
+    if (toqueItem && toqueItem.id === e.pointerId && Math.hypot(e.clientX - toqueItem.x, e.clientY - toqueItem.y) >= 8) {
+      toqueItem = null;
+      arrastre = { x: e.clientX };
+      tragarClic = performance.now() + 600;   // un arrastre corto sobre una forma no la elige además
+      try { pista.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
+    }
     if (pinza && punteros.size === 2) {
       const xs = [...punteros.values()];
       const d = Math.max(10, Math.abs(xs[0] - xs[1]));
@@ -1649,6 +1908,16 @@ function iniciarLinea() {
   });
   const fin = (e) => {
     punteros.delete(e.pointerId);
+    // Un toque sin arrastre: el clic va a la forma elegida (bajo el dedo o la más cercana), y el clic que da después el
+    // navegador no cuenta, porque puede caer en el hueco (el navegador ajusta el toque a la forma en pointerdown, no
+    // siempre en el clic).
+    if (toqueItem?.g && toqueItem.id === e.pointerId && e.type === 'pointerup' && !pinza) {
+      const { g, x, y } = toqueItem, r = g.getBoundingClientRect();
+      const dentro = x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+      g.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, detail: 1, clientX: dentro ? x : r.left + r.width / 2, clientY: dentro ? y : r.top + r.height / 2 }));
+    }
+    if (e.pointerType !== 'mouse' && e.type === 'pointerup') tragarClic = performance.now() + 600;   // el clic del navegador ya no cuenta
+    toqueItem = null;
     if (punteros.size < 2) pinza = null;
     if (regla) {
       if (Math.abs(L.regla[1] - L.regla[0]) < 1e-6) L.regla = null;
@@ -1661,7 +1930,7 @@ function iniciarLinea() {
     toqueMes = null;
   };
   pista.addEventListener('pointerup', fin);
-  pista.addEventListener('pointercancel', (e) => { punteros.delete(e.pointerId); pinza = null; arrastre = null; regla = null; });
+  pista.addEventListener('pointercancel', (e) => { punteros.delete(e.pointerId); pinza = null; arrastre = null; regla = null; toqueItem = null; });
   // Píldoras de sucesos agrupados, eras e imperios: acercan el zoom a su tramo. Regla y marcadores.
   $('#linea-svg').addEventListener('click', (e) => {
     // Un clic de ratón o de dedo sobre una forma bajo la que hay otras: se elige de una lista. Un rótulo nunca
@@ -1696,15 +1965,13 @@ function iniciarLinea() {
     const g = e.target.closest?.('[data-rango]:not([data-sel]), [data-marcador], [data-linea]');
     if (g && e.key === 'Enter') { e.preventDefault(); g.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
   });
-  document.querySelectorAll('[data-zoom]').forEach((b) => b.addEventListener('click', () => {
-    const s = +b.dataset.zoom;
-    const v0 = clamp(E.t - s * 0.4, BE.T_MIN, BE.T_MAX - s);
-    E.vista = [v0, v0 + s]; sucio.linea = true; programar();
-  }));
+  document.querySelectorAll('[data-zoom]').forEach((b) => b.addEventListener('click', () => ponerEscala(+b.dataset.zoom)));
   $('#reproducir').addEventListener('click', () => reproducir(!E.play));
   $('#anterior').addEventListener('click', () => saltar(-1));
   $('#siguiente').addEventListener('click', () => saltar(1));
   new ResizeObserver(() => { sucio.linea = true; programar(); }).observe(pista);
+  new MutationObserver(() => { sucio.linea = sucio.cursor = true; programar(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  document.fonts?.ready.then(() => { claveBarra = ''; ajustarBarra(); });   // con la letra ya cargada, los anchos cambian
   BE.pintores.push(() => vigilarReproduccion());
 }
 
@@ -1717,7 +1984,7 @@ BE.hitos = () => {
     for (const m of momentosFoco()) ts.push(m.t);
     for (const k of r.claves) {
       if (k.startsWith('carta:')) { const c = BE.D.cartas.find((x) => `carta:${x.id}` === k); const m = c && BE.momentoCarta(c); if (m != null) ts.push(m); }
-      if (k.startsWith('periodo:')) { const p = BE.D.periodos.find((x) => `periodo:${x.id}` === k); const tr = p && tramo(p.fecha); if (tr) ts.push(tr[0] + 0.01); }
+      if (k.startsWith('periodo:')) { const p = BE.D.periodos.find((x) => `periodo:${x.id}` === k); const tr = p && BE.tramoPeriodo(p); if (tr) ts.push(BE.inicioPeriodo(p) + 0.01, tr[1] - 0.01); }
     }
   }
   if (!ts.length) {
@@ -1735,6 +2002,8 @@ BE.parametros.push(
   { nombre: 'carriles', escribir: () => (L.fijados.length ? L.fijados.join(',') : null), leer: (v) => { L.fijados = v ? v.split(',').filter((id) => carrilPorId(id)) : []; claveEtiquetas = ''; } },
   { nombre: 'secular', escribir: () => (L.secular ? null : '0'), leer: (v) => { L.secular = v !== '0'; } },
   { nombre: 'pausa', escribir: () => (L.pausa ? null : '0'), leer: (v) => { L.pausa = v !== '0'; } },
+  // Velocidad elegida a mano, con palabras: «vel=3-meses» (por segundo).
+  { nombre: 'vel', escribir: () => (L.vel != null ? claveVel(VELOCIDADES[L.vel]) : null), leer: (v) => { const i = VELOCIDADES.findIndex((x) => claveVel(x) === v); L.vel = i >= 0 ? i : null; } },
   { nombre: 'regla', escribir: () => rango(L.regla), leer: (v) => { L.regla = leerRango(v); } },
   { nombre: 'bucle', escribir: () => rango(L.bucle), leer: (v) => { L.bucle = leerRango(v); } },
   { nombre: 'linea', escribir: () => (L.grande ? 'grande' : null), leer: (v) => { if ((v === 'grande') !== L.grande) ponerGrande(v === 'grande'); } },

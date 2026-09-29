@@ -124,6 +124,7 @@ Todas llevan `fecha`, `fuentes` y `estado`.
 | `procede_de` | grupo → lugar, dentro de un evento | partos, medos, elamitas → Pentecostés de 33 |
 | `sucede_a` | persona → persona, con `cargo` | Festo → Félix |
 | `mismo_que` | persona → persona / lugar → lugar | Sesbazar → Zorobabel, "probable" |
+| `se_aparece_a` | persona → persona, con `relacion` y `relacion_inversa` | Jesús → Pablo, camino de Damasco |
 | `menciona` | pasaje → entidad | Hch 27:6 → Alejandría (mención, no presencia) |
 
 `contemporaneo_de` no se guarda: se calcula al consultar.
