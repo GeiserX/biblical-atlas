@@ -111,7 +111,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para 1 Reyes (Salomón)
 
-- **Salomón.** El Cantar deja en `data/_propuestas/cantar-de-los-cantares.json` un cambio a su `resumen` y a su `razon` (escribió El Cantar; «la mayor parte de Proverbios» pasa a «casi todo Proverbios» y se abrevian la idolatría y la división), sobre el texto que dejó Eclesiastés. Un cambio posterior parte del texto que queda tras integrar El Cantar. El resumen sigue en 40 palabras.
+- **Salomón.** Los cambios de Proverbios, Eclesiastés y El Cantar a su `resumen` y a su `razon` ya están integrados en `salomon.yaml`. Un cambio posterior a esos campos parte del texto actual, con su `antes`. El resumen sigue en 40 palabras.
 - **Congregador.** Eclesiastés añade ese nombre a `salomon` y las relaciones `vivio_en` `jerusalen` y `pariente` `david` con sus capítulos. No hace falta volver a proponerlos.
 - **Abisag.** Es de `sunem`, que existe desde El Cantar. La `sulamita` dice en `no_afirmamos` que no la damos por Abisag: Perspicacia «Sulamita» solo compara 1Re 1:3 con Can 6:13.
 

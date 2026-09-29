@@ -94,7 +94,7 @@ function noSabemosHtml(frases) {
 }
 function enlacesHtml(enlaces) {
   if (!enlaces?.length) return '';
-  // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para una familia y pasa al texto emergente.
+  // «Hechos 18 (TNM)» se lee «Hechos 18»: la sigla es jerga para quien lee y pasa al texto emergente.
   return `<div class="enlaces">${enlaces.map((e) => {
     const tnm = / \(TNM\)$/.test(e.titulo);
     return `<a class="be-wol" href="${esc(e.url)}" ${EXTERNO}${tnm ? ' title="Traducción del Nuevo Mundo, en wol.jw.org"' : ''}>${esc(tnm ? e.titulo.replace(/ \(TNM\)$/, '') : e.titulo)}</a>`;

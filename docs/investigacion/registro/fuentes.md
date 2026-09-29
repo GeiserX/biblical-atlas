@@ -1644,6 +1644,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | oseas-8 | [Oseas 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | oseas-9 | [Oseas 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-1 | [Proverbios 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| proverbios-10 | [Proverbios 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-25 | [Proverbios 25](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/25) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-30 | [Proverbios 30](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/30) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | proverbios-31 | [Proverbios 31](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/31) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
