@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-lleva-su-contribucion-para-el-tabernaculo
+titulo: Israel lleva su contribución para el tabernáculo
+fecha:
+  desde: -1512
+  hasta: -1511
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+orden_relato:
+  serie: exodo
+  orden: 35001
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Éx 35:1-29
+resumen: Moisés reúne al pueblo, le recuerda el sábado y le pide una ofrenda voluntaria. Hombres y mujeres traen joyas, metales,
+  telas, pieles y madera; las mujeres hilan y los jefes aportan piedras preciosas, aceite y bálsamo.
+razon: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. Se hizo junto al Sinaí (Perspicacia «Tabernáculo»).
+fuentes:
+- exodo-35
+- si-3
+- it-tabernaculo
+enlaces:
+- titulo: Éxodo 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/35
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

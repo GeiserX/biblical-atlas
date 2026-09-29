@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-instituye-la-pascua
+titulo: Jehová da a Moisés y a Aarón las normas de la Pascua
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: abib (nisán) de 1513 a.e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: exodo
+  orden: 12001
+lugares:
+- egipto
+personas:
+- moises
+- aaron
+pasajes:
+- Éx 12:1-20
+resumen: En Egipto, Jehová hace del mes de abib el primero del año. Cada familia debe escoger un cordero el día 10, matarlo
+  el 14 y comerlo con pan sin levadura; manda también una fiesta de siete días.
+razon: 'Perspicacia «Moisés», apartado «Ante Faraón en Egipto»: la Pascua se instituyó antes de la décima plaga. «Pascua»:
+  la primera fue el 14 de abib de 1513 a.e.c.'
+fuentes:
+- exodo-12
+- it-moises
+- it-pascua
+- it-fiesta-tortas-no-fermentadas
+- si-3
+enlaces:
+- titulo: Éxodo 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

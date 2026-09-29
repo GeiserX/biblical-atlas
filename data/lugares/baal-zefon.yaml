@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-zefon
+nombre: Baal-Zefón
+nombres:
+- nombre: Baal-Zefón
+- nombre: Baal-zefón
+  nota: Grafía de Perspicacia.
+tipo: monte
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Jebel ʽAtaqah
+  geometria:
+    tipo: punto
+    lat: 29.996111
+    lon: 32.3075
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-baal-zefon
+  - openbible-geo
+  razon: 'Perspicacia recoge la propuesta de un léxico hebreo: el monte ʽAtaqah, al suroeste de Suez, cerca de donde el golfo
+    ya tiene agua profunda.'
+  coord_fuente: openbible:a22663b
+  coord_url: https://www.openbible.info/geo/ancient/a22663b/baal-zephon
+- nombre: Jebel el-Galala
+  geometria:
+    tipo: zona
+    lat: 29.636111
+    lon: 32.3075
+    radio_km: 15
+  estado: alternativa
+  fuentes:
+  - it-baal-zefon
+  - openbible-geo
+  razon: Otros lo llevan a este monte, unos 40 km más al sur; Perspicacia lo nombra sin preferirlo.
+  coord_fuente: calculo
+  nota: 'Centro: 40 km al sur del punto de Jebel ʽAtaqah de OpenBible, la distancia que da Perspicacia. Radio nuestro.'
+resumen: Lugar conocido en tiempos del éxodo que servía para situar el campamento de Pihahirot. Frente a él acampó Israel
+  y allí lo alcanzó el faraón. Su sitio es incierto.
+razon: Perspicacia «Baal-zefón»; Éx 14:2, 9. Lleva el nombre de Baal, pero es un lugar, no el dios. El mapa B3 lo marca con
+  duda.
+fuentes:
+- it-baal-zefon
+- tnm-b3
+- openbible-geo
+- exodo-14
+enlaces:
+- titulo: 'Perspicacia: «Baal-zefón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000523
+  tipo: perspicacia
+- titulo: Éxodo 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

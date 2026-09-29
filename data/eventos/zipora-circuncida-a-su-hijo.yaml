@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zipora-circuncida-a-su-hijo
+titulo: Ziporá circuncida a su hijo en el camino
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+orden_relato:
+  serie: exodo
+  orden: 4024
+lugares:
+- madian
+- egipto
+personas:
+- zipora
+- moises
+presentes: []
+pasajes:
+- Éx 4:24-26
+resumen: Donde paran a pasar la noche, Jehová, por medio de su ángel según Perspicacia, intenta dar muerte a alguien. Ziporá
+  circuncida a su hijo con un pedernal, toca con el prepucio los pies de él y dice «novio de sangre».
+razon: El alojamiento del camino no tiene nombre, así que el suceso no sitúa a nadie. Va entre la zarza (hacia 1514 a.e.c.,
+  estudio 3) y el éxodo de 1513. Perspicacia «Ziporá».
+fuentes:
+- exodo-4
+- it-zipora
+- si-3
+enlaces:
+- titulo: Éxodo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

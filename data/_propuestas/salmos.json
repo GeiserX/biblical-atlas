@@ -1,0 +1,620 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "salmos",
+ "agente": "escritor-exodo",
+ "leido": "2026-09-29",
+ "cobertura": {
+  "66": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-7",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-cruza-el-mar-rojo"
+     ],
+     "menciona": [
+      "lugar:cruce-del-mar-rojo",
+      "evento:entrada-en-canaan",
+      "lugar:rio-jordan"
+     ],
+     "nota": "Encabezamiento: al director, canción, salmo, sin autor. Toda la tierra alabe a Dios, que secó el mar e hizo cruzar el río a pie; las referencias llevan al mar Rojo (Éx 14) y al Jordán (Jos 3)."
+    },
+    {
+     "v": "8-12",
+     "tipo": "poesia",
+     "nota": "Dios probó a su pueblo como quien refina plata: lo dejó en la red, bajo cargas y bajo otros hombres, por fuego y por agua, y al final le dio descanso."
+    },
+    {
+     "v": "13-20",
+     "tipo": "poesia",
+     "nota": "El salmista entrará en la casa de Dios con ofrendas quemadas para cumplir sus votos, y cuenta que Dios escuchó su oración porque no guardaba maldad."
+    }
+   ]
+  },
+  "68": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-6",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:david"
+     ],
+     "nota": "Encabezamiento: al director, de David, salmo, canción. Que Dios se levante y sus enemigos huyan. Jah, forma corta de Jehová, cuida de huérfanos y viudas y da hogar a los solos."
+    },
+    {
+     "v": "7-10",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:jehova-desciende-sobre-el-monte-sinai"
+     ],
+     "menciona": [
+      "lugar:monte-sinai",
+      "evento:pacto-de-la-ley"
+     ],
+     "nota": "Recuerda a Dios guiando a su pueblo por el desierto, cuando tembló el monte Sinaí (la referencia lleva a Éx 19:18), y la lluvia con que lo reanimó."
+    },
+    {
+     "v": "11-14",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:zalmon-de-basan"
+     ],
+     "nota": "Muchas mujeres anuncian la victoria y reparten el botín mientras huyen los reyes; las referencias remiten a Josué y a Débora. Cuando Dios dispersó a los reyes, nevó en Zalmón."
+    },
+    {
+     "v": "15-18",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:basan"
+     ],
+     "menciona": [
+      "lugar:monte-sinai",
+      "evento:conquista-de-canaan"
+     ],
+     "nota": "Los montes de Basán envidian el monte que Dios eligió para vivir. Según La Atalaya, los hombres cautivos del v. 18 eran de la conquista de Canaán; Ef 4:8 aplica el versículo a Jesús."
+    },
+    {
+     "v": "19-23",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:basan"
+     ],
+     "nota": "Jehová salva y libra de la muerte; dice que traerá a los enemigos de vuelta desde Basán y desde lo hondo del mar para que su pueblo los venza."
+    },
+    {
+     "v": "24-27",
+     "tipo": "poesia",
+     "nota": "Procesión de Dios hacia el lugar santo: cantores delante, músicos detrás y jóvenes con panderetas. Marchan Benjamín, el más joven, y los príncipes de Judá, Zabulón y Neftalí, tribus que aquí son el pueblo, sin ficha."
+    },
+    {
+     "v": "28-35",
+     "tipo": "poesia",
+     "menciona": [
+      "lugar:jerusalen",
+      "lugar:egipto",
+      "lugar:etiopia"
+     ],
+     "nota": "Por el templo de Jerusalén los reyes traerán regalos; Egipto dará bronce y Cus, la antigua Etiopía, se dará prisa en ofrecer. Que los reinos canten al Dios de Israel."
+    }
+   ]
+  },
+  "74": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-11",
+     "tipo": "poesia",
+     "menciona": [
+      "lugar:jerusalen",
+      "evento:destruccion-de-jerusalen-607",
+      "persona:asaf-hijo-de-berekias"
+     ],
+     "nota": "Encabezamiento: maskil de Asaf, quizá de su casa. Lamento porque el enemigo quemó el santuario del monte Sion y ya no hay profeta. La Atalaya de 2006 lo lee como llanto por la destrucción de Jerusalén."
+    },
+    {
+     "v": "12-17",
+     "tipo": "poesia",
+     "menciona": [
+      "lugar:egipto",
+      "evento:israel-cruza-el-mar-rojo"
+     ],
+     "nota": "Dios, Rey desde antiguo, agitó el mar y aplastó las cabezas de Leviatán, imagen que La Atalaya une a la derrota del faraón en el éxodo. También abrió fuentes, secó ríos e hizo el día y la noche."
+    },
+    {
+     "v": "18-23",
+     "tipo": "poesia",
+     "nota": "Pide a Jehová que recuerde el pacto y los insultos del enemigo insensato, que no abandone a su tórtola y que defienda su propia causa."
+    }
+   ]
+  },
+  "77": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-9",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:asaf-hijo-de-berekias",
+      "persona:jedutun-musico"
+     ],
+     "nota": "Encabezamiento: de Asaf, para el director, «en Jedutún», al parecer un estilo o instrumento ligado a ese músico. Angustiado, el salmista clama de noche y se pregunta si Jehová lo ha rechazado para siempre."
+    },
+    {
+     "v": "10-15",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:jacob",
+      "persona:jose-hijo-de-jacob"
+     ],
+     "nota": "Decide recordar las obras antiguas de Jah y meditar en ellas. Con su poder, Dios rescató a su pueblo, los descendientes de Jacob y de José."
+    },
+    {
+     "v": "16-20",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-cruza-el-mar-rojo",
+      "persona:moises",
+      "persona:aaron",
+      "relacion:aaron/acompana/moises"
+     ],
+     "nota": "Las aguas temblaron ante Dios entre truenos y relámpagos; su camino cruzó el mar sin dejar huellas. Guio a su pueblo igual que a un rebaño por medio de Moisés y Aarón."
+    }
+   ]
+  },
+  "78": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-8",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:asaf-hijo-de-berekias",
+      "evento:pacto-de-la-ley"
+     ],
+     "nota": "Encabezamiento: maskil de Asaf. El salmista promete contar a la siguiente generación las obras de Jehová y la ley que dio a Israel, para que no sea terca como sus antepasados."
+    },
+    {
+     "v": "9-11",
+     "tipo": "poesia",
+     "nota": "Los efraimitas, armados con arcos, se retiraron en la batalla y olvidaron el pacto. Son la tribu, sin ficha; el texto no dice qué batalla fue."
+    },
+    {
+     "v": "12-16",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-cruza-el-mar-rojo",
+      "evento:israel-acampa-en-ezam",
+      "evento:agua-de-la-roca-en-horeb",
+      "lugar:egipto",
+      "lugar:zoan"
+     ],
+     "nota": "Milagros en Egipto, en la región de Zoan; el mar partido con las aguas en pie; la nube de día y el fuego de noche; agua de la roca (Éx 17; el suceso de Nú 20 lo crea Números)."
+    },
+    {
+     "v": "17-31",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:codornices-y-mana-en-el-desierto-de-sin",
+      "evento:agua-de-la-roca-en-horeb"
+     ],
+     "nota": "En el desierto el pueblo desafía a Dios exigiendo comida. Él les da maná, el grano del cielo (Éx 16), y codornices, pero mata a los más fuertes: suceso de Nú 11, que crea Números."
+    },
+    {
+     "v": "32-41",
+     "tipo": "poesia",
+     "nota": "Aun así siguen pecando: Dios acorta sus años en el desierto; ellos lo buscan, pero le mienten, y él, compasivo, contiene su furia. El castigo de Nú 14 lo crea Números."
+    },
+    {
+     "v": "42-53",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-cruza-el-mar-rojo",
+      "evento:primera-plaga-el-agua-se-convierte-en-sangre",
+      "evento:segunda-plaga-las-ranas",
+      "evento:cuarta-plaga-los-tabanos",
+      "evento:septima-plaga-el-granizo",
+      "evento:octava-plaga-las-langostas",
+      "evento:decima-plaga-mueren-los-primogenitos",
+      "evento:exodo",
+      "lugar:egipto",
+      "lugar:zoan",
+      "lugar:rio-nilo"
+     ],
+     "nota": "Plagas de Egipto: el Nilo en sangre, tábanos, ranas, langostas, granizo y la muerte de los primogénitos en las tiendas de Cam, es decir, Egipto. Dios saca a su pueblo y el mar cubre al enemigo."
+    },
+    {
+     "v": "54-55",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:entrada-en-canaan",
+      "evento:conquista-de-canaan"
+     ],
+     "nota": "Dios lleva a Israel a su territorio santo, expulsa a las naciones y reparte la herencia entre las tribus."
+    },
+    {
+     "v": "56-64",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:silo"
+     ],
+     "nota": "Israel lo irrita con lugares altos e ídolos. Dios abandona el tabernáculo de Siló, deja que el Arca caiga en manos enemigas y mueren sacerdotes y jóvenes. Sucesos de 1Sa 4; los crea 1 Samuel."
+    },
+    {
+     "v": "65-69",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:jerusalen"
+     ],
+     "menciona": [
+      "persona:jose-hijo-de-jacob"
+     ],
+     "nota": "Jehová rechaza a los enemigos y, en vez de la tribu de Efraín, descendiente de José, escoge la de Judá y el monte Sion para su santuario. Las tribus son pueblos, sin ficha."
+    },
+    {
+     "v": "70-72",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:david"
+     ],
+     "menciona": [
+      "evento:david-rey-de-todo-israel"
+     ],
+     "nota": "Dios escoge a David, lo saca de los rediles y lo hace pastor de Israel, al que guía con integridad. La unción de 1Sa 16 la crea 1 Samuel."
+    }
+   ]
+  },
+  "95": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-7",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:david"
+     ],
+     "nota": "Invitación a adorar a Jehová, Roca de salvación, Rey sobre los dioses y Creador. Sin encabezamiento; Perspicacia lo atribuye a David por Hebreos 4:7."
+    },
+    {
+     "v": "8-11",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:agua-de-la-roca-en-horeb",
+      "lugar:masa"
+     ],
+     "menciona": [
+      "lugar:meriba-de-cades"
+     ],
+     "nota": "Aviso: no endurecerse como en Meribá y Masá (Éx 17:1-7; Perspicacia añade el Meribá de Cadés); aquella generación no entró en su descanso (Nú 14, lo crea Números). Hebreos 3 y 4 lo citan."
+    }
+   ]
+  },
+  "105": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-7",
+     "tipo": "poesia",
+     "menciona": [
+      "persona:abrahan",
+      "persona:jacob",
+      "evento:pacto-con-david"
+     ],
+     "nota": "Llamada a dar gracias y recordar las obras de Jehová, dirigida a la descendencia de Abrahán y a los hijos de Jacob. Los versículos 1-15 coinciden casi del todo con 1Cr 16:8-22."
+    },
+    {
+     "v": "8-15",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:abrahan",
+      "persona:isaac",
+      "persona:jacob",
+      "lugar:canaan",
+      "relacion:abrahan/vivio_en/canaan",
+      "relacion:isaac/vivio_en/canaan",
+      "relacion:jacob/vivio_en/canaan"
+     ],
+     "menciona": [
+      "evento:pacto-con-abrahan",
+      "evento:abran-y-sarai-en-egipto",
+      "evento:abimelec-devuelve-a-sara"
+     ],
+     "nota": "Dios recuerda su pacto con Abrahán, su juramento a Isaac y su decreto a Jacob: la tierra de Canaán. Cuando eran pocos y extranjeros, reprendió a reyes por ellos (Gé 12:17; 20:3)."
+    },
+    {
+     "v": "16-22",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:jose-hijo-de-jacob",
+      "relacion:jose-hijo-de-jacob/vivio_en/egipto",
+      "evento:empiezan-los-siete-anos-de-hambre",
+      "evento:sus-hermanos-venden-a-jose",
+      "evento:jose-encarcelado-en-egipto",
+      "evento:jose-gobernador-de-egipto"
+     ],
+     "nota": "Hambre en el país. José, vendido como esclavo, sufre grilletes, detalle que solo da este salmo; el rey lo libera y lo pone al frente de su casa. Son sucesos de Gé 37-41."
+    },
+    {
+     "v": "23-25",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:jacob-entra-en-egipto",
+      "persona:jacob",
+      "lugar:egipto",
+      "relacion:jacob/vivio_en/egipto"
+     ],
+     "nota": "Israel entra en Egipto, la tierra de Cam; el pueblo se multiplica y los egipcios llegan a odiarlo (Éx 1)."
+    },
+    {
+     "v": "26-35",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:moises-ante-la-zarza-ardiente",
+      "evento:novena-plaga-la-oscuridad",
+      "evento:primera-plaga-el-agua-se-convierte-en-sangre",
+      "evento:segunda-plaga-las-ranas",
+      "evento:tercera-plaga-los-mosquitos",
+      "evento:cuarta-plaga-los-tabanos",
+      "evento:septima-plaga-el-granizo",
+      "evento:octava-plaga-las-langostas",
+      "persona:moises",
+      "persona:aaron",
+      "relacion:aaron/acompana/moises",
+      "lugar:egipto"
+     ],
+     "nota": "Dios envía a Moisés y a Aarón, que hacen señales en la tierra de Cam: oscuridad, sangre, ranas, tábanos y mosquitos, granizo y langostas (Éx 7-10)."
+    },
+    {
+     "v": "36-38",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:decima-plaga-mueren-los-primogenitos",
+      "evento:exodo",
+      "lugar:egipto"
+     ],
+     "nota": "Mueren los primogénitos del país; Israel sale con plata y oro, sin que nadie flaquee, y Egipto se alegra de verlo marchar."
+    },
+    {
+     "v": "39-41",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-acampa-en-ezam",
+      "evento:codornices-y-mana-en-el-desierto-de-sin",
+      "evento:agua-de-la-roca-en-horeb",
+      "lugar:masa"
+     ],
+     "nota": "En el desierto, nube protectora y fuego de noche, codornices y pan del cielo, y agua de una roca que corre como un río (Éx 13, 16 y 17)."
+    },
+    {
+     "v": "42-45",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:exodo",
+      "evento:conquista-de-canaan",
+      "lugar:canaan"
+     ],
+     "menciona": [
+      "persona:abrahan"
+     ],
+     "nota": "Fiel a su promesa a Abrahán, Dios saca a su pueblo con alegría y le da las tierras de otras naciones para que cumpla sus leyes."
+    }
+   ]
+  },
+  "106": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-6",
+     "tipo": "poesia",
+     "nota": "Alabanza a Jehová por su amor leal. El salmista pide que lo recuerde con su pueblo y confiesa que han pecado igual que sus antepasados."
+    },
+    {
+     "v": "7-12",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:israel-cruza-el-mar-rojo",
+      "evento:israel-canta-junto-al-mar-rojo",
+      "lugar:egipto",
+      "lugar:mar-rojo"
+     ],
+     "nota": "En Egipto no valoraron sus obras y se rebelaron junto al mar Rojo; aun así él lo secó, los salvó y ahogó a sus enemigos. Entonces creyeron y cantaron."
+    },
+    {
+     "v": "13-15",
+     "tipo": "poesia",
+     "nota": "En el desierto olvidaron sus obras, pusieron a Dios a prueba con sus antojos y él les dio lo pedido y luego una plaga. Suceso de Nú 11; lo crea Números."
+    },
+    {
+     "v": "16-18",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:moises",
+      "persona:aaron",
+      "persona:datan",
+      "persona:abiram-hijo-de-eliab"
+     ],
+     "nota": "Envidia contra Moisés y Aarón: la tierra se traga a Datán y a los de Abiram y un fuego quema a los malvados. Rebelión de Nú 16; lo crea Números. Coré no se nombra aquí."
+    },
+    {
+     "v": "19-23",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:becerro-de-oro",
+      "evento:moises-ruega-por-el-pueblo",
+      "lugar:monte-sinai",
+      "lugar:egipto",
+      "persona:moises"
+     ],
+     "nota": "Becerro de metal en Horeb, otro nombre del Sinaí; Moisés intercede para que Dios no los destruya (Éx 32). «Tierra de Cam» es Egipto."
+    },
+    {
+     "v": "24-27",
+     "tipo": "poesia",
+     "nota": "Desprecian la tierra prometida, protestan en sus tiendas y Dios jura que caerán en el desierto. Suceso de Nú 14; lo crea Números."
+    },
+    {
+     "v": "28-31",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:finehas-hijo-de-eleazar"
+     ],
+     "nota": "Adoran a Baal de Peor, un dios sin ficha, y estalla un azote que Finehás detiene. Pasó en las llanuras de Moab (Nú 25); lo crea Números."
+    },
+    {
+     "v": "32-33",
+     "tipo": "poesia",
+     "entidades": [
+      "lugar:meriba-de-cades",
+      "persona:moises"
+     ],
+     "nota": "En las aguas de Meribá, junto a Cadés, el pueblo irrita a Dios y Moisés habla sin pensar. Suceso de Nú 20; lo crea Números."
+    },
+    {
+     "v": "34-39",
+     "tipo": "poesia",
+     "menciona": [
+      "lugar:canaan"
+     ],
+     "nota": "No acaban con los pueblos de la tierra, adoptan sus ídolos y sacrifican a sus hijos a los ídolos de Canaán."
+    },
+    {
+     "v": "40-46",
+     "tipo": "poesia",
+     "nota": "Dios los entrega una y otra vez a las naciones y los rescata cuando claman; las referencias remiten a los jueces. Sin sucesos concretos."
+    },
+    {
+     "v": "47-48",
+     "tipo": "poesia",
+     "menciona": [
+      "evento:pacto-con-david"
+     ],
+     "nota": "Súplica para que los reúna de entre las naciones y bendición que cierra el libro cuarto. 1Cr 16:35, 36 las pone en el canto del día en que llegó el Arca."
+    }
+   ]
+  },
+  "114": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-8",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:exodo",
+      "evento:israel-cruza-el-mar-rojo",
+      "evento:jehova-desciende-sobre-el-monte-sinai",
+      "evento:agua-de-la-roca-en-horeb",
+      "evento:entrada-en-canaan"
+     ],
+     "menciona": [
+      "lugar:egipto",
+      "persona:jacob",
+      "lugar:rio-jordan"
+     ],
+     "nota": "Israel sale de Egipto: el mar huye, el Jordán retrocede y los montes saltan. Judá, Israel y la casa de Jacob son el pueblo; el v. 7 nombra al Dios del patriarca. El agua de Nú 20 la crea Números."
+    }
+   ]
+  },
+  "135": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-7",
+     "tipo": "poesia",
+     "nota": "Alabanza a Jah, que escogió a Jacob, es decir, al pueblo de Israel, como su propiedad especial; hace cuanto quiere en el cielo, la tierra y los mares, y trae nubes, rayos y viento."
+    },
+    {
+     "v": "8-9",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:decima-plaga-mueren-los-primogenitos",
+      "lugar:egipto"
+     ],
+     "nota": "Muerte de los primogénitos y señales en Egipto contra el faraón, cuyo nombre jw.org no da. El v. 9 resume las plagas de Éx 7-10."
+    },
+    {
+     "v": "10-12",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:sehon",
+      "persona:og",
+      "lugar:basan",
+      "lugar:canaan",
+      "evento:conquista-de-canaan",
+      "relacion:og/vivio_en/basan"
+     ],
+     "nota": "Los amorreos son un pueblo, sin ficha. Las victorias sobre Sehón y Og (Nú 21:21-35) son sucesos que crea Números; la tierra de Canaán pasó en herencia a Israel."
+    },
+    {
+     "v": "13-18",
+     "tipo": "poesia",
+     "nota": "El nombre de Jehová dura para siempre y él defiende a su pueblo; los ídolos de plata y oro tienen boca, ojos y oídos, pero no hablan, ni ven, ni oyen."
+    },
+    {
+     "v": "19-21",
+     "tipo": "poesia",
+     "menciona": [
+      "lugar:jerusalen"
+     ],
+     "nota": "Llama a alabar a Jehová a Israel, a los sacerdotes (casa de Aarón) y a los levitas (casa de Leví), grupos sin ficha. Jehová reside en Jerusalén."
+    }
+   ]
+  },
+  "136": {
+   "estado": "completo",
+   "revisado": "2026-09-29",
+   "tramos": [
+    {
+     "v": "1-9",
+     "tipo": "poesia",
+     "nota": "Estribillo en cada versículo: el amor leal de Jehová dura para siempre. Se le dan gracias como Dios de dioses que hizo los cielos, la tierra, el sol, la luna y las estrellas."
+    },
+    {
+     "v": "10-16",
+     "tipo": "poesia",
+     "entidades": [
+      "evento:decima-plaga-mueren-los-primogenitos",
+      "evento:exodo",
+      "evento:israel-cruza-el-mar-rojo",
+      "lugar:egipto",
+      "lugar:mar-rojo",
+      "lugar:cruce-del-mar-rojo"
+     ],
+     "menciona": [
+      "periodo:exodo-y-desierto"
+     ],
+     "nota": "Mata a los primogénitos, saca a Israel de Egipto, divide el mar Rojo y ahoga allí al faraón, cuyo nombre jw.org no da. Luego guía a su pueblo por el desierto."
+    },
+    {
+     "v": "17-22",
+     "tipo": "poesia",
+     "entidades": [
+      "persona:sehon",
+      "persona:og",
+      "lugar:basan",
+      "relacion:og/vivio_en/basan"
+     ],
+     "nota": "Los amorreos son un pueblo, sin ficha. Las victorias sobre Sehón y Og (Nú 21:21-35) y el reparto de su tierra (Nú 32:33) son sucesos que crea Números."
+    },
+    {
+     "v": "23-26",
+     "tipo": "poesia",
+     "nota": "Dios se acordó de su pueblo hundido y lo rescató una y otra vez de sus enemigos; da alimento a todo ser vivo. Gracias al Dios de los cielos."
+    }
+   ]
+  }
+ },
+ "fuentes": {},
+ "cambios": [],
+ "preguntas": []
+}
