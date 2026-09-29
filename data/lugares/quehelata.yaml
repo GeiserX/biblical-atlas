@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quehelata
+nombre: Quehelatá
+nombres:
+- nombre: Quehelatá
+  nota: De una raíz que significa «congregación» (Perspicacia).
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: En la ruta de Risá a Cadés, según el mapa B3
+  geometria:
+    tipo: zona
+    lat: 30.28
+    lon: 34.49
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-quehelata
+  - tnm-b3
+  razon: El mapa B3 agrupa con signo de duda nueve campamentos, de Quehelatá a Moserot, en la ruta de Risá a Cadés.
+  coord_fuente: calculo
+  nota: 'Centro: punto medio de las tres flechas con que el mapa B3 señala ese tramo, calculado ajustando la imagen a dieciséis
+    lugares con punto de OpenBible. Radio nuestro.'
+resumen: Campamento de Israel en los años que anduvo por el desierto, entre Risá y el monte Séfer. No se sabe dónde estaba.
+razon: Perspicacia «Quehelatá»; Nú 33:22, 23.
+fuentes:
+- it-quehelata
+- tnm-b3
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Quehelatá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002583
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

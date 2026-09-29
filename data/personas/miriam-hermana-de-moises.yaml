@@ -24,6 +24,8 @@ fuentes:
 - exodo-15
 - numeros-20
 - exodo-2
+- numeros-12
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Míriam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003074
@@ -40,6 +42,7 @@ relaciones:
   - it-miriam
   - it-moises
   - exodo-2
+  - numeros-26
   razon: 'Perspicacia «Míriam», párr. 2 (Nú 26:59); «Moisés», párr. 2: era unos años mayor que él.'
   estado: verificado
 - tipo: pariente
@@ -49,6 +52,7 @@ relaciones:
   fuentes:
   - it-miriam
   - exodo-15
+  - numeros-26
   razon: 'Perspicacia «Míriam», párr. 2: hija de Amram y Jokébed, hermana de Aarón (Nú 26:59).'
   estado: verificado
 - tipo: murio_en
@@ -66,6 +70,7 @@ relaciones:
   fuentes:
   - exodo-2
   - it-miriam
+  - numeros-26
   razon: 'Éx 2:1-4: es la hermana del niño nacido de aquel levita; Perspicacia «Míriam», núm. 1, la da como hija de Amram.'
   estado: verificado
 - tipo: pariente
@@ -75,6 +80,7 @@ relaciones:
   fuentes:
   - exodo-2
   - it-miriam
+  - numeros-26
   razon: 'Éx 2:1-4: es la hermana del niño que dio a luz esta levita; Perspicacia «Míriam», núm. 1, la da como hija de Jokébed.'
   estado: verificado
 perspicacia: 1200003074#1

@@ -10,6 +10,7 @@ razon: Perspicacia «Guní», núm. 1; Gé 46:24.
 fuentes:
 - it-guni
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Guní»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001783
@@ -25,6 +26,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-guni
+  - numeros-26
   razon: 'Gé 46:24: aparece entre los hijos de Neftalí.'
   estado: verificado
 - tipo: vivio_en

@@ -12,6 +12,9 @@ desambiguacion: Abiram hijo de Eliab, el rebelde del desierto; no el primogénit
 fuentes:
 - it-abiram
 - salmos-106
+- numeros-16
+- it-eliab
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Abiram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000048
@@ -21,3 +24,15 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: eliab-hijo-de-palu
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-16
+  - it-eliab
+  - it-abiram
+  - numeros-26
+  razon: 'Nú 16:1, 12: Abiram es hijo de Eliab.'
+  estado: verificado

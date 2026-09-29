@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahira
+nombre: Ahirá
+nombres:
+- nombre: Ahirá
+perspicacia: '1200000163'
+resumen: Hijo de Enán y jefe de la tribu de Neftalí durante la marcha por el desierto. Ayudó a contar a Israel y mandaba las
+  tropas de su tribu, al norte del tabernáculo.
+razon: Perspicacia «Ahirá»; Nú 1:15, 16; 2:29.
+fuentes:
+- it-ahira
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Ahirá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000163
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: enan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-ahira
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  razon: Nú 1:15 y 2:29 lo llaman hijo de Enán.
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 15, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 15, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

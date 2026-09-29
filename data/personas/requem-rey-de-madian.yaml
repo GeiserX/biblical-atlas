@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: requem-rey-de-madian
+nombre: Réquem
+nombres:
+- nombre: Réquem
+perspicacia: 1200003686#1
+desambiguacion: Réquem, rey de Madián; no el manasita ni el judaíta de 1 Crónicas, ni la ciudad de Benjamín del mismo nombre.
+resumen: Rey madianita, uno de los cinco que murieron en la guerra con que Israel castigó a Madián por el pecado de Peor.
+  Perspicacia cree que dependían de los amorreos.
+razon: 'Perspicacia «Réquem», núm. 1; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto
+  a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.'
+fuentes:
+- it-requem
+- numeros-31
+- it-madian
+enlaces:
+- titulo: 'Perspicacia: «Réquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003686
+  tipo: perspicacia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

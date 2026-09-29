@@ -56,6 +56,64 @@ fuentes:
 - exodo-39
 - exodo-40
 - exodo-28
+- levitico-1
+- levitico-4
+- levitico-5
+- levitico-6
+- levitico-7
+- levitico-8
+- levitico-9
+- levitico-10
+- levitico-11
+- levitico-12
+- levitico-13
+- levitico-14
+- levitico-15
+- levitico-16
+- levitico-17
+- levitico-18
+- levitico-19
+- levitico-20
+- levitico-21
+- levitico-22
+- levitico-23
+- levitico-24
+- levitico-25
+- levitico-26
+- levitico-27
+- numeros-1
+- numeros-2
+- numeros-3
+- numeros-4
+- numeros-5
+- numeros-6
+- numeros-7
+- numeros-8
+- numeros-9
+- numeros-10
+- numeros-11
+- numeros-12
+- numeros-13
+- numeros-14
+- numeros-15
+- numeros-16
+- numeros-17
+- numeros-18
+- numeros-19
+- numeros-20
+- numeros-21
+- numeros-25
+- numeros-26
+- numeros-27
+- numeros-28
+- numeros-29
+- numeros-30
+- numeros-31
+- numeros-32
+- numeros-33
+- numeros-34
+- numeros-35
+- numeros-36
 enlaces:
 - titulo: 'Perspicacia: «Moisés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
@@ -74,6 +132,10 @@ relaciones:
   - exodo-4
   - exodo-7
   - exodo-28
+  - levitico-16
+  - numeros-20
+  - numeros-26
+  - numeros-27
   razon: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
   estado: verificado
 - tipo: pariente
@@ -83,7 +145,7 @@ relaciones:
   fuentes:
   - it-moises
   - exodo-6
-  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Qohat (Éx 6:16-20).'
+  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Cohat (Éx 6:16-20).'
   estado: verificado
 - tipo: nacio_en
   lugar: egipto
@@ -148,6 +210,7 @@ relaciones:
   - it-moises
   - it-amram
   - exodo-6
+  - numeros-26
   razon: 'Éx 2:1, 2: hijo de un levita; Perspicacia «Moisés» y «Amram», núm. 1, lo nombran.'
   estado: verificado
 - tipo: pariente
@@ -159,6 +222,7 @@ relaciones:
   - it-moises
   - it-jokebed
   - exodo-6
+  - numeros-26
   razon: 'Éx 2:1, 2: lo dio a luz una hija de Leví; Perspicacia «Moisés» y «Jokébed» la nombran.'
   estado: verificado
 - tipo: vivio_en
@@ -180,6 +244,8 @@ relaciones:
   - exodo-4
   - it-zipora
   - exodo-18
+  - numeros-12
+  - it-cusita
   razon: 'Éx 2:21: Reuel lo casó con Ziporá, una de sus hijas.'
   estado: verificado
 - tipo: pariente
@@ -192,8 +258,31 @@ relaciones:
   - exodo-3
   - exodo-4
   - exodo-18
+  - numeros-10
   razon: 'Éx 2:21: se casa con la hija de Reuel, que la nota de 2:18 identifica con Jetró.'
   estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1512
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513-1512 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-3
+  - si-3
+  - it-sinai
+  razon: 'Nú 3:14, 38: acampaba al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un año, de 1513 a
+    1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).'
+  estado: verificado
 perspicacia: '1200003118'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Grafía: la razón de su parentesco con Leví escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
+  fuente: exodo-6
 consultado: '2026-09-29'
 estado: verificado

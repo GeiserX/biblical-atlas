@@ -12,6 +12,7 @@ fuentes:
 - it-jemuel
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Jemuel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002412
@@ -28,6 +29,7 @@ relaciones:
   - genesis-46
   - it-jemuel
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
   estado: verificado
 - tipo: vivio_en
@@ -79,3 +81,5 @@ relaciones:
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- nemuel-hijo-de-eliab

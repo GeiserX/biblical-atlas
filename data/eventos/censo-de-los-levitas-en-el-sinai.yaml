@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: censo-de-los-levitas-en-el-sinai
+titulo: Moisés registra a los levitas de un mes para arriba
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: ziv (iyar) de 1512 a.e.c.
+  detalle:
+    mes: iyar
+  nota: Números abre el 1 de ziv del segundo año tras la salida (Nú 1:1) y el campamento parte el 20 (Nú 10:11). Perspicacia
+    solo saca de orden Nú 7:1-88 y 9:1-15; el día no se sabe.
+orden_relato:
+  serie: numeros
+  orden: 3014
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- aaron
+- eleazar-hijo-de-aaron
+- itamar
+- eliasaf-hijo-de-lael
+- elizafan-hijo-de-uziel
+- zuriel
+pasajes:
+- Nú 3:14-39
+resumen: 'Moisés cuenta por familias a los varones levitas de un mes o más: 22.000. Guersonitas, cohatitas y meraritas acampan
+  al oeste, al sur y al norte del tabernáculo; Moisés, Aarón y sus hijos, al este.'
+razon: Nú 3:14-39. Perspicacia «Levitas» lo sitúa en el desierto de Sinaí y da el lado de cada familia; «Guersonitas» y «Meraritas»,
+  cifras y jefes. El mes se deduce del orden del libro.
+fuentes:
+- numeros-3
+- it-levitas
+- it-guersonitas
+- it-meraritas
+- it-eleazar
+- it-numeros-libro
+enlaces:
+- titulo: Números 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/3
+  tipo: biblia
+- titulo: 'Perspicacia: «Levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002731
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

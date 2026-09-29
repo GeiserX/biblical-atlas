@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: miguel-padre-de-setur
+nombre: Miguel
+nombres:
+- nombre: Miguel
+perspicacia: 1200003035#2
+desambiguacion: Miguel de Aser, padre del espía Setur; no el arcángel Miguel ni los Migueles de Crónicas.
+resumen: Aserita, padre de Setur, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+razon: Perspicacia «Miguel», núm. 2; Nú 13:13.
+fuentes:
+- it-miguel
+- numeros-13
+enlaces:
+- titulo: 'Perspicacia: «Miguel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003035
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

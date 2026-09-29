@@ -22,6 +22,9 @@ fuentes:
 - it-basan
 - salmos-135
 - salmos-136
+- numeros-21
+- it-hesbon
+- it-jahaz
 enlaces:
 - titulo: 'Perspicacia: «Sehón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004117
@@ -34,3 +37,21 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: hesbon
+  deducido: false
+  fuentes:
+  - numeros-21
+  - it-sehon
+  - it-hesbon
+  razon: 'Nú 21:26, 34: Hesbón era la ciudad de Sehón; Perspicacia «Sehón» la da como su capital.'
+  estado: verificado
+- tipo: murio_en
+  lugar: jahaz
+  deducido: false
+  fuentes:
+  - numeros-21
+  - it-sehon
+  razon: 'Nú 21:23, 24: salió a pelear en Jáhaz e Israel lo derrotó a espada; Perspicacia «Sehón»: allí murió.'
+  estado: verificado
