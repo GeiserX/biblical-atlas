@@ -77,6 +77,8 @@ fuentes:
 - hch-15
 - 1-corintios-9
 - 1-corintios-15
+- galatas-1
+- galatas-2
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
@@ -128,6 +130,7 @@ relaciones:
   - hechos-8
   - lucas-22
   - juan-18
+  - galatas-2
   razon: 'Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia
     «Pedro», párr. 7.'
   estado: verificado

@@ -60,7 +60,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Romanos](../../../data/cobertura/romanos.yaml) | 16 de 16 | 432 de 432 | 100 % |
 | [1 Corintios](../../../data/cobertura/1-corintios.yaml) | 16 de 16 | 437 de 437 | 100 % |
 | [2 Corintios](../../../data/cobertura/2-corintios.yaml) | 13 de 13 | 257 de 257 | 100 % |
-| Gálatas | 0 de 6 | 0 de 149 | 0 % |
+| [Gálatas](../../../data/cobertura/galatas.yaml) | 6 de 6 | 149 de 149 | 100 % |
 | Efesios | 0 de 6 | 0 de 155 | 0 % |
 | Filipenses | 0 de 4 | 0 de 104 | 0 % |
 | Colosenses | 0 de 4 | 0 de 95 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 613 de 1189 | 16865 de 31062 | 54 % |
+| **Total** | 619 de 1189 | 17014 de 31062 | 55 % |
 
 ## Capítulos empezados
 

@@ -21,6 +21,7 @@ fuentes:
 - hechos-12
 - hch-14
 - 1-corintios-9
+- galatas-2
 enlaces:
 - titulo: 'Perspicacia: «Bernabé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000566
@@ -40,6 +41,10 @@ historial:
   cambio: La relación con Pablo hasta c. 49 cita ahora Hch 15:2, la subida juntos a Jerusalén, que ya entraba en su fecha
     y no tenía fuente.
   fuente: hch-15
+- fecha: '2026-09-29'
+  cambio: 'La relación con Pablo hasta c. 49 cita ahora Gál 2:1, 9, 13: suben juntos a Jerusalén, las columnas les dan la
+    mano y Bernabé sigue a su lado en Antioquía.'
+  fuente: galatas-2
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -95,8 +100,9 @@ relaciones:
   - hechos-11
   - hch-13
   - hch-15
+  - galatas-2
   razon: Lo busca en Tarso, trabajan en Antioquía, llevan el socorro a Jerusalén, hacen juntos el primer viaje y suben a Jerusalén
-    por la circuncisión (Hch 11:25-30; 13:2; 15:2).
+    por la circuncisión (Hch 11:25-30; 13:2; 15:2; Gál 2:1, 9, 13).
   estado: verificado
 - tipo: vivio_en
   lugar: jerusalen
@@ -115,6 +121,7 @@ relaciones:
   - it-bernabe
   - hch-13
   - hch-14
+  - galatas-2
   razon: 'Hch 11:22-26: enviado a Antioquía, se quedó allí un año entero con Saulo; Hch 13:1 lo cuenta entre sus profetas
     y maestros.'
   estado: verificado

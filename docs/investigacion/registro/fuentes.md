@@ -250,6 +250,10 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | g99-monte-sinai | [El monte Sinaí: una joya en el desierto](https://wol.jw.org/es/wol/d/r4/lp-s/101999285) | ¡Despertad! (1999) | 1 | 1999 | 2026-09-28 |
 | galatas-1 | [Gálatas 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | galatas-2 | [Gálatas 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-3 | [Gálatas 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-4 | [Gálatas 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-5 | [Gálatas 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-6 | [Gálatas 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-1 | [Génesis 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-10 | [Génesis 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-11 | [Génesis 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -1144,6 +1148,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-mar-rojo | [Mar Rojo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003669) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mar-salado | [Mar Salado](https://wol.jw.org/es/wol/d/r4/lp-s/1200003813) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-marah | [Marah](https://wol.jw.org/es/wol/d/r4/lp-s/1200002897) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-marca | [Marca](https://wol.jw.org/es/wol/d/r4/lp-s/1200002903) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-marcos | [Marcos](https://wol.jw.org/es/wol/d/r4/lp-s/1200002902) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-mardoqueo | [Mardoqueo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003111) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-maria | [María](https://wol.jw.org/es/wol/d/r4/lp-s/1200002918) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |

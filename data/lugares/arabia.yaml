@@ -10,14 +10,15 @@ precision: zona
 coord_fuente: openbible:a0f4ea8
 coord_url: https://www.openbible.info/geo/ancient/a0f4ea8/arabia-2
 coord_nota: Punto representativo de Arabia Petrea según OpenBible; no marca adónde fue Pablo.
-resumen: La península arábiga y sus desiertos del norte. Tras su conversión, Pablo fue a Arabia y volvió a Damasco;
-  no se sabe a qué parte fue.
-razon: 'Perspicacia «Arabia», párrafo sobre Gál 1:17: pudo ser el desierto de Siria o cualquier parte de la península.
-  Coordenada de OpenBible: solo tomamos el punto.'
+resumen: 'La península arábiga y sus desiertos del norte, con la península del Sinaí: Pablo llama al Sinaí montaña de Arabia
+  (Gál 4:25). Tras su conversión fue a Arabia y volvió a Damasco; no se sabe a qué parte.'
+razon: 'Perspicacia «Arabia»: sobre Gál 1:17, pudo ser el desierto de Siria o cualquier parte de la península; en otro párrafo,
+  el Sinaí queda en Arabia (Gál 4:25). Coordenada de OpenBible: solo tomamos el punto.'
 fuentes:
 - it-arabia
 - galatas-1
 - openbible-geo
+- galatas-4
 enlaces:
 - titulo: 'Perspicacia: «Arabia»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
@@ -25,5 +26,12 @@ enlaces:
 - titulo: Gálatas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Añade que Gál 4:25 sitúa el monte Sinaí en Arabia, como recoge Perspicacia «Arabia».
+  fuente: galatas-4
+- fecha: '2026-09-29'
+  cambio: La razón cita también el párrafo de Perspicacia «Arabia» sobre el Sinaí y Gál 4:25.
+  fuente: galatas-4
+consultado: '2026-09-29'
 estado: verificado

@@ -54,10 +54,10 @@ candidatos:
     1999, párr. 5).
   coord_fuente: openbible:abfba2a
   coord_url: https://www.openbible.info/geo/ancient/abfba2a/mount-sinai
-resumen: Monte donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad; lo más citado es un macizo
-  de dos cumbres en el sur de la península del Sinaí.
-razon: Perspicacia «Sinaí» (párr. 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin Bishar no aparecen
-  en wol.jw.org, así que no los incluimos.
+resumen: Monte de Arabia, según Gál 4:25, donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad;
+  lo más citado es un macizo de dos cumbres en el sur de la península del Sinaí.
+razon: Perspicacia «Sinaí» (párr. 1, con Gál 4:25, y 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin
+  Bishar no aparecen en wol.jw.org, así que no los incluimos.
 fuentes:
 - it-sinai
 - it-horeb
@@ -86,6 +86,7 @@ fuentes:
 - deuteronomio-4
 - deuteronomio-5
 - deuteronomio-9
+- galatas-4
 enlaces:
 - titulo: 'Perspicacia: «Sinaí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
@@ -96,5 +97,12 @@ enlaces:
 - titulo: Éxodo 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: Añade que Pablo lo llama montaña de Arabia (Gál 4:25), con lo que abre Perspicacia «Sinaí», párr. 1.
+  fuente: galatas-4
+- fecha: '2026-09-29'
+  cambio: La razón cita el párr. 1 de Perspicacia «Sinaí», que apoya lo de Arabia.
+  fuente: galatas-4
 consultado: '2026-09-29'
 estado: verificado

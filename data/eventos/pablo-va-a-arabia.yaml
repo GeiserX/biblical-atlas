@@ -18,12 +18,20 @@ pasajes:
 - Gál 1:15-17
 resumen: Después de su conversión, Pablo pasa un tiempo en Arabia y vuelve a Damasco. No se sabe a qué parte fue
   ni si fue antes o después de sus primeros días de predicación.
-razon: 'Perspicacia «Pablo» (párr. 6 y 7) y «Arabia» (sobre Gál 1:17): los dos relatos se complementan y solo es
-  dudoso el orden.'
+razon: 'Perspicacia «Pablo» (párr. 6 y 7) y «Arabia» (sobre Gál 1:17): solo es dudoso el orden. Va entre la predicación en
+  Damasco y la huida: la nota de Gál 1:17 ve posible que predicara antes y después.'
 fuentes:
 - it-pablo
 - it-arabia
 - galatas-1
 buscar: Pablo en Arabia
-consultado: '2026-09-28'
+orden_relato:
+  serie: hechos
+  orden: 921
+historial:
+- fecha: '2026-09-29'
+  cambio: Recibe orden en la serie de Hechos, entre pablo-predica-en-damasco (919) y huida-de-damasco (923), y la razón dice
+    por qué.
+  fuente: galatas-1
+consultado: '2026-09-29'
 estado: verificado

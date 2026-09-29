@@ -19,6 +19,8 @@ no_afirmamos:
 - 'El año y el lugar exactos de su muerte: Perspicacia solo lo cree probable bajo Nerón, poco después de c. 65.'
 - 'Que Pablo se casara alguna vez: en sus viajes no estaba casado (1Co 7:8), y la nota de estudio de 1Co 7:7 solo ve posible
   que fuera viudo.'
+- 'Que las marcas de esclavo de Jesús que llevaba en el cuerpo (Gál 6:17) fueran cicatrices: Perspicacia «Marca» lo ve posible,
+  pero quizás aludía a su vida de ministro.'
 resumen: Apóstol de Jesucristo, de la tribu de Benjamín, nacido en Tarso de Cilicia y ciudadano romano. Hizo tres
   viajes misionales y la Tabla de los libros le atribuye 14 cartas.
 razon: Perspicacia «Pablo» da su tribu, su origen y sus dos nombres; la Tabla de los libros lo pone como escritor
@@ -76,6 +78,12 @@ fuentes:
 - 2-corintios-11
 - 2-corintios-12
 - 2-corintios-13
+- galatas-1
+- galatas-2
+- galatas-4
+- galatas-5
+- galatas-6
+- it-marca
 enlaces:
 - titulo: 'Perspicacia: «Pablo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
@@ -121,6 +129,7 @@ relaciones:
   - it-tarso
   - hch-9
   - hechos-11
+  - galatas-1
   razon: Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).
   estado: verificado
 - tipo: vivio_en
@@ -138,6 +147,7 @@ relaciones:
   - it-pablo
   - it-siria
   - hechos-11
+  - galatas-2
   razon: Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).
   estado: verificado
 - tipo: vivio_en
@@ -205,6 +215,7 @@ relaciones:
   - bt-8
   - hch-26
   - 2-corintios-11
+  - galatas-1
   razon: Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la
     ciudad desde Arabia.
   estado: verificado
@@ -327,4 +338,23 @@ relaciones:
   - tnm-tabla
   razon: 'Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla
     de los libros.'
+  estado: verificado
+- tipo: acompana
+  persona: pedro
+  relacion: visitante de
+  fecha:
+    desde: 36
+    hasta: 36
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 36 e.c.
+  deducido: false
+  fuentes:
+  - galatas-1
+  - it-pedro
+  - si-3
+  razon: 'Gál 1:18: tres años después de convertirse sube a Jerusalén a ver a Cefas y se queda con él 15 días. Perspicacia
+    «Pedro», párr. 20, lo pone quizás en 36; el estudio 3, párr. 22, cuenta 34-36.'
   estado: verificado
