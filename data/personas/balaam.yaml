@@ -1,0 +1,84 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: balaam
+nombre: Balaam
+nombres:
+- nombre: Balaam
+perspicacia: '1200000543'
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+resumen: Profeta de Petor, hijo de Beor. Balac lo llamó para maldecir a Israel, pero Jehová solo le dejó bendecirlo. Después
+  enseñó a Balac a hacer pecar a Israel en Peor y murió a espada con los madianitas.
+razon: Perspicacia «Balaam» (siglo XV a.e.c.) y «Agag», núm. 1 (hacia 1473 a.e.c.); Nú 22:5-24:25; 31:8, 16.
+fuentes:
+- it-balaam
+- it-agag
+- numeros-22
+- numeros-23
+- numeros-24
+- numeros-31
+enlaces:
+- titulo: 'Perspicacia: «Balaam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000543
+  tipo: perspicacia
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+no_afirmamos:
+- 'Que volviera a Petor al acabar Nú 24: la frase solo dice que se fue de allí, y Perspicacia lo sitúa después entre los madianitas.'
+relaciones:
+- tipo: pariente
+  persona: beor-padre-de-balaam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-22
+  - it-beor
+  - numeros-31
+  razon: 'Nú 22:5: Balaam hijo de Beor.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: petor
+  deducido: false
+  fuentes:
+  - numeros-22
+  - it-petor
+  razon: 'Nú 22:5: estaba en Petor, junto al Río, en su tierra natal.'
+  estado: verificado
+- tipo: acompana
+  persona: balac
+  deducido: false
+  fuentes:
+  - numeros-22
+  - it-balac
+  razon: 'Nú 22:5, 6, 39: Balac lo mandó llamar para maldecir a Israel, y Balaam acabó yendo con él.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mesopotamia
+  deducido: true
+  fuentes:
+  - numeros-23
+  - it-aram
+  razon: 'Nú 23:7: Balac lo trajo de Aram, de las montañas del este. Perspicacia «Aram», núm. 5, lo sitúa en el norte de Mesopotamia,
+    en Aram-Naharaim.'
+  estado: verificado
+- tipo: murio_en
+  lugar: madian
+  deducido: false
+  fuentes:
+  - numeros-31
+  - it-balaam
+  - it-madian
+  razon: 'Nú 31:8: murió a espada en la guerra contra Madián; Perspicacia «Balaam»: se había quedado con los madianitas. Es
+    el Madián de junto a Moab y Sehón («Madián, madianitas», núm. 3), no el del golfo de Aqaba.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

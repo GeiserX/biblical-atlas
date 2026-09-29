@@ -79,7 +79,7 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 
 **Cada lugar con nombre es un lugar**: ciudades, regiones, países, montes, ríos, mares, valles, desiertos, y también los que solo salen en una lista de fronteras o de etapas. Los dioses, las visiones y las construcciones siguen la tabla de la sección 4. Un lugar con varios nombres es una sola ficha, con los demás en `nombres` y su época si la fuente la da (Luz y Betel).
 
-- **Punto de OpenBible.** Se busca por su nombre en inglés (`grep -i '"friendly_id":"Moab' /tmp/be-wol/ancient.jsonl`) y se toma el punto de la primera resolución. `coord_fuente: openbible:<id>` y `coord_url: https://www.openbible.info/geo/ancient/<id>/<nombre-en-inglés>`. Una región o un país lleva `precision: zona` y dice en `coord_nota` qué representa su punto.
+- **Punto de OpenBible.** Se busca por su nombre en inglés (`grep -i '"friendly_id":"Moab' /tmp/be-wol/ancient.jsonl`) y se toma el punto de la primera resolución. Si jw.org da el sitio y es otra resolución de la misma ficha, se toma esa, y `coord_nota` dice cuál es y por qué. `coord_fuente: openbible:<id>` y `coord_url: https://www.openbible.info/geo/ancient/<id>/<nombre-en-inglés>`. Una región o un país lleva `precision: zona` y dice en `coord_nota` qué representa su punto.
 - **Sin punto seguro.** Si jw.org no lo sitúa y OpenBible no tiene punto, o jw.org duda entre sitios, `lat` y `lon` van a `null` con `candidatos` (sección «Lugares» de [README.md](README.md#campos-por-tipo)): una zona alrededor de lo que dice el texto («en el Négueb de Judá») con `coord_fuente: calculo` y la cuenta en `nota`. Si ni eso, `candidatos: []` y `estado: pendiente`. Nunca un punto inventado.
 
 ## 6. Eventos

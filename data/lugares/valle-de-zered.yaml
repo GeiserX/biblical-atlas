@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-zered
+nombre: Valle de Zered
+nombres:
+- nombre: Valle de Zered
+  nota: La nota de Nú 21:12 da «wadi»; Perspicacia lo llama valle torrencial.
+tipo: valle
+lat: 31.02701
+lon: 35.48533
+precision: zona
+coord_fuente: openbible:ab5161f
+coord_url: https://www.openbible.info/geo/ancient/ab5161f/zered
+coord_nota: Punto representativo de OpenBible para el cauce del Wadi al-Hasa.
+resumen: Valle torrencial que baja al extremo sureste del mar Muerto y separaba Moab de Edom. Israel acampó junto a él al
+  cabo de los treinta y ocho años de vagar que siguieron a la rebelión en Cadés.
+razon: 'Perspicacia «Zered, Valle torrencial de» y «Edom»; Nú 21:12. Se suele identificar con Wadi el-Hesa. OpenBible: solo
+  el punto.'
+fuentes:
+- it-zered
+- it-edom
+- openbible-geo
+- numeros-21
+enlaces:
+- titulo: 'Perspicacia: «Zered, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004707
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

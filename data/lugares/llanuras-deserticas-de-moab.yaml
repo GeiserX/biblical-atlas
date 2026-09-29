@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: llanuras-deserticas-de-moab
+nombre: Llanuras desérticas de Moab
+nombres:
+- nombre: Llanuras desérticas de Moab
+- nombre: Llanuras de Moab
+  nota: Rótulo del mapa B3.
+tipo: llanura
+lat: 31.84018
+lon: 35.67368
+precision: zona
+coord_fuente: openbible:aca767b
+coord_url: https://www.openbible.info/geo/ancient/aca767b/moab-2
+coord_nota: Punto que OpenBible da a las llanuras, el mismo que pone para Sitim. La llanura se extiende junto a la orilla
+  este del Jordán.
+resumen: Llanura en la orilla este del Jordán, enfrente de Jericó. Fue de Moab hasta que la tomó el rey amorreo Sehón. Allí
+  acampó Israel al acabar el viaje por el desierto, antes de cruzar el río.
+razon: 'Perspicacia «Moab, moabitas», apartados sobre el territorio y la llegada de Israel; Nú 22:1. OpenBible: solo el punto.'
+fuentes:
+- it-moab
+- openbible-geo
+- numeros-22
+- numeros-26
+- it-abarim
+- numeros-36
+- numeros-31
+- tnm-b3
+- numeros-33
+- numeros-35
+enlaces:
+- titulo: 'Perspicacia: «Moab, moabitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003097
+  tipo: perspicacia
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+- titulo: 'Perspicacia: «Abarim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000010
+  tipo: perspicacia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

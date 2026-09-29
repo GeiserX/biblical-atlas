@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-burra-de-balaam-habla
+titulo: La burra de Balaam habla y el ángel le cierra el paso
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 22022
+lugares:
+- moab
+- petor
+personas:
+- balaam
+presentes: []
+pasajes:
+- Nú 22:22-35
+resumen: De camino, el ángel de Jehová se planta tres veces ante Balaam, espada en mano. La burra lo ve y se aparta, y Balaam
+  la golpea. Jehová la hace hablar, Balaam ve al ángel y este le deja seguir.
+razon: 'Nú 22:22-35; Perspicacia «Balaam», párr. 3. El texto no nombra el sitio: van el destino y el origen del viaje, sin
+  situar a nadie. Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+fuentes:
+- numeros-22
+- it-balaam
+- it-agag
+- it-aaron
+enlaces:
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

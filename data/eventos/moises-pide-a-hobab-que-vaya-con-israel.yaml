@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-pide-a-hobab-que-vaya-con-israel
+titulo: Moisés pide a Hobab que vaya con Israel
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: ziv (iyar) de 1512 a.e.c.
+  detalle:
+    mes: iyar
+orden_relato:
+  serie: numeros
+  orden: 10029
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- hobab
+pasajes:
+- Nú 10:29-32
+resumen: Al ponerse en marcha, Moisés invita a Hobab, hijo de Reuel, a ir con Israel y guiarlos por el desierto, que conoce.
+  Hobab quiere volver con los suyos; Moisés insiste y le promete parte del bien de Jehová.
+razon: Perspicacia «Hobab» y «Quenita» ponen la petición cuando Israel iba a dejar la región del Sinaí, en ziv de 1512 a.e.c.
+  (Nú 10:11). Añaden que, al parecer, Hobab acabó yendo con ellos.
+fuentes:
+- numeros-10
+- it-hobab
+- it-quenita
+- si-3
+enlaces:
+- titulo: Números 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/10
+  tipo: biblia
+- titulo: 'Perspicacia: «Hobab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002045
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

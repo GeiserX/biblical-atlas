@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eldad
+nombre: Eldad
+nombres:
+- nombre: Eldad
+perspicacia: '1200001281'
+resumen: Anciano de Israel, uno de los 70 que Moisés reunió para que le ayudaran con el pueblo. Se quedó en el campamento
+  en vez de acudir a la tienda, y allí recibió el espíritu y profetizó, como Medad.
+razon: Perspicacia «Eldad»; Nú 11:16, 17, 24-29.
+fuentes:
+- it-eldad
+- numeros-11
+enlaces:
+- titulo: 'Perspicacia: «Eldad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001281
+  tipo: perspicacia
+relaciones:
+- tipo: acompana
+  persona: moises
+  relacion: ayudante de
+  deducido: false
+  fuentes:
+  - numeros-11
+  - it-eldad
+  razon: 'Nú 11:16, 17, 26: estaba anotado entre los 70 ancianos que recibieron parte del espíritu de Moisés para compartir
+    su carga.'
+  estado: verificado
+- tipo: acompana
+  persona: medad
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-11
+  - it-eldad
+  - it-medad
+  razon: 'Nú 11:26, 27: los dos se quedaron en el campamento y allí se pusieron a profetizar.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

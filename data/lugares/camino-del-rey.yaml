@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: camino-del-rey
+nombre: Camino del Rey
+nombres:
+- nombre: Camino del Rey
+- nombre: Camino de Basán
+  nota: Perspicacia cree que así se llamaba su tramo norte, de Hesbón a Astarot (Nú 21:33).
+tipo: region
+lat: 31.9547
+lon: 35.9343
+precision: zona
+coord_fuente: openbible:a057d59
+coord_url: https://www.openbible.info/geo/ancient/a057d59/kings-highway
+coord_nota: Punto representativo de OpenBible para la ruta, que iba del golfo de ʽAqaba al menos hasta el Jaboc, y quizá hasta
+  Damasco.
+resumen: Ruta que cruzaba de sur a norte las mesetas al este del Arabá y del Jordán, por las ciudades principales de Edom.
+  Israel prometió no salirse de ella si Edom y Sehón lo dejaban pasar.
+razon: 'Perspicacia «Camino del rey» y «Edom», apartado «Posición estratégica»; Nú 20:17. OpenBible: solo el punto.'
+fuentes:
+- it-camino-del-rey
+- it-edom
+- lbt-egipto-a-la-tierra-prometida
+- openbible-geo
+- numeros-20
+- numeros-21
+enlaces:
+- titulo: 'Perspicacia: «Camino del rey»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002617
+  tipo: perspicacia
+- titulo: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  tipo: biblia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

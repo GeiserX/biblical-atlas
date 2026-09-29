@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hesbon
+nombre: Hesbón
+nombres:
+- nombre: Hesbón
+tipo: ciudad
+lat: 31.800811
+lon: 35.809062
+precision: punto
+coord_fuente: openbible:abf2fc1
+coord_url: https://www.openbible.info/geo/ancient/abf2fc1/heshbon
+resumen: Ciudad al este del Jordán, a medio camino entre el Arnón y el Jaboc. Sehón se la quitó a Moab y la hizo su capital;
+  Israel la tomó y luego la reconstruyó Rubén.
+razon: 'Perspicacia «Hesbón»; Nú 21:25-30, 34. Se identifica con las ruinas de Hisban. OpenBible: solo el punto.'
+fuentes:
+- it-hesbon
+- openbible-geo
+- numeros-21
+- numeros-32
+enlaces:
+- titulo: 'Perspicacia: «Hesbón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002006
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

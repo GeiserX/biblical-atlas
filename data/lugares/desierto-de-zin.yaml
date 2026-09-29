@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-zin
+nombre: Desierto de Zin
+nombres:
+- nombre: Desierto de Zin
+  nota: No es el desierto de Sin, entre Elim y el Sinaí, que tiene su propia ficha.
+- nombre: Zin
+  nota: Sin la palabra desierto, en la frontera sur de Judá; Perspicacia duda entre el desierto y un pueblo cercano.
+tipo: desierto
+lat: 30.971
+lon: 35.325
+precision: zona
+coord_fuente: openbible:a0b5c50
+coord_url: https://www.openbible.info/geo/ancient/a0b5c50/zin-1
+coord_nota: Punto representativo de OpenBible para todo el desierto, cuyos límites no se conocen.
+resumen: Desierto del sur, junto a la frontera oeste de Edom, donde estaba Cadés. Desde él empezaron los doce espías a recorrer
+  Canaán en el segundo año tras la salida de Egipto.
+razon: 'Perspicacia «Zin», núm. 1, párr. 1 y 2; Nú 13:21, 26. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-zin
+- openbible-geo
+- numeros-13
+- numeros-20
+- numeros-27
+- numeros-33
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Zin»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004738
+  tipo: perspicacia
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+- titulo: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  tipo: biblia
+- titulo: Números 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  tipo: biblia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ofrendas-para-la-inauguracion-del-altar
+titulo: Los doce jefes presentan sus ofrendas para inaugurar el altar
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: nisán de 1512 a.e.c.
+  detalle:
+    mes: nisan
+  nota: 'Doce días seguidos desde que se ungió el altar, el día en que se montó el tabernáculo (Nú 7:1, 10, 11; Éx 40:17):
+    en la primera mitad de nisán.'
+orden_relato:
+  serie: numeros
+  orden: 710
+  tras: los-jefes-dan-carretas-para-el-tabernaculo
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- nahson
+- netanel-hijo-de-zuar
+- eliab-hijo-de-helon
+- elizur
+- selumiel
+- eliasaf-hijo-de-deuel
+- elisama-hijo-de-amihud
+- gamaliel-hijo-de-pedahzur
+- abidan
+- ahiezer-hijo-de-amisadai
+- paguiel
+- ahira
+pasajes:
+- Nú 7:10-88
+resumen: 'Un jefe por día, empezando por Nahsón de Judá, entrega lo mismo: un plato y un tazón de plata con harina y aceite,
+  una copa de oro con incienso y animales para los sacrificios.'
+razon: 'Nú 7:10, 11: empieza el día en que se unge el altar y dura doce días. Perspicacia «Abidán» fecha la inauguración en
+  1512 a.e.c.; «Números, Libro de» la pone antes que el contexto del libro.'
+fuentes:
+- numeros-7
+- it-abidan
+- it-numeros-libro
+- it-tabernaculo
+- si-3
+enlaces:
+- titulo: Números 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

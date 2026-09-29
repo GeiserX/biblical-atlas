@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: torrente-de-egipto
+nombre: Torrente de Egipto
+nombres:
+- nombre: Torrente de Egipto
+  nota: La nota de Nú 34:5 da también «wadi».
+- nombre: Valle torrencial de Egipto
+  nota: Nombre del artículo de Perspicacia.
+tipo: rio
+lat: 31.145708
+lon: 33.80649
+precision: zona
+coord_fuente: openbible:a7a59b4
+coord_url: https://www.openbible.info/geo/ancient/a7a59b4/brook-of-egypt
+coord_nota: Punto de OpenBible en el uadi el-ʽArish, cerca de su desembocadura. El cauce viene de más de 200 km tierra adentro,
+  en el Sinaí.
+resumen: Gran uadi que marcaba el límite suroeste de la Tierra Prometida. Se relaciona con el uadi el-ʽArish, seco en verano
+  y crecido en la estación de lluvias, que desemboca en el Mediterráneo.
+razon: 'Perspicacia «Egipto, Valle torrencial de»; Nú 34:5. OpenBible: solo el punto.'
+fuentes:
+- it-egipto-valle-torrencial
+- openbible-geo
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Egipto, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001266
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

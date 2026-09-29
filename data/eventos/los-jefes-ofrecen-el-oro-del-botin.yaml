@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-jefes-ofrecen-el-oro-del-botin
+titulo: Los jefes del ejército ofrecen el oro del botín
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  nota: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+orden_relato:
+  serie: numeros
+  orden: 31048
+lugares:
+- llanuras-deserticas-de-moab
+personas:
+- moises
+- eleazar-hijo-de-aaron
+pasajes:
+- Nú 31:48-54
+resumen: Los jefes de mil y de cien cuentan a sus hombres y no falta ninguno. Ofrecen a Jehová las joyas de oro que cada uno
+  cogió, 16.750 siclos, y Moisés y Eleazar las guardan en la tienda de reunión.
+razon: Nú 31:48-54. Perspicacia «Madián, madianitas», núm. 2, calcula que ese oro pesaba más de 191 kilos.
+fuentes:
+- numeros-31
+- it-madian
+- it-aaron
+- si-3
+- it-basan
+enlaces:
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+- titulo: 'Perspicacia: «Madián, madianitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

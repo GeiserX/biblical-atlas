@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: deuel
+nombre: Deuel
+nombres:
+- nombre: Deuel
+- nombre: Reuel
+  nota: Forma de Nú 2:14. Perspicacia cree probable un error de copia, porque en hebreo la d y la r se parecen mucho.
+perspicacia: '1200001162'
+desambiguacion: Deuel el gadita, llamado Reuel en Nú 2:14; no Reuel el suegro de Moisés (Jetró) ni Reuel el hijo de Esaú.
+no_confundir_con:
+- jetro
+- reuel-hijo-de-esau
+resumen: Gadita, padre de Eliasaf, jefe de Gad en el desierto. Nú 2:14 lo llama Reuel.
+razon: Perspicacia «Deuel» y «Reuel», núm. 3; Nú 1:14; 2:14.
+fuentes:
+- it-deuel
+- it-reuel
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Deuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001162
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Reuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003714
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

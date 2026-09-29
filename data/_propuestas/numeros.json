@@ -1,0 +1,5988 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "numeros",
+ "agente": "escritor-numeros",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aminadab-hijo-de-ram",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-1",
+      "numeros-2"
+     ],
+     "razon": "Nú 1:7 y 2:3 lo llaman hijo de Aminadab.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "numeros-1"
+     ],
+     "razon": "Nú 1:4, 7, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "aaron",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "numeros-1"
+     ],
+     "razon": "Nú 1:4, 7, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aminadab-hijo-de-ram",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "gamaliel-fariseo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001604#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gamaliel-fariseo",
+   "campo": "no_confundir_con",
+   "valores": [
+    "gamaliel-hijo-de-pedahzur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jetro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "deuel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "reuel-hijo-de-esau",
+   "campo": "no_confundir_con",
+   "valores": [
+    "deuel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aminadab-hijo-de-ram",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eliseba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab"
+     ],
+     "razon": "Éx 6:23: Eliseba se los dio a Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abihu",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Abihú, el siguiente hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Eleazar es otro hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "itamar",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Itamar es otro hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "egipto",
+     "deducido": true,
+     "fuentes": [
+      "it-nadab"
+     ],
+     "razon": "Perspicacia «Nadab», núm. 1: nació en Egipto y salió con Israel en el éxodo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1511,
+      "hasta": -1511,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1512 a.e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "levitico-10",
+      "it-nadab",
+      "it-tabernaculo"
+     ],
+     "razon": "Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eliseba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab"
+     ],
+     "razon": "Éx 6:23: Eliseba se los dio a Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abihu",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Abihú, el siguiente hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Eleazar es otro hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "itamar",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: Itamar es otro hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "egipto",
+     "deducido": true,
+     "fuentes": [
+      "it-nadab"
+     ],
+     "razon": "Perspicacia «Nadab», núm. 1: nació en Egipto y salió con Israel en el éxodo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1511,
+      "hasta": -1511,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "levitico-10",
+      "it-nadab",
+      "it-tabernaculo",
+      "numeros-3"
+     ],
+     "razon": "Le 10:1, 2 y Nú 3:4: murió con Abihú ante Jehová, en el desierto de Sinaí, por ofrecer fuego no autorizado.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "abihu",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eliseba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-abihu"
+     ],
+     "razon": "Éx 6:23: Eliseba se los dio a Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "egipto",
+     "deducido": true,
+     "fuentes": [
+      "it-abihu"
+     ],
+     "razon": "Perspicacia «Abihú», párr. 1: nació en Egipto y era ya adulto en el éxodo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1511,
+      "hasta": -1511,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1512 a.e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "levitico-10",
+      "it-abihu",
+      "it-tabernaculo"
+     ],
+     "razon": "Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eliseba",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-abihu"
+     ],
+     "razon": "Éx 6:23: Eliseba se los dio a Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "egipto",
+     "deducido": true,
+     "fuentes": [
+      "it-abihu"
+     ],
+     "razon": "Perspicacia «Abihú», párr. 1: nació en Egipto y era ya adulto en el éxodo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1511,
+      "hasta": -1511,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "levitico-10",
+      "it-abihu",
+      "it-tabernaculo",
+      "numeros-3"
+     ],
+     "razon": "Le 10:1, 2 y Nú 3:4: murió con Nadab ante Jehová, en el desierto de Sinaí, por ofrecer fuego no autorizado.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abihu",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "levi-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guerson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "merari",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "libni-hijo-de-guerson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simei-hijo-de-guerson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "izhar-hijo-de-cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hebron-hijo-de-cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "uziel-hijo-de-cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahli-hijo-de-merari",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "musi",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-nadab-y-abihu",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 3:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-nadab-y-abihu",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: primogénito de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abihu",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: Abihú, otro hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: Eleazar, otro hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "itamar",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: Itamar, otro hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abihu",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2, 32: hijo del sacerdote Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "itamar",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2, 4: Itamar, su hermano, sigue de sacerdote con él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:2: hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "levi-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:17: uno de los tres hijos de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "levi-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:17: uno de los tres hijos de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "merari",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "levi-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:17: uno de los tres hijos de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:17: Cohat es otro hijo de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "merari",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:17: Merarí es otro hijo de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "libni-hijo-de-guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "guerson",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:18: hijo de Guersón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "libni-hijo-de-guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simei-hijo-de-guerson",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:18: Simeí es el otro hijo de Guersón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simei-hijo-de-guerson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "guerson",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:18: hijo de Guersón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: uno de los hijos de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "izhar-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: uno de los hijos de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hebron-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: uno de los hijos de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "uziel-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: uno de los hijos de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "izhar-hijo-de-cohat",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: Izhar es otro hijo de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "hebron-hijo-de-cohat",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: Hebrón es otro hijo de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "uziel-hijo-de-cohat",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:19: Uziel es otro hijo de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahli-hijo-de-merari",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "merari",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:20: hijo de Merarí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahli-hijo-de-merari",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "musi",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:20: Musí es el otro hijo de Merarí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "musi",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "merari",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:20: hijo de Merarí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "uziel-hijo-de-cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3"
+     ],
+     "razon": "Nú 3:30: Elizafán hijo de Uziel.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1512,
+      "hasta": -1511,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1513-1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-3",
+      "si-3",
+      "it-sinai"
+     ],
+     "razon": "Nú 3:14, 38: acampaba al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un año, de 1513 a 1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1512,
+      "hasta": -1511,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1513-1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-3",
+      "si-3",
+      "it-sinai"
+     ],
+     "razon": "Nú 3:14, 38: acampaba con sus hijos al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un año, de 1513 a 1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1512,
+      "hasta": -1511,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1513-1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-3",
+      "si-3",
+      "it-sinai"
+     ],
+     "razon": "Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512 a.e.c. (Perspicacia «Sinaí»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "desierto-de-sinai",
+     "fecha": {
+      "desde": -1512,
+      "hasta": -1511,
+      "precision": "rango",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1513-1512 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-3",
+      "si-3",
+      "it-sinai"
+     ],
+     "razon": "Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512 a.e.c. (Perspicacia «Sinaí»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "desierto-de-sinai",
+     "deducido": false,
+     "fuentes": [
+      "numeros-3",
+      "it-levitas"
+     ],
+     "razon": "Nú 3:14, 29, 30: las familias cohatitas que encabezaba acampaban al sur del tabernáculo cuando se registró a los levitas en el desierto de Sinaí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "resumen",
+   "antes": "Tercer hijo de Aarón y Eliseba. Fue escogido sacerdote con su padre y sus hermanos; se casó con una hija de Putiel, que le dio a Finehás, y sucedió a Aarón como sumo sacerdote.",
+   "despues": "Tercer hijo de Aarón y Eliseba, sacerdote con su padre y, en el desierto, jefe principal de los levitas. Se casó con una hija de Putiel, madre de Finehás, y sucedió a Aarón como sumo sacerdote.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que fue el jefe principal de los levitas en el desierto (Nú 3:32; Perspicacia «Eleazar», núm. 1).",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "razon",
+   "antes": "Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1.",
+   "despues": "Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1; Nú 3:32.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita Nú 3:32, de donde sale su cargo al frente de los levitas.",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "resumen",
+   "antes": "Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú, y fue cabeza de una familia de levitas.",
+   "despues": "Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú. En el desierto encabezó la casa paterna de los cohatitas, y de él viene una familia de levitas.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que estuvo al frente de la casa paterna de los cohatitas (Nú 3:30).",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "razon",
+   "antes": "Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5.",
+   "despues": "Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5; Nú 3:30.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita Nú 3:30, de donde sale su cargo.",
+    "fuente": "numeros-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-4"
+     ],
+     "razon": "Nú 4:16: hijo del sacerdote Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-4"
+     ],
+     "razon": "Nú 4:28, 33: hijo del sacerdote Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-7"
+     ],
+     "razon": "Nú 7:8 lo llama hijo del sacerdote Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aminadab-hijo-de-ram",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-7",
+      "it-nahson"
+     ],
+     "razon": "Nú 7:12 y 7:17 lo llaman hijo de Aminadab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aminadab-hijo-de-ram",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-7",
+    "it-numeros-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gamaliel-fariseo",
+   "campo": "no_confundir_con",
+   "valores": [
+    "gamaliel-hijo-de-pedahzur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jetro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "deuel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "reuel-hijo-de-esau",
+   "campo": "no_confundir_con",
+   "valores": [
+    "deuel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-9",
+    "it-pascua"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nahson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aminadab-hijo-de-ram",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-10"
+     ],
+     "razon": "Nú 10:14 lo llama hijo de Aminadab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jetro",
+     "relacion": "suegro",
+     "deducido": false,
+     "fuentes": [
+      "numeros-10"
+     ],
+     "razon": "Nú 10:29 llama a Reuel suegro de Moisés; la nota del versículo lo identifica con Jetró.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jetro",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gamaliel-fariseo",
+   "campo": "no_confundir_con",
+   "valores": [
+    "gamaliel-hijo-de-pedahzur"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10",
+    "it-sinai"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-paran",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "señor",
+     "deducido": false,
+     "fuentes": [
+      "numeros-11"
+     ],
+     "razon": "Nú 11:28: ayudante de Moisés desde joven.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-11"
+     ],
+     "razon": "Nú 11:28 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miriam-hermana-de-moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zipora",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "numeros-12",
+      "it-cusita"
+     ],
+     "razon": "Éx 2:21: Reuel lo casó con Ziporá, una de sus hijas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zipora",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-12",
+    "it-cusita"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zipora",
+   "campo": "razon",
+   "antes": "Perspicacia «Ziporá»; Éx 2:16-22; 4:20, 24-26; 18:2-6.",
+   "despues": "Perspicacia «Ziporá» y «Cusita»; Éx 2:16-22; 4:20, 24-26; 18:2-6; Nú 12:1, donde la llaman cusita por su origen árabe, no porque Moisés tomara otra esposa.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade Nú 12:1: Perspicacia «Ziporá» y «Cusita» la identifican con la esposa cusita por la que Míriam y Aarón criticaron a Moisés.",
+    "fuente": "numeros-12"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-paran",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hori-hijo-de-lotan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "hori-padre-de-safat"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jose-padre-de-igal"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000863#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-14",
+    "it-espias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-13",
+      "numeros-14",
+      "it-jefune"
+     ],
+     "razon": "Nú 13:6 y 14:6, 30, 38 lo llaman Caleb hijo de Jefuné.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-hijo-de-nun",
+     "deducido": false,
+     "fuentes": [
+      "numeros-14"
+     ],
+     "razon": "Nú 14:6-9, 30, 38: los dos espías fieles, a los que Jehová deja vivir.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13",
+    "numeros-14",
+    "it-espias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-13",
+      "numeros-14"
+     ],
+     "razon": "Nú 13:8, 16 y 14:6, 30, 38 lo llaman hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-paran",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13",
+    "it-espias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "negueb",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13",
+    "it-anaquim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zoan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "core-hijo-de-izhar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16",
+    "it-abiram",
+    "it-braserillo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "core-hijo-de-izhar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "izhar-hijo-de-cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16"
+     ],
+     "razon": "Nú 16:1: Coré hijo de Izhar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "izhar-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16"
+     ],
+     "razon": "Nú 16:1: Izhar hijo de Cohat.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "levi-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16"
+     ],
+     "razon": "Nú 16:1: Cohat hijo de Leví.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "datan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16",
+    "it-eliab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "datan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eliab-hijo-de-palu",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16",
+      "it-eliab",
+      "it-datan"
+     ],
+     "razon": "Nú 16:1, 12: Datán es hijo de Eliab.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abiram-hijo-de-eliab",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16"
+     ],
+     "razon": "Nú 16:1, 12 los llama a los dos hijos de Eliab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abiram-hijo-de-eliab",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16",
+    "it-eliab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abiram-hijo-de-eliab",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eliab-hijo-de-palu",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16",
+      "it-eliab",
+      "it-abiram"
+     ],
+     "razon": "Nú 16:1, 12: Abiram es hijo de Eliab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-16"
+     ],
+     "razon": "Nú 16:37: Eleazar, hijo del sacerdote Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "numeros-19"
+     ],
+     "razon": "Nú 19:1: Jehová da la ley a Moisés y Aarón juntos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-20"
+     ],
+     "razon": "Nú 20:8: Jehová le habla de su hermano Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-20",
+    "it-hor"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "monte-hor",
+     "fecha": {
+      "desde": -1473,
+      "hasta": -1473,
+      "precision": "día",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1 de ab de 1474 a.e.c.",
+      "detalle": {
+       "mes": "ab",
+       "dia": 1
+      }
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-20",
+      "it-aaron",
+      "it-hor"
+     ],
+     "razon": "Nú 20:28: murió en la cima del monte Hor; Perspicacia «Aarón», párr. 4 y 19, da el año y el día.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-20"
+     ],
+     "razon": "Nú 20:25, 26, 28: Eleazar, hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "sucede_a",
+     "persona": "aaron",
+     "fecha": {
+      "desde": -1473,
+      "hasta": -1473,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "1474 a.e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "numeros-20",
+      "it-eleazar",
+      "it-aaron"
+     ],
+     "razon": "Nú 20:25-28: Moisés le pone las ropas de Aarón antes de morir este; Perspicacia «Eleazar», núm. 1: así pasó a ser sumo sacerdote.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meriba-de-cades",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meriba-de-cades",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Números 20 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "moab",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "negueb",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jaboc",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21",
+    "it-hesbon",
+    "it-jahaz"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hesbon",
+     "deducido": false,
+     "fuentes": [
+      "numeros-21",
+      "it-sehon",
+      "it-hesbon"
+     ],
+     "razon": "Nú 21:26, 34: Hesbón era la ciudad de Sehón; Perspicacia «Sehón» la da como su capital.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "jahaz",
+     "deducido": false,
+     "fuentes": [
+      "numeros-21",
+      "it-sehon"
+     ],
+     "razon": "Nú 21:23, 24: salió a pelear en Jáhaz e Israel lo derrotó a espada; Perspicacia «Sehón»: allí murió.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-21",
+    "it-edrei"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "basan",
+     "deducido": false,
+     "fuentes": [
+      "numeros-21"
+     ],
+     "razon": "Nú 21:33 lo llama rey de Basán.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "edrei",
+     "deducido": false,
+     "fuentes": [
+      "numeros-21",
+      "it-og",
+      "it-edrei"
+     ],
+     "razon": "Nú 21:33-35: salió a pelear en Edréi y allí lo mataron con sus hijos y su ejército.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "resumen",
+   "antes": "Rey amorreo de Basán, el último de los gigantescos refaím que quedaban en aquella región. Gobernaba sesenta ciudades fortificadas; cuando terminaban los cuarenta años en el desierto, Israel lo venció y lo mató en Edrei.",
+   "despues": "Rey amorreo de Basán, el último de los gigantescos refaím que quedaban en aquella región. Gobernaba sesenta ciudades fortificadas; cuando terminaban los cuarenta años en el desierto, Israel lo venció y lo mató en Edréi.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El lugar de su derrota se escribe Edréi, como en la TNM (Nú 21:33); Edrei es la grafía de Perspicacia.",
+    "fuente": "numeros-21"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "moab",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "beor-padre-de-bela",
+   "campo": "no_confundir_con",
+   "valores": [
+    "beor-padre-de-balaam"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "monte-nebo",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Monte Nebo"
+    },
+    {
+     "nombre": "Pisgá",
+     "nota": "Cima desde la que Moisés miró la tierra; puede ser parte del Nebo o al revés (Dt 34:1)."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Monte Nebo"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Pisgá sale de los nombres del Nebo: Perspicacia le da artículo y sitio propios (Ras es-Siyaghah, junto a Jebel en-Neba) y ahora tiene ficha, pisga.",
+    "fuente": "it-pisga"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-25"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-finehas",
+      "numeros-25"
+     ],
+     "razon": "Éx 6:25: hijo de Eleazar.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "it-finehas",
+      "exodo-6",
+      "numeros-25"
+     ],
+     "razon": "Perspicacia «Finehás», núm. 1: era hijo de Eleazar y, por él, nieto de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-25"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zimri-de-israel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004737#3"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zimri-de-israel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "zimri-hijo-de-salu"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ruben-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ruben-hijo-de-jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "it-ruben",
+      "genesis-29",
+      "genesis-35",
+      "genesis-46",
+      "genesis-49",
+      "numeros-26"
+     ],
+     "razon": "Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hanok-hijo-de-ruben",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hanok-hijo-de-ruben",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ruben-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-hanok",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:9: aparece entre los hijos de Rubén.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "palu",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "palu",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ruben-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-palu",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:9: aparece entre los hijos de Rubén.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-ruben",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-ruben",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ruben-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-hezron",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:9: aparece entre los hijos de Rubén.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "carmi-hijo-de-ruben",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "carmi-hijo-de-ruben",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "ruben-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-carmi",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:9: aparece entre los hijos de Rubén.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "core-hijo-de-izhar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jemuel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jemuel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simeon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jemuel",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:10: aparece entre los hijos de Simeón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jamin-hijo-de-simeon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jamin-hijo-de-simeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simeon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jamin",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:10: aparece entre los hijos de Simeón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jakin-hijo-de-simeon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jakin-hijo-de-simeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simeon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jakin",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:10: aparece entre los hijos de Simeón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zohar-hijo-de-simeon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zohar-hijo-de-simeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simeon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-zohar",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:10: aparece entre los hijos de Simeón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "shaul-hijo-de-simeon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "shaul-hijo-de-simeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simeon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-shaul",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:10: el último de los hijos de Simeón, hijo de una cananea.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zifion",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zifion",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-zefon",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hagui",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hagui",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-hagui",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "suni",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "suni",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-suni",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ezbon-hijo-de-gad",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ezbon-hijo-de-gad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-ezbon",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eri",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eri",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-eri",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "arodi",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "arodi",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-arod",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "areli",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "areli",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "gad-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-areli",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:16: aparece entre los hijos de Gad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "er-hijo-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "er-hijo-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-38",
+      "genesis-46",
+      "it-er",
+      "numeros-26"
+     ],
+     "razon": "Gé 38:3, 6, 7.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-er",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:12: murió en Canaán, antes del traslado a Egipto.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "onan",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "genesis-38",
+      "numeros-26"
+     ],
+     "razon": "Gé 38:3, 4, 8.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "onan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "onan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-38",
+      "genesis-46",
+      "it-onan",
+      "numeros-26"
+     ],
+     "razon": "Gé 38:4, 8.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-onan",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:12: murió en Canaán, antes del traslado a Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sela-hijo-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sela-hijo-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-38",
+      "genesis-46",
+      "it-selah",
+      "numeros-26"
+     ],
+     "razon": "Gé 38:5, 11.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "rut-4",
+      "mateo-1",
+      "genesis-38",
+      "genesis-46",
+      "lucas-3",
+      "numeros-26"
+     ],
+     "razon": "Rut 4:12: Tamar se lo dio a luz a Judá.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "zerah-hijo-de-juda",
+     "relacion": "hermano gemelo",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "it-zerah",
+      "genesis-38",
+      "it-perez",
+      "numeros-26"
+     ],
+     "razon": "Mt 1:3 los da como hijos de Judá y Tamar; Perspicacia «Zérah» (núm. 3) dice que eran gemelos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zerah-hijo-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zerah-hijo-de-juda",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "juda-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-1",
+      "genesis-38",
+      "genesis-46",
+      "it-zerah",
+      "numeros-26"
+     ],
+     "razon": "Mt 1:3; Gé 38:18, 26-30.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-perez",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hezron-hijo-de-perez",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "perez",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "rut-4",
+      "mateo-1",
+      "genesis-46",
+      "lucas-3",
+      "numeros-26"
+     ],
+     "razon": "Rut 4:18.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hamul",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hamul",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "perez",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-hamul",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:12: Hezrón y Hamul son los hijos de Pérez.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tola-hijo-de-isacar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tola-hijo-de-isacar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isacar-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-tola",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:13: aparece entre los hijos de Isacar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "puva",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "puva",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isacar-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-puva",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:13: aparece entre los hijos de Isacar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "yob",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "yob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isacar-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-yob",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:13: aparece entre los hijos de Isacar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isacar-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-simron",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:13: aparece entre los hijos de Isacar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sered",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sered",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zabulon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-sered",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:14: aparece entre los hijos de Zabulón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elon-hijo-de-zabulon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elon-hijo-de-zabulon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zabulon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-elon",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:14: aparece entre los hijos de Zabulón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jahleel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jahleel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zabulon-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jahleel",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:14: aparece entre los hijos de Zabulón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-hijo-de-jose",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-hijo-de-jose",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-41",
+      "genesis-46",
+      "it-manases",
+      "genesis-48",
+      "numeros-26"
+     ],
+     "razon": "Gé 41:50, 51.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "efrain",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "genesis-41",
+      "genesis-46",
+      "genesis-48",
+      "numeros-26"
+     ],
+     "razon": "Gé 41:51, 52: Manasés es el primero y Efraín el segundo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "efrain",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "efrain",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-41",
+      "genesis-46",
+      "it-efrain",
+      "genesis-48",
+      "numeros-26"
+     ],
+     "razon": "Gé 41:50, 52.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-50",
+      "it-makir",
+      "numeros-26"
+     ],
+     "razon": "Gé 50:23 lo llama hijo de Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bela-hijo-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bela-hijo-de-benjamin",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-bela",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:21: aparece entre los hijos de Benjamín.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asbel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asbel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-asbel",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:21: aparece entre los hijos de Benjamín.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mupim",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mupim",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-mupim",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:21 lo cuenta entre los hijos de Benjamín, término que puede abarcar a descendientes.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hupim",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hupim",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-hupim",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:21 lo cuenta entre los hijos de Benjamín; Perspicacia lo tiene por nieto o bisnieto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "husim-hijo-de-dan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "husim-hijo-de-dan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "dan-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-husim",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:23: el hijo de Dan era Husim.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "imna-hijo-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "imna-hijo-de-aser",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aser-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-imnah",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17: aparece entre los hijos de Aser.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isvi-hijo-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isvi-hijo-de-aser",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aser-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-isvi",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17: aparece entre los hijos de Aser.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "berias-hijo-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "berias-hijo-de-aser",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aser-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-berias",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17: aparece entre los hijos de Aser.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "serah",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "serah",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aser-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-serah",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17 la da como hermana de los hijos de Aser; Perspicacia «Sérah» la llama hija de Aser.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "heber-hijo-de-berias",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "heber-hijo-de-berias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "berias-hijo-de-aser",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-heber",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17: Héber y Malkiel son los hijos de Berías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "malkiel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "malkiel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "berias-hijo-de-aser",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-malkiel",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:17: Héber y Malkiel son los hijos de Berías.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jahzeel",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jahzeel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "neftali-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jahzeel",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:24: aparece entre los hijos de Neftalí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guni-hijo-de-neftali",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guni-hijo-de-neftali",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "neftali-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-guni",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:24: aparece entre los hijos de Neftalí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jezer",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jezer",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "neftali-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-jezer",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:24: aparece entre los hijos de Neftalí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "silem",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "silem",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "neftali-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-silem",
+      "numeros-26"
+     ],
+     "razon": "Gé 46:24: aparece entre los hijos de Neftalí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guerson",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "merari",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "amram-hijo-de-cohat",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "it-amram",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Perspicacia «Amram», núm. 1: nieto de Leví por medio de Cohat.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jokebed",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-amram",
+      "it-jokebed",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1: el levita se casa con una hija de Leví; Perspicacia «Amram», núm. 1, y «Jokébed» dan sus nombres.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jokebed",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jokebed",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "levi-hijo-de-jacob",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-jokebed",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1 la llama hija de Leví y Éx 6:20 la hace hermana del padre de Amram. Perspicacia «Jokébed» admite que «hija» signifique allí descendiente.",
+     "estado": "verificado",
+     "relacion": "padre"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "amram-hijo-de-cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-amram",
+      "it-aaron",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:20: hijo de Amram.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jokebed",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-jokebed",
+      "it-aaron",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:20: hijo de Jokébed.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "amram-hijo-de-cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-moises",
+      "it-amram",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1, 2: hijo de un levita; Perspicacia «Moisés» y «Amram», núm. 1, lo nombran.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jokebed",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-moises",
+      "it-jokebed",
+      "exodo-6",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1, 2: lo dio a luz una hija de Leví; Perspicacia «Moisés» y «Jokébed» la nombran.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-moises",
+      "exodo-6",
+      "exodo-4",
+      "exodo-7",
+      "exodo-28",
+      "levitico-16",
+      "numeros-26"
+     ],
+     "razon": "Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miriam-hermana-de-moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miriam-hermana-de-moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "amram-hijo-de-cohat",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-miriam",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1-4: es la hermana del niño nacido de aquel levita; Perspicacia «Míriam», núm. 1, la da como hija de Amram.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jokebed",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-2",
+      "it-miriam",
+      "numeros-26"
+     ],
+     "razon": "Éx 2:1-4: es la hermana del niño que dio a luz esta levita; Perspicacia «Míriam», núm. 1, la da como hija de Jokébed.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "moises",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-miriam",
+      "it-moises",
+      "exodo-2",
+      "numeros-26"
+     ],
+     "razon": "Perspicacia «Míriam», párr. 2 (Nú 26:59); «Moisés», párr. 2: era unos años mayor que él.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-miriam",
+      "exodo-15",
+      "numeros-26"
+     ],
+     "razon": "Perspicacia «Míriam», párr. 2: hija de Amram y Jokébed, hermana de Aarón (Nú 26:59).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nadab-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abihu",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-nadab",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: Abihú, el siguiente hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: Eleazar es otro hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "itamar",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: Itamar es otro hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abihu",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abihu",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-abihu",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-eleazar",
+      "exodo-28",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "itamar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-6",
+      "it-itamar",
+      "exodo-28",
+      "exodo-38",
+      "levitico-10",
+      "numeros-26"
+     ],
+     "razon": "Éx 6:23: hijo de Aarón y Eliseba.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "exodo-33",
+      "it-nun",
+      "it-josue",
+      "numeros-26"
+     ],
+     "razon": "Éx 33:11 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "datan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "datan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eliab-hijo-de-palu",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "it-eliab"
+     ],
+     "razon": "Nú 26:8, 9: Datán es hijo de Eliab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abiram-hijo-de-eliab",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abiram-hijo-de-eliab",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eliab-hijo-de-palu",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "it-eliab"
+     ],
+     "razon": "Nú 26:8, 9: Abiram es hijo de Eliab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jokebed",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26"
+     ],
+     "razon": "Nú 26:59: Leví la tuvo con su esposa en Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "it-caleb",
+      "it-jefune"
+     ],
+     "razon": "Nú 26:65 lo llama Caleb hijo de Jefuné.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ard",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-ard"
+     ],
+     "razon": "Gé 46:21 lo llama hijo de Benjamín; Perspicacia entiende que era su nieto.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "bela-hijo-de-benjamin",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "it-ard"
+     ],
+     "razon": "Perspicacia «Ard»: al parecer era nieto de Benjamín por Bela.",
+     "estado": "pendiente"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46"
+     ],
+     "razon": "Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera allí antes de morir Jacob.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46",
+      "it-ard"
+     ],
+     "razon": "Gé 46:21 lo llama hijo de Benjamín; Perspicacia entiende que era su nieto.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "bela-hijo-de-benjamin",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "it-ard"
+     ],
+     "razon": "Nú 26:40 hace a Ard y a Naamán hijos de Bela.",
+     "estado": "pendiente"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46"
+     ],
+     "razon": "Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera allí antes de morir Jacob.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Nú 26:40 dice que Ard era hijo de Bela: esa relación deja de ser una deducción de Perspicacia y cita el capítulo.",
+    "fuente": "numeros-26"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ard",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "naaman-hijo-de-bela",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "bela-hijo-de-benjamin",
+     "relacion": "padre",
+     "deducido": true,
+     "fuentes": [
+      "genesis-46",
+      "it-naaman"
+     ],
+     "razon": "Perspicacia «Naamán», núm. 1: nieto de Benjamín por medio de Bela.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "abuelo",
+     "deducido": true,
+     "fuentes": [
+      "genesis-46",
+      "it-naaman"
+     ],
+     "razon": "Gé 46:21 lo pone entre los hijos de Benjamín; Perspicacia lo tiene por nieto.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46"
+     ],
+     "razon": "Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera allí antes de morir Jacob.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "bela-hijo-de-benjamin",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "genesis-46",
+      "it-naaman"
+     ],
+     "razon": "Nú 26:40 hace a Ard y a Naamán hijos de Bela.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "numeros-26",
+      "genesis-46",
+      "it-naaman"
+     ],
+     "razon": "Nú 26:38, 40: hijo de Bela, el primogénito de Benjamín; Gé 46:21 lo contaba entre los hijos de Benjamín.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "genesis-46"
+     ],
+     "razon": "Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera allí antes de morir Jacob.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Nú 26:40 dice que Naamán era hijo de Bela: esa relación deja de ser una deducción de Perspicacia y cita el capítulo.",
+    "fuente": "numeros-26"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "naaman-hijo-de-bela",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-26"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jemuel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "nemuel-hijo-de-eliab"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "beker-hijo-de-benjamin",
+   "campo": "no_confundir_con",
+   "valores": [
+    "beker-hijo-de-efrain"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "siquem-hijo-de-hamor",
+   "campo": "no_confundir_con",
+   "valores": [
+    "siquem-hijo-de-galaad"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "milca-hija-de-haran",
+   "campo": "no_confundir_con",
+   "valores": [
+    "milca-hija-de-zelofehad"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-nadab-y-abihu",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 26:61"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "numeros-27"
+     ],
+     "razon": "Nú 27:13: Jehová le dice que morirá igual que su hermano Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "sucede_a",
+     "persona": "moises",
+     "deducido": false,
+     "fuentes": [
+      "numeros-27",
+      "it-josue"
+     ],
+     "razon": "Nú 27:18-23: por orden de Jehová, Moisés le impone las manos ante Eleazar y el pueblo y le pasa parte de su autoridad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meriba-de-cades",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-27"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "milca-hija-de-haran",
+   "campo": "no_confundir_con",
+   "valores": [
+    "milca-hija-de-zelofehad"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-28"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-29"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-30"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hur-companero-de-moises",
+   "campo": "no_confundir_con",
+   "valores": [
+    "hur-rey-de-madian"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hur-hijo-de-caleb",
+   "campo": "no_confundir_con",
+   "valores": [
+    "hur-rey-de-madian"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "beor-padre-de-bela",
+   "campo": "no_confundir_con",
+   "valores": [
+    "beor-padre-de-balaam"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-31"
+     ],
+     "razon": "Nú 31:6 lo llama Finehás hijo de Eleazar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-31"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-32"
+     ],
+     "razon": "Nú 32:12, 28 lo llaman Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-32",
+      "it-jefune"
+     ],
+     "razon": "Nú 32:12 lo llama Caleb hijo de Jefuné el quenizita.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-hijo-de-nun",
+     "deducido": false,
+     "fuentes": [
+      "numeros-32"
+     ],
+     "razon": "Nú 32:12: Caleb y Josué, los únicos de su generación que siguieron a Jehová de todo corazón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-32"
+     ],
+     "razon": "Nú 32:39, 40 lo llaman Makir hijo de Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-hijo-de-jose",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-32"
+     ],
+     "razon": "Nú 32:33 habla de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rameses",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot-de-egipto",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ezam",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "pihahirot",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "migdol",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "baal-zefon",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cruce-del-mar-rojo",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mara",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "elim",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-rojo",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sin",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "refidim",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-sinai",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:3-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "decima-plaga-mueren-los-primogenitos",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-acampa-en-ezam",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "el-faraon-persigue-a-israel",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jehova-endulza-el-agua-de-mara",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-acampa-en-elim",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "codornices-y-mana-en-el-desierto-de-sin",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "agua-de-la-roca-en-horeb",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-llega-al-sinai",
+   "campo": "pasajes",
+   "valores": [
+    "Nú 33:15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-33",
+    "it-hor"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "monte-hor",
+     "deducido": false,
+     "fuentes": [
+      "numeros-33",
+      "it-hor",
+      "it-aaron"
+     ],
+     "razon": "Nú 33:38, 39: por mandato de Jehová subió a ese monte y falleció allí con 123 años, el primer día del mes quinto del año cuarenta del éxodo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-grande",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-34",
+    "it-jefune"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "numeros-34",
+      "it-jefune"
+     ],
+     "razon": "Nú 34:19 lo llama hijo de Jefuné.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quemuel-hijo-de-nacor",
+   "campo": "no_confundir_con",
+   "valores": [
+    "quemuel-hijo-de-siftan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elizafan-hijo-de-uziel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "elizafan-hijo-de-parnac"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-35"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "numeros-36"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "milca-hija-de-haran",
+   "campo": "no_confundir_con",
+   "valores": [
+    "milca-hija-de-zelofehad"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "resumen",
+   "antes": "Tierra de los madianitas, descendientes de Madián, hijo de Abrahán. Se cree que quedaba sobre todo al este del golfo de Aqaba. Moisés vivió allí unos cuarenta años y se casó con Ziporá.",
+   "despues": "Tierra de los madianitas, descendientes de Madián, hijo de Abrahán, sobre todo al este del golfo de Aqaba. Moisés vivió allí unos cuarenta años y se casó con Ziporá. En su época muchos madianitas vivían junto a Moab.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "fuente": "numeros-31",
+    "cambio": "Añade que en vida de Moisés muchos madianitas vivían junto a Moab y al reino de Sehón (Nú 31:8-12; Perspicacia «Madián, madianitas», núm. 3)."
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "razon",
+   "antes": "Perspicacia «Madián, madianitas», núm. 3, párr. 13 y 14: no se sabe con seguridad hasta dónde llegaba. Éx 2:15-21. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Madián, madianitas», núm. 3, párr. 13 y 14: su extensión no se sabe, y en vida de Moisés muchos habitaban cerca de Moab y del reino de Sehón (Nú 22:4; 31:8-12). Éx 2:15-21. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "fuente": "numeros-31",
+    "cambio": "Cita el párrafo de Perspicacia que sitúa a los madianitas de Números junto a Moab y Sehón."
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "coord_nota",
+   "antes": "Punto representativo de OpenBible, al este del golfo de Aqaba; la extensión de la región no se conoce.",
+   "despues": "Punto representativo de OpenBible, al este del golfo de Aqaba; la extensión de la región no se conoce. No sitúa a los madianitas de Nú 22-31, que vivían junto a Moab.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "fuente": "numeros-31",
+    "cambio": "Aclara que el punto de Aqaba no representa a los madianitas de Números 22-31."
+   }
+  }
+ ],
+ "preguntas": []
+}

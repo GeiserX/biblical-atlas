@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zur-rey-de-madian
+nombre: Zur
+nombres:
+- nombre: Zur
+perspicacia: 1200004771#1
+desambiguacion: El madianita padre de Cozbí; no el benjamita hijo de Jeiel.
+resumen: Uno de los cinco reyes de Madián cuando Israel se acercaba a la Tierra Prometida, y cabeza de una familia principal
+  de los madianitas. Su hija Cozbí murió en Sitim; él cayó después, cuando Israel castigó a Madián.
+razon: Perspicacia «Zur», núm. 1; Nú 25:15, 18.
+fuentes:
+- it-zur
+- numeros-25
+- numeros-31
+enlaces:
+- titulo: 'Perspicacia: «Zur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004771
+  tipo: perspicacia
+- titulo: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  tipo: biblia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: madian
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-zur
+  - numeros-31
+  - it-madian
+  razon: 'Nú 25:15: estaba al frente de una casa paterna de Madián. Es el Madián de junto a Moab y Sehón (Perspicacia «Madián,
+    madianitas», núm. 3), no el del golfo de Aqaba.'
+  estado: verificado
+- tipo: murio_en
+  lugar: madian
+  deducido: false
+  fuentes:
+  - numeros-31
+  - it-zur
+  - it-madian
+  razon: 'Nú 31:7, 8: murió en la guerra de Israel contra Madián. Es el Madián de junto a Moab y Sehón (Perspicacia «Madián,
+    madianitas», núm. 3), no el del golfo de Aqaba.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

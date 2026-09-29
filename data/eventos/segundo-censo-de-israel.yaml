@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segundo-censo-de-israel
+titulo: Moisés y Eleazar hacen el segundo censo de Israel
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  nota: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+orden_relato:
+  serie: numeros
+  orden: 26001
+lugares:
+- llanuras-deserticas-de-moab
+personas:
+- moises
+- eleazar-hijo-de-aaron
+pasajes:
+- Nú 26:1-51, 57-65
+resumen: 'Tras el azote de Peor, Moisés y el sacerdote Eleazar cuentan por familias a los varones de veinte años o más: 601.730,
+  además de 23.000 levitas. De los contados en el Sinaí solo quedan Caleb y Josué.'
+razon: 'Perspicacia «Inscripción»: segunda inscripción, casi 39 años después de la primera. Fecha: tras vencer a Og, hacia
+  1473 a.e.c. (Perspicacia «Basán»), y antes de acabar Números, en 1473 (estudio 3).'
+fuentes:
+- numeros-26
+- it-inscripcion
+- it-aaron
+- si-3
+- it-basan
+enlaces:
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

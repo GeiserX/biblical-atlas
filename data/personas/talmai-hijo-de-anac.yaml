@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: talmai-hijo-de-anac
+nombre: Talmái
+nombres:
+- nombre: Talmái
+- nombre: Talmai
+  nota: Grafía de Perspicacia.
+perspicacia: 1200004311#1
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+desambiguacion: Talmái el anaquita de Hebrón; no Talmái, rey de Guesur y abuelo de Absalón.
+resumen: Anaquita de Hebrón, hermano de Ahimán y Sesái. Los espías lo encontraron en la ciudad, que Caleb conquistaría después.
+razon: Perspicacia «Talmai», núm. 1; Nú 13:22; Jos 15:14.
+fuentes:
+- it-talmai
+- numeros-13
+enlaces:
+- titulo: 'Perspicacia: «Talmai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004311
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - numeros-13
+  razon: 'Nú 13:22: Talmái vivía en Hebrón cuando llegaron los espías.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

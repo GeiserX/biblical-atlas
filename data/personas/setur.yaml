@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: setur
+nombre: Setur
+nombres:
+- nombre: Setur
+perspicacia: '1200003912'
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+resumen: Jefe de la tribu de Aser, hijo de Miguel, elegido entre los doce espías que Moisés mandó a Canaán. Fue de los diez
+  que desanimaron al pueblo con su informe. Jehová decretó que murieran por ello.
+razon: Perspicacia «Setur»; Nú 13:13, 31-33; 14:36-38 (solo Josué y Caleb se salvan).
+fuentes:
+- it-setur
+- numeros-13
+- numeros-14
+- it-espias
+enlaces:
+- titulo: 'Perspicacia: «Setur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003912
+  tipo: perspicacia
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: miguel-padre-de-setur
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-13
+  - it-setur
+  razon: Nú 13:13 lo llama hijo de Miguel.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

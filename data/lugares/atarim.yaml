@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atarim
+nombre: Atarim
+nombres:
+- nombre: Atarim
+  nota: Nú 21:1 habla del camino de Atarim; Perspicacia duda si es un lugar o una ruta.
+tipo: region
+lat: 30.878961
+lon: 34.779822
+precision: incierto
+coord_fuente: openbible:a2c34ce
+coord_url: https://www.openbible.info/geo/ancient/a2c34ce/atharim
+coord_nota: Punto de OpenBible en la ruta entre Cadés y Arad. Perspicacia no lo sitúa.
+resumen: Lugar o ruta por donde Israel avanzaba desde Cadés hacia la Tierra Prometida, pasando por el monte Hor, cuando el
+  rey de Arad salió a atacarlo en el Négueb.
+razon: 'Perspicacia «Atarim»; Nú 21:1. OpenBible: solo el punto.'
+fuentes:
+- it-atarim
+- openbible-geo
+- numeros-21
+enlaces:
+- titulo: 'Perspicacia: «Atarim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000458
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

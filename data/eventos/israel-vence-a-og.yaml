@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-vence-a-og
+titulo: Israel vence a Og en Edréi
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 21033
+lugares:
+- edrei
+- basan
+- camino-del-rey
+personas:
+- og
+- moises
+pasajes:
+- Nú 21:33-35
+- Dt 3:1-7
+- Sl 135:10, 11
+- Sl 136:20
+resumen: Israel sube por el Camino de Basán y Og sale a su encuentro en Edréi. Jehová dice a Moisés que no tema; Israel mata
+  a Og, a sus hijos y a su ejército, y toma su tierra.
+razon: 'Perspicacia «Basán», párr. 5: Og fue vencido hacia 1473 a.e.c.; «Og»: al final de los cuarenta años, justo antes del
+  campamento en las llanuras moabitas.'
+fuentes:
+- numeros-21
+- it-og
+- it-basan
+- it-edrei
+- it-camino-del-rey
+- salmos-135
+- salmos-136
+enlaces:
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

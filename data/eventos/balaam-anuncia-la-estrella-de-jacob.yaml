@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balaam-anuncia-la-estrella-de-jacob
+titulo: Balaam anuncia la estrella que saldrá de Jacob
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 24010
+lugares:
+- peor
+personas:
+- balaam
+- balac
+presentes:
+- balaam
+- balac
+pasajes:
+- Nú 24:10-25
+resumen: Furioso, Balac despide a Balaam sin honores. Antes de irse, Balaam anuncia una estrella y un cetro de Israel que
+  vencerán a Moab y Edom, y el fin de Amalec, los quenitas y Asiria. Luego cada uno se va.
+razon: 'Nú 24:10-25; Perspicacia «Balac», «Balaam» y «Moab, moabitas» (la estrella se cumplió primero con David). El texto
+  no cambia de sitio desde Peor. Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+fuentes:
+- numeros-24
+- it-balac
+- it-balaam
+- it-moab
+- it-quenita
+- it-qayin
+- it-kitim
+- it-eber
+- it-agag
+- it-aaron
+enlaces:
+- titulo: Números 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/24
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

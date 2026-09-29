@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-acampa-de-obot-al-arnon
+titulo: Israel acampa de Obot al Arnón
+fecha:
+  desde: -1473
+  hasta: -1472
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+orden_relato:
+  serie: numeros
+  orden: 21010
+lugares:
+- arnon
+- obot
+- iye-abarim
+- valle-de-zered
+- moab
+personas:
+- moises
+pasajes:
+- Nú 21:10-15
+- Nú 33:43, 44
+resumen: Israel acampa en Obot, en Iyé-Abarim, frente a Moab, junto al valle de Zered y, por fin, en la región del Arnón,
+  la frontera entre Moab y los amorreos.
+razon: 'Entre la muerte de Aarón, 1 de ab de 1474 a.e.c. (Perspicacia «Aarón»), y la victoria sobre Sehón y Og, hacia 1473
+  a.e.c. («Basán», párr. 5). Perspicacia «Zered»: treinta y ocho años después de la rebelión de Cadés.'
+fuentes:
+- numeros-21
+- it-obot
+- it-iye-abarim
+- it-zered
+- it-arnon
+- it-aaron
+- it-basan
+enlaces:
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

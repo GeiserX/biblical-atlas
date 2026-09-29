@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-manda-repartir-la-tierra-por-sorteo
+titulo: Jehová manda repartir la tierra por sorteo
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  nota: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+orden_relato:
+  serie: numeros
+  orden: 26052
+lugares:
+- llanuras-deserticas-de-moab
+personas:
+- moises
+pasajes:
+- Nú 26:52-56
+resumen: 'Jehová dice a Moisés cómo dar la herencia: más tierra a los grupos grandes y menos a los pequeños, según el censo,
+  y la parte de cada tribu decidida a suertes.'
+razon: 'Nú 26:52-56; sigue al censo. Fecha: tras vencer a Og, hacia 1473 a.e.c. (Perspicacia «Basán»), y antes de acabar Números,
+  en 1473 (estudio 3).'
+fuentes:
+- numeros-26
+- it-aaron
+- si-3
+- it-basan
+enlaces:
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
