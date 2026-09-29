@@ -9,6 +9,7 @@ razon: Perspicacia «Jézer»; Gé 46:24.
 fuentes:
 - it-jezer
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Jézer»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002464
@@ -24,6 +25,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-jezer
+  - numeros-26
   razon: 'Gé 46:24: aparece entre los hijos de Neftalí.'
   estado: verificado
 - tipo: vivio_en

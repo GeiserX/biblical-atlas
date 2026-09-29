@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-vuelve-a-alabar-a-la-sulamita
+titulo: Salomón vuelve a alabar a la sulamita
+fecha:
+  desde: -1036
+  hasta: -1019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 1020 a.e.c. (tiempo narrativo: al principio del reinado de Salomón, antes de escribirse El Cantar)'
+orden_relato:
+  serie: cantar-de-los-cantares
+  orden: 6004
+lugares:
+- jerusalen
+personas:
+- salomon
+- sulamita
+pasajes:
+- Can 6:4-13
+- Can 7:1-9
+resumen: El rey la compara con Tirzá y Jerusalén y dice que ninguna de sus 60 reinas y 80 concubinas se le iguala. Ella contesta
+  que llegó a su campamento sin buscarlo, y él le ruega que vuelva.
+razon: Nadie da el año. Perspicacia «Cantar de los Cantares, El» pone el poema al principio del reinado (1037-998 a.e.c.),
+  con 60 reinas (Can 6:8); la tabla de libros lo fecha c. 1020 a.e.c. Habla el rey (TNM).
+fuentes:
+- cantar-de-los-cantares-6
+- it-cantar-de-los-cantares
+- tnm-tabla
+- it-salomon
+- cantar-de-los-cantares-7
+enlaces:
+- titulo: El Cantar de los Cantares 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/6
+  tipo: biblia
+- titulo: 'Perspicacia: «Cantar de los Cantares, El»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  tipo: perspicacia
+- titulo: El Cantar de los Cantares 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

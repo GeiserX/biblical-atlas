@@ -12,6 +12,8 @@ fuentes:
 - it-finehas
 - salmos-106
 - exodo-6
+- numeros-25
+- numeros-31
 enlaces:
 - titulo: 'Perspicacia: «Finehás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
@@ -30,6 +32,7 @@ relaciones:
   fuentes:
   - it-finehas
   - exodo-6
+  - numeros-25
   razon: 'Perspicacia «Finehás», núm. 1: era hijo de Eleazar y, por él, nieto de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -39,6 +42,8 @@ relaciones:
   fuentes:
   - exodo-6
   - it-finehas
+  - numeros-25
+  - numeros-31
   razon: 'Éx 6:25: hijo de Eleazar.'
   estado: verificado
 - tipo: pariente

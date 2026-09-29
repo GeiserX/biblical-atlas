@@ -1,0 +1,64 @@
+# biblical-earth: fuentes de la cobertura de joel. Esquema en docs/investigacion/README.md.
+it-petuel:
+  titulo: Petuel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003455
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-joel-libro:
+  titulo: Joel, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002482
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+si-joel:
+  titulo: 'Libro bíblico número 29: Joel'
+  obra: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990090
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+w20-ataque-del-norte:
+  titulo: Un ataque que viene del norte
+  obra: La Atalaya (edición de estudio, abril de 2020)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2020364
+  nivel: 1
+  publicado: 2020
+  consultado: '2026-09-29'
+w07-joel-y-amos:
+  titulo: Puntos sobresalientes de los libros de Joel y Amós
+  obra: La Atalaya (1 de octubre de 2007)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2007722
+  nivel: 1
+  publicado: 2007
+  consultado: '2026-09-29'
+it-jehosafat-llanura:
+  titulo: Jehosafat, Llanura baja de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002384
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sitim:
+  titulo: Sitim
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004071
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-acacia:
+  titulo: Acacia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000066
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+rr-rios-de-bendiciones:
+  titulo: Ríos de bendiciones de parte de Jehová
+  obra: 'La adoración pura de Jehová: ¡por fin restaurada!'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102017948
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'

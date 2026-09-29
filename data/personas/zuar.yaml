@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zuar
+nombre: Zuar
+nombres:
+- nombre: Zuar
+perspicacia: '1200004769'
+resumen: Hombre de Isacar. Netanel, el jefe de esa tribu en el desierto, era su hijo o, según Perspicacia, quizá un descendiente.
+razon: Perspicacia «Zuar», que pone «hijo» entre comillas; Nú 1:8; 2:5.
+fuentes:
+- it-zuar
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Zuar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004769
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

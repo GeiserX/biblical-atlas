@@ -41,7 +41,7 @@ meses:
     nombre: Ofrenda de las primicias
     instituida: -1472
     fuentes: [levitico-23, si-3]
-    razon: 'Lv 23:10, 11 manda ofrecer la primera gavilla una vez en la tierra. Israel cruzó el Jordán en nisán de 1473 a.e.c. según el estudio 3.'
+    razon: 'Le 23:10, 11 manda ofrecer la primera gavilla una vez en la tierra. Israel cruzó el Jordán en nisán de 1473 a.e.c. según el estudio 3.'
   clima: Las lluvias y el deshielo hacen crecer el Jordán.
   campo: Cebada.
   fuentes:
@@ -71,7 +71,7 @@ meses:
     nombre: Pascua tardía
     instituida: -1511
     fuentes: [numeros-9, si-3]
-    razon: 'Nm 9:1-11 la manda en el segundo año tras la salida de Egipto, que el estudio 3 fecha en 1513 a.e.c.: es decir, 1512 a.e.c.'
+    razon: 'Nú 9:1-14 la manda en el segundo año tras la salida de Egipto, que el estudio 3 fecha en 1513 a.e.c.: es decir, 1512 a.e.c.'
   clima: Empieza la época seca, casi siempre con cielo limpio.
   campo: Trigo.
   fuentes:
@@ -95,7 +95,7 @@ meses:
     nombre: Fiesta de las Semanas (Pentecostés)
     instituida: -1472
     fuentes: [levitico-23, exodo-23, si-3]
-    razon: 'Lv 23:10, 15, 16 cuenta sus 50 días desde la gavilla de primicias, ofrecida ya en la tierra: Israel cruzó el Jordán en nisán de 1473 a.e.c. (estudio 3). La Ley la mandó en 1513 a.e.c. (Éx 23:14-17).'
+    razon: 'Le 23:10, 15, 16 cuenta sus 50 días desde la gavilla de primicias, ofrecida ya en la tierra: Israel cruzó el Jordán en nisán de 1473 a.e.c. (estudio 3). La Ley la mandó en 1513 a.e.c. (Éx 23:14-17).'
   clima: Calor y cielo sin nubes.
   campo: Trigo y brevas.
   fuentes:
@@ -176,25 +176,25 @@ meses:
     nombre: Toque de trompeta
     instituida: -1511
     fuentes: [it-fiesta, levitico-23, tnm-tabla]
-    razon: 'Lv 23:23-25 la manda; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, la pone antes del exilio.'
+    razon: 'Le 23:23-25 la manda; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, la pone antes del exilio.'
   - desde: 10
     hasta: 10
     nombre: Día de Expiación
     instituida: -1511
-    fuentes: [it-fiesta, levitico-23, tnm-tabla]
-    razon: 'Lv 23:26-32 lo manda; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, lo pone antes del exilio.'
+    fuentes: [it-fiesta, levitico-16, levitico-23, tnm-tabla]
+    razon: 'Le 16:29-34 lo instituye y Le 23:26-32 lo repite; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c. Perspicacia «Fiesta», recuadro, lo pone antes del exilio.'
   - desde: 15
     hasta: 21
     nombre: Fiesta de las Cabañas
     instituida: -1512
-    fuentes: [it-fiesta, exodo-23, si-3]
-    razon: 'Éx 23:16 la llama fiesta de la recolección, una de las tres del pacto de la Ley (1513 a.e.c., estudio 3); Perspicacia «Fiesta», apartado «Las tres grandes fiestas».'
+    fuentes: [it-fiesta, exodo-23, levitico-23, si-3]
+    razon: 'Éx 23:16 la llama fiesta de la recolección, una de las tres del pacto de la Ley (1513 a.e.c., estudio 3); Le 23:34, 39-41 le da sus días. Perspicacia «Fiesta», apartado «Las tres grandes fiestas».'
   - desde: 22
     hasta: 22
     nombre: Asamblea solemne
     instituida: -1511
     fuentes: [it-fiesta, levitico-23, tnm-tabla]
-    razon: 'Lv 23:36 la pone al día siguiente de las Cabañas; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c.'
+    razon: 'Le 23:36 la pone al día siguiente de las Cabañas; la tabla de libros de la Biblia de estudio fecha Levítico en 1512 a.e.c.'
   clima: Acaba el verano y llegan las primeras lluvias.
   campo: Se ara la tierra.
   fuentes:

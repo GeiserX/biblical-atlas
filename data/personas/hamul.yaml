@@ -9,6 +9,7 @@ razon: Perspicacia «Hamul»; Gé 46:12.
 fuentes:
 - it-hamul
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Hamul»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001847
@@ -24,6 +25,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-hamul
+  - numeros-26
   razon: 'Gé 46:12: Hezrón y Hamul son los hijos de Pérez.'
   estado: verificado
 - tipo: vivio_en

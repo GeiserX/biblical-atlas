@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lael
+nombre: Lael
+nombres:
+- nombre: Lael
+perspicacia: '1200002663'
+resumen: Levita cuyo hijo Eliasaf estuvo al frente de la casa paterna de los guersonitas mientras Israel andaba por el desierto.
+razon: Perspicacia «Lael»; Nú 3:24.
+fuentes:
+- it-lael
+- numeros-3
+enlaces:
+- titulo: 'Perspicacia: «Lael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002663
+  tipo: perspicacia
+- titulo: Números 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: guerson
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - numeros-3
+  - it-lael
+  - it-guersonitas
+  razon: 'Nú 3:24: su hijo encabezaba la casa paterna de los guersonitas; Perspicacia «Lael» lo llama levita.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

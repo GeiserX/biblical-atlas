@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balac-ofrece-sacrificios-en-quiryat-huzot
+titulo: Balac ofrece sacrificios en Quiryat-Huzot
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 22039
+lugares:
+- quiryat-huzot
+personas:
+- balac
+- balaam
+presentes:
+- balac
+- balaam
+pasajes:
+- Nú 22:39, 40
+resumen: Balaam va con Balac hasta Quiryat-Huzot. Allí Balac sacrifica vacas y ovejas y manda una parte a Balaam y a los príncipes
+  que lo acompañan.
+razon: 'Nú 22:39, 40; Perspicacia «Quiryat-huzot». Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+fuentes:
+- numeros-22
+- it-quiryat-huzot
+- it-agag
+enlaces:
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

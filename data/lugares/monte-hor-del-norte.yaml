@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-hor-del-norte
+nombre: Monte Hor
+nombres:
+- nombre: Monte Hor
+  nota: Se llama igual que el monte de la frontera de Edom donde murió Aarón (Perspicacia «Hor», núm. 2).
+tipo: monte
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Monte Hermón
+  geometria:
+    tipo: punto
+    lat: 33.4
+    lon: 35.85
+  estado: alternativa
+  fuentes:
+  - it-hor
+  - it-hermon
+  razon: Algunos investigadores creen que es el Hermón, según Perspicacia.
+  coord_fuente: openbible:a62fa2d
+  coord_url: https://www.openbible.info/geo/ancient/a62fa2d/mount-hor-2
+  nota: Primer punto de la ficha «Mount Hor 2» de OpenBible, que es el del Hermón.
+- nombre: Cordillera del Líbano o una de sus cumbres
+  geometria:
+    tipo: zona
+    lat: 33.54
+    lon: 35.583611
+    radio_km: 60
+  estado: alternativa
+  fuentes:
+  - it-hor
+  - it-libano
+  razon: Otros lo ven como toda la cordillera del Líbano o una de sus cimas más altas (Perspicacia).
+  coord_fuente: openbible:a730058
+  coord_url: https://www.openbible.info/geo/ancient/a730058/lebanon
+  nota: 'Centro: punto de la ficha «Lebanon» de OpenBible. Radio nuestro.'
+resumen: Monte del límite norte de la tierra de Canaán, entre el mar Grande y Lebó-Hamat. No se sabe cuál es; no es el monte
+  Hor donde murió Aarón.
+razon: Perspicacia «Hor», núm. 2; Nú 34:7, 8.
+fuentes:
+- it-hor
+- it-hermon
+- it-libano
+- openbible-geo
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Hor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002071
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

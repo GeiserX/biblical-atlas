@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-la-ley-de-la-pascua-tardia
+titulo: Unos hombres impuros consultan a Moisés y Jehová fija una Pascua en el segundo mes
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: día
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de abib (nisán) de 1512 a.e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+orden_relato:
+  serie: numeros
+  orden: 906
+  tras: israel-celebra-la-pascua-en-el-sinai
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- aaron
+pasajes:
+- Nú 9:6-14
+resumen: Unos hombres impuros por tocar un cadáver preguntan a Moisés y a Aarón por qué deben perderse la Pascua. Jehová manda
+  que el impuro o el viajero la celebre el 14 del segundo mes; el extranjero residente, también.
+razon: Nú 9:6 pone la consulta el día de la Pascua, que Perspicacia «Pascua» sitúa en el día 14 de nisán del año 1512 a.e.c.
+  «Números, Libro de» ve aquí la base de una Pascua posterior en ziv.
+fuentes:
+- numeros-9
+- it-pascua
+- it-numeros-libro
+- si-3
+enlaces:
+- titulo: Números 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/9
+  tipo: biblia
+- titulo: 'Perspicacia: «Números, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003279
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado
