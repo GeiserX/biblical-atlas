@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: timeo
+nombre: Timeo
+nombres:
+- nombre: Timeo
+  nota: Perspicacia da como significado «honrado».
+perspicacia: '1200004406'
+resumen: Padre de Bartimeo, el ciego que pedía limosna junto al camino a la salida de Jericó y que recobró la vista gracias
+  a Jesús. El texto no cuenta nada más de él.
+razon: Perspicacia «Timeo»; Mr 10:46 presenta a Bartimeo como hijo de Timeo.
+fuentes:
+- it-timeo
+- marcos-10
+enlaces:
+- titulo: 'Perspicacia: «Timeo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004406
+  tipo: perspicacia
+- titulo: Marcos 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
