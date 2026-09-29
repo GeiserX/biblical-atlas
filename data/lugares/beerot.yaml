@@ -1,0 +1,74 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beerot
+nombre: Beerot
+nombres:
+- nombre: Beerot
+  nota: Significa «pozos», según Perspicacia.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: el-Bira, junto a Ramala
+  geometria:
+    tipo: punto
+    lat: 31.905142
+    lon: 35.214958
+  estado: alternativa
+  fuentes:
+  - it-beerot
+  - openbible-geo
+  razon: Otros, según Perspicacia, la ponen aquí, a 8 km de Gabaón hacia el NNE y junto al límite de Efraín; tiene un manantial
+    abundante.
+  coord_fuente: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  nota: Primera resolución de la segunda identificación de la ficha «Beeroth» de OpenBible (Al Bira).
+- nombre: Khirbet el-Burj
+  geometria:
+    tipo: punto
+    lat: 31.82383
+    lon: 35.1872
+  estado: alternativa
+  fuentes:
+  - it-beerot
+  - openbible-geo
+  razon: Perspicacia recoge que algunos la sitúan aquí, al sur de las otras propuestas.
+  coord_fuente: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  nota: Primera resolución de la primera identificación de la ficha «Beeroth» de OpenBible.
+- nombre: Nabi Samwil
+  geometria:
+    tipo: punto
+    lat: 31.832733
+    lon: 35.18015
+  estado: alternativa
+  fuentes:
+  - it-beerot
+  - openbible-geo
+  razon: Perspicacia la da como la otra propuesta del sur, junto a Khirbet el-Burj.
+  coord_fuente: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  nota: Primera resolución de la tercera identificación de la ficha «Beeroth» de OpenBible.
+resumen: Una de las cuatro ciudades heveas que, por medio de Gabaón, lograron con astucia el pacto con Josué. Después fue
+  de Benjamín, quizá como ciudad de frontera, y se repobló tras el exilio.
+razon: 'Perspicacia «Beerot», párr. 1 y 2; Jos 9:17; 18:25. Perspicacia no elige entre Khirbet el-Burj o Nabi Samwil, al sur,
+  y el-Bira, al norte. OpenBible: solo los puntos.'
+fuentes:
+- it-beerot
+- openbible-geo
+- josue-9
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Beerot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000612
+  tipo: perspicacia
+- titulo: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  tipo: biblia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

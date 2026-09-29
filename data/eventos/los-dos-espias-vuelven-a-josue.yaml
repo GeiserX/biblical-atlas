@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-dos-espias-vuelven-a-josue
+titulo: Los dos espías vuelven a Josué
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: estación
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 1473 a.e.c.
+  detalle:
+    estacion: primavera
+orden_relato:
+  serie: numeros
+  orden: 202022
+lugares:
+- sitim
+- rio-jordan
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 2:22-24
+resumen: 'Tras pasar tres días ocultos en los montes, los espías bajan, cruzan el Jordán y cuentan a Josué lo ocurrido: la
+  gente del país tiembla y Jehová se lo entrega.'
+razon: 'Perspicacia «Jericó» y «Rahab», núm. 1: se ocultaron tres días, vadearon el río y dieron cuenta a Josué (Jos 2:22-24).
+  Sigue a la visita de primavera de 1473 a.e.c.'
+fuentes:
+- josue-2
+- it-rahab
+- it-jerico
+enlaces:
+- titulo: Josué 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Jericó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
+  tipo: perspicacia
+buscar: espías vuelven a Josué
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-acor
+nombre: Valle de Acor
+nombres:
+- nombre: Valle de Acor
+- nombre: Llanura baja de Acor
+  nota: Otra traducción que da la nota de Jos 7:24; es la forma que usa Perspicacia.
+tipo: valle
+lat: 31.71667
+lon: 35.38333
+precision: incierto
+coord_fuente: openbible:a31492f
+coord_url: https://www.openbible.info/geo/ancient/a31492f/valley-of-achor
+coord_nota: Punto de el-Buqeiʽah, primera identificación de OpenBible y la que Perspicacia ve posible, junto al extremo noroeste
+  del mar Muerto. Perspicacia descarta Wadi Qelt.
+resumen: Valle o llanura baja en el límite noreste de Judá. Allí apedrearon a Acán y a los suyos, y de ahí su nombre, que
+  significa «desastre» o «problema».
+razon: 'Perspicacia «Acor», párr. 1 y 2; Jos 7:24-26 y la nota de 7:26. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-acor
+- josue-7
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Acor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000079
+  tipo: perspicacia
+- titulo: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

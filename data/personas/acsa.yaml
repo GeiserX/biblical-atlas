@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acsa
+nombre: Acsá
+nombres:
+- nombre: Acsá
+  nota: Significa «ajorca» o «brazalete» (Perspicacia).
+perspicacia: '1200000080'
+resumen: Hija de Caleb. Su padre la prometió a quien tomara Debir; la conquistó Otniel, su primo, y se casó con ella. Luego
+  pidió a Caleb, y obtuvo, Gulot Alto y Gulot Bajo.
+razon: Perspicacia «Acsá»; Jos 15:16-19; Jue 1:12-15.
+no_afirmamos:
+- 'No afirmamos que fuera la madre de Hatat: Perspicacia solo lo ve posible (1Cr 4:13).'
+fuentes:
+- it-acsa
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Acsá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000080
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: caleb-hijo-de-jefune
+  relacion: padre
+  deducido: false
+  fuentes:
+  - josue-15
+  - it-acsa
+  razon: 'Jos 15:16, 17: Caleb la llama «mi hija» y se la da a Otniel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

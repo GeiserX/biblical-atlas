@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: taanac
+nombre: Taanac
+nombres:
+- nombre: Taanac
+tipo: ciudad
+lat: 32.521526
+lon: 35.219122
+precision: punto
+coord_fuente: openbible:a6f05f6
+coord_url: https://www.openbible.info/geo/ancient/a6f05f6/taanach
+resumen: Ciudad en el borde sur del valle de Jezreel, cerca de Meguidó. Josué venció a su rey; fue de Manasés y de los levitas,
+  pero sus cananeos siguieron allí.
+razon: 'Perspicacia «Taanac»: Tell Taʽanakh, unos 8 km al SSE de Meguidó; Jos 12:21. OpenBible: solo el punto.'
+fuentes:
+- it-taanac
+- openbible-geo
+- josue-12
+- josue-17
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Taanac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004289
+  tipo: perspicacia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: Punto de Tell Taʽanakh, unos 8 km al sur-sureste de Meguidó, el sitio que da Perspicacia.

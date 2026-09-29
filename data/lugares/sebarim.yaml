@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sebarim
+nombre: Sebarim
+nombres:
+- nombre: Sebarim
+  nota: La nota de Jos 7:5 dice que significa «canteras».
+tipo: region
+lat: 31.907274
+lon: 35.310588
+precision: incierto
+coord_fuente: openbible:ac53696
+coord_url: https://www.openbible.info/geo/ancient/ac53696/shebarim
+coord_nota: Punto del risco occidental de Wadi Makkuk, primera identificación de OpenBible. jw.org solo dice que estaba cerca
+  de Hai.
+resumen: Lugar cercano a Hai hasta el que los hombres de esa ciudad persiguieron a los israelitas en el primer ataque, derrotado
+  por culpa del pecado de Acán.
+razon: 'Perspicacia «Sebarim»; Jos 7:5 y su nota. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-sebarim
+- josue-7
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Sebarim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003972
+  tipo: perspicacia
+- titulo: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

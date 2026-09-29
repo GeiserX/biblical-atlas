@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-jezreel
+nombre: Valle de Jezreel
+nombres:
+- nombre: Valle de Jezreel
+- nombre: Llanura de Esdrelón
+  nota: Forma griega del nombre, para la llanura al oeste de la ciudad de Jezreel (Perspicacia).
+tipo: valle
+lat: 32.596389
+lon: 35.241944
+precision: zona
+coord_fuente: openbible:aa516c2
+coord_url: https://www.openbible.info/geo/ancient/aa516c2/valley-of-jezreel
+coord_nota: Punto representativo de OpenBible para todo el valle.
+resumen: Llanura baja que va de la ciudad de Jezreel a Bet-Seán y, en sentido amplio, del Carmelo al Jordán. En tiempos de
+  Josué la dominaban cananeos con carros de guerra.
+razon: 'Perspicacia «Jezreel», núm. 5, párr. 1 y 2; Jos 17:16. OpenBible: solo el punto.'
+fuentes:
+- it-jezreel
+- openbible-geo
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Jezreel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
+  tipo: perspicacia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

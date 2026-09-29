@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aser
+nombre: Aser
+nombres:
+- nombre: Aser
+  nota: Territorio de la tribu que descendía de Aser, hijo de Jacob.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Llanura de la costa, de Dor hasta Sidón
+  geometria:
+    tipo: zona
+    lat: 33.0892
+    lon: 35.1442
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-aser
+  - openbible-geo
+  razon: 'Perspicacia: iba por la costa del Mediterráneo desde poco más al sur de Dor, pasado el Carmelo, hasta Sidón.'
+  nota: 'Centro calculado por nosotros: punto medio entre Dor (32,617 N; 34,916 E) y Sidón (33,561 N; 35,372 E) de OpenBible.
+    El radio de 30 km también es nuestro.'
+  coord_fuente: calculo
+- nombre: Llanura de la costa, del Carmelo a Sidón
+  geometria:
+    tipo: zona
+    lat: 32.971667
+    lon: 35.109722
+    radio_km: 40
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-aser
+  - openbible-geo
+  razon: Perspicacia extiende su territorio por la costa, desde más abajo de Dor, al sur del Carmelo, hasta Sidón.
+  coord_fuente: calculo
+  nota: 'Centro calculado por nosotros: punto medio entre el monte Carmelo y Tiro de OpenBible. El radio también es nuestro.'
+no_afirmamos:
+- No trazamos sus fronteras; la zona del mapa es solo una referencia dentro del territorio.
+resumen: Territorio de la tribu de Aser, en la llanura de la costa norte, de tierra muy fértil. Lindaba con Manasés al sur;
+  dentro de él Manasés tuvo Dor y sus pueblos.
+razon: Perspicacia «Aser», núm. 2, párr. 2 y 3; Jos 17:7, 10, 11. Zona calculada por nosotros.
+fuentes:
+- it-aser
+- openbible-geo
+- josue-17
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Aser»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000414
+  tipo: perspicacia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

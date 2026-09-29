@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-ejecuta-a-los-cinco-reyes-en-maqueda
+titulo: Josué ejecuta a los cinco reyes en Maquedá
+fecha:
+  desde: -1472
+  hasta: -1466
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+orden_relato:
+  serie: josue
+  orden: 10016
+lugares:
+- maqueda
+personas:
+- josue-hijo-de-nun
+- adoni-zedec
+- hoham
+- piram
+- jafia-rey-de-lakis
+- debir-rey-de-eglon
+pasajes:
+- Jos 10:16-27
+resumen: Los cinco reyes se esconden en la cueva de Maquedá, que Josué hace tapar. Después los saca, sus jefes les pisan la
+  nuca, y Josué los mata, los cuelga hasta la tarde y los echa en la cueva.
+razon: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal.'
+fuentes:
+- josue-10
+- si-3
+- it-josue
+- it-maqueda
+- it-adoni-zedeq
+enlaces:
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

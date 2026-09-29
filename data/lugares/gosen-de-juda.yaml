@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gosen-de-juda
+nombre: Gosén
+nombres:
+- nombre: Gosén
+- nombre: Tierra de Gosén
+  nota: Así la llaman Jos 10:41 y 11:16; Perspicacia la ve como el distrito de la ciudad de Gosén.
+tipo: region
+lat: 31.407622
+lon: 34.9723
+precision: zona
+coord_fuente: openbible:ad3e63c
+coord_url: https://www.openbible.info/geo/ancient/ad3e63c/goshen-2
+coord_nota: Punto de OpenBible en Edh Dhahiriya, donde Perspicacia sitúa con reservas la ciudad de Gosén; el distrito la rodeaba.
+resumen: Distrito del sur de la región montañosa de Judá, entre Hebrón y el Négueb, quizá el de la ciudad de Gosén. Josué
+  lo conquistó. No es la Gosén de Egipto.
+razon: 'Perspicacia «Gosén», núm. 2; Jos 10:41; 15:51. La ciudad se identifica tentativamente con Edh Dhahiriya, unos 18 km
+  al SO de Hebrón. OpenBible: solo el punto.'
+fuentes:
+- it-gosen
+- openbible-geo
+- josue-10
+- josue-11
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Gosén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001745
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+- titulo: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-sean
+nombre: Bet-Seán
+nombres:
+- nombre: Bet-Seán
+- nombre: Bet-San
+  nota: Otra forma del nombre; Perspicacia titula su artículo con las dos.
+- nombre: Escitópolis
+  nota: Nombre que recibió en tiempos de los macabeos, según Perspicacia.
+tipo: ciudad
+lat: 32.503611
+lon: 35.503056
+precision: punto
+coord_fuente: openbible:a2a8df0
+coord_url: https://www.openbible.info/geo/ancient/a2a8df0/beth-shan
+coord_nota: Punto de Tel Bet Sheʼan (Tell el-Husn), el sitio que da Perspicacia.
+resumen: Ciudad cananea fortificada que dominaba la entrada del valle de Jezreel desde el Jordán. Estaba en Isacar, pero tocó
+  a Manasés, que no echó a sus cananeos por miedo a sus carros de guerra.
+razon: 'Perspicacia «Bet-seán, Bet-san», párr. 1 y 5; Jos 17:11, 12, 16. OpenBible: solo el punto.'
+fuentes:
+- it-bet-sean
+- openbible-geo
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Bet-seán, Bet-san»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000709
+  tipo: perspicacia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

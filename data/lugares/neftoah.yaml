@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: neftoah
+nombre: Neftóah
+nombres:
+- nombre: Neftóah
+- nombre: Manantial de las aguas de Neftóah
+  nota: Así lo llaman Jos 15:9 y 18:15.
+tipo: lago
+lat: 31.794392
+lon: 35.196606
+precision: punto
+coord_fuente: openbible:ac1fef1
+coord_url: https://www.openbible.info/geo/ancient/ac1fef1/nephtoah
+coord_nota: 'Punto de Lifta en OpenBible. Es un manantial: «lago» es el tipo más cercano de la lista.'
+resumen: Manantial en la frontera entre Judá y Benjamín. Suele situarse en Lifta, unos 4 km al oestenoroeste del monte del
+  templo, aunque Jos 18:15 parece ponerlo al oeste de Quiryat-Jearim.
+razon: 'Perspicacia «Neftóah»; Jos 15:9; 18:15. OpenBible: solo el punto.'
+fuentes:
+- it-neftoah
+- openbible-geo
+- josue-15
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Neftóah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003224
+  tipo: perspicacia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

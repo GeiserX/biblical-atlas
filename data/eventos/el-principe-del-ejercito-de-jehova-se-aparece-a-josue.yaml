@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-principe-del-ejercito-de-jehova-se-aparece-a-josue
+titulo: El príncipe del ejército de Jehová se aparece a Josué
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 205013
+lugares:
+- jerico
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 5:13-15
+- Jos 6:2-5
+resumen: Cerca de Jericó, Josué ve a un hombre armado con una espada. Es el príncipe del ejército de Jehová. Josué se postra,
+  se quita las sandalias y recibe las órdenes para tomar la ciudad.
+razon: 'Perspicacia «Josué», núm. 1, y «Jericó»: un príncipe angélico se le presentó junto a la ciudad y le dio el plan para
+  tomarla (Jos 5:13 a 6:5). Pasa tras la Pascua y antes del asedio, en 1473 a.e.c.'
+fuentes:
+- josue-5
+- josue-6
+- it-josue
+- it-jerico
+- it-ejercito
+enlaces:
+- titulo: Josué 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/5
+  tipo: biblia
+- titulo: 'Perspicacia: «Jericó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Ejército»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000376
+  tipo: perspicacia
+buscar: príncipe del ejército de Jehová Josué Jericó
+consultado: '2026-09-29'
+estado: verificado

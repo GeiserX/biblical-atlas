@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ifta
+nombre: Iftá
+nombres:
+- nombre: Iftá
+- nombre: Iftah
+  nota: Grafía de Perspicacia, que la toma por forma breve de Iftah-el.
+tipo: ciudad
+lat: 31.57459
+lon: 35.01244
+precision: incierto
+coord_fuente: openbible:a67bd13
+coord_url: https://www.openbible.info/geo/ancient/a67bd13/iphtah
+coord_nota: Tarqumiya, primera identificación de OpenBible, que Perspicacia da como posible.
+resumen: Ciudad de Judá en la Sefelá. Se ha propuesto que estaba en Tarqumiya, unos 10 km al oestenoroeste de Hebrón.
+razon: 'Perspicacia «Iftah»; Jos 15:43. OpenBible: solo el punto.'
+fuentes:
+- it-iftah
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Iftah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002190
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

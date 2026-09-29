@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: estaol
+nombre: Estaol
+nombres:
+- nombre: Estaol
+tipo: ciudad
+lat: 31.781097
+lon: 35.0101
+precision: incierto
+coord_fuente: openbible:a355b6e
+coord_url: https://www.openbible.info/geo/ancient/a355b6e/eshtaol
+coord_nota: Eshtaol, segunda identificación de OpenBible, en el sitio de la actual Eshwaʽ que nombra Perspicacia. La primera
+  es Khirbet Deir Shubeib.
+resumen: Ciudad de la Sefelá dada a Judá, en la frontera de Dan, unos 21 km al oeste de Jerusalén. Allí empezó el espíritu
+  de Jehová a mover a Sansón, y allí lo enterraron.
+razon: 'Perspicacia «Estaol»; Jos 15:33; 19:41; Jue 13:25; 16:31. OpenBible: solo el punto.'
+fuentes:
+- it-estaol
+- openbible-geo
+- josue-15
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Estaol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001425
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

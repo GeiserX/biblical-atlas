@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: enam
+nombre: Enam
+nombres:
+- nombre: Enam
+tipo: ciudad
+lat: 31.715
+lon: 34.969167
+precision: incierto
+coord_fuente: openbible:a26921e
+coord_url: https://www.openbible.info/geo/ancient/a26921e/enam
+coord_nota: 'Primera resolución de OpenBible, que la iguala con Enaim: junto al Nahal Yarmut.'
+resumen: Ciudad de la Sefelá de Judá. No se sabe dónde estaba; algunos geógrafos piensan que podría ser la Enaim donde Tamar
+  esperó a Judá.
+razon: 'Perspicacia «Enam»; Jos 15:34. Como Perspicacia no da por segura su igualdad con Enaim, va en ficha aparte. OpenBible:
+  solo el punto.'
+fuentes:
+- it-enam
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Enam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001355
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

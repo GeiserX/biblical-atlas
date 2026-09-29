@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quedes-de-isacar
+nombre: Quedes
+nombres:
+- nombre: Quedes
+  nota: No es la Quedes de Neftalí, ciudad de refugio (Perspicacia, núm. 2).
+- nombre: Quisión
+  nota: Al parecer, el mismo lugar en la lista de Jos 21:28 (Perspicacia, núm. 3).
+tipo: ciudad
+lat: 32.55949
+lon: 35.216031
+precision: incierto
+coord_fuente: openbible:a321cb8
+coord_url: https://www.openbible.info/geo/ancient/a321cb8/kedesh-1
+coord_nota: Punto de Tell Abu Qedeis, que Perspicacia relaciona con dudas con esta Quedes. OpenBible pone primero Tel Kedesh,
+  en Neftalí.
+resumen: Lugar de Isacar dado a los guersonitas. Si era Tell Abu Qedeis, cerca de Meguidó, es la Quedes cuyo rey venció Josué
+  junto a Taanac y Meguidó.
+razon: 'Perspicacia «Quedes», núm. 3; 1Cr 6:72; Jos 12:22. La identificación es condicional. OpenBible: solo el punto.'
+fuentes:
+- it-quedes
+- openbible-geo
+- josue-12
+enlaces:
+- titulo: 'Perspicacia: «Quedes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002582
+  tipo: perspicacia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

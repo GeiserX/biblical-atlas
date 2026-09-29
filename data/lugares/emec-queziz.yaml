@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: emec-queziz
+nombre: Émec-Queziz
+nombres:
+- nombre: Émec-Queziz
+- nombre: Émeq-queziz
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 31.871719
+lon: 35.444564
+precision: incierto
+coord_fuente: openbible:a774e50
+coord_url: https://www.openbible.info/geo/ancient/a774e50/emek-keziz
+coord_nota: OpenBible solo la pone a menos de 5 km de Jericó, y el punto es el de Jericó. Perspicacia no sabe dónde estaba.
+resumen: Ciudad de Benjamín de lugar desconocido. Por su nombre y por las ciudades que la acompañan en la lista, debía de
+  estar cerca de Jericó, en la cuenca del Jordán.
+razon: 'Perspicacia «Émeq-queziz»; Jos 18:21. OpenBible: solo el punto.'
+fuentes:
+- it-emeq-queziz
+- openbible-geo
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Émeq-queziz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001350
+  tipo: perspicacia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

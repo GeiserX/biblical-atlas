@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quision
+nombre: Quisión
+nombres:
+- nombre: Quisión
+- nombre: Quedes
+  nota: Parece ser otro nombre de la ciudad (1Cr 6:72), según Perspicacia.
+tipo: ciudad
+lat: 32.661389
+lon: 35.393056
+precision: incierto
+coord_fuente: openbible:a20364a
+coord_url: https://www.openbible.info/geo/ancient/a20364a/kishion
+coord_nota: Punto de OpenBible en Tell Qisyon. Perspicacia no da sitio para Quisión; para la Quedes de 1Cr 6:72 menciona Tell
+  Abu Qedeis.
+resumen: Ciudad de la frontera de Isacar dada a los guersonitas. Parece ser la Quedes de 1Cr 6:72.
+razon: 'Perspicacia «Quisión» y «Quedes», núm. 3; Jos 19:20; 1Cr 6:72. OpenBible: solo el punto.'
+fuentes:
+- it-quision
+- it-quedes
+- openbible-geo
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Quisión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002633
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mefaat
+nombre: Mefaat
+nombres:
+- nombre: Mefaat
+tipo: ciudad
+lat: 31.85747
+lon: 35.931608
+precision: incierto
+coord_fuente: openbible:a97cb23
+coord_url: https://www.openbible.info/geo/ancient/a97cb23/mephaath
+coord_nota: OpenBible pone primero Umm ar-Rasas; tomamos Tell Jawa, al sur de Ammán, la identificación que cita Perspicacia.
+resumen: Ciudad de Rubén al este del Jordán que más tarde se dio a los levitas de Merarí. Unos ocho siglos después, en días
+  de Jeremías, la dominaba Moab.
+razon: 'Perspicacia «Mefaat»; Jos 13:18. OpenBible: solo el punto.'
+fuentes:
+- it-mefaat
+- openbible-geo
+- josue-13
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Mefaat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002985
+  tipo: perspicacia
+- titulo: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

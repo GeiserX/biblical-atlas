@@ -1,0 +1,5284 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "josue",
+ "agente": "escritor-josue",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "sucede_a",
+     "persona": "moises",
+     "deducido": false,
+     "fuentes": [
+      "josue-1"
+     ],
+     "razon": "Jos 1:1, 2, 17: muerto Moisés, Jehová da el mando a Josué y el pueblo promete escucharle como a Moisés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "señor",
+     "deducido": false,
+     "fuentes": [
+      "josue-1"
+     ],
+     "razon": "Jos 1:1 lo llama ayudante de Moisés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-1"
+     ],
+     "razon": "Jos 1:1 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "libano",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-eufrates",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-grande",
+   "campo": "fuentes",
+   "valores": [
+    "josue-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "moises-da-a-gad-y-ruben-la-tierra-al-este-del-jordan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 1:13-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "fuentes",
+   "valores": [
+    "josue-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "fecha",
+   "antes": null,
+   "despues": {
+    "desde": -1472,
+    "hasta": -1472,
+    "precision": "año",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1473 a.e.c."
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "razon",
+   "antes": "Perspicacia «Rahab», núm. 1; Mt 1:5 y la nota de Mt 1:3.",
+   "despues": "Perspicacia «Rahab», núm. 1: acogió a los espías en la primavera de 1473 a.e.c. y vivía sobre la muralla (Jos 2:1, 15). Mt 1:5 y la nota de Mt 1:3.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita ahora Josué 2 y el año que Perspicacia da a la visita de los espías, que es la fecha nueva de la ficha.",
+    "fuente": "josue-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerico",
+     "deducido": false,
+     "fuentes": [
+      "josue-2"
+     ],
+     "razon": "Jos 2:15: su casa estaba en la muralla de la ciudad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-2"
+     ],
+     "razon": "Jos 2:1, 23 lo llaman Josué hijo de Nun.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "sitim",
+     "deducido": false,
+     "fuentes": [
+      "josue-2",
+      "it-sitim"
+     ],
+     "razon": "Jos 2:1: envía a los espías desde Sitim, donde acampaba Israel antes de cruzar el Jordán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sitim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 2:10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-sehon",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 2:10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-og",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 2:10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Sl 66:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "lugares",
+   "valores": [
+    "adan",
+    "jerico"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-3",
+    "it-jordan",
+    "it-adan",
+    "tnm-b4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "resumen",
+   "antes": "Cuarenta años después del éxodo, Josué lleva al pueblo a cruzar el Jordán y acampa en Guilgal, junto a Jericó. Empieza la conquista de la tierra.",
+   "despues": "Cuarenta años después del éxodo, los sacerdotes que llevan el Arca entran en el Jordán desbordado. El agua se detiene río arriba, en Adán, y la nación pasa en seco frente a Jericó. Empieza la conquista.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen cuenta ahora cómo se cruzó: el Arca en el río crecido, el agua represada en Adán y el paso frente a Jericó (Jos 3:14-17). La llegada a Guilgal tiene su propio suceso.",
+    "fuente": "josue-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "sucede_a",
+     "persona": "moises",
+     "deducido": false,
+     "fuentes": [
+      "josue-3"
+     ],
+     "razon": "Jos 3:7: Jehová promete estar con Josué como estuvo con Moisés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "sitim",
+     "deducido": false,
+     "fuentes": [
+      "josue-3",
+      "it-sitim"
+     ],
+     "razon": "Jos 3:1: Josué y el pueblo levantan el campamento de Sitim para ir al Jordán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sitim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "fuentes",
+   "valores": [
+    "josue-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 4:10-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "lugares",
+   "valores": [
+    "llanuras-deserticas-de-jerico",
+    "guilgal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 4:23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "sucede_a",
+     "persona": "moises",
+     "deducido": false,
+     "fuentes": [
+      "josue-4"
+     ],
+     "razon": "Jos 4:14: Jehová engrandece a Josué y el pueblo lo respeta como había respetado a Moisés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "guilgal",
+     "deducido": false,
+     "fuentes": [
+      "josue-4",
+      "it-guilgal"
+     ],
+     "razon": "Jos 4:19, 20: tras cruzar, Josué acampa con el pueblo en Guilgal, que Perspicacia llama su primer campamento al oeste del Jordán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "guilgal",
+     "deducido": false,
+     "fuentes": [
+      "josue-5"
+     ],
+     "razon": "Jos 5:3, 8-10: Josué circuncida al pueblo en el campamento de Guilgal y allí siguen acampados para la Pascua.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jehova-condena-a-israel-a-40-anos-en-el-desierto",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 5:4-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "fuentes",
+   "valores": [
+    "josue-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rahab",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerico",
+     "deducido": false,
+     "fuentes": [
+      "josue-6"
+     ],
+     "razon": "Jos 6:22, 25: Josué manda sacarla de su casa en la ciudad, por haber escondido a los espías enviados a Jericó.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "israel",
+     "deducido": false,
+     "fuentes": [
+      "josue-6",
+      "it-rahab"
+     ],
+     "razon": "Jos 6:25: seguía viviendo en Israel cuando se escribió el libro. Perspicacia «Rahab», núm. 1: su familia pasó a vivir entre los israelitas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "resumen",
+   "antes": "Ciudad del valle del Jordán, unos 250 m bajo el nivel del mar. En tiempos de Jesús había una ciudad nueva al sur de la antigua; curó a Bartimeo en las afueras, quizá entre ambas, y se alojó con Zaqueo.",
+   "despues": "Ciudad del valle del Jordán, unos 250 m bajo el nivel del mar. En 1473 a.e.c. fue la primera que Israel tomó al oeste del río. En tiempos de Jesús había otra al sur; allí se alojó con Zaqueo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no nombraba la toma de la ciudad por Josué, su hecho principal en la Biblia. Se añade con la fecha de Perspicacia «Jericó»; Bartimeo queda en su suceso.",
+    "fuente": "josue-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "razon",
+   "antes": "Perspicacia «Jericó» (párr. 2 y 13) y la nota de Mt 20:29 explican las dos ciudades; Lu 19:1-7. La coordenada es de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Jericó» (párr. 2 y 13) y la nota de Mt 20:29 explican las dos ciudades; Lu 19:1-7. El mismo artículo fecha la toma en 1473 a.e.c. (Jos 6). OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.",
+    "fuente": "josue-6"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acan-hijo-de-ezer",
+   "campo": "no_confundir_con",
+   "valores": [
+    "acan-hijo-de-carmi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "carmi-hijo-de-ruben",
+   "campo": "no_confundir_con",
+   "valores": [
+    "carmi-hijo-de-zabdi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hai",
+   "campo": "fuentes",
+   "valores": [
+    "josue-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hai",
+   "campo": "fuentes",
+   "valores": [
+    "josue-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-ebal",
+   "campo": "fuentes",
+   "valores": [
+    "josue-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-guerizim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-9",
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "guilgal",
+     "deducido": false,
+     "fuentes": [
+      "josue-9",
+      "josue-10",
+      "it-guilgal"
+     ],
+     "razon": "Jos 9:6; 10:6, 15, 43: Josué tenía el campamento de Israel en Guilgal.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "resumen",
+   "antes": "Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amaleq, fue uno de los dos espías fieles y sucedió a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.",
+   "despues": "Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amalec, fue uno de los dos espías fieles y sucedió a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Amaleq es la grafía de Perspicacia; la Traducción del Nuevo Mundo escribe Amalec (Éx 17:8-13).",
+    "fuente": "exodo-17"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gabaon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-9",
+    "josue-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "gabaon",
+   "campo": "resumen",
+   "antes": "Ciudad de Benjamín unos 9,5 km al NNO del monte del templo. El tabernáculo estuvo allí y allí pidió Salomón sabiduría.",
+   "despues": "Ciudad hevea, luego de Benjamín, unos 9,5 km al NNO del monte del templo. Con un engaño obtuvo la paz de Josué, que después la libró de cinco reyes. Allí estuvo el tabernáculo y allí pidió Salomón sabiduría.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no decía nada de Josué 9 y 10, el pacto de los gabaonitas y el rescate de la ciudad.",
+    "fuente": "josue-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "gabaon",
+   "campo": "razon",
+   "antes": "Perspicacia «Gabaón», párr. 1 y 2: el-Jib, donde se hallaron asas con su nombre; «Salomón», párr. 10; 1Re 3:4-5. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Gabaón», párr. 1 y 2: el-Jib, donde se hallaron asas con su nombre; apartado «Relación con Josué» (Jos 9:3-27; 10:1-14); «Salomón», párr. 10; 1Re 3:4-5. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita ahora el apartado de Perspicacia sobre Josué y los capítulos 9 y 10.",
+    "fuente": "josue-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "negueb",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sefela",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "josue-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "resumen",
+   "antes": "Ciudad fortificada de la Sefelá, en el camino de Jerusalén a Egipto. Senaquerib la sitió en 732 y fue de las últimas en caer ante Babilonia.",
+   "despues": "Ciudad fortificada de la Sefelá, en el camino de Jerusalén a Egipto. Josué la tomó al segundo día de asedio; Senaquerib la sitió en 732 y fue de las últimas en caer ante Babilonia.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no decía que Josué conquistó la ciudad (Jos 10:31, 32; Perspicacia «Lakís», párr. 2).",
+    "fuente": "josue-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "razon",
+   "antes": "Perspicacia «Lakís», párr. 1, 5 y 7: Tell ed-Duweir, unos 24 km al O de Hebrón; 2Re 18:14 y Jer 34:7. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Lakís», párr. 1, 2, 5 y 7: Tell ed-Duweir, unos 24 km al O de Hebrón; Jos 10:31, 32; 2Re 18:14 y Jer 34:7. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita ahora la conquista de Josué y el párrafo de Perspicacia que la cuenta.",
+    "fuente": "josue-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jabin-rey-de-canaan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jabin-rey-de-hazor"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jabin-rey-de-canaan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jabin-rey-de-hazor",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "it-jabin"
+     ],
+     "razon": "Perspicacia «Jabín», núm. 2: reinó en la Hazor reconstruida y quizá descendía del rey vencido por Josué.",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jobab-hijo-de-joctan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jobab-rey-de-madon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jobab-hijo-de-zerah",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jobab-rey-de-madon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11",
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Sidón la Grande",
+     "nota": "Así la llama Jos 11:8."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gat",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asdod",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-11",
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 11:16-20",
+    "Jos 12:7-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "fuentes",
+   "valores": [
+    "it-josue",
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hesbon",
+     "deducido": false,
+     "fuentes": [
+      "josue-12"
+     ],
+     "razon": "Jos 12:2: Sehón vivía en Hesbón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "astarot",
+     "deducido": false,
+     "fuentes": [
+      "josue-12"
+     ],
+     "razon": "Jos 12:4: vivía en Astarot y Edréi.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "edrei",
+     "deducido": false,
+     "fuentes": [
+      "josue-12"
+     ],
+     "razon": "Jos 12:4: vivía en Astarot y Edréi.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "basan",
+     "deducido": false,
+     "fuentes": [
+      "josue-12"
+     ],
+     "razon": "Jos 12:4: rey de Basán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-sehon",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 12:1-3, 6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-og",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 12:4-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "moises-da-a-gad-y-ruben-la-tierra-al-este-del-jordan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 12:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hesbon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "astarot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edrei",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hai",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "horma",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "adulam",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "antipatris",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meguido",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tirza",
+   "campo": "fuentes",
+   "valores": [
+    "josue-12"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "tirza",
+   "campo": "resumen",
+   "antes": "Capital del reino de Israel desde Jeroboán hasta que Omrí fundó Samaria. Zimrí murió allí en el palacio incendiado.",
+   "despues": "Ciudad real cananea cuyo rey venció Josué. Siglos después fue capital del reino de Israel desde Jeroboán hasta que Omrí fundó Samaria; Zimrí murió allí en el palacio incendiado.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que Josué venció a su rey cananeo (Jos 12:24; Perspicacia «Tirzá», núm. 2).",
+    "fuente": "josue-12"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "moises-da-a-gad-y-ruben-la-tierra-al-este-del-jordan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 13:8-32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-og",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 13:12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-sehon",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 13:21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "filistea",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "libano",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "lebo-hamat",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-hermon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aroer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arnon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "medeba",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "dibon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hesbon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ammon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guesur",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "maaca",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "saleca",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "astarot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edrei",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bamot-baal",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "baal-meon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jahaz",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "quedemot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "quiryataim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sibma",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-peor",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "pisga",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-jesimot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jazer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mahanaim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-haran",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-nimra",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "havot-jair",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "llanuras-deserticas-de-moab",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hesbon",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:10, 21: reinaba en Hesbón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "basan",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Sl 135:11 lo llama rey de Basán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "astarot",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Dt 1:4: Og vivía en Astarot; Perspicacia «Og» la da como una de sus dos ciudades principales.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "og",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "edrei",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Dt 1:4: Og vivía en Astarot, en Edréi; Perspicacia «Edrei», núm. 1, la llama ciudad real de Og.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "beor-padre-de-balaam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:22: Balaam hijo de Beor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:31: Makir hijo de Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "evi",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13",
+    "it-ruben"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "evi",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "ruben",
+     "deducido": false,
+     "fuentes": [
+      "josue-13",
+      "it-ruben"
+     ],
+     "razon": "Jos 13:21: Eví y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "sehon",
+     "relacion": "señor",
+     "relacion_inversa": "vasallo",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:21 y su nota: Eví era uno de los reyes madianitas subordinados a Sehón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "evi",
+   "campo": "razon",
+   "antes": "Perspicacia «Eví»; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.",
+   "despues": "Perspicacia «Eví»; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.",
+    "fuente": "josue-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "requem-rey-de-madian",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13",
+    "it-ruben"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "requem-rey-de-madian",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "ruben",
+     "deducido": false,
+     "fuentes": [
+      "josue-13",
+      "it-ruben"
+     ],
+     "razon": "Jos 13:21: Réquem y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "sehon",
+     "relacion": "señor",
+     "relacion_inversa": "vasallo",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:21 y su nota: Réquem era uno de los reyes madianitas subordinados a Sehón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "requem-rey-de-madian",
+   "campo": "razon",
+   "antes": "Perspicacia «Réquem», núm. 1; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.",
+   "despues": "Perspicacia «Réquem», núm. 1; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.",
+    "fuente": "josue-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zur-rey-de-madian",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13",
+    "it-ruben"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zur-rey-de-madian",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "ruben",
+     "deducido": false,
+     "fuentes": [
+      "josue-13",
+      "it-ruben"
+     ],
+     "razon": "Jos 13:21: Zur y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "sehon",
+     "relacion": "señor",
+     "relacion_inversa": "vasallo",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:21 y su nota: Zur era uno de los reyes madianitas subordinados a Sehón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zur-rey-de-madian",
+   "campo": "razon",
+   "antes": "Perspicacia «Zur», núm. 1; Nú 25:15, 18; 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.",
+   "despues": "Perspicacia «Zur», núm. 1; Nú 25:15, 18; 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.",
+    "fuente": "josue-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hur-rey-de-madian",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13",
+    "it-ruben"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hur-rey-de-madian",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "ruben",
+     "deducido": false,
+     "fuentes": [
+      "josue-13",
+      "it-ruben"
+     ],
+     "razon": "Jos 13:21: Hur y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "sehon",
+     "relacion": "señor",
+     "relacion_inversa": "vasallo",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:21 y su nota: Hur era uno de los reyes madianitas subordinados a Sehón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "hur-rey-de-madian",
+   "campo": "razon",
+   "antes": "Perspicacia «Hur», núm. 3; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.",
+   "despues": "Perspicacia «Hur», núm. 3; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.",
+    "fuente": "josue-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "reba",
+   "campo": "fuentes",
+   "valores": [
+    "josue-13",
+    "it-ruben"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "reba",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "ruben",
+     "deducido": false,
+     "fuentes": [
+      "josue-13",
+      "it-ruben"
+     ],
+     "razon": "Jos 13:21: Reba y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "sehon",
+     "relacion": "señor",
+     "relacion_inversa": "vasallo",
+     "deducido": false,
+     "fuentes": [
+      "josue-13"
+     ],
+     "razon": "Jos 13:21 y su nota: Reba era uno de los reyes madianitas subordinados a Sehón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "reba",
+   "campo": "razon",
+   "antes": "Perspicacia «Reba»; Nú 31:8. Según «Madián, madianitas», núm. 3, estos madianitas vivían al parecer junto a Moab y Sehón, en sitios sin nombre: no lleva relación de lugar.",
+   "despues": "Perspicacia «Reba»; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.",
+    "fuente": "josue-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 14:15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-14",
+    "it-arba"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-14",
+    "it-guilgal"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-14"
+     ],
+     "razon": "Jos 14:1: Josué hijo de Nun.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "guilgal",
+     "deducido": false,
+     "fuentes": [
+      "josue-14",
+      "it-guilgal"
+     ],
+     "razon": "Jos 14:6: los de Judá van a ver a Josué a Guilgal; Perspicacia «Guilgal», núm. 1: fue el primer campamento al oeste del Jordán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "si-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-14"
+     ],
+     "razon": "Jos 14:6, 13, 14: Caleb hijo de Jefuné el quenizita.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-hijo-de-nun",
+     "deducido": false,
+     "fuentes": [
+      "josue-14"
+     ],
+     "razon": "Jos 14:6-8: Caleb recuerda a Josué lo que Jehová dijo de los dos en Cadés-Barnea, cuando espiaron juntos la tierra.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fecha",
+   "antes": null,
+   "despues": {
+    "desde": -1511,
+    "hasta": -1466,
+    "precision": "rango",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1512-1467 a.e.c."
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "razon",
+   "antes": "Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30 y Jos 14:6-14.",
+   "despues": "Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30; Jos 14:6-15. Fechas: espía a los 40 años, en 1512 a.e.c. (Perspicacia «Espías»), y a los 85 pide Hebrón, en 1467 (estudio 3).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade su fecha de actividad, de 1512 a 1467 a.e.c., con Jos 14:7, 10 y el estudio 3.",
+    "fuente": "josue-14"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-zin",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "negueb",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "subida-de-acrabim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hazar-addar",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "azmon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "torrente-de-egipto",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-grande",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "valle-de-hinon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "beer-seba",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "horma",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sefela",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "adulam",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "lakis",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aczib-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asdod",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zif",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "timna-de-la-region-montanosa",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "en-guedi",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hazar-addar",
+   "campo": "fuentes",
+   "valores": [
+    "it-addar"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hazar-addar",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Addar",
+     "nota": "Así la llama Jos 15:3, con Hezrón al lado; Perspicacia «Addar», núm. 2, ve en Hazar-Addar la unión de los dos nombres."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hazar-addar",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Addar»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000094",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "timna-de-la-region-montanosa",
+   "campo": "lat",
+   "antes": 31.409448,
+   "despues": 31.69405,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El punto era el centro de «a menos de 15 km de Tel Maʽin» en OpenBible, no el sitio que nombra Perspicacia. Pasa a Khirbet et-Tabbaneh, identificación de la misma ficha. Antes: 31.409448.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "timna-de-la-region-montanosa",
+   "campo": "lon",
+   "antes": 35.133839,
+   "despues": 35.04906,
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Mismo cambio de punto a Khirbet et-Tabbaneh. Antes: 35.133839.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "timna-de-la-region-montanosa",
+   "campo": "coord_nota",
+   "antes": "Identificación que Perspicacia solo atribuye a algunos investigadores.",
+   "despues": "Punto de Khirbet et-Tabbaneh, tercera identificación de OpenBible: el Khirbet et-Tabbana que algunos investigadores proponen según Perspicacia, unos 3 km al noroeste de El Jabʽa.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nota dice ahora qué sitio es el punto.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "valle-de-hinon",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Valle de Hinón"
+    },
+    {
+     "nombre": "Valle del hijo de Hinón",
+     "nota": "Otra forma del nombre (Jos 15:8; 2Re 23:10)."
+    },
+    {
+     "nombre": "Gehena",
+     "nota": "Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30)."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Valle de Hinón"
+    },
+    {
+     "nombre": "Valle del Hijo de Hinón",
+     "nota": "Otra forma del nombre (Jos 15:8; 2Re 23:10)."
+    },
+    {
+     "nombre": "Gehena",
+     "nota": "Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30)."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La TNM escribe «Hijo» con mayúscula en Jos 15:8: «valle del Hijo de Hinón».",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15",
+    "it-acsa"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:13, 14: Josué le da Hebrón y Caleb echa de allí a los hijos de Anac.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:13: Caleb hijo de Jefuné.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15",
+    "it-anaq"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:14: Caleb lo echa de Hebrón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "josue-15",
+      "it-anaq"
+     ],
+     "razon": "Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15",
+    "it-anaq"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:14: Caleb lo echa de Hebrón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "josue-15",
+      "it-anaq"
+     ],
+     "razon": "Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15",
+    "it-anaq"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:14: Caleb lo echa de Hebrón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "josue-15",
+      "it-anaq"
+     ],
+     "razon": "Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "sesai",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:14 nombra juntos a los tres hijos de Anac.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "talmai-hijo-de-anac",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:14 nombra juntos a los tres hijos de Anac.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003349"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "quenaz-padre-de-otniel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-quenaz"
+     ],
+     "razon": "Jos 15:17: Otniel hijo de Quenaz.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "acsa",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-acsa"
+     ],
+     "razon": "Jos 15:17: Caleb le da a su hija Acsá por esposa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "tío",
+     "deducido": true,
+     "fuentes": [
+      "josue-15"
+     ],
+     "razon": "Jos 15:17: hijo de Quenaz, el hermano de Caleb; Perspicacia «Otniel» lo hace sobrino.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quenaz-hijo-de-elifaz",
+   "campo": "no_confundir_con",
+   "valores": [
+    "quenaz-padre-de-otniel"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "territorio-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "josue-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "it-luz-ii"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Luz, II»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002794",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "territorio-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "en-dor",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meguido",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "en-dor",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Josué 17 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-hijo-de-jose",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "galaad-hijo-de-makir",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abi-ezer-hijo-de-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "helec",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asriel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "siquem-hijo-de-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hefer-hijo-de-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "semida",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zelofehad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahla-hija-de-zelofehad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "noa",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hogla",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "milca-hija-de-zelofehad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tirza",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "manases-hijo-de-jose",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Gé 41:50, 51.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "makir-hijo-de-manases",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Gé 50:23 lo llama hijo de Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "galaad-hijo-de-makir",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "makir-hijo-de-manases",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:29: Makir fue padre de Galaad.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:29: Makir, su padre, era hijo de Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hefer-hijo-de-galaad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "galaad-hijo-de-makir",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:30-32 lo cuenta entre los hijos de Galaad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zelofehad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "hefer-hijo-de-galaad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 lo llama Zelofehad hijo de Héfer.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "galaad-hijo-de-makir",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3: Zelofehad era hijo de Héfer, hijo de Galaad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahla-hija-de-zelofehad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zelofehad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "noa",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zelofehad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hogla",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zelofehad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "milca-hija-de-zelofehad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zelofehad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tirza",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zelofehad",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Nú 26:33 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "mahla-hija-de-zelofehad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "noa",
+     "relacion": "hermana",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "hogla",
+     "relacion": "hermana",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "milca-hija-de-zelofehad",
+     "relacion": "hermana",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "tirza",
+     "relacion": "hermana",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 la nombra entre las hijas de Zelofehad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Éx 33:11 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abi-ezer-hijo-de-galaad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "helec",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "asriel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "siquem-hijo-de-galaad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "semida",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hefer-hijo-de-galaad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:2, 3: Héfer, hijo de Galaad, hijo de Makir, desciende de Manasés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "makir-hijo-de-manases",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3: Héfer era hijo de Galaad, y Galaad hijo de Makir.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zelofehad",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "makir-hijo-de-manases",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 sigue su linaje por Héfer y Galaad hasta Makir.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "josue-17"
+     ],
+     "razon": "Jos 17:3 remonta su linaje hasta Manasés.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "abi-ezer-hijo-de-galaad",
+   "campo": "nombre",
+   "antes": "Abí-ézer",
+   "despues": "Abí-Ézer",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El nombre pasa a la grafía de la TNM, Abí-Ézer (Jos 17:2); Abí-ézer queda como grafía de Perspicacia.",
+    "fuente": "josue-17"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "abi-ezer-hijo-de-galaad",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Abí-ézer"
+    },
+    {
+     "nombre": "Yézer",
+     "nota": "Forma corta del nombre, sin el «Ab» inicial, que usa Nú 26:30; Perspicacia lo ve comparando con Josué 17."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Abí-Ézer"
+    },
+    {
+     "nombre": "Abí-ézer",
+     "nota": "Grafía de Perspicacia."
+    },
+    {
+     "nombre": "Yézer",
+     "nota": "Forma corta del nombre, sin el «Ab» inicial, que usa Nú 26:30; Perspicacia lo ve comparando con Josué 17."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade Abí-Ézer, la grafía de la TNM en Jos 17:2, como nombre principal.",
+    "fuente": "josue-17"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "valle-de-hinon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "araba",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gabaon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rama-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mizpa-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Jebusí",
+     "nota": "Así la llama Jos 18:28, por los jebuseos que la habitaban."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "dan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zabulon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "neftali",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jezreel",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "beer-seba",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "horma",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gat-hefer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-tabor",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-carmelo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tiro",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "timnat-serah",
+     "deducido": false,
+     "fuentes": [
+      "josue-19",
+      "it-timnat-serah"
+     ],
+     "razon": "Jos 19:50: reconstruyó la ciudad que había pedido y se quedó a vivir en ella.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-19"
+     ],
+     "razon": "Jos 19:49, 51 lo llaman Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Sidón la Grande",
+     "nota": "Así la llama Jos 19:28."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bezer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ramot-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "golan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gabaon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "anatot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "golan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "astarot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bezer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jahaz",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "quedemot",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ramot-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mahanaim",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hesbon",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jazer",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-21"
+     ],
+     "razon": "Jos 21:1 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jefune-padre-de-caleb",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-21"
+     ],
+     "razon": "Jos 21:12 lo llama Caleb hijo de Jefuné.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 21:43-45"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acan-hijo-de-ezer",
+   "campo": "no_confundir_con",
+   "valores": [
+    "acan-hijo-de-carmi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-adora-al-baal-de-peor",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 22:17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-22"
+     ],
+     "razon": "Jos 22:13, 31, 32: Finehás hijo del sacerdote Eleazar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Tierra de Galaad",
+     "nota": "En Jos 22:9 abarca todo el territorio israelita al este del Jordán, Basán incluido (Perspicacia «Galaad», núm. 4)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "basan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "josue-22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "josue-23"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tare",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nacor-hijo-de-tare",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hamor",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "siquem-hijo-de-hamor",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "tare",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:2 llama a Taré padre de Abrahán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nacor-hijo-de-tare",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "tare",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:2 llama a Taré padre de Nacor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "canaan",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:3: Jehová le hizo recorrer toda la tierra de Canaán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:3: Jehová dio Isaac a Abrahán.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:4: Jehová dio a Isaac a Jacob y a Esaú.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:4: Jehová dio a Isaac a Jacob y a Esaú.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "hermano gemelo",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:4 los nombra juntos como los dos hijos que Isaac recibió.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "seir",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:4: Jehová le dio en propiedad el monte Seír.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "egipto",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:4: Jacob y sus hijos bajaron a Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "moises",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:5: Jehová los envió a los dos a Egipto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zipor",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:9 lo llama Balac hijo de Zipor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "moab",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:9 lo llama rey de Moab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balaam",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "beor-padre-de-balaam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:9 lo llama Balaam hijo de Beor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "siquem-hijo-de-hamor",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "hamor",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:32 llama a Hamor padre de Siquem.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:33 lo llama Eleazar hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:33: enterraron a Eleazar en la colina de su hijo Finehás.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "sucede_a",
+     "persona": "eleazar-hijo-de-aaron",
+     "deducido": true,
+     "fuentes": [
+      "josue-24",
+      "it-eleazar",
+      "it-finehas"
+     ],
+     "razon": "Perspicacia «Eleazar», núm. 1, y «Finehás», núm. 1: tras enterrar a su padre (Jos 24:33) fue sumo sacerdote; Jue 20:27, 28 lo muestra en el cargo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-24"
+     ],
+     "razon": "Jos 24:29 lo llama Josué hijo de Nun.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "timnat-serah",
+     "deducido": false,
+     "fuentes": [
+      "josue-24",
+      "it-timnat-serah"
+     ],
+     "razon": "Jos 24:30: era el territorio que había heredado; Perspicacia «Timnat-sérah» dice que él edificó la ciudad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "resumen",
+   "antes": "Tercer hijo de Aarón y Eliseba, sacerdote con su padre y, en el desierto, jefe principal de los levitas. Se casó con una hija de Putiel, madre de Finehás, y sucedió a Aarón como sumo sacerdote.",
+   "despues": "Tercer hijo de Aarón y Eliseba, jefe de los levitas en el desierto. Casado con una hija de Putiel, madre de Finehás, sucedió a Aarón como sumo sacerdote. Lo enterraron en la colina de Finehás, en Efraín.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade su muerte y su entierro en la colina de Finehás, en las montañas de Efraín (Jos 24:33).",
+    "fuente": "josue-24"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-eufrates",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "canaan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "seir",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-rojo",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "moab",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "josue-24"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "seir",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Monte Seír",
+     "nota": "Así llama Jos 24:4 a esta región montañosa. No es el monte Seír de la frontera norte de Judá (Jos 15:10)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-con-abrahan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-isaac",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-esau-y-jacob",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "esau-se-traslada-a-seir",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-entra-en-egipto",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "exodo",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:5, 6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:6, 7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-sehon",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:8, 12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vence-a-og",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:8, 12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "balac-manda-llamar-a-balaam",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:9, 10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entrada-en-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conquista-de-canaan",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:11-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jacob-compra-un-campo-junto-a-siquem",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:32"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "pasajes",
+   "valores": [
+    "Jos 24:30"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "lugares",
+   "valores": [
+    "timnat-serah"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "fuentes",
+   "valores": [
+    "it-timnat-serah"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "resumen",
+   "antes": "Josué muere a los 110 años, después de pedir al pueblo que sirva solo a Jehová. Por esas fechas se completa el libro que lleva su nombre.",
+   "despues": "Josué muere a los 110 años, después de pedir al pueblo que sirva solo a Jehová, y lo entierran en Timnat-Sérah, en la región montañosa de Efraín. Por esas fechas se completa el libro que lleva su nombre.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade dónde lo enterraron, Timnat-Sérah (Jos 24:30), que faltaba: el suceso no tenía lugar.",
+    "fuente": "josue-24"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "razon",
+   "antes": "El cuadro del estudio 3 pone hacia 1450 a.e.c. la muerte de Josué y el final de su libro; la Tabla de los libros da la misma fecha.",
+   "despues": "El cuadro del estudio 3 pone hacia 1450 a.e.c. la muerte de Josué y el final de su libro; la Tabla de los libros da la misma fecha. Perspicacia «Timnat-sérah»: lo enterraron en la ciudad que había edificado.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón dice de dónde sale el lugar del entierro, Perspicacia «Timnat-sérah» y Jos 24:30.",
+    "fuente": "josue-24"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "fecha",
+   "antes": {
+    "desde": -1511,
+    "hasta": -1511,
+    "precision": "año",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1512 a.e.c."
+   },
+   "despues": {
+    "desde": -1511,
+    "hasta": -1449,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de la visita de los espías a la toma de Hebrón por Caleb)"
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 15:14 lo muestra expulsado de Hebrón por Caleb, después de 1467 a.e.c.: la fecha pasa de 1512 a un rango hasta c. 1450, con Perspicacia «Ahimán», núm. 1.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "razon",
+   "antes": "Perspicacia «Sesai» y «Ahimán», núm. 1; Nú 13:22; Jos 15:14.",
+   "despues": "Perspicacia «Sesai» y «Ahimán», núm. 1; Nú 13:22; Jos 15:14. Fecha: los espías lo ven en 1512 a.e.c. y Caleb lo echa de Hebrón tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "fuentes",
+   "valores": [
+    "it-ahiman",
+    "si-3",
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "fecha",
+   "antes": {
+    "desde": -1511,
+    "hasta": -1511,
+    "precision": "año",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1512 a.e.c."
+   },
+   "despues": {
+    "desde": -1511,
+    "hasta": -1449,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de la visita de los espías a la toma de Hebrón por Caleb)"
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 15:14 lo muestra expulsado de Hebrón por Caleb, después de 1467 a.e.c.: la fecha pasa de 1512 a un rango hasta c. 1450, con Perspicacia «Ahimán», núm. 1.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "razon",
+   "antes": "Perspicacia «Ahimán», núm. 1, y «Anaquim»; Nú 13:22; Jos 15:14.",
+   "despues": "Perspicacia «Ahimán», núm. 1, y «Anaquim»; Nú 13:22; Jos 15:14. Fecha: los espías lo ven en 1512 a.e.c. y Caleb lo echa de Hebrón tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "it-ahiman",
+    "si-3",
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "fecha",
+   "antes": {
+    "desde": -1511,
+    "hasta": -1511,
+    "precision": "año",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1512 a.e.c."
+   },
+   "despues": {
+    "desde": -1511,
+    "hasta": -1449,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de la visita de los espías a la toma de Hebrón por Caleb)"
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 15:14 lo muestra expulsado de Hebrón por Caleb, después de 1467 a.e.c.: la fecha pasa de 1512 a un rango hasta c. 1450, con Perspicacia «Ahimán», núm. 1.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "razon",
+   "antes": "Perspicacia «Talmai», núm. 1; Nú 13:22; Jos 15:14.",
+   "despues": "Perspicacia «Talmai», núm. 1, y «Ahimán», núm. 1; Nú 13:22; Jos 15:14. Fecha: los espías lo ven en 1512 a.e.c. y Caleb lo echa de Hebrón tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "it-ahiman",
+    "si-3",
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fecha",
+   "antes": {
+    "desde": -1511,
+    "hasta": -1466,
+    "precision": "rango",
+    "aprox": false,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "1512-1467 a.e.c."
+   },
+   "despues": {
+    "desde": -1511,
+    "hasta": -1449,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de su misión de espía a la toma de Hebrón y de Debir)"
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jos 15:13-19 lo muestra echando a los anaquim y casando a Acsá después de 1467 a.e.c.: el rango llega hasta c. 1450 (tabla de libros).",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "razon",
+   "antes": "Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30; Jos 14:6-15. Fechas: espía a los 40 años, en 1512 a.e.c. (Perspicacia «Espías»), y a los 85 pide Hebrón, en 1467 (estudio 3).",
+   "despues": "Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30; Jos 14:6-15; 15:13-19. Espía en 1512 a.e.c. (Perspicacia «Espías»); toma Hebrón y casa a Acsá tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica el nuevo final del rango, con Jos 15:13-19 y la tabla de libros.",
+    "fuente": "josue-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "tío",
+     "deducido": false,
+     "fuentes": [
+      "it-otniel",
+      "jueces-3",
+      "josue-15"
+     ],
+     "razon": "Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "quenaz-padre-de-otniel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-quenaz"
+     ],
+     "razon": "Jos 15:17: Otniel hijo de Quenaz.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "acsa",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-acsa"
+     ],
+     "razon": "Jos 15:17: Caleb le da a su hija Acsá por esposa.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "tío",
+     "deducido": true,
+     "fuentes": [
+      "it-otniel",
+      "jueces-3",
+      "josue-15"
+     ],
+     "razon": "Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "quenaz-padre-de-otniel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-quenaz"
+     ],
+     "razon": "Jos 15:17: Otniel hijo de Quenaz.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "acsa",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "josue-15",
+      "it-acsa"
+     ],
+     "razon": "Jos 15:17: Caleb le da a su hija Acsá por esposa.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El parentesco de tío con Caleb pasa a deducido: Jos 15:17 admite dos lecturas y es Perspicacia «Otniel» la que lo hace sobrino.",
+    "fuente": "josue-15"
+   }
+  }
+ ],
+ "preguntas": []
+}

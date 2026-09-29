@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: horam
+nombre: Horam
+nombres:
+- nombre: Horam
+perspicacia: '1200002072'
+resumen: Rey de Guézer, uno de los treinta y un reyes que venció Josué. Subió a socorrer a Lakís mientras Josué la atacaba,
+  y murió con todo su ejército.
+razon: Perspicacia «Horam»; Jos 10:33; 12:12.
+fuentes:
+- it-horam
+- josue-10
+enlaces:
+- titulo: 'Perspicacia: «Horam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002072
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: guezer
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-horam
+  razon: Jos 10:33 lo llama rey de Guézer.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
