@@ -216,8 +216,8 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Hazael y los Ben-Hadad.** `hazael` (`1200001923`) y `ben-hadad-hijo-de-hazael` (`1200000636#3`) existen desde Am 1:4. Reyes crea Ben-Hadad I y II (núm. 1 y 2) con `no_confundir_con` en las tres fichas, y añade `hazael` `sucede_a` Ben-Hadad II (2Re 8:15). La unción de 1Re 19:15 también es de Reyes.
 - **Damasco y Quir.** Cuando Reyes cree la toma de Damasco por Tiglat-piléser III y el destierro a Quir (2Re 16:9), el suceso va en `menciona` de los tramos Amós 1:3-5 y 9:7-10. Los de Hazael contra Galaad (2Re 10:32, 33) van a Amós 1:3-5.
-- **Amasías.** Amós deja en `data/_propuestas/amos.json` la clave de `amasias`, el rey de Judá (`1200000224#2`), y su `desambiguacion`, como la de `amos-profeta` (`1200000246#1`); el sacerdote de Betel es `amasias-sacerdote-de-betel` (`#3`). Reyes y Crónicas no vuelven a proponerlas.
-- **Jeroboán II.** `data/_propuestas/amos.json` corrige su `resumen`: «desde Lebó-Hamat» (2Re 14:25), no «desde Hamat». Un cambio posterior parte de ese texto. `hamat` y `lebo-hamat` son dos fichas: 2Re 14:28 usa `hamat`.
+- **Amasías.** `amasias`, el rey de Judá, ya lleva la clave (`1200000224#2`) y su `desambiguacion`, como la de `amos-profeta` (`1200000246#1`); el sacerdote de Betel es `amasias-sacerdote-de-betel` (`#3`). Reyes y Crónicas no vuelven a proponerlas.
+- **Jeroboán II.** Su `resumen` ya dice «desde Lebó-Hamat» (2Re 14:25), no «desde Hamat». Un cambio posterior parte de ese texto. `hamat` y `lebo-hamat` son dos fichas: 2Re 14:28 usa `hamat`.
 - **Samaria.** Lleva «Montaña de Samaria» en `nombres` (Am 4:1; 6:1): el monte que Omrí compra en 1Re 16:24.
 - **El terremoto.** `terremoto-en-dias-de-uzias` (Am 1:1; Zac 14:5) es de Amós. Si Crónicas lo nombra al hablar de Uzías, añade su pasaje.
 
