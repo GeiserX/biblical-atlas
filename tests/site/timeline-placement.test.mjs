@@ -46,7 +46,9 @@ const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch:
 // Events and letters outside Acts that this change moves, and why. 1: a «tras» of the same series bounded the whole
 // group with the raw date of its target, so the group did not fit and fell back to its dates. 2: Paul was drawn on
 // the road while they happened at a stop of one moment. 3: the window differed from the event's own date only by the
-// cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»).
+// cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»). 4: it names
+// Paul but nobody in it is there (`presentes: []`, events of Romans and 1 Corinthians merged after this change), so his
+// stops no longer place it: it keeps its date or follows its series and its «tras».
 const EXPECTED_CHANGES = {
   'evento:creacion-de-eva': 1, 'evento:pecado-de-adan-y-eva': 1, 'evento:juicio-en-eden': 1, 'evento:expulsion-del-eden': 1,
   'evento:nacimiento-de-cain': 1, 'evento:ofrendas-de-cain-y-abel': 1, 'evento:cain-mata-a-abel': 1, 'evento:cain-edifica-enoc': 1,
@@ -61,6 +63,8 @@ const EXPECTED_CHANGES = {
   'evento:mujer-encorvada-y-grano-de-mostaza': 1,
   'evento:tito-trae-noticias-de-corinto': 2, 'evento:segundo-encierro-en-roma': 2, 'carta:2-corintios': 2, 'carta:2-timoteo': 2,
   'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3, 'evento:joel-anuncia-el-dia-de-jehova': 3,
+  'evento:colecta-de-macedonia-y-acaya': 4, 'evento:pablo-escribe-una-carta-perdida-a-corinto': 4,
+  'evento:pablo-manda-expulsar-al-inmoral-de-corinto': 4,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {
@@ -323,18 +327,25 @@ test('a second person with journeys takes only the events that land on his stops
 
 test('a «tras» that points at an event left with its whole year moves only its own event', async () => {
   const collect = () => Object.fromEntries(window.BE.D.eventos.map((e) => [e.id, window.BE.ventanaEvento(e)]));
-  variant('tras', (D) => {
-    const e = D.eventos.find((x) => x.id === 'manda-esperar-en-jerusalen');
-    assert.ok(e && D.eventos.some((x) => x.id === 'aparicion-a-santiago'), 'the meeting of Acts 1:4 and the appearance to James exist');
-    e.orden_relato.tras = 'aparicion-a-santiago';
-  });
-  const before = await page.evaluate(collect);
+  // The appearance to James (A7) is left with its whole year at the place 125 it had in the account before 1 Corintios
+  // moved it to 133, inside its year: both variants give it 125 again, and only the second adds the «tras».
+  const whole = (D) => {
+    const t = D.eventos.find((x) => x.id === 'aparicion-a-santiago');
+    assert.ok(t && D.eventos.some((x) => x.id === 'manda-esperar-en-jerusalen'), 'the meeting of Acts 1:4 and the appearance to James exist');
+    t.orden_relato.orden = 125;
+  };
+  variant('tras-base', whole);
+  variant('tras', (D) => { whole(D); D.eventos.find((x) => x.id === 'manda-esperar-en-jerusalen').orden_relato.tras = 'aparicion-a-santiago'; });
+  const base = await open('/tras-base');
+  const before = await base.evaluate(collect);
+  await base.context().close();
   const p = await open('/tras');
   const after = await p.evaluate(collect);
   await p.context().close();
   const target = after['aparicion-a-santiago'], meeting = after['manda-esperar-en-jerusalen'];
   assert.ok(target[1] - target[0] > 0.9, `the target keeps its whole year in this data (${target.map((x) => x.toFixed(4))})`);
-  assert.ok(meeting[0] >= target[0] - 1e-9 && meeting[1] >= target[1] - 1e-9, 'the event with «tras» comes after its target');
+  assert.ok(before['manda-esperar-en-jerusalen'][1] < target[1], 'without «tras» the meeting ends before its target: the «tras» has work to do');
+  assert.ok(meeting[0] >= target[0] - 1e-9 && meeting[1] >= target[1] - 1e-9, `the event with «tras» comes after its target (${meeting.map((x) => x.toFixed(4))})`);
   const moved = Object.keys(after).filter((id) => id !== 'manda-esperar-en-jerusalen' && JSON.stringify(after[id]) !== JSON.stringify(before[id]));
   assert.deepEqual(moved, [], 'the rest of the series stays where it was');
 });
