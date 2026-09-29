@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jael
+nombre: Jael
+nombres:
+- nombre: Jael
+perspicacia: '1200002286'
+resumen: Esposa de Héber el quenita. Acogió en su tienda a Sísara, que huía de Barac, lo tapó y le dio leche; cuando se durmió
+  le hundió una estaca de tienda en las sienes y luego se lo mostró a Barac.
+razon: Perspicacia «Jael»; Jue 4:17-22.
+fuentes:
+- it-jael
+- jueces-4
+- jueces-5
+enlaces:
+- titulo: 'Perspicacia: «Jael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002286
+  tipo: perspicacia
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: zaananim
+  deducido: true
+  fuentes:
+  - jueces-4
+  - it-jael
+  - it-zaananim
+  razon: 'Perspicacia «Jael»: vivía con Héber en una tienda cerca de Quedes, la que Jue 4:11 pone junto al árbol grande de
+    Zaananim.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

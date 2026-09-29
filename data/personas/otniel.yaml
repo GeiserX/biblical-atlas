@@ -3,13 +3,14 @@ id: otniel
 nombre: Otniel
 nombres:
 - nombre: Otniel
-resumen: Sobrino de Caleb, hijo de su hermano Quenaz. Tomó Debir y recibió por esposa a Acsá, la hija de Caleb. Primer
-  juez que la Biblia nombra después de Josué, libró a Israel de Cusán-risataim.
+resumen: Sobrino de Caleb, hijo de su hermano Quenaz. Tomó Debir y recibió por esposa a Acsá, la hija de Caleb. Primer juez
+  que la Biblia nombra después de Josué, libró a Israel de Cusán-Risataim.
 razon: Perspicacia «Otniel», párr. 2 a 4; Jos 15:16-19 y Jue 3:8-11.
 fuentes:
 - it-otniel
 - jueces-3
 - josue-15
+- jueces-1
 enlaces:
 - titulo: 'Perspicacia: «Otniel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003349
@@ -26,6 +27,7 @@ relaciones:
   - it-otniel
   - jueces-3
   - josue-15
+  - jueces-1
   razon: 'Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).'
   estado: verificado
 - tipo: pariente
@@ -35,6 +37,8 @@ relaciones:
   fuentes:
   - josue-15
   - it-quenaz
+  - jueces-1
+  - jueces-3
   razon: 'Jos 15:17: Otniel hijo de Quenaz.'
   estado: verificado
 - tipo: pariente
@@ -44,6 +48,7 @@ relaciones:
   fuentes:
   - josue-15
   - it-acsa
+  - jueces-1
   razon: 'Jos 15:17: Caleb le da a su hija Acsá por esposa.'
   estado: verificado
 perspicacia: '1200003349'
@@ -52,5 +57,8 @@ historial:
   cambio: 'El parentesco de tío con Caleb pasa a deducido: Jos 15:17 admite dos lecturas y es Perspicacia «Otniel» la que
     lo hace sobrino.'
   fuente: josue-15
+- fecha: '2026-09-29'
+  cambio: Cusán-risataim pasa a Cusán-Risataim, la grafía de la TNM en Jue 3:8, 10.
+  fuente: jueces-3
 consultado: '2026-09-29'
 estado: verificado

@@ -11,6 +11,8 @@ razon: Perspicacia «Gedeón», párr. 2, 5, 6 y 16; Jue 6:11 a 8:28.
 fuentes:
 - it-gedeon
 - jueces-6
+- jueces-7
+- jueces-8
 enlaces:
 - titulo: 'Perspicacia: «Gedeón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
@@ -18,5 +20,46 @@ enlaces:
 - titulo: Jueces 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001685'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: joas-padre-de-gedeon
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-6
+  - it-gedeon
+  - jueces-8
+  razon: 'Jue 6:11, 29, 30: Gedeón es hijo de Joás el abí-ezrita.'
+  estado: verificado
+- tipo: pariente
+  persona: abi-ezer-hijo-de-galaad
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - jueces-6
+  - it-abi-ezer
+  razon: 'Jue 6:11, 34: su padre era abí-ezrita y los abí-ezritas lo siguen. Perspicacia «Abí-ézer», núm. 1, lo da como antepasado
+    de Gedeón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ofra-de-gedeon
+  deducido: false
+  fuentes:
+  - jueces-6
+  - it-gedeon
+  - it-ofra
+  - jueces-8
+  razon: 'Jue 6:11, 27: el ángel lo encuentra trillando en Ofrá, en tierra de su padre, y teme a los hombres de la ciudad.
+    Perspicacia «Gedeón», párr. 1.'
+  estado: verificado
+- tipo: murio_en
+  lugar: ofra-de-gedeon
+  deducido: true
+  fuentes:
+  - it-ofra
+  - jueces-8
+  razon: Perspicacia «Ofrá», núm. 3, habla de su muerte y entierro en Ofrá; Jue 8:32 da solo la tumba de Joás allí.
+  estado: verificado

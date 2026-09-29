@@ -10,6 +10,9 @@ fuentes:
 - it-sanson
 - jueces-15
 - jueces-16
+- jueces-13
+- it-zora
+- jueces-14
 enlaces:
 - titulo: 'Perspicacia: «Sansón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
@@ -24,8 +27,39 @@ relaciones:
   fuentes:
   - jueces-16
   - it-sanson
+  - it-gaza
   razon: 'Jue 16:21-30: lo bajaron a Gaza, y allí murió al derribar la casa de Dagón. Perspicacia «Sansón», párr. 10 y 11,
     no nombra la ciudad.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: manoah
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-13
+  - it-manoah
+  - jueces-14
+  - it-sanson
+  - jueces-16
+  razon: 'Jue 13:2, 24: la esposa de Manóah da a luz a Sansón.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: zora
+  deducido: true
+  fuentes:
+  - jueces-13
+  - it-zora
+  razon: 'Jue 13:2, 24: sus padres eran de Zorá. Perspicacia «Zorá» dice que nació allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: penasco-de-etam
+  deducido: false
+  fuentes:
+  - jueces-15
+  - it-etam
+  razon: 'Jue 15:8, 11: tras la matanza se instala en una cueva de ese peñasco, y allí lo buscan los de Judá; Perspicacia
+    «Etam», núm. 2, dice que vivió allí.'
+  estado: verificado
+perspicacia: '1200003823'
+consultado: '2026-09-29'
 estado: verificado

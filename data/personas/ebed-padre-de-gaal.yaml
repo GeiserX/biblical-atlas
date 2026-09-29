@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ebed-padre-de-gaal
+nombre: Ébed
+nombres:
+- nombre: Ébed
+perspicacia: 1200001246#1
+desambiguacion: Padre de Gaal; no el Ébed hijo de Jonatán que volvió de Babilonia con Esdras.
+resumen: Padre de Gaal, el que encabezó la revuelta de Siquem contra Abimélec. El relato solo lo nombra al presentar a su
+  hijo.
+razon: Perspicacia «Ébed», núm. 1; Jue 9:26-35.
+fuentes:
+- it-ebed
+- jueces-9
+enlaces:
+- titulo: 'Perspicacia: «Ébed»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001246
+  tipo: perspicacia
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-se-reune-en-mizpa-contra-guibea
+titulo: Israel se reúne en Mizpá contra Guibeá
+fecha:
+  desde: -1449
+  hasta: -1399
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+orden_relato:
+  serie: jueces
+  orden: 20001
+lugares:
+- mizpa-de-benjamin
+personas: []
+pasajes:
+- Jue 20:1-11
+- Jue 21:1
+- Jue 21:5
+resumen: Las tribus, de Dan a Beer-Seba y de Galaad, se juntan en Mizpá con 400.000 soldados. Oído el levita, deciden ir contra
+  Guibeá y juran no dar sus hijas a los benjaminitas.
+razon: 'Jue 20:1-11 y los juramentos de Jue 21:1, 5; Perspicacia «Mizpá, Mizpé», núm. 3. Fecha: «Jueces, Libro de», «Orden
+  del libro»: poco después de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+fuentes:
+- jueces-20
+- jueces-21
+- it-mizpa
+- it-jueces
+- si-3
+- it-finehas
+enlaces:
+- titulo: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  tipo: biblia
+- titulo: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

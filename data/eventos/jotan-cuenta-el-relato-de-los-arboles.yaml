@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jotan-cuenta-el-relato-de-los-arboles
+titulo: Jotán habla desde el Guerizim con el relato de los árboles
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 9007
+lugares:
+- monte-guerizim
+- beer-de-jotan
+personas:
+- jotan-hijo-de-gedeon
+presentes:
+- jotan-hijo-de-gedeon
+pasajes:
+- Jue 9:7-21
+resumen: Desde la cima del Guerizim, Jotán cuenta que los árboles ofrecieron el reinado al olivo, la higuera y la vid, y solo
+  aceptó la zarza. Anuncia fuego entre Abimélec y Siquem y huye a Beer.
+razon: Perspicacia «Jotán», núm. 2, lo llama maldición profética; se cumple en Jue 9:56, 57. Fecha como la de Jue 9:1-4.
+fuentes:
+- jueces-9
+- it-jotan
+- it-guerizim
+- it-beer
+- si-3
+- it-jueces
+- it-jefte
+enlaces:
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

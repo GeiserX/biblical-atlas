@@ -35,13 +35,14 @@ candidatos:
   razon: Propuesta desde 1951 (párr. 3); Perspicacia da razones en contra (párr. 4-5). Punto de OpenBible.
   coord_fuente: openbible:a5a1bdd
   coord_url: https://www.openbible.info/geo/ancient/a5a1bdd/abel-meholah
-resumen: Hogar de Eliseo, donde Elías lo encontró arando. No se sabe dónde estaba; Perspicacia se inclina por el oeste del
-  Jordán, al sur de Bet-seán.
-razon: 'Perspicacia «Abel-meholá», párr. 1-5; 1Re 19:16-19. Sin identificación segura: dos candidatos.'
+resumen: Hogar de Eliseo, donde Elías lo encontró arando; antes, hasta sus afueras huyeron los madianitas vencidos por Gedeón.
+  No se sabe dónde estaba; Perspicacia se inclina por el oeste del Jordán, al sur de Bet-seán.
+razon: 'Perspicacia «Abel-meholá», párr. 1-5; Jue 7:22; 1Re 19:16-19. Sin identificación segura: dos candidatos.'
 fuentes:
 - it-abel-mehola
 - openbible-geo
 - 1-reyes-19
+- jueces-7
 enlaces:
 - titulo: 'Perspicacia: «Abel-meholá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000022
@@ -49,5 +50,13 @@ enlaces:
 - titulo: 1 Reyes 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen no nombraba la huida de Madián de Jue 7:22, la primera vez que sale la ciudad según Perspicacia «Abel-meholá»,
+    párr. 2.
+  fuente: jueces-7
+- fecha: '2026-09-29'
+  cambio: Se añade Jue 7:22, que Perspicacia usa para situar la ciudad al oeste del Jordán.
+  fuente: jueces-7
+consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: debora-y-barac-cantan-su-victoria
+titulo: Débora y Barac cantan la victoria sobre Sísara
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: después de Ehúd y antes de Jefté)'
+orden_relato:
+  serie: jueces
+  orden: 5001
+lugares:
+- cison
+- taanac
+- meguido
+personas:
+- debora-profetisa
+- barac
+presentes: []
+pasajes:
+- Jue 5:1-31
+resumen: 'El mismo día de la victoria, Débora y Barac alaban a Jehová: recuerdan la opresión, elogian a las tribus que lucharon,
+  reprochan a las que no, cuentan la derrota junto al Cisón y la hazaña de Jael.'
+razon: 'Jue 5:1: el día de la victoria; no dice dónde cantaron, así que no sitúa a nadie. Fecha: Barac va tras Ehúd y antes
+  de Jefté, hacia 1173 a.e.c. («Jueces, Libro de»; «Jefté»); Josué murió hacia 1450 a.e.c. (estudio 3).'
+fuentes:
+- jueces-5
+- it-debora
+- it-barac
+- it-jueces
+- it-jefte
+- si-3
+enlaces:
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
+- titulo: 'Perspicacia: «Débora»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001138
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

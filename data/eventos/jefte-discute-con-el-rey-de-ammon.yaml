@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jefte-discute-con-el-rey-de-ammon
+titulo: Jefté rechaza la reclamación del rey de Ammón
+fecha:
+  desde: -1172
+  hasta: -1172
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1173 a.e.c. (antes de la batalla contra Ammón)
+orden_relato:
+  serie: jueces
+  orden: 11012
+lugares:
+- ammon
+- arnon
+- rio-jaboc
+personas:
+- jefte
+presentes: []
+pasajes:
+- Jue 11:12-28
+resumen: 'El rey de Ammón reclama la tierra del Arnón al Jaboc. Jefté responde que Israel no quitó tierra a Moab ni a Ammón:
+  Jehová le dio la de Sehón y lleva 300 años en ella. El rey no escucha.'
+razon: 'Perspicacia «Jefté», párr. 8 y 9. El texto no dice desde dónde envía a los mensajeros: el sitio no sitúa a nadie;
+  los lugares son la tierra en disputa. Fecha: c. 1173 a.e.c. (Perspicacia «Jefté», párr. 1).'
+fuentes:
+- jueces-11
+- it-jefte
+- it-aroer
+- it-sehon
+enlaces:
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

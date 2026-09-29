@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: penasco-de-rimon
+nombre: Peñasco de Rimón
+nombres:
+- nombre: Peñasco de Rimón
+- nombre: Rammun
+  nota: Nombre actual de la aldea que hay en el lugar, según Perspicacia «Rimón», núm. 4.
+tipo: monte
+lat: 31.929722
+lon: 35.298889
+precision: incierto
+coord_fuente: openbible:a45acc3
+coord_url: https://www.openbible.info/geo/ancient/a45acc3/rimmon-1
+coord_nota: 'Punto de Rammun, segunda identificación de OpenBible: es el sitio que nombra Perspicacia. La primera es la cueva
+  de el-Jai.'
+resumen: Promontorio rocoso al este de Betel, rodeado de barrancos por tres lados y lleno de cuevas. Allí aguantaron cuatro
+  meses los 600 benjaminitas que sobrevivieron a la guerra, hasta que Israel les ofreció la paz.
+razon: 'Perspicacia «Rimón», núm. 4: hoy Rammun, 6 km al E de Betel; Jue 20:45-47 y 21:13. OpenBible: solo el punto.'
+fuentes:
+- it-rimon
+- openbible-geo
+- jueces-20
+- jueces-21
+enlaces:
+- titulo: 'Perspicacia: «Rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003734
+  tipo: perspicacia
+- titulo: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  tipo: biblia
+- titulo: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

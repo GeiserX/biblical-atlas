@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jefte-cumple-su-voto-con-su-hija
+titulo: Jefté cumple su voto con su hija
+fecha:
+  desde: -1172
+  hasta: -1172
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1173 a.e.c. (tras la victoria sobre Ammón)
+orden_relato:
+  serie: jueces
+  orden: 11034
+lugares:
+- mizpa-de-galaad
+personas:
+- jefte
+pasajes:
+- Jue 11:34-40
+resumen: Al volver a Mizpá le sale al encuentro su única hija, bailando. Jefté se rasga la ropa; ella le pide cumplir el voto,
+  llora dos meses su virginidad en las montañas y luego sirve a Jehová sin casarse.
+razon: 'Perspicacia «Jefté», párr. 13 a 16: la dedicó al servicio del santuario, entonces en Siló; no fue un sacrificio humano.
+  Las jóvenes la elogiaban cuatro días al año. Hacia 1173 a.e.c.'
+fuentes:
+- jueces-11
+- it-jefte
+- it-silo
+enlaces:
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: siquem-se-rebela-contra-abimelec
+titulo: Siquem se vuelve contra Abimélec y Gaal lo desafía
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 9022
+lugares:
+- siquem
+personas:
+- gaal
+- abimelec-hijo-de-gedeon
+presentes:
+- gaal
+pasajes:
+- Jue 9:22-29
+resumen: 'A los tres años de gobierno de Abimélec, Dios deja que surja la enemistad: los de Siquem asaltan a los viajeros
+  desde los montes. Llega Gaal y, tras la vendimia, en el templo de su dios maldicen a Abimélec.'
+razon: 'Perspicacia «Gaal» y «Baal-berit»: la fiesta de la vendimia acababa con una comida en el templo. Jue 9:22 da los tres
+  años; fecha como la de Jue 9:1-4.'
+fuentes:
+- jueces-9
+- it-gaal
+- it-baal-berit
+- it-abimelec
+- si-3
+- it-jueces
+- it-jefte
+enlaces:
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
