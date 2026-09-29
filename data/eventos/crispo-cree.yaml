@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: crispo-cree
+titulo: Crispo cree con toda su casa
+fecha:
+  desde: 50
+  hasta: 52
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: c. 50-52 e.c. (los 18 meses en Corinto)
+orden_relato:
+  serie: hechos
+  orden: 1805
+lugares:
+- corinto
+personas:
+- pablo
+- silas
+- timoteo
+- crispo
+- ticio-justo
+pasajes:
+- Hch 18:5-8
+- 1Co 1:14
+- 2Co 1:19
+- 2Co 11:9
+resumen: Silas y Timoteo llegan de Macedonia con ayuda. Ante la oposición judía, Pablo enseña en casa de Ticio Justo, junto
+  a la sinagoga. Crispo, que la presidía, cree con toda su casa, y muchos corintios se bautizan.
+razon: 'Perspicacia «Crispo»; «Testimonio completo», cap. 19, párr. 8 a 10: la ayuda llegada de Macedonia (2Co 11:9), la casa
+  de Ticio Justo y la fe de Crispo.'
+fuentes:
+- it-crispo
+- bt-19
+- hch-18
+- it-justo
+- nota-hechos-18
+buscar: Crispo presidente de la sinagoga
+historial:
+- fecha: '2026-09-29'
+  cambio: La visión de Hch 18:9-11 pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: La visión de Hch 18:9-11 es otra escena, de noche, y pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: El resumen contaba también la visión, que pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: Decía que el párr. 13 de «Testimonio completo», cap. 19, pone la visión tras un año en Corinto; ese párrafo es el
+    tribunal, y la visión está en el párr. 12.
+  fuente: bt-19
+- fecha: '2026-09-29'
+  cambio: 'Silas y Timoteo no llegaban con las manos vacías: «Testimonio completo», cap. 19, párr. 8, dice que traían de Macedonia
+    la ayuda de 2Co 11:9.'
+  fuente: bt-19
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora el párr. 8 de «Testimonio completo», cap. 19, que une la llegada de Silas y Timoteo con 2Co
+    11:9.
+  fuente: bt-19
+consultado: '2026-09-29'
+estado: verificado

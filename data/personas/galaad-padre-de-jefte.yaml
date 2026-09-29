@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: galaad-padre-de-jefte
+nombre: Galaad
+nombres:
+- nombre: Galaad
+perspicacia: 1200001694#3
+desambiguacion: Galaad, padre del juez Jefté; no Galaad hijo de Makir, ni el gadita de la lista de Abiháil, ni la región de
+  Galaad.
+no_confundir_con:
+- galaad-hijo-de-makir
+resumen: Padre de Jefté, que le nació de una mujer que había sido prostituta. Con su esposa principal tuvo otros hijos, que
+  echaron a Jefté cuando él, al parecer, ya había muerto.
+razon: Perspicacia «Galaad», núm. 3, y «Jefté», párr. 2 y 3; Jue 11:1, 2.
+fuentes:
+- it-galaad
+- it-jefte
+- jueces-11
+enlaces:
+- titulo: 'Perspicacia: «Galaad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001694
+  tipo: perspicacia
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

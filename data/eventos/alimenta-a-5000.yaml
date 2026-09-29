@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: alimenta-a-5000
+titulo: Jesús alimenta a 5.000 hombres
+fecha:
+  desde: 32
+  hasta: 32
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: cerca de la Pascua de 32 e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: a7
+  orden: 50
+lugares:
+- mar-de-galilea
+- betsaida
+personas:
+- jesus
+- felipe-apostol
+- andres
+pasajes:
+- Mt 14:13-21
+- Mr 6:30-44
+- Lu 9:10-17
+- Jn 6:1-13
+resumen: Cuando vuelven los apóstoles, Jesús cruza con ellos a un lugar apartado cerca de Betsaida, en el lado noreste del
+  lago. Con cinco panes y dos pescados alimenta a unos 5.000 hombres, sin contar mujeres y niños.
+razon: 'A7-D, fila 9: cerca de la Pascua de 32 (Jn 6:4). Perspicacia «Betsaida» (párr. 2) sitúa el milagro en un prado cercano
+  a la ciudad.'
+fuentes:
+- tnm-a7-d
+- mateo-14
+- marcos-6
+- lucas-9
+- juan-6
+- it-betsaida
+- jy-cap-52
+consultado: '2026-09-28'
+estado: verificado

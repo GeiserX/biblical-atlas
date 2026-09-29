@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-de-la-ley
+titulo: Pacto de la Ley en el monte Sinaí
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+lugares:
+- monte-sinai
+personas:
+- moises
+pasajes:
+- Éx 24:3-8
+- Gál 3:17
+- Dt 5:2, 3
+resumen: Al pie del Sinaí, Israel acepta el pacto de la Ley con Moisés como mediador. Se cumplen justo 430 años desde que
+  entró en vigor el pacto con Abrahán.
+razon: El cuadro del estudio 3 pone el pacto de la Ley en 1513 a.e.c.; Perspicacia «Pacto» explica los 430 años de Gálatas
+  3:17 y el papel de Moisés.
+fuentes:
+- si-3
+- it-pacto
+- exodo-24
+- deuteronomio-5
+buscar: pacto de la Ley Sinaí
+orden_relato:
+  serie: exodo
+  orden: 24003
+consultado: '2026-09-29'
+estado: verificado

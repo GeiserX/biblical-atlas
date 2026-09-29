@@ -1,0 +1,77 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oseas
+nombre: Oseas
+nombres:
+- nombre: Oseas
+desambiguacion: El profeta; no es Hosea, el último rey de Israel, aunque en hebreo el nombre es el mismo.
+no_confundir_con:
+- hosea-de-israel
+fecha:
+  desde: -803
+  hasta: -744
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 804-745 a.e.c.
+resumen: Profeta hijo de Beerí. Profetizó sobre todo al reino de Israel, durante Jeroboán II y los reyes de Judá de Uzías
+  a Ezequías. Por orden de Jehová se casó con Gómer, cuya infidelidad ilustró la de Israel.
+razon: Perspicacia «Oseas», párr. 1 y 2, y «Oseas, Libro de», párr. 4 y 5; Os 1:1-3 y 3:1-3. La Tabla de los libros da su
+  libro desde antes de 804 hasta después de 745.
+fuentes:
+- it-oseas
+- oseas-1
+- tnm-tabla
+- it-oseas-libro
+- si-oseas
+- w05-profecias-de-oseas
+- oseas-3
+enlaces:
+- titulo: 'Perspicacia: «Oseas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002086
+  tipo: perspicacia
+- titulo: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Oseas, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002087
+  tipo: perspicacia
+perspicacia: '1200002086'
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade su matrimonio con Gómer y lo que representaba, que cuentan Os 1:2-3 y 3:1-3.
+  fuente: oseas-1
+- fecha: '2026-09-29'
+  cambio: La razón cita también el artículo del libro y los pasajes de su matrimonio.
+  fuente: oseas-1
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: pariente
+  persona: beeri-padre-de-oseas
+  relacion: padre
+  deducido: false
+  fuentes:
+  - oseas-1
+  - it-beeri
+  razon: Os 1:1 lo llama hijo de Beerí.
+  estado: verificado
+- tipo: pariente
+  persona: gomer-hija-de-diblaim
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - oseas-1
+  - oseas-3
+  - it-gomer
+  razon: 'Os 1:3: se casó con Gómer por mandato de Jehová; en Os 3:1-3 la compra y la vuelve a tomar.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: israel
+  deducido: true
+  fuentes:
+  - w05-profecias-de-oseas
+  - it-oseas
+  razon: La Atalaya (2005) dice que al parecer vivía en el reino de diez tribus; Perspicacia «Oseas», párr. 2, lo cree súbdito
+    de ese reino (Os 1:1).
+  estado: verificado

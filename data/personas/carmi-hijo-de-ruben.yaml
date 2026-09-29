@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: carmi-hijo-de-ruben
+nombre: Carmí
+nombres:
+- nombre: Carmí
+perspicacia: 1200000894#1
+desambiguacion: Carmí hijo de Rubén; no el padre de Acán, de la tribu de Judá.
+resumen: Hijo de Rubén y antepasado de los carmitas. Bajó a Egipto con toda la familia de su abuelo Jacob.
+razon: Perspicacia «Carmí», núm. 1; Gé 46:9.
+fuentes:
+- it-carmi
+- genesis-46
+- exodo-6
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Carmí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000894
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ruben-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-carmi
+  - exodo-6
+  - numeros-26
+  razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- carmi-hijo-de-zabdi

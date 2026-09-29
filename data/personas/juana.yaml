@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juana
+nombre: Juana
+nombres:
+- nombre: Juana
+resumen: Esposa de Cuza, servidor de Herodes Antipas. Jesús la curó y ella lo siguió con otras mujeres, ayudándolo con sus
+  bienes; estuvo entre las primeras que supieron de su resurrección.
+razon: Perspicacia «Juana» (párr. 2); Lu 8:1-3; 24:10.
+fuentes:
+- it-juana
+- lucas-8
+- lucas-23
+- lucas-24
+relaciones:
+- tipo: acompana
+  persona: jesus
+  relacion: maestro
+  deducido: false
+  fuentes:
+  - lucas-8
+  - it-juana
+  - lucas-23
+  razon: 'Lu 8:1-3: iba con Jesús y lo atendía con sus bienes.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Juana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002473
+  tipo: perspicacia
+- titulo: Lucas 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/8
+  tipo: biblia
+perspicacia: '1200002473'
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Jesús decía «discípula de». En la ficha del discípulo la relación dice qué es el otro para él, así
+    que pasa a «maestro», como en los apóstoles.
+  fuente: lucas-8
+consultado: '2026-09-29'
+estado: verificado

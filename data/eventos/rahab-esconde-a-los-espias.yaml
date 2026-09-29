@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rahab-esconde-a-los-espias
+titulo: Rahab esconde a los dos espías en Jericó
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: estación
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 1473 a.e.c.
+  detalle:
+    estacion: primavera
+orden_relato:
+  serie: numeros
+  orden: 202001
+lugares:
+- jerico
+- sitim
+personas:
+- rahab
+- josue-hijo-de-nun
+presentes:
+- rahab
+pasajes:
+- Jos 2:1-21
+- Heb 11:31
+- Snt 2:25
+resumen: Josué manda en secreto dos espías desde Sitim. En Jericó, Rahab los oculta en su azotea bajo el lino, engaña a los
+  hombres del rey y los descuelga por la muralla a cambio de salvar a su familia.
+razon: 'Perspicacia «Rahab», núm. 1, y «Espías»: los dos llegaron a Jericó en la primavera de 1473 a.e.c. Heb 11:31 y Snt
+  2:25 alaban la fe que ella mostró al acogerlos.'
+fuentes:
+- josue-2
+- it-rahab
+- it-espias
+- it-jerico
+- it-sitim
+enlaces:
+- titulo: Josué 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Rahab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003623
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Espías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004208
+  tipo: perspicacia
+buscar: Rahab espías Jericó cordón escarlata
+consultado: '2026-09-29'
+estado: verificado

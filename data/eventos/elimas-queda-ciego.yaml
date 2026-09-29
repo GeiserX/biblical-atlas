@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elimas-queda-ciego
+titulo: Elimas queda ciego y Sergio Paulo se hace creyente
+fecha:
+  desde: 47
+  hasta: 47
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1306
+lugares:
+- pafos
+personas:
+- pablo
+- bernabe
+- elimas
+- sergio-paulo
+pasajes:
+- Hch 13:6-12
+resumen: En Pafos, el hechicero Elimas intenta apartar de la fe al procónsul. Pablo le anuncia que quedará ciego
+  un tiempo; así ocurre y el procónsul cree.
+razon: Perspicacia «Bar-Jesús» (párr. 3) lo llama el primer milagro de Pablo que registra la Biblia; «Paulo» fecha
+  la visita hacia 47.
+fuentes:
+- it-bar-jesus
+- it-paulo
+- hch-13
+- si-3
+buscar: Elimas Sergio Paulo
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa del tramo narrativo 47-48 a c. 47: Perspicacia «Paulo» pone la visita a Chipre hacia el año 47, como
+    ya decía la razón.'
+  fuente: it-paulo
+consultado: '2026-09-29'
+estado: verificado

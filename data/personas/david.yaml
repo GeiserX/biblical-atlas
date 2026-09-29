@@ -1,0 +1,106 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: david
+nombre: David
+nombres:
+- nombre: David
+fecha:
+  desde: -1076
+  hasta: -1037
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1077-1038 a.e.c.
+resumen: Hijo menor de Jesé, de Belén. Pastor ungido por Samuel, reinó siete años y medio en Hebrón y luego en Jerusalén,
+  que tomó a los jebuseos. Jehová pactó con él un reino duradero.
+razon: Perspicacia «David», párr. 3, 4, 20 y 21; 2Sa 5:4-10. La lámina B7 da el reinado de 1077 a 1038 y el pacto hacia 1070.
+fuentes:
+- it-david
+- 2-samuel-5
+- 1-reyes-2
+- tnm-b7
+- mateo-1
+- salmos-3
+- salmos-7
+- salmos-34
+- salmos-51
+- salmos-52
+- salmos-54
+- salmos-56
+- salmos-57
+- salmos-59
+- salmos-60
+- salmos-63
+- salmos-72
+- salmos-78
+- salmos-89
+- salmos-132
+- salmos-142
+- lucas-3
+- hch-2
+- hechos-7
+enlaces:
+- titulo: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  tipo: perspicacia
+- titulo: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  tipo: biblia
+relaciones:
+- tipo: nacio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - it-david
+  - juan-7
+  razon: 'Perspicacia «David», párr. 4: Belén era su pueblo natal.'
+  estado: verificado
+- tipo: sucede_a
+  persona: saul
+  deducido: false
+  fuentes:
+  - it-david
+  - 2-samuel-2
+  razon: En 1077 los de Judá lo ungieron rey en Hebrón tras la muerte de Saúl (2Sa 2:4).
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-david
+  - 2-samuel-5
+  razon: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
+  estado: verificado
+- tipo: pariente
+  persona: jese
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  - salmos-72
+  - lucas-3
+  - hch-13
+  razon: Rut 4:17 y 22.
+  estado: verificado
+- tipo: pariente
+  persona: bat-seba
+  relacion: esposa
+  deducido: true
+  fuentes:
+  - mateo-1
+  - it-bat-seba
+  razon: 'Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.'
+  estado: verificado
+- tipo: murio_en
+  lugar: jerusalen
+  deducido: true
+  fuentes:
+  - hch-2
+  - it-david
+  razon: 'Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo
+    da sepultado en la Ciudad de David (1Re 2:10).'
+  estado: verificado
+perspicacia: '1200001130'
+consultado: '2026-09-29'
+estado: verificado

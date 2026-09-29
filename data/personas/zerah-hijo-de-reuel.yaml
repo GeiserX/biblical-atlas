@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zerah-hijo-de-reuel
+nombre: Zérah
+nombres:
+- nombre: Zérah
+perspicacia: 1200004704#1
+desambiguacion: Zérah hijo de Reuel; no Zérah hijo de Judá ni Zérah el etíope.
+resumen: Nieto de Esaú y Basemat por Reuel, y jeque en Edom. Perspicacia no descarta que sea el Zérah de Bozrá cuyo hijo Jobab
+  reinó en Edom.
+razon: Perspicacia «Zérah», núm. 1 y 2; Gé 36:13, 17.
+fuentes:
+- it-zerah
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Zérah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004704
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: reuel-hijo-de-esau
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-zerah
+  - genesis-36
+  razon: 'Gé 36:13: hijo de Reuel.'
+  estado: verificado
+- tipo: pariente
+  persona: basemat-hija-de-ismael
+  relacion: abuela
+  deducido: false
+  fuentes:
+  - genesis-36
+  razon: 'Gé 36:13: se cuenta entre los hijos de Basemat, esposa de Esaú.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edom
+  deducido: false
+  fuentes:
+  - it-zerah
+  - genesis-36
+  razon: 'Gé 36:17: fue jeque en la tierra de Edom.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-rey-de-todo-israel
+titulo: David, rey de todo Israel, toma Jerusalén
+fecha:
+  desde: -1069
+  hasta: -1069
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1070 a.e.c.
+lugares:
+- hebron
+- jerusalen
+personas:
+- david
+pasajes:
+- 2Sa 5:1-10
+- 1Cr 11:1-9
+resumen: Las tribus van a Hebrón y hacen a David rey de todo Israel. Después toma a los jebuseos la fortaleza de Sion y hace
+  de Jerusalén su capital.
+razon: El estudio 3 fecha el suceso en 1070; Perspicacia «Jerusalén», párr. 21-22, explica el traslado de la capital y la
+  toma de la fortaleza.
+fuentes:
+- si-3
+- it-jerusalen
+- it-david
+- 2-samuel-5
+enlaces:
+- titulo: 'Perspicacia: «Jerusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
+  tipo: perspicacia
+- titulo: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  tipo: perspicacia
+- titulo: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  tipo: biblia
+buscar: David toma Jerusalén jebuseos
+historial:
+- fecha: '2026-09-29'
+  cambio: «Sión» pasa a «Sion», la grafía de la TNM en 2Sa 5:7.
+  fuente: 2-samuel-5
+consultado: '2026-09-29'
+estado: verificado

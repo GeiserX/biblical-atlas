@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zur-rey-de-madian
+nombre: Zur
+nombres:
+- nombre: Zur
+perspicacia: 1200004771#1
+desambiguacion: El madianita padre de Cozbí; no el benjamita hijo de Jeiel.
+resumen: Uno de los cinco reyes de Madián cuando Israel se acercaba a la Tierra Prometida, y cabeza de una familia principal
+  de los madianitas. Su hija Cozbí murió en Sitim; él cayó después, cuando Israel castigó a Madián.
+razon: Perspicacia «Zur», núm. 1; Nú 25:15, 18; 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto
+  a Moab y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.
+fuentes:
+- it-zur
+- numeros-25
+- numeros-31
+- it-madian
+- josue-13
+- it-ruben
+enlaces:
+- titulo: 'Perspicacia: «Zur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004771
+  tipo: perspicacia
+- titulo: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  tipo: biblia
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.'
+  fuente: josue-13
+- fecha: '2026-09-29'
+  cambio: 'La relación con Sehón estaba al revés: es su vasallo, no su señor (Jos 13:21 y su nota).'
+  fuente: josue-13
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: ruben
+  deducido: false
+  fuentes:
+  - josue-13
+  - it-ruben
+  razon: 'Jos 13:21: Zur y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.'
+  estado: verificado
+- tipo: acompana
+  persona: sehon
+  relacion: vasallo
+  relacion_inversa: señor
+  deducido: false
+  fuentes:
+  - josue-13
+  razon: 'Jos 13:21 y su nota: Zur era uno de los reyes madianitas subordinados a Sehón.'
+  estado: verificado

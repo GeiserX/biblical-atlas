@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-angel-libera-a-los-apostoles
+titulo: Un ángel saca a los apóstoles de la cárcel
+fecha:
+  desde: 33
+  hasta: 34
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+orden_relato:
+  serie: hechos
+  orden: 512
+lugares:
+- jerusalen
+- monte-moria
+personas:
+- pedro
+- juan-apostol
+- caifas
+pasajes:
+- Hch 5:12-26
+resumen: Los apóstoles hacen muchos milagros y se reúnen en el Pórtico de Salomón. El sumo sacerdote los encierra,
+  pero de noche el ángel de Jehová abre la cárcel y al amanecer vuelven a enseñar en el templo.
+razon: Hch 5:12-26 y el capítulo 5 de «Testimonio completo» (párr. 4, 5 y 7), que nombra a Caifás; Perspicacia «Pedro»,
+  párr. 18.
+fuentes:
+- hechos-5
+- bt-5
+- it-pedro
+- si-3
+nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+buscar: apóstoles liberados de la cárcel
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodanim
+nombre: Dodanim
+nombres:
+- nombre: Dodanim
+- nombre: Rodanim
+  nota: Grafía de 1 Crónicas 1:7 en el texto masorético.
+perspicacia: '1200001205'
+resumen: Cuarto hijo de Javán en Génesis 10:4. En 1 Crónicas 1:7 el texto masorético escribe Rodanim, como la Septuaginta
+  y el Pentateuco samaritano.
+razon: Perspicacia «Dodanim» y «Javán», párr. 1; Gé 10:4.
+fuentes:
+- it-dodanim
+- it-javan
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Dodanim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001205
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: javan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:4 lo nombra el último de los hijos de Javán.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sisaq-invade-juda
+titulo: Sisaq de Egipto invade Judá
+fecha:
+  desde: -992
+  hasta: -992
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 993 a.e.c.
+lugares:
+- jerusalen
+personas:
+- sisaq
+- rehoboam
+pasajes:
+- 1Re 14:25-28
+- 2Cr 12:2-12
+resumen: En el quinto año de Rehoboam, Sisaq toma las ciudades fortificadas de Judá y llega a Jerusalén. El rey se humilla
+  y la ciudad se salva, pero Sisaq se lleva los tesoros del templo.
+razon: El estudio 3 y Perspicacia «Sisaq», párr. 2, fechan la invasión en 993; «Rehoboam», párr. 5.
+fuentes:
+- si-3
+- it-sisaq
+- it-rehoboam
+- 1-reyes-14
+enlaces:
+- titulo: 'Perspicacia: «Sisaq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004069
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Rehoboam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003680
+  tipo: perspicacia
+- titulo: 1 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/14
+  tipo: biblia
+buscar: Sisaq invade Judá
+consultado: '2026-09-28'
+estado: verificado

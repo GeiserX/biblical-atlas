@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guesur
+nombre: Guesur
+nombres:
+- nombre: Guesur
+tipo: reino
+lat: 32.766667
+lon: 35.7
+precision: zona
+coord_fuente: openbible:af6c325
+coord_url: https://www.openbible.info/geo/ancient/af6c325/geshur
+coord_nota: Punto representativo de OpenBible, en Afec, al este del mar de Galilea.
+resumen: Reino arameo vecino de la región de Argob, en Basán, con Maacá al norte. Israel llegó hasta su frontera pero no lo
+  tomó. Absalón se refugió allí, en la tierra de su abuelo Talmai.
+razon: 'Perspicacia «Guesur», núm. 1; Dt 3:14 nombra a los guesuritas como límite de lo que tomó Jaír. OpenBible: solo el
+  punto.'
+fuentes:
+- it-guesur
+- openbible-geo
+- deuteronomio-3
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Guesur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001667
+  tipo: perspicacia
+- titulo: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

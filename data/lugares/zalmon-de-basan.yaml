@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zalmon-de-basan
+nombre: Zalmón
+nombres:
+- nombre: Zalmón
+tipo: monte
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Cumbre mayor del monte Haurán (Jebel Druze)
+  geometria:
+    tipo: zona
+    lat: 32.666667
+    lon: 36.733333
+    radio_km: 25
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-zalmon
+  - it-basan
+  razon: Perspicacia lo sitúa en Basán, al este del Jordán, y apunta con un «quizás» al pico más alto del Haurán.
+  nota: 'Centro: punto que OpenBible da a Zalmón, en el macizo de Jebel Druze. Radio nuestro.'
+  coord_fuente: openbible:a93ed69
+  coord_url: https://www.openbible.info/geo/ancient/a93ed69/zalmon
+resumen: Cumbre alta de Basán, al este del Jordán. Sl 68:14 dice que allí nevó cuando Dios dispersó a los reyes. Tal vez sea
+  el pico mayor del monte Haurán.
+razon: 'Perspicacia «Zalmón», núm. 3, y «Basán», párr. 4; Sl 68:14, 15. No es el monte Zalmón cercano a Siquem (núm. 2). OpenBible:
+  solo el punto.'
+fuentes:
+- it-zalmon
+- it-basan
+- salmos-68
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Zalmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004656
+  tipo: perspicacia
+- titulo: Salmo 68 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/68
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

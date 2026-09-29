@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tienda-de-reunion-fuera-del-campamento
+titulo: Moisés pone la tienda de reunión fuera del campamento
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 33007
+lugares:
+- desierto-de-sinai
+- monte-sinai
+personas:
+- moises
+- josue-hijo-de-nun
+pasajes:
+- Éx 33:7-11
+resumen: Moisés planta su tienda lejos del campamento y la llama tienda de reunión. Allí va quien quiere consultar a Jehová;
+  la columna de nube baja a la entrada y Dios habla con Moisés. Josué se queda en ella.
+razon: Perspicacia «Tienda de reunión» la llama santuario provisional; «Josué», núm. 1, párr. 7, la liga al pecado del becerro.
+  Año 1513 a.e.c., entre las dos estancias de 40 días (Perspicacia «Moisés» y «Diez Palabras»).
+fuentes:
+- exodo-33
+- it-tienda-de-reunion
+- it-josue
+- si-3
+- it-moises
+- it-diez-palabras
+enlaces:
+- titulo: Éxodo 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/33
+  tipo: biblia
+- titulo: 'Perspicacia: «Tienda de reunión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004365
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

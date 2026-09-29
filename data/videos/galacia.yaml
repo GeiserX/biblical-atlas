@@ -1,79 +1,79 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: galacia
-generated_on: "2026-09-28"
+lugar: galacia
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-081_11_VIDEO"
-    title: "Kenneth Cook: Miren más allá de la línea de meta"
+    titulo: "Kenneth Cook: Miren más allá de la línea de meta"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-081_11_VIDEO&appLanguage=S"
-    published: "2021-06-30"
-    hits: 4
-    terms:
+    publicado: "2021-06-30"
+    menciones: 4
+    terminos:
       "Galacia": 1
       "gálatas": 3
   - docid: "pub-jwb-081_4_VIDEO"
-    title: "Graduación de la clase 149 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+    titulo: "Graduación de la clase 149 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-081_4_VIDEO&appLanguage=S"
-    published: "2021-06-28"
-    hits: 4
-    terms:
+    publicado: "2021-06-28"
+    menciones: 4
+    terminos:
       "Galacia": 1
       "gálatas": 3
   - docid: "pub-jwb-085_14_VIDEO"
-    title: "Geoffrey Jackson: ¡Compartan lo que aprendieron!"
+    titulo: "Geoffrey Jackson: ¡Compartan lo que aprendieron!"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_14_VIDEO&appLanguage=S"
-    published: "2021-12-21"
-    hits: 4
-    terms:
+    publicado: "2021-12-21"
+    menciones: 4
+    terminos:
       "Galacia": 1
       "gálatas": 3
   - docid: "pub-jwb-085_3_VIDEO"
-    title: "Graduación de la clase 150 de la Escuela de Galaad (parte 2)"
+    titulo: "Graduación de la clase 150 de la Escuela de Galaad (parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_3_VIDEO&appLanguage=S"
-    published: "2021-12-20"
-    hits: 4
-    terms:
+    publicado: "2021-12-20"
+    menciones: 4
+    terminos:
       "Galacia": 1
       "gálatas": 3
   - docid: "pub-jwb_201803_10_VIDEO"
-    title: "George Aljian: Cómo sobrellevar la plaga de tu propio corazón"
+    titulo: "George Aljian: Cómo sobrellevar la plaga de tu propio corazón"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201803_10_VIDEO&appLanguage=S"
-    published: "2018-03-19"
-    hits: 4
-    terms:
+    publicado: "2018-03-19"
+    menciones: 4
+    terminos:
       "gálatas": 4
   - docid: "pub-jwb_201703_12_VIDEO"
-    title: "David H. Splane: Seamos flexibles por causa de las buenas nuevas (1 Cor. 9:23)"
+    titulo: "David H. Splane: Seamos flexibles por causa de las buenas nuevas (1 Cor. 9:23)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201703_12_VIDEO&appLanguage=S"
-    published: "2017-03-20"
-    hits: 3
-    terms:
+    publicado: "2017-03-20"
+    menciones: 3
+    terminos:
       "gálatas": 3
   - docid: "pub-co-r22_9_VIDEO"
-    title: "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_9_VIDEO&appLanguage=S"
-    published: "2022-08-08"
-    hits: 2
-    terms:
+    publicado: "2022-08-08"
+    menciones: 2
+    terminos:
       "gálatas": 2
   - docid: "pub-jwb-105_12_VIDEO"
-    title: "David Splane: Demos consejos con espíritu apacible (Gál. 6:1)"
+    titulo: "David Splane: Demos consejos con espíritu apacible (Gál. 6:1)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-105_12_VIDEO&appLanguage=S"
-    published: "2023-07-17"
-    hits: 2
-    terms:
+    publicado: "2023-07-17"
+    menciones: 2
+    terminos:
       "gálatas": 2
   - docid: "pub-jwb-105_1_VIDEO"
-    title: "JW Broadcasting: Julio de 2023"
+    titulo: "JW Broadcasting: Julio de 2023"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-105_1_VIDEO&appLanguage=S"
-    published: "2023-07-03"
-    hits: 2
-    terms:
+    publicado: "2023-07-03"
+    menciones: 2
+    terminos:
       "gálatas": 2
   - docid: "pub-jwbvod24_27_VIDEO"
-    title: "Kenneth Flodin: Andemos de acuerdo con el espíritu (Gál. 5:16)"
+    titulo: "Kenneth Flodin: Andemos de acuerdo con el espíritu (Gál. 5:16)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_27_VIDEO&appLanguage=S"
-    published: "2024-07-12"
-    hits: 2
-    terms:
+    publicado: "2024-07-12"
+    menciones: 2
+    terminos:
       "gálatas": 2

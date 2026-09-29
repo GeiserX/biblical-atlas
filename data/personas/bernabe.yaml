@@ -1,0 +1,120 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bernabe
+nombre: Bernabé
+nombres:
+- nombre: José
+  nota: Su nombre; Bernabé es un sobrenombre que le dieron los apóstoles.
+- nombre: Bernabé
+  nota: Sobrenombre que significa «hijo del consuelo» (Hch 4:36); la nota de estudio lo liga a su don para animar a otros.
+resumen: Levita nacido en Chipre, llamado José; los apóstoles le pusieron Bernabé. En Jerusalén vendió un terreno y dio el
+  dinero a los apóstoles. Acompañó a Pablo en el primer viaje y a la reunión de Jerusalén de 49.
+razon: Perspicacia «Bernabé» lo presenta como levita chipriota y compañero de Pablo; Hechos 13 a 15 narra los viajes
+  juntos.
+fuentes:
+- it-bernabe
+- hch-13
+- hch-15
+- hechos-4
+- bt-4
+- hch-9
+- hechos-11
+- hechos-12
+- hch-14
+- 1-corintios-9
+enlaces:
+- titulo: 'Perspicacia: «Bernabé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000566
+  tipo: perspicacia
+- titulo: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  tipo: biblia
+perspicacia: '1200000566'
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade el significado del sobrenombre (Hch 4:36).
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: Se añaden su nombre y la venta del terreno de Hch 4:36, 37.
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: La relación con Pablo hasta c. 49 cita ahora Hch 15:2, la subida juntos a Jerusalén, que ya entraba en su fecha
+    y no tenía fuente.
+  fuente: hch-15
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: nacio_en
+  lugar: chipre
+  deducido: false
+  fuentes:
+  - it-bernabe
+  - it-chipre
+  - hechos-4
+  razon: Hch 4:36 lo presenta como levita nativo de Chipre (Perspicacia «Bernabé», párr. 1).
+  estado: verificado
+- tipo: pariente
+  persona: juan-marcos
+  relacion: primo
+  deducido: false
+  fuentes:
+  - it-marcos
+  - colosenses-4
+  razon: Col 4:10 llama a Marcos primo de Bernabé.
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 36
+    hasta: 36
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 36 e.c.
+  deducido: false
+  fuentes:
+  - it-bernabe
+  - hch-9
+  razon: Lo presenta a los apóstoles en Jerusalén (Hch 9:27; Gál 1:18, 19).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 45
+    hasta: 49
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: hasta c. 49 e.c.
+  deducido: false
+  fuentes:
+  - it-bernabe
+  - it-pablo
+  - si-3
+  - hechos-11
+  - hch-13
+  - hch-15
+  razon: Lo busca en Tarso, trabajan en Antioquía, llevan el socorro a Jerusalén, hacen juntos el primer viaje y suben a Jerusalén
+    por la circuncisión (Hch 11:25-30; 13:2; 15:2).
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - it-bernabe
+  - hechos-4
+  - hechos-11
+  razon: Hch 4:36, 37 lo pone con los apóstoles en Jerusalén, y Hch 11:22 dice que la congregación de allí lo envió a Antioquía.
+  estado: verificado
+- tipo: vivio_en
+  lugar: antioquia-de-siria
+  deducido: false
+  fuentes:
+  - hechos-11
+  - it-bernabe
+  - hch-13
+  - hch-14
+  razon: 'Hch 11:22-26: enviado a Antioquía, se quedó allí un año entero con Saulo; Hch 13:1 lo cuenta entre sus profetas
+    y maestros.'
+  estado: verificado

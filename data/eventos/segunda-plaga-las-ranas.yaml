@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segunda-plaga-las-ranas
+titulo: 'Segunda plaga: las ranas'
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+orden_relato:
+  serie: exodo
+  orden: 8001
+lugares:
+- egipto
+- rio-nilo
+personas:
+- moises
+- aaron
+pasajes:
+- Éx 8:1-15
+- Sl 78:45
+- Sl 105:30
+resumen: Aarón extiende la vara sobre las aguas y las ranas cubren Egipto; los magos también hacen salir ranas. El faraón
+  promete dejar ir al pueblo si Moisés ruega por él. Mueren las ranas y él se endurece otra vez.
+razon: 'El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Perspicacia «Dioses
+  y diosas», apartado de las diez plagas: la rana estaba consagrada a una diosa egipcia.'
+fuentes:
+- exodo-8
+- si-3
+- it-dioses-y-diosas
+enlaces:
+- titulo: Éxodo 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/8
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

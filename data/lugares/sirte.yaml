@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sirte
+nombre: Sirte
+nombres:
+- nombre: Sirte
+  nota: Nombre griego que viene de una raíz que significa «arrastrar» (Perspicacia).
+- nombre: Gran Sirte
+  nota: El golfo oriental, hoy golfo de Sidra. Los marinos temían los dos golfos; Perspicacia cree que la tripulación de
+    Pablo pensaba en este.
+- nombre: Pequeña Sirte
+  nota: El golfo occidental, entre Túnez y Trípoli, hoy golfo de Gabés.
+tipo: mar
+lat: 31.5
+lon: 18.0
+precision: zona
+coord_fuente: openbible:ad36371
+coord_url: https://www.openbible.info/geo/ancient/ad36371/syrtis
+coord_nota: Punto de OpenBible para el golfo de Sidra, la Gran Sirte; representa la zona, no un sitio exacto.
+resumen: Dos golfos de la costa norte de África cuyos bancos de arena, movidos por las mareas, temían los marinos antiguos.
+  En la tormenta, la tripulación de Pablo tenía miedo de encallar allí.
+razon: 'Perspicacia «Sirte» y nota de estudio de Hch 27:17. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-sirte
+- nota-hechos-27
+- hch-27
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Sirte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004287
+  tipo: perspicacia
+- titulo: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La nota de la Gran Sirte daba a entender que solo se temía ese golfo; Perspicacia dice que se temían los
+    dos.'
+  fuente: it-sirte
+consultado: '2026-09-29'
+estado: verificado

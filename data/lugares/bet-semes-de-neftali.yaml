@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-semes-de-neftali
+nombre: Bet-Semes
+nombres:
+- nombre: Bet-Semes
+  nota: Bet-Semes de Neftalí (Perspicacia, núm. 2).
+tipo: ciudad
+lat: 33.041278
+lon: 35.33275
+precision: incierto
+coord_fuente: openbible:a85cbab
+coord_url: https://www.openbible.info/geo/ancient/a85cbab/beth-shemesh-3
+coord_nota: Punto de OpenBible en Tel Rosh. Perspicacia no la identifica.
+resumen: Ciudad fortificada de Neftalí. Sus cananeos se quedaron allí, sometidos a trabajos forzados. No se ha identificado.
+razon: 'Perspicacia «Bet-semes», núm. 2; Jos 19:38; Jue 1:33. OpenBible: solo el punto.'
+fuentes:
+- it-bet-semes
+- openbible-geo
+- josue-19
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Bet-semes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000710
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

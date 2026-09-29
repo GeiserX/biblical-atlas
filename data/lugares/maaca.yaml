@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: maaca
+nombre: Maacá
+nombres:
+- nombre: Maacá
+- nombre: Maacat
+  nota: Otro nombre del reino según Perspicacia.
+tipo: reino
+lat: 33.258051
+lon: 35.581007
+precision: zona
+coord_fuente: openbible:acae7cb
+coord_url: https://www.openbible.info/geo/ancient/acae7cb/maacah
+coord_nota: OpenBible usa el punto de Abel-Bet-Maacá, quizá en su frontera. Perspicacia lo sitúa entre las laderas sur del
+  Hermón y la cuenca del Huleh, del Jordán al desierto sirio.
+resumen: Pequeño reino arameo al norte de Guesur, junto a Basán. Le tocaba a Manasés, pero Israel no echó a sus habitantes.
+  Siglos después su rey luchó a sueldo de los ammonitas contra David.
+razon: 'Perspicacia «Maacá», núm. 10; Dt 3:14 nombra a los maacatitas como límite de lo que tomó Jaír. OpenBible: solo el
+  punto.'
+fuentes:
+- it-maaca
+- openbible-geo
+- deuteronomio-3
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Maacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002803
+  tipo: perspicacia
+- titulo: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

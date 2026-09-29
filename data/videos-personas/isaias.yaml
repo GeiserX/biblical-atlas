@@ -1,0 +1,33 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: isaias
+generado: "2026-09-28"
+videos:
+  - docid: "502015752"
+    titulo: "¿Por qué podemos confiar en que la Biblia dice la verdad?"
+    url: "https://www.jw.org/es/biblioteca/videos/Buenas-noticias-de-parte-de-Dios-videos/video-biblia-verdad/"
+    publicado: "2015-06-02"
+    menciones: 2
+    terminos:
+      "profeta Isaías": 2
+  - docid: "pub-gnj_2_VIDEO"
+    titulo: "Episodio 2: “Este es mi Hijo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
+    publicado: "2026-01-19"
+    menciones: 2
+    terminos:
+      "profeta Isaías": 2
+  - docid: "pub-gnj_3_VIDEO"
+    titulo: "Episodio 3: “Ese soy yo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
+    publicado: "2026-01-19"
+    menciones: 2
+    terminos:
+      "profeta Isaías": 2
+  - docid: "pub-gnj_4_VIDEO"
+    titulo: "Episodio 4: “Para eso he venido”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-4-para-eso-he-venido/"
+    publicado: "2026-05-01"
+    menciones: 2
+    terminos:
+      "profeta Isaías": 2

@@ -1,0 +1,86 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiman-hijo-de-anac
+nombre: Ahimán
+nombres:
+- nombre: Ahimán
+perspicacia: 1200000157#1
+fecha:
+  desde: -1511
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1512 y c. 1450 a.e.c. (tiempo narrativo: de la visita de los espías a la toma de Hebrón por Caleb)'
+desambiguacion: Ahimán el anaquita de Hebrón; no el portero levita de después del exilio.
+resumen: Uno de los tres anaquim de Hebrón que vieron los espías de Israel. Quizá su nombre, como el de sus hermanos, designa
+  una familia anaquita; años después Caleb y Judá los echaron de la ciudad.
+razon: 'Perspicacia «Ahimán», núm. 1, y «Anaquim»; Nú 13:22; Jos 15:14. Fecha: los espías lo ven en 1512 a.e.c. y Caleb lo
+  echa de Hebrón tras 1467 (estudio 3), antes de c. 1450 (tabla de libros).'
+fuentes:
+- it-ahiman
+- it-anaquim
+- numeros-13
+- josue-15
+- it-anaq
+- si-3
+- tnm-tabla
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Ahimán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000157
+  tipo: perspicacia
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - numeros-13
+  - josue-15
+  - jueces-1
+  razon: 'Nú 13:22: Ahimán vivía en Hebrón cuando llegaron los espías.'
+  estado: verificado
+- tipo: pariente
+  persona: sesai
+  relacion: hermano
+  deducido: true
+  fuentes:
+  - it-ahiman
+  - numeros-13
+  - josue-15
+  razon: Nú 13:22 los nombra juntos en Hebrón; Perspicacia «Ahimán», núm. 1, los da como hermanos, y Jos 15:14 como hijos
+    de Anac.
+  estado: verificado
+- tipo: pariente
+  persona: talmai-hijo-de-anac
+  relacion: hermano
+  deducido: true
+  fuentes:
+  - it-talmai
+  - numeros-13
+  - josue-15
+  razon: Nú 13:22 los nombra juntos; Perspicacia «Talmai», núm. 1, los llama hermanos e hijos de Anaq.
+  estado: verificado
+- tipo: pariente
+  persona: anac
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - josue-15
+  - it-anaq
+  - jueces-1
+  razon: Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Jos 15:14 lo muestra expulsado de Hebrón por Caleb, después de 1467 a.e.c.: la fecha pasa de 1512 a un rango hasta
+    c. 1450, con Perspicacia «Ahimán», núm. 1.'
+  fuente: josue-15
+- fecha: '2026-09-29'
+  cambio: 'La razón explica el nuevo rango de fechas: de los espías, en 1512 a.e.c., a la toma de Hebrón por Caleb.'
+  fuente: josue-15
+consultado: '2026-09-29'
+estado: verificado

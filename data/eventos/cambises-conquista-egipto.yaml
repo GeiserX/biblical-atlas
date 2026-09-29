@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cambises-conquista-egipto
+titulo: Cambises somete Egipto a Persia
+fecha:
+  desde: -524
+  hasta: -524
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 525 a.e.c.
+lugares:
+- egipto
+personas: []
+pasajes: []
+resumen: Cambises II, hijo de Ciro, somete Egipto, que pasa a ser parte del Imperio persa. Tebas empieza a decaer. Siguen
+  quedando judíos en el país.
+razon: Perspicacia «Egipto, egipcio» (apartado «Bajo dominación persa») fecha la conquista en 525 a.e.c.; ¡Despertad! de
+  noviembre de 2010 da el mismo año.
+fuentes:
+- it-egipto
+- g10-egipto
+buscar: Cambises Egipto
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: perez
+nombre: Pérez
+nombres:
+- nombre: Pérez
+perspicacia: '1200003438'
+resumen: Hijo de Judá y de Tamar, gemelo de Zérah. Nació primero y su casa fue la más conocida; por su línea vienen Boaz,
+  David y Jesús.
+razon: Perspicacia «Pérez», párr. 1 y 2; Rut 4:12 y 18.
+fuentes:
+- it-perez
+- rut-4
+- mateo-1
+- genesis-38
+- genesis-46
+- lucas-3
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Pérez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003438
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: juda-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  - genesis-38
+  - genesis-46
+  - lucas-3
+  - numeros-26
+  razon: 'Rut 4:12: Tamar se lo dio a luz a Judá.'
+  estado: verificado
+- tipo: pariente
+  persona: tamar-nuera-de-juda
+  relacion: madre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  - genesis-38
+  razon: Rut 4:12.
+  estado: verificado
+- tipo: pariente
+  persona: zerah-hijo-de-juda
+  relacion: hermano gemelo
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-zerah
+  - genesis-38
+  - it-perez
+  - numeros-26
+  razon: Mt 1:3 los da como hijos de Judá y Tamar; Perspicacia «Zérah» (núm. 3) dice que eran gemelos.
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

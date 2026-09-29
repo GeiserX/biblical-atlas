@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: libro-de-la-ley-hallado
+titulo: Se halla el libro de la Ley en el templo
+fecha:
+  desde: -641
+  hasta: -641
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 642 a.e.c.
+lugares:
+- jerusalen
+personas:
+- josias
+pasajes:
+- 2Re 22:3-20
+- 2Cr 34:8-33
+resumen: Mientras reparan el templo en el año 18 de Josías, el sumo sacerdote Hilquías encuentra el libro de la Ley. Al oírlo,
+  el rey rasga su ropa y consulta a la profetisa Huldá.
+razon: Perspicacia «Betel», párr. 16, pone el año 18 de Josías en 642; «Josías», núm. 1, párr. 5; 2Re 22:3, 8-14.
+fuentes:
+- it-betel
+- it-josias
+- 2-reyes-22
+enlaces:
+- titulo: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Josías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
+  tipo: perspicacia
+- titulo: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  tipo: biblia
+buscar: libro de la ley hallado Josías
+consultado: '2026-09-28'
+estado: verificado

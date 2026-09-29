@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sanson-preso-en-gaza
+titulo: Sansón, ciego, trabaja en el molino de la prisión de Gaza
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: cerca del final de los 20 años de Sansón como juez)'
+orden_relato:
+  serie: jueces
+  orden: 16021
+lugares:
+- gaza
+personas:
+- sanson
+pasajes:
+- Jue 16:21, 22
+resumen: Los filisteos llevan a Sansón a Gaza, le ponen dos grilletes de cobre y lo hacen moler en la cárcel. Con el tiempo,
+  el cabello que le habían afeitado le vuelve a crecer.
+razon: '«Sansón», párr. 9 y 10: sin nazareato no tenía fuerza; en la cárcel le creció el pelo. Fecha: tras Jefté, que juzga
+  desde c. 1173 («Jefté»; el libro va casi en orden), y antes de Saúl, 1117 (estudio 3).'
+fuentes:
+- jueces-16
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+enlaces:
+- titulo: Jueces 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/16
+  tipo: biblia
+- titulo: 'Perspicacia: «Sansón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  tipo: perspicacia
+buscar: Sansón prisión Gaza molino
+consultado: '2026-09-29'
+estado: verificado

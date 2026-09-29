@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gat-rimon-de-manases
+nombre: Gat-Rimón
+nombres:
+- nombre: Gat-Rimón
+tipo: ciudad
+lat: 32.4462
+lon: 35.292
+precision: incierto
+coord_fuente: openbible:ab33b54
+coord_url: https://www.openbible.info/geo/ancient/ab33b54/gath-rimmon-2
+coord_nota: OpenBible la pone en el sitio de Bileam (Ibleam, Khirbet Belameh). Perspicacia no la sitúa.
+resumen: Ciudad de la media tribu de Manasés que se dio a los cohatitas. En 1 Crónicas 6:70 figura Bileam en su lugar, y muchos
+  eruditos piensan que ese era el nombre original. No es la Gat-Rimón de Dan.
+razon: 'Perspicacia «Gat-rimón», núm. 2; Jos 21:25. OpenBible: solo el punto.'
+fuentes:
+- it-gat-rimon
+- openbible-geo
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Gat-rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001621
+  tipo: perspicacia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

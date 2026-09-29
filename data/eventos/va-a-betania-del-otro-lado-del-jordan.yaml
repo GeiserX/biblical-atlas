@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: va-a-betania-del-otro-lado-del-jordan
+titulo: Va adonde Juan bautizaba; muchos creen en él
+fecha:
+  desde: 32
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Después de la Dedicación de 32 e.c. y antes de la Pascua de 33
+lugares:
+- betania-del-otro-lado-del-jordan
+personas:
+- jesus
+- juan-el-bautista
+pasajes:
+- Jn 10:40-42
+resumen: Jesús se queda al este del Jordán, donde Juan había bautizado al principio. Muchos creen en él y reconocen
+  que lo que Juan dijo de él era verdad.
+razon: La tabla A7-F da cuándo y dónde. Jn 10:40-42; jy cap. 81.
+fuentes:
+- tnm-a7-f
+- juan-10
+- jy-cap-81
+orden_relato:
+  serie: a7
+  orden: 74
+buscar: Va adonde Juan bautizaba
+presentes:
+- jesus
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Juan el Bautista solo se nombra: había muerto a comienzos de 32 (muerte-de-juan-el-bautista) y la gente habla de
+    él en pasado. Solo Jesús estaba allí.'
+  fuente: juan-10
+consultado: '2026-09-29'
+estado: verificado

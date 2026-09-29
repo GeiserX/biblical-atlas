@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehu-acaba-con-la-casa-de-acab
+titulo: Jehú acaba con la casa de Acab
+fecha:
+  desde: -904
+  hasta: -904
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 905 a.e.c.
+lugares:
+- jezreel
+- samaria
+personas:
+- jehu-de-israel
+- jehoram-de-israel
+- ocozias-de-juda
+- jezabel
+- eliseo
+pasajes:
+- 2Re 9:1-37
+- 2Re 10:1-28
+resumen: Ungido por un enviado de Eliseo, Jehú mata a Jehoram de Israel y a Ocozías de Judá, hace arrojar a Jezabel en Jezreel
+  y elimina a los hijos de Acab y el culto a Baal.
+razon: El estudio 3 pone el reinado de Jehú hacia 905; Perspicacia «Jehú», núm. 3, párr. 7-11.
+fuentes:
+- si-3
+- it-jehu
+- 2-reyes-9
+enlaces:
+- titulo: 'Perspicacia: «Jehú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
+  tipo: perspicacia
+- titulo: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  tipo: biblia
+buscar: Jehú Jezabel casa de Acab
+consultado: '2026-09-28'
+estado: verificado

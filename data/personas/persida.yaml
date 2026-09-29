@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: persida
+nombre: Pérsida
+nombres:
+- nombre: Pérsida
+perspicacia: '1200003448'
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c. (fecha de Romanos)
+resumen: Cristiana de Roma a la que Pablo llama amada y encomia por sus muchas labores en el Señor.
+razon: Perspicacia «Pérsida»; Ro 16:12. La fecha es la de Romanos, hacia 56 según la Tabla de los libros.
+fuentes:
+- it-persida
+- romanos-16
+- tnm-tabla
+enlaces:
+- titulo: 'Perspicacia: «Pérsida»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003448
+  tipo: perspicacia
+- titulo: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: roma
+  deducido: false
+  fuentes:
+  - it-persida
+  - romanos-16
+  razon: Pablo la saluda entre los cristianos de Roma (Ro 16:12).
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quesias
+nombre: Quesías
+nombres:
+- nombre: Quesías
+perspicacia: '1200002600'
+resumen: Segunda hija de Job nacida después de su prueba. Su nombre quizá signifique casia, un arbusto de flores olorosas;
+  puede que aludiera a su belleza.
+razon: Perspicacia «Quesías»; Job 42:14, 15.
+fuentes:
+- it-quesias
+- job-42
+enlaces:
+- titulo: 'Perspicacia: «Quesías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002600
+  tipo: perspicacia
+- titulo: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: job
+  relacion: padre
+  deducido: false
+  fuentes:
+  - job-42
+  razon: 'Job 42:13, 14: la segunda de las hijas que Job tuvo tras su prueba.'
+  estado: verificado
+- tipo: pariente
+  persona: queren-hapuc
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - job-42
+  razon: 'Job 42:14 nombra a las tres hijas de Job: Jemimá, Quesías y Querén-Hapuc.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

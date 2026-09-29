@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: neron
+nombre: Nerón, emperador de Roma
+tipo: emperador
+fecha:
+  desde: 54
+  hasta: 68
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 54-68 e.c.
+lugares:
+- roma
+resumen: El César ante quien apeló Pablo en Cesarea. Tras el incendio de Roma de 64 persiguió a los cristianos;
+  Pablo murió probablemente por su orden.
+razon: El artículo «Nerón» de Perspicacia remite a «César», que dice que Nerón gobernó de 54 a 68.
+fuentes:
+- it-cesar
+- it-neron
+- hch-25
+- nota-hechos-25
+buscar: Nerón
+persona: neron
+consultado: '2026-09-29'
+estado: verificado

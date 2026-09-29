@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: antipas-de-pergamo
+nombre: Antipas de Pérgamo
+nombres:
+- nombre: Antipas
+desambiguacion: El mártir de Pérgamo (Ap 2:13). No es Herodes Antipas.
+fecha:
+  desde: 96
+  hasta: 96
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: antes de c. 96 e.c.
+resumen: Cristiano de la congregación de Pérgamo muerto por su fe. Jesús lo llama «mi testigo fiel» en su mensaje
+  a esa congregación.
+razon: 'Perspicacia «Antipas», apartado 1 (párr. 2), y «Pérgamo» (párr. 6), que apunta que quizá murió por no adorar al
+  emperador; Ap 2:13. El estudio 3: Juan escribe Apocalipsis hacia 96 e.c., y Ap 2:13 ya habla de su muerte.'
+fuentes:
+- si-3
+- it-antipas
+- it-pergamo
+- apocalipsis-2
+no_confundir_con:
+- herodes-antipas
+relaciones:
+- tipo: murio_en
+  lugar: pergamo
+  deducido: false
+  fuentes:
+  - it-antipas
+  - apocalipsis-2
+  razon: 'Ap 2:13: lo mataron en la ciudad.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Antipas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000293
+  tipo: perspicacia
+- titulo: Apocalipsis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/2
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

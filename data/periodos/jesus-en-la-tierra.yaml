@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jesus-en-la-tierra
+nombre: Jesús en la tierra
+tipo: era
+fecha:
+  desde: -1
+  hasta: 33
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2 a.e.c.-33 e.c.
+resumen: Nacen Juan el Bautista y Jesús. Jesús predica desde el año 29 y muere el 14 de nisán del 33. Lo cuentan Mateo,
+  Marcos, Lucas y Juan.
+razon: 'Estudio 3, párr. 16 y 17 y cuadro: los dos nacen en 2 a.e.c., el ministerio empieza en 29 y Jesús muere en 33 e.c.'
+fuentes:
+- si-3
+buscar: vida de Jesús en la tierra
+consultado: '2026-09-28'
+estado: verificado
+nota: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: maria-unge-a-jesus
+titulo: María derrama aceite perfumado sobre Jesús
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 9 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 9
+lugares:
+- betania
+personas:
+- jesus
+- maria-de-betania
+- marta
+- lazaro
+- simon-el-leproso
+- judas-iscariote
+pasajes:
+- Mt 26:6-13
+- Mr 14:3-9
+- Jn 12:2-11
+resumen: Al terminar el sábado cenan en casa de Simón el leproso, y allí María unge a Jesús con un nardo carísimo.
+  Judas protesta y Jesús la defiende. Muchos judíos van a ver a Lázaro.
+razon: La tabla A7-G da el día y el lugar. Las notas de Mt 26:6 y Jn 12:1 explican que la cena fue al empezar el
+  9 de nisán; B12-A.
+fuentes:
+- tnm-a7-g
+- mateo-26
+- marcos-14
+- juan-12
+- jy-cap-101
+- jy-cap-115
+- tnm-b12-a
+orden_relato:
+  serie: a7
+  orden: 93
+buscar: María derrama aceite perfumado sobre Jesús
+consultado: '2026-09-28'
+estado: verificado

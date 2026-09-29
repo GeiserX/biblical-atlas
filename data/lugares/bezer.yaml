@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bezer
+nombre: Bézer
+nombres:
+- nombre: Bézer
+tipo: ciudad
+lat: 31.78603
+lon: 35.90168
+precision: punto
+coord_fuente: openbible:a0cd098
+coord_url: https://www.openbible.info/geo/ancient/a0cd098/bezer
+resumen: Ciudad de refugio de Rubén en la meseta, al este del Jordán, una de las tres que apartó Moisés. Era ciudad levita;
+  siglos después la tomó y fortificó Mesá, rey de Moab.
+razon: 'Perspicacia «Bézer», núm. 2: se suele identificar con Umm el-ʽAmad, 19 km al sur de Rabá; Dt 4:41-43. OpenBible: solo
+  el punto.'
+fuentes:
+- it-bezer
+- openbible-geo
+- deuteronomio-4
+- josue-20
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Bézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000723
+  tipo: perspicacia
+- titulo: Deuteronomio 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: havila
+nombre: Havilá
+nombres:
+- nombre: Havilá
+  nota: La tierra de Gé 2:11. Perspicacia distingue otra Havilá, la de Gé 25:18, y dos hombres con este nombre.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Península arábiga
+  geometria:
+    tipo: zona
+    lat: 23.0
+    lon: 46.0
+    radio_km: 900
+  estado: alternativa
+  fuentes:
+  - it-havila
+  - openbible-geo
+  razon: Hay quien ve en su oro, bedelio y ónice productos de Arabia; J. Simons pensó en toda la península. Perspicacia duda
+    que un río pudiera rodear tanta tierra.
+  nota: 'Centro: punto de OpenBible para Arabia. El radio de 900 km es nuestro.'
+  coord_fuente: openbible:a59f6f5
+  coord_url: https://www.openbible.info/geo/ancient/a59f6f5/arabia-1
+resumen: Tierra que rodeaba el río Pisón, con oro de buena calidad, bedelio y ónice. Como no se sabe qué río era el Pisón,
+  su ubicación sigue siendo incierta.
+razon: 'Perspicacia «Havilá», núm. 1, y «Pisón», párr. 3: Moisés usó el nombre que tuvo después del Diluvio. Gé 2:11, 12.'
+fuentes:
+- it-havila
+- it-pison
+- openbible-geo
+- genesis-2
+enlaces:
+- titulo: 'Perspicacia: «Havilá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001921
+  tipo: perspicacia
+- titulo: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

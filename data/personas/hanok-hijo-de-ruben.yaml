@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanok-hijo-de-ruben
+nombre: Hanok
+nombres:
+- nombre: Hanok
+perspicacia: 1200001864#2
+desambiguacion: Hanok hijo de Rubén; no el nieto de Abrahán por Madián.
+resumen: Hijo de Rubén, primogénito de Jacob, y antepasado de los hanokitas. Está en la lista de la casa de Jacob en Egipto.
+razon: Perspicacia «Hanok», núm. 2; Gé 46:9.
+fuentes:
+- it-hanok
+- genesis-46
+- exodo-6
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Hanok»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001864
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ruben-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-hanok
+  - exodo-6
+  - numeros-26
+  razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+- tipo: pariente
+  persona: palu
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Palú es otro de los hijos de Rubén.'
+  estado: verificado
+- tipo: pariente
+  persona: hezron-hijo-de-ruben
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Hezrón es otro de los hijos de Rubén.'
+  estado: verificado
+- tipo: pariente
+  persona: carmi-hijo-de-ruben
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:14: Carmí es otro de los hijos de Rubén.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

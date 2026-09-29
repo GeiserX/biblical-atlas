@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gosen
+nombre: Gosén
+nombres:
+- nombre: Gosén
+- nombre: Tierra de Ramesés
+  nota: Quizá otro nombre de Gosén o un distrito dentro de ella (Gé 47:6, 11).
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Parte oriental del delta del Nilo
+  geometria:
+    tipo: zona
+    lat: 30.79937
+    lon: 31.834217
+    radio_km: 40
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-gosen
+  - genesis-46
+  - openbible-geo
+  razon: Perspicacia la sitúa, sin certeza, en el este del delta y junto a la frontera, porque José salió allí a recibir a
+    Jacob (párr. 3; Gé 46:28-29).
+  nota: 'Centro: punto representativo de Gosén en OpenBible. Radio nuestro.'
+  coord_fuente: openbible:a60f092
+  coord_url: https://www.openbible.info/geo/ancient/a60f092/goshen-1
+- nombre: Uadi Tumilat
+  geometria:
+    tipo: zona
+    lat: 30.5527
+    lon: 32.099
+    radio_km: 20
+  estado: alternativa
+  fuentes:
+  - it-gosen
+  - openbible-geo
+  razon: Según Perspicacia, la Septuaginta pone Gosén cerca de este valle, que también está en el este del delta (párr. 3).
+  nota: 'Centro: punto de Tell el-Maskhuta en OpenBible, dentro del uadi; Perspicacia no nombra ese sitio.'
+  coord_fuente: openbible:aa28709
+  coord_url: https://www.openbible.info/geo/ancient/aa28709/succoth-2
+resumen: Región de Egipto donde vivió Israel entre 1728 y 1513 a.e.c., 215 años. Era la mejor tierra de pastos, y desde la
+  cuarta plaga quedó libre de los castigos. Su sitio exacto es incierto.
+razon: Perspicacia «Gosén» (párr. 3-4), Gé 45:10 y 47:27, Éx 8:22. El mapa B3 y «El mundo de los patriarcas» la dibujan en
+  el este del delta.
+fuentes:
+- it-gosen
+- genesis-45
+- tnm-b3
+- lbt-patriarcas
+- openbible-geo
+- genesis-46
+- genesis-47
+- exodo-8
+- exodo-9
+enlaces:
+- titulo: 'Perspicacia: «Gosén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001745
+  tipo: perspicacia
+- titulo: Génesis 45 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/45
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

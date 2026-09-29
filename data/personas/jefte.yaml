@@ -1,0 +1,76 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jefte
+nombre: Jefté
+nombres:
+- nombre: Jefté
+fecha:
+  desde: -1172
+  hasta: -1172
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1173 a.e.c.
+resumen: Galaadita de la tribu de Manasés al que sus medio hermanos echaron de casa. Los de Galaad lo llamaron para luchar
+  contra Ammón y, tras vencer, juzgó a Israel seis años en Galaad.
+razon: 'Perspicacia «Jefté», párr. 2 a 7: sus seis años de juez empezaron hacia 1173 a.e.c., según los 300 años de Jue 11:26.
+  Jue 11 y 12:7.'
+fuentes:
+- it-jefte
+- jueces-11
+- jueces-12
+enlaces:
+- titulo: 'Perspicacia: «Jefté»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002413
+  tipo: perspicacia
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+perspicacia: '1200002413'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: pariente
+  persona: galaad-padre-de-jefte
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-11
+  - it-jefte
+  - it-galaad
+  razon: 'Jue 11:1: su padre se llamaba Galaad; su madre había sido prostituta.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: tob
+  deducido: false
+  fuentes:
+  - jueces-11
+  - it-tob
+  - it-jefte
+  razon: 'Jue 11:3: huyó de sus medio hermanos y se asentó en la tierra de Tob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mizpa-de-galaad
+  deducido: false
+  fuentes:
+  - jueces-11
+  - it-mizpa
+  razon: 'Jue 11:34: al volver de la batalla fue a su casa, en Mizpá.'
+  estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - it-jefte
+  - jueces-11
+  razon: Perspicacia «Jefté», párr. 1, lo cuenta entre los manasitas; Jue 11:1 lo llama galaadita.
+  estado: verificado
+- tipo: murio_en
+  lugar: galaad
+  deducido: false
+  fuentes:
+  - jueces-12
+  - it-jefte
+  razon: 'Jue 12:7: tras seis años de juez murió y lo enterraron en su ciudad, en Galaad. El texto no nombra la ciudad.'
+  estado: verificado

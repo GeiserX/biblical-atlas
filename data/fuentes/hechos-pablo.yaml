@@ -1,0 +1,540 @@
+# biblical-earth: fuentes del carril «hechos-pablo» (Hechos 7:58-28 con Pablo, su círculo y sus cartas). Esquema en docs/investigacion/README.md.
+it-paulo:
+  titulo: Paulo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003407
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-bar-jesus:
+  titulo: Bar-Jesús
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000563
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-lidia:
+  titulo: Lidia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002798
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-dionisio:
+  titulo: Dionisio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001184
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-damaris:
+  titulo: Dámaris
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001112
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-crispo:
+  titulo: Crispo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001075
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-sostenes:
+  titulo: Sóstenes
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004190
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-apolos:
+  titulo: Apolos
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000307
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-demetrio:
+  titulo: Demetrio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001152
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-trofimo:
+  titulo: Trófimo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004481
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-aristarco:
+  titulo: Aristarco
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000365
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-gayo:
+  titulo: Gayo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001592
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-erasto:
+  titulo: Erasto
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001413
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-onesimo:
+  titulo: Onésimo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003328
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-epafras:
+  titulo: Epafras
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001379
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tito-persona:
+  titulo: Tito
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004431
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-loida:
+  titulo: Loida
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002768
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-eunice:
+  titulo: Eunice
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001443
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-febe:
+  titulo: Febe
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003474
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-felix:
+  titulo: Félix
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001502
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-drusila:
+  titulo: Drusila
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001227
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-festo:
+  titulo: Festo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001512
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-berenice:
+  titulo: Berenice
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000655
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-julio:
+  titulo: Julio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002553
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-publio:
+  titulo: Publio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003577
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-jason:
+  titulo: Jasón
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002340
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-sopater:
+  titulo: Sópater
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004184
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tertulo:
+  titulo: Tértulo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004372
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tiquico:
+  titulo: Tíquico
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004496
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ananias:
+  titulo: Ananías
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000267
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-epafrodito:
+  titulo: Epafrodito
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001380
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-onesiforo:
+  titulo: Onesíforo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003329
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-demas:
+  titulo: Demas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001151
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-arquipo:
+  titulo: Arquipo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000348
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-estefanas:
+  titulo: Estéfanas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004229
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-eutico:
+  titulo: Eutico
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001448
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-claudio-lisias:
+  titulo: Claudio Lisias
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000988
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-manaen:
+  titulo: Manaén
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002879
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-lucio:
+  titulo: Lucio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002785
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-andronico:
+  titulo: Andrónico
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000274
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-junias:
+  titulo: Junias
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002554
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tercio:
+  titulo: Tercio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004371
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-segundo:
+  titulo: Segundo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003879
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-evodia:
+  titulo: Evodia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001445
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-sintique:
+  titulo: Síntique
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004283
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-judas:
+  titulo: Judas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-esceva:
+  titulo: Esceva
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003855
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tarso:
+  titulo: Tarso
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004326
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-arabia:
+  titulo: Arabia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-chipre:
+  titulo: Chipre
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001100
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-siria:
+  titulo: Siria
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004285
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-panfilia:
+  titulo: Panfilia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003373
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-licaonia:
+  titulo: Licaonia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002795
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-licia:
+  titulo: Licia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002796
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-nicopolis:
+  titulo: Nicópolis
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003251
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-hierapolis:
+  titulo: Hierápolis
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002020
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-adramitio:
+  titulo: Adramitio
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000119
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ilirico:
+  titulo: Ilírico
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002148
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-dalmacia:
+  titulo: Dalmacia
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001110
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-8:
+  titulo: “La congregación entró en un periodo de paz”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009050
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-15:
+  titulo: Estuvieron “fortaleciendo a las congregaciones”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009059
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-18:
+  titulo: “Para que buscaran a Dios [...] y de veras lo encontraran”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009062
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-19:
+  titulo: “Sigue hablando y no calles”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009063
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-24:
+  titulo: “¡Ten valor!”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009072
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-25:
+  titulo: “¡Apelo a César!”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009073
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+bt-27:
+  titulo: Estuvo “dándoles un testimonio completo”
+  obra: Demos “un testimonio completo sobre el Reino de Dios”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102009075
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-9:
+  titulo: Notas de estudio de Hechos. Capítulo 9
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070698
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-13:
+  titulo: Notas de estudio de Hechos. Capítulo 13
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070702
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-14:
+  titulo: Notas de estudio de Hechos. Capítulo 14
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070703
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-16:
+  titulo: Notas de estudio de Hechos. Capítulo 16
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070705
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-17:
+  titulo: Notas de estudio de Hechos. Capítulo 17
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070706
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-18:
+  titulo: Notas de estudio de Hechos. Capítulo 18
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070707
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-19:
+  titulo: Notas de estudio de Hechos. Capítulo 19
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070708
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-24:
+  titulo: Notas de estudio de Hechos. Capítulo 24
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070713
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-25:
+  titulo: Notas de estudio de Hechos. Capítulo 25
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070714
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-27:
+  titulo: Notas de estudio de Hechos. Capítulo 27
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070716
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-hechos-28:
+  titulo: Notas de estudio de Hechos. Capítulo 28
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070717
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'

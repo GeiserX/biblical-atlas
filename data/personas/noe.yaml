@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: noe
+nombre: Noé
+nombres:
+- nombre: Noé
+fecha:
+  desde: -2969
+  hasta: -2019
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2970-2020 a.e.c.
+resumen: Hijo de Lamec y décimo desde Adán. Hombre justo que construyó el arca y predicó a su generación. Sobrevivió al
+  Diluvio con su esposa, sus tres hijos y sus nueras, y vivió 350 años más.
+razon: Perspicacia «Noé», párr. 2, 4 a 6 y 11. El estudio 3 da su nacimiento en 2970 y su muerte en 2020 a.e.c. Gé 6:9 a
+  9:29.
+fuentes:
+- it-noe
+- si-3
+- genesis-7
+- genesis-6
+- genesis-8
+- genesis-9
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Noé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003266
+  tipo: perspicacia
+- titulo: Génesis 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/7
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: lamec-padre-de-noe
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-noe
+  - genesis-5
+  - lucas-3
+  razon: 'Perspicacia «Noé», párr. 2: hijo de Lamec (Gé 5:28, 29).'
+  estado: verificado
+perspicacia: '1200003266'
+consultado: '2026-09-29'
+estado: verificado

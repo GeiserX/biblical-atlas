@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cesar-resurreccion-y-mandamiento
+titulo: Preguntas sobre César, la resurrección y el mandamiento más importante
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 11 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 11
+lugares:
+- monte-moria
+- jerusalen
+personas:
+- jesus
+pasajes:
+- Mt 22:15-40
+- Mr 12:13-34
+- Lu 20:20-40
+resumen: Fariseos, partidarios de Herodes y saduceos intentan atraparlo con preguntas sobre el tributo a César y
+  la resurrección. Un escriba le pregunta cuál es el mandamiento principal.
+razon: La tabla A7-G da el día y el lugar. Perspicacia «Herodes» (apartado 2) explica quiénes eran los partidarios
+  de Herodes.
+fuentes:
+- tnm-a7-g
+- mateo-22
+- marcos-12
+- lucas-20
+- jy-cap-108
+- it-herodes
+orden_relato:
+  serie: a7
+  orden: 101
+buscar: Preguntas sobre César, la resurrección y el mandamiento más importante
+consultado: '2026-09-28'
+estado: verificado

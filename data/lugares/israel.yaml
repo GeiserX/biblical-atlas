@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: israel
+nombre: Israel
+nombres:
+- nombre: Israel
+- nombre: Tierra de Israel
+  nota: Así la llama Mateo al contar el regreso desde Egipto.
+- nombre: Efraín
+  desde: -996
+  nota: Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8).
+    Lo usan también Isaías y Jeremías.
+tipo: pais
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: La tierra de Israel, de Dan a Beer-seba
+  geometria:
+    tipo: zona
+    lat: 32.246861
+    lon: 35.246417
+    radio_km: 120
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-israel
+  - it-beer-seba
+  - openbible-geo
+  razon: Perspicacia «Beer-seba» (párr. 2 y 3) toma Dan y Beer-seba como las fronteras naturales del país, al norte y al sur.
+  nota: 'Centro: punto medio de los de OpenBible para Dan (33,249 N; 35,652 E) y Beer-seba (31,2447 N; 34,8408 E), a unos
+    236 km uno de otro. El radio de 120 km es nuestro.'
+  coord_fuente: calculo
+resumen: La Tierra Prometida, repartida entre las doce tribus y gobernada por sus reyes. Tras la división del reino el nombre
+  designó a veces solo al reino del norte; luego, a la tierra de los judíos.
+razon: Perspicacia «Israel», núm. 3 y 4; Mt 2:20, 21. La zona del mapa es un cálculo nuestro.
+no_afirmamos:
+- No trazamos sus fronteras; el punto del mapa es solo una referencia dentro del territorio.
+fuentes:
+- it-israel
+- it-beer-seba
+- openbible-geo
+- mateo-2
+- oseas-1
+- it-efrain
+- si-oseas
+- oseas-4
+- oseas-5
+- oseas-6
+- oseas-7
+- it-oseas-libro
+- oseas-8
+- oseas-9
+- oseas-13
+- oseas-14
+- jueces-6
+- jueces-19
+enlaces:
+- titulo: 'Perspicacia: «Israel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

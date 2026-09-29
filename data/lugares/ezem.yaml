@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ezem
+nombre: Ézem
+nombres:
+- nombre: Ézem
+tipo: ciudad
+lat: 31.080567
+lon: 34.940812
+precision: incierto
+coord_fuente: openbible:a573b95
+coord_url: https://www.openbible.info/geo/ancient/a573b95/ezem
+coord_nota: 'Umm el-ʽAzem, segunda identificación de OpenBible: es la que nombra Perspicacia. La primera es Khirbet ʽAsan.'
+resumen: Ciudad del sur de Judá que se dio a Simeón como enclave. Algunos la relacionan con Umm el-ʽAzem, unos 25 km al sursureste
+  de Beer-Seba.
+razon: 'Perspicacia «Ézem»; Jos 15:29; 19:3; 1Cr 4:29. OpenBible: solo el punto.'
+fuentes:
+- it-ezem
+- openbible-geo
+- josue-15
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Ézem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001471
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

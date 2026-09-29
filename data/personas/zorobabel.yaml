@@ -1,0 +1,93 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zorobabel
+nombre: Zorobabel
+nombres:
+- nombre: Zorobabel
+desambiguacion: Gobernador de Judá después del destierro, hijo legal de Sealtiel; probablemente el mismo que Sesbazar.
+fecha:
+  desde: -536
+  hasta: -514
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: de 537 a 515 a.e.c.
+resumen: Descendiente de David y primer gobernador de los judíos repatriados. Guio el regreso de 537 a.e.c. y, con el sumo
+  sacerdote Josué, levantó el altar y reconstruyó el templo hasta terminarlo en 515.
+razon: 'Perspicacia «Zorobabel»: nombrado gobernador por Ciro; altar en tisri de 537, cimientos en 536, obra prohibida en
+  522, reanudada en 520 y terminada en 515. Ag 2:21 lo llama gobernador de Judá.'
+fuentes:
+- it-zorobabel
+- esdras-3
+- ageo-1
+- si-3
+- mateo-1
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Zorobabel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716
+  tipo: perspicacia
+- titulo: Esdras 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: david
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  - mateo-1
+  razon: Perspicacia «Zorobabel» lo da como descendiente de David y antepasado de Jesús; Mt 1:6-13 traza esa línea por Salomón.
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: -536
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 537 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  - ageo-1
+  razon: 'Perspicacia «Zorobabel»: gobernador en Jerusalén y Judá desde el regreso hasta que se terminó el templo.'
+  estado: verificado
+- tipo: acompana
+  persona: josue-sumo-sacerdote
+  fecha:
+    desde: -536
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 537 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-zorobabel
+  - it-jesua
+  - esdras-3
+  razon: Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y del templo.
+  estado: verificado
+- tipo: pariente
+  persona: sealtiel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  - it-sealtiel
+  - lucas-3
+  razon: Mt 1:12. La nota y Perspicacia «Sealtiel» explican que quizá era su padre legal y Pedaya, el natural.
+  estado: verificado
+perspicacia: '1200004716'
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con David decía «descendiente de David»; escrita en la ficha de Zorobabel, significa que David es el
+    antepasado. Se corrige a «antepasado».
+  fuente: mateo-1
+consultado: '2026-09-29'
+estado: verificado

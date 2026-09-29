@@ -1,0 +1,278 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: primer-viaje
+nombre: Primer viaje misional
+persona: pablo
+referencia: Hch 13:1–14:28
+fecha:
+  desde: 47
+  hasta: 48
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47-48 e.c. (primavera de 47 a otoño de 48; invierno siguiente en Antioquía)
+companeros:
+- bernabe
+- juan-marcos
+resumen: Pablo y Bernabé salen de Antioquía de Siria, recorren Chipre y el sur de Galacia y vuelven por el mismo
+  camino. Juan Marcos los deja en Perga.
+razon: El estudio 3 (párr. 21) fecha la gira de la primavera de 47 al otoño de 48; Hechos 13 y 14 dan las paradas
+  en orden.
+fuentes:
+- si-3
+- it-pablo
+- hch-13
+- hch-14
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Paradas 2 a 4 (Seleucia, Salamina y Pafos) pasan de heredar c. 47-48 a c. 47 anclada, como los sucesos de Chipre:
+    la nota de estudio de Hch 13:4 y Perspicacia «Paulo» dan el año 47.'
+  fuente: nota-hechos-13
+consultado: '2026-09-29'
+estado: verificado
+paradas:
+- orden: 1
+  lugar: antioquia-de-siria
+  referencia: Hch 13:1-3
+  fecha:
+    desde: 47
+    hasta: 47
+    precision: estación
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: primavera de 47
+  nota: Salida.
+  razon: 'Hch 13:1-3 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: primavera de 47.'
+  fuentes:
+  - hch-13
+  - si-3
+  estado: verificado
+- orden: 2
+  lugar: seleucia
+  referencia: Hch 13:4
+  fecha:
+    desde: 47
+    hasta: 47
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 47 e.c.
+  nota: Puerto de Antioquía.
+  razon: Hch 13:4 nombra Seleucia. La nota de estudio de ese versículo pone allí el embarque hacia el año 47.
+  fuentes:
+  - hch-13
+  - nota-hechos-13
+  estado: verificado
+- orden: 3
+  lugar: salamina
+  referencia: Hch 13:5
+  fecha:
+    desde: 47
+    hasta: 47
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 47 e.c.
+  nota: null
+  razon: Hch 13:5 nombra Salamina. Perspicacia «Paulo» fecha la visita a Chipre hacia el año 47.
+  fuentes:
+  - hch-13
+  - it-paulo
+  estado: verificado
+- orden: 4
+  lugar: pafos
+  referencia: Hch 13:6-12
+  fecha:
+    desde: 47
+    hasta: 47
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 47 e.c.
+  nota: Elimas y el procónsul Sergio Paulo.
+  razon: Hch 13:6-12 nombra Pafos. Perspicacia «Paulo» fecha la visita a Chipre hacia el año 47.
+  fuentes:
+  - hch-13
+  - it-paulo
+  estado: verificado
+- orden: 5
+  lugar: perga
+  referencia: Hch 13:13
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Juan Marcos vuelve a Jerusalén.
+  razon: 'Hch 13:13 nombra Perga en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-13
+  estado: verificado
+- orden: 6
+  lugar: antioquia-de-pisidia
+  referencia: Hch 13:14-50
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 13:14-50 nombra Antioquía de Pisidia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-13
+  estado: verificado
+- orden: 7
+  lugar: iconio
+  referencia: Hch 13:51–14:5
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 13:51–14:5 nombra Iconio en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 8
+  lugar: listra
+  referencia: Hch 14:6-20
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Apedrean a Pablo.
+  razon: 'Hch 14:6-20 nombra Listra en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 9
+  lugar: derbe
+  referencia: Hch 14:20, 21
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 14:20, 21 nombra Derbe en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 10
+  lugar: listra
+  referencia: Hch 14:21-23
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Vuelta; nombran ancianos.
+  razon: 'Hch 14:21-23 nombra Listra en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 11
+  lugar: iconio
+  referencia: Hch 14:21-23
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 14:21-23 nombra Iconio en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 12
+  lugar: antioquia-de-pisidia
+  referencia: Hch 14:21-23
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 14:21-23 nombra Antioquía de Pisidia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 13
+  lugar: perga
+  referencia: Hch 14:24, 25
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 14:24, 25 nombra Perga en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 14
+  lugar: atalia
+  referencia: Hch 14:25
+  fecha:
+    desde: 47
+    hasta: 48
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: null
+  razon: 'Hch 14:25 nombra Atalia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  fuentes:
+  - hch-14
+  estado: verificado
+- orden: 15
+  lugar: antioquia-de-siria
+  referencia: Hch 14:26-28
+  fecha:
+    desde: 48
+    hasta: 49
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: otoño de 48 a primavera de 49
+  nota: null
+  razon: 'Hch 14:26-28 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: otoño de 48 a primavera de 49.'
+  fuentes:
+  - hch-14
+  - si-3
+  estado: verificado

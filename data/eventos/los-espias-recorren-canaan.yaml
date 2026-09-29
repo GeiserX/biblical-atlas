@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-espias-recorren-canaan
+titulo: Los espías recorren Canaán y cortan un racimo en Escol
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 13021
+lugares:
+- hebron
+- valle-de-escol
+- desierto-de-zin
+- rehob
+- lebo-hamat
+- negueb
+- canaan
+personas:
+- samua-hijo-de-zacur
+- safat-hijo-de-hori
+- caleb-hijo-de-jefune
+- igal-hijo-de-jose
+- josue-hijo-de-nun
+- palti-hijo-de-rafu
+- gadiel
+- gaddi
+- amiel-hijo-de-guemali
+- setur
+- nahbi
+- gueuel
+- ahiman-hijo-de-anac
+- sesai
+- talmai-hijo-de-anac
+pasajes:
+- Nú 13:21-24
+- Dt 1:24, 25
+resumen: Los espías recorren el país de sur a norte, del desierto de Zin a Rehob. En Hebrón ven a los anaquim Ahimán, Sesái
+  y Talmái, y en el valle de Escol cortan un racimo que cargan entre dos.
+razon: Perspicacia «Espías» fecha el envío en 1512 a.e.c. Perspicacia cree que quizá fueron de dos en dos. Hebrón va primero
+  porque el texto cuenta lo que vieron allí.
+fuentes:
+- numeros-13
+- it-espias
+- it-anaquim
+enlaces:
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+- titulo: 'Perspicacia: «Espías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004208
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

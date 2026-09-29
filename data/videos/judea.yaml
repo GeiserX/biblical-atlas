@@ -1,89 +1,89 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: judea
-generated_on: "2026-09-28"
+lugar: judea
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwbcov25_7_VIDEO"
-    title: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
-    published: "2026-01-19"
-    hits: 7
-    terms:
+    publicado: "2026-01-19"
+    menciones: 7
+    terminos:
       "Judea": 7
   - docid: "pub-gnj_1_VIDEO"
-    title: "Episodio 1: La verdadera luz del mundo"
+    titulo: "Episodio 1: La verdadera luz del mundo"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-1-verdadera-luz-del-mundo/"
-    published: "2024-12-23"
-    hits: 6
-    terms:
+    publicado: "2024-12-23"
+    menciones: 6
+    terminos:
       "Judea": 6
   - docid: "pub-jwb-100_1_VIDEO"
-    title: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
-    published: "2023-01-02"
-    hits: 5
-    terms:
+    publicado: "2023-01-02"
+    menciones: 5
+    terminos:
       "Judea": 5
   - docid: "pub-jwb-100_2_VIDEO"
-    title: "Geoffrey Jackson: Estemos alerta y listos para actuar con decisión"
+    titulo: "Geoffrey Jackson: Estemos alerta y listos para actuar con decisión"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_2_VIDEO&appLanguage=S"
-    published: "2023-01-02"
-    hits: 5
-    terms:
+    publicado: "2023-01-02"
+    menciones: 5
+    terminos:
       "Judea": 5
   - docid: "pub-gnj_3_VIDEO"
-    title: "Episodio 3: “Ese soy yo”"
+    titulo: "Episodio 3: “Ese soy yo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
-    published: "2026-01-19"
-    hits: 4
-    terms:
+    publicado: "2026-01-19"
+    menciones: 4
+    terminos:
       "Judea": 4
   - docid: "pub-jwb_202001_1_VIDEO"
-    title: "JW Broadcasting: Enero de 2020 (reunión anual del 2019)"
+    titulo: "JW Broadcasting: Enero de 2020 (reunión anual del 2019)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202001_1_VIDEO&appLanguage=S"
-    published: "2020-01-06"
-    hits: 4
-    terms:
+    publicado: "2020-01-06"
+    menciones: 4
+    terminos:
       "Judea": 4
   - docid: "pub-co-r22_11_VIDEO"
-    title: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_11_VIDEO&appLanguage=S"
-    published: "2022-08-15"
-    hits: 3
-    terms:
+    publicado: "2022-08-15"
+    menciones: 3
+    terminos:
       "Judea": 3
   - docid: "pub-gnj_2_VIDEO"
-    title: "Episodio 2: “Este es mi Hijo”"
+    titulo: "Episodio 2: “Este es mi Hijo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
-    published: "2026-01-19"
-    hits: 3
-    terms:
+    publicado: "2026-01-19"
+    menciones: 3
+    terminos:
       "Judea": 3
   - docid: "pub-gnj_4_VIDEO"
-    title: "Episodio 4: “Para eso he venido”"
+    titulo: "Episodio 4: “Para eso he venido”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-4-para-eso-he-venido/"
-    published: "2026-05-01"
-    hits: 3
-    terms:
+    publicado: "2026-05-01"
+    menciones: 3
+    terminos:
       "Judea": 3
   - docid: "pub-jwb-083_1_VIDEO"
-    title: "JW Broadcasting: Octubre de 2021"
+    titulo: "JW Broadcasting: Octubre de 2021"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-083_1_VIDEO&appLanguage=S"
-    published: "2021-10-04"
-    hits: 3
-    terms:
+    publicado: "2021-10-04"
+    menciones: 3
+    terminos:
       "Judea": 3
   - docid: "pub-jwb-083_2_VIDEO"
-    title: "Robert Luccioni: A Jehová le agrada mucho lo que usted le da"
+    titulo: "Robert Luccioni: A Jehová le agrada mucho lo que usted le da"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-083_2_VIDEO&appLanguage=S"
-    published: "2021-10-18"
-    hits: 3
-    terms:
+    publicado: "2021-10-18"
+    menciones: 3
+    terminos:
       "Judea": 3
   - docid: "pub-wpc_2_VIDEO"
-    title: "Jehová nos guía por el camino de la paz (parte 2)"
+    titulo: "Jehová nos guía por el camino de la paz (parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-2/"
-    published: "2022-08-22"
-    hits: 3
-    terms:
+    publicado: "2022-08-22"
+    menciones: 3
+    terminos:
       "Judea": 3

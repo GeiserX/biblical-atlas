@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primera-carta-de-pablo
+titulo: 'Pablo escribe su primera carta: 1 Tesalonicenses'
+fecha:
+  desde: 50
+  hasta: 50
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. otoño de 50 e.c.
+lugares:
+- corinto
+- tesalonica
+personas:
+- pablo
+- silas
+- timoteo
+pasajes:
+- 1Te 1:1
+resumen: Desde Corinto, Pablo escribe a la congregación de Tesalónica con Silas y Timoteo. Es la primera de sus
+  cartas en la Biblia.
+razon: El cuadro del estudio 3 y la Tabla de los libros dan Corinto y c. 50; Perspicacia «Tesalonicenses» la sitúa
+  hacia el otoño de 50 y Perspicacia «Pablo» la llama su primera carta canónica.
+fuentes:
+- si-3
+- tnm-tabla
+- it-pablo
+- it-tesalonicenses
+- 1-tesalonicenses-1
+buscar: primera carta a los Tesalonicenses
+consultado: '2026-09-28'
+estado: verificado

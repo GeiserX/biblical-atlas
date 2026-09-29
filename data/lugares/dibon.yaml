@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dibon
+nombre: Dibón
+nombres:
+- nombre: Dibón
+- nombre: Dibón-Gad
+  nota: Así sale entre las etapas de Nú 33:45, 46; Perspicacia cree que el nombre compuesto se lo dieron los gaditas al reconstruirla.
+tipo: ciudad
+lat: 31.502236
+lon: 35.776574
+precision: punto
+coord_fuente: openbible:a0d784a
+coord_url: https://www.openbible.info/geo/ancient/a0d784a/dibon-1
+resumen: Ciudad al este del mar Muerto, unos 5 km al norte del Arnón, que Sehón quitó a Moab e Israel tomó después. Allí apareció
+  en 1868 la Piedra Moabita.
+razon: 'Perspicacia «Dibón», núm. 1; Nú 21:30. Hoy Dhiban. OpenBible: solo el punto.'
+fuentes:
+- it-dibon
+- openbible-geo
+- numeros-21
+- numeros-32
+- tnm-b3
+- numeros-33
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Dibón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001172
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: Punto de OpenBible en Tell Dhiban, con que hoy se identifica, unos 5 km al norte del Arnón. Allí apareció la Piedra
+  Moabita.

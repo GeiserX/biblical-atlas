@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hobab
+nombre: Hobab
+nombres:
+- nombre: Hobab
+perspicacia: '1200002045'
+resumen: Cuñado de Moisés, hijo de Reuel (Jetró), quenita. Conocía el desierto, y Moisés le pidió que fuera con Israel como
+  guía. Primero se negó; parece que al final los acompañó, y los suyos se asentaron al sur de Arad.
+razon: Perspicacia «Hobab» y «Quenita»; Nú 10:29-32; Jue 1:16.
+fuentes:
+- it-hobab
+- numeros-10
+- jueces-1
+- jueces-4
+enlaces:
+- titulo: 'Perspicacia: «Hobab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002045
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: jetro
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-10
+  - it-hobab
+  razon: Nú 10:29 lo llama hijo de Reuel, y la nota del versículo dice que Reuel es Jetró.
+  estado: verificado
+- tipo: pariente
+  persona: moises
+  relacion: cuñado
+  deducido: true
+  fuentes:
+  - numeros-10
+  - it-hobab
+  razon: 'Perspicacia «Hobab»: era cuñado de Moisés, porque su padre Reuel era el suegro de Moisés (Nú 10:29).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: madian
+  deducido: true
+  fuentes:
+  - numeros-10
+  - it-quenita
+  razon: 'Nú 10:29, 30: hijo del madianita Reuel, dice que volverá a su tierra y a los suyos. Perspicacia «Quenita» los ve
+    madianitas por el lugar.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade que sus descendientes se asentaron en el desierto de Judá, al sur de Arad, como dice Perspicacia «Hobab»
+    con Jue 1:16.
+  fuente: jueces-1
+- fecha: '2026-09-29'
+  cambio: La razón cita Jue 1:16, de donde sale el asentamiento de los suyos al sur de Arad.
+  fuente: jueces-1
+consultado: '2026-09-29'
+estado: verificado
+no_afirmamos:
+- 'Que Hobab fuera el suegro de Moisés, como lo llama Jue 4:11: Perspicacia «Hobab» lo explica como otro nombre del suegro
+  o como el que representaba a su padre Reuel.'

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primeros-discipulos
+titulo: Juan presenta al Cordero de Dios; los primeros discípulos
+fecha:
+  desde: 29
+  hasta: 29
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: otoño de 29 e.c.
+  detalle:
+    estacion: otoño
+orden_relato:
+  serie: a7
+  orden: 13
+lugares:
+- betania-del-otro-lado-del-jordan
+personas:
+- jesus
+- juan-el-bautista
+- andres
+- pedro
+- juan-apostol
+- felipe-apostol
+- natanael
+pasajes:
+- Jn 1:15, 29-51
+resumen: Juan señala a Jesús como el Cordero de Dios. Dos discípulos suyos, Andrés y probablemente el apóstol Juan, lo siguen;
+  Andrés trae a su hermano Simón, y al día siguiente se unen Felipe y Natanael.
+razon: 'A7-B, fila 3: Betania del otro lado del Jordán. Perspicacia «Andrés» (párr. 3) lo fecha en el otoño de 29; «Juan»
+  (núm. 3) identifica al otro discípulo.'
+fuentes:
+- tnm-a7-b
+- juan-1
+- it-andres
+- it-juan
+- jy-cap-14
+historial:
+- fecha: '2026-09-29'
+  cambio: Jn 1:19-28, los enviados de Jerusalén que interrogan a Juan, pasa a juan-niega-ser-el-cristo. Aquí queda desde que
+    Juan señala al Cordero de Dios.
+  fuente: juan-1
+consultado: '2026-09-29'
+estado: verificado

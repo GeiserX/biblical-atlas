@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-y-juan-ante-el-sanedrin
+titulo: Pedro y Juan ante los gobernantes judíos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 33 e.c.
+orden_relato:
+  serie: hechos
+  orden: 405
+lugares:
+- jerusalen
+personas:
+- pedro
+- juan-apostol
+- anas
+- caifas
+- juan-gobernante-judio
+- alejandro-pariente-de-anas
+pasajes:
+- Hch 4:5-22
+resumen: Al día siguiente, ante Anás, Caifás, Juan, Alejandro y los demás gobernantes, Pedro dice que el cojo sanó por el
+  nombre de Jesús. Les prohíben predicar; contestan que no pueden callar y los sueltan con amenazas.
+razon: Perspicacia «Pedro» (párr. 18), «Juan» (núm. 3, párr. 29, y núm. 5) y «Alejandro» (núm. 3); la nota de estudio a Hch
+  4:6 identifica a Anás y a Caifás. El año sale de Perspicacia «Herodes», núm. 2.
+fuentes:
+- it-pedro
+- it-juan
+- hechos-4
+- bt-4
+- it-herodes
+- it-alejandro
+nota: Perspicacia «Herodes», núm. 2, sitúa en 33, poco después de Pentecostés, el día en que soltaron a los dos apóstoles;
+  «Testimonio completo», capítulo 4, habla de unas semanas tras la condena de Jesús.
+buscar: Pedro y Juan ante el Sanedrín
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El año pasa de 33-34 a 33: Perspicacia «Herodes», núm. 2, pone esta liberación en 33, poco después de Pentecostés.'
+  fuente: it-herodes
+- fecha: '2026-09-29'
+  cambio: El arresto de Hch 4:1-4 pasa a ser un suceso propio, así que este empieza en 4:5.
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: 'El arresto (4:1-4) y la oración de los discípulos (4:23-31) son escenas aparte: cambian el sitio, el día o los
+    protagonistas.'
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: 'El resumen se ciñe al juicio: el arresto y la cifra de 5.000 pasan al suceso de Hch 4:1-4.'
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: Se añaden Juan y Alejandro, los otros dos que Hch 4:6 nombra, y la fuente del año.
+  fuente: it-juan
+- fecha: '2026-09-29'
+  cambio: La nota decía que ninguna fuente daba el año; Perspicacia «Herodes» sí lo da.
+  fuente: it-herodes
+consultado: '2026-09-29'
+estado: verificado

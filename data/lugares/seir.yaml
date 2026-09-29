@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: seir
+nombre: Seír
+nombres:
+- nombre: Seír
+- nombre: Montañas de Seír
+  nota: Así la nombra Gé 14:6.
+- nombre: Región montañosa de Seír
+  nota: Así la llama Gé 36:8, 9.
+- nombre: Monte Seír
+  nota: Así llama Jos 24:4 a esta región montañosa. No es el monte Seír de la frontera norte de Judá (Jos 15:10).
+tipo: region
+lat: 30.1843
+lon: 35.3166
+precision: zona
+coord_fuente: openbible:ae981db
+coord_url: https://www.openbible.info/geo/ancient/ae981db/mount-seir-1
+coord_nota: Punto representativo de OpenBible para la región montañosa.
+resumen: Región montañosa entre el mar Salado y el golfo de ʽAqaba. En tiempos de Abrán la habitaban los horeos; los descendientes
+  de Esaú los expulsaron y la recibieron de Jehová en propiedad.
+razon: 'Perspicacia «Seír», núm. 2; Gé 14:6. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-seir
+- openbible-geo
+- genesis-14
+- genesis-32
+- genesis-33
+- genesis-36
+- it-horeo
+- deuteronomio-1
+- it-horma
+- deuteronomio-2
+- josue-24
+enlaces:
+- titulo: 'Perspicacia: «Seír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003884
+  tipo: perspicacia
+- titulo: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Dt 2:5, 12, 22: los hijos de Esaú desposeyeron a los horeos y Jehová les dio Seír; Perspicacia «Edom» y «Horeo»
+    lo recogen.'
+  fuente: deuteronomio-2
+consultado: '2026-09-29'
+estado: verificado

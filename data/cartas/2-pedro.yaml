@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 2-pedro
+libro: 2 Pedro
+escritor: pedro
+referencia: 2Pe 1:1, 14; 3:1
+escrita_en:
+- babilonia
+fecha:
+  desde: 64
+  hasta: 64
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 64 e.c.
+destinatarios:
+  texto: 'Los mismos cristianos a los que escribió antes: 2Pe 3:1 la llama su segunda carta.'
+contexto_origen:
+  resumen: Pedro la escribe poco después de la primera, quizá también en Babilonia, sabiendo que pronto moriría
+    (2Pe 1:14).
+  fuentes:
+  - it-pedro-cartas
+contexto_destino:
+  resumen: Advierte contra falsos maestros dentro de la congregación y contra los burlones de los últimos días,
+    y anima a atender la palabra profética.
+  fuentes:
+  - it-pedro-cartas
+razon: La Tabla da «Babilonia (?)» y c. 64; Perspicacia «Pedro, Cartas de» (párr. 3, 4 y 10) dice «posiblemente»
+  Babilonia.
+nota: 'El lugar no es seguro: la Tabla lo marca con interrogación.'
+fuentes:
+- tnm-tabla
+- si-3
+- it-pedro-cartas
+- 2-pedro-1
+- 2-pedro-3
+enlaces:
+- titulo: 'Perspicacia: «Pedro, Cartas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003452
+  tipo: perspicacia
+- titulo: 2 Pedro 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/61/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

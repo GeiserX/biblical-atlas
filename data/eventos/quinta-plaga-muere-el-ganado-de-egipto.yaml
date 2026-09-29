@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: quinta-plaga-muere-el-ganado-de-egipto
+titulo: 'Quinta plaga: muere el ganado de Egipto'
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+orden_relato:
+  serie: exodo
+  orden: 9001
+lugares:
+- egipto
+personas:
+- moises
+pasajes:
+- Éx 9:1-7
+resumen: Jehová anuncia la plaga para el día siguiente y una peste mata el ganado de los egipcios que estaba en el campo.
+  Ni un animal de Israel muere. El faraón manda comprobarlo, pero sigue sin dejar salir al pueblo.
+razon: 'El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Perspicacia «Dioses
+  y diosas», apartado de las diez plagas: esta plaga humilló a deidades con forma de vaca.'
+fuentes:
+- exodo-9
+- si-3
+- it-dioses-y-diosas
+enlaces:
+- titulo: Éxodo 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,91 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: pablo
+generado: "2026-09-28"
+videos:
+  - docid: "pub-co-r20_9_VIDEO"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
+    publicado: "2020-08-13"
+    menciones: 12
+    terminos:
+      "apóstol Pablo": 12
+  - docid: "pub-jwb-122_1_VIDEO"
+    titulo: "JW Broadcasting: Febrero de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-122_1_VIDEO&appLanguage=S"
+    publicado: "2025-02-03"
+    menciones: 10
+    terminos:
+      "apóstol Pablo": 10
+  - docid: "pub-jwb-122_3_VIDEO"
+    titulo: "Geoffrey Jackson: La humildad es mejor que el orgullo (Filip. 2:3)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-122_3_VIDEO&appLanguage=S"
+    publicado: "2025-02-17"
+    menciones: 9
+    terminos:
+      "apóstol Pablo": 9
+  - docid: "pub-co-r21_5_VIDEO"
+    titulo: "Sábado mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_5_VIDEO&appLanguage=S"
+    publicado: "2021-07-19"
+    menciones: 8
+    terminos:
+      "Saulo de Tarso": 1
+      "apóstol Pablo": 7
+  - docid: "pub-co-r22_1_VIDEO"
+    titulo: "Viernes mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_1_VIDEO&appLanguage=S"
+    publicado: "2022-06-27"
+    menciones: 7
+    terminos:
+      "apóstol Pablo": 7
+  - docid: "pub-jwb-101_1_VIDEO"
+    titulo: "JW Broadcasting: Agosto de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-101_1_VIDEO&appLanguage=S"
+    publicado: "2023-08-07"
+    menciones: 7
+    terminos:
+      "apóstol Pablo": 7
+  - docid: "pub-co-r20_1_VIDEO"
+    titulo: "Viernes mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_1_VIDEO&appLanguage=S"
+    publicado: "2020-07-06"
+    menciones: 6
+    terminos:
+      "apóstol Pablo": 6
+  - docid: "pub-co-r20_5_VIDEO"
+    titulo: "Sábado mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_5_VIDEO&appLanguage=S"
+    publicado: "2020-07-23"
+    menciones: 6
+    terminos:
+      "apóstol Pablo": 6
+  - docid: "pub-co-r21_6_VIDEO"
+    titulo: "Sábado mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_6_VIDEO&appLanguage=S"
+    publicado: "2021-07-19"
+    menciones: 6
+    terminos:
+      "apóstol Pablo": 6
+  - docid: "pub-jwb-092_1_VIDEO"
+    titulo: "JW Broadcasting: Marzo de 2023"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-092_1_VIDEO&appLanguage=S"
+    publicado: "2023-03-06"
+    menciones: 6
+    terminos:
+      "Saulo de Tarso": 2
+      "apóstol Pablo": 4
+  - docid: "pub-jwb-101_5_VIDEO"
+    titulo: "Geoffrey Jackson: Las cualidades de un buen maestro (1 Tes. 2:7, 8)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-101_5_VIDEO&appLanguage=S"
+    publicado: "2023-08-21"
+    menciones: 6
+    terminos:
+      "apóstol Pablo": 6
+  - docid: "pub-jwb_201906_7_VIDEO"
+    titulo: "Graduación de la clase 146 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201906_7_VIDEO&appLanguage=S"
+    publicado: "2019-06-24"
+    menciones: 6
+    terminos:
+      "apóstol Pablo": 6

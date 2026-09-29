@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-llega-a-hebron
+titulo: Jacob llega a Hebrón, donde vive Isaac
+fecha:
+  desde: -1760
+  hasta: -1749
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1761 y 1750 a.e.c. (tiempo narrativo: tras nacer Benjamín y antes de la venta de José)'
+orden_relato:
+  serie: genesis
+  orden: 35027
+lugares:
+- mamre
+- hebron
+personas:
+- jacob
+- isaac
+pasajes:
+- Gé 35:27
+resumen: Jacob llega a Mamré, junto a Quiryat-Arbá, es decir, Hebrón, donde vive su padre Isaac y donde había residido Abrahán.
+razon: 'Perspicacia «Jacob», núm. 1: quizá antes de la venta de José, en 1750 a.e.c. (estudio 3), cuando Jacob ya vivía en
+  Hebrón. Llega tras nacer Benjamín (entre 1761 y 1751).'
+fuentes:
+- si-3
+- it-jacob
+- it-benjamin
+- it-mamre
+- genesis-35
+enlaces:
+- titulo: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

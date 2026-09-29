@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pisga
+nombre: Pisgá
+nombres:
+- nombre: Pisgá
+tipo: monte
+lat: 31.767778
+lon: 35.725556
+precision: incierto
+coord_fuente: openbible:afd9259
+coord_url: https://www.openbible.info/geo/ancient/afd9259/pisgah
+coord_nota: OpenBible lo pone en Rujm Siyaghah. Perspicacia dice que la Biblia no contradice situarlo en Ras es-Siyaghah,
+  al noroeste del monte Nebo, pero que no se conoce el sitio exacto.
+resumen: Cima del norte de la cordillera de Abarim, al este del mar Muerto, vecina del monte Nebo. Israel acampó en un valle
+  bajo ella; allí bendijo Balaam a Israel y desde su cumbre vio Moisés la Tierra Prometida.
+razon: 'Perspicacia «Pisgá» y «Nebo», núm. 3: Pisgá pudo ser parte del Nebo o al revés; Nú 21:20; 23:14. OpenBible: solo el
+  punto.'
+fuentes:
+- it-pisga
+- it-nebo
+- openbible-geo
+- numeros-21
+- numeros-23
+- deuteronomio-3
+- deuteronomio-4
+- deuteronomio-34
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Pisgá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003497
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+- titulo: Números 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/23
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

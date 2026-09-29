@@ -1,12 +1,12 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: puteoli
-generated_on: "2026-09-28"
+lugar: puteoli
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwbvod25_24_VIDEO"
-    title: "Izak Marais: Sigamos animándonos unos a otros (Rom. 1:11, 12)"
+    titulo: "Izak Marais: Sigamos animándonos unos a otros (Rom. 1:11, 12)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_24_VIDEO&appLanguage=S"
-    published: "2025-04-18"
-    hits: 2
-    terms:
+    publicado: "2025-04-18"
+    menciones: 2
+    terminos:
       "Puteoli": 2

@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hefer-hijo-de-galaad
+nombre: Héfer
+nombres:
+- nombre: Héfer
+perspicacia: 1200001989#1
+desambiguacion: Héfer hijo de Galaad, manasita; no el judaíta hijo de Asjur, ni el guerrero de David, ni la ciudad cananea.
+resumen: Hijo de Galaad, de Manasés, y cabeza de los heferitas. Fue padre de Zelofehad, que murió sin hijos varones y dejó
+  cinco hijas.
+razon: Perspicacia «Héfer», núm. 1; Nú 26:32, 33.
+fuentes:
+- it-hefer
+- numeros-26
+- numeros-27
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Héfer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001989
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+- titulo: Números 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: galaad-hijo-de-makir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-hefer
+  - numeros-27
+  - josue-17
+  razon: Nú 26:30-32 lo cuenta entre los hijos de Galaad.
+  estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: 'Jos 17:2, 3: Héfer, hijo de Galaad, hijo de Makir, desciende de Manasés.'
+  estado: verificado
+- tipo: pariente
+  persona: makir-hijo-de-manases
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: 'Jos 17:3: Héfer era hijo de Galaad, y Galaad hijo de Makir.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

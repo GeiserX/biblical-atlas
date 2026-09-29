@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haman
+nombre: Hamán
+nombres:
+- nombre: Hamán
+resumen: Hijo de Hamedata, el agaguita, y primer ministro de Asuero. Tramó exterminar a los judíos del imperio y acabó colgado
+  en el madero que había levantado para Mardoqueo.
+razon: 'Perspicacia «Hamán»: agaguita, quizá amalequita de linaje real; decreto contra los judíos y su caída (Est 3:1-11;
+  7:9, 10).'
+fuentes:
+- it-haman
+- ester-3
+enlaces:
+- titulo: 'Perspicacia: «Hamán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001833
+  tipo: perspicacia
+- titulo: Ester 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/3
+  tipo: biblia
+no_afirmamos:
+- 'Que Hamán fuera con seguridad amalequita: Perspicacia dice que el término agaguita tal vez lo indique.'
+relaciones:
+- tipo: vivio_en
+  lugar: susa
+  deducido: true
+  fuentes:
+  - it-haman
+  - ester-3
+  razon: Est 3:15 publica su decreto en Susa y Perspicacia «Hamán» lo pone al servicio de Asuero allí.
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

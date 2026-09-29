@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quenaz-hijo-de-elifaz
+nombre: Quenaz
+nombres:
+- nombre: Quenaz
+perspicacia: 1200002590#1
+desambiguacion: Quenaz hijo de Elifaz; no Quenaz, padre de Otniel.
+resumen: Nieto de Esaú por su hijo Elifaz. Fue jeque en Edom y su nombre vuelve a salir en la última lista de jeques.
+razon: Perspicacia «Quenaz», núm. 1; Gé 36:11, 15, 42.
+fuentes:
+- it-quenaz
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Quenaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002590
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: elifaz-hijo-de-esau
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-quenaz
+  - genesis-36
+  razon: 'Gé 36:11: hijo de Elifaz.'
+  estado: verificado
+- tipo: pariente
+  persona: ada-hija-de-elon
+  relacion: abuela
+  deducido: false
+  fuentes:
+  - genesis-36
+  razon: 'Gé 36:12: se cuenta entre los hijos de Adá, esposa de Esaú.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edom
+  deducido: false
+  fuentes:
+  - it-quenaz
+  - genesis-36
+  razon: 'Gé 36:16: fue jeque en la tierra de Edom.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- quenaz-padre-de-otniel

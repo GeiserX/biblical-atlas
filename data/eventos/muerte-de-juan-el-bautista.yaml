@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-juan-el-bautista
+titulo: Herodes manda decapitar a Juan el Bautista
+fecha:
+  desde: 32
+  hasta: 32
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. principios de 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 49
+lugares:
+- tiberiades
+personas:
+- juan-el-bautista
+- herodes-antipas
+- herodias
+- salome-hija-de-filipo
+pasajes:
+- Mt 14:1-12
+- Mr 6:14-29
+- Lu 9:7-9
+resumen: En el banquete de su cumpleaños, Herodes Antipas promete a la hija de Herodías lo que pida; aconsejada por su madre,
+  ella pide la cabeza de Juan. Después, Herodes se inquieta al oír de Jesús.
+razon: 'A7-D, fila 8: Tiberíades, 31 o 32. Perspicacia «Herodías» fecha la muerte en 32 y el libro jy (cap. 51) poco antes
+  de la Pascua de ese año.'
+fuentes:
+- tnm-a7-d
+- mateo-14
+- marcos-6
+- lucas-9
+- it-herodias
+- it-juan
+- jy-cap-51
+- it-salome
+consultado: '2026-09-29'
+estado: verificado

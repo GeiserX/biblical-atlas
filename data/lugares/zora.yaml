@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zora
+nombre: Zorá
+nombres:
+- nombre: Zorá
+tipo: ciudad
+lat: 31.773992
+lon: 34.985289
+precision: punto
+coord_fuente: openbible:a08174b
+coord_url: https://www.openbible.info/geo/ancient/a08174b/zorah
+resumen: Ciudad de la Sefelá en la frontera entre Judá y Dan, que ocuparon los danitas. Allí nació Sansón y Rehoboam la fortificó.
+  Estaba en Tel Zorʽa, unos 25 km al oeste de Jerusalén.
+razon: 'Perspicacia «Zorá»; Jos 15:33; 19:41; Jue 13:2, 24; 2Cr 11:10. OpenBible: solo el punto.'
+fuentes:
+- it-zora
+- openbible-geo
+- josue-15
+- josue-19
+- jueces-13
+- jueces-16
+- jueces-18
+enlaces:
+- titulo: 'Perspicacia: «Zorá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004766
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: Punto de OpenBible en Sarʽah (Tel Zorʽa).

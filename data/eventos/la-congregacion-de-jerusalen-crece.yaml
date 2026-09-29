@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-congregacion-de-jerusalen-crece
+titulo: La congregación de Jerusalén comparte y crece
+fecha:
+  desde: 33
+  hasta: 34
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+orden_relato:
+  serie: hechos
+  orden: 242
+lugares:
+- jerusalen
+- monte-moria
+personas:
+- pedro
+- juan-apostol
+- santiago-hijo-de-zebedeo
+- andres
+- felipe-apostol
+- tomas
+- bartolome
+- mateo
+- santiago-hijo-de-alfeo
+- simon-el-cananita
+- tadeo
+- matias
+pasajes:
+- Hch 2:42-47
+resumen: Los bautizados en Pentecostés aprenden de los apóstoles, oran y comen juntos en las casas y van a diario al templo.
+  Venden bienes para repartir según la necesidad, y cada día se suman creyentes.
+razon: Hch 2:42-47 y su nota del v. 46. Una nota del capítulo 3 de «Testimonio completo» explica que el reparto fue voluntario
+  y pasajero, para los visitantes que se quedaron a aprender.
+fuentes:
+- hch-2
+- bt-3
+- si-3
+nota: 'Las fuentes no dan año: el tramo va entre el Pentecostés de 33 y la conversión de Saulo en 34, los dos fechados por
+  el estudio 3.'
+enlaces:
+- titulo: Hechos 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/2
+  tipo: biblia
+buscar: Hechos 2:42-47
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elidad
+nombre: Elidad
+nombres:
+- nombre: Elidad
+perspicacia: '1200001300'
+resumen: Jefe de la tribu de Benjamín, hijo de Kislón. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué
+  a dividir Canaán en herencias.
+razon: Perspicacia «Elidad»; Nú 34:21.
+fuentes:
+- it-elidad
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Elidad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001300
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: kislon
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-34
+  - it-elidad
+  razon: Nú 34:21 lo llama hijo de Kislón.
+  estado: verificado
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - numeros-34
+  razon: 'Nú 34:21: era el jefe de la tribu de Benjamín.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

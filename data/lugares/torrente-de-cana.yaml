@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: torrente-de-cana
+nombre: Torrente de Caná
+nombres:
+- nombre: Torrente de Caná
+- nombre: Qaná
+  nota: Otra forma del nombre que da la nota de Jos 16:8; es la de Perspicacia.
+tipo: rio
+lat: 32.127
+lon: 34.8954
+precision: zona
+coord_fuente: openbible:a373106
+coord_url: https://www.openbible.info/geo/ancient/a373106/kanah-1
+coord_nota: Punto representativo de OpenBible en Wadi Qana, con el que lo relaciona Perspicacia; la ficha representa todo
+  el cauce.
+resumen: Valle torrencial que separaba Efraín, al sur, de Manasés, al norte, hasta el mar. Nace al suroeste de Nablus y corre
+  hacia el Yarkón. No es Caná de Galilea.
+razon: 'Perspicacia «Qaná», núm. 1; Jos 16:8. OpenBible: solo el punto.'
+fuentes:
+- it-qana
+- openbible-geo
+- josue-16
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Qaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002571
+  tipo: perspicacia
+- titulo: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

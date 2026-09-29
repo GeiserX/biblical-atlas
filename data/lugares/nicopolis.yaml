@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nicopolis
+nombre: Nicópolis
+nombres:
+- nombre: Nicópolis
+tipo: ciudad
+lat: 39.023485
+lon: 20.73736
+precision: punto
+coord_fuente: openbible:af43cde
+coord_url: https://www.openbible.info/geo/ancient/af43cde/nicopolis
+resumen: Ciudad donde Pablo decidió pasar un invierno y adonde pidió a Tito que fuera. Perspicacia cree que es la
+  Nicópolis de Epiro, en el noroeste de Grecia.
+razon: 'Perspicacia «Nicópolis» (párr. 1 y 2); Tit 3:12. De las varias Nicópolis, la de Epiro es la que mejor encaja.
+  Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-nicopolis
+- tito-3
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Nicópolis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003251
+  tipo: perspicacia
+- titulo: Tito 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

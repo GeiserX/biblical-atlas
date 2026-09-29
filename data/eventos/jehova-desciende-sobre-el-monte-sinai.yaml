@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-desciende-sobre-el-monte-sinai
+titulo: Jehová desciende sobre el monte Sinaí
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: tercer mes de 1513 a.e.c.
+  detalle:
+    mes: sivan
+orden_relato:
+  serie: exodo
+  orden: 19016
+lugares:
+- monte-sinai
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Éx 19:16-25
+- Sl 68:8
+- Sl 114:4
+- Dt 4:11
+resumen: Al tercer día hay truenos, relámpagos, una nube densa y un fuerte sonido de cuerno. El monte humea y tiembla; Moisés
+  sube a la cima y Jehová le manda avisar que nadie pase los límites.
+razon: Perspicacia «Sinaí», núm. 1, párr. 7; el relato sigue en el capítulo siguiente con las Diez Palabras. Tercer mes de
+  1513 a.e.c. (Éx 19:1, 16; estudio 3).
+fuentes:
+- exodo-19
+- it-sinai
+- si-3
+enlaces:
+- titulo: Éxodo 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

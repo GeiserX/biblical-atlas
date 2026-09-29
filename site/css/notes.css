@@ -1,0 +1,85 @@
+/* biblical-earth · private notes (js/notes.js): the pencil beside «Cerrar ficha», the editor and «Mis notas».
+   Every colour comes from the tokens, so the meeting mode repaints it; a note is told apart by a dot and by its name
+   («Tu nota»), never by colour alone. */
+
+/* ---------- The pencil ---------- */
+/* The crumbs and the tools share the top row of the card as two columns: the crumbs take what the tools leave and break
+   into lines before reaching them, whatever the size of the letters or the words of the buttons. Rows are as tall as
+   their content, as in the column they replace (an auto row would squeeze a card that clips its overflow). */
+.panel-cuerpo:has(> .card-tools) { display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  grid-auto-rows: max-content; align-content: start; column-gap: 8px; }
+.panel-cuerpo:has(> .card-tools) > * { grid-column: 1 / -1; min-width: 0; }
+/* The 10 px under both keep the card below where it was when «Cerrar ficha» sat alone in that row. */
+.panel-cuerpo:has(> .card-tools) > .be-crumbs:has(+ .card-tools) { grid-column: 1; grid-row: 1; min-height: 28px; margin-bottom: 10px; }
+.panel-cuerpo > .card-tools { grid-column: 2; grid-row: 1; align-self: start; display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+.card-tools .cerrar-ficha { margin-top: 0; align-self: auto; }
+.note-pencil { position: relative; cursor: pointer; min-width: 28px; padding: 0 6px; }
+.note-pencil--has { border-color: var(--line-2); background: var(--surface); color: var(--ink); }
+.note-pencil--has::before { content: ""; position: absolute; top: 3px; right: 3px; width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 1.5px var(--surface); }
+/* In the reading the pencil sits in the row of the switches without making it taller. */
+.lectura-controles .note-pencil { margin-block: -4px; }
+
+/* ---------- Dialogs ---------- */
+.note-dialog { width: min(560px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); padding: 0; border: 1px solid var(--line-2);
+  border-radius: var(--r-lg); background: var(--surface); color: var(--ink); box-shadow: var(--shadow-3); font: 400 var(--fs-md)/var(--lh-body) var(--font-sans); }
+.note-dialog::backdrop { background: rgba(20, 30, 24, .42); }
+.be-reunion .note-dialog::backdrop { background: rgba(0, 0, 0, .6); }
+/* .be-btn sets its own display, which would beat the browser's [hidden]. */
+.note-dialog [hidden] { display: none !important; }
+.note-form, .notes-list[open] { display: flex; flex-direction: column; gap: 10px; }
+.note-form { padding: 18px 18px 16px; }
+/* In «Mis notas» only the notes scroll: the title, «Cerrar», export and import stay in view. */
+.notes-list[open] { padding: 16px 18px 18px; overflow: hidden; }
+.notes-list > * { flex-shrink: 0; }
+.notes-list > .notes-body { flex: 1 1 auto; min-height: 0; overflow: auto; overscroll-behavior: contain; padding: 3px; margin: -3px; }
+.note-title { margin: 0; font: 600 var(--fs-xl)/var(--lh-snug) var(--font-serif); color: var(--ink); }
+.note-privacy { margin: 0; font-size: var(--fs-sm); color: var(--ink-2); }
+.note-text { width: 100%; min-height: 150px; resize: vertical; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--ink-3);
+  border-radius: var(--r-md); background: var(--surface-2); color: var(--ink); font: 400 var(--fs-md)/var(--lh-body) var(--font-sans); }
+.note-text:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.note-status, .notes-message { margin: 0; min-height: 1.4em; font-size: var(--fs-sm); color: var(--ink-2); }
+.notes-message:empty { display: none; }
+.note-actions, .notes-tools, .notes-item-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.note-dialog .be-btn { cursor: pointer; }
+.note-dialog .be-btn:disabled { cursor: default; opacity: .55; }
+.note-delete { color: var(--unverified); }
+
+/* ---------- «Mis notas» ---------- */
+.notes-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.notes-items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.notes-item { padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface-2); display: flex; flex-direction: column; gap: 6px; }
+.notes-item-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.note-kind { font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+.notes-item-title { font-weight: 600; color: var(--ink); }
+.notes-when { font-size: var(--fs-xs); margin-left: auto; }
+.notes-item-text { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; color: var(--ink-2); }
+.notes-gone, .notes-empty { margin: 0; font-size: var(--fs-sm); }
+.notes-unreadable { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: var(--r-md); }
+.notes-unreadable p { margin: 0; font-size: var(--fs-sm); color: var(--ink); }
+
+/* ---------- Clashes on import ---------- */
+.notes-clashes { display: flex; flex-direction: column; gap: 10px; }
+.notes-clashes > p { margin: 0; font-size: var(--fs-sm); color: var(--ink-2); }
+.notes-clash-title { margin: 0; font-size: var(--fs-md); }
+.note-clash { margin: 0; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: var(--r-md); display: flex; flex-direction: column; gap: 4px; }
+.note-clash legend { padding: 0 4px; font-weight: 600; }
+.clash-versions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 4px; }
+.clash-version { padding: 8px; border-radius: var(--r-sm); background: var(--surface-2); font-size: var(--fs-sm); }
+.clash-version p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 8em; overflow: auto; }
+.notes-choice { display: flex; align-items: center; gap: 8px; font-size: var(--fs-sm); cursor: pointer; }
+.notes-choice input { accent-color: var(--ink); }
+
+@media (max-width: 760px) {
+  .clash-versions { grid-template-columns: 1fr; }
+  .note-dialog { max-height: calc(100dvh - 16px); }
+  /* On a phone the on-screen keyboard covers the bottom half: the editor sits at the top, so «Listo» stays above it, and
+     16 px letters keep iOS from zooming the page when the box gets the focus. */
+  .note-editor { margin-top: 8px; }
+  .note-text { font-size: 16px; }
+}
+/* Where a finger taps, the controls of the dialogs grow to 44 px (the pencil, a .be-btn--sm, gets its zone from tactil.css). */
+@media (any-pointer: coarse) {
+  .note-dialog .be-btn { min-height: 44px; }
+  .notes-choice { min-height: 44px; }
+  .card-tools { gap: 10px; }
+}

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-tapuah
+nombre: Bet-Tapúah
+nombres:
+- nombre: Bet-Tapúah
+tipo: ciudad
+lat: 31.53856
+lon: 35.04622
+precision: punto
+coord_fuente: openbible:adac973
+coord_url: https://www.openbible.info/geo/ancient/adac973/beth-tappuah
+resumen: Ciudad de la montaña de Judá, en la actual Taffuh, unos 6 km al oestenoroeste de Hebrón. El nombre quizá viene de
+  los manzanos de la zona o de un judaíta llamado Tapúah.
+razon: 'Perspicacia «Bet-tapúah»; Jos 15:53; 1Cr 2:43. OpenBible: solo el punto.'
+fuentes:
+- it-bet-tapuah
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Bet-tapúah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000713
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

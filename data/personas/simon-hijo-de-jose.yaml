@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-hijo-de-jose
+nombre: Simón
+nombres:
+- nombre: Simón
+perspicacia: 1200004131#4
+desambiguacion: Medio hermano de Jesús, menor que él. No es Simón Pedro ni el apóstol Simón el cananita, ni los demás Simón
+  del Nuevo Testamento.
+no_confundir_con:
+- pedro
+- simon-el-cananita
+- simon-el-leproso
+- simon-de-cirene
+- simon-el-mago
+- simon-el-curtidor
+resumen: Medio hermano menor de Jesús, nombrado por la gente de Nazaret. Todavía no creía en él en 32 e.c.; después
+  cambió, y en 33 estaba con los discípulos reunidos en Jerusalén.
+razon: Perspicacia «Simón», núm. 4; Mt 13:55 y Mr 6:3. «Testimonio completo», cap. 2, párr. 17, pone a cuatro hijos de
+  María en la reunión de Hch 1:14.
+fuentes:
+- it-simon
+- mateo-13
+- marcos-6
+- juan-7
+- jy-cap-65
+- bt-2
+- hechos-1
+enlaces:
+- titulo: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: padre
+  deducido: true
+  fuentes:
+  - mateo-13
+  - it-jose
+  - marcos-6
+  razon: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
+    entre ellos.
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: madre
+  deducido: true
+  fuentes:
+  - mateo-13
+  - marcos-6
+  razon: Mt 13:55 da a María como madre de Jesús y a Simón entre sus hermanos; la nota los hace hijos de María.
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: true
+  fuentes:
+  - mateo-13
+  razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen decía, con Perspicacia «Simón», núm. 4, que no consta si estaba en Jerusalén en 33. «Testimonio
+    completo», más reciente, dice que María vio allí a cuatro de sus hijos.'
+  fuente: bt-2
+consultado: '2026-09-29'
+estado: verificado

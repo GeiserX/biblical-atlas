@@ -1,42 +1,42 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: berea
-generated_on: "2026-09-28"
+lugar: berea
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-113_2_VIDEO"
-    title: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
+    titulo: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_2_VIDEO&appLanguage=S"
-    published: "2024-06-17"
-    hits: 4
-    terms:
+    publicado: "2024-06-17"
+    menciones: 4
+    terminos:
       "Berea": 4
   - docid: "pub-co-r21_137_VIDEO"
-    title: "David Splane: “Luchen con todas sus fuerzas por la fe”"
+    titulo: "David Splane: “Luchen con todas sus fuerzas por la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_137_VIDEO&appLanguage=S"
-    published: "2021-09-13"
-    hits: 3
-    terms:
+    publicado: "2021-09-13"
+    menciones: 3
+    terminos:
       "Berea": 1
       "bereanos": 2
   - docid: "pub-co-r21_8_VIDEO"
-    title: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_8_VIDEO&appLanguage=S"
-    published: "2021-07-26"
-    hits: 3
-    terms:
+    publicado: "2021-07-26"
+    menciones: 3
+    terminos:
       "Berea": 1
       "bereanos": 2
   - docid: "pub-jwb-124_1_VIDEO"
-    title: "JW Broadcasting: Abril de 2025"
+    titulo: "JW Broadcasting: Abril de 2025"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
-    published: "2025-04-07"
-    hits: 3
-    terms:
+    publicado: "2025-04-07"
+    menciones: 3
+    terminos:
       "Berea": 3
   - docid: "pub-jwb-124_3_VIDEO"
-    title: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
-    published: "2025-04-21"
-    hits: 3
-    terms:
+    publicado: "2025-04-21"
+    menciones: 3
+    terminos:
       "Berea": 3

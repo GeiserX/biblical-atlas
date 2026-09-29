@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: magadan
+nombre: Magadán
+nombres:
+- nombre: Magadán
+- nombre: Dalmanuta
+  nota: Nombre que da Marcos a la misma zona (Mr 8:10); quizá otro nombre de Magadán.
+- nombre: Magdala
+  nota: Algunos expertos creen que es el mismo lugar; manuscritos tardíos de Mt 15:39 leen así.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Orilla occidental del mar de Galilea
+  geometria:
+    tipo: zona
+    lat: 32.827069
+    lon: 35.513552
+    radio_km: 8
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-magadan
+  - marcos-8
+  - jy-cap-58
+  - openbible-geo
+  razon: 'La nota de Mr 8:10 y el libro jy (cap. 58) la ponen en la costa oeste del lago. Centro: el punto de OpenBible para
+    Majdal.'
+  coord_fuente: openbible:ad14067
+  coord_url: https://www.openbible.info/geo/ancient/ad14067/magadan
+- nombre: Khirbet Majdal (Magdala)
+  geometria:
+    tipo: punto
+    lat: 32.827069
+    lon: 35.513552
+  estado: alternativa
+  fuentes:
+  - it-magadan
+  - mateo-15
+  - openbible-geo
+  razon: 'Perspicacia (párr. 3 y 4) y la nota de Mt 15:39: algunos expertos la identifican con Magdala, unos 6 km al nor-noroeste
+    de Tiberíades.'
+  coord_fuente: openbible:af75e9e
+  coord_url: https://www.openbible.info/geo/ancient/af75e9e/magdala
+resumen: Región junto a la orilla occidental del mar de Galilea adonde Jesús fue en barca después de alimentar a 4.000 hombres.
+  Hoy no se conoce ningún lugar con ese nombre.
+razon: Perspicacia «Magadán» (párr. 2-4) y las notas de Mt 15:39 y Mr 8:10 no la ubican con seguridad; por eso va con candidatos
+  y sin punto.
+fuentes:
+- it-magadan
+- mateo-15
+- marcos-8
+- it-dalmanuta
+enlaces:
+- titulo: 'Perspicacia: «Magadán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002829
+  tipo: perspicacia
+- titulo: Mateo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/15
+  tipo: biblia
+- titulo: 'Perspicacia: «Dalmanuta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001109
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

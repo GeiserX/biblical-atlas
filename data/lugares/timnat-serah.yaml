@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: timnat-serah
+nombre: Timnat-Sérah
+nombres:
+- nombre: Timnat-Sérah
+- nombre: Timnat-Heres
+  nota: Así la llama Jue 2:9.
+tipo: ciudad
+lat: 32.00806
+lon: 35.10729
+precision: incierto
+coord_fuente: openbible:a6e6528
+coord_url: https://www.openbible.info/geo/ancient/a6e6528/timnath-heres
+coord_nota: Punto de OpenBible en Khirbet Tibnah, con que hay quien la identifica.
+resumen: Ciudad de la región montañosa de Efraín que Josué pidió y recibió por orden de Jehová. La reconstruyó, vivió allí
+  y allí lo enterraron. Jue 2:9 la llama Timnat-Heres.
+razon: 'Perspicacia «Timnat-sérah»; Jos 19:49, 50; Jue 2:9. OpenBible: solo el punto.'
+fuentes:
+- it-timnat-serah
+- openbible-geo
+- josue-19
+- josue-24
+- jueces-2
+enlaces:
+- titulo: 'Perspicacia: «Timnat-sérah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004413
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/24
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

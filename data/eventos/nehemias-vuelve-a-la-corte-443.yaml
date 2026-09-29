@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-vuelve-a-la-corte-443
+titulo: Nehemías vuelve a la corte de Artajerjes
+fecha:
+  desde: -442
+  hasta: -442
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: año 32 de Artajerjes (443 a.e.c.)
+lugares:
+- jerusalen
+personas:
+- nehemias
+pasajes:
+- Ne 13:6-31
+resumen: En el año 32 de Artajerjes, Nehemías volvió un tiempo con el rey. Al regresar encontró a Tobías alojado en el templo
+  y otros abusos, y los corrigió con firmeza.
+razon: Perspicacia «Artajerjes», núm. 2 (el año 32 es 443) y «Nehemías», núm. 3; Ne 13:6.
+fuentes:
+- it-artajerjes
+- it-nehemias
+- nehemias-13
+enlaces:
+- titulo: 'Perspicacia: «Nehemías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003212
+  tipo: perspicacia
+- titulo: Nehemías 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/13
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

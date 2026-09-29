@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quios
+nombre: Quíos
+nombres:
+- nombre: Quíos
+tipo: isla
+lat: 38.3725
+lon: 26.1375
+precision: punto
+coord_fuente: openbible:a4c2c75
+coord_url: https://www.openbible.info/geo/ancient/a4c2c75/chios
+resumen: Isla grande del Egeo frente a Asia Menor; el barco pasó frente a ella en la primavera de 56.
+razon: 'Perspicacia («Quíos») describe el lugar; aparece en Hch 20:15. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-quios
+- hch-20
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Quíos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000959
+  tipo: perspicacia
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

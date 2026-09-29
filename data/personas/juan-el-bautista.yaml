@@ -1,0 +1,97 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juan-el-bautista
+nombre: Juan el Bautista
+nombres:
+- nombre: Juan el Bautista
+- nombre: Juan
+desambiguacion: Hijo del sacerdote Zacarías y precursor de Jesús; no es el apóstol Juan, hijo de Zebedeo.
+no_confundir_con:
+- juan-apostol
+- juan-marcos
+- juan-gobernante-judio
+fecha:
+  desde: 29
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 29-32 e.c.
+resumen: Hijo del sacerdote Zacarías y de Elisabet, unos seis meses mayor que Jesús. Empezó a predicar hacia abril de 29,
+  bautizó a Jesús y lo presentó como el Cordero de Dios. Herodes Antipas lo encarceló y lo mandó decapitar.
+razon: Perspicacia «Juan» (núm. 1) da la familia, el ministerio, la cárcel y la muerte; la nota de Lu 3:1 fecha el comienzo.
+  La fecha de la ficha va de ese comienzo a su muerte.
+fuentes:
+- it-juan
+- lucas-3
+- it-herodias
+- mateo-3
+- mateo-4
+- mateo-11
+- mateo-14
+- mateo-17
+- mateo-21
+- marcos-1
+- marcos-6
+- marcos-11
+- lucas-1
+- lucas-7
+- lucas-9
+- lucas-11
+- lucas-20
+- juan-1
+- juan-3
+- juan-10
+relaciones:
+- tipo: pariente
+  persona: zacarias-padre-de-juan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-1
+  - lucas-3
+  razon: Lu 1:13, 57-63.
+  estado: verificado
+- tipo: pariente
+  persona: elisabet
+  relacion: madre
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:13, 57.
+  estado: verificado
+- tipo: nacio_en
+  lugar: judea
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-juan
+  razon: 'Lu 1:39, 65: sus padres vivían en la región montañosa de Judea; Perspicacia (núm. 1) dice que allí pasó sus primeros
+    años.'
+  estado: verificado
+- tipo: murio_en
+  lugar: tiberiades
+  deducido: true
+  fuentes:
+  - mateo-14
+  - tnm-a7-d
+  - marcos-6
+  razon: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-juda
+  deducido: true
+  fuentes:
+  - lucas-3
+  razon: Lu 3:2 dice que estaba en el desierto cuando recibió el mensaje; la nota de estudio lo identifica con el de Judea.
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Juan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
+  tipo: perspicacia
+- titulo: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  tipo: biblia
+perspicacia: 1200002489#1
+consultado: '2026-09-29'
+estado: verificado

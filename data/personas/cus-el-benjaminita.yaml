@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cus-el-benjaminita
+nombre: Cus
+nombres:
+- nombre: Cus
+perspicacia: 1200001089#3
+desambiguacion: El benjaminita del encabezamiento del Salmo 7; no Cus hijo de Cam ni la tierra de Cus.
+no_confundir_con:
+- cus-hijo-de-cam
+resumen: 'Benjaminita por cuyas palabras David compuso el Salmo 7. No se sabe nada más: pudo ser un enemigo de David en la
+  corte de Saúl, o un nombre que apunta a Simeí.'
+razon: Perspicacia «Cus», núm. 3; Sal 7, encabezamiento.
+fuentes:
+- it-cus
+- salmos-7
+enlaces:
+- titulo: 'Perspicacia: «Cus»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001089
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - salmos-7
+  razon: 'Sal 7, encabezamiento: lo llama benjaminita, de la tribu que desciende de Benjamín.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

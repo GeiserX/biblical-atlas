@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: motin-de-efeso
+titulo: El motín de los plateros en Éfeso
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1923
+lugares:
+- efeso
+personas:
+- pablo
+- demetrio-el-platero
+- gayo-de-macedonia
+- aristarco
+- alejandro-de-efeso
+pasajes:
+- Hch 19:23-41
+resumen: Demetrio junta a los artesanos contra Pablo por el daño al culto de Ártemis. La multitud arrastra a Gayo
+  y Aristarco al teatro hasta que el registrador de la ciudad la calma.
+razon: Perspicacia «Demetrio» (núm. 1) lo sitúa al final de la estancia de c. 53-55; «Gayo» (núm. 1) y «Aristarco».
+fuentes:
+- it-demetrio
+- it-gayo
+- it-aristarco
+- hch-19
+- it-alejandro
+- bt-20
+buscar: Demetrio platero Éfeso
+historial:
+- fecha: '2026-09-29'
+  cambio: Sale 2Co 1:8. La nota de estudio, más reciente que Perspicacia «Asia», solo ve posible que el peligro de Asia fuera
+    este motín; ese peligro pasa a su propio suceso.
+  fuente: 2-corintios-1
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: isacar
+nombre: Isacar
+nombres:
+- nombre: Isacar
+  nota: Territorio de la tribu que descendía de Isacar, hijo de Jacob.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Valle de Jezreel, entre el Tabor, Meguidó y Bet-Seán
+  geometria:
+    tipo: zona
+    lat: 32.591713
+    lon: 35.360139
+    radio_km: 20
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-isacar
+  - openbible-geo
+  razon: 'Perspicacia: su parte era sobre todo el valle de Jezreel, con el Tabor en el norte, Meguidó al suroeste y Bet-Seán
+    al sureste.'
+  nota: 'Centro calculado por nosotros: media de los puntos de OpenBible de Meguidó, Bet-Seán y el monte Tabor. El radio de
+    20 km también es nuestro.'
+  coord_fuente: calculo
+- nombre: Valle de Jezreel, entre Jezreel y el Tabor
+  geometria:
+    tipo: zona
+    lat: 32.622052
+    lon: 35.360435
+    radio_km: 20
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-isacar
+  - openbible-geo
+  razon: Perspicacia dice que su herencia era sobre todo el valle de Jezreel, con el Tabor al norte y el Jordán al este.
+  coord_fuente: calculo
+  nota: 'Centro calculado por nosotros: punto medio entre Jezreel y el monte Tabor de OpenBible. El radio también es nuestro.'
+no_afirmamos:
+- No trazamos sus fronteras; la zona del mapa es solo una referencia dentro del territorio.
+resumen: Territorio de la tribu de Isacar, casi todo en el fértil valle de Jezreel. Tenía a Zabulón y Neftalí al norte, el
+  Jordán al este y Manasés al sur.
+razon: Perspicacia «Isacar», núm. 2, párr. 4 y 7; Jos 17:10, 11. Zona calculada por nosotros.
+fuentes:
+- it-isacar
+- openbible-geo
+- josue-17
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Isacar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002230
+  tipo: perspicacia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

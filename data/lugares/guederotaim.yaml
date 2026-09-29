@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guederotaim
+nombre: Guederotaim
+nombres:
+- nombre: Guederotaim
+tipo: ciudad
+lat: 31.688903
+lon: 34.996117
+precision: incierto
+coord_fuente: openbible:ac36af4
+coord_url: https://www.openbible.info/geo/ancient/ac36af4/gederothaim
+coord_nota: 'Khirbet Judraya: OpenBible la iguala en primer lugar con Guederá. Perspicacia no la sitúa.'
+resumen: Ciudad de la Sefelá cuyo nombre significa «dos cercados de piedra». La Septuaginta lee «y sus rediles», los de Guederá,
+  lo que deja las ciudades en catorce, como dice el texto.
+razon: 'Perspicacia «Guederotaim»; Jos 15:36 y su nota. Otros leen «Guederá o Guederotaim». OpenBible: solo el punto.'
+fuentes:
+- it-guederotaim
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Guederotaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001638
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

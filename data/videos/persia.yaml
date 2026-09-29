@@ -1,43 +1,43 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: persia
-generated_on: "2026-09-28"
+lugar: persia
+generado: "2026-09-28"
 videos:
   - docid: "pub-co-r20_2_VIDEO"
-    title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    titulo: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_2_VIDEO&appLanguage=S"
-    published: "2020-07-06"
-    hits: 8
-    terms:
+    publicado: "2020-07-06"
+    menciones: 8
+    terminos:
       "Persia": 7
       "persas": 1
   - docid: "pub-co-r21_11_VIDEO"
-    title: "Domingo tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_11_VIDEO&appLanguage=S"
-    published: "2021-08-16"
-    hits: 6
-    terms:
+    publicado: "2021-08-16"
+    menciones: 6
+    terminos:
       "Persia": 1
       "persas": 5
   - docid: "pub-dlf_2_VIDEO"
-    title: "Daniel, un hombre de fe (parte 2)"
+    titulo: "Daniel, un hombre de fe (parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/daniel-hombre-de-fe/parte-2/"
-    published: "2021-08-23"
-    hits: 6
-    terms:
+    publicado: "2021-08-23"
+    menciones: 6
+    terminos:
       "Persia": 1
       "persas": 5
   - docid: "pub-co-r20_11_VIDEO"
-    title: "Domingo tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    titulo: "Domingo tarde (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_11_VIDEO&appLanguage=S"
-    published: "2020-08-24"
-    hits: 2
-    terms:
+    publicado: "2020-08-24"
+    menciones: 2
+    terminos:
       "Persia": 2
   - docid: "pub-jjs_2_VIDEO"
-    title: "Nehemías: La felicidad que viene de Jehová es nuestra fortaleza (parte 2)"
+    titulo: "Nehemías: La felicidad que viene de Jehová es nuestra fortaleza (parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/nehemias-felicidad-viene-jehova/pelicula-parte-2/"
-    published: "2020-09-28"
-    hits: 2
-    terms:
+    publicado: "2020-09-28"
+    menciones: 2
+    terminos:
       "Persia": 2

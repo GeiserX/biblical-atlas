@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-cedron
+nombre: Valle de Cedrón
+nombres:
+- nombre: Valle de Cedrón
+- nombre: Nahal Qidron
+  nota: Nombre actual.
+tipo: valle
+lat: 31.780278
+lon: 35.24
+precision: zona
+coord_fuente: openbible:a553110
+coord_url: https://www.openbible.info/geo/ancient/a553110/kidron
+coord_nota: Punto representativo del valle.
+resumen: Valle profundo y casi siempre seco que separa Jerusalén del monte de los Olivos. Jesús lo cruzó con sus
+  apóstoles la noche del 14 de nisán para ir a Getsemaní.
+razon: 'Perspicacia «Cedrón, Valle torrencial de» (párr. 2 y 4) y la nota de Jn 18:1. La coordenada es de OpenBible:
+  solo tomamos el punto.'
+fuentes:
+- it-cedron
+- juan-18
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Cedrón, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002606
+  tipo: perspicacia
+- titulo: Juan 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/18
+  tipo: biblia
+buscar: Valle de Cedrón
+consultado: '2026-09-28'
+estado: verificado

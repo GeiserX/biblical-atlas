@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bene-berac
+nombre: Bene-Berac
+nombres:
+- nombre: Bene-Berac
+- nombre: Bene-beraq
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.036675
+lon: 34.827669
+precision: punto
+coord_fuente: openbible:ae83378
+coord_url: https://www.openbible.info/geo/ancient/ae83378/bene-berak
+coord_nota: Punto de OpenBible en el-Kheiriyeh (Horvat Bene-beraq).
+resumen: Ciudad de Dan, unos 8 km al ESE de Jope, cuyo nombre sigue en Ibn Ibraq. Senaquerib la nombra entre las que asedió.
+razon: 'Perspicacia «Bene-beraq»; Jos 19:45. OpenBible: solo el punto.'
+fuentes:
+- it-bene-beraq
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Bene-beraq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000634
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

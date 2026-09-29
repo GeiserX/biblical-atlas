@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: carta
+nombre: Cartá
+nombres:
+- nombre: Cartá
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: En el territorio de Zabulón
+  geometria:
+    tipo: zona
+    lat: 32.738056
+    lon: 35.319722
+    radio_km: 15
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-qarta
+  - it-zabulon
+  razon: Perspicacia solo dice que Zabulón la cedió a los meraritas.
+  nota: Centro y radio de la zona de Zabulón de su ficha (Gat-Héfer, 15 km). La primera identificación de OpenBible la lleva
+    a Cartán, en Neftalí, así que no la tomamos.
+  coord_fuente: calculo
+- nombre: Qatat (Jos 19:15)
+  geometria:
+    tipo: punto
+    lat: 32.62558
+    lon: 35.03215
+  estado: alternativa
+  fuentes:
+  - it-qarta
+  - openbible-geo
+  razon: Perspicacia dice que hay quienes la identifican con Qatat. El punto es el de Qatat en OpenBible.
+  coord_fuente: openbible:a6536c9
+  coord_url: https://www.openbible.info/geo/ancient/a6536c9/kattath
+resumen: Ciudad que Zabulón cedió a los levitas meraritas. Hay quien la identifica con la Qatat de Josué 19:15. No se sabe
+  dónde estaba.
+razon: 'Perspicacia «Qartá»; Jos 21:34. Sin sitio en jw.org: zona en Zabulón y la propuesta de Qatat.'
+fuentes:
+- it-qarta
+- it-zabulon
+- openbible-geo
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Qartá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002576
+  tipo: perspicacia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

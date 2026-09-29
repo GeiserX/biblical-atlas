@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matatias-hijo-de-semein
+nombre: Matatías
+nombres:
+- nombre: Matatías
+perspicacia: 1200002933#4
+desambiguacion: Matatías hijo de Semeín (Lu 3:26); no Matatías hijo de Amós (Lu 3:25).
+no_confundir_con:
+- matatias-hijo-de-amos
+resumen: Hombre de Judá que vivió después de Zorobabel y figura en la línea de María. Lucas lo llama hijo de Semeín.
+razon: Perspicacia «Matatías», núm. 4; Lu 3:26.
+fuentes:
+- it-matatias
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Matatías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002933
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: semein
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-3
+  razon: 'Lu 3:26: Matatías, hijo de Semeín.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

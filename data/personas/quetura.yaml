@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quetura
+nombre: Queturá
+nombres:
+- nombre: Queturá
+perspicacia: '1200002598'
+resumen: Esposa de Abrahán después de la muerte de Sara, en la categoría de concubina. Le dio seis hijos, de los que salieron
+  varios pueblos del norte de Arabia.
+razon: Perspicacia «Queturá», párr. 1 a 3; Gé 25:1-4.
+fuentes:
+- it-quetura
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Queturá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002598
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

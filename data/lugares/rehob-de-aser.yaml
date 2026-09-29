@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rehob-de-aser
+nombre: Rehob
+nombres:
+- nombre: Rehob
+  nota: Rehob de Aser (Perspicacia, núm. 4), la de Jos 19:30; no la del norte de Nú 13:21 ni, quizá, la de Jos 19:28.
+tipo: ciudad
+lat: 32.901389
+lon: 35.169444
+precision: incierto
+coord_fuente: openbible:ab71288
+coord_url: https://www.openbible.info/geo/ancient/ab71288/rehob-3
+coord_nota: Punto de OpenBible en Tell el-Bir el-Gharbi (Tel Bira), el sitio que Perspicacia da para los textos que no son
+  Jos 19:28.
+resumen: Ciudad de Aser que se dio a los levitas guersonitas; Jue 1:31 dice que Aser no echó a sus cananeos. Suele situarse
+  en Tel Bira, unos 10 km al ESE de Akkó.
+razon: 'Perspicacia «Rehob», núm. 4; Jos 19:30; 21:31; Jue 1:31. Parece que la Rehob de Jos 19:28 era otra, con ficha aparte.
+  OpenBible: solo el punto.'
+fuentes:
+- it-rehob
+- openbible-geo
+- josue-19
+- josue-21
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Rehob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003679
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

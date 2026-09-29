@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: viuda-persistente-y-fariseo-y-cobrador
+titulo: Parábolas de la viuda que no se rinde y del fariseo y el cobrador de impuestos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- galilea
+- region-de-samaria
+personas:
+- jesus
+pasajes:
+- Lu 18:1-14
+resumen: Con la parábola de la viuda que insiste ante un juez, Jesús anima a orar sin rendirse; con la del fariseo
+  y el cobrador de impuestos, enseña a ser humildes.
+razon: 'A7-F da la época y dice «Samaria o Galilea» sin decidir, así que no sitúa a nadie; jy cap. 94. Año: Perspicacia «Lázaro»
+  (párr. 7) pone esa resurrección a principios de 33, y A7-G Betania el 8 de nisán.'
+fuentes:
+- tnm-a7-f
+- lucas-18
+- jy-cap-94
+- it-lazaro
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 85
+buscar: La viuda persistente
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón dice ahora que A7-F no decide entre Samaria y Galilea, y por eso el suceso no sitúa a nadie.
+  fuente: lucas-18
+- fecha: '2026-09-29'
+  cambio: A7-F dice «Samaria o Galilea» sin decidir, así que el suceso ya no pone a Jesús en Galilea.
+  fuente: lucas-18
+presentes: []
+consultado: '2026-09-29'
+estado: verificado

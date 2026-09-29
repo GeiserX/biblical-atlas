@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-anot
+nombre: Bet-Anot
+nombres:
+- nombre: Bet-Anot
+tipo: ciudad
+lat: 31.56209
+lon: 35.12622
+precision: punto
+coord_fuente: openbible:aa2fea1
+coord_url: https://www.openbible.info/geo/ancient/aa2fea1/beth-anoth
+resumen: Ciudad de la montaña de Judá, en Khirbet Beit ʽAnun, unos 6 km al nornoreste de Hebrón. Su nombre quiere decir «casa
+  de respuestas».
+razon: 'Perspicacia «Bet-anot»; Jos 15:59. OpenBible: solo el punto.'
+fuentes:
+- it-bet-anot
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Bet-anot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000669
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

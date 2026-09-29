@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: poncio-pilato
+nombre: Poncio Pilato
+nombres:
+- nombre: Poncio Pilato
+- nombre: Pilato
+fecha:
+  desde: 26
+  hasta: 36
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: De 26 a c. 36 e.c.
+no_afirmamos:
+- 'Cómo y cuándo murió Pilato: la historia no da datos fiables de su final.'
+resumen: Gobernador romano de Judea desde 26 e.c., nombrado por Tiberio. Vio que Jesús era inocente, pero cedió
+  ante la multitud y lo mandó ejecutar en un madero.
+razon: Perspicacia «Pilato» (párr. 1 y 8-11) y la nota de Mt 27:2 dan el nombramiento en 26 y unos diez años de
+  gobierno.
+fuentes:
+- it-pilato
+- mateo-27
+- juan-19
+- marcos-15
+- lucas-3
+- lucas-13
+- lucas-23
+- juan-18
+enlaces:
+- titulo: 'Perspicacia: «Pilato»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003485
+  tipo: perspicacia
+- titulo: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  tipo: biblia
+buscar: Poncio Pilato
+perspicacia: '1200003485'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: cesarea
+  deducido: true
+  fuentes:
+  - mateo-27
+  - it-pilato
+  razon: La nota de Mt 27:27 dice que residía habitualmente en Cesarea y subía a Jerusalén en las fiestas.
+  estado: verificado

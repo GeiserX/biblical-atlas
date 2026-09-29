@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ecron
+nombre: Ecrón
+nombres:
+- nombre: Ecrón
+- nombre: Eqrón
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 31.7775
+lon: 34.851944
+precision: incierto
+coord_fuente: openbible:a3fc47a
+coord_url: https://www.openbible.info/geo/ancient/a3fc47a/ekron
+coord_nota: Punto de OpenBible en Tel Miqne, el sitio con que Perspicacia suele identificarla, aunque dice que no es seguro.
+resumen: Ciudad filistea, sede del señor filisteo más al norte. Josué no la tomó; en el reparto quedó en el límite entre Judá
+  y Dan, dentro de Judá, y cambió de dueño muchas veces.
+razon: 'Perspicacia «Eqrón», párr. 1 y 2; Jos 13:2, 3. OpenBible: solo el punto.'
+fuentes:
+- it-eqron
+- openbible-geo
+- josue-13
+- josue-15
+- josue-19
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Eqrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001270
+  tipo: perspicacia
+- titulo: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  tipo: biblia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

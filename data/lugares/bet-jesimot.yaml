@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-jesimot
+nombre: Bet-Jesimot
+nombres:
+- nombre: Bet-Jesimot
+  nota: Significa «casa de las desolaciones» (Perspicacia).
+tipo: ciudad
+lat: 31.782551
+lon: 35.62125
+precision: punto
+coord_fuente: openbible:a30f37b
+coord_url: https://www.openbible.info/geo/ancient/a30f37b/beth-jeshimoth
+coord_nota: Punto de OpenBible en Tell el-ʽAzeimeh, con que hoy se identifica, cerca del extremo nordeste del mar Muerto.
+resumen: Extremo sur del último campamento de Israel en las llanuras de Moab. Era del rey amorreo Sehón y después pasó a la
+  tribu de Rubén.
+razon: 'Perspicacia «Bet-jesimot»; Nú 33:48, 49. OpenBible: solo el punto.'
+fuentes:
+- it-bet-jesimot
+- openbible-geo
+- numeros-33
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Bet-jesimot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000692
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

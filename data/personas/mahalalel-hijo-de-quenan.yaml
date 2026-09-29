@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahalalel-hijo-de-quenan
+nombre: Mahalalel
+nombres:
+- nombre: Mahalalel
+- nombre: Mahalaleel
+  nota: Forma del nombre en la genealogía de Jesús que da Lucas, según Perspicacia.
+perspicacia: 1200002839#1
+desambiguacion: Mahalalel hijo de Quenán, anterior al Diluvio; no el descendiente de Judá por Pérez, antepasado de Ataya.
+resumen: Hijo de Quenán, de la línea de Set por Enós. A los 65 años fue padre de Jared; después tuvo más hijos e hijas y murió
+  con 895 años.
+razon: Perspicacia «Mahalalel», núm. 1; Gé 5:12-17.
+fuentes:
+- it-mahalalel
+- genesis-5
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Mahalalel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002839
+  tipo: perspicacia
+- titulo: Génesis 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/5
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: quenan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-5
+  - it-mahalalel
+  - lucas-3
+  razon: 'Gé 5:12: Quenán tuvo a Mahalalel con 70 años.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

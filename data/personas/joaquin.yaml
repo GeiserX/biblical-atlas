@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joaquin
+nombre: Joaquín
+nombres:
+- nombre: Joaquín
+- nombre: Jeconías
+  nota: Variante del nombre (Est 2:6).
+- nombre: Conías
+  nota: Forma abreviada (Jer 37:1).
+fecha:
+  desde: -617
+  hasta: -616
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 618-617 a.e.c.
+resumen: Hijo de Jehoiaquim, rey a los dieciocho años. A los tres meses y diez días se rindió y fue llevado a Babilonia. Hacia
+  580 Evil-Merodac lo sacó de la cárcel.
+razon: Perspicacia «Joaquín», párr. 1, 2 y 5; 2Re 24:8-15 y 25:27-30.
+fuentes:
+- it-joaquin
+- 2-reyes-24
+- 2-reyes-25
+- tnm-a6-b
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Joaquín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002375
+  tipo: perspicacia
+- titulo: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jehoiaquim
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-joaquin
+  - 2-reyes-24
+  razon: Hijo de Jehoiaquim y Nehustá (2Re 24:6, 8).
+  estado: verificado
+- tipo: sucede_a
+  persona: jehoiaquim
+  deducido: false
+  fuentes:
+  - it-joaquin
+  - 2-reyes-24
+  razon: Reinó al morir su padre (2Re 24:6).
+  estado: verificado
+- tipo: vivio_en
+  lugar: babilonia
+  deducido: false
+  fuentes:
+  - it-joaquin
+  - 2-reyes-24
+  razon: Pasó el resto de su vida desterrado en Babilonia (2Re 24:15; 25:27-30).
+  estado: verificado
+- tipo: pariente
+  persona: josias
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:11 hace a Josías padre de Jeconías; la nota explica que era su abuelo, por medio de Jehoiaquim.
+  estado: verificado
+perspicacia: '1200002375'
+consultado: '2026-09-29'
+estado: verificado

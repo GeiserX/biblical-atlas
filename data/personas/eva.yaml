@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eva
+nombre: Eva
+nombres:
+- nombre: Eva
+fecha:
+  desde: -4025
+  hasta: -3895
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 4026-3896 a.e.c. (de su creación al nacimiento de Set)
+resumen: Primera mujer, hecha por Dios de una costilla de Adán para ser su esposa. La serpiente la engañó y comió del fruto
+  prohibido. Fue madre de Caín, Abel, Set y otros hijos.
+razon: 'Perspicacia «Eva», párr. 2 a 4 y 8; Gé 2:21-23, 3:20 y 4:1, 2, 25. El estudio 3 pone la creación de Adán en 4026
+  a.e.c. y el nacimiento de Set, al que Eva puso nombre (Gé 4:25), en 3896.'
+fuentes:
+- si-3
+- it-eva
+- genesis-2
+- genesis-4
+- genesis-1
+- genesis-3
+enlaces:
+- titulo: 'Perspicacia: «Eva»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001450
+  tipo: perspicacia
+- titulo: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: adan
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-eva
+  - genesis-2
+  razon: 'Perspicacia «Eva», párr. 3: Dios la formó para Adán, que la aceptó como esposa (Gé 2:22-24).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: eden
+  deducido: false
+  fuentes:
+  - it-eva
+  - genesis-2
+  - genesis-3
+  razon: 'Perspicacia «Eva», párr. 6: Dios los sacó a los dos del jardín de Edén (Gé 3:23, 24).'
+  estado: verificado
+perspicacia: '1200001450'
+consultado: '2026-09-29'
+estado: verificado

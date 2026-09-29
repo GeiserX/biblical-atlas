@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: fundamento-del-templo-536
+titulo: Se ponen los cimientos del templo
+fecha:
+  desde: -535
+  hasta: -535
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: iyar de 536 a.e.c.
+  detalle:
+    mes: iyar
+lugares:
+- jerusalen
+personas:
+- zorobabel
+- josue-sumo-sacerdote
+pasajes:
+- Esd 3:8-13
+resumen: En el segundo mes del segundo año tras volver, se colocaron los cimientos del templo entre cantos de alabanza.
+  Algunos ancianos que habían visto el templo anterior lloraron.
+razon: 'Perspicacia «Zorobabel»: la obra empezó en el segundo mes (ziv o iyar) de 536; estudio 3, tabla de sucesos; Esd
+  3:8-13.'
+fuentes:
+- it-zorobabel
+- si-3
+- esdras-3
+enlaces:
+- titulo: 'Perspicacia: «Zorobabel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004716
+  tipo: perspicacia
+- titulo: Esdras 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

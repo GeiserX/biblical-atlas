@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hija-de-jairo
+titulo: Cura a una mujer y resucita a la hija de Jairo
+fecha:
+  desde: 31
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 o 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 45
+lugares:
+- capernaum
+personas:
+- jesus
+- jairo
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+pasajes:
+- Mt 9:18-26
+- Mr 5:21-43
+- Lu 8:40-56
+resumen: De camino a casa de Jairo, una mujer enferma desde hacía 12 años se cura al tocar su manto. La niña muere antes de
+  que lleguen, y Jesús la resucita ante sus padres y tres apóstoles.
+razon: 'A7-D, fila 4: probablemente Capernaúm. Perspicacia «Jairo» (párr. 3) fecha el suceso a finales de 31 o principios
+  de 32.'
+fuentes:
+- tnm-a7-d
+- mateo-9
+- marcos-5
+- lucas-8
+- it-jairo
+- jy-cap-46
+- jy-cap-47
+consultado: '2026-09-28'
+estado: verificado

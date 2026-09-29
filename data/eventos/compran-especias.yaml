@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: compran-especias
+titulo: Las mujeres compran especias
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 16 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 16
+lugares:
+- jerusalen
+personas:
+- jesus
+- maria-magdalena
+- maria-esposa-de-clopas
+- salome-discipula
+pasajes:
+- Mr 16:1
+resumen: Terminado el sábado, tres mujeres, entre ellas María Magdalena y la madre de Santiago, compran especias
+  para el cuerpo de Jesús.
+razon: B12-B pone la compra al anochecer con que empieza el 16 de nisán; la nota de Mr 16:1 explica por qué esperaron.
+fuentes:
+- tnm-b12-b
+- marcos-16
+- jy-cap-133
+buscar: Las mujeres compran especias
+consultado: '2026-09-29'
+estado: verificado

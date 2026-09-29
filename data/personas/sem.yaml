@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sem
+nombre: Sem
+nombres:
+- nombre: Sem
+fecha:
+  desde: -2467
+  hasta: -1867
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2468-1868 a.e.c.
+resumen: Hijo de Noé, ya casado antes del Diluvio y superviviente del arca. Noé bendijo a Jehová como Dios de Sem, y de
+  su hijo Arpaksad desciende Abrahán. Murió a los 600 años.
+razon: Perspicacia «Sem», párr. 4, 6 y 7. El estudio 3 da su nacimiento en 2468 y su muerte en 1868 a.e.c. Gé 11:10, 11.
+fuentes:
+- it-sem
+- si-3
+- genesis-11
+- genesis-9
+- genesis-10
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Sem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003997
+  tipo: perspicacia
+- titulo: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  tipo: biblia
+no_afirmamos:
+- 'Que Sem fuera Melquisedec: es una opinión antigua que la Biblia no confirma.'
+relaciones:
+- tipo: pariente
+  persona: noe
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-sem
+  - genesis-7
+  - genesis-5
+  - genesis-9
+  - genesis-10
+  - lucas-3
+  razon: 'Perspicacia «Sem», párr. 2: fue hijo de Noé, uno de los tres (Gé 6:10; 7:13).'
+  estado: verificado
+- tipo: pariente
+  persona: cam
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-9
+  razon: 'Gé 9:22, 23: Cam avisa a sus dos hermanos, Sem y Jafet.'
+  estado: verificado
+- tipo: pariente
+  persona: jafet
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-9
+  - genesis-10
+  razon: 'Gé 9:22, 23: Cam avisa a sus dos hermanos, Sem y Jafet, y ellos cubren a su padre.'
+  estado: verificado
+perspicacia: '1200003997'
+consultado: '2026-09-29'
+estado: verificado

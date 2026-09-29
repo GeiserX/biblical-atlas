@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: codornices-en-quibrot-hataava
+titulo: Codornices y plaga en Quibrot-Hataavá
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 11031
+lugares:
+- quibrot-hataava
+personas: []
+pasajes:
+- Nú 11:31-34
+- Sl 78:26-31
+- Sl 106:14, 15
+- Nú 33:16
+- Dt 9:22
+- 1Co 10:6
+resumen: Un viento trae codornices del mar y las deja caer alrededor del campamento. El pueblo pasa dos días y una noche juntándolas,
+  pero Jehová lo castiga con una gran matanza y allí entierran a los codiciosos.
+razon: 'Perspicacia «Codorniz»: cerca de un año después de las primeras codornices del desierto de Sin, probablemente en primavera;
+  «Quibrot-hataavá» explica el nombre. Año 1512 a.e.c., el segundo año tras el éxodo de 1513 a.e.c. (estudio 3).'
+fuentes:
+- numeros-11
+- it-codorniz
+- it-quibrot-hataava
+- si-3
+- it-qades
+- 1-corintios-10
+enlaces:
+- titulo: Números 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

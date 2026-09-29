@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: debora-profetisa
+nombre: Débora
+nombres:
+- nombre: Débora
+desambiguacion: Débora la profetisa, esposa de Lapidot; no Débora, la nodriza de Rebeca.
+resumen: Profetisa que juzgaba a Israel bajo una palmera entre Ramá y Betel. Llamó a Barac para vencer al ejército de Jabín,
+  que mandaba Sísara, y cantó con él la victoria en una canción que ella compuso, al menos en parte.
+razon: Perspicacia «Débora», núm. 2, párr. 3 a 5; Jue 4:4-9 y 5:1-31.
+fuentes:
+- it-debora
+- jueces-4
+- jueces-5
+enlaces:
+- titulo: 'Perspicacia: «Débora»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001138
+  tipo: perspicacia
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
+perspicacia: 1200001138#2
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El canto no lo compuso con Barac: lo cantaron juntos, y la primera persona de Jue 5:7 muestra que lo compuso ella,
+    al menos en parte (Perspicacia «Débora», núm. 2).'
+  fuente: jueces-5
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- debora-nodriza-de-rebeca
+relaciones:
+- tipo: vivio_en
+  lugar: region-montanosa-de-efrain
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-debora
+  razon: 'Jue 4:5: juzgaba a los israelitas junto a una palmera que llevaba su nombre, en los montes de Efraín, entre Ramá
+    y Betel.'
+  estado: verificado

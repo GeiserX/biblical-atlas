@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-prospera-con-el-rebano-de-laban
+titulo: Jacob pacta su salario con Labán y se enriquece
+fecha:
+  desde: -1766
+  hasta: -1760
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1767-1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 30025
+lugares:
+- haran
+personas:
+- jacob
+- laban
+pasajes:
+- Gé 30:25-43
+resumen: Tras nacer José, Jacob pide irse. Labán le ruega que se quede, y Jacob acepta como salario las crías manchadas o
+  rayadas. En seis años se hace rico en rebaños, siervos, camellos y burros.
+razon: Del nacimiento de José (1767) a la vuelta a Canaán (1761), ambos del estudio 3; Gé 31:41 cuenta seis años por el rebaño.
+  Perspicacia «Jacob», párr. 14 a 18.
+fuentes:
+- si-3
+- it-jacob
+- it-laban
+- genesis-30
+- genesis-31
+enlaces:
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

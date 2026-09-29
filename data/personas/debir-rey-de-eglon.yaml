@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: debir-rey-de-eglon
+nombre: Debir
+nombres:
+- nombre: Debir
+perspicacia: 1200001137#1
+desambiguacion: Debir, rey de Eglón (núm. 1 de Perspicacia); no la ciudad de Debir que Josué tomó después (Jos 10:38, 39).
+resumen: Rey de Eglón. Se alió con el rey de Jerusalén contra Gabaón; tras la derrota, Israel lo encerró con sus cuatro aliados
+  en la cueva de Maquedá, y más tarde Josué los ejecutó.
+razon: Perspicacia «Debir», núm. 1; Jos 10:3-5, 16-27.
+fuentes:
+- it-debir
+- josue-10
+enlaces:
+- titulo: 'Perspicacia: «Debir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001137
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: eglon
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-debir
+  razon: Jos 10:3 lo llama rey de Eglón.
+  estado: verificado
+- tipo: acompana
+  persona: adoni-zedec
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-debir
+  razon: 'Jos 10:3-5: respondió a la llamada de Adoni-Zédec y se alió con él contra Gabaón.'
+  estado: verificado
+- tipo: murio_en
+  lugar: maqueda
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-debir
+  - it-maqueda
+  razon: 'Jos 10:16-27: sacado de la cueva de Maquedá, junto al campamento, Josué lo mató y lo echó en ella.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: festo-sube-a-jerusalen
+titulo: Festo sube a Jerusalén y los judíos le piden a Pablo
+fecha:
+  desde: 58
+  hasta: 58
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 58 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2501
+lugares:
+- jerusalen
+- cesarea
+personas:
+- festo
+- pablo
+presentes:
+- festo
+pasajes:
+- Hch 25:1-5
+resumen: A los tres días de tomar el cargo, Festo va de Cesarea a Jerusalén. Los jefes de los judíos acusan a Pablo y piden
+  que lo traigan, con idea de matarlo en el camino; Festo les manda ir a Cesarea.
+razon: Perspicacia «Festo» (párr. 1 y 2) da 58 como el año más probable de su llegada y cuenta este viaje; «Testimonio completo»,
+  cap. 25, párr. 3.
+fuentes:
+- hch-25
+- it-festo
+- bt-25
+- nota-hechos-25
+enlaces:
+- titulo: Hechos 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

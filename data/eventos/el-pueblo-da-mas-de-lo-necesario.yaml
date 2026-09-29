@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-pueblo-da-mas-de-lo-necesario
+titulo: El pueblo da más de lo necesario y Moisés lo detiene
+fecha:
+  desde: -1512
+  hasta: -1511
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+orden_relato:
+  serie: exodo
+  orden: 36003
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- bezalel-hijo-de-uri
+- oholiab
+pasajes:
+- Éx 36:3-7
+resumen: Moisés entrega lo reunido a Bezalel, Oholiab y los artesanos, pero la gente sigue trayendo ofrendas cada mañana.
+  Avisado por los obreros de que sobra material, manda pregonar en el campamento que nadie traiga más.
+razon: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. Perspicacia «Bezalel», núm. 1.
+fuentes:
+- exodo-36
+- si-3
+- it-bezalel
+enlaces:
+- titulo: Éxodo 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

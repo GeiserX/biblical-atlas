@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abimelec-gana-el-apoyo-de-siquem
+titulo: Abimélec gana el apoyo de los líderes de Siquem
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 9001
+lugares:
+- siquem
+personas:
+- abimelec-hijo-de-gedeon
+pasajes:
+- Jue 9:1-4
+resumen: Abimélec pide a la familia de su madre que convenza a los líderes de Siquem de preferirlo a él antes que a los setenta
+  hijos de Jerubaal. Le dan plata del templo de Baal-Berit y contrata a gente sin escrúpulos.
+razon: 'Perspicacia «Abimélec», núm. 4, lo pone tras morir Gedeón. Desde Otniel el libro va en orden (Perspicacia «Jueces,
+  Libro de»): después de Josué, muerto hacia 1450 a.e.c. (estudio 3), y antes de Jefté, hacia 1173 a.e.c. (Perspicacia «Jefté»).'
+fuentes:
+- jueces-9
+- it-abimelec
+- it-baal-berit
+- si-3
+- it-jueces
+- it-jefte
+enlaces:
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

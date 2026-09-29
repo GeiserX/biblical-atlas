@@ -1,100 +1,100 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: tesalonica
-generated_on: "2026-09-28"
+lugar: tesalonica
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-124_1_VIDEO"
-    title: "JW Broadcasting: Abril de 2025"
+    titulo: "JW Broadcasting: Abril de 2025"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
-    published: "2025-04-07"
-    hits: 13
-    terms:
+    publicado: "2025-04-07"
+    menciones: 13
+    terminos:
       "Tesalónica": 10
       "tesalonicenses": 3
   - docid: "pub-jwb-124_3_VIDEO"
-    title: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
-    published: "2025-04-21"
-    hits: 13
-    terms:
+    publicado: "2025-04-21"
+    menciones: 13
+    terminos:
       "Tesalónica": 10
       "tesalonicenses": 3
   - docid: "pub-jwb-097_13_VIDEO"
-    title: "John Ekrann: Seamos amables y cariñosos (1 Tes. 2:7)"
+    titulo: "John Ekrann: Seamos amables y cariñosos (1 Tes. 2:7)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-097_13_VIDEO&appLanguage=S"
-    published: "2022-02-25"
-    hits: 7
-    terms:
+    publicado: "2022-02-25"
+    menciones: 7
+    terminos:
       "Tesalónica": 1
       "tesalonicenses": 6
   - docid: "pub-jwbvod24_41_VIDEO"
-    title: "Harold Corkern: Demostrémosles a nuestros hermanos que los queremos (1 Tes. 2:8)"
+    titulo: "Harold Corkern: Demostrémosles a nuestros hermanos que los queremos (1 Tes. 2:8)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_41_VIDEO&appLanguage=S"
-    published: "2024-10-25"
-    hits: 7
-    terms:
+    publicado: "2024-10-25"
+    menciones: 7
+    terminos:
       "Tesalónica": 1
       "tesalonicenses": 6
   - docid: "pub-co-r21_137_VIDEO"
-    title: "David Splane: “Luchen con todas sus fuerzas por la fe”"
+    titulo: "David Splane: “Luchen con todas sus fuerzas por la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_137_VIDEO&appLanguage=S"
-    published: "2021-09-13"
-    hits: 5
-    terms:
+    publicado: "2021-09-13"
+    menciones: 5
+    terminos:
       "Tesalónica": 1
       "tesalonicenses": 4
   - docid: "pub-co-r21_8_VIDEO"
-    title: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_8_VIDEO&appLanguage=S"
-    published: "2021-07-26"
-    hits: 5
-    terms:
+    publicado: "2021-07-26"
+    menciones: 5
+    terminos:
       "Tesalónica": 1
       "tesalonicenses": 4
   - docid: "pub-jwb-083_1_VIDEO"
-    title: "JW Broadcasting: Octubre de 2021"
+    titulo: "JW Broadcasting: Octubre de 2021"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-083_1_VIDEO&appLanguage=S"
-    published: "2021-10-04"
-    hits: 4
-    terms:
+    publicado: "2021-10-04"
+    menciones: 4
+    terminos:
       "Tesalónica": 2
       "tesalonicenses": 2
   - docid: "pub-jwb-083_6_VIDEO"
-    title: "William Turner: Consuele y fortalezca a los hermanos (2 Tes. 2:16, 17)"
+    titulo: "William Turner: Consuele y fortalezca a los hermanos (2 Tes. 2:16, 17)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-083_6_VIDEO&appLanguage=S"
-    published: "2021-10-18"
-    hits: 4
-    terms:
+    publicado: "2021-10-18"
+    menciones: 4
+    terminos:
       "Tesalónica": 2
       "tesalonicenses": 2
   - docid: "pub-jwb_201901_3_VIDEO"
-    title: "Reunión anual del 2018: Discursos y anuncios"
+    titulo: "Reunión anual del 2018: Discursos y anuncios"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201901_3_VIDEO&appLanguage=S"
-    published: "2019-01-21"
-    hits: 4
-    terms:
+    publicado: "2019-01-21"
+    menciones: 4
+    terminos:
       "tesalonicenses": 4
   - docid: "pub-co-r20_101_VIDEO"
-    title: "Kenneth Cook: Por qué es Jehová el “Dios feliz”"
+    titulo: "Kenneth Cook: Por qué es Jehová el “Dios feliz”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_101_VIDEO&appLanguage=S"
-    published: "2020-12-01"
-    hits: 3
-    terms:
+    publicado: "2020-12-01"
+    menciones: 3
+    terminos:
       "Tesalónica": 2
       "tesalonicenses": 1
   - docid: "pub-co-r20_1_VIDEO"
-    title: "Viernes mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    titulo: "Viernes mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_1_VIDEO&appLanguage=S"
-    published: "2020-07-06"
-    hits: 3
-    terms:
+    publicado: "2020-07-06"
+    menciones: 3
+    terminos:
       "Tesalónica": 2
       "tesalonicenses": 1
   - docid: "pub-co-r20_54_VIDEO"
-    title: "Sábado mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!” (con audiodescripciones)"
+    titulo: "Sábado mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!” (con audiodescripciones)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_54_VIDEO&appLanguage=S"
-    published: "2020-07-23"
-    hits: 3
-    terms:
+    publicado: "2020-07-23"
+    menciones: 3
+    terminos:
       "Tesalónica": 1
       "tesalonicenses": 2

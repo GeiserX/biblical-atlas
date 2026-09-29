@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ciudad-de-la-sal
+nombre: Ciudad de la Sal
+nombres:
+- nombre: Ciudad de la Sal
+tipo: ciudad
+lat: 31.740833
+lon: 35.458611
+precision: punto
+coord_fuente: openbible:acc1702
+coord_url: https://www.openbible.info/geo/ancient/acc1702/city-of-salt
+resumen: Ciudad de Judá en el desierto, identificada con Khirbet Qumrán, en la orilla noroeste del mar Muerto, unos 20 km
+  al este de Jerusalén.
+razon: 'Perspicacia «Sal, Ciudad de la»; Jos 15:62. OpenBible: solo el punto.'
+fuentes:
+- it-ciudad-de-la-sal
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Sal, Ciudad de la»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003810
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: milca-hija-de-haran
+nombre: Milcá
+nombres:
+- nombre: Milcá
+perspicacia: 1200003052#1
+desambiguacion: Milcá la esposa de Nacor; no Milcá hija de Zelofehad.
+resumen: Hija de Harán y sobrina de Abrán, casada con su tío Nacor. Uno de sus ocho hijos, Betuel, fue el padre de Rebeca.
+razon: Perspicacia «Milcá», núm. 1; Gé 11:29 y 22:20-23.
+fuentes:
+- it-milca
+- genesis-11
+- genesis-22
+- genesis-24
+enlaces:
+- titulo: 'Perspicacia: «Milcá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003052
+  tipo: perspicacia
+- titulo: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  tipo: biblia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+- titulo: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: haran-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:29: Harán era el padre de Milcá y de Iscá.'
+  estado: verificado
+- tipo: pariente
+  persona: isca
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: Gé 11:29 las nombra juntas como hijas de Harán.
+  estado: verificado
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: tío
+  deducido: true
+  fuentes:
+  - it-milca
+  - genesis-11
+  razon: 'Perspicacia «Milcá», núm. 1: su esposo Nacor era también su tío (Gé 11:27, 29).'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- milca-hija-de-zelofehad

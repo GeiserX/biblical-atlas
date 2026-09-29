@@ -1,33 +1,33 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: troas
-generated_on: "2026-09-28"
+lugar: troas
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-113_1_VIDEO"
-    title: "JW Broadcasting: Junio de 2024 (graduación de la clase 155 de la Escuela de Galaad)"
+    titulo: "JW Broadcasting: Junio de 2024 (graduación de la clase 155 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_1_VIDEO&appLanguage=S"
-    published: "2024-06-03"
-    hits: 3
-    terms:
+    publicado: "2024-06-03"
+    menciones: 3
+    terminos:
       "Troas": 3
   - docid: "pub-jwb-113_8_VIDEO"
-    title: "Trent Lippold: Sean como el aceite del motor"
+    titulo: "Trent Lippold: Sean como el aceite del motor"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_8_VIDEO&appLanguage=S"
-    published: "2024-06-04"
-    hits: 3
-    terms:
+    publicado: "2024-06-04"
+    menciones: 3
+    terminos:
       "Troas": 3
   - docid: "pub-jwb-124_1_VIDEO"
-    title: "JW Broadcasting: Abril de 2025"
+    titulo: "JW Broadcasting: Abril de 2025"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
-    published: "2025-04-07"
-    hits: 2
-    terms:
+    publicado: "2025-04-07"
+    menciones: 2
+    terminos:
       "Troas": 2
   - docid: "pub-jwb-124_3_VIDEO"
-    title: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
-    published: "2025-04-21"
-    hits: 2
-    terms:
+    publicado: "2025-04-21"
+    menciones: 2
+    terminos:
       "Troas": 2

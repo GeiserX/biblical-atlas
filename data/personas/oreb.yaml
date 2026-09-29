@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: oreb
+nombre: Oreb
+nombres:
+- nombre: Oreb
+perspicacia: 1200003339#1
+resumen: Príncipe madianita; iba con las tropas de Zébah y Zalmuná que huyeron ante Gedeón. Los efraimitas lo capturaron,
+  lo mataron en una roca que tomó su nombre y llevaron su cabeza a Gedeón.
+razon: Perspicacia «Oreb», núm. 1 y 2; Jue 7:24, 25; 8:3; Sl 83:11.
+desambiguacion: Perspicacia llama también Oreb a la roca donde lo ejecutaron (núm. 2), un lugar de sitio desconocido.
+fuentes:
+- it-oreb
+- salmos-83
+- jueces-7
+- jueces-8
+enlaces:
+- titulo: 'Perspicacia: «Oreb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003339
+  tipo: perspicacia
+- titulo: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: murio_en
+  lugar: roca-de-oreb
+  deducido: false
+  fuentes:
+  - jueces-7
+  - it-oreb
+  razon: 'Jue 7:25: los efraimitas lo mataron en la roca que tomó su nombre.'
+  estado: verificado

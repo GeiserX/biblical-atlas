@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: efesios
+libro: Efesios
+escritor: pablo
+referencia: Ef 3:1; 6:21, 22
+escrita_en:
+- roma
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+destinatarios:
+  texto: Congregación de Éfeso (la llevó Tíquico)
+  lugares:
+  - efeso
+portadores:
+- tiquico
+personas:
+- tiquico
+contexto_origen:
+  resumen: Primer encarcelamiento en Roma (c. 59-61), en una casa alquilada y vigilado por un soldado.
+  fuentes:
+  - it-pablo
+contexto_destino:
+  resumen: La ciudad principal de la provincia de Asia, junto al gran templo de Ártemis; la zona de asilo del templo
+    atraía a delincuentes.
+  fuentes:
+  - it-efesios
+razon: La Tabla y el estudio 3 dan Roma y c. 60-61; en Ef 3:1 Pablo se llama prisionero y Ef 6:21, 22 dice que la
+  lleva Tíquico.
+fuentes:
+- tnm-tabla
+- si-3
+- it-efesios
+- efesios-3
+- it-tiquico
+enlaces:
+- titulo: 'Perspicacia: «Efesios, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001386
+  tipo: perspicacia
+- titulo: Efesios 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

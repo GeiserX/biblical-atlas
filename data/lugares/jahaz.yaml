@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jahaz
+nombre: Jáhaz
+nombres:
+- nombre: Jáhaz
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Khirbet el-Medeiyineh
+  geometria:
+    tipo: zona
+    lat: 31.588347
+    lon: 35.907928
+    radio_km: 20
+  estado: alternativa
+  fuentes:
+  - it-jahaz
+  - it-matana
+  - openbible-geo
+  razon: Perspicacia dice que no se conoce el sitio. OpenBible la pone en Khirbet el-Medeiyineh, donde Perspicacia sitúa más
+    bien Mataná.
+  coord_fuente: openbible:ad9b1cd
+  coord_url: https://www.openbible.info/geo/ancient/ad9b1cd/jahaz
+  nota: Centro en el punto de OpenBible; el radio de 20 km es nuestro, para no fijar un sitio dudoso.
+resumen: Ciudad al este del Jordán, al parecer al norte del Arnón, donde Sehón salió a pelear contra Israel y fue vencido.
+  Pasó a Rubén y después a los levitas de Merarí.
+razon: Perspicacia «Jáhaz» y «Amorreo»; Nú 21:23, 24.
+fuentes:
+- it-jahaz
+- it-amorreo
+- openbible-geo
+- numeros-21
+- deuteronomio-2
+- josue-13
+- josue-21
+- jueces-11
+enlaces:
+- titulo: 'Perspicacia: «Jáhaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002290
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gulot-maim
+nombre: Gulot-Maim
+nombres:
+- nombre: Gulot-Maim
+  nota: Significa «cuencas de agua», según la nota de Jos 15:19.
+- nombre: Gulot Alto
+  nota: Una de las dos partes que Caleb dio a Acsá (Jos 15:19).
+- nombre: Gulot Bajo
+  nota: La otra parte que Caleb dio a Acsá (Jos 15:19).
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: A menos de 5 km de Debir
+  geometria:
+    tipo: zona
+    lat: 31.43209
+    lon: 35.01485
+    radio_km: 5
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-gulot-maim
+  - openbible-geo
+  razon: Perspicacia no la sitúa, pero la trata junto con Debir, la ciudad de Otniel; OpenBible da este radio alrededor de
+    Khirbet Rabud.
+  coord_fuente: openbible:aaa3eca
+  coord_url: https://www.openbible.info/geo/ancient/aaa3eca/gulloth-mayim
+resumen: Tierra con cuencas de agua que Acsá pidió a su padre Caleb además del terreno que le había dado en el Négueb. Caleb
+  le dio Gulot Alto y Gulot Bajo. No se sabe dónde estaba.
+razon: Perspicacia «Gulot-maim», que remite a «Debir», núm. 2; Jos 15:19; Jue 1:15. OpenBible solo la pone a menos de 5 km
+  de Debir.
+fuentes:
+- it-gulot-maim
+- openbible-geo
+- josue-15
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Gulot-maim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001782
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

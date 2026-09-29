@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: silo
+nombre: Siló
+nombres:
+- nombre: Siló
+tipo: ciudad
+lat: 32.055703
+lon: 35.289536
+precision: punto
+coord_fuente: openbible:aa4680a
+coord_url: https://www.openbible.info/geo/ancient/aa4680a/shiloh
+resumen: Ciudad de Efraín al norte de Betel. Desde los días de Josué guardó el tabernáculo, y desde allí se terminó de repartir
+  la tierra. En tiempos de Elí seguía allí el Arca.
+razon: 'Perspicacia «Siló», núm. 2, párr. 5, 6 y 8; Jos 18:1 y 1Sa 4:3, 4. OpenBible: solo el punto.'
+fuentes:
+- it-silo
+- 1-samuel-4
+- openbible-geo
+- salmos-78
+- josue-18
+- josue-19
+- josue-21
+- josue-22
+- jueces-21
+enlaces:
+- titulo: 'Perspicacia: «Siló»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004039
+  tipo: perspicacia
+- titulo: 1 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

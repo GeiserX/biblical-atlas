@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aaron-detiene-la-plaga
+titulo: Aarón detiene la plaga tras la rebelión de Coré
+fecha:
+  desde: -1511
+  hasta: -1473
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: tras la sentencia de Cadés y en vida de Aarón)'
+orden_relato:
+  serie: numeros
+  orden: 16041
+lugares: []
+personas:
+- aaron
+- moises
+presentes: []
+pasajes:
+- Nú 16:41-50
+- 1Co 10:10
+resumen: Al día siguiente, el pueblo culpa a Moisés y a Aarón de las muertes y Jehová envía una plaga. Aarón corre con incienso,
+  se pone entre los muertos y los vivos y la detiene; mueren 14.700.
+razon: 'Nú 16:41-50. Perspicacia «Aarón» destaca su fe y su valor al hacer expiación. Fecha: tras la sentencia de Cadés (1512
+  a.e.c., Perspicacia «Qadés») y antes de morir Aarón en 1474 (Perspicacia «Aarón»).'
+fuentes:
+- numeros-16
+- it-aaron
+- it-core
+- it-qades
+- si-3
+- tnm-tabla
+- 1-corintios-10
+enlaces:
+- titulo: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  tipo: biblia
+- titulo: 'Perspicacia: «Aarón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

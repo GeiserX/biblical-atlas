@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehosafat
+nombre: Jehosafat
+nombres:
+- nombre: Jehosafat
+fecha:
+  desde: -936
+  hasta: -912
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 937-913 a.e.c.
+resumen: Hijo de Asá. Mandó enseñar la Ley por las ciudades de Judá y mejoró los tribunales. Casó a su hijo con Atalía, hija
+  de Acab, y casi murió con él en Ramot-galaad.
+razon: Perspicacia «Jehosafat», núm. 3, párr. 3, 5, 6 y 9; 1Re 22:41-50 y 2Cr 17-20.
+fuentes:
+- it-jehosafat
+- 1-reyes-22
+- 2-cronicas-17
+- tnm-a6-a
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Jehosafat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
+  tipo: perspicacia
+- titulo: 1 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: asa
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jehosafat
+  - 1-reyes-22
+  - mateo-1
+  razon: Hijo de Asá y de Azubá (1Re 22:42).
+  estado: verificado
+- tipo: sucede_a
+  persona: asa
+  deducido: false
+  fuentes:
+  - it-jehosafat
+  - 1-reyes-15
+  razon: Reinó al morir su padre (1Re 15:24).
+  estado: verificado
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Jehosafat» y el estudio 3 daban 936 a.e.c.; la tabla A6-A, más reciente, da 937.
+  fuente: tnm-a6-a
+perspicacia: 1200002383#3
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rehobot-del-rio
+nombre: Rehobot del Río
+nombres:
+- nombre: Rehobot del Río
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: En Edom, cerca del Zered
+  geometria:
+    tipo: punto
+    lat: 30.93318
+    lon: 35.610889
+  estado: alternativa
+  fuentes:
+  - it-rehobot
+  - openbible-geo
+  razon: Perspicacia recoge que varios geógrafos lo buscan en Edom, junto a un río cercano. Punto de OpenBible.
+  coord_fuente: openbible:a17e154
+  coord_url: https://www.openbible.info/geo/ancient/a17e154/rehoboth-2
+- nombre: Junto a la confluencia del Jabur y el Éufrates
+  geometria:
+    tipo: zona
+    lat: 35.16
+    lon: 40.43
+    radio_km: 30
+  estado: alternativa
+  fuentes:
+  - it-rehobot
+  razon: Perspicacia recoge que «el Río» suele ser el Éufrates y que algunos lo ponen junto a esa confluencia.
+  coord_fuente: calculo
+  nota: Centro en la confluencia del Jabur con el Éufrates, en torno a 35,16 N y 40,43 E; radio que cubre sus orillas.
+resumen: Ciudad de origen de Shaúl, rey de Edom, de ubicación desconocida. El Río puede ser el Éufrates o un río de Edom,
+  como el Zered.
+razon: Perspicacia «Rehobot», núm. 2; Gé 36:37.
+fuentes:
+- it-rehobot
+- openbible-geo
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Rehobot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003681
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

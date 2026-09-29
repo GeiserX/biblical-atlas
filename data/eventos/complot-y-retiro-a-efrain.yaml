@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: complot-y-retiro-a-efrain
+titulo: El Sanedrín decide matarlo; Jesús se retira a Efraín
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- jerusalen
+- efrain
+personas:
+- jesus
+- caifas
+presentes:
+- caifas
+pasajes:
+- Jn 11:47-54
+resumen: El Sanedrín se reúne y Caifás dice que conviene que un hombre muera por la nación. Desde entonces traman
+  matar a Jesús, que se va con sus discípulos a Efraín.
+razon: 'A7-F da el lugar; la nota de Jn 11:54 sitúa Efraín (jy cap. 91). Año: Perspicacia «Lázaro» (párr. 7) fecha la resurrección
+  a principios de 33, y A7-G la llegada a Betania el 8 de nisán del 33.'
+fuentes:
+- tnm-a7-f
+- juan-11
+- jy-cap-91
+- it-lazaro
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 83
+buscar: El Sanedrín decide matarlo
+consultado: '2026-09-28'
+estado: verificado

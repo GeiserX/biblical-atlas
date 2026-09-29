@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pecado-sin-perdon
+titulo: Expulsa demonios y habla del pecado sin perdón
+fecha:
+  desde: 31
+  hasta: 31
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 39
+lugares:
+- galilea
+personas:
+- jesus
+pasajes:
+- Mt 12:22-37
+- Mr 3:19-30
+resumen: Jesús libra a un endemoniado ciego y mudo. Los fariseos, y escribas llegados de Jerusalén, lo atribuyen a Belcebú;
+  él advierte que blasfemar contra el espíritu santo no tiene perdón.
+razon: 'A7-C, fila 20: Galilea. El libro jy (cap. 41) cuenta que esos escribas llegaron desde Jerusalén.'
+fuentes:
+- tnm-a7-c
+- mateo-12
+- marcos-3
+- jy-cap-41
+historial:
+- fecha: '2026-09-29'
+  cambio: La TNM escribe Belcebú, no Beelzebub, y Mt 12:24 pone la acusación en boca de los fariseos; Mr 3:22 la da a los
+    escribas.
+  fuente: mateo-12
+consultado: '2026-09-29'
+estado: verificado

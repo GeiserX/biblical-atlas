@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-decide-volver-a-canaan
+titulo: Dios manda a Jacob volver y sus esposas lo apoyan
+fecha:
+  desde: -1760
+  hasta: -1760
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 31001
+lugares:
+- padan-aram
+personas:
+- jacob
+- raquel
+- lea
+- laban
+presentes:
+- jacob
+- raquel
+- lea
+pasajes:
+- Gé 31:1-16
+resumen: Los hijos de Labán murmuran y Labán ya no lo mira igual. Jehová le dice a Jacob que regrese. En el campo, Jacob se
+  lo explica a Raquel y a Lea, y ellas le piden que obedezca a Dios.
+razon: El estudio 3 fecha en 1761 a.e.c. la vuelta de Jacob a Canaán (Gé 31:18, 41). Perspicacia «Jacob», párr. 18.
+fuentes:
+- si-3
+- it-jacob
+- genesis-31
+enlaces:
+- titulo: Génesis 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

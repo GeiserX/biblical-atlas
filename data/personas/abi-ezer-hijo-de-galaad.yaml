@@ -1,0 +1,95 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abi-ezer-hijo-de-galaad
+nombre: Abí-Ézer
+nombres:
+- nombre: Abí-Ézer
+- nombre: Abí-ézer
+  nota: Grafía de Perspicacia.
+- nombre: Yézer
+  nota: Forma corta del nombre, sin el «Ab» inicial, que usa Nú 26:30; Perspicacia lo ve comparando con Josué 17.
+perspicacia: 1200000035#1
+desambiguacion: Abí-ézer (Yézer) hijo de Galaad, antepasado de Gedeón; no el valiente de Anatot del ejército de David.
+resumen: Manasita, hijo de Galaad y cabeza de la familia de los yezeritas. Perspicacia lo tiene por antepasado del juez Gedeón.
+razon: Perspicacia «Abí-ézer», núm. 1, y «Yézer»; Nú 26:30.
+fuentes:
+- it-abi-ezer
+- it-yezer
+- numeros-26
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Abí-ézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000035
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Yézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002139
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: galaad-hijo-de-makir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-abi-ezer
+  razon: Nú 26:30-32 lo cuenta entre los hijos de Galaad.
+  estado: verificado
+- tipo: pariente
+  persona: helec
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:30: Hélec es otro hijo de Galaad.'
+  estado: verificado
+- tipo: pariente
+  persona: asriel
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:31: Asriel es otro hijo de Galaad.'
+  estado: verificado
+- tipo: pariente
+  persona: siquem-hijo-de-galaad
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:31: Siquem es otro hijo de Galaad.'
+  estado: verificado
+- tipo: pariente
+  persona: semida
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:32: Semidá es otro hijo de Galaad.'
+  estado: verificado
+- tipo: pariente
+  persona: hefer-hijo-de-galaad
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:32: Héfer es otro hijo de Galaad.'
+  estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El nombre pasa a la grafía de la TNM, Abí-Ézer (Jos 17:2); Abí-ézer queda como grafía de Perspicacia.
+  fuente: josue-17
+- fecha: '2026-09-29'
+  cambio: Se añade Abí-Ézer, la grafía de la TNM en Jos 17:2, como nombre principal.
+  fuente: josue-17
+consultado: '2026-09-29'
+estado: verificado

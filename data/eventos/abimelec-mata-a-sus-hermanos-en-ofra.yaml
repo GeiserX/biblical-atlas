@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abimelec-mata-a-sus-hermanos-en-ofra
+titulo: Abimélec mata a sus hermanos en Ofrá
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 9005
+lugares:
+- ofra-de-gedeon
+personas:
+- abimelec-hijo-de-gedeon
+- jotan-hijo-de-gedeon
+- jeter-hijo-de-gedeon
+pasajes:
+- Jue 9:5
+resumen: En la casa de su padre, en Ofrá, Abimélec mata sobre una misma piedra a los hijos de Jerubaal. Solo se salva Jotán,
+  el menor, porque se había escondido.
+razon: 'Perspicacia «Ofrá», núm. 3: sin contar a Jotán serían 69, y el texto redondea a setenta. Fecha como la del suceso
+  anterior (Jue 9:1-4).'
+fuentes:
+- jueces-9
+- it-ofra
+- it-abimelec
+- si-3
+- it-jueces
+- it-jefte
+- it-jeter
+enlaces:
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

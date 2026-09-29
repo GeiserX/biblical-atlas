@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-baala
+nombre: Monte Baalá
+nombres:
+- nombre: Monte Baalá
+tipo: monte
+lat: 31.841389
+lon: 34.785833
+precision: incierto
+coord_fuente: openbible:ac2b4ef
+coord_url: https://www.openbible.info/geo/ancient/ac2b4ef/mount-baalah
+coord_nota: Mughar, primera identificación de OpenBible, que Perspicacia ve posible.
+resumen: Monte del extremo noroeste de Judá, entre Sikerón y Jabneel, en la frontera norte. Quizá es la colina de Mughar,
+  al norte del torrente de Soreq.
+razon: 'Perspicacia «Baalá», núm. 2; Jos 15:11. No es Baalá, otro nombre de Quiryat-Jearim. OpenBible: solo el punto.'
+fuentes:
+- it-baala
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Baalá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000506
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

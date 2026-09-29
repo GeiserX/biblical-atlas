@@ -1,0 +1,15 @@
+# biblical-earth: fuentes de la cobertura de eclesiastes. Esquema en docs/investigacion/README.md.
+it-eclesiastes-libro:
+  titulo: Eclesiastés, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001255
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+si-eclesiastes:
+  titulo: 'Libro bíblico número 21: Eclesiastés'
+  obra: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990082
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'

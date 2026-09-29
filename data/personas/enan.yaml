@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: enan
+nombre: Enán
+nombres:
+- nombre: Enán
+perspicacia: '1200001356'
+resumen: Neftalita, padre de Ahirá, jefe de Neftalí en tiempos de Moisés.
+razon: Perspicacia «Enán»; Nú 1:15; 2:29.
+fuentes:
+- it-enan
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Enán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001356
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

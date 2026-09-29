@@ -1,0 +1,78 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: felix
+nombre: Félix
+nombres:
+- nombre: Félix
+- nombre: Antonio Félix
+fecha:
+  desde: 52
+  hasta: 58
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 52-58 e.c. (gobernador)
+resumen: Gobernador romano de Judea, antes esclavo liberado por Claudio. Tuvo a Pablo preso dos años en Cesarea
+  esperando un soborno y lo dejó en cadenas al marcharse.
+razon: Perspicacia «Félix» (párr. 1, 2 y 4) y el recuadro del cap. 24 de «Testimonio completo»; Hch 24.
+fuentes:
+- it-felix
+- bt-24
+- hch-24
+enlaces:
+- titulo: 'Perspicacia: «Félix»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001502
+  tipo: perspicacia
+- titulo: Hechos 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/24
+  tipo: biblia
+perspicacia: '1200001502'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: pariente
+  persona: drusila
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-felix
+  - hch-24
+  razon: Hch 24:24 la llama su esposa.
+  estado: verificado
+- tipo: vivio_en
+  lugar: cesarea
+  fecha:
+    desde: 56
+    hasta: 58
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56-58 e.c.
+  deducido: false
+  fuentes:
+  - it-felix
+  - hch-23
+  razon: Tiene a Pablo preso en el palacio de Herodes, en Cesarea (Hch 23:35).
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  relacion: custodio
+  relacion_inversa: custodiado por
+  fecha:
+    desde: 56
+    hasta: 58
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56-58 e.c.
+  deducido: false
+  fuentes:
+  - hch-23
+  - hch-24
+  - it-felix
+  - si-3
+  razon: Recibe a Pablo en Cesarea y lo mantiene vigilado dos años, con cierta libertad, hasta que llega Festo (Hch 23:33-35;
+    24:23, 27).
+  estado: verificado

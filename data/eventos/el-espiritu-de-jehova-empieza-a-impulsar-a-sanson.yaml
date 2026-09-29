@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-espiritu-de-jehova-empieza-a-impulsar-a-sanson
+titulo: El espíritu de Jehová empieza a impulsar a Sansón en Mahané-Dan
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: antes de que Sansón busque esposa en Timnah)'
+orden_relato:
+  serie: jueces
+  orden: 13025
+lugares:
+- mahane-dan
+- zora
+- estaol
+personas:
+- sanson
+pasajes:
+- Jue 13:25
+resumen: En Mahané-Dan, entre Zorá y Estaol, el espíritu de Jehová empieza a mover a Sansón a actuar.
+razon: 'Jue 13:25; «Mahané-dan» y «Estaol»: fue la primera vez, cerca de Estaol. Mahané-Dan no tiene sitio conocido. Fecha:
+  tras Jefté (c. 1173, «Jefté»), pues el libro va casi en orden («Jueces, Libro de»), y antes de Saúl (1117, estudio 3).'
+fuentes:
+- jueces-13
+- it-mahane-dan
+- it-estaol
+- it-jefte
+- it-jueces
+- si-3
+enlaces:
+- titulo: Jueces 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/13
+  tipo: biblia
+- titulo: 'Perspicacia: «Mahané-dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002843
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

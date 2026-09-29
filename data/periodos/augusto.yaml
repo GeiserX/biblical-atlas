@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: augusto
+nombre: Augusto, emperador de Roma
+tipo: emperador
+fecha:
+  desde: -30
+  hasta: 14
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 a.e.c.-14 e.c.
+persona: augusto
+lugares:
+- roma
+resumen: Octavio es el único gobernante del imperio desde 31 a.e.c.; cuatro años después recibe el título de Augusto. Su
+  decreto de inscripción lleva a José y a María a Belén.
+razon: El recuadro de Perspicacia «César» le da 31 a.e.c.-14 e.c.; «Augusto» fecha el título (16 de enero de 27 a.e.c.)
+  y su muerte (17 de agosto de 14).
+fuentes:
+- it-cesar
+- it-augusto
+buscar: César Augusto
+consultado: '2026-09-28'
+estado: verificado

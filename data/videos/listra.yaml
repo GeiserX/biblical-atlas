@@ -1,54 +1,54 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: listra
-generated_on: "2026-09-28"
+lugar: listra
+generado: "2026-09-28"
 videos:
   - docid: "pub-co-r21_133_VIDEO"
-    title: "Mark Noumair: Entre con fe por la puerta para trabajar más. Solicite ir a la Escuela para Evangelizadores del Reino"
+    titulo: "Mark Noumair: Entre con fe por la puerta para trabajar más. Solicite ir a la Escuela para Evangelizadores del Reino"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_133_VIDEO&appLanguage=S"
-    published: "2021-09-13"
-    hits: 5
-    terms:
+    publicado: "2021-09-13"
+    menciones: 5
+    terminos:
       "Listra": 5
   - docid: "pub-co-r21_7_VIDEO"
-    title: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_7_VIDEO&appLanguage=S"
-    published: "2021-07-26"
-    hits: 5
-    terms:
+    publicado: "2021-07-26"
+    menciones: 5
+    terminos:
       "Listra": 5
   - docid: "pub-jwb-092_1_VIDEO"
-    title: "JW Broadcasting: Marzo de 2023"
+    titulo: "JW Broadcasting: Marzo de 2023"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-092_1_VIDEO&appLanguage=S"
-    published: "2023-03-06"
-    hits: 4
-    terms:
+    publicado: "2023-03-06"
+    menciones: 4
+    terminos:
       "Listra": 4
   - docid: "pub-jwb-092_7_VIDEO"
-    title: "David Schafer: Digamos palabras de ánimo (Hech. 13:15)"
+    titulo: "David Schafer: Digamos palabras de ánimo (Hech. 13:15)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-092_7_VIDEO&appLanguage=S"
-    published: "2023-03-20"
-    hits: 4
-    terms:
+    publicado: "2023-03-20"
+    menciones: 4
+    terminos:
       "Listra": 4
   - docid: "pub-jwb_201709_9_VIDEO"
-    title: "James Mantz: “Toda cosa a gente de toda clase” (1 Cor. 9:22)"
+    titulo: "James Mantz: “Toda cosa a gente de toda clase” (1 Cor. 9:22)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201709_9_VIDEO&appLanguage=S"
-    published: "2017-09-11"
-    hits: 3
-    terms:
+    publicado: "2017-09-11"
+    menciones: 3
+    terminos:
       "Listra": 3
   - docid: "pub-jwban_201504_1_VIDEO"
-    title: "Mark Sanderson: Siempre tenemos presente su aguante"
+    titulo: "Mark Sanderson: Siempre tenemos presente su aguante"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201504_1_VIDEO&appLanguage=S"
-    published: "2016-11-10"
-    hits: 2
-    terms:
+    publicado: "2016-11-10"
+    menciones: 2
+    terminos:
       "Listra": 2
   - docid: "pub-jwbvod25_24_VIDEO"
-    title: "Izak Marais: Sigamos animándonos unos a otros (Rom. 1:11, 12)"
+    titulo: "Izak Marais: Sigamos animándonos unos a otros (Rom. 1:11, 12)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_24_VIDEO&appLanguage=S"
-    published: "2025-04-18"
-    hits: 2
-    terms:
+    publicado: "2025-04-18"
+    menciones: 2
+    terminos:
       "Listra": 2

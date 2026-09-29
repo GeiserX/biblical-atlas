@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: efrain
+nombre: Efraín
+nombres:
+- nombre: Efraín
+- nombre: Efrén
+  nota: Se suele identificar con la ciudad que Abías tomó a Jeroboam (2Cr 13:19).
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: et-Taiyiba, unos 6 km al ENE de Betel
+  geometria:
+    tipo: punto
+    lat: 31.954444
+    lon: 35.300278
+  estado: favorecido_nivel_1
+  fuentes:
+  - juan-11
+  - it-efrain
+  - openbible-geo
+  razon: La nota de Jn 11:54 lo da como la ubicación más probable. Punto de OpenBible.
+  coord_fuente: openbible:ad14500
+  coord_url: https://www.openbible.info/geo/ancient/ad14500/ephraim-2
+resumen: Ciudad cercana al desierto adonde Jesús se retiró con sus discípulos cuando los líderes judíos decidieron
+  matarlo, poco después de resucitar a Lázaro.
+razon: La nota de Jn 11:54 y Perspicacia «Efraín», apartado 3.
+fuentes:
+- juan-11
+- it-efrain
+enlaces:
+- titulo: 'Perspicacia: «Efraín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
+  tipo: perspicacia
+- titulo: Juan 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11
+  tipo: biblia
+buscar: Efraín
+consultado: '2026-09-28'
+estado: verificado

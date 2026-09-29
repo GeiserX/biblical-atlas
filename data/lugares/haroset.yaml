@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: haroset
+nombre: Haróset
+nombres:
+- nombre: Haróset
+- nombre: Haróset de las naciones
+  nota: Nombre completo que usa Jue 4:2, 13, 16.
+- nombre: Haróset-Ha-Goyim
+  nota: Forma hebrea que da la nota de Jue 4:2.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Khirbet el-Harithiyeh
+  geometria:
+    tipo: punto
+    lat: 32.72215
+    lon: 35.10983
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-haroset
+  razon: 'Perspicacia «Haróset»: parece que el nombre sigue vivo en el-Harithiyeh, al oeste del valle de Jezreel, unos 16
+    km al NNO de Meguidó.'
+  coord_fuente: openbible:a49c017
+  coord_url: https://www.openbible.info/geo/ancient/a49c017/harosheth-hagoyim
+  nota: Resolución de la identificación Khirbet el Harithiyeh de OpenBible.
+- nombre: Tell ʽAmr (Tel Meʽammer)
+  geometria:
+    tipo: punto
+    lat: 32.728056
+    lon: 35.096667
+  estado: alternativa
+  fuentes:
+  - it-haroset
+  razon: 'Perspicacia «Haróset»: varios eruditos prefieren este montículo cercano.'
+  coord_fuente: openbible:a49c017
+  coord_url: https://www.openbible.info/geo/ancient/a49c017/harosheth-hagoyim
+  nota: Resolución de la identificación Tell Amr de OpenBible.
+resumen: Lugar donde vivía Sísara, que mandaba las tropas de Jabín, y desde donde salió con sus carros hacia el Cisón. Barac
+  persiguió a los cananeos hasta allí.
+razon: 'Perspicacia «Haróset»; Jue 4:2, 13, 16. Perspicacia nombra dos sitios y no elige: van como candidatos. OpenBible:
+  solo los puntos.'
+fuentes:
+- it-haroset
+- openbible-geo
+- jueces-4
+enlaces:
+- titulo: 'Perspicacia: «Haróset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001891
+  tipo: perspicacia
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

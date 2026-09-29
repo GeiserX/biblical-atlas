@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: buen-samaritano-y-casa-de-marta
+titulo: Un experto en la Ley pregunta quién es su prójimo
+fecha:
+  desde: 32
+  hasta: 32
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detalle:
+    estacion: otoño
+lugares:
+- judea
+personas:
+- jesus
+pasajes:
+- Lu 10:25-37
+resumen: Un experto en la Ley pregunta cómo heredar la vida eterna y quién es su prójimo. Jesús le contesta con la parábola
+  del samaritano que socorre a un hombre asaltado en el camino a Jericó.
+razon: La tabla A7-E da cuándo y dónde (Judea, otoño de 32). La misma fila incluye la visita a Marta, que va aparte porque
+  cambian el sitio y las personas.
+fuentes:
+- tnm-a7-e
+- lucas-10
+- jy-cap-73
+orden_relato:
+  serie: a7
+  orden: 67
+buscar: El buen samaritano
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte en dos escenas: aquí queda la conversación con el experto en la Ley (Lu 10:25-37); la visita
+    a Marta y María pasa a en-casa-de-marta-y-maria.'
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: 'Betania sale del suceso: el diálogo con el experto en la Ley no pasa allí; Betania queda en en-casa-de-marta-y-maria.'
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: Marta y María salen de la escena de la parábola y pasan a en-casa-de-marta-y-maria.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: El pasaje se ciñe a la parábola; Lu 10:38-42 pasa al suceso nuevo.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: El resumen ya no cuenta la visita a Marta, que es un suceso aparte.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: La razón ya no habla de Betania, que pasa al suceso nuevo.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: jy cap. 74 y Perspicacia «Betania» tratan la visita a Marta; pasan al suceso nuevo.
+  fuente: lucas-10
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: araba
+nombre: Arabá
+nombres:
+- nombre: Arabá
+  nota: Perspicacia le da el sentido de «llanura desértica».
+tipo: valle
+lat: 30.416944
+lon: 35.151389
+precision: zona
+coord_fuente: openbible:a2bb5ef
+coord_url: https://www.openbible.info/geo/ancient/a2bb5ef/arabah
+coord_nota: Punto representativo de OpenBible, al sur del mar Muerto; el Arabá de la Biblia llega al norte hasta el mar de
+  Galilea.
+resumen: Gran fosa que baja desde el pie del Hermón por el Jordán y el mar Muerto hasta el golfo de ʽAqaba, a lo largo de
+  unos 435 km. Al sur del mar Muerto es muy árida.
+razon: 'Perspicacia «Arabá», párr. 1 a 4; Dt 1:7 y 2:8. OpenBible: solo el punto.'
+fuentes:
+- it-araba
+- openbible-geo
+- deuteronomio-1
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-4
+- deuteronomio-11
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Arabá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000325
+  tipo: perspicacia
+- titulo: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  tipo: biblia
+- titulo: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  tipo: biblia
+- titulo: Deuteronomio 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

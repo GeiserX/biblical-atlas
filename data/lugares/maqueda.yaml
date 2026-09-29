@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: maqueda
+nombre: Maquedá
+nombres:
+- nombre: Maquedá
+- nombre: Cueva de Maquedá
+  nota: Cueva cercana a la ciudad donde se escondieron los cinco reyes y donde quedaron enterrados (Jos 10:16-27).
+tipo: ciudad
+lat: 31.728465
+lon: 34.953544
+precision: incierto
+coord_fuente: openbible:abf8e4e
+coord_url: https://www.openbible.info/geo/ancient/abf8e4e/makkedah
+resumen: Ciudad real cananea de la Sefelá. En una cueva cercana se escondieron los cinco reyes amorreos, que quedaron sepultados
+  en ella; ese mismo día Josué tomó la ciudad y la destruyó. Pasó a Judá.
+razon: 'Perspicacia «Maquedá»: sitio desconocido, quizá Khirbet el-Kheishum; Jos 10:16-28; 15:41. OpenBible: solo el punto.'
+fuentes:
+- it-maqueda
+- josue-10
+- openbible-geo
+- josue-12
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Maquedá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002858
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: Punto de Khirbet el-Kheishum, la identificación tentativa de Perspicacia. OpenBible pone primero otra.

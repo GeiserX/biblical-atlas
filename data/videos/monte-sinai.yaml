@@ -1,26 +1,26 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: monte-sinai
-generated_on: "2026-09-28"
+lugar: monte-sinai
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-104_1_VIDEO"
-    title: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+    titulo: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_1_VIDEO&appLanguage=S"
-    published: "2023-06-05"
-    hits: 4
-    terms:
+    publicado: "2023-06-05"
+    menciones: 4
+    terminos:
       "Horeb": 4
   - docid: "pub-jwb-104_9_VIDEO"
-    title: "James Cauthon: ¿Solo consejero, o también pastor?"
+    titulo: "James Cauthon: ¿Solo consejero, o también pastor?"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_9_VIDEO&appLanguage=S"
-    published: "2023-06-06"
-    hits: 4
-    terms:
+    publicado: "2023-06-06"
+    menciones: 4
+    terminos:
       "Horeb": 4
   - docid: "pub-jwbvod24_23_VIDEO"
-    title: "Alex Reinmueller: Fortalecemos nuestra fe cuando conocemos mejor a Jehová (Heb. 11:6)"
+    titulo: "Alex Reinmueller: Fortalecemos nuestra fe cuando conocemos mejor a Jehová (Heb. 11:6)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_23_VIDEO&appLanguage=S"
-    published: "2024-05-24"
-    hits: 2
-    terms:
+    publicado: "2024-05-24"
+    menciones: 2
+    terminos:
       "monte Sinaí": 2

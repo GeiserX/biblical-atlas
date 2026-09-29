@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kineret
+nombre: Kinéret
+nombres:
+- nombre: Kinéret
+  nota: La ciudad; el mar de Kinéret tiene su propia ficha, mar de Galilea.
+tipo: ciudad
+lat: 32.869444
+lon: 35.538333
+precision: punto
+coord_fuente: openbible:a2bb265
+coord_url: https://www.openbible.info/geo/ancient/a2bb265/chinnereth
+coord_nota: Punto de OpenBible en Khirbet el-ʽOreimeh (Tel Kinnerot).
+resumen: Ciudad fortificada de Neftalí sobre la orilla noroeste del mar de Galilea, a más de 3 km de Capernaúm. Figura entre
+  las conquistas de Tutmosis III. El lago tomó su mismo nombre.
+razon: 'Perspicacia «Kinéret», núm. 1 y 3; Jos 19:35. OpenBible: solo el punto.'
+fuentes:
+- it-kineret
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Kinéret»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000958
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

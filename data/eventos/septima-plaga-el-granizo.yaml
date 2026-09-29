@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: septima-plaga-el-granizo
+titulo: 'Séptima plaga: el granizo'
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+orden_relato:
+  serie: exodo
+  orden: 9013
+lugares:
+- egipto
+- gosen
+personas:
+- moises
+- aaron
+pasajes:
+- Éx 9:13-35
+- Sl 78:47, 48
+- Sl 105:32, 33
+- Ro 9:17
+resumen: Moisés anuncia una granizada nunca vista y algunos siervos del faraón ponen a salvo su ganado. Caen granizo y fuego
+  en todo Egipto menos en Gosén. El faraón reconoce su pecado, pero se endurece cuando cesa la tormenta.
+razon: El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Según Éx 9:31,
+  32, la cebada estaba casi madura; Perspicacia «Cebada» sitúa su siega al empezar la primavera, en nisán.
+fuentes:
+- exodo-9
+- si-3
+- it-granizo
+- it-cebada
+enlaces:
+- titulo: Éxodo 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

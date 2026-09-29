@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nafis
+nombre: Nafís
+nombres:
+- nombre: Nafís
+perspicacia: '1200003179'
+resumen: Undécimo hijo de Ismael y cabeza de la tribu que llevó su nombre, que al parecer vivía al este o noreste de Canaán.
+razon: Perspicacia «Nafís»; Gé 25:15, 16.
+fuentes:
+- it-nafis
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Nafís»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003179
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-nafis
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

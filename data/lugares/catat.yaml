@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: catat
+nombre: Catat
+nombres:
+- nombre: Catat
+- nombre: Qatat
+  nota: Grafía de Perspicacia.
+- nombre: Quitrón
+  nota: Suele identificarse con ella (Jue 1:30).
+tipo: ciudad
+lat: 32.62558
+lon: 35.03215
+precision: incierto
+coord_fuente: openbible:a6536c9
+coord_url: https://www.openbible.info/geo/ancient/a6536c9/kattath
+coord_nota: OpenBible la toma por Quitrón; el punto es Khirbet Qutteina. Perspicacia no da sitio.
+resumen: Ciudad de Zabulón que suele identificarse con Quitrón, una de las ciudades de las que Zabulón no expulsó a los cananeos.
+razon: 'Perspicacia «Qatat»; Jos 19:15; Jue 1:30. OpenBible: solo el punto.'
+fuentes:
+- it-qatat
+- openbible-geo
+- josue-19
+- jueces-1
+- it-quitron
+enlaces:
+- titulo: 'Perspicacia: «Qatat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002578
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por hallazgo. Esquema en docs/investigacion/README.md.
+id: cronica-de-nabonido
+nombre: Crónica de Nabonido
+lugar_hallazgo: babilonia
+relaciona:
+- persona:nabonido
+- persona:belsasar
+- persona:ciro
+- evento:caida-de-babilonia
+fecha_objeto:
+  desde: -311
+  hasta: -64
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: quizá copia del periodo seléucida (312-65 a.e.c.)
+resumen: Fragmento de tablilla de unos 14 cm, procedente de Babilonia y guardado en el Museo Británico. Da el día 16 de
+  tisri para la entrada del ejército de Ciro en la ciudad.
+razon: Perspicacia «Nabonido», apartado «¿Qué información recoge la Crónica de Nabonido?», y «Arqueología» (excavaciones
+  del siglo XIX cerca de Bagdad).
+nota: Perspicacia recoge que la tablilla podría ser una copia tardía y favorable a Ciro, aunque sus datos se consideran
+  fiables.
+fuentes:
+- it-nabonido
+- it-arqueologia
+enlaces:
+- titulo: 'Perspicacia: «Nabonido»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003156
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: verificado

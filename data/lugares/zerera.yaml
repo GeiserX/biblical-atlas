@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zerera
+nombre: Zererá
+nombres:
+- nombre: Zererá
+- nombre: Zeredá
+  nota: Lectura de veinte manuscritos hebreos en Jue 7:22, según Perspicacia.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Entre Bet-Sitá y Abel-Meholá
+  geometria:
+    tipo: zona
+    lat: 32.46294
+    lon: 35.49357
+    radio_km: 12
+  estado: alternativa
+  fuentes:
+  - it-zerera
+  - openbible-geo
+  razon: 'Perspicacia: si Zererá estaba en el camino entre Bet-sitá y Abel-meholá, se desconoce el sitio.'
+  coord_fuente: calculo
+  nota: 'Centro calculado por nosotros: punto medio entre Shatta (32,5516 N; 35,4262 E), el punto de Bet-Sitá, y Tell Abu
+    Sus (32,3743 N; 35,5609 E), el candidato favorecido de Abel-Meholá. Radio nuestro.'
+- nombre: La misma Zaretán, al oeste del Jordán cerca de Adán
+  geometria:
+    tipo: zona
+    lat: 32.13
+    lon: 35.52
+    radio_km: 12
+  estado: alternativa
+  fuentes:
+  - it-zerera
+  - it-zaretan
+  razon: 'Perspicacia: Zeredá era Zaretán, pero la igualdad solo encaja si la huida iba en dirección a ella, porque Zaretán
+    quedaba mucho más al sur.'
+  coord_fuente: calculo
+  nota: La misma zona que el candidato favorecido de Zaretán en su ficha.
+resumen: Lugar hacia el que huyeron los madianitas tras la victoria de Gedeón, camino de Abel-Meholá. No se sabe dónde estaba;
+  algunos lo igualan con Zaretán.
+razon: 'Perspicacia «Zererá»; Jue 7:22. Sin sitio seguro: dos candidatos que Perspicacia deja abiertos.'
+fuentes:
+- it-zerera
+- it-zaretan
+- openbible-geo
+- jueces-7
+enlaces:
+- titulo: 'Perspicacia: «Zererá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004709
+  tipo: perspicacia
+- titulo: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-guedi
+nombre: En-Guedí
+nombres:
+- nombre: En-Guedí
+- nombre: Hazazón-Tamar
+  nota: Nombre de Gé 14:7 que 2Cr 20:2 iguala con En-Guedí. Perspicacia admite que el de Génesis fuera otro sitio más al sur.
+tipo: ciudad
+lat: 31.45
+lon: 35.383333
+precision: punto
+coord_fuente: openbible:a51df0e
+coord_url: https://www.openbible.info/geo/ancient/a51df0e/engedi
+resumen: Oasis y ciudad de Judá en la orilla occidental del mar Salado, con manantial, palmeras y viñas. En tiempos de Abrán
+  vivían allí los amorreos que venció Kedorlaomer.
+razon: 'Perspicacia «En-guedí», párr. 1 y 2, y «Hazazón-tamar»; Gé 14:7; Can 1:14. Por lo general se la sitúa en Tell Jurn.
+  Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-en-guedi
+- it-hazazon-tamar
+- openbible-geo
+- genesis-14
+- cantar-de-los-cantares-1
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «En-guedí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001365
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Hazazón-tamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001932
+  tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen añade sus viñas (Can 1:14), que Perspicacia «En-guedí», párr. 2, pone como muestra de la fertilidad del
+    oasis.
+  fuente: cantar-de-los-cantares-1
+- fecha: '2026-09-29'
+  cambio: La identificación con Tell Jurn está en el párr. 1 de Perspicacia, no en el 2; la razón cita los dos y Can 1:14.
+  fuente: it-en-guedi
+consultado: '2026-09-29'
+estado: verificado

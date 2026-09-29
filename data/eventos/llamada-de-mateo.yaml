@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: llamada-de-mateo
+titulo: Jesús llama a Mateo
+fecha:
+  desde: 30
+  hasta: 30
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 30 e.c.
+orden_relato:
+  serie: a7
+  orden: 27
+lugares:
+- capernaum
+- mar-de-galilea
+personas:
+- jesus
+- mateo
+pasajes:
+- Mt 9:9-17
+- Mr 2:13-22
+- Lu 5:27-39
+resumen: Jesús invita a Mateo, también llamado Leví, a dejar la oficina de impuestos. Mateo da un banquete con cobradores
+  de impuestos; los fariseos lo critican y le preguntan por el ayuno.
+razon: 'A7-C, fila 8: Capernaúm. Perspicacia «Mateo» (párr. 3) fecha la llamada en 30 o principios de 31.'
+fuentes:
+- tnm-a7-c
+- mateo-9
+- marcos-2
+- lucas-5
+- it-mateo
+- jy-cap-27
+- jy-cap-28
+consultado: '2026-09-29'
+estado: verificado

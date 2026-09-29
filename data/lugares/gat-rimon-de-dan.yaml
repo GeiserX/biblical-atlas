@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gat-rimon-de-dan
+nombre: Gat-Rimón
+nombres:
+- nombre: Gat-Rimón
+  nota: Gat-Rimón de Dan (Perspicacia, núm. 1); no la de Manasés de Jos 21:25.
+tipo: ciudad
+lat: 32.0917
+lon: 34.8075
+precision: punto
+coord_fuente: openbible:a046c70
+coord_url: https://www.openbible.info/geo/ancient/a046c70/gath-rimmon-1
+coord_nota: Punto de OpenBible en Tell Jerisheh (Tel Gerisa).
+resumen: Ciudad de Dan dada a los levitas qohatitas, unos 8 km al NE de Tel Aviv-Yafo. 1 Crónicas la pone entre las de Efraín;
+  quizá falta un trozo de ese texto.
+razon: 'Perspicacia «Gat-rimón», núm. 1; Jos 19:45; 1Cr 6:69. OpenBible: solo el punto.'
+fuentes:
+- it-gat-rimon
+- openbible-geo
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Gat-rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001621
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

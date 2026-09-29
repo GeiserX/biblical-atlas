@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-levita-envia-a-israel-los-pedazos-de-su-concubina
+titulo: El levita envía a Israel los pedazos de su concubina
+fecha:
+  desde: -1449
+  hasta: -1399
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+orden_relato:
+  serie: jueces
+  orden: 19029
+lugares:
+- region-montanosa-de-efrain
+- israel
+personas: []
+pasajes:
+- Jue 19:29, 30
+resumen: Ya en su casa, el levita corta el cadáver en 12 pedazos y manda uno a cada territorio de Israel. Quienes lo ven dicen
+  que nada así ha pasado desde la salida de Egipto y piden consejo.
+razon: 'Perspicacia «Jueces, Libro de», «Orden del libro»: los capítulos 19 a 21 pasaron probablemente pocos años después
+  de morir Josué, hacia 1450 a.e.c. (estudio 3). Límite final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+fuentes:
+- jueces-19
+- it-jueces
+- si-3
+- it-finehas
+enlaces:
+- titulo: Jueces 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

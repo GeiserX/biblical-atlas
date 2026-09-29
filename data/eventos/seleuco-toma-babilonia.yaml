@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: seleuco-toma-babilonia
+titulo: Seleuco Nicátor toma Babilonia
+fecha:
+  desde: -311
+  hasta: -311
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 312 a.e.c.
+lugares:
+- babilonia
+personas: []
+pasajes: []
+resumen: Seleuco Nicátor conquista Babilonia y se lleva gran parte de sus materiales para construir Seleucia, su nueva capital
+  junto al Tigris.
+razon: Perspicacia «Babilonia» (núm. 1) fecha la conquista en 312 a.e.c. Esta Seleucia del Tigris no es Seleucia, el puerto
+  de Antioquía de Siria.
+fuentes:
+- it-babilonia
+- it-seleucia
+buscar: Seleuco Nicátor Babilonia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La razón ya no cita el capítulo de Hechos donde sale el puerto: esa cita ponía este suceso en la página de ese
+    capítulo, al que no pertenece.'
+  fuente: it-seleucia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoacaz-de-juda
+nombre: Jehoacaz
+nombres:
+- nombre: Jehoacaz
+- nombre: Salum
+  nota: Nombre que le dan Jeremías 22:11 y 1 Crónicas 3:15.
+desambiguacion: Rey de Judá, hijo de Josías; no es Jehoacaz de Israel, hijo de Jehú.
+no_confundir_con:
+- jehoacaz-de-israel
+- salum-de-israel
+fecha:
+  desde: -627
+  hasta: -627
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 628 a.e.c.
+resumen: Hijo de Josías, rey a los veintitrés años. A los tres meses el faraón Nekó lo encerró en Riblá y se lo llevó a Egipto,
+  donde murió como había dicho Jeremías.
+razon: Perspicacia «Jehoacaz», núm. 3; 2Re 23:30-34 y Jer 22:10-12.
+fuentes:
+- it-jehoacaz
+- 2-reyes-23
+- jeremias-22
+- tnm-a6-b
+enlaces:
+- titulo: 'Perspicacia: «Jehoacaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002372
+  tipo: perspicacia
+- titulo: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: josias
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jehoacaz
+  - 2-reyes-23
+  razon: El pueblo eligió a este hijo de Josías (2Re 23:30).
+  estado: verificado
+- tipo: sucede_a
+  persona: josias
+  deducido: false
+  fuentes:
+  - it-jehoacaz
+  - 2-reyes-23
+  razon: Lo ungieron al morir su padre (2Re 23:30).
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - it-jehoacaz
+  - 2-reyes-23
+  razon: Nekó lo llevó a Egipto y allí murió (2Re 23:34).
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

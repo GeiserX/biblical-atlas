@@ -1,0 +1,137 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ultimos-anos-de-pablo
+nombre: Entre los dos encierros en Roma
+persona: pablo
+referencia: 1Ti 1:3; Tit 1:5; 3:12; 2Ti 4:6-21
+fecha:
+  desde: 61
+  hasta: 65
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 61-65 e.c.
+companeros:
+- tito
+- timoteo
+- trofimo
+resumen: 'Libre hacia 61, Pablo vuelve a viajar: deja a Tito en Creta y a Timoteo en Éfeso, escribe desde Macedonia
+  y piensa invernar en Nicópolis. Hacia 65 está otra vez preso en Roma.'
+razon: Perspicacia «Pablo», «Tito, Carta a» y «Timoteo, Cartas a»; nota de estudio de Hch 28:30. Hechos no lo narra
+  y el orden de las paradas no es seguro.
+fuentes:
+- it-pablo
+- it-tito
+- it-timoteo-cartas
+- nota-hechos-28
+- si-3
+consultado: '2026-09-28'
+estado: verificado
+paradas:
+- orden: 1
+  lugar: roma
+  referencia: Hch 28:30, 31
+  fecha:
+    desde: 61
+    hasta: 61
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61 e.c.
+  nota: Queda libre.
+  razon: 'La nota de estudio de Hch 28:30: al parecer lo juzgan y lo declaran inocente hacia 61.'
+  fuentes:
+  - nota-hechos-28
+  - it-pablo
+  estado: verificado
+- orden: 2
+  lugar: creta
+  referencia: Tit 1:5
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Deja a Tito para nombrar ancianos.
+  razon: 'Perspicacia «Tito, Carta a»: estuvo en Creta con Tito entre su liberación y su último encierro. No se
+    sabe si antes o después de Éfeso.'
+  fuentes:
+  - it-tito
+  - tito-1
+  estado: pendiente
+- orden: 3
+  lugar: efeso
+  referencia: 1Ti 1:3
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Deja a Timoteo.
+  razon: '1Ti 1:3: dejó a Timoteo en Éfeso al partir hacia Macedonia (Perspicacia «Timoteo, Cartas a»).'
+  fuentes:
+  - it-timoteo-cartas
+  - 1-timoteo-1
+  estado: verificado
+- orden: 4
+  lugar: macedonia
+  referencia: 1Ti 1:3; Tit 1:5
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61-64 e.c.
+  nota: Escribe 1 Timoteo y Tito.
+  razon: Perspicacia fecha 1 Timoteo y Tito entre 61 y 64 y cree que las escribió desde Macedonia.
+  fuentes:
+  - it-tito
+  - it-timoteo-cartas
+  - tnm-tabla
+  estado: verificado
+- orden: 5
+  lugar: nicopolis
+  referencia: Tit 3:12
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: narrativa
+    cronologia: tnm
+    texto: 'dentro de c. 61-64 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  nota: Solo consta que pensaba invernar allí; algunos creen que allí lo arrestaron.
+  razon: 'Tit 3:12: había decidido pasar allí el invierno. La nota de Hch 28:30 la cuenta entre los lugares que
+    probablemente visitó.'
+  fuentes:
+  - it-nicopolis
+  - nota-hechos-28
+  - tito-3
+  estado: pendiente
+- orden: 6
+  lugar: roma
+  referencia: 2Ti 1:16, 17; 4:6-8
+  fecha:
+    desde: 65
+    hasta: 65
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 65 e.c.
+  nota: Escribe 2 Timoteo.
+  razon: El estudio 3 (párr. 28) y Perspicacia «Timoteo, Cartas a» sitúan el último encierro hacia 65.
+  fuentes:
+  - si-3
+  - it-timoteo-cartas
+  - 2-timoteo-4
+  estado: verificado

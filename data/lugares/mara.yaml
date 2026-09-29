@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mara
+nombre: Mará
+nombres:
+- nombre: Mará
+  nota: Significa «amargura», por su agua (nota de Éx 15:23).
+- nombre: Marah
+  nota: Grafía de Perspicacia y de la nota de Éx 15:23.
+tipo: lago
+lat: 29.34604
+lon: 32.94284
+precision: punto
+coord_fuente: openbible:ad3970d
+coord_url: https://www.openbible.info/geo/ancient/ad3970d/marah
+coord_nota: 'Punto de ʽEin Hawwara, el sitio con que se suele identificar; el mapa B3 pone Mará sin signo de duda, a diferencia
+  de Elim. Es un lugar de agua: «lago» es el tipo más cercano de la lista.'
+resumen: Lugar donde acampó Israel en el Sinaí, a tres días de marcha del mar Rojo. Su agua era amarga y se volvió dulce cuando
+  Moisés echó en ella un árbol.
+razon: 'Perspicacia «Marah»; Éx 15:22-25. Se suele identificar con ʽEin Hawwara, unos 80 km al sur-sureste de Suez, y el mapa
+  B3 la marca sin duda. OpenBible: solo el punto.'
+fuentes:
+- it-marah
+- tnm-b3
+- openbible-geo
+- exodo-15
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Marah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002897
+  tipo: perspicacia
+- titulo: Éxodo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

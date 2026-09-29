@@ -1,0 +1,76 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: herodes-el-grande
+nombre: Herodes el Grande
+nombres:
+- nombre: Herodes el Grande
+- nombre: Herodes
+desambiguacion: Rey de Judea cuando nació Jesús, padre de Arquelao y de Herodes Antipas; no es el Herodes que mató a Juan
+  el Bautista.
+no_confundir_con:
+- herodes-antipas
+- herodes-agripa-i
+- herodes-agripa-ii
+fecha:
+  desde: -38
+  hasta: 0
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 39-1 a.e.c.
+alternativas:
+- fecha:
+    desde: -4
+    hasta: -3
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: secular
+    texto: muerte en 5 o 4 a.e.c.
+  fuentes:
+  - it-herodes
+  nota: Fecha de muerte que dan algunos cronólogos siguiendo a Josefo y un eclipse parcial de 4 a.e.c.; Perspicacia prefiere
+    1 a.e.c.
+resumen: Rey de Judea de familia idumea, nombrado por Roma hacia 39 a.e.c. y constructor del templo que conoció Jesús. Desconfiado
+  y cruel, mandó matar a los niños de Belén poco antes de morir, probablemente en 1 a.e.c.
+razon: 'Perspicacia «Herodes» (núm. 1: «Rey de Judea», «El templo», «Matanza de niños» y «Fecha de su muerte») da el nombramiento,
+  las obras y la fecha probable de su muerte.'
+fuentes:
+- it-herodes
+- mateo-2
+relaciones:
+- tipo: pariente
+  persona: arquelao
+  relacion: hijo
+  deducido: false
+  fuentes:
+  - mateo-2
+  - it-arquelao
+  razon: Mt 2:22; Perspicacia «Arquelao» (párr. 2).
+  estado: verificado
+- tipo: pariente
+  persona: herodes-antipas
+  relacion: hijo
+  deducido: true
+  fuentes:
+  - it-herodes
+  razon: Perspicacia «Herodes» (núm. 2) lo presenta como hijo de Herodes el Grande y Maltace.
+  estado: verificado
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - mateo-2
+  - jy-cap-7
+  razon: 'Mt 2:1-7: recibe a los astrólogos en Jerusalén y convoca allí a los jefes de los sacerdotes y a los escribas.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  tipo: perspicacia
+- titulo: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  tipo: biblia
+perspicacia: 1200002000#1
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-ulai
+nombre: Río Ulai
+nombres:
+- nombre: Ulai
+tipo: rio
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Río Kerja (Karkheh)
+  geometria:
+    tipo: punto
+    lat: 31.782302
+    lon: 47.869402
+  estado: alternativa
+  fuentes:
+  - it-ulai
+  - openbible-geo
+  razon: 'Perspicacia: una de las dos propuestas. Punto representativo del río en OpenBible.'
+  coord_fuente: openbible:a7a7549
+  coord_url: https://www.openbible.info/geo/ancient/a7a7549/ulai
+- nombre: Canal al norte o noreste de Susa
+  geometria:
+    tipo: punto
+    lat: 32.409975
+    lon: 48.147827
+  estado: alternativa
+  fuentes:
+  - it-ulai
+  - openbible-geo
+  razon: 'Perspicacia: la otra propuesta, un canal artificial entre el Kerja y otro río. Coordenada de OpenBible.'
+  coord_fuente: openbible:a7a7549
+  coord_url: https://www.openbible.info/geo/ancient/a7a7549/ulai
+resumen: Corriente de agua que pasaba por Susa o cerca de ella. Junto a ella vio Daniel el carnero y el macho cabrío, quizá
+  solo en visión.
+razon: 'Perspicacia «Ulai» (Da 8:1-3, 16): las propuestas son el río Kerja o un canal al norte o noreste de Susa; los cursos
+  han cambiado y es difícil decidirlo.'
+fuentes:
+- it-ulai
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Ulai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004502
+  tipo: perspicacia
+consultado: '2026-09-28'
+estado: verificado

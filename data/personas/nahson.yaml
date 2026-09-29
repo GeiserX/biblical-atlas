@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahson
+nombre: Nahsón
+nombres:
+- nombre: Nahsón
+perspicacia: '1200003171'
+resumen: 'Hijo de Aminadab y principal de Judá en el desierto: ayudó a Moisés en el primer censo y encabezaba las tropas de
+  Judá en la marcha. Fue abuelo de Boaz.'
+razon: Perspicacia «Nahsón», párr. 1 y 2; Rut 4:20.
+fuentes:
+- it-nahson
+- rut-4
+- mateo-1
+- lucas-3
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Nahsón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003171
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: aminadab-hijo-de-ram
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - it-nahson
+  - numeros-10
+  razon: Rut 4:20.
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 7, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 7, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

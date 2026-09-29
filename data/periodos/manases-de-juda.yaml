@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: manases-de-juda
+nombre: Reinado de Manasés en Judá
+tipo: rey
+persona: manases-de-juda
+fecha:
+  desde: -715
+  hasta: -660
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 716-661 a.e.c.
+lugares:
+- jerusalen
+resumen: Cincuenta y cinco años en Jerusalén, el reinado más largo de Judá.
+razon: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 21.
+fuentes:
+- tnm-a6-b
+- 2-reyes-21
+- it-manases
+buscar: Manasés rey
+consultado: '2026-09-28'
+estado: verificado

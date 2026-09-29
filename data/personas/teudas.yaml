@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: teudas
+nombre: Teudas
+nombres:
+- nombre: Teudas
+perspicacia: '1200004380'
+resumen: Cabecilla de una revuelta de unos 400 hombres, poco antes del año 6, que decía ser alguien importante. Al morir él,
+  sus seguidores se dispersaron. Gamaliel lo citó ante el Sanedrín como aviso.
+razon: Perspicacia «Teudas»; Hch 5:36.
+fuentes:
+- it-teudas
+- hechos-5
+enlaces:
+- titulo: 'Perspicacia: «Teudas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004380
+  tipo: perspicacia
+- titulo: Hechos 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/5
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

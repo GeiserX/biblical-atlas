@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: resa
+nombre: Resá
+nombres:
+- nombre: Resá
+perspicacia: '1200003724'
+resumen: Descendiente de Zorobabel y antepasado de Jesús. En él se separa la línea de Lucas de la de Mateo, que sigue por
+  Abiud.
+razon: Perspicacia «Resá»; Lu 3:27.
+fuentes:
+- it-resa
+- lucas-3
+- it-genealogia-de-jesucristo
+enlaces:
+- titulo: 'Perspicacia: «Resá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003724
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: zorobabel
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - lucas-3
+  razon: Lu 3:27 lo llama hijo de Zorobabel; Perspicacia «Resá» lo entiende como descendiente, así que va como antepasado.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

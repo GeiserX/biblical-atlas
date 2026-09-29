@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-habla-a-los-judios-de-roma
+titulo: Pablo habla a los judíos principales de Roma
+fecha:
+  desde: 59
+  hasta: 59
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 59 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2817
+lugares:
+- roma
+personas:
+- pablo
+pasajes:
+- Hch 28:17-22
+resumen: A los tres días de llegar, Pablo convoca a los judíos importantes y les explica que lo entregaron preso sin culpa
+  y que tuvo que apelar a César. No han recibido noticias de Judea y quieren oírlo.
+razon: Hch 28:17-22 y «Testimonio completo», cap. 27, párr. 10-13. La llegada a Roma es de c. 59 (estudio 3, párr. 27).
+fuentes:
+- it-pablo
+- si-3
+- hch-28
+- bt-27
+buscar: Pablo casa alquilada Roma
+historial:
+- fecha: '2026-09-29'
+  cambio: El suceso abarcaba Hch 28:17-31; la segunda reunión (28:23-28) y los dos años de predicación (28:30, 31) pasan a
+    sucesos propios.
+  fuente: hch-28
+- fecha: '2026-09-29'
+  cambio: Queda la primera reunión, a los tres días de llegar (Hch 28:17-22).
+  fuente: hch-28
+- fecha: '2026-09-29'
+  cambio: Con solo la primera reunión, la fecha es la de la llegada, c. 59; los años 59-61 van al suceso de los dos años.
+  fuente: hch-28
+- fecha: '2026-09-29'
+  cambio: El resumen cubre solo la primera reunión.
+  fuente: hch-28
+- fecha: '2026-09-29'
+  cambio: La razón cita el nuevo tramo y su fecha.
+  fuente: hch-28
+consultado: '2026-09-29'
+estado: verificado

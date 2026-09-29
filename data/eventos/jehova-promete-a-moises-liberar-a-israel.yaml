@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-promete-a-moises-liberar-a-israel
+titulo: Jehová promete a Moisés liberar a Israel
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+orden_relato:
+  serie: exodo
+  orden: 5022
+lugares:
+- egipto
+personas:
+- moises
+- aaron
+pasajes:
+- Éx 5:22, 23
+- Éx 6:1-13
+- Éx 6:28-30
+- Éx 7:1-7
+resumen: Moisés se queja a Jehová, que promete sacar a Israel con mano fuerte y darle la tierra jurada a los patriarcas. El
+  pueblo, abatido, no escucha. Jehová hace a Moisés como Dios ante el faraón, y a Aarón su profeta.
+razon: 'El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Perspicacia «Moisés»,
+  párr. 9 y 14, y «Aarón», párr. 4: Moisés tenía 80 años y Aarón 83.'
+fuentes:
+- exodo-5
+- exodo-6
+- exodo-7
+- si-3
+- it-moises
+- it-aaron
+enlaces:
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

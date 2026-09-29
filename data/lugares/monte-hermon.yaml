@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-hermon
+nombre: Monte Hermón
+nombres:
+- nombre: Hermón
+- nombre: Sirión
+  nota: Nombre que le daban los sidonios (Dt 3:9). Como Sl 29:6 lo pone junto al Líbano, hay quien cree que designa todo el
+    Antilíbano.
+- nombre: Senir
+  nota: Nombre que le daban los amorreos (Dt 3:9); quizá también de una parte del Antilíbano (1Cr 5:23).
+- nombre: Siyón
+  nota: Otro nombre del monte, distinto de Sion (Dt 4:48).
+tipo: monte
+lat: 33.4
+lon: 35.85
+precision: punto
+coord_fuente: openbible:a341fe8
+coord_url: https://www.openbible.info/geo/ancient/a341fe8/mount-hermon
+resumen: El monte más alto de la región, nevado casi todo el año, en el extremo sur del Antilíbano. Sus nieves alimentan el
+  Jordán y fue el límite norte de la Tierra Prometida.
+razon: 'Perspicacia «Hermón» (nombres, altura, rocío y nieves, límite norte) y «Sirión». Sl 29:6 lo llama Sirión. OpenBible:
+  solo el punto.'
+fuentes:
+- it-hermon
+- it-sirion
+- openbible-geo
+- salmos-29
+- salmos-42
+- salmos-133
+- deuteronomio-3
+- deuteronomio-4
+- cantar-de-los-cantares-4
+- it-senir
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Hermón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001999
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Sirión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004146
+  tipo: perspicacia
+- titulo: Salmos 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/29
+  tipo: biblia
+- titulo: Salmo 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/42
+  tipo: biblia
+- titulo: Salmo 133 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/133
+  tipo: biblia
+- titulo: 'Perspicacia: «Senir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003896
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

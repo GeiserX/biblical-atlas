@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-sana-a-eneas
+titulo: Pedro cura a Eneas en Lida
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 36 e.c.
+orden_relato:
+  serie: hechos
+  orden: 932
+lugares:
+- lida
+- llanura-de-saron
+personas:
+- pedro
+- eneas
+pasajes:
+- Hch 9:32-35
+resumen: Recorriendo la región, Pedro llega a Lida y cura a Eneas, paralítico desde hacía ocho años. Los habitantes
+  de Lida y de la llanura de Sarón se vuelven al Señor.
+razon: 'Perspicacia «Eneas» (párr. 2) y «Lida» (párr. 2). Año: Perspicacia «Dorcas» (párr. 2 y 3) pone en 36 la
+  muerte de Dorcas, cuando Pedro aún estaba en Lida.'
+fuentes:
+- it-eneas
+- it-lida
+- it-dorcas
+- hch-9
+buscar: Eneas Lida
+consultado: '2026-09-28'
+estado: verificado

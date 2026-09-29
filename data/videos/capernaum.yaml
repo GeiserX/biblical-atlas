@@ -1,101 +1,101 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: capernaum
-generated_on: "2026-09-28"
+lugar: capernaum
+generado: "2026-09-28"
 videos:
   - docid: "pub-gnj_3_VIDEO"
-    title: "Episodio 3: “Ese soy yo”"
+    titulo: "Episodio 3: “Ese soy yo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
-    published: "2026-01-19"
-    hits: 6
-    terms:
+    publicado: "2026-01-19"
+    menciones: 6
+    terminos:
       "Capernaum": 3
       "Capernaúm": 3
   - docid: "pub-jwb_202102_5_VIDEO"
-    title: "Un primer vistazo a “Las buenas noticias según Jesús”"
+    titulo: "Un primer vistazo a “Las buenas noticias según Jesús”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202102_5_VIDEO&appLanguage=S"
-    published: "2021-02-01"
-    hits: 6
-    terms:
+    publicado: "2021-02-01"
+    menciones: 6
+    terminos:
       "Capernaum": 3
       "Capernaúm": 3
   - docid: "pub-gnj_4_VIDEO"
-    title: "Episodio 4: “Para eso he venido”"
+    titulo: "Episodio 4: “Para eso he venido”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-4-para-eso-he-venido/"
-    published: "2026-05-01"
-    hits: 4
-    terms:
+    publicado: "2026-05-01"
+    menciones: 4
+    terminos:
       "Capernaum": 2
       "Capernaúm": 2
   - docid: "pub-gnj_6_VIDEO"
-    title: "Episodio 6: “¿Eres tú el que tiene que venir?”"
+    titulo: "Episodio 6: “¿Eres tú el que tiene que venir?”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-6-eres-t%C3%BA-el-que-tiene-que-venir/"
-    published: "2026-05-01"
-    hits: 4
-    terms:
+    publicado: "2026-05-01"
+    menciones: 4
+    terminos:
       "Capernaum": 2
       "Capernaúm": 2
   - docid: "pub-jwb-108_8_VIDEO"
-    title: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+    titulo: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_8_VIDEO&appLanguage=S"
-    published: "2024-01-01"
-    hits: 4
-    terms:
+    publicado: "2024-01-01"
+    menciones: 4
+    terminos:
       "Capernaum": 2
       "Capernaúm": 2
   - docid: "pub-co-r21_131_VIDEO"
-    title: "David Schafer: Entre con fe por la puerta para trabajar más. Aprenda un nuevo idioma"
+    titulo: "David Schafer: Entre con fe por la puerta para trabajar más. Aprenda un nuevo idioma"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_131_VIDEO&appLanguage=S"
-    published: "2021-09-13"
-    hits: 2
-    terms:
+    publicado: "2021-09-13"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-co-r21_7_VIDEO"
-    title: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_7_VIDEO&appLanguage=S"
-    published: "2021-07-26"
-    hits: 2
-    terms:
+    publicado: "2021-07-26"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-gnj_2_VIDEO"
-    title: "Episodio 2: “Este es mi Hijo”"
+    titulo: "Episodio 2: “Este es mi Hijo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
-    published: "2026-01-19"
-    hits: 2
-    terms:
+    publicado: "2026-01-19"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-jwb-095_11_VIDEO"
-    title: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
+    titulo: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_11_VIDEO&appLanguage=S"
-    published: "2023-04-21"
-    hits: 2
-    terms:
+    publicado: "2023-04-21"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-jwb-108_12_VIDEO"
-    title: "Informe sobre la serie “Las buenas noticias según Jesús” (2023)"
+    titulo: "Informe sobre la serie “Las buenas noticias según Jesús” (2023)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_12_VIDEO&appLanguage=S"
-    published: "2024-01-15"
-    hits: 2
-    terms:
+    publicado: "2024-01-15"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-jwb-108_13_VIDEO"
-    title: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
+    titulo: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_13_VIDEO&appLanguage=S"
-    published: "2024-01-02"
-    hits: 2
-    terms:
+    publicado: "2024-01-02"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1
   - docid: "pub-jwb-108_20_VIDEO"
-    title: "Stephen Lett: El carro de Jehová avanza a toda velocidad"
+    titulo: "Stephen Lett: El carro de Jehová avanza a toda velocidad"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-108_20_VIDEO&appLanguage=S"
-    published: "2024-01-02"
-    hits: 2
-    terms:
+    publicado: "2024-01-02"
+    menciones: 2
+    terminos:
       "Capernaum": 1
       "Capernaúm": 1

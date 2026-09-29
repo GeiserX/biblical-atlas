@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-con-santiago-y-los-ancianos
+titulo: Pablo informa a Santiago y a los ancianos
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Pentecostés de 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2117
+lugares:
+- jerusalen
+personas:
+- pablo
+- lucas
+- santiago-hermano-de-jesus
+pasajes:
+- Hch 21:18-25
+resumen: Al día siguiente de llegar, Pablo cuenta a Santiago y a todos los ancianos lo que Dios ha hecho entre las naciones.
+  Por los rumores sobre él, le piden que se purifique con cuatro hombres que tienen un voto.
+razon: El estudio 3 (párr. 26) fecha la llegada en el Pentecostés de 56; Hch 21:17-26.
+fuentes:
+- si-3
+- hch-21
+buscar: Pablo Santiago ancianos Jerusalén
+historial:
+- fecha: '2026-09-29'
+  cambio: La llegada (Hch 21:15-17) y la purificación en el templo (Hch 21:26) pasan a sucesos propios; aquí queda la reunión
+    del día siguiente.
+  fuente: hch-21
+- fecha: '2026-09-29'
+  cambio: El resumen deja la acogida de los hermanos, que ahora es parte de pablo-se-hospeda-con-mnason, y dice que la reunión
+    fue al día siguiente (Hch 21:18).
+  fuente: hch-21
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-reprende-a-los-jefes-del-ejercito
+titulo: Moisés reprende a los jefes del ejército
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  nota: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+orden_relato:
+  serie: numeros
+  orden: 31013
+lugares:
+- llanuras-deserticas-de-moab
+personas:
+- moises
+- eleazar-hijo-de-aaron
+pasajes:
+- Nú 31:13-24
+resumen: Fuera del campamento, Moisés se indigna porque los jefes dejaron vivas a las mujeres que hicieron pecar a Israel.
+  Manda matar a los niños varones y a las que no eran vírgenes, y purificarse siete días.
+razon: 'Nú 31:13-24; Eleazar da además la ley para purificar el botín. Perspicacia «Balaam»: las mujeres actuaron por consejo
+  de Balaam. El campamento estaba en las llanuras de Moab.'
+fuentes:
+- numeros-31
+- it-balaam
+- it-moab
+- si-3
+- it-basan
+enlaces:
+- titulo: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  tipo: biblia
+- titulo: 'Perspicacia: «Balaam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000543
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

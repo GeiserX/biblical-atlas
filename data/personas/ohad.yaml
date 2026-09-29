@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ohad
+nombre: Ohad
+nombres:
+- nombre: Ohad
+perspicacia: '1200003307'
+resumen: Tercer hijo de Simeón en la lista de la casa de Jacob. No sale cuando Números 26 enumera las familias simeonitas.
+razon: Perspicacia «Ohad»; Gé 46:10.
+fuentes:
+- it-ohad
+- genesis-46
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Ohad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003307
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-ohad
+  - exodo-6
+  razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

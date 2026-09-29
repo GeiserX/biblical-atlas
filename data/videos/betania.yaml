@@ -1,26 +1,26 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: betania
-generated_on: "2026-09-28"
+lugar: betania
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-100_1_VIDEO"
-    title: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+    titulo: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-100_1_VIDEO&appLanguage=S"
-    published: "2023-01-02"
-    hits: 2
-    terms:
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
       "Betania": 2
   - docid: "pub-jwbvod25_40_VIDEO"
-    title: "Alex Reinmueller: La imaginación fortalece nuestra fe en la resurrección (Juan 11:43, 44)"
+    titulo: "Alex Reinmueller: La imaginación fortalece nuestra fe en la resurrección (Juan 11:43, 44)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_40_VIDEO&appLanguage=S"
-    published: "2025-10-24"
-    hits: 2
-    terms:
+    publicado: "2025-10-24"
+    menciones: 2
+    terminos:
       "Betania": 2
   - docid: "pub-pk_47_VIDEO"
-    title: "¿Quiénes deberían ser mis amigos?"
+    titulo: "¿Quiénes deberían ser mis amigos?"
     url: "https://www.jw.org/es/biblioteca/videos/hazte-amigo-jehova/Qui%C3%A9nes-deber%C3%ADan-ser-mis-amigos/"
-    published: "2023-01-02"
-    hits: 2
-    terms:
+    publicado: "2023-01-02"
+    menciones: 2
+    terminos:
       "Betania": 2

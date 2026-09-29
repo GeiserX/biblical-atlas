@@ -1,0 +1,408 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesus
+nombre: Jesús
+nombres:
+- nombre: Jesús
+- nombre: Jesucristo
+  nota: Nombre con el título Cristo, «Ungido», que le corresponde desde su bautismo (Perspicacia).
+- nombre: la Palabra
+  nota: Título que Juan da a Jesús (Jn 1:1, 14; Ap 19:13). Según la nota de estudio, lo llevó como portavoz de Dios en el
+    cielo, en la tierra y tras volver al cielo.
+fecha:
+  desde: 29
+  hasta: 33
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 29-33 e.c.
+resumen: Hijo de Dios, nacido de María en Belén hacia octubre de 2 a.e.c. y criado en Nazaret. Bautizado en el otoño de 29
+  e.c., predicó unos tres años y medio, sobre todo en Galilea, hasta la Pascua de 33.
+razon: Perspicacia «Jesucristo» (secciones «Cuándo nació y cuánto duró su ministerio», «Primeros años» y «Su bautismo») da
+  las fechas y los lugares; la fecha de la ficha es la de su ministerio.
+fuentes:
+- it-jesucristo
+- si-3
+- lucas-2
+- lucas-3
+- mateo-1
+- mateo-2
+- mateo-3
+- mateo-4
+- mateo-5
+- mateo-6
+- mateo-7
+- mateo-8
+- mateo-10
+- mateo-11
+- mateo-12
+- mateo-13
+- mateo-14
+- mateo-15
+- mateo-16
+- mateo-17
+- mateo-18
+- mateo-19
+- mateo-20
+- mateo-21
+- mateo-22
+- mateo-23
+- mateo-24
+- mateo-25
+- mateo-26
+- mateo-27
+- mateo-28
+- marcos-1
+- marcos-2
+- marcos-3
+- marcos-4
+- marcos-5
+- marcos-6
+- marcos-7
+- marcos-8
+- marcos-9
+- marcos-10
+- marcos-11
+- marcos-12
+- marcos-13
+- marcos-14
+- marcos-15
+- marcos-16
+- lucas-1
+- lucas-4
+- lucas-5
+- lucas-6
+- lucas-7
+- lucas-8
+- lucas-9
+- lucas-10
+- lucas-11
+- lucas-12
+- lucas-13
+- lucas-14
+- lucas-15
+- lucas-16
+- lucas-17
+- lucas-18
+- lucas-19
+- lucas-20
+- lucas-21
+- lucas-22
+- lucas-23
+- lucas-24
+- juan-1
+- juan-2
+- juan-3
+- juan-4
+- juan-5
+- juan-6
+- juan-7
+- juan-8
+- juan-9
+- juan-10
+- juan-11
+- juan-12
+- juan-13
+- juan-14
+- juan-15
+- juan-16
+- juan-17
+- juan-18
+- juan-19
+- juan-20
+- juan-21
+- hechos-1
+- hch-2
+- hch-13
+- hch-18
+- hch-23
+- romanos-1
+- 1-corintios-15
+no_afirmamos:
+- 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
+- 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
+relaciones:
+- tipo: nacio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - lucas-2
+  - it-jesucristo
+  - mateo-2
+  razon: Lu 2:4-7; Perspicacia «Jesucristo» («Primeros años»).
+  estado: verificado
+- tipo: vivio_en
+  lugar: nazaret
+  deducido: false
+  fuentes:
+  - mateo-2
+  - lucas-2
+  - it-nazaret
+  - mateo-13
+  - mateo-21
+  - mateo-26
+  - marcos-1
+  - marcos-6
+  - marcos-10
+  - marcos-14
+  - lucas-4
+  - lucas-18
+  - juan-1
+  - juan-18
+  - juan-19
+  - hch-2
+  razon: Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).
+  estado: verificado
+- tipo: vivio_en
+  lugar: capernaum
+  deducido: false
+  fuentes:
+  - mateo-4
+  - mateo-9
+  - it-capernaum
+  - marcos-2
+  - lucas-4
+  razon: Mt 4:13 dice que se fue a vivir allí y Mt 9:1 la llama «su ciudad»; Perspicacia «Capernaum» (párr. 5 y 7).
+  estado: verificado
+- tipo: pariente
+  persona: maria-madre-de-jesus
+  relacion: madre
+  deducido: false
+  fuentes:
+  - lucas-2
+  - mateo-1
+  - mateo-12
+  - mateo-13
+  - marcos-3
+  - marcos-6
+  - lucas-8
+  - juan-2
+  - juan-6
+  - juan-19
+  - hechos-1
+  razon: 'Lu 2:7: María da a luz a su primer hijo.'
+  estado: verificado
+- tipo: pariente
+  persona: jose-esposo-de-maria
+  relacion: padre adoptivo
+  deducido: false
+  fuentes:
+  - it-jose
+  - lucas-3
+  - mateo-1
+  - lucas-2
+  - lucas-4
+  - juan-1
+  - juan-6
+  razon: Perspicacia «José» (núm. 8) lo llama padre adoptivo; Lu 3:23 dice que la gente lo creía hijo de José.
+  estado: verificado
+- tipo: pariente
+  persona: santiago-hermano-de-jesus
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - it-jesucristo
+  - marcos-6
+  - juan-7
+  - jy-cap-65
+  razon: Mt 13:55 nombra a Santiago entre sus hermanos; Perspicacia lo trata como medio hermano.
+  estado: verificado
+- tipo: pariente
+  persona: juan-el-bautista
+  relacion: pariente
+  deducido: true
+  fuentes:
+  - lucas-1
+  - it-jesucristo
+  razon: Lu 1:36 hace a Elisabet pariente de María; Perspicacia «Jesucristo» llama a Juan pariente de Jesús.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: pablo
+  relacion: se le aparece camino de Damasco
+  relacion_inversa: lo ve resucitado camino de Damasco
+  fecha:
+    desde: 34
+    hasta: 34
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 34 e.c.
+  deducido: false
+  fuentes:
+  - hch-9
+  - hch-22
+  - 1-corintios-15
+  - it-pablo
+  - hch-26
+  - 1-corintios-9
+  razon: Hch 9:3-6 y 22:6-10 cuentan la luz y la voz de Jesús en el camino; en 1Co 15:8 Pablo se pone el último entre aquellos
+    a quienes se apareció. Perspicacia «Pablo» (párr. 5) lo narra.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: ananias-de-damasco
+  relacion: le habla en una visión
+  relacion_inversa: Jesús le habla en una visión
+  fecha:
+    desde: 34
+    hasta: 34
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 34 e.c.
+  deducido: false
+  fuentes:
+  - hch-9
+  - it-ananias
+  razon: En Hch 9:10-16 el Señor le habla en una visión y lo manda a buscar a Saulo; en 9:17 Ananías dice que ese Señor es
+    Jesús, el que se le apareció a Saulo en el camino.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: santiago-hermano-de-jesus
+  relacion: se le aparece resucitado
+  relacion_inversa: lo ve resucitado
+  fecha:
+    desde: 33
+    hasta: 33
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+  deducido: true
+  fuentes:
+  - 1-corintios-15
+  - it-santiago
+  razon: 1Co 15:7 dice solo «Santiago»; Perspicacia «Santiago» (apartado 4, párr. 3) cree que fue este, su medio hermano,
+    que antes no creía en él.
+  estado: verificado
+- tipo: se_aparece_a
+  persona: esteban
+  relacion: se le muestra en una visión, de pie a la derecha de Dios
+  relacion_inversa: lo ve en el cielo, en una visión
+  deducido: false
+  fuentes:
+  - hechos-7
+  - it-esteban
+  razon: Hch 7:55, 56; Perspicacia «Esteban» dice que fue el primero en contar que lo había visto resucitado en el cielo,
+    en una visión, poco antes de que lo mataran.
+  estado: verificado
+- tipo: pariente
+  persona: david
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - mateo-1
+  - mateo-21
+  - mateo-22
+  - marcos-10
+  - marcos-12
+  - lucas-1
+  - lucas-3
+  - lucas-18
+  - lucas-20
+  - hch-2
+  - hch-13
+  - romanos-1
+  razon: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
+  estado: verificado
+- tipo: pariente
+  persona: abrahan
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - mateo-1
+  - lucas-3
+  razon: 'Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: belen
+  deducido: true
+  fuentes:
+  - mateo-2
+  - it-jose
+  razon: 'Mt 2:11: los astrólogos lo hallan en una casa de Belén; Perspicacia «José» (núm. 8) dice que la familia residía
+    allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - mateo-2
+  razon: 'Mt 2:14, 15: vivió en Egipto con sus padres hasta la muerte de Herodes.'
+  estado: verificado
+- tipo: pariente
+  persona: jose-hijo-de-jose
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - it-jose
+  - marcos-6
+  - juan-7
+  - jy-cap-65
+  razon: Mt 13:55 nombra a José entre sus hermanos; Perspicacia «José», núm. 9, lo llama medio hermano.
+  estado: verificado
+- tipo: pariente
+  persona: simon-hijo-de-jose
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - it-simon
+  - marcos-6
+  - juan-7
+  - jy-cap-65
+  razon: Mt 13:55 nombra a Simón entre sus hermanos; Perspicacia «Simón», núm. 4, lo llama medio hermano menor.
+  estado: verificado
+- tipo: pariente
+  persona: judas-hermano-de-jesus
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - mateo-13
+  - it-judas
+  - marcos-6
+  - juan-7
+  - jy-cap-65
+  razon: Mt 13:55 nombra a Judas entre sus hermanos; Perspicacia «Judas», núm. 5, cree que ese hermano escribió la carta de
+    Judas.
+  estado: verificado
+- tipo: murio_en
+  lugar: golgota
+  deducido: false
+  fuentes:
+  - mateo-27
+  - it-golgota
+  - marcos-15
+  - lucas-23
+  - juan-19
+  razon: 'Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: galilea
+  deducido: false
+  fuentes:
+  - lucas-23
+  - juan-7
+  razon: 'Lu 23:5-7: lo acusan de haber empezado en Galilea; Pilato pregunta si es galileo y, al saberlo, lo manda a Herodes.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Jesucristo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002451
+  tipo: perspicacia
+- titulo: Lucas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
+  tipo: biblia
+perspicacia: '1200002451'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
+  fuente: mateo-9
+desambiguacion: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- jesus-hijo-de-eliezer

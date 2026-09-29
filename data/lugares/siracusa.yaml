@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: siracusa
+nombre: Siracusa
+nombres:
+- nombre: Siracusa
+tipo: puerto
+lat: 37.06389
+lon: 15.29306
+precision: punto
+coord_fuente: openbible:a1e3697
+coord_url: https://www.openbible.info/geo/ancient/a1e3697/syracuse
+resumen: Ciudad portuaria del sureste de Sicilia; Pablo se quedó allí tres días c. 59.
+razon: 'Perspicacia («Siracusa») describe el lugar; aparece en Hch 28:12. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-siracusa
+- hch-28
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Siracusa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004284
+  tipo: perspicacia
+- titulo: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  tipo: biblia
+consultado: '2026-09-27'
+estado: verificado

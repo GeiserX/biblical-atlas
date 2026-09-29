@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: helec
+nombre: Hélec
+nombres:
+- nombre: Hélec
+- nombre: Héleq
+  nota: Grafía del artículo de Perspicacia.
+perspicacia: '1200001970'
+resumen: Hijo de Galaad y bisnieto de Manasés. Fundó la familia de los helequitas, que entró en el censo de las llanuras de
+  Moab y recibió tierra en Manasés.
+razon: Perspicacia «Héleq»; Nú 26:30.
+fuentes:
+- it-heleq
+- numeros-26
+- josue-17
+enlaces:
+- titulo: 'Perspicacia: «Héleq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001970
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: galaad-hijo-de-makir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-heleq
+  razon: Nú 26:30-32 lo cuenta entre los hijos de Galaad.
+  estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: Jos 17:2 cuenta a sus hijos entre los descendientes de Manasés hijo de José.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

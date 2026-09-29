@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muere-sanson
+titulo: Muere Sansón al derribar la casa de Dagón
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: al final de los 20 años de Sansón como juez)'
+orden_relato:
+  serie: jueces
+  orden: 16023
+lugares:
+- gaza
+personas:
+- sanson
+pasajes:
+- Jue 16:23-30
+resumen: 'Los filisteos celebran su captura con un sacrificio a Dagón y sacan a Sansón para reírse de él. Pide a Jehová fuerza,
+  empuja las dos columnas centrales y la casa cae: mata a más que en vida.'
+razon: '«Gaza», núm. 1: la casa de Dagón estaba en Gaza. «Sansón», párr. 11: murió fiel. Fecha: tras Jefté, que juzga desde
+  c. 1173 («Jefté»; el libro va casi en orden), y antes de Saúl, 1117 (estudio 3).'
+fuentes:
+- jueces-16
+- it-gaza
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+enlaces:
+- titulo: Jueces 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/16
+  tipo: biblia
+- titulo: 'Perspicacia: «Sansón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Gaza»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001622
+  tipo: perspicacia
+buscar: muerte de Sansón casa de Dagón
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,281 @@
+# biblical-earth: fuentes del carril «inciertos» (lugares de ubicación incierta y nombres por época). Esquema en docs/investigacion/README.md.
+it-eden:
+  titulo: Edén
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ararat:
+  titulo: Ararat
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000338
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-sinai:
+  titulo: Sinaí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-horeb:
+  titulo: Horeb
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002073
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-mar-rojo:
+  titulo: Mar Rojo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003669
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-pihahirot:
+  titulo: Pihahirot
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003484
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-gosen:
+  titulo: Gosén
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001745
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-rameses:
+  titulo: Raamsés, Ramesés
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003611
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ur:
+  titulo: Ur
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004518
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-haran:
+  titulo: Harán
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001872
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-sodoma:
+  titulo: Sodoma
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004176
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-gomorra:
+  titulo: Gomorra
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001741
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-mar-salado:
+  titulo: Mar Salado
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-qades:
+  titulo: Qadés
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002564
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-emaus:
+  titulo: Emaús
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001353
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-transfiguracion:
+  titulo: Transfiguración
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004466
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-hermon:
+  titulo: Hermón
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001999
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tabor:
+  titulo: Tabor
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004298
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-ofir:
+  titulo: Ofir
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003336
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-tarsis:
+  titulo: Tarsis
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004325
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-afeq:
+  titulo: Afeq
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-betel:
+  titulo: Betel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b3:
+  titulo: B3 El éxodo de Egipto
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070223
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b10:
+  titulo: B10 Israel en tiempos de Jesús
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070230
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b12-a:
+  titulo: B12-A La última semana de Jesús en la tierra (Parte 1)
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070232
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-juan-1:
+  titulo: Notas de estudio de Juan. Capítulo 1
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070669
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-juan-19:
+  titulo: Notas de estudio de Juan. Capítulo 19
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070687
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-mateo-17:
+  titulo: Notas de estudio de Mateo. Capítulo 17
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070617
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+nota-lucas-24:
+  titulo: Notas de estudio de Lucas. Capítulo 24
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070668
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+lbt-egipto-a-la-tierra-prometida:
+  titulo: De Egipto a la Tierra Prometida
+  obra: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003110
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+lbt-patriarcas:
+  titulo: El mundo de los patriarcas
+  obra: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003104
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+ijwbq-por-que-murio-jesus:
+  titulo: ¿Por qué tuvo que morir Jesús?
+  obra: Respuestas a preguntas bíblicas (jw.org)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/502017152
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+jy-cap-60:
+  titulo: Contemplan en una visión a Cristo glorificado
+  obra: 'Jesús: el camino, la verdad y la vida'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102014663
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+ia-hombre-de-gran-lealtad:
+  titulo: Un hombre de gran lealtad
+  obra: Ejemplos de fe
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102013268
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+w10-ofir:
+  titulo: ¿Lo sabía?
+  obra: La Atalaya (1 de junio de 2010)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2010404
+  nivel: 1
+  publicado: 2010
+  consultado: '2026-09-28'
+w96-rendir-cuenta:
+  titulo: Todos hemos de rendir cuenta a Dios
+  obra: La Atalaya (15 de septiembre de 1996)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1996682
+  nivel: 1
+  publicado: 1996
+  consultado: '2026-09-28'
+g96-observando-el-mundo:
+  titulo: Observando el mundo
+  obra: ¡Despertad! (8 de agosto de 1996)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/101996573
+  nivel: 1
+  publicado: 1996
+  consultado: '2026-09-28'
+w93-sinai:
+  titulo: El Sinaí, monte de Moisés y de misericordia
+  obra: La Atalaya (1993)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1993322
+  nivel: 1
+  publicado: 1993
+  consultado: '2026-09-28'
+g99-monte-sinai:
+  titulo: 'El monte Sinaí: una joya en el desierto'
+  obra: ¡Despertad! (1999)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/101999285
+  nivel: 1
+  publicado: 1999
+  consultado: '2026-09-28'
+w10-haran:
+  titulo: 'Harán: antiguo hervidero de actividad'
+  obra: La Atalaya (15 de mayo de 2010)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2010368
+  nivel: 1
+  publicado: 2010
+  consultado: '2026-09-28'

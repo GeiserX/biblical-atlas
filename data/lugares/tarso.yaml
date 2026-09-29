@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tarso
+nombre: Tarso
+nombres:
+- nombre: Tarso
+tipo: ciudad
+lat: 36.913028
+lon: 34.892056
+precision: punto
+coord_fuente: openbible:a666ea0
+coord_url: https://www.openbible.info/geo/ancient/a666ea0/tarsus
+resumen: Capital de Cilicia y ciudad natal de Pablo, famosa en el siglo I como centro de estudios. Pablo volvió
+  a ella tras su primera visita a Jerusalén.
+razon: 'Perspicacia «Tarso» (párr. 1, 4 y 6); Hch 9:30; 11:25; 21:39; 22:3. Coordenada de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-tarso
+- hch-22
+- openbible-geo
+- hch-9
+enlaces:
+- titulo: 'Perspicacia: «Tarso»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004326
+  tipo: perspicacia
+- titulo: Hechos 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/22
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

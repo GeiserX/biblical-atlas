@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: batalla-del-valle-de-sidim
+titulo: Batalla del valle de Sidim y captura de Lot
+fecha:
+  desde: -1942
+  hasta: -1932
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+orden_relato:
+  serie: genesis
+  orden: 14008
+lugares:
+- valle-de-sidim
+- sodoma
+- gomorra
+- adma
+- zeboyim
+- zoar
+personas:
+- kedorlaomer
+- amrafel
+- arioc-de-elasar
+- tidal
+- bera
+- birsa
+- sinab
+- semeber
+- lot
+pasajes:
+- Gé 14:1-3
+- Gé 14:8-12
+resumen: Tras doce años de vasallaje, se rebelan los cinco reyes del Distrito, entre ellos los de Sodoma y Gomorra. Kedorlaomer
+  y sus aliados los vencen en el valle de Sidim, saquean Sodoma y Gomorra y se llevan a Lot.
+razon: 'Entre 1943 y 1933 a.e.c.: el estudio 3 pone el rescate de Lot antes de 1933. Lleva el orden 14008 porque los versículos
+  4 a 7 cuentan la campaña anterior.'
+fuentes:
+- si-3
+- it-kedorlaomer
+- it-sidim
+- genesis-14
+enlaces:
+- titulo: Génesis 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

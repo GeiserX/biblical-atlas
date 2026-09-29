@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-danitas-toman-lesem
+titulo: Los danitas toman Lésem y la llaman Dan
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras la conquista general y antes de la muerte de Josué)'
+lugares:
+- dan
+- bet-rehob
+personas:
+- jonatan-levita
+pasajes:
+- Jos 19:47
+- Jue 18:27-29
+resumen: Su territorio se les queda pequeño, y parte de la tribu de Dan sube al norte, conquista Lésem, también llamada Lais,
+  se instala en ella y le pone el nombre de su antepasado Dan.
+razon: Perspicacia «Jueces, Libro de», apartado «Orden del libro», ve razonable que tomaran Lais antes de morir Josué, hacia
+  1450 a.e.c. (estudio 3); fue después del sorteo en Siló. Jos 19:47.
+fuentes:
+- josue-19
+- jueces-18
+- si-3
+- it-jueces
+- it-dan
+- it-lesem
+- it-lais
+- it-bet-rehob
+enlaces:
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+orden_relato:
+  serie: josue
+  orden: 19047
+consultado: '2026-09-29'
+estado: verificado
