@@ -4,7 +4,7 @@ name: Bat-Seba
 names:
 - name: Bat-Seba
 perspicacia: '1200000581'
-summary: Hija de Eliam y esposa de Urías el hitita. David cometió adulterio con ella y, muerto Urías, se casó con ella. Fue
+summary: Esposa de Urías el hitita e hija de Eliam. David cometió adulterio con ella y, muerto Urías, se casó con ella. Fue
   madre de Salomón y llegó a reina madre.
 reason: Perspicacia «Bat-seba»; la nota de Mt 1:6 la identifica con la esposa de Urías.
 sources:
@@ -20,6 +20,10 @@ links:
 - title: Salmo 51 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/51
   type: bible
+history:
+- date: '2026-09-30'
+  change: El resumen se escribe con palabras propias; repetía ocho palabras seguidas de 2Sa 11:3.
+  source: 2-samuel-11
 checked_on: '2026-09-29'
 status: verified
 relations:
