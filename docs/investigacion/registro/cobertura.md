@@ -34,7 +34,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
 | [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | [Eclesiastés](../../../data/cobertura/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
-| El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
+| [El Cantar de los Cantares](../../../data/cobertura/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
 | Jeremías | 0 de 52 | 0 de 1364 | 0 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 397 de 1189 | 10377 de 31062 | 33 % |
+| **Total** | 405 de 1189 | 10494 de 31062 | 34 % |
 
 ## Capítulos empezados
 

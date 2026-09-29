@@ -27,6 +27,8 @@ fuentes:
 - salmos-29
 - salmos-42
 - salmos-133
+- cantar-de-los-cantares-4
+- it-senir
 enlaces:
 - titulo: 'Perspicacia: «Hermón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001999
@@ -43,5 +45,8 @@ enlaces:
 - titulo: Salmo 133 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/133
   tipo: biblia
+- titulo: 'Perspicacia: «Senir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003896
+  tipo: perspicacia
 consultado: '2026-09-29'
 estado: verificado
