@@ -1,0 +1,3106 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "jueces",
+ "agente": "escritor-jueces",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caleb-hijo-de-jefune",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:20: como había prometido Moisés, le dieron Hebrón, y expulsó a los tres hijos de Anac de la ciudad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "tío",
+     "deducido": true,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Perspicacia «Otniel», párr. 2: hijo de Quenaz, hermano de Caleb (Jue 1:13; 3:9).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "quenaz-padre-de-otniel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:13: Otniel hijo de Quenaz.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "acsa",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:13: Caleb le da a su hija Acsá por esposa.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acsa",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "acsa",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:12, 13: Caleb la llama «mi hija» y se la da a Otniel.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quenaz-padre-de-otniel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quenaz-padre-de-otniel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:13 admite leer que el hermano de Caleb es Otniel o Quenaz; Perspicacia «Otniel» lo entiende de Quenaz.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sesai",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:10: Judá vence en Hebrón a Sesái, Ahimán y Talmái.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:20 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ahiman-hijo-de-anac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:10: Judá vence en Hebrón a Sesái, Ahimán y Talmái.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:20 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "talmai-hijo-de-anac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hebron",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:10: Judá vence en Hebrón a Sesái, Ahimán y Talmái.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "anac",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:20 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hobab",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "hobab",
+   "campo": "resumen",
+   "antes": "Cuñado de Moisés, hijo de Reuel (Jetró), quenita. Conocía el desierto, y Moisés le pidió que fuera con Israel como guía. Primero se negó; parece que al final los acompañó.",
+   "despues": "Cuñado de Moisés, hijo de Reuel (Jetró), quenita. Conocía el desierto, y Moisés le pidió que fuera con Israel como guía. Primero se negó; parece que al final los acompañó, y los suyos se asentaron al sur de Arad.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade que sus descendientes se asentaron en el desierto de Judá, al sur de Arad, como dice Perspicacia «Hobab» con Jue 1:16.",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "hobab",
+   "campo": "razon",
+   "antes": "Perspicacia «Hobab» y «Quenita»; Nú 10:29-32.",
+   "despues": "Perspicacia «Hobab» y «Quenita»; Nú 10:29-32; Jue 1:16.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita Jue 1:16, de donde sale el asentamiento de los suyos al sur de Arad.",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jetro",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "moises",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jetro",
+     "relacion": "suegro",
+     "deducido": false,
+     "fuentes": [
+      "jueces-1"
+     ],
+     "razon": "Jue 1:16 llama al quenita suegro de Moisés; Perspicacia «Jetró» lo identifica con él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "debir",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gulot-maim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "negueb",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-juda",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "horma",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asquelon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ecron",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-sean",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "taanac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "dor",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ibleam",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meguido",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guezer",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aczib-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rehob-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-semes-de-neftali",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "bet-anat",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ayalon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "saalbim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "subida-de-acrabim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "catat",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1",
+    "it-quitron"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "nahalal",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1",
+    "it-nahalol"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tolemaida",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1",
+    "it-akko"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tolemaida",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Akkó»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200000070",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "tolemaida",
+   "campo": "resumen",
+   "antes": "Puerto cercano al monte Carmelo donde Pablo se detuvo camino de Jerusalén c. 56.",
+   "despues": "Puerto en el extremo norte de la bahía que cierra el monte Carmelo, llamado Akkó antes de Tolemaida. Aser no expulsó a sus cananeos. Pablo se detuvo allí camino de Jerusalén c. 56.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen recoge su nombre antiguo, Akkó, y que Aser no echó a sus cananeos (Jue 1:31; Perspicacia «Akkó»).",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "tolemaida",
+   "campo": "razon",
+   "antes": "Perspicacia («Tolemaida») describe el lugar; aparece en Hch 21:7. La coordenada es de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Tolemaida» y «Akkó» describen el lugar; Jue 1:31 y Hch 21:7. La coordenada es de OpenBible: solo tomamos el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita Perspicacia «Akkó» y Jue 1:31.",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "afec-de-aser",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "afec-de-aser",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Afec",
+     "nota": "Afec de Aser (Perspicacia «Afeq», núm. 2)."
+    },
+    {
+     "nombre": "Afiq",
+     "nota": "Así la llama Jue 1:31."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Afec",
+     "nota": "Afec de Aser (Perspicacia «Afeq», núm. 2)."
+    },
+    {
+     "nombre": "Afic",
+     "nota": "Así la llama Jue 1:31 en la TNM."
+    },
+    {
+     "nombre": "Afiq",
+     "nota": "Grafía de Perspicacia para el nombre de Jue 1:31."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La TNM escribe Afic en Jue 1:31, no Afiq, que es la grafía de Perspicacia. Se añade Afic y Afiq queda como grafía de Perspicacia.",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "afec-de-aser",
+   "campo": "resumen",
+   "antes": "Ciudad del territorio de Aser que la tribu no llegó a conquistar; Jue 1:31 la llama Afiq. Está unos 8 km al SSE de Akkó.",
+   "despues": "Ciudad del territorio de Aser que la tribu no llegó a conquistar; Jue 1:31 la llama Afic. Está unos 8 km al SSE de Akkó.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El nombre de Jue 1:31 es Afic en la TNM; Afiq es la grafía de Perspicacia.",
+    "fuente": "jueces-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "josue-renueva-el-pacto-en-siquem",
+   "campo": "pasajes",
+   "valores": [
+    "Jue 2:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-de-josue",
+   "campo": "pasajes",
+   "valores": [
+    "Jue 2:8, 9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-hijo-de-nun",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "nun",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-2"
+     ],
+     "razon": "Jue 2:8 lo llama hijo de Nun.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "timnat-serah",
+     "deducido": false,
+     "fuentes": [
+      "jueces-2"
+     ],
+     "razon": "Jue 2:9: lo enterraron en Timnat-Heres, el territorio que había heredado.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guilgal",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "timnat-serah",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-gaas",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "resumen",
+   "antes": "Sobrino de Caleb, hijo de su hermano Quenaz. Tomó Debir y recibió por esposa a Acsá, la hija de Caleb. Primer juez que la Biblia nombra después de Josué, libró a Israel de Cusán-risataim.",
+   "despues": "Sobrino de Caleb, hijo de su hermano Quenaz. Tomó Debir y recibió por esposa a Acsá, la hija de Caleb. Primer juez que la Biblia nombra después de Josué, libró a Israel de Cusán-Risataim.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Cusán-risataim pasa a Cusán-Risataim, la grafía de la TNM en Jue 3:8, 10.",
+    "fuente": "jueces-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "otniel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "quenaz-padre-de-otniel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-3"
+     ],
+     "razon": "Jue 3:9: Otniel hijo de Quenaz.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quenaz-padre-de-otniel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "quenaz-padre-de-otniel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "caleb-hijo-de-jefune",
+     "relacion": "hermano",
+     "deducido": true,
+     "fuentes": [
+      "jueces-3"
+     ],
+     "razon": "Jue 3:9 repite la frase ambigua; Perspicacia «Otniel» la entiende de Quenaz.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mesopotamia",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerico",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3",
+    "w97-ehud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guera-hijo-de-bela",
+   "campo": "no_confundir_con",
+   "valores": [
+    "guera-padre-de-ehud"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ehud-hijo-de-guera",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001268#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ehud-hijo-de-guera",
+   "campo": "fuentes",
+   "valores": [
+    "w97-ehud"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ehud-hijo-de-guera",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "guera-padre-de-ehud",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-3",
+      "it-guera-i"
+     ],
+     "razon": "Jue 3:15: Ehúd hijo de Guerá.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "jueces-3",
+      "it-ehud"
+     ],
+     "razon": "Jue 3:15 lo llama benjaminita; Perspicacia «Ehúd», núm. 2, lo pone en la tribu de Benjamín.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guilgal",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jabin-rey-de-canaan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jabin-rey-de-canaan",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hazor",
+     "deducido": false,
+     "fuentes": [
+      "jueces-4",
+      "it-jabin"
+     ],
+     "razon": "Jue 4:2 dice que reinaba en Hazor, y el v. 17 lo llama rey de Hazor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hazor",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sisara-de-haroset",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sisara-de-haroset",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "haroset",
+     "deducido": false,
+     "fuentes": [
+      "jueces-4",
+      "it-sisara",
+      "it-haroset"
+     ],
+     "razon": "Jue 4:2: vivía en Haróset de las naciones; Perspicacia «Sísara», núm. 1, subraya que no en Hazor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jabin-rey-de-canaan",
+     "relacion": "jefe del ejército de",
+     "deducido": false,
+     "fuentes": [
+      "jueces-4",
+      "it-sisara"
+     ],
+     "razon": "Jue 4:2, 7: mandaba el ejército de Jabín, rey de Canaán.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "zaananim",
+     "deducido": true,
+     "fuentes": [
+      "jueces-4",
+      "it-zaananim",
+      "it-jael"
+     ],
+     "razon": "Jue 4:17-21: muere en la tienda de Jael; Perspicacia «Zaananim» la pone junto a ese árbol, como dice Jue 4:11.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "debora-profetisa",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001138#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "debora-profetisa",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "region-montanosa-de-efrain",
+     "deducido": false,
+     "fuentes": [
+      "jueces-4",
+      "it-debora"
+     ],
+     "razon": "Jue 4:5: juzgaba a los israelitas junto a una palmera que llevaba su nombre, en los montes de Efraín, entre Ramá y Betel.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "barac",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000559"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "barac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abinoam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-4",
+      "it-abinoam"
+     ],
+     "razon": "Jue 4:6, 12: Barac hijo de Abinoam.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "quedes-de-neftali",
+     "deducido": true,
+     "fuentes": [
+      "jueces-4",
+      "it-barac",
+      "it-quedes"
+     ],
+     "razon": "Jue 4:6: Débora lo manda llamar de Quedes de Neftalí; Perspicacia «Barac» y «Quedes», núm. 2, lo hacen vecino de allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "quedes-de-neftali",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Quedes"
+    },
+    {
+     "nombre": "Quedes-Neftalí",
+     "nota": "Así la llama Jue 4:6."
+    },
+    {
+     "nombre": "Quedes en Galilea",
+     "nota": "Así la llama Jos 20:7."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Quedes"
+    },
+    {
+     "nombre": "Quedes de Neftalí",
+     "nota": "Así la llama Jue 4:6. Perspicacia escribe Quedes-neftalí."
+    },
+    {
+     "nombre": "Quedes en Galilea",
+     "nota": "Así la llama Jos 20:7."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El nombre decía Quedes-Neftalí, pero la TNM de Jue 4:6 escribe «Quedes de Neftalí».",
+    "fuente": "jueces-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "quedes-de-neftali",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "heber-hijo-de-berias",
+   "campo": "no_confundir_con",
+   "valores": [
+    "heber-el-quenita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hobab",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "hobab",
+   "campo": "no_afirmamos",
+   "valores": [
+    "Que Hobab fuera el suegro de Moisés, como lo llama Jue 4:11: Perspicacia «Hobab» lo explica como otro nombre del suegro o como el que representaba a su padre Reuel."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zaananim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-tabor",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cison",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "cison",
+   "campo": "nombres",
+   "antes": [
+    {
+     "nombre": "Cisón"
+    },
+    {
+     "nombre": "Valle torrencial de Cisón",
+     "nota": "Así lo llama Jue 4:7. Sl 83:9 dice «arroyo de Cisón»; su nota da «wadi»."
+    }
+   ],
+   "despues": [
+    {
+     "nombre": "Cisón"
+    },
+    {
+     "nombre": "Arroyo de Cisón",
+     "nota": "Así lo llaman Jue 4:7, 13 y Sl 83:9; la nota de Jue 4:7 da «wadi de Cisón»."
+    },
+    {
+     "nombre": "Valle torrencial de Cisón",
+     "nota": "Así lo titula Perspicacia."
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nota de «Valle torrencial de Cisón» decía que así lo llama Jue 4:7, pero la TNM de estudio dice «arroyo de Cisón» en 4:7 y 4:13. Se añade ese nombre.",
+    "fuente": "jueces-4"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "heber-hijo-de-berias",
+   "campo": "no_confundir_con",
+   "valores": [
+    "heber-el-quenita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "debora-profetisa",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "debora-profetisa",
+   "campo": "resumen",
+   "antes": "Profetisa que juzgaba a Israel bajo una palmera entre Ramá y Betel. Llamó a Barac para vencer al ejército de Jabín, que mandaba Sísara, y compuso con él un canto de victoria.",
+   "despues": "Profetisa que juzgaba a Israel bajo una palmera entre Ramá y Betel. Llamó a Barac para vencer al ejército de Jabín, que mandaba Sísara, y cantó con él la victoria en una canción que ella compuso, al menos en parte.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El canto no lo compuso con Barac: lo cantaron juntos, y la primera persona de Jue 5:7 muestra que lo compuso ella, al menos en parte (Perspicacia «Débora», núm. 2).",
+    "fuente": "jueces-5"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "debora-profetisa",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Jueces 5 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "barac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "barac",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Jueces 5 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "barac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abinoam",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-5",
+      "it-abinoam"
+     ],
+     "razon": "Jue 5:1 y 5:12 lo llaman hijo de Abinoam.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "debora-profetisa",
+     "deducido": false,
+     "fuentes": [
+      "jueces-5"
+     ],
+     "razon": "Jue 5:1, 12 y 15: cantan juntos la victoria y los príncipes de Isacar van con los dos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sisara-de-haroset",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sisara-de-haroset",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Jueces 5 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "taanac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "meguido",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cison",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cison",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Aguas de Meguidó",
+     "nota": "Jue 5:19. Perspicacia «Cisón» dice que se cree que la expresión se refiere a este torrente."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "gedeon",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001685"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gedeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "joas-padre-de-gedeon",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-6",
+      "it-gedeon"
+     ],
+     "razon": "Jue 6:11, 29, 30: Gedeón es hijo de Joás el abí-ezrita.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abi-ezer-hijo-de-galaad",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "jueces-6",
+      "it-abi-ezer"
+     ],
+     "razon": "Jue 6:11, 34: su padre era abí-ezrita y los abí-ezritas lo siguen. Perspicacia «Abí-ézer», núm. 1, lo da como antepasado de Gedeón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "ofra-de-gedeon",
+     "deducido": false,
+     "fuentes": [
+      "jueces-6",
+      "it-gedeon",
+      "it-ofra"
+     ],
+     "razon": "Jue 6:11, 27: el ángel lo encuentra trillando en Ofrá, en tierra de su padre, y teme a los hombres de la ciudad. Perspicacia «Gedeón», párr. 1.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoas-de-juda",
+   "campo": "no_confundir_con",
+   "valores": [
+    "joas-padre-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoas-de-israel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "joas-padre-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aser",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zabulon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "neftali",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "valle-de-jezreel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "valle-de-jezreel",
+   "campo": "resumen",
+   "antes": "Llanura que baja desde la ciudad de Jezreel hacia Bet-seán; en sentido amplio, del Carmelo al Jordán. Oseas anunció que allí se rompería el arco de Israel.",
+   "despues": "Llanura que baja desde la ciudad de Jezreel hacia Bet-seán; en sentido amplio, del Carmelo al Jordán. Allí acamparon los madianitas que Gedeón venció, y Oseas anunció que allí se rompería el arco de Israel.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no nombraba la derrota de Madián ante Gedeón, que Perspicacia «Jezreel», núm. 5, sitúa en este valle (Jue 6:33; 7:12-22).",
+    "fuente": "jueces-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "valle-de-jezreel",
+   "campo": "razon",
+   "antes": "Perspicacia «Jezreel», núm. 5, párr. 1 y 2, y núm. 4, párr. 6; Os 1:5. Coordenada de OpenBible: solo tomamos el punto. Perspicacia «Jezreel», núm. 5, párr. 1 y 2; Jos 17:16. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Jezreel», núm. 5, párr. 1 y 2, y núm. 4, párr. 6; Jos 17:16; Jue 6:33; 7:12-22; Os 1:5. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón repetía la cita de Perspicacia y la nota de OpenBible, restos de juntar dos lecturas. Queda una sola, con Jue 6:33 y 7:12-22.",
+    "fuente": "jueces-6"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gedeon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oreb",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oreb",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "roca-de-oreb",
+     "deducido": false,
+     "fuentes": [
+      "jueces-7",
+      "it-oreb"
+     ],
+     "razon": "Jue 7:25: los efraimitas lo mataron en la roca que tomó su nombre.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zeeb",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zeeb",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "lagar-de-zeeb",
+     "deducido": false,
+     "fuentes": [
+      "jueces-7",
+      "it-zeeb"
+     ],
+     "razon": "Jue 7:25: los efraimitas lo mataron en el lagar que tomó su nombre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "oreb",
+     "deducido": false,
+     "fuentes": [
+      "jueces-7"
+     ],
+     "razon": "Jue 7:25: Oreb y Zeeb son los dos príncipes de Madián que capturan los de Efraín.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aser",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "neftali",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "valle-de-jezreel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "abel-mehola",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "abel-mehola",
+   "campo": "resumen",
+   "antes": "Hogar de Eliseo, donde Elías lo encontró arando. No se sabe dónde estaba; Perspicacia se inclina por el oeste del Jordán, al sur de Bet-seán.",
+   "despues": "Hogar de Eliseo, donde Elías lo encontró arando; antes, hasta sus afueras huyeron los madianitas vencidos por Gedeón. No se sabe dónde estaba; Perspicacia se inclina por el oeste del Jordán, al sur de Bet-seán.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no nombraba la huida de Madián de Jue 7:22, la primera vez que sale la ciudad según Perspicacia «Abel-meholá», párr. 2.",
+    "fuente": "jueces-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "abel-mehola",
+   "campo": "razon",
+   "antes": "Perspicacia «Abel-meholá», párr. 1-5; 1Re 19:16-19. Sin identificación segura: dos candidatos.",
+   "despues": "Perspicacia «Abel-meholá», párr. 1-5; Jue 7:22; 1Re 19:16-19. Sin identificación segura: dos candidatos.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade Jue 7:22, que Perspicacia usa para situar la ciudad al oeste del Jordán.",
+    "fuente": "jueces-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gedeon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gedeon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "joas-padre-de-gedeon",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-8",
+      "it-gedeon"
+     ],
+     "razon": "Jue 8:13, 29 y 32 lo llaman hijo de Joás; lo enterraron en la tumba de su padre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "ofra-de-gedeon",
+     "deducido": false,
+     "fuentes": [
+      "jueces-8",
+      "it-gedeon",
+      "it-ofra"
+     ],
+     "razon": "Jue 8:27, 29: expuso el efod en Ofrá, su ciudad, y volvió a su casa a vivir.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "ofra-de-gedeon",
+     "deducido": true,
+     "fuentes": [
+      "it-ofra",
+      "jueces-8"
+     ],
+     "razon": "Perspicacia «Ofrá», núm. 3, habla de su muerte y entierro en Ofrá; Jue 8:32 da solo la tumba de Joás allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "zebah",
+   "campo": "resumen",
+   "antes": "Rey de Madián que, con Zalmuná, oprimió a Israel durante los siete años de saqueos madianitas y mató a hermanos de Gedeón. Huyó hasta Qarqor, allí lo capturaron y Gedeón lo ejecutó.",
+   "despues": "Rey de Madián que, con Zalmuná, oprimió a Israel los siete años de saqueos madianitas y mató en el Tabor a hermanos de Gedeón. Gedeón cayó sobre su campamento en Carcor, lo alcanzó cuando huía y lo ejecutó.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Carcor, con la grafía de la TNM, sustituye a Qarqor; y no lo capturaron en Carcor, sino al huir de allí (Jue 8:10-12; Perspicacia «Gedeón»).",
+    "fuente": "jueces-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zebah",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zalmuna",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zalmuna",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "zebah",
+     "deducido": false,
+     "fuentes": [
+      "jueces-8"
+     ],
+     "razon": "Jue 8:5, 12: los dos son los reyes de Madián y actúan siempre juntos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "oreb",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zeeb",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zeeb",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "oreb",
+     "deducido": false,
+     "fuentes": [
+      "jueces-8"
+     ],
+     "razon": "Jue 8:3: Oreb y Zeeb, los príncipes de Madián.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abimelec-de-tiempos-de-abrahan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "abimelec-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abimelec-de-tiempos-de-isaac",
+   "campo": "no_confundir_con",
+   "valores": [
+    "abimelec-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "akis",
+   "campo": "no_confundir_con",
+   "valores": [
+    "abimelec-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jetro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jeter-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoas-de-juda",
+   "campo": "no_confundir_con",
+   "valores": [
+    "joas-padre-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jehoas-de-israel",
+   "campo": "no_confundir_con",
+   "valores": [
+    "joas-padre-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sucot",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "penuel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jogbeha",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-tabor",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-8"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "jogbeha",
+   "campo": "resumen",
+   "antes": "Ciudad fortificada con corrales de piedra que los gaditas reconstruyeron antes de cruzar el Jordán. Más tarde Gedeón pasó por allí para sorprender a los madianitas.",
+   "despues": "Ciudad fortificada con corrales de piedra que los gaditas reconstruyeron antes de cruzar el Jordán. Más tarde Gedeón subió por el camino de los nómadas, al este de ella, para sorprender a los madianitas.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jue 8:11 dice que Gedeón pasó por el camino al este de Nóbah y Jogbehá, no por la ciudad.",
+    "fuente": "jueces-8"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-9",
+    "it-milo",
+    "it-meonenim",
+    "it-baal-berit"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "siquem",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Bet-Miló",
+     "nota": "Casa de Miló: quizá una fortaleza de Siquem, y tal vez la misma torre de Siquem. Su gente ayudó a hacer rey a Abimélec (Perspicacia «Miló»)."
+    },
+    {
+     "nombre": "Torre de Siquem",
+     "nota": "Lugar fortificado de la ciudad. Sus líderes se escondieron en el templo de El-Berit y murieron en el incendio que causó Abimélec."
+    },
+    {
+     "nombre": "Templo de Baal-Berit",
+     "nota": "Casa del Baal de Siquem, llamado también El-Berit. Guardaba plata, y en su bóveda murieron unas mil personas (Perspicacia «Baal-berit»)."
+    },
+    {
+     "nombre": "Árbol grande de Meonenim",
+     "nota": "Árbol que se veía desde Siquem. Su nombre significa practicantes de magia; quizá allí se practicaba (Perspicacia «Meonenim, Árbol grande de»)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-guerizim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jotan",
+   "campo": "desambiguacion",
+   "antes": null,
+   "despues": "Rey de Judá, hijo de Uzías; no el hijo menor del juez Gedeón ni el descendiente de Judá llamado hijo de Jahdai."
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jotan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jotan-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abimelec-de-tiempos-de-abrahan",
+   "campo": "no_confundir_con",
+   "valores": [
+    "abimelec-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abimelec-de-tiempos-de-isaac",
+   "campo": "no_confundir_con",
+   "valores": [
+    "abimelec-hijo-de-gedeon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tola-hijo-de-isacar",
+   "campo": "no_confundir_con",
+   "valores": [
+    "tola-hijo-de-pua"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tola-hijo-de-isacar",
+   "campo": "desambiguacion",
+   "antes": "Tolá hijo de Isacar; no el juez de Israel hijo de Puá.",
+   "despues": "Tolá hijo de Isacar; no el juez de Israel hijo de Pua.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El padre del juez Tolá se escribe Pua en la TNM (Jue 10:1); Puá es la grafía de Perspicacia.",
+    "fuente": "jueces-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jair-hijo-de-segub",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jair-juez"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pua-partera",
+   "campo": "no_confundir_con",
+   "valores": [
+    "pua-hijo-de-dodo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "puva",
+   "campo": "no_confundir_con",
+   "valores": [
+    "pua-hijo-de-dodo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "havot-jair",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mizpa-de-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jefte",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002413"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jefte",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "galaad-padre-de-jefte",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11",
+      "it-jefte",
+      "it-galaad"
+     ],
+     "razon": "Jue 11:1: su padre se llamaba Galaad; su madre había sido prostituta.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "tob",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11",
+      "it-tob",
+      "it-jefte"
+     ],
+     "razon": "Jue 11:3: huyó de sus medio hermanos y se asentó en la tierra de Tob.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "mizpa-de-galaad",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11",
+      "it-mizpa"
+     ],
+     "razon": "Jue 11:34: al volver de la batalla fue a su casa, en Mizpá.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "manases-hijo-de-jose",
+     "relacion": "antepasado",
+     "deducido": true,
+     "fuentes": [
+      "it-jefte",
+      "jueces-11"
+     ],
+     "razon": "Perspicacia «Jefté», párr. 1, lo cuenta entre los manasitas; Jue 11:1 lo llama galaadita.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "galaad-hijo-de-makir",
+   "campo": "no_confundir_con",
+   "valores": [
+    "galaad-padre-de-jefte"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sehon",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "hesbon",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11"
+     ],
+     "razon": "Jue 11:19: Sehón reinaba en Hesbón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "balac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zipor",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11"
+     ],
+     "razon": "Jue 11:25: Balac hijo de Zipor, rey de Moab.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "moab",
+     "deducido": false,
+     "fuentes": [
+      "jueces-11"
+     ],
+     "razon": "Jue 11:25: era rey de Moab.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mizpa-de-galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mizpa-de-galaad",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Mizpé de Galaad",
+     "nota": "Así la llama Jue 11:29; Perspicacia la trata en «Mizpá, Mizpé», núm. 4."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "manases",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ammon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arnon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hesbon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jahaz",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cades",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "aroer",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-vuelve-a-cades",
+   "campo": "pasajes",
+   "valores": [
+    "Jue 11:16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-pasa-junto-a-seir",
+   "campo": "pasajes",
+   "valores": [
+    "Jue 11:18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-acampa-de-obot-al-arnon",
+   "campo": "pasajes",
+   "valores": [
+    "Jue 11:18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jefte",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "murio_en",
+     "lugar": "galaad",
+     "deducido": false,
+     "fuentes": [
+      "jueces-12",
+      "it-jefte"
+     ],
+     "razon": "Jue 12:7: tras seis años de juez murió y lo enterraron en su ciudad, en Galaad. El texto no nombra la ciudad.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elon-el-hitita",
+   "campo": "no_confundir_con",
+   "valores": [
+    "elon-el-zabulonita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "elon-hijo-de-zabulon",
+   "campo": "no_confundir_con",
+   "valores": [
+    "elon-el-zabulonita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "rio-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen-de-zabulon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "territorio-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zabulon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zafon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-12"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "zafon",
+   "campo": "resumen",
+   "antes": "Ciudad de Gad en el valle del Jordán, parte de lo que quedaba del reino de Sehón. Algunos la sitúan unos 10 km al norte-noroeste de Sucot.",
+   "despues": "Ciudad de Gad en el valle del Jordán, parte de lo que quedaba del reino de Sehón. Algunos la sitúan unos 10 km al norte-noroeste de Sucot. Hacia allí cruzaron los efraimitas para enfrentarse a Jefté.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade Jue 12:1: la TNM de estudio lee «en dirección a Zafón», con «hacia el norte» solo en la nota al pie.",
+    "fuente": "jueces-12"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "zafon",
+   "campo": "razon",
+   "antes": "Perspicacia «Zafón»; Jos 13:27. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Zafón»; Jos 13:27; Jue 12:1, donde la nota admite «hacia el norte». OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también Jue 12:1.",
+    "fuente": "jueces-12"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003823"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-13",
+    "it-zora"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manoah",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-13",
+      "it-manoah"
+     ],
+     "razon": "Jue 13:2, 24: la esposa de Manóah da a luz a Sansón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "zora",
+     "deducido": true,
+     "fuentes": [
+      "jueces-13",
+      "it-zora"
+     ],
+     "razon": "Jue 13:2, 24: sus padres eran de Zorá. Perspicacia «Zorá» dice que nació allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zora",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "estaol",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-13"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "estaol",
+   "campo": "resumen",
+   "antes": "Ciudad de la Sefelá dada a Judá, en la frontera de Dan, unos 21 km al oeste de Jerusalén. Allí empezó el espíritu de Jehová a mover a Sansón, y allí lo enterraron.",
+   "despues": "Ciudad de la Sefelá dada a Judá, en la frontera de Dan, unos 21 km al oeste de Jerusalén. Cerca de ella, en Mahané-Dan, el espíritu de Jehová empezó a mover a Sansón, y allí cerca lo enterraron.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jue 13:25 no pone el suceso en Estaol, sino en Mahané-Dan, entre Zorá y Estaol; Perspicacia «Estaol» dice que fue en sus cercanías.",
+    "fuente": "jueces-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manoah",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-14",
+      "it-manoah",
+      "it-sanson"
+     ],
+     "razon": "Jue 14:2-10 habla de su padre, al que el capítulo anterior llama Manóah; Perspicacia «Manóah» lo pone con Sansón en Timná.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "timna-de-dan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asquelon",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "penasco-de-etam",
+     "deducido": false,
+     "fuentes": [
+      "jueces-15",
+      "it-etam"
+     ],
+     "razon": "Jue 15:8, 11: tras la matanza se instala en una cueva de ese peñasco, y allí lo buscan los de Judá; Perspicacia «Etam», núm. 2, dice que vivió allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "timna-de-dan",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sanson",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "manoah",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-16",
+      "it-manoah"
+     ],
+     "razon": "Jue 16:31 dice que lo enterraron en la tumba de Manóah, su padre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "gaza",
+     "deducido": true,
+     "fuentes": [
+      "jueces-16",
+      "it-gaza"
+     ],
+     "razon": "Jue 16:21-30: lo llevan preso a Gaza y lo sacan de la cárcel a la casa de Dagón. Perspicacia «Gaza», núm. 1, pone esa casa en Gaza.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "hebron",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zora",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "estaol",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "miqueas-profeta",
+   "campo": "no_confundir_con",
+   "valores": [
+    "miqueas-de-efrain"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "los-danitas-toman-lesem",
+   "campo": "personas",
+   "valores": [
+    "jonatan-levita"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "los-danitas-toman-lesem",
+   "campo": "lugares",
+   "valores": [
+    "bet-rehob"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "los-danitas-toman-lesem",
+   "campo": "fuentes",
+   "valores": [
+    "it-bet-rehob"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "zora",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "estaol",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "quiryat-jearim",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "dan-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "dan-hijo-de-jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-18"
+     ],
+     "razon": "Jue 18:29 llama a Dan hijo de Israel, es decir, de Jacob.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guersom-hijo-de-moises",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "belen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Belén de Judá",
+     "nota": "Así la llaman Jue 17:7-9 y 19:1, 2, 18, para distinguirla de la Belén de Zabulón, según Perspicacia «Belén», núm. 1."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-montanosa-de-efrain",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Guibeah",
+     "nota": "Otra grafía que da la nota de Jue 19:12 para todo el libro; es la que usa Perspicacia."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "resumen",
+   "antes": "Ciudad de Benjamín en un alto de la cordillera central, cerca del camino de Jerusalén a Ramá. Hogar de Saúl y, al parecer, primera capital de su reino.",
+   "despues": "Ciudad de Benjamín en un alto de la cordillera central, cerca del camino de Jerusalén a Ramá. En tiempos de los jueces, sus hombres abusaron de la concubina de un levita. Hogar de Saúl y, al parecer, su primera capital.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade el crimen de Jue 19:22-28, lo que más la señala en tiempos de los jueces según Perspicacia «Guibeah», núm. 2.",
+    "fuente": "jueces-19"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "israel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mizpa-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20",
+    "jueces-21"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "mizpa-de-benjamin",
+   "campo": "resumen",
+   "antes": "Ciudad de Benjamín. Samuel reunió allí a Israel, Asá la fortificó y, tras 607 a.e.c., Guedalías gobernó desde ella hasta que lo asesinaron.",
+   "despues": "Ciudad de Benjamín. En tiempos de los jueces las tribus se juntaron allí contra Guibeá; luego Samuel reunió en ella a Israel, Asá la fortificó y, tras 607 a.e.c., Guedalías gobernó desde ella.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade la asamblea contra Guibeá (Jue 20:1-11; 21:1), el primer suceso de la ciudad según Perspicacia «Mizpá, Mizpé», núm. 3, y acorta lo de Guedalías.",
+    "fuente": "jueces-20"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "guibea-de-benjamin",
+   "campo": "resumen",
+   "antes": "Ciudad de Benjamín en un alto de la cordillera central, cerca del camino de Jerusalén a Ramá. En tiempos de los jueces, sus hombres abusaron de la concubina de un levita. Hogar de Saúl y, al parecer, su primera capital.",
+   "despues": "Ciudad de Benjamín en un alto de la cordillera central, cerca del camino de Jerusalén a Ramá. Israel la quemó por el abuso de sus hombres contra la concubina de un levita. Hogar de Saúl y, al parecer, su capital.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que Israel incendió la ciudad al vencer a Benjamín (Jue 20:37-40; Perspicacia «Guibeah», núm. 2).",
+    "fuente": "jueces-20"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betel",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20",
+    "jueces-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "benjamin",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20",
+    "jueces-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galaad",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "finehas-hijo-de-eleazar",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "eleazar-hijo-de-aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-20"
+     ],
+     "razon": "Jue 20:28 lo llama hijo de Eleazar.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "abuelo",
+     "deducido": false,
+     "fuentes": [
+      "jueces-20"
+     ],
+     "razon": "Jue 20:28: hijo de Eleazar, hijo de Aarón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "sucede_a",
+     "persona": "eleazar-hijo-de-aaron",
+     "deducido": true,
+     "fuentes": [
+      "jueces-20"
+     ],
+     "razon": "Jue 20:27, 28 lo muestra sirviendo ante el Arca como sumo sacerdote.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "eleazar-hijo-de-aaron",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "aaron",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "jueces-20"
+     ],
+     "razon": "Jue 20:28 llama a Eleazar hijo de Aarón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "silo",
+   "campo": "fuentes",
+   "valores": [
+    "jueces-21"
+   ]
+  }
+ ],
+ "preguntas": []
+}

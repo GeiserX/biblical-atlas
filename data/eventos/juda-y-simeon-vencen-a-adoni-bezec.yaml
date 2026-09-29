@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-y-simeon-vencen-a-adoni-bezec
+titulo: Judá y Simeón vencen a Adoni-Bézec en Bézec
+fecha:
+  desde: -1449
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y 1117 a.e.c. (tiempo narrativo: poco después de la muerte de Josué)'
+orden_relato:
+  serie: jueces
+  orden: 1004
+lugares:
+- bezec
+- jerusalen
+personas:
+- adoni-bezec
+presentes:
+- adoni-bezec
+pasajes:
+- Jue 1:4-7
+resumen: Judá y Simeón derrotan a 10.000 cananeos y perizitas en Bézec. Atrapan a Adoni-Bézec y le cortan los pulgares y los
+  dedos gordos, como él hizo a 70 reyes. Lo llevan a Jerusalén, donde muere.
+razon: Perspicacia «Adoni-bézeq» y «Bézeq», núm. 1; Jue 1:4-7. Pasa poco después de la muerte de Josué, hacia 1450 a.e.c.
+  (estudio 3), y antes de 1117 a.e.c.
+fuentes:
+- jueces-1
+- it-adoni-bezeq
+- it-bezeq
+- si-3
+enlaces:
+- titulo: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Adoni-bézeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000109
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

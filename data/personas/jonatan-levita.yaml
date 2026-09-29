@@ -1,0 +1,89 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-levita
+nombre: Jonatán
+nombres:
+- nombre: Jonatán
+perspicacia: 1200002506#1
+desambiguacion: El levita de Jue 17 y 18, sacerdote de Miqueas y luego de los danitas; no Jonatán hijo de Saúl ni los otros
+  doce Jonatán de Perspicacia.
+resumen: Joven levita que vivía en Belén de Judá y se hizo sacerdote del santuario de ídolos de Miqueas, en Efraín, aunque
+  no descendía de Aarón. Los danitas se lo llevaron, y él y sus hijos fueron sacerdotes en Dan.
+razon: Perspicacia «Jonatán», núm. 1, y «Miqueas», núm. 1; Jue 17:7-13; 18:3-6, 18-20, 30. Jue 18:30 le da el nombre.
+fuentes:
+- it-jonatan
+- it-miqueas
+- it-guersom
+- jueces-17
+- jueces-18
+enlaces:
+- titulo: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  tipo: perspicacia
+- titulo: Jueces 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/17
+  tipo: biblia
+- titulo: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  tipo: biblia
+no_afirmamos:
+- 'Que fuera de la tribu de Judá: la nota de Jue 17:7 y Perspicacia leen «de la familia de Judá» como que residía en Belén.'
+- 'Que fuera hijo directo de Guersom: la nota de Jue 18:30 admite «descendiente», y Perspicacia «Guersom» lo llama así.'
+relaciones:
+- tipo: vivio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - jueces-17
+  - it-jonatan
+  razon: 'Jue 17:7-9: llevaba un tiempo viviendo en Belén de Judá y salió de allí a buscar dónde asentarse.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: region-montanosa-de-efrain
+  deducido: false
+  fuentes:
+  - jueces-17
+  - jueces-18
+  - it-jonatan
+  razon: 'Jue 17:11, 12 y 18:15: se quedó a vivir en una casa junto a la de Miqueas, en la región montañosa de Efraín.'
+  estado: verificado
+- tipo: acompana
+  persona: miqueas-de-efrain
+  relacion: sacerdote de
+  deducido: false
+  fuentes:
+  - jueces-17
+  - jueces-18
+  - it-miqueas
+  razon: 'Jue 17:10-12 y 18:4: Miqueas lo contrató por diez piezas de plata al año y lo nombró su sacerdote.'
+  estado: verificado
+- tipo: pariente
+  persona: guersom-hijo-de-moises
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - jueces-18
+  - it-guersom
+  - it-jonatan
+  razon: Jue 18:30 lo llama hijo de Guersom; la nota dice que puede ser «descendiente», y así lo presenta Perspicacia «Guersom»,
+    núm. 2.
+  estado: verificado
+- tipo: pariente
+  persona: moises
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - jueces-18
+  - it-jonatan
+  razon: 'Jue 18:30: descendía de Moisés por medio de Guersom.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: dan
+  deducido: false
+  fuentes:
+  - jueces-18
+  - it-jonatan
+  razon: 'Jue 18:27-30: los danitas lo llevaron a Lais, que llamaron Dan, y allí él y sus descendientes fueron sacerdotes
+    de la tribu.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

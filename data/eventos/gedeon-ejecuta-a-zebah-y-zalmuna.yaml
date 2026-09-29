@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: gedeon-ejecuta-a-zebah-y-zalmuna
+titulo: Gedeón ejecuta a Zébah y Zalmuná
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Josué y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 8018
+lugares: []
+personas:
+- gedeon
+- zebah
+- zalmuna
+- jeter-hijo-de-gedeon
+pasajes:
+- Jue 8:18-21
+- Sl 83:11
+resumen: 'Los reyes admiten haber matado en el Tabor a hombres que parecían príncipes: eran hermanos de Gedeón. Su hijo Jéter
+  no se atreve a ejecutarlos, y lo hace él; se queda los adornos de sus camellos.'
+razon: 'Sin lugar; Perspicacia «Gedeón» lo pone tras lo de Penuel. Desde Otniel el libro va en orden (Perspicacia «Jueces,
+  Libro de»): tras morir Josué, c. 1450 a.e.c. (estudio 3), y antes de Jefté, hacia 1173 a.e.c. (Perspicacia «Jefté»).'
+fuentes:
+- jueces-8
+- si-3
+- it-jueces
+- it-jefte
+- it-gedeon
+- it-zebah
+- it-zalmuna
+- it-jeter
+- it-tabor
+- salmos-83
+enlaces:
+- titulo: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

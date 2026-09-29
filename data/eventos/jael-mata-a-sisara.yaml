@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jael-mata-a-sisara
+titulo: Jael mata a Sísara en su tienda
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 4017
+lugares:
+- zaananim
+personas:
+- sisara-de-haroset
+- jael
+- barac
+presentes:
+- sisara-de-haroset
+- jael
+- barac
+pasajes:
+- Jue 4:17-22
+- Jue 5:24-27
+resumen: Sísara huye a la tienda de Jael, porque la casa de Héber estaba en paz con Jabín. Ella lo tapa y le da leche; dormido,
+  le clava una estaca en las sienes. Luego enseña el cadáver a Barac.
+razon: 'Perspicacia «Jael» y «Zaananim»: la tienda estaba junto a ese árbol (Jue 4:11). Se cumple lo que anunció Débora en
+  Jue 4:9. Límites: muerte de Josué, c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+fuentes:
+- jueces-4
+- it-jael
+- it-zaananim
+- it-sisara
+- si-3
+- it-jefte
+- jueces-5
+enlaces:
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

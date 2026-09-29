@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-efraimitas-capturan-a-oreb-y-zeeb
+titulo: Los efraimitas capturan y matan a Oreb y a Zeeb
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: en tiempos de los jueces, antes de Jefté)'
+orden_relato:
+  serie: jueces
+  orden: 7023
+lugares:
+- bet-bara
+- rio-jordan
+- region-montanosa-de-efrain
+- roca-de-oreb
+- lagar-de-zeeb
+- neftali
+- aser
+- manases
+personas:
+- oreb
+- zeeb
+- gedeon
+presentes: []
+pasajes:
+- Jue 7:23-25
+- Sl 83:11
+- Is 10:26
+resumen: Neftalí, Aser y Manasés persiguen a Madián. Llamado por Gedeón, Efraín cierra los pasos del Jordán hasta Bet-Bará
+  y mata a los príncipes Oreb y Zeeb en la roca y el lagar que llevan sus nombres. Le traen sus cabezas.
+razon: 'Perspicacia «Oreb», núm. 1 y 2, «Zeeb» y «Bet-bará»; Jue 7:23-25. Roca y lagar no tienen sitio conocido: el suceso
+  no sitúa a nadie. Límites: Jueces desde c. 1450 (tabla de libros); Jefté desde c. 1173 (Perspicacia «Jefté»).'
+fuentes:
+- jueces-7
+- it-oreb
+- it-zeeb
+- it-bet-bara
+- tnm-tabla
+- it-jefte
+- it-jueces
+- salmos-83
+enlaces:
+- titulo: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  tipo: biblia
+- titulo: 'Perspicacia: «Oreb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003339
+  tipo: perspicacia
+buscar: Oreb Zeeb efraimitas Bet-bará Jordán
+consultado: '2026-09-29'
+estado: verificado

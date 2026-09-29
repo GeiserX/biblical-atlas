@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lehi
+nombre: Lehí
+nombres:
+- nombre: Lehí
+- nombre: Ramat-Lehí
+  nota: Nombre que le puso Sansón tras vencer con la quijada (Jue 15:17); según la nota al pie, significa ‘lugar encumbrado
+    de la quijada’.
+- nombre: En-Hacore
+  nota: La fuente de Lehí que Dios abrió para Sansón (Jue 15:19), ‘fuente del que llama’. Perspicacia la escribe En-haqore.
+tipo: region
+lat: 31.748796
+lon: 35.001006
+precision: incierto
+coord_fuente: openbible:aeeaca0
+coord_url: https://www.openbible.info/geo/ancient/aeeaca0/lehi
+coord_nota: Khirbet es-Suyag, primera identificación de OpenBible. Perspicacia la da solo como propuesta, a menos de 3 km
+  al este de Bet-Semes.
+resumen: Lugar de Judá, de sitio exacto desconocido, donde los filisteos buscaron a Sansón y él mató a mil con una quijada
+  de burro. Allí brotó para él la fuente En-Hacore. Samá venció luego a los filisteos en Lehí.
+razon: 'Perspicacia «Lehí», «Ramat-lehí» y «En-haqore»; Jue 15:9-19; 2Sa 23:11. La Atalaya de septiembre de 2023 la pone probablemente
+  en Judá. OpenBible: solo el punto.'
+fuentes:
+- it-lehi
+- it-ramat-lehi
+- it-en-haqore
+- w23-apoyese-en-jehova-como-sanson
+- openbible-geo
+- jueces-15
+enlaces:
+- titulo: 'Perspicacia: «Lehí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002716
+  tipo: perspicacia
+- titulo: Jueces 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

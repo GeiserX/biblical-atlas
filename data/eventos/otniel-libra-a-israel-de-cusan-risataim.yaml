@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: otniel-libra-a-israel-de-cusan-risataim
+titulo: Otniel libra a Israel de Cusán-Risataim
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 3007
+lugares: []
+personas:
+- otniel
+- cusan-risataim
+presentes: []
+pasajes:
+- Jue 3:7-11
+resumen: Israel sirve a los Baales y Jehová lo deja ocho años en manos de Cusán-Risataim. Cuando claman, el espíritu de Jehová
+  viene sobre Otniel, que lo vence y juzga al pueblo. Siguen cuarenta años de paz.
+razon: 'Perspicacia «Otniel», párr. 3, y «Jueces, Libro de»: desde Jue 3:7 el relato va en orden. El texto no dice dónde fue
+  la batalla. Límites: muerte de Josué, c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+fuentes:
+- jueces-3
+- it-otniel
+- it-cusan-risataim
+- it-jueces
+- si-3
+- it-jefte
+enlaces:
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

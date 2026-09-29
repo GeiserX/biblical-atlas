@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-deja-a-las-naciones-para-probar-a-israel
+titulo: Jehová deja a las naciones para probar a Israel
+fecha:
+  desde: -1449
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y 1117 a.e.c. (tiempo narrativo: después de la muerte de Josué)'
+orden_relato:
+  serie: jueces
+  orden: 2020
+lugares: []
+personas: []
+presentes: []
+pasajes:
+- Jue 2:20-23
+- Jue 3:1-6
+resumen: Como Israel ha roto el pacto, Jehová decide no expulsar a ninguna de las naciones que quedaban al morir Josué. Las
+  deja para ver si su pueblo sigue su camino, como hicieron sus padres.
+razon: Jue 2:20-23; Jue 3:1-6 sigue con la lista de esas naciones. Tras la muerte de Josué, hacia 1450 a.e.c., y antes de
+  1117 a.e.c. (estudio 3).
+fuentes:
+- jueces-2
+- it-jueces
+- si-3
+- jueces-3
+enlaces:
+- titulo: Jueces 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/2
+  tipo: biblia
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-abimelec
+titulo: Muere Abimélec en Tebez
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 9050
+lugares:
+- tebez
+personas:
+- abimelec-hijo-de-gedeon
+pasajes:
+- Jue 9:50-57
+- 2Sa 11:21
+resumen: Abimélec toma Tebez y ataca la torre donde se ha encerrado la gente. Una mujer le parte el cráneo con una piedra
+  de molino, y él pide a su escudero que lo mate. Los israelitas se vuelven a casa.
+razon: Perspicacia «Abimélec», núm. 4, y «Tebez»; Joab lo recuerda en 2Sa 11:21. Su reinado duró tres años (Jue 9:22). Fecha
+  como la de Jue 9:1-4.
+fuentes:
+- jueces-9
+- it-abimelec
+- it-tebez
+- si-3
+- it-jueces
+- it-jefte
+enlaces:
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

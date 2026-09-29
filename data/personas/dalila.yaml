@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dalila
+nombre: Dalila
+nombres:
+- nombre: Dalila
+perspicacia: '1200001149'
+resumen: Mujer del valle de Sorec de la que Sansón se enamoró al final de su judicatura. A cambio de plata de los gobernantes
+  filisteos le sacó el secreto de su fuerza y lo entregó. No vuelve a aparecer.
+razon: Perspicacia «Dalila»; Jue 16:4-21. Cada gobernante le prometió 1.100 piezas de plata (Jue 16:5).
+no_afirmamos:
+- 'Que Dalila fuera la prostituta de Gaza de Jue 16:1: Perspicacia dice que aquella vivía en Gaza y Dalila en el valle de
+  Sorec.'
+- 'Que fuera filistea: Perspicacia la cree probablemente israelita, porque le compraron la traición en vez de apelar a su
+  patria.'
+fuentes:
+- it-dalila
+- jueces-16
+enlaces:
+- titulo: 'Perspicacia: «Dalila»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001149
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: valle-de-sorec
+  deducido: false
+  fuentes:
+  - jueces-16
+  - it-dalila
+  razon: Jue 16:4 la llama mujer del valle de Sorec; Perspicacia «Dalila» dice que vivía allí y que escondió a los filisteos
+    en su casa.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

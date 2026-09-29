@@ -142,9 +142,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Josué, Jueces y Amós (desde Oseas)
 
 - **Guilgal.** Am 4:4 y 5:5 usan `guilgal-cerca-de-betel`, cuya `razon` los cita. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) no tiene ficha: la crea Josué con otro id, y las dos llevan `no_confundir_con`.
-- **Mizpá de Galaad.** `mizpa-de-galaad` (Perspicacia «Mizpá, Mizpé», núm. 4) cita Jue 11:34 en su `razon`. Jueces 10-11 la usa y añade `jefte` `vivio_en` `mizpa-de-galaad`.
-- **Valles.** `valle-de-acor` (Os 2:15) es el de Acán (Jos 7:24-26; 15:7) y `valle-de-jezreel` (Os 1:5) el de Jos 17:16 y Jue 6:33.
-- **Guibeá.** Os 9:9 y 10:9 aluden al crimen de Jue 19-20 (Perspicacia «Guibeah», núm. 2). Cuando Jueces cree el suceso, va en `menciona` de los tramos Oseas 9:7-9 y 10:9-10.
 
 ## Para Números, Deuteronomio y 1 Samuel (desde Oseas)
 
@@ -208,23 +205,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Los huesos de José (Jos 24:32).** Hch 7:16 dice que los llevaron a Siquem. Cuando Josué cree ese entierro, añade «Hch 7:16» a sus pasajes y lo pone en el tramo 9-16 de Hechos 7.
 - **Queriyot-hezrón (Jos 15:25).** Perspicacia «Judas», núm. 4, dice que el apelativo Iscariote suele leerse como procedencia de ese lugar y que Judas y su padre probablemente eran de allí. Juan no lo nombra, así que `judas-iscariote` y `simon-iscariote` no llevan relación con él; Josué decide si la añade como deducida y pendiente.
 
-## Para Jueces
-
-- **Pasajes ya puestos.** Jue 11:17 en `edom-niega-el-paso-a-israel` y Jue 11:19-22 en `israel-vence-a-sehon`.
-- **Hobab.** `hobab` lleva a Moisés como cuñado (deducido, Perspicacia «Hobab») y a `jetro` como padre. Jue 4:11 lo llama suegro de Moisés: Jueces lo relee sin cambiar a quién es el suegro.
-- **Hormá y la subida de Acrabim.** Jue 1:17 usa `horma` (Zefat ya está en `nombres`) y Jue 1:36, `subida-de-acrabim`. La Beer de Jue 9:21 es la entrada núm. 2 de Perspicacia y lleva otro id que `beer`.
-- **Abí-Ézer y Jaír.** Jue 6 reutiliza `abi-ezer-hijo-de-galaad`, que desde Josué 17 se escribe Abí-Ézer, como en la TNM. El juez Jaír (Jue 10:3) es otro que `jair-hijo-de-segub`: `no_confundir_con` en las dos fichas.
-- **Pua (también para 1 Crónicas).** La TNM escribe Pua para tres personas (Perspicacia «Puá»): `puva`, el hijo de Isacar, así llamado en 1Cr 7:1; `pua-partera`, de Éx 1:15; y el padre del juez Tolá (Jue 10:1), núm. 3, que aún no tiene ficha y, como hijo de Dodó, lleva `pua-hijo-de-dodo`.
-- **Sucesos de Josué con pasaje en Jueces.** `caleb-echa-a-los-hijos-de-anac-de-hebron` (Jue 1:10, 20), `otniel-toma-debir-y-se-casa-con-acsa` (Jue 1:11-13), `acsa-pide-a-caleb-gulot-maim` (Jue 1:14, 15) y `los-danitas-toman-lesem` (Jue 18:27-29) ya llevan ese pasaje: sus tramos los ponen en `entidades`.
-- **Fecha de Otniel y Debir.** Esos tres sucesos de Caleb y Otniel van entre 1467 y c. 1450 a.e.c. Perspicacia «Debir», núm. 2, deja abierto si Otniel tomó la ciudad tras la muerte de Josué (Jue 1:1): Jueces decide si cambia el límite.
-- **Muerte de Josué.** Jue 2:6-9 repite Jos 24:28-31: se añade «Jue 2:8, 9» a `muerte-de-josue`. Timnat-Heres ya está en `nombres` de `timnat-serah`.
-- **Luz y Betel.** `betel` lleva Luz con `hasta` −1472, pero Jos 16:2 y 18:13 aún usan ese nombre y Perspicacia «Betel» liga el cambio a Jue 1:22-26. Jueces decide si mueve el año.
-- **Ids de Josué.** Jue 1:27-35 usa `bet-sean`, `taanac`, `dor`, `ibleam`, `meguido`, `guezer`, `catat`, `nahalal`, `aczib-de-aser`, `afec-de-aser`, `rehob-de-aser`, `bet-semes-de-neftali`, `bet-anat`, `saalbim` y `ayalon`. Jue 4:6 usa `quedes-de-neftali`; Jue 4:11, `zaananim`; Jue 12:8, `belen-de-zabulon`; Jue 2:1, `guilgal`. La Aroer de Jue 11:33 quizá es `aroer-de-gad`.
-- **El ángel de Bokim.** Perspicacia «Guilgal», núm. 1, ve posible que el ángel de Jue 2:1 sea el príncipe del ejército de Jos 5:13-15 (`el-principe-del-ejercito-de-jehova-se-aparece-a-josue`).
-- **Jabín.** `jabin-rey-de-hazor` (Jos 11) y `jabin-rey-de-canaan` (Jue 4) son fichas distintas, con `no_confundir_con` y un parentesco `antepasado` pendiente, porque Perspicacia solo lo ve posible.
-- **Finehás.** Jue 20:27, 28 lo muestra de sumo sacerdote; `finehas-hijo-de-eleazar` ya lleva `sucede_a` Eleazar y existe `sumo-sacerdocio-de-eleazar`.
-- **Debir.** Perspicacia ve una segunda toma de Debir por Otniel (Jue 1:11-13) después de la de Josué (`josue-toma-debir`, Jos 10:38, 39).
-
 ## Para Isaías, Jeremías y Nehemías
 
 - **Ciudades de Moab que ya existen.** `dibon`, `nebo` (la ciudad, no `monte-nebo`), `quiryataim`, `baal-meon`, `aroer`, `jahaz`, `hesbon`, `eleale`, `sibma`, `jazer`, `medeba`, `ar` y `arnon`. Perspicacia solo da como probable que Bet-Diblataim (Jer 48:22) sea `almon-diblataim`.
@@ -239,10 +219,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
 - **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
-
-## Para Deuteronomio, Josué y Jueces
-
-- **El monte Guerizim.** Existe `monte-guerizim` desde Jn 4:20 (punto de OpenBible `a30e967`). Dt 11:29, 27:12, Jos 8:33 y Jue 9:7 usan ese id.
 
 ## Para Gálatas y 1 Corintios
 
@@ -300,3 +276,37 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Pasajes sin poner.** Hch 7:44, 45 (el tabernáculo entra con Josué) puede ir en `entrada-en-canaan`; Hch 7:15, 16 y Heb 11:22, en `entierran-los-huesos-de-jose-en-siquem`.
 
+## Para 1 Samuel (desde Jueces)
+
+- **Bézec.** `bezec` es la de Jue 1:4, 5 (Perspicacia «Bézeq», núm. 1). La de 1Sa 11:8 es la núm. 2: otro id y `no_confundir_con` en las dos.
+- **Jabés-Galaad.** `jabes-galaad` existe desde Jue 21. 1Sa 11 y 31:11-13 usan ese id.
+- **Samuel repasa a los jueces (1Sa 12:9-11).** Nombra a Sísara, Jerubaal, Bedán y Jefté. Los sucesos ya existen (`jabin-oprime-a-israel`, `barac-derrota-a-sisara-junto-al-cison`, `gedeon-derrota-a-madian-con-300-hombres`, `jefte-vence-a-los-ammonitas`): van en `menciona` del tramo. Bedán no tiene ficha; 1 Samuel decide con Perspicacia.
+- **El destierro de Jue 18:30.** Perspicacia «Jonatán», núm. 1, lo liga a la captura del Arca (1Sa 4:11, 22). Cuando 1 Samuel cree ese suceso, lo pone en `menciona` del tramo Jueces 18:30-31.
+
+## Para 2 Samuel (desde Jueces)
+
+- **La muerte de Abimélec.** `muerte-de-abimelec` lleva 2Sa 11:21 en `pasajes`: va en el tramo de 2 Samuel 11. Ese versículo llama Jerubeset a Gedeón; el nombre se añade a `nombres` de `gedeon`.
+- **Lehí.** La razón de `lehi` cita 2Sa 23:11, la batalla de Samá: va en ese tramo.
+- **Tob y Bet-Rehob (2Sa 10:6, 8).** Bet-Rehob es `bet-rehob`. Perspicacia solo cree que Istob sea `tob`: ficha aparte o mención, según su artículo.
+
+## Para 1 y 2 Crónicas (desde Jueces)
+
+- **Pua.** La TNM escribe Pua para tres personas (Perspicacia «Puá»): `puva`, el hijo de Isacar, que 1Cr 7:1 llama Pua; `pua-partera`, de Éx 1:15; y `pua-hijo-de-dodo`, padre del juez Tolá.
+- **Baal-Hermón.** 1Cr 5:23 usa `baal-hermon`, junto a `monte-hermon`.
+- **Etam.** `penasco-de-etam` es Perspicacia «Etam», núm. 2 (Jue 15). La de 1Cr 4:32 (núm. 1) y la de 2Cr 11:6 (núm. 3) llevan otro id.
+
+## Para 2 Reyes (desde Jueces)
+
+- **Sela.** `sela-de-los-amorreos` es la de Jue 1:36. La Sela de Edom (2Re 14:7), Perspicacia núm. 2, lleva otro id.
+
+## Para Isaías (desde Jueces)
+
+- **El día de Madián.** `gedeon-derrota-a-madian-con-300-hombres` lleva Is 9:4 y `los-efraimitas-capturan-a-oreb-y-zeeb`, Is 10:26, en `pasajes` (Perspicacia «Jueces, Libro de»): van en los tramos de Isaías 9 y 10. La razón de `roca-de-oreb` también cita Is 10:26.
+
+## Para Ezequiel (desde Jueces)
+
+- **Minit.** El trigo de Minit (Ez 27:17) usa `minit`.
+
+## Para Hebreos (desde Jueces)
+
+- **Los jueces de Heb 11:32-34.** Gedeón, Barac, Sansón y Jefté son `gedeon`, `barac`, `sanson` y `jefte`; van en `menciona` del tramo.

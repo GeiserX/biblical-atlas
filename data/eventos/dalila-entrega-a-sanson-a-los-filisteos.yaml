@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dalila-entrega-a-sanson-a-los-filisteos
+titulo: Dalila entrega a Sansón a los filisteos
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: cerca del final de los 20 años de Sansón como juez)'
+orden_relato:
+  serie: jueces
+  orden: 16004
+lugares:
+- valle-de-sorec
+personas:
+- dalila
+- sanson
+pasajes:
+- Jue 16:4-21
+resumen: Por dinero de los gobernantes filisteos, Dalila insiste hasta que Sansón, tras tres respuestas falsas, le confiesa
+  que es nazareo. Mientras duerme le hace cortar las siete trenzas; sin fuerza, los filisteos lo apresan y lo ciegan.
+razon: '«Dalila» y «Soreq»: en su casa del valle, al final de los 20 años de Sansón. Fecha: tras Jefté, que juzga desde c.
+  1173 («Jefté»; el libro va casi en orden), y antes de Saúl, 1117 (estudio 3).'
+fuentes:
+- jueces-16
+- it-dalila
+- it-soreq
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+enlaces:
+- titulo: Jueces 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/16
+  tipo: biblia
+- titulo: 'Perspicacia: «Dalila»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001149
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Soreq, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004187
+  tipo: perspicacia
+buscar: Dalila traiciona a Sansón valle de Sorec
+consultado: '2026-09-29'
+estado: verificado

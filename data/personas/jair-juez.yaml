@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jair-juez
+nombre: Jaír
+nombres:
+- nombre: Jaír
+perspicacia: 1200002305#2
+desambiguacion: Jaír el galaadita, juez de Israel; no el Jaír que tomó Havot-Jaír en tiempos de Moisés, ni el padre de Mardoqueo,
+  ni el de Elhanán.
+no_confundir_con:
+- jair-hijo-de-segub
+resumen: Galaadita que juzgó a Israel 22 años después de Tolá. Tuvo 30 hijos, con 30 burros y 30 ciudades llamadas Havot-Jaír.
+  Lo enterraron en Camón.
+razon: Perspicacia «Jaír», núm. 2, que lo cuenta como séptimo juez; Jue 10:3-5.
+fuentes:
+- it-jair
+- jueces-10
+enlaces:
+- titulo: 'Perspicacia: «Jaír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002305
+  tipo: perspicacia
+- titulo: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  tipo: biblia
+relaciones:
+- tipo: sucede_a
+  persona: tola-hijo-de-pua
+  deducido: false
+  fuentes:
+  - jueces-10
+  - it-jair
+  razon: 'Jue 10:3: después de Tolá surgió Jaír y juzgó a Israel.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: galaad
+  deducido: false
+  fuentes:
+  - jueces-10
+  - it-jair
+  razon: Jue 10:3 lo llama galaadita, y 10:4 pone en Galaad las ciudades de sus hijos.
+  estado: verificado
+- tipo: murio_en
+  lugar: camon
+  deducido: false
+  fuentes:
+  - jueces-10
+  - it-qamon
+  razon: 'Jue 10:5: murió y lo enterraron en Camón.'
+  estado: verificado
+- tipo: pariente
+  persona: jair-hijo-de-segub
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - it-jair
+  - jueces-10
+  razon: 'Perspicacia «Jaír», núm. 2: por ser galaadita y por las ciudades de sus hijos (Jue 10:3, 4), es probable que descendiera
+    del Jaír que tomó Havot-Jaír.'
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

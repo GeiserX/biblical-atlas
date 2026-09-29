@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-anciano-de-efrain-acoge-al-levita-en-guibea
+titulo: Un anciano de Efraín acoge al levita en Guibeá
+fecha:
+  desde: -1449
+  hasta: -1399
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+orden_relato:
+  serie: jueces
+  orden: 19015
+lugares:
+- guibea-de-benjamin
+personas: []
+pasajes:
+- Jue 19:15-21
+resumen: Nadie de Guibeá les ofrece alojamiento y esperan en la plaza. Al anochecer, un anciano de la región montañosa de
+  Efraín, forastero allí, los lleva a su casa y da de comer a los burros.
+razon: 'Perspicacia «Jueces, Libro de», «Orden del libro»: los capítulos 19 a 21 pasaron probablemente pocos años después
+  de morir Josué, hacia 1450 a.e.c. (estudio 3). Límite final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+fuentes:
+- jueces-19
+- it-jueces
+- si-3
+- it-guibeah
+- it-finehas
+enlaces:
+- titulo: Jueces 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
