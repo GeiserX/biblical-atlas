@@ -7,13 +7,14 @@ nombres:
   nota: Forma que usan Éx 6:22 y Le 10:4; Perspicacia da las dos.
 perspicacia: 1200001324#1
 desambiguacion: Elizafán hijo de Uziel; no Elizafán hijo de Parnac, el principal de Zabulón.
-resumen: Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú, y fue cabeza de una familia
-  de levitas.
-razon: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5.
+resumen: Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú. En el desierto encabezó
+  la casa paterna de los cohatitas, y de él viene una familia de levitas.
+razon: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5; Nú 3:30.
 fuentes:
 - it-elizafan
 - exodo-6
 - levitico-10
+- numeros-3
 enlaces:
 - titulo: 'Perspicacia: «Elizafán, Elzafán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001324
@@ -30,12 +31,30 @@ relaciones:
   - exodo-6
   - it-elizafan
   - levitico-10
+  - numeros-3
   razon: 'Éx 6:22: hijo de Uziel.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  deducido: false
+  fuentes:
+  - numeros-3
+  - it-levitas
+  razon: 'Nú 3:14, 29, 30: las familias cohatitas que encabezaba acampaban al sur del tabernáculo cuando se registró a los
+    levitas en el desierto de Sinaí.'
   estado: verificado
 historial:
 - fecha: '2026-09-29'
   cambio: El resumen cuenta que retiró los cuerpos de Nadab y Abihú y lo llama primo de Aarón, pero la ficha no citaba Le
     10, de donde sale.
   fuente: levitico-10
+- fecha: '2026-09-29'
+  cambio: El resumen añade que estuvo al frente de la casa paterna de los cohatitas (Nú 3:30).
+  fuente: numeros-3
+- fecha: '2026-09-29'
+  cambio: La razón cita Nú 3:30, de donde sale su cargo.
+  fuente: numeros-3
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- elizafan-hijo-de-parnac

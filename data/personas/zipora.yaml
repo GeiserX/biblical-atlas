@@ -6,12 +6,15 @@ nombres:
 perspicacia: '1200004748'
 resumen: Hija de Jetró, sacerdote de Madián, y esposa de Moisés, con quien tuvo a Guersom y a Eliezer. Camino de Egipto circuncidó
   a un hijo con un pedernal; tras el éxodo, su padre la llevó al campamento.
-razon: Perspicacia «Ziporá»; Éx 2:16-22; 4:20, 24-26; 18:2-6.
+razon: Perspicacia «Ziporá» y «Cusita»; Éx 2:16-22; 4:20, 24-26; 18:2-6; Nú 12:1, donde la llaman cusita por su origen árabe,
+  no porque Moisés tomara otra esposa.
 fuentes:
 - it-zipora
 - exodo-2
 - exodo-4
 - exodo-18
+- numeros-12
+- it-cusita
 enlaces:
 - titulo: 'Perspicacia: «Ziporá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004748
@@ -42,5 +45,10 @@ relaciones:
   - exodo-18
   razon: 'Éx 2:16-21: era una de las siete hijas del sacerdote de Madián.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade Nú 12:1: Perspicacia «Ziporá» y «Cusita» la identifican con la esposa cusita por la que Míriam y Aarón
+    criticaron a Moisés.'
+  fuente: numeros-12
 consultado: '2026-09-29'
 estado: verificado

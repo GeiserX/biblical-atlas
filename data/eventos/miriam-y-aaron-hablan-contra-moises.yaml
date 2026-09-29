@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: miriam-y-aaron-hablan-contra-moises
+titulo: Míriam y Aarón hablan contra Moisés y Míriam enferma de lepra
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 12001
+lugares:
+- hazerot
+personas:
+- miriam-hermana-de-moises
+- aaron
+- moises
+pasajes:
+- Nú 12:1-15
+- Dt 24:9
+resumen: Míriam y Aarón critican a Moisés por su esposa cusita y reclaman que Dios habla también por ellos. Jehová defiende
+  a Moisés y deja leprosa a Míriam; Moisés pide su curación y ella pasa siete días fuera.
+razon: 'Perspicacia «Hazerot» sitúa aquí la lepra de Míriam; «Míriam», núm. 1, y «Moisés». Año 1512 a.e.c.: el segundo año
+  tras el éxodo de 1513 a.e.c. (estudio 3), antes de llegar a Cadés (Perspicacia «Qadés»).'
+fuentes:
+- numeros-12
+- it-hazerot
+- it-miriam
+- it-moises
+- it-zipora
+- it-cusita
+- si-3
+- it-qades
+enlaces:
+- titulo: Números 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

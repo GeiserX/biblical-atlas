@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: subida-de-acrabim
+nombre: Subida de Acrabim
+nombres:
+- nombre: Subida de Acrabim
+- nombre: Aqrabim
+  nota: Grafía de Perspicacia; quizá significa «escorpiones», por los que abundan allí o por las curvas del camino.
+tipo: monte
+lat: 30.906602
+lon: 35.131259
+precision: punto
+coord_fuente: openbible:a39267b
+coord_url: https://www.openbible.info/geo/ancient/a39267b/akrabbim
+coord_nota: 'Punto de OpenBible en Maʽale ʽAqrabbim (Naqb es-Safa), con que se ha identificado. Es un paso de montaña: «monte»
+  es el tipo más cercano de la lista.'
+resumen: Cuesta del sureste de Judá, cerca del desierto de Zin, por donde el camino de Beer-Seba baja al Arabá. Marcaba la
+  frontera sur de Canaán.
+razon: 'Perspicacia «Aqrabim»; Nú 34:4. Unos 29 km al suroeste del extremo sur del mar Muerto. OpenBible: solo el punto.'
+fuentes:
+- it-aqrabim
+- openbible-geo
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Aqrabim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000187
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

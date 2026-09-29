@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ar
+nombre: Ar
+nombres:
+- nombre: Ar
+- nombre: Ar de Moab
+  nota: Así la llama Nú 21:28.
+tipo: ciudad
+lat: 31.359913
+lon: 35.782764
+precision: incierto
+coord_fuente: openbible:a38ad07
+coord_url: https://www.openbible.info/geo/ancient/a38ad07/ar
+coord_nota: Punto de OpenBible en Khirbet al-Balua, al sur del Arnón. Perspicacia no conoce el sitio exacto.
+resumen: Ciudad de Moab, quizá su capital, en la ladera sur del valle del Arnón. A veces su nombre vale por todo Moab. El
+  proverbio de Nú 21:28 dice que el fuego salido de Hesbón la consumió.
+razon: 'Perspicacia «Ar»; Nú 21:15, 28. OpenBible: solo el punto.'
+fuentes:
+- it-ar
+- openbible-geo
+- numeros-21
+enlaces:
+- titulo: 'Perspicacia: «Ar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000321
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

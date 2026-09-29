@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ribla-de-la-frontera-oriental
+nombre: Riblá
+nombres:
+- nombre: Riblá
+  nota: La que está al este de Ain; no es la Riblá de la tierra de Hamat (Perspicacia «Ain», núm. 1).
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Al este de Ain, al norte del mar de Kinéret
+  geometria:
+    tipo: zona
+    lat: 33.09
+    lon: 35.79
+    radio_km: 25
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-ribla
+  - it-ain
+  razon: Perspicacia no la identifica; el texto la pone al este de Ain, que estaba al norte del mar de Kinéret.
+  coord_fuente: calculo
+  nota: 'Centro: unos 20 km al este del centro de la zona de Ain. Radio nuestro.'
+resumen: Lugar sin identificar del límite este de la tierra de Canaán, al este de Ain. No es la Riblá de la tierra de Hamat,
+  junto al Orontes.
+razon: Perspicacia «Riblá», núm. 1, y «Ain», núm. 1; Nú 34:11.
+fuentes:
+- it-ribla
+- it-ain
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Riblá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003729
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

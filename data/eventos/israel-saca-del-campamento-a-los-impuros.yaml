@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-saca-del-campamento-a-los-impuros
+titulo: Israel saca del campamento a los impuros
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: ziv (iyar) de 1512 a.e.c.
+  detalle:
+    mes: iyar
+  nota: Entre el 1 de ziv (Nú 1:1) y el 20 de ziv (Nú 10:11), cuando el campamento deja el Sinaí. Perspicacia «Números, Libro
+    de» solo saca del orden del relato Nú 7:1-88 y 9:1-15.
+orden_relato:
+  serie: numeros
+  orden: 5001
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Nú 5:1-4
+resumen: Jehová manda que los leprosos, los que tienen un flujo y los que han tocado un cadáver, hombres o mujeres, vivan
+  fuera del campamento para no contaminarlo. Los israelitas lo cumplen.
+razon: Nú 5:1-4. Perspicacia «Números, Libro de» ve en esta cuarentena una norma para un pueblo nómada. El mes se deduce del
+  orden del libro.
+fuentes:
+- numeros-5
+- it-numeros-libro
+- tnm-tabla
+enlaces:
+- titulo: Números 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/5
+  tipo: biblia
+- titulo: 'Perspicacia: «Números, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003279
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

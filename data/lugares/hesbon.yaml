@@ -14,17 +14,25 @@ coord_fuente: openbible:abf2fc1
 coord_url: https://www.openbible.info/geo/ancient/abf2fc1/heshbon
 resumen: Ciudad al este del Jordán, entre el Arnón y el Jaboq, hoy las ruinas de Hisban. Sehón, rey amorreo, se la quitó a
   Moab; tras la conquista fue de Rubén y luego ciudad levita de Gad. Tenía estanques.
-razon: 'Perspicacia «Hesbón», párr. 1-4, y «Bat-rabim»; Can 7:4 compara los ojos de la sulamita con sus estanques. OpenBible:
-  solo el punto.'
+razon: 'Perspicacia «Hesbón», párr. 1-4, y «Bat-rabim»; Nú 21:25-30, 34; Can 7:4 compara los ojos de la sulamita con sus estanques.
+  Se identifica con las ruinas de Hisban. OpenBible: solo el punto.'
 fuentes:
 - it-hesbon
-- it-bat-rabim
 - openbible-geo
+- numeros-21
+- numeros-32
+- it-bat-rabim
 - cantar-de-los-cantares-7
 enlaces:
 - titulo: 'Perspicacia: «Hesbón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002006
   tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+- titulo: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
 - titulo: 'Perspicacia: «Bat-rabim»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000580
   tipo: perspicacia
