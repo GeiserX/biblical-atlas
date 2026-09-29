@@ -66,12 +66,12 @@ Una rama de olivo cuyo tallo es una ruta y cuyas aceitunas son las paradas, como
 
 **En el sitio.** En la cabecera se ve bien y es la más orgánica de las seis. A 16 px es la más débil: la rama se reduce a un trazo con puntos, así que el favicon también necesitaría una versión simplificada.
 
-## Lo que cambia en el sitio con cualquiera de ellas
+## Lo que cambió en el sitio con la rama de olivo
 
-- En [`site/index.html`](../../site/index.html), el `<span class="be-logo__mark">` pasa a ser la marca en SVG, y el favicon, que hoy está vacío con `<link rel="icon" href="data:,">`, apunta a `marca.svg`.
-- En [`site/kit/components.css`](../../site/kit/components.css) sobran las dos reglas de `.be-logo__mark` que dibujan la esfera con degradados.
+- En [`site/index.html`](../../site/index.html), [`site/acerca.html`](../../site/acerca.html) y [`site/calendario.html`](../../site/calendario.html), el `<span class="be-logo__mark">` es la marca en SVG y el favicon apunta a [`site/favicon.svg`](../../site/favicon.svg).
+- En [`site/kit/components.css`](../../site/kit/components.css) ya no están las reglas de `.be-logo__mark` que dibujaban la esfera con degradados.
 - El texto de la cabecera sigue siendo texto HTML; `horizontal.svg` es para el README, la imagen al compartir y los documentos.
-- [`docs/images/banner.svg`](../images/banner.svg), el banner del README, se rehace con la marca elegida.
+- [`docs/images/banner.svg`](../images/banner.svg), el banner del README, se rehizo con la marca elegida.
 
 ## Lo que se descartó
 
