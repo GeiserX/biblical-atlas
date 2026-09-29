@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zabulon
+name: Zabulón
+names:
+- name: Zabulón
+  note: Territorio de la tribu que descendía de Zabulón, hijo de Jacob.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Baja Galilea, entre el mar de Galilea y el Mediterráneo
+  geometry:
+    type: zone
+    lat: 32.738056
+    lon: 35.319722
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-zabulon
+  - it-gat-hefer
+  - openbible-geo
+  reason: Perspicacia lo pone entre los dos mares, sin tocar la costa de ninguno; Gat-Héfer era una de sus ciudades de la frontera.
+  note: 'Centro: el punto de Gat-Héfer de OpenBible (32,7381 N; 35,3197 E), ciudad del límite de Zabulón (Jos 19:13). El radio
+    de 15 km es nuestro.'
+  coord_source: calculation
+summary: Territorio de la tribu de Zabulón, en el norte, entre el mar de Galilea y el Mediterráneo y sin costa propia. Lindaba
+  con Aser, Neftalí e Isacar. Jesús predicó allí, como había anunciado Isaías.
+reason: Perspicacia «Zabulón», núm. 2, apartados «Herencia tribal» y «Actitud hacia la adoración verdadera»; notas de estudio
+  de Mt 4:13 y 4:16. Zona calculada por nosotros.
+sources:
+- it-zabulon
+- mateo-4
+- openbible-geo
+links:
+- title: 'Perspicacia: «Zabulón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004679
+  type: perspicacia
+- title: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

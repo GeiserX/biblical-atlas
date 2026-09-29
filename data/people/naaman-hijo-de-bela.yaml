@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naaman-hijo-de-bela
+name: Naamán
+names:
+- name: Naamán
+perspicacia: 1200003149#1
+disambiguation: Naamán nieto de Benjamín; no el jefe del ejército sirio curado de lepra.
+summary: Nieto de Benjamín por Bela, su primogénito. Como sus descendientes formaron una familia de la tribu, se le cuenta
+  entre los hijos de Benjamín.
+reason: Perspicacia «Naamán», núm. 1; Gé 46:21.
+sources:
+- it-naaman
+- genesis-46
+links:
+- title: 'Perspicacia: «Naamán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003149
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: true
+  sources:
+  - genesis-46
+  - it-naaman
+  reason: 'Perspicacia «Naamán», núm. 1: nieto de Benjamín por medio de Bela.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: grandfather
+  inferred: true
+  sources:
+  - genesis-46
+  - it-naaman
+  reason: Gé 46:21 lo pone entre los hijos de Benjamín; Perspicacia lo tiene por nieto.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- naaman-el-sirio

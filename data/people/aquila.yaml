@@ -1,0 +1,101 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aquila
+name: Áquila
+names:
+- name: Áquila
+summary: Judío del Ponto, esposo de Priscila y fabricante de tiendas. Expulsados de Roma por el decreto de Claudio,
+  hospedaron a Pablo en Corinto.
+reason: Perspicacia «Áquila» cuenta su origen, el decreto de 49 o principios de 50 y el encuentro con Pablo en Corinto
+  (Hch 18:1-3).
+sources:
+- it-aquila
+- hch-18
+links:
+- title: 'Perspicacia: «Áquila»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000320
+  type: perspicacia
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: kin
+  person: priscila
+  word: wife
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Hch 18:2 presenta a Priscila como su esposa.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: corinto
+  date:
+    from: 50
+    to: 52
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-52 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).
+  checked_on: '2026-09-28'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 52
+    to: 55
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52-55 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co
+    16:19).
+  checked_on: '2026-09-28'
+  status: verified
+- type: lived_in
+  place: roma
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - romanos-16
+  reason: Cuando Pablo escribe Romanos han vuelto a Roma, con una congregación en su casa (Ro 16:3-5).
+  checked_on: '2026-09-28'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 50
+    to: 52
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-52 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Hacen tiendas juntos en Corinto y viajan con él hasta Éfeso (Hch 18:3, 18, 19).
+  checked_on: '2026-09-28'
+  status: verified

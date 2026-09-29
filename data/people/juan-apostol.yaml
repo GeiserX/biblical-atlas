@@ -1,0 +1,172 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juan-apostol
+name: Juan, el apóstol
+names:
+- name: Juan
+- name: Juan, el apóstol
+- name: Boanerges
+  note: 'Sobrenombre que Jesús dio a él y a Santiago: «hijos del trueno» (Mr 3:17).'
+- name: el discípulo al que Jesús amaba
+  note: Así se nombra a sí mismo en su Evangelio.
+disambiguation: El apóstol, hijo de Zebedeo. No es Juan el Bautista, ni Juan Marcos, ni el gobernante Juan de Hch
+  4:6, ni Juan el padre de Pedro.
+date:
+  from: 29
+  to: 100
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 29-100 e.c.
+  note: Desde que conoce a Jesús en 29 hasta su muerte, hacia 100, según el estudio 3.
+summary: Apóstol, hijo de Zebedeo y hermano de Santiago. Compañero de Pedro en Jerusalén y Samaria, sobrevivió a
+  los demás apóstoles; exiliado en Patmos escribió Apocalipsis hacia 96 y después su Evangelio y tres cartas.
+reason: Perspicacia «Juan» (apartado 3, párr. 21 y 29 a 32) y el recuadro del capítulo 4 del libro «Testimonio completo»;
+  el estudio 3 fecha Apocalipsis en c. 96 y sus cartas en c. 98.
+sources:
+- it-juan
+- bt-4
+- si-3
+- tnm-tabla
+- mateo-4
+- mateo-10
+- mateo-17
+- mateo-20
+- mateo-26
+- marcos-1
+- marcos-3
+- it-boanerges
+- marcos-5
+- marcos-9
+- marcos-10
+- marcos-13
+- marcos-14
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
+- lucas-22
+distinct_from:
+- juan-el-bautista
+- juan-marcos
+not_claimed:
+- 'Que el emperador que lo desterró fuera Domiciano y el que lo liberó, Nerva: Perspicacia lo da como creencia general,
+  no como dato bíblico.'
+relations:
+- type: kin
+  person: zebedeo
+  word: father
+  inferred: false
+  sources:
+  - it-juan
+  - it-zebedeo
+  - mateo-4
+  - mateo-20
+  - mateo-26
+  - marcos-1
+  - marcos-10
+  - lucas-5
+  reason: Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: patmos
+  date:
+    from: 96
+    to: 96
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 96 e.c.
+  inferred: false
+  sources:
+  - it-juan
+  - it-patmos
+  - apocalipsis-1
+  reason: 'Ap 1:9: estaba en Patmos por dar testimonio de Jesús. Perspicacia «Juan», párr. 31, lo sitúa hacia 96.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  inferred: true
+  sources:
+  - bt-4
+  - it-juan-cartas
+  - tnm-tabla
+  reason: La Tabla pone sus cartas en «Éfeso o cerca» y el libro «Testimonio completo» dice que, según se cree, se fue allí
+    al salir libre.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: efeso
+  date:
+    from: 100
+    to: 100
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 100 e.c.
+  inferred: true
+  sources:
+  - bt-4
+  - it-juan
+  reason: El recuadro del capítulo 4 de «Testimonio completo» dice que al parecer murió allí hacia 100; Perspicacia (párr.
+    32) lo atribuye a la tradición.
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-20
+  - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-13
+  - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
+  - lucas-22
+  reason: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: salome-discipula
+  word: mother
+  inferred: true
+  sources:
+  - mateo-27
+  - it-juan
+  - it-salome
+  - marcos-15
+  reason: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Juan», núm. 3, y la nota de Mr 15:40 creen que era Salomé.
+  checked_on: '2026-09-29'
+  status: pending
+links:
+- title: 'Perspicacia: «Juan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
+  type: perspicacia
+- title: Apocalipsis 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/1
+  type: bible
+perspicacia: 1200002489#3
+checked_on: '2026-09-29'
+status: verified

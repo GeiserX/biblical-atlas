@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-medopersa
+name: Medopersia, cuarta potencia mundial
+type: power
+date:
+  from: -538
+  to: -330
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 539-331 a.e.c.
+places:
+- persia
+- media
+- susa
+events:
+- caida-de-babilonia
+- decreto-de-ciro
+- cambises-conquista-egipto
+- obra-del-templo-prohibida-522
+- decreto-de-ciro-hallado-en-ecbatana
+summary: Medos y persas, con Ciro al frente, toman Babilonia y dejan volver a los judíos. Es el pecho de plata de Daniel
+  2 y el carnero de dos cuernos de Daniel 8.
+reason: B9 fecha en 539 a.e.c. la conquista de Babilonia y en 331 a.e.c. la de Persia por Alejandro. Perspicacia «Bestias
+  simbólicas» identifica el carnero.
+sources:
+- tnm-b9
+- it-bestias-simbolicas
+search: Medopersia potencia mundial
+checked_on: '2026-09-28'
+status: verified

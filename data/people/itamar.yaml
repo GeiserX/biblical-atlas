@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itamar
+name: Itamar
+names:
+- name: Itamar
+perspicacia: '1200002236'
+summary: Cuarto hijo de Aarón y Eliseba. Dirigió a los levitas en el inventario del tabernáculo y fue escogido sacerdote con
+  su padre y sus hermanos; después supervisó a guersonitas y meraritas.
+reason: Perspicacia «Itamar»; Éx 6:23; 28:1; 38:21; Nú 4:28, 33.
+sources:
+- it-itamar
+- exodo-6
+- exodo-28
+- exodo-38
+links:
+- title: 'Perspicacia: «Itamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+- title: Éxodo 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/38
+  type: bible
+relations:
+- type: kin
+  person: aaron
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-itamar
+  - exodo-28
+  - exodo-38
+  reason: 'Éx 6:23: hijo de Aarón y Eliseba.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eliseba
+  word: mother
+  inferred: false
+  sources:
+  - exodo-6
+  - it-itamar
+  reason: 'Éx 6:23: Eliseba se los dio a Aarón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

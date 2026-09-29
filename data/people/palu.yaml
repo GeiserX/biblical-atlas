@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: palu
+name: Palú
+names:
+- name: Palú
+perspicacia: '1200003367'
+summary: Hijo de Rubén, nombrado en segundo lugar. Fundó la familia rubenita de los paluitas. Perspicacia cree posible que
+  sea el Pélez de Números 16.
+reason: Perspicacia «Palú»; Gé 46:9.
+sources:
+- it-palu
+- genesis-46
+- exodo-6
+links:
+- title: 'Perspicacia: «Palú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003367
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: ruben-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-palu
+  - exodo-6
+  reason: 'Gé 46:9: aparece entre los hijos de Rubén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sintique
+name: Síntique
+names:
+- name: Síntique
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c. (fecha de Filipenses)
+summary: Cristiana de Filipos a la que Pablo, con Evodia, exhorta a tener la misma forma de pensar en el Señor.
+reason: Perspicacia «Síntique»; Flp 4:2, 3. La fecha es la de Filipenses, hacia 60-61 según la Tabla de los libros.
+sources:
+- it-sintique
+- filipenses-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Síntique»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004283
+  type: perspicacia
+- title: Filipenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: filipos
+  inferred: false
+  sources:
+  - it-sintique
+  reason: Perspicacia la llama cristiana filipense.
+  checked_on: '2026-09-28'
+  status: verified

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: resurreccion-de-lazaro
+title: Jesús resucita a Lázaro
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Principios de 33 e.c.
+places:
+- betania
+people:
+- jesus
+- lazaro
+- marta
+- maria-de-betania
+- tomas
+roles:
+  lazaro: raised
+passages:
+- Jn 11:1-46
+summary: Jesús llega a Betania cuando Lázaro lleva cuatro días en la tumba. Habla con Marta, llora con María y llama
+  a Lázaro, que sale vivo.
+reason: La tabla A7-F da cuándo y dónde. Perspicacia «Lázaro» (párr. 3-7) pone el milagro a principios de 33; la
+  nota de Jn 11:17 explica los cuatro días.
+sources:
+- tnm-a7-f
+- juan-11
+- jy-cap-89
+- jy-cap-90
+- jy-cap-91
+- it-lazaro
+narrative_order:
+  series: a7
+  order: 82
+search: Jesús resucita a Lázaro
+checked_on: '2026-09-29'
+status: verified

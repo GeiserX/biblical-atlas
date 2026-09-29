@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jorim
+name: Jorim
+names:
+- name: Jorim
+perspicacia: '1200002512'
+summary: Descendiente de David por Natán y antepasado de María. Perspicacia sugiere que pudo vivir en tiempos del rey Uzías.
+reason: Perspicacia «Jorim»; Lu 3:29.
+sources:
+- it-jorim
+- lucas-3
+links:
+- title: 'Perspicacia: «Jorim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002512
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: matat-padre-de-jorim
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:29: Jorim, hijo de Matat.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

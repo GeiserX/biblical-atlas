@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: arresto-en-getsemani
+title: Agonía en Getsemaní; traición y arresto
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- getsemani
+- valle-de-cedron
+- monte-de-los-olivos
+people:
+- jesus
+- judas-iscariote
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- malco
+passages:
+- Mt 26:30, 36-56
+- Mr 14:26, 32-52
+- Lu 22:39-53
+- Jn 18:1-12
+summary: Jesús cruza el Cedrón y ora angustiado en Getsemaní; un ángel lo fortalece. Judas llega con gente armada y lo besa;
+  Pedro hiere a Malco y Jesús lo cura. Se deja arrestar y los apóstoles huyen.
+reason: 'La tabla A7-H da el día y el lugar. Jn 18:1 nombra el Cedrón; la nota de Mt 26:36 dice que el lugar exacto no se conoce;
+  B12-B. Ángel y curación: Lu 22:43, 51.'
+sources:
+- tnm-a7-h
+- mateo-26
+- marcos-14
+- lucas-22
+- juan-18
+- jy-cap-118
+- jy-cap-123
+- jy-cap-124
+- tnm-b12-b
+- it-getsemani
+narrative_order:
+  series: a7
+  order: 116
+search: Agonía en Getsemaní
+history:
+- date: '2026-09-29'
+  change: 'El resumen añade dos hechos que solo cuenta Lucas: el ángel que lo fortalece (Lu 22:43) y la curación del esclavo
+    herido (Lu 22:51).'
+  source: lucas-22
+- date: '2026-09-29'
+  change: La razón cita ahora de dónde salen el ángel y la curación que el resumen añade.
+  source: lucas-22
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 2-corintios
+book: 2 Corintios
+writer: pablo
+reference: 2Co 2:12, 13
+written_in:
+- macedonia
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c. (final del verano o principios del otoño)
+recipients:
+  text: Congregación de Corinto
+  places:
+  - corinto
+people:
+- timoteo
+- silas
+- tito
+context_origin:
+  summary: Pablo salió de Éfeso, no encontró a Tito en Troas y siguió a Macedonia, donde Tito le trajo noticias
+    de Corinto.
+  sources:
+  - it-corintios
+  - it-pablo
+context_destination:
+  summary: Tito había ido a Corinto a ayudar con la colecta para los hermanos de Judea.
+  sources:
+  - it-corintios
+reason: La Tabla y el estudio 3 dan Macedonia y c. 55; 2Co 2:12, 13 cuenta el paso por Troas hacia Macedonia. La
+  fuente solo dice la región.
+sources:
+- tnm-tabla
+- si-3
+- it-corintios
+- 2-corintios-2
+- it-tito-persona
+links:
+- title: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  type: perspicacia
+- title: 2 Corintios 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/2
+  type: bible
+checked_on: '2026-09-28'
+status: verified

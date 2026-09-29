@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: templo-de-salomon-empieza
+title: Empieza la construcción del templo
+date:
+  from: -1033
+  to: -1033
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1034 a.e.c.
+  detail:
+    month: iyar
+places:
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 6:1
+- 2Cr 3:1-2
+summary: En el mes de Ziv del cuarto año de su reinado, Salomón pone en marcha la obra del templo en el monte Moria, con piedras
+  ya cortadas a medida.
+reason: El estudio 3 (párr. 8) fecha el comienzo en abril-mayo de 1034; Perspicacia «Salomón», párr. 12. Ziv es el segundo
+  mes, iyar en el calendario.
+sources:
+- si-3
+- it-salomon
+- 1-reyes-6
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
+  type: bible
+search: construcción del templo de Salomón
+checked_on: '2026-09-28'
+status: verified

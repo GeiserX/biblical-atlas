@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahson
+name: Nahsón
+names:
+- name: Nahsón
+perspicacia: '1200003171'
+summary: 'Hijo de Aminadab y principal de Judá en el desierto: ayudó a Moisés en el primer censo y encabezaba las tropas de
+  Judá en la marcha. Fue abuelo de Boaz.'
+reason: Perspicacia «Nahsón», párr. 1 y 2; Rut 4:20.
+sources:
+- it-nahson
+- rut-4
+- mateo-1
+- lucas-3
+links:
+- title: 'Perspicacia: «Nahsón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003171
+  type: perspicacia
+relations:
+- type: kin
+  person: aminadab-hijo-de-ram
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  reason: Rut 4:20.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

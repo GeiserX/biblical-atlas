@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: berea
+name: Berea
+names:
+- name: Berea
+- name: Verria
+  note: Nombre actual de la ciudad.
+type: city
+lat: 40.51833
+lon: 22.2
+precision: point
+coord_source: openbible:a62fe31
+coord_url: https://www.openbible.info/geo/ancient/a62fe31/berea
+summary: Ciudad de Macedonia al pie del monte Bermión; sus judíos examinaban las Escrituras para comprobar lo que
+  oían.
+reason: 'Perspicacia («Berea») describe el lugar; aparece en Hch 17:10-14. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-berea
+- hch-17
+- openbible-geo
+links:
+- title: 'Perspicacia: «Berea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000657
+  type: perspicacia
+- title: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  type: bible
+checked_on: '2026-09-27'
+status: verified

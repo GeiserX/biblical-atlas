@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: ocozias-de-israel
+name: Reinado de Ocozías en Israel
+type: king
+person: ocozias-de-israel
+date:
+  from: -919
+  to: -916
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920-917 a.e.c.
+places:
+- samaria
+summary: Dos años en Samaria; Moab se rebeló.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 22.
+sources:
+- tnm-a6-a
+- 1-reyes-22
+- it-ocozias
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Ocozías» y el estudio 3 dan su comienzo hacia 919 a.e.c.; A6-A, más reciente, lo pone hacia 920.
+  source: tnm-a6-a
+search: Ocozías rey
+checked_on: '2026-09-28'
+status: verified

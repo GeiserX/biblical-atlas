@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: manaen
+name: Manaén
+names:
+- name: Manaén
+date:
+  from: 47
+  to: 47
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 47 e.c.
+summary: Uno de los profetas y maestros de Antioquía cuando el espíritu apartó a Bernabé y Saulo. Se había criado
+  con Herodes Antipas.
+reason: Perspicacia «Manaén» y Hch 13:1.
+sources:
+- it-manaen
+- hch-13
+links:
+- title: 'Perspicacia: «Manaén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002879
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: antioquia-de-siria
+  inferred: false
+  sources:
+  - it-manaen
+  - hch-13
+  reason: Hch 13:1 lo cuenta entre los profetas y maestros de Antioquía.
+  checked_on: '2026-09-28'
+  status: verified

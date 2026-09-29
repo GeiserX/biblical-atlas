@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: apartados-para-la-mision
+title: El espíritu aparta a Bernabé y Saulo en Antioquía
+date:
+  from: 47
+  to: 47
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: primavera de 47 e.c.
+narrative_order:
+  series: hechos
+  order: 1301
+places:
+- antioquia-de-siria
+people:
+- pablo
+- bernabe
+- manaen
+- lucio-de-cirene
+passages:
+- Hch 13:1-3
+summary: Mientras los profetas y maestros de Antioquía sirven a Jehová y ayunan, el espíritu santo pide apartar
+  a Bernabé y Saulo. Les imponen las manos y los despiden.
+reason: Hch 13:1-3 nombra a los profetas y maestros; el estudio 3 (párr. 21) sitúa la salida en la primavera de 47.
+sources:
+- hch-13
+- si-3
+- it-manaen
+- it-lucio
+search: Bernabé y Saulo apartados
+checked_on: '2026-09-28'
+status: verified

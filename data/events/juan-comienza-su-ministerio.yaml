@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-comienza-su-ministerio
+title: Juan el Bautista comienza a predicar
+date:
+  from: 29
+  to: 29
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. abril de 29 e.c.
+  detail:
+    season: spring
+narrative_order:
+  series: a7
+  order: 10
+places:
+- judea
+- rio-jordan
+- desierto-de-juda
+people:
+- juan-el-bautista
+- tiberio
+roles:
+  juan-el-bautista: spoke
+passages:
+- Mt 3:1-12
+- Mr 1:1-8
+- Lu 3:1-18
+- Jn 1:6-8
+summary: En el año 15 de Tiberio, Juan empieza a predicar en el desierto de Judea que el Reino se ha acercado, y bautiza en
+  el Jordán a los judíos que se arrepienten.
+reason: 'A7-A, fila 10: c. abril de 29, desierto y río Jordán. La nota de Lu 3:1 cuenta el año 15 de Tiberio y sitúa el comienzo
+  en la primavera de 29.'
+sources:
+- tnm-a7-a
+- lucas-3
+- mateo-3
+- marcos-1
+- juan-1
+- it-juan
+- jy-cap-11
+- it-desierto-de-juda
+present:
+- juan-el-bautista
+history:
+- date: '2026-09-29'
+  change: 'Se añade presentes: sin ellos el sitio ponía también a Tiberio en Judea. Solo Juan estaba allí.'
+  source: lucas-3
+checked_on: '2026-09-29'
+status: verified

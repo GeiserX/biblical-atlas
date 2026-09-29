@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: silem
+name: Silem
+names:
+- name: Silem
+perspicacia: '1200004037'
+summary: Último de los cuatro hijos de Neftalí de la lista. Fundó la familia de los silemitas.
+reason: Perspicacia «Silem»; Gé 46:24.
+sources:
+- it-silem
+- genesis-46
+links:
+- title: 'Perspicacia: «Silem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004037
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: neftali-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-silem
+  reason: 'Gé 46:24: aparece entre los hijos de Neftalí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: calne
+name: Calné
+names:
+- name: Calné
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Nippur
+  geometry:
+    type: point
+    lat: 32.126111
+    lon: 45.230833
+  checked_on: '2026-09-29'
+  status: tradition
+  sources:
+  - it-calne
+  - openbible-geo
+  reason: 'Perspicacia: la tradición talmúdica y otros factores la pusieron en Nippur, unos 85 km al sureste de Babilonia.'
+  coord_source: openbible:aee80af
+  coord_url: https://www.openbible.info/geo/ancient/aee80af/calneh-1
+- name: Hursagkalama, junto a Quis
+  geometry:
+    type: point
+    lat: 32.540223
+    lon: 44.60428
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-calne
+  - openbible-geo
+  reason: Perspicacia recoge a quien la identifica con Hursagkalama, ciudad hermana de Quis.
+  coord_source: openbible:aee80af
+  coord_url: https://www.openbible.info/geo/ancient/aee80af/calneh-1
+summary: Ciudad que fundó Nemrod en Sinar, así que debía de estar en el sur de Mesopotamia; no se sabe dónde. Para la mayoría
+  es distinta de la Calné que nombra Amós.
+reason: Perspicacia «Calné», núm. 1 y 2; Gé 10:10. Kulunu, otra propuesta de Perspicacia cerca de Babilonia, no tiene punto.
+sources:
+- it-calne
+- genesis-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Calné»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000868
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

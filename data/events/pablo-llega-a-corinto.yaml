@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-llega-a-corinto
+title: Pablo llega a Corinto y trabaja con Áquila y Priscila
+date:
+  from: 50
+  to: 50
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1801
+places:
+- corinto
+people:
+- pablo
+- aquila
+- priscila
+passages:
+- Hch 18:1-4
+summary: En Corinto encuentra a Áquila y Priscila, judíos expulsados de Roma, y se queda con ellos haciendo tiendas.
+  Cada sábado habla en la sinagoga.
+reason: El estudio 3 (párr. 24 y 25) fecha la llegada en otoño de 50; Perspicacia «Áquila» cuenta el encuentro.
+sources:
+- si-3
+- it-aquila
+- hch-18
+search: Pablo Áquila Priscila Corinto
+checked_on: '2026-09-28'
+status: verified

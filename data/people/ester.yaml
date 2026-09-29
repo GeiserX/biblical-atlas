@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ester
+name: Ester
+names:
+- name: Ester
+- name: Hadassá
+date:
+  from: -492
+  to: -474
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 493 a c. 475 a.e.c.
+summary: Judía huérfana de la tribu de Benjamín, criada por su primo Mardoqueo. Asuero la hizo reina en su séptimo año;
+  arriesgó su vida para desenmascarar el plan de Hamán contra los judíos.
+reason: 'Perspicacia «Ester» y «Ester, Libro de»: el libro abarca de 493 a c. 475 y se escribió en Susa; Est 2:7, 17.'
+sources:
+- it-ester
+- it-ester-libro
+- ester-2
+links:
+- title: 'Perspicacia: «Ester»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001430
+  type: perspicacia
+- title: Ester 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/2
+  type: bible
+relations:
+- type: kin
+  person: mardoqueo
+  inferred: false
+  sources:
+  - it-ester
+  - ester-2
+  reason: 'Est 2:7, 15: era hija de Abiháil, tío de Mardoqueo.'
+  checked_on: '2026-09-29'
+  word: cousin
+  status: verified
+- type: lived_in
+  place: susa
+  date:
+    from: -492
+    to: -474
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: de 493 a c. 475 a.e.c.
+  inferred: false
+  sources:
+  - it-ester-libro
+  - it-susa
+  reason: 'Perspicacia «Susa»: el libro de Ester transcurre en Susa.'
+  checked_on: '2026-09-28'
+  status: verified
+- type: kin
+  person: mardoqueo
+  word: adoptive_father
+  inferred: false
+  sources:
+  - ester-2
+  - it-ester
+  reason: 'Est 2:7, 15: cuando Ester quedó huérfana, Mardoqueo la tomó como hija y era su tutor.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

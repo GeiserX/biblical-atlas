@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: finehas-hijo-de-eleazar
+name: Finehás
+names:
+- name: Finehás
+perspicacia: 1200003472#1
+summary: Sacerdote, hijo de Eleazar y nieto de Aarón. En las llanuras de Moab paró el azote que castigaba el culto a Baal
+  de Peor, y Dios pactó que el sacerdocio seguiría en su linaje. Más tarde fue sumo sacerdote.
+reason: Perspicacia «Finehás», núm. 1, párr. 1 y 2; Sl 106:30, 31 dice que su acción se le contó como justicia.
+disambiguation: Finehás nieto de Aarón; no el hijo del sacerdote Elí ni el levita cuyo hijo Eleazar sirvió en tiempos de Esdras.
+sources:
+- it-finehas
+- salmos-106
+- exodo-6
+links:
+- title: 'Perspicacia: «Finehás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
+  type: perspicacia
+- title: Salmo 106 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  type: bible
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: aaron
+  word: grandfather
+  inferred: false
+  sources:
+  - it-finehas
+  - exodo-6
+  reason: 'Perspicacia «Finehás», núm. 1: era hijo de Eleazar y, por él, nieto de Aarón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eleazar-hijo-de-aaron
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-finehas
+  reason: 'Éx 6:25: hijo de Eleazar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: putiel
+  word: grandfather
+  inferred: false
+  sources:
+  - exodo-6
+  - it-finehas
+  reason: 'Éx 6:25: su madre era una de las hijas de Putiel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

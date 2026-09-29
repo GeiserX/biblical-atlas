@@ -18,12 +18,17 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: python3 scripts/build.py
+      # Sin --strict: tras la migración main tiene avisos que esperan una decisión (docs/investigacion/modelo.md,
+      # secciones 13 y 16). Cada código pasa a error por separado, en validate.py, cuando main llega a 0.
       - run: python3 scripts/validate.py
-      - run: python3 scripts/test_aplicar.py
-      - run: python3 scripts/cobertura.py
+      - run: python3 scripts/test_apply.py
+      - run: python3 scripts/test_build.py
+      - run: python3 scripts/migration/test_migrate.py
+      - run: python3 scripts/videos/test_videos.py
+      - run: python3 scripts/bible_coverage.py
       - name: Enlaces (solo en main y en la revisión semanal)
         if: github.event_name != 'pull_request'
         run: python3 scripts/validate.py --links
       - name: Datos que llevan más de un año sin releer
         if: github.event_name == 'schedule'
-        run: python3 scripts/revisar.py --fallar
+        run: python3 scripts/review.py --fail

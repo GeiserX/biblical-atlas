@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoas-de-juda
+name: Jehoás
+names:
+- name: Jehoás
+- name: Joás
+  note: Forma abreviada del texto masorético.
+disambiguation: Rey de Judá, hijo de Ocozías; su tocayo Jehoás, nieto de Jehú, reinó en Israel.
+distinct_from:
+- jehoas-de-israel
+date:
+  from: -897
+  to: -857
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898-858 a.e.c.
+summary: Hijo menor de Ocozías, escondido seis años en el templo. Coronado a los siete, reparó la casa de Jehová; muerto Jehoiadá,
+  siguió a los ídolos e hizo matar a Zacarías. Sus siervos lo asesinaron.
+reason: Perspicacia «Jehoás», núm. 1, párr. 1-7; 2Re 11:21-12:21 y 2Cr 24.
+sources:
+- it-jehoas
+- 2-reyes-12
+- 2-cronicas-24
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehoás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+relations:
+- type: kin
+  person: ocozias-de-juda
+  word: father
+  inferred: false
+  sources:
+  - it-jehoas
+  - 2-reyes-11
+  reason: Era hijo del rey Ocozías (2Re 11:2).
+  checked_on: '2026-09-28'
+  status: verified
+- type: succeeds
+  person: atalia
+  inferred: false
+  sources:
+  - it-jehoas
+  - 2-reyes-11
+  reason: Lo coronaron y Atalía fue ejecutada (2Re 11:12-16).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

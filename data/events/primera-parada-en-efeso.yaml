@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primera-parada-en-efeso
+title: Breve parada en Éfeso
+date:
+  from: 52
+  to: 52
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: c. 52 e.c.
+narrative_order:
+  series: hechos
+  order: 1819
+places:
+- efeso
+people:
+- pablo
+- aquila
+- priscila
+passages:
+- Hch 18:19-21
+summary: Pablo razona con los judíos de la sinagoga de Éfeso. Le piden que se quede, pero se despide prometiendo
+  volver si Jehová quiere; Áquila y Priscila se quedan allí.
+reason: Perspicacia «Asia» (párr. 4) y «Áquila» (párr. 2).
+sources:
+- it-asia
+- it-aquila
+- hch-18
+search: Pablo Éfeso sinagoga
+checked_on: '2026-09-28'
+status: verified

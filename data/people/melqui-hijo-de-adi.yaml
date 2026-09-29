@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: melqui-hijo-de-adi
+name: Melquí
+names:
+- name: Melquí
+perspicacia: 1200002969#1
+disambiguation: Melquí hijo de Adí (Lu 3:28); no Melquí hijo de Janaí (Lu 3:24).
+distinct_from:
+- melqui-hijo-de-janai
+summary: Antepasado de María en la lista de Lucas, entre Adí y Nerí. Perspicacia deja abierto si fue hijo de Adí o un descendiente
+  más lejano.
+reason: Perspicacia «Melquí», núm. 1; Lu 3:28.
+sources:
+- it-melqui
+- lucas-3
+links:
+- title: 'Perspicacia: «Melquí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002969
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: adi
+  word: ancestor
+  inferred: false
+  sources:
+  - lucas-3
+  reason: Lu 3:28 lo llama hijo de Adí; Perspicacia «Melquí» (núm. 1) admite que fuera descendiente, así que va como antepasado.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-suena-con-una-escalera-en-betel
+title: Jacob sueña con una escalera en Betel
+date:
+  from: -1780
+  to: -1780
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1781 a.e.c.
+narrative_order:
+  series: genesis
+  order: 28010
+places:
+- betel
+- beer-seba
+people:
+- jacob
+present:
+- jacob
+passages:
+- Gé 28:10-22
+summary: De camino a Harán, Jacob duerme al raso y sueña con una escalera por la que suben y bajan ángeles. Jehová le confirma
+  la promesa hecha a Abrahán. Jacob unge la piedra, llama Betel al lugar y hace un voto.
+reason: El estudio 3 fecha en 1781 a.e.c. la huida de Jacob y su visión en Betel (Gé 28:13, 19); Perspicacia «Jacob», párr.
+  10 y 11.
+sources:
+- si-3
+- it-jacob
+- it-betel
+- genesis-28
+links:
+- title: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  type: bible
+checked_on: '2026-09-29'
+status: verified

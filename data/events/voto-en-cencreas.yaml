@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: voto-en-cencreas
+title: Pablo se corta el pelo en Cencreas por un voto
+date:
+  from: 52
+  to: 52
+  precision: season
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: primavera de 52 e.c.
+narrative_order:
+  series: hechos
+  order: 1818
+places:
+- cencreas
+people:
+- pablo
+- aquila
+- priscila
+passages:
+- Hch 18:18
+summary: Después de quedarse bastantes días más en Corinto, Pablo se embarca hacia Siria con Áquila y Priscila.
+  En Cencreas se corta el pelo porque había hecho un voto.
+reason: Hch 18:18; el estudio 3 (párr. 25) pone la salida de Corinto en la primavera de 52.
+sources:
+- hch-18
+- si-3
+search: Cencreas voto
+checked_on: '2026-09-28'
+status: verified

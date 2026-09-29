@@ -7,7 +7,7 @@
 
 «Publicado» es el año de la publicación cuando la página de wol.jw.org lo muestra; si no lo muestra, pone «sin dato».
 
-Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escribió a mano los crea `build.py` a partir de `data/libros.yaml` y salen marcados como «implícita».
+Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escribió a mano los crea `build.py` a partir de `data/books.yaml` y salen marcados como «implícita».
 
 | Id | Título | Obra | Nivel | Publicado | Consultado |
 |---|---|---|---|---|---|
@@ -15,6 +15,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-corintios-11 | [1 Corintios 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-15 | [1 Corintios 15](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/15) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-16 | [1 Corintios 16](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| 1-cronicas-2 | [1 Crónicas 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/13/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-juan-2 | [1 Juan 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/62/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-1 | [1 Pedro 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-5 | [1 Pedro 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -34,12 +35,15 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-reyes-3 | [1 Reyes 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-6 | [1 Reyes 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-9 | [1 Reyes 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-samuel-1 | [1 Samuel 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-10 | [1 Samuel 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-16 | [1 Samuel 16](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-3 | [1 Samuel 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-31 | [1 Samuel 31](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/31) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-4 | [1 Samuel 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-samuel-7 | [1 Samuel 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-tesalonicenses-1 | [1 Tesalonicenses 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| 1-tesalonicenses-2 | [1 Tesalonicenses 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-timoteo-1 | [1 Timoteo 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/54/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | 2-corintios-2 | [2 Corintios 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | 2-corintios-7 | [2 Corintios 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -57,6 +61,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 2-cronicas-28 | [2 Crónicas 28](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/28) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-29 | [2 Crónicas 29](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/29) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-33 | [2 Crónicas 33](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/33) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-cronicas-35 | [2 Crónicas 35](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/35) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-juan-1 | [2 Juan 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/63/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-pedro-1 | [2 Pedro 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/61/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-pedro-3 | [2 Pedro 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/61/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -82,6 +87,8 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 2-reyes-8 | [2 Reyes 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-reyes-9 | [2 Reyes 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-samuel-12 | [2 Samuel 12](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/12) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-samuel-15 | [2 Samuel 15](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-samuel-16 | [2 Samuel 16](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-samuel-2 | [2 Samuel 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-samuel-5 | [2 Samuel 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-samuel-7 | [2 Samuel 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -115,10 +122,12 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | colosenses-4 | [Colosenses 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-1 | [Daniel 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-10 | [Daniel 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| daniel-2 | [Daniel 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-3 | [Daniel 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-4 | [Daniel 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-5 | [Daniel 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-9 | [Daniel 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| deuteronomio-31 | [Deuteronomio 31](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/31) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-34 | [Deuteronomio 34](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | efesios-3 | [Efesios 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | esdras-1 | [Esdras 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -131,6 +140,8 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | esdras-8 | [Esdras 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-2 | [Ester 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-3 | [Ester 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| ester-7 | [Ester 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| ester-8 | [Ester 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ester-9 | [Ester 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | exodo-1 | [Éxodo 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | exodo-10 | [Éxodo 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -1592,6 +1603,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | nota-lucas-24 | [Notas de estudio de Lucas. Capítulo 24](https://wol.jw.org/es/wol/d/r4/lp-s/1001070668) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-28 |
 | nota-mateo-17 | [Notas de estudio de Mateo. Capítulo 17](https://wol.jw.org/es/wol/d/r4/lp-s/1001070617) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-28 |
 | numeros-13 | [Números 13](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| numeros-14 | [Números 14](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/14) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | numeros-20 | [Números 20](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | numeros-34 | [Números 34](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | numeros-9 | [Números 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-sidim
+name: Valle de Sidim
+names:
+- name: Valle de Sidim
+- name: Llanura baja de Sidim
+  note: Otra traducción que da la nota de Gé 14:3; es el título de Perspicacia.
+type: valley
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Bajo la parte sur del mar Salado
+  geometry:
+    type: zone
+    lat: 31.20849
+    lon: 35.449223
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-mar-salado
+  - it-sidim
+  - genesis-14
+  reason: Gé 14:3 lo iguala con el mar Salado, y Perspicacia entiende que el valle acabó bajo sus aguas; hay quien lo pone
+    en la bahía al sur de El-Lisan.
+  note: 'Centro: punto de OpenBible al sur de El-Lisan. Radio nuestro.'
+  coord_source: openbible:a4a5cce
+  coord_url: https://www.openbible.info/geo/ancient/a4a5cce/valley-of-siddim
+summary: Valle lleno de pozos de alquitrán donde Kedorlaomer y sus aliados vencieron a los cinco reyes rebeldes. Más tarde
+  quedó cubierto por el mar Salado.
+reason: Perspicacia «Sidim, Llanura baja de» y «Mar Salado», apartado «Sodoma y Gomorra»; Gé 14:3, 8-10.
+sources:
+- it-sidim
+- it-mar-salado
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «Sidim, Llanura baja de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004112
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

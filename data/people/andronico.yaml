@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: andronico
+name: Andrónico
+names:
+- name: Andrónico
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c. (fecha de Romanos)
+summary: Judío cristiano de Roma al que Pablo saluda como pariente suyo. Había estado preso como él, era estimado
+  entre los apóstoles y se hizo cristiano antes que Pablo.
+reason: Perspicacia «Andrónico»; Ro 16:7. La fecha es la de Romanos, escrita en Corinto hacia 56 según la Tabla de los libros.
+sources:
+- it-andronico
+- romanos-16
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Andrónico»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000274
+  type: perspicacia
+- title: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: roma
+  inferred: false
+  sources:
+  - it-andronico
+  - romanos-16
+  reason: Pablo lo saluda en la congregación de Roma (Ro 16:7).
+  checked_on: '2026-09-28'
+  status: verified

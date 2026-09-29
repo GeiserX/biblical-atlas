@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ananias-sumo-sacerdote
+name: Ananías, sumo sacerdote
+names:
+- name: Ananías
+date:
+  from: 48
+  to: 58
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 48-58 e.c. (sumo sacerdote)
+disambiguation: El sumo sacerdote de Hch 23 y 24. No es el discípulo de Damasco ni el marido de Safira.
+distinct_from:
+- ananias-de-damasco
+- ananias-de-jerusalen
+summary: Sumo sacerdote judío de c. 48 a c. 58, hijo de Nebedeo. Mandó golpear a Pablo ante el Sanedrín y bajó a
+  Cesarea para acusarlo ante Félix.
+reason: Perspicacia «Ananías», núm. 3; Hch 23:2-5 y 24:1.
+sources:
+- it-ananias
+- hch-23
+- hch-24
+links:
+- title: 'Perspicacia: «Ananías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000267
+  type: perspicacia
+- title: Hechos 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - it-ananias
+  - hch-23
+  reason: Preside el Sanedrín en Jerusalén (Hch 23:2).
+  checked_on: '2026-09-28'
+  status: verified

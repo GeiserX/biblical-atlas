@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tiberiades
+name: Tiberíades
+names:
+- name: Tiberíades
+type: city
+lat: 32.773611
+lon: 35.544167
+precision: point
+coord_source: openbible:ac9adc9
+coord_url: https://www.openbible.info/geo/ancient/ac9adc9/tiberias
+summary: Ciudad fundada por Herodes Antipas hacia 18 e.c. en la costa oeste del lago, con el nombre de Tiberio, y sede de
+  su tetrarquía. Al parecer, Juan el Bautista murió preso allí.
+reason: Perspicacia «Tiberíades» (núm. 1) da la fundación y la sede; la nota de Mt 14:3 ve más probable que Juan muriera allí
+  que en Maqueronte. Coordenada de OpenBible.
+sources:
+- it-tiberiades
+- mateo-14
+- openbible-geo
+- marcos-6
+links:
+- title: 'Perspicacia: «Tiberíades»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004397
+  type: perspicacia
+- title: Mateo 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

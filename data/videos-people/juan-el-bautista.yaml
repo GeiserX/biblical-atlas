@@ -1,0 +1,54 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: juan-el-bautista
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwb-133_6_VIDEO"
+    title: "Trent Lippold: El hombre imperfecto más grande de todos los tiempos (graduación de la clase 158 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_6_VIDEO&appLanguage=S"
+    published: "2025-12-02"
+    hits: 8
+    terms:
+      "Juan el Bautista": 8
+  - docid: "pub-jwb-099_1_VIDEO"
+    title: "JW Broadcasting: Febrero de 2024"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-099_1_VIDEO&appLanguage=S"
+    published: "2024-02-06"
+    hits: 5
+    terms:
+      "Juan el Bautista": 5
+  - docid: "pub-jwbcov25_9_VIDEO"
+    title: "“¿Qué buscan?”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_9_VIDEO&appLanguage=S"
+    published: "2026-01-19"
+    hits: 3
+    terms:
+      "Juan el Bautista": 3
+  - docid: "pub-gnj_6_VIDEO"
+    title: "Episodio 6: “¿Eres tú el que tiene que venir?”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-6-eres-t%C3%BA-el-que-tiene-que-venir/"
+    published: "2026-05-01"
+    hits: 2
+    terms:
+      "Juan el Bautista": 2
+  - docid: "pub-jwb-099_3_VIDEO"
+    title: "Aprendamos de ellos: Juan el Bautista"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-099_3_VIDEO&appLanguage=S"
+    published: "2024-02-19"
+    hits: 2
+    terms:
+      "Juan el Bautista": 2
+  - docid: "pub-jwb_201706_2_VIDEO"
+    title: "Robert Luccioni: ¿Deja usted que sus circunstancias le impidan darle a Jehová lo mejor?"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201706_2_VIDEO&appLanguage=S"
+    published: "2017-06-19"
+    hits: 2
+    terms:
+      "Juan el Bautista": 2
+  - docid: "pub-jwb_202006_11_VIDEO"
+    title: "James Cauthon: Valoremos a quienes pasan desapercibidos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202006_11_VIDEO&appLanguage=S"
+    published: "2020-07-20"
+    hits: 2
+    terms:
+      "Juan el Bautista": 2

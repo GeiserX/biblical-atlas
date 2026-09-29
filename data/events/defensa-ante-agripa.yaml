@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: defensa-ante-agripa
+title: Pablo se defiende ante el rey Agripa
+date:
+  from: 58
+  to: 58
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 58 e.c.
+narrative_order:
+  series: hechos
+  order: 2513
+places:
+- cesarea
+people:
+- pablo
+- herodes-agripa-ii
+- berenice
+- festo
+type: speech
+roles:
+  pablo: spoke
+passages:
+- Hch 25:13–26:32
+summary: Agripa y Berenice visitan a Festo y oyen a Pablo contar su vida y su conversión. Agripa dice que casi lo
+  convence; todos lo ven inocente, pero había apelado a César.
+reason: Perspicacia «Herodes» (apartado 4) y «Berenice» fechan la visita hacia 58.
+sources:
+- it-herodes
+- it-berenice
+- it-festo
+- hch-25
+- hch-26
+search: Pablo Agripa defensa
+checked_on: '2026-09-29'
+status: verified

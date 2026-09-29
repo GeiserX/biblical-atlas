@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jese
+name: Jesé
+names:
+- name: Jesé
+perspicacia: '1200002449'
+summary: Hijo de Obed y nieto de Boaz y Rut, de la tribu de Judá. Vivía en Belén, criaba ovejas y fue padre del rey David.
+reason: Perspicacia «Jesé», párr. 1 y 2; Rut 4:17 y 22.
+sources:
+- it-jese
+- rut-4
+- mateo-1
+- lucas-3
+links:
+- title: 'Perspicacia: «Jesé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002449
+  type: perspicacia
+relations:
+- type: kin
+  person: obed-hijo-de-boaz
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  reason: Rut 4:17 y 22.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

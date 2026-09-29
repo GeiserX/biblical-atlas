@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merari
+name: Merarí
+names:
+- name: Merarí
+perspicacia: '1200002990'
+summary: Hijo de Leví, nombrado en tercer lugar y quizá el menor. Padre de Mahlí y Musí; de él descienden los meraritas, una
+  de las tres grandes ramas levitas.
+reason: Perspicacia «Merarí»; Gé 46:11.
+sources:
+- it-merari
+- genesis-46
+- exodo-6
+links:
+- title: 'Perspicacia: «Merarí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002990
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: levi-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-merari
+  - exodo-6
+  reason: 'Gé 46:11: aparece entre los hijos de Leví.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

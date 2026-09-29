@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: blasto
+name: Blasto
+names:
+- name: Blasto
+date:
+  from: 44
+  to: 44
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 44 e.c.
+summary: Hombre de confianza de Herodes Agripa I, a cargo de su dormitorio. Los de Tiro y Sidón se ganaron su favor
+  para pedir la paz al rey, quizá con un soborno.
+reason: Perspicacia «Blasto» (párr. 2) y la nota de estudio de Hch 12:20. La fecha es la de la muerte de Herodes Agripa I,
+  en 44 (estudio 3, párr. 20; Hch 12:20-23).
+sources:
+- it-blasto
+- hechos-12
+- si-3
+links:
+- title: 'Perspicacia: «Blasto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000770
+  type: perspicacia
+- title: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  type: bible
+checked_on: '2026-09-28'
+status: verified

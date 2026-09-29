@@ -1,0 +1,148 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: santiago-hijo-de-zebedeo
+name: Santiago, hijo de Zebedeo
+names:
+- name: Santiago
+- name: Santiago, hijo de Zebedeo
+- name: Boanerges
+  note: Sobrenombre compartido con su hermano Juan (Mr 3:17).
+disambiguation: El hijo de Zebedeo. No es Santiago hijo de Alfeo, otro apóstol, ni Santiago el medio hermano de
+  Jesús, que dirigía en Jerusalén.
+date:
+  from: 30
+  to: 44
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 30-44 e.c.
+  note: Desde su llamada en 30 hasta su muerte en 44.
+summary: 'Apóstol, quizá el hermano mayor de Juan, y socio de Pedro en la pesca. Uno de los tres más cercanos a
+  Jesús. Herodes Agripa I lo mató a espada hacia 44: el primero de los doce que murió mártir.'
+reason: Perspicacia «Santiago» (apartado 2, párr. 3 a 8) da la llamada en 30, el nombramiento en 31 y la muerte en
+  44; la nota de estudio de Hch 12:2 lo confirma.
+sources:
+- it-santiago
+- hechos-12
+- mateo-4
+- mateo-10
+- mateo-17
+- mateo-20
+- mateo-26
+- marcos-1
+- marcos-3
+- it-boanerges
+- marcos-5
+- marcos-9
+- marcos-10
+- marcos-13
+- marcos-14
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
+distinct_from:
+- santiago-hermano-de-jesus
+- santiago-hijo-de-alfeo
+- santiago-padre-de-tadeo
+relations:
+- type: kin
+  person: juan-apostol
+  word: brother
+  inferred: false
+  sources:
+  - it-santiago
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-20
+  - marcos-1
+  - marcos-3
+  - marcos-10
+  - lucas-5
+  - it-juan
+  - marcos-5
+  reason: Mt 10:2 nombra a Santiago, hijo de Zebedeo, y luego a Juan, su hermano. Perspicacia «Juan» cree que Juan era el
+    menor, porque Santiago suele ir primero (párr. 21).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zebedeo
+  word: father
+  inferred: false
+  sources:
+  - it-santiago
+  - it-zebedeo
+  - mateo-4
+  - mateo-10
+  - mateo-20
+  - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-10
+  - lucas-5
+  reason: Mt 10:2 lo llama hijo de Zebedeo.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: jerusalen
+  date:
+    from: 44
+    to: 44
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 44 e.c.
+  inferred: true
+  sources:
+  - hechos-12
+  - it-herodes
+  reason: Hch 12:1-4 pone su muerte junto al arresto de Pedro, que estaba preso en Jerusalén; el versículo no nombra la ciudad.
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-4
+  - mateo-10
+  - mateo-17
+  - mateo-20
+  - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-13
+  - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
+  reason: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: salome-discipula
+  word: mother
+  inferred: true
+  sources:
+  - mateo-27
+  - it-santiago
+  - it-salome
+  - marcos-15
+  reason: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Santiago», núm. 2, y la nota de Mr 15:40 creen que era Salomé.
+  checked_on: '2026-09-29'
+  status: pending
+links:
+- title: 'Perspicacia: «Santiago»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
+  type: perspicacia
+- title: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  type: bible
+perspicacia: 1200002313#2
+checked_on: '2026-09-29'
+status: verified

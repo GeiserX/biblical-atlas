@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-hijo-de-jose
+name: Simón
+names:
+- name: Simón
+perspicacia: 1200004131#4
+disambiguation: Medio hermano de Jesús, menor que él. No es Simón Pedro ni el apóstol Simón el cananita, ni los demás Simón
+  del Nuevo Testamento.
+distinct_from:
+- pedro
+- simon-el-cananita
+- simon-el-leproso
+- simon-de-cirene
+- simon-el-mago
+- simon-el-curtidor
+summary: Medio hermano menor de Jesús, nombrado por la gente de Nazaret. Todavía no creía en él en 32 e.c.; puede que después
+  se hiciera discípulo, aunque no consta si estaba con los reunidos en Jerusalén en 33.
+reason: Perspicacia «Simón», núm. 4; Mt 13:55 y Mr 6:3.
+sources:
+- it-simon
+- mateo-13
+- marcos-6
+links:
+- title: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  type: perspicacia
+relations:
+- type: kin
+  person: jose-esposo-de-maria
+  word: father
+  inferred: true
+  sources:
+  - mateo-13
+  - it-jose
+  - marcos-6
+  reason: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
+    entre ellos.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maria-madre-de-jesus
+  word: mother
+  inferred: true
+  sources:
+  - mateo-13
+  - marcos-6
+  reason: Mt 13:55 da a María como madre de Jesús y a Simón entre sus hermanos; la nota los hace hijos de María.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: nazaret
+  inferred: true
+  sources:
+  - mateo-13
+  reason: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

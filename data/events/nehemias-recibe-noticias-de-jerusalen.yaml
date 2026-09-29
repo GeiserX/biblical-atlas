@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nehemias-recibe-noticias-de-jerusalen
+title: Nehemías sabe en Susa que Jerusalén sigue en ruinas
+date:
+  from: -455
+  to: -455
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: kislev de 456 a.e.c.
+  detail:
+    month: kislev
+places:
+- susa
+people:
+- nehemias
+passages:
+- Ne 1:1-11
+summary: En el castillo de Susa, Nehemías supo por su hermano Hananí que el muro y las puertas de Jerusalén seguían en ruinas.
+  Lloró, ayunó y oró varios días antes de hablar con el rey.
+reason: 'Perspicacia «Nehemías», núm. 3 (Ne 1:1: mes de kislev); la Tabla de los libros hace empezar el periodo del libro
+  en 456.'
+sources:
+- it-nehemias
+- tnm-tabla
+- nehemias-1
+links:
+- title: 'Perspicacia: «Nehemías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003212
+  type: perspicacia
+- title: Nehemías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

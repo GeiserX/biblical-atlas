@@ -1,0 +1,165 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esau
+name: Esaú
+names:
+- name: Esaú
+- name: Edom
+  note: Sobrenombre que le vino del guisado rojo de lentejas (Gé 25:30).
+date:
+  from: -1857
+  to: -1737
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1858-1738 a.e.c. (de su nacimiento al entierro de Isaac)
+summary: Primogénito de Isaac y Rebeca y gemelo de Jacob, nacido en 1858 a.e.c. Cazador que vendió su primogenitura por
+  un guisado. Se estableció en Seír y de él vienen los edomitas.
+reason: 'Perspicacia «Esaú», párr. 2, 3, 5 y 10; Gé 25:24-34 y 36:6-8. Perspicacia «Esaú» y el estudio 3: nace en 1858
+  a.e.c.; Isaac muere en 1738 y lo entierran Esaú y Jacob (Gé 35:29).'
+sources:
+- si-3
+- it-esau
+- genesis-25
+- genesis-26
+- genesis-27
+- genesis-28
+- genesis-32
+- genesis-33
+- genesis-35
+- genesis-36
+links:
+- title: 'Perspicacia: «Esaú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001417
+  type: perspicacia
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+relations:
+- type: kin
+  person: isaac
+  word: father
+  inferred: false
+  sources:
+  - it-esau
+  - genesis-25
+  reason: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rebeca
+  word: mother
+  inferred: false
+  sources:
+  - it-esau
+  - genesis-25
+  reason: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jacob
+  word: twin_brother
+  inferred: false
+  sources:
+  - it-esau
+  - genesis-25
+  - genesis-32
+  - genesis-33
+  reason: 'Perspicacia «Esaú», párr. 2: hermano mellizo de Jacob (Gé 25:24-26).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: judit
+  word: wife
+  inferred: false
+  sources:
+  - it-judit
+  - genesis-26
+  reason: 'Gé 26:34: a los 40 años se casó con Judit.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: basemat-hija-de-elon
+  word: wife
+  inferred: false
+  sources:
+  - it-basemat
+  - genesis-26
+  reason: 'Gé 26:34: también se casó con Basemat hija de Elón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: mahalat-hija-de-ismael
+  word: wife
+  inferred: false
+  sources:
+  - genesis-28
+  - it-esau
+  - it-mahalat
+  reason: 'Gé 28:9: además de las esposas que ya tenía, se casó con Mahalat, hija de Ismael.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - it-esau
+  - it-seir
+  - genesis-32
+  - genesis-33
+  - it-edom
+  - genesis-36
+  reason: 'Gé 32:3: cuando Jacob volvió, Esaú vivía en Seír, en Edom. Perspicacia «Seír», núm. 2.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: edom
+  inferred: false
+  sources:
+  - it-edom
+  - genesis-32
+  reason: 'Gé 32:3: la tierra de Seír donde estaba Esaú era el territorio de Edom.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ada-hija-de-elon
+  word: wife
+  inferred: false
+  sources:
+  - it-ada
+  - genesis-36
+  reason: 'Gé 36:2, 10: Esaú se casó con Adá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: oholibama-hija-de-ana
+  word: wife
+  inferred: false
+  sources:
+  - it-oholibama
+  - genesis-36
+  reason: 'Gé 36:2, 14: Esaú se casó con Oholibamá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: basemat-hija-de-ismael
+  word: wife
+  inferred: false
+  sources:
+  - it-basemat
+  - genesis-36
+  reason: 'Gé 36:3, 10: Esaú se casó con Basemat.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: canaan
+  inferred: false
+  sources:
+  - it-esau
+  - genesis-36
+  reason: 'Gé 36:5, 6: tuvo hijos y acumuló riquezas en la tierra de Canaán.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200001417'
+checked_on: '2026-09-29'
+status: verified

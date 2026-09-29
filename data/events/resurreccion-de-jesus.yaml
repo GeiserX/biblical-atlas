@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: resurreccion-de-jesus
+title: Resurrección de Jesús
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 16
+places:
+- jerusalen
+people:
+- jesus
+- maria-magdalena
+- maria-esposa-de-clopas
+- pedro
+- juan-apostol
+- salome-discipula
+- juana
+roles:
+  jesus: raised
+passages:
+- Mt 28:1-15
+- Mr 16:1-8
+- Lu 24:1-49
+- Jn 20:1-25
+summary: Al amanecer del 16 de nisán, unas mujeres encuentran la tumba abierta y un ángel les dice que Jesús ha
+  sido resucitado. Ese día se aparece cinco veces a sus discípulos.
+reason: La tabla A7-H da el día y el lugar. La nota de Mt 28:1 explica el día; Perspicacia «Resurrección» (párr.
+  17-18). El estudio 3 da la misma fecha.
+sources:
+- tnm-a7-h
+- mateo-28
+- marcos-16
+- lucas-24
+- juan-20
+- jy-cap-133
+- jy-cap-134
+- jy-cap-135
+- si-3
+- it-resurreccion
+- tnm-b12-b
+narrative_order:
+  series: a7
+  order: 124
+links:
+- title: 'Perspicacia: «Resurrección»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003709
+  type: perspicacia
+search: Resurrección de Jesús
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,163 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: esdras
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_150_VIDEO"
+    title: "Información sobre Esdras"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_150_VIDEO"
+    published: "2015-12-28"
+chapters:
+  1:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 1
+  3:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 2
+  4:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 2
+  5:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+  6:
+    - docid: "pub-jcr_x_VIDEO"
+      title: "Jehová los llenó de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jcr_x_VIDEO"
+      published: "2020-07-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 1
+  7:
+    - docid: "pub-jwb_202102_11_VIDEO"
+      title: "Mark Noumair: “Esdras había preparado su corazón” (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202102_11_VIDEO"
+      published: "2021-02-15"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-jwb-099_10_VIDEO"
+      title: "Gary Breaux: Preparemos nuestro corazón para orar (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_10_VIDEO"
+      published: "2023-07-14"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-jwb_202011_7_VIDEO"
+      title: "Joel Dellinger: Aprovechemos al máximo la enseñanza de Jehová (Prov. 3:13)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202011_7_VIDEO"
+      published: "2020-11-16"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod24_34_VIDEO"
+      title: "James Mantz: Aprovechemos al máximo nuestra capacidad mental (Deut. 6:7)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_34_VIDEO"
+      published: "2024-08-23"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_123_VIDEO"
+      title: "Kenneth Flodin: La alegría de hacer discípulos. Mejoremos nuestras habilidades: Enseñemos con entusiasmo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_123_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r20_5_VIDEO"
+      title: "Sábado mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_5_VIDEO"
+      published: "2020-07-23"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_101_VIDEO"
+      title: "Stephen Lett: Jehová es \"el Dios que da paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_101_VIDEO"
+      published: "2022-06-28"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_1_VIDEO"
+      title: "Viernes mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_1_VIDEO"
+      published: "2022-06-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-112_1_VIDEO"
+      title: "JW Broadcasting: Mayo de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-112_1_VIDEO"
+      published: "2024-05-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-112_6_VIDEO"
+      title: "Stephen Lett: ¡La mano de Jehová es impresionante! (Sal. 145:16)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-112_6_VIDEO"
+      published: "2024-05-20"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_202010_9_VIDEO"
+      title: "Stephen Lett: “Acérquense a Dios” (Sant. 4:8)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202010_9_VIDEO"
+      published: "2020-10-12"
+      matched_by: [subtitles]
+      citations: 1
+  8:
+    - docid: "pub-jwb-099_10_VIDEO"
+      title: "Gary Breaux: Preparemos nuestro corazón para orar (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_10_VIDEO"
+      published: "2023-07-14"
+      matched_by: [subtitles]
+      citations: 1
+  9:
+    - docid: "pub-jwb_202102_11_VIDEO"
+      title: "Mark Noumair: “Esdras había preparado su corazón” (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202102_11_VIDEO"
+      published: "2021-02-15"
+      matched_by: [subtitles]
+      citations: 1

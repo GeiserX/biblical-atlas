@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muere-raquel-al-dar-a-luz-a-benjamin
+title: Muere Raquel al dar a luz a Benjamín
+date:
+  from: -1760
+  to: -1750
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán; Benjamín tenía de 40 a 50 años al
+    morir Jacob)'
+narrative_order:
+  series: genesis
+  order: 35016
+places:
+- belen
+people:
+- raquel
+- benjamin-hijo-de-jacob
+- jacob
+type: death
+roles:
+  raquel: died
+  benjamin-hijo-de-jacob: born
+present: []
+passages:
+- Gé 35:16-20
+summary: Camino de Efrat, Raquel tiene un parto muy difícil. Antes de morir llama al niño Ben-Oní; Jacob lo llama Benjamín.
+  La entierran junto al camino y Jacob levanta una columna.
+reason: Jacob vuelve a Canaán en 1761 (estudio 3); Benjamín tenía de 40 a 50 años al morir Jacob en 1711 (Perspicacia «Benjamín»).
+  Pasa camino de Efrat, lejos aún de la ciudad; el sitio no se nombra.
+sources:
+- si-3
+- it-benjamin
+- it-raquel
+- genesis-35
+links:
+- title: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  type: bible
+checked_on: '2026-09-29'
+status: verified

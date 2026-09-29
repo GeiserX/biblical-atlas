@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: huida-de-iconio
+title: Pablo y Bernabé huyen de Iconio
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1401
+places:
+- iconio
+people:
+- pablo
+- bernabe
+passages:
+- Hch 14:1-6
+summary: Predican en Iconio con valor y mucha gente cree, pero la ciudad se divide. Al saber que planean apedrearlos,
+  huyen a Listra y Derbe, en Licaonia.
+reason: Hch 14:1-6; Perspicacia «Pablo» (párr. 12) y «Licaonia».
+sources:
+- hch-14
+- it-pablo
+- it-licaonia
+search: Iconio Pablo Bernabé
+checked_on: '2026-09-28'
+status: verified

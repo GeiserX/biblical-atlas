@@ -333,7 +333,7 @@ Variantes que no dibujamos, agrupadas por pantalla.
 - **Recorrido que se escribe con los datos.** Cualquier persona con suficientes sucesos fechados genera un recorrido básico: una parada por suceso y una pregunta por fecha.
 - **Resumen imprimible** del recorrido en una página: mapa, ocho fechas y preguntas, para estudiar en papel.
 - **Repaso espaciado.** Las preguntas falladas vuelven a salir días después, guardadas sólo en el navegador.
-- **Modo familia.** Frases más cortas, iconos grandes y preguntas de elegir en el mapa («¿dónde está Babilonia?»).
+- **Modo pantalla compartida.** Frases más cortas, iconos grandes y preguntas de elegir en el mapa («¿dónde está Babilonia?»).
 
 **Portada**
 

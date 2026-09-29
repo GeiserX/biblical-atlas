@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: creacion-de-adan
+title: Creación de Adán
+date:
+  from: -4025
+  to: -4025
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 4026 a.e.c.
+places:
+- eden
+people:
+- adan
+passages:
+- Gé 2:7, 8
+- Gé 5:1-5
+- Gé 1:26-31
+- Gé 2:15-17
+summary: Dios forma al primer hombre del polvo y le da vida. Desde ahí empieza la cuenta de los años de la humanidad; quizás
+  fue en otoño, cuando empezaba el año más antiguo.
+reason: Perspicacia «Adán» fecha su creación en 4026 a.e.c.; el estudio 3 (párr. 12) llega a ese año con las edades de
+  Génesis 5 y 7. Gé 2:8 lo pone después en el jardín de Edén.
+sources:
+- it-adan
+- si-3
+- genesis-2
+- genesis-1
+links:
+- title: 'Perspicacia: «Adán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000089
+  type: perspicacia
+search: creación de Adán 4026
+checked_on: '2026-09-29'
+status: verified

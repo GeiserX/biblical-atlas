@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dispersion-de-los-discipulos
+title: 'Persecución en Jerusalén: los discípulos se dispersan'
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+narrative_order:
+  series: hechos
+  order: 801
+places:
+- jerusalen
+- judea
+- region-de-samaria
+people:
+- pedro
+- juan-apostol
+passages:
+- Hch 8:1-4
+summary: Tras la muerte de Esteban estalla una gran persecución. Todos, menos los apóstoles, se esparcen por Judea
+  y Samaria, y van predicando por donde pasan.
+reason: Perspicacia «Juan» (párr. 30) y «Esteban» (párr. 6); la nota de estudio de Hch 8:5 recuerda que los apóstoles
+  se quedaron en Jerusalén.
+sources:
+- it-juan
+- it-esteban
+- hechos-8
+note: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+search: persecución Hechos 8
+checked_on: '2026-09-28'
+status: verified

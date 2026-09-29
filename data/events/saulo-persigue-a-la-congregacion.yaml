@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saulo-persigue-a-la-congregacion
+title: Saulo persigue a la congregación
+date:
+  from: 34
+  to: 34
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: c. 34 e.c. (antes de su conversión)
+narrative_order:
+  series: hechos
+  order: 801
+places:
+- jerusalen
+people:
+- pablo
+passages:
+- Hch 8:1-3
+- Hch 9:1, 2
+- Gál 1:13, 14
+summary: Tras aprobar la muerte de Esteban, Saulo entra en las casas de los discípulos de Jerusalén y los lleva
+  a la cárcel. Después pide cartas al sumo sacerdote para seguir en Damasco.
+reason: Perspicacia «Pablo» (apartado «Persecución, conversión») narra la campaña; el año es el de la conversión,
+  c. 34 (estudio 3, párr. 22).
+sources:
+- it-pablo
+- si-3
+- hechos-8
+- hch-9
+search: Saulo persigue a los cristianos
+checked_on: '2026-09-28'
+status: verified

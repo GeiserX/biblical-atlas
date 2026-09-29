@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hermanos-de-jose-compran-grano-en-egipto
+title: Diez hermanos de José bajan a Egipto por grano
+date:
+  from: -1728
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+narrative_order:
+  series: genesis
+  order: 42001
+places:
+- egipto
+- canaan
+people:
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- jacob
+present:
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+passages:
+- Gé 42:1-25
+summary: Por el hambre, Jacob manda a diez de sus hijos a comprar grano y se queda con Benjamín. José los reconoce, los trata
+  de espías, los encierra tres días y retiene a Simeón hasta que vuelvan con Benjamín.
+reason: 'Perspicacia «Jacob», párr. 38: unos diez años después de morir Isaac, en 1738 a.e.c. según el estudio 3; el traslado
+  que sigue es de 1728. «José», párr. 22 y 23.'
+sources:
+- genesis-42
+- it-jacob
+- it-jose
+- si-3
+links:
+- title: Génesis 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/42
+  type: bible
+checked_on: '2026-09-29'
+status: verified

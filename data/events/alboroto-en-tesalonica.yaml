@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: alboroto-en-tesalonica
+title: Alboroto en Tesalónica contra la casa de Jasón
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1701
+places:
+- tesalonica
+people:
+- pablo
+- silas
+- jason
+passages:
+- Hch 17:1-10
+summary: Pablo razona en la sinagoga tres sábados y se forma una congregación. Judíos celosos arman una turba, asaltan
+  la casa de Jasón y lo llevan ante los gobernantes; los hermanos envían de noche a Pablo y Silas a Berea.
+reason: Perspicacia «Jasón» (párr. 1) y «Pablo» (párr. 16).
+sources:
+- it-jason
+- it-pablo
+- hch-17
+search: Jasón Tesalónica alboroto
+checked_on: '2026-09-28'
+status: verified

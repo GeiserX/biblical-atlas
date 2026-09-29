@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoas-de-israel
+name: Jehoás
+names:
+- name: Jehoás
+- name: Joás
+  note: Forma abreviada (Os 1:1).
+disambiguation: Rey de Israel, nieto de Jehú; no es Jehoás de Judá, hijo de Ocozías.
+distinct_from:
+- jehoas-de-juda
+date:
+  from: -861
+  to: -843
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 862-844 a.e.c.
+summary: Nieto de Jehú. Lloró junto a Eliseo moribundo y golpeó el suelo solo tres veces con las flechas. Derrotó a Amasías
+  de Judá y abrió brecha en el muro de Jerusalén.
+reason: Perspicacia «Jehoás», núm. 2, párr. 8-11; 2Re 13:10-25 y 14:8-16.
+sources:
+- it-jehoas
+- 2-reyes-13
+- 2-reyes-14
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehoás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
+  type: perspicacia
+- title: 2 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/13
+  type: bible
+relations:
+- type: kin
+  person: jehoacaz-de-israel
+  word: father
+  inferred: false
+  sources:
+  - it-jehoas
+  - 2-reyes-13
+  reason: Hijo de Jehoacaz (2Re 13:10).
+  checked_on: '2026-09-28'
+  status: verified
+- type: succeeds
+  person: jehoacaz-de-israel
+  inferred: false
+  sources:
+  - it-jehoas
+  - 2-reyes-13
+  reason: Reinó a la muerte de su padre (2Re 13:9).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

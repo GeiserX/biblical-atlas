@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaac-envia-a-jacob-a-padan-aram
+title: Isaac envía a Jacob a Padán-Aram
+date:
+  from: -1780
+  to: -1780
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1781 a.e.c.
+narrative_order:
+  series: genesis
+  order: 27041
+places:
+- beer-seba
+- padan-aram
+people:
+- isaac
+- jacob
+- rebeca
+- esau
+present:
+- isaac
+- jacob
+- rebeca
+- esau
+passages:
+- Gé 27:41-46
+- Gé 28:1-5
+summary: Esaú planea matar a Jacob. Rebeca lo sabe y convence a Isaac, que bendice otra vez a Jacob y lo manda a casa de Labán
+  para que no se case con una cananea.
+reason: 'El estudio 3 fecha en 1781 a.e.c. la huida de Jacob a Harán; Perspicacia «Jacob», párr. 10: tenía 77 años al dejar
+  Beer-Seba (Gé 28:10).'
+sources:
+- si-3
+- it-jacob
+- it-rebeca
+- genesis-27
+- genesis-28
+links:
+- title: Génesis 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/27
+  type: bible
+- title: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: discurso-en-antioquia-de-pisidia
+title: Pablo habla en la sinagoga de Antioquía de Pisidia
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1314
+places:
+- antioquia-de-pisidia
+people:
+- pablo
+- bernabe
+type: speech
+roles:
+  pablo: spoke
+passages:
+- Hch 13:14-52
+summary: Tras la lectura de la Ley y los Profetas, Pablo repasa la historia de Israel hasta Jesús. Muchos gentiles
+  creen; los judíos hacen que los echen de la región.
+reason: Hch 13:14-50 y sus notas de estudio (13:15, 13:20, 13:48); Perspicacia «Pablo» (párr. 12).
+sources:
+- hch-13
+- nota-hechos-13
+- it-pablo
+search: Antioquía de Pisidia sinagoga Pablo
+checked_on: '2026-09-29'
+status: verified

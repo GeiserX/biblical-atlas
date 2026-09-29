@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mesec
+name: Mesec
+names:
+- name: Mesec
+type: region
+lat: 39.655
+lon: 31.994167
+precision: zone
+coord_source: openbible:a5f9092
+coord_url: https://www.openbible.info/geo/ancient/a5f9092/meshech
+coord_note: Punto representativo de OpenBible, en el centro de Asia Menor, para toda la tierra de Mesec.
+summary: Tierra de los descendientes de Mesec, hijo de Jafet, al norte de Palestina. Ezequiel la nombra junto a Tubal como
+  pueblo guerrero; Perspicacia la relaciona con los musku, en Asia Menor.
+reason: 'Perspicacia «Mesec», núm. 1, párr. 1 y 2: el nombre pasó a sus descendientes y a su tierra. Sl 120:5. OpenBible: solo
+  el punto.'
+not_claimed:
+- 'Que el salmista viviera de verdad en Mesec: Perspicacia lee Sl 120:5 como imagen de un pueblo agresivo y bárbaro.'
+sources:
+- it-mesec
+- salmos-120
+- openbible-geo
+links:
+- title: 'Perspicacia: «Mesec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003008
+  type: perspicacia
+- title: Salmo 120 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/120
+  type: bible
+checked_on: '2026-09-29'
+status: verified

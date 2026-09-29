@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cilicia
+name: Cilicia
+names:
+- name: Cilicia
+type: region
+lat: 36.91303
+lon: 34.89206
+precision: zone
+coord_source: openbible:ad63819
+coord_url: https://www.openbible.info/geo/ancient/ad63819/cilicia
+coord_note: Punto representativo que da OpenBible, el mismo de Tarso, su ciudad más importante; la región es mucho más amplia.
+summary: Región estrecha del sureste de Asia Menor entre el Tauro y el mar; Pablo la recorrió al empezar el segundo
+  viaje.
+reason: 'Perspicacia («Cilicia») describe el lugar; aparece en Hch 15:41. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-cilicia
+- hch-15
+- openbible-geo
+links:
+- title: 'Perspicacia: «Cilicia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000975
+  type: perspicacia
+- title: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  type: bible
+checked_on: '2026-09-27'
+status: verified

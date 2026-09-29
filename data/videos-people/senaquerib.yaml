@@ -1,0 +1,47 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: senaquerib
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-tiy_1_VIDEO"
+    title: "“Oh, Jehová, en ti confío”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-tiy_1_VIDEO&appLanguage=S"
+    published: "2017-01-02"
+    hits: 9
+    terms:
+      "Senaquerib": 9
+  - docid: "pub-co-r22_7_VIDEO"
+    title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
+    published: "2022-07-25"
+    hits: 8
+    terms:
+      "Senaquerib": 8
+  - docid: "pub-wpc_1_VIDEO"
+    title: "Jehová nos guía por el camino de la paz (parte 1)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-1/"
+    published: "2022-08-01"
+    hits: 8
+    terms:
+      "Senaquerib": 8
+  - docid: "pub-jwb_201704_11_VIDEO"
+    title: "Mark Noumair: El estudio profundo nos acerca a Jehová (Sal. 73:28)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201704_11_VIDEO&appLanguage=S"
+    published: "2017-04-24"
+    hits: 7
+    terms:
+      "Senaquerib": 7
+  - docid: "pub-jwb-104_1_VIDEO"
+    title: "JW Broadcasting: Junio de 2023 (graduación de la clase 153 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_1_VIDEO&appLanguage=S"
+    published: "2023-06-05"
+    hits: 6
+    terms:
+      "Senaquerib": 6
+  - docid: "pub-jwb-104_6_VIDEO"
+    title: "Nicholas Ahladis: “Hay un río”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-104_6_VIDEO&appLanguage=S"
+    published: "2023-06-06"
+    hits: 6
+    terms:
+      "Senaquerib": 6

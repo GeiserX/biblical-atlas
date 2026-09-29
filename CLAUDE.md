@@ -9,7 +9,7 @@ pip install -r requirements.txt
 python3 scripts/build.py        # data/ -> site/data.json, site/data.js, dist/ (SQLite) y docs/investigacion/registro/
 python3 scripts/validate.py     # esquema, fuentes, fechas, calendario; debe dar 0 errores
 python3 scripts/validate.py --links
-python3 scripts/revisar.py --fallar
+python3 scripts/review.py --fail
 python3 -m http.server -d site  # y abrir http://localhost:8000
 ```
 
@@ -21,9 +21,11 @@ python3 -m http.server -d site  # y abrir http://localhost:8000
 
 ## Reglas de la casa
 
-- Todo en español con tildes correctas.
+- El contenido va en español con tildes correctas: nombres, textos, ids, documentos y todo lo que ve quien usa el sitio. El núcleo va en inglés: claves de los YAML, tipos y valores cerrados, palabras del vocabulario, prefijos de la cobertura, carpetas, scripts, opciones y el código nuevo ([modelo.md](docs/investigacion/modelo.md#1-qué-va-en-inglés-y-qué-no)).
 - De jw.org y wol.jw.org se enlaza, nunca se copia: palabras propias, 40 palabras como máximo por campo, ninguna racha de 8 palabras igual a la fuente.
-- Cada hecho lleva `fuentes`, `razon`, `consultado` y `estado`. Gana la publicación más reciente de jw.org.
+- Cada hecho lleva `sources`, `reason`, `checked_on` y `status`, y cada hecho anidado también: cada relación, cada parada, cada candidato y cada nombre y cada fiesta de un mes. En un nombre o una fiesta de un mes, `status` es opcional. Un cambio a un hecho conserva su fuente y su razón, y una duda se investiga en jw.org o wol.jw.org, nunca se adivina. Gana la publicación más reciente de jw.org.
+- Cada arista que dibuja el sitio lleva un verbo, una fecha cuando se sabe y una referencia a un pasaje. El verbo sale de [`data/vocabulary.yaml`](data/vocabulary.yaml); una arista sin referencia no se dibuja.
+- Una relación se escribe una sola vez, en la ficha que dice su palabra del vocabulario. Un texto que no es una palabra de allí va en `caption` y se añade a `outside` del vocabulario en un cambio revisado. Quien quita o mueve una relación añade su fila a `scripts/migration/redirects.yaml`.
 - Los subtítulos de vídeo y sus nombres de fichero nunca entran en el repositorio.
 - Sin nombres de personas reales, rutas de casa ni datos privados en nada que se publique.
 

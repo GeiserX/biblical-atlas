@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gayo-de-3-juan
+name: Gayo, destinatario de 3 Juan
+names:
+- name: Gayo
+disambiguation: El Gayo de 3 Juan. Probablemente no es ninguno de los Gayo de Hechos y de las cartas de Pablo.
+date:
+  from: 98
+  to: 98
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 98 e.c.
+distinct_from:
+- gayo-de-corinto
+- gayo-de-macedonia
+summary: Cristiano a quien Juan escribió su tercera carta hacia 98, elogiándolo porque seguía la verdad y hospedaba
+  a los hermanos que viajaban.
+reason: Perspicacia «Gayo», apartado 4 (párr. 5), y «Juan, Cartas de» (párr. 16), que dice que no se sabe quién era.
+sources:
+- it-gayo
+- it-juan-cartas
+- 3-juan-1
+links:
+- title: 'Perspicacia: «Gayo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001592
+  type: perspicacia
+- title: 3 Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/64/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

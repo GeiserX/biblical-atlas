@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mar-salado
+name: Mar Salado
+names:
+- name: Mar Salado
+- name: Mar Muerto
+  note: Nombre de hoy, que da la nota de Gé 14:3; según Perspicacia no se usó hasta el siglo II e.c.
+type: sea
+lat: 31.5
+lon: 35.5
+precision: zone
+coord_source: openbible:abed304
+coord_url: https://www.openbible.info/geo/ancient/abed304/salt-sea
+coord_note: Punto representativo de OpenBible para todo el mar.
+summary: Lago muy salado en la gran falla del Arabá, donde desemboca el Jordán; su superficie queda unos 400 m por debajo
+  del Mediterráneo. En el sur cubrió el antiguo valle de Sidim.
+reason: 'Perspicacia «Mar Salado», apartados «Nombre», «Descripción física» y «Sodoma y Gomorra»; Gé 14:3. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-mar-salado
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «Mar Salado»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

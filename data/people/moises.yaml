@@ -1,0 +1,229 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: moises
+name: Moisés
+names:
+- name: Moisés
+date:
+  from: -1592
+  to: -1472
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1593-1473 a.e.c.
+summary: Levita nacido en Egipto y criado en la corte del faraón. Pasó cuarenta años en Madián. Dios lo usó para sacar a
+  Israel de Egipto y lo hizo mediador del pacto de la Ley. Murió en el monte Nebo.
+reason: 'Perspicacia «Moisés», párr. 2, 5, 6, 20 y 30: nace en 1593 y muere en 1473 a.e.c., a los 120 años. El cuadro del
+  estudio 3 da los mismos años.'
+sources:
+- it-moises
+- si-3
+- exodo-2
+- deuteronomio-34
+- salmos-77
+- salmos-99
+- salmos-103
+- salmos-105
+- salmos-106
+- exodo-3
+- exodo-4
+- exodo-5
+- exodo-6
+- exodo-7
+- exodo-8
+- exodo-9
+- exodo-10
+- exodo-11
+- exodo-12
+- exodo-13
+- exodo-14
+- exodo-15
+- exodo-16
+- exodo-17
+- exodo-18
+- exodo-19
+- exodo-20
+- exodo-24
+- exodo-25
+- exodo-30
+- exodo-31
+- exodo-32
+- exodo-33
+- exodo-34
+- exodo-35
+- exodo-36
+- exodo-38
+- exodo-39
+- exodo-40
+- exodo-28
+links:
+- title: 'Perspicacia: «Moisés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  type: perspicacia
+- title: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  type: bible
+relations:
+- type: kin
+  person: aaron
+  word: brother
+  inferred: false
+  sources:
+  - it-moises
+  - exodo-6
+  - exodo-4
+  - exodo-7
+  - exodo-28
+  reason: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: levi-hijo-de-jacob
+  word: great_grandfather
+  inferred: false
+  sources:
+  - it-moises
+  - exodo-6
+  reason: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Qohat (Éx 6:16-20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: egipto
+  date:
+    from: -1592
+    to: -1592
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1593 a.e.c.
+  inferred: false
+  sources:
+  - it-moises
+  - si-3
+  - exodo-2
+  reason: 'Perspicacia «Moisés», párr. 2: nació en Egipto en 1593 a.e.c.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: madian
+  date:
+    from: -1552
+    to: -1513
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1553-c. 1514 a.e.c.
+  inferred: false
+  sources:
+  - si-3
+  - it-moises
+  - it-madian
+  - exodo-2
+  - exodo-3
+  - exodo-4
+  reason: 'El estudio 3: huye a Madián en 1553 y ve la zarza hacia 1514 a.e.c.; Perspicacia «Moisés», párr. 6: vivió allí cuarenta
+    años.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: monte-nebo
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  inferred: false
+  sources:
+  - it-moises
+  - deuteronomio-34
+  reason: 'Perspicacia «Moisés», párr. 30: en 1473 a.e.c. subió al monte Nebo, vio la Tierra Prometida y murió (Dt 34:1-5).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amram-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-2
+  - it-moises
+  - it-amram
+  - exodo-6
+  reason: 'Éx 2:1, 2: hijo de un levita; Perspicacia «Moisés» y «Amram», núm. 1, lo nombran.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jokebed
+  word: mother
+  inferred: false
+  sources:
+  - exodo-2
+  - it-moises
+  - it-jokebed
+  - exodo-6
+  reason: 'Éx 2:1, 2: lo dio a luz una hija de Leví; Perspicacia «Moisés» y «Jokébed» la nombran.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - exodo-2
+  - it-moises
+  - exodo-6
+  - exodo-7
+  reason: 'Éx 2:10, 11: se crió como hijo de la hija del faraón y vivió en Egipto hasta que huyó.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zipora
+  word: wife
+  inferred: false
+  sources:
+  - exodo-2
+  - exodo-4
+  - it-zipora
+  - exodo-18
+  reason: 'Éx 2:21: Reuel lo casó con Ziporá, una de sus hijas.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jetro
+  word: father_in_law
+  inferred: false
+  sources:
+  - exodo-2
+  - it-jetro
+  - exodo-3
+  - exodo-4
+  - exodo-18
+  reason: 'Éx 2:21: se casa con la hija de Reuel, que la nota de 2:18 identifica con Jetró.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: leader
+  inferred: false
+  sources:
+  - deuteronomio-31
+  - it-moises
+  reason: Guio al pueblo hasta que Jehová nombró líder a Josué en su lugar (Dt 31:2, 3, 14). Perspicacia «Moisés» lo llama
+    caudillo de la nación.
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - deuteronomio-34
+  - it-moises
+  reason: Dt 34:10 dice que en Israel no volvió a surgir un profeta como él; Perspicacia «Moisés» dice que Dios lo nombró
+    profeta.
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003118'
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barac
+name: Barac
+names:
+- name: Barac
+summary: Hijo de Abinoam, de Quedes de Neftalí. Animado por la profetisa Débora, reunió diez mil hombres en el monte Tabor
+  y derrotó a Sísara, jefe del ejército de Jabín.
+reason: Perspicacia «Barac», párr. 2 a 4; Jue 4:6-16.
+sources:
+- it-barac
+- jueces-4
+links:
+- title: 'Perspicacia: «Barac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000559
+  type: perspicacia
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+relations:
+- type: accompanies
+  person: debora-profetisa
+  inferred: false
+  sources:
+  - it-barac
+  - jueces-4
+  reason: 'Perspicacia «Barac», párr. 3: aceptó dirigir la lucha si Débora iba con él (Jue 4:8, 9).'
+  checked_on: '2026-09-29'
+  word: female_companion
+  status: verified
+checked_on: '2026-09-28'
+status: verified

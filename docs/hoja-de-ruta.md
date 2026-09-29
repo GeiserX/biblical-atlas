@@ -21,7 +21,7 @@ Cifras del 28 de septiembre de 2026, sacadas de `python3 scripts/build.py` y de 
 | Hechos del calendario | 14, los de la página «El calendario» |
 | Fuentes | 984, de ellas 282 capítulos de la Biblia que se crean solos |
 
-Quedan 7 hechos en `pendiente`, cada uno con su motivo (ver [Qué queda](#qué-queda)).
+Quedan 7 hechos en `pending`, cada uno con su motivo (ver [Qué queda](#qué-queda)).
 
 ## v0: los viajes y las cartas de Pablo (hecha)
 
@@ -87,12 +87,14 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 - **Van después de la presentación.** Juegos y modos para niños y para grupos (A-06, A-07, A-08, A-10, A-14, A-15, A-17).
 - **Lo urgente ya está cubierto.** Plegar tramos vacíos (T-21) y la línea vertical en el móvil (T-22), porque el minimapa y la densidad resuelven lo más urgente.
 - **Aplazadas sin otro motivo.** Fichas apiladas y comparación (F-15, F-16), QR (B-14, que añade una dependencia), paleta de órdenes (B-16), búsqueda por rango y región (B-17), presupuesto de carga (D-05, que solo medimos) y D-14, D-15 y D-16.
-- **Falta un campo en el esquema.** Los discursos en su lugar (A-18) necesitan que un suceso diga que es un discurso. Estaba en esta tanda y no se hizo.
+- **Falta que el sitio lo lea.** Los discursos en su lugar (A-18) necesitan que un suceso diga que es un discurso. El esquema ya lo dice con `type: speech` y el papel `spoke`; falta tipar esos sucesos y que el sitio los lea.
 - **Son del proceso, no del producto.** P-03, P-05, P-07, P-08, P-09, P-10 y P-11. P-10 ya está en [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ### Trabajo sin terminar
 
-- La ficha de hallazgo no enseña `donde_hoy`. El esquema y la validación lo aceptan, pero ningún hallazgo lo usa todavía.
+- **El modelo de relaciones.** El núcleo está en inglés y cada relación tiene su vocabulario, su clave con fecha y su `checked_on`. Quedan avisos de dos códigos de `validate.py`: 62 relaciones sin pasaje (`no_reference`) y 2 compañías sin palabra ni fecha (`bare_company`: Itiel y Ucal, decisión T2). Cada uno se resuelve leyendo, con las decisiones de la sección 16 de [`modelo.md`](investigacion/modelo.md#16-decisiones-que-necesita-la-migración). Los demás códigos están a 0 y pueden pasar a error, porque un código pasa a error cuando `main` llega a 0.
+- **Después del modelo.** La tabla de afirmaciones, el núcleo y el detalle a demanda, el índice por capítulo, el foco único y el capítulo por tramos, en el orden de [`grafo-y-relaciones.md`](ideas/grafo-y-relaciones.md).
+- La ficha de hallazgo no enseña `kept_at`. El esquema y la validación lo aceptan, pero ningún hallazgo lo usa todavía.
 - La base SQLite no guarda todavía los nombres de los meses por época ni los hechos de «El calendario». Están en `data.json` y en el registro.
 
 ### Hechos pendientes
@@ -131,14 +133,14 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 - Betsaida lleva sus dos candidatos como alternativas, porque Perspicacia no elige.
 - Ofir lleva Arabia, África e India como alternativas, siguiendo a La Atalaya de 2010, que es más reciente que Perspicacia.
 - El cruce del mar Rojo es un lugar propio. ¿Creamos también `mar-rojo` y colgamos de él los candidatos?
-- Los estados de los candidatos: `descartado_nivel_1` cuando la fuente dice que no encaja, `alternativa` cuando solo duda. ¿Es el criterio?
+- Los estados de los candidatos: `rejected_level_1` cuando la fuente dice que no encaja, `alternative` cuando solo duda. ¿Es el criterio?
 - La inscripción de Galión está anclada en Acaya porque OpenBible no tiene Delfos.
 - Usamos «Lakís», como la TNM y Perspicacia, no «Laquis».
 
 **Textos y esquema**
 
 - Nueve títulos de sucesos coinciden en exactamente 8 palabras con la fila de la tabla A7 o del libro «Jesús». ¿Los aceptamos como etiquetas cortas o los reescribimos?
-- El campo nuevo de las cartas con las personas que nombran se llama `personas`. ¿O preferimos `mencionadas`?
+- El campo nuevo de las cartas con las personas que nombran se llama `people`. ¿O preferimos otro nombre, como `mentioned`?
 - El capítulo 69 del libro «Jesús» no tiene página en wol.jw.org. Da 404.
 
 **Vídeos**
@@ -159,4 +161,4 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 
 ### Revisión anual
 
-Una vez al año, lo que [`scripts/revisar.py`](../scripts/revisar.py) marque como leído hace más de un año se vuelve a leer, y los índices de vídeos se regeneran con los subtítulos nuevos.
+Una vez al año, lo que [`scripts/review.py`](../scripts/review.py) marque como leído hace más de un año se vuelve a leer, y los índices de vídeos se regeneran con los subtítulos nuevos.

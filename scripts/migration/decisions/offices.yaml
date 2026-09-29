@@ -1,0 +1,809 @@
+# biblical-earth: decisiones O1 a O6 de docs/investigacion/modelo.md (cargos e identidades). Las aplica
+# scripts/migration/migrate.py después de la migración mecánica, sobre los datos ya en inglés.
+#
+# O1  El cargo de cada una de las 57 sucesiones, con el reino dicho en la razón. Una corrige su razón: Jehoiaquim.
+# O2  La certeza y el estado de las 8 identidades, leídos en su artículo de Perspicacia.
+# O3  Las dos identidades escritas en la ficha cuyo id va después pasan a la otra, con la razón escrita desde allí.
+# O4  Sin entradas: el cargo derivado de un periodo toma su primer lugar, que es la sede (Jerusalén, Samaria, Tirza)
+#     y no el reino. El reino ya lo dicen el nombre del periodo y la razón de cada sucesión.
+# O5  Cada persona de una sucesión sin periodo recibe su cargo como holds_office, y los dos periodos cuyo cargo no es
+#     el de su tipo llevan office. Los 11 titulares de un periodo sin sucesión se leyeron: ningún texto les da un
+#     antecesor o un sucesor con ficha. Los 11 periodos sin ficha de persona siguen sin ella.
+# O6  Los cargos de Samuel, Melquisedec, Elí, Esdras y Débora, uno por relación. Quedan fuera «copista» (Esdras), que
+#     no es un cargo del vocabulario, y «juez» para Débora: el texto dice que juzgaba, Perspicacia «Jueces» no la
+#     cuenta entre los doce y el vocabulario no tiene la forma femenina.
+format: biblical-earth/migration-decisions/1
+decision: O1-O6
+checked_on: '2026-09-29'
+entries:
+
+# ---------------------------------------------------------------- O1: el cargo de cada sucesión
+# Reino de Israel entero
+- file: people/david
+  relation: david/succeeds/saul
+  set: {office: king}
+  sources: [2-samuel-2, 2-samuel-5]
+  reason: Rey de Judá en Hebrón tras la muerte de Saúl y, siete años y medio después, de todo Israel (2Sa 2:4; 5:5).
+- file: people/salomon
+  relation: salomon/succeeds/david
+  set: {office: king}
+  sources: [1-reyes-1]
+  reason: Rey de todo Israel, ungido cuando David aún vivía (1Re 1:39).
+- file: people/rehoboam
+  relation: rehoboam/succeeds/salomon
+  set: {office: king}
+  sources: [1-reyes-11, 1-reyes-12]
+  reason: Rey al morir Salomón (1Re 11:43); al partirse el reino solo le quedó Judá (1Re 12:16, 17).
+
+# Reino de Judá
+- file: people/abias-de-juda
+  relation: abias-de-juda/succeeds/rehoboam
+  set: {office: king}
+  sources: [1-reyes-14]
+  reason: Rey de Judá al morir Rehoboam (1Re 14:31).
+- file: people/asa
+  relation: asa/succeeds/abias-de-juda
+  set: {office: king}
+  sources: [1-reyes-15]
+  reason: Rey de Judá al morir Abías (1Re 15:8).
+- file: people/jehosafat
+  relation: jehosafat/succeeds/asa
+  set: {office: king}
+  sources: [1-reyes-15]
+  reason: Rey de Judá al morir Asá (1Re 15:24).
+- file: people/jehoram-de-juda
+  relation: jehoram-de-juda/succeeds/jehosafat
+  set: {office: king}
+  sources: [2-reyes-8]
+  reason: Rey de Judá; empezó a reinar mientras Jehosafat vivía (2Re 8:16).
+- file: people/ocozias-de-juda
+  relation: ocozias-de-juda/succeeds/jehoram-de-juda
+  set: {office: king}
+  sources: [2-reyes-8]
+  reason: Rey de Judá tras su padre Jehoram (2Re 8:24).
+- file: people/atalia
+  relation: atalia/succeeds/ocozias-de-juda
+  set: {office: queen}
+  sources: [2-reyes-11, it-atalia-reina]
+  reason: Reina de Judá; se hizo con el trono al morir su hijo Ocozías (2Re 11:1-3). Perspicacia «Atalía» la llama reina de Judá.
+- file: people/jehoas-de-juda
+  relation: jehoas-de-juda/succeeds/atalia
+  set: {office: king}
+  sources: [2-reyes-11]
+  reason: Rey de Judá; lo coronaron y ejecutaron a Atalía (2Re 11:12-16).
+- file: people/amasias
+  relation: amasias/succeeds/jehoas-de-juda
+  set: {office: king}
+  sources: [2-reyes-12]
+  reason: Rey de Judá tras el asesinato de Jehoás (2Re 12:21).
+- file: people/uzias
+  relation: uzias/succeeds/amasias
+  set: {office: king}
+  sources: [2-reyes-14]
+  reason: Rey de Judá en lugar de Amasías (2Re 14:21).
+- file: people/jotan
+  relation: jotan/succeeds/uzias
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Judá al morir Uzías (2Re 15:7).
+- file: people/acaz
+  relation: acaz/succeeds/jotan
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Judá al morir Jotán (2Re 15:38).
+- file: people/ezequias
+  relation: ezequias/succeeds/acaz
+  set: {office: king}
+  sources: [2-reyes-16]
+  reason: Rey de Judá al morir Acaz (2Re 16:20).
+- file: people/manases-de-juda
+  relation: manases-de-juda/succeeds/ezequias
+  set: {office: king}
+  sources: [2-reyes-20]
+  reason: Rey de Judá al morir Ezequías (2Re 20:21).
+- file: people/amon-de-juda
+  relation: amon-de-juda/succeeds/manases-de-juda
+  set: {office: king}
+  sources: [2-reyes-21]
+  reason: Rey de Judá al morir Manasés (2Re 21:18).
+- file: people/josias
+  relation: josias/succeeds/amon-de-juda
+  set: {office: king}
+  sources: [2-reyes-21]
+  reason: Rey de Judá; el pueblo lo puso en el trono tras el asesinato de Amón (2Re 21:24).
+- file: people/jehoacaz-de-juda
+  relation: jehoacaz-de-juda/succeeds/josias
+  set: {office: king}
+  sources: [2-reyes-23]
+  reason: Rey de Judá; el pueblo lo ungió al morir Josías (2Re 23:30).
+# Corrección de la razón: 2Re 23:34 no dice «en lugar de su hermano», dice «en lugar de su padre Josías». La sucesión
+# sigue siendo cierta: Jehoiaquim reinó después de los tres meses de Jehoacaz, a quien Nekó se llevó (23:31-34).
+- file: people/jehoiaquim
+  relation: jehoiaquim/succeeds/jehoacaz-de-juda
+  set:
+    office: king
+    reason: Rey de Judá después de los tres meses de su hermano Jehoacaz, a quien Nekó apresó (2Re 23:31-34). El v. 34 dice
+      que Nekó lo puso en el trono en lugar de Josías, su padre.
+  sources: [2-reyes-23, it-jehoiaquim]
+  reason: La razón decía que 2Re 23:34 lo pone en lugar de su hermano; el versículo nombra a su padre Josías. El orden de
+    reinados, Jehoacaz y después Jehoiaquim, sale de 23:31-34.
+- file: people/joaquin
+  relation: joaquin/succeeds/jehoiaquim
+  set: {office: king}
+  sources: [2-reyes-24]
+  reason: Rey de Judá al morir Jehoiaquim (2Re 24:6).
+- file: people/sedequias
+  relation: sedequias/succeeds/joaquin
+  set: {office: king}
+  sources: [2-reyes-24]
+  reason: Rey de Judá; Nabucodonosor lo puso en lugar de Joaquín, su sobrino (2Re 24:17).
+
+# Reino de Israel, el del norte
+- file: people/nadab-de-israel
+  relation: nadab-de-israel/succeeds/jeroboan-i
+  set: {office: king}
+  sources: [1-reyes-14]
+  reason: Rey de Israel, el reino del norte, al morir Jeroboán (1Re 14:20).
+- file: people/baasa
+  relation: baasa/succeeds/nadab-de-israel
+  set: {office: king}
+  sources: [1-reyes-15]
+  reason: Rey de Israel, el reino del norte, tras matar a Nadab (1Re 15:27, 28).
+- file: people/ela-de-israel
+  relation: ela-de-israel/succeeds/baasa
+  set: {office: king}
+  sources: [1-reyes-16]
+  reason: Rey de Israel, el reino del norte, al morir Baasá (1Re 16:6).
+- file: people/zimri-de-israel
+  relation: zimri-de-israel/succeeds/ela-de-israel
+  set: {office: king}
+  sources: [1-reyes-16]
+  reason: Rey de Israel, el reino del norte, tras matar a Elá (1Re 16:10).
+- file: people/omri
+  relation: omri/succeeds/zimri-de-israel
+  set: {office: king}
+  sources: [1-reyes-16]
+  reason: Rey de Israel, el reino del norte; el ejército lo proclamó al saber lo que había hecho Zimrí (1Re 16:16).
+- file: people/acab
+  relation: acab/succeeds/omri
+  set: {office: king}
+  sources: [1-reyes-16]
+  reason: Rey de Israel, el reino del norte, al morir Omrí (1Re 16:28).
+- file: people/ocozias-de-israel
+  relation: ocozias-de-israel/succeeds/acab
+  set: {office: king}
+  sources: [1-reyes-22]
+  reason: Rey de Israel, el reino del norte, al morir Acab (1Re 22:40).
+- file: people/jehoram-de-israel
+  relation: jehoram-de-israel/succeeds/ocozias-de-israel
+  set: {office: king}
+  sources: [2-reyes-1]
+  reason: Rey de Israel, el reino del norte, en lugar de su hermano Ocozías, que no tuvo hijos (2Re 1:17).
+- file: people/jehu-de-israel
+  relation: jehu-de-israel/succeeds/jehoram-de-israel
+  set: {office: king}
+  sources: [2-reyes-9]
+  reason: Rey de Israel, el reino del norte, tras matar a Jehoram (2Re 9:24).
+- file: people/jehoacaz-de-israel
+  relation: jehoacaz-de-israel/succeeds/jehu-de-israel
+  set: {office: king}
+  sources: [2-reyes-10]
+  reason: Rey de Israel, el reino del norte, al morir Jehú (2Re 10:35).
+- file: people/jehoas-de-israel
+  relation: jehoas-de-israel/succeeds/jehoacaz-de-israel
+  set: {office: king}
+  sources: [2-reyes-13]
+  reason: Rey de Israel, el reino del norte, al morir Jehoacaz (2Re 13:9).
+- file: people/jeroboan-ii
+  relation: jeroboan-ii/succeeds/jehoas-de-israel
+  set: {office: king}
+  sources: [2-reyes-14]
+  reason: Rey de Israel, el reino del norte, al morir Jehoás (2Re 14:16).
+- file: people/zacarias-de-israel
+  relation: zacarias-de-israel/succeeds/jeroboan-ii
+  set: {office: king}
+  sources: [2-reyes-14]
+  reason: Rey de Israel, el reino del norte, al morir Jeroboán II (2Re 14:29).
+- file: people/salum-de-israel
+  relation: salum-de-israel/succeeds/zacarias-de-israel
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Israel, el reino del norte, tras matar a Zacarías (2Re 15:10).
+- file: people/menahem
+  relation: menahem/succeeds/salum-de-israel
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Israel, el reino del norte, tras matar a Salum (2Re 15:14).
+- file: people/pecahias
+  relation: pecahias/succeeds/menahem
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Israel, el reino del norte, al morir Menahem (2Re 15:22).
+- file: people/pecah
+  relation: pecah/succeeds/pecahias
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Israel, el reino del norte, tras matar a Pecahías (2Re 15:25).
+- file: people/hosea-de-israel
+  relation: hosea-de-israel/succeeds/pecah
+  set: {office: king}
+  sources: [2-reyes-15]
+  reason: Rey de Israel, el reino del norte, tras matar a Pécah (2Re 15:30).
+
+# Reyes de Edom, anteriores a los de Israel (Gé 36:31)
+- file: people/jobab-hijo-de-zerah
+  relation: jobab-hijo-de-zerah/succeeds/bela-hijo-de-beor
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Bela (Gé 36:31, 33).
+- file: people/husam
+  relation: husam/succeeds/jobab-hijo-de-zerah
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Jobab (Gé 36:31, 34).
+- file: people/hadad-hijo-de-bedad
+  relation: hadad-hijo-de-bedad/succeeds/husam
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Husam (Gé 36:31, 35).
+- file: people/samla
+  relation: samla/succeeds/hadad-hijo-de-bedad
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Hadad (Gé 36:31, 36).
+- file: people/shaul-de-edom
+  relation: shaul-de-edom/succeeds/samla
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Samlá (Gé 36:31, 37).
+- file: people/baal-hanan-hijo-de-acbor
+  relation: baal-hanan-hijo-de-acbor/succeeds/shaul-de-edom
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Shaúl (Gé 36:31, 38).
+- file: people/hadar
+  relation: hadar/succeeds/baal-hanan-hijo-de-acbor
+  set: {office: king}
+  sources: [genesis-36]
+  reason: Rey de Edom al morir Baal-Hanán (Gé 36:31, 39).
+
+# Babilonia y Persia
+- file: people/dario-el-medo
+  relation: dario-el-medo/succeeds/belsasar
+  set: {office: king}
+  sources: [daniel-5, daniel-9]
+  reason: Rey del reino de los caldeos tras la muerte de Belsasar (Da 5:30, 31; 9:1).
+- file: people/cambises-ii
+  relation: cambises-ii/succeeds/ciro
+  set: {office: king}
+  sources: [it-ciro]
+  reason: Rey de Persia; Perspicacia «Ciro» dice que, tras ser corregente, reinó solo cuando murió su padre.
+- file: people/jerjes-i
+  relation: jerjes-i/succeeds/dario-i
+  set: {office: king}
+  sources: [it-dario]
+  reason: Rey de Persia al morir Darío I en 486 (Perspicacia «Darío», núm. 2).
+- file: people/artajerjes-i
+  relation: artajerjes-i/succeeds/jerjes-i
+  set: {office: king}
+  sources: [it-persia, si-3]
+  reason: Rey de Persia desde 475, el año en que murió Jerjes (estudio 3, párr. 18).
+
+# Roma
+- file: people/arquelao
+  relation: arquelao/succeeds/herodes-el-grande
+  set: {office: ethnarch}
+  sources: [mateo-2, it-arquelao]
+  reason: Mt 2:22 dice que reinaba en Judea en lugar de su padre; Perspicacia «Arquelao» precisa que Augusto le dio el título
+    de etnarca y no el de rey.
+- file: people/tiberio
+  relation: tiberio/succeeds/augusto
+  set: {office: emperor}
+  sources: [it-tiberio]
+  reason: Emperador de Roma desde 14 e.c., cuando murió Augusto y el Senado lo nombró (Perspicacia «Tiberio»).
+- file: people/festo
+  relation: festo/succeeds/felix
+  set: {office: governor}
+  sources: [it-festo, hch-24]
+  reason: Gobernador de Judea después de Félix (Hch 24:27; Perspicacia «Festo»).
+
+# Otros cargos
+- file: people/eliseo
+  relation: eliseo/succeeds/elias-profeta
+  set: {office: prophet}
+  sources: [1-reyes-19, it-eliseo]
+  reason: Jehová mandó ungirlo profeta en lugar de Elías (1Re 19:16); Perspicacia «Eliseo» lo llama sucesor de Elías.
+- file: people/matias
+  relation: matias/succeeds/judas-iscariote
+  set: {office: apostle}
+  sources: [hechos-1]
+  reason: Ocupó el puesto de apóstol que dejó Judas y se le contó con los once (Hch 1:25, 26).
+- file: people/josue-hijo-de-nun
+  relation: josue-hijo-de-nun/succeeds/moises
+  set: {office: leader}
+  sources: [deuteronomio-31, it-moises]
+  reason: Jehová lo nombró líder para llevar al pueblo en lugar de Moisés (Dt 31:3, 7, 14); Perspicacia «Moisés» dice que le
+    sucedería como caudillo.
+
+# ---------------------------------------------------------------- O2: la certeza de las identidades
+- file: people/ada-hija-de-elon
+  relation: ada-hija-de-elon/same_as/basemat-hija-de-elon
+  set: {certainty: possible, status: verified}
+  sources: [it-ada, it-basemat]
+  reason: Perspicacia «Adá», núm. 2, lo da como posible, y «Basemat», núm. 1, dice que era Adá o su hermana.
+- file: people/bartolome
+  relation: bartolome/same_as/natanael
+  set: {certainty: probable, status: verified}
+  sources: [it-bartolome, it-natanael]
+  reason: Perspicacia «Natanael» lo da como probable nombre personal de Bartolomé; «Bartolomé» dice que se le identifica por lo
+    general con él.
+- file: people/basemat-hija-de-ismael
+  relation: basemat-hija-de-ismael/same_as/mahalat-hija-de-ismael
+  set: {certainty: possible, status: verified}
+  sources: [it-basemat, it-esau]
+  reason: Perspicacia «Basemat», núm. 2, dice que posiblemente es Mahalat; «Esaú» pone a Basemat entre interrogaciones junto a
+    Mahalat.
+- file: people/hur-companero-de-moises
+  relation: hur-companero-de-moises/same_as/hur-hijo-de-caleb
+  set:
+    certainty: probable
+    status: verified
+    reason: 'Perspicacia «Hur», núm. 1 y 2: probablemente el compañero de Moisés es el hijo de Caleb y abuelo de Bezalel (1Cr
+      2:19, 20), pero no lo afirma.'
+  sources: [it-hur, 1-cronicas-2]
+  reason: Perspicacia «Hur» lo da como probable en los dos artículos. La razón cita ahora el pasaje del hijo de Caleb, para
+    que la relación tenga referencia.
+- file: people/sesbazar
+  relation: sesbazar/same_as/zorobabel
+  set:
+    certainty: probable
+    status: verified
+    reason: Perspicacia «Sesbazar» lo ve lo más probable. Lo que Esd 1:8-11 y 5:14-16 cuentan de Sesbazar se cuenta de
+      Zorobabel en los demás pasajes, y a los dos se les llama gobernador.
+  sources: [it-sesbazar, it-zorobabel, esdras-1, esdras-5]
+  reason: La certeza ya salía de la palabra antigua. La razón cita ahora los pasajes, para que la relación tenga referencia.
+- file: people/zerah-de-bozra
+  relation: zerah-de-bozra/same_as/zerah-hijo-de-reuel
+  set: {certainty: possible, status: verified}
+  sources: [it-zerah]
+  reason: Perspicacia «Zérah», núm. 1 y 2, dice en los dos que posiblemente son la misma persona.
+
+# ---------------------------------------------------------------- O3: identidades en la ficha cuyo id va primero
+# O2 también vale para estas dos: la certeza y el estado van en la relación nueva.
+- file: people/judit
+  add:
+    type: same_as
+    person: oholibama-hija-de-ana
+    certainty: possible
+    inferred: true
+    sources: [it-judit, it-esau, genesis-36]
+    reason: Perspicacia «Judit» dice que puede ser la Oholibamá de Gé 36:2; «Esaú» pone a Oholibamá entre interrogaciones
+      junto a Judit.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [it-judit, it-esau, genesis-36]
+  reason: La identidad va en la ficha cuyo id va primero, con las fuentes que tenía. Perspicacia «Judit» la da como posible.
+- file: people/oholibama-hija-de-ana
+  relation: oholibama-hija-de-ana/same_as/judit
+  remove: true
+  redirect_to: judit/same_as/oholibama-hija-de-ana
+  sources: [it-judit, it-esau]
+  reason: La misma identidad queda escrita en la ficha de Judit, cuyo id va primero.
+- file: people/timna-concubina-de-elifaz
+  add:
+    type: same_as
+    person: timna-hija-de-seir
+    certainty: possible
+    inferred: true
+    sources: [it-timna, genesis-36]
+    reason: 'Perspicacia «Timná», núm. 1 y 2: la concubina de Elifaz (Gé 36:12) posiblemente es la hija de Seír, hermana de
+      Lotán (Gé 36:22).'
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [it-timna, genesis-36]
+  reason: La identidad va en la ficha cuyo id va primero. Perspicacia «Timná» la da como posible en los dos artículos.
+- file: people/timna-hija-de-seir
+  relation: timna-hija-de-seir/same_as/timna-concubina-de-elifaz
+  remove: true
+  redirect_to: timna-concubina-de-elifaz/same_as/timna-hija-de-seir
+  sources: [it-timna]
+  reason: La misma identidad queda escrita en la ficha de la concubina de Elifaz, cuyo id va primero.
+
+# ---------------------------------------------------------------- O5: el cargo de quien está en una sucesión sin periodo
+- file: people/moises
+  add:
+    type: holds_office
+    office: leader
+    inferred: false
+    sources: [deuteronomio-31, it-moises]
+    reason: Guio al pueblo hasta que Jehová nombró líder a Josué en su lugar (Dt 31:2, 3, 14). Perspicacia «Moisés» lo llama
+      caudillo de la nación.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [deuteronomio-31, it-moises]
+  reason: Moisés no tiene periodo y Josué le sucede como caudillo; el cargo del antecesor no estaba en ningún dato.
+- file: people/moises
+  add:
+    type: holds_office
+    office: prophet
+    inferred: false
+    sources: [deuteronomio-34, it-moises]
+    reason: Dt 34:10 dice que en Israel no volvió a surgir un profeta como él; Perspicacia «Moisés» dice que Dios lo nombró
+      profeta.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [deuteronomio-34, it-moises]
+  reason: Un segundo cargo de Moisés que el texto nombra; va en su propia relación.
+- file: people/josue-hijo-de-nun
+  add:
+    type: holds_office
+    office: leader
+    inferred: false
+    sources: [deuteronomio-31, it-josue]
+    reason: Jehová lo nombró líder en la tienda de reunión para que llevara al pueblo a la tierra (Dt 31:7, 14). Perspicacia
+      «Josué» lo describe como caudillo.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [deuteronomio-31, it-josue]
+  reason: Josué no tiene periodo; su cargo solo estaba en la sucesión.
+- file: people/elias-profeta
+  add:
+    type: holds_office
+    office: prophet
+    inferred: false
+    sources: [1-reyes-18, it-elias]
+    reason: En el Carmelo se presenta como el único profeta de Jehová que queda (1Re 18:22).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-reyes-18, it-elias]
+  reason: Elías no tiene periodo y Eliseo le sucede como profeta; el cargo del antecesor no estaba en ningún dato.
+- file: people/eliseo
+  add:
+    type: holds_office
+    office: prophet
+    inferred: false
+    sources: [1-reyes-19, it-eliseo]
+    reason: Jehová mandó a Elías ungirlo como profeta (1Re 19:16); Perspicacia «Eliseo» cuenta unos sesenta años de servicio
+      como profeta.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-reyes-19, it-eliseo]
+  reason: Eliseo no tiene periodo; su cargo solo estaba en la sucesión.
+- file: people/judas-iscariote
+  add:
+    type: holds_office
+    office: apostle
+    inferred: false
+    sources: [mateo-10, hechos-1]
+    reason: Mt 10:2-4 lo nombra entre los doce apóstoles; Hch 1:25 habla del apostolado que abandonó.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [mateo-10, hechos-1]
+  reason: Judas no tiene periodo y Matías le sucede como apóstol; el cargo del antecesor no estaba en ningún dato.
+- file: people/matias
+  add:
+    type: holds_office
+    office: apostle
+    inferred: false
+    sources: [hechos-1]
+    reason: Salió elegido por suertes y desde entonces se le contó con los once apóstoles (Hch 1:26).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [hechos-1]
+  reason: Matías no tiene periodo; su cargo solo estaba en la sucesión.
+- file: people/herodes-el-grande
+  add:
+    type: holds_office
+    place: judea
+    office: king
+    inferred: false
+    sources: [lucas-1, mateo-2, it-herodes]
+    reason: Lu 1:5 lo llama rey de Judea y Mt 2:1 habla de los días del rey Herodes.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [lucas-1, mateo-2, it-herodes]
+  reason: Herodes el Grande no tiene periodo y Arquelao le sucede; el cargo del antecesor no estaba en ningún dato.
+- file: people/arquelao
+  add:
+    type: holds_office
+    place: judea
+    office: ethnarch
+    inferred: true
+    sources: [mateo-2, it-arquelao]
+    reason: Mt 2:22 dice que reinaba en Judea; el título de etnarca, y no el de rey, lo da Perspicacia «Arquelao».
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [mateo-2, it-arquelao]
+  reason: Arquelao no tiene periodo. El título sale de la publicación y no del texto, por eso va deducido.
+- file: people/festo
+  add:
+    type: holds_office
+    place: judea
+    office: governor
+    inferred: false
+    sources: [hch-24, hch-25, it-festo]
+    reason: Sucedió a Félix (Hch 24:27) y tomó posesión de su puesto en la provincia (Hch 25:1). Perspicacia «Festo» lo llama
+      gobernador de Judea.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [hch-24, hch-25, it-festo]
+  reason: Festo no tiene periodo; su cargo solo estaba en la sucesión.
+- file: people/belsasar
+  add:
+    type: holds_office
+    place: babilonia
+    office: coregent
+    inferred: true
+    sources: [daniel-5, it-belsasar]
+    reason: Daniel lo llama el rey Belsasar (Da 5:1, 9); Perspicacia «Belsasar» precisa que fue corregente de su padre Nabonido.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [daniel-5, it-belsasar]
+  reason: Belsasar no tiene periodo y Darío el medo le sucede. Corregente sale de la publicación, por eso va deducido.
+- file: people/dario-el-medo
+  add:
+    type: holds_office
+    place: babilonia
+    office: king
+    inferred: false
+    sources: [daniel-5, daniel-9]
+    reason: Recibió el reino la noche en que murió Belsasar (Da 5:30, 31); Da 9:1 dice que lo hicieron rey sobre los caldeos.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [daniel-5, daniel-9]
+  reason: Darío el medo no tiene periodo; su cargo solo estaba en la sucesión.
+- file: people/bela-hijo-de-beor
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Gé 36:31, 32 lo pone el primero de los reyes que reinaron en Edom.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Bela no tiene periodo y Jobab le sucede como rey; el cargo del antecesor no estaba en ningún dato.
+- file: people/jobab-hijo-de-zerah
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Bela (Gé 36:31, 33).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/husam
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Jobab (Gé 36:31, 34).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/hadad-hijo-de-bedad
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Husam (Gé 36:31, 35).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/samla
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Hadad (Gé 36:31, 36).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/shaul-de-edom
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Samlá (Gé 36:31, 37).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/baal-hanan-hijo-de-acbor
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Shaúl (Gé 36:31, 38).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+- file: people/hadar
+  add:
+    type: holds_office
+    place: edom
+    office: king
+    inferred: false
+    sources: [genesis-36]
+    reason: Reinó en Edom tras Baal-Hanán (Gé 36:31, 39).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-36]
+  reason: Los reyes de Edom no tienen periodo; su cargo solo estaba en la sucesión.
+
+# O5: los dos periodos cuyo cargo no es el de su tipo. build.py deriva de ellos el cargo ejercido.
+- file: periods/atalia
+  set: {office: queen}
+  sources: [2-reyes-11, it-atalia-reina]
+  reason: El periodo es de tipo rey, pero quien reina es una mujer; Perspicacia «Atalía» la llama reina de Judá (2Re 11:3).
+- file: periods/galion
+  set: {office: proconsul}
+  sources: [hch-18, it-galion]
+  reason: El periodo es de tipo gobernador; Hch 18:12 y Perspicacia «Galión» dan su cargo, procónsul de Acaya.
+
+# ---------------------------------------------------------------- O6: quien tuvo dos cargos
+- file: people/samuel
+  add:
+    type: holds_office
+    office: prophet
+    inferred: false
+    sources: [1-samuel-3, it-samuel]
+    reason: Todo Israel, de Dan a Beer-Seba, supo que Jehová lo había acreditado como profeta (1Sa 3:20).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-samuel-3, it-samuel]
+  reason: El resumen de Samuel nombra dos cargos y ninguno estaba en un dato.
+- file: people/samuel
+  add:
+    type: holds_office
+    office: judge
+    inferred: false
+    sources: [1-samuel-7, it-samuel]
+    reason: Empezó a servir como juez en Mizpá (1Sa 7:6) y juzgó a Israel toda su vida, en Betel, Guilgal, Mizpá y Ramá (1Sa
+      7:15-17).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-samuel-7, it-samuel]
+  reason: La TNM lo llama juez en 1Sa 7:6. Perspicacia «Jueces» no lo suele contar entre ellos, pero el texto sí le da el
+    cargo. Juzgaba en cuatro ciudades, así que no lleva lugar.
+- file: people/eli
+  add:
+    type: holds_office
+    place: silo
+    office: high_priest
+    inferred: true
+    sources: [1-samuel-1, it-eli]
+    reason: El texto lo llama el sacerdote Elí, sentado junto al templo de Siló (1Sa 1:3, 9); Perspicacia «Elí» lo llama sumo
+      sacerdote.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-samuel-1, it-eli]
+  reason: Que era el sumo sacerdote lo dice la publicación; el texto lo llama sacerdote. Por eso va deducido.
+- file: people/eli
+  add:
+    type: holds_office
+    office: judge
+    inferred: false
+    sources: [1-samuel-4, it-eli]
+    reason: Había juzgado a Israel cuarenta años cuando murió (1Sa 4:18); Perspicacia «Elí» dice que lo hizo como sumo
+      sacerdote.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [1-samuel-4, it-eli]
+  reason: El resumen de Elí nombra los dos cargos. El texto no dice dónde juzgaba, así que este no lleva lugar.
+- file: people/melquisedec
+  add:
+    type: holds_office
+    office: king
+    inferred: false
+    sources: [genesis-14, it-melquisedec]
+    reason: Gé 14:18 lo llama rey de Salem.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-14, it-melquisedec]
+  reason: El resumen de Melquisedec nombra dos cargos. Salem no tiene ficha de lugar; su estancia en Jerusalén ya está en otra
+    relación.
+- file: people/melquisedec
+  add:
+    type: holds_office
+    office: priest
+    inferred: false
+    sources: [genesis-14, it-melquisedec]
+    reason: Gé 14:18 lo llama sacerdote del Dios Altísimo; Perspicacia «Melquisedec» dice que es el primer sacerdote que nombra
+      la Biblia.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [genesis-14, it-melquisedec]
+  reason: El segundo cargo de Melquisedec, en su propia relación.
+- file: people/esdras
+  add:
+    type: holds_office
+    office: priest
+    inferred: false
+    sources: [esdras-7, it-esdras]
+    reason: La carta de Artajerjes lo llama el sacerdote Esdras, copista de la Ley (Esd 7:11, 12).
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [esdras-7, it-esdras]
+  reason: Solo el cargo de sacerdote. Copista no es un cargo del vocabulario y queda abierto.
+- file: people/debora-profetisa
+  add:
+    type: holds_office
+    office: prophetess
+    inferred: false
+    sources: [jueces-4, it-debora]
+    reason: Jue 4:4 la llama profetisa, y Perspicacia «Débora», núm. 2, también.
+    checked_on: '2026-09-29'
+    status: verified
+  sources: [jueces-4, it-debora]
+  reason: Solo profetisa. Jue 4:4 dice que juzgaba a Israel, pero Perspicacia «Jueces» la deja fuera de los doce jueces y el
+    vocabulario no tiene la forma femenina de juez; queda abierto.
+
+# ---------------------------------------------------------------- cobertura de los cargos nuevos
+# Cada cargo que O5 y O6 añaden con un capítulo que ya está leído entero (Gé 14 y 36, Mt 2 y 10, Lu 1) queda citado en
+# el tramo que lo cuenta, como pide la cobertura (data/coverage/README.md): en entities si el tramo lo cuenta y en
+# mentions si solo lo nombra.
+- file: coverage/genesis
+  chapter: 14
+  span: 17-24
+  entities: [relation:melquisedec/holds_office/-/king, relation:melquisedec/holds_office/-/priest]
+  sources: [genesis-14]
+  reason: Gé 14:18 cuenta que Melquisedec, rey de Salem y sacerdote del Dios Altísimo, sale al encuentro de Abrán.
+- file: coverage/genesis
+  chapter: 36
+  span: 31-39
+  entities: [relation:bela-hijo-de-beor/holds_office/edom, relation:jobab-hijo-de-zerah/holds_office/edom,
+             relation:husam/holds_office/edom, relation:hadad-hijo-de-bedad/holds_office/edom,
+             relation:samla/holds_office/edom, relation:shaul-de-edom/holds_office/edom,
+             relation:baal-hanan-hijo-de-acbor/holds_office/edom, relation:hadar/holds_office/edom]
+  sources: [genesis-36]
+  reason: Gé 36:31-39 es la lista de los ocho reyes que reinaron en Edom uno tras otro, antes de que Israel tuviera rey.
+- file: coverage/mateo
+  chapter: 2
+  span: 1-8
+  entities: [relation:herodes-el-grande/holds_office/judea]
+  sources: [mateo-2]
+  reason: Mt 2:1-8 cuenta la visita de los astrólogos en los días del rey Herodes, que los recibe en Jerusalén.
+- file: coverage/mateo
+  chapter: 2
+  span: 19-23
+  entities: [relation:arquelao/holds_office/judea]
+  sources: [mateo-2]
+  reason: 'Mt 2:22: José oye que Arquelao ha tomado el trono de Judea tras su padre, y se retira a Galilea.'
+- file: coverage/lucas
+  chapter: 1
+  span: 5-7
+  mentions: [relation:herodes-el-grande/holds_office/judea]
+  sources: [lucas-1]
+  reason: Lu 1:5 solo fecha el relato por el reinado de Herodes sobre Judea; el tramo ya lo tiene en mentions.
+- file: coverage/genesis
+  chapter: 36
+  span: 1-5
+  mentions: [person:judit]
+  sources: [genesis-36, it-judit]
+  reason: El tramo cita la identidad de Oholibamá con Judit, que ahora está en la ficha de Judit. Gé 36:2 la nombra con el
+    nombre de Oholibamá, si son la misma persona.
+- file: coverage/mateo
+  chapter: 10
+  span: 2-4
+  entities: [relation:judas-iscariote/holds_office/-]
+  sources: [mateo-10]
+  reason: Mt 10:2-4 da los nombres de los doce apóstoles, y el último es Judas Iscariote.

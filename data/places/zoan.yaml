@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zoan
+name: Zoan
+names:
+- name: Zoan
+- name: Tanis
+  note: Nombre griego por el que se conoce más la ciudad.
+- name: Región de Zoan
+  note: Sl 78:12, 43 usa «región de Zoan» junto a «tierra de Egipto» al recordar los milagros del éxodo.
+type: city
+lat: 30.976944
+lon: 31.88
+precision: point
+coord_source: openbible:ac31fee
+coord_url: https://www.openbible.info/geo/ancient/ac31fee/zoan
+summary: Ciudad antigua del nordeste del delta del Nilo, más conocida como Tanis, fundada siete años más tarde que Hebrón (Nú
+  13:22). Isaías y Ezequiel aún la nombran; decayó cuando surgió Alejandría.
+reason: 'Perspicacia «Zoan», párr. 1, 2, 7 y 8; Nú 13:22; Sl 78:12, 43. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Moisés se viera con el faraón en Zoan: Perspicacia expone esa idea y las razones para dudar de ella.'
+sources:
+- it-zoan
+- openbible-geo
+- salmos-78
+links:
+- title: 'Perspicacia: «Zoan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004754
+  type: perspicacia
+- title: Salmo 78 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/78
+  type: bible
+checked_on: '2026-09-29'
+status: verified

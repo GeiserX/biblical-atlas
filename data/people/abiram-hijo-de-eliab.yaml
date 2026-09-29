@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abiram-hijo-de-eliab
+name: Abiram
+names:
+- name: Abiram
+perspicacia: 1200000048#1
+summary: Hermano de Datán e hijo del rubenita Eliab; cuando Israel salió de Egipto figuraba entre sus jefes de familia. Apoyó
+  la rebelión de Coré contra Moisés, y la tierra se lo tragó con toda su casa.
+reason: Perspicacia «Abiram», núm. 1, párr. 1 a 4; Sl 106:17.
+disambiguation: Abiram hijo de Eliab, el rebelde del desierto; no el primogénito de Hiel de Betel, que murió cuando su padre
+  volvió a fundar Jericó.
+sources:
+- it-abiram
+- salmos-106
+links:
+- title: 'Perspicacia: «Abiram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000048
+  type: perspicacia
+- title: Salmo 106 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-perez-y-zerah
+title: Nacen Pérez y Zérah, gemelos de Tamar
+date:
+  from: -1749
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1750 y 1728 a.e.c. (tiempo narrativo: después de la venta de José y antes de que Pérez entre en Egipto con
+    Jacob)'
+places:
+- adulam
+people:
+- perez
+- zerah-hijo-de-juda
+- tamar-nuera-de-juda
+type: birth
+roles:
+  perez: born
+  zerah-hijo-de-juda: born
+present: []
+passages:
+- Gé 38:27-30
+summary: En el parto, Zérah saca la mano y la partera le ata un hilo escarlata, pero Pérez sale antes. Por ese desgarro lo
+  llaman Pérez.
+reason: 'Tras la venta de José (1750 a.e.c., estudio 3) y antes de que Pérez baje a Egipto en 1728 (Perspicacia «Pérez»). Sin
+  orden de relato: se solapa con lo que sigue. Sitio sin nombrar: no sitúa a nadie.'
+sources:
+- genesis-38
+- si-3
+- it-juda
+- it-perez
+- it-zerah
+- it-tamar
+links:
+- title: Génesis 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/38
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,1790 @@
+# biblical-earth: los 66 libros de la Biblia. Los campos de estructura (de slug a capitulos) no llevan fuentes;
+# los hechos de cada libro sí.
+# Nombres, abreviaturas y número de capítulos tal como los da wol.jw.org (Biblia de estudio, índice de libros),
+# consultado el 2026-09-28. Esquema en docs/investigacion/README.md.
+#
+#   slug:      id del libro; con «-<capítulo>» es una fuente implícita (mateo-26) que build.py crea sola.
+#   num:       número del libro en las URL de wol.jw.org (nwtsty/<num>/<capítulo>).
+#   abr:       abreviatura TNM de las citas («Hch 16:14»).
+#   formas:    lo que acepta el buscador del sitio, sin tildes, espacios ni puntos.
+#   habladas:  formas escritas en los subtítulos de los vídeos («Hechos», «Hech.»).
+#   capitulos: número de capítulos.
+#   versiculos: número del último versículo de cada capítulo, en orden (tantos como capitulos).
+#   omitidos:  {"<capítulo>": [versículos]} de la numeración tradicional que la TNM no trae como texto,
+#              porque solo aparecen en manuscritos posteriores. Se detectan en el HTML de cada capítulo de
+#              wol.jw.org (nwtsty/<num>/<capítulo>), cuyas anclas son v<num>-<capítulo>-<versículo>-<parte>:
+#              el ancla existe pero su texto es solo «--» (Mateo 17:21) o falta el número en la secuencia
+#              (Juan 8:1-11). Los versículos que hay que leer son 1..versiculos menos omitidos.
+#   Suma de versiculos: 31089. La numeración tradicional da 31102; la diferencia son 13 versículos con los que
+#   la TNM no llega a numerar el capítulo: Marcos 16 acaba en el 8 (sin 9-20) y Juan 7 en el 52 (sin 53).
+#   Los encabezamientos de los Salmos llevan ancla 0 y no cuentan. Consultado el 2026-09-29.
+#
+# Hechos de cada libro (escritor, lugar, fecha, abarca), de la Tabla de los libros de la Biblia de estudio:
+# campos opcionales, con fuentes, razon, consultado y estado.
+books:
+- slug: genesis
+  num: 1
+  name: Génesis
+  abbr: Gé
+  forms: [ge, gen, genesis]
+  spoken: [Génesis, Gén.]
+  chapters: 50
+  verses: [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 55, 32, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26]
+  writer: Moisés
+  place: Desierto
+  date:
+    from: -1512
+    to: -1512
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513 a.e.c.
+  covers:
+    from: null
+    to: -1656
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: desde «el principio» hasta 1657 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Génesis» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: exodo
+  num: 2
+  name: Éxodo
+  abbr: Éx
+  forms: [ex, exodo]
+  spoken: [Éxodo, Éx.]
+  chapters: 40
+  verses: [22, 25, 22, 31, 23, 30, 25, 32, 35, 29, 10, 51, 22, 31, 27, 36, 16, 27, 25, 26, 36, 31, 33, 18, 40, 37, 21, 43, 46, 38, 18, 35, 23, 35, 35, 38, 29, 31, 43, 38]
+  writer: Moisés
+  place: Desierto
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  covers:
+    from: -1656
+    to: -1511
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1657-1512 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Éxodo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: levitico
+  num: 3
+  name: Levítico
+  abbr: Le
+  forms: [le, lev, levitico]
+  spoken: [Levítico, Lev.]
+  chapters: 27
+  verses: [17, 16, 17, 35, 19, 30, 38, 36, 24, 20, 47, 8, 59, 57, 33, 34, 16, 30, 37, 27, 24, 33, 44, 23, 55, 46, 34]
+  writer: Moisés
+  place: Desierto
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  covers:
+    from: -1511
+    to: -1511
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1 mes (1512 a.e.c.)
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Levítico» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: numeros
+  num: 4
+  name: Números
+  abbr: Nú
+  forms: [nu, num, numeros]
+  spoken: [Números, Núm.]
+  chapters: 36
+  verses: [54, 34, 51, 49, 31, 27, 89, 26, 23, 36, 35, 16, 33, 45, 41, 50, 13, 32, 22, 29, 35, 41, 30, 25, 18, 65, 23, 31, 40, 16, 54, 42, 56, 29, 34, 13]
+  writer: Moisés
+  place: Desierto y llanuras de Moab
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  covers:
+    from: -1511
+    to: -1472
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512-1473 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Números» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: deuteronomio
+  num: 5
+  name: Deuteronomio
+  abbr: Dt
+  forms: [dt, deut, deuteronomio]
+  spoken: [Deuteronomio, Deut.]
+  chapters: 34
+  verses: [46, 37, 29, 49, 33, 25, 26, 20, 29, 22, 32, 32, 18, 29, 23, 22, 20, 22, 21, 20, 23, 30, 25, 22, 19, 19, 26, 68, 29, 20, 30, 52, 29, 12]
+  writer: Moisés
+  place: Llanuras de Moab
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  covers:
+    from: -1472
+    to: -1472
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 2 meses (1473 a.e.c.)
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Deuteronomio» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: josue
+  num: 6
+  name: Josué
+  abbr: Jos
+  forms: [jos, josue]
+  spoken: [Josué, Jos.]
+  chapters: 24
+  verses: [18, 24, 17, 24, 15, 27, 26, 35, 27, 43, 23, 24, 33, 15, 63, 10, 18, 28, 51, 9, 45, 34, 16, 33]
+  writer: Josué
+  place: Canaán
+  date:
+    from: -1449
+    to: -1449
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1450 a.e.c.
+  covers:
+    from: -1472
+    to: -1449
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1473-c. 1450 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Josué» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: jueces
+  num: 7
+  name: Jueces
+  abbr: Jue
+  forms: [jue, juec, jueces]
+  spoken: [Jueces, Juec.]
+  chapters: 21
+  verses: [36, 23, 31, 24, 31, 40, 25, 35, 57, 18, 40, 15, 25, 20, 20, 31, 13, 31, 30, 48, 25]
+  writer: Samuel
+  place: Israel
+  date:
+    from: -1099
+    to: -1099
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1100 a.e.c.
+  covers:
+    from: -1449
+    to: -1119
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1450-c. 1120 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Jueces» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: rut
+  num: 8
+  name: Rut
+  abbr: Rut
+  forms: [rut]
+  spoken: [Rut]
+  chapters: 4
+  verses: [22, 23, 18, 22]
+  writer: Samuel
+  place: Israel
+  date:
+    from: -1089
+    to: -1089
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1090 a.e.c.
+  note: Abarca 11 años del tiempo de los jueces; la tabla no les da año.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Rut» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-samuel
+  num: 9
+  name: "1 Samuel"
+  abbr: "1Sa"
+  forms: ["1sa", "1sam", "1samuel"]
+  spoken: ["1 Samuel", "1 Sam."]
+  chapters: 31
+  verses: [28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 35, 23, 58, 30, 24, 42, 15, 23, 29, 22, 44, 25, 12, 25, 11, 31, 13]
+  writer: Samuel; Gad; Natán
+  place: Israel
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  covers:
+    from: -1179
+    to: -1077
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1180-1078 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-samuel
+  num: 10
+  name: "2 Samuel"
+  abbr: "2Sa"
+  forms: ["2sa", "2sam", "2samuel"]
+  spoken: ["2 Samuel", "2 Sam."]
+  chapters: 24
+  verses: [27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33, 43, 26, 22, 51, 39, 25]
+  writer: Gad; Natán
+  place: Israel
+  date:
+    from: -1039
+    to: -1039
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1040 a.e.c.
+  covers:
+    from: -1076
+    to: -1039
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 1077-c. 1040 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-reyes
+  num: 11
+  name: "1 Reyes"
+  abbr: "1Re"
+  forms: ["1re", "1rey", "1reyes"]
+  spoken: ["1 Reyes", "1 Rey."]
+  chapters: 22
+  verses: [53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46, 21, 43, 29, 53]
+  writer: Jeremías
+  place: Judá
+  date:
+    from: -579
+    to: -579
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 580 a.e.c.
+  covers:
+    from: -1039
+    to: -910
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1040-911 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-reyes
+  num: 12
+  name: "2 Reyes"
+  abbr: "2Re"
+  forms: ["2re", "2rey", "2reyes"]
+  spoken: ["2 Reyes", "2 Rey."]
+  chapters: 25
+  verses: [18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37, 37, 21, 26, 20, 37, 20, 30]
+  writer: Jeremías
+  place: Judá y Egipto
+  date:
+    from: -579
+    to: -579
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 580 a.e.c.
+  covers:
+    from: -919
+    to: -579
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920-580 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-cronicas
+  num: 13
+  name: "1 Crónicas"
+  abbr: "1Cr"
+  forms: ["1cr", "1cron", "1cronicas"]
+  spoken: ["1 Crónicas", "1 Crón."]
+  chapters: 29
+  verses: [54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 29, 43, 27, 17, 19, 8, 30, 19, 32, 31, 31, 32, 34, 21, 30]
+  writer: Esdras
+  place: Jerusalén (?)
+  date:
+    from: -459
+    to: -459
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 460 a.e.c.
+  covers:
+    from: -1076
+    to: -1036
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1077-1037 a.e.c.
+  note: Lo abarcado se cuenta después de las genealogías, desde 1 Crónicas 9:44.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-cronicas
+  num: 14
+  name: "2 Crónicas"
+  abbr: "2Cr"
+  forms: ["2cr", "2cron", "2cronicas"]
+  spoken: ["2 Crónicas", "2 Crón."]
+  chapters: 36
+  verses: [17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34, 11, 37, 20, 12, 21, 27, 28, 23, 9, 27, 36, 27, 21, 33, 25, 33, 27, 23]
+  writer: Esdras
+  place: Jerusalén (?)
+  date:
+    from: -459
+    to: -459
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 460 a.e.c.
+  covers:
+    from: -1036
+    to: -536
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1037-537 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: esdras
+  num: 15
+  name: Esdras
+  abbr: Esd
+  forms: [esd, esdras]
+  spoken: [Esdras, Esd.]
+  chapters: 10
+  verses: [11, 70, 13, 24, 17, 22, 28, 36, 15, 44]
+  writer: Esdras
+  place: Jerusalén
+  date:
+    from: -459
+    to: -459
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 460 a.e.c.
+  covers:
+    from: -536
+    to: -466
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 537-c. 467 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Esdras» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: nehemias
+  num: 16
+  name: Nehemías
+  abbr: Ne
+  forms: [ne, neh, nehemias]
+  spoken: [Nehemías, Neh.]
+  chapters: 13
+  verses: [11, 20, 32, 23, 19, 19, 73, 18, 38, 39, 36, 47, 31]
+  writer: Nehemías
+  place: Jerusalén
+  date:
+    from: -442
+    to: null
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de 443 a.e.c.
+  covers:
+    from: -455
+    to: -442
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 456 a.e.c. - después de 443 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Nehemías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: ester
+  num: 17
+  name: Ester
+  abbr: Est
+  forms: [est, ester]
+  spoken: [Ester, Est.]
+  chapters: 10
+  verses: [22, 23, 15, 17, 14, 14, 10, 17, 32, 3]
+  writer: Mardoqueo
+  place: Susa, Elam
+  date:
+    from: -474
+    to: -474
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 475 a.e.c.
+  covers:
+    from: -492
+    to: -474
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 493-c. 475 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Ester» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: job
+  num: 18
+  name: Job
+  abbr: Job
+  forms: [job]
+  spoken: [Job]
+  chapters: 42
+  verses: [22, 13, 26, 21, 27, 30, 21, 22, 35, 22, 20, 25, 28, 22, 35, 22, 16, 21, 29, 29, 34, 30, 17, 25, 6, 14, 23, 28, 25, 31, 40, 22, 33, 37, 16, 33, 24, 41, 30, 24, 34, 17]
+  writer: Moisés
+  place: Desierto
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  covers:
+    from: -1656
+    to: -1472
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 140 años o más, entre 1657 y 1473 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Job» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: salmos
+  num: 19
+  name: Salmos
+  abbr: Sl
+  forms: [sl, sal, salmos]
+  spoken: [Salmos, Salmo, Sal.]
+  chapters: 150
+  verses: [6, 12, 8, 8, 12, 10, 17, 9, 20, 18, 7, 8, 6, 7, 5, 11, 15, 50, 14, 9, 13, 31, 6, 10, 22, 12, 14, 9, 11, 12, 24, 11, 22, 22, 28, 12, 40, 22, 13, 17, 13, 11, 5, 26, 17, 11, 9, 14, 20, 23, 19, 9, 6, 7, 23, 13, 11, 11, 17, 12, 8, 12, 11, 10, 13, 20, 7, 35, 36, 5, 24, 20, 28, 23, 10, 12, 20, 72, 13, 19, 16, 8, 18, 12, 13, 17, 7, 18, 52, 17, 16, 15, 5, 23, 11, 13, 12, 9, 9, 5, 8, 28, 22, 35, 45, 48, 43, 13, 31, 7, 10, 10, 9, 8, 18, 19, 2, 29, 176, 7, 8, 9, 4, 8, 5, 6, 5, 6, 8, 8, 3, 18, 3, 3, 21, 26, 9, 8, 24, 13, 10, 7, 12, 15, 21, 10, 20, 14, 9, 6]
+  writer: David y otros
+  date:
+    from: -459
+    to: -459
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 460 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Salmos» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: proverbios
+  num: 20
+  name: Proverbios
+  abbr: Pr
+  forms: [pr, prov, proverbios]
+  spoken: [Proverbios, Prov.]
+  chapters: 31
+  verses: [33, 22, 35, 27, 23, 35, 27, 36, 18, 32, 31, 28, 25, 35, 33, 33, 28, 24, 29, 30, 31, 29, 35, 34, 28, 28, 27, 28, 27, 33, 31]
+  writer: Salomón; Agur; Lemuel
+  place: Jerusalén
+  date:
+    from: -716
+    to: -716
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 717 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Proverbios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: eclesiastes
+  num: 21
+  name: Eclesiastés
+  abbr: Ec
+  forms: [ec, ecl, eclesiastes]
+  spoken: [Eclesiastés, Ecl.]
+  chapters: 12
+  verses: [18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14]
+  writer: Salomón
+  place: Jerusalén
+  date:
+    from: null
+    to: -999
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 1000 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Eclesiastés» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: cantar-de-los-cantares
+  num: 22
+  name: El Cantar de los Cantares
+  abbr: Can
+  forms: [can, cant, elcantardeloscantares, cantares]
+  spoken: [El Cantar de los Cantares, Cantar de los Cantares, Cant.]
+  chapters: 8
+  verses: [17, 17, 11, 16, 16, 13, 13, 14]
+  writer: Salomón
+  place: Jerusalén
+  date:
+    from: -1019
+    to: -1019
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1020 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «El Cantar de los Cantares» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: isaias
+  num: 23
+  name: Isaías
+  abbr: Is
+  forms: [is, isaias]
+  spoken: [Isaías, Is., Isa., Isa]
+  chapters: 66
+  verses: [31, 22, 26, 6, 30, 13, 25, 22, 21, 34, 16, 6, 22, 32, 9, 14, 14, 7, 25, 6, 17, 25, 18, 23, 12, 21, 13, 29, 24, 33, 9, 20, 24, 17, 10, 22, 38, 22, 8, 31, 29, 25, 28, 28, 25, 13, 15, 22, 26, 11, 23, 15, 12, 17, 13, 12, 21, 14, 21, 22, 11, 12, 19, 12, 25, 24]
+  writer: Isaías
+  place: Jerusalén
+  date:
+    from: -731
+    to: null
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de 732 a.e.c.
+  covers:
+    from: -777
+    to: -731
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 778 a.e.c. - después de 732 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Isaías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: jeremias
+  num: 24
+  name: Jeremías
+  abbr: Jer
+  forms: [jer, jeremias]
+  spoken: [Jeremías, Jer.]
+  chapters: 52
+  verses: [19, 37, 25, 31, 31, 30, 34, 22, 26, 25, 23, 17, 27, 22, 21, 21, 27, 23, 15, 18, 14, 30, 40, 10, 38, 24, 22, 17, 32, 24, 40, 44, 26, 22, 19, 32, 21, 28, 18, 16, 18, 22, 13, 30, 5, 28, 7, 47, 39, 46, 64, 34]
+  writer: Jeremías
+  place: Judá; Egipto
+  date:
+    from: -579
+    to: -579
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 580 a.e.c.
+  covers:
+    from: -646
+    to: -579
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 647-580 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Jeremías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: lamentaciones
+  num: 25
+  name: Lamentaciones
+  abbr: Lam
+  forms: [lam, lamentaciones]
+  spoken: [Lamentaciones, Lam.]
+  chapters: 5
+  verses: [22, 22, 66, 22, 22]
+  writer: Jeremías
+  place: Cerca de Jerusalén
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Lamentaciones» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: ezequiel
+  num: 26
+  name: Ezequiel
+  abbr: Eze
+  forms: [eze, ezeq, ezequiel]
+  spoken: [Ezequiel, Ezeq.]
+  chapters: 48
+  verses: [28, 10, 27, 17, 17, 14, 27, 18, 11, 22, 25, 28, 23, 23, 8, 63, 24, 32, 14, 49, 32, 31, 49, 27, 17, 21, 36, 26, 21, 26, 18, 32, 33, 31, 15, 38, 28, 23, 29, 49, 26, 20, 27, 31, 25, 24, 23, 35]
+  writer: Ezequiel
+  place: Babilonia
+  date:
+    from: -590
+    to: -590
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 591 a.e.c.
+  covers:
+    from: -612
+    to: -590
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 613-c. 591 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: daniel
+  num: 27
+  name: Daniel
+  abbr: Da
+  forms: [da, dan, daniel]
+  spoken: [Daniel, Dan.]
+  chapters: 12
+  verses: [21, 49, 30, 37, 31, 28, 28, 27, 27, 21, 45, 13]
+  writer: Daniel
+  place: Babilonia
+  date:
+    from: -535
+    to: -535
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 536 a.e.c.
+  covers:
+    from: -617
+    to: -535
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 618-c. 536 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: oseas
+  num: 28
+  name: Oseas
+  abbr: Os
+  forms: [os, oseas]
+  spoken: [Oseas, Os.]
+  chapters: 14
+  verses: [11, 23, 5, 19, 15, 11, 16, 14, 17, 15, 12, 14, 16, 9]
+  writer: Oseas
+  place: Samaria (distrito)
+  date:
+    from: -744
+    to: null
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de 745 a.e.c.
+  covers:
+    from: -803
+    to: -744
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 804 a.e.c. - después de 745 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: joel
+  num: 29
+  name: Joel
+  abbr: Joe
+  forms: [joe, joel]
+  spoken: [Joel]
+  chapters: 3
+  verses: [20, 32, 21]
+  writer: Joel
+  place: Judá
+  date:
+    from: -819
+    to: -819
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 820 a.e.c.
+  note: La tabla pone la fecha con un signo de interrogación.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: amos
+  num: 30
+  name: Amós
+  abbr: Am
+  forms: [am, amos]
+  spoken: [Amós]
+  chapters: 9
+  verses: [15, 16, 15, 13, 27, 14, 17, 14, 15]
+  writer: Amós
+  place: Judá
+  date:
+    from: -803
+    to: -803
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 804 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Amós» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: abdias
+  num: 31
+  name: Abdías
+  abbr: Abd
+  forms: [abd, abdias]
+  spoken: [Abdías, Abd.]
+  chapters: 1
+  verses: [21]
+  writer: Abdías
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 607 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Abdías» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: jonas
+  num: 32
+  name: Jonás
+  abbr: Jon
+  forms: [jon, jonas]
+  spoken: [Jonás, Jon.]
+  chapters: 4
+  verses: [17, 10, 10, 11]
+  writer: Jonás
+  date:
+    from: -843
+    to: -843
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 844 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Jonás» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: miqueas
+  num: 33
+  name: Miqueas
+  abbr: Miq
+  forms: [miq, miqueas]
+  spoken: [Miqueas, Miq.]
+  chapters: 7
+  verses: [16, 13, 12, 13, 15, 16, 20]
+  writer: Miqueas
+  place: Judá
+  date:
+    from: null
+    to: -716
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 717 a.e.c.
+  covers:
+    from: -776
+    to: -716
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 777-717 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Miqueas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: nahum
+  num: 34
+  name: Nahúm
+  abbr: Na
+  forms: [na, nah, nahum]
+  spoken: [Nahúm, Nah.]
+  chapters: 3
+  verses: [15, 13, 19]
+  writer: Nahúm
+  place: Judá
+  date:
+    from: null
+    to: -631
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 632 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Nahúm» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: habacuc
+  num: 35
+  name: Habacuc
+  abbr: Hab
+  forms: [hab, habacuc]
+  spoken: [Habacuc, Hab.]
+  chapters: 3
+  verses: [17, 20, 19]
+  writer: Habacuc
+  place: Judá
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 628 a.e.c.
+  note: La tabla pone la fecha con un signo de interrogación.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Habacuc» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: sofonias
+  num: 36
+  name: Sofonías
+  abbr: Sof
+  forms: [sof, sofonias]
+  spoken: [Sofonías, Sof.]
+  chapters: 3
+  verses: [18, 15, 20]
+  writer: Sofonías
+  place: Judá
+  date:
+    from: null
+    to: -647
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 648 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Sofonías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: ageo
+  num: 37
+  name: Ageo
+  abbr: Ag
+  forms: [ag, ageo]
+  spoken: [Ageo]
+  chapters: 2
+  verses: [15, 23]
+  writer: Ageo
+  place: Jerusalén
+  date:
+    from: -519
+    to: -519
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520 a.e.c.
+  covers:
+    from: -519
+    to: -519
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 112 días (520 a.e.c.)
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Ageo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: zacarias
+  num: 38
+  name: Zacarías
+  abbr: Zac
+  forms: [zac, zacarias]
+  spoken: [Zacarías, Zac.]
+  chapters: 14
+  verses: [21, 13, 10, 14, 11, 15, 14, 23, 17, 12, 17, 14, 9, 21]
+  writer: Zacarías
+  place: Jerusalén
+  date:
+    from: -517
+    to: -517
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 518 a.e.c.
+  covers:
+    from: -519
+    to: -517
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520-518 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Zacarías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: malaquias
+  num: 39
+  name: Malaquías
+  abbr: Mal
+  forms: [mal, malaquias]
+  spoken: [Malaquías, Mal.]
+  chapters: 4
+  verses: [14, 17, 18, 6]
+  writer: Malaquías
+  place: Jerusalén
+  date:
+    from: -442
+    to: null
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: después de 443 a.e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Malaquías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: mateo
+  num: 40
+  name: Mateo
+  abbr: Mt
+  forms: [mt, mat, mateo]
+  spoken: [Mateo, Mat.]
+  chapters: 28
+  verses: [25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35, 30, 34, 46, 46, 39, 51, 46, 75, 66, 20]
+  omitted: {"17": [21], "18": [11], "23": [14]}
+  writer: Mateo
+  place: Israel
+  date:
+    from: 41
+    to: 41
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 41 e.c.
+  covers:
+    from: -1
+    to: 33
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 2 a.e.c.-33 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Mateo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: marcos
+  num: 41
+  name: Marcos
+  abbr: Mr
+  forms: [mr, mar, marcos]
+  spoken: [Marcos, Mar.]
+  chapters: 16
+  verses: [45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 8]
+  omitted: {"7": [16], "9": [44, 46], "11": [26], "15": [28]}
+  writer: Marcos
+  place: Roma
+  date:
+    from: 60
+    to: 65
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-65 e.c.
+  covers:
+    from: 29
+    to: 33
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 29-33 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Marcos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: lucas
+  num: 42
+  name: Lucas
+  abbr: Lu
+  forms: [lu, luc, lucas]
+  spoken: [Lucas, Luc.]
+  chapters: 24
+  verses: [80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37, 43, 48, 47, 38, 71, 56, 53]
+  omitted: {"17": [36], "23": [17]}
+  writer: Lucas
+  place: Cesarea
+  date:
+    from: 56
+    to: 58
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56-58 e.c.
+  covers:
+    from: -2
+    to: 33
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 3 a.e.c.-33 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Lucas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: juan
+  num: 43
+  name: Juan
+  abbr: Jn
+  forms: [jn, juan]
+  spoken: [Juan]
+  chapters: 21
+  verses: [51, 25, 36, 54, 47, 71, 52, 59, 41, 42, 57, 50, 38, 31, 27, 33, 26, 40, 42, 31, 25]
+  omitted: {"5": [4], "8": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
+  writer: Apóstol Juan
+  place: Éfeso o cerca
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  covers:
+    from: 29
+    to: 33
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 29-33 e.c.
+  note: Lo abarcado se cuenta después del prólogo.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: hechos
+  num: 44
+  name: Hechos
+  abbr: Hch
+  forms: [hch, hech, hechos, he]
+  spoken: [Hechos, Hech.]
+  chapters: 28
+  verses: [26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 41, 40, 34, 28, 41, 38, 40, 30, 35, 27, 27, 32, 44, 31]
+  omitted: {"8": [37], "15": [34], "24": [7], "28": [29]}
+  writer: Lucas
+  place: Roma
+  date:
+    from: 61
+    to: 61
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61 e.c.
+  covers:
+    from: 33
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 33-c. 61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Hechos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: romanos
+  num: 45
+  name: Romanos
+  abbr: Ro
+  forms: [ro, rom, romanos]
+  spoken: [Romanos, Rom.]
+  chapters: 16
+  verses: [32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 33, 27]
+  omitted: {"16": [24]}
+  writer: Pablo
+  place: Corinto
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Romanos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-corintios
+  num: 46
+  name: "1 Corintios"
+  abbr: "1Co"
+  forms: ["1co", "1cor", "1corintios"]
+  spoken: ["1 Corintios", "1 Cor."]
+  chapters: 16
+  verses: [31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24]
+  writer: Pablo
+  place: Éfeso
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-corintios
+  num: 47
+  name: "2 Corintios"
+  abbr: "2Co"
+  forms: ["2co", "2cor", "2corintios"]
+  spoken: ["2 Corintios", "2 Cor."]
+  chapters: 13
+  verses: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14]
+  writer: Pablo
+  place: Macedonia
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: galatas
+  num: 48
+  name: Gálatas
+  abbr: Gál
+  forms: [gal, galatas, ga]
+  spoken: [Gálatas, Gál.]
+  chapters: 6
+  verses: [24, 21, 29, 31, 26, 18]
+  writer: Pablo
+  place: Corinto o Antioquía de Siria
+  date:
+    from: 50
+    to: 52
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-52 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Gálatas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: efesios
+  num: 49
+  name: Efesios
+  abbr: Ef
+  forms: [ef, efes, efesios, efe]
+  spoken: [Efesios, Efes.]
+  chapters: 6
+  verses: [23, 22, 21, 32, 33, 24]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Efesios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: filipenses
+  num: 50
+  name: Filipenses
+  abbr: Flp
+  forms: [flp, filip, filipenses, fil]
+  spoken: [Filipenses, Filip.]
+  chapters: 4
+  verses: [30, 30, 21, 23]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Filipenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: colosenses
+  num: 51
+  name: Colosenses
+  abbr: Col
+  forms: [col, colosenses]
+  spoken: [Colosenses, Col.]
+  chapters: 4
+  verses: [29, 23, 25, 18]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Colosenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-tesalonicenses
+  num: 52
+  name: "1 Tesalonicenses"
+  abbr: "1Te"
+  forms: ["1te", "1tes", "1tesalonicenses", "1ts"]
+  spoken: ["1 Tesalonicenses", "1 Tes."]
+  chapters: 5
+  verses: [10, 20, 13, 18, 28]
+  writer: Pablo
+  place: Corinto
+  date:
+    from: 50
+    to: 50
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-tesalonicenses
+  num: 53
+  name: "2 Tesalonicenses"
+  abbr: "2Te"
+  forms: ["2te", "2tes", "2tesalonicenses", "2ts"]
+  spoken: ["2 Tesalonicenses", "2 Tes."]
+  chapters: 3
+  verses: [12, 17, 18]
+  writer: Pablo
+  place: Corinto
+  date:
+    from: 51
+    to: 51
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 51 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-timoteo
+  num: 54
+  name: "1 Timoteo"
+  abbr: "1Ti"
+  forms: ["1ti", "1tim", "1timoteo"]
+  spoken: ["1 Timoteo", "1 Tim."]
+  chapters: 6
+  verses: [20, 15, 16, 16, 25, 21]
+  writer: Pablo
+  place: Macedonia
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61-64 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-timoteo
+  num: 55
+  name: "2 Timoteo"
+  abbr: "2Ti"
+  forms: ["2ti", "2tim", "2timoteo"]
+  spoken: ["2 Timoteo", "2 Tim."]
+  chapters: 4
+  verses: [18, 26, 17, 22]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: tito
+  num: 56
+  name: Tito
+  abbr: Tit
+  forms: [tit, tito]
+  spoken: [Tito]
+  chapters: 3
+  verses: [16, 15, 15]
+  writer: Pablo
+  place: Macedonia (?)
+  date:
+    from: 61
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61-64 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Tito» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: filemon
+  num: 57
+  name: Filemón
+  abbr: Flm
+  forms: [flm, filem, filemon]
+  spoken: [Filemón, Filem.]
+  chapters: 1
+  verses: [25]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Filemón» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: hebreos
+  num: 58
+  name: Hebreos
+  abbr: Heb
+  forms: [heb, hebreos]
+  spoken: [Hebreos, Heb.]
+  chapters: 13
+  verses: [14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25]
+  writer: Pablo
+  place: Roma
+  date:
+    from: 61
+    to: 61
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 61 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Hebreos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: santiago
+  num: 59
+  name: Santiago
+  abbr: Snt
+  forms: [snt, sant, santiago]
+  spoken: [Santiago, Sant.]
+  chapters: 5
+  verses: [27, 26, 18, 17, 20]
+  writer: Santiago (hermano de Jesús)
+  place: Jerusalén
+  date:
+    from: null
+    to: 62
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: antes de 62 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Santiago» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-pedro
+  num: 60
+  name: "1 Pedro"
+  abbr: "1Pe"
+  forms: ["1pe", "1ped", "1pedro"]
+  spoken: ["1 Pedro", "1 Ped."]
+  chapters: 5
+  verses: [25, 25, 22, 19, 14]
+  writer: Pedro
+  place: Babilonia
+  date:
+    from: 62
+    to: 64
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 62-64 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-pedro
+  num: 61
+  name: "2 Pedro"
+  abbr: "2Pe"
+  forms: ["2pe", "2ped", "2pedro"]
+  spoken: ["2 Pedro", "2 Ped."]
+  chapters: 3
+  verses: [21, 22, 18]
+  writer: Pedro
+  place: Babilonia (?)
+  date:
+    from: 64
+    to: 64
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 64 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 1-juan
+  num: 62
+  name: "1 Juan"
+  abbr: "1Jn"
+  forms: ["1jn", "1juan"]
+  spoken: ["1 Juan"]
+  chapters: 5
+  verses: [10, 29, 24, 21, 21]
+  writer: Apóstol Juan
+  place: Éfeso o cerca
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «1 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 2-juan
+  num: 63
+  name: "2 Juan"
+  abbr: "2Jn"
+  forms: ["2jn", "2juan"]
+  spoken: ["2 Juan"]
+  chapters: 1
+  verses: [13]
+  writer: Apóstol Juan
+  place: Éfeso o cerca
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «2 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: 3-juan
+  num: 64
+  name: "3 Juan"
+  abbr: "3Jn"
+  forms: ["3jn", "3juan"]
+  spoken: ["3 Juan"]
+  chapters: 1
+  verses: [14]
+  writer: Apóstol Juan
+  place: Éfeso o cerca
+  date:
+    from: 98
+    to: 98
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 98 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «3 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: judas
+  num: 65
+  name: Judas
+  abbr: Jud
+  forms: [jud, judas]
+  spoken: [Judas, Jud.]
+  chapters: 1
+  verses: [25]
+  writer: Judas (hermano de Jesús)
+  place: Israel (?)
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Judas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified
+- slug: apocalipsis
+  num: 66
+  name: Apocalipsis
+  abbr: Ap
+  forms: [ap, apoc, apocalipsis]
+  spoken: [Apocalipsis, Apoc., Revelación, Rev., Rev]
+  chapters: 22
+  verses: [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21]
+  writer: Apóstol Juan
+  place: Patmos
+  date:
+    from: 96
+    to: 96
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 96 e.c.
+  sources:
+  - tnm-tabla
+  reason: 'Fila de «Apocalipsis» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  checked_on: '2026-09-28'
+  status: verified

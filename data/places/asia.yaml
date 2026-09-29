@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: asia
+name: Asia
+names:
+- name: Asia
+  note: La provincia romana, no el continente.
+- name: distrito de Asia
+  note: Forma que usa la Traducción del Nuevo Mundo (Hch 16:6; 19:10).
+type: province
+lat: 38.4
+lon: 28.3
+precision: zone
+coord_source: openbible:a197f19
+coord_url: https://www.openbible.info/geo/ancient/a197f19/asia
+coord_note: Punto representativo de la provincia.
+summary: Provincia romana del oeste de Asia Menor, con capital en Éfeso desde Augusto. En el segundo viaje el espíritu
+  impidió a Pablo predicar allí; en el tercero la palabra llegó a toda la provincia.
+reason: 'Perspicacia «Asia» (párr. 1 a 5); Hch 16:6 y 19:10. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-asia
+- hch-16
+- hch-19
+- openbible-geo
+links:
+- title: 'Perspicacia: «Asia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000433
+  type: perspicacia
+- title: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  type: bible
+checked_on: '2026-09-28'
+status: verified

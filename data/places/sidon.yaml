@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sidon
+name: Sidón
+names:
+- name: Sidón
+- name: Saida
+  note: Nombre actual de la ciudad.
+type: port
+lat: 33.56099
+lon: 35.37194
+precision: point
+coord_source: openbible:a98e4d7
+coord_url: https://www.openbible.info/geo/ancient/a98e4d7/sidon
+summary: Antigua ciudad portuaria fenicia. Jesús pasó por su distrito cuando curó a la hija de una mujer fenicia; más tarde
+  Julio dejó allí a Pablo ver a sus amigos.
+reason: 'Perspicacia «Sidón, sidonios», apartado del siglo I, describe el lugar y el paso de Jesús (Mr 7:24-31); Pablo, en
+  Hch 27:3. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-sidon
+- hch-27
+- openbible-geo
+- mateo-15
+- marcos-3
+- marcos-7
+links:
+- title: 'Perspicacia: «Sidón, sidonios»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113
+  type: perspicacia
+- title: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  type: bible
+history:
+- date: '2026-09-29'
+  change: El resumen solo hablaba de Pablo; ahora recoge también el paso de Jesús por su distrito (Mr 7:24-31), que Perspicacia
+    «Sidón, sidonios» cuenta.
+  source: marcos-7
+- date: '2026-09-29'
+  change: La razón cita ahora el pasaje de Marcos que añade el resumen.
+  source: marcos-7
+checked_on: '2026-09-29'
+status: verified

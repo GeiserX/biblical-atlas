@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lava-los-pies-a-los-apostoles
+title: Lava los pies a los apóstoles
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- jerusalen
+people:
+- jesus
+- pedro
+passages:
+- Jn 13:1-20
+summary: Durante la cena, Jesús lava los pies a cada apóstol para enseñarles a servirse unos a otros con humildad.
+reason: La tabla A7-G da el día y el lugar. Jn 13:1-20; B12-B.
+sources:
+- tnm-a7-g
+- juan-13
+- jy-cap-116
+- jy-cap-117
+- tnm-b12-b
+narrative_order:
+  series: a7
+  order: 111
+search: Lava los pies a los apóstoles
+checked_on: '2026-09-28'
+status: verified

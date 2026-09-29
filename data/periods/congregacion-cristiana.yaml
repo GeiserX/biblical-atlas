@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: congregacion-cristiana
+name: La congregación cristiana
+type: era
+date:
+  from: 33
+  to: 98
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 33-c. 98 e.c.
+summary: Desde el Pentecostés del 33 la congregación crece por el Imperio romano. Con los escritos de Juan, hacia el año
+  98, queda completa la Biblia. De Hechos a Apocalipsis.
+reason: 'Cuadro del estudio 3: el espíritu se derrama en 33 e.c. y, hacia 98, Juan escribe su evangelio y sus cartas y se
+  completa la Biblia.'
+sources:
+- si-3
+search: congregación cristiana primitiva
+checked_on: '2026-09-28'
+status: verified
+note: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

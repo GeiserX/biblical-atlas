@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-iscariote
+name: Judas Iscariote
+names:
+- name: Judas Iscariote
+- name: Judas
+disambiguation: El apóstol que traicionó a Jesús; no es Judas Tadeo, el otro apóstol, ni Judas, el medio hermano
+  de Jesús.
+distinct_from:
+- judas-hermano-de-jesus
+- tadeo
+not_claimed:
+- Judas estaba predestinado a traicionar a Jesús.
+- 'Judas participó en la Cena del Señor: se fue antes de que Jesús la estableciera.'
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - lucas-6
+  - it-judas
+  - mateo-10
+  - mateo-26
+  - marcos-3
+  - marcos-14
+  - lucas-22
+  reason: Lu 6:16 lo nombra entre los doce apóstoles, el último.
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: apostle
+  inferred: false
+  sources:
+  - mateo-10
+  - hechos-1
+  reason: Mt 10:2-4 lo nombra entre los doce apóstoles; Hch 1:25 habla del apostolado que abandonó.
+  checked_on: '2026-09-29'
+  status: verified
+summary: Apóstol, hijo de Simón Iscariote, que guardaba la caja del dinero y robaba de ella. Vendió a Jesús por
+  30 piezas de plata, lo entregó en Getsemaní y después se quitó la vida.
+reason: Perspicacia «Judas», apartado 4 (párr. 6-18); Jn 12:6, Mt 26:14-16, 47-50 y 27:3-5.
+sources:
+- it-judas
+- mateo-26
+- mateo-27
+- juan-12
+- mateo-10
+- marcos-3
+- marcos-14
+- lucas-6
+- lucas-22
+links:
+- title: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  type: perspicacia
+- title: Mateo 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
+  type: bible
+search: Judas Iscariote
+perspicacia: 1200002541#4
+history:
+- date: '2026-09-29'
+  change: La relación con Jesús pasa a llevar relacion maestro, como la de los otros once apóstoles (Mr 3:14-19).
+  source: marcos-3
+checked_on: '2026-09-29'
+status: verified

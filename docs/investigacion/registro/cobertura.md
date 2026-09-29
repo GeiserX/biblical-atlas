@@ -7,20 +7,20 @@
 
 «Publicado» es el año de la publicación cuando la página de wol.jw.org lo muestra; si no lo muestra, pone «sin dato».
 
-Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.yaml`. Un capítulo cuenta como completo cuando sus tramos cubren todos sus versículos, salvo los que la TNM no incluye. El formato está en [data/cobertura/README.md](../../../data/cobertura/README.md) y el protocolo en [../versiculos.md](../versiculos.md).
+Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.yaml`. Un capítulo cuenta como completo cuando sus tramos cubren todos sus versículos, salvo los que la TNM no incluye. El formato está en [data/coverage/README.md](../../../data/coverage/README.md) y el protocolo en [../versiculos.md](../versiculos.md).
 
 ## Por libro
 
 | Libro | Capítulos completos | Versículos leídos | Porcentaje |
 |---|---|---|---|
-| [Génesis](../../../data/cobertura/genesis.yaml) | 50 de 50 | 1533 de 1533 | 100 % |
-| [Éxodo](../../../data/cobertura/exodo.yaml) | 40 de 40 | 1213 de 1213 | 100 % |
+| [Génesis](../../../data/coverage/genesis.yaml) | 50 de 50 | 1533 de 1533 | 100 % |
+| [Éxodo](../../../data/coverage/exodo.yaml) | 40 de 40 | 1213 de 1213 | 100 % |
 | Levítico | 0 de 27 | 0 de 859 | 0 % |
 | Números | 0 de 36 | 0 de 1288 | 0 % |
 | Deuteronomio | 0 de 34 | 0 de 959 | 0 % |
 | Josué | 0 de 24 | 0 de 658 | 0 % |
 | Jueces | 0 de 21 | 0 de 618 | 0 % |
-| [Rut](../../../data/cobertura/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
+| [Rut](../../../data/coverage/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
 | 1 Samuel | 0 de 31 | 0 de 810 | 0 % |
 | 2 Samuel | 0 de 24 | 0 de 695 | 0 % |
 | 1 Reyes | 0 de 22 | 0 de 816 | 0 % |
@@ -30,9 +30,9 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
 | Ester | 0 de 10 | 0 de 167 | 0 % |
-| [Job](../../../data/cobertura/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
-| [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
-| [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
+| [Job](../../../data/coverage/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
+| [Salmos](../../../data/coverage/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
+| [Proverbios](../../../data/coverage/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | Eclesiastés | 0 de 12 | 0 de 222 | 0 % |
 | El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
@@ -52,9 +52,9 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Ageo | 0 de 2 | 0 de 38 | 0 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
-| [Mateo](../../../data/cobertura/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
-| [Marcos](../../../data/cobertura/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
-| [Lucas](../../../data/cobertura/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
+| [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
+| [Marcos](../../../data/coverage/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
+| [Lucas](../../../data/coverage/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
 | Juan | 0 de 21 | 0 de 866 | 0 % |
 | Hechos | 0 de 28 | 0 de 1003 | 0 % |
 | Romanos | 0 de 16 | 0 de 432 | 0 % |

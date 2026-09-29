@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: llanura-de-saron
+name: Llanura de Sarón
+names:
+- name: Sarón
+type: plain
+lat: 32.4
+lon: 34.883
+precision: zone
+coord_source: openbible:a83fd43
+coord_url: https://www.openbible.info/geo/ancient/a83fd43/sharon-1
+coord_note: Punto representativo de la llanura.
+summary: Llanura fértil de la costa, de unos 60 km, del río Crocodilon a la zona de Jope. Al curar Pedro a Eneas,
+  los de Lida y de Sarón se volvieron al Señor.
+reason: 'Perspicacia «Sarón», apartado 1 (párr. 2 y 3); Hch 9:35. La coordenada es de OpenBible: solo tomamos el
+  punto.'
+sources:
+- it-saron
+- hch-9
+- openbible-geo
+links:
+- title: 'Perspicacia: «Sarón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003955
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+checked_on: '2026-09-28'
+status: verified

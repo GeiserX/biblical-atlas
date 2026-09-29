@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-acampa-en-ezam
+title: Israel va de Sucot a Ezam guiado por la columna de nube
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+narrative_order:
+  series: exodo
+  order: 13017
+places:
+- ezam
+- sucot-de-egipto
+people:
+- moises
+present:
+- moises
+passages:
+- Éx 13:17-22
+- Sl 78:14
+- Sl 105:39
+summary: Dios no lleva al pueblo por la tierra de los filisteos, sino por el desierto del mar Rojo. Moisés carga con los huesos
+  de José. De Sucot pasan a Ezam, al borde del desierto, guiados día y noche.
+reason: 'Perspicacia «Ezam» y «Éxodo», apartado «Ruta del éxodo»: Ezam fue la segunda etapa. Sigue a la salida del 14 de nisán
+  de 1513 a.e.c. (estudio 3).'
+sources:
+- exodo-13
+- it-ezam
+- it-exodo
+- it-jose
+- si-3
+links:
+- title: Éxodo 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

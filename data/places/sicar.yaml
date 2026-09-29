@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sicar
+name: Sicar
+names:
+- name: Sicar
+type: city
+lat: 32.21776
+lon: 35.28897
+precision: point
+coord_source: openbible:a27b472
+coord_url: https://www.openbible.info/geo/ancient/a27b472/sychar
+summary: Ciudad de Samaria cerca de Siquem, junto al campo que Jacob dio a José. En el pozo de Jacob, a sus afueras, Jesús
+  habló con una samaritana y luego se quedó dos días.
+reason: La nota de Jn 4:5 la identifica con la aldea de ʽAskar, a 700 m del pozo de Jacob; Perspicacia «Sicar» (párr. 2) lo
+  daba como identificación tentativa. Punto de OpenBible para Askar.
+sources:
+- it-sicar
+- juan-4
+- openbible-geo
+links:
+- title: 'Perspicacia: «Sicar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004279
+  type: perspicacia
+- title: Juan 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/4
+  type: bible
+checked_on: '2026-09-28'
+status: verified

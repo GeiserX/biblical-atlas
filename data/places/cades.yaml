@@ -1,0 +1,83 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cades
+name: Cadés
+names:
+- name: Cadés
+- name: Cadés-Barnea
+  note: Nombre completo (Nú 32:8; 34:4).
+- name: Qadés
+  note: Grafía de Perspicacia y de «Veamos la buena tierra».
+- name: En-Mispat
+  note: Otro nombre del lugar en tiempos de Abrahán (Gé 14:7).
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: ʽAin Qedeis
+  geometry:
+    type: point
+    lat: 30.583378
+    lon: 34.484081
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-qades
+  - numeros-34
+  reason: Perspicacia se inclina por este manantial, el más oriental de tres, porque encaja con el orden de la frontera sur
+    de Nú 34:3-5 (párr. 5).
+  coord_source: openbible:ac2cef0
+  coord_url: https://www.openbible.info/geo/ancient/ac2cef0/kadesh-barnea
+- name: ʽAin el-Qudeirat
+  geometry:
+    type: point
+    lat: 30.648333
+    lon: 34.422222
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-qades
+  reason: Es hoy el mayor de los tres manantiales y por eso algunos lo prefieren. Perspicacia lo asocia más bien con Hazar-addar
+    (párr. 5).
+  coord_source: openbible:ac2cef0
+  coord_url: https://www.openbible.info/geo/ancient/ac2cef0/kadesh-barnea
+- name: Zona de los tres manantiales
+  geometry:
+    type: zone
+    lat: 30.583378
+    lon: 34.484081
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-qades
+  reason: Un pueblo tan grande quizá usó los tres manantiales, y el nombre pudo abarcar toda la zona (párr. 6).
+  note: 'Centro: ʽAin Qedeis. Con 15 km de radio entran ʽAin el-Qudeirat (unos 9 km) y ʽAin el-Qeseimeh (unos 14 km), según
+    las distancias de Perspicacia.'
+  coord_source: openbible:ac2cef0
+  coord_url: https://www.openbible.info/geo/ancient/ac2cef0/kadesh-barnea
+summary: Campamento de Israel en el desierto, en el borde del territorio de Edom. De allí salieron los doce espías, y allí
+  murió Míriam. Estaba entre los desiertos de Zin y Parán.
+reason: Perspicacia «Qadés» (párr. 3-9); Nú 13:26 y 20:1. La Traducción del Nuevo Mundo de hoy escribe «Cadés». El mapa B3 y «De Egipto a la Tierra
+  Prometida» lo dibujan.
+sources:
+- it-qades
+- numeros-13
+- numeros-20
+- tnm-b3
+- lbt-egipto-a-la-tierra-prometida
+- openbible-geo
+- genesis-14
+- genesis-16
+- salmos-29
+links:
+- title: 'Perspicacia: «Qadés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002564
+  type: perspicacia
+- title: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

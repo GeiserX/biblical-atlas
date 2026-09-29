@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guera-hijo-de-bela
+name: Guerá
+names:
+- name: Guerá
+perspicacia: 1200001656#1
+disambiguation: Guerá hijo de Bela; no el padre de Ehúd ni el padre de Simeí.
+summary: Hijo de Bela y nieto de Benjamín. Génesis lo cuenta entre los hijos de Benjamín porque esa palabra incluye a los
+  nietos.
+reason: Perspicacia «Guerá, I», núm. 1; Gé 46:21.
+sources:
+- it-guera-i
+- genesis-46
+links:
+- title: 'Perspicacia: «Guerá, I»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001656
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: true
+  sources:
+  - genesis-46
+  - it-guera-i
+  reason: 'Perspicacia «Guerá, I», núm. 1: era hijo de Bela; Gé 46:21 lo cuenta entre los hijos de Benjamín.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: grandfather
+  inferred: true
+  sources:
+  - genesis-46
+  - it-guera-i
+  reason: Gé 46:21 lo pone entre los hijos de Benjamín, término que aquí abarca a los nietos.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

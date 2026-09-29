@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-guihon
+name: Río Guihon
+names:
+- name: Río Guihon
+- name: Guihón
+  note: Grafía de Perspicacia. No es el manantial de Guihón, junto a Jerusalén.
+type: river
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Donde nacía, en la zona de Edén
+  geometry:
+    type: zone
+    lat: 38.26
+    lon: 42.48
+    radius_km: 300
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-cus
+  - it-eden
+  reason: Perspicacia «Cus», núm. 2, recuerda que el Guihon, el Éufrates y el Tigris salían de un mismo nacimiento.
+  note: 'Centro y radio: los del candidato favorecido de nuestra ficha de Edén, calculados por nosotros.'
+  coord_source: calculation
+- name: El Nilo, según Josefo
+  geometry:
+    type: point
+    lat: 31.4653
+    lon: 30.3667
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-cus
+  - it-guihon
+  - openbible-geo
+  reason: Josefo, siguiendo a la Septuaginta, lo tomó por el Nilo. Perspicacia lo ve difícil, salvo que el Diluvio cambiara
+    mucho la geografía.
+  note: Punto de OpenBible para el Nilo, la primera identificación de su ficha del Guihon.
+  coord_source: openbible:a71d79b
+  coord_url: https://www.openbible.info/geo/ancient/a71d79b/gihon-1
+summary: Segundo brazo del río de Edén, que rodeaba la tierra de Cus. No se puede identificar con certeza; hay quien propone
+  el Araxes, que nace al noroeste del lago Van.
+reason: Perspicacia «Guihón», núm. 1, y «Cus», núm. 2; Gé 2:13. Los cambios del Diluvio impiden una conclusión firme.
+sources:
+- it-guihon
+- it-cus
+- it-eden
+- openbible-geo
+- genesis-2
+links:
+- title: 'Perspicacia: «Guihón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001691
+  type: perspicacia
+- title: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sodoma
+name: Sodoma
+names:
+- name: Sodoma
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bajo el extremo sur del mar Muerto (valle de Sidim)
+  geometry:
+    type: zone
+    lat: 31.20849
+    lon: 35.449223
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-mar-salado
+  - it-sodoma
+  - genesis-14
+  reason: Perspicacia dice que por lo general se la sitúa cerca del extremo sur del mar Salado, y que el valle de Sidim quedó
+    cubierto por él (Mar Salado, párr. 7; Gé 14:3).
+  note: 'Centro: punto de OpenBible para el valle de Sidim, al sur de la península de El-Lisan. Radio nuestro.'
+  coord_source: openbible:a0aa664
+  coord_url: https://www.openbible.info/geo/ancient/a0aa664/sodom
+- name: Uadis al este y sureste del mar Muerto
+  geometry:
+    type: zone
+    lat: 31.248729
+    lon: 35.523005
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-sodoma
+  - w96-rendir-cuenta
+  - g96-observando-el-mundo
+  reason: Otros identifican las ruinas en esos uadis (Sodoma, párr. 3). La Atalaya y ¡Despertad! de 1996 recogen hallazgos
+    en la costa este y en El-Lisan sin darlos por seguros.
+  note: 'Centro: punto de Bab edh-Dhra en OpenBible; Perspicacia no nombra ese sitio. Radio nuestro.'
+  coord_source: openbible:a0aa664
+  coord_url: https://www.openbible.info/geo/ancient/a0aa664/sodom
+summary: La más importante de las ciudades del Distrito, en el límite sureste de Canaán. Allí se estableció Lot, y Dios la
+  destruyó con fuego y azufre. Su sitio exacto se discute.
+reason: Perspicacia «Sodoma» (párr. 3-7), «Mar Salado» (párr. 7) y «Gomorra» (párr. 3); Gé 13:10-12 y 19:24. El mapa de «El
+  mundo de los patriarcas» la marca con signo de duda.
+sources:
+- it-sodoma
+- it-mar-salado
+- genesis-19
+- lbt-patriarcas
+- openbible-geo
+- genesis-13
+- genesis-14
+- genesis-18
+links:
+- title: 'Perspicacia: «Sodoma»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004176
+  type: perspicacia
+- title: 'Perspicacia: «Mar Salado»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813
+  type: perspicacia
+- title: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,79 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: custodia-en-cesarea
+name: Arresto y custodia
+person: pablo
+reference: Hch 21:27–26:32
+date:
+  from: 56
+  to: 58
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56-58 e.c.
+companions: []
+summary: Arrestado en el templo de Jerusalén, Pablo es llevado de noche a Cesarea y pasa allí dos años bajo custodia,
+  hasta que Festo sustituye a Félix.
+reason: El estudio 3 (párr. 27) sitúa el arresto poco después de Pentecostés de 56 y la llegada de Festo en 58.
+sources:
+- si-3
+- it-pablo
+- hch-21
+- hch-23
+- hch-24
+checked_on: '2026-09-27'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 21:27–23:30
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 56 e.c.
+  note: null
+  reason: 'Hch 21:27–23:30 nombra Jerusalén en el recorrido. El estudio 3 da la fecha: 56 e.c.'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-27'
+  status: verified
+- order: 2
+  place: antipatris
+  reference: Hch 23:31
+  date:
+    from: 56
+    to: 58
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'dentro de c. 56-58 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+  note: 'OpenBible une Antípatris con Afec 2 (Tell Ras el Ain): un mismo sitio con nombres de épocas distintas.'
+  reason: 'Hch 23:31 nombra Antípatris en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  sources:
+  - hch-23
+  checked_on: '2026-09-27'
+  status: verified
+- order: 3
+  place: cesarea
+  reference: Hch 23:33–26:32
+  date:
+    from: 56
+    to: 58
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: dos años bajo Félix; luego Festo
+  note: null
+  reason: 'Hch 23:33–26:32 nombra Cesarea en el recorrido. El estudio 3 da la fecha: dos años bajo Félix; luego Festo.'
+  sources:
+  - hch-23
+  - si-3
+  checked_on: '2026-09-27'
+  status: verified

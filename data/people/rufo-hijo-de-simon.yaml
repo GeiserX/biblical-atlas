@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rufo-hijo-de-simon
+name: Rufo
+names:
+- name: Rufo
+perspicacia: 1200003769#1
+disambiguation: El hijo de Simón de Cirene. Perspicacia lo separa del Rufo cristiano de Roma al que Pablo saluda en Ro 16:13.
+summary: Hermano de Alejandro; su padre era Simón de Cirene. Marcos lo nombra solo para identificar a su padre, que cargó
+  con el madero de Jesús.
+reason: Perspicacia «Rufo», núm. 1; Mr 15:21 y su nota de estudio.
+sources:
+- it-rufo
+- marcos-15
+links:
+- title: 'Perspicacia: «Rufo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003769
+  type: perspicacia
+- title: Marcos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/15
+  type: bible
+relations:
+- type: kin
+  person: simon-de-cirene
+  word: father
+  inferred: false
+  sources:
+  - marcos-15
+  - it-rufo
+  reason: Mr 15:21 presenta a Simón de Cirene como padre de Alejandro y de Rufo.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

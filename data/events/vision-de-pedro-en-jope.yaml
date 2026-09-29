@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-de-pedro-en-jope
+title: Pedro ve en visión animales impuros
+date:
+  from: 36
+  to: 36
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 36 e.c.
+  detail:
+    season: autumn
+narrative_order:
+  series: hechos
+  order: 1009
+places:
+- jope
+people:
+- pedro
+- simon-el-curtidor
+passages:
+- Hch 10:9-23
+summary: Al mediodía, orando en la azotea de Simón el curtidor, Pedro ve una sábana con animales impuros y oye que
+  no llame impuro lo que Dios ha limpiado. Llegan entonces los enviados de Cornelio.
+reason: Capítulo 9 de «Testimonio completo» (párr. 1 a 4), que lo sitúa en el otoño de 36; Perspicacia «Jope», párr.
+  6.
+sources:
+- bt-9
+- it-jope
+- hechos-10
+search: visión de Pedro en Jope
+checked_on: '2026-09-28'
+status: verified

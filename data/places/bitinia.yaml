@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bitinia
+name: Bitinia
+names:
+- name: Bitinia
+type: province
+lat: 40.5
+lon: 31.0
+precision: zone
+coord_source: openbible:a5c0cb0
+coord_url: https://www.openbible.info/geo/ancient/a5c0cb0/bithynia
+coord_note: Punto representativo de la región.
+summary: Provincia romana del norte de Asia Menor, junto al mar Negro. Pablo quiso entrar en ella en el segundo
+  viaje y el espíritu de Jesús se lo impidió.
+reason: 'Perspicacia «Bitinia»; Hch 16:7. 1Pe 1:1 muestra que había cristianos allí hacia 62-64. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-bitinia
+- hch-16
+- openbible-geo
+links:
+- title: 'Perspicacia: «Bitinia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000754
+  type: perspicacia
+- title: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  type: bible
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esteban
+name: Esteban
+names:
+- name: Esteban
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre 33 y 34 e.c.
+  note: 'Orden del relato: después de Pentecostés de 33 y antes de la conversión de Saulo, que el estudio 3 pone
+    en 34.'
+summary: 'Discípulo de nombre griego, uno de los siete nombrados en Jerusalén para el reparto de comida. Hizo milagros,
+  se defendió ante el Sanedrín y murió apedreado fuera de la ciudad: el primer mártir cristiano.'
+reason: Perspicacia «Esteban» (párr. 2 a 6) y el capítulo 6 del libro «Testimonio completo»; Hch 7:58 dice que lo
+  sacaron de la ciudad.
+sources:
+- it-esteban
+- bt-6
+- hechos-7
+relations:
+- type: accompanies
+  person: felipe-evangelizador
+  caption: compañero entre los siete
+  inverse_caption: compañero entre los siete
+  inferred: false
+  sources:
+  - it-felipe
+  - hechos-6
+  reason: Hch 6:5 los nombra juntos entre los siete.
+  checked_on: '2026-09-28'
+  status: verified
+- type: died_in
+  place: jerusalen
+  date:
+    from: 33
+    to: 34
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: entre 33 y 34 e.c.
+  inferred: false
+  sources:
+  - hechos-7
+  - it-esteban
+  reason: 'Hch 7:58: lo sacaron de la ciudad y lo apedrearon; murió a las afueras de Jerusalén.'
+  checked_on: '2026-09-28'
+  status: verified
+links:
+- title: 'Perspicacia: «Esteban»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004230
+  type: perspicacia
+- title: Hechos 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/7
+  type: bible
+checked_on: '2026-09-28'
+status: verified

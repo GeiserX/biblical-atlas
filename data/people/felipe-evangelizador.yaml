@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: felipe-evangelizador
+name: Felipe, el evangelizador
+names:
+- name: Felipe
+- name: Felipe, el evangelizador
+  note: Así lo llama Hch 21:8.
+disambiguation: El evangelizador, uno de los siete. No es el apóstol Felipe de Betsaida.
+date:
+  from: 33
+  to: 56
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33-56 e.c.
+  note: De su nombramiento, poco después de Pentecostés de 33, a la visita de Pablo en c. 56.
+distinct_from:
+- felipe-apostol
+- filipo-esposo-de-herodias
+- filipo-el-tetrarca
+summary: Uno de los siete de Jerusalén. Con la persecución predicó en la ciudad de Samaria, bautizó al funcionario
+  etíope y predicó de Asdod a Cesarea, donde vivía con cuatro hijas unos veinte años después.
+reason: Perspicacia «Felipe», apartado 2 (párr. 6 a 9), y el recuadro «Felipe el evangelizador» del capítulo 7 de
+  «Testimonio completo».
+sources:
+- it-felipe
+- bt-7
+- hechos-8
+- hch-21
+relations:
+- type: lived_in
+  place: cesarea
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: false
+  sources:
+  - it-felipe
+  - hch-21
+  reason: 'Hch 21:8, 9: Pablo se aloja en su casa de Cesarea; Perspicacia (párr. 9) lo fecha hacia 56.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Felipe»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003466
+  type: perspicacia
+- title: Hechos 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

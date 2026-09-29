@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: decapolis
+name: Decápolis
+names:
+- name: Decápolis
+type: region
+lat: 32.716667
+lon: 35.8
+precision: zone
+coord_source: openbible:ae733a2
+coord_url: https://www.openbible.info/geo/ancient/ae733a2/decapolis
+coord_note: Punto representativo de la región, que no tenía límites precisos.
+summary: 'Liga de ciudades de cultura griega, casi todas al este del Jordán, y la región donde estaban. Jesús pasó por ella:
+  allí expulsó demonios, curó a un sordo y alimentó a 4.000 hombres.'
+reason: Perspicacia «Decápolis» (párr. 2, 6, 7 y 8) explica la liga, sus límites imprecisos y el paso de Jesús. B10 marca sus
+  ciudades.
+sources:
+- it-decapolis
+- tnm-b10
+- openbible-geo
+- mateo-4
+- marcos-5
+- marcos-7
+- marcos-8
+links:
+- title: 'Perspicacia: «Decápolis»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001141
+  type: perspicacia
+- title: Marcos 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

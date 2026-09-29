@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cumpleanos-del-faraon
+title: En su cumpleaños, el faraón restituye al copero y cuelga al panadero
+date:
+  from: -1739
+  to: -1738
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1740 y 1739 a.e.c. (tiempo narrativo: unos once años después de la venta y dos años completos antes de 1737)'
+narrative_order:
+  series: genesis
+  order: 40020
+places:
+- egipto
+people:
+- jose-hijo-de-jacob
+present: []
+passages:
+- Gé 40:20-23
+summary: Tres días después, en el banquete de su cumpleaños, el faraón devuelve el cargo al copero y manda colgar al panadero,
+  como José había dicho. El copero se olvida de él.
+reason: 'Perspicacia «José», párr. 13 y 15: unos once años tras la venta de 1750 a.e.c. (estudio 3) y dos años antes del nombramiento
+  de 1737. José sigue preso: el suceso no lo sitúa.'
+sources:
+- genesis-40
+- si-3
+- it-jose
+links:
+- title: Génesis 40 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/40
+  type: bible
+checked_on: '2026-09-29'
+status: verified

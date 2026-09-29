@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tercio
+name: Tercio
+names:
+- name: Tercio
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c.
+summary: Secretario que escribió la carta a los Romanos al dictado de Pablo e incluyó su propio saludo. Es el único
+  secretario de Pablo del que se sabe el nombre.
+reason: Perspicacia «Tercio»; Ro 16:22. La fecha es la de Romanos, escrita en Corinto hacia 56 según la Tabla de los libros.
+sources:
+- it-tercio
+- romanos-16
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Tercio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004371
+  type: perspicacia
+- title: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: accompanies
+  person: pablo
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: false
+  sources:
+  - it-tercio
+  - romanos-16
+  - tnm-tabla
+  reason: Escribe Romanos con Pablo en Corinto (Ro 16:22). La Tabla de los libros fecha Romanos hacia 56.
+  checked_on: '2026-09-28'
+  status: verified

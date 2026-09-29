@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: israel
+name: Israel
+names:
+- name: Israel
+- name: Tierra de Israel
+  note: Así la llama Mateo al contar el regreso desde Egipto.
+type: country
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: La tierra de Israel, de Dan a Beer-seba
+  geometry:
+    type: zone
+    lat: 32.246861
+    lon: 35.246417
+    radius_km: 120
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-israel
+  - it-beer-seba
+  - openbible-geo
+  reason: Perspicacia «Beer-seba» (párr. 2 y 3) toma Dan y Beer-seba como las fronteras naturales del país, al norte y al sur.
+  note: 'Centro: punto medio de los de OpenBible para Dan (33,249 N; 35,652 E) y Beer-seba (31,2447 N; 34,8408 E), a unos
+    236 km uno de otro. El radio de 120 km es nuestro.'
+  coord_source: calculation
+summary: La Tierra Prometida, repartida entre las doce tribus y gobernada por sus reyes. Tras la división del reino el nombre
+  designó a veces solo al reino del norte; luego, a la tierra de los judíos.
+reason: Perspicacia «Israel», núm. 3 y 4; Mt 2:20, 21. La zona del mapa es un cálculo nuestro.
+not_claimed:
+- No trazamos sus fronteras; el punto del mapa es solo una referencia dentro del territorio.
+sources:
+- it-israel
+- it-beer-seba
+- openbible-geo
+- mateo-2
+links:
+- title: 'Perspicacia: «Israel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

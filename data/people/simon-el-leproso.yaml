@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-el-leproso
+name: Simón el leproso
+names:
+- name: Simón el leproso
+  note: Quizá un leproso al que Jesús había curado.
+disambiguation: El de Betania; no es Simón Pedro, ni Simón el fariseo, ni Simón de Cirene.
+not_claimed:
+- Simón el leproso era esposo o padre de Marta.
+relations:
+- type: lived_in
+  place: betania
+  inferred: false
+  sources:
+  - mateo-26
+  - marcos-14
+  reason: Mt 26:6 pone su casa en Betania.
+  checked_on: '2026-09-29'
+  status: verified
+summary: Vecino de Betania en cuya casa comieron Jesús, sus discípulos y la familia de Lázaro el 9 de nisán; allí
+  María ungió a Jesús.
+reason: Perspicacia «Simón», apartado 6, y la nota de Mt 26:6; Mr 14:3.
+sources:
+- it-simon
+- mateo-26
+- marcos-14
+links:
+- title: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  type: perspicacia
+- title: Mateo 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/26
+  type: bible
+search: Simón el leproso
+perspicacia: 1200004131#6
+history:
+- date: '2026-09-29'
+  change: 'Sin la cita de Lucas 7: el sitio lo ponía entre los nombrados en ese capítulo, que no habla de él sino de Simón
+    el fariseo.'
+  source: lucas-7
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- simon-hijo-de-jose
+- simon-el-fariseo

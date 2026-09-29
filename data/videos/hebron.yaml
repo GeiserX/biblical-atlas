@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: hebron
-generado: "2026-09-28"
+place: hebron
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-125_6_VIDEO"
-    titulo: "Jeremy Clarke: Acuérdense de Escol"
+    title: "Jeremy Clarke: Acuérdense de Escol"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-125_6_VIDEO&appLanguage=S"
-    publicado: "2025-06-16"
-    menciones: 3
-    terminos:
+    published: "2025-06-16"
+    hits: 3
+    terms:
       "Hebrón": 3

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: tiberio
+name: Tiberio, emperador de Roma
+type: emperor
+date:
+  from: 14
+  to: 37
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14-37 e.c.
+person: tiberio
+places:
+- roma
+summary: Gobierna durante los ministerios de Juan el Bautista y de Jesús. El año 15 de su reinado fecha el comienzo de la
+  predicación de Juan (Lucas 3:1).
+reason: 'Perspicacia «Tiberio»: el Senado lo nombra en 14 e.c., un 15 de septiembre, y muere en marzo de 37. El recuadro
+  de «César» da 14-37 e.c.'
+sources:
+- it-tiberio
+- it-cesar
+search: Tiberio César
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: herodes-agripa-i
+name: Herodes Agripa I
+names:
+- name: Herodes Agripa I
+- name: Herodes el rey
+  note: Así lo llama Hch 12:1.
+- name: Agripa
+disambiguation: El rey de Hechos 12. No es su abuelo Herodes el Grande, ni su tío Herodes Antipas, ni su hijo Agripa
+  II, ante quien habló Pablo.
+date:
+  from: -9
+  to: 44
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 10 a.e.c.-44 e.c.
+  note: De su nacimiento, que el libro «Testimonio completo» sitúa en 10 a.e.c., a su muerte en 44.
+summary: Nieto de Herodes el Grande. Calígula lo hizo rey en 37 y Claudio le dio Judea en 41. Mató a Santiago, encarceló
+  a Pedro y murió en Cesarea en 44, herido por el ángel de Jehová.
+reason: Perspicacia «Herodes», apartado 3 (párr. 41 a 49); la nota de estudio de Hch 12:1 da los años 37 y 41; el
+  estudio 3 (párr. 20) fecha su muerte en 44.
+sources:
+- it-herodes
+- hechos-12
+- si-3
+- bt-10
+distinct_from:
+- herodes-el-grande
+- herodes-antipas
+- herodes-agripa-ii
+relations:
+- type: kin
+  person: herodes-el-grande
+  word: grandfather
+  inferred: true
+  sources:
+  - it-herodes
+  reason: 'Perspicacia, párr. 41: nieto de Herodes el Grande. Lo dice la historia, no el texto bíblico.'
+  checked_on: '2026-09-28'
+  status: verified
+- type: died_in
+  place: cesarea
+  date:
+    from: 44
+    to: 44
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 44 e.c.
+  inferred: false
+  sources:
+  - hechos-12
+  - it-herodes
+  reason: 'Hch 12:19-23: bajó a Cesarea y allí lo hirió el ángel. Perspicacia, párr. 48 y 49.'
+  checked_on: '2026-09-28'
+  status: verified
+links:
+- title: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  type: perspicacia
+- title: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  type: bible
+checked_on: '2026-09-28'
+status: verified

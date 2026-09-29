@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: izhar-hijo-de-cohat
+name: Izhar
+names:
+- name: Izhar
+perspicacia: 1200002251#1
+disambiguation: Izhar hijo de Cohat; no el descendiente de Judá que se escribe igual en español.
+summary: Levita, hijo de Cohat y nieto de Leví. Padre de Coré, Néfeg y Zicrí; de él viene la familia de los izharitas.
+reason: Perspicacia «Izhar», núm. 1; Éx 6:18, 21.
+sources:
+- it-izhar
+- exodo-6
+links:
+- title: 'Perspicacia: «Izhar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002251
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-izhar
+  reason: 'Éx 6:18: segundo de los hijos de Cohat.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

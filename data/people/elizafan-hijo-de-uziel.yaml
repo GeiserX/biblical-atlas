@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elizafan-hijo-de-uziel
+name: Elizafán
+names:
+- name: Elizafán
+- name: Elzafán
+  note: Forma que usan Éx 6:22 y Le 10:4; Perspicacia da las dos.
+perspicacia: 1200001324#1
+disambiguation: Elizafán hijo de Uziel; no Elizafán hijo de Parnac, el principal de Zabulón.
+summary: Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú, y fue cabeza de una familia
+  de levitas.
+reason: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22.
+sources:
+- it-elizafan
+- exodo-6
+links:
+- title: 'Perspicacia: «Elizafán, Elzafán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001324
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-elizafan
+  reason: 'Éx 6:22: hijo de Uziel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

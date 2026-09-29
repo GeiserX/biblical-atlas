@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: corinto
+name: Corinto
+names:
+- name: Corinto
+type: city
+lat: 37.90579
+lon: 22.87874
+precision: point
+coord_source: openbible:a6f437a
+coord_url: https://www.openbible.info/geo/ancient/a6f437a/corinth
+summary: Ciudad del istmo que une Grecia central con el Peloponeso; Pablo vivió allí unos 18 meses y escribió varias
+  cartas.
+reason: 'Perspicacia («Corinto») describe el lugar; aparece en Hch 18:1-17. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-corinto
+- hch-18
+- openbible-geo
+links:
+- title: 'Perspicacia: «Corinto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001038
+  type: perspicacia
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+checked_on: '2026-09-27'
+status: verified

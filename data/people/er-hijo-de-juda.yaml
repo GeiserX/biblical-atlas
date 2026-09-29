@@ -1,0 +1,83 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: er-hijo-de-juda
+name: Er
+names:
+- name: Er
+perspicacia: 1200001411#1
+disambiguation: El hijo mayor de Judá; no su sobrino Er, hijo de Selá, ni el Er de la genealogía de Lucas.
+summary: Primogénito de Judá y de la hija de Súa. Judá lo casó con Tamar, pero su conducta desagradó a Jehová, que le quitó
+  la vida antes de que tuviera hijos.
+reason: Perspicacia «Er», núm. 1; Gé 38:3, 6, 7.
+sources:
+- it-er
+- genesis-38
+- genesis-46
+links:
+- title: 'Perspicacia: «Er»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001411
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: juda-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-38
+  - genesis-46
+  - it-er
+  reason: Gé 38:3, 6, 7.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sua-suegro-de-juda
+  word: grandfather
+  inferred: false
+  sources:
+  - genesis-38
+  - it-sua
+  reason: 'Gé 38:2, 3: nace de la hija de Súa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tamar-nuera-de-juda
+  word: wife
+  inferred: false
+  sources:
+  - genesis-38
+  reason: 'Gé 38:6: Judá le da a Tamar por esposa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: onan
+  word: brother
+  inferred: false
+  sources:
+  - genesis-38
+  reason: Gé 38:3, 4, 8.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sela-hijo-de-juda
+  word: brother
+  inferred: false
+  sources:
+  - genesis-38
+  reason: Gé 38:3-5, 11.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: canaan
+  inferred: false
+  sources:
+  - genesis-46
+  - it-er
+  reason: 'Gé 46:12: murió en Canaán, antes del traslado a Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- er-hijo-de-jesus

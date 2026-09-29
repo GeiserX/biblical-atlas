@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: roma
+name: Roma
+names:
+- name: Roma
+type: city
+lat: 41.8922
+lon: 12.4852
+precision: point
+coord_source: openbible:afc8e7a
+coord_url: https://www.openbible.info/geo/ancient/afc8e7a/rome
+summary: Capital del Imperio a orillas del Tíber; Pablo vivió allí preso en una casa alquilada c. 59-61.
+reason: 'Perspicacia («Roma») describe el lugar; aparece en Hch 28:16-31. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-roma
+- hch-28
+- openbible-geo
+links:
+- title: 'Perspicacia: «Roma»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003763
+  type: perspicacia
+- title: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  type: bible
+checked_on: '2026-09-27'
+status: verified

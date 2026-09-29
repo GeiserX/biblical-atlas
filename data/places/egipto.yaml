@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: egipto
+name: Egipto
+names:
+- name: Egipto
+- name: Mizraim
+  note: Nombre hebreo habitual, por el hijo de Cam (Génesis 10:6).
+- name: Tierra de Cam
+  note: Nombre que le dan los Salmos (Sl 105:23, 27), porque Cam era el padre de Mizraim.
+type: country
+lat: 30.129444
+lon: 31.3075
+precision: zone
+coord_source: openbible:af301ca
+coord_url: https://www.openbible.info/geo/ancient/af301ca/egypt
+coord_note: Punto representativo del país.
+summary: País del valle y el delta del Nilo, primera potencia mundial de la Biblia. Israel vivió allí hasta el éxodo; después
+  lo dominaron Asiria, Babilonia, Persia, Grecia y Roma.
+reason: 'Perspicacia «Egipto, egipcio»: el nombre Mizraim, la geografía del Nilo y su historia hasta ser provincia romana
+  en 30 a.e.c. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-egipto
+- g10-egipto
+- openbible-geo
+- mateo-2
+- genesis-12
+- genesis-13
+- genesis-37
+- genesis-39
+- genesis-40
+- genesis-41
+- genesis-42
+- genesis-43
+- genesis-45
+- genesis-46
+- genesis-47
+- genesis-50
+- salmos-78
+- it-cam
+- salmos-105
+- salmos-106
+- salmos-135
+- salmos-136
+- exodo-1
+- exodo-2
+- exodo-4
+- exodo-5
+- exodo-6
+- exodo-7
+- exodo-8
+- exodo-9
+- exodo-10
+- exodo-11
+- exodo-12
+- exodo-13
+links:
+- title: 'Perspicacia: «Egipto, egipcio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001265
+  type: perspicacia
+search: Egipto
+checked_on: '2026-09-29'
+status: verified

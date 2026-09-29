@@ -1,0 +1,103 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lucas
+name: Lucas
+names:
+- name: Lucas
+distinct_from:
+- lucio-de-cirene
+summary: Médico que acompañó a Pablo; escribió el tercer Evangelio y Hechos. Los pasajes en «nosotros» muestran
+  cuándo viajaba con él.
+reason: Perspicacia «Lucas» lo identifica como escritor de Hechos y señala los tres tramos del libro contados en
+  primera persona del plural (desde Hch 16:10, 20:5 y 27:1).
+sources:
+- it-lucas
+- hch-16
+- lucas-1
+links:
+- title: 'Perspicacia: «Lucas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002790
+  type: perspicacia
+- title: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  type: bible
+perspicacia: '1200002790'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: accompanies
+  person: pablo
+  date:
+    from: 50
+    to: 50
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 50 e.c.
+  inferred: false
+  sources:
+  - it-lucas
+  - hch-16
+  - si-3
+  reason: Los pasajes en «nosotros» empiezan en Troas y siguen hasta Filipos (Hch 16:10-17). Cruzan a Europa en la primavera
+    de 50 (estudio 3, párr. 24).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 56
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56-61 e.c.
+  inferred: false
+  sources:
+  - it-lucas
+  - hch-20
+  - hch-27
+  - hch-28
+  reason: El «nosotros» vuelve en Filipos y llega a Jerusalén; luego va con él a Roma (desde Hch 20:5 y desde 27:1).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  inferred: false
+  sources:
+  - it-lucas
+  - 2-timoteo-4
+  - tnm-tabla
+  reason: '«Solo Lucas está conmigo» (2Ti 4:11): seguía a su lado poco antes de su muerte. La Tabla de los libros fecha 2 Timoteo
+    hacia 65.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: filipos
+  date:
+    from: 50
+    to: 56
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-56 e.c.
+  inferred: true
+  sources:
+  - it-lucas
+  - hch-16
+  - hch-20
+  - si-3
+  reason: Perspicacia cree posible que se quedara en Filipos entre el segundo y el tercer viaje. Del paso por Filipos en 50 a
+    la vuelta en la Pascua de 56 (estudio 3, párr. 24 y 26).
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ezam
+name: Ezam
+names:
+- name: Ezam
+- name: Etam
+  note: Grafía antigua, que aún usa Perspicacia «Sucot».
+- name: Desierto de Ezam
+  note: El desierto en cuyo borde estaba. Perspicacia cree que es el mismo desierto de Sur, o que uno está dentro del otro.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al norte de la cabecera del golfo de Suez, junto al desierto
+  geometry:
+    type: zone
+    lat: 30.12
+    lon: 32.48
+    radius_km: 25
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-ezam
+  - it-exodo
+  - openbible-geo
+  reason: 'Perspicacia: no estaba en la ruta del norte, sino al norte del mar Rojo y en el límite del desierto del noroeste
+    del Sinaí. Desde allí volvieron hacia Pihahirot.'
+  coord_source: calculation
+  note: 'Centro: 20 km al norte del punto medio entre Jebel ʽAtaqah y ʽAyun Musa, los puntos de OpenBible a cada lado del
+    golfo. Radio nuestro.'
+- name: Extremo oriental del uadi Tumilat
+  geometry:
+    type: zone
+    lat: 30.583333
+    lon: 32.266667
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: rejected_level_1
+  sources:
+  - it-ezam
+  - it-exodo
+  - openbible-geo
+  reason: Algunos eruditos lo ponen ahí porque unen el nombre con la palabra egipcia para fortaleza. Perspicacia descarta la
+    ruta del uadi Tumilat por quedar muy al norte de Menfis.
+  coord_source: openbible:a27d0e0
+  coord_url: https://www.openbible.info/geo/ancient/a27d0e0/etham
+  note: 'Centro: punto de Ismailia en la ficha «Etham» de OpenBible. Radio nuestro.'
+summary: Segundo campamento de Israel al salir de Egipto, en el borde del desierto. Desde allí Dios los hizo volver hacia
+  Pihahirot, junto al mar Rojo. No se sabe dónde estaba.
+reason: Perspicacia «Ezam» y «Éxodo», apartado «Ruta del éxodo»; Éx 13:20. El mapa B3 la marca con signo de duda y dibuja el
+  desierto de Ezam.
+sources:
+- it-ezam
+- it-exodo
+- tnm-b3
+- openbible-geo
+- exodo-13
+links:
+- title: 'Perspicacia: «Ezam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001433
+  type: perspicacia
+- title: Éxodo 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

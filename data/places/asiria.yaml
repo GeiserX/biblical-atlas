@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: asiria
+name: Asiria
+names:
+- name: Asiria
+type: country
+lat: 36.3594
+lon: 43.1528
+precision: zone
+coord_source: openbible:a3d1321
+coord_url: https://www.openbible.info/geo/ancient/a3d1321/assyria
+coord_note: Punto representativo de OpenBible para todo el país.
+summary: País del norte de Mesopotamia, entre el Tigris, el Pequeño Zab, las montañas de Armenia y Media. Tomó su nombre de
+  Asur, hijo de Sem, y su capital principal fue Nínive.
+reason: 'Perspicacia «Asiria», párr. 2 y apartado «Historia bíblica y seglar»: Gé 2:14 habla desde la época de Moisés. Coordenada
+  de OpenBible: solo tomamos el punto.'
+sources:
+- it-asiria
+- openbible-geo
+- genesis-2
+- genesis-10
+- genesis-25
+links:
+- title: 'Perspicacia: «Asiria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000447
+  type: perspicacia
+- title: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  type: bible
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

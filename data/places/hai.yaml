@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hai
+name: Hai
+names:
+- name: Hai
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Al este de Betel, en torno a Khirbet et-Tell
+  geometry:
+    type: zone
+    lat: 31.916944
+    lon: 35.261111
+    radius_km: 4
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-hai
+  - genesis-12
+  reason: Gé 12:8 la pone al este de Betel, y Perspicacia dice que por lo general se la sitúa en Khirbet et-Tell, poco más
+    de 2 km al ESE de Betel.
+  note: 'Centro: punto de OpenBible en et-Tell. Radio nuestro, para cubrir la duda sobre ese sitio.'
+  coord_source: openbible:a7e13e1
+  coord_url: https://www.openbible.info/geo/ancient/a7e13e1/ai-1
+- name: Khirbet et-Tell
+  geometry:
+    type: point
+    lat: 31.916944
+    lon: 35.261111
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-hai
+  reason: Es la identificación habitual, pero Perspicacia recoge que J. Simons la rechaza y que, si las fechas arqueológicas
+    son correctas, Hai estaría en otro lugar.
+  coord_source: openbible:a7e13e1
+  coord_url: https://www.openbible.info/geo/ancient/a7e13e1/ai-1
+summary: Ciudad cananea al este de Betel. Abrán acampó entre las dos al llegar a Canaán y volvió al mismo sitio desde Egipto.
+  Siglos después, Josué la tomó y la quemó.
+reason: Perspicacia «Hai», núm. 1; Gé 12:8; 13:3. Suele identificarse con Khirbet et-Tell, pero las excavaciones de ese sitio
+  no encajan con las fechas bíblicas.
+sources:
+- it-hai
+- openbible-geo
+- genesis-12
+- genesis-13
+links:
+- title: 'Perspicacia: «Hai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000178
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

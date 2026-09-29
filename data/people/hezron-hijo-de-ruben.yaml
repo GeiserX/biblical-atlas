@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezron-hijo-de-ruben
+name: Hezrón
+names:
+- name: Hezrón
+perspicacia: 1200002015#1
+disambiguation: Hezrón hijo de Rubén; no Hezrón hijo de Pérez, de Judá.
+summary: Hijo de Rubén y cabeza de la familia rubenita de los hezronitas. Bajó a Egipto con la casa de Jacob.
+reason: Perspicacia «Hezrón», núm. 1; Gé 46:9.
+sources:
+- it-hezron
+- genesis-46
+- exodo-6
+links:
+- title: 'Perspicacia: «Hezrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002015
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: ruben-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-hezron
+  - exodo-6
+  reason: 'Gé 46:9: aparece entre los hijos de Rubén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

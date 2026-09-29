@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-ante-la-zarza-ardiente
+title: Jehová llama a Moisés desde la zarza ardiente
+date:
+  from: -1513
+  to: -1513
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1514 a.e.c.
+narrative_order:
+  series: exodo
+  order: 3001
+places:
+- monte-sinai
+people:
+- moises
+passages:
+- Éx 3:1-4:17
+- Hch 7:30-35
+- Sl 105:26
+summary: Junto a Horeb, con el rebaño de Jetró, Moisés ve una zarza que arde sin consumirse. Desde ella, el ángel de Jehová
+  lo envía a liberar a Israel, le explica el nombre divino y le da señales y a Aarón.
+reason: El estudio 3 fecha hacia 1514 a.e.c. a Moisés ante la zarza (Éx 3:2). Perspicacia «Moisés», apartado «Su nombramiento
+  como libertador», y «Horeb».
+sources:
+- exodo-3
+- exodo-4
+- si-3
+- it-moises
+- it-horeb
+links:
+- title: Éxodo 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natanael
+name: Natanael
+names:
+- name: Natanael
+summary: Discípulo de Caná al que Felipe llevó ante Jesús, que lo llamó israelita sin engaño. Tras la resurrección estuvo
+  en la pesca del mar de Galilea. Probablemente es el apóstol Bartolomé.
+reason: Perspicacia «Natanael» (párr. 2-4) cuenta su historia (Jn 1:45-49; 21:2). Que sea Bartolomé lo da solo como probable,
+  igual que «Bartolomé»; por eso van en dos fichas.
+sources:
+- it-natanael
+- it-bartolome
+- juan-1
+- juan-21
+relations:
+- type: born_in
+  place: cana
+  inferred: false
+  sources:
+  - juan-21
+  - it-cana
+  reason: Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - juan-1
+  - it-natanael
+  reason: 'Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Natanael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003185
+  type: perspicacia
+- title: Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
+  type: bible
+perspicacia: '1200003185'
+history:
+- date: '2026-09-29'
+  change: Sale el nombre Bartolomé, que ahora tiene ficha propia. Van en dos fichas con mismo_que pendiente, porque Perspicacia
+    y la nota de Mt 10:3 solo lo dan como probable.
+  source: mateo-10
+- date: '2026-09-29'
+  change: El resumen daba por seguro que era Bartolomé. Van en dos fichas con mismo_que pendiente, porque Perspicacia y la
+    nota de Mt 10:3 solo lo dan como probable.
+  source: mateo-10
+- date: '2026-09-29'
+  change: La razón decía que Perspicacia los da por la misma persona. Van en dos fichas con mismo_que pendiente, porque Perspicacia
+    y la nota de Mt 10:3 solo lo dan como probable.
+  source: mateo-10
+- date: '2026-09-29'
+  change: La relación «apóstol de» (Mt 10:3) pasa a Bartolomé; aquí queda la de discípulo, con Jn 1:45-51. Van en dos fichas
+    con mismo_que pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
+  source: mateo-10
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aminadab-hijo-de-ram
+name: Aminadab
+names:
+- name: Aminadab
+perspicacia: 1200000235#1
+disambiguation: Aminadab hijo de Ram, de Judá; no el levita del tiempo de David ni el posible otro nombre de Izhar.
+summary: Hijo de Ram, de la tribu de Judá. Su hijo Nahsón fue principal de Judá en el desierto, y Aarón tomó por esposa a
+  su hija Eliseba.
+reason: Perspicacia «Aminadab», núm. 1; Rut 4:19, 20.
+sources:
+- it-aminadab
+- rut-4
+- mateo-1
+- lucas-3
+links:
+- title: 'Perspicacia: «Aminadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000235
+  type: perspicacia
+relations:
+- type: kin
+  person: ram-hijo-de-hezron
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  reason: Rut 4:19.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

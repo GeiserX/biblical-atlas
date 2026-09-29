@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sergio-paulo
+name: Sergio Paulo
+names:
+- name: Sergio Paulo
+date:
+  from: 47
+  to: 47
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 47 e.c.
+summary: Procónsul de Chipre, con residencia en Pafos. Quiso oír a Bernabé y Saulo y, al ver cegado a Elimas, se
+  hizo creyente hacia 47.
+reason: 'Perspicacia «Paulo» (párr. 1 y 3); Hch 13:6-12. Lucas lo llama bien procónsul: Chipre era provincia senatorial.'
+sources:
+- it-paulo
+- hch-13
+links:
+- title: 'Perspicacia: «Paulo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003407
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-28'
+status: verified
+relations:
+- type: lived_in
+  place: pafos
+  inferred: false
+  sources:
+  - it-paulo
+  reason: Perspicacia dice que vivía en Pafos, en la costa oeste de Chipre.
+  checked_on: '2026-09-28'
+  status: verified
+- type: tie
+  person: elimas
+  word: adviser
+  inferred: true
+  sources:
+  - it-bar-jesus
+  - hch-13
+  reason: 'Hch 13:6-8: el hechicero Elimas estaba con el procónsul y trataba de apartarlo de la fe. Perspicacia «Bar-Jesús»
+    cree que era su consejero.'
+  checked_on: '2026-09-29'
+  status: verified

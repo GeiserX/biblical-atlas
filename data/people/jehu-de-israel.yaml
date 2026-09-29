@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehu-de-israel
+name: Jehú
+names:
+- name: Jehú
+disambiguation: Rey de Israel, hijo de Jehosafat y nieto de Nimsí; no es el profeta Jehú hijo de Hananí.
+date:
+  from: -904
+  to: -875
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905-876 a.e.c.
+summary: Jefe militar ungido en Ramot-galaad por orden de Eliseo. Mató a Jehoram, a Ocozías de Judá, a Jezabel y a la casa
+  de Acab, y acabó con el culto a Baal, aunque no con los becerros.
+reason: Perspicacia «Jehú», núm. 3, párr. 3, 7-11 y 15; 2Re 9-10.
+sources:
+- it-jehu
+- 2-reyes-9
+- 2-reyes-10
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
+  type: perspicacia
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+relations:
+- type: succeeds
+  person: jehoram-de-israel
+  inferred: false
+  sources:
+  - it-jehu
+  - 2-reyes-9
+  reason: Tomó el trono tras matar a Jehoram (2Re 9:24).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Jehú» daba c. 904-877 a.e.c.; A6-A, más reciente, da c. 905-876.
+  source: tnm-a6-a
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: gobierno-de-nehemias
+name: Nehemías, gobernador de Judá
+type: governor
+date:
+  from: -454
+  to: -442
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 455-443 a.e.c.
+places:
+- jerusalen
+person: nehemias
+summary: Doce años como gobernador, del año 20 al 32 de Artajerjes, sin cobrar la comida que le correspondía. Después volvió
+  por un tiempo a la corte.
+reason: Ne 5:14 da los doce años; Perspicacia «Artajerjes», núm. 2, fecha el año 20 en 455 y el 32 en 443.
+sources:
+- nehemias-5
+- it-artajerjes
+- it-nehemias
+search: Nehemías
+checked_on: '2026-09-28'
+status: verified

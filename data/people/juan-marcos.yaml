@@ -1,0 +1,104 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juan-marcos
+name: Juan Marcos
+names:
+- name: Juan
+  note: Nombre hebreo.
+- name: Marcos
+  note: Sobrenombre romano.
+- name: Juan Marcos
+  note: Forma que usa Hechos.
+distinct_from:
+- juan-el-bautista
+- juan-apostol
+summary: Hijo de María de Jerusalén y primo de Bernabé; escribió el Evangelio de Marcos. Quizá fue el joven que huyó desnudo
+  de Getsemaní. Dejó el primer viaje en Perga y volvió a Jerusalén.
+reason: Perspicacia «Marcos» lo identifica con el Juan Marcos de Hechos y con el Juan de Hch 13:5, 13, y ve probable que fuera
+  el joven de Mr 14:51, 52.
+sources:
+- it-marcos
+- hch-13
+- marcos-14
+links:
+- title: 'Perspicacia: «Marcos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002902
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+perspicacia: '1200002902'
+history:
+- date: '2026-09-29'
+  change: 'Se añade que quizá era el joven de Mr 14:51, 52: Perspicacia «Marcos» lo cree probable y la nota de estudio lo
+    da como posible.'
+  source: marcos-14
+- date: '2026-09-29'
+  change: La razón cita ahora Mr 14:51, 52, de donde sale lo del joven que huyó.
+  source: marcos-14
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: accompanies
+  person: pablo
+  date:
+    from: 47
+    to: 47
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 47 e.c.
+  inferred: false
+  sources:
+  - it-marcos
+  - hch-13
+  reason: Va como ayudante al empezar el primer viaje y se vuelve a Jerusalén desde Perga (Hch 12:25; 13:5, 13).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: bernabe
+  date:
+    from: 49
+    to: 49
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 49 e.c.
+  inferred: false
+  sources:
+  - it-marcos
+  - it-chipre
+  - hch-15
+  reason: Tras la disputa con Pablo, Bernabé se lo lleva a Chipre (Hch 15:39).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  inferred: false
+  sources:
+  - it-marcos
+  - colosenses-4
+  reason: Está con Pablo en Roma y saluda a Colosas y a Filemón (Col 4:10; Flm 24).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maria-madre-de-juan-marcos
+  word: mother
+  inferred: false
+  sources:
+  - hechos-12
+  - it-marcos
+  - it-maria
+  reason: Hch 12:12 habla de la casa de María, «madre de Juan, al que llamaban Marcos». Perspicacia «Marcos» y «María», núm.
+    5.
+  checked_on: '2026-09-29'
+  status: verified

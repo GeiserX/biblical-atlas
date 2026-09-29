@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quedar
+name: Quedar
+names:
+- name: Quedar
+perspicacia: 1200002579#1
+disambiguation: Quedar hijo de Ismael; la tribu y el país de sus descendientes llevan su nombre.
+summary: Segundo hijo de Ismael. De él salió una tribu árabe de pastores, clasificada entre los hijos de Oriente, cuyo país
+  también se llamó Quedar.
+reason: Perspicacia «Quedar», núm. 1 y 2; Gé 25:13.
+sources:
+- it-quedar
+- genesis-25
+links:
+- title: 'Perspicacia: «Quedar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002579
+  type: perspicacia
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+relations:
+- type: kin
+  person: ismael-hijo-de-abrahan
+  word: father
+  inferred: false
+  sources:
+  - it-quedar
+  - genesis-25
+  reason: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
+  source: it-quedar
+checked_on: '2026-09-29'
+status: verified

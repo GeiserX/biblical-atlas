@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeeb
+name: Zeeb
+names:
+- name: Zeeb
+perspicacia: '1200004686'
+summary: Príncipe del ejército de Madián vencido por Gedeón. Escapó con Oreb, pero los efraimitas lo alcanzaron y lo mataron
+  en un lagar que desde entonces llevó su nombre.
+reason: Perspicacia «Zeeb»; Jue 7:23-25 y 8:1-3; Sl 83:11.
+sources:
+- it-zeeb
+- salmos-83
+links:
+- title: 'Perspicacia: «Zeeb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004686
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified

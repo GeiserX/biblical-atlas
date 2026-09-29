@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: macedonia
+name: Macedonia
+names:
+- name: Macedonia
+type: region
+lat: 41.6
+lon: 22.54
+precision: zone
+coord_source: openbible:a69e1b8
+coord_url: https://www.openbible.info/geo/ancient/a69e1b8/macedonia
+summary: Región del sureste de Europa al norte de Acaya, cruzada por la vía Egnatia; Pablo la visitó en varios viajes.
+reason: 'Perspicacia («Macedonia, macedonios») describe el lugar; aparece en Hch 20:1, 2. La coordenada es de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-macedonia
+- hch-20
+- openbible-geo
+links:
+- title: 'Perspicacia: «Macedonia, macedonios»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002815
+  type: perspicacia
+- title: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  type: bible
+checked_on: '2026-09-27'
+status: verified

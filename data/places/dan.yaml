@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dan
+name: Dan
+names:
+- name: Lésem
+  note: Nombre anterior de la ciudad (Jos 19:47).
+- name: Lais
+  note: Otro nombre anterior (Jue 18:29).
+- name: Dan
+type: city
+lat: 33.249
+lon: 35.652
+precision: point
+coord_source: openbible:a513646
+coord_url: https://www.openbible.info/geo/ancient/a513646/dan
+summary: Ciudad del extremo norte de Israel, al pie del Antilíbano. Los danitas le pusieron el nombre de su antepasado; Jeroboán
+  colocó allí el segundo becerro de oro.
+reason: 'Perspicacia «Dan», núm. 3, párr. 5, 7 y 8: Tell el-Qadi (Tel Dan), donde nacen dos manantiales del Jordán; 1Re 12:29.
+  OpenBible: solo el punto.'
+sources:
+- it-dan
+- openbible-geo
+- jueces-18
+- genesis-14
+links:
+- title: 'Perspicacia: «Dan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001115
+  type: perspicacia
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -26,10 +26,10 @@ El sitio cubre de Adán a Juan en Patmos: los viajes y las cartas de Pablo, Pedr
 | Recorridos | 4 |
 | Fuentes | 898 |
 
-Cada hecho lleva su fuente, su razón y su fecha de consulta. Lo que está hecho y lo que queda está en la [hoja de ruta](docs/hoja-de-ruta.md).
+Cada hecho lleva su fuente, su razón y su fecha de consulta, y cada arista del grafo lleva su verbo y el pasaje que la sostiene. Lo que está hecho y lo que queda está en la [hoja de ruta](docs/hoja-de-ruta.md).
 
 - [`site/`](site/): el sitio estático, con MapLibre GL y sin servidor. La aplicación está en `site/js/`, partida en scripts clásicos que comparten `window.BE`: `base.js` crea el estado y el bucle de pintado; `mapa.js`, `linea.js`, `trayectorias.js` y `ahora.js` pintan el mapa y el tiempo; `buscar.js`, `grafo.js`, `lectura.js`, `recorridos.js` y `portada.js` son las vistas de estudio; `tipos/` tiene un fichero por tipo de entidad. Los detalles están en [`site/README.md`](site/README.md).
-- [`data/`](data/): los datos, un YAML por entidad, más las fuentes en `data/fuentes/`, los 66 libros en `data/libros.yaml` y los meses hebreos en `data/calendario.yaml`.
+- [`data/`](data/): los datos, un YAML por entidad, más las fuentes en `data/sources/`, los 66 libros en `data/books.yaml`, los meses hebreos en `data/calendar.yaml` y el vocabulario de las relaciones en `data/vocabulary.yaml`. Las claves y los valores cerrados van en inglés; los nombres y los textos, en español.
 - [`scripts/`](scripts/): compilación a `data.json` y SQLite, validación de esquema y enlaces, la revisión anual y los índices de vídeos de jw.org. Ver [`scripts/README.md`](scripts/README.md).
 - [`docs/`](docs/): ideas, maquetas, modelo de datos, decisiones y el registro de investigación.
 

@@ -1,0 +1,27 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: josue-sumo-sacerdote
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-co-r20_2_VIDEO"
+    title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_2_VIDEO&appLanguage=S"
+    published: "2020-07-06"
+    hits: 6
+    terms:
+      "Jesúa": 5
+      "sumo sacerdote Josué": 1
+  - docid: "pub-co-r22_11_VIDEO"
+    title: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_11_VIDEO&appLanguage=S"
+    published: "2022-08-15"
+    hits: 2
+    terms:
+      "Jesúa": 2
+  - docid: "pub-wpc_2_VIDEO"
+    title: "Jehová nos guía por el camino de la paz (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-2/"
+    published: "2022-08-22"
+    hits: 2
+    terms:
+      "Jesúa": 2

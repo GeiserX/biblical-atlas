@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lida
+name: Lida
+names:
+- name: Lida
+- name: Lod
+  note: Perspicacia cree que Lida y la Lod de 1Cr 8:12 son el mismo lugar.
+- name: el-Ludd
+  note: Nombre árabe del sitio, hoy la ciudad de Lod.
+type: city
+lat: 31.95
+lon: 34.9
+precision: point
+coord_source: openbible:a2c5cc7
+coord_url: https://www.openbible.info/geo/ancient/a2c5cc7/lod
+summary: Ciudad a unos 18 km al sureste de Jope, en la llanura de Sarón. Pedro curó allí al paralítico Eneas y muchos
+  de la zona se hicieron creyentes.
+reason: 'Perspicacia «Lida» (párr. 2) la identifica con la actual Lod; Hch 9:32-35. La coordenada es de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-lida
+- hch-9
+- openbible-geo
+links:
+- title: 'Perspicacia: «Lida»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002797
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+checked_on: '2026-09-28'
+status: verified

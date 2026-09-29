@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: listra
+name: Listra
+names:
+- name: Listra
+type: city
+lat: 37.6017
+lon: 32.3384
+precision: point
+coord_source: openbible:af0719d
+coord_url: https://www.openbible.info/geo/ancient/af0719d/lystra
+summary: Colonia romana de Licaonia; allí tomaron a Pablo y Bernabé por dioses y luego apedrearon a Pablo. Al parecer,
+  allí vivía Timoteo.
+reason: 'Perspicacia («Listra») describe el lugar; aparece en Hch 14:6-20. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-listra
+- hch-14
+- openbible-geo
+links:
+- title: 'Perspicacia: «Listra»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002802
+  type: perspicacia
+- title: Hechos 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14
+  type: bible
+checked_on: '2026-09-27'
+status: verified

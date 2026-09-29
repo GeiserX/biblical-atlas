@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eleccion-de-matias
+title: Matías, elegido para sustituir a Judas
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 33 e.c., entre la ascensión y Pentecostés
+narrative_order:
+  series: hechos
+  order: 115
+  after: ascension-de-jesus
+places:
+- jerusalen
+people:
+- pedro
+- matias
+- juan-apostol
+- santiago-hijo-de-zebedeo
+- andres
+- maria-madre-de-jesus
+- santiago-hermano-de-jesus
+- judas-hermano-de-jesus
+passages:
+- Hch 1:12-26
+summary: Unos 120 discípulos se reúnen en Jerusalén. Pedro propone con las Escrituras cubrir el puesto de Judas;
+  oran, echan suertes entre dos candidatos y sale Matías.
+reason: Perspicacia «Matías» (párr. 2) y «Pedro» (párr. 17) lo ponen días antes de Pentecostés de 33; «Santiago»
+  (párr. 12) y «Judas» (párr. 24) sitúan allí a los hermanos de Jesús.
+sources:
+- it-matias
+- it-pedro
+- it-santiago
+- it-judas
+- hechos-1
+- bt-2
+search: Matías
+checked_on: '2026-09-28'
+status: verified

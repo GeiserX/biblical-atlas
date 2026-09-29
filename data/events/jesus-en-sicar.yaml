@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jesus-en-sicar
+title: Jesús habla con una samaritana en Sicar
+date:
+  from: 30
+  to: 30
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. kislev (noviembre-diciembre) de 30 e.c.
+  detail:
+    month: kislev
+narrative_order:
+  series: a7
+  order: 19
+places:
+- sicar
+people:
+- jesus
+passages:
+- Jn 4:4-43
+summary: Camino de Galilea, Jesús descansa en el pozo de Jacob, a las afueras de Sicar, y revela a una mujer samaritana que
+  él es el Mesías. Muchos del pueblo creen y él se queda allí dos días.
+reason: 'A7-B, fila 9: Sicar, en Samaria. La nota de Jn 4:35 cuenta cuatro meses antes de la siega y llega a kislev; el libro
+  jy (cap. 19) dice noviembre o diciembre.'
+sources:
+- tnm-a7-b
+- juan-4
+- it-sicar
+- jy-cap-19
+checked_on: '2026-09-28'
+status: verified

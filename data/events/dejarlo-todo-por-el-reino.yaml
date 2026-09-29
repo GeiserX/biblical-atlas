@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dejarlo-todo-por-el-reino
+title: 'Camino de Jerusalén: dejarlo todo por el Reino'
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Tras la Pascua de 32 e.c.
+places:
+- galilea
+- region-de-samaria
+people:
+- jesus
+- santiago-hijo-de-zebedeo
+- juan-apostol
+passages:
+- Mt 8:19-22
+- Lu 9:51-62
+- Jn 7:2-10
+summary: Rumbo a Jerusalén, una aldea samaritana no lo recibe y Jesús reprende a Santiago y a Juan, que querían pedir fuego
+  del cielo. A un escriba le avisa que no tiene casa; a otros, que el Reino va primero.
+reason: La tabla A7-E da cuándo y dónde. La tabla dice «Galilea y Samaria»; Lu 9:52 nombra una aldea samaritana.
+  jy cap. 65.
+sources:
+- tnm-a7-e
+- mateo-8
+- lucas-9
+- juan-7
+- jy-cap-65
+narrative_order:
+  series: a7
+  order: 63
+search: Camino de Jerusalén
+history:
+- date: '2026-09-29'
+  change: El resumen no contaba la oferta del escriba de Mt 8:19, 20, que es la parte de Mateo en este suceso; se añade.
+  source: mateo-8
+- date: '2026-09-29'
+  change: 'Faltaba lo que solo cuenta Lucas: la aldea samaritana que no lo recibió y la reprensión a Santiago y Juan (Lu 9:52-55).
+    Los dos entran en personas.'
+  source: lucas-9
+checked_on: '2026-09-29'
+status: verified

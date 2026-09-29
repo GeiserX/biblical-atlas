@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lidia-se-bautiza
+title: Lidia y su casa se bautizan en Filipos
+date:
+  from: 50
+  to: 50
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1613
+places:
+- filipos
+people:
+- pablo
+- silas
+- lucas
+- lidia
+passages:
+- Hch 16:13-15
+summary: Un sábado, a la orilla de un río, fuera de Filipos, Pablo habla a unas mujeres. Lidia escucha, se bautiza
+  con su casa y los convence para alojarse con ella.
+reason: Perspicacia «Lidia» (párr. 1 y 2) y la nota de estudio de Hch 16:14 fechan su conversión hacia 50.
+sources:
+- it-lidia
+- nota-hechos-16
+- hch-16
+search: Lidia Filipos
+checked_on: '2026-09-28'
+status: verified

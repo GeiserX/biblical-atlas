@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jobab-hijo-de-zerah
+name: Jobab
+names:
+- name: Jobab
+perspicacia: 1200002477#2
+disambiguation: Jobab rey de Edom; no Jobab hijo de Joqtán ni Jobab rey de Madón.
+summary: Rey de Edom, hijo de Zérah de Bozrá. Sucedió a Bela antes de que Saúl subiera al trono de Israel.
+reason: Perspicacia «Jobab», núm. 2; Gé 36:33, 34.
+sources:
+- it-jobab
+- genesis-36
+links:
+- title: 'Perspicacia: «Jobab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002477
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: zerah-de-bozra
+  word: father
+  inferred: false
+  sources:
+  - it-jobab
+  - genesis-36
+  reason: 'Gé 36:33: Jobab hijo de Zérah de Bozrá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: bela-hijo-de-beor
+  inferred: false
+  sources:
+  - it-jobab
+  - genesis-36
+  reason: 'Gé 36:33: reinó en lugar de Bela cuando este murió.'
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+- type: holds_office
+  place: edom
+  office: king
+  inferred: false
+  sources:
+  - genesis-36
+  reason: Reinó en Edom tras Bela (Gé 36:31, 33).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

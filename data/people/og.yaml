@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: og
+name: Og
+names:
+- name: Og
+perspicacia: '1200003306'
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+summary: Rey amorreo de Basán, el último de los gigantescos refaím que quedaban en aquella región. Gobernaba sesenta ciudades
+  fortificadas; cuando terminaban los cuarenta años en el desierto, Israel lo venció y lo mató en Edrei.
+reason: Perspicacia «Og», párr. 1 y 2, y «Basán», párr. 5, que fecha su derrota hacia 1473 a.e.c.; Sl 135:11.
+sources:
+- it-og
+- it-basan
+- salmos-135
+- salmos-136
+links:
+- title: 'Perspicacia: «Og»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003306
+  type: perspicacia
+- title: Salmo 135 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
+  type: bible
+- title: Salmo 136 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
+  type: bible
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - salmos-135
+  - it-og
+  - salmos-136
+  reason: Sl 135:11 lo llama rey de Basán.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

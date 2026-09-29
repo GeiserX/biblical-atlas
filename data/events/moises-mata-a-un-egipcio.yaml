@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-mata-a-un-egipcio
+title: Moisés mata a un egipcio para defender a un hebreo
+date:
+  from: -1552
+  to: -1552
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1553 a.e.c.
+narrative_order:
+  series: exodo
+  order: 2011
+places:
+- egipto
+people:
+- moises
+passages:
+- Éx 2:11, 12
+- Hch 7:23, 24
+- Heb 11:24-26
+summary: Ya adulto, Moisés sale a ver las cargas de sus hermanos hebreos. Ve que un egipcio golpea a uno, mira que nadie lo
+  observa, mata al egipcio y lo entierra en la arena.
+reason: 'El estudio 3 pone en 1553 a.e.c. que Moisés se ofrece como libertador y huye a Madián (Éx 2:11-15). Perspicacia «Moisés»:
+  tenía cuarenta años (Hch 7:23).'
+sources:
+- exodo-2
+- si-3
+- it-moises
+links:
+- title: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified
