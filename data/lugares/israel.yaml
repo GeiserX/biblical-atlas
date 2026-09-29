@@ -5,6 +5,10 @@ nombres:
 - nombre: Israel
 - nombre: Tierra de Israel
   nota: Así la llama Mateo al contar el regreso desde Egipto.
+- nombre: Efraín
+  desde: -996
+  nota: Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8).
+    Lo usan también Isaías y Jeremías.
 tipo: pais
 lat: null
 lon: null
@@ -37,6 +41,18 @@ fuentes:
 - it-beer-seba
 - openbible-geo
 - mateo-2
+- oseas-1
+- it-efrain
+- si-oseas
+- oseas-4
+- oseas-5
+- oseas-6
+- oseas-7
+- it-oseas-libro
+- oseas-8
+- oseas-9
+- oseas-13
+- oseas-14
 enlaces:
 - titulo: 'Perspicacia: «Israel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
