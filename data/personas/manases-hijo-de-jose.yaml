@@ -16,6 +16,7 @@ fuentes:
 - genesis-46
 - genesis-48
 - genesis-50
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Manasés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
@@ -36,6 +37,8 @@ relaciones:
   - genesis-46
   - it-manases
   - genesis-48
+  - numeros-26
+  - numeros-32
   razon: Gé 41:50, 51.
   estado: verificado
 - tipo: pariente
@@ -56,6 +59,7 @@ relaciones:
   - genesis-41
   - genesis-46
   - genesis-48
+  - numeros-26
   razon: 'Gé 41:51, 52: Manasés es el primero y Efraín el segundo.'
   estado: verificado
 - tipo: nacio_en

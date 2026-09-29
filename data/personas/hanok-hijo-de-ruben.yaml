@@ -11,6 +11,7 @@ fuentes:
 - it-hanok
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Hanok»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001864
@@ -27,6 +28,7 @@ relaciones:
   - genesis-46
   - it-hanok
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:9: aparece entre los hijos de Rubén.'
   estado: verificado
 - tipo: vivio_en

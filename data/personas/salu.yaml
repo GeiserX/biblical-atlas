@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salu
+nombre: Salu
+nombres:
+- nombre: Salu
+perspicacia: '1200003814'
+resumen: Simeonita, padre de Zimrí, el hombre al que Finehás mató junto con la madianita Cozbí.
+razon: Perspicacia «Salu»; Nú 25:14.
+fuentes:
+- it-salu
+- numeros-25
+enlaces:
+- titulo: 'Perspicacia: «Salu»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003814
+  tipo: perspicacia
+- titulo: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-salu
+  razon: 'Nú 25:14: su hijo era jefe de una casa paterna de los simeonitas; Perspicacia «Salu» lo llama simeonita.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

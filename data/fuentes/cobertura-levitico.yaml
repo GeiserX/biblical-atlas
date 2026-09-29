@@ -1,0 +1,71 @@
+# biblical-earth: fuentes de la cobertura de levitico. Esquema en docs/investigacion/README.md.
+it-levitico-libro:
+  titulo: Levítico, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002732
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-instalacion:
+  titulo: Instalación
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002179
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sacerdote:
+  titulo: Sacerdote
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003553
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sumo-sacerdote:
+  titulo: Sumo sacerdote
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002023
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-fuego:
+  titulo: Fuego
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001523
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-lepra:
+  titulo: Lepra
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002720
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-dia-de-expiacion:
+  titulo: Día de Expiación
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000462
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-azazel:
+  titulo: Azazel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000488
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-selomit:
+  titulo: Selomit
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003994
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-dibri:
+  titulo: Dibrí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001174
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'

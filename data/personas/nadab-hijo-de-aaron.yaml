@@ -26,6 +26,12 @@ fuentes:
 - it-abihu
 - exodo-24
 - exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
+- numeros-3
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Nadab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
@@ -45,6 +51,9 @@ relaciones:
   - exodo-6
   - it-nadab
   - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-26
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -65,6 +74,9 @@ relaciones:
   - it-nadab
   - it-abihu
   - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-26
   razon: 'Éx 6:23: Abihú, el siguiente hijo de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -74,6 +86,9 @@ relaciones:
   fuentes:
   - exodo-6
   - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-26
   razon: 'Éx 6:23: Eleazar es otro hijo de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -83,6 +98,9 @@ relaciones:
   fuentes:
   - exodo-6
   - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-26
   razon: 'Éx 6:23: Itamar es otro hijo de Aarón.'
   estado: verificado
 - tipo: nacio_en
@@ -92,5 +110,27 @@ relaciones:
   - it-nadab
   razon: 'Perspicacia «Nadab», núm. 1: nació en Egipto y salió con Israel en el éxodo.'
   estado: verificado
+- tipo: murio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  deducido: false
+  fuentes:
+  - levitico-10
+  - it-nadab
+  - it-tabernaculo
+  - numeros-3
+  razon: 'Le 10:1, 2 y Nú 3:4: murió con Abihú ante Jehová, en el desierto de Sinaí, por ofrecer fuego no autorizado.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.'
+  fuente: numeros-3
 consultado: '2026-09-29'
 estado: verificado

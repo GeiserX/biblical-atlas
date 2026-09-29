@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cozbi
+nombre: Cozbí
+nombres:
+- nombre: Cozbí
+perspicacia: '1200001057'
+resumen: Madianita, hija de Zur, un jefe de Madián. Zimrí la llevó a su tienda en el campamento de Israel y Finehás atravesó
+  a los dos con una lanza.
+razon: Perspicacia «Cozbí»; Nú 25:6-8, 15, 18.
+fuentes:
+- it-cozbi
+- numeros-25
+enlaces:
+- titulo: 'Perspicacia: «Cozbí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001057
+  tipo: perspicacia
+- titulo: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: zur-rey-de-madian
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-cozbi
+  razon: Nú 25:15 la llama hija de Zur.
+  estado: verificado
+- tipo: murio_en
+  lugar: sitim
+  deducido: false
+  fuentes:
+  - numeros-25
+  - it-cozbi
+  razon: 'Nú 25:1, 8: la mataron en el campamento, cuando Israel vivía en Sitim.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

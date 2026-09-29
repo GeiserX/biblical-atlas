@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliasaf-hijo-de-deuel
+nombre: Eliasaf
+nombres:
+- nombre: Eliasaf
+perspicacia: 1200001297#1
+desambiguacion: Eliasaf hijo de Deuel, jefe de Gad; no el levita hijo de Lael que dirigía a los guersonitas.
+resumen: Gadita, hijo de Deuel, a quien Nú 2:14 llama Reuel. Jefe de su tribu, ayudó en el censo del Sinaí y mandaba el ejército
+  de Gad, en la división de Rubén, al sur.
+razon: Perspicacia «Eliasaf», núm. 1; Nú 1:14, 16; 2:14.
+fuentes:
+- it-eliasaf
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Eliasaf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001297
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: deuel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-eliasaf
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  razon: Nú 1:14 y 2:14 lo llaman hijo de Deuel. La segunda forma, Reuel, es el mismo hombre según Perspicacia «Deuel».
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 14, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 14, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- eliasaf-hijo-de-lael

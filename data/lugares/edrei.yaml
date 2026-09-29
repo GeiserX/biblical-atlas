@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: edrei
+nombre: Edréi
+nombres:
+- nombre: Edréi
+- nombre: Edrei
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.625278
+lon: 36.106111
+precision: punto
+coord_fuente: openbible:aaa6f7a
+coord_url: https://www.openbible.info/geo/ancient/aaa6f7a/edrei-1
+resumen: Ciudad real de Og, rey de Basán, al parecer en su frontera sur. Allí Israel derrotó a Og con todo su ejército y su
+  familia. Después fue de Manasés.
+razon: 'Perspicacia «Edrei», núm. 1, y «Basán»; Nú 21:33-35. Se suele relacionar con Derʽa, cerca del Yarmuk. OpenBible: solo
+  el punto.'
+fuentes:
+- it-edrei
+- it-basan
+- openbible-geo
+- numeros-21
+- deuteronomio-1
+- it-og
+- deuteronomio-3
+enlaces:
+- titulo: 'Perspicacia: «Edrei»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001259
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quibrot-hataava
+nombre: Quibrot-Hataavá
+nombres:
+- nombre: Quibrot-Hataavá
+  nota: 'Quiere decir «lugares de entierro del deseo» (nota de Nú 11:34): allí enterraron a los que codiciaron carne.'
+tipo: region
+lat: 28.788667
+lon: 34.275439
+precision: punto
+coord_fuente: openbible:ae7836a
+coord_url: https://www.openbible.info/geo/ancient/ae7836a/kibroth-hattaavah
+coord_nota: Punto de Erweis el Ebeirig (Rueis el-Eberij en Perspicacia), a mitad de camino entre el Sinaí tradicional y Hazerot.
+  El mapa B3 la marca sin signo de duda.
+resumen: Campamento de Israel en el desierto, entre el Sinaí y Hazerot. Allí el pueblo exigió carne, Jehová mandó codornices
+  para un mes y castigó con una gran matanza a los codiciosos, enterrados en ese lugar.
+razon: 'Perspicacia «Quibrot-hataavá»; Nú 11:4-35. El mapa B3 la sitúa sin duda. OpenBible: solo tomamos el punto.'
+fuentes:
+- it-quibrot-hataava
+- tnm-b3
+- openbible-geo
+- numeros-11
+- numeros-33
+- deuteronomio-9
+enlaces:
+- titulo: 'Perspicacia: «Quibrot-hataavá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002601
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

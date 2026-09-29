@@ -5,7 +5,8 @@ nombres:
 - nombre: Sirte
   nota: Nombre griego que viene de una raíz que significa «arrastrar» (Perspicacia).
 - nombre: Gran Sirte
-  nota: El golfo oriental, hoy golfo de Sidra; Perspicacia cree que era el que temían los marineros.
+  nota: El golfo oriental, hoy golfo de Sidra. Los marinos temían los dos golfos; Perspicacia cree que la tripulación de
+    Pablo pensaba en este.
 - nombre: Pequeña Sirte
   nota: El golfo occidental, entre Túnez y Trípoli, hoy golfo de Gabés.
 tipo: mar
@@ -30,5 +31,10 @@ enlaces:
 - titulo: Hechos 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La nota de la Gran Sirte daba a entender que solo se temía ese golfo; Perspicacia dice que se temían los
+    dos.'
+  fuente: it-sirte
 consultado: '2026-09-29'
 estado: verificado

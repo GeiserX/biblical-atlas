@@ -10,6 +10,10 @@ razon: Perspicacia «Datán»; Sl 106:16, 17 cuenta que la tierra se lo tragó p
 fuentes:
 - it-datan
 - salmos-106
+- numeros-16
+- it-eliab
+- numeros-26
+- deuteronomio-11
 enlaces:
 - titulo: 'Perspicacia: «Datán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001127
@@ -25,7 +29,21 @@ relaciones:
   fuentes:
   - it-datan
   - it-abiram
+  - numeros-16
+  - deuteronomio-11
   razon: 'Perspicacia «Datán» y «Abiram», núm. 1: ambos eran hijos del rubenita Eliab.'
+  estado: verificado
+- tipo: pariente
+  persona: eliab-hijo-de-palu
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-16
+  - it-eliab
+  - it-datan
+  - numeros-26
+  - deuteronomio-11
+  razon: 'Nú 16:1, 12: Datán es hijo de Eliab.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

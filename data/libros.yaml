@@ -824,12 +824,12 @@ libros:
   lugar: Samaria (distrito)
   fecha:
     desde: -744
-    hasta: null
-    precision: año
+    hasta: -739
+    precision: rango
     aprox: true
     tipo: anclada
     cronologia: tnm
-    texto: después de 745 a.e.c.
+    texto: entre 745 y 740 a.e.c.
   abarca:
     desde: -803
     hasta: -744
@@ -840,6 +840,7 @@ libros:
     texto: antes de 804 a.e.c. - después de 745 a.e.c.
   fuentes:
   - tnm-tabla
+  - it-oseas-libro
   razon: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
   consultado: '2026-09-28'
   estado: verificado

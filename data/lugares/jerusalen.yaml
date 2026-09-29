@@ -24,6 +24,9 @@ nombres:
 - nombre: Fortaleza Antonia
   nota: Cuartel de la tropa romana pegado al recinto del templo, en su ángulo noroeste; allí subieron a Pablo tras el motín
     (nota de estudio de Hch 21:34).
+- nombre: Torre de David
+  nota: Torre de Can 4:4 de la que colgaban mil escudos. Perspicacia recoge que quizá sea la de la Casa del Rey (Ne 3:25);
+    no es la moderna así llamada, de Herodes.
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -91,6 +94,14 @@ fuentes:
 - hch-21
 - hch-22
 - hch-25
+- cantar-de-los-cantares-3
+- si-cantar-de-los-cantares
+- cantar-de-los-cantares-4
+- it-torre
+- cantar-de-los-cantares-5
+- cantar-de-los-cantares-6
+- joel-2
+- joel-3
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
@@ -106,6 +117,9 @@ enlaces:
   tipo: biblia
 - titulo: 'Perspicacia: «Sión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004740
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Torre»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004459
   tipo: perspicacia
 historial:
 - fecha: '2026-09-29'

@@ -12,7 +12,6 @@ fecha:
 orden_relato:
   serie: hechos
   orden: 1827
-  tras: apolos-en-efeso
 lugares:
 - corinto
 - acaya
@@ -34,5 +33,10 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se quita tras: apolos-en-efeso. El orden 1827 del relato ya lo pone después de su llegada a Éfeso (Hch
+    18:24).'
+  fuente: hch-18
 consultado: '2026-09-29'
 estado: verificado

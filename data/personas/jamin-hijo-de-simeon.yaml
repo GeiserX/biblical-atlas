@@ -11,6 +11,7 @@ fuentes:
 - it-jamin
 - genesis-46
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Jamín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002315
@@ -27,6 +28,7 @@ relaciones:
   - genesis-46
   - it-jamin
   - exodo-6
+  - numeros-26
   razon: 'Gé 46:10: aparece entre los hijos de Simeón.'
   estado: verificado
 - tipo: vivio_en

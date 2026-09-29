@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: edom-niega-el-paso-a-israel
+titulo: Edom niega el paso a Israel
+fecha:
+  desde: -1473
+  hasta: -1473
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 1474 a.e.c. (año cuadragésimo del éxodo)
+orden_relato:
+  serie: numeros
+  orden: 20014
+lugares:
+- cades
+- edom
+- camino-del-rey
+personas:
+- moises
+pasajes:
+- Nú 20:14-21
+- Jue 11:17
+resumen: Desde Cadés, Moisés pide al rey de Edom, que no se nombra, dejar pasar a Israel por el Camino del Rey sin tocar campos
+  ni pozos. Edom se niega, sale con un ejército e Israel se aparta.
+razon: 'Perspicacia «Edom», apartado «Desde el éxodo»: al terminar los años en el desierto; «Qadés», párr. 10: después de
+  Meribá y antes del monte Hor, en el año cuadragésimo.'
+fuentes:
+- numeros-20
+- it-edom
+- it-qades
+- it-camino-del-rey
+enlaces:
+- titulo: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

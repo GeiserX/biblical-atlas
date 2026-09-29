@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guideoni
+nombre: Guideoní
+nombres:
+- nombre: Guideoní
+perspicacia: '1200001686'
+resumen: Benjaminita, padre de Abidán, jefe de Benjamín en tiempos de Moisés.
+razon: Perspicacia «Guideoní»; Nú 1:11; 2:22.
+fuentes:
+- it-guideoni
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Guideoní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001686
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

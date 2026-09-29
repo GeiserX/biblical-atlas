@@ -12,6 +12,7 @@ fuentes:
 - it-jokebed
 - exodo-2
 - exodo-6
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Jokébed»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002478
@@ -30,6 +31,7 @@ relaciones:
   - exodo-2
   - it-jokebed
   - exodo-6
+  - numeros-26
   razon: Éx 2:1 la llama hija de Leví y Éx 6:20 la hace hermana del padre de Amram. Perspicacia «Jokébed» admite que «hija»
     signifique allí descendiente.
   estado: verificado
@@ -50,6 +52,13 @@ relaciones:
   - exodo-6
   - it-jokebed
   razon: 'Éx 6:20: era hermana del padre de Amram, es decir, de Cohat.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:59: Leví la tuvo con su esposa en Egipto.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

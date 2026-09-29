@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: selumiel
+nombre: Selumiel
+nombres:
+- nombre: Selumiel
+perspicacia: '1200003996'
+resumen: Hijo de Zurisadái y jefe de la tribu de Simeón. Colaboró en el censo del Sinaí, un año después del éxodo, y estaba
+  al frente de las tropas simeonitas, en la división de Rubén.
+razon: Perspicacia «Selumiel»; Nú 1:6, 16; 2:12.
+fuentes:
+- it-selumiel
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Selumiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003996
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: zurisadai
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-selumiel
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  razon: Nú 1:6 y 2:12 lo llaman hijo de Zurisadái. Perspicacia admite que «hijo» signifique descendiente.
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 6, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 6, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
