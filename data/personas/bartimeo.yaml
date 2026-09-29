@@ -33,3 +33,12 @@ relaciones:
   razon: Recobrada la vista, siguió a Jesús por el camino (Mt 20:34; Mr 10:52). Mateo no lo nombra; la nota de Mt 20:30 lo
     identifica.
   estado: verificado
+- tipo: pariente
+  persona: timeo
+  relacion: padre
+  deducido: false
+  fuentes:
+  - marcos-10
+  - it-timeo
+  razon: Mr 10:46 lo llama hijo de Timeo, y Perspicacia «Timeo» lo da como su padre.
+  estado: verificado

@@ -28,6 +28,7 @@ fuentes:
 - genesis-26
 - genesis-27
 - genesis-28
+- salmos-105
 enlaces:
 - titulo: 'Perspicacia: «Isaac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
@@ -145,6 +146,14 @@ relaciones:
   - genesis-24
   - genesis-25
   razon: 'Gé 24:67: Isaac tomó a Rebeca por esposa; Gé 25:20: tenía 40 años cuando se casó con ella.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - salmos-105
+  - it-canaan
+  razon: 'Sl 105:9-12: heredero del juramento sobre Canaán, vivió allí como extranjero.'
   estado: verificado
 perspicacia: '1200002203'
 consultado: '2026-09-29'

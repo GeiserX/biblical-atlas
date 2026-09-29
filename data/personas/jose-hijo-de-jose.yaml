@@ -17,6 +17,7 @@ razon: Perspicacia «José», núm. 9; Mt 13:55 y Mr 6:3.
 fuentes:
 - it-jose
 - mateo-13
+- marcos-6
 enlaces:
 - titulo: 'Perspicacia: «José»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
@@ -29,6 +30,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-jose
+  - marcos-6
   razon: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
     entre ellos.
   estado: verificado
@@ -38,6 +40,7 @@ relaciones:
   deducido: true
   fuentes:
   - mateo-13
+  - marcos-6
   razon: Mt 13:55 da a María como madre de Jesús y a José entre sus hermanos; la nota los hace hijos de María.
   estado: verificado
 - tipo: vivio_en

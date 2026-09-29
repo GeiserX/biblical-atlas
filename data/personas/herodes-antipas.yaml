@@ -19,8 +19,8 @@ relaciones:
   deducido: true
   fuentes:
   - it-herodes
-  razon: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace; el dato sale de la historia,
-    no del texto bíblico.
+  razon: Perspicacia (apartado 2) lo da como hijo de Herodes el Grande y de Maltace; el dato sale de la historia, no del texto
+    bíblico.
   estado: verificado
 - tipo: pariente
   persona: herodias
@@ -29,6 +29,7 @@ relaciones:
   fuentes:
   - mateo-14
   - it-herodes
+  - marcos-6
   razon: 'Mt 14:3, 4: Juan le reprochaba tener por esposa a Herodías; Perspicacia «Herodes» (núm. 2) cuenta la boda.'
   estado: verificado
 - tipo: pariente
@@ -38,6 +39,7 @@ relaciones:
   fuentes:
   - mateo-14
   - it-herodes
+  - marcos-6
   razon: Mt 14:3 llama a Filipo hermano de Herodes; Perspicacia «Herodes» (núm. 2 y 5) precisa que eran medio hermanos.
   estado: verificado
 - tipo: vivio_en
@@ -46,6 +48,7 @@ relaciones:
   fuentes:
   - mateo-14
   - it-tiberiades
+  - marcos-6
   razon: Las notas de Mt 14:3 y 6 ponen su residencia en Tiberíades; Perspicacia «Tiberíades» (núm. 1) la da como sede de
     su tetrarquía.
   estado: verificado
@@ -57,6 +60,7 @@ fuentes:
 - it-herodes
 - lucas-23
 - mateo-14
+- marcos-6
 enlaces:
 - titulo: 'Perspicacia: «Herodes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000

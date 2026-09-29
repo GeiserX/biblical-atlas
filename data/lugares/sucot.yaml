@@ -4,6 +4,8 @@ nombre: Sucot
 nombres:
 - nombre: Sucot
   nota: La nota de Gé 33:17 dice que significa «cabañas» o «refugios».
+- nombre: Valle de Sucot
+  nota: Sl 108:7 (la nota da «la llanura baja»). Perspicacia cree que es la llanura fértil que domina el sitio de la ciudad.
 tipo: ciudad
 lat: 32.1966
 lon: 35.62118
@@ -17,12 +19,20 @@ fuentes:
 - it-sucot
 - openbible-geo
 - genesis-33
+- salmos-108
+- salmos-60
 enlaces:
 - titulo: 'Perspicacia: «Sucot»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004256
   tipo: perspicacia
 - titulo: Génesis 33 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  tipo: biblia
+- titulo: Salmo 108 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/108
+  tipo: biblia
+- titulo: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

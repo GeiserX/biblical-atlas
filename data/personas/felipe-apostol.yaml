@@ -15,6 +15,7 @@ fuentes:
 - juan-1
 - juan-6
 - mateo-10
+- marcos-3
 relaciones:
 - tipo: vivio_en
   lugar: betsaida
@@ -38,6 +39,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-10
+  - marcos-3
   razon: Mt 10:3 lo nombra entre los doce.
   estado: verificado
 enlaces:

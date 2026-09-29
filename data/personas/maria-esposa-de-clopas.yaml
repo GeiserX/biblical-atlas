@@ -21,6 +21,8 @@ fuentes:
 - mateo-27
 - juan-19
 - mateo-28
+- marcos-15
+- marcos-16
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
@@ -41,5 +43,6 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-27
+  - marcos-15
   razon: 'Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.'
   estado: verificado

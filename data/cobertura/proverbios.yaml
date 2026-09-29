@@ -1,0 +1,227 @@
+# biblical-earth: cobertura de un libro. Formato en data/cobertura/README.md.
+libro: proverbios
+capitulos:
+  1:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, entidades: [persona:salomon, relacion:salomon/pariente/david], menciona: [persona:david, periodo:salomon, lugar:israel], nota: "Título del libro: proverbios de Salomón, hijo de David y rey de Israel, escritos para ganar sabiduría, disciplina y buen juicio. Respetar a Jehová es el punto de partida del saber."}
+    - {v: 8-19, tipo: poesia, nota: "El padre pide al hijo que no se junte con los pecadores que planean emboscadas para robar: la avaricia violenta mata a quien la practica. La Tumba es el Seol, no un lugar del mapa."}
+    - {v: 20-33, tipo: poesia, nota: "La sabiduría, personificada, llama en las calles y junto a las puertas de la ciudad. Quien desprecia su corrección cosechará su desgracia; quien le hace caso vivirá tranquilo."}
+  2:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, nota: "Si el hijo busca el discernimiento con el empeño de quien busca plata escondida, llegará a entender el temor de Jehová, que da la sabiduría y cuida a los que le son leales."}
+    - {v: 10-22, tipo: poesia, nota: "La sabiduría lo librará del hombre perverso y de la mujer inmoral que deja al esposo de su juventud. Los rectos seguirán en la tierra; los malvados serán arrancados de ella."}
+  3:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-12, tipo: poesia, nota: "Confiar en Jehová de todo corazón, honrarlo con lo mejor de lo que uno tiene y aceptar su corrección, que es la de un padre que quiere a su hijo. Heb 12:5, 6 cita los v. 11 y 12."}
+    - {v: 13-26, tipo: poesia, nota: "La sabiduría vale más que la plata, el oro y los corales, y es árbol de vida. Con ella Jehová fundó la tierra y los cielos; quien la guarda anda y duerme sin miedo."}
+    - {v: 27-35, tipo: poesia, nota: "Hacer el bien al prójimo si está en nuestra mano, no tramar contra él ni envidiar al violento. Jehová bendice la casa del justo y favorece al humilde; Santiago 4:6 cita el v. 34."}
+  4:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, menciona: [persona:salomon, persona:david, persona:bat-seba], nota: "El padre cuenta que su propio padre le enseñaba a conseguir sabiduría por encima de todo. Las referencias del v. 3 remiten a David (1Re 2:12) y a Bat-Seba (1Re 1:16-21), los padres de Salomón."}
+    - {v: 10-19, tipo: poesia, nota: "Dos caminos: la senda del justo brilla cada vez más, como la luz desde el alba hasta el mediodía; la del malvado está a oscuras y ni sabe en qué tropieza."}
+    - {v: 20-27, tipo: poesia, nota: "Proteger el corazón antes que nada, porque de él sale la vida; alejar el habla torcida, mirar al frente y no desviarse a ningún lado."}
+  5:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-14, tipo: poesia, nota: "Aviso contra la mujer descarriada: al principio sus palabras son miel y al final amargan como el ajenjo. Quien se le acerca pierde honra y bienes y acaba lamentándose. La Tumba es el Seol."}
+    - {v: 15-23, tipo: poesia, nota: "Beber del propio pozo: disfrutar de la esposa de la juventud y no de extrañas. Jehová ve cada paso del hombre, y el malvado queda atado por las cuerdas de su propio pecado."}
+  6:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-5, tipo: poesia, nota: "Quien salió fiador de otro tiene que librarse cuanto antes, rogando con humildad a su prójimo, igual que la gacela escapa del cazador."}
+    - {v: 6-11, tipo: poesia, nota: "El perezoso debe aprender de la hormiga, que sin jefe alguno junta su comida en verano. Dormir de más trae la pobreza de golpe."}
+    - {v: 12-19, tipo: poesia, nota: "El hombre inútil engaña con gestos y palabras y siembra peleas. Siete cosas detesta Jehová, desde los ojos altivos hasta quien enfrenta a hermanos."}
+    - {v: 20-35, tipo: poesia, nota: "Los mandatos del padre y de la madre guardan del adulterio: nadie lleva brasas en el pecho sin quemarse. El ladrón devuelve siete veces; el esposo celoso no acepta rescate."}
+  7:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-5, tipo: poesia, nota: "Guardar los mandamientos como la pupila del ojo y tratar a la sabiduría como a una hermana protege de la mujer inmoral."}
+    - {v: 6-23, tipo: poesia, menciona: [lugar:egipto], nota: "Escena vista desde una ventana: al caer la noche, una casada vestida de prostituta seduce a un joven sin juicio, que la sigue como toro al matadero. Sin nombres ni fecha: enseñanza, no evento. Su colcha es lino egipcio."}
+    - {v: 24-27, tipo: poesia, nota: "Aviso final a los hijos: ella ha hecho caer a muchos y su casa es camino a la Tumba, el Seol."}
+  8:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-21, tipo: poesia, nota: "La sabiduría llama en los cruces y en las puertas: sus palabras son rectas, vale más que el oro y la plata, por ella gobiernan reyes y príncipes, y enriquece a quienes la aman."}
+    - {v: 22-31, tipo: poesia, menciona: [persona:jesus], nota: "La sabiduría dice que Jehová la produjo antes que nada y estuvo a su lado como obrero experto al hacer la tierra. Perspicacia «Jesucristo» ve aquí al Hijo antes de ser hombre (Jn 1:1-3; Col 1:15-17)."}
+    - {v: 32-36, tipo: poesia, nota: "Felices los que la escuchan y la esperan a sus puertas cada día: hallan vida y el favor de Jehová. Quien la odia ama la muerte."}
+  9:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-6, tipo: poesia, nota: "La sabiduría construye su casa con siete columnas, prepara carne y vino, pone la mesa y envía a sus criadas a invitar desde lo alto de la ciudad a los inexpertos."}
+    - {v: 7-12, tipo: poesia, nota: "Reprender al burlón trae insultos; al sabio lo hace más sabio. Respetar a Jehová es el principio de la sabiduría, y ella alarga la vida de quien la tiene."}
+    - {v: 13-18, tipo: poesia, nota: "La mujer necia, sentada a su puerta, invita con las mismas palabras a los que pasan y promete agua robada; sus invitados terminan en la Tumba, el Seol."}
+  10:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-5, tipo: poesia, menciona: [persona:salomon], nota: "Encabezamiento «Proverbios de Salomón», que abre la segunda sección del libro. El hijo sensato alegra a sus padres; lo robado no sirve; Jehová sostiene al justo; el diligente cosecha y el perezoso se avergüenza."}
+    - {v: 6-14, tipo: poesia, nota: "Contraste entre justo y malvado en su fama y en su habla: la boca del justo da vida, el odio enciende peleas y el amor tapa las faltas; el sabio guarda conocimiento y el necio se arruina hablando."}
+    - {v: 15-21, tipo: poesia, nota: "Riqueza y pobreza, el fruto del esfuerzo, aceptar la corrección, el odio disimulado y la murmuración. Quien habla mucho acaba pecando; frenar la lengua es prudente y las palabras del justo valen como plata y alimentan a otros."}
+    - {v: 22-32, tipo: poesia, nota: "La bendición de Jehová enriquece sin traer pena. Temerle alarga los días; el justo se mantiene firme como un cimiento y el malvado desaparece tras la tormenta. El perezoso irrita a quien lo manda como humo en los ojos."}
+  11:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-11, tipo: poesia, nota: "Jehová aborrece la balanza trucada y se complace en la pesa justa. El orgullo trae deshonra y la modestia, sabiduría; la rectitud salva y guía, la maldad derriba a su dueño. Una ciudad celebra el bien de los justos."}
+    - {v: 12-15, tipo: poesia, nota: "Callar ante el prójimo en vez de despreciarlo, guardar un secreto frente al chismoso, buscar muchos consejeros y no avalar la deuda de un desconocido, que se sellaba dándose la mano."}
+    - {v: 16-23, tipo: poesia, nota: "La mujer amable gana honra; la bondad beneficia a quien la practica y la crueldad lo daña. Quien siembra justicia cosecha de verdad. La mujer bella sin sensatez es como un cerdo con una argolla dorada en el morro."}
+    - {v: 24-31, tipo: poesia, nota: "El generoso prospera y el tacaño empobrece; el pueblo maldice al que retiene el grano. Confiar en la riqueza hace caer; el justo florece, su fruto es árbol de vida y el sabio gana almas."}
+  12:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, nota: "Amar la corrección es amar el saber. Jehová aprueba al bueno y condena al intrigante. Una esposa capaz es la corona de su marido y la que avergüenza le pudre los huesos. La casa del justo sigue en pie."}
+    - {v: 8-14, tipo: poesia, nota: "Se alaba la prudencia; más vale ser humilde con un criado que presumir sin pan. El justo atiende a sus animales, el que trabaja su tierra tiene pan y cada uno recoge el fruto de sus palabras y sus manos."}
+    - {v: 15-23, tipo: poesia, nota: "El necio cree tener razón, se irrita enseguida y lo suelta todo; el sabio escucha consejo y pasa por alto la ofensa. La verdad dura, la mentira es breve, y Jehová aborrece los labios falsos."}
+    - {v: 24-28, tipo: poesia, nota: "La mano diligente gobierna y la floja acaba en trabajo forzado. La inquietud abate y una palabra amable anima. El perezoso no caza su presa; la senda de la justicia conduce a la vida, no a la muerte."}
+  13:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-6, tipo: poesia, nota: "El hijo sabio acepta la corrección de su padre y el burlón no. Cuidar lo que uno dice protege la vida; el perezoso desea sin obtener y el diligente se sacia. La justicia guarda al íntegro."}
+    - {v: 7-12, tipo: poesia, nota: "Hay quien finge riqueza y quien finge pobreza. La luz del justo brilla y la del malvado se apaga. El orgullo provoca riñas; lo ganado deprisa mengua; la espera larga enferma y el deseo logrado es árbol de vida."}
+    - {v: 13-19, tipo: poesia, nota: "Respetar el mandato trae premio; la enseñanza del sabio aparta de los lazos de la muerte. El entendimiento gana favor, el prudente obra con saber, el mensajero leal sana y quien acepta la reprensión recibe honra."}
+    - {v: 20-25, tipo: poesia, nota: "Quien camina con sabios se vuelve sabio. El bueno deja herencia a sus nietos; la injusticia puede arruinar el campo del pobre. No usar la vara es no querer al hijo; el justo come hasta saciarse."}
+  14:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, nota: "La mujer sabia levanta su casa y la necia la destruye. Quien va recto teme a Jehová. Sin bueyes no hay cosecha; el testigo leal no miente; el burlón no halla sabiduría y los necios se ríen de la culpa."}
+    - {v: 10-19, tipo: poesia, nota: "Nadie más conoce la pena o la alegría de un corazón. Un camino que parece bueno puede acabar en muerte; el ingenuo lo cree todo y el prudente mira dónde pisa; el iracundo hace tonterías."}
+    - {v: 20-27, tipo: poesia, nota: "Al pobre lo rechazan hasta sus vecinos y al rico le sobran amigos; es feliz quien se compadece del necesitado. El esfuerzo da provecho y la charla, miseria. Temer a Jehová da seguridad y aparta de la muerte."}
+    - {v: 28-35, tipo: poesia, nota: "El rey se gloría en un pueblo numeroso. La paciencia es discernimiento y la envidia pudre los huesos. Oprimir al pobre ofende a su Hacedor; la justicia enaltece a una nación y el rey favorece al siervo perspicaz."}
+  15:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, nota: "La respuesta suave calma la ira y la áspera la enciende. Jehová lo ve todo, a malos y buenos. Una lengua serena es árbol de vida; el prudente acepta la corrección de su padre y los sabios difunden conocimiento."}
+    - {v: 8-15, tipo: poesia, nota: "Jehová rechaza el sacrificio del malvado y se complace en la oración del recto. La Tumba (Seol) y el lugar de destrucción (Abadón) están a su vista: no son lugares del mapa. El corazón alegre ilumina la cara."}
+    - {v: 16-23, tipo: poesia, nota: "Más vale poco con temor de Jehová que mucho con angustia, y verduras con amor que carne con odio. El colérico enciende peleas; el hijo sabio alegra a su padre; los planes salen con muchos consejeros."}
+    - {v: 24-33, tipo: poesia, nota: "La senda de la vida aparta de la Tumba. Jehová derriba la casa del orgulloso, protege el lindero de la viuda y escucha al justo, que piensa antes de responder. La humildad precede a la honra."}
+  16:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, nota: "El hombre hace sus planes, pero la respuesta y el rumbo los da Jehová, que pesa los motivos. Encomendarle las obras las asegura; el amor leal cubre la culpa y Jehová puede reconciliar a alguien con sus enemigos."}
+    - {v: 10-15, tipo: poesia, nota: "Sobre el rey: debe juzgar con justicia y aborrecer el mal, y valora a quien le habla con rectitud. Su ira anuncia muerte, pero el sabio la apacigua; su favor es como la nube de la lluvia tardía."}
+    - {v: 16-25, tipo: poesia, nota: "Adquirir sabiduría vale más que el oro. El orgullo precede al desastre y la arrogancia, a la caída; más vale ser humilde. Las palabras amables son miel para el alma. Un camino que parece bueno puede llevar a la muerte."}
+    - {v: 26-33, tipo: poesia, nota: "El hambre hace trabajar al obrero. El inútil, el chismoso y el violento siembran daño. Las canas son corona si hay justicia; dominarse vale más que tomar una ciudad. Las suertes se echan, pero la decisión viene de Jehová."}
+  17:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-6, tipo: poesia, nota: "Mejor pan seco con paz que banquetes con riñas. Un siervo sensato puede heredar con los hijos. Jehová prueba los corazones como el fuego prueba los metales; burlarse del pobre ofende a su Hacedor. Los nietos honran a los ancianos."}
+    - {v: 7-14, tipo: poesia, nota: "El soborno parece abrir todas las puertas. Perdonar una falta fomenta el amor y repetirla separa amigos. Una reprensión pesa más en el sensato que cien golpes en el necio. Una riña es agua que se escapa: córtala pronto."}
+    - {v: 15-20, tipo: poesia, nota: "Jehová aborrece absolver al malvado y condenar al justo. El amigo verdadero ama siempre y es un hermano en la desgracia. No es sensato avalar al prójimo; quien ama la pelea y agranda su puerta busca su ruina."}
+    - {v: 21-28, tipo: poesia, nota: "Un hijo necio amarga a su padre y a su madre. La alegría sana y la tristeza seca los huesos. El soborno tuerce la justicia. Quien sabe mide sus palabras; hasta el necio pasa por sabio si calla."}
+  18:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, nota: "Quien se aísla solo busca lo suyo. El necio solo quiere opinar, y su boca le trae golpes y ruina. No hay que favorecer al malvado. El chisme se traga con gusto; el perezoso es hermano del que destruye."}
+    - {v: 10-15, tipo: poesia, nota: "El nombre de Jehová es una torre segura para el justo, mientras el rico confía en su dinero como en una muralla. La soberbia precede a la caída; contestar sin escuchar es necio. El ánimo sostiene en la enfermedad."}
+    - {v: 16-24, tipo: poesia, nota: "Un regalo da acceso a los poderosos. El primero en hablar parece tener razón hasta que interrogan a la otra parte; la suerte zanja pleitos. La lengua tiene poder de vida o muerte; una buena esposa es favor de Jehová."}
+  19:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, nota: "Más vale pobre íntegro que necio mentiroso. El hombre se equivoca por su necedad y luego culpa a Jehová. La riqueza atrae amigos y al pobre lo dejan hasta sus hermanos; el testigo falso tendrá su castigo."}
+    - {v: 8-15, tipo: poesia, nota: "Adquirir sensatez es quererse. El necio no está hecho para el lujo. Pasar por alto una ofensa honra; la ira del rey ruge como un león. La esposa que discute es gotera constante y la prudente es regalo de Jehová."}
+    - {v: 16-23, tipo: poesia, nota: "Quien guarda el mandato conserva la vida. Ayudar al necesitado es prestar a Jehová, que lo devolverá. Hay que corregir al hijo a tiempo. Los hombres hacen muchos planes, pero se cumple el propósito de Jehová; temerle da descanso."}
+    - {v: 24-29, tipo: poesia, nota: "El perezoso no lleva la mano a la boca; golpear al burlón enseña al ingenuo. Maltratar al padre y echar a la madre avergüenza. Sin disciplina se pierde el saber. El testigo inútil desprecia la justicia; al burlón, condena."}
+  20:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, nota: "El vino y el licor engañan a quien se deja llevar. Enfurecer al rey arriesga la vida; evitar riñas honra. El perezoso no ara y luego mendiga. Alguien fiel es difícil de hallar; los hijos del justo son felices."}
+    - {v: 8-15, tipo: poesia, nota: "El rey en su tribunal descubre el mal. Nadie tiene el corazón limpio. Jehová aborrece las pesas desiguales y creó oído y ojo. El comprador desprecia la mercancía y luego presume; el saber vale más que el oro."}
+    - {v: 16-23, tipo: poesia, nota: "A quien avala a un extraño se le toma prenda. Lo obtenido con engaño acaba sabiendo a arena. Planes y guerras con buen consejo. Quien maldice a sus padres se apaga. No hay que vengarse, sino esperar a Jehová."}
+    - {v: 24-30, tipo: poesia, nota: "Jehová dirige los pasos del hombre. Prometer algo sagrado sin pensarlo es una trampa. El rey sabio aparta a los malvados y el amor leal sostiene su trono. La fuerza honra al joven, las canas al anciano; el castigo corrige."}
+  21:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-8, tipo: poesia, nota: "Jehová guía el corazón del rey como a un canal de agua y pesa los motivos; obrar con justicia le agrada más que un sacrificio. Lo ganado mintiendo se esfuma como neblina."}
+    - {v: 9-19, tipo: poesia, nota: "Mejor un rincón de la azotea o el desierto que convivir con una esposa que riñe (v. 9 y 19). Quien no escucha al pobre no será escuchado; quien ama los placeres acaba pobre."}
+    - {v: 20-31, tipo: poesia, nota: "El sabio guarda aceite y bienes y derriba la fortaleza de los fuertes; quien cuida su lengua se ahorra apuros. Ningún plan vale contra Jehová: el caballo se prepara, pero la victoria es suya."}
+  22:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-16, tipo: poesia, nota: "Un buen nombre vale más que la riqueza; Jehová hizo al rico y al pobre. Educar al niño en su camino dura toda la vida, y la vara aparta la necedad."}
+    - {v: 17-21, tipo: poesia, nota: "Empiezan las palabras de los sabios: el maestro pide guardarlas dentro para confiar en Jehová y responder con verdad. Perspicacia las atribuye a otros sabios; La Atalaya de 2006 solo saca de Salomón los capítulos 30 y 31."}
+    - {v: 22-29, tipo: poesia, nota: "No despojar al pobre en la puerta de la ciudad, pues Jehová lo defiende; no juntarse con el iracundo ni salir fiador; no mover los mojones antiguos. El hábil servirá ante reyes."}
+  23:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-8, tipo: poesia, nota: "En la mesa de un rey o de un tacaño hay que frenar el apetito, porque su comida engaña. No agotarse por hacerse rico: la riqueza echa alas como el águila y se va."}
+    - {v: 9-18, tipo: poesia, nota: "No malgastar palabras con el necio ni invadir el campo del huérfano, que tiene un Defensor fuerte. La vara salva al muchacho de la Tumba; el padre se alegra si el hijo es sabio y teme a Jehová."}
+    - {v: 19-28, tipo: poesia, nota: "Evitar a los borrachos y a los glotones, que terminan en harapos; escuchar al padre y no despreciar a la madre anciana; comprar la verdad sin venderla. La prostituta es un pozo angosto."}
+    - {v: 29-35, tipo: poesia, nota: "Retrato del que abusa del vino: quejas, heridas sin motivo y ojos apagados. El vino rojo acaba mordiendo como una víbora; el borracho se siente mecido en el mástil y aún pide otro trago."}
+  24:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-12, tipo: poesia, nota: "No envidiar a los malos. La sabiduría construye y llena la casa; la guerra se gana con muchos consejeros. Rescatar a quien va a la muerte, pues el que examina los corazones paga a cada uno."}
+    - {v: 13-22, tipo: poesia, nota: "La sabiduría es dulce como la miel. El justo cae siete veces y se levanta. No festejar la caída del enemigo; temer a Jehová y al rey, no unirse a rebeldes (según la nota, «ellos dos» son ambos)."}
+    - {v: 23-34, tipo: poesia, nota: "Más dichos de los sabios: no favorecer a nadie al juzgar, responder con franqueza, preparar el campo antes que la casa, no devolver el mal. La viña del perezoso, llena de ortigas, enseña que la pobreza llega como un asaltante."}
+  25:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-7, tipo: poesia, entidades: [evento:hombres-de-ezequias-copian-proverbios-de-salomon, persona:salomon, persona:ezequias], menciona: [lugar:juda, periodo:ezequias], nota: "Encabezamiento de la colección de los capítulos 25 a 29: proverbios de Salomón copiados por los hombres de Ezequías. Dios oculta y los reyes investigan; apartar al malvado afianza el trono; no darse importancia ante el rey."}
+    - {v: 8-15, tipo: poesia, nota: "No correr a pleitear ni revelar confidencias. La palabra oportuna es como manzanas de oro en plata; el mensajero fiel refresca como nieve en la siega; la lengua suave quiebra un hueso."}
+    - {v: 16-28, tipo: poesia, nota: "Comer miel con medida y no cansar al vecino. Dar pan al enemigo es amontonar brasas sobre su cabeza, para ablandarlo, según la nota. Quien no domina su genio es una ciudad sin muralla."}
+  26:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-12, tipo: poesia, nota: "El necio: la honra no le cuadra, como la nieve en verano. A veces conviene no contestarle y a veces sí; vuelve a su necedad como el perro a su vómito (2Pe 2:22). Peor aún quien se cree sabio."}
+    - {v: 13-16, tipo: poesia, nota: "El perezoso inventa un león en la plaza, gira en la cama como la puerta en su quicio y ni siquiera se lleva la comida a la boca."}
+    - {v: 17-28, tipo: poesia, nota: "Meterse en riñas ajenas es agarrar a un perro por las orejas. Sin leña se apaga el fuego y sin calumniador la pelea; las palabras cariñosas de un corazón malo son barniz de plata sobre barro."}
+  27:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-10, tipo: poesia, nota: "No presumir del mañana ni alabarse uno mismo. Más vale la corrección abierta que el amor escondido; las heridas del amigo son leales. Mejor un vecino cerca que un hermano lejos."}
+    - {v: 11-22, tipo: poesia, nota: "El hijo sabio da al padre respuesta ante quien lo desafía. La esposa que riñe es una gotera; el hierro afila al hierro. Seol y Abadón (v. 20, nota) no son lugares del mapa."}
+    - {v: 23-27, tipo: poesia, nota: "Cuidar el rebaño, porque la riqueza y la corona no duran: los corderos dan ropa, los machos cabríos el precio de un campo y las cabras leche para la casa."}
+  28:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-14, tipo: poesia, nota: "El malvado huye sin que lo persigan; el justo está confiado como un león. Mejor pobre íntegro que rico torcido. Quien oculta sus pecados fracasa; quien los confiesa y los deja recibe misericordia."}
+    - {v: 15-28, tipo: poesia, nota: "El gobernante malvado es león que ruge y oso que embiste. Quien corrige acaba más apreciado que quien halaga; quien confía en Jehová prospera y quien da al pobre no pasará necesidad."}
+  29:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-14, tipo: poesia, nota: "Quien se endurece tras muchas correcciones se hunde de golpe. Con justicia el rey da estabilidad al país; el adulador tiende una red. El trono del rey que juzga al pobre con equidad permanece."}
+    - {v: 15-27, tipo: poesia, nota: "La vara y la corrección dan sabiduría; sin visión el pueblo se desboca. Temer a los hombres es un lazo, pero quien confía en Jehová está a salvo. Aquí termina la colección que copiaron los hombres de Ezequías."}
+  30:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, entidades: [persona:agur, persona:jaque, persona:itiel-oyente-de-agur, persona:ucal, relacion:agur/pariente/jaque, relacion:itiel-oyente-de-agur/acompana/agur, relacion:ucal/acompana/agur], nota: "Agur, hijo de Jaqué, habla a Itiel y Ucal: se sabe ignorante, las palabras de Dios son puras y pide ni pobreza ni riqueza. «Mensaje de peso» traduce massá; Perspicacia «Masá» descarta leerlo como lugar de origen."}
+    - {v: 10-17, tipo: poesia, nota: "Generaciones que maldicen a sus padres, se creen puras, miran con arrogancia y devoran al pobre. La sanguijuela y cuatro cosas que nunca se sacian; los cuervos del valle picarán el ojo que desprecia a los padres."}
+    - {v: 18-33, tipo: poesia, nota: "Series de cuatro: sendas que no se entienden, lo que la tierra no soporta, cuatro animales pequeños y sabios (hormiga, damán, langosta, geco) y cuatro de paso majestuoso. Avivar la ira provoca peleas."}
+  31:
+    estado: completo
+    revisado: 2026-09-29
+    tramos:
+    - {v: 1-9, tipo: poesia, entidades: [persona:lemuel], nota: "Palabras del rey Lemuel, mensaje de peso de su madre; Perspicacia no lee massá como reino. Ella no tiene nombre. Pide no dar su vigor a las mujeres, no beber como rey y defender al que no tiene voz."}
+    - {v: 10-31, tipo: poesia, nota: "Poema acróstico, un versículo por letra hebrea: la esposa capaz vale más que los corales, trabaja, compra un campo, ayuda al pobre y teme a Jehová; su esposo es respetado en las puertas."}

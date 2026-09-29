@@ -12,6 +12,7 @@ razon: Perspicacia «Alfeo», núm. 2; Mt 10:3.
 fuentes:
 - it-alfeo
 - mateo-10
+- marcos-3
 no_afirmamos:
 - 'Que Alfeo y Clopas fueran la misma persona: Perspicacia lo da como opinión extendida y probable, no como dato del texto.'
 enlaces:
@@ -23,3 +24,5 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- alfeo-padre-de-mateo

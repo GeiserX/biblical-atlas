@@ -20,6 +20,7 @@ fuentes:
 - 1-samuel-10
 - hch-13
 - si-3
+- salmos-59
 enlaces:
 - titulo: 'Perspicacia: «Saúl»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
@@ -36,5 +37,6 @@ relaciones:
   - it-guibeah
   razon: Perspicacia «Guibeah», núm. 2, dice que era su hogar (1Sa 10:26).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200003847'
+consultado: '2026-09-29'
 estado: verificado

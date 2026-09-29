@@ -13,6 +13,8 @@ fuentes:
 - marcos-1
 - mateo-4
 - mateo-10
+- marcos-3
+- marcos-13
 relaciones:
 - tipo: pariente
   persona: pedro
@@ -65,6 +67,9 @@ relaciones:
   - mateo-10
   - it-andres
   - mateo-4
+  - marcos-1
+  - marcos-3
+  - marcos-13
   razon: Mt 10:2 lo nombra entre los doce apóstoles.
   estado: verificado
 - tipo: pariente

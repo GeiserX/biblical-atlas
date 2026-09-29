@@ -3,7 +3,7 @@ id: quedar
 nombre: Quedar
 nombres:
 - nombre: Quedar
-perspicacia: '1200002579'
+perspicacia: 1200002579#1
 desambiguacion: Quedar hijo de Ismael; la tribu y el país de sus descendientes llevan su nombre.
 resumen: Segundo hijo de Ismael. De él salió una tribu árabe de pastores, clasificada entre los hijos de Oriente, cuyo país
   también se llamó Quedar.
@@ -28,5 +28,9 @@ relaciones:
   - genesis-25
   razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
+  fuente: it-quedar
 consultado: '2026-09-29'
 estado: verificado

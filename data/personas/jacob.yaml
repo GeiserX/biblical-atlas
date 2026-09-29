@@ -42,6 +42,7 @@ fuentes:
 - genesis-48
 - genesis-49
 - genesis-50
+- salmos-105
 enlaces:
 - titulo: 'Perspicacia: «Jacob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
@@ -130,6 +131,8 @@ relaciones:
   - it-jacob
   - genesis-47
   - genesis-46
+  - salmos-105
+  - it-cam
   razon: 'Perspicacia «Jacob», párr. 38 y 41: llegó a Egipto en 1728 y murió allí en 1711, tras 17 años (Gé 47:28).'
   estado: verificado
 - tipo: murio_en
@@ -252,6 +255,8 @@ relaciones:
   - genesis-42
   - genesis-45
   - genesis-46
+  - salmos-105
+  - it-canaan
   razon: 'Gé 37:1: siguió viviendo en Canaán, donde su padre había residido como extranjero.'
   estado: verificado
 - tipo: vivio_en

@@ -28,6 +28,7 @@ fuentes:
 - tnm-tabla
 - judas-1
 - mateo-13
+- marcos-6
 relaciones:
 - tipo: pariente
   persona: santiago-hermano-de-jesus
@@ -45,6 +46,7 @@ relaciones:
   fuentes:
   - it-judas
   - mateo-13
+  - marcos-6
   razon: Mt 13:55 lo nombra entre los hermanos de Jesús; Perspicacia lo identifica con el escritor de la carta.
   estado: verificado
 - tipo: pariente
@@ -54,6 +56,7 @@ relaciones:
   fuentes:
   - it-judas
   - mateo-13
+  - marcos-6
   razon: 'Perspicacia, párr. 23: acompañó a su madre María.'
   estado: verificado
 - tipo: pariente
@@ -63,6 +66,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-jose
+  - marcos-6
   razon: La nota de Mt 13:55 llama a los hermanos de Jesús hijos menores de José y María. Perspicacia «José», núm. 8, lo cuenta
     entre ellos.
   estado: verificado

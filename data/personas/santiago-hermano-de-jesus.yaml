@@ -25,6 +25,7 @@ fuentes:
 - it-santiago-carta
 - galatas-1
 - mateo-13
+- marcos-6
 no_confundir_con:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -39,6 +40,7 @@ relaciones:
   fuentes:
   - it-santiago
   - galatas-1
+  - marcos-6
   razon: 'Gál 1:19 lo llama hermano del Señor; Perspicacia, párr. 10: hijo de José y María.'
   estado: verificado
 - tipo: pariente
@@ -47,6 +49,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-santiago
+  - marcos-6
   razon: 'Perspicacia, párr. 10: hijo de José y María (Mt 13:55).'
   estado: verificado
 - tipo: pariente
@@ -57,6 +60,7 @@ relaciones:
   - it-judas
   - judas-1
   - mateo-13
+  - marcos-6
   razon: Mt 13:55 los nombra a los dos entre los hermanos de Jesús, y en Jud 1 el escritor se presenta como hermano de Santiago.
   estado: verificado
 - tipo: vivio_en
@@ -74,6 +78,7 @@ relaciones:
   fuentes:
   - it-santiago
   - mateo-13
+  - marcos-6
   razon: Perspicacia «Santiago», núm. 4, lo da como hijo de José y María; en Mt 13:55 Jesús es el hijo del carpintero.
   estado: verificado
 - tipo: pariente
@@ -82,6 +87,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-13
+  - marcos-6
   razon: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
   estado: verificado
 - tipo: pariente
@@ -90,6 +96,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-13
+  - marcos-6
   razon: Mt 13:55 nombra juntos a Santiago, José, Simón y Judas como hermanos de Jesús.
   estado: verificado
 - tipo: vivio_en

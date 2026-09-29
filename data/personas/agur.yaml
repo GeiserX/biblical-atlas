@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: agur
+nombre: Agur
+nombres:
+- nombre: Agur
+perspicacia: '1200000137'
+fecha:
+  desde: -1036
+  hasta: -715
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 716 a.e.c. (tiempo narrativo: probablemente entre el reinado de Salomón y el de Ezequías)'
+  nota: 'Rango probable de Perspicacia «Agur». El estudio del libro 20, en cambio, no lo fecha: al no saberse quién fue, dice
+    que su escrito no puede datarse.'
+resumen: Escribió el capítulo 30 de Proverbios, dirigido a Itiel y Ucal. Su padre fue Jaqué; fuera de ese primer versículo,
+  la Biblia no dice nada de él.
+razon: Pr 30:1; Perspicacia «Agur» lo sitúa probablemente entre Salomón y Ezequías, cuyo reinado cierra en 716 la tabla A6-B.
+  El estudio del libro 20 y La Atalaya de 2006 lo cuentan entre los escritores.
+no_afirmamos:
+- 'Que Agur sea otro nombre de Salomón: es una lectura rabínica que Perspicacia menciona sin aceptarla.'
+- 'Que viniera de Masá: según Perspicacia «Masá», en Pr 30:1 esa palabra hebrea significa mensaje de peso.'
+fuentes:
+- it-agur
+- proverbios-30
+- si-proverbios
+- w06-proverbios
+- it-masa
+- tnm-a6-b
+enlaces:
+- titulo: 'Perspicacia: «Agur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000137
+  tipo: perspicacia
+- titulo: Proverbios 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/20/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jaque
+  relacion: padre
+  deducido: false
+  fuentes:
+  - proverbios-30
+  - it-agur
+  razon: Pr 30:1 lo llama hijo de Jaqué.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

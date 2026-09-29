@@ -31,8 +31,8 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Nehemías | 0 de 13 | 0 de 406 | 0 % |
 | Ester | 0 de 10 | 0 de 167 | 0 % |
 | [Job](../../../data/cobertura/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
-| Salmos | 0 de 150 | 0 de 2461 | 0 % |
-| Proverbios | 0 de 31 | 0 de 915 | 0 % |
+| [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
+| [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | Eclesiastés | 0 de 12 | 0 de 222 | 0 % |
 | El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
@@ -53,7 +53,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/cobertura/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
-| Marcos | 0 de 16 | 0 de 661 | 0 % |
+| [Marcos](../../../data/cobertura/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
 | Lucas | 0 de 24 | 0 de 1149 | 0 % |
 | Juan | 0 de 21 | 0 de 866 | 0 % |
 | Hechos | 0 de 28 | 0 de 1003 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 124 de 1189 | 3756 de 31062 | 12 % |
+| **Total** | 321 de 1189 | 7793 de 31062 | 25 % |
 
 ## Capítulos empezados
 

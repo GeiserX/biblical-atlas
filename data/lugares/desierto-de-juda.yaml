@@ -37,12 +37,17 @@ fuentes:
 - mateo-3
 - openbible-geo
 - mateo-4
+- marcos-1
+- salmos-63
 enlaces:
 - titulo: 'Perspicacia: «Judá, Desierto de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002539
   tipo: perspicacia
 - titulo: Mateo 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
+  tipo: biblia
+- titulo: Salmo 63 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/63
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

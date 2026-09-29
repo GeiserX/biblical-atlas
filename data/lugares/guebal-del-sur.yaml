@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guebal-del-sur
+nombre: Guebal
+nombres:
+- nombre: Guebal
+  nota: No es la Guebal fenicia, Biblos. Perspicacia la sitúa por los pueblos con los que la nombra Sl 83:7.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Entre el mar Muerto y Petra
+  geometria:
+    tipo: zona
+    lat: 30.52198
+    lon: 35.55057
+    radio_km: 40
+  estado: alternativa
+  fuentes:
+  - it-guebal
+  - openbible-geo
+  razon: 'Perspicacia: por ir junto a Ammón y Amalec estaría al sur o al este del mar Muerto; algunos eruditos la ponen cerca
+    de Petra.'
+  coord_fuente: openbible:a59b2e2
+  coord_url: https://www.openbible.info/geo/ancient/a59b2e2/gebal-2
+  nota: El radio de 40 km es nuestro.
+resumen: Pueblo o territorio que el Salmo 83 cuenta entre los aliados contra Israel, junto a Ammón y Amalec. No se conoce
+  su sitio exacto.
+razon: Perspicacia «Guebal, guebalitas», núm. 2; Sl 83:7.
+no_afirmamos:
+- 'Que estuviera cerca de Petra: Perspicacia solo recoge esa opinión de algunos eruditos.'
+fuentes:
+- it-guebal
+- openbible-geo
+- salmos-83
+enlaces:
+- titulo: 'Perspicacia: «Guebal, guebalitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001628
+  tipo: perspicacia
+- titulo: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

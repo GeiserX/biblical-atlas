@@ -49,6 +49,22 @@ fuentes:
 - mateo-26
 - mateo-27
 - mateo-28
+- marcos-1
+- marcos-2
+- marcos-3
+- marcos-4
+- marcos-5
+- marcos-6
+- marcos-7
+- marcos-8
+- marcos-9
+- marcos-10
+- marcos-11
+- marcos-12
+- marcos-13
+- marcos-14
+- marcos-15
+- marcos-16
 no_afirmamos:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -72,6 +88,10 @@ relaciones:
   - mateo-13
   - mateo-21
   - mateo-26
+  - marcos-1
+  - marcos-6
+  - marcos-10
+  - marcos-14
   razon: Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).
   estado: verificado
 - tipo: vivio_en
@@ -81,6 +101,7 @@ relaciones:
   - mateo-4
   - mateo-9
   - it-capernaum
+  - marcos-2
   razon: Mt 4:13 dice que se fue a vivir allí y Mt 9:1 la llama «su ciudad»; Perspicacia «Capernaum» (párr. 5 y 7).
   estado: verificado
 - tipo: pariente
@@ -92,6 +113,8 @@ relaciones:
   - mateo-1
   - mateo-12
   - mateo-13
+  - marcos-3
+  - marcos-6
   razon: 'Lu 2:7: María da a luz a su primer hijo.'
   estado: verificado
 - tipo: pariente
@@ -111,6 +134,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-jesucristo
+  - marcos-6
   razon: Mt 13:55 nombra a Santiago entre sus hermanos; Perspicacia lo trata como medio hermano.
   estado: verificado
 - tipo: pariente
@@ -130,6 +154,8 @@ relaciones:
   - mateo-1
   - mateo-21
   - mateo-22
+  - marcos-10
+  - marcos-12
   razon: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
   estado: verificado
 - tipo: pariente
@@ -163,6 +189,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-jose
+  - marcos-6
   razon: Mt 13:55 nombra a José entre sus hermanos; Perspicacia «José», núm. 9, lo llama medio hermano.
   estado: verificado
 - tipo: pariente
@@ -172,6 +199,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-simon
+  - marcos-6
   razon: Mt 13:55 nombra a Simón entre sus hermanos; Perspicacia «Simón», núm. 4, lo llama medio hermano menor.
   estado: verificado
 - tipo: pariente
@@ -181,6 +209,7 @@ relaciones:
   fuentes:
   - mateo-13
   - it-judas
+  - marcos-6
   razon: Mt 13:55 nombra a Judas entre sus hermanos; Perspicacia «Judas», núm. 5, cree que ese hermano escribió la carta de
     Judas.
   estado: verificado
@@ -190,6 +219,7 @@ relaciones:
   fuentes:
   - mateo-27
   - it-golgota
+  - marcos-15
   razon: 'Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.'
   estado: verificado
 enlaces:

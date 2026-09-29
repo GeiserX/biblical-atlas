@@ -11,14 +11,17 @@ lon: 35.37194
 precision: punto
 coord_fuente: openbible:a98e4d7
 coord_url: https://www.openbible.info/geo/ancient/a98e4d7/sidon
-resumen: Antigua ciudad portuaria fenicia; allí Julio dejó a Pablo visitar a sus amigos.
-razon: 'Perspicacia («Sidón, sidonios») describe el lugar; aparece en Hch 27:3. La coordenada es de OpenBible: solo
-  tomamos el punto.'
+resumen: Antigua ciudad portuaria fenicia. Jesús pasó por su distrito cuando curó a la hija de una mujer fenicia; más tarde
+  Julio dejó allí a Pablo ver a sus amigos.
+razon: 'Perspicacia «Sidón, sidonios», apartado del siglo I, describe el lugar y el paso de Jesús (Mr 7:24-31); Pablo, en
+  Hch 27:3. Coordenada de OpenBible: solo tomamos el punto.'
 fuentes:
 - it-sidon
 - hch-27
 - openbible-geo
 - mateo-15
+- marcos-3
+- marcos-7
 enlaces:
 - titulo: 'Perspicacia: «Sidón, sidonios»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113
@@ -26,5 +29,13 @@ enlaces:
 - titulo: Hechos 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen solo hablaba de Pablo; ahora recoge también el paso de Jesús por su distrito (Mr 7:24-31), que Perspicacia
+    «Sidón, sidonios» cuenta.
+  fuente: marcos-7
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora el pasaje de Marcos que añade el resumen.
+  fuente: marcos-7
 consultado: '2026-09-29'
 estado: verificado

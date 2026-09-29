@@ -12,6 +12,7 @@ fuentes:
 - it-bartolome
 - it-natanael
 - mateo-10
+- marcos-3
 enlaces:
 - titulo: 'Perspicacia: «Bartolomé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000569
@@ -26,6 +27,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-10
+  - marcos-3
   razon: Mt 10:3 lo pone entre los doce apóstoles.
   estado: verificado
 - tipo: mismo_que
@@ -35,6 +37,7 @@ relaciones:
   - it-bartolome
   - it-natanael
   - mateo-10
+  - marcos-3
   razon: Los tres primeros Evangelios emparejan a Bartolomé con Felipe y Juan empareja así a Natanael; Perspicacia lo da como
     probable, no como seguro.
   estado: pendiente
