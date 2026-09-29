@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-guerrea-contra-los-pueblos-vecinos
+title: Saúl guerrea contra los pueblos vecinos
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: a lo largo del reinado de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 14047
+places:
+- filistea
+- moab
+- ammon
+- edom
+- zoba
+- amalec
+people:
+- saul
+present: []
+passages:
+- 1Sa 14:47, 48
+- 1Sa 14:52
+summary: Firme ya en el trono, Saúl lucha contra Moab, Ammón, Edom, los reyes de Zobá, los filisteos y los amalequitas, y
+  libra a Israel de quienes lo saqueaban. Contra los filisteos pelea todo su reinado.
+reason: '1Sa 14:47, 48, 52; Perspicacia «Zobá». Resume muchas campañas sin sitio concreto, así que no sitúa a nadie. Fecha:
+  todo su reinado, de su unción (1117, estudio 3) a su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-14
+- it-zoba
+- it-saul
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

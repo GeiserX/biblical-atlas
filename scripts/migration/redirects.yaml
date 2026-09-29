@@ -273,6 +273,11 @@
   to: samuel/tie/eli/custodian
   removed_on: '2026-09-29'
   reason: '1Sa 1:25 y 3:1: Ana llevó el niño a Elí, y Samuel servía bajo su supervisión. Elí es su custodio.'
+- from: samuel/accompanies/eli
+  to: samuel/tie/eli/custodian
+  removed_on: '2026-09-29'
+  reason: '1Sa 2:11: Samuel servía a Jehová a cargo de Elí. Es el mismo trato que el de custodio, escrito del otro lado;
+    «ayudante de» no es una palabra del vocabulario.'
 - from: maria-magdalena/accompanies/jesus
   to: maria-magdalena/disciple_of/jesus
   removed_on: '2026-09-29'
@@ -293,3 +298,49 @@
   to: timna-concubina-de-elifaz/same_as/timna-hija-de-seir
   removed_on: '2026-09-29'
   reason: La misma identidad queda escrita en la ficha de la concubina de Elifaz, cuyo id va primero.
+- from: doeg/accompanies/saul
+  to: doeg/tie/saul/master
+  removed_on: '2026-09-29'
+  reason: '1Sa 21:7: jefe de los pastores de Saúl. Señor y siervo es tie con master en la ficha de quien sirve; «siervo de»
+    no es una palabra del vocabulario.'
+- from: abner/accompanies/saul
+  to: abner/tie/saul/master
+  removed_on: '2026-09-29'
+  reason: '1Sa 14:50: jefe del ejército de Saúl. Como Ficol con Abimélec, es tie con master y el encargo va en la razón.'
+- from: david/accompanies/saul
+  to: david/tie/saul/master
+  removed_on: '2026-09-29'
+  reason: 1Sa 16:21 y 22:14, escudero y jefe de la guardia de Saúl. Es tie con master y el encargo va en la razón.
+- from: david/accompanies/akis
+  to: david/tie/akis/master
+  removed_on: '2026-09-29'
+  reason: '1Sa 27:5, 12: David se llama siervo de Akís. Es tie con master en la ficha de quien sirve.'
+- from: gad-profeta/accompanies/david
+  to: david/tie/gad-profeta/adviser
+  removed_on: '2026-09-29'
+  reason: '1Sa 22:5: Gad aconseja a David. El consejero va en la ficha de quien recibe el consejo, con adviser; que Gad era
+    profeta lo dice su holds_office.'
+- from: ahiya-hijo-de-ahitub/same_as/ahimelec-hijo-de-ahitub
+  to: ahimelec-hijo-de-ahitub/same_as/ahiya-hijo-de-ahitub
+  removed_on: '2026-09-29'
+  reason: La posible identidad queda escrita en la ficha de Ahimélec, cuyo id va primero, con certainty possible.
+- from: bedan-libertador/same_as/barac
+  to: barac/same_as/bedan-libertador
+  removed_on: '2026-09-29'
+  reason: La posible identidad queda escrita en la ficha de Barac, cuyo id va primero, con certainty possible.
+- from: joel-hijo-de-samuel/lived_in/beer-seba
+  to: joel-hijo-de-samuel/holds_office/beer-seba/judge
+  removed_on: '2026-09-29'
+  reason: 1Sa 8:2 dice dónde juzgaba, no dónde vivía. Es un cargo con su lugar.
+- from: abias-hijo-de-samuel/lived_in/beer-seba
+  to: abias-hijo-de-samuel/holds_office/beer-seba/judge
+  removed_on: '2026-09-29'
+  reason: 1Sa 8:2 dice dónde juzgaba, no dónde vivía. Es un cargo con su lugar.
+- from: ezequias-antepasado-de-sofonias/same_as/ezequias
+  to: ezequias/same_as/ezequias-antepasado-de-sofonias
+  removed_on: '2026-09-29'
+  reason: La misma identidad queda escrita en la ficha del rey Ezequías, cuyo id va primero.
+- from: ciaxares/accompanies/nabopolasar
+  to: ciaxares/tie/nabopolasar/ally
+  removed_on: '2026-09-29'
+  reason: 'Perspicacia «Medos, Media», párr. 12: se alió con Nabopolasar contra Asiria. Es una alianza, no una compañía.'

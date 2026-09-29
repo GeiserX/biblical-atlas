@@ -1,0 +1,101 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-saul
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#2
+disambiguation: Jonatán hijo del rey Saúl; no el levita que fue sacerdote de Miqueas y de los danitas, ni los demás Jonatán
+  que numera Perspicacia.
+distinct_from:
+- jonatan-levita
+summary: Hijo mayor del rey Saúl, guerrero valiente y amigo leal de David. Venció a los filisteos en Gueba y en Micmash, pactó
+  con David y lo defendió ante su padre. Murió con Saúl en el monte Guilboa en 1078 a.e.c.
+reason: Perspicacia «Jonatán», núm. 2; 1Sa 13:3; 14:13-15; 18:1-4; 20:30-34; 31:2.
+sources:
+- it-jonatan
+- 1-samuel-13
+- 1-samuel-14
+- 1-samuel-18
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-23
+- 1-samuel-31
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  type: perspicacia
+- title: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  type: bible
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+- title: 1 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/18
+  type: bible
+- title: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  type: bible
+- title: 1 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/20
+  type: bible
+- title: 1 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/23
+  type: bible
+- title: 1 Samuel 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/31
+  type: bible
+relations:
+- type: kin
+  person: saul
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-13
+  - it-jonatan
+  - 1-samuel-14
+  - 1-samuel-19
+  - 1-samuel-20
+  - 1-samuel-23
+  - 1-samuel-31
+  reason: 1Sa 13:16, 22 lo llama hijo de Saúl.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahinoam-hija-de-ahimaaz
+  word: mother
+  inferred: true
+  sources:
+  - it-ahinoam
+  - it-jonatan
+  - 1-samuel-14
+  reason: Perspicacia «Jonatán», núm. 2, lo hace hijo de Ahinoam; «Ahinoam», núm. 1, dice que debió de ser su madre. 1Sa 14:49,
+    50 no lo dice.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: friend
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - 1-samuel-19
+  - it-jonatan
+  - 1-samuel-20
+  - 1-samuel-23
+  reason: '1Sa 18:1, 3: nace entre los dos una gran amistad y hacen un pacto; en 19:2 Jonatán lo protege.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: monte-guilboa
+  inferred: false
+  sources:
+  - 1-samuel-31
+  - it-guilboa
+  - it-jonatan
+  reason: '1Sa 31:1, 2, 8: los filisteos lo mataron en el monte Guilboa, en la batalla de 1078 (Perspicacia «Jonatán», núm.
+    2).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

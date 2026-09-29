@@ -12,6 +12,7 @@ date:
 narrative_order:
   series: jueces
   order: 1001
+  after: muerte-de-josue
 places: []
 people: []
 present: []
@@ -35,5 +36,9 @@ history:
   change: 'El límite final pasa de 1117 a c. 1400 a.e.c.: Perspicacia «Adoni-bézeq» pone la campaña poco después de la muerte
     de Josué, y el suceso debe ir antes de los jueces, como Jue 19-21 («Jueces, Libro de»).'
   source: it-adoni-bezeq
+- date: '2026-09-29'
+  change: 'Va después de la muerte de Josué (after: muerte-de-josue), como dice Jue 1:1; sin ese enlace la línea de tiempo
+    podía empezarlo antes de que Josué muriera, dentro del mismo año.'
+  source: jueces-1
 checked_on: '2026-09-29'
 status: verified

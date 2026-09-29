@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zeror
+name: Zeror
+names:
+- name: Zeror
+perspicacia: '1200004714'
+summary: Benjamita de la genealogía de Quis, antepasado del rey Saúl. Su padre fue Becorat y su hijo, Abiel. No sale en ningún
+  otro pasaje.
+reason: Perspicacia «Zeror»; 1Sa 9:1.
+sources:
+- it-zeror
+- 1-samuel-9
+links:
+- title: 'Perspicacia: «Zeror»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004714
+  type: perspicacia
+- title: 1 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/9
+  type: bible
+relations:
+- type: kin
+  person: becorat
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-9
+  - it-zeror
+  reason: 1Sa 9:1 lo da como hijo de Becorat, y así lo recoge Perspicacia «Zeror».
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

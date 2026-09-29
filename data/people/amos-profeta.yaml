@@ -21,6 +21,13 @@ sources:
 - amos-1
 - amos-7
 - tnm-tabla
+- it-amos-libro
+- si-amos
+- amos-3
+- w04-proclamemos-con-valor
+- it-sicomoro
+- amos-8
+- amos-9
 links:
 - title: 'Perspicacia: «Amós»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000246
@@ -28,6 +35,9 @@ links:
 - title: Amós 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
   type: bible
+- title: 'Perspicacia: «Amós, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000247
+  type: perspicacia
 relations:
 - type: lived_in
   place: tecoa
@@ -35,9 +45,11 @@ relations:
   sources:
   - it-amos
   - amos-1
+  - si-amos
   reason: Am 1:1 lo sitúa entre los ganaderos de Tecoa.
   checked_on: '2026-09-29'
   status: verified
+perspicacia: 1200000246#1
 checked_on: '2026-09-29'
 status: verified
 distinct_from:

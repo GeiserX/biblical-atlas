@@ -1,0 +1,43 @@
+# biblical-earth: fuentes de la cobertura de habacuc. Esquema en docs/investigacion/README.md.
+it-habacuc-libro:
+  title: Habacuc, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001790
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+si-habacuc:
+  title: 'Libro bíblico número 35: Habacuc'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990096
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+w00-inicuos:
+  title: ¿Cuánto tiempo les queda a los inicuos?
+  work: La Atalaya (1 de febrero de 2000)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2000083
+  level: 1
+  published: 2000
+  checked_on: '2026-09-29'
+w00-jehova-no-tardara:
+  title: Jehová no tardará
+  work: La Atalaya (1 de febrero de 2000)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2000084
+  level: 1
+  published: 2000
+  checked_on: '2026-09-29'
+it-cusan:
+  title: Cusán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001090
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+w00-gozosos-en-dios:
+  title: Gozosos en el Dios de nuestra salvación
+  work: La Atalaya (1 de febrero de 2000)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2000085
+  level: 1
+  published: 2000
+  checked_on: '2026-09-29'

@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joel-hijo-de-samuel
+name: Joel
+names:
+- name: Joel
+perspicacia: 1200002481#5
+disambiguation: Primogénito del profeta Samuel; no Joel el profeta, hijo de Petuel, ni los otros Joel que numera Perspicacia.
+distinct_from:
+- joel-profeta
+summary: Hijo mayor de Samuel. Su padre, ya anciano, lo hizo juez en Beer-Seba junto con su hermano Abías, pero buscó ganancias
+  injustas, aceptó sobornos y torció la justicia.
+reason: Perspicacia «Joel», núm. 5; 1Sa 8:1-5. Perspicacia añade que en 1Cr 6:28 el texto masorético lee Vasni por un error
+  de copia.
+sources:
+- it-joel
+- 1-samuel-8
+links:
+- title: 'Perspicacia: «Joel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002481
+  type: perspicacia
+- title: 1 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/8
+  type: bible
+relations:
+- type: kin
+  person: samuel
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-8
+  reason: 1Sa 8:1, 2 lo da como el hijo mayor de Samuel.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abias-hijo-de-samuel
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-8
+  reason: 1Sa 8:2 nombra a Abías como el segundo hijo de Samuel.
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: beer-seba
+  office: judge
+  inferred: false
+  sources:
+  - 1-samuel-8
+  reason: '1Sa 8:2: Joel y Abías eran jueces en Beer-Seba.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

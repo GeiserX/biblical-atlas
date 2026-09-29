@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ana-hace-un-voto-en-silo
+title: Ana pide un hijo en Siló y hace un voto
+date:
+  from: -1179
+  to: -1179
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1180 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 1001
+places:
+- silo
+- ramataim-zofim
+people:
+- ana-madre-de-samuel
+- elcana-hijo-de-jeroham
+- penina
+- eli
+passages:
+- 1Sa 1:1-18
+summary: En la visita anual a Siló, Ana, estéril y humillada por Peniná, llora y ora en silencio. Promete dar a Jehová el
+  hijo que le pide. Elí la cree borracha, pero al oírla le desea que Dios se lo conceda.
+reason: La tabla de los libros hace empezar 1 Samuel hacia 1180 a.e.c., y Perspicacia «Samuel, Libros de» dice que el libro
+  arranca con el nacimiento de Samuel. El voto es de poco antes.
+sources:
+- 1-samuel-1
+- tnm-tabla
+- it-samuel-libros
+- it-ana
+- it-eli
+links:
+- title: 1 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

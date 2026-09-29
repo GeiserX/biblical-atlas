@@ -30,5 +30,15 @@ relations:
   reason: Su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:13-16; Perspicacia «Joab», núm. 2).
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: zeruya
+  word: mother
+  inferred: false
+  sources:
+  - 1-samuel-26
+  - it-zeruya
+  reason: 1Sa 26:6 llama a Abisái hijo de Zeruyá y hermano de Joab; Perspicacia «Zeruyá» la da por madre de los dos.
+  checked_on: '2026-09-29'
+  status: verified
 checked_on: '2026-09-29'
 status: verified

@@ -4,17 +4,18 @@ name: Samuel
 names:
 - name: Samuel
 date:
-  from: -1116
-  to: -1089
+  from: -1179
+  to: -1079
   precision: range
   approx: true
-  type: anchored
+  type: narrative
   chronology: tnm
-  text: 1117-c. 1090 a.e.c.
-summary: Profeta levita, hijo de Elqaná y Ana, criado en el tabernáculo de Siló. Juzgó a Israel desde Ramá, ungió a Saúl y
+  text: 'c. 1180-c. 1080 a.e.c. (tiempo narrativo: de su niñez en Siló a su muerte, antes de que David se refugie en Gat,
+    1Sa 25:1)'
+summary: Profeta levita, hijo de Elcaná y Ana, criado en el tabernáculo de Siló. Juzgó a Israel desde Ramá, ungió a Saúl y
   después a David. Murió antes de que David reinara.
-reason: 'Perspicacia «Samuel», párr. 1, 2, 6, 7, 10 y 11. Fechas: el estudio 3 pone la unción de Saúl en 1117 y la Tabla de
-  los libros cierra Rut hacia 1090.'
+reason: Perspicacia «Samuel», párr. 1-4, 6, 7, 10, 11. Profeta antes de ungir a Saúl en 1117 (1Sa 3; estudio 3). Vive de c.
+  1180 (tabla de libros) hasta c. 1080, antes de que David se refugie en Gat (1Sa 25:1).
 sources:
 - it-samuel
 - 1-samuel-3
@@ -22,6 +23,22 @@ sources:
 - si-3
 - tnm-tabla
 - salmos-99
+- 1-samuel-1
+- 1-samuel-2
+- it-jonatan
+- 1-samuel-7
+- it-jefte
+- 1-samuel-8
+- 1-samuel-9
+- 1-samuel-11
+- 1-samuel-12
+- 1-samuel-13
+- 1-samuel-15
+- it-rama
+- 1-samuel-16
+- 1-samuel-19
+- 1-samuel-25
+- 1-samuel-28
 links:
 - title: 'Perspicacia: «Samuel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003824
@@ -30,9 +47,78 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/3
   type: bible
 perspicacia: '1200003824'
+history:
+- date: '2026-09-29'
+  change: El nombre del padre pasa a la grafía de la TNM, Elcaná (1Sa 1:1); Elqaná es la de Perspicacia.
+  source: 1-samuel-1
+- date: '2026-09-29'
+  change: 'Empezaba en 1117, pero 1Sa 3 lo muestra profeta en Siló en vida de Elí: ahora arranca c. 1180, inicio de 1 Samuel,
+    y acaba con su muerte, anterior a la de Saúl en 1078 (1Sa 25:1).'
+  source: 1-samuel-3
+- date: '2026-09-29'
+  change: La razón explica la nueva fecha de su vida, de c. 1180 a su muerte antes que Saúl.
+  source: 1-samuel-3
+- date: '2026-09-29'
+  change: 'Acababa en 1078, con la muerte de Saúl. Ahora acaba c. 1080: muere antes de que David se refugie en Gat, donde
+    pasa dieciséis meses hasta esa muerte.'
+  source: 1-samuel-25
 checked_on: '2026-09-29'
 status: verified
 relations:
+- type: kin
+  person: elcana-hijo-de-jeroham
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: '1Sa 1:19, 20: Ana concibió de Elcaná y dio a luz a Samuel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ana-madre-de-samuel
+  word: mother
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  reason: '1Sa 1:20 y 2:19: Ana lo dio a luz y es llamada su madre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: ramataim-zofim
+  inferred: true
+  sources:
+  - it-rama
+  - 1-samuel-1
+  reason: 'Perspicacia «Ramá», núm. 5: allí nació Samuel. 1Sa 1:19, 20 cuenta que Ana concibió tras volver a su casa de Ramá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: silo
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  - 1-samuel-3
+  reason: '1Sa 1:24, 28 y 2:11, 18: Ana lo dejó en Siló, donde servía delante de Jehová.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ramataim-zofim
+  inferred: false
+  sources:
+  - 1-samuel-7
+  - it-rama
+  - 1-samuel-15
+  - 1-samuel-16
+  - 1-samuel-19
+  - it-saul
+  - 1-samuel-25
+  - it-samuel
+  - 1-samuel-28
+  reason: '1Sa 7:17: allí estaba su casa y allí levantó un altar; Perspicacia «Ramá», núm. 5.'
+  checked_on: '2026-09-29'
+  status: verified
 - type: tie
   person: eli
   word: custodian
@@ -42,6 +128,7 @@ relations:
   - 1-samuel-1
   - 1-samuel-3
   - it-samuel
+  - 1-samuel-2
   reason: '1Sa 1:24-28: Ana lo lleva de niño a Elí, en Siló; 1Sa 3:1: servía a Jehová bajo su supervisión. Perspicacia «Samuel»
     dice que lo dejó a su cuidado.'
   checked_on: '2026-09-29'
@@ -65,3 +152,6 @@ relations:
     7:15-17).
   checked_on: '2026-09-29'
   status: verified
+not_claimed:
+- 'Que Samuel volviera de la muerte para hablar con Saúl en En-Dor: Perspicacia «Saúl» dice que lo que dijo la médium era
+  de origen demoníaco.'

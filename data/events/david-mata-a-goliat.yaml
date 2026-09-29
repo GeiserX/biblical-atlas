@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-mata-a-goliat
+title: David mata a Goliat
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+narrative_order:
+  series: 1-samuel
+  order: 17012
+places:
+- valle-de-ela
+- belen
+- gat
+- ecron
+- saaraim
+- jerusalen
+people:
+- david
+- goliat
+- saul
+- jese
+- eliab-hijo-de-jese
+- abinadab-hijo-de-jese
+- sama-hijo-de-jese
+roles:
+  goliat: died
+present:
+- david
+- goliat
+- saul
+- eliab-hijo-de-jese
+- abinadab-hijo-de-jese
+- sama-hijo-de-jese
+passages:
+- 1Sa 17:12-54
+summary: Jesé manda a David con víveres para sus hermanos. En el campamento oye a Goliat, se ofrece a Saúl y lo tumba de una
+  pedrada. Israel persigue a los filisteos hasta Gat y Ecrón; David lleva la cabeza a Jerusalén.
+reason: 'Sin año en jw.org: entre 1107 y 1078, como la unción (estudio 3; Perspicacia «Azeqá», párr. 3). «Seamos valientes»,
+  cap. 23, lo cree todavía adolescente. Perspicacia «Goliat», párr. 3 y 4.'
+sources:
+- 1-samuel-17
+- si-3
+- it-azeqa
+- it-goliat
+- it-david
+- it-elah
+- wcg-se-enfrento-a-un-gigante
+links:
+- title: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  type: bible
+- title: 'Perspicacia: «Goliat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001739
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

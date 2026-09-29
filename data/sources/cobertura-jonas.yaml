@@ -1,0 +1,22 @@
+# biblical-earth: fuentes de la cobertura de jonas. Esquema en docs/investigacion/README.md.
+it-amitai:
+  title: Amitai
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000231
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-jonas-libro:
+  title: Jonás, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002504
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+si-jonas:
+  title: 'Libro bíblico número 32: Jonás'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990093
+  level: 1
+  published: null
+  checked_on: '2026-09-29'

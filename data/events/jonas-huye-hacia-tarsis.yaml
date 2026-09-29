@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonas-huye-hacia-tarsis
+title: Jonás huye hacia Tarsis en vez de ir a Nínive
+date:
+  from: -843
+  to: -843
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 844 a.e.c.
+narrative_order:
+  series: jonas
+  order: 1001
+places:
+- jope
+- tarsis
+- ninive
+people:
+- jonas-profeta
+present:
+- jonas-profeta
+passages:
+- Jon 1:1-3
+- Jon 4:2
+summary: 'Jehová manda a Jonás, hijo de Amitái, a anunciar su juicio contra Nínive. Él escapa en dirección contraria: baja
+  al puerto de Jope, paga el pasaje de un barco que va a Tarsis y sube a bordo.'
+reason: 'Jon 1:1-3 y 4:2. Año c. 844: «Toda Escritura», libro 32, párr. 2 (inicio del reinado de Jeroboán II), el estudio 3
+  y Perspicacia «Tarsis». «Jonás, Libro de», párr. 1, solo da ese reinado (c. 844-804).'
+sources:
+- jonas-1
+- jonas-4
+- it-jonas
+- it-jonas-libro
+- si-jonas
+- si-3
+- it-tarsis
+- it-jope
+links:
+- title: Jonás 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1
+  type: bible
+- title: 'Perspicacia: «Jonás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002503
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

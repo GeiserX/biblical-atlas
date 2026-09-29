@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sifmot
+name: Sifmot
+names:
+- name: Sifmot
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 30 km de Estemoa
+  geometry:
+    type: zone
+    lat: 31.400792
+    lon: 35.067075
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sifmot
+  - openbible-geo
+  reason: Perspicacia la da por ciudad de Judá sin ubicar. OpenBible solo la pone a menos de 30 km de As-Samuʽ, la antigua
+    Estemoa.
+  coord_source: openbible:a077262
+  coord_url: https://www.openbible.info/geo/ancient/a077262/siphmoth
+summary: Ciudad de Judá por donde anduvo David cuando huía de Saúl. Le mandó parte del botín de los amalequitas. Hoy no se
+  sabe dónde estaba.
+reason: Perspicacia «Sifmot»; 1Sa 30:26-28, 31.
+sources:
+- it-sifmot
+- openbible-geo
+- 1-samuel-30
+links:
+- title: 'Perspicacia: «Sifmot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004143
+  type: perspicacia
+- title: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  type: bible
+checked_on: '2026-09-29'
+status: verified

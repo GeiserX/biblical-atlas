@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tohu
+name: Tohu
+names:
+- name: Tohu
+perspicacia: '1200004442'
+summary: Antepasado levita de Samuel, hijo de Zuf y padre de Elihú. Perspicacia cree que las Crónicas lo llaman Náhat y Tóah.
+reason: Perspicacia «Tohu»; 1Sa 1:1.
+sources:
+- it-tohu
+- 1-samuel-1
+links:
+- title: 'Perspicacia: «Tohu»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004442
+  type: perspicacia
+not_claimed:
+- 'Que los Náhat y Tóah de 1Cr 6 sean con seguridad este Tohu: Perspicacia dice «al parecer».'
+relations:
+- type: kin
+  person: zuf
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: '1Sa 1:1: Tohu era hijo de Zuf.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

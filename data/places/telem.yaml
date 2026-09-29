@@ -3,6 +3,8 @@ id: telem
 name: Télem
 names:
 - name: Télem
+- name: Telaim
+  note: 1Sa 15:4. Perspicacia «Telaim» cree que es el mismo lugar que Télem.
 type: city
 lat: 31.142053
 lon: 34.91217
@@ -10,15 +12,29 @@ precision: uncertain
 coord_source: openbible:a6ef6a9
 coord_url: https://www.openbible.info/geo/ancient/a6ef6a9/telem
 coord_note: Khirbet Abu Tulul, primera identificación de OpenBible; Perspicacia no la sitúa.
-summary: Ciudad del sur de Judá. Quizá es la misma ciudad de 1Sa 15:4, donde Saúl reunió a su ejército.
-reason: 'Perspicacia «Télem», núm. 2; Jos 15:24. OpenBible: solo el punto.'
+summary: Ciudad del sur de Judá. Al parecer es la Telaim de 1Sa 15:4, donde Saúl contó a su ejército antes de atacar a los
+  amalequitas.
+reason: 'Perspicacia «Télem», núm. 2, y «Telaim»; Jos 15:24; 1Sa 15:4. OpenBible: solo el punto.'
 sources:
 - it-telem
 - openbible-geo
 - josue-15
+- it-telaim
+- 1-samuel-15
 links:
 - title: 'Perspicacia: «Télem»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004351
   type: perspicacia
+- title: 'Perspicacia: «Telaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004348
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Telaim pasa a nombres: Perspicacia «Telaim» la da, al parecer, por Télem, y OpenBible pone 1Sa 15:4 en la misma
+    ficha.'
+  source: 1-samuel-15
+- date: '2026-09-29'
+  change: La razón añade el artículo «Telaim» y 1Sa 15:4.
+  source: 1-samuel-15
 checked_on: '2026-09-29'
 status: verified

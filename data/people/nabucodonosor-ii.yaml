@@ -39,5 +39,26 @@ relations:
   reason: Gobernó desde Babilonia, que él mismo embelleció (Da 4:29-30).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: nabopolasar
+  word: father
+  inferred: true
+  sources:
+  - it-nabucodonosor
+  - it-medos
+  reason: Perspicacia «Nabucodonosor», párr. 1, y «Medos, Media», párr. 12, lo hacen hijo de Nabopolasar; la Biblia no nombra
+    a su padre.
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: nabopolasar
+  inferred: true
+  sources:
+  - it-nabucodonosor
+  reason: 'Perspicacia «Nabucodonosor», párr. 1 y 3: segundo rey neobabilonio; al saber que su padre había muerto regresó a
+    Babilonia y ocupó el trono.'
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-29'
 status: verified

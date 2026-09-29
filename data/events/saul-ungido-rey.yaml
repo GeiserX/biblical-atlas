@@ -10,21 +10,24 @@ date:
   chronology: tnm
   text: 1117 a.e.c.
 places:
-- mizpa-de-benjamin
+- zuf
 people:
 - saul
 - samuel
 passages:
-- 1Sa 10:1
-- 1Sa 10:17-24
+- 1Sa 9:26, 27
+- 1Sa 10:1-8
 - Hch 13:21
-summary: Samuel unge en privado a Saúl, que buscaba las asnas de su padre. Luego, en Mizpá, la suerte lo señala ante el pueblo,
-  que lo aclama como primer rey.
-reason: El estudio 3 fecha la unción en 1117; Perspicacia «Saúl», párr. 3-4, narra la unción y la elección en Mizpá.
+summary: Al amanecer, a las afueras de la ciudad de Zuf, Samuel derrama aceite sobre la cabeza de Saúl, lo besa y le anuncia
+  tres señales que le probarán que Jehová lo ha elegido como líder de su pueblo.
+reason: El estudio 3 fecha en 1117 a.e.c. que Samuel unge rey a Saúl; 1Sa 9:26-10:8; Perspicacia «Saúl», apartado «Ungido por
+  rey», y «Zuf», núm. 2. Zuf no tiene punto.
 sources:
 - si-3
 - it-saul
 - 1-samuel-10
+- 1-samuel-9
+- it-zuf
 links:
 - title: 'Perspicacia: «Saúl»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
@@ -33,5 +36,22 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10
   type: bible
 search: Saúl ungido rey
+history:
+- date: '2026-09-29'
+  source: 1-samuel-10
+  change: Samuel unge a Saúl a las afueras de una ciudad de Zuf (1Sa 9:27-10:1), no en Mizpá. La elección en Mizpá pasa a
+    su propio suceso.
+- date: '2026-09-29'
+  source: 1-samuel-10
+  change: Los pasajes pasan a ser los de la unción y sus señales; 1Sa 10:17-24 va al suceso saul-elegido-rey-en-mizpa.
+- date: '2026-09-29'
+  source: 1-samuel-10
+  change: El resumen se ciñe a la unción en privado; lo de Mizpá va en su propio suceso.
+- date: '2026-09-29'
+  source: 1-samuel-10
+  change: La razón ya no mezcla la unción con la elección en Mizpá.
+narrative_order:
+  series: 1-samuel
+  order: 9026
 checked_on: '2026-09-29'
 status: verified

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-hombre-de-dios-anuncia-el-juicio-contra-la-casa-de-eli
+title: Un hombre de Dios anuncia el juicio contra la casa de Elí
+date:
+  from: -1179
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: en la vejez de Elí, antes de la captura del Arca)'
+narrative_order:
+  series: 1-samuel
+  order: 2027
+places:
+- silo
+people:
+- eli
+passages:
+- 1Sa 2:27-36
+summary: Un profeta sin nombre dice a Elí que Jehová quitará el poder a su familia por honrar a sus hijos más que a Él. Hofní
+  y Finehás morirán el mismo día, y Dios elegirá un sacerdote fiel.
+reason: 'El texto no nombra el lugar; Elí servía en el tabernáculo de Siló, la morada de la que habla el mensaje (Perspicacia
+  «Elí, I», párr. 4). Fecha: antes de la unción de Saúl en 1117 (estudio 3).'
+sources:
+- 1-samuel-2
+- si-3
+- tnm-tabla
+- it-eli
+links:
+- title: 1 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

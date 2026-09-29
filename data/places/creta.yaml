@@ -4,21 +4,25 @@ name: Creta
 names:
 - name: Creta
 - name: Caftor
-  note: La nota de Dt 2:23 dice que Caftor es Creta, de donde salieron los caftorim.
+  note: La TNM dice Creta en Am 9:7; en Jer 47:4 conserva Caftor y su nota al pie la identifica con Creta. Perspicacia «Caftor,
+    caftorim» recoge que la mayoría de los eruditos la tienen por Creta.
 type: island
 lat: 35.30972
 lon: 24.89333
 precision: point
 coord_source: openbible:a26aa94
 coord_url: https://www.openbible.info/geo/ancient/a26aa94/crete
-summary: Quinta isla del Mediterráneo en tamaño, al sureste de Grecia. Hacia 58, el barco que llevaba preso a Pablo costeó
-  su lado sur hasta Bellos Puertos; más tarde Tito se quedó allí para nombrar ancianos.
-reason: 'Perspicacia «Creta, cretenses», párr. 1 y apartado de la actividad de Pablo; Hch 27:7-21; Tit 1:5. La coordenada es
-  de OpenBible: solo tomamos el punto.'
+summary: Quinta isla del Mediterráneo en tamaño, al sureste de Grecia. Perspicacia la tiene por la Caftor desde la que los
+  filisteos pasaron a Canaán. Tito se quedó allí para nombrar ancianos.
+reason: 'Perspicacia «Creta, cretenses», párr. 1 y 2, y «Caftor, caftorim»; Am 9:7 y Tit 1:5. La coordenada es de OpenBible:
+  solo tomamos el punto.'
 sources:
 - it-creta
 - tito-1
 - openbible-geo
+- amos-9
+- it-caftor
+- it-filistea
 - hch-27
 - deuteronomio-2
 - it-caftor
@@ -30,6 +34,12 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
   type: bible
 history:
+- date: '2026-09-29'
+  change: Se añade que Perspicacia identifica Creta con Caftor, de donde los filisteos llegaron a Canaán (Am 9:7).
+  source: amos-9
+- date: '2026-09-29'
+  change: La razón cita ahora Am 9:7 y Perspicacia «Caftor, caftorim», que sostienen el nuevo dato del resumen.
+  source: it-caftor
 - date: '2026-09-29'
   change: El resumen solo hablaba de Tito; ahora recoge el paso del barco de Pablo por la costa sur (Hch 27:7-21), que Perspicacia
     «Creta, cretenses» cuenta.

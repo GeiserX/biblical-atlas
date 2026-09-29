@@ -56,5 +56,9 @@ relations:
   reason: Huyó a Lakís y allí lo mataron (2Re 14:19).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200000224#2
+disambiguation: Rey de Judá, hijo de Jehoás; no es el sacerdote de Betel que se enfrentó al profeta Amós.
+checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- amasias-sacerdote-de-betel

@@ -6,6 +6,9 @@ names:
 - name: Parán
 - name: Región montañosa de Parán
   note: Así lo llama Dt 33:2. Perspicacia dice que su parte central es montañosa, de 600 a 750 m de altura.
+- name: Monte Parán
+  note: Así lo llama Hab 3:3. Perspicacia lo compara con la región montañosa de Dt 33:2, la sección central del desierto,
+    de 600 a 750 m.
 type: desert
 lat: 30.303218
 lon: 34.776667
@@ -26,6 +29,8 @@ sources:
 - it-espias
 - deuteronomio-1
 - deuteronomio-33
+- 1-samuel-25
+- habacuc-3
 links:
 - title: 'Perspicacia: «Parán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003380

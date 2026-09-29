@@ -47,5 +47,8 @@ relations:
   reason: Ismael lo mató en Mizpá (Jer 41:1-3).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200001632#4
+checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- guedalias-hijo-de-amarias

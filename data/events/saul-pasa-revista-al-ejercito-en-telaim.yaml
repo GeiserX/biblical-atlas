@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-pasa-revista-al-ejercito-en-telaim
+title: Saúl cuenta a su ejército en Telaim
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+narrative_order:
+  series: 1-samuel
+  order: 15004
+places:
+- telem
+people:
+- saul
+passages:
+- 1Sa 15:4
+summary: 'Saúl reúne a sus tropas y las cuenta en Telaim: doscientos mil soldados de a pie y diez mil hombres de Judá.'
+reason: 'Perspicacia «Telaim» la da, al parecer, por Télem, ciudad del sur de Judá. Fecha: Saúl gobernó de 1117 a 1078 a.e.c.
+  según Perspicacia «Agag», núm. 1; empezó con su unción en 1117 (estudio 3).'
+sources:
+- 1-samuel-15
+- it-telaim
+- it-telem
+- it-agag
+- si-3
+links:
+- title: 'Perspicacia: «Telaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004348
+  type: perspicacia
+- title: 1 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-amalequitas-saquean-ziclag
+title: Los amalequitas saquean y queman Ziclag
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 30001
+places:
+- ziclag
+- negueb
+people:
+- david
+- ahinoam-esposa-de-david
+- abigail-esposa-de-david
+passages:
+- 1Sa 30:1-6
+summary: Mientras David está fuera, los amalequitas invaden el Négueb, queman Ziclag y se llevan a las mujeres y los niños,
+  Ahinoam y Abigaíl entre ellos. Los hombres, amargados, hablan de apedrear a David, que busca fuerzas en Jehová.
+reason: 1Sa 30:1-6; Perspicacia «Ziqlag» y «Abigail», núm. 1. Según «David», párr. 21, pasa a la vez que la batalla de Guilboa.
+  Mismo año que la muerte de Saúl y Jonatán, 1078 (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-samuel-30
+- it-ziqlag
+- it-abigail
+- it-david
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  type: bible
+- title: 'Perspicacia: «Ziqlag»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004731
+  type: perspicacia
+- title: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

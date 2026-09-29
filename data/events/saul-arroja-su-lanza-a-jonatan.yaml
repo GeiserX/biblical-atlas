@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-arroja-su-lanza-a-jonatan
+title: Saúl arroja su lanza contra Jonatán
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+narrative_order:
+  series: 1-samuel
+  order: 20024
+places: []
+people:
+- saul
+- jonatan-hijo-de-saul
+- abner
+present: []
+passages:
+- 1Sa 20:24-34
+summary: En la comida de la luna nueva el asiento de David queda vacío. Al segundo día Jonatán lo excusa con el viaje a Belén;
+  Saúl lo insulta, exige la muerte de David y le arroja la lanza.
+reason: 'Sitio sin nombre. Tiempo: huida de David (Perspicacia «David», «Fugitivo»), entre su nacimiento en 1107 (estudio 3)
+  y la muerte de Saúl y Jonatán en 1078 (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-20
+- si-3
+- it-jonatan
+- it-david
+- it-saul
+- it-abner
+links:
+- title: 1 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

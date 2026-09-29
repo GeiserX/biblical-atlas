@@ -29,6 +29,15 @@ names:
     no es la moderna así llamada, de Herodes.
 - name: Jebusí
   note: Así la llama Jos 18:28, por los jebuseos que la habitaban.
+- name: Puerta del Pescado
+  note: Puerta del norte, al oeste de la de las Ovejas, quizá hacia el extremo norte del Tiropeón (Ne 3:3; Sof 1:10). Perspicacia
+    sugiere que su nombre podía venir de un mercado de pescado cercano.
+- name: Segundo Barrio
+  note: Zona al oeste o noroeste del recinto del templo, cerrada por los muros de Ezequías y Manasés. Se nombra por primera
+    vez en tiempos de Josías (2Re 22:14; Sof 1:10).
+- name: Mactés
+  note: Al parecer, un sector cerca de la Puerta del Pescado y del Segundo Barrio (Sof 1:11). Significa «mortero». Perspicacia
+    recoge que suele situarse en el valle del Tiropeón, quizá en su parte alta, no en el Cedrón.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -106,12 +115,24 @@ sources:
 - joel-3
 - galatas-1
 - galatas-2
+- amos-1
+- amos-2
+- amos-6
+- abdias-1
+- miqueas-1
+- miqueas-3
+- miqueas-4
 - josue-10
 - josue-12
 - josue-15
 - josue-18
 - jueces-1
 - jueces-19
+- 1-samuel-17
+- sofonias-1
+- it-mactes
+- sofonias-3
+- it-sofonias-libro
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

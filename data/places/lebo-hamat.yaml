@@ -28,29 +28,33 @@ candidates:
 - name: Extremo sur del valle de la Bekaa
   geometry:
     type: zone
-    lat: 33.55
-    lon: 35.8
+    lat: 33.569
+    lon: 35.7762
     radius_km: 25
   checked_on: '2026-09-29'
   status: alternative
   sources:
   - it-hamat
+  - openbible-geo
   reason: 'Otra opinión que recoge Perspicacia: el extremo sur del valle que separa el Líbano del Antilíbano.'
   coord_source: calculation
-  note: Centro nuestro en el sur del valle de la Bekaa, al norte del Hermón. Radio nuestro.
+  note: 'Centro: 20 km con rumbo 340° desde el punto de OpenBible para el monte Hermón (33,4000 N; 35,8500 E), que da 33.569
+    N; 35.7762 E, al sur de la Bekaa. El radio de 25 km es nuestro.'
 - name: Paso entre Homs y el mar
   geometry:
     type: zone
-    lat: 34.68
-    lon: 36.35
+    lat: 34.6798
+    lon: 36.3477
     radius_km: 25
   checked_on: '2026-09-29'
   status: alternative
   sources:
   - it-hamat
+  - openbible-geo
   reason: Otra opinión la lleva más al norte, al paso de montaña que comunica Homs con la costa (Perspicacia).
   coord_source: calculation
-  note: Centro nuestro en el paso al oeste de Homs. Radio nuestro.
+  note: 'Centro: 32 km con rumbo 320° desde el punto de OpenBible para Riblá (34,4595 N; 36,5726 E), que da 34.6798 N; 36.3477
+    E, en el paso al oeste de Homs. El radio de 25 km es nuestro.'
 summary: Paso en el límite sur del reino de Hamat. Fue el punto más al norte que alcanzaron los espías y, más tarde, la frontera
   norte de la conquista de Josué.
 reason: 'Perspicacia «Hamat, hamateo», apartado del punto de entrada de Hamat; Nú 13:21 y su nota. No elige sitio: van las
@@ -58,6 +62,7 @@ reason: 'Perspicacia «Hamat, hamateo», apartado del punto de entrada de Hamat;
 sources:
 - it-hamat
 - openbible-geo
+- amos-6
 - numeros-13
 - numeros-34
 - josue-13
@@ -65,6 +70,9 @@ links:
 - title: 'Perspicacia: «Hamat, hamateo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001834
   type: perspicacia
+- title: Amós 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/6
+  type: bible
 - title: Números 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
   type: bible

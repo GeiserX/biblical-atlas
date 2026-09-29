@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-da-a-mical-a-paltiel
+title: Saúl da a Mical por esposa a Paltí
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, antes de la muerte del rey)'
+narrative_order:
+  series: 1-samuel
+  order: 25044
+places:
+- galim
+people:
+- saul
+- mical
+- paltiel-hijo-de-lais
+present: []
+passages:
+- 1Sa 25:44
+summary: Mientras David anda huido, Saúl entrega a Mical, esposa de David, a Paltí, hijo de Lais, de Galim. El texto
+  lo cuenta de pasada, sin decir cuándo ni dónde.
+reason: 1Sa 25:44; Perspicacia «Paltiel», núm. 2, lo pone tras proscribir a David. Galim es la ciudad de Paltí, no consta que
+  la boda fuera allí. Entre 1107 (estudio 3) y 1078 a.e.c. (Perspicacia «Jonatán»).
+sources:
+- 1-samuel-25
+- it-paltiel
+- it-galim
+- si-3
+- it-jonatan
+links:
+- title: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified
