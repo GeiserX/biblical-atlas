@@ -29,16 +29,16 @@ relations:
   reason: '1Sa 14:3: Ahíya, hijo de Ahitub.'
   checked_on: '2026-09-29'
   status: verified
-- type: same_as
-  person: ahimelec-hijo-de-ahitub
+- type: holds_office
+  place: silo
+  office: high_priest
   inferred: true
   sources:
-  - it-ahiya
-  - it-ahimelec
   - 1-samuel-14
-  reason: Perspicacia «Ahíya», núm. 3, recoge que algunos lo identifican con Ahimélec, o lo hacen su hermano; «Ahimélec», núm.
-    1, remite a esa entrada.
+  - it-ahiya
+  reason: 1Sa 14:3, 18 le hace llevar el efod en el campamento de Saúl; Perspicacia «Ahíya», núm. 3, lo tiene por sumo sacerdote
+    en Siló mientras reinaba Saúl.
   checked_on: '2026-09-29'
-  status: pending
+  status: verified
 checked_on: '2026-09-29'
 status: verified

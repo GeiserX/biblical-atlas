@@ -2,13 +2,13 @@
 id: jehova-castiga-a-los-de-bet-semes-por-mirar-el-arca
 title: Jehová castiga a los de Bet-Semes por mirar el Arca
 date:
-  from: -1179
+  from: -1172
   to: -1116
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre 1180 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
 narrative_order:
   series: 1-samuel
   order: 6019
@@ -20,14 +20,14 @@ passages:
 - 1Sa 6:19-21
 summary: Dios da muerte a muchos hombres de Bet-Semes porque miraron el Arca, y el pueblo los llora. Con miedo, piden a los
   de Quiryat-Jearim que bajen a llevársela.
-reason: '1Sa 6:19-21; Perspicacia «Bet-semes», núm. 1, párr. 3, y «Arca del pacto». Tabla de libros y estudio 3: entre c. 1180
-  y 1117; siglo XII según «Quiryat-jearim».'
+reason: '1Sa 6:19-21; Perspicacia «Bet-semes», núm. 1, párr. 3, y «Arca del pacto». Fecha: Jefté juzga desde hacia 1173, con
+  Samuel aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3). Perspicacia «Quiryat-jearim»: siglo XII.'
 sources:
 - 1-samuel-6
 - it-bet-semes
 - it-arca-del-pacto
 - it-quiryat-jearim
-- tnm-tabla
+- it-jefte
 - si-3
 links:
 - title: 1 Samuel 6 (TNM)
@@ -40,5 +40,10 @@ links:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000369
   type: perspicacia
 search: Bet-Semes miran el Arca
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
 checked_on: '2026-09-29'
 status: verified

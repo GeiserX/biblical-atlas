@@ -19,6 +19,12 @@ people:
 - jonatan-hijo-de-saul
 - abinadab-hijo-de-saul
 - malki-sua
+type: death
+roles:
+  saul: died
+  jonatan-hijo-de-saul: died
+  abinadab-hijo-de-saul: died
+  malki-sua: died
 passages:
 - 1Sa 31:1-7
 - 1Cr 10:1-7

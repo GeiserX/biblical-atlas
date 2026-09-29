@@ -83,8 +83,8 @@ history:
   change: La razón cita los párrafos y versículos del nuevo resumen.
   source: 1-samuel-2
 - date: '2026-09-29'
-  change: 'Sale acompana/samuel: va en la ficha del que acompaña, y samuel ya lleva acompana/eli. murio_en silo pasa a deducido
-    false (1Sa 4:12-18). Entran Aarón como antepasado y 1Sa 1 y 3 en vivio_en silo.'
+  change: 'Sale accompanies samuel: el trato va en la ficha de Samuel, como tie con la palabra custodian. died_in silo pasa
+    a inferred: false (1Sa 4:12-18). Entran Aarón como ancestor y 1Sa 1 y 3 en lived_in silo.'
   source: 1-samuel-3
 checked_on: '2026-09-29'
 status: verified

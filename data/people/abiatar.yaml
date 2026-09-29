@@ -41,7 +41,7 @@ relations:
   status: verified
 - type: accompanies
   person: david
-  caption: sacerdote de
+  word: companion
   inferred: false
   sources:
   - 1-samuel-22
@@ -60,5 +60,15 @@ relations:
   - it-abiatar
   reason: 'Perspicacia «Abiatar», párr. 2: vivía en Nob cuando Saúl hizo matar a su padre y a los demás sacerdotes (1Sa 22:11,
     20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-samuel-23
+  - 1-samuel-30
+  - it-abiatar
+  reason: 1Sa 23:9 y 30:7 lo llaman el sacerdote Abiatar; David le pide el efod para consultar a Jehová.
   checked_on: '2026-09-29'
   status: verified

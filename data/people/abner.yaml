@@ -35,9 +35,9 @@ relations:
   reason: '1Sa 14:50, 51: Abner hijo de Ner.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: saul
-  caption: jefe del ejército de
+  word: master
   inferred: false
   sources:
   - 1-samuel-14

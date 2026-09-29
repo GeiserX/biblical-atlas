@@ -2,13 +2,13 @@
 id: nacimiento-de-icabod
 title: Nace Icabod y muere su madre
 date:
-  from: -1179
+  from: -1172
   to: -1116
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: el mismo día de la derrota junto a Ebenézer)'
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: el mismo día de la derrota junto a Ebenézer)'
 narrative_order:
   series: 1-samuel
   order: 4019
@@ -16,18 +16,21 @@ places:
 - silo
 people:
 - icabod
+type: birth
+roles:
+  icabod: born
 present: []
 passages:
 - 1Sa 4:19-22
 summary: 'La esposa de Finehás, embarazada, oye que el Arca fue tomada y que murieron su suegro y su esposo. Se pone de parto
   de golpe y, muriéndose, llama al niño Icabod, pues dice que la gloria dejó a Israel.'
-reason: '1Sa 4:19-22; Perspicacia «Icabod». No dice dónde estaba ella: el suceso no sitúa a nadie. Fecha: entre c. 1180, inicio
-  de 1 Samuel (Tabla de los libros), y la unción de Saúl en 1117 (estudio 3).'
+reason: '1Sa 4:19-22; Perspicacia «Icabod». Su madre, que muere, no tiene ficha, y no se dice dónde estaba. Fecha: Jefté juzga
+  desde hacia 1173, con Samuel aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3).'
 sources:
 - 1-samuel-4
 - it-icabod
 - it-finehas
-- tnm-tabla
+- it-jefte
 - si-3
 links:
 - title: 1 Samuel 4 (TNM)
@@ -36,5 +39,10 @@ links:
 - title: 'Perspicacia: «Icabod»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002131
   type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Empezaba c. 1180 y se ordenaba antes de Jefté. Ahora empieza c. 1173: Jefté juzga en los primeros años de Samuel,
+    y aquí Samuel ya es un profeta conocido.'
+  source: it-jefte
 checked_on: '2026-09-29'
 status: verified

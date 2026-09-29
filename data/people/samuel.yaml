@@ -5,16 +5,17 @@ names:
 - name: Samuel
 date:
   from: -1179
-  to: -1077
+  to: -1079
   precision: range
   approx: true
   type: narrative
   chronology: tnm
-  text: 'c. 1180-c. 1078 a.e.c. (tiempo narrativo: de su niñez en Siló a su muerte, en vida de Saúl, 1Sa 25:1)'
+  text: 'c. 1180-c. 1080 a.e.c. (tiempo narrativo: de su niñez en Siló a su muerte, antes de que David se refugie en Gat,
+    1Sa 25:1)'
 summary: Profeta levita, hijo de Elcaná y Ana, criado en el tabernáculo de Siló. Juzgó a Israel desde Ramá, ungió a Saúl y
   después a David. Murió antes de que David reinara.
-reason: Perspicacia «Samuel», párr. 1-4, 6, 7, 10, 11. Profeta ya antes de ungir a Saúl en 1117 (1Sa 3; estudio 3). Vive de
-  c. 1180 (tabla de libros) hasta antes de 1078, cuando muere Saúl (1Sa 25:1; «Jonatán» 2).
+reason: Perspicacia «Samuel», párr. 1-4, 6, 7, 10, 11. Profeta antes de ungir a Saúl en 1117 (1Sa 3; estudio 3). Vive de c.
+  1180 (tabla de libros) hasta c. 1080, antes de que David se refugie en Gat (1Sa 25:1).
 sources:
 - it-samuel
 - 1-samuel-3
@@ -57,6 +58,10 @@ history:
 - date: '2026-09-29'
   change: La razón explica la nueva fecha de su vida, de c. 1180 a su muerte antes que Saúl.
   source: 1-samuel-3
+- date: '2026-09-29'
+  change: 'Acababa en 1078, con la muerte de Saúl. Ahora acaba c. 1080: muere antes de que David se refugie en Gat, donde
+    pasa dieciséis meses hasta esa muerte.'
+  source: 1-samuel-25
 checked_on: '2026-09-29'
 status: verified
 relations:

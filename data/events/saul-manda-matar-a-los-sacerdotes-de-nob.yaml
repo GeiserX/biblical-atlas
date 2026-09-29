@@ -19,6 +19,8 @@ people:
 - saul
 - doeg
 - ahimelec-hijo-de-ahitub
+roles:
+  ahimelec-hijo-de-ahitub: died
 present:
 - saul
 - doeg

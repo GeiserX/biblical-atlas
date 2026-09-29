@@ -21,14 +21,13 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/22
   type: bible
 relations:
-- type: accompanies
-  person: david
-  caption: profeta de
+- type: holds_office
+  office: prophet
   inferred: false
   sources:
   - 1-samuel-22
   - it-gad
-  reason: '1Sa 22:5: el profeta Gad aconseja a David que deje el refugio y vuelva a Judá; Perspicacia «Gad», núm. 3.'
+  reason: '1Sa 22:5 lo llama el profeta Gad; Perspicacia «Gad», núm. 3: profeta y visionario del tiempo de David.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

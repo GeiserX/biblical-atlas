@@ -23,6 +23,7 @@ links:
 relations:
 - type: accompanies
   person: david
+  word: companion
   inferred: false
   sources:
   - 1-samuel-26
