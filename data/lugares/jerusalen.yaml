@@ -27,6 +27,8 @@ nombres:
 - nombre: Torre de David
   nota: Torre de Can 4:4 de la que colgaban mil escudos. Perspicacia recoge que quizá sea la de la Casa del Rey (Ne 3:25);
     no es la moderna así llamada, de Herodes.
+- nombre: Jebusí
+  nota: Así la llama Jos 18:28, por los jebuseos que la habitaban.
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -102,6 +104,10 @@ fuentes:
 - cantar-de-los-cantares-6
 - joel-2
 - joel-3
+- josue-10
+- josue-12
+- josue-15
+- josue-18
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

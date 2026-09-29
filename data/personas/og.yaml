@@ -29,6 +29,8 @@ fuentes:
 - it-refaim
 - deuteronomio-29
 - deuteronomio-31
+- josue-12
+- josue-13
 enlaces:
 - titulo: 'Perspicacia: «Og»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003306
@@ -52,6 +54,8 @@ relaciones:
   - deuteronomio-3
   - deuteronomio-4
   - deuteronomio-29
+  - josue-12
+  - josue-13
   razon: Sl 135:11 lo llama rey de Basán.
   estado: verificado
 - tipo: murio_en
@@ -71,6 +75,8 @@ relaciones:
   - deuteronomio-1
   - it-og
   - it-astarot
+  - josue-12
+  - josue-13
   razon: 'Dt 1:4: Og vivía en Astarot; Perspicacia «Og» la da como una de sus dos ciudades principales.'
   estado: verificado
 - tipo: vivio_en
@@ -80,6 +86,8 @@ relaciones:
   - deuteronomio-1
   - it-og
   - it-edrei
+  - josue-12
+  - josue-13
   razon: 'Dt 1:4: Og vivía en Astarot, en Edréi; Perspicacia «Edrei», núm. 1, la llama ciudad real de Og.'
   estado: verificado
 historial:

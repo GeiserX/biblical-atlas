@@ -11,7 +11,8 @@ lon: 35.3378
 precision: punto
 coord_fuente: openbible:a80d317
 coord_url: https://www.openbible.info/geo/ancient/a80d317/tirzah
-resumen: Capital del reino de Israel desde Jeroboán hasta que Omrí fundó Samaria. Zimrí murió allí en el palacio incendiado.
+resumen: Ciudad real cananea cuyo rey venció Josué. Siglos después fue capital del reino de Israel desde Jeroboán hasta que
+  Omrí fundó Samaria; Zimrí murió allí en el palacio incendiado.
 razon: 'Perspicacia «Tirzá», núm. 2: parece ser Tell el-Farʽah, unos 10 km al NNE de Siquem; 1Re 14:17 y 16:15-23. OpenBible:
   solo el punto.'
 fuentes:
@@ -19,6 +20,7 @@ fuentes:
 - openbible-geo
 - 1-reyes-16
 - cantar-de-los-cantares-6
+- josue-12
 enlaces:
 - titulo: 'Perspicacia: «Tirzá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004426
@@ -30,5 +32,8 @@ historial:
 - fecha: '2026-09-29'
   cambio: El nombre recibe la nota de su significado, que dan la nota de Can 6:4 y Perspicacia «Tirzá».
   fuente: cantar-de-los-cantares-6
+- fecha: '2026-09-29'
+  cambio: El resumen añade que Josué venció a su rey cananeo (Jos 12:24; Perspicacia «Tirzá», núm. 2).
+  fuente: josue-12
 consultado: '2026-09-29'
 estado: verificado

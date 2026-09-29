@@ -7,6 +7,8 @@ nombres:
   nota: Así la nombra Gé 14:6.
 - nombre: Región montañosa de Seír
   nota: Así la llama Gé 36:8, 9.
+- nombre: Monte Seír
+  nota: Así llama Jos 24:4 a esta región montañosa. No es el monte Seír de la frontera norte de Judá (Jos 15:10).
 tipo: region
 lat: 30.1843
 lon: 35.3166
@@ -28,6 +30,7 @@ fuentes:
 - deuteronomio-1
 - it-horma
 - deuteronomio-2
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Seír»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003884

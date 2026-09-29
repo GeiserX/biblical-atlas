@@ -12,6 +12,7 @@ fuentes:
 - it-hefer
 - numeros-26
 - numeros-27
+- josue-17
 enlaces:
 - titulo: 'Perspicacia: «Héfer»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001989
@@ -31,7 +32,24 @@ relaciones:
   - numeros-26
   - it-hefer
   - numeros-27
+  - josue-17
   razon: Nú 26:30-32 lo cuenta entre los hijos de Galaad.
+  estado: verificado
+- tipo: pariente
+  persona: manases-hijo-de-jose
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: 'Jos 17:2, 3: Héfer, hijo de Galaad, hijo de Makir, desciende de Manasés.'
+  estado: verificado
+- tipo: pariente
+  persona: makir-hijo-de-manases
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - josue-17
+  razon: 'Jos 17:3: Héfer era hijo de Galaad, y Galaad hijo de Makir.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

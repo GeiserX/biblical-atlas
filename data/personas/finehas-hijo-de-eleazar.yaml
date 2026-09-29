@@ -14,6 +14,8 @@ fuentes:
 - exodo-6
 - numeros-25
 - numeros-31
+- josue-22
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Finehás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
@@ -44,6 +46,8 @@ relaciones:
   - it-finehas
   - numeros-25
   - numeros-31
+  - josue-22
+  - josue-24
   razon: 'Éx 6:25: hijo de Eleazar.'
   estado: verificado
 - tipo: pariente
@@ -54,6 +58,16 @@ relaciones:
   - exodo-6
   - it-finehas
   razon: 'Éx 6:25: su madre era una de las hijas de Putiel.'
+  estado: verificado
+- tipo: sucede_a
+  persona: eleazar-hijo-de-aaron
+  deducido: true
+  fuentes:
+  - josue-24
+  - it-eleazar
+  - it-finehas
+  razon: 'Perspicacia «Eleazar», núm. 1, y «Finehás», núm. 1: tras enterrar a su padre (Jos 24:33) fue sumo sacerdote; Jue
+    20:27, 28 lo muestra en el cargo.'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado
