@@ -34,6 +34,24 @@ relaciones:
   - lucas-1
   razon: Lu 1:36.
   estado: verificado
+- tipo: pariente
+  persona: aaron
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-elisabet
+  razon: Lu 1:5 la hace descendiente de Aarón; la nota de estudio traduce literalmente «de las hijas de Aarón».
+  estado: verificado
+- tipo: vivio_en
+  lugar: judea
+  deducido: false
+  fuentes:
+  - lucas-1
+  - jy-cap-2
+  razon: 'Lu 1:39, 40 y 65: su casa estaba en una ciudad de la región montañosa de Judea, cerca de Jerusalén según jy, cap.
+    2.'
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Elisabet»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001323
@@ -41,5 +59,6 @@ enlaces:
 - titulo: Lucas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001323'
+consultado: '2026-09-29'
 estado: verificado

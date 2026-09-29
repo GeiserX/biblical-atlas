@@ -15,6 +15,9 @@ nombres:
   nota: Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20). Es la grafía de la TNM; Perspicacia escribe «Sión».
 - nombre: Ciudad santa
   nota: Se la llamaba así porque en ella estaba el templo de Jehová (Mt 4:5; Ne 11:1).
+- nombre: Torre de Siloam
+  nota: Torre de la ciudad que cayó y mató a 18 personas (Lu 13:4). Perspicacia «Siloam» no conoce su sitio exacto; la nota
+    de estudio la pone probablemente cerca del estanque de Siloam.
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -53,6 +56,15 @@ fuentes:
 - salmos-122
 - salmos-125
 - salmos-132
+- lucas-1
+- lucas-2
+- lucas-4
+- lucas-13
+- it-siloam
+- lucas-19
+- lucas-21
+- lucas-22
+- lucas-24
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

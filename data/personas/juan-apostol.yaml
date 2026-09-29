@@ -41,6 +41,11 @@ fuentes:
 - marcos-10
 - marcos-13
 - marcos-14
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
+- lucas-22
 no_confundir_con:
 - juan-el-bautista
 - juan-marcos
@@ -72,6 +77,7 @@ relaciones:
   - mateo-26
   - marcos-1
   - marcos-10
+  - lucas-5
   razon: Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.
   estado: verificado
 - tipo: acompana
@@ -81,6 +87,7 @@ relaciones:
   fuentes:
   - it-juan
   - hechos-8
+  - lucas-5
   razon: Enviados juntos a Samaria (Hch 8:14); Perspicacia «Juan», párr. 30.
   estado: verificado
 - tipo: vivio_en
@@ -152,6 +159,11 @@ relaciones:
   - marcos-10
   - marcos-13
   - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
+  - lucas-22
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente

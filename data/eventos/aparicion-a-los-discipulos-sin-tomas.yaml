@@ -16,13 +16,24 @@ lugares:
 - jerusalen
 personas:
 - jesus
+- cleopas
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- bartolome
+- mateo
+- santiago-hijo-de-alfeo
+- simon-el-cananita
+- tadeo
 pasajes:
 - Lu 24:36-49
 - Jn 20:19-25
 resumen: Esa noche se presenta ante los discípulos reunidos con las puertas cerradas. Les enseña las manos y el
   costado, come delante de ellos y les explica las Escrituras. Tomás no estaba.
-razon: A7-H cuenta cinco apariciones el 16 de nisán en Jerusalén y sus alrededores; Lu 24:36-49 y Jn 20:19-25. El año 33 lo
-  da la cabecera de A7-G (8 de nisán del 33).
+razon: 'A7-H cuenta cinco apariciones el 16 de nisán y A7-G da el año 33. Lu 24:33-36: con los Once están Cleopas y su compañero;
+  Jn 20:24: falta Tomás, así que van diez apóstoles.'
 fuentes:
 - tnm-a7-h
 - lucas-24
@@ -30,5 +41,12 @@ fuentes:
 - jy-cap-135
 - tnm-a7-g
 buscar: Se aparece a los discípulos reunidos, sin Tomás
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Solo llevaba a Jesús en personas; se añaden Cleopas y los diez apóstoles presentes, y la razón lo explica.
+  fuente: lucas-24
+orden_relato:
+  serie: a7
+  orden: 129
+consultado: '2026-09-29'
 estado: verificado

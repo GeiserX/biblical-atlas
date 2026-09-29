@@ -10,6 +10,7 @@ desambiguacion: Apóstol, hijo de Alfeo; no es Santiago, hijo de Zebedeo, ni San
 no_confundir_con:
 - santiago-hijo-de-zebedeo
 - santiago-hermano-de-jesus
+- santiago-padre-de-tadeo
 resumen: Uno de los doce apóstoles, hijo de Alfeo. La TNM de estudio lo identifica con Santiago el Menor, hermano de Josés,
   cuya madre, María, presenció la muerte de Jesús.
 razon: Perspicacia «Santiago» (núm. 3) da como probable que Alfeo y Clopas sean el mismo. La nota de Mr 15:40 lo llama Santiago
@@ -20,6 +21,7 @@ fuentes:
 - mateo-27
 - marcos-15
 - marcos-3
+- lucas-6
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -28,6 +30,7 @@ relaciones:
   fuentes:
   - mateo-10
   - marcos-3
+  - lucas-6
   razon: Mt 10:3.
   estado: verificado
 - tipo: pariente
@@ -39,6 +42,7 @@ relaciones:
   - marcos-15
   - mateo-27
   - it-maria
+  - lucas-24
   razon: Mt 27:56 la llama madre de Santiago y Josés; la nota de Mr 15:40 hace a ese Santiago el hijo de Alfeo, y Perspicacia
     «María», núm. 4, a ella la esposa de Clopas.
   estado: verificado
@@ -50,6 +54,7 @@ relaciones:
   - mateo-10
   - it-alfeo
   - marcos-3
+  - lucas-6
   razon: Mt 10:3 lo llama hijo de Alfeo; Perspicacia «Alfeo», núm. 2.
   estado: verificado
 - tipo: pariente

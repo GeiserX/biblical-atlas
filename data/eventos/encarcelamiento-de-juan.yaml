@@ -41,5 +41,13 @@ fuentes:
 - it-herodias
 - jy-cap-18
 - jy-cap-19
+presentes:
+- juan-el-bautista
+- herodes-antipas
+- herodias
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade presentes: sin ellos el sitio ponía a Jesús en Tiberíades, y estaba en Judea camino de Galilea.'
+  fuente: lucas-3
 consultado: '2026-09-29'
 estado: verificado

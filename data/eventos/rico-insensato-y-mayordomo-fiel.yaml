@@ -15,6 +15,7 @@ lugares:
 - judea
 personas:
 - jesus
+- pedro
 pasajes:
 - Lu 12:1-59
 resumen: Con la parábola del rico insensato, Jesús advierte contra la codicia; con la del mayordomo fiel, pide estar
@@ -29,5 +30,5 @@ orden_relato:
   serie: a7
   orden: 71
 buscar: Parábolas del rico insensato y del mayordomo fiel
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

@@ -18,16 +18,26 @@ pasajes:
 - Lu 17:11-37
 resumen: Pasando entre Samaria y Galilea, cura a diez leprosos, y solo un samaritano vuelve a dar gracias. Explica
   que la llegada del Reino no se anunciará con señales a la vista.
-razon: La tabla A7-F da cuándo y dónde. La nota de Lu 17:11 dice que fue su última visita a Galilea antes de morir;
-  jy caps. 92 y 93.
+razon: 'A7-F: tras la Dedicación del 32, Samaria y Galilea; A7-G: antes de Betania. Año 33: jy cap. 92. La nota de Lu 17:11
+  no decide en cuál de las dos estaba la aldea: no sitúa a nadie.'
 fuentes:
 - tnm-a7-f
 - lucas-17
 - jy-cap-92
 - jy-cap-93
+- tnm-a7-g
 orden_relato:
   serie: a7
   orden: 84
 buscar: Cura a diez leprosos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón atribuía el año 33 a la tabla A7-F, que solo da «después de la Dedicación del 32». El año sale de jy cap.
+    92; A7-G da el límite de Betania.
+  fuente: lucas-17
+- fecha: '2026-09-29'
+  cambio: La nota de Lu 17:11 no decide si la aldea era de Samaria o de Galilea, así que el suceso ya no pone a Jesús en Galilea.
+  fuente: lucas-17
+presentes: []
+consultado: '2026-09-29'
 estado: verificado

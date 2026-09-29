@@ -10,6 +10,7 @@ razon: Perspicacia «Sealtiel»; Mt 1:12 y su nota.
 fuentes:
 - it-sealtiel
 - mateo-1
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Sealtiel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003967
@@ -31,6 +32,15 @@ relaciones:
   - mateo-1
   - it-sealtiel
   razon: Mt 1:12 lo pone tras la deportación y Perspicacia dice que nació durante el destierro de su padre.
+  estado: verificado
+- tipo: pariente
+  persona: neri
+  deducido: false
+  fuentes:
+  - lucas-3
+  - it-neri
+  - it-sealtiel
+  razon: Lu 3:27 lo llama hijo de Nerí; como su padre fue Jeconías, Perspicacia cree posible que fuera yerno de Nerí.
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

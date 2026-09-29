@@ -4,7 +4,7 @@ nombre: Lázaro
 nombres:
 - nombre: Lázaro
   nota: Probablemente la forma griega del hebreo Eleazar.
-desambiguacion: El amigo de Jesús de Betania; no es el mendigo de la parábola del rico y Lázaro (Lu 16:19-31).
+desambiguacion: El amigo de Jesús de Betania; no es el mendigo de la parábola del rico y Lázaro.
 no_afirmamos:
 - El amigo de Jesús es el mendigo de la parábola de Lucas 16.
 - Se sabe cuándo o dónde volvió a morir Lázaro.
@@ -46,5 +46,11 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11
   tipo: biblia
 buscar: Lázaro
-consultado: '2026-09-28'
+perspicacia: 1200002698#1
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sin la cita de Lucas 16: el sitio ponía al amigo de Jesús entre los nombrados en ese capítulo, que solo habla del
+    mendigo de la parábola.'
+  fuente: lucas-16
+consultado: '2026-09-29'
 estado: verificado

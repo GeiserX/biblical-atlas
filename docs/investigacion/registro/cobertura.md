@@ -54,7 +54,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/cobertura/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
 | [Marcos](../../../data/cobertura/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
-| Lucas | 0 de 24 | 0 de 1149 | 0 % |
+| [Lucas](../../../data/cobertura/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
 | Juan | 0 de 21 | 0 de 866 | 0 % |
 | Hechos | 0 de 28 | 0 de 1003 | 0 % |
 | Romanos | 0 de 16 | 0 de 432 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 361 de 1189 | 9006 de 31062 | 29 % |
+| **Total** | 385 de 1189 | 10155 de 31062 | 33 % |
 
 ## Capítulos empezados
 

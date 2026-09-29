@@ -23,6 +23,9 @@ fuentes:
 - mateo-12
 - marcos-3
 - marcos-6
+- lucas-2
+- lucas-3
+- lucas-8
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria
@@ -31,6 +34,7 @@ relaciones:
   fuentes:
   - mateo-1
   - it-maria
+  - lucas-1
   razon: 'Mt 1:18-24: estaba comprometida con José y él la llevó a su casa como esposa.'
   estado: verificado
 - tipo: pariente
@@ -57,6 +61,7 @@ relaciones:
   - lucas-1
   - it-nazaret
   - mateo-2
+  - lucas-2
   razon: Lu 1:26, 27; Perspicacia «Nazaret» (párr. 2).
   estado: verificado
 - tipo: vivio_en
@@ -74,6 +79,24 @@ relaciones:
   fuentes:
   - mateo-2
   razon: Mt 2:14, 15.
+  estado: verificado
+- tipo: pariente
+  persona: david
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - it-maria
+  - lucas-1
+  razon: 'Perspicacia «María», núm. 1: era judía, del linaje de David; por eso Lu 1:32 puede llamar a David padre de Jesús.'
+  estado: verificado
+- tipo: pariente
+  persona: heli
+  relacion: padre
+  deducido: true
+  fuentes:
+  - lucas-3
+  - it-heli
+  razon: 'Perspicacia «Helí» y la nota de Lu 3:23: Lucas sigue la línea de María, y Helí era su padre.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «María»'

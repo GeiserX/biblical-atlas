@@ -5,6 +5,8 @@ nombres:
 - nombre: María
 - nombre: la otra María
   nota: Así la llama Mateo (Mt 27:61; 28:1).
+- nombre: María la madre de Santiago
+  nota: Así la llaman Mr 16:1 y Lu 24:10.
 desambiguacion: «La otra María» de Mateo; no es María Magdalena ni la madre de Jesús.
 no_confundir_con:
 - maria-magdalena
@@ -23,6 +25,7 @@ fuentes:
 - mateo-28
 - marcos-15
 - marcos-16
+- lucas-24
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918

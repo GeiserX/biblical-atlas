@@ -20,6 +20,7 @@ fuentes:
 - 2-reyes-2
 - 2-reyes-13
 - tnm-a6-a
+- lucas-4
 enlaces:
 - titulo: 'Perspicacia: «Eliseo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
@@ -44,5 +45,6 @@ relaciones:
   - 2-reyes-2
   razon: Recogió el manto de Elías cuando este fue llevado en la tempestad (2Re 2:11-14).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200001316'
+consultado: '2026-09-29'
 estado: verificado

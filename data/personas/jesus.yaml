@@ -65,6 +65,28 @@ fuentes:
 - marcos-14
 - marcos-15
 - marcos-16
+- lucas-1
+- lucas-4
+- lucas-5
+- lucas-6
+- lucas-7
+- lucas-8
+- lucas-9
+- lucas-10
+- lucas-11
+- lucas-12
+- lucas-13
+- lucas-14
+- lucas-15
+- lucas-16
+- lucas-17
+- lucas-18
+- lucas-19
+- lucas-20
+- lucas-21
+- lucas-22
+- lucas-23
+- lucas-24
 no_afirmamos:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -92,6 +114,8 @@ relaciones:
   - marcos-6
   - marcos-10
   - marcos-14
+  - lucas-4
+  - lucas-18
   razon: Mt 2:23 y Lu 2:51; Perspicacia «Nazaret» (párr. 2).
   estado: verificado
 - tipo: vivio_en
@@ -102,6 +126,7 @@ relaciones:
   - mateo-9
   - it-capernaum
   - marcos-2
+  - lucas-4
   razon: Mt 4:13 dice que se fue a vivir allí y Mt 9:1 la llama «su ciudad»; Perspicacia «Capernaum» (párr. 5 y 7).
   estado: verificado
 - tipo: pariente
@@ -115,6 +140,7 @@ relaciones:
   - mateo-13
   - marcos-3
   - marcos-6
+  - lucas-8
   razon: 'Lu 2:7: María da a luz a su primer hijo.'
   estado: verificado
 - tipo: pariente
@@ -125,6 +151,8 @@ relaciones:
   - it-jose
   - lucas-3
   - mateo-1
+  - lucas-2
+  - lucas-4
   razon: Perspicacia «José» (núm. 8) lo llama padre adoptivo; Lu 3:23 dice que la gente lo creía hijo de José.
   estado: verificado
 - tipo: pariente
@@ -156,6 +184,10 @@ relaciones:
   - mateo-22
   - marcos-10
   - marcos-12
+  - lucas-1
+  - lucas-3
+  - lucas-18
+  - lucas-20
   razon: Mt 1:1 lo llama hijo de David; la nota explica que aquí hijo puede ser un descendiente.
   estado: verificado
 - tipo: pariente
@@ -164,6 +196,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-1
+  - lucas-3
   razon: 'Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.'
   estado: verificado
 - tipo: vivio_en
@@ -220,7 +253,15 @@ relaciones:
   - mateo-27
   - it-golgota
   - marcos-15
+  - lucas-23
   razon: 'Mt 27:33-50: lo clavaron en un madero en el Gólgota y allí murió.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: galilea
+  deducido: false
+  fuentes:
+  - lucas-23
+  razon: 'Lu 23:5-7: lo acusan de haber empezado en Galilea; Pilato pregunta si es galileo y, al saberlo, lo manda a Herodes.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Jesucristo»'
@@ -234,5 +275,8 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   fuente: mateo-9
+desambiguacion: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- jesus-hijo-de-eliezer

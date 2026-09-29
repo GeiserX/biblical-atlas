@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: buen-samaritano-y-casa-de-marta
-titulo: El buen samaritano; en casa de Marta y María
+titulo: Un experto en la Ley pregunta quién es su prójimo
 fecha:
   desde: 32
   hasta: 32
@@ -13,26 +13,44 @@ fecha:
     estacion: otoño
 lugares:
 - judea
-- betania
 personas:
 - jesus
-- marta
-- maria-de-betania
 pasajes:
-- Lu 10:25-42
-resumen: A un experto en la Ley que pregunta quién es su prójimo, Jesús le cuenta la parábola del buen samaritano.
-  Luego se aloja en casa de Marta, y María se sienta a escucharlo.
-razon: La tabla A7-E da cuándo y dónde. La nota de Lu 10:38 identifica la aldea con Betania; Perspicacia «Betania»
-  (párr. 3).
+- Lu 10:25-37
+resumen: Un experto en la Ley pregunta cómo heredar la vida eterna y quién es su prójimo. Jesús le contesta con la parábola
+  del samaritano que socorre a un hombre asaltado en el camino a Jericó.
+razon: La tabla A7-E da cuándo y dónde (Judea, otoño de 32). La misma fila incluye la visita a Marta, que va aparte porque
+  cambian el sitio y las personas.
 fuentes:
 - tnm-a7-e
 - lucas-10
 - jy-cap-73
-- jy-cap-74
-- it-betania
 orden_relato:
   serie: a7
   orden: 67
 buscar: El buen samaritano
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte en dos escenas: aquí queda la conversación con el experto en la Ley (Lu 10:25-37); la visita
+    a Marta y María pasa a en-casa-de-marta-y-maria.'
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: 'Betania sale del suceso: el diálogo con el experto en la Ley no pasa allí; Betania queda en en-casa-de-marta-y-maria.'
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: Marta y María salen de la escena de la parábola y pasan a en-casa-de-marta-y-maria.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: El pasaje se ciñe a la parábola; Lu 10:38-42 pasa al suceso nuevo.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: El resumen ya no cuenta la visita a Marta, que es un suceso aparte.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: La razón ya no habla de Betania, que pasa al suceso nuevo.
+  fuente: lucas-10
+- fecha: '2026-09-29'
+  cambio: jy cap. 74 y Perspicacia «Betania» tratan la visita a Marta; pasan al suceso nuevo.
+  fuente: lucas-10
+consultado: '2026-09-29'
 estado: verificado

@@ -12,6 +12,7 @@ fuentes:
 - it-eber
 - genesis-10
 - genesis-11
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Éber»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001249
@@ -27,6 +28,7 @@ relaciones:
   fuentes:
   - genesis-10
   - genesis-11
+  - lucas-3
   razon: 'Gé 10:24: Selá fue padre de Éber; Gé 11:14, a los 30 años.'
   estado: verificado
 - tipo: pariente

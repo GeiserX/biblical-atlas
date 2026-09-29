@@ -32,6 +32,26 @@ relaciones:
   - lucas-1
   razon: Lu 1:13, 63.
   estado: verificado
+- tipo: pariente
+  persona: aaron
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - lucas-1
+  - it-juan
+  razon: Era sacerdote (Lu 1:5); Perspicacia «Juan», núm. 1, dice que los dos padres de Juan eran de la casa sacerdotal de
+    Aarón.
+  estado: verificado
+- tipo: vivio_en
+  lugar: judea
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-zacarias
+  - jy-cap-1
+  razon: 'Lu 1:23, 39, 40 y 65: acabado su turno vuelve a su casa, en la región montañosa de Judea; Perspicacia «Zacarías»,
+    núm. 31.'
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Zacarías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
@@ -39,5 +59,6 @@ enlaces:
 - titulo: Lucas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
   tipo: biblia
+perspicacia: 1200004681#31
 consultado: '2026-09-29'
 estado: verificado
