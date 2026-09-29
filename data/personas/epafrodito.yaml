@@ -20,6 +20,7 @@ razon: Perspicacia «Epafrodito»; Flp 2:25-30 y 4:18.
 fuentes:
 - it-epafrodito
 - filipenses-2
+- filipenses-4
 enlaces:
 - titulo: 'Perspicacia: «Epafrodito»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001380
@@ -27,7 +28,13 @@ enlaces:
 - titulo: Filipenses 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/2
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200001380'
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Pablo pasa a decir colaborador en los dos sentidos, como lo llama Flp 2:25; el resto de la lista
+    no cambia.
+  fuente: filipenses-2
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -35,10 +42,14 @@ relaciones:
   deducido: false
   fuentes:
   - it-epafrodito
+  - filipenses-2
+  - filipenses-4
   razon: Perspicacia lo sitúa en la congregación de Filipos.
   estado: verificado
 - tipo: acompana
   persona: pablo
+  relacion: colaborador
+  relacion_inversa: colaborador
   fecha:
     desde: 59
     hasta: 61
@@ -51,5 +62,6 @@ relaciones:
   fuentes:
   - it-epafrodito
   - filipenses-2
-  razon: Está con Pablo en Roma y le sirve en nombre de los filipenses (Flp 2:25).
+  - filipenses-4
+  razon: Flp 2:25 lo llama colaborador y compañero de armas de Pablo; está con él en Roma y le sirve en nombre de los filipenses.
   estado: verificado

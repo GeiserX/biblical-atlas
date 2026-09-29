@@ -24,6 +24,7 @@ personas:
 - epafrodito
 - evodia
 - sintique
+- clemente
 contexto_origen:
   resumen: 'Preso en Roma: toda la guardia pretoriana conoce su caso y mandan saludos cristianos de la casa de César.'
   fuentes:
@@ -42,6 +43,7 @@ fuentes:
 - it-epafrodito
 - it-evodia
 - it-sintique
+- it-clemente
 enlaces:
 - titulo: 'Perspicacia: «Filipenses, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003468
@@ -49,5 +51,5 @@ enlaces:
 - titulo: Filipenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/1
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

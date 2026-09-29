@@ -19,6 +19,8 @@ fuentes:
 - 2-corintios-1
 - 2-corintios-11
 - bt-19
+- filipenses-1
+- filipenses-2
 enlaces:
 - titulo: 'Perspicacia: «Timoteo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004416
@@ -62,6 +64,8 @@ relaciones:
   - 1-corintios-4
   - 1-corintios-16
   - 2-corintios-1
+  - filipenses-1
+  - filipenses-2
   razon: Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años.
     La Tabla de los libros fecha 2 Timoteo hacia 65.
   estado: verificado
@@ -92,4 +96,22 @@ relaciones:
   - hch-16
   - 2-timoteo-1
   razon: Hch 16:1 lo hace hijo de una judía creyente y de un griego; 2Ti 1:5 da el nombre de ella, Eunice.
+  estado: verificado
+- tipo: vivio_en
+  lugar: roma
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c. (con Pablo en su primer encierro)
+  deducido: true
+  fuentes:
+  - it-timoteo
+  - filipenses-1
+  - filipenses-2
+  razon: 'Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el saludo
+    de Filipenses, Colosenses y Filemón.'
   estado: verificado

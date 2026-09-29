@@ -248,6 +248,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | filemon-1 | [Filemón](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | filipenses-1 | [Filipenses 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | filipenses-2 | [Filipenses 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| filipenses-3 | [Filipenses 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | filipenses-4 | [Filipenses 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | g10-egipto | [Un libro digno de confianza. Primera parte](https://wol.jw.org/es/wol/d/r4/lp-s/102010407) | ¡Despertad! (noviembre de 2010) | 1 | 2010 | 2026-09-28 |
 | g96-observando-el-mundo | [Observando el mundo](https://wol.jw.org/es/wol/d/r4/lp-s/101996573) | ¡Despertad! (8 de agosto de 1996) | 1 | 1996 | 2026-09-28 |
@@ -714,6 +715,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ciudades-levitas | [Ciudades levitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200002730) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-claudio | [Claudio](https://wol.jw.org/es/wol/d/r4/lp-s/1200000987) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-claudio-lisias | [Claudio Lisias](https://wol.jw.org/es/wol/d/r4/lp-s/1200000988) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-clemente | [Clemente](https://wol.jw.org/es/wol/d/r4/lp-s/1200000991) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-cleopas | [Cleopas](https://wol.jw.org/es/wol/d/r4/lp-s/1200000992) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-cloe | [Cloe](https://wol.jw.org/es/wol/d/r4/lp-s/1200000964) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-clopas | [Clopas](https://wol.jw.org/es/wol/d/r4/lp-s/1200000993) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
