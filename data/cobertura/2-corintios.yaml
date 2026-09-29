@@ -1,0 +1,130 @@
+# biblical-earth: cobertura de un libro. Formato en data/cobertura/README.md.
+libro: 2-corintios
+capitulos:
+  1:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Saludo y comienzo de la carta: el consuelo de Dios, el peligro que Pablo pasó en Asia y por qué cambió sus planes de visitar Corinto."
+    tramos:
+    - {v: 1-2, tipo: carta, entidades: [carta:2-corintios, evento:pablo-escribe-2-corintios, persona:pablo, persona:timoteo, relacion:timoteo/acompana/pablo, lugar:corinto, lugar:acaya], menciona: [persona:jesus, evento:pablo-envia-a-timoteo-y-erasto-a-macedonia, lugar:macedonia], nota: "Saludo de Pablo, apóstol, y del hermano Timoteo a la congregación de Corinto y a los santos de Acaya. La nota de estudio pone a Timoteo con Pablo en Macedonia, adonde lo había enviado antes (Hch 19:22)."}
+    - {v: 3-7, tipo: carta, menciona: [persona:jesus], nota: "Dios, Padre de tiernas misericordias, consuela a Pablo en sus pruebas para que él consuele a otros. Los corintios, que sufren lo mismo, recibirán el mismo consuelo."}
+    - {v: 8-11, tipo: carta, entidades: [evento:pablo-en-peligro-de-muerte-en-asia, lugar:asia, persona:pablo], menciona: [persona:timoteo, evento:motin-de-efeso, lugar:efeso], nota: "En Asia pasaron un peligro tan grande que se vieron condenados a muerte, y Dios los libró. La nota de estudio duda entre el motín de Éfeso y las fieras de 1Co 15:32; pide que oren por ellos."}
+    - {v: 12-14, tipo: carta, menciona: [persona:jesus], nota: "Pablo y los suyos se han portado con santidad y sinceridad, sin sabiduría humana. Espera que los corintios los entiendan del todo y que se enorgullezcan unos de otros en el día del Señor."}
+    - {v: 15-18, tipo: carta, entidades: [evento:colecta-de-macedonia-y-acaya, evento:pablo-escribe-una-carta-perdida-a-corinto, persona:pablo], menciona: [lugar:macedonia, lugar:judea, lugar:corinto, lugar:efeso, carta:1-corintios], nota: "Pablo pensaba ir a Corinto camino de Macedonia, volver al regreso y seguir a Judea con su ayuda. Según las notas, lo anunció en una carta perdida, cambió de plan en 1 Corintios y quería recoger la colecta."}
+    - {v: 19-22, tipo: carta, entidades: [persona:silas, relacion:silas/acompana/pablo, evento:crispo-cree, persona:timoteo], menciona: [persona:jesus, lugar:corinto, evento:pablo-envia-a-timoteo-a-corinto], nota: "Silvano, Timoteo y Pablo predicaron en Corinto a Jesucristo, en quien las promesas de Dios se cumplen. La referencia lleva a Hch 18:5; Silvano es el Silas de Hechos. Dios los ungió y les dio el espíritu como garantía."}
+    - {v: 23-24, tipo: carta, menciona: [lugar:corinto], nota: "Pablo pone a Dios por testigo de que no ha ido aún a Corinto por consideración a ellos. No son amos de su fe, sino colaboradores de su alegría."}
+  2:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo explica su carta anterior, pide perdonar al expulsado arrepentido y cuenta su paso por Troas camino de Macedonia."
+    tramos:
+    - {v: 1-4, tipo: carta, entidades: [evento:pablo-escribe-1-corintios, persona:pablo], menciona: [lugar:corinto, carta:1-corintios], nota: "Pablo decidió no volver a visitarlos con tristeza. Les escribió angustiado y con muchas lágrimas, no para entristecerlos, sino por amor. Perspicacia dice que esa carta fue 1 Corintios."}
+    - {v: 5-11, tipo: carta, entidades: [evento:pablo-pide-perdonar-al-expulsado-de-corinto, evento:pablo-manda-expulsar-al-inmoral-de-corinto, lugar:corinto, evento:los-corintios-expulsan-al-inmoral], menciona: [persona:satanas, persona:jesus], nota: "El que causó tristeza ya recibió bastante reprensión de la mayoría; ahora deben perdonarlo y consolarlo. Pablo también perdona, para que Satanás no se aproveche de ellos. La nota lo identifica con el expulsado de 1Co 5."}
+    - {v: 12-13, tipo: carta, entidades: [carta:2-corintios, evento:pablo-predica-en-troas-y-no-encuentra-a-tito, evento:pablo-deja-efeso-hacia-macedonia, evento:pablo-escribe-2-corintios, persona:tito, lugar:troas, lugar:macedonia, persona:pablo, relacion:tito/acompana/pablo, viaje:tercer-viaje], menciona: [persona:jesus, lugar:efeso, evento:pablo-envia-a-tito-a-corinto, evento:tito-trae-noticias-de-corinto], nota: "En Troas se le abrió una puerta para predicar, pero no halló a su hermano Tito y siguió a Macedonia. La nota de estudio recuerda que lo había enviado a Corinto y que se reunieron en Macedonia (2Co 7:5-7)."}
+    - {v: 14-17, tipo: carta, menciona: [persona:jesus], nota: "Dios los lleva en un desfile triunfal con Cristo y esparce por ellos el aroma de su conocimiento: vida para unos y muerte para otros. No comercian con la palabra de Dios, hablan con sinceridad."}
+  3:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo compara el ministerio del nuevo pacto con el de la Ley: el brillo que salía de la cara de Moisés y el velo que se ponía."
+    tramos:
+    - {v: 1-3, tipo: carta, entidades: [carta:2-corintios, persona:pablo], menciona: [lugar:corinto, persona:jesus, evento:pablo-llega-a-corinto, evento:dios-da-a-moises-las-tablas-del-testimonio, evento:moises-recibe-las-segundas-tablas], nota: "Pablo no necesita cartas de recomendación: los corintios, a quienes predicó en su ciudad (nota del v. 3, Hch 18:4-11), son su carta, escrita con espíritu en corazones y no en tablas de piedra como la Ley."}
+    - {v: 4-6, tipo: carta, entidades: [persona:pablo], menciona: [persona:timoteo, persona:jesus], nota: "Dios los capacitó como ministros de un nuevo pacto, del espíritu, que da vida, y no de un código escrito, que condena a muerte. La nota del v. 6 incluye a Timoteo y remite a Jer 31:31-34."}
+    - {v: 7-11, tipo: carta, entidades: [evento:rostro-de-moises-emite-rayos], menciona: [persona:moises, evento:pacto-de-la-ley, evento:dios-da-a-moises-las-tablas-del-testimonio], nota: "La Ley escrita en piedra vino con un brillo tal que los israelitas no podían mirar la cara de Moisés (Éx 34:29, 30). Más gloria tiene el ministerio del espíritu, que declara justos y no pasa."}
+    - {v: 12-16, tipo: carta, entidades: [evento:rostro-de-moises-emite-rayos], menciona: [persona:moises, persona:jesus, evento:pacto-de-la-ley, lugar:monte-sinai], nota: "Moisés se tapaba la cara con un velo. Los israelitas del Sinaí (nota del v. 14) y los judíos que aún leen el antiguo pacto tienen la mente velada; el velo cae al volverse a Jehová mediante Cristo (Éx 34:34)."}
+    - {v: 17-18, tipo: carta, nota: "Jehová es el Espíritu, y donde está su espíritu hay libertad. Con la cara descubierta, los cristianos ungidos reflejan como espejos la gloria de Jehová y se van transformando en su imagen."}
+  4:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo y sus compañeros no se rinden en su ministerio: lo llevan en vasijas de barro, sufren como Jesús y esperan resucitar con él."
+    tramos:
+    - {v: 1-6, tipo: carta, entidades: [carta:2-corintios, persona:pablo, persona:satanas], menciona: [persona:jesus], nota: "No manipulan la palabra de Dios. El dios de este sistema, Satanás según la nota del v. 4, ciega a los no creyentes. Dios, que mandó brillar la luz (Gé 1:3, sin suceso fechado), ilumina los corazones mediante Cristo."}
+    - {v: 7-12, tipo: carta, entidades: [persona:pablo], menciona: [persona:jesus, evento:muerte-de-jesus], nota: "El tesoro del ministerio lo llevan hombres frágiles como vasijas de barro, y así se ve que la fuerza es de Dios. Oprimidos y perseguidos, no quedan destruidos, y viven expuestos a una muerte como la de Jesús."}
+    - {v: 13-15, tipo: carta, menciona: [persona:jesus, evento:resurreccion-de-jesus], nota: "Cita Sl 116:10 según la Septuaginta, sin nombrar autor. Quien resucitó a Jesús los resucitará también. La nota del v. 13 dice que el papiro P46, de hacia el 200 e.c., conserva este pasaje."}
+    - {v: 16-18, tipo: carta, nota: "Aunque el cuerpo se desgasta, la persona interior se renueva cada día. Las dificultades son pasajeras y ligeras frente a la gloria eterna, y la vista se fija en lo que no se ve."}
+  5:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Cuerpo de la carta: la esperanza de un cuerpo celestial, el tribunal del Cristo y el ministerio de la reconciliación. Sin lugares ni sucesos nuevos; solo nombra a Cristo."
+    tramos:
+    - {v: 1-5, tipo: carta, entidades: [carta:2-corintios], nota: "El cuerpo terrenal es una tienda que se desarmará; Dios tiene para los ungidos una morada eterna en el cielo. Gimen por ella sin querer morir, y el espíritu es el adelanto de lo que vendrá."}
+    - {v: 6-10, tipo: carta, menciona: [persona:jesus], nota: "Viven guiados por la fe y no por lo que ven, y buscan agradar al Señor. Todos comparecerán ante el tribunal del Cristo; la nota recuerda la plataforma de los jueces que había en Corinto."}
+    - {v: 11-15, tipo: carta, entidades: [persona:pablo], menciona: [persona:jesus, evento:muerte-de-jesus, evento:resurreccion-de-jesus], nota: "Pablo no se recomienda otra vez: da a los corintios con qué responder a quienes se jactan de lo externo. Lo mueve el amor de Cristo, que murió por todos y fue levantado."}
+    - {v: 16-21, tipo: carta, menciona: [persona:jesus], nota: "Quien está unido a Cristo es una nueva creación. Dios reconcilia consigo al mundo por medio de él, y Pablo y sus compañeros ruegan como embajadores. Cristo, sin pecado, murió como ofrenda por el pecado."}
+  6:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Cuerpo de la carta: Pablo expone sus pruebas como ministro, pide cariño a los corintios y les manda no unirse a los no creyentes. Nombra a Cristo y a Belial, que es Satanás."
+    tramos:
+    - {v: 1-2, tipo: carta, entidades: [carta:2-corintios], nota: "Como colaboradores de Dios, ruegan que no reciban en vano su bondad inmerecida. Citan Is 49:8 sin nombrar a Isaías: ahora es el tiempo aceptable y el día de salvación."}
+    - {v: 3-10, tipo: carta, entidades: [persona:pablo], menciona: [evento:pablo-y-silas-azotados-y-encarcelados, evento:apedrean-a-pablo-en-listra], nota: "Se muestran ministros de Dios aguantando golpes, cárceles, tumultos, desvelos y hambre, y con armas de justicia en ambas manos. Las referencias remiten a los azotes de Filipos (Hch 16:22, 23) y la pedrada de Listra (Hch 14:19)."}
+    - {v: 11-13, tipo: carta, menciona: [lugar:corinto], nota: "Pablo llama a los corintios por su nombre y les habla con franqueza, como a hijos: su cariño por ellos no tiene límites, y les pide que respondan igual."}
+    - {v: 14-18, tipo: carta, entidades: [persona:satanas], menciona: [persona:jesus], nota: "No deben uncirse con no creyentes; la nota ve detrás Dt 22:10. Cristo nada tiene en común con Belial. Une textos de Le 26, Ez 37, Is 52 y 2Sa 7 sin nombrar a sus escritores."}
+  7:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo cuenta el consuelo que le dio Tito en Macedonia y cómo reaccionaron los corintios a su carta anterior."
+    tramos:
+    - {v: "1", tipo: carta, entidades: [carta:2-corintios], nota: "Con esas promesas, los cristianos deben limpiarse de todo lo que ensucia el cuerpo y la mente y seguir creciendo en santidad con temor de Dios."}
+    - {v: 2-4, tipo: carta, nota: "Pablo pide que le abran el corazón: no ha perjudicado, corrompido ni explotado a nadie. Los quiere para vivir y morir juntos, está orgulloso de ellos y alegre pese a sus sufrimientos."}
+    - {v: 5-7, tipo: carta, entidades: [persona:pablo, persona:tito, lugar:macedonia, evento:pablo-deja-efeso-hacia-macedonia, evento:tito-trae-noticias-de-corinto, relacion:tito/acompana/pablo], menciona: [lugar:efeso, evento:pablo-predica-en-troas-y-no-encuentra-a-tito, evento:pablo-en-peligro-de-muerte-en-asia], nota: "Al llegar a Macedonia, Pablo sufre ataques por fuera y miedos por dentro. Tito llega y lo consuela con noticias del cariño de los corintios. La nota recuerda que Pablo había escrito desde Éfeso."}
+    - {v: 8-12, tipo: carta, entidades: [evento:los-corintios-expulsan-al-inmoral, lugar:corinto], menciona: [carta:1-corintios, evento:pablo-escribe-1-corintios, evento:pablo-manda-expulsar-al-inmoral-de-corinto, evento:pablo-pide-perdonar-al-expulsado-de-corinto], nota: "Su carta anterior, 1 Corintios según las notas, los entristeció. Esa tristeza según Dios los llevó a arrepentirse y a corregir el caso del inmoral de 1Co 5. Ni el culpable ni el ofendido tienen nombre."}
+    - {v: 13-16, tipo: carta, entidades: [persona:tito, evento:pablo-envia-a-tito-a-corinto, evento:tito-trae-noticias-de-corinto], nota: "Pablo se alegra aún más por la alegría de Tito, que fue bien recibido en Corinto. Los corintios lo trataron con respeto y obediencia, y lo que Pablo había dicho de ellos resultó verdad."}
+  8:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "La colecta para los santos de Judea: el ejemplo de Macedonia, el de Jesús, y Tito con dos hermanos para terminarla."
+    tramos:
+    - {v: 1-5, tipo: carta, entidades: [evento:colecta-de-macedonia-y-acaya, lugar:macedonia], menciona: [lugar:filipos, lugar:tesalonica, lugar:judea, lugar:jerusalen], nota: "Las congregaciones de Macedonia, entre ellas Filipos y Tesalónica según la nota, dieron con alegría más de lo que podían pese a su pobreza y a una dura prueba, para ayudar a los santos de Judea."}
+    - {v: 6-7, tipo: carta, entidades: [persona:tito, evento:pablo-envia-a-tito-a-corinto, evento:tito-vuelve-a-corinto-con-dos-hermanos], nota: "Como Tito empezó la colecta entre los corintios, Pablo lo anima a terminarla. Ellos, que tienen fe, palabra, conocimiento y entusiasmo, deben destacar también en dar."}
+    - {v: 8-9, tipo: carta, menciona: [persona:jesus], nota: "No es una orden: quiere probar la sinceridad de su amor. Jesucristo era rico y se hizo pobre por ellos para que se hicieran ricos."}
+    - {v: 10-15, tipo: carta, entidades: [evento:colecta-de-macedonia-y-acaya], menciona: [evento:codornices-y-mana-en-el-desierto-de-sin], nota: "Empezaron hace un año y deben terminar según lo que tengan, para que haya igualdad con los necesitados. Cita Éx 16:18, el maná del desierto según la nota, sin nombrar a Moisés."}
+    - {v: 16-24, tipo: carta, entidades: [carta:2-corintios, persona:pablo, persona:tito, evento:tito-vuelve-a-corinto-con-dos-hermanos, lugar:corinto, relacion:tito/acompana/pablo], menciona: [persona:aristarco, persona:tiquico, persona:trofimo, evento:companeros-de-la-colecta, evento:pablo-escribe-2-corintios], nota: "Tito va a Corinto por su propia voluntad con dos hermanos sin nombre, enviados de las congregaciones, para que nadie critique cómo se maneja el dinero. Las notas ven posibles a Aristarco, Tíquico o Trófimo. Alude a Pr 3:4."}
+  9:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Segunda parte del llamamiento a la colecta para los cristianos pobres de Judea: preparar a tiempo lo prometido y dar con alegría."
+    tramos:
+    - {v: 1-5, tipo: carta, entidades: [carta:2-corintios, evento:colecta-de-macedonia-y-acaya, persona:pablo, lugar:acaya, lugar:macedonia, evento:tito-vuelve-a-corinto-con-dos-hermanos], menciona: [persona:tito, lugar:corinto, evento:companeros-de-la-colecta, evento:complot-en-grecia], nota: "Acaya está dispuesta desde el año anterior y Pablo lo cuenta con orgullo a los macedonios. Manda por delante a los hermanos, Tito y otros dos según la nota de 8:22, para que la donación esté lista cuando llegue."}
+    - {v: 6-11, tipo: carta, nota: "Quien siembra con generosidad recoge mucho. Cada uno dé lo que resolvió en su corazón, sin tristeza ni presión, y Dios le dará de sobra para seguir haciendo el bien. Cita el Sl 112:9 sin nombrar a su autor."}
+    - {v: 12-15, tipo: carta, entidades: [evento:colecta-de-macedonia-y-acaya], menciona: [lugar:jerusalen, lugar:judea, persona:jesus], nota: "La ayuda cubre las necesidades de los santos, de Jerusalén y Judea según la nota del v. 12, y los mueve a glorificar a Dios y a orar por los corintios. Termina dando gracias por el regalo de Dios."}
+  10:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo empieza a defender su autoridad de apóstol frente a los críticos de Corinto. Sin sucesos nuevos; recuerda que él llevó primero las buenas noticias a Corinto."
+    tramos:
+    - {v: 1-6, tipo: carta, entidades: [carta:2-corintios, persona:pablo], menciona: [persona:jesus, persona:apolos, persona:pedro], nota: "Pablo ruega con la bondad de Cristo: parece poca cosa en persona y valiente por escrito. Su lucha, sin armas humanas, derriba razonamientos contra Dios. La nota del v. 3 cuenta entre sus compañeros a Apolos y a Cefas."}
+    - {v: 7-12, tipo: carta, entidades: [persona:pablo], menciona: [persona:jesus, carta:1-corintios], nota: "Algunos en Corinto dicen que sus cartas imponen pero que en persona es débil y habla mal; la nota ve posible que fueran los superapóstoles de 11:5. Pablo avisa que hará presente lo que escribe ausente."}
+    - {v: 13-18, tipo: carta, entidades: [persona:pablo, evento:pablo-llega-a-corinto, relacion:pablo/vivio_en/corinto], menciona: [lugar:corinto, persona:jesus], nota: "Solo presume dentro del territorio que Dios le fijó, que llega a Corinto, donde fue el primero en predicar. Espera llevar el mensaje más lejos. Cita Jer 9:24 sin nombrar al profeta: quien presuma, que lo haga de Jehová."}
+  11:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo defiende su apostolado frente a los «superapóstoles» y enumera lo que ha sufrido. Termina con su huida de Damasco en tiempos del rey Aretas."
+    tramos:
+    - {v: 1-6, tipo: carta, entidades: [carta:2-corintios, persona:pablo, evento:pecado-de-adan-y-eva], menciona: [persona:jesus, persona:eva], nota: "Pablo pide que le soporten un poco de insensatez. Prometió la congregación a Cristo como virgen casta y teme que la corrompan, como la serpiente engañó a Eva. Los «superapóstoles» no tienen nombre."}
+    - {v: 7-11, tipo: carta, entidades: [persona:pablo, relacion:pablo/vivio_en/corinto, evento:crispo-cree, persona:silas, persona:timoteo], menciona: [lugar:corinto, lugar:macedonia, lugar:acaya, evento:pablo-llega-a-corinto], nota: "Predicó gratis en Corinto. Los hermanos llegados de Macedonia, Silas y Timoteo según «Testimonio completo», cap. 19, cubrieron sus necesidades. Presumirá de ello en Acaya. La nota del v. 8 ve posible que humillarse sea fabricar tiendas."}
+    - {v: 12-15, tipo: carta, menciona: [persona:satanas, persona:jesus], nota: "Seguirá sin cobrar para no dar pretexto a los falsos apóstoles, que se disfrazan de apóstoles de Cristo igual que Satanás se disfraza de ángel de luz. No tienen nombre."}
+    - {v: 16-21, tipo: carta, menciona: [persona:jesus], nota: "Pablo acepta hablar como un insensato y presumir, porque los corintios, tan «sensatos», toleran a quien los esclaviza, los explota o les da bofetadas."}
+    - {v: "22", tipo: carta, entidades: [persona:pablo, relacion:pablo/pariente/abrahan], menciona: [persona:abrahan], nota: "Frente a sus críticos, Pablo también es hebreo, israelita y descendiente de Abrahán. La nota de estudio cree que ellos presumían de su origen judío."}
+    - {v: 23-25, tipo: carta, entidades: [persona:pablo, evento:pablo-y-silas-azotados-y-encarcelados, evento:apedrean-a-pablo-en-listra], menciona: [lugar:filipos, lugar:listra, evento:pablo-en-peligro-de-muerte-en-asia], nota: "Más cárceles y golpes que nadie: cinco veces 39 azotes de los judíos, tres veces varas, una lapidación y tres naufragios. Las notas ponen las varas en Filipos y la lapidación en Listra; el naufragio de Hch 27 es posterior."}
+    - {v: 26-27, tipo: carta, menciona: [lugar:pisidia, lugar:antioquia-de-pisidia, lugar:iconio, evento:expulsados-de-antioquia-de-pisidia, evento:huida-de-iconio], nota: "Viajes con peligros de ríos, ladrones, judíos, gentiles, ciudades, desierto, mar y falsos hermanos; hambre, frío y noches sin dormir. La nota pone ríos y ladrones en Pisidia; las referencias, Antioquía de Pisidia e Iconio (Hch 13:50; 14:5, 6)."}
+    - {v: 28-29, tipo: carta, nota: "Además, cada día lo agobia la preocupación por todas las congregaciones: siente como suya la debilidad de cada uno y se indigna cuando alguien tropieza."}
+    - {v: 30-31, tipo: carta, menciona: [persona:jesus], nota: "Si tiene que presumir, lo hará de su debilidad. Pone por testigo a Dios, el Padre del Señor Jesús; según la nota del v. 31, la alabanza es para Jehová."}
+    - {v: 32-33, tipo: carta, entidades: [evento:huida-de-damasco, persona:pablo, persona:aretas, lugar:damasco, relacion:pablo/vivio_en/damasco, relacion:aretas/vivio_en/arabia], menciona: [lugar:arabia], nota: "El gobernador (etnarca) del rey Aretas, sin nombre, vigila Damasco para prenderlo, y lo bajan por la muralla. La nota da a Aretas IV de c. 9 a.e.c. a 40 e.c., con capital en Petra."}
+  12:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Pablo, obligado a presumir ante los superapóstoles, habla de una visión, de su espina en la carne y de su próxima visita a Corinto."
+    tramos:
+    - {v: 1-6, tipo: carta, entidades: [carta:2-corintios, persona:pablo, evento:vision-del-tercer-cielo], menciona: [persona:jesus, viaje:primeros-anos-de-pablo, evento:pablo-en-trance-en-el-templo], nota: "Un hombre unido a Cristo fue llevado al tercer cielo y al paraíso hace 14 años; la nota dice que es Pablo. Ninguno es un lugar del mapa. La referencia de 12:1 recuerda su visión en el templo."}
+    - {v: 7-10, tipo: carta, entidades: [persona:pablo], menciona: [persona:satanas, persona:jesus], nota: "Sufre una espina clavada en su carne, que llama ángel de Satanás, para no enorgullecerse. Rogó tres veces al Señor, Jehová según la nota, que le respondió que su bondad bastaba. La nota ve posible un mal de la vista."}
+    - {v: 11-13, tipo: carta, entidades: [persona:pablo, relacion:pablo/vivio_en/corinto], menciona: [evento:pablo-llega-a-corinto], nota: "No es inferior a los superapóstoles, un grupo sin nombre. Entre los corintios hizo las señales de apóstol con aguante y milagros, y la única ventaja de otras congregaciones es que a ellos no les fue una carga."}
+    - {v: 14-18, tipo: carta, entidades: [persona:pablo, persona:tito, evento:pablo-envia-a-tito-a-corinto, relacion:tito/acompana/pablo], menciona: [lugar:corinto, evento:el-senor-anima-a-pablo-en-corinto, evento:complot-en-grecia, evento:pablo-escribe-romanos], nota: "Está listo para ir por tercera vez. La nota dice que solo fue dos: el año y medio de la fundación y la visita de c. 56, cuando escribió Romanos. Tito y el otro hermano no abusaron de nadie."}
+    - {v: 19-21, tipo: carta, nota: "No se defiende ante ellos, sino ante Dios, para edificarlos. Teme encontrar peleas, celos y chismes, y tener que llorar por los que siguen sin arrepentirse de la impureza y la inmoralidad."}
+  13:
+    estado: completo
+    revisado: 2026-09-29
+    nota: "Final de la carta: Pablo avisa de su tercera visita, pide a los corintios que se examinen y se despide."
+    tramos:
+    - {v: 1-4, tipo: carta, entidades: [carta:2-corintios, persona:pablo], menciona: [lugar:corinto, evento:complot-en-grecia, persona:jesus, evento:muerte-de-jesus, evento:resurreccion-de-jesus], nota: "Se prepara para ir por tercera vez, la visita de c. 56 según la nota de 12:14. Cita Dt 19:15 sin nombrar a Moisés y avisa a los que pecaron de que habrá disciplina. Cristo vive por poder divino."}
+    - {v: 5-10, tipo: carta, entidades: [persona:pablo, evento:pablo-escribe-2-corintios], menciona: [persona:jesus], nota: "Que se examinen para ver si siguen en la fe. Pablo ora para que se corrijan y escribe estando lejos, para no tener que ser severo cuando esté allí con la autoridad que el Señor le dio."}
+    - {v: 11-14, tipo: carta, menciona: [persona:jesus], nota: "Despedida: que se alegren, se corrijan, vivan en paz y se saluden con un beso santo. Saludan los santos que están con Pablo, sin nombres. Cierra pidiendo para ellos la bondad de Jesucristo, el amor divino y el espíritu santo."}

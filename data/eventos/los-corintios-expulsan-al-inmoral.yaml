@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-corintios-expulsan-al-inmoral
+titulo: La congregación de Corinto se arrepiente y expulsa al inmoral
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+orden_relato:
+  serie: 2-corintios
+  orden: 7008
+  tras: pablo-manda-expulsar-al-inmoral-de-corinto
+lugares:
+- corinto
+personas: []
+pasajes:
+- 2Co 2:6
+- 2Co 7:8-12
+resumen: 'La primera carta de Pablo entristece a los corintios, y esa tristeza los lleva a arrepentirse: dejan de consentir
+  el pecado y sacan de la congregación al hombre inmoral, que también llega a arrepentirse.'
+razon: Perspicacia «Corintios, Cartas a los», apartado «Por qué se escribió», y las notas de estudio de 2Co 7:9 y 7:11. Pasa
+  entre la primera carta y el informe de Tito, ambos de c. 55.
+fuentes:
+- 2-corintios-7
+- 2-corintios-2
+- it-corintios
+- tnm-tabla
+enlaces:
+- titulo: 2 Corintios 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/7
+  tipo: biblia
+- titulo: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  tipo: perspicacia
+buscar: corintios tristeza arrepentimiento expulsado 2 Corintios 7
+consultado: '2026-09-29'
+estado: verificado

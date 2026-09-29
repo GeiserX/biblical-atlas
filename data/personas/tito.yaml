@@ -19,6 +19,10 @@ fuentes:
 - it-tito-persona
 - galatas-2
 - tito-1
+- 2-corintios-2
+- 2-corintios-7
+- 2-corintios-8
+- 2-corintios-12
 enlaces:
 - titulo: 'Perspicacia: «Tito»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004431
@@ -26,7 +30,13 @@ enlaces:
 - titulo: Tito 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004431'
+historial:
+- fecha: '2026-09-29'
+  cambio: La relación con Pablo de c. 55 cita también 2Co 2:13, 8:6-23 y 12:18, y lleva relacion compañero (2Co 8:23). Un
+    anadir se habría fundido en la de 49.
+  fuente: 2-corintios-8
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: acompana
@@ -47,6 +57,7 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: pablo
+  relacion: compañero
   fecha:
     desde: 55
     hasta: 55
@@ -58,8 +69,12 @@ relaciones:
   deducido: false
   fuentes:
   - it-tito-persona
+  - 2-corintios-2
   - 2-corintios-7
-  razon: Se reúne con Pablo en Macedonia con noticias de Corinto (2Co 7:6, 7).
+  - 2-corintios-8
+  - 2-corintios-12
+  razon: Pablo lo manda a Corinto por la colecta, lo espera en Troas y lo recibe en Macedonia; lo llama su compañero y colaborador
+    y lo envía otra vez (2Co 2:13; 7:6, 7; 8:6, 16, 17, 23; 12:18).
   estado: verificado
 - tipo: acompana
   persona: pablo

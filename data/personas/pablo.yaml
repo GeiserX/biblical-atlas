@@ -63,6 +63,19 @@ fuentes:
 - 1-corintios-14
 - 1-corintios-15
 - 1-corintios-16
+- 2-corintios-1
+- 2-corintios-2
+- 2-corintios-3
+- 2-corintios-4
+- 2-corintios-5
+- 2-corintios-6
+- 2-corintios-7
+- 2-corintios-8
+- 2-corintios-9
+- 2-corintios-10
+- 2-corintios-11
+- 2-corintios-12
+- 2-corintios-13
 enlaces:
 - titulo: 'Perspicacia: «Pablo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
@@ -191,6 +204,7 @@ relaciones:
   - it-damasco
   - bt-8
   - hch-26
+  - 2-corintios-11
   razon: Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la
     ciudad desde Arabia.
   estado: verificado
@@ -231,6 +245,9 @@ relaciones:
   - 1-corintios-3
   - 1-corintios-4
   - 1-corintios-9
+  - 2-corintios-10
+  - 2-corintios-11
+  - 2-corintios-12
   razon: 'Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.'
   estado: verificado
 - tipo: vivio_en
@@ -269,6 +286,7 @@ relaciones:
   - romanos-4
   - romanos-11
   - it-pablo
+  - 2-corintios-11
   razon: 'Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como
     judío.'
   estado: verificado

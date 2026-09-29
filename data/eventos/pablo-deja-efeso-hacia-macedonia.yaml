@@ -13,8 +13,8 @@ orden_relato:
   serie: hechos
   orden: 2001
 lugares:
-- macedonia
 - efeso
+- macedonia
 - troas
 personas:
 - pablo
@@ -31,6 +31,7 @@ fuentes:
 - si-3
 - bt-21
 - it-troas
+- 2-corintios-7
 enlaces:
 - titulo: Hechos 20 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
@@ -40,5 +41,9 @@ historial:
 - fecha: '2026-09-29'
   cambio: 'Troas, que la razón nombra por 2Co 2:12, 13, pasa también a lugares.'
   fuente: it-troas
+- fecha: '2026-09-29'
+  cambio: 'Éfeso pasa a primer lugar: Hch 20:1 cuenta la despedida allí. Con Macedonia primero, la línea de tiempo lo ponía
+    en Macedonia y la parada de Troas, que según Perspicacia «Troas» va antes, quedaba atrás.'
+  fuente: hch-20
 consultado: '2026-09-29'
 estado: verificado

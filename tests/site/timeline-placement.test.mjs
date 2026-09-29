@@ -47,8 +47,9 @@ const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch:
 // group with the raw date of its target, so the group did not fit and fell back to its dates. 2: Paul was drawn on
 // the road while they happened at a stop of one moment. 3: the window differed from the event's own date only by the
 // cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»). 4: it names
-// Paul but nobody in it is there (`presentes: []`, events of Romans and 1 Corinthians merged after this change), so his
-// stops no longer place it: it keeps its date or follows its series and its «tras».
+// Paul but `presentes` leaves him out (events of Romans and 1 and 2 Corinthians merged after this change), so his stops
+// no longer place it: it keeps its date or follows its series and its «tras». 5: its «tras» points at one of those and
+// it now starts where that one ends.
 const EXPECTED_CHANGES = {
   'evento:creacion-de-eva': 1, 'evento:pecado-de-adan-y-eva': 1, 'evento:juicio-en-eden': 1, 'evento:expulsion-del-eden': 1,
   'evento:nacimiento-de-cain': 1, 'evento:ofrendas-de-cain-y-abel': 1, 'evento:cain-mata-a-abel': 1, 'evento:cain-edifica-enoc': 1,
@@ -65,6 +66,9 @@ const EXPECTED_CHANGES = {
   'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3, 'evento:joel-anuncia-el-dia-de-jehova': 3,
   'evento:colecta-de-macedonia-y-acaya': 4, 'evento:pablo-escribe-una-carta-perdida-a-corinto': 4,
   'evento:pablo-manda-expulsar-al-inmoral-de-corinto': 4,
+  'evento:pablo-predica-en-troas-y-no-encuentra-a-tito': 2, 'evento:pablo-escribe-2-corintios': 2,
+  'evento:pablo-pide-perdonar-al-expulsado-de-corinto': 4, 'evento:tito-vuelve-a-corinto-con-dos-hermanos': 4,
+  'evento:los-corintios-expulsan-al-inmoral': 5,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {
