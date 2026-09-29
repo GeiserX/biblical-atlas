@@ -19,7 +19,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Números](../../../data/cobertura/numeros.yaml) | 36 de 36 | 1288 de 1288 | 100 % |
 | [Deuteronomio](../../../data/cobertura/deuteronomio.yaml) | 34 de 34 | 959 de 959 | 100 % |
 | [Josué](../../../data/cobertura/josue.yaml) | 24 de 24 | 658 de 658 | 100 % |
-| Jueces | 0 de 21 | 0 de 618 | 0 % |
+| [Jueces](../../../data/cobertura/jueces.yaml) | 21 de 21 | 618 de 618 | 100 % |
 | [Rut](../../../data/cobertura/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
 | 1 Samuel | 0 de 31 | 0 de 810 | 0 % |
 | 2 Samuel | 0 de 24 | 0 de 695 | 0 % |
@@ -42,12 +42,12 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
 | [Oseas](../../../data/cobertura/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](../../../data/cobertura/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
-| [Amós](../../../data/cobertura/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
-| [Abdías](../../../data/cobertura/abdias.yaml) | 1 de 1 | 21 de 21 | 100 % |
-| [Jonás](../../../data/cobertura/jonas.yaml) | 4 de 4 | 48 de 48 | 100 % |
-| [Miqueas](../../../data/cobertura/miqueas.yaml) | 7 de 7 | 105 de 105 | 100 % |
-| [Nahúm](../../../data/cobertura/nahum.yaml) | 3 de 3 | 47 de 47 | 100 % |
-| [Habacuc](../../../data/cobertura/habacuc.yaml) | 3 de 3 | 56 de 56 | 100 % |
+| Amós | 0 de 9 | 0 de 146 | 0 % |
+| Abdías | 0 de 1 | 0 de 21 | 0 % |
+| Jonás | 0 de 4 | 0 de 48 | 0 % |
+| Miqueas | 0 de 7 | 0 de 105 | 0 % |
+| Nahúm | 0 de 3 | 0 de 47 | 0 % |
+| Habacuc | 0 de 3 | 0 de 56 | 0 % |
 | Sofonías | 0 de 3 | 0 de 53 | 0 % |
 | Ageo | 0 de 2 | 0 de 38 | 0 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 664 de 1189 | 17946 de 31062 | 58 % |
+| **Total** | 658 de 1189 | 18141 de 31062 | 58 % |
 
 ## Capítulos empezados
 

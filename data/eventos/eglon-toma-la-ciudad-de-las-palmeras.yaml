@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eglon-toma-la-ciudad-de-las-palmeras
+titulo: Eglón de Moab toma la ciudad de las palmeras
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 3012
+lugares:
+- jerico
+- moab
+personas:
+- eglon
+presentes:
+- eglon
+pasajes:
+- Jue 3:12-14
+resumen: Israel vuelve a hacer lo malo y Jehová deja que Eglón, rey de Moab, se haga fuerte. Con ammonitas y amalequitas ataca
+  a Israel, toma Jericó, la ciudad de las palmeras, y somete al pueblo dieciocho años.
+razon: 'Perspicacia «Eglón», núm. 1, y «Jericó»: Eglón mandaba la alianza y retuvo la ciudad dieciocho años. Límites: muerte
+  de Josué, c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+fuentes:
+- jueces-3
+- it-eglon
+- it-jerico
+- w97-ehud
+- it-jueces
+- si-3
+- it-jefte
+enlaces:
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

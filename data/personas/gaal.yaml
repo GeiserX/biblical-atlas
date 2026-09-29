@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gaal
+nombre: Gaal
+nombres:
+- nombre: Gaal
+perspicacia: '1200001578'
+resumen: Hijo de Ébed. Llegó a Siquem con sus hermanos, se ganó la confianza de sus líderes y los animó contra Abimélec. Perdió
+  la batalla ante la puerta de la ciudad y Zebul lo echó.
+razon: Perspicacia «Gaal»; Jue 9:26-41.
+fuentes:
+- it-gaal
+- jueces-9
+enlaces:
+- titulo: 'Perspicacia: «Gaal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001578
+  tipo: perspicacia
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ebed-padre-de-gaal
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-9
+  - it-gaal
+  - it-ebed
+  razon: Jue 9:26, 28, 30 lo llaman Gaal hijo de Ébed.
+  estado: verificado
+- tipo: vivio_en
+  lugar: siquem
+  deducido: false
+  fuentes:
+  - jueces-9
+  - it-gaal
+  razon: 'Jue 9:26, 41: entró a Siquem con sus hermanos y estuvo allí hasta que Zebul los expulsó.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

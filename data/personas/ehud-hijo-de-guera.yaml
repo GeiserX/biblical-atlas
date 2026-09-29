@@ -11,6 +11,7 @@ razon: Perspicacia «Ehúd», núm. 2, párr. 3 a 7; Jue 3:12-30. La Biblia lo l
 fuentes:
 - it-ehud
 - jueces-3
+- w97-ehud
 enlaces:
 - titulo: 'Perspicacia: «Ehúd»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001268
@@ -18,5 +19,25 @@ enlaces:
 - titulo: Jueces 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200001268#2
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: pariente
+  persona: guera-padre-de-ehud
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-3
+  - it-guera-i
+  razon: 'Jue 3:15: Ehúd hijo de Guerá.'
+  estado: verificado
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - jueces-3
+  - it-ehud
+  razon: Jue 3:15 lo llama benjaminita; Perspicacia «Ehúd», núm. 2, lo pone en la tribu de Benjamín.
+  estado: verificado

@@ -18,7 +18,7 @@ lugares:
 - corinto
 personas:
 - pablo
-- sostenes
+- sostenes-companero-de-pablo
 - estefanas
 - fortunato
 - acaico
@@ -26,7 +26,7 @@ personas:
 - priscila
 presentes:
 - pablo
-- sostenes
+- sostenes-companero-de-pablo
 - estefanas
 - fortunato
 - acaico
@@ -66,5 +66,13 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
   tipo: perspicacia
 buscar: Pablo escribe 1 Corintios desde Éfeso
+historial:
+- fecha: '2026-09-29'
+  cambio: Sóstenes pasa a ser sostenes-companero-de-pablo, el hermano de 1Co 1:1; que sea el jefe de sinagoga de Hch 18 solo
+    es posible.
+  fuente: it-sostenes
+- fecha: '2026-09-29'
+  cambio: Entre los presentes en Éfeso, Sóstenes es ahora sostenes-companero-de-pablo, no el jefe de sinagoga de Hch 18.
+  fuente: it-sostenes
 consultado: '2026-09-29'
 estado: verificado

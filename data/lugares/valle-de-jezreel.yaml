@@ -14,15 +14,17 @@ precision: zona
 coord_fuente: openbible:aa516c2
 coord_url: https://www.openbible.info/geo/ancient/aa516c2/valley-of-jezreel
 coord_nota: Punto representativo de OpenBible para el valle.
-resumen: Llanura que baja desde la ciudad de Jezreel hacia Bet-seán; en sentido amplio, del Carmelo al Jordán. Oseas anunció
-  que allí se rompería el arco de Israel.
-razon: 'Perspicacia «Jezreel», núm. 5, párr. 1 y 2, y núm. 4, párr. 6; Os 1:5. Coordenada de OpenBible: solo tomamos el punto.
-  Perspicacia «Jezreel», núm. 5, párr. 1 y 2; Jos 17:16. OpenBible: solo el punto.'
+resumen: Llanura que baja desde la ciudad de Jezreel hacia Bet-seán; en sentido amplio, del Carmelo al Jordán. Allí acamparon
+  los madianitas que Gedeón venció, y Oseas anunció que allí se rompería el arco de Israel.
+razon: 'Perspicacia «Jezreel», núm. 5, párr. 1 y 2, y núm. 4, párr. 6; Jos 17:16; Jue 6:33; 7:12-22; Os 1:5. OpenBible: solo
+  el punto.'
 fuentes:
 - it-jezreel
 - openbible-geo
 - oseas-1
 - josue-17
+- jueces-6
+- jueces-7
 enlaces:
 - titulo: 'Perspicacia: «Jezreel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
@@ -33,5 +35,14 @@ enlaces:
 - titulo: Josué 17 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen no nombraba la derrota de Madián ante Gedeón, que Perspicacia «Jezreel», núm. 5, sitúa en este valle
+    (Jue 6:33; 7:12-22).
+  fuente: jueces-6
+- fecha: '2026-09-29'
+  cambio: La razón repetía la cita de Perspicacia y la nota de OpenBible, restos de juntar dos lecturas. Queda una sola, con
+    Jue 6:33 y 7:12-22.
+  fuente: jueces-6
 consultado: '2026-09-29'
 estado: verificado

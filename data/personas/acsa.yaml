@@ -13,6 +13,7 @@ no_afirmamos:
 fuentes:
 - it-acsa
 - josue-15
+- jueces-1
 enlaces:
 - titulo: 'Perspicacia: «Acsá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000080
@@ -25,6 +26,7 @@ relaciones:
   fuentes:
   - josue-15
   - it-acsa
+  - jueces-1
   razon: 'Jos 15:16, 17: Caleb la llama «mi hija» y se la da a Otniel.'
   estado: verificado
 consultado: '2026-09-29'

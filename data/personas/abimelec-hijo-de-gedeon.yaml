@@ -1,0 +1,86 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abimelec-hijo-de-gedeon
+nombre: Abimélec
+nombres:
+- nombre: Abimélec
+perspicacia: 1200000045#4
+desambiguacion: Hijo de Gedeón y de su concubina de Siquem; no los reyes de Guerar de tiempos de Abrahán e Isaac, ni Akís
+  de Gat.
+no_confundir_con:
+- abimelec-de-tiempos-de-abrahan
+- abimelec-de-tiempos-de-isaac
+- akis
+resumen: Hijo de Gedeón y de una concubina de Siquem; su padre le puso el nombre. Con dinero de Siquem mató a sus medio hermanos
+  y se hizo rey; gobernó tres años, arrasó Siquem y murió en Tebez.
+razon: Perspicacia «Abimélec», núm. 4; Jue 8:31 y 9:1-57.
+fuentes:
+- it-abimelec
+- jueces-8
+- jueces-9
+enlaces:
+- titulo: 'Perspicacia: «Abimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000045
+  tipo: perspicacia
+- titulo: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  tipo: biblia
+- titulo: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: gedeon
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-8
+  - it-abimelec
+  - jueces-9
+  razon: 'Jue 8:31: la concubina de Gedeón en Siquem le dio este hijo.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: siquem
+  deducido: true
+  fuentes:
+  - it-abimelec
+  - jueces-8
+  - jueces-9
+  razon: 'Perspicacia «Abimélec», núm. 4: su madre lo dio a luz en Siquem; Jue 8:31 dice que ella vivía allí.'
+  estado: verificado
+- tipo: pariente
+  persona: jotan-hijo-de-gedeon
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - jueces-9
+  - it-abimelec
+  - it-jotan
+  razon: 'Jue 9:5, 21: Jotán, el hijo menor de Jerubaal, se salvó de la matanza y huyó por miedo a su hermano. Perspicacia
+    los llama medio hermanos.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: aruma
+  deducido: false
+  fuentes:
+  - jueces-9
+  - it-aruma
+  - it-gaal
+  razon: 'Jue 9:41: seguía viviendo en Arumá mientras Zebul mandaba en Siquem.'
+  estado: verificado
+- tipo: murio_en
+  lugar: tebez
+  deducido: false
+  fuentes:
+  - jueces-9
+  - it-tebez
+  razon: 'Jue 9:50-54: al asaltar la torre de Tebez, una mujer le partió el cráneo y su escudero lo remató.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen añade su reinado de tres años, la destrucción de Siquem y su muerte en Tebez (Jue 9).
+  fuente: jueces-9
+- fecha: '2026-09-29'
+  cambio: La razón cita también Jueces 9, de donde sale lo que añade el resumen.
+  fuente: jueces-9
+consultado: '2026-09-29'
+estado: verificado

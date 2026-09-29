@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ehud-vence-a-moab-en-los-vados-del-jordan
+titulo: Ehúd vence a Moab en los vados del Jordán
+fecha:
+  desde: -1449
+  hasta: -1172
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+orden_relato:
+  serie: jueces
+  orden: 3026
+lugares:
+- rio-jordan
+- seira
+- region-montanosa-de-efrain
+personas:
+- ehud-hijo-de-guera
+presentes:
+- ehud-hijo-de-guera
+pasajes:
+- Jue 3:26-30
+resumen: Ehúd escapa a Seirá, en los montes de Efraín, y allí toca el cuerno. Los israelitas bajan tras él, cierran los vados
+  del Jordán y matan a unos 10.000 moabitas. Hay paz ochenta años.
+razon: 'Perspicacia «Ehúd», núm. 2, y «Seirá». Límites: muerte de Josué, c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia
+  «Jefté»).'
+fuentes:
+- jueces-3
+- it-ehud
+- it-seira
+- si-3
+- it-jefte
+enlaces:
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

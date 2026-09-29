@@ -25,6 +25,7 @@ fuentes:
 - it-anaq
 - si-3
 - tnm-tabla
+- jueces-1
 enlaces:
 - titulo: 'Perspicacia: «Sesai»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004023
@@ -36,6 +37,7 @@ relaciones:
   fuentes:
   - numeros-13
   - josue-15
+  - jueces-1
   razon: 'Nú 13:22: Sesái vivía en Hebrón cuando llegaron los espías.'
   estado: verificado
 - tipo: pariente
@@ -45,6 +47,7 @@ relaciones:
   fuentes:
   - josue-15
   - it-anaq
+  - jueces-1
   razon: Jos 15:14 lo cuenta entre los tres hijos de Anac; Perspicacia «Anaq» lee el nombre como el de su progenie.
   estado: verificado
 historial:

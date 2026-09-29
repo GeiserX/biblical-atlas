@@ -11,6 +11,8 @@ desambiguacion: Perspicacia llama también Oreb a la roca donde lo ejecutaron (n
 fuentes:
 - it-oreb
 - salmos-83
+- jueces-7
+- jueces-8
 enlaces:
 - titulo: 'Perspicacia: «Oreb»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003339
@@ -20,3 +22,12 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: murio_en
+  lugar: roca-de-oreb
+  deducido: false
+  fuentes:
+  - jueces-7
+  - it-oreb
+  razon: 'Jue 7:25: los efraimitas lo mataron en la roca que tomó su nombre.'
+  estado: verificado

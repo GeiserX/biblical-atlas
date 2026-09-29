@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: colina-de-more
+nombre: Colina de Moré
+nombres:
+- nombre: Colina de Moré
+tipo: monte
+lat: 32.61764
+lon: 35.34873
+precision: punto
+coord_fuente: openbible:a772880
+coord_url: https://www.openbible.info/geo/ancient/a772880/moreh-2
+coord_nota: Punto de Givat HaMoreh (Jebel Dahi) en OpenBible, la identificación habitual según Perspicacia.
+resumen: Colina de la llanura de Jezreel junto a la que acampaban los madianitas cuando Gedeón los atacó, al norte del manantial
+  de Harod. No es la arboleda de Moré, cerca de Siquem.
+razon: 'Perspicacia «Moré», núm. 2; Jue 7:1. Se suele identificar con Jebel Dahi (Givʽat Ha-More), unos 8 km al norte del
+  manantial. OpenBible: solo el punto.'
+fuentes:
+- it-more
+- openbible-geo
+- jueces-7
+enlaces:
+- titulo: 'Perspicacia: «Moré»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003112
+  tipo: perspicacia
+- titulo: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

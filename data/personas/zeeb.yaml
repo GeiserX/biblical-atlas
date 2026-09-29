@@ -10,6 +10,8 @@ razon: Perspicacia «Zeeb»; Jue 7:23-25 y 8:1-3; Sl 83:11.
 fuentes:
 - it-zeeb
 - salmos-83
+- jueces-7
+- jueces-8
 enlaces:
 - titulo: 'Perspicacia: «Zeeb»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004686
@@ -19,3 +21,20 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: murio_en
+  lugar: lagar-de-zeeb
+  deducido: false
+  fuentes:
+  - jueces-7
+  - it-zeeb
+  razon: 'Jue 7:25: los efraimitas lo mataron en el lagar que tomó su nombre.'
+  estado: verificado
+- tipo: acompana
+  persona: oreb
+  deducido: false
+  fuentes:
+  - jueces-7
+  - jueces-8
+  razon: 'Jue 7:25: Oreb y Zeeb son los dos príncipes de Madián que capturan los de Efraín.'
+  estado: verificado

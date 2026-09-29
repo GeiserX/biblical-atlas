@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lapidot
+nombre: Lapidot
+nombres:
+- nombre: Lapidot
+perspicacia: '1200002682'
+resumen: Esposo de Débora, la profetisa que juzgaba a Israel cuando Barac venció a Sísara. La Biblia no cuenta nada más de
+  él.
+razon: Perspicacia «Lapidot»; Jue 4:4.
+fuentes:
+- it-lapidot
+- jueces-4
+enlaces:
+- titulo: 'Perspicacia: «Lapidot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002682
+  tipo: perspicacia
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: debora-profetisa
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-lapidot
+  razon: Jue 4:4 llama a Débora esposa de Lapidot.
+  estado: verificado
+no_afirmamos:
+- 'Que Lapidot y Barac fueran el mismo hombre, como algunos han propuesto: Perspicacia «Débora», núm. 2, dice que no hay pruebas.'
+consultado: '2026-09-29'
+estado: verificado

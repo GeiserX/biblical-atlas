@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-danitas-colocan-en-dan-la-imagen-de-miqueas
+titulo: Los danitas ponen en Dan la imagen de Miqueas
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: al tomar los danitas Lais, en vida de Josué)'
+orden_relato:
+  serie: josue
+  orden: 19048
+lugares:
+- dan
+personas:
+- jonatan-levita
+pasajes:
+- Jue 18:30, 31
+resumen: En la ciudad reconstruida, los danitas levantan la imagen tallada de Miqueas. Jonatán, descendiente de Moisés por
+  Guersom, y sus hijos son sus sacerdotes mientras la casa de Dios sigue en Siló.
+razon: 'Jue 18:30, 31: justo después de reconstruir Lais, que Perspicacia «Jueces, Libro de», «Orden del libro», sitúa antes
+  de morir Josué, c. 1450 (estudio 3). Va en la serie josue, tras los-danitas-toman-lesem.'
+fuentes:
+- jueces-18
+- it-jonatan
+- it-dan
+- si-3
+- it-jueces
+enlaces:
+- titulo: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
