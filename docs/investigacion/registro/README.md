@@ -10,7 +10,7 @@ Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó,
 | Registro | Cuántos |
 |---|---|
 | [Lugares](lugares.md) | 742 |
-| [Personas](personas.md) | 910 |
+| [Personas](personas.md) | 911 |
 | [Viajes y paradas](viajes.md) | 8 (95 paradas) |
 | [Cartas](cartas.md) | 22 |
 | [Eventos](eventos.md) | 830 |

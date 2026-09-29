@@ -5,22 +5,21 @@ nombres:
 - nombre: Sóstenes
 fecha:
   desde: 51
-  hasta: 55
+  hasta: 52
   precision: rango
   aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: c. 51-55 e.c.
+  texto: c. 51-52 e.c.
 resumen: Presidente de la sinagoga de Corinto, quizás sucesor de Crispo. La multitud lo golpeó ante Galión. Tal vez es el
   hermano Sóstenes que estaba con Pablo en Éfeso y quizá le escribió al dictado 1 Corintios.
-razon: Perspicacia «Sóstenes» (párr. 1 y 2); Hch 18:12-17; 1Co 1:1. Empieza con Galión, procónsul del verano de 51 al de 52
-  (estudio 3, párr. 25), y llega a 1 Corintios, c. 55 (Tabla), si es el mismo hermano, solo posible.
+razon: Perspicacia «Sóstenes» (párr. 1 y 2); Hch 18:12-17. La fecha es la del proconsulado de Galión, del verano de 51 al
+  de 52 (estudio 3, párr. 25). El hermano de 1Co 1:1 tiene ficha propia.
 fuentes:
 - it-sostenes
 - hch-18
 - si-3
 - 1-corintios-1
-- tnm-tabla
 enlaces:
 - titulo: 'Perspicacia: «Sóstenes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004190
@@ -42,6 +41,25 @@ historial:
   cambio: La razón explica que el final de la fecha depende de una identificación que Perspicacia y la nota de 1Co 1:1 solo
     dan como posible.
   fuente: 1-corintios-1
+- fecha: '2026-09-29'
+  cambio: La fecha vuelve a 51-52, los años de Galión. El hermano de 1Co 1:1 tiene ficha aparte, sostenes-companero-de-pablo,
+    porque que sea este Sóstenes solo es posible.
+  fuente: it-sostenes
+- fecha: '2026-09-29'
+  cambio: 'La razón ya no alarga la fecha hasta 1 Corintios: esa identificación solo es posible y el hermano de 1Co 1:1 va
+    en su propia ficha.'
+  fuente: 1-corintios-1
+- fecha: '2026-09-29'
+  cambio: Sale la Tabla de los libros, que solo servía para fechar 1 Corintios; esa fecha es ahora de sostenes-companero-de-pablo.
+  fuente: 1-corintios-1
+- fecha: '2026-09-29'
+  cambio: Las relaciones con Pablo y con Éfeso, de c. 55, pasan a sostenes-companero-de-pablo, el hermano de 1Co 1:1, que
+    Perspicacia y la nota de estudio solo ven posible que sea este.
+  fuente: it-sostenes
+desambiguacion: El presidente de la sinagoga de Corinto golpeado ante Galión (Hch 18:17). Perspicacia ve posible que sea el
+  hermano Sóstenes de 1Co 1:1, que tiene ficha aparte.
+no_confundir_con:
+- sostenes-companero-de-pablo
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -52,40 +70,4 @@ relaciones:
   - it-sostenes
   - hch-18
   razon: Presidía la sinagoga de Corinto cuando Pablo estaba allí (Hch 18:17).
-  estado: verificado
-- tipo: acompana
-  persona: pablo
-  fecha:
-    desde: 55
-    hasta: 55
-    precision: año
-    aprox: true
-    tipo: anclada
-    cronologia: tnm
-    texto: c. 55 e.c.
-  deducido: true
-  fuentes:
-  - it-sostenes
-  - 1-corintios-1
-  - tnm-tabla
-  razon: Perspicacia ve posible que sea el Sóstenes que saluda con Pablo desde Éfeso (1Co 1:1). La Tabla de los libros fecha
-    1 Corintios hacia 55.
-  estado: verificado
-- tipo: vivio_en
-  lugar: efeso
-  fecha:
-    desde: 55
-    hasta: 55
-    precision: año
-    aprox: true
-    tipo: anclada
-    cronologia: tnm
-    texto: c. 55 e.c.
-  deducido: true
-  fuentes:
-  - it-sostenes
-  - 1-corintios-1
-  - it-corintios
-  razon: La nota de estudio de 1Co 1:1 y Perspicacia «Sóstenes» ven posible que, ya cristiano, acompañara a Pablo en Éfeso,
-    desde donde se escribió la carta.
   estado: verificado
