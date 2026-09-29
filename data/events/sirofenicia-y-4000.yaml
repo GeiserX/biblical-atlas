@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sirofenicia-y-4000
+title: Cura a la hija de una sirofenicia y alimenta a 4.000
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 32 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 54
+places:
+- fenicia
+- decapolis
+- mar-de-galilea
+- tiro
+- sidon
+people:
+- jesus
+passages:
+- Mt 15:21-38
+- Mr 7:24-8:9
+summary: Jesús va a la zona de Tiro y Sidón, donde cura a la hija de una mujer del lugar por su fe. Luego, en la Decápolis,
+  cura a un sordo y multiplica siete panes para 4.000 hombres.
+reason: 'A7-D, fila 13: Fenicia y Decápolis. Perspicacia «Decápolis» (párr. 8) pone ambos después de la Pascua de 32; «Fenicia»
+  (párr. 10) describe la visita a su costa.'
+sources:
+- tnm-a7-d
+- mateo-15
+- marcos-7
+- marcos-8
+- it-decapolis
+- it-fenicia
+- jy-cap-57
+- jy-cap-58
+checked_on: '2026-09-29'
+status: verified

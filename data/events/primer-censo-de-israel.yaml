@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primer-censo-de-israel
+title: Moisés y Aarón hacen el primer censo de Israel
+date:
+  from: -1511
+  to: -1511
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de ziv (iyar) de 1512 a.e.c.
+  detail:
+    month: iyar
+    day: 1
+narrative_order:
+  series: numeros
+  order: 1001
+places:
+- desierto-de-sinai
+people:
+- moises
+- aaron
+- elizur
+- selumiel
+- nahson
+- netanel-hijo-de-zuar
+- eliab-hijo-de-helon
+- elisama-hijo-de-amihud
+- gamaliel-hijo-de-pedahzur
+- abidan
+- ahiezer-hijo-de-amisadai
+- paguiel
+- eliasaf-hijo-de-deuel
+- ahira
+passages:
+- Nú 1:1-54
+summary: 'Jehová manda inscribir, tribu por tribu, a los varones de 20 años o más aptos para la guerra. Con un jefe por tribu,
+  Moisés y Aarón cuentan 603.550. Los levitas no se cuentan: cuidarán del tabernáculo.'
+reason: 'Nú 1:1, 18: primer día del segundo mes del segundo año tras la salida de Egipto, que el estudio 3 pone en 1513 a.e.c.
+  Perspicacia «Amihud» y «Amisadai» fechan el censo en 1512 a.e.c.'
+sources:
+- numeros-1
+- si-3
+- it-inscripcion
+- it-numeros-libro
+- it-amihud
+- it-amisadai
+links:
+- title: Números 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/1
+  type: bible
+- title: 'Perspicacia: «Inscripción»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003676
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

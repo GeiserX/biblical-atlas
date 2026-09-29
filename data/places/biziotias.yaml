@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: biziotias
+name: Biziotías
+names:
+- name: Biziotías
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Beer-Seba, en el Négueb
+  geometry:
+    type: zone
+    lat: 31.244722
+    lon: 34.840833
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-biziotias
+  - openbible-geo
+  reason: La lista la nombra justo después de Beer-Seba, entre las ciudades del Négueb.
+  coord_source: calculation
+  note: 'Centro: punto de Beer-Seba en OpenBible, la ciudad que la precede en la lista. Radio nuestro.'
+summary: Ciudad del Négueb de Judá que la lista nombra después de Beer-Seba. No se sabe dónde estaba; la Septuaginta lee aquí
+  «sus pueblos» en vez de un nombre propio.
+reason: Perspicacia «Biziotías»; Jos 15:28. OpenBible no la toma por nombre propio.
+sources:
+- it-biziotias
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Biziotías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000763
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

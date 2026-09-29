@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: requem
+name: Réquem
+names:
+- name: Réquem
+type: city
+lat: 31.870556
+lon: 35.192222
+precision: uncertain
+coord_source: openbible:a1b5486
+coord_url: https://www.openbible.info/geo/ancient/a1b5486/rekem
+coord_note: OpenBible solo la pone a menos de 5 km de Irpeel; el punto es el de Irpeel (Rafat). Perspicacia no sabe dónde
+  estaba.
+summary: Ciudad de la herencia de Benjamín, nombrada junto a Irpeel y Taralá. No se sabe dónde estaba.
+reason: 'Perspicacia «Réquem», núm. 4; Jos 18:27. OpenBible: solo el punto.'
+sources:
+- it-requem
+- openbible-geo
+- josue-18
+links:
+- title: 'Perspicacia: «Réquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003686
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

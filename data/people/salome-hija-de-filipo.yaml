@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salome-hija-de-filipo
+name: Salomé
+names:
+- name: Salomé
+  note: La Biblia la llama la hija de Herodías; el nombre lo conserva Josefo, según Perspicacia.
+perspicacia: 1200003808#2
+disambiguation: La hija de Herodías que bailó ante Herodes Antipas. No es Salomé, la discípula que estuvo junto al madero
+  y fue a la tumba de Jesús.
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 32 e.c.
+distinct_from:
+- salome-discipula
+summary: Hija de Herodes Filipo y de Herodías. En el cumpleaños de Herodes Antipas, ya su padrastro, bailó ante los invitados
+  y, empujada por Herodías, reclamó como premio la cabeza de Juan el Bautista.
+reason: Perspicacia «Salomé», núm. 2, y «Herodes», núm. 5; Mt 14:6-11. Perspicacia pone la cena poco antes de la Pascua de
+  32.
+sources:
+- it-salome
+- it-herodes
+- mateo-14
+- marcos-6
+not_claimed:
+- 'Que la Biblia la llame Salomé: el nombre sale del historiador Josefo.'
+links:
+- title: 'Perspicacia: «Salomé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003808
+  type: perspicacia
+relations:
+- type: kin
+  person: herodias
+  word: mother
+  inferred: false
+  sources:
+  - mateo-14
+  - marcos-6
+  reason: 'Mt 14:6, 8 y 11: es la hija de Herodías y le lleva la cabeza a su madre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: filipo-esposo-de-herodias
+  word: father
+  inferred: true
+  sources:
+  - it-salome
+  - it-herodes
+  - marcos-6
+  reason: Perspicacia «Salomé» (núm. 2) y «Herodes» (núm. 5) la hacen hija de Herodes Filipo, el esposo de Herodías que nombra
+    Mt 14:3.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: herodes-antipas
+  word: stepfather
+  inferred: true
+  sources:
+  - it-salome
+  - marcos-6
+  reason: 'Perspicacia «Salomé» (núm. 2): con la boda de Antipas y Herodías pasó a ser su hijastra (Mt 14:6).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

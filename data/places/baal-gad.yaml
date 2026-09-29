@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-gad
+name: Baal-Gad
+names:
+- name: Baal-Gad
+type: city
+lat: 33.383333
+lon: 35.683333
+precision: uncertain
+coord_source: openbible:ae12e43
+coord_url: https://www.openbible.info/geo/ancient/ae12e43/baal-gad
+coord_note: Punto de Hasbaya, la identificación habitual según Perspicacia. OpenBible pone primero otra.
+summary: Ciudad del valle del Líbano, al pie del Hermón por el oeste. Marca el extremo norte de la tierra que conquistó Josué,
+  frente al monte Halac en el sur.
+reason: 'Perspicacia «Baal-gad»: sitio incierto, por lo general Hasbaya, en Wadi et-Teim, o algún lugar cercano; Jos 11:17;
+  12:7. OpenBible: solo el punto.'
+sources:
+- it-baal-gad
+- openbible-geo
+- josue-11
+- josue-12
+- josue-13
+links:
+- title: 'Perspicacia: «Baal-gad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000511
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

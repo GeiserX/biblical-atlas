@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abimelec-derrota-a-gaal
+title: Abimélec derrota a Gaal ante Siquem
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Gedeón y antes de que Jefté empezara a juzgar)'
+narrative_order:
+  series: jueces
+  order: 9030
+places:
+- siquem
+- aruma
+people:
+- abimelec-hijo-de-gedeon
+- gaal
+- zebul
+passages:
+- Jue 9:30-41
+summary: Zebul avisa a escondidas a Abimélec, que acecha de noche con cuatro grupos. Al amanecer Gaal sale a pelear, es vencido
+  y vuelve huyendo; Zebul lo echa de la ciudad y Abimélec se queda en Arumá.
+reason: Perspicacia «Gaal» y «Zebul»; «Meonenim, Árbol grande de» sitúa ese árbol a la vista de Siquem. Fecha como la de Jue
+  9:1-4.
+sources:
+- jueces-9
+- it-gaal
+- it-zebul
+- it-meonenim
+- it-aruma
+- si-3
+- it-jueces
+- it-jefte
+links:
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

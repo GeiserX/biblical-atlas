@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jagur
+name: Jagur
+names:
+- name: Jagur
+type: city
+lat: 31.2328
+lon: 34.9867
+precision: uncertain
+coord_source: openbible:a907232
+coord_url: https://www.openbible.info/geo/ancient/a907232/jagur
+coord_note: Tel ʽIra, única identificación de OpenBible, que Perspicacia da como posible.
+summary: Ciudad del extremo sur de Judá. Quizá es Khirbet el-Gharra (Tel ʽIra), unos 14 km al este de Beer-Seba.
+reason: 'Perspicacia «Jagur»; Jos 15:21. OpenBible: solo el punto.'
+sources:
+- it-jagur
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Jagur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002287
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

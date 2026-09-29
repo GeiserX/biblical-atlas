@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ahlab
+name: Ahlab
+names:
+- name: Ahlab
+type: city
+lat: 33.317804
+lon: 35.243368
+precision: uncertain
+coord_source: openbible:a36348c
+coord_url: https://www.openbible.info/geo/ancient/a36348c/ahlab
+coord_note: Punto de OpenBible en Khirbet el-Mahalib, el mismo que Helbá. Perspicacia dice que no se sabe dónde estaba.
+summary: Ciudad cananea dentro del territorio de Aser. La tribu no echó a sus habitantes, que siguieron viviendo en ella.
+  No se sabe dónde estaba.
+reason: 'Perspicacia «Ahlab»; Jue 1:31, 32. OpenBible: solo el punto.'
+sources:
+- it-ahlab
+- openbible-geo
+- jueces-1
+links:
+- title: 'Perspicacia: «Ahlab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000171
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

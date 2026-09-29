@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-toma-gaza-asquelon-y-ecron
+title: Judá toma Gaza, Asquelón y Ecrón
+date:
+  from: -1466
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1117 a.e.c. (tiempo narrativo: tras el reparto de la tierra y antes del primer rey)'
+narrative_order:
+  series: jueces
+  order: 1018
+places:
+- gaza
+- asquelon
+- ecron
+people: []
+present: []
+passages:
+- Jue 1:18, 19
+summary: Judá conquista Gaza, Asquelón y Ecrón con sus territorios. Con Jehová de su parte ocupa la región montañosa, pero
+  no puede echar a los de la llanura, que tienen carros con cuchillas de hierro.
+reason: 'Perspicacia «Gaza», «Asquelón» y «Eqrón»: Josué no las tomó, Judá lo hizo después y no las retuvo mucho; Jue 1:18,
+  19. Límites: 1467 y 1117 a.e.c. (estudio 3).'
+sources:
+- jueces-1
+- it-gaza
+- it-asquelon
+- it-eqron
+- si-3
+links:
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

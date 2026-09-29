@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: donativo-de-la-viuda
+title: El donativo de la viuda
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 11 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 11
+places:
+- monte-moria
+- jerusalen
+people:
+- jesus
+passages:
+- Mr 12:41-44
+- Lu 21:1-4
+summary: En el templo, Jesús ve a una viuda pobre echar dos monedas pequeñas y dice que ha dado más que todos los
+  ricos.
+reason: La tabla A7-G da el día y el lugar. Mr 12:41-44; B12-A.
+sources:
+- tnm-a7-g
+- marcos-12
+- lucas-21
+- jy-cap-110
+- tnm-b12-a
+narrative_order:
+  series: a7
+  order: 104
+search: El donativo de la viuda
+checked_on: '2026-09-28'
+status: verified

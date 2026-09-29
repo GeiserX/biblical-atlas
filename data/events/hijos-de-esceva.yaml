@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hijos-de-esceva
+title: Los hijos de Esceva y los libros de magia quemados
+date:
+  from: 53
+  to: 55
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 53-55 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1913
+places:
+- efeso
+people:
+- pablo
+passages:
+- Hch 19:11-20
+summary: Siete hijos de Esceva intentan expulsar un demonio en el nombre de Jesús «al que Pablo predica» y salen
+  heridos. Muchos creyentes queman en público sus libros de magia.
+reason: Perspicacia «Esceva» y «Demetrio» (núm. 1) narran el episodio de Hch 19:13-20.
+sources:
+- it-esceva
+- it-demetrio
+- hch-19
+search: hijos de Esceva
+checked_on: '2026-09-28'
+status: verified

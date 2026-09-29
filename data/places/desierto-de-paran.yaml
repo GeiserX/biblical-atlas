@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-paran
+name: Desierto de Parán
+names:
+- name: Desierto de Parán
+- name: Parán
+- name: Región montañosa de Parán
+  note: Así lo llama Dt 33:2. Perspicacia dice que su parte central es montañosa, de 600 a 750 m de altura.
+type: desert
+lat: 30.303218
+lon: 34.776667
+precision: zone
+coord_source: openbible:aa6b19b
+coord_url: https://www.openbible.info/geo/ancient/aa6b19b/paran
+coord_note: Punto representativo de OpenBible. La región ocupaba el centro y el nordeste del Sinaí, sin límites fijos.
+summary: Gran región desértica del centro y el nordeste de la península del Sinaí, sin límites fijos. Allí se estableció Ismael,
+  y por ella anduvo Israel casi todos sus años en el desierto.
+reason: 'Perspicacia «Parán», párr. 1 y 3; Gé 21:20, 21. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-paran
+- genesis-21
+- openbible-geo
+- numeros-10
+- numeros-12
+- numeros-13
+- it-espias
+- deuteronomio-1
+- deuteronomio-33
+links:
+- title: 'Perspicacia: «Parán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003380
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

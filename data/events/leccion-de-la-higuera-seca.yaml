@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: leccion-de-la-higuera-seca
+title: La lección de la higuera seca
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 11 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 11
+places:
+- betania
+- jerusalen
+people:
+- jesus
+- pedro
+passages:
+- Mt 21:19-22
+- Mr 11:20-25
+summary: Por la mañana, los discípulos ven la higuera seca desde la raíz. Jesús les enseña el poder de la fe y de
+  la oración.
+reason: La tabla A7-G da el día y el lugar. Perspicacia «Betania» (párr. 4) dice que la vieron al pasar de nuevo
+  al día siguiente.
+sources:
+- tnm-a7-g
+- mateo-21
+- marcos-11
+- jy-cap-103
+- jy-cap-105
+- it-betania
+narrative_order:
+  series: a7
+  order: 98
+search: La lección de la higuera seca
+checked_on: '2026-09-28'
+status: verified

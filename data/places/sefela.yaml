@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sefela
+name: Sefelá
+names:
+- name: Sefelá
+  note: Significa «tierra baja», según Perspicacia.
+type: region
+lat: 31.691667
+lon: 34.875
+precision: zone
+coord_source: openbible:af084cf
+coord_url: https://www.openbible.info/geo/ancient/af084cf/shephelah
+coord_note: Punto representativo de OpenBible para la franja de colinas.
+summary: Franja de colinas bajas entre la cordillera central y la llanura costera de Filistea, con el Négueb al sur. Fértil
+  y templada, daba sicómoros, olivos y pastos. Quedó dentro de Judá.
+reason: 'Perspicacia «Sefelá», párr. 1 y 2; Dt 1:7. OpenBible: solo el punto.'
+sources:
+- it-sefela
+- openbible-geo
+- deuteronomio-1
+- josue-10
+- josue-15
+links:
+- title: 'Perspicacia: «Sefelá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004014
+  type: perspicacia
+- title: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

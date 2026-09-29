@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: duelo-en-la-era-de-atad
+title: Duelo por Jacob en la era de Atad
+date:
+  from: -1710
+  to: -1709
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+narrative_order:
+  series: genesis
+  order: 50004
+places:
+- atad
+- egipto
+people:
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- isacar-hijo-de-jacob
+- dan-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- neftali-hijo-de-jacob
+- benjamin-hijo-de-jacob
+passages:
+- Gé 50:4-11
+summary: Con permiso del faraón, José sube a Canaán a enterrar a su padre con sus hermanos, la corte y los ancianos de Egipto.
+  En la era de Atad, en la región del Jordán, guardan siete días de duelo.
+reason: 'Perspicacia «Jacob», párr. 41, y «Atad»: el cortejo paró en la región del Jordán camino de Macpelá. Jacob murió en
+  1711 a.e.c. (estudio 3) y Egipto lo lloró 70 días.'
+sources:
+- genesis-50
+- it-jacob
+- it-atad
+- si-3
+links:
+- title: Génesis 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/50
+  type: bible
+checked_on: '2026-09-29'
+status: verified

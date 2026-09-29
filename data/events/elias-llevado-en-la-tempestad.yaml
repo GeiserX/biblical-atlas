@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-llevado-en-la-tempestad
+title: Elías es llevado en una tempestad; Eliseo lo sucede
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+places:
+- rio-jordan
+people:
+- elias-profeta
+- eliseo
+passages:
+- 2Re 2:1-14
+summary: Junto al Jordán, un carro de fuego separa a Elías de Eliseo y una tempestad se lo lleva. Eliseo recoge su manto y
+  empieza a actuar como su sucesor.
+reason: Perspicacia «Eliseo», párr. 5, fecha el comienzo de su obra hacia 917; «Elías», núm. 1, párr. 9-10, aclara que Elías
+  no murió entonces.
+sources:
+- it-eliseo
+- it-elias
+- 2-reyes-2
+links:
+- title: 'Perspicacia: «Eliseo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
+  type: perspicacia
+- title: 'Perspicacia: «Elías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001307
+  type: perspicacia
+- title: 2 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
+  type: bible
+search: Elías tempestad Eliseo manto
+checked_on: '2026-09-28'
+status: verified

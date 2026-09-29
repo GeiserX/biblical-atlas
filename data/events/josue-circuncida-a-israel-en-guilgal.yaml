@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-circuncida-a-israel-en-guilgal
+title: Josué circuncida a los israelitas nacidos en el desierto
+date:
+  from: -1472
+  to: -1472
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: nisán de 1473 a.e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: numeros
+  order: 205002
+places:
+- guilgal
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 5:2-9
+summary: Por orden de Jehová, Josué prepara cuchillos de pedernal y circuncida a los varones nacidos durante los 40 años de
+  marcha. El pueblo descansa hasta sanar, y el sitio recibe el nombre de Guilgal.
+reason: Pasa entre la llegada a Guilgal, el día 10 del primer mes, nisán desde el éxodo, y la Pascua del 14 (Jos 5:10). Perspicacia
+  «Guilgal», núm. 1, pone ese campamento en nisán de 1473 a.e.c.; «Circuncisión» da el motivo.
+sources:
+- josue-5
+- it-guilgal
+- it-circuncision
+- it-guibeat-haaralot
+- si-3
+links:
+- title: Josué 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/5
+  type: bible
+- title: 'Perspicacia: «Circuncisión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000977
+  type: perspicacia
+- title: 'Perspicacia: «Guibeat-haaralot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001680
+  type: perspicacia
+search: circuncisión Guilgal Josué pedernal
+checked_on: '2026-09-29'
+status: verified

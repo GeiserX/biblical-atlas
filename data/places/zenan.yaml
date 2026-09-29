@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zenan
+name: Zenán
+names:
+- name: Zenán
+type: city
+lat: 31.599435
+lon: 34.803939
+precision: uncertain
+coord_source: openbible:a5e1150
+coord_url: https://www.openbible.info/geo/ancient/a5e1150/zenan
+coord_note: 'ʽAraq el-Kharba, segunda identificación de OpenBible: es la que nombra Perspicacia. La primera solo la pone a
+  menos de 12 km de Lakís.'
+summary: Localidad de la Sefelá de Judá. Muchos la creen la Zaanán de Miq 1:11 y la sitúan, con dudas, en ʽAraq el-Kharba,
+  unos 6 km al noroeste de Lakís.
+reason: 'Perspicacia «Zenán»; Jos 15:37; Miq 1:11. OpenBible: solo el punto.'
+sources:
+- it-zenan
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Zenán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004694
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

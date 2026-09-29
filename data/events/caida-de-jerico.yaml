@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: caida-de-jerico
+title: Caen las murallas de Jericó
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 206006
+places:
+- jerico
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 6:6-21
+- Jos 6:24
+- Heb 11:30
+- Jos 24:11
+summary: Seis días seguidos, el ejército y los sacerdotes con el Arca rodean Jericó una vez tocando los cuernos. El séptimo
+  dan siete vueltas, el pueblo grita, la muralla se viene abajo y la ciudad es arrasada y quemada.
+reason: Perspicacia «Jericó» cuenta las vueltas y el grito y fecha la destrucción en 1473 a.e.c. El oro, la plata y los objetos
+  de metal van al tesoro de Jehová. Heb 11:30 atribuye la caída a la fe.
+sources:
+- josue-6
+- it-jerico
+links:
+- title: Josué 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/6
+  type: bible
+- title: 'Perspicacia: «Jericó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
+  type: perspicacia
+search: caída de Jericó murallas Josué
+checked_on: '2026-09-29'
+status: verified

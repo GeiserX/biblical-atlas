@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-reduce-el-ejercito-de-gedeon-a-300
+title: Jehová reduce el ejército de Gedeón a 300 hombres
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: en tiempos de los jueces, antes de Jefté)'
+narrative_order:
+  series: jueces
+  order: 7001
+places:
+- harod
+- colina-de-more
+- valle-de-jezreel
+people:
+- gedeon
+present:
+- gedeon
+passages:
+- Jue 7:1-8
+summary: Gedeón acampa junto al manantial de Harod, al sur de Madián. Para que Israel no se atribuya la victoria, Jehová despide
+  a 22.000 que tienen miedo y, de los 10.000 restantes, se queda con 300 que beben lamiendo el agua.
+reason: 'Perspicacia «Harod» y «Gedeón», párr. 6; Jue 7:1-8. El campamento de Madián estaba al norte, al pie de la colina de
+  Moré. Límites: Jueces desde c. 1450 (tabla de libros); Jefté desde c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-7
+- it-harod
+- it-gedeon
+- it-more
+- tnm-tabla
+- it-jefte
+- it-jueces
+links:
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+- title: 'Perspicacia: «Harod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001887
+  type: perspicacia
+search: Gedeón 300 hombres manantial de Harod
+checked_on: '2026-09-29'
+status: verified

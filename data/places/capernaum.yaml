@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: capernaum
+name: Capernaúm
+names:
+- name: Capernaúm
+- name: Capernaum
+  note: Forma que usa Perspicacia.
+type: city
+lat: 32.881111
+lon: 35.575
+precision: point
+coord_source: openbible:af2161c
+coord_url: https://www.openbible.info/geo/ancient/af2161c/capernaum
+summary: Ciudad de la orilla noroeste del mar de Galilea, con oficina de impuestos y sinagoga. Jesús vivió allí durante su
+  ministerio en Galilea, y Mt 9:1 la llama «su ciudad».
+reason: 'Perspicacia «Capernaum» (párr. 2, 3 y 7) la sitúa en las ruinas de Tell Hum; la nota de Mt 4:13 da la orilla noroeste.
+  Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-capernaum
+- mateo-4
+- openbible-geo
+- mateo-8
+- mateo-9
+- mateo-11
+- mateo-17
+- marcos-1
+- marcos-2
+- marcos-9
+- lucas-4
+- lucas-7
+- lucas-10
+- juan-2
+- juan-4
+- juan-6
+links:
+- title: 'Perspicacia: «Capernaum»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000882
+  type: perspicacia
+- title: Mateo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/4
+  type: bible
+history:
+- date: '2026-09-29'
+  change: La cita de Mt 9:1 pasa de «su propia ciudad» a «su ciudad», que es lo que dice la edición de estudio de la TNM.
+  source: mateo-9
+checked_on: '2026-09-29'
+status: verified

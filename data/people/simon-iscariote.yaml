@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-iscariote
+name: Simón Iscariote
+names:
+- name: Simón Iscariote
+- name: Simón
+perspicacia: 1200004131#1
+disambiguation: El padre de Judas Iscariote. No es el apóstol Simón Pedro ni Simón el cananita.
+distinct_from:
+- pedro
+- simon-el-cananita
+summary: Padre del apóstol Judas, el que traicionó a Jesús. Juan da a los dos el apelativo Iscariote; la Biblia no cuenta
+  nada más de él.
+reason: Perspicacia «Simón», núm. 1, y «Judas», núm. 4, párr. 1 y 6; Jn 6:71; 13:2, 26.
+sources:
+- it-simon
+- it-judas
+- juan-6
+- juan-13
+links:
+- title: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  type: perspicacia
+- title: Juan 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/6
+  type: bible
+- title: Juan 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

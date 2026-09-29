@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guilo
+name: Guiló
+names:
+- name: Guiló
+type: city
+lat: 31.61707
+lon: 35.07664
+precision: uncertain
+coord_source: openbible:a6df20a
+coord_url: https://www.openbible.info/geo/ancient/a6df20a/giloh
+coord_note: 'Khirbet Jala, cuarta identificación de OpenBible: es la que nombra Perspicacia. La primera solo la pone a menos
+  de 6 km de Khirbet Rabud.'
+summary: Población de la montaña de Judá, tierra de Ahitofel, el consejero que traicionó a David. Algunos la ponen en Khirbet
+  Jala, unos 10 km al nornoroeste de Hebrón.
+reason: 'Perspicacia «Guiló»; Jos 15:51; 2Sa 15:12. OpenBible: solo el punto.'
+sources:
+- it-guilo
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Guiló»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001703
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

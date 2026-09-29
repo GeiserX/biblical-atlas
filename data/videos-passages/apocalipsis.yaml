@@ -1,0 +1,972 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: apocalipsis
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_660_VIDEO"
+    title: "Información sobre Apocalipsis"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_660_VIDEO"
+    published: "2019-11-05"
+chapters:
+  1:
+    - docid: "pub-jwb-101_1_VIDEO"
+      title: "JW Broadcasting: Agosto de 2023"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-101_1_VIDEO"
+      published: "2023-08-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-101_2_VIDEO"
+      title: "Kenneth Flodin: \"Nunca les hablaba sin utilizar alguna comparación\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-101_2_VIDEO"
+      published: "2023-08-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201712_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2017 (graduación de la clase 143 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201712_1_VIDEO"
+      published: "2017-12-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod25_41_VIDEO"
+      title: "Hermanus van Selm: Jehová garantiza que sus promesas se cumplirán (Apoc. 21:4-6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_41_VIDEO"
+      published: "2025-10-24"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jwb-090_11_VIDEO"
+      title: "Kenneth Cook: “Aférrense a lo que tienen hasta que yo venga” (Apoc. 2:25)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-090_11_VIDEO"
+      published: "2022-09-16"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_107_VIDEO"
+      title: "Mark Sanderson: Los actos de salvación de Jehová nos llenan de alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_107_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_2_VIDEO"
+      published: "2020-07-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_120_VIDEO"
+      title: "Geoffrey Jackson: “Sigan examinándose para saber si están firmes en la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_120_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_4_VIDEO"
+      title: "Viernes tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_4_VIDEO"
+      published: "2021-07-05"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod26_21_VIDEO"
+      title: "David Splane: La fe sin obras está muerta (Sant. 2:17)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_21_VIDEO"
+      published: "2026-05-29"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "1112024005"
+      title: "2024 | Informe 2 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=1112024005"
+      published: "2024-03-15"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-081_2_VIDEO"
+      title: "Stephen Lett: Veamos el cuadro completo (Hech. 8:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-081_2_VIDEO"
+      published: "2021-06-14"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201903_2_VIDEO"
+      title: "David Schafer: La neutralidad cristiana: qué es, qué implica y por qué la adoptamos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201903_2_VIDEO"
+      published: "2019-03-18"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwban_201606_1_VIDEO"
+      title: "David Schafer: Considerémonos, incitémonos y animémonos unos a otros aún más"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201606_1_VIDEO"
+      published: "2016-06-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbcov25_8_VIDEO"
+      title: "¿Qué ve Jesús en cada uno de nosotros?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov25_8_VIDEO"
+      published: "2026-01-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbgg_201609_1_VIDEO"
+      title: "Graduación de la clase 141 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_1_VIDEO"
+      published: "2016-12-06"
+      matched_by: [subtitles]
+      citations: 1
+  3:
+    - docid: "pub-jwb_201809_9_VIDEO"
+      title: "James Mantz: Evitemos todo tipo de codicia (Luc. 12:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201809_9_VIDEO"
+      published: "2018-09-10"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod25_23_VIDEO"
+      title: "Paul Gillies: El poder del espíritu santo (Hech. 1:8)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_23_VIDEO"
+      published: "2025-06-20"
+      matched_by: [subtitles]
+      citations: 1
+  4:
+    - docid: "pub-jwbmw_201511_2_VIDEO"
+      title: "James Mantz: “Tú creaste todas las cosas” (Rev. 4:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201511_2_VIDEO"
+      published: "2015-11-30"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_201706_2_VIDEO"
+      title: "Ideas para la sección \"Enseñemos la verdad\" (Rev 4:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201706_2_VIDEO"
+      published: "2017-05-25"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-co-r20_129_VIDEO"
+      title: "William Malenfant: Discurso de bautismo: El bautismo le hará más feliz, ¿por qué?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_129_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_6_VIDEO"
+      title: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_6_VIDEO"
+      published: "2020-07-23"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201902_2_VIDEO"
+      title: "Anthony Morris: Tomemos la iniciativa en mostrarnos honra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201902_2_VIDEO"
+      published: "2019-02-19"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-120_11_VIDEO"
+      title: "JW Broadcasting: Enero de 2025 (reunión anual del 2024, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_11_VIDEO"
+      published: "2025-01-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_14_VIDEO"
+      title: "David Splane: Demos gloria a Jehová (texto del año 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_14_VIDEO"
+      published: "2024-10-14"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-136_1_VIDEO"
+      title: "JW Broadcasting: Abril de 2026"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-136_1_VIDEO"
+      published: "2026-04-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-136_3_VIDEO"
+      title: "¿Nos damos el mismo valor que Jehová nos da?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-136_3_VIDEO"
+      published: "2026-04-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201803_2_VIDEO"
+      title: "Gerrit Lösch: ¿En quién confía usted?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201803_2_VIDEO"
+      published: "2018-03-19"
+      matched_by: [subtitles]
+      citations: 1
+  5:
+    - docid: "pub-jwbmw_201608_2_VIDEO"
+      title: "Samuel F. Herd: Servir a Jehová como esclavos es todo un honor (Mat. 24:45)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201608_2_VIDEO"
+      published: "2016-08-22"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-lffv_544_VIDEO"
+      title: "Todo un honor"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-lffv_544_VIDEO"
+      published: "2021-04-11"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-134_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2026 (reunión anual del 2025, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_1_VIDEO"
+      published: "2026-01-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-134_7_VIDEO"
+      title: "Stephen Lett: Nadie salva como Jehová (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_7_VIDEO"
+      published: "2026-01-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201902_2_VIDEO"
+      title: "Anthony Morris: Tomemos la iniciativa en mostrarnos honra"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201902_2_VIDEO"
+      published: "2019-02-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_202001_3_VIDEO"
+      title: "Reunión anual del 2019: Discursos y nueva publicación"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202001_3_VIDEO"
+      published: "2020-01-20"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod26_1_VIDEO"
+      title: "Adoración matutina para el día de la Conmemoración del 2026. Mark Sanderson: El “rebaño pequeño” y las “otras ovejas”, unidos por el amor (Luc. 12:32)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_1_VIDEO"
+      published: "2026-04-06"
+      matched_by: [subtitles]
+      citations: 1
+  6:
+    - docid: "pub-jwb-088_13_VIDEO"
+      title: "Joel Dellinger: Su liberación se acerca (Apoc. 6:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-088_13_VIDEO"
+      published: "2022-04-22"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-jwb_202102_3_VIDEO"
+      title: "Kenneth Cook: ¿Seguirá usted del lado de los justos?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202102_3_VIDEO"
+      published: "2021-02-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "702020178"
+      title: "2020 | Informe 1 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702020178"
+      published: "2020-03-20"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-087_1_VIDEO"
+      title: "JW Broadcasting: Marzo de 2022"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-087_1_VIDEO"
+      published: "2022-03-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-087_2_VIDEO"
+      title: "Ralph Walls: Jehová siempre nos consuela en los momentos difíciles"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-087_2_VIDEO"
+      published: "2022-03-21"
+      matched_by: [subtitles]
+      citations: 1
+  7:
+    - docid: "pub-jwbvod26_8_VIDEO"
+      title: "Seth Hyatt: ¿Quiénes forman parte de la gran muchedumbre? (Apoc. 7:13, 14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_8_VIDEO"
+      published: "2026-02-27"
+      matched_by: [title, subtitles]
+      citations: 4
+    - docid: "pub-jwb-106_9_VIDEO"
+      title: "Joel Dellinger: Entender las profecías nos motiva a actuar (Apoc. 7:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-106_9_VIDEO"
+      published: "2023-10-13"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-jwbvod26_11_VIDEO"
+      title: "Robert Luccioni: Tengamos muy presentes las promesas de Jehová (Apoc. 7:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_11_VIDEO"
+      published: "2026-04-24"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-jwb_201801_1_VIDEO"
+      title: "JW Broadcasting: enero de 2018 (reunión anual del 2017)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_1_VIDEO"
+      published: "2018-01-01"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-134_10_VIDEO"
+      title: "Gerrit Lösch: ¿De qué templos nos habla la Biblia? (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_10_VIDEO"
+      published: "2026-02-05"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-134_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2026 (reunión anual del 2025, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_9_VIDEO"
+      published: "2026-02-02"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_106_VIDEO"
+      title: "David Schafer: \"El resultado de la verdadera rectitud será paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_106_VIDEO"
+      published: "2022-06-28"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_2_VIDEO"
+      title: "Viernes mañana (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_2_VIDEO"
+      published: "2022-06-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-086_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_1_VIDEO"
+      published: "2022-01-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-086_6_VIDEO"
+      title: "Geoffrey Jackson: ¿Está usted allí?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_6_VIDEO"
+      published: "2022-01-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201712_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2017 (graduación de la clase 143 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201712_1_VIDEO"
+      published: "2017-12-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201905_11_VIDEO"
+      title: "Una familia internacional de construcción"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201905_11_VIDEO"
+      published: "2019-05-27"
+      matched_by: [subtitles]
+      citations: 1
+  9:
+    - docid: "pub-jwb_202001_3_VIDEO"
+      title: "Reunión anual del 2019: Discursos y nueva publicación"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202001_3_VIDEO"
+      published: "2020-01-20"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbgg_201609_3_VIDEO"
+      title: "Graduación de la clase 141 de la Escuela de Galaad: Parte 3. Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_3_VIDEO"
+      published: "2017-03-02"
+      matched_by: [subtitles]
+      citations: 1
+  10:
+    - docid: "pub-jwb-115_1_VIDEO"
+      title: "JW Broadcasting: Agosto de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_1_VIDEO"
+      published: "2024-08-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-115_2_VIDEO"
+      title: "Gage Fleegle: ¡Declaremos el secreto sagrado de Jehová!"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_2_VIDEO"
+      published: "2024-08-19"
+      matched_by: [subtitles]
+      citations: 1
+  11:
+    - docid: "pub-jwb-100_16_VIDEO"
+      title: "Kenneth Cook: La tierra que durará para siempre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_16_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r21_110_VIDEO"
+      title: "James Mantz: Observar la creación fortalece la fe. Los bosques"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_110_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_3_VIDEO"
+      title: "Viernes tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_3_VIDEO"
+      published: "2021-07-05"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_10_VIDEO"
+      title: "Domingo mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_10_VIDEO"
+      published: "2021-08-09"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_146_VIDEO"
+      title: "William Turner: Discurso público: “Tengan fe en las buenas noticias”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_146_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-117_1_VIDEO"
+      title: "JW Broadcasting: Octubre de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-117_1_VIDEO"
+      published: "2024-10-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-117_2_VIDEO"
+      title: "Troy Snyder: Ver el cumplimiento de las profecías nos ayuda a aguantar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-117_2_VIDEO"
+      published: "2024-10-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbrd_201612_3_VIDEO"
+      title: "Edificios respetuosos del medio ambiente que honran a Jehová"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbrd_201612_3_VIDEO"
+      published: "2017-06-09"
+      matched_by: [subtitles]
+      citations: 1
+  12:
+    - docid: "pub-jwb_202012_9_VIDEO"
+      title: "Mark Noumair: La predicación vence a Satanás (Apoc. 12:9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202012_9_VIDEO"
+      published: "2020-12-14"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-co-r22_117_VIDEO"
+      title: "Anthony Morris: No se deje engañar por la paz de imitación"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_117_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_12_VIDEO"
+      title: "Domingo tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_12_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_147_VIDEO"
+      title: "Geoffrey Jackson: La paz universal será una realidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_147_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_4_VIDEO"
+      title: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_4_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201705_16_VIDEO"
+      title: "Mark Sanderson: Seremos perseguidos (Mat. 10:22)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201705_16_VIDEO"
+      published: "2017-06-09"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_202001_4_VIDEO"
+      title: "Reunión anual del 2019: Discursos y texto del año 2020"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202001_4_VIDEO"
+      published: "2020-01-27"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod25_35_VIDEO"
+      title: "William Malenfant: Debemos protegernos de las enseñanzas de demonios (1 Tim. 4:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_35_VIDEO"
+      published: "2025-08-29"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-082_1_VIDEO"
+      title: "JW Broadcasting: Septiembre de 2021"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-082_1_VIDEO"
+      published: "2021-09-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-082_2_VIDEO"
+      title: "Patrick LaFranca: Podemos vencer al desánimo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-082_2_VIDEO"
+      published: "2021-09-20"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbgg_201603_3_VIDEO"
+      title: "Graduación de la clase 140 de la Escuela de Galaad: Parte 3. Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201603_3_VIDEO"
+      published: "2016-09-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod24_37_VIDEO"
+      title: "Kenneth Godburn: Apoyamos lealmente a los hermanos de Cristo (Mat. 25:40)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_37_VIDEO"
+      published: "2024-09-27"
+      matched_by: [subtitles]
+      citations: 1
+  13:
+    - docid: "pub-jwb-088_10_VIDEO"
+      title: "Mark Noumair: Estemos preparados para la persecución (1 Ped. 4:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-088_10_VIDEO"
+      published: "2022-04-14"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201702_6_VIDEO"
+      title: "Geoffrey Jackson: ¿Por qué es tan importante ser neutrales? (Miq. 4:2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201702_6_VIDEO"
+      published: "2017-02-20"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-135_1_VIDEO"
+      title: "JW Broadcasting: Marzo de 2026"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_1_VIDEO"
+      published: "2026-03-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-135_7_VIDEO"
+      title: "Stephen Lett: Con la ayuda del espíritu santo aguantamos la persecución (Zac. 4:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-135_7_VIDEO"
+      published: "2026-03-03"
+      matched_by: [subtitles]
+      citations: 1
+  14:
+    - docid: "pub-co-r20_128_VIDEO"
+      title: "Gerrit Lösch: La alegría de hacer discípulos. Aceptemos la ayuda de Jehová: La oración"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_128_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_6_VIDEO"
+      title: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_6_VIDEO"
+      published: "2020-07-23"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_120_VIDEO"
+      title: "Anthony Morris: Esté listo para predicar “las buenas noticias de la paz”. Tome la iniciativa"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_120_VIDEO"
+      published: "2022-07-18"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-100_16_VIDEO"
+      title: "Kenneth Cook: La tierra que durará para siempre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_16_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod26_1_VIDEO"
+      title: "Adoración matutina para el día de la Conmemoración del 2026. Mark Sanderson: El “rebaño pequeño” y las “otras ovejas”, unidos por el amor (Luc. 12:32)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_1_VIDEO"
+      published: "2026-04-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "702021008"
+      title: "2021 | Informe 1 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=702021008"
+      published: "2021-01-29"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-080_7_VIDEO"
+      title: "David Splane: Las profecías de nuestro Dios nunca fallan (Sal. 46:8)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-080_7_VIDEO"
+      published: "2021-05-17"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-088_9_VIDEO"
+      title: "Adoración matutina para el día de la Conmemoración. Gerrit Lösch: Jehová hará que se cumpla su propósito (Gén. 2:15-17)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-088_9_VIDEO"
+      published: "2022-04-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-099_1_VIDEO"
+      title: "JW Broadcasting: Febrero de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_1_VIDEO"
+      published: "2024-02-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-099_4_VIDEO"
+      title: "Del pasado al presente: Gracias a MEPS predicamos en muchísimos idiomas"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_4_VIDEO"
+      published: "2024-02-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-106_1_VIDEO"
+      title: "JW Broadcasting: Octubre de 2023"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-106_1_VIDEO"
+      published: "2023-10-02"
+      matched_by: [subtitles]
+      citations: 1
+  16:
+    - docid: "pub-jwb_201802_12_VIDEO"
+      title: "David Schafer: Sobrevivamos al gran día (Rev. 16:16)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201802_12_VIDEO"
+      published: "2018-02-26"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-jwb-100_14_VIDEO"
+      title: "Stephen Lett: ¿Por qué deben besar todos al Hijo de Dios?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_14_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-120_10_VIDEO"
+      title: "Geoffrey Jackson: Que los cambios repentinos no nos sorprendan"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_10_VIDEO"
+      published: "2024-12-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_1_VIDEO"
+      published: "2024-12-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod24_45_VIDEO"
+      title: "David Schafer: Alimento espiritual que nos ayuda a permanecer vigilantes (Mat. 24:42-45)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_45_VIDEO"
+      published: "2024-11-22"
+      matched_by: [subtitles]
+      citations: 1
+  17:
+    - docid: "pub-co-r22_143_VIDEO"
+      title: "Stephen Lett: Sembraron y cosecharon paz. Ejemplos de la actualidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_143_VIDEO"
+      published: "2022-08-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_9_VIDEO"
+      title: "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_9_VIDEO"
+      published: "2022-08-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-086_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_1_VIDEO"
+      published: "2022-01-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-086_6_VIDEO"
+      title: "Geoffrey Jackson: ¿Está usted allí?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_6_VIDEO"
+      published: "2022-01-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-097_1_VIDEO"
+      title: "JW Broadcasting: Febrero de 2022 (reunión anual del 2021, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_1_VIDEO"
+      published: "2022-02-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-097_8_VIDEO"
+      title: "Samuel Herd: “Jamás te abandonaré”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_8_VIDEO"
+      published: "2022-02-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_19_VIDEO"
+      title: "Geoffrey Jackson: ¿Qué sabemos sobre los futuros juicios de Jehová?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_19_VIDEO"
+      published: "2024-01-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_8_VIDEO"
+      title: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_8_VIDEO"
+      published: "2024-01-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_10_VIDEO"
+      title: "Geoffrey Jackson: Que los cambios repentinos no nos sorprendan"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_10_VIDEO"
+      published: "2024-12-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_1_VIDEO"
+      published: "2024-12-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201901_3_VIDEO"
+      title: "Reunión anual del 2018: Discursos y anuncios"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201901_3_VIDEO"
+      published: "2019-01-21"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201912_5_VIDEO"
+      title: "Graduación de la clase 147 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201912_5_VIDEO"
+      published: "2019-12-30"
+      matched_by: [subtitles]
+      citations: 1
+  18:
+    - docid: "pub-co-r22_143_VIDEO"
+      title: "Stephen Lett: Sembraron y cosecharon paz. Ejemplos de la actualidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_143_VIDEO"
+      published: "2022-08-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_9_VIDEO"
+      title: "Domingo mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_9_VIDEO"
+      published: "2022-08-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-098_10_VIDEO"
+      title: "Samuel Herd: En cualquier momento"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-098_10_VIDEO"
+      published: "2022-12-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-098_3_VIDEO"
+      title: "Graduación de la clase 152 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-098_3_VIDEO"
+      published: "2022-12-26"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201901_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2019 (reunión anual del 2018)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201901_1_VIDEO"
+      published: "2019-01-07"
+      matched_by: [subtitles]
+      citations: 1
+  19:
+    - docid: "pub-co-r22_12_VIDEO"
+      title: "Domingo tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_12_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_147_VIDEO"
+      title: "Geoffrey Jackson: La paz universal será una realidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_147_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_116_VIDEO"
+      title: "Mark Noumair: Apoyemos con lealtad al “Príncipe de Paz”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_116_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_4_VIDEO"
+      title: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_4_VIDEO"
+      published: "2022-07-04"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-100_16_VIDEO"
+      title: "Kenneth Cook: La tierra que durará para siempre"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_16_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-115_1_VIDEO"
+      title: "JW Broadcasting: Agosto de 2024"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_1_VIDEO"
+      published: "2024-08-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-115_2_VIDEO"
+      title: "Gage Fleegle: ¡Declaremos el secreto sagrado de Jehová!"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-115_2_VIDEO"
+      published: "2024-08-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwban_201503_1_VIDEO"
+      title: "Gerrit Lösch: “La palabra profética” nos fortalece"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201503_1_VIDEO"
+      published: "2016-11-02"
+      matched_by: [subtitles]
+      citations: 1
+  20:
+    - docid: "pub-co-r22_12_VIDEO"
+      title: "Domingo tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_12_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r22_147_VIDEO"
+      title: "Geoffrey Jackson: La paz universal será una realidad"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_147_VIDEO"
+      published: "2022-08-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-086_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2022 (reunión anual del 2021, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_1_VIDEO"
+      published: "2022-01-03"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-086_6_VIDEO"
+      title: "Geoffrey Jackson: ¿Está usted allí?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-086_6_VIDEO"
+      published: "2022-01-04"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201801_11_VIDEO"
+      title: "Reunión anual del 2017: discursos y cambios en la manera de predicar"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201801_11_VIDEO"
+      published: "2018-01-29"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_202011_9_VIDEO"
+      title: "Ronald Curzan: Tenemos la esperanza de la resurrección (Hech. 24:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202011_9_VIDEO"
+      published: "2020-11-09"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbvod25_19_VIDEO"
+      title: "John Ekrann: La resurrección de los injustos (Hech. 24:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_19_VIDEO"
+      published: "2025-05-23"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r20_137_VIDEO"
+      title: "Stephen Lett: Preparémonos para hacer discípulos en el nuevo mundo"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_137_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r20_8_VIDEO"
+      title: "Sábado tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_8_VIDEO"
+      published: "2020-08-03"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-100_14_VIDEO"
+      title: "Stephen Lett: ¿Por qué deben besar todos al Hijo de Dios?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_14_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-100_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2023 (reunión anual del 2022, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_9_VIDEO"
+      published: "2023-02-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-134_10_VIDEO"
+      title: "Gerrit Lösch: ¿De qué templos nos habla la Biblia? (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_10_VIDEO"
+      published: "2026-02-05"
+      matched_by: [subtitles]
+      citations: 1
+  21:
+    - docid: "pub-jwbvod25_41_VIDEO"
+      title: "Hermanus van Selm: Jehová garantiza que sus promesas se cumplirán (Apoc. 21:4-6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_41_VIDEO"
+      published: "2025-10-24"
+      matched_by: [title, subtitles]
+      citations: 4
+    - docid: "pub-jwb_201811_11_VIDEO"
+      title: "Joel Dellinger: Fortalezcamos nuestra esperanza (Rev. 21:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201811_11_VIDEO"
+      published: "2018-11-26"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-mwbv_201806_3_VIDEO"
+      title: "2018-06 | Segunda revisita (Rev 21:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201806_3_VIDEO"
+      published: "2018-05-23"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_201812_3_VIDEO"
+      title: "2018-12 | Segunda revisita (Rev 21:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201812_3_VIDEO"
+      published: "2018-11-12"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_201906_2_VIDEO"
+      title: "2019-06 | Primera revisita (Rev 21:3, 4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201906_2_VIDEO"
+      published: "2019-05-13"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_201911_3_VIDEO"
+      title: "2019-11 | Segunda revisita (Ap 21:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_201911_3_VIDEO"
+      published: "2019-10-14"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_202006_2_VIDEO"
+      title: "2020-06 | Revisita (Ap 21:3, 4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_202006_2_VIDEO"
+      published: "2020-05-11"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-mwbv_202111_2_VIDEO"
+      title: "Revisita: La Biblia (Ap 21:3, 4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-mwbv_202111_2_VIDEO"
+      published: "2021-10-01"
+      matched_by: [title]
+      citations: 0
+    - docid: "pub-jwb-100_1_VIDEO"
+      title: "JW Broadcasting: Enero de 2023 (reunión anual del 2022, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_1_VIDEO"
+      published: "2023-01-02"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-100_3_VIDEO"
+      title: "Anthony Morris: ¡Serán fantásticas!"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-100_3_VIDEO"
+      published: "2023-01-02"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-134_10_VIDEO"
+      title: "Gerrit Lösch: ¿De qué templos nos habla la Biblia? (reunión anual del 2025)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_10_VIDEO"
+      published: "2026-02-05"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-134_9_VIDEO"
+      title: "JW Broadcasting: Febrero de 2026 (reunión anual del 2025, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-134_9_VIDEO"
+      published: "2026-02-02"
+      matched_by: [subtitles]
+      citations: 3
+  22:
+    - docid: "pub-jwbvod25_13_VIDEO"
+      title: "Michael Banks: “Vengo pronto” (Apoc. 22:20)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_13_VIDEO"
+      published: "2025-03-21"
+      matched_by: [title, subtitles]
+      citations: 3
+    - docid: "pub-jwb_201710_11_VIDEO"
+      title: "William Malenfant: Usemos bien nuestros talentos (Mat. 25:30)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201710_11_VIDEO"
+      published: "2017-10-16"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-097_1_VIDEO"
+      title: "JW Broadcasting: Febrero de 2022 (reunión anual del 2021, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_1_VIDEO"
+      published: "2022-02-07"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-097_5_VIDEO"
+      title: "Gerrit Lösch: “Ningún habitante dirá: ‘Estoy enfermo’”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-097_5_VIDEO"
+      published: "2022-02-08"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201803_2_VIDEO"
+      title: "Gerrit Lösch: ¿En quién confía usted?"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201803_2_VIDEO"
+      published: "2018-03-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod25_35_VIDEO"
+      title: "William Malenfant: Debemos protegernos de las enseñanzas de demonios (1 Tim. 4:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_35_VIDEO"
+      published: "2025-08-29"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-rrv_22_VIDEO"
+      title: "Presentación del capítulo 22"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-rrv_22_VIDEO"
+      published: "2021-07-13"
+      matched_by: [subtitles]
+      citations: 1

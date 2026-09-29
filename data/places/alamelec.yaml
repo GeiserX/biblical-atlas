@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: alamelec
+name: Alamélec
+names:
+- name: Alamélec
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Parte sur de la llanura de Akkó, quizá en Wadi el-Melek
+  geometry:
+    type: zone
+    lat: 32.771216
+    lon: 35.143017
+    radius_km: 5
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-alamelec
+  - openbible-geo
+  reason: Perspicacia la pone al norte del Cisón, probablemente en el sur de la llanura de Akkó, quizá en Wadi el-Melek.
+  coord_source: openbible:a3e0180
+  coord_url: https://www.openbible.info/geo/ancient/a3e0180/valley-of-iphtahel
+  note: 'Centro: el punto de Wadi el-Melek en la ficha «Valley of Iphtahel» de OpenBible. Radio nuestro.'
+summary: Pueblo de Aser al norte del torrente Cisón. No se sabe dónde estaba; quizá en Wadi el-Melek, que desemboca en el
+  Cisón.
+reason: Perspicacia «Alamélec»; Jos 19:26. Zona alrededor de un punto de OpenBible, con radio nuestro.
+sources:
+- it-alamelec
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Alamélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000197
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

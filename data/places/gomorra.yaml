@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gomorra
+name: Gomorra
+names:
+- name: Gomorra
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bajo el extremo sur del mar Muerto (valle de Sidim)
+  geometry:
+    type: zone
+    lat: 31.20849
+    lon: 35.449223
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-gomorra
+  - it-mar-salado
+  - genesis-14
+  reason: Perspicacia la pone probablemente cerca del extremo sur del mar Muerto; muchos creen que sus ruinas están bajo el
+    agua (Gomorra, párr. 3; Mar Salado, párr. 7).
+  note: 'Centro: punto de OpenBible para el valle de Sidim. Radio nuestro.'
+  coord_source: openbible:aa572e2
+  coord_url: https://www.openbible.info/geo/ancient/aa572e2/gomorrah
+- name: Uadis al este y sureste del mar Muerto
+  geometry:
+    type: zone
+    lat: 31.129757
+    lon: 35.529368
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-gomorra
+  - w96-rendir-cuenta
+  - g96-observando-el-mundo
+  reason: Otros investigadores identifican sus ruinas en esos uadis (Gomorra, párr. 3). Las revistas de 1996 lo cuentan sin
+    darlo por seguro.
+  note: 'Centro: punto de Numeira en OpenBible; Perspicacia no nombra ese sitio. Radio nuestro.'
+  coord_source: openbible:aa572e2
+  coord_url: https://www.openbible.info/geo/ancient/aa572e2/gomorrah
+summary: Una de las ciudades del Distrito, junto a Sodoma. Su rey Birsá se rebeló contra Kedorlaomer, y más tarde Dios la
+  destruyó con Sodoma. Su sitio exacto se discute.
+reason: Perspicacia «Gomorra» (párr. 3-4) y «Mar Salado» (párr. 7); Gé 14:1-12 y 19:24-28.
+sources:
+- it-gomorra
+- it-mar-salado
+- genesis-19
+- openbible-geo
+- genesis-14
+- genesis-18
+links:
+- title: 'Perspicacia: «Gomorra»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001741
+  type: perspicacia
+- title: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

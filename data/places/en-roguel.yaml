@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-roguel
+name: En-Roguel
+names:
+- name: En-Roguel
+type: lake
+lat: 31.767198
+lon: 35.235985
+precision: point
+coord_source: openbible:af9cfc9
+coord_url: https://www.openbible.info/geo/ancient/af9cfc9/en-rogel
+coord_note: 'Punto de Bir Ayyub en OpenBible. Es un pozo o fuente: «lago» es el tipo más cercano de la lista.'
+summary: Fuente o pozo al sur de Jerusalén, cerca de donde se juntan los valles de Cedrón e Hinón, en el límite entre Judá
+  y Benjamín. La opinión general la iguala con Bir Ayyub, el pozo de Job.
+reason: 'Perspicacia «En-roguel»; Jos 15:7; 18:16; 2Sa 17:17; 1Re 1:9. OpenBible: solo el punto.'
+sources:
+- it-en-roguel
+- openbible-geo
+- josue-15
+- josue-18
+links:
+- title: 'Perspicacia: «En-roguel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001374
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

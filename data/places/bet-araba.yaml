@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-araba
+name: Bet-Arabá
+names:
+- name: Bet-Arabá
+type: city
+lat: 31.845782
+lon: 35.501718
+precision: uncertain
+coord_source: openbible:a3f8916
+coord_url: https://www.openbible.info/geo/ancient/a3f8916/beth-arabah
+coord_note: 'ʽAin el-Gharabah, primera identificación de OpenBible: según Perspicacia allí queda rastro del nombre.'
+summary: Ciudad del desierto, en el extremo norte del mar Muerto, que marcaba la frontera de Judá con Benjamín. Figura entre
+  las ciudades de Judá y luego entre las de Benjamín, quizá como enclave.
+reason: 'Perspicacia «Bet-arabá»; Jos 15:6, 61; 18:21, 22. El nombre sigue en un manantial unos 6 km al estesureste de Jericó.
+  OpenBible: solo el punto.'
+sources:
+- it-bet-araba
+- openbible-geo
+- josue-15
+- josue-18
+links:
+- title: 'Perspicacia: «Bet-arabá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000671
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

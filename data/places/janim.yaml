@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: janim
+name: Janim
+names:
+- name: Janim
+type: city
+lat: 31.51591
+lon: 35.16416
+precision: uncertain
+coord_source: openbible:a175f4b
+coord_url: https://www.openbible.info/geo/ancient/a175f4b/janim
+coord_note: Bani Naʽim, primera identificación de OpenBible, que Perspicacia da como tentativa.
+summary: Ciudad de la montaña de Judá, identificada con dudas con Beni Naʽim, unos 5 km al estesureste de Hebrón.
+reason: 'Perspicacia «Janim»; Jos 15:53. OpenBible: solo el punto.'
+sources:
+- it-janim
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Janim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002319
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

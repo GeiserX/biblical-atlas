@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quemuel-hijo-de-siftan
+name: Quemuel
+names:
+- name: Quemuel
+perspicacia: 1200002587#2
+disambiguation: Quemuel hijo de Siftán, el jefe de Efraín; no Quemuel hijo de Nacor ni el levita padre de Hasabías.
+distinct_from:
+- quemuel-hijo-de-nacor
+summary: Jefe de la tribu de Efraín, hijo de Siftán. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a
+  dividir Canaán en herencias.
+reason: Perspicacia «Quemuel», núm. 2; Nú 34:24.
+sources:
+- it-quemuel
+- numeros-34
+links:
+- title: 'Perspicacia: «Quemuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002587
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: siftan
+  word: father
+  inferred: false
+  sources:
+  - numeros-34
+  - it-quemuel
+  reason: Nú 34:24 lo llama hijo de Siftán.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: efrain
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:24: era el jefe de la tribu de Efraín.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jose-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:23, 24: su tribu era de los hijos de José.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

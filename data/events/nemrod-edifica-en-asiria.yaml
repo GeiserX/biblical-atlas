@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nemrod-edifica-en-asiria
+title: Nemrod edifica Nínive y otras ciudades de Asiria
+date:
+  from: -2268
+  to: -1656
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 2269 y 1657 a.e.c. (tiempo narrativo: después de la torre de Babel)'
+narrative_order:
+  series: genesis
+  order: 10011
+  after: torre-de-babel
+places:
+- ninive
+- rehobot-ir
+- calah
+- resen
+- asiria
+people:
+- nemrod
+passages:
+- Gé 10:11, 12
+summary: Desde Sinar, Nemrod pasa a Asiria, tierra de los descendientes de Sem, y construye Nínive, Rehobot-Ir y Cálah, además
+  de Resen, que quedaba entre Nínive y Cálah.
+reason: 'Perspicacia «Nemrod», párr. 4: lo hizo tras la torre de Babel, de los días de Péleg (desde 2269, «Cronología»). El
+  final es el de lo que abarca Génesis, porque nadie da otro límite.'
+sources:
+- genesis-10
+- it-nemrod
+- it-cronologia
+- it-asiria
+links:
+- title: 'Perspicacia: «Nemrod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003259
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

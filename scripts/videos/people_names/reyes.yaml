@@ -1,0 +1,95 @@
+# Nombres de personas que busca scripts/videos/index.py en los subtítulos: carril «reyes».
+# Mismo formato que scripts/videos/place_names/pablo.yaml, con el id de data/people. Solo formas que no se confunden.
+# David, Samuel, Elías, Eliseo, Isaías, Jeremías, Ezequiel, Jonás, Amós, Oseas, Natán, Saúl, Salomón y Joaquín son
+# también nombres de pila en las experiencias: van calificados («rey David», «profeta Elías»). Joel, Abías, Asá, Amón,
+# Manasés, Nadab, Elá, Salum, Zacarías y Hosea nombran a varias personas o a una tribu: no se buscan sueltos.
+
+saul:
+  names: [rey Saúl]
+david:
+  names: [rey David]
+salomon:
+  names: [rey Salomón]
+rehoboam:
+  names: [Rehoboam]
+jehosafat:
+  names: [Jehosafat]
+atalia:
+  names: [reina Atalía]
+  accents: strict
+uzias:
+  names: [Uzías]
+jotan:
+  names: [rey Jotán]
+acaz:
+  names: [Acaz]
+ezequias:
+  names: [Ezequías]
+josias:
+  names: [Josías]
+jehoiaquim:
+  names: [Jehoiaquim]
+joaquin:
+  names: [rey Joaquín, Jeconías]
+sedequias:
+  names: [rey Sedequías]
+jeroboan-i:
+  names: [Jeroboán I, Jeroboán hijo de Nebat]
+jeroboan-ii:
+  names: [Jeroboán II]
+baasa:
+  names: [Baasá]
+omri:
+  names: [Omrí]
+acab:
+  names: [Acab]
+jehu-de-israel:
+  names: [rey Jehú]
+menahem:
+  names: [Menahem]
+pecah:
+  names: [Pécah]
+samuel:
+  names: [profeta Samuel]
+natan-profeta:
+  names: [profeta Natán]
+elias-profeta:
+  names: [profeta Elías]
+eliseo:
+  names: [profeta Eliseo]
+jonas-profeta:
+  names: [profeta Jonás]
+amos-profeta:
+  names: [profeta Amós]
+oseas:
+  names: [profeta Oseas]
+isaias:
+  names: [profeta Isaías]
+miqueas-profeta:
+  names: [profeta Miqueas]
+sofonias-profeta:
+  names: [Sofonías]
+nahum-profeta:
+  names: [profeta Nahúm]
+habacuc:
+  names: [Habacuc]
+jeremias-profeta:
+  names: [profeta Jeremías]
+abdias-profeta:
+  names: [profeta Abdías]
+ezequiel:
+  names: [profeta Ezequiel]
+nabucodonosor-ii:
+  names: [Nabucodonosor]
+jezabel:
+  names: [Jezabel]
+guedalias:
+  names: [Guedalías]
+sisaq:
+  names: [Sisaq]
+tiglat-pileser-iii:
+  names: [Tiglat-Piléser]
+senaquerib:
+  names: [Senaquerib]
+neko:
+  names: [Nekó]

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ezbon-hijo-de-gad
+name: Ezbón
+names:
+- name: Ezbón
+- name: Ozní
+  note: Nombre de Números 26; Perspicacia deduce que es la misma persona.
+perspicacia: 1200001468#1
+disambiguation: Ezbón hijo de Gad; no el benjamita hijo de Bela.
+summary: Hijo de Gad y nieto de Jacob. Números 26 pone en su lugar a Ozní, así que los dos nombres serían de la misma persona.
+reason: Perspicacia «Ezbón», núm. 1; Gé 46:16.
+sources:
+- it-ezbon
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Ezbón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001468
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: gad-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-ezbon
+  - numeros-26
+  reason: 'Gé 46:16: aparece entre los hijos de Gad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

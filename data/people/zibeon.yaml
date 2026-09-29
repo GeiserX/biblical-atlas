@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zibeon
+name: Zibeón
+names:
+- name: Zibeón
+perspicacia: '1200004725'
+summary: Jeque horeo de la tierra de Seír, hijo de Seír y padre de Ayá y Aná. Su nieta Oholibamá se casó con Esaú. El texto
+  lo llama heveo y también horeo.
+reason: Perspicacia «Zibeón» y «Horeo», párr. 2; Gé 36:2, 20, 24, 29.
+sources:
+- it-zibeon
+- genesis-36
+links:
+- title: 'Perspicacia: «Zibeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004725
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: seir
+  word: father
+  inferred: false
+  sources:
+  - it-seir
+  - genesis-36
+  reason: 'Gé 36:20: hijo de Seír el horeo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - it-zibeon
+  - genesis-36
+  reason: 'Gé 36:29, 30: jeque de los horeos en la tierra de Seír.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

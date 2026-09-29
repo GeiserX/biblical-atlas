@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guibea-de-juda
+name: Guibeá
+names:
+- name: Guibeá
+- name: Guibeah
+  note: Otra grafía que da la nota de Jos 15:57; es la de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: El Jabʽa
+  geometry:
+    type: point
+    lat: 31.675138
+    lon: 35.076193
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guibeah
+  - openbible-geo
+  reason: Algunos eruditos la ponen en El Jabʽa, unos 12 km al oestesuroeste de Belén.
+  coord_source: openbible:a2f0f05
+  coord_url: https://www.openbible.info/geo/ancient/a2f0f05/gibeah-2
+- name: Al sureste de Hebrón, con Maón, Carmelo, Zif y Jutá
+  geometry:
+    type: zone
+    lat: 31.438725
+    lon: 35.122975
+    radius_km: 8
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guibeah
+  - openbible-geo
+  reason: Otros la buscan al sureste de Hebrón, porque la lista la nombra con ciudades de esa zona.
+  coord_source: calculation
+  note: 'Centro: media de los puntos de OpenBible de Maón, Carmelo, Zif y Jutá (Jos 15:55). Radio nuestro.'
+summary: Ciudad de la montaña de Judá. Unos la ponen en El Jabʽa, al oestesuroeste de Belén; otros al sureste de Hebrón. Quizá
+  de aquí, o de la de Benjamín, era Micaya, madre del rey Abías.
+reason: 'Perspicacia «Guibeah», núm. 1; Jos 15:57; 2Cr 13:2. No es Guibeá de Benjamín. OpenBible: solo los puntos.'
+sources:
+- it-guibeah
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Guibeah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001679
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

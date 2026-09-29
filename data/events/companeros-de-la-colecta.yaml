@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: companeros-de-la-colecta
+title: Siete compañeros van con Pablo hacia Asia
+date:
+  from: 56
+  to: 56
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Pascua de 56 e.c.
+narrative_order:
+  series: hechos
+  order: 2004
+places:
+- filipos
+- troas
+people:
+- pablo
+- lucas
+- sopater
+- aristarco
+- segundo
+- gayo-de-derbe
+- timoteo
+- tiquico
+- trofimo
+passages:
+- Hch 20:4-6
+summary: Sópater, Aristarco, Segundo, Gayo, Timoteo, Tíquico y Trófimo se adelantan a Troas. Pablo y Lucas salen
+  de Filipos después de la fiesta y se reúnen con ellos a los cinco días.
+reason: Hch 20:4-6; el estudio 3 (párr. 26) fecha la salida de Filipos en la Pascua de 56. Perspicacia «Gayo» (núm.
+  2).
+sources:
+- hch-20
+- si-3
+- it-gayo
+- it-sopater
+- nota-hechos-20
+search: compañeros de Pablo Hechos 20:4
+history:
+- date: '2026-09-29'
+  change: El Gayo de Hch 20:4 es el de Derbe (Perspicacia «Gayo», núm. 2), no el macedonio de Hch 19:29; Perspicacia solo
+    ve posible que sean el mismo.
+  source: hch-20
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: estemoa
+name: Estemoa
+names:
+- name: Estemoa
+- name: Estemó
+  note: Así la llama Jos 15:50.
+type: city
+lat: 31.400792
+lon: 35.067075
+precision: point
+coord_source: openbible:ad68510
+coord_url: https://www.openbible.info/geo/ancient/ad68510/eshtemoa
+summary: Población de la montaña de Judá que luego se dio a los levitas, en la actual es-Samuʽ, unos 15 km al sursuroeste
+  de Hebrón. David iba allí cuando huía de Saúl y mandó botín a sus amigos.
+reason: 'Perspicacia «Estemoa, Estemó», núm. 3; Jos 15:50; 21:14; 1Sa 30:28. OpenBible: solo el punto.'
+sources:
+- it-estemoa
+- openbible-geo
+- josue-15
+- josue-21
+links:
+- title: 'Perspicacia: «Estemoa, Estemó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001427
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+coord_note: As-Samuʽ, el pueblo actual con que la hace corresponder Perspicacia, al SSO de Hebrón.

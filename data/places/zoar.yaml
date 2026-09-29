@@ -1,0 +1,74 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zoar
+name: Zóar
+names:
+- name: Zóar
+- name: Bela
+  note: Nombre anterior de la ciudad, según parece (Gé 14:2, 8).
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Sureste del mar Salado, junto a los montes de Moab
+  geometry:
+    type: zone
+    lat: 31.036904
+    lon: 35.487657
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-zoar
+  reason: Perspicacia cree que estaba en Moab o muy cerca, hacia el sureste del mar Muerto, próxima a la región montañosa moabita
+    (párr. 3).
+  note: 'Centro: punto de es-Safi en OpenBible. Radio nuestro.'
+  coord_source: openbible:aacfcda
+  coord_url: https://www.openbible.info/geo/ancient/aacfcda/zoar
+- name: es-Safi, en el delta del Zered
+  geometry:
+    type: point
+    lat: 31.036904
+    lon: 35.487657
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-zoar
+  reason: Perspicacia recoge que Yohanan Aharoni la identifica con este sitio (párr. 3).
+  coord_source: openbible:aacfcda
+  coord_url: https://www.openbible.info/geo/ancient/aacfcda/zoar
+- name: Bajo el sector sur del mar Salado
+  geometry:
+    type: zone
+    lat: 31.20849
+    lon: 35.449223
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-zoar
+  - it-distrito-del-jordan
+  reason: Varios eruditos creen que ella y las otras ciudades del Distrito quedaron bajo el agua (Zóar, párr. 3).
+  note: 'Centro: punto de OpenBible al sur de la península de El-Lisan. Radio nuestro.'
+  coord_source: openbible:a4a5cce
+  coord_url: https://www.openbible.info/geo/ancient/a4a5cce/valley-of-siddim
+summary: Ciudad del Distrito del Jordán, al parecer llamada antes Bela, en el extremo de una llanura fértil. Su rey se rebeló
+  contra Kedorlaomer; más tarde Lot se refugió en ella y se salvó.
+reason: Perspicacia «Zóar», párr. 2 y 3; Gé 13:10; 14:2, 8. Su sitio se discute.
+sources:
+- it-zoar
+- openbible-geo
+- genesis-13
+- genesis-14
+- genesis-19
+links:
+- title: 'Perspicacia: «Zóar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004755
+  type: perspicacia
+- title: Génesis 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

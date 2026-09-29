@@ -2,10 +2,14 @@
 """Compila data/ en dist/data.json, site/data.json, site/data.js, dist/biblical-earth.sqlite
 y el registro de investigación de docs/investigacion/registro/.
 
-Uso:  python3 scripts/build.py [--data DIR] [--salida DIR]
+Uso:  python3 scripts/build.py [--data DIR] [--out DIR]
 
-Con --salida DIR escribe data.json, data.js, biblical-earth.sqlite y registro/ dentro de DIR y no toca
-site/, dist/ ni docs/. Sirve para probar datos sin pisar lo que compila otro.
+Con --out DIR (alias --salida) escribe data.json, data.js, biblical-earth.sqlite y registro/ dentro de DIR y no
+toca site/, dist/ ni docs/. Sirve para probar datos sin pisar lo que compila otro.
+
+Los YAML de data/ tienen el núcleo en inglés (docs/investigacion/modelo.md). build.py hace de adaptador: lo que el
+sitio ya leía sale con sus nombres y valores de siempre, con el mapa de scripts/migration/map.yaml leído al revés, y
+lo nuevo sale al lado, en inglés. cargar() e integridad() trabajan sobre los datos tal como están en el YAML.
 
 Todo lo que escribe es derivado: se edita el YAML y se vuelve a generar.
 """
@@ -22,20 +26,27 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import cobertura  # noqa: E402
+import bible_coverage as cov  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
+MAP_PATH = RAIZ / "scripts" / "migration" / "map.yaml"
+VOCABULARY = "vocabulary.yaml"
 FORMATO = "biblical-earth/v0"
-TIPOS = ["lugares", "personas", "viajes", "cartas", "eventos", "periodos", "hallazgos", "recorridos"]
-# Tipo de cada carpeta en singular, tal como lo usa el sitio en la dirección (#sel=lugar:filipos).
-SINGULAR = {"lugares": "lugar", "personas": "persona", "viajes": "viaje", "cartas": "carta", "eventos": "evento",
-            "periodos": "periodo", "hallazgos": "hallazgo", "recorridos": "recorrido"}
+TYPES = ["places", "people", "journeys", "letters", "events", "periods", "finds", "tours"]
+# Tipo de cada carpeta en singular, tal como va en las selecciones de los YAML (person:ciro).
+SINGULAR = {"places": "place", "people": "person", "journeys": "journey", "letters": "letter", "events": "event",
+            "periods": "period", "finds": "find", "tours": "tour"}
 WOL_BUSCAR = "https://wol.jw.org/es/wol/s/r4/lp-s?q={q}&p=par&r=occ&st=a"
 WOL_CAPITULO = "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/{num}/{cap}"
 OBRA_TNM = "La Biblia. Traducción del Nuevo Mundo (edición de estudio)"
 ORDEN_LIBROS = ["romanos", "1-corintios", "2-corintios", "galatas", "efesios", "filipenses", "colosenses",
                 "1-tesalonicenses", "2-tesalonicenses", "1-timoteo", "2-timoteo", "tito", "filemon", "hebreos"]
 CAPITULO = re.compile(r"^([a-z0-9]+(?:-[a-z0-9]+)*)-(\d+)$")
+RE_NWTSTY = re.compile(r"/nwtsty/(\d+)/(\d+)(?:\D|$)")
+# Claves que no vienen de ningún YAML: las añade build.py. Salen en data.json con su nombre de siempre.
+BUILD_KEYS = {"implicit": "implicita"}
+# Grupo de la tarjeta de familia visto desde el otro lado: padres e hijos se cruzan, cónyuges y hermanos se repiten.
+FAMILY_ACROSS = {"parents": "children", "children": "parents"}
 
 
 # ---------------------------------------------------------------- carga
@@ -55,33 +66,45 @@ def _leer(ruta):
     return _texto(yaml.safe_load(ruta.read_text(encoding="utf-8")))
 
 
+def load_map():
+    return yaml.safe_load(MAP_PATH.read_text(encoding="utf-8"))
+
+
+def load_vocabulary(data_dir):
+    """data/vocabulary.yaml de esa copia de los datos o, si no lo lleva, el de este repositorio."""
+    ruta = Path(data_dir) / VOCABULARY
+    if not ruta.exists():
+        ruta = RAIZ / "data" / VOCABULARY
+    return yaml.safe_load(ruta.read_text(encoding="utf-8"))
+
+
 def _fundir_fuentes(data_dir, errores):
-    """Junta data/fuentes/*.yaml. Un id repetido con la misma url y el mismo titulo se funde (gana el
-    `consultado` más reciente); con datos distintos es un error que nombra los dos ficheros."""
+    """Junta data/sources/*.yaml. Un id repetido con la misma url y el mismo title se funde (gana el
+    `checked_on` más reciente); con datos distintos es un error que nombra los dos ficheros."""
     fuentes, origen = {}, {}
-    for ruta in sorted((data_dir / "fuentes").glob("*.yaml")):
-        rel = f"data/fuentes/{ruta.name}"
+    for ruta in sorted((data_dir / "sources").glob("*.yaml")):
+        rel = f"data/sources/{ruta.name}"
         contenido = _leer(ruta) or {}
         if not isinstance(contenido, dict):
-            errores.append(f"{rel}: debe ser un mapa id: {{titulo, obra, url, ...}}")
+            errores.append(f"{rel}: debe ser un mapa id: {{title, work, url, ...}}")
             continue
         for fid, f in contenido.items():
             if f is not None and not isinstance(f, dict):
-                errores.append(f"{rel}: la fuente '{fid}' debe ser un mapa {{titulo, obra, url, ...}}, no {f!r}")
+                errores.append(f"{rel}: la fuente '{fid}' debe ser un mapa {{title, work, url, ...}}, no {f!r}")
                 continue
             f = dict(f or {})
             if fid not in fuentes:
                 fuentes[fid], origen[fid] = f, rel
                 continue
             previa, choque = fuentes[fid], []
-            for k in ("url", "titulo"):
+            for k in ("url", "title"):
                 if previa.get(k) != f.get(k):
                     choque.append(k)
             for k in set(previa) | set(f):
                 a, b = previa.get(k), f.get(k)
-                if k in ("url", "titulo") or a == b or a is None or b is None:
+                if k in ("url", "title") or a == b or a is None or b is None:
                     continue
-                if k == "consultado":
+                if k == "checked_on":
                     continue
                 choque.append(k)
             if choque:
@@ -90,23 +113,25 @@ def _fundir_fuentes(data_dir, errores):
                 continue
             for k, b in f.items():
                 a = previa.get(k)
-                if a is None or (k == "consultado" and b is not None and str(b) > str(a)):
+                if a is None or (k == "checked_on" and b is not None and str(b) > str(a)):
                     previa[k] = b
             origen[fid] = f"{origen[fid]}, {rel}"
     return fuentes, origen
 
 
-def fuentes_de(obj):
-    """Todas las listas de fuentes de un objeto, con la ruta donde están."""
+def fuentes_de(obj, claves=("sources", "source")):
+    """Todas las listas de fuentes de un objeto, con la ruta donde están. `claves` son el nombre de la lista y el de
+    una fuente suelta: ("sources", "source") en los YAML y ("fuentes", "fuente") en lo que se compila para el sitio."""
+    lista, suelta = claves
     out = []
 
     def rec(x, camino):
         if isinstance(x, dict):
             for k, v in x.items():
-                if k == "fuentes" and isinstance(v, list):
-                    out.extend((camino + ".fuentes", f) for f in v)
-                elif k == "fuente" and isinstance(v, str):
-                    out.append((camino + ".fuente", v))
+                if k == lista and isinstance(v, list):
+                    out.extend((f"{camino}.{lista}", f) for f in v)
+                elif k == suelta and isinstance(v, str):
+                    out.append((f"{camino}.{suelta}", v))
                 else:
                     rec(v, f"{camino}.{k}")
         elif isinstance(x, list):
@@ -127,27 +152,46 @@ def capitulo_de(fid, libros):
 
 
 def fuente_capitulo(libro, cap):
-    return {"titulo": f"{libro['nombre']} {cap}", "obra": OBRA_TNM,
-            "url": WOL_CAPITULO.format(num=libro["num"], cap=cap), "nivel": 1, "publicado": None,
-            "consultado": None, "implicita": True}
+    return {"title": f"{libro['name']} {cap}", "work": OBRA_TNM,
+            "url": WOL_CAPITULO.format(num=libro["num"], cap=cap), "level": 1, "published": None,
+            "checked_on": None, "implicit": True}
+
+
+def old_schema(data_dir, mapa=None):
+    """[(ruta antigua, ruta nueva)] de las carpetas y los ficheros de data/ que siguen con su nombre de antes de la
+    migración. Con cualquiera de ellos build.py no compila: escribiría un sitio vacío sin avisar."""
+    mapa = mapa or load_map()
+    out = []
+    for grupo in ("directories", "files"):
+        for viejo, nuevo in (mapa.get(grupo) or {}).items():
+            if viejo != nuevo and viejo.startswith("data/") and (Path(data_dir) / viejo.removeprefix("data/")).exists():
+                out.append((viejo, nuevo))
+    return out
 
 
 def cargar(data_dir):
-    """Lee data/. Devuelve (datos, ficheros) donde ficheros[(tipo, id)] = ruta relativa.
+    """Lee data/ tal como está, con el núcleo en inglés. Devuelve (datos, ficheros) donde ficheros[(tipo, id)] es la
+    ruta relativa y tipo es el nombre de la carpeta (people, places...).
 
-    Solo recorre data/fuentes/*.yaml, data/libros.yaml, data/calendario.yaml, data/<tipo>/*.yaml y
-    data/cobertura/*.yaml (que va a datos["cobertura"]): data/_propuestas/ y cualquier otra carpeta quedan fuera. Los errores de carga (fuentes repetidas con datos
-    distintos) van a datos["_errores"] y los informa integridad().
+    datos lleva sources, books, calendar, coverage y una lista por carpeta de TYPES, más vocabulary (el de
+    data/vocabulary.yaml). Solo recorre data/sources/*.yaml, data/books.yaml, data/calendar.yaml, data/<tipo>/*.yaml
+    y data/coverage/*.yaml: data/_proposals/ y cualquier otra carpeta quedan fuera. Los errores de carga (fuentes
+    repetidas con datos distintos) van a datos["_errores"] y los informa integridad().
     """
     data_dir = Path(data_dir)
     errores = []
+    for viejo, nuevo in old_schema(data_dir):
+        errores.append(f"{viejo} tiene el nombre del esquema antiguo (ahora {nuevo}): estos datos no están migrados; "
+                       f"ejecuta scripts/migration/migrate.py")
+    if not (data_dir / "books.yaml").exists():
+        errores.append(f"books.yaml no existe en {data_dir}: sin la lista de libros no se compila nada")
     fuentes, origen = _fundir_fuentes(data_dir, errores)
-    libros = ((_leer(data_dir / "libros.yaml") or {}).get("libros") or []) if (data_dir / "libros.yaml").exists() else []
-    calendario = (_leer(data_dir / "calendario.yaml") or {}) if (data_dir / "calendario.yaml").exists() else {}
-    datos = {"fuentes": fuentes, "libros": libros, "calendario": calendario, "_errores": errores,
-             "_origen_fuentes": origen}
+    libros = ((_leer(data_dir / "books.yaml") or {}).get("books") or []) if (data_dir / "books.yaml").exists() else []
+    calendario = (_leer(data_dir / "calendar.yaml") or {}) if (data_dir / "calendar.yaml").exists() else {}
+    datos = {"sources": fuentes, "books": libros, "calendar": calendario, "_errores": errores,
+             "_origen_fuentes": origen, "vocabulary": load_vocabulary(data_dir)}
     ficheros = {}
-    for tipo in TIPOS:
+    for tipo in TYPES:
         datos[tipo] = []
         for ruta in sorted((data_dir / tipo).glob("*.yaml")):
             obj = _leer(ruta)
@@ -158,32 +202,222 @@ def cargar(data_dir):
             obj["_nombre_fichero"] = ruta.stem
             datos[tipo].append(obj)
             ficheros[(tipo, obj.get("id"))] = obj["_fichero"]
-    datos["cobertura"] = cobertura.cargar(data_dir, errores)
+    datos["coverage"] = cov.cargar(data_dir, errores)
 
-    # Capítulos de la Biblia como fuentes implícitas: <slug>-<cap> que nadie ha escrito se crea desde libros.yaml.
-    citadas = [fid for t in TIPOS for o in datos[t] for _, fid in fuentes_de(limpio(o))]
+    # Capítulos de la Biblia como fuentes implícitas: <slug>-<cap> que nadie ha escrito se crea desde books.yaml.
+    citadas = [fid for t in TYPES for o in datos[t] for _, fid in fuentes_de(limpio(o))]
     citadas += [fid for l in libros for _, fid in fuentes_de(l)]
-    citadas += [fid for m in calendario.get("meses") or [] for _, fid in fuentes_de(m)]
-    citadas += [fid for e in calendario.get("explicacion") or [] for _, fid in fuentes_de(e)]
+    citadas += [fid for m in calendario.get("months") or [] for _, fid in fuentes_de(m)]
+    citadas += [fid for e in calendario.get("explanation") or [] for _, fid in fuentes_de(e)]
     for fid in citadas:
         if fid in fuentes:
             continue
         cap = capitulo_de(fid, libros)
-        if cap and 1 <= cap[1] <= int(cap[0].get("capitulos") or 0):
+        if cap and 1 <= cap[1] <= int(cap[0].get("chapters") or 0):
             fuentes[fid] = fuente_capitulo(*cap)
-            origen[fid] = "data/libros.yaml (capítulo implícito)"
+            origen[fid] = "data/books.yaml (capítulo implícito)"
     return datos, ficheros
+
+
+# ---------------------------------------------------------------- relaciones: vocabulario, clave y referencia
+
+class Vocabulary:
+    """data/vocabulary.yaml: tipos, palabras, cargos y certezas, con sus verbos."""
+
+    def __init__(self, v):
+        v = v or {}
+        self.raw = v
+        self.types = v.get("types") or {}
+        self.words = v.get("words") or {}
+        self.offices = v.get("offices") or {}
+        self.certainty = v.get("certainty") or {}
+
+    def errors(self):
+        """Lo que impide compilar un verbo: un tipo o una palabra sin sus dos verbos."""
+        out = []
+        for t, d in self.types.items():
+            for k in ("verb", "inverse_verb"):
+                if not (d or {}).get(k):
+                    out.append(f"data/{VOCABULARY}: al tipo {t} le falta {k}")
+            if "{office}" in str((d or {}).get("verb")) and "office" not in ((d or {}).get("requires") or []):
+                if not ((d or {}).get("verb_without_office") and (d or {}).get("inverse_verb_without_office")):
+                    out.append(f"data/{VOCABULARY}: el tipo {t} nombra el cargo y no tiene verbo sin cargo")
+        for w, d in self.words.items():
+            for k in ("verb", "inverse_verb", "es"):
+                if not (d or {}).get(k):
+                    out.append(f"data/{VOCABULARY}: a la palabra {w} le falta {k}")
+            if (d or {}).get("type") not in self.types:
+                out.append(f"data/{VOCABULARY}: la palabra {w} es de un tipo que no existe: {(d or {}).get('type')}")
+        for c, d in self.certainty.items():
+            if not (d or {}).get("verb"):
+                out.append(f"data/{VOCABULARY}: a la certeza {c} le falta verb")
+        for o, d in self.offices.items():
+            if not (d or {}).get("es"):
+                out.append(f"data/{VOCABULARY}: al cargo {o} le falta es")
+        return out
+
+    def owns(self, r):
+        """Quién manda en el par según la palabra o, sin ella, según el tipo: self, target, first_named o first_id."""
+        w = self.words.get(r.get("word"))
+        if w:
+            return w.get("owns")
+        t = self.types.get(r.get("type")) or {}
+        return t.get("owns_without_word") or t.get("owns")
+
+
+def relation_key(pid, r, voc):
+    """La clave escrita de una relación (modelo.md, sección 6), con la misma función que usan validate.py y la
+    cobertura: <persona>/<type>/<destino>[/<word u office>][@<from>]."""
+    return cov.relation_key(pid, r, voc.raw)
+
+
+def coverage_citations(datos):
+    """{id() de la relación: [«Rut 1:1-5», ...]}: los tramos de la cobertura que citan cada relación, en entities o
+    en mentions, en el orden de los libros y de los capítulos. Las referencias se resuelven con bible_coverage, como
+    en validate.py."""
+    libros = {l.get("slug"): l for l in datos["books"]}
+    idx = cov._indices(datos)
+    out = {}
+    for slug, obj in sorted((datos.get("coverage") or {}).items(),
+                            key=lambda x: (libros.get(x[1].get("book") or x[0]) or {}).get("num") or 99):
+        libro = libros.get(obj.get("book") or slug)
+        if not libro:
+            continue
+        for c, cap in sorted(cov._capitulos(obj).items()):
+            for t in (cap or {}).get("spans") or [] if isinstance(cap, dict) else []:
+                if not isinstance(t, dict):
+                    continue
+                for ref in [*(t.get("entities") or []), *(t.get("mentions") or [])]:
+                    if not str(ref).startswith(f"{cov.RELATION}:"):
+                        continue
+                    carpeta, casan = cov.resolver(ref, datos, idx)
+                    for r in casan if carpeta == cov.RELATION else []:
+                        texto = f"{libro.get('abbr')} {c}:{t.get('v')}"
+                        lista = out.setdefault(id(r), [])
+                        if texto not in lista:
+                            lista.append(texto)
+    return out
+
+
+def citation_texts(texto, citas):
+    """Las citas de un texto libre tal como se escriben («Hch 16:10-17»), sin repetir, con el buscador de
+    bible_coverage.Citas: la misma expresión que citasEnTexto de site/js/tipos/pasaje.js."""
+    out = []
+    for m in citas.re.finditer(str(texto or "")):
+        if not citas.forma_corta_ok(m.group(1)):
+            continue
+        t = m.group(0)
+        t = (t[1:] if t and not (t[0].isalnum()) else t).strip()
+        if t and t not in out:
+            out.append(t)
+    return out
+
+
+def source_chapters(fuentes_ids, datos):
+    """Los capítulos de la TNM que hay entre las fuentes, escritos «Jn 1»."""
+    por_num = {l.get("num"): l for l in datos["books"]}
+    out = []
+    for fid in fuentes_ids or []:
+        cap = capitulo_de(fid, datos["books"])
+        if cap:
+            libro, c = cap
+        else:
+            m = RE_NWTSTY.search(str((datos["sources"].get(fid) or {}).get("url") or ""))
+            libro = por_num.get(int(m.group(1))) if m else None
+            c = int(m.group(2)) if m else None
+        if libro:
+            t = f"{libro.get('abbr')} {c}"
+            if t not in out:
+                out.append(t)
+    return out
+
+
+def relation_reference(r, datos, citas, cobertura):
+    """La referencia de la arista (modelo.md, sección 10), por este orden: los pasajes que cita su reason, los
+    capítulos que hay entre sus fuentes y los tramos de la cobertura que la citan. None si no hay ninguna."""
+    for lista in (citation_texts(r.get("reason"), citas), source_chapters(r.get("sources"), datos),
+                  cobertura.get(id(r)) or []):
+        if lista:
+            return "; ".join(lista)
+    return None
+
+
+def same_pair(r, s, voc):
+    """¿Son r (en X hacia Y) y s (en Y hacia X) el mismo par? Palabras inversas entre sí, o el mismo tipo sin
+    palabra, salvo con fechas distintas."""
+    if r.get("type") != s.get("type"):
+        return False
+    fr, fs = cov.relation_from(r), cov.relation_from(s)
+    if fr is not None and fs is not None and fr != fs:
+        return False
+    wr, ws = r.get("word"), s.get("word")
+    if wr or ws:
+        if not (wr and ws):
+            return False
+        return ws in ((voc.words.get(wr) or {}).get("inverse") or []) or \
+            wr in ((voc.words.get(ws) or {}).get("inverse") or [])
+    return True
+
+
+def duplicates(datos, voc, partners=None):
+    """{(pid, índice): clave de la copia que manda} para la copia que no manda de cada par escrito en las dos
+    fichas: la de la ficha que no es dueña por su palabra o, si el dueño no se sabe, la de la ficha cuyo id va
+    después (modelo.md, sección 5). Con `partners`, lo llena con {(pid, índice) de la que no manda: (pid, índice)
+    de la que manda}."""
+    people = {o.get("id"): o for o in datos["people"]}
+    out = {}
+    partners = {} if partners is None else partners
+    for x in sorted(people):
+        for i, r in enumerate(people[x].get("relations") or []):
+            y = r.get("person") if isinstance(r, dict) else None
+            if not y or y not in people or y <= x or (x, i) in out:
+                continue
+            for j, s in enumerate(people[y].get("relations") or []):
+                if not isinstance(s, dict) or s.get("person") != x or (y, j) in out or not same_pair(r, s, voc):
+                    continue
+                r_manda = voc.owns(r) == "self" or voc.owns(s) == "target"
+                s_manda = voc.owns(s) == "self" or voc.owns(r) == "target"
+                if s_manda and not r_manda:
+                    out[(x, i)] = relation_key(y, s, voc)
+                    partners[(x, i)] = (y, j)
+                else:   # manda r por su palabra o, con el dueño desconocido, la ficha cuyo id va primero (x < y)
+                    out[(y, j)] = relation_key(x, r, voc)
+                    partners[(y, j)] = (x, i)
+                break
+    return out
+
+
+def _fill(plantilla, owner, target, office):
+    return str(plantilla).replace("{owner}", owner).replace("{target}", target).replace("{office}", office or "")
+
+
+def relation_verbs(r, voc, owner, target):
+    """(verb, inverse_verb) ya resueltos: el de la ficha de quien la escribe y el de la ficha del destino."""
+    t = voc.types.get(r.get("type")) or {}
+    office = (voc.offices.get(r.get("office")) or {}).get("es")
+    if r.get("caption"):
+        return r["caption"], r.get("inverse_caption") or _fill(t.get("inverse_verb"), owner, target, office)
+    w = voc.words.get(r.get("word"))
+    if w:
+        verb, inv = w.get("verb"), w.get("inverse_verb")
+    elif r.get("type") == "same_as" and r.get("certainty") in voc.certainty:
+        verb = inv = voc.certainty[r["certainty"]].get("verb")
+    elif not office and t.get("verb_without_office"):
+        verb, inv = t.get("verb_without_office"), t.get("inverse_verb_without_office")
+    else:
+        verb, inv = t.get("verb"), t.get("inverse_verb")
+    return _fill(verb, owner, target, office), _fill(inv, owner, target, office)
 
 
 # ---------------------------------------------------------------- integridad
 
 def ids_por_tipo(datos):
-    return {t: {o.get("id") for o in datos[t]} for t in TIPOS}
+    return {t: {o.get("id") for o in datos[t]} for t in TYPES}
 
 
 def existe_sel(datos, sel, ids=None):
-    """¿Existe la selección «tipo:id» del sitio? tipo en singular (lugar, persona, carta, viaje, parada, evento,
-    periodo, hallazgo, recorrido, pasaje, libro). Parada: «viaje/orden». Pasaje: «<abr sin tildes>-<cap>» (hch-16)."""
+    """¿Existe la selección «tipo:id» de un YAML? tipo en singular y en inglés (place, person, letter, journey,
+    stop, event, period, find, tour, passage, book). Parada: «viaje/order». Pasaje: «<abbr sin tildes>-<cap>» (hch-16)."""
     ids = ids or ids_por_tipo(datos)
     tipo, _, oid = str(sel).partition(":")
     if not oid:
@@ -191,18 +425,18 @@ def existe_sel(datos, sel, ids=None):
     plural = {v: k for k, v in SINGULAR.items()}
     if tipo in plural:
         return oid in ids[plural[tipo]]
-    if tipo == "parada":
+    if tipo == "stop":
         viaje, _, orden = oid.partition("/")
-        v = next((v for v in datos["viajes"] if v.get("id") == viaje), None)
-        return bool(v) and any(str(p.get("orden")) == orden for p in v.get("paradas") or [])
-    if tipo == "libro":
-        return any(l.get("slug") == oid for l in datos["libros"])
-    if tipo == "pasaje":
+        v = next((v for v in datos["journeys"] if v.get("id") == viaje), None)
+        return bool(v) and any(str(p.get("order")) == orden for p in v.get("stops") or [])
+    if tipo == "book":
+        return any(l.get("slug") == oid for l in datos["books"])
+    if tipo == "passage":
         m = re.match(r"^([1-3]?[a-z]+)-(\d+)$", oid)
         if not m:
             return False
-        libro = next((l for l in datos["libros"] if _sin_tildes(l.get("abr", "")).lower() == m.group(1)), None)
-        return bool(libro) and 1 <= int(m.group(2)) <= int(libro.get("capitulos") or 0)
+        libro = next((l for l in datos["books"] if _sin_tildes(l.get("abbr", "")).lower() == m.group(1)), None)
+        return bool(libro) and 1 <= int(m.group(2)) <= int(libro.get("chapters") or 0)
     return False
 
 
@@ -210,11 +444,31 @@ def _sin_tildes(s):
     return "".join(c for c in unicodedata.normalize("NFD", str(s)) if unicodedata.category(c) != "Mn")
 
 
+def _relation_errors(f, i, r, voc):
+    """Lo que impide compilar una relación: un tipo, una palabra, un cargo o una certeza que el vocabulario no tiene."""
+    out = []
+    t = r.get("type")
+    if t not in voc.types:
+        return [f"{f}: relations[{i}].type '{t}' no está en data/{VOCABULARY}"]
+    if r.get("word") is not None and r["word"] not in voc.words:
+        out.append(f"{f}: relations[{i}].word '{r['word']}' no está en data/{VOCABULARY}")
+    if r.get("office") is not None and r["office"] not in voc.offices:
+        out.append(f"{f}: relations[{i}].office '{r['office']}' no está en data/{VOCABULARY}")
+    if r.get("certainty") is not None and r["certainty"] not in voc.certainty:
+        out.append(f"{f}: relations[{i}].certainty '{r['certainty']}' no está en data/{VOCABULARY}")
+    if t == "holds_office" and not r.get("office"):
+        out.append(f"{f}: relations[{i}] es holds_office y no lleva office")
+    return out
+
+
 def integridad(datos):
-    """Comprueba que todo id referenciado existe. Devuelve una lista de errores."""
+    """Comprueba que todo id referenciado existe y que cada relación se puede compilar con el vocabulario.
+    Devuelve una lista de errores."""
     errores = list(datos.get("_errores") or [])
-    fuentes = datos["fuentes"]
+    fuentes = datos["sources"]
     ids = ids_por_tipo(datos)
+    voc = Vocabulary(datos.get("vocabulary"))
+    errores.extend(voc.errors())
 
     def ref(fichero, que, valor, tipo):
         if valor not in ids[tipo]:
@@ -223,86 +477,320 @@ def integridad(datos):
     def fuente(fichero, camino, fid):
         if fid in fuentes:
             return
-        cap = capitulo_de(fid, datos["libros"])
+        cap = capitulo_de(fid, datos["books"])
         if cap:
-            errores.append(f"{fichero}: fuente '{fid}' ({camino.lstrip('.')}): {cap[0]['nombre']} no tiene "
-                           f"capítulo {cap[1]} (tiene {cap[0].get('capitulos')})")
+            errores.append(f"{fichero}: fuente '{fid}' ({camino.lstrip('.')}): {cap[0]['name']} no tiene "
+                           f"capítulo {cap[1]} (tiene {cap[0].get('chapters')})")
         else:
-            errores.append(f"{fichero}: fuente '{fid}' ({camino.lstrip('.')}) no existe en data/fuentes/")
+            errores.append(f"{fichero}: fuente '{fid}' ({camino.lstrip('.')}) no existe en data/sources/")
 
-    for l in datos["libros"]:
+    for l in datos["books"]:
         for camino, fid in fuentes_de(l):
-            fuente(f"data/libros.yaml ({l.get('slug')})", camino, fid)
-    for m in datos["calendario"].get("meses") or []:
+            fuente(f"data/books.yaml ({l.get('slug')})", camino, fid)
+    for m in datos["calendar"].get("months") or []:
         for camino, fid in fuentes_de(m):
-            fuente(f"data/calendario.yaml ({m.get('id')})", camino, fid)
-    for e in datos["calendario"].get("explicacion") or []:
+            fuente(f"data/calendar.yaml ({m.get('id')})", camino, fid)
+    for e in datos["calendar"].get("explanation") or []:
         for camino, fid in fuentes_de(e):
-            fuente(f"data/calendario.yaml (explicacion {e.get('id')})", camino, fid)
+            fuente(f"data/calendar.yaml (explanation {e.get('id')})", camino, fid)
 
-    for tipo in TIPOS:
+    for tipo in TYPES:
         for o in datos[tipo]:
             f = o["_fichero"]
             for camino, fid in fuentes_de(limpio(o)):
                 fuente(f, camino, fid)
-            for i, r in enumerate(o.get("relaciones") or []):
+            for i, r in enumerate(o.get("relations") or []):
                 if not isinstance(r, dict):
                     continue
-                if r.get("persona") is not None:
-                    ref(f, f"relaciones[{i}].persona", r["persona"], "personas")
-                if r.get("lugar") is not None:
-                    ref(f, f"relaciones[{i}].lugar", r["lugar"], "lugares")
-            for pid in o.get("no_confundir_con") or []:
-                ref(f, "no_confundir_con", pid, "personas")
-            if tipo == "viajes":
-                ref(f, "persona", o.get("persona"), "personas")
-                for p in o.get("companeros") or []:
-                    ref(f, "compañero", p, "personas")
-                for p in o.get("paradas") or []:
-                    ref(f, f"parada {p.get('orden')}: lugar", p.get("lugar"), "lugares")
-            elif tipo == "cartas":
-                ref(f, "escritor", o.get("escritor"), "personas")
-                for lid in o.get("escrita_en") or []:
-                    ref(f, "escrita_en", lid, "lugares")
-                for lid in (o.get("destinatarios") or {}).get("lugares") or []:
-                    ref(f, "destinatarios.lugares", lid, "lugares")
-                for pid in (o.get("destinatarios") or {}).get("personas") or []:
-                    ref(f, "destinatarios.personas", pid, "personas")
-                for pid in o.get("portadores") or []:
-                    ref(f, "portadores", pid, "personas")
-                for pid in o.get("personas") or []:
-                    ref(f, "personas", pid, "personas")
-            elif tipo == "eventos":
-                for lid in o.get("lugares") or []:
-                    ref(f, "lugar", lid, "lugares")
-                for pid in o.get("personas") or []:
-                    ref(f, "persona", pid, "personas")
-                orden = o.get("orden_relato")
-                tras = orden.get("tras") if isinstance(orden, dict) else None
+                if r.get("person") is not None:
+                    ref(f, f"relations[{i}].person", r["person"], "people")
+                if r.get("place") is not None:
+                    ref(f, f"relations[{i}].place", r["place"], "places")
+                errores.extend(_relation_errors(f, i, r, voc))
+            for pid in o.get("distinct_from") or []:
+                ref(f, "distinct_from", pid, "people")
+            if tipo == "journeys":
+                ref(f, "person", o.get("person"), "people")
+                for p in o.get("companions") or []:
+                    ref(f, "companions", p, "people")
+                for p in o.get("stops") or []:
+                    ref(f, f"stop {p.get('order')}: place", p.get("place"), "places")
+            elif tipo == "letters":
+                ref(f, "writer", o.get("writer"), "people")
+                for lid in o.get("written_in") or []:
+                    ref(f, "written_in", lid, "places")
+                for lid in (o.get("recipients") or {}).get("places") or []:
+                    ref(f, "recipients.places", lid, "places")
+                for pid in (o.get("recipients") or {}).get("people") or []:
+                    ref(f, "recipients.people", pid, "people")
+                for pid in o.get("carriers") or []:
+                    ref(f, "carriers", pid, "people")
+                for pid in o.get("people") or []:
+                    ref(f, "people", pid, "people")
+            elif tipo == "events":
+                for lid in o.get("places") or []:
+                    ref(f, "place", lid, "places")
+                for pid in o.get("people") or []:
+                    ref(f, "person", pid, "people")
+                orden = o.get("narrative_order")
+                tras = orden.get("after") if isinstance(orden, dict) else None
                 if isinstance(tras, str):
-                    ref(f, "orden_relato.tras", tras, "eventos")
+                    ref(f, "narrative_order.after", tras, "events")
                 elif tras is not None:
-                    errores.append(f"{f}: orden_relato.tras debe ser el id de un evento, no {type(tras).__name__}")
-                for pid in o.get("presentes") or []:
-                    if pid not in (o.get("personas") or []):
-                        errores.append(f"{f}: presentes nombra a '{pid}', que no está en personas")
-            elif tipo == "periodos":
-                for lid in o.get("lugares") or []:
-                    ref(f, "lugar", lid, "lugares")
-                if o.get("persona") is not None:
-                    ref(f, "persona", o["persona"], "personas")
-            elif tipo == "hallazgos":
-                ref(f, "lugar_hallazgo", o.get("lugar_hallazgo"), "lugares")
-                for sel in o.get("relaciona") or []:
+                    errores.append(f"{f}: narrative_order.after debe ser el id de un suceso, no {type(tras).__name__}")
+                for pid in o.get("present") or []:
+                    if pid not in (o.get("people") or []):
+                        errores.append(f"{f}: present nombra a '{pid}', que no está en people")
+                roles = o.get("roles")
+                if roles is not None and not isinstance(roles, dict):
+                    errores.append(f"{f}: roles debe ser un mapa {{id de persona: papel}}")
+                for pid, papel in (roles or {}).items() if isinstance(roles, dict) else ():
+                    ref(f, "roles", pid, "people")
+                    if isinstance(papel, dict) and papel.get("place") is not None:
+                        ref(f, f"roles.{pid}.place", papel["place"], "places")
+            elif tipo == "periods":
+                for lid in o.get("places") or []:
+                    ref(f, "place", lid, "places")
+                if o.get("person") is not None:
+                    ref(f, "person", o["person"], "people")
+                oficio = o.get("office") or o.get("type")
+                if o.get("person") is not None and oficio not in voc.offices:
+                    errores.append(f"{f}: el periodo nombra a una persona y su cargo '{oficio}' no está en "
+                                   f"offices de data/{VOCABULARY}; pon office")
+            elif tipo == "finds":
+                ref(f, "found_at", o.get("found_at"), "places")
+                for sel in o.get("relates_to") or []:
                     if not existe_sel(datos, sel, ids):
-                        errores.append(f"{f}: relaciona '{sel}' no existe (formato tipo:id, p. ej. lugar:corinto)")
-            elif tipo == "recorridos":
-                for i, p in enumerate(o.get("paradas") or []):
+                        errores.append(f"{f}: relates_to '{sel}' no existe (formato tipo:id, p. ej. place:corinto)")
+            elif tipo == "tours":
+                for i, p in enumerate(o.get("stops") or []):
                     sel = (p or {}).get("sel")
                     if not existe_sel(datos, sel, ids):
-                        errores.append(f"{f}: paradas[{i}].sel '{sel}' no existe (formato tipo:id, p. ej. lugar:corinto)")
-    errores.extend(cobertura.errores_referencias(datos))
+                        errores.append(f"{f}: stops[{i}].sel '{sel}' no existe (formato tipo:id, p. ej. place:corinto)")
+    errores.extend(cov.errores_referencias(datos))
     return errores
+
+
+# ---------------------------------------------------------------- el adaptador: de los YAML a lo que lee el sitio
+
+class Legacy:
+    """El mapa de la migración leído al revés: claves, valores cerrados y selecciones en inglés pasan al nombre y al
+    valor que el sitio lee hoy. Las claves de `new_keys` se quedan en inglés en su ruta. Lo que no sabe traducir lo
+    apunta en errors, y build.py no escribe nada."""
+
+    def __init__(self, mapa):
+        self.keys = {en: es for es, en in (mapa.get("keys") or {}).items()}
+        self.keys.update(BUILD_KEYS)
+        self.roots = {}
+        for es, en in (mapa.get("directories") or {}).items():
+            if es.startswith("data/"):
+                self.roots[en.removeprefix("data/")] = es.removeprefix("data/")
+        for es, en in (mapa.get("files") or {}).items():
+            if es.startswith("data/") and es.endswith(".yaml") and "/" not in es.removeprefix("data/"):
+                self.roots[Path(en).stem] = Path(es).stem
+        self.enums = [(re.compile(e["at"]), {v: k for k, v in e["values"].items()}, bool(e.get("value_is")))
+                      for e in mapa.get("enums") or [] if e.get("at") and isinstance(e.get("values"), dict)]
+        self.selections = {en: es for es, en in (mapa.get("selection_types") or {}).items()}
+        self.selection_at = [re.compile(p) for p in mapa.get("selection_at") or []]
+        self.new_keys = {p: set(ks) for p, ks in (mapa.get("new_keys") or {}).items()}
+        self.id_maps = set(mapa.get("id_maps") or [])
+        self.relation_legacy = {}
+        self.errors = []
+
+    def is_new(self, new_path, k):
+        return any(k in ks and (new_path == p or new_path.endswith("." + p)) for p, ks in self.new_keys.items())
+
+    def key(self, k, old, new):
+        """(nombre de salida, ruta antigua del hijo) de la clave k de un objeto en la ruta old / new."""
+        if self.is_new(new, k):
+            return k, f"{old}.{k}"
+        es = self.keys.get(k)
+        if es is None:
+            self.errors.append(f"{new}.{k}: la clave no está en `keys` del mapa; build.py no sabe cómo la lee el sitio")
+            es = k
+        return es, f"{old}.{es}"
+
+    def value(self, s, old):
+        for rx, rev, prefijo in self.enums:
+            if rx.search(old):
+                if prefijo and ":" in s:
+                    cabeza, _, cola = s.partition(":")
+                    if cabeza in rev:
+                        return f"{rev[cabeza]}:{cola}"
+                elif s in rev:
+                    return rev[s]
+                self.errors.append(f"{old}: el valor «{s}» no está en `enums` del mapa")
+                return s
+        for rx in self.selection_at:
+            if rx.search(old):
+                tipo, _, oid = s.partition(":")
+                if tipo in self.selections:
+                    return f"{self.selections[tipo]}:{oid}"
+                self.errors.append(f"{old}: el tipo de selección «{tipo}» no está en `selection_types` del mapa")
+                return s
+        return s
+
+    def translate(self, v, old, new):
+        if isinstance(v, dict):
+            out = {}
+            for k, x in v.items():
+                if isinstance(k, str) and k.startswith("_"):
+                    out[k] = x
+                elif old in self.id_maps:
+                    out[k] = self.translate(x, f"{old}.<id>", f"{new}.<id>")
+                else:
+                    es, hijo = self.key(k, old, new)
+                    out[es] = self.translate(x, hijo, f"{new}.{k}")
+            return out
+        if isinstance(v, list):
+            return [self.translate(x, f"{old}[]", f"{new}[]") for x in v]
+        if isinstance(v, str):
+            return self.value(v, old)
+        return v
+
+
+def compile_relation(pid, i, r, datos, voc, leg, citas, cobertura, dups, nombres):
+    """Una relación tal como la lee el sitio: los campos de siempre y, al lado, los nuevos (modelo.md, sección 11)."""
+    viejo, nuevo = "personas.relaciones[]", "people.relations[]"
+    tipo = voc.types.get(r.get("type")) or {}
+    out = {}
+    for k, x in r.items():
+        if k == "type":
+            out["tipo"] = tipo.get("legacy")
+        elif k == "person":
+            out["persona"] = x
+        elif k == "place":
+            out["lugar"] = x
+        elif k in ("word", "caption"):
+            if "relacion" not in out:
+                out["relacion"] = (voc.words.get(x) or {}).get("es") if k == "word" else x
+        elif k == "inverse_caption":
+            out["relacion_inversa"] = x
+        elif k in ("office", "certainty", "checked_on"):
+            continue
+        else:
+            es, hijo = leg.key(k, viejo, nuevo)
+            out[es] = leg.translate(x, hijo, f"{nuevo}.{k}")
+    owner = nombres.get(("person", pid), pid)
+    destino = ("person", r["person"]) if r.get("person") else ("place", r.get("place"))
+    verb, inverse_verb = relation_verbs(r, voc, owner, nombres.get(destino, destino[1] or ""))
+    palabra = voc.words.get(r.get("word")) or {}
+    familia = palabra.get("family")
+    nuevos = {
+        "type": r.get("type"), "word": r.get("word"), "office": r.get("office"), "certainty": r.get("certainty"),
+        "checked_on": r.get("checked_on"), "verb": verb, "inverse_verb": inverse_verb,
+        "key": relation_key(pid, r, voc), "reference": relation_reference(r, datos, citas, cobertura),
+        "family": familia, "inverse_family": FAMILY_ACROSS.get(familia, familia),
+        "inverse_label": palabra.get("inverse_es"), "duplicate_of": dups.get((pid, i)),
+    }
+    siempre = {"type", "checked_on", "verb", "inverse_verb", "key"}
+    out.update({k: v for k, v in nuevos.items() if v is not None or k in siempre})
+    return out
+
+
+def _legacy_date(d, leg):
+    return leg.translate(d, "x.fecha", "x.date") if isinstance(d, dict) else d
+
+
+def compile_offices(datos, voc, leg):
+    """{persona: [cargos]}: cada relación holds_office y cada periodo con person (modelo.md, sección 8)."""
+    out = {}
+    for p in datos["people"]:
+        for r in p.get("relations") or []:
+            if isinstance(r, dict) and r.get("type") == "holds_office":
+                out.setdefault(p["id"], []).append({
+                    "office": r.get("office"), "es": (voc.offices.get(r.get("office")) or {}).get("es"),
+                    "place": r.get("place"), "date": _legacy_date(r.get("date"), leg),
+                    "inferred": bool(r.get("inferred")), "sources": r.get("sources") or [], "reason": r.get("reason"),
+                    "status": r.get("status"), "checked_on": r.get("checked_on"), "origin": "relation"})
+    for pe in datos["periods"]:
+        if not pe.get("person"):
+            continue
+        oficio = pe.get("office") or pe.get("type")
+        out.setdefault(pe["person"], []).append({
+            "office": oficio, "es": (voc.offices.get(oficio) or {}).get("es"), "place": (pe.get("places") or [None])[0],
+            "date": _legacy_date(pe.get("date"), leg), "inferred": bool(pe.get("inferred")),
+            "sources": pe.get("sources") or [], "reason": pe.get("reason"), "status": pe.get("status"),
+            "checked_on": pe.get("checked_on"), "origin": f"period:{pe['id']}"})
+    for lista in out.values():
+        lista.sort(key=lambda c: ((c["date"] or {}).get("desde") if (c["date"] or {}).get("desde") is not None
+                                  else 10**6, c["origin"]))
+    return out
+
+
+def compile_roles(e, leg):
+    """Cada papel de un suceso como {role, date, place}, con la fecha y el lugar resueltos: los suyos o, si no los
+    lleva, la fecha del suceso y su primer lugar cuando el suceso sitúa allí a esa persona (modelo.md, sección 7)."""
+    out = {}
+    presentes = e.get("present")
+    primero = (e.get("places") or [None])[0]
+    for pid, papel in (e.get("roles") or {}).items():
+        papel = papel if isinstance(papel, dict) else {"role": papel}
+        lugar = papel.get("place")
+        if lugar is None and primero and (presentes is None or pid in presentes):
+            lugar = primero
+        out[pid] = {"role": papel.get("role"), "date": _legacy_date(papel.get("date") or e.get("date"), leg),
+                    "place": lugar}
+    return out
+
+
+def legacy_data(datos, leg):
+    """Los datos con los nombres y los valores de siempre, para componer data.json, la base y el registro."""
+    voc = Vocabulary(datos.get("vocabulary"))
+    citas = cov.Citas(datos["books"])
+    cobertura = coverage_citations(datos)
+    partners = {}
+    dups = duplicates(datos, voc, partners)
+    nombres = {("person", o.get("id")): o.get("name") for o in datos["people"]}
+    nombres.update({("place", o.get("id")): o.get("name") for o in datos["places"]})
+    oficios = compile_offices(datos, voc, leg)
+    compiled = {}
+    out = {"fuentes": leg.translate(datos["sources"], "fuentes", "sources"),
+           "libros": leg.translate(datos["books"], "libros.libros", "books.books"),
+           "calendario": leg.translate(datos["calendar"], "calendario", "calendar")}
+    for t in TYPES:
+        raiz = leg.roots[t]
+        lista = []
+        for o in datos[t]:
+            obj = {}
+            for k, x in o.items():
+                if k.startswith("_"):
+                    obj[k] = x
+                elif t == "people" and k == "relations":
+                    obj["relaciones"] = []
+                    for i, r in enumerate(x or []):
+                        if isinstance(r, dict) and r.get("type") != "holds_office":
+                            c = compile_relation(o["id"], i, r, datos, voc, leg, citas, cobertura, dups, nombres)
+                            compiled[(o["id"], i)] = c
+                            obj["relaciones"].append(c)
+                elif t == "events" and k == "roles":
+                    obj["roles"] = compile_roles(o, leg)
+                else:
+                    es, hijo = leg.key(k, raiz, t)
+                    obj[es] = leg.translate(x, hijo, f"{t}.{k}")
+            if t == "people" and oficios.get(o.get("id")):
+                obj["offices"] = oficios[o["id"]]
+            lista.append(obj)
+        out[raiz] = lista
+    merge_pair_copies(compiled, partners, voc)
+    return out
+
+
+def merge_pair_copies(compiled, partners, voc):
+    """La copia que manda de un par doble recibe lo que la otra dice del mismo par y el sitio no dibuja: los pasajes de
+    su referencia (la referencia es del par, no de la ficha) y, si ella no lo lleva, el nombre del vínculo visto desde
+    el otro lado, que es el `es` de la palabra de la otra copia («hijo adoptivo», «hermano»)."""
+    for drop, keep in partners.items():
+        d, k = compiled.get(drop), compiled.get(keep)
+        if d is None or k is None:
+            continue
+        refs = [x for x in (k.get("reference") or "").split("; ") if x]
+        refs += [x for x in (d.get("reference") or "").split("; ") if x and x not in refs]
+        if refs:
+            k["reference"] = "; ".join(refs)
+        palabra = (voc.words.get(d.get("word")) or {}).get("es")
+        if palabra and not k.get("inverse_label"):
+            k["inverse_label"] = palabra
 
 
 # ---------------------------------------------------------------- salida
@@ -324,27 +812,31 @@ def orden_en_serie(o):
     return (r.get("serie") or "", n if isinstance(n, (int, float)) else 10**9)
 
 
-def componer(datos, hoy):
-    cartas = sorted(datos["cartas"], key=lambda c: clave_fecha(c) + (
+def componer(datos, hoy, leg=None):
+    """data.json a partir de los datos en inglés. Devuelve (salida, legado, errores del adaptador)."""
+    leg = leg or Legacy(load_map())
+    L = legacy_data(datos, leg)
+    cartas = sorted(L["cartas"], key=lambda c: clave_fecha(c) + (
         ORDEN_LIBROS.index(c["id"]) if c["id"] in ORDEN_LIBROS else 99, c["id"]))
-    return {
+    salida = {
         "formato": FORMATO,
         "generado": hoy,
-        "fuentes": {k: datos["fuentes"][k] for k in sorted(datos["fuentes"])},
-        "libros": datos["libros"],
-        "calendario": datos["calendario"],
-        "lugares": {o["id"]: limpio(o) for o in sorted(datos["lugares"], key=lambda o: o["id"])},
-        "personas": {o["id"]: limpio(o) for o in sorted(datos["personas"], key=lambda o: o["id"])},
-        "viajes": [limpio(o) for o in sorted(datos["viajes"], key=lambda o: clave_fecha(o) + (o["id"],))],
+        "fuentes": {k: L["fuentes"][k] for k in sorted(L["fuentes"])},
+        "libros": L["libros"],
+        "calendario": L["calendario"],
+        "lugares": {o["id"]: limpio(o) for o in sorted(L["lugares"], key=lambda o: o["id"])},
+        "personas": {o["id"]: limpio(o) for o in sorted(L["personas"], key=lambda o: o["id"])},
+        "viajes": [limpio(o) for o in sorted(L["viajes"], key=lambda o: clave_fecha(o) + (o["id"],))],
         "cartas": [limpio(o) for o in cartas],
-        "eventos": [limpio(o) for o in sorted(datos["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
-        "periodos": [limpio(o) for o in sorted(datos["periodos"], key=lambda o: clave_fecha(o) + (o["id"],))],
-        "hallazgos": [limpio(o) for o in sorted(datos["hallazgos"],
+        "eventos": [limpio(o) for o in sorted(L["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
+        "periodos": [limpio(o) for o in sorted(L["periodos"], key=lambda o: clave_fecha(o) + (o["id"],))],
+        "hallazgos": [limpio(o) for o in sorted(L["hallazgos"],
                                                 key=lambda o: clave_fecha(o, "fecha_objeto") + (o["id"],))],
-        "recorridos": [limpio(o) for o in sorted(datos["recorridos"], key=lambda o: o["id"])],
-        # Resumen de data/cobertura/: solo los libros que tienen fichero. El sitio todavía no lo muestra.
-        "cobertura": cobertura.para_el_sitio(datos),
+        "recorridos": [limpio(o) for o in sorted(L["recorridos"], key=lambda o: o["id"])],
+        # Resumen de data/coverage/: solo los libros que tienen fichero. El sitio todavía no lo muestra.
+        "cobertura": cov.para_el_sitio(datos),
     }
+    return salida, L, list(leg.errors)
 
 
 def escribir_json(salida, rutas, ruta_js):
@@ -381,28 +873,31 @@ def escribir_sqlite(salida, ruta):
     CREATE TABLE lugar_nombres (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT,
         desde INTEGER, hasta INTEGER, nota TEXT);
     CREATE TABLE candidatos (lugar_id TEXT REFERENCES lugares(id), orden INTEGER, nombre TEXT, geometria TEXT,
-        estado TEXT, razon TEXT);
+        estado TEXT, razon TEXT, checked_on TEXT);
     CREATE TABLE personas (id TEXT PRIMARY KEY, nombre TEXT, nombres TEXT, {fecha}, desambiguacion TEXT,
         resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE relaciones (persona_id TEXT REFERENCES personas(id), orden INTEGER, tipo TEXT, persona TEXT,
-        lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT);
+        lugar TEXT, relacion TEXT, relacion_inversa TEXT, {fecha}, deducido INTEGER, razon TEXT, estado TEXT,
+        type TEXT, word TEXT, office TEXT, certainty TEXT, checked_on TEXT, key TEXT);
     CREATE TABLE viajes (id TEXT PRIMARY KEY, nombre TEXT, persona_id TEXT REFERENCES personas(id), referencia TEXT,
         {fecha}, companeros TEXT, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE paradas (viaje_id TEXT REFERENCES viajes(id), orden INTEGER, lugar_id TEXT REFERENCES lugares(id),
-        referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, PRIMARY KEY (viaje_id, orden));
+        referencia TEXT, {fecha}, nota TEXT, razon TEXT, estado TEXT, checked_on TEXT, PRIMARY KEY (viaje_id, orden));
     CREATE TABLE cartas (id TEXT PRIMARY KEY, libro TEXT, escritor TEXT, referencia TEXT, escrita_en TEXT, {fecha},
         destinatarios_texto TEXT, destinatarios_lugares TEXT, destinatarios_personas TEXT, portadores TEXT,
         contexto_origen TEXT, contexto_destino TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE eventos (id TEXT PRIMARY KEY, titulo TEXT, {fecha}, lugares TEXT, personas TEXT, pasajes TEXT,
-        orden_serie TEXT, orden_num INTEGER, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
+        orden_serie TEXT, orden_num INTEGER, resumen TEXT, razon TEXT, consultado TEXT, estado TEXT,
+        type TEXT, roles TEXT);
     CREATE TABLE periodos (id TEXT PRIMARY KEY, nombre TEXT, tipo TEXT, persona_id TEXT, {fecha}, lugares TEXT,
-        resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
+        resumen TEXT, razon TEXT, consultado TEXT, estado TEXT, office TEXT);
     CREATE TABLE hallazgos (id TEXT PRIMARY KEY, nombre TEXT, lugar_hallazgo TEXT, relaciona TEXT, {fecha},
         resumen TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE recorridos (id TEXT PRIMARY KEY, titulo TEXT, paradas TEXT, razon TEXT, consultado TEXT, estado TEXT);
     CREATE TABLE hechos_fuentes (tipo TEXT, id TEXT, fuente_id TEXT REFERENCES fuentes(id));
     """)
     j = lambda x: json.dumps(x or [], ensure_ascii=False)
+    fuentes_legado = ("fuentes", "fuente")
 
     def ins(tabla, valores):
         db.execute(f"INSERT INTO {tabla} VALUES ({','.join('?' * len(valores))})", valores)
@@ -410,7 +905,7 @@ def escribir_sqlite(salida, ruta):
 
     def fuentes_hecho(tipo, hid, obj):
         vistos = []
-        for _, fid in fuentes_de(obj):
+        for _, fid in fuentes_de(obj, fuentes_legado):
             if fid not in vistos:
                 vistos.append(fid)
         hf.extend((tipo, hid, fid) for fid in vistos)
@@ -433,22 +928,24 @@ def escribir_sqlite(salida, ruta):
             ins("lugar_nombres", (o["id"], i, n["nombre"], n.get("desde"), n.get("hasta"), n.get("nota")))
         for i, c in enumerate(o.get("candidatos") or []):
             ins("candidatos", (o["id"], i, c.get("nombre"), json.dumps(c.get("geometria"), ensure_ascii=False),
-                               c.get("estado"), c.get("razon")))
+                               c.get("estado"), c.get("razon"), c.get("checked_on")))
         fuentes_hecho("lugar", o["id"], o)
     for o in salida["personas"].values():
         ins("personas", (o["id"], o["nombre"], j(o.get("nombres")), *_fecha_cols(o.get("fecha")),
                          o.get("desambiguacion"), o["resumen"], o["razon"], o["consultado"], o["estado"]))
         for i, r in enumerate(o.get("relaciones") or []):
             ins("relaciones", (o["id"], i, r.get("tipo"), r.get("persona"), r.get("lugar"), r.get("relacion"),
-                               r.get("relacion_inversa"), *_fecha_cols(r.get("fecha")), int(bool(r.get("deducido"))), r.get("razon"), r.get("estado")))
-        fuentes_hecho("persona", o["id"], o)
+                               r.get("relacion_inversa"), *_fecha_cols(r.get("fecha")), int(bool(r.get("deducido"))),
+                               r.get("razon"), r.get("estado"), r.get("type"), r.get("word"), r.get("office"),
+                               r.get("certainty"), r.get("checked_on"), r.get("key")))
+        fuentes_hecho("persona", o["id"], {k: v for k, v in o.items() if k != "offices"})
     for o in salida["viajes"]:
         ins("viajes", (o["id"], o["nombre"], o["persona"], o["referencia"], *_fecha_cols(o.get("fecha")),
                        j(o.get("companeros")), o["resumen"], o.get("razon"), o.get("consultado"), o.get("estado")))
         fuentes_hecho("viaje", o["id"], {k: v for k, v in o.items() if k != "paradas"})
         for p in o.get("paradas") or []:
             ins("paradas", (o["id"], p["orden"], p["lugar"], p["referencia"], *_fecha_cols(p.get("fecha")),
-                            p.get("nota"), p["razon"], p["estado"]))
+                            p.get("nota"), p["razon"], p["estado"], p.get("checked_on")))
             fuentes_hecho("parada", f"{o['id']}#{p['orden']}", p)
     for o in salida["cartas"]:
         d = o.get("destinatarios") or {}
@@ -461,11 +958,13 @@ def escribir_sqlite(salida, ruta):
         orden = o.get("orden_relato") or {}
         ins("eventos", (o["id"], o["titulo"], *_fecha_cols(o.get("fecha")), j(o.get("lugares")), j(o.get("personas")),
                         j(o.get("pasajes")), orden.get("serie"), orden.get("orden"), o["resumen"], o["razon"],
-                        o.get("consultado"), o["estado"]))
+                        o.get("consultado"), o["estado"], o.get("type"),
+                        json.dumps(o["roles"], ensure_ascii=False) if o.get("roles") is not None else None))
         fuentes_hecho("evento", o["id"], o)
     for o in salida["periodos"]:
         ins("periodos", (o["id"], o["nombre"], o["tipo"], o.get("persona"), *_fecha_cols(o.get("fecha")),
-                         j(o.get("lugares")), o["resumen"], o["razon"], o.get("consultado"), o["estado"]))
+                         j(o.get("lugares")), o["resumen"], o["razon"], o.get("consultado"), o["estado"],
+                         o.get("office")))
         fuentes_hecho("periodo", o["id"], o)
     for o in salida["hallazgos"]:
         ins("hallazgos", (o["id"], o["nombre"], o["lugar_hallazgo"], j(o.get("relaciona")),
@@ -487,6 +986,13 @@ def buscar_url(termino):
 
 
 def termino(tipo, o):
+    """Qué buscar en wol.jw.org para releer un hecho de los YAML: su search o, si no lo lleva, su nombre."""
+    if o.get("search"):
+        return o["search"]
+    return o.get("name") or o.get("book") or o.get("title") or o["id"]
+
+
+def _legacy_term(o):
     if o.get("buscar"):
         return o["buscar"]
     return o.get("nombre") or o.get("libro") or o.get("titulo") or o["id"]
@@ -515,6 +1021,7 @@ REGISTROS = [  # (fichero, título)
     ("eventos", "Eventos"), ("periodos", "Periodos"), ("hallazgos", "Hallazgos"), ("recorridos", "Recorridos"),
     ("libros", "Libros y calendario"), ("cobertura", "Cobertura de la Biblia"), ("fuentes", "Fuentes"),
 ]
+ESTADOS_LEGADO = {"verified": "verificado", "pending": "pendiente"}
 
 
 def _cabeza(titulo):
@@ -537,10 +1044,10 @@ def _revisar(out, tipo, objs):
         return
     out.extend(["## Qué revisar dentro de un año", "",
                 "Una búsqueda en wol.jw.org por cada entidad, para ver si hay material más reciente. "
-                "Si una publicación nueva dice otra cosa, gana la más reciente y el cambio se anota en `historial` "
+                "Si una publicación nueva dice otra cosa, gana la más reciente y el cambio se anota en `history` "
                 "(ver [../README.md](../README.md)).", ""])
     for o in objs:
-        t = termino(tipo, o)
+        t = _legacy_term(o)
         out.append(f"- {o.get('nombre') or o.get('libro') or o.get('titulo')}: [buscar «{t}»]({buscar_url(t)})")
     out.append("")
 
@@ -557,12 +1064,13 @@ def _anio_era(y):
     return f"{1 - y} a.e.c." if isinstance(y, int) and y <= 0 else f"{y} e.c."
 
 
-def registros(salida, datos):
-    """Devuelve {nombre_fichero: texto} con el registro partido por tipo."""
+def registros(salida, legado, datos):
+    """Devuelve {nombre_fichero: texto} con el registro partido por tipo. legado son los objetos de legacy_datos
+    (con su _fichero) y datos los del YAML, que usa el informe de la cobertura."""
     F = salida["fuentes"]
     L = salida["lugares"]
     P = salida["personas"]
-    fich = {(t, o["id"]): o["_fichero"] for t in TIPOS for o in datos[t]}
+    fich = {(t, o["id"]): o["_fichero"] for t in REGISTROS_TIPOS for o in legado[t]}
     docs = {}
 
     out = _cabeza("Lugares")
@@ -574,7 +1082,8 @@ def registros(salida, datos):
         for c in o.get("candidatos") or []:
             g = c.get("geometria") or {}
             cands.append(_fila(f"**{o['nombre']}**, candidato «{c.get('nombre')}» ({g.get('tipo')}, {c.get('estado')})",
-                               f, c.get("fuentes"), F, o["consultado"], c.get("razon"), o["estado"]))
+                               f, c.get("fuentes"), F, c.get("checked_on") or o["consultado"], c.get("razon"),
+                               o["estado"]))
         alts += _alternativas(o, f, F)
     _seccion(out, "Lugares", filas)
     _seccion(out, "Candidatos de ubicación", cands)
@@ -593,10 +1102,17 @@ def registros(salida, datos):
         for r in o.get("relaciones") or []:
             otro = r.get("persona") or r.get("lugar")
             nombre = (P.get(otro) or L.get(otro) or {}).get("nombre", otro)
-            extra = f" ({r['relacion']})" if r.get("relacion") else ""
             ded = ", deducido" if r.get("deducido") else ""
-            rels.append(_fila(f"**{o['nombre']}** {r.get('tipo')} **{nombre}**{extra}{ded}", f, r.get("fuentes"), F,
-                              o["consultado"], r.get("razon"), r.get("estado")))
+            rels.append(_fila(f"**{o['nombre']}** → **{nombre}**: {r.get('verb')}{ded}", f, r.get("fuentes"), F,
+                              r.get("checked_on") or o["consultado"], r.get("razon"), r.get("estado")))
+        for c in o.get("offices") or []:
+            if c.get("origin") != "relation":
+                continue
+            donde = f" en **{(L.get(c.get('place')) or {}).get('nombre', c.get('place'))}**" if c.get("place") else ""
+            ded = ", deducido" if c.get("inferred") else ""
+            rels.append(_fila(f"**{o['nombre']}** fue {c.get('es')}{donde}{ded}", f, c.get("sources"), F,
+                              c.get("checked_on") or o["consultado"], c.get("reason"),
+                              ESTADOS_LEGADO.get(c.get("status"), c.get("status"))))
         alts += _alternativas(o, f, F)
     _seccion(out, "Personas", filas)
     _seccion(out, "Relaciones", rels)
@@ -614,7 +1130,8 @@ def registros(salida, datos):
         for p in v.get("paradas") or []:
             lug = L.get(p["lugar"], {}).get("nombre", p["lugar"])
             filas.append(_fila(f"{v['nombre']}, parada {p['orden']}: **{lug}** ({p['referencia']}), {_texto_fecha(p.get('fecha'))}",
-                               fich[("viajes", v["id"])], p["fuentes"], F, v.get("consultado"), p["razon"], p["estado"]))
+                               fich[("viajes", v["id"])], p["fuentes"], F, p.get("checked_on") or v.get("consultado"),
+                               p["razon"], p["estado"]))
     _seccion(out, "Paradas", filas)
     _revisar(out, "viajes", salida["viajes"])
     docs["viajes"] = out
@@ -674,7 +1191,7 @@ def registros(salida, datos):
     docs["recorridos"] = out
 
     out = _cabeza("Libros y calendario")
-    out.extend(["`data/libros.yaml` y `data/calendario.yaml` son estructura (nombres, abreviaturas, capítulos, meses). "
+    out.extend(["`data/books.yaml` y `data/calendar.yaml` son estructura (nombres, abreviaturas, capítulos, meses). "
                 "Aquí solo salen los hechos que llevan fuente.", ""])
     filas = []
     for l in salida["libros"]:
@@ -684,39 +1201,40 @@ def registros(salida, datos):
                   f"en {l['lugar']}" if l.get("lugar") else "",
                   f"terminado {_texto_fecha(l['fecha'])}" if l.get("fecha") else "",
                   f"abarca {_texto_fecha(l['abarca'])}" if l.get("abarca") else ""]
-        filas.append(_fila(f"**{l['nombre']}**: " + ", ".join(p for p in partes if p), "data/libros.yaml",
+        filas.append(_fila(f"**{l['nombre']}**: " + ", ".join(p for p in partes if p), "data/books.yaml",
                            l.get("fuentes"), F, l.get("consultado"), l.get("razon"), l.get("estado")))
     _seccion(out, "Libros", filas)
-    filas = [_fila(f"**{m.get('nombre')}**", "data/calendario.yaml", m.get("fuentes"), F, m.get("consultado"),
+    filas = [_fila(f"**{m.get('nombre')}**", "data/calendar.yaml", m.get("fuentes"), F, m.get("consultado"),
                    m.get("razon"), m.get("estado"))
              for m in salida["calendario"].get("meses") or [] if m.get("fuentes")]
     _seccion(out, "Meses", filas)
-    filas = [_fila(f"**{n.get('nombre')}** ({m.get('nombre')}): {n.get('nota')}", "data/calendario.yaml",
-                   n.get("fuentes"), F, m.get("consultado"), n.get("razon"), m.get("estado"))
+    filas = [_fila(f"**{n.get('nombre')}** ({m.get('nombre')}): {n.get('nota')}", "data/calendar.yaml",
+                   n.get("fuentes"), F, n.get("checked_on") or m.get("consultado"), n.get("razon"), m.get("estado"))
              for m in salida["calendario"].get("meses") or [] for n in m.get("nombres") or []]
     _seccion(out, "Nombres de los meses por época", filas)
-    filas = [_fila(f"**{f.get('nombre')}** ({m.get('nombre')}), se celebra desde {_anio_era(f.get('instituida'))}", "data/calendario.yaml",
-                   f.get("fuentes"), F, m.get("consultado"), f.get("razon"), f.get("estado") or m.get("estado"))
+    filas = [_fila(f"**{f.get('nombre')}** ({m.get('nombre')}), se celebra desde {_anio_era(f.get('instituida'))}", "data/calendar.yaml",
+                   f.get("fuentes"), F, f.get("checked_on") or m.get("consultado"), f.get("razon"),
+                   f.get("estado") or m.get("estado"))
              for m in salida["calendario"].get("meses") or [] for f in m.get("fiestas") or []]
     _seccion(out, "Fiestas y desde cuándo se celebran", filas)
-    filas = [_fila(f"**{e.get('titulo')}**: {e.get('texto')}", "data/calendario.yaml", e.get("fuentes"), F,
+    filas = [_fila(f"**{e.get('titulo')}**: {e.get('texto')}", "data/calendar.yaml", e.get("fuentes"), F,
                    e.get("consultado"), e.get("razon"), e.get("estado"))
              for e in salida["calendario"].get("explicacion") or []]
     _seccion(out, "El calendario", filas)
     docs["libros"] = out
 
     out = _cabeza("Cobertura")
-    out.extend(["Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.yaml`. Un capítulo cuenta "
+    out.extend(["Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.yaml`. Un capítulo cuenta "
                 "como completo cuando sus tramos cubren todos sus versículos, salvo los que la TNM no incluye. "
-                "El formato está en [data/cobertura/README.md](../../../data/cobertura/README.md) y el protocolo en "
+                "El formato está en [data/coverage/README.md](../../../data/coverage/README.md) y el protocolo en "
                 "[../versiculos.md](../versiculos.md).", ""])
-    lineas, tot_cob = cobertura.informe(datos)
+    lineas, tot_cob = cov.informe(datos)
     out.extend(lineas)
     docs["cobertura"] = out
 
     out = _cabeza("Fuentes")
-    out.extend(["Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escribió a mano los crea "
-                "`build.py` a partir de `data/libros.yaml` y salen marcados como «implícita».", "",
+    out.extend(["Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escribió a mano los crea "
+                "`build.py` a partir de `data/books.yaml` y salen marcados como «implícita».", "",
                 "| Id | Título | Obra | Nivel | Publicado | Consultado |", "|---|---|---|---|---|---|"])
     for k, f in F.items():
         consultado = "implícita" if f.get("implicita") else f.get("consultado")
@@ -745,9 +1263,12 @@ def registros(salida, datos):
     return {nombre: "\n".join(lineas) for nombre, lineas in docs.items()}
 
 
-def escribir_registro(salida, datos, carpeta):
+REGISTROS_TIPOS = ["lugares", "personas", "viajes", "cartas", "eventos", "periodos", "hallazgos", "recorridos"]
+
+
+def escribir_registro(salida, legado, datos, carpeta):
     carpeta.mkdir(parents=True, exist_ok=True)
-    textos = registros(salida, datos)
+    textos = registros(salida, legado, datos)
     for nombre, texto in textos.items():
         (carpeta / f"{nombre}.md").write_text(texto, encoding="utf-8")
     for viejo in carpeta.glob("*.md"):
@@ -761,33 +1282,39 @@ def escribir_registro(salida, datos, carpeta):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Compila data/ en dist/, site/data.json, site/data.js y el registro de investigación.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
-    ap.add_argument("--salida", default=None,
+    ap.add_argument("--out", "--salida", dest="out", default=None,
                     help="escribe data.json, data.js, biblical-earth.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
     args = ap.parse_args(argv)
     datos, _ = cargar(args.data)
     errores = integridad(datos)
+    salida = legado = None
+    if not errores:
+        salida, legado, errores = componer(datos, datetime.date.today().isoformat())
     if errores:
         for e in errores:
             print("ERROR", e, file=sys.stderr)
-        print(f"build: {len(errores)} errores de integridad; no se escribe nada.", file=sys.stderr)
+        print(f"build: {len(errores)} errores; no se escribe nada.", file=sys.stderr)
         return 1
-    salida = componer(datos, datetime.date.today().isoformat())
-    if args.salida:
-        destino = Path(args.salida).resolve()
+    if args.out:
+        destino = Path(args.out).resolve()
         escribir_json(salida, [destino / "data.json"], destino / "data.js")
         n_hf = escribir_sqlite(salida, destino / "biblical-earth.sqlite")
-        escribir_registro(salida, datos, destino / "registro")
+        escribir_registro(salida, legado, datos, destino / "registro")
         donde = f" en {destino}"
     else:
         escribir_json(salida, [RAIZ / "dist" / "data.json", RAIZ / "site" / "data.json"], RAIZ / "site" / "data.js")
         n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-earth.sqlite")
-        escribir_registro(salida, datos, RAIZ / "docs" / "investigacion" / "registro")
+        escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
         donde = ""
     n_impl = sum(1 for f in salida["fuentes"].values() if f.get("implicita"))
+    rels = [r for p in salida["personas"].values() for r in p.get("relaciones") or []]
     print(f"build{donde}: {len(salida['fuentes'])} fuentes ({n_impl} capítulos implícitos), {len(salida['libros'])} libros, "
           f"{len(salida['lugares'])} lugares, {len(salida['personas'])} personas, {len(salida['viajes'])} viajes, "
           f"{len(salida['cartas'])} cartas, {len(salida['eventos'])} eventos, {len(salida['periodos'])} periodos, "
           f"{len(salida['hallazgos'])} hallazgos, {len(salida['recorridos'])} recorridos, {n_hf} filas en hechos_fuentes.")
+    print(f"build: {len(rels)} relaciones, {sum(1 for r in rels if not r.get('reference'))} sin referencia, "
+          f"{sum(1 for r in rels if r.get('duplicate_of'))} copias de un par que no mandan, "
+          f"{sum(len(p.get('offices') or []) for p in salida['personas'].values())} cargos.")
     return 0
 
 

@@ -1,0 +1,79 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tiberio
+name: Tiberio
+names:
+- name: Tiberio
+- name: Tiberio César
+  note: Así lo llama Lucas 3:1.
+date:
+  from: 14
+  to: 37
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14-37 e.c.
+summary: Segundo emperador de Roma, hijastro y sucesor de Augusto. Gobernó durante todo el ministerio de Jesús; probablemente
+  era suya la imagen de la moneda del tributo.
+reason: 'Perspicacia «Tiberio»: nació en 42 a.e.c., Augusto lo adoptó en 4 e.c., el Senado lo nombró el 15 de septiembre
+  de 14 y murió en marzo de 37.'
+sources:
+- it-tiberio
+- it-cesar
+- lucas-3
+links:
+- title: 'Perspicacia: «Tiberio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004398
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: succeeds
+  person: augusto
+  date:
+    from: 14
+    to: 14
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 14 e.c.
+  inferred: true
+  sources:
+  - it-tiberio
+  reason: 'Perspicacia «Tiberio»: Augusto lo escogió como sucesor y, tras su muerte, el Senado lo nombró emperador en 14 e.c.'
+  checked_on: '2026-09-29'
+  office: emperor
+  status: verified
+- type: kin
+  person: augusto
+  word: stepfather
+  inferred: true
+  sources:
+  - it-tiberio
+  reason: 'Perspicacia «Tiberio»: nació en 42 a.e.c. y, cuando tenía unos tres años, Octavio (Augusto) se casó con su madre,
+    Livia. La Biblia no lo cuenta.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: augusto
+  word: adoptive_father
+  date:
+    from: 4
+    to: 4
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 4 e.c.
+  inferred: true
+  sources:
+  - it-tiberio
+  reason: 'Perspicacia «Tiberio»: Augusto lo adoptó en 4 e.c. y más tarde lo escogió como sucesor. La Biblia no lo cuenta.'
+  checked_on: '2026-09-29'
+  status: verified
+search: Tiberio César
+perspicacia: '1200004398'
+checked_on: '2026-09-29'
+status: verified

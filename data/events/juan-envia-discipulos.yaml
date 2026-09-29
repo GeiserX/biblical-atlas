@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juan-envia-discipulos
+title: Juan envía discípulos a preguntar a Jesús
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 36
+places:
+- galilea
+- nain
+- tiberiades
+people:
+- jesus
+- juan-el-bautista
+roles:
+  jesus: spoke
+passages:
+- Mt 11:2-30
+- Lu 7:18-35
+summary: Desde la cárcel, Juan manda a dos discípulos a preguntar si Jesús es el que había de venir. Jesús cura ante ellos,
+  elogia a Juan y reprocha su incredulidad a Corazín, Betsaida y Capernaúm.
+reason: 'A7-C, fila 17: Tiberíades (Juan preso) y Galilea, cerca de Naín. Perspicacia «Juan» (núm. 1) cree que estaba preso
+  en Tiberíades.'
+sources:
+- tnm-a7-c
+- mateo-11
+- lucas-7
+- it-juan
+- jy-cap-38
+- jy-cap-39
+history:
+- date: '2026-09-29'
+  change: Tiberíades iba primero y el mapa ponía allí a Jesús. A7-C sitúa la escena en Galilea, en Naín o cerca; Tiberíades
+    es solo la cárcel de Juan.
+  source: mateo-11
+- date: '2026-09-29'
+  change: 'presentes: [jesus]. Juan estaba preso (Mt 11:2) y no en la escena, así que el mapa ya no lo sitúa en Galilea.'
+  source: mateo-11
+present:
+- jesus
+checked_on: '2026-09-29'
+status: verified

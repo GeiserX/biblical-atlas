@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mar-de-adria
+name: Mar de Adria
+names:
+- name: Mar de Adria
+- name: Adria
+  note: Según Estrabón, citado por Perspicacia, el nombre viene de Atria, ciudad junto a la desembocadura del Po.
+type: sea
+lat: 38.0
+lon: 19.0
+precision: zone
+coord_source: openbible:adc77fb
+coord_url: https://www.openbible.info/geo/ancient/adc77fb/adriatic-sea
+coord_note: Punto de OpenBible para los mares Adriático y Jónico; en el siglo I el nombre cubría también aguas más al sur.
+summary: En tiempos de Pablo, el nombre cubría el Adriático actual, el mar Jónico y las aguas entre Sicilia y Malta, al oeste,
+  y Creta, al este. El barco de Pablo anduvo a la deriva por él catorce noches.
+reason: 'Perspicacia «Adria» y notas de estudio de Hch 27:27 y 28:1. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-adria
+- nota-hechos-27
+- hch-27
+- openbible-geo
+links:
+- title: 'Perspicacia: «Adria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000120
+  type: perspicacia
+- title: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  type: bible
+checked_on: '2026-09-29'
+status: verified

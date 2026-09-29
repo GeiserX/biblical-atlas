@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: regio
-generado: "2026-09-28"
+place: regio
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-120_1_VIDEO"
-    titulo: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
+    title: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-120_1_VIDEO&appLanguage=S"
-    publicado: "2024-12-02"
-    menciones: 2
-    terminos:
+    published: "2024-12-02"
+    hits: 2
+    terms:
       "Regio": 2

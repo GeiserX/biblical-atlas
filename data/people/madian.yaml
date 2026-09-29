@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: madian
+name: Madián
+names:
+- name: Madián
+perspicacia: '1200003041'
+disambiguation: Madián hijo de Abrahán; la tierra de sus descendientes es el lugar madian.
+summary: Hijo de Abrahán y Queturá; tuvo cinco hijos, de Efá a Eldaá. De él vienen los madianitas, que dieron nombre a la
+  tierra de Madián.
+reason: Perspicacia «Madián, madianitas», núm. 1 y 2; Gé 25:2, 4.
+sources:
+- it-madian
+- genesis-25
+links:
+- title: 'Perspicacia: «Madián, madianitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
+  type: perspicacia
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+relations:
+- type: kin
+  person: abrahan
+  word: father
+  inferred: false
+  sources:
+  - it-madian
+  - genesis-25
+  reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: quetura
+  word: mother
+  inferred: false
+  sources:
+  - it-madian
+  - genesis-25
+  reason: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

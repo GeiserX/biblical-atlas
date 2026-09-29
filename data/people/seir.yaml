@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seir
+name: Seír
+names:
+- name: Seír
+perspicacia: '1200003884'
+disambiguation: Seír el horeo, un hombre; no la región montañosa de Seír ni el monte Seír de Judá.
+summary: Antepasado de los horeos. Sus siete hijos, o quizá descendientes, gobernaron como jeques la tierra de Seír antes
+  de los edomitas; tal vez la región tomó de él su nombre.
+reason: Perspicacia «Seír», núm. 1; Gé 36:20, 21, 29, 30.
+sources:
+- it-seir
+- genesis-36
+links:
+- title: 'Perspicacia: «Seír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003884
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+checked_on: '2026-09-29'
+status: verified

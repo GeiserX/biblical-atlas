@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: alejandria
+name: Alejandría
+names:
+- name: Alejandría
+- name: Al-Iskandariyya
+  note: Nombre árabe de la ciudad actual, que ocupa el mismo sitio, según Perspicacia.
+type: city
+lat: 31.1825
+lon: 29.8965
+precision: point
+coord_source: openbible:aee7248
+coord_url: https://www.openbible.info/geo/ancient/aee7248/alexandria
+summary: Principal ciudad de Egipto en el siglo I, fundada por Alejandro Magno en 332 o 331 a.e.c., con muchos judíos. Unos
+  alejandrinos discutieron con Esteban; allí nació Apolos y de allí salieron barcos de Pablo.
+reason: 'Perspicacia «Alejandría», párr. 1 a 5; Hch 6:9. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-alejandria
+- openbible-geo
+- hechos-6
+- nota-hechos-18
+- hch-18
+- hch-27
+- hch-28
+links:
+- title: 'Perspicacia: «Alejandría»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000193
+  type: perspicacia
+- title: Hechos 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-alejandro
+title: Muere Alejandro Magno en Babilonia
+date:
+  from: -322
+  to: -322
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 323 a.e.c.
+places:
+- babilonia
+people: []
+type: death
+roles: {}
+passages:
+- Da 8:8
+summary: Alejandro quería hacer de Babilonia su capital, pero muere allí de repente a los 32 años. Su imperio acaba repartido
+  entre cuatro de sus generales.
+reason: 'Perspicacia «Alejandro» y «Babilonia» fechan su muerte en 323 a.e.c.; «Veamos “la buena tierra”» da la misma edad
+  y la causa, la malaria. Alejandro no tiene ficha: nadie lleva el papel de morir.'
+sources:
+- it-alejandro
+- it-babilonia
+- lbt-grecia-y-roma
+search: muerte de Alejandro Magno
+checked_on: '2026-09-29'
+status: verified

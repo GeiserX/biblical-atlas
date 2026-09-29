@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zidim
+name: Zidim
+names:
+- name: Zidim
+type: city
+lat: 32.80758
+lon: 35.45382
+precision: uncertain
+coord_source: openbible:a8248e0
+coord_url: https://www.openbible.info/geo/ancient/a8248e0/ziddim
+coord_note: Punto de OpenBible en Hattin. Perspicacia no sabe dónde estaba.
+summary: Ciudad fortificada de Neftalí. No se sabe con seguridad dónde estaba.
+reason: 'Perspicacia «Zidim»; Jos 19:35. OpenBible: solo el punto.'
+sources:
+- it-zidim
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Zidim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004729
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

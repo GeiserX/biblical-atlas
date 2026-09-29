@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-defiende-a-las-hijas-de-jetro
+title: Moisés defiende a las hijas de Jetró junto a un pozo
+date:
+  from: -1552
+  to: -1551
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1553 y 1552 a.e.c. (tiempo narrativo: poco después de huir de Egipto en 1553)'
+narrative_order:
+  series: exodo
+  order: 2015
+places:
+- madian
+people:
+- moises
+- jetro
+- zipora
+passages:
+- Éx 2:15-21
+summary: Junto a un pozo de Madián, Moisés defiende de unos pastores a las siete hijas de Reuel, o Jetró, y abreva su rebaño.
+  Reuel lo invita a comer; Moisés se queda con él y se casa con Ziporá.
+reason: 'Perspicacia «Jetró»: la relación empezó poco después de que Moisés huyera de Egipto en 1553 a.e.c. (estudio 3). «Ziporá»
+  cuenta la escena del pozo.'
+sources:
+- exodo-2
+- it-jetro
+- it-zipora
+- it-moises
+- si-3
+links:
+- title: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

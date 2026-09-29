@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-habla-a-felix-y-drusila
+title: Pablo habla a Félix y Drusila de justicia y autodominio
+date:
+  from: 56
+  to: 58
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: c. 56-58 e.c. (dos años de custodia)
+narrative_order:
+  series: hechos
+  order: 2424
+places:
+- cesarea
+people:
+- pablo
+- felix
+- drusila
+type: speech
+roles:
+  pablo: spoke
+passages:
+- Hch 24:24-27
+summary: Félix, con su esposa Drusila, llama a Pablo a hablar de su fe. Al oír de justicia, autodominio y juicio
+  se atemoriza; durante dos años lo llama a menudo esperando dinero.
+reason: Perspicacia «Félix» (párr. 4) y «Drusila»; la nota de estudio de Hch 24:24.
+sources:
+- it-felix
+- it-drusila
+- nota-hechos-24
+- hch-24
+- bt-24
+search: Félix Drusila Pablo
+checked_on: '2026-09-29'
+status: verified

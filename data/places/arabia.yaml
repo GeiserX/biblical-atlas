@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arabia
+name: Arabia
+names:
+- name: Arabia
+type: region
+lat: 30.07
+lon: 35.35
+precision: zone
+coord_source: openbible:a0f4ea8
+coord_url: https://www.openbible.info/geo/ancient/a0f4ea8/arabia-2
+coord_note: Punto representativo de Arabia Petrea según OpenBible; no marca adónde fue Pablo.
+summary: La península arábiga y sus desiertos del norte. Tras su conversión, Pablo fue a Arabia y volvió a Damasco;
+  no se sabe a qué parte fue.
+reason: 'Perspicacia «Arabia», párrafo sobre Gál 1:17: pudo ser el desierto de Siria o cualquier parte de la península.
+  Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-arabia
+- galatas-1
+- openbible-geo
+links:
+- title: 'Perspicacia: «Arabia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
+  type: perspicacia
+- title: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

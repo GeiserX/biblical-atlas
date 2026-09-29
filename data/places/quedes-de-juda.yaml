@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quedes-de-juda
+name: Quedes
+names:
+- name: Quedes
+type: city
+lat: 30.648333
+lon: 34.422222
+precision: uncertain
+coord_source: openbible:a4fa255
+coord_url: https://www.openbible.info/geo/ancient/a4fa255/kedesh-2
+coord_note: OpenBible la toma por otro nombre de Cadés-Barnea y da el punto de ʽAin el-Qudeirat; para Cadés, Perspicacia prefiere
+  ʽAin Qedeis.
+summary: Ciudad del sur de Judá, posiblemente la misma Cadés-Barnea. No es la Quedes de Neftalí, ciudad de refugio, ni la
+  de Isacar.
+reason: 'Perspicacia «Quedes», núm. 1; Jos 15:23. OpenBible: solo el punto.'
+sources:
+- it-quedes
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Quedes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002582
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

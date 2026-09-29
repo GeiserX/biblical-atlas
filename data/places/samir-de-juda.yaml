@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: samir-de-juda
+name: Samir
+names:
+- name: Samir
+type: city
+lat: 31.4355
+lon: 34.9265
+precision: uncertain
+coord_source: openbible:a846a2a
+coord_url: https://www.openbible.info/geo/ancient/a846a2a/shamir-1
+coord_note: 'Khirbet al-Bira, tercera identificación de OpenBible: es el el-Bireh junto al que Perspicacia la sitúa. La primera,
+  Khirbet Sumara, conserva el nombre.'
+summary: Ciudad de la montaña de Judá. El nombre parece seguir en Khirbet Somerah, pero se cree que estaba cerca de el-Bireh,
+  unos 20 km al suroeste de Hebrón.
+reason: 'Perspicacia «Samir», núm. 2; Jos 15:48. No es la Samir de Efraín, la del juez Tolá. OpenBible: solo el punto.'
+sources:
+- it-samir
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Samir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003940
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

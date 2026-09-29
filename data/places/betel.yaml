@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betel
+name: Betel
+names:
+- name: Luz
+  to: -1472
+  note: Nombre cananeo de la ciudad (Gé 28:19). Desde 1473 a.e.c. el relato ya la llama Betel; Perspicacia dice que Luz
+    dejó de usarse del todo cuando la tomó la casa de José (Jue 1:22-26), suceso sin año.
+- name: Betel
+  from: -1780
+  note: Jacob llamó así al lugar de su campamento en 1781 a.e.c.; tras la conquista el nombre pasó a la ciudad.
+- name: El-betel
+  note: Nombre que Jacob dio al lugar del altar a su regreso (Gé 35:7).
+- name: Bet-Aven
+  note: Nombre de desprecio que usa Oseas por la adoración falsa de la ciudad (Os 4:15).
+- name: Alón-Bacut
+  note: Roble al pie de la colina de Betel donde enterraron a Débora (Gé 35:8); la nota dice que significa «roble del llanto».
+type: city
+lat: 31.922778
+lon: 35.241389
+precision: point
+coord_source: openbible:a64f355
+coord_url: https://www.openbible.info/geo/ancient/a64f355/bethel-1
+summary: Ciudad de la región montañosa de Efraín, unos 17 km al norte de Jerusalén, en un cruce de caminos. Jacob vio allí
+  la escalera del sueño; siglos después Jeroboán puso en ella un becerro de oro.
+reason: 'Perspicacia «Betel» (párr. 3, 7-9 y 15) y Gé 28:10-19. Los años salen del estudio 3 (la huida de Jacob, 1781 a.e.c.)
+  y de Perspicacia (1473 a.e.c.). OpenBible: solo el punto.'
+sources:
+- it-betel
+- si-3
+- genesis-28
+- openbible-geo
+- genesis-12
+- genesis-13
+- genesis-35
+- it-bet-aven
+- oseas-4
+- oseas-5
+- oseas-10
+- oseas-12
+- josue-8
+- josue-12
+- josue-16
+- it-luz-ii
+- josue-18
+- jueces-1
+- jueces-20
+- jueces-21
+links:
+- title: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  type: perspicacia
+- title: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  type: bible
+- title: 'Perspicacia: «Bet-aven»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000673
+  type: perspicacia
+- title: 'Perspicacia: «Luz, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002794
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'Se decide Luz: su límite se queda en 1473 a.e.c., cuando el relato vuelve a llamar Betel a la ciudad. La toma
+    por la casa de José (Jue 1:22-26), que según Perspicacia pone fin al nombre Luz, no tiene año.'
+  source: it-betel
+checked_on: '2026-09-29'
+status: verified

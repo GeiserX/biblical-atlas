@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ticio-justo
+name: Ticio Justo
+names:
+- name: Ticio Justo
+- name: Justo
+  note: Perspicacia lo trata en «Justo», entrada 2; su artículo «Ticio Justo» remite allí.
+perspicacia: 1200002561#2
+date:
+  from: 50
+  to: 52
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50-52 e.c.
+disambiguation: 'No es Justo, el sobrenombre de José Barsabás, ni Jesús llamado Justo, el colaborador de Pablo: son las entradas
+  1 y 3 de Perspicacia «Justo».'
+summary: Creyente de Corinto que adoraba a Dios, probablemente un prosélito. Su casa lindaba con la sinagoga y, cuando los
+  judíos rechazaron a Pablo, este siguió predicando desde ella.
+reason: Perspicacia «Justo», núm. 2; nota de estudio de Hch 18:7; «Testimonio completo», cap. 19, párr. 9. Pablo estuvo en
+  Corinto del otoño de 50 a la primavera de 52 (estudio 3, párr. 24 y 25).
+sources:
+- it-justo
+- nota-hechos-18
+- bt-19
+- hch-18
+- si-3
+links:
+- title: 'Perspicacia: «Justo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002561
+  type: perspicacia
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+relations:
+- type: lived_in
+  place: corinto
+  inferred: false
+  sources:
+  - hch-18
+  - it-justo
+  reason: 'Hch 18:7: su casa, en Corinto, estaba pegada a la sinagoga.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

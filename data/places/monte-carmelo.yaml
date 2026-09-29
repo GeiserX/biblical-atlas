@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-carmelo
+name: Monte Carmelo
+names:
+- name: Carmelo
+type: mountain
+lat: 32.6725
+lon: 35.023333
+precision: point
+coord_source: openbible:a3e21c6
+coord_url: https://www.openbible.info/geo/ancient/a3e21c6/mount-carmel
+summary: Cordillera de unos 50 km que baja hasta el Mediterráneo y cierra por el suroeste el valle de Jezreel. Allí se enfrentó
+  Elías a los profetas de Baal.
+reason: 'Perspicacia «Carmelo», núm. 1, párr. 2-4; 1Re 18:19-40. OpenBible: solo el punto.'
+sources:
+- it-carmelo
+- openbible-geo
+- 1-reyes-18
+- josue-19
+links:
+- title: 'Perspicacia: «Carmelo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000892
+  type: perspicacia
+- title: 1 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

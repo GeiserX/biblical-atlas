@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-quenitas-se-instalan-al-sur-de-arad
+title: Los quenitas se instalan en el desierto de Judá
+date:
+  from: -1466
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1117 a.e.c. (tiempo narrativo: tras el reparto de la tierra y antes del primer rey)'
+narrative_order:
+  series: jueces
+  order: 1016
+places:
+- desierto-de-juda
+- jerico
+- arad
+people: []
+present: []
+passages:
+- Jue 1:16
+summary: Los descendientes del quenita suegro de Moisés suben con los de Judá desde Jericó, la ciudad de las palmeras, y se
+  instalan con ellos en el desierto de Judá, en la zona al sur de Arad.
+reason: 'Jue 1:16 y su nota. Perspicacia «Jetró»: él es el quenita suegro de Moisés; «Hobab» y «Quenita»: allí se asentó la
+  familia de Hobab. Límites: 1467 y 1117 a.e.c. (estudio 3).'
+sources:
+- jueces-1
+- it-jetro
+- it-hobab
+- it-quenita
+- si-3
+links:
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+- title: 'Perspicacia: «Quenita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002591
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

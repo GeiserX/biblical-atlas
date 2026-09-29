@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehoram-de-israel
+name: Reinado de Jehoram en Israel
+type: king
+person: jehoram-de-israel
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917-905 a.e.c.
+places:
+- samaria
+- jezreel
+summary: Doce años en Samaria; Eliseo profetizaba en Israel.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 3.
+sources:
+- tnm-a6-a
+- 2-reyes-3
+- it-jehoram
+search: Jehoram rey
+checked_on: '2026-09-28'
+status: verified

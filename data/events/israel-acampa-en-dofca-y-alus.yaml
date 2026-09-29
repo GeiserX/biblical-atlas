@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-acampa-en-dofca-y-alus
+title: Israel acampa en Dofcá y en Alús
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+narrative_order:
+  series: exodo
+  order: 17000
+places:
+- dofca
+- alus
+people:
+- moises
+passages:
+- Nú 33:12, 13
+summary: Al dejar el desierto de Sin, Israel acampa en Dofcá y luego en Alús, dos paradas que Éxodo no nombra, antes de llegar
+  a Refidim.
+reason: Nú 33:12, 13. Son parte de las etapas entre Sin y Refidim; en la serie de Éxodo van justo antes de Refidim. Año 1513
+  a.e.c. (estudio 3).
+sources:
+- numeros-33
+- it-dofqa
+- it-alus
+- si-3
+links:
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sumo-sacerdocio-de-eleazar
+name: Eleazar, sumo sacerdote
+type: high_priest
+date:
+  from: -1473
+  to: -1449
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: 1474-c. 1450 a.e.c.
+  note: 'Empieza al morir Aarón, en 1474 a.e.c. (Perspicacia «Aarón»). Perspicacia «Eleazar» pone su muerte poco antes o poco
+    después de la de Josué, que el estudio 3 fecha hacia 1450: ese es el final aproximado.'
+places:
+- llanuras-deserticas-de-moab
+- silo
+person: eleazar-hijo-de-aaron
+summary: Segundo sumo sacerdote de Israel. Recibió el cargo al morir Aarón, entró con el pueblo en la Tierra Prometida y repartió
+  la tierra con Josué. Lo sucedió su hijo Finehás.
+reason: 'Perspicacia «Eleazar», núm. 1: fue el primer sumo sacerdote en la Tierra Prometida y murió cerca de la muerte de Josué;
+  «Aarón»: muere en 1474 a.e.c.; Jos 24:33.'
+sources:
+- it-eleazar
+- it-aaron
+- si-3
+- josue-24
+search: Eleazar sumo sacerdote
+checked_on: '2026-09-29'
+status: pending

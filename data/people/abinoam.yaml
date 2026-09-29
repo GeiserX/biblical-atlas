@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abinoam
+name: Abinoam
+names:
+- name: Abinoam
+perspicacia: '1200000047'
+summary: Padre de Barac y descendiente de Neftalí. Perspicacia cree que vivía en Quedes, la ciudad de refugio de ese territorio.
+reason: Perspicacia «Abinoam»; Jue 4:6, 12.
+sources:
+- it-abinoam
+- jueces-4
+- jueces-5
+links:
+- title: 'Perspicacia: «Abinoam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000047
+  type: perspicacia
+- title: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  type: bible
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+relations:
+- type: kin
+  person: neftali-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - jueces-4
+  - it-abinoam
+  reason: Perspicacia «Abinoam» lo cuenta entre los descendientes de Neftalí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: quedes-de-neftali
+  inferred: true
+  sources:
+  - jueces-4
+  - it-abinoam
+  reason: 'Perspicacia «Abinoam»: debió de ser vecino de Quedes, en Neftalí, de donde Débora llama a su hijo (Jue 4:6).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

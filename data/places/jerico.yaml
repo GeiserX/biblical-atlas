@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jerico
+name: Jericó
+names:
+- name: Jericó
+- name: Tell es-Sultan (Tel Yeriho)
+  note: Montículo de la ciudad antigua, unos 22 km al ENE de Jerusalén.
+- name: Tulul Abu el-ʽAlayiq
+  note: Sitio donde se sitúa la Jericó del siglo I, la ciudad nueva.
+- name: Ciudad de las palmeras
+  note: Así la llama Dt 34:3. Perspicacia recuerda que las palmeras siguen creciendo en la zona.
+type: city
+lat: 31.871719
+lon: 35.444564
+precision: point
+coord_source: openbible:a231f80
+coord_url: https://www.openbible.info/geo/ancient/a231f80/jericho-1
+coord_note: Punto de la ciudad antigua; la del siglo I estaba unos 2 km al sur.
+summary: Ciudad del valle del Jordán, unos 250 m bajo el nivel del mar. En 1473 a.e.c. fue la primera que Israel tomó al oeste
+  del río. En tiempos de Jesús había otra al sur; allí se alojó con Zaqueo.
+reason: 'Perspicacia «Jericó» (párr. 2 y 13) y la nota de Mt 20:29 explican las dos ciudades; Lu 19:1-7. El mismo artículo
+  fecha la toma en 1473 a.e.c. (Jos 6). OpenBible: solo el punto.'
+sources:
+- it-jerico
+- mateo-20
+- lucas-19
+- openbible-geo
+- marcos-10
+- lucas-18
+- deuteronomio-34
+- josue-2
+- josue-5
+- josue-6
+- josue-12
+- josue-18
+- josue-24
+- jueces-1
+- jueces-3
+- w97-ehud
+links:
+- title: 'Perspicacia: «Jericó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
+  type: perspicacia
+- title: Lucas 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/19
+  type: bible
+search: Jericó
+history:
+- date: '2026-09-29'
+  change: El resumen ponía la curación de Bartimeo dentro de la ciudad nueva. La nota de Lu 18:35 y Perspicacia «Jericó» la
+    ponen cerca, quizá camino de la judía a la romana.
+  source: lucas-18
+- date: '2026-09-29'
+  change: El resumen no nombraba la toma de la ciudad por Josué, su hecho principal en la Biblia. Se añade con la fecha de
+    Perspicacia «Jericó»; Bartimeo queda en su suceso.
+  source: josue-6
+- date: '2026-09-29'
+  change: La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.
+  source: josue-6
+checked_on: '2026-09-29'
+status: verified

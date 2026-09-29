@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abarim
+name: Abarim
+names:
+- name: Abarim
+- name: Montaña de Abarim
+  note: Así la llama Números 27; en otros pasajes, montañas de Abarim.
+- name: Montañas de Abarim
+  note: Así las llama la lista de etapas de Nú 33.
+type: mountain
+lat: 31.7539
+lon: 35.7152
+precision: zone
+coord_source: openbible:aa8275b
+coord_url: https://www.openbible.info/geo/ancient/aa8275b/abarim
+coord_note: Punto representativo de OpenBible para la cordillera. El monte Nebo, una de sus cumbres, tiene ficha propia.
+summary: Cordillera al este del mar Muerto. Su parte norte, frente a Jericó, estaba junto al último campamento de Israel;
+  desde ella, en el monte Nebo, Moisés debía mirar la tierra prometida.
+reason: 'Perspicacia «Abarim», párr. 2 a 5; Nú 27:12. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-abarim
+- openbible-geo
+- numeros-27
+- numeros-33
+- deuteronomio-32
+links:
+- title: 'Perspicacia: «Abarim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000010
+  type: perspicacia
+- title: Números 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  type: bible
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

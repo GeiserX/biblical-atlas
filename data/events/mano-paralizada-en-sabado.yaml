@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mano-paralizada-en-sabado
+title: Cura en sábado una mano paralizada
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 31
+places:
+- galilea
+- mar-de-galilea
+- judea
+- jerusalen
+- idumea
+- perea
+- tiro
+- sidon
+people:
+- jesus
+passages:
+- Mt 12:9-21
+- Mr 3:1-12
+- Lu 6:6-11
+summary: En una sinagoga, Jesús cura en sábado a un hombre con la mano derecha seca. Fariseos y partidarios de Herodes traman
+  matarlo; él se retira al mar y le sigue una multitud a la que cura.
+reason: 'A7-C, fila 12: Galilea y mar de Galilea. El libro jy (cap. 32 y 33) enlaza la curación con la retirada al lago y la
+  profecía de Isaías.'
+sources:
+- tnm-a7-c
+- mateo-12
+- marcos-3
+- lucas-6
+- jy-cap-32
+- jy-cap-33
+checked_on: '2026-09-29'
+status: verified

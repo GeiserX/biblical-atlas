@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adan
+name: Adán
+names:
+- name: Adán
+type: city
+lat: 32.103933
+lon: 35.546789
+precision: point
+coord_source: openbible:adc31c7
+coord_url: https://www.openbible.info/geo/ancient/adc31c7/adam
+coord_note: Tell ed-Damiyeh, en la orilla este del Jordán, al sur de donde le llega el Jaboq. Es la identificación habitual
+  según Perspicacia y la única de OpenBible.
+summary: Ciudad junto a Zaretán, en la orilla este del Jordán, unos 28 km al nornordeste de Jericó. Allí se detuvo el agua
+  del río para que Israel lo cruzara en seco.
+reason: 'Perspicacia «Adán», núm. 2; Jos 3:16. El mapa B4 de la TNM la sitúa en el valle del Jordán. OpenBible: solo el punto.'
+sources:
+- it-adan
+- openbible-geo
+- josue-3
+- tnm-b4
+links:
+- title: 'Perspicacia: «Adán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000089
+  type: perspicacia
+- title: Josué 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

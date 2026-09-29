@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: madmana
+name: Madmaná
+names:
+- name: Madmaná
+- name: Bet-Marcabot
+  note: Nombre de Jos 19:5 y 1Cr 4:31; significa «casa de los carros». Perspicacia cree que quizá fue un nombre secundario
+    de Madmaná.
+type: city
+lat: 31.350265
+lon: 34.928577
+precision: uncertain
+coord_source: openbible:a8661e2
+coord_url: https://www.openbible.info/geo/ancient/a8661e2/madmannah
+coord_note: Khirbet Tatrit, primera identificación de OpenBible; Perspicacia la da como la propuesta más probable.
+summary: Ciudad del sur de Judá dada a Simeón como enclave, que Jos 19:5 llama Bet-Marcabot. Quizá servía a los carros que
+  iban de Beer-Seba al norte. Se propone Khirbet Tatrit, unos 15 km al noreste de Beer-Seba.
+reason: 'Perspicacia «Madmaná», núm. 2, y «Bet-marcabot»: las listas paralelas indican que es la misma ciudad. Jos 15:31; 19:5;
+  1Cr 4:31. OpenBible: solo el punto.'
+sources:
+- it-madmana
+- openbible-geo
+- josue-15
+- it-bet-marcabot
+- josue-19
+links:
+- title: 'Perspicacia: «Madmaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002824
+  type: perspicacia
+- title: 'Perspicacia: «Bet-marcabot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000697
+  type: perspicacia
+- title: Josué 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/15
+  type: bible
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

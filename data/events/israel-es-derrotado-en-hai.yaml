@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-es-derrotado-en-hai
+title: Israel es derrotado en Hai
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 207002
+places:
+- hai
+- sebarim
+- jerico
+people:
+- josue-hijo-de-nun
+present: []
+passages:
+- Jos 7:2-5
+summary: Josué manda espías desde Jericó a Hai. Por su consejo suben solo unos 3.000 hombres, que huyen ante los de Hai; caen
+  36 y los persiguen hasta Sebarim. El pueblo se desanima.
+reason: Perspicacia «Hai», núm. 1, párr. 3, fecha este ataque en 1473 a.e.c., tras Jericó. Josué no subió, así que no sitúa
+  a nadie. Va en la serie numeros, tras Deuteronomio.
+sources:
+- josue-7
+- it-hai
+- it-acan
+links:
+- title: Josué 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elat
+name: Elat
+names:
+- name: Elat
+- name: Elot
+  note: Forma plural del nombre, según Perspicacia.
+type: port
+lat: 29.530676
+lon: 34.999999
+precision: point
+coord_source: openbible:af0ac29
+coord_url: https://www.openbible.info/geo/ancient/af0ac29/elath
+coord_note: Punto de OpenBible en ʽAqaba, su primera resolución; Perspicacia pone Elat en ʽAqaba o muy cerca.
+summary: Ciudad edomita en la cabecera del golfo de ʽAqaba, junto a Ezión-Guéber. Al bordear Seír, Israel no se acercó a
+  ella (Dt 2:8); siglos después fue puerto de Salomón y cambió de manos entre Judá y Edom.
+reason: 'Perspicacia «Elat», párr. 1 a 5; Dt 2:8. OpenBible: solo el punto.'
+sources:
+- it-elat
+- openbible-geo
+- deuteronomio-2
+links:
+- title: 'Perspicacia: «Elat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001277
+  type: perspicacia
+- title: Deuteronomio 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/2
+  type: bible
+history:
+- date: '2026-09-29'
+  change: La precisión pasa de zona a punto. Perspicacia sitúa Elat en ʽAqaba o a su lado, y el punto es el de ʽAqaba, primera
+    identificación de OpenBible.
+  source: it-elat
+checked_on: '2026-09-29'
+status: verified

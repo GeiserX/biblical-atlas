@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guemali
+name: Guemalí
+names:
+- name: Guemalí
+perspicacia: '1200001644'
+summary: Danita, padre de Amiel, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+reason: Perspicacia «Guemalí»; Nú 13:12.
+sources:
+- it-guemali
+- numeros-13
+links:
+- title: 'Perspicacia: «Guemalí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001644
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

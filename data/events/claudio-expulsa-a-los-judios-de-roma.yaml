@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: claudio-expulsa-a-los-judios-de-roma
+title: Claudio expulsa de Roma a los judíos
+date:
+  from: 49
+  to: 50
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 49 o principios de 50 e.c.
+narrative_order:
+  series: hechos
+  order: 1800
+places:
+- roma
+people:
+- claudio
+- aquila
+- priscila
+passages:
+- Hch 18:2
+summary: Un decreto del emperador Claudio obliga a todos los judíos a salir de Roma. Por eso Áquila y Priscila dejan Italia
+  y se instalan en Corinto, donde poco después los encuentra Pablo.
+reason: 'Estudio 3, párr. 25, y Perspicacia «Claudio», párr. 3: el decreto es del noveno año de Claudio. Lucas lo cuenta de
+  pasada en 18:2; fue antes de que Pablo llegara a Corinto.'
+sources:
+- si-3
+- it-claudio
+- it-aquila
+- hch-18
+links:
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: migdol
+name: Migdol
+names:
+- name: Migdol
+  note: Significa «torre». Perspicacia separa este Migdol del éxodo (núm. 1) del que nombran Jeremías y Ezequiel (núm. 2),
+    aunque podrían ser el mismo.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Alto de Jebel ʽAtaqah, sobre la cabecera del golfo de Suez
+  geometry:
+    type: point
+    lat: 29.996111
+    lon: 32.3075
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-migdol
+  - openbible-geo
+  reason: Perspicacia lo propone como sitio probable de una atalaya fronteriza, aunque reconoce que nada une ese monte con
+    el nombre.
+  coord_source: openbible:a22663b
+  coord_url: https://www.openbible.info/geo/ancient/a22663b/baal-zephon
+  note: Punto de Jebel ʽAtaqah en la ficha «Baal-zephon» de OpenBible.
+summary: Lugar de la frontera de Egipto que sirvió de referencia para el campamento de Pihahirot, entre Migdol y el mar. Quizá
+  era una atalaya; no se sabe dónde estaba.
+reason: Perspicacia «Migdol», núm. 1; Éx 14:2. OpenBible lo pone en Tell el-Heir, que Perspicacia relaciona con el Migdol de
+  Jeremías, y no lo tomamos. El mapa B3 lo marca con duda.
+sources:
+- it-migdol
+- tnm-b3
+- openbible-geo
+- exodo-14
+- numeros-33
+links:
+- title: 'Perspicacia: «Migdol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003045
+  type: perspicacia
+- title: Éxodo 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

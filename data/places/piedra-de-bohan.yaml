@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: piedra-de-bohan
+name: Piedra de Bohán
+names:
+- name: Piedra de Bohán
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca del extremo noroeste del mar Salado
+  geometry:
+    type: zone
+    lat: 31.781226
+    lon: 35.442524
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-bohan
+  - openbible-geo
+  reason: Perspicacia la pone cerca del extremo noroeste del mar Salado, al pie de la llanura baja de Acor; la frontera va
+    de Bet-Arabá a la piedra.
+  coord_source: calculation
+  note: 'Centro: punto medio entre Bet-Arabá (ʽAin el-Gharabah) y el valle de Acor (el-Buqeiʽah) en OpenBible. Radio nuestro.'
+summary: Piedra que servía de mojón entre Judá y Benjamín, cerca del extremo noroeste del mar Salado y quizá al pie de la
+  llanura baja de Acor. Llevaba el nombre de Bohán, descendiente de Rubén.
+reason: 'Perspicacia «Bohán», núm. 1 y 2; Jos 15:6; 18:17. OpenBible no la recoge. Es un mojón: «región» es el tipo más cercano
+  de la lista.'
+sources:
+- it-bohan
+- openbible-geo
+- josue-15
+- josue-18
+links:
+- title: 'Perspicacia: «Bohán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000785
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

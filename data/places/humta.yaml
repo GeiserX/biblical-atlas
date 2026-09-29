@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: humta
+name: Humtá
+names:
+- name: Humtá
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 14 km de Hebrón
+  geometry:
+    type: zone
+    lat: 31.525087
+    lon: 35.10222
+    radius_km: 14
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-humta
+  - openbible-geo
+  reason: El texto la nombra con Hebrón en la montaña de Judá; OpenBible da este radio alrededor de Hebrón.
+  coord_source: openbible:a5a846f
+  coord_url: https://www.openbible.info/geo/ancient/a5a846f/humtah
+summary: Ciudad de la montaña de Judá cuyo nombre significa «lugar de la lagartija». Hoy no se sabe dónde estaba.
+reason: Perspicacia «Humtá»; Jos 15:54. OpenBible solo la pone a menos de 14 km de Hebrón.
+sources:
+- it-humta
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Humtá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002103
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

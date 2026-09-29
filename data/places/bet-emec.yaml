@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-emec
+name: Bet-Émec
+names:
+- name: Bet-Émec
+- name: Bet-émeq
+  note: Grafía de Perspicacia.
+type: city
+lat: 32.965833
+lon: 35.151944
+precision: point
+coord_source: openbible:a587ea0
+coord_url: https://www.openbible.info/geo/ancient/a587ea0/beth-emek
+coord_note: Punto de OpenBible en Tell Mimas (Tel Bet HaʽEmeq).
+summary: Ciudad de Aser que se identifica con Tell Mimas, a 8 km de Akkó hacia el NE. El pueblo cercano de ʽAmqa parece conservar
+  su nombre.
+reason: 'Perspicacia «Bet-émeq»; Jos 19:27. OpenBible: solo el punto.'
+sources:
+- it-bet-emeq
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Bet-émeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000683
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

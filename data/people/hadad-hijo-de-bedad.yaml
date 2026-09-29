@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadad-hijo-de-bedad
+name: Hadad
+names:
+- name: Hadad
+perspicacia: 1200001797#2
+disambiguation: Hadad hijo de Bedad; no Hadad hijo de Ismael, ni el rey Hadar, ni el edomita que se enfrentó a Salomón.
+summary: Rey edomita, hijo de Bedad, que ocupó el trono tras Husam. Gobernó desde Avit y derrotó a los madianitas en tierras
+  de Moab.
+reason: Perspicacia «Hadad», núm. 2; Gé 36:35, 36.
+sources:
+- it-hadad
+- genesis-36
+links:
+- title: 'Perspicacia: «Hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001797
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: bedad
+  word: father
+  inferred: false
+  sources:
+  - it-hadad
+  - genesis-36
+  reason: 'Gé 36:35: Hadad hijo de Bedad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: husam
+  inferred: false
+  sources:
+  - it-hadad
+  - genesis-36
+  reason: 'Gé 36:35: reinó en lugar de Husam.'
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+- type: lived_in
+  place: avit
+  inferred: false
+  sources:
+  - it-avit
+  - genesis-36
+  reason: 'Gé 36:35: su ciudad se llamaba Avit.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: edom
+  office: king
+  inferred: false
+  sources:
+  - genesis-36
+  reason: Reinó en Edom tras Husam (Gé 36:31, 35).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

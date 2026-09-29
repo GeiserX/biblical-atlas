@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hosa
+name: Hosá
+names:
+- name: Hosá
+type: city
+lat: 33.23674
+lon: 35.21519
+precision: uncertain
+coord_source: openbible:a2feddf
+coord_url: https://www.openbible.info/geo/ancient/a2feddf/hosah
+coord_note: Punto de OpenBible en Tell Rachidiyeh. Perspicacia no da sitio.
+summary: Ciudad de la frontera de Aser, al parecer cerca de Tiro. No se sabe más de ella.
+reason: 'Perspicacia «Hosá», núm. 2; Jos 19:29. OpenBible: solo el punto.'
+sources:
+- it-hosa
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Hosá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002085
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

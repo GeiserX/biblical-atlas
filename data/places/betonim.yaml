@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betonim
+name: Betonim
+names:
+- name: Betonim
+type: city
+lat: 32.010571
+lon: 35.710739
+precision: point
+coord_source: openbible:a079478
+coord_url: https://www.openbible.info/geo/ancient/a079478/betonim
+coord_note: Punto de OpenBible en Khirbet Batneh, donde la sitúa Perspicacia.
+summary: Ciudad de Gad al este del Jordán, en el límite de su territorio. Suele situarse en Khirbet Batneh, en los montes,
+  unos 21 km al oeste de Rabá.
+reason: 'Perspicacia «Betonim»; Jos 13:26. OpenBible: solo el punto.'
+sources:
+- it-betonim
+- openbible-geo
+- josue-13
+links:
+- title: 'Perspicacia: «Betonim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000718
+  type: perspicacia
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

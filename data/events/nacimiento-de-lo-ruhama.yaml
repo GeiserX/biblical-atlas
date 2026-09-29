@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-lo-ruhama
+title: Nace Lo-Ruhamá
+date:
+  from: -828
+  to: -739
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '829-740 a.e.c. (tiempo narrativo: después de Jezreel y antes de la caída de Samaria)'
+narrative_order:
+  series: oseas
+  order: 1006
+places: []
+people:
+- lo-ruhama
+- gomer-hija-de-diblaim
+- oseas
+present: []
+passages:
+- Os 1:6, 7
+summary: 'Gómer da a luz una hija. Dios manda llamarla Lo-Ruhamá: ya no se compadecerá de Israel y lo expulsará, pero salvará
+  a Judá sin arco ni espada.'
+reason: Nace después de Jezreel. Su nombre anunciaba el destierro de Israel, que La Atalaya (2005) pone en 740, al caer Samaria;
+  Perspicacia «Oseas, Libro de», párr. 2, termina el libro antes de ese año.
+sources:
+- oseas-1
+- it-lo-ruhama
+- it-oseas-libro
+- w05-profecias-de-oseas
+links:
+- title: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

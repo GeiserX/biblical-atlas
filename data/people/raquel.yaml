@@ -1,0 +1,76 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: raquel
+name: Raquel
+names:
+- name: Raquel
+date:
+  from: -1780
+  to: -1750
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 1781-1751 a.e.c. (de su encuentro con Jacob a su muerte, al nacer Benjamín)
+summary: Hija menor de Labán, prima de Jacob y su esposa preferida. Pasó años sin hijos y luego tuvo a José. Murió al dar
+  a luz a Benjamín, en el camino de Betel a Belén.
+reason: 'Perspicacia «Raquel», párr. 2, 3 y 5; Gé 29:9-30, 30:22-24 y 35:16-20. Años: Jacob llega a Harán y la conoce en
+  1781 a.e.c. y vuelve a Canaán en 1761 (estudio 3).'
+sources:
+- si-3
+- it-raquel
+- genesis-29
+- genesis-35
+- genesis-30
+- genesis-31
+- genesis-32
+- genesis-33
+- genesis-46
+- genesis-48
+links:
+- title: 'Perspicacia: «Raquel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003621
+  type: perspicacia
+- title: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  type: bible
+not_claimed:
+- 'Dónde está exactamente su sepulcro: Perspicacia dice que hoy no se puede precisar.'
+relations:
+- type: kin
+  person: lea
+  word: sister
+  inferred: false
+  sources:
+  - it-raquel
+  - genesis-29
+  reason: 'Perspicacia «Raquel», párr. 2: hermana menor de Lea (Gé 29:16).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: laban
+  word: father
+  inferred: false
+  sources:
+  - genesis-29
+  - it-raquel
+  - genesis-46
+  reason: 'Gé 29:6, 10, 16: Raquel es la hija menor de Labán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: canaan
+  inferred: false
+  sources:
+  - genesis-48
+  - it-raquel
+  reason: 'Gé 48:7: murió junto a Jacob en la tierra de Canaán, camino de Efrat, cuando volvían de Padán.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003621'
+history:
+- date: '2026-09-29'
+  change: 'La fecha acababa en la vuelta a Canaán (1761), pero Raquel vive aún en Gé 33 y 35. Ahora llega a su muerte, antes
+    de 1751: Benjamín tenía de 40 a 50 años en 1711 (Perspicacia «Benjamín»).'
+  source: genesis-35
+checked_on: '2026-09-29'
+status: verified

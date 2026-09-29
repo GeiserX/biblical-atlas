@@ -1,0 +1,86 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sostenes-companero-de-pablo
+name: Sóstenes
+names:
+- name: Sóstenes
+perspicacia: null
+disambiguation: El hermano Sóstenes que envía 1 Corintios con Pablo desde Éfeso (1Co 1:1). Perspicacia no le da artículo propio
+  y solo ve posible que sea el jefe de la sinagoga de Corinto golpeado ante Galión.
+distinct_from:
+- sostenes
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+summary: Cristiano al que Pablo llama «nuestro hermano» y que saluda con él a la congregación de Corinto desde Éfeso. Quizá
+  fue quien puso por escrito la carta que Pablo dictaba.
+reason: '1Co 1:1 y su nota de estudio; Perspicacia «Corintios, Cartas a los» lo llama compañero de Pablo y ve verosímil que
+  escribiera al dictado (1Co 16:21). Fecha: la de 1 Corintios, c. 55 (Tabla).'
+sources:
+- 1-corintios-1
+- 1-corintios-16
+- it-corintios
+- it-sostenes
+- tnm-tabla
+links:
+- title: 1 Corintios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/1
+  type: bible
+- title: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: accompanies
+  person: pablo
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  inferred: false
+  sources:
+  - 1-corintios-1
+  - it-corintios
+  - tnm-tabla
+  reason: '1Co 1:1: saluda a los corintios junto con Pablo, y Perspicacia «Corintios, Cartas a los» lo llama compañero del
+    apóstol. La Tabla de los libros fecha la carta hacia 55.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  inferred: true
+  sources:
+  - 1-corintios-1
+  - 1-corintios-16
+  - it-corintios
+  reason: Está con Pablo cuando escribe la carta, y Pablo la escribe en Éfeso, donde piensa quedarse hasta Pentecostés (1Co
+    16:8; nota de estudio de 1Co 1:1).
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: sostenes
+  inferred: true
+  sources:
+  - it-sostenes
+  - 1-corintios-1
+  reason: Perspicacia «Sóstenes» y la nota de 1Co 1:1 solo ven posible que el jefe de sinagoga golpeado en Corinto se hiciera
+    cristiano y sea este hermano, porque el nombre era poco común.
+  checked_on: '2026-09-29'
+  status: pending

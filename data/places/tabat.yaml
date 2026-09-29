@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tabat
+name: Tabat
+names:
+- name: Tabat
+type: city
+lat: 32.286841
+lon: 35.618929
+precision: point
+coord_source: openbible:ab5c435
+coord_url: https://www.openbible.info/geo/ancient/ab5c435/tabbath
+coord_note: Punto de Ras Abu Tabat en OpenBible, donde suele situarla Perspicacia.
+summary: Lugar al este del Jordán junto al que estaba Abel-Meholá, en la ruta de la huida de los madianitas vencidos por Gedeón.
+reason: 'Perspicacia «Tabat»; Jue 7:22. Se suele poner en Ras Abu Tabat, unos 5 km al este del Jordán y 10 km al norte de Sucot.
+  OpenBible: solo el punto.'
+sources:
+- it-tabat
+- openbible-geo
+- jueces-7
+links:
+- title: 'Perspicacia: «Tabat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004292
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

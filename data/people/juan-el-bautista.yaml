@@ -1,0 +1,102 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: juan-el-bautista
+name: Juan el Bautista
+names:
+- name: Juan el Bautista
+- name: Juan
+disambiguation: Hijo del sacerdote Zacarías y precursor de Jesús; no es el apóstol Juan, hijo de Zebedeo.
+distinct_from:
+- juan-apostol
+- juan-marcos
+- juan-gobernante-judio
+date:
+  from: 29
+  to: 32
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 29-32 e.c.
+summary: Hijo del sacerdote Zacarías y de Elisabet, unos seis meses mayor que Jesús. Empezó a predicar hacia abril de 29,
+  bautizó a Jesús y lo presentó como el Cordero de Dios. Herodes Antipas lo encarceló y lo mandó decapitar.
+reason: Perspicacia «Juan» (núm. 1) da la familia, el ministerio, la cárcel y la muerte; la nota de Lu 3:1 fecha el comienzo.
+  La fecha de la ficha va de ese comienzo a su muerte.
+sources:
+- it-juan
+- lucas-3
+- it-herodias
+- mateo-3
+- mateo-4
+- mateo-11
+- mateo-14
+- mateo-17
+- mateo-21
+- marcos-1
+- marcos-6
+- marcos-11
+- lucas-1
+- lucas-7
+- lucas-9
+- lucas-11
+- lucas-20
+- juan-1
+- juan-3
+- juan-10
+relations:
+- type: kin
+  person: zacarias-padre-de-juan
+  word: father
+  inferred: false
+  sources:
+  - lucas-1
+  - lucas-3
+  reason: Lu 1:13, 57-63.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: elisabet
+  word: mother
+  inferred: false
+  sources:
+  - lucas-1
+  reason: 'Lu 1:13, 57-60: Elisabet da a luz al hijo anunciado y le ponen por nombre Juan.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: judea
+  inferred: false
+  sources:
+  - lucas-1
+  - it-juan
+  reason: 'Lu 1:39, 65: sus padres vivían en la región montañosa de Judea; Perspicacia (núm. 1) dice que allí pasó sus primeros
+    años.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: tiberiades
+  inferred: true
+  sources:
+  - mateo-14
+  - tnm-a7-d
+  - marcos-6
+  reason: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: desierto-de-juda
+  inferred: true
+  sources:
+  - lucas-3
+  reason: Lu 3:2 dice que estaba en el desierto cuando recibió el mensaje; la nota de estudio lo identifica con el de Judea.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Juan»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489
+  type: perspicacia
+- title: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  type: bible
+perspicacia: 1200002489#1
+checked_on: '2026-09-29'
+status: verified

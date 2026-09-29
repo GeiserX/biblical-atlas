@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mateo
+name: Mateo
+names:
+- name: Mateo
+- name: Leví
+  note: Otro nombre suyo en Mr 2:14 y Lu 5:27.
+summary: Judío, hijo de Alfeo, que cobraba impuestos cuando Jesús lo llamó en Capernaúm o cerca, en 30 o principios de 31.
+  Después fue elegido apóstol y escribió el Evangelio que lleva su nombre.
+reason: Perspicacia «Mateo» (párr. 2-4) da el otro nombre, la llamada, la fecha y el nombramiento como apóstol.
+sources:
+- it-mateo
+- mateo-9
+- marcos-2
+- mateo-10
+- marcos-3
+- lucas-5
+- lucas-6
+- hechos-1
+relations:
+- type: lived_in
+  place: capernaum
+  inferred: true
+  sources:
+  - marcos-2
+  - it-capernaum
+  - mateo-9
+  - lucas-5
+  reason: Perspicacia «Capernaum» (párr. 7) sitúa en Capernaúm su casa y el banquete (Mr 2:15).
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-10
+  - marcos-2
+  - marcos-3
+  - lucas-5
+  - lucas-6
+  reason: Mt 10:3.
+  checked_on: '2026-09-29'
+  status: verified
+- inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+  type: kin
+  person: alfeo-padre-de-mateo
+  word: father
+  sources:
+  - marcos-2
+  - it-alfeo
+  reason: Mr 2:14 lo llama Leví hijo de Alfeo; Perspicacia «Alfeo», núm. 1.
+links:
+- title: 'Perspicacia: «Mateo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002938
+  type: perspicacia
+- title: Mateo 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/9
+  type: bible
+perspicacia: '1200002938'
+history:
+- date: '2026-09-29'
+  change: La relación con Jesús decía «apóstol de», que con la regla «Y es el R de X» se lee al revés; pasa a «maestro», como
+    pide la tabla de relaciones (Mt 10:2-4).
+  source: mateo-10
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- levi-hijo-de-melqui
+- levi-hijo-de-simeon

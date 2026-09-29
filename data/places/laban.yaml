@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: laban
+name: Labán
+names:
+- name: Labán
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Uadi el-Beidha, en el Sinaí
+  geometry:
+    type: point
+    lat: 29.99321
+    lon: 34.704
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-laban
+  - it-libna
+  reason: OpenBible lo da como otro nombre del campamento de Libná; Perspicacia no lo dice, y deja Labán y Libná sin sitio.
+  coord_source: openbible:ad763b1
+  coord_url: https://www.openbible.info/geo/ancient/ad763b1/laban
+  note: Primera resolución de la ficha «Laban» de OpenBible, lejos de las llanuras de Moab donde habló Moisés.
+summary: Lugar que Dt 1:1 nombra junto a las llanuras desérticas frente a Suf, para situar el discurso de Moisés. Hoy no se
+  sabe dónde estaba.
+reason: 'Perspicacia «Labán», núm. 2; Dt 1:1. La entrada núm. 1 es el suegro de Jacob. Perspicacia no lo sitúa: el punto
+  de OpenBible va solo como candidato.'
+sources:
+- it-laban
+- openbible-geo
+- deuteronomio-1
+links:
+- title: 'Perspicacia: «Labán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002655
+  type: perspicacia
+- title: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

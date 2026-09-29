@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atenas
+name: Atenas
+names:
+- name: Atenas
+type: city
+lat: 37.97185
+lon: 23.72674
+precision: point
+coord_source: openbible:a1fe6e7
+coord_url: https://www.openbible.info/geo/ancient/a1fe6e7/athens
+summary: Ciudad más importante de la antigua Grecia; Pablo habló en el Areópago.
+reason: 'Perspicacia («Atenas») describe el lugar; aparece en Hch 17:15-34. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-atenas
+- hch-17
+- openbible-geo
+links:
+- title: 'Perspicacia: «Atenas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000459
+  type: perspicacia
+- title: Hechos 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/17
+  type: bible
+checked_on: '2026-09-27'
+status: verified

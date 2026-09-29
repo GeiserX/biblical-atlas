@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-rey-en-hebron
+title: David, rey de Judá en Hebrón
+date:
+  from: -1076
+  to: -1076
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1077 a.e.c.
+places:
+- hebron
+people:
+- david
+passages:
+- 2Sa 2:1-4
+- 2Sa 5:5
+summary: Muerto Saúl, los hombres de Judá ungen a David en Hebrón. Tiene treinta años y reina allí siete años y medio mientras
+  Is-bóset gobierna a las demás tribus.
+reason: El estudio 3 fecha la unción en 1077; Perspicacia «David», párr. 20, y «Hebrón», párr. 7.
+sources:
+- si-3
+- it-david
+- it-hebron
+- 2-samuel-2
+links:
+- title: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  type: perspicacia
+- title: 'Perspicacia: «Hebrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001956
+  type: perspicacia
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+search: David rey en Hebrón
+checked_on: '2026-09-28'
+status: verified

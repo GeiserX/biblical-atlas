@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ocran
+name: Ocrán
+names:
+- name: Ocrán
+perspicacia: '1200003296'
+summary: Aserita, padre de Paguiel, nombrado jefe de Aser tras la salida de Egipto.
+reason: Perspicacia «Ocrán»; Nú 1:13; 2:27.
+sources:
+- it-ocran
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+links:
+- title: 'Perspicacia: «Ocrán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003296
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

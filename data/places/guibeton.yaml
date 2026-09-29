@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guibeton
+name: Guibetón
+names:
+- name: Guibetón
+type: city
+lat: 31.856389
+lon: 34.865556
+precision: point
+coord_source: openbible:a6f048c
+coord_url: https://www.openbible.info/geo/ancient/a6f048c/gibbethon
+coord_note: Punto de OpenBible en Tell el-Melat (Tel Malot).
+summary: Ciudad de Dan dada a los levitas qohatitas y más tarde filistea. Allí Baasá mató al rey Nadab, y allí aclamaron rey
+  a Omrí. Estaba unos 9 km al norte de Ecrón.
+reason: 'Perspicacia «Guibetón»; Jos 19:44; 1Re 15:27; 16:15-17. OpenBible: solo el punto.'
+sources:
+- it-guibeton
+- openbible-geo
+- josue-19
+- josue-21
+links:
+- title: 'Perspicacia: «Guibetón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001677
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

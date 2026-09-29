@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ofra-de-gedeon
+name: Ofrá
+names:
+- name: Ofrá
+  note: Ofrá de Gedeón, en Manasés; no es la Ofrá de Benjamín (Perspicacia «Ofrá», núm. 2 y 3).
+- name: Ofrá de los abí-ezritas
+  note: Así la llaman Jue 6:24 y 8:32.
+- name: Jehová-Salom
+  note: Altar que Gedeón levantó en Ofrá tras ver al ángel; significa «Jehová es paz» (Jue 6:24). Perspicacia cree que fue
+    un recuerdo, no un altar para sacrificios.
+type: city
+lat: 32.6057
+lon: 35.29
+precision: uncertain
+coord_source: openbible:abd637f
+coord_url: https://www.openbible.info/geo/ancient/abd637f/ophrah-2
+coord_note: Punto de OpenBible en Afula (el-ʽAffuleh), su primera identificación; Perspicacia solo la propone de forma tentativa.
+summary: Ciudad de los abí-ezritas, al oeste del Jordán, donde vivía Gedeón. Allí lo comisionó el ángel, derribó el altar
+  de Baal y levantó Jehová-Salom; después expuso su efod y lo enterraron allí. Abimélec mató allí a sus hermanos.
+reason: 'Perspicacia «Ofrá», núm. 3, y «Jehová-salom»; Jue 6:11-32; 8:27, 32; 9:5. Se la iguala tentativamente con el-ʽAffuleh,
+  unos 45 km al norte de Siquem. OpenBible: solo el punto.'
+sources:
+- it-ofra
+- it-jehova-salom
+- openbible-geo
+- jueces-6
+- jueces-8
+- jueces-9
+links:
+- title: 'Perspicacia: «Ofrá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003338
+  type: perspicacia
+- title: 'Perspicacia: «Jehová-salom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002398
+  type: perspicacia
+- title: Jueces 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  type: bible
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

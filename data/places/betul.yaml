@@ -1,0 +1,68 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betul
+name: Betul
+names:
+- name: Betul
+- name: Kesil
+  note: Así la llama Jos 15:30, según Perspicacia «Betuel», núm. 2.
+- name: Betuel
+  note: Así la llama 1Cr 4:30.
+- name: Betel
+  note: Parece ser la Betel de 1Sa 30:27, según Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Khirbet el-Qaryatein (Tel Qeriyyot)
+  geometry:
+    type: point
+    lat: 31.344952
+    lon: 35.124376
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-betuel
+  - openbible-geo
+  reason: Perspicacia la identifica, con reservas, con este lugar unos 19 km al sur de Hebrón.
+  coord_source: openbible:a92de65
+  coord_url: https://www.openbible.info/geo/ancient/a92de65/bethul
+  note: Segundo punto de la primera identificación de la ficha «Bethul» de OpenBible.
+- name: Khirbet er-Ras (Horvat Rosh)
+  geometry:
+    type: point
+    lat: 31.327312
+    lon: 34.87847
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-betuel
+  - openbible-geo
+  reason: Algunos prefieren este lugar, unos 24 km más al oeste.
+  coord_source: openbible:a92de65
+  coord_url: https://www.openbible.info/geo/ancient/a92de65/bethul
+  note: Primer punto de la primera identificación de la ficha «Bethul» de OpenBible.
+summary: Ciudad del sur de Judá dada a Simeón como enclave. Al comparar las listas, se ve que también se llamó Kesil y Betuel,
+  y parece ser la Betel adonde David mandó despojo.
+reason: Perspicacia «Betul» y «Betuel», núm. 2; Jos 15:30; 19:4; 1Cr 4:30; 1Sa 30:27.
+sources:
+- it-betul
+- it-betuel
+- openbible-geo
+- josue-19
+- it-kesil
+- josue-15
+links:
+- title: 'Perspicacia: «Betul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000715
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 'Perspicacia: «Kesil»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000948
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

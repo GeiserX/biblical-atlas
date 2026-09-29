@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: augusto
+name: César Augusto
+names:
+- name: César Augusto
+- name: Octavio
+  note: Nombre propio antes de recibir el título de Augusto.
+date:
+  from: -30
+  to: 14
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 a.e.c.-14 e.c.
+disambiguation: Primer emperador de Roma. Otros emperadores llevaron después el título de Augusto, como Nerón; esta ficha
+  es solo Octavio.
+summary: Octavio, primer emperador romano. En 27 a.e.c. el Senado le dio el título de Augusto. Su decreto de inscripción
+  hizo que Jesús naciera en Belén, como había predicho Miqueas.
+reason: 'Perspicacia «Augusto»: gobernante único desde septiembre de 31 a.e.c., título del 16 de enero de 27 a.e.c., decreto
+  de Lucas 2:1 en 2 a.e.c. y muerte en agosto de 14.'
+sources:
+- it-augusto
+- it-cesar
+- lucas-2
+links:
+- title: 'Perspicacia: «Augusto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000468
+  type: perspicacia
+- title: Lucas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
+  type: bible
+relations: []
+search: César Augusto
+perspicacia: '1200000468'
+history:
+- date: '2026-09-29'
+  change: La desambiguación deja de citar Hch 25:21, donde Augusto es Nerón y no Octavio; no_confundir_con ya enlaza a Nerón.
+  source: hch-25
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- neron

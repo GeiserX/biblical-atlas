@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zeret-sahar
+name: Zéret-Sáhar
+names:
+- name: Zéret-Sáhar
+type: city
+lat: 31.608841
+lon: 35.565262
+precision: uncertain
+coord_source: openbible:a31a510
+coord_url: https://www.openbible.info/geo/ancient/a31a510/zereth-shahar
+coord_note: OpenBible pone primero Calirroe; tomamos ez-Zarat, junto a esas fuentes, que es lo que Perspicacia propone con
+  reservas.
+summary: Lugar de Rubén «en la montaña del valle», quizá junto a las fuentes termales de la orilla este del mar Muerto.
+reason: 'Perspicacia «Zéret-sáhar»; Jos 13:19 y su nota. OpenBible: solo el punto.'
+sources:
+- it-zeret-sahar
+- openbible-geo
+- josue-13
+links:
+- title: 'Perspicacia: «Zéret-sáhar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004712
+  type: perspicacia
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

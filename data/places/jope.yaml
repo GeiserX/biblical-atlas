@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jope
+name: Jope
+names:
+- name: Jope
+- name: Yafo (Jaffa)
+  note: Ciudad actual, unida a Tel Aviv, que ocupa el sitio antiguo.
+type: port
+lat: 32.054481
+lon: 34.753039
+precision: point
+coord_source: openbible:ae023a9
+coord_url: https://www.openbible.info/geo/ancient/ae023a9/joppa
+summary: Puerto antiguo a unos 55 km de Jerusalén, el único natural entre el Carmelo y Egipto. Allí Pedro resucitó
+  a Dorcas y, en casa de Simón el curtidor, tuvo la visión antes de ir a Cesarea en 36.
+reason: 'Perspicacia «Jope» (párr. 2 y 6) describe el puerto y los sucesos de Hch 9:36–10:23. La coordenada es de
+  OpenBible: solo tomamos el punto.'
+sources:
+- it-jope
+- hch-9
+- hechos-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Jope»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002507
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+checked_on: '2026-09-28'
+status: verified

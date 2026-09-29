@@ -1,0 +1,75 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guersom-hijo-de-moises
+name: Guersom
+names:
+- name: Guersom
+perspicacia: 1200001662#2
+disambiguation: Guersom, primogénito de Moisés; no Guersón, hijo de Leví, llamado también Guersom, ni el Guersom que volvió
+  de Babilonia con Esdras.
+distinct_from:
+- guerson
+summary: Hijo mayor de Moisés, que Ziporá dio a luz mientras su padre vivía en Madián. Su nombre recuerda que Moisés era
+  allí extranjero. Tras el éxodo, Jetró lo llevó con su madre y su hermano al campamento.
+reason: Perspicacia «Guersom», núm. 2; Éx 2:21, 22 y su nota; Éx 18:2-6.
+sources:
+- it-guersom
+- exodo-2
+- exodo-4
+- exodo-18
+- jueces-18
+links:
+- title: 'Perspicacia: «Guersom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001662
+  type: perspicacia
+- title: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  type: bible
+- title: Éxodo 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/18
+  type: bible
+relations:
+- type: kin
+  person: moises
+  word: father
+  inferred: false
+  sources:
+  - exodo-2
+  - it-guersom
+  - exodo-18
+  reason: 'Éx 2:22: Moisés le puso el nombre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zipora
+  word: mother
+  inferred: false
+  sources:
+  - exodo-2
+  - it-guersom
+  - exodo-18
+  reason: 'Éx 2:21, 22: lo dio a luz Ziporá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: madian
+  inferred: false
+  sources:
+  - exodo-2
+  - it-guersom
+  - exodo-18
+  reason: 'Perspicacia «Guersom», núm. 2: nació en Madián (Éx 2:22).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eliezer-hijo-de-moises
+  word: brother
+  inferred: false
+  sources:
+  - exodo-4
+  - it-zipora
+  - exodo-18
+  reason: 'Perspicacia «Ziporá»: los dos hijos de Moisés eran Guersom y Eliezer; Éx 4:20 los lleva a Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

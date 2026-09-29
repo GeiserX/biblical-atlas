@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: basemat-hija-de-ismael
+name: Basemat
+names:
+- name: Basemat
+perspicacia: 1200000573#2
+disambiguation: Basemat hija de Ismael; no Basemat hija de Elón el hitita ni Basemat hija de Salomón.
+summary: Hija de Ismael y hermana de Nebayot, prima hermana de Esaú y esposa suya. Fue madre de Reuel. Perspicacia la cree
+  posiblemente la misma que Mahalat.
+reason: Perspicacia «Basemat», núm. 2; Gé 36:3, 4, 10, 13, 17.
+sources:
+- it-basemat
+- genesis-36
+links:
+- title: 'Perspicacia: «Basemat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000573
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: ismael-hijo-de-abrahan
+  word: father
+  inferred: false
+  sources:
+  - it-basemat
+  - genesis-36
+  reason: 'Gé 36:3: hija de Ismael.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: nebayot
+  word: brother
+  inferred: false
+  sources:
+  - it-basemat
+  - genesis-36
+  reason: 'Gé 36:3: hermana de Nebayot.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: mahalat-hija-de-ismael
+  inferred: true
+  sources:
+  - it-basemat
+  - genesis-36
+  - it-esau
+  reason: 'Perspicacia «Basemat», núm. 2: posiblemente la misma que Mahalat, también hija de Ismael y hermana de Nebayot (Gé
+    36:3).'
+  checked_on: '2026-09-29'
+  certainty: possible
+  status: verified
+checked_on: '2026-09-29'
+status: verified

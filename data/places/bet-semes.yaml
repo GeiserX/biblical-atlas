@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-semes
+name: Bet-Semes
+names:
+- name: Bet-Semes
+- name: Ir-Semes
+  note: Así la llama Jos 19:41 en la frontera de Dan; significa «ciudad del sol». Perspicacia «Bet-semes», núm. 1, la da por
+    la misma ciudad.
+type: city
+lat: 31.750621
+lon: 34.974744
+precision: point
+coord_source: openbible:a3b5b53
+coord_url: https://www.openbible.info/geo/ancient/a3b5b53/beth-shemesh-1
+coord_note: Tell er-Rumeileh (Tel Bet Shemesh), junto a la actual ʽAin Shems.
+summary: Ciudad de la frontera norte de Judá, unos 26 km al oeste de Jerusalén, que Jos 19:41 cuenta en la frontera de Dan
+  como Ir-Semes. Fue ciudad de sacerdotes, y allí llegó el arca devuelta por los filisteos.
+reason: 'Perspicacia «Bet-semes», núm. 1, e «Ir-semes»; Jos 15:10; 19:41; 21:16; 1Sa 6:9-20. OpenBible: solo el punto.'
+sources:
+- it-bet-semes
+- openbible-geo
+- josue-15
+- josue-21
+- it-ir-semes
+- josue-19
+links:
+- title: 'Perspicacia: «Bet-semes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000710
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+- title: 'Perspicacia: «Ir-semes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002201
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

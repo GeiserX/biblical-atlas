@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-ungido-rey
+title: Samuel unge a Saúl como rey
+date:
+  from: -1116
+  to: -1116
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1117 a.e.c.
+places:
+- mizpa-de-benjamin
+people:
+- saul
+- samuel
+passages:
+- 1Sa 10:1
+- 1Sa 10:17-24
+- Hch 13:21
+summary: Samuel unge en privado a Saúl, que buscaba las asnas de su padre. Luego, en Mizpá, la suerte lo señala ante el pueblo,
+  que lo aclama como primer rey.
+reason: El estudio 3 fecha la unción en 1117; Perspicacia «Saúl», párr. 3-4, narra la unción y la elección en Mizpá.
+sources:
+- si-3
+- it-saul
+- 1-samuel-10
+links:
+- title: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  type: perspicacia
+- title: 1 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10
+  type: bible
+search: Saúl ungido rey
+checked_on: '2026-09-29'
+status: verified

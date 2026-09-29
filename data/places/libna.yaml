@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: libna
+name: Libná
+names:
+- name: Libná
+  note: No es la Libná del desierto (Nú 33:20), el núm. 1 de Perspicacia.
+type: city
+lat: 31.629897
+lon: 34.873472
+precision: point
+coord_source: openbible:a97b595
+coord_url: https://www.openbible.info/geo/ancient/a97b595/libnah-1
+coord_note: Tell Bornat (Tel Burena), el sitio que Perspicacia dice que se prefiere hoy; antes se proponía Tell es-Safi, que
+  parece ser Gat.
+summary: Ciudad real cananea que Josué tomó antes que Lakís. Fue de Judá y ciudad de los sacerdotes; se rebeló contra el rey
+  Jehoram y Senaquerib acampó allí en 732 a.e.c.
+reason: 'Perspicacia «Libná», núm. 2; Jos 10:29, 30; 15:42; 21:13. Tell Bornat está unos 8 km al NNE de Lakís. OpenBible: solo
+  el punto.'
+sources:
+- it-libna
+- openbible-geo
+- josue-10
+- josue-12
+- josue-15
+- josue-21
+links:
+- title: 'Perspicacia: «Libná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002734
+  type: perspicacia
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+- title: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  type: bible
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

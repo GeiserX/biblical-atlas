@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lasa
+name: Lasa
+names:
+- name: Lasa
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Calirroe, en la orilla este del mar Muerto
+  geometry:
+    type: point
+    lat: 31.597
+    lon: 35.559306
+  checked_on: '2026-09-29'
+  status: tradition
+  sources:
+  - it-lasa
+  - openbible-geo
+  reason: 'Perspicacia: por Jerónimo y la tradición judía muchos la ponen en Calirroe, bajo el uadi Zarqa Maín.'
+  coord_source: openbible:adaef13
+  coord_url: https://www.openbible.info/geo/ancient/adaef13/lasha
+- name: Lais (Dan)
+  geometry:
+    type: point
+    lat: 33.249
+    lon: 35.652
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-lasa
+  - openbible-geo
+  reason: Perspicacia dice que otros la identifican con Lais, la ciudad que luego se llamó Dan.
+  coord_source: openbible:adaef13
+  coord_url: https://www.openbible.info/geo/ancient/adaef13/lasha
+summary: Lugar que marca el primer límite del territorio cananeo, cerca de Zeboyim o como punto final de esa frontera. No
+  se conoce su ubicación exacta.
+reason: Perspicacia «Lasa»; Gé 10:19.
+sources:
+- it-lasa
+- genesis-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Lasa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002684
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: apolos-en-efeso
+title: Áquila y Priscila instruyen a Apolos en Éfeso
+date:
+  from: 52
+  to: 52
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 52 e.c.
+narrative_order:
+  series: hechos
+  order: 1824
+places:
+- efeso
+people:
+- apolos
+- aquila
+- priscila
+passages:
+- Hch 18:24-27
+summary: Apolos, que solo conocía el bautismo de Juan, habla con valor en la sinagoga. Áquila y Priscila le explican
+  con más exactitud el camino de Dios y él pasa a Acaya con una carta de recomendación.
+reason: Perspicacia «Apolos» (párr. 1) fecha su llegada a Éfeso hacia 52.
+sources:
+- it-apolos
+- nota-hechos-18
+- hch-18
+search: Apolos Éfeso
+history:
+- date: '2026-09-29'
+  change: Lo que Apolos hace en Acaya (18:27, 28) pasa en otro lugar y va en su propio suceso, apolos-en-acaya.
+  source: hch-18
+checked_on: '2026-09-29'
+status: verified

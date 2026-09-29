@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: akkad
+name: Akkad
+names:
+- name: Akkad
+- name: Agadé
+  note: Ciudad antigua con la que se la ha identificado.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Norte de Babilonia (región de Akkad)
+  geometry:
+    type: zone
+    lat: 33.025556
+    lon: 44.391944
+    radius_km: 60
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-akkad
+  - openbible-geo
+  reason: Perspicacia dice que su sitio exacto se desconoce y que el nombre cubría también el norte de lo que luego fue Babilonia.
+  note: 'Centro: punto de OpenBible (Tell Sheshubar); Perspicacia no nombra ese sitio. Radio nuestro.'
+  coord_source: openbible:a8b7a6b
+  coord_url: https://www.openbible.info/geo/ancient/a8b7a6b/accad
+summary: Una de las cuatro primeras ciudades de Nemrod en Sinar, identificada con la antigua Agadé. Su nombre pasó al norte
+  de Babilonia, y los reyes babilonios se llamaron reyes de Akkad hasta 539 a.e.c.
+reason: Perspicacia «Akkad», párr. 1 y 2; Gé 10:10. No se sabe dónde estaba exactamente; va una zona.
+sources:
+- it-akkad
+- genesis-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Akkad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000067
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

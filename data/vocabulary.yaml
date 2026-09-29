@@ -1,0 +1,605 @@
+# biblical-earth: vocabulario cerrado de las relaciones, los cargos, la certeza y los papeles de un suceso.
+# La especificación está en docs/investigacion/modelo.md. Los identificadores van en inglés; lo que lee quien usa
+# el sitio (es, verb, inverse_verb, caption) va en español.
+#
+# Una sola dirección para todos los tipos: una relación escrita en la ficha X con destino Y y palabra W dice
+# «Y es el W de X». `verb` es lo que se lee en la ficha de X junto a Y; `inverse_verb`, lo que se lee en la ficha
+# de Y junto a X. En los dos textos, {owner} es el nombre de X, {target} el de Y y {office} el cargo en español.
+# El texto inverso nunca dice el sexo de X si el dato no lo da: por eso dice «{target} es su padre» y no «su hijo».
+# Una palabra sí dice el sexo del destino, como en español: por eso hay brother y sister, king y queen.
+# Con `inverse_es`, la palabra dice además qué es X para Y, porque su regla de ficha lo hace seguro (el esposo).
+#
+# Tiempo de los textos: los que llevan verbo van en pasado («vivió aquí», «fue rey», «le sucedió como profeta»).
+# Los que son un nombre («su padre», «su amigo») no llevan verbo. Un `caption` es contenido de una ficha y no sigue
+# esta regla hasta que alguien lo reescribe.
+#
+# `key_field` dice qué campo entra en la clave de la relación además del tipo, el destino y `date.from`: la palabra
+# o el cargo. `family` dice en qué grupo de la tarjeta de familia sale el destino: parents, spouses, children o
+# siblings.
+#
+# owns dice en qué ficha va el par:
+#   self         en la ficha de quien la escribe con esta palabra (rule dice quién es)
+#   target       en la ficha del destino, con la palabra inversa: escrita aquí está en la ficha que no manda
+#   first_named  en la ficha del primero que nombra el texto, o de quien el texto lo dice
+#   first_id     en la ficha cuyo id va primero por orden alfabético
+format: biblical-earth/vocabulary/1
+
+types:
+  kin:
+    legacy: pariente
+    target: person
+    word: optional          # sin palabra dice «pariente» sin grado y avisa (kin_without_word)
+    key_field: word
+    owns: by_word
+    owns_without_word: first_named
+    verb: su pariente
+    inverse_verb: su pariente
+  disciple_of:
+    legacy: acompana
+    target: person
+    word: none
+    key_field: word
+    owns: self
+    rule: la ficha del discípulo
+    verb: su maestro
+    inverse_verb: '{target} es su maestro'
+  accompanies:
+    legacy: acompana
+    target: person
+    word: optional          # sin palabra y sin fecha avisa (bare_company)
+    key_field: word
+    owns: self
+    rule: la ficha de quien acompaña
+    verb: 'estuvo con {target}'
+    inverse_verb: '{owner} estuvo con {target}'
+  tie:
+    legacy: acompana
+    target: person
+    word: required
+    key_field: word
+    owns: by_word
+    verb: se trataron
+    inverse_verb: se trataron
+  succeeds:
+    legacy: sucede_a
+    target: person
+    word: none
+    key_field: office
+    owns: self
+    rule: la ficha de quien sucede
+    requires: [office]
+    verb: '{owner} le sucedió como {office}'
+    inverse_verb: 'sucedió a {target} como {office}'
+    verb_without_office: '{owner} le sucedió'
+    inverse_verb_without_office: 'sucedió a {target}'
+  same_as:
+    legacy: mismo_que
+    target: person
+    word: none
+    key_field: word
+    owns: first_id
+    requires: [certainty]
+    verb: '¿la misma persona?'
+    inverse_verb: '¿la misma persona?'
+  appears_to:
+    legacy: se_aparece_a
+    target: person
+    word: none
+    key_field: word
+    owns: self
+    rule: la ficha de quien se aparece
+    verb: se le apareció
+    inverse_verb: 'vio a {owner}'
+  lived_in:
+    legacy: vivio_en
+    target: place
+    word: none
+    key_field: word
+    owns: self
+    verb: vivió aquí
+    inverse_verb: vivió aquí
+  born_in:
+    legacy: nacio_en
+    target: place
+    word: none
+    key_field: word
+    owns: self
+    verb: nació aquí
+    inverse_verb: nació aquí
+  died_in:
+    legacy: murio_en
+    target: place
+    word: none
+    key_field: word
+    owns: self
+    verb: murió aquí
+    inverse_verb: murió aquí
+  holds_office:
+    legacy: null
+    target: place
+    target_optional: true
+    word: none
+    key_field: office
+    owns: self
+    requires: [office]
+    verb: 'fue {office}'
+    inverse_verb: '{owner} fue {office} aquí'
+
+words:
+  # --- kin, generaciones distintas: la ficha de la persona más joven
+  father:
+    type: kin
+    family: parents
+    es: padre
+    inverse: [son, daughter]
+    verb: su padre
+    inverse_verb: '{target} es su padre'
+    owns: self
+    rule: la ficha de la persona más joven
+  mother:
+    type: kin
+    family: parents
+    es: madre
+    inverse: [son, daughter]
+    verb: su madre
+    inverse_verb: '{target} es su madre'
+    owns: self
+    rule: la ficha de la persona más joven
+  adoptive_father:
+    type: kin
+    family: parents
+    es: padre adoptivo
+    inverse: [adopted_son]
+    verb: su padre adoptivo
+    inverse_verb: '{target} es su padre adoptivo'
+    owns: self
+    rule: la ficha de la persona más joven
+  stepfather:
+    type: kin
+    es: padrastro
+    inverse: []
+    verb: su padrastro
+    inverse_verb: '{target} es su padrastro'
+    owns: self
+    rule: la ficha de la persona más joven
+  grandfather:
+    type: kin
+    es: abuelo
+    inverse: [grandson]
+    verb: su abuelo
+    inverse_verb: '{target} es su abuelo'
+    owns: self
+    rule: la ficha de la persona más joven
+  grandmother:
+    type: kin
+    es: abuela
+    inverse: [grandson]
+    verb: su abuela
+    inverse_verb: '{target} es su abuela'
+    owns: self
+    rule: la ficha de la persona más joven
+  great_grandfather:
+    type: kin
+    es: bisabuelo
+    inverse: []
+    verb: su bisabuelo
+    inverse_verb: '{target} es su bisabuelo'
+    owns: self
+    rule: la ficha de la persona más joven
+  ancestor:
+    type: kin
+    es: antepasado
+    inverse: []
+    verb: su antepasado
+    inverse_verb: '{target} es su antepasado'
+    owns: self
+    rule: la ficha de la persona más joven
+  uncle:
+    type: kin
+    es: tío
+    inverse: [nephew]
+    verb: su tío
+    inverse_verb: '{target} es su tío'
+    owns: self
+    rule: la ficha de la persona más joven
+  great_uncle:
+    type: kin
+    es: tío abuelo
+    inverse: []
+    verb: su tío abuelo
+    inverse_verb: '{target} es su tío abuelo'
+    owns: self
+    rule: la ficha de la persona más joven
+  father_in_law:
+    type: kin
+    es: suegro
+    inverse: [son_in_law]
+    verb: su suegro
+    inverse_verb: '{target} es su suegro'
+    owns: self
+    rule: la ficha de la persona más joven
+  mother_in_law:
+    type: kin
+    es: suegra
+    inverse: [son_in_law]
+    verb: su suegra
+    inverse_verb: '{target} es su suegra'
+    owns: self
+    rule: la ficha de la persona más joven
+  parent:
+    type: kin
+    family: parents
+    es: padre o madre
+    inverse: [son, daughter]
+    verb: su padre o su madre
+    inverse_verb: '{target} es su padre o su madre'
+    owns: self
+    rule: la ficha de la persona más joven
+  aunt:
+    type: kin
+    es: tía
+    inverse: [nephew]
+    verb: su tía
+    inverse_verb: '{target} es su tía'
+    owns: self
+    rule: la ficha de la persona más joven
+  # --- kin, la misma pareja vista desde la persona mayor: escrita así está en la ficha que no manda
+  son:
+    type: kin
+    family: children
+    es: hijo
+    inverse: [father, mother, parent]
+    verb: su hijo
+    inverse_verb: '{target} es su hijo'
+    owns: target
+  daughter:
+    type: kin
+    family: children
+    es: hija
+    inverse: [father, mother, parent]
+    verb: su hija
+    inverse_verb: '{target} es su hija'
+    owns: target
+  adopted_son:
+    type: kin
+    family: children
+    es: hijo adoptivo
+    inverse: [adoptive_father]
+    verb: su hijo adoptivo
+    inverse_verb: '{target} es su hijo adoptivo'
+    owns: target
+  grandson:
+    type: kin
+    es: nieto
+    inverse: [grandfather, grandmother]
+    verb: su nieto
+    inverse_verb: '{target} es su nieto'
+    owns: target
+  nephew:
+    type: kin
+    es: sobrino
+    inverse: [uncle, aunt]
+    verb: su sobrino
+    inverse_verb: '{target} es su sobrino'
+    owns: target
+  son_in_law:
+    type: kin
+    es: yerno
+    inverse: [father_in_law, mother_in_law]
+    verb: su yerno
+    inverse_verb: '{target} es su yerno'
+    owns: target
+  # --- kin, esposos: la ficha del esposo
+  wife:
+    type: kin
+    family: spouses
+    inverse_es: esposo
+    es: esposa
+    inverse: [husband]
+    verb: su esposa
+    inverse_verb: su esposo
+    owns: self
+    rule: la ficha del esposo
+  secondary_wife:
+    type: kin
+    es: esposa secundaria
+    inverse: []
+    inverse_es: esposo
+    verb: su esposa secundaria
+    inverse_verb: su esposo
+    owns: self
+    rule: la ficha del esposo
+  concubine:
+    type: kin
+    es: concubina
+    inverse: []
+    verb: su concubina
+    inverse_verb: '{target} es su concubina'
+    owns: self
+    rule: la ficha del hombre
+  husband:
+    type: kin
+    family: spouses
+    inverse_es: esposa
+    es: esposo
+    inverse: [wife]
+    verb: su esposo
+    inverse_verb: su esposa
+    owns: target
+  # --- kin, la misma generación o sin grado: la ficha del primero que nombra el texto
+  brother:
+    type: kin
+    family: siblings
+    es: hermano
+    inverse: [brother, sister]
+    verb: su hermano
+    inverse_verb: '{target} es su hermano'
+    owns: first_named
+  sister:
+    type: kin
+    family: siblings
+    es: hermana
+    inverse: [brother, sister]
+    verb: su hermana
+    inverse_verb: '{target} es su hermana'
+    owns: first_named
+  half_brother:
+    type: kin
+    family: siblings
+    es: medio hermano
+    inverse: [half_brother]
+    verb: su medio hermano
+    inverse_verb: '{target} es su medio hermano'
+    owns: first_named
+  twin_brother:
+    type: kin
+    family: siblings
+    es: hermano gemelo
+    inverse: [twin_brother]
+    verb: su hermano gemelo
+    inverse_verb: '{target} es su hermano gemelo'
+    owns: first_named
+  cousin:
+    type: kin
+    es: primo
+    inverse: [cousin]
+    verb: su primo
+    inverse_verb: '{target} es su primo'
+    owns: first_named
+  brother_in_law:
+    type: kin
+    es: cuñado
+    inverse: [brother_in_law]
+    verb: su cuñado
+    inverse_verb: '{target} es su cuñado'
+    owns: first_named
+  relative:
+    type: kin
+    es: pariente
+    inverse: [relative]
+    verb: su pariente
+    inverse_verb: su pariente
+    owns: first_named
+  # --- accompanies: la ficha de quien acompaña
+  companion:
+    type: accompanies
+    es: compañero
+    inverse: [companion, female_companion]
+    verb: su compañero
+    inverse_verb: '{target} es su compañero'
+    owns: self
+    rule: la ficha de quien acompaña
+  female_companion:
+    type: accompanies
+    es: compañera
+    inverse: [companion, female_companion]
+    verb: su compañera
+    inverse_verb: '{target} es su compañera'
+    owns: self
+    rule: la ficha de quien acompaña
+  fellow_worker:
+    type: accompanies
+    es: colaborador
+    inverse: [fellow_worker]
+    verb: su colaborador
+    inverse_verb: '{target} es su colaborador'
+    owns: self
+    rule: la ficha de quien acompaña
+  # --- tie: el trato entre dos personas
+  friend:
+    type: tie
+    es: amigo
+    inverse: [friend]
+    verb: su amigo
+    inverse_verb: '{target} es su amigo'
+    owns: first_named
+  enemy:
+    type: tie
+    es: enemigo
+    inverse: [enemy]
+    verb: su enemigo
+    inverse_verb: '{target} es su enemigo'
+    owns: first_named
+  ally:
+    type: tie
+    es: aliado
+    inverse: [ally]
+    verb: su aliado
+    inverse_verb: '{target} es su aliado'
+    owns: first_named
+  master:
+    type: tie
+    es: señor
+    inverse: [servant]
+    verb: su señor
+    inverse_verb: '{target} es su señor'
+    owns: self
+    rule: la ficha de quien sirve
+  mistress:
+    type: tie
+    es: señora
+    inverse: [servant]
+    verb: su señora
+    inverse_verb: '{target} es su señora'
+    owns: self
+    rule: la ficha de quien sirve
+  servant:
+    type: tie
+    es: siervo
+    inverse: [master, mistress]
+    verb: su siervo
+    inverse_verb: '{target} es su siervo'
+    owns: target
+  host:
+    type: tie
+    es: anfitrión
+    inverse: []
+    verb: su anfitrión
+    inverse_verb: '{target} es su anfitrión'
+    owns: self
+    rule: la ficha de quien se hospeda
+  custodian:
+    type: tie
+    es: custodio
+    inverse: []
+    verb: su custodio
+    inverse_verb: '{target} es su custodio'
+    owns: self
+    rule: la ficha de quien va custodiado
+  adviser:
+    type: tie
+    es: consejero
+    inverse: []
+    verb: su consejero
+    inverse_verb: '{target} es su consejero'
+    owns: self
+    rule: la ficha de quien recibe el consejo
+
+# Lo que se queda fuera del vocabulario. La relación lo lleva en `caption` y, si lo tiene, en `inverse_caption`:
+# son sus dos textos y no salen de ninguna palabra. `why` dice por qué no es una palabra. Con `fix`, la entrada
+# es provisional: nombra la decisión de docs/investigacion/modelo.md que la quita, y validate avisa mientras exista.
+# El verbo de una relación con `caption` es ese texto. Visto desde el destino es su `inverse_caption` o, si no lo
+# lleva, el `inverse_verb` de su tipo. Un `caption` que no está en esta lista avisa como unlisted_caption: así
+# llegan los textos de una rama de libro que todavía no tienen palabra.
+outside:
+  - type: accompanies
+    caption: compañero entre los siete
+    inverse_caption: compañero entre los siete
+    why: Dice el grupo al que pertenecen los dos, no un trato entre ellos; solo sale en este par.
+  - type: accompanies
+    caption: socio en la pesca
+    inverse_caption: socio en la pesca
+    why: Dice un oficio compartido; solo sale en este par.
+  - type: accompanies
+    caption: instruido por él en Éfeso
+    inverse_caption: lo instruye en Éfeso
+    why: Cuenta un hecho con su lugar; llamarlo discípulo sería una deducción nuestra.
+  - type: accompanies
+    caption: instruido por ella en Éfeso
+    inverse_caption: lo instruye en Éfeso
+    why: Cuenta un hecho con su lugar; llamarlo discípulo sería una deducción nuestra.
+  - type: accompanies
+    caption: '«Marcos mi hijo»'
+    inverse_caption: 'Pedro lo llama «Marcos mi hijo»'
+    why: Recoge cómo lo llama uno al otro; no es parentesco ni una palabra que se repita.
+  - type: accompanies
+    caption: escribió 1 Pedro por medio de él
+    inverse_caption: amanuense de 1 Pedro
+    why: Es un papel en la escritura de una carta; pasará a la carta cuando las cartas lleven papeles.
+  - type: tie
+    caption: custodio
+    inverse_caption: custodiado por
+    why: Dice lo que es la ficha y no lo que es el destino; con la palabra custodian va en la otra ficha.
+    fix: T1
+  - type: tie
+    caption: consejero
+    inverse_caption: lo tenía de consejero
+    why: Dice lo que es la ficha y no lo que es el destino; con la palabra adviser va en la otra ficha.
+    fix: T1
+  - type: appears_to
+    caption: se le aparece camino de Damasco
+    inverse_caption: lo ve resucitado camino de Damasco
+    why: Cada aparición dice cómo fue; el verbo del tipo es demasiado corto para eso.
+  - type: appears_to
+    caption: le habla en una visión
+    inverse_caption: Jesús le habla en una visión
+    why: Cada aparición dice cómo fue; el verbo del tipo es demasiado corto para eso.
+  - type: appears_to
+    caption: se le aparece resucitado
+    inverse_caption: lo ve resucitado
+    why: Cada aparición dice cómo fue; el verbo del tipo es demasiado corto para eso.
+  - type: appears_to
+    caption: se le muestra en una visión, de pie a la derecha de Dios
+    inverse_caption: lo ve en el cielo, en una visión
+    why: Cada aparición dice cómo fue; el verbo del tipo es demasiado corto para eso.
+  - type: kin
+    caption: hijo de Jerjes I
+    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
+    fix: K1
+  - type: kin
+    caption: hijo de Darío I
+    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
+    fix: K1
+  - type: kin
+    caption: hijo de Nabonido
+    why: Está al revés; dice lo que es la ficha y no lo que es el destino.
+    fix: K1
+  - type: kin
+    caption: padre de Cambises II
+    why: Está al revés y en la ficha que no manda.
+    fix: K1
+  - type: kin
+    caption: prima de Mardoqueo
+    why: Está al revés; además hay que decidir si la crianza de Ester es un segundo hecho.
+    fix: K1
+  - type: kin
+    caption: esposa de Asuero
+    why: Está al revés y en la ficha que no manda.
+    fix: K1
+  - type: kin
+    caption: hijastro e hijo adoptivo
+    why: Son dos hechos en una palabra, escritos en la ficha que no manda.
+    fix: K2
+  - type: kin
+    caption: quizás hijo
+    why: La duda va en `inferred` y en `status`, no en la palabra; hay que leer quién es hijo de quién.
+    fix: K2
+
+# Un cargo tiene un solo texto en español. Si lo ejercen hombres y mujeres y el español los distingue, son dos
+# cargos: king y queen, prophet y prophetess. El segundo se añade cuando una fuente llama así a alguien.
+offices:
+  king: {es: rey}
+  queen: {es: reina}
+  coregent: {es: corregente}
+  emperor: {es: emperador}
+  governor: {es: gobernador}
+  proconsul: {es: procónsul}
+  ethnarch: {es: etnarca}
+  tetrarch: {es: tetrarca}
+  sheikh: {es: jeque}
+  high_priest: {es: sumo sacerdote}
+  priest: {es: sacerdote}
+  prophet: {es: profeta}
+  prophetess: {es: profetisa}
+  judge: {es: juez}
+  apostle: {es: apóstol}
+  leader: {es: caudillo}
+
+certainty:
+  probable: {verb: probablemente la misma persona}
+  possible: {verb: posiblemente la misma persona}
+
+event_types:
+  birth: {es: nacimiento, role: born}
+  death: {es: muerte, role: died}
+  writing: {es: escritura, role: wrote}
+  speech: {es: discurso, role: spoke}
+
+# Los papeles dicen lo que hizo la persona, todos en pasado. `raised` no es el papel de ningún tipo de suceso:
+# dice que la persona volvió a la vida, y una muerte anterior suya deja de cerrar su edad.
+event_roles:
+  born: {verb: nació}
+  died: {verb: murió}
+  wrote: {verb: escribió}
+  spoke: {verb: habló}
+  raised: {verb: volvió a la vida}

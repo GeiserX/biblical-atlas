@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-levanta-las-doce-piedras-en-guilgal
+title: Josué levanta en Guilgal las doce piedras del Jordán
+date:
+  from: -1472
+  to: -1472
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+  detail:
+    month: nisan
+    day: 10
+narrative_order:
+  series: numeros
+  order: 204020
+places:
+- guilgal
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 4:20-24
+summary: Israel sube del Jordán y acampa en Guilgal, al este de Jericó. Josué pone allí las doce piedras para que los hijos
+  aprendan que Jehová secó el río como antes secó el mar Rojo.
+reason: Jos 4:19 da el día 10 del primer mes, nisán desde el éxodo, y el estudio 3 el año 1473 a.e.c. Perspicacia «Guilgal»,
+  núm. 1, lo llama el primer campamento al oeste del río.
+sources:
+- josue-4
+- si-3
+- it-guilgal
+links:
+- title: Josué 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/4
+  type: bible
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

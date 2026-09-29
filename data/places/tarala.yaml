@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tarala
+name: Taralá
+names:
+- name: Taralá
+type: city
+lat: 31.84746
+lon: 35.236
+precision: uncertain
+coord_source: openbible:acfcf28
+coord_url: https://www.openbible.info/geo/ancient/acfcf28/taralah
+coord_note: Punto de OpenBible en Khirbet Erha. Perspicacia no sabe dónde estaba.
+summary: Ciudad de Benjamín de lugar desconocido, nombrada con otras de la región montañosa al norte de Jerusalén.
+reason: 'Perspicacia «Taralá»; Jos 18:27. OpenBible: solo el punto.'
+sources:
+- it-tarala
+- openbible-geo
+- josue-18
+links:
+- title: 'Perspicacia: «Taralá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004323
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

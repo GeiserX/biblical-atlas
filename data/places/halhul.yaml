@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: halhul
+name: Halhul
+names:
+- name: Halhul
+type: city
+lat: 31.57741
+lon: 35.10725
+precision: point
+coord_source: openbible:afca9ce
+coord_url: https://www.openbible.info/geo/ancient/afca9ce/halhul
+summary: Ciudad de la montaña de Judá. Un pueblo y una colina unos 6 km al norte de Hebrón llevan todavía ese nombre.
+reason: 'Perspicacia «Halhul»; Jos 15:58. OpenBible: solo el punto.'
+sources:
+- it-halhul
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Halhul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001827
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

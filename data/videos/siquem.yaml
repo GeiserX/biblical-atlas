@@ -1,19 +1,19 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: siquem
-generado: "2026-09-28"
+place: siquem
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-co-r22_130_VIDEO"
-    titulo: "Kenneth Cook: Evitemos las cosas que destruyen la paz. La ira descontrolada"
+    title: "Kenneth Cook: Evitemos las cosas que destruyen la paz. La ira descontrolada"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_130_VIDEO&appLanguage=S"
-    publicado: "2022-07-25"
-    menciones: 2
-    terminos:
+    published: "2022-07-25"
+    hits: 2
+    terms:
       "Siquem": 2
   - docid: "pub-co-r22_7_VIDEO"
-    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
-    publicado: "2022-07-25"
-    menciones: 2
-    terminos:
+    published: "2022-07-25"
+    hits: 2
+    terms:
       "Siquem": 2

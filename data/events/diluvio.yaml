@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: diluvio
+title: El Diluvio
+date:
+  from: -2369
+  to: -2369
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 2370 a.e.c.
+  detail:
+    season: autumn
+places:
+- ararat
+people:
+- noe
+- sem
+- cam
+- jafet
+passages:
+- Gé 7:6-24
+- Gé 8:4
+- 1Pe 3:20
+- Gé 7:1-5
+- Gé 8:1-14
+summary: Las aguas cubren la Tierra en el año 600 de la vida de Noé. Sobreviven en el arca Noé y su familia, ocho personas,
+  con los animales.
+reason: El estudio 3 pone en el otoño de 2370 a.e.c. la caída de las aguas; Perspicacia «Diluvio» da el mismo año y el
+  día 17 del segundo mes. El arca se posó en los montes de Ararat (Gé 8:4).
+sources:
+- si-3
+- it-diluvio
+- genesis-7
+- genesis-8
+links:
+- title: 'Perspicacia: «Diluvio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001150
+  type: perspicacia
+search: Diluvio de Noé
+present: []
+history:
+- date: '2026-09-29'
+  change: 'El suceso ya no sitúa a la familia de Noé en Ararat en 2370: el arca se posó allí unos cinco meses después (Gé
+    8:4). Esa llegada es noe-sale-del-arca.'
+  source: genesis-8
+checked_on: '2026-09-29'
+status: verified

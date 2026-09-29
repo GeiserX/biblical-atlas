@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: apedrean-a-pablo-en-listra
+title: Apedrean a Pablo en Listra
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1419
+places:
+- listra
+- derbe
+people:
+- pablo
+- bernabe
+passages:
+- Hch 14:19, 20
+- 2Co 11:25
+summary: Judíos de Antioquía e Iconio ponen a la gente contra Pablo, que es apedreado y arrastrado fuera de la ciudad.
+  Se levanta y al día siguiente sale hacia Derbe.
+reason: Perspicacia «Pablo» (párr. 12) narra el apedreamiento y la salida a Derbe.
+sources:
+- it-pablo
+- hch-14
+search: Pablo apedreado Listra
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: esan
+name: Esán
+names:
+- name: Esán
+type: city
+lat: 31.43329
+lon: 34.977712
+precision: uncertain
+coord_source: openbible:acd9498
+coord_url: https://www.openbible.info/geo/ancient/acd9498/eshan
+coord_note: 'Khirbet Khallat Samʽa, segunda identificación de OpenBible: el Khirbet Samʽa que nombra Perspicacia. Perspicacia
+  da la distancia desde Jerusalén, pero el punto queda unos 15 km al suroeste de Hebrón.'
+summary: Ciudad de la montaña de Judá. No se sabe dónde estaba; como la Septuaginta la llama Soma, algunos piensan en Khirbet
+  Samʽa.
+reason: 'Perspicacia «Esán»; Jos 15:52. OpenBible: solo el punto.'
+sources:
+- it-esan
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Esán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001420
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

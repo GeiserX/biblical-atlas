@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-jesus
+title: Nacimiento de Jesús
+date:
+  from: -1
+  to: -1
+  precision: day
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1 de octubre de 2 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: a7
+  order: 4
+places:
+- belen
+- nazaret
+people:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+- augusto
+- quirinio
+type: birth
+roles:
+  jesus: born
+present:
+- jesus
+- maria-madre-de-jesus
+- jose-esposo-de-maria
+passages:
+- Mt 1:1-25
+- Lu 2:1-7
+- Jn 1:14
+summary: Por un censo ordenado por César Augusto, José viaja con María de Nazaret a Belén. Allí nace Jesús y lo acuestan en
+  un pesebre, como Miqueas había predicho de Belén.
+reason: 'A7-A, fila 4, y cuadro del estudio 3: 2 a.e.c. Perspicacia «Jesucristo» fecha el nacimiento en el mes de etanim; «María»
+  (núm. 1) dice hacia el 1 de octubre.'
+sources:
+- tnm-a7-a
+- si-3
+- it-jesucristo
+- it-maria
+- lucas-2
+- mateo-1
+- juan-1
+- jy-cap-4
+- jy-cap-5
+links:
+- title: 'Perspicacia: «Jesucristo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002451
+  type: perspicacia
+- title: Lucas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

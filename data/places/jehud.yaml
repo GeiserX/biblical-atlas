@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jehud
+name: Jehúd
+names:
+- name: Jehúd
+type: city
+lat: 32.030833
+lon: 34.890278
+precision: point
+coord_source: openbible:aa0ef78
+coord_url: https://www.openbible.info/geo/ancient/aa0ef78/jehud
+coord_note: Punto de OpenBible en el-Yehudiyeh (Yehud).
+summary: Lugar de Dan que se suele identificar con el-Yehudiyeh, unos 13 km al este de Tel Aviv-Yafo. La Septuaginta lee Azor,
+  y algunos la buscan cerca de Yazur.
+reason: 'Perspicacia «Jehúd»; Jos 19:45. OpenBible: solo el punto.'
+sources:
+- it-jehud
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Jehúd»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002404
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

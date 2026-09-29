@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-manda-a-josue-repartir-la-tierra
+title: Jehová manda al anciano Josué repartir la tierra
+date:
+  from: -1466
+  to: -1466
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1467 a.e.c. (tiempo narrativo: al acabar la conquista general, cuando empieza el reparto)'
+  note: 'Límites: el final de la conquista general y la petición de Caleb en Guilgal, los dos en 1467 a.e.c. (estudio 3).'
+narrative_order:
+  series: josue
+  order: 13001
+places:
+- canaan
+- filistea
+- sihor
+- ecron
+- asquelon
+- gaza
+- asdod
+- gat
+- sidon
+- meara
+- afec-al-norte-de-sidon
+- guebal
+- libano
+- baal-gad
+- monte-hermon
+- lebo-hamat
+- misrefot-maim
+people:
+- josue-hijo-de-nun
+present: []
+passages:
+- Jos 13:1-7
+summary: 'Josué ya es muy mayor y aún queda tierra sin tomar: la de los filisteos y la de los sidonios, del Líbano a Lebó-Hamat.
+  Jehová promete expulsarlos y le manda repartirla entre nueve tribus y media.'
+reason: 'Estudio 3: la conquista general acaba en 1467 a.e.c., el año en que Caleb pide Hebrón. Perspicacia «Josué»: el reparto
+  empezó en Guilgal. El texto no dice dónde habló Jehová; los lugares son la tierra pendiente.'
+sources:
+- josue-13
+- si-3
+- it-josue
+- it-guebal
+- it-sihor
+links:
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-renueva-el-pacto-en-siquem
+title: Josué renueva en Siquem el pacto de Israel con Jehová
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: poco antes de morir Josué)'
+narrative_order:
+  series: josue
+  order: 24001
+places:
+- siquem
+people:
+- josue-hijo-de-nun
+present:
+- josue-hijo-de-nun
+passages:
+- Jos 24:1-28
+- Jue 2:6
+summary: Josué junta a las tribus en Siquem, repasa lo que Jehová hizo desde Abrahán y les pide elegir a quién servir. El
+  pueblo promete servir a Jehová; Josué hace un pacto, lo escribe y levanta una gran piedra como testigo.
+reason: 'Perspicacia «Siquem», núm. 4: poco antes de su muerte Josué reunió allí a todas las tribus; «Josué», núm. 1: el pueblo
+  reafirmó su pacto. Límites: conquista general en 1467 y muerte de Josué hacia 1450 (estudio 3).'
+sources:
+- josue-24
+- it-siquem
+- it-josue
+- si-3
+links:
+- title: Josué 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/24
+  type: bible
+- title: 'Perspicacia: «Siquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
+  type: perspicacia
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+search: Josué Siquem pacto servir a Jehová
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adada
+name: Adadá
+names:
+- name: Adadá
+type: city
+lat: 31.15214
+lon: 34.97907
+precision: uncertain
+coord_source: openbible:abf4481
+coord_url: https://www.openbible.info/geo/ancient/abf4481/adadah
+coord_note: 'Khirbet ʽAroʽer, primera identificación de OpenBible: es la Aroer de Judá que algunos proponen, según Perspicacia.'
+summary: Ciudad del sur de Judá, junto a la frontera de Edom. Por una lectura de la Septuaginta y por 1Sa 30:28, algunos la
+  igualan con Aroer de Judá.
+reason: 'Perspicacia «Adadá»; Jos 15:22. OpenBible: solo el punto.'
+sources:
+- it-adada
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Adadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000085
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

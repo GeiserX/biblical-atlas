@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atalia
+name: Atalia
+names:
+- name: Atalia
+- name: Antalya
+  note: Nombre actual de la ciudad.
+type: port
+lat: 36.88127
+lon: 30.70361
+precision: point
+coord_source: openbible:ac744c1
+coord_url: https://www.openbible.info/geo/ancient/ac744c1/attalia
+summary: Puerto de Panfilia fundado por Atalo II; desde aquí Pablo y Bernabé navegaron de vuelta a Antioquía de
+  Siria.
+reason: 'Perspicacia («Atalia») describe el lugar; aparece en Hch 14:25. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-atalia
+- hch-14
+- openbible-geo
+links:
+- title: 'Perspicacia: «Atalia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000466
+  type: perspicacia
+- title: Hechos 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/14
+  type: bible
+checked_on: '2026-09-27'
+status: verified

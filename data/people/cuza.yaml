@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cuza
+name: Cuza
+names:
+- name: Cuza
+perspicacia: '1200000974'
+summary: Mayordomo de Herodes Antipas; la nota de estudio cree que quizá llevaba sus asuntos domésticos. Su esposa Juana sostenía
+  con sus bienes a Jesús y a los Doce.
+reason: Perspicacia «Cuza»; Lu 8:3 y su nota de estudio.
+sources:
+- it-cuza
+- lucas-8
+links:
+- title: 'Perspicacia: «Cuza»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000974
+  type: perspicacia
+relations:
+- type: kin
+  person: juana
+  word: wife
+  inferred: false
+  sources:
+  - lucas-8
+  - it-cuza
+  reason: Lu 8:3 presenta a Juana como su esposa.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: herodes-antipas
+  word: master
+  inferred: false
+  sources:
+  - lucas-8
+  - it-cuza
+  reason: 'Lu 8:3: era el mayordomo de la casa de Herodes y trabajaba a su servicio. Perspicacia «Cuza» y la nota de estudio
+    dicen que ese Herodes era Antipas.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

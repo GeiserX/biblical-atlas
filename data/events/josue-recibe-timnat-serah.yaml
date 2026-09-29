@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-recibe-timnat-serah
+title: Josué recibe Timnat-Sérah como herencia
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras la conquista general y antes de la muerte de Josué)'
+places:
+- timnat-serah
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 19:49, 50
+summary: Terminado el reparto, los israelitas dan a Josué, por orden de Jehová, la ciudad que él pide en la región montañosa
+  de Efraín. Josué la reconstruye y se queda a vivir allí.
+reason: El estudio 3 cierra la conquista general en 1467 a.e.c. y pone hacia 1450 la muerte de Josué; el reparto en Siló cae
+  entre las dos (Perspicacia «Siló», párr. 3). Jos 19:49, 50; Perspicacia «Timnat-sérah».
+sources:
+- josue-19
+- si-3
+- it-timnat-serah
+links:
+- title: 'Perspicacia: «Timnat-sérah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004413
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+narrative_order:
+  series: josue
+  order: 19049
+checked_on: '2026-09-29'
+status: verified

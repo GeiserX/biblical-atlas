@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-bautiza-a-gayo-y-a-la-casa-de-estefanas
+title: Pablo bautiza a Gayo y a los de la casa de Estéfanas
+date:
+  from: 50
+  to: 52
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 50 y 52 e.c. (tiempo narrativo: durante la estancia de Pablo en Corinto)'
+narrative_order:
+  series: 1-corintios
+  order: 999
+  after: pablo-llega-a-corinto
+places:
+- corinto
+people:
+- pablo
+- gayo-de-corinto
+- estefanas
+passages:
+- 1Co 1:14-16
+- 1Co 16:15
+summary: En Corinto, Pablo bautiza en persona a Gayo y a la familia de Estéfanas, la primera que se hizo cristiana en Acaya.
+  Aparte de ellos y de Crispo, no recuerda haber bautizado a nadie allí.
+reason: 1Co 1:14-16. Perspicacia «Gayo», núm. 3, y «Estéfanas», que pone ese bautismo unos cinco años antes de c. 55. Estancia
+  en Corinto de 50 a 52 según el estudio 3, párr. 24 y 25.
+sources:
+- 1-corintios-1
+- it-gayo
+- it-estefanas
+- si-3
+- 1-corintios-16
+links:
+- title: 1 Corintios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/1
+  type: bible
+- title: 'Perspicacia: «Estéfanas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004229
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'orden 1014 la ponía tras la carta perdida (1000), escrita cuando Pablo ya ha dejado Corinto. El bautismo es de
+    su estancia allí, de 50 a 52 (estudio 3, párr. 24 y 25): pasa a 999.'
+  source: si-3
+checked_on: '2026-09-29'
+status: verified

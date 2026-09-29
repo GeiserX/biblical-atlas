@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-corrige-a-pedro-en-antioquia
+title: Pablo corrige a Pedro en Antioquía
+date:
+  from: 49
+  to: 52
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: entre 49 y 52 e.c. (después de la reunión de Jerusalén)
+places:
+- antioquia-de-siria
+people:
+- pedro
+- pablo
+- bernabe
+passages:
+- Gál 2:11-14
+summary: Pedro come con cristianos gentiles en Antioquía, pero se aparta cuando llegan algunos de parte de Santiago;
+  hasta Bernabé lo imita. Pablo lo corrige delante de todos.
+reason: Perspicacia «Pedro» (párr. 23) y «Pablo» (párr. 14 y 15) lo ponen algún tiempo después de la reunión de c.
+  49.
+sources:
+- it-pedro
+- it-pablo
+- galatas-2
+note: Ninguna fuente da el año; lo acotamos entre la reunión de Jerusalén (c. 49) y la vuelta de Pablo a Antioquía
+  al final del segundo viaje (52).
+search: Pablo corrige a Pedro Antioquía
+checked_on: '2026-09-28'
+status: verified

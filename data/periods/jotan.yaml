@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jotan
+name: Reinado de Jotán en Judá
+type: king
+person: jotan
+date:
+  from: -776
+  to: -761
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 777-762 a.e.c.
+places:
+- jerusalen
+summary: Dieciséis años en Jerusalén; profetizaban Isaías, Oseas y Miqueas.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 15.
+sources:
+- tnm-a6-b
+- 2-reyes-15
+- it-jotan
+search: Jotán rey
+checked_on: '2026-09-28'
+status: verified

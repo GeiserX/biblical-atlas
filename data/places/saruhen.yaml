@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: saruhen
+name: Saruhén
+names:
+- name: Saruhén
+- name: Silhim
+  note: Así parece llamarla Jos 15:32.
+- name: Saaraim
+  note: Así parece llamarla 1Cr 4:31.
+type: city
+lat: 31.281944
+lon: 34.4825
+precision: uncertain
+coord_source: openbible:a887d36
+coord_url: https://www.openbible.info/geo/ancient/a887d36/sharuhen
+coord_note: Punto de Tell el-Farʽah (Tel Sharuhen), segunda identificación de OpenBible, que es la que da Perspicacia.
+summary: Ciudad de Simeón que parece llamarse también Silhim y Saaraim. Los eruditos suelen situarla en Tell el-Farʽah, unos
+  35 km al oeste de Beer-Seba.
+reason: 'Perspicacia «Saruhén»; Jos 15:32; 19:6; 1Cr 4:31. OpenBible: solo el punto.'
+sources:
+- it-saruhen
+- openbible-geo
+- josue-19
+- it-silhim
+- josue-15
+links:
+- title: 'Perspicacia: «Saruhén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003957
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 'Perspicacia: «Silhim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004036
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
