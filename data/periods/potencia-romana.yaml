@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-romana
+name: Roma, sexta potencia mundial
+type: power
+date:
+  from: -62
+  to: 476
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 63 a.e.c.-476 e.c.
+places:
+- roma
+events:
+- roma-gobierna-jerusalen-63
+summary: Roma gobierna Jerusalén desde 63 a.e.c. Bajo sus emperadores nacen Jesús y la congregación, y sus tropas destruyen
+  Jerusalén en 70. Son las piernas de hierro de Daniel 2.
+reason: B9 y el estudio 3 dan 63 a.e.c. para su dominio sobre Israel. Perspicacia «Roma» pone en 476 e.c. al primer rey germano,
+  con la caída del imperio.
+sources:
+- tnm-b9
+- si-3
+- it-roma
+search: Roma sexta potencia mundial
+checked_on: '2026-09-28'
+status: verified

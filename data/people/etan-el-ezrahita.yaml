@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: etan-el-ezrahita
+name: Etán
+names:
+- name: Etán
+perspicacia: 1200001434#1
+summary: Sabio de la tribu de Judá, descendiente de Zérah, al que Salomón superó en sabiduría; lo llaman ezrahíta. Fue padre
+  de Azarías y quizá compuso el Salmo 89.
+reason: Perspicacia «Etán», núm. 1, y «Ezrahíta»; 1Re 4:31; 1Cr 2:6, 8. La Atalaya del 15 de julio de 2006 también lo da como
+  probable autor del Salmo 89.
+disambiguation: No es el levita guersonita hijo de Zimá (núm. 2) ni el cantor merarita hijo de Quisí, quizá el mismo que Jedutún
+  (núm. 3).
+not_claimed:
+- 'Que sea seguro que compuso el Salmo 89: Perspicacia y La Atalaya solo lo dan como posible.'
+sources:
+- it-etan
+- it-ezrahita
+- w06-salmos-libros-3-4
+- salmos-89
+links:
+- title: 'Perspicacia: «Etán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001434
+  type: perspicacia
+- title: 'Perspicacia: «Ezrahíta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001478
+  type: perspicacia
+- title: Salmo 89 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/89
+  type: bible
+relations:
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: false
+  sources:
+  - salmos-89
+  - it-ezrahita
+  - it-etan
+  reason: 1Cr 2:6 lo pone entre los descendientes de Zérah, hijo de Judá. El encabezamiento de Sl 89 lo llama ezrahíta, que para
+    Perspicacia equivale a zerahíta.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

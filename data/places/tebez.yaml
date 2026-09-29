@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tebez
+name: Tebez
+names:
+- name: Tebez
+type: city
+lat: 32.322222
+lon: 35.368611
+precision: uncertain
+coord_source: openbible:a5d1690
+coord_url: https://www.openbible.info/geo/ancient/a5d1690/thebez
+coord_note: Primera identificación de OpenBible, Tubas, con la que Perspicacia la relaciona de forma provisional; no hay restos
+  que lo confirmen.
+summary: 'Ciudad con una torre fuerte, unos 15 km al norte de Siquem si es Tubas. Allí murió Abimélec: una mujer le tiró desde
+  la torre una piedra de molino y su escudero lo remató.'
+reason: 'Perspicacia «Tebez»; Jue 9:50-54. OpenBible: solo el punto.'
+sources:
+- it-tebez
+- openbible-geo
+- jueces-9
+links:
+- title: 'Perspicacia: «Tebez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004376
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

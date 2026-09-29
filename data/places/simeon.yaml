@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: simeon
+name: Simeón
+names:
+- name: Simeón
+  note: Ciudades de la tribu que descendía de Simeón, hijo de Jacob.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Ciudades del Négueb, alrededor de Beer-Seba
+  geometry:
+    type: zone
+    lat: 31.244722
+    lon: 34.840833
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-simeon
+  - openbible-geo
+  reason: Jos 19:1-9 da a Simeón ciudades dentro de Judá, casi todas en el sur, alrededor de Beer-Seba.
+  coord_source: calculation
+  note: 'Centro: el punto de Beer-Seba de OpenBible (Tel Beer Sheva). El radio de 30 km es nuestro.'
+summary: 'Herencia de la tribu de Simeón: no un territorio propio, sino ciudades dentro de Judá, sobre todo en el Négueb.
+  Así se cumplió lo que Jacob había dicho de esparcir a Simeón.'
+reason: Perspicacia «Simeón», núm. 1 y 2; Jos 19:1-9. Zona calculada por nosotros.
+sources:
+- it-simeon
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Simeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004124
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

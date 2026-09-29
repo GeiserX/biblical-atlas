@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arad
+name: Arad
+names:
+- name: Arad
+type: city
+lat: 31.280833
+lon: 35.125
+precision: point
+coord_source: openbible:abc358b
+coord_url: https://www.openbible.info/geo/ancient/abc358b/arad-1
+coord_note: Punto de OpenBible en Tel ʽArad, donde se suele situar. Perspicacia recoge también la propuesta de Tel Malhata,
+  12 km al suroeste.
+summary: Ciudad cananea del Négueb, en el límite sur de Canaán. Su rey atacó a Israel cuando se acercaba a la tierra y perdió
+  sus ciudades; más tarde Josué venció también a un rey de Arad.
+reason: 'Perspicacia «Arad», núm. 2; Nú 21:1-3. Tel ʽArad está unos 28 km al este de Beer-Seba. OpenBible: solo el punto.'
+sources:
+- it-arad
+- openbible-geo
+- numeros-21
+- numeros-33
+- josue-12
+- jueces-1
+links:
+- title: 'Perspicacia: «Arad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000329
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

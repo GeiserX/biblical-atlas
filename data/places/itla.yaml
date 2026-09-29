@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: itla
+name: Itlá
+names:
+- name: Itlá
+type: city
+lat: 31.841111
+lon: 35.023611
+precision: uncertain
+coord_source: openbible:abf8060
+coord_url: https://www.openbible.info/geo/ancient/abf8060/ithlah
+coord_note: OpenBible solo la pone a menos de 10 km de Ayalón; el punto es el de Yalo. Perspicacia no sabe dónde estaba.
+summary: Ciudad de la frontera de Dan de ubicación incierta.
+reason: 'Perspicacia «Itlá»; Jos 19:42. OpenBible: solo el punto.'
+sources:
+- it-itla
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Itlá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002238
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

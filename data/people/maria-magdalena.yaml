@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maria-magdalena
+name: María Magdalena
+names:
+- name: María Magdalena
+  note: Probablemente por Magdala, a orillas del mar de Galilea.
+disambiguation: La discípula de Galilea; no es María de Betania ni la madre de Jesús.
+distinct_from:
+- maria-de-betania
+- maria-madre-de-jesus
+- maria-esposa-de-clopas
+- maria-de-roma
+not_claimed:
+- 'Que Magdala fuera su pueblo natal o solo el lugar donde vivía: Perspicacia dice que no se sabe con certeza.'
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - lucas-8
+  - it-maria
+  - mateo-27
+  - marcos-15
+  - lucas-23
+  - juan-19
+  - juan-20
+  reason: Lu 8:1-3 la cuenta entre las mujeres que iban con Jesús y le servían con sus bienes.
+  checked_on: '2026-09-29'
+  status: verified
+summary: Discípula de la que Jesús había expulsado siete demonios. Lo atendió con sus bienes, estuvo junto al madero
+  y, el 16 de nisán, lo vio resucitado junto a la tumba.
+reason: Perspicacia «María», apartado 3 (párr. 24-27); Lu 8:2, 3; Jn 19:25 y 20:11-18.
+sources:
+- it-maria
+- lucas-8
+- juan-19
+- juan-20
+- mateo-27
+- mateo-28
+- marcos-15
+- marcos-16
+- lucas-23
+- lucas-24
+links:
+- title: 'Perspicacia: «María»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918
+  type: perspicacia
+- title: Juan 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/20
+  type: bible
+search: María Magdalena
+perspicacia: 1200002918#3
+history:
+- date: '2026-09-29'
+  change: 'La frase decía lo contrario de lo que no afirmamos: Perspicacia y la nota de Mt 27:56 no saben si Magdala era su
+    pueblo natal o su residencia.'
+  source: mateo-27
+checked_on: '2026-09-29'
+status: verified

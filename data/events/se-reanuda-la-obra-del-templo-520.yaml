@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: se-reanuda-la-obra-del-templo-520
+title: Ageo y Zacarías animan a reanudar el templo
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de elul de 520 a.e.c.
+  detail:
+    month: elul
+    day: 24
+places:
+- jerusalen
+people:
+- zorobabel
+- josue-sumo-sacerdote
+- ageo
+- zacarias-profeta
+passages:
+- Ag 1:1-15
+- Esd 5:1, 2
+- Zac 1:1
+summary: En el segundo año de Darío I, el profeta Ageo y después Zacarías animaron al pueblo. Zorobabel y el sumo sacerdote
+  Josué volvieron a trabajar en el templo aunque la prohibición seguía vigente.
+reason: Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:1 fecha el primer mensaje el día 1 del sexto mes, y
+  Ag 1:15, el comienzo de la obra el día 24.
+sources:
+- it-ageo
+- it-zorobabel
+- it-dario
+- ageo-1
+links:
+- title: 'Perspicacia: «Ageo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001812
+  type: perspicacia
+- title: Ageo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

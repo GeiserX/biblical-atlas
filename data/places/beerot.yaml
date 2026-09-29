@@ -1,0 +1,77 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beerot
+name: Beerot
+names:
+- name: Beerot
+  note: Significa «pozos», según Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: el-Bira, junto a Ramala
+  geometry:
+    type: point
+    lat: 31.905142
+    lon: 35.214958
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-beerot
+  - openbible-geo
+  reason: Otros, según Perspicacia, la ponen aquí, a 8 km de Gabaón hacia el NNE y junto al límite de Efraín; tiene un manantial
+    abundante.
+  coord_source: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  note: Primera resolución de la segunda identificación de la ficha «Beeroth» de OpenBible (Al Bira).
+- name: Khirbet el-Burj
+  geometry:
+    type: point
+    lat: 31.82383
+    lon: 35.1872
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-beerot
+  - openbible-geo
+  reason: Perspicacia recoge que algunos la sitúan aquí, al sur de las otras propuestas.
+  coord_source: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  note: Primera resolución de la primera identificación de la ficha «Beeroth» de OpenBible.
+- name: Nabi Samwil
+  geometry:
+    type: point
+    lat: 31.832733
+    lon: 35.18015
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-beerot
+  - openbible-geo
+  reason: Perspicacia la da como la otra propuesta del sur, junto a Khirbet el-Burj.
+  coord_source: openbible:a046454
+  coord_url: https://www.openbible.info/geo/ancient/a046454/beeroth
+  note: Primera resolución de la tercera identificación de la ficha «Beeroth» de OpenBible.
+summary: Una de las cuatro ciudades heveas que, por medio de Gabaón, lograron con astucia el pacto con Josué. Después fue
+  de Benjamín, quizá como ciudad de frontera, y se repobló tras el exilio.
+reason: 'Perspicacia «Beerot», párr. 1 y 2; Jos 9:17; 18:25. Perspicacia no elige entre Khirbet el-Burj o Nabi Samwil, al sur,
+  y el-Bira, al norte. OpenBible: solo los puntos.'
+sources:
+- it-beerot
+- openbible-geo
+- josue-9
+- josue-18
+links:
+- title: 'Perspicacia: «Beerot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000612
+  type: perspicacia
+- title: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  type: bible
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

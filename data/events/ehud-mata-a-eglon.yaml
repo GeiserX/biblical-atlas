@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ehud-mata-a-eglon
+title: Ehúd mata a Eglón, rey de Moab
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+narrative_order:
+  series: jueces
+  order: 3015
+places:
+- jerico
+- guilgal
+people:
+- eglon
+- ehud-hijo-de-guera
+present:
+- eglon
+- ehud-hijo-de-guera
+passages:
+- Jue 3:15-25
+summary: Ehúd, zurdo, lleva el tributo con una espada corta atada al muslo derecho. Vuelve desde Guilgal con un mensaje secreto,
+  queda a solas con Eglón en su cámara fresca y lo mata. Sale y deja la puerta cerrada.
+reason: 'La Atalaya del 15/3/1997 pone el palacio en Jericó, a 2 km de las canteras de Guilgal; así también Perspicacia «Guilgal»,
+  núm. 1. Límites: muerte de Josué, c. 1450 (estudio 3), y Jefté, c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-3
+- it-ehud
+- it-eglon
+- w97-ehud
+- it-guilgal
+- si-3
+- it-jefte
+links:
+- title: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

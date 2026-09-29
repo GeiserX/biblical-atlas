@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-esteban
+title: Esteban muere apedreado
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+narrative_order:
+  series: hechos
+  order: 754
+places:
+- jerusalen
+people:
+- esteban
+- pablo
+- jesus
+type: death
+roles:
+  esteban: died
+present:
+- esteban
+- pablo
+passages:
+- Hch 7:54–8:1
+- Hch 22:20
+summary: Esteban dice que ve a Jesús en pie, a la derecha de Dios. Lo sacan de la ciudad y lo apedrean; los testigos
+  confían sus mantos a Saulo, un joven que lo aprobaba. Es el primer mártir cristiano.
+reason: Perspicacia «Esteban» (párr. 2 y 6) y las notas de estudio de Hch 7:55 y 7:58.
+sources:
+- it-esteban
+- hechos-7
+- bt-6
+note: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+search: muerte de Esteban
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atarot-addar
+name: Atarot-Addar
+names:
+- name: Atarot-Addar
+- name: Atarot
+  note: Quizá es la misma ciudad de Jos 16:2, según Perspicacia «Atarot», núm. 2.
+type: city
+lat: 31.87993
+lon: 35.21752
+precision: uncertain
+coord_source: openbible:a2bf0f8
+coord_url: https://www.openbible.info/geo/ancient/a2bf0f8/ataroth-addar
+coord_note: Punto de Khirbet Atara, primera identificación de OpenBible. Perspicacia no da ningún sitio.
+summary: Ciudad de Efraín en su frontera sur, desde donde el límite iba hasta Bet-Horón Alta. Perspicacia cree posible que
+  sea la Atarot de Jos 16:2.
+reason: 'Perspicacia «Atarot-addar» y «Atarot», núm. 2; Jos 16:5. OpenBible: solo el punto.'
+sources:
+- it-atarot-addar
+- it-atarot
+- openbible-geo
+- josue-16
+- josue-18
+links:
+- title: 'Perspicacia: «Atarot-addar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000453
+  type: perspicacia
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

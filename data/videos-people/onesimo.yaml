@@ -1,0 +1,19 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: onesimo
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwb-138_1_VIDEO"
+    title: "JW Broadcasting: Junio de 2026 (graduación de la clase 159 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_1_VIDEO&appLanguage=S"
+    published: "2026-06-01"
+    hits: 3
+    terms:
+      "Onésimo": 3
+  - docid: "pub-jwb-138_2_VIDEO"
+    title: "Graduación de la clase 159 de la Escuela de Galaad: De primera mano"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-138_2_VIDEO&appLanguage=S"
+    published: "2026-06-02"
+    hits: 3
+    terms:
+      "Onésimo": 3

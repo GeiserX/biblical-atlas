@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cusan-risataim
+name: Cusán-Risataim
+names:
+- name: Cusán-Risataim
+  note: Grafía de la TNM; Perspicacia escribe Cusán-risataim.
+perspicacia: '1200001091'
+summary: 'Rey de Mesopotamia, o Aram-Naharaim, que tuvo sometido a Israel ocho años: el primer gran opresor del tiempo de
+  los jueces. Otniel lo venció con el espíritu de Jehová.'
+reason: Perspicacia «Cusán-risataim»; Jue 3:8-10.
+sources:
+- it-cusan-risataim
+- jueces-3
+links:
+- title: 'Perspicacia: «Cusán-risataim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001091
+  type: perspicacia
+- title: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  type: bible
+relations:
+- type: lived_in
+  place: mesopotamia
+  inferred: false
+  sources:
+  - jueces-3
+  - it-cusan-risataim
+  reason: Jue 3:8, 10 lo llama rey de Mesopotamia, y la nota da el nombre hebreo, Aram-Naharaim.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

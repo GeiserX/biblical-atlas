@@ -1,0 +1,98 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: laban
+name: Labán
+names:
+- name: Labán
+perspicacia: '1200002655'
+disambiguation: Labán hijo de Betuel, suegro de Jacob; no el lugar del mismo nombre que nombra Deuteronomio.
+summary: Arameo de Harán, hermano de Rebeca y nieto de Nacor. Casó a Jacob con sus hijas Lea y Raquel, engañándolo con la
+  mayor, y le cambió el salario muchas veces. Terminó pactando la paz con él en Galaad.
+reason: Perspicacia «Labán», núm. 1, párr. 1 a 3; Gé 24:29-60.
+sources:
+- it-laban
+- genesis-24
+- genesis-25
+- si-3
+- genesis-27
+- genesis-28
+- genesis-29
+- genesis-30
+- genesis-31
+- genesis-32
+- genesis-46
+links:
+- title: 'Perspicacia: «Labán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002655
+  type: perspicacia
+- title: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  type: bible
+- title: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  type: bible
+- title: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  type: bible
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: betuel
+  word: father
+  inferred: false
+  sources:
+  - it-laban
+  - genesis-24
+  - genesis-28
+  reason: 'Perspicacia «Labán», núm. 1: su padre fue Betuel; en Gé 24:50 los dos responden juntos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ciudad-de-nacor
+  inferred: false
+  sources:
+  - genesis-24
+  reason: 'Gé 24:29-32: su casa estaba en la ciudad de Nacor.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: haran
+  inferred: false
+  sources:
+  - it-laban
+  - genesis-27
+  - genesis-29
+  reason: 'Perspicacia «Labán», núm. 1, párr. 1: vivía en Harán, ciudad de Padán-aram.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: padan-aram
+  inferred: false
+  sources:
+  - it-laban
+  - genesis-25
+  reason: Gé 25:20 lo llama Labán el arameo; Perspicacia «Labán», núm. 1, dice que vivía en Padán-aram.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: nacor-hijo-de-tare
+  word: grandfather
+  inferred: false
+  sources:
+  - genesis-29
+  - it-laban
+  - it-nacor
+  reason: 'Gé 29:5: Jacob pregunta por Labán como nieto de Nacor.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+date:
+  from: -1877
+  to: -1760
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1878-1761 a.e.c. (de la boda de su hermana Rebeca a su despedida de Jacob)

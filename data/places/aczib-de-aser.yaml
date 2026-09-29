@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aczib-de-aser
+name: Aczib
+names:
+- name: Aczib
+  note: Aczib de Aser; no la de Judá (Jos 15:44).
+- name: Ecdippa
+  note: Nombre en tiempos griegos y romanos, según Perspicacia.
+type: city
+lat: 33.048278
+lon: 35.102652
+precision: point
+coord_source: openbible:ad0d82f
+coord_url: https://www.openbible.info/geo/ancient/ad0d82f/achzib-2
+coord_note: Punto de OpenBible en ez-Zib (Tel Akhziv).
+summary: Ciudad de la costa fenicia en el territorio de Aser, unos 14 km al norte de Akkó. Aser nunca la conquistó. Senaquerib
+  la cita, y los griegos la llamaron Ecdippa.
+reason: 'Perspicacia «Aczib», núm. 2; Jos 19:29; Jue 1:31. OpenBible: solo el punto.'
+sources:
+- it-aczib
+- openbible-geo
+- josue-19
+- jueces-1
+links:
+- title: 'Perspicacia: «Aczib»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000082
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

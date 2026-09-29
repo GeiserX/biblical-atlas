@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-josue
+title: Muere Josué
+date:
+  from: -1449
+  to: -1449
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1450 a.e.c.
+places:
+- timnat-serah
+people:
+- josue-hijo-de-nun
+type: death
+roles:
+  josue-hijo-de-nun: died
+passages:
+- Jos 24:29
+- Jos 24:30
+- Jue 2:8, 9
+summary: Josué muere a los 110 años, después de pedir al pueblo que sirva solo a Jehová. Lo entierran en Timnat-Sérah, su
+  ciudad de las montañas de Efraín. Por esas fechas se completa el libro que lleva su nombre.
+reason: 'El cuadro del estudio 3 pone hacia 1450 a.e.c. la muerte de Josué y el final de su libro; la Tabla de los libros da
+  la misma fecha. Perspicacia «Timnat-sérah»: lo enterraron en la ciudad que había edificado.'
+sources:
+- si-3
+- tnm-tabla
+- josue-24
+- it-timnat-serah
+search: muerte de Josué
+history:
+- date: '2026-09-29'
+  change: 'Se añade dónde lo enterraron, Timnat-Sérah (Jos 24:30), que faltaba: el suceso no tenía lugar.'
+  source: josue-24
+- date: '2026-09-29'
+  change: La razón dice de dónde sale el lugar del entierro, Perspicacia «Timnat-sérah» y Jos 24:30.
+  source: josue-24
+checked_on: '2026-09-29'
+status: verified

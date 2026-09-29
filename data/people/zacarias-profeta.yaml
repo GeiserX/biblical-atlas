@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-profeta
+name: Zacarías (profeta)
+names:
+- name: Zacarías
+disambiguation: El profeta y escritor del libro de Zacarías; no el padre de Juan el Bautista ni el hijo del sumo sacerdote
+  Jehoiadá.
+date:
+  from: -519
+  to: -517
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 520-518 a.e.c.
+distinct_from:
+- zacarias-padre-de-juan
+- zacarias-de-israel
+- zacarias-hijo-de-jehoiada
+summary: Profeta posterior al destierro, hijo de Berekías y nieto de Idó. Se unió a Ageo unos dos meses después para animar
+  a terminar el templo; sus mensajes abarcan dos años y un mes.
+reason: Perspicacia «Zacarías», núm. 20, y «Ageo»; Zac 1:1 lo fecha en el octavo mes del segundo año de Darío. La Tabla de
+  los libros da 520-518 para su libro.
+sources:
+- it-zacarias
+- it-ageo
+- zacarias-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  type: perspicacia
+- title: Zacarías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/1
+  type: bible
+not_claimed:
+- 'Que naciera en Babilonia: Perspicacia lo da como probable.'
+relations:
+- type: lived_in
+  place: jerusalen
+  date:
+    from: -519
+    to: -517
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 520-518 a.e.c.
+  inferred: false
+  sources:
+  - it-zacarias
+  - tnm-tabla
+  reason: 'Perspicacia «Zacarías», núm. 20: animó a los repatriados en Jerusalén; la Tabla de los libros sitúa allí la escritura
+    de su libro.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

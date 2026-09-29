@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: satanas-pone-en-duda-la-integridad-de-job
+title: Satanás pone en duda la integridad de Job
+date:
+  from: -1612
+  to: -1612
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1613 a.e.c.
+narrative_order:
+  series: job
+  order: 1006
+places: []
+people:
+- satanas
+- job
+passages:
+- Job 1:6-12
+summary: Los ángeles se presentan ante Jehová y Satanás va con ellos. Jehová elogia a Job; Satanás replica que le sirve por
+  interés y recibe permiso para quitarle cuanto tiene, sin tocarlo a él.
+reason: 'Job 1:6-12: la escena pasa ante Jehová, no en la tierra, así que no lleva lugar. El cuadro del estudio 3 pone la prueba
+  de Job antes de 1613 a.e.c.; Perspicacia «Job» (párr. 2), hacia 1613.'
+sources:
+- job-1
+- si-3
+- it-job
+- it-satanas
+links:
+- title: Job 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

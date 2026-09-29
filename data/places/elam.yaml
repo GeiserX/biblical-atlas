@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elam
+name: Elam
+names:
+- name: Elam
+type: country
+lat: 32.18922
+lon: 48.25778
+precision: zone
+coord_source: openbible:a7e3a59
+coord_url: https://www.openbible.info/geo/ancient/a7e3a59/elam
+coord_note: Punto de Susa, que quizá fue su capital, como representativo del país.
+summary: País del suroeste del actual Irán, regado por el Karun y el Kerja, cuya capital fue quizá Susa. Sus arqueros se
+  unieron a Media contra Babilonia en 539 a.e.c.
+reason: 'Perspicacia «Elam», núm. 1, apartados sobre situación e historia (Is 21:2; Da 8:2). Coordenada de OpenBible: el
+  punto de Susa, como representativo.'
+sources:
+- it-elam
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001274
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

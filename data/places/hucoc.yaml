@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hucoc
+name: Hucoc
+names:
+- name: Hucoc
+- name: Huqqoq
+  note: Grafía de la nota de Jos 19:34 y de Perspicacia.
+type: city
+lat: 32.8847
+lon: 35.4789
+precision: uncertain
+coord_source: openbible:a901903
+coord_url: https://www.openbible.info/geo/ancient/a901903/hukkok
+coord_note: Punto de Yaquq, segunda identificación de OpenBible, que es la moderna Huqoq que nombra Perspicacia.
+summary: Ciudad de la frontera de Neftalí identificada con la moderna Huqoq, unos 7 km al oeste del norte del mar de Galilea.
+  Algunos creen que está demasiado al norte y al este.
+reason: 'Perspicacia «Huqqoq»; Jos 19:34. OpenBible: solo el punto.'
+sources:
+- it-huqqoq
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Huqqoq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002098
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

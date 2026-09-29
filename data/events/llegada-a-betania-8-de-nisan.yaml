@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: llegada-a-betania-8-de-nisan
+title: Llega a Betania a seis días de la Pascua
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 8 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 8
+places:
+- betania
+people:
+- jesus
+passages:
+- Jn 11:55-12:1
+summary: Jesús llega a Betania hacia la puesta del sol con la que empieza el 8 de nisán, que era sábado, seis días
+  antes de la Pascua.
+reason: La tabla A7-G da el día y el lugar. La nota de Jn 12:1 y B12-A precisan que era sábado.
+sources:
+- tnm-a7-g
+- juan-11
+- juan-12
+- jy-cap-101
+- tnm-b12-a
+narrative_order:
+  series: a7
+  order: 92
+search: Llega a Betania
+checked_on: '2026-09-28'
+status: verified

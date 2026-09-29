@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ararat
+name: Ararat
+names:
+- name: Ararat
+- name: Montañas de Ararat
+  note: Donde se detuvo el arca (Gé 8:4).
+- name: Tierra de Ararat
+  note: Adonde huyeron los hijos de Senaquerib (2Re 19:37).
+- name: Urartu
+  note: Nombre que le dan inscripciones de reyes asirios de los siglos IX-VIII a.e.c.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Región montañosa del lago de Van (Urartu)
+  geometry:
+    type: zone
+    lat: 39.702761
+    lon: 44.300381
+    radius_km: 250
+  checked_on: '2026-09-28'
+  status: favored_level_1
+  sources:
+  - it-ararat
+  - openbible-geo
+  reason: Perspicacia deduce de las inscripciones asirias y de Jeremías que la tierra de Ararat estaba en las montañas del
+    lago de Van, entre la cabecera del Tigris y el Cáucaso (párr. 4).
+  note: 'Centro: punto de OpenBible para Urartu, que cae sobre el monte Ararat. El radio de 250 km es nuestro.'
+  coord_source: openbible:ab89be9
+  coord_url: https://www.openbible.info/geo/ancient/ab89be9/ararat
+- name: Monte Ararat (Agri Dagi)
+  geometry:
+    type: point
+    lat: 39.702761
+    lon: 44.300381
+  checked_on: '2026-09-28'
+  status: tradition
+  sources:
+  - it-ararat
+  - genesis-8
+  reason: Gé 8:4 habla de montañas, no de un pico. La tradición pone el arca en el monte más alto de la región, de unos 5.165
+    m (párr. 5).
+  coord_source: openbible:ab89be9
+  coord_url: https://www.openbible.info/geo/ancient/ab89be9/ararat
+summary: Cadena de montañas y región al norte de Asiria donde se posó el arca después del Diluvio. La Biblia habla de montañas
+  en plural; la tradición elige el monte más alto.
+reason: Perspicacia «Ararat» (párr. 3-5), Gé 8:4, 2Re 19:37 y Jer 51:27.
+sources:
+- it-ararat
+- genesis-8
+- openbible-geo
+links:
+- title: 'Perspicacia: «Ararat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000338
+  type: perspicacia
+- title: Génesis 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/8
+  type: bible
+checked_on: '2026-09-28'
+status: verified

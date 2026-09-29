@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: llaves-del-reino
+title: Pedro reconoce al Cristo; las llaves del Reino
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Tras la Pascua de 32 e.c.
+places:
+- cesarea-de-filipo
+people:
+- jesus
+- pedro
+roles:
+  jesus: spoke
+passages:
+- Mt 16:13-28
+- Mr 8:27-9:1
+- Lu 9:18-27
+summary: Cerca de Cesarea de Filipo, Pedro reconoce que Jesús es el Cristo. Jesús le promete las llaves del Reino
+  y anuncia por primera vez que lo matarán y resucitará.
+reason: La tabla A7-E da cuándo y dónde. La nota de Mt 16:13 sitúa la ciudad al pie del Hermón, unos 40 km al norte
+  del mar de Galilea.
+sources:
+- tnm-a7-e
+- mateo-16
+- marcos-8
+- marcos-9
+- lucas-9
+- jy-cap-59
+- jy-cap-60
+narrative_order:
+  series: a7
+  order: 57
+search: Pedro reconoce al Cristo
+checked_on: '2026-09-29'
+status: verified

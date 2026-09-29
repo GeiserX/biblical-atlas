@@ -40,7 +40,7 @@ Los ejemplos bíblicos se comprobaron en wol.jw.org. La lista de comprobaciones,
 | **Quien empieza** | Lee Hechos por primera vez y no sabe dónde está Galacia. | Ver a Pablo moverse por un mapa que reconoce, con nombres antiguos y modernos. |
 | **Quien prepara** | Prepara un discurso o la lectura de la semana. | Llegar a «Hch 18» en un paso, entender el contexto y copiar una referencia limpia. |
 | **Un joven** | Aprende mejor tocando y probando. | Arrastrar el tiempo, ver qué cambia y ponerse a prueba. |
-| **Una familia** | Estudia junta frente a una pantalla grande. | Letra grande, un recorrido guiado y preguntas para cada edad. |
+| **Varias personas ante una pantalla** | Estudian juntas frente a una pantalla grande. | Letra grande, un recorrido guiado y preguntas para cada edad. |
 | **En el móvil, en la reunión** | Una mano, poca luz, sin sonido, quizá sin cobertura. | Buscar un capítulo y ver el mapa sin distracciones ni carga lenta. |
 
 Cada idea de este catálogo debe servir a al menos uno de estos perfiles. Si no sirve a ninguno, sobra.
@@ -726,9 +726,9 @@ Buscar es seleccionar. El resultado de una búsqueda es un **nodo con sus vecino
 - **Por qué ayuda:** motiva sin recoger datos.
 - **Coste:** S · **Prioridad:** después
 
-#### A-10 · Modo familia
+#### A-10 · Modo pantalla compartida
 - **Qué ves y haces:** letra grande, pocos controles, un recorrido y preguntas por nivel (niños, jóvenes, adultos). Un botón de turnos pasa la pregunta al siguiente.
-- **Por qué ayuda:** una familia estudia junta frente a la televisión o un portátil.
+- **Por qué ayuda:** varias personas estudian juntas frente a la televisión o un portátil.
 - **Coste:** M · **Prioridad:** después
 
 #### A-11 · Modo presentación
@@ -762,7 +762,7 @@ Buscar es seleccionar. El resultado de una búsqueda es un **nodo con sus vecino
 - **Coste:** S · **Prioridad:** después
 
 #### A-17 · Iconos sencillos para niños
-- **Qué ves y haces:** un conjunto de iconos propio (barco, calzada, carta, prisión) sustituye a los textos largos en el modo familia.
+- **Qué ves y haces:** un conjunto de iconos propio (barco, calzada, carta, prisión) sustituye a los textos largos en el modo pantalla compartida.
 - **Por qué ayuda:** los niños que aún no leen con soltura siguen la historia.
 - **Coste:** M · **Prioridad:** quizá
 
@@ -924,7 +924,7 @@ Todo dato lleva su fuente. **Nivel 1**: la TNM y las publicaciones de wol.jw.org
 
 #### D-14 · Lámina para imprimir
 - **Qué ves y haces:** «Imprimir» genera una lámina A4 o A3 de la vista actual: mapa, línea de tiempo del tramo, leyenda, fecha, fuentes y QR.
-- **Por qué ayuda:** una clase o una familia sin pantalla sigue usando el material.
+- **Por qué ayuda:** una clase o un grupo sin pantalla sigue usando el material.
 - **Coste:** M · **Prioridad:** después
 
 #### D-15 · Exportar imagen vectorial
@@ -949,7 +949,7 @@ Todo dato lleva su fuente. **Nivel 1**: la TNM y las publicaciones de wol.jw.org
 El repositorio guarda un archivo YAML por entidad: persona, lugar, evento, viaje, periodo, hallazgo. Cada cambio es una solicitud de cambio (PR) revisable.
 
 #### P-01 · Un archivo por entidad
-- **Qué ves y haces:** `data/lugares/corinto.yaml` contiene coordenadas, nombres por idioma, periodos y fuentes. Un cambio en Corinto toca sólo ese archivo.
+- **Qué ves y haces:** `data/places/corinto.yaml` contiene coordenadas, nombres por idioma, periodos y fuentes. Un cambio en Corinto toca sólo ese archivo.
 - **Por qué ayuda:** las revisiones son pequeñas y claras.
 - **Coste:** S · **Prioridad:** primer corte
 

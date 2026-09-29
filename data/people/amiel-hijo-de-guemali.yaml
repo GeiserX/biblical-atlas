@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amiel-hijo-de-guemali
+name: Amiel
+names:
+- name: Amiel
+perspicacia: 1200000233#1
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+disambiguation: Amiel hijo de Guemalí, espía de Dan; no el padre de Makir de Lo-Debar ni el padre de Bat-Seba.
+summary: Uno de los jefes de la tribu de Dan, hijo de Guemalí, elegido entre los doce espías que Moisés mandó a Canaán. Fue de los diez
+  que desanimaron al pueblo con su informe. Murió por el castigo de Jehová.
+reason: Perspicacia «Amiel», núm. 1; Nú 13:12, 31-33; 14:36-38 (solo Josué y Caleb se salvan).
+sources:
+- it-amiel
+- numeros-13
+- numeros-14
+- it-espias
+links:
+- title: 'Perspicacia: «Amiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000233
+  type: perspicacia
+- title: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  type: bible
+relations:
+- type: kin
+  person: guemali
+  word: father
+  inferred: false
+  sources:
+  - numeros-13
+  - it-amiel
+  reason: Nú 13:12 lo llama hijo de Guemalí.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahlon
+name: Mahlón
+names:
+- name: Mahlón
+perspicacia: '1200002852'
+summary: Hijo de Elimélec y Noemí. Se fue con su familia de Belén a Moab, se casó allí con la moabita Rut y murió sin dejar
+  hijos.
+reason: Perspicacia «Mahlón»; Rut 1:1-5 y 4:10.
+sources:
+- it-mahlon
+- rut-1
+- rut-4
+links:
+- title: 'Perspicacia: «Mahlón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002852
+  type: perspicacia
+relations:
+- type: kin
+  person: elimelec
+  word: father
+  inferred: false
+  sources:
+  - rut-1
+  reason: Rut 1:2.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: noemi
+  word: mother
+  inferred: false
+  sources:
+  - rut-1
+  reason: Rut 1:2.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: kilion
+  word: brother
+  inferred: false
+  sources:
+  - rut-1
+  reason: 'Rut 1:2: los dos hijos de Elimélec y Noemí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: moab
+  inferred: false
+  sources:
+  - rut-1
+  reason: 'Rut 1:4, 5: murió en Moab unos diez años después de llegar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rut
+  word: wife
+  inferred: false
+  sources:
+  - rut-4
+  reason: Rut 4:10 llama a Rut viuda de Mahlón.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

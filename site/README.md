@@ -2,7 +2,7 @@
 
 El sitio de biblical-earth: un mapa, una línea de tiempo de 4026 a.e.c. al año 100 y una ficha, gobernados por un solo cursor de tiempo. Encima van las vistas de estudio: grafo de personas, conexión entre dos, modo lectura, recorridos guiados, portada, «Ahora mismo» y sincronía.
 
-Al lado hay dos páginas sueltas. [`acerca.html`](acerca.html) explica el proyecto, cómo se lee y cómo tratamos las fuentes, y da las gracias, con su licencia, a quienes ponen los datos y los enlaces. [`calendario.html`](calendario.html) explica los meses de la Biblia con los hechos de `data/calendario.yaml`. Las dos enlazan de vuelta al mapa, a la vista desde la que se llegó, y abren igual con servidor que desde `file://`. El mapa les pasa esa vista al pulsar el enlace: al calendario en `#desde=…` y a «Acerca de» en `?desde=…`, porque su `#` es la sección (`#gracias`).
+Al lado hay dos páginas sueltas. [`acerca.html`](acerca.html) explica el proyecto, cómo se lee y cómo tratamos las fuentes, y da las gracias, con su licencia, a quienes ponen los datos y los enlaces. [`calendario.html`](calendario.html) explica los meses de la Biblia con los hechos de `data/calendar.yaml`. Las dos enlazan de vuelta al mapa, a la vista desde la que se llegó, y abren igual con servidor que desde `file://`. El mapa les pasa esa vista al pulsar el enlace: al calendario en `#desde=…` y a «Acerca de» en `?desde=…`, porque su `#` es la sección (`#gracias`).
 
 Es un sitio estático. No hay framework ni paso de compilación para la aplicación: `index.html`, `acerca.html`, `calendario.html`, los scripts de `js/` y las hojas de `css/` se sirven tal cual.
 
@@ -27,9 +27,9 @@ El mapa lleva solo la atribución que piden las licencias (OpenBible.info, el re
 
 - `data.json`: lo escribe [`scripts/build.py`](../scripts/build.py) a partir de los YAML de [`data/`](../data/). No se edita a mano: para cambiar un dato, edita el YAML y vuelve a compilar. El formato es `biblical-earth/v0` y está descrito en [`docs/ideas/modelo-de-datos.md`](../docs/ideas/modelo-de-datos.md).
 - `data.js`: el mismo contenido que `data.json`, envuelto en `window.BIBLICAL_EARTH_DATA = …;`. Solo se usa al abrir el sitio desde `file://`, donde `fetch` no funciona. También lo escribe `scripts/build.py`, así que nunca se queda atrás.
-- `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/indexar.py`](../scripts/videos/indexar.py). Si falta, la ficha de lugar no enseña esa sección.
-- `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/pasajes.py`](../scripts/videos/pasajes.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
-- `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `indexar.py` y lo lee la ficha de persona. Si falta, o desde `file://`, la sección no sale.
+- `videos.json`: vídeos de jw.org que nombran cada lugar, con la forma `{ "<id de lugar>": [ { "titulo", "url", "publicado", "menciones" } ] }`. Lo escribe [`scripts/videos/index.py`](../scripts/videos/index.py). Si falta, la ficha de lugar no enseña esa sección.
+- `videos-pasajes.json`: vídeos que citan cada capítulo, con la forma `{ "<libro>": { "serie": [ … ], "capitulos": { "16": [ … ] } } }`. Lo escribe [`scripts/videos/passages.py`](../scripts/videos/passages.py) y lo leen la ficha de pasaje y el modo lectura. Si falta, la sección no sale.
+- `videos-personas.json`: vídeos que nombran cada persona, con la misma forma que `videos.json`. Lo escribe `index.py` y lo lee la ficha de persona. Si falta, o desde `file://`, la sección no sale.
 
 El método de los tres índices está en [`docs/investigacion/videos-jw.md`](../docs/investigacion/videos-jw.md).
 
@@ -243,7 +243,7 @@ Lo que queda por debajo de 44 px tiene su equivalente de 44: «Carriles +N» y �
 `index.html?datos=_local/<nombre>/data.json` carga otro `data.json`. Solo acepta rutas dentro de `_local/` que acaben en `.json`; cualquier otra cosa enseña un error en la ficha. Desde `file://` carga el `data.js` de la misma carpeta. Para compilar ahí sin pisar `site/data.json`:
 
 ```bash
-python3 scripts/build.py --salida site/_local/<nombre>/
+python3 scripts/build.py --out site/_local/<nombre>/
 ```
 
 ## Cómo se repartió el trabajo

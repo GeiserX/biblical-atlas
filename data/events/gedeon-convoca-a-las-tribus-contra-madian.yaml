@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: gedeon-convoca-a-las-tribus-contra-madian
+title: Gedeón convoca a las tribus contra Madián
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: en tiempos de los jueces, antes de Jefté)'
+narrative_order:
+  series: jueces
+  order: 6033
+places:
+- valle-de-jezreel
+- manases
+- aser
+- zabulon
+- neftali
+people:
+- gedeon
+present: []
+passages:
+- Jue 6:33-35
+summary: Madianitas, amalequitas y orientales cruzan el río y acampan en el valle de Jezreel. El espíritu de Jehová viene
+  sobre Gedeón, que toca el cuerno y reúne a los abí-ezritas y a hombres de Manasés, Aser, Zabulón y Neftalí.
+reason: 'Perspicacia «Gedeón», párr. 5, y «Jezreel», núm. 5; Jue 6:33-35. No dice dónde tocó Gedeón el cuerno, así que el suceso
+  no lo sitúa. Límites: Jueces desde c. 1450 (tabla de libros); Jefté desde c. 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-6
+- it-gedeon
+- it-jezreel
+- tnm-tabla
+- it-jefte
+- it-jueces
+links:
+- title: Jueces 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  type: bible
+- title: 'Perspicacia: «Gedeón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
+  type: perspicacia
+search: Gedeón convoca Manasés Aser Zabulón Neftalí Jezreel
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esli
+name: Eslí
+names:
+- name: Eslí
+perspicacia: '1200001429'
+summary: Antepasado de Jesús que vivió después del destierro. En la lista de Lucas es hijo de Nagái y padre de Nahúm.
+reason: Perspicacia «Eslí»; Lu 3:25.
+sources:
+- it-esli
+- lucas-3
+links:
+- title: 'Perspicacia: «Eslí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001429
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: nagai
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:25: Eslí, hijo de Nagái.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

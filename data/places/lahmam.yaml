@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lahmam
+name: Lahmam
+names:
+- name: Lahmam
+type: city
+lat: 31.57183
+lon: 34.896
+precision: point
+coord_source: openbible:a62aa3a
+coord_url: https://www.openbible.info/geo/ancient/a62aa3a/lahmam
+summary: Población de Judá en la Sefelá, que suele identificarse con Khirbet el-Lahm (Horvat Lehem), unos 5 km al este de
+  Lakís.
+reason: 'Perspicacia «Lahmam»; Jos 15:40. OpenBible: solo el punto.'
+sources:
+- it-lahmam
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Lahmam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002665
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

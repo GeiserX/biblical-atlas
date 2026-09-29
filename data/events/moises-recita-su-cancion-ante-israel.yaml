@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-recita-su-cancion-ante-israel
+title: Moisés recita su canción ante Israel
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 131030
+places:
+- llanuras-deserticas-de-moab
+people:
+- moises
+- josue-hijo-de-nun
+passages:
+- Dt 31:30
+- Dt 32:1-47
+summary: 'Moisés, junto con Josué, recita a toda la congregación la canción que Jehová le mandó escribir: alaba a Dios como
+  la Roca y advierte de lo que vendrá si lo abandonan. Luego les pide tomarse en serio la Ley.'
+reason: 'Perspicacia «Deuteronomio, Libro de»: en 1473 a.e.c. el libro reúne cuatro discursos, una canción y una bendición.
+  «Josué», núm. 1: ayudó a escribir y enseñar la canción (Dt 31:19; 32:44). Va tras Números en su serie.'
+sources:
+- deuteronomio-31
+- deuteronomio-32
+- it-deuteronomio-libro
+- it-josue
+- si-3
+links:
+- title: Deuteronomio 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/31
+  type: bible
+- title: Deuteronomio 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/32
+  type: bible
+- title: 'Perspicacia: «Deuteronomio, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001163
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

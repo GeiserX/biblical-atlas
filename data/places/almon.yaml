@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: almon
+name: Almón
+names:
+- name: Almón
+- name: Alémet
+  note: Nombre que le da 1Cr 6:60.
+type: city
+lat: 31.824903
+lon: 35.273498
+precision: point
+coord_source: openbible:ada3369
+coord_url: https://www.openbible.info/geo/ancient/ada3369/almon
+coord_note: Khirbet ʽAlmit (Horvat ʽAlmit), cerca de Anatot, donde Perspicacia sitúa la ciudad.
+summary: Ciudad levita de Benjamín, a poca distancia de Anatot, que recibieron los sacerdotes descendientes de Aarón. 1 Crónicas
+  6:60 la llama Alémet.
+reason: 'Perspicacia «Almón»; Jos 21:18. OpenBible: solo el punto.'
+sources:
+- it-almon
+- openbible-geo
+- josue-21
+links:
+- title: 'Perspicacia: «Almón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000203
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

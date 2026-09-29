@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bered
+name: Béred
+names:
+- name: Béred
+- name: Bered
+  note: Grafía de Perspicacia.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: Lugar del sur de Palestina. El pozo donde el ángel habló a Agar estaba entre Béred y Cadés, en el camino hacia Sur.
+reason: Perspicacia «Bered», núm. 2; Gé 16:14. Ni jw.org ni el texto lo sitúan, así que no damos punto ni zona.
+sources:
+- it-bered
+- genesis-16
+links:
+- title: 'Perspicacia: «Bered»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000651
+  type: perspicacia
+checked_on: '2026-09-29'
+status: pending

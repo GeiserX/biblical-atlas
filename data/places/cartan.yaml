@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cartan
+name: Cartán
+names:
+- name: Cartán
+type: city
+lat: 33.111944
+lon: 35.4625
+precision: point
+coord_source: openbible:a4959d5
+coord_url: https://www.openbible.info/geo/ancient/a4959d5/kartan
+coord_note: Khirbet el-Qureiyeh, al oeste del valle del Huleh, donde se la suele situar.
+summary: Ciudad de Neftalí que se dio a los guersonitas. Al parecer es la que 1 Crónicas 6:76 llama Quiryataim.
+reason: 'Perspicacia «Qartán»; Jos 21:32. OpenBible: solo el punto.'
+sources:
+- it-qartan
+- openbible-geo
+- josue-21
+links:
+- title: 'Perspicacia: «Qartán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002577
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

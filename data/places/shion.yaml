@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: shion
+name: Shion
+names:
+- name: Shion
+- name: Shión
+  note: Grafía de Perspicacia.
+type: city
+lat: 32.712202
+lon: 35.344494
+precision: uncertain
+coord_source: openbible:a03f6cf
+coord_url: https://www.openbible.info/geo/ancient/a03f6cf/shion
+coord_note: Punto de ʽAyun esh-Shaʽin, segunda identificación de OpenBible, que es la que da Perspicacia.
+summary: Ciudad de Isacar. ʽAyun esh-Shaʽin, un poco al este de Nazaret, quizá conserva su nombre, y con reservas se la identifica
+  con ella.
+reason: 'Perspicacia «Shión»; Jos 19:19. OpenBible: solo el punto.'
+sources:
+- it-shion
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Shión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004062
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joab-hijo-de-zeruya
+name: Joab
+names:
+- name: Joab
+perspicacia: 1200002469#2
+disambiguation: El jefe del ejército de David, hijo de Zeruyá, hermana del rey; no Joab, hijo de Seraya, de Judá, ni los cabezas
+  de familia que volvieron del destierro.
+summary: 'Sobrino de David y jefe de su ejército. General capaz, pero vengativo: mató a Abner, a Absalón y a Amasá. Tras apoyar
+  a Adonías, Salomón lo mandó ejecutar.'
+reason: Perspicacia «Joab», núm. 2; 2Sa 8:16 y 1Re 2:28-34. Según el encabezamiento de Sal 60, a su regreso venció a Edom en
+  el valle de la Sal, con 12.000 edomitas muertos.
+sources:
+- it-joab
+- salmos-60
+links:
+- title: 'Perspicacia: «Joab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
+  type: perspicacia
+- title: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: uncle
+  inferred: false
+  sources:
+  - it-joab
+  reason: Su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:13-16; Perspicacia «Joab», núm. 2).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

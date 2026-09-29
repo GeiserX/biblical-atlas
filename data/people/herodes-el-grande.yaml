@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: herodes-el-grande
+name: Herodes el Grande
+names:
+- name: Herodes el Grande
+- name: Herodes
+disambiguation: Rey de Judea cuando nació Jesús, padre de Arquelao y de Herodes Antipas; no es el Herodes que mató a Juan
+  el Bautista.
+distinct_from:
+- herodes-antipas
+- herodes-agripa-i
+- herodes-agripa-ii
+date:
+  from: -38
+  to: 0
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 39-1 a.e.c.
+alternatives:
+- date:
+    from: -4
+    to: -3
+    precision: range
+    approx: false
+    type: anchored
+    chronology: secular
+    text: muerte en 5 o 4 a.e.c.
+  sources:
+  - it-herodes
+  note: Fecha de muerte que dan algunos cronólogos siguiendo a Josefo y un eclipse parcial de 4 a.e.c.; Perspicacia prefiere
+    1 a.e.c.
+summary: Rey de Judea de familia idumea, nombrado por Roma hacia 39 a.e.c. y constructor del templo que conoció Jesús. Desconfiado
+  y cruel, mandó matar a los niños de Belén poco antes de morir, probablemente en 1 a.e.c.
+reason: 'Perspicacia «Herodes» (núm. 1: «Rey de Judea», «El templo», «Matanza de niños» y «Fecha de su muerte») da el nombramiento,
+  las obras y la fecha probable de su muerte.'
+sources:
+- it-herodes
+- mateo-2
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - mateo-2
+  - jy-cap-7
+  reason: 'Mt 2:1-7: recibe a los astrólogos en Jerusalén y convoca allí a los jefes de los sacerdotes y a los escribas.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: judea
+  office: king
+  inferred: false
+  sources:
+  - lucas-1
+  - mateo-2
+  - it-herodes
+  reason: Lu 1:5 lo llama rey de Judea y Mt 2:1 habla de los días del rey Herodes.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  type: perspicacia
+- title: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  type: bible
+perspicacia: 1200002000#1
+checked_on: '2026-09-29'
+status: verified

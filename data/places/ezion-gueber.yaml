@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ezion-gueber
+name: Ezión-Guéber
+names:
+- name: Ezión-Guéber
+type: port
+lat: 29.547181
+lon: 34.980258
+precision: uncertain
+coord_source: openbible:a8e53d5
+coord_url: https://www.openbible.info/geo/ancient/a8e53d5/ezion-geber
+coord_note: Punto de Tell el-Kheleifeh, segunda identificación de OpenBible, el sitio que según Perspicacia aceptan la mayoría
+  de los geógrafos. Allí no ha salido nada de la época de Moisés. Perspicacia no nombra la primera, Jezirat Faraun.
+summary: Campamento de Israel cuando ya acababan los cuarenta años de desierto, quizá en la cabecera del golfo de ʽAqaba.
+  Siglos después Salomón construyó allí una flota.
+reason: 'Perspicacia «Ezión-guéber»; Nú 33:35, 36. OpenBible: solo el punto.'
+sources:
+- it-ezion-gueber
+- tnm-b3
+- openbible-geo
+- numeros-33
+- deuteronomio-2
+links:
+- title: 'Perspicacia: «Ezión-guéber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001473
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

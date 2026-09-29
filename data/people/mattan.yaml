@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mattan
+name: Mattán
+names:
+- name: Mattán
+perspicacia: '1200002936'
+summary: Antepasado de José, el esposo de María. Mateo lo da como padre de Jacob, así que sería el abuelo de José.
+reason: Perspicacia «Mattán»; Mt 1:15, 16.
+sources:
+- it-mattan
+- mateo-1
+links:
+- title: 'Perspicacia: «Mattán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002936
+  type: perspicacia
+relations:
+- type: kin
+  person: eleazar-hijo-de-eliud
+  word: father
+  inferred: false
+  sources:
+  - mateo-1
+  reason: Mt 1:15.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

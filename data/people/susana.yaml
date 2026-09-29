@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: susana
+name: Susana
+names:
+- name: Susana
+perspicacia: '1200004267'
+summary: Una de las mujeres que Jesús había curado y que, hacia el año 31, lo acompañaban por Galilea y sostenían con sus
+  propios bienes a él y a los Doce.
+reason: Perspicacia «Susana»; Lu 8:1-3.
+sources:
+- it-susana
+- lucas-8
+links:
+- title: 'Perspicacia: «Susana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004267
+  type: perspicacia
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - lucas-8
+  - it-susana
+  reason: 'Lu 8:1-3: iba con Jesús y los Doce y los atendía con lo que tenía.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

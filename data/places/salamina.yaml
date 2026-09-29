@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: salamina
+name: Salamina
+names:
+- name: Salamina
+type: city
+lat: 35.18494
+lon: 33.90194
+precision: point
+coord_source: openbible:afa863b
+coord_url: https://www.openbible.info/geo/ancient/afa863b/salamis
+summary: Ciudad del este de Chipre con más de una sinagoga; primera parada del primer viaje en la isla.
+reason: 'Perspicacia («Salamina») describe el lugar; aparece en Hch 13:5. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-salamina
+- hch-13
+- openbible-geo
+links:
+- title: 'Perspicacia: «Salamina»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003798
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-27'
+status: verified

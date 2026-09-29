@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: cencreas
-generado: "2026-09-28"
+place: cencreas
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwbvod25_47_VIDEO"
-    titulo: "Mark Noumair: Febe, una ministra que defendió a los cristianos (Rom. 16:1-3)"
+    title: "Mark Noumair: Febe, una ministra que defendió a los cristianos (Rom. 16:1-3)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_47_VIDEO&appLanguage=S"
-    publicado: "2025-11-28"
-    menciones: 3
-    terminos:
+    published: "2025-11-28"
+    hits: 3
+    terms:
       "Cencreas": 3

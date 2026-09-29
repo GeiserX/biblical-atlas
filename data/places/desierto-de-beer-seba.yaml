@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-beer-seba
+name: Desierto de Beer-Seba
+names:
+- name: Desierto de Beer-Seba
+type: desert
+lat: 31.244722
+lon: 34.840833
+precision: zone
+coord_source: openbible:ad2f6c2
+coord_url: https://www.openbible.info/geo/ancient/ad2f6c2/beersheba-1
+coord_note: Punto de Beer-Seba en OpenBible, el mismo que la ficha de la ciudad; el desierto la rodea y no tiene punto propio.
+summary: Tierra seca alrededor de Beer-Seba, en el Négueb. Por allí anduvo sin rumbo Agar con Ismael cuando Abrahán los despidió,
+  hasta que Dios le hizo ver un pozo.
+reason: 'Perspicacia «Beer-seba», párr. 4, e «Ismael», núm. 1; Gé 21:14-19. Punto de OpenBible de la ciudad: solo tomamos el
+  punto.'
+sources:
+- it-beer-seba
+- it-ismael
+- genesis-21
+- openbible-geo
+links:
+- title: 'Perspicacia: «Beer-seba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000615
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

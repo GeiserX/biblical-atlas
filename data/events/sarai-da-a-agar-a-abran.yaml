@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sarai-da-a-agar-a-abran
+title: Sarái da a Agar a Abrán como esposa
+date:
+  from: -1932
+  to: -1931
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1933 y 1932 a.e.c. (tiempo narrativo: a los diez años en Canaán y antes de nacer Ismael)'
+narrative_order:
+  series: genesis
+  order: 16001
+places:
+- canaan
+people:
+- sara
+- agar
+- abrahan
+present: []
+passages:
+- Gé 16:1-6
+summary: Sarái, que no tiene hijos, da su sierva egipcia Agar a Abrán para tener hijos por medio de ella. Agar queda embarazada
+  y desprecia a su ama; Sarái la humilla y Agar huye.
+reason: 'Gé 16:3: Abrán llevaba diez años en Canaán; el estudio 3 cita ese versículo junto a 1933 a.e.c., e Ismael nace en
+  1932. No se dice en qué parte de Canaán, así que no sitúa a nadie.'
+sources:
+- si-3
+- it-sara
+- it-agar
+- genesis-16
+links:
+- title: Génesis 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

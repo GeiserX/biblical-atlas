@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: empieza-el-reparto-de-canaan-en-guilgal
+title: Empieza en Guilgal el reparto de Canaán por sorteo
+date:
+  from: -1466
+  to: -1466
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1467 a.e.c.
+narrative_order:
+  series: josue
+  order: 14001
+places:
+- guilgal
+- canaan
+people:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+present:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+passages:
+- Jos 14:1-5
+summary: El sacerdote Eleazar, Josué y los jefes de las tribus sortean la herencia de nueve tribus y media, como Jehová mandó
+  por Moisés. José cuenta como dos tribus y los levitas solo reciben ciudades con pastos.
+reason: 'Perspicacia «Josué» y «Guilgal», núm. 1: el reparto empezó en Guilgal y acabó en Siló. «Isaac» lo pone en 1467 a.e.c.,
+  al acabar la campaña, el año de la petición de Caleb (estudio 3).'
+sources:
+- josue-14
+- it-josue
+- it-guilgal
+- si-3
+- it-isaac
+links:
+- title: Josué 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
+  type: bible
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

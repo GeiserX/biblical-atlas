@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-danitas-roban-los-idolos-de-miqueas
+title: Los danitas roban los ídolos de Miqueas y se llevan a su sacerdote
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+narrative_order:
+  series: josue
+  order: 19046
+places:
+- region-montanosa-de-efrain
+people:
+- miqueas-de-efrain
+- jonatan-levita
+passages:
+- Jue 18:13-26
+summary: De paso por la casa de Miqueas, los danitas se llevan sus imágenes, el efod y los terafim, y convencen al levita
+  de servir a toda una tribu. Miqueas los alcanza con sus vecinos, pero se retira.
+reason: Jue 18 lo pone poco antes de tomar Lais, que Perspicacia «Jueces, Libro de», «Orden del libro», sitúa antes de morir
+  Josué, c. 1450; la conquista general acabó en 1467 (estudio 3). Va en la serie josue, antes de los-danitas-toman-lesem.
+sources:
+- jueces-18
+- it-miqueas
+- it-jonatan
+- si-3
+- it-jueces
+links:
+- title: Jueces 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

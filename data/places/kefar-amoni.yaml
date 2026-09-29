@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kefar-amoni
+name: Kefar-Amoní
+names:
+- name: Kefar-Amoní
+type: city
+lat: 31.96609
+lon: 35.24758
+precision: uncertain
+coord_source: openbible:a2cb16b
+coord_url: https://www.openbible.info/geo/ancient/a2cb16b/chephar-ammoni
+coord_note: Punto de OpenBible en Khirbet Kefr ʽAna, con que hay quien la identifica.
+summary: Pueblo de la herencia de Benjamín cuyo nombre significa «pueblo de los ammonitas». No se sabe con certeza dónde estaba.
+reason: 'Perspicacia «Kefar-amoní»; Jos 18:24. OpenBible: solo el punto.'
+sources:
+- it-kefar-amoni
+- openbible-geo
+- josue-18
+links:
+- title: 'Perspicacia: «Kefar-amoní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000940
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

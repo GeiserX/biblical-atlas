@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hira
+name: Hirá
+names:
+- name: Hirá
+perspicacia: '1200002034'
+summary: Hombre de Adulam, amigo de Judá. Judá acampó cerca de él, y más tarde lo mandó con un cabrito a recuperar la prenda
+  que había dejado a la supuesta prostituta.
+reason: Perspicacia «Hirá» y «Adulam», párr. 2; Gé 38:1, 12, 20-23.
+sources:
+- it-hira
+- it-adulam
+- genesis-38
+links:
+- title: 'Perspicacia: «Hirá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002034
+  type: perspicacia
+relations:
+- type: lived_in
+  place: adulam
+  inferred: false
+  sources:
+  - genesis-38
+  - it-adulam
+  reason: 'Gé 38:1, 12: el texto lo llama adulamita, natural de Adulam.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: juda-hijo-de-jacob
+  word: friend
+  inferred: false
+  sources:
+  - genesis-38
+  reason: 'Gé 38:12, 20: el texto lo llama amigo de Judá, y va con él a Timná.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

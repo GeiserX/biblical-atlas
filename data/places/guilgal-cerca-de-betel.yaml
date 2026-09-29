@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guilgal-cerca-de-betel
+name: Guilgal
+names:
+- name: Guilgal
+  note: El nombre significa «rodadura». No es la Guilgal del valle del Jordán, junto a Jericó.
+type: city
+lat: 32.030556
+lon: 35.225
+precision: point
+coord_source: openbible:a6399b3
+coord_url: https://www.openbible.info/geo/ancient/a6399b3/gilgal-2
+coord_note: Jil Jiliya, pueblo sobre una colina unos 11 km al norte de Betel, con el que Perspicacia dice que se la suele
+  relacionar.
+summary: Ciudad de la región montañosa cercana a Betel. Elías y Eliseo bajaron desde ella a Betel, y Eliseo quitó allí el
+  veneno a un guiso. Luego fue, al parecer, un centro de adoración falsa que condenaron Oseas y Amós.
+reason: 'Perspicacia «Guilgal», núm. 2: 2Re 2:1-5; 4:38-41; Os 4:15; 9:15; 12:11; Am 4:4; 5:5. Coordenada de OpenBible: solo
+  tomamos el punto.'
+not_claimed:
+- 'Que la Guilgal de Os 4:15, 9:15 y 12:11 sea con seguridad esta: Perspicacia admite que quizá sea la de junto a Jericó.'
+sources:
+- it-guilgal
+- openbible-geo
+- oseas-4
+- oseas-9
+- oseas-12
+links:
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+- title: Oseas 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/4
+  type: bible
+- title: Oseas 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/9
+  type: bible
+- title: Oseas 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

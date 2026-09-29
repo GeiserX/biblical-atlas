@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-acaba-con-los-anaquim
+title: Josué acaba con los anaquim de la región montañosa
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: durante la conquista de Canaán, tras la campaña del sur)'
+narrative_order:
+  series: josue
+  order: 11021
+places:
+- hebron
+- debir
+- anab
+- gaza
+- gat
+- asdod
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 11:21, 22
+summary: Josué echa a los anaquim de Hebrón, Debir, Anab y las montañas de Judá e Israel, y destruye sus ciudades. Solo quedan
+  anaquim en Gaza, Gat y Asdod.
+reason: 'Estudio 3: entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467). Perspicacia «Josué»,
+  núm. 1: la campaña del norte siguió a la del sur. «Debir», núm. 2: quizá repite la de Debir.'
+sources:
+- josue-11
+- si-3
+- it-josue
+- it-anaquim
+- it-debir
+links:
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: 'Perspicacia: «Anaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000261
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

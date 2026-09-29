@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: asna
+name: Asná
+names:
+- name: Asná
+- name: Asnah
+  note: Otra grafía que da la nota de Jos 15:33; es la de Perspicacia.
+type: city
+lat: 31.784708
+lon: 35.006303
+precision: uncertain
+coord_source: openbible:a1e3eff
+coord_url: https://www.openbible.info/geo/ancient/a1e3eff/ashnah-1
+coord_note: ʽAslin (Islin), primera identificación de OpenBible, que Perspicacia da como provisional.
+summary: Ciudad de la Sefelá de Judá, junto a Estaol y Zorá. Se la ha identificado de forma provisional con la aldea de ʽAslin,
+  entre esas dos ciudades.
+reason: 'Perspicacia «Asnah», núm. 1; Jos 15:33. No es la Asná de Jos 15:43. OpenBible: solo el punto.'
+sources:
+- it-asnah
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Asnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000424
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

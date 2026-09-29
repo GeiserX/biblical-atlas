@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jocteel
+name: Jocteel
+names:
+- name: Jocteel
+- name: Joqteel
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 25 km de Lakís
+  geometry:
+    type: zone
+    lat: 31.565278
+    lon: 34.849167
+    radius_km: 25
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-joqteel
+  - openbible-geo
+  reason: El texto la nombra con Lakís en la Sefelá; OpenBible da este radio alrededor de Lakís.
+  coord_source: openbible:a45dd20
+  coord_url: https://www.openbible.info/geo/ancient/a45dd20/joktheel-1
+summary: Ciudad de la Sefelá de Judá; hoy no se sabe dónde estaba. No es Sela de Edom, que el rey Amasías llamó Jocteel al
+  conquistarla.
+reason: Perspicacia «Joqteel», núm. 1 y 2; Jos 15:38; 2Re 14:7. OpenBible solo la pone a menos de 25 km de Lakís.
+sources:
+- it-joqteel
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Joqteel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002501
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

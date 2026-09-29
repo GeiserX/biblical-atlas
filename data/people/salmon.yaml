@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salmon
+name: Salmón
+names:
+- name: Salmón
+- name: Salmá
+  note: Así lo llama 1 Crónicas 2:11, según Perspicacia.
+perspicacia: '1200003806'
+disambiguation: No es el Salmá descendiente de Caleb al que 1 Crónicas 2:51 llama padre de Belén.
+summary: Hijo de Nahsón, probablemente nacido durante los cuarenta años en el desierto. Rahab, la de Jericó, fue su esposa
+  y la madre de su hijo Boaz.
+reason: Perspicacia «Salmón»; Rut 4:20, 21.
+sources:
+- it-salmon
+- rut-4
+- mateo-1
+- lucas-3
+links:
+- title: 'Perspicacia: «Salmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003806
+  type: perspicacia
+relations:
+- type: kin
+  person: nahson
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  reason: Rut 4:20.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rahab
+  word: wife
+  inferred: true
+  sources:
+  - mateo-1
+  - it-rahab
+  reason: Mt 1:5 la nombra madre del hijo de Salmón; Perspicacia «Rahab» (núm. 1) dice que se casó con él.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

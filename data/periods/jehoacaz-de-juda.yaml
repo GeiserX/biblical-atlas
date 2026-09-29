@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehoacaz-de-juda
+name: Reinado de Jehoacaz en Judá
+type: king
+person: jehoacaz-de-juda
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628 a.e.c.
+places:
+- jerusalen
+summary: Tres meses en Jerusalén.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 23.
+sources:
+- tnm-a6-b
+- 2-reyes-23
+- it-jehoacaz
+search: Jehoacaz rey
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hezron
+name: Hezrón
+names:
+- name: Hezrón
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 10 km de Cadés-Barnea
+  geometry:
+    type: zone
+    lat: 30.648333
+    lon: 34.422222
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-hezron
+  - openbible-geo
+  reason: El texto lo pone entre Cadés-Barnea y Addar; OpenBible da este radio alrededor de ʽAin el-Qudeirat.
+  coord_source: openbible:ad5c4a1
+  coord_url: https://www.openbible.info/geo/ancient/ad5c4a1/hezron
+summary: Lugar de la frontera sur de Judá, entre Cadés-Barnea y Addar. El relato paralelo de Números parece unirlo con Addar
+  en el nombre Hazar-Addar, así que estaba cerca de Addar o era el mismo sitio.
+reason: Perspicacia «Hezrón», núm. 3, y «Addar», núm. 2; Jos 15:3. OpenBible solo lo sitúa a menos de 10 km de Cadés-Barnea.
+sources:
+- it-hezron
+- it-addar
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Hezrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002015
+  type: perspicacia
+- title: 'Perspicacia: «Addar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000094
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

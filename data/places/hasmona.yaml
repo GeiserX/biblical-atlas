@@ -1,0 +1,72 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hasmona
+name: Hasmoná
+names:
+- name: Hasmoná
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En la ruta de Risá a Cadés, según el mapa B3
+  geometry:
+    type: zone
+    lat: 30.28
+    lon: 34.49
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-hasmona
+  - tnm-b3
+  reason: El mapa B3 agrupa con signo de duda nueve campamentos, de Quehelatá a Moserot, en la ruta de Risá a Cadés.
+  coord_source: calculation
+  note: 'Centro: punto medio de las tres flechas con que el mapa B3 señala ese tramo, calculado ajustando la imagen a dieciséis
+    lugares con punto de OpenBible. Radio nuestro.'
+- name: Uadi Hashim, cerca de Cadés
+  geometry:
+    type: point
+    lat: 30.640556
+    lon: 34.411111
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-hasmona
+  reason: Perspicacia recoge que se ha vinculado con el uadi Hashim, cerca de donde se supone que estuvo Cadés-Barnea.
+  coord_source: openbible:aaa8a88
+  coord_url: https://www.openbible.info/geo/ancient/aaa8a88/hashmonah
+  note: Punto del uadi Umm Hashim, la última resolución de la ficha «Hashmonah» de OpenBible.
+- name: El mismo sitio que Azmón
+  geometry:
+    type: point
+    lat: 30.666667
+    lon: 34.366667
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-hasmona
+  - it-azmon
+  reason: 'Otra opinión que recoge Perspicacia: sería el mismo lugar que Azmón, en la frontera sur de Canaán.'
+  coord_source: openbible:a8f6a28
+  coord_url: https://www.openbible.info/geo/ancient/a8f6a28/azmon
+  note: Punto de ʽAin Qoseimeh en la ficha «Azmon» de OpenBible, el sitio que Perspicacia propone para Azmón.
+summary: 'Campamento de Israel en el desierto, al parecer entre Mitcá y Moserot. No se sabe dónde estaba: se ha relacionado
+  con el uadi Hashim, cerca de Cadés, o con Azmón.'
+reason: Perspicacia «Hasmoná»; Nú 33:29, 30.
+sources:
+- it-hasmona
+- it-azmon
+- tnm-b3
+- openbible-geo
+- numeros-33
+links:
+- title: 'Perspicacia: «Hasmoná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001905
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

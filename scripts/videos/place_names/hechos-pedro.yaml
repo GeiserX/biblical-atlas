@@ -1,0 +1,45 @@
+# Nombres de lugares del carril hechos-pedro que busca scripts/videos/index.py en los subtítulos.
+# Mismo formato que nombres/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español
+# (wol.jw.org, Hechos 8 a 10, 1 Pedro 1 y Apocalipsis 1 a 3), consultada el 28 de septiembre de 2026.
+
+jope:
+  names: [Jope]
+lida:
+  names: [Lida]
+patmos:
+  names: [Patmos]
+# La región no se busca: «Samaria» suelto ya lo busca la ciudad (data/places/samaria.yaml) y en los
+# subtítulos no se puede saber cuál de las dos se nombra.
+region-de-samaria:
+  names: []
+gaza:
+  names: [Gaza]
+asdod:
+  names: [Asdod, Azoto]
+# «Sarón» suelto puede ser la otra Sarón de 1 Crónicas 5:16; solo cuenta la forma con «llanura».
+llanura-de-saron:
+  names: [llanura de Sarón]
+ponto:
+  names: [Ponto]
+  exclude: [Ponto Euxino]
+capadocia:
+  names: [Capadocia]
+pergamo:
+  names: [Pérgamo]
+esmirna:
+  names: [Esmirna]
+tiatira:
+  names: [Tiatira]
+sardis:
+  names: [Sardis]
+# «Filadelfia» también es la ciudad de Estados Unidos, que sale en videos de historia. Solo cuentan
+# las formas que la ligan a Apocalipsis.
+filadelfia:
+  names: [congregación de Filadelfia, congregación que estaba en Filadelfia]
+laodicea:
+  names: [Laodicea]
+  demonyms: [laodicenses]
+# La Etiopía de Hechos 8 es la región al sur de Egipto, no el país de hoy, que sale mucho en los videos
+# de noticias. Solo cuenta la forma ligada al funcionario de Hechos 8.
+etiopia:
+  names: [eunuco etíope, funcionario etíope]

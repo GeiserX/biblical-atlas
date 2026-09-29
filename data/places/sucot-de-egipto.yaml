@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sucot-de-egipto
+name: Sucot
+names:
+- name: Sucot
+  note: 'No es el Sucot de Jacob, al este del Jordán (ficha sucot). Perspicacia los separa: este es el núm. 2.'
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Camino de Menfis a la cabecera del golfo de Suez
+  geometry:
+    type: zone
+    lat: 30.12
+    lon: 32.06
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sucot
+  - it-exodo
+  reason: Perspicacia solo dice que estaba a un día de marcha, entre 32 y 48 km, del desierto de Ezam. «Éxodo» prefiere una
+    salida cerca de Menfis hacia el golfo de Suez.
+  coord_source: calculation
+  note: 'Centro: unos 40 km al oeste del centro de la zona de Ezam (30,12; 32,48), hacia Menfis. Radio nuestro.'
+- name: Tell el-Maskhuta, en el uadi Tumilat
+  geometry:
+    type: point
+    lat: 30.5527
+    lon: 32.099
+  checked_on: '2026-09-29'
+  status: rejected_level_1
+  sources:
+  - it-exodo
+  - openbible-geo
+  reason: 'Es el punto de OpenBible. Perspicacia «Éxodo» descarta la ruta del uadi Tumilat: queda demasiado al norte de Menfis
+    para lo que pasó la noche de la salida.'
+  coord_source: openbible:aa28709
+  coord_url: https://www.openbible.info/geo/ancient/aa28709/succoth-2
+summary: Primera parada de los israelitas al salir de Ramesés camino del mar Rojo. No se sabe dónde estaba, porque tampoco
+  se conocen los sitios de Ramesés ni de Ezam.
+reason: Perspicacia «Sucot», núm. 2, y «Éxodo», apartado «Ruta del éxodo»; Éx 12:37 y 13:20. El mapa B3 la marca con signo
+  de duda.
+sources:
+- it-sucot
+- it-exodo
+- tnm-b3
+- openbible-geo
+- exodo-12
+- exodo-13
+- numeros-33
+links:
+- title: 'Perspicacia: «Sucot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004256
+  type: perspicacia
+- title: Éxodo 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

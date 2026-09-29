@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: migdal-gad
+name: Migdal-Gad
+names:
+- name: Migdal-Gad
+type: city
+lat: 31.53721
+lon: 34.90191
+precision: uncertain
+coord_source: openbible:a571ca0
+coord_url: https://www.openbible.info/geo/ancient/a571ca0/migdal-gad
+coord_note: Khirbet el-Mejdeleh, primera identificación de OpenBible, que Perspicacia ve posible.
+summary: Ciudad de la Sefelá de Judá cuyo nombre significa «torre de buena fortuna». Tal vez estaba en Khirbet el-Mejdeleh,
+  unos 20 km al oeste de Hebrón.
+reason: 'Perspicacia «Migdal-gad»; Jos 15:37. OpenBible: solo el punto.'
+sources:
+- it-migdal-gad
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Migdal-gad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003044
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

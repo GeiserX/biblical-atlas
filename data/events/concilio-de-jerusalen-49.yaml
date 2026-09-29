@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: concilio-de-jerusalen-49
+title: Reunión en Jerusalén sobre la circuncisión
+date:
+  from: 49
+  to: 49
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 49 e.c.
+narrative_order:
+  series: hechos
+  order: 1504
+places:
+- jerusalen
+people:
+- pablo
+- bernabe
+- silas
+- tito
+- judas-barsabas
+- pedro
+- santiago-hermano-de-jesus
+- juan-apostol
+passages:
+- Hch 15:4-29
+- Gál 2:1-10
+summary: Fariseos creyentes exigen circuncidar a los de las naciones. Tras mucho debate hablan Pedro, Bernabé, Pablo y Santiago;
+  apóstoles y ancianos deciden no imponerla y mandan una carta con Judas y Silas.
+reason: 'Estudio 3: c. 49, entre la primera y la segunda gira (párr. 23). Perspicacia «Pedro» (párr. 22), «Santiago»
+  (párr. 13) y «Juan» (párr. 30) sitúan allí a los tres; Gál 2:9 los llama columnas.'
+sources:
+- si-3
+- hch-15
+- it-tito-persona
+- it-judas
+- it-pedro
+- it-santiago
+- it-juan
+- galatas-2
+search: cuestión de la circuncisión
+history:
+- date: '2026-09-29'
+  change: El suceso se ciñe a la reunión de Jerusalén (Hch 15:4-29); el debate en Antioquía, el camino por Fenicia y Samaria
+    y la entrega de la carta son sucesos propios.
+  source: hch-15
+- date: '2026-09-29'
+  change: El resumen decía que Silas llevó la carta con Pablo y Bernabé y omitía a Judas (Hch 15:22, 27); ahora cuenta la
+    reunión, y la entrega va en su propio suceso.
+  source: hch-15
+- date: '2026-09-29'
+  change: Pasa a Hch 15:4, tras el debate de Antioquía (1501) y el camino por Fenicia y Samaria (1503).
+  source: hch-15
+checked_on: '2026-09-29'
+status: verified

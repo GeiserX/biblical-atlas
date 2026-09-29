@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-profeta
+name: Jeremías
+names:
+- name: Jeremías
+disambiguation: El profeta de Anatot; Perspicacia registra otros nueve hombres llamados Jeremías.
+date:
+  from: -646
+  to: -579
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 647-580 a.e.c.
+summary: Hijo del sacerdote Hilquías, de Anatot. Jehová lo nombró profeta de joven, en 647, y durante más de cuarenta años
+  anunció la caída de Jerusalén.
+reason: Perspicacia «Jeremías», núm. 6, párr. 6, 7 y 14; Jer 1:1-10. El estudio 3 fecha su comisión en 647 y la Tabla cierra
+  su libro en 580.
+sources:
+- it-jeremias
+- jeremias-1
+- jeremias-52
+- tnm-tabla
+- si-3
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002421
+  type: perspicacia
+- title: Jeremías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/1
+  type: bible
+relations:
+- type: lived_in
+  place: anatot
+  inferred: false
+  sources:
+  - it-jeremias
+  - jeremias-1
+  reason: Jer 1:1 lo presenta entre los sacerdotes de Anatot.
+  checked_on: '2026-09-28'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

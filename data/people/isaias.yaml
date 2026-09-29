@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isaias
+name: Isaías
+names:
+- name: Isaías
+date:
+  from: -777
+  to: -731
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778-732 a.e.c.
+summary: Profeta hijo de Amoz, en Judá y Jerusalén bajo Uzías, Jotán, Acaz y Ezequías. Su esposa era profetisa. Animó a Ezequías
+  frente a Senaquerib.
+reason: Perspicacia «Isaías», párr. 1, 3 y 4; Is 1:1. Profetizó desde c. 778 hasta poco después de 732.
+sources:
+- it-isaias
+- isaias-1
+- isaias-6
+- tnm-tabla
+- si-3
+links:
+- title: 'Perspicacia: «Isaías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002204
+  type: perspicacia
+- title: Isaías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/1
+  type: bible
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - it-isaias
+  - isaias-7
+  reason: 'Actuaba en Jerusalén: allí salió al encuentro de Acaz (Is 7:3) y lo consultó Ezequías (Is 37:2).'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200002204'
+checked_on: '2026-09-29'
+status: verified

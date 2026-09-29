@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mizpe-de-juda
+name: Mizpé
+names:
+- name: Mizpé
+type: city
+lat: 31.622631
+lon: 34.925669
+precision: uncertain
+coord_source: openbible:a67990c
+coord_url: https://www.openbible.info/geo/ancient/a67990c/mizpeh-2
+coord_note: 'Khirbet Safiyeh, cuarta identificación de OpenBible: es la propuesta que cita Perspicacia.'
+summary: Ciudad de la Sefelá de Judá. Su sitio es dudoso; una propuesta es Khirbet Safiyeh, unos 9 km al sur de Azecá. No
+  es la Mizpá de Benjamín.
+reason: 'Perspicacia «Mizpá, Mizpé», núm. 2; Jos 15:38. OpenBible: solo el punto.'
+sources:
+- it-mizpa
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Mizpá, Mizpé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

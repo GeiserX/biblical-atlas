@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: pecahias
+name: Reinado de Pecahías en Israel
+type: king
+person: pecahias
+date:
+  from: -779
+  to: -777
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 780-778 a.e.c.
+places:
+- samaria
+summary: Dos años en Samaria.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 15.
+sources:
+- tnm-a6-b
+- 2-reyes-15
+- it-peqahias
+search: Pecahías rey
+checked_on: '2026-09-28'
+status: verified

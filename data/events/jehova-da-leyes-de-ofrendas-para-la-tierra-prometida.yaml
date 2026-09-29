@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-leyes-de-ofrendas-para-la-tierra-prometida
+title: Jehová da leyes de ofrendas para cuando Israel viva en su tierra
+date:
+  from: -1511
+  to: -1473
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: tras la sentencia de Cadés y en vida de Aarón)'
+narrative_order:
+  series: numeros
+  order: 15001
+places: []
+people:
+- moises
+present: []
+passages:
+- Nú 15:1-31
+summary: Jehová explica a Moisés que, ya en la tierra prometida, cada sacrificio irá con su ración de harina, aceite y vino,
+  que se ofrecerán roscas de la primera masa y cómo se expían los pecados cometidos sin querer.
+reason: 'Nú 15:1-31, dos hablas de Jehová. Fecha: tras la sentencia de Cadés (1512 a.e.c., Perspicacia «Qadés») y antes de
+  morir Aarón en 1474 (Perspicacia «Aarón»).'
+sources:
+- numeros-15
+- it-numeros-libro
+- it-qades
+- it-aaron
+- si-3
+- tnm-tabla
+links:
+- title: Números 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/15
+  type: bible
+- title: 'Perspicacia: «Números, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003279
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

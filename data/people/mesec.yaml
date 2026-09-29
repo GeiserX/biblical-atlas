@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesec
+name: Mesec
+names:
+- name: Mesec
+perspicacia: 1200003008#1
+disambiguation: El hijo de Jafet; no el Mesec que el texto masorético de Crónicas pone entre los hijos de Sem, donde Génesis
+  dice Mas.
+summary: Hijo de Jafet nacido tras el Diluvio. Su nombre pasó a sus descendientes y a su tierra, al norte de Palestina; Perspicacia
+  los relaciona con los musku de las inscripciones asirias.
+reason: Perspicacia «Mesec», núm. 1, párr. 1 y 2; Gé 10:2.
+sources:
+- it-mesec
+- genesis-10
+links:
+- title: 'Perspicacia: «Mesec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003008
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: jafet
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:2 lo nombra entre los hijos de Jafet.
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
+  source: it-mesec
+checked_on: '2026-09-29'
+status: verified

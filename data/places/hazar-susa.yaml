@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hazar-susa
+name: Hazar-Susá
+names:
+- name: Hazar-Susá
+- name: Hazar-Susim
+  note: Así la llama 1Cr 4:31.
+- name: Hazar-susah
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Khirbet esh-Shamsaniyat, al NNE de Beer-Seba
+  geometry:
+    type: point
+    lat: 31.3445
+    lon: 34.9014
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-hazar-susah
+  - openbible-geo
+  reason: Si es otro nombre de Sansaná, como varios eruditos ven probable, estaría allí.
+  coord_source: openbible:ab270f6
+  coord_url: https://www.openbible.info/geo/ancient/ab270f6/hazar-susah
+  note: Primer punto de la ficha «Hazar-susah» de OpenBible.
+- name: Sbalat Abu Susein, al oeste de Beer-Seba
+  geometry:
+    type: point
+    lat: 31.262585
+    lon: 34.529765
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-hazar-susah
+  - openbible-geo
+  reason: Si era distinta de Sansaná, algunos la ponen unos 26 km al oeste de Beer-Seba.
+  coord_source: openbible:ab270f6
+  coord_url: https://www.openbible.info/geo/ancient/ab270f6/hazar-susah
+  note: Punto de la segunda identificación de la ficha «Hazar-susah» de OpenBible.
+summary: Enclave de Simeón en el sur de Judá, también llamado Hazar-Susim; su nombre habla de yeguas. Quizá es otro nombre
+  de Sansaná, la ciudad de Jos 15:31.
+reason: Perspicacia «Hazar-susah»; Jos 19:5; 1Cr 4:31. Dos propuestas, sin identificación segura.
+sources:
+- it-hazar-susah
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Hazar-susah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001930
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

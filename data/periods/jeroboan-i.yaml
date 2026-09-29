@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jeroboan-i
+name: Reinado de Jeroboán en Israel
+type: king
+person: jeroboan-i
+date:
+  from: -996
+  to: -975
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 997-c. 976 a.e.c.
+places:
+- siquem
+- tirza
+summary: Primer rey del reino de diez tribus; veintidós años.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 12.
+sources:
+- tnm-a6-a
+- 1-reyes-12
+- it-jeroboan
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Jeroboán» pone su muerte cerca de 977 a.e.c.; A6-A, más reciente, empieza el reinado de Nadab hacia
+    976.
+  source: tnm-a6-a
+search: Jeroboán rey
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: atarot-del-noreste-de-efrain
+name: Atarot
+names:
+- name: Atarot
+  note: 'Perspicacia «Atarot», núm. 3: otra que la de Gad y que la del límite sur de Efraín.'
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Janóah y Naará, en el límite noreste de Efraín
+  geometry:
+    type: zone
+    lat: 32.025726
+    lon: 35.39304
+    radius_km: 15
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-atarot
+  - openbible-geo
+  - josue-16
+  reason: El texto la pone entre Janóah y Naará; Perspicacia solo dice que estaba en el límite noreste de Efraín.
+  note: 'Centro calculado por nosotros: punto medio entre Janóah (32,158 N; 35,361 E) y Naará (31,893 N; 35,425 E) de OpenBible.
+    El radio de 15 km también es nuestro.'
+  coord_source: calculation
+not_claimed:
+- 'No damos su sitio: la zona solo recoge el tramo de frontera entre Janóah y Naará.'
+summary: Ciudad del límite noreste de Efraín, en el tramo de frontera que iba de Janóah hacia Naará y Jericó. No se sabe dónde
+  estaba.
+reason: Perspicacia «Atarot», núm. 3; Jos 16:7. OpenBible la iguala a la Atarot de Jos 16:2, que Perspicacia separa; por eso
+  damos una zona.
+sources:
+- it-atarot
+- openbible-geo
+- josue-16
+links:
+- title: 'Perspicacia: «Atarot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000452
+  type: perspicacia
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

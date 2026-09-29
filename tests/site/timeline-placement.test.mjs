@@ -28,8 +28,8 @@
 // playwright-core with a Chromium: either importable, or PLAYWRIGHT_MODULE_DIR=<a node_modules directory that holds
 // it>. CHROME_PATH picks another Chromium binary.
 // BE_ROOT=<a checkout> tests that checkout's data and site instead of this one (the control).
-// These tests read data keys in Spanish (orden_relato, personas, fecha, viajes, paradas): the schema migration script
-// has to rewrite this file along with the data.
+// These tests read the keys of the compiled data.json (orden_relato, personas, fecha, viajes, paradas), which stay in
+// Spanish after the schema migration (`compiled` in scripts/migration/map.yaml); they never read data/ directly.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
@@ -143,7 +143,7 @@ async function open(prefix = '', hash = '', opts = DESKTOP) {
 }
 before(async () => {
   tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'be-timeline-placement-'));
-  execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--salida', tmp], { cwd: ROOT, stdio: 'pipe' });
+  execFileSync('python3', [path.join(ROOT, 'scripts/build.py'), '--out', tmp], { cwd: ROOT, stdio: 'pipe' });
   server = await serve(path.join(ROOT, 'site'), tmp);
   origin = `http://127.0.0.1:${server.address().port}`;
   const chromium = await loadChromium();

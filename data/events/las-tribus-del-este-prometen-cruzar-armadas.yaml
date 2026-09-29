@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-tribus-del-este-prometen-cruzar-armadas
+title: Las tribus del este prometen cruzar armadas
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 201012
+places:
+- sitim
+- llanuras-deserticas-de-moab
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 1:12-18
+summary: 'Josué recuerda a rubenitas, gaditas y media tribu de Manasés lo que pactaron con Moisés: sus familias se quedan
+  al este y sus guerreros cruzan delante. Ellos prometen obedecerle y matar al que se rebele.'
+reason: 'Perspicacia «Josué», núm. 1: les recordó que debían ayudar a conquistar el país (Jos 1:12-18). Año del estudio 3.
+  El capítulo no nombra el campamento: seguía en Sitim, en las llanuras de Moab, como en el suceso anterior.'
+sources:
+- josue-1
+- it-josue
+- si-3
+links:
+- title: Josué 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/1
+  type: bible
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+search: rubenitas gaditas media tribu de Manasés Josué
+checked_on: '2026-09-29'
+status: verified

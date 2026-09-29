@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-jearim
+name: Monte Jearim
+names:
+- name: Monte Jearim
+  note: Jearim significa «bosques» (Perspicacia).
+type: mountain
+lat: 31.781111
+lon: 35.051111
+precision: uncertain
+coord_source: openbible:a3587ba
+coord_url: https://www.openbible.info/geo/ancient/a3587ba/mount-jearim
+coord_note: OpenBible lo pone a menos de 1 km de Kesla, el sitio de Kesalón; tomamos ese punto.
+summary: Monte de la frontera norte de Judá. Al parecer en su cumbre estaba Kesalón, y el texto llama así a su ladera norte.
+reason: 'Perspicacia «Jearim» y «Kesalón»; Jos 15:10. OpenBible: solo el punto.'
+sources:
+- it-jearim
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Jearim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002349
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

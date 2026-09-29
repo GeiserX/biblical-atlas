@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-aaron
+title: Muere Aarón en el monte Hor
+date:
+  from: -1473
+  to: -1473
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de ab de 1474 a.e.c.
+  detail:
+    month: ab
+    day: 1
+narrative_order:
+  series: numeros
+  order: 20022
+places:
+- monte-hor
+- edom
+- cades
+- moserot
+- bene-jaacan
+people:
+- aaron
+- moises
+- eleazar-hijo-de-aaron
+present:
+- aaron
+- moises
+- eleazar-hijo-de-aaron
+passages:
+- Nú 20:22-29
+- Nú 33:37-39
+- Dt 10:6
+- Dt 32:50
+summary: Israel sale de Cadés hacia el monte Hor. Ante todo el pueblo, Moisés, Aarón y Eleazar suben a la cima; Moisés viste
+  a Eleazar con las ropas de Aarón y Aarón muere allí. Israel lo llora treinta días.
+reason: 'Perspicacia «Aarón», párr. 4 y 19: murió en 1474 a.e.c., a los 123 años, el primer día de ab del año cuadragésimo
+  (Nú 33:38).'
+sources:
+- numeros-20
+- it-aaron
+- it-hor
+- it-eleazar
+- deuteronomio-10
+- it-mosera
+- it-beerot-bene-jaaqan
+links:
+- title: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

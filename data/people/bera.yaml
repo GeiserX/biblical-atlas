@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bera
+name: Bera
+names:
+- name: Bera
+perspicacia: '1200000647'
+summary: Rey de Sodoma vencido por Kedorlaomer en el valle de Sidim. Cuando Abrán volvió con lo recuperado, Bera le ofreció
+  los bienes, y Abrán los rechazó para que nadie dijera que él lo había enriquecido.
+reason: Perspicacia «Bera»; Gé 14:2, 8-11, 17, 21-24.
+sources:
+- it-bera
+- genesis-14
+links:
+- title: 'Perspicacia: «Bera»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000647
+  type: perspicacia
+relations:
+- type: lived_in
+  place: sodoma
+  inferred: false
+  sources:
+  - genesis-14
+  reason: Gé 14:2 lo llama rey de Sodoma.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

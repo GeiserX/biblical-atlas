@@ -1,0 +1,73 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: golgota
+name: Gólgota
+names:
+- name: Gólgota
+- name: Lugar de la Calavera
+  note: Significado del nombre (Jn 19:17).
+- name: Calvario
+  note: Del latín calvaria; lo usan algunas traducciones en Lu 23:33.
+- name: Calavera
+  note: Así lo llama Lu 23:33; es la palabra griega que traduce Gólgota.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Iglesia del Santo Sepulcro
+  geometry:
+    type: point
+    lat: 31.778444
+    lon: 35.22975
+  checked_on: '2026-09-29'
+  status: tradition
+  sources:
+  - it-golgota
+  - nota-juan-19
+  reason: Es el lugar tradicional desde el siglo IV. Encaja con restos de un cementerio de la época, fuera de la muralla de
+    entonces, y algunos lo ven razonable (Perspicacia, párr. 4 y 6; nota de Jn 19:17).
+  coord_source: openbible:a631d35
+  coord_url: https://www.openbible.info/geo/ancient/a631d35/golgotha
+- name: Calvario de Gordon
+  geometry:
+    type: point
+    lat: 31.783957
+    lon: 35.230147
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-golgota
+  reason: Propuesto en el siglo XIX, en un risco cerca de la Puerta de Damasco, hacia el noreste. Perspicacia no ve pruebas,
+    y la tumba del Jardín cercana es siglos anterior a Jesús (párr. 5-6).
+  coord_source: openbible:a631d35
+  coord_url: https://www.openbible.info/geo/ancient/a631d35/golgotha
+summary: Lugar a las afueras de Jerusalén donde ejecutaron a Jesús; cerca pasaba un camino y había un jardín con una tumba
+  nueva. La Biblia no dice que fuera una colina, y hoy nadie sabe con exactitud dónde estaba.
+reason: Perspicacia «Gólgotha» (párr. 3-6), nota de estudio de Jn 19:17 y «¿Por qué tuvo que morir Jesús?» (párr. 22). El mapa
+  B12-A lo marca con signo de duda.
+sources:
+- it-golgota
+- nota-juan-19
+- ijwbq-por-que-murio-jesus
+- tnm-b12-a
+- juan-19
+- openbible-geo
+- mateo-27
+- marcos-15
+- lucas-23
+links:
+- title: 'Perspicacia: «Gólgotha»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001738
+  type: perspicacia
+- title: Juan 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/19
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'tipo pasa de monte a region: la nota de Mt 27:33 dice que la Biblia no lo pone en una colina, y la lista no tiene
+    tipo para un sitio.'
+  source: mateo-27
+checked_on: '2026-09-29'
+status: verified

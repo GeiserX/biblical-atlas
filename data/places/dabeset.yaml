@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dabeset
+name: Dabéset
+names:
+- name: Dabéset
+type: city
+lat: 32.670278
+lon: 35.155
+precision: uncertain
+coord_source: openbible:a411151
+coord_url: https://www.openbible.info/geo/ancient/a411151/dabbesheth
+coord_note: Punto de OpenBible en Tell esh-Shammam (Tel Shem).
+summary: Ciudad de la frontera de Zabulón de lugar incierto. Tell esh-Shammam, unos 5 km al este de Jocneam, parece encajar
+  con el texto.
+reason: 'Perspicacia «Dabéset»; Jos 19:11. OpenBible: solo el punto.'
+sources:
+- it-dabeset
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Dabéset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001103
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

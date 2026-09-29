@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: save-quiryataim
+name: Savé-Quiryataim
+names:
+- name: Savé-Quiryataim
+- name: Savé-quiryataim
+  note: Grafía de Perspicacia.
+type: plain
+lat: 31.540556
+lon: 35.686111
+precision: zone
+coord_source: openbible:a86d49f
+coord_url: https://www.openbible.info/geo/ancient/a86d49f/shaveh-kiriathaim
+coord_note: Punto de OpenBible junto a Quraiyat, donde los geógrafos sitúan con dudas Quiryataim.
+summary: Llanura junto a la ciudad de Quiryataim, al este del Jordán, donde Kedorlaomer venció a los emim.
+reason: 'Perspicacia «Savé-quiryataim»; Gé 14:5. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-save-quiryataim
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «Savé-quiryataim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003963
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

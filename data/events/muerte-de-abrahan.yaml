@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-abrahan
+title: Muere Abrahán
+date:
+  from: -1842
+  to: -1842
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1843 a.e.c.
+narrative_order:
+  series: genesis
+  order: 25007
+places:
+- macpela
+people:
+- abrahan
+- isaac
+- ismael-hijo-de-abrahan
+type: death
+roles:
+  abrahan: died
+passages:
+- Gé 25:7-11
+summary: Abrahán muere a los 175 años, tras una larga vida. Isaac e Ismael lo entierran en la cueva de Macpelá, junto a Sara,
+  y Dios sigue bendiciendo a Isaac.
+reason: El estudio 3 y Perspicacia «Abrahán», párr. 17, fechan su muerte en 1843 a.e.c. El texto no dice dónde murió; Macpelá
+  es donde lo entierran.
+present:
+- isaac
+- ismael-hijo-de-abrahan
+sources:
+- si-3
+- it-abrahan
+- genesis-25
+links:
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,113 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: oseas
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: narration, entities: [person:oseas, person:beeri-padre-de-oseas, relation:oseas/kin/beeri-padre-de-oseas, relation:oseas/lived_in/israel], mentions: [person:uzias, person:jotan, person:acaz, person:ezequias, person:jeroboan-ii, person:jehoas-de-israel, place:juda, place:israel], note: "Encabezamiento: la palabra de Jehová a Oseas hijo de Beerí, en días de cuatro reyes de Judá y de Jeroboán II. Joás es Jehoás de Israel."}
+    - {v: 2-5, type: narration, entities: [event:oseas-se-casa-con-gomer, event:nacimiento-de-jezreel-hijo-de-oseas, person:oseas, person:gomer-hija-de-diblaim, person:diblaim, person:jezreel-hijo-de-oseas, person:jehu-de-israel, place:jezreel, place:valle-de-jezreel, relation:oseas/kin/gomer-hija-de-diblaim, relation:gomer-hija-de-diblaim/kin/diblaim, relation:jezreel-hijo-de-oseas/kin/oseas, relation:jezreel-hijo-de-oseas/kin/gomer-hija-de-diblaim, place:israel], mentions: [event:caida-de-samaria], note: "La sangre de Jezreel no es la matanza que Jehová mandó a Jehú, sino, según Perspicacia, la culpa de su casa por mantener los becerros. Se cumplió al matar Salum a Zacarías (2Re 15:8-10)."}
+    - {v: 6-7, type: narration, entities: [event:nacimiento-de-lo-ruhama, person:lo-ruhama, person:gomer-hija-de-diblaim, relation:lo-ruhama/kin/gomer-hija-de-diblaim, relation:jezreel-hijo-de-oseas/kin/lo-ruhama, place:israel], mentions: [person:oseas, place:juda, event:caida-de-samaria, event:senaquerib-contra-jerusalen], note: "Judá se salvará sin armas: Perspicacia y «Toda Escritura» lo ven cumplido cuando el ángel mató a 185.000 asirios de Senaquerib."}
+    - {v: 8-9, type: narration, entities: [event:nacimiento-de-lo-ammi, person:lo-ammi, person:gomer-hija-de-diblaim, relation:lo-ammi/kin/gomer-hija-de-diblaim, relation:jezreel-hijo-de-oseas/kin/lo-ammi, relation:lo-ruhama/kin/lo-ammi], mentions: [person:lo-ruhama]}
+    - {v: 10-11, type: prophecy, mentions: [place:israel, place:juda, event:regreso-de-537], note: "Promesa: Israel será numeroso como la arena y se llamará hijos del Dios vivo; Judá e Israel, unidos bajo un cabeza, subirán del país. Se cumplió en 537 a.e.c.; Pablo y Pedro la citan."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: prophecy, note: "Los hermanos serán llamados «Mi pueblo» y las hermanas, compadecidas: se da la vuelta a los nombres de Lo-Ammí y Lo-Ruhamá (notas de Os 2:1)."}
+    - {v: 2-13, type: prophecy, note: "Jehová acusa a la madre, Israel, de irse tras sus amantes y atribuirles el grano, el vino y la lana; le quitará todo y acabará con sus fiestas. Usó para Baal el oro que él le dio."}
+    - {v: 14-23, type: prophecy, entities: [place:valle-de-acor, event:exodo], mentions: [place:egipto, event:regreso-de-537], note: "Jehová la llevará al desierto y le hablará al corazón; ella lo llamará Esposo mío y no Baal mío. Jezreel es aquí el pueblo sembrado de nuevo; La Atalaya (2005) lo ve cumplido en 537 a.e.c."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: narration, entities: [event:oseas-vuelve-a-tomar-a-gomer, person:oseas, person:gomer-hija-de-diblaim, relation:oseas/kin/gomer-hija-de-diblaim], note: "El texto no nombra a la mujer; Perspicacia y «Toda Escritura» la tienen por Gómer. Las tortas de pasas se usaban en la adoración falsa. Un homer eran unos 220 litros."}
+    - {v: 4-5, type: prophecy, mentions: [person:david, person:jesus, place:israel, event:caida-de-samaria, event:regreso-de-537], note: "Israel pasará mucho tiempo sin rey, sacrificios, columnas ni terafim; luego buscará a Jehová y a «David su rey». La Atalaya de 1991 («La abundante bondad de Jehová») ve a ese rey en Jesucristo y un primer cumplimiento en 537."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel], mentions: [person:oseas], note: "Jehová abre un pleito contra los habitantes del país: no hay verdad, amor leal ni conocimiento de Dios, sino perjurio, robo, adulterio y sangre. Por eso la tierra estará de luto."}
+    - {v: 4-10, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], note: "Reproche a los sacerdotes: rechazaron el conocimiento y olvidaron la ley, así que Jehová los rechaza y olvidará a sus hijos. Viven del pecado del pueblo; comerán sin saciarse."}
+    - {v: 11-14, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], note: "La prostitución y el vino embotan el juicio. El pueblo consulta ídolos de madera y una vara de adivinar, sacrifica en montes y bajo árboles frondosos, y los hombres van con prostitutas de templo."}
+    - {v: 15-19, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:juda, place:guilgal-cerca-de-betel, place:betel], note: "Judá no debe imitar a Israel ni ir a Guilgal (la de cerca de Betel, o quizá la de Jericó) ni a Bet-Aven, nombre de desprecio de Betel. Efraín, el reino del norte, está pegado a sus ídolos."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:juda, place:mizpa-de-galaad, place:monte-tabor], note: "Juicio contra los sacerdotes, Israel y la casa del rey, que fueron trampa en Mizpá y red en el Tabor, quizá centros de idolatría (Perspicacia «Tabor»). Efraín cayó y Judá con él; buscan a Jehová y no lo hallan."}
+    - {v: 8-10, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:guibea-de-benjamin, place:rama-de-benjamin, place:betel, place:israel, place:juda], note: "Alarma en Guibeá, Ramá y Bet-Aven, ciudades de Benjamín, tribu sin ficha. Según Perspicacia «Guibeah», Oseas habla como si el norte ya hubiera caído y el enemigo amenazara a Judá, cuyos príncipes mueven los mojones."}
+    - {v: 11-15, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:juda, place:asiria], note: "Efraín, oprimido, acudió a Asiria y mandó mensajeros a un gran rey sin nombre, que no pudo curarlo. Jehová será como un león para Efraín y Judá, y se retirará hasta que lo busquen en su angustia."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [person:oseas], note: "Oseas invita al pueblo a volver a Jehová, según «Toda Escritura»: quien los hirió los curará y al tercer día los levantará; su llegada es tan segura como el alba y la lluvia de primavera."}
+    - {v: 4-6, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:juda], note: "El amor leal de Efraín y Judá se esfuma como el rocío. Jehová prefiere amor leal y conocimiento de Dios a los sacrificios; Jesús citó el versículo 6 en Mt 9:13 y 12:7."}
+    - {v: 7-8, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:galaad], note: "Rompieron el pacto. Galaad es ciudad de malhechores manchada de sangre; Perspicacia «Galaad», núm. 5, no sabe si habla de Ramot-Galaad, de Jabés-Galaad o de toda la región, que es la ficha que usamos."}
+    - {v: 9-11, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:siquem, place:israel, place:juda], note: "Los sacerdotes, como una banda de asaltantes, matan en el camino cerca de Siquem. Efraín se prostituye e Israel se contamina. A Judá le espera una cosecha cuando Jehová haga volver a los cautivos."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:samaria], note: "Cuando Dios quiere sanar a Israel salen a la luz los pecados de Efraín y de Samaria: robos, engaño y una corte que disfruta la maldad. Arden de intrigas como un horno y derriban a sus propios reyes."}
+    - {v: 8-12, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:egipto, place:asiria], mentions: [person:hosea-de-israel], note: "Efraín, el reino del norte, se mezcla con las naciones y no ve su declive. Como paloma sin juicio busca a Egipto y a Asiria, y Dios lo atrapará. Perspicacia «Asiria» lo une a la intriga de Hosea con Egipto."}
+    - {v: 13-16, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:egipto], note: "¡Ay de ellos! Huyen de Dios, le mienten y le claman sin sinceridad, haciéndose cortes por el grano y el vino. Fallan como un arco sin tensión; sus príncipes morirán a espada y Egipto se burlará."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:samaria], note: "Suena la alarma: un enemigo cae como un águila sobre un pueblo que rompió el pacto. Israel puso reyes sin Dios e hizo ídolos; el becerro de Samaria acabará en pedazos. Las referencias remiten a los becerros de Jeroboán."}
+    - {v: 7-10, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:asiria], mentions: [event:caida-de-samaria], note: "Siembran viento y cosecharán tempestad. Israel sube a Asiria y paga a otras naciones como amantes, pero será tragado entre ellas. Perspicacia y «Toda Escritura» ven esto cumplido cuando Asiria tomó Samaria en 740 a.e.c."}
+    - {v: 11-14, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:egipto, place:juda], mentions: [event:caida-de-samaria, event:senaquerib-contra-jerusalen, event:destruccion-de-jerusalen-607], note: "Efraín multiplica altares para pecar y tiene por ajena la ley de Dios; volverá a Egipto. Israel construye templos y Judá ciudades fortificadas, pero el fuego las devorará: Senaquerib (732) y Babilonia (607 a.e.c.)."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:egipto, place:asiria, place:menfis], note: "Israel no tiene motivo para celebrar: ha sido infiel a su Dios. Perderá la cosecha y la tierra; irá a Egipto y a Asiria, donde comerá lo impuro. Menfis enterrará a los que huyan y crecerán ortigas en sus casas."}
+    - {v: 7-9, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel], mentions: [place:guibea-de-benjamin, event:los-hombres-de-guibea-abusan-de-la-concubina-del-levita], note: "Llega el castigo: el profeta parecerá necio y el inspirado, loco. El centinela de Efraín estuvo con Dios; sus profetas son ahora trampas. Su corrupción iguala la de Guibeá (Jue 19 y 20, según Perspicacia)."}
+    - {v: 10-14, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel], mentions: [place:tiro], note: "Dios halló a Israel como uvas en el desierto, pero sus padres se entregaron a Baal de Peor, un dios sin ficha (Nú 25; lo crea Números). Efraín, lozano como Tiro, perderá a sus hijos; el profeta pide vientres estériles."}
+    - {v: 15-17, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:guilgal-cerca-de-betel], mentions: [event:caida-de-samaria], note: "Toda la maldad de Israel se concentró en Guilgal; Dios lo echará de su casa y andará fugitivo entre las naciones. Perspicacia pone este Guilgal cerca de Betel, aunque admite el de Jericó. La Atalaya lo ve cumplido en 740."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel], note: "Israel, vid que da fruto para sí, multiplica altares y columnas sagradas, y Dios los derribará. Sin temor de Jehová dirán que no tienen rey; sus juramentos falsos y sus pactos brotan como hierba venenosa."}
+    - {v: 5-8, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:betel], mentions: [place:samaria, place:asiria, place:israel, event:caida-de-samaria], note: "Samaria llorará por el becerro de Bet-Aven, es decir Betel, que irá a Asiria como regalo para el gran rey, un título sin nombre. Samaria y su rey caerán (740 a.e.c.). Efraín es el reino del norte."}
+    - {v: 9-10, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:guibea-de-benjamin], mentions: [place:israel, event:los-hombres-de-guibea-abusan-de-la-concubina-del-levita, event:israel-vence-a-benjamin-y-quema-guibea], note: "Israel peca desde los días de Guibeá; Perspicacia ve posible que aluda al crimen de Jue 19 y a la guerra de Jue 20. Dios los castigará cuando quiera y los pueblos se unirán contra ellos."}
+    - {v: 11-13, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, place:juda], note: "Efraín, ternera que disfrutaba trillando, llevará yugo; Judá arará y Jacob, aquí el pueblo, rastrillará. Dios pide sembrar justicia y buscarlo, pero confiaron en sus guerreros y cosecharon injusticia."}
+    - {v: 14-15, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, person:salman, place:casa-de-arbel, relation:salman/same_as/salmanasar-v, place:betel], mentions: [person:salmanasar-v, place:israel, event:caida-de-samaria], note: "Sus fortalezas serán arrasadas como la casa de Arbel cuando la saqueó Salmán. Perspicacia no fecha ese saqueo, así que no es evento. A Betel le pasará igual y el rey de Israel desaparecerá."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, event:exodo], mentions: [place:israel, place:egipto, event:huida-a-egipto], note: "Dios amó a Israel desde joven y llamó a su hijo fuera de Egipto; Mt 2:15 lo aplica a Jesús. Aun así ofrecieron sacrificios a las imágenes de Baal, dios sin ficha, aunque él había enseñado a andar a Efraín."}
+    - {v: 5-7, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:egipto, place:asiria, place:israel, event:caida-de-samaria], note: "No volverán a Egipto: Asiria mandará sobre ellos, porque rehusaron volver a Dios. La espada recorrerá sus ciudades por sus maquinaciones; el pueblo se inclina a la infidelidad."}
+    - {v: 8-9, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:adma, place:zeboyim, place:israel, event:destruccion-de-sodoma-y-gomorra, event:regreso-de-537], note: "Dios no quiere tratar a Efraín como a Admá y Zeboyim, destruidas junto con Sodoma y Gomorra (Dt 29:23). Se conmueve de compasión y no descargará toda su ira: es Dios, no un hombre."}
+    - {v: 10-11, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:egipto, place:asiria, event:regreso-de-537], note: "Jehová rugirá como un león y sus hijos acudirán temblando desde el oeste, desde Egipto y Asiria, y los hará vivir otra vez en sus casas. Perspicacia aplica Os 11:8-11 al regreso de 537."}
+    - {v: "12", type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, place:juda], note: "Efraín e Israel cercan a Dios con mentiras y engaños; Judá todavía camina con él y le es fiel. Las referencias remiten a Ezequías (2Re 18:1, 6)."}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, place:asiria, place:egipto, place:juda], note: "Efraín persigue el viento del este: pacta con Asiria y lleva aceite a Egipto (2Re 15:19; 17:4, sucesos que crea Reyes). Jehová pleitea con Judá y pedirá cuentas a Jacob, aquí el pueblo."}
+    - {v: 3-6, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, person:jacob, place:betel, event:nacimiento-de-esau-y-jacob, event:jacob-lucha-con-un-angel, event:jacob-suena-con-una-escalera-en-betel], note: "Jacob agarró del talón a su hermano, que el texto no nombra (Esaú), luchó con un ángel, lloró y pidió su favor, y Dios lo halló en Betel. Jehová de los ejércitos llama al pueblo a volver."}
+    - {v: 7-10, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, place:egipto, event:exodo], note: "Efraín, mercader de balanzas falsas, presume de rico y sin culpa. Jehová, su Dios desde Egipto, lo hará vivir otra vez en tiendas, como en una fiesta, y le habló por profetas, visiones y parábolas."}
+    - {v: "11", type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:guilgal-cerca-de-betel], mentions: [place:galaad], note: "Engaño en Galaad y toros sacrificados en Guilgal, con altares como montones de piedras. Perspicacia duda si este Galaad es la región o una ciudad, y si Guilgal es el de Betel o el de Jericó."}
+    - {v: 12-14, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, person:jacob, place:padan-aram, relation:jacob/lived_in/padan-aram, event:isaac-envia-a-jacob-a-padan-aram, event:jacob-se-casa-con-lea-y-raquel, event:exodo], mentions: [place:egipto, place:israel], note: "Jacob huyó a Aram y cuidó ovejas por una esposa, sin nombre aquí. Por un profeta, que las referencias llevan a Moisés (Sl 77:20), Jehová sacó a Israel de Egipto. Efraín cargará con su culpa de sangre."}
+  13:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel], note: "Efraín, la tribu que más pesaba en el reino del norte, cayó por Baal. Ahora funde ídolos de plata y pide besar los becerros de Jeroboán (1Re 12:28-30). Pasará como neblina, rocío, paja o humo."}
+    - {v: 4-8, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:egipto, event:exodo], note: "Jehová es su Dios desde que los sacó de Egipto y los cuidó en el desierto (Dt 2:7). Saciados, se volvieron orgullosos y lo olvidaron; él los atacará como león, leopardo u osa sin crías."}
+    - {v: 9-11, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel], note: "Israel pidió un rey (1Sa 8:5); Dios se lo dio con enojo y se lo quitará. Las referencias remiten a Saúl (1Sa 12:13) y al encarcelamiento de Hosea (2Re 17:4). El suceso de 1Sa 8 lo crea 1 Samuel."}
+    - {v: 12-14, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, event:regreso-de-537], note: "El pecado de Efraín queda guardado; es un hijo necio que no quiere nacer. Jehová promete rescatarlos de la Tumba; Pablo cita el v. 14 en 1Co 15:55. Perspicacia lo aplica al regreso de Babilonia en 537."}
+    - {v: 15-16, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:samaria], mentions: [event:caida-de-samaria], note: "Un viento del este, caliente y seco, vendrá del desierto y agotará sus fuentes. Samaria caerá a espada por rebelde. Se cumplió en 740 a.e.c. (2Re 17:5, 6); el libro no lo narra."}
+  14:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], mentions: [place:israel, place:asiria, event:regreso-de-537], note: "Llamada a Israel para que vuelva a Jehová, pida perdón y le ofrezca la alabanza de sus labios en lugar de toros (Heb 13:15). Ni Asiria ni los caballos ni los ídolos los salvarán."}
+    - {v: 4-8, type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda, place:israel, place:libano], mentions: [event:regreso-de-537], note: "Jehová curará su infidelidad y será para Israel como rocío: florecerá como el lirio, con raíces, fragancia y vino como los del Líbano. Efraín renunciará a los ídolos y Dios será su enebro frondoso."}
+    - {v: "9", type: prophecy, entities: [event:juicios-profeticos-contra-efrain-y-juda], note: "Cierre del libro: el sabio y el prudente las entenderán. Jehová tiene caminos rectos: los justos los siguen y los pecadores tropiezan en ellos (Dt 32:4)."}

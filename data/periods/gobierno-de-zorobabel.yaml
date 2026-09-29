@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: gobierno-de-zorobabel
+name: Zorobabel, gobernador de Judá
+type: governor
+date:
+  from: -536
+  to: -514
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 537 a 515 a.e.c.
+places:
+- jerusalen
+person: zorobabel
+summary: Gobernador nombrado por Ciro sobre los repatriados; Ag 1:1 lo llama gobernador de Judá en 520. La Biblia no dice
+  cuándo dejó el cargo.
+reason: 'Perspicacia «Zorobabel»: nombrado por Ciro, dirige desde 537 hasta el templo terminado en 515.'
+sources:
+- it-zorobabel
+- ageo-1
+search: Zorobabel
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nacor-hijo-de-serug
+name: Nacor
+names:
+- name: Nacor
+perspicacia: 1200003170#1
+disambiguation: Nacor el abuelo de Abrahán; no su nieto Nacor, hermano de Abrahán.
+distinct_from:
+- nacor-hijo-de-tare
+date:
+  from: -2176
+  to: -2028
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 2177-2029 a.e.c.
+summary: Hijo de Serug, padre de Taré y abuelo de Abrahán. Tuvo a Taré a los 29 años y vivió 148.
+reason: Perspicacia «Nacor», núm. 1; Gé 11:22-25.
+sources:
+- it-nacor
+- genesis-11
+- lucas-3
+links:
+- title: 'Perspicacia: «Nacor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003170
+  type: perspicacia
+- title: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  type: bible
+relations:
+- type: kin
+  person: serug
+  word: father
+  inferred: false
+  sources:
+  - genesis-11
+  - lucas-3
+  reason: 'Gé 11:22: Serug fue padre de Nacor a los 30 años.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

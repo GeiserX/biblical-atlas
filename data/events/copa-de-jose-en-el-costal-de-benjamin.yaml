@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: copa-de-jose-en-el-costal-de-benjamin
+title: La copa de José aparece en el costal de Benjamín
+date:
+  from: -1727
+  to: -1727
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1728 a.e.c.
+narrative_order:
+  series: genesis
+  order: 44001
+places:
+- egipto
+people:
+- benjamin-hijo-de-jacob
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+passages:
+- Gé 44:1-13
+summary: José hace esconder su copa de plata en el saco de Benjamín. Su encargado alcanza a los hermanos cerca de la ciudad,
+  registra los costales y la encuentra; ellos rasgan su ropa y vuelven.
+reason: 'El estudio 3 fecha en 1728 a.e.c. el traslado de Jacob a Egipto y lo apoya en el segundo año del hambre, cuando José
+  se da a conocer. Mismo viaje. Perspicacia «José», párr. 26: era una prueba de José.'
+sources:
+- genesis-44
+- si-3
+- it-jose
+links:
+- title: Génesis 44 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/44
+  type: bible
+checked_on: '2026-09-29'
+status: verified

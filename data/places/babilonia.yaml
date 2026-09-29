@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: babilonia
+name: Babilonia
+names:
+- name: Babilonia
+- name: Babel
+  note: Nombre de la ciudad original de Génesis 10:10 y 11:9.
+type: city
+lat: 32.543333
+lon: 44.422222
+precision: point
+coord_source: openbible:a217d18
+coord_url: https://www.openbible.info/geo/ancient/a217d18/babylon-1
+summary: Ciudad junto al Éufrates, a unos 870 km al este de Jerusalén. La fundó Nemrod, fue capital de la tercera potencia
+  mundial, cayó ante Ciro en 539 a.e.c. y acabó en ruinas.
+reason: 'Perspicacia «Babilonia» (núm. 1): situación, fundación por Nemrod, caída en 539 a.e.c. (un 5 de octubre) y ruinas
+  en el siglo IV e.c. Coordenada de OpenBible: solo tomamos el punto.'
+note: Perspicacia identifica la Babilonia desde la que escribe Pedro (1 Pedro 5:13) con esta ciudad del Éufrates, no con
+  Roma.
+sources:
+- it-babilonia
+- openbible-geo
+- genesis-10
+- genesis-11
+- it-babel
+- salmos-137
+links:
+- title: 'Perspicacia: «Babilonia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000530
+  type: perspicacia
+search: Babilonia
+checked_on: '2026-09-29'
+status: verified

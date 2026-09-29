@@ -1,0 +1,61 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: ageo
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-jwb-141_1_VIDEO"
+    title: "JW Broadcasting: Septiembre de 2026"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-141_1_VIDEO&appLanguage=S"
+    published: "2026-09-07"
+    hits: 8
+    terms:
+      "Ageo": 8
+  - docid: "pub-co-r20_2_VIDEO"
+    title: "Viernes mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_2_VIDEO&appLanguage=S"
+    published: "2020-07-06"
+    hits: 7
+    terms:
+      "Ageo": 7
+  - docid: "pub-jwb-141_3_VIDEO"
+    title: "Descubramos más tesoros: Ageo"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-141_3_VIDEO&appLanguage=S"
+    published: "2026-09-08"
+    hits: 6
+    terms:
+      "Ageo": 6
+  - docid: "pub-co-r22_11_VIDEO"
+    title: "Domingo tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_11_VIDEO&appLanguage=S"
+    published: "2022-08-15"
+    hits: 3
+    terms:
+      "Ageo": 3
+  - docid: "pub-wpc_2_VIDEO"
+    title: "Jehová nos guía por el camino de la paz (parte 2)"
+    url: "https://www.jw.org/es/biblioteca/videos/jehova-nos-guia-camino-de-paz/parte-2/"
+    published: "2022-08-22"
+    hits: 3
+    terms:
+      "Ageo": 3
+  - docid: "pub-co-r20_12_VIDEO"
+    title: "Domingo tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_12_VIDEO&appLanguage=S"
+    published: "2020-08-24"
+    hits: 2
+    terms:
+      "Ageo": 2
+  - docid: "pub-co-r20_148_VIDEO"
+    title: "David Splane: Haz de Jehová tu mayor alegría"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_148_VIDEO&appLanguage=S"
+    published: "2020-12-01"
+    hits: 2
+    terms:
+      "Ageo": 2
+  - docid: "pub-jwb_201804_2_VIDEO"
+    title: "William Turner hijo: Envueltos y protegidos “en la bolsa de la vida”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201804_2_VIDEO&appLanguage=S"
+    published: "2018-04-16"
+    hits: 2
+    terms:
+      "Ageo": 2

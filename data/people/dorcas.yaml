@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dorcas
+name: Dorcas
+names:
+- name: Dorcas
+  note: 'Nombre griego: «gacela».'
+- name: Tabita
+  note: Nombre arameo con el mismo sentido.
+date:
+  from: 36
+  to: 36
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 36 e.c.
+summary: 'Discípula de la congregación de Jope conocida por sus buenas obras y por hacer ropa para viudas. Murió
+  en 36 y Pedro la resucitó: es la primera resurrección que la Biblia atribuye a un apóstol.'
+reason: Perspicacia «Dorcas» (párr. 2 a 4) da la muerte en 36; la nota de estudio de Hch 9:40 señala que es la primera
+  resurrección hecha por un apóstol.
+sources:
+- it-dorcas
+- hch-9
+- bt-8
+relations:
+- type: lived_in
+  place: jope
+  inferred: false
+  sources:
+  - it-dorcas
+  - hch-9
+  reason: Hch 9:36.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Dorcas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001214
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+perspicacia: '1200001214'
+checked_on: '2026-09-29'
+status: verified

@@ -21,41 +21,26 @@ function vigencia(tr, t) {
 }
 const refsDe = (texto) => [...new Set(BE.citasEnTexto(texto).map((c) => c.texto))].join('; ');
 
-/** Dónde está una persona en t, como lugar. Usa BE.donde, que app-tiempo generaliza a cualquier persona. */
+/** Dónde está una persona en t, como lugar. Usa BE.donde, que app-tiempo generaliza a cualquier persona. Devuelve
+    también la referencia y las fuentes de la estancia que la sitúa (una parada, un suceso o una relación con fecha):
+    la arista «está aquí ahora» las toma de ahí o no se dibuja (docs/investigacion/modelo.md, sección 10). */
 function lugarActual(id, t) {
   let w = null;
   try { w = BE.donde(id, t); } catch { w = null; }
   if (!w) return null;
   const x = w.en?.lugar?.id || w.lugar?.id || (typeof w.lugar === 'string' ? w.lugar : null);
-  return x && BE.L[x] ? { id: x, parada: w.parada !== false, estimada: !!w.estimada } : null;
+  if (!x || !BE.L[x]) return null;
+  const e = w.en || {};
+  const rel = String(e.key || '').startsWith('rel:') ? persona(id)?.relaciones?.[Number(e.key.split(':')[2])] : null;
+  const ev = !rel && String(e.sel || '').startsWith('evento:') ? (BE.D.eventos || []).find((s) => s.id === e.sel.slice(7)) : null;
+  const ref = rel ? rel.reference || '' : ev ? (ev.pasajes || []).join('; ') : e.p?.referencia || '';
+  const fuentes = (rel || ev || e.p || {}).fuentes || [];
+  return { id: x, parada: w.parada !== false, estimada: !!w.estimada, ref, fuentes };
 }
 
-const VERBOS = {
-  acompana: () => 'viajan juntos',
-  vivio_en: () => 'vivió aquí', nacio_en: () => 'nació aquí', murio_en: () => 'murió aquí',
-};
-/** Verbo de una relación visto desde el centro. adelante: la relación está escrita en el centro; si no, en el otro. */
-function verboRelacion(r, adelante, centro, otro) {
-  if (r.tipo === 'pariente') {
-    const rel = r.relacion || 'pariente';
-    return adelante ? `su ${rel}` : `${centro} es su ${rel}`;
-  }
-  if (r.tipo === 'sucede_a') return adelante ? `${centro} le sucede` : `sucede a ${centro}`;
-  // «acompana» con relacion dice qué eran el uno para el otro («discípulo de», «apóstol de», «amigo», «custodio»):
-  // antes todas salían como «viajan juntos», también «Pablo, discípulo de Gamaliel» (Hch 22:3). La relación describe a
-  // quien la escribe. Vista desde el otro lado, una que acaba en «de» es «su discípulo», «su apóstol»; las demás solo
-  // se leen al revés si el dato trae relacion_inversa («custodio» / «custodiado por»), y si no, «viajan juntos».
-  if (r.tipo === 'acompana' && r.relacion) {
-    const rel = r.relacion.trim();
-    if (adelante) return rel;
-    if (r.relacion_inversa) return r.relacion_inversa.trim();
-    if (/ de$/.test(rel)) return `su ${rel.replace(/ de$/, '')}`;
-  }
-  // Una aparición o una visión (Hch 9:3-6, 9:10, 7:55; 1Co 15:7) no es «juntos»: se dice con su propio verbo.
-  if (r.tipo === 'se_aparece_a') return adelante ? (r.relacion || 'se le aparece').trim() : (r.relacion_inversa || 'lo ve').trim();
-  if (r.tipo === 'mismo_que') return r.deducido ? '¿la misma persona?' : 'la misma persona';
-  return (VERBOS[r.tipo] || (() => r.tipo))(otro);
-}
+/** Verbo de una relación visto desde el centro, tal como lo compila build.py desde data/vocabulary.yaml: `verb` si la
+    relación está escrita en el centro (adelante) y `inverse_verb` si está escrita en el otro. Sin verbo no hay arista. */
+const verboRelacion = (r, adelante) => (adelante ? r.verb : r.inverse_verb) || '';
 
 /** Todas las conexiones de una persona, cada una con verbo, tramo, referencia y fuentes (G-06). Una arista sin
     referencia ni fuente no se devuelve. grupo: Personas, Lugares, Cartas o Hechos (G-02). */
@@ -71,16 +56,23 @@ function calcularAristas(id) {
   if (!p) return [];
   const out = [];
   const poner = (a) => { if ((a.fuentes && a.fuentes.length) || a.ref) out.push({ ...a, tr: a.tr !== undefined ? a.tr : tramoAbierto(a.fecha) }); };
+  // Una relación da arista si trae su verbo y su referencia a un pasaje, y no es la copia que no manda de un par
+  // escrito en las dos fichas (duplicate_of): así ningún vínculo sale dos veces (docs/investigacion/modelo.md, sección 10).
+  const ponerRelacion = (r, adelante, a) => {
+    const verbo = verboRelacion(r, adelante);
+    if (!verbo || !r.reference || r.duplicate_of) return;
+    out.push({ ...a, verbo, fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: r.reference, origen: 'relacion', tipoRel: r.tipo, type: r.type, alias: r.type === 'same_as', inversa: !adelante, grupoFamilia: (adelante ? r.family : r.inverse_family) || null, etiqueta: (adelante ? r.relacion : r.inverse_label) || '', tr: tramoAbierto(r.fecha) });
+  };
   for (const r of p.relaciones || []) {
     const otro = r.persona ? `persona:${r.persona}` : r.lugar ? `lugar:${r.lugar}` : null;
     if (!otro || !BE.parseSel(otro)) continue;
-    poner({ sel: otro, grupo: r.persona ? 'Personas' : 'Lugares', verbo: verboRelacion(r, true, p.nombre, nombreDe(otro)), fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: refsDe(r.razon), origen: 'relacion', tipoRel: r.tipo, relacion: r.relacion });
+    ponerRelacion(r, true, { sel: otro, grupo: r.persona ? 'Personas' : 'Lugares' });
   }
   for (const q of Object.values(BE.PERS)) {
     if (q.id === id) continue;
     for (const r of q.relaciones || []) {
       if (r.persona !== id) continue;
-      poner({ sel: `persona:${q.id}`, grupo: 'Personas', verbo: verboRelacion(r, false, p.nombre, q.nombre), fecha: r.fecha, deducido: !!r.deducido, estado: r.estado, fuentes: r.fuentes, razon: r.razon, ref: refsDe(r.razon), origen: 'relacion', tipoRel: r.tipo, relacion: r.relacion, inversa: true });
+      ponerRelacion(r, false, { sel: `persona:${q.id}`, grupo: 'Personas' });
     }
   }
   for (const v of BE.D.viajes || []) {
@@ -143,37 +135,21 @@ function barraVida(p) {
     <span class="vida-barra${abierto(f.desde) || f.aprox ? ' vida-barra--ini' : ''}${abierto(f.hasta) || f.aprox ? ' vida-barra--fin' : ''}"></span>
     <span class="vida-texto"><span class="be-chrono be-chrono--tnm">${esc(f.texto || fechaCorta(f))}</span>${f.aprox ? ' <span class="be-muted">sin fecha exacta de principio ni de fin</span>' : ''}</span></div>`;
 }
-// Familia: padres, cónyuges, hijos y hermanos, sacados de las relaciones «pariente» en los dos sentidos. Una relación
-// escrita en X con persona Y y relacion R dice «Y es el R de X»; vista desde Y, un padre de X hace a X su hijo.
-const PADRES = new Set(['padre', 'madre', 'padre adoptivo', 'madre adoptiva']);
-const HIJOS = new Set(['hijo', 'hija', 'hijo adoptivo', 'hija adoptiva', 'hijastro', 'hijastra', 'hijastro e hijo adoptivo']);
-const CONYUGES = new Set(['esposo', 'esposa']);
-const HERMANOS = new Set(['hermano', 'hermana', 'medio hermano', 'media hermana', 'hermano gemelo', 'hermana gemela']);
-const GRUPOS_FAMILIA = [
-  ['padres', 'Padres', { padre: 'Padre', madre: 'Madre' }],
-  ['conyuges', 'Cónyuges', { esposo: 'Esposo', esposa: 'Esposa' }],
-  ['hijos', 'Hijos', { hijo: 'Hijo', hija: 'Hija' }],
-  ['hermanos', 'Hermanos', { hermano: 'Hermano', hermana: 'Hermana' }],
-];
-function grupoFamilia(a) {
-  const r = String(a.relacion || '').trim();
-  if (CONYUGES.has(r)) return 'conyuges';
-  if (HERMANOS.has(r)) return 'hermanos';
-  if (PADRES.has(r)) return a.inversa ? 'hijos' : 'padres';
-  if (HIJOS.has(r)) return a.inversa ? 'padres' : 'hijos';
-  return null;
-}
-/** { padres: [...], conyuges, hijos, hermanos }, cada miembro una vez, los hijos por fecha de nacimiento si se sabe. */
+// Familia: padres, cónyuges, hijos y hermanos. build.py dice en qué grupo sale cada relación, visto desde cada lado
+// (family e inverse_family, de data/vocabulary.yaml): un padre de X hace a X su hijo; cónyuges y hermanos se repiten.
+const GRUPOS_FAMILIA = [['parents', 'Padres'], ['spouses', 'Cónyuges'], ['children', 'Hijos'], ['siblings', 'Hermanos']];
+const mayuscula = (t) => (t ? t[0].toUpperCase() + t.slice(1) : t);
+/** { parents: [...], spouses, children, siblings }, cada miembro una vez, los hijos por fecha de nacimiento si se sabe. */
 function familia(id) {
-  const g = { padres: [], conyuges: [], hijos: [], hermanos: [] };
+  const g = { parents: [], spouses: [], children: [], siblings: [] };
   const vistos = new Set();
   for (const a of aristas(id)) {
-    if (a.origen !== 'relacion' || a.tipoRel !== 'pariente' || !a.sel.startsWith('persona:')) continue;
-    const k = grupoFamilia(a);
-    if (!k || vistos.has(a.sel)) continue;
+    if (a.origen !== 'relacion' || !g[a.grupoFamilia] || !a.sel.startsWith('persona:')) continue;
+    if (vistos.has(a.sel)) continue;
     vistos.add(a.sel);
-    // El nombre del vínculo solo vale tal cual cuando está escrito en esta persona (adelante).
-    g[k].push({ ...a, palabra: a.inversa ? '' : String(a.relacion || '').trim() });
+    // El nombre del vínculo: la palabra si está escrita en esta persona; si no, el que el vocabulario da por seguro
+    // desde el otro lado (inverse_label: «esposo» de quien llama a alguien esposa), o ninguno.
+    g[a.grupoFamilia].push({ ...a, palabra: a.etiqueta });
   }
   // Orden de nacimiento: el del relato que cita cada vínculo (Gé 29:32 Rubén antes que Gé 30:22 José); sin cita, la fecha.
   const clave = (a) => {
@@ -182,26 +158,25 @@ function familia(id) {
     return [1, BE.PERS[a.sel.slice(8)]?.fecha?.desde ?? Infinity, 0, 0];
   };
   const orden = (x, y) => { const a = clave(x), b = clave(y); for (let i = 0; i < 4; i++) if (a[i] !== b[i]) return a[i] - b[i]; return 0; };
-  g.hijos.sort(orden);
-  g.hermanos.sort(orden);
+  g.children.sort(orden);
+  g.siblings.sort(orden);
   return g;
 }
 function familiaHtml(id) {
   const g = familia(id);
   if (!GRUPOS_FAMILIA.some(([k]) => g[k].length)) return '';
-  const miembro = (a) => {
+  // Con varias personas en un grupo, la palabra solo se escribe si precisa el vínculo: la que tiene más de una palabra
+  // («medio hermano», «padre adoptivo», «hermano gemelo»). «padre» o «hermana» ya los dice el grupo.
+  const miembro = (a, varios) => {
     const q = BE.PERS[a.sel.slice(8)];
     const fecha = q?.fecha ? (q.fecha.texto || fechaCorta(q.fecha)) : '';
-    const matiz = a.palabra && !/^(padre|madre|hijo|hija|esposo|esposa|hermano|hermana)$/.test(a.palabra) ? a.palabra : '';
+    const matiz = varios && /\s/.test(a.palabra.trim()) ? a.palabra : '';
     return `<li><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}"${a.razon ? ` title="${esc(a.razon)}"` : ''}>${esc(q?.nombre || nombreDe(a.sel))}</button>${matiz ? ` <span class="be-muted">(${esc(matiz)})</span>` : ''}${a.deducido ? ' <span class="be-chip etiqueta-deducido" title="Lo deduce la fuente; el texto bíblico no lo dice">deducido</span>' : ''}${fecha ? `<span class="fam-fecha">${esc(fecha)}</span>` : ''}${a.ref ? `<span class="fam-refs">${BE.chipsCitas(a.ref)}</span>` : ''}</li>`;
   };
-  const titulo = (k, plural, singular) => {
-    const xs = g[k];
-    if (xs.length !== 1) return plural;
-    return singular[xs[0].palabra] || plural;
-  };
+  // Con una sola persona el título es su vínculo («Padre», «Esposo», «Padre adoptivo»); con varias, el plural.
+  const titulo = (k, plural) => (g[k].length === 1 && g[k][0].palabra ? mayuscula(g[k][0].palabra) : plural);
   return `<section class="be-card ficha-sec familia"><div class="be-card__pad"><h3 class="be-card__eyebrow">Familia</h3>
-    <dl class="familia-lista">${GRUPOS_FAMILIA.filter(([k]) => g[k].length).map(([k, plural, singular]) => `<dt>${titulo(k, plural, singular)}</dt><dd><ul>${g[k].map(miembro).join('')}</ul></dd>`).join('')}</dl></div></section>`;
+    <dl class="familia-lista">${GRUPOS_FAMILIA.filter(([k]) => g[k].length).map(([k, plural]) => `<dt>${esc(titulo(k, plural))}</dt><dd><ul>${g[k].map((a) => miembro(a, g[k].length > 1)).join('')}</ul></dd>`).join('')}</dl></div></section>`;
 }
 
 // Vídeos de jw.org que nombran a la persona (site/videos-personas.json). Si el fichero falta o se abre desde file://,
@@ -220,11 +195,33 @@ function cargarVideosPersonas() {
   }).catch(() => { VIDEOS_PERSONAS = null; });
 }
 
+/** Un verbo que ya nombra a la otra persona («Bartimeo estuvo con Jesús», «estuvo con Jesús») lleva el botón en ese
+    nombre, para no escribirlo dos veces; si no lo nombra, el botón va detrás del verbo. */
+function verboConBoton(a) {
+  const nombre = nombreDe(a.sel);
+  const boton = `<button type="button" class="enlace-texto" data-sel="${esc(a.sel)}">${esc(nombre)}</button>`;
+  const m = nombre ? new RegExp(`(^|[^\\p{L}])${nombre.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}])`, 'u').exec(a.verbo) : null;
+  if (!m) return `<span class="rel-verbo">${esc(a.verbo)}</span>${boton}`;
+  const i = m.index + m[1].length;
+  return `<span class="rel-verbo">${esc(a.verbo.slice(0, i))}${boton}${esc(a.verbo.slice(i + nombre.length))}</span>`;
+}
+/** Cuántas relaciones de la persona, en su ficha o en la del otro, no se dibujan porque aún no citan un pasaje
+    (docs/investigacion/modelo.md, sección 10). La copia que no manda de un par doble no cuenta: la otra la dice. */
+function sinPasaje(id) {
+  let n = 0;
+  const contar = (r, adelante) => { if (verboRelacion(r, adelante) && !r.reference && !r.duplicate_of) n += 1; };
+  for (const r of BE.PERS[id]?.relaciones || []) contar(r, true);
+  for (const q of Object.values(BE.PERS)) if (q.id !== id) for (const r of q.relaciones || []) if (r.persona === id) contar(r, false);
+  return n;
+}
+
 function fichaPersona(id) {
   const p = BE.PERS[id];
   const as = aristas(id);
+  const nSinPasaje = sinPasaje(id);
+  const avisoSinPasaje = nSinPasaje ? `<p class="be-muted">${nSinPasaje === 1 ? 'Una relación no se muestra: todavía no cita un pasaje.' : `${nSinPasaje} relaciones no se muestran: todavía no citan un pasaje.`}</p>` : '';
   cargarVideosPersonas();
-  const rels = as.filter((a) => a.origen === 'relacion' && !(a.tipoRel === 'pariente' && a.sel.startsWith('persona:') && grupoFamilia(a)));
+  const rels = as.filter((a) => a.origen === 'relacion' && !(a.grupoFamilia && a.sel.startsWith('persona:')));
   const lugares = [];
   for (const a of as.filter((x) => x.grupo === 'Lugares').sort((x, y) => (x.tr?.[0] ?? 1e9) - (y.tr?.[0] ?? 1e9))) {
     if (!lugares.some((l) => l.sel === a.sel)) lugares.push(a);
@@ -246,9 +243,9 @@ function fichaPersona(id) {
     </div><div class="be-card__foot">${BE.estadoHtml(p.estado)}</div></section>
     ${familiaHtml(id)}
     ${recorridos.length ? `<div class="be-note be-note--uncertain aviso-recorrido"><span aria-hidden="true">◎</span><span>Esta ficha forma parte de un recorrido: ${recorridos.map((r) => `<button type="button" class="enlace-texto" data-sel="recorrido:${esc(r.id)}">${esc(r.titulo)}</button>`).join(', ')}.</span></div>` : ''}
-    ${rels.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Relaciones <b class="cuenta">${rels.length}</b></h3>
-      <ul class="relaciones">${rels.map((a) => `<li><span class="rel-verbo">${esc(a.verbo)}</span><button type="button" class="enlace-texto" data-sel="${esc(a.sel)}">${esc(nombreDe(a.sel))}</button>${tag(a)}
-        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul></div></section>` : ''}
+    ${rels.length || avisoSinPasaje ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Relaciones <b class="cuenta">${rels.length}</b></h3>
+      ${rels.length ? `<ul class="relaciones">${rels.map((a) => `<li>${verboConBoton(a)}${tag(a)}
+        <span class="rel-meta">${a.fecha ? esc(textoFecha(a)) : ''}${a.fecha && a.ref ? ' · ' : ''}${a.ref ? BE.chipsCitas(a.ref) : ''}</span>${a.razon ? `<span class="rel-razon">${esc(a.razon)}</span>` : ''}</li>`).join('')}</ul>` : ''}${avisoSinPasaje}</div></section>` : ''}
     ${lugares.length ? `<section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Lugares de su vida <b class="cuenta">${lugares.length}</b></h3>
       <div class="be-list">${lugares.slice(0, 14).map((a) => BE.botonSel(a.sel, nombreDe(a.sel), esc([a.tr ? textoFecha(a) : '', a.verbo].filter(Boolean).join(' · ')))).join('')}</div>
       ${lugares.length > 14 ? `<p class="be-muted">Y ${lugares.length - 14} más: están todos en el grafo.</p>` : ''}</div></section>` : ''}

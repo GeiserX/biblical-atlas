@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-hombres-de-guibea-abusan-de-la-concubina-del-levita
+title: Los hombres de Guibeá abusan de la concubina del levita
+date:
+  from: -1449
+  to: -1399
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+narrative_order:
+  series: jueces
+  order: 19022
+places:
+- guibea-de-benjamin
+people: []
+passages:
+- Jue 19:22-28
+summary: Unos hombres de la ciudad rodean la casa y exigen al levita. El anciano ofrece a su hija y a la concubina; el levita
+  entrega a esta, que tras una noche de abusos queda sin vida a la puerta.
+reason: 'Perspicacia «Guibeah», núm. 2: murió esa mañana. Fecha: «Jueces, Libro de», «Orden del libro», probablemente pocos
+  años después de morir Josué (c. 1450 a.e.c., estudio 3); límite final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+sources:
+- jueces-19
+- it-jueces
+- si-3
+- it-guibeah
+- it-finehas
+links:
+- title: Jueces 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

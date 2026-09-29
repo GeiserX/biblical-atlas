@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salome-discipula
+name: Salomé
+names:
+- name: Salomé
+perspicacia: 1200003808#1
+disambiguation: La discípula que vio la ejecución de Jesús; no es Salomé, la hija de Herodías.
+distinct_from:
+- salome-hija-de-filipo
+not_claimed:
+- 'Que fuera la madre de Santiago y Juan: jw.org lo cree probable al comparar Mt 27:56 con Mr 15:40, pero no lo dice el texto.'
+- 'Que fuera hermana de la madre de Jesús: jw.org solo lo ve posible a partir de Jn 19:25.'
+summary: Discípula que había seguido y atendido a Jesús en Galilea. Presenció su muerte y fue a la tumba el 16 de nisán. Probablemente
+  fue la madre de Santiago y de Juan, los hijos de Zebedeo.
+reason: Perspicacia «Salomé», núm. 1, y la nota de Mr 15:40, que comparan ese versículo con Mt 27:56.
+sources:
+- it-salome
+- mateo-27
+- marcos-15
+- marcos-16
+links:
+- title: 'Perspicacia: «Salomé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003808
+  type: perspicacia
+- title: Marcos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/15
+  type: bible
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - marcos-15
+  - mateo-27
+  reason: Mr 15:40, 41 la cuenta entre las mujeres que lo habían seguido desde Galilea; Mt 27:55, 56 dice lo mismo de la madre
+    de los hijos de Zebedeo.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

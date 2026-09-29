@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: gedeon-no-acepta-gobernar-a-israel
+title: Gedeón no acepta gobernar a Israel
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras morir Josué y antes de que Jefté empezara a juzgar)'
+narrative_order:
+  series: jueces
+  order: 8022
+places: []
+people:
+- gedeon
+passages:
+- Jue 8:22-26
+summary: 'Los israelitas le piden que los gobiernen él y sus descendientes. Gedeón dice que el que los gobernará es Jehová
+  y solo pide las narigueras de oro del botín: 1.700 siclos.'
+reason: 'El texto no dice dónde. Desde Otniel el libro va en orden (Perspicacia «Jueces, Libro de»): tras morir Josué, c. 1450
+  a.e.c. (estudio 3), y antes de Jefté, hacia 1173 a.e.c. (Perspicacia «Jefté»).'
+sources:
+- jueces-8
+- si-3
+- it-jueces
+- it-jefte
+- it-gedeon
+links:
+- title: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

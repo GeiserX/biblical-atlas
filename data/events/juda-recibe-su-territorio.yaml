@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-recibe-su-territorio
+title: Judá recibe por sorteo su territorio
+date:
+  from: -1466
+  to: -1466
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1467 a.e.c.
+narrative_order:
+  series: josue
+  order: 15001
+places:
+- guilgal
+- juda
+people:
+- josue-hijo-de-nun
+present:
+- josue-hijo-de-nun
+passages:
+- Jos 15:1-12
+- Jos 15:20-63
+summary: La suerte da a la tribu de Judá el sur de Canaán, del mar Salado al Mediterráneo y de Cadés-Barnea al valle de Hinón,
+  con sus ciudades del Négueb, la Sefelá, la montaña y el desierto.
+reason: 'Perspicacia «Guilgal», núm. 1: el reparto empezó allí. Perspicacia «Isaac» pone en 1467 a.e.c. el final de la campaña
+  y el reparto entre las tribus; estudio 3.'
+sources:
+- josue-15
+- it-guilgal
+- it-isaac
+- si-3
+- it-juda
+links:
+- title: Josué 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/15
+  type: bible
+- title: 'Perspicacia: «Judá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

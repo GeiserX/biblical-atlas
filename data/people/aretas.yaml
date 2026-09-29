@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aretas
+name: Aretas
+names:
+- name: Aretas
+- name: Aretas IV
+  note: Así lo numeran la nota de estudio de 2Co 11:32 y Perspicacia «Arabia», porque hubo otros reyes árabes con su nombre.
+perspicacia: '1200000356'
+date:
+  from: -8
+  to: 40
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: reinó de c. 9 a.e.c. a 40 e.c.
+summary: Rey árabe de los nabateos, conocido como Aretas IV, que reinó desde Petra y dominó Damasco. Su gobernador vigilaba
+  la ciudad para prender a Pablo. Casó a una hija con Herodes Antipas, que la repudió por Herodías.
+reason: Perspicacia «Aretas», párr. 1 y 2, y «Arabia», párrafo de los nabateos. La nota de estudio de 2Co 11:32 da su reinado,
+  de c. 9 a.e.c. a 40 e.c., y su capital, Petra.
+sources:
+- it-aretas
+- it-arabia
+- 2-corintios-11
+links:
+- title: 'Perspicacia: «Aretas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000356
+  type: perspicacia
+- title: 'Perspicacia: «Arabia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
+  type: perspicacia
+- title: 2 Corintios 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/11
+  type: bible
+relations:
+- type: lived_in
+  place: arabia
+  inferred: true
+  sources:
+  - it-arabia
+  - 2-corintios-11
+  reason: Perspicacia «Arabia» lo pone como rey de los nabateos, en el norte de Arabia, con capital en Petra; la nota de 2Co
+    11:32 lo llama rey árabe.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

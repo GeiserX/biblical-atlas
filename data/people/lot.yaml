@@ -1,0 +1,160 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lot
+name: Lot
+names:
+- name: Lot
+date:
+  from: -1942
+  to: -1918
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1943-1919 a.e.c. (de la entrada en Canaán a la destrucción de Sodoma)
+summary: Sobrino de Abrahán, hijo de su hermano Harán. Fue con él de Ur a Canaán y luego se instaló cerca de Sodoma. Unos
+  ángeles lo sacaron antes de la destrucción; de él vienen moabitas y ammonitas.
+reason: 'Perspicacia «Lot», párr. 1 a 6; Gé 11:27-31; 13:5-12; 19:1-38. El estudio 3: Abrahán cruza el Éufrates en 1943 a.e.c.,
+  con Lot (Gé 12:4); Lot es rescatado antes de 1933 y Sodoma es juzgada en 1919.'
+sources:
+- si-3
+- it-lot
+- genesis-11
+- genesis-14
+- genesis-12
+- genesis-13
+- genesis-19
+links:
+- title: 'Perspicacia: «Lot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002776
+  type: perspicacia
+- title: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  type: bible
+relations:
+- type: kin
+  person: abrahan
+  word: uncle
+  inferred: false
+  sources:
+  - it-lot
+  - genesis-11
+  - genesis-12
+  - genesis-13
+  - genesis-14
+  reason: 'Perspicacia «Lot», párr. 1: hijo de Harán, hermano de Abrahán (Gé 11:27).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tare
+  word: grandfather
+  inferred: false
+  sources:
+  - it-lot
+  - genesis-11
+  reason: 'Perspicacia «Lot», párr. 1 y 2: nieto de Taré, con quien salió de Ur (Gé 11:31).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: sodoma
+  inferred: false
+  sources:
+  - it-lot
+  - genesis-14
+  - genesis-13
+  - genesis-19
+  reason: 'Perspicacia «Lot», párr. 3 a 5: vivía en Sodoma cuando lo capturaron y cuando llegaron los ángeles (Gé 14:12; 19:1).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: haran-hijo-de-tare
+  word: father
+  inferred: false
+  sources:
+  - genesis-11
+  reason: 'Gé 11:27, 31: Harán fue padre de Lot.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: milca-hija-de-haran
+  word: sister
+  inferred: true
+  sources:
+  - it-milca
+  - genesis-11
+  reason: 'Perspicacia «Milcá», núm. 1: era hermana de Lot; los dos eran hijos de Harán (Gé 11:27, 29).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: isca
+  word: sister
+  inferred: true
+  sources:
+  - it-isca
+  - genesis-11
+  reason: 'Perspicacia «Iscá»: era hermana de Lot; los dos eran hijos de Harán (Gé 11:27, 29).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ur
+  inferred: false
+  sources:
+  - genesis-11
+  reason: 'Gé 11:31: Taré se llevó a su nieto Lot de Ur de los caldeos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: haran
+  inferred: false
+  sources:
+  - genesis-11
+  - genesis-12
+  - it-lot
+  reason: 'Gé 11:31: al llegar a Harán comenzaron a vivir allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: abrahan
+  inferred: false
+  sources:
+  - genesis-12
+  - it-lot
+  - genesis-13
+  reason: 'Gé 12:4 y 13:1, 5: viajó con Abrán de Harán a Canaán, bajó con él a Egipto y volvió con él.'
+  checked_on: '2026-09-29'
+  word: companion
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-13
+  - it-lot
+  reason: 'Gé 13:1: salió de Egipto con Abrán y Sarái.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: distrito-del-jordan
+  inferred: false
+  sources:
+  - genesis-13
+  - it-lot
+  reason: 'Gé 13:10-12: eligió el Distrito del Jordán y se fue a vivir cerca de sus ciudades.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: zoar
+  inferred: false
+  sources:
+  - genesis-19
+  - it-zoar
+  reason: 'Gé 19:23, 30: llegó a Zóar al salir el sol y vivió allí hasta que el miedo lo llevó a los montes.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200002776'
+history:
+- date: '2026-09-29'
+  change: 'Las citas de Génesis 13 y 19 van separadas por punto y coma: con la coma y la «y», el sitio no las reconocía y
+    Lot no salía en esos capítulos.'
+  source: genesis-13
+checked_on: '2026-09-29'
+status: verified

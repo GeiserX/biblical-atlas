@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elam-hijo-de-sem
+name: Elam
+names:
+- name: Elam
+perspicacia: 1200001274#1
+disambiguation: El hijo de Sem; no el país de Elam ni los otros Elam de Crónicas, Esdras y Nehemías.
+summary: Hijo de Sem, el primero de los cinco de la lista. De él salieron familias con su lengua y su tierra, y su nombre
+  designa a un pueblo y a un país al sureste de Mesopotamia.
+reason: Perspicacia «Elam», núm. 1, párr. 1 y 2; Gé 10:22, 31.
+sources:
+- it-elam
+- genesis-10
+links:
+- title: 'Perspicacia: «Elam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001274
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: sem
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:22 lo nombra el primero de los hijos de Sem.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

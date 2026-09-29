@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ibleam
+name: Ibleam
+names:
+- name: Ibleam
+type: city
+lat: 32.4462
+lon: 35.292
+precision: point
+coord_source: openbible:a878d66
+coord_url: https://www.openbible.info/geo/ancient/a878d66/ibleam
+coord_note: Punto de Khirbet Belʽameh, unos 18 km al sur-sureste de Meguidó, el sitio que da Perspicacia.
+summary: Ciudad de Isacar que se dio a Manasés con sus pueblos, aunque sus cananeos siguieron allí. Cerca de ella hirieron
+  de muerte a Ocozías, rey de Judá.
+reason: 'Perspicacia «Ibleam», párr. 1 a 3; Jos 17:11-13. OpenBible: solo el punto.'
+sources:
+- it-ibleam
+- openbible-geo
+- josue-17
+- jueces-1
+links:
+- title: 'Perspicacia: «Ibleam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002124
+  type: perspicacia
+- title: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

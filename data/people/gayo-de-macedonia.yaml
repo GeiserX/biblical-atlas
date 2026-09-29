@@ -1,0 +1,91 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gayo-de-macedonia
+name: Gayo de Macedonia
+names:
+- name: Gayo
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+disambiguation: El macedonio de Hch 19:29. Perspicacia ve posible que sea el Gayo de Derbe de Hch 20:4; no es el
+  de Corinto ni el de 3 Juan.
+distinct_from:
+- gayo-de-corinto
+- gayo-de-3-juan
+summary: Macedonio que acompañaba a Pablo en el tercer viaje. La multitud lo arrastró al teatro de Éfeso junto con
+  Aristarco.
+reason: Perspicacia «Gayo», núm. 1; Hch 19:29. Motín de Éfeso hacia 55, poco antes de que Pablo saliera de allí (estudio 3,
+  párr. 26).
+sources:
+- it-gayo
+- hch-19
+- si-3
+links:
+- title: 'Perspicacia: «Gayo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001592
+  type: perspicacia
+- title: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  type: bible
+perspicacia: 1200001592#1
+history:
+- date: '2026-09-29'
+  change: 'Pasa de c. 55-56 a c. 55: el viaje de 56 (Hch 20:4) es del Gayo de Derbe, núm. 2 de Perspicacia «Gayo», que ahora
+    tiene ficha propia.'
+  source: hch-20
+- date: '2026-09-29'
+  change: 'Deja de citar Hch 20:4 como suyo: ese Gayo es el de Derbe (Perspicacia «Gayo», núm. 2), que solo quizá sea el mismo.'
+  source: hch-20
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: accompanies
+  person: pablo
+  date:
+    from: 52
+    to: 56
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52-56 e.c. (tercer viaje)
+  inferred: false
+  sources:
+  - it-gayo
+  - hch-19
+  - si-3
+  reason: Compañero de viaje de Pablo en Éfeso (Hch 19:29). El tercer viaje va de c. 52 a 56 (estudio 3, párr. 26).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: aristarco
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  inferred: false
+  sources:
+  - it-gayo
+  - hch-19
+  - si-3
+  reason: Los dos son arrastrados juntos al teatro (Hch 19:29). Poco antes de que Pablo deje Éfeso, a principios de 55 (estudio
+    3, párr. 26).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: macedonia
+  inferred: false
+  sources:
+  - hch-19
+  - it-gayo
+  reason: Hch 19:29 lo llama macedonio, igual que Perspicacia «Gayo», núm. 1.
+  checked_on: '2026-09-29'
+  status: verified

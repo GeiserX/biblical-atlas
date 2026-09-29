@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: omri
+name: Omrí
+names:
+- name: Omrí
+date:
+  from: -950
+  to: -939
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951-940 a.e.c.
+summary: Jefe del ejército, proclamado rey en el campamento. Tras cuatro años de lucha con Tibní reinó solo; compró el monte
+  de Sémer y fundó Samaria. Hizo peor que todos los anteriores.
+reason: Perspicacia «Omrí», núm. 3, párr. 3-7; 1Re 16:16-28.
+sources:
+- it-omri
+- 1-reyes-16
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Omrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003324
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: succeeds
+  person: zimri-de-israel
+  inferred: false
+  sources:
+  - it-omri
+  - 1-reyes-16
+  reason: El ejército lo hizo rey al saber que Zimrí había matado a Elá (1Re 16:16).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - it-omri
+  - 1-reyes-16
+  reason: Edificó Samaria y trasladó allí la capital (1Re 16:24).
+  checked_on: '2026-09-28'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

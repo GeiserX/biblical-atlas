@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: llegada-a-roma
+title: Pablo llega a Roma
+date:
+  from: 59
+  to: 59
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 59 e.c.
+narrative_order:
+  series: hechos
+  order: 2816
+places:
+- roma
+people:
+- pablo
+- lucas
+- aristarco
+- julio
+passages:
+- Hch 28:14-16
+summary: Después del naufragio y del invierno en Malta, Pablo llega preso a Roma y le permiten vivir aparte con
+  un soldado que lo vigila.
+reason: El estudio 3 (párr. 27) sitúa el final del viaje hacia 59.
+sources:
+- si-3
+- hch-28
+- it-aristarco
+- it-julio
+search: Pablo llega a Roma
+history:
+- date: '2026-09-29'
+  change: Iba en 2814, antes que la salida de los hermanos (2815); pero Hch 28:15, 16 cuenta que los encontraron en el camino
+    y después entraron en Roma.
+  source: hch-28
+checked_on: '2026-09-29'
+status: verified

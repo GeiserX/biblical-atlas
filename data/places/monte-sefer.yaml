@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-sefer
+name: Monte Séfer
+names:
+- name: Monte Séfer
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En la ruta de Risá a Cadés, según el mapa B3
+  geometry:
+    type: zone
+    lat: 30.28
+    lon: 34.49
+    radius_km: 30
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-sefer
+  - tnm-b3
+  reason: El mapa B3 agrupa con signo de duda nueve campamentos, de Quehelatá a Moserot, en la ruta de Risá a Cadés.
+  coord_source: calculation
+  note: 'Centro: punto medio de las tres flechas con que el mapa B3 señala ese tramo, calculado ajustando la imagen a dieciséis
+    lugares con punto de OpenBible. Radio nuestro.'
+summary: Monte donde acampó Israel, entre Quehelatá y Haradá; Perspicacia lo sitúa en la península del Sinaí. No se sabe cuál
+  es.
+reason: Perspicacia «Séfer, Monte»; Nú 33:23, 24.
+sources:
+- it-sefer
+- tnm-b3
+- numeros-33
+links:
+- title: 'Perspicacia: «Séfer, Monte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004015
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

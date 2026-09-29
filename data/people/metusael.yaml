@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: metusael
+name: Metusael
+names:
+- name: Metusael
+perspicacia: '1200003023'
+summary: Hijo de Mehujael, de la línea de Caín por Enoc. Fue padre de Lamec, que no es el Lamec padre de Noé.
+reason: Perspicacia «Metusael»; Gé 4:18.
+sources:
+- it-metusael
+- genesis-4
+links:
+- title: 'Perspicacia: «Metusael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003023
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+relations:
+- type: kin
+  person: mehujael
+  word: father
+  inferred: false
+  sources:
+  - genesis-4
+  reason: 'Gé 4:18: Mehujael fue padre de Metusael.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: askenaz
+name: Askenaz
+names:
+- name: Askenaz
+perspicacia: '1200000423'
+disambiguation: El hijo de Gómer; no el reino de Askenaz que nombra Jeremías.
+summary: Primer hijo de Gómer y nieto de Jafet. Jeremías 51:27 nombra un reino de Askenaz que Perspicacia pone quizá entre
+  el mar Negro y el Caspio.
+reason: Perspicacia «Askenaz», núm. 1 y 2; Gé 10:3.
+sources:
+- it-askenaz
+- genesis-10
+links:
+- title: 'Perspicacia: «Askenaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000423
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: gomer-hijo-de-jafet
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:3 lo nombra el primero de los hijos de Gómer.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zemaraim
+name: Zemaraim
+names:
+- name: Zemaraim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Al noreste de Betel
+  geometry:
+    type: zone
+    lat: 31.95
+    lon: 35.27
+    radius_km: 6
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-zemaraim
+  - openbible-geo
+  reason: Perspicacia dice que se ha sugerido un lugar al noreste de Betel; la lista la nombra junto a Betel.
+  coord_source: calculation
+  note: Centro nuestro, unos 4 km al NE del punto de Betel de OpenBible (Beitin). Radio nuestro.
+summary: Ciudad de Benjamín sin identificar, nombrada junto a Betel. Quizá estaba al noreste de Betel y dio nombre al monte
+  Zemaraim, desde donde Abías habló a Jeroboán.
+reason: Perspicacia «Zemaraim», núm. 1 y 2; Jos 18:22; 2Cr 13:4.
+sources:
+- it-zemaraim
+- openbible-geo
+- josue-18
+links:
+- title: 'Perspicacia: «Zemaraim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004691
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

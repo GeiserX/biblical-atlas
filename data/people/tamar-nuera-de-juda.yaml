@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tamar-nuera-de-juda
+name: Tamar
+names:
+- name: Tamar
+perspicacia: 1200004313#1
+disambiguation: La nuera de Judá, madre de Pérez; no la hija de David ni la de Absalón.
+summary: Viuda de Er y después de Onán, hijos de Judá. Consiguió del propio Judá el heredero que se le negaba y dio a luz
+  a los gemelos Pérez y Zérah.
+reason: Perspicacia «Tamar», núm. 1 (Gé 38:6-30); Rut 4:12.
+sources:
+- it-tamar
+- rut-4
+- mateo-1
+- genesis-38
+links:
+- title: 'Perspicacia: «Tamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004313
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: juda-hijo-de-jacob
+  word: father_in_law
+  inferred: false
+  sources:
+  - genesis-38
+  reason: 'Gé 38:11, 13, 24: Judá es su suegro y ella, su nuera.'
+  checked_on: '2026-09-29'
+  status: verified

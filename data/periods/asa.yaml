@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: asa
+name: Reinado de Asá en Judá
+type: king
+person: asa
+date:
+  from: -977
+  to: -936
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 978-937 a.e.c.
+places:
+- jerusalen
+summary: Cuarenta y un años en Jerusalén; coincidió con ocho reyes de Israel.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 15.
+sources:
+- tnm-a6-a
+- 1-reyes-15
+- it-asa
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
+  source: tnm-a6-a
+search: Asá rey
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: los-patriarcas
+name: Los patriarcas
+type: era
+date:
+  from: -2369
+  to: -1512
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 2370-1513 a.e.c.
+summary: Después del Diluvio la gente se dispersa desde Babel. Abrahán recibe la promesa, y su nieto Jacob baja con su familia
+  a Egipto, donde acaban esclavos.
+reason: 'Estudio 3, párr. 8 a 11: el Diluvio empieza en 2370 a.e.c. e Israel sale de Egipto en 1513 a.e.c. Comparte con las
+  épocas vecinas solo el año de paso.'
+sources:
+- si-3
+- it-cronologia
+search: patriarcas Abrahán Isaac Jacob
+checked_on: '2026-09-28'
+status: verified
+note: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

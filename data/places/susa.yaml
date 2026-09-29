@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: susa
+name: Susa
+names:
+- name: Susa
+type: city
+lat: 32.18922
+lon: 48.25778
+precision: point
+coord_source: openbible:a033b84
+coord_url: https://www.openbible.info/geo/ancient/a033b84/susa
+summary: Ciudad real del Imperio persa, a unos 350 km al este de Babilonia, en la antigua Elam. Allí transcurre el libro
+  de Ester y allí servía Nehemías como copero.
+reason: 'Perspicacia «Susa»: situación, visión de Da 8:2, libro de Ester y servicio de Nehemías (Ne 1:1); «Persia, persas»
+  la llama centro administrativo. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-susa
+- it-persia
+- openbible-geo
+links:
+- title: 'Perspicacia: «Susa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004102
+  type: perspicacia
+- title: Nehemías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/16/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

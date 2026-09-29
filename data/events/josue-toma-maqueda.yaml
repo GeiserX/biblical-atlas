@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-toma-maqueda
+title: Josué toma Maquedá
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+narrative_order:
+  series: josue
+  order: 10028
+places:
+- maqueda
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 10:28
+summary: Ese mismo día Josué conquista Maquedá, mata a espada a su rey y a sus habitantes sin dejar a nadie, como había hecho
+  con Jericó.
+reason: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal.'
+sources:
+- josue-10
+- si-3
+- it-josue
+- it-maqueda
+links:
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

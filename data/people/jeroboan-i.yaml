@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroboan-i
+name: Jeroboán
+names:
+- name: Jeroboán
+disambiguation: Primer rey de Israel tras la división; su descendiente Jeroboán II reinó unos ciento treinta años después.
+distinct_from:
+- jeroboan-ii
+date:
+  from: -996
+  to: -975
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 997-c. 976 a.e.c.
+summary: Efraimita, hijo de Nebat. Ahías le anunció que reinaría sobre diez tribus. Rey tras la división, edificó Siquem y
+  puso becerros de oro en Betel y Dan para que nadie subiera a Jerusalén.
+reason: Perspicacia «Jeroboán», núm. 1, párr. 2-6 y 10; 1Re 11:26-40 y 12:20-33.
+sources:
+- it-jeroboan
+- 1-reyes-12
+- 1-reyes-14
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jeroboán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
+  type: perspicacia
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+relations:
+- type: lived_in
+  place: siquem
+  inferred: false
+  sources:
+  - it-jeroboan
+  - 1-reyes-12
+  reason: Edificó Siquem y al parecer gobernó desde allí al principio (1Re 12:25).
+  checked_on: '2026-09-28'
+  status: verified
+- type: lived_in
+  place: tirza
+  inferred: false
+  sources:
+  - it-tirza
+  - 1-reyes-14
+  reason: Su casa estaba luego en Tirzá (1Re 14:17).
+  checked_on: '2026-09-28'
+  status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Jeroboán» pone su muerte cerca de 977 a.e.c.; A6-A, más reciente, empieza el reinado de Nadab hacia
+    976.
+  source: tnm-a6-a
+checked_on: '2026-09-28'
+status: verified

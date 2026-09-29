@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: soco-de-la-region-montanosa
+name: Socó
+names:
+- name: Socó
+- name: Socoh
+  note: Otra grafía que da la nota de Jos 15:48; es la de Perspicacia.
+type: city
+lat: 31.400871
+lon: 35.00614
+precision: point
+coord_source: openbible:ac9c090
+coord_url: https://www.openbible.info/geo/ancient/ac9c090/socoh-2
+summary: Ciudad de la montaña de Judá, que suele identificarse con Khirbet Shuweikeh, unos 17 km al suroeste de Hebrón. No
+  es la Socó de la Sefelá.
+reason: 'Perspicacia «Socó, Socoh», núm. 2; Jos 15:48. OpenBible: solo el punto.'
+sources:
+- it-soco
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Socó, Socoh»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004174
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bezec
+name: Bézec
+names:
+- name: Bézec
+  note: La de Jue 1:4, 5 (Perspicacia «Bézeq», núm. 1); no la de 1Sa 11:8, que es la núm. 2.
+- name: Bézeq
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.880322
+lon: 34.964918
+precision: uncertain
+coord_source: openbible:af48fdd
+coord_url: https://www.openbible.info/geo/ancient/af48fdd/bezek-1
+coord_note: 'Tell Bezqa, segunda identificación de OpenBible: es el Khirbet Bezqa que Perspicacia propone con reservas. La
+  primera la iguala con la Bézeq de 1Sa 11:8.'
+summary: Lugar donde Judá y Simeón vencieron a 10.000 cananeos y perizitas y capturaron a Adoni-Bézec. El relato parece situarla
+  cerca de Jerusalén; se ha propuesto Khirbet Bezqa, en la Sefelá, al nordeste de Guézer.
+reason: 'Perspicacia «Bézeq», núm. 1; Jue 1:4, 5. No es la Bézeq de 1Sa 11:8, al nordeste de Siquem (núm. 2). OpenBible: solo
+  el punto.'
+sources:
+- it-bezeq
+- openbible-geo
+- jueces-1
+links:
+- title: 'Perspicacia: «Bézeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000722
+  type: perspicacia
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

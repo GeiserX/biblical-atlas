@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asir-hijo-de-core
+name: Asir
+names:
+- name: Asir
+perspicacia: 1200000444#1
+disambiguation: Asir hijo de Coré; no el otro Asir que Crónicas da como hijo o descendiente de Ebiasaf.
+summary: Levita nacido en Egipto, uno de los tres hijos de Coré. Él y sus hermanos no murieron en la rebelión de su padre.
+reason: Perspicacia «Asir», núm. 1, y «Elqaná», núm. 1; Éx 6:24.
+sources:
+- it-asir
+- it-elqana
+- exodo-6
+links:
+- title: 'Perspicacia: «Asir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000444
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: core-hijo-de-izhar
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-asir
+  reason: 'Éx 6:24: primer hijo de Coré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: elcana-hijo-de-core
+  word: brother
+  inferred: false
+  sources:
+  - exodo-6
+  reason: 'Éx 6:24: Elcaná es otro hijo de Coré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abiasaf
+  word: brother
+  inferred: false
+  sources:
+  - exodo-6
+  reason: 'Éx 6:24: Abiasaf es otro hijo de Coré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: true
+  sources:
+  - it-asir
+  reason: 'Perspicacia «Asir», núm. 1: levita nacido en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

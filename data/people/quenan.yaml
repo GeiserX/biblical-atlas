@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: quenan
+name: Quenán
+names:
+- name: Quenán
+- name: Cainán
+  note: Así lo llama la genealogía de Jesús en el Evangelio de Lucas, según Perspicacia.
+perspicacia: '1200002588'
+summary: Hijo de Enós; Set era su abuelo y Adán, su bisabuelo. A los 70 años fue padre de Mahalalel; tuvo más hijos e hijas
+  y murió con 910 años.
+reason: Perspicacia «Quenán», párr. 1; Gé 5:9-14.
+sources:
+- it-quenan
+- genesis-5
+- lucas-3
+links:
+- title: 'Perspicacia: «Quenán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002588
+  type: perspicacia
+- title: Génesis 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/5
+  type: bible
+relations:
+- type: kin
+  person: enos
+  word: father
+  inferred: false
+  sources:
+  - genesis-5
+  - it-quenan
+  - lucas-3
+  reason: 'Gé 5:9: Enós fue padre de Quenán a los 90 años.'
+  checked_on: '2026-09-29'
+  status: verified
+disambiguation: Quenán hijo de Enós, al que Lucas llama Cainán; no el otro Cainán que Lucas pone entre Arpaksad y Selá.
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- cainan-hijo-de-arpaksad

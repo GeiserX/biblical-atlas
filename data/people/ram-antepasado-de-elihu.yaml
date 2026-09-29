@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ram-antepasado-de-elihu
+name: Ram
+names:
+- name: Ram
+perspicacia: 1200003629#3
+disambiguation: Fundador de la familia de Elihú. No es Ram hijo de Hezrón, antepasado de David, ni el hijo de Jerahmeel.
+distinct_from:
+- ram-hijo-de-hezron
+summary: Hombre que dio origen a la familia de Elihú, el joven que habló a Job. La Biblia no cuenta nada más de él.
+reason: Perspicacia «Ram», núm. 3; Job 32:2.
+sources:
+- it-ram
+- job-32
+links:
+- title: 'Perspicacia: «Ram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003629
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

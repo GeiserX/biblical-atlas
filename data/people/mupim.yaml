@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mupim
+name: Mupim
+names:
+- name: Mupim
+- name: Sefufam
+  note: Otra forma del nombre en otras listas; Perspicacia «Mupim» la da por la misma persona.
+- name: Sefufán
+  note: Otra forma del nombre en otras listas; Perspicacia «Mupim» la da por la misma persona.
+- name: Supim
+  note: Otra forma del nombre en otras listas; Perspicacia «Mupim» la da por la misma persona.
+perspicacia: '1200003133'
+summary: Uno de los que Gé 46:21 llama hijos de Benjamín. Perspicacia lo identifica con Sefufam, Sefufán y Supim de otras
+  listas.
+reason: Perspicacia «Mupim»; Gé 46:21.
+sources:
+- it-mupim
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Mupim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003133
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - genesis-46
+  - it-mupim
+  - numeros-26
+  reason: Gé 46:21 lo cuenta entre los hijos de Benjamín, término que puede abarcar a descendientes.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: seleucia
+name: Seleucia
+names:
+- name: Seleucia
+- name: Seleucia Pieria
+  note: Nombre con el que a veces se la distingue de otras ciudades llamadas Seleucia.
+type: port
+lat: 36.124
+lon: 35.922
+precision: point
+coord_source: openbible:a6d306d
+coord_url: https://www.openbible.info/geo/ancient/a6d306d/seleucia
+summary: Puerto fortificado de Antioquía de Siria, unos 20 km al suroeste; de aquí zarparon Pablo y Bernabé c. 47.
+reason: 'Perspicacia («Seleucia») describe el lugar; aparece en Hch 13:4. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+sources:
+- it-seleucia
+- hch-13
+- openbible-geo
+links:
+- title: 'Perspicacia: «Seleucia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003889
+  type: perspicacia
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+checked_on: '2026-09-27'
+status: verified

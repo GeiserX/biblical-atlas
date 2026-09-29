@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jefte-vence-a-los-ammonitas
+title: Jefté vence a los ammonitas
+date:
+  from: -1172
+  to: -1172
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1173 a.e.c. (comienzo de su judicatura)
+narrative_order:
+  series: jueces
+  order: 11032
+places:
+- minit
+- abel-keramim
+- ammon
+people:
+- jefte
+passages:
+- Jue 11:32, 33
+summary: Jehová entrega a los ammonitas en manos de Jefté. Los derrota desde Aroer hasta Minit y Abel-Keramim, toma 20 ciudades
+  y Ammón queda sometido a Israel.
+reason: 'Perspicacia «Jefté», párr. 10; «Minit» y «Abel-keramim». Perspicacia «Jefté», párr. 1: por los 300 años de Jue 11:26,
+  sus seis años de juez empiezan hacia 1173 a.e.c., al vencer a Ammón.'
+sources:
+- jueces-11
+- it-jefte
+- it-minit
+- it-abel-keramim
+- it-aroer
+links:
+- title: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified
