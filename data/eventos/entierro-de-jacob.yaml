@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entierro-de-jacob
+titulo: Entierran a Jacob en la cueva de Macpelá
+fecha:
+  desde: -1710
+  hasta: -1709
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1711 y 1710 a.e.c. (tiempo narrativo: después de los 70 días de luto en Egipto por Jacob, muerto en 1711)'
+orden_relato:
+  serie: genesis
+  orden: 50012
+lugares:
+- macpela
+- canaan
+personas:
+- jacob
+- jose-hijo-de-jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- isacar-hijo-de-jacob
+- dan-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- neftali-hijo-de-jacob
+- benjamin-hijo-de-jacob
+pasajes:
+- Gé 50:12-14
+resumen: 'Los hijos de Jacob cumplen su encargo: lo llevan a Canaán y lo entierran en la cueva del campo de Macpelá, frente
+  a Mamré. Luego José vuelve a Egipto con sus hermanos y todo el cortejo.'
+razon: Perspicacia «Jacob», párr. 41, y «Macpelá». Sigue a la muerte de Jacob en 1711 a.e.c. (estudio 3), tras el luto en
+  Egipto y en Atad.
+fuentes:
+- genesis-50
+- it-jacob
+- it-macpela
+- si-3
+enlaces:
+- titulo: Génesis 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/50
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

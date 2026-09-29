@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: beor-padre-de-bela
+nombre: Beor
+nombres:
+- nombre: Beor
+perspicacia: 1200000646#1
+desambiguacion: Beor el edomita; no Beor, padre del profeta Balaam.
+resumen: Edomita, padre de Bela, el primer rey de Edom que se nombra.
+razon: Perspicacia «Beor», núm. 1; Gé 36:32.
+fuentes:
+- it-beor
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Beor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000646
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

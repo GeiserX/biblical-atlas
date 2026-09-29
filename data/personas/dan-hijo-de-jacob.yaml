@@ -11,6 +11,8 @@ fuentes:
 - it-dan
 - genesis-30
 - genesis-46
+- genesis-35
+- genesis-49
 enlaces:
 - titulo: 'Perspicacia: «Dan»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001115
@@ -26,6 +28,9 @@ relaciones:
   fuentes:
   - it-dan
   - genesis-30
+  - genesis-35
+  - genesis-46
+  - genesis-49
   razon: 'Perspicacia «Dan», párr. 2: quinto hijo de Jacob, que tuvo con Bilhá (Gé 30:5, 6).'
   estado: verificado
 - tipo: nacio_en
@@ -33,7 +38,41 @@ relaciones:
   deducido: true
   fuentes:
   - it-dan
-  razon: 'Perspicacia «Dan», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 29:4; 31:41).'
+  - genesis-30
+  - genesis-35
+  razon: 'Perspicacia «Dan», párr. 2: nació en Padán-aram, donde Jacob vivía junto a Harán (Gé 30:6; 35:26).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: bilha
+  relacion: madre
+  deducido: false
+  fuentes:
+  - genesis-30
+  - it-bilha
+  - genesis-35
+  - genesis-46
+  razon: 'Gé 30:5, 6: hijo que Bilhá le dio a Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  estado: verificado
+perspicacia: '1200001115'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón de dónde nació cita Gé 30:6, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
+  fuente: genesis-30
+consultado: '2026-09-29'
 estado: verificado

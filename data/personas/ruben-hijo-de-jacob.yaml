@@ -10,6 +10,12 @@ razon: Perspicacia «Rubén», núm. 1, párr. 2, 3, 6 y 7; Gé 29:32, 37:21, 22
 fuentes:
 - it-ruben
 - genesis-29
+- genesis-30
+- genesis-35
+- genesis-37
+- genesis-42
+- genesis-46
+- genesis-49
 enlaces:
 - titulo: 'Perspicacia: «Rubén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003713
@@ -25,6 +31,9 @@ relaciones:
   fuentes:
   - it-ruben
   - genesis-29
+  - genesis-35
+  - genesis-46
+  - genesis-49
   razon: 'Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).'
   estado: verificado
 - tipo: pariente
@@ -34,6 +43,8 @@ relaciones:
   fuentes:
   - it-ruben
   - genesis-29
+  - genesis-35
+  - genesis-46
   razon: 'Perspicacia «Rubén», párr. 2: primogénito de Jacob; su madre fue Lea (Gé 29:32).'
   estado: verificado
 - tipo: nacio_en
@@ -42,8 +53,31 @@ relaciones:
   fuentes:
   - it-benjamin
   - it-jacob
+  - genesis-35
+  - genesis-46
   razon: 'Perspicacia «Benjamín», párr. 2: todos los hijos de Jacob menos Benjamín nacieron en Padán-aram, donde Jacob vivía
-    junto a Harán (Gé 29:4; 31:41).'
+    junto a Harán (Gé 29:32; 35:26).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: entra en Egipto con la casa de Jacob.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
+    con su padre.'
+  estado: verificado
+perspicacia: '1200003713'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón de dónde nació cita Gé 29:32, donde nace, en lugar de Gé 29:4 y 31:41, que no lo nombran.
+  fuente: genesis-29
+consultado: '2026-09-29'
 estado: verificado

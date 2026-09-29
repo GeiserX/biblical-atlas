@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lotan
+nombre: Lotán
+nombres:
+- nombre: Lotán
+perspicacia: '1200002777'
+resumen: El primero de los hijos de Seír el horeo en la lista de Gé 36:20, y jeque en Edom. Timná era su hermana; Horí y Hemam,
+  sus hijos.
+razon: Perspicacia «Lotán»; Gé 36:20, 22, 29.
+fuentes:
+- it-lotan
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Lotán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002777
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: seir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-lotan
+  - genesis-36
+  razon: 'Gé 36:20: hijo de Seír el horeo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: seir
+  deducido: false
+  fuentes:
+  - it-lotan
+  - genesis-36
+  razon: 'Gé 36:21, 29, 30: jeque horeo en la tierra de Seír.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

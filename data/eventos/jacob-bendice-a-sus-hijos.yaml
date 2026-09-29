@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-bendice-a-sus-hijos
+titulo: Jacob bendice a sus doce hijos
+fecha:
+  desde: -1710
+  hasta: -1710
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1711 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 49001
+lugares:
+- egipto
+- gosen
+personas:
+- jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- isacar-hijo-de-jacob
+- dan-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- neftali-hijo-de-jacob
+- jose-hijo-de-jacob
+- benjamin-hijo-de-jacob
+pasajes:
+- Gé 49:1-28
+resumen: En su lecho de muerte, Jacob reúne a sus hijos y dice a cada uno lo que les espera a él y a sus descendientes. Anuncia
+  que Judá tendrá el cetro hasta que venga Siló.
+razon: 'Perspicacia «Jacob», párr. 40 y 41: antes de morir, en 1711 a.e.c. según el estudio 3, bendijo uno a uno a sus doce
+  hijos. «Siló», núm. 1, lo identifica con Jesucristo.'
+fuentes:
+- genesis-49
+- it-jacob
+- si-3
+- it-silo
+enlaces:
+- titulo: Génesis 49 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/49
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

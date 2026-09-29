@@ -16,8 +16,10 @@ lugares:
 - haran
 personas:
 - abrahan
+- sara
+- lot
 pasajes:
-- Gé 12:1-7
+- Gé 12:1-5
 - Gál 3:17
 resumen: Abrahán, con 75 años, deja Harán y cruza el Éufrates camino de Canaán. Ahí empieza a regir la promesa de Dios y
   corren los 430 años hasta la Ley.
@@ -32,5 +34,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001054
   tipo: perspicacia
 buscar: pacto abrahámico 1943
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La aparición de Jehová en Siquem (Gé 12:6, 7) es otra escena y otro lugar; pasa al suceso abran-llega-a-siquem.
+    Aquí quedan la llamada y la salida de Harán.
+  fuente: genesis-12
+consultado: '2026-09-29'
 estado: verificado

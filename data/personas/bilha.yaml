@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilha
+nombre: Bilhá
+nombres:
+- nombre: Bilhá
+perspicacia: '1200000737'
+desambiguacion: Bilhá la sierva de Raquel; Perspicacia da el mismo nombre a una ciudad de Simeón.
+resumen: Sierva que Labán dio a Raquel y que Raquel dio a Jacob como esposa secundaria. Fue madre de Dan y Neftalí. Tras la
+  muerte de Raquel, Rubén se acostó con ella.
+razon: Perspicacia «Bilhá», núm. 1, párr. 2; Gé 29:29 y 30:3-8.
+fuentes:
+- it-bilha
+- genesis-29
+- genesis-30
+- genesis-35
+- genesis-37
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Bilhá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000737
+  tipo: perspicacia
+- titulo: Génesis 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/30
+  tipo: biblia
+- titulo: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  tipo: biblia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: haran
+  deducido: true
+  fuentes:
+  - genesis-29
+  - it-bilha
+  razon: 'Gé 29:29: sierva de Labán, en Harán (Gé 29:4, 5); Perspicacia «Bilhá» sitúa la boda en Padán-aram.'
+  estado: verificado
+- tipo: acompana
+  persona: raquel
+  relacion: señora
+  deducido: false
+  fuentes:
+  - it-bilha
+  - genesis-35
+  - genesis-46
+  razon: 'Gé 35:25: Bilhá era la sierva de Raquel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

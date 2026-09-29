@@ -20,6 +20,10 @@ fuentes:
 - it-rebeca
 - genesis-24
 - genesis-25
+- genesis-22
+- genesis-26
+- genesis-27
+- genesis-28
 enlaces:
 - titulo: 'Perspicacia: «Rebeca»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003658
@@ -35,7 +39,83 @@ relaciones:
   fuentes:
   - it-rebeca
   - genesis-24
+  - genesis-25
+  - genesis-26
+  - genesis-49
   razon: 'Perspicacia «Rebeca», párr. 6: Isaac la llevó a la tienda de Sara y la tomó por esposa (Gé 24:67).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: betuel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-rebeca
+  - genesis-24
+  - genesis-25
+  - genesis-28
+  - it-betuel
+  razon: 'Gé 22:23: Betuel fue el padre de Rebeca.'
+  estado: verificado
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - genesis-24
+  razon: 'Gé 24:15, 24: su padre Betuel era hijo de Nacor.'
+  estado: verificado
+- tipo: pariente
+  persona: milca-hija-de-haran
+  relacion: abuela
+  deducido: false
+  fuentes:
+  - genesis-24
+  razon: 'Gé 24:15, 24: su padre Betuel era hijo de Milcá.'
+  estado: verificado
+- tipo: pariente
+  persona: laban
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - it-laban
+  - genesis-24
+  - genesis-25
+  razon: 'Gé 24:29: Rebeca tenía un hermano llamado Labán.'
+  estado: verificado
+- tipo: pariente
+  persona: abrahan
+  relacion: tío abuelo
+  deducido: false
+  fuentes:
+  - it-rebeca
+  - genesis-24
+  razon: 'Gé 24:48: el siervo la llama nieta del hermano de su amo; Perspicacia «Rebeca», párr. 2, la llama sobrina nieta
+    de Abrahán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ciudad-de-nacor
+  deducido: false
+  fuentes:
+  - genesis-24
+  razon: 'Gé 24:10, 15, 28: vivía con su familia en la ciudad de Nacor.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: negueb
+  deducido: false
+  fuentes:
+  - it-rebeca
+  - genesis-24
+  razon: 'Gé 24:62-67 y Perspicacia «Rebeca», párr. 5: fue al Négueb, donde vivía Isaac, y allí se casó.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: guerar
+  deducido: false
+  fuentes:
+  - it-rebeca
+  - genesis-26
+  razon: 'Gé 26:6, 7 y Perspicacia «Rebeca», párr. 8: vivió con Isaac en Guerar, tierra filistea.'
+  estado: verificado
+perspicacia: '1200003658'
+consultado: '2026-09-29'
 estado: verificado

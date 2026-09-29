@@ -16,6 +16,8 @@ fuentes:
 - it-damasco
 - hch-9
 - openbible-geo
+- genesis-14
+- genesis-15
 enlaces:
 - titulo: 'Perspicacia: «Damasco»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001114
@@ -23,5 +25,5 @@ enlaces:
 - titulo: Hechos 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-29'
 estado: verificado

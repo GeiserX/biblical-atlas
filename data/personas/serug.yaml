@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: serug
+nombre: Serug
+nombres:
+- nombre: Serug
+perspicacia: '1200003909'
+fecha:
+  desde: -2206
+  hasta: -1976
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 2207-1977 a.e.c.
+resumen: Hijo de Reú y bisabuelo de Abrahán, antepasado de Jesús. A los 30 años fue padre de Nacor, tuvo más hijos y vivió
+  230 años.
+razon: Perspicacia «Serug»; Gé 11:20-23.
+fuentes:
+- it-serug
+- genesis-11
+enlaces:
+- titulo: 'Perspicacia: «Serug»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003909
+  tipo: perspicacia
+- titulo: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: reu
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-11
+  razon: 'Gé 11:20: Reú fue padre de Serug a los 32 años.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

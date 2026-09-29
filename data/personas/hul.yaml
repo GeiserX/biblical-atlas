@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hul
+nombre: Hul
+nombres:
+- nombre: Hul
+perspicacia: '1200002100'
+resumen: Hijo de Aram. No se sabe dónde vivieron sus descendientes; muchos piensan en la región de Huleh, al norte del mar
+  de Galilea.
+razon: Perspicacia «Hul»; Gé 10:23. En 1 Crónicas 1:17 parece contarse como hijo de Sem, quizá por un fallo de copia.
+fuentes:
+- it-hul
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Hul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002100
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aram-hijo-de-sem
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:23 lo nombra entre los hijos de Aram.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

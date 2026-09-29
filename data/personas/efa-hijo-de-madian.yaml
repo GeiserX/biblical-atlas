@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efa-hijo-de-madian
+nombre: Efá
+nombres:
+- nombre: Efá
+perspicacia: 1200001382#1
+desambiguacion: Efá hijo de Madián; no la concubina de Caleb ni el hijo de Jahdai.
+resumen: Primer hijo de Madián, de la familia de Abrahán por Queturá. Parece que sus descendientes tenían muchos camellos.
+razon: Perspicacia «Efá, II», núm. 1; Gé 25:4.
+fuentes:
+- it-efa-ii
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Efá, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001382
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: madian
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-efa-ii
+  - genesis-25
+  razon: Gé 25:4.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

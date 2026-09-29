@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: padan-aram
+nombre: Padán-Aram
+nombres:
+- nombre: Padán-Aram
+- nombre: Padán
+  nota: Forma breve del nombre.
+- nombre: Padán-aram
+  nota: Grafía de Perspicacia.
+tipo: region
+lat: 36.864444
+lon: 39.032778
+precision: zona
+coord_fuente: openbible:a8ec7ba
+coord_url: https://www.openbible.info/geo/ancient/a8ec7ba/paddan-aram
+coord_nota: Punto de OpenBible en Harán, la ciudad principal de la región.
+resumen: Llanura del norte de Mesopotamia donde estaba la ciudad de Harán. Allí vivían Betuel y Labán, los parientes de Abrahán
+  de los que salieron las esposas de Isaac y de Jacob.
+razon: 'Perspicacia «Padán», párr. 1 y 2; Gé 25:20. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-padan
+- genesis-25
+- openbible-geo
+- genesis-28
+- genesis-31
+- genesis-33
+- genesis-35
+- genesis-46
+- genesis-48
+enlaces:
+- titulo: 'Perspicacia: «Padán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003357
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+- titulo: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  tipo: biblia
+- titulo: Génesis 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  tipo: biblia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+- titulo: Génesis 48 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/48
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

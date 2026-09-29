@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gomer-hijo-de-jafet
+nombre: Gómer
+nombres:
+- nombre: Gómer
+perspicacia: 1200001740#1
+desambiguacion: Gómer hijo de Jafet; no Gómer, la esposa del profeta Oseas.
+resumen: Hijo de Jafet y nieto de Noé, nacido tras el Diluvio y padre de Askenaz, Rifat y Togarmá. Perspicacia relaciona a
+  su descendencia con los cimerios, del norte del mar Negro.
+razon: Perspicacia «Gómer», núm. 1, párr. 1 y 2; Gé 10:2, 3.
+fuentes:
+- it-gomer
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Gómer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001740
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jafet
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:2 lo pone el primero de los hijos de Jafet.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

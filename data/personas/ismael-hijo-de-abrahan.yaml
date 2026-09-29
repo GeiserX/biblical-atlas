@@ -21,6 +21,9 @@ fuentes:
 - si-3
 - genesis-16
 - genesis-25
+- genesis-17
+- genesis-21
+- genesis-36
 enlaces:
 - titulo: 'Perspicacia: «Ismael»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002215
@@ -36,6 +39,8 @@ relaciones:
   fuentes:
   - it-ismael
   - genesis-16
+  - genesis-17
+  - genesis-25
   razon: 'Perspicacia «Ismael», párr. 2: hijo de Abrahán y Agar (Gé 16:15).'
   estado: verificado
 - tipo: pariente
@@ -45,7 +50,27 @@ relaciones:
   fuentes:
   - it-ismael
   - genesis-16
+  - genesis-25
   razon: 'Perspicacia «Ismael», párr. 2: hijo de Abrahán y Agar (Gé 16:15).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: isaac
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - genesis-21
+  - it-ismael
+  razon: 'Gé 21:9-11: el hijo de Agar y el de Sara son los dos hijos de Abrahán; Perspicacia «Ismael», núm. 1, llama a Isaac
+    su medio hermano.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-paran
+  deducido: false
+  fuentes:
+  - genesis-21
+  - it-paran
+  razon: 'Gé 21:20, 21: creció en el desierto, se hizo arquero y se instaló en el desierto de Parán.'
+  estado: verificado
+perspicacia: 1200002215#1
+consultado: '2026-09-29'
 estado: verificado

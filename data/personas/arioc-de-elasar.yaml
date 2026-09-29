@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arioc-de-elasar
+nombre: Arioc
+nombres:
+- nombre: Arioc
+perspicacia: 1200000363#1
+desambiguacion: Arioc rey de Elasar, en tiempos de Abrán; no el jefe de la guardia de Nabucodonosor que llevó a Daniel ante
+  el rey.
+resumen: Rey de Elasar aliado de Kedorlaomer. Con otros dos reyes sofocó la revuelta de las ciudades del Distrito y se llevó
+  cautivo a Lot, hasta que Abrán los sorprendió y los venció.
+razon: Perspicacia «Arioc», núm. 1; Gé 14:1, 9.
+fuentes:
+- it-arioc
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Arioc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000363
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: elasar
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: Gé 14:1, 9 lo llama rey de Elasar.
+  estado: verificado
+- tipo: acompana
+  persona: kedorlaomer
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
