@@ -112,6 +112,18 @@ relaciones:
   - si-3
   razon: Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).
   estado: verificado
+- tipo: acompana
+  persona: gamaliel-fariseo
+  relacion: discípulo de
+  deducido: false
+  fuentes:
+  - hch-22
+  - it-gamaliel
+  - it-pablo
+  - w96-gamaliel
+  razon: Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel»
+    (apartado 2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.
+  estado: verificado
 - tipo: pariente
   persona: andronico
   relacion: pariente

@@ -67,7 +67,7 @@ Con `candidatos`, `lat`, `lon`, `coord_fuente` y `coord_url` pueden ser `null` y
 
 ```yaml
 relaciones:
-  - tipo: pariente        # pariente, acompana, vivio_en, nacio_en, murio_en, sucede_a, mismo_que
+  - tipo: pariente        # pariente, acompana, vivio_en, nacio_en, murio_en, sucede_a, mismo_que, se_aparece_a
     persona: pedro        # vivio_en, nacio_en y murio_en llevan lugar: <id> en vez de persona
     relacion: hermano     # opcional
     fecha: {...}          # opcional
@@ -77,13 +77,15 @@ relaciones:
     estado: verificado
 ```
 
+Una relación `acompana` con `relacion` dice qué es X para Y («discípulo de», «custodio»). Vista desde Y, una `relacion` que acaba en «de» se lee «su discípulo»; cualquier otra necesita `relacion_inversa`, lo que es Y para X («custodio» / «custodiado por»), o el sitio dice solo «viajan juntos». Si la relación es la misma en los dos sentidos («amigo»), las dos llevan el mismo texto. Una `se_aparece_a` escrita en X con `persona: Y` dice que X se apareció a Y o le habló en una visión (Jesús a Pablo camino de Damasco); `relacion` y `relacion_inversa` dicen cómo, y nunca se lee «juntos».
+
 Una relación `pariente` escrita en la ficha X con `persona: Y` y `relacion: R` dice «Y es el R de X»: Juan el Bautista lleva `persona: zacarias-padre-de-juan` con `relacion: padre`. Si X e Y se declaran los dos con palabras de padres o hijos, `scripts/validate.py` exige que un lado diga padre o madre y el otro hijo o hija.
 
 **Cartas.** `escritor` es obligatorio (id de persona; las 14 de Pablo llevan `escritor: pablo`). Opcionales: `destinatarios.personas`, `portadores` y `personas` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
 **Eventos.** `lugares` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `presentes` es opcional: lista de ids de `personas` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `presentes: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `presentes` está también en `personas`. En un suceso de nacimiento («Nace…», «Nacimiento…») o de muerte («Muere…», «Muerte…») la primera de `personas` es quien nace o muere; las demás estaban presentes o intervinieron. El sitio calcula la edad solo con esa primera persona.
 
-**Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona). Una potencia sin fecha de ascenso (`fecha.desde: null`) puede llevar `consta_desde`, el año desde el que las fuentes ya la muestran mandando: Asiria al tomar Samaria en 740 a.e.c. Tiene que caer después del ascenso de la potencia anterior (las potencias van por `fecha.desde`). Antes de ese año el sitio dice «cambio sin fechar»; desde ese año, solo esa potencia. La `razon` del periodo dice de dónde sale.
+**Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona). Una potencia sin fecha de ascenso (`fecha.desde: null`) puede llevar `consta_desde`, el año desde el que las fuentes ya la muestran mandando: Asiria al tomar Samaria en 740 a.e.c. Tiene que caer después del ascenso de la potencia anterior (las potencias van por `fecha.desde`). Antes de ese año el sitio dice «cambio sin fechar»; desde ese año, solo esa potencia. La `razon` del periodo dice de dónde sale. Una potencia puede llevar `sucesos`, la lista de ids de sucesos de su historia que no ocurren en sus lugares (la caída de Samaria es de Asiria aunque pase en Samaria): al elegir la potencia se resaltan, y la reproducción se para en ellos.
 
 **Hallazgos** (`data/hallazgos/<id>.yaml`): `nombre`, `lugar_hallazgo` (id de lugar), `relaciona` (lista de selecciones `tipo:id`), `fecha_objeto` (objeto `fecha`), `resumen`, `razon`, `fuentes`, `consultado`, `estado`. Una fuente de nivel 2 solo vale junto a una de nivel 1 que la cite. Sin imágenes en esta tanda. Campos opcionales: `identificacion` (`segura` o `incierta`; con `incierta` la ficha pone la insignia «identificación incierta» y lo dice en «Lo que el texto no dice»), `donde_hoy` (texto de 40 palabras como mucho: dónde se guarda hoy el objeto) y `no_afirmamos` (lista de frases de 40 palabras como mucho, como en las personas). `scripts/validate.py` comprueba los tres.
 
