@@ -8,6 +8,9 @@ nombres:
   nota: Título que significa «calumniador».
 - nombre: el Tentador
   nota: Así lo llama Mt 4:3.
+- nombre: Belcebú
+  nota: Así lo llaman los escribas en Mr 3:22. Perspicacia «Beelzebub» lo toma por un apelativo de Satanás, quizá sacado de
+    Baal-zebub, el dios de Eqrón.
 perspicacia: '1200003845'
 desambiguacion: El gran adversario de Dios. En hebreo, satán sin artículo nombra también a cualquiera que se opone a otro,
   como el ángel que cortó el paso a Balaam.
@@ -21,6 +24,9 @@ fuentes:
 - job-2
 - mateo-4
 - genesis-3
+- marcos-1
+- marcos-3
+- it-beelzebub
 enlaces:
 - titulo: 'Perspicacia: «Satanás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003845

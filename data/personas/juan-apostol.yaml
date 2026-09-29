@@ -33,6 +33,14 @@ fuentes:
 - mateo-17
 - mateo-20
 - mateo-26
+- marcos-1
+- marcos-3
+- it-boanerges
+- marcos-5
+- marcos-9
+- marcos-10
+- marcos-13
+- marcos-14
 no_confundir_con:
 - juan-el-bautista
 - juan-marcos
@@ -48,6 +56,8 @@ relaciones:
   - it-juan
   - it-santiago
   - mateo-10
+  - marcos-3
+  - marcos-5
   razon: Mt 10:2 los nombra hermanos; Perspicacia cree a Juan el menor porque Santiago suele ir primero (párr. 21).
   estado: verificado
 - tipo: pariente
@@ -60,6 +70,8 @@ relaciones:
   - mateo-4
   - mateo-20
   - mateo-26
+  - marcos-1
+  - marcos-10
   razon: Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.
   estado: verificado
 - tipo: acompana
@@ -133,6 +145,13 @@ relaciones:
   - mateo-17
   - mateo-20
   - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-13
+  - marcos-14
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente
@@ -143,6 +162,7 @@ relaciones:
   - mateo-27
   - it-juan
   - it-salome
+  - marcos-15
   razon: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Juan», núm. 3, y la nota de Mr 15:40 creen que era Salomé.
   estado: pendiente
 enlaces:

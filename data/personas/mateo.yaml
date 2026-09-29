@@ -13,6 +13,7 @@ fuentes:
 - mateo-9
 - marcos-2
 - mateo-10
+- marcos-3
 relaciones:
 - tipo: vivio_en
   lugar: capernaum
@@ -29,8 +30,19 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-10
+  - marcos-2
+  - marcos-3
   razon: Mt 10:3.
   estado: verificado
+- deducido: false
+  estado: verificado
+  tipo: pariente
+  persona: alfeo-padre-de-mateo
+  relacion: padre
+  fuentes:
+  - marcos-2
+  - it-alfeo
+  razon: Mr 2:14 lo llama Leví hijo de Alfeo; Perspicacia «Alfeo», núm. 1.
 enlaces:
 - titulo: 'Perspicacia: «Mateo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002938

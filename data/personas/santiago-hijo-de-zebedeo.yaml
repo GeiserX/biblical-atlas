@@ -29,6 +29,14 @@ fuentes:
 - mateo-17
 - mateo-20
 - mateo-26
+- marcos-1
+- marcos-3
+- it-boanerges
+- marcos-5
+- marcos-9
+- marcos-10
+- marcos-13
+- marcos-14
 no_confundir_con:
 - santiago-hermano-de-jesus
 - santiago-hijo-de-alfeo
@@ -43,6 +51,9 @@ relaciones:
   - mateo-10
   - mateo-17
   - mateo-20
+  - marcos-1
+  - marcos-3
+  - marcos-10
   razon: Mt 10:2; Perspicacia «Santiago», párr. 3.
   estado: verificado
 - tipo: pariente
@@ -56,6 +67,9 @@ relaciones:
   - mateo-10
   - mateo-20
   - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-10
   razon: Mt 10:2 lo llama hijo de Zebedeo.
   estado: verificado
 - tipo: acompana
@@ -92,6 +106,13 @@ relaciones:
   - mateo-17
   - mateo-20
   - mateo-26
+  - marcos-1
+  - marcos-3
+  - marcos-5
+  - marcos-9
+  - marcos-10
+  - marcos-13
+  - marcos-14
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente
@@ -102,6 +123,7 @@ relaciones:
   - mateo-27
   - it-santiago
   - it-salome
+  - marcos-15
   razon: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Santiago», núm. 2, y la nota de Mr 15:40 creen que era Salomé.
   estado: pendiente
 enlaces:

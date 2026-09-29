@@ -21,6 +21,8 @@ fuentes:
 - mateo-1
 - mateo-2
 - mateo-12
+- marcos-3
+- marcos-6
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria

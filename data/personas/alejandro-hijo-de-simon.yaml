@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alejandro-hijo-de-simon
+nombre: Alejandro
+nombres:
+- nombre: Alejandro
+perspicacia: 1200000192#2
+desambiguacion: El hijo de Simón de Cirene; no es Alejandro Magno ni ninguno de los Alejandros de Hechos y de las cartas a
+  Timoteo.
+resumen: Hermano de Rufo; su padre era Simón de Cirene. Solo Marcos lo nombra, para presentar a su padre, el hombre al que
+  obligaron a llevar el madero de Jesús.
+razon: Perspicacia «Alejandro», núm. 2; Mr 15:21 y su nota de estudio, que señala que ningún otro Evangelio da este dato.
+fuentes:
+- it-alejandro
+- marcos-15
+enlaces:
+- titulo: 'Perspicacia: «Alejandro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  tipo: perspicacia
+- titulo: Marcos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/15
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: simon-de-cirene
+  relacion: padre
+  deducido: false
+  fuentes:
+  - marcos-15
+  - it-alejandro
+  razon: Mr 15:21 presenta a Simón de Cirene como padre de Alejandro y de Rufo.
+  estado: verificado
+- tipo: pariente
+  persona: rufo-hijo-de-simon
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - marcos-15
+  - it-alejandro
+  - it-rufo
+  razon: Mr 15:21 da a los dos el mismo padre; Perspicacia «Alejandro», núm. 2, y «Rufo», núm. 1, los llaman hermanos.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
