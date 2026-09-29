@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: crispo-cree
-titulo: Crispo cree; el Señor anima a Pablo en una visión
+titulo: Crispo cree con toda su casa
 fecha:
   desde: 50
   hasta: 52
@@ -19,16 +19,33 @@ personas:
 - silas
 - timoteo
 - crispo
+- ticio-justo
 pasajes:
-- Hch 18:5-11
+- Hch 18:5-8
 - 1Co 1:14
-resumen: Llegan Silas y Timoteo. Los judíos se oponen y Pablo pasa a la casa de Ticio Justo, junto a la sinagoga.
-  Crispo cree con su casa y, en visión, Jesús le dice que siga hablando.
-razon: Perspicacia «Crispo»; «Testimonio completo», cap. 19, párr. 13, sitúa la visión tras un año en Corinto.
+resumen: Llegan Silas y Timoteo. Los judíos se oponen y Pablo pasa a enseñar en la casa de Ticio Justo, junto a la sinagoga.
+  Crispo, que la presidía, cree con toda su casa, y muchos corintios se bautizan.
+razon: Perspicacia «Crispo»; «Testimonio completo», cap. 19, párr. 9 y 10, cuenta la casa de Ticio Justo y la fe de Crispo.
 fuentes:
 - it-crispo
 - bt-19
 - hch-18
+- it-justo
+- nota-hechos-18
 buscar: Crispo presidente de la sinagoga
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La visión de Hch 18:9-11 pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: La visión de Hch 18:9-11 es otra escena, de noche, y pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: El resumen contaba también la visión, que pasa a su propio suceso.
+  fuente: hch-18
+- fecha: '2026-09-29'
+  cambio: Decía que el párr. 13 de «Testimonio completo», cap. 19, pone la visión tras un año en Corinto; ese párrafo es el
+    tribunal, y la visión está en el párr. 12.
+  fuente: bt-19
+consultado: '2026-09-29'
 estado: verificado

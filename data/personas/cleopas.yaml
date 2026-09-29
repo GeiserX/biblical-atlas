@@ -30,3 +30,5 @@ relaciones:
   - lucas-24
   razon: 'Lu 24:13, 18: es uno de los dos discípulos que iban a Emaús.'
   estado: verificado
+no_confundir_con:
+- clopas

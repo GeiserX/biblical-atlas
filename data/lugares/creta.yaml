@@ -23,6 +23,7 @@ fuentes:
 - amos-9
 - it-caftor
 - it-filistea
+- hch-27
 - deuteronomio-2
 - it-caftor
 enlaces:
@@ -39,5 +40,11 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón cita ahora Am 9:7 y Perspicacia «Caftor, caftorim», que sostienen el nuevo dato del resumen.
   fuente: it-caftor
+  cambio: El resumen solo hablaba de Tito; ahora recoge el paso del barco de Pablo por la costa sur (Hch 27:7-21), que Perspicacia
+    «Creta, cretenses» cuenta.
+  fuente: hch-27
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora Hechos 27, que añade el resumen.
+  fuente: hch-27
 consultado: '2026-09-29'
 estado: verificado

@@ -13,6 +13,7 @@ fecha:
     mes: nisan
     dia: 16
 lugares:
+- golgota
 - jerusalen
 personas:
 - jesus
@@ -21,8 +22,8 @@ pasajes:
 - Jn 20:11-18
 resumen: Junto a la tumba, María Magdalena confunde a Jesús con el jardinero hasta que él la llama por su nombre.
   Jesús la manda a avisar a sus hermanos.
-razon: A7-H cuenta cinco apariciones el 16 de nisán; Perspicacia «María» (apartado 3, párr. 27) narra esta. El año 33 lo da
-  la cabecera de A7-G (8 de nisán del 33).
+razon: A7-H cuenta cinco apariciones el 16 de nisán y A7-G da el año 33. Pasa junto a la tumba (Jn 20:11), en el jardín donde
+  lo enterraron; Perspicacia «María», apartado 3, párr. 27.
 fuentes:
 - tnm-a7-h
 - juan-20
@@ -33,5 +34,13 @@ buscar: Se aparece a María Magdalena
 orden_relato:
   serie: a7
   orden: 126
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa junto a la tumba (Jn 20:11), la del jardín del lugar de la ejecución: Gólgota va primero, como en entierro-de-jesus.
+    Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  fuente: juan-20
+- fecha: '2026-09-29'
+  cambio: La razón explica ahora por qué el primer lugar es el Gólgota.
+  fuente: juan-20
 consultado: '2026-09-29'
 estado: verificado

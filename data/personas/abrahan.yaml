@@ -37,6 +37,8 @@ fuentes:
 - genesis-24
 - salmos-105
 - lucas-3
+- hechos-7
+- romanos-4
 enlaces:
 - titulo: 'Perspicacia: «Abrahán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
@@ -78,6 +80,7 @@ relaciones:
   - it-abrahan
   - genesis-11
   - genesis-12
+  - hechos-7
   razon: 'Perspicacia «Abrahán», párr. 7 y 8: vivió en Harán hasta que murió su padre y salió de allí en 1943 a.e.c.'
   estado: verificado
 - tipo: vivio_en
@@ -140,6 +143,7 @@ relaciones:
   deducido: false
   fuentes:
   - genesis-11
+  - hechos-7
   razon: 'Gé 11:31: Taré se lo llevó de Ur de los caldeos.'
   estado: verificado
 - tipo: vivio_en
@@ -152,6 +156,7 @@ relaciones:
   - genesis-16
   - genesis-17
   - salmos-105
+  - hechos-7
   razon: 'Gé 12:5; 13:12; 16:3; 17:8: vivió en la tierra de Canaán como extranjero.'
   estado: verificado
 - tipo: vivio_en

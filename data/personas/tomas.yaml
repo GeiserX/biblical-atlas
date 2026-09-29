@@ -14,6 +14,10 @@ fuentes:
 - mateo-10
 - marcos-3
 - lucas-6
+- juan-11
+- juan-14
+- juan-21
+- hechos-1
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -23,7 +27,19 @@ relaciones:
   - mateo-10
   - marcos-3
   - lucas-6
+  - juan-11
+  - juan-14
+  - juan-20
+  - juan-21
   razon: Mt 10:3.
+  estado: verificado
+- tipo: acompana
+  persona: pedro
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - juan-21
+  razon: 'Jn 21:2, 3: cuando Pedro dice que se va a pescar, Tomás va con él en la barca.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Tomás»'

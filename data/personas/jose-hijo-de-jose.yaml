@@ -11,13 +11,18 @@ no_confundir_con:
 - jose-de-arimatea
 - jose-hijo-de-jacob
 - joses
-resumen: Uno de los cuatro medio hermanos de Jesús que nombran en Nazaret. Al principio no creía en él; Perspicacia cree que
-  después sí y ve muy posible que estuviera con los discípulos reunidos en Jerusalén en 33.
-razon: Perspicacia «José», núm. 9; Mt 13:55 y Mr 6:3.
+resumen: Uno de los cuatro medio hermanos de Jesús que nombran en Nazaret. Al principio no creía en él; después cambió,
+  y en 33 estaba con los discípulos reunidos en Jerusalén.
+razon: Perspicacia «José», núm. 9; Mt 13:55 y Mr 6:3. «Testimonio completo», cap. 2, párr. 17, pone a cuatro hijos de
+  María en la reunión de Hch 1:14.
 fuentes:
 - it-jose
 - mateo-13
 - marcos-6
+- juan-7
+- jy-cap-65
+- bt-2
+- hechos-1
 enlaces:
 - titulo: 'Perspicacia: «José»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
@@ -50,5 +55,10 @@ relaciones:
   - mateo-13
   razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen daba como muy posible, con Perspicacia «José», núm. 9, que estuviera en Jerusalén en 33.
+    «Testimonio completo», más reciente, dice que María vio allí a cuatro de sus hijos.'
+  fuente: bt-2
 consultado: '2026-09-29'
 estado: verificado

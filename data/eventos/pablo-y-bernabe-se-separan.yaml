@@ -6,7 +6,7 @@ fecha:
   hasta: 49
   precision: estación
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: finales del verano de 49 e.c.
 orden_relato:
@@ -14,6 +14,9 @@ orden_relato:
   orden: 1536
 lugares:
 - antioquia-de-siria
+- chipre
+- siria
+- cilicia
 personas:
 - pablo
 - bernabe
@@ -30,5 +33,9 @@ fuentes:
 - si-3
 - hch-15
 buscar: Pablo Bernabé disputa Marcos
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa de un solo año, pero el estudio 3 (párr. 24), que ya citaba, da el año: es anclada.'
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

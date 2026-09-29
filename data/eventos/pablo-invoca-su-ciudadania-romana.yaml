@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-invoca-su-ciudadania-romana
+titulo: Pablo evita los azotes por ser ciudadano romano
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2222
+lugares:
+- jerusalen
+personas:
+- pablo
+- claudio-lisias
+pasajes:
+- Hch 22:22-29
+resumen: Ante los gritos de la multitud, el comandante lo mete en el cuartel para sacarle la verdad a latigazos. Pablo dice
+  que es romano de nacimiento; el comandante, que compró su ciudadanía, se asusta por haberlo atado.
+razon: Perspicacia «Claudio Lisias» (párr. 3 y 4) y «Pablo», apartado «Detención»; el estudio 3 (párr. 27) fecha el arresto
+  en 56 (Hch 22:22-29).
+fuentes:
+- it-claudio-lisias
+- it-pablo
+- si-3
+- hch-22
+enlaces:
+- titulo: Hechos 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/22
+  tipo: biblia
+buscar: Pablo ciudadano romano azotes
+consultado: '2026-09-29'
+estado: verificado

@@ -13,13 +13,18 @@ no_confundir_con:
 - simon-de-cirene
 - simon-el-mago
 - simon-el-curtidor
-resumen: Medio hermano menor de Jesús, nombrado por la gente de Nazaret. Todavía no creía en él en 32 e.c.; puede que después
-  se hiciera discípulo, aunque no consta si estaba con los reunidos en Jerusalén en 33.
-razon: Perspicacia «Simón», núm. 4; Mt 13:55 y Mr 6:3.
+resumen: Medio hermano menor de Jesús, nombrado por la gente de Nazaret. Todavía no creía en él en 32 e.c.; después
+  cambió, y en 33 estaba con los discípulos reunidos en Jerusalén.
+razon: Perspicacia «Simón», núm. 4; Mt 13:55 y Mr 6:3. «Testimonio completo», cap. 2, párr. 17, pone a cuatro hijos de
+  María en la reunión de Hch 1:14.
 fuentes:
 - it-simon
 - mateo-13
 - marcos-6
+- juan-7
+- jy-cap-65
+- bt-2
+- hechos-1
 enlaces:
 - titulo: 'Perspicacia: «Simón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
@@ -52,5 +57,10 @@ relaciones:
   - mateo-13
   razon: La nota de Mt 13:54 dice que de Nazaret era la familia cercana de Jesús; 13:56 pone allí a sus hermanas.
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen decía, con Perspicacia «Simón», núm. 4, que no consta si estaba en Jerusalén en 33. «Testimonio
+    completo», más reciente, dice que María vio allí a cuatro de sus hijos.'
+  fuente: bt-2
 consultado: '2026-09-29'
 estado: verificado

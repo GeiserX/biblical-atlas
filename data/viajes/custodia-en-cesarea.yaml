@@ -21,7 +21,13 @@ fuentes:
 - hch-21
 - hch-23
 - hch-24
-consultado: '2026-09-27'
+- hch-25
+- hch-26
+historial:
+- fecha: '2026-09-29'
+  cambio: La parada de Antípatris heredaba c. 56-58; el traslado sigue al arresto de 56 (estudio 3, párr. 27).
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -46,16 +52,18 @@ paradas:
   referencia: Hch 23:31
   fecha:
     desde: 56
-    hasta: 58
-    precision: rango
+    hasta: 56
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 56-58 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 56 e.c.
   nota: 'OpenBible une Antípatris con Afec 2 (Tell Ras el Ain): un mismo sitio con nombres de épocas distintas.'
-  razon: 'Hch 23:31 nombra Antípatris en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 23:31: los soldados lo llevan de noche hasta Antípatris. El traslado sigue al arresto de 56 (estudio 3, párr.
+    27).'
   fuentes:
   - hch-23
+  - si-3
   estado: verificado
 - orden: 3
   lugar: cesarea

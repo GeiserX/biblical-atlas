@@ -6,7 +6,7 @@ fecha:
   hasta: 50
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: c. 50 e.c.
 orden_relato:
@@ -22,11 +22,22 @@ pasajes:
 - Hch 17:1-10
 resumen: Pablo razona en la sinagoga tres sábados y se forma una congregación. Judíos celosos arman una turba, asaltan
   la casa de Jasón y lo llevan ante los gobernantes; los hermanos envían de noche a Pablo y Silas a Berea.
-razon: Perspicacia «Jasón» (párr. 1) y «Pablo» (párr. 16).
+razon: Perspicacia «Jasón» (párr. 1) y «Pablo» (párr. 16). «Tesalónica», párr. 1, y el estudio 3, párr. 24, ponen la congregación
+  hacia 50.
 fuentes:
 - it-jason
 - it-pablo
 - hch-17
+- it-tesalonica
+- si-3
 buscar: Jasón Tesalónica alboroto
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa de narrativa a anclada: Perspicacia «Tesalónica» y el estudio 3 (párr. 24) sitúan la fundación de
+    la congregación hacia 50.'
+  fuente: it-tesalonica
+- fecha: '2026-09-29'
+  cambio: La razón nombra las fuentes que dan el año.
+  fuente: hch-17
+consultado: '2026-09-29'
 estado: verificado

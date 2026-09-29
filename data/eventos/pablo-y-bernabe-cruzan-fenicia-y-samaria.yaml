@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-y-bernabe-cruzan-fenicia-y-samaria
+titulo: Pablo y Bernabé cruzan Fenicia y Samaria camino de Jerusalén
+fecha:
+  desde: 49
+  hasta: 49
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 49 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1503
+lugares:
+- fenicia
+- region-de-samaria
+- antioquia-de-siria
+- jerusalen
+personas:
+- pablo
+- bernabe
+pasajes:
+- Hch 15:3
+resumen: La congregación de Antioquía los acompaña un trecho. Por Fenicia y Samaria van contando a los hermanos que gente
+  de las naciones se convierte, y todos se llenan de alegría.
+razon: Hch 15:3; es la subida a Jerusalén de c. 49 (estudio 3, párr. 23). El suceso se sitúa en Fenicia; Antioquía y Jerusalén
+  van como salida y destino.
+fuentes:
+- si-3
+- hch-15
+enlaces:
+- titulo: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  tipo: biblia
+buscar: Fenicia Samaria conversión de las naciones
+consultado: '2026-09-29'
+estado: verificado

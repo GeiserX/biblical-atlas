@@ -14,12 +14,14 @@ coord_url: https://www.openbible.info/geo/ancient/a30e967/mount-gerizim
 coord_nota: Punto de OpenBible en Jebel et Tur (Har Gerizim), el monte con que Perspicacia lo identifica.
 resumen: Monte de Samaria de unos 850 m, frente al Ebal y con el valle de Siquem entre los dos. Allí debía darse la bendición
   al entrar en la tierra; siglos después los samaritanos adoraban en él.
-razon: 'Perspicacia «Guerizim, Monte», párr. 1, 2, 4 y 6; Dt 11:29, 30. Coordenada de OpenBible: solo tomamos el punto.'
+razon: 'Perspicacia «Guerizim, Monte», párr. 1, 2, 4 y 6; Dt 11:29, 30; la nota de estudio de Jn 4:20 identifica con él «esta
+  montaña» de la samaritana. Coordenada de OpenBible: solo tomamos el punto.'
 fuentes:
 - it-guerizim
 - openbible-geo
 - deuteronomio-11
 - deuteronomio-27
+- juan-4
 enlaces:
 - titulo: 'Perspicacia: «Guerizim, Monte»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001661
@@ -29,6 +31,9 @@ enlaces:
   tipo: biblia
 - titulo: Deuteronomio 27 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/27
+  tipo: biblia
+- titulo: Juan 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/4
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-discipulos-oran-y-tiembla-el-lugar
+titulo: Los discípulos piden valor en oración y el lugar tiembla
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 33 e.c.
+orden_relato:
+  serie: hechos
+  orden: 423
+lugares:
+- jerusalen
+personas:
+- pedro
+- juan-apostol
+pasajes:
+- Hch 4:23-31
+resumen: Ya libres, Pedro y Juan cuentan a los demás discípulos las amenazas. Todos oran juntos para seguir hablando con valor;
+  el sitio donde están reunidos tiembla, se llenan de espíritu santo y predican sin miedo.
+razon: Hch 4:23-31; Perspicacia «Herodes», núm. 2, cita esta oración y la pone en 33, poco después de Pentecostés. El capítulo
+  4 de «Testimonio completo» (párr. 13 a 17).
+fuentes:
+- hechos-4
+- it-herodes
+- bt-4
+enlaces:
+- titulo: Hechos 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/4
+  tipo: biblia
+buscar: Oración de los discípulos
+consultado: '2026-09-29'
+estado: verificado

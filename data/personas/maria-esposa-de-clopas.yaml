@@ -12,6 +12,7 @@ no_confundir_con:
 - maria-magdalena
 - maria-madre-de-jesus
 - maria-de-betania
+- maria-de-roma
 no_afirmamos:
 - 'María, la esposa de Clopas, era tía de Jesús: lo dice solo la tradición.'
 resumen: Esposa de Clopas; sus hijos eran Santiago el Menor y Josés. Estuvo junto al madero, vio dónde pusieron
@@ -47,5 +48,6 @@ relaciones:
   fuentes:
   - mateo-27
   - marcos-15
+  - juan-19
   razon: 'Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.'
   estado: verificado

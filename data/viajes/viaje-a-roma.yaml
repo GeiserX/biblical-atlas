@@ -25,7 +25,12 @@ fuentes:
 - hch-27
 - hch-28
 - it-aristarco
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Las paradas que heredaban c. 58-59 se acotan: 58 camino de Creta, otoño de 58 tras el ayuno, y primavera de 59
+    en Italia (estudio 3, párr. 27; Perspicacia «Italia»).'
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -40,8 +45,8 @@ paradas:
     cronologia: tnm
     texto: c. 58
   nota: Embarcan en un barco de Adramitio.
-  razon: Hechos 27:1, 2 no nombra el puerto de salida, pero Pablo estaba preso en Cesarea (Hch 25:1-12) y el estudio
-    3 (párr. 27) sitúa allí la partida hacia Roma en 58.
+  razon: Hechos 27:1, 2 no nombra el puerto de salida, pero Pablo estaba preso en Cesarea (Hch 25:1-12) y el estudio 3 (párr.
+    27) sitúa allí la partida hacia Roma en 58.
   fuentes:
   - hch-27
   - si-3
@@ -52,96 +57,106 @@ paradas:
   referencia: Hch 27:3
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 58 e.c.
   nota: null
-  razon: 'Hch 27:3 nombra Sidón en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:3: escala camino de Italia. Zarpan de Cesarea en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - si-3
   estado: verificado
 - orden: 3
   lugar: mira
   referencia: Hch 27:5, 6
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 58 e.c.
   nota: Mira de Licia; cambian a un barco de Alejandría.
-  razon: 'Hch 27:5, 6 nombra Mira en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:5, 6: escala camino de Italia. Zarpan de Cesarea en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - si-3
   estado: verificado
 - orden: 4
   lugar: cnido
   referencia: Hch 27:7
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 58 e.c.
   nota: Pasan frente a Cnido con dificultad.
-  razon: 'Hch 27:7 nombra Cnido en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:7: escala camino de Italia. Zarpan de Cesarea en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - si-3
   estado: verificado
 - orden: 5
   lugar: salmone
   referencia: Hch 27:7
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 58 e.c.
   nota: Cabo de Creta.
-  razon: 'Hch 27:7 nombra Salmone en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:7: escala camino de Italia. Zarpan de Cesarea en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - si-3
   estado: verificado
 - orden: 6
   lugar: bellos-puertos
   referencia: Hch 27:8-12
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: otoño de 58
   nota: Cerca de Lasea.
-  razon: 'Hch 27:8-12 nombra Bellos Puertos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:8-12: pasado el ayuno de Expiación, a fines de septiembre o en octubre (nota de Hch 27:9). Zarpan de Cesarea
+    en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - nota-hechos-27
+  - si-3
   estado: verificado
 - orden: 7
   lugar: cauda
   referencia: Hch 27:16
   fecha:
     desde: 58
-    hasta: 59
-    precision: rango
+    hasta: 58
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: otoño de 58
   nota: Pasan al abrigo de la isla durante la tormenta.
-  razon: 'Hch 27:16 nombra Cauda en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 27:16: pasado el ayuno de Expiación, a fines de septiembre o en octubre (nota de Hch 27:9). Zarpan de Cesarea
+    en 58 y pasan el invierno en Malta (estudio 3, párr. 27).'
   fuentes:
   - hch-27
+  - nota-hechos-27
+  - si-3
   estado: verificado
 - orden: 8
   lugar: malta
@@ -164,81 +179,91 @@ paradas:
   lugar: siracusa
   referencia: Hch 28:12
   fecha:
-    desde: 58
+    desde: 59
     hasta: 59
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 59
   nota: null
-  razon: 'Hch 28:12 nombra Siracusa en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 28:12: tras el invierno en Malta. Perspicacia «Italia» pone la llegada a Regio probablemente en la primavera
+    de 59.'
   fuentes:
   - hch-28
+  - it-italia
   estado: verificado
 - orden: 10
   lugar: regio
   referencia: Hch 28:13
   fecha:
-    desde: 58
+    desde: 59
     hasta: 59
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 59
   nota: null
-  razon: 'Hch 28:13 nombra Regio en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 28:13: tras el invierno en Malta. Perspicacia «Italia» pone la llegada a Regio probablemente en la primavera
+    de 59.'
   fuentes:
   - hch-28
+  - it-italia
   estado: verificado
 - orden: 11
   lugar: puteoli
   referencia: Hch 28:13, 14
   fecha:
-    desde: 58
+    desde: 59
     hasta: 59
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 59
   nota: null
-  razon: 'Hch 28:13, 14 nombra Puteoli en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 28:13, 14: tras el invierno en Malta. Perspicacia «Italia» pone la llegada a Regio probablemente en la primavera
+    de 59.'
   fuentes:
   - hch-28
+  - it-italia
   estado: verificado
 - orden: 12
   lugar: plaza-del-mercado-de-apio
   referencia: Hch 28:15
   fecha:
-    desde: 58
+    desde: 59
     hasta: 59
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 59
   nota: null
-  razon: 'Hch 28:15 nombra Plaza del Mercado de Apio en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 28:15: tras el invierno en Malta. Perspicacia «Italia» pone la llegada a Regio probablemente en la primavera
+    de 59.'
   fuentes:
   - hch-28
+  - it-italia
   estado: verificado
 - orden: 13
   lugar: tres-tabernas
   referencia: Hch 28:15
   fecha:
-    desde: 58
+    desde: 59
     hasta: 59
-    precision: rango
+    precision: estación
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 58-59 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: primavera de 59
   nota: null
-  razon: 'Hch 28:15 nombra Tres Tabernas en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: 'Hch 28:15: tras el invierno en Malta. Perspicacia «Italia» pone la llegada a Regio probablemente en la primavera
+    de 59.'
   fuentes:
   - hch-28
+  - it-italia
   estado: verificado
 - orden: 14
   lugar: roma

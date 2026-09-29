@@ -27,10 +27,17 @@ personas:
 - timoteo
 - aquila
 - priscila
+- cloe
+- bernabe
+- santiago-hermano-de-jesus
+- fortunato
+- acaico
 contexto_origen:
-  resumen: 'Tercer viaje: Pablo lleva tiempo en Éfeso y gente de la casa de Cloe le informa de divisiones en Corinto.'
+  resumen: 'Tercer viaje: Pablo lleva tiempo en Éfeso. Los de la casa de Cloe le cuentan que hay divisiones en Corinto, y
+    la congregación le escribe con preguntas (1Co 7:1).'
   fuentes:
   - it-corintios
+  - 1-corintios-7
 contexto_destino:
   resumen: Ciudad de moral muy relajada; cerca se celebraban los juegos ístmicos, que Pablo usa como ejemplo.
   fuentes:
@@ -52,5 +59,10 @@ enlaces:
 - titulo: 1 Corintios 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El contexto añade la carta con preguntas que la congregación de Corinto mandó a Pablo (1Co 7:1), que Perspicacia
+    cuenta entre los motivos de la carta.
+  fuente: 1-corintios-7
+consultado: '2026-09-29'
 estado: verificado

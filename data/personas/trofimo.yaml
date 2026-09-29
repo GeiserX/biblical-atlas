@@ -25,7 +25,8 @@ enlaces:
 - titulo: Hechos 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004481'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -71,4 +72,12 @@ relaciones:
   - si-3
   razon: Viaja de nuevo con él tras el primer encierro y se queda enfermo en Mileto (2Ti 4:20). Entre la liberación, hacia 61,
     y 1 Timoteo y Tito, de c. 61-64 (estudio 3, párr. 27 y tabla).
+  estado: verificado
+- tipo: nacio_en
+  lugar: efeso
+  deducido: true
+  fuentes:
+  - it-trofimo
+  - hch-21
+  razon: Hch 21:29 lo llama efesio y Perspicacia «Trófimo» llama a Éfeso su ciudad natal.
   estado: verificado

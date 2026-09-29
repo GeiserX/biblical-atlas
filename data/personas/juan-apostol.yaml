@@ -46,9 +46,21 @@ fuentes:
 - lucas-8
 - lucas-9
 - lucas-22
+- juan-1
+- juan-13
+- juan-18
+- juan-19
+- juan-20
+- juan-21
+- hechos-1
+- hechos-3
+- hechos-4
+- hechos-5
+- hechos-8
 no_confundir_con:
 - juan-el-bautista
 - juan-marcos
+- juan-gobernante-judio
 no_afirmamos:
 - 'Que el emperador que lo desterró fuera Domiciano y el que lo liberó, Nerva: Perspicacia lo da como creencia general,
   no como dato bíblico.'
@@ -78,6 +90,7 @@ relaciones:
   - marcos-1
   - marcos-10
   - lucas-5
+  - juan-21
   razon: Mt 4:21 los llama hijos de Zebedeo; Perspicacia «Juan», párr. 21.
   estado: verificado
 - tipo: acompana
@@ -89,6 +102,10 @@ relaciones:
   - it-juan
   - hechos-8
   - lucas-5
+  - juan-20
+  - juan-21
+  - hechos-3
+  - hechos-4
   razon: Enviados juntos a Samaria (Hch 8:14); Perspicacia «Juan», párr. 30.
   estado: verificado
 - tipo: vivio_en
@@ -165,6 +182,13 @@ relaciones:
   - lucas-8
   - lucas-9
   - lucas-22
+  - juan-13
+  - it-juan
+  - juan-18
+  - juan-19
+  - juan-20
+  - juan-21
+  - hechos-4
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente
@@ -178,6 +202,24 @@ relaciones:
   - marcos-15
   razon: Mt 27:56 cita a su madre sin dar su nombre; Perspicacia «Juan», núm. 3, y la nota de Mr 15:40 creen que era Salomé.
   estado: pendiente
+- tipo: acompana
+  persona: juan-el-bautista
+  relacion: maestro
+  fecha:
+    desde: 29
+    hasta: 29
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 29 e.c.
+  deducido: true
+  fuentes:
+  - juan-1
+  - it-juan
+  razon: Jn 1:35-40 no da el nombre del otro discípulo de Juan que siguió a Jesús; la nota del v. 40 y Perspicacia «Juan»,
+    núm. 3 (párr. 23), creen que era él.
+  estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Juan»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002489

@@ -16,6 +16,7 @@ fuentes:
 - marcos-3
 - lucas-5
 - lucas-6
+- hechos-1
 relaciones:
 - tipo: vivio_en
   lugar: capernaum

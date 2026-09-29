@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-se-purifica-en-el-templo
+titulo: Pablo se purifica en el templo con cuatro hombres
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2126
+lugares:
+- monte-moria
+- jerusalen
+personas:
+- pablo
+pasajes:
+- Hch 21:26
+resumen: Siguiendo el consejo de los ancianos, Pablo se limpia ceremonialmente con los cuatro hombres del voto y avisa en
+  el templo de cuándo terminarán esos días y de la ofrenda de cada uno.
+razon: El estudio 3 (párr. 27) pone el arresto poco después de su llegada en 56; Perspicacia «Pablo», apartado «Detención»,
+  lo sitúa mientras se purificaba en el templo (Hch 21:26).
+fuentes:
+- si-3
+- it-pablo
+- hch-21
+enlaces:
+- titulo: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  tipo: biblia
+buscar: Pablo purificación templo voto
+consultado: '2026-09-29'
+estado: verificado

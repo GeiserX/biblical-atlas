@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-deja-efeso-hacia-macedonia
+titulo: Pablo deja Éfeso y anima a los discípulos de Macedonia
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2001
+lugares:
+- macedonia
+- efeso
+- troas
+personas:
+- pablo
+pasajes:
+- Hch 20:1, 2
+- 2Co 2:12, 13
+- 2Co 7:5-7
+resumen: Calmado el alboroto, Pablo reúne a los discípulos de Éfeso, los anima y se despide. Recorre Macedonia dando mucho
+  ánimo a los hermanos y después llega a Grecia.
+razon: El estudio 3 (párr. 26) pone en 55 la salida de Éfeso. Por 2Co 2:12, 13 y 7:5-7 pasó antes por Troas y en Macedonia
+  recibió a Tito («Testimonio completo», cap. 21, párr. 5).
+fuentes:
+- hch-20
+- si-3
+- bt-21
+- it-troas
+enlaces:
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+buscar: Pablo sale de Éfeso hacia Macedonia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Troas, que la razón nombra por 2Co 2:12, 13, pasa también a lugares.'
+  fuente: it-troas
+consultado: '2026-09-29'
+estado: verificado

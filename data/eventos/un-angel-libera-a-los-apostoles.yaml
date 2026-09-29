@@ -14,6 +14,7 @@ orden_relato:
   orden: 512
 lugares:
 - jerusalen
+- monte-moria
 personas:
 - pedro
 - juan-apostol
@@ -28,8 +29,9 @@ fuentes:
 - hechos-5
 - bt-5
 - it-pedro
+- si-3
 nota: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
   de 33 y la conversión de Saulo en 34).'
 buscar: apóstoles liberados de la cárcel
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

@@ -13,8 +13,8 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: 31 a.e.c.-14 e.c.
-desambiguacion: Primer emperador de Roma. Otros emperadores llevaron después el título de Augusto, como Nerón en Hechos
-  25:21; aquí es solo Octavio.
+desambiguacion: Primer emperador de Roma. Otros emperadores llevaron después el título de Augusto, como Nerón; esta ficha
+  es solo Octavio.
 resumen: Octavio, primer emperador romano. En 27 a.e.c. el Senado le dio el título de Augusto. Su decreto de inscripción
   hizo que Jesús naciera en Belén, como había predicho Miqueas.
 razon: 'Perspicacia «Augusto»: gobernante único desde septiembre de 31 a.e.c., título del 16 de enero de 27 a.e.c., decreto
@@ -49,5 +49,11 @@ relaciones:
   estado: verificado
 buscar: César Augusto
 perspicacia: '1200000468'
+historial:
+- fecha: '2026-09-29'
+  cambio: La desambiguación deja de citar Hch 25:21, donde Augusto es Nerón y no Octavio; no_confundir_con ya enlaza a Nerón.
+  fuente: hch-25
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- neron

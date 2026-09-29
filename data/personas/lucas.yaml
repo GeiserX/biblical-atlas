@@ -5,6 +5,7 @@ nombres:
 - nombre: Lucas
 no_confundir_con:
 - lucio-de-cirene
+- lucio-pariente-de-pablo
 resumen: Médico que acompañó a Pablo; escribió el tercer Evangelio y Hechos. Los pasajes en «nosotros» muestran
   cuándo viajaba con él.
 razon: Perspicacia «Lucas» lo identifica como escritor de Hechos y señala los tres tramos del libro contados en
@@ -13,6 +14,7 @@ fuentes:
 - it-lucas
 - hch-16
 - lucas-1
+- hch-21
 enlaces:
 - titulo: 'Perspicacia: «Lucas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002790

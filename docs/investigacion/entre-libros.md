@@ -2,6 +2,12 @@
 
 Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar o cerrar. El lector y el escritor de cada libro leen esta lista antes de empezar y quitan lo que cierran.
 
+## Para todos los libros
+
+- **Nombres que solo dan las notas de estudio.** Van en `menciona` cuando la nota los identifica con lo que dice el versículo: a quién se refiere, dónde o cuándo pasó, qué suceso recuerda (en 1Co 15:5-8, Tomás, Galilea y Damasco). No van los que la nota usa para explicar una palabra, comparar o poner ejemplos de otras historias, ni los escritores de los relatos paralelos.
+- **El autor de una cita.** Si el texto bíblico no lo nombra, se queda en la `nota` del tramo aunque la nota de estudio lo nombre (Elifaz en 1Co 3:19, Isaías en 1Co 14:21), como en Romanos. Si el texto lo nombra, va en `menciona`.
+- **Una identificación que la nota solo ve posible** («podría ser la misma ocasión») deja el suceso en `menciona`, sin añadirle el pasaje. Si la da por probable o «al parecer», el pasaje entra.
+
 ## Para 1 y 2 Samuel
 
 - **Amalec (1Sa 15).** Dt 25:17-19 manda borrar a Amalec por lo de Refidim (`batalla-contra-amalec-en-refidim`); el suceso de Saúl lo pone en `menciona`.
@@ -13,15 +19,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Jesimón.** `jesimon` es el de Nú 21:20 y 23:28, junto al mar Muerto. El de 1Sa 23:19 y 26:1, cerca de Zif, es otro lugar.
 - **Rehob.** `rehob` (Nú 13:21) no lleva Bet-Rehob en `nombres`, porque Perspicacia solo lo ve probable. 2Sa 10:6, 8 decide.
 
-## Para Juan
-
-- **El padre de Pedro.** La ficha es `jonas-padre-de-pedro`, con la clave `1200002503#2` («Jonás», núm. 2). Perspicacia lo trata también en «Juan», núm. 2 (`1200002489#2`); esa segunda clave no lo funde, así que Juan 1:42 y 21:15-17 usan ese id.
-- **Natanael y Bartolomé.** Son dos fichas unidas por `mismo_que` pendiente, porque Perspicacia da la identidad como probable. Donde el texto dice Natanael (Jn 1 y 21) va `natanael`; en las listas de los once sin nombres (Jn 20:26-29, `aparicion-a-tomas`) va `bartolome`, como en los sinópticos. El lector de Juan lo confirma o lo corrige.
-- **Anás.** `anas` no tiene clave `perspicacia`. Marcos no lo nombra, así que se la pone el lector de Juan 18 (Perspicacia «Anás»).
-- **El orden del 16 de nisán (Lucas no lo cerró).** Lucas 24 lo fijó en la serie `a7`: `resurreccion-de-jesus` 124, `aparicion-a-las-mujeres` 125, `aparicion-a-maria-magdalena` 126, `aparicion-a-pedro` 127, `camino-de-emaus` 128 y `aparicion-a-los-discipulos-sin-tomas` 129. `aparicion-a-tomas`, `aparicion-junto-al-mar-de-galilea` y `mandato-de-hacer-discipulos` pasan a 130 y `ascension-de-jesus` a 131. Juan añade sus pasajes y no cambia esos `orden`.
-- **Claves que ya puso Lucas.** `lazaro` lleva `1200002698#1` (Lu 16) y `marta` `1200002917` (Lu 10). Juan 11 y 12 no vuelven a proponer esas claves: un `cambiar` desde `null` chocaría.
-- **Escenas del templo.** Un suceso que pasa entero en el templo lleva `monte-moria` primero y `jerusalen` después, como `cuestionan-su-autoridad` y, desde Lucas, los de Lu 1:8-23, 2:22-38 y 2:41-50. Si recorre también la ciudad, `jerusalen` va primero. `primera-limpieza-del-templo` (Jn 2:13-25) solo lleva `jerusalen`: Juan decide si le añade `monte-moria`.
-
 ## Para 2 Reyes y 2 Crónicas
 
 - **Jehoiadá y Baraquías.** Cuando se cree a Jehoiadá, falta un `mismo_que` entre `baraquias` y su id, con `deducido: true` y `estado: pendiente` (Perspicacia «Baraquías»: Jehoiadá pudo tener dos nombres; Mt 23:35).
@@ -32,6 +29,26 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Zorobabel.** Su relación con David es `antepasado` (antes decía «descendiente de David», al revés). Abiud va como antepasado suyo, no como hijo, porque Perspicacia «Abiud» lo deja abierto.
 - **Resá, Sealtiel y Nerí.** `resa` (Lu 3:27) va como descendiente de Zorobabel, con la relación `antepasado`, igual que Abiud. `sealtiel` lleva a `neri` como pariente sin grado, porque Perspicacia solo ve posible que fuera su yerno.
 - **Janai el gadita (1Cr 5:12).** Perspicacia «Janai» (`1200002318`) no es el Janaí de Lu 3:24, que ya existe como `janai-hijo-de-jose` (`1200002320`) con la fuente `it-janai-hijo-de-jose`. El gadita puede llevar `janai`, que queda libre; su propuesta añade `no_confundir_con` en las dos fichas.
+
+## Para Números
+
+- **Jetró es Reuel.** Nú 10:29 lo llama Reuel: es `jetro` (clave `1200002454`), no `reuel-hijo-de-esau`.
+- **Coré.** La rebelión y la muerte de `core-hijo-de-izhar` (Nú 16) las crea Números.
+- **Masá y Meribá.** `masa` es el sitio de Refidim (Éx 17). La Meribá de Nú 20 es `meriba-de-cades`.
+- **El tabernáculo.** Nú 7:1 está en los `pasajes` de `se-monta-el-tabernaculo`, y Nú 9:15, 16 en los de `la-gloria-de-jehova-llena-el-tabernaculo`: van en los tramos de esos capítulos.
+- **Quieren volver a Egipto (Nú 14:3, 4).** Hch 7:39 lo recuerda. El suceso que cree Números añade «Hch 7:39» a sus pasajes y va en el tramo 39-43 de Hechos 7.
+- **Las etapas de Nú 33.** Los ids ya creados son `rameses`, `sucot-de-egipto`, `ezam`, `pihahirot`, `migdol`, `baal-zefon`, `cruce-del-mar-rojo`, `mara`, `elim`, `mar-rojo`, `desierto-de-sin`, `refidim` y `desierto-de-sinai`. Los sucesos son `exodo` (la salida), `israel-cruza-el-mar-rojo`, `jehova-endulza-el-agua-de-mara`, `israel-acampa-en-elim` y `codornices-y-mana-en-el-desierto-de-sin`.
+- **El día de la salida.** Nú 33:3 dice que salieron de Ramesés el día 15. `exodo` se queda en el 14 de nisán: Perspicacia «Éxodo» pone el comienzo de la marcha hacia Sucot antes de que acabara el 14.
+- **La serpiente de cobre (Nú 21:8, 9).** Jn 3:14 la recuerda. Cuando Números cree el suceso, va en `menciona` del tramo Juan 3:11-21.
+
+## Para Números y 1 Corintios
+
+- **Los ejemplos de 1Co 10.** Números ya los tiene: `agua-del-penasco-en-meriba` «1Co 10:4»; `jehova-condena-a-israel-a-40-anos-en-el-desierto` «1Co 10:5» y «1Co 10:10» (Nú 14:36, 37); `el-pueblo-pide-carne` y `codornices-en-quibrot-hataava` «1Co 10:6»; `israel-adora-al-baal-de-peor` «1Co 10:8»; `moises-hace-la-serpiente-de-cobre` «1Co 10:9»; `israel-se-niega-a-entrar-en-canaan` y `aaron-detiene-la-plaga` «1Co 10:10». Quien integre el segundo de los dos libros añade a cada suceso su pasaje y la fuente `1-corintios-10`, y lo pone en `entidades` del tramo 1-5 (v. 4 y 5) o del 6-11 (los demás). En `menciona` del 6-11 van `lugar:sitim` (nota del v. 8), `rebelion-de-core` y `muerte-de-core` (nota del v. 10). Hasta entonces `validate.py` falla con los dos libros juntos, porque la razón de `israel-adora-al-baal-de-peor` ya cita 1Co 10:8. Ese suceso ya explica los 23.000 de 1Co 10:8 frente a los 24.000 de Nú 25:9.
+
+## Para Deuteronomio
+
+- **Pasajes paralelos ya puestos en sucesos de Éxodo.** Dt 5:4-27 en `diez-mandamientos`; Dt 9:9 en `primeros-cuarenta-dias-de-moises-en-el-sinai`; Dt 9:10, 11 en `dios-da-a-moises-las-tablas-del-testimonio`; Dt 9:12-14, 19, 26-29 en `moises-ruega-por-el-pueblo`; Dt 9:15-17, 21 en `moises-rompe-las-tablas`; Dt 9:16 en `becerro-de-oro`; Dt 9:20 en `moises-pide-perdon-por-el-pueblo`; Dt 9:18, 25 y Dt 10:1-5, 10 en `moises-recibe-las-segundas-tablas`, porque los 40 días postrado de Dt 9:18 y 9:25 son los segundos (Éx 34:28). Cada uno va en el tramo de su capítulo.
+- **Masá.** Dt 6:16, 9:22 y 33:8 hablan del sitio de Refidim: `masa`.
 
 ## Para Nehemías, Hechos y Hebreos
 
@@ -49,6 +66,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para 2 Timoteo
 
+- **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`, y ya cita 1Co 16. 2Ti 4:19 añade su capítulo a las fuentes de esa relación, sin crear otra.
 - **Janes y Jambres.** Los magos del faraón (Éx 7:11, 22) no tienen ficha. Si 2Ti 3:8 los crea, el tramo 7:8-13 de Éxodo los puede poner en `menciona`.
 
 ## Para Jeremías y Ezequiel
@@ -58,24 +76,18 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para 1 Samuel
 
 - **Abiatar y su padre.** `abiatar` ya existe (clave `1200000030`), creado desde Mr 2:26. Le falta la relación `pariente` con su padre Ahimélec, en la ficha de Abiatar (1Sa 22:20; Perspicacia «Abiatar»). Si la propuesta del Salmo 52 ya creó `ahimelec-hijo-de-ahitub`, se reutiliza ese id.
+- **La unción de David (1Sa 16).** Hch 13:22 la recuerda. Cuando 1 Samuel cree el suceso, añade «Hch 13:22» a sus pasajes y lo pone en el tramo 16-22 de Hechos 13 (`data/cobertura/hechos.yaml`).
 - **Nob.** La nota de estudio de Mr 2:26 pone allí la casa de Dios donde David comió los panes. Ni Mateo 12 ni Marcos 2 nombran Nob, así que no tiene ficha: la crea 1 Samuel 21.
 
-## Para Juan
+## Para 1 Timoteo y 2 Timoteo
 
-- **El orden del 16 de nisán (Lucas no lo cerró).** `compran-especias`, `aparicion-a-las-mujeres`, `aparicion-a-pedro`, `camino-de-emaus`, `aparicion-a-maria-magdalena` y `aparicion-a-los-discipulos-sin-tomas` llevan fecha 16 de nisán del 33 sin `orden_relato`, y `resurreccion-de-jesus` lleva `a7`/124. `build.py` ordena por año, luego por serie y orden, luego por id, y no mira `detalle`: todo suceso del 33 sin serie sale antes que los de `a7`, así que las apariciones quedan antes de la resurrección en `data.json`. Cada aparición necesita `orden_relato` en la serie `a7` con un orden entre el de `resurreccion-de-jesus` (124) y el de `aparicion-a-tomas` (125); `tras` solo no basta, porque `orden_en_serie` no lo lee. `compran-especias` ya va bien antes.
-
-## Para Romanos
-
-- **Rufo.** `rufo-hijo-de-simon` (clave `1200003769#1`, Mr 15:21) ya existe. El Rufo de Ro 16:13 es la entrada núm. 2 de Perspicacia «Rufo» (`1200003769#2`): va en ficha aparte, con `no_confundir_con` en las dos.
-
-## Para Hechos, 1 Timoteo y 2 Timoteo
-
-- **Alejandro.** `alejandro-hijo-de-simon` (clave `1200000192#2`, Mr 15:21) ya existe. Los Alejandros de Hch 4:6, Hch 19:33, 1Ti 1:20 y 2Ti 4:14 son otras entradas de Perspicacia «Alejandro»: cada uno lleva `no_confundir_con` hacia él, y él hacia cada uno.
+- **Alejandro.** Ya existen `alejandro-hijo-de-simon` (`1200000192#2`, Mr 15:21), `alejandro-pariente-de-anas` (`#3`, Hch 4:6) y `alejandro-de-efeso` (`#4`, Hch 19:33). El de 1Ti 1:20 es la entrada núm. 5 y el calderero de 2Ti 4:14, la núm. 6; Perspicacia ve posible que sean el mismo, así que van dos fichas y un `mismo_que` pendiente. Todos llevan `no_confundir_con` entre sí.
 
 ## Para 2 Samuel y 1 Crónicas
 
 - **Natán, hijo de David.** `natan-hijo-de-david` (clave `1200003184#4`) existe desde Lu 3:31. 2Sa 5:14, 1Cr 3:5 y 1Cr 14:4 usan ese id; `natan-profeta` sigue sin clave.
 - **Abías, el de la división sacerdotal.** `abias-de-tiempos-de-david` (clave `1200000041#4`) existe desde Lu 1:5. 1Cr 24:10 usa ese id y añade su pasaje.
+- **David quiere construir una casa a Dios (2Sa 7:1-3).** Hch 7:46 lo recuerda y `pacto-con-david` no incluye esos versículos. El suceso que cree 2 Samuel añade «Hch 7:46» a sus pasajes y va en el tramo 44-50 de Hechos 7.
 - **Cainán y Selá.** `sela-hijo-de-arpaksad` lleva dos padres: Arpaksad (Gé 11:12) y, con `estado: pendiente`, `cainan-hijo-de-arpaksad` (Lu 3:36), que falta en el texto hebreo. 1Cr 1:18 no cambia ninguno de los dos.
 
 ## Para 1 y 2 Reyes
@@ -85,19 +97,19 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **La reina de Saba (1Re 10).** Lu 11:31 y Mt 12:42 la llaman reina del sur. El lugar `saba` es el de Job 6:19. El reino de Saba (Perspicacia «Seba», núm. 6) ya existe como `reino-de-saba`, desde Sl 72 y Joe 3:8: 1 Reyes lo usa y lo añade a `menciona` de los tramos Lucas 11:29-36 y Mateo 12:38-42.
 - **Obras y riqueza de Salomón.** Ec 2:4-9 cuenta sus casas, viñas, estanques, siervos, oro y cantores, que narran 1Re 7:1-8, 9:17-19 y 10:14-29. Cuando 1 Reyes cree esos sucesos, añade «Ec 2:4-9» a sus `pasajes` y el suceso al tramo 1-11 de `data/cobertura/eclesiastes.yaml`. El único que ya existe, `flota-de-salomon-a-ofir`, lleva Ec 2:8 desde Eclesiastés.
 
+- **La muerte de David (1Re 2:10).** `david` ya lleva `murio_en` `jerusalen`, deducida de Hch 2:29. Cuando 1 Reyes cuente su muerte, añade su capítulo a las fuentes de esa relación con un `anadir`, sin crear otra.
+- **Elías en el Horeb (1Re 19:9-18).** Ro 11:2-4 recuerda su queja y los 7.000 que no se arrodillaron ante Baal. Cuando 1 Reyes cree ese suceso, añade «Ro 11:2-4» a sus pasajes y lo pone en el tramo 1-6 de Romanos 11, donde ahora `elias-profeta` está en `menciona`.
+
 ## Para 2 Reyes
 
 - **Naamán el sirio (2Re 5).** `naaman-el-sirio` (clave `1200003149#2`) existe desde Lu 4:27. Falta el suceso de su curación; cuando exista, va en `menciona` del tramo Lucas 4:23-27.
 - **Fronteras (también para Ezequiel).** 1Re 8:65 usa `lebo-hamat` y `torrente-de-egipto`; 1Re 9:26, `ezion-gueber`; Ez 47 y 48, `zedad`, `hazar-enan` (Hazar-Enón está en `nombres`) y `lebo-hamat`.
 - **La serpiente de cobre.** 2Re 18:4 (Nehustán) y Jn 3:14 remiten a `moises-hace-la-serpiente-de-cobre`.
 
-## Para Hechos
-
-- **Ids que ya existen.** `teofilo` (Lu 1:3; Hch 1:1), `santiago-padre-de-tadeo` (clave `1200002313#1`, Lu 6:16; Hch 1:13) y `quirinio` (Lu 2:2), si Hch 5:37 lo nombra por el censo.
-
 ## Para Nehemías
 
 - **Itiel.** `itiel-oyente-de-agur` (clave `1200002237#1`, Pr 30:1) ya existe. El benjamita de Ne 11:7 es la entrada núm. 2 de Perspicacia «Itiel» (`1200002237#2`): va en ficha aparte, con `no_confundir_con` en las dos.
+- **La Puerta de las Ovejas (Ne 3:1, 32; 12:39).** Desde Jn 5:2 es un nombre de `jerusalen`, con su nota. Se reutiliza, sin ficha propia.
 
 ## Para 1 Reyes (Salomón)
 
@@ -186,6 +198,8 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Ciudades de refugio del oeste.** Moisés apartó las del este (`moises-aparta-tres-ciudades-de-refugio`); Dt 19:1-13 está en `jehova-da-la-ley-de-las-ciudades-de-refugio`. Jos 20:7 nombra Hebrón, Siquem y Quedes.
 - **Josué y Moisés.** `jehova-comisiona-a-josue-en-la-tienda-de-reunion` (Dt 31:14-23) y `moises-nombra-a-josue-su-sucesor` (Nú 27; Dt 3:21-28; 34:9) ya existen: Jos 1:1-9 es otro suceso.
 - **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac; el tramo Dt 9:1-6 lo explica como pueblo. Si Josué 15:13, 14 crea la persona, la añade a `menciona` de ese tramo.
+- **Los huesos de José (Jos 24:32).** Hch 7:16 dice que los llevaron a Siquem. Cuando Josué cree ese entierro, añade «Hch 7:16» a sus pasajes y lo pone en el tramo 9-16 de Hechos 7.
+- **Queriyot-hezrón (Jos 15:25).** Perspicacia «Judas», núm. 4, dice que el apelativo Iscariote suele leerse como procedencia de ese lugar y que Judas y su padre probablemente eran de allí. Juan no lo nombra, así que `judas-iscariote` y `simon-iscariote` no llevan relación con él; Josué decide si la añade como deducida y pendiente.
 
 ## Para Jueces
 
@@ -209,7 +223,33 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para las Escrituras Griegas
 
 - **Pasaje ya puesto.** Jud 11 está en `muerte-de-core`.
-- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`.
+- **Pasajes que aún no están en ningún suceso.** Hch 7:36 y 13:18, 1Co 10:5, 10, Heb 3:16-19 y Jud 5 van a `jehova-condena-a-israel-a-40-anos-en-el-desierto`; 1Co 10:8, Ap 2:14 y Os 9:10 a `israel-adora-al-baal-de-peor`; 2Pe 2:15, 16 a `la-burra-de-balaam-habla`; Heb 9:4 nombra la vara de `la-vara-de-aaron-echa-brotes`. Miq 6:5 nombra `balac`, `balaam` y `sitim`.
+
+## Para Deuteronomio, Josué y Jueces
+
+- **El monte Guerizim.** Existe `monte-guerizim` desde Jn 4:20 (punto de OpenBible `a30e967`). Dt 11:29, 27:12, Jos 8:33 y Jue 9:7 usan ese id.
+
+## Para Gálatas y 1 Corintios
+
+- **Pasajes ya puestos en sucesos de Hechos.** Gál 1:15, 16 en `conversion-de-pablo`; Gál 1:18, 19 en `pablo-visita-a-cefas`; Gál 2:1-10 en `concilio-de-jerusalen-49`. Van en los tramos de esos capítulos. Hechos es el dueño de estos sucesos (sección 6 de `versiculos.md`).
+
+## Para 2 Corintios y Hechos
+
+- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1 Corintios ya añadió 1Co 16:1-4 y Galacia. 2Co 8 y 9 añaden su pasaje con un `anadir` y ponen el suceso en su tramo. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
+
+## Para 2 Corintios y Filipenses
+
+- **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). 2Co 11:22 y Flp 3:5 solo añaden su capítulo a las fuentes de esas relaciones, sin crear otras.
+
+## Para 2 Corintios
+
+- **El expulsado de 1Co 5.** `pablo-manda-expulsar-al-inmoral-de-corinto` cita 2Co 2:1-11 en su `razon`, porque Perspicacia «Corintios, Cartas a los» lo identifica con el arrepentido al que 2Co 2:5-11 y 7:8-12 piden perdonar. El tramo de 2Co 2 que lo cuenta lo pone en `entidades` o en `menciona`, y 2 Corintios decide si el perdón es un suceso propio o un pasaje más de este.
+- **El peligro de Éfeso.** 1Co 15:32 (las fieras de Éfeso) quedó en `pablo-escribe-1-corintios`, sin suceso propio, porque la nota duda entre sentido literal y figurado. `motin-de-efeso` ya lleva «2Co 1:8» en sus pasajes: 2 Corintios decide si se queda ahí o pasa a un suceso propio de la tribulación en Asia, y en ese caso 1Co 15:32 puede ir en su `menciona`.
+- **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`. 1Co 16:19 y 2Ti 4:19 añaden su capítulo a las fuentes de esa relación, sin crear otra.
+
+## Para Tito
+
+- **Apolos y Pablo.** `apolos` lleva `acompana` `pablo` como `colaborador`, c. 55 (1Co 3, 4 y 16): trabajaron el mismo campo en momentos distintos y solo se les ve cerca al escribirse 1 Corintios. Tit 3:13 añade su capítulo a las fuentes de esa relación con un `anadir` y puede alargar su fecha con un `cambiar` sobre esa relación.
 
 ## Para 1 Reyes, 2 Reyes, 1 Crónicas y 2 Crónicas (desde Amós)
 
@@ -223,7 +263,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Josué, Jueces, 1 Samuel, 2 Samuel y Jeremías (desde Amós)
 
 - **Ciudades filisteas.** `asquelon` y `ecron` existen desde Am 1:8 (Perspicacia escribe Eqrón, que va en `nombres`). Gaza, Asdod y Gat ya existían.
-- **Rabá.** `raba` es la capital ammonita (Perspicacia «Rabá», núm. 1), la de Dt 3:11 y Am 1:14: 2Sa 11-12, 1Cr 20, Jer 49:2, 3 y Ez 21:20 y 25:5 usan ese id. La Rabá de Judá (núm. 2) lleva otro.
 - **Queriyot.** `queriyot` (Am 2:2) no tiene punto: dos candidatos «alternativa», Ar y Saliyá. Jer 48:24, 41 usan ese id.
 - **Harmón.** `harmon` (Am 4:3) lleva como único candidato el peñasco de Rimón, en Rammun. Si Jueces 20:45-47 crea ese peñasco, el candidato de `harmon` puede remitir a él.
 
@@ -276,3 +315,4 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Claves de Omrí y Acab.** `data/_propuestas/miqueas.json` pone a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
 - **Tierra de Nemrod.** Está en `nombres` de `asiria` (Miq 5:6). El tramo Miqueas 5:5-6 no lleva `persona:nemrod`: su nombre designa la tierra.
+

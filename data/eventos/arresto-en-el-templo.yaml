@@ -14,15 +14,15 @@ orden_relato:
   orden: 2127
 lugares:
 - jerusalen
+- monte-moria
 personas:
 - pablo
 - trofimo
 - claudio-lisias
 pasajes:
-- Hch 21:27-40
-- Hch 22:1-29
-resumen: Unos judíos de Asia creen que ha metido a Trófimo en el templo y amotinan a la gente. Los soldados de Claudio
-  Lisias lo rescatan; iban a azotarlo cuando dice que es ciudadano romano.
+- Hch 21:27-39
+resumen: Unos judíos de Asia creen que ha metido a Trófimo en el templo y amotinan la ciudad. Los soldados de Claudio Lisias
+  lo rescatan y lo encadenan; el comandante lo toma por un rebelde egipcio.
 razon: Perspicacia «Trófimo», «Claudio Lisias» (párr. 2 a 4) y «Pablo» (apartado «Detención»).
 fuentes:
 - it-trofimo
@@ -31,5 +31,13 @@ fuentes:
 - hch-21
 - hch-22
 buscar: arresto de Pablo templo
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte en tres escenas, como Perspicacia «Pablo» (apartado «Detención»): el arresto, el discurso desde
+    las escaleras (Hch 21:40–22:21) y los azotes evitados (Hch 22:22-29).'
+  fuente: hch-22
+- fecha: '2026-09-29'
+  cambio: Los azotes evitados salen del resumen porque pasan a pablo-invoca-su-ciudadania-romana.
+  fuente: hch-22
+consultado: '2026-09-29'
 estado: verificado

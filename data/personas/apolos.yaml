@@ -18,6 +18,10 @@ fuentes:
 - it-apolos
 - nota-hechos-18
 - hch-18
+- 1-corintios-1
+- 1-corintios-3
+- 1-corintios-4
+- 1-corintios-16
 enlaces:
 - titulo: 'Perspicacia: «Apolos»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000307
@@ -25,6 +29,7 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
+perspicacia: '1200000307'
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -34,6 +39,7 @@ relaciones:
   fuentes:
   - it-apolos
   - hch-18
+  - 1-corintios-16
   razon: Llega a Éfeso hacia 52 y parece estar allí o cerca cuando Pablo escribe 1 Corintios (1Co 16:12).
   estado: verificado
 - tipo: vivio_en
@@ -42,6 +48,7 @@ relaciones:
   fuentes:
   - it-apolos
   - hch-19
+  - 1-corintios-3
   razon: Desde Éfeso pasa a Acaya y trabaja sobre todo en Corinto (Hch 18:27; 19:1).
   estado: verificado
 - tipo: acompana
@@ -80,6 +87,36 @@ relaciones:
   - it-apolos
   - it-prisca
   - hch-18
-  razon: Priscila y Áquila lo llevan aparte y le enseñan lo que le faltaba (Hch 18:26); Perspicacia «Apolos» dice que
-    le ayudaron a entender mejor la enseñanza cristiana.
+  razon: Priscila y Áquila lo llevan aparte y le enseñan lo que le faltaba (Hch 18:26); Perspicacia «Apolos» dice que le ayudaron
+    a entender mejor la enseñanza cristiana.
+  estado: verificado
+- tipo: nacio_en
+  lugar: alejandria
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-apolos
+  - it-alejandria
+  razon: Hch 18:24 lo llama natural de Alejandría; Perspicacia «Alejandría» la da como su ciudad natal.
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  relacion: colaborador
+  relacion_inversa: colaborador
+  fecha:
+    desde: 55
+    hasta: 55
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 55 e.c.
+  deducido: false
+  fuentes:
+  - 1-corintios-3
+  - it-apolos
+  - 1-corintios-4
+  - 1-corintios-16
+  razon: '1Co 3:5-9: colaboradores de Dios en el mismo campo, en momentos distintos: Pablo plantó en Corinto y Apolos regó
+    después. Hacia 55 están cerca, en Éfeso (1Co 16:12; Perspicacia «Apolos»).'
   estado: verificado

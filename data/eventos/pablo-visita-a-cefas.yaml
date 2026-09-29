@@ -30,5 +30,8 @@ fuentes:
 - galatas-1
 - hch-9
 buscar: Pablo visita a Cefas
-consultado: '2026-09-28'
+orden_relato:
+  serie: hechos
+  orden: 926
+consultado: '2026-09-29'
 estado: verificado

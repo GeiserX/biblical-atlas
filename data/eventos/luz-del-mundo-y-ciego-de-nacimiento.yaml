@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: luz-del-mundo-y-ciego-de-nacimiento
-titulo: Jesús, luz del mundo, da la vista a un ciego de nacimiento
+titulo: Jesús dice en el templo que es la luz del mundo
 fecha:
   desde: 32
   hasta: 32
@@ -12,27 +12,44 @@ fecha:
   detalle:
     mes: tisri
 lugares:
-- jerusalen
 - monte-moria
-- estanque-de-siloam
+- jerusalen
 personas:
 - jesus
 pasajes:
-- Jn 8:12-9:41
-resumen: En el templo, Jesús dice que es la luz del mundo. Después cura a un ciego de nacimiento mandándolo a lavarse
-  en el estanque de Siloam, y los fariseos expulsan al hombre.
-razon: La tabla A7-E da cuándo y dónde. Jn 8:20 sitúa la enseñanza en el templo y Jn 9:7 nombra Siloam; jy cap.
-  68.
+- Jn 8:12-59
+resumen: En el templo, el último día de la fiesta, Jesús dice que es la luz del mundo y que la verdad hace libres. Discute
+  con los judíos sobre Abrahán, y cuando quieren apedrearlo se va.
+razon: La tabla A7-E da cuándo y dónde. Jn 8:20 y 8:59 sitúan la enseñanza en el templo; jy, cap. 68, la pone el último día
+  de la fiesta. La curación del ciego va aparte.
 fuentes:
 - tnm-a7-e
 - juan-8
-- juan-9
 - jy-cap-68
-- jy-cap-70
-- jy-cap-71
+- jy-cap-69
 orden_relato:
   serie: a7
   orden: 65
 buscar: «Soy la luz del mundo»
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El suceso se parte en dos escenas: aquí queda la enseñanza en el templo (Jn 8:12-59); la curación del ciego, otro
+    día, pasa a sana-al-ciego-de-nacimiento.'
+  fuente: juan-9
+- fecha: '2026-09-29'
+  cambio: El pasaje se ciñe a Jn 8:12-59; Jn 9 pasa al suceso nuevo.
+  fuente: juan-9
+- fecha: '2026-09-29'
+  cambio: Siloam pasa al suceso nuevo. La escena queda entera en el templo (Jn 8:20, 59), así que monte-moria va primero.
+  fuente: juan-9
+- fecha: '2026-09-29'
+  cambio: El resumen cuenta Jn 8:12-59, que antes no contaba, y deja la curación del ciego al suceso nuevo.
+  fuente: juan-9
+- fecha: '2026-09-29'
+  cambio: La razón ya no habla de Siloam, que pasa al suceso nuevo.
+  fuente: juan-9
+- fecha: '2026-09-29'
+  cambio: Juan 9 y jy, cap. 70 y 71, tratan la curación del ciego; pasan al suceso nuevo.
+  fuente: juan-9
+consultado: '2026-09-29'
 estado: verificado

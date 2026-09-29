@@ -25,6 +25,8 @@ fuentes:
 - it-herodes
 - hch-25
 - hch-26
+- nota-hechos-25
+- bt-25
 enlaces:
 - titulo: 'Perspicacia: «Herodes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
@@ -32,7 +34,8 @@ enlaces:
 - titulo: Hechos 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200002000#4
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: pariente

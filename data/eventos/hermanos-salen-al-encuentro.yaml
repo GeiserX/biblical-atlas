@@ -6,7 +6,7 @@ fecha:
   hasta: 59
   precision: año
   aprox: true
-  tipo: narrativa
+  tipo: anclada
   cronologia: tnm
   texto: c. 59 e.c.
 orden_relato:
@@ -22,10 +22,19 @@ pasajes:
 - Hch 28:15
 resumen: Hermanos de Roma salen a recibirlo a Tres Tabernas y a la Plaza del Mercado de Apio. Al verlos, Pablo da
   gracias a Dios y cobra ánimo.
-razon: Hch 28:15 y sus notas de estudio, que sitúan los dos lugares en la Vía Apia.
+razon: Hch 28:15 y sus notas de estudio, que sitúan los dos lugares en la Vía Apia. El estudio 3 (párr. 27) pone la llegada
+  a Roma hacia 59.
 fuentes:
 - hch-28
 - nota-hechos-28
+- si-3
 buscar: Plaza del Mercado de Apio Tres Tabernas
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa de un solo año; el estudio 3 (párr. 27) pone la llegada a Roma hacia 59: es anclada.'
+  fuente: si-3
+- fecha: '2026-09-29'
+  cambio: La razón nombra la fuente del año.
+  fuente: si-3
+consultado: '2026-09-29'
 estado: verificado

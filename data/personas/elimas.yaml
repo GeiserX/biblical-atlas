@@ -19,6 +19,7 @@ razon: Perspicacia «Bar-Jesús» (párr. 1 a 3); Hch 13:6-12.
 fuentes:
 - it-bar-jesus
 - hch-13
+- it-elimas
 enlaces:
 - titulo: 'Perspicacia: «Bar-Jesús»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000563
@@ -26,7 +27,11 @@ enlaces:
 - titulo: Hechos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
   tipo: biblia
-consultado: '2026-09-28'
+- titulo: 'Perspicacia: «Elimas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001345
+  tipo: perspicacia
+perspicacia: '1200000563'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -34,6 +39,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-bar-jesus
+  - hch-13
   razon: Perspicacia lo llama «judío de Pafos».
   estado: verificado
 - tipo: acompana
