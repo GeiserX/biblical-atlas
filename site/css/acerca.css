@@ -65,7 +65,7 @@ a { color: var(--link); }
 }
 
 /* Con el dedo (be-f1w): dianas de 44 px en la barra y en el índice. */
-@media (pointer: coarse) {
+@media (any-pointer: coarse) {
   .acerca-cab .be-logo { min-height: 44px; }
   .acerca-cab .be-btn { height: 44px; }
   .acerca .acerca-indice { row-gap: 10px; }

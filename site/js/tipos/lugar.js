@@ -114,17 +114,22 @@ function filasHistoria(id) {
   const corta = (h) => (h.fecha?.texto && h.fecha.texto.length <= 16 ? h.fecha.texto : fechaCorta(h.fecha)) || fmtAnio(Math.floor(h.tr[0]));
   const filas = visibles(hechosDe(id)).filter((h) => h.tr).map((h) => ({ ...h, corto: corta(h) }));
   for (const n of (l.nombres || []).filter((x) => x.desde != null || x.hasta != null)) {
+    // tr sitúa la fila en la lista (50 años cuando falta un extremo); vig dice cuándo el nombre está en uso: un extremo
+    // que falta queda abierto, así «desde 1950» sigue vigente hoy.
     const a = n.desde ?? n.hasta - 50, b = n.hasta != null ? n.hasta + 1 : a + 50;
+    const vig = [n.desde ?? -Infinity, n.hasta != null ? n.hasta + 1 : Infinity];
     const texto = n.desde != null && n.hasta != null ? `de ${fmtAnio(n.desde)} a ${fmtAnio(n.hasta)}` : n.desde != null ? `desde ${fmtAnio(n.desde)}` : `hasta ${fmtAnio(n.hasta)}`;
-    filas.push({ sel: '', tipo: 'nombre', titulo: `Se llama ${n.nombre}`, tr: [a, b], corto: texto, fecha: { texto }, fuentes: n.fuentes, estado: n.estado });
+    filas.push({ sel: '', tipo: 'nombre', titulo: `Se llama ${n.nombre}`, tr: [a, b], vig, corto: texto, fecha: { texto }, fuentes: n.fuentes, estado: n.estado });
   }
   return filas.sort((x, y) => x.tr[0] - y.tr[0] || x.tr[1] - y.tr[1]);
 }
 /** Dónde va el cursor: índice de la primera fila que empieza después de t. */
 const posicionCursor = (filas, t) => { const i = filas.findIndex((h) => h.tr[0] > t); return i < 0 ? filas.length : i; };
+/** Si el hecho (o el nombre) está en curso en t: los nombres con un extremo abierto usan vig, el resto su tramo. */
+const enCurso = (h, t) => { const [d, f] = h.vig || h.tr; return t >= d && t < f; };
 function claveHistoria(id, t) {
   const filas = filasHistoria(id);
-  const ahora = filas.filter((h) => t >= h.tr[0] && t < h.tr[1]).map((h) => h.sel || h.titulo).join(',');
+  const ahora = filas.filter((h) => enCurso(h, t)).map((h) => h.sel || h.titulo).join(',');
   return `${id}|${posicionCursor(filas, t)}|${ahora}|${historiaAbierta.has(id) ? 1 : 0}|${Math.floor(t)}`;
 }
 function historiaHtml(id) {
@@ -154,7 +159,7 @@ function historiaHtml(id) {
     const hueco = h.tr[0] - fin;
     if (i > de && hueco >= HUECO_HISTORIA) partes.push(`<li class="historia-hueco"><span class="historia-fecha" aria-hidden="true">≈</span><span>${esc(distancia(hueco, false).replace(/ después$/, ''))} sin hechos aquí</span></li>`);
     if (i === pos) partes.push(cursor());
-    const ahora = t >= h.tr[0] && t < h.tr[1];
+    const ahora = enCurso(h, t);
     const tipo = TIPO_HECHO[h.tipo] || 'hecho';
     const largo = fechaTexto(h);
     const medio = ((h.tr[0] + Math.min(h.tr[1], h.tr[0] + 1)) / 2).toFixed(4);
@@ -181,7 +186,7 @@ function actualizarHistoria() {
   if (!el || E.sel?.tipo !== 'lugar' || el.dataset.lugar !== E.sel.id) return;
   if (el.dataset.clave === claveHistoria(E.sel.id, E.t)) return;
   const foco = el.contains(document.activeElement) ? (document.activeElement.dataset.irSel || document.activeElement.textContent) : null;
-  const esBoton = document.activeElement?.classList?.contains('historia-boton');
+  const esBoton = document.activeElement?.matches?.('.historia-boton, .historia-mas button');
   el.outerHTML = historiaHtml(E.sel.id);
   if (foco == null) return;
   const nuevo = document.getElementById('historia-lugar');

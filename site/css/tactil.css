@@ -5,7 +5,8 @@
 /* El asa de la línea solo existe para el dedo (con ratón está la raya entre el mapa y la línea). */
 .linea-alto { display: none; }
 
-@media (pointer: coarse) {
+/* any-pointer: un portátil con pantalla táctil tiene el ratón como puntero principal, pero el dedo también pulsa. */
+@media (any-pointer: coarse) {
   /* ---------- Barra superior ---------- */
   #inicio { min-width: 44px; min-height: 44px; justify-content: center; margin-left: -8px; margin-right: -8px; }
   .buscador .be-search { height: 44px; }
@@ -34,10 +35,6 @@
   .zoom button { min-width: 44px; min-height: 44px; }
   .zoom-select { height: 44px; }
   .linea-barra .fechas-boton { min-height: 44px; }
-  /* La raya de 10 px entre el mapa y la línea no es una diana para el dedo: la sustituye el asa de la barra (base.js). */
-  #sep-linea { display: none; }
-  .linea-alto { display: inline-flex; flex: none; width: 44px; height: 44px; touch-action: none; cursor: row-resize; }
-  .linea-alto.arrastrando { background: var(--paper-2); color: var(--ink); }
   /* El separador de la ficha (tabletas): una zona de 44 × 88 px alrededor de su asa. */
   .separador--panel::before { opacity: 0 !important; left: -17px; width: 44px; top: 50%; bottom: auto; height: 88px; margin-top: -44px; background: transparent; }
 
@@ -84,6 +81,14 @@
   .sinc-fila { min-height: 44px; }
   .sinc-fila:not(.sinc-eje) .sinc-barra, .sinc-fila:not(.sinc-eje) .sinc-rombo { top: 12px; }
   .sinc-barra { overflow: visible; }
+}
+
+/* Lo que cambia la disposición (no solo la diana) sigue al puntero principal: con ratón y pantalla táctil queda la raya. */
+@media (pointer: coarse) {
+  /* La raya de 10 px entre el mapa y la línea no es una diana para el dedo: la sustituye el asa de la barra (base.js). */
+  #sep-linea { display: none; }
+  .linea-alto { display: inline-flex; flex: none; width: 44px; height: 44px; touch-action: none; cursor: row-resize; }
+  .linea-alto.arrastrando { background: var(--paper-2); color: var(--ink); }
 
   /* ---------- Hoja del móvil ---------- */
   .panel-cuerpo { padding-top: 10px; }   /* la zona de toque de «Cerrar ficha» no queda cortada por arriba */

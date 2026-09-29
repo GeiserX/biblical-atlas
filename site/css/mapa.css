@@ -376,7 +376,7 @@ ol.paradas li:first-child .be-row { border-top: 0; }
   .app:has(#vista-recorrido:not([hidden]), #vista-ahora:not([hidden])) .mientras { display: none; }
   /* En vertical la tarjeta del suceso ocupa la esquina del mapa de situación: con ella a la vista, el mapa de
      situación se quita, como con el recorrido (be-f1w). */
-  .app:has(#mientras:not([hidden])) .situacion { display: none !important; }
+  .app:not(.mapa-bajo):has(#mientras:not([hidden])) .situacion { display: none !important; }
 }
 /* La leyenda no pasa del ancho del mapa ni tapa su columna de botones: sus filas parten en dos líneas en vez de
    cortarse en el borde. */

@@ -221,8 +221,8 @@ function cabeceraGrafo(nodos, visibles) {
   return `<header class="vista-cab">
     <nav class="be-crumbs migas-grafo" aria-label="Saltos en el grafo">${G.ruta.map((sel, i) => `${i ? '<span class="be-sep" aria-hidden="true">›</span>' : ''}<button type="button" class="miga${i === G.ruta.length - 1 ? ' miga--actual' : ''}" data-grafo-miga="${i}"${i === G.ruta.length - 1 ? ' aria-current="true"' : ''}><span class="be-node be-node--${claseNodo(sel)} be-node--sm" aria-hidden="true">${esc(inicial(sel))}</span>${esc(nombreDe(sel))}</button>`).join('')}</nav>
     <div class="be-seg grafo-modo" role="radiogroup" aria-label="Forma de ver las conexiones">
-      <button type="button" role="radio" class="be-seg__opt${G.modo === 'grafo' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modo === 'grafo'}" data-grafo-modo="grafo">Grafo</button>
-      <button type="button" role="radio" class="be-seg__opt${G.modo === 'lista' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modo === 'lista'}" data-grafo-modo="lista">Lista</button></div>
+      <button type="button" role="radio" class="be-seg__opt${G.modoVisto === 'grafo' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modoVisto === 'grafo'}" data-grafo-modo="grafo">Grafo</button>
+      <button type="button" role="radio" class="be-seg__opt${G.modoVisto === 'lista' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modoVisto === 'lista'}" data-grafo-modo="lista">Lista</button></div>
     <button type="button" class="be-btn be-btn--sm be-btn--ghost vista-cerrar" data-grafo-cerrar aria-label="Cerrar el grafo">Cerrar <span aria-hidden="true">×</span></button>
   </header>
   <div class="grafo-filtros" role="group" aria-label="Filtros del grafo">
@@ -261,15 +261,18 @@ function pintarGrafo(forzar) {
   if (!BE.parseSel(id)) { cerrarGrafo(); return; }
   const nodos = nodosDe(id, E.t);
   const visibles = filtrar(nodos);
-  const clave = [G.ruta.join('.'), G.modo, G.vigente, [...G.ocultos].join(), [...G.abiertos].join(), visibles.map((n) => `${n.sel}:${n.estado}:${n.principal.verbo}`).join(','), G.vigente ? Math.floor(E.t) : ''].join('|');
-  if (!forzar && clave === G.clave && !v.hidden) return;
-  G.clave = clave;
+  const oculta = v.hidden;
   v.hidden = false;
   // Una vista estrecha (el móvil, o la tableta en vertical con la ficha al lado) o baja (un portátil de 640 px de alto)
-  // no cabe en círculo: los rótulos se pisan y la leyenda queda fuera. Sale la lista, salvo que se haya pedido el grafo a mano.
-  if (G.modo === 'grafo' && !G.modoPedido && v.clientWidth && (v.clientWidth < 480 || v.clientHeight < 420)) G.modo = 'lista';
-  v.classList.toggle('vista-grafo--lista', G.modo === 'lista');
-  const cuerpo = G.modo === 'lista' ? listaHtml(visibles, nodos) : lienzoHtml(id, visibles, nodos);
+  // no cabe en círculo: los rótulos se pisan y la leyenda queda fuera. Sale la lista, salvo que se haya pedido el grafo a
+  // mano. G.modo guarda lo que se prefiere y G.modoVisto lo que se dibuja: al ensancharse la vista vuelve el grafo solo.
+  const apretado = !G.modoPedido && (estrecha() || (v.clientWidth && (v.clientWidth < 480 || v.clientHeight < 420)));
+  G.modoVisto = G.modo === 'grafo' && apretado ? 'lista' : G.modo;
+  const clave = [G.ruta.join('.'), G.modo, G.modoVisto, G.vigente, [...G.ocultos].join(), [...G.abiertos].join(), visibles.map((n) => `${n.sel}:${n.estado}:${n.principal.verbo}`).join(','), G.vigente ? Math.floor(E.t) : ''].join('|');
+  if (!forzar && clave === G.clave && !oculta) return;
+  G.clave = clave;
+  v.classList.toggle('vista-grafo--lista', G.modoVisto === 'lista');
+  const cuerpo = G.modoVisto === 'lista' ? listaHtml(visibles, nodos) : lienzoHtml(id, visibles, nodos);
   // Repintar sustituye los controles: el que tenía el foco (el interruptor, Grafo/Lista, un sector) lo recupera.
   const foco = v.contains(document.activeElement) ? document.activeElement : null;
   const claveFoco = foco && ['data-grafo-vigente', 'data-grafo-modo', 'data-grafo-sector', 'data-grafo-abrir', 'data-grafo-centro', 'data-grafo-ir', 'data-grafo-miga']
@@ -278,10 +281,10 @@ function pintarGrafo(forzar) {
     ${leyendaHtml(visibles)}
     <div class="be-pop grafo-tarjeta" role="tooltip" id="grafo-tarjeta" hidden></div>`;
   if (claveFoco) v.querySelector(claveFoco)?.focus({ preventScroll: true });
-  G.nodos = G.modo === 'lista' ? visibles : G.enLienzo || [];
+  G.nodos = G.modoVisto === 'lista' ? visibles : G.enLienzo || [];
   // Si el círculo y la leyenda no caben juntos (pantallas bajas), el círculo encoge lo que sobra, una vez.
   const sobra = v.scrollHeight - v.clientHeight;
-  if (G.modo === 'grafo' && sobra > 1 && G.altoLienzo > 240 && !G.reajuste) {
+  if (G.modoVisto === 'grafo' && sobra > 1 && G.altoLienzo > 240 && !G.reajuste) {
     G.recorte = (G.recorte || 0) + sobra;
     G.reajuste = true; pintarGrafo(true); G.reajuste = false;
   }
@@ -406,7 +409,7 @@ function abrirGrafo(x, { ruta = null, desdeHash = false } = {}) {
   estudio.abrirSolo('grafo');
   G.ruta = ruta ? ruta.map(aSel).filter((y) => BE.parseSel(y)) : [sel];
   if (!G.ruta.length) G.ruta = [sel];
-  if (!G.modo) G.modo = estrecha() ? 'lista' : 'grafo';
+  if (!G.modo) G.modo = 'grafo';   // en pantalla estrecha se dibuja la lista sin cambiar la preferencia (pintarGrafo)
   G.previos = new Set();
   G.recorte = 0;
   G.visto = centro();
@@ -798,7 +801,7 @@ BE.parametros.push(
       if (ruta.length) { if (ruta.join('.') !== G.ruta.join('.')) abrirGrafo(ruta[ruta.length - 1], { ruta, desdeHash: true }); }
       else if (abierto()) cerrarGrafo(true);
     } },
-  { nombre: 'gvista', escribir: () => (abierto() && G.modo === 'lista' && !estrecha() ? 'lista' : abierto() && G.modo === 'grafo' && estrecha() ? 'grafo' : null),
+  { nombre: 'gvista', escribir: () => (abierto() && G.modoPedido && G.modo !== (estrecha() ? 'lista' : 'grafo') ? G.modo : null),
     leer(v) { if (v === 'lista' || v === 'grafo') { G.modo = v; G.modoPedido = true; if (abierto()) pintarGrafo(true); } } },
   { nombre: 'gtodo', escribir: () => (abierto() && !G.vigente ? '1' : null), leer(v) { G.vigente = v !== '1'; if (abierto()) pintarGrafo(true); } },
   { nombre: 'conexion', historia: true, escribir: () => (conAbierta() ? `${C.a || ''}~${C.b || ''}` : null),
