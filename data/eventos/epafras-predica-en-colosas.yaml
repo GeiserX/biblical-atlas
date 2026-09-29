@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: epafras-predica-en-colosas
+titulo: Epafras da a conocer las buenas noticias en Colosas
+fecha:
+  desde: 33
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 33 y 61 e.c. (tiempo narrativo: después de Pentecostés de 33 y antes de que Epafras informara a Pablo en Roma, c. 59-61)'
+lugares:
+- colosas
+personas:
+- epafras
+presentes:
+- epafras
+pasajes:
+- Col 1:6, 7
+resumen: Epafras, ministro fiel en nombre de Pablo y los suyos, enseña a los de Colosas la bondad inmerecida de Dios. Según
+  jw.org, lo más probable es que la congregación de la ciudad surgiera de su trabajo.
+razon: 'Col 1:6, 7; Perspicacia «Epafras», «Colosas» (párr. 3) y la nota de Col 1:7. jw.org no da el año: queda entre Pentecostés
+  de 33 (estudio 3) y su viaje a Roma en el primer encierro de Pablo, c. 59-61.'
+fuentes:
+- colosenses-1
+- it-epafras
+- it-colosas
+- si-3
+- it-colosenses
+enlaces:
+- titulo: Colosenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Epafras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001379
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Colosas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001010
+  tipo: perspicacia
+buscar: Epafras congregación de Colosas
+consultado: '2026-09-29'
+estado: verificado

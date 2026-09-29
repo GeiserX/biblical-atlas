@@ -1,0 +1,1131 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "colosenses",
+ "agente": "escritor-colosenses",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "hch-28",
+      "si-3",
+      "efesios-3",
+      "efesios-6",
+      "filipenses-1",
+      "filipenses-4",
+      "colosenses-1"
+     ],
+     "razon": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 49,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-timoteo",
+      "bt-15",
+      "hch-16",
+      "tnm-tabla",
+      "hch-17",
+      "hch-18",
+      "hch-19",
+      "hch-20",
+      "romanos-16",
+      "1-corintios-4",
+      "1-corintios-16",
+      "2-corintios-1",
+      "filipenses-1",
+      "filipenses-2",
+      "colosenses-1"
+     ],
+     "razon": "Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c. (con Pablo en su primer encierro)"
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-timoteo",
+      "filipenses-1",
+      "filipenses-2",
+      "colosenses-1"
+     ],
+     "razon": "Perspicacia «Timoteo», párr. 5, y la nota de estudio de Flp 1:1: estaba con Pablo en Roma, que lo nombra en el saludo de Filipenses, Colosenses y Filemón.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001379"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "resumen",
+   "antes": "Predicó a los colosenses y quizás fundó su congregación. Fue a Roma con buenas noticias de Colosas mientras Pablo estaba preso y se esforzó también por Laodicea y Hierápolis.",
+   "despues": "Predicó a los colosenses, y es muy probable que su congregación surgiera de su trabajo. Fue a Roma con buenas noticias de Colosas mientras Pablo estaba preso y se esforzó también por Laodicea y Hierápolis.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "«Quizás fundó» se quedaba corto: Perspicacia «Epafras» lo ve muy probable, «Colosas» (párr. 3) llama a la congregación fruto de su obra y la nota de Col 1:7 lo ve probable.",
+    "fuente": "colosenses-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-1",
+    "it-colosas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-epafras",
+      "filemon-1",
+      "tnm-tabla",
+      "colosenses-1"
+     ],
+     "razon": "Pablo lo llama su compañero en cautiverio (Flm 23). La Tabla de los libros fecha Filemón hacia 60-61.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro de Pablo en Roma)"
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-epafras",
+      "colosenses-1"
+     ],
+     "razon": "Perspicacia «Epafras»: llegó a Roma con noticias de Colosas en el primer encierro de Pablo (Col 1:8) y parece que se quedó allí un tiempo; sigue con él al escribir (Col 4:12, 13).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "colosas",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "laodicea",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "laodicea",
+   "campo": "resumen",
+   "antes": "Ciudad rica del valle del Lico, centro bancario y de lana negra, sin agua propia. Pablo escribió a su congregación; en Apocalipsis Jesús la halla tibia y pobre en sentido espiritual.",
+   "despues": "Ciudad rica del valle del Lico, centro bancario y de lana negra, sin agua propia. Pablo, que no predicó allí, se preocupó por su congregación y le escribió; en Apocalipsis Jesús la halla tibia y pobre en sentido espiritual.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Añade que Pablo no predicó en la ciudad pero luchaba por sus cristianos (Col 2:1; nota de estudio de ese versículo y Perspicacia «Laodicea, laodicenses», párr. 5).",
+    "fuente": "colosenses-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-envia-a-tiquico-a-efeso-y-colosas",
+   "campo": "pasajes",
+   "valores": [
+    "Col 4:7-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-envia-a-tiquico-a-efeso-y-colosas",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4",
+    "it-colosenses"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "colosenses",
+   "campo": "personas",
+   "valores": [
+    "bernabe",
+    "jesus-justo",
+    "ninfa"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "colosenses",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4",
+    "it-laodicea"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "colosenses-4"
+     ],
+     "razon": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "onesimo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003328"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "onesimo",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "onesimo",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Colosenses 4 (TNM)",
+     "url": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4",
+     "tipo": "biblia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "onesimo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "colosenses-4"
+     ],
+     "razon": "Pablo lo llama su hijo y le es muy útil en Roma (Flm 10-13). La Tabla de los libros fecha Filemón hacia 60-61.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "filemon",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003463"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aristarco",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-marcos",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bernabe",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "epafras",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "colosenses-4"
+     ],
+     "razon": "Pablo lo llama su compañero en cautiverio (Flm 23). La Tabla de los libros fecha Filemón hacia 60-61.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro de Pablo en Roma)"
+     },
+     "deducido": true,
+     "fuentes": [
+      "colosenses-4"
+     ],
+     "razon": "Perspicacia «Epafras»: llegó a Roma con noticias de Colosas en el primer encierro de Pablo (Col 1:8) y parece que se quedó allí un tiempo; sigue con él al escribir (Col 4:12, 13).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lucas",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "demas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001151"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "arquipo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000348"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "arquipo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "colosas",
+     "deducido": true,
+     "fuentes": [
+      "it-arquipo"
+     ],
+     "razon": "Perspicacia deduce de las dos cartas que vivía en Colosas o cerca.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "filemon",
+     "relacion": "quizás hijo",
+     "deducido": true,
+     "fuentes": [
+      "it-filemon"
+     ],
+     "razon": "Perspicacia «Filemón» cree posible que fuera su hijo.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "colosas",
+     "deducido": true,
+     "fuentes": [
+      "it-arquipo",
+      "colosenses-4"
+     ],
+     "razon": "Perspicacia deduce de las dos cartas que vivía en Colosas o cerca (Col 4:17; Flm 2).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "filemon",
+     "relacion": "quizás padre",
+     "deducido": true,
+     "fuentes": [
+      "it-filemon"
+     ],
+     "razon": "Perspicacia «Filemón» cree posible que Arquipo fuera hijo de Filemón (Flm 2): Filemón sería su padre.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Filemón decía «quizás hijo», que en esta ficha hacía a Filemón hijo de Arquipo. Perspicacia «Filemón» ve posible lo contrario: pasa a «quizás padre». La de Colosas cita Col 4:17.",
+    "fuente": "it-filemon"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "colosas",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "laodicea",
+   "campo": "fuentes",
+   "valores": [
+    "colosenses-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ticio-justo",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jesus-justo",
+    "jose-barsabas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-barsabas",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jesus-justo",
+    "ticio-justo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus-hijo-de-eliezer",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jesus-justo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "no_confundir_con",
+   "valores": [
+    "jesus-justo"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "hierapolis",
+   "campo": "resumen",
+   "antes": "Ciudad de la provincia de Asia, en el valle del Lico, a unos 10 km de Laodicea. Pablo al parecer no la visitó; el cristianismo llegó allí por el esfuerzo de Epafras.",
+   "despues": "Ciudad de la provincia de Asia, en el valle del Lico, a unos 10 km de Laodicea. Pablo al parecer no la visitó; parece que el cristianismo llegó allí por el esfuerzo de Epafras.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen daba por seguro que Epafras llevó allí el cristianismo; Perspicacia «Hierápolis», párr. 2, solo lo presenta como probable (Col 4:12, 13).",
+    "fuente": "colosenses-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "lucas",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 50,
+      "precision": "estación",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "primavera de 50 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "hch-16",
+      "si-3"
+     ],
+     "razon": "Los pasajes en «nosotros» empiezan en Troas y siguen hasta Filipos (Hch 16:10-17). Cruzan a Europa en la primavera de 50 (estudio 3, párr. 24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 56,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "hch-20",
+      "hch-27",
+      "hch-28"
+     ],
+     "razon": "El «nosotros» vuelve en Filipos y llega a Jerusalén; luego va con él a Roma (desde Hch 20:5 y desde 27:1).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 65,
+      "hasta": 65,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "2-timoteo-4",
+      "tnm-tabla"
+     ],
+     "razon": "«Solo Lucas está conmigo» (2Ti 4:11): seguía a su lado poco antes de su muerte. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "fecha": {
+      "desde": 50,
+      "hasta": 56,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-56 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-lucas",
+      "hch-16",
+      "hch-20",
+      "si-3"
+     ],
+     "razon": "Perspicacia cree posible que se quedara en Filipos entre el segundo y el tercer viaje. Del paso por Filipos en 50 a la vuelta en la Pascua de 56 (estudio 3, párr. 24 y 26).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 50,
+      "precision": "estación",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "primavera de 50 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "hch-16",
+      "si-3"
+     ],
+     "razon": "Los pasajes en «nosotros» empiezan en Troas y siguen hasta Filipos (Hch 16:10-17). Cruzan a Europa en la primavera de 50 (estudio 3, párr. 24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 56,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "hch-20",
+      "hch-27",
+      "hch-28",
+      "colosenses-4"
+     ],
+     "razon": "El «nosotros» vuelve en Filipos y llega a Jerusalén; luego va con él a Roma (desde Hch 20:5 y 27:1), donde saluda a los colosenses (Col 4:14).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 65,
+      "hasta": 65,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-lucas",
+      "2-timoteo-4",
+      "tnm-tabla"
+     ],
+     "razon": "«Solo Lucas está conmigo» (2Ti 4:11): seguía a su lado poco antes de su muerte. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "filipos",
+     "fecha": {
+      "desde": 50,
+      "hasta": 56,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-56 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-lucas",
+      "hch-16",
+      "hch-20",
+      "si-3"
+     ],
+     "razon": "Perspicacia cree posible que se quedara en Filipos entre el segundo y el tercer viaje. Del paso por Filipos en 50 a la vuelta en la Pascua de 56 (estudio 3, párr. 24 y 26).",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo de 56-61 cita ahora Col 4:14, donde Lucas manda saludos desde Roma (Perspicacia «Lucas», c. 60-61); el resto de la lista no cambia.",
+    "fuente": "colosenses-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "aristarco",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "tesalonica",
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-20",
+      "hch-27"
+     ],
+     "razon": "Hch 20:4 y 27:2 lo dan como de Tesalónica.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 52,
+      "hasta": 56,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-56 e.c. (tercer viaje)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-20",
+      "si-3"
+     ],
+     "razon": "Va con Pablo en el tercer viaje y en la vuelta hacia Asia (Hch 19:29; 20:4). El tercer viaje va de c. 52 a 56 (estudio 3, párr. 26).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 58,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 58-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-27",
+      "colosenses-4",
+      "si-3"
+     ],
+     "razon": "Embarca con él en Cesarea y en Roma es su compañero de prisión (Hch 27:2; Col 4:10). Salida hacia 58 y encierro en Roma hasta cerca de 61 (estudio 3, párr. 27).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "tesalonica",
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-20",
+      "hch-27"
+     ],
+     "razon": "Hch 20:4 y 27:2 lo dan como de Tesalónica.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 52,
+      "hasta": 56,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-56 e.c. (tercer viaje)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-20",
+      "si-3"
+     ],
+     "razon": "Va con Pablo en el tercer viaje y en la vuelta hacia Asia (Hch 19:29; 20:4). El tercer viaje va de c. 52 a 56 (estudio 3, párr. 26).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 58,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 58-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aristarco",
+      "hch-27",
+      "colosenses-4",
+      "si-3"
+     ],
+     "razon": "Embarca con él en Cesarea; en Roma es su compañero de prisión y uno de sus colaboradores judíos (Hch 27:2; Col 4:10, 11). Salida hacia 58 y encierro en Roma hasta cerca de 61 (estudio 3, párr. 27).",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo de 58-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de la lista no cambia.",
+    "fuente": "colosenses-4"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "juan-marcos",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 47,
+      "hasta": 47,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 47 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "hch-13"
+     ],
+     "razon": "Va como ayudante al empezar el primer viaje y se vuelve a Jerusalén desde Perga (Hch 12:25; 13:5, 13).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "bernabe",
+     "fecha": {
+      "desde": 49,
+      "hasta": 49,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "it-chipre",
+      "hch-15"
+     ],
+     "razon": "Tras la disputa con Pablo, Bernabé se lo lleva a Chipre (Hch 15:39).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "colosenses-4"
+     ],
+     "razon": "Está con Pablo en Roma y saluda a Colosas y a Filemón (Col 4:10; Flm 24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-juan-marcos",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "hechos-12",
+      "it-marcos"
+     ],
+     "razon": "Hch 12:12 habla de la casa de María, «madre de Juan, al que llamaban Marcos»; Perspicacia «Marcos».",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "hechos-12",
+      "it-marcos"
+     ],
+     "razon": "Hch 12:12, 25: su madre tenía casa en Jerusalén y de allí se lo llevaron Bernabé y Saulo; Perspicacia lo llama hijo de María de Jerusalén.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 47,
+      "hasta": 47,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 47 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "hch-13"
+     ],
+     "razon": "Va como ayudante al empezar el primer viaje y se vuelve a Jerusalén desde Perga (Hch 12:25; 13:5, 13).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "bernabe",
+     "fecha": {
+      "desde": 49,
+      "hasta": 49,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "it-chipre",
+      "hch-15"
+     ],
+     "razon": "Tras la disputa con Pablo, Bernabé se lo lleva a Chipre (Hch 15:39).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 60,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 60-61 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-marcos",
+      "colosenses-4"
+     ],
+     "razon": "Está con Pablo en Roma, es uno de sus colaboradores judíos y saluda a Colosas y a Filemón (Col 4:10, 11; Flm 24).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-juan-marcos",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "hechos-12",
+      "it-marcos"
+     ],
+     "razon": "Hch 12:12 habla de la casa de María, «madre de Juan, al que llamaban Marcos»; Perspicacia «Marcos».",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "hechos-12",
+      "it-marcos"
+     ],
+     "razon": "Hch 12:12, 25: su madre tenía casa en Jerusalén y de allí se lo llevaron Bernabé y Saulo; Perspicacia lo llama hijo de María de Jerusalén.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo de 60-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de la lista no cambia.",
+    "fuente": "colosenses-4"
+   }
+  }
+ ],
+ "preguntas": []
+}
