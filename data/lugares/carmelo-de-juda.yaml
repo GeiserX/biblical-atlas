@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: carmelo-de-juda
+nombre: Carmelo
+nombres:
+- nombre: Carmelo
+tipo: ciudad
+lat: 31.422876
+lon: 35.132952
+precision: punto
+coord_fuente: openbible:a053f15
+coord_url: https://www.openbible.info/geo/ancient/a053f15/carmel-1
+resumen: Ciudad de la montaña de Judá, en Khirbet el-Kirmil, unos 11 km al sursureste de Hebrón. Allí levantó Saúl un monumento
+  y allí tenía Nabal sus rebaños. No es el monte Carmelo.
+razon: 'Perspicacia «Carmelo», núm. 2; Jos 15:55; 1Sa 15:12; 25:2. OpenBible: solo el punto.'
+fuentes:
+- it-carmelo
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Carmelo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000892
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

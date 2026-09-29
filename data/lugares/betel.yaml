@@ -41,6 +41,11 @@ fuentes:
 - amos-4
 - amos-5
 - amos-7
+- josue-8
+- josue-12
+- josue-16
+- it-luz-ii
+- josue-18
 enlaces:
 - titulo: 'Perspicacia: «Betel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
@@ -50,6 +55,9 @@ enlaces:
   tipo: biblia
 - titulo: 'Perspicacia: «Bet-aven»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000673
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Luz, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002794
   tipo: perspicacia
 consultado: '2026-09-29'
 estado: verificado

@@ -17,12 +17,16 @@ fuentes:
 - it-en-dor
 - openbible-geo
 - salmos-83
+- josue-17
 enlaces:
 - titulo: 'Perspicacia: «En-dor»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001359
   tipo: perspicacia
 - titulo: Salmo 83 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  tipo: biblia
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

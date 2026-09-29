@@ -14,6 +14,10 @@ fecha:
     dia: 10
 lugares:
 - rio-jordan
+- adan
+- jerico
+- llanuras-deserticas-de-jerico
+- guilgal
 personas:
 - josue-hijo-de-nun
 pasajes:
@@ -22,14 +26,21 @@ pasajes:
 - Sl 78:54
 - Sl 114:3, 5
 - Hch 7:45
-resumen: Cuarenta años después del éxodo, Josué lleva al pueblo a cruzar el Jordán y acampa en Guilgal, junto a Jericó.
-  Empieza la conquista de la tierra.
+- Sl 66:6
+- Jos 4:10-18
+- Jos 24:11
+resumen: Cuarenta años después del éxodo, los sacerdotes que llevan el Arca entran en el Jordán desbordado. El agua se detiene
+  río arriba, en Adán, y la nación pasa en seco frente a Jericó. Empieza la conquista.
 razon: El cuadro del estudio 3 fecha la entrada en 1473 a.e.c.; Josué 4:19 da el día 10 del primer mes, que desde el éxodo
   es nisán (estudio 3, párr. 8).
 fuentes:
 - si-3
 - it-canaan
 - josue-4
+- josue-3
+- it-jordan
+- it-adan
+- tnm-b4
 enlaces:
 - titulo: 'Perspicacia: «Canaán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
@@ -38,5 +49,10 @@ buscar: entrada en Canaán Josué
 orden_relato:
   serie: numeros
   orden: 203014
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen cuenta ahora cómo se cruzó: el Arca en el río crecido, el agua represada en Adán y el paso frente a
+    Jericó (Jos 3:14-17). La llegada a Guilgal tiene su propio suceso.'
+  fuente: josue-3
 consultado: '2026-09-29'
 estado: verificado

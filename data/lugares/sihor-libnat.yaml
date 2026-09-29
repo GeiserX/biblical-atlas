@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sihor-libnat
+nombre: Sihor-Libnat
+nombres:
+- nombre: Sihor-Libnat
+tipo: rio
+lat: 32.816667
+lon: 35.033333
+precision: incierto
+coord_fuente: openbible:ac6b338
+coord_url: https://www.openbible.info/geo/ancient/ac6b338/shihor-libnath
+coord_nota: Punto de OpenBible en la desembocadura del Cisón. Perspicacia recoge otra propuesta, el Nahr ez-Zerqa (Nahal Tanninim),
+  al sur de Dor.
+resumen: Parece ser un río del límite de Aser. Algunos lo relacionan con el Nahr ez-Zerqa, que desemboca unos 10 km al sur
+  de Dor. Eusebio y Jerónimo lo veían como dos lugares.
+razon: 'Perspicacia «Sihor-libnat»; Jos 19:26. OpenBible: solo el punto.'
+fuentes:
+- it-sihor-libnat
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Sihor-libnat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004033
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

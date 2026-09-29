@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cesa-el-mana
+titulo: Deja de caer el maná
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: nisán de 1473 a.e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: numeros
+  orden: 205012
+lugares:
+- guilgal
+personas: []
+pasajes:
+- Jos 5:12
+resumen: El día después de comer por primera vez los productos de Canaán, se acaba el maná que había alimentado a Israel durante
+  40 años. Desde entonces el pueblo vive de lo que da la tierra.
+razon: 'Jos 5:11, 12: el maná cesa al día siguiente de comer del país, que es el siguiente a la Pascua. Perspicacia «Maná»
+  dice que duró hasta entrar en Canaán, en 1473 a.e.c.'
+fuentes:
+- josue-5
+- it-mana
+- si-3
+enlaces:
+- titulo: Josué 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/5
+  tipo: biblia
+- titulo: 'Perspicacia: «Maná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002888
+  tipo: perspicacia
+buscar: maná cesa Canaán Josué
+consultado: '2026-09-29'
+estado: verificado

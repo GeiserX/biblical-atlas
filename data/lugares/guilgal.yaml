@@ -4,6 +4,9 @@ nombre: Guilgal
 nombres:
 - nombre: Guilgal
   nota: Perspicacia le da el sentido de «rodadura»; Jos 5:9 cuenta por qué se llamó así.
+- nombre: Guibeat-Haaralot
+  nota: Colina de los prepucios (nota de Jos 5:3), donde Josué circuncidó al pueblo. Perspicacia dice que el sitio acabó conociéndose
+    como Guilgal.
 tipo: ciudad
 lat: 31.881883
 lon: 35.459969
@@ -25,12 +28,26 @@ fuentes:
 - josue-4
 - miqueas-6
 - w03-que-espera-jehova
+- tnm-b4
+- josue-5
+- it-guibeat-haaralot
+- josue-9
+- josue-10
+- josue-14
 enlaces:
 - titulo: 'Perspicacia: «Guilgal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
   tipo: perspicacia
 - titulo: Miqueas 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/6
+- titulo: Josué 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/4
+  tipo: biblia
+- titulo: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  tipo: biblia
+- titulo: Josué 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

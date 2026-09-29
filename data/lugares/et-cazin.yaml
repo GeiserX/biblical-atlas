@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: et-cazin
+nombre: Et-Cazín
+nombres:
+- nombre: Et-Cazín
+- nombre: Et-qazín
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.74647
+lon: 35.33921
+precision: incierto
+coord_fuente: openbible:a2ca712
+coord_url: https://www.openbible.info/geo/ancient/a2ca712/eth-kazin
+coord_nota: Punto de OpenBible en Kafr Kanna, que algunos proponen.
+resumen: Lugar del límite oriental de Zabulón. No se sabe dónde estaba; algunos creen que es Kafr Kanna, unos 20 km al oeste
+  del mar de Galilea.
+razon: 'Perspicacia «Et-qazín»; Jos 19:13. OpenBible: solo el punto.'
+fuentes:
+- it-et-qazin
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Et-qazín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001439
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

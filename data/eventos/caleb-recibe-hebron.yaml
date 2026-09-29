@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: caleb-recibe-hebron
+titulo: Caleb pide Hebrón y Josué se la da
+fecha:
+  desde: -1466
+  hasta: -1466
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1467 a.e.c.
+orden_relato:
+  serie: josue
+  orden: 14006
+lugares:
+- guilgal
+- hebron
+personas:
+- caleb-hijo-de-jefune
+- josue-hijo-de-nun
+presentes:
+- caleb-hijo-de-jefune
+- josue-hijo-de-nun
+pasajes:
+- Jos 14:6-15
+- Jos 15:13
+resumen: En Guilgal, Caleb, con 85 años y tan fuerte como a los 40, recuerda lo que Moisés le juró y pide la región montañosa
+  de los anaquim. Josué lo bendice y le da Hebrón, antes Quiryat-Arbá.
+razon: 'El estudio 3 pone Jos 14:7, 10-15 en 1467 a.e.c.; Perspicacia «Caleb», núm. 2: seis años después de entrar en Canaán,
+  en 1473, tenía 85 años.'
+fuentes:
+- josue-14
+- si-3
+- it-caleb
+- it-hebron
+- it-anaquim
+- it-guilgal
+enlaces:
+- titulo: Josué 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
+  tipo: biblia
+- titulo: 'Perspicacia: «Caleb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000863
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

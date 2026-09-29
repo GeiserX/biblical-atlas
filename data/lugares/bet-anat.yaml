@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-anat
+nombre: Bet-Anat
+nombres:
+- nombre: Bet-Anat
+tipo: ciudad
+lat: 33.20028
+lon: 35.43306
+precision: incierto
+coord_fuente: openbible:ae6cef8
+coord_url: https://www.openbible.info/geo/ancient/ae6cef8/beth-anath
+coord_nota: Punto de OpenBible en Safed el-Battikh.
+resumen: Ciudad fortificada de Neftalí. No echaron a sus cananeos, sino que los pusieron a trabajos forzados. Quizá es Safed
+  el-Battikh, unos 24 km al ESE de Tiro.
+razon: 'Perspicacia «Bet-anat»; Jos 19:38; Jue 1:33. OpenBible: solo el punto.'
+fuentes:
+- it-bet-anat
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Bet-anat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000668
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

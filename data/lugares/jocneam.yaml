@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jocneam
+nombre: Jocneam
+nombres:
+- nombre: Jocneam
+- nombre: Joqneam
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.664099
+lon: 35.108266
+precision: punto
+coord_fuente: openbible:a5c92e1
+coord_url: https://www.openbible.info/geo/ancient/a5c92e1/jokneam
+resumen: Ciudad al pie del Carmelo, sobre el valle de Jezreel. Josué venció a su rey; fue de Zabulón y después de los levitas
+  meraritas.
+razon: 'Perspicacia «Joqneam»: Tell Qeimun (Tel Yoqneʽam), unos 11 km al NO de Meguidó; Jos 12:22. OpenBible: solo el punto.'
+fuentes:
+- it-joqneam
+- openbible-geo
+- josue-12
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Joqneam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002498
+  tipo: perspicacia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: Punto de OpenBible en Tell Qeimun (Tel Yoqneʽam).

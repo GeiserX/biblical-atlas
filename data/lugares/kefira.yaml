@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: kefira
+nombre: Kefirá
+nombres:
+- nombre: Kefirá
+tipo: ciudad
+lat: 31.8309
+lon: 35.106769
+precision: punto
+coord_fuente: openbible:a2e5054
+coord_url: https://www.openbible.info/geo/ancient/a2e5054/chephirah
+coord_nota: Khirbet Kefireh, el sitio que da Perspicacia.
+resumen: Ciudad hevea en lo alto de una colina, unos 7 km al OSO de Gabaón, a la que guardaba por el oeste. Entró en el pacto
+  de los gabaonitas con Josué y después fue de Benjamín.
+razon: 'Perspicacia «Kefirá»; Jos 9:17; 18:26. La identificación con Khirbet Kefireh no ofrece dudas, según Perspicacia. OpenBible:
+  solo el punto.'
+fuentes:
+- it-kefira
+- openbible-geo
+- josue-9
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Kefirá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000941
+  tipo: perspicacia
+- titulo: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  tipo: biblia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

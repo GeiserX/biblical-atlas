@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: saaraim
+nombre: Saaraim
+nombres:
+- nombre: Saaraim
+  nota: Significa «doble puerta» (Perspicacia).
+tipo: ciudad
+lat: 31.7355
+lon: 35.02757
+precision: incierto
+coord_fuente: openbible:a28da66
+coord_url: https://www.openbible.info/geo/ancient/a28da66/shaaraim-1
+coord_nota: Khirbet es-Sira, primera identificación de OpenBible; Perspicacia no da un sitio concreto.
+resumen: Ciudad de la Sefelá de Judá, cerca del valle de Elá y de Azecá. Hasta allí, y hasta Gat y Ecrón, cayeron los filisteos
+  que huían tras la muerte de Goliat.
+razon: 'Perspicacia «Saaraim», núm. 1; Jos 15:36; 1Sa 17:52. No es la Saaraim de Simeón. OpenBible: solo el punto.'
+fuentes:
+- it-saaraim
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Saaraim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003922
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

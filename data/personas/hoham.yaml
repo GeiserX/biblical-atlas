@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hoham
+nombre: Hoham
+nombres:
+- nombre: Hoham
+perspicacia: '1200002054'
+resumen: Rey de Hebrón. Se unió a Adoni-Zédec contra Gabaón por su paz con Israel; tras la derrota se escondió con los otros
+  cuatro reyes en la cueva de Maquedá, donde Josué los ejecutó.
+razon: Perspicacia «Hoham»; Jos 10:3-5, 16-27.
+fuentes:
+- it-hoham
+- josue-10
+enlaces:
+- titulo: 'Perspicacia: «Hoham»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002054
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-hoham
+  razon: Jos 10:3 lo llama rey de Hebrón.
+  estado: verificado
+- tipo: acompana
+  persona: adoni-zedec
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-hoham
+  razon: 'Jos 10:3-5: respondió a la llamada de Adoni-Zédec y se alió con él contra Gabaón.'
+  estado: verificado
+- tipo: murio_en
+  lugar: maqueda
+  deducido: false
+  fuentes:
+  - josue-10
+  - it-hoham
+  - it-maqueda
+  razon: 'Jos 10:16-27: sacado de la cueva de Maquedá, junto al campamento, Josué lo mató y lo echó en ella.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

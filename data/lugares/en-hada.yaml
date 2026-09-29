@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-hada
+nombre: En-Hadá
+nombres:
+- nombre: En-Hadá
+tipo: ciudad
+lat: 32.6804
+lon: 35.4863
+precision: punto
+coord_fuente: openbible:a009e7d
+coord_url: https://www.openbible.info/geo/ancient/a009e7d/en-haddah
+coord_nota: Punto de OpenBible en el-Hadetheh (Tel ʽEn Hadda).
+resumen: Ciudad de Isacar. Se la suele asociar con el-Hadetheh, a 9 km del monte Tabor hacia el este.
+razon: 'Perspicacia «En-hadá»; Jos 19:21. OpenBible: solo el punto.'
+fuentes:
+- it-en-hada
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «En-hadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001367
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

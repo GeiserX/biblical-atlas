@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zif-del-negueb
+nombre: Zif
+nombres:
+- nombre: Zif
+tipo: ciudad
+lat: 30.99677
+lon: 34.98188
+precision: incierto
+coord_fuente: openbible:aab3ff0
+coord_url: https://www.openbible.info/geo/ancient/aab3ff0/ziph-2
+coord_nota: Khirbet ez-Zeifeh, primera identificación de OpenBible; Perspicacia no la identifica.
+resumen: Ciudad del sur de Judá, sin identificar. No es la Zif de la montaña, al sureste de Hebrón, donde se escondió David.
+razon: 'Perspicacia «Zif», núm. 2; Jos 15:24. OpenBible: solo el punto.'
+fuentes:
+- it-zif
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Zif»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004742
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

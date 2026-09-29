@@ -30,6 +30,7 @@ fuentes:
 - genesis-36
 - romanos-9
 - deuteronomio-2
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Esaú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001417
@@ -46,6 +47,7 @@ relaciones:
   - it-esau
   - genesis-25
   - romanos-9
+  - josue-24
   razon: 'Perspicacia «Esaú», párr. 2: primogénito de Isaac y Rebeca (Gé 25:25, 26).'
   estado: verificado
 - tipo: pariente
@@ -68,6 +70,7 @@ relaciones:
   - genesis-32
   - genesis-33
   - romanos-9
+  - josue-24
   razon: 'Perspicacia «Esaú», párr. 2: hermano mellizo de Jacob (Gé 25:24-26).'
   estado: verificado
 - tipo: pariente
@@ -109,6 +112,7 @@ relaciones:
   - it-edom
   - genesis-36
   - deuteronomio-2
+  - josue-24
   razon: 'Gé 32:3: cuando Jacob volvió, Esaú vivía en Seír, en Edom. Perspicacia «Seír», núm. 2.'
   estado: verificado
 - tipo: vivio_en

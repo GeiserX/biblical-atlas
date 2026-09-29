@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: belen-de-zabulon
+nombre: Belén
+nombres:
+- nombre: Belén
+  nota: Belén de Zabulón, para distinguirla de la de Judá.
+tipo: ciudad
+lat: 32.734812
+lon: 35.185563
+precision: punto
+coord_fuente: openbible:a308715
+coord_url: https://www.openbible.info/geo/ancient/a308715/bethlehem-2
+coord_nota: Punto de OpenBible en Beit Lahm (Bet Lehem Ha-Gelilit).
+resumen: Ciudad de Zabulón unos 11 km al ONO de Nazaret. Probablemente era la ciudad del juez Ibzán, que fue enterrado allí.
+  No es la Belén de Judá.
+razon: 'Perspicacia «Belén», núm. 2; Jos 19:15; Jue 12:8-10. OpenBible: solo el punto.'
+fuentes:
+- it-belen
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Belén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000694
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

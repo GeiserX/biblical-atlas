@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zanoah
+nombre: Zanóah
+nombres:
+- nombre: Zanóah
+tipo: ciudad
+lat: 31.71944
+lon: 35.00129
+precision: punto
+coord_fuente: openbible:a28f432
+coord_url: https://www.openbible.info/geo/ancient/a28f432/zanoah-1
+resumen: Ciudad de la Sefelá de Judá, en Khirbet Zanuʽ, unos 5 km al sureste de Bet-Semes. Se volvió a poblar tras el destierro,
+  y quizá sus vecinos repararon la puerta del Valle de Jerusalén.
+razon: 'Perspicacia «Zanóah», núm. 1; Jos 15:34; Ne 3:13; 11:30. No es la Zanóah de la montaña. OpenBible: solo el punto.'
+fuentes:
+- it-zanoah
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Zanóah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004660
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

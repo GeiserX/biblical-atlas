@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: saalbim
+nombre: Saalbim
+nombres:
+- nombre: Saalbim
+- nombre: Saalabín
+  nota: Así la llama Jos 19:42; por lo general se considera la misma ciudad.
+- nombre: Saalbón
+  nota: Quizá otro nombre de la ciudad (2Sa 23:32), según Perspicacia.
+tipo: ciudad
+lat: 31.86981
+lon: 34.98714
+precision: punto
+coord_fuente: openbible:ae89331
+coord_url: https://www.openbible.info/geo/ancient/ae89331/shaalbim
+coord_nota: Punto de OpenBible en Selbit (Tel Shaʽalvim).
+resumen: Ciudad de la frontera de Dan cuyos amorreos puso a trabajar la casa de José. Después abastecía la mesa de Salomón.
+  Estaba unos 25 km al ONO de Jerusalén.
+razon: 'Perspicacia «Saalbim» y «Saalabín»; Jos 19:42; Jue 1:35; 1Re 4:9. OpenBible: solo el punto.'
+fuentes:
+- it-saalbim
+- it-saalabin
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Saalbim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003918
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

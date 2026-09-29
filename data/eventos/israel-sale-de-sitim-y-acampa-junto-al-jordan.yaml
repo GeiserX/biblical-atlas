@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-sale-de-sitim-y-acampa-junto-al-jordan
+titulo: Israel sale de Sitim y acampa junto al Jordán
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 203001
+lugares:
+- rio-jordan
+- sitim
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 3:1-13
+resumen: Josué lleva al pueblo de Sitim a la orilla del Jordán. A los tres días, los funcionarios mandan seguir el Arca a
+  unos 890 m. Jehová promete engrandecer a Josué, y este anuncia que el río se detendrá.
+razon: El estudio 3 y el mapa B4 ponen la entrada en Canaán en 1473 a.e.c. Jos 3:2, 5 y 4:19 sitúan esta espera pocos días
+  antes del 10 de nisán de ese año.
+fuentes:
+- josue-3
+- si-3
+- tnm-b4
+- it-sitim
+- it-jordan
+enlaces:
+- titulo: Josué 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

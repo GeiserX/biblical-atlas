@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cabon
+nombre: Cabón
+nombres:
+- nombre: Cabón
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Khirbet Hibra
+  geometria:
+    tipo: punto
+    lat: 31.554151
+    lon: 34.896797
+  estado: alternativa
+  fuentes:
+  - it-cabon
+  - openbible-geo
+  razon: Por la lectura «Kjabrá» de la Septuaginta, algunos la ponen aquí, unos 5 km al estesureste de Lakís.
+  coord_fuente: openbible:a7ed00e
+  coord_url: https://www.openbible.info/geo/ancient/a7ed00e/cabbon
+resumen: Ciudad de Judá en la Sefelá. Por la Septuaginta algunos la ponen en Khirbet Hibra, cerca de Lakís; otros, por el
+  nombre hebreo, en Al-Qubeiba, al suroeste de Beit Jibrin.
+razon: Perspicacia «Cabón»; Jos 15:40. Perspicacia no elige, y OpenBible no recoge Al-Qubeiba.
+fuentes:
+- it-cabon
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Cabón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000850
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado
