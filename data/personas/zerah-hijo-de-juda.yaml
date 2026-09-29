@@ -7,9 +7,10 @@ perspicacia: 1200004704#3
 desambiguacion: El hijo de Judá y Tamar; no el jeque edomita, el hijo de Simeón, el levita ni el etíope.
 resumen: Hijo de Judá y de Tamar, gemelo de Pérez. Sacó primero la mano y la partera le ató un hilo escarlata, pero nació
   después. Bajó a Egipto con Jacob.
-razon: Perspicacia «Zérah», núm. 3, que también lo cuenta entre los que bajaron a Egipto; Gé 38:27-30.
+razon: Perspicacia «Zérah», núm. 3, que también lo cuenta entre los que bajaron a Egipto; Gé 38:27-30; Mt 1:3.
 fuentes:
 - it-zerah
+- mateo-1
 - genesis-38
 - genesis-46
 enlaces:
@@ -25,19 +26,21 @@ relaciones:
   relacion: padre
   deducido: false
   fuentes:
+  - mateo-1
   - genesis-38
   - genesis-46
   - it-zerah
-  razon: Gé 38:18, 26-30.
+  razon: Mt 1:3; Gé 38:18, 26-30.
   estado: verificado
 - tipo: pariente
   persona: tamar-nuera-de-juda
   relacion: madre
   deducido: false
   fuentes:
+  - mateo-1
   - genesis-38
   - it-zerah
-  razon: Gé 38:27-30.
+  razon: Mt 1:3; Gé 38:27-30.
   estado: verificado
 - tipo: vivio_en
   lugar: egipto

@@ -30,5 +30,15 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
   tipo: biblia
 buscar: Poncio Pilato
-consultado: '2026-09-28'
+perspicacia: '1200003485'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: cesarea
+  deducido: true
+  fuentes:
+  - mateo-27
+  - it-pilato
+  razon: La nota de Mt 27:27 dice que residía habitualmente en Cesarea y subía a Jerusalén en las fiestas.
+  estado: verificado

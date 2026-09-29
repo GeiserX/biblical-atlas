@@ -15,6 +15,7 @@ fuentes:
 no_confundir_con:
 - pedro
 - simon-el-mago
+- simon-hijo-de-jose
 relaciones:
 - tipo: vivio_en
   lugar: jope
@@ -31,5 +32,5 @@ enlaces:
 - titulo: Hechos 10 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/10
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

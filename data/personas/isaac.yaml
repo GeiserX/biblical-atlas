@@ -20,6 +20,7 @@ fuentes:
 - si-3
 - genesis-21
 - genesis-35
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Isaac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002203
@@ -35,6 +36,7 @@ relaciones:
   fuentes:
   - it-isaac
   - genesis-21
+  - mateo-1
   razon: 'Perspicacia «Isaac», párr. 2: único hijo de Abrahán y su esposa Sara (Gé 21:2, 3).'
   estado: verificado
 - tipo: pariente
@@ -63,5 +65,6 @@ relaciones:
   - genesis-35
   razon: 'Perspicacia «Isaac», párr. 21: cuando Jacob volvió, Isaac vivía en Hebrón (Gé 35:27).'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200002203'
+consultado: '2026-09-29'
 estado: verificado

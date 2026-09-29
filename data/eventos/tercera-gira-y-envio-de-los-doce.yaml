@@ -21,7 +21,7 @@ personas:
 - santiago-hijo-de-zebedeo
 - juan-apostol
 - felipe-apostol
-- natanael
+- bartolome
 - mateo
 - santiago-hijo-de-alfeo
 - tomas
@@ -44,5 +44,10 @@ fuentes:
 - it-judas
 - jy-cap-49
 - jy-cap-50
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: Mt 10:3 nombra a Bartolomé, que ahora tiene ficha propia; natanael sale de personas. Van en dos fichas con mismo_que
+    pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

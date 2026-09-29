@@ -20,6 +20,7 @@ fuentes:
 - 2-reyes-21
 - 2-cronicas-33
 - tnm-a6-b
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «Amón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000244
@@ -35,6 +36,7 @@ relaciones:
   fuentes:
   - it-amon
   - 2-reyes-21
+  - mateo-1
   razon: Hijo de Manasés (2Re 21:18-19).
   estado: verificado
 - tipo: sucede_a
@@ -49,5 +51,6 @@ historial:
 - fecha: '2026-09-28'
   cambio: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
   fuente: tnm-a6-b
-consultado: '2026-09-28'
+perspicacia: 1200000244#2
+consultado: '2026-09-29'
 estado: verificado

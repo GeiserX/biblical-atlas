@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-jehoiada
+nombre: Zacarías
+nombres:
+- nombre: Zacarías
+perspicacia: 1200004681#12
+desambiguacion: Sacerdote hijo del sumo sacerdote Jehoiadá, muerto a pedradas en el templo; no es el profeta hijo de Berekías,
+  ni el padre de Juan el Bautista, ni el rey de Israel.
+no_confundir_con:
+- zacarias-profeta
+- zacarias-padre-de-juan
+- zacarias-de-israel
+fecha:
+  desde: -897
+  hasta: -857
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: '898-858 a.e.c. (tiempo narrativo: en el reinado de Jehoás de Judá, después de morir Jehoiadá)'
+resumen: Hijo de Jehoiadá. Cuando Jehoás de Judá dejó la adoración verdadera, reprendió al pueblo y lo apedrearon en el patio
+  del templo. Jesús lo pone como el último justo asesinado que registran las Escrituras Hebreas.
+razon: Perspicacia «Zacarías», núm. 12, y «Baraquías», que lo identifican con el de 2Cr 24:20-22; nota de estudio de Mt 23:35.
+  La fecha es el reinado de Jehoás según Perspicacia «Jehoás».
+fuentes:
+- it-zacarias
+- it-baraquias
+- it-jehoas
+- mateo-23
+enlaces:
+- titulo: 'Perspicacia: «Zacarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Baraquías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000558
+  tipo: perspicacia
+- titulo: Mateo 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/23
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: baraquias
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-23
+  - it-baraquias
+  razon: Mt 23:35 lo llama hijo de Baraquías. Perspicacia recoge que pudo ser otro nombre de Jehoiadá; la nota de Mt 23:35,
+    que algunos lo tienen por su abuelo o antepasado.
+  estado: verificado
+- tipo: murio_en
+  lugar: monte-moria
+  deducido: false
+  fuentes:
+  - mateo-23
+  - it-baraquias
+  razon: 'Mt 23:35: lo mataron entre el santuario y el altar, es decir, en el patio interior del templo, según su nota de
+    estudio.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -11,6 +11,8 @@ fuentes:
 - it-andres
 - juan-1
 - marcos-1
+- mateo-4
+- mateo-10
 relaciones:
 - tipo: pariente
   persona: pedro
@@ -19,6 +21,7 @@ relaciones:
   fuentes:
   - juan-1
   - it-andres
+  - mateo-10
   razon: Jn 1:40 lo llama hermano de Simón Pedro.
   estado: verificado
 - tipo: nacio_en
@@ -39,7 +42,7 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: juan-el-bautista
-  relacion: discípulo de
+  relacion: maestro
   fecha:
     desde: 29
     hasta: 29
@@ -56,12 +59,21 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: jesus
-  relacion: apóstol de
+  relacion: maestro
   deducido: false
   fuentes:
   - mateo-10
   - it-andres
+  - mateo-4
   razon: Mt 10:2 lo nombra entre los doce apóstoles.
+  estado: verificado
+- tipo: pariente
+  persona: jonas-padre-de-pedro
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-jonas
+  razon: Perspicacia «Jonás», núm. 2, lo da como padre de los dos hermanos; Mt 16:17 solo nombra a Simón.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Andrés»'
@@ -70,5 +82,11 @@ enlaces:
 - titulo: Juan 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200000273'
+historial:
+- fecha: '2026-09-29'
+  cambio: Las relaciones con Jesús («apóstol de») y con Juan el Bautista («discípulo de») se leían al revés con la regla «Y
+    es el R de X»; las dos pasan a «maestro».
+  fuente: mateo-10
+consultado: '2026-09-29'
 estado: verificado

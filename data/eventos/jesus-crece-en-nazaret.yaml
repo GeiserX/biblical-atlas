@@ -20,6 +20,8 @@ personas:
 - jose-esposo-de-maria
 - santiago-hermano-de-jesus
 - judas-hermano-de-jesus
+- jose-hijo-de-jose
+- simon-hijo-de-jose
 pasajes:
 - Lu 2:51, 52
 - Mt 13:55, 56
@@ -35,5 +37,6 @@ fuentes:
 - marcos-6
 - it-jose
 - jy-cap-9
-consultado: '2026-09-28'
+- it-simon
+consultado: '2026-09-29'
 estado: verificado

@@ -19,6 +19,7 @@ fuentes:
 - 2-samuel-5
 - 1-reyes-2
 - tnm-b7
+- mateo-1
 enlaces:
 - titulo: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -56,7 +57,18 @@ relaciones:
   deducido: false
   fuentes:
   - rut-4
+  - mateo-1
   razon: Rut 4:17 y 22.
   estado: verificado
+- tipo: pariente
+  persona: bat-seba
+  relacion: esposa
+  deducido: true
+  fuentes:
+  - mateo-1
+  - it-bat-seba
+  razon: 'Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.'
+  estado: verificado
+perspicacia: '1200001130'
 consultado: '2026-09-29'
 estado: verificado

@@ -317,6 +317,13 @@ def clave_fecha(o, campo="fecha"):
     return (d if d is not None else 10**6, h if h is not None else 10**6)
 
 
+def orden_en_serie(o):
+    """Con la misma fecha, los sucesos de una serie van en el orden del relato y no por id."""
+    r = o.get("orden_relato") or {}
+    n = r.get("orden")
+    return (r.get("serie") or "", n if isinstance(n, (int, float)) else 10**9)
+
+
 def componer(datos, hoy):
     cartas = sorted(datos["cartas"], key=lambda c: clave_fecha(c) + (
         ORDEN_LIBROS.index(c["id"]) if c["id"] in ORDEN_LIBROS else 99, c["id"]))
@@ -330,7 +337,7 @@ def componer(datos, hoy):
         "personas": {o["id"]: limpio(o) for o in sorted(datos["personas"], key=lambda o: o["id"])},
         "viajes": [limpio(o) for o in sorted(datos["viajes"], key=lambda o: clave_fecha(o) + (o["id"],))],
         "cartas": [limpio(o) for o in cartas],
-        "eventos": [limpio(o) for o in sorted(datos["eventos"], key=lambda o: clave_fecha(o) + (o["id"],))],
+        "eventos": [limpio(o) for o in sorted(datos["eventos"], key=lambda o: clave_fecha(o) + orden_en_serie(o) + (o["id"],))],
         "periodos": [limpio(o) for o in sorted(datos["periodos"], key=lambda o: clave_fecha(o) + (o["id"],))],
         "hallazgos": [limpio(o) for o in sorted(datos["hallazgos"],
                                                 key=lambda o: clave_fecha(o, "fecha_objeto") + (o["id"],))],
@@ -629,7 +636,8 @@ def registros(salida, datos):
     for o in salida["eventos"]:
         donde = ", ".join(L[i]["nombre"] for i in o.get("lugares") or [] if i in L)
         f = fich[("eventos", o["id"])]
-        filas.append(_fila(f"**{o['titulo']}** ({donde}; {'; '.join(o.get('pasajes') or [])}), {_texto_fecha(o.get('fecha'))}",
+        entre = "; ".join(x for x in [donde, "; ".join(o.get("pasajes") or [])] if x)
+        filas.append(_fila(f"**{o['titulo']}** ({entre}), {_texto_fecha(o.get('fecha'))}",
                            f, o["fuentes"], F, o.get("consultado"), o["razon"], o["estado"]))
         alts += _alternativas(o, f, F)
     _seccion(out, "Eventos", filas)
