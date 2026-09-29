@@ -21,7 +21,7 @@ const MAX_SECTOR = 12;   // G-07: como mucho unos doce vecinos por sector a la v
 const NODO_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'evento', periodo: 'periodo', hallazgo: 'hallazgo', carta: 'texto', viaje: 'evento', parada: 'evento', pasaje: 'texto', libro: 'texto', recorrido: 'evento' };
 /** Qué es cada tipo de nodo, para la leyenda del grafo. Cada tipo tiene su forma además de su color (be-u66.6): en el
     tema claro persona y suceso son dos verdes. */
-const COLOR_TEXTO = { persona: 'persona', lugar: 'lugar', evento: 'suceso o viaje', periodo: 'periodo', hallazgo: 'hallazgo', texto: 'carta o capítulo' };
+const COLOR_TEXTO = { persona: 'persona', lugar: 'lugar', evento: 'rombo: suceso, parada o viaje', periodo: 'periodo', hallazgo: 'hallazgo', texto: 'carta o capítulo' };
 /** El tipo en palabras, para quien no ve la forma: va en el nombre accesible de cada nodo. */
 const PALABRA_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'suceso', viaje: 'viaje', parada: 'parada', periodo: 'periodo', hallazgo: 'hallazgo', carta: 'carta', pasaje: 'capítulo', libro: 'libro', recorrido: 'recorrido' };
 const tipoDe = (sel) => sel.slice(0, sel.indexOf(':'));
@@ -35,7 +35,140 @@ const reducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 /** Cómo llegó un clic: «teclado» (Intro o espacio: sin puntero y detail 0), «raton», o «toque» (dedo o lápiz). Si el
     navegador no dice el puntero en el clic, vale el del último pointerdown en el grafo. */
 const comoPulsa = (e) => (e.detail === 0 && !e.pointerType ? 'teclado' : (e.pointerType || G.puntero || 'mouse') === 'mouse' ? 'raton' : 'toque');
-const nombreDe = (sel) => BE.nombreDeSel(sel);
+const nombreDe = (sel) => (sel.startsWith('parada:') && stopName(sel.slice(7))) || BE.nombreDeSel(sel);
+
+// ---------------------------------------------------------------------------
+// Events as nodes. An event (or a stop of a journey) lasts days: it is shown by its distance to the cursor, not by
+// the switch «Solo lo vigente», which governs what lasts (lived in, reigns, a journey under way).
+// ---------------------------------------------------------------------------
+const MOMENT_TYPES = new Set(['evento', 'parada']);
+const isEvent = (sel) => MOMENT_TYPES.has(tipoDe(sel));
+/** How many events happening at the cursor go on the canvas, besides the nearest before and the nearest after: one,
+    so entering or leaving an event changes one node. */
+const NOW_MAX = 1;
+/** At most this many near events on the canvas: what fits beside the other sectors of Pablo or Jerusalén at 1440 x 900.
+    A sector whose far events are one or two shows them too, dimmed, if the circle has room (FAR_SHOWN). */
+const EVENTS_MAX = 4;
+const FAR_SHOWN = 2;
+/** Besides those three, the events within this many arrow steps of the cursor (a step is a fortieth of the span of the
+    timeline, base.js): one step to either side, at any scale, never takes away the event that was nearest. */
+const STEPS_NEAR = 2;
+let EVENT_BY_ID = null;
+const eventById = (id) => (EVENT_BY_ID ??= new Map((BE.D.eventos || []).map((e) => [e.id, e]))).get(id);
+const stopByKey = (key) => (BE.P || []).find((x) => x.key === key);
+/** The window [a, b) of an event or a stop, as the timeline places it; null if it has no date. */
+function eventWindow(sel) {
+  if (sel.startsWith('evento:')) { const e = eventById(sel.slice(7)); return (e && BE.ventanaEvento?.(e)) || null; }
+  const x = stopByKey(sel.slice(7));
+  return x ? [x.a, Math.max(x.b, x.a + 0.05)] : null;
+}
+/** «del segundo viaje misional» for a journey whose name says it is one («Segundo viaje misional», «Viaje a Roma»);
+    null for the rest («Arresto y custodia»). */
+const journeyPhrase = (v) => (/^((primer|segundo|tercer|cuarto|quinto)\s+)?viaje\b/i.test(v?.nombre || '') ? `del ${v.nombre[0].toLowerCase()}${v.nombre.slice(1)}` : null);
+const traveller = (v) => BE.PERS[v.persona || 'pablo']?.nombre || '';
+/** A stop is named by what it is, never only by the place it hangs from: «Parada en Frigia del segundo viaje misional
+    de Pablo · Hch 16:6». Around its own place the place is the centre, so the name leaves it out («Parada del segundo
+    viaje misional de Pablo · Hch 16:6»). A journey whose name is not a journey's goes in brackets, and the traveller
+    only when that name does not already say him: «Parada de Pablo en Cesarea (Arresto y custodia) · Hch 23:33»,
+    «Parada en Damasco (De Damasco a Antioquía: los primeros años de Pablo) · Hch 9:19». */
+function stopName(key) {
+  const x = stopByKey(key);
+  if (!x?.viaje) return '';
+  const who = traveller(x.viaje), f = journeyPhrase(x.viaje), ref = x.p?.referencia ? ` · ${x.p.referencia}` : '';
+  const place = x.lugar?.id && centro() !== `lugar:${x.lugar.id}` ? BE.L[x.lugar.id]?.nombre || x.lugar.nombre || '' : '';
+  const at = place ? ` en ${place}` : '';
+  if (f) return `Parada${at} ${f}${who ? ` de ${who}` : ''}${ref}`;
+  const named = who && x.viaje.nombre.includes(who);
+  return `Parada${who && !named ? ` de ${who}` : ''}${at} (${x.viaje.nombre})${ref}`;
+}
+/** The word of the line from a place to a stop: «parada del segundo viaje misional», or «parada de Pablo». */
+const stopWord = (v) => { const f = journeyPhrase(v), who = traveller(v); return f ? `parada ${f}` : `parada${who ? ` de ${who}` : ''}`; };
+/** The verb of each role of a person in an event: the words of data/vocabulary.yaml (event_roles). site/data.json does
+    not carry them yet; a verb that the data gives in the role (roles[id].verb) wins over this table. */
+const ROLE_VERB = { born: 'nació', died: 'murió', wrote: 'escribió', spoke: 'habló', raised: 'volvió a la vida' };
+/** A person of an event with no role. `presentes` says who is placed at the event's first place, not who takes part:
+    the data cannot tell one only named (Augusto at the birth of Jesús) from one who acts where the text names no
+    place (Noé in the Flood), so the word claims neither presence nor absence. */
+const IN_EVENT = 'en este suceso';
+const roleVerb = (e, id) => { const r = e?.roles?.[id]; return (r && (r.verb || ROLE_VERB[r.role])) || ''; };
+/** What a person does in an event, in a word: the verb of the role the data gives, or «en este suceso». */
+const roleWord = (e, id) => roleVerb(e, id) || IN_EVENT;
+/** Whether an event places the person at its first place (docs/investigacion/README.md, `present`). */
+const placedBy = (e, id) => !e?.presentes || e.presentes.includes(id);
+/** «3 días», «2 semanas», «5 meses», «4 años», «unos 3 siglos»: a distance in years, in words. */
+function spanWords(d) {
+  const days = d * 365.25;
+  if (days < 1) return 'menos de un día';
+  if (days < 1.5) return '1 día';
+  if (days < 14) return `${Math.round(days)} días`;
+  if (days < 61) { const w = Math.round(days / 7); return `${w} semanas`; }
+  if (d < 1) { const m = Math.round(d * 12); return m >= 12 ? '1 año' : `${m} meses`; }
+  if (d < 100) { const y = Math.round(d); return `${y} ${y === 1 ? 'año' : 'años'}`; }
+  const s = Math.round(d / 100);
+  return s === 1 ? 'un siglo' : `unos ${s} siglos`;
+}
+/** When an event is against the cursor, in words: «ocurre ahora», «3 meses antes», «2 años después». */
+function whenWords(w, t) {
+  if (!w) return '';
+  if (t >= w[0] && t < w[1]) return 'ocurre ahora';
+  return t >= w[1] ? `${spanWords(t - w[1])} antes` : `${spanWords(w[0] - t)} después`;
+}
+/** The events that go on the canvas: the one happening at the cursor (the narrowest, up to NOW_MAX), the nearest that
+    ended before it and the nearest that starts after it, and then the closest of those within STEPS_NEAR arrow steps
+    of the cursor, up to EVENTS_MAX. The ties agree: of the events that end together, the narrowest now is the latest
+    to start, which is also the nearest before once they end; of those that start together, the nearest after is the
+    narrowest, which is the one that becomes the now. */
+function markNearest(events, t) {
+  for (const n of events) { n.near = false; n.nearRank = null; }
+  const dated = events.filter((n) => n.window);
+  const width = (n) => n.window[1] - n.window[0];
+  const dist = (n) => (n.estado === 'ahora' ? 0 : n.estado === 'pasado' ? t - n.window[1] : n.window[0] - t);
+  const now = dated.filter((n) => n.estado === 'ahora').sort((a, b) => width(a) - width(b) || a.window[0] - b.window[0]).slice(0, NOW_MAX);
+  const before = dated.filter((n) => n.estado === 'pasado').sort((a, b) => b.window[1] - a.window[1] || b.window[0] - a.window[0])[0];
+  const after = dated.filter((n) => n.estado === 'futuro').sort((a, b) => a.window[0] - b.window[0] || a.window[1] - b.window[1])[0];
+  const near = [...now, before, after].filter(Boolean);
+  const v = BE.E?.vista, band = v ? (STEPS_NEAR * (v[1] - v[0])) / 40 : 0;
+  const close = dated.filter((n) => !near.includes(n) && dist(n) <= band).sort((a, b) => dist(a) - dist(b) || width(a) - width(b) || a.window[0] - b.window[0]);
+  // nearRank: 0 the event happening now, 1 the nearest before and after, 2 the others within the band.
+  for (const n of now) n.nearRank = 0;
+  for (const n of [before, after]) if (n) n.nearRank = 1;
+  for (const n of [...near, ...close.slice(0, Math.max(0, EVENTS_MAX - near.length))]) { n.near = true; n.nearRank ??= 2; }
+  for (const n of events) if (!n.window) { n.near = true; n.nearRank = 2; }   // an event with no date has no distance: it always shows
+}
+/** The event a person's edge to a place comes from: persona.js names it by its title and cites its passages. */
+let EVENT_BY_TITLE = null;
+function eventOfEdge(a) {
+  if (!EVENT_BY_TITLE) { EVENT_BY_TITLE = new Map(); for (const e of BE.D.eventos || []) { if (!EVENT_BY_TITLE.has(e.titulo)) EVENT_BY_TITLE.set(e.titulo, []); EVENT_BY_TITLE.get(e.titulo).push(e); } }
+  const es = EVENT_BY_TITLE.get(a.verbo) || [];
+  return es.find((e) => (e.pasajes || []).join('; ') === a.ref) || (es.length === 1 ? es[0] : null);
+}
+/** The word a line between a person and a place shows on the canvas when it comes from an event or a stop, and the
+    window of that event or stop: the event's title is its verb in the card, and the canvas says what it means
+    («estuvo aquí», «presente», «murió», «pasa por aquí») and when it is against the cursor. Only people the event
+    places there have this line (persona.js), so «presente» is what `presentes` says. */
+function placeLine(a, fromPerson, personId) {
+  if (a.origen === 'parada') return { word: a.verbo, eventWindow: a.tr || null };
+  if (a.origen !== 'evento') return null;
+  const e = eventOfEdge(a);
+  if (!e) return null;
+  const word = fromPerson ? 'estuvo aquí' : roleVerb(e, personId) || (placedBy(e, personId) ? 'presente' : IN_EVENT);
+  return { word, eventWindow: BE.ventanaEvento?.(e) || null };
+}
+/** The events of each series of the account (orden_relato), in their order. */
+let SERIES = null;
+function seriesOf(e) {
+  if (!SERIES) {
+    SERIES = new Map();
+    for (const x of BE.D.eventos || []) {
+      const o = x.orden_relato;
+      if (!o?.serie || typeof o.orden !== 'number') continue;
+      if (!SERIES.has(o.serie)) SERIES.set(o.serie, []);
+      SERIES.get(o.serie).push(x);
+    }
+    for (const xs of SERIES.values()) xs.sort((a, b) => a.orden_relato.orden - b.orden_relato.orden);
+  }
+  return SERIES.get(e?.orden_relato?.serie) || null;
+}
 /** En el móvil la vista ocupa el mapa: la hoja de la ficha se pliega para dejarla a la vista. */
 function plegarHoja() { if (estrecha() && !BE.E.hojaPlegada) document.getElementById('hoja-asa')?.click(); }
 const inicial = (sel) => { const n = nombreDe(sel) || '?'; return sel.startsWith('carta:') ? (BE.abrCarta?.(BE.D.cartas.find((c) => `carta:${c.id}` === sel)) || n[0]) : n[0]; };
@@ -82,7 +215,8 @@ estudio.trasEnlace = (fn) => {
 // G.ruta: selecciones en texto («persona:pablo», «lugar:creta»); la última es el centro. G.visto: la última selección
 // que el grafo ya siguió, para centrarse solo cuando la selección cambia fuera de él.
 // G.fija: a quién pertenece la tarjeta fijada (un nodo, «n3», o lo plegado de un sector, «gPersonas»); null si no hay.
-const G = { ruta: [], vigente: true, modo: null, ocultos: new Set(), clave: '', previos: new Set(), hover: null, visto: null, fija: null, restos: {} };
+// G.openFolds: los pliegues «N sucesos más» de la lista que están abiertos, por sector: repintar no los cierra.
+const G = { ruta: [], vigente: true, modo: null, ocultos: new Set(), clave: '', previos: new Set(), hover: null, visto: null, fija: null, restos: {}, openFolds: new Set(), span: null };
 const abierto = () => G.ruta.length > 0;
 const centro = () => G.ruta[G.ruta.length - 1];
 
@@ -106,7 +240,14 @@ const MEMO_SEL = new Map();
 function aristasSel(sel) {
   const s = BE.parseSel(sel);
   if (!s) return [];
-  if (s.tipo === 'persona') return BE.aristas(s.id);
+  // A person's events say in a word what he does there («habló», «murió», «en este suceso»), as they do from the event.
+  if (s.tipo === 'persona') {
+    return BE.aristas(s.id).map((a) => {
+      if (a.origen === 'evento' && a.sel?.startsWith('evento:') && eventById(a.sel.slice(7))) return { ...a, verbo: roleWord(eventById(a.sel.slice(7)), s.id) };
+      const line = a.sel?.startsWith('lugar:') ? placeLine(a, true, s.id) : null;
+      return line ? { ...a, ...line } : a;
+    });
+  }
   if (MEMO_SEL.has(sel)) return MEMO_SEL.get(sel);
   const out = [], vistas = new Set();
   const poner = (a) => {
@@ -117,7 +258,12 @@ function aristasSel(sel) {
     vistas.add(k);
     out.push({ grupo: grupoDe(a.sel), ...a, tr: a.tr !== undefined ? a.tr : BE.tramoAbierto(a.fecha) });
   };
-  for (const a of inversas().get(sel) || []) poner(a);
+  const ev = s.tipo === 'evento' ? eventById(s.id) : null;
+  for (const a of inversas().get(sel) || []) {
+    if (ev && a.origen === 'evento') poner({ ...a, verbo: roleWord(ev, a.sel.slice(8)) });
+    else if (s.tipo === 'lugar') { const line = placeLine(a, false, a.sel.slice(8)); poner(line ? { ...a, ...line } : a); }
+    else poner(a);
+  }
   const o = BE.objetoSel?.(s) || {};
   const refDe = (x) => x?.referencia || (x?.pasajes || []).filter(Boolean).join('; ') || '';
   const base = { fecha: o.fecha, ref: refDe(o), fuentes: o.fuentes, razon: o.razon, estado: o.estado, origen: s.tipo };
@@ -125,12 +271,23 @@ function aristasSel(sel) {
     const VERBO = { evento: 'ocurre aquí', periodo: 'abarca este lugar', parada: 'parada aquí', hallazgo: 'se halló aquí' };
     for (const h of BE.hechosDe?.(s.id) || []) {
       if (h.tipo === 'persona') continue;   // las personas ya llegan por sus propias aristas
-      const verbo = h.tipo === 'carta' ? h.titulo.split(', ').pop() : VERBO[h.tipo] || 'pasa aquí';
+      const parada = h.tipo === 'parada' && h.sel.startsWith('parada:') ? stopByKey(h.sel.slice(7)) : null;
+      const verbo = h.tipo === 'carta' ? h.titulo.split(', ').pop() : parada?.viaje ? stopWord(parada.viaje) : VERBO[h.tipo] || 'pasa aquí';
       poner({ sel: h.sel, verbo, tr: h.tr || null, fecha: h.fecha, ref: (h.pasajes || []).filter(Boolean).join('; '), fuentes: h.fuentes, estado: h.estado, deducido: !!h.deducido, origen: h.tipo });
     }
   } else if (s.tipo === 'evento') {
     const tr = BE.ventanaEvento?.(o) || undefined;
-    (o.lugares || []).forEach((l, i) => { if (BE.L[l]) poner({ ...base, tr, sel: `lugar:${l}`, verbo: i ? 'también aquí' : 'ocurre aquí' }); });
+    // The first place is where the main thing happens; the others the data lists without saying what they are to the
+    // event (a place it passes through, or one it only names), so their word claims no more than that.
+    (o.lugares || []).forEach((l, i) => { if (BE.L[l]) poner({ ...base, tr, sel: `lugar:${l}`, verbo: i ? 'se nombra' : 'ocurre aquí' }); });
+    // The event before and after it in its series of the account, when the data gives the order: each with its own
+    // passages and sources.
+    const xs = seriesOf(o), i = xs ? xs.indexOf(o) : -1;
+    if (i >= 0) {
+      for (const [x, verbo] of [[xs[i - 1], 'anterior en el relato'], [xs[i + 1], 'siguiente en el relato']]) {
+        if (x) poner({ sel: `evento:${x.id}`, verbo, tr: BE.ventanaEvento?.(x) || BE.tramoAbierto(x.fecha), fecha: x.fecha, ref: (x.pasajes || []).filter(Boolean).join('; '), fuentes: x.fuentes, razon: x.razon, estado: x.estado, origen: 'serie', incierto: x.fecha?.tipo === 'narrativa' || x.fecha?.tipo === 'derivada' });
+      }
+    }
   } else if (s.tipo === 'carta') {
     const os = BE.origenesCarta?.(o) || [], ds = BE.destinosCarta?.(o) || [];
     os.forEach((l) => poner({ ...base, sel: `lugar:${l}`, verbo: os.length > 1 ? 'quizá escrita aquí' : 'escrita aquí', deducido: os.length > 1 }));
@@ -191,7 +348,9 @@ function aquiAhora(id, t) {
 /** Nodos alrededor de una selección en el año t: las aristas agrupadas por vecino, con su estado en esa fecha. */
 function nodosDe(sel, t) {
   sel = aSel(sel);
-  const as = aristasSel(sel).map((a) => ({ ...a, estadoT: BE.vigencia(a.tr, t) }));
+  // With an event in the centre, its people, places and journey are facts of the event, not of a date: they always show.
+  const eventCentre = isEvent(sel);
+  const as = aristasSel(sel).map((a) => ({ ...a, estadoT: eventCentre && !isEvent(a.sel) ? 'siempre' : BE.vigencia(a.tr, t) }));
   const aqui = sel.startsWith('persona:') ? aquiAhora(sel.slice(8), t) : null;
   if (aqui) as.push(aqui);
   const por = new Map();
@@ -212,7 +371,22 @@ function nodosDe(sel, t) {
     n.principal = ahora || siempre || pasada || futura;
     n.estado = n.principal.estadoT;
     n.orden = n.principal.tr ? n.principal.tr[0] : -1e9;
+    // An event is placed by its own window on the timeline, the same from any centre, and says it in words.
+    if (isEvent(n.sel)) {
+      n.event = true;
+      n.window = eventWindow(n.sel) || n.principal.tr || null;
+      n.estado = n.window ? BE.vigencia(n.window, t) : 'siempre';
+      n.orden = n.window ? n.window[0] : -1e9;
+      n.when = whenWords(n.window, t);
+    } else if (n.principal.eventWindow) {
+      // A line between a person and a place that comes from an event says when that event is, as the event does: its
+      // date in the data may span a year, and «murió» weeks before it happens would state what has not happened.
+      n.when = whenWords(n.principal.eventWindow, t);
+    }
   }
+  markNearest(nodos.filter((n) => n.event), t);
+  // Around an event in the centre, the events before and after it in its series are facts of the centre: they show.
+  if (eventCentre) for (const n of nodos) if (n.event) n.near = true;
   return nodos.sort((a, b) => ORDEN_ESTADO[a.estado] - ORDEN_ESTADO[b.estado] || a.orden - b.orden);
 }
 function claseArista(a, estado) {
@@ -226,10 +400,12 @@ function claseArista(a, estado) {
 }
 /** La primera cita de una arista, corta («Hch 8:3»). */
 const refCorta = (a) => BE.citas(a.ref || '')[0]?.texto || (a.ref || '').split(';')[0];
+/** Lo que dice un nodo en texto, para su nombre accesible y las filas de «+N»: lo mismo que se ve en el lienzo (la
+    palabra de la línea y cuándo es frente al cursor) y la referencia. */
 function metaNodo(n) {
   const a = n.principal;
-  const cuando = n.estado === 'pasado' ? 'antes' : n.estado === 'futuro' ? 'aún no' : '';
-  return [cuando, a.verbo, refCorta(a)].filter(Boolean).join(' · ');
+  const cuando = n.when || (n.estado === 'pasado' ? 'antes' : n.estado === 'futuro' ? 'aún no' : '');
+  return [a.word || a.verbo, cuando, refCorta(a)].filter(Boolean).join(' · ');
 }
 
 /** Una arista con fuentes pero sin pasaje que citar lo dice: la regla pide referencia en cada arista y el pasaje llegará
@@ -239,15 +415,22 @@ const sinPasaje = (a) => (BE.citas(a.ref || '').length ? '' : '<span class="be-c
     detrás de la razón, las citas y las fuentes de cada arista. Fijada enseña dos aristas; la de paso, cuatro. */
 function htmlTarjeta(n, acciones = '') {
   const max = acciones ? 2 : 4;
-  const filas = n.aristas.slice(0, max).map((a) => `<div class="tarjeta-arista">
-    <div class="tarjeta-verbo"><b>${esc(a.verbo)}</b>${a.deducido ? ' <span class="etiqueta-deducido be-chip">deducido</span>' : ''}${a.incierto ? ' <span class="etiqueta-incierto be-chip">fecha o lugar inciertos</span>' : ''}</div>
-    <div class="fila-chips"><span class="be-chrono ${a.tr ? 'be-chrono--tnm' : 'be-chrono--approx'}">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${BE.chipsCitas(a.ref || '')}${sinPasaje(a)}</div>
+  // Un suceso dice, junto a su fecha con su precisión, cuándo es frente al cursor («3 meses antes»).
+  const filas = n.aristas.slice(0, max).map((a, k) => `<div class="tarjeta-arista">
+    <div class="tarjeta-verbo"><b>${esc(a.word || a.verbo)}</b>${a.word && a.word !== a.verbo ? ` <span class="tarjeta-suceso">${esc(a.verbo)}</span>` : ''}${a.deducido ? ' <span class="etiqueta-deducido be-chip">deducido</span>' : ''}${a.incierto ? ' <span class="etiqueta-incierto be-chip">fecha o lugar inciertos</span>' : ''}</div>
+    <div class="fila-chips"><span class="be-chrono ${a.tr ? 'be-chrono--tnm' : 'be-chrono--approx'}">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${!k && n.when ? `<span class="tarjeta-cuando">${esc(n.when)}</span>` : ''}${BE.chipsCitas(a.ref || '')}${sinPasaje(a)}</div>
     ${a.razon ? `<p class="tarjeta-razon">${esc(a.razon)}</p>` : ''}
     ${(a.fuentes || []).slice(0, 2).map((f) => BE.D.fuentes?.[f]).filter(Boolean).map((f) => `<span class="be-tier be-tier--${f.nivel === 1 ? 1 : 2}" data-n="${f.nivel}">${esc(f.titulo)}</span>`).join(' ')}
   </div>`).join('');
   return `<div class="be-card__pad"><div class="be-card__eyebrow">${esc(nombreDe(centro()))} · ${esc(nombreDe(n.sel))}</div>${acciones}${filas}${n.aristas.length > max ? `<p class="be-muted">Y ${n.aristas.length - max} conexiones más en la lista.</p>` : ''}</div>`;
 }
 
+/** Lo que el interruptor oculta en esta fecha: lo que dura (vivió en, reina, un viaje) y es de otra fecha, en los
+    sectores a la vista. Los sucesos no dependen de él, y lo que está en las migas nunca se oculta. */
+function hiddenByDate(nodos) {
+  const enRuta = new Set(G.ruta);
+  return nodos.filter((n) => !n.event && !G.ocultos.has(n.grupo) && (n.estado === 'pasado' || n.estado === 'futuro') && !enRuta.has(n.sel));
+}
 function cabeceraGrafo(nodos, visibles) {
   // Cuántos hay de cada sector en esta fecha, cuente o no el filtro de sectores: un sector oculto enseña lo que oculta.
   const cuenta = {};
@@ -257,7 +440,7 @@ function cabeceraGrafo(nodos, visibles) {
   const sectores = SECTORES.filter((s) => cuenta[s.grupo] || G.ocultos.has(s.grupo));
   const cuando = fmtCursor(E.t);
   return `<header class="vista-cab">
-    <nav class="be-crumbs migas-grafo" aria-label="Saltos en el grafo">${G.ruta.map((sel, i) => `${i ? '<span class="be-sep" aria-hidden="true">›</span>' : ''}<button type="button" class="miga${i === G.ruta.length - 1 ? ' miga--actual' : ''}" data-grafo-miga="${i}"${i === G.ruta.length - 1 ? ' aria-current="true"' : ''}><span class="be-node be-node--${claseNodo(sel)} be-node--sm" aria-hidden="true">${esc(inicial(sel))}</span>${esc(nombreDe(sel))}</button>`).join('')}</nav>
+    <nav class="be-crumbs migas-grafo" aria-label="Saltos en el grafo">${G.ruta.map((sel, i) => `${i ? '<span class="be-sep" aria-hidden="true">›</span>' : ''}<button type="button" class="miga${i === G.ruta.length - 1 ? ' miga--actual' : ''}" data-grafo-miga="${i}"${i === G.ruta.length - 1 ? ' aria-current="true"' : ` title="${esc(nombreDe(sel))}"`}><span class="be-node be-node--${claseNodo(sel)} be-node--sm" aria-hidden="true">${esc(inicial(sel))}</span><span class="miga-nombre">${esc(nombreDe(sel))}</span></button>`).join('')}</nav>
     <div class="be-seg grafo-modo" role="radiogroup" aria-label="Forma de ver las conexiones">
       <button type="button" role="radio" class="be-seg__opt${G.modoVisto === 'grafo' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modoVisto === 'grafo'}" data-grafo-modo="grafo">Grafo</button>
       <button type="button" role="radio" class="be-seg__opt${G.modoVisto === 'lista' ? ' be-seg__opt--on' : ''}" aria-checked="${G.modoVisto === 'lista'}" data-grafo-modo="lista">Lista</button></div>
@@ -265,16 +448,30 @@ function cabeceraGrafo(nodos, visibles) {
   </header>
   <div class="grafo-filtros" role="group" aria-label="Filtros del grafo">
     ${sectores.map((s) => `<button type="button" class="be-chip${G.ocultos.has(s.grupo) ? '' : ' be-chip--active'}" aria-pressed="${!G.ocultos.has(s.grupo)}" data-grafo-sector="${s.grupo}" title="${G.ocultos.has(s.grupo) ? 'Oculto: pulsa para enseñarlo' : 'Pulsa para ocultarlo'}"><span class="be-chip__dot sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo}${cuenta[s.grupo] ? ` ${cuenta[s.grupo]}` : ''}</button>`).join('')}
-    <button type="button" role="switch" class="interruptor-grafo" aria-checked="${G.vigente}" data-grafo-vigente title="${G.vigente ? 'Encendido: solo se ven las conexiones de esta fecha. Apágalo para ver las de otras fechas, atenuadas' : 'Apagado: se ven también las conexiones de otras fechas, atenuadas'}"><span class="interruptor-pista" aria-hidden="true"><span class="interruptor-bola"></span></span><span>Solo lo vigente en ${esc(cuando)}</span><span class="interruptor-estado" aria-hidden="true">${G.vigente ? 'Sí' : 'No'}</span></button>
-    <span class="grafo-oculto be-muted">${G.vigente && nodos.length > visibles.length ? `${nodos.length - visibles.length} de otras fechas ocultas` : ''}</span>
+    ${switchHtml(nodos, cuando)}
   </div>
   <p class="sr-only">${esc(nombreDe(centro()))} en ${esc(cuando)}: ${visibles.length} conexiones.</p>`;
 }
 
-/** Lo que se ve: sin los sectores ocultos (salvo con sinSectores) y, con «Solo lo vigente», sin lo de otras fechas. */
+/** «Lo que dura: solo lo vigente en 50 e.c.». Lo que gobierna va en el rótulo, no solo en el «title», que el dedo no
+    alcanza. Si en esta fecha no hay nada que dure y sea de otra fecha, no cambia nada: queda inerte y lo dice. */
+function switchHtml(nodos, cuando) {
+  const k = hiddenByDate(nodos).length;
+  const inerte = !k;
+  const explica = inerte ? 'En esta fecha no hay nada que dure (vivió en, reina, un viaje) de otras fechas: el interruptor no cambia nada. Los sucesos salen por su distancia a la fecha: los más cercanos en el grafo y el resto en «+N»'
+    : G.vigente ? 'Encendido: de lo que dura (vivió en, reina, un viaje) solo se ve lo de esta fecha. Apágalo para ver lo de otras fechas, atenuado. Los sucesos no dependen de él: salen los más cercanos a la fecha y el resto en «+N»'
+      : 'Apagado: se ve también lo que dura en otras fechas, atenuado. Los sucesos salen igual: los más cercanos a la fecha y el resto en «+N»';
+  // Inerte, lo dice en su propio botón («nada que ocultar» en vez de «Sí»): una línea más de cabecera le quitaba alto
+  // al círculo en el móvil.
+  const nota = !inerte && G.vigente ? `${k} ${k === 1 ? 'relación' : 'relaciones'} de otras fechas ${k === 1 ? 'oculta' : 'ocultas'}` : '';
+  return `<button type="button" role="switch" class="interruptor-grafo${inerte ? ' interruptor-grafo--inerte' : ''}" aria-checked="${G.vigente}"${inerte ? ' aria-disabled="true"' : ''} aria-describedby="grafo-oculto" data-grafo-vigente title="${explica}"><span class="interruptor-pista" aria-hidden="true"><span class="interruptor-bola"></span></span><span>Lo que dura: solo lo vigente en ${esc(cuando)}</span>${inerte ? '<span class="interruptor-estado">· nada que ocultar</span>' : `<span class="interruptor-estado" aria-hidden="true">${G.vigente ? 'Sí' : 'No'}</span>`}</button>
+    <span class="grafo-oculto be-muted" id="grafo-oculto">${nota}</span>`;
+}
+/** Lo que se ve: sin los sectores ocultos (salvo con sinSectores) y, con «Solo lo vigente», sin lo de otras fechas. Los
+    sucesos no dependen del interruptor: los más cercanos al cursor van al lienzo y el resto a «+N» (lienzoHtml). */
 function filtrar(nodos, sinSectores = false) {
   const enRuta = new Set(G.ruta);
-  return nodos.filter((n) => (sinSectores || !G.ocultos.has(n.grupo)) && (!G.vigente || n.estado === 'ahora' || n.estado === 'siempre' || enRuta.has(n.sel)));
+  return nodos.filter((n) => (sinSectores || !G.ocultos.has(n.grupo)) && (!G.vigente || n.event || n.estado === 'ahora' || n.estado === 'siempre' || enRuta.has(n.sel)));
 }
 /** Leyenda: qué es cada forma de nodo (solo las que hay a la vista) y cada tipo de línea.
     Empieza abierta solo si sobra sitio: abierta mide unos 120 px, que en una vista de menos de 760 de alto son los que
@@ -307,15 +504,19 @@ function pintarGrafo(forzar) {
   // mano. G.modo guarda lo que se prefiere y G.modoVisto lo que se dibuja: al ensancharse la vista vuelve el grafo solo.
   const apretado = !G.modoPedido && (estrecha() || (v.clientWidth && (v.clientWidth < 480 || v.clientHeight < 420)));
   G.modoVisto = G.modo === 'grafo' && apretado ? 'lista' : G.modo;
-  const clave = [G.ruta.join('.'), G.modo, G.modoVisto, G.vigente, [...G.ocultos].join(), visibles.map((n) => `${n.sel}:${n.estado}:${n.principal.verbo}`).join(','), G.vigente ? Math.floor(E.t) : ''].join('|');
-  if (!forzar && clave === G.clave && !oculta) return;
+  G.span = E.vista ? E.vista[1] - E.vista[0] : null;
+  // La clave dice qué hay y dónde, no las palabras de tiempo («3 días antes» cambia en cada paso del cursor): si solo
+  // cambian ellas, se escriben en su sitio (refreshWords) y el lienzo no se rehace ni se vuelve a colocar.
+  const clave = [G.ruta.join('.'), G.modo, G.modoVisto, G.vigente, [...G.ocultos].join(), visibles.map((n) => `${n.sel}:${n.estado}:${n.principal.verbo}${n.event ? `:${n.near ? 1 : 0}` : ''}`).join(','), G.vigente ? Math.floor(E.t) : ''].join('|');
+  if (!forzar && clave === G.clave && !oculta && refreshWords(v, nodos)) return;
   G.clave = clave;
   // Repintar sustituye los controles: el que tenía el foco (un nodo, el interruptor, Grafo/Lista, un sector, una acción
   // de la tarjeta) lo recupera, y la tarjeta fijada vuelve a su nodo si sigue en el lienzo. Así un cambio de tamaño,
   // la letra que llega o el cursor que avanza no cierran lo que se está leyendo.
   const foco = v.contains(document.activeElement) ? document.activeElement : null;
   const claveFoco = foco && (['data-gnodo-sel', 'data-grafo-vigente', 'data-grafo-modo', 'data-grafo-sector', 'data-grafo-abrir', 'data-grafo-centro', 'data-grafo-relacionar', 'data-grafo-ir', 'data-grafo-miga']
-    .map((a) => (foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '')).find(Boolean) || (foco.matches('[data-grafo-leyenda] > summary') ? '[data-grafo-leyenda] > summary' : ''));
+    .map((a) => (foco.hasAttribute(a) ? `[${a}="${CSS.escape(foco.getAttribute(a))}"]` : '')).find(Boolean) || (foco.matches('[data-grafo-leyenda] > summary') ? '[data-grafo-leyenda] > summary' : '')
+    || (foco.matches('[data-grafo-lista-mas] > summary') ? `[data-grafo-lista-mas="${CSS.escape(foco.parentElement.dataset.grafoListaMas)}"] > summary` : ''));
   const fijada = !G.fija ? null : G.fija[0] === 'n' ? { sel: G.nodos?.[+G.fija.slice(1)]?.sel } : { grupo: G.fija.slice(1) };
   if (G.fija || G.hover) { G.fija = null; G.ancla = null; G.hover = null; BE.mapa.resaltar(null); }
   const dibujar = () => {
@@ -346,6 +547,73 @@ function pintarGrafo(forzar) {
   // así Esc y Tab siguen dentro del grafo.
   if (foco && !v.contains(document.activeElement)) v.querySelector('.miga--actual')?.focus({ preventScroll: true });
 }
+/** Lo que dice un nodo bajo su palabra: cuándo es frente al cursor («3 meses antes»), o «ya pasó» / «aún no». */
+const whenText = (n) => n.when || (n.estado === 'pasado' ? 'ya pasó' : n.estado === 'futuro' ? 'aún no' : '');
+/** El nombre accesible de un nodo del lienzo: lo mismo que se ve. */
+const nodeAria = (n) => `${nombreDe(n.sel)}${PALABRA_TIPO[tipoDe(n.sel)] ? `, ${PALABRA_TIPO[tipoDe(n.sel)]}` : ''}: ${metaNodo(n)}. Pulsa para ver la relación; pulsa otra vez para ponerlo en el centro`;
+/** Con la misma clave (los mismos nodos en el mismo sitio), solo cambian las palabras de tiempo: se escriben en los
+    nodos, en su nombre accesible, en las filas de la lista, de «+N» y en la tarjeta abierta, y los nodos del último
+    pintado pasan a ser los de ahora. Devuelve false si un nodo cambia de alto o crece: entonces hay que volver a
+    colocar, porque las cajas medidas ya no valen. */
+function refreshWords(v, nodos) {
+  const by = new Map(nodos.map((n) => [n.sel, n]));
+  const fresh = (xs) => (xs || []).map((n) => by.get(n.sel) || n);
+  G.enLienzo = fresh(G.enLienzo);
+  G.nodos = fresh(G.nodos);
+  for (const k of Object.keys(G.restos)) G.restos[k] = fresh(G.restos[k]);
+  const put = (el, text) => { if (el && el.textContent !== text) el.textContent = text; };
+  for (const b of v.querySelectorAll('.grafo-lienzo .gnodo[data-gnodo-sel]')) {
+    const n = by.get(b.dataset.gnodoSel);
+    if (!n) continue;
+    put(b.querySelector('.gnodo-cuando'), whenText(n));
+    const aria = nodeAria(n);
+    if (b.getAttribute('aria-label') !== aria) b.setAttribute('aria-label', aria);
+  }
+  for (const r of v.querySelectorAll('.grafo-lista .lista-fila')) {
+    const n = by.get(r.querySelector('[data-grafo-centro]')?.dataset.grafoCentro);
+    if (n) put(r.querySelector('.lista-cuando'), whenText(n));
+  }
+  for (const r of v.querySelectorAll('#grafo-tarjeta .grafo-resto__fila')) {
+    const n = by.get(r.dataset.grafoCentro);
+    if (n) put(r.querySelector('.grafo-resto__meta'), metaNodo(n));
+  }
+  const t = $('#grafo-tarjeta'), n = t?.dataset.sel ? by.get(t.dataset.sel) : null;
+  if (n) put(t.querySelector('.tarjeta-cuando'), n.when || '');
+  // Una palabra más larga puede ensanchar un nodo. Si cambia de alto (su círculo se mueve), se vuelve a colocar todo; si
+  // solo crece a lo ancho, se vuelve a colocar solo si ahora pisa otra caja, se sale del lienzo o una arista lo cruza.
+  const lz = v.querySelector('.grafo-lienzo');
+  const crecidos = [...v.querySelectorAll('.grafo-lienzo .gnodo[data-w]')].filter((b) => b.offsetHeight !== +b.dataset.h || b.offsetWidth > +b.dataset.w);
+  if (!crecidos.length) return true;
+  if (crecidos.some((b) => b.offsetHeight !== +b.dataset.h)) return false;
+  const o = lz.getBoundingClientRect(), HOLGURA = 6, ROCE = 3;
+  const caja = (el) => { const r = el.getBoundingClientRect(); return { l: r.left - o.left, t: r.top - o.top, r: r.right - o.left, b: r.bottom - o.top }; };
+  const otras = [...lz.querySelectorAll('.be-gnode, .sector-rotulo')];
+  const lineas = [...lz.querySelectorAll('svg line:not(.arista-toque)')].map((l) => ({ g: l.closest('[data-arista]')?.dataset.arista, x1: +l.getAttribute('x1'), y1: +l.getAttribute('y1'), x2: +l.getAttribute('x2'), y2: +l.getAttribute('y2') }));
+  const cruza = (s, p) => {   // el mismo recorte de Liang y Barsky que colocarLienzo
+    const l = p.l + ROCE, r = p.r - ROCE, t = p.t + ROCE, b = p.b - ROCE;
+    if (l >= r || t >= b) return false;
+    const dx = s.x2 - s.x1, dy = s.y2 - s.y1;
+    let u0 = 0, u1 = 1;
+    for (const [q, d] of [[-dx, s.x1 - l], [dx, r - s.x1], [-dy, s.y1 - t], [dy, b - s.y1]]) {
+      if (q === 0) { if (d < 0) return false; continue; }
+      const u = d / q;
+      if (q < 0) { if (u > u1) return false; if (u > u0) u0 = u; } else { if (u < u0) return false; if (u < u1) u1 = u; }
+    }
+    return u0 < u1;
+  };
+  for (const b of crecidos) {
+    const c = caja(b);
+    if (c.l < 0 || c.t < 0 || c.r > o.width || c.b > o.height) return false;
+    for (const x of otras) {
+      if (x === b) continue;
+      const p = caja(x);
+      if (c.l < p.r + HOLGURA && c.r > p.l - HOLGURA && c.t < p.b + HOLGURA && c.b > p.t - HOLGURA) return false;
+    }
+    if (lineas.some((s) => s.g !== b.dataset.gnodo && cruza(s, c))) return false;
+    b.dataset.w = b.offsetWidth;
+  }
+  return true;
+}
 /** El círculo toma el alto que queda entre los filtros y la leyenda, sin el relleno de abajo de la vista (en el móvil,
     el sitio de la hoja plegada): ni se mete debajo de la hoja ni deja sin usar el alto que la leyenda no necesita. */
 function ajustarLienzo(v) {
@@ -360,20 +628,70 @@ function ajustarLienzo(v) {
 }
 
 /** Singular y plural de lo que se pliega en «+N» («1 persona más», «12 hechos más»). */
-const PLEGADOS = { Personas: ['persona', 'personas'], Lugares: ['lugar', 'lugares'], Hechos: ['hecho', 'hechos'], Cartas: ['carta', 'cartas'] };
-const textoResto = (grupo, n) => (PLEGADOS[grupo] ? `${n} ${PLEGADOS[grupo][n === 1 ? 0 : 1]} más` : `${n} más`);
+const PLEGADOS = { Personas: ['persona', 'personas'], Lugares: ['lugar', 'lugares'], Hechos: ['hecho', 'hechos'], Cartas: ['carta', 'cartas'], Sucesos: ['suceso', 'sucesos'] };
+/** Lo plegado de Hechos se llama «sucesos» si todo lo que pliega son sucesos o paradas. */
+const palabraResto = (grupo) => (grupo === 'Hechos' && (G.restos[grupo] || []).length && G.restos[grupo].every((n) => n.event) ? 'Sucesos' : grupo);
+const textoResto = (grupo, n) => { const k = palabraResto(grupo); return PLEGADOS[k] ? `${n} ${PLEGADOS[k][n === 1 ? 0 : 1]} más` : `${n} más`; };
 /** El rótulo de la burbuja. En un lienzo estrecho solo se ve la palabra («lugares»): el número ya va en el círculo. */
-const restoHtml = (grupo, n) => (PLEGADOS[grupo] ? `<span class="resto-num">${n} </span>${PLEGADOS[grupo][n === 1 ? 0 : 1]}<span class="resto-mas"> más</span>` : `${n} más`);
+const restoHtml = (grupo, n) => { const k = palabraResto(grupo); return PLEGADOS[k] ? `<span class="resto-num">${n} </span>${PLEGADOS[k][n === 1 ? 0 : 1]}<span class="resto-mas"> más</span>` : `${n} más`; };
 const fuerteAhora = (n) => n.estado === 'ahora' && !!n.principal.fuerte;
-/** La línea meta (verbo · referencia) va solo en el centro y en los nodos de arista fuerte (propuesta 11). Lo de otras
-    fechas lleva su palabra («ya pasó», «aún no»): es lo que lo distingue sin depender del color. */
+/** Lo que no se pliega mientras quepa en algún sitio: lo fuerte y vigente («está aquí ahora») y los sucesos más cercanos
+    al cursor, que son los que dicen qué pasa ahora y qué pasó y pasará justo antes y después. */
+const retenido = (n) => fuerteAhora(n) || (!!n.event && !!n.near);
+/** Lo que puede salir de su arco antes que plegarse: lo fuerte y vigente y el suceso que ocurre ahora. Los demás sucesos
+    cercanos se pliegan en su «+N» antes que meterse entre los nodos de otro sector. */
+const anyAngle = (n) => fuerteAhora(n) || (!!n.event && n.near && n.nearRank === 0);
+/** En qué orden toman sitio los de un sector, lo más importante primero: lo fuerte y vigente, el suceso de ahora, lo
+    que dura y es vigente en Hechos (el viaje en curso, el periodo que rige), los demás sucesos cercanos del más próximo
+    al cursor al más lejano (en un lienzo estrecho, un suceso de hace ocho días va antes que uno de dentro de tres años),
+    el resto, y al final los sucesos lejanos que se enseñan atenuados. */
+const placeOrder = (n) => (fuerteAhora(n) ? 0 : n.event && n.near ? (n.nearRank === 0 ? 1 : 3) : n.event ? 6 : n.grupo === 'Hechos' && n.estado === 'ahora' ? 2 : 5);
+/** La distancia de un suceso al cursor, en años: 0 si ocurre ahora o no tiene fecha. */
+const distance = (n) => (!n.event || !n.window || n.estado === 'ahora' ? 0 : n.estado === 'pasado' ? E.t - n.window[1] : n.window[0] - E.t);
+/** Los sucesos de un sector que no son cercanos: si son uno o dos, se enseñan atenuados en el lienzo y la lista si caben
+    (FAR_SHOWN); si son más, van plegados en «+N». */
+function splitFar(todos) {
+  const lejos = todos.filter((n) => n.event && !n.near).sort((a, b) => a.orden - b.orden);
+  const pocos = lejos.length <= FAR_SHOWN;
+  return { ns: todos.filter((n) => !n.event || n.near || pocos).sort((a, b) => placeOrder(a) - placeOrder(b) || distance(a) - distance(b)), lejos: pocos ? [] : lejos };
+}
+/** Lo plegado, en grupos: lo que ocurre ahora, lo que no tiene fecha, lo de antes y lo de después, cada grupo del más
+    cercano al cursor al más lejano. Así lo que pasa en la fecha va primero y no en medio de una lista por fechas. */
+function foldGroups(ns) {
+  const tramo = (n) => n.window || n.principal.tr;
+  const g = [
+    ['Ahora', ns.filter((n) => n.estado === 'ahora')],
+    ['Sin fecha', ns.filter((n) => n.estado === 'siempre' || ((n.estado === 'pasado' || n.estado === 'futuro') && !tramo(n)))],
+    ['Antes', ns.filter((n) => n.estado === 'pasado' && tramo(n)).sort((a, b) => tramo(b)[1] - tramo(a)[1] || tramo(b)[0] - tramo(a)[0])],
+    ['Después', ns.filter((n) => n.estado === 'futuro' && tramo(n)).sort((a, b) => tramo(a)[0] - tramo(b)[0] || tramo(a)[1] - tramo(b)[1])],
+  ];
+  return g.filter(([, xs]) => xs.length);
+}
+/** Las filas de lo plegado, con el título de cada grupo si hay más de uno. */
+function foldGroupsHtml(ns, fila, cls) {
+  const gs = foldGroups(ns);
+  if (gs.length === 1) return `<ul class="${cls}">${gs[0][1].map(fila).join('')}</ul>`;
+  return gs.map(([t, xs]) => `<p class="resto-grupo be-caps">${t} · ${xs.length}</p><ul class="${cls}">${xs.map(fila).join('')}</ul>`).join('');
+}
+/** La línea meta (verbo · referencia) va en el centro y en los nodos de arista fuerte (propuesta 11), y la palabra de la
+    línea en todo lo que toca un suceso: los sucesos y paradas, lo que rodea a un suceso en el centro y lo que une una
+    persona y un lugar por un suceso. Lo de otras fechas lleva su palabra («ya pasó», «aún no», «3 meses antes»): es lo
+    que lo distingue sin depender del color. */
 function metaHtml(n) {
+  // Un suceso dice qué es la línea y cuándo es frente al cursor, en dos líneas: «ocurre aquí» / «3 meses antes».
+  if (n.event) return `<span class="be-gnode__meta"><span class="gnodo-verbo">${esc(n.principal.verbo)}</span>${n.when ? `<span class="gnodo-cuando">${esc(n.when)}</span>` : ''}</span>`;
   if (fuerteAhora(n)) {
     // Verbo y referencia por separado: en un lienzo estrecho la referencia baja a su propia línea en vez de cortarse.
     const ref = refCorta(n.principal);
     return `<span class="be-gnode__meta">${esc(n.principal.verbo)}${ref ? `<span class="gnodo-ref"><span class="gnodo-sep"> · </span>${esc(ref)}</span>` : ''}</span>`;
   }
-  if (n.estado === 'pasado' || n.estado === 'futuro') return `<span class="be-gnode__meta">${n.estado === 'pasado' ? 'ya pasó' : 'aún no'}</span>`;
+  const otra = n.estado === 'pasado' ? 'ya pasó' : n.estado === 'futuro' ? 'aún no' : '';
+  // Con un suceso en el centro, o si la línea sale de un suceso o de una parada, dice en una palabra qué es
+  // («presente», «habló», «estuvo aquí», «pasa por aquí»); debajo, cuándo es ese suceso frente al cursor, o si es de
+  // otra fecha.
+  const cuando = n.when || otra;
+  if (isEvent(centro()) || n.principal.word) return `<span class="be-gnode__meta"><span class="gnodo-verbo">${esc(n.principal.word || n.principal.verbo)}</span>${cuando ? `<span class="gnodo-cuando">${esc(cuando)}</span>` : ''}</span>`;
+  if (otra) return `<span class="be-gnode__meta">${otra}</span>`;
   return '';
 }
 /** El lienzo sin colocar: el centro, los rótulos de sector, hasta MAX_SECTOR candidatos por sector y una burbuja «+N»
@@ -387,28 +705,32 @@ function lienzoHtml(id, visibles, todos) {
   const aqui = id.startsWith('persona:') ? aquiAhora(id.slice(8), E.t) : null;
   G.enLienzo = [];
   G.restos = {};
+  // El ancho de un suceso: su título entero en varias líneas, más estrecho cuanto más estrecho es el lienzo.
+  const anchoSuceso = Math.round(Math.max(120, Math.min(230, (vg.clientWidth || 800) * 0.22)));
   let nodosHtml = '', burbujas = '', rotulos = '';
   const nuevos = G.previos.size > 0 && !reducido();
   for (const s of SECTORES) {
-    // Lo fuerte y vigente («está aquí ahora») va primero en su sector: es lo que lleva la línea meta y no debe plegarse.
-    const ns = visibles.filter((n) => n.grupo === s.grupo).sort((a, b) => (fuerteAhora(b) ? 1 : 0) - (fuerteAhora(a) ? 1 : 0));
-    if (!ns.length) continue;
+    // Lo fuerte y vigente («está aquí ahora») va primero en su sector y luego los sucesos cercanos: no deben plegarse.
+    const todos = visibles.filter((n) => n.grupo === s.grupo);
+    if (!todos.length) continue;
+    // Los sucesos lejanos del cursor van directos a «+N»; los cercanos, al lienzo como los demás (splitFar).
+    const { ns, lejos } = splitFar(todos);
     rotulos += `<span class="sector-rotulo be-caps" data-sector="${s.grupo}">${s.rotulo}</span>`;
-    G.restos[s.grupo] = ns.slice(MAX_SECTOR);
+    G.restos[s.grupo] = [...ns.slice(MAX_SECTOR), ...lejos];
     for (const n of ns.slice(0, MAX_SECTOR)) {
       const i = G.enLienzo.push(n) - 1;
       const tipo = tipoDe(n.sel);
       const incierto = n.principal.incierto || (tipo === 'lugar' && BE.L[n.sel.slice(6)]?.lat == null);
-      nodosHtml += `<button type="button" class="be-gnode gnodo gnodo--${n.estado}${nuevos && !G.previos.has(n.sel) ? ' gnodo--nuevo' : ''}${incierto ? ' gnodo--incierto' : ''}" data-gnodo="${i}" data-gnodo-sel="${esc(n.sel)}" data-sector="${s.grupo}" aria-expanded="false" aria-describedby="grafo-tarjeta" aria-label="${esc(`${nombreDe(n.sel)}${PALABRA_TIPO[tipo] ? `, ${PALABRA_TIPO[tipo]}` : ''}: ${metaNodo(n)}. Pulsa para ver la relación; pulsa otra vez para ponerlo en el centro`)}">
+      nodosHtml += `<button type="button" class="be-gnode gnodo gnodo--${n.estado}${n.event ? ' gnodo--suceso' : ''}${n.event && !n.near ? ' gnodo--lejos' : ''}${nuevos && !G.previos.has(n.sel) ? ' gnodo--nuevo' : ''}${incierto ? ' gnodo--incierto' : ''}" data-gnodo="${i}" data-gnodo-sel="${esc(n.sel)}" data-sector="${s.grupo}" aria-expanded="false" aria-describedby="grafo-tarjeta" aria-label="${esc(nodeAria(n))}">
       <span class="be-node be-node--${claseNodo(n.sel)}" aria-hidden="true">${esc(inicial(n.sel))}</span><span class="be-gnode__label">${esc(nombreDe(n.sel))}</span>${metaHtml(n)}</button>`;
     }
     // Se mide con el número más alto posible: al colocarla solo puede encoger.
-    burbujas += `<button type="button" class="be-gnode gnodo gnodo--grupo" data-grafo-abrir="${s.grupo}" data-sector="${s.grupo}" aria-expanded="false"><span class="be-node be-node--sm burbuja" aria-hidden="true">+${ns.length}</span><span class="be-gnode__label">${restoHtml(s.grupo, ns.length)}</span></button>`;
+    burbujas += `<button type="button" class="be-gnode gnodo gnodo--grupo" data-grafo-abrir="${s.grupo}" data-sector="${s.grupo}" aria-expanded="false"><span class="be-node be-node--sm burbuja" aria-hidden="true">+${todos.length}</span><span class="be-gnode__label">${restoHtml(s.grupo, todos.length)}</span></button>`;
   }
   const vacio = !visibles.length ? vacioHtml(id, todos) : '';
-  return `<div class="be-graph grafo-lienzo" style="height:${alto}px">
+  return `<div class="be-graph grafo-lienzo" style="height:${alto}px;--ancho-suceso:${anchoSuceso}px">
     <svg aria-hidden="true"></svg>${rotulos}
-    <div class="be-gnode be-gnode--center gnodo-centro"><span class="be-node be-node--${claseNodo(id)} be-node--lg" aria-hidden="true">${esc(inicial(id))}</span><span class="be-gnode__label">${esc(nombreDe(id))}</span><span class="be-gnode__meta">${aqui ? `${aqui.parada ? 'en' : 'saliendo de'} ${esc(nombreDe(aqui.sel))}` : esc(fmtCursor(E.t))}</span></div>
+    <div class="be-gnode be-gnode--center gnodo-centro${isEvent(id) ? ' gnodo-centro--suceso' : ''}"><span class="be-node be-node--${claseNodo(id)} be-node--lg" aria-hidden="true">${esc(inicial(id))}</span><span class="be-gnode__label">${esc(nombreDe(id))}</span><span class="be-gnode__meta">${aqui ? `${aqui.parada ? 'en' : 'saliendo de'} ${esc(nombreDe(aqui.sel))}` : esc(fmtCursor(E.t))}</span></div>
     ${nodosHtml}${burbujas}${vacio}</div>`;
 }
 /** Coloca el radial sin solapes (propuesta 11). Una pasada mide la caja de cada nodo (círculo, nombre y meta) y los
@@ -458,7 +780,10 @@ function colocarLienzo(v) {
   // Arcos: cada sector con nodos ocupa un arco proporcional a lo que tiene, empezando por Lugares centrado arriba.
   const porSector = SECTORES.map((s) => {
     const els = [...lz.querySelectorAll(`[data-gnodo][data-sector="${s.grupo}"]`)];
-    const peso = els.length ? Math.max(2, els.length + (G.restos[s.grupo]?.length ? 1 : 0)) : 0;
+    // Un suceso cuenta doble: su título entero en varias líneas ocupa lo que dos nombres, y con un arco del tamaño de un
+    // nombre salía del suyo a meterse entre los de otro sector.
+    const cuenta = els.reduce((k, el) => k + (el.classList.contains('gnodo--suceso') ? 2 : 1), 0);
+    const peso = els.length || G.restos[s.grupo]?.length ? Math.max(2, cuenta + (G.restos[s.grupo]?.length ? 1 : 0)) : 0;
     return { s, els, peso, puestos: [], burbuja: lz.querySelector(`[data-grafo-abrir="${s.grupo}"]`) };
   });
   const total = porSector.reduce((x, y) => x + y.peso, 0) || 1;
@@ -491,14 +816,15 @@ function colocarLienzo(v) {
   const colocar = (el, x, ideal, cualquierAngulo = false) => { const h = hueco(el, x, ideal, cualquierAngulo); return h ? tomar(h) : null; };
   // Por turnos: el primero de cada sector, luego el segundo… Así un sector con muchos no deja sin sitio a los demás.
   const vueltas = Math.max(0, ...porSector.map((x) => x.els.length));
+  const aplazados = [];
   for (let k = 0; k < vueltas; k++) {
     for (const x of porSector) {
       const el = x.els[k];
       if (!el) continue;
       const ideal = x.a0 + (x.arco * (k + 0.5)) / (x.els.length + (G.restos[x.s.grupo]?.length ? 1 : 0));
       let h = colocar(el, x, ideal);
-      // Lo fuerte y vigente («está aquí ahora») no se pliega mientras quepa en algún sitio: es lo que dice dónde está.
-      if (!h && fuerteAhora(G.enLienzo[+el.dataset.gnodo])) h = colocar(el, x, ideal, true);
+      // Lo fuerte y vigente («está aquí ahora») y el suceso de ahora no se pliegan mientras quepan en algún sitio.
+      if (!h && anyAngle(G.enLienzo[+el.dataset.gnodo])) h = colocar(el, x, ideal, true);
       if (h) { x.puestos.push(h); continue; }
       // El primero que no cabe aparta ya el sitio de la burbuja, en su propio arco, antes de que los demás sectores
       // llenen el lienzo.
@@ -507,11 +833,15 @@ function colocarLienzo(v) {
       // ángulo vale antes que perderlo.
       if (k === 0 && !x.reservada) {
         h = colocar(el, x, ideal, true);
-        if (h) x.puestos.push(h);
-        else if (x.burbuja) x.reservada = colocar(x.burbuja, x, ideal, true);
+        if (h) { x.puestos.push(h); continue; }
+        if (x.burbuja) x.reservada = colocar(x.burbuja, x, ideal, true);
       }
+      if (retenido(G.enLienzo[+el.dataset.gnodo])) aplazados.push({ el, x, ideal });
     }
   }
+  // Los sucesos cercanos que no cupieron en su arco toman, al final, el sitio que haya quedado libre en cualquier parte:
+  // nunca antes que los nodos de los demás sectores, que ya tienen el suyo.
+  for (const { el, x, ideal } of aplazados) { const h = colocar(el, x, ideal, true); if (h) x.puestos.push(h); }
   // Lo que no cupo se pliega en la burbuja de su sector.
   let perdido = false;
   for (const x of porSector) {
@@ -529,13 +859,13 @@ function colocarLienzo(v) {
     if (!fuera.length && !extra.length) { b.remove(); continue; }
     // Sin sitio todavía, la burbuja lo busca en su arco, primero con su rótulo y luego solo con su círculo «+N» (sin
     // rótulo lo dice su nombre accesible): un nodo a la vista vale más que la palabra. Si ni así, le ceden el suyo los
-    // últimos nodos del sector, salvo el fuerte y vigente («está aquí ahora»), y solo si así cabe (si no, vuelven a su
+    // últimos nodos del sector, salvo lo fuerte y vigente («está aquí ahora») y los sucesos cercanos, y solo si así cabe (si no, vuelven a su
     // sitio); luego cualquier ángulo; y como último recurso cede también el fuerte: mejor plegado en su «+N» que perder
     // el grafo entero.
     const compacta = (si) => { b.classList.toggle('gnodo--compacto', si); tam.set(b, medida(b)); };
     const cedidos = [];
     const ceder = (tambienFuerte) => {
-      const cedible = () => { for (let j = x.puestos.length - 1; j >= 0; j--) if (tambienFuerte || !fuerteAhora(G.enLienzo[+x.puestos[j].el.dataset.gnodo])) return j; return -1; };
+      const cedible = () => { for (let j = x.puestos.length - 1; j >= 0; j--) if (tambienFuerte || !retenido(G.enLienzo[+x.puestos[j].el.dataset.gnodo])) return j; return -1; };
       for (let j = cedible(); !sitio && j >= 0; j = cedible()) {
         const [u] = x.puestos.splice(j, 1);
         soltar(u);
@@ -564,21 +894,44 @@ function colocarLienzo(v) {
     x.puestos.push({ ...tomar({ ...sitio, c: caja(sitio.px, sitio.py, b), s: linea(b, sitio.px, sitio.py) }), grupo: true });
   }
   for (const x of porSector) for (const el of x.els) if (!x.puestos.some((p) => p.el === el)) el.remove();
-  // Rótulos de sector, lo último: en el sitio que dejan nodos y burbujas, cerca del borde y del centro de su arco. Sin
-  // sitio, el sector se reconoce por la forma de sus nodos y por su filtro de arriba.
+  // Rótulos de sector, lo último: en el sitio que dejan nodos y burbujas, cerca del borde y del centro de su arco.
+  const ponerRotulo = (x, r, ks, fMin) => {
+    for (const k of ks) {
+      const a = rad(x.a0 + x.arco * k);
+      for (let f = 1; f > fMin; f -= 0.05) {
+        const px = cx + Math.cos(a) * (W / 2 - tam.get(r).w / 2 - BORDE) * f, py = cy + Math.sin(a) * (H / 2 - tam.get(r).h / 2 - BORDE) * f;
+        const c = caja(px, py, r);
+        if (libre(c, null)) { poner(r, px, py); puestas.push(c); return true; }
+      }
+    }
+    return false;
+  };
+  const K = [0.5, 0.35, 0.65, 0.2, 0.8], K_MAS = [0.42, 0.58, 0.27, 0.73, 0.1, 0.9, 0.05, 0.95];
   for (const x of porSector) {
     const r = lz.querySelector(`.sector-rotulo[data-sector="${x.s.grupo}"]`);
     if (!r) continue;
-    let puesto = false;
-    for (const k of [0.5, 0.35, 0.65, 0.2, 0.8]) {
-      const a = rad(x.a0 + x.arco * k);
-      for (let f = 1; f > 0.3 && !puesto; f -= 0.05) {
-        const px = cx + Math.cos(a) * (W / 2 - tam.get(r).w / 2 - BORDE) * f, py = cy + Math.sin(a) * (H / 2 - tam.get(r).h / 2 - BORDE) * f;
-        const c = caja(px, py, r);
-        if (libre(c, null)) { poner(r, px, py); puestas.push(c); puesto = true; }
-      }
-      if (puesto) break;
+    let puesto = ponerRotulo(x, r, K, 0.3);
+    // Un sector con nodos a la vista conserva su rótulo: sin él, un suceso entre personas no se sabe de qué grupo es. Se
+    // busca en todo su arco y, si ni así, el último nodo que se puede ceder de su sector pasa a su «+N» y deja su sitio.
+    const nodos = () => x.puestos.filter((q) => !q.grupo);
+    if (!puesto && nodos().length) puesto = ponerRotulo(x, r, [...K, ...K_MAS], 0.2);
+    const b = x.puestos.find((q) => q.grupo);
+    for (let intento = 0; !puesto && b && intento < 2; intento++) {
+      const j = x.puestos.map((q, i) => (!q.grupo && !retenido(G.enLienzo[+q.el.dataset.gnodo]) ? i : -1)).filter((i) => i >= 0).pop();
+      if (j == null || nodos().length < 2) break;
+      const [u] = x.puestos.splice(j, 1);
+      soltar(u);
+      u.el.remove();
+      const g = x.s.grupo;
+      G.restos[g] = [G.enLienzo[+u.el.dataset.gnodo], ...(G.restos[g] || [])];
+      const n = G.restos[g].length;
+      b.el.querySelector('.burbuja').textContent = `+${n}`;
+      b.el.querySelector('.be-gnode__label').innerHTML = restoHtml(g, n);
+      b.el.setAttribute('aria-label', `${textoResto(g, n)}: pulsa para ver la lista`);
+      const k0 = (anguloDe(x, u.px, u.py) - x.a0) / (x.arco || 1);
+      puesto = ponerRotulo(x, r, [k0, ...K, ...K_MAS], 0.2);
     }
+    // Sin sitio aún, el sector se reconoce por la forma de sus nodos y por su filtro de arriba.
     if (!puesto) r.remove();
   }
   // Las aristas, del círculo del centro al círculo de cada nodo, ya en su sitio.
@@ -591,11 +944,14 @@ function colocarLienzo(v) {
     return `<g class="${claseArista(n.principal, n.estado)}" data-arista="${i}"><line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/><line class="arista-toque" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"><title>${esc(`${n.principal.verbo} · ${n.principal.tr ? BE.textoFechaArista(n.principal) : 'sin fecha'}${n.principal.ref ? ` · ${n.principal.ref}` : ''}`)}</title></line></g>`;
   }).join('');
   G.previos = new Set(porSector.flatMap((x) => x.puestos).filter((p) => !p.grupo).map((p) => G.enLienzo[+p.el.dataset.gnodo].sel));
+  // Su caja ya en su sitio: refreshWords la compara para saber si una palabra nueva obliga a colocar otra vez.
+  for (const b of lz.querySelectorAll('.gnodo[data-gnodo-sel]')) { b.dataset.w = b.offsetWidth; b.dataset.h = b.offsetHeight; }
   return !perdido;
 }
 function vacioHtml(id, todos) {
-  const antes = todos.filter((n) => n.estado === 'pasado').map((n) => n.principal.tr[1]).sort((a, b) => b - a)[0];
-  const despues = todos.filter((n) => n.estado === 'futuro').map((n) => n.principal.tr[0]).sort((a, b) => a - b)[0];
+  const tramo = (n) => n.window || n.principal.tr;
+  const antes = todos.filter((n) => n.estado === 'pasado' && tramo(n)).map((n) => tramo(n)[1]).sort((a, b) => b - a)[0];
+  const despues = todos.filter((n) => n.estado === 'futuro' && tramo(n)).map((n) => tramo(n)[0]).sort((a, b) => a - b)[0];
   return `<div class="grafo-vacio be-card"><div class="be-card__pad"><p><b>En ${esc(fmtCursor(E.t))} no sabemos nada de ${esc(nombreDe(id))}.</b></p>
     <div class="fila-chips">${antes != null && Number.isFinite(antes) ? `<button type="button" class="be-chip" data-grafo-ir="${antes - 0.05}">‹ Lo anterior (${esc(fmtAnio(Math.floor(antes - 0.05)))})</button>` : ''}${despues != null && Number.isFinite(despues) ? `<button type="button" class="be-chip" data-grafo-ir="${despues + 0.01}">Lo siguiente (${esc(fmtAnio(Math.floor(despues)))}) ›</button>` : ''}${!G.vigente ? '' : '<button type="button" class="be-chip" data-grafo-vigente>Ver todas las fechas</button>'}</div></div></div>`;
 }
@@ -603,13 +959,19 @@ function listaHtml(visibles, todos) {
   if (!visibles.length) return `<div class="grafo-lista">${vacioHtml(centro(), todos)}</div>`;
   G.previos = new Set(visibles.map((n) => n.sel));
   return `<div class="grafo-lista"><div class="grafo-lista__cols">${SECTORES.map((s) => {
-    const ns = visibles.filter((n) => n.grupo === s.grupo);
-    if (!ns.length) return '';
-    return `<section class="grafo-lista__sec"><h3 class="be-card__eyebrow"><span class="sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo} <b class="cuenta">${ns.length}</b></h3>
-      <ul>${ns.map((n) => {
-        return `<li class="lista-fila lista-fila--${n.estado}"><button type="button" class="enlace-texto lista-nombre" data-grafo-centro="${esc(n.sel)}" title="Ponerlo en el centro">${esc(nombreDe(n.sel))}</button>${n.estado === 'pasado' || n.estado === 'futuro' ? `<span class="lista-cuando">${n.estado === 'pasado' ? 'ya pasó' : 'aún no'}</span>` : ''}
-          ${n.aristas.slice(0, 3).map((a) => `<span class="lista-arista ${claseArista(a, a.estadoT)}"><span class="lista-que"><span class="lista-verbo">${esc(a.verbo)}</span>&nbsp;· <span class="lista-fecha">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${a.deducido ? '&nbsp;· <span class="etiqueta-deducido">deducido</span>' : ''}</span> ${BE.chipsCitas(a.ref || '')}${sinPasaje(a)}</span>`).join('')}</li>`;
-      }).join('')}</ul></section>`;
+    const todos = visibles.filter((n) => n.grupo === s.grupo);
+    if (!todos.length) return '';
+    // Lo mismo que el lienzo: los sucesos cercanos al cursor a la vista, con su «ocurre ahora» o «3 meses antes», y el
+    // resto plegado en «N sucesos más», lo de ahora primero y cada grupo del más cercano al más lejano.
+    const { ns, lejos } = splitFar(todos);
+    const fila = (n) => {
+      const cuando = whenText(n);
+      return `<li class="lista-fila lista-fila--${n.estado}${n.event ? ' lista-fila--suceso' : ''}"><button type="button" class="enlace-texto lista-nombre" data-grafo-centro="${esc(n.sel)}" title="Ponerlo en el centro">${esc(nombreDe(n.sel))}</button>${cuando ? `<span class="lista-cuando">${esc(cuando)}</span>` : ''}
+          ${n.aristas.slice(0, 3).map((a) => `<span class="lista-arista ${claseArista(a, a.estadoT)}"><span class="lista-que"><span class="lista-verbo">${esc(a.word || a.verbo)}</span>${a.word && a.word !== a.verbo ? `&nbsp;· <span class="lista-suceso">${esc(a.verbo)}</span>` : ''}&nbsp;· <span class="lista-fecha">${esc(a.tr ? BE.textoFechaArista(a) : 'sin fecha')}</span>${a.deducido ? '&nbsp;· <span class="etiqueta-deducido">deducido</span>' : ''}</span> ${BE.chipsCitas(a.ref || '')}${sinPasaje(a)}</span>`).join('')}</li>`;
+    };
+    const mas = lejos.length ? `<details class="lista-mas" data-grafo-lista-mas="${s.grupo}"${G.openFolds.has(s.grupo) ? ' open' : ''}><summary>${lejos.length} ${lejos.length === 1 ? 'suceso' : 'sucesos'} más, de otras fechas</summary>${foldGroupsHtml(lejos, fila, 'lista-mas__filas')}</details>` : '';
+    return `<section class="grafo-lista__sec"><h3 class="be-card__eyebrow"><span class="sector-punto sector-punto--${s.grupo.toLowerCase()}"></span>${s.rotulo} <b class="cuenta">${todos.length}</b></h3>
+      <ul>${ns.map(fila).join('')}</ul>${mas}</section>`;
   }).join('')}</div></div>`;
 }
 
@@ -656,6 +1018,7 @@ function ponerTarjeta(html, ancla, fija) {
 function mostrarTarjeta(i, ancla) {
   const n = G.nodos?.[i];
   if (!n || G.fija) return;
+  $('#grafo-tarjeta')?.setAttribute('data-sel', n.sel);
   ponerTarjeta(htmlTarjeta(n), ancla, false);
   resaltarNodo(n);
 }
@@ -666,6 +1029,7 @@ function fijarNodo(i, ancla) {
   if (!n) return;
   G.fija = null;
   const relacionar = CONECTABLES.has(tipoDe(centro())) && CONECTABLES.has(tipoDe(n.sel));
+  $('#grafo-tarjeta')?.setAttribute('data-sel', n.sel);
   const acciones = `<div class="grafo-tarjeta__acciones"><button type="button" class="be-btn be-btn--sm be-btn--primary" data-grafo-centro="${esc(n.sel)}">Poner en el centro</button>${relacionar ? `<button type="button" class="be-btn be-btn--sm" data-grafo-relacionar="${esc(n.sel)}">¿Cómo se relaciona con ${esc(nombreDe(n.sel))}?</button>` : ''}</div>`;
   ponerTarjeta(htmlTarjeta(n, `${acciones}<p class="grafo-tarjeta__pista">Otro toque o Intro en el nodo lo pone en el centro.</p>`), ancla, true);
   marcarFija(`n${i}`, ancla);
@@ -676,8 +1040,9 @@ function fijarResto(grupo, ancla) {
   const ns = G.restos[grupo] || [];
   if (!ns.length) return;
   G.fija = null;
-  const filas = ns.map((n) => `<li><button type="button" class="grafo-resto__fila" data-grafo-centro="${esc(n.sel)}"><span class="be-node be-node--${claseNodo(n.sel)} be-node--sm" aria-hidden="true">${esc(inicial(n.sel))}</span><span class="grafo-resto__texto"><span class="grafo-resto__nombre">${esc(nombreDe(n.sel))}</span><span class="grafo-resto__meta">${esc(metaNodo(n))}</span></span></button></li>`).join('');
-  ponerTarjeta(`<div class="be-card__pad"><div class="be-card__eyebrow">${esc(nombreDe(centro()))} · ${esc(textoResto(grupo, ns.length))}</div><ul class="grafo-resto">${filas}</ul></div>`, ancla, true);
+  const fila = (n) => `<li><button type="button" class="grafo-resto__fila" data-grafo-centro="${esc(n.sel)}"><span class="be-node be-node--${claseNodo(n.sel)} be-node--sm" aria-hidden="true">${esc(inicial(n.sel))}</span><span class="grafo-resto__texto"><span class="grafo-resto__nombre">${esc(nombreDe(n.sel))}</span><span class="grafo-resto__meta">${esc(metaNodo(n))}</span></span></button></li>`;
+  $('#grafo-tarjeta')?.removeAttribute('data-sel');
+  ponerTarjeta(`<div class="be-card__pad"><div class="be-card__eyebrow">${esc(nombreDe(centro()))} · ${esc(textoResto(grupo, ns.length))}</div>${foldGroupsHtml(ns, fila, 'grafo-resto')}</div>`, ancla, true);
   marcarFija(`g${grupo}`, ancla);
 }
 function marcarFija(clave, ancla) {
@@ -736,7 +1101,7 @@ function seguirSeleccion() {
 }
 function cerrarGrafo(silencioso) {
   if (!abierto()) return;
-  G.ruta = []; G.clave = ''; G.leyenda = null;
+  G.ruta = []; G.clave = ''; G.leyenda = null; G.openFolds.clear();
   ocultarTarjeta();
   pintarGrafo(true);
   estudio.relleno();
@@ -1062,7 +1427,8 @@ function iniciar() {
     if (t.closest('[data-grafo-cerrar]')) { cerrarGrafo(); return; }
     const sector = t.closest('[data-grafo-sector]');
     if (sector) { const g = sector.dataset.grafoSector; if (G.ocultos.has(g)) G.ocultos.delete(g); else G.ocultos.add(g); pintarGrafo(true); return; }
-    if (t.closest('[data-grafo-vigente]')) { G.vigente = !G.vigente; pintarGrafo(true); BE.guardarHash(); return; }
+    const vig = t.closest('[data-grafo-vigente]');
+    if (vig) { if (vig.getAttribute('aria-disabled') === 'true') return; G.vigente = !G.vigente; pintarGrafo(true); BE.guardarHash(); return; }
     const ab = t.closest('[data-grafo-abrir]');
     if (ab) { if (G.fija === `g${ab.dataset.grafoAbrir}`) ocultarTarjeta(); else fijarResto(ab.dataset.grafoAbrir, ab); return; }
     const rel = t.closest('[data-grafo-relacionar]');
@@ -1100,6 +1466,9 @@ function iniciar() {
   vg.addEventListener('focusout', (e) => ocultarTarjeta(!vg.contains(e.relatedTarget)));
   // Abrir o plegar la leyenda cambia el alto que le queda al círculo: se vuelve a colocar para que nada quede debajo.
   vg.addEventListener('toggle', (e) => {
+    // Los pliegues de la lista recuerdan si están abiertos: el cursor que avanza repinta y no debe cerrarlos.
+    const mas = e.target.dataset?.grafoListaMas;
+    if (mas) { if (e.target.open) G.openFolds.add(mas); else G.openFolds.delete(mas); return; }
     if (!e.target.matches?.('[data-grafo-leyenda]') || e.target.open === leyendaAbierta()) return;   // la recién pintada abierta también avisa
     G.leyenda = e.target.open;
     if (G.modoVisto === 'grafo') pintarGrafo(true);
@@ -1175,7 +1544,8 @@ function iniciar() {
   document.fonts?.ready.then(() => { if (abierto() && G.modoVisto === 'grafo') pintarGrafo(true); });
 }
 BE.inicios.push(iniciar);
-BE.pintores.push((c) => { seguirSeleccion(); if (abierto() && (c.cursor || c.panel)) pintarGrafo(false); });
+// Un cambio de escala (c.linea con otro ancho) cambia la banda de los sucesos cercanos: también repinta, sin mover nada.
+BE.pintores.push((c) => { seguirSeleccion(); if (abierto() && (c.cursor || c.panel || (c.linea && E.vista && E.vista[1] - E.vista[0] !== G.span))) pintarGrafo(false); });
 
 estudio.vistas.grafo = { abierta: abierto, cerrar: cerrarGrafo };
 estudio.vistas.conexion = { abierta: conAbierta, cerrar: cerrarConexion };
