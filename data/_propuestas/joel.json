@@ -1,0 +1,218 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "joel",
+ "agente": "escritor-joel",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "joel-profeta",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002481#9"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "joel-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "it-joel-libro",
+    "si-joel",
+    "w07-joel-y-amos",
+    "joel-2",
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "joel-profeta",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Joel, Libro de»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200002482",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "joel-profeta",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "petuel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "joel-1",
+      "it-petuel"
+     ],
+     "razon": "Joe 1:1 lo presenta como hijo de Petuel.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "juda",
+     "deducido": true,
+     "fuentes": [
+      "it-joel-libro",
+      "si-joel",
+      "w07-joel-y-amos",
+      "tnm-tabla",
+      "joel-1",
+      "joel-2",
+      "joel-3"
+     ],
+     "razon": "Perspicacia «Joel, Libro de» lo deduce de cómo nombra a Judá, Jerusalén y el templo (Joe 3:1, 2, 16-20; 1:9, 14; 2:17, 32). «Toda Escritura», la tabla de libros y La Atalaya de 2007 dan Judá.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "it-joel-libro",
+      "si-joel",
+      "joel-1",
+      "joel-2",
+      "joel-3"
+     ],
+     "razon": "Perspicacia «Joel, Libro de» dice que quizás residió en Jerusalén (Joe 3:1, 2, 16-20; 1:9, 14; 2:17, 32). «Toda Escritura» duda entre Jerusalén y Judá, por su trato con el templo (Joe 1:13, 14; 2:1, 15, 16).",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "joel-profeta",
+   "campo": "no_afirmamos",
+   "antes": null,
+   "despues": [
+    "Que viviera con seguridad en Jerusalén: Perspicacia «Joel, Libro de» solo dice «quizás», y «Toda Escritura» duda entre Jerusalén y Judá."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "joel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Mar oriental",
+     "nota": "Así lo llama Joe 2:20, porque cerraba por el este la tierra de Israel, frente al mar occidental (Perspicacia «Mar Salado», apartado «Nombre»)."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-salado",
+   "campo": "fuentes",
+   "valores": [
+    "joel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-grande",
+   "campo": "fuentes",
+   "valores": [
+    "joel-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tiro",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sidon",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "filistea",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "reino-de-saba",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "egipto",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "edom",
+   "campo": "fuentes",
+   "valores": [
+    "joel-3"
+   ]
+  }
+ ],
+ "preguntas": [
+  "Joe 3:18: ¿sigue el valle de las Acacias con ficha? Perspicacia «Sitim», núm. 2, le da un sitio posible (curso bajo del Cedrón), pero La adoración pura (recuadro 19A) toma el manantial que lo riega como figura. Si se prefiere la regla de la sección 4 (lugar de profecía simbólica), la ficha pasa a la nota del tramo 18."
+ ]
+}
