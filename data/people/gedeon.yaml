@@ -5,6 +5,9 @@ names:
 - name: Gedeón
 - name: Jerubaal
   note: Nombre que le dio su padre Joás cuando derribó el altar de Baal (Jue 6:32).
+- name: Jerubéset
+  note: Así lo llama 2Sa 11:21. Perspicacia «Jerubéset» lo toma por una variante de Jerubaal; quizá el escritor cambió Baal
+    por la palabra hebrea para «vergüenza».
 summary: Juez de la tribu de Manasés, hijo de Joás, que vivía en Ofrá. Derribó el altar de Baal de su padre y con pocos
   hombres libró a Israel de Madián. Hubo paz los cuarenta años que juzgó.
 reason: Perspicacia «Gedeón», párr. 2, 5, 6 y 16; Jue 6:11 a 8:28.
@@ -13,6 +16,8 @@ sources:
 - jueces-6
 - jueces-7
 - jueces-8
+- 2-samuel-11
+- it-jerubeset
 links:
 - title: 'Perspicacia: «Gedeón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001685
@@ -20,6 +25,9 @@ links:
 - title: Jueces 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
   type: bible
+- title: 'Perspicacia: «Jerubéset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002434
+  type: perspicacia
 perspicacia: '1200001685'
 checked_on: '2026-09-29'
 status: verified

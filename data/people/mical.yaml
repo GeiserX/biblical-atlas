@@ -4,8 +4,8 @@ name: Mical
 names:
 - name: Mical
 perspicacia: '1200003036'
-summary: Hija menor del rey Saúl. Se casó con David y lo ayudó a huir de su padre; después despreció a David cuando danzó
-  delante del Arca, y murió sin hijos.
+summary: Hija menor de Saúl, casada con David, a quien ayudó a huir. Saúl la dio a Paltiel y David la recuperó. Despreció
+  a David cuando danzó ante el Arca; sin hijos propios, quizá crió a los de Merab.
 reason: Perspicacia «Mical»; 1Sa 14:49.
 sources:
 - it-mical
@@ -13,6 +13,9 @@ sources:
 - 1-samuel-18
 - 1-samuel-19
 - 1-samuel-25
+- 2-samuel-3
+- 2-samuel-6
+- 2-samuel-21
 links:
 - title: 'Perspicacia: «Mical»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003036
@@ -36,8 +39,25 @@ relations:
   - it-mical
   - 1-samuel-18
   - 1-samuel-25
+  - 2-samuel-3
+  - 2-samuel-6
   reason: '1Sa 14:49: la menor de las hijas de Saúl.'
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: is-boset
+  word: brother
+  inferred: true
+  sources:
+  - 2-samuel-3
+  - it-is-boset
+  reason: '2Sa 3:13, 14: los dos son hijos de Saúl; Perspicacia «Is-bóset» la llama su hermana.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: 'Se añade que Saúl la dio a Paltiel y David la recuperó (2Sa 3:13-16). 2Sa 21:8 llama hijos de Mical a los cinco
+    de Adriel; Perspicacia «Mical» y «Merab»: eran de Merab y ella los crió.'
+  source: 2-samuel-21
 checked_on: '2026-09-29'
 status: verified

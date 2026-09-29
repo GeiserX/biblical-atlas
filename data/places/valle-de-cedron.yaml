@@ -20,6 +20,7 @@ sources:
 - it-cedron
 - juan-18
 - openbible-geo
+- 2-samuel-15
 links:
 - title: 'Perspicacia: «Cedrón, Valle torrencial de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002606
@@ -28,5 +29,5 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/18
   type: bible
 search: Valle de Cedrón
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified

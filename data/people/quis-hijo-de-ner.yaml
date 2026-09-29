@@ -7,7 +7,7 @@ perspicacia: 1200002631#3
 disambiguation: El padre del rey Saúl, entrada núm. 3 de Perspicacia «Quis». No es su tío, el Quis hijo de Jeiel, ni los levitas
   de ese nombre.
 summary: Benjamita de buena posición, de la familia de los matritas, padre de Saúl, el primer rey de Israel. Perspicacia lo
-  hace hijo de Ner y hermano de Abner.
+  hace hijo de Ner y hermano de Abner. Su tumba estaba en Zelá, en Benjamín.
 reason: Perspicacia «Quis», núm. 3; Hch 13:21 lo nombra como padre de Saúl.
 sources:
 - it-quis
@@ -15,6 +15,7 @@ sources:
 - 1-samuel-9
 - 1-samuel-10
 - 1-samuel-14
+- 2-samuel-21
 links:
 - title: 'Perspicacia: «Quis»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002631
@@ -22,6 +23,10 @@ links:
 - title: Hechos 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
   type: bible
+history:
+- date: '2026-09-29'
+  change: Se añade su tumba en Zelá, donde David enterró los huesos de Saúl y de Jonatán (2Sa 21:14).
+  source: 2-samuel-21
 checked_on: '2026-09-29'
 status: verified
 relations:

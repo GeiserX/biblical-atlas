@@ -3,6 +3,8 @@ id: monte-guilboa
 name: Monte Guilboa
 names:
 - name: Guilboa
+- name: Montañas de Guilboa
+  note: Así lo llama la endecha de David por Saúl y Jonatán (2Sa 1:21).
 type: mountain
 lat: 32.433889
 lon: 35.414444
@@ -18,6 +20,7 @@ sources:
 - openbible-geo
 - 1-samuel-31
 - 1-samuel-28
+- 2-samuel-1
 links:
 - title: 'Perspicacia: «Guilboa»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001693

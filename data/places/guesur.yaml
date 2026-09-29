@@ -11,7 +11,7 @@ coord_source: openbible:af6c325
 coord_url: https://www.openbible.info/geo/ancient/af6c325/geshur
 coord_note: Punto representativo de OpenBible, en Afec, al este del mar de Galilea.
 summary: Reino arameo vecino de la región de Argob, en Basán, con Maacá al norte. Israel llegó hasta su frontera pero no lo
-  tomó. Absalón se refugió allí, en la tierra de su abuelo Talmai.
+  tomó. Absalón se refugió allí tres años con su abuelo Talmái, el rey.
 reason: 'Perspicacia «Guesur», núm. 1; Dt 3:14 nombra a los guesuritas como límite de lo que tomó Jaír. OpenBible: solo el
   punto.'
 sources:
@@ -19,6 +19,10 @@ sources:
 - openbible-geo
 - deuteronomio-3
 - josue-13
+- 2-samuel-3
+- 2-samuel-13
+- 2-samuel-14
+- 2-samuel-15
 links:
 - title: 'Perspicacia: «Guesur»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001667
@@ -26,5 +30,9 @@ links:
 - title: Deuteronomio 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
   type: bible
+history:
+- date: '2026-09-29'
+  change: El nombre del rey va con la grafía de la TNM, Talmái (2Sa 13:37), y se añaden los tres años de 13:38.
+  source: 2-samuel-13
 checked_on: '2026-09-29'
 status: verified

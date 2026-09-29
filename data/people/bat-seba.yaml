@@ -11,6 +11,8 @@ sources:
 - it-bat-seba
 - mateo-1
 - salmos-51
+- 2-samuel-11
+- 2-samuel-12
 links:
 - title: 'Perspicacia: «Bat-seba»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000581
@@ -32,3 +34,23 @@ relations:
     es seguro que sea el mismo Eliam (2Sa 11:3; 23:34).'
   checked_on: '2026-09-29'
   status: pending
+- type: kin
+  person: eliam-padre-de-bat-seba
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-11
+  - it-eliam
+  reason: 2Sa 11:3 la presenta como hija de Eliam.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-samuel-11
+  - it-urias
+  reason: '2Sa 11:2-4: David la ve desde la azotea del palacio y ella vuelve a su casa; Perspicacia «Urías», núm. 1, sitúa
+    su casa en Jerusalén, cerca del palacio.'
+  checked_on: '2026-09-29'
+  status: verified

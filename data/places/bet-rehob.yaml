@@ -3,6 +3,8 @@ id: bet-rehob
 name: Bet-Rehob
 names:
 - name: Bet-Rehob
+- name: Rehob
+  note: Forma breve que usa 2Sa 10:8, según Perspicacia «Bet-rehob».
 type: kingdom
 lat: 34.008889
 lon: 36.145278
@@ -19,6 +21,7 @@ sources:
 - it-bet-rehob
 - openbible-geo
 - jueces-18
+- 2-samuel-10
 links:
 - title: 'Perspicacia: «Bet-rehob»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000707

@@ -55,6 +55,29 @@ sources:
 - 1-samuel-28
 - 1-samuel-29
 - 1-samuel-30
+- 2-samuel-1
+- 2-samuel-2
+- 2-samuel-3
+- 2-samuel-4
+- 2-samuel-6
+- 2-samuel-7
+- 2-samuel-8
+- 2-samuel-9
+- 2-samuel-10
+- 2-samuel-11
+- 2-samuel-12
+- 2-samuel-13
+- 2-samuel-14
+- 2-samuel-15
+- 2-samuel-16
+- 2-samuel-17
+- 2-samuel-18
+- 2-samuel-19
+- 2-samuel-20
+- 2-samuel-21
+- 2-samuel-22
+- 2-samuel-23
+- 2-samuel-24
 links:
 - title: 'Perspicacia: «David»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
@@ -89,6 +112,7 @@ relations:
   sources:
   - it-david
   - 2-samuel-5
+  - 2-samuel-11
   reason: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
   checked_on: '2026-09-29'
   status: verified
@@ -107,17 +131,21 @@ relations:
   - 1-samuel-20
   - 1-samuel-22
   - 1-samuel-25
+  - 2-samuel-23
   reason: Rut 4:17 y 22.
   checked_on: '2026-09-29'
   status: verified
 - type: kin
   person: bat-seba
   word: wife
-  inferred: true
+  inferred: false
   sources:
   - mateo-1
   - it-bat-seba
-  reason: 'Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.'
+  - 2-samuel-11
+  - 2-samuel-12
+  reason: '2Sa 11:27: tras el luto, David la lleva a su casa y se casa con ella; 12:24 la llama su esposa. Mt 1:6: tuvo a
+    Salomón con ella.'
   checked_on: '2026-09-29'
   status: verified
 - type: died_in
@@ -139,8 +167,9 @@ relations:
   - 1-samuel-22
   - it-david
   - 1-samuel-17
-  reason: '1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo
-    llama jefe de la guardia del rey.'
+  - 2-samuel-12
+  reason: '1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec
+    lo llama jefe de la guardia del rey.'
   checked_on: '2026-09-29'
   status: verified
 - type: lived_in
@@ -162,6 +191,9 @@ relations:
   - 1-samuel-19
   - it-mical
   - 1-samuel-25
+  - 2-samuel-3
+  - 2-samuel-6
+  - it-david
   reason: '1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.'
   checked_on: '2026-09-29'
   status: verified
@@ -197,6 +229,8 @@ relations:
   - it-abigail
   - 1-samuel-27
   - 1-samuel-30
+  - 2-samuel-2
+  - 2-samuel-3
   reason: '1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.'
   checked_on: '2026-09-29'
   status: verified
@@ -209,6 +243,8 @@ relations:
   - it-ahinoam
   - 1-samuel-27
   - 1-samuel-30
+  - 2-samuel-2
+  - 2-samuel-3
   reason: '1Sa 25:43: también se había casado con Ahinoam, de Jezreel.'
   checked_on: '2026-09-29'
   status: verified
@@ -228,6 +264,7 @@ relations:
   - 1-samuel-27
   - it-ziqlag
   - 1-samuel-30
+  - 2-samuel-1
   reason: '1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.'
   checked_on: '2026-09-29'
   status: verified
@@ -264,6 +301,93 @@ relations:
   reason: 2Sa 15:12 llama a Ahitofel consejero de David, y 16:23 dice que su consejo se tenía como si viniera de Dios.
   checked_on: '2026-09-29'
   status: verified
+- type: lived_in
+  place: hebron
+  date:
+    from: -1076
+    to: -1069
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1077-1070 a.e.c.
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-david
+  - it-hebron
+  - si-3
+  - 2-samuel-3
+  - it-sefatias
+  - 2-samuel-5
+  reason: '2Sa 2:1-3, 11: sube a Hebrón con los suyos y reina allí siete años y seis meses, de 1077 a 1070 a.e.c. (estudio
+    3).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zeruya
+  word: sister
+  inferred: false
+  sources:
+  - it-zeruya
+  - it-david
+  reason: 1Cr 2:16 da a Zeruyá por hermana de los hijos de Jesé; Perspicacia «Zeruyá» y «David» ven posible que solo fuera
+    media hermana.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maaca-hija-de-talmai
+  word: wife
+  inferred: true
+  sources:
+  - 2-samuel-3
+  - it-maaca
+  reason: 2Sa 3:3 la da como madre de su hijo Absalón; Perspicacia «Maacá», núm. 5, la llama esposa de David.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: haguit
+  word: wife
+  inferred: true
+  sources:
+  - 2-samuel-3
+  - it-haguit
+  reason: 2Sa 3:4 la da como madre de su hijo Adonías; Perspicacia «Haguit» la llama esposa de David.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abital
+  word: wife
+  inferred: true
+  sources:
+  - 2-samuel-3
+  - it-abital
+  reason: 2Sa 3:4 la da como madre de su hijo Sefatías; Perspicacia «Abital» la cuenta entre sus esposas.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: egla
+  word: wife
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-egla
+  reason: '2Sa 3:5: Itream era hijo de su esposa Eglá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abigail-hija-de-nahas
+  word: sister
+  inferred: false
+  sources:
+  - it-abigail
+  reason: 1Cr 2:13-16 la pone entre las hermanas de los hijos de Jesé; Perspicacia «Abigail», núm. 2, duda si era media hermana.
+  checked_on: '2026-09-29'
+  status: verified
 perspicacia: '1200001130'
+history:
+- date: '2026-09-29'
+  change: 'La relación con Bat-Seba la dice el texto (2Sa 11:27; 12:24): pasa a inferred false y la razón cita esos versículos.'
+  source: 2-samuel-11
 checked_on: '2026-09-29'
 status: verified

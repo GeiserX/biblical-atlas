@@ -8,6 +8,7 @@ names:
 disambiguation: Rey de Israel, hijo de Acab; su cuñado Jehoram reinaba a la vez en Judá.
 distinct_from:
 - jehoram-de-juda
+- joram-hijo-de-toi
 date:
   from: -916
   to: -904
@@ -61,5 +62,5 @@ relations:
   reason: Jehú lo mató junto a Jezreel y lo echó al campo de Nabot (2Re 9:24-26).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified
