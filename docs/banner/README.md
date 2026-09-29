@@ -1,5 +1,37 @@
 # Banner
 
+## Ocho: la línea con sus fechas y su final
+
+Nos quedamos con la 7.1, la línea del tiempo al pie, y le hacemos dos cambios. El primero es poner más fechas, porque en la 7.1 solo los dos extremos llevaban año, 4026 a.e.c. y 33 e.c. El segundo es decir dónde acaba la línea. Ya llegaba al año 100 e.c., que es donde termina la [línea del tiempo del sitio](../../site/js/linea.js), pero el último año escrito era 33 e.c., así que parecía que se paraba ahí. Ahora el extremo derecho lleva su muesca y dice «100 e.c.».
+
+Las tres variantes son la 7.1 con esos dos cambios y solo se distinguen en cuántas fechas llevan. El nombre, el lema, el relieve, la rama salvia y el crédito del relieve son los mismos. Los años salen de [`data/periodos`](../../data/periodos), con la cronología de la TNM, menos el del pacto con Abrahán, que está en [`data/eventos`](../../data/eventos), y el 100 e.c., que es el final de la línea del sitio. Los años van debajo de la línea, como en la 7.1. Cuando dos muescas están tan juntas que sus años se pisarían, uno sube encima de la línea. Le pasa siempre a 33 e.c., que está a solo 67 años del final. Los extremos conservan la letra de la 7.1, y las fechas de en medio solo se achican cuando no caben.
+
+![Las tres variantes con más fechas y el final de la línea](propuestas-8/comparativa.png)
+
+### 8.1. Seis fechas
+
+Lleva seis años: 4026 a.e.c., la creación de Adán; 2370 a.e.c., el Diluvio; 1513 a.e.c., el éxodo; 607 a.e.c., la caída de Jerusalén; 33 e.c. y 100 e.c. Las demás épocas conservan su muesca pequeña, sin año. Todo cabe con la letra de los extremos, y es la que mejor se lee en el móvil.
+
+![Variante 8.1](propuestas-8/1-seis-fechas/vista.png)
+
+![Vista previa social 8.1](propuestas-8/1-seis-fechas/social.png)
+
+### 8.2. Nueve fechas
+
+Son las seis de la 8.1 y tres más en el centro: 1943 a.e.c., cuando entra en vigor el pacto con Abrahán; 1077 a.e.c., cuando empieza a reinar David, y 537 a.e.c., cuando los judíos vuelven de Babilonia. El pacto es la única fecha del sitio entre el Diluvio y el éxodo, porque en `data/periodos` no hay ninguna, y llena el tramo más vacío. David parte el hueco entre el éxodo y 607, y el regreso cierra los setenta años de destierro que empiezan en 607. El 537 queda tan cerca del 607 que va encima de la línea, como el 33. Las fechas de en medio son un poco más pequeñas que los extremos para que no se toquen.
+
+![Variante 8.2](propuestas-8/2-nueve-fechas/vista.png)
+
+![Vista previa social 8.2](propuestas-8/2-nueve-fechas/social.png)
+
+### 8.3. Las épocas con su año
+
+Cada una de las nueve épocas del sitio, las mismas de la 7.2, lleva el año en que empieza: 4026 a.e.c., de Adán al Diluvio; 2370 a.e.c., los patriarcas; 1513 a.e.c., el éxodo y el desierto; 1473 a.e.c., Josué y los jueces; 1117 a.e.c., los reyes de Israel y Judá; 607 a.e.c., el destierro y el regreso; d. 443 a.e.c., entre Malaquías y Mateo; 2 a.e.c., Jesús en la tierra, y 33 e.c., la congregación. Al final va 100 e.c. La época entre Malaquías y Mateo empieza después de 443 a.e.c., sin año exacto, y por eso lleva la «d.». Hay tres parejas de muescas casi juntas, así que los años de 1473, d. 443, 2 a.e.c. y 33 e.c. van encima de la línea, y 2 a.e.c. y 33 e.c. se reparten a los dos lados de su pareja. Es la que más cuenta y también la de letra más pequeña. Las fechas de en medio miden 11,5 píxeles, contra los 15 de los extremos, y en el móvil cuesta leerlas.
+
+![Variante 8.3](propuestas-8/3-una-fecha-por-epoca/vista.png)
+
+![Vista previa social 8.3](propuestas-8/3-una-fecha-por-epoca/social.png)
+
 ## Siete: la marca de agua en el mar con la línea del tiempo
 
 De la ronda anterior preferimos la 4.1, la marca de agua en el mar, antes que la 4.6, porque la rama tenue no dice nada. Estas seis variantes parten de la 4.1 tal cual, con dos cambios: la marca del mar es ahora la rama oficial en verde salvia, con sus tres colores y casi transparente, y cada variante añade una línea del tiempo, porque el sitio es las dos cosas, la Biblia en el mapa y en el tiempo. En todas el lema es «La Biblia en el mapa y en el tiempo», el olivo aparece una sola vez y los colores son los de la paleta Salvia. Las fechas siguen la cronología de la TNM y las épocas salen de [`data/periodos`](../../data/periodos).
