@@ -28,10 +28,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Resá, Sealtiel y Nerí.** `resa` (Lu 3:27) va como descendiente de Zorobabel, con la relación `antepasado`, igual que Abiud. `sealtiel` lleva a `neri` como pariente sin grado, porque Perspicacia solo ve posible que fuera su yerno.
 - **Janai el gadita (1Cr 5:12).** Perspicacia «Janai» (`1200002318`) no es el Janaí de Lu 3:24, que ya existe como `janai-hijo-de-jose` (`1200002320`) con la fuente `it-janai-hijo-de-jose`. El gadita puede llevar `janai`, que queda libre; su propuesta añade `no_confundir_con` en las dos fichas.
 
-## Para Levítico
-
-- **Nadab y Abihú.** Existen `nadab-hijo-de-aaron` y `abihu`, con fecha hasta 1512 a.e.c. Su muerte por el fuego ilegítimo (Le 10:1, 2) la crea Levítico. Los que sacan los cuerpos son `misael-hijo-de-uziel` y `elizafan-hijo-de-uziel` (Le 10:4 escribe Elzafán, que ya está en `nombres`).
-
 ## Para Números
 
 - **Jetró es Reuel.** Nú 10:29 lo llama Reuel: es `jetro` (clave `1200002454`), no `reuel-hijo-de-esau`.
@@ -40,6 +36,10 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El tabernáculo.** Nú 7:1 está en los `pasajes` de `se-monta-el-tabernaculo`, y Nú 9:15, 16 en los de `la-gloria-de-jehova-llena-el-tabernaculo`: van en los tramos de esos capítulos.
 - **Las etapas de Nú 33.** Los ids ya creados son `rameses`, `sucot-de-egipto`, `ezam`, `pihahirot`, `migdol`, `baal-zefon`, `cruce-del-mar-rojo`, `mara`, `elim`, `mar-rojo`, `desierto-de-sin`, `refidim` y `desierto-de-sinai`. Los sucesos son `exodo` (la salida), `israel-cruza-el-mar-rojo`, `jehova-endulza-el-agua-de-mara`, `israel-acampa-en-elim` y `codornices-y-mana-en-el-desierto-de-sin`.
 - **El día de la salida.** Nú 33:3 dice que salieron de Ramesés el día 15. `exodo` se queda en el 14 de nisán: Perspicacia «Éxodo» pone el comienzo de la marcha hacia Sucot antes de que acabara el 14.
+- **Nadab y Abihú.** Levítico creó `muerte-de-nadab-y-abihu` (Le 10:1-11, con la ley del vino que sigue a la muerte) y la relación `murio_en` `desierto-de-sinai` de los dos, con `deducido: true`. Nú 3:4 y 26:61 añaden su pasaje al suceso; Nú 3:4 nombra el desierto de Sinaí, así que `numeros-3` va también en esas dos relaciones.
+- **Aarón y Eleazar.** A `eleazar-hijo-de-aaron` le falta la relación `sucede_a` `aaron` (Nú 20:25-28). No hay periodo del sumo sacerdocio de Aarón: si Números lo crea, empieza en `instalacion-del-sacerdocio` (Le 8, abib de 1512 a.e.c.) y acaba con su muerte en el monte Hor.
+- **Las leyes de Levítico.** Sus sucesos llevan la serie `levitico` y la fecha abib (nisán) de 1512 a.e.c., con `aprox: true` salvo los de Le 8-10, que tienen día. Nú 1:1 es el día 1 del mes segundo, así que los sucesos de Números van después.
+- **Cohat.** El `resumen` de `core-hijo-de-izhar` escribe «Qohat», la grafía de Perspicacia; la TNM escribe Cohat (Éx 6:16). Lo corrige Números, con su `historial`, cuando lea Nú 16.
 
 ## Para Deuteronomio
 
@@ -55,6 +55,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Nombres que Perspicacia solo da como probables.** Ladán (Libní), Aminadab hijo de Cohat (Izhar) y Ebiasaf (Abiasaf, que tiene artículo propio) llevan ficha aparte y un `mismo_que` con `deducido: true` y `estado: pendiente` hacia `libni-hijo-de-guerson`, `izhar-hijo-de-cohat` y `abiasaf`.
 - **Nun.** Su padre Elisamá y su tribu, Efraín (1Cr 7:20-27), faltan en `nun`.
 - **Hur.** `hur-hijo-de-caleb` (1Cr 2:19, 20) ya existe, con un `mismo_que` pendiente desde `hur-companero-de-moises`.
+- **Nadab y Abihú.** 1Cr 24:2 añade su pasaje a `muerte-de-nadab-y-abihu`, el suceso que creó Levítico.
 
 ## Para 2 Timoteo
 

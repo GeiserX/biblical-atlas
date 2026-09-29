@@ -83,7 +83,7 @@ relaciones:
   fuentes:
   - it-moises
   - exodo-6
-  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Qohat (Éx 6:16-20).'
+  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Cohat (Éx 6:16-20).'
   estado: verificado
 - tipo: nacio_en
   lugar: egipto
@@ -195,5 +195,9 @@ relaciones:
   razon: 'Éx 2:21: se casa con la hija de Reuel, que la nota de 2:18 identifica con Jetró.'
   estado: verificado
 perspicacia: '1200003118'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Grafía: la razón de su parentesco con Leví escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
+  fuente: exodo-6
 consultado: '2026-09-29'
 estado: verificado

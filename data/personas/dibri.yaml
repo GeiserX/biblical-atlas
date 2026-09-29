@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dibri
+nombre: Dibrí
+nombres:
+- nombre: Dibrí
+perspicacia: '1200001174'
+resumen: Israelita de la tribu de Dan, padre de Selomit. El hijo que ella tuvo con un egipcio fue apedreado en el desierto,
+  poco después de salir de Egipto, por maldecir el nombre de Jehová.
+razon: Perspicacia «Dibrí»; Le 24:10-16, 23.
+fuentes:
+- it-dibri
+- levitico-24
+enlaces:
+- titulo: 'Perspicacia: «Dibrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001174
+  tipo: perspicacia
+- titulo: Levítico 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/24
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: dan-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - levitico-24
+  - it-dibri
+  razon: Le 24:11 pone a su hija en la tribu de Dan; Perspicacia «Dibrí» lo da a él como danita.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,874 @@
+{
+  "formato": "biblical-earth/propuesta-cobertura/1",
+  "libro": "levitico",
+  "agente": "escritor-levitico",
+  "leido": "2026-09-29",
+  "cobertura": {},
+  "fuentes": {},
+  "cambios": [
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-1"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-2"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-4"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-5"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-6"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-6"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-7"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-7"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "monte-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-7"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "desierto-de-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-7"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion",
+        "it-sumo-sacerdote"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nadab-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "abihu",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "eleazar-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "itamar",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "desierto-de-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-8",
+        "it-instalacion"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nadab-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "abihu",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "eleazar-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "itamar",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "desierto-de-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-9"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "uziel-hijo-de-cohat",
+          "relacion": "tío",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10",
+            "it-uziel"
+          ],
+          "razon": "Le 10:4 llama a Uziel tío de Aarón.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nadab-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "nadab-hijo-de-aaron",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "aaron",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:1: Nadab y Abihú, los hijos de Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "pariente",
+          "persona": "abihu",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:1: Nadab y Abihú, los hijos de Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "pariente",
+          "persona": "eleazar-hijo-de-aaron",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:6: Eleazar, otro hijo de Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "pariente",
+          "persona": "itamar",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:6: Itamar, otro hijo de Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "murio_en",
+          "lugar": "desierto-de-sinai",
+          "fecha": {
+            "desde": -1511,
+            "hasta": -1511,
+            "precision": "año",
+            "aprox": false,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "1512 a.e.c."
+          },
+          "deducido": true,
+          "fuentes": [
+            "levitico-10",
+            "it-nadab",
+            "it-tabernaculo"
+          ],
+          "razon": "Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "abihu",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "abihu",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "aaron",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:1: Nadab y Abihú, los hijos de Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "murio_en",
+          "lugar": "desierto-de-sinai",
+          "fecha": {
+            "desde": -1511,
+            "hasta": -1511,
+            "precision": "año",
+            "aprox": false,
+            "tipo": "anclada",
+            "cronologia": "tnm",
+            "texto": "1512 a.e.c."
+          },
+          "deducido": true,
+          "fuentes": [
+            "levitico-10",
+            "it-abihu",
+            "it-tabernaculo"
+          ],
+          "razon": "Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "eleazar-hijo-de-aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "eleazar-hijo-de-aaron",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "aaron",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:6, 12: uno de los hijos que le quedaban a Aarón.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "pariente",
+          "persona": "itamar",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:6, 12 y 16 nombran juntos a Eleazar e Itamar como los dos hijos vivos de Aarón.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "itamar",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "itamar",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "aaron",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:6, 12: uno de los hijos que le quedaban a Aarón.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "misael-hijo-de-uziel",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "misael-hijo-de-uziel",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "uziel-hijo-de-cohat",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:4: Misael y Elzafán, hijos de Uziel.",
+          "estado": "verificado"
+        },
+        {
+          "tipo": "pariente",
+          "persona": "elizafan-hijo-de-uziel",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:4: Misael y Elzafán, hijos de Uziel.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "misael-hijo-de-uziel",
+      "campo": "razon",
+      "antes": "Perspicacia «Misael», núm. 1; Éx 6:22.",
+      "despues": "Perspicacia «Misael», núm. 1; Éx 6:22; Le 10:4, 5.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "El resumen cuenta que sacó los cuerpos de Nadab y Abihú, pero la ficha no citaba Le 10, de donde sale.",
+        "fuente": "levitico-10"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "elizafan-hijo-de-uziel",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "elizafan-hijo-de-uziel",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "uziel-hijo-de-cohat",
+          "relacion": "padre",
+          "deducido": false,
+          "fuentes": [
+            "levitico-10"
+          ],
+          "razon": "Le 10:4: Misael y Elzafán, hijos de Uziel.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "elizafan-hijo-de-uziel",
+      "campo": "razon",
+      "antes": "Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22.",
+      "despues": "Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "El resumen cuenta que retiró los cuerpos de Nadab y Abihú y lo llama primo de Aarón, pero la ficha no citaba Le 10, de donde sale.",
+        "fuente": "levitico-10"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "uziel-hijo-de-cohat",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "cambiar",
+      "tipo": "personas",
+      "id": "uziel-hijo-de-cohat",
+      "campo": "razon",
+      "antes": "Perspicacia «Uziel», núm. 1; Éx 6:18, 22.",
+      "despues": "Perspicacia «Uziel», núm. 1; Éx 6:18, 22; Le 10:4.",
+      "historial": {
+        "fecha": "2026-09-29",
+        "cambio": "El resumen lo llama tío de Aarón; Le 10:4 lo dice así y la ficha no lo citaba.",
+        "fuente": "levitico-10"
+      }
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "desierto-de-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-10"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-11"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-11"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-12"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-13"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-13"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-14"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-14"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-15"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-15"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-16"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-16"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "relaciones",
+      "valores": [
+        {
+          "tipo": "pariente",
+          "persona": "aaron",
+          "relacion": "hermano",
+          "deducido": false,
+          "fuentes": [
+            "levitico-16"
+          ],
+          "razon": "Le 16:2: Jehová pide a Moisés que avise a su hermano Aarón.",
+          "estado": "verificado"
+        }
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-17"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-17"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-18"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-19"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-20"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-21"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-21"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-22"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-22"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-23"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-24"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "aaron",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-24"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-25"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "monte-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-25"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-26"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "monte-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-26"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "personas",
+      "id": "moises",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-27"
+      ]
+    },
+    {
+      "op": "anadir",
+      "tipo": "lugares",
+      "id": "monte-sinai",
+      "campo": "fuentes",
+      "valores": [
+        "levitico-27"
+      ]
+    }
+  ],
+  "preguntas": []
+}
