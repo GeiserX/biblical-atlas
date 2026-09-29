@@ -20,6 +20,7 @@ sources:
 - hch-9
 - hechos-10
 - openbible-geo
+- jonas-1
 links:
 - title: 'Perspicacia: «Jope»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002507
@@ -27,5 +28,5 @@ links:
 - title: Hechos 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified

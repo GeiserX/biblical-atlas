@@ -336,3 +336,11 @@
   to: abias-hijo-de-samuel/holds_office/beer-seba/judge
   removed_on: '2026-09-29'
   reason: 1Sa 8:2 dice dónde juzgaba, no dónde vivía. Es un cargo con su lugar.
+- from: ezequias-antepasado-de-sofonias/same_as/ezequias
+  to: ezequias/same_as/ezequias-antepasado-de-sofonias
+  removed_on: '2026-09-29'
+  reason: La misma identidad queda escrita en la ficha del rey Ezequías, cuyo id va primero.
+- from: ciaxares/accompanies/nabopolasar
+  to: ciaxares/tie/nabopolasar/ally
+  removed_on: '2026-09-29'
+  reason: 'Perspicacia «Medos, Media», párr. 12: se alió con Nabopolasar contra Asiria. Es una alianza, no una compañía.'

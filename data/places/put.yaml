@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: put
+name: Put
+names:
+- name: Put
+  note: Pueblo que desciende de Put, hijo de Cam (Gé 10:6), y su tierra.
+type: region
+lat: 32.820946
+lon: 21.851229
+precision: uncertain
+coord_source: openbible:ad0520f
+coord_url: https://www.openbible.info/geo/ancient/ad0520f/put
+coord_note: OpenBible iguala Put con Libia y le da el punto de Cirene, el mismo de la ficha libia. Perspicacia solo ve probable
+  ese vínculo con los libios.
+summary: Tierra de los descendientes de Put, hijo de Cam, que dieron tropas a Egipto y mercenarios a Tiro. Perspicacia los
+  relaciona con los libios del norte de África, aunque Na 3:9 los nombra aparte.
+reason: 'Perspicacia «Put», párr. 1 a 3; Na 3:9. Dice que hoy no se suele aceptar que sea el Punt egipcio. Coordenada de OpenBible: solo tomamos el
+  punto.'
+not_claimed:
+- 'Que Put sea Libia: Perspicacia solo ve probable la relación, y Na 3:9 pone a Put y a los libios como pueblos distintos.'
+sources:
+- it-put
+- openbible-geo
+- nahum-3
+links:
+- title: 'Perspicacia: «Put»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003591
+  type: perspicacia
+- title: Nahúm 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

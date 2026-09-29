@@ -1,0 +1,71 @@
+# biblical-earth: fuentes de la cobertura de nahum. Esquema en docs/investigacion/README.md.
+it-elqosita:
+  title: Elqosita
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001327
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-nahum-libro:
+  title: Nahúm, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003173
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+si-nahum:
+  title: 'Libro bíblico número 34: Nahúm'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990095
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+w07-nahum-habacuc-y-sofonias:
+  title: Puntos sobresalientes de los libros de Nahúm, Habacuc y Sofonías
+  work: La Atalaya (15 de noviembre de 2007)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2007842
+  level: 1
+  published: 2007
+  checked_on: '2026-09-29'
+w89-salvacion-venganza:
+  title: La salvación será posible cuando Dios ejecute venganza
+  work: La Atalaya (15 de mayo de 1989)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1989365
+  level: 1
+  published: 1989
+  checked_on: '2026-09-29'
+it-no-amon:
+  title: No, No-amón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003264
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-asnapar:
+  title: Asnapar
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000404
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-asurbanipal:
+  title: Asurbanipal
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000430
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-cosa-repugnante:
+  title: Cosa repugnante
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001193
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+g90-meroe:
+  title: 'Meroe: testimonio de una grandeza olvidada'
+  work: ¡Despertad! (22 de junio de 1990)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/101990450
+  level: 1
+  published: 1990
+  checked_on: '2026-09-29'

@@ -5,6 +5,9 @@ names:
 - name: Maresá
 - name: Maresah
   note: Otra grafía que da la nota de Jos 15:44.
+- name: Marisá
+  note: Nombre que tuvo tras el exilio, cuando fue colonia sidonia y después fortaleza idumea (Perspicacia «Maresá, Maresah»,
+    núm. 3).
 type: city
 lat: 31.592963
 lon: 34.898241
@@ -14,14 +17,22 @@ coord_url: https://www.openbible.info/geo/ancient/a5cda86/mareshah
 coord_note: Punto de OpenBible en Tell Sandahannah (Tel Maresha).
 summary: Ciudad de la Sefelá de Judá junto a un valle que subía de la costa hacia Hebrón. Rehoboam la fortificó y cerca de
   ella venció Asá a Zérah el etíope.
-reason: 'Perspicacia «Maresá, Maresah», núm. 3; Jos 15:44; 2Cr 11:8; 14:9-13. OpenBible: solo el punto.'
+reason: 'Perspicacia «Maresá, Maresah», núm. 3; Jos 15:44; 2Cr 11:8; 14:9-13; Miq 1:15. OpenBible: solo el punto.'
 sources:
 - it-maresa
 - openbible-geo
 - josue-15
+- miqueas-1
 links:
 - title: 'Perspicacia: «Maresá, Maresah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002900
   type: perspicacia
+- title: Miqueas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
+  type: bible
+history:
+- date: '2026-09-29'
+  change: La razón cita también Miq 1:15, que nombra esta Maresá; la ficha se fundió con la de Miqueas.
+  source: miqueas-1
 checked_on: '2026-09-29'
 status: verified

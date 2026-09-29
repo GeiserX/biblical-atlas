@@ -22,5 +22,11 @@ links:
 - title: 'Perspicacia: «Maarat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002809
   type: perspicacia
+not_claimed:
+- No afirmamos que Maarat (Jos 15:59) sea la Marot de Miq 1:12. Perspicacia solo recoge que algunos las igualan.
+history:
+- date: '2026-09-29'
+  change: Se anota que no se afirma su identidad con la ciudad homónima de Miqueas 1, como hace la ficha de esa ciudad.
+  source: it-maarat
 checked_on: '2026-09-29'
 status: verified

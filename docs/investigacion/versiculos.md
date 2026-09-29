@@ -60,6 +60,7 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 | Una construcción con nombre dentro de una ciudad (una puerta de Jerusalén, el estanque de Siloam, un altar con nombre, Ebenezer) | En `names` de su ciudad, con una nota. Solo lleva ficha propia si allí pasa un suceso y OpenBible tiene su punto; entonces su `type` es el más cercano de la lista (`city` no, `region` si es un barrio) y `coord_note` dice qué es. |
 | Israel | Como pueblo, sin ficha. Como tierra o como reino del norte, el lugar `israel`, uno solo, igual que `juda` cubre el territorio de la tribu y el reino del sur. Lo crea el primer libro que lo necesita como lugar. Jacob, cuando el texto lo llama Israel, es `person:jacob`. |
 | Una tribu (la tribu de Judá) | Como pueblo, sin ficha. Su territorio es el lugar (`place:juda`); el patriarca (`person:juda-hijo-de-jacob`) solo cuando el texto habla del hombre. |
+| Un patriarca cuyo nombre designa a su pueblo o a su tierra («la casa de Jacob», «tu hermano Jacob» en Abd 10, Esaú por Edom, «los lugares altos de Isaac») | Sin `person`, ni en `entities` ni en `mentions`; la `note` dice que es el pueblo, y la tierra, si la nombra, es su lugar (`place:edom`). El patriarca va solo cuando el texto habla del hombre, también como antepasado o por su Dios («descendencia de Jacob», «Dios de Jacob»). |
 
 **Antes de crear**, se busca si ya existe: `ls data/people | grep -i <nombre>`, `grep -l "^perspicacia: .*<documento>" data/people/*.yaml` y una búsqueda en Perspicacia. El artículo de Perspicacia numera a los homónimos («1.», «2.») con los pasajes de cada uno; el individuo del capítulo es el número cuyos pasajes incluyen este capítulo.
 
@@ -118,7 +119,7 @@ roles:
 **El orden del relato es el orden de los sucesos, no el del libro.** `narrative_order: {series: <libro>, order: <capítulo × 1000 + primer versículo>}` (Rut 1:1 es `1001`) solo vale cuando el libro cuenta las cosas en el orden en que pasaron. Cuando jw.org o el propio texto sitúan un capítulo en otro momento, el suceso lleva un `order` ajustado o `after: <id>` (engancha el suceso a otro de cualquier serie), y la `reason` dice por qué. Libros y pasajes que ya sabemos que no van en orden:
 
 - Génesis 10-11: el capítulo 10 da las naciones ya repartidas y 11:1-9 cuenta cómo se dispersaron en Babel, en días de Péleg (Gé 10:25; Perspicacia «Babel»).
-- Jueces 1:1-3:6 mezcla sucesos de antes y de después de la muerte de Josué, y los capítulos 17-21 pasan mucho antes que Sansón (Perspicacia «Jueces, Libro de», «Orden del libro»).
+- Jueces 1:1-3:6 mezcla sucesos de antes y de después de la muerte de Josué, y los capítulos 17-21 pasan mucho antes que Sansón (Perspicacia «Jueces, Libro de», «Orden del libro»). Los capítulos 19 a 21 van en su propia serie, `jueces-apendice`: en la serie `jueces`, su fecha, más temprana, dejaba antes de c. 1400 a.e.c. todo lo que el libro cuenta antes que ellos.
 - Jeremías: sus capítulos van por temas; cada uno se fecha por el rey que nombra (Jer 21 es de Sedequías y Jer 25, del año cuarto de Jehoiaquim).
 - Daniel 7 y 8 son de los años primero y tercero de Belsasar, antes de Daniel 5.
 - Ezequiel 29:17-21 es del año 27 del destierro, posterior a los capítulos que lo siguen (40:1 es del año 25).
