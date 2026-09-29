@@ -54,5 +54,7 @@ relaciones:
   - genesis-36
   razon: 'Gé 36:6-8: la familia de Esaú se fue a la región montañosa de Seír.'
   estado: verificado
+no_confundir_con:
+- core-hijo-de-izhar
 consultado: '2026-09-29'
 estado: verificado

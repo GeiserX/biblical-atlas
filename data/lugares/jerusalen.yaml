@@ -10,9 +10,9 @@ nombres:
   nota: Nombre que a veces recibió mientras la ocupaban los jebuseos, hasta que David la tomó en 1070 a.e.c. (Jue 19:10).
 - nombre: Ciudad de David
   desde: -1069
-  nota: Nombre de la fortaleza de Sión que David tomó y habitó (2Sa 5:7).
-- nombre: Sión
-  nota: Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20).
+  nota: Nombre de la fortaleza de Sion que David tomó y habitó (2Sa 5:7).
+- nombre: Sion
+  nota: Nombre de la fortaleza y, por extensión, de la ciudad (Is 33:20). Es la grafía de la TNM; Perspicacia escribe «Sión».
 - nombre: Ciudad santa
   nota: Se la llamaba así porque en ella estaba el templo de Jehová (Mt 4:5; Ne 11:1).
 tipo: ciudad
@@ -44,6 +44,15 @@ fuentes:
 - marcos-3
 - marcos-11
 - marcos-14
+- salmos-48
+- it-sion
+- salmos-76
+- salmos-78
+- salmos-79
+- salmos-87
+- salmos-122
+- salmos-125
+- salmos-132
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
@@ -57,5 +66,12 @@ enlaces:
 - titulo: 2 Samuel 5 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
   tipo: biblia
+- titulo: 'Perspicacia: «Sión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004740
+  tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: «Sión» pasa a «Sion», como escribe la TNM (Sl 137:1; 2Sa 5:7). Perspicacia conserva la tilde.
+  fuente: salmos-137
 consultado: '2026-09-29'
 estado: verificado
