@@ -322,7 +322,8 @@ class Escritor:
             else:
                 f["datos"] = con_clave_antes(f["datos"], campo, ch["despues"])
             if ch.get("historial"):
-                f["datos"] = con_clave_antes(f["datos"], "historial", [])
+                if "historial" not in f["datos"]:
+                    f["datos"] = con_clave_antes(f["datos"], "historial", [])
                 f["datos"]["historial"] = list(f["datos"]["historial"] or []) + [ch["historial"]]
         else:
             raise Error(f"{donde}: op '{op}' no es crear, anadir ni cambiar")
