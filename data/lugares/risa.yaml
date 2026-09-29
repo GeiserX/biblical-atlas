@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: risa
+nombre: Risá
+nombres:
+- nombre: Risá
+  nota: Quizá «rociadura» (Perspicacia).
+tipo: region
+lat: 30.00296
+lon: 34.68193
+precision: incierto
+coord_fuente: openbible:af04ad9
+coord_url: https://www.openbible.info/geo/ancient/af04ad9/rissah
+coord_nota: 'Punto de Kuntillet el-Jerafi, segunda identificación de OpenBible: la Kuntilla que Perspicacia recoge como propuesta,
+  y el del mapa B3. La primera, en Arabia, no encaja.'
+resumen: Campamento de Israel en el desierto, entre Libná y Quehelatá. Hay quien lo pone en Kuntilla, unos 55 km al nor-noroeste
+  de la cabecera del golfo de ʽAqaba.
+razon: 'Perspicacia «Risá»; Nú 33:21, 22. Su sitio no puede precisarse. OpenBible: solo el punto.'
+fuentes:
+- it-risa
+- tnm-b3
+- openbible-geo
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Risá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003743
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

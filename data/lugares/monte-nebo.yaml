@@ -3,8 +3,6 @@ id: monte-nebo
 nombre: Monte Nebo
 nombres:
 - nombre: Monte Nebo
-- nombre: Pisgá
-  nota: Cima desde la que Moisés miró la tierra; puede ser parte del Nebo o al revés (Dt 34:1).
 tipo: monte
 lat: 31.766667
 lon: 35.75
@@ -19,6 +17,8 @@ fuentes:
 - it-nebo
 - deuteronomio-34
 - openbible-geo
+- deuteronomio-3
+- deuteronomio-32
 enlaces:
 - titulo: 'Perspicacia: «Nebo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003199
@@ -26,5 +26,10 @@ enlaces:
 - titulo: Deuteronomio 34 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pisgá sale de los nombres del Nebo: Perspicacia le da artículo y sitio propios (Ras es-Siyaghah, junto a Jebel
+    en-Neba) y ahora tiene ficha, pisga.'
+  fuente: it-pisga
+consultado: '2026-09-29'
 estado: verificado

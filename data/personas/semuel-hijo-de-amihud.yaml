@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semuel-hijo-de-amihud
+nombre: Semuel
+nombres:
+- nombre: Semuel
+perspicacia: 1200004009#2
+desambiguacion: Semuel hijo de Amihud, el simeonita del reparto de Canaán; no el Semuel cabeza de familia de la casa de Tolá,
+  de Isacar.
+resumen: Jefe de la tribu de Simeón, hijo de Amihud. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a
+  dividir Canaán en herencias.
+razon: Perspicacia «Semuel», núm. 2; Nú 34:20.
+fuentes:
+- it-semuel
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Semuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004009
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: amihud-padre-de-semuel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-34
+  - it-semuel
+  razon: Nú 34:20 lo llama hijo de Amihud.
+  estado: verificado
+- tipo: pariente
+  persona: simeon-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - numeros-34
+  razon: 'Nú 34:20: era el jefe de la tribu de Simeón.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

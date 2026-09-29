@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-espias-informan-en-cades
+titulo: Los espías vuelven a Cadés con un informe que asusta al pueblo
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1512 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 13025
+lugares:
+- cades
+- desierto-de-paran
+personas:
+- samua-hijo-de-zacur
+- safat-hijo-de-hori
+- caleb-hijo-de-jefune
+- igal-hijo-de-jose
+- josue-hijo-de-nun
+- palti-hijo-de-rafu
+- gadiel
+- gaddi
+- amiel-hijo-de-guemali
+- setur
+- nahbi
+- gueuel
+- moises
+- aaron
+pasajes:
+- Nú 13:25-33
+- Dt 1:25
+resumen: A los 40 días vuelven, enseñan la fruta y alaban la tierra, pero diez de ellos dicen que sus ciudades son inexpugnables
+  y sus hombres, gigantes. Caleb intenta calmar al pueblo y anima a subir.
+razon: Perspicacia «Espías» fecha el envío en 1512 a.e.c. Nú 13:26 pone el campamento en Cadés, en el desierto de Parán.
+fuentes:
+- numeros-13
+- it-espias
+- it-anaquim
+enlaces:
+- titulo: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  tipo: biblia
+- titulo: 'Perspicacia: «Espías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004208
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

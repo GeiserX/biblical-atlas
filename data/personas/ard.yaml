@@ -10,6 +10,7 @@ razon: Perspicacia «Ard»; Gé 46:21.
 fuentes:
 - it-ard
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Ard»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000351
@@ -30,11 +31,12 @@ relaciones:
 - tipo: pariente
   persona: bela-hijo-de-benjamin
   relacion: padre
-  deducido: true
+  deducido: false
   fuentes:
+  - numeros-26
   - it-ard
-  razon: 'Perspicacia «Ard»: al parecer era nieto de Benjamín por Bela.'
-  estado: pendiente
+  razon: Nú 26:40 hace a Ard y a Naamán hijos de Bela.
+  estado: verificado
 - tipo: vivio_en
   lugar: egipto
   deducido: false
@@ -43,5 +45,10 @@ relaciones:
   razon: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
     allí antes de morir Jacob.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Nú 26:40 dice que Ard era hijo de Bela: esa relación deja de ser una deducción de Perspicacia, cita el capítulo
+    y queda verificada.'
+  fuente: numeros-26
 consultado: '2026-09-29'
 estado: verificado

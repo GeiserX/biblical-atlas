@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: petor
+nombre: Petor
+nombres:
+- nombre: Petor
+tipo: ciudad
+lat: 36.7014
+lon: 38.0865
+precision: incierto
+coord_fuente: openbible:aa9e754
+coord_url: https://www.openbible.info/geo/ancient/aa9e754/pethor
+coord_nota: OpenBible la pone en Pitru, junto al río Sajur, al sur de Carquemis. Perspicacia recoge esa identificación habitual,
+  pero con una reserva sobre el lado del Éufrates.
+resumen: Ciudad del profeta Balaam, junto al Éufrates, en Aram-Naharaim, el norte de Mesopotamia. Hasta allí mandó Balac dos
+  veces a sus mensajeros para que Balaam fuera a Moab.
+razon: 'Perspicacia «Petor» y «Balaam», párr. 1; Nú 22:5; Dt 23:4. OpenBible: solo el punto.'
+fuentes:
+- it-petor
+- it-balaam
+- openbible-geo
+- numeros-22
+- deuteronomio-23
+enlaces:
+- titulo: 'Perspicacia: «Petor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003454
+  tipo: perspicacia
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

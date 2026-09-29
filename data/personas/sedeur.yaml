@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sedeur
+nombre: Sedeur
+nombres:
+- nombre: Sedeur
+perspicacia: '1200003980'
+resumen: Rubenita, padre de Elizur, el hombre que Jehová nombró jefe de Rubén durante la estancia en el desierto.
+razon: Perspicacia «Sedeur»; Nú 1:5; 2:10.
+fuentes:
+- it-sedeur
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Sedeur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003980
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

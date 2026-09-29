@@ -32,6 +32,11 @@ fuentes:
 - genesis-12
 - genesis-13
 - genesis-35
+- it-bet-aven
+- oseas-4
+- oseas-5
+- oseas-10
+- oseas-12
 enlaces:
 - titulo: 'Perspicacia: «Betel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
@@ -39,5 +44,8 @@ enlaces:
 - titulo: Génesis 28 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
   tipo: biblia
+- titulo: 'Perspicacia: «Bet-aven»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000673
+  tipo: perspicacia
 consultado: '2026-09-29'
 estado: verificado

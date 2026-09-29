@@ -13,11 +13,12 @@ coord_nota: Punto representativo de OpenBible en el noroeste de Arabia; la tribu
 resumen: 'País de la tribu árabe que descendía de Quedar, hijo de Ismael: pastores nómadas de ovejas, cabras y camellos que
   vivían en tiendas, probablemente en el desierto al este de Palestina.'
 razon: 'Perspicacia «Quedar», núm. 2, párr. 1 y 2: su país también se llamó Quedar y sus tiendas serían de pelo negro de cabra.
-  Sl 120:5. OpenBible: solo el punto.'
+  Sl 120:5; Can 1:5. OpenBible: solo el punto.'
 fuentes:
 - it-quedar
 - salmos-120
 - openbible-geo
+- cantar-de-los-cantares-1
 enlaces:
 - titulo: 'Perspicacia: «Quedar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002579
@@ -25,5 +26,9 @@ enlaces:
 - titulo: Salmo 120 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/120
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón cita Can 1:5, el versículo del que Perspicacia saca las tiendas de pelo negro de cabra.
+  fuente: cantar-de-los-cantares-1
 consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-las-leyes-de-las-fiestas-periodicas
+titulo: Jehová da a Moisés las leyes de las fiestas periódicas
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: abib (nisán) de 1512 a.e.c.
+  detalle:
+    mes: nisan
+  nota: Mes aproximado, el más probable. Levítico cabe entre el 1 de nisán (Éx 40:17) y el 1 de ziv (Nú 1:1); solo Le 8-10
+    tienen día conocido.
+orden_relato:
+  serie: levitico
+  orden: 23001
+lugares:
+- desierto-de-sinai
+personas:
+- moises
+- aaron
+pasajes:
+- Le 23:1-44
+- Le 24:1-9
+resumen: 'Jehová fija el sábado y las fiestas: Pascua y Panes Sin Levadura, primicias, grano nuevo a los 50 días,
+  trompeta, Día de Expiación y Cabañas, que Moisés transmite; luego, el aceite de las lámparas y el pan del sábado.'
+razon: 'Perspicacia «Levítico, Libro de», párr. 2 y 3: el libro cabe en un mes de 1512 a.e.c., entre el montaje del tabernáculo
+  y el censo del segundo mes, en el desierto de Sinaí. La tabla de libros coincide.'
+fuentes:
+- levitico-23
+- levitico-24
+- it-levitico-libro
+- tnm-tabla
+enlaces:
+- titulo: Levítico 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/23
+  tipo: biblia
+- titulo: Levítico 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/24
+  tipo: biblia
+- titulo: 'Perspicacia: «Levítico, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002732
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

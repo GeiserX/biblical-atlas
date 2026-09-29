@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jesimon
+nombre: Jesimón
+nombres:
+- nombre: Jesimón
+  nota: La nota de Nú 21:20 permite traducir «el desierto».
+tipo: desierto
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Alrededores de Bet-Jesimot, al noreste del mar Muerto
+  geometria:
+    tipo: zona
+    lat: 31.782551
+    lon: 35.62125
+    radio_km: 8
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-jesimon
+  - openbible-geo
+  razon: Perspicacia lo sitúa, según parece, en el borde noreste del mar Muerto, quizá donde estuvo Bet-Jesimot. El centro
+    es el punto que OpenBible da a Bet-Jesimot.
+  coord_fuente: openbible:a30f37b
+  coord_url: https://www.openbible.info/geo/ancient/a30f37b/beth-jeshimoth
+resumen: Paraje desierto en el borde noreste del mar Muerto que se veía desde Pisgá y desde Peor. No es el Jesimón de Judá,
+  cerca de Zif.
+razon: Perspicacia «Jesimón», núm. 1; Nú 21:20; 23:28. El punto de OpenBible para Jesimón es el de Judá, así que no lo usamos.
+fuentes:
+- it-jesimon
+- openbible-geo
+- numeros-21
+- numeros-23
+enlaces:
+- titulo: 'Perspicacia: «Jesimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002443
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+- titulo: Números 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/23
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

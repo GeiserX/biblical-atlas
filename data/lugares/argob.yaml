@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: argob
+nombre: Argob
+nombres:
+- nombre: Argob
+- nombre: Tierra de los refaím
+  nota: Así se conocía la región según Dt 3:13. Los refaím eran un pueblo de gran estatura; Og fue el último de ellos en Basán.
+tipo: region
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Llanura fértil al oeste de Al-Ledja, hacia el Yarmuk
+  geometria:
+    tipo: zona
+    lat: 32.703195
+    lon: 36.020417
+    radio_km: 25
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-argob
+  - openbible-geo
+  razon: 'Perspicacia la ve más probable que Al-Ledja: Dt 3:5 habla de pueblos rurales, y en un llano sin defensas naturales
+    hacían falta murallas altas.'
+  nota: 'Centro calculado por nosotros: punto medio entre Edréi (32,6253 N; 36,1061 E) y Golán (32,7811 N; 35,9347 E) de OpenBible,
+    dos ciudades de Basán. El radio de 25 km también es nuestro.'
+  coord_fuente: calculo
+- nombre: Al-Ledja, campo de lava al sur de Damasco
+  geometria:
+    tipo: punto
+    lat: 32.9695
+    lon: 36.455383
+  estado: tradicion
+  fuentes:
+  - it-argob
+  - openbible-geo
+  razon: Perspicacia dice que es la ubicación tradicional, unos 32 km al sur de Damasco, pero no la prefiere. Es el punto
+    de OpenBible.
+  coord_fuente: openbible:a42a5b2
+  coord_url: https://www.openbible.info/geo/ancient/a42a5b2/argob
+resumen: Región de Basán con sesenta ciudades amuralladas y muchos pueblos rurales, el reino de Og. Israel la conquistó al
+  este del Jordán; Jaír tomó toda la región y quedó para la media tribu de Manasés.
+razon: 'Perspicacia «Argob», núm. 2, y «Refaím», párr. 3; Dt 3:4, 5, 13, 14. El sitio no es seguro: la zona favorecida la
+  calculamos nosotros.'
+fuentes:
+- it-argob
+- it-refaim
+- openbible-geo
+- deuteronomio-3
+enlaces:
+- titulo: 'Perspicacia: «Argob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000357
+  tipo: perspicacia
+- titulo: Deuteronomio 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -11,6 +11,7 @@ razon: Perspicacia «Libní», núm. 1; Éx 6:17.
 fuentes:
 - it-libni
 - exodo-6
+- numeros-3
 enlaces:
 - titulo: 'Perspicacia: «Libní»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002735
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - exodo-6
   - it-libni
+  - numeros-3
   razon: 'Éx 6:17: primer hijo de Guersón.'
   estado: verificado
 - tipo: pariente
@@ -34,6 +36,7 @@ relaciones:
   deducido: false
   fuentes:
   - exodo-6
+  - numeros-3
   razon: 'Éx 6:17: Simeí es el otro hijo de Guersón.'
   estado: verificado
 consultado: '2026-09-29'

@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: efod
+nombre: Efod
+nombres:
+- nombre: Efod
+perspicacia: '1200001399'
+desambiguacion: Efod el padre de Haniel; no el efod, la prenda de los sacerdotes (Perspicacia «Efod, I»).
+resumen: Padre de Haniel, el jefe de Manasés que Jehová nombró para ayudar a repartir la tierra de Canaán.
+razon: Perspicacia «Efod, II»; Nú 34:23.
+fuentes:
+- it-efod-ii
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Efod, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001399
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
