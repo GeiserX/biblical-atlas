@@ -1,0 +1,92 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: filipo-el-tetrarca
+nombre: Filipo
+nombres:
+- nombre: Filipo
+- nombre: Filipo el tetrarca
+  nota: Así lo llaman la nota de Lu 3:1 y Perspicacia para separarlo de Herodes Filipo.
+perspicacia: 1200005013#2
+fecha:
+  desde: 29
+  hasta: 29
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 29 e.c.
+desambiguacion: Filipo, tetrarca de Iturea y Traconítide (Lu 3:1); no Herodes Filipo, primer esposo de Herodías, ni el apóstol
+  Felipe ni Felipe el evangelizador.
+no_confundir_con:
+- filipo-esposo-de-herodias
+- felipe-apostol
+- felipe-evangelizador
+resumen: Hijo de Herodes el Grande y de Cleopatra de Jerusalén. Al morir su padre recibió Iturea, Traconítide y distritos
+  vecinos, y los gobernó más de treinta años; en 29 e.c. seguía en el cargo.
+razon: Perspicacia «Filipo» (núm. 2) y «Herodes» (núm. 6); nota de estudio de Lu 3:1.
+fuentes:
+- it-filipo
+- it-herodes
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Filipo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200005013
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Herodes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: herodes-el-grande
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-filipo
+  - it-herodes
+  - lucas-3
+  razon: 'La nota de Lu 3:1 y Perspicacia «Filipo» (núm. 2): hijo de Herodes el Grande y de Cleopatra de Jerusalén.'
+  estado: verificado
+- tipo: pariente
+  persona: filipo-esposo-de-herodias
+  relacion: medio hermano
+  deducido: true
+  fuentes:
+  - it-herodes
+  razon: 'Perspicacia «Herodes» (núm. 5 y 6): los dos Filipos eran hijos de Herodes el Grande con madres distintas.'
+  estado: verificado
+- tipo: pariente
+  persona: arquelao
+  relacion: medio hermano
+  deducido: true
+  fuentes:
+  - it-filipo
+  razon: Perspicacia «Filipo» (núm. 2) lo da como medio hermano de Arquelao.
+  estado: verificado
+- tipo: pariente
+  persona: salome-hija-de-filipo
+  relacion: esposa
+  deducido: true
+  fuentes:
+  - it-herodes
+  razon: 'Perspicacia «Herodes» (núm. 6): se casó con Salomé, hija de Herodes Filipo y de Herodías.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: iturea
+  deducido: true
+  fuentes:
+  - lucas-3
+  - it-herodes
+  razon: Lu 3:1 le da Iturea; Perspicacia «Herodes» (núm. 6), citando a Josefo, dice que pasaba el año en sus tierras.
+  estado: verificado
+- tipo: vivio_en
+  lugar: traconitide
+  deducido: true
+  fuentes:
+  - lucas-3
+  - it-herodes
+  razon: Lu 3:1 le da Traconítide; Perspicacia «Herodes» (núm. 6), citando a Josefo, dice que pasaba el año en sus tierras.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

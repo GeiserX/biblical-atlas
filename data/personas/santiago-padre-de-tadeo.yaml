@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: santiago-padre-de-tadeo
+nombre: Santiago
+nombres:
+- nombre: Santiago
+  nota: El texto solo lo nombra como padre del apóstol Judas (Lu 6:16; Hch 1:13).
+perspicacia: 1200002313#1
+desambiguacion: El padre del apóstol Judas, al que también llaman Tadeo (Lu 6:16). No es ninguno de los dos apóstoles llamados
+  Santiago ni el medio hermano de Jesús.
+no_confundir_con:
+- santiago-hijo-de-zebedeo
+- santiago-hijo-de-alfeo
+- santiago-hermano-de-jesus
+resumen: Padre del apóstol Judas, conocido también como Tadeo. La Biblia solo lo nombra para identificar a su hijo.
+razon: Perspicacia «Santiago», núm. 1; Lu 6:16. Perspicacia «Judas», núm. 3, advierte que el griego no precisa el parentesco
+  y que la TNM lee «hijo».
+fuentes:
+- it-santiago
+- it-judas
+- lucas-6
+enlaces:
+- titulo: 'Perspicacia: «Santiago»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002313
+  tipo: perspicacia
+- titulo: Lucas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/6
+  tipo: biblia
+buscar: Santiago padre de Judas
+consultado: '2026-09-29'
+estado: verificado

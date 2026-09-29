@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abilene
+nombre: Abilene
+nombres:
+- nombre: Abilene
+tipo: region
+lat: 33.626667
+lon: 36.105833
+precision: zona
+coord_fuente: openbible:a498faa
+coord_url: https://www.openbible.info/geo/ancient/a498faa/abilene
+coord_nota: Punto representativo de OpenBible para el distrito. Perspicacia pone su capital, Abila, junto al río Abaná, hoy
+  Barada.
+resumen: Distrito romano del Antilíbano, al norte del monte Hermón, que tomó el nombre de su capital, Abila, cerca de Damasco.
+  En 29 e.c. lo gobernaba el tetrarca Lisanias.
+razon: 'Perspicacia «Abilene» y la nota de estudio de Lu 3:1. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-abilene
+- openbible-geo
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Abilene»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000043
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

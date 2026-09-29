@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simon-el-fariseo
+nombre: Simón el fariseo
+nombres:
+- nombre: Simón
+  nota: Lu 7:40-44 lo llama así; el apelativo «el fariseo» es nuestro, para separarlo de los otros Simón.
+perspicacia: 1200004131#5
+desambiguacion: El fariseo que invitó a Jesús a comer en Galilea (Lu 7:36-50). No es Simón el leproso, de Betania, en cuya
+  casa ungió María a Jesús, ni Simón Pedro.
+no_confundir_con:
+- simon-el-leproso
+- pedro
+resumen: Fariseo que invitó a Jesús a su mesa. No le dio agua para los pies, beso ni aceite, y juzgó por dentro a la pecadora
+  que ungió los pies de Jesús. Jesús le respondió con el ejemplo de dos deudores.
+razon: Perspicacia «Simón», núm. 5; Lu 7:36-50. El libro jy (cap. 40) pone la casa en Galilea.
+fuentes:
+- it-simon
+- lucas-7
+- jy-cap-40
+enlaces:
+- titulo: 'Perspicacia: «Simón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131
+  tipo: perspicacia
+- titulo: Lucas 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/7
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: galilea
+  deducido: true
+  fuentes:
+  - jy-cap-40
+  - tnm-a7-c
+  - lucas-7
+  razon: Lu 7:37 habla solo de «la ciudad». El libro jy (cap. 40) sitúa su casa en Galilea, y la tabla A7-C, en Naín o cerca.
+  estado: verificado
+buscar: Simón el fariseo
+consultado: '2026-09-29'
+estado: verificado

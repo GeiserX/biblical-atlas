@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: matat-padre-de-jorim
+nombre: Matat
+nombres:
+- nombre: Matat
+perspicacia: 1200002937#1
+desambiguacion: El Matat padre de Jorim (Lu 3:29); no el Matat padre de Helí (Lu 3:24).
+no_confundir_con:
+- matat-padre-de-heli
+resumen: Antepasado lejano de Jesús por parte de María, de entre la época de David y la de Zorobabel. Lucas lo llama hijo
+  de Leví.
+razon: Perspicacia «Matat», núm. 1; Lu 3:29.
+fuentes:
+- it-matat
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Matat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002937
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: levi-hijo-de-simeon
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-3
+  razon: 'Lu 3:29: Matat, hijo de Leví.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
