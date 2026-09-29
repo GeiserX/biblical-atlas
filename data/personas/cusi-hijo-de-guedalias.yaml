@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cusi-hijo-de-guedalias
+nombre: Cusí
+nombres:
+- nombre: Cusí
+perspicacia: 1200001092#1
+desambiguacion: El padre de Sofonías; Perspicacia registra otro Cusí, antepasado de Jehudí, el de la corte de Jehoiaquim.
+resumen: Padre del profeta Sofonías e hijo de Guedalías. Su nombre quiere decir «cusita» o «etíope». La Biblia solo lo nombra
+  en el encabezamiento de Sofonías.
+razon: Perspicacia «Cusí», núm. 1; Sof 1:1.
+fuentes:
+- it-cusi
+- sofonias-1
+enlaces:
+- titulo: 'Perspicacia: «Cusí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001092
+  tipo: perspicacia
+- titulo: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: guedalias-hijo-de-amarias
+  relacion: padre
+  deducido: false
+  fuentes:
+  - sofonias-1
+  razon: Sof 1:1 lo presenta como hijo de Guedalías.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -352,11 +352,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Claves de Omrí y Acab.** `data/_propuestas/miqueas.json` pone a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
 - **Tierra de Nemrod.** Está en `nombres` de `asiria` (Miq 5:6). El tramo Miqueas 5:5-6 no lleva `persona:nemrod`: su nombre designa la tierra.
 
-## Para Sofonías (desde Nahúm)
-
-- **La caída de Nínive.** Nahúm la anuncia y no la narra, así que la pone en `menciona` de sus tramos, como Miqueas y Joel hacen con los sucesos que profetizan, y no toca sus `pasajes`, que siguen siendo «Na 3:1-7» y «Sof 2:13». Sofonías hace lo mismo con Sof 2:13-15. `data/_propuestas/nahum.json` le añade `nabopolasar`, `ciaxares` y `rio-tigris`.
-- **Fuente compartida.** `w07-nahum-habacuc-y-sofonias` (La Atalaya del 15 de noviembre de 2007) ya existe en `data/fuentes/cobertura-nahum.yaml`: Habacuc ya lo usa y Sofonías usa ese id.
-
 ## Para 2 Reyes, 2 Crónicas y Esdras (desde Nahúm)
 
 - **Asurbanipal y Asnapar.** `asurbanipal` (clave `1200000430`) existe desde Na 3:8-10. Esa clave es a propósito la entrada «Asurbanipal» de Perspicacia, que solo remite a «Asnapar»: así la del artículo, `1200000404`, queda libre para `asnapar`. Perspicacia «Asnapar» solo ve muy probable que sea el Asnapar de Esd 4:10, así que Esdras crea `asnapar` (`1200000404`) con `mismo_que` `asurbanipal`, `deducido: true` y `estado: pendiente`.
@@ -374,3 +369,10 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Sucesos que recuerda Habacuc 3.** La Atalaya del 1 de febrero de 2000 (`w00-gozosos-en-dios`) une la oración a la toma de Jericó (Jos 6), al sol que se detiene sobre Gabaón (Jos 10:12-14, la referencia de Hab 3:11) y a la crecida del Cisón contra Sísara (Jue 5:21). Cuando existan, Jericó va en `menciona` del tramo Habacuc 3:1-2 y los otros dos en el de Habacuc 3:8-11, sin añadir Hab 3 a sus `pasajes`, como ya se hizo con `israel-cruza-el-mar-rojo`, `entrada-en-canaan` e `israel-adora-al-baal-de-peor`.
 - **Cusán no es Cusán-risataim.** `cusan` (Hab 3:7) es un lugar sin punto, quizá otro nombre de Madián o un país vecino (Perspicacia «Cusán»). El rey de Jue 3:8-10 es una persona aparte, con su propio artículo.
 
+## Para 2 Reyes, 2 Crónicas, Esdras, Nehemías, Jeremías y Zacarías (desde Sofonías)
+
+- **La reforma de Josías.** Aún no es un suceso. Perspicacia «Sofonías, Libro de» pone el libro antes de ella (hacia 648 a.e.c.), y la referencia de Sof 1:4 remite a 2Re 23:5. Cuando Reyes o Crónicas cree la reforma (2Re 23:4-14; 2Cr 34:3-7), va en `menciona` de los tramos Sofonías 1:1 y 1:4-6.
+- **Claves ya puestas.** `data/_propuestas/sofonias.json` pone a `guedalias`, el gobernador, la clave `1200001632#4` y el `no_confundir_con` hacia `guedalias-hijo-de-amarias` (núm. 2), y a `ezequias` su `desambiguacion`. Reyes y Jeremías no vuelven a proponerlas: un `cambiar` desde `null` chocaría.
+- **El Ezequías de Sof 1:1.** Es `ezequias-antepasado-de-sofonias` (Perspicacia «Ezequías», núm. 2), con `mismo_que` `ezequias` deducido y pendiente, porque Perspicacia solo dice «quizás» y «probablemente». Se funden solo si una publicación lo afirma. El de Esd 2:16 y Ne 7:21 es el núm. 3: otro id y `no_confundir_con` con los dos.
+- **Otros Sofonías.** `sofonias-profeta` es el núm. 2 de Perspicacia. El sacerdote hijo de Maaseya (Jer 21:1; 29:25; 37:3; 2Re 25:18) es el núm. 3, el levita de 1Cr 6:36 el núm. 1 y el padre de Josías o Hen (Zac 6:10) el núm. 4: cada uno con su id y `no_confundir_con` con `sofonias-profeta`.
+- **Barrios y puertas.** Puerta del Pescado, Segundo Barrio y Mactés están en `nombres` de `jerusalen`. 2Re 22:14, 2Cr 33:14, 34:22 y Ne 3:3, 12:39 usan esa ficha.

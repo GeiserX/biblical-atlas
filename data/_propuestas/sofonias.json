@@ -1,0 +1,384 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "sofonias",
+ "agente": "escritor-sofonias",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004696#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "resumen",
+   "antes": "Profeta en Judá al principio del reinado de Josías; al parecer, tataranieto del rey Ezequías.",
+   "despues": "Profeta de Judá, hijo de Cusí; su nombre significa «Jehová ha ocultado». Profetizó al principio del reinado de Josías, antes de 648 a.e.c. Al parecer era tataranieto del rey Ezequías.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade su padre, el sentido de su nombre (nota al pie de Sof 1:1) y que el libro es anterior a 648 a.e.c.",
+    "fuente": "sofonias-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "desambiguacion",
+   "antes": "El profeta; no es el sacerdote Sofonías de tiempos de Sedequías.",
+   "despues": "El profeta, hijo de Cusí. Perspicacia registra otros tres: un levita de la línea de Qohat, el sacerdote hijo de Maaseya en días de Sedequías y el padre de Josías o Hen.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Solo nombraba al sacerdote; Perspicacia «Sofonías» registra cuatro hombres con este nombre, y se nombran los otros tres.",
+    "fuente": "it-sofonias"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "razon",
+   "antes": "Perspicacia «Sofonías», núm. 2; Sof 1:1. Josías empezó a reinar en 659 (A6-B) y la Tabla termina el libro antes de 648.",
+   "despues": "Perspicacia «Sofonías», núm. 2, y «Sofonías, Libro de»; «Toda Escritura», libro 36, párr. 1 y 3; Sof 1:1 y su nota. Josías reinó desde 659 (A6-B); la tabla y el estudio 3 cierran el libro antes de 648.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también «Sofonías, Libro de», «Toda Escritura» y el estudio 3, de donde salen el resumen y la fecha.",
+    "fuente": "it-sofonias-libro"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "fecha",
+   "antes": {
+    "desde": -658,
+    "hasta": -647,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "entre 659 y 648 a.e.c."
+   },
+   "despues": {
+    "desde": -658,
+    "hasta": -647,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "narrativa",
+    "cronologia": "tnm",
+    "texto": "entre 659 y 648 a.e.c. (tiempo narrativo: al principio del reinado de Josías, antes de sus reformas)"
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fecha pasa de anclada a narrativa: nadie da ese rango; queda entre dos años anclados, 659 (Josías, A6-B) y 648 (estudio 3), como el evento del libro.",
+    "fuente": "sofonias-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "fuentes",
+   "valores": [
+    "it-sofonias-libro",
+    "si-sofonias",
+    "si-3",
+    "w07-nahum-habacuc-y-sofonias",
+    "it-cusi"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Sofonías, Libro de»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200004697",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sofonias-profeta",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cusi-hijo-de-guedalias",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "sofonias-1",
+      "it-cusi"
+     ],
+     "razon": "Sof 1:1 lo presenta como hijo de Cusí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "juda",
+     "deducido": true,
+     "fuentes": [
+      "it-sofonias",
+      "si-sofonias",
+      "tnm-tabla",
+      "sofonias-1"
+     ],
+     "razon": "Perspicacia lo llama profeta en Judá, y «Toda Escritura», libro 36, párr. 3, deduce que vivía allí por lo bien que conoce Jerusalén.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ezequias",
+   "campo": "desambiguacion",
+   "antes": null,
+   "despues": "El rey de Judá, hijo de Acaz. Perspicacia registra aparte al antepasado de Sofonías (ezequias-antepasado-de-sofonias), que quizá sea él, y a otro cuyos descendientes volvieron del destierro."
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "guedalias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001632#4"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "guedalias",
+   "campo": "no_confundir_con",
+   "valores": [
+    "guedalias-hijo-de-amarias"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josias",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "amon-de-juda",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "sofonias-1"
+     ],
+     "razon": "Hijo de Amón y de Jedidá (2Re 21:26; 22:1).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "juda",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-1",
+    "it-puerta",
+    "it-mactes"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Puerta del Pescado",
+     "nota": "Puerta del norte, al oeste de la de las Ovejas, quizá hacia el extremo norte del Tiropeón (Ne 3:3; Sof 1:10). Perspicacia sugiere que su nombre podía venir de un mercado de pescado cercano."
+    },
+    {
+     "nombre": "Segundo Barrio",
+     "nota": "Zona al oeste o noroeste del recinto del templo, cerrada por los muros de Ezequías y Manasés. Se nombra por primera vez en tiempos de Josías (2Re 22:14; Sof 1:10)."
+    },
+    {
+     "nombre": "Mactés",
+     "nota": "Al parecer, un sector cerca de la Puerta del Pescado y del Segundo Barrio (Sof 1:11). Significa «mortero». Perspicacia recoge que suele situarse en el valle del Tiropeón, quizá en su parte alta, no en el Cedrón."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "gaza",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asquelon",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "asquelon",
+   "campo": "razon",
+   "antes": "Perspicacia «Asquelón», párr. 1; Jos 13:3. OpenBible: solo el punto. Perspicacia «Asquelón», párr. 1 y 3; Am 1:8. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Asquelón», párr. 1 y 3; Jos 13:3, Am 1:8 y Sof 2:4-7. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón repetía dos frases al juntar Josué y Amós; se dejan en una y se añade Sof 2:4-7, que Perspicacia cita en el párr. 3.",
+    "fuente": "sofonias-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asdod",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ecron",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "ecron",
+   "campo": "razon",
+   "antes": "Perspicacia «Eqrón», párr. 1 y 2; Jos 13:2, 3. OpenBible: solo el punto. Perspicacia «Eqrón», párr. 1 y 2; Am 1:8. OpenBible: solo el punto.",
+   "despues": "Perspicacia «Eqrón», párr. 1 y 2; Jos 13:2, 3, Am 1:8 y Sof 2:4. OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón repetía dos frases al juntar Josué y Amós; se dejan en una y se añade Sof 2:4.",
+    "fuente": "sofonias-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "filistea",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2",
+    "it-keretitas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "moab",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ammon",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "etiopia",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2",
+    "it-sofonias-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "asiria",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "ninive",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-3",
+    "it-sofonias-libro"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "etiopia",
+   "campo": "fuentes",
+   "valores": [
+    "sofonias-3"
+   ]
+  }
+ ],
+ "preguntas": [
+  "Sof 1:1: Perspicacia «Ezequías» registra al antepasado de Sofonías como núm. 2 («quizás el rey»), y «Amarías», núm. 6, dice «probablemente». Van dos fichas y un mismo_que pendiente hacia ezequias, sin no_confundir_con entre ellas. ¿Se funden si alguna publicación lo afirma?",
+  "Sof 1:4-6: la reforma de Josías (2Re 23:4-14; 2Cr 34:3-7), que Perspicacia pone después del libro, aún no es un suceso. Cuando Reyes o Crónicas la cree, va en menciona de este tramo y del tramo 1.",
+  "Sof 1:1: se pone a guedalias la clave 1200001632#4 (el gobernador es el núm. 4). Reyes y Jeremías no deben volver a proponerla: un cambiar desde null chocaría.",
+  "Sof 2:13: Perspicacia «Sofonías, Libro de» dice que Nínive cayó en 632 «a manos de Nabucodonosor», mientras que «Asiria» y «Nínive» la dan a Nabopolasar con Ciaxares. caida-de-ninive sigue con Nabopolasar y Ciaxares; no se cambia.",
+  "Sof 2:12: nabucodonosor-contra-egipto (588 a.e.c.) dice que no se sabe si fue la conquista de Egipto. Va en menciona porque Perspicacia une Sof 2:12 a esa conquista (Eze 30:4, 5), no en pasajes.",
+  "Sof 3:9-20: Perspicacia «Sofonías, Libro de» une la vuelta del resto a su tierra con el regreso del cautiverio, sin fecha; regreso-de-537 va en menciona y no se añade a pasajes. La Atalaya de 2007 aplica el idioma puro (3:9) a nuestros días.",
+  "Sof 2:13-15 y Na 3:1-7 (para la integración): caida-de-ninive lleva «Na 3:1-7» y «Sof 2:13» en pasajes, pero Nahúm y Sofonías la ponen en menciona porque profetizan la caída y no la narran (decisión de Nahúm en entre-libros). La regla de pasajes pide entidades. Hay que elegir una regla para los dos libros: quitar esos dos pasajes con historial, o pasar el evento a entidades en ambos. caida-de-babilonia tiene el mismo caso con Is 45:1, 2 y Jer 51:30."
+ ]
+}
