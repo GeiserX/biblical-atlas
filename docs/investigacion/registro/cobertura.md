@@ -32,7 +32,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | Ester | 0 de 10 | 0 de 167 | 0 % |
 | [Job](../../../data/cobertura/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
 | [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
-| Proverbios | 0 de 31 | 0 de 915 | 0 % |
+| [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | Eclesiastés | 0 de 12 | 0 de 222 | 0 % |
 | El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 290 de 1189 | 6878 de 31062 | 22 % |
+| **Total** | 321 de 1189 | 7793 de 31062 | 25 % |
 
 ## Capítulos empezados
 

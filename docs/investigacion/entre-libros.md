@@ -47,3 +47,11 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Hechos, 1 Timoteo y 2 Timoteo
 
 - **Alejandro.** `alejandro-hijo-de-simon` (clave `1200000192#2`, Mr 15:21) ya existe. Los Alejandros de Hch 4:6, Hch 19:33, 1Ti 1:20 y 2Ti 4:14 son otras entradas de Perspicacia «Alejandro»: cada uno lleva `no_confundir_con` hacia él, y él hacia cada uno.
+
+## Para Nehemías
+
+- **Itiel.** `itiel-oyente-de-agur` (clave `1200002237#1`, Pr 30:1) ya existe. El benjamita de Ne 11:7 es la entrada núm. 2 de Perspicacia «Itiel» (`1200002237#2`): va en ficha aparte, con `no_confundir_con` en las dos.
+
+## Para Eclesiastés, El Cantar de los Cantares y 1 Reyes
+
+- **Salomón.** Proverbios deja en `data/_propuestas/proverbios.json` un cambio a su `resumen` y a su `razon` (compuso la mayor parte de Proverbios). Un cambio posterior a esos campos parte del texto que queda tras integrar Proverbios, no del de hoy.
