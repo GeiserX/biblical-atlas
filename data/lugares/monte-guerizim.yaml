@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-guerizim
+nombre: Monte Guerizim
+nombres:
+- nombre: Monte Guerizim
+tipo: monte
+lat: 32.199444
+lon: 35.272778
+precision: punto
+coord_fuente: openbible:a30e967
+coord_url: https://www.openbible.info/geo/ancient/a30e967/mount-gerizim
+resumen: Monte del centro de Samaria, frente al monte Ebal, con Siquem en el valle que los separa. Los samaritanos tuvieron
+  en él un templo rival del de Jerusalén, destruido en 128 a.e.c., y siguieron adorando allí.
+razon: 'Perspicacia «Guerizim, Monte», párr. 1 y 6, y la nota de estudio de Jn 4:20, que identifica con él «esta montaña»
+  de la samaritana. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-guerizim
+- juan-4
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Guerizim, Monte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001661
+  tipo: perspicacia
+- titulo: Juan 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

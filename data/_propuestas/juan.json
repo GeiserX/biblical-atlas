@@ -1,0 +1,2973 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "juan",
+ "agente": "escritor-juan",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "la Palabra",
+     "nota": "Título que Juan da a Jesús (Jn 1:1, 14; Ap 19:13). Según la nota de estudio, lo llevó como portavoz de Dios en el cielo, en la tierra y tras volver al cielo."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "juan-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "juan-el-bautista",
+     "relacion": "maestro",
+     "fecha": {
+      "desde": 29,
+      "hasta": 29,
+      "precision": "año",
+      "aprox": false,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "29 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "juan-1",
+      "it-juan"
+     ],
+     "razon": "Jn 1:35-40 no da el nombre del otro discípulo de Juan que siguió a Jesús; la nota del v. 40 y Perspicacia «Juan», núm. 3 (párr. 23), creen que era él.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:37-40: deja a Juan el Bautista y sigue a Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:42: Jesús lo llama Simón hijo de Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:41, 42: Andrés lo lleva a Jesús, que le da el nombre de Cefas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jonas-padre-de-pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:43: Jesús le dice que sea su seguidor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:45: Felipe lo presenta como hijo de José.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "juan-1"
+     ],
+     "razon": "Jn 1:45, 46: Felipe dice que es de Nazaret.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "primeros-discipulos",
+   "campo": "pasajes",
+   "antes": [
+    "Jn 1:15, 19-51"
+   ],
+   "despues": [
+    "Jn 1:15, 29-51"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jn 1:19-28, los enviados de Jerusalén que interrogan a Juan, pasa a juan-niega-ser-el-cristo. Aquí queda desde que Juan señala al Cordero de Dios.",
+    "fuente": "juan-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "juan-2"
+     ],
+     "razon": "Jn 2:1-5 y 12: la madre de Jesús está en la boda de Caná y luego baja con él a Capernaúm.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "boda-en-cana",
+   "campo": "razon",
+   "antes": "A7-B, fila 4: Caná de Galilea y Capernaúm. Perspicacia «Caná» (párr. 2) cuenta el milagro tres días después de que Natanael conociera a Jesús.",
+   "despues": "A7-B, fila 4: Caná de Galilea y Capernaúm. Perspicacia «Caná» (párr. 2) cuenta el milagro tres días después de que Natanael conociera a Jesús; «Juan», núm. 3, supone que el apóstol lo vio, sin apoyo del relato.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón recoge que Perspicacia «Juan», núm. 3, supone al apóstol en la boda. Jn 2:2 solo dice «sus discípulos», así que no va en personas.",
+    "fuente": "juan-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "boda-en-cana",
+   "campo": "fuentes",
+   "valores": [
+    "it-juan"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "primera-limpieza-del-templo",
+   "campo": "lugares",
+   "valores": [
+    "monte-moria"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "primera-limpieza-del-templo",
+   "campo": "razon",
+   "antes": "A7-B, fila 5: Pascua de 30, Jerusalén. La nota de Jn 2:13 explica por qué es la Pascua de la primavera de 30.",
+   "despues": "A7-B, fila 5: Pascua de 30, Jerusalén. La nota de Jn 2:13 explica por qué es la Pascua de la primavera de 30; la de 2:14 pone la escena en el Patio de los Gentiles del templo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade el monte Moria, donde estaba el templo, detrás de Jerusalén: la expulsión pasa en el templo y Jn 2:23-25 recorre la ciudad durante la fiesta.",
+    "fuente": "juan-2"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-2"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "nicodemo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003249"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "juan-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "ultimo-testimonio-de-juan",
+   "campo": "lugares",
+   "valores": [
+    "salim"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "ultimo-testimonio-de-juan",
+   "campo": "fuentes",
+   "valores": [
+    "it-salim"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ultimo-testimonio-de-juan",
+   "campo": "presentes",
+   "antes": null,
+   "despues": [
+    "jesus"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se añade presentes: el sitio ponía a Juan el Bautista en Judea, y Jn 3:23 lo sitúa en Enón, junto a Salim, en el valle del Jordán.",
+    "fuente": "juan-3"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-4"
+     ],
+     "razon": "Jn 4:5: Jacob dio a su hijo José un campo cerca de Sicar.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "region-de-samaria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cana",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "juan-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sicar",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Pozo de Jacob",
+     "nota": "Pozo hondo junto a Sicar donde Jesús habló con la samaritana (Jn 4:6). Perspicacia lo llama «Fuente de Jacob» y lo pone en Bir Yaʽqub; OpenBible no le da punto."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "sicar",
+   "campo": "fuentes",
+   "valores": [
+    "it-fuente-de-jacob"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jesus-en-sicar",
+   "campo": "lugares",
+   "valores": [
+    "region-de-samaria"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "jesus-en-sicar",
+   "campo": "fuentes",
+   "valores": [
+    "it-fuente-de-jacob"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Puerta de las Ovejas",
+     "nota": "Puerta del norte, cerca del templo, junto al estanque de Betzata (Jn 5:2). Perspicacia ve probable que sea la que reconstruyeron los sacerdotes con Nehemías (Ne 3:1) u otra en el mismo sitio."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-5",
+    "it-puerta"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "curacion-en-betzata",
+   "campo": "lugares",
+   "valores": [
+    "estanque-de-betzata",
+    "monte-moria"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-iscariote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-el-cananita",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-iscariote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6",
+    "it-simon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simon-iscariote",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-6",
+      "it-simon",
+      "it-judas"
+     ],
+     "razon": "Jn 6:71 lo llama Judas hijo de Simón Iscariote.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:70, 71: era uno de los Doce que Jesús había elegido.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:67-69: cuando muchos se van, responde por los Doce que se quedan con Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "pedro",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:8 lo llama otra vez hermano de Simón Pedro.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:8 lo cuenta entre los discípulos de Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:3-7: está con Jesús y sus discípulos en la montaña.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jose-esposo-de-maria",
+     "relacion": "padre adoptivo",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:42: la gente lo tiene por hijo de José.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "juan-6"
+     ],
+     "razon": "Jn 6:42: los judíos dicen conocer a su padre y a su madre.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6",
+    "it-tiberiades"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "capernaum",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "tiberiades",
+   "campo": "fuentes",
+   "valores": [
+    "juan-6"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "tiberiades",
+   "campo": "resumen",
+   "antes": "Ciudad fundada por Herodes Antipas hacia 18 e.c. en la costa oeste del lago, con el nombre de Tiberio, y sede de su tetrarquía. Al parecer, Juan el Bautista murió preso allí.",
+   "despues": "Ciudad fundada por Herodes Antipas entre 18 y 26 e.c. en la costa oeste del lago, con el nombre de Tiberio, y sede de su tetrarquía. Al parecer, Juan el Bautista murió preso allí.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fundación pasa de «hacia 18 e.c.», de Perspicacia «Tiberíades», a «entre 18 y 26 e.c.», como dice la nota de estudio de Jn 6:23, que es más reciente.",
+    "fuente": "juan-6"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "tiberiades",
+   "campo": "razon",
+   "antes": "Perspicacia «Tiberíades» (núm. 1) da la fundación y la sede; la nota de Mt 14:3 ve más probable que Juan muriera allí que en Maqueronte. Coordenada de OpenBible.",
+   "despues": "Perspicacia «Tiberíades» (núm. 1) da la sede; la nota de Jn 6:23, más reciente, la fundación. La nota de Mt 14:3 ve más probable que Juan muriera allí que en Maqueronte. Coordenada de OpenBible.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón dice ahora que la fecha de la fundación sale de la nota de estudio de Jn 6:23.",
+    "fuente": "juan-6"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "galilea",
+     "deducido": false,
+     "fuentes": [
+      "juan-7"
+     ],
+     "razon": "Jn 7:1, 9: sigue recorriendo Galilea para no ir a Judea y se queda allí mientras sus hermanos suben a la fiesta.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "santiago-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-7",
+      "jy-cap-65"
+     ],
+     "razon": "Jn 7:3-5 habla de sus hermanos, que no tenían fe en él; el libro jy, cap. 65, nombra entre ellos a Santiago.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "simon-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-7",
+      "jy-cap-65"
+     ],
+     "razon": "Jn 7:3-5 habla de sus hermanos, que no tenían fe en él; el libro jy, cap. 65, nombra entre ellos a Simón.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jose-hijo-de-jose",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-7",
+      "jy-cap-65"
+     ],
+     "razon": "Jn 7:3-5 habla de sus hermanos, que no tenían fe en él; el libro jy, cap. 65, nombra entre ellos a José.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "judas-hermano-de-jesus",
+     "relacion": "medio hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-7",
+      "jy-cap-65"
+     ],
+     "razon": "Jn 7:3-5 habla de sus hermanos, que no tenían fe en él; el libro jy, cap. 65, nombra entre ellos a Judas.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7",
+    "jy-cap-65"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "simon-hijo-de-jose",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7",
+    "jy-cap-65"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-hijo-de-jose",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7",
+    "jy-cap-65"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7",
+    "jy-cap-65"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nicodemo",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7",
+    "jy-cap-67"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "david",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "belen",
+     "deducido": false,
+     "fuentes": [
+      "juan-7"
+     ],
+     "razon": "Jn 7:42 llama a Belén la aldea de donde era David.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galilea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "judea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "dejarlo-todo-por-el-reino",
+   "campo": "pasajes",
+   "antes": [
+    "Mt 8:19-22",
+    "Lu 9:51-62",
+    "Jn 7:2-10"
+   ],
+   "despues": [
+    "Mt 8:19-22",
+    "Lu 9:51-62",
+    "Jn 7:10"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jn 7:2-9 es otra escena, en Galilea y con sus hermanos, antes de salir: pasa a sus-hermanos-lo-animan-a-ir-a-judea. Aquí queda la subida en secreto (Jn 7:10).",
+    "fuente": "juan-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "fiesta-de-los-tabernaculos-32",
+   "campo": "pasajes",
+   "antes": [
+    "Jn 7:11-52"
+   ],
+   "despues": [
+    "Jn 7:11-36"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El último día (Jn 7:37-44, 21 de tisri) y la vuelta de los guardias con la defensa de Nicodemo (Jn 7:45-52) pasan a dos sucesos propios.",
+    "fuente": "juan-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "fiesta-de-los-tabernaculos-32",
+   "campo": "resumen",
+   "antes": "A mitad de la fiesta, Jesús enseña en el templo y muchos creen en él. Los fariseos y los sacerdotes mandan guardias a arrestarlo, pero estos vuelven sin él.",
+   "despues": "En la fiesta la gente murmura sobre Jesús. A mitad de ella enseña en el templo; unos dicen que tiene un demonio y muchos creen en él. Los fariseos y los sacerdotes principales mandan guardias a arrestarlo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La vuelta de los guardias sin él sale del resumen: ahora es parte de nicodemo-defiende-a-jesus.",
+    "fuente": "juan-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "satanas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "fuentes",
+   "valores": [
+    "jy-cap-69"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "titulo",
+   "antes": "Jesús, luz del mundo, da la vista a un ciego de nacimiento",
+   "despues": "Jesús dice en el templo que es la luz del mundo",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El suceso se parte en dos escenas: aquí queda la enseñanza en el templo (Jn 8:12-59); la curación del ciego, otro día, pasa a sana-al-ciego-de-nacimiento.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "pasajes",
+   "antes": [
+    "Jn 8:12-9:41"
+   ],
+   "despues": [
+    "Jn 8:12-59"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El pasaje se ciñe a Jn 8:12-59; Jn 9 pasa al suceso nuevo.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "lugares",
+   "antes": [
+    "jerusalen",
+    "monte-moria",
+    "estanque-de-siloam"
+   ],
+   "despues": [
+    "monte-moria",
+    "jerusalen"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Siloam pasa al suceso nuevo. La escena queda entera en el templo (Jn 8:20, 59), así que monte-moria va primero.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "resumen",
+   "antes": "En el templo, Jesús dice que es la luz del mundo. Después cura a un ciego de nacimiento mandándolo a lavarse en el estanque de Siloam, y los fariseos expulsan al hombre.",
+   "despues": "En el templo, el último día de la fiesta, Jesús dice que es la luz del mundo y que la verdad hace libres. Discute con los judíos sobre Abrahán, y cuando quieren apedrearlo se va.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen cuenta Jn 8:12-59, que antes no contaba, y deja la curación del ciego al suceso nuevo.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "razon",
+   "antes": "La tabla A7-E da cuándo y dónde. Jn 8:20 sitúa la enseñanza en el templo y Jn 9:7 nombra Siloam; jy cap. 68.",
+   "despues": "La tabla A7-E da cuándo y dónde. Jn 8:20 y 8:59 sitúan la enseñanza en el templo; jy, cap. 68, la pone el último día de la fiesta. La curación del ciego va aparte.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón ya no habla de Siloam, que pasa al suceso nuevo.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "luz-del-mundo-y-ciego-de-nacimiento",
+   "campo": "fuentes",
+   "antes": [
+    "tnm-a7-e",
+    "juan-8",
+    "juan-9",
+    "jy-cap-68",
+    "jy-cap-70",
+    "jy-cap-71",
+    "jy-cap-69"
+   ],
+   "despues": [
+    "tnm-a7-e",
+    "juan-8",
+    "jy-cap-68",
+    "jy-cap-69"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Juan 9 y jy, cap. 70 y 71, tratan la curación del ciego; pasan al suceso nuevo.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "hallazgos",
+   "id": "estanque-de-siloam-del-siglo-i",
+   "campo": "relaciona",
+   "antes": [
+    "lugar:estanque-de-siloam",
+    "evento:luz-del-mundo-y-ciego-de-nacimiento"
+   ],
+   "despues": [
+    "lugar:estanque-de-siloam",
+    "evento:sana-al-ciego-de-nacimiento"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La curación del ciego de Jn 9 tiene ahora su propio suceso, sana-al-ciego-de-nacimiento.",
+    "fuente": "juan-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-el-bautista",
+   "campo": "fuentes",
+   "valores": [
+    "juan-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "fuentes",
+   "valores": [
+    "juan-10",
+    "it-columnata-de-salomon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "monte-moria",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Pórtico de Salomón",
+     "nota": "Columnata del lado este del recinto del templo por la que Jesús caminaba en la Dedicación (lámina B11). Perspicacia la llama Columnata de Salomón."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betania-del-otro-lado-del-jordan",
+   "campo": "fuentes",
+   "valores": [
+    "juan-10"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "fiesta-de-la-dedicacion-32",
+   "campo": "resumen",
+   "antes": "En el templo, Jesús habla del pastor excelente que da la vida por sus ovejas y dice que él y el Padre son uno. Intentan apedrearlo y se va al otro lado del Jordán.",
+   "despues": "Jesús se presenta como el pastor excelente que da la vida por sus ovejas. En la Dedicación, paseando por el Pórtico de Salomón del templo, dice que él y el Padre son uno; intentan apedrearlo y se marcha.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Juan solo sitúa en el templo lo de 10:22-39; el discurso del pastor (10:1-21) no tiene lugar en el texto y jy cap. 80 lo pone en Judea. La marcha al Jordán es otro suceso.",
+    "fuente": "juan-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "va-a-betania-del-otro-lado-del-jordan",
+   "campo": "presentes",
+   "antes": null,
+   "despues": [
+    "jesus"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Juan el Bautista solo se nombra: había muerto a comienzos de 32 (muerte-de-juan-el-bautista) y la gente habla de él en pasado. Solo Jesús estaba allí.",
+    "fuente": "juan-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "dedicacion-del-templo-165",
+   "campo": "resumen",
+   "antes": "Tres años después de la profanación, el templo se purifica y se dedica otra vez a Jehová. De ahí nace la fiesta que Jesús celebró en Juan 10:22.",
+   "despues": "Tres años después de la profanación, el templo se purifica y se dedica otra vez a Jehová. De ahí nace la fiesta de invierno en la que Jesús estaba enseñando en el templo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El texto no dice que Jesús celebrara la fiesta, solo que estaba en el templo durante ella; la nota de 10:22 dice únicamente que no consta que la condenara.",
+    "fuente": "juan-10"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "dedicacion-del-templo-165",
+   "campo": "lugares",
+   "antes": [
+    "jerusalen"
+   ],
+   "despues": [
+    "monte-moria",
+    "jerusalen"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La nueva dedicación pasa entera en el templo: monte-moria va primero y jerusalen después, como las demás escenas del templo.",
+    "fuente": "juan-10"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-11",
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-de-betania",
+   "campo": "fuentes",
+   "valores": [
+    "juan-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-11",
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periodos",
+   "id": "sumo-sacerdocio-de-caifas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lazaro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "amigo",
+     "deducido": false,
+     "fuentes": [
+      "juan-11"
+     ],
+     "razon": "Jn 11:3, 11: sus hermanas lo llaman el amigo querido de Jesús, y Jesús habla de él como «nuestro amigo».",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "betania",
+     "deducido": true,
+     "fuentes": [
+      "juan-11",
+      "it-lazaro"
+     ],
+     "razon": "Jn 11:1, 17, 30: era de Betania y lo enterraron cerca de la aldea; el texto no dice dónde murió. Es la muerte anterior a su resurrección; de la segunda no se sabe nada.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "marta",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "amigo",
+     "deducido": true,
+     "fuentes": [
+      "juan-11",
+      "it-betania"
+     ],
+     "razon": "Jn 11:5 dice que Jesús la amaba a ella y a sus hermanos; Perspicacia «Betania», núm. 1, párr. 2, llama a los tres sus amigos íntimos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-de-betania",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "amigo",
+     "deducido": true,
+     "fuentes": [
+      "juan-11",
+      "it-betania"
+     ],
+     "razon": "Jn 11:5 cuenta el cariño de Jesús por ella y por sus dos hermanos; Perspicacia «Betania», núm. 1, párr. 2, llama a los tres sus amigos íntimos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-11"
+     ],
+     "razon": "Jn 11:16: habla a los otros discípulos y los anima a ir con Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lazaro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "marta",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andres",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betania",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "betsaida",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "jerusalen",
+   "campo": "fuentes",
+   "valores": [
+    "juan-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lazaro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "betania",
+     "deducido": false,
+     "fuentes": [
+      "juan-12"
+     ],
+     "razon": "Jn 12:1: Betania era donde vivía Lázaro.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-12"
+     ],
+     "razon": "Jn 12:4 lo llama uno de sus discípulos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "juan-12"
+     ],
+     "razon": "Jn 12:21: era de Betsaida de Galilea.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "lazaro",
+   "campo": "resumen",
+   "antes": "Hermano de Marta y María, de Betania, y amigo íntimo de Jesús. Llevaba cuatro días en la tumba cuando Jesús lo resucitó, a principios de 33 e.c.",
+   "despues": "Hermano de Marta y María, de Betania, y amigo íntimo de Jesús. Llevaba cuatro días en la tumba cuando Jesús lo resucitó, a principios de 33 e.c. Después los sacerdotes principales planearon matarlo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade el plan de los sacerdotes principales contra Lázaro, que cuenta Jn 12:10, 11.",
+    "fuente": "juan-12"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "lazaro",
+   "campo": "razon",
+   "antes": "Perspicacia «Lázaro», apartado 1 (párr. 2-7), fecha el milagro a principios de 33; Jn 11 lo narra.",
+   "despues": "Perspicacia «Lázaro», apartado 1 (párr. 2-7), fecha el milagro a principios de 33; Jn 11 lo narra y Jn 12:9-11 cuenta el plan contra él.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también Jn 12:9-11, de donde sale lo que el resumen añade.",
+    "fuente": "juan-12"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "fuentes",
+   "valores": [
+    "juan-13",
+    "it-simon"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "simon-iscariote",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-13",
+      "it-simon",
+      "it-judas"
+     ],
+     "razon": "Jn 13:2 y 13:26 lo llaman hijo de Simón Iscariote.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-13"
+     ],
+     "razon": "Jn 13:13, 21: uno de los que llamaban a Jesús Maestro y Señor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-13"
+     ],
+     "razon": "Jn 13:6-9, 13: llama Señor a Jesús, que se dice su Maestro.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "no_confundir_con",
+   "valores": [
+    "simon-iscariote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": true,
+     "fuentes": [
+      "juan-13",
+      "it-juan"
+     ],
+     "razon": "Jn 13:23: el discípulo al que Jesús amaba estaba a la mesa a su lado. La nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "satanas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-13"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "lava-los-pies-a-los-apostoles",
+   "campo": "personas",
+   "valores": [
+    "judas-iscariote"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "lava-los-pies-a-los-apostoles",
+   "campo": "fuentes",
+   "valores": [
+    "it-judas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "lava-los-pies-a-los-apostoles",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. Jn 13:1-20; B12-B.",
+   "despues": "La tabla A7-G da el día y el lugar. Jn 13:1-20; B12-B. Perspicacia «Judas», párr. 14: también a Judas le lavó los pies.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Judas entra en personas: Jn 13:2-11 y Perspicacia «Judas» dicen que Jesús le lavó los pies a él también.",
+    "fuente": "juan-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "despide-a-judas",
+   "campo": "personas",
+   "valores": [
+    "pedro",
+    "juan-apostol",
+    "satanas"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "despide-a-judas",
+   "campo": "presentes",
+   "antes": null,
+   "despues": [
+    "jesus",
+    "judas-iscariote",
+    "pedro",
+    "juan-apostol"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "despide-a-judas",
+   "campo": "fuentes",
+   "valores": [
+    "it-juan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "despide-a-judas",
+   "campo": "razon",
+   "antes": "La tabla A7-H da el día y el lugar. Perspicacia «Judas» (párr. 14-15) muestra que salió antes de la Cena del Señor.",
+   "despues": "La tabla A7-H da el día y el lugar. Perspicacia «Judas» (párr. 14-15) muestra que salió antes de la Cena del Señor; «Juan», núm. 3, párr. 26, sienta a Juan junto a Jesús (Jn 13:23).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Entran Pedro y Juan, que preguntan por el traidor, y Satanás, que entra en Judas (Jn 13:23-27). Presentes deja fuera a Satanás.",
+    "fuente": "juan-13"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-14"
+     ],
+     "razon": "Jn 14:5: le pregunta a Jesús por el camino adonde va.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "felipe-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-14"
+     ],
+     "razon": "Jn 14:9: Jesús le recuerda todo el tiempo que lleva con ellos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "fuentes",
+   "valores": [
+    "juan-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-14"
+     ],
+     "razon": "Jn 14:22: pregunta a Jesús entre los discípulos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tadeo",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Judas",
+     "nota": "Así lo llama Jn 14:22, que lo distingue del Iscariote."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "ultimo-discurso-y-oracion",
+   "campo": "personas",
+   "valores": [
+    "tadeo"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ultimo-discurso-y-oracion",
+   "campo": "razon",
+   "antes": "La tabla A7-G da el día y el lugar. Jn 14:1-17:26.",
+   "despues": "La tabla A7-H da el día y el lugar; jy, cap. 121 y 122, lo sitúa aún en la habitación de arriba. Jn 14:1-17:26; Tomás, Felipe y Judas, no el Iscariote, preguntan en Jn 14:5, 8 y 22.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón citaba la tabla A7-G, pero la fila está en A7-H, la que ya lleva en fuentes. Añade que jy lo sitúa en la habitación de arriba y que Tadeo pregunta en Jn 14:22.",
+    "fuente": "tnm-a7-h"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "satanas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "satanas",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "el gobernante de este mundo",
+     "nota": "Así lo llama Jesús en Jn 12:31, 14:30 y 16:11; la nota de estudio de Jn 16:8 y Perspicacia «Satanás» dicen que es él."
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ultimo-discurso-y-oracion",
+   "campo": "resumen",
+   "antes": "Jesús promete el ayudante, el espíritu santo, habla de la vid verdadera, manda a sus discípulos que se amen como él los amó y ora con ellos.",
+   "despues": "Jesús promete el ayudante, el espíritu santo, y habla de la vid verdadera. Manda que se amen, avisa de que los odiarán y los echarán de las sinagogas, y ora por ellos y por los futuros creyentes.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade lo que cuentan Jn 16 y 17: el aviso de persecución y la oración por los apóstoles y por quienes crean gracias a ellos.",
+    "fuente": "juan-16"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "fuentes",
+   "valores": [
+    "juan-17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:5, 7: los que vienen a prenderlo buscan a Jesús el Nazareno.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "judas-iscariote",
+   "campo": "fuentes",
+   "valores": [
+    "juan-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:15: sigue a Jesús tras el arresto; allí le preguntan si es uno de sus discípulos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-apostol",
+     "relacion": "compañero",
+     "deducido": true,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:15, 16: entra en el patio gracias al otro discípulo, que según la nota de estudio era Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-18"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": true,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:15: el otro discípulo que sigue a Jesús tras el arresto; la nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "caifas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": true,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:24, 28: llevan a Jesús a Caifás y de su casa al gobernador.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "anas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000284"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "poncio-pilato",
+   "campo": "fuentes",
+   "valores": [
+    "juan-18"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "sentencia-y-barrabas",
+   "campo": "lugares",
+   "antes": [
+    "jerusalen"
+   ],
+   "despues": [
+    "empedrado",
+    "jerusalen"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El Empedrado va primero: Mt 27:19 pone a Pilato en el tribunal durante la elección de Barrabás y Jn 19:13 sitúa ese tribunal allí. Como su ubicación es incierta, el suceso ya no sitúa a nadie.",
+    "fuente": "juan-19"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "sentencia-y-barrabas",
+   "campo": "razon",
+   "antes": "La tabla A7-H da el día y el lugar. Perspicacia «Pilato» (párr. 9-10) y «Barrabás».",
+   "despues": "La tabla A7-H da el día y el lugar. Perspicacia «Pilato» (párr. 9-10) y «Barrabás». Pilato ya estaba en el tribunal (Mt 27:19), que Jn 19:13 y Perspicacia «Empedrado, El» ponen en el Empedrado.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica por qué el primer lugar es el Empedrado.",
+    "fuente": "juan-19"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "sentencia-y-barrabas",
+   "campo": "fuentes",
+   "valores": [
+    "it-empedrado"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "cleopas",
+   "campo": "no_confundir_con",
+   "valores": [
+    "clopas"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "nazaret",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:19: el letrero lo llama Jesús el Nazareno.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "murio_en",
+     "lugar": "golgota",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:17, 18 y 30: lo clavan en el Gólgota y allí muere.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "maria-madre-de-jesus",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:25-27: su madre está junto al madero.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "juan-apostol",
+     "deducido": true,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:26, 27: Jesús la confía al discípulo que amaba, que la acoge en su casa; la nota del v. 27 dice que era Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": true,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:26: el discípulo al que Jesús amaba, que la nota identifica con Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:25: está junto al madero con la madre de Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-esposa-de-clopas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:25: está junto al madero con la madre de Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jose-de-arimatea",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:38: era discípulo de Jesús, aunque en secreto por miedo a los judíos.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "arimatea",
+     "deducido": false,
+     "fuentes": [
+      "juan-19"
+     ],
+     "razon": "Jn 19:38 lo llama José de Arimatea.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "nicodemo",
+   "campo": "fuentes",
+   "valores": [
+    "juan-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "arimatea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-20"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": true,
+     "fuentes": [
+      "juan-20",
+      "it-juan"
+     ],
+     "razon": "Jn 20:2-8: María avisa a Pedro y a él, y los dos corren juntos a la tumba; Perspicacia «Juan», párr. 30. La nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": true,
+     "fuentes": [
+      "juan-20"
+     ],
+     "razon": "Jn 20:2: es el otro discípulo, al que Jesús quería. La nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "deducido": false,
+     "fuentes": [
+      "juan-20"
+     ],
+     "razon": "Jn 20:16-18: lo llama Rabbóni, maestro, y lleva su mensaje a los discípulos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-20"
+     ],
+     "razon": "Jn 20:24 lo llama uno de los Doce.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-a-maria-magdalena",
+   "campo": "lugares",
+   "antes": [
+    "jerusalen"
+   ],
+   "despues": [
+    "golgota",
+    "jerusalen"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Pasa junto a la tumba (Jn 20:11), la del jardín del lugar de la ejecución: Gólgota va primero, como en entierro-de-jesus. Como su ubicación es incierta, el suceso ya no sitúa a nadie.",
+    "fuente": "juan-20"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-a-maria-magdalena",
+   "campo": "razon",
+   "antes": "A7-H cuenta cinco apariciones el 16 de nisán; Perspicacia «María» (apartado 3, párr. 27) narra esta. El año 33 lo da la cabecera de A7-G (8 de nisán del 33).",
+   "despues": "A7-H cuenta cinco apariciones el 16 de nisán y A7-G da el año 33. Pasa junto a la tumba (Jn 20:11), en el jardín donde lo enterraron; Perspicacia «María», apartado 3, párr. 27.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica ahora por qué el primer lugar es el Gólgota.",
+    "fuente": "juan-20"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jonas-padre-de-pedro",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-juan"
+     ],
+     "razon": "Jn 21:15-17: Jesús lo llama Simón hijo de Juan; Perspicacia «Juan», núm. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:19, 22: Jesús le dice que siga siéndole fiel como seguidor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "juan-apostol",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2 cuenta a los hijos de Zebedeo entre los que fueron a pescar.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": true,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:7, 20-22: avisa a Pedro de que es el Señor y luego los dos siguen a Jesús. La nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": true,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:7, 20: es el discípulo al que Jesús amaba. La nota de estudio lo identifica con Juan.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hijo-de-zebedeo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "zebedeo",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2 cuenta a los hijos de Zebedeo entre los que fueron a pescar.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "juan-apostol",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2 los nombra juntos como los hijos de Zebedeo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "socio en la pesca",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2, 3: va a pescar con Pedro tras la resurrección.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "tomas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2, 3: cuando Pedro dice que se va a pescar, Tomás va con él en la barca.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2 lo cuenta entre los discípulos a los que se aparece Jesús.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-natanael"
+     ],
+     "razon": "Jn 21:2, 3: sale a pescar con Pedro; Perspicacia «Natanael», párr. 3, dice que se quedó en la barca.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-21"
+     ],
+     "razon": "Jn 21:2 lo cuenta entre los discípulos a los que se aparece Jesús.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "cana",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-cana"
+     ],
+     "razon": "Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cana",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "aparicion-junto-al-mar-de-galilea",
+   "campo": "fuentes",
+   "valores": [
+    "it-juan"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-junto-al-mar-de-galilea",
+   "campo": "razon",
+   "antes": "La tabla A7-H da el día y el lugar, y A7-G el año 33. Jn 21:1 llama al lago mar de Tiberíades. Jn 21:2 nombra a Pedro, Tomás, Natanael, Santiago y Juan.",
+   "despues": "A7-H da el día y el lugar, y A7-G el año 33. Jn 21:1 llama al lago mar de Tiberíades; Jn 21:2 nombra a Pedro, Tomás, Natanael y los hijos de Zebedeo, Santiago y Juan (Perspicacia «Juan», párr. 30).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Jn 21:2 no nombra a Santiago ni a Juan: dice «los hijos de Zebedeo». La razón lo dice así y cita a Perspicacia, que pone a Juan entre los siete.",
+    "fuente": "juan-21"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "muerte-del-apostol-juan",
+   "campo": "fuentes",
+   "valores": [
+    "juan-21"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "natanael",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "cana",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-cana"
+     ],
+     "razon": "Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-natanael",
+      "juan-21"
+     ],
+     "razon": "Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-natanael"
+     ],
+     "razon": "Jn 21:2, 3: sale a pescar con Pedro; Perspicacia «Natanael», párr. 3, dice que se quedó en la barca.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "cana",
+     "deducido": true,
+     "fuentes": [
+      "juan-21",
+      "it-cana"
+     ],
+     "razon": "Jn 21:2 lo llama Natanael de Caná; Perspicacia «Caná» dice que nació allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "juan-1",
+      "it-natanael",
+      "juan-21"
+     ],
+     "razon": "Jn 1:45-51: Felipe lo lleva a Jesús y desde entonces es su seguidor.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pedro",
+     "relacion": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "juan-21",
+      "it-natanael"
+     ],
+     "razon": "Jn 21:2, 3: sale a pescar con Pedro; Perspicacia «Natanael», párr. 3, dice que se quedó en la barca.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación nacio_en con Caná pasa a deducido: Jn 21:2 solo dice que era de Caná; el nacimiento allí lo afirma Perspicacia «Caná».",
+    "fuente": "juan-21"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "anas",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "caifas",
+     "relacion": "yerno",
+     "deducido": false,
+     "fuentes": [
+      "juan-18"
+     ],
+     "razon": "Jn 18:13 lo llama suegro de Caifás.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Sale la relación con Caifás como yerno: repetía al revés la de la ficha de Caifás (suegro), y entre generaciones la relación va solo en la del más joven.",
+    "fuente": "juan-18"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-junto-al-mar-de-galilea",
+   "campo": "orden_relato",
+   "antes": {
+    "serie": "a7",
+    "orden": 130
+   },
+   "despues": {
+    "serie": "a7",
+    "orden": 131
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "orden 130 pasa a 131: Jn 21:14 hace de la aparición junto al mar la tercera al grupo, tras las dos de Jn 20, y jy la pone antes del mandato (cap. 136 y 137).",
+    "fuente": "juan-21"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "mandato-de-hacer-discipulos",
+   "campo": "orden_relato",
+   "antes": {
+    "serie": "a7",
+    "orden": 130
+   },
+   "despues": {
+    "serie": "a7",
+    "orden": 132
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "orden 130 pasa a 132: Jn 21:14 hace de la aparición junto al mar la tercera al grupo, tras las dos de Jn 20, y jy la pone antes del mandato (cap. 136 y 137).",
+    "fuente": "juan-21"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ascension-de-jesus",
+   "campo": "orden_relato",
+   "antes": {
+    "serie": "a7",
+    "orden": 131
+   },
+   "despues": {
+    "serie": "a7",
+    "orden": 133
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "orden 131 pasa a 133, tras las tres apariciones que siguen al 16 de nisán, ahora numeradas 130-132 en el orden de Jn 21:14 y de jy, cap. 135-137.",
+    "fuente": "juan-21"
+   }
+  }
+ ],
+ "preguntas": []
+}
