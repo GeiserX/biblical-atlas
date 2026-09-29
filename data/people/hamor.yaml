@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hamor
+name: Hamor
+names:
+- name: Hamor
+perspicacia: '1200001845'
+summary: Heveo, uno de los principales de la tierra de Siquem y padre de Siquem. Sus hijos vendieron a Jacob un terreno junto
+  a la ciudad. Simeón y Leví lo mataron por la violación de Dina.
+reason: Perspicacia «Hamor»; Gé 33:19 y 34:2, 6, 26.
+sources:
+- it-hamor
+- genesis-33
+- genesis-34
+- hechos-7
+links:
+- title: 'Perspicacia: «Hamor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001845
+  type: perspicacia
+- title: Génesis 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  type: bible
+relations:
+- type: lived_in
+  place: siquem
+  inferred: false
+  sources:
+  - it-hamor
+  - genesis-33
+  - genesis-34
+  - hechos-7
+  reason: 'Gé 33:19: los hijos de Hamor tenían el campo junto a Siquem; en Gé 34:20 habla a los hombres de su ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: siquem
+  inferred: false
+  sources:
+  - it-hamor
+  - genesis-34
+  reason: 'Gé 34:26: Simeón y Leví lo mataron a espada en la ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

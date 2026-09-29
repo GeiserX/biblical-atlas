@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: cainan-hijo-de-arpaksad
+name: Cainán
+names:
+- name: Cainán
+perspicacia: 1200000858#2
+disambiguation: El Cainán que Lu 3:36 pone entre Arpaksad y Selá; no Quenán, hijo de Enós, al que Lu 3:37 también llama Cainán.
+distinct_from:
+- quenan
+not_claimed:
+- 'Que viviera de verdad un Cainán entre Arpaksad y Selá: Perspicacia recoge que muchos lo atribuyen a un error de copia,
+  y la nota de estudio lo mantiene por los manuscritos de Lucas.'
+summary: Nombre que Lucas pone entre Arpaksad y Selá. Falta en el texto hebreo de Génesis y en unos pocos manuscritos de Lucas;
+  la mayoría de las copias de Lucas lo traen.
+reason: Perspicacia «Cainán», núm. 2, y «Genealogía de Jesucristo»; nota de estudio de Lu 3:36.
+sources:
+- it-cainan
+- it-genealogia-de-jesucristo
+- lucas-3
+links:
+- title: 'Perspicacia: «Cainán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000858
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: arpaksad
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  - it-cainan
+  reason: 'Lu 3:36 lo llama hijo de Arpaksad. Pendiente: el texto hebreo da a Selá como hijo de Arpaksad y Perspicacia ve probable
+    un añadido de copista.'
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

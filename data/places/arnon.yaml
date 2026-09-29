@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arnon
+name: Arnón
+names:
+- name: Arnón
+- name: Valle torrencial de Arnón
+  note: Así lo titula Perspicacia. Hoy se llama Wadi Mujib.
+- name: Valles de Arnón
+  note: Así los nombra la cita de Nú 21:14; la nota al pie da «wadis».
+type: valley
+lat: 31.465833
+lon: 35.573333
+precision: zone
+coord_source: openbible:a4cc324
+coord_url: https://www.openbible.info/geo/ancient/a4cc324/arnon
+coord_note: Punto de OpenBible en Wadi Mujib, cerca de donde llega al mar Muerto. El desfiladero cruza toda la meseta.
+summary: Desfiladero hondo que corta la meseta al este del mar Muerto y desemboca en él. Cuando llegó Israel, marcaba la frontera
+  entre Moab, al sur, y los amorreos, al norte. En su orilla recibió Balac a Balaam.
+reason: 'Perspicacia «Arnón, Valle torrencial de», párr. 1 y 3, y «Balac»; Nú 21:13, 24, 26; 22:36. OpenBible: solo el punto.'
+sources:
+- it-arnon
+- it-balac
+- openbible-geo
+- numeros-21
+- numeros-22
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-4
+links:
+- title: 'Perspicacia: «Arnón, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000380
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+- title: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  type: bible
+checked_on: '2026-09-29'
+status: verified

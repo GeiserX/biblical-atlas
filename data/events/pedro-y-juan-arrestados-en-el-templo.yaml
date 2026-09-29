@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pedro-y-juan-arrestados-en-el-templo
+title: Arrestan a Pedro y a Juan en el templo
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33 e.c.
+narrative_order:
+  series: hechos
+  order: 401
+places:
+- monte-moria
+- jerusalen
+people:
+- pedro
+- juan-apostol
+passages:
+- Hch 4:1-4
+summary: 'Mientras hablan al pueblo, se presentan sacerdotes, saduceos y el capitán del templo, molestos porque anuncian que
+  Jesús resucitó. Los encierran hasta el día siguiente, pero muchos creen: ya son unos 5.000 hombres.'
+reason: Hch 4:1-4 y la nota de estudio de 4:1 sobre el capitán del templo; el capítulo 4 de «Testimonio completo» (párr. 9
+  y 10) explica que los saduceos rechazaban la resurrección. El año sale de Perspicacia «Herodes», núm. 2.
+sources:
+- hechos-4
+- bt-4
+- it-herodes
+note: Perspicacia «Herodes», núm. 2, sitúa en 33, poco después de Pentecostés, el día en que soltaron a los dos apóstoles;
+  «Testimonio completo», capítulo 4, habla de unas semanas tras la condena de Jesús.
+links:
+- title: Hechos 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/4
+  type: bible
+search: Arresto de Pedro y Juan
+checked_on: '2026-09-29'
+status: verified

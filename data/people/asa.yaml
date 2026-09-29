@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asa
+name: Asá
+names:
+- name: Asá
+date:
+  from: -977
+  to: -936
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 978-937 a.e.c.
+summary: Nieto de Rehoboam. Limpió Judá de ídolos y quitó a su abuela Maacá del puesto de reina madre. Venció al etíope Zérah,
+  pero pagó a Siria contra Baasá en vez de confiar en Jehová.
+reason: Perspicacia «Asá», núm. 1, párr. 1, 2, 4, 6 y 10; 1Re 15:9-24 y 2Cr 14-16.
+sources:
+- it-asa
+- 1-reyes-15
+- 2-cronicas-14
+- tnm-a6-a
+- mateo-1
+links:
+- title: 'Perspicacia: «Asá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+relations:
+- type: kin
+  person: abias-de-juda
+  word: father
+  inferred: false
+  sources:
+  - it-asa
+  - 1-reyes-15
+  - mateo-1
+  reason: Perspicacia lo llama hijo de Abiyam (1Re 15:8).
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: abias-de-juda
+  inferred: false
+  sources:
+  - it-asa
+  - 1-reyes-15
+  reason: Heredó el trono de su padre (1Re 15:8).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
+  source: tnm-a6-a
+perspicacia: 1200000397#1
+checked_on: '2026-09-29'
+status: verified

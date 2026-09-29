@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-timoteo-a-corinto
+title: Pablo envía a Timoteo a Corinto
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: 1-corintios
+  order: 16018
+  after: estefanas-fortunato-y-acaico-visitan-a-pablo
+places:
+- efeso
+- corinto
+people:
+- pablo
+- timoteo
+present:
+- pablo
+- timoteo
+passages:
+- 1Co 4:17
+- 1Co 16:10, 11
+summary: Desde Éfeso, Pablo escribe a los corintios que les manda a Timoteo, su hijo amado y fiel, para que les recuerde cómo
+  enseña él en cada congregación. No se sabe si Timoteo llegó.
+reason: 'Perspicacia «Timoteo», «Viaja con Pablo», párr. 2: lo anuncia desde Éfeso; quizá no fue, y si fue, antes de ir
+  con Erasto a Macedonia. Lo dice la carta de c. 55 (Tabla, estudio 3), escrita tras llegar los tres corintios.'
+sources:
+- 1-corintios-4
+- it-timoteo
+- tnm-tabla
+- si-3
+- 1-corintios-16
+links:
+- title: 1 Corintios 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/4
+  type: bible
+- title: 'Perspicacia: «Timoteo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004416
+  type: perspicacia
+search: Timoteo Corinto 1 Corintios 4:17
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: siftan
+name: Siftán
+names:
+- name: Siftán
+perspicacia: '1200004067'
+summary: Padre de Quemuel, el jefe de Efraín en el reparto de la tierra de Canaán.
+reason: Perspicacia «Siftán»; Nú 34:24.
+sources:
+- it-siftan
+- numeros-34
+links:
+- title: 'Perspicacia: «Siftán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004067
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+checked_on: '2026-09-29'
+status: verified

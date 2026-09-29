@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jotbata
+name: Jotbatá
+names:
+- name: Jotbatá
+type: region
+lat: 29.879167
+lon: 35.043611
+precision: uncertain
+coord_source: openbible:a7384d7
+coord_url: https://www.openbible.info/geo/ancient/a7384d7/jotbathah
+coord_note: 'Punto de ʽEin Yotvata, segunda identificación de OpenBible: el sitio que Perspicacia recoge como propuesta, y
+  el del mapa B3. La primera, Taba, está en la costa y no 40 km al norte de Ezión-Guéber.'
+summary: Campamento de Israel en el desierto, con agua abundante, entre Hor-Haguidgad y Abroná. Hay quien lo sitúa en ʽEn
+  Yotvata, unos 40 km al norte de Ezión-Guéber.
+reason: 'Perspicacia «Jotbatá»; Nú 33:33, 34. OpenBible: solo el punto.'
+sources:
+- it-jotbata
+- tnm-b3
+- openbible-geo
+- numeros-33
+- deuteronomio-10
+links:
+- title: 'Perspicacia: «Jotbatá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002528
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

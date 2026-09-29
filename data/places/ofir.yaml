@@ -1,0 +1,85 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ofir
+name: Ofir
+names:
+- name: Ofir
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Suroeste de Arabia, cerca del actual Yemen
+  geometry:
+    type: zone
+    lat: 18.216667
+    lon: 42.5
+    radius_km: 400
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-ofir
+  - w10-ofir
+  reason: Perspicacia la llama la opinión general, por los descendientes de Joqtán y por la reina de Seba (párr. 9). La Atalaya
+    de 2010 la presenta como una opción más.
+  note: 'Centro: punto de OpenBible para el suroeste de Arabia. Radio nuestro.'
+  coord_source: openbible:a104820
+  coord_url: https://www.openbible.info/geo/ancient/a104820/ophir
+- name: Noreste de África, junto a Somalia
+  geometry:
+    type: zone
+    lat: 11.595
+    lon: 43.148056
+    radius_km: 400
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-ofir
+  - w10-ofir
+  reason: Sus defensores señalan que todo lo que traían las naves podía salir de allí, mucho más cerca que la India (párr.
+    8).
+  note: 'Centro: punto que OpenBible da para Punt, en el extremo sur del mar Rojo. Radio nuestro.'
+  coord_source: openbible:a104820
+  coord_url: https://www.openbible.info/geo/ancient/a104820/ophir
+- name: India
+  geometry:
+    type: zone
+    lat: 19.414223
+    lon: 72.795163
+    radius_km: 500
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-ofir
+  - w10-ofir
+  reason: Todos los productos que llevaban las naves de Salomón e Hiram se podían conseguir allí; la Septuaginta, Josefo y
+    Jerónimo la apoyan (párr. 8).
+  note: 'Centro: punto de Sopara en OpenBible; Perspicacia habla de la India sin nombrar un sitio. Radio nuestro.'
+  coord_source: openbible:a104820
+  coord_url: https://www.openbible.info/geo/ancient/a104820/ophir
+summary: Tierra famosa por su oro fino, adonde iban desde Ezión-guéber las naves de Salomón. De allí llegaban también madera
+  de algum y piedras preciosas. Hoy no se sabe dónde estaba.
+reason: Perspicacia «Ofir» (párr. 4-9), La Atalaya «¿Lo sabía?» de 2010 (párr. 5-8) y 1Re 9:26-28. Las tres opciones eran accesibles
+  por mar desde Ezión-guéber.
+sources:
+- it-ofir
+- w10-ofir
+- 1-reyes-9
+- openbible-geo
+- job-22
+- job-28
+links:
+- title: 'Perspicacia: «Ofir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003336
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+history:
+- date: '2026-09-28'
+  change: Perspicacia llama opinión general al suroeste de Arabia; La Atalaya de 2010 da Arabia, las costas de África y la
+    India como posibles sin preferir ninguna. Seguimos la más reciente.
+  source: w10-ofir

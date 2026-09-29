@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: puva
+name: Puvá
+names:
+- name: Puvá
+- name: Puá
+  note: Nombre que le da 1 Crónicas 7, según Perspicacia.
+perspicacia: '1200003595'
+summary: Hijo de Isacar. Sus descendientes se llamaron punitas.
+reason: Perspicacia «Puvá»; Gé 46:13.
+sources:
+- it-puva
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Puvá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003595
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: isacar-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-puva
+  - numeros-26
+  reason: 'Gé 46:13: aparece entre los hijos de Isacar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+disambiguation: Puvá hijo de Isacar, al que la TNM llama Pua en 1 Crónicas 7; no Pua, la partera hebrea de Egipto, ni el padre
+  del juez Tolá.
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- pua-partera

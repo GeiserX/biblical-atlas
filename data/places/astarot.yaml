@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: astarot
+name: Astarot
+names:
+- name: Astarot
+- name: Beesterá
+  note: Nombre que le da Jos 21:27, según Perspicacia.
+type: city
+lat: 32.804167
+lon: 36.015833
+precision: point
+coord_source: openbible:a6fea11
+coord_url: https://www.openbible.info/geo/ancient/a6fea11/ashtaroth
+coord_note: Tell ʽAshtarah, el sitio que da Perspicacia. OpenBible pone el mismo punto a Asterot-Carnaim.
+summary: Ciudad de Basán, una de las dos principales del rey Og junto con Edréi. Su nombre quizá venga del culto a Astoret.
+  Fue de Manasés y luego ciudad levita de los guersonitas.
+reason: 'Perspicacia «Astarot» y «Og», párr. 1; Dt 1:4. Suele identificarse con Tell ʽAshtarah. OpenBible: solo el punto.'
+sources:
+- it-astarot
+- it-og
+- openbible-geo
+- deuteronomio-1
+links:
+- title: 'Perspicacia: «Astarot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000426
+  type: perspicacia
+- title: Deuteronomio 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

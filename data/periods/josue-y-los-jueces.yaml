@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: josue-y-los-jueces
+name: Josué y los jueces
+type: era
+date:
+  from: -1472
+  to: -1116
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473-1117 a.e.c.
+summary: Josué conquista y reparte Canaán. Después gobiernan los jueces, hasta que Samuel unge a Saúl como primer rey. Lo
+  cuentan Josué, Jueces y Rut.
+reason: Perspicacia «Cronología» deduce 356 años entre la entrada en Canaán, en 1473 a.e.c., y el año en que empieza a reinar
+  Saúl, 1117 a.e.c.
+sources:
+- it-cronologia
+- si-3
+search: período de los jueces 356 años
+checked_on: '2026-09-28'
+status: verified
+note: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

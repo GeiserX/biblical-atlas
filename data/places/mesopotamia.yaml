@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mesopotamia
+name: Mesopotamia
+names:
+- name: Mesopotamia
+- name: Aram-Naharaim
+  note: Nombre hebreo de sentido parecido, que la Septuaginta traduce «Mesopotamia».
+type: region
+lat: 36.864444
+lon: 39.032778
+precision: zone
+coord_source: openbible:a43f60f
+coord_url: https://www.openbible.info/geo/ancient/a43f60f/mesopotamia
+coord_note: Punto de OpenBible en Harán, que representa Aram-Naharaim; la región se extiende entre el Tigris y el Éufrates.
+summary: 'Tierra entre los ríos Tigris y Éufrates. Como Aram-Naharaim, en las Escrituras Hebreas suele ser el norte: la meseta
+  de Harán, donde vivían los parientes de Abrahán, y las montañas por encima de Petor, la ciudad de Balaam.'
+reason: 'Perspicacia «Mesopotamia», párr. 1 a 3; Gé 24:10; Dt 23:4. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-mesopotamia
+- genesis-24
+- openbible-geo
+- salmos-60
+- hechos-7
+- deuteronomio-23
+links:
+- title: 'Perspicacia: «Mesopotamia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003016
+  type: perspicacia
+- title: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  type: bible
+- title: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  type: bible
+history:
+- date: '2026-09-29'
+  change: «Aram-naharaim» pasa a «Aram-Naharaim», como lo escribe la TNM en el encabezamiento de Sl 60 y en las notas de Jue
+    3:8.
+  source: salmos-60
+- date: '2026-09-29'
+  change: En la nota de la coordenada, «Aram-naharaim» pasa a «Aram-Naharaim», la grafía de la TNM (Sl 60, encabezamiento).
+  source: salmos-60
+- date: '2026-09-29'
+  change: El resumen hablaba solo de Génesis; se añade la zona de Petor, que Dt 23:4 pone en Mesopotamia (Perspicacia «Mesopotamia»,
+    párr. 3).
+  source: deuteronomio-23
+- date: '2026-09-29'
+  change: La razón cita también Dt 23:4, en que se apoya la mención de Petor.
+  source: deuteronomio-23
+checked_on: '2026-09-29'
+status: verified

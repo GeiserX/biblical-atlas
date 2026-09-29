@@ -1,0 +1,90 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: manases-hijo-de-jose
+name: Manasés
+names:
+- name: Manasés
+perspicacia: 1200002882#1
+disambiguation: Manasés hijo de José, de quien viene la tribu; no el rey Manasés de Judá.
+distinct_from:
+- manases-de-juda
+summary: Primogénito de José y Asenat, nacido en Egipto. Jacob lo adoptó como hijo suyo, pero al bendecirlo dio la preferencia
+  a su hermano menor, Efraín. De él viene la tribu de Manasés.
+reason: Perspicacia «Manasés», núm. 1; Gé 41:50, 51.
+sources:
+- it-manases
+- genesis-41
+- genesis-46
+- genesis-48
+- genesis-50
+- numeros-26
+links:
+- title: 'Perspicacia: «Manasés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+- title: Génesis 48 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/48
+  type: bible
+relations:
+- type: kin
+  person: jose-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-manases
+  - genesis-48
+  - numeros-26
+  - numeros-32
+  reason: Gé 41:50, 51.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: asenat
+  word: mother
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-manases
+  reason: Gé 41:50.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: efrain
+  word: brother
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - genesis-48
+  - numeros-26
+  reason: 'Gé 41:51, 52: Manasés es el primero y Efraín el segundo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-41
+  - genesis-46
+  - it-manases
+  - genesis-48
+  reason: 'Gé 41:50, 51: nace de Asenat en Egipto, antes del hambre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jacob
+  word: grandfather
+  inferred: false
+  sources:
+  - genesis-48
+  - it-manases
+  reason: 'Gé 48:5: Jacob, padre de José, lo declara hijo suyo, como a Rubén y Simeón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

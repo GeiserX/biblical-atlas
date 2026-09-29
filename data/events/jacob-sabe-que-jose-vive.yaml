@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-sabe-que-jose-vive
+title: Jacob se entera de que José vive
+date:
+  from: -1727
+  to: -1727
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1728 a.e.c.
+narrative_order:
+  series: genesis
+  order: 45025
+places:
+- canaan
+people:
+- jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- benjamin-hijo-de-jacob
+passages:
+- Gé 45:25-28
+summary: Los hijos llegan a Canaán y cuentan a Jacob que José vive y gobierna Egipto. Al principio no los cree, pero al ver
+  los carros se reanima y decide ir a verlo.
+reason: 'Perspicacia «José», párr. 30: Jacob tenía entonces 130 años. Nació en 1858 a.e.c. y se trasladó a Egipto en 1728,
+  según el estudio 3.'
+sources:
+- genesis-45
+- si-3
+- it-jose
+links:
+- title: Génesis 45 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/45
+  type: bible
+checked_on: '2026-09-29'
+status: verified

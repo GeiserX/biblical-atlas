@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nun
+name: Nun
+names:
+- name: Nun
+perspicacia: '1200003280'
+summary: Efraimita, hijo de Elisamá y padre de Josué, el ayudante que sucedió a Moisés.
+reason: Perspicacia «Nun, I»; Éx 33:11 llama a Josué hijo de Nun.
+sources:
+- it-nun
+- exodo-33
+links:
+- title: 'Perspicacia: «Nun, I»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003280
+  type: perspicacia
+- title: Éxodo 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

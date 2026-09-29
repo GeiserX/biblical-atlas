@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juicio-ante-el-sanedrin
+title: Ante Anás y Caifás; el Sanedrín lo condena; Pedro lo niega
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 14 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 14
+places:
+- jerusalen
+people:
+- jesus
+- anas
+- caifas
+- pedro
+- juan-apostol
+passages:
+- Mt 26:57-27:1
+- Mr 14:53-15:1
+- Lu 22:54-71
+- Jn 18:13-27
+summary: Anás lo interroga y lo manda a Caifás. De noche, el Sanedrín lo condena por blasfemia mientras Pedro niega
+  tres veces conocerlo. Al amanecer vuelven a juzgarlo.
+reason: La tabla A7-H da el día y el lugar. B12-B pone el juicio en casa de Caifás (con interrogación) y la segunda
+  sesión al amanecer.
+sources:
+- tnm-a7-h
+- mateo-26
+- mateo-27
+- marcos-14
+- marcos-15
+- lucas-22
+- juan-18
+- jy-cap-125
+- jy-cap-126
+- jy-cap-127
+- tnm-b12-b
+- it-anas
+- it-caifas
+narrative_order:
+  series: a7
+  order: 117
+search: Ante Anás y Caifás
+checked_on: '2026-09-28'
+status: verified

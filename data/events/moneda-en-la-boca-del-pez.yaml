@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moneda-en-la-boca-del-pez
+title: Paga el impuesto del templo con una moneda sacada de un pez
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Tras la Pascua de 32 e.c.
+places:
+- capernaum
+people:
+- jesus
+- pedro
+passages:
+- Mt 17:24-27
+summary: En Capernaúm preguntan a Pedro si su maestro paga el impuesto del templo. Jesús lo paga por los dos con
+  la moneda que Pedro encuentra en la boca de un pez.
+reason: La tabla A7-E da cuándo y dónde. La nota de Mt 17:24 explica el impuesto de los dos dracmas.
+sources:
+- tnm-a7-e
+- mateo-17
+- jy-cap-62
+narrative_order:
+  series: a7
+  order: 61
+search: Paga el impuesto del templo con una moneda sacada de un pez
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cison
+name: Cisón
+names:
+- name: Cisón
+- name: Valle torrencial de Cisón
+  note: Así lo llama Jue 4:7. Sl 83:9 dice «arroyo de Cisón»; su nota da «wadi».
+type: river
+lat: 32.816667
+lon: 35.033333
+precision: zone
+coord_source: openbible:a5a6458
+coord_url: https://www.openbible.info/geo/ancient/a5a6458/kishon
+coord_note: Punto representativo de OpenBible para todo el torrente, que recorre unos 37 km en línea recta hasta la bahía
+  de Akkó.
+summary: Torrente que cruza la llanura de Jezreel y pasa entre el Carmelo y las colinas de Galilea hasta el Mediterráneo.
+  Seco casi todo el verano, en invierno se desborda. Allí cayó el ejército de Sísara.
+reason: 'Perspicacia «Cisón, Valle torrencial de», párr. 1 a 3; Jue 4:7, 13; 5:21; Sl 83:9. OpenBible: solo el punto.'
+sources:
+- it-cison
+- openbible-geo
+- salmos-83
+links:
+- title: 'Perspicacia: «Cisón, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002634
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified

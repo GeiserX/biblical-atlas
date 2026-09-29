@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-save
+name: Valle de Savé
+names:
+- name: Valle de Savé
+- name: Valle del Rey
+  note: Otro nombre que le da Gé 14:17; Perspicacia cree que es el mismo valle de 2Sa 18:18.
+type: valley
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Jerusalén
+  geometry:
+    type: zone
+    lat: 31.767198
+    lon: 35.235985
+    radius_km: 3
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-save
+  reason: Perspicacia lo pone probablemente cerca de Jerusalén, donde Josefo sitúa el monumento de Absalón, pero dice que el
+    sitio exacto no se puede averiguar.
+  note: 'Centro: punto de OpenBible en la unión de los valles de Cedrón y de Hinón. Radio nuestro.'
+  coord_source: openbible:a402ee4
+  coord_url: https://www.openbible.info/geo/ancient/a402ee4/valley-of-shaveh
+summary: Valle donde el rey de Sodoma salió al encuentro de Abrán tras su victoria y donde Melquisedec lo bendijo. Estaba,
+  probablemente, cerca de Jerusalén.
+reason: Perspicacia «Savé, Llanura baja de»; Gé 14:17, 18. Hoy no se puede fijar el sitio exacto.
+sources:
+- it-save
+- openbible-geo
+- genesis-14
+links:
+- title: 'Perspicacia: «Savé, Llanura baja de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003962
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

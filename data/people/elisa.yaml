@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisa
+name: Elisá
+names:
+- name: Elisá
+perspicacia: '1200001317'
+summary: Hijo de Javán y cabeza de una familia que pobló islas y costas. Ezequiel nombra las islas de Elisá, que vendían tinte
+  a Tiro; los indicios apuntan a Grecia, sin pruebas firmes.
+reason: Perspicacia «Elisá»; Gé 10:4, 5.
+sources:
+- it-elisa
+- genesis-10
+links:
+- title: 'Perspicacia: «Elisá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001317
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: javan
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:4 lo nombra el primero de los hijos de Javán.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joses
+name: Josés
+names:
+- name: Josés
+  note: Algunos manuscritos antiguos dicen José (nota de Mt 27:56).
+perspicacia: '1200002516'
+disambiguation: Hermano de Santiago el Menor; no es José, el medio hermano de Jesús.
+distinct_from:
+- jose-hijo-de-jose
+summary: Hijo de María, la esposa de Clopas, y hermano de Santiago el Menor. La Biblia lo nombra solo para identificar a su
+  madre, que presenció la muerte de Jesús.
+reason: Perspicacia «Josés»; Mt 27:56 y la nota de ese versículo.
+sources:
+- it-joses
+- mateo-27
+- marcos-15
+links:
+- title: 'Perspicacia: «Josés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002516
+  type: perspicacia
+- title: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  type: bible
+relations:
+- type: kin
+  person: maria-esposa-de-clopas
+  word: mother
+  inferred: true
+  sources:
+  - mateo-27
+  - it-maria
+  - marcos-15
+  reason: Mt 27:56 la llama madre de Santiago y de Josés; Perspicacia «María», núm. 4, la identifica con la esposa de Clopas.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

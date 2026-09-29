@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-egipcia
+name: Egipto, primera potencia mundial
+type: power
+date:
+  from: -1599
+  to: null
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: después de 1600 a.e.c.
+places:
+- egipto
+events:
+- sisaq-invade-juda
+summary: Primera potencia mundial de la historia bíblica. Bajo su dominio se formó la nación de Israel, que salió de allí
+  en 1513 a.e.c. No tenemos fecha de cuándo la relevó Asiria.
+reason: El cuadro del estudio 3 pone después de 1600 a.e.c. su ascenso a primera potencia; ¡Despertad! de noviembre de 2010
+  la llama así. Ninguna fuente leída fecha su final.
+sources:
+- si-3
+- g10-egipto
+- it-egipto
+search: Egipto primera potencia mundial
+checked_on: '2026-09-28'
+status: verified

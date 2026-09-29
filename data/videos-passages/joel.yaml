@@ -1,0 +1,48 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: joel
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_290_VIDEO"
+    title: "Información sobre Joel"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_290_VIDEO"
+    published: "2017-10-16"
+chapters:
+  1:
+    - docid: "pub-jwbvod25_10_VIDEO"
+      title: "Troy Snyder: Sigamos el ejemplo de aguante de los profetas (Sant. 5:11)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod25_10_VIDEO"
+      published: "2025-02-28"
+      matched_by: [subtitles]
+      citations: 1
+  2:
+    - docid: "pub-jwb_202001_3_VIDEO"
+      title: "Reunión anual del 2019: Discursos y nueva publicación"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202001_3_VIDEO"
+      published: "2020-01-20"
+      matched_by: [subtitles]
+      citations: 10
+    - docid: "pub-jwb-130_1_VIDEO"
+      title: "JW Broadcasting: Septiembre de 2025"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-130_1_VIDEO"
+      published: "2025-09-01"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-130_6_VIDEO"
+      title: "Descubramos más tesoros: Joel"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-130_6_VIDEO"
+      published: "2025-09-15"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-108_13_VIDEO"
+      title: "David Splane: Confiemos en “el Juez de toda la tierra” y en su misericordia"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_13_VIDEO"
+      published: "2024-01-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_8_VIDEO"
+      title: "JW Broadcasting: Enero de 2024 (reunión anual del 2023, parte 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_8_VIDEO"
+      published: "2024-01-01"
+      matched_by: [subtitles]
+      citations: 1

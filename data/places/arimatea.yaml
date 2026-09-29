@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arimatea
+name: Arimatea
+names:
+- name: Arimatea
+  note: El nombre viene de una palabra hebrea que significa «altura».
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Rentis (Rantis)
+  geometry:
+    type: point
+    lat: 32.028056
+    lon: 35.019444
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-arimatea
+  - openbible-geo
+  reason: Perspicacia da como opinión general que estaba donde la actual Rentis, unos 35 km al noroeste de Jerusalén. Punto
+    de OpenBible.
+  coord_source: openbible:af3d9fc
+  coord_url: https://www.openbible.info/geo/ancient/af3d9fc/arimathea
+summary: Ciudad de Judea en tiempos de Jesús. De allí era José, el discípulo rico que pidió a Pilato el cuerpo de Jesús y
+  lo puso en su propia tumba.
+reason: Perspicacia «Arimatea» y la nota de Mt 27:57, que la llama ciudad de Judea.
+sources:
+- it-arimatea
+- mateo-27
+- openbible-geo
+- marcos-15
+- lucas-23
+- juan-19
+links:
+- title: 'Perspicacia: «Arimatea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000362
+  type: perspicacia
+- title: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  type: bible
+checked_on: '2026-09-29'
+status: verified

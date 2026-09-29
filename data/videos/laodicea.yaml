@@ -1,28 +1,28 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: laodicea
-generado: "2026-09-28"
+place: laodicea
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb-096_13_VIDEO"
-    titulo: "David Splane: “Toda la Escritura está inspirada por Dios” (2 Tim. 3:16)"
+    title: "David Splane: “Toda la Escritura está inspirada por Dios” (2 Tim. 3:16)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-096_13_VIDEO&appLanguage=S"
-    publicado: "2023-05-19"
-    menciones: 3
-    terminos:
+    published: "2023-05-19"
+    hits: 3
+    terms:
       "Laodicea": 1
       "laodicenses": 2
   - docid: "pub-jwb-107_2_VIDEO"
-    titulo: "Graduación de la clase 154 de la Escuela de Galaad: De primera mano"
+    title: "Graduación de la clase 154 de la Escuela de Galaad: De primera mano"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-107_2_VIDEO&appLanguage=S"
-    publicado: "2023-12-18"
-    menciones: 2
-    terminos:
+    published: "2023-12-18"
+    hits: 2
+    terms:
       "Laodicea": 2
   - docid: "pub-jwb_201809_9_VIDEO"
-    titulo: "James Mantz: Evitemos todo tipo de codicia (Luc. 12:15)"
+    title: "James Mantz: Evitemos todo tipo de codicia (Luc. 12:15)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201809_9_VIDEO&appLanguage=S"
-    publicado: "2018-09-10"
-    menciones: 2
-    terminos:
+    published: "2018-09-10"
+    hits: 2
+    terms:
       "Laodicea": 1
       "laodicenses": 1

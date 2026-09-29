@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: melquisedec-bendice-a-abran
+title: Melquisedec bendice a Abrán
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+narrative_order:
+  series: genesis
+  order: 14017
+places:
+- valle-de-save
+- jerusalen
+people:
+- abrahan
+- melquisedec
+- bera
+- aner
+- escol
+- mamre
+passages:
+- Gé 14:17-24
+summary: De vuelta de la victoria, el rey de Sodoma sale al encuentro de Abrán en el valle de Savé. Melquisedec, rey de Salem
+  y sacerdote del Dios Altísimo, lo bendice y recibe el diezmo; Abrán no acepta el botín.
+reason: El estudio 3 pone antes de 1933 a.e.c. la visita a Melquisedec, posterior a la llegada de 1943. Perspicacia «Melquisedec»,
+  párr. 2 y 3, y «Bera».
+sources:
+- si-3
+- it-melquisedec
+- it-bera
+- it-save
+- genesis-14
+links:
+- title: Génesis 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sesai
+name: Sesái
+names:
+- name: Sesái
+- name: Sesai
+  note: Grafía de Perspicacia.
+perspicacia: '1200004023'
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+summary: Anaquita de Hebrón, hermano de Ahimán y Talmái, que vivía en la ciudad cuando la exploraron los espías de Israel.
+reason: Perspicacia «Sesai» y «Ahimán», núm. 1; Nú 13:22; Jos 15:14.
+sources:
+- it-sesai
+- it-ahiman
+- numeros-13
+links:
+- title: 'Perspicacia: «Sesai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004023
+  type: perspicacia
+relations:
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - numeros-13
+  reason: 'Nú 13:22: Sesái vivía en Hebrón cuando llegaron los espías.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

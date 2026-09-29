@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: belen
+name: Belén
+names:
+- name: Belén
+- name: Belén de Judea
+  note: Así se la distinguía de la Belén de Zabulón (nota de estudio de Mt 2:1).
+- name: Efrata
+  note: Nombre anterior de la ciudad, según Perspicacia (Gé 35:19; Miq 5:2).
+- name: Efrat
+  note: Forma abreviada de Efrata, según Perspicacia; así la llama Gé 35:16, 19.
+- name: Ciudad de David
+  note: Así la llama Lu 2:4, 11 por ser la patria de David, según la nota de estudio; no es la Ciudad de David de Jerusalén.
+type: city
+lat: 31.704306
+lon: 35.207639
+precision: point
+coord_source: openbible:a112427
+coord_url: https://www.openbible.info/geo/ancient/a112427/bethlehem-1
+summary: Pequeña ciudad de la región montañosa de Judea, unos 9 km al sur-suroeste del monte del Templo. Allí nació David
+  y, en 2 a.e.c., Jesús, como había predicho Miqueas.
+reason: 'Perspicacia «Belén» (núm. 1, párr. 2, 8 y 9) da la ubicación, el tamaño y el nacimiento; la nota de Mt 2:1 explica
+  el nombre. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-belen
+- mateo-2
+- openbible-geo
+- rut-1
+- rut-2
+- rut-4
+- genesis-35
+- genesis-48
+- it-efrata
+- salmos-132
+- lucas-2
+links:
+- title: 'Perspicacia: «Belén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000694
+  type: perspicacia
+- title: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

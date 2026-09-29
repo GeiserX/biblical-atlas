@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-responde-por-benjamin
+title: Judá responde por Benjamín ante Jacob
+date:
+  from: -1728
+  to: -1727
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1729 y 1728 a.e.c. (tiempo narrativo: unos diez años después de morir Isaac y antes del traslado a Egipto)'
+narrative_order:
+  series: genesis
+  order: 43001
+places:
+- canaan
+people:
+- juda-hijo-de-jacob
+- jacob
+- benjamin-hijo-de-jacob
+passages:
+- Gé 43:1-14
+summary: Acabado el grano, Judá recuerda a Jacob que sin Benjamín no pueden volver y se hace responsable del muchacho. Jacob
+  cede y los envía con un regalo y el doble de dinero.
+reason: 'Perspicacia «Jacob», párr. 38: cedió cuando se terminó lo comprado en Egipto, antes del traslado de 1728 a.e.c. (estudio
+  3). Canaán es donde vivía la familia, según los capítulos 42 y 44.'
+sources:
+- genesis-43
+- it-jacob
+- si-3
+links:
+- title: Génesis 43 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/43
+  type: bible
+checked_on: '2026-09-29'
+status: verified

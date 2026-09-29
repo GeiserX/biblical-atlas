@@ -1,0 +1,231 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aaron
+name: Aarón
+names:
+- name: Aarón
+date:
+  from: -1596
+  to: -1473
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1597-1474 a.e.c.
+summary: Hermano mayor de Moisés y su portavoz ante el faraón. Dios lo escogió como primer sumo sacerdote de Israel. Murió
+  en el monte Hor a los 123 años, en el año cuarenta del éxodo.
+reason: 'Perspicacia «Aarón», párr. 2 a 4, 7 y 17: nace en Egipto en 1597 y muere en 1474 a.e.c. Nú 20:22-29.'
+sources:
+- it-aaron
+- exodo-6
+- numeros-20
+- salmos-77
+- salmos-99
+- salmos-105
+- salmos-106
+- salmos-133
+- exodo-4
+- exodo-5
+- exodo-7
+- exodo-8
+- exodo-9
+- exodo-10
+- exodo-11
+- exodo-12
+- exodo-16
+- exodo-17
+- exodo-18
+- exodo-24
+- exodo-27
+- exodo-28
+- exodo-29
+- exodo-30
+- exodo-32
+- exodo-34
+- exodo-40
+- hechos-7
+- levitico-2
+- levitico-6
+- levitico-7
+- levitico-8
+- it-instalacion
+- it-sumo-sacerdote
+- levitico-9
+- levitico-10
+- levitico-11
+- levitico-13
+- levitico-14
+- levitico-15
+- levitico-16
+- levitico-17
+- levitico-21
+- levitico-22
+- levitico-24
+- numeros-1
+- numeros-2
+- numeros-3
+- numeros-4
+- numeros-6
+- numeros-8
+- numeros-9
+- numeros-12
+- numeros-13
+- numeros-14
+- numeros-15
+- numeros-16
+- numeros-17
+- numeros-18
+- numeros-19
+- it-hor
+- numeros-26
+- numeros-33
+- deuteronomio-9
+- deuteronomio-10
+- deuteronomio-32
+links:
+- title: 'Perspicacia: «Aarón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
+  type: perspicacia
+- title: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  type: bible
+relations:
+- type: kin
+  person: levi-hijo-de-jacob
+  word: great_grandfather
+  inferred: false
+  sources:
+  - it-aaron
+  - exodo-6
+  reason: 'Perspicacia «Aarón», párr. 2: sus padres eran de la tribu de Leví, su bisabuelo (Éx 6:16-20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: egipto
+  date:
+    from: -1596
+    to: -1596
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1597 a.e.c.
+  inferred: false
+  sources:
+  - it-aaron
+  reason: 'Perspicacia «Aarón», párr. 2: nació en Egipto en 1597 a.e.c.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: moises
+  word: companion
+  inferred: false
+  sources:
+  - salmos-77
+  - salmos-105
+  - exodo-7
+  - it-aaron
+  - numeros-19
+  reason: 'Sl 77:20: Dios guio a su pueblo como a un rebaño por mano de Moisés y Aarón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amram-hijo-de-cohat
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-amram
+  - it-aaron
+  - numeros-26
+  reason: 'Éx 6:20: hijo de Amram.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jokebed
+  word: mother
+  inferred: false
+  sources:
+  - exodo-6
+  - it-jokebed
+  - it-aaron
+  - numeros-26
+  reason: 'Éx 6:20: hijo de Jokébed.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eliseba
+  word: wife
+  inferred: false
+  sources:
+  - exodo-6
+  - it-eliseba
+  - it-aaron
+  reason: 'Éx 6:23: se casó con Eliseba, hija de Aminadab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - exodo-7
+  - it-aaron
+  reason: 'Perspicacia «Aarón», párr. 2 y 4: nació en Egipto y allí se enfrentó al faraón a los 83 años (Éx 7:7).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: uziel-hijo-de-cohat
+  word: uncle
+  inferred: false
+  sources:
+  - levitico-10
+  - it-uziel
+  reason: Le 10:4 llama a Uziel tío de Aarón.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: desierto-de-sinai
+  date:
+    from: -1512
+    to: -1511
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513-1512 a.e.c.
+  inferred: false
+  sources:
+  - numeros-3
+  - si-3
+  - it-sinai
+  reason: 'Nú 3:14, 38: acampaba con sus hijos al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un
+    año, de 1513 a 1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: monte-hor
+  date:
+    from: -1473
+    to: -1473
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1 de ab de 1474 a.e.c.
+    detail:
+      month: ab
+      day: 1
+  inferred: false
+  sources:
+  - numeros-20
+  - it-aaron
+  - it-hor
+  - numeros-33
+  - deuteronomio-10
+  - it-mosera
+  - deuteronomio-32
+  reason: 'Nú 20:28: murió en la cima del monte Hor; Perspicacia «Aarón», párr. 4 y 19, da el año y el día.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200000005'
+checked_on: '2026-09-29'
+status: verified

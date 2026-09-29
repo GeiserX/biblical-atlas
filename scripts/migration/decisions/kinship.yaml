@@ -1640,3 +1640,10 @@ entries:
   - marcos-15
   - mateo-27
   reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+# Cobertura: los libros que llegaron de main después de estas decisiones citan en su tramo lo que ellas cambiaron.
+- file: coverage/numeros
+  chapter: 13
+  span: 4-16
+  entities: [relation:caleb-hijo-de-jefune/accompanies/josue-hijo-de-nun]
+  sources: [numeros-13]
+  reason: 'Nú 13:6, 8: Caleb y Hosea, al que Moisés llama Josué, van juntos entre los doce espías; el tramo ya tiene a los dos.'

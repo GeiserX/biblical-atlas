@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baraquias
+name: Baraquías
+names:
+- name: Baraquías
+perspicacia: '1200000558'
+disambiguation: Padre de Zacarías en Mt 23:35; no es Berekías, el padre del profeta Zacarías, cuyo nombre se escribe distinto.
+summary: Padre, según Mateo, del Zacarías al que mataron entre el santuario y el altar. Perspicacia recoge la idea de que
+  fuera otro nombre de Jehoiadá; la nota de Mt 23:35 añade que algunos lo ven como su abuelo o antepasado.
+reason: Perspicacia «Baraquías» y «Zacarías», núm. 12 y 20; nota de estudio de Mt 23:35. Solo Mateo da este nombre.
+sources:
+- it-baraquias
+- it-zacarias
+- mateo-23
+links:
+- title: 'Perspicacia: «Baraquías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000558
+  type: perspicacia
+- title: Mateo 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

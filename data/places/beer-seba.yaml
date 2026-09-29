@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beer-seba
+name: Beer-Seba
+names:
+- name: Beer-Seba
+- name: Beer-seba
+  note: Grafía de Perspicacia.
+- name: Sibá
+  note: Nombre que Isaac dio al pozo que cavaron sus siervos; de él viene el de la ciudad.
+type: city
+lat: 31.244722
+lon: 34.840833
+precision: point
+coord_source: openbible:ad2f6c2
+coord_url: https://www.openbible.info/geo/ancient/ad2f6c2/beersheba-1
+summary: 'Pozo y luego ciudad del sur de Judá, unos 45 km al suroeste de Hebrón. Allí vivieron Abrahán e Isaac. Marcaba
+  el extremo sur de la tierra: «desde Dan hasta Beer-Seba».'
+reason: 'Perspicacia «Beer-seba», párr. 2, 3, 5 y 6; Gé 21:31-33. OpenBible: solo el punto.'
+sources:
+- it-beer-seba
+- genesis-21
+- openbible-geo
+- genesis-22
+- genesis-26
+- genesis-28
+- genesis-46
+links:
+- title: 'Perspicacia: «Beer-seba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000615
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

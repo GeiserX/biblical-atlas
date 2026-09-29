@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sitim
+name: Sitim
+names:
+- name: Sitim
+- name: Abel-Sitim
+  note: Nombre completo según parece; Perspicacia remite de Abel-sitim a Sitim.
+type: city
+lat: 31.84018
+lon: 35.67368
+precision: point
+coord_source: openbible:af64fb3
+coord_url: https://www.openbible.info/geo/ancient/af64fb3/shittim
+coord_note: OpenBible lo pone en Tall el-Hammam, el sitio que prefiere Perspicacia. Las llanuras desérticas de Moab usan el
+  mismo punto.
+summary: Lugar de las llanuras de Moab, al nordeste del mar Muerto, donde acampó Israel antes de cruzar el Jordán. Allí muchos
+  israelitas cayeron en la inmoralidad y en el culto al Baal de Peor.
+reason: 'Perspicacia «Sitim», núm. 1: se prefiere identificarlo con Tell el-Hammam, al nordeste de Bet-jesimot. Nú 25:1. De
+  OpenBible solo tomamos el punto.'
+sources:
+- it-sitim
+- it-abel-sitim
+- openbible-geo
+- numeros-25
+- it-bet-jesimot
+- tnm-b3
+- numeros-33
+links:
+- title: 'Perspicacia: «Sitim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004071
+  type: perspicacia
+- title: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  type: bible
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

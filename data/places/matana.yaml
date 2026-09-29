@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: matana
+name: Mataná
+names:
+- name: Mataná
+  note: Significa dádiva.
+type: region
+lat: 31.588347
+lon: 35.907928
+precision: uncertain
+coord_source: openbible:a033373
+coord_url: https://www.openbible.info/geo/ancient/a033373/mattanah
+coord_note: Punto de OpenBible en Khirbet el-Medeiyineh, unos 15 km al nordeste de Dibón. Perspicacia da ese sitio como tentativo.
+summary: Campamento de Israel entre el Arnón y la tierra de Sehón, después de salir del desierto y antes de Nahaliel.
+reason: 'Perspicacia «Mataná»; Nú 21:18, 19. OpenBible: solo el punto.'
+sources:
+- it-matana
+- openbible-geo
+- numeros-21
+links:
+- title: 'Perspicacia: «Mataná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002930
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiman-hijo-de-anac
+name: Ahimán
+names:
+- name: Ahimán
+perspicacia: 1200000157#1
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+disambiguation: Ahimán el anaquita de Hebrón; no el portero levita de después del exilio.
+summary: Uno de los tres anaquim de Hebrón que vieron los espías de Israel. Quizá su nombre, como el de sus hermanos, designa
+  una familia anaquita; años después Caleb y Judá los echaron de la ciudad.
+reason: Perspicacia «Ahimán», núm. 1, y «Anaquim»; Nú 13:22; Jos 15:14.
+sources:
+- it-ahiman
+- it-anaquim
+- numeros-13
+links:
+- title: 'Perspicacia: «Ahimán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000157
+  type: perspicacia
+- title: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  type: bible
+relations:
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - numeros-13
+  reason: 'Nú 13:22: Ahimán vivía en Hebrón cuando llegaron los espías.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: sesai
+  word: brother
+  inferred: true
+  sources:
+  - it-ahiman
+  - numeros-13
+  reason: Nú 13:22 los nombra juntos en Hebrón; Perspicacia «Ahimán», núm. 1, los da como hermanos, y Jos 15:14 como hijos
+    de Anac.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: talmai-hijo-de-anac
+  word: brother
+  inferred: true
+  sources:
+  - it-talmai
+  - numeros-13
+  reason: Nú 13:22 los nombra juntos; Perspicacia «Talmai», núm. 1, los llama hermanos e hijos de Anaq.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

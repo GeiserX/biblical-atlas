@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: havot-jair
+name: Havot-Jaír
+names:
+- name: Havot-Jaír
+  note: Significa aldeas de tiendas de Jaír (nota de Nú 32:41).
+type: region
+lat: 32.5876
+lon: 35.7256
+precision: zone
+coord_source: openbible:a26c8f2
+coord_url: https://www.openbible.info/geo/ancient/a26c8f2/havvoth-jair
+coord_note: Punto representativo de OpenBible para el conjunto de aldeas; no se sabe dónde estaba cada una.
+summary: Aldeas de tiendas de Manasés al este del Jordán, al parecer veintitrés, que Jaír tomó y llamó con su nombre. Unos
+  textos las ponen en Galaad y otros en Basán.
+reason: 'Perspicacia «Havot-jaír»; Nú 32:41 y su nota, que da el significado del nombre. OpenBible: solo el punto.'
+sources:
+- it-havot-jair
+- openbible-geo
+- numeros-32
+- deuteronomio-3
+links:
+- title: 'Perspicacia: «Havot-jaír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001922
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

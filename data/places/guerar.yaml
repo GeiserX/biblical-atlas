@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guerar
+name: Guerar
+names:
+- name: Guerar
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Tel Haror (Tell Abu Hureirah)
+  geometry:
+    type: point
+    lat: 31.3821
+    lon: 34.6065
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-guerar
+  reason: Perspicacia dice que hoy muchos geógrafos la ponen en este sitio de las estribaciones de Judea, al sureste de Gaza
+    (párr. 1).
+  coord_source: openbible:a3f5814
+  coord_url: https://www.openbible.info/geo/ancient/a3f5814/gerar
+- name: Tell Jemmeh (Tel Gamma)
+  geometry:
+    type: point
+    lat: 31.38724
+    lon: 34.44506
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-guerar
+  reason: Identificación antigua, unos 12 km al sur de Gaza, que Perspicacia menciona como la de antes (párr. 1).
+  coord_source: openbible:a3f5814
+  coord_url: https://www.openbible.info/geo/ancient/a3f5814/gerar
+summary: Lugar cercano a Gaza que marcaba el límite sur del primer territorio cananeo. Abrahán y después Isaac vivieron allí
+  como forasteros y trataron con su rey, Abimélec.
+reason: 'Perspicacia «Guerar», párr. 1; Gé 10:19. Puntos de OpenBible: solo tomamos los puntos.'
+sources:
+- it-guerar
+- genesis-10
+- openbible-geo
+- it-filistea
+- genesis-20
+- genesis-26
+links:
+- title: 'Perspicacia: «Guerar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001658
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+- title: Génesis 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/20
+  type: bible
+- title: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  type: bible
+checked_on: '2026-09-29'
+status: verified

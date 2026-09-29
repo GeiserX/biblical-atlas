@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quiryataim
+name: Quiryataim
+names:
+- name: Quiryataim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Quraiyat, al oeste-noroeste de Dibón
+  geometry:
+    type: point
+    lat: 31.540556
+    lon: 35.686111
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-quiryataim
+  - openbible-geo
+  reason: Perspicacia dice que suele situarse hacia Quraiyat, unos 10 km al oeste-noroeste de Dibón, aunque allí las ruinas
+    son posteriores al siglo I a.e.c.
+  coord_source: openbible:ad54201
+  coord_url: https://www.openbible.info/geo/ancient/ad54201/kiriathaim-1
+summary: Ciudad al este del Jordán que reconstruyeron los rubenitas. Más tarde fue de Moab, y el rey Mesá dice que la edificó.
+reason: 'Perspicacia «Quiryataim», núm. 1: su sitio es incierto; Nú 32:37. El primer punto de OpenBible cae donde jw.org pone
+  Nebo, así que no lo usamos.'
+sources:
+- it-quiryataim
+- openbible-geo
+- numeros-32
+links:
+- title: 'Perspicacia: «Quiryataim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002623
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

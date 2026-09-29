@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aroer
+name: Aroer
+names:
+- name: Aroer
+type: city
+lat: 31.4708
+lon: 35.819389
+precision: point
+coord_source: openbible:ae46f2e
+coord_url: https://www.openbible.info/geo/ancient/ae46f2e/aroer-1
+summary: Ciudad en el borde norte de la garganta del Arnón, la más al sur del reino amorreo. La reconstruyó Gad, pero pasó
+  a Rubén; marcaba el límite sur de Israel al este del Jordán.
+reason: 'Perspicacia «Aroer», núm. 1: Khirbet ʽAraʽir, unos 6 km al sureste de Dibón; Nú 32:34. OpenBible: solo el punto.'
+sources:
+- it-aroer
+- openbible-geo
+- numeros-32
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-4
+links:
+- title: 'Perspicacia: «Aroer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000382
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

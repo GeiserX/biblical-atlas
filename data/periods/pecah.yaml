@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: pecah
+name: Reinado de Pécah en Israel
+type: king
+person: pecah
+date:
+  from: -777
+  to: -757
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778-758 a.e.c.
+places:
+- samaria
+summary: Veinte años en Samaria.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 15.
+sources:
+- tnm-a6-b
+- 2-reyes-15
+- it-peqah
+search: Pécah rey
+checked_on: '2026-09-28'
+status: verified

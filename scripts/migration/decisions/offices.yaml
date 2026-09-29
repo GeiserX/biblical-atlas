@@ -807,3 +807,47 @@ entries:
   entities: [relation:judas-iscariote/holds_office/-]
   sources: [mateo-10]
   reason: Mt 10:2-4 da los nombres de los doce apóstoles, y el último es Judas Iscariote.
+# Cobertura: los libros que llegaron de main después de estas decisiones citan en su tramo el cargo que ellas crearon.
+- file: coverage/hechos
+  chapter: 24
+  span: '27'
+  entities: [relation:festo/holds_office/judea]
+  sources: [hch-24]
+  reason: Hch 24:27 cuenta que Porcio Festo sucedió a Félix, el gobernador; el tramo ya cita esa sucesión.
+- file: coverage/hechos
+  chapter: 25
+  span: 1-5
+  entities: [relation:festo/holds_office/judea]
+  sources: [hch-25]
+  reason: Hch 25:1 dice que Festo tomó posesión de su puesto en la provincia y a los tres días subió a Jerusalén.
+- file: coverage/deuteronomio
+  chapter: 31
+  span: 1-6
+  entities: [relation:moises/holds_office/-/leader]
+  sources: [deuteronomio-31]
+  reason: 'Dt 31:2, 3: Moisés, con 120 años, ya no puede guiar al pueblo, y será Josué quien cruce delante de ellos.'
+- file: coverage/deuteronomio
+  chapter: 31
+  span: 7-8
+  entities: [relation:josue-hijo-de-nun/holds_office/-]
+  sources: [deuteronomio-31]
+  reason: Dt 31:7 dice que Josué llevará al pueblo a la tierra y se la dará en herencia.
+- file: coverage/deuteronomio
+  chapter: 31
+  span: 14-15
+  entities: [relation:josue-hijo-de-nun/holds_office/-]
+  sources: [deuteronomio-31]
+  reason: Dt 31:14 cuenta que Jehová llama a Josué a la tienda de reunión para nombrarlo líder.
+- file: coverage/deuteronomio
+  chapter: 34
+  span: 10-12
+  entities: [relation:moises/holds_office/-/prophet]
+  sources: [deuteronomio-34]
+  reason: Dt 34:10 dice que en Israel no volvió a surgir un profeta como Moisés.
+- file: coverage/hechos
+  chapter: 1
+  span: 23-26
+  mentions: [relation:judas-iscariote/holds_office/-]
+  entities: [relation:matias/holds_office/-]
+  sources: [hechos-1]
+  reason: Hch 1:25, 26 habla del apostolado que Judas abandonó y cuenta que Matías, elegido por suertes, se contó con los once apóstoles.

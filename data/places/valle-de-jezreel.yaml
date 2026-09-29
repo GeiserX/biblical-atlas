@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-jezreel
+name: Valle de Jezreel
+names:
+- name: Valle de Jezreel
+- name: Llanura baja de Jezreel
+  note: Otra lectura que da la nota de Os 1:5.
+- name: Llanura de Esdrelón
+  note: Forma griega del nombre; en sentido amplio cubre toda la llanura del Carmelo al Jordán.
+type: valley
+lat: 32.596389
+lon: 35.241944
+precision: zone
+coord_source: openbible:aa516c2
+coord_url: https://www.openbible.info/geo/ancient/aa516c2/valley-of-jezreel
+coord_note: Punto representativo de OpenBible para el valle.
+summary: Llanura que baja desde la ciudad de Jezreel hacia Bet-seán; en sentido amplio, del Carmelo al Jordán. Oseas anunció
+  que allí se rompería el arco de Israel.
+reason: 'Perspicacia «Jezreel», núm. 5, párr. 1 y 2, y núm. 4, párr. 6; Os 1:5. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-jezreel
+- openbible-geo
+- oseas-1
+links:
+- title: 'Perspicacia: «Jezreel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
+  type: perspicacia
+- title: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

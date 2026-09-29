@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: finehas-mata-a-zimri-y-a-cozbi
+title: Finehás mata a Zimrí y a Cozbí, y se detiene el azote
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+narrative_order:
+  series: numeros
+  order: 25006
+places:
+- sitim
+people:
+- finehas-hijo-de-eleazar
+- zimri-hijo-de-salu
+- cozbi
+- moises
+passages:
+- Nú 25:6-9, 14, 15
+- Sl 106:30
+summary: Mientras el pueblo llora ante la tienda de reunión, el simeonita Zimrí lleva a la madianita Cozbí a su tienda. Finehás
+  entra tras él, atraviesa a los dos con una lanza y el azote para.
+reason: 'Nú 25:6-8, 14, 15; Perspicacia «Finehás», núm. 1, y «Zimrí», núm. 2. Fecha: tras vencer a Og, hacia 1473 a.e.c. (Perspicacia
+  «Basán»), y antes de acabar Números, en 1473 (estudio 3).'
+sources:
+- numeros-25
+- it-finehas
+- it-zimri
+- it-cozbi
+- si-3
+- it-basan
+links:
+- title: Números 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

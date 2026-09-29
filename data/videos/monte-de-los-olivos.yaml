@@ -1,12 +1,12 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: monte-de-los-olivos
-generado: "2026-09-28"
+place: monte-de-los-olivos
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwbcov24_9_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús"
+    title: "Lecciones sobre la tierra en la que vivió Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_9_VIDEO&appLanguage=S"
-    publicado: "2025-01-20"
-    menciones: 3
-    terminos:
+    published: "2025-01-20"
+    hits: 3
+    terms:
       "monte de los Olivos": 3

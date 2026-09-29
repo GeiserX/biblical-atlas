@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: boaz
+name: Boaz
+names:
+- name: Boaz
+perspicacia: '1200000779'
+disambiguation: El hombre de Belén; no la columna del templo de Salomón que también se llamaba Boaz.
+summary: Terrateniente rico de Belén, de la familia de Elimélec, que vivió hacia el siglo XIV a.e.c. Dejó espigar a Rut en
+  su campo, actuó como recomprador, se casó con ella y fue padre de Obed.
+reason: Perspicacia «Boaz, I», párr. 1 y 2; Rut 2:1-4:13.
+sources:
+- it-boaz
+- rut-2
+- rut-3
+- rut-4
+- mateo-1
+- lucas-3
+links:
+- title: 'Perspicacia: «Boaz, I»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000779
+  type: perspicacia
+relations:
+- type: kin
+  person: elimelec
+  inferred: false
+  sources:
+  - rut-2
+  reason: 'Rut 2:1 y 3: era de la familia de Elimélec; en 4:3 lo llama «nuestro hermano».'
+  checked_on: '2026-09-29'
+  word: relative
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - rut-2
+  reason: 'Rut 2:4: llegaba de Belén a su campo; 4:11 le desean renombre en Belén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rut
+  word: wife
+  inferred: false
+  sources:
+  - rut-4
+  reason: 'Rut 4:10 y 13: la toma por esposa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: salmon
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - lucas-3
+  reason: Rut 4:21.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rahab
+  word: mother
+  inferred: false
+  sources:
+  - mateo-1
+  reason: Mt 1:5.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

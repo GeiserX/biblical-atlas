@@ -1,0 +1,94 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sostenes
+name: Sóstenes
+names:
+- name: Sóstenes
+date:
+  from: 51
+  to: 55
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 51-55 e.c.
+summary: Presidente de la sinagoga de Corinto, quizás sucesor de Crispo. La multitud lo golpeó ante Galión. Tal vez es el
+  hermano Sóstenes que estaba con Pablo en Éfeso y quizá le escribió al dictado 1 Corintios.
+reason: Perspicacia «Sóstenes» (párr. 1 y 2); Hch 18:12-17; 1Co 1:1. Empieza con Galión, procónsul del verano de 51 al de 52
+  (estudio 3, párr. 25), y llega a 1 Corintios, c. 55 (Tabla), si es el mismo hermano, solo posible.
+sources:
+- it-sostenes
+- hch-18
+- si-3
+- 1-corintios-1
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Sóstenes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004190
+  type: perspicacia
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+perspicacia: '1200004190'
+history:
+- date: '2026-09-29'
+  change: 'El resumen añade lo que dicen la nota de estudio de 1Co 1:1 y Perspicacia «Corintios, Cartas a los»: estaba con
+    Pablo en Éfeso y quizá escribió la carta que él dictaba.'
+  source: 1-corintios-1
+- date: '2026-09-29'
+  change: La fecha acababa en 52 y sus relaciones con Pablo y con Éfeso son de c. 55. Llega hasta 1 Corintios, porque la nota
+    de 1Co 1:1 ve posible que sea el mismo Sóstenes.
+  source: 1-corintios-1
+- date: '2026-09-29'
+  change: La razón explica que el final de la fecha depende de una identificación que Perspicacia y la nota de 1Co 1:1 solo
+    dan como posible.
+  source: 1-corintios-1
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: corinto
+  inferred: false
+  sources:
+  - it-sostenes
+  - hch-18
+  reason: Presidía la sinagoga de Corinto cuando Pablo estaba allí (Hch 18:17).
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  inferred: true
+  sources:
+  - it-sostenes
+  - 1-corintios-1
+  - tnm-tabla
+  reason: Perspicacia ve posible que sea el Sóstenes que saluda con Pablo desde Éfeso (1Co 1:1). La Tabla de los libros fecha
+    1 Corintios hacia 55.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  inferred: true
+  sources:
+  - it-sostenes
+  - 1-corintios-1
+  - it-corintios
+  reason: La nota de estudio de 1Co 1:1 y Perspicacia «Sóstenes» ven posible que, ya cristiano, acompañara a Pablo en Éfeso,
+    desde donde se escribió la carta.
+  checked_on: '2026-09-29'
+  status: verified

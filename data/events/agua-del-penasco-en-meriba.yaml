@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: agua-del-penasco-en-meriba
+title: Moisés saca agua del peñasco en Meribá
+date:
+  from: -1473
+  to: -1473
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1474 a.e.c. (año cuadragésimo del éxodo)
+narrative_order:
+  series: numeros
+  order: 20002
+places:
+- meriba-de-cades
+- cades
+- desierto-de-zin
+people:
+- moises
+- aaron
+passages:
+- Nú 20:2-13
+- Sl 106:32, 33
+- Dt 32:51
+summary: Sin agua en Cadés, el pueblo riñe con Moisés y Aarón. Jehová manda hablar al peñasco, pero Moisés lo golpea dos veces.
+  Sale agua, y por no santificar a Jehová ninguno de los dos entrará en la tierra.
+reason: 'Perspicacia «Meribá», núm. 2: el incidente fue, al parecer, en el año cuadragésimo, antes de la muerte de Aarón (1474
+  a.e.c., «Aarón», párr. 4). Sl 106:32, 33 lo recuerda.'
+sources:
+- numeros-20
+- it-meriba
+- it-aaron
+- it-zin
+- salmos-106
+links:
+- title: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

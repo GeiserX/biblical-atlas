@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: timna-de-la-region-montanosa
+name: Timná
+names:
+- name: Timná
+- name: Timnah
+  note: Otra grafía, en la nota de Gé 38:12 y en Perspicacia.
+type: city
+lat: 31.409448
+lon: 35.133839
+precision: uncertain
+coord_source: openbible:a17c178
+coord_url: https://www.openbible.info/geo/ancient/a17c178/timnah-3
+coord_note: Identificación que Perspicacia solo atribuye a algunos investigadores.
+summary: Ciudad de la región montañosa de Judá. Judá subía allí a esquilar sus ovejas cuando Tamar lo esperó en Enaim. No
+  es la Timnah de Sansón.
+reason: 'Perspicacia «Timnah», núm. 2: algunos la relacionan con Khirbet et-Tabbana; Gé 38:12-14. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-timnah
+- openbible-geo
+- genesis-38
+links:
+- title: 'Perspicacia: «Timnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004411
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

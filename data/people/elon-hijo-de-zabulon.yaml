@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elon-hijo-de-zabulon
+name: Elón
+names:
+- name: Elón
+perspicacia: 1200001333#2
+disambiguation: Elón hijo de Zabulón; no el hitita suegro de Esaú ni el juez zabulonita.
+summary: Segundo de los tres hijos de Zabulón. Fue a Egipto con la familia de su abuelo Jacob y encabezó la familia de los
+  elonitas.
+reason: Perspicacia «Elón», núm. 2; Gé 46:14.
+sources:
+- it-elon
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Elón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001333
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: zabulon-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-elon
+  - numeros-26
+  reason: 'Gé 46:14: aparece entre los hijos de Zabulón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: canaan
+name: Canaán
+names:
+- name: Canaán
+- name: Tierra de Canaán
+  note: Así la llama Génesis 23.
+type: region
+lat: 32.766667
+lon: 35.333333
+precision: zone
+coord_source: openbible:a581f0c
+coord_url: https://www.openbible.info/geo/ancient/a581f0c/canaan
+coord_note: Punto representativo de OpenBible para toda la tierra de Canaán.
+summary: Tierra al oeste del Jordán, entre Egipto y Siria, que debe su nombre a Canaán, hijo de Cam, cuyos descendientes la
+  poblaron. Abrahán vivió en ella como extranjero.
+reason: 'Perspicacia «Canaán», núm. 1 y 2; Gé 23:2, 19. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-canaan
+- openbible-geo
+- genesis-23
+- genesis-10
+- genesis-11
+- genesis-12
+- genesis-13
+- genesis-16
+- genesis-17
+- genesis-31
+- genesis-33
+- genesis-36
+- genesis-37
+- genesis-42
+- genesis-45
+- genesis-46
+- genesis-47
+- genesis-50
+- salmos-105
+- salmos-135
+- hechos-7
+- numeros-13
+- numeros-34
+- deuteronomio-1
+links:
+- title: 'Perspicacia: «Canaán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
+  type: perspicacia
+- title: Génesis 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/23
+  type: bible
+- title: Génesis 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
+  type: bible
+- title: Génesis 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  type: bible
+- title: Génesis 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/42
+  type: bible
+- title: Salmo 105 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/105
+  type: bible
+- title: Salmo 135 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
+  type: bible
+checked_on: '2026-09-29'
+status: verified

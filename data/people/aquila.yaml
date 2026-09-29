@@ -1,0 +1,136 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aquila
+name: Áquila
+names:
+- name: Áquila
+summary: Judío del Ponto, esposo de Priscila y fabricante de tiendas. Expulsados de Roma por el decreto de Claudio,
+  hospedaron a Pablo en Corinto.
+reason: Perspicacia «Áquila» cuenta su origen, el decreto de 49 o principios de 50 y el encuentro con Pablo en Corinto
+  (Hch 18:1-3).
+sources:
+- it-aquila
+- hch-18
+- romanos-16
+- 1-corintios-16
+links:
+- title: 'Perspicacia: «Áquila»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000320
+  type: perspicacia
+- title: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  type: bible
+perspicacia: '1200000320'
+history:
+- date: '2026-09-29'
+  change: 'La relación con Roma pierde la fecha c. 56: Hch 18:2 dice que ya vivía allí antes de que Claudio echara a los judíos
+    (Perspicacia «Claudio»), y volvió hacia 56.'
+  source: hch-18
+- date: '2026-09-29'
+  change: La relación con Priscila decía «esposo»; en la ficha del esposo va «esposa», porque dice qué es Priscila para Áquila
+    (Hch 18:2).
+  source: hch-18
+- date: '2026-09-29'
+  change: La relación con Pablo iba solo de 50 a 52. Ro 16:3, 4 los llama colaboradores hacia 56, y Perspicacia «Prisca» la
+    alarga hasta la muerte de Pablo, unos quince años después.
+  source: romanos-16
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: kin
+  person: priscila
+  word: wife
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Hch 18:2 presenta a Priscila como su esposa.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: corinto
+  date:
+    from: 50
+    to: 52
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-52 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  reason: Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 52
+    to: 55
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52-55 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  - 1-corintios-16
+  reason: Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: roma
+  inferred: false
+  sources:
+  - it-aquila
+  - romanos-16
+  - hch-18
+  - it-claudio
+  reason: 'Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación
+    en su casa (Ro 16:3-5).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  word: fellow_worker
+  date:
+    from: 50
+    to: 65
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 50-65 e.c.
+  inferred: false
+  sources:
+  - it-aquila
+  - hch-18
+  - romanos-16
+  - it-prisca
+  - 1-corintios-16
+  reason: Hacen tiendas juntos en Corinto y viajan con él a Éfeso (Hch 18:3, 18, 19). Ro 16:3, 4 los llama colaboradores que
+    arriesgaron la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: ponto
+  inferred: false
+  sources:
+  - hch-18
+  - it-aquila
+  reason: Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: italia
+  inferred: false
+  sources:
+  - hch-18
+  - it-aquila
+  - it-italia
+  reason: 'Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.'
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: capadocia
+name: Capadocia
+names:
+- name: Capadocia
+type: region
+lat: 38.670556
+lon: 34.839167
+precision: zone
+coord_source: openbible:a33fbde
+coord_url: https://www.openbible.info/geo/ancient/a33fbde/cappadocia
+coord_note: Punto representativo de la región.
+summary: Región del interior del este de Asia Menor, en una meseta alta. Tiberio la hizo provincia romana en 17.
+  Había judíos de allí en Pentecostés y Pedro escribió a sus cristianos.
+reason: 'Perspicacia «Capadocia» (párr. 2 a 4); Hch 2:9 y 1Pe 1:1. La coordenada es de OpenBible: solo tomamos el
+  punto.'
+sources:
+- it-capadocia
+- 1-pedro-1
+- openbible-geo
+links:
+- title: 'Perspicacia: «Capadocia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000885
+  type: perspicacia
+- title: 1 Pedro 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

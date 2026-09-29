@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-se-aparece-a-isaac-en-beer-seba
+title: Jehová se aparece a Isaac en Beer-Seba
+date:
+  from: -1842
+  to: -1780
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+narrative_order:
+  series: genesis
+  order: 26023
+places:
+- beer-seba
+people:
+- isaac
+passages:
+- Gé 26:23-25
+summary: Isaac sube a Beer-Seba. Esa noche Jehová le dice que no tema y le promete bendecirlo; Isaac levanta allí un altar,
+  planta su tienda y sus siervos cavan un pozo.
+reason: Perspicacia «Abimélec», núm. 2, e «Isaac», párr. 13, lo ponen después de la muerte de Abrahán (1843 a.e.c.); Jacob
+  huye a Harán en 1781 (estudio 3).
+sources:
+- it-abimelec
+- it-isaac
+- si-3
+- genesis-26
+links:
+- title: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  type: bible
+checked_on: '2026-09-29'
+status: verified

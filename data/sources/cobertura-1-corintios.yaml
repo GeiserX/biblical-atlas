@@ -1,0 +1,22 @@
+# biblical-earth: fuentes de la cobertura de 1-corintios. Esquema en docs/investigacion/README.md.
+it-cloe:
+  title: Cloe
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000964
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-fortunato:
+  title: Fortunato
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001557
+  level: 1
+  published: null
+  checked_on: '2026-09-29'
+it-acaico:
+  title: Acaico
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000073
+  level: 1
+  published: null
+  checked_on: '2026-09-29'

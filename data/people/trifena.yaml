@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: trifena
+name: Trifena
+names:
+- name: Trifena
+perspicacia: '1200004484'
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c. (fecha de Romanos)
+summary: Cristiana de Roma a la que Pablo saluda con Trifosa por su empeño en el Señor. Sus dos nombres vienen de la misma
+  raíz; Perspicacia ve posible que fueran hermanas.
+reason: Perspicacia «Trifena»; Ro 16:12. La fecha es la de Romanos, hacia 56 según la Tabla de los libros.
+sources:
+- it-trifena
+- romanos-16
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Trifena»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004484
+  type: perspicacia
+- title: Romanos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/16
+  type: bible
+relations:
+- type: lived_in
+  place: roma
+  inferred: false
+  sources:
+  - it-trifena
+  - romanos-16
+  reason: Pablo la saluda entre los cristianos de Roma (Ro 16:12).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: trifosa
+  word: sister
+  inferred: true
+  sources:
+  - it-trifena
+  - romanos-16
+  reason: 'Perspicacia «Trifena»: quizá eran hermanas, porque en una familia solían usarse nombres de la misma raíz. Ro 16:12
+    solo las nombra juntas.'
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

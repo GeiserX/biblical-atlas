@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-vuelve-a-cades
+title: Israel vuelve a Cadés, donde muere Míriam
+date:
+  from: -1473
+  to: -1473
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: nisán de 1474 a.e.c. (primer mes del año cuadragésimo)
+  detail:
+    month: nisan
+narrative_order:
+  series: numeros
+  order: 20001
+places:
+- cades
+- desierto-de-zin
+people:
+- miriam-hermana-de-moises
+passages:
+- Nú 20:1
+- Nú 33:36
+summary: En el primer mes del año cuarenta tras el éxodo, todo Israel llega al desierto de Zin y se queda en Cadés. Allí muere
+  Míriam y la entierran.
+reason: 'Perspicacia «Qadés», párr. 10: al parecer volvieron en el primer mes del año cuadragésimo; el éxodo es de 1513 a.e.c.
+  (estudio 3). «Míriam»: murió poco antes que Aarón.'
+sources:
+- numeros-20
+- it-qades
+- it-zin
+- it-miriam
+- si-3
+links:
+- title: Números 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

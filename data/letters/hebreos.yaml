@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: hebreos
+book: Hebreos
+writer: pablo
+reference: Heb 13:24
+written_in:
+- roma
+date:
+  from: 61
+  to: 61
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 61 e.c.
+recipients:
+  text: Cristianos hebreos de Judea
+  places:
+  - judea
+people:
+- timoteo
+context_origin:
+  summary: Final del primer encarcelamiento en Roma.
+  sources:
+  - si-3
+context_destination:
+  summary: El templo seguía en pie con su sacerdocio. Unos cinco años después, las tropas de Cestio Galo atacaron
+    Jerusalén.
+  sources:
+  - it-hebreos
+reason: La Tabla y el estudio 3 dan Roma y c. 61; Perspicacia «Hebreos» dice que se dirigió a los cristianos hebreos
+  de Judea.
+sources:
+- tnm-tabla
+- si-3
+- it-hebreos
+- hebreos-13
+links:
+- title: 'Perspicacia: «Hebreos, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001954
+  type: perspicacia
+- title: Hebreos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/13
+  type: bible
+checked_on: '2026-09-28'
+status: verified

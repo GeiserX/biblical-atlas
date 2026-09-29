@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maki
+name: Makí
+names:
+- name: Makí
+perspicacia: '1200002818'
+summary: Gadita, padre de Gueuel, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+reason: Perspicacia «Makí»; Nú 13:15.
+sources:
+- it-maki
+- numeros-13
+links:
+- title: 'Perspicacia: «Makí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002818
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

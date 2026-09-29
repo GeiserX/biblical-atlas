@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mizpa-de-galaad
+name: Mizpá
+names:
+- name: Mizpá
+type: city
+lat: 32.118511
+lon: 35.77702
+precision: uncertain
+coord_source: openbible:a0f8af9
+coord_url: https://www.openbible.info/geo/ancient/a0f8af9/mizpah-1
+coord_note: Perspicacia dice que su sitio exacto es incierto y recoge como opinión las cercanías de Khirbet Jalʽad; el punto
+  es el de OpenBible.
+summary: Ciudad de Galaad, al este del Jordán, de la que era Jefté. Perspicacia cree que quizá sea la Mizpá de Os 5:1, que
+  pudo usarse, igual que el Tabor, como centro de idolatría.
+reason: 'Perspicacia «Mizpá, Mizpé», núm. 4, y «Tabor», párr. 4; Jue 11:34; Os 5:1. Coordenada de OpenBible: solo tomamos el
+  punto.'
+not_claimed:
+- 'Que la Mizpá de Oseas 5:1 sea con seguridad esta: Perspicacia solo dice que quizá lo sea.'
+sources:
+- it-mizpa
+- it-tabor
+- openbible-geo
+- oseas-5
+links:
+- title: 'Perspicacia: «Mizpá, Mizpé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093
+  type: perspicacia
+- title: Oseas 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

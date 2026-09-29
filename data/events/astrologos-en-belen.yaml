@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: astrologos-en-belen
+title: Los astrólogos rinden homenaje al niño en Belén
+date:
+  from: 0
+  to: 1
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 1 a.e.c. y 1 e.c.
+narrative_order:
+  series: a7
+  order: 7
+places:
+- belen
+people:
+- jesus
+- maria-madre-de-jesus
+passages:
+- Mt 2:9-12
+summary: La estrella los lleva hasta la casa donde está el niño con su madre. Se arrodillan y le ofrecen oro, olíbano y mirra.
+  Un sueño les advierte que no vuelvan a Herodes, y regresan a su tierra por otra ruta.
+reason: A7-A, fila 7. La nota de Mt 2:11 y Perspicacia «José» (núm. 8) ven en la casa la señal de que Jesús ya no era un recién
+  nacido.
+sources:
+- mateo-2
+- tnm-a7-a
+- it-jose
+- jy-cap-7
+links:
+- title: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: petuel
+name: Petuel
+names:
+- name: Petuel
+perspicacia: '1200003455'
+summary: Padre del profeta Joel. La Biblia solo lo nombra en la primera línea del libro de su hijo.
+reason: Perspicacia «Petuel»; Joe 1:1.
+sources:
+- it-petuel
+- joel-1
+links:
+- title: 'Perspicacia: «Petuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003455
+  type: perspicacia
+- title: Joel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

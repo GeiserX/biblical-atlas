@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ard
+name: Ard
+names:
+- name: Ard
+perspicacia: '1200000351'
+summary: Contado en Gé 46:21 entre los hijos de Benjamín, aunque Números 26 indica que era nieto, por Bela. Quizá sea el Addar
+  de 1 Crónicas 8.
+reason: Perspicacia «Ard»; Gé 46:21.
+sources:
+- it-ard
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Ard»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000351
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - genesis-46
+  - it-ard
+  reason: Gé 46:21 lo llama hijo de Benjamín; Perspicacia entiende que era su nieto.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: bela-hijo-de-benjamin
+  word: father
+  inferred: false
+  sources:
+  - numeros-26
+  - it-ard
+  reason: Nú 26:40 hace a Ard y a Naamán hijos de Bela.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: 'Nú 26:40 dice que Ard era hijo de Bela: esa relación deja de ser una deducción de Perspicacia, cita el capítulo
+    y queda verificada.'
+  source: numeros-26
+checked_on: '2026-09-29'
+status: verified

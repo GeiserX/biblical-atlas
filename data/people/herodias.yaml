@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: herodias
+name: Herodías
+names:
+- name: Herodías
+summary: Nieta de Herodes el Grande. Se divorció de Herodes Filipo para casarse con su medio hermano Herodes Antipas; Juan
+  el Bautista condenó esa unión y ella consiguió que lo decapitaran en 32.
+reason: Perspicacia «Herodías» (párr. 2-4); Mr 6:17-28.
+sources:
+- it-herodias
+- marcos-6
+- mateo-14
+- lucas-3
+relations:
+- type: kin
+  person: herodes-el-grande
+  word: grandfather
+  inferred: true
+  sources:
+  - it-herodias
+  reason: 'Perspicacia «Herodías» (párr. 2): su padre, Aristóbulo, era hijo de Herodes el Grande.'
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Herodías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002002
+  type: perspicacia
+- title: Marcos 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/6
+  type: bible
+perspicacia: '1200002002'
+checked_on: '2026-09-29'
+status: verified

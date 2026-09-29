@@ -1,0 +1,143 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-aaron
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#1
+disambiguation: Hijo de Aarón y sumo sacerdote tras él; no el Eleazar de la genealogía de Jesús ni los otros que numera Perspicacia.
+distinct_from:
+- eleazar-hijo-de-eliud
+summary: Tercer hijo de Aarón y Eliseba, sacerdote con su padre y, en el desierto, jefe principal de los levitas. Se casó
+  con una hija de Putiel, madre de Finehás, y sucedió a Aarón como sumo sacerdote.
+reason: Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1; Nú 3:32.
+sources:
+- it-eleazar
+- exodo-6
+- exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
+- numeros-3
+- numeros-4
+- numeros-16
+- numeros-19
+- numeros-20
+- numeros-26
+- numeros-27
+- numeros-31
+- numeros-32
+- numeros-34
+- deuteronomio-10
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
+  type: perspicacia
+- title: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  type: bible
+relations:
+- type: kin
+  person: aaron
+  word: father
+  inferred: false
+  sources:
+  - exodo-6
+  - it-eleazar
+  - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-4
+  - numeros-16
+  - numeros-20
+  - numeros-26
+  - deuteronomio-10
+  reason: 'Éx 6:23: hijo de Aarón y Eliseba.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eliseba
+  word: mother
+  inferred: false
+  sources:
+  - exodo-6
+  - it-eleazar
+  reason: 'Éx 6:23: Eliseba se los dio a Aarón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: putiel
+  word: father_in_law
+  inferred: false
+  sources:
+  - exodo-6
+  - it-eleazar
+  reason: 'Éx 6:25: su esposa era hija de Putiel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - it-eleazar
+  reason: 'Perspicacia «Eleazar», núm. 1: tenía más de veinte años cuando Israel salió de Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: itamar
+  word: brother
+  inferred: false
+  sources:
+  - levitico-10
+  - numeros-3
+  reason: Le 10:6, 12 y 16 nombran juntos a Eleazar e Itamar como los dos hijos vivos de Aarón.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: desierto-de-sinai
+  date:
+    from: -1512
+    to: -1511
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1513-1512 a.e.c.
+  inferred: false
+  sources:
+  - numeros-3
+  - si-3
+  - it-sinai
+  reason: 'Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512
+    a.e.c. (Perspicacia «Sinaí»).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: aaron
+  date:
+    from: -1473
+    to: -1473
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1474 a.e.c.
+  inferred: false
+  sources:
+  - numeros-20
+  - it-eleazar
+  - it-aaron
+  - deuteronomio-10
+  reason: 'Nú 20:25-28: Moisés le pone las ropas de Aarón antes de morir este; Perspicacia «Eleazar», núm. 1: así pasó a ser
+    sumo sacerdote.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: El resumen añade que fue el jefe principal de los levitas en el desierto (Nú 3:32; Perspicacia «Eleazar», núm. 1).
+  source: numeros-3
+- date: '2026-09-29'
+  change: La razón cita Nú 3:32, de donde sale su cargo al frente de los levitas.
+  source: numeros-3
+checked_on: '2026-09-29'
+status: verified

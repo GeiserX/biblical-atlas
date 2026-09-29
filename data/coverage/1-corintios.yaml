@@ -1,0 +1,169 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: 1-corintios
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Saludo y primera parte de la carta: las divisiones de Corinto y la sabiduría de Dios frente a la del mundo."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:1-corintios, person:pablo, person:sostenes, relation:sostenes/accompanies/pablo, relation:sostenes/lived_in/efeso, place:corinto, event:pablo-escribe-1-corintios], mentions: [person:jesus, event:pablo-ante-galion, place:efeso, event:pablo-recibe-una-carta-de-los-corintios], note: "Saludo de Pablo, apóstol, y del hermano Sóstenes a la congregación de Corinto. La nota de estudio ve posible que fuera el jefe de sinagoga golpeado ante Galión y que Pablo le dictara la carta."}
+    - {v: 4-9, type: letter, mentions: [person:jesus], note: "Pablo da gracias porque Dios dio a los corintios dones, palabra y conocimiento mientras esperan la revelación de Jesucristo. Dios es fiel y los mantendrá firmes hasta el fin."}
+    - {v: 10-12, type: letter, entities: [event:la-casa-de-cloe-informa-a-pablo, person:cloe, person:apolos], mentions: [person:pedro, place:efeso, person:jesus, person:pablo, event:estefanas-fortunato-y-acaico-visitan-a-pablo], note: "Ruega que no haya divisiones. Por los de la casa de Cloe sabe que hay bandos: de Pablo, de Apolos, de Cefas (el apóstol Pedro) y de Cristo. La nota de estudio sitúa a Apolos en Corinto tras Pablo."}
+    - {v: 13-17, type: letter, entities: [event:pablo-bautiza-a-gayo-y-a-la-casa-de-estefanas, event:crispo-cree, person:crispo, person:gayo-de-corinto, person:estefanas, relation:crispo/lived_in/corinto, relation:gayo-de-corinto/lived_in/corinto, relation:estefanas/lived_in/corinto], mentions: [event:muerte-de-jesus, person:jesus, person:pablo], note: "Cristo no está dividido ni Pablo murió por ellos. Se alegra de haber bautizado solo a Crispo, a Gayo y a la casa de Estéfanas, porque su encargo principal era predicar, no bautizar."}
+    - {v: 18-25, type: letter, mentions: [event:muerte-de-jesus], note: "El mensaje del madero parece absurdo a los que se pierden y es poder de Dios para los que se salvan. Judíos y griegos, pueblos sin ficha, tropiezan con él. Cita Is 29:14 sin nombrar al profeta."}
+    - {v: 26-31, type: letter, note: "Dios escogió a los que el mundo tiene por débiles y despreciables para que nadie presuma ante él. Cita Jer 9:24, donde el hebreo lleva el nombre divino, sin nombrar al profeta."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Pablo recuerda cómo predicó en Corinto y contrasta la sabiduría del mundo con la que revela el espíritu de Dios."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios, person:pablo, event:pablo-llega-a-corinto, relation:pablo/lived_in/corinto], mentions: [person:jesus, event:muerte-de-jesus, place:corinto], note: "Pablo recuerda su llegada a Corinto: débil y con temor, sin discursos brillantes, predicó solo a Jesucristo ejecutado en el madero, para que su fe se apoyara en el poder de Dios."}
+    - {v: 6-10, type: letter, mentions: [event:muerte-de-jesus], note: "La sabiduría de Dios, un secreto sagrado, no la conocieron los gobernantes de este sistema, que ejecutaron al Señor glorioso. Junta en una cita Is 52:15 y 64:4, sin nombrar al profeta."}
+    - {v: 11-16, type: letter, note: "Solo el espíritu de Dios conoce las cosas de Dios. El hombre físico las tiene por absurdas; el espiritual las examina. Cita Is 40:13, con el nombre divino, sin nombrar al profeta."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo de la carta, sin sucesos narrados. Nombra a Pablo, Apolos, Cefas y Cristo; recuerda cómo nació la congregación de Corinto."
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:1-corintios, person:pablo, person:apolos], mentions: [person:jesus], note: "Pablo no pudo tratarlos como espirituales: aún son carnales, niños que necesitan leche. Lo prueban los celos y las peleas, cuando unos dicen ser de Pablo y otros de Apolos."}
+    - {v: 5-9, type: letter, entities: [person:pablo, person:apolos, event:pablo-llega-a-corinto, event:apolos-en-acaya, relation:apolos/accompanies/pablo, relation:pablo/lived_in/corinto, relation:apolos/lived_in/corinto], mentions: [place:corinto], note: "Pablo y Apolos solo son ministros: uno plantó y el otro regó, y el crecimiento lo da Dios. Las referencias del v. 6 llevan a la predicación de Pablo en Corinto y a la labor posterior de Apolos."}
+    - {v: 10-15, type: letter, entities: [person:pablo, relation:pablo/lived_in/corinto], mentions: [person:jesus], note: "Como maestro de obras, Pablo puso el fundamento, que es Jesucristo. Unos edifican encima con materiales que aguantan el fuego, como el oro, y otros con paja o madera; el fuego probará cada obra."}
+    - {v: 16-17, type: letter, note: "La congregación es el templo de Dios y su espíritu vive en ella. Ese templo es santo, y Dios destruirá a quien lo destruya."}
+    - {v: 18-23, type: letter, mentions: [person:pablo, person:apolos, person:pedro, person:jesus], note: "Para Dios la sabiduría del mundo es absurda: cita Job 5:13, palabras de Elifaz según la nota de estudio, y Sl 94:11. Nadie presuma de hombres: Pablo, Apolos y Cefas, que es Pedro, son de ellos."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Cuerpo de la carta. Pablo se defiende, recuerda que fundó la congregación, anuncia que envía a Timoteo y que irá pronto."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios, person:pablo], mentions: [person:jesus], note: "Los apóstoles sirven a Cristo y administran los secretos sagrados de Dios, y deben ser fieles. A Pablo poco le importa que lo juzguen los corintios o un tribunal humano: lo juzga Jehová."}
+    - {v: 6-7, type: letter, entities: [person:pablo, person:apolos, relation:apolos/accompanies/pablo], note: "Pablo se pone a sí mismo y a Apolos como ejemplo de la regla de no ir más allá de lo escrito, que según la nota de estudio era una frase conocida. Así nadie tomará partido por uno contra otro."}
+    - {v: 8-13, type: letter, entities: [person:pablo], mentions: [person:jesus, place:corinto], note: "Con ironía: los corintios se creen ricos y reyes, y los apóstoles pasan hambre y sed, reciben golpes, trabajan con sus manos y son la basura del mundo. La nota de estudio recuerda el teatro de Corinto."}
+    - {v: 14-16, type: letter, entities: [person:pablo, relation:pablo/lived_in/corinto], mentions: [person:jesus, event:crispo-cree, event:el-senor-anima-a-pablo-en-corinto], note: "Los aconseja como a hijos: tendrán miles de tutores, pero un solo padre, él, que les llevó las buenas noticias en el año y medio que pasó en Corinto (nota de estudio del v. 15). Les pide que lo imiten."}
+    - {v: "17", type: letter, entities: [person:timoteo, person:pablo, event:pablo-envia-a-timoteo-a-corinto, relation:timoteo/accompanies/pablo], mentions: [person:jesus], note: "Timoteo, hijo amado y fiel en el Señor, les recordará los métodos de Pablo. Es hijo en sentido espiritual, no un parentesco."}
+    - {v: 18-21, type: letter, entities: [person:pablo], mentions: [event:complot-en-grecia], note: "Algunos, orgullosos, creen que Pablo no irá. Irá pronto si Jehová quiere, para ver su poder y no sus palabras. Perspicacia «Corintios» dice que esa visita se retrasó y llegó en 56."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Un caso de inmoralidad en la congregación de Corinto y la orden de expulsarlo. Sin nombres nuevos: solo Jesús y Satanás."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios, event:pablo-manda-expulsar-al-inmoral-de-corinto, person:pablo, place:corinto], mentions: [person:jesus, person:satanas, event:estefanas-fortunato-y-acaico-visitan-a-pablo], note: "Un hombre se ha unido a la mujer de su padre y la congregación lo tolera. Pablo, ausente, lo ha juzgado: que lo entreguen a Satanás, o sea, que lo expulsen (nota del v. 5). Ninguno tiene nombre."}
+    - {v: 6-8, type: letter, mentions: [person:jesus, event:muerte-de-jesus, event:jehova-instituye-la-pascua], note: "Un poco de levadura hace fermentar toda la masa, así que hay que quitar la vieja. Cristo, el cordero de la Pascua, ya fue sacrificado, y la fiesta se celebra con sinceridad y verdad."}
+    - {v: 9-13, type: letter, entities: [event:pablo-escribe-una-carta-perdida-a-corinto], note: "Ya les había escrito una carta que se perdió. No pide salir del mundo, sino no tratar ni comer con quien se dice hermano y sigue en el pecado. Cita Dt 17:7 sin nombrar a Moisés."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Consejos a la congregación de Corinto sobre los pleitos entre hermanos y la limpieza moral. Sin sucesos ni lugares; solo nombra a Jesucristo."
+    spans:
+    - {v: 1-8, type: letter, entities: [letter:1-corintios], note: "Hermanos que se llevan a juicio ante jueces no creyentes. Si los santos juzgarán al mundo y a ángeles, pueden resolverlo ellos; mejor sufrir la injusticia. Es una costumbre, sin un caso concreto, así que no es suceso."}
+    - {v: 9-11, type: letter, mentions: [person:jesus, place:corinto], note: "Los injustos, como inmorales, idólatras, adúlteros, homosexuales, ladrones, borrachos o extorsionadores, no heredarán el Reino. Algunos corintios lo fueron, pero ya están lavados y declarados justos en el nombre de Jesucristo."}
+    - {v: 12-14, type: letter, mentions: [person:pablo, person:jesus, event:resurreccion-de-jesus], note: "Todo está permitido, pero no todo conviene, y Pablo no se deja dominar por nada. El cuerpo es para el Señor, no para la inmoralidad; Dios lo resucitó y también levantará a los cristianos."}
+    - {v: 15-17, type: letter, mentions: [person:jesus, event:creacion-de-eva], note: "Los cuerpos de los cristianos son miembros de Cristo. Quien se une a una prostituta forma con ella una sola carne, como dice Gé 2:24; quien se une al Señor forma con él un solo espíritu."}
+    - {v: 18-20, type: letter, mentions: [event:muerte-de-jesus, event:jose-en-casa-de-potifar, person:jose-hijo-de-jacob, person:potifar], note: "Hay que huir de la inmoralidad sexual: quien la practica peca contra su cuerpo, que es templo del espíritu y fue comprado por un precio. Según la nota del v. 18, quizá alude a José y la esposa de Potifar."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Respuesta a la carta de los corintios sobre el matrimonio y la soltería. Sin lugares ni personas nuevas: nombra a Satanás, a Cristo y al propio Pablo."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios, event:pablo-recibe-una-carta-de-los-corintios, place:corinto], mentions: [person:satanas, place:efeso], note: "Pablo contesta lo que los corintios le preguntaron por carta. Como la inmoralidad abundaba en Corinto (nota del v. 2), cada uno tenga su cónyuge; no se nieguen el deber conyugal, para que Satanás no los tiente."}
+    - {v: 6-9, type: letter, entities: [person:pablo], note: "Pablo querría que todos fueran como él; Perspicacia «Pablo», párr. 2, dice que en sus viajes no estaba casado. A solteros y viudas les conviene seguir así, pero es mejor casarse que arder de deseo."}
+    - {v: 10-11, type: letter, entities: [event:matrimonio-y-divorcio], mentions: [person:jesus, event:sermon-del-monte], note: "Orden del Señor, no de Pablo: la esposa no se separa del esposo y, si lo hace, se queda sin casar o se reconcilia; él tampoco la deja. Recoge lo que Jesús enseñó (Mt 19:6; Mr 10:11)."}
+    - {v: 12-16, type: letter, note: "Consejo del propio Pablo: si un creyente está casado con quien no cree y este acepta seguir, que no lo deje; los hijos son santos. Si el no creyente se va, el creyente queda sin obligación."}
+    - {v: 17-24, type: letter, mentions: [person:jesus, event:muerte-de-jesus, place:roma], note: "Cada uno siga en la situación en que Dios lo llamó, circunciso o no, esclavo o libre. La nota del v. 22 cuenta que en Corinto, rehecha por Roma, había muchos libertos. Cristo pagó el precio por todos."}
+    - {v: 25-28, type: letter, note: "Sobre los que nunca se han casado, Pablo no tiene mandato del Señor y da su opinión: por la situación de entonces, mejor seguir como están. Casarse no es pecado, aunque trae dificultades."}
+    - {v: 29-35, type: letter, note: "Queda poco tiempo y la escena del mundo cambia. El soltero puede ocuparse de las cosas del Señor; el casado, de agradar a su cónyuge, y está dividido. Pablo no quiere atarlos, sino ayudarlos a servir sin distracciones."}
+    - {v: 36-38, type: letter, note: "Quien ya pasó la flor de la juventud y cree que debe casarse no peca si lo hace. Quien decide con firmeza seguir soltero hace mejor."}
+    - {v: 39-40, type: letter, note: "La esposa está unida a su esposo mientras él vive; si muere, puede casarse con quien quiera, pero solo en el Señor, con un cristiano según la nota. En opinión de Pablo, será más feliz si sigue viuda."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Respuesta a la pregunta de los corintios sobre la carne ofrecida a los ídolos. No nombra ningún dios, templo ni lugar; solo a Jesucristo."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:1-corintios, event:pablo-recibe-una-carta-de-los-corintios], mentions: [place:corinto, event:concilio-de-jerusalen-49], note: "Otra de sus preguntas: la carne ofrecida a los ídolos. La nota del v. 1 explica que lo que sobraba de los sacrificios se vendía, y recuerda el mandato de Hch 15:28, 29. El conocimiento envanece; el amor edifica."}
+    - {v: 4-6, type: letter, mentions: [person:jesus], note: "Un ídolo no es nada. Aunque se hable de muchos dioses y señores, sin nombrar a ninguno, para los cristianos hay un solo Dios, el Padre, y un solo Señor, Jesucristo, por medio de quien existe todo."}
+    - {v: 7-13, type: letter, mentions: [person:jesus, event:muerte-de-jesus, person:pablo], note: "No todos lo entienden así. Ver a otro comer en un templo de ídolos, sin nombre, puede hacer caer al de conciencia débil, un hermano por quien Cristo murió. Pablo dejaría la carne antes que hacerlo tropezar."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Pablo defiende su apostolado y explica por qué predica sin cobrar. Nombra a Jesús, Cefas, Bernabé y Moisés; sin sucesos nuevos."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-corintios, person:pablo, event:conversion-de-pablo, relation:jesus/appears_to/pablo], mentions: [person:jesus], note: "Pablo se dice libre y apóstol: ha visto al Señor Jesús, como en el camino de Damasco (Hch 9:3-5, en las referencias). La congregación de Corinto es la prueba de su apostolado."}
+    - {v: 3-7, type: letter, entities: [person:pedro, person:bernabe, person:santiago-hermano-de-jesus], mentions: [relation:pedro/kin/suegra-de-pedro], note: "Su defensa: podría llevar de viaje a una esposa cristiana, igual que Cefas, otros apóstoles y los hermanos de Jesús; Perspicacia deduce que Pedro y Santiago, medio hermano de Jesús, estaban casados. Él y Bernabé se mantienen trabajando."}
+    - {v: 8-14, type: letter, mentions: [person:moises, event:pacto-de-la-ley, event:pablo-llega-a-corinto, event:tercera-gira-y-envio-de-los-doce, event:envio-de-los-setenta], note: "La Ley de Moisés prohíbe poner bozal al toro que trilla (Dt 25:4), y quien sirve en el altar come de él. El Señor mandó que los predicadores vivan de su labor (Mt 10:10; Lu 10:7)."}
+    - {v: 15-18, type: letter, note: "Pablo no ha usado ese derecho y prefiere no hacerlo; predicar es para él una obligación. Su recompensa es anunciar las buenas noticias gratis, sin abusar de su autoridad."}
+    - {v: 19-23, type: letter, mentions: [person:timoteo, event:timoteo-se-une-a-pablo, event:voto-en-cencreas, event:pablo-se-purifica-en-el-templo, event:discurso-en-el-areopago, place:atenas], note: "Se hace como judío con los judíos y como sin ley con los gentiles. Las notas dan ejemplos: circuncidó a Timoteo (Hch 16:1-3) y en Atenas citó a poetas griegos (Hch 17:22-34)."}
+    - {v: 24-27, type: letter, entities: [relation:pablo/lived_in/corinto], mentions: [place:corinto], note: "Ejemplos del corredor y del boxeador. Según la nota, Corinto conocía los Juegos Ístmicos, cada dos años, y Pablo probablemente estaba allí en los de 51. Olimpia solo sale en la nota, sin ficha."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Los sucesos del desierto como advertencia contra la idolatría y la inmoralidad, y la carne sacrificada a ídolos. Recuerda sucesos de Éxodo y Números; no crea ninguno."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios, event:israel-cruza-el-mar-rojo, event:codornices-y-mana-en-el-desierto-de-sin, event:agua-de-la-roca-en-horeb], mentions: [person:moises, person:jesus, place:mar-rojo, place:meriba-de-cades, event:exodo, event:israel-acampa-en-ezam], note: "Nube y mar: bautizados en Moisés (Éx 13:21; 14:21, 22); maná y agua de la roca, figura del Cristo. El agua de Meribá de Cades (Nú 20) y las muertes del desierto (Nú 14:29) son de Números."}
+    - {v: 6-11, type: letter, entities: [event:becerro-de-oro], mentions: [person:aaron, person:core-hijo-de-izhar, person:datan, person:abiram-hijo-de-eliab, place:monte-sinai, event:destruccion-de-jerusalen-70, event:israel-adora-al-baal-de-peor, person:moises, place:moab, place:jerusalen], note: "Ejemplos: la codicia (Nú 11), el becerro de oro (Éx 32:6), Baal de Peor en Sitim con 23.000 muertos en un día (Nú 25), las serpientes (Nú 21) y las quejas (Nú 14; 16). Los de Números los crea Números."}
+    - {v: 12-13, type: letter, note: "Quien cree estar firme, que no caiga. Ninguna tentación es fuera de lo común, y Dios, que es fiel, da la salida para aguantarla."}
+    - {v: 14-22, type: letter, mentions: [event:cena-del-senor], note: "Huir de la idolatría. La copa y el pan de la Cena del Señor unen con Cristo, e Israel comía de los sacrificios del altar. Lo sacrificado a ídolos va a demonios (Dt 32:17); «mesa de Jehová», Mal 1:7."}
+    - {v: 23-30, type: letter, note: "Todo es lícito, pero no todo edifica. Se puede comer lo que vende el mercado y lo que sirve un anfitrión no creyente (cita Sl 24:1), salvo si alguien avisa de que se ofreció a un ídolo."}
+    - {v: 31-33, type: letter, mentions: [person:pablo], note: "Hacerlo todo para la gloria de Dios y no hacer tropezar a judíos, griegos ni a la congregación, como Pablo, que busca el provecho de muchos."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Orden en las reuniones: la mujer que ora se cubre la cabeza, y la Cena del Señor, cuya institución Pablo relata, se respeta. No nombra lugares ni personas nuevas."
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-corintios], mentions: [person:pablo, person:jesus], note: "Pablo les pide que lo imiten, igual que él imita a Cristo, y los elogia por guardar las tradiciones que les dejó. La nota de estudio da como ejemplo lo que él recibió sobre la Cena del Señor."}
+    - {v: 3-16, type: letter, entities: [event:creacion-de-eva], mentions: [person:jesus, event:creacion-de-adan], note: "Jefatura: Dios es cabeza de Cristo, Cristo del hombre y el hombre de la mujer. Ella se cubre al orar o profetizar, señal visible incluso para los ángeles. Se apoya en cómo Dios formó a la mujer (Gé 2)."}
+    - {v: 17-22, type: letter, mentions: [place:corinto, event:estefanas-fortunato-y-acaico-visitan-a-pablo], note: "Reproche: Pablo sabe que en sus reuniones hay bandos, y que al juntarse para la Cena del Señor unos llegan ya comidos o ebrios mientras otros pasan hambre y quedan avergonzados. No los puede elogiar."}
+    - {v: 23-26, type: letter, entities: [event:cena-del-senor], mentions: [person:jesus, event:arresto-en-getsemani, event:muerte-de-jesus], note: "Lo que Pablo recibió del Señor: la noche en que lo entregaron, Jesús dio pan y copa como símbolos de su cuerpo y del nuevo pacto con su sangre. Celebrarla anuncia su muerte hasta que él venga."}
+    - {v: 27-34, type: letter, note: "Quien participa sin respetar lo que representan el pan y la copa se acarrea condena; por eso hay débiles y muertos espirituales. Que cada uno se examine, coman en casa y se esperen. Pablo ordenará lo demás al ir."}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Los dones del espíritu y la congregación como un solo cuerpo. Sin sucesos, lugares ni personas nuevas; solo nombra a Jesús."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:1-corintios], mentions: [person:jesus], note: "Sobre los dones del espíritu. Antes de creer los arrastraban ídolos mudos, sin nombre. Nadie guiado por el espíritu de Dios maldice a Jesús, y solo con espíritu santo se le reconoce como Señor."}
+    - {v: 4-11, type: letter, mentions: [event:pentecostes-33], note: "Un solo espíritu reparte dones distintos: sabiduría, conocimiento, fe, curar, milagros, profecía, distinguir mensajes inspirados, lenguas e interpretarlas. Las notas los ven milagrosos y ligan las lenguas al Pentecostés de 33 (Hch 2)."}
+    - {v: 12-26, type: letter, mentions: [person:jesus], note: "Un cuerpo tiene muchos miembros y los necesita todos; Dios los colocó para que no haya divisiones y se cuiden. Así es el Cristo: judíos o griegos, esclavos o libres, bautizados por un solo espíritu. Son pueblos, sin ficha."}
+    - {v: 27-31, type: letter, note: "Ellos son el cuerpo de Cristo. Dios puso en la congregación apóstoles, profetas, maestros, milagros, curaciones, ayudas, dirección y lenguas, y no todos tienen el mismo. Pablo anuncia un camino mejor, el amor del capítulo 13."}
+  13:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Descripción del amor cristiano, sin personas ni lugares con nombre y sin sucesos. Pablo habla en primera persona solo para poner ejemplos."
+    spans:
+    - {v: 1-3, type: letter, entities: [letter:1-corintios], note: "Sin amor, ni las lenguas de hombres y ángeles, ni profetizar, ni una fe capaz de mover montañas, ni darlo todo a otros sirven de nada. El gong y el címbalo son instrumentos de percusión ruidosos."}
+    - {v: 4-7, type: letter, note: "Cómo actúa el amor: es paciente y bondadoso, no tiene celos ni presume, no busca lo suyo, no se irrita, no guarda rencor por el daño, se alegra con la verdad y todo lo aguanta."}
+    - {v: 8-13, type: letter, note: "El amor no se acaba; los dones de profetizar, de lenguas y de conocimiento sí. Según las notas, servían a la congregación mientras era niña. Hoy se ve como en un espejo de metal. Quedan fe, esperanza y amor."}
+  14:
+    status: complete
+    reviewed_on: 2026-09-29
+    note: "Instrucciones sobre las lenguas, la profecía y el orden en las reuniones de la congregación. Sin lugares ni sucesos; solo Pablo dice algo de sí mismo (v. 18)."
+    spans:
+    - {v: 1-5, type: letter, entities: [letter:1-corintios], note: "Profetizar vale más que hablar en lenguas: quien habla otro idioma que nadie entiende solo se edifica a sí mismo, mientras que quien profetiza anima y consuela a toda la congregación, salvo que alguien traduzca."}
+    - {v: 6-12, type: letter, note: "Hablar en lenguas sin revelación ni enseñanza no aprovecha. La flauta, el arpa y la trompeta de guerra (Nú 10:9, según la nota) necesitan sonidos claros; si no, quien escucha queda como un extranjero."}
+    - {v: 13-19, type: letter, entities: [person:pablo], note: "Quien habla en lenguas debe pedir poder traducirlas, para orar y cantar también con la mente y que los demás digan amén. Pablo habla más lenguas que todos, pero prefiere cinco palabras entendidas a diez mil ininteligibles."}
+    - {v: 20-25, type: letter, note: "Ser adultos en entendimiento. Cita Is 28:11, 12 sin nombrar al profeta: las lenguas son señal para los incrédulos. Si todos profetizan, el visitante no creyente descubre su corazón y reconoce que Dios está con ellos."}
+    - {v: 26-33, type: letter, note: "Orden en las reuniones: cada uno aporta un salmo, una enseñanza o una revelación. Hablan en lenguas dos o tres por turno y con intérprete; los profetas, uno a uno. Dios es Dios de paz."}
+    - {v: 34-35, type: letter, note: "Como en todas las congregaciones, las mujeres guardan silencio en la reunión y preguntan en casa a sus esposos. La nota ve posible que algunas interrumpieran a quienes enseñaban, y cita 1Ti 2:12."}
+    - {v: 36-40, type: letter, note: "La palabra de Dios no nació entre los corintios ni llegó solo a ellos. Quien se crea profeta debe aceptar que lo escrito son mandatos del Señor. Seguir profetizando, no prohibir las lenguas y hacerlo todo con orden."}
+  15:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: letter, entities: [letter:1-corintios, person:pablo], mentions: [event:pablo-llega-a-corinto, place:corinto], note: "Pablo recuerda a los corintios las buenas noticias que les anunció al fundar la congregación (las referencias remiten a Hch 18:1, 11). Por ellas se salvan si no las sueltan; si no, habrán creído en vano."}
+    - {v: 3-4, type: letter, entities: [person:jesus, event:entierro-de-jesus, event:resurreccion-de-jesus], mentions: [event:muerte-de-jesus], note: "Lo primero que Pablo transmitió: Cristo murió por los pecados, fue enterrado y Dios lo levantó al tercer día, conforme a las Escrituras. La nota del v. 20 pone la resurrección el 16 de nisán del 33."}
+    - {v: 5-8, type: letter, entities: [person:pedro, event:aparicion-a-pedro, event:mandato-de-hacer-discipulos, event:aparicion-a-santiago, event:conversion-de-pablo, relation:jesus/appears_to/santiago-hermano-de-jesus, relation:jesus/appears_to/pablo], mentions: [person:jesus, person:pablo, event:aparicion-a-los-discipulos-sin-tomas, event:manda-esperar-en-jerusalen, event:ascension-de-jesus, event:aparicion-a-tomas, person:santiago-hermano-de-jesus, person:tomas, place:galilea, place:damasco], note: "Apariciones en orden: a Cefas; a los Doce, quizá la de Tomás (nota del v. 5); a más de 500, quizá en Galilea; a Santiago, probablemente su medio hermano; a todos los apóstoles y, por último, a Pablo."}
+    - {v: 9-11, type: letter, entities: [person:pablo, event:saulo-persigue-a-la-congregacion], note: "Pablo se tiene por el menor de los apóstoles, porque persiguió a la congregación de Dios. Todo lo debe a la bondad inmerecida de Dios, y por ella ha trabajado más que los otros."}
+    - {v: 12-19, type: letter, mentions: [person:jesus, event:resurreccion-de-jesus], note: "Algunos corintios negaban que los muertos resuciten. Pablo saca las consecuencias: tampoco Cristo habría resucitado, su predicación y la fe de ellos serían vanas y los que murieron en Cristo estarían perdidos."}
+    - {v: 20-28, type: letter, entities: [person:adan, event:pecado-de-adan-y-eva], mentions: [person:jesus, event:resurreccion-de-jesus], note: "Cristo resucitó como primicias. Por Adán llegó la muerte y por otro hombre llega la resurrección. Cristo reina hasta acabar con todo enemigo, la muerte en último lugar, y entrega el Reino al Padre (Sl 110:1; 8:6)."}
+    - {v: 29-34, type: letter, entities: [event:pablo-escribe-1-corintios, relation:pablo/lived_in/efeso], mentions: [place:efeso, event:motin-de-efeso], note: "Pablo arriesga la vida a diario. Pelear con animales salvajes en Éfeso puede ser literal o hablar de enemigos, como el motín de Hch 19 (nota del v. 32). Cita Is 22:13 y un refrán sobre compañías."}
+    - {v: 35-49, type: letter, entities: [person:adan, event:creacion-de-adan], mentions: [person:jesus], note: "Como la semilla que muere y brota distinta, se siembra un cuerpo físico y resucita uno espiritual. Adán, el primer hombre, salió del polvo (Gé 2:7); Jesús, el último Adán, es del cielo (nota del v. 45)."}
+    - {v: 50-58, type: letter, mentions: [person:jesus], note: "La carne y la sangre no heredan el Reino. Con la última trompeta los muertos resucitan incorruptibles y los vivos son cambiados. Cita Is 25:8 y Os 13:14: Dios da la victoria por Jesucristo."}
+  16:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: letter, entities: [letter:1-corintios, event:colecta-de-macedonia-y-acaya, place:galacia], mentions: [place:jerusalen, event:pablo-recorre-galacia-y-frigia, event:companeros-de-la-colecta, place:judea, place:macedonia, place:acaya], note: "La colecta para los santos se hace como en Galacia: al empezar cada semana, cada uno guarda algo según pueda. Los hombres que ellos aprueben llevarán el regalo a Jerusalén, quizá con Pablo."}
+    - {v: 5-9, type: letter, entities: [person:pablo, place:efeso, relation:pablo/lived_in/efeso], mentions: [place:macedonia, journey:tercer-viaje, event:pablo-deja-efeso-hacia-macedonia, event:pablo-escribe-romanos, event:complot-en-grecia, place:asia], note: "Pablo irá a Corinto tras pasar por Macedonia y quizá se quede el invierno. Mientras tanto sigue en Éfeso hasta Pentecostés, una fiesta sin ficha. El estudio 3 dice que salió después de esa fiesta, en 55."}
+    - {v: 10-11, type: letter, entities: [person:timoteo, relation:timoteo/accompanies/pablo, event:pablo-envia-a-timoteo-a-corinto], mentions: [event:pablo-envia-a-timoteo-y-erasto-a-macedonia], note: "Si Timoteo llega, que no tenga miedo con ellos y que lo ayuden a volver con Pablo. Perspicacia «Timoteo» duda de que llegara a Corinto; si fue, fue antes de su viaje a Macedonia con Erasto."}
+    - {v: "12", type: letter, entities: [person:apolos, relation:apolos/lived_in/efeso, relation:apolos/accompanies/pablo], mentions: [person:estefanas, person:fortunato, person:acaico, place:efeso], note: "Pablo insistió a Apolos para que fuera a Corinto, pero él no quiso ir por el momento. La nota lo sitúa en Éfeso o cerca y ve posible que «los hermanos» fueran Estéfanas y sus dos compañeros."}
+    - {v: 13-14, type: letter, note: "Consejos breves: vigilar, seguir firmes en la fe, ser valientes y fuertes, y hacerlo todo con amor."}
+    - {v: 15-18, type: letter, entities: [person:estefanas, person:fortunato, person:acaico, event:estefanas-fortunato-y-acaico-visitan-a-pablo, relation:estefanas/lived_in/corinto, relation:estefanas/accompanies/pablo, relation:fortunato/lived_in/corinto, relation:fortunato/accompanies/pablo, relation:fortunato/accompanies/estefanas, relation:acaico/lived_in/corinto, relation:acaico/accompanies/pablo, relation:acaico/accompanies/estefanas, event:pablo-bautiza-a-gayo-y-a-la-casa-de-estefanas], mentions: [place:acaya, place:corinto], note: "Los de la casa de Estéfanas fueron los primeros creyentes de Acaya y se dedicaron a servir. Estéfanas, Fortunato y Acaico, venidos de Corinto, están con Pablo en Éfeso y lo han reanimado."}
+    - {v: 19-20, type: letter, entities: [person:aquila, person:priscila, relation:aquila/lived_in/efeso, relation:priscila/lived_in/efeso, relation:aquila/accompanies/pablo, relation:priscila/accompanies/pablo], mentions: [place:asia, place:efeso, place:colosas, place:laodicea, place:hierapolis, place:esmirna, place:pergamo, place:sardis, place:tiatira, place:filadelfia], note: "Saludan las congregaciones de la provincia de Asia y Áquila y Prisca, con la congregación que se reúne en su casa de Éfeso (nota del v. 8). Que se saluden con un beso santo."}
+    - {v: 21-24, type: letter, entities: [person:pablo, event:pablo-escribe-1-corintios], mentions: [person:jesus], note: "Pablo firma el saludo de su puño y letra; Perspicacia cree que Sóstenes pudo escribir el resto. Cierra con la expresión aramea «¡Oh, Señor nuestro, ven!» y con su amor para todos."}

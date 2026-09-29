@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: predican-en-salamina
+title: Bernabé y Saulo predican en Salamina de Chipre
+date:
+  from: 47
+  to: 47
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 47 e.c.
+narrative_order:
+  series: hechos
+  order: 1304
+places:
+- salamina
+- seleucia
+- chipre
+people:
+- pablo
+- bernabe
+- juan-marcos
+passages:
+- Hch 13:4, 5
+summary: Enviados por el espíritu, bajan al puerto de Seleucia y cruzan a Chipre, la tierra de Bernabé. En Salamina anuncian
+  la palabra de Dios en las sinagogas, con Juan Marcos de ayudante.
+reason: Hch 13:4, 5; la nota de estudio de 13:4 fecha el embarque hacia 47 y el estudio 3 (párr. 21) pone la salida del viaje
+  en la primavera de ese año.
+sources:
+- hch-13
+- nota-hechos-13
+- si-3
+- it-pablo
+links:
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+search: Salamina Chipre Bernabé Saulo
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-juda
+name: Desierto de Judá
+names:
+- name: Desierto de Judá
+- name: Desierto de Judea
+  note: Así lo llama Mateo en el siglo I (Mt 3:1).
+type: desert
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Vertiente este de las montañas de Judea, frente al mar Muerto
+  geometry:
+    type: zone
+    lat: 31.5
+    lon: 35.373
+    radius_km: 40
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-desierto-de-juda
+  - mateo-3
+  - openbible-geo
+  reason: Perspicacia lo hace empezar al este del monte de los Olivos y seguir unos 80 km junto a la orilla oeste del mar Muerto,
+    con 16 a 24 km de ancho.
+  note: 'Centro calculado: latitud del punto del mar Muerto de OpenBible (31,5 N) y longitud a medio camino entre el monte
+    de los Olivos (35,2457 E) y ese punto (35,5 E). Radio nuestro de 40 km, la mitad del largo.'
+  coord_source: calculation
+summary: Vertiente oriental de las montañas de Judea, seca y casi sin gente, que baja unos 1.200 m hacia el mar Muerto. Allí
+  empezó Juan el Bautista a predicar y, según parece, allí tentó el Diablo a Jesús.
+reason: 'Perspicacia «Judá, Desierto de», párr. 1 y 3; nota de estudio de Mt 3:1. Ni jw.org ni OpenBible le dan un punto: va
+  una zona calculada.'
+sources:
+- it-desierto-de-juda
+- mateo-3
+- openbible-geo
+- mateo-4
+- marcos-1
+- salmos-63
+- lucas-3
+- lucas-4
+links:
+- title: 'Perspicacia: «Judá, Desierto de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002539
+  type: perspicacia
+- title: Mateo 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
+  type: bible
+- title: Salmo 63 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/63
+  type: bible
+checked_on: '2026-09-29'
+status: verified

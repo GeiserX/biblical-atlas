@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-y-bernabe-se-separan
+title: Pablo y Bernabé se separan
+date:
+  from: 49
+  to: 49
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: finales del verano de 49 e.c.
+narrative_order:
+  series: hechos
+  order: 1536
+places:
+- antioquia-de-siria
+- chipre
+- siria
+- cilicia
+people:
+- pablo
+- bernabe
+- juan-marcos
+- silas
+passages:
+- Hch 15:36-41
+summary: Discuten si llevar a Juan Marcos. Bernabé se va con él a Chipre y Pablo sale con Silas por Siria y Cilicia.
+reason: Perspicacia «Marcos» (párr. 3) y «Pablo» (párr. 15); el estudio 3 (párr. 24) fecha la salida a finales del
+  verano de 49.
+sources:
+- it-marcos
+- it-pablo
+- si-3
+- hch-15
+search: Pablo Bernabé disputa Marcos
+history:
+- date: '2026-09-29'
+  change: 'Era narrativa de un solo año, pero el estudio 3 (párr. 24), que ya citaba, da el año: es anclada.'
+  source: si-3
+checked_on: '2026-09-29'
+status: verified

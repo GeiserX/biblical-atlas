@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-jordan
+name: Río Jordán
+names:
+- name: Río Jordán
+type: river
+lat: 31.761389
+lon: 35.558333
+precision: zone
+coord_source: openbible:ae686c9
+coord_url: https://www.openbible.info/geo/ancient/ae686c9/jordan
+coord_note: Punto representativo del río, cerca de su desembocadura.
+summary: Río principal de la Tierra Prometida. Del mar de Galilea al mar Muerto serpentea unos 320 km para salvar 105 en línea
+  recta. Juan bautizaba en sus aguas y allí bautizó a Jesús.
+reason: 'Perspicacia «Jordán» (párr. 2, 3 y 10) da el curso, las distancias y los bautismos de Juan. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-jordan
+- openbible-geo
+- mateo-3
+- marcos-1
+- salmos-42
+- lucas-3
+- numeros-34
+- deuteronomio-3
+links:
+- title: 'Perspicacia: «Jordán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002511
+  type: perspicacia
+- title: Mateo 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

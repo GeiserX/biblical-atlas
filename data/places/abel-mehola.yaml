@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abel-mehola
+name: Abel-Meholá
+names:
+- name: Abel-Meholá
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Tell Abu Sus, al oeste del Jordán
+  geometry:
+    type: point
+    lat: 32.3743
+    lon: 35.56089
+  checked_on: '2026-09-28'
+  status: favored_level_1
+  sources:
+  - it-abel-mehola
+  - openbible-geo
+  reason: Perspicacia (párr. 4-5) favorece el oeste del Jordán, unos 15 km al S de Bet-seán. El punto es la primera identificación
+    de OpenBible en esa zona.
+  coord_source: openbible:a5a1bdd
+  coord_url: https://www.openbible.info/geo/ancient/a5a1bdd/abel-meholah
+- name: Tell el-Maqlub, al este del Jordán
+  geometry:
+    type: point
+    lat: 32.40237
+    lon: 35.6823
+  checked_on: '2026-09-28'
+  status: alternative
+  sources:
+  - it-abel-mehola
+  - openbible-geo
+  reason: Propuesta desde 1951 (párr. 3); Perspicacia da razones en contra (párr. 4-5). Punto de OpenBible.
+  coord_source: openbible:a5a1bdd
+  coord_url: https://www.openbible.info/geo/ancient/a5a1bdd/abel-meholah
+summary: Hogar de Eliseo, donde Elías lo encontró arando. No se sabe dónde estaba; Perspicacia se inclina por el oeste del
+  Jordán, al sur de Bet-seán.
+reason: 'Perspicacia «Abel-meholá», párr. 1-5; 1Re 19:16-19. Sin identificación segura: dos candidatos.'
+sources:
+- it-abel-mehola
+- openbible-geo
+- 1-reyes-19
+links:
+- title: 'Perspicacia: «Abel-meholá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000022
+  type: perspicacia
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+checked_on: '2026-09-28'
+status: verified

@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-1-corintios
+title: Pablo escribe 1 Corintios en Éfeso
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c., antes de Pentecostés
+narrative_order:
+  series: 1-corintios
+  order: 16021
+  after: estefanas-fortunato-y-acaico-visitan-a-pablo
+places:
+- efeso
+- corinto
+people:
+- pablo
+- sostenes
+- estefanas
+- fortunato
+- acaico
+- aquila
+- priscila
+present:
+- pablo
+- sostenes
+- estefanas
+- fortunato
+- acaico
+- aquila
+- priscila
+passages:
+- 1Co 1:1
+- 1Co 15:32
+- 1Co 16:8
+- 1Co 16:17-21
+- 2Co 2:3, 4, 9
+summary: En Éfeso, donde piensa seguir hasta Pentecostés, Pablo escribe a la congregación de Corinto y firma el saludo de
+  su mano. Están con él Estéfanas, Fortunato y Acaico, y saludan Áquila y Prisca.
+reason: Perspicacia «Corintios, Cartas a los» y la Tabla de los libros la ponen en Éfeso hacia 55; el estudio 3 la fecha con
+  1Co 15:32. Sóstenes la envía con Pablo (1Co 1:1).
+sources:
+- 1-corintios-1
+- 1-corintios-15
+- 1-corintios-16
+- it-corintios
+- tnm-tabla
+- si-3
+- it-sostenes
+- it-estefanas
+- it-fortunato
+- it-acaico
+- it-aquila
+- 2-corintios-2
+links:
+- title: 1 Corintios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/1
+  type: bible
+- title: 1 Corintios 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/16
+  type: bible
+- title: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  type: perspicacia
+search: Pablo escribe 1 Corintios desde Éfeso
+checked_on: '2026-09-29'
+status: verified

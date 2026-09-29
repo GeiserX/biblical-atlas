@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haran-hijo-de-tare
+name: Harán
+names:
+- name: Harán
+perspicacia: 1200001872#1
+disambiguation: Harán hijo de Taré; no la ciudad de Harán ni los Harán levita y judaíta de Crónicas.
+summary: Hijo de Taré, hermano de Abrán y de Nacor, y probablemente el primogénito. Fue padre de Lot, Milcá e Iscá. Nació
+  en Ur de los caldeos y murió allí, antes que su padre.
+reason: Perspicacia «Harán», núm. 1, y «Taré», núm. 1, párr. 1; Gé 11:26-29.
+sources:
+- it-haran
+- it-tare
+- genesis-11
+links:
+- title: 'Perspicacia: «Harán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001872
+  type: perspicacia
+- title: Génesis 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11
+  type: bible
+relations:
+- type: kin
+  person: tare
+  word: father
+  inferred: false
+  sources:
+  - genesis-11
+  reason: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: ur
+  inferred: false
+  sources:
+  - genesis-11
+  reason: 'Gé 11:28: Ur de los caldeos era la tierra donde nació.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: ur
+  inferred: false
+  sources:
+  - genesis-11
+  - it-haran
+  reason: 'Gé 11:28: murió en Ur cuando todavía vivía su padre Taré.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

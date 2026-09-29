@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-pasa-junto-a-seir
+title: Israel pasa junto a Seír sin atacar a los hijos de Esaú
+date:
+  from: -1473
+  to: -1472
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1474 y 1473 a.e.c. (tiempo narrativo: tras la muerte de Aarón y antes de vencer a Sehón)'
+narrative_order:
+  series: numeros
+  order: 21005
+places:
+- seir
+people:
+- moises
+present: []
+passages:
+- Dt 2:2-8
+- Dt 2:29
+summary: Tras muchos días alrededor de Seír, Jehová manda ir al norte. Israel bordea la tierra de los hijos de Esaú sin
+  atacarlos, paga comida y agua y no se acerca al camino del Arabá, a Elat ni a Ezión-Guéber.
+reason: 'Perspicacia «Edom»: tras morir Aarón (1474 a.e.c., «Aarón»), Israel rodeó Edom hasta el Zered; Sehón cayó hacia 1473
+  («Basán», párr. 5). Dt 2:8 en la TNM de estudio, más reciente que «Ezión-guéber». No nombra campamento: no sitúa a nadie.'
+sources:
+- deuteronomio-2
+- it-edom
+- it-ezion-gueber
+- it-elat
+- it-aaron
+- it-basan
+links:
+- title: Deuteronomio 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/2
+  type: bible
+- title: 'Perspicacia: «Edom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001258
+  type: perspicacia
+- title: 'Perspicacia: «Ezión-guéber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001473
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: filadelfia
+name: Filadelfia
+names:
+- name: Filadelfia
+- name: Alaşehir
+  note: Ciudad moderna en el mismo lugar.
+type: city
+lat: 38.35
+lon: 28.516667
+precision: point
+coord_source: openbible:a1c7cc1
+coord_url: https://www.openbible.info/geo/ancient/a1c7cc1/philadelphia
+summary: Ciudad de Lidia, unos 45 km al sureste de Sardis, en una región de viñas. Destruida por el terremoto de
+  17. Jesús elogió a su congregación por su aguante.
+reason: 'Perspicacia «Filadelfia» (párr. 2 a 4); Ap 3:7-13. La coordenada es de OpenBible: solo tomamos el punto.'
+sources:
+- it-filadelfia
+- apocalipsis-3
+- openbible-geo
+links:
+- title: 'Perspicacia: «Filadelfia»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003462
+  type: perspicacia
+- title: Apocalipsis 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/66/3
+  type: bible
+checked_on: '2026-09-28'
+status: verified

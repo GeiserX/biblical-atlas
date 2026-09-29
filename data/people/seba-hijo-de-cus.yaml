@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seba-hijo-de-cus
+name: Sebá
+names:
+- name: Sebá
+perspicacia: '1200003871'
+disambiguation: Sebá hijo de Cus; no Seba hijo de Raamá ni Seba hijo de Joctán, que se escriben sin tilde.
+distinct_from:
+- seba-hijo-de-raama
+- seba-hijo-de-joctan
+- seba-hijo-de-jocsan
+summary: Uno de los seis hijos de Cus y nieto de Cam. Su nombre pasó a una tierra del este de África, junto a Etiopía, cuyos
+  habitantes Isaías llama sabeos.
+reason: Perspicacia «Sebá», núm. 1 y 2; Gé 10:7.
+sources:
+- it-seba-cus
+- genesis-10
+links:
+- title: 'Perspicacia: «Sebá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003871
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: cus-hijo-de-cam
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:7 lo nombra el primero de los hijos de Cus.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

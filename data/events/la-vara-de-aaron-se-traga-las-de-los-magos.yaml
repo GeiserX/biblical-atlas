@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-vara-de-aaron-se-traga-las-de-los-magos
+title: La vara de Aarón se traga las varas de los magos
+date:
+  from: -1513
+  to: -1512
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+narrative_order:
+  series: exodo
+  order: 7008
+places:
+- egipto
+people:
+- moises
+- aaron
+passages:
+- Éx 7:8-13
+summary: Ante el faraón y su corte, Aarón arroja su vara y se vuelve una gran serpiente. Los sacerdotes-magos consiguen lo
+  mismo con sus artes, pero la vara de Aarón se traga las suyas. El faraón sigue sin escuchar.
+reason: 'El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Perspicacia «Moisés»,
+  párr. 12, y «Aarón», párr. 4: fue la primera señal que Aarón hizo ante el faraón.'
+sources:
+- exodo-7
+- si-3
+- it-moises
+- it-aaron
+links:
+- title: Éxodo 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

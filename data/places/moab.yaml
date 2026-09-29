@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: moab
+name: Moab
+names:
+- name: Moab
+- name: Campos de Moab
+  note: Lectura literal que da la nota de Rut 1:1; Perspicacia la recoge como otro nombre del territorio.
+type: country
+lat: 31.180556
+lon: 35.701389
+precision: zone
+coord_source: openbible:aa0b1d6
+coord_url: https://www.openbible.info/geo/ancient/aa0b1d6/moab-1
+coord_note: Punto representativo de OpenBible para todo el territorio.
+summary: Meseta al este del mar Muerto, entre los torrentes de Zered y Arnón, tierra de los moabitas, que descendían de Moab,
+  hijo de Lot.
+reason: 'Perspicacia «Moab, moabitas», núm. 1 y 2, párr. 1. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-moab
+- openbible-geo
+- rut-1
+- numeros-21
+- numeros-22
+- deuteronomio-1
+- deuteronomio-2
+- deuteronomio-29
+- deuteronomio-32
+- deuteronomio-34
+links:
+- title: 'Perspicacia: «Moab, moabitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003097
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

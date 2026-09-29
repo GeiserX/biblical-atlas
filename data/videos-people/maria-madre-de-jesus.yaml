@@ -1,0 +1,19 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: maria-madre-de-jesus
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-co-r21_9_VIDEO"
+    title: "Domingo mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_9_VIDEO&appLanguage=S"
+    published: "2021-08-09"
+    hits: 2
+    terms:
+      "madre de Jesús": 2
+  - docid: "pub-gnj_2_VIDEO"
+    title: "Episodio 2: “Este es mi Hijo”"
+    url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
+    published: "2026-01-19"
+    hits: 2
+    terms:
+      "madre de Jesús": 2

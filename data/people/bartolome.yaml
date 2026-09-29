@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bartolome
+name: Bartolomé
+names:
+- name: Bartolomé
+  note: 'Patronímico: significa «hijo de Tolmai» (Perspicacia).'
+perspicacia: '1200000569'
+summary: Uno de los doce apóstoles. Mateo y Lucas lo nombran junto a Felipe, y por eso Perspicacia y la nota de Mt 10:3 ven
+  en él, sin darlo por seguro, al Natanael del Evangelio de Juan.
+reason: Perspicacia «Bartolomé» y «Natanael» (párr. 1); nota de estudio de Mt 10:3.
+sources:
+- it-bartolome
+- it-natanael
+- mateo-10
+- marcos-3
+- lucas-6
+- hechos-1
+links:
+- title: 'Perspicacia: «Bartolomé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000569
+  type: perspicacia
+- title: Mateo 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/10
+  type: bible
+relations:
+- type: disciple_of
+  person: jesus
+  inferred: false
+  sources:
+  - mateo-10
+  - marcos-3
+  - lucas-6
+  reason: Mt 10:3 lo pone entre los doce apóstoles.
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: natanael
+  inferred: true
+  sources:
+  - it-bartolome
+  - it-natanael
+  - mateo-10
+  - marcos-3
+  reason: Los tres primeros Evangelios emparejan a Bartolomé con Felipe y Juan empareja así a Natanael; Perspicacia lo da
+    como probable, no como seguro.
+  checked_on: '2026-09-29'
+  certainty: probable
+  status: verified
+checked_on: '2026-09-29'
+status: verified

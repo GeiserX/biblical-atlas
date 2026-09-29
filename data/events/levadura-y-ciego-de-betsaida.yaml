@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: levadura-y-ciego-de-betsaida
+title: Advierte contra la levadura de los fariseos y cura a un ciego en Betsaida
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Tras la Pascua de 32 e.c.
+places:
+- mar-de-galilea
+- betsaida
+people:
+- jesus
+passages:
+- Mt 16:5-12
+- Mr 8:13-26
+summary: Cruzando el lago hacia Betsaida, Jesús previene a sus discípulos contra la levadura, sus enseñanzas, de fariseos
+  y saduceos (Mateo) y de Herodes (Marcos). En Betsaida devuelve la vista a un ciego poco a poco.
+reason: La tabla A7-E da cuándo y dónde. Mt 16:6, 12 nombra a fariseos y saduceos; Mr 8:15, a Herodes, que no está presente;
+  jy cap. 58.
+sources:
+- tnm-a7-e
+- mateo-16
+- marcos-8
+- jy-cap-58
+- jy-cap-59
+narrative_order:
+  series: a7
+  order: 56
+search: Advierte contra la levadura de los fariseos y cura a un ciego en Betsaida
+history:
+- date: '2026-09-29'
+  change: 'Sale herodes-antipas: Mr 8:15 solo nombra su levadura y él no está en la escena.'
+  source: mateo-16
+- date: '2026-09-29'
+  change: El resumen omitía a los saduceos, que nombra Mt 16:6, 11, 12.
+  source: mateo-16
+- date: '2026-09-29'
+  change: La razón dice ahora qué nombra cada Evangelio y que Herodes no está en la escena.
+  source: mateo-16
+checked_on: '2026-09-29'
+status: verified

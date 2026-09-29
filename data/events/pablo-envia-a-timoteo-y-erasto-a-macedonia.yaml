@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-envia-a-timoteo-y-erasto-a-macedonia
+title: Pablo envía a Timoteo y Erasto a Macedonia
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: hechos
+  order: 1921
+places:
+- efeso
+- macedonia
+people:
+- pablo
+- timoteo
+- erasto-colaborador-de-pablo
+passages:
+- Hch 19:21, 22
+summary: Pablo decide ir a Jerusalén pasando por Macedonia y Acaya, y después a Roma. Envía antes a Macedonia a Timoteo y
+  Erasto, dos de sus ayudantes, y él se queda un tiempo en Asia.
+reason: Perspicacia «Erasto», núm. 1, y «Timoteo», apartado «Viaja con Pablo». El estudio 3 (párr. 26) pone en 55 la salida
+  de Pablo de Éfeso, poco después.
+sources:
+- hch-19
+- it-erasto
+- it-timoteo
+- si-3
+links:
+- title: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  type: bible
+search: Timoteo Erasto Macedonia Hechos 19:22
+checked_on: '2026-09-29'
+status: verified

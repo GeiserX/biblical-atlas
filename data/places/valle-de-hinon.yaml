@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-hinon
+name: Valle de Hinón
+names:
+- name: Valle de Hinón
+- name: Valle del hijo de Hinón
+  note: Otra forma del nombre (Jos 15:8; 2Re 23:10).
+- name: Gehena
+  note: Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30).
+type: valley
+lat: 31.769167
+lon: 35.228056
+precision: zone
+coord_source: openbible:a37c8e6
+coord_url: https://www.openbible.info/geo/ancient/a37c8e6/valley-of-hinnom
+coord_note: Punto representativo del valle.
+summary: Valle hondo y estrecho que ciñe Jerusalén por el sur y el suroeste hasta juntarse con el Cedrón. Acaz y Manasés sacrificaron
+  allí a sus hijos; en tiempos de Jesús servía para quemar basura.
+reason: 'Perspicacia «Hinón, Valle de», párr. 1 y 4; «Gehena», párr. 1 y 2; nota de estudio de Mt 5:22. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-hinon
+- it-gehena
+- mateo-5
+- openbible-geo
+links:
+- title: 'Perspicacia: «Hinón, Valle de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002031
+  type: perspicacia
+- title: 'Perspicacia: «Gehena»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001642
+  type: perspicacia
+- title: Mateo 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

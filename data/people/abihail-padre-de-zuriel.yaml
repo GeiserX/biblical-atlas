@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihail-padre-de-zuriel
+name: Abihail
+names:
+- name: Abihail
+- name: Abiháil
+  note: Grafía de Perspicacia.
+perspicacia: 1200000038#1
+disambiguation: Abihail el merarita, padre de Zuriel; no la esposa de Abisur, el gadita hijo de Hurí, la hija de Eliab ni
+  el padre de Ester.
+summary: Levita de la rama de Merarí. Su hijo Zuriel encabezaba la casa paterna de los meraritas en tiempos del éxodo.
+reason: Perspicacia «Abiháil», núm. 1; Nú 3:35.
+sources:
+- it-abihail
+- numeros-3
+links:
+- title: 'Perspicacia: «Abiháil»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000038
+  type: perspicacia
+- title: Números 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/3
+  type: bible
+relations:
+- type: kin
+  person: merari
+  word: ancestor
+  inferred: true
+  sources:
+  - numeros-3
+  - it-abihail
+  - it-meraritas
+  reason: 'Perspicacia «Abiháil», núm. 1: era de la familia de Merarí (Nú 3:35).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

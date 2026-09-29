@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: medeba
+name: Medebá
+names:
+- name: Medebá
+type: city
+lat: 31.716107
+lon: 35.79548
+precision: point
+coord_source: openbible:af4f21c
+coord_url: https://www.openbible.info/geo/ancient/af4f21c/medeba
+summary: Ciudad sobre una meseta fértil unos 20 km al este del extremo norte del mar Muerto, en el camino del rey. Los amorreos
+  se la habían quitado a Moab; luego fue de Rubén.
+reason: 'Perspicacia «Medebá»; Nú 21:30. Hoy Madaba. OpenBible: solo el punto.'
+sources:
+- it-medeba
+- openbible-geo
+- numeros-21
+links:
+- title: 'Perspicacia: «Medebá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002955
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

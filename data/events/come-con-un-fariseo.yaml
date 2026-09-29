@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: come-con-un-fariseo
+title: Come con un fariseo y denuncia su hipocresía
+date:
+  from: 32
+  to: 32
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Otoño de 32 e.c., después de la Fiesta de los Tabernáculos
+  detail:
+    season: autumn
+places:
+- judea
+people:
+- jesus
+roles:
+  jesus: spoke
+passages:
+- Lu 11:37-54
+summary: Un fariseo lo invita a comer y se extraña de que no se lave antes. Jesús denuncia la hipocresía de los
+  fariseos y de los expertos en la Ley.
+reason: La tabla A7-E da cuándo y dónde. La tabla dice «probablemente Judea»; jy cap. 76.
+sources:
+- tnm-a7-e
+- lucas-11
+- jy-cap-76
+narrative_order:
+  series: a7
+  order: 70
+search: Come con un fariseo y denuncia su hipocresía
+checked_on: '2026-09-29'
+status: verified

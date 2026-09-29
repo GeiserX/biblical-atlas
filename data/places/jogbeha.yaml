@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jogbeha
+name: Jogbehá
+names:
+- name: Jogbehá
+type: city
+lat: 32.013531
+lon: 35.855751
+precision: point
+coord_source: openbible:acf6e00
+coord_url: https://www.openbible.info/geo/ancient/acf6e00/jogbehah
+summary: Ciudad fortificada con corrales de piedra que los gaditas reconstruyeron antes de cruzar el Jordán. Más tarde Gedeón
+  pasó por allí para sorprender a los madianitas.
+reason: 'Perspicacia «Jogbehá»: se suele identificar con el-Jubeihat, unos 10 km al noroeste de Ammán; Nú 32:35. OpenBible:
+  solo el punto.'
+sources:
+- it-jogbeha
+- openbible-geo
+- numeros-32
+links:
+- title: 'Perspicacia: «Jogbehá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002485
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

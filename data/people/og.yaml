@@ -1,0 +1,94 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: og
+name: Og
+names:
+- name: Og
+perspicacia: '1200003306'
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+summary: Rey amorreo de Basán, el último de los gigantescos refaím que quedaban en aquella región. Gobernaba sesenta ciudades
+  fortificadas; cuando terminaban los cuarenta años en el desierto, Israel lo venció y lo mató en Edréi.
+reason: Perspicacia «Og», párr. 1 y 2, y «Basán», párr. 5, que fecha su derrota hacia 1473 a.e.c.; Sl 135:11.
+sources:
+- it-og
+- it-basan
+- salmos-135
+- salmos-136
+- numeros-21
+- it-edrei
+- deuteronomio-1
+- it-astarot
+- deuteronomio-3
+- deuteronomio-4
+- it-refaim
+- deuteronomio-29
+- deuteronomio-31
+links:
+- title: 'Perspicacia: «Og»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003306
+  type: perspicacia
+- title: Salmo 135 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
+  type: bible
+- title: Salmo 136 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
+  type: bible
+relations:
+- type: lived_in
+  place: basan
+  inferred: false
+  sources:
+  - salmos-135
+  - it-og
+  - salmos-136
+  - numeros-21
+  - deuteronomio-1
+  - deuteronomio-3
+  - deuteronomio-4
+  - deuteronomio-29
+  reason: Sl 135:11 lo llama rey de Basán.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: edrei
+  inferred: false
+  sources:
+  - numeros-21
+  - it-og
+  - it-edrei
+  - deuteronomio-3
+  reason: 'Nú 21:33-35: salió a pelear en Edréi y allí lo mataron con sus hijos y su ejército.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: astarot
+  inferred: false
+  sources:
+  - deuteronomio-1
+  - it-og
+  - it-astarot
+  reason: 'Dt 1:4: Og vivía en Astarot; Perspicacia «Og» la da como una de sus dos ciudades principales.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: edrei
+  inferred: false
+  sources:
+  - deuteronomio-1
+  - it-og
+  - it-edrei
+  reason: 'Dt 1:4: Og vivía en Astarot, en Edréi; Perspicacia «Edrei», núm. 1, la llama ciudad real de Og.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: El lugar de su derrota se escribe Edréi, como en la TNM (Nú 21:33); Edrei es la grafía de Perspicacia.
+  source: numeros-21
+checked_on: '2026-09-29'
+status: verified

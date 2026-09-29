@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobal-hijo-de-seir
+name: Sobal
+names:
+- name: Sobal
+perspicacia: 1200004077#1
+disambiguation: Sobal hijo de Seír; no Sobal hijo de Hur, de Judá.
+summary: Uno de los jeques horeos, hijo de Seír; tuvo cinco hijos.
+reason: Perspicacia «Sobal», núm. 1; Gé 36:20, 23, 29.
+sources:
+- it-sobal
+- genesis-36
+links:
+- title: 'Perspicacia: «Sobal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004077
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: seir
+  word: father
+  inferred: false
+  sources:
+  - it-sobal
+  - genesis-36
+  reason: 'Gé 36:20: hijo de Seír el horeo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: seir
+  inferred: false
+  sources:
+  - it-sobal
+  - genesis-36
+  reason: 'Gé 36:21, 29, 30: jeque horeo en la tierra de Seír.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

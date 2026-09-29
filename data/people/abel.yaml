@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abel
+name: Abel
+names:
+- name: Abel
+disambiguation: Abel hijo de Adán; no la ciudad de Abel-bet-maacá.
+date:
+  from: -4025
+  to: -3895
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: entre 4026 y 3896 a.e.c.
+summary: Segundo hijo de Adán y Eva, pastor de ovejas. Su ofrenda agradó a Dios porque la hizo con fe. Su hermano Caín lo
+  mató, y Jesús habló de él como el primer mártir.
+reason: 'Perspicacia «Abel», núm. 1, párr. 2, 3, 5 y 6; Gé 4:2-8 y Heb 11:4. Años: el estudio 3 pone a Adán en 4026
+  a.e.c. y la muerte de Abel antes de 3896, cuando nace Set.'
+sources:
+- si-3
+- it-abel
+- genesis-4
+links:
+- title: 'Perspicacia: «Abel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000018
+  type: perspicacia
+- title: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  type: bible
+relations:
+- type: kin
+  person: adan
+  word: father
+  inferred: false
+  sources:
+  - it-abel
+  - genesis-4
+  reason: 'Perspicacia «Abel», párr. 2: segundo hijo de Adán y Eva (Gé 4:2).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: eva
+  word: mother
+  inferred: false
+  sources:
+  - it-abel
+  - genesis-4
+  reason: 'Perspicacia «Abel», párr. 2: segundo hijo de Adán y Eva (Gé 4:2).'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200000018'
+checked_on: '2026-09-29'
+status: verified

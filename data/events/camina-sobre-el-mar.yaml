@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: camina-sobre-el-mar
+title: Camina sobre el mar y cura en Genesaret
+date:
+  from: 32
+  to: 32
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: cerca de la Pascua de 32 e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: a7
+  order: 51
+places:
+- mar-de-galilea
+- genesaret
+people:
+- jesus
+- pedro
+passages:
+- Mt 14:22-36
+- Mr 6:45-56
+- Jn 6:14-21
+summary: La gente quiere hacerlo rey y Jesús se retira a orar. De madrugada alcanza la barca caminando sobre el agua, Pedro
+  camina un trecho hacia él, y al desembarcar en Genesaret curan muchos enfermos.
+reason: 'A7-D, fila 10: lado noreste del lago y Genesaret. Perspicacia «Genesaret» (párr. 2) describe la llanura donde hizo
+  esas curaciones.'
+sources:
+- tnm-a7-d
+- mateo-14
+- marcos-6
+- juan-6
+- it-genesaret
+- jy-cap-53
+checked_on: '2026-09-28'
+status: verified

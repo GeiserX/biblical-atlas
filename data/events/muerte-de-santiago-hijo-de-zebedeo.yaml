@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-santiago-hijo-de-zebedeo
+title: Herodes Agripa I manda matar a Santiago
+date:
+  from: 44
+  to: 44
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 44 e.c.
+narrative_order:
+  series: hechos
+  order: 1201
+places:
+- jerusalen
+people:
+- santiago-hijo-de-zebedeo
+- herodes-agripa-i
+type: death
+roles:
+  santiago-hijo-de-zebedeo: died
+passages:
+- Hch 12:1, 2
+summary: 'El rey Herodes Agripa I ataca a la congregación y mata a espada a Santiago, hermano de Juan: el primero
+  de los doce que muere como mártir.'
+reason: El estudio 3 (párr. 20) pone estos sucesos en 44; Perspicacia «Santiago» (párr. 8) y la nota de estudio de
+  Hch 12:2.
+sources:
+- si-3
+- it-santiago
+- hechos-12
+note: Hch 12:2 no nombra la ciudad; lo ponemos en Jerusalén porque el relato sigue allí con el arresto de Pedro.
+search: muerte de Santiago Herodes
+checked_on: '2026-09-29'
+status: verified

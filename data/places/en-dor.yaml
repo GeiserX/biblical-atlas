@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: en-dor
+name: En-Dor
+names:
+- name: En-Dor
+type: city
+lat: 32.643614
+lon: 35.390222
+precision: point
+coord_source: openbible:aca444b
+coord_url: https://www.openbible.info/geo/ancient/aca444b/en-dor
+summary: Ciudad de las llanuras de Isacar asignada a Manasés, a pocos kilómetros al sur del monte Tabor. El Salmo 83 la une
+  a la derrota de Sísara; allí consultó Saúl a una espiritista.
+reason: 'Perspicacia «En-dor», párr. 1 a 3; Jos 17:11; Sl 83:10. Se suele identificar con Khirbet Safsafeh, al sureste de Nazaret.
+  OpenBible: solo el punto.'
+sources:
+- it-en-dor
+- openbible-geo
+- salmos-83
+links:
+- title: 'Perspicacia: «En-dor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001359
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified

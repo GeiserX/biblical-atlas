@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abiatar
+name: Abiatar
+names:
+- name: Abiatar
+perspicacia: '1200000030'
+summary: Sacerdote de la línea de Elí, hijo del sumo sacerdote Ahimélec. Fue el único que escapó de la matanza de Nob, siguió
+  a David durante su huida y en su reinado fue sumo sacerdote. Salomón lo desterró a Anatot.
+reason: Perspicacia «Abiatar», párr. 1 a 4, 8 y 10. Jesús lo nombra en Mr 2:26; la nota de estudio lo llama sacerdote principal
+  porque el sumo sacerdote era aún su padre.
+sources:
+- it-abiatar
+- marcos-2
+not_claimed:
+- 'Que Abiatar fuera ya sumo sacerdote cuando David comió los panes de la presentación: según la nota de estudio de Mr 2:26,
+  lo era su padre, Ahimélec.'
+links:
+- title: 'Perspicacia: «Abiatar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000030
+  type: perspicacia
+- title: Marcos 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

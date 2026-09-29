@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: alejandro-conquista-egipto
+title: Alejandro Magno conquista Egipto
+date:
+  from: -331
+  to: -331
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 332 a.e.c.
+places:
+- egipto
+people: []
+passages: []
+summary: Tras destruir Tiro y perdonar a Jerusalén, Alejandro entra en Egipto y funda Alejandría. Se acaban para siempre
+  los faraones del país.
+reason: Perspicacia «Egipto, egipcio» fecha la conquista en 332 a.e.c.; «Alejandro» cuenta Tiro, Jerusalén y la fundación
+  de Alejandría.
+sources:
+- it-egipto
+- it-alejandro
+search: Alejandro Magno Egipto
+checked_on: '2026-09-28'
+status: verified

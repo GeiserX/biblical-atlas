@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-nebo
+name: Monte Nebo
+names:
+- name: Monte Nebo
+type: mountain
+lat: 31.766667
+lon: 35.75
+precision: point
+coord_source: openbible:aefaa2d
+coord_url: https://www.openbible.info/geo/ancient/aefaa2d/mount-nebo
+summary: Uno de los montes de Abarim, al este de donde el Jordán entra en el mar Muerto. Desde allí Moisés vio la Tierra
+  Prometida antes de morir.
+reason: 'Perspicacia «Nebo», núm. 3 (párr. 5): se suele identificar con Jebel en-Neba, unos 17 km al este de la desembocadura
+  del Jordán. Dt 34:1-5. OpenBible: solo el punto.'
+sources:
+- it-nebo
+- deuteronomio-34
+- openbible-geo
+- deuteronomio-3
+- deuteronomio-32
+links:
+- title: 'Perspicacia: «Nebo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003199
+  type: perspicacia
+- title: Deuteronomio 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'Pisgá sale de los nombres del Nebo: Perspicacia le da artículo y sitio propios (Ras es-Siyaghah, junto a Jebel
+    en-Neba) y ahora tiene ficha, pisga.'
+  source: it-pisga
+checked_on: '2026-09-29'
+status: verified

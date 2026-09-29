@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: jehu-de-israel
+name: Reinado de Jehú en Israel
+type: king
+person: jehu-de-israel
+date:
+  from: -904
+  to: -875
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905-876 a.e.c.
+places:
+- samaria
+summary: Veintiocho años en Samaria; su dinastía reinó cuatro generaciones.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 9.
+sources:
+- tnm-a6-a
+- 2-reyes-9
+- it-jehu
+history:
+- date: '2026-09-28'
+  change: Perspicacia «Jehú» daba c. 904-877 a.e.c.; A6-A, más reciente, da c. 905-876.
+  source: tnm-a6-a
+search: Jehú rey
+checked_on: '2026-09-28'
+status: verified
