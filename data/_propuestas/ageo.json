@@ -1,0 +1,320 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "ageo",
+ "agente": "escritor-ageo",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "pasajes",
+   "antes": [
+    "Ag 1:1-15",
+    "Esd 5:1, 2",
+    "Zac 1:1"
+   ],
+   "despues": [
+    "Ag 1:12-15",
+    "Esd 5:1, 2"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Ag 1:1-11 es el primer mensaje de Ageo, del 1 de elul, y pasa a primer-mensaje-de-ageo. Sale Zac 1:1: Zacarías empezó en el mes octavo, no el día 24 de este suceso.",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "personas",
+   "antes": [
+    "zorobabel",
+    "josue-sumo-sacerdote",
+    "ageo",
+    "zacarias-profeta"
+   ],
+   "despues": [
+    "zorobabel",
+    "josue-sumo-sacerdote",
+    "ageo"
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "Se quita a zacarias-profeta: Ag 1:15 fecha el suceso el día 24 del sexto mes y Zac 1:1 sitúa el comienzo de Zacarías en el mes octavo, unos dos meses más tarde (Perspicacia «Ageo»).",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "titulo",
+   "antes": "Ageo y Zacarías animan a reanudar el templo",
+   "despues": "Zorobabel, Josué y el pueblo reanudan el templo",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El título hablaba de Ageo y Zacarías; el suceso es el día 24 del sexto mes (Ag 1:14, 15), cuando los jefes y el pueblo empiezan a trabajar y Zacarías aún no profetizaba (Zac 1:1).",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "resumen",
+   "antes": "En el segundo año de Darío I, el profeta Ageo y después Zacarías animaron al pueblo. Zorobabel y el sumo sacerdote Josué volvieron a trabajar en el templo aunque la prohibición seguía vigente.",
+   "despues": "El día 24 del sexto mes del segundo año de Darío I, movidos por los mensajes de Ageo, Zorobabel, el sumo sacerdote Josué y el resto del pueblo empezaron a trabajar en el templo, aunque la prohibición seguía vigente.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen incluía a Zacarías, que empezó en el mes octavo (Zac 1:1); ahora cuenta solo lo del día 24 del sexto mes (Ag 1:12-15).",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "se-reanuda-la-obra-del-templo-520",
+   "campo": "razon",
+   "antes": "Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:1 fecha el primer mensaje el día 1 del sexto mes, y Ag 1:15, el comienzo de la obra el día 24.",
+   "despues": "Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:15 fecha el comienzo de la obra el día 24 del sexto mes. Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»), así que no va en este día.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica ahora por qué Zacarías no figura en el suceso; el primer mensaje del día 1 tiene su propio suceso.",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "ageo",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001812"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "dario-i",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001124#2"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002446#4"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "resumen",
+   "antes": "Hijo de Jehozadaq y nieto de Seraya. Volvió con Zorobabel en 537 a.e.c. y fue el primer sumo sacerdote de los repatriados; trabajó con él en el altar y en el templo.",
+   "despues": "Hijo de Jehozadac y nieto de Seraya. Volvió con Zorobabel en 537 a.e.c. y fue el primer sumo sacerdote de los repatriados; trabajó con él en el altar y en el templo.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El padre se escribía Jehozadaq, grafía de Perspicacia; la TNM escribe Jehozadac (Ag 1:1; 1Cr 6:14) y el protocolo toma los nombres de la TNM.",
+    "fuente": "ageo-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "fuentes",
+   "valores": [
+    "it-jehozadaq"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jehozadac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "ageo-1",
+      "it-jehozadaq"
+     ],
+     "razon": "Ag 1:1, 12, 14 lo llaman hijo de Jehozadac.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "zorobabel",
+     "deducido": false,
+     "fuentes": [
+      "ageo-1"
+     ],
+     "razon": "Ag 1:1, 12, 14 los nombran juntos al frente del pueblo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "sealtiel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "ageo-1"
+     ],
+     "razon": "Ag 1:1, 12, 14 lo llaman hijo de Sealtiel.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-sumo-sacerdote",
+     "deducido": false,
+     "fuentes": [
+      "ageo-1"
+     ],
+     "razon": "Ag 1:1, 12, 14 los nombran juntos al frente del pueblo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sealtiel",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "ageo",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2",
+    "it-ageo-libro",
+    "si-ageo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "zorobabel",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "sealtiel",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "ageo-2"
+     ],
+     "razon": "Ag 2:2, 23 lo llaman hijo de Sealtiel.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "josue-sumo-sacerdote",
+     "deducido": false,
+     "fuentes": [
+      "ageo-2"
+     ],
+     "razon": "Ag 2:2, 4 los nombran juntos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "josue-sumo-sacerdote",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jehozadac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "ageo-2"
+     ],
+     "razon": "Ag 2:2, 4 lo llaman hijo de Jehozadac.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "zorobabel",
+     "deducido": false,
+     "fuentes": [
+      "ageo-2"
+     ],
+     "razon": "Ag 2:2, 4 los nombran juntos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sealtiel",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periodos",
+   "id": "gobierno-de-zorobabel",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "periodos",
+   "id": "sumo-sacerdocio-de-josue",
+   "campo": "fuentes",
+   "valores": [
+    "ageo-2"
+   ]
+  }
+ ],
+ "preguntas": []
+}

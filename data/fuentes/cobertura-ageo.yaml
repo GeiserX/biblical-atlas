@@ -1,0 +1,29 @@
+# biblical-earth: fuentes de la cobertura de ageo. Esquema en docs/investigacion/README.md.
+it-ageo-libro:
+  titulo: Ageo, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001813
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+si-ageo:
+  titulo: 'Libro bíblico número 37: Ageo'
+  obra: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990098
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-jehozadaq:
+  titulo: Jehozadaq
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002400
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+w07-ageo-y-zacarias:
+  titulo: Puntos sobresalientes de los libros de Ageo y Zacarías
+  obra: La Atalaya (1 de diciembre de 2007)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2007882
+  nivel: 1
+  publicado: 2007
+  consultado: '2026-09-29'

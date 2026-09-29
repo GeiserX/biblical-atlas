@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehozadac
+nombre: Jehozadac
+nombres:
+- nombre: Jehozadac
+- nombre: Jozadac
+  nota: Forma breve del nombre en Ne 12:26.
+- nombre: Jehozadaq
+  nota: Grafía que usa Perspicacia.
+perspicacia: '1200002400'
+resumen: Sacerdote, hijo del sumo sacerdote Seraya y padre del sumo sacerdote Josué, o Jesúa. Fue desterrado cuando Nabucodonosor
+  mató a su padre; a través de él continuó la línea de los sumos sacerdotes.
+razon: Perspicacia «Jehozadaq»; Ag 1:1, 12, 14 y 2:2, 4 llaman a Josué hijo de Jehozadac.
+fuentes:
+- it-jehozadaq
+- ageo-1
+- ageo-2
+enlaces:
+- titulo: 'Perspicacia: «Jehozadaq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002400
+  tipo: perspicacia
+- titulo: Ageo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: babilonia
+  deducido: true
+  fuentes:
+  - it-jehozadaq
+  - it-jesua
+  razon: 1Cr 6:15 dice que fue al destierro por mano de Nabucodonosor; Perspicacia «Jesúa», núm. 4, precisa que lo llevaron
+    a Babilonia.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
