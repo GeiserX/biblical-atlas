@@ -50,6 +50,15 @@ fuentes:
 - marcos-13
 - marcos-14
 - marcos-16
+- lucas-4
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
+- lucas-12
+- lucas-18
+- lucas-22
+- lucas-24
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
@@ -73,6 +82,7 @@ relaciones:
   - mateo-4
   - mateo-10
   - marcos-1
+  - lucas-6
   razon: 'Jn 1:40-42: Andrés lleva a su hermano Simón a Jesús. Perspicacia «Pedro», párr. 3.'
   estado: verificado
 - tipo: pariente
@@ -83,6 +93,7 @@ relaciones:
   - it-pedro
   - marcos-1
   - mateo-8
+  - lucas-4
   razon: Mr 1:29-31 menciona a su suegra; Perspicacia deduce de ahí que estaba casado (párr. 4).
   estado: verificado
 - tipo: acompana
@@ -94,6 +105,7 @@ relaciones:
   - it-pedro
   - hechos-3
   - hechos-8
+  - lucas-22
   razon: 'Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia
     «Pedro», párr. 7.'
   estado: verificado
@@ -114,6 +126,7 @@ relaciones:
   fuentes:
   - it-pedro
   - marcos-1
+  - lucas-4
   razon: 'Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía
     casa con Andrés.'
   estado: verificado
@@ -198,6 +211,13 @@ relaciones:
   - marcos-11
   - marcos-13
   - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
+  - lucas-12
+  - lucas-18
+  - lucas-22
   razon: 'Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.'
   estado: verificado
 - tipo: pariente
@@ -214,6 +234,7 @@ relaciones:
   deducido: false
   fuentes:
   - marcos-14
+  - lucas-22
   razon: 'Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.'
   estado: verificado
 enlaces:

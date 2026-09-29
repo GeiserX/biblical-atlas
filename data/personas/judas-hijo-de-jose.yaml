@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: judas-hijo-de-jose
+nombre: Judas
+nombres:
+- nombre: Judas
+perspicacia: 1200002541#1
+desambiguacion: Judas hijo de José en la lista de Lucas (Lu 3:30); no Judas, medio hermano de Jesús, ni los apóstoles de ese
+  nombre.
+no_confundir_con:
+- judas-hermano-de-jesus
+- judas-iscariote
+- tadeo
+resumen: Antepasado de Jesús por la línea de María. Es la séptima generación desde Natán, hijo de David, y vivió antes del
+  destierro.
+razon: Perspicacia «Judas», núm. 1; Lu 3:30.
+fuentes:
+- it-judas
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Judas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jose-hijo-de-jonam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-3
+  razon: 'Lu 3:30: Judas, hijo de José.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -39,5 +39,11 @@ fuentes:
 - it-juan
 - jy-cap-11
 - it-desierto-de-juda
+presentes:
+- juan-el-bautista
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade presentes: sin ellos el sitio ponía también a Tiberio en Judea. Solo Juan estaba allí.'
+  fuente: lucas-3
 consultado: '2026-09-29'
 estado: verificado

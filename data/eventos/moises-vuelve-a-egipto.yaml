@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-vuelve-a-egipto
+titulo: Moisés deja Madián y vuelve a Egipto
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+orden_relato:
+  serie: exodo
+  orden: 4018
+lugares:
+- madian
+- egipto
+personas:
+- moises
+- jetro
+- zipora
+- guersom-hijo-de-moises
+- eliezer-hijo-de-moises
+pasajes:
+- Éx 4:18-23
+resumen: Moisés pide permiso a Jetró para volver con sus hermanos, y él lo despide en paz. Jehová le dice que ya murieron
+  quienes querían matarlo, y Moisés parte con Ziporá y sus hijos en un burro, vara en mano.
+razon: Sigue a la zarza, que el estudio 3 fecha hacia 1514 a.e.c., y precede al éxodo de 1513. Perspicacia «Jetró» y «Ziporá»
+  cuentan la partida con los dos hijos.
+fuentes:
+- exodo-4
+- si-3
+- it-jetro
+- it-zipora
+- it-moises
+enlaces:
+- titulo: Éxodo 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

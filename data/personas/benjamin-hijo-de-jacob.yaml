@@ -18,6 +18,7 @@ fuentes:
 - genesis-45
 - genesis-46
 - genesis-49
+- exodo-1
 enlaces:
 - titulo: 'Perspicacia: «Benjamín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000640
@@ -83,6 +84,13 @@ relaciones:
   - it-benjamin
   razon: 'Gé 35:6, 16-19: nace en el camino de Betel, ya en Canaán, a Efrat. Perspicacia «Benjamín», núm. 1: el único de los
     hijos de Jacob nacido en Canaán.'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-1
+  razon: 'Éx 1:1, 6: llegó a Egipto con Jacob y allí murió, como sus hermanos y toda aquella generación.'
   estado: verificado
 perspicacia: 1200000640#1
 consultado: '2026-09-29'

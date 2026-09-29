@@ -17,6 +17,7 @@ lugares:
 personas:
 - jesus
 - judas-iscariote
+- satanas
 presentes:
 - judas-iscariote
 pasajes:
@@ -39,5 +40,5 @@ orden_relato:
   serie: a7
   orden: 108
 buscar: Judas acuerda la traición
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

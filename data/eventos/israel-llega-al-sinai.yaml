@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-llega-al-sinai
+titulo: Israel llega al desierto de Sinaí
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: tercer mes de 1513 a.e.c.
+  detalle:
+    mes: sivan
+orden_relato:
+  serie: exodo
+  orden: 19001
+lugares:
+- desierto-de-sinai
+- monte-sinai
+- refidim
+personas:
+- moises
+pasajes:
+- Éx 19:1-2
+resumen: En el tercer mes después de salir de Egipto, Israel deja Refidim, entra en el desierto de Sinaí y acampa frente a
+  la montaña, donde se quedará casi un año.
+razon: Éx 19:1 da el mes; el estudio 3 fecha el éxodo en 1513 a.e.c. Perspicacia «Sinaí», núm. 1, párr. 1, habla de casi un
+  año de campamento.
+fuentes:
+- exodo-19
+- si-3
+- it-sinai
+- tnm-b3
+enlaces:
+- titulo: Éxodo 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

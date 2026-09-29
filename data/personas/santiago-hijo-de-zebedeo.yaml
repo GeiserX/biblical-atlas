@@ -37,9 +37,14 @@ fuentes:
 - marcos-10
 - marcos-13
 - marcos-14
+- lucas-5
+- lucas-6
+- lucas-8
+- lucas-9
 no_confundir_con:
 - santiago-hermano-de-jesus
 - santiago-hijo-de-alfeo
+- santiago-padre-de-tadeo
 relaciones:
 - tipo: pariente
   persona: juan-apostol
@@ -54,6 +59,7 @@ relaciones:
   - marcos-1
   - marcos-3
   - marcos-10
+  - lucas-5
   razon: Mt 10:2; Perspicacia «Santiago», párr. 3.
   estado: verificado
 - tipo: pariente
@@ -70,6 +76,7 @@ relaciones:
   - marcos-1
   - marcos-3
   - marcos-10
+  - lucas-5
   razon: Mt 10:2 lo llama hijo de Zebedeo.
   estado: verificado
 - tipo: acompana
@@ -79,6 +86,7 @@ relaciones:
   deducido: false
   fuentes:
   - it-santiago
+  - lucas-5
   razon: Socios en la pesca hasta la llamada de 30; Perspicacia «Santiago», párr. 4.
   estado: verificado
 - tipo: murio_en
@@ -114,6 +122,10 @@ relaciones:
   - marcos-10
   - marcos-13
   - marcos-14
+  - lucas-5
+  - lucas-6
+  - lucas-8
+  - lucas-9
   razon: 'Mt 4:21, 22: deja la barca y a su padre para seguir a Jesús.'
   estado: verificado
 - tipo: pariente

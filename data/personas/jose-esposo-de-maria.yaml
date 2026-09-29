@@ -7,6 +7,8 @@ desambiguacion: Esposo de María y padre adoptivo de Jesús; no es José de Arim
 no_confundir_con:
 - jose-de-arimatea
 - jose-hijo-de-jose
+- jose-hijo-de-matatias
+- jose-hijo-de-jonam
 resumen: 'Carpintero de Nazaret descendiente de David, esposo de María y padre adoptivo de Jesús. Siguió los avisos que recibió
   en sueños: se casó con María, huyó a Egipto y se estableció en Nazaret. Parece que murió antes que Jesús.'
 razon: Perspicacia «José» (núm. 8) da su oficio, su familia, los sueños y el indicio de Jn 19:26, 27 sobre su muerte.
@@ -15,6 +17,9 @@ fuentes:
 - mateo-1
 - mateo-2
 - mateo-13
+- lucas-1
+- lucas-2
+- lucas-3
 relaciones:
 - tipo: pariente
   persona: maria-madre-de-jesus
@@ -22,6 +27,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-1
+  - lucas-2
   razon: Mt 1:24.
   estado: verificado
 - tipo: pariente
@@ -64,6 +70,8 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-1
+  - lucas-1
+  - lucas-2
   razon: Mt 1:6-16 lo pone en la línea de David, y en Mt 1:20 el ángel lo llama hijo de David.
   estado: verificado
 - tipo: vivio_en
@@ -72,6 +80,15 @@ relaciones:
   fuentes:
   - mateo-2
   razon: 'Mt 2:14, 15 y 19: se quedó en Egipto hasta la muerte de Herodes.'
+  estado: verificado
+- tipo: pariente
+  persona: heli
+  relacion: suegro
+  deducido: true
+  fuentes:
+  - lucas-3
+  - it-heli
+  razon: Lu 3:23 lo llama hijo de Helí; Perspicacia «Helí» y la nota de estudio lo entienden como su yerno.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «José»'

@@ -17,5 +17,16 @@ enlaces:
 - titulo: Lucas 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: 1200004124#3
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  deducido: false
+  fuentes:
+  - lucas-2
+  razon: Lu 2:25 lo presenta como un hombre que vivía en Jerusalén.
+  estado: verificado
+no_confundir_con:
+- simeon-hijo-de-judas

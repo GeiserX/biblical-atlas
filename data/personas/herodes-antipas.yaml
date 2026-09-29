@@ -30,6 +30,7 @@ relaciones:
   - mateo-14
   - it-herodes
   - marcos-6
+  - lucas-3
   razon: 'Mt 14:3, 4: Juan le reprochaba tener por esposa a Herodías; Perspicacia «Herodes» (núm. 2) cuenta la boda.'
   estado: verificado
 - tipo: pariente
@@ -40,6 +41,7 @@ relaciones:
   - mateo-14
   - it-herodes
   - marcos-6
+  - lucas-3
   razon: Mt 14:3 llama a Filipo hermano de Herodes; Perspicacia «Herodes» (núm. 2 y 5) precisa que eran medio hermanos.
   estado: verificado
 - tipo: vivio_en
@@ -52,6 +54,25 @@ relaciones:
   razon: Las notas de Mt 14:3 y 6 ponen su residencia en Tiberíades; Perspicacia «Tiberíades» (núm. 1) la da como sede de
     su tetrarquía.
   estado: verificado
+- tipo: pariente
+  persona: filipo-el-tetrarca
+  relacion: medio hermano
+  deducido: false
+  fuentes:
+  - lucas-3
+  - it-filipo
+  razon: Lu 3:1 llama a Filipo hermano de Herodes; Perspicacia «Filipo» (núm. 2) precisa que eran medio hermanos.
+  estado: verificado
+- tipo: acompana
+  persona: poncio-pilato
+  relacion: amigo
+  deducido: false
+  fuentes:
+  - lucas-23
+  - it-herodes
+  razon: 'Lu 23:12: eran enemigos y, el día en que Pilato le mandó a Jesús, se hicieron amigos; Perspicacia «Herodes» (núm.
+    2) lo cuenta.'
+  estado: verificado
 resumen: Tetrarca de Galilea y Perea, nacido de Herodes el Grande. Hizo decapitar a Juan el Bautista y, el día en
   que murió Jesús, lo interrogó en Jerusalén y se burló de él.
 razon: Perspicacia «Herodes», apartado 2 (párrafos sobre Juan el Bautista y «Se burla de Jesús»); Lu 23:6-12 narra
@@ -61,6 +82,9 @@ fuentes:
 - lucas-23
 - mateo-14
 - marcos-6
+- lucas-3
+- lucas-9
+- lucas-13
 enlaces:
 - titulo: 'Perspicacia: «Herodes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002000

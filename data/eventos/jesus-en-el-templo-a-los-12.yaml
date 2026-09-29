@@ -15,6 +15,7 @@ orden_relato:
   serie: a7
   orden: 8
 lugares:
+- monte-moria
 - jerusalen
 personas:
 - jesus
@@ -29,5 +30,10 @@ fuentes:
 - tnm-a7-a
 - lucas-2
 - jy-cap-10
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sus padres lo hallan en el templo (Lu 2:46): el sitio principal es monte-moria, como en los sucesos del templo
+    de Mateo, y Jerusalén queda segunda.'
+  fuente: lucas-2
+consultado: '2026-09-29'
 estado: verificado

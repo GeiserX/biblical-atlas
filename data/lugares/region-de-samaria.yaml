@@ -20,6 +20,8 @@ fuentes:
 - it-samaria
 - hechos-8
 - openbible-geo
+- lucas-9
+- lucas-17
 enlaces:
 - titulo: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
@@ -27,5 +29,5 @@ enlaces:
 - titulo: Hechos 8 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

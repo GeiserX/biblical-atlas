@@ -11,6 +11,7 @@ razon: Perspicacia «Guersón»; Gé 46:11.
 fuentes:
 - it-guerson
 - genesis-46
+- exodo-6
 enlaces:
 - titulo: 'Perspicacia: «Guersón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001663
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-guerson
+  - exodo-6
   razon: 'Gé 46:11: aparece entre los hijos de Leví.'
   estado: verificado
 - tipo: vivio_en
@@ -35,5 +37,24 @@ relaciones:
   - genesis-46
   razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   estado: verificado
+- tipo: pariente
+  persona: cohat
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:16: Cohat es otro de los tres hijos de Leví.'
+  estado: verificado
+- tipo: pariente
+  persona: merari
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:16: Merarí es otro de los tres hijos de Leví.'
+  estado: verificado
+desambiguacion: Guersón hijo de Leví, llamado también Guersom; no Guersom, el primogénito de Moisés.
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- guersom-hijo-de-moises

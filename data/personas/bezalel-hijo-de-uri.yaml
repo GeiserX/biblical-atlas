@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bezalel-hijo-de-uri
+nombre: Bezalel
+nombres:
+- nombre: Bezalel
+perspicacia: 1200000721#1
+desambiguacion: Bezalel hijo de Urí, el artesano del tabernáculo; no el descendiente de Pahat-moab que despidió a su esposa
+  extranjera en días de Esdras.
+resumen: Artesano de la tribu de Judá, hijo de Urí y nieto de Hur. Dios lo llenó de su espíritu para dirigir la construcción
+  del tabernáculo, sus muebles y las prendas de los sacerdotes, con Oholiab como ayudante.
+razon: Perspicacia «Bezalel», núm. 1; Éx 31:1-11; 35:30-35.
+fuentes:
+- it-bezalel
+- exodo-31
+- exodo-35
+- exodo-36
+- exodo-37
+- exodo-38
+- exodo-39
+enlaces:
+- titulo: 'Perspicacia: «Bezalel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000721
+  tipo: perspicacia
+- titulo: Éxodo 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/35
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: uri-hijo-de-hur
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-31
+  - it-bezalel
+  - exodo-35
+  - exodo-38
+  razon: Éx 31:2 lo llama hijo de Urí.
+  estado: verificado
+- tipo: pariente
+  persona: hur-hijo-de-caleb
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - exodo-31
+  - it-hur
+  - exodo-35
+  - exodo-38
+  razon: 'Éx 31:2: su padre Urí era hijo de Hur.'
+  estado: verificado
+- tipo: pariente
+  persona: juda-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - exodo-31
+  - exodo-35
+  - it-uri
+  - exodo-38
+  razon: 'Éx 31:2: era de la tribu de Judá.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

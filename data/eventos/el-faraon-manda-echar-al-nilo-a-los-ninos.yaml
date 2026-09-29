@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-faraon-manda-echar-al-nilo-a-los-ninos
+titulo: El faraón manda echar al Nilo a los niños hebreos
+fecha:
+  desde: -1596
+  hasta: -1592
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1597 y 1593 a.e.c. (tiempo narrativo: tras fallar el plan de las parteras y antes de nacer Moisés)'
+orden_relato:
+  serie: exodo
+  orden: 1022
+lugares:
+- egipto
+- rio-nilo
+personas: []
+pasajes:
+- Éx 1:22
+- Hch 7:19
+resumen: Como Israel sigue creciendo, el faraón ordena a todos los egipcios arrojar al río Nilo a cada varón hebreo recién
+  nacido y dejar con vida a las niñas.
+razon: 'Perspicacia «Éxodo», apartado «El decreto de Faraón»: la orden llegó después de la de las parteras y no regía aún
+  al nacer Aarón en 1597 a.e.c. Moisés nació bajo ella en 1593 (estudio 3).'
+fuentes:
+- exodo-1
+- it-exodo
+- si-3
+- it-moises
+enlaces:
+- titulo: Éxodo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

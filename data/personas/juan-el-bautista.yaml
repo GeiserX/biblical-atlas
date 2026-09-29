@@ -33,6 +33,11 @@ fuentes:
 - marcos-1
 - marcos-6
 - marcos-11
+- lucas-1
+- lucas-7
+- lucas-9
+- lucas-11
+- lucas-20
 relaciones:
 - tipo: pariente
   persona: zacarias-padre-de-juan
@@ -40,6 +45,7 @@ relaciones:
   deducido: false
   fuentes:
   - lucas-1
+  - lucas-3
   razon: Lu 1:13, 57-63.
   estado: verificado
 - tipo: pariente
@@ -67,6 +73,13 @@ relaciones:
   - tnm-a7-d
   - marcos-6
   razon: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-juda
+  deducido: true
+  fuentes:
+  - lucas-3
+  razon: Lu 3:2 dice que estaba en el desierto cuando recibió el mensaje; la nota de estudio lo identifica con el de Judea.
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Juan»'

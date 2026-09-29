@@ -30,5 +30,8 @@ fuentes:
 - jy-cap-134
 - tnm-a7-g
 buscar: Se aparece a otras mujeres
-consultado: '2026-09-28'
+orden_relato:
+  serie: a7
+  orden: 125
+consultado: '2026-09-29'
 estado: verificado

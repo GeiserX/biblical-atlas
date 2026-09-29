@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lisanias
+nombre: Lisanias
+nombres:
+- nombre: Lisanias
+perspicacia: '1200002800'
+fecha:
+  desde: 29
+  hasta: 29
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 29 e.c.
+desambiguacion: El tetrarca de Abilene de Lu 3:1; no el Lisanias de Calcis, ejecutado hacia 34 a.e.c., del que habla Josefo.
+resumen: Tetrarca, o gobernante de distrito, de Abilene en 29 e.c., el año en que Juan el Bautista comenzó a predicar. Una
+  inscripción de Abila del tiempo de Tiberio lo nombra.
+razon: Perspicacia «Lisanias» y la nota de estudio de Lu 3:1.
+fuentes:
+- it-lisanias
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Lisanias»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002800
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: abilene
+  deducido: true
+  fuentes:
+  - lucas-3
+  - it-lisanias
+  razon: Lu 3:1 le da el distrito de Abilene; Perspicacia «Lisanias» dice que esa tetrarquía tenía su capital en Abila.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -20,6 +20,7 @@ fuentes:
 - si-3
 - it-tare
 - genesis-11
+- lucas-3
 enlaces:
 - titulo: 'Perspicacia: «Taré»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004368
@@ -58,6 +59,7 @@ relaciones:
   deducido: false
   fuentes:
   - genesis-11
+  - lucas-3
   razon: 'Gé 11:24: Nacor fue padre de Taré a los 29 años.'
   estado: verificado
 - tipo: vivio_en

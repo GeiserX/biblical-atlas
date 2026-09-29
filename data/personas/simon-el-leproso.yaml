@@ -4,7 +4,7 @@ nombre: Simón el leproso
 nombres:
 - nombre: Simón el leproso
   nota: Quizá un leproso al que Jesús había curado.
-desambiguacion: El de Betania; no es Simón Pedro, ni el fariseo de Lu 7, ni Simón de Cirene.
+desambiguacion: El de Betania; no es Simón Pedro, ni Simón el fariseo, ni Simón de Cirene.
 no_afirmamos:
 - Simón el leproso era esposo o padre de Marta.
 relaciones:
@@ -32,7 +32,13 @@ enlaces:
   tipo: biblia
 buscar: Simón el leproso
 perspicacia: 1200004131#6
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sin la cita de Lucas 7: el sitio lo ponía entre los nombrados en ese capítulo, que no habla de él sino de Simón
+    el fariseo.'
+  fuente: lucas-7
 consultado: '2026-09-29'
 estado: verificado
 no_confundir_con:
 - simon-hijo-de-jose
+- simon-el-fariseo

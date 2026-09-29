@@ -24,5 +24,8 @@ enlaces:
 - titulo: Nahúm 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/34/1
   tipo: biblia
-consultado: '2026-09-28'
+desambiguacion: El profeta que escribió el libro de Nahúm; no Nahúm hijo de Eslí, antepasado de Jesús.
+consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- nahum-hijo-de-esli

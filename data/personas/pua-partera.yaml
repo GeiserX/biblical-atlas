@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pua-partera
+nombre: Pua
+nombres:
+- nombre: Pua
+- nombre: Puá
+  nota: Grafía de Perspicacia. Su nombre hebreo es distinto del de los otros dos Puá, pero en español los tres se escriben
+    igual.
+perspicacia: 1200003574#2
+desambiguacion: Pua, la partera hebrea de Éx 1; no Puvá, hijo de Isacar, ni el padre del juez Tolá, a quienes la TNM también
+  llama Pua.
+no_confundir_con:
+- puva
+resumen: Partera hebrea en Egipto. Con Sifrá desobedeció al rey, que les mandó matar a los varones de las hebreas al nacer.
+  Por temer a Dios, él le dio una familia propia.
+razon: 'Perspicacia «Puá», núm. 2, y «Partera»; Éx 1:15-21. La TNM escribe Pua para las tres personas; el id lleva el rasgo
+  porque la grafía no las distingue.'
+fuentes:
+- it-pua
+- it-partera
+- exodo-1
+enlaces:
+- titulo: 'Perspicacia: «Puá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003574
+  tipo: perspicacia
+- titulo: Éxodo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-1
+  - it-pua
+  razon: 'Éx 1:15: partera de las hebreas en Egipto, en tiempos de la esclavitud.'
+  estado: verificado
+- tipo: acompana
+  persona: sifra
+  relacion: compañera
+  deducido: false
+  fuentes:
+  - exodo-1
+  - it-pua
+  razon: 'Éx 1:15: las dos parteras a las que habló el rey; Perspicacia «Puá», núm. 2, llama a Sifrá su compañera.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

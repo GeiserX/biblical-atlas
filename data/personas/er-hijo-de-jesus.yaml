@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: er-hijo-de-jesus
+nombre: Er
+nombres:
+- nombre: Er
+perspicacia: 1200001411#3
+desambiguacion: Er hijo de Jesús (Lu 3:28); no Er, primogénito de Judá.
+no_confundir_con:
+- er-hijo-de-juda
+resumen: Antepasado de Jesucristo que solo aparece en Lucas, como hijo de Jesús y padre de Elmadam.
+razon: Perspicacia «Er», núm. 3; Lu 3:28.
+fuentes:
+- it-er
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Er»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001411
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jesus-hijo-de-eliezer
+  relacion: padre
+  deducido: false
+  fuentes:
+  - lucas-3
+  razon: 'Lu 3:28, 29: Er, hijo de Jesús.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -18,8 +18,8 @@ pasajes:
 - Lu 18:1-14
 resumen: Con la parábola de la viuda que insiste ante un juez, Jesús anima a orar sin rendirse; con la del fariseo
   y el cobrador de impuestos, enseña a ser humildes.
-razon: 'La tabla A7-F da cuándo y dónde. La tabla dice «Samaria o Galilea»; jy cap. 94. Año: Perspicacia «Lázaro» (párr. 7)
-  pone esa resurrección a principios de 33, y A7-G la llegada a Betania el 8 de nisán del 33.'
+razon: 'A7-F da la época y dice «Samaria o Galilea» sin decidir, así que no sitúa a nadie; jy cap. 94. Año: Perspicacia «Lázaro»
+  (párr. 7) pone esa resurrección a principios de 33, y A7-G Betania el 8 de nisán.'
 fuentes:
 - tnm-a7-f
 - lucas-18
@@ -30,5 +30,13 @@ orden_relato:
   serie: a7
   orden: 85
 buscar: La viuda persistente
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón dice ahora que A7-F no decide entre Samaria y Galilea, y por eso el suceso no sitúa a nadie.
+  fuente: lucas-18
+- fecha: '2026-09-29'
+  cambio: A7-F dice «Samaria o Galilea» sin decidir, así que el suceso ya no pone a Jesús en Galilea.
+  fuente: lucas-18
+presentes: []
+consultado: '2026-09-29'
 estado: verificado

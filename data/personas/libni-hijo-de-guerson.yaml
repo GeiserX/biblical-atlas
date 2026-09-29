@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: libni-hijo-de-guerson
+nombre: Libní
+nombres:
+- nombre: Libní
+perspicacia: 1200002735#1
+desambiguacion: Libní hijo de Guersón; no el levita del linaje de Merarí que lleva el mismo nombre.
+resumen: Levita, hijo de Guersón y nieto de Leví, y origen de una familia de levitas. Perspicacia cree que Ladán era otro
+  nombre suyo.
+razon: Perspicacia «Libní», núm. 1; Éx 6:17.
+fuentes:
+- it-libni
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Libní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002735
+  tipo: perspicacia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: guerson
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-libni
+  razon: 'Éx 6:17: primer hijo de Guersón.'
+  estado: verificado
+- tipo: pariente
+  persona: simei-hijo-de-guerson
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:17: Simeí es el otro hijo de Guersón.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
