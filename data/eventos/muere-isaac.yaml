@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muere-isaac
+titulo: Muere Isaac
+fecha:
+  desde: -1737
+  hasta: -1737
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1738 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 40024
+lugares:
+- mamre
+- hebron
+personas:
+- isaac
+- esau
+- jacob
+pasajes:
+- Gé 35:28, 29
+resumen: Isaac muere a los 180 años, viejo y satisfecho. Sus hijos Esaú y Jacob lo entierran.
+razon: 'Estudio 3 y Perspicacia «Isaac», párr. 21: 1738 a.e.c., un año antes de que José fuera primer ministro. El libro lo
+  cuenta aquí, pero pasa tras la venta de José: el orden lo pone tras el capítulo 40.'
+fuentes:
+- si-3
+- it-isaac
+- it-jacob
+- genesis-35
+enlaces:
+- titulo: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

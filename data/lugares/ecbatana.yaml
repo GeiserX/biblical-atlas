@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ecbatana
+nombre: Ecbátana
+nombres:
+- nombre: Ecbátana
+- nombre: Acmeta
+  nota: Forma del texto masorético en Esd 6:2.
+tipo: ciudad
+lat: 34.8065
+lon: 48.516247
+precision: punto
+coord_fuente: openbible:a212ef7
+coord_url: https://www.openbible.info/geo/ancient/a212ef7/ecbatana
+resumen: Capital de Media, hoy Hamadán, al pie del monte Elvend. Ciro la tomó a Astiages; en sus archivos apareció el memorándum
+  de Ciro sobre el templo en tiempos de Darío I.
+razon: 'Perspicacia «Ecbátana»: capital meda desde c. 700 a.e.c., identificada con Hamadán; Esd 6:1, 2. Coordenada de OpenBible:
+  solo tomamos el punto.'
+fuentes:
+- it-ecbatana
+- esdras-6
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Ecbátana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001254
+  tipo: perspicacia
+- titulo: Esdras 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

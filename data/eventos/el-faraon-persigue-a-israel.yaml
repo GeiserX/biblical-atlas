@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-faraon-persigue-a-israel
+titulo: El faraón persigue a Israel hasta Pihahirot
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 14001
+lugares:
+- pihahirot
+- migdol
+- baal-zefon
+personas:
+- moises
+pasajes:
+- Éx 14:1-14
+- Nú 33:7
+resumen: Por orden de Jehová, Israel da la vuelta y acampa junto al mar, frente a Baal-Zefón. El faraón se arrepiente y lo
+  persigue con sus carros. El pueblo se asusta, pero Moisés le pide que confíe.
+razon: 'Perspicacia «Éxodo», apartado «Ruta del éxodo», y «Pihahirot»: allí alcanzó el faraón a Israel. Pasa pocos días después
+  de la salida, en 1513 a.e.c. (estudio 3).'
+fuentes:
+- exodo-14
+- it-exodo
+- it-pihahirot
+- it-baal-zefon
+- it-migdol
+- si-3
+enlaces:
+- titulo: Éxodo 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

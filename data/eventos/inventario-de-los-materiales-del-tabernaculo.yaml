@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: inventario-de-los-materiales-del-tabernaculo
+titulo: Itamar dirige el inventario de los materiales del tabernáculo
+fecha:
+  desde: -1512
+  hasta: -1511
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1513 y 1512 a.e.c. (tiempo narrativo: después de que Moisés bajara del Sinaí con las nuevas tablas y antes
+    de montar el tabernáculo, el 1 de abib de 1512)'
+orden_relato:
+  serie: exodo
+  orden: 38021
+lugares:
+- desierto-de-sinai
+personas:
+- itamar
+- moises
+- bezalel-hijo-de-uri
+- oholiab
+pasajes:
+- Éx 38:21-31
+resumen: Por orden de Moisés, los levitas hacen, bajo Itamar, la cuenta del oro, la plata y el cobre usados. La plata sale
+  del medio siclo de cada uno de los 603.550 hombres del censo.
+razon: Tras bajar Moisés con las nuevas tablas en 1513 a.e.c., año del éxodo (estudio 3), y antes de montar la tienda el 1
+  de abib de 1512. Perspicacia «Itamar».
+fuentes:
+- exodo-38
+- si-3
+- it-itamar
+- it-tabernaculo
+enlaces:
+- titulo: Éxodo 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/38
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

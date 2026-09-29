@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sur
+nombre: Sur
+nombres:
+- nombre: Sur
+- nombre: Desierto de Sur
+  nota: Forma que usa el relato del éxodo, según Perspicacia.
+tipo: region
+lat: 30.493333
+lon: 32.956667
+precision: zona
+coord_fuente: openbible:acdbce0
+coord_url: https://www.openbible.info/geo/ancient/acdbce0/shur
+coord_nota: Punto representativo de OpenBible en el noroeste del Sinaí. Perspicacia recoge varias ideas sobre qué era Sur
+  exactamente.
+resumen: Lugar o región al este de Egipto, en el noroeste de la península del Sinaí. Agar huía por el camino hacia Sur, quizá
+  de vuelta a su tierra, cuando el ángel la encontró.
+razon: 'Perspicacia «Sur, I», párr. 2 y 3, y «Bered», núm. 2; Gé 16:7. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-sur
+- it-bered
+- openbible-geo
+- genesis-16
+- genesis-20
+- genesis-25
+- exodo-15
+enlaces:
+- titulo: 'Perspicacia: «Sur, I»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004101
+  tipo: perspicacia
+- titulo: Génesis 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/20
+  tipo: biblia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

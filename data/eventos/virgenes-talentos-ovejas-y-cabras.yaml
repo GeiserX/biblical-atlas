@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: virgenes-talentos-ovejas-y-cabras
+titulo: Las diez vírgenes, los talentos y las ovejas y las cabras
+fecha:
+  desde: 33
+  hasta: 33
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 11 de nisán de 33 e.c.
+  detalle:
+    mes: nisan
+    dia: 11
+lugares:
+- monte-de-los-olivos
+personas:
+- jesus
+- pedro
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- andres
+pasajes:
+- Mt 25:1-46
+resumen: 'Allí mismo narra tres parábolas: las diez vírgenes, los talentos, y las ovejas separadas de las cabras.'
+razon: La tabla A7-G da el día y el lugar. Mt 25:1-46. Jesús sigue contestando a los cuatro apóstoles que le pidieron la señal
+  en el monte (jy cap. 111 y 112).
+fuentes:
+- tnm-a7-g
+- mateo-25
+- jy-cap-112
+- jy-cap-113
+- jy-cap-114
+- jy-cap-111
+orden_relato:
+  serie: a7
+  orden: 106
+buscar: Las diez vírgenes, los talentos y las ovejas y las cabras
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añaden como presentes Pedro, Santiago, Juan y Andrés: las parábolas continúan la respuesta que Jesús les daba
+    en el monte de los Olivos.'
+  fuente: mateo-25
+consultado: '2026-09-29'
+estado: verificado

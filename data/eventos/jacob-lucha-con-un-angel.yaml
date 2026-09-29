@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-lucha-con-un-angel
+titulo: Jacob lucha con un ángel y recibe el nombre de Israel
+fecha:
+  desde: -1760
+  hasta: -1760
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1761 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 32022
+lugares:
+- penuel
+- rio-jaboc
+personas:
+- jacob
+- lea
+- raquel
+presentes:
+- jacob
+pasajes:
+- Gé 32:22-32
+- Os 12:3, 4
+resumen: De noche Jacob hace cruzar el Jaboc a su familia. A solas, lucha hasta el amanecer con un ángel, que le disloca la
+  cadera, lo bendice y le llama Israel.
+razon: El estudio 3 fecha hacia 1761 a.e.c. la lucha con el ángel y el nombre de Israel; Perspicacia «Jacob», núm. 1, y «Peniel».
+fuentes:
+- si-3
+- it-jacob
+- it-peniel
+- it-jaboq
+- genesis-32
+enlaces:
+- titulo: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

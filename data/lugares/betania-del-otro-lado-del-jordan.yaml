@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betania-del-otro-lado-del-jordan
+nombre: Betania del otro lado del Jordán
+nombres:
+- nombre: Betania del otro lado del Jordán
+- nombre: Betábara
+  nota: Lectura de algunos manuscritos, menos fiables (nota de estudio de Jn 1:28).
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Algo al sur del mar de Galilea, al este del Jordán
+  geometria:
+    tipo: zona
+    lat: 32.531763
+    lon: 35.559259
+    radio_km: 15
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-betania
+  - nota-juan-1
+  razon: Jn 1:29-2:1 la acerca a Caná más que a Jericó, y Jn 10:40-11:17 la pone a unos dos días de la Betania de Lázaro.
+    La nota de estudio lo ve lo más probable (párr. 57).
+  nota: 'Centro: punto del vado de Abarah en OpenBible, unos 19 km al sur del lago; Perspicacia no nombra ese vado. Radio
+    nuestro.'
+  coord_fuente: openbible:a6e060d
+  coord_url: https://www.openbible.info/geo/ancient/a6e060d/bethany-2
+- nombre: Frente a Jericó, donde la tradición pone el bautismo de Jesús
+  geometria:
+    tipo: punto
+    lat: 31.837109
+    lon: 35.550301
+  estado: tradicion
+  fuentes:
+  - it-betania
+  - nota-juan-1
+  razon: Quienes siguen el lugar tradicional del bautismo la ponen al otro lado del Jordán, frente a Jericó (Betania, párr.
+    9).
+  coord_fuente: openbible:a6e060d
+  coord_url: https://www.openbible.info/geo/ancient/a6e060d/bethany-2
+resumen: Lugar al este del Jordán donde bautizaba Juan y donde presentó a Jesús como el Cordero de Dios. No es la Betania
+  de Lázaro, y su sitio no se conoce.
+razon: Perspicacia «Betania» (párr. 9), nota de estudio de Jn 1:28 y Jn 1:28-36. El mapa B10 la marca con signo de duda.
+fuentes:
+- it-betania
+- nota-juan-1
+- tnm-b10
+- juan-1
+- openbible-geo
+- juan-10
+enlaces:
+- titulo: 'Perspicacia: «Betania»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000670
+  tipo: perspicacia
+- titulo: Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

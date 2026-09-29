@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tidal
+nombre: Tidal
+nombres:
+- nombre: Tidal
+perspicacia: '1200004401'
+resumen: Rey de Goyim, aliado de Kedorlaomer contra los cinco reyes rebeldes del mar Salado. Abrán venció a los invasores,
+  pero el texto no dice que Tidal muriera ni que lo capturaran.
+razon: Perspicacia «Tidal»; Gé 14:1, 9.
+fuentes:
+- it-tidal
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Tidal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004401
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: goyim
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: Gé 14:1, 9 lo llama rey de Goyim.
+  estado: verificado
+- tipo: acompana
+  persona: kedorlaomer
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

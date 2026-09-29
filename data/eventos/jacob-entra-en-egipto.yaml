@@ -1,0 +1,104 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-entra-en-egipto
+titulo: Jacob y su familia se instalan en Egipto
+fecha:
+  desde: -1727
+  hasta: -1727
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1728 a.e.c.
+lugares:
+- egipto
+- gosen
+personas:
+- jacob
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- jose-hijo-de-jacob
+- benjamin-hijo-de-jacob
+- dina
+- perez
+- hezron-hijo-de-perez
+- hanok-hijo-de-ruben
+- palu
+- hezron-hijo-de-ruben
+- carmi-hijo-de-ruben
+- jemuel
+- jamin-hijo-de-simeon
+- ohad
+- jakin-hijo-de-simeon
+- zohar-hijo-de-simeon
+- shaul-hijo-de-simeon
+- guerson
+- cohat
+- merari
+- sela-hijo-de-juda
+- zerah-hijo-de-juda
+- hamul
+- tola-hijo-de-isacar
+- puva
+- yob
+- simron
+- sered
+- elon-hijo-de-zabulon
+- jahleel
+- zifion
+- hagui
+- suni
+- ezbon-hijo-de-gad
+- eri
+- arodi
+- areli
+- imna-hijo-de-aser
+- isva
+- isvi-hijo-de-aser
+- berias-hijo-de-aser
+- serah
+- heber-hijo-de-berias
+- malkiel
+- bela-hijo-de-benjamin
+- beker-hijo-de-benjamin
+- asbel
+- guera-hijo-de-bela
+- naaman-hijo-de-bela
+- ehi
+- ros
+- mupim
+- hupim
+- ard
+- husim-hijo-de-dan
+- jahzeel
+- guni-hijo-de-neftali
+- jezer
+- silem
+pasajes:
+- Gé 46:1-7
+- Gé 47:9
+- Gé 46:28
+- Gé 46:8-27
+- Gé 47:11, 12
+- Sl 105:23
+- Éx 1:1-5
+- Dt 10:22
+resumen: Jacob, con 130 años, baja a Egipto con toda su casa, donde José ya gobierna. Israel vivirá allí 215 años, hasta
+  el éxodo.
+razon: Perspicacia «Cronología» fecha la llegada en 1728 a.e.c., 215 años después del pacto y 215 antes del éxodo; el cuadro
+  del estudio 3 coincide.
+fuentes:
+- it-cronologia
+- si-3
+- genesis-46
+- salmos-105
+buscar: Jacob entra en Egipto
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiezer-hijo-de-amisadai
+nombre: Ahiézer
+nombres:
+- nombre: Ahiézer
+perspicacia: 1200000151#1
+desambiguacion: Ahiézer hijo de Amisadái, jefe de Dan en el desierto; no el benjaminita que se unió a David en Ziqlag.
+resumen: Danita, hijo de Amisadái. Jefe de su tribu, colaboró con Moisés en el censo y dirigía la división de tres tribus
+  que acampaba al norte y cerraba la marcha.
+razon: Perspicacia «Ahiézer», núm. 1; Nú 1:12, 16; 2:25, 31.
+fuentes:
+- it-ahiezer
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Ahiézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000151
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: amisadai
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-ahiezer
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  razon: Nú 1:12 y 2:25 lo llaman hijo de Amisadái.
+  estado: verificado
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 12, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+- tipo: acompana
+  persona: aaron
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - numeros-1
+  razon: 'Nú 1:4, 12, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

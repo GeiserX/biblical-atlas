@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: siquem-hijo-de-hamor
+nombre: Siquem
+nombres:
+- nombre: Siquem
+perspicacia: 1200003978#1
+desambiguacion: Siquem hijo de Hamor; no la ciudad de Siquem ni los dos Siquem de la tribu de Manasés.
+resumen: Hijo del heveo Hamor, el más respetado de la casa de su padre. Violó a Dina, hija de Jacob, y luego quiso casarse
+  con ella. Simeón y Leví lo mataron.
+razon: Perspicacia «Siquem», núm. 1; Gé 33:19 y 34:2-26.
+fuentes:
+- it-siquem
+- genesis-33
+- genesis-34
+enlaces:
+- titulo: 'Perspicacia: «Siquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
+  tipo: perspicacia
+- titulo: Génesis 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/33
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: hamor
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-siquem
+  - genesis-33
+  - genesis-34
+  razon: 'Gé 33:19: Hamor era padre de Siquem.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: siquem
+  deducido: false
+  fuentes:
+  - it-siquem
+  - genesis-34
+  razon: 'Gé 34:19, 20, 26: vivía en la casa de su padre, en la ciudad.'
+  estado: verificado
+- tipo: murio_en
+  lugar: siquem
+  deducido: false
+  fuentes:
+  - it-siquem
+  - genesis-34
+  razon: 'Gé 34:26: Simeón y Leví lo mataron en la ciudad.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- siquem-hijo-de-galaad

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: fanuel
+nombre: Fanuel
+nombres:
+- nombre: Fanuel
+perspicacia: '1200003457'
+resumen: Israelita de la tribu de Aser, padre de la profetisa Ana, que vio al niño Jesús en el templo. Su nombre es la forma
+  griega de Penuel.
+razon: Perspicacia «Fanuel» y Lu 2:36.
+fuentes:
+- it-fanuel
+- lucas-2
+enlaces:
+- titulo: 'Perspicacia: «Fanuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003457
+  tipo: perspicacia
+- titulo: Lucas 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/2
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aser-hijo-de-jacob
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - it-fanuel
+  - lucas-2
+  razon: Perspicacia «Fanuel» lo da como descendiente de Aser; Lu 2:36 dice que su hija era de esa tribu.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

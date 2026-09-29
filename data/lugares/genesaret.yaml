@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: genesaret
+nombre: Genesaret
+nombres:
+- nombre: Genesaret
+tipo: llanura
+lat: 32.860556
+lon: 35.507222
+precision: zona
+coord_fuente: openbible:a7de69e
+coord_url: https://www.openbible.info/geo/ancient/a7de69e/gennesaret
+coord_nota: Punto representativo de la llanura.
+resumen: Llanura pequeña y casi triangular, de unos 5 por 2,5 km, junto a la costa noroeste del lago; era fértil y bien regada.
+  Allí Jesús curó a muchos tras caminar sobre el agua.
+razon: Perspicacia «Genesaret» (núm. 1) describe la llanura; el núm. 2 recuerda que «lago de Genesaret» es otro nombre del
+  mar de Galilea, que tiene su propio id.
+fuentes:
+- it-genesaret
+- mateo-14
+- openbible-geo
+- marcos-6
+enlaces:
+- titulo: 'Perspicacia: «Genesaret»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001651
+  tipo: perspicacia
+- titulo: Mateo 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

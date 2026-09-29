@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: cambises-ii
+nombre: Cambises II, rey de Persia
+tipo: rey
+fecha:
+  desde: -529
+  hasta: -521
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 530-522 a.e.c.
+lugares:
+- persia
+persona: cambises-ii
+resumen: Hijo de Ciro, corregente desde nisán de 530 y único rey después; conquistó Egipto y murió al volver en 522.
+razon: Perspicacia «Persia, persas» y «Darío», núm. 1; «Asuero», núm. 2, da 529-522 contando desde su primer año de reinado.
+fuentes:
+- it-persia
+- it-dario
+- it-asuero
+buscar: Cambises
+consultado: '2026-09-28'
+estado: verificado

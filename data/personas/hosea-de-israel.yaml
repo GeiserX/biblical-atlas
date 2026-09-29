@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hosea-de-israel
+nombre: Hosea
+nombres:
+- nombre: Hosea
+desambiguacion: Último rey de Israel; no es el profeta Oseas, cuyo nombre hebreo es el mismo.
+no_confundir_con:
+- oseas
+fecha:
+  desde: -757
+  hasta: -739
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 758-740 a.e.c.
+resumen: Hijo de Elá y último rey de Israel. Mató a Pécah; fue vasallo de Asiria, pero buscó ayuda en So de Egipto. Salmanasar
+  V lo encarceló y sitió Samaria tres años.
+razon: Perspicacia «Hosea», núm. 4, párr. 4-6; 2Re 15:30 y 17:1-6.
+fuentes:
+- it-hosea
+- 2-reyes-15
+- 2-reyes-17
+- tnm-a6-b
+enlaces:
+- titulo: 'Perspicacia: «Hosea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002090
+  tipo: perspicacia
+- titulo: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  tipo: biblia
+relaciones:
+- tipo: sucede_a
+  persona: pecah
+  deducido: false
+  fuentes:
+  - it-hosea
+  - 2-reyes-15
+  razon: Mató a Pécah y reinó en su lugar (2Re 15:30).
+  estado: verificado
+perspicacia: 1200002090#4
+consultado: '2026-09-29'
+estado: verificado

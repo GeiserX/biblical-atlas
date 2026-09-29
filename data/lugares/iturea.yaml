@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: iturea
+nombre: Iturea
+nombres:
+- nombre: Iturea
+tipo: region
+lat: 33.4
+lon: 35.85
+precision: zona
+coord_fuente: openbible:aa9e265
+coord_url: https://www.openbible.info/geo/ancient/aa9e265/ituraea
+coord_nota: Punto representativo de OpenBible, junto al monte Hermón. Los límites de Iturea cambiaron con el tiempo.
+resumen: Territorio pequeño al noreste del mar de Galilea, de límites cambiantes, cerca del Líbano y el Antilíbano. En 29
+  e.c. era parte de la tetrarquía de Filipo.
+razon: 'Perspicacia «Iturea» y la nota de estudio de Lu 3:1. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-iturea
+- openbible-geo
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Iturea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002246
+  tipo: perspicacia
+- titulo: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

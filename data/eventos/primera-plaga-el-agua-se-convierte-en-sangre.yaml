@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primera-plaga-el-agua-se-convierte-en-sangre
+titulo: 'Primera plaga: el agua de Egipto se convierte en sangre'
+fecha:
+  desde: -1513
+  hasta: -1512
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: tras la vuelta de Moisés a Egipto y antes de la Pascua)'
+orden_relato:
+  serie: exodo
+  orden: 7014
+lugares:
+- rio-nilo
+- egipto
+personas:
+- moises
+- aaron
+pasajes:
+- Éx 7:14-25
+- Sl 78:44
+- Sl 105:29
+resumen: Una mañana, junto al Nilo, Aarón golpea el río con la vara ante el faraón. Toda el agua de Egipto se vuelve sangre,
+  mueren los peces y los egipcios cavan pozos. Los magos lo imitan y el faraón no cede.
+razon: 'El estudio 3 pone la zarza ardiente hacia 1514 a.e.c. y la salida de Egipto, con la Pascua, en 1513. Perspicacia «Aarón»,
+  párr. 4: con este golpe empezaron las diez plagas. Según Éx 7:25, pasaron siete días.'
+fuentes:
+- exodo-7
+- si-3
+- it-aaron
+- it-dioses-y-diosas
+enlaces:
+- titulo: Éxodo 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-jaboc
+nombre: Río Jaboc
+nombres:
+- nombre: Río Jaboc
+- nombre: Jaboq
+  nota: Grafía de Perspicacia.
+tipo: rio
+lat: 32.11525
+lon: 35.543056
+precision: zona
+coord_fuente: openbible:aca7bd9
+coord_url: https://www.openbible.info/geo/ancient/aca7bd9/jabbok
+coord_nota: Punto representativo de OpenBible para el curso del río.
+resumen: Valle torrencial al este del Jordán, hoy Wadi Zarqa, que desemboca en el Jordán unos 39 km al norte del mar Muerto.
+  Jacob lo vadeó con su familia al volver de Harán.
+razon: 'Perspicacia «Jaboq, Valle torrencial de», párr. 1 y 2; Gé 32:22, 23. OpenBible: solo el punto.'
+fuentes:
+- it-jaboq
+- openbible-geo
+- genesis-32
+- numeros-21
+- deuteronomio-2
+- deuteronomio-3
+enlaces:
+- titulo: 'Perspicacia: «Jaboq, Valle torrencial de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002268
+  tipo: perspicacia
+- titulo: Génesis 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

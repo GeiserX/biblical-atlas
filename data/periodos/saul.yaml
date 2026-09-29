@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: saul
+nombre: Reinado de Saúl sobre todo Israel
+tipo: rey
+persona: saul
+fecha:
+  desde: -1116
+  hasta: -1076
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1117-1077 a.e.c.
+lugares:
+- guibea-de-benjamin
+resumen: Primer rey de Israel, con su centro en Guibeá. Reinó cuarenta años.
+razon: El estudio 3 pone su unción en 1117 y el comienzo de David en Hebrón en 1077; Hch 13:21 le da cuarenta años de reinado.
+fuentes:
+- si-3
+- 1-samuel-10
+- it-saul
+buscar: Saúl rey
+consultado: '2026-09-28'
+estado: verificado

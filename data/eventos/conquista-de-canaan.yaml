@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: conquista-de-canaan
+titulo: Termina la conquista general de Canaán
+fecha:
+  desde: -1466
+  hasta: -1466
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1467 a.e.c.
+lugares:
+- canaan
+personas:
+- josue-hijo-de-nun
+- caleb-hijo-de-jefune
+pasajes:
+- Jos 11:23
+- Jos 14:7-10
+- Sl 78:55
+- Sl 105:44
+- Sl 135:10-12
+- Hch 13:19, 20
+resumen: Seis años después de cruzar el Jordán, Josué ha vencido a los reyes de la tierra y empieza a repartirla entre las
+  tribus.
+razon: El cuadro del estudio 3 fecha en 1467 a.e.c. el final de la conquista general; Perspicacia «Cronología» cierra ahí
+  los unos 450 años de Hechos 13:20.
+fuentes:
+- si-3
+- it-cronologia
+- josue-11
+- salmos-105
+buscar: conquista de Canaán Josué
+consultado: '2026-09-29'
+estado: verificado

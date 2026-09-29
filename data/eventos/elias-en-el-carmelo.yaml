@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-en-el-carmelo
+titulo: Elías frente a los profetas de Baal en el Carmelo
+fecha:
+  desde: -939
+  hasta: -919
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: c. 940-920 a.e.c. (reinado de Acab)
+lugares:
+- monte-carmelo
+personas:
+- elias-profeta
+- acab
+pasajes:
+- 1Re 18:17-40
+resumen: Tras años de sequía, Elías desafía en el Carmelo a los profetas de Baal. Jehová responde con fuego y el pueblo
+  reconoce que él es el Dios verdadero.
+razon: 'Perspicacia «Elías», núm. 1, párr. 4, y «Acab», núm. 1, párr. 4. Sin año propio: la fecha es el reinado de Acab según
+  A6-A.'
+fuentes:
+- it-elias
+- it-acab
+- tnm-a6-a
+- 1-reyes-18
+enlaces:
+- titulo: 'Perspicacia: «Elías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001307
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Acab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000138
+  tipo: perspicacia
+- titulo: 1 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
+  tipo: biblia
+buscar: Elías monte Carmelo profetas de Baal
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-casa-de-cloe-informa-a-pablo
+titulo: Los de la casa de Cloe avisan a Pablo de las divisiones de Corinto
+fecha:
+  desde: 54
+  hasta: 55
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 54-55 e.c. (tiempo narrativo: probablemente en el último año de Pablo en Éfeso)'
+orden_relato:
+  serie: 1-corintios
+  orden: 1011
+  tras: hijos-de-esceva
+lugares:
+- efeso
+- corinto
+personas:
+- pablo
+- cloe
+presentes:
+- pablo
+pasajes:
+- 1Co 1:10-12
+resumen: 'Pablo está en Éfeso cuando algunos de la casa de Cloe le cuentan que la congregación de Corinto se parte en bandos:
+  unos se dicen de Pablo, otros de Apolos, de Cefas o de Cristo.'
+razon: 'Perspicacia «Corintios, Cartas a los» pone el aviso probablemente en el último año de Pablo en Éfeso, antes de la
+  carta de c. 55. Estudio 3, párr. 26: llegó en el invierno de 52-53 y salió en 55.'
+fuentes:
+- 1-corintios-1
+- it-corintios
+- it-cloe
+- si-3
+- tnm-tabla
+enlaces:
+- titulo: 1 Corintios 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

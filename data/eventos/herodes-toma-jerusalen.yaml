@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: herodes-toma-jerusalen
+titulo: Herodes toma Jerusalén
+fecha:
+  desde: -36
+  hasta: -36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 37 a.e.c.
+lugares:
+- jerusalen
+personas:
+- herodes-el-grande
+pasajes: []
+resumen: Herodes, nombrado rey por Roma, toma Jerusalén por asalto. Reinará hasta poco después del nacimiento de Jesús.
+razon: El cuadro del estudio 3 fecha hacia 37 a.e.c. la toma de Jerusalén; Perspicacia «Jerusalén» pone su muerte, probablemente,
+  en 1 a.e.c.
+fuentes:
+- si-3
+- it-jerusalen
+buscar: Herodes el Grande Jerusalén
+consultado: '2026-09-28'
+estado: verificado

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: timna-jeque-de-edom
+nombre: Timná
+nombres:
+- nombre: Timná
+perspicacia: 1200004410#3
+desambiguacion: El jeque Timná; no la concubina de Elifaz ni la hija de Seír.
+no_confundir_con:
+- timna-concubina-de-elifaz
+- timna-hija-de-seir
+resumen: Primero de los once jeques que descienden de Esaú, ordenados por regiones. Perspicacia recoge que el nombre quizá
+  designe también un lugar o una tribu.
+razon: Perspicacia «Timná», núm. 3; Gé 36:40.
+fuentes:
+- it-timna
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Timná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004410
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: esau
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - it-timna
+  - genesis-36
+  razon: 'Gé 36:40, 43: jeque de los que descendieron de Esaú.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: edom
+  deducido: false
+  fuentes:
+  - it-timna
+  - genesis-36
+  razon: 'Gé 36:43: jeques de Edom, según las regiones que ocuparon.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

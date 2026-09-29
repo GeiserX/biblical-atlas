@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gaza
+nombre: Gaza
+nombres:
+- nombre: Gaza
+tipo: ciudad
+lat: 31.504
+lon: 34.4644
+precision: punto
+coord_fuente: openbible:aa8edd2
+coord_url: https://www.openbible.info/geo/ancient/aa8edd2/gaza
+coord_nota: OpenBible sitúa la Gaza antigua en Tell Harube; Perspicacia dice que por lo general se identifica con
+  la Gaza moderna.
+resumen: Ciudad filistea en la ruta de Egipto a Palestina, a unos 80 km al oeste-suroeste de Jerusalén. Felipe encontró
+  al funcionario etíope en el camino por el desierto que bajaba de Jerusalén a Gaza.
+razon: 'Perspicacia «Gaza», apartado 1 (párr. 2 y 3); Hch 8:26. La coordenada es de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-gaza
+- hechos-8
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Gaza»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001622
+  tipo: perspicacia
+- titulo: Hechos 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/8
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

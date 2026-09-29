@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: more
+nombre: Moré
+nombres:
+- nombre: Moré
+- nombre: Árboles grandes de Moré
+  nota: Así lo nombra Gé 12:6.
+tipo: region
+lat: 32.213611
+lon: 35.281944
+precision: zona
+coord_fuente: openbible:a38ad9f
+coord_url: https://www.openbible.info/geo/ancient/a38ad9f/moreh-1
+coord_nota: 'OpenBible le da el mismo punto que a Siquem: la arboleda estaba en sus cercanías.'
+resumen: Arboleda conocida junto a Siquem en tiempos de Abrán. Allí se le apareció Jehová cuando llegó a Canaán y le prometió
+  la tierra, y Abrán levantó un altar.
+razon: 'Perspicacia «Moré», núm. 1; Gé 12:6, 7; Dt 11:30, que la sitúa junto a los montes Guerizim y Ebal. Moré quizá fuera
+  el primer dueño del terreno. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-more
+- openbible-geo
+- genesis-12
+- deuteronomio-11
+enlaces:
+- titulo: 'Perspicacia: «Moré»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003112
+  tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: Se añade Dt 11:30, que Perspicacia «Moré», núm. 1, cita para la misma arboleda siglos después de Abrán.
+  fuente: deuteronomio-11
+consultado: '2026-09-29'
+estado: verificado

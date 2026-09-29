@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eutico
+nombre: Eutico
+nombres:
+- nombre: Eutico
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 56 e.c.
+resumen: Joven de Troas que se durmió en una ventana mientras Pablo hablaba, cayó desde el tercer piso y murió.
+  Pablo lo devolvió a la vida.
+razon: Perspicacia «Eutico»; Hch 20:7-12. Pablo sale de Filipos tras la Pascua de 56 y para en Troas (estudio 3, párr. 26).
+fuentes:
+- it-eutico
+- hch-20
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Eutico»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001448
+  tipo: perspicacia
+- titulo: Hechos 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
+  tipo: biblia
+perspicacia: '1200001448'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: troas
+  deducido: false
+  fuentes:
+  - it-eutico
+  - hch-20
+  razon: Perspicacia lo llama joven de Troas.
+  estado: verificado

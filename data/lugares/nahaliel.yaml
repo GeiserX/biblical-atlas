@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nahaliel
+nombre: Nahaliel
+nombres:
+- nombre: Nahaliel
+  nota: Significa torrente de Dios.
+tipo: valle
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Wadi Zarqa Maʽin, unos 19 km al norte del Arnón
+  geometria:
+    tipo: punto
+    lat: 31.618056
+    lon: 35.567222
+  estado: alternativa
+  fuentes:
+  - it-nahaliel
+  - openbible-geo
+  razon: Uno de los dos uadis que Perspicacia vincula con Nahaliel. Punto de la primera identificación de OpenBible.
+  coord_fuente: openbible:a8dafd6
+  coord_url: https://www.openbible.info/geo/ancient/a8dafd6/nahaliel
+- nombre: Wadi al-Wala, afluente del Arnón
+  geometria:
+    tipo: punto
+    lat: 31.5559
+    lon: 35.75724
+  estado: alternativa
+  fuentes:
+  - it-nahaliel
+  - openbible-geo
+  razon: El otro uadi que propone Perspicacia. Punto de la segunda identificación de OpenBible.
+  coord_fuente: openbible:a8dafd6
+  coord_url: https://www.openbible.info/geo/ancient/a8dafd6/nahaliel
+resumen: Campamento de Israel entre Mataná y Bamot, poco antes de la batalla contra Sehón. Estaba en un valle torrencial cercano
+  al Arnón.
+razon: 'Perspicacia «Nahaliel»; Nú 21:19. Perspicacia duda entre dos uadis: dos candidatos, sin punto. OpenBible: solo los puntos.'
+fuentes:
+- it-nahaliel
+- openbible-geo
+- numeros-21
+enlaces:
+- titulo: 'Perspicacia: «Nahaliel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003162
+  tipo: perspicacia
+- titulo: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

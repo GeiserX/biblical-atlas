@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sus-hermanos-lo-animan-a-ir-a-judea
+titulo: Sus hermanos lo animan a darse a conocer en Judea
+fecha:
+  desde: 32
+  hasta: 32
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: septiembre u octubre de 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 62
+lugares:
+- galilea
+personas:
+- jesus
+- santiago-hermano-de-jesus
+- simon-hijo-de-jose
+- jose-hijo-de-jose
+- judas-hermano-de-jesus
+pasajes:
+- Jn 7:2-9
+resumen: Cerca ya la Fiesta de los Tabernáculos, sus medio hermanos, que no creen en él, le insisten en que se muestre en
+  Judea. Jesús responde que aún no es su momento y se queda en Galilea.
+razon: 'A7-E pone Jn 7:2-10 en Galilea antes de la fiesta de 32; jy, cap. 65, da el mes y nombra a los cuatro. Orden 62: va
+  antes de dejarlo-todo-por-el-reino, que es ya el viaje.'
+fuentes:
+- tnm-a7-e
+- juan-7
+- jy-cap-65
+enlaces:
+- titulo: Juan 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

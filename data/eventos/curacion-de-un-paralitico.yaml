@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: curacion-de-un-paralitico
+titulo: Jesús perdona y cura a un paralítico
+fecha:
+  desde: 30
+  hasta: 30
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 30 e.c.
+orden_relato:
+  serie: a7
+  orden: 26
+lugares:
+- capernaum
+personas:
+- jesus
+pasajes:
+- Mt 9:1-8
+- Mr 2:1-12
+- Lu 5:17-26
+resumen: De nuevo en Capernaúm, cuatro hombres bajan a un paralítico por un hueco del techo. Jesús le perdona los pecados
+  y, para demostrar esa autoridad, lo manda levantarse y andar.
+razon: 'A7-C, fila 7: Capernaúm. Perspicacia «Capernaum» (párr. 7) la llama entonces «su propia ciudad» (Mt 9:1).'
+fuentes:
+- tnm-a7-c
+- mateo-9
+- marcos-2
+- lucas-5
+- it-capernaum
+- jy-cap-26
+consultado: '2026-09-28'
+estado: verificado

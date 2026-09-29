@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josias
+nombre: Josías
+nombres:
+- nombre: Josías
+fecha:
+  desde: -658
+  hasta: -627
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 659-628 a.e.c.
+resumen: Hijo de Amón, rey a los ocho años. Limpió Judá y parte del antiguo Israel de idolatría, reparó el templo y celebró
+  una Pascua sin igual. Murió en Meguidó frente al faraón Nekó.
+razon: Perspicacia «Josías», núm. 1, párr. 3-5, 7 y 9; 2Re 22-23 y 2Cr 34-35.
+fuentes:
+- it-josias
+- 2-reyes-22
+- 2-reyes-23
+- tnm-a6-b
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Josías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
+  tipo: perspicacia
+- titulo: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: amon-de-juda
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-josias
+  - 2-reyes-22
+  - mateo-1
+  razon: Hijo de Amón y de Jedidá (2Re 21:26; 22:1).
+  estado: verificado
+- tipo: sucede_a
+  persona: amon-de-juda
+  deducido: false
+  fuentes:
+  - it-josias
+  - 2-reyes-21
+  razon: El pueblo lo hizo rey tras el asesinato de su padre (2Re 21:24).
+  estado: verificado
+historial:
+- fecha: '2026-09-28'
+  cambio: Perspicacia «Josías» cerraba su reinado en 629 a.e.c.; A6-B, más reciente, empieza el de Jehoacaz en 628, como el
+    estudio 3.
+  fuente: tnm-a6-b
+perspicacia: 1200002525#1
+consultado: '2026-09-29'
+estado: verificado

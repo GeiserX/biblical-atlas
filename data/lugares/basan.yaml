@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: basan
+nombre: Basán
+nombres:
+- nombre: Basán
+- nombre: Montaña de Basán
+  nota: Así llama Sl 68:15 a su zona de montes; Perspicacia cree que puede ser el monte Haurán.
+tipo: region
+lat: 32.781111
+lon: 35.934722
+precision: zona
+coord_fuente: openbible:aa7a40a
+coord_url: https://www.openbible.info/geo/ancient/aa7a40a/bashan
+coord_nota: Punto representativo de OpenBible para toda la región.
+resumen: Meseta fértil al este del mar de Galilea, entre el monte Hermón y Galaad, conocida por su ganado. Israel la tomó
+  al vencer al rey Og y se la dio a la tribu de Manasés.
+razon: 'Perspicacia «Basán», párr. 1, 2 y 5. Sl 22:12 usa sus toros como imagen de fuerza. OpenBible: solo el punto.'
+fuentes:
+- it-basan
+- openbible-geo
+- salmos-22
+- salmos-68
+- salmos-135
+- salmos-136
+- numeros-21
+- numeros-32
+- deuteronomio-1
+- deuteronomio-3
+- deuteronomio-4
+enlaces:
+- titulo: 'Perspicacia: «Basán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000574
+  tipo: perspicacia
+- titulo: Salmos 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/22
+  tipo: biblia
+- titulo: Salmo 68 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/68
+  tipo: biblia
+- titulo: Salmo 135 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/135
+  tipo: biblia
+- titulo: Salmo 136 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

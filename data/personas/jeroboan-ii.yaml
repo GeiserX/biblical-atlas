@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroboan-ii
+nombre: Jeroboán II
+nombres:
+- nombre: Jeroboán II
+desambiguacion: Decimocuarto rey de Israel, de la dinastía de Jehú; no es Jeroboán hijo de Nebat.
+no_confundir_con:
+- jeroboan-i
+fecha:
+  desde: -843
+  hasta: -802
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 844-803 a.e.c.
+resumen: Hijo de Jehoás. Devolvió a Israel el límite desde Hamat hasta el mar del Arabá, como había dicho Jonás. Hubo prosperidad,
+  pero Amós y Oseas denunciaron la corrupción.
+razon: Perspicacia «Jeroboán», núm. 2, párr. 11-13; 2Re 14:23-29. Comienzo en A6-A; Perspicacia «Zacarías», núm. 14, y A6-B
+  ponen su muerte en 803.
+fuentes:
+- it-jeroboan
+- 2-reyes-14
+- tnm-a6-a
+- tnm-a6-b
+- it-zacarias
+enlaces:
+- titulo: 'Perspicacia: «Jeroboán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
+  tipo: perspicacia
+- titulo: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jehoas-de-israel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jeroboan
+  - 2-reyes-14
+  razon: Hijo y sucesor de Jehoás (2Re 14:16).
+  estado: verificado
+- tipo: sucede_a
+  persona: jehoas-de-israel
+  deducido: false
+  fuentes:
+  - it-jeroboan
+  - 2-reyes-14
+  razon: Reinó al morir su padre (2Re 14:16).
+  estado: verificado
+perspicacia: 1200002431#2
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: obra-del-templo-prohibida-522
+titulo: Se prohíbe la obra del templo
+fecha:
+  desde: -521
+  hasta: -521
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 522 a.e.c.
+lugares:
+- jerusalen
+personas:
+- zorobabel
+- josue-sumo-sacerdote
+pasajes:
+- Esd 4:4-24
+resumen: Los enemigos de Judá escribieron al rey persa y lo engañaron diciendo que los judíos reconstruían la ciudad y el
+  muro. El rey, el Artajerjes de Esd 4:7, mandó detener la obra.
+razon: 'Estudio 3, tabla de sucesos (522); Perspicacia «Artajerjes», núm. 1: ese Artajerjes sería Bardiya o Gaumata, que
+  reinó siete meses en 522.'
+fuentes:
+- si-3
+- it-artajerjes
+- esdras-4
+enlaces:
+- titulo: 'Perspicacia: «Artajerjes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000389
+  tipo: perspicacia
+- titulo: Esdras 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/4
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

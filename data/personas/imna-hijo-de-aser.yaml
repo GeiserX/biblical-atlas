@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imna-hijo-de-aser
+nombre: Imná
+nombres:
+- nombre: Imná
+- nombre: Imnah
+  nota: Otra forma que da la nota de Gé 46:17 y que usa Perspicacia.
+perspicacia: 1200002157#1
+desambiguacion: Imná hijo de Aser; no el aserita hijo de Hélem ni el levita padre de Qoré.
+resumen: Primer hijo de Aser y antepasado de los imnitas.
+razon: Perspicacia «Imnah», núm. 1; Gé 46:17 y su nota.
+fuentes:
+- it-imnah
+- genesis-46
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Imnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002157
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aser-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-imnah
+  - numeros-26
+  razon: 'Gé 46:17: aparece entre los hijos de Aser.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

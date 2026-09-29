@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-isaac
+titulo: Nace Isaac
+fecha:
+  desde: -1917
+  hasta: -1917
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1918 a.e.c.
+lugares: []
+personas:
+- isaac
+- abrahan
+- sara
+pasajes:
+- Gé 21:1-7
+- Hch 13:17-20
+- Hch 7:8
+resumen: Sara da a luz a Isaac, el heredero prometido, cuando Abrahán tiene cien años. Con él empiezan los «unos 450 años»
+  de Hechos 13.
+razon: El cuadro del estudio 3 da 1918 a.e.c.; Perspicacia «Éxodo» y «Cronología» cuentan desde este nacimiento los unos
+  450 años de Hechos 13:17-20.
+fuentes:
+- si-3
+- it-exodo
+- genesis-21
+buscar: nacimiento de Isaac
+consultado: '2026-09-29'
+estado: verificado

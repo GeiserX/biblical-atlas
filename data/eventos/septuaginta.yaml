@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: septuaginta
+titulo: Se empieza la Septuaginta
+fecha:
+  desde: -279
+  hasta: -279
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 280 a.e.c.
+lugares: []
+personas: []
+pasajes: []
+resumen: Empiezan a verterse al griego las Escrituras Hebreas. Gracias a ella y al griego común, más tarde el mensaje
+  cristiano llegará a muchos pueblos.
+razon: El cuadro del estudio 3 pone hacia 280 a.e.c. el comienzo de la Septuaginta; «Veamos “la buena tierra”» destaca su
+  papel junto al griego koiné.
+fuentes:
+- si-3
+- lbt-grecia-y-roma
+buscar: Septuaginta traducción griega
+consultado: '2026-09-28'
+estado: verificado

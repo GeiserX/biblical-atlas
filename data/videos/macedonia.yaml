@@ -1,93 +1,93 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: macedonia
-generated_on: "2026-09-28"
+lugar: macedonia
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwbgg_201603_2_VIDEO"
-    title: "Graduación de la clase 140 de la Escuela de Galaad: Parte 2. Experiencias y entrevistas"
+    titulo: "Graduación de la clase 140 de la Escuela de Galaad: Parte 2. Experiencias y entrevistas"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbgg_201603_2_VIDEO&appLanguage=S"
-    published: "2016-08-09"
-    hits: 10
-    terms:
+    publicado: "2016-08-09"
+    menciones: 10
+    terminos:
       "Macedonia": 9
       "macedonios": 1
   - docid: "pub-jwb-124_1_VIDEO"
-    title: "JW Broadcasting: Abril de 2025"
+    titulo: "JW Broadcasting: Abril de 2025"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_1_VIDEO&appLanguage=S"
-    published: "2025-04-07"
-    hits: 8
-    terms:
+    publicado: "2025-04-07"
+    menciones: 8
+    terminos:
       "Macedonia": 8
   - docid: "pub-jwb-124_3_VIDEO"
-    title: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
+    titulo: "David Schafer: Amemos la verdad y obedezcamos a Jehová (1 Tes. 2:17, 18)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-124_3_VIDEO&appLanguage=S"
-    published: "2025-04-21"
-    hits: 8
-    terms:
+    publicado: "2025-04-21"
+    menciones: 8
+    terminos:
       "Macedonia": 8
   - docid: "pub-jwb-094_12_VIDEO"
-    title: "Kenneth Flodin: Hagamos el bien y compartamos lo que tenemos (Heb. 13:16)"
+    titulo: "Kenneth Flodin: Hagamos el bien y compartamos lo que tenemos (Heb. 13:16)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-094_12_VIDEO&appLanguage=S"
-    published: "2022-11-24"
-    hits: 4
-    terms:
+    publicado: "2022-11-24"
+    menciones: 4
+    terminos:
       "Macedonia": 3
       "macedonios": 1
   - docid: "pub-jwb-113_2_VIDEO"
-    title: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
+    titulo: "Graduación de la clase 155 de la Escuela de Galaad: De primera mano"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-113_2_VIDEO&appLanguage=S"
-    published: "2024-06-17"
-    hits: 4
-    terms:
+    publicado: "2024-06-17"
+    menciones: 4
+    terminos:
       "Macedonia": 4
   - docid: "pub-co-r20_129_VIDEO"
-    title: "William Malenfant: Discurso de bautismo: El bautismo le hará más feliz, ¿por qué?"
+    titulo: "William Malenfant: Discurso de bautismo: El bautismo le hará más feliz, ¿por qué?"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_129_VIDEO&appLanguage=S"
-    published: "2020-12-01"
-    hits: 3
-    terms:
+    publicado: "2020-12-01"
+    menciones: 3
+    terminos:
       "Macedonia": 3
   - docid: "pub-co-r20_6_VIDEO"
-    title: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    titulo: "Sábado mañana (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_6_VIDEO&appLanguage=S"
-    published: "2020-07-23"
-    hits: 3
-    terms:
+    publicado: "2020-07-23"
+    menciones: 3
+    terminos:
       "Macedonia": 3
   - docid: "pub-co-r20_9_VIDEO"
-    title: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+    titulo: "Domingo mañana (parte 1) | Asamblea regional del 2020 “¡Alégrense siempre!”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_9_VIDEO&appLanguage=S"
-    published: "2020-08-13"
-    hits: 3
-    terms:
+    publicado: "2020-08-13"
+    menciones: 3
+    terminos:
       "Macedonia": 3
   - docid: "pub-co-r21_135_VIDEO"
-    title: "Gajus Glockentin: Entre con fe por la puerta para trabajar más. Aparte algo para la obra del Reino"
+    titulo: "Gajus Glockentin: Entre con fe por la puerta para trabajar más. Aparte algo para la obra del Reino"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_135_VIDEO&appLanguage=S"
-    published: "2021-09-13"
-    hits: 3
-    terms:
+    publicado: "2021-09-13"
+    menciones: 3
+    terminos:
       "Macedonia": 2
       "macedonios": 1
   - docid: "pub-co-r21_7_VIDEO"
-    title: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+    titulo: "Sábado tarde (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r21_7_VIDEO&appLanguage=S"
-    published: "2021-07-26"
-    hits: 3
-    terms:
+    publicado: "2021-07-26"
+    menciones: 3
+    terminos:
       "Macedonia": 2
       "macedonios": 1
   - docid: "pub-co-r20_139_VIDEO"
-    title: "Samuel Herd: Podemos ser felices a pesar de la angustia"
+    titulo: "Samuel Herd: Podemos ser felices a pesar de la angustia"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r20_139_VIDEO&appLanguage=S"
-    published: "2020-12-01"
-    hits: 2
-    terms:
+    publicado: "2020-12-01"
+    menciones: 2
+    terminos:
       "Macedonia": 2
   - docid: "pub-jwb-095_1_VIDEO"
-    title: "JW Broadcasting: Abril de 2023"
+    titulo: "JW Broadcasting: Abril de 2023"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_1_VIDEO&appLanguage=S"
-    published: "2023-04-03"
-    hits: 2
-    terms:
+    publicado: "2023-04-03"
+    menciones: 2
+    terminos:
       "Macedonia": 2

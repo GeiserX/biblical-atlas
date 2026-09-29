@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primeros-cuarenta-dias-de-moises-en-el-sinai
+titulo: Moisés sube al Sinaí y pasa allí 40 días
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 24012
+lugares:
+- monte-sinai
+personas:
+- moises
+- josue-hijo-de-nun
+- aaron
+- hur-companero-de-moises
+presentes:
+- moises
+- josue-hijo-de-nun
+pasajes:
+- Éx 24:12-18
+- Dt 9:9
+resumen: Moisés sube con su ayudante Josué a recibir las tablas de piedra y deja a Aarón y a Hur al frente. La nube cubre
+  el monte seis días; al séptimo Dios lo llama, y allí se queda 40 días.
+razon: Perspicacia «Ley» fecha en 1513 a.e.c. la Ley del Sinaí; «Diez Palabras» sitúa aquí las tablas, y «Josué», a Josué
+  con él. Aarón y Hur se quedan con los ancianos en el campamento (Éx 24:14).
+fuentes:
+- exodo-24
+- it-ley
+- it-diez-palabras
+- it-josue
+- it-hur
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Diez Palabras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004367
+  tipo: perspicacia
+- titulo: Éxodo 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/24
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

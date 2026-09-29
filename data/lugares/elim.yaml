@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elim
+nombre: Elim
+nombres:
+- nombre: Elim
+tipo: valle
+lat: 29.254722
+lon: 32.915833
+precision: incierto
+coord_fuente: openbible:a2410c1
+coord_url: https://www.openbible.info/geo/ancient/a2410c1/elim
+coord_nota: Punto de OpenBible en el uadi Gharandel, el sitio tradicional. Perspicacia dice que no se sabe el lugar exacto.
+resumen: Campamento de Israel después de Mará, con doce manantiales y setenta palmeras. Se suele relacionar con el uadi Gharandel,
+  en el Sinaí, que también tiene agua y palmeras.
+razon: 'Perspicacia «Elim»; Éx 15:27. El mapa B3 la marca con signo de duda. OpenBible: solo el punto.'
+fuentes:
+- it-elim
+- tnm-b3
+- openbible-geo
+- exodo-15
+- exodo-16
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Elim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001309
+  tipo: perspicacia
+- titulo: Éxodo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/15
+  tipo: biblia
+- titulo: Éxodo 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

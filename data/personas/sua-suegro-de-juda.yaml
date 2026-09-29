@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sua-suegro-de-juda
+nombre: Súa
+nombres:
+- nombre: Súa
+perspicacia: 1200004087#1
+desambiguacion: El cananeo suegro de Judá; no la mujer aserita del mismo nombre, hija de Héber.
+resumen: Cananeo cuya hija se casó con Judá. Fue abuelo de Er, Onán y Selá.
+razon: Perspicacia «Súa», núm. 1; Gé 38:2, 12.
+fuentes:
+- it-sua
+- genesis-38
+enlaces:
+- titulo: 'Perspicacia: «Súa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004087
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

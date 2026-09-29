@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jacob-hijo-de-mattan
+nombre: Jacob
+nombres:
+- nombre: Jacob
+perspicacia: 1200002279#3
+desambiguacion: Jacob padre de José, el esposo de María; no el patriarca, hijo de Isaac.
+no_confundir_con:
+- jacob
+resumen: Padre de José, el esposo de María, e hijo de Mattán según la genealogía de Mateo. Perspicacia no da más datos de
+  él.
+razon: Perspicacia «Jacob», núm. 3; Mt 1:15, 16.
+fuentes:
+- it-jacob
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Jacob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: mattan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:15.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

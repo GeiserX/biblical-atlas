@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: aparicion-a-santiago
+titulo: Se aparece a Santiago
+fecha:
+  desde: 33
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+lugares: []
+personas:
+- jesus
+pasajes:
+- 1Co 15:7
+resumen: Pablo cuenta que el resucitado se apareció a Santiago antes de hacerlo a todos los apóstoles. Perspicacia
+  cree que es su medio hermano, que hasta entonces no creía en él. El texto no dice dónde.
+razon: Perspicacia «Santiago», apartado 4 (párr. 3), identifica a este Santiago con el medio hermano. La tabla A7-H
+  pone las apariciones de 1Co 15:5-7 después del 16 de nisán y antes de la ascensión.
+fuentes:
+- it-santiago
+- 1-corintios-15
+- tnm-a7-h
+- hechos-1
+nota: 'Pablo solo escribe «Santiago»: que sea el medio hermano de Jesús es la opinión de Perspicacia («debió ser»),
+  no una afirmación del texto.'
+orden_relato:
+  serie: a7
+  orden: 133
+buscar: Jesús se aparece a Santiago
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Hch 1:14 no narra la aparición: solo pone a los hermanos de Jesús entre los discípulos que oran. Sale de pasajes
+    y sigue en fuentes como apoyo.'
+  fuente: hechos-1
+- fecha: '2026-09-29'
+  cambio: 'orden 125 la ponía entre las apariciones del 16 de nisán, aunque su fecha empieza el 17. 1Co 15:6, 7 la pone tras
+    la de los 500 (el mandato, 132) y antes de la de todos los apóstoles: 133.'
+  fuente: 1-corintios-15
+consultado: '2026-09-29'
+estado: verificado

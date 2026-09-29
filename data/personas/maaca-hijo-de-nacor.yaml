@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-hijo-de-nacor
+nombre: Maacá
+nombres:
+- nombre: Maacá
+desambiguacion: El hijo de Nacor; no las mujeres ni el reino que se llaman Maacá.
+perspicacia: 1200002803#1
+resumen: Hijo de Nacor y de su concubina Reumá. Perspicacia cree que era varón porque su nombre pasó a un reino y a su pueblo.
+razon: Perspicacia «Maacá», núm. 1; Gé 22:24.
+fuentes:
+- it-maaca
+- genesis-22
+enlaces:
+- titulo: 'Perspicacia: «Maacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002803
+  tipo: perspicacia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: nacor-hijo-de-tare
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-maaca
+  razon: 'Gé 22:24: hijo de Nacor, el hermano de Abrahán.'
+  estado: verificado
+- tipo: pariente
+  persona: reuma
+  relacion: madre
+  deducido: false
+  fuentes:
+  - genesis-22
+  - it-maaca
+  razon: 'Gé 22:24: uno de los cuatro hijos que Reumá, la concubina de Nacor, le dio.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

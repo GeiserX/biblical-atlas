@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: drusila
+nombre: Drusila
+nombres:
+- nombre: Drusila
+fecha:
+  desde: 54
+  hasta: 58
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 54-58 e.c.
+resumen: Hija menor de Herodes Agripa I, nacida hacia 38. Dejó a su primer marido y se casó con Félix hacia 54;
+  quizás estaba presente cuando Pablo le habló de justicia y autodominio.
+razon: Perspicacia «Drusila» y la nota de estudio de Hch 24:24. Festo releva a Félix hacia 58 (estudio 3, párr. 27).
+fuentes:
+- it-drusila
+- nota-hechos-24
+- hch-24
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Drusila»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001227
+  tipo: perspicacia
+- titulo: Hechos 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/24
+  tipo: biblia
+perspicacia: '1200001227'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: pariente
+  persona: herodes-agripa-i
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-drusila
+  razon: Perspicacia dice que era la hija menor de Herodes Agripa I.
+  estado: verificado
+- tipo: pariente
+  persona: berenice
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - it-drusila
+  - it-berenice
+  razon: Hermana mayor suya (Perspicacia «Drusila»).
+  estado: verificado

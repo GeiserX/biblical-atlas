@@ -1,0 +1,19 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: pecah
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-117_1_VIDEO"
+    titulo: "JW Broadcasting: Octubre de 2024"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-117_1_VIDEO&appLanguage=S"
+    publicado: "2024-10-07"
+    menciones: 2
+    terminos:
+      "Pécah": 2
+  - docid: "pub-jwb-117_3_VIDEO"
+    titulo: "Mark Noumair: ¿Reconocemos la señal? (Is. 8:10)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-117_3_VIDEO&appLanguage=S"
+    publicado: "2024-10-21"
+    menciones: 2
+    terminos:
+      "Pécah": 2

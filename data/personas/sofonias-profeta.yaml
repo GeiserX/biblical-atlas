@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sofonias-profeta
+nombre: Sofonías
+nombres:
+- nombre: Sofonías
+desambiguacion: El profeta; no es el sacerdote Sofonías de tiempos de Sedequías.
+fecha:
+  desde: -658
+  hasta: -647
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: entre 659 y 648 a.e.c.
+resumen: Profeta en Judá al principio del reinado de Josías; al parecer, tataranieto del rey Ezequías.
+razon: Perspicacia «Sofonías», núm. 2; Sof 1:1. Josías empezó a reinar en 659 (A6-B) y la Tabla termina el libro antes de
+  648.
+fuentes:
+- it-sofonias
+- sofonias-1
+- tnm-tabla
+- tnm-a6-b
+enlaces:
+- titulo: 'Perspicacia: «Sofonías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004696
+  tipo: perspicacia
+- titulo: Sofonías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

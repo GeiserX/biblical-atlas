@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dina
+nombre: Dina
+nombres:
+- nombre: Dina
+resumen: Hija de Jacob y Lea, nacida en Harán. Cerca de Siquem la violó el hijo de Hamor, y sus hermanos Simeón y Leví la
+  vengaron. Después entró en Egipto con la casa de Jacob.
+razon: Perspicacia «Dina», párr. 2 a 4; Gé 30:21, 34:1-31 y 46:15.
+fuentes:
+- it-dina
+- genesis-34
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Dina»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001182
+  tipo: perspicacia
+- titulo: Génesis 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/34
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-dina
+  - genesis-30
+  - genesis-34
+  - genesis-46
+  razon: 'Perspicacia «Dina», párr. 2: hija de Jacob y Lea (Gé 30:21).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-dina
+  - genesis-30
+  - genesis-34
+  - genesis-46
+  razon: 'Perspicacia «Dina», párr. 2: hija de Jacob y Lea (Gé 30:21).'
+  estado: verificado
+- tipo: nacio_en
+  lugar: haran
+  deducido: false
+  fuentes:
+  - it-dina
+  - genesis-30
+  - genesis-46
+  razon: 'Perspicacia «Dina», párr. 2: nació en Harán cuando su padre vivía allí.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:15, 26: cuenta entre la casa de Jacob que entró en Egipto.'
+  estado: verificado
+perspicacia: '1200001182'
+consultado: '2026-09-29'
+estado: verificado

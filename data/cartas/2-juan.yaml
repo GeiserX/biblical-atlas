@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 2-juan
+libro: 2 Juan
+escritor: juan-apostol
+referencia: 2Jn 1, 13
+escrita_en:
+- efeso
+fecha:
+  desde: 98
+  hasta: 98
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 98 e.c.
+destinatarios:
+  texto: '«La señora escogida y sus hijos»: quizá una congregación, quizá una mujer concreta.'
+contexto_origen:
+  resumen: «El anciano» escribe desde Éfeso o cerca hacia 98; Perspicacia calcula que tendría entre noventa y cien
+    años.
+  fuentes:
+  - it-juan-cartas
+contexto_destino:
+  resumen: Pide seguir andando en la verdad y no recibir en casa a quien enseñe algo distinto de lo que enseñó Cristo.
+  fuentes:
+  - it-juan-cartas
+razon: La Tabla da «Éfeso o cerca» y c. 98; Perspicacia «Juan, Cartas de» (párr. 13 a 15).
+nota: '«Éfeso o cerca»: la ubicamos en Éfeso.'
+fuentes:
+- tnm-tabla
+- si-3
+- it-juan-cartas
+- 2-juan-1
+enlaces:
+- titulo: 'Perspicacia: «Juan, Cartas de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002491
+  tipo: perspicacia
+- titulo: 2 Juan 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/63/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

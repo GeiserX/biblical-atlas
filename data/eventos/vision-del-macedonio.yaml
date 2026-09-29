@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: vision-del-macedonio
+titulo: La visión del hombre de Macedonia
+fecha:
+  desde: 50
+  hasta: 50
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 50 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1609
+lugares:
+- troas
+- macedonia
+personas:
+- pablo
+- silas
+- timoteo
+- lucas
+pasajes:
+- Hch 16:8-10
+resumen: En Troas, Pablo ve de noche a un macedonio que le pide ayuda. Concluyen que Dios los llama y cruzan a Europa;
+  aquí el relato pasa a «nosotros».
+razon: El estudio 3 (párr. 24) fecha el paso a Europa en la primavera de 50; Perspicacia «Lucas» señala el cambio
+  a «nosotros».
+fuentes:
+- si-3
+- it-lucas
+- hch-16
+buscar: Pasa a Macedonia y ayúdanos
+consultado: '2026-09-29'
+estado: verificado

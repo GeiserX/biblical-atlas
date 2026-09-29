@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-encarcelado-en-egipto
+titulo: La esposa de Potifar acusa a José y lo encarcelan
+fecha:
+  desde: -1749
+  hasta: -1738
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1750 y 1739 a.e.c. (tiempo narrativo: José llega a Egipto en 1750 y lleva unos once años vendido al interpretar
+    los sueños de la prisión)'
+orden_relato:
+  serie: genesis
+  orden: 39007
+lugares:
+- egipto
+personas:
+- jose-hijo-de-jacob
+- potifar
+pasajes:
+- Gé 39:7-23
+- Sl 105:18, 19
+resumen: José rechaza una y otra vez a la esposa de Potifar. Ella se queda con su ropa y lo acusa; Potifar lo encierra en
+  la prisión del rey, cuyo jefe lo pone al frente de los presos.
+razon: 'Estudio 3: vendido en 1750 a.e.c. Perspicacia «José», párr. 13: al cumplirse los sueños del copero y el panadero ya
+  llevaba unos once años vendido.'
+fuentes:
+- genesis-39
+- si-3
+- it-jose
+- it-potifar
+enlaces:
+- titulo: Génesis 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/39
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

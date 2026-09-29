@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: atalia
+nombre: Atalía
+nombres:
+- nombre: Atalía
+desambiguacion: La reina de Judá; no es Atalia, el puerto de Panfilia.
+fecha:
+  desde: -904
+  hasta: -897
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 905-898 a.e.c.
+resumen: Hija de Acab y Jezabel, esposa de Jehoram de Judá. Al morir su hijo Ocozías mató a la familia real y reinó seis años,
+  hasta que el sumo sacerdote Jehoiadá coronó a Jehoás.
+razon: Perspicacia «Atalía», núm. 1; 2Re 11:1-20.
+fuentes:
+- it-atalia-reina
+- 2-reyes-11
+- 2-cronicas-22
+- tnm-a6-a
+enlaces:
+- titulo: 'Perspicacia: «Atalía»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000457
+  tipo: perspicacia
+- titulo: 2 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/11
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: acab
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-atalia-reina
+  - 2-reyes-8
+  razon: Hija de Acab (2Re 8:18).
+  estado: verificado
+- tipo: pariente
+  persona: jezabel
+  relacion: madre
+  deducido: true
+  fuentes:
+  - it-atalia-reina
+  razon: Perspicacia la presenta como hija de Acab y Jezabel.
+  estado: verificado
+- tipo: sucede_a
+  persona: ocozias-de-juda
+  deducido: false
+  fuentes:
+  - it-atalia-reina
+  - 2-reyes-11
+  razon: Tomó el trono al morir su hijo (2Re 11:1-3).
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La desambiguación ya no cita el versículo de Hechos del puerto: esa cita ponía a la reina en la página de ese capítulo.'
+  fuente: it-atalia
+consultado: '2026-09-29'
+estado: verificado

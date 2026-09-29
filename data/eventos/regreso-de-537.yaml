@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: regreso-de-537
+titulo: Regreso de los judíos a Jerusalén
+fecha:
+  desde: -536
+  hasta: -536
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 537 a.e.c. (asentados para el mes de tisri)
+  detalle:
+    mes: tisri
+lugares:
+- babilonia
+- jerusalen
+personas:
+- zorobabel
+- josue-sumo-sacerdote
+pasajes:
+- Esd 1:5-11
+- Esd 2:1, 2, 64-70
+- Esd 3:1
+- Sl 85:1-3
+- Sl 126:1-3
+resumen: Unas 42.360 personas, más esclavos y cantores, dejaron Babilonia guiadas por Zorobabel y estaban en sus ciudades
+  para el séptimo mes. Así terminaron los setenta años de desolación.
+razon: 'Estudio 3 (párr. 5, 6) y Perspicacia «Ciro»: vuelta para tisri de 537; cifras de Esd 2:64, 65. Veamos «la buena
+  tierra» dice que la Biblia no da la ruta.'
+fuentes:
+- si-3
+- it-ciro
+- it-zorobabel
+- esdras-2
+- lbt-regreso
+- w06-salmos-libros-3-4
+- it-salmos-libro
+enlaces:
+- titulo: 'Perspicacia: «Ciro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
+  tipo: perspicacia
+- titulo: Esdras 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

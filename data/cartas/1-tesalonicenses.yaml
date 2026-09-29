@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: 1-tesalonicenses
+libro: 1 Tesalonicenses
+escritor: pablo
+referencia: 1Te 1:1
+escrita_en:
+- corinto
+fecha:
+  desde: 50
+  hasta: 50
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. otoño de 50 e.c.
+destinatarios:
+  texto: Congregación de Tesalónica
+  lugares:
+  - tesalonica
+personas:
+- silas
+- timoteo
+contexto_origen:
+  resumen: Pablo está en Corinto con Silas y Timoteo, al comienzo de su estancia de unos 18 meses (otoño de 50 a
+    primavera de 52).
+  fuentes:
+  - si-3
+  - it-tesalonicenses
+contexto_destino:
+  resumen: 'Congregación reciente, perseguida desde su fundación: una turba arrastró a Jasón y a otros creyentes
+    hasta las autoridades locales.'
+  fuentes:
+  - it-tesalonicenses
+razon: La Tabla de los libros y el estudio 3 dan Corinto y c. 50. Perspicacia «Tesalonicenses» lo deduce de las
+  firmas de 1Te 1:1 y la sitúa hacia el otoño de 50, cuando empiezan los 18 meses en Corinto.
+fuentes:
+- tnm-tabla
+- si-3
+- it-tesalonicenses
+- 1-tesalonicenses-1
+- it-silas
+enlaces:
+- titulo: 'Perspicacia: «Tesalonicenses, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004378
+  tipo: perspicacia
+- titulo: 1 Tesalonicenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

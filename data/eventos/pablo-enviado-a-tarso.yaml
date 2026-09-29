@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-enviado-a-tarso
+titulo: Los hermanos envían a Pablo a Tarso
+fecha:
+  desde: 36
+  hasta: 36
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 36 e.c.
+orden_relato:
+  serie: hechos
+  orden: 930
+lugares:
+- cesarea
+- tarso
+personas:
+- pablo
+pasajes:
+- Hch 9:30
+- Gál 1:21
+resumen: Para protegerlo de los judíos de habla griega, los hermanos lo llevan a Cesarea y lo envían a Tarso, su
+  ciudad natal.
+razon: Perspicacia «Pablo» (párr. 8) y «Tarso» (último párrafo); sigue a la visita de c. 36.
+fuentes:
+- it-pablo
+- it-tarso
+- hch-9
+buscar: Pablo enviado a Tarso
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa de narrativa a anclada: Perspicacia «Pablo», párr. 8, da quizás 36 para la visita a Jerusalén y en
+    el mismo párrafo el envío a Tarso. Una fecha narrativa de un solo año no cumple el protocolo.'
+  fuente: hch-9
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,83 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: raquel
+nombre: Raquel
+nombres:
+- nombre: Raquel
+fecha:
+  desde: -1780
+  hasta: -1750
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 1781-1751 a.e.c. (de su encuentro con Jacob a su muerte, al nacer Benjamín)
+resumen: Hija menor de Labán, prima de Jacob y su esposa preferida. Pasó años sin hijos y luego tuvo a José. Murió al dar
+  a luz a Benjamín, en el camino de Betel a Belén.
+razon: 'Perspicacia «Raquel», párr. 2, 3 y 5; Gé 29:9-30, 30:22-24 y 35:16-20. Años: Jacob llega a Harán y la conoce en
+  1781 a.e.c. y vuelve a Canaán en 1761 (estudio 3).'
+fuentes:
+- si-3
+- it-raquel
+- genesis-29
+- genesis-35
+- genesis-30
+- genesis-31
+- genesis-32
+- genesis-33
+- genesis-46
+- genesis-48
+enlaces:
+- titulo: 'Perspicacia: «Raquel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003621
+  tipo: perspicacia
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+no_afirmamos:
+- 'Dónde está exactamente su sepulcro: Perspicacia dice que hoy no se puede precisar.'
+relaciones:
+- tipo: pariente
+  persona: jacob
+  relacion: esposo
+  deducido: false
+  fuentes:
+  - it-raquel
+  - genesis-29
+  - genesis-46
+  razon: 'Perspicacia «Raquel», párr. 2: Jacob sirvió siete años a Labán para casarse con ella (Gé 29:18-30).'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - it-raquel
+  - genesis-29
+  razon: 'Perspicacia «Raquel», párr. 2: hermana menor de Lea (Gé 29:16).'
+  estado: verificado
+- tipo: pariente
+  persona: laban
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-29
+  - it-raquel
+  - genesis-46
+  razon: 'Gé 29:6, 10, 16: Raquel es la hija menor de Labán.'
+  estado: verificado
+- tipo: murio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - genesis-48
+  - it-raquel
+  razon: 'Gé 48:7: murió junto a Jacob en la tierra de Canaán, camino de Efrat, cuando volvían de Padán.'
+  estado: verificado
+perspicacia: '1200003621'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha acababa en la vuelta a Canaán (1761), pero Raquel vive aún en Gé 33 y 35. Ahora llega a su muerte, antes
+    de 1751: Benjamín tenía de 40 a 50 años en 1711 (Perspicacia «Benjamín»).'
+  fuente: genesis-35
+consultado: '2026-09-29'
+estado: verificado

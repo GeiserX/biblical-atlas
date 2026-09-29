@@ -1,0 +1,414 @@
+# biblical-earth: fuentes de la cobertura de exodo. Esquema en docs/investigacion/README.md.
+it-sifra:
+  titulo: Sifrá
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004066
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-pua:
+  titulo: Puá
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003574
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-pitom:
+  titulo: Pitom
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003504
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-partera:
+  titulo: Partera
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003042
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-amram:
+  titulo: Amram
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000251
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-jokebed:
+  titulo: Jokébed
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002478
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-jetro:
+  titulo: Jetró
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002454
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-zipora:
+  titulo: Ziporá
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004748
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-guersom:
+  titulo: Guersom
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001662
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-libni:
+  titulo: Libní
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002735
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-simei:
+  titulo: Simeí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004047
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-izhar:
+  titulo: Izhar
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002251
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-uziel:
+  titulo: Uziel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004536
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-mahli:
+  titulo: Mahlí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002850
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-musi:
+  titulo: Musí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003135
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-nefeg:
+  titulo: Néfeg
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003222
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-zicri:
+  titulo: Zicrí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004728
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-misael:
+  titulo: Misael
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003078
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-elizafan:
+  titulo: Elizafán, Elzafán
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001324
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sitri:
+  titulo: Sitrí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004151
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-eliseba:
+  titulo: Eliseba
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001320
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-abihu:
+  titulo: Abihú
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000039
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-itamar:
+  titulo: Itamar
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-asir:
+  titulo: Asir
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000444
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-elqana:
+  titulo: Elqaná
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001326
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-abiasaf:
+  titulo: Abiasaf
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000029
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-putiel:
+  titulo: Putiel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003594
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-finehas:
+  titulo: Finehás
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-dioses-y-diosas:
+  titulo: Dioses y diosas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001732
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-cebada:
+  titulo: Cebada
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000565
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-granizo:
+  titulo: Granizo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001820
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-pascua:
+  titulo: Pascua
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003397
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-fiesta-tortas-no-fermentadas:
+  titulo: Fiesta de las tortas no fermentadas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001510
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-ezam:
+  titulo: Ezam
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001433
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-migdol:
+  titulo: Migdol
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003045
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-baal-zefon:
+  titulo: Baal-zefón
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000523
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-marah:
+  titulo: Marah
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002897
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-elim:
+  titulo: Elim
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001309
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-sin:
+  titulo: Sin
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004133
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-mana:
+  titulo: Maná
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002888
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-codorniz:
+  titulo: Codorniz
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003598
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-refidim:
+  titulo: Refidim
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003698
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-masah:
+  titulo: Masah
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002925
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-meriba:
+  titulo: Meribá
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002998
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-hur:
+  titulo: Hur
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002108
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-jehova-nisi:
+  titulo: Jehová-nisí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002395
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-diez-palabras:
+  titulo: Diez Palabras
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004367
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-ley:
+  titulo: Ley
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002694
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-mar-grande:
+  titulo: Mar Grande
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001763
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-tabernaculo:
+  titulo: Tabernáculo
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004295
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-bezalel:
+  titulo: Bezalel
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000721
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-uri:
+  titulo: Urí
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004520
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-oholiab:
+  titulo: Oholiab
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003310
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-ahisamac:
+  titulo: Ahisamac
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000166
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-becerro:
+  titulo: Becerro
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000867
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-levitas:
+  titulo: Levitas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002731
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-exodo-libro:
+  titulo: Éxodo, Libro de
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001459
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-nun:
+  titulo: Nun, I
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003280
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'
+it-tienda-de-reunion:
+  titulo: Tienda de reunión
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004365
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-29'

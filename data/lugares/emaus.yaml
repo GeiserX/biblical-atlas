@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: emaus
+nombre: Emaús
+nombres:
+- nombre: Emaús
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: El-Qubeiba
+  geometria:
+    tipo: punto
+    lat: 31.839933
+    lon: 35.13685
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-emaus
+  razon: A unos 11 km al NO de Jerusalén, en una calzada romana y con restos del siglo I. Perspicacia dice que su distancia
+    armoniza con Lucas, aunque no se puede concluir (párr. 4).
+  coord_fuente: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+- nombre: ʽAmwas
+  geometria:
+    tipo: punto
+    lat: 31.8393
+    lon: 34.989458
+  estado: descartado_nivel_1
+  fuentes:
+  - it-emaus
+  - lucas-24
+  razon: Es el candidato más conocido, pero está a unos 32 km de Jerusalén, casi el triple de los 60 estadios de Lu 24:13
+    (párr. 4).
+  coord_fuente: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+- nombre: Qalunyah (Mevasseret Ziyyon)
+  geometria:
+    tipo: punto
+    lat: 31.79289
+    lon: 35.16419
+  estado: descartado_nivel_1
+  fuentes:
+  - it-emaus
+  - lucas-24
+  razon: 'Queda a unos 6,5 km de Jerusalén: no alcanza los 60 estadios de Lucas (párr. 4).'
+  coord_fuente: openbible:ae7274b
+  coord_url: https://www.openbible.info/geo/ancient/ae7274b/emmaus
+resumen: Aldea adonde iban Cleopas y otro discípulo cuando Jesús resucitado caminó con ellos. Lucas la pone a unos 11 km de
+  Jerusalén. Se han propuesto una docena de sitios y ninguno es seguro.
+razon: Perspicacia «Emaús» (párr. 3-4), Lu 24:13-33 y su nota de estudio, que da 60 estadios. El mapa B10 la dibuja.
+fuentes:
+- it-emaus
+- lucas-24
+- nota-lucas-24
+- tnm-b10
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Emaús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001353
+  tipo: perspicacia
+- titulo: Lucas 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/24
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

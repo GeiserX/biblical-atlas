@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: potencia-babilonica
+nombre: Babilonia, tercera potencia mundial
+tipo: potencia
+fecha:
+  desde: -631
+  hasta: -538
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 632-539 a.e.c.
+lugares:
+- babilonia
+sucesos:
+- batalla-de-carquemis
+- jehoiaquim-vasallo-de-babilonia
+- sitio-de-jerusalen-609
+- nabucodonosor-contra-egipto
+- caida-de-babilonia
+resumen: La dinastía de Nabopolasar y Nabucodonosor vence a Asiria, domina Siria y Judá y destruye Jerusalén en 607 a.e.c.
+  Es la cabeza de oro de la imagen de Daniel 2.
+razon: 'Cuadro del estudio 3: al caer Nínive en 632, Babilonia va camino de ser la tercera potencia. Perspicacia «Babilonia»
+  fecha su caída ante Ciro en octubre de 539 a.e.c.'
+fuentes:
+- si-3
+- it-babilonia
+- tnm-b9
+buscar: Babilonia tercera potencia mundial
+consultado: '2026-09-28'
+estado: verificado

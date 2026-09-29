@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: defensa-ante-agripa
+titulo: Pablo se defiende ante el rey Agripa
+fecha:
+  desde: 58
+  hasta: 58
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 58 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2523
+lugares:
+- cesarea
+personas:
+- pablo
+- herodes-agripa-ii
+- berenice
+- festo
+pasajes:
+- Hch 25:23–26:32
+resumen: En la sala de audiencias de Cesarea, ante Agripa, Berenice, Festo y los notables, Pablo cuenta su vida y su conversión.
+  Agripa dice que en poco tiempo lo haría cristiano; todos lo ven inocente, pero había apelado a César.
+razon: Perspicacia «Herodes» (apartado 4) y «Berenice» fechan la visita hacia 58.
+fuentes:
+- it-herodes
+- it-berenice
+- it-festo
+- hch-25
+- hch-26
+- bt-25
+- nota-hechos-25
+- nota-hechos-26
+buscar: Pablo Agripa defensa
+historial:
+- fecha: '2026-09-29'
+  cambio: La visita y la conversación de Festo con Agripa (Hch 25:13-22) pasan a su propio suceso; la audiencia empieza al
+    día siguiente, en el v. 23.
+  fuente: hch-25
+- fecha: '2026-09-29'
+  cambio: Va detrás de la visita (agripa-y-berenice-visitan-a-festo), que ocupa el 2513.
+  fuente: hch-25
+- fecha: '2026-09-29'
+  cambio: Hch 26:28 en la TNM dice «en poco tiempo me convencerías», no «casi»; la visita ya es otro suceso.
+  fuente: hch-26
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: enon
+nombre: Enón
+nombres:
+- nombre: Enón
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Valle del Jordán, unos 12 km al sur de Bet-seán
+  geometria:
+    tipo: zona
+    lat: 32.38152
+    lon: 35.52821
+    radio_km: 6
+  estado: tradicion
+  fuentes:
+  - it-enon
+  - openbible-geo
+  razon: 'Propuesta de Eusebio que recoge Perspicacia (párr. 2): manantiales cerca de Tell Ridgha, que se suele identificar
+    con Salim. Centro: punto de OpenBible para Umm el Umdan.'
+  coord_fuente: openbible:a112fe3
+  coord_url: https://www.openbible.info/geo/ancient/a112fe3/aenon
+resumen: Localidad con mucha agua, cerca de Salim, donde Juan el Bautista bautizaba después de la Pascua de 30. No se sabe
+  con exactitud dónde estaba.
+razon: Perspicacia «Enón» (párr. 2) y la nota de Jn 3:23 dicen que no se puede ubicar con exactitud; solo recogen la propuesta
+  de Eusebio.
+fuentes:
+- it-enon
+- juan-3
+enlaces:
+- titulo: 'Perspicacia: «Enón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000127
+  tipo: perspicacia
+- titulo: Juan 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

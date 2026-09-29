@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: noe-maldice-a-canaan
+titulo: Noé maldice a Canaán
+fecha:
+  desde: -2368
+  hasta: -2019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 2369 y 2020 a.e.c. (tiempo narrativo: después del Diluvio y en vida de Noé)'
+orden_relato:
+  serie: genesis
+  orden: 9020
+lugares: []
+personas:
+- noe
+- cam
+- sem
+- jafet
+- canaan
+pasajes:
+- Gé 9:20-27
+resumen: Noé planta una viña, se emborracha y queda desnudo en su tienda. Cam lo ve y avisa a sus hermanos; Sem y Jafet lo
+  tapan sin mirar. Al despertar, Noé maldice a Canaán y bendice a Sem y Jafet.
+razon: Canaán nació después del Diluvio (Gé 9:18; Perspicacia «Cam», párr. 3) y Noé murió en 2020 a.e.c. (estudio 3). Perspicacia
+  «Canaán», núm. 1, cree probable que Canaán estuviera implicado.
+fuentes:
+- genesis-9
+- it-cam
+- it-canaan
+- it-noe
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Canaán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
+  tipo: perspicacia
+- titulo: Génesis 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: tiberio
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwbcov24_4_VIDEO"
+    titulo: "“Impulsados por espíritu santo”"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_4_VIDEO&appLanguage=S"
+    publicado: "2025-01-20"
+    menciones: 4
+    terminos:
+      "Tiberio": 4

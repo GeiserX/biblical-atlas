@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: suah
+nombre: Súah
+nombres:
+- nombre: Súah
+perspicacia: '1200004088'
+resumen: Sexto hijo de Abrahán y Queturá. Abrahán le dio regalos y lo mandó hacia el este. De él vienen los suhitas; el único
+  que la Biblia nombra es Bildad, compañero de Job.
+razon: Perspicacia «Súah»; Job 2:11 llama suhita a Bildad.
+fuentes:
+- it-suah
+- job-2
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Súah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004088
+  tipo: perspicacia
+- titulo: Job 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/2
+  tipo: biblia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-suah
+  - genesis-25
+  razon: 'Perspicacia «Súah»: hijo de Abrahán y de Queturá, su segunda esposa.'
+  estado: verificado
+- tipo: pariente
+  persona: quetura
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-suah
+  - genesis-25
+  razon: 'Gé 25:1, 2: hijo de Abrahán y Queturá.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

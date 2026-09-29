@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tradiciones-humanas
+titulo: Denuncia las tradiciones humanas
+fecha:
+  desde: 32
+  hasta: 32
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 32 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 53
+lugares:
+- capernaum
+personas:
+- jesus
+- pedro
+pasajes:
+- Mt 15:1-20
+- Mr 7:1-23
+- Jn 7:1
+resumen: Unos fariseos y escribas de Jerusalén critican a los discípulos por no lavarse las manos según la tradición. Jesús
+  les responde que anulan la palabra de Dios y que lo que contamina sale del corazón.
+razon: 'A7-D, fila 12: probablemente Capernaúm, después de la Pascua de 32. El libro jy (cap. 56) cree que Jesús fue antes
+  a esa Pascua con cautela.'
+fuentes:
+- tnm-a7-d
+- mateo-15
+- marcos-7
+- juan-7
+- jy-cap-56
+consultado: '2026-09-29'
+estado: verificado

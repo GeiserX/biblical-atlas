@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nombran-ancianos-en-galacia
+titulo: Nombran ancianos en las congregaciones nuevas
+fecha:
+  desde: 47
+  hasta: 48
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+orden_relato:
+  serie: hechos
+  orden: 1421
+lugares:
+- listra
+- iconio
+- antioquia-de-pisidia
+personas:
+- pablo
+- bernabe
+pasajes:
+- Hch 14:21-23
+resumen: De vuelta por Listra, Iconio y Antioquía, animan a los discípulos y, con oración y ayuno, nombran ancianos
+  en cada congregación.
+razon: Perspicacia «Pablo» (párr. 12) y la nota de estudio de Hch 14:23.
+fuentes:
+- it-pablo
+- nota-hechos-14
+- hch-14
+buscar: nombran ancianos Hechos 14
+consultado: '2026-09-28'
+estado: verificado

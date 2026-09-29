@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: profanacion-del-templo-168
+titulo: Antíoco Epífanes profana el templo
+fecha:
+  desde: -167
+  hasta: -167
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 168 a.e.c.
+  detalle:
+    mes: kislev
+    dia: 25
+lugares:
+- jerusalen
+personas: []
+pasajes: []
+resumen: El rey seléucida Antíoco IV Epífanes profana el templo de Jerusalén e introduce el culto a Zeus. Estalla la rebelión
+  de los macabeos.
+razon: Perspicacia «Fiesta de la dedicación» fecha la profanación en 168 a.e.c., un 25 de kislev; «Grecia, griegos» cuenta
+  el culto a Zeus y la rebelión.
+fuentes:
+- it-fiesta-dedicacion
+- it-grecia
+buscar: Antíoco Epífanes templo
+consultado: '2026-09-28'
+estado: verificado

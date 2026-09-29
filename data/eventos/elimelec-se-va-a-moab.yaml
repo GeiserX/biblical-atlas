@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elimelec-se-va-a-moab
+titulo: Elimélec se va a Moab con su familia
+fecha:
+  desde: -1472
+  hasta: -1300
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1473 y 1301 a.e.c. (tiempo narrativo: en tiempos de los jueces y en vida de Boaz)'
+orden_relato:
+  serie: rut
+  orden: 1001
+lugares:
+- moab
+- belen
+personas:
+- elimelec
+- noemi
+- mahlon
+- kilion
+- orpa
+- rut
+pasajes:
+- Rut 1:1-5
+resumen: Por el hambre, Elimélec deja Belén con Noemí y sus hijos. En Moab muere él; sus hijos se casan con Orpá y Rut, dos
+  moabitas, y al cabo de unos diez años mueren también.
+razon: Rut 1:1 lo pone cuando juzgaban los jueces, tras la entrada en Canaán (1473 a.e.c., estudio 3). Boaz, que vive aún
+  en el capítulo 4, es del siglo XIV a.e.c. según Perspicacia «Boaz, I».
+fuentes:
+- rut-1
+- si-3
+- it-elimelec
+- it-rut-libro
+- it-boaz
+enlaces:
+- titulo: Rut 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/8/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

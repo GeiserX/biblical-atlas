@@ -1,12 +1,12 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: cades
-generated_on: "2026-09-28"
+lugar: cades
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-081_9_VIDEO"
-    title: "Trent Lippold: Marquen su Meribá"
+    titulo: "Trent Lippold: Marquen su Meribá"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-081_9_VIDEO&appLanguage=S"
-    published: "2021-06-08"
-    hits: 3
-    terms:
+    publicado: "2021-06-08"
+    menciones: 3
+    terminos:
       "Cadés": 3

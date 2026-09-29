@@ -1,0 +1,94 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abihu
+nombre: Abihú
+nombres:
+- nombre: Abihú
+perspicacia: '1200000039'
+fecha:
+  desde: -1512
+  hasta: -1511
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513-1512 a.e.c.
+resumen: Segundo hijo de Aarón y Eliseba, nacido en Egipto. Con Nadab subió al Sinaí y vio la gloria de Dios. Fue nombrado
+  sacerdote y poco después murió por ofrecer un fuego ilegítimo, sin dejar hijos.
+razon: 'Perspicacia «Abihú»; Éx 6:23; 24:1, 9-11; 28:1. Fecha: de la subida al Sinaí (1513 a.e.c., estudio 3) a la instalación
+  del sacerdocio en 1512.'
+fuentes:
+- it-abihu
+- exodo-6
+- si-3
+- exodo-24
+- exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
+- numeros-3
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Abihú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000039
+  tipo: perspicacia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+- titulo: Éxodo 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/24
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aaron
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-abihu
+  - exodo-28
+  - levitico-10
+  - numeros-3
+  - numeros-26
+  razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
+  estado: verificado
+- tipo: pariente
+  persona: eliseba
+  relacion: madre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-abihu
+  razon: 'Éx 6:23: Eliseba se los dio a Aarón.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: egipto
+  deducido: true
+  fuentes:
+  - it-abihu
+  razon: 'Perspicacia «Abihú», párr. 1: nació en Egipto y era ya adulto en el éxodo.'
+  estado: verificado
+- tipo: murio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  deducido: false
+  fuentes:
+  - levitico-10
+  - it-abihu
+  - it-tabernaculo
+  - numeros-3
+  razon: 'Le 10:1, 2 y Nú 3:4: murió con Nadab ante Jehová, en el desierto de Sinaí, por ofrecer fuego no autorizado.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Su muerte en el desierto de Sinaí pasa a deducido: false, porque Nú 3:4 nombra ese desierto.'
+  fuente: numeros-3
+consultado: '2026-09-29'
+estado: verificado

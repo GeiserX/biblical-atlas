@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dos-ciegos-y-un-mudo
+titulo: Cura a dos ciegos y a un mudo
+fecha:
+  desde: 31
+  hasta: 32
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 o 32 e.c.
+orden_relato:
+  serie: a7
+  orden: 46
+lugares:
+- capernaum
+personas:
+- jesus
+pasajes:
+- Mt 9:27-34
+resumen: Al salir de casa de Jairo, dos ciegos lo siguen llamándolo Hijo de David y recobran la vista. Luego expulsa el demonio
+  de un mudo, que empieza a hablar.
+razon: 'A7-D, fila 5: Capernaúm con interrogación en la tabla. El libro jy (cap. 48) lo pone el mismo día que la resurrección
+  de la niña.'
+fuentes:
+- tnm-a7-d
+- mateo-9
+- jy-cap-48
+consultado: '2026-09-28'
+estado: verificado

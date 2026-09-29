@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: templo-terminado-515
+titulo: Se termina el segundo templo
+fecha:
+  desde: -514
+  hasta: -514
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 3 de adar de 515 a.e.c. (probablemente 6 de marzo)
+  detalle:
+    mes: adar
+    dia: 3
+lugares:
+- jerusalen
+personas:
+- zorobabel
+- josue-sumo-sacerdote
+- ageo
+- zacarias-profeta
+pasajes:
+- Esd 6:13-22
+resumen: El templo reconstruido se terminó en el sexto año de Darío I, con el apoyo de los profetas y del rey. Los judíos
+  lo inauguraron y celebraron la Pascua; estuvo en pie casi quinientos años.
+razon: Perspicacia «Templo», apartado «El templo edificado por Zorobabel», y «Darío», núm. 2; Esd 6:15 da el día 3 de adar.
+  Estudio 3, tabla de sucesos.
+fuentes:
+- si-3
+- it-templo
+- it-dario
+- esdras-6
+enlaces:
+- titulo: 'Perspicacia: «Templo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004359
+  tipo: perspicacia
+- titulo: Esdras 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

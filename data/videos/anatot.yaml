@@ -1,19 +1,19 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: anatot
-generated_on: "2026-09-28"
+lugar: anatot
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-098_1_VIDEO"
-    title: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
+    titulo: "JW Broadcasting: Diciembre de 2022 (graduación de la clase 152 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_1_VIDEO&appLanguage=S"
-    published: "2022-12-05"
-    hits: 25
-    terms:
+    publicado: "2022-12-05"
+    menciones: 25
+    terminos:
       "Anatot": 25
   - docid: "pub-jwb-098_7_VIDEO"
-    title: "Gage Fleegle: Compren un campo en Anatot"
+    titulo: "Gage Fleegle: Compren un campo en Anatot"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-098_7_VIDEO&appLanguage=S"
-    published: "2022-12-06"
-    hits: 18
-    terms:
+    publicado: "2022-12-06"
+    menciones: 18
+    terminos:
       "Anatot": 18

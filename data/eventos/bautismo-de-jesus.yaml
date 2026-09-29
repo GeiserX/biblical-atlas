@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: bautismo-de-jesus
+titulo: Bautismo de Jesús
+fecha:
+  desde: 29
+  hasta: 29
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. octubre de 29 e.c.
+  detalle:
+    mes: tisri
+orden_relato:
+  serie: a7
+  orden: 11
+lugares:
+- rio-jordan
+- betania-del-otro-lado-del-jordan
+personas:
+- jesus
+- juan-el-bautista
+pasajes:
+- Mt 3:13-17
+- Mr 1:9-11
+- Lu 3:21-38
+resumen: Con unos 30 años, Jesús pide a Juan que lo bautice en el Jordán, quizá cerca de Betania, al otro lado del río. Al
+  salir del agua desciende sobre él el espíritu y Dios lo reconoce como su Hijo.
+razon: 'A7-B, fila 1: c. octubre de 29. Perspicacia «Jesucristo» lo pone en etanim de 29, tres años y medio antes de la Pascua
+  de 33; el estudio 3 dice otoño de 29.'
+fuentes:
+- tnm-a7-b
+- si-3
+- it-jesucristo
+- it-bautismo
+- mateo-3
+- marcos-1
+- lucas-3
+- jy-cap-12
+enlaces:
+- titulo: 'Perspicacia: «Bautismo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000555
+  tipo: perspicacia
+- titulo: Mateo 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

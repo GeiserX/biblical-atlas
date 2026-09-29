@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anas
+nombre: Anás
+nombres:
+- nombre: Anás
+fecha:
+  desde: 6
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 6-33 e.c.
+  nota: Sumo sacerdote de c. 6 a c. 15; en 33 aún manda entre los sacerdotes (Jn 18:13; Hch 4:6).
+relaciones: []
+resumen: 'Sumo sacerdote de c. 6 a c. 15 e.c.; destituido por Roma, conservó mucho poder: cinco hijos y su yerno Caifás tuvieron
+  el cargo. Interrogó a Jesús y encabezó a quienes juzgaron a Pedro y a Juan.'
+razon: Perspicacia «Anás» (párr. 2) da las fechas y su influencia; Jn 18:13, 24 narra el interrogatorio.
+fuentes:
+- it-anas
+- juan-18
+- hechos-4
+- it-herodes
+enlaces:
+- titulo: 'Perspicacia: «Anás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000284
+  tipo: perspicacia
+- titulo: Juan 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/18
+  tipo: biblia
+buscar: Anás
+perspicacia: '1200000284'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sale la relación con Caifás como yerno: repetía al revés la de la ficha de Caifás (suegro), y entre generaciones
+    la relación va solo en la del más joven.'
+  fuente: juan-18
+- fecha: '2026-09-29'
+  cambio: La actividad llegaba solo a 15, fin de su sumo sacerdocio; Jn 18 y Hch 4:6 lo muestran activo en 33.
+  fuente: hechos-4
+- fecha: '2026-09-29'
+  cambio: Se añade su papel al frente de los que juzgaron a los apóstoles (Hch 4:6; Perspicacia «Anás»).
+  fuente: hechos-4
+consultado: '2026-09-29'
+estado: verificado

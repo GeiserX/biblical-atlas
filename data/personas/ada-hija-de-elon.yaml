@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ada-hija-de-elon
+nombre: Adá
+nombres:
+- nombre: Adá
+perspicacia: 1200000086#2
+desambiguacion: Adá esposa de Esaú; no Adá, esposa de Lamec.
+resumen: Cananea, hija de Elón el hitita, que fue esposa de Esaú y madre de su primogénito, Elifaz. Perspicacia no descarta
+  que sea la esposa a la que otro pasaje llama Basemat.
+razon: Perspicacia «Adá», núm. 2; Gé 36:2, 4, 10, 12.
+fuentes:
+- it-ada
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Adá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000086
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: elon-el-hitita
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-ada
+  - genesis-36
+  razon: 'Gé 36:2: Adá era hija de Elón el hitita.'
+  estado: verificado
+- tipo: mismo_que
+  persona: basemat-hija-de-elon
+  deducido: true
+  fuentes:
+  - it-ada
+  - it-basemat
+  - genesis-36
+  razon: 'Perspicacia «Adá», núm. 2, y «Basemat», núm. 1: puede ser la misma mujer, pues las dos son hijas de Elón el hitita
+    (Gé 36:2).'
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

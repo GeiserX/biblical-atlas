@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-y-silas-azotados-y-encarcelados
+titulo: Pablo y Silas, azotados y encarcelados en Filipos
+fecha:
+  desde: 50
+  hasta: 50
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 50 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1619
+lugares:
+- filipos
+personas:
+- pablo
+- silas
+pasajes:
+- Hch 16:19-24
+- 2Co 11:25
+resumen: Los amos de la muchacha, sin su ganancia, llevan a Pablo y a Silas ante los magistrados en la plaza. Los azotan con
+  varas y el carcelero los encierra en el calabozo, con los pies en el cepo.
+razon: 'Perspicacia «Silas, Silvano», párr. 4, y la nota de Hch 16:20 sobre los magistrados de la colonia. Año: la estancia
+  en Filipos de 50 (estudio 3, párr. 24).'
+fuentes:
+- it-silas
+- nota-hechos-16
+- si-3
+- hch-16
+enlaces:
+- titulo: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  tipo: biblia
+buscar: Pablo y Silas golpeados con varas
+consultado: '2026-09-29'
+estado: verificado

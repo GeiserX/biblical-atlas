@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-ante-galion
+titulo: Pablo ante el procónsul Galión en Corinto
+fecha:
+  desde: 51
+  hasta: 52
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 51 e.c. (Galión fue procónsul del verano de 51 al de 52)
+orden_relato:
+  serie: hechos
+  orden: 1812
+lugares:
+- corinto
+personas:
+- pablo
+- galion
+- sostenes
+pasajes:
+- Hch 18:12-17
+resumen: Los judíos de Corinto acusan a Pablo ante Galión, que rechaza el caso porque no ve delito según la ley
+  romana.
+razon: El estudio 3 (párr. 25) y Perspicacia «Galión» fechan el proconsulado del verano de 51 al de 52 con la inscripción
+  de Delfos; el juicio ocurrió durante ese año.
+fuentes:
+- si-3
+- it-galion
+- hch-18
+- it-sostenes
+buscar: Galión
+consultado: '2026-09-28'
+estado: verificado

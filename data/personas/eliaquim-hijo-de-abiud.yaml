@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliaquim-hijo-de-abiud
+nombre: Eliaquim
+nombres:
+- nombre: Eliaquim
+perspicacia: 1200001295#4
+desambiguacion: Eliaquim hijo de Abiud; no el administrador de Ezequías, el rey Jehoiaquim, el sacerdote de Nehemías ni el
+  antepasado de María.
+no_confundir_con:
+- jehoiaquim
+- eliaquim-hijo-de-melea
+resumen: Antepasado de José, el esposo de María, en la línea posterior al destierro. Mateo lo da como hijo de Abiud y padre
+  de Azor.
+razon: Perspicacia «Eliaquim», núm. 4; Mt 1:13.
+fuentes:
+- it-eliaquim
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Eliaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001295
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: abiud
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-1
+  razon: Mt 1:13.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jezreel
+nombre: Jezreel
+nombres:
+- nombre: Jezreel
+tipo: ciudad
+lat: 32.557853
+lon: 35.327953
+precision: punto
+coord_fuente: openbible:ae0bf4a
+coord_url: https://www.openbible.info/geo/ancient/ae0bf4a/jezreel-2
+resumen: Ciudad de Isacar que dominaba el valle de Jezreel. Acab y Jehoram tuvieron allí residencia; allí estaba la viña de
+  Nabot y allí acabó Jehú con Jezabel.
+razon: 'Perspicacia «Jezreel», núm. 4, párr. 4, 5 y 10: Zerʽin (Tel Yizreʽel), unos 11 km al NNE de Jenin; 1Re 21 y 2Re 9.
+  OpenBible: solo el punto.'
+fuentes:
+- it-jezreel
+- openbible-geo
+- 1-reyes-21
+- oseas-1
+enlaces:
+- titulo: 'Perspicacia: «Jezreel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
+  tipo: perspicacia
+- titulo: 1 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

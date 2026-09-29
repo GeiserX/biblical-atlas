@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: medad
+nombre: Medad
+nombres:
+- nombre: Medad
+perspicacia: '1200002953'
+resumen: Uno de los 70 ancianos escogidos para ayudar a Moisés. Se quedó en el campamento con Eldad en vez de ir a la tienda
+  de reunión, y allí recibió el espíritu y se portó como profeta.
+razon: Perspicacia «Medad»; Nú 11:16, 17, 24-29.
+fuentes:
+- it-medad
+- numeros-11
+enlaces:
+- titulo: 'Perspicacia: «Medad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002953
+  tipo: perspicacia
+relaciones:
+- tipo: acompana
+  persona: moises
+  relacion: ayudante de
+  deducido: false
+  fuentes:
+  - numeros-11
+  - it-medad
+  razon: 'Nú 11:16, 17, 26: figuraba entre los 70 ancianos que recibieron parte del espíritu de Moisés para compartir su carga.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

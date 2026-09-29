@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naama-hija-de-lamec
+nombre: Naamá
+nombres:
+- nombre: Naamá
+desambiguacion: Naamá hija de Lamec, de la línea de Caín; no Naamá la amonita, esposa de Salomón, ni la ciudad de Judá.
+perspicacia: 1200003148#1
+resumen: Hija de Lamec y Zilá y hermana de Tubal-Caín, de la línea de Caín. Como el resto de esa familia, no sobrevivió al
+  Diluvio.
+razon: Perspicacia «Naamá», núm. 1, y «Lamec», núm. 1; Gé 4:22.
+fuentes:
+- it-naama
+- it-lamec
+- genesis-4
+enlaces:
+- titulo: 'Perspicacia: «Naamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003148
+  tipo: perspicacia
+- titulo: Génesis 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/4
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: lamec-hijo-de-metusael
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-naama
+  - genesis-4
+  razon: 'Perspicacia «Naamá», núm. 1: hija de Lamec (Gé 4:19, 22).'
+  estado: verificado
+- tipo: pariente
+  persona: zila
+  relacion: madre
+  deducido: true
+  fuentes:
+  - it-naama
+  - genesis-4
+  razon: 'Perspicacia «Naamá», núm. 1: hija de Zilá (Gé 4:22).'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

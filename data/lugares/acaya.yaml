@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: acaya
+nombre: Acaya
+nombres:
+- nombre: Acaya
+tipo: provincia
+lat: 38.72
+lon: 22.54
+precision: zona
+coord_fuente: openbible:aef4242
+coord_url: https://www.openbible.info/geo/ancient/aef4242/achaia
+coord_nota: Punto representativo de la región; no es una ciudad.
+resumen: Provincia romana del sur de Grecia, con Corinto; Galión fue su procónsul mientras Pablo estaba allí.
+razon: 'Perspicacia («Acaya») describe el lugar; aparece en Hch 18:12. La coordenada es de OpenBible: solo tomamos
+  el punto.'
+fuentes:
+- it-acaya
+- hch-18
+- openbible-geo
+- 2-corintios-1
+- 2-corintios-9
+enlaces:
+- titulo: 'Perspicacia: «Acaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000072
+  tipo: perspicacia
+- titulo: Hechos 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,78 @@
+# biblical-earth: fuentes del carril «marco» (eras, potencias, emperadores, libros y calendario). Esquema en docs/investigacion/README.md.
+tnm-b9:
+  titulo: B9 Las potencias mundiales predichas por Daniel
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070229
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+tnm-b15:
+  titulo: B15 El calendario hebreo
+  obra: La Biblia. Traducción del Nuevo Mundo (edición de estudio)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1001070237
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-asiria:
+  titulo: Asiria
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000447
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-grecia:
+  titulo: Grecia, griegos
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001765
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-alejandro:
+  titulo: Alejandro
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-partos:
+  titulo: Partos
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003390
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-fiesta-dedicacion:
+  titulo: Fiesta de la dedicación
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001506
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+it-bestias-simbolicas:
+  titulo: Bestias simbólicas
+  obra: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000591
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+lbt-imperios:
+  titulo: Imperios que atacaron la Tierra Prometida
+  obra: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003106
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+lbt-grecia-y-roma:
+  titulo: La influencia de Grecia y Roma en el pueblo judío
+  obra: Veamos “la buena tierra”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102003112
+  nivel: 1
+  publicado: null
+  consultado: '2026-09-28'
+g10-egipto:
+  titulo: Un libro digno de confianza. Primera parte
+  obra: ¡Despertad! (noviembre de 2010)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/102010407
+  nivel: 1
+  publicado: 2010
+  consultado: '2026-09-28'

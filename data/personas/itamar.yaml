@@ -1,0 +1,78 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itamar
+nombre: Itamar
+nombres:
+- nombre: Itamar
+perspicacia: '1200002236'
+resumen: Cuarto hijo de Aarón y Eliseba. Dirigió a los levitas en el inventario del tabernáculo y fue escogido sacerdote con
+  su padre y sus hermanos; después supervisó a guersonitas y meraritas.
+razon: Perspicacia «Itamar»; Éx 6:23; 28:1; 38:21; Nú 4:28, 33.
+fuentes:
+- it-itamar
+- exodo-6
+- exodo-28
+- exodo-38
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
+- numeros-3
+- numeros-4
+- numeros-7
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Itamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
+  tipo: perspicacia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+- titulo: Éxodo 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/38
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: aaron
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-itamar
+  - exodo-28
+  - exodo-38
+  - levitico-10
+  - numeros-3
+  - numeros-4
+  - numeros-7
+  - numeros-26
+  razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
+  estado: verificado
+- tipo: pariente
+  persona: eliseba
+  relacion: madre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-itamar
+  razon: 'Éx 6:23: Eliseba se los dio a Aarón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1512
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513-1512 a.e.c.
+  deducido: false
+  fuentes:
+  - numeros-3
+  - si-3
+  - it-sinai
+  razon: 'Nú 3:14, 38: los hijos de Aarón acampaban al este del tabernáculo, en el desierto de Sinaí, que Israel dejó en 1512
+    a.e.c. (Perspicacia «Sinaí»).'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

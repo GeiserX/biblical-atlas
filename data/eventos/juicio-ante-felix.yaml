@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juicio-ante-felix
+titulo: Tértulo acusa a Pablo ante Félix
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2401
+lugares:
+- cesarea
+personas:
+- pablo
+- felix
+- tertulo
+- ananias-sumo-sacerdote
+pasajes:
+- Hch 24:1-23
+resumen: Cinco días después bajan el sumo sacerdote, unos ancianos y el orador Tértulo. Acusan a Pablo de sedición y de intentar
+  profanar el templo; él lo niega y Félix aplaza el caso.
+razon: Perspicacia «Félix» (párr. 3) y «Tértulo».
+fuentes:
+- it-felix
+- it-tertulo
+- hch-24
+- bt-24
+buscar: Tértulo Félix Pablo
+historial:
+- fecha: '2026-09-29'
+  cambio: Hch 24:6 lo acusa de intentar profanar el templo, no de haberlo profanado; 24:1 nombra también a los ancianos.
+  fuente: hch-24
+consultado: '2026-09-29'
+estado: verificado

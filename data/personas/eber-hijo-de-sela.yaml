@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eber-hijo-de-sela
+nombre: Éber
+nombres:
+- nombre: Éber
+perspicacia: 1200001249#1
+desambiguacion: Éber hijo de Selá; no los otros cuatro Éber de Crónicas y Nehemías.
+resumen: Hijo de Selá y antepasado de Abrahán; padre de Péleg y de Joctán. Sobrevivió a Péleg unos 191 años. Sem es llamado
+  antepasado de todos sus hijos.
+razon: Perspicacia «Éber», núm. 1; Gé 10:21, 24, 25 y 11:14-17.
+fuentes:
+- it-eber
+- genesis-10
+- genesis-11
+- lucas-3
+enlaces:
+- titulo: 'Perspicacia: «Éber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001249
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: sela-hijo-de-arpaksad
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  - genesis-11
+  - lucas-3
+  razon: 'Gé 10:24: Selá fue padre de Éber; Gé 11:14, a los 30 años.'
+  estado: verificado
+- tipo: pariente
+  persona: sem
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: 'Gé 10:21: Sem es antepasado de todos los descendientes de Éber.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

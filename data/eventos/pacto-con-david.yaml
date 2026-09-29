@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-con-david
+titulo: El Arca llega a Jerusalén y Jehová pacta un reino con David
+fecha:
+  desde: -1069
+  hasta: -1069
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1070 a.e.c.
+lugares:
+- jerusalen
+personas:
+- david
+- natan-profeta
+pasajes:
+- 2Sa 6:12-15
+- 2Sa 7:12-16
+- Sl 89:3, 4
+- Sl 89:19-37
+- Sl 132:6-8
+- Sl 132:11, 12
+resumen: David sube el arca del pacto a Jerusalén. Por medio de Natán, Jehová le promete que su descendencia tendrá un reino
+  estable para siempre.
+razon: El estudio 3 pone estos sucesos después de 1070 y la lámina B7 fecha el pacto hacia 1070; Perspicacia «Natán», núm.
+  2.
+fuentes:
+- si-3
+- tnm-b7
+- it-natan
+- 2-samuel-7
+enlaces:
+- titulo: 'Perspicacia: «Natán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003184
+  tipo: perspicacia
+- titulo: 2 Samuel 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/7
+  tipo: biblia
+buscar: pacto del Reino con David
+consultado: '2026-09-29'
+estado: verificado

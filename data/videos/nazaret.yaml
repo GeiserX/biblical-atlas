@@ -1,68 +1,68 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: nazaret
-generated_on: "2026-09-28"
+lugar: nazaret
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwbcov24_9_VIDEO"
-    title: "Lecciones sobre la tierra en la que vivió Jesús"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_9_VIDEO&appLanguage=S"
-    published: "2025-01-20"
-    hits: 6
-    terms:
+    publicado: "2025-01-20"
+    menciones: 6
+    terminos:
       "Nazaret": 6
   - docid: "pub-jwbcov25_7_VIDEO"
-    title: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
-    published: "2026-01-19"
-    hits: 6
-    terms:
+    publicado: "2026-01-19"
+    menciones: 6
+    terminos:
       "Nazaret": 6
   - docid: "pub-gnj_1_VIDEO"
-    title: "Episodio 1: La verdadera luz del mundo"
+    titulo: "Episodio 1: La verdadera luz del mundo"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-1-verdadera-luz-del-mundo/"
-    published: "2024-12-23"
-    hits: 4
-    terms:
+    publicado: "2024-12-23"
+    menciones: 4
+    terminos:
       "Nazaret": 4
   - docid: "pub-gnj_2_VIDEO"
-    title: "Episodio 2: “Este es mi Hijo”"
+    titulo: "Episodio 2: “Este es mi Hijo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-2-este-es-mi-hijo/"
-    published: "2026-01-19"
-    hits: 2
-    terms:
+    publicado: "2026-01-19"
+    menciones: 2
+    terminos:
       "Nazaret": 2
   - docid: "pub-gnj_3_VIDEO"
-    title: "Episodio 3: “Ese soy yo”"
+    titulo: "Episodio 3: “Ese soy yo”"
     url: "https://www.jw.org/es/biblioteca/videos/buenas-noticias-jesus/episodio-3-ese-soy-yo/"
-    published: "2026-01-19"
-    hits: 2
-    terms:
+    publicado: "2026-01-19"
+    menciones: 2
+    terminos:
       "Nazaret": 2
   - docid: "pub-jwb-119_1_VIDEO"
-    title: "JW Broadcasting: Noviembre de 2024 (graduación de la clase 156 de la Escuela de Galaad)"
+    titulo: "JW Broadcasting: Noviembre de 2024 (graduación de la clase 156 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-119_1_VIDEO&appLanguage=S"
-    published: "2024-11-04"
-    hits: 2
-    terms:
+    publicado: "2024-11-04"
+    menciones: 2
+    terminos:
       "Nazaret": 2
   - docid: "pub-jwban_201503_1_VIDEO"
-    title: "Gerrit Lösch: “La palabra profética” nos fortalece"
+    titulo: "Gerrit Lösch: “La palabra profética” nos fortalece"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201503_1_VIDEO&appLanguage=S"
-    published: "2016-11-02"
-    hits: 2
-    terms:
+    publicado: "2016-11-02"
+    menciones: 2
+    terminos:
       "Nazaret": 2
   - docid: "pub-jwbcov24_14_VIDEO"
-    title: "¡Las profecías sobre el Mesías se cumplieron!"
+    titulo: "¡Las profecías sobre el Mesías se cumplieron!"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_14_VIDEO&appLanguage=S"
-    published: "2025-01-20"
-    hits: 2
-    terms:
+    publicado: "2025-01-20"
+    menciones: 2
+    terminos:
       "Nazaret": 2
   - docid: "pub-lffv_151_VIDEO"
-    title: "Profecías cumplidas en Jesús"
+    titulo: "Profecías cumplidas en Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-lffv_151_VIDEO&appLanguage=S"
-    published: "2021-01-13"
-    hits: 2
-    terms:
+    publicado: "2021-01-13"
+    menciones: 2
+    terminos:
       "Nazaret": 2

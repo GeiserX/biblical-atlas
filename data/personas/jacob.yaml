@@ -1,0 +1,301 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jacob
+nombre: Jacob
+nombres:
+- nombre: Jacob
+- nombre: Israel
+  nota: Nombre que recibió tras luchar con un ángel junto al Jaboq (Gé 32:28).
+fecha:
+  desde: -1857
+  hasta: -1710
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1858-1711 a.e.c.
+desambiguacion: Jacob hijo de Isaac, llamado Israel; no el Jacob padre de José, el esposo de María.
+resumen: Hijo de Isaac y Rebeca, gemelo menor de Esaú. Vivió veinte años en Harán, donde se casó con Lea y Raquel. De sus
+  doce hijos salieron las tribus de Israel. Murió en Egipto a los 147 años.
+razon: 'Perspicacia «Jacob», núm. 1, párr. 2, 10, 13, 25 y 41: nace en 1858 y muere en 1711 a.e.c. El cuadro del estudio
+  3 da los mismos años.'
+fuentes:
+- it-jacob
+- si-3
+- genesis-25
+- genesis-47
+- mateo-1
+- genesis-27
+- genesis-28
+- genesis-29
+- genesis-30
+- genesis-31
+- genesis-32
+- genesis-33
+- genesis-34
+- genesis-35
+- genesis-37
+- genesis-42
+- genesis-43
+- genesis-44
+- genesis-45
+- genesis-46
+- genesis-48
+- genesis-49
+- genesis-50
+- salmos-105
+- lucas-3
+- juan-4
+- hechos-7
+- romanos-9
+- deuteronomio-26
+- it-aram
+- oseas-12
+enlaces:
+- titulo: 'Perspicacia: «Jacob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002279
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: isaac
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-25
+  - mateo-1
+  - genesis-48
+  - lucas-3
+  - hechos-7
+  - romanos-9
+  razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
+  estado: verificado
+- tipo: pariente
+  persona: rebeca
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-25
+  - romanos-9
+  razon: 'Perspicacia «Jacob», párr. 2: hijo de Isaac y Rebeca (Gé 25:24-26).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: haran
+  fecha:
+    desde: -1780
+    hasta: -1760
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1781-1761 a.e.c.
+  deducido: false
+  fuentes:
+  - si-3
+  - it-jacob
+  - genesis-29
+  - genesis-30
+  - genesis-31
+  razon: El estudio 3 fecha su huida a Harán en 1781 y su regreso en 1761 a.e.c.; Perspicacia «Jacob», párr. 10, cuenta veinte
+    años.
+  estado: verificado
+- tipo: vivio_en
+  lugar: siquem
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-33
+  razon: 'Perspicacia «Jacob», párr. 28: compró un terreno junto a Siquem y se quedó allí (Gé 33:18-20).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: betel
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-35
+  razon: 'Perspicacia «Jacob», párr. 30 a 32: por mandato de Dios se trasladó a Betel y vivió allí un tiempo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-35
+  - genesis-37
+  razon: 'Perspicacia «Jacob», párr. 34: se trasladó a Hebrón, donde vivía Isaac (Gé 35:27).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  fecha:
+    desde: -1727
+    hasta: -1710
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1728-1711 a.e.c.
+  deducido: false
+  fuentes:
+  - it-jacob
+  - genesis-47
+  - genesis-46
+  - salmos-105
+  - it-cam
+  - hechos-7
+  - deuteronomio-26
+  razon: 'Perspicacia «Jacob», párr. 38 y 41: llegó a Egipto en 1728 y murió allí en 1711, tras 17 años (Gé 47:28).'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  fecha:
+    desde: -1710
+    hasta: -1710
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1711 a.e.c.
+  deducido: false
+  fuentes:
+  - it-jacob
+  - si-3
+  - genesis-47
+  - genesis-49
+  - hechos-7
+  razon: 'Perspicacia «Jacob», párr. 41: murió en 1711 a.e.c. después de vivir 17 años en Egipto (Gé 47:28).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: beer-seba
+  deducido: false
+  fuentes:
+  - genesis-28
+  - it-jacob
+  razon: 'Gé 28:10: sale de Beer-Seba hacia Harán; Perspicacia «Jacob», párr. 10: tenía 77 años.'
+  estado: verificado
+- tipo: pariente
+  persona: laban
+  relacion: tío
+  deducido: false
+  fuentes:
+  - genesis-28
+  - genesis-29
+  - it-laban
+  razon: 'Gé 28:2 y 29:10: Labán es hermano de su madre; desde la boda con Lea y Raquel, también su suegro.'
+  estado: verificado
+- tipo: pariente
+  persona: lea
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-29
+  - it-lea
+  - it-jacob
+  - genesis-32
+  - genesis-33
+  - genesis-35
+  razon: 'Gé 29:23-25: Labán le da a Lea en la noche de bodas; Perspicacia «Lea», párr. 3: fue su primera esposa.'
+  estado: verificado
+- tipo: pariente
+  persona: raquel
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - genesis-29
+  - it-raquel
+  - it-jacob
+  - genesis-32
+  - genesis-33
+  - genesis-35
+  razon: 'Gé 29:28: una semana después Labán le da a Raquel por esposa.'
+  estado: verificado
+- tipo: pariente
+  persona: bilha
+  relacion: esposa secundaria
+  deducido: false
+  fuentes:
+  - genesis-30
+  - it-bilha
+  - genesis-35
+  - genesis-37
+  - genesis-46
+  razon: 'Gé 30:3, 4: Raquel se la entrega como esposa; Perspicacia «Bilhá» la llama esposa secundaria.'
+  estado: verificado
+- tipo: pariente
+  persona: zilpa
+  relacion: esposa secundaria
+  deducido: false
+  fuentes:
+  - genesis-30
+  - it-zilpa
+  - genesis-35
+  - genesis-37
+  - genesis-46
+  razon: 'Gé 30:9: Lea se la entrega como esposa; Perspicacia «Zilpá» la llama esposa secundaria.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: sucot
+  deducido: false
+  fuentes:
+  - it-jacob
+  - it-sucot
+  - genesis-33
+  razon: 'Gé 33:17: se hizo allí una casa; Perspicacia «Jacob», núm. 1: quizá vivió allí varios años.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: padan-aram
+  deducido: false
+  fuentes:
+  - it-padan
+  - genesis-33
+  - genesis-35
+  - deuteronomio-26
+  - it-aram
+  - oseas-12
+  razon: 'Gé 33:18: Jacob llegaba de Padán-Aram, donde había servido a Labán.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: mamre
+  deducido: false
+  fuentes:
+  - it-mamre
+  - genesis-35
+  razon: 'Gé 35:27: llegó a Mamré, junto a Quiryat-Arbá, es decir, Hebrón.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: canaan
+  deducido: false
+  fuentes:
+  - genesis-37
+  - genesis-42
+  - genesis-45
+  - genesis-46
+  - salmos-105
+  - it-canaan
+  - hechos-7
+  razon: 'Gé 37:1: siguió viviendo en Canaán, donde su padre había residido como extranjero.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gosen
+  deducido: false
+  fuentes:
+  - genesis-47
+  - it-gosen
+  razon: 'Gé 47:27: Israel se quedó con su familia en la tierra de Gosén, en Egipto.'
+  estado: verificado
+- tipo: pariente
+  persona: abrahan
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - genesis-48
+  - it-jacob
+  razon: 'Gé 48:15, 16: llama a Abrahán e Isaac sus padres; Abrahán era el padre de Isaac, su padre.'
+  estado: verificado
+perspicacia: 1200002279#1
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- jacob-hijo-de-mattan

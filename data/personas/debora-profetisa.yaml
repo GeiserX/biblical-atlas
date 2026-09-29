@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: debora-profetisa
+nombre: Débora
+nombres:
+- nombre: Débora
+desambiguacion: Débora la profetisa, esposa de Lapidot; no Débora, la nodriza de Rebeca.
+resumen: Profetisa que juzgaba a Israel bajo una palmera entre Ramá y Betel. Llamó a Barac para vencer al ejército de Jabín,
+  que mandaba Sísara, y compuso con él un canto de victoria.
+razon: Perspicacia «Débora», núm. 2, párr. 3 a 5; Jue 4:4-9 y 5:1-31.
+fuentes:
+- it-debora
+- jueces-4
+enlaces:
+- titulo: 'Perspicacia: «Débora»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001138
+  tipo: perspicacia
+- titulo: Jueces 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- debora-nodriza-de-rebeca

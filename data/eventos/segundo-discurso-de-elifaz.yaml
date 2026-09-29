@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segundo-discurso-de-elifaz
+titulo: Segundo discurso de Elifaz
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 15001
+lugares:
+- uz
+presentes:
+- elifaz-el-temanita
+- job
+- bildad
+- zofar
+personas:
+- elifaz-el-temanita
+- job
+- bildad
+- zofar
+pasajes:
+- Job 15:1-35
+resumen: 'Elifaz abre la segunda serie del debate: ridiculiza la sabiduría de Job, lo acusa de rebelarse contra Dios y le
+  describe el castigo que espera al malvado.'
+razon: Perspicacia «Job» sitúa la prueba de Job hacia 1613 a.e.c. (Moisés acabaría el libro en 1473 y Job vivió después 140
+  años); el estudio 3 la pone antes de ese año. En Uz, donde vivía Job, con los tres compañeros.
+fuentes:
+- job-15
+- it-job
+- it-job-libro
+- si-3
+- it-elifaz
+- it-uz
+enlaces:
+- titulo: Job 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

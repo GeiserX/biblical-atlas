@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-presenta-a-su-familia-al-faraon
+titulo: José presenta a su padre y a sus hermanos al faraón
+fecha:
+  desde: -1727
+  hasta: -1727
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1728 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 47001
+lugares:
+- egipto
+- gosen
+personas:
+- jose-hijo-de-jacob
+- jacob
+pasajes:
+- Gé 47:1-10
+resumen: José lleva ante el faraón a cinco de sus hermanos, que se presentan como pastores y piden quedarse en Gosén. Después
+  le presenta a Jacob, que tiene 130 años y bendice al faraón.
+razon: 'Perspicacia «Jacob», párr. 38: nada más llegar, en 1728 a.e.c., llevaron a Jacob a la corte. «José», párr. 29. El
+  estudio 3 da el mismo año y cita Gé 47:9.'
+fuentes:
+- genesis-47
+- it-jacob
+- it-jose
+- si-3
+enlaces:
+- titulo: Génesis 47 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/47
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: galion
+nombre: Galión, procónsul de Acaya
+tipo: gobernador
+persona: galion
+fecha:
+  desde: 51
+  hasta: 52
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: verano de 51 a verano de 52 e.c.
+lugares:
+- acaya
+resumen: Procónsul de Acaya que rechazó la acusación de los judíos contra Pablo en Corinto. Algunos eruditos prefieren
+  52-53.
+razon: 'Perspicacia «Galión» y el estudio 3 (párr. 25) fechan su año de mandato con la inscripción de Delfos: del
+  verano de 51 al de 52.'
+fuentes:
+- it-galion
+- si-3
+buscar: Galión
+consultado: '2026-09-28'
+estado: verificado

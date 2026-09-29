@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: entre-malaquias-y-mateo
+nombre: Entre Malaquías y Mateo
+tipo: era
+fecha:
+  desde: -442
+  hasta: -1
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: después de 443 a.e.c. - 2 a.e.c.
+resumen: Cuatro siglos sin libro bíblico. Grecia y después Roma dominan Judea, se empieza la traducción griega de la Septuaginta
+  y el templo vuelve a dedicarse.
+razon: El cuadro del estudio 3 pone en este tramo la Septuaginta (c. 280), la nueva dedicación del templo (165) y el dominio
+  de Roma sobre Jerusalén (63 a.e.c.).
+fuentes:
+- si-3
+buscar: Septuaginta Grecia Roma Judea
+consultado: '2026-09-28'
+estado: verificado
+nota: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

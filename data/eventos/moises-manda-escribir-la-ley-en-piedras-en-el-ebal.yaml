@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-manda-escribir-la-ley-en-piedras-en-el-ebal
+titulo: Moisés manda escribir la Ley en piedras en el monte Ebal
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 127001
+lugares:
+- llanuras-deserticas-de-moab
+- monte-ebal
+personas:
+- moises
+pasajes:
+- Dt 27:1-8
+resumen: Junto a los ancianos de Israel, Moisés ordena que, al cruzar el Jordán, alcen en el monte Ebal grandes piedras encaladas
+  con la Ley escrita y un altar de piedra sin labrar para ofrendas y sacrificios de paz.
+razon: 'Dicho en las llanuras de Moab. La tabla de libros y el estudio 3 fechan Deuteronomio en 1473 a.e.c. Perspicacia «Ebal,
+  Monte»: Josué lo cumplió después de tomar Hai. Va tras Números en su serie.'
+fuentes:
+- deuteronomio-27
+- tnm-tabla
+- si-3
+- it-deuteronomio-libro
+- it-ebal-monte
+enlaces:
+- titulo: Deuteronomio 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/27
+  tipo: biblia
+- titulo: 'Perspicacia: «Ebal, Monte»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001245
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

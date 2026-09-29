@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: areopago
+nombre: Areópago
+nombres:
+- nombre: Areópago
+- nombre: Colina de Ares
+  nota: 'Lo que significa el nombre: para los griegos, Ares era el dios de la guerra (nota de estudio de Hch 17:19).'
+- nombre: Colina de Marte
+  nota: Forma de algunas traducciones, porque Marte es el equivalente romano de Ares.
+tipo: monte
+lat: 37.972222
+lon: 23.723611
+precision: punto
+coord_fuente: openbible:a815d89
+coord_url: https://www.openbible.info/geo/ancient/a815d89/areopagus
+coord_nota: Punto de la colina. No se sabe si Pablo habló en ella o ante el tribunal reunido en otro sitio, quizá el ágora.
+resumen: Colina caliza al oeste-noroeste de la Acrópolis de Atenas. Allí se reunía por tradición el tribunal superior de la
+  ciudad, que llevaba su nombre. A ella llevaron a Pablo para que explicara su enseñanza.
+razon: 'Perspicacia «Areópago», párr. 1 y 2, y «Atenas», apartado sobre Pablo; nota de estudio de Hch 17:19. Coordenada de
+  OpenBible: solo tomamos el punto.'
+fuentes:
+- it-areopago
+- it-atenas
+- nota-hechos-17
+- hch-17
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Areópago»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000355
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

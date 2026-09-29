@@ -1,54 +1,54 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: tarso
-generated_on: "2026-09-28"
+lugar: tarso
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwb-091_12_VIDEO"
-    title: "David Splane: Vayamos por el camino de la humildad"
+    titulo: "David Splane: Vayamos por el camino de la humildad"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_12_VIDEO&appLanguage=S"
-    published: "2022-06-28"
-    hits: 5
-    terms:
+    publicado: "2022-06-28"
+    menciones: 5
+    terminos:
       "Tarso": 5
   - docid: "pub-jwb-091_4_VIDEO"
-    title: "Graduación de la clase 151 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+    titulo: "Graduación de la clase 151 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-091_4_VIDEO&appLanguage=S"
-    published: "2022-06-27"
-    hits: 5
-    terms:
+    publicado: "2022-06-27"
+    menciones: 5
+    terminos:
       "Tarso": 5
   - docid: "pub-jwb-092_1_VIDEO"
-    title: "JW Broadcasting: Marzo de 2023"
+    titulo: "JW Broadcasting: Marzo de 2023"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-092_1_VIDEO&appLanguage=S"
-    published: "2023-03-06"
-    hits: 4
-    terms:
+    publicado: "2023-03-06"
+    menciones: 4
+    terminos:
       "Tarso": 4
   - docid: "pub-jwb-092_7_VIDEO"
-    title: "David Schafer: Digamos palabras de ánimo (Hech. 13:15)"
+    titulo: "David Schafer: Digamos palabras de ánimo (Hech. 13:15)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-092_7_VIDEO&appLanguage=S"
-    published: "2023-03-20"
-    hits: 4
-    terms:
+    publicado: "2023-03-20"
+    menciones: 4
+    terminos:
       "Tarso": 4
   - docid: "pub-jwb-085_14_VIDEO"
-    title: "Geoffrey Jackson: ¡Compartan lo que aprendieron!"
+    titulo: "Geoffrey Jackson: ¡Compartan lo que aprendieron!"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_14_VIDEO&appLanguage=S"
-    published: "2021-12-21"
-    hits: 2
-    terms:
+    publicado: "2021-12-21"
+    menciones: 2
+    terminos:
       "Tarso": 2
   - docid: "pub-jwb-085_3_VIDEO"
-    title: "Graduación de la clase 150 de la Escuela de Galaad (parte 2)"
+    titulo: "Graduación de la clase 150 de la Escuela de Galaad (parte 2)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-085_3_VIDEO&appLanguage=S"
-    published: "2021-12-20"
-    hits: 2
-    terms:
+    publicado: "2021-12-20"
+    menciones: 2
+    terminos:
       "Tarso": 2
   - docid: "pub-jwb-133_3_VIDEO"
-    title: "Michael Banks: ¿Dejarán huella? (graduación de la clase 158 de la Escuela de Galaad)"
+    titulo: "Michael Banks: ¿Dejarán huella? (graduación de la clase 158 de la Escuela de Galaad)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-133_3_VIDEO&appLanguage=S"
-    published: "2025-12-02"
-    hits: 2
-    terms:
+    publicado: "2025-12-02"
+    menciones: 2
+    terminos:
       "Tarso": 2

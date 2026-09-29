@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cesarea-de-filipo
+nombre: Cesarea de Filipo
+nombres:
+- nombre: Cesarea de Filipo
+- nombre: Paneas
+  nota: Nombre anterior, en honor del dios Pan (Perspicacia).
+- nombre: Banias
+  nota: Pueblo actual en el mismo lugar.
+tipo: ciudad
+lat: 33.246111
+lon: 35.693333
+precision: punto
+coord_fuente: openbible:ab7bf48
+coord_url: https://www.openbible.info/geo/ancient/ab7bf48/caesarea-philippi
+resumen: Ciudad junto a una fuente del Jordán, al pie del monte Hermón. El tetrarca Filipo la amplió y la llamó Cesarea. Camino
+  de sus aldeas, Pedro reconoció a Jesús como el Cristo.
+razon: 'Perspicacia «Cesarea de Filipo» (párr. 2-4) da el lugar, la historia del nombre y el suceso de Mt 16:13-20. Coordenada
+  de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-cesarea-de-filipo
+- mateo-16
+- openbible-geo
+- marcos-8
+enlaces:
+- titulo: 'Perspicacia: «Cesarea de Filipo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000854
+  tipo: perspicacia
+- titulo: Mateo 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

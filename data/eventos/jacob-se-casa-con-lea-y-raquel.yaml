@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-se-casa-con-lea-y-raquel
+titulo: Jacob se casa con Lea y con Raquel
+fecha:
+  desde: -1773
+  hasta: -1773
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1774 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 29015
+lugares:
+- haran
+personas:
+- jacob
+- laban
+- lea
+- raquel
+- zilpa
+- bilha
+pasajes:
+- Gé 29:15-30
+- Os 12:12
+resumen: Jacob sirve siete años por Raquel, pero en la noche de bodas Labán le da a Lea. Una semana después recibe también
+  a Raquel a cambio de otros siete años. Labán da una sierva a cada hija.
+razon: El estudio 3 fecha la boda en 1774 a.e.c. (Gé 29:23-30); Perspicacia «Zilpá», párr. 2, da el mismo año. Perspicacia
+  «Lea», párr. 3.
+fuentes:
+- si-3
+- it-lea
+- it-zilpa
+- genesis-29
+enlaces:
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

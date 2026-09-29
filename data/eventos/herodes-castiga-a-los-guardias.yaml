@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: herodes-castiga-a-los-guardias
+titulo: Herodes busca a Pedro y castiga a los guardias
+fecha:
+  desde: 44
+  hasta: 44
+  precision: mes
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Pascua de 44 e.c.
+  detalle:
+    mes: nisan
+orden_relato:
+  serie: hechos
+  orden: 1218
+lugares:
+- jerusalen
+personas:
+- herodes-agripa-i
+pasajes:
+- Hch 12:18, 19
+resumen: Al amanecer hay revuelo entre los soldados por la desaparición de Pedro. Herodes lo manda buscar a fondo, no lo halla,
+  interroga a los guardias y ordena castigarlos.
+razon: La mañana siguiente a la liberación (estudio 3, párr. 20). Perspicacia «Herodes», núm. 3, habla del castigo de los
+  guardias; «Testimonio completo», cap. 10, cree que los ejecutaron.
+fuentes:
+- hechos-12
+- si-3
+- it-herodes
+- bt-10
+enlaces:
+- titulo: Hechos 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/12
+  tipo: biblia
+buscar: Herodes castiga a los guardias Pedro
+consultado: '2026-09-29'
+estado: verificado

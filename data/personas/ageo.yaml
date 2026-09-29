@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ageo
+nombre: Ageo
+nombres:
+- nombre: Ageo
+fecha:
+  desde: -519
+  hasta: -514
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: de 520 a 515 a.e.c.
+resumen: Primer profeta después del destierro. En 520 a.e.c., segundo año de Darío I, dio cuatro mensajes en unos cuatro
+  meses que movieron a reanudar el templo, y siguió animando hasta terminarlo.
+razon: 'Perspicacia «Ageo»: profetizó en Jerusalén mientras gobernaba Zorobabel y reinaba Darío Histaspes; mensajes de 520
+  y ánimo hasta el final del sexto año de Darío (515). Ag 1:1.'
+fuentes:
+- it-ageo
+- ageo-1
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Ageo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001812
+  tipo: perspicacia
+- titulo: Ageo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  tipo: biblia
+no_afirmamos:
+- 'Que Ageo fuera sacerdote o miembro de la Gran Sinagoga: son opiniones que Perspicacia recoge sin confirmarlas.'
+- 'Que Ageo volviera con Zorobabel en 537 a.e.c.: Perspicacia lo ve probable, no seguro.'
+relaciones:
+- tipo: vivio_en
+  lugar: jerusalen
+  fecha:
+    desde: -519
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 520 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-ageo
+  - ageo-1
+  razon: 'Perspicacia «Ageo»: profetizó en Jerusalén mientras Zorobabel era gobernador.'
+  estado: verificado
+- tipo: acompana
+  persona: zacarias-profeta
+  fecha:
+    desde: -519
+    hasta: -514
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: de 520 a 515 a.e.c.
+  deducido: false
+  fuentes:
+  - it-ageo
+  - it-zacarias
+  - esdras-5
+  razon: 'Esd 5:1 y Perspicacia «Ageo»: Zacarías se unió a él unos dos meses después.'
+  estado: verificado
+consultado: '2026-09-28'
+estado: verificado

@@ -80,7 +80,7 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 
 **Cada lugar con nombre es un lugar**: ciudades, regiones, países, montes, ríos, mares, valles, desiertos, y también los que solo salen en una lista de fronteras o de etapas. Los dioses, las visiones y las construcciones siguen la tabla de la sección 4. Un lugar con varios nombres es una sola ficha, con los demás en `names` y su época si la fuente la da (Luz y Betel).
 
-- **Punto de OpenBible.** Se busca por su nombre en inglés (`grep -i '"friendly_id":"Moab' /tmp/be-wol/ancient.jsonl`) y se toma el punto de la primera resolución. `coord_source: openbible:<id>` y `coord_url: https://www.openbible.info/geo/ancient/<id>/<nombre-en-inglés>`. Una región o un país lleva `precision: zone` y dice en `coord_note` qué representa su punto.
+- **Punto de OpenBible.** Se busca por su nombre en inglés (`grep -i '"friendly_id":"Moab' /tmp/be-wol/ancient.jsonl`) Cada ficha de OpenBible trae una o varias identificaciones (los sitios actuales que se proponen) y cada identificación, una o varias resoluciones (sus puntos). Se toma la primera resolución de la primera identificación. Si jw.org nombra un sitio, aunque sea como propuesta («hay quien lo identifica con…»), y es otra identificación de la misma ficha, se toma la primera resolución de esa identificación, con `precision: uncertain`, y `coord_note` dice qué identificación es y qué sitio nombra jw.org. Si jw.org duda entre varios sitios, vale el punto siguiente. `coord_source: openbible:<id>` y `coord_url: https://www.openbible.info/geo/ancient/<id>/<nombre-en-inglés>`. Una región o un país lleva `precision: zone` y dice en `coord_note` qué representa su punto.
 - **Sin punto seguro.** Si jw.org no lo sitúa y OpenBible no tiene punto, o jw.org duda entre sitios, `lat` y `lon` van a `null` con `candidates` (sección «Lugares» de [README.md](README.md#campos-por-tipo)): una zona alrededor de lo que dice el texto («en el Négueb de Judá») con `coord_source: calculation` y la cuenta en `note`. Si ni eso, `candidates: []` y `status: pending`. Nunca un punto inventado.
 
 ## 6. Sucesos
@@ -123,6 +123,7 @@ roles:
 - Daniel 7 y 8 son de los años primero y tercero de Belsasar, antes de Daniel 5.
 - Ezequiel 29:17-21 es del año 27 del destierro, posterior a los capítulos que lo siguen (40:1 es del año 25).
 - Salmos: cada salmo con encabezamiento se ordena por el suceso que nombra; los demás no son sucesos.
+- 1473 a.e.c., de la victoria sobre Og al cruce del Jordán: Números, Deuteronomio y Josué 1-5 van en la serie `numeros`, porque `build.py` ordena las series de un mismo año por su nombre y `deuteronomio` o `josue` saldrían antes que Números. Números usa su capítulo y versículo; Deuteronomio les suma 100000 (`primer-discurso-de-moises` es 101001) y Josué, 200000 (`entrada-en-canaan` es 203014).
 
 Las series `a7` y `hechos` ya tienen su propia numeración.
 

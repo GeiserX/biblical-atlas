@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: david
+nombre: Reinado de David sobre todo Israel
+tipo: rey
+persona: david
+fecha:
+  desde: -1076
+  hasta: -1037
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1077-1038 a.e.c.
+lugares:
+- hebron
+- jerusalen
+resumen: 'Reinó cuarenta años: primero sobre Judá en Hebrón y, desde 1070, sobre todo Israel en Jerusalén.'
+razon: B7 da el reinado de 1077 a 1038; el estudio 3 fija Hebrón en 1077 y Jerusalén en 1070 (2Sa 5:3-7).
+fuentes:
+- tnm-b7
+- 2-samuel-5
+- it-david
+buscar: David rey
+consultado: '2026-09-28'
+estado: verificado

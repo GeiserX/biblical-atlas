@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: timoteo-se-une-a-pablo
+titulo: Timoteo se une a Pablo en Listra
+fecha:
+  desde: 49
+  hasta: 50
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: c. 49-50 e.c. (entre finales de 49 y principios de 50)
+orden_relato:
+  serie: hechos
+  orden: 1601
+lugares:
+- listra
+personas:
+- pablo
+- silas
+- timoteo
+pasajes:
+- Hch 16:1-3
+resumen: Los hermanos de Listra e Iconio hablan bien de Timoteo y Pablo lo invita a acompañarlo. Lo circuncida para
+  no poner obstáculos a los judíos.
+razon: 'Perspicacia «Pablo» (párr. 15) y «Timoteo»; «Testimonio completo», cap. 15, párr. 14: lo conoció hacia 47
+  y dos o tres años después lo invitó.'
+fuentes:
+- it-pablo
+- it-timoteo
+- bt-15
+- hch-16
+buscar: Timoteo se une a Pablo
+consultado: '2026-09-28'
+estado: verificado

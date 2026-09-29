@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: 'on'
+nombre: 'On'
+nombres:
+- nombre: 'On'
+- nombre: Heliópolis
+  nota: Nombre griego que da la nota de Gé 41:45, 50.
+tipo: ciudad
+lat: 30.129444
+lon: 31.3075
+precision: punto
+coord_fuente: openbible:acd9137
+coord_url: https://www.openbible.info/geo/ancient/acd9137/heliopolis
+coord_nota: OpenBible usa este mismo punto para Egipto.
+resumen: Antigua ciudad de Egipto, al noreste de El Cairo, en la margen este del Nilo, cerca de donde empieza el delta. Centro
+  del culto al Sol; los griegos la llamaron Heliópolis. Potifera era sacerdote allí.
+razon: 'Perspicacia «On», núm. 2, párr. 1 y 2; Gé 41:45, 50. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-on
+- openbible-geo
+- genesis-41
+- it-potifera
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «On»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003325
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

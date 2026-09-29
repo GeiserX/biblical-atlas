@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoas-coronado
+titulo: Jehoás es coronado y Atalía ejecutada
+fecha:
+  desde: -897
+  hasta: -897
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 898 a.e.c.
+lugares:
+- jerusalen
+personas:
+- jehoas-de-juda
+- atalia
+pasajes:
+- 2Re 11:4-21
+- 2Cr 23:1-21
+resumen: A sus siete años, el sumo sacerdote Jehoiadá corona a Jehoás en el patio del templo con guardias armados. Atalía
+  grita que es una conspiración y la ejecutan.
+razon: El estudio 3 fecha en 898 el comienzo de Jehoás; Perspicacia «Jehoás», núm. 1, párr. 3, y «Atalía», núm. 1, párr. 3.
+fuentes:
+- si-3
+- it-jehoas
+- it-atalia-reina
+- 2-reyes-11
+enlaces:
+- titulo: 'Perspicacia: «Jehoás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Atalía»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000457
+  tipo: perspicacia
+- titulo: 2 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/11
+  tipo: biblia
+buscar: Jehoás coronado Jehoiadá
+consultado: '2026-09-28'
+estado: verificado

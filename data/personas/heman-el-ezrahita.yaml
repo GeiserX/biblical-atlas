@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heman-el-ezrahita
+nombre: Hemán
+nombres:
+- nombre: Hemán
+perspicacia: 1200001982#1
+resumen: Sabio de la tribu de Judá, descendiente de Zérah, al que Salomón superó en sabiduría; por ese origen lo llaman ezrahíta.
+  El encabezamiento del Salmo 88 le atribuye ese maskil.
+razon: Perspicacia «Hemán», núm. 1, y «Ezrahíta»; 1Re 4:31; 1Cr 2:6; encabezamiento del Salmo 88. Perspicacia «Salmos, Libro
+  de los» también lo nombra en el Salmo 88.
+desambiguacion: No es Hemán el cantor levita, hijo de Joel y nieto de Samuel, que servía con Asaf y Jedutún (Perspicacia,
+  núm. 2).
+fuentes:
+- it-heman
+- it-ezrahita
+- it-salmos-libro
+- salmos-88
+enlaces:
+- titulo: 'Perspicacia: «Hemán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001982
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Ezrahíta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001478
+  tipo: perspicacia
+- titulo: Salmo 88 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/88
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: zerah-hijo-de-juda
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - salmos-88
+  - it-ezrahita
+  - it-heman
+  razon: 1Cr 2:6 lo pone entre los descendientes de Zérah, hijo de Judá. El encabezamiento de Sl 88 lo llama ezrahíta, que para
+    Perspicacia equivale a zerahíta.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

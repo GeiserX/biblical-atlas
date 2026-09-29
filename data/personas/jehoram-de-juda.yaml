@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoram-de-juda
+nombre: Jehoram
+nombres:
+- nombre: Jehoram
+- nombre: Joram
+  nota: Forma abreviada.
+desambiguacion: Rey de Judá, hijo de Jehosafat; su cuñado Jehoram, hijo de Acab, reinaba a la vez en Israel.
+no_confundir_con:
+- jehoram-de-israel
+fecha:
+  desde: -912
+  hasta: -905
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 913-c. 906 a.e.c.
+resumen: Primogénito de Jehosafat y esposo de Atalía. Mató a sus seis hermanos y llevó a Judá a dioses falsos. Edom y Libná
+  se rebelaron y murió de una enfermedad de los intestinos.
+razon: Perspicacia «Jehoram», núm. 3; 2Re 8:16-24 y 2Cr 21.
+fuentes:
+- it-jehoram
+- 2-reyes-8
+- 2-cronicas-21
+- tnm-a6-a
+- mateo-1
+enlaces:
+- titulo: 'Perspicacia: «Jehoram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002381
+  tipo: perspicacia
+- titulo: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jehosafat
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-cronicas-21
+  - mateo-1
+  razon: Era el primogénito de Jehosafat (2Cr 21:1-3).
+  estado: verificado
+- tipo: pariente
+  persona: atalia
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-reyes-8
+  razon: Estaba casado con Atalía, hija de Acab (2Re 8:18).
+  estado: verificado
+- tipo: sucede_a
+  persona: jehosafat
+  deducido: false
+  fuentes:
+  - it-jehoram
+  - 2-reyes-8
+  razon: Llegó a ser rey aún en vida de Jehosafat (2Re 8:16).
+  estado: verificado
+perspicacia: 1200002381#3
+consultado: '2026-09-29'
+estado: verificado

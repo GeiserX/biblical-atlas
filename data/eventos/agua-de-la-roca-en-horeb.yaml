@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: agua-de-la-roca-en-horeb
+titulo: Moisés saca agua de la roca en Horeb
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 17001
+lugares:
+- masa
+- refidim
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Éx 17:1-7
+- Sl 78:15, 16, 20
+- Sl 95:8
+- Sl 105:41
+- Sl 114:8
+- 1Co 10:4
+- Nú 33:14
+- Dt 6:16
+- Dt 9:22
+- Dt 33:8
+resumen: En Refidim no hay agua y el pueblo discute con Moisés. Por orden de Jehová, él golpea con su vara una roca de Horeb
+  ante los ancianos y sale agua. Llama al lugar Masá y Meribá.
+razon: 'Perspicacia «Meribá», núm. 1: acamparon allí antes de cumplirse dos meses del éxodo, entre la llegada al desierto
+  de Sin y la llegada al Sinaí, en 1513 a.e.c. (estudio 3).'
+fuentes:
+- exodo-17
+- it-meriba
+- it-masah
+- it-refidim
+- it-horeb
+- si-3
+- 1-corintios-10
+- deuteronomio-6
+- deuteronomio-33
+enlaces:
+- titulo: Éxodo 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

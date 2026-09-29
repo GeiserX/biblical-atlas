@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebedeo
+nombre: Zebedeo
+nombres:
+- nombre: Zebedeo
+resumen: Padre de los apóstoles Santiago y Juan. Tenía en el mar de Galilea un negocio de pesca con asalariados.
+  No consta que siguiera a Jesús, pero su familia sí lo hizo.
+razon: Perspicacia «Zebedeo» (párr. 2 y 3); Mr 1:19, 20.
+fuentes:
+- it-zebedeo
+- marcos-1
+- mateo-4
+- mateo-10
+- marcos-3
+- lucas-5
+no_afirmamos:
+- 'Que su esposa fuera Salomé y hermana de María, la madre de Jesús: Perspicacia lo da como opinión general, no
+  como dato del texto.'
+enlaces:
+- titulo: 'Perspicacia: «Zebedeo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004672
+  tipo: perspicacia
+- titulo: Marcos 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/1
+  tipo: biblia
+perspicacia: '1200004672'
+consultado: '2026-09-29'
+estado: verificado

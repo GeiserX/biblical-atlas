@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: senal-de-jonas-en-galilea
+titulo: Solo dará la señal de Jonás
+fecha:
+  desde: 31
+  hasta: 31
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 40
+lugares:
+- galilea
+personas:
+- jesus
+pasajes:
+- Mt 12:38-45
+resumen: Escribas y fariseos le piden una señal. Jesús responde que su generación solo recibirá la de Jonás, que estuvo tres
+  días en el vientre del pez.
+razon: 'A7-C, fila 21: Galilea. El libro jy (cap. 42) explica la respuesta.'
+fuentes:
+- tnm-a7-c
+- mateo-12
+- jy-cap-42
+consultado: '2026-09-28'
+estado: verificado

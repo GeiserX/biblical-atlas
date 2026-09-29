@@ -1,0 +1,12 @@
+# Generado por scripts/videos/indexar.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+persona: ester
+generado: "2026-09-28"
+videos:
+  - docid: "pub-jwb-095_11_VIDEO"
+    titulo: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-095_11_VIDEO&appLanguage=S"
+    publicado: "2023-04-21"
+    menciones: 2
+    terminos:
+      "reina Ester": 2

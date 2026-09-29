@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zimri-de-israel
+nombre: Zimrí
+nombres:
+- nombre: Zimrí
+desambiguacion: Quinto rey de Israel; no es el simeonita Zimrí de Números 25.
+fecha:
+  desde: -950
+  hasta: -950
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 951 a.e.c.
+resumen: 'Jefe de carros que mató a Elá y a la casa de Baasá. Reinó siete días: cuando el ejército hizo rey a Omrí y cercó
+  Tirzá, quemó el palacio con él dentro.'
+razon: Perspicacia «Zimrí», núm. 3; 1Re 16:9-20.
+fuentes:
+- it-zimri
+- 1-reyes-16
+- tnm-a6-a
+enlaces:
+- titulo: 'Perspicacia: «Zimrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004737
+  tipo: perspicacia
+- titulo: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  tipo: biblia
+relaciones:
+- tipo: sucede_a
+  persona: ela-de-israel
+  deducido: false
+  fuentes:
+  - it-zimri
+  - 1-reyes-16
+  razon: Se hizo rey tras matar a Elá (1Re 16:10).
+  estado: verificado
+- tipo: murio_en
+  lugar: tirza
+  deducido: false
+  fuentes:
+  - it-zimri
+  - 1-reyes-16
+  razon: Murió en el palacio incendiado de Tirzá (1Re 16:18).
+  estado: verificado
+perspicacia: 1200004737#3
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- zimri-hijo-de-salu

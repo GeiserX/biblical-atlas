@@ -1,26 +1,26 @@
-# Generado por scripts/videos/index.py. No editar a mano.
+# Generado por scripts/videos/indexar.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-place: getsemani
-generated_on: "2026-09-28"
+lugar: getsemani
+generado: "2026-09-28"
 videos:
   - docid: "pub-jwbvod24_5_VIDEO"
-    title: "Robert Ciranko: ¿Qué significa ser un amigo verdadero? (Mat. 7:12)"
+    titulo: "Robert Ciranko: ¿Qué significa ser un amigo verdadero? (Mat. 7:12)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_5_VIDEO&appLanguage=S"
-    published: "2024-01-26"
-    hits: 4
-    terms:
+    publicado: "2024-01-26"
+    menciones: 4
+    terminos:
       "Getsemaní": 4
   - docid: "pub-co-r22_116_VIDEO"
-    title: "Mark Noumair: Apoyemos con lealtad al “Príncipe de Paz”"
+    titulo: "Mark Noumair: Apoyemos con lealtad al “Príncipe de Paz”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_116_VIDEO&appLanguage=S"
-    published: "2022-07-04"
-    hits: 2
-    terms:
+    publicado: "2022-07-04"
+    menciones: 2
+    terminos:
       "Getsemaní": 2
   - docid: "pub-co-r22_4_VIDEO"
-    title: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+    titulo: "Viernes tarde (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_4_VIDEO&appLanguage=S"
-    published: "2022-07-04"
-    hits: 2
-    terms:
+    publicado: "2022-07-04"
+    menciones: 2
+    terminos:
       "Getsemaní": 2

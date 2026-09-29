@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eleccion-de-los-doce
+titulo: Jesús elige a los 12 apóstoles
+fecha:
+  desde: 31
+  hasta: 31
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 31 e.c., tras la Pascua
+orden_relato:
+  serie: a7
+  orden: 32
+lugares:
+- capernaum
+personas:
+- jesus
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- bartolome
+- mateo
+- santiago-hijo-de-alfeo
+- tomas
+- tadeo
+- simon-el-cananita
+- judas-iscariote
+pasajes:
+- Mr 3:13-19
+- Lu 6:12-16
+resumen: Tras pasar la noche orando en una montaña, Jesús escoge a doce discípulos como apóstoles. La tabla sitúa la montaña
+  cerca de Capernaúm.
+razon: 'A7-C, fila 13: «cerca de Capernaúm». Perspicacia «Capernaum» (párr. 8) ve probable una montaña de sus alrededores;
+  «Judas» (núm. 4) lo fecha después de la Pascua de 31.'
+fuentes:
+- tnm-a7-c
+- marcos-3
+- lucas-6
+- it-capernaum
+- it-judas
+- jy-cap-34
+historial:
+- fecha: '2026-09-29'
+  cambio: Mr 3:18 y Lu 6:14 nombran a Bartolomé, que ahora tiene ficha propia; natanael sale de personas. Van en dos fichas
+    con mismo_que pendiente, porque Perspicacia solo lo da como probable.
+  fuente: mateo-10
+consultado: '2026-09-29'
+estado: verificado

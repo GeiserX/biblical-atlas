@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: despedida-en-mileto
+titulo: Despedida de los ancianos de Éfeso en Mileto
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2017
+lugares:
+- mileto
+- efeso
+personas:
+- pablo
+- lucas
+pasajes:
+- Hch 20:17-38
+resumen: Con prisa por llegar a Jerusalén para el Pentecostés, llama a Mileto a los ancianos de Éfeso. Les recuerda
+  sus tres años con ellos, los advierte de lobos y lloran al despedirse.
+razon: Perspicacia «Pablo» (párr. 18) y «Asia» (párr. 5); el estudio 3 (párr. 26) marca la llegada a Jerusalén en
+  el Pentecostés de 56.
+fuentes:
+- it-pablo
+- it-asia
+- si-3
+- hch-20
+- it-mileto
+- bt-21
+buscar: ancianos de Éfeso Mileto
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa, pero el estudio 3 (párr. 26), que ya citaba, da el año: es anclada.'
+  fuente: si-3
+consultado: '2026-09-29'
+estado: verificado

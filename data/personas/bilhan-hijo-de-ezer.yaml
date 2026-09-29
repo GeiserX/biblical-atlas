@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bilhan-hijo-de-ezer
+nombre: Bilhán
+nombres:
+- nombre: Bilhán
+perspicacia: 1200000738#1
+desambiguacion: Bilhán hijo de Ézer; no Bilhán hijo de Jediael, de Benjamín.
+resumen: Primero de los hijos del jeque horeo Ézer.
+razon: Perspicacia «Bilhán», núm. 1; Gé 36:27.
+fuentes:
+- it-bilhan
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Bilhán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000738
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ezer-hijo-de-seir
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-bilhan
+  - genesis-36
+  razon: 'Gé 36:27: hijo de Ézer.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-sin
+nombre: Desierto de Sin
+nombres:
+- nombre: Desierto de Sin
+tipo: desierto
+lat: 29.147778
+lon: 33.536667
+precision: zona
+coord_fuente: openbible:a0f54e4
+coord_url: https://www.openbible.info/geo/ancient/a0f54e4/sin
+coord_nota: Punto de OpenBible en Debbet er-Ramleh, la llanura arenosa que prefieren los geógrafos según Perspicacia. Representa
+  toda la zona, cuyos límites no se conocen.
+resumen: Desierto del suroeste de la península del Sinaí, entre Elim y el Sinaí. Allí Israel se quejó por la comida, recibió
+  codornices, comió maná por primera vez y guardó su primer sábado.
+razon: 'Perspicacia «Sin», núm. 1; Éx 16:1-30. OpenBible: solo el punto.'
+fuentes:
+- it-sin
+- tnm-b3
+- openbible-geo
+- exodo-16
+- exodo-17
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Sin»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004133
+  tipo: perspicacia
+- titulo: Éxodo 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/16
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

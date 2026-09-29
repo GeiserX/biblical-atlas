@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arquelao
+nombre: Arquelao
+nombres:
+- nombre: Arquelao
+resumen: Hijo de Herodes el Grande y de Maltace. Gobernó Judea, Samaria e Idumea como etnarca tras su padre; por su crueldad
+  José evitó vivir bajo él. Augusto lo desterró en su noveno o décimo año.
+razon: Perspicacia «Arquelao» (párr. 2-4) y la nota de Mt 2:22.
+fuentes:
+- it-arquelao
+- mateo-2
+relaciones:
+- tipo: pariente
+  persona: herodes-el-grande
+  relacion: padre
+  deducido: false
+  fuentes:
+  - mateo-2
+  razon: Mt 2:22.
+  estado: verificado
+- tipo: sucede_a
+  persona: herodes-el-grande
+  deducido: false
+  fuentes:
+  - mateo-2
+  - it-arquelao
+  razon: 'Mt 2:22: reinaba en Judea en lugar de su padre.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Arquelao»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000346
+  tipo: perspicacia
+- titulo: Mateo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/2
+  tipo: biblia
+perspicacia: '1200000346'
+consultado: '2026-09-29'
+estado: verificado

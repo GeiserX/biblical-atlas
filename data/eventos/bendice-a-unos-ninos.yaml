@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: bendice-a-unos-ninos
+titulo: Bendice a unos niños
+fecha:
+  desde: 33
+  hasta: 33
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Principios de 33 e.c., antes de la llegada a Betania
+lugares:
+- perea
+personas:
+- jesus
+pasajes:
+- Mt 19:13-15
+- Mr 10:13-16
+- Lu 18:15-17
+resumen: Los discípulos riñen a quienes le traen niños, pero Jesús los recibe, los bendice y dice que el Reino es
+  de los que son como ellos.
+razon: 'La tabla A7-F da cuándo y dónde. jy cap. 95. Año: Perspicacia «Lázaro» (párr. 7) pone esa resurrección a principios
+  de 33, y A7-G la llegada a Betania el 8 de nisán del 33.'
+fuentes:
+- tnm-a7-f
+- mateo-19
+- marcos-10
+- lucas-18
+- jy-cap-95
+- it-lazaro
+- tnm-a7-g
+orden_relato:
+  serie: a7
+  orden: 87
+buscar: Bendice a unos niños
+consultado: '2026-09-28'
+estado: verificado

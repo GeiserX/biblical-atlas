@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primera-parada-en-efeso
+titulo: Breve parada en Éfeso
+fecha:
+  desde: 52
+  hasta: 52
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 52 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1819
+lugares:
+- efeso
+personas:
+- pablo
+- aquila
+- priscila
+pasajes:
+- Hch 18:19-21
+resumen: Pablo razona con los judíos de la sinagoga de Éfeso. Le piden que se quede, pero se despide prometiendo
+  volver si Jehová quiere; Áquila y Priscila se quedan allí.
+razon: Perspicacia «Asia» (párr. 4) y «Áquila» (párr. 2), que pone este viaje hacia la primavera de 52.
+fuentes:
+- it-asia
+- it-aquila
+- hch-18
+buscar: Pablo Éfeso sinagoga
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La fecha pasa de narrativa a anclada: Perspicacia «Áquila», párr. 2, pone el viaje de Corinto a Éfeso hacia la
+    primavera de 52.'
+  fuente: it-aquila
+- fecha: '2026-09-29'
+  cambio: La razón dice qué fuente da el año.
+  fuente: hch-18
+consultado: '2026-09-29'
+estado: verificado

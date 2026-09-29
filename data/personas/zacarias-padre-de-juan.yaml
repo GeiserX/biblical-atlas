@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-padre-de-juan
+nombre: Zacarías
+nombres:
+- nombre: Zacarías
+desambiguacion: Sacerdote de la división de Abías, padre de Juan el Bautista; no es el profeta Zacarías.
+no_confundir_con:
+- zacarias-profeta
+- zacarias-de-israel
+- zacarias-hijo-de-jehoiada
+resumen: Sacerdote de la división de Abías que vivía con Elisabet en las colinas de Judea. En el templo, Gabriel le anunció
+  el nacimiento de Juan; quedó mudo hasta que escribió el nombre del niño.
+razon: Perspicacia «Zacarías» (núm. 31) cuenta la visión, que sitúa hacia el final de la primavera o el comienzo del verano
+  de 3 a.e.c., y la profecía tras el nacimiento.
+fuentes:
+- it-zacarias
+- lucas-1
+relaciones:
+- tipo: pariente
+  persona: elisabet
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:5.
+  estado: verificado
+- tipo: pariente
+  persona: juan-el-bautista
+  relacion: hijo
+  deducido: false
+  fuentes:
+  - lucas-1
+  razon: Lu 1:13, 63.
+  estado: verificado
+- tipo: pariente
+  persona: aaron
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - lucas-1
+  - it-juan
+  razon: Era sacerdote (Lu 1:5); Perspicacia «Juan», núm. 1, dice que los dos padres de Juan eran de la casa sacerdotal de
+    Aarón.
+  estado: verificado
+- tipo: vivio_en
+  lugar: judea
+  deducido: false
+  fuentes:
+  - lucas-1
+  - it-zacarias
+  - jy-cap-1
+  razon: 'Lu 1:23, 39, 40 y 65: acabado su turno vuelve a su casa, en la región montañosa de Judea; Perspicacia «Zacarías»,
+    núm. 31.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Zacarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  tipo: perspicacia
+- titulo: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  tipo: biblia
+perspicacia: 1200004681#31
+consultado: '2026-09-29'
+estado: verificado

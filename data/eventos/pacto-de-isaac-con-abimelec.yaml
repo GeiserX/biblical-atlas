@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pacto-de-isaac-con-abimelec
+titulo: Isaac hace un pacto de paz con Abimélec
+fecha:
+  desde: -1842
+  hasta: -1780
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1843 y 1781 a.e.c. (tiempo narrativo: después de la muerte de Abrahán y antes de que Jacob huya a Harán)'
+orden_relato:
+  serie: genesis
+  orden: 26026
+lugares:
+- beer-seba
+personas:
+- isaac
+- abimelec-de-tiempos-de-isaac
+- ahuzat
+- ficol-de-tiempos-de-isaac
+pasajes:
+- Gé 26:26-33
+resumen: Abimélec llega de Guerar con Ahuzat y Ficol a pedir un pacto, porque ve que Jehová está con Isaac. Comen, juran por
+  la mañana y se van en paz; ese día hallan agua en el pozo Sibá.
+razon: Perspicacia «Abimélec», núm. 2, e «Isaac», párr. 13, lo ponen después de la muerte de Abrahán (1843 a.e.c.); Jacob
+  huye a Harán en 1781 (estudio 3).
+fuentes:
+- it-abimelec
+- it-isaac
+- si-3
+- genesis-26
+- it-siba
+enlaces:
+- titulo: Génesis 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/26
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

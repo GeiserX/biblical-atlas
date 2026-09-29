@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: discipulos-de-juan-en-efeso
+titulo: Doce discípulos bautizados en el nombre de Jesús
+fecha:
+  desde: 52
+  hasta: 53
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: invierno de 52-53 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1901
+lugares:
+- efeso
+personas:
+- pablo
+pasajes:
+- Hch 19:1-7
+resumen: En Éfeso, Pablo encuentra a unos doce hombres que solo conocían el bautismo de Juan. Se bautizan en el
+  nombre de Jesús y reciben espíritu santo.
+razon: Hch 19:1-7; el estudio 3 (párr. 26) sitúa la llegada a Éfeso en el invierno de 52-53.
+fuentes:
+- hch-19
+- si-3
+buscar: bautismo de Juan Éfeso
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Era narrativa, pero el estudio 3 (párr. 26), que ya citaba, da el invierno de 52-53: es anclada.'
+  fuente: si-3
+consultado: '2026-09-29'
+estado: verificado

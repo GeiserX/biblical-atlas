@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: agar-e-ismael-en-el-desierto
+titulo: Abrahán despide a Agar e Ismael; Dios los salva en el desierto
+fecha:
+  desde: -1912
+  hasta: -1912
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1913 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 21014
+lugares:
+- desierto-de-beer-seba
+- desierto-de-paran
+personas:
+- agar
+- ismael-hijo-de-abrahan
+- abrahan
+presentes:
+- agar
+- ismael-hijo-de-abrahan
+pasajes:
+- Gé 21:14-21
+resumen: Abrahán despide a Agar y a Ismael con pan y agua. Perdidos en el desierto de Beer-Seba, se les acaba el agua; un
+  ángel llama a Agar y Dios le muestra un pozo. Ismael crece y se instala en Parán.
+razon: El estudio 3 pone el despido de Ismael en 1913 a.e.c.; Perspicacia «Ismael», núm. 1, y «Beer-seba», párr. 4, cuentan
+  que Agar se perdió en ese desierto.
+fuentes:
+- genesis-21
+- si-3
+- it-ismael
+- it-beer-seba
+- it-agar
+enlaces:
+- titulo: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

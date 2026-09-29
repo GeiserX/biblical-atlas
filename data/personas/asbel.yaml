@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asbel
+nombre: Asbel
+nombres:
+- nombre: Asbel
+perspicacia: '1200000410'
+resumen: Hijo de Benjamín, tercero en esta lista y segundo en 1 Crónicas 8. Llegó a Egipto con Jacob; al parecer es el Jediael
+  de 1 Crónicas 7.
+razon: Perspicacia «Asbel, asbelitas»; Gé 46:21.
+fuentes:
+- it-asbel
+- genesis-46
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Asbel, asbelitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000410
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-asbel
+  - numeros-26
+  razon: 'Gé 46:21: aparece entre los hijos de Benjamín.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

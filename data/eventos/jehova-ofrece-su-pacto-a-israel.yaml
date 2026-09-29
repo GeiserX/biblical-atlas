@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-ofrece-su-pacto-a-israel
+titulo: Jehová ofrece a Israel ser su propiedad especial
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: mes
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: tercer mes de 1513 a.e.c.
+  detalle:
+    mes: sivan
+orden_relato:
+  serie: exodo
+  orden: 19003
+lugares:
+- monte-sinai
+- desierto-de-sinai
+personas:
+- moises
+pasajes:
+- Éx 19:3-8
+resumen: Moisés sube a la montaña. Jehová le encarga decir a Israel que, si obedece y cumple su pacto, será su propiedad especial,
+  sacerdotes y nación santa para él. El pueblo responde que hará todo lo dicho.
+razon: 'Perspicacia «Sinaí», núm. 1, párr. 5 y 6: los ancianos aceptaron en nombre de toda la nación. Es el mismo mes de la
+  llegada, 1513 a.e.c. (estudio 3).'
+fuentes:
+- exodo-19
+- it-sinai
+- si-3
+enlaces:
+- titulo: Éxodo 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

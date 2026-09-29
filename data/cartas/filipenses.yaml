@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por carta. Esquema en docs/investigacion/README.md.
+id: filipenses
+libro: Filipenses
+escritor: pablo
+referencia: Flp 1:13; 4:22
+escrita_en:
+- roma
+fecha:
+  desde: 60
+  hasta: 61
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 60-61 e.c.
+destinatarios:
+  texto: Congregación de Filipos
+  lugares:
+  - filipos
+portadores:
+- epafrodito
+personas:
+- timoteo
+- epafrodito
+- evodia
+- sintique
+contexto_origen:
+  resumen: 'Preso en Roma: toda la guardia pretoriana conoce su caso y mandan saludos cristianos de la casa de César.'
+  fuentes:
+  - it-filipenses
+contexto_destino:
+  resumen: Congregación fundada por Pablo c. 50 en Macedonia; Epafrodito viajó desde allí para ayudarle.
+  fuentes:
+  - it-filipenses
+razon: La Tabla y el estudio 3 dan Roma y c. 60-61; Flp 1:13 y 4:22 hablan de la guardia pretoriana y de la casa
+  de César.
+fuentes:
+- tnm-tabla
+- si-3
+- it-filipenses
+- filipenses-1
+- it-epafrodito
+- it-evodia
+- it-sintique
+enlaces:
+- titulo: 'Perspicacia: «Filipenses, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003468
+  tipo: perspicacia
+- titulo: Filipenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/1
+  tipo: biblia
+consultado: '2026-09-28'
+estado: verificado

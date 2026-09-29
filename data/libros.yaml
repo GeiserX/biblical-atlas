@@ -1,0 +1,1791 @@
+# biblical-earth: los 66 libros de la Biblia. Los campos de estructura (de slug a capitulos) no llevan fuentes;
+# los hechos de cada libro sí.
+# Nombres, abreviaturas y número de capítulos tal como los da wol.jw.org (Biblia de estudio, índice de libros),
+# consultado el 2026-09-28. Esquema en docs/investigacion/README.md.
+#
+#   slug:      id del libro; con «-<capítulo>» es una fuente implícita (mateo-26) que build.py crea sola.
+#   num:       número del libro en las URL de wol.jw.org (nwtsty/<num>/<capítulo>).
+#   abr:       abreviatura TNM de las citas («Hch 16:14»).
+#   formas:    lo que acepta el buscador del sitio, sin tildes, espacios ni puntos.
+#   habladas:  formas escritas en los subtítulos de los vídeos («Hechos», «Hech.»).
+#   capitulos: número de capítulos.
+#   versiculos: número del último versículo de cada capítulo, en orden (tantos como capitulos).
+#   omitidos:  {"<capítulo>": [versículos]} de la numeración tradicional que la TNM no trae como texto,
+#              porque solo aparecen en manuscritos posteriores. Se detectan en el HTML de cada capítulo de
+#              wol.jw.org (nwtsty/<num>/<capítulo>), cuyas anclas son v<num>-<capítulo>-<versículo>-<parte>:
+#              el ancla existe pero su texto es solo «--» (Mateo 17:21) o falta el número en la secuencia
+#              (Juan 8:1-11). Los versículos que hay que leer son 1..versiculos menos omitidos.
+#   Suma de versiculos: 31089. La numeración tradicional da 31102; la diferencia son 13 versículos con los que
+#   la TNM no llega a numerar el capítulo: Marcos 16 acaba en el 8 (sin 9-20) y Juan 7 en el 52 (sin 53).
+#   Los encabezamientos de los Salmos llevan ancla 0 y no cuentan. Consultado el 2026-09-29.
+#
+# Hechos de cada libro (escritor, lugar, fecha, abarca), de la Tabla de los libros de la Biblia de estudio:
+# campos opcionales, con fuentes, razon, consultado y estado.
+libros:
+- slug: genesis
+  num: 1
+  nombre: Génesis
+  abr: Gé
+  formas: [ge, gen, genesis]
+  habladas: [Génesis, Gén.]
+  capitulos: 50
+  versiculos: [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 55, 32, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26]
+  escritor: Moisés
+  lugar: Desierto
+  fecha:
+    desde: -1512
+    hasta: -1512
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1513 a.e.c.
+  abarca:
+    desde: null
+    hasta: -1656
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: desde «el principio» hasta 1657 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Génesis» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: exodo
+  num: 2
+  nombre: Éxodo
+  abr: Éx
+  formas: [ex, exodo]
+  habladas: [Éxodo, Éx.]
+  capitulos: 40
+  versiculos: [22, 25, 22, 31, 23, 30, 25, 32, 35, 29, 10, 51, 22, 31, 27, 36, 16, 27, 25, 26, 36, 31, 33, 18, 40, 37, 21, 43, 46, 38, 18, 35, 23, 35, 35, 38, 29, 31, 43, 38]
+  escritor: Moisés
+  lugar: Desierto
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  abarca:
+    desde: -1656
+    hasta: -1511
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1657-1512 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Éxodo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: levitico
+  num: 3
+  nombre: Levítico
+  abr: Le
+  formas: [le, lev, levitico]
+  habladas: [Levítico, Lev.]
+  capitulos: 27
+  versiculos: [17, 16, 17, 35, 19, 30, 38, 36, 24, 20, 47, 8, 59, 57, 33, 34, 16, 30, 37, 27, 24, 33, 44, 23, 55, 46, 34]
+  escritor: Moisés
+  lugar: Desierto
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  abarca:
+    desde: -1511
+    hasta: -1511
+    precision: mes
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1 mes (1512 a.e.c.)
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Levítico» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: numeros
+  num: 4
+  nombre: Números
+  abr: Nú
+  formas: [nu, num, numeros]
+  habladas: [Números, Núm.]
+  capitulos: 36
+  versiculos: [54, 34, 51, 49, 31, 27, 89, 26, 23, 36, 35, 16, 33, 45, 41, 50, 13, 32, 22, 29, 35, 41, 30, 25, 18, 65, 23, 31, 40, 16, 54, 42, 56, 29, 34, 13]
+  escritor: Moisés
+  lugar: Desierto y llanuras de Moab
+  fecha:
+    desde: -1472
+    hasta: -1472
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1473 a.e.c.
+  abarca:
+    desde: -1511
+    hasta: -1472
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512-1473 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Números» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: deuteronomio
+  num: 5
+  nombre: Deuteronomio
+  abr: Dt
+  formas: [dt, deut, deuteronomio]
+  habladas: [Deuteronomio, Deut.]
+  capitulos: 34
+  versiculos: [46, 37, 29, 49, 33, 25, 26, 20, 29, 22, 32, 32, 18, 29, 23, 22, 20, 22, 21, 20, 23, 30, 25, 22, 19, 19, 26, 68, 29, 20, 30, 52, 29, 12]
+  escritor: Moisés
+  lugar: Llanuras de Moab
+  fecha:
+    desde: -1472
+    hasta: -1472
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1473 a.e.c.
+  abarca:
+    desde: -1472
+    hasta: -1472
+    precision: mes
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 2 meses (1473 a.e.c.)
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Deuteronomio» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: josue
+  num: 6
+  nombre: Josué
+  abr: Jos
+  formas: [jos, josue]
+  habladas: [Josué, Jos.]
+  capitulos: 24
+  versiculos: [18, 24, 17, 24, 15, 27, 26, 35, 27, 43, 23, 24, 33, 15, 63, 10, 18, 28, 51, 9, 45, 34, 16, 33]
+  escritor: Josué
+  lugar: Canaán
+  fecha:
+    desde: -1449
+    hasta: -1449
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1450 a.e.c.
+  abarca:
+    desde: -1472
+    hasta: -1449
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 1473-c. 1450 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Josué» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: jueces
+  num: 7
+  nombre: Jueces
+  abr: Jue
+  formas: [jue, juec, jueces]
+  habladas: [Jueces, Juec.]
+  capitulos: 21
+  versiculos: [36, 23, 31, 24, 31, 40, 25, 35, 57, 18, 40, 15, 25, 20, 20, 31, 13, 31, 30, 48, 25]
+  escritor: Samuel
+  lugar: Israel
+  fecha:
+    desde: -1099
+    hasta: -1099
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1100 a.e.c.
+  abarca:
+    desde: -1449
+    hasta: -1119
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1450-c. 1120 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Jueces» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: rut
+  num: 8
+  nombre: Rut
+  abr: Rut
+  formas: [rut]
+  habladas: [Rut]
+  capitulos: 4
+  versiculos: [22, 23, 18, 22]
+  escritor: Samuel
+  lugar: Israel
+  fecha:
+    desde: -1089
+    hasta: -1089
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1090 a.e.c.
+  nota: Abarca 11 años del tiempo de los jueces; la tabla no les da año.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Rut» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-samuel
+  num: 9
+  nombre: "1 Samuel"
+  abr: "1Sa"
+  formas: ["1sa", "1sam", "1samuel"]
+  habladas: ["1 Samuel", "1 Sam."]
+  capitulos: 31
+  versiculos: [28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 35, 23, 58, 30, 24, 42, 15, 23, 29, 22, 44, 25, 12, 25, 11, 31, 13]
+  escritor: Samuel; Gad; Natán
+  lugar: Israel
+  fecha:
+    desde: -1077
+    hasta: -1077
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1078 a.e.c.
+  abarca:
+    desde: -1179
+    hasta: -1077
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1180-1078 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-samuel
+  num: 10
+  nombre: "2 Samuel"
+  abr: "2Sa"
+  formas: ["2sa", "2sam", "2samuel"]
+  habladas: ["2 Samuel", "2 Sam."]
+  capitulos: 24
+  versiculos: [27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33, 43, 26, 22, 51, 39, 25]
+  escritor: Gad; Natán
+  lugar: Israel
+  fecha:
+    desde: -1039
+    hasta: -1039
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1040 a.e.c.
+  abarca:
+    desde: -1076
+    hasta: -1039
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 1077-c. 1040 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Samuel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-reyes
+  num: 11
+  nombre: "1 Reyes"
+  abr: "1Re"
+  formas: ["1re", "1rey", "1reyes"]
+  habladas: ["1 Reyes", "1 Rey."]
+  capitulos: 22
+  versiculos: [53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46, 21, 43, 29, 53]
+  escritor: Jeremías
+  lugar: Judá
+  fecha:
+    desde: -579
+    hasta: -579
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 580 a.e.c.
+  abarca:
+    desde: -1039
+    hasta: -910
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1040-911 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-reyes
+  num: 12
+  nombre: "2 Reyes"
+  abr: "2Re"
+  formas: ["2re", "2rey", "2reyes"]
+  habladas: ["2 Reyes", "2 Rey."]
+  capitulos: 25
+  versiculos: [18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37, 37, 21, 26, 20, 37, 20, 30]
+  escritor: Jeremías
+  lugar: Judá y Egipto
+  fecha:
+    desde: -579
+    hasta: -579
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 580 a.e.c.
+  abarca:
+    desde: -919
+    hasta: -579
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 920-580 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Reyes» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-cronicas
+  num: 13
+  nombre: "1 Crónicas"
+  abr: "1Cr"
+  formas: ["1cr", "1cron", "1cronicas"]
+  habladas: ["1 Crónicas", "1 Crón."]
+  capitulos: 29
+  versiculos: [54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 29, 43, 27, 17, 19, 8, 30, 19, 32, 31, 31, 32, 34, 21, 30]
+  escritor: Esdras
+  lugar: Jerusalén (?)
+  fecha:
+    desde: -459
+    hasta: -459
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 460 a.e.c.
+  abarca:
+    desde: -1076
+    hasta: -1036
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1077-1037 a.e.c.
+  nota: Lo abarcado se cuenta después de las genealogías, desde 1 Crónicas 9:44.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-cronicas
+  num: 14
+  nombre: "2 Crónicas"
+  abr: "2Cr"
+  formas: ["2cr", "2cron", "2cronicas"]
+  habladas: ["2 Crónicas", "2 Crón."]
+  capitulos: 36
+  versiculos: [17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34, 11, 37, 20, 12, 21, 27, 28, 23, 9, 27, 36, 27, 21, 33, 25, 33, 27, 23]
+  escritor: Esdras
+  lugar: Jerusalén (?)
+  fecha:
+    desde: -459
+    hasta: -459
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 460 a.e.c.
+  abarca:
+    desde: -1036
+    hasta: -536
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1037-537 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Crónicas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: esdras
+  num: 15
+  nombre: Esdras
+  abr: Esd
+  formas: [esd, esdras]
+  habladas: [Esdras, Esd.]
+  capitulos: 10
+  versiculos: [11, 70, 13, 24, 17, 22, 28, 36, 15, 44]
+  escritor: Esdras
+  lugar: Jerusalén
+  fecha:
+    desde: -459
+    hasta: -459
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 460 a.e.c.
+  abarca:
+    desde: -536
+    hasta: -466
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 537-c. 467 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Esdras» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: nehemias
+  num: 16
+  nombre: Nehemías
+  abr: Ne
+  formas: [ne, neh, nehemias]
+  habladas: [Nehemías, Neh.]
+  capitulos: 13
+  versiculos: [11, 20, 32, 23, 19, 19, 73, 18, 38, 39, 36, 47, 31]
+  escritor: Nehemías
+  lugar: Jerusalén
+  fecha:
+    desde: -442
+    hasta: null
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: después de 443 a.e.c.
+  abarca:
+    desde: -455
+    hasta: -442
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 456 a.e.c. - después de 443 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Nehemías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: ester
+  num: 17
+  nombre: Ester
+  abr: Est
+  formas: [est, ester]
+  habladas: [Ester, Est.]
+  capitulos: 10
+  versiculos: [22, 23, 15, 17, 14, 14, 10, 17, 32, 3]
+  escritor: Mardoqueo
+  lugar: Susa, Elam
+  fecha:
+    desde: -474
+    hasta: -474
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 475 a.e.c.
+  abarca:
+    desde: -492
+    hasta: -474
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 493-c. 475 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Ester» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: job
+  num: 18
+  nombre: Job
+  abr: Job
+  formas: [job]
+  habladas: [Job]
+  capitulos: 42
+  versiculos: [22, 13, 26, 21, 27, 30, 21, 22, 35, 22, 20, 25, 28, 22, 35, 22, 16, 21, 29, 29, 34, 30, 17, 25, 6, 14, 23, 28, 25, 31, 40, 22, 33, 37, 16, 33, 24, 41, 30, 24, 34, 17]
+  escritor: Moisés
+  lugar: Desierto
+  fecha:
+    desde: -1472
+    hasta: -1472
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1473 a.e.c.
+  abarca:
+    desde: -1656
+    hasta: -1472
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 140 años o más, entre 1657 y 1473 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Job» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: salmos
+  num: 19
+  nombre: Salmos
+  abr: Sl
+  formas: [sl, sal, salmos]
+  habladas: [Salmos, Salmo, Sal.]
+  capitulos: 150
+  versiculos: [6, 12, 8, 8, 12, 10, 17, 9, 20, 18, 7, 8, 6, 7, 5, 11, 15, 50, 14, 9, 13, 31, 6, 10, 22, 12, 14, 9, 11, 12, 24, 11, 22, 22, 28, 12, 40, 22, 13, 17, 13, 11, 5, 26, 17, 11, 9, 14, 20, 23, 19, 9, 6, 7, 23, 13, 11, 11, 17, 12, 8, 12, 11, 10, 13, 20, 7, 35, 36, 5, 24, 20, 28, 23, 10, 12, 20, 72, 13, 19, 16, 8, 18, 12, 13, 17, 7, 18, 52, 17, 16, 15, 5, 23, 11, 13, 12, 9, 9, 5, 8, 28, 22, 35, 45, 48, 43, 13, 31, 7, 10, 10, 9, 8, 18, 19, 2, 29, 176, 7, 8, 9, 4, 8, 5, 6, 5, 6, 8, 8, 3, 18, 3, 3, 21, 26, 9, 8, 24, 13, 10, 7, 12, 15, 21, 10, 20, 14, 9, 6]
+  escritor: David y otros
+  fecha:
+    desde: -459
+    hasta: -459
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 460 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Salmos» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: proverbios
+  num: 20
+  nombre: Proverbios
+  abr: Pr
+  formas: [pr, prov, proverbios]
+  habladas: [Proverbios, Prov.]
+  capitulos: 31
+  versiculos: [33, 22, 35, 27, 23, 35, 27, 36, 18, 32, 31, 28, 25, 35, 33, 33, 28, 24, 29, 30, 31, 29, 35, 34, 28, 28, 27, 28, 27, 33, 31]
+  escritor: Salomón; Agur; Lemuel
+  lugar: Jerusalén
+  fecha:
+    desde: -716
+    hasta: -716
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 717 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Proverbios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: eclesiastes
+  num: 21
+  nombre: Eclesiastés
+  abr: Ec
+  formas: [ec, ecl, eclesiastes]
+  habladas: [Eclesiastés, Ecl.]
+  capitulos: 12
+  versiculos: [18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14]
+  escritor: Salomón
+  lugar: Jerusalén
+  fecha:
+    desde: null
+    hasta: -999
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 1000 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Eclesiastés» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: cantar-de-los-cantares
+  num: 22
+  nombre: El Cantar de los Cantares
+  abr: Can
+  formas: [can, cant, elcantardeloscantares, cantares]
+  habladas: [El Cantar de los Cantares, Cantar de los Cantares, Cant.]
+  capitulos: 8
+  versiculos: [17, 17, 11, 16, 16, 13, 13, 14]
+  escritor: Salomón
+  lugar: Jerusalén
+  fecha:
+    desde: -1019
+    hasta: -1019
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 1020 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «El Cantar de los Cantares» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: isaias
+  num: 23
+  nombre: Isaías
+  abr: Is
+  formas: [is, isaias]
+  habladas: [Isaías, Is., Isa., Isa]
+  capitulos: 66
+  versiculos: [31, 22, 26, 6, 30, 13, 25, 22, 21, 34, 16, 6, 22, 32, 9, 14, 14, 7, 25, 6, 17, 25, 18, 23, 12, 21, 13, 29, 24, 33, 9, 20, 24, 17, 10, 22, 38, 22, 8, 31, 29, 25, 28, 28, 25, 13, 15, 22, 26, 11, 23, 15, 12, 17, 13, 12, 21, 14, 21, 22, 11, 12, 19, 12, 25, 24]
+  escritor: Isaías
+  lugar: Jerusalén
+  fecha:
+    desde: -731
+    hasta: null
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: después de 732 a.e.c.
+  abarca:
+    desde: -777
+    hasta: -731
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 778 a.e.c. - después de 732 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Isaías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: jeremias
+  num: 24
+  nombre: Jeremías
+  abr: Jer
+  formas: [jer, jeremias]
+  habladas: [Jeremías, Jer.]
+  capitulos: 52
+  versiculos: [19, 37, 25, 31, 31, 30, 34, 22, 26, 25, 23, 17, 27, 22, 21, 21, 27, 23, 15, 18, 14, 30, 40, 10, 38, 24, 22, 17, 32, 24, 40, 44, 26, 22, 19, 32, 21, 28, 18, 16, 18, 22, 13, 30, 5, 28, 7, 47, 39, 46, 64, 34]
+  escritor: Jeremías
+  lugar: Judá; Egipto
+  fecha:
+    desde: -579
+    hasta: -579
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 580 a.e.c.
+  abarca:
+    desde: -646
+    hasta: -579
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 647-580 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Jeremías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: lamentaciones
+  num: 25
+  nombre: Lamentaciones
+  abr: Lam
+  formas: [lam, lamentaciones]
+  habladas: [Lamentaciones, Lam.]
+  capitulos: 5
+  versiculos: [22, 22, 66, 22, 22]
+  escritor: Jeremías
+  lugar: Cerca de Jerusalén
+  fecha:
+    desde: -606
+    hasta: -606
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 607 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Lamentaciones» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: ezequiel
+  num: 26
+  nombre: Ezequiel
+  abr: Eze
+  formas: [eze, ezeq, ezequiel]
+  habladas: [Ezequiel, Ezeq.]
+  capitulos: 48
+  versiculos: [28, 10, 27, 17, 17, 14, 27, 18, 11, 22, 25, 28, 23, 23, 8, 63, 24, 32, 14, 49, 32, 31, 49, 27, 17, 21, 36, 26, 21, 26, 18, 32, 33, 31, 15, 38, 28, 23, 29, 49, 26, 20, 27, 31, 25, 24, 23, 35]
+  escritor: Ezequiel
+  lugar: Babilonia
+  fecha:
+    desde: -590
+    hasta: -590
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 591 a.e.c.
+  abarca:
+    desde: -612
+    hasta: -590
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 613-c. 591 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Ezequiel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: daniel
+  num: 27
+  nombre: Daniel
+  abr: Da
+  formas: [da, dan, daniel]
+  habladas: [Daniel, Dan.]
+  capitulos: 12
+  versiculos: [21, 49, 30, 37, 31, 28, 28, 27, 27, 21, 45, 13]
+  escritor: Daniel
+  lugar: Babilonia
+  fecha:
+    desde: -535
+    hasta: -535
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 536 a.e.c.
+  abarca:
+    desde: -617
+    hasta: -535
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 618-c. 536 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Daniel» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: oseas
+  num: 28
+  nombre: Oseas
+  abr: Os
+  formas: [os, oseas]
+  habladas: [Oseas, Os.]
+  capitulos: 14
+  versiculos: [11, 23, 5, 19, 15, 11, 16, 14, 17, 15, 12, 14, 16, 9]
+  escritor: Oseas
+  lugar: Samaria (distrito)
+  fecha:
+    desde: -744
+    hasta: -739
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: entre 745 y 740 a.e.c.
+  abarca:
+    desde: -803
+    hasta: -744
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 804 a.e.c. - después de 745 a.e.c.
+  fuentes:
+  - tnm-tabla
+  - it-oseas-libro
+  razon: 'Fila de «Oseas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: joel
+  num: 29
+  nombre: Joel
+  abr: Joe
+  formas: [joe, joel]
+  habladas: [Joel]
+  capitulos: 3
+  versiculos: [20, 32, 21]
+  escritor: Joel
+  lugar: Judá
+  fecha:
+    desde: -819
+    hasta: -819
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 820 a.e.c.
+  nota: La tabla pone la fecha con un signo de interrogación.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Joel» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: amos
+  num: 30
+  nombre: Amós
+  abr: Am
+  formas: [am, amos]
+  habladas: [Amós]
+  capitulos: 9
+  versiculos: [15, 16, 15, 13, 27, 14, 17, 14, 15]
+  escritor: Amós
+  lugar: Judá
+  fecha:
+    desde: -803
+    hasta: -803
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 804 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Amós» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: abdias
+  num: 31
+  nombre: Abdías
+  abr: Abd
+  formas: [abd, abdias]
+  habladas: [Abdías, Abd.]
+  capitulos: 1
+  versiculos: [21]
+  escritor: Abdías
+  fecha:
+    desde: -606
+    hasta: -606
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 607 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Abdías» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: jonas
+  num: 32
+  nombre: Jonás
+  abr: Jon
+  formas: [jon, jonas]
+  habladas: [Jonás, Jon.]
+  capitulos: 4
+  versiculos: [17, 10, 10, 11]
+  escritor: Jonás
+  fecha:
+    desde: -843
+    hasta: -843
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 844 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Jonás» en la tabla de libros de la Biblia de estudio: escritor y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: miqueas
+  num: 33
+  nombre: Miqueas
+  abr: Miq
+  formas: [miq, miqueas]
+  habladas: [Miqueas, Miq.]
+  capitulos: 7
+  versiculos: [16, 13, 12, 13, 15, 16, 20]
+  escritor: Miqueas
+  lugar: Judá
+  fecha:
+    desde: null
+    hasta: -716
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 717 a.e.c.
+  abarca:
+    desde: -776
+    hasta: -716
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 777-717 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Miqueas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: nahum
+  num: 34
+  nombre: Nahúm
+  abr: Na
+  formas: [na, nah, nahum]
+  habladas: [Nahúm, Nah.]
+  capitulos: 3
+  versiculos: [15, 13, 19]
+  escritor: Nahúm
+  lugar: Judá
+  fecha:
+    desde: null
+    hasta: -631
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 632 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Nahúm» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: habacuc
+  num: 35
+  nombre: Habacuc
+  abr: Hab
+  formas: [hab, habacuc]
+  habladas: [Habacuc, Hab.]
+  capitulos: 3
+  versiculos: [17, 20, 19]
+  escritor: Habacuc
+  lugar: Judá
+  fecha:
+    desde: -627
+    hasta: -627
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 628 a.e.c.
+  nota: La tabla pone la fecha con un signo de interrogación.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Habacuc» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: sofonias
+  num: 36
+  nombre: Sofonías
+  abr: Sof
+  formas: [sof, sofonias]
+  habladas: [Sofonías, Sof.]
+  capitulos: 3
+  versiculos: [18, 15, 20]
+  escritor: Sofonías
+  lugar: Judá
+  fecha:
+    desde: null
+    hasta: -647
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 648 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Sofonías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: ageo
+  num: 37
+  nombre: Ageo
+  abr: Ag
+  formas: [ag, ageo]
+  habladas: [Ageo]
+  capitulos: 2
+  versiculos: [15, 23]
+  escritor: Ageo
+  lugar: Jerusalén
+  fecha:
+    desde: -519
+    hasta: -519
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 520 a.e.c.
+  abarca:
+    desde: -519
+    hasta: -519
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 112 días (520 a.e.c.)
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Ageo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: zacarias
+  num: 38
+  nombre: Zacarías
+  abr: Zac
+  formas: [zac, zacarias]
+  habladas: [Zacarías, Zac.]
+  capitulos: 14
+  versiculos: [21, 13, 10, 14, 11, 15, 14, 23, 17, 12, 17, 14, 9, 21]
+  escritor: Zacarías
+  lugar: Jerusalén
+  fecha:
+    desde: -517
+    hasta: -517
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 518 a.e.c.
+  abarca:
+    desde: -519
+    hasta: -517
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 520-518 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Zacarías» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: malaquias
+  num: 39
+  nombre: Malaquías
+  abr: Mal
+  formas: [mal, malaquias]
+  habladas: [Malaquías, Mal.]
+  capitulos: 4
+  versiculos: [14, 17, 18, 6]
+  escritor: Malaquías
+  lugar: Jerusalén
+  fecha:
+    desde: -442
+    hasta: null
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: después de 443 a.e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Malaquías» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: mateo
+  num: 40
+  nombre: Mateo
+  abr: Mt
+  formas: [mt, mat, mateo]
+  habladas: [Mateo, Mat.]
+  capitulos: 28
+  versiculos: [25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35, 30, 34, 46, 46, 39, 51, 46, 75, 66, 20]
+  omitidos: {"17": [21], "18": [11], "23": [14]}
+  escritor: Mateo
+  lugar: Israel
+  fecha:
+    desde: 41
+    hasta: 41
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 41 e.c.
+  abarca:
+    desde: -1
+    hasta: 33
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 2 a.e.c.-33 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Mateo» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: marcos
+  num: 41
+  nombre: Marcos
+  abr: Mr
+  formas: [mr, mar, marcos]
+  habladas: [Marcos, Mar.]
+  capitulos: 16
+  versiculos: [45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 8]
+  omitidos: {"7": [16], "9": [44, 46], "11": [26], "15": [28]}
+  escritor: Marcos
+  lugar: Roma
+  fecha:
+    desde: 60
+    hasta: 65
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-65 e.c.
+  abarca:
+    desde: 29
+    hasta: 33
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 29-33 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Marcos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: lucas
+  num: 42
+  nombre: Lucas
+  abr: Lu
+  formas: [lu, luc, lucas]
+  habladas: [Lucas, Luc.]
+  capitulos: 24
+  versiculos: [80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37, 43, 48, 47, 38, 71, 56, 53]
+  omitidos: {"17": [36], "23": [17]}
+  escritor: Lucas
+  lugar: Cesarea
+  fecha:
+    desde: 56
+    hasta: 58
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56-58 e.c.
+  abarca:
+    desde: -2
+    hasta: 33
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 3 a.e.c.-33 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Lucas» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: juan
+  num: 43
+  nombre: Juan
+  abr: Jn
+  formas: [jn, juan]
+  habladas: [Juan]
+  capitulos: 21
+  versiculos: [51, 25, 36, 54, 47, 71, 52, 59, 41, 42, 57, 50, 38, 31, 27, 33, 26, 40, 42, 31, 25]
+  omitidos: {"5": [4], "8": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
+  escritor: Apóstol Juan
+  lugar: Éfeso o cerca
+  fecha:
+    desde: 98
+    hasta: 98
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 98 e.c.
+  abarca:
+    desde: 29
+    hasta: 33
+    precision: rango
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 29-33 e.c.
+  nota: Lo abarcado se cuenta después del prólogo.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: hechos
+  num: 44
+  nombre: Hechos
+  abr: Hch
+  formas: [hch, hech, hechos, he]
+  habladas: [Hechos, Hech.]
+  capitulos: 28
+  versiculos: [26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 41, 40, 34, 28, 41, 38, 40, 30, 35, 27, 27, 32, 44, 31]
+  omitidos: {"8": [37], "15": [34], "24": [7], "28": [29]}
+  escritor: Lucas
+  lugar: Roma
+  fecha:
+    desde: 61
+    hasta: 61
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61 e.c.
+  abarca:
+    desde: 33
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 33-c. 61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Hechos» en la tabla de libros de la Biblia de estudio: escritor, lugar, fecha y tiempo abarcado.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: romanos
+  num: 45
+  nombre: Romanos
+  abr: Ro
+  formas: [ro, rom, romanos]
+  habladas: [Romanos, Rom.]
+  capitulos: 16
+  versiculos: [32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 33, 27]
+  omitidos: {"16": [24]}
+  escritor: Pablo
+  lugar: Corinto
+  fecha:
+    desde: 56
+    hasta: 56
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 56 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Romanos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-corintios
+  num: 46
+  nombre: "1 Corintios"
+  abr: "1Co"
+  formas: ["1co", "1cor", "1corintios"]
+  habladas: ["1 Corintios", "1 Cor."]
+  capitulos: 16
+  versiculos: [31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24]
+  escritor: Pablo
+  lugar: Éfeso
+  fecha:
+    desde: 55
+    hasta: 55
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 55 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-corintios
+  num: 47
+  nombre: "2 Corintios"
+  abr: "2Co"
+  formas: ["2co", "2cor", "2corintios"]
+  habladas: ["2 Corintios", "2 Cor."]
+  capitulos: 13
+  versiculos: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14]
+  escritor: Pablo
+  lugar: Macedonia
+  fecha:
+    desde: 55
+    hasta: 55
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 55 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Corintios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: galatas
+  num: 48
+  nombre: Gálatas
+  abr: Gál
+  formas: [gal, galatas, ga]
+  habladas: [Gálatas, Gál.]
+  capitulos: 6
+  versiculos: [24, 21, 29, 31, 26, 18]
+  escritor: Pablo
+  lugar: Corinto o Antioquía de Siria
+  fecha:
+    desde: 50
+    hasta: 52
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 50-52 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Gálatas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: efesios
+  num: 49
+  nombre: Efesios
+  abr: Ef
+  formas: [ef, efes, efesios, efe]
+  habladas: [Efesios, Efes.]
+  capitulos: 6
+  versiculos: [23, 22, 21, 32, 33, 24]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Efesios» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: filipenses
+  num: 50
+  nombre: Filipenses
+  abr: Flp
+  formas: [flp, filip, filipenses, fil]
+  habladas: [Filipenses, Filip.]
+  capitulos: 4
+  versiculos: [30, 30, 21, 23]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Filipenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: colosenses
+  num: 51
+  nombre: Colosenses
+  abr: Col
+  formas: [col, colosenses]
+  habladas: [Colosenses, Col.]
+  capitulos: 4
+  versiculos: [29, 23, 25, 18]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Colosenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-tesalonicenses
+  num: 52
+  nombre: "1 Tesalonicenses"
+  abr: "1Te"
+  formas: ["1te", "1tes", "1tesalonicenses", "1ts"]
+  habladas: ["1 Tesalonicenses", "1 Tes."]
+  capitulos: 5
+  versiculos: [10, 20, 13, 18, 28]
+  escritor: Pablo
+  lugar: Corinto
+  fecha:
+    desde: 50
+    hasta: 50
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 50 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-tesalonicenses
+  num: 53
+  nombre: "2 Tesalonicenses"
+  abr: "2Te"
+  formas: ["2te", "2tes", "2tesalonicenses", "2ts"]
+  habladas: ["2 Tesalonicenses", "2 Tes."]
+  capitulos: 3
+  versiculos: [12, 17, 18]
+  escritor: Pablo
+  lugar: Corinto
+  fecha:
+    desde: 51
+    hasta: 51
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 51 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Tesalonicenses» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-timoteo
+  num: 54
+  nombre: "1 Timoteo"
+  abr: "1Ti"
+  formas: ["1ti", "1tim", "1timoteo"]
+  habladas: ["1 Timoteo", "1 Tim."]
+  capitulos: 6
+  versiculos: [20, 15, 16, 16, 25, 21]
+  escritor: Pablo
+  lugar: Macedonia
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61-64 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-timoteo
+  num: 55
+  nombre: "2 Timoteo"
+  abr: "2Ti"
+  formas: ["2ti", "2tim", "2timoteo"]
+  habladas: ["2 Timoteo", "2 Tim."]
+  capitulos: 4
+  versiculos: [18, 26, 17, 22]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 65
+    hasta: 65
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 65 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Timoteo» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: tito
+  num: 56
+  nombre: Tito
+  abr: Tit
+  formas: [tit, tito]
+  habladas: [Tito]
+  capitulos: 3
+  versiculos: [16, 15, 15]
+  escritor: Pablo
+  lugar: Macedonia (?)
+  fecha:
+    desde: 61
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61-64 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Tito» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: filemon
+  num: 57
+  nombre: Filemón
+  abr: Flm
+  formas: [flm, filem, filemon]
+  habladas: [Filemón, Filem.]
+  capitulos: 1
+  versiculos: [25]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 60
+    hasta: 61
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 60-61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Filemón» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: hebreos
+  num: 58
+  nombre: Hebreos
+  abr: Heb
+  formas: [heb, hebreos]
+  habladas: [Hebreos, Heb.]
+  capitulos: 13
+  versiculos: [14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25]
+  escritor: Pablo
+  lugar: Roma
+  fecha:
+    desde: 61
+    hasta: 61
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 61 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Hebreos» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: santiago
+  num: 59
+  nombre: Santiago
+  abr: Snt
+  formas: [snt, sant, santiago]
+  habladas: [Santiago, Sant.]
+  capitulos: 5
+  versiculos: [27, 26, 18, 17, 20]
+  escritor: Santiago (hermano de Jesús)
+  lugar: Jerusalén
+  fecha:
+    desde: null
+    hasta: 62
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: antes de 62 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Santiago» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-pedro
+  num: 60
+  nombre: "1 Pedro"
+  abr: "1Pe"
+  formas: ["1pe", "1ped", "1pedro"]
+  habladas: ["1 Pedro", "1 Ped."]
+  capitulos: 5
+  versiculos: [25, 25, 22, 19, 14]
+  escritor: Pedro
+  lugar: Babilonia
+  fecha:
+    desde: 62
+    hasta: 64
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 62-64 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-pedro
+  num: 61
+  nombre: "2 Pedro"
+  abr: "2Pe"
+  formas: ["2pe", "2ped", "2pedro"]
+  habladas: ["2 Pedro", "2 Ped."]
+  capitulos: 3
+  versiculos: [21, 22, 18]
+  escritor: Pedro
+  lugar: Babilonia (?)
+  fecha:
+    desde: 64
+    hasta: 64
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 64 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Pedro» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 1-juan
+  num: 62
+  nombre: "1 Juan"
+  abr: "1Jn"
+  formas: ["1jn", "1juan"]
+  habladas: ["1 Juan"]
+  capitulos: 5
+  versiculos: [10, 29, 24, 21, 21]
+  escritor: Apóstol Juan
+  lugar: Éfeso o cerca
+  fecha:
+    desde: 98
+    hasta: 98
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 98 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «1 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 2-juan
+  num: 63
+  nombre: "2 Juan"
+  abr: "2Jn"
+  formas: ["2jn", "2juan"]
+  habladas: ["2 Juan"]
+  capitulos: 1
+  versiculos: [13]
+  escritor: Apóstol Juan
+  lugar: Éfeso o cerca
+  fecha:
+    desde: 98
+    hasta: 98
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 98 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «2 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: 3-juan
+  num: 64
+  nombre: "3 Juan"
+  abr: "3Jn"
+  formas: ["3jn", "3juan"]
+  habladas: ["3 Juan"]
+  capitulos: 1
+  versiculos: [14]
+  escritor: Apóstol Juan
+  lugar: Éfeso o cerca
+  fecha:
+    desde: 98
+    hasta: 98
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 98 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «3 Juan» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: judas
+  num: 65
+  nombre: Judas
+  abr: Jud
+  formas: [jud, judas]
+  habladas: [Judas, Jud.]
+  capitulos: 1
+  versiculos: [25]
+  escritor: Judas (hermano de Jesús)
+  lugar: Israel (?)
+  fecha:
+    desde: 65
+    hasta: 65
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 65 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Judas» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado
+- slug: apocalipsis
+  num: 66
+  nombre: Apocalipsis
+  abr: Ap
+  formas: [ap, apoc, apocalipsis]
+  habladas: [Apocalipsis, Apoc., Revelación, Rev., Rev]
+  capitulos: 22
+  versiculos: [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21]
+  escritor: Apóstol Juan
+  lugar: Patmos
+  fecha:
+    desde: 96
+    hasta: 96
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 96 e.c.
+  fuentes:
+  - tnm-tabla
+  razon: 'Fila de «Apocalipsis» en la tabla de libros de la Biblia de estudio: escritor, lugar y fecha.'
+  consultado: '2026-09-28'
+  estado: verificado

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahan
+nombre: Tahán
+nombres:
+- nombre: Tahán
+perspicacia: '1200004301'
+resumen: Efraimita que fundó la familia de los tahanitas. Perspicacia no sabe si es el Tahán de 1 Crónicas 7.
+razon: Perspicacia «Tahán, tahanitas»; Nú 26:35.
+fuentes:
+- it-tahan
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Tahán, tahanitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004301
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: efrain
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-tahan
+  razon: Nú 26:35 lo cuenta entre los hijos de Efraín.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

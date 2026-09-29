@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: suegra-de-pedro
+nombre: Suegra de Pedro
+nombres:
+- nombre: suegra de Pedro
+  nota: La Biblia no da su nombre.
+desambiguacion: 'Sin nombre en la Biblia: la suegra de Simón Pedro (Mr 1:30).'
+fecha:
+  desde: 30
+  hasta: 30
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 30 e.c.
+  nota: El estudio 3 pone su curación en 30, al principio del ministerio en Galilea.
+resumen: Madre de la esposa de Pedro. Vivía en la casa que Pedro compartía con Andrés en Capernaúm; Jesús la curó
+  de una fiebre alta y ella se puso a servirles.
+razon: Perspicacia «Pedro» (párr. 4) y el recuadro sobre Pedro del capítulo 4 de «Testimonio completo»; Mr 1:29-31.
+fuentes:
+- it-pedro
+- bt-4
+- marcos-1
+- mateo-8
+- lucas-4
+relaciones:
+- tipo: vivio_en
+  lugar: capernaum
+  deducido: false
+  fuentes:
+  - it-pedro
+  - marcos-1
+  - si-3
+  - lucas-4
+  razon: 'Mr 1:21, 29: la casa de Simón y Andrés estaba en Capernaúm.'
+  estado: verificado
+enlaces:
+- titulo: 'Perspicacia: «Pedro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003451
+  tipo: perspicacia
+- titulo: Marcos 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/1
+  tipo: biblia
+perspicacia: null
+consultado: '2026-09-29'
+estado: verificado

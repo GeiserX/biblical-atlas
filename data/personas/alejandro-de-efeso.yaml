@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: alejandro-de-efeso
+nombre: Alejandro
+nombres:
+- nombre: Alejandro
+perspicacia: 1200000192#4
+fecha:
+  desde: 55
+  hasta: 55
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 55 e.c.
+desambiguacion: El judío del motín de Éfeso (Hch 19:33, 34). Perspicacia lo separa del hijo de Simón de Cirene, del pariente
+  de Anás y de los de 1 y 2 Timoteo.
+no_confundir_con:
+- alejandro-hijo-de-simon
+- alejandro-pariente-de-anas
+no_afirmamos:
+- 'Qué quería decir al pueblo: «Testimonio completo» solo supone que querría separar a los judíos de los cristianos.'
+resumen: Judío al que otros judíos empujaron al frente en el teatro de Éfeso durante el motín. Pidió silencio con la mano
+  para defenderse, pero al ver que era judío la multitud gritó dos horas por Ártemis.
+razon: Perspicacia «Alejandro», núm. 4; Hch 19:33, 34. El motín fue hacia 55, al final de la estancia de Pablo en Éfeso (Perspicacia
+  «Demetrio», núm. 1; estudio 3, párr. 26).
+fuentes:
+- it-alejandro
+- it-demetrio
+- hch-19
+- si-3
+- bt-20
+enlaces:
+- titulo: 'Perspicacia: «Alejandro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  tipo: perspicacia
+- titulo: Hechos 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

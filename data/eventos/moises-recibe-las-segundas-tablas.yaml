@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-recibe-las-segundas-tablas
+titulo: Moisés recibe en el Sinaí las segundas tablas
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 34001
+lugares:
+- monte-sinai
+personas:
+- moises
+pasajes:
+- Éx 34:1-28
+- Dt 9:18, 25
+- Dt 10:1-5, 10
+resumen: Moisés talla dos tablas nuevas y sube solo al Sinaí. Jehová pasa ante él proclamando su nombre, renueva el pacto
+  con sus condiciones y, tras 40 días y 40 noches de ayuno de Moisés, vuelve a escribir los Diez Mandamientos.
+razon: 'Perspicacia «Diez Palabras», párr. 3 y 4: Moisés talló las tablas y Jehová las escribió. 1513 a.e.c.: en las dos estancias
+  de 40 días tras el pacto del tercer mes, o entre ellas (Perspicacia «Moisés» y «Diez Palabras»; estudio 3).'
+fuentes:
+- exodo-34
+- it-diez-palabras
+- it-moises
+- si-3
+enlaces:
+- titulo: Éxodo 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/34
+  tipo: biblia
+- titulo: 'Perspicacia: «Diez Palabras»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004367
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

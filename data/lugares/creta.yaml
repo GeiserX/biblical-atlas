@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: creta
+nombre: Creta
+nombres:
+- nombre: Creta
+- nombre: Caftor
+  nota: La nota de Dt 2:23 dice que Caftor es Creta, de donde salieron los caftorim.
+tipo: isla
+lat: 35.30972
+lon: 24.89333
+precision: punto
+coord_fuente: openbible:a26aa94
+coord_url: https://www.openbible.info/geo/ancient/a26aa94/crete
+resumen: Quinta isla del Mediterráneo en tamaño, al sureste de Grecia. Hacia 58, el barco que llevaba preso a Pablo costeó
+  su lado sur hasta Bellos Puertos; más tarde Tito se quedó allí para nombrar ancianos.
+razon: 'Perspicacia «Creta, cretenses», párr. 1 y apartado de la actividad de Pablo; Hch 27:7-21; Tit 1:5. La coordenada es
+  de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-creta
+- tito-1
+- openbible-geo
+- hch-27
+- deuteronomio-2
+- it-caftor
+enlaces:
+- titulo: 'Perspicacia: «Creta, cretenses»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001071
+  tipo: perspicacia
+- titulo: Tito 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen solo hablaba de Tito; ahora recoge el paso del barco de Pablo por la costa sur (Hch 27:7-21), que Perspicacia
+    «Creta, cretenses» cuenta.
+  fuente: hch-27
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora Hechos 27, que añade el resumen.
+  fuente: hch-27
+consultado: '2026-09-29'
+estado: verificado

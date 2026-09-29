@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: batalla-contra-amalec-en-refidim
+titulo: Israel vence a los amalequitas en Refidim
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 17008
+lugares:
+- refidim
+personas:
+- josue-hijo-de-nun
+- moises
+- aaron
+- hur-companero-de-moises
+pasajes:
+- Éx 17:8-16
+- Dt 25:17, 18
+resumen: Los amalequitas atacan a Israel. Josué dirige la lucha mientras Moisés, en lo alto de una colina, mantiene las manos
+  alzadas con ayuda de Aarón y Hur. Tras vencer, Moisés levanta el altar Jehová-Nisí.
+razon: Perspicacia «Josué», núm. 1, párr. 2, fecha la batalla en 1513 a.e.c., con Israel acampado en Refidim.
+fuentes:
+- exodo-17
+- it-josue
+- it-refidim
+- it-jehova-nisi
+- it-amaleq
+- it-hur
+- deuteronomio-25
+enlaces:
+- titulo: Éxodo 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

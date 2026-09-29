@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cirene
+nombre: Cirene
+nombres:
+- nombre: Cirene
+tipo: ciudad
+lat: 32.820946
+lon: 21.851229
+precision: punto
+coord_fuente: openbible:a81cdb5
+coord_url: https://www.openbible.info/geo/ancient/a81cdb5/cyrene
+resumen: Capital de la Cirenaica, en el norte de África, al sudoeste de Creta y a unos 16 km tierra adentro. Allí había nacido
+  Simón, el hombre al que obligaron a llevar el madero de Jesús.
+razon: 'Perspicacia «Cirene, cireneo» (párr. 1 y 3) y la nota de Mt 27:32. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-cirene
+- mateo-27
+- openbible-geo
+- marcos-15
+- lucas-23
+- hechos-11
+enlaces:
+- titulo: 'Perspicacia: «Cirene, cireneo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001101
+  tipo: perspicacia
+- titulo: Mateo 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/27
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

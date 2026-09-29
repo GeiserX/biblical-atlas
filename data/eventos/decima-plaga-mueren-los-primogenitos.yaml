@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: decima-plaga-mueren-los-primogenitos
+titulo: 'Décima plaga: mueren los primogénitos de Egipto'
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: día
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 14 de nisán de 1513 a.e.c.
+  detalle:
+    mes: nisan
+    dia: 14
+orden_relato:
+  serie: exodo
+  orden: 12029
+lugares:
+- egipto
+personas: []
+pasajes:
+- Éx 12:29-30
+- Sl 78:51
+- Sl 105:36
+- Sl 135:8
+- Sl 136:10
+- Nú 33:4
+resumen: A medianoche Jehová mata a todos los primogénitos de Egipto, del hijo del faraón al del preso, y las primeras crías
+  del ganado. No queda casa egipcia sin un muerto y el llanto se oye en todo el país.
+razon: 'Éx 11:4-6 la anuncia. Perspicacia «Pascua», apartado «Las leyes sobre su observancia»: ocurrió la noche de la primera
+  Pascua, 14 de abib de 1513 a.e.c., y fue un juicio contra los dioses egipcios.'
+fuentes:
+- exodo-12
+- exodo-11
+- it-pascua
+- si-3
+enlaces:
+- titulo: Éxodo 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

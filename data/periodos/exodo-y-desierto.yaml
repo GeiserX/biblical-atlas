@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: exodo-y-desierto
+nombre: Éxodo y desierto
+tipo: era
+fecha:
+  desde: -1512
+  hasta: -1472
+  precision: rango
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513-1473 a.e.c.
+resumen: Israel sale de Egipto, recibe la Ley en el Sinaí y anda cuarenta años por el desierto hasta las llanuras de Moab.
+  Lo cuentan Éxodo, Levítico, Números y Deuteronomio.
+razon: El estudio 3 fecha la salida en 1513 a.e.c.; Perspicacia «Cronología» cuenta 40 años hasta la entrada en Canaán,
+  en 1473 a.e.c.
+fuentes:
+- si-3
+- it-cronologia
+buscar: éxodo desierto 40 años
+consultado: '2026-09-28'
+estado: verificado
+nota: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: fenice
+nombre: Fenice
+nombres:
+- nombre: Fenice
+  nota: Perspicacia hace venir el nombre de una raíz que significa «palmera».
+tipo: puerto
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Lutro (Loutro), en el lado este de un cabo de la costa sur de Creta
+  geometria:
+    tipo: punto
+    lat: 35.20001
+    lon: 24.07858
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-fenice
+  - hch-27
+  - openbible-geo
+  razon: 'Perspicacia: la lectura de la TNM, un puerto abierto al noreste y al sureste, podría encajar con la bahía curva
+    de Lutro, unos 65 km al oeste de Bellos Puertos. Punto de OpenBible.'
+  coord_fuente: openbible:a9ee958
+  coord_url: https://www.openbible.info/geo/ancient/a9ee958/phoenix
+- nombre: Fineka (Finikas), al otro lado del mismo cabo
+  geometria:
+    tipo: punto
+    lat: 35.2
+    lon: 24.072222
+  estado: alternativa
+  fuentes:
+  - it-fenice
+  - openbible-geo
+  razon: 'Perspicacia recoge esta otra propuesta: tiene dos ensenadas, orientadas al suroeste y al noroeste, y hoy no sirve
+    de puerto. Punto de OpenBible.'
+  coord_fuente: openbible:a9ee958
+  coord_url: https://www.openbible.info/geo/ancient/a9ee958/phoenix
+resumen: Puerto de la costa sur de Creta, al oeste de Bellos Puertos. La tripulación del barco de Pablo quiso pasar allí el
+  invierno, pero la tormenta los alejó de la isla hasta Malta.
+razon: Perspicacia «Fenice»; Hch 27:12, 13. Perspicacia presenta dos sitios y no decide; el texto de la TNM se inclina por
+  el primero.
+fuentes:
+- it-fenice
+- hch-27
+- openbible-geo
+enlaces:
+- titulo: 'Perspicacia: «Fenice»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003476
+  tipo: perspicacia
+- titulo: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

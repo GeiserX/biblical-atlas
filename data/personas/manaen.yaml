@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: manaen
+nombre: Manaén
+nombres:
+- nombre: Manaén
+fecha:
+  desde: 47
+  hasta: 47
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47 e.c.
+resumen: Uno de los profetas y maestros de Antioquía cuando el espíritu apartó a Bernabé y Saulo. Se había criado
+  con Herodes Antipas.
+razon: Perspicacia «Manaén» y Hch 13:1.
+fuentes:
+- it-manaen
+- hch-13
+enlaces:
+- titulo: 'Perspicacia: «Manaén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002879
+  tipo: perspicacia
+- titulo: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  tipo: biblia
+perspicacia: '1200002879'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: antioquia-de-siria
+  deducido: false
+  fuentes:
+  - it-manaen
+  - hch-13
+  razon: Hch 13:1 lo cuenta entre los profetas y maestros de Antioquía.
+  estado: verificado
+- tipo: acompana
+  persona: herodes-antipas
+  relacion: compañero de crianza
+  relacion_inversa: compañero de crianza
+  deducido: false
+  fuentes:
+  - hch-13
+  - it-manaen
+  razon: Hch 13:1 dice que se educó junto a Herodes, el gobernante de distrito; Perspicacia «Manaén» lo identifica con Herodes
+    Antipas.
+  estado: verificado

@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mandato-de-hacer-discipulos
+titulo: En Galilea manda hacer discípulos
+fecha:
+  desde: 33
+  hasta: 33
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Entre el 17 de nisán y el 25 de iyar de 33 e.c.
+lugares:
+- galilea
+personas:
+- jesus
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- bartolome
+- tomas
+- mateo
+- santiago-hijo-de-alfeo
+- simon-el-cananita
+- tadeo
+pasajes:
+- Mt 28:16-20
+- 1Co 15:6
+- Hch 1:3
+resumen: En un monte de Galilea, Jesús dice que ha recibido toda autoridad y manda a sus discípulos que hagan discípulos
+  en todas las naciones.
+razon: 'La tabla A7-H da el día y el lugar. La nota de Mt 28:16 dice que al parecer asistieron más de 500 discípulos
+  (1Co 15:6). Mt 28:16 dice que fueron los once discípulos: van en personas los once apóstoles.'
+fuentes:
+- tnm-a7-h
+- mateo-28
+- 1-corintios-15
+- hechos-1
+- jy-cap-137
+orden_relato:
+  serie: a7
+  orden: 132
+buscar: En Galilea manda hacer discípulos
+historial:
+- fecha: '2026-09-29'
+  cambio: Entre los once de Mt 28:16 va Bartolomé (Mt 10:3), que ahora tiene ficha; sale natanael. Van en dos fichas con mismo_que
+    pendiente, porque Perspicacia y la nota de Mt 10:3 solo lo dan como probable.
+  fuente: mateo-28
+- fecha: '2026-09-29'
+  cambio: orden 125 pasa a 130 para dejar sitio a las cinco apariciones del 16 de nisán (125-129), que van tras la resurrección
+    (124).
+  fuente: tnm-a7-h
+- fecha: '2026-09-29'
+  cambio: 'orden 130 pasa a 132: Jn 21:14 hace de la aparición junto al mar la tercera al grupo, tras las dos de Jn 20, y
+    jy la pone antes del mandato (cap. 136 y 137).'
+  fuente: juan-21
+- fecha: '2026-09-29'
+  cambio: 'Hch 1:4-8 no pasa en Galilea: los v. 4 y 5 son una reunión en Jerusalén (jy, cap. 137) y los v. 6-8, la última
+    conversación en el monte de los Olivos (bt, cap. 2, párr. 8). Queda Hch 1:3.'
+  fuente: hechos-1
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jetro
+nombre: Jetró
+nombres:
+- nombre: Jetró
+- nombre: Reuel
+  nota: Así lo llama Éx 2:18, cuya nota aclara que es Jetró. Según Perspicacia, Jetró podría ser un título y Reuel su nombre
+    propio.
+- nombre: Jéter
+  nota: Grafía del texto masorético en Éx 4:18, según Perspicacia.
+perspicacia: '1200002454'
+desambiguacion: Jetró, llamado también Reuel, sacerdote de Madián y suegro de Moisés; no Reuel, el hijo de Esaú.
+no_confundir_con:
+- reuel-hijo-de-esau
+- deuel
+resumen: Quenita, sacerdote de Madián. Moisés, su yerno, le cuidó los rebaños unos cuarenta años. Tras el éxodo, Jetró le
+  llevó a su esposa Ziporá y a sus hijos, ofreció sacrificios a Jehová y le aconsejó repartir la tarea de juzgar.
+razon: Perspicacia «Jetró» y «Reuel», núm. 2; Éx 2:16-21; 3:1; 4:18; 18:1-27. La nota de Éx 2:18 dice que Reuel es Jetró.
+fuentes:
+- it-jetro
+- it-reuel
+- exodo-2
+- exodo-3
+- exodo-4
+- exodo-18
+- numeros-10
+enlaces:
+- titulo: 'Perspicacia: «Jetró»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002454
+  tipo: perspicacia
+- titulo: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  tipo: biblia
+- titulo: Éxodo 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/18
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: madian
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-jetro
+  - exodo-3
+  - exodo-18
+  razon: 'Éx 2:16: el sacerdote de Madián, que vivía allí con sus siete hijas.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

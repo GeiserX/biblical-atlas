@@ -1,0 +1,73 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lazaro
+nombre: Lázaro
+nombres:
+- nombre: Lázaro
+  nota: Probablemente la forma griega del hebreo Eleazar.
+desambiguacion: El amigo de Jesús de Betania; no es el mendigo de la parábola del rico y Lázaro.
+no_afirmamos:
+- El amigo de Jesús es el mendigo de la parábola de Lucas 16.
+- Se sabe cuándo o dónde volvió a morir Lázaro.
+relaciones:
+- tipo: pariente
+  persona: marta
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: Jn 11:1, 2 lo presenta como hermano de Marta y María.
+  estado: verificado
+- tipo: pariente
+  persona: maria-de-betania
+  relacion: hermana
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: Jn 11:1, 2 lo presenta como hermano de Marta y María.
+  estado: verificado
+- tipo: vivio_en
+  lugar: betania
+  deducido: false
+  fuentes:
+  - juan-11
+  - juan-12
+  razon: Jn 11:1 dice que era de Betania, la aldea de sus hermanas.
+  estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: amigo
+  deducido: false
+  fuentes:
+  - juan-11
+  razon: 'Jn 11:3, 11: sus hermanas lo llaman el amigo querido de Jesús, y Jesús habla de él como «nuestro amigo».'
+  estado: verificado
+resumen: Hermano de Marta y María, de Betania, y amigo íntimo de Jesús. Llevaba cuatro días en la tumba cuando Jesús lo resucitó,
+  a principios de 33 e.c. Después los sacerdotes principales planearon matarlo.
+razon: Perspicacia «Lázaro», apartado 1 (párr. 2-7), fecha el milagro a principios de 33; Jn 11 lo narra y Jn 12:9-11 cuenta
+  el plan contra él.
+fuentes:
+- it-lazaro
+- juan-11
+- juan-12
+enlaces:
+- titulo: 'Perspicacia: «Lázaro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002698
+  tipo: perspicacia
+- titulo: Juan 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/11
+  tipo: biblia
+buscar: Lázaro
+perspicacia: 1200002698#1
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sin la cita de Lucas 16: el sitio ponía al amigo de Jesús entre los nombrados en ese capítulo, que solo habla del
+    mendigo de la parábola.'
+  fuente: lucas-16
+- fecha: '2026-09-29'
+  cambio: El resumen añade el plan de los sacerdotes principales contra Lázaro, que cuenta Jn 12:10, 11.
+  fuente: juan-12
+- fecha: '2026-09-29'
+  cambio: La razón cita también Jn 12:9-11, de donde sale lo que el resumen añade.
+  fuente: juan-12
+consultado: '2026-09-29'
+estado: verificado

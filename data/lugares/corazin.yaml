@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: corazin
+nombre: Corazín
+nombres:
+- nombre: Corazín
+tipo: ciudad
+lat: 32.911389
+lon: 35.563889
+precision: punto
+coord_fuente: openbible:a593a48
+coord_url: https://www.openbible.info/geo/ancient/a593a48/chorazin
+resumen: Ciudad del extremo norte del mar de Galilea, unos 3 km al nor-noroeste de Capernaúm. Jesús le reprochó que no se
+  arrepintiera a pesar de las obras poderosas que había visto.
+razon: 'Perspicacia «Corazín» (párr. 2): los eruditos suelen identificarla con Khirbet Kerazeh. El reproche está en Mt 11:21.
+  Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-corazin
+- mateo-11
+- openbible-geo
+- lucas-10
+enlaces:
+- titulo: 'Perspicacia: «Corazín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000965
+  tipo: perspicacia
+- titulo: Mateo 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

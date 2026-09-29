@@ -1,0 +1,90 @@
+# biblical-earth: un fichero por recorrido. Esquema en docs/investigacion/README.md.
+id: de-babilonia-a-jerusalen
+titulo: De Babilonia a Jerusalén
+resumen: 'Ocho paradas, desde que Jerusalén cae en 607 a.e.c. hasta el templo terminado en 515: la caída de Babilonia,
+  el decreto de Ciro, el viaje de vuelta y la reconstrucción.'
+paradas:
+- sel: evento:destruccion-de-jerusalen-607
+  t: -605.4422
+  texto: Nabucodonosor destruye Jerusalén y su templo. Empiezan setenta años en los que la tierra de Judá quedará desolada,
+    como había anunciado Jeremías.
+  pasajes:
+  - 2Re 25:8-10
+  - Jer 25:11, 12
+- sel: evento:caida-de-babilonia
+  t: -537.2642
+  texto: Una noche de octubre de 539 a.e.c., el ejército de Ciro entra en Babilonia sin combatir. Belsasar muere en pleno
+    banquete, después de que Daniel leyera la escritura en la pared.
+  pasajes:
+  - Da 5:1-31
+- sel: evento:decreto-de-ciro
+  t: -536.9
+  texto: En su primer año sobre Babilonia, Ciro permite a los judíos volver y reconstruir el templo. Les devuelve los utensilios
+    que se había llevado Nabucodonosor.
+  pasajes:
+  - Esd 1:1-11
+  - 2Cr 36:22, 23
+  no_sabemos: No sabemos dónde proclamó Ciro el decreto. Años después apareció en Ecbátana otro documento suyo, un memorándum
+    sobre el templo.
+- sel: evento:regreso-de-537
+  t: -535.3
+  texto: 'Un largo camino de vuelta: 42.360 personas, sin contar 7.337 esclavos y 200 cantores, salen de Babilonia con 5.400
+    utensilios de oro y plata. Viajan entre 800 y 1.600 km, según la ruta.'
+  pasajes:
+  - Esd 1:11
+  - Esd 2:64, 65
+  no_sabemos: La Biblia no da la ruta ni la fecha de salida. Perspicacia estima unos cuatro meses de viaje comparándolo
+    con el de Esdras (Esd 7:9).
+  pregunta:
+    texto: ¿Quién guio a este primer grupo de vuelta a Jerusalén?
+    opciones:
+    - Esdras
+    - Zorobabel
+    - Nehemías
+    respuesta: Zorobabel
+    explicacion: Lo guio Zorobabel con el sumo sacerdote Josué. Esdras llegó 69 años después, en 468 a.e.c., y Nehemías
+      en 455.
+- sel: evento:altar-reconstruido-537
+  t: -535.27
+  texto: En el séptimo mes, tisri de 537, los repatriados levantan el altar en su sitio y celebran la fiesta de las Cabañas.
+    Termina la desolación de setenta años.
+  pasajes:
+  - Esd 3:1-6
+- sel: evento:fundamento-del-templo-536
+  t: -534.67
+  texto: En el segundo mes de 536 se ponen los cimientos del templo. Unos gritan de alegría y otros, los que recordaban
+    el templo de Salomón, lloran.
+  pasajes:
+  - Esd 3:8-13
+- sel: evento:obra-del-templo-prohibida-522
+  t: -520.5
+  texto: Los vecinos hostiles acusan a los judíos ante el rey persa, y en 522 la obra queda prohibida. El templo sigue a
+    medio construir.
+  pasajes:
+  - Esd 4:4-24
+- sel: evento:templo-terminado-515
+  t: -513.8955
+  texto: En 520, Ageo y Zacarías animan a reanudar la obra, y Darío I la respalda al hallarse el decreto de Ciro. El templo
+    se termina el 3 de adar de 515.
+  pasajes:
+  - Ag 1:1-15
+  - Esd 5:1, 2
+  - Esd 6:14, 15
+fuentes:
+- si-3
+- it-ciro
+- it-zorobabel
+- it-babilonia
+- it-templo
+- it-esdras
+- lbt-regreso
+- esdras-1
+- esdras-2
+- esdras-3
+- esdras-4
+- esdras-6
+- ageo-1
+razon: Fechas del estudio 3 (párr. 5, 6 y tabla); cifras de Esd 1:11 y 2:64, 65; distancia de Veamos «la buena tierra»;
+  duración del viaje, de Perspicacia «Ciro»; llegada de Esdras, de Perspicacia «Esdras».
+consultado: '2026-09-28'
+estado: verificado

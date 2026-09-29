@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: caleb-hijo-de-jefune
+nombre: Caleb
+nombres:
+- nombre: Caleb
+desambiguacion: Caleb hijo de Jefuné, compañero de Josué entre los espías; no Caleb hijo de Hezrón.
+resumen: Quenizita de la tribu de Judá y tío de Otniel. A los 40 años fue uno de los doce espías y, con Josué, animó a entrar
+  en Canaán. Recibió Hebrón como herencia.
+razon: Perspicacia «Caleb», núm. 2, párr. 3 y 4; Nú 13:6, 30 y Jos 14:6-14.
+fuentes:
+- it-caleb
+- numeros-13
+- josue-14
+- numeros-14
+- it-espias
+- numeros-26
+- numeros-32
+- numeros-34
+- it-jefune
+- deuteronomio-1
+enlaces:
+- titulo: 'Perspicacia: «Caleb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000863
+  tipo: perspicacia
+- titulo: Josué 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/14
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: josue-hijo-de-nun
+  deducido: false
+  fuentes:
+  - it-caleb
+  - numeros-14
+  - numeros-32
+  razon: 'Perspicacia «Caleb», párr. 3: de los doce espías, solo él y Josué volvieron con un informe favorable (Nú 14:6-9).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: hebron
+  deducido: false
+  fuentes:
+  - it-caleb
+  - josue-14
+  razon: 'Jos 14:13, 14: Josué le dio Hebrón como herencia; Perspicacia «Caleb», párr. 4.'
+  estado: verificado
+- tipo: pariente
+  persona: jefune-padre-de-caleb
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-13
+  - numeros-14
+  - it-jefune
+  - numeros-26
+  - it-caleb
+  - numeros-32
+  - numeros-34
+  - deuteronomio-1
+  razon: Nú 13:6 y 14:6, 30, 38 lo llaman Caleb hijo de Jefuné.
+  estado: verificado
+perspicacia: 1200000863#2
+consultado: '2026-09-29'
+estado: verificado

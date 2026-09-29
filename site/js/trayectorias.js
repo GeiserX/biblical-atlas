@@ -1,7 +1,8 @@
 /* biblical-earth · trayectorias: dónde está cada persona en cada momento y en qué ventana de tiempo cae cada carta o suceso.
-   Pablo sigue el modelo de sus paradas (v0). Cualquier otra persona se sitúa con sus viajes, los sucesos que la nombran
-   con lugar y sus relaciones fechadas (vivio_en, nacio_en, murio_en). Nunca se inventa una posición: fuera de lo que
-   dicen los datos, BE.donde devuelve null. Dueño durante el reparto: app-tiempo. */
+   Quien tiene viajes (hoy, Pablo) sigue sus paradas, y sus sucesos y cartas se colocan en ellas (colocarEnParadas).
+   Cualquier otra persona se sitúa con sus viajes, los sucesos que la nombran con lugar y sus relaciones fechadas
+   (vivio_en, nacio_en, murio_en). Nunca se inventa una posición: fuera de lo que dicen los datos, BE.donde devuelve
+   null. Dueño durante el reparto: app-tiempo. */
 'use strict';
 (() => {
 const BE = window.BE;
@@ -121,7 +122,7 @@ function ventanaFecha(f) {
 }
 
 // ---------------------------------------------------------------------------
-// Pablo: el modelo de v0, intacto
+// Paradas de los viajes (el modelo de v0 de Pablo, para cualquiera con viajes)
 // ---------------------------------------------------------------------------
 /** Momentos [inicio, fin] (años decimales) en que situamos una parada anclada. */
 function momentos(f) {
@@ -139,7 +140,10 @@ function momentos(f) {
   else if (hits.length === 1 && hits[0] === ESTACIONES.invierno) fin = h + 0.15;
   return [ini, Math.max(ini, fin)];
 }
-const esDe = (v, persona) => (v.persona || 'pablo') === persona;
+// Un viaje sin `persona` es de Pablo y una carta sin `escritor` es suya: así lo dice el esquema de los datos.
+const duenoViaje = (v) => v.persona || 'pablo';
+const escritorDe = (c) => c.escritor || 'pablo';
+const esDe = (v, persona) => duenoViaje(v) === persona;
 /** Ordena las paradas de los viajes de una persona (Pablo si no se dice) y les da un momento.
     Paradas ancladas: su fecha. Paradas en tiempo narrativo: repartidas por igual entre las dos anclas que las rodean. */
 function prepararParadas(persona = 'pablo') {
@@ -182,6 +186,155 @@ function prepararParadas(persona = 'pablo') {
   return out;
 }
 
+// ---------------------------------------------------------------------------
+// Sucesos y cartas en las paradas de quien viaja (Pablo hoy, cualquiera con viajes mañana)
+// ---------------------------------------------------------------------------
+/** Personas con viajes. */
+let viajerosCache = null;
+function viajeros() {
+  if (viajerosCache && viajerosCache.D === BE.D) return viajerosCache.s;
+  viajerosCache = { D: BE.D, s: new Set((BE.D.viajes || []).map(duenoViaje)) };
+  return viajerosCache.s;
+}
+/** Las personas de `personas` que tienen viajes y que estaban allí (`presentes`), en su orden. */
+function candidatos(e) {
+  const vs = viajeros();
+  return (e.personas || []).filter((p) => vs.has(p) && (!e.presentes || e.presentes.includes(p)));
+}
+/** Paradas de cada persona con viajes y los sucesos y cartas colocados en ellas, una vez por carga de datos:
+    { its: Map(persona → { P, m }), quien: Map(suceso → persona) }. Un suceso es de las paradas de la primera de sus
+    candidatas que tiene una parada en uno de sus lugares y en su fecha; si ninguna la tiene, no es de ninguna parada y
+    se coloca con su fecha y el orden del relato. Se mira con las paradas sin alargar, así que no depende del orden. */
+let itCache = null;
+function itinerarios() {
+  if (itCache && itCache.D === BE.D) return itCache;
+  const its = new Map();
+  for (const p of viajeros()) its.set(p, { P: prepararParadas(p), m: new Map() });
+  const quien = new Map();
+  for (const e of BE.D.eventos || []) {
+    const tr = ventanaFecha(e.fecha);
+    if (!tr) continue;
+    const p = candidatos(e).find((q) => its.get(q).P.some((s, g) => (e.lugares || []).includes(s.lugar.id) && ventanaEnParada(its.get(q).P, g, tr)));
+    if (p) quien.set(e, p);
+  }
+  itCache = { D: BE.D, its, quien };
+  for (const [p, it] of its) it.m = colocarEnParadas(it.P, p, quien);
+  return itCache;
+}
+const SIN_PARADAS = { P: [], m: new Map() };
+const itinerario = (persona) => itinerarios().its.get(persona) || SIN_PARADAS;
+/** Quién sitúa al suceso con sus paradas, o null si ninguna parada de nadie lo acoge. */
+const viajeroDe = (e) => itinerarios().quien.get(e) || null;
+/** Lo más que una parada se alarga hacia cada lado para acoger sus sucesos. Una parada de un solo momento («c. 36 e.c.»)
+    no dice cuánto duró: la dejamos en unos días, marcados como estimados, y no en meses (Gál 1:18 habla de quince días). */
+const ALCANCE_MAX = 15 * DIA;
+/** Tiempo en que la persona puede estar en la parada g: su estancia y, a cada lado, el 40 % del camino hasta la parada
+    vecina (la vecina toma otro 40 % y queda un 20 % de camino), sin pasar de ALCANCE_MAX. Sin vecina a un lado, se usa
+    el camino del otro. */
+function alcance(P, g) {
+  const s = P[g];
+  const antes = g > 0 ? Math.max(0, s.a - P[g - 1].b) : null;
+  const despues = g < P.length - 1 ? Math.max(0, P[g + 1].a - s.b) : null;
+  return [s.a - Math.min(ALCANCE_MAX, 0.4 * (antes ?? despues ?? 0)), s.b + Math.min(ALCANCE_MAX, 0.4 * (despues ?? antes ?? 0))];
+}
+/** Versículos de una referencia («Hch 8:3; 9:1, 2», «Hch 21:27–23:30»): [[libro, desde, hasta]], con capítulo × 1000 +
+    versículo. Un trozo sin libro sigue el libro del anterior. */
+function versiculos(texto) {
+  const out = [];
+  let libro = null;
+  for (const trozo of String(texto || '').split(';')) {
+    const m = trozo.trim().match(/^((?:[123]\s?)?\p{L}+\.?)?\s*(\d+):(.+)$/u);
+    if (!m) continue;
+    if (m[1]) libro = norm(m[1]).replace(/[\s.]/g, '');
+    if (!libro) continue;
+    const cap = +m[2];
+    for (const parte of m[3].split(',')) {
+      const r = parte.trim().match(/^(\d+)(?:\s*[-–]\s*(?:(\d+):)?(\d+))?/);
+      if (r) out.push([libro, cap * 1000 + +r[1], r[3] ? (r[2] ? +r[2] : cap) * 1000 + +r[3] : cap * 1000 + +r[1]]);
+    }
+  }
+  return out;
+}
+/** ¿Comparten algún versículo dos listas de versiculos()? */
+const seCruzan = (xs, ys) => xs.some(([l, a, b]) => ys.some(([m, c, d]) => l === m && a <= d && c <= b));
+/** Parte del tramo tr en que la persona está en la parada g: dentro de la estancia si el tramo la toca y ella dura;
+    si no (una parada de un solo momento, o un suceso fuera de ella), dentro de su alcance. null si no cabe. */
+function ventanaEnParada(P, g, tr) {
+  const s = P[g];
+  if (s.b - s.a >= 1e-3) {
+    const a = Math.max(s.a, tr[0]), b = Math.min(s.b, tr[1]);
+    if (b > a) return [a, b];
+  }
+  const [x, y] = alcance(P, g);
+  const a = Math.max(x, tr[0]), b = Math.min(y, tr[1]);
+  return b > a ? [a, b] : null;
+}
+/** Parte del tramo tr que cae fuera de una lista de estancias ordenada, donde no sabemos dónde estaba; si no hay, tr. */
+function fueraDeLista(P, tr) {
+  const ini = P[0]?.a ?? Infinity, fin = P.at(-1)?.b ?? -Infinity;
+  if (tr[0] < fin && fin < tr[1]) return [fin + 1e-3, tr[1]];
+  if (tr[0] < ini && ini < tr[1]) return [tr[0], ini];
+  return tr;
+}
+/** Coloca en las paradas P los sucesos que la persona vive (quien) y las cartas que escribe, y alarga cada parada
+    para que dure al menos lo que duran ellos: mientras pasan, la persona está allí, no de camino. Lo alargado queda
+    fuera de [a0, b0], la estancia que dan los datos, y se muestra como estimado.
+    Un suceso con orden_relato va a una parada de sus lugares, en su fecha, que no queda antes de la del suceso anterior
+    de su serie: el orden del relato elige la visita (Perga a la vuelta, la carta de Jerusalén después del concilio).
+    Entre ellas gana la primera cuya referencia tiene los versículos del suceso (el arresto de Hch 21:27 va en la
+    custodia, no en la llegada de Pentecostés; la tormenta de Hch 27, en Cauda y no en Malta); si ninguna, la primera
+    de su primer lugar. Sin orden, o si todas quedan antes, va a su primer lugar con paradas en su fecha y gana la
+    estancia más larga. Devuelve Map(suceso o carta → [a, b]). */
+function colocarEnParadas(P, persona, quien) {
+  const m = new Map();
+  if (!P.length) return m;
+  const cosas = [];
+  (BE.D.eventos || []).forEach((e, i) => { if (quien.get(e) === persona) cosas.push({ x: e, i, lugares: e.lugares, tr: ventanaFecha(e.fecha), o: e.orden_relato, vs: versiculos((e.pasajes || []).join('; ')) }); });
+  (BE.D.cartas || []).forEach((c, i) => { if (escritorDe(c) === persona) cosas.push({ x: c, i: 1e9 + i, lugares: c.escrita_en, tr: tramo(c.fecha) }); });
+  const vsParada = P.map((s) => versiculos(s.referencia));
+  // En el orden del relato; con el mismo número, el destino de un «tras» va antes.
+  cosas.sort((p, q) => {
+    if (!p.o || !q.o) return (p.o ? 0 : 1) - (q.o ? 0 : 1) || p.i - q.i;
+    if (p.o.serie !== q.o.serie) return p.o.serie < q.o.serie ? -1 : 1;
+    if (p.o.orden !== q.o.orden) return p.o.orden - q.o.orden;
+    if (q.o.tras === p.x.id) return -1;
+    if (p.o.tras === q.x.id) return 1;
+    return p.i - q.i;
+  });
+  const ultima = new Map();   // serie → parada del último suceso de esa serie
+  const colocadas = [];
+  for (const c of cosas) {
+    if (!c.tr) continue;
+    const desde = c.o ? (ultima.get(c.o.serie) ?? 0) : 0;
+    let elegida = null, libre = null;
+    const validas = [];
+    for (const id of c.lugares || []) {
+      const opciones = [];
+      P.forEach((s, g) => { if (s.lugar.id === id) { const w = ventanaEnParada(P, g, c.tr); if (w) opciones.push({ g, w }); } });
+      if (!opciones.length) continue;
+      if (c.o) validas.push(...opciones.filter((x) => x.g >= desde));
+      libre ??= opciones.reduce((x, y) => (y.w[1] - y.w[0] > x.w[1] - x.w[0] ? y : x));
+      if (!c.o) break;
+    }
+    if (c.o) elegida = validas.find((x) => seCruzan(c.vs, vsParada[x.g])) || validas[0] || null;
+    if (elegida && c.o) ultima.set(c.o.serie, elegida.g);
+    const r = elegida || libre;
+    if (r) { m.set(c.x, r.w); colocadas.push(r); } else m.set(c.x, fueraDeLista(P, c.tr));
+  }
+  // Las paradas se alargan después de colocarlo todo: el alcance de cada una se mide con las paradas sin alargar.
+  for (const s of P) { s.a0 = s.a; s.b0 = s.b; }
+  for (const { g, w } of colocadas) { P[g].a = Math.min(P[g].a, w[0]); P[g].b = Math.max(P[g].b, w[1]); }
+  // La banda de las paradas en tiempo narrativo va de la parada anclada anterior a la siguiente, ya alargadas.
+  P.forEach((s, g) => {
+    if (!s.banda) return;
+    let i = g - 1, j = g + 1;
+    while (i >= 0 && P[i].narrativa) i--;
+    while (j < P.length && P[j].narrativa) j++;
+    s.banda = [Math.min(s.a, i >= 0 ? P[i].b : s.banda[0]), Math.max(s.b, j < P.length ? P[j].a : s.banda[1])];
+  });
+  return m;
+}
+
 /** Dónde está alguien en t según una lista de paradas ordenadas (el modelo de Pablo). null si ninguna lo cubre. */
 function dondeEnParadas(P, t) {
   if (!P.length || t < P[0].a || t > P[P.length - 1].b) return null;
@@ -189,7 +342,9 @@ function dondeEnParadas(P, t) {
   while (lo < hi) { const m = (lo + hi + 1) >> 1; if (P[m].a <= t) lo = m; else hi = m - 1; }
   const s = P[lo];
   if (t <= s.b || lo === P.length - 1) {
-    return { en: s, sig: P[lo + 1] || null, parada: true, estimada: s.narrativa, pos: [s.lugar.lon, s.lugar.lat], banda: s.banda || null };
+    // Fuera de [a0, b0] la parada está alargada para acoger sus sucesos: esa parte de la estancia es nuestra, estimada.
+    const alargada = !s.narrativa && (t < (s.a0 ?? s.a) || t > (s.b0 ?? s.b));
+    return { en: s, sig: P[lo + 1] || null, parada: true, estimada: s.narrativa || alargada, pos: [s.lugar.lon, s.lugar.lat], banda: s.banda || (alargada ? [s.a, s.b] : null) };
   }
   const n = P[lo + 1];
   const f = (t - s.b) / Math.max(1e-6, n.a - s.b);
@@ -222,10 +377,7 @@ function ventanaEnLista(P, f, lugares) {
     }
     if (mejor) return mejor;
   }
-  const ini = P[0]?.a ?? Infinity, fin = P.at(-1)?.b ?? -Infinity;
-  if (tr[0] < fin && fin < tr[1]) return [fin + 1e-3, tr[1]];
-  if (tr[0] < ini && ini < tr[1]) return [tr[0], ini];
-  return tr;
+  return fueraDeLista(P, tr);
 }
 const ventanaPablo = (f, lugares) => ventanaEnLista(BE.P, f, lugares);
 
@@ -237,94 +389,164 @@ const ventanaPablo = (f, lugares) => ventanaEnLista(BE.P, f, lugares);
     que los rodean en el relato, repartidos por igual, y cada uno dentro de su propia fecha: una estación o un año no
     es un ancla, es el margen en que tiene que caer (lo de «principios de 33, antes de Betania» queda antes del 8 de
     nisán; las apariciones, entre la resurrección y la ascensión). Si su fecha no cabe entre las anclas, se queda con su
-    fecha. Devuelve Map(evento → [a, b]) solo con los que cambian. */
+    fecha.
+    Los sucesos de las paradas de quien viaja no se reparten: ya están en ellas (colocarEnParadas). Los de la serie que
+    comparten con ellos alguna persona siguen el orden del relato respecto a ellos si su fecha lo permite: empiezan
+    cuando acaba el anterior (Apolos llega a Éfeso después de que Pablo se embarca) y acaban antes de que empiece el
+    posterior (Saulo se convierte en el camino, antes de que Ananías le devuelva la vista en Damasco). Si su fecha no da
+    para tanto, se aflojan: desde que empieza el anterior o hasta que acaba el posterior. Esos límites son de ese suceso
+    y de nadie más: el relato de Felipe en Samaria (Hch 8) no se aprieta por la conversión de Saulo (Hch 9), que la
+    cuenta después pero pasa mientras tanto. Si los límites lo dejan en un ancla (ANCLA_MAX o menos), va ahí, fuera de
+    la tanda. Devuelve Map(evento → [a, b]) solo con los que cambian. */
 const ANCLA_MAX = 40 * DIA;
 let relatoCache = null;
+const enParadas = (e) => itinerarios().quien.has(e);
 function repartoRelato() {
   if (relatoCache && relatoCache.D === BE.D) return relatoCache.m;
+  const porId = new Map((BE.D.eventos || []).map((e) => [e.id, e]));
   const series = new Map();
   (BE.D.eventos || []).forEach((e, i) => {
-    const o = e.orden_relato, v = ventanaFecha(e.fecha);
-    if (!o || !v || (e.personas || []).includes('pablo')) return;
-    if (!series.has(o.serie)) series.set(o.serie, []);
-    series.get(o.serie).push({ e, v, i, ancla: v[1] - v[0] <= ANCLA_MAX });
+    const o = e.orden_relato;
+    if (!o) return;
+    if (!series.has(o.serie)) series.set(o.serie, { xs: [], fijos: [] });
+    const S = series.get(o.serie);
+    if (enParadas(e)) { const v = ventanaEvento(e); if (v) S.fijos.push({ e, v }); return; }
+    const v = ventanaFecha(e.fecha);
+    if (v) S.xs.push({ e, v, i, ancla: v[1] - v[0] <= ANCLA_MAX, lo: -Infinity, hi: Infinity });
   });
   const m = new Map();
-  for (const xs of series.values()) {
+  const estado = new Map();
+  /** Ventana en que quedó colocado un suceso de otra serie (o de quien viaja), y si de verdad se colocó. En un ciclo de
+      series, su fecha. */
+  const colocado = (e) => {
+    if (enParadas(e)) return { v: ventanaEvento(e), puesto: true };
+    const s = e.orden_relato?.serie;
+    if (series.has(s) && !estado.has(s)) colocarSerie(s);
+    return m.has(e) ? { v: m.get(e), puesto: true } : { v: ventanaFecha(e.fecha), puesto: false };
+  };
+  const comparten = (a, b) => (a.personas || []).some((p) => (b.personas || []).includes(p));
+  const cabe = (x, lo, hi) => Math.min(x.v[1], hi) - Math.max(x.v[0], lo) > 2e-4;
+  function colocarSerie(s) {
+    estado.set(s, 'en curso');
+    const { xs, fijos } = series.get(s);
     xs.sort((x, y) => x.e.orden_relato.orden - y.e.orden_relato.orden || x.i - y.i);
     // Tandas: lo que va entre dos anclas del relato. Una tanda empieza cuando acaba la última ancla anterior y termina
     // cuando empieza la siguiente.
     // Si el ancla anterior acaba después de que empiece la siguiente (un mes y un día de ese mes), la tanda empieza con
     // el ancla anterior.
     let fin = -Infinity, ini = -Infinity, tanda = [];
-    // orden_relato.tras: un suceso de otra serie que ya había pasado (Matías se elige después de la ascensión, que va
-    // en la armonía A7 y no en Hechos). La tanda no empieza antes de que acabe.
-    const tras = (x) => {
-      const o = x.e.orden_relato.tras && (BE.D.eventos || []).find((e) => e.id === x.e.orden_relato.tras);
-      const v = o && ventanaFecha(o.fecha);
-      return v ? v[1] : -Infinity;
-    };
     const cerrar = (inicio) => {
-      if (tanda.length) colocar(tanda, Math.max(fin < inicio ? fin : ini, ...tanda.map(tras)), inicio, m);
+      if (tanda.length) colocar(tanda, fin < inicio ? fin : ini, inicio, m);
       tanda = [];
     };
+    const anclar = (v) => { cerrar(v[0]); fin = Math.max(fin, v[1]); ini = v[0]; };
     for (const x of xs) {
+      // orden_relato.tras de otra serie (Matías se elige después de la ascensión, que va en la armonía A7 y no en
+      // Hechos): si ese suceso quedó colocado, o su fecha ya es un ancla, hace de ancla justo antes de él: lo anterior del
+      // relato acaba antes, y él empieza después. Si se quedó con una fecha larga (un año entero), solo él empieza
+      // cuando acaba: esa fecha no aprieta al resto de la serie. De la misma serie ya va antes en el orden.
+      const t = x.e.orden_relato.tras ? porId.get(x.e.orden_relato.tras) : null;
+      if (t && t !== x.e && (t.orden_relato?.serie !== s || enParadas(t))) {
+        const { v, puesto } = colocado(t);
+        if (v && (puesto || v[1] - v[0] <= ANCLA_MAX)) anclar(v);
+        else if (v) x.lo = Math.max(x.lo, v[1]);
+      }
+      // Límites de los sucesos de las paradas: lo que el relato cuenta después de uno de ellos no empieza antes que él
+      // (el entierro de Esteban y Felipe en Samaria, después de su muerte); si comparten persona, empieza cuando acaba,
+      // y lo que cuenta antes acaba antes de que él empiece.
+      let loE = -Infinity, loI = -Infinity, hiI = Infinity, hiE = Infinity;
+      for (const y of fijos) {
+        const oy = y.e.orden_relato.orden, ox = x.e.orden_relato.orden, junto = comparten(y.e, x.e);
+        if (oy < ox && y.v[0] < x.v[1]) { loE = Math.max(loE, junto ? y.v[1] : y.v[0]); loI = Math.max(loI, y.v[0]); }
+        if (junto && oy > ox && y.v[1] > x.v[0]) { hiI = Math.min(hiI, y.v[0]); hiE = Math.min(hiE, y.v[1]); }
+      }
+      if (!x.ancla && (loI > -Infinity || hiE < Infinity)) {
+        const lo0 = x.lo;
+        const [l, h] = [[loE, hiI], [loI, hiI], [loE, hiE], [loI, hiE]].find(([l, h]) => cabe(x, Math.max(lo0, l), h)) || [loI, hiE];
+        x.lo = Math.max(lo0, l); x.hi = h;
+        const w = [Math.max(x.v[0], x.lo), Math.min(x.v[1], x.hi)];
+        // Sujeto por los dos lados a unos días: va ahí, como un suceso de las paradas, y no mueve a nadie más.
+        if (x.hi < Infinity && w[1] - w[0] <= ANCLA_MAX) {
+          // Sin sitio entre sus límites: va al borde de su fecha que queda junto al límite, nunca fuera de ella.
+          if (!(w[1] - w[0] > 2e-4)) w.splice(0, 2, ...(x.lo >= x.v[1] ? [x.v[1] - DIA, x.v[1]] : [x.v[0], x.v[0] + DIA]));
+          if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - 1e-6) m.set(x.e, w);
+          continue;
+        }
+      }
       if (!x.ancla) { tanda.push(x); continue; }
-      cerrar(x.v[0]);
-      fin = Math.max(fin, x.v[1]); ini = x.v[0];
+      anclar(x.v);
     }
     cerrar(Infinity);
+    estado.set(s, 'hecha');
   }
+  for (const s of series.keys()) if (!estado.has(s)) colocarSerie(s);
   relatoCache = { D: BE.D, m };
   return m;
 }
 /** Coloca una tanda entre lo (fin del ancla anterior) y hi (inicio de la siguiente) sin romper el orden del relato ni
-    sacar a nadie de su fecha. Los seguidos con la misma fecha forman un grupo. Cada grupo empieza donde acaba el
-    anterior; si sus fechas se solapan, el trozo común se reparte entre los dos según cuántos sucesos lleva cada uno.
-    Dentro de un grupo, los sucesos se reparten por igual. */
+    sacar a nadie de su fecha. Los seguidos con la misma fecha y los mismos límites propios (x.lo y x.hi, de un «tras» o
+    de los sucesos de quien viaja) forman un grupo. Cada grupo empieza donde acaba el anterior y no antes de su límite
+    propio; si sus fechas se solapan, el trozo común se reparte entre los dos según cuántos sucesos lleva cada uno.
+    El límite propio de fin (x.hi) solo acorta a su grupo: no empuja hacia atrás a los anteriores. Si lo deja sin sitio,
+    el grupo va junto a ese límite, con lo que le tocaba. Dentro de un grupo, los sucesos se reparten por igual. */
 function colocar(tanda, lo, hi, m) {
   const grupos = [];
   for (const x of tanda) {
     const g = grupos.at(-1);
-    if (g && g.v[0] === x.v[0] && g.v[1] === x.v[1]) g.xs.push(x); else grupos.push({ v: x.v, xs: [x] });
+    const xlo = x.lo ?? -Infinity, xhi = x.hi ?? Infinity;
+    if (g && g.v[0] === x.v[0] && g.v[1] === x.v[1] && g.lo === xlo && g.hi === xhi) g.xs.push(x);
+    else grupos.push({ v: x.v, lo: xlo, hi: xhi, xs: [x] });
   }
   const n = grupos.length;
-  for (let j = 0; j < n; j++) grupos[j].L = Math.max(lo, grupos[j].v[0], j ? grupos[j - 1].L : -Infinity);
+  for (let j = 0; j < n; j++) grupos[j].L = Math.max(lo, grupos[j].v[0], grupos[j].lo, j ? grupos[j - 1].L : -Infinity);
   for (let j = n - 1; j >= 0; j--) grupos[j].U = Math.min(hi, grupos[j].v[1], j < n - 1 ? grupos[j + 1].U : Infinity);
   let inicio = grupos[0].L;
   grupos.forEach((g, j) => {
-    let fin = g.U;
+    const U = Math.min(g.U, g.hi);
+    let fin = U;
     const h = grupos[j + 1];
     if (h) {
-      const a = Math.max(h.L, inicio), b = g.U;
+      const a = Math.max(h.L, inicio), b = U;
       const corte = b > a ? a + (b - a) * g.xs.length / (g.xs.length + h.xs.length) : b;
-      fin = Math.min(corte, g.U);
+      fin = Math.min(corte, U);
       g.sig = Math.max(corte, h.L);
     }
-    const a = Math.max(inicio, g.L), b = fin;
+    let a = Math.max(inicio, g.L), b = fin, junto = false;
     inicio = g.sig ?? inicio;
+    if (!(b - a > 2e-4) && g.hi < Infinity) {      // su límite propio de fin lo deja sin sitio: va junto a ese límite
+      b = Math.min(g.hi, g.v[1]);
+      a = Math.max(g.v[0], g.lo, b - Math.max(fin - a, DIA));
+      junto = true;
+    }
     if (!(b - a > 2e-4)) return;                   // no cabe entre las anclas: cada uno se queda con su fecha
     const paso = (b - a) / g.xs.length;
     g.xs.forEach((x, k) => {
-      const w = [a + k * paso, a + (k + 1) * paso - Math.min(1e-3, paso / 10)];
-      if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - 1e-6) m.set(x.e, w);
+      // Junto a su límite, el último acaba en él y no un poco antes: ese límite puede ser el final del destino de su
+      // «tras» (la expulsión del inmoral, entre la visita de Estéfanas y 1 Corintios, que acaban juntas en Éfeso).
+      const corte = junto && k === g.xs.length - 1 ? 0 : Math.min(1e-3, paso / 10);
+      const w = [a + k * paso, a + (k + 1) * paso - corte];
+      // Solo cambia si se aparta de su fecha más que el corte del final.
+      if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w);
     });
   });
 }
 const ventanas = new Map();
-/** Las cartas de Pablo siguen sus paradas; las de otro escritor, las estancias de ese escritor si las tiene. */
+/** Las cartas de quien viaja (Pablo) siguen sus paradas (colocarEnParadas); las de otro escritor, las estancias de ese
+    escritor si las tiene. */
 const ventanaCarta = (c) => {
   if (!ventanas.has(c)) {
-    const quien = c.escritor || 'pablo';
-    ventanas.set(c, quien === 'pablo' ? ventanaPablo(c.fecha, c.escrita_en) : (ventana(quien, c.fecha, c.escrita_en) || tramo(c.fecha)));
+    const quien = escritorDe(c);
+    const it = viajeros().has(quien) ? itinerario(quien) : null;
+    ventanas.set(c, it?.P.length ? (it.m.get(c) || tramo(c.fecha)) : (ventana(quien, c.fecha, c.escrita_en) || tramo(c.fecha)));
   }
   return ventanas.get(c);
 };
-/** Los sucesos de Pablo siguen sus paradas; los demás, su fecha afinada con el detalle o el orden del relato. */
+/** Los sucesos de quien viaja (viajeroDe) siguen sus paradas; los demás, su fecha afinada con el detalle o el orden del
+    relato. */
 const ventanaEvento = (e) => {
   if (!ventanas.has(e)) {
     let v;
-    if ((e.personas || []).includes('pablo') && BE.P.length) v = ventanaPablo(e.fecha, e.lugares);
+    if (enParadas(e)) v = itinerario(viajeroDe(e)).m.get(e) || ventanaFecha(e.fecha);
     else v = repartoRelato().get(e) || ventanaFecha(e.fecha);
     ventanas.set(e, v);
   }
@@ -351,7 +573,7 @@ function estancias(persona) {
   if (cacheEst.has(persona) && cacheEst.get(persona).D === BE.D) return cacheEst.get(persona).lista;
   const lista = [];
   if (BE.D.viajes.some((v) => esDe(v, persona))) {
-    for (const s of prepararParadas(persona)) lista.push({ ...s, origen: 'viaje' });
+    for (const s of itinerario(persona).P) lista.push({ ...s, origen: 'viaje' });
   }
   for (const e of BE.D.eventos || []) {
     if (!(e.personas || []).includes(persona) || (e.presentes && !e.presentes.includes(persona))) continue;
@@ -370,10 +592,16 @@ function estancias(persona) {
       narrativa: !!(r.fecha.aprox || r.fecha.tipo === 'narrativa' || r.deducido), titulo: `${({ vivio_en: 'En', nacio_en: 'Nace en', murio_en: 'Muere en' })[r.tipo]} ${lugar.nombre}`,
       referencia: r.fecha.texto || '', origen: r.tipo, fecha: r.fecha, larga: true });
   });
-  lista.sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
-  lista.forEach((s, g) => { s.g = g; });
-  cacheEst.set(persona, { D: BE.D, lista });
-  return lista;
+  // Nadie se sitúa después de su muerte: sus relaciones y sus viajes acaban ahí, aunque su fecha sea de todo el año.
+  // Solo un suceso que la nombra la sitúa después (su entierro; Jesús resucitado).
+  const muerte = muerteDe(persona);
+  const finVida = muerte ? ventanaEvento(muerte)?.[1] : null;
+  const vivas = finVida == null ? lista : lista.filter((s) => s.origen === 'evento' || s.a < finVida);
+  if (finVida != null) vivas.forEach((s) => { if (s.origen !== 'evento' && s.b > finVida) s.b = finVida; });
+  vivas.sort((x, y) => x.a - y.a || (y.b - y.a) - (x.b - x.a));
+  vivas.forEach((s, g) => { s.g = g; });
+  cacheEst.set(persona, { D: BE.D, lista: vivas });
+  return vivas;
 }
 /** Huecos máximos (años) entre dos estancias. Entre dos lugares distintos, hasta unos tres meses lo damos por un viaje
     («de camino», estimado). En el mismo lugar, hasta medio año lo damos por una estancia seguida (estimada). Más largo:
@@ -437,7 +665,11 @@ function presentes(t) {
 /** Suceso cuyo título empieza por `re` («Nace…», «Muerte de…») y que tiene a la persona en primer lugar, con fecha que
     no sea cálculo. En un nacimiento o una muerte la primera de `personas` es quien nace o muere; las demás estaban allí
     (María y José en el nacimiento de Jesús), así que no cuentan. */
-const sucesoDe = (persona, re) => (BE.D.eventos || []).find((e) => (e.personas || [])[0] === persona && re.test(e.titulo || '') && e.fecha && e.fecha.tipo !== 'derivada');
+const sucesoDe = (persona, re, idRe = null) => (BE.D.eventos || []).find((e) => (e.personas || [])[0] === persona && (re.test(e.titulo || '') || (idRe && idRe.test(e.id || ''))) && e.fecha && e.fecha.tipo !== 'derivada');
+/** Suceso de la muerte de la persona: su título empieza por «Muere…»/«Muerte…» o, si el título cuenta otra cosa
+    («Esteban muere apedreado», «Herodes Agripa I manda matar a Santiago»), su id empieza por «muerte-de-» o «muere-».
+    Hasta que los sucesos lleven su tipo, es lo que dicen los datos de quién muere. */
+const muerteDe = (persona) => sucesoDe(persona, /^(muere|muerte)\b/i, /^(muerte-de|muere)-/);
 /** Edad aproximada en t, solo con un nacimiento fechado: un nacio_en con fecha o un suceso «Nace…»/«Nacimiento de…» que
     la ponga primera (nunca se calcula de otra cosa). { n, texto, nacimiento, fuentes } o null. */
 function edad(persona, t) {
@@ -449,7 +681,7 @@ function edad(persona, t) {
   if (!v) return null;
   // Nada de edades después de su muerte ni fuera de su vida conocida.
   const muerte = (p.relaciones || []).find((x) => x.tipo === 'murio_en' && x.fecha);
-  const evMuerte = muerte ? null : sucesoDe(persona, /^(muere|muerte)\b/i);
+  const evMuerte = muerte ? null : muerteDe(persona);
   const fin = muerte ? ventanaFecha(muerte.fecha)?.[1] : evMuerte ? ventanaEvento(evMuerte)?.[1] : (p.fecha?.hasta != null ? tramo(p.fecha)[1] : null);
   if (fin != null && t > fin) return null;
   const n = Math.floor(t - (v[0] + v[1]) / 2);
@@ -499,7 +731,7 @@ function inicioPeriodo(p) {
 }
 
 Object.assign(BE, {
-  prepararParadas: () => prepararParadas('pablo'), dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
+  prepararParadas: () => itinerario('pablo').P, dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
   donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gadara
+nombre: Gadara
+nombres:
+- nombre: Gadara
+- nombre: Región de los gadarenos
+  nota: Así la llama Mateo (Mt 8:28).
+- nombre: Región de los gerasenos
+  nota: Así la llaman Marcos y Lucas; quizá las dos regiones compartían una zona (nota de estudio de Mt 8:28).
+tipo: region
+lat: 32.655998
+lon: 35.679352
+precision: zona
+coord_fuente: openbible:afed46a
+coord_url: https://www.openbible.info/geo/ancient/afed46a/gadara
+coord_nota: Punto de la ciudad de Gadara (Um Qeis), centro del distrito, que llegaba hasta el lago.
+resumen: Distrito al sureste del mar de Galilea con centro en la ciudad de Gadara, a unos 10 km del lago. En esa orilla Jesús
+  dejó que unos demonios entraran en una piara de cerdos.
+razon: Perspicacia «Gadarenos» (párr. 2 y 3) y la nota de Mt 8:28 describen el distrito; B10 pone Gadara en la Decápolis.
+  La nota de Mr 5:1 da a los gerasenos casi la misma zona; Perspicacia «Gerasenos» no fija límites.
+fuentes:
+- it-gadarenos
+- mateo-8
+- tnm-b10
+- openbible-geo
+- marcos-5
+- it-gerasenos
+- lucas-8
+enlaces:
+- titulo: 'Perspicacia: «Gadarenos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001584
+  tipo: perspicacia
+- titulo: Mateo 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/8
+  tipo: biblia
+- titulo: 'Perspicacia: «Gerasenos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001660
+  tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora la nota de Mr 5:1, que pone la región de los gerasenos en esta misma zona, y Perspicacia «Gerasenos»,
+    que deja sus límites sin fijar.
+  fuente: marcos-5
+consultado: '2026-09-29'
+estado: verificado

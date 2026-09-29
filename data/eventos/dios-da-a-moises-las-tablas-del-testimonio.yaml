@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dios-da-a-moises-las-tablas-del-testimonio
+titulo: Dios da a Moisés las dos tablas del Testimonio
+fecha:
+  desde: -1512
+  hasta: -1512
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1513 a.e.c.
+orden_relato:
+  serie: exodo
+  orden: 31018
+lugares:
+- monte-sinai
+personas:
+- moises
+pasajes:
+- Éx 31:18
+- Dt 9:10, 11
+- Dt 4:13
+- Dt 5:22
+resumen: Cuando termina de hablarle en el Sinaí, Dios entrega a Moisés dos tablas de piedra escritas con su propio dedo, con
+  las leyes básicas del pacto.
+razon: 'Perspicacia «Moisés», apartado «Un mediador adecuado»: fue la primera de sus dos estancias de cuarenta días en el
+  monte, tras el pacto del tercer mes de 1513 a.e.c. (estudio 3; «Moisés», párr. 20).'
+fuentes:
+- exodo-31
+- it-moises
+- si-3
+- it-diez-palabras
+- deuteronomio-5
+enlaces:
+- titulo: Éxodo 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/31
+  tipo: biblia
+- titulo: 'Perspicacia: «Moisés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

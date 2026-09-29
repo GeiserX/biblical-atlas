@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sergio-paulo
+nombre: Sergio Paulo
+nombres:
+- nombre: Sergio Paulo
+fecha:
+  desde: 47
+  hasta: 47
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 47 e.c.
+resumen: Procónsul de Chipre, con residencia en Pafos. Quiso oír a Bernabé y Saulo y, al ver cegado a Elimas, se
+  hizo creyente hacia 47.
+razon: 'Perspicacia «Paulo» (párr. 1 y 3); Hch 13:6-12. Lucas lo llama bien procónsul: Chipre era provincia senatorial.'
+fuentes:
+- it-paulo
+- hch-13
+enlaces:
+- titulo: 'Perspicacia: «Paulo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003407
+  tipo: perspicacia
+- titulo: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  tipo: biblia
+perspicacia: '1200003407'
+consultado: '2026-09-29'
+estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: pafos
+  deducido: false
+  fuentes:
+  - it-paulo
+  - hch-13
+  razon: Perspicacia dice que vivía en Pafos, en la costa oeste de Chipre.
+  estado: verificado
