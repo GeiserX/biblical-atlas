@@ -102,6 +102,8 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: juan-apostol
+  relacion: cuidada por
+  relacion_inversa: cuida a
   deducido: true
   fuentes:
   - juan-19
