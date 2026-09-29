@@ -308,7 +308,7 @@ function editor() {
     d.querySelector('[data-note-copy]').addEventListener('click', copyText);
     // «Listo» and Escape save at once: the close event comes later, and a reload could arrive before it. When the save
     // failed, the first «Listo» keeps the editor open, so the text can be copied before it is gone.
-    d.querySelector('form').addEventListener('submit', (e) => {
+    const holdIfFailed = (e) => {
       flush();
       if (ED.failed && !ED.warned) {
         e.preventDefault();
@@ -316,8 +316,9 @@ function editor() {
         status('No se pudo guardar tu nota. Cópiala con «Copiar el texto» antes de cerrar; si pulsas «Listo» otra vez, se cierra sin guardarla.');
         d.querySelector('[data-note-copy]').focus();
       }
-    });
-    d.addEventListener('cancel', flush);
+    };
+    d.querySelector('form').addEventListener('submit', holdIfFailed);
+    d.addEventListener('cancel', holdIfFailed);
     d.addEventListener('close', () => {
       flush();
       const key = ED.key;
@@ -671,7 +672,13 @@ function start() {
     }
   });
   // Back and forward change the card underneath: the editor saves and closes instead of staying over another card.
-  const closeEditor = () => { const d = document.getElementById('note-editor'); if (d?.open) d.close(); };
+  const closeEditor = () => {
+    const d = document.getElementById('note-editor');
+    if (!d?.open) return;
+    flush();
+    if (ED.failed) return; // la nota sin guardar sigue en pantalla para copiarla
+    d.close();
+  };
   window.addEventListener('popstate', closeEditor);
   window.addEventListener('hashchange', closeEditor);
 }
