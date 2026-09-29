@@ -14,6 +14,8 @@ nombres:
 - nombre: Puerta Hermosa
   nota: Una entrada del templo donde a diario dejaban a pedir limosna al cojo que curó Pedro (Hch 3:2, 10; «Testimonio completo»,
     capítulo 4). OpenBible solo le da el punto de Jerusalén.
+- nombre: Montaña de la Casa
+  nota: Así llama Miq 3:12 al monte del templo, como aclara su nota; Perspicacia «Sion» sitúa el recinto del templo en Moria.
 tipo: monte
 lat: 31.777778
 lon: 35.235556
@@ -56,6 +58,7 @@ fuentes:
 - hechos-5
 - hch-21
 - hch-22
+- miqueas-3
 enlaces:
 - titulo: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114

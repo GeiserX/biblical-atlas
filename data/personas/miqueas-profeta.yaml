@@ -18,6 +18,13 @@ fuentes:
 - it-miqueas
 - miqueas-1
 - tnm-tabla
+- it-miqueas-libro
+- si-miqueas
+- w07-abdias-jonas-y-miqueas
+- miqueas-3
+- w03-andaremos-en-el-nombre
+- miqueas-7
+- w03-que-espera-jehova
 enlaces:
 - titulo: 'Perspicacia: «Miqueas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003032
@@ -25,5 +32,18 @@ enlaces:
 - titulo: Miqueas 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/33/1
   tipo: biblia
-consultado: '2026-09-28'
+- titulo: 'Perspicacia: «Miqueas, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003033
+  tipo: perspicacia
+perspicacia: 1200003032#7
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: moreset
+  deducido: false
+  fuentes:
+  - miqueas-1
+  - it-moreset
+  razon: Miq 1:1 lo llama Miqueas de Moréset, igual que Jer 26:18. Perspicacia lo tiene por natural de allí.
+  estado: verificado

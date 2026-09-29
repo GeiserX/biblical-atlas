@@ -18,6 +18,8 @@ fuentes:
 - it-omri
 - 1-reyes-16
 - tnm-a6-a
+- miqueas-6
+- si-miqueas
 enlaces:
 - titulo: 'Perspicacia: «Omrí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003324
@@ -42,5 +44,6 @@ relaciones:
   - 1-reyes-16
   razon: Edificó Samaria y trasladó allí la capital (1Re 16:24).
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: 1200003324#3
+consultado: '2026-09-29'
 estado: verificado
