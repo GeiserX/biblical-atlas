@@ -41,7 +41,7 @@ Lo que ya está decidido. Cada punto dice qué hacemos y por qué. Si algo cambi
 
 - **Solo en español.** Interfaz, datos y documentación en español. No se prepara nada para otros idiomas hasta que haga falta.
 - **Se construye por rebanadas completas, no por capas.** Primero los viajes y las cartas de Pablo, de punta a punta: datos verificados, mapa, línea de tiempo, fichas y búsqueda. Después Pedro y Hechos, la vida de Jesús, Judá bajo los persas y los reyes de Judá e Israel. Cada rebanada se publica cuando está completa. Lo hecho y lo que queda está en la [hoja de ruta](hoja-de-ruta.md).
-- **Es una ayuda para el estudio en familia.** La aplicación sitúa el relato en su lugar y en su tiempo y lleva siempre a leer el pasaje. No explica ni interpreta.
+- **Es una ayuda para estudiar la Biblia, a solas o con otros.** La aplicación sitúa el relato en su lugar y en su tiempo y lleva siempre a leer el pasaje. No explica ni interpreta.
 
 ## Vídeos de jw.org
 

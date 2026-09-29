@@ -2,7 +2,7 @@
 
 **Aplicado: la marca 2 y la paleta Salvia.** Son los verdes grises y suaves, los que menos pesan en la página, y ya están en el sitio. El logo, el favicon y el banner van en salvia, y la paleta está en [`site/kit/tokens.css`](../../site/kit/tokens.css). Qué cambió, los números finales y las capturas están en [Salvia, aplicada](aplicado/README.md). Lo que sigue es el registro de todas las propuestas tal como se presentaron.
 
-Quien prueba el sitio en familia preguntó por qué la rama de olivo es roja y amarilla, porque le recordaba a la bandera belga o a la alemana, y pidió un sitio en tonos verdes. Aquí hay propuestas en verde para la marca, para el banner del README y para la página entera. Nada está decidido: se elige una marca, un banner y una paleta, o ninguna.
+Quien prueba el sitio preguntó por qué la rama de olivo es roja y amarilla, porque le recordaba a la bandera belga o a la alemana, y pidió un sitio en tonos verdes. Aquí hay propuestas en verde para la marca, para el banner del README y para la página entera. Nada está decidido: se elige una marca, un banner y una paleta, o ninguna.
 
 Todo lo de esta carpeta es una propuesta. No cambia nada en [`site/`](../../site) ni en [`docs/images/`](../images).
 

@@ -111,5 +111,5 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para El Cantar de los Cantares y 1 Reyes
 
-- **Salomón.** Eclesiastés deja en `data/_propuestas/eclesiastes.json` un cambio a su `resumen` y a su `razon` (escribió Eclesiastés; «En su vejez» pasa a «Ya anciano»), sobre el texto que dejó Proverbios. Un cambio posterior a esos campos parte del texto que queda tras integrar Eclesiastés. El resumen ya tiene 40 palabras: añadir El Cantar obliga a recortar otra cosa.
+- **Salomón.** Los cambios de Proverbios y de Eclesiastés a su `resumen` y a su `razon` ya están integrados en `salomon.yaml`. Un cambio posterior a esos campos parte del texto actual, con su `antes`. El resumen ya tiene 40 palabras: añadir El Cantar obliga a recortar otra cosa.
 - **Congregador.** Eclesiastés añade ese nombre a `salomon` y las relaciones `vivio_en` `jerusalen` y `pariente` `david` con sus capítulos. No hace falta volver a proponerlos.
