@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primer-discurso-de-bildad
+titulo: Primer discurso de Bildad
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 8001
+lugares:
+- uz
+presentes:
+- bildad
+- job
+- elifaz-el-temanita
+- zofar
+personas:
+- bildad
+- job
+- elifaz-el-temanita
+- zofar
+pasajes:
+- Job 8:1-22
+resumen: 'Bildad habla por primera vez: defiende que Dios es justo, culpa a los hijos de Job de su propia muerte y le promete
+  que, si es puro, Dios lo restablecerá.'
+razon: Perspicacia «Job», párr. 2, pone la prueba de Job hacia 1613 a.e.c.; «Job, Libro de» describe el debate en tres rondas
+  de discursos. En Uz, donde vivía Job, con los tres compañeros.
+fuentes:
+- job-8
+- it-job
+- it-job-libro
+- it-bildad
+- it-uz
+enlaces:
+- titulo: Job 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/8
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: job-pierde-sus-bienes-y-sus-hijos
+titulo: Job pierde sus bienes y a sus diez hijos
+fecha:
+  desde: -1612
+  hasta: -1612
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1613 a.e.c.
+orden_relato:
+  serie: job
+  orden: 1013
+lugares:
+- uz
+personas:
+- job
+- satanas
+presentes:
+- job
+pasajes:
+- Job 1:13-22
+resumen: 'En un solo día le llegan cuatro avisos: sabeos y caldeos se llevan el ganado, un fuego quema las ovejas y un viento
+  derriba la casa donde comían sus hijos. Job adora a Jehová y no lo culpa.'
+razon: Job 1:13-22; Perspicacia «Satanás» atribuye a Satanás los ataques, el fuego y el viento. El cuadro del estudio 3 pone
+  la prueba de Job antes de 1613 a.e.c.; Perspicacia «Job» (párr. 2), hacia 1613.
+fuentes:
+- job-1
+- si-3
+- it-job
+- it-satanas
+- it-sabeos
+- it-caldea
+enlaces:
+- titulo: Job 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
