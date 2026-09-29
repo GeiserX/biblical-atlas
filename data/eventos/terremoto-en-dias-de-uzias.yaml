@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: terremoto-en-dias-de-uzias
+titulo: Gran terremoto en días de Uzías
+fecha:
+  desde: -826
+  hasta: -803
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 827 y 804 a.e.c. (tiempo narrativo: dos años después de la visión de Amós y antes de que se escribiera
+    su libro)'
+orden_relato:
+  serie: amos
+  orden: 1001
+  tras: amos-profetiza-contra-israel
+lugares:
+- juda
+personas: []
+presentes: []
+pasajes:
+- Am 1:1
+- Zac 14:5
+resumen: Un terremoto tan violento que la gente huyó asustada y que Zacarías aún recordaba unos tres siglos más tarde. Amós
+  fecha su visión dos años antes.
+razon: 'Am 1:1: dos años tras la visión, no anterior a 829 (Perspicacia «Amós», núm. 1). El libro que lo nombra es de
+  c. 804 (tabla de libros). «Toda Escritura», párr. 2: pronto en el reinado de Uzías. Judá: Zac 14:5.'
+fuentes:
+- amos-1
+- zacarias-14
+- it-amos
+- si-amos
+- it-uzias
+- it-terremoto
+- it-amos-libro
+- tnm-tabla
+enlaces:
+- titulo: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  tipo: biblia
+- titulo: 'Perspicacia: «Terremoto»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001240
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

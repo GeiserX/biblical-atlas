@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lebo-hamat
+nombre: Lebó-Hamat
+nombres:
+- nombre: Lebó-Hamat
+- nombre: Entrada de Hamat
+  nota: Otra traducción que da la nota de Nú 13:21; Perspicacia la entiende como el límite sur del territorio de Hamat.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Labweh, entre Baalbek y Riblá
+  geometria:
+    tipo: punto
+    lat: 34.19491
+    lon: 36.34956
+  estado: alternativa
+  fuentes:
+  - it-hamat
+  razon: Una de las opiniones que recoge Perspicacia la pone hacia la mitad del trayecto de Baalbek a Riblá.
+  coord_fuente: openbible:a5eb047
+  coord_url: https://www.openbible.info/geo/ancient/a5eb047/lebo-hamath
+  nota: Punto de Labweh, primera resolución de OpenBible, que queda a esa altura.
+- nombre: Extremo sur del valle de la Bekaa
+  geometria:
+    tipo: zona
+    lat: 33.569
+    lon: 35.7762
+    radio_km: 25
+  estado: alternativa
+  fuentes:
+  - it-hamat
+  - openbible-geo
+  razon: 'Otra opinión que recoge Perspicacia: el extremo sur del valle que separa el Líbano del Antilíbano.'
+  coord_fuente: calculo
+  nota: 'Centro: 20 km con rumbo 340° desde el punto de OpenBible para el monte Hermón (33,4000 N; 35,8500 E), que da 33.569
+    N; 35.7762 E, al sur de la Bekaa. El radio de 25 km es nuestro.'
+- nombre: Paso entre Homs y el mar
+  geometria:
+    tipo: zona
+    lat: 34.6798
+    lon: 36.3477
+    radio_km: 25
+  estado: alternativa
+  fuentes:
+  - it-hamat
+  - openbible-geo
+  razon: Otra opinión la lleva más al norte, al paso de montaña que comunica Homs con la costa (Perspicacia).
+  coord_fuente: calculo
+  nota: 'Centro: 32 km con rumbo 320° desde el punto de OpenBible para Riblá (34,4595 N; 36,5726 E), que da 34.6798 N; 36.3477
+    E, en el paso al oeste de Homs. El radio de 25 km es nuestro.'
+resumen: Paso en el límite sur del reino de Hamat. Fue el punto más al norte que alcanzaron los espías y, más tarde, la frontera
+  norte de la conquista de Josué.
+razon: 'Perspicacia «Hamat, hamateo», apartado del punto de entrada de Hamat; Nú 13:21 y su nota. No elige sitio: van las
+  tres opiniones como candidatos.'
+fuentes:
+- it-hamat
+- openbible-geo
+- amos-6
+enlaces:
+- titulo: 'Perspicacia: «Hamat, hamateo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001834
+  tipo: perspicacia
+- titulo: Amós 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/6
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

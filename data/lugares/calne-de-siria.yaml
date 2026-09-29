@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: calne-de-siria
+nombre: Calné
+nombres:
+- nombre: Calné
+  nota: Perspicacia «Calné», núm. 2. Para la mayoría no es la Calné de Sinar que fundó Nemrod (Gé 10:10), que tiene ficha
+    aparte.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Kullani, en el norte de Siria (quizá Kullanköy)
+  geometria:
+    tipo: punto
+    lat: 36.292571
+    lon: 37.205535
+  estado: alternativa
+  fuentes:
+  - it-calne
+  - openbible-geo
+  razon: Perspicacia recoge que la mayoría la identifica con la Kullani que Tiglat-piléser III dice haber sometido, quizá
+    Kullanköy, unos 16 km al sureste de Arpad.
+  nota: Punto de Kullan Köy, la segunda resolución de OpenBible para esta Calné; solo tomamos el punto.
+  coord_fuente: openbible:a7be664
+  coord_url: https://www.openbible.info/geo/ancient/a7be664/calneh-2
+resumen: Ciudad que Amós nombra junto a Hamat y Gat para que Israel y Judá se comparen con ellas. Por esa compañía, la mayoría
+  la busca en el norte de Siria, cerca del Mediterráneo, y no en Mesopotamia.
+razon: Perspicacia «Calné», núm. 2; Am 6:2. Algunos comentaristas la creen la misma que la núm. 1. Perspicacia no elige sitio.
+no_afirmamos:
+- 'Que sea la Calnó de Is 10:9: Perspicacia solo lo ve posible si se confirma que era Kullani.'
+fuentes:
+- it-calne
+- openbible-geo
+- amos-6
+enlaces:
+- titulo: 'Perspicacia: «Calné»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000868
+  tipo: perspicacia
+- titulo: Amós 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/6
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

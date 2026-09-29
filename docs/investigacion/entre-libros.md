@@ -131,15 +131,15 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para 1 Reyes y 2 Reyes (desde Oseas)
 
 - **Reyes de Os 1:1.** Oseas usa `uzias`, `jotan`, `acaz`, `ezequias`, `jeroboan-ii` y `jehoas-de-israel`, que ya existían. Deja en `data/_propuestas/oseas.json` las claves de `jehu-de-israel` (`1200002401#3`), `jeroboan-ii` (`1200002431#2`), `jehoas-de-israel` (`1200002373#2`), `hosea-de-israel` (`1200002090#4`) y `salmanasar-v` (`1200003936#2`). Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría. Siguen sin clave `menahem`, `zacarias-de-israel` y `salum-de-israel`.
-- **El fin de la casa de Jehú.** Perspicacia «Jezreel», núm. 4, ve cumplido Os 1:4 cuando Salum mata a Zacarías (2Re 15:8-12). Cuando Reyes cree ese suceso, va en `menciona` del tramo Oseas 1:2-5. `nacimiento-de-jezreel-hijo-de-oseas` acaba en 791 a.e.c. por él.
-- **Sucesos que Oseas nombra y aún no existen.** El tributo de Menahem a Pul (2Re 15:19, 20) y el trato de Hosea con So de Egipto (2Re 17:4; Perspicacia «Asiria» lo une a Os 7:11) van a `menciona` de los tramos Oseas 7:8-12 y 12:1-2. Los becerros de Jeroboán (1Re 12:28-30) van a Oseas 8:1-6, 10:5-8 y 13:1-3.
-- **La caída de Samaria.** `caida-de-samaria` lleva `presentes: [salmanasar-v]`, pero Perspicacia «Salmanasar» dice que la Biblia no le atribuye la toma final (remite a «Sargón»). 2 Reyes 17 decide.
+- **El fin de la casa de Jehú.** Perspicacia «Jezreel», núm. 4, ve cumplido Os 1:4 cuando Salum mata a Zacarías (2Re 15:8-12). Cuando Reyes cree ese suceso, va en `menciona` de los tramos Oseas 1:2-5 y Amós 7:7-9 (Am 7:9 remite a 2Re 15:8-10; Perspicacia «Plomada»). `nacimiento-de-jezreel-hijo-de-oseas` acaba en 791 a.e.c. por él.
+- **Sucesos que Oseas nombra y aún no existen.** El tributo de Menahem a Pul (2Re 15:19, 20) y el trato de Hosea con So de Egipto (2Re 17:4; Perspicacia «Asiria» lo une a Os 7:11) van a `menciona` de los tramos Oseas 7:8-12 y 12:1-2. Los becerros de Jeroboán (1Re 12:28-30) van a Oseas 8:1-6, 10:5-8 y 13:1-3, y a Amós 3:13-15, 4:4-5, 5:4-6 y 8:14. El altar de Betel que derriba Josías (2Re 23:15, 16) va también a Amós 3:13-15.
+- **La caída de Samaria.** `caida-de-samaria` lleva `presentes: [salmanasar-v]`, pero Perspicacia «Salmanasar» dice que la Biblia no le atribuye la toma final (remite a «Sargón»). «Toda Escritura», libro 30, párr. 4, habla del sitio asirio bajo Salmanasar V. 2 Reyes 17 decide.
 - **Guilgal cerca de Betel.** `guilgal-cerca-de-betel` (Perspicacia «Guilgal», núm. 2) es la de 2Re 2:1-5 y 4:38-41. Su `razon` cita esos capítulos, así que sus tramos la llevan al cerrarlos.
 - **Salmán.** `salman` (Os 10:14) lleva un `mismo_que` pendiente hacia `salmanasar-v`: Perspicacia «Salmán» solo lo da como probable.
 
-## Para Josué, Jueces y Amós (desde Oseas)
+## Para Josué y Jueces (desde Oseas)
 
-- **Guilgal.** Am 4:4 y 5:5 usan `guilgal-cerca-de-betel`, cuya `razon` los cita. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) no tiene ficha: la crea Josué con otro id, y las dos llevan `no_confundir_con`.
+- **Guilgal.** Am 4:4 y 5:5 ya usan `guilgal-cerca-de-betel`, y su `no_afirmamos` deja la misma duda que para Oseas. La Guilgal junto a Jericó (Perspicacia «Guilgal», núm. 1) no tiene ficha: la crea Josué con otro id, y las dos llevan `no_confundir_con`.
 - **Mizpá de Galaad.** `mizpa-de-galaad` (Perspicacia «Mizpá, Mizpé», núm. 4) cita Jue 11:34 en su `razon`. Jueces 10-11 la usa y añade `jefte` `vivio_en` `mizpa-de-galaad`.
 - **Valles.** `valle-de-acor` (Os 2:15) es el de Acán (Jos 7:24-26; 15:7) y `valle-de-jezreel` (Os 1:5) el de Jos 17:16 y Jue 6:33.
 - **Guibeá.** Os 9:9 y 10:9 aluden al crimen de Jue 19-20 (Perspicacia «Guibeah», núm. 2). Cuando Jueces cree el suceso, va en `menciona` de los tramos Oseas 9:7-9 y 10:9-10.
@@ -154,8 +154,8 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 - **Menfis.** `menfis` lleva Nof en `nombres`: Is 19:13, Jer 2:16, 44:1, 46:14 y Ez 30 usan ese id.
 - **Profecías sin escena.** Oseas 4-14 lleva un solo suceso, `juicios-profeticos-contra-efrain-y-juda` (Os 4:1-14:9, la sección de «Toda Escritura»), con fecha narrativa de la obra del profeta y `presentes: []`. Cada tramo lo pone en `entidades`.
-- **«David su rey».** Os 3:5 lleva `persona:david` y `persona:jesus` en `menciona`: el nombre es el del rey histórico, y La Atalaya de 1991 lo aplica a Jesucristo, descendiente de David. Jer 30:9, Ez 34:23, 24 y 37:24, 25 siguen la misma regla.
-- **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `pasajes` de `exodo` y en `entidades`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `menciona`. Amós y Miqueas pueden seguir la misma regla.
+- **«David su rey».** Os 3:5 lleva `persona:david` y `persona:jesus` en `menciona`: el nombre es el del rey histórico, y La Atalaya de 1991 lo aplica a Jesucristo, descendiente de David. Am 9:11 la sigue: Perspicacia «Cabaña» une la cabaña de David a Jesús, rey de su línea. Jer 30:9, Ez 34:23, 24 y 37:24, 25 siguen la misma regla.
+- **Alusiones al éxodo.** Los versículos que Perspicacia da como alusión a la salida de Egipto (Os 2:15; 11:1; 12:13) van en `pasajes` de `exodo` y en `entidades`. La fórmula «tu Dios desde la tierra de Egipto» (Os 12:9; 13:4) va solo en `menciona`. Amós añade un caso: los versículos que afirman con sus palabras que Jehová sacó a Israel de Egipto (Am 2:10; 3:1; 9:7) van en `pasajes`, aunque Perspicacia no los cite. Miqueas puede hacer lo mismo.
 - **La fecha del libro.** `data/libros.yaml` toma sus fechas solo de la tabla de libros (`tnm-tabla`), que pone Oseas «después de 745». Perspicacia «Oseas, Libro de» lo cierra entre 745 y 740: ese límite va en la `razon` de los sucesos, no en `libros.yaml`.
 
 ## Para Hechos, Romanos y Abdías (desde Joel)
@@ -163,11 +163,10 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Joel 2:28-32 en Pentecostés.** El tramo Joel 2:28-32 lleva `pentecostes-33` en `menciona`, y Joe 2 no está en sus `pasajes`. Hch 2:16 nombra al profeta: `joel-profeta` (clave `1200002481#9`) va en `menciona` de ese tramo de Hechos. Ro 10:13 aplica Joe 2:32.
 - **Abd 17 y Joe 2:32.** Dicen casi lo mismo, y Perspicacia «Joel, Libro de» no decide quién citó a quién. Abdías lo apunta en su nota sin tocar Joel.
 
-## Para Amós y los demás profetas (desde Joel)
+## Para los demás profetas (desde Joel)
 
-- **Un suceso por libro.** Joel lleva uno solo, `joel-anuncia-el-dia-de-jehova` (Joe 1:1-3:21), anclado en c. 820 a.e.c. (?) y con `presentes: []`, como Oseas 4-14.
+- **Un suceso por libro.** Amós lo siguió con `amos-profetiza-contra-israel` (Am 1:1-9:15), y su escena con Amasías en Betel es un suceso aparte. Joel lleva uno solo, `joel-anuncia-el-dia-de-jehova` (Joe 1:1-3:21), anclado en c. 820 a.e.c. (?) y con `presentes: []`, como Oseas 4-14.
 - **Las langostas de Joel 1 y 2.** Manda La Atalaya de abril de 2020 (`w20-ataque-del-norte`): son el ejército babilonio que tomó Jerusalén en 607 a.e.c., y no son las langostas de Ap 9. Los tramos Joel 1:2-4, 1:5-12, 2:1-11 y 2:18-27 llevan `destruccion-de-jerusalen-607` en `menciona`.
-- **Am 1:2 y Joe 3:16.** Son casi iguales; «Toda Escritura» lo usa para fechar Joel antes que Amós.
 - **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `nombres`). Is 66:19, Ez 27:13, Da 8:21, 10:20, 11:2, Zac 9:13 y Hch 20:2 usan ese id cuando hablan de la tierra.
 - **El valle de Jehosafat y el de la Decisión** (Joe 3:2, 12, 14) no llevan ficha: Perspicacia «Jehosafat, Llanura baja de» y La Atalaya de 2007 los llaman lugar simbólico.
 
@@ -183,3 +182,30 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Deuteronomio y 2 Reyes (desde Joel)
 
 - **Mar Salado.** Joel añade «Mar oriental» (Joe 2:20) a `nombres` de `mar-salado`. Falta «mar del Arabá» (Dt 4:49; 2Re 14:25; Perspicacia «Mar Salado»).
+
+## Para 1 Reyes, 2 Reyes, 1 Crónicas y 2 Crónicas (desde Amós)
+
+- **Hazael y los Ben-Hadad.** `hazael` (`1200001923`) y `ben-hadad-hijo-de-hazael` (`1200000636#3`) existen desde Am 1:4. Reyes crea Ben-Hadad I y II (núm. 1 y 2) con `no_confundir_con` en las tres fichas, y añade `hazael` `sucede_a` Ben-Hadad II (2Re 8:15). La unción de 1Re 19:15 también es de Reyes.
+- **Damasco y Quir.** Cuando Reyes cree la toma de Damasco por Tiglat-piléser III y el destierro a Quir (2Re 16:9), el suceso va en `menciona` de los tramos Amós 1:3-5 y 9:7-10. Los de Hazael contra Galaad (2Re 10:32, 33) van a Amós 1:3-5.
+- **Amasías.** Amós deja en `data/_propuestas/amos.json` la clave de `amasias`, el rey de Judá (`1200000224#2`), y su `desambiguacion`, como la de `amos-profeta` (`1200000246#1`); el sacerdote de Betel es `amasias-sacerdote-de-betel` (`#3`). Reyes y Crónicas no vuelven a proponerlas.
+- **Jeroboán II.** `data/_propuestas/amos.json` corrige su `resumen`: «desde Lebó-Hamat» (2Re 14:25), no «desde Hamat». Un cambio posterior parte de ese texto. `hamat` y `lebo-hamat` son dos fichas: 2Re 14:28 usa `hamat`.
+- **Samaria.** Lleva «Montaña de Samaria» en `nombres` (Am 4:1; 6:1): el monte que Omrí compra en 1Re 16:24.
+- **El terremoto.** `terremoto-en-dias-de-uzias` (Am 1:1; Zac 14:5) es de Amós. Si Crónicas lo nombra al hablar de Uzías, añade su pasaje.
+
+## Para Josué, Jueces, 1 Samuel, 2 Samuel y Jeremías (desde Amós)
+
+- **Ciudades filisteas.** `asquelon` y `ecron` existen desde Am 1:8 (Perspicacia escribe Eqrón, que va en `nombres`). Gaza, Asdod y Gat ya existían.
+- **Rabá.** `raba` es la capital ammonita (Perspicacia «Rabá», núm. 1), la de Dt 3:11 y Am 1:14: 2Sa 11-12, 1Cr 20, Jer 49:2, 3 y Ez 21:20 y 25:5 usan ese id. La Rabá de Judá (núm. 2) lleva otro.
+- **Queriyot.** `queriyot` (Am 2:2) no tiene punto: dos candidatos «alternativa», Ar y Saliyá. Jer 48:24, 41 usan ese id.
+- **Harmón.** `harmon` (Am 4:3) lleva como único candidato el peñasco de Rimón, en Rammun. Si Jueces 20:45-47 crea ese peñasco, el candidato de `harmon` puede remitir a él.
+
+## Para Isaías, Jeremías, Ezequiel, Zacarías y Hechos (desde Amós)
+
+- **Quir.** `quir` existe sin punto (Am 1:5; 9:7): Is 22:6 lo usa.
+- **Bet-Edén.** `bet-eden` (Am 1:5) quizá sea la tierra de los hijos de Edén de 2Re 19:12 e Is 37:12; si Reyes o Isaías lo confirman con Perspicacia, lo apuntan.
+- **Calné y Calnó.** `calne-de-siria` (Am 6:2; Perspicacia «Calné», núm. 2) no es `calne` (Gé 10:10). Isaías decide si la Calnó de Is 10:9 es la misma; por ahora solo lo dice `no_afirmamos`.
+- **Hamat.** `hamat` existe (Hamat la Grande en `nombres`): Is 10:9, 11:11, Jer 49:23 y Zac 9:2 lo usan.
+- **Creta es Caftor.** `creta` lleva Caftor en `nombres`: Jer 47:4 usa `creta`, y también Dt 2:23 cuando habla del lugar.
+- **Israel es José.** `israel` lleva «José» en `nombres` para el reino del norte (Am 5:6, 15; 6:6), como Efraín.
+- **Hechos 7 y 15.** Los tramos Amós 5:25-27 y 9:11-12 llevan `discurso-de-esteban` y `concilio-de-jerusalen-49` en `menciona`. Hechos no nombra a Amós, así que sus tramos no lo llevan.
+- **Los cuarenta años en el desierto.** Cuando exista el suceso de Números (el andar de Israel por el desierto), va en `menciona` de los tramos Amós 2:9-12 y 5:25-27.

@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: queriyot
+nombre: Queriyot
+nombres:
+- nombre: Queriyot
+  nota: Quiere decir «ciudades»; según Perspicacia, quizá la formaban varios núcleos menores.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Ar, al sur del Arnón
+  geometria:
+    tipo: punto
+    lat: 31.359913
+    lon: 35.782764
+  estado: alternativa
+  fuentes:
+  - it-queriyot
+  - openbible-geo
+  razon: 'Perspicacia «Queriyot» ve un apoyo para esta idea: Ar y Queriyot eran importantes y nunca salen juntas en las listas
+    de ciudades de Moab.'
+  nota: Punto de OpenBible para Ar (Khirbet al Balua); solo tomamos el punto.
+  coord_fuente: openbible:a38ad07
+  coord_url: https://www.openbible.info/geo/ancient/a38ad07/ar
+- nombre: Saliyá, al ESE de Dibón y al norte del Arnón
+  geometria:
+    tipo: zona
+    lat: 31.4472
+    lon: 35.9323
+    radio_km: 5
+  estado: alternativa
+  fuentes:
+  - it-queriyot
+  - openbible-geo
+  razon: 'Perspicacia «Queriyot»: algunos eruditos la ponen en Saliyá, unos 16 km al ESE de Dibón.'
+  nota: 'Centro: 16 km con rumbo 112,5° desde el punto de OpenBible para Dibón (31,5022 N; 35,7766 E), que da 31.4472 N; 35.9323
+    E. El radio de 5 km es nuestro.'
+  coord_fuente: calculo
+resumen: Ciudad de Moab con torres fortificadas, que según la Piedra Moabita tenía un santuario de Kemós. Amós anunció que
+  el fuego las consumiría. No se sabe dónde estaba exactamente.
+razon: Perspicacia «Queriyot»; Am 2:2; Jer 48:24. Los dos sitios solo se proponen como posibles.
+no_afirmamos:
+- 'Que sea con seguridad Ar: Perspicacia dice que se desconoce su ubicación exacta.'
+fuentes:
+- it-queriyot
+- openbible-geo
+- amos-2
+enlaces:
+- titulo: 'Perspicacia: «Queriyot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002594
+  tipo: perspicacia
+- titulo: Amós 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,110 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amos-profetiza-contra-israel
+titulo: Amós profetiza contra Israel
+fecha:
+  desde: -828
+  hasta: -803
+  precision: rango
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 829-804 a.e.c.
+orden_relato:
+  serie: amos
+  orden: 1001
+lugares:
+- israel
+- betel
+personas:
+- amos-profeta
+presentes: []
+pasajes:
+- Am 1:1-9:15
+resumen: Amós, ganadero de Tecoa, lleva el juicio de Jehová a los pueblos vecinos, a Judá y sobre todo a Israel, por su idolatría
+  y por oprimir al pobre. Acaba prometiendo levantar la cabaña de David.
+razon: 'Perspicacia «Amós», núm. 1, y «Amós, Libro de»: habló mientras reinaban a la vez Uzías y Jeroboán II, entre 829 y
+  804, y lo escribió hacia 804. Consta que habló en Betel (Am 7:10-13); el resto no se sitúa.'
+fuentes:
+- amos-1
+- amos-2
+- it-amos
+- it-amos-libro
+- si-amos
+- si-3
+- tnm-tabla
+- w07-joel-y-amos
+- amos-3
+- it-betel
+- w04-proclamemos-con-valor
+- amos-4
+- amos-5
+- it-constelacion-kima
+- it-constelacion-kesil
+- it-sakut
+- it-kevan
+- it-jose
+- it-guilgal
+- it-beer-seba
+- amos-6
+- it-samaria
+- it-david
+- it-jacob
+- it-hamat
+- it-calne
+- it-gat
+- it-araba
+- amos-7
+- amos-8
+- it-plomada
+- it-cesta
+- it-orgullo
+- it-fiesta-luna-nueva
+- it-nilo
+- amos-9
+- it-altar
+- it-carmelo
+- it-quir
+- it-caftor
+- it-edom
+- it-cabana
+- it-araba-valle-torrencial
+- it-cusita
+- it-amorreo
+- it-nazareo
+- it-isaac
+enlaces:
+- titulo: Amós 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
+  tipo: biblia
+- titulo: Amós 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Amós, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000247
+  tipo: perspicacia
+- titulo: Amós 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/3
+  tipo: biblia
+- titulo: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  tipo: perspicacia
+- titulo: Amós 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/4
+  tipo: biblia
+- titulo: Amós 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/5
+  tipo: biblia
+- titulo: Amós 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/6
+  tipo: biblia
+- titulo: Amós 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/7
+  tipo: biblia
+- titulo: Amós 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/8
+  tipo: biblia
+- titulo: Amós 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
