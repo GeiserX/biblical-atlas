@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dedan-hijo-de-jocsan
+nombre: Dedán
+nombres:
+- nombre: Dedán
+perspicacia: 1200001143#2
+desambiguacion: Dedán hijo de Jocsán; no Dedán el cusita, del linaje de Raamá.
+resumen: Hijo de Jocsán y nieto de Abrahán. Sus descendientes, los dedanitas, vivieron al sur y al sureste de Canaán; de él
+  salieron los asurim, los letusim y los leumim.
+razon: Perspicacia «Dedán», núm. 2, y «Asurim»; Gé 25:3.
+fuentes:
+- it-dedan
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Dedán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001143
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jocsan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-dedan
+  - genesis-25
+  razon: Gé 25:3.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

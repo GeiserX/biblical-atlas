@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jacob-bendice-a-efrain-y-manases
+titulo: Jacob adopta y bendice a Efraín y Manasés
+fecha:
+  desde: -1710
+  hasta: -1710
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1711 a.e.c.
+orden_relato:
+  serie: genesis
+  orden: 48001
+lugares:
+- egipto
+- gosen
+personas:
+- jacob
+- jose-hijo-de-jacob
+- efrain
+- manases-hijo-de-jose
+pasajes:
+- Gé 48:1-22
+resumen: Jacob, enfermo y casi ciego, declara suyos a los dos hijos de José. Al bendecirlos pone la mano derecha sobre Efraín,
+  el menor, y anuncia que será mayor que Manasés. A José le da una porción más.
+razon: 'Perspicacia «Jacob», párr. 39, y «José», párr. 31: poco antes de morir Jacob, en 1711 a.e.c. según el estudio 3, cuando
+  el hambre había acabado hacía unos doce años.'
+fuentes:
+- genesis-48
+- it-jacob
+- it-jose
+- si-3
+enlaces:
+- titulo: Génesis 48 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/48
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acbor-padre-de-baal-hanan
+nombre: Acbor
+nombres:
+- nombre: Acbor
+perspicacia: 1200000076#1
+desambiguacion: Acbor el edomita; no Acbor hijo de Micaya, oficial del rey Josías.
+resumen: Padre de Baal-Hanán, séptimo rey de Edom de la lista.
+razon: Perspicacia «Acbor», núm. 1; Gé 36:38, 39.
+fuentes:
+- it-acbor
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Acbor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000076
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

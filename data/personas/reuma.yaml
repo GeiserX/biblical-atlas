@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: reuma
+nombre: Reumá
+nombres:
+- nombre: Reumá
+perspicacia: '1200003715'
+resumen: 'Concubina de Nacor, el hermano de Abrahán. Le dio cuatro hijos: Tébah, Gaham, Tahas y Maacá.'
+razon: Perspicacia «Reumá»; Gé 22:24.
+fuentes:
+- it-reuma
+- genesis-22
+enlaces:
+- titulo: 'Perspicacia: «Reumá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003715
+  tipo: perspicacia
+- titulo: Génesis 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/22
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

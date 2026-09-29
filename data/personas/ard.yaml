@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ard
+nombre: Ard
+nombres:
+- nombre: Ard
+perspicacia: '1200000351'
+resumen: Contado en Gé 46:21 entre los hijos de Benjamín, aunque Números 26 indica que era nieto, por Bela. Quizá sea el Addar
+  de 1 Crónicas 8.
+razon: Perspicacia «Ard»; Gé 46:21.
+fuentes:
+- it-ard
+- genesis-46
+enlaces:
+- titulo: 'Perspicacia: «Ard»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000351
+  tipo: perspicacia
+- titulo: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: benjamin-hijo-de-jacob
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - genesis-46
+  - it-ard
+  razon: Gé 46:21 lo llama hijo de Benjamín; Perspicacia entiende que era su nieto.
+  estado: verificado
+- tipo: pariente
+  persona: bela-hijo-de-benjamin
+  relacion: padre
+  deducido: true
+  fuentes:
+  - it-ard
+  razon: 'Perspicacia «Ard»: al parecer era nieto de Benjamín por Bela.'
+  estado: pendiente
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - genesis-46
+  razon: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
+    allí antes de morir Jacob.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tema
+nombre: Temá
+nombres:
+- nombre: Temá
+perspicacia: '1200004354'
+desambiguacion: Temá hijo de Ismael; no el oasis de Temá.
+resumen: Hijo de Ismael. El oasis de Temá, en el norte de Arabia, lleva el mismo nombre.
+razon: Perspicacia «Temá», núm. 1 y 2; Gé 25:15.
+fuentes:
+- it-tema
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Temá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004354
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-tema
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

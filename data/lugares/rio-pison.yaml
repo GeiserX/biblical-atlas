@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-pison
+nombre: Río Pisón
+nombres:
+- nombre: Río Pisón
+tipo: rio
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Donde nacía, en la zona de Edén
+  geometria:
+    tipo: zona
+    lat: 38.26
+    lon: 42.48
+    radio_km: 300
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-pison
+  - it-eden
+  razon: Perspicacia «Pisón» pone Edén, de donde salía este brazo del río, probablemente en el este de la actual Turquía.
+    Su curso se desconoce.
+  nota: 'Centro y radio: los del candidato favorecido de nuestra ficha de Edén, calculados por nosotros.'
+  coord_fuente: calculo
+resumen: 'Primero de los cuatro brazos del río de Edén. Rodeaba la tierra de Havilá. Hoy no se sabe qué río era: el Diluvio
+  y los terremotos pudieron borrar su rastro.'
+razon: Perspicacia «Pisón», párr. 2 y 3; Gé 2:10-12. Las identificaciones propuestas, del este de Turquía al Ganges, son conjeturas.
+fuentes:
+- it-pison
+- it-eden
+- genesis-2
+enlaces:
+- titulo: 'Perspicacia: «Pisón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003498
+  tipo: perspicacia
+- titulo: Génesis 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

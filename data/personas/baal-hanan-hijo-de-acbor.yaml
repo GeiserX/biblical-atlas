@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baal-hanan-hijo-de-acbor
+nombre: Baal-Hanán
+nombres:
+- nombre: Baal-Hanán
+perspicacia: 1200000513#1
+desambiguacion: Baal-Hanán rey de Edom; no Baal-Hanán el guederita, al servicio de David.
+resumen: Hijo de Acbor y séptimo de los reyes de Edom que se nombran; sucedió a Shaúl.
+razon: Perspicacia «Baal-hanán», núm. 1; Gé 36:38, 39.
+fuentes:
+- it-baal-hanan
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Baal-hanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000513
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: acbor-padre-de-baal-hanan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-baal-hanan
+  - genesis-36
+  razon: 'Gé 36:38: Baal-Hanán hijo de Acbor.'
+  estado: verificado
+- tipo: sucede_a
+  persona: shaul-de-edom
+  deducido: false
+  fuentes:
+  - it-baal-hanan
+  - genesis-36
+  razon: 'Gé 36:38: reinó en lugar de Shaúl.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

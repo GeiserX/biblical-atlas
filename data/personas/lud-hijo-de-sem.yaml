@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lud-hijo-de-sem
+nombre: Lud
+nombres:
+- nombre: Lud
+perspicacia: 1200002787#1
+desambiguacion: Lud hijo de Sem; no el Lud camita de la línea de Mizraim, del que vienen los ludim.
+resumen: Hijo de Sem. Josefo y otros autores ven en sus descendientes a los lidios, pueblo del suroeste de Asia Menor.
+razon: Perspicacia «Lud, ludim», núm. 1; Gé 10:22.
+fuentes:
+- it-lud
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Lud, ludim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002787
+  tipo: perspicacia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: sem
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-10
+  razon: Gé 10:22 lo nombra entre los hijos de Sem.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

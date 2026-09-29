@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: canaan
+nombre: Canaán
+nombres:
+- nombre: Canaán
+perspicacia: '1200000874'
+desambiguacion: Canaán hijo de Cam, el hombre; no la tierra de Canaán, que tomó su nombre de sus descendientes.
+resumen: Cuarto hijo de Cam y nieto de Noé, nacido después del Diluvio. Tras la embriaguez de Noé cayó sobre él la maldición
+  de su abuelo. De él descienden los pueblos cananeos.
+razon: Perspicacia «Canaán, cananeo», núm. 1, párr. 1 y 2; Gé 9:18-27.
+fuentes:
+- it-canaan
+- genesis-9
+- genesis-10
+enlaces:
+- titulo: 'Perspicacia: «Canaán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
+  tipo: perspicacia
+- titulo: Génesis 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/9
+  tipo: biblia
+- titulo: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  tipo: biblia
+no_afirmamos:
+- 'Que Canaán cometiera la falta contra Noé: Perspicacia lo ve probable, pero el texto no da detalles.'
+relaciones:
+- tipo: pariente
+  persona: cam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-9
+  - it-canaan
+  - genesis-10
+  razon: 'Gé 9:18, 22: Cam fue el padre de Canaán.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

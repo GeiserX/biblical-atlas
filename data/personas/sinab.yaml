@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sinab
+nombre: Sinab
+nombres:
+- nombre: Sinab
+perspicacia: '1200004059'
+resumen: Rey de Admá, una de las cinco ciudades del sur del mar Salado que se rebelaron contra Kedorlaomer y fueron vencidas.
+  Su nombre acadio alude al dios luna Sin.
+razon: Perspicacia «Sinab»; Gé 14:2, 8-10.
+fuentes:
+- it-sinab
+- genesis-14
+enlaces:
+- titulo: 'Perspicacia: «Sinab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004059
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: adma
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: Gé 14:2 lo llama rey de Admá.
+  estado: verificado
+- tipo: acompana
+  persona: bera
+  deducido: false
+  fuentes:
+  - genesis-14
+  razon: 'Gé 14:3, 8: unió sus fuerzas a las del rey de Sodoma y los demás rebeldes.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

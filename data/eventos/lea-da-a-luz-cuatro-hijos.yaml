@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: lea-da-a-luz-cuatro-hijos
+titulo: Lea da a luz a Rubén, Simeón, Leví y Judá
+fecha:
+  desde: -1773
+  hasta: -1766
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1774 y 1767 a.e.c. (tiempo narrativo: entre la boda de Jacob con Lea y el nacimiento de José)'
+orden_relato:
+  serie: genesis
+  orden: 29031
+lugares:
+- haran
+personas:
+- lea
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- jacob
+pasajes:
+- Gé 29:31-35
+resumen: Jehová ve que Lea es menos amada y le permite concebir, mientras Raquel sigue estéril. Lea tiene cuatro hijos seguidos
+  y pone a cada uno un nombre ligado a lo que siente.
+razon: 'Entre la boda (1774) y el nacimiento de José (1767), ambos del estudio 3. Perspicacia «Jacob», párr. 13: los hijos
+  llegaron en unos siete años.'
+fuentes:
+- si-3
+- it-jacob
+- it-lea
+- genesis-29
+enlaces:
+- titulo: Génesis 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/29
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

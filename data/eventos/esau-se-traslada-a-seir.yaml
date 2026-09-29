@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: esau-se-traslada-a-seir
+titulo: Esaú se traslada a la región montañosa de Seír
+fecha:
+  desde: -1737
+  hasta: -1727
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1738 y 1728 a.e.c. (tiempo narrativo: tras morir Isaac y antes de que Jacob bajara a Egipto)'
+orden_relato:
+  serie: genesis
+  orden: 36006
+lugares:
+- seir
+- canaan
+personas:
+- esau
+- ada-hija-de-elon
+- oholibama-hija-de-ana
+- basemat-hija-de-ismael
+- elifaz-hijo-de-esau
+- reuel-hijo-de-esau
+- jeus-hijo-de-esau
+- jalam
+- core-hijo-de-esau
+pasajes:
+- Gé 36:6-8
+resumen: Esaú deja Canaán con sus esposas, sus hijos y todos sus bienes, porque la tierra no alcanzaba para los rebaños de
+  los dos hermanos, y se instala en la región montañosa de Seír.
+razon: 'Perspicacia «Edom», párr. 2: se trasladó definitivamente tras la muerte de Isaac (1738 a.e.c.). Jacob seguía en Canaán
+  hasta que bajó a Egipto en 1728 (estudio 3).'
+fuentes:
+- it-edom
+- it-seir
+- si-3
+- genesis-36
+enlaces:
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

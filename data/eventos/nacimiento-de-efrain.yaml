@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-efrain
+titulo: Nace Efraín, segundo hijo de José
+fecha:
+  desde: -1736
+  hasta: -1729
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1737 y 1730 a.e.c. (tiempo narrativo: los siete años de abundancia que siguen al nombramiento de José)'
+orden_relato:
+  serie: genesis
+  orden: 41052
+lugares:
+- egipto
+personas:
+- efrain
+- jose-hijo-de-jacob
+- asenat
+pasajes:
+- Gé 41:50, 52
+resumen: Asenat da a José un segundo hijo, antes de los años de hambre. Lo llama Efraín porque Dios lo ha hecho fructífero
+  en Egipto.
+razon: 'Tras el nombramiento de 1737 a.e.c. (estudio 3). Jacob llega en 1728 (estudio 3), segundo año de hambre, así que la
+  abundancia acaba hacia 1730. Perspicacia «Efraín», núm. 1: nació antes del hambre.'
+fuentes:
+- genesis-41
+- si-3
+- it-efrain
+enlaces:
+- titulo: Génesis 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/41
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

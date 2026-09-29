@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jose-en-casa-de-potifar
+titulo: José, esclavo en casa de Potifar
+fecha:
+  desde: -1749
+  hasta: -1738
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1750 y 1739 a.e.c. (tiempo narrativo: José llega a Egipto en 1750 y lleva unos once años vendido al interpretar
+    los sueños de la prisión)'
+orden_relato:
+  serie: genesis
+  orden: 37036
+lugares:
+- egipto
+personas:
+- jose-hijo-de-jacob
+- potifar
+pasajes:
+- Gé 37:36
+- Gé 39:1-6
+resumen: Los mercaderes venden a José a Potifar, que manda la guardia del faraón. Jehová hace prosperar todo lo que José toca,
+  y Potifar le confía su casa y todos sus bienes.
+razon: 'Estudio 3: vendido en 1750 a.e.c. Perspicacia «José», párr. 13: al cumplirse los sueños del copero y el panadero ya
+  llevaba unos once años vendido.'
+fuentes:
+- genesis-39
+- genesis-37
+- si-3
+- it-jose
+- it-potifar
+enlaces:
+- titulo: Génesis 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/39
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

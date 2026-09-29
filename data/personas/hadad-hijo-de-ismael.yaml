@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadad-hijo-de-ismael
+nombre: Hadad
+nombres:
+- nombre: Hadad
+perspicacia: 1200001797#1
+desambiguacion: Hadad hijo de Ismael; no los reyes de Edom ni el edomita enemigo de Salomón que llevaron ese nombre.
+resumen: Uno de los doce hijos de Ismael, nieto de Abrahán y de Agar.
+razon: Perspicacia «Hadad», núm. 1; Gé 25:15.
+fuentes:
+- it-hadad
+- genesis-25
+enlaces:
+- titulo: 'Perspicacia: «Hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001797
+  tipo: perspicacia
+- titulo: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-hadad
+  - genesis-25
+  razon: 'Gé 25:13-16: uno de los doce hijos de Ismael.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

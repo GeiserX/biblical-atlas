@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: masreca
+nombre: Masrecá
+nombres:
+- nombre: Masrecá
+- nombre: Masreqá
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Junto al Jebel el-Mushraq
+  geometria:
+    tipo: punto
+    lat: 29.946944
+    lon: 35.463611
+  estado: alternativa
+  fuentes:
+  - it-masreqa
+  - openbible-geo
+  razon: Perspicacia «Masreqá» dice que el nombre quizá se conserva en ese monte. Punto de OpenBible.
+  coord_fuente: openbible:a57e0a0
+  coord_url: https://www.openbible.info/geo/ancient/a57e0a0/masrekah
+resumen: Lugar de Edom de donde era el rey Samlá. Su nombre quizá sigue en el Jebel el-Mushraq, al SO de Maan; Eusebio lo
+  ponía más al norte.
+razon: Perspicacia «Masreqá»; Gé 36:36.
+fuentes:
+- it-masreqa
+- openbible-geo
+- genesis-36
+enlaces:
+- titulo: 'Perspicacia: «Masreqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002923
+  tipo: perspicacia
+- titulo: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

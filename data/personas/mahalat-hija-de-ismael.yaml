@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahalat-hija-de-ismael
+nombre: Mahalat
+nombres:
+- nombre: Mahalat
+perspicacia: 1200002840#1
+desambiguacion: Mahalat hija de Ismael, esposa de Esaú; no la nieta de David que se casó con Rehoboam.
+resumen: Hija de Ismael y hermana de Nebayot. Esaú la tomó por esposa, además de las que ya tenía, al ver que a su padre no
+  le agradaban las mujeres cananeas.
+razon: Perspicacia «Mahalat, I», núm. 1; Gé 28:6-9.
+no_afirmamos:
+- 'Que sea la misma Basemat de la lista de esposas de Esaú: Perspicacia solo dice que es posible.'
+fuentes:
+- it-mahalat
+- genesis-28
+enlaces:
+- titulo: 'Perspicacia: «Mahalat, I»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002840
+  tipo: perspicacia
+- titulo: Génesis 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/28
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ismael-hijo-de-abrahan
+  relacion: padre
+  deducido: false
+  fuentes:
+  - genesis-28
+  - it-mahalat
+  razon: Gé 28:9 la llama hija de Ismael, el hijo de Abrahán.
+  estado: verificado
+- tipo: pariente
+  persona: nebayot
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - genesis-28
+  - it-mahalat
+  razon: Gé 28:9 la llama hermana de Nebayot.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: debora-nodriza-de-rebeca
+nombre: Débora
+nombres:
+- nombre: Débora
+perspicacia: 1200001138#1
+desambiguacion: Débora la nodriza de Rebeca; no Débora la profetisa, esposa de Lapidot.
+no_confundir_con:
+- debora-profetisa
+resumen: Nodriza de Rebeca, que la acompañó desde la casa de Betuel. Sirvió años en la casa de Isaac y luego en la de Jacob.
+  Murió en Betel y la enterraron bajo un gran árbol, Alón-Bacut.
+razon: Perspicacia «Débora», núm. 1; Gé 24:59 la llama la nodriza de Rebeca, sin nombre.
+fuentes:
+- it-debora
+- genesis-24
+- genesis-35
+enlaces:
+- titulo: 'Perspicacia: «Débora»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001138
+  tipo: perspicacia
+- titulo: Génesis 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/24
+  tipo: biblia
+- titulo: Génesis 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/35
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: rebeca
+  deducido: true
+  fuentes:
+  - it-debora
+  - genesis-24
+  - genesis-35
+  razon: 'Gé 24:59: la nodriza se fue con Rebeca; Perspicacia «Débora», núm. 1, dice que era Débora.'
+  estado: verificado
+- tipo: murio_en
+  lugar: betel
+  deducido: false
+  fuentes:
+  - it-debora
+  - it-alon-bacut
+  - genesis-35
+  razon: 'Gé 35:8: murió y la enterraron al pie de la colina de Betel, bajo un roble.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado
