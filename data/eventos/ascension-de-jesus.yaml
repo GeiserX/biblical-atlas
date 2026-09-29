@@ -47,7 +47,7 @@ fuentes:
 - bt-2
 orden_relato:
   serie: a7
-  orden: 133
+  orden: 134
 enlaces:
 - titulo: 'Perspicacia: «Ascensión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000402
@@ -64,5 +64,9 @@ historial:
   cambio: orden 131 pasa a 133, tras las tres apariciones que siguen al 16 de nisán, ahora numeradas 130-132 en el orden de
     Jn 21:14 y de jy, cap. 135-137.
   fuente: juan-21
+- fecha: '2026-09-29'
+  cambio: orden 133 pasa a 134 para dejar sitio a la aparición a Santiago, que 1Co 15:7 pone tras la de los 500 y antes de
+    la de todos los apóstoles.
+  fuente: 1-corintios-15
 consultado: '2026-09-29'
 estado: verificado
