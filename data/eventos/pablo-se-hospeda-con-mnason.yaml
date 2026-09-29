@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-se-hospeda-con-mnason
+titulo: Pablo sube a Jerusalén y se aloja con Mnasón
+fecha:
+  desde: 56
+  hasta: 56
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: Pentecostés de 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2115
+lugares:
+- jerusalen
+- cesarea
+personas:
+- pablo
+- lucas
+- mnason
+pasajes:
+- Hch 21:15-17
+resumen: Unos discípulos de Cesarea acompañan al grupo hasta la casa de Mnasón, un discípulo antiguo nacido en Chipre, donde
+  van a alojarse. En Jerusalén los hermanos los acogen con alegría.
+razon: El estudio 3 (párr. 26) fecha la llegada a Jerusalén en el Pentecostés de 56; Perspicacia «Mnasón» sitúa su casa en
+  la ciudad (Hch 21:15-17).
+fuentes:
+- si-3
+- it-mnason
+- hch-21
+enlaces:
+- titulo: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  tipo: biblia
+buscar: Mnasón Chipre Pablo Jerusalén
+consultado: '2026-09-29'
+estado: verificado

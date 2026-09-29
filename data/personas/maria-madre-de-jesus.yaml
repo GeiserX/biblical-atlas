@@ -28,6 +28,8 @@ fuentes:
 - lucas-8
 - juan-2
 - juan-19
+- hechos-1
+- bt-2
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria

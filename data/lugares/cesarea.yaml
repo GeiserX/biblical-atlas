@@ -7,6 +7,9 @@ nombres:
   nota: Se cree que era el nombre del lugar antes de que Herodes el Grande construyera la ciudad.
 - nombre: Horvat Qesari
   nota: Nombre hebreo actual del sitio.
+- nombre: Palacio de Herodes
+  nota: Residencia que levantó Herodes el Grande y que hacia 56 usaba el gobernador romano; allí vigilaron a Pablo (Hch 23:35
+    y su nota de estudio). También se llama pretorio.
 tipo: puerto
 lat: 32.5
 lon: 34.89167
@@ -20,6 +23,16 @@ fuentes:
 - it-cesarea
 - hch-18
 - openbible-geo
+- hechos-8
+- hch-9
+- hechos-10
+- hechos-12
+- hch-21
+- hch-23
+- nota-hechos-23
+- hch-25
+- nota-hechos-25
+- hch-26
 enlaces:
 - titulo: 'Perspicacia: «Cesarea»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000853
@@ -27,5 +40,5 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-29'
 estado: verificado

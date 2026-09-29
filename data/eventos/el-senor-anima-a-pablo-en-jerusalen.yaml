@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-senor-anima-a-pablo-en-jerusalen
+titulo: El Señor anima a Pablo en Jerusalén
+fecha:
+  desde: 56
+  hasta: 56
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 56 e.c.
+orden_relato:
+  serie: hechos
+  orden: 2311
+lugares:
+- jerusalen
+personas:
+- pablo
+- jesus
+presentes:
+- pablo
+pasajes:
+- Hch 23:11
+resumen: 'La noche que sigue al juicio ante el Sanedrín, el Señor se pone al lado de Pablo y lo anima: igual que ha hablado
+  de él en Jerusalén, hablará de él en Roma.'
+razon: Hch 23:11. «Testimonio completo», cap. 24, párr. 4, dice que quien le habla es Jesús. Perspicacia «Ananías» (núm. 3)
+  fecha hacia 56 el juicio de ese día.
+fuentes:
+- hch-23
+- bt-24
+- it-ananias
+enlaces:
+- titulo: Hechos 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/23
+  tipo: biblia
+buscar: Ten valor Pablo Roma
+consultado: '2026-09-29'
+estado: verificado

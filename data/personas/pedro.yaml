@@ -64,12 +64,24 @@ fuentes:
 - juan-18
 - juan-20
 - juan-21
+- hechos-1
+- hch-2
+- hechos-3
+- hechos-4
+- hechos-5
+- hechos-8
+- hch-9
+- hechos-10
+- hechos-11
+- hechos-12
+- hch-15
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
 - simon-el-cananita
 - simon-hijo-de-jose
 - simon-iscariote
+- symeon-niger
 no_afirmamos:
 - 'Que Pedro estuviera en Roma o dirigiera allí la congregación: Perspicacia dice que esa idea solo se apoya en
   tradiciones dudosas.'
@@ -230,6 +242,7 @@ relaciones:
   - juan-13
   - juan-18
   - juan-21
+  - hechos-4
   razon: 'Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.'
   estado: verificado
 - tipo: pariente
@@ -251,6 +264,24 @@ relaciones:
   - marcos-14
   - lucas-22
   razon: 'Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.'
+  estado: verificado
+- tipo: acompana
+  persona: simon-el-curtidor
+  relacion: huésped de
+  fecha:
+    desde: 36
+    hasta: 36
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: 36 e.c.
+  deducido: false
+  fuentes:
+  - hch-9
+  - hechos-10
+  - it-simon
+  razon: 'Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «Pedro»'

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-entrega-las-decisiones-de-jerusalen
+titulo: Entregan a las congregaciones las decisiones de Jerusalén
+fecha:
+  desde: 49
+  hasta: 50
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 49-50 e.c. (tiempo narrativo: tras sumarse Timoteo en Listra y antes de cruzar a Europa en la primavera de 50)'
+orden_relato:
+  serie: hechos
+  orden: 1604
+lugares:
+- listra
+- galacia
+- derbe
+- iconio
+personas:
+- pablo
+- silas
+- timoteo
+pasajes:
+- Hch 16:4, 5
+resumen: Yendo de ciudad en ciudad, transmiten a los hermanos lo que decidieron los apóstoles y ancianos de Jerusalén, y las
+  congregaciones se afianzan en la fe y crecen cada día.
+razon: 'Hch 16:4, 5 no nombra ciudades; «Testimonio completo», cap. 15, párr. 13, sitúa la visita en la provincia de
+  Galacia. Listra va primero: allí se suma Timoteo (16:1-3). Límites: Perspicacia «Timoteo» y estudio 3, párr. 24.'
+fuentes:
+- bt-15
+- it-galacia
+- it-timoteo
+- si-3
+- hch-16
+enlaces:
+- titulo: Hechos 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
+  tipo: biblia
+buscar: decisiones de los apóstoles y ancianos
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El primer lugar pasa de Galacia a Listra: el reparto sigue a la llegada de Timoteo allí (Hch 16:1-4).'
+  fuente: hch-16
+consultado: '2026-09-29'
+estado: verificado

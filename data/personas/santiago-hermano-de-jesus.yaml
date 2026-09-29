@@ -28,6 +28,9 @@ fuentes:
 - marcos-6
 - juan-7
 - jy-cap-65
+- hechos-12
+- hch-15
+- hch-21
 no_confundir_con:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -72,6 +75,8 @@ relaciones:
   fuentes:
   - it-santiago-carta
   - galatas-1
+  - hechos-12
+  - hch-21
   razon: Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).
   estado: verificado
 - tipo: pariente

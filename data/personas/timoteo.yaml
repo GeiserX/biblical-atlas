@@ -9,6 +9,10 @@ razon: Perspicacia «Timoteo» da su familia y fecha su encuentro con Pablo en L
 fuentes:
 - it-timoteo
 - hch-16
+- hch-17
+- hch-18
+- hch-19
+- hch-20
 enlaces:
 - titulo: 'Perspicacia: «Timoteo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004416
@@ -16,7 +20,8 @@ enlaces:
 - titulo: Hechos 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/16
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200004416'
+consultado: '2026-09-29'
 estado: verificado
 relaciones:
 - tipo: vivio_en
@@ -43,6 +48,10 @@ relaciones:
   - bt-15
   - hch-16
   - tnm-tabla
+  - hch-17
+  - hch-18
+  - hch-19
+  - hch-20
   razon: Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años.
     La Tabla de los libros fecha 2 Timoteo hacia 65.
   estado: verificado
@@ -63,4 +72,14 @@ relaciones:
   - si-3
   razon: Pablo los envía juntos de Asia a Macedonia (Hch 19:22). Poco antes de que Pablo deje Éfeso, a principios de 55 (estudio
     3, párr. 26).
+  estado: verificado
+- tipo: pariente
+  persona: eunice
+  relacion: madre
+  deducido: false
+  fuentes:
+  - it-timoteo
+  - hch-16
+  - 2-timoteo-1
+  razon: Hch 16:1 lo hace hijo de una judía creyente y de un griego; 2Ti 1:5 da el nombre de ella, Eunice.
   estado: verificado

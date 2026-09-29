@@ -11,7 +11,7 @@ fecha:
   texto: c. 49 e.c.
 orden_relato:
   serie: hechos
-  orden: 1501
+  orden: 1504
 lugares:
 - jerusalen
 personas:
@@ -24,10 +24,10 @@ personas:
 - santiago-hermano-de-jesus
 - juan-apostol
 pasajes:
-- Hch 15:1-35
+- Hch 15:4-29
 - Gál 2:1-10
-resumen: Los apóstoles y ancianos de Jerusalén deciden que los creyentes de las naciones no tienen que circuncidarse.
-  Silas lleva la carta a Antioquía con Pablo y Bernabé.
+resumen: Fariseos creyentes exigen circuncidar a los de las naciones. Tras mucho debate hablan Pedro, Bernabé, Pablo y Santiago;
+  apóstoles y ancianos deciden no imponerla y mandan una carta con Judas y Silas.
 razon: 'Estudio 3: c. 49, entre la primera y la segunda gira (párr. 23). Perspicacia «Pedro» (párr. 22), «Santiago»
   (párr. 13) y «Juan» (párr. 30) sitúan allí a los tres; Gál 2:9 los llama columnas.'
 fuentes:
@@ -40,5 +40,17 @@ fuentes:
 - it-juan
 - galatas-2
 buscar: cuestión de la circuncisión
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El suceso se ciñe a la reunión de Jerusalén (Hch 15:4-29); el debate en Antioquía, el camino por Fenicia y Samaria
+    y la entrega de la carta son sucesos propios.
+  fuente: hch-15
+- fecha: '2026-09-29'
+  cambio: El resumen decía que Silas llevó la carta con Pablo y Bernabé y omitía a Judas (Hch 15:22, 27); ahora cuenta la
+    reunión, y la entrega va en su propio suceso.
+  fuente: hch-15
+- fecha: '2026-09-29'
+  cambio: Pasa a Hch 15:4, tras el debate de Antioquía (1501) y el camino por Fenicia y Samaria (1503).
+  fuente: hch-15
+consultado: '2026-09-29'
 estado: verificado

@@ -23,7 +23,12 @@ fuentes:
 - it-pablo
 - hch-13
 - hch-14
-consultado: '2026-09-27'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Paradas 2 a 4 (Seleucia, Salamina y Pafos) pasan de heredar c. 47-48 a c. 47 anclada, como los sucesos de Chipre:
+    la nota de estudio de Hch 13:4 y Perspicacia «Paulo» dan el año 47.'
+  fuente: nota-hechos-13
+consultado: '2026-09-29'
 estado: verificado
 paradas:
 - orden: 1
@@ -48,48 +53,51 @@ paradas:
   referencia: Hch 13:4
   fecha:
     desde: 47
-    hasta: 48
-    precision: rango
+    hasta: 47
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 47 e.c.
   nota: Puerto de Antioquía.
-  razon: 'Hch 13:4 nombra Seleucia en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 13:4 nombra Seleucia. La nota de estudio de ese versículo pone allí el embarque hacia el año 47.
   fuentes:
   - hch-13
+  - nota-hechos-13
   estado: verificado
 - orden: 3
   lugar: salamina
   referencia: Hch 13:5
   fecha:
     desde: 47
-    hasta: 48
-    precision: rango
+    hasta: 47
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 47 e.c.
   nota: null
-  razon: 'Hch 13:5 nombra Salamina en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 13:5 nombra Salamina. Perspicacia «Paulo» fecha la visita a Chipre hacia el año 47.
   fuentes:
   - hch-13
+  - it-paulo
   estado: verificado
 - orden: 4
   lugar: pafos
   referencia: Hch 13:6-12
   fecha:
     desde: 47
-    hasta: 48
-    precision: rango
+    hasta: 47
+    precision: año
     aprox: true
-    tipo: narrativa
+    tipo: anclada
     cronologia: tnm
-    texto: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+    texto: c. 47 e.c.
   nota: Elimas y el procónsul Sergio Paulo.
-  razon: 'Hch 13:6-12 nombra Pafos en el recorrido. No tiene año propio: hereda el tramo del viaje.'
+  razon: Hch 13:6-12 nombra Pafos. Perspicacia «Paulo» fecha la visita a Chipre hacia el año 47.
   fuentes:
   - hch-13
+  - it-paulo
   estado: verificado
 - orden: 5
   lugar: perga
@@ -263,8 +271,7 @@ paradas:
     cronologia: tnm
     texto: otoño de 48 a primavera de 49
   nota: null
-  razon: 'Hch 14:26-28 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: otoño de 48 a primavera
-    de 49.'
+  razon: 'Hch 14:26-28 nombra Antioquía de Siria en el recorrido. El estudio 3 da la fecha: otoño de 48 a primavera de 49.'
   fuentes:
   - hch-14
   - si-3

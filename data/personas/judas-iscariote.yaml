@@ -9,6 +9,8 @@ desambiguacion: El apóstol que traicionó a Jesús; no es Judas Tadeo, el otro 
 no_confundir_con:
 - judas-hermano-de-jesus
 - tadeo
+- judas-el-galileo
+- judas-de-damasco
 no_afirmamos:
 - Judas estaba predestinado a traicionar a Jesús.
 - 'Judas participó en la Cena del Señor: se fue antes de que Jesús la estableciera.'
@@ -41,6 +43,15 @@ relaciones:
   - juan-13
   razon: Jn 6:71 lo llama Judas hijo de Simón Iscariote.
   estado: verificado
+- tipo: murio_en
+  lugar: jerusalen
+  deducido: true
+  fuentes:
+  - hechos-1
+  - it-judas
+  razon: 'Perspicacia «Judas», núm. 4, apartado «Su muerte»: comparando los dos relatos, cayó desde algún peñasco de los alrededores
+    de Jerusalén (Hch 1:18).'
+  estado: verificado
 resumen: Apóstol, hijo de Simón Iscariote, que guardaba la caja del dinero y robaba de ella. Vendió a Jesús por
   30 piezas de plata, lo entregó en Getsemaní y después se quitó la vida.
 razon: Perspicacia «Judas», apartado 4 (párr. 6-18); Jn 12:6, Mt 26:14-16, 47-50 y 27:3-5.
@@ -59,6 +70,7 @@ fuentes:
 - juan-13
 - juan-17
 - juan-18
+- hechos-1
 enlaces:
 - titulo: 'Perspicacia: «Judas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541

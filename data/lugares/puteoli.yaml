@@ -5,6 +5,8 @@ nombres:
 - nombre: Puteoli
 - nombre: Pozzuoli
   nota: Ciudad moderna con la que se identifica.
+- nombre: Dicearquía
+  nota: Nombre antiguo que le da Josefo, según Perspicacia «Puteoli» y la nota de estudio de Hch 28:13.
 tipo: puerto
 lat: 40.82611
 lon: 14.12056
@@ -25,5 +27,5 @@ enlaces:
 - titulo: Hechos 28 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
   tipo: biblia
-consultado: '2026-09-27'
+consultado: '2026-09-29'
 estado: verificado

@@ -27,7 +27,7 @@ personas:
 pasajes:
 - Mt 28:16-20
 - 1Co 15:6
-- Hch 1:3-8
+- Hch 1:3
 resumen: En un monte de Galilea, Jesús dice que ha recibido toda autoridad y manda a sus discípulos que hagan discípulos
   en todas las naciones.
 razon: 'La tabla A7-H da el día y el lugar. La nota de Mt 28:16 dice que al parecer asistieron más de 500 discípulos
@@ -55,5 +55,9 @@ historial:
   cambio: 'orden 130 pasa a 132: Jn 21:14 hace de la aparición junto al mar la tercera al grupo, tras las dos de Jn 20, y
     jy la pone antes del mandato (cap. 136 y 137).'
   fuente: juan-21
+- fecha: '2026-09-29'
+  cambio: 'Hch 1:4-8 no pasa en Galilea: los v. 4 y 5 son una reunión en Jerusalén (jy, cap. 137) y los v. 6-8, la última
+    conversación en el monte de los Olivos (bt, cap. 2, párr. 8). Queda Hch 1:3.'
+  fuente: hechos-1
 consultado: '2026-09-29'
 estado: verificado

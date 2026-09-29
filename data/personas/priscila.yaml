@@ -19,5 +19,72 @@ enlaces:
 - titulo: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   tipo: biblia
-consultado: '2026-09-28'
+perspicacia: '1200003556'
+consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: italia
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  - it-italia
+  razon: 'Hch 18:2: llegó de Italia con su esposo tras el decreto de Claudio contra los judíos de Roma.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: corinto
+  fecha:
+    desde: 50
+    hasta: 52
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 50-52 e.c.
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  razon: 'Hch 18:2, 3: Pablo la encuentra en Corinto con Áquila y vive en su casa.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: efeso
+  fecha:
+    desde: 52
+    hasta: 55
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 52-55 e.c.
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  razon: 'Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.'
+  estado: verificado
+- tipo: acompana
+  persona: pablo
+  fecha:
+    desde: 50
+    hasta: 52
+    precision: rango
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 50-52 e.c.
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-aquila
+  razon: 'Hch 18:3, 18: trabaja con Pablo en Corinto y se embarca con él hacia Siria.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: roma
+  deducido: false
+  fuentes:
+  - hch-18
+  - it-claudio
+  razon: 'Hch 18:2: vivía en Roma con Áquila hasta que Claudio mandó salir a los judíos, en 49 o principios de 50.'
+  estado: verificado

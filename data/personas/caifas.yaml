@@ -20,6 +20,7 @@ relaciones:
   deducido: false
   fuentes:
   - juan-18
+  - hechos-4
   razon: Jn 18:13 dice que Anás era el suegro de Caifás.
   estado: verificado
 - tipo: vivio_en
@@ -42,6 +43,11 @@ fuentes:
 - juan-11
 - juan-18
 - marcos-14
+- hechos-4
+- hechos-5
+- bt-5
+- hechos-7
+- hch-9
 enlaces:
 - titulo: 'Perspicacia: «Caifás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000856

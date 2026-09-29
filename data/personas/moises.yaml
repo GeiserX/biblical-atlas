@@ -56,6 +56,7 @@ fuentes:
 - exodo-39
 - exodo-40
 - exodo-28
+- hechos-7
 - levitico-1
 - levitico-4
 - levitico-5
@@ -181,6 +182,7 @@ relaciones:
   - it-moises
   - si-3
   - exodo-2
+  - hechos-7
   razon: 'Perspicacia «Moisés», párr. 2: nació en Egipto en 1593 a.e.c.'
   estado: verificado
 - tipo: vivio_en
@@ -201,6 +203,7 @@ relaciones:
   - exodo-2
   - exodo-3
   - exodo-4
+  - hechos-7
   razon: 'El estudio 3: huye a Madián en 1553 y ve la zarza hacia 1514 a.e.c.; Perspicacia «Moisés», párr. 6: vivió allí cuarenta
     años.'
   estado: verificado
@@ -253,6 +256,7 @@ relaciones:
   - it-moises
   - exodo-6
   - exodo-7
+  - hechos-7
   razon: 'Éx 2:10, 11: se crió como hijo de la hija del faraón y vivió en Egipto hasta que huyó.'
   estado: verificado
 - tipo: pariente

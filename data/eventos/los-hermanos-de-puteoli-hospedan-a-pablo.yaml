@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-hermanos-de-puteoli-hospedan-a-pablo
+titulo: Siete días con los hermanos de Puteoli
+fecha:
+  desde: 59
+  hasta: 59
+  precision: estación
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: primavera de 59 e.c.
+  detalle:
+    estacion: primavera
+orden_relato:
+  serie: hechos
+  orden: 2811
+lugares:
+- puteoli
+- siracusa
+- regio
+- malta
+personas:
+- pablo
+- lucas
+- aristarco
+pasajes:
+- Hch 28:11-14
+resumen: Pasados tres meses en Malta, embarcan en otro barco alejandrino que había invernado allí. Paran tres días en Siracusa,
+  pasan por Regio y llegan a Puteoli, donde unos hermanos les piden que se queden una semana.
+razon: 'Hch 28:11-14. Perspicacia «Italia»: Pablo pisó Italia en Regio probablemente en la primavera de 59; «Testimonio completo»,
+  cap. 27, párr. 1-4, pone en el barco a Lucas y Aristarco.'
+fuentes:
+- hch-28
+- it-italia
+- it-puteoli
+- bt-27
+- nota-hechos-28
+enlaces:
+- titulo: Hechos 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/28
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

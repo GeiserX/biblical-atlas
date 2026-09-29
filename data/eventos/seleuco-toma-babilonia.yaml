@@ -15,11 +15,16 @@ personas: []
 pasajes: []
 resumen: Seleuco Nicátor conquista Babilonia y se lleva gran parte de sus materiales para construir Seleucia, su nueva capital
   junto al Tigris.
-razon: Perspicacia «Babilonia» (núm. 1) fecha la conquista en 312 a.e.c. Esta Seleucia del Tigris no es la Seleucia de Hechos
-  13:4, el puerto de Antioquía.
+razon: Perspicacia «Babilonia» (núm. 1) fecha la conquista en 312 a.e.c. Esta Seleucia del Tigris no es Seleucia, el puerto
+  de Antioquía de Siria.
 fuentes:
 - it-babilonia
 - it-seleucia
 buscar: Seleuco Nicátor Babilonia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La razón ya no cita el capítulo de Hechos donde sale el puerto: esa cita ponía este suceso en la página de ese
+    capítulo, al que no pertenece.'
+  fuente: it-seleucia
+consultado: '2026-09-29'
 estado: verificado
