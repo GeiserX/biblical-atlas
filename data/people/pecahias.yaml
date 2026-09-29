@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pecahias
+name: Pecahías
+names:
+- name: Pecahías
+date:
+  from: -779
+  to: -777
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 780-778 a.e.c.
+summary: Hijo de Menahem. Mantuvo el culto a los becerros; Pécah, su ayudante, tramó su muerte y lo asesinó en Samaria.
+reason: Perspicacia «Peqahías» (grafía antigua del nombre); 2Re 15:22-26.
+sources:
+- it-peqahias
+- 2-reyes-15
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Peqahías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003416
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+relations:
+- type: kin
+  person: menahem
+  word: father
+  inferred: false
+  sources:
+  - it-peqahias
+  - 2-reyes-15
+  reason: Hijo y sucesor de Menahem (2Re 15:22).
+  checked_on: '2026-09-28'
+  status: verified
+- type: succeeds
+  person: menahem
+  inferred: false
+  sources:
+  - it-peqahias
+  - 2-reyes-15
+  reason: Reinó al morir su padre (2Re 15:22).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+checked_on: '2026-09-28'
+status: verified

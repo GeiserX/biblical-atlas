@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: saul
+name: Reinado de Saúl sobre todo Israel
+type: king
+person: saul
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1117-c. 1078 a.e.c.
+places:
+- guibea-de-benjamin
+summary: Primer rey de Israel, con su centro en Guibeá. Reinó cuarenta años.
+reason: El estudio 3 pone su unción en 1117 y cierra 1 Samuel hacia 1078; murió con Jonatán en 1078 (Perspicacia «Jonatán»,
+  núm. 2; 1Sa 31:6). Hch 13:21 le da cuarenta años de reinado.
+sources:
+- si-3
+- 1-samuel-10
+- it-saul
+- it-jonatan
+- 1-samuel-31
+search: Saúl rey
+history:
+- date: '2026-09-29'
+  change: El reinado acababa en 1077, el año en que David empieza a reinar en Hebrón. Saúl murió antes, en la batalla en que
+    cayó Jonatán en 1078 (Perspicacia «Jonatán», núm. 2), como ya dice su ficha de persona.
+  source: it-jonatan
+- date: '2026-09-29'
+  change: La razón dice ahora de dónde sale el final del reinado, la muerte de Saúl en 1078.
+  source: it-jonatan
+checked_on: '2026-09-29'
+status: verified

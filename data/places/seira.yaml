@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: seira
+name: Seirá
+names:
+- name: Seirá
+type: region
+lat: 31.9878
+lon: 35.3332
+precision: uncertain
+coord_source: openbible:a1aff30
+coord_url: https://www.openbible.info/geo/ancient/a1aff30/seirah
+coord_note: 'Primera resolución de OpenBible: un punto genérico en los montes de Efraín, que es lo único que dice Perspicacia.
+  No marca el sitio.'
+summary: Lugar de la región montañosa de Efraín adonde huyó Ehúd después de matar a Eglón. Desde allí tocó el cuerno para
+  llamar a los israelitas. Hoy no se sabe dónde estaba.
+reason: 'Perspicacia «Seirá»; Jue 3:26, 27. OpenBible: solo el punto.'
+sources:
+- it-seira
+- openbible-geo
+- jueces-3
+links:
+- title: 'Perspicacia: «Seirá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003885
+  type: perspicacia
+- title: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

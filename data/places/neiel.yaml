@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: neiel
+name: Neiel
+names:
+- name: Neiel
+type: city
+lat: 32.8926
+lon: 35.2219
+precision: point
+coord_source: openbible:ab571de
+coord_url: https://www.openbible.info/geo/ancient/ab571de/neiel
+coord_note: Punto de OpenBible en Khirbet Yaʽnin (Horvat Yaʽanin).
+summary: Ciudad de Aser que se identifica con Khirbet Yaʽnin, unos 15 km al ESE de Akkó.
+reason: 'Perspicacia «Neiel»; Jos 19:27. OpenBible: solo el punto.'
+sources:
+- it-neiel
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Neiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003217
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

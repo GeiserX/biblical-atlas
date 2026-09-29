@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: satanas-vuelve-a-desafiar-la-integridad-de-job
+title: Satanás vuelve a desafiar la integridad de Job
+date:
+  from: -1612
+  to: -1612
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1613 a.e.c.
+narrative_order:
+  series: job
+  order: 2001
+places: []
+people:
+- satanas
+- job
+passages:
+- Job 2:1-6
+summary: En otra reunión ante Jehová, Satanás sostiene que el hombre lo entrega todo con tal de seguir vivo. Jehová le deja
+  golpear el cuerpo de Job, pero le prohíbe matarlo.
+reason: 'Job 2:1-6: la escena pasa ante Jehová, no en la tierra, así que no lleva lugar. El cuadro del estudio 3 pone la prueba
+  de Job antes de 1613 a.e.c.; Perspicacia «Job» (párr. 2), hacia 1613.'
+sources:
+- job-2
+- si-3
+- it-job
+- it-satanas
+links:
+- title: Job 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

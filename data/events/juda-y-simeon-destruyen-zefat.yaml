@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-y-simeon-destruyen-zefat
+title: Judá y Simeón destruyen Zefat, que pasa a llamarse Hormá
+date:
+  from: -1466
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y 1117 a.e.c. (tiempo narrativo: tras el reparto de la tierra y antes del primer rey)'
+narrative_order:
+  series: jueces
+  order: 1017
+places:
+- horma
+people: []
+present: []
+passages:
+- Jue 1:17
+summary: Judá y Simeón atacan a los cananeos de Zefat y entregan la ciudad a la destrucción. Por eso se llama Hormá, aunque
+  quizá el nombre solo confirmó uno que ya se usaba.
+reason: 'Perspicacia «Hormá»: Josué venció a su rey sin tomar la ciudad, y más tarde la destruyeron Judá y Simeón (Jue 1:17).
+  Límites: el reparto, en 1467 a.e.c., y 1117 a.e.c. (estudio 3).'
+sources:
+- jueces-1
+- it-horma
+- si-3
+links:
+- title: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

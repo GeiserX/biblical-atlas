@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: joaquin
+name: Reinado de Joaquín en Judá
+type: king
+person: joaquin
+date:
+  from: -617
+  to: -616
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 618-617 a.e.c.
+places:
+- jerusalen
+summary: Tres meses y diez días en Jerusalén.
+reason: Fechas de la tabla A6-B; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 24.
+sources:
+- tnm-a6-b
+- 2-reyes-24
+- it-joaquin
+search: Joaquín rey
+checked_on: '2026-09-28'
+status: verified

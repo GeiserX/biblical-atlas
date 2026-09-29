@@ -1,0 +1,13 @@
+# Nombres de lugares del carril «patriarcas» que busca scripts/videos/index.py en los subtítulos.
+# Mismo formato que nombres/pablo.yaml. Nombres según la Traducción del Nuevo Mundo en español.
+# «Nebo» suelto es también el dios de Babilonia (Is 46:1): solo la forma con «monte».
+
+beer-seba:
+  names: [Beer-seba, Beerseba]
+silo:
+  names: [Siló]
+monte-nebo:
+  names: [monte Nebo]
+madian:
+  names: [Madián]
+  demonyms: [madianitas]

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-bara
+name: Bet-Bará
+names:
+- name: Bet-Bará
+type: city
+lat: 32.1
+lon: 35.52
+precision: uncertain
+coord_source: openbible:a0d1977
+coord_url: https://www.openbible.info/geo/ancient/a0d1977/beth-barah
+coord_note: Punto de OpenBible en el uadi Farʽa, su primera identificación. Perspicacia lo cree entre ese uadi y el Jordán,
+  sin precisar.
+summary: Lugar al oeste del Jordán hasta el que los efraimitas, a petición de Gedeón, controlaron los pasos del río y sus
+  afluentes para cortar la huida de Madián.
+reason: 'Perspicacia «Bet-bará»; Jue 7:24. Como la batalla fue en la llanura de Jezreel, debió de estar al oeste del río; su
+  sitio exacto no se sabe. OpenBible: solo el punto.'
+sources:
+- it-bet-bara
+- openbible-geo
+- jueces-7
+links:
+- title: 'Perspicacia: «Bet-bará»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000676
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

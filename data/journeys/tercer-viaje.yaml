@@ -1,0 +1,451 @@
+# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tercer-viaje
+name: Tercer viaje misional
+person: pablo
+reference: Hch 18:23–21:17
+date:
+  from: 52
+  to: 56
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 52-56 e.c.
+companions:
+- timoteo
+- lucas
+- aristarco
+- gayo-de-macedonia
+- erasto-colaborador-de-pablo
+- sopater
+- segundo
+- tiquico
+- trofimo
+- gayo-de-derbe
+summary: Pablo vuelve a Galacia y Frigia, pasa unos tres años en Éfeso, recorre Macedonia y Grecia y regresa por
+  mar a Jerusalén para Pentecostés de 56.
+reason: El estudio 3 (párr. 26) da las fechas; Hechos 20:4, 5 nombra a Timoteo entre los acompañantes y el relato
+  vuelve a usar «nosotros», señal de que Lucas iba con él.
+sources:
+- si-3
+- it-pablo
+- it-lucas
+- hch-18
+- hch-19
+- hch-20
+- hch-21
+- it-aristarco
+- it-gayo
+- it-erasto
+- it-sopater
+- it-segundo
+- it-tiquico
+- it-trofimo
+- 2-corintios-2
+- it-troas
+history:
+- date: '2026-09-29'
+  change: 'Se añade Frigia (Hch 18:23). Las paradas que heredaban c. 52-56 se acotan con el estudio 3 y Perspicacia: 52 al
+    salir, 55 en Macedonia y la primavera de 56 de Troas a Cesarea.'
+  source: si-3
+- date: '2026-09-29'
+  change: 'Se añade la parada de Troas entre Éfeso y Macedonia: 2Co 2:12, 13 y Perspicacia «Troas», párr. 4. Las paradas 5
+    a 20 pasan a ser 6 a 21.'
+  source: 2-corintios-2
+checked_on: '2026-09-29'
+status: verified
+stops:
+- order: 1
+  place: antioquia-de-siria
+  reference: Hch 18:23
+  date:
+    from: 52
+    to: 52
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52 e.c.
+  note: null
+  reason: 'Hch 18:23: tras algún tiempo en Antioquía, sale de nuevo. Volvió allí en el verano de 52 y llegó a Éfeso hacia el
+    invierno de 52-53 (estudio 3, párr. 26).'
+  sources:
+  - hch-18
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 2
+  place: galacia
+  reference: Hch 18:23
+  date:
+    from: 52
+    to: 52
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52 e.c.
+  note: El texto nombra Galacia y Frigia como regiones.
+  reason: 'Hch 18:23: recorre la región de Galacia. Cae entre la salida de Antioquía, en 52, y la llegada a Éfeso hacia el
+    invierno de 52-53 (estudio 3, párr. 26).'
+  sources:
+  - hch-18
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 3
+  place: frigia
+  reference: Hch 18:23
+  date:
+    from: 52
+    to: 52
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 52 e.c.
+  note: El texto nombra Galacia y Frigia como regiones.
+  reason: 'Hch 18:23: recorre también Frigia. Cae entre la salida de Antioquía, en 52, y la llegada a Éfeso hacia el invierno
+    de 52-53 (estudio 3, párr. 26).'
+  sources:
+  - hch-18
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 4
+  place: efeso
+  reference: Hch 19:1–20:1
+  date:
+    from: 52
+    to: 55
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: invierno de 52-53 a 55 (unos tres años)
+  note: Escribe 1 Corintios; alboroto de Demetrio.
+  reason: 'Hch 19:1–20:1 nombra Éfeso en el recorrido. El estudio 3 da la fecha: invierno de 52-53 a 55 (unos tres años).'
+  sources:
+  - hch-19
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 5
+  place: troas
+  reference: 2Co 2:12, 13
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Predica; no encuentra a Tito.
+  reason: '2Co 2:12, 13: camino de Macedonia se detiene en Troas a predicar y, al no llegar Tito, sigue viaje. Perspicacia
+    «Troas», párr. 4, cuenta la parada; la salida de Éfeso es de 55 (estudio 3, párr. 26).'
+  sources:
+  - 2-corintios-2
+  - it-troas
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 6
+  place: macedonia
+  reference: Hch 20:1, 2
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Escribe 2 Corintios.
+  reason: Hch 20:1, 2. El estudio 3 (párr. 26) pone en 55 la salida de Éfeso; «Testimonio completo» (cap. 21) fecha en Macedonia
+    2 Corintios, hacia 55.
+  sources:
+  - hch-20
+  - si-3
+  - bt-21
+  checked_on: '2026-09-29'
+  status: verified
+- order: 7
+  place: corinto
+  reference: Hch 20:2, 3
+  date:
+    from: 55
+    to: 56
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: tres meses de invierno
+  note: El texto dice “Grecia”; el estudio 3 precisa Corinto. Allí escribe Romanos (Perspicacia, “Romanos”).
+  reason: Hechos 20:2, 3 dice «Grecia»; el estudio 3 (párr. 26) precisa que pasó tres meses de invierno en Corinto. Perspicacia
+    «Romanos» sitúa allí la carta.
+  sources:
+  - hch-20
+  - si-3
+  - it-romanos
+  checked_on: '2026-09-29'
+  status: verified
+- order: 8
+  place: filipos
+  reference: Hch 20:3-6
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: Pascua de 56
+  note: null
+  reason: 'Hch 20:3-6 nombra Filipos en el recorrido. El estudio 3 da la fecha: Pascua de 56.'
+  sources:
+  - hch-20
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 9
+  place: troas
+  reference: Hch 20:6-12
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: Eutico.
+  reason: Hch 20:6-12. Perspicacia «Troas» pone esta visita en la primavera de 56, entre la Pascua en Filipos y el Pentecostés
+    en Jerusalén (estudio 3, párr. 26).
+  sources:
+  - hch-20
+  - it-troas
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 10
+  place: ason
+  reference: Hch 20:13, 14
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: Pablo va a pie; los demás en barco.
+  reason: Hch 20:13, 14. Después de la Pascua de 56 y antes del Pentecostés (estudio 3, párr. 26); Perspicacia «Quíos» fecha
+    el viaje en primavera.
+  sources:
+  - hch-20
+  - si-3
+  - it-quios
+  checked_on: '2026-09-29'
+  status: verified
+- order: 11
+  place: mitilene
+  reference: Hch 20:14
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: Hch 20:14. Perspicacia «Mitilene» pone la escala hacia 56, y «Quíos», en la primavera de ese año.
+  sources:
+  - hch-20
+  - it-mitilene
+  - it-quios
+  checked_on: '2026-09-29'
+  status: verified
+- order: 12
+  place: quios
+  reference: Hch 20:15
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: Pasan frente a la isla.
+  reason: Hch 20:15. Perspicacia «Quíos» fecha el paso frente a la isla en la primavera de 56.
+  sources:
+  - hch-20
+  - it-quios
+  checked_on: '2026-09-29'
+  status: verified
+- order: 13
+  place: samos
+  reference: Hch 20:15
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: Hch 20:15. Un día después de pasar frente a Quíos, que Perspicacia fecha en la primavera de 56.
+  sources:
+  - hch-20
+  - it-quios
+  - it-samos
+  checked_on: '2026-09-29'
+  status: verified
+- order: 14
+  place: mileto
+  reference: Hch 20:15-38
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: Discurso a los ancianos de Éfeso.
+  reason: Hch 20:15-38. Perspicacia «Mileto» pone la visita probablemente en 56, y «Quíos», en primavera.
+  sources:
+  - hch-20
+  - it-mileto
+  - it-quios
+  checked_on: '2026-09-29'
+  status: verified
+- order: 15
+  place: cos
+  reference: Hch 21:1
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: 'Hch 21:1: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 16
+  place: rodas
+  reference: Hch 21:1
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: 'Hch 21:1: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 17
+  place: patara
+  reference: Hch 21:1, 2
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: 'Hch 21:1, 2: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 18
+  place: tiro
+  reference: Hch 21:3-6
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: 'Hch 21:3-6: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 19
+  place: tolemaida
+  reference: Hch 21:7
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: null
+  reason: 'Hch 21:7: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 20
+  place: cesarea
+  reference: Hch 21:8-14
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: primavera de 56
+  note: Casa de Felipe el evangelizador; Ágabo.
+  reason: 'Hch 21:8-14: el viaje va de la Pascua de 56 en Filipos al Pentecostés en Jerusalén (estudio 3, párr. 26).'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified
+- order: 21
+  place: jerusalen
+  reference: Hch 21:15-17
+  date:
+    from: 56
+    to: 56
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: Pentecostés de 56
+  note: Poco después lo arrestan en el templo.
+  reason: 'Hch 21:15-17 nombra Jerusalén en el recorrido. El estudio 3 da la fecha: Pentecostés de 56.'
+  sources:
+  - hch-21
+  - si-3
+  checked_on: '2026-09-29'
+  status: verified

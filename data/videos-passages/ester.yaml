@@ -1,0 +1,49 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: ester
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_170_VIDEO"
+    title: "Información sobre Ester"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_170_VIDEO"
+    published: "2016-02-11"
+chapters:
+  2:
+    - docid: "pub-jwb-081_6_VIDEO"
+      title: "David Splane: Disfruten de su lectura de la Biblia"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-081_6_VIDEO"
+      published: "2021-06-08"
+      matched_by: [subtitles]
+      citations: 4
+  4:
+    - docid: "pub-jwb-099_10_VIDEO"
+      title: "Gary Breaux: Preparemos nuestro corazón para orar (Esd. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-099_10_VIDEO"
+      published: "2023-07-14"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb_201804_13_VIDEO"
+      title: "Kenneth Cook: Cumpla sus promesas y reciba bendiciones (Sal. 15:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201804_13_VIDEO"
+      published: "2018-04-30"
+      matched_by: [subtitles]
+      citations: 1
+  5:
+    - docid: "pub-co-r22_126_VIDEO"
+      title: "Harold Corkern: Evitemos las cosas que destruyen la paz. Presumir de lo que no debemos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_126_VIDEO"
+      published: "2022-07-25"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_7_VIDEO"
+      title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_7_VIDEO"
+      published: "2022-07-25"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-095_11_VIDEO"
+      title: "Patrick LaFranca: Adquiramos sabiduría día tras día (Prov. 3:15)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-095_11_VIDEO"
+      published: "2023-04-21"
+      matched_by: [subtitles]
+      citations: 1

@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bela-hijo-de-beor
+name: Bela
+names:
+- name: Bela
+perspicacia: 1200000622#2
+disambiguation: Bela hijo de Beor, rey de Edom; no Bela hijo de Benjamín ni el antiguo nombre de Zóar.
+summary: Primer rey edomita cuyo nombre conocemos. Era hijo de Beor y gobernó desde Dinhabá, mucho antes de que hubiera reyes
+  en Israel.
+reason: Perspicacia «Bela», núm. 2; Gé 36:31, 32.
+sources:
+- it-bela
+- genesis-36
+links:
+- title: 'Perspicacia: «Bela»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000622
+  type: perspicacia
+- title: Génesis 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
+  type: bible
+relations:
+- type: kin
+  person: beor-padre-de-bela
+  word: father
+  inferred: false
+  sources:
+  - it-bela
+  - genesis-36
+  reason: 'Gé 36:32: Bela hijo de Beor.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: dinhaba
+  inferred: false
+  sources:
+  - it-dinhaba
+  - genesis-36
+  reason: 'Gé 36:32: su ciudad se llamaba Dinhabá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: edom
+  office: king
+  inferred: false
+  sources:
+  - genesis-36
+  reason: Gé 36:31, 32 lo pone el primero de los reyes que reinaron en Edom.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

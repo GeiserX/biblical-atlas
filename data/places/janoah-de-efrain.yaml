@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: janoah-de-efrain
+name: Janóah
+names:
+- name: Janóah
+type: city
+lat: 32.15798
+lon: 35.36133
+precision: point
+coord_source: openbible:a0bcd48
+coord_url: https://www.openbible.info/geo/ancient/a0bcd48/janoah-1
+coord_note: Punto de Khirbet Yanun, el sitio que da Perspicacia.
+summary: Localidad del límite este de Efraín, unos 20 km al sureste de Samaria. No es la Janóah del norte que tomó Tiglat-Piléser
+  III.
+reason: 'Perspicacia «Janóah», núm. 1; Jos 16:6, 7. OpenBible: solo el punto.'
+sources:
+- it-janoah
+- openbible-geo
+- josue-16
+links:
+- title: 'Perspicacia: «Janóah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002322
+  type: perspicacia
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

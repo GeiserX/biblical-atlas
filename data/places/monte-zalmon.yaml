@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-zalmon
+name: Monte Zalmón
+names:
+- name: Monte Zalmón
+type: mountain
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Laderas del Ebal o del Guerizim, o un cerro vecino
+  geometry:
+    type: zone
+    lat: 32.216722
+    lon: 35.273039
+    radius_km: 5
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-zalmon
+  - openbible-geo
+  reason: Perspicacia razona que, como junto a Siquem solo hay esos dos montes, fue una cumbre o ladera de alguno de ellos
+    o una colina menor próxima.
+  coord_source: calculation
+  note: 'Centro: punto medio de los de OpenBible para el Ebal (32,234 N; 35,2733 E) y el Guerizim (32,1994 N; 35,2728 E),
+    a unos 4 km. Radio nuestro.'
+summary: Monte cercano a Siquem donde Abimélec y sus hombres cortaron ramas para quemar el refugio en que se habían metido
+  los de la torre de Siquem.
+reason: Perspicacia «Zalmón», núm. 2; Jue 9:48, 49. No es el Zalmón de Basán (núm. 3), que ya tiene ficha.
+sources:
+- it-zalmon
+- openbible-geo
+- jueces-9
+links:
+- title: 'Perspicacia: «Zalmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004656
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

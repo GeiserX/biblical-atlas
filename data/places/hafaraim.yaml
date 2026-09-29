@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hafaraim
+name: Hafaraim
+names:
+- name: Hafaraim
+type: city
+lat: 32.60385
+lon: 35.44661
+precision: uncertain
+coord_source: openbible:a6309c7
+coord_url: https://www.openbible.info/geo/ancient/a6309c7/hapharaim
+coord_note: Punto de OpenBible en et-Taiyiba, donde la sitúan la mayoría.
+summary: Ciudad de la frontera de Isacar. La mayoría la sitúa en et-Taiyiba, a 12 km de Bet-Seán hacia el NO. Figura entre
+  las ciudades que dice haber conquistado Sisaq.
+reason: 'Perspicacia «Hafaraim»; Jos 19:19. OpenBible: solo el punto.'
+sources:
+- it-hafaraim
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Hafaraim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001867
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

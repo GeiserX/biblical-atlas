@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-eliud
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#8
+disambiguation: Eleazar hijo de Eliud; no el hijo de Aarón ni los otros Eleazar que numera Perspicacia.
+summary: Antepasado de José, el esposo de María. Mateo lo pone como hijo de Eliud y padre de Mattán.
+reason: Perspicacia «Eleazar», núm. 8; Mt 1:15.
+sources:
+- it-eleazar
+- mateo-1
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
+  type: perspicacia
+relations:
+- type: kin
+  person: eliud
+  word: father
+  inferred: false
+  sources:
+  - mateo-1
+  reason: Mt 1:15.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-abinadab

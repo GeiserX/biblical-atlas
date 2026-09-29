@@ -1,0 +1,268 @@
+# Nombres que busca scripts/videos/index.py en los subtítulos de los videos de jw.org.
+#
+# Una entrada por lugar, con el mismo id que usa data/places.
+# Formato (subconjunto mínimo de YAML que entiende el script, sin dependencias):
+#
+#   nombres:     formas del nombre del lugar. Se comparan sin tildes, respetando
+#                mayúsculas: "Malta" cuenta, "malta" (el cereal) no.
+#   gentilicios: formas derivadas (corintios, filipenses). Se comparan sin tildes
+#                ni mayúsculas, pero no cuentan si van seguidas de un número,
+#                porque "Filipenses 4:13" cita la carta, no habla de la ciudad.
+#   excluir:     frases que contienen el nombre pero hablan de otra cosa.
+#   acentos:     "estricto" compara con tildes. Sirve para Atalia (el puerto de
+#                Hch 14:25) frente a Atalía (la reina de 2 Reyes 11), y para Tiro
+#                frente al verbo "tiró".
+#   ambiguo:     palabra compartida por varios lugares ("Antioquía"). Cada aparición
+#                suelta se asigna al lugar cuyas palabras de "contexto" salen más
+#                cerca (250 caracteres a cada lado); si empatan, gana "por_defecto".
+#
+# Nombres según la Traducción del Nuevo Mundo en español (wol.jw.org, Hechos 13 a 28),
+# consultada el 27 de septiembre de 2026.
+
+antioquia-de-siria:
+  names: [Antioquía de Siria]
+  ambiguous: Antioquía
+  context: [Siria, Seleucia, cristianos, Bernabé y Saulo, Agabo]
+  default: sí
+
+antioquia-de-pisidia:
+  names: [Antioquía de Pisidia]
+  ambiguous: Antioquía
+  context: [Pisidia, Iconio, Listra, Derbe, Perga, Panfilia]
+
+filipos:
+  names: [Filipos]
+  demonyms: [filipenses]
+
+corinto:
+  names: [Corinto]
+  demonyms: [corintios]
+
+efeso:
+  names: [Éfeso]
+  demonyms: [efesios]
+
+tesalonica:
+  names: [Tesalónica]
+  demonyms: [tesalonicenses]
+
+# "romanos" no cuenta: fuera de las citas de la carta casi siempre habla del
+# imperio o de sus soldados, no de la ciudad.
+roma:
+  names: [Roma]
+
+atenas:
+  names: [Atenas]
+  demonyms: [atenienses]
+
+berea:
+  names: [Berea]
+  demonyms: [bereanos]
+
+listra:
+  names: [Listra]
+
+derbe:
+  names: [Derbe]
+
+iconio:
+  names: [Iconio]
+
+
+pafos:
+  names: [Pafos]
+
+salamina:
+  names: [Salamina]
+
+perga:
+  names: [Perga]
+
+atalia:
+  names: [Atalia]
+  accents: strict
+
+troas:
+  names: [Troas]
+
+neapolis:
+  names: [Neápolis]
+
+anfipolis:
+  names: [Anfípolis]
+
+apolonia:
+  names: [Apolonia]
+
+cencreas:
+  names: [Cencreas]
+
+mileto:
+  names: [Mileto]
+
+# "tiro" en minúscula (disparo, lanzamiento) no cuenta porque los nombres
+# respetan mayúsculas. Con acentos estrictos tampoco cuenta "Tiró" a principio
+# de frase. Sigue colándose el verbo "Tiro" (yo tiro) al empezar una frase.
+tiro:
+  names: [Tiro]
+  accents: strict
+
+cesarea:
+  names: [Cesarea]
+  exclude: [Cesarea de Filipo]
+
+jerusalen:
+  names: [Jerusalén]
+  exclude: [Nueva Jerusalén]
+
+malta:
+  names: [Malta]
+
+siracusa:
+  names: [Siracusa]
+
+regio:
+  names: [Regio]
+
+puteoli:
+  names: [Puteoli]
+
+
+damasco:
+  names: [Damasco]
+
+seleucia:
+  names: [Seleucia]
+
+colosas:
+  names: [Colosas]
+  demonyms: [colosenses]
+
+creta:
+  names: [Creta]
+  demonyms: [cretenses]
+
+
+
+galacia:
+  names: [Galacia]
+  demonyms: [gálatas]
+
+macedonia:
+  names: [Macedonia]
+  demonyms: [macedonios]
+  exclude: [Macedonia del Norte]
+
+acaya:
+  names: [Acaya]
+
+# Añadidos el 27 de septiembre de 2026: el resto de lugares de data/places.
+antipatris:
+  names: [Antípatris]
+
+ason:
+  names: [Asón]
+
+bellos-puertos:
+  names: [Bellos Puertos]
+
+cauda:
+  names: [Cauda]
+
+cilicia:
+  names: [Cilicia]
+
+cnido:
+  names: [Cnido]
+
+cos:
+  names: [Cos]
+
+frigia:
+  names: [Frigia]
+  demonyms: [frigios]
+
+judea:
+  names: [Judea]
+
+# "Mira" suelto es casi siempre el verbo ("Mira, ..."): solo cuenta junto a Licia,
+# como en Hechos 27:5 ("Mira, en Licia"; la coma entre palabras no impide la coincidencia).
+mira:
+  names: [Mira en Licia, Mira de Licia]
+
+misia:
+  names: [Misia]
+
+mitilene:
+  names: [Mitilene]
+
+patara:
+  names: [Pátara]
+
+plaza-del-mercado-de-apio:
+  names: [Plaza del Mercado de Apio]
+
+quios:
+  names: [Quíos]
+
+rodas:
+  names: [Rodas]
+
+salmone:
+  names: [Salmone]
+
+samos:
+  names: [Samos]
+
+samotracia:
+  names: [Samotracia]
+
+sidon:
+  names: [Sidón]
+
+tolemaida:
+  names: [Tolemaida]
+
+tres-tabernas:
+  names: [Tres Tabernas]
+
+# Añadidos el 28 de septiembre de 2026 por el carril hechos-pablo (las dos fichas mínimas y los lugares nuevos).
+# «Asia» suelto casi siempre es el continente: solo cuentan las formas de la provincia.
+asia:
+  names: [distrito de Asia, provincia de Asia, provincia romana de Asia]
+
+bitinia:
+  names: [Bitinia]
+
+tarso:
+  names: [Tarso]
+
+arabia:
+  names: [Arabia]
+  exclude: [Arabia Saudí, Arabia Saudita, península arábiga]
+
+chipre:
+  names: [Chipre]
+  demonyms: [chipriota, chipriotas]
+
+panfilia:
+  names: [Panfilia]
+
+licaonia:
+  names: [Licaonia]
+  demonyms: [licaonio]
+
+licia:
+  names: [Licia]
+
+nicopolis:
+  names: [Nicópolis]
+
+hierapolis:
+  names: [Hierápolis]
+
+adramitio:
+  names: [Adramitio]
+
+ilirico:
+  names: [Ilírico, Dalmacia]

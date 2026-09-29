@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joel-anuncia-el-dia-de-jehova
+title: Joel anuncia el día de Jehová
+date:
+  from: -819
+  to: -819
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 820 a.e.c. (?)
+narrative_order:
+  series: joel
+  order: 1001
+places:
+- juda
+- jerusalen
+people:
+- joel-profeta
+present: []
+passages:
+- Joe 1:1-3:21
+summary: 'Joel anuncia el día de Jehová: un ejército como de langostas asolará Judá. Llama a volver a Dios con ayuno y promete
+  lluvia, su espíritu y el juicio de las naciones en el valle de Jehosafat.'
+reason: El estudio 3 y la tabla de libros lo ponen hacia 820 a.e.c., con duda; Perspicacia «Joel, Libro de» lo sitúa tras la
+  victoria de Jehosafat. El texto no dice dónde habló; jw.org deduce Judá.
+sources:
+- joel-1
+- joel-2
+- joel-3
+- si-3
+- tnm-tabla
+- si-joel
+- it-joel-libro
+- it-joel
+- w20-ataque-del-norte
+- w07-joel-y-amos
+- it-jehosafat-llanura
+- rr-rios-de-bendiciones
+links:
+- title: Joel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/1
+  type: bible
+- title: Joel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/2
+  type: bible
+- title: Joel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/29/3
+  type: bible
+- title: 'Perspicacia: «Joel, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002482
+  type: perspicacia
+- title: 'Perspicacia: «Jehosafat, Llanura baja de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002384
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

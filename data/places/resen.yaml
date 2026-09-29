@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: resen
+name: Resen
+names:
+- name: Resen
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Nínive y Cálah
+  geometry:
+    type: strip
+    lat: 36.3594
+    lon: 43.1528
+    to:
+      lat: 36.098056
+      lon: 43.328889
+  checked_on: '2026-09-29'
+  status: certain
+  sources:
+  - genesis-10
+  - it-resen
+  - openbible-geo
+  reason: Gé 10:12 la sitúa entre Nínive y Cálah; Perspicacia dice que es lo único que se sabe.
+  note: Franja entre los puntos de OpenBible de Nínive (a70fd5d) y de Cálah (ae1f807).
+  coord_source: calculation
+summary: Ciudad de Asiria que construyó Nemrod entre Nínive y Cálah. No se sabe nada más de su emplazamiento.
+reason: Perspicacia «Resen»; Gé 10:12.
+sources:
+- it-resen
+- genesis-10
+- openbible-geo
+links:
+- title: 'Perspicacia: «Resen»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003703
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: conversion-de-pablo
+title: 'Conversión de Pablo: Jesús se le aparece camino de Damasco'
+date:
+  from: 34
+  to: 34
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 34 e.c.
+narrative_order:
+  series: hechos
+  order: 903
+places:
+- damasco
+people:
+- pablo
+- jesus
+present: []
+passages:
+- Hch 9:3-9
+- Hch 22:6-11
+- Hch 26:12-18
+- 1Co 15:8
+- Gál 1:15, 16
+- 1Co 9:1
+summary: Saulo va a Damasco a detener discípulos. Cerca de la ciudad lo envuelve una luz del cielo y Jesús le habla. Ciego,
+  lo llevan de la mano a Damasco, donde pasa tres días sin comer ni beber.
+reason: 'Estudio 3, párr. 22: los «tres años» de Gál 1:18 van de 34 a 36, así que la conversión cae en 34. Perspicacia «Pablo»,
+  párr. 5. Pasa en el camino, sin sitio nombrado, y no sitúa a nadie.'
+sources:
+- si-3
+- it-pablo
+- hch-9
+- it-ananias
+- hch-22
+- hch-26
+- 1-corintios-15
+- bt-25
+- nota-hechos-26
+- 1-corintios-9
+search: conversión de Pablo
+history:
+- date: '2026-09-29'
+  change: 'Se ciñe al camino (Hch 9:3-9; 22:6-11): lo de Ananías, tres días después en la calle Recta, es un suceso propio,
+    y Gál 1:18 es la visita a Cefas.'
+  source: hch-9
+- date: '2026-09-29'
+  change: Ananías pasa al suceso de la calle Recta.
+  source: hch-9
+- date: '2026-09-29'
+  change: 'La aparición pasa en el camino, en un sitio que el texto no nombra: el suceso no sitúa a nadie en Damasco.'
+  source: hch-9
+- date: '2026-09-29'
+  change: El resumen contaba también la escena de Ananías, que pasa a su propio suceso.
+  source: hch-9
+- date: '2026-09-29'
+  change: La razón explica ahora por qué el suceso no sitúa a nadie.
+  source: hch-9
+checked_on: '2026-09-29'
+status: verified

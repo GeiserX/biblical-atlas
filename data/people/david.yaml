@@ -1,0 +1,258 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: david
+name: David
+names:
+- name: David
+date:
+  from: -1076
+  to: -1037
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1077-1038 a.e.c.
+summary: Hijo menor de Jesé, de Belén. Pastor ungido por Samuel, reinó siete años y medio en Hebrón y luego en Jerusalén,
+  que tomó a los jebuseos. Jehová pactó con él un reino duradero.
+reason: Perspicacia «David», párr. 3, 4, 20 y 21; 2Sa 5:4-10. La lámina B7 da el reinado de 1077 a 1038 y el pacto hacia 1070.
+sources:
+- it-david
+- 2-samuel-5
+- 1-reyes-2
+- tnm-b7
+- mateo-1
+- salmos-3
+- salmos-7
+- salmos-34
+- salmos-51
+- salmos-52
+- salmos-54
+- salmos-56
+- salmos-57
+- salmos-59
+- salmos-60
+- salmos-63
+- salmos-72
+- salmos-78
+- salmos-89
+- salmos-132
+- salmos-142
+- lucas-3
+- hch-2
+- hechos-7
+- 1-samuel-16
+- 1-samuel-17
+- 1-samuel-18
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-21
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-24
+- 1-samuel-25
+- 1-samuel-26
+- 1-samuel-27
+- 1-samuel-28
+- 1-samuel-29
+- 1-samuel-30
+links:
+- title: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+relations:
+- type: born_in
+  place: belen
+  inferred: false
+  sources:
+  - it-david
+  - juan-7
+  reason: 'Perspicacia «David», párr. 4: Belén era su pueblo natal.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: saul
+  inferred: false
+  sources:
+  - it-david
+  - 2-samuel-2
+  - 2-samuel-5
+  reason: En 1077 los de Judá lo ungieron rey en Hebrón tras la muerte de Saúl (2Sa 2:4).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - it-david
+  - 2-samuel-5
+  reason: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jese
+  word: father
+  inferred: false
+  sources:
+  - rut-4
+  - mateo-1
+  - salmos-72
+  - lucas-3
+  - hch-13
+  - 1-samuel-16
+  - 1-samuel-17
+  - 1-samuel-20
+  - 1-samuel-22
+  - 1-samuel-25
+  reason: Rut 4:17 y 22.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: bat-seba
+  word: wife
+  inferred: true
+  sources:
+  - mateo-1
+  - it-bat-seba
+  reason: 'Mt 1:6: tuvo a Salomón con ella. Perspicacia «Bat-seba» cuenta que se casó con David tras la muerte de Urías.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - hch-2
+  - it-david
+  reason: 'Hch 2:29: murió, fue enterrado y su tumba seguía entre los que oían a Pedro en Jerusalén. Perspicacia «David» lo
+    da sepultado en la Ciudad de David (1Re 2:10).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: saul
+  caption: escudero y jefe de la guardia de
+  inferred: false
+  sources:
+  - 1-samuel-16
+  - 1-samuel-22
+  - it-david
+  - 1-samuel-17
+  reason: '1Sa 16:21-23: entra al servicio de Saúl, que lo hace su escudero y le oye tocar el arpa; en 1Sa 22:14 Ahimélec lo
+    llama jefe de la guardia del rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - 1-samuel-17
+  - 1-samuel-20
+  - it-david
+  reason: '1Sa 17:15: iba y venía a Belén para cuidar las ovejas de su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: mical
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - 1-samuel-19
+  - it-mical
+  - 1-samuel-25
+  reason: '1Sa 18:27: Saúl le da a su hija Mical por esposa; 19:11 la llama esposa de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: saul
+  word: father_in_law
+  inferred: false
+  sources:
+  - 1-samuel-18
+  - it-mical
+  - 1-samuel-22
+  - 1-samuel-25
+  reason: '1Sa 18:18-27: se convierte en yerno del rey al casarse con Mical.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: queila
+  inferred: false
+  sources:
+  - 1-samuel-23
+  - it-saul
+  - it-david
+  reason: '1Sa 23:5, 7, 13: tras salvar Queilá se queda en la ciudad hasta que huye de Saúl; Perspicacia «Saúl» y «David» dicen
+    que vivía allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abigail-esposa-de-david
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-abigail
+  - 1-samuel-27
+  - 1-samuel-30
+  reason: '1Sa 25:39-42: la pide por esposa y ella se convierte en su esposa.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahinoam-esposa-de-david
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-ahinoam
+  - 1-samuel-27
+  - 1-samuel-30
+  reason: '1Sa 25:43: también se había casado con Ahinoam, de Jezreel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: gat
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-akis
+  reason: '1Sa 27:3: se instala en Gat con Akís, con sus hombres y sus familias.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ziclag
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-ziqlag
+  - 1-samuel-30
+  reason: '1Sa 27:6, 7: Akís le da Ziclag y vive en el campo filisteo un año y cuatro meses.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: akis
+  caption: siervo de
+  inferred: false
+  sources:
+  - 1-samuel-27
+  - it-akis
+  - 1-samuel-28
+  - 1-samuel-29
+  reason: '1Sa 27:5, 12: David se llama siervo de Akís, y el rey cree que lo será siempre. Perspicacia «Akís», párr. 2.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: ahitofel
+  word: adviser
+  inferred: false
+  sources:
+  - it-ahitofel
+  - 2-samuel-15
+  - 2-samuel-16
+  reason: 2Sa 15:12 llama a Ahitofel consejero de David, y 16:23 dice que su consejo se tenía como si viniera de Dios.
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200001130'
+checked_on: '2026-09-29'
+status: verified

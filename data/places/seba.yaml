@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: seba
+name: Sebá
+names:
+- name: Sebá
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Junto a la Etiopía antigua o dentro de ella, quizá en torno a Meroe
+  geometry:
+    type: zone
+    lat: 16.935139
+    lon: 33.75075
+    radius_km: 300
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-seba-cus
+  - it-cus
+  reason: Perspicacia deduce de Isaías que Sebá lindaba con Etiopía o estaba dentro de su territorio; Josefo, citado allí,
+    la pone en Meroe, junto al Nilo.
+  note: 'Centro: punto que OpenBible da a Cus, la Etiopía antigua, al lado de Meroe. Radio nuestro.'
+  coord_source: openbible:ac5a1ec
+  coord_url: https://www.openbible.info/geo/ancient/ac5a1ec/cush-1
+summary: Tierra del este de África cuyos habitantes se llamaban sabeos. Sl 72:10 la pone entre los lugares lejanos cuyos reyes
+  traerán regalos. No es Saba, el reino de Arabia.
+reason: 'Perspicacia «Sebá», núm. 2; Sl 72:10. OpenBible no tiene ficha de Sebá: la zona se centra en su punto de Cus.'
+sources:
+- it-seba-cus
+- it-cus
+- salmos-72
+- openbible-geo
+links:
+- title: 'Perspicacia: «Sebá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003871
+  type: perspicacia
+- title: Salmo 72 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72
+  type: bible
+checked_on: '2026-09-29'
+status: verified

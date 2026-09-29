@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-horon-alta
+name: Bet-Horón Alta
+names:
+- name: Bet-Horón Alta
+- name: Bet-Horón
+  note: Nombre que Jos 10:10, 11 y 21:22 dan a la pareja de ciudades; Perspicacia cree que la ciudad levita quizá fue solo
+    una de las dos.
+type: city
+lat: 31.885833
+lon: 35.114167
+precision: point
+coord_source: openbible:ab682e6
+coord_url: https://www.openbible.info/geo/ancient/ab682e6/upper-beth-horon
+coord_note: Beit ʽUr el-Fauqa, el pueblo que Perspicacia da como sitio de la ciudad alta.
+summary: La más alta de las dos Bet-Horón, en la cumbre de una colina sobre el camino de la costa a Gabaón. Marcaba la frontera
+  de Efraín, y por su subida huyeron los amorreos ante Josué.
+reason: 'Perspicacia «Bet-horón», párr. 1 a 3; Jos 10:10, 11; 16:5. Unos 16 km al NO de Jerusalén. OpenBible: solo el punto.'
+sources:
+- it-bet-horon
+- openbible-geo
+- josue-10
+- josue-16
+links:
+- title: 'Perspicacia: «Bet-horón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000691
+  type: perspicacia
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+- title: Josué 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

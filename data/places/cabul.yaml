@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cabul
+name: Cabul
+names:
+- name: Cabul
+type: city
+lat: 32.868333
+lon: 35.211389
+precision: point
+coord_source: openbible:a978a24
+coord_url: https://www.openbible.info/geo/ancient/a978a24/cabul-1
+coord_note: Punto de OpenBible en Kabul.
+summary: Ciudad de Aser, hoy Kabul, unos 13 km al ESE de Akkó. No es la «tierra de Cabul», las veinte ciudades que Salomón
+  dio a Hiram.
+reason: 'Perspicacia «Cabul», núm. 1 y 2; Jos 19:27; 1Re 9:13. OpenBible: solo el punto.'
+sources:
+- it-cabul
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Cabul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000851
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

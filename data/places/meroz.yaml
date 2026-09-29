@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: meroz
+name: Meroz
+names:
+- name: Meroz
+type: city
+lat: 33.032197
+lon: 35.529871
+precision: uncertain
+coord_source: openbible:a8bc4e3
+coord_url: https://www.openbible.info/geo/ancient/a8bc4e3/meroz
+coord_note: Primera identificación de OpenBible, Khirbet Marus, que es también el sitio que Perspicacia propone con reservas,
+  unos 8 km al sur de Quedes de Neftalí.
+summary: Lugar de ubicación desconocida cuyos habitantes maldijo el ángel de Jehová por no acudir en su ayuda cuando Barac
+  luchó contra Sísara.
+reason: 'Perspicacia «Meroz»; Jue 5:23. OpenBible: solo el punto.'
+sources:
+- it-meroz
+- openbible-geo
+- jueces-5
+links:
+- title: 'Perspicacia: «Meroz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003005
+  type: perspicacia
+- title: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

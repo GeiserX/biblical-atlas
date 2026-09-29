@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balaam-bendice-a-israel-desde-peor
+title: Balaam bendice a Israel desde la cima de Peor
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 23027
+places:
+- peor
+people:
+- balaam
+- balac
+present:
+- balaam
+- balac
+passages:
+- Nú 23:27-24:9
+- Dt 23:5
+summary: 'En la cima de Peor se repiten los siete altares. Balaam ya no busca agüeros: ve a Israel acampado por tribus y,
+  movido por el espíritu de Dios, alaba sus tiendas y anuncia un rey superior a Agag.'
+reason: 'Nú 23:27-24:9; Perspicacia «Balaam», párr. 5, y «Peor». Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+sources:
+- numeros-23
+- numeros-24
+- it-balaam
+- it-peor
+- it-agag
+links:
+- title: Números 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/23
+  type: bible
+- title: Números 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/24
+  type: bible
+checked_on: '2026-09-29'
+status: verified

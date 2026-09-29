@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: afeca
+name: Afecá
+names:
+- name: Afecá
+- name: Afeqá
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.4555
+lon: 34.9975
+precision: uncertain
+coord_source: openbible:ae46bcd
+coord_url: https://www.openbible.info/geo/ancient/ae46bcd/aphekah
+coord_note: Khirbet al-Hadab, primera identificación de OpenBible, que algunos proponen según Perspicacia.
+summary: Ciudad del sur de la montaña de Judá, cerca de Hebrón. Algunos la ponen en Khirbet el-Hadab, unos 6 km al suroeste
+  de Hebrón, junto a dos manantiales y con restos de época israelita.
+reason: 'Perspicacia «Afeqá»; Jos 15:53. OpenBible: solo el punto.'
+sources:
+- it-afeqa
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Afeqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000301
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

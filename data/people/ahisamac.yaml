@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahisamac
+name: Ahisamac
+names:
+- name: Ahisamac
+perspicacia: '1200000166'
+summary: Hombre de la tribu de Dan, padre de Oholiab, el artesano que ayudó a Bezalel en la obra del tabernáculo.
+reason: Perspicacia «Ahisamac»; Éx 31:6.
+sources:
+- it-ahisamac
+- exodo-31
+- exodo-35
+- exodo-38
+links:
+- title: 'Perspicacia: «Ahisamac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000166
+  type: perspicacia
+- title: Éxodo 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/35
+  type: bible
+relations:
+- type: kin
+  person: dan-hijo-de-jacob
+  word: ancestor
+  inferred: true
+  sources:
+  - exodo-31
+  - it-ahisamac
+  - exodo-35
+  - exodo-38
+  reason: Perspicacia lo pone en la tribu de Dan, como a su hijo (Éx 31:6).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

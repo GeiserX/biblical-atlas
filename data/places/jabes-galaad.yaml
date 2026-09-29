@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jabes-galaad
+name: Jabés-Galaad
+names:
+- name: Jabés-Galaad
+- name: Jabés
+  note: Forma breve que usan 1Sa 11:1 y otros pasajes (Perspicacia «Jabés», núm. 1).
+type: city
+lat: 32.40237
+lon: 35.6823
+precision: uncertain
+coord_source: openbible:af92088
+coord_url: https://www.openbible.info/geo/ancient/af92088/jabesh-gilead
+coord_note: 'Punto de Tell el-Maqlub, primera identificación de OpenBible. Perspicacia no da sitio: solo dice que casi todos
+  la ponen junto al Wadi Yabis.'
+summary: Ciudad de Gad al este del Jordán. Castigada por no ir contra Benjamín, dio 400 vírgenes a los benjaminitas. Saúl
+  la libró de Nahás, y sus guerreros rescataron y enterraron luego el cadáver del rey.
+reason: 'Perspicacia «Jabés-galaad», párr. 1 y 2; Jue 21:8-14. OpenBible: solo el punto.'
+sources:
+- it-jabes-galaad
+- it-jabes
+- openbible-geo
+- jueces-21
+- 1-samuel-11
+- 1-samuel-31
+links:
+- title: 'Perspicacia: «Jabés-galaad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002270
+  type: perspicacia
+- title: Jueces 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
+  type: bible
+history:
+- date: '2026-09-29'
+  change: El resumen añade el asedio de Nahás y la victoria de Saúl (1Sa 11:1-11; Perspicacia «Jabés-galaad», párr. 3).
+  source: 1-samuel-11
+- date: '2026-09-29'
+  change: 'Se añade lo que cuenta 1Sa 31:11-13: sus guerreros quitaron de la muralla de Bet-San los cuerpos de Saúl y sus
+    hijos y los enterraron en Jabés.'
+  source: 1-samuel-31
+checked_on: '2026-09-29'
+status: verified

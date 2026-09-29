@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jatir
+name: Jatir
+names:
+- name: Jatir
+type: city
+lat: 31.3525
+lon: 35.016111
+precision: point
+coord_source: openbible:ad6eb0b
+coord_url: https://www.openbible.info/geo/ancient/ad6eb0b/jattir
+summary: Ciudad de sacerdotes en la montaña de Judá, en Khirbet ʽAttir, unos 21 km al sursuroeste de Hebrón. David le envió
+  parte del botín que quitó a los amalequitas.
+reason: 'Perspicacia «Jatir»; Jos 15:48; 21:14; 1Sa 30:27. OpenBible: solo el punto.'
+sources:
+- it-jatir
+- openbible-geo
+- josue-15
+- josue-21
+- 1-samuel-30
+links:
+- title: 'Perspicacia: «Jatir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002343
+  type: perspicacia
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+coord_note: Khirbet ʽAttir (Horvat Yattir), al SSO de Hebrón, con que suele identificarse.

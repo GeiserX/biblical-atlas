@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: aznot-tabor
+name: Aznot-Tabor
+names:
+- name: Aznot-Tabor
+type: city
+lat: 32.727222
+lon: 35.384444
+precision: uncertain
+coord_source: openbible:a9fd165
+coord_url: https://www.openbible.info/geo/ancient/a9fd165/aznoth-tabor
+coord_note: Punto de OpenBible en Khirbet Umm Jebeil (Tel Govel).
+summary: Lugar del límite sur de Neftalí. Hay quien lo sitúa en Tel Govel, unos 4,5 km al norte de la cima del monte Tabor.
+reason: 'Perspicacia «Aznot-tabor»; Jos 19:34. OpenBible: solo el punto.'
+sources:
+- it-aznot-tabor
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Aznot-tabor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000498
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

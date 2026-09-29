@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: decreto-de-ciro
+title: Decreto de Ciro para el regreso
+date:
+  from: -537
+  to: -536
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: finales de 538 o principios de 537 a.e.c.
+places: []
+people:
+- ciro
+passages:
+- Esd 1:1-4
+- 2Cr 36:22, 23
+- Is 44:28
+summary: En su primer año como rey de Babilonia, Ciro autorizó a los judíos a volver y reconstruir el templo, les devolvió
+  los utensilios sagrados y costeó la obra. La Biblia no dice dónde lo proclamó.
+reason: 'Perspicacia «Ciro», apartado sobre el decreto; estudio 3 (párr. 5): antes de la primavera de 537. Sin lugar: el
+  texto no lo da.'
+sources:
+- it-ciro
+- si-3
+- esdras-1
+links:
+- title: 'Perspicacia: «Ciro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
+  type: perspicacia
+- title: Esdras 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1
+  type: bible
+checked_on: '2026-09-28'
+status: verified

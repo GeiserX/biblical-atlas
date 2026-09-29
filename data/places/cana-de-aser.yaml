@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cana-de-aser
+name: Caná
+names:
+- name: Caná
+  note: Caná de Aser.
+- name: Qaná
+  note: Grafía de la nota de Jos 19:28 y de Perspicacia.
+type: city
+lat: 33.209167
+lon: 35.299167
+precision: point
+coord_source: openbible:ac3233c
+coord_url: https://www.openbible.info/geo/ancient/ac3233c/kanah-2
+coord_note: Punto de OpenBible en Qana.
+summary: Ciudad de la frontera de Aser que se suele identificar con Qana, unos 12 km al ESE de Tiro. No es la Caná de Galilea.
+reason: 'Perspicacia «Qaná», núm. 2; Jos 19:28. OpenBible: solo el punto.'
+sources:
+- it-qana
+- openbible-geo
+- josue-19
+links:
+- title: 'Perspicacia: «Qaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002571
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

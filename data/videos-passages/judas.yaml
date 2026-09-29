@@ -1,0 +1,83 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: judas
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_650_VIDEO"
+    title: "Información sobre Judas"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_650_VIDEO"
+    published: "2019-10-29"
+chapters:
+  1:
+    - docid: "pub-jwbmw_201607_2_VIDEO"
+      title: "Kenneth Flodin: Cuidémonos de los engaños (Jud. 9)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201607_2_VIDEO"
+      published: "2016-07-25"
+      matched_by: [title, subtitles]
+      citations: 1
+    - docid: "pub-co-r21_137_VIDEO"
+      title: "David Splane: “Luchen con todas sus fuerzas por la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_137_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-co-r21_8_VIDEO"
+      title: "Sábado tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_8_VIDEO"
+      published: "2021-07-26"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwbgg_201609_3_VIDEO"
+      title: "Graduación de la clase 141 de la Escuela de Galaad: Parte 3. Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_3_VIDEO"
+      published: "2017-03-02"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "1112024023"
+      title: "2024 | Informe 8 del Cuerpo Gobernante"
+      url: "https://www.jw.org/finder?wtlocale=S&docid=1112024023"
+      published: "2024-12-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_115_VIDEO"
+      title: "William Turner: Sigamos el ejemplo de los que tuvieron fe. Imitemos a Abel, no a Caín"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_115_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_126_VIDEO"
+      title: "William Malenfant: Luchan con éxito por la fe. Los que están casados con no creyentes"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_126_VIDEO"
+      published: "2021-09-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_4_VIDEO"
+      title: "Viernes tarde (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_4_VIDEO"
+      published: "2021-07-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_5_VIDEO"
+      title: "Sábado mañana (parte 1) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_5_VIDEO"
+      published: "2021-07-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r21_6_VIDEO"
+      title: "Sábado mañana (parte 2) | Asamblea regional del 2021 “Poderosos gracias a la fe”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r21_6_VIDEO"
+      published: "2021-07-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_1_VIDEO"
+      title: "JW Broadcasting: Diciembre de 2024 (reunión anual del 2024, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_1_VIDEO"
+      published: "2024-12-02"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-120_7_VIDEO"
+      title: "Gerrit Lösch: Tenemos el honor de dar gloria a Jehová"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-120_7_VIDEO"
+      published: "2024-12-03"
+      matched_by: [subtitles]
+      citations: 1

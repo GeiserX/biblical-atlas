@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: discurso-en-antioquia-de-pisidia
+title: Pablo habla en la sinagoga de Antioquía de Pisidia
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1314
+places:
+- antioquia-de-pisidia
+people:
+- pablo
+- bernabe
+type: speech
+roles:
+  pablo: spoke
+passages:
+- Hch 13:14-43
+summary: Un sábado, tras la lectura de la Ley y los Profetas, Pablo repasa la historia de Israel hasta Jesús, muerto y resucitado.
+  Al salir, les piden que vuelvan a hablar y muchos judíos y prosélitos los siguen.
+reason: Hch 13:14-43 y sus notas de estudio (13:15, 13:20, 13:43); Perspicacia «Pablo» (párr. 12).
+sources:
+- hch-13
+- nota-hechos-13
+- it-pablo
+search: Antioquía de Pisidia sinagoga Pablo
+history:
+- date: '2026-09-29'
+  change: El suceso acaba en 13:43; lo del sábado siguiente (13:44-52) pasa a su propio suceso, expulsados-de-antioquia-de-pisidia.
+  source: hch-13
+- date: '2026-09-29'
+  change: El resumen se ciñe a 13:14-43; la expulsión se cuenta en el suceso nuevo.
+  source: hch-13
+- date: '2026-09-29'
+  change: La razón cita ahora los versículos y las notas del suceso recortado.
+  source: hch-13
+checked_on: '2026-09-29'
+status: verified

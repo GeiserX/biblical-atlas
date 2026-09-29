@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-nombra-a-josue-su-sucesor
+title: Moisés nombra a Josué su sucesor
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+narrative_order:
+  series: numeros
+  order: 27012
+places:
+- llanuras-deserticas-de-moab
+- abarim
+- pisga
+- bet-peor
+people:
+- moises
+- josue-hijo-de-nun
+- eleazar-hijo-de-aaron
+passages:
+- Nú 27:12-23
+- Dt 3:21-29
+- Dt 34:9
+summary: Moisés ruega cruzar el Jordán, pero Jehová le dice que solo verá la tierra desde lo alto, por lo de Meribá. Moisés
+  pide un pastor para el pueblo y, ante Eleazar y la asamblea, impone las manos a Josué.
+reason: 'Nú 27:12-23; Perspicacia «Josué», núm. 1, y «Eleazar», núm. 1. Moisés solo recibe el aviso de subir. Fecha: tras vencer
+  a Og, hacia 1473 a.e.c. (Perspicacia «Basán»), y antes de acabar Números, en 1473 (estudio 3).'
+sources:
+- numeros-27
+- it-josue
+- it-eleazar
+- it-abarim
+- si-3
+- it-basan
+- deuteronomio-34
+- deuteronomio-3
+- it-pisga
+- it-bet-peor
+links:
+- title: Números 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  type: bible
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: El resumen recoge también el ruego de Moisés de Dt 3:23-26, que cuenta el mismo aviso desde el lado de Moisés.
+  source: deuteronomio-3
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baalat-beer
+name: Baalat-Beer
+names:
+- name: Baalat-Beer
+- name: Ramá del sur
+  note: Así la llama Jos 19:8; la nota da también «del Négueb».
+- name: Baal
+  note: Así la llama 1Cr 4:33.
+- name: Ramot del Négueb
+  note: Así la llama 1Sa 30:27 (la nota da «del sur»). Perspicacia «Ramot», núm. 2, la iguala con esta ciudad; «Baalat-beer»
+    lo da como posible.
+type: city
+lat: 31.209188
+lon: 35.165672
+precision: uncertain
+coord_source: openbible:aaa4c6e
+coord_url: https://www.openbible.info/geo/ancient/aaa4c6e/ramah-6
+coord_note: Punto de Horvat ʽUza (Khirbet Ghazzah) en la ficha «Ramah 6» de OpenBible, el sitio que propone Perspicacia con
+  reservas.
+summary: Enclave de Simeón en el Négueb, al sur de Beer-Seba, llamado también Ramá del sur. Es la Baal de 1 Crónicas y, según
+  Perspicacia, la Ramot del Négueb adonde David mandó botín.
+reason: 'Perspicacia «Baalat-beer» y «Ramá», núm. 2; Jos 19:8; 1Cr 4:33; 1Sa 30:27. OpenBible: solo el punto.'
+sources:
+- it-baalat-beer
+- it-rama
+- openbible-geo
+- josue-19
+- 1-samuel-30
+- it-ramot
+links:
+- title: 'Perspicacia: «Baalat-beer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000508
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+history:
+- date: '2026-09-29'
+  change: El nombre de 1Sa 30:27 pasa a la forma de la TNM de estudio, Ramot del Négueb, y su nota recoge que Perspicacia
+    «Ramot», núm. 2, lo refiere a esta ciudad.
+  source: 1-samuel-30
+- date: '2026-09-29'
+  change: El resumen usa el nombre de la TNM de estudio en 1Sa 30:27 y la identificación de Perspicacia «Ramot», núm. 2.
+  source: it-ramot
+checked_on: '2026-09-29'
+status: verified

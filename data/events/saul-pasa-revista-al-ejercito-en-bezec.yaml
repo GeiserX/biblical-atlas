@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-pasa-revista-al-ejercito-en-bezec
+title: Saúl cuenta a su ejército en Bézec
+date:
+  from: -1116
+  to: -1115
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+narrative_order:
+  series: 1-samuel
+  order: 11008
+places:
+- bezec-cerca-de-siquem
+people:
+- saul
+passages:
+- 1Sa 11:8-10
+summary: En Bézec, Saúl cuenta 300.000 hombres de Israel y 30.000 de Judá. Manda decir a Jabés que la ayuda llegará al día
+  siguiente, con el calor, y los de Jabés anuncian a los ammonitas que se rendirán.
+reason: '1Sa 11:8-10; Perspicacia «Bézeq», núm. 2, y «Saúl». Fecha: la unción de Saúl es de 1117 (estudio 3) y esto, un mes
+  después (Perspicacia «Saúl»).'
+sources:
+- 1-samuel-11
+- it-bezeq
+- it-saul
+- si-3
+links:
+- title: 1 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/11
+  type: bible
+- title: 'Perspicacia: «Bézeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000722
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

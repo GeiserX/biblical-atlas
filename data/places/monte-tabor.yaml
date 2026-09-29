@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-tabor
+name: Monte Tabor
+names:
+- name: Tabor
+type: mountain
+lat: 32.68625
+lon: 35.392917
+precision: point
+coord_source: openbible:acd63ee
+coord_url: https://www.openbible.info/geo/ancient/acd63ee/mount-tabor
+summary: Monte aislado de 562 m en el límite norte de Isacar, que se alza sobre el valle de Jezreel a unos 8 km de Nazaret.
+  Barac bajó de él contra Sísara; el Salmo 89 lo nombra con el Hermón.
+reason: 'Perspicacia «Tabor», núm. 1, párr. 1 a 3; Jue 4:6-16; Sl 89:12. OpenBible: solo el punto.'
+sources:
+- it-tabor
+- openbible-geo
+- salmos-89
+- oseas-5
+- josue-19
+- jueces-4
+- jueces-8
+links:
+- title: 'Perspicacia: «Tabor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004298
+  type: perspicacia
+- title: Salmo 89 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/89
+  type: bible
+checked_on: '2026-09-29'
+status: verified

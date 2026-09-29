@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-angel-anuncia-a-la-esposa-de-manoah-que-tendra-un-hijo
+title: Un ángel anuncia a la esposa de Manóah que tendrá un hijo
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en los 40 años de dominio filisteo, antes de nacer Sansón)'
+narrative_order:
+  series: jueces
+  order: 13002
+places:
+- zora
+people:
+- manoah
+present: []
+passages:
+- Jue 13:2-7
+summary: 'El ángel de Jehová se aparece a la mujer estéril de Manóah: tendrá un hijo nazareo desde que nazca, que empezará
+  a librar a Israel de los filisteos. Ella no debe beber vino ni comer nada impuro.'
+reason: 'Jue 13:2-7; «Manóah» y «Sansón», párr. 1. No se dice dónde estaba ella: no sitúa a nadie. Fecha: tras Jefté (c. 1173,
+  «Jefté»), pues el libro va casi en orden («Jueces, Libro de»), y antes de Saúl (1117, estudio 3).'
+sources:
+- jueces-13
+- it-manoah
+- it-sanson
+- it-jefte
+- it-jueces
+- si-3
+links:
+- title: Jueces 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/13
+  type: bible
+- title: 'Perspicacia: «Manóah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002889
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

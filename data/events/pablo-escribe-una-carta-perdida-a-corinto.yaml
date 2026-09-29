@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-una-carta-perdida-a-corinto
+title: Pablo escribe a Corinto una carta que no se conserva
+date:
+  from: 52
+  to: 55
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 52 y 55 e.c. (tiempo narrativo: después de su estancia en Corinto y antes de 1 Corintios)'
+narrative_order:
+  series: 1-corintios
+  order: 1000
+  after: voto-en-cencreas
+places:
+- corinto
+people:
+- pablo
+present: []
+passages:
+- 1Co 5:9
+- 2Co 1:15-17
+summary: Antes de 1 Corintios, Pablo ya había escrito a la congregación de Corinto para que dejaran de tratar con los inmorales
+  y, al parecer, les anunciaba que los visitaría camino de Macedonia. Esa carta se ha perdido.
+reason: 'La nota de estudio de 1Co 5:9 la da por perdida. Límites: sale de Corinto en la primavera de 52 (estudio 3, párr.
+  25) y escribe 1 Corintios hacia 55 (Tabla de los libros). El texto no dice desde dónde.'
+sources:
+- 1-corintios-5
+- si-3
+- tnm-tabla
+- 2-corintios-1
+links:
+- title: 1 Corintios 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/5
+  type: bible
+history:
+- date: '2026-09-29'
+  change: La nota de estudio de 2Co 1:17 cree que en esa carta Pablo anunciaba su visita de camino a Macedonia, plan que luego
+    cambió en 1Co 16:5, 6.
+  source: 2-corintios-1
+checked_on: '2026-09-29'
+status: verified

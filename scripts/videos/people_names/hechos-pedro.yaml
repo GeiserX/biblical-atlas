@@ -1,0 +1,42 @@
+# Nombres de personas del carril hechos-pedro que busca scripts/videos/index.py en los subtítulos.
+# Mismo formato que nombres/pablo.yaml, con el id de data/people. Solo nombres que no se confunden o formas
+# calificadas. Sin entrada, a propósito: santiago-hijo-de-zebedeo y santiago-hermano-de-jesus (casi siempre
+# «Santiago» suelto), esteban y matias (nombres corrientes hoy, que salen en experiencias), ananias-de-jerusalen,
+# maria-madre-de-juan-marcos, judas-hermano-de-jesus, gayo-de-3-juan y demetrio-de-3-juan (nombres compartidos),
+# antipas-de-pergamo (se confunde con Herodes Antipas) y zebedeo (casi siempre sale en «hijos de Zebedeo»).
+
+pedro:
+  names: [apóstol Pedro, Simón Pedro]
+juan-apostol:
+  names: [apóstol Juan]
+herodes-agripa-i:
+  names: [Herodes Agripa I, Agripa I]
+felipe-evangelizador:
+  names: [Felipe el evangelizador]
+safira:
+  names: [Safira]
+gamaliel-fariseo:
+  names: [Gamaliel]
+simon-el-mago:
+  names: [Simón el mago]
+simon-el-curtidor:
+  names: [Simón el curtidor]
+eneas:
+  names: [Eneas]
+dorcas:
+  names: [Dorcas, Tabita]
+cornelio:
+  names: [Cornelio]
+rode:
+  names: [Rode]
+  accents: strict
+agabo:
+  names: [Ágabo]
+blasto:
+  names: [Blasto]
+eunuco-etiope:
+  names: [eunuco etíope, funcionario etíope]
+diotrefes:
+  names: [Diótrefes]
+suegra-de-pedro:
+  names: [suegra de Pedro]

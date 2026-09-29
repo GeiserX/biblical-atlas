@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-y-su-escudero-atacan-el-puesto-filisteo
+title: Jonatán y su escudero atacan el puesto filisteo de Micmash
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 13023
+places:
+- micmash
+- bozez
+- sene
+- gueba
+people:
+- jonatan-hijo-de-saul
+present:
+- jonatan-hijo-de-saul
+passages:
+- 1Sa 13:23
+- 1Sa 14:1-14
+summary: 'Sin avisar a Saúl, Jonatán cruza con su escudero el barranco entre los peñascos Bozez y Sené. La invitación filistea
+  a subir es su señal de Jehová: trepa hasta el puesto y entre los dos matan a unos 20.'
+reason: '1Sa 13:23; 14:1-14; Perspicacia «Micmás, Micmash», párr. 3 y 4, «Bozez» y «Sené». El escudero no tiene nombre. Fecha:
+  tras la unción de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-13
+- 1-samuel-14
+- it-micmas
+- it-bozez
+- it-sene
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  type: bible
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+checked_on: '2026-09-29'
+status: verified

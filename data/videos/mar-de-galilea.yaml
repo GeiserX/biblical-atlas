@@ -1,19 +1,19 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: mar-de-galilea
-generado: "2026-09-28"
+place: mar-de-galilea
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwb_202102_5_VIDEO"
-    titulo: "Un primer vistazo a “Las buenas noticias según Jesús”"
+    title: "Un primer vistazo a “Las buenas noticias según Jesús”"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202102_5_VIDEO&appLanguage=S"
-    publicado: "2021-02-01"
-    menciones: 3
-    terminos:
+    published: "2021-02-01"
+    hits: 3
+    terms:
       "mar de Galilea": 3
   - docid: "pub-jwbcov25_7_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    title: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
-    publicado: "2026-01-19"
-    menciones: 2
-    terminos:
+    published: "2026-01-19"
+    hits: 2
+    terms:
       "mar de Galilea": 2

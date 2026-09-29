@@ -1,0 +1,74 @@
+# Nombres de personas que busca scripts/videos/index.py en los subtítulos: carril «patriarcas».
+# Mismo formato que scripts/videos/place_names/pablo.yaml, con el id de data/people. Solo formas que no se confunden.
+# Sin entrada, a propósito: eva, abel, sara, isaac, rebeca, raquel, ismael-hijo-de-abrahan, ruben-hijo-de-jacob,
+# benjamin-hijo-de-jacob, dina, aaron, miriam-hermana-de-moises y debora-profetisa (nombres de pila corrientes hoy, que
+# salen en experiencias); lea y dan-hijo-de-jacob («lea» y «dan» son verbos); set, sem y cam (palabras cortas que
+# aparecen en otros textos); enoc-hijo-de-jared, lamec-padre-de-noe, jose-hijo-de-jacob, simeon-hijo-de-jacob,
+# levi-hijo-de-jacob y eli (nombres compartidos con otras personas); juda, neftali, gad, aser, isacar y zabulon hijos
+# de Jacob (casi siempre nombran la tribu o su territorio); caleb-hijo-de-jefune (Caleb es también el niño de los dibujos
+# animados «Hazte amigo de Jehová» y un nombre de pila corriente).
+
+adan:
+  names: [Adán]
+
+cain:
+  names: [Caín]
+
+matusalen:
+  names: [Matusalén]
+
+noe:
+  names: [Noé]
+
+jafet:
+  names: [Jafet]
+
+nemrod:
+  names: [Nemrod]
+
+tare:
+  names: [Taré]
+
+abrahan:
+  names: [Abrahán, Abrán]
+
+agar:
+  names: [Agar]
+
+lot:
+  names: [Lot]
+
+melquisedec:
+  names: [Melquisedec]
+
+esau:
+  names: [Esaú]
+
+jacob:
+  names: [Jacob]
+  exclude: [Jacob Rumph]
+
+moises:
+  names: [Moisés]
+
+josue-hijo-de-nun:
+  names: [Josué]
+  exclude: [sumo sacerdote Josué]
+
+otniel:
+  names: [Otniel]
+
+ehud-hijo-de-guera:
+  names: [Ehúd]
+
+barac:
+  names: [Barac]
+
+gedeon:
+  names: [Gedeón, Jerubaal]
+
+jefte:
+  names: [Jefté]
+
+sanson:
+  names: [Sansón]

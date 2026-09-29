@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: harod
+name: Harod
+names:
+- name: Harod
+- name: Manantial de Harod
+  note: Así lo llama Jue 7:1.
+- name: Pozo de Harod
+  note: Nombre que usa Perspicacia; la palabra hebrea suele querer decir manantial.
+type: lake
+lat: 32.548611
+lon: 35.355833
+precision: uncertain
+coord_source: openbible:ae3cace
+coord_url: https://www.openbible.info/geo/ancient/ae3cace/harod-1
+coord_note: 'Punto de ʽAin Jalud (Mayan Harod) en OpenBible, la identificación tradicional según Perspicacia. Es un manantial:
+  «lago» es el tipo más cercano de la lista.'
+summary: Manantial junto al que acampó Gedeón frente a los madianitas y donde Jehová redujo su ejército a 300 hombres. Su
+  nombre, «temblor», quizá recuerde a los 22.000 que se volvieron por miedo.
+reason: 'Perspicacia «Harod»; Jue 7:1-7. Tradicionalmente se iguala con ʽAin Jalud, que brota en el extremo noroeste del monte
+  Guilboa. OpenBible: solo el punto.'
+sources:
+- it-harod
+- openbible-geo
+- jueces-7
+links:
+- title: 'Perspicacia: «Harod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001887
+  type: perspicacia
+- title: Jueces 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

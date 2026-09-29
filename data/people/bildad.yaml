@@ -1,0 +1,73 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bildad
+name: Bildad
+names:
+- name: Bildad
+perspicacia: '1200000733'
+summary: Suhita, descendiente de Súah, hijo de Abrahán. Fue con Elifaz y Zofar a consolar a Job y habló en segundo lugar en
+  cada ronda del debate.
+reason: Perspicacia «Bildad»; Job 2:11.
+sources:
+- it-bildad
+- job-2
+- job-8
+- it-suhita
+- job-18
+- job-25
+- job-32
+- job-42
+links:
+- title: 'Perspicacia: «Bildad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000733
+  type: perspicacia
+- title: Job 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/2
+  type: bible
+- title: 'Perspicacia: «Suhita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004093
+  type: perspicacia
+- title: Job 42 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/18/42
+  type: bible
+relations:
+- type: accompanies
+  person: elifaz-el-temanita
+  word: companion
+  inferred: false
+  sources:
+  - job-2
+  reason: 'Job 2:11: los tres se pusieron de acuerdo para ir juntos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: suah
+  word: ancestor
+  inferred: true
+  sources:
+  - job-2
+  - it-bildad
+  - it-suah
+  - job-8
+  - it-suhita
+  reason: Job 2:11 lo llama suhita; Perspicacia «Bildad» y «Súah» lo hacen descendiente de Súah.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: job
+  word: friend
+  inferred: false
+  sources:
+  - job-2
+  - job-8
+  - job-12
+  - job-16
+  - job-19
+  - it-bildad
+  - job-25
+  - job-32
+  - job-42
+  reason: 'Job 2:11: uno de los tres amigos que fueron a consolarlo.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

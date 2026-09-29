@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ofra-de-benjamin
+name: Ofrá
+names:
+- name: Ofrá
+  note: Ofrá de Benjamín, para distinguirla de la Ofrá de Gedeón (Perspicacia, núm. 3).
+type: city
+lat: 31.954444
+lon: 35.300278
+precision: uncertain
+coord_source: openbible:a53b82d
+coord_url: https://www.openbible.info/geo/ancient/a53b82d/ophrah-1
+coord_note: Punto de OpenBible en et-Taiyiba, el mismo que se da a Efraín (Jn 11:54), con la que a menudo se relaciona.
+summary: Ciudad de Benjamín que estaba al norte de Micmash, según el relato de las incursiones filisteas. No es la Ofrá de
+  Gedeón. A menudo se relaciona con Efraín, en et-Taiyiba.
+reason: 'Perspicacia «Ofrá», núm. 2 y 3; Jos 18:23; 1Sa 13:17. OpenBible: solo el punto.'
+sources:
+- it-ofra
+- openbible-geo
+- josue-18
+- 1-samuel-13
+links:
+- title: 'Perspicacia: «Ofrá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003338
+  type: perspicacia
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

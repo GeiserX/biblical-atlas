@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: mizpa-de-benjamin
+name: Mizpá
+names:
+- name: Mizpá
+- name: Mizpé
+- name: Ebenézer
+  note: Piedra que Samuel levantó entre Mizpá y Jesaná tras vencer a los filisteos; significa «piedra de ayuda». No es el
+    Ebenézer de 1Sa 4:1.
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Tell en-Nasbeh
+  geometry:
+    type: point
+    lat: 31.885136
+    lon: 35.216417
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-mizpa
+  - openbible-geo
+  reason: Perspicacia (núm. 3, párr. 3) dice que por lo general se prefiere, unos 12 km al N de Jerusalén. Punto de OpenBible.
+  coord_source: openbible:a736f6c
+  coord_url: https://www.openbible.info/geo/ancient/a736f6c/mizpah-3
+- name: Nebi Samwil
+  geometry:
+    type: point
+    lat: 31.832733
+    lon: 35.18015
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-mizpa
+  - openbible-geo
+  reason: Perspicacia la menciona como posible, unos 8 km al NO de Jerusalén. Punto de OpenBible.
+  coord_source: openbible:a736f6c
+  coord_url: https://www.openbible.info/geo/ancient/a736f6c/mizpah-3
+summary: Ciudad de Benjamín. En tiempos de los jueces las tribus se juntaron allí contra Guibeá; luego Samuel reunió en ella
+  a Israel, Asá la fortificó y, tras 607 a.e.c., Guedalías gobernó desde ella.
+reason: Perspicacia «Mizpá, Mizpé», núm. 3, párr. 3-6; 1Sa 7:5-6, 1Re 15:22 y Jer 40:6. Dos candidatos, sin identificación
+  segura.
+sources:
+- it-mizpa
+- openbible-geo
+- jeremias-40
+- josue-18
+- jueces-20
+- jueces-21
+- 1-samuel-7
+- it-ebenezer
+- 1-samuel-10
+links:
+- title: 'Perspicacia: «Mizpá, Mizpé»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093
+  type: perspicacia
+- title: Jeremías 40 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/40
+  type: bible
+history:
+- date: '2026-09-29'
+  change: El resumen añade la asamblea contra Guibeá (Jue 20:1-11; 21:1), el primer suceso de la ciudad según Perspicacia
+    «Mizpá, Mizpé», núm. 3, y acorta lo de Guedalías.
+  source: jueces-20
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-ananias-y-safira
+title: Muerte de Ananías y Safira
+date:
+  from: 33
+  to: 34
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 33 y 34 e.c. (tiempo narrativo: después de Pentecostés y antes de la conversión de Saulo)'
+narrative_order:
+  series: hechos
+  order: 501
+places:
+- jerusalen
+people:
+- ananias-de-jerusalen
+- safira
+- pedro
+type: death
+roles:
+  ananias-de-jerusalen: died
+  safira: died
+passages:
+- Hch 5:1-11
+summary: Ananías y Safira venden un campo y fingen entregar todo el dinero. Pedro, guiado por el espíritu, descubre
+  el engaño; los dos caen muertos con unas tres horas de diferencia.
+reason: Perspicacia «Ananías» (párr. 2), «Safira» (párr. 2 a 4) y «Pedro» (párr. 18).
+sources:
+- it-ananias
+- it-safira
+- it-pedro
+- hechos-5
+- si-3
+note: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
+  de 33 y la conversión de Saulo en 34).'
+search: Ananías y Safira
+checked_on: '2026-09-29'
+status: verified

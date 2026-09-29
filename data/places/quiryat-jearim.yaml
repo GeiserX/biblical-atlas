@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quiryat-jearim
+name: Quiryat-Jearim
+names:
+- name: Quiryat-Jearim
+  note: Significa «ciudad de bosques», según Perspicacia.
+- name: Baalá
+  note: Otro nombre de la ciudad (Jos 15:9).
+- name: Quiryat-Baal
+  note: Otro nombre de la ciudad (Jos 15:60).
+- name: Baale-Judá
+  note: Otro nombre de la ciudad (2Sa 6:2).
+- name: Quiryat
+  note: Ciudad de Benjamín de Jos 18:28; Perspicacia dice que por lo general se la toma por Quiryat-Jearim.
+type: city
+lat: 31.808957
+lon: 35.10378
+precision: point
+coord_source: openbible:a9bba61
+coord_url: https://www.openbible.info/geo/ancient/a9bba61/kiriath-jearim
+coord_note: Deir el-ʽAzar (Tel Qiryat Yeʽarim), el sitio que Perspicacia da por aceptado.
+summary: Ciudad hevea ligada a Gabaón, en la región montañosa, en la frontera de Judá con Benjamín. El arca quedó allí, probablemente
+  unos setenta años, hasta que David la llevó a Jerusalén.
+reason: 'Perspicacia «Quiryat-jearim», párr. 1, 2 y 4; Jos 9:17; 15:9, 60. Deir el-ʽAzar está unos 13 km al ONO de Jerusalén.
+  OpenBible: solo el punto.'
+sources:
+- it-quiryat-jearim
+- openbible-geo
+- josue-9
+- josue-15
+- it-baala
+- it-quiryat
+- josue-18
+- jueces-18
+- 1-samuel-6
+- 1-samuel-7
+- it-abinadab
+links:
+- title: 'Perspicacia: «Quiryat-jearim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002627
+  type: perspicacia
+- title: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  type: bible
+- title: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

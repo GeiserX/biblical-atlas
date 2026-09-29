@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: azeca
+name: Azecá
+names:
+- name: Azecá
+- name: Azeqá
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.700226
+lon: 34.935696
+precision: point
+coord_source: openbible:af2ca0c
+coord_url: https://www.openbible.info/geo/ancient/af2ca0c/azekah
+coord_note: Tell Zakariyeh (Tel ʽAzeqa), el sitio que da Perspicacia.
+summary: Ciudad de la Sefelá que guardaba la parte alta del valle de Elá, unos 26 km al NO de Hebrón. Hasta allí persiguió
+  Israel a los cinco reyes; después fue de Judá.
+reason: 'Perspicacia «Azeqá», párr. 1 y 2; Jos 10:10, 11; 15:35. OpenBible: solo el punto.'
+sources:
+- it-azeqa
+- openbible-geo
+- josue-10
+- josue-15
+- 1-samuel-17
+links:
+- title: 'Perspicacia: «Azeqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000491
+  type: perspicacia
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

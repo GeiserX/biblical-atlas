@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nibsan
+name: Nibsán
+names:
+- name: Nibsán
+type: city
+lat: 31.69945
+lon: 35.38143
+precision: uncertain
+coord_source: openbible:ad96dd4
+coord_url: https://www.openbible.info/geo/ancient/ad96dd4/nibshan
+coord_note: Khirbet el-Maqari, primera identificación de OpenBible, que Perspicacia da como tentativa.
+summary: Población del desierto de Judá. No se sabe dónde estaba; se ha propuesto Khirbet el-Maqari, sobre un promontorio
+  unos 16 km al sureste de Jerusalén.
+reason: 'Perspicacia «Nibsán»; Jos 15:62. OpenBible: solo el punto.'
+sources:
+- it-nibsan
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Nibsán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003247
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

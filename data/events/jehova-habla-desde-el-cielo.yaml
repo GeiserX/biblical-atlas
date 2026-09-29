@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-habla-desde-el-cielo
+title: Jehová habla desde el cielo; muchos no creen
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 10 de nisán de 33 e.c.
+  detail:
+    month: nisan
+    day: 10
+places:
+- jerusalen
+people:
+- jesus
+- andres
+- felipe-apostol
+passages:
+- Jn 12:20-50
+summary: Unos griegos quieren ver a Jesús. Él anuncia su muerte con el ejemplo del grano de trigo y una voz del
+  cielo le responde. Aun así, muchos no creen, como predijo Isaías.
+reason: La tabla A7-G da el día y el lugar. Jn 12:20-50; B12-A pone la voz del cielo en el 10 de nisán.
+sources:
+- tnm-a7-g
+- juan-12
+- jy-cap-103
+- jy-cap-104
+- tnm-b12-a
+narrative_order:
+  series: a7
+  order: 97
+search: Jehová habla desde el cielo
+checked_on: '2026-09-28'
+status: verified

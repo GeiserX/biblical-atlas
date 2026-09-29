@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: requem-rey-de-madian
+name: Réquem
+names:
+- name: Réquem
+perspicacia: 1200003686#1
+disambiguation: Réquem, rey de Madián; no el manasita ni el judaíta de 1 Crónicas, ni la ciudad de Benjamín del mismo nombre.
+summary: Rey madianita, uno de los cinco que murieron en la guerra con que Israel castigó a Madián por el pecado de Peor.
+  Perspicacia cree que dependían de los amorreos.
+reason: Perspicacia «Réquem», núm. 1; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab
+  y Sehón; Jos 13:21 los pone en la tierra de Sehón dada a Rubén.
+sources:
+- it-requem
+- numeros-31
+- it-madian
+- josue-13
+- it-ruben
+links:
+- title: 'Perspicacia: «Réquem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003686
+  type: perspicacia
+- title: Números 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/31
+  type: bible
+history:
+- date: '2026-09-29'
+  change: 'Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.'
+  source: josue-13
+- date: '2026-09-29'
+  change: 'La relación con Sehón estaba al revés: es su vasallo, no su señor (Jos 13:21 y su nota).'
+  source: josue-13
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: lived_in
+  place: ruben
+  inferred: false
+  sources:
+  - josue-13
+  - it-ruben
+  reason: 'Jos 13:21: Réquem y los otros jefes madianitas vivían en la tierra del reino de Sehón que Moisés dio a Rubén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: sehon
+  caption: vasallo
+  inverse_caption: señor
+  inferred: false
+  sources:
+  - josue-13
+  reason: 'Jos 13:21 y su nota: Réquem era uno de los reyes madianitas subordinados a Sehón.'
+  checked_on: '2026-09-29'
+  status: verified

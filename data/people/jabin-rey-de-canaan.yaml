@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jabin-rey-de-canaan
+name: Jabín
+names:
+- name: Jabín
+perspicacia: 1200002272#2
+summary: Rey cananeo de Hazor, llamado rey de Canaán, que oprimió duramente veinte años al Israel infiel. Barac y Débora vencieron
+  a su ejército, mandado por Sísara, y los israelitas acabaron matándolo.
+reason: Perspicacia «Jabín», núm. 2; Jue 4:2, 3, 23, 24; Sl 83:9, 10.
+disambiguation: No es el Jabín rey de Hazor al que venció Josué (Perspicacia, núm. 1), de quien quizá descendía.
+sources:
+- it-jabin
+- salmos-83
+- jueces-4
+links:
+- title: 'Perspicacia: «Jabín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002272
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- jabin-rey-de-hazor
+relations:
+- type: kin
+  person: jabin-rey-de-hazor
+  word: ancestor
+  inferred: true
+  sources:
+  - it-jabin
+  reason: 'Perspicacia «Jabín», núm. 2: reinó en la Hazor reconstruida y quizá descendía del rey vencido por Josué.'
+  checked_on: '2026-09-29'
+  status: pending
+- type: lived_in
+  place: hazor
+  inferred: false
+  sources:
+  - jueces-4
+  - it-jabin
+  reason: Jue 4:2 dice que reinaba en Hazor, y el v. 17 lo llama rey de Hazor.
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mas
+name: Mas
+names:
+- name: Mas
+perspicacia: '1200002919'
+summary: Hijo de Aram, de la línea de Sem. Algunos lo ligan al monte Masio, en Mesopotamia, y otros a un desierto sirioarábigo
+  que los anales asirios llaman Mas.
+reason: Perspicacia «Mas»; Gé 10:23. El texto masorético de 1 Crónicas 1:17 dice Mesec, quizá por error de copia.
+sources:
+- it-mas
+- genesis-10
+links:
+- title: 'Perspicacia: «Mas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002919
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: aram-hijo-de-sem
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:23 lo nombra el último de los hijos de Aram.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: camon
+name: Camón
+names:
+- name: Camón
+- name: Qamón
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Qamm, al sureste del mar de Galilea
+  geometry:
+    type: point
+    lat: 32.5876
+    lon: 35.7256
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-qamon
+  - openbible-geo
+  reason: Perspicacia la cita como propuesta, a unos 18 km del mar de Galilea, aunque sus ruinas no prueban que se habitara
+    antes de la época romana.
+  coord_source: openbible:a804aeb
+  coord_url: https://www.openbible.info/geo/ancient/a804aeb/kamon
+- name: Qumeim, 3 km al sur de Qamm
+  geometry:
+    type: point
+    lat: 32.571667
+    lon: 35.734444
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-qamon
+  - openbible-geo
+  reason: 'La otra propuesta de Perspicacia: ruinas menores y de edad sin determinar.'
+  coord_source: openbible:a804aeb
+  coord_url: https://www.openbible.info/geo/ancient/a804aeb/kamon
+summary: Lugar donde enterraron al juez Jaír. Josefo la llama ciudad de Galaad, lo que encaja con que Jaír fuera galaadita.
+  No se sabe dónde estaba.
+reason: Perspicacia «Qamón»; Jue 10:5. Dos propuestas al este del Jordán, sin preferencia; puntos de OpenBible.
+sources:
+- it-qamon
+- openbible-geo
+- jueces-10
+links:
+- title: 'Perspicacia: «Qamón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002570
+  type: perspicacia
+- title: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

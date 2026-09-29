@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-derrota-a-los-cinco-reyes-en-gabaon
+title: Josué derrota a los cinco reyes en Gabaón
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+narrative_order:
+  series: josue
+  order: 10006
+places:
+- gabaon
+- guilgal
+- bet-horon-alta
+- bet-horon-baja
+- azeca
+- maqueda
+people:
+- josue-hijo-de-nun
+- adoni-zedec
+- hoham
+- piram
+- jafia-rey-de-lakis
+- debir-rey-de-eglon
+passages:
+- Jos 10:6-11
+summary: Gabaón pide socorro. Josué sube de Guilgal marchando toda la noche y cae por sorpresa sobre los amorreos. Los persigue
+  por Bet-Horón hasta Azecá y Maquedá, y el granizo de Jehová mata a más que la espada.
+reason: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal.'
+sources:
+- josue-10
+- si-3
+- it-josue
+- it-gabaon
+- it-guilgal
+- it-bet-horon
+- it-azeqa
+- it-maqueda
+links:
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

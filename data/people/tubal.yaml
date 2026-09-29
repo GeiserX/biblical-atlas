@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tubal
+name: Tubal
+names:
+- name: Tubal
+perspicacia: '1200004488'
+disambiguation: El hijo de Jafet; no el pueblo ni la tierra de Tubal que nombra Ezequiel.
+summary: Uno de los siete hijos de Jafet. Su nombre pasó a un pueblo del norte, casi siempre citado con Mesec, que Perspicacia
+  sitúa en el este de Asia Menor.
+reason: Perspicacia «Tubal», núm. 1 y 2; Gé 10:2.
+sources:
+- it-tubal
+- genesis-10
+links:
+- title: 'Perspicacia: «Tubal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004488
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: jafet
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:2 lo nombra entre los hijos de Jafet.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

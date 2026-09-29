@@ -1,0 +1,273 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: job
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [person:job, place:uz, relation:job/lived_in/uz], note: "Job, íntegro y muy rico, el más destacado de los orientales, ofrece sacrificios por sus diez hijos por si han pecado."}
+    - {v: 6-12, type: narration, entities: [event:satanas-pone-en-duda-la-integridad-de-job, person:satanas, person:job], note: "Los «hijos del Dios verdadero» son ángeles, sin nombre."}
+    - {v: 13-19, type: narration, entities: [event:job-pierde-sus-bienes-y-sus-hijos, person:job, place:caldea], mentions: [place:saba], note: "Los sabeos son un pueblo. Perspicacia los junta con los viajeros de Saba de 6:19 y no sabe de qué Seba venían, así que Saba va sin punto."}
+    - {v: 20-22, type: narration, entities: [event:job-pierde-sus-bienes-y-sus-hijos, person:job]}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: narration, entities: [event:satanas-vuelve-a-desafiar-la-integridad-de-job, person:satanas, person:job], note: "Los «hijos del Dios verdadero» vuelven a ser ángeles sin nombre."}
+    - {v: 7-10, type: narration, entities: [event:satanas-hiere-a-job-con-ulceras, person:job, person:satanas], note: "La esposa de Job no tiene nombre, así que no lleva ficha."}
+    - {v: 11-13, type: narration, entities: [event:los-tres-companeros-van-a-consolar-a-job, person:elifaz-el-temanita, person:bildad, person:zofar, person:suah, person:job, place:teman, relation:elifaz-el-temanita/tie/job, relation:elifaz-el-temanita/lived_in/teman, relation:bildad/tie/job, relation:bildad/accompanies/elifaz-el-temanita, relation:bildad/kin/suah, relation:zofar/tie/job, relation:zofar/accompanies/elifaz-el-temanita], note: "Naamatita alude a la familia o la tierra de Zofar, que no se conoce; no lleva lugar."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: narration, entities: [event:job-maldice-el-dia-en-que-nacio, person:job]}
+    - {v: 3-26, type: poetry, entities: [person:job], note: "Lamento de Job: ojalá no hubiera nacido, pues en la muerte descansaría. Leviatán (v. 8) es un gran animal acuático, no una persona."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: speech, entities: [event:primer-discurso-de-elifaz, person:elifaz-el-temanita, person:job, place:teman, relation:elifaz-el-temanita/tie/job, relation:elifaz-el-temanita/lived_in/teman], note: "Elifaz el temanita abre la primera ronda: recuerda que Job sostenía a los débiles y ahora se hunde; ningún inocente perece y quien cultiva maldad la recoge."}
+    - {v: 12-21, type: speech, entities: [person:elifaz-el-temanita], note: "Elifaz relata una visión nocturna: un espíritu le dijo que Dios desconfía hasta de sus ángeles. Según La Atalaya, aquel espíritu era malo, no un ángel fiel."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-16, type: speech, entities: [event:primer-discurso-de-elifaz, person:elifaz-el-temanita, person:job], note: "Elifaz sigue: ningún santo (ángel, según la nota) ayudará a Job; el necio acaba arruinado. Él acudiría a Dios, que frustra a los astutos."}
+    - {v: 17-27, type: speech, entities: [person:elifaz-el-temanita, person:job], note: "Elifaz llama feliz al que Dios corrige y promete a Job protección, muchos hijos y una vejez fuerte si acepta la disciplina."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-13, type: speech, entities: [event:job-responde-al-primer-discurso-de-elifaz, person:job], note: "Job contesta a Elifaz: dice que su angustia supera en peso a la arena del mar, que las flechas del Todopoderoso lo envenenan y que prefiere que Dios acabe con él."}
+    - {v: 14-23, type: speech, entities: [person:job, place:tema, place:saba], note: "Sus amigos le fallan como torrentes que se secan en verano y dejan chasqueadas a las caravanas de Temá y a los viajeros de Saba."}
+    - {v: 24-30, type: speech, entities: [person:job], note: "Job pide que le enseñen en qué se equivocó y les ruega que lo miren y recapaciten: su justicia sigue intacta."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-10, type: speech, entities: [event:job-responde-al-primer-discurso-de-elifaz, person:job], note: "La vida es trabajo forzado; el cuerpo de Job está lleno de gusanos, costras y pus. Quien baja a la Tumba (Seol, lugar simbólico, sin ficha) no vuelve."}
+    - {v: 11-21, type: speech, entities: [person:job], note: "Job se queja a Dios: los sueños lo aterran, prefiere morir y pregunta por qué lo ha convertido en su blanco en vez de perdonarlo."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: speech, entities: [event:primer-discurso-de-bildad, person:bildad, person:job, relation:bildad/tie/job, relation:bildad/kin/suah], mentions: [person:suah], note: "Bildad el suhita (ligado a Súah, hijo de Abrahán) habla en segundo lugar: Dios no tuerce la justicia; si los hijos de Job pecaron, pagaron, y si Job es puro, Dios lo restablecerá."}
+    - {v: 8-22, type: speech, entities: [person:bildad], note: "Bildad apela a las generaciones pasadas: como el papiro sin agua, el que olvida a Dios se seca; Dios no rechaza al íntegro."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-13, type: speech, entities: [event:job-responde-al-primer-discurso-de-bildad, person:job], note: "Job contesta a Bildad: nadie gana un pleito a Dios, que mueve montañas e hizo las constelaciones Ash, Kesil y Kimá (quizá Osa Mayor, Orión y Pléyades). Rahab es aquí un monstruo marino, sin ficha."}
+    - {v: 14-24, type: speech, entities: [person:job], note: "Aunque tuviera razón, Job no sabría responder a Dios; siente que destruye igual al inocente que al malvado."}
+    - {v: 25-35, type: speech, entities: [person:job], note: "Sus días huyen más rápido que un corredor; entre él y Dios no hay nadie que juzgue a los dos."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-17, type: speech, entities: [event:job-responde-al-primer-discurso-de-bildad, person:job], note: "Job pide a Dios que no lo condene sin decirle por qué: lo formó como barro y lo tejió con huesos y tendones, y ahora lo destruye."}
+    - {v: 18-22, type: speech, entities: [person:job], note: "Job lamenta haber nacido y pide un poco de alivio antes de ir a la tierra de oscuridad de la que no se vuelve."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:primer-discurso-de-zofar, person:zofar, person:job], note: "Zofar, el naamatita, reprocha a Job su palabrería y su pretensión de pureza, y desea que Dios le hable y le muestre su error."}
+    - {v: 7-12, type: speech, note: "Zofar ensalza la sabiduría de Dios, más alta que el cielo y más honda que la Tumba (Seol), y llama cabeza hueca al que no la entiende."}
+    - {v: 13-20, type: speech, note: "Zofar insta a Job a apartar la maldad de su tienda y le promete seguridad; a los malvados solo les queda la muerte."}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:job-responde-al-primer-discurso-de-zofar, person:job, person:zofar, person:bildad, person:elifaz-el-temanita, relation:zofar/tie/job, relation:bildad/tie/job, relation:elifaz-el-temanita/tie/job], note: "Job responde a Zofar: no es inferior a sus compañeros, que se ríen de él aunque es justo, mientras los ladrones viven en paz."}
+    - {v: 7-12, type: speech, note: "Los animales, las aves, la tierra y los peces muestran que la mano de Jehová lo hizo todo y sostiene la vida de todos."}
+    - {v: 13-25, type: speech, note: "Dios tiene sabiduría y poder: derriba consejeros, jueces, reyes y sacerdotes, engrandece y destruye naciones y extravía a sus jefes."}
+  13:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-12, type: speech, entities: [event:job-responde-al-primer-discurso-de-zofar, person:job], note: "Job llama a sus compañeros médicos inútiles que mienten a favor de Dios y prefiere defender su caso ante el Todopoderoso."}
+    - {v: 13-19, type: speech, note: "Job pide silencio para hablar: aunque Dios lo matara seguiría esperando en él, porque sabe que tiene razón."}
+    - {v: 20-28, type: speech, note: "Job ruega a Dios que aparte su mano, le muestre sus pecados y deje de tratarlo como enemigo por las faltas de su juventud."}
+  14:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:job-responde-al-primer-discurso-de-zofar, person:job], note: "La vida del hombre nacido de mujer es breve y agitada; Job pide a Dios que lo deje descansar hasta cumplir su jornada."}
+    - {v: 7-12, type: speech, note: "Un árbol cortado vuelve a brotar, pero el hombre muere y no se levanta mientras dure el cielo."}
+    - {v: 13-17, type: speech, note: "Job desea que Dios lo oculte en la Tumba (Seol) y fije un plazo para recordarlo; espera que Dios lo llame y el muerto vuelva a la vida."}
+    - {v: 18-22, type: speech, note: "Como el agua desgasta la roca, Dios acaba con la esperanza del hombre; el muerto no sabe qué les pasa a sus hijos."}
+  15:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:segundo-discurso-de-elifaz, person:elifaz-el-temanita, person:job, place:teman, relation:elifaz-el-temanita/lived_in/teman], note: "Elifaz, el temanita, acusa a Job de hablar viento, de quitar valor al temor de Dios y de condenarse con su propia boca."}
+    - {v: 7-16, type: speech, note: "Elifaz se burla de la sabiduría de Job, presume de canosos más viejos que su padre y dice que Dios no confía ni en sus santos."}
+    - {v: 17-35, type: speech, note: "Elifaz describe la suerte del malvado: vive aterrado, pierde sus bienes y sus tiendas arden; los irreverentes no dan fruto."}
+  16:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: speech, entities: [event:job-responde-al-segundo-discurso-de-elifaz, person:job, person:elifaz-el-temanita], note: "Job llama a sus compañeros consoladores molestos: él, en su lugar, los animaría con sus palabras."}
+    - {v: 6-17, type: speech, note: "Job siente que Dios lo ha agotado, ha acabado con su casa y lo ataca como un guerrero; viste saco y llora aunque es inocente."}
+    - {v: 18-22, type: speech, entities: [person:zofar, person:bildad, relation:zofar/tie/job, relation:bildad/tie/job, relation:elifaz-el-temanita/tie/job], note: "Job pide que la tierra no tape su sangre; su testigo está en el cielo mientras sus amigos se burlan, y le quedan pocos años."}
+  17:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-9, type: speech, entities: [event:job-responde-al-segundo-discurso-de-elifaz, person:job], note: "Job se ve cerca del cementerio, rodeado de burlones; pide a Dios que sea su fiador. El justo sigue firme en su camino."}
+    - {v: 10-16, type: speech, note: "Job no halla un sabio entre sus compañeros; sus planes se rompieron y su esperanza bajará con él a la Tumba (Seol)."}
+  18:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-21, type: speech, entities: [event:segundo-discurso-de-bildad, person:bildad, person:job], note: "Bildad describe el fin del malvado: se le apaga la luz, lo atrapan lazos, pierde su tienda y su nombre y no deja descendencia. «Suhita» lo liga a Súah, que aquí no se nombra."}
+  19:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-29, type: speech, entities: [event:job-responde-al-segundo-discurso-de-bildad, person:job, person:bildad, person:zofar, person:elifaz-el-temanita, relation:bildad/tie/job, relation:zofar/tie/job, relation:elifaz-el-temanita/tie/job], note: "Job dice que Dios lo ha cercado y que su esposa, hermanos, amigos y criados lo rechazan; quiere que sus palabras queden grabadas. «Mi redentor vive» (19:25): el redentor no se nombra."}
+  20:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-29, type: speech, entities: [event:segundo-discurso-de-zofar, person:zofar, person:job], mentions: [person:adan], note: "Zofar sostiene que la dicha del malvado dura poco y que devolverá lo robado. La nota de 20:4 admite leer «Adán fue puesto en la tierra». «Naamatita» no nombra un lugar seguro."}
+  21:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-34, type: speech, entities: [event:job-responde-al-segundo-discurso-de-zofar, person:job], note: "Job replica que muchos malvados viven ricos y tranquilos y bajan a la Tumba en paz; justo y malvado acaban igual en el polvo. Llama vacío el consuelo de sus compañeros."}
+  22:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-30, type: speech, entities: [event:tercer-discurso-de-elifaz, person:elifaz-el-temanita, person:job, place:teman, relation:elifaz-el-temanita/lived_in/teman, place:ofir], note: "Elifaz acusa a Job de oprimir a pobres, viudas y huérfanos y le pide que vuelva a Dios. Ofir sale como fuente del oro más fino."}
+  23:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-17, type: speech, entities: [event:job-responde-al-tercer-discurso-de-elifaz, person:job], note: "Job quisiera hallar a Dios para exponerle su causa; está seguro de haber seguido su camino y de salir de la prueba como oro, pero siente temor ante Él."}
+  24:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-25, type: speech, entities: [event:job-responde-al-tercer-discurso-de-elifaz, person:job], note: "Sigue la respuesta de Job: los malvados mueven mojones, roban rebaños y explotan a huérfanos y viudas; asesinos y adúlteros aman la oscuridad, pero la Tumba se los lleva."}
+  25:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:tercer-discurso-de-bildad, person:bildad, person:job, relation:bildad/tie/job], note: "Tercer discurso de Bildad, el más breve: Dios domina el cielo y ante él nadie nacido de mujer es puro. Zofar no toma la palabra en esta ronda."}
+  26:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "Job contesta a Bildad con ironía: sus consejos no han ayudado al débil ni al que no sabe."}
+    - {v: 5-14, type: speech, note: "El poder de Dios en la creación: la Tumba (Seol) y el lugar de destrucción (Abadón) están a su vista. Rahab, el monstruo marino del versículo 12, es figura poética y no lleva ficha."}
+  27:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-12, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "Job jura por Dios que mientras viva no dará la razón a sus compañeros ni renunciará a su integridad."}
+    - {v: 13-23, type: speech, note: "Lo que le espera al malvado: sus hijos mueren, el justo se queda con su plata y un viento del este lo arrastra."}
+  28:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "El hombre abre minas en lo hondo de la tierra y saca plata, oro, hierro, cobre y zafiro de donde ningún animal llega."}
+    - {v: 12-19, type: speech, entities: [place:ofir, place:etiopia], note: "La sabiduría no se compra: vale más que el oro de Ofir y que el topacio de Cus, la región que Perspicacia hace corresponder con Etiopía."}
+    - {v: 20-28, type: speech, note: "Solo Dios sabe dónde está la sabiduría. Al hombre le dice que sabiduría es temer a Jehová y apartarse del mal."}
+  29:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "Job echa de menos los días en que Dios lo guardaba y sus hijos lo rodeaban."}
+    - {v: 7-17, type: speech, entities: [person:job], note: "En la puerta de una ciudad sin nombre lo respetaban jóvenes, ancianos y príncipes; defendía al pobre, al huérfano y a la viuda y juzgaba con justicia."}
+    - {v: 18-25, type: speech, note: "Contaba con morir anciano en su casa; la gente esperaba sus consejos como se espera la lluvia y él los guiaba como un jefe."}
+  30:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-15, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "Ahora se burlan de él y le escupen hombres más jóvenes, hijos de gente despreciada que vivía expulsada en los barrancos."}
+    - {v: 16-31, type: speech, note: "Job describe su dolor, su piel ennegrecida y su fiebre, y se queja de que Dios no le responde aunque él siempre lloró con el pobre."}
+  31:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-12, type: speech, entities: [event:job-responde-al-tercer-discurso-de-bildad, person:job], note: "Job dice que pactó con sus ojos no desear a otra mujer ni engañar, y pide que Dios lo pese con una balanza justa."}
+    - {v: 13-23, type: speech, note: "No negó justicia a sus siervos ni abandonó al pobre, al huérfano o a la viuda: el mismo Dios los formó a todos."}
+    - {v: 24-34, type: speech, note: "No se fió de su oro ni adoró al sol o a la luna, no celebró la ruina de su enemigo y abrió su casa al forastero."}
+    - {v: 35-40, type: speech, note: "Pide que el Todopoderoso le responda y firma su defensa. El capítulo cierra diciendo que ahí terminan las palabras de Job."}
+  32:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel, person:barakel, person:ram-antepasado-de-elihu, person:buz-hijo-de-nacor, person:job, person:elifaz-el-temanita, person:bildad, person:zofar, relation:elihu-hijo-de-barakel/kin/barakel, relation:elihu-hijo-de-barakel/kin/ram-antepasado-de-elihu, relation:elihu-hijo-de-barakel/kin/buz-hijo-de-nacor, relation:barakel/kin/buz-hijo-de-nacor, relation:elifaz-el-temanita/tie/job, relation:bildad/tie/job, relation:zofar/tie/job], note: "Los tres compañeros dejan de responder a Job y Elihú, el más joven, se enoja con Job y con ellos."}
+    - {v: 6-22, type: speech, entities: [person:elihu-hijo-de-barakel], mentions: [person:barakel, person:job, person:elifaz-el-temanita, person:bildad, person:zofar], note: "Elihú explica que calló por ser joven, que la sabiduría la da el espíritu de Dios y no los años, y que hablará sin adular a nadie."}
+  33:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: speech, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel, person:job], note: "Elihú pide a Job que lo escuche: los dos fueron hechos del barro, así que no tiene por qué temerle."}
+    - {v: 8-13, type: speech, entities: [person:elihu-hijo-de-barakel, person:job], note: "Elihú repite lo que Job dijo de su inocencia y de que Dios lo trataba como enemigo, y le contesta que Dios es mayor que el hombre."}
+    - {v: 14-30, type: speech, note: "Dios corrige al hombre con sueños y con el dolor; si un mensajero intercede, Dios halla un rescate y le devuelve el vigor de la juventud."}
+    - {v: 31-33, type: speech, entities: [person:elihu-hijo-de-barakel, person:job], note: "Elihú invita a Job a responderle si puede o, si no, a callar y aprender."}
+  34:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-9, type: speech, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel, person:job], note: "Elihú se dirige a los sabios y cita a Job: dice tener razón y que no se gana nada con agradar a Dios."}
+    - {v: 10-30, type: speech, note: "Dios nunca actúa con maldad: paga a cada uno según sus obras, no favorece a príncipes ni a ricos y ve todo lo que hace el hombre."}
+    - {v: 31-37, type: speech, entities: [person:elihu-hijo-de-barakel, person:job], note: "Elihú concluye que Job habla sin conocimiento y pide que se le pruebe hasta el final."}
+  35:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-8, type: speech, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel, person:job], mentions: [person:elifaz-el-temanita, person:bildad, person:zofar], note: "Elihú responde a Job y a sus amigos: el pecado o la justicia del hombre no dañan ni enriquecen a Dios."}
+    - {v: 9-16, type: speech, entities: [person:elihu-hijo-de-barakel, person:job], note: "Los oprimidos claman, pero no buscan a su Creador, y Dios no oye un clamor vacío. Job debería esperar en él."}
+  36:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-21, type: speech, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel, person:job], note: "Elihú habla a favor de Dios, que da a cada uno lo justo y corrige a los que sufren, y advierte a Job contra la furia y el soborno."}
+    - {v: 22-33, type: speech, note: "La grandeza de Dios se ve en la lluvia, las nubes, el trueno y el rayo, con los que da alimento a los pueblos."}
+  37:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-13, type: speech, entities: [event:elihu-corrige-a-job, person:elihu-hijo-de-barakel], note: "Elihú describe la voz de Dios en el trueno, la nieve, el hielo y las nubes que él dirige para corregir o bendecir."}
+    - {v: 14-24, type: speech, entities: [person:elihu-hijo-de-barakel, person:job], note: "Elihú pregunta a Job si entiende las obras de Dios y concluye que hay que temerle, porque es poderoso y justo."}
+  38:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: speech, entities: [event:jehova-responde-a-job-desde-la-tempestad, person:job], note: "Desde la tempestad, Jehová pregunta a Job dónde estaba cuando fundó la tierra y puso límites al mar, mientras los hijos de Dios, los ángeles, gritaban de alegría."}
+    - {v: 12-30, type: speech, note: "Preguntas sobre la mañana, las profundidades del mar, las puertas de la muerte, la luz y la oscuridad, la nieve, el granizo, la lluvia, el rocío y el hielo."}
+    - {v: 31-38, type: speech, note: "Kimá (quizá las Pléyades), Kesil (quizá Orión), Mazarot y Ash (quizá la Osa Mayor) son constelaciones, no lugares de la tierra: sin ficha. Siguen las nubes, el rayo y la lluvia."}
+    - {v: 39-41, type: speech, note: "Jehová pregunta quién caza la presa del león y quién alimenta a las crías del cuervo."}
+  39:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-12, type: speech, entities: [event:jehova-responde-a-job-desde-la-tempestad], note: "Siguen las preguntas de Jehová: las cabras monteses y las ciervas al parir, el asno salvaje libre en el desierto y el toro salvaje que nadie ata al arado."}
+    - {v: 13-18, type: speech, note: "La avestruz deja sus huevos en la arena sin cuidarlos, pero corre más que el caballo."}
+    - {v: 19-25, type: speech, note: "El caballo de guerra, que salta, resopla y no retrocede ante la espada."}
+    - {v: 26-30, type: speech, note: "El halcón que vuela al sur y el águila que anida en las peñas y busca carroña."}
+  40:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: speech, entities: [event:jehova-responde-a-job-desde-la-tempestad], note: "Jehová pregunta si quien critica al Todopoderoso quiere seguir discutiendo con él."}
+    - {v: 3-5, type: speech, entities: [person:job], note: "Job reconoce que no vale nada, se tapa la boca y dice que no hablará más."}
+    - {v: 6-14, type: speech, note: "Desde la tempestad, Jehová pregunta a Job si pondrá en duda su justicia y le reta a humillar él solo a los arrogantes."}
+    - {v: 15-24, type: speech, mentions: [place:rio-jordan], note: "Behemot, quizá el hipopótamo, es un animal: sin ficha. Nada lo asusta, ni que el Jordán le golpee la boca. El río sale de pasada."}
+  41:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: speech, entities: [event:jehova-responde-a-job-desde-la-tempestad], note: "Leviatán, quizá el cocodrilo, es un animal: sin ficha. Nadie lo domina; menos aún puede alguien hacer frente a Jehová, dueño de todo."}
+    - {v: 12-34, type: speech, note: "Jehová describe las escamas, los dientes, el aliento ardiente y la fuerza de Leviatán, a quien no vencen las armas."}
+  42:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: speech, entities: [event:jehova-responde-a-job-desde-la-tempestad, person:job]}
+    - {v: 7-9, type: narration, entities: [event:jehova-reprende-a-los-companeros-de-job, person:job, person:elifaz-el-temanita, person:bildad, person:zofar, place:teman, relation:elifaz-el-temanita/tie/job, relation:bildad/tie/job, relation:zofar/tie/job, relation:elifaz-el-temanita/lived_in/teman], note: "Bildad el suhita descendía de Súah, hijo de Abrahán (Perspicacia). Naamatita, en Zofar, nombra su familia o su tierra: sin ficha de lugar."}
+    - {v: 10-17, type: narration, entities: [event:jehova-restablece-a-job, person:job, person:jemima, person:quesias, person:queren-hapuc, relation:jemima/kin/job, relation:jemima/kin/quesias, relation:jemima/kin/queren-hapuc, relation:quesias/kin/job, relation:quesias/kin/queren-hapuc, relation:queren-hapuc/kin/job]}

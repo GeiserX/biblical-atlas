@@ -1,0 +1,278 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: 1-samuel
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-8, type: narration, entities: [event:ana-hace-un-voto-en-silo, person:elcana-hijo-de-jeroham, person:jeroham-hijo-de-elihu, person:elihu-hijo-de-tohu, person:tohu, person:zuf, person:ana-madre-de-samuel, person:penina, person:hofni, person:finehas-hijo-de-eli, person:eli, place:ramataim-zofim, place:silo, relation:elcana-hijo-de-jeroham/kin/jeroham-hijo-de-elihu, relation:jeroham-hijo-de-elihu/kin/elihu-hijo-de-tohu, relation:elihu-hijo-de-tohu/kin/tohu, relation:tohu/kin/zuf, relation:elcana-hijo-de-jeroham/kin/ana-madre-de-samuel, relation:elcana-hijo-de-jeroham/kin/penina, relation:elcana-hijo-de-jeroham/lived_in/ramataim-zofim, relation:hofni/kin/eli, relation:hofni/kin/finehas-hijo-de-eli, relation:hofni/lived_in/silo, relation:finehas-hijo-de-eli/kin/eli, relation:finehas-hijo-de-eli/lived_in/silo], mentions: [place:region-montanosa-de-efrain], note: "Elcaná, levita, es llamado efraimita por vivir en Efraín. Cada año sube a Siló, donde está el tabernáculo; Peniná humilla a Ana por no tener hijos."}
+    - {v: 9-18, type: narration, entities: [event:ana-hace-un-voto-en-silo, person:ana-madre-de-samuel, person:eli, place:silo, relation:eli/lived_in/silo, relation:eli/holds_office/silo], note: "El templo de 1:9 es el tabernáculo (nota al pie). El voto de no cortar el pelo al hijo es el del nazareato (Nú 6:5)."}
+    - {v: 19-20, type: narration, entities: [event:nacimiento-de-samuel, person:samuel, person:ana-madre-de-samuel, person:elcana-hijo-de-jeroham, place:ramataim-zofim, relation:samuel/kin/elcana-hijo-de-jeroham, relation:samuel/kin/ana-madre-de-samuel, relation:samuel/born_in/ramataim-zofim, relation:ana-madre-de-samuel/lived_in/ramataim-zofim, relation:penina/lived_in/ramataim-zofim]}
+    - {v: 21-28, type: narration, entities: [event:ana-lleva-a-samuel-a-silo, person:ana-madre-de-samuel, person:samuel, person:elcana-hijo-de-jeroham, person:eli, place:silo, relation:samuel/lived_in/silo, relation:samuel/tie/eli], note: "El sujeto de «se inclinó» en 1:28 parece ser Elcaná, según la nota al pie."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-10, type: poetry, entities: [event:cantico-de-ana, person:ana-madre-de-samuel], note: "Cántico de Ana: Jehová humilla y enaltece. Habla del rey y del ungido de Jehová antes de que Israel tuviera rey (Perspicacia «Samuel, Libros de»). María dice cosas parecidas en Lu 1:46-55."}
+    - {v: "11", type: narration, entities: [event:ana-lleva-a-samuel-a-silo, person:samuel, person:elcana-hijo-de-jeroham, person:eli, place:ramataim-zofim, relation:samuel/tie/eli, relation:samuel/lived_in/silo, relation:elcana-hijo-de-jeroham/lived_in/ramataim-zofim]}
+    - {v: 12-17, type: narration, entities: [event:los-hijos-de-eli-desprecian-las-ofrendas, person:hofni, person:finehas-hijo-de-eli, person:eli, place:silo], note: "Los ayudantes sacaban carne de la olla con un tenedor y exigían carne cruda antes de quemar la grasa, que la Ley reservaba a Jehová (Le 3:16)."}
+    - {v: 18-21, type: narration, entities: [event:eli-bendice-a-elcana-y-a-ana, person:samuel, person:ana-madre-de-samuel, person:elcana-hijo-de-jeroham, person:eli, relation:samuel/kin/ana-madre-de-samuel]}
+    - {v: 22-26, type: narration, entities: [event:los-hijos-de-eli-desprecian-las-ofrendas, person:eli, person:hofni, person:finehas-hijo-de-eli, person:samuel], note: "Elí reprende a sus hijos, que se acostaban con las mujeres que hacían servicio junto a la tienda de reunión. Samuel sigue creciendo con el favor de Jehová y de la gente."}
+    - {v: 27-36, type: prophecy, entities: [event:un-hombre-de-dios-anuncia-el-juicio-contra-la-casa-de-eli, person:eli, person:hofni, person:finehas-hijo-de-eli, relation:eli/kin/aaron, relation:hofni/kin/finehas-hijo-de-eli], mentions: [person:aaron, place:egipto], note: "Se cumple con la muerte de Hofní y Finehás (1Sa 4:11) y cuando Salomón quita a Abiatar y pone a Sadoc (1Re 2:27, 35; Perspicacia «Sadoc», núm. 1). Los de Nob mueren en 1Sa 22."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-18, type: narration, entities: [event:jehova-llama-a-samuel, person:samuel, person:eli, place:silo, relation:samuel/tie/eli, relation:samuel/lived_in/silo, relation:eli/lived_in/silo], note: "El templo de 3:3 es el tabernáculo (nota al pie). Jehová confirma el castigo que ya anunció contra la casa de Elí porque este no frenó a sus hijos, que ofendían a Dios."}
+    - {v: 19-21, type: narration, entities: [event:todo-israel-reconoce-a-samuel-como-profeta, person:samuel, place:silo, relation:samuel/holds_office/-/prophet], mentions: [place:dan, place:beer-seba, place:israel], note: "De Dan a Beer-Seba es la fórmula de los dos extremos del país."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: narration, entities: [event:todo-israel-reconoce-a-samuel-como-profeta, event:los-filisteos-derrotan-a-israel-junto-a-ebenezer, place:ebenezer, place:antipatris], mentions: [person:samuel], note: "4:1a cierra el capítulo 3. Afec es la núm. 3 de Perspicacia «Afeq», en la ficha de Antípatris. Los filisteos son un pueblo."}
+    - {v: 3-9, type: narration, entities: [event:israel-lleva-el-arca-al-campamento, person:hofni, person:finehas-hijo-de-eli, place:silo, place:ebenezer, relation:hofni/kin/eli, relation:hofni/kin/finehas-hijo-de-eli, relation:finehas-hijo-de-eli/kin/eli, relation:hofni/lived_in/silo, relation:finehas-hijo-de-eli/lived_in/silo], mentions: [place:egipto], note: "Los ancianos no tienen nombre. Los filisteos recuerdan los golpes de Dios a Egipto y temen servir a los hebreos como estos les sirvieron (Jue 13:1)."}
+    - {v: 10-11, type: narration, entities: [event:los-filisteos-capturan-el-arca, person:hofni, person:finehas-hijo-de-eli, place:ebenezer, place:antipatris, relation:hofni/died_in/ebenezer, relation:finehas-hijo-de-eli/died_in/ebenezer]}
+    - {v: 12-18, type: narration, entities: [event:muerte-de-eli, person:eli, place:silo, relation:eli/died_in/silo, relation:eli/holds_office/-], note: "El mensajero, de la tribu de Benjamín, no tiene nombre. Elí tenía 98 años y había juzgado a Israel 40."}
+    - {v: 19-22, type: narration, entities: [event:nacimiento-de-icabod, person:icabod, person:finehas-hijo-de-eli, person:eli, place:silo, relation:icabod/kin/finehas-hijo-de-eli, relation:icabod/kin/eli], note: "La esposa de Finehás no tiene nombre. Icabod quiere decir «¿dónde está la gloria?» (nota al pie)."}
+  5:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:dagon-cae-ante-el-arca-en-asdod, place:asdod, place:ebenezer], mentions: [event:los-filisteos-capturan-el-arca], note: "Dagón, dios de los filisteos, no lleva ficha; su templo estaba en Asdod. La captura del Arca es de 1Sa 4. Por esta caída, sus sacerdotes evitaban pisar el umbral."}
+    - {v: 6-9, type: narration, entities: [event:jehova-castiga-a-asdod-con-hemorroides, event:jehova-castiga-a-gat-con-hemorroides, place:asdod, place:gat], note: "Los gobernantes de los filisteos, los cinco señores del eje, no tienen nombre."}
+    - {v: 10-12, type: narration, entities: [event:ecron-pide-que-se-devuelva-el-arca, place:ecron, place:gat], note: "Los ecronitas y los gobernantes no tienen nombre. Sus gritos llegan hasta los cielos."}
+  6:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-9, type: narration, entities: [event:los-filisteos-deciden-devolver-el-arca, place:filistea, place:bet-semes], mentions: [place:egipto, event:exodo], note: "Sacerdotes y adivinos sin nombre. Recuerdan que Egipto y el faraón, que no se nombra, acabaron dejando salir a Israel. Si las vacas suben hacia Bet-Semes, el castigo venía de Jehová."}
+    - {v: 10-16, type: narration, entities: [event:las-vacas-llevan-el-arca-a-bet-semes, person:josue-el-betsemita, place:bet-semes, place:ecron, relation:josue-el-betsemita/lived_in/bet-semes], note: "Cosechaban trigo en la llanura. La carreta se hace leña y las vacas, ofrenda quemada. Los levitas que bajan el Arca no tienen nombre."}
+    - {v: 17-18, type: list, entities: [event:las-vacas-llevan-el-arca-a-bet-semes, person:josue-el-betsemita], mentions: [place:asdod, place:gaza, place:asquelon, place:gat, place:ecron], note: "Una hemorroide de oro por cada ciudad de un gobernante; tantos ratones como ciudades y aldeas filisteas. La gran piedra del campo de Josué no tiene nombre propio."}
+    - {v: 19-21, type: narration, entities: [event:jehova-castiga-a-los-de-bet-semes-por-mirar-el-arca, place:bet-semes, place:quiryat-jearim], note: "La TNM da 50.070 muertos y en la nota al pie el hebreo literal. Perspicacia «Bet-semes» cuenta 70 y ve añadidos los 50.000. El traslado sigue en 1Sa 7:1."}
+  7:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: narration, entities: [event:el-arca-queda-en-casa-de-abinadab, person:abinadab-de-quiryat-jearim, person:eleazar-hijo-de-abinadab, place:quiryat-jearim, relation:abinadab-de-quiryat-jearim/lived_in/quiryat-jearim, relation:eleazar-hijo-de-abinadab/kin/abinadab-de-quiryat-jearim, relation:eleazar-hijo-de-abinadab/lived_in/quiryat-jearim], note: "Sigue al mensaje de 1Sa 6:21. Las referencias llevan al traslado del Arca por David (2Sa 6:2-4; 1Cr 13:5-7), suceso que crea 2 Samuel."}
+    - {v: 3-4, type: narration, entities: [event:samuel-exhorta-a-israel-a-servir-solo-a-jehova, person:samuel], mentions: [place:filistea], note: "Los Baales y Astoret son dioses, sin ficha. Los filisteos son un pueblo; su tierra va en menciona."}
+    - {v: 5-6, type: narration, entities: [event:samuel-reune-a-israel-en-mizpa, person:samuel, place:mizpa-de-benjamin, relation:samuel/holds_office/-/judge], note: "Derramar agua y ayunar acompañan la confesión. Desde aquí Samuel juzga a Israel."}
+    - {v: 7-12, type: narration, entities: [event:jehova-derrota-a-los-filisteos-en-mizpa, person:samuel, place:mizpa-de-benjamin, place:bet-car, place:jesana], mentions: [place:filistea], note: "Ebenézer, «piedra de ayuda», es la piedra que Samuel levanta: va en nombres de Mizpá, no es el Ebenézer de 1Sa 4:1. Los gobernantes filisteos no tienen nombre."}
+    - {v: 13-14, type: narration, entities: [event:jehova-derrota-a-los-filisteos-en-mizpa, place:ecron, place:gat], mentions: [person:samuel, place:israel, place:filistea], note: "Los filisteos ya no invaden en los días de Samuel e Israel recobra sus ciudades, de Ecrón a Gat. Los amorreos son un pueblo sin ficha."}
+    - {v: 15-17, type: narration, entities: [event:samuel-juzga-a-israel-en-su-recorrido-anual, person:samuel, place:ramataim-zofim, place:betel, place:mizpa-de-benjamin, relation:samuel/lived_in/ramataim-zofim, relation:samuel/holds_office/-/judge], mentions: [place:guilgal, place:guilgal-cerca-de-betel], note: "Perspicacia «Guilgal» no sabe si la del recorrido es la de junto a Jericó (núm. 1) o la de cerca de Betel (núm. 2): las dos van en menciona."}
+  8:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: narration, entities: [event:samuel-nombra-jueces-a-joel-y-abias, person:samuel, person:joel-hijo-de-samuel, person:abias-hijo-de-samuel, place:beer-seba, relation:joel-hijo-de-samuel/kin/samuel, relation:joel-hijo-de-samuel/kin/abias-hijo-de-samuel, relation:joel-hijo-de-samuel/lived_in/beer-seba, relation:abias-hijo-de-samuel/kin/samuel, relation:abias-hijo-de-samuel/lived_in/beer-seba], note: "La referencia lleva a 1Cr 6:28, que repite los dos hijos."}
+    - {v: 4-9, type: narration, entities: [event:israel-pide-un-rey, person:samuel, place:ramataim-zofim], mentions: [place:egipto, event:exodo], note: "Jehová dice que al pedir rey lo rechazan a él, como hacen desde que salieron de Egipto, y manda a Samuel que les advierta."}
+    - {v: 10-18, type: speech, entities: [event:israel-pide-un-rey], note: "Samuel explica lo que exigirá el rey: hijos para sus carros y sus campos, hijas para su casa, tierras, la décima parte de cosechas y rebaños, y siervos."}
+    - {v: 19-22, type: narration, entities: [event:israel-pide-un-rey, person:samuel], note: "El pueblo insiste en ser como las demás naciones y Jehová manda darles rey. La referencia lleva a Os 13:11."}
+  9:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: genealogy, entities: [person:quis-hijo-de-ner, person:abiel-hijo-de-zeror, person:zeror, person:becorat, person:afias, person:saul, relation:quis-hijo-de-ner/kin/abiel-hijo-de-zeror, relation:abiel-hijo-de-zeror/kin/zeror, relation:zeror/kin/becorat, relation:becorat/kin/afias, relation:saul/kin/quis-hijo-de-ner], note: "Benjamín es aquí la tribu, sin ficha. Perspicacia «Abiel», núm. 1, lee «hijo de Abiel» como nieto: entre los dos va Ner."}
+    - {v: 3-10, type: narration, entities: [event:saul-busca-los-burros-de-quis, person:saul, person:quis-hijo-de-ner, place:region-montanosa-de-efrain, place:salisa, place:saalim, place:benjamin, place:zuf], note: "El sirviente no tiene nombre. El hombre de Dios de la ciudad es Samuel (v. 14); el v. 9 explica que al profeta antes se le llamaba vidente."}
+    - {v: 11-14, type: narration, entities: [event:samuel-recibe-a-saul, person:samuel, person:saul, place:zuf], note: "Las muchachas que van por agua no tienen nombre. El lugar alto de la ciudad tampoco."}
+    - {v: 15-17, type: narration, entities: [event:samuel-recibe-a-saul, person:samuel, person:saul], mentions: [place:benjamin], note: "La víspera, Jehová avisa a Samuel de que ungirá a un benjaminita que librará a Israel de los filisteos, pueblo sin ficha."}
+    - {v: 18-21, type: narration, entities: [event:samuel-recibe-a-saul, person:samuel, person:saul], note: "Saúl se presenta como de la tribu más pequeña, Benjamín, y de la familia más humilde de ella."}
+    - {v: 22-25, type: narration, entities: [event:samuel-recibe-a-saul, person:samuel, person:saul], note: "Unos 30 invitados comen en el comedor del lugar alto. El cocinero no tiene nombre."}
+    - {v: 26-27, type: narration, entities: [event:saul-ungido-rey, person:samuel, person:saul], note: "Samuel hace que el sirviente se adelante para darle a Saúl un mensaje de Dios a solas."}
+  10:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-8, type: narration, entities: [event:saul-ungido-rey, person:samuel, person:saul, place:zelza, place:arbol-grande-de-tabor, place:benjamin, person:raquel], mentions: [place:betel, place:guilgal], note: "Samuel anuncia tres señales: dos hombres junto a la tumba de Raquel, tres camino de Betel y un grupo de profetas en la colina del Dios verdadero, donde había una tropa filistea. Guilgal es la del núm. 1."}
+    - {v: 9-13, type: narration, entities: [event:saul-se-une-a-los-profetas, person:saul, person:quis-hijo-de-ner, relation:saul/kin/quis-hijo-de-ner], note: "La colina del Dios verdadero no lleva ficha: la TNM no la escribe como nombre propio y jw.org no la identifica. Los profetas no tienen nombre."}
+    - {v: 14-16, type: narration, entities: [person:saul], mentions: [person:samuel], note: "Saúl cuenta a su tío que Samuel le dijo que los burros habían aparecido, y calla lo del reino. El tío no tiene nombre; Perspicacia no dice si era Abner."}
+    - {v: 17-19, type: speech, entities: [event:saul-elegido-rey-en-mizpa, place:mizpa-de-benjamin, person:samuel], mentions: [place:egipto, event:exodo], note: "Samuel recuerda que Jehová sacó a Israel de Egipto y que, al pedir rey, el pueblo lo ha rechazado."}
+    - {v: 20-25, type: narration, entities: [event:saul-elegido-rey-en-mizpa, person:saul, person:samuel, relation:saul/kin/quis-hijo-de-ner, period:saul], note: "Benjamín es la tribu y los matritas su familia, sin ficha: Perspicacia «Abiel» dice que Matri no sale en la Biblia. Samuel pone por escrito los derechos del rey."}
+    - {v: 26-27, type: narration, entities: [event:saul-vuelve-a-guibea, place:guibea-de-benjamin, person:saul, relation:saul/lived_in/guibea-de-benjamin, relation:quis-hijo-de-ner/lived_in/guibea-de-benjamin], note: "Los guerreros que lo acompañan y los hombres inútiles no tienen nombre."}
+  11:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: narration, entities: [event:nahas-sitia-jabes-galaad, person:nahas-rey-de-ammon, place:jabes-galaad, relation:nahas-rey-de-ammon/lived_in/ammon], mentions: [place:galaad, place:israel, place:ammon]}
+    - {v: 4-7, type: narration, entities: [event:saul-reune-a-israel-contra-nahas, person:saul, place:guibea-de-benjamin, relation:saul/lived_in/guibea-de-benjamin], mentions: [person:samuel, place:israel]}
+    - {v: 8-10, type: narration, entities: [event:saul-pasa-revista-al-ejercito-en-bezec, person:saul, place:bezec-cerca-de-siquem], mentions: [place:jabes-galaad, place:galaad, place:bezec], note: "Judá se cuenta aparte, como pueblo, sin ficha. La otra Bézec, la de Adoni-Bézec, va en menciona porque su ficha nombra este versículo para distinguirse."}
+    - {v: 11-13, type: narration, entities: [event:saul-derrota-a-los-ammonitas-en-jabes-galaad, person:saul, person:samuel, place:jabes-galaad], note: "Los que despreciaron a Saúl son los de 1Sa 10:27."}
+    - {v: 14-15, type: narration, entities: [event:saul-confirmado-rey-en-guilgal, person:samuel, person:saul, place:guilgal], mentions: [event:saul-ungido-rey]}
+  12:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: speech, entities: [event:samuel-habla-a-israel-en-guilgal, person:samuel, person:saul], mentions: [event:saul-ungido-rey], note: "Samuel, ya viejo, dice que sus hijos están entre el pueblo; no los nombra. El ungido de Jehová es Saúl."}
+    - {v: 6-8, type: speech, entities: [event:samuel-habla-a-israel-en-guilgal], mentions: [person:moises, person:aaron, person:jacob, place:egipto, event:jacob-entra-en-egipto, event:exodo, event:conquista-de-canaan], note: "Samuel recuerda la bajada de Jacob a Egipto, la salida con Moisés y Aarón y la llegada a la tierra."}
+    - {v: 9-11, type: speech, entities: [event:samuel-habla-a-israel-en-guilgal, person:bedan-libertador, relation:bedan-libertador/same_as/barac, person:samuel], mentions: [person:sisara-de-haroset, place:hazor, place:moab, person:gedeon, person:jefte, event:jabin-oprime-a-israel, event:eglon-toma-la-ciudad-de-las-palmeras, event:los-ammonitas-y-los-filisteos-oprimen-a-israel, event:israel-se-arrepiente-y-vuelve-a-jehova, event:barac-derrota-a-sisara-junto-al-cison, event:gedeon-derrota-a-madian-con-300-hombres, event:jefte-vence-a-los-ammonitas, event:jehova-derrota-a-los-filisteos-en-mizpa], note: "Jerubaal es Gedeón. El rey de Moab no lleva nombre aquí. Baales y Astoret son dioses, sin ficha. Samuel se cuenta entre los libertadores por la victoria de Mizpá."}
+    - {v: 12-15, type: speech, entities: [event:samuel-habla-a-israel-en-guilgal, person:nahas-rey-de-ammon, relation:nahas-rey-de-ammon/lived_in/ammon], mentions: [place:ammon, event:saul-ungido-rey, event:israel-pide-un-rey], note: "Según Perspicacia «Samuel», la amenaza de Nahás llevó a pedir rey; pedirlo fue rechazar a Jehová como Rey. Irán bien si rey y pueblo obedecen."}
+    - {v: 16-19, type: narration, entities: [event:jehova-manda-truenos-y-lluvia-en-la-cosecha-del-trigo, person:samuel]}
+    - {v: 20-25, type: speech, entities: [event:samuel-habla-a-israel-en-guilgal, person:samuel], note: "Samuel los anima a no dejar a Jehová por ídolos vacíos y promete seguir orando por ellos."}
+  13:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: narration, entities: [person:saul], mentions: [period:saul], note: "La edad de Saúl al empezar a reinar falta en el texto hebreo (nota al pie). La referencia remite a Hechos, que da cuarenta años a su reinado."}
+    - {v: 2-4, type: narration, entities: [event:jonatan-derrota-a-la-guarnicion-filistea-de-gueba, person:saul, person:jonatan-hijo-de-saul, place:micmash, place:betel, place:guibea-de-benjamin, place:gueba, place:guilgal]}
+    - {v: 5-7, type: narration, entities: [event:los-filisteos-acampan-en-micmash, person:saul, place:micmash, place:bet-aven, place:guilgal], mentions: [place:rio-jordan, place:gad, place:galaad], note: "Los filisteos no son persona ni lugar aquí. Parte de los hebreos cruza el Jordán hacia Gad y Galaad."}
+    - {v: 8-15, type: narration, entities: [event:saul-ofrece-el-sacrificio-sin-esperar-a-samuel, person:saul, person:samuel, place:guilgal, place:guibea-de-benjamin], note: "El hombre grato al corazón de Jehová (v. 14) es David según las referencias marginales; la unción de David la crea 1 Samuel 16."}
+    - {v: 16-18, type: narration, entities: [event:los-filisteos-salen-a-saquear-desde-micmash, person:saul, person:jonatan-hijo-de-saul, place:gueba, place:micmash, place:ofra-de-benjamin, place:sual, place:valle-de-zeboim, relation:jonatan-hijo-de-saul/kin/saul], mentions: [place:bet-horon-alta, place:bet-horon-baja], note: "El camino de Bet-Horón no dice a cuál de las dos Bet-Horón lleva; Perspicacia «Bet-horón» tampoco."}
+    - {v: 19-22, type: narration, mentions: [place:israel], note: "No había herreros en Israel: los filisteos lo impedían y cobraban un pim, unos dos tercios de siclo, por afilar las herramientas. Solo Saúl y Jonatán tenían espada o lanza."}
+    - {v: "23", type: narration, entities: [event:jonatan-y-su-escudero-atacan-el-puesto-filisteo, place:micmash], note: "Un puesto filisteo se apuesta en el desfiladero de Micmash; el ataque sigue en 1Sa 14."}
+  14:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:jonatan-y-su-escudero-atacan-el-puesto-filisteo, person:jonatan-hijo-de-saul, person:saul, person:ahiya-hijo-de-ahitub, person:ahitub-hijo-de-finehas, person:icabod, person:finehas-hijo-de-eli, place:guibea-de-benjamin, place:migron, place:bozez, place:sene, place:micmash, place:gueba, relation:jonatan-hijo-de-saul/kin/saul, relation:ahiya-hijo-de-ahitub/kin/ahitub-hijo-de-finehas, relation:ahiya-hijo-de-ahitub/same_as/ahimelec-hijo-de-ahitub, relation:ahitub-hijo-de-finehas/kin/finehas-hijo-de-eli, relation:ahitub-hijo-de-finehas/kin/icabod, relation:icabod/kin/finehas-hijo-de-eli, relation:finehas-hijo-de-eli/kin/eli], mentions: [person:eli, place:silo, person:ahimelec-hijo-de-ahitub], note: "El escudero de Jonatán no tiene nombre. Ahíya lleva el efod en el campamento de Saúl, bajo el granado de Migrón."}
+    - {v: 6-14, type: narration, entities: [event:jonatan-y-su-escudero-atacan-el-puesto-filisteo, person:jonatan-hijo-de-saul], note: "La nota al pie del v. 14 explica la medida: media yugada, lo que una pareja de toros ara en media jornada."}
+    - {v: 15-23, type: narration, entities: [event:israel-derrota-a-los-filisteos-en-micmash, person:saul, person:jonatan-hijo-de-saul, person:ahiya-hijo-de-ahitub, place:micmash, place:guibea-de-benjamin, place:migron, place:region-montanosa-de-efrain, place:bet-aven], note: "Donde el texto masorético dice que Saúl pidió el Arca, la Septuaginta dice el efod (Perspicacia «Arca del pacto»)."}
+    - {v: 24-30, type: narration, entities: [event:jonatan-prueba-la-miel-pese-al-juramento-de-saul, person:jonatan-hijo-de-saul, person:saul], note: "El bosque donde goteaba la miel no tiene nombre."}
+    - {v: 31-35, type: narration, entities: [event:saul-construye-su-primer-altar, person:saul, place:micmash, place:ayalon]}
+    - {v: 36-46, type: narration, entities: [event:la-suerte-senala-a-jonatan, person:jonatan-hijo-de-saul, person:saul, person:ahiya-hijo-de-ahitub], mentions: [place:filistea], note: "Saúl pide respuesta con el Tumim y después echa suertes. Los filisteos se retiran a su tierra."}
+    - {v: 47-48, type: narration, entities: [event:saul-guerrea-contra-los-pueblos-vecinos, person:saul, place:zoba], mentions: [place:moab, place:ammon, place:edom, place:filistea, place:amalec], note: "La victoria sobre los amalequitas se cuenta en 1 Samuel 15."}
+    - {v: 49-51, type: genealogy, entities: [person:saul, person:jonatan-hijo-de-saul, person:isvi-hijo-de-saul, person:malki-sua, person:merab, person:mical, person:ahinoam-hija-de-ahimaaz, person:ahimaaz-padre-de-ahinoam, person:abner, person:ner, person:quis-hijo-de-ner, person:abiel-hijo-de-zeror, relation:isvi-hijo-de-saul/kin/saul, relation:malki-sua/kin/saul, relation:merab/kin/saul, relation:merab/kin/mical, relation:mical/kin/saul, relation:jonatan-hijo-de-saul/kin/ahinoam-hija-de-ahimaaz, relation:saul/kin/ahinoam-hija-de-ahimaaz, relation:ahinoam-hija-de-ahimaaz/kin/ahimaaz-padre-de-ahinoam, relation:saul/kin/abner, relation:abner/kin/ner, relation:abner/accompanies/saul, relation:saul/kin/quis-hijo-de-ner, relation:quis-hijo-de-ner/kin/ner, relation:ner/kin/abiel-hijo-de-zeror]}
+    - {v: "52", type: narration, entities: [event:saul-guerrea-contra-los-pueblos-vecinos, person:saul], note: "Guerra dura con los filisteos durante todo el reinado; Saúl recluta a todo hombre fuerte o valiente que ve."}
+  15:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: narration, entities: [event:jehova-manda-a-saul-destruir-a-amalec, person:samuel, person:saul], mentions: [event:batalla-contra-amalec-en-refidim, place:amalec, place:egipto], note: "Amalec es aquí el pueblo amalequita. Jehová le pide cuentas por el ataque de Refidim, como manda Dt 25:17-19."}
+    - {v: "4", type: narration, entities: [event:saul-pasa-revista-al-ejercito-en-telaim, person:saul, place:telem], mentions: [place:juda], note: "Telaim es, al parecer, Télem. Judá es la tribu: diez mil de sus hombres se suman al ejército."}
+    - {v: 5-9, type: narration, entities: [event:saul-derrota-a-los-amalequitas, person:saul, person:agag-de-tiempos-de-saul, place:amalec, place:havila-cerca-de-sur, place:sur, relation:agag-de-tiempos-de-saul/lived_in/amalec], mentions: [place:egipto], note: "La ciudad de Amalec no lleva nombre. Los quenitas, pueblo sin ficha, se apartan porque fueron leales a Israel al salir de Egipto."}
+    - {v: 10-12, type: narration, entities: [event:saul-levanta-un-monumento-en-carmelo, person:samuel, person:saul, place:carmelo-de-juda], mentions: [place:guilgal], note: "De noche Jehová dice a Samuel que le pesa haber hecho rey a Saúl. Samuel pasa la noche suplicando y sale a buscarlo."}
+    - {v: 13-31, type: narration, entities: [event:jehova-rechaza-a-saul-como-rey, person:samuel, person:saul, place:guilgal], mentions: [person:agag-de-tiempos-de-saul, place:israel], note: "La Excelencia de Israel es Dios. Los terafim de la nota del v. 23 son dioses domésticos, sin ficha. Las referencias remiten a Hch 13:22."}
+    - {v: 32-33, type: narration, entities: [event:muerte-de-agag, person:agag-de-tiempos-de-saul, person:samuel, place:guilgal, relation:agag-de-tiempos-de-saul/died_in/guilgal]}
+    - {v: 34-35, type: narration, entities: [event:samuel-se-separa-de-saul, person:samuel, person:saul, place:ramataim-zofim, place:guibea-de-benjamin, relation:samuel/lived_in/ramataim-zofim, relation:saul/lived_in/guibea-de-benjamin]}
+  16:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:samuel-unge-a-david, person:samuel, person:jese, person:saul, place:belen, relation:jese/lived_in/belen], mentions: [event:jehova-rechaza-a-saul-como-rey, event:samuel-se-separa-de-saul], note: "Jehová corta el duelo de Samuel por Saúl y lo manda a ungir a un hijo de Jesé; el sacrificio disimula el viaje. Los ancianos de Belén no llevan nombre."}
+    - {v: 6-13, type: narration, entities: [event:samuel-unge-a-david, event:nacimiento-de-david, person:samuel, person:jese, person:eliab-hijo-de-jese, person:abinadab-hijo-de-jese, person:sama-hijo-de-jese, person:david, place:ramataim-zofim, relation:samuel/lived_in/ramataim-zofim, relation:eliab-hijo-de-jese/kin/jese, relation:abinadab-hijo-de-jese/kin/jese, relation:sama-hijo-de-jese/kin/jese, relation:david/kin/jese, relation:eliab-hijo-de-jese/kin/abinadab-hijo-de-jese, relation:eliab-hijo-de-jese/kin/sama-hijo-de-jese, relation:eliab-hijo-de-jese/kin/david, relation:abinadab-hijo-de-jese/kin/sama-hijo-de-jese, relation:abinadab-hijo-de-jese/kin/david, relation:sama-hijo-de-jese/kin/david], note: "Pasan siete hijos de Jesé; aquí solo se nombran tres. 1Cr 2:14, 15 da otros tres, y Perspicacia «Jesé» cree que el que falta murió sin hijos. La nota de 16:9 da la grafía Samah."}
+    - {v: 14-23, type: narration, entities: [event:david-entra-al-servicio-de-saul, person:saul, person:david, person:jese, relation:david/accompanies/saul, relation:david/kin/jese], mentions: [place:belen], note: "El siervo que recomienda a David no lleva nombre. Perspicacia «Saúl», párr. 13: al retirar su espíritu, Jehová dejó que un mal espíritu dominara a Saúl, y por eso se lo llama «de parte de Jehová»."}
+  17:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-3, type: narration, entities: [event:goliat-desafia-a-israel, person:saul, place:soco, place:azeca, place:efes-damim, place:valle-de-ela], mentions: [place:juda], note: "Los filisteos son un pueblo y no llevan ficha. Las notas al pie leen también «la llanura baja» de Elá y dan las grafías Socoh y Elah."}
+    - {v: 4-11, type: narration, entities: [event:goliat-desafia-a-israel, person:goliat, person:saul, place:gat, relation:goliat/born_in/gat], note: "Según las notas al pie y el apéndice B14, medía unos 2,9 m, su coraza pesaba unos 57 kg y la punta de su lanza, unos 6,8 kg. Su escudero no lleva nombre."}
+    - {v: 12-16, type: narration, entities: [event:goliat-desafia-a-israel, event:nacimiento-de-david, person:david, person:jese, person:eliab-hijo-de-jese, person:abinadab-hijo-de-jese, person:sama-hijo-de-jese, person:saul, place:belen, relation:jese/lived_in/belen, relation:david/lived_in/belen, relation:david/accompanies/saul, relation:eliab-hijo-de-jese/kin/jese, relation:abinadab-hijo-de-jese/kin/jese, relation:sama-hijo-de-jese/kin/jese, relation:david/kin/jese, relation:eliab-hijo-de-jese/kin/abinadab-hijo-de-jese, relation:eliab-hijo-de-jese/kin/sama-hijo-de-jese, relation:eliab-hijo-de-jese/kin/david, relation:abinadab-hijo-de-jese/kin/sama-hijo-de-jese, relation:abinadab-hijo-de-jese/kin/david, relation:sama-hijo-de-jese/kin/david], mentions: [place:juda], note: "Jesé tuvo ocho hijos y 1Cr 2:13-15 nombra siete; Perspicacia «Jesé» cree que uno murió sin descendencia. Efrateo remite a Efrata, antiguo nombre de Belén."}
+    - {v: 17-30, type: narration, entities: [event:david-mata-a-goliat, person:david, person:jese, person:eliab-hijo-de-jese, person:goliat, person:saul, place:valle-de-ela, relation:eliab-hijo-de-jese/kin/david], mentions: [place:gat, event:saul-casa-a-merab-con-adriel], note: "El jefe de mil y la hija que el rey promete al vencedor no llevan nombre aquí. Perspicacia «Saúl» cree que librar a la casa del padre era eximirla de impuestos y servicio."}
+    - {v: 31-40, type: narration, entities: [event:david-mata-a-goliat, person:david, person:saul], note: "David cuenta que ya había acabado con un león y con un oso. Deja la armadura de Saúl y toma cinco piedras lisas del riachuelo."}
+    - {v: 41-51, type: narration, entities: [event:david-mata-a-goliat, person:david, person:goliat, relation:goliat/died_in/valle-de-ela], note: "Goliat maldice a David por sus dioses, que el texto no nombra."}
+    - {v: 52-54, type: narration, entities: [event:david-mata-a-goliat, person:david, place:valle-de-ela, place:ecron, place:saaraim, place:gat, place:jerusalen], note: "Perspicacia «Goliat», párr. 4: Jerusalén ya tenía israelitas y jebuseos, aunque David no tomó la fortaleza de Sión hasta más tarde (2Sa 5:7)."}
+    - {v: 55-58, type: narration, entities: [event:saul-pregunta-por-el-padre-de-david, person:saul, person:abner, person:david, person:jese, relation:abner/accompanies/saul, relation:david/kin/jese], mentions: [place:belen]}
+  18:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:jonatan-hace-un-pacto-con-david, person:jonatan-hijo-de-saul, person:david, person:saul, relation:jonatan-hijo-de-saul/tie/david], note: "Sigue a la conversación de David con Saúl tras vencer a Goliat (1Sa 17:55-58). Saúl ya no deja a David volver a casa de su padre."}
+    - {v: 6-9, type: narration, entities: [event:las-mujeres-de-israel-cantan-las-victorias-de-david, person:david, person:saul], mentions: [place:israel], note: "Los filisteos repiten luego el mismo canto en Gat y antes de Guilboa (1Sa 21:11; 29:5, referencias del v. 7)."}
+    - {v: 10-16, type: narration, entities: [event:saul-arroja-su-lanza-contra-david, person:saul, person:david], note: "El mal espíritu de parte de Dios ya había venido sobre Saúl en 1Sa 16:14. La nota al pie del v. 10 admite «se portó como profeta»."}
+    - {v: 17-19, type: narration, entities: [event:saul-casa-a-merab-con-adriel, person:saul, person:david, person:merab, person:adriel, relation:merab/kin/saul, relation:adriel/kin/merab, relation:adriel/kin/saul, relation:adriel/born_in/abel-mehola], mentions: [place:abel-mehola], note: "Meholatita remite a Abel-meholá. La referencia del v. 19 lleva a 2Sa 21:8, donde mueren los hijos de Adriel."}
+    - {v: 20-27, type: narration, entities: [event:david-se-casa-con-mical, person:mical, person:david, person:saul, relation:mical/kin/saul, relation:merab/kin/mical, relation:david/kin/mical, relation:david/kin/saul], note: "La nota al pie del v. 25 traduce dote también como precio. David entrega el doble de lo pedido."}
+    - {v: 28-30, type: narration, entities: [person:saul, person:david], note: "Resumen: Saúl ve que Jehová está con David y que Mical lo ama, y se vuelve su enemigo para siempre. David vence a los príncipes filisteos mejor que nadie."}
+  19:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: narration, entities: [event:jonatan-intercede-por-david-ante-saul, person:jonatan-hijo-de-saul, person:saul, person:david, relation:jonatan-hijo-de-saul/kin/saul, relation:jonatan-hijo-de-saul/tie/david], note: "El filisteo del v. 5 es Goliat: la referencia remite a 1Sa 17:49. La nota al pie traduce la gran victoria también como salvación."}
+    - {v: 8-10, type: narration, entities: [event:saul-intenta-otra-vez-clavar-a-david, person:saul, person:david], note: "Una nueva guerra con los filisteos, sin lugar, abre la escena. La referencia del v. 9 vuelve al mal espíritu de 1Sa 16:14."}
+    - {v: 11-17, type: narration, entities: [event:mical-ayuda-a-david-a-escapar, person:mical, person:david, person:saul, relation:david/kin/mical], note: "El ídolo doméstico es, literalmente, terafim (nota al pie); no lleva ficha. La casa de David no tiene ciudad en el texto."}
+    - {v: 18-19, type: narration, entities: [event:david-huye-a-samuel-en-rama, person:david, person:samuel, place:ramataim-zofim, relation:samuel/lived_in/ramataim-zofim], note: "Nayot va en los nombres de Ramá: Perspicacia «Nayot» lo ve como un paraje de la ciudad, y el punto de OpenBible cae en otra Ramá."}
+    - {v: 20-24, type: narration, entities: [event:saul-y-sus-mensajeros-profetizan-en-nayot, person:saul, person:samuel, person:david, place:ramataim-zofim, place:secu], note: "El dicho de si Saúl también es profeta ya había nacido en 1Sa 10:11, 12. La nota al pie del v. 24 admite «con poca ropa»."}
+  20:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-23, type: narration, entities: [event:david-acude-a-jonatan, person:david, person:jonatan-hijo-de-saul, relation:jonatan-hijo-de-saul/tie/david, relation:david/lived_in/belen], mentions: [place:ramataim-zofim, person:saul, place:belen], note: "David huye de Nayot, paraje de Ramá que va en sus nombres. Con Jonatán planea faltar a la comida de la luna nueva con la excusa de un sacrificio en Belén; Jonatán le pide amor leal para su casa."}
+    - {v: 24-34, type: narration, entities: [event:saul-arroja-su-lanza-a-jonatan, person:saul, person:jonatan-hijo-de-saul, person:abner, relation:jonatan-hijo-de-saul/kin/saul, relation:david/kin/jese], mentions: [person:david, person:jese, place:belen], note: "Saúl insulta a la madre de Jonatán sin nombrarla; Perspicacia la llama Ahinoam (1Sa 14:50)."}
+    - {v: 35-42, type: narration, entities: [event:jonatan-avisa-a-david-con-las-flechas, person:jonatan-hijo-de-saul, person:david], note: "El muchacho que recoge las flechas no tiene nombre. Jonatán vuelve a la ciudad, que el texto no nombra."}
+  21:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-9, type: narration, entities: [event:david-recibe-el-pan-santo-en-nob, place:nob, person:david, person:ahimelec-hijo-de-ahitub, person:doeg, person:goliat, relation:ahimelec-hijo-de-ahitub/lived_in/nob, relation:doeg/accompanies/saul, relation:doeg/kin/esau, relation:goliat/died_in/valle-de-ela], mentions: [person:saul, place:valle-de-ela, place:edom, place:filistea, event:david-mata-a-goliat], note: "El pan santo es el pan de la presencia retirado del tabernáculo. La espada recuerda la muerte de Goliat (1Sa 17). Doeg lo contará a Saúl en 1Sa 22:9."}
+    - {v: 10-15, type: narration, entities: [event:david-se-hace-el-loco-ante-akis, person:david, person:akis, place:gat, relation:akis/lived_in/gat], mentions: [person:saul, event:las-mujeres-de-israel-cantan-las-victorias-de-david], note: "Los siervos de Akís recuerdan el canto de las mujeres tras la victoria (1Sa 18:6-8). Los salmos 34 y 56 nacen de esta experiencia."}
+  22:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: narration, entities: [event:david-se-refugia-en-la-cueva-de-adulam, person:david, place:adulam], note: "Los hermanos de David, sin nombre, bajan a la cueva. Perspicacia «Cueva» y «David» ven posible que los Salmos 57 y 142 aludan a esta cueva o a la de En-Guedí; no les añadimos el pasaje."}
+    - {v: 3-4, type: narration, entities: [event:david-deja-a-sus-padres-con-el-rey-de-moab, person:david, person:jese, place:mizpe-de-moab, relation:jese/lived_in/mizpe-de-moab], mentions: [place:moab], note: "El rey de Moab y la madre de David no tienen nombre. Rut, la moabita, era bisabuela de David (referencia a Rut 4)."}
+    - {v: "5", type: narration, entities: [event:gad-manda-a-david-volver-a-juda, person:gad-profeta, person:david, place:bosque-de-heret, relation:gad-profeta/accompanies/david], mentions: [place:juda]}
+    - {v: 6-18, type: narration, entities: [event:saul-manda-matar-a-los-sacerdotes-de-nob, person:saul, person:doeg, person:ahimelec-hijo-de-ahitub, person:ahitub-hijo-de-finehas, person:david, place:guibea-de-benjamin, place:nob, relation:saul/lived_in/guibea-de-benjamin, relation:doeg/kin/esau, relation:doeg/accompanies/saul, relation:ahimelec-hijo-de-ahitub/kin/ahitub-hijo-de-finehas, relation:ahimelec-hijo-de-ahitub/lived_in/nob, relation:david/kin/jese, relation:david/kin/saul, relation:david/accompanies/saul, relation:ahimelec-hijo-de-ahitub/died_in/guibea-de-benjamin], mentions: [person:jese, person:jonatan-hijo-de-saul, person:goliat, place:edom], note: "Los hombres de Benjamín son la tribu, sin ficha. El hijo que pactó con David es Jonatán (referencias a 1Sa 18:3 y 20:17). Los 85 muertos llevaban efod de lino."}
+    - {v: "19", type: narration, entities: [event:doeg-arrasa-nob, person:doeg, place:nob]}
+    - {v: 20-23, type: narration, entities: [event:abiatar-escapa-y-se-une-a-david, person:abiatar, person:david, relation:abiatar/kin/ahimelec-hijo-de-ahitub, relation:abiatar/accompanies/david, relation:abiatar/lived_in/nob], mentions: [person:ahimelec-hijo-de-ahitub, person:ahitub-hijo-de-finehas, person:saul, person:doeg]}
+  23:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-5, type: narration, entities: [event:david-libra-queila-de-los-filisteos, person:david, place:queila], mentions: [place:juda, place:filistea]}
+    - {v: "6", type: narration, entities: [event:abiatar-escapa-y-se-une-a-david, person:abiatar, relation:abiatar/kin/ahimelec-hijo-de-ahitub, relation:abiatar/accompanies/david], mentions: [person:ahimelec-hijo-de-ahitub, person:david, place:queila]}
+    - {v: 7-13, type: narration, entities: [event:david-sale-de-queila, person:david, person:saul, person:abiatar, place:queila, relation:david/lived_in/queila], note: "Los líderes de Queilá, sin nombre, lo habrían entregado. El efod lleva el Urim y el Tumim según Perspicacia «Abiatar»."}
+    - {v: 14-18, type: narration, entities: [event:jonatan-anima-a-david-en-hores, person:jonatan-hijo-de-saul, person:david, place:hores, place:zif, relation:jonatan-hijo-de-saul/kin/saul, relation:jonatan-hijo-de-saul/tie/david], mentions: [person:saul, place:israel], note: "El encabezamiento del Salmo 63 (David en el desierto de Judá) remite al v. 14; la lectura de Salmos lo dejó sin suceso, así que no le añadimos el salmo."}
+    - {v: 19-23, type: narration, entities: [event:los-de-zif-delatan-a-david-ante-saul, person:saul, place:guibea-de-benjamin, place:zif, place:hakila, place:jesimon-de-juda, relation:saul/lived_in/guibea-de-benjamin], mentions: [person:david, place:hores, place:juda], note: "Los zifeos son el pueblo de Zif, sin ficha. El Salmo 54 remite a este suceso y a 1Sa 26:1."}
+    - {v: 24-28, type: narration, entities: [event:saul-persigue-a-david-en-el-desierto-de-maon, person:saul, person:david, place:maon, place:penasco-de-las-divisiones, place:jesimon-de-juda], mentions: [place:zif, place:araba, place:filistea], note: "El v. 24 pone el desierto de Maón en el Arabá; la referencia remite a Dt 1:7."}
+    - {v: "29", type: narration, entities: [event:david-se-refugia-en-en-guedi, person:david, place:en-guedi]}
+  24:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: narration, entities: [event:david-perdona-la-vida-a-saul-en-en-guedi, person:saul, person:david, place:en-guedi], mentions: [event:saul-persigue-a-david-en-el-desierto-de-maon], note: "Saúl vuelve de rechazar a los filisteos (1Sa 23:27, 28). Los riscos de las cabras monteses no son nombre propio en la TNM. Perspicacia «Cueva» solo ve posible que los Salmos 57 y 142 aludan a esta cueva."}
+    - {v: 8-22, type: narration, entities: [event:saul-reconoce-que-david-sera-rey, person:saul, person:david, place:en-guedi], mentions: [place:israel], note: "David llama padre a Saúl, que era su suegro, y Saúl lo llama hijo. Saúl vuelve a su casa (la referencia remite a Guibeá, 1Sa 15:34) y David, al refugio de 1Sa 23:29."}
+  25:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: "1", type: narration, entities: [event:muerte-de-samuel, event:david-baja-al-desierto-de-paran, person:samuel, person:david, place:ramataim-zofim, place:desierto-de-paran, relation:samuel/lived_in/ramataim-zofim], note: "Todo Israel es el pueblo, sin ficha. Perspicacia «Parán» recuerda que la Septuaginta pone aquí el desierto de Maón; el texto hebreo dice Parán."}
+    - {v: 2-13, type: narration, entities: [event:nabal-desprecia-a-los-mensajeros-de-david, person:nabal, person:abigail-esposa-de-david, person:david, place:maon, place:carmelo-de-juda, place:desierto-de-paran, relation:nabal/lived_in/maon, relation:nabal/kin/caleb-hijo-de-jefune, relation:nabal/kin/abigail-esposa-de-david, relation:david/kin/jese], mentions: [person:jese, person:caleb-hijo-de-jefune], note: "La nota del v. 2 aclara que Carmelo es la ciudad de Judá, no el monte. Los diez mensajeros y los pastores de Nabal no tienen nombre."}
+    - {v: 14-35, type: narration, entities: [event:abigail-sale-al-encuentro-de-david, person:abigail-esposa-de-david, person:david, person:nabal], note: "Un siervo sin nombre avisa a Abigaíl. Un sea equivalía a unos 7,33 litros (nota del v. 18). Abigaíl anuncia que Jehová dará a David una casa duradera, una dinastía."}
+    - {v: 36-38, type: narration, entities: [event:muerte-de-nabal, person:nabal, person:abigail-esposa-de-david]}
+    - {v: 39-42, type: narration, entities: [event:david-se-casa-con-abigail, person:david, person:abigail-esposa-de-david, place:carmelo-de-juda, relation:david/kin/abigail-esposa-de-david, relation:abigail-esposa-de-david/lived_in/carmelo-de-juda]}
+    - {v: 43-44, type: narration, entities: [event:saul-da-a-mical-a-paltiel, person:ahinoam-esposa-de-david, person:mical, person:saul, person:paltiel-hijo-de-lais, person:lais-de-galim, person:david, place:jezreel-de-juda, place:galim, relation:david/kin/ahinoam-esposa-de-david, relation:ahinoam-esposa-de-david/lived_in/jezreel-de-juda, relation:david/kin/mical, relation:david/kin/saul, relation:mical/kin/saul, relation:paltiel-hijo-de-lais/kin/mical, relation:paltiel-hijo-de-lais/kin/lais-de-galim, relation:paltiel-hijo-de-lais/lived_in/galim, relation:lais-de-galim/lived_in/galim], note: "La boda de David con Ahinoam solo se informa, sin escena ni fecha: queda en la relación. La entrega de Mical a Paltí pasó antes; el texto la cuenta aquí."}
+  26:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: narration, entities: [event:saul-vuelve-a-buscar-a-david-en-el-desierto-de-zif, person:saul, person:david, place:zif, place:guibea-de-benjamin, place:hakila, place:jesimon-de-juda, relation:saul/lived_in/guibea-de-benjamin], note: "Segunda delación de los zifeos (la primera, 1Sa 23:19). La nota del v. 1 admite «el desierto» por Jesimón. Tres mil soldados escogidos acompañan a Saúl."}
+    - {v: 5-12, type: narration, entities: [event:david-perdona-otra-vez-la-vida-a-saul, person:david, person:abisai, person:saul, person:abner, person:ahimelec-el-hitita, person:zeruya, place:hakila, relation:abner/kin/ner, relation:abner/accompanies/saul, relation:abisai/kin/zeruya, relation:abisai/kin/joab-hijo-de-zeruya, relation:abisai/accompanies/david, relation:ahimelec-el-hitita/accompanies/david, relation:joab-hijo-de-zeruya/kin/zeruya], mentions: [person:ner, person:joab-hijo-de-zeruya], note: "Jehová hace dormir profundamente a todo el campamento. David deja en manos de Jehová la muerte de Saúl. Los hititas son un pueblo, sin ficha."}
+    - {v: 13-25, type: narration, entities: [event:david-reprende-a-abner-y-habla-con-saul, person:david, person:abner, person:saul, place:hakila], mentions: [place:israel, place:guibea-de-benjamin], note: "David se compara con una pulga y con una perdiz perseguida. Lo han echado de la herencia de Jehová, como si lo mandaran a servir a otros dioses, sin ficha. Saúl vuelve a su casa."}
+  27:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-4, type: narration, entities: [event:david-se-refugia-con-akis-en-gat, person:david, person:akis, person:maoc, person:ahinoam-esposa-de-david, person:abigail-esposa-de-david, person:nabal, person:saul, place:gat, place:filistea, relation:akis/kin/maoc, relation:akis/lived_in/gat, relation:david/kin/ahinoam-esposa-de-david, relation:david/kin/abigail-esposa-de-david, relation:david/lived_in/gat, relation:ahinoam-esposa-de-david/lived_in/jezreel-de-juda, relation:ahinoam-esposa-de-david/lived_in/gat, relation:abigail-esposa-de-david/lived_in/carmelo-de-juda, relation:abigail-esposa-de-david/lived_in/gat, relation:nabal/kin/abigail-esposa-de-david], mentions: [place:israel, place:jezreel-de-juda, place:carmelo-de-juda], note: "David teme morir a manos de Saúl y pasa a tierra filistea con seiscientos hombres y sus familias. Es su segunda estancia con Akís (la primera, 1Sa 21:10-15)."}
+    - {v: 5-7, type: narration, entities: [event:akis-da-ziclag-a-david, person:david, person:akis, place:ziclag, relation:david/lived_in/ziclag, relation:david/accompanies/akis], mentions: [place:gat, place:filistea, place:juda], note: "La ciudad real es Gat. El narrador añade que Ziclag seguía siendo de los reyes de Judá cuando escribía. La estancia dura un año y cuatro meses."}
+    - {v: 8-12, type: narration, entities: [event:david-ataca-a-guesuritas-guirzitas-y-amalequitas, person:david, person:akis, place:negueb, place:amalec, place:telam, place:sur], mentions: [place:egipto, place:juda, place:gat, place:israel], note: "Guesuritas del sur, guirzitas, jerahmeelitas y quenitas son pueblos sin ficha. David nombra el sur de Judá (la nota dice «el Négueb») para que Akís crea que ataca a Israel."}
+  28:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-2, type: narration, entities: [event:akis-hace-a-david-su-guardaespaldas, person:akis, person:david, relation:david/accompanies/akis], note: "Los filisteos preparan la guerra contra Israel. La respuesta de David es ambigua: no promete luchar contra su pueblo."}
+    - {v: "3", type: narration, entities: [event:muerte-de-samuel, person:samuel, place:ramataim-zofim, relation:samuel/lived_in/ramataim-zofim, person:saul], note: "Recuerda la muerte de Samuel (1Sa 25:1) y que Saúl había echado del país a médiums y adivinos, como pedía la Ley (Le 20:27)."}
+    - {v: 4-6, type: narration, entities: [event:saul-acampa-en-guilboa-frente-a-los-filisteos, place:sunem, place:monte-guilboa, person:saul], note: "El Urim era el medio que llevaba el sumo sacerdote para consultar a Jehová (Éx 28:30)."}
+    - {v: 7-25, type: narration, entities: [event:saul-consulta-a-la-medium-de-en-dor, place:en-dor, person:saul], mentions: [person:samuel, person:david, event:saul-derrota-a-los-amalequitas, event:jehova-rechaza-a-saul-como-rey, event:samuel-unge-a-david], note: "La mujer dice ver a Samuel; según Perspicacia «Saúl», el mensaje era de los demonios. Se recuerda lo de Amalec (1Sa 15) y se anuncia la muerte de Saúl y sus hijos (1Sa 31)."}
+  29:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-11, type: narration, entities: [event:los-principes-filisteos-rechazan-a-david, place:afec-cerca-de-jezreel, place:valle-de-jezreel, place:filistea, person:david, person:akis, relation:david/accompanies/akis], mentions: [person:saul, place:israel, place:ziclag, event:las-mujeres-de-israel-cantan-las-victorias-de-david, event:david-se-refugia-con-akis-en-gat], note: "Israel acampa junto al manantial de Jezreel. El lugar asignado a David es Ziclag (Perspicacia «Akís»). Los príncipes recuerdan el canto de 1Sa 18:7."}
+  30:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-6, type: narration, entities: [event:los-amalequitas-saquean-ziclag, person:david, person:ahinoam-esposa-de-david, person:abigail-esposa-de-david, person:nabal, place:ziclag, place:negueb, relation:david/lived_in/ziclag, relation:david/kin/ahinoam-esposa-de-david, relation:david/kin/abigail-esposa-de-david, relation:nabal/kin/abigail-esposa-de-david, relation:nabal/lived_in/carmelo-de-juda, relation:ahinoam-esposa-de-david/lived_in/ziclag, relation:ahinoam-esposa-de-david/lived_in/jezreel-de-juda, relation:abigail-esposa-de-david/lived_in/ziclag], mentions: [place:amalec, place:jezreel-de-juda, place:carmelo-de-juda], note: "Los amalequitas son un pueblo, sin ficha; su tierra es Amalec. David llega al tercer día de dejar a los filisteos (1Sa 29:11)."}
+    - {v: 7-8, type: narration, entities: [event:david-consulta-a-jehova-con-el-efod, person:david, person:abiatar, relation:abiatar/kin/ahimelec-hijo-de-ahitub, relation:abiatar/accompanies/david], mentions: [person:ahimelec-hijo-de-ahitub, place:ziclag], note: "El efod que llevaba Abiatar era, al parecer, el del sumo sacerdote, con el Urim y el Tumim (Perspicacia «Abiatar»)."}
+    - {v: 9-10, type: narration, entities: [event:david-deja-200-hombres-en-el-torrente-de-besor, person:david, place:torrente-de-besor]}
+    - {v: 11-15, type: narration, entities: [event:un-egipcio-guia-a-david-hasta-los-amalequitas, person:david, place:negueb, place:juda], mentions: [person:caleb-hijo-de-jefune, place:ziclag], note: "El egipcio y su amo amalequita no tienen nombre. El sur de los keretitas, pueblo afín a los filisteos, y el de Caleb, la tierra que se le dio, son partes del Négueb."}
+    - {v: 16-20, type: narration, entities: [event:david-derrota-a-los-amalequitas-y-recupera-a-los-cautivos, person:david, person:ahinoam-esposa-de-david, person:abigail-esposa-de-david, place:negueb], mentions: [place:filistea, place:juda, place:amalec], note: "El campamento amalequita no tiene nombre. El botín que celebraban venía de tierra filistea y de Judá."}
+    - {v: 21-25, type: narration, entities: [event:david-reparte-el-botin-por-igual, person:david, place:torrente-de-besor], note: "Los hombres que se oponen al reparto no tienen nombre. La norma de David se hizo ley en Israel."}
+    - {v: "26", type: narration, entities: [event:david-envia-botin-a-los-ancianos-de-juda, person:david, place:ziclag], mentions: [place:juda]}
+    - {v: 27-31, type: list, entities: [place:betul, place:baalat-beer, place:jatir, place:aroer-de-juda, place:sifmot, place:estemoa, place:racal, place:horma, place:borasan, place:atac, place:hebron], note: "Betel parece ser Betul (Perspicacia «Betel», núm. 2) y Ramot del Négueb debe de ser Baalat-Beer («Ramot», núm. 2). Jerahmeelitas y quenitas son pueblos del sur de Judá, sin ficha."}
+  31:
+    status: complete
+    reviewed_on: 2026-09-29
+    spans:
+    - {v: 1-7, type: narration, entities: [event:muerte-de-saul, person:saul, person:jonatan-hijo-de-saul, person:abinadab-hijo-de-saul, person:malki-sua, place:monte-guilboa, period:saul, relation:saul/died_in/monte-guilboa, relation:jonatan-hijo-de-saul/died_in/monte-guilboa, relation:abinadab-hijo-de-saul/died_in/monte-guilboa, relation:malki-sua/died_in/monte-guilboa, relation:jonatan-hijo-de-saul/kin/saul, relation:abinadab-hijo-de-saul/kin/saul, relation:malki-sua/kin/saul], mentions: [place:rio-jordan, event:saul-acampa-en-guilboa-frente-a-los-filisteos], note: "El escudero de Saúl no tiene nombre. Los israelitas del valle y de la región del Jordán abandonan sus ciudades y las ocupan los filisteos; el texto no nombra ese valle."}
+    - {v: 8-10, type: narration, entities: [event:los-filisteos-cuelgan-a-saul-en-bet-san, person:saul, person:jonatan-hijo-de-saul, person:abinadab-hijo-de-saul, person:malki-sua, place:bet-sean, place:monte-guilboa, place:filistea], note: "Astoret es una diosa cananea, sin ficha, y su templo no se sitúa. Según Perspicacia «Bet-seán», la cabeza de Saúl acabó en la casa de Dagón (1Cr 10:10)."}
+    - {v: 11-13, type: narration, entities: [event:los-de-jabes-galaad-entierran-a-saul-y-a-sus-hijos, person:saul, person:jonatan-hijo-de-saul, person:abinadab-hijo-de-saul, person:malki-sua, place:jabes-galaad, place:bet-sean], note: "Los guerreros de Jabés no tienen nombre; Saúl había librado su ciudad de Nahás (1Sa 11). El tamarisco de Jabés es un árbol, sin ficha."}

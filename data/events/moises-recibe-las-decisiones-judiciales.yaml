@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-recibe-las-decisiones-judiciales
+title: Jehová da a Moisés las decisiones judiciales del pacto
+date:
+  from: -1512
+  to: -1512
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: tercer mes de 1513 a.e.c.
+  detail:
+    month: sivan
+narrative_order:
+  series: exodo
+  order: 20021
+places:
+- monte-sinai
+people:
+- moises
+passages:
+- Éx 20:21-23:33
+- Dt 4:14
+- Dt 5:28-31
+summary: 'Moisés se acerca a la nube oscura y Dios le da las leyes del libro del pacto: el altar, los esclavos, las heridas,
+  la propiedad, la justicia, el año sabático, las tres fiestas y la promesa de un ángel.'
+reason: 'Éx 24:3, 4 y 7: Moisés comunica estas decisiones, las pone por escrito y lee al pueblo el libro del pacto. Perspicacia
+  «Ley» fecha la Ley en 1513 a.e.c.; el tercer mes sale de Éx 19:1, 16.'
+sources:
+- exodo-19
+- exodo-20
+- exodo-21
+- exodo-22
+- exodo-23
+- exodo-24
+- it-ley
+- si-3
+- it-moises
+- deuteronomio-5
+links:
+- title: 'Perspicacia: «Ley»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002694
+  type: perspicacia
+- title: Éxodo 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

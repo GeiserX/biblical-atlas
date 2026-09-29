@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hermanos-salen-al-encuentro
+title: Los hermanos de Roma salen a su encuentro
+date:
+  from: 59
+  to: 59
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 59 e.c.
+narrative_order:
+  series: hechos
+  order: 2815
+places:
+- plaza-del-mercado-de-apio
+- tres-tabernas
+people:
+- pablo
+- lucas
+passages:
+- Hch 28:15
+summary: Hermanos de Roma salen a recibirlo a Tres Tabernas y a la Plaza del Mercado de Apio. Al verlos, Pablo da
+  gracias a Dios y cobra ánimo.
+reason: Hch 28:15 y sus notas de estudio, que sitúan los dos lugares en la Vía Apia. El estudio 3 (párr. 27) pone la llegada
+  a Roma hacia 59.
+sources:
+- hch-28
+- nota-hechos-28
+- si-3
+search: Plaza del Mercado de Apio Tres Tabernas
+history:
+- date: '2026-09-29'
+  change: 'Era narrativa de un solo año; el estudio 3 (párr. 27) pone la llegada a Roma hacia 59: es anclada.'
+  source: si-3
+- date: '2026-09-29'
+  change: La razón nombra la fuente del año.
+  source: si-3
+checked_on: '2026-09-29'
+status: verified

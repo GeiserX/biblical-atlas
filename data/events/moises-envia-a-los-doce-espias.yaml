@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moises-envia-a-los-doce-espias
+title: Moisés envía a los doce espías a Canaán
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+narrative_order:
+  series: numeros
+  order: 13001
+places:
+- desierto-de-paran
+- cades
+people:
+- moises
+- samua-hijo-de-zacur
+- safat-hijo-de-hori
+- caleb-hijo-de-jefune
+- igal-hijo-de-jose
+- josue-hijo-de-nun
+- palti-hijo-de-rafu
+- gadiel
+- gaddi
+- amiel-hijo-de-guemali
+- setur
+- nahbi
+- gueuel
+passages:
+- Nú 13:1-20
+- Dt 1:22, 23
+summary: El pueblo pide enviar exploradores y Jehová lo autoriza. Moisés escoge a un jefe de cada tribu, salvo Leví, y los
+  manda desde el desierto de Parán a explorar Canaán. A Hosea le pone el nombre de Josué.
+reason: Perspicacia «Espías» fecha el envío en 1512 a.e.c. Nú 13:20 lo pone en la época de las primeras uvas, que el cuadro
+  B15 sitúa en tamuz (junio-julio). El campamento estaba en Cadés (Nú 13:26).
+sources:
+- numeros-13
+- it-espias
+- tnm-b15
+- deuteronomio-1
+links:
+- title: Números 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/13
+  type: bible
+- title: 'Perspicacia: «Espías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004208
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: El resumen dice ahora que la idea salió del pueblo y que Jehová la autorizó (Dt 1:22, 23; Perspicacia «Espías»).
+  source: deuteronomio-1
+checked_on: '2026-09-29'
+status: verified

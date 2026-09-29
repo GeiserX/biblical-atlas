@@ -1,0 +1,364 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pablo
+name: Pablo
+names:
+- name: Pablo
+  note: Nombre romano.
+- name: Saulo
+  note: Nombre hebreo.
+date:
+  from: 33
+  to: 65
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 33-65 e.c. (de la muerte de Esteban a su último encierro en Roma)
+not_claimed:
+- 'Que Pablo llegara a España: Perspicacia dice que no se sabe (Ro 15:24).'
+- 'El año y el lugar exactos de su muerte: Perspicacia solo lo cree probable bajo Nerón, poco después de c. 65.'
+- 'Que Pablo se casara alguna vez: en sus viajes no estaba casado (1Co 7:8), y la nota de estudio de 1Co 7:7 solo ve posible
+  que fuera viudo.'
+summary: Apóstol de Jesucristo, de la tribu de Benjamín, nacido en Tarso de Cilicia y ciudadano romano. Hizo tres
+  viajes misionales y la Tabla de los libros le atribuye 14 cartas.
+reason: Perspicacia «Pablo» da su tribu, su origen y sus dos nombres; la Tabla de los libros lo pone como escritor
+  de Romanos a Hebreos.
+sources:
+- it-pablo
+- tnm-tabla
+- hechos-7
+- hechos-8
+- hch-9
+- hechos-11
+- hechos-12
+- hch-13
+- hch-14
+- hch-15
+- hch-16
+- hch-17
+- hch-18
+- hch-21
+- hch-22
+- hch-23
+- hch-24
+- hch-25
+- hch-26
+- hch-27
+- hch-28
+- romanos-1
+- romanos-4
+- romanos-7
+- romanos-8
+- romanos-9
+- romanos-11
+- romanos-15
+- romanos-16
+- 1-corintios-1
+- 1-corintios-2
+- 1-corintios-3
+- 1-corintios-4
+- 1-corintios-5
+- 1-corintios-7
+- 1-corintios-9
+- 1-corintios-14
+- 1-corintios-15
+- 1-corintios-16
+- 2-corintios-1
+- 2-corintios-2
+- 2-corintios-3
+- 2-corintios-4
+- 2-corintios-5
+- 2-corintios-6
+- 2-corintios-7
+- 2-corintios-8
+- 2-corintios-9
+- 2-corintios-10
+- 2-corintios-11
+- 2-corintios-12
+- 2-corintios-13
+links:
+- title: 'Perspicacia: «Pablo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
+  type: perspicacia
+- title: Hechos 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
+  type: bible
+perspicacia: '1200003406'
+history:
+- date: '2026-09-29'
+  change: 'Empieza en 33 y no en 34: Hch 7:58 y 8:1, 3 ya lo ponen en la muerte de Esteban y persiguiendo a la congregación,
+    sucesos de 33-34.'
+  source: hechos-7
+- date: '2026-09-29'
+  change: El parentesco con Andrónico y Junias pasa a las fichas de ellos, sin grado y como dato del texto (Ro 16:7), igual
+    que el de Herodión, Lucio y Sosípatro.
+  source: romanos-16
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: born_in
+  place: tarso
+  inferred: false
+  sources:
+  - it-pablo
+  - it-tarso
+  - hch-22
+  reason: Él mismo dice que nació en Tarso de Cilicia (Hch 21:39; 22:3); Perspicacia «Pablo», párr. 2.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: tarso
+  date:
+    from: 36
+    to: 46
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: entre c. 36 y c. 46 e.c.
+  inferred: false
+  sources:
+  - it-pablo
+  - it-tarso
+  - hch-9
+  - hechos-11
+  reason: Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: antioquia-de-siria
+  date:
+    from: 46
+    to: 52
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: c. 46-52 e.c.
+  inferred: false
+  sources:
+  - it-pablo
+  - it-siria
+  - hechos-11
+  reason: Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: efeso
+  date:
+    from: 52
+    to: 55
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: invierno de 52-53 a 55 e.c.
+  inferred: false
+  sources:
+  - it-pablo
+  - si-3
+  - hch-19
+  - 1-corintios-15
+  - 1-corintios-16
+  reason: Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: roma
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro en Roma)
+  inferred: false
+  sources:
+  - it-pablo
+  - hch-28
+  - si-3
+  reason: Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).
+  checked_on: '2026-09-29'
+  status: verified
+- type: disciple_of
+  person: gamaliel-fariseo
+  inferred: false
+  sources:
+  - hch-22
+  - it-gamaliel
+  - it-pablo
+  - w96-gamaliel
+  reason: Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel» (apartado
+    2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: damasco
+  date:
+    from: 34
+    to: 36
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 34 y 36 e.c. (tiempo narrativo: de la conversión a la huida de Damasco)'
+  inferred: false
+  sources:
+  - hch-9
+  - it-damasco
+  - bt-8
+  - hch-26
+  - 2-corintios-11
+  reason: Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la
+    ciudad desde Arabia.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: judas-de-damasco
+  word: host
+  date:
+    from: 34
+    to: 34
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 34 e.c.
+  inferred: false
+  sources:
+  - hch-9
+  - it-recta
+  - it-judas
+  reason: 'Hch 9:11: Ananías lo encuentra en casa de Judas; Perspicacia «Recta» dice que se alojó allí un tiempo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: corinto
+  date:
+    from: 50
+    to: 52
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: otoño de 50 a primavera de 52 e.c.
+  inferred: false
+  sources:
+  - hch-18
+  - si-3
+  - it-pablo
+  - 1-corintios-2
+  - 1-corintios-3
+  - 1-corintios-4
+  - 1-corintios-9
+  - 2-corintios-10
+  - 2-corintios-11
+  - 2-corintios-12
+  reason: 'Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - hch-22
+  - it-pablo
+  - hch-26
+  reason: 'Hch 22:3: se crió y se formó en Jerusalén con Gamaliel; Perspicacia «Pablo» (párr. 2) lo repite.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: cesarea
+  date:
+    from: 56
+    to: 58
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56-58 e.c.
+  inferred: false
+  sources:
+  - hch-23
+  - hch-24
+  - si-3
+  - hch-25
+  reason: Preso en Cesarea, en el palacio de Herodes, desde su llegada hasta que Festo releva a Félix dos años más tarde (Hch
+    23:33-35; 24:27). El estudio 3 (párr. 27) da 56-58.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abrahan
+  word: ancestor
+  inferred: false
+  sources:
+  - romanos-4
+  - romanos-11
+  - it-pablo
+  - 2-corintios-11
+  reason: 'Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como
+    judío.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: isaac
+  word: ancestor
+  inferred: false
+  sources:
+  - romanos-9
+  reason: 'Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y
+    suyo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: benjamin-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - romanos-11
+  - it-pablo
+  reason: Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite
+    con Flp 3:5.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: gayo-de-corinto
+  word: host
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: false
+  sources:
+  - romanos-16
+  - it-gayo
+  - tnm-tabla
+  reason: 'Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla
+    de los libros.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: julio
+  word: custodian
+  date:
+    from: 58
+    to: 59
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58-59 e.c.
+  inferred: false
+  sources:
+  - it-julio
+  - hch-27
+  - si-3
+  reason: 'Hch 27:1, 3: lo entregan con otros presos a Julio, que lo lleva desde Cesarea y en Sidón le deja ver a sus amigos.
+    El viaje va de c. 58 a 59 (estudio 3, párr. 27).'
+  checked_on: '2026-09-29'
+  status: verified

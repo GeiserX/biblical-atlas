@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jotan-hijo-de-gedeon
+name: Jotán
+names:
+- name: Jotán
+perspicacia: 1200002529#2
+disambiguation: Hijo menor del juez Gedeón; no el rey Jotán de Judá, hijo de Uzías, ni el descendiente de Judá llamado hijo
+  de Jahdai.
+distinct_from:
+- jotan
+summary: Hijo menor de Gedeón y único que escapó de la matanza de Abimélec. Desde el monte Guerizim advirtió a los de Siquem
+  con un relato de árboles que buscan rey, y luego se fue a vivir a Beer.
+reason: Perspicacia «Jotán», núm. 2; Jue 9:5-21, 57.
+sources:
+- it-jotan
+- jueces-9
+links:
+- title: 'Perspicacia: «Jotán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002529
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+relations:
+- type: kin
+  person: gedeon
+  word: father
+  inferred: false
+  sources:
+  - jueces-9
+  - it-jotan
+  reason: Jue 9:5 lo llama hijo menor de Jerubaal, y Jue 9:57, hijo de Jerubaal.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: beer-de-jotan
+  inferred: false
+  sources:
+  - jueces-9
+  - it-beer
+  reason: 'Jue 9:21: tras huir, se asentó en Beer por temor a Abimélec.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ofra-de-gedeon
+  inferred: true
+  sources:
+  - it-jotan
+  - jueces-9
+  reason: Perspicacia «Jotán», núm. 2, lo sitúa en Ofrá, y Jue 9:5 lo pone escondido allí, en la casa de su padre, durante
+    la matanza.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

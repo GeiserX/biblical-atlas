@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nadab-de-israel
+name: Nadab
+names:
+- name: Nadab
+disambiguation: Segundo rey de Israel; no es Nadab hijo de Aarón.
+date:
+  from: -975
+  to: -974
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 976-975 a.e.c.
+summary: Hijo de Jeroboán. Siguió con los becerros de su padre. Mientras sitiaba Guibetón lo mató Baasá, que acabó con toda
+  la casa de Jeroboán.
+reason: Perspicacia «Nadab», núm. 4; 1Re 15:25-31.
+sources:
+- it-nadab
+- 1-reyes-15
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Nadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+relations:
+- type: kin
+  person: jeroboan-i
+  word: father
+  inferred: false
+  sources:
+  - it-nadab
+  - 1-reyes-14
+  reason: Hijo de Jeroboán (1Re 14:20).
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: jeroboan-i
+  inferred: false
+  sources:
+  - it-nadab
+  - 1-reyes-14
+  reason: Reinó al morir su padre (1Re 14:20).
+  checked_on: '2026-09-29'
+  office: king
+  status: verified
+perspicacia: 1200003159#4
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- nadab-hijo-de-aaron

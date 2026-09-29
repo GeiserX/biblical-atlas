@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segunda-gira-por-galilea
+title: Segunda gira por Galilea, con los doce
+date:
+  from: 31
+  to: 31
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 e.c., tras la Pascua
+narrative_order:
+  series: a7
+  order: 38
+places:
+- galilea
+people:
+- jesus
+- juana
+- maria-magdalena
+- pedro
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- bartolome
+- mateo
+- santiago-hijo-de-alfeo
+- tomas
+- tadeo
+- simon-el-cananita
+- judas-iscariote
+- susana
+passages:
+- Lu 8:1-3
+summary: Jesús recorre ciudades y aldeas con los doce y con varias mujeres que había curado, entre ellas María Magdalena,
+  Juana y Susana, que los sostenían con sus bienes.
+reason: 'A7-C, fila 19: Galilea. Perspicacia «Juana» (párr. 2) la presenta como esposa de Cuza, servidor de Herodes.'
+sources:
+- tnm-a7-c
+- lucas-8
+- it-juana
+- jy-cap-41
+- it-susana
+- it-cuza
+history:
+- date: '2026-09-29'
+  change: Entre los doce de Lu 8:1 va Bartolomé, el nombre de las listas de apóstoles (Mt 10:3); sale natanael, que tiene
+    ficha aparte con mismo_que pendiente.
+  source: mateo-10
+- date: '2026-09-29'
+  change: Faltaba Susana, que Lu 8:3 nombra entre las mujeres que los sostenían; entra en el resumen y en personas.
+  source: lucas-8
+checked_on: '2026-09-29'
+status: verified

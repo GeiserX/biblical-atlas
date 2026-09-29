@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rahab
+name: Rahab
+names:
+- name: Rahab
+perspicacia: 1200003623#1
+disambiguation: La mujer de Jericó; no el término simbólico Rahab que Perspicacia trata aparte (núm. 2).
+summary: Prostituta de Jericó que escondió en su casa a dos espías israelitas en 1473 a.e.c. y se salvó con su familia. Adoró
+  a Jehová, se casó con Salmón y fue madre de Boaz.
+reason: 'Perspicacia «Rahab», núm. 1: acogió a los espías en la primavera de 1473 a.e.c. y vivía sobre la muralla (Jos 2:1,
+  15). Mt 1:5 y la nota de Mt 1:3.'
+sources:
+- it-rahab
+- mateo-1
+- josue-2
+- josue-6
+links:
+- title: 'Perspicacia: «Rahab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003623
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jerico
+  inferred: false
+  sources:
+  - it-rahab
+  - josue-2
+  - josue-6
+  reason: 'Perspicacia «Rahab» (núm. 1): su casa estaba en el muro de la ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: israel
+  inferred: false
+  sources:
+  - josue-6
+  - it-rahab
+  reason: 'Jos 6:25: seguía viviendo en Israel cuando se escribió el libro. Perspicacia «Rahab», núm. 1: su familia pasó a
+    vivir entre los israelitas.'
+  checked_on: '2026-09-29'
+  status: verified
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+history:
+- date: '2026-09-29'
+  change: La razón cita ahora Josué 2 y el año que Perspicacia da a la visita de los espías, que es la fecha nueva de la ficha.
+  source: josue-2
+checked_on: '2026-09-29'
+status: verified

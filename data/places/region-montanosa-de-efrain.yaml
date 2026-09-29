@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: region-montanosa-de-efrain
+name: Región montañosa de Efraín
+names:
+- name: Región montañosa de Efraín
+type: region
+lat: 31.922778
+lon: 35.241389
+precision: zone
+coord_source: openbible:ac0d1a5
+coord_url: https://www.openbible.info/geo/ancient/ac0d1a5/mount-ephraim
+coord_note: Punto representativo de OpenBible, que cae en Betel, al sur de la serranía; la ficha representa toda la zona.
+summary: Serranía del centro del país, sobre todo en Efraín, de suelo fértil y entonces cubierta de bosques, donde aún vivían
+  perizitas y refaím. A los descendientes de José les pareció pequeña.
+reason: 'Perspicacia «Efraín», núm. 2, apartado «Territorio tribal»; «Refaím», párr. 4; «Perizitas», párr. 2; Jos 17:15-18.
+  OpenBible: solo el punto.'
+sources:
+- it-efrain
+- it-refaim
+- it-perizitas
+- openbible-geo
+- josue-17
+- josue-24
+- jueces-2
+- jueces-3
+- jueces-4
+- jueces-7
+- jueces-10
+- jueces-17
+- jueces-18
+- jueces-19
+- 1-samuel-9
+- 1-samuel-14
+links:
+- title: 'Perspicacia: «Efraín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
+  type: perspicacia
+- title: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

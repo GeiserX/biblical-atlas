@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jose-padre-de-igal
+name: José
+names:
+- name: José
+perspicacia: 1200002515#2
+disambiguation: José de la tribu de Isacar, padre del espía Igal; no José hijo de Jacob ni ninguno de los José posteriores.
+distinct_from:
+- jose-hijo-de-jacob
+- jose-hijo-de-jonam
+- jose-hijo-de-matatias
+- jose-esposo-de-maria
+- jose-hijo-de-jose
+- jose-de-arimatea
+summary: Hombre de Isacar, padre de Igal, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+reason: Perspicacia «José», núm. 2; Nú 13:7.
+sources:
+- it-jose
+- numeros-13
+links:
+- title: 'Perspicacia: «José»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

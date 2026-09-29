@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-ela
+name: Valle de Elá
+names:
+- name: Valle de Elá
+- name: Llanura baja de Elá
+  note: Otra lectura que dan las notas al pie de 1Sa 17:2 y 17:19.
+- name: Elah
+  note: Otra grafía que da la nota de 1Sa 17:2; Perspicacia lo trata en «Elah», núm. 6.
+type: valley
+lat: 31.67542
+lon: 34.99802
+precision: zone
+coord_source: openbible:ab183f8
+coord_url: https://www.openbible.info/geo/ancient/ab183f8/valley-of-elah
+coord_note: Punto representativo de OpenBible para el valle. Perspicacia lo suele relacionar con el uadi es-Sant, que pasa
+  entre Azecá y Socó.
+summary: Llanura baja y fértil de la Sefelá, unos 25 km al suroeste de Jerusalén. Israel y los filisteos acamparon en laderas
+  opuestas, y allí David venció a Goliat.
+reason: 'Perspicacia «Elah», núm. 6; 1Sa 17:2, 19. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-elah
+- openbible-geo
+- 1-samuel-17
+links:
+- title: 'Perspicacia: «Elah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001273
+  type: perspicacia
+- title: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

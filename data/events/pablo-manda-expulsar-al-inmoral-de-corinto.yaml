@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-manda-expulsar-al-inmoral-de-corinto
+title: Pablo manda expulsar al inmoral de Corinto
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: 1-corintios
+  order: 16019
+  after: estefanas-fortunato-y-acaico-visitan-a-pablo
+places:
+- corinto
+- efeso
+people:
+- pablo
+present: []
+passages:
+- 1Co 5:1-13
+summary: En la congregación de Corinto un hombre se ha unido a la mujer de su padre, y los hermanos lo consienten. Desde Éfeso,
+  Pablo lo juzga por carta y ordena sacarlo de entre ellos.
+reason: 'Perspicacia «Corintios, Cartas a los»: la carta sale de Éfeso hacia 55, tras la visita de los tres corintios, y
+  en la segunda pide perdonar al expulsado arrepentido (2Co 2:1-11). Por 1Co 5:3, Pablo no estaba en Corinto.'
+sources:
+- 1-corintios-5
+- it-corintios
+- tnm-tabla
+links:
+- title: 1 Corintios 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/5
+  type: bible
+- title: 'Perspicacia: «Corintios, Cartas a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001039
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

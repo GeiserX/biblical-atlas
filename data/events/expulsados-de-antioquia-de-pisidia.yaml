@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: expulsados-de-antioquia-de-pisidia
+title: Echan a Pablo y Bernabé de Antioquía de Pisidia
+date:
+  from: 47
+  to: 48
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'dentro de c. 47-48 e.c. (tiempo narrativo: orden cierto, fecha aproximada)'
+narrative_order:
+  series: hechos
+  order: 1344
+places:
+- antioquia-de-pisidia
+- iconio
+people:
+- pablo
+- bernabe
+passages:
+- Hch 13:44-52
+summary: Al sábado siguiente acude casi toda la ciudad. Los judíos, celosos, los contradicen y ellos se vuelven a las naciones,
+  que se alegran. Tras una persecución se sacuden el polvo de los pies y van a Iconio.
+reason: 'Hch 13:44-52 y las notas de estudio de 13:47, 48 y 51. No tiene año propio: queda dentro de la gira de 47-48 (estudio
+  3, párr. 21).'
+sources:
+- hch-13
+- nota-hechos-13
+- si-3
+- it-pablo
+links:
+- title: Hechos 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/13
+  type: bible
+search: Antioquía de Pisidia expulsados Pablo Bernabé
+checked_on: '2026-09-29'
+status: verified

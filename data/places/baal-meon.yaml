@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-meon
+name: Baal-Meón
+names:
+- name: Baal-Meón
+- name: Beón
+  note: Nombre de Nú 32:3; Perspicacia cree que designa la misma ciudad.
+- name: Bet-Baal-Meón
+  note: Quizá su nombre completo, en Jos 13:17.
+type: city
+lat: 31.679501
+lon: 35.735321
+precision: point
+coord_source: openbible:a76f7b7
+coord_url: https://www.openbible.info/geo/ancient/a76f7b7/baal-meon
+summary: Ciudad de la meseta del norte de Moab dada a Rubén, que la reconstruyó y le cambió el nombre. El rey Mesá la recuperó
+  para Moab.
+reason: 'Perspicacia «Baal-meón» y «Beón»: las ruinas de Maʽin, unos 12 km al este del mar Muerto; Nú 32:3, 38. OpenBible:
+  solo el punto.'
+sources:
+- it-baal-meon
+- it-beon
+- openbible-geo
+- numeros-32
+- josue-13
+links:
+- title: 'Perspicacia: «Baal-meón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000517
+  type: perspicacia
+- title: 'Perspicacia: «Beón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000645
+  type: perspicacia
+- title: Números 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  type: bible
+checked_on: '2026-09-29'
+status: verified

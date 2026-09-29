@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-aparta-las-ciudades-de-refugio
+title: Israel aparta las seis ciudades de refugio
+date:
+  from: -1466
+  to: -1449
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras el reparto de la tierra en Siló y antes de la muerte de Josué)'
+narrative_order:
+  series: josue
+  order: 20001
+places:
+- quedes-de-neftali
+- siquem
+- hebron
+- bezer
+- ramot-galaad
+- golan
+people:
+- josue-hijo-de-nun
+present: []
+passages:
+- Jos 20:1-9
+summary: Jehová manda por medio de Josué elegir las ciudades de refugio. Al oeste del Jordán se declaran sagradas Quedes,
+  Siquem y Hebrón; al este quedan Bézer, Ramot y Golán, las que había señalado Moisés.
+reason: 'Sigue al reparto de la tierra en Siló, tras la conquista general de 1467 a.e.c. (estudio 3) y antes de morir Josué,
+  hacia 1450. El texto no dice dónde se dio la orden: no sitúa a nadie.'
+sources:
+- josue-20
+- si-3
+- it-ciudades-de-refugio
+- it-silo
+- tnm-tabla
+links:
+- title: Josué 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/20
+  type: bible
+- title: 'Perspicacia: «Ciudades de refugio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000979
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

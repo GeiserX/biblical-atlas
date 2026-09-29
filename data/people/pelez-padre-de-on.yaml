@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pelez-padre-de-on
+name: Pélez
+names:
+- name: Pélez
+perspicacia: 1200003423#1
+disambiguation: El rubenita padre de On; no el descendiente de Judá por medio de Jerahmeel, que es el núm. 2 de Perspicacia
+  «Pélez».
+summary: Rubenita, padre de On, que se sumó al levantamiento encabezado por Coré. Perspicacia considera posible que sea Palú,
+  hijo de Rubén.
+reason: Perspicacia «Pélez», núm. 1, y «Palú»; Nú 16:1.
+sources:
+- it-pelez
+- it-palu
+- numeros-16
+links:
+- title: 'Perspicacia: «Pélez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003423
+  type: perspicacia
+- title: 'Perspicacia: «Palú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003367
+  type: perspicacia
+- title: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  type: bible
+relations:
+- type: same_as
+  person: palu
+  inferred: true
+  sources:
+  - it-palu
+  - numeros-16
+  reason: Perspicacia «Palú» lo ve posiblemente como el mismo hijo de Rubén que Nú 16:1 llama Pélez; solo lo da como probable.
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified

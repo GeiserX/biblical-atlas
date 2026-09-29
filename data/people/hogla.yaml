@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hogla
+name: Hoglá
+names:
+- name: Hoglá
+perspicacia: '1200002053'
+summary: Tercera en la lista de las hijas de Zelofehad, manasita. Heredó con sus hermanas la parte de su padre y debía casarse
+  dentro de su tribu.
+reason: Perspicacia «Hoglá»; Nú 26:33.
+sources:
+- it-hogla
+- numeros-26
+- numeros-27
+- numeros-36
+- josue-17
+links:
+- title: 'Perspicacia: «Hoglá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002053
+  type: perspicacia
+- title: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  type: bible
+- title: Números 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/27
+  type: bible
+- title: Números 36 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/36
+  type: bible
+relations:
+- type: kin
+  person: zelofehad
+  word: father
+  inferred: false
+  sources:
+  - numeros-26
+  - it-hogla
+  - numeros-27
+  - numeros-36
+  - josue-17
+  reason: Nú 26:33 la nombra entre las hijas de Zelofehad.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jair-juzga-a-israel
+title: Jaír juzga a Israel 22 años
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1450 y 1173 a.e.c. (tiempo narrativo: después de Tolá y antes de la opresión ammonita que acabó Jefté)'
+narrative_order:
+  series: jueces
+  order: 10003
+places:
+- galaad
+- havot-jair
+- camon
+people:
+- jair-juez
+passages:
+- Jue 10:3-5
+summary: Después de Tolá, Jaír el galaadita juzga a Israel 22 años. Sus 30 hijos montan 30 burros y tienen 30 ciudades en
+  Galaad, las Havot-Jaír. Muere y lo entierran en Camón.
+reason: Jue 10:3 lo pone tras Tolá, y Perspicacia «Galaad», núm. 4, pone su muerte antes de los 18 años de Ammón. Jefté empieza
+  a juzgar hacia 1173 a.e.c. (Perspicacia «Jefté»).
+sources:
+- jueces-10
+- it-jair
+- it-havot-jair
+- it-galaad
+- it-jefte
+- tnm-tabla
+links:
+- title: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-de-tiempos-de-david
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#4
+disambiguation: Sacerdote de los días de David que dio nombre a la octava división sacerdotal; no es Abías, el rey de Judá.
+distinct_from:
+- abias-de-juda
+- abias-hijo-de-samuel
+summary: Sacerdote de la línea de Aarón, cabeza de una casa paterna cuando David repartió a los sacerdotes en 24 turnos. A
+  su casa le tocó por sorteo el octavo, llamado desde entonces la división de Abías.
+reason: Perspicacia «Abías», núm. 4, y la nota de estudio de Lu 1:5, que remite a 1Cr 24:3-10.
+sources:
+- it-abias
+- lucas-1
+relations:
+- type: kin
+  person: aaron
+  word: ancestor
+  inferred: true
+  sources:
+  - it-abias
+  reason: Perspicacia «Abías», núm. 4, lo presenta como sacerdote descendiente de Aarón.
+  checked_on: '2026-09-29'
+  status: verified
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  type: perspicacia
+- title: Lucas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

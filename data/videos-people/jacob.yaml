@@ -1,0 +1,89 @@
+# Generado por scripts/videos/index.py. No editar a mano.
+# Videos públicos de jw.org que nombran a esta persona; ver docs/investigacion/videos-jw.md.
+person: jacob
+generated_on: "2026-09-28"
+videos:
+  - docid: "pub-co-r22_2_VIDEO"
+    title: "Viernes mañana (parte 2) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_2_VIDEO&appLanguage=S"
+    published: "2022-06-27"
+    hits: 87
+    terms:
+      "Jacob": 87
+  - docid: "pub-jwbgg_201603_1_VIDEO"
+    title: "Graduación de la clase 140 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbgg_201603_1_VIDEO&appLanguage=S"
+    published: "2016-07-21"
+    hits: 31
+    terms:
+      "Jacob": 31
+  - docid: "pub-jwban_201609_1_VIDEO"
+    title: "David H. Splane: Disfrutemos al máximo nuestra lectura de la Biblia"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwban_201609_1_VIDEO&appLanguage=S"
+    published: "2016-09-19"
+    hits: 29
+    terms:
+      "Jacob": 29
+  - docid: "pub-jwb-081_8_VIDEO"
+    title: "Alex Reinmueller: Dejen que Jehová los inspire"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-081_8_VIDEO&appLanguage=S"
+    published: "2021-06-08"
+    hits: 23
+    terms:
+      "Jacob": 23
+  - docid: "pub-jwb-123_1_VIDEO"
+    title: "JW Broadcasting: Marzo de 2025"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-123_1_VIDEO&appLanguage=S"
+    published: "2025-03-03"
+    hits: 15
+    terms:
+      "Jacob": 15
+  - docid: "pub-jwb-123_5_VIDEO"
+    title: "David Splane: No seamos un estorbo para el propósito de Jehová (Heb. 4:12)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-123_5_VIDEO&appLanguage=S"
+    published: "2025-03-17"
+    hits: 15
+    terms:
+      "Jacob": 15
+  - docid: "pub-co-r22_7_VIDEO"
+    title: "Sábado tarde (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_7_VIDEO&appLanguage=S"
+    published: "2022-07-25"
+    hits: 14
+    terms:
+      "Jacob": 14
+  - docid: "pub-jwb_201806_1_VIDEO"
+    title: "JW Broadcasting: junio de 2018 (graduación de la clase 144 de la Escuela de Galaad)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_201806_1_VIDEO&appLanguage=S"
+    published: "2018-06-04"
+    hits: 13
+    terms:
+      "Jacob": 13
+  - docid: "pub-jwb-114_1_VIDEO"
+    title: "JW Broadcasting: Julio de 2024"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-114_1_VIDEO&appLanguage=S"
+    published: "2024-07-01"
+    hits: 11
+    terms:
+      "Jacob": 11
+  - docid: "pub-jwb-114_4_VIDEO"
+    title: "David Splane: Jehová nunca nos abandonará (Gén. 39:2)"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-114_4_VIDEO&appLanguage=S"
+    published: "2024-07-15"
+    hits: 11
+    terms:
+      "Jacob": 11
+  - docid: "pub-jwb-125_7_VIDEO"
+    title: "Richard Chilton: La otra"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb-125_7_VIDEO&appLanguage=S"
+    published: "2025-06-16"
+    hits: 10
+    terms:
+      "Jacob": 10
+  - docid: "pub-co-r22_128_VIDEO"
+    title: "Gajus Glockentin: Evitemos las cosas que destruyen la paz. La falta de honradez"
+    url: "https://www.jw.org/es/biblioteca/videos/?item=pub-co-r22_128_VIDEO&appLanguage=S"
+    published: "2022-07-25"
+    hits: 6
+    terms:
+      "Jacob": 6

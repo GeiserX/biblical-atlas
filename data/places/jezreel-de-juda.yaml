@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jezreel-de-juda
+name: Jezreel
+names:
+- name: Jezreel
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: A menos de 7 km de Jutá
+  geometry:
+    type: zone
+    lat: 31.447778
+    lon: 35.09
+    radius_km: 7
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-jezreel
+  - openbible-geo
+  reason: El texto la nombra con Jutá en la montaña de Judá; OpenBible da este radio alrededor de Yatta.
+  coord_source: openbible:ad94cc9
+  coord_url: https://www.openbible.info/geo/ancient/ad94cc9/jezreel-1
+summary: Ciudad de la montaña de Judá, sin identificar. Probablemente era la tierra de Ahinoam, una de las esposas de David.
+  No es la Jezreel de Isacar.
+reason: Perspicacia «Jezreel», núm. 3; Jos 15:56; 1Sa 25:43. OpenBible solo la pone a menos de 7 km de Yatta, la antigua Jutá.
+sources:
+- it-jezreel
+- openbible-geo
+- josue-15
+- 1-samuel-25
+links:
+- title: 'Perspicacia: «Jezreel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

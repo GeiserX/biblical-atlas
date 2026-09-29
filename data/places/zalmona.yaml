@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zalmona
+name: Zalmoná
+names:
+- name: Zalmoná
+type: region
+lat: 30.81217
+lon: 35.37339
+precision: uncertain
+coord_source: openbible:a1c6a50
+coord_url: https://www.openbible.info/geo/ancient/a1c6a50/zalmonah
+coord_note: Punto de OpenBible en el uadi es-Salmaneh, que Y. Aharoni propone con reservas, unos 20 km al nor-noroeste de
+  Punón. El mapa B3 lo marca ahí.
+summary: Primer campamento de Israel después del monte Hor, antes de Punón.
+reason: 'Perspicacia «Zalmoná»; Nú 33:41, 42. OpenBible: solo el punto.'
+sources:
+- it-zalmona
+- tnm-b3
+- openbible-geo
+- numeros-33
+links:
+- title: 'Perspicacia: «Zalmoná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004657
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

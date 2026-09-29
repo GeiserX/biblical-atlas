@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zoba
+name: Zobá
+names:
+- name: Zobá
+- name: Aram-Zobá
+  note: Así lo llama el encabezamiento de Sal 60.
+type: kingdom
+lat: 33.935278
+lon: 36.150833
+precision: zone
+coord_source: openbible:a4aa78a
+coord_url: https://www.openbible.info/geo/ancient/a4aa78a/zobah
+coord_note: Punto representativo de OpenBible para el reino. Perspicacia lo sitúa al norte de Damasco, extendido hasta Hamat
+  y el Éufrates.
+summary: Reino arameo al norte de Damasco. Saúl ya luchó contra sus reyes, y David venció a su rey Hadadézer y se llevó mucho
+  cobre de sus ciudades.
+reason: 'Perspicacia «Zobá»; 2Sa 8:3-12; encabezamiento de Sal 60. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-zoba
+- openbible-geo
+- salmos-60
+- 1-samuel-14
+links:
+- title: 'Perspicacia: «Zobá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004756
+  type: perspicacia
+- title: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
+  type: bible
+checked_on: '2026-09-29'
+status: verified

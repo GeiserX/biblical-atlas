@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-perdona-otra-vez-la-vida-a-saul
+title: David perdona otra vez la vida a Saúl
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+narrative_order:
+  series: 1-samuel
+  order: 26005
+places:
+- hakila
+people:
+- david
+- abisai
+- saul
+- abner
+- ahimelec-el-hitita
+present:
+- david
+- abisai
+- saul
+- abner
+passages:
+- 1Sa 26:5-12
+summary: De noche, David y Abisái entran en el campamento dormido. Abisái quiere clavar a Saúl en el suelo con su propia lanza;
+  David no deja tocar al ungido de Jehová y se llevan la lanza y la jarra.
+reason: 'Tiempo narrativo: David anda huido de Saúl (Perspicacia «David», «Fugitivo»); nació en 1107 (estudio 3) y Saúl cayó
+  en 1078 (Perspicacia «Jonatán», núm. 2). Perspicacia «David» y «Abisai»; Ahimélec el hitita no bajó con ellos («Ahimélec»,
+  núm. 3).'
+sources:
+- 1-samuel-26
+- si-3
+- it-david
+- it-jonatan
+- it-abisai
+- it-ahimelec
+links:
+- title: 1 Samuel 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/26
+  type: bible
+checked_on: '2026-09-29'
+status: verified

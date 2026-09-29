@@ -1,0 +1,300 @@
+# biblical-earth: claves de relación que desaparecen y la que queda. Una fila por clave: {from, to, removed_on, reason}.
+# Formato en docs/investigacion/modelo.md, sección 5. Lo leen apply.py y bible_coverage.py.
+- from: ciro/kin/cambises-ii
+  to: cambises-ii/kin/ciro/father
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, con la palabra father. Solo Perspicacia da el parentesco, así que es deducido.
+- from: ester/kin/jerjes-i
+  to: jerjes-i/kin/ester/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo con la palabra wife; «esposa de Asuero» decía lo que era ella.
+- from: eunice/kin/timoteo/son
+  to: timoteo/kin/eunice/mother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, la persona más joven, con la palabra mother.
+- from: loida/kin/eunice/daughter
+  to: eunice/kin/loida/mother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha de la hija, con la palabra mother. Lo deduce la publicación, no el texto.
+- from: loida/kin/timoteo/grandson
+  to: timoteo/kin/loida/grandmother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del nieto, la persona más joven, con la palabra grandmother.
+- from: maria-madre-de-juan-marcos/kin/bernabe/nephew
+  to: bernabe/kin/maria-madre-de-juan-marcos/aunt
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del sobrino, la persona más joven, con la palabra aunt.
+- from: augusto/kin/tiberio@4
+  to: tiberio/kin/augusto/adoptive_father@4
+  removed_on: '2026-09-29'
+  reason: El segundo hecho, la adopción de 4 e.c., en la ficha de Tiberio. Solo lo da Perspicacia, así que es deducido.
+- from: nacor-hijo-de-tare/kin/abrahan/brother
+  to: abrahan/kin/nacor-hijo-de-tare/brother
+  removed_on: '2026-09-29'
+  reason: Gé 11:26, 27 nombra primero a Abrán. Se queda su copia con las fuentes de las dos.
+- from: pedro/kin/andres/brother
+  to: andres/kin/pedro/brother
+  removed_on: '2026-09-29'
+  reason: Jn 1:40 dice de Andrés que es hermano de Simón Pedro. Se queda su copia con las fuentes de las dos.
+- from: elisabet/kin/maria-madre-de-jesus/relative
+  to: maria-madre-de-jesus/kin/elisabet/relative
+  removed_on: '2026-09-29'
+  reason: 'Lu 1:36: Gabriel le dice a María que Elisabet es su pariente. Se queda la copia de María.'
+- from: ismael-hijo-de-abrahan/kin/isaac/half_brother
+  to: isaac/kin/ismael-hijo-de-abrahan/half_brother
+  removed_on: '2026-09-29'
+  reason: Gé 25:9 nombra primero a Isaac. Se queda su copia con las fuentes de las dos.
+- from: judas-hermano-de-jesus/kin/jesus/half_brother
+  to: jesus/kin/judas-hermano-de-jesus/half_brother
+  removed_on: '2026-09-29'
+  reason: Mt 13:55 dice de Jesús que Judas es uno de sus hermanos. Se queda la copia de Jesús.
+- from: santiago-hermano-de-jesus/kin/jesus/half_brother
+  to: jesus/kin/santiago-hermano-de-jesus/half_brother
+  removed_on: '2026-09-29'
+  reason: Mt 13:55 dice de Jesús que Santiago es uno de sus hermanos. Se queda su copia con las fuentes de las dos.
+- from: juan-apostol/kin/santiago-hijo-de-zebedeo/brother
+  to: santiago-hijo-de-zebedeo/kin/juan-apostol/brother
+  removed_on: '2026-09-29'
+  reason: Mt 10:2 nombra primero a Santiago y dice que Juan es su hermano. Se queda su copia con las fuentes de las dos.
+- from: judas-hermano-de-jesus/kin/santiago-hermano-de-jesus/brother
+  to: santiago-hermano-de-jesus/kin/judas-hermano-de-jesus/brother
+  removed_on: '2026-09-29'
+  reason: Mt 13:55 nombra primero a Santiago, y Jud 1 dice de Judas que es su hermano. Se queda la copia de Santiago.
+- from: laban/kin/rebeca/sister
+  to: rebeca/kin/laban/brother
+  removed_on: '2026-09-29'
+  reason: Gé 24:29 dice de Rebeca que tenía un hermano, Labán. Se queda su copia con las fuentes de las dos.
+- from: maria-de-betania/kin/lazaro/brother
+  to: lazaro/kin/maria-de-betania/sister
+  removed_on: '2026-09-29'
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- from: marta/kin/lazaro/brother
+  to: lazaro/kin/marta/sister
+  removed_on: '2026-09-29'
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- from: marta/kin/maria-de-betania/sister
+  to: maria-de-betania/kin/marta/sister
+  removed_on: '2026-09-29'
+  reason: Jn 11:1 nombra primero a María y dice que Marta es su hermana. Se queda su copia con las fuentes de las dos.
+- from: felipe-evangelizador/accompanies/esteban
+  to: esteban/accompanies/felipe-evangelizador
+  removed_on: '2026-09-29'
+  reason: Hch 6:5 nombra a Esteban antes que a Felipe. Se queda la copia de Esteban.
+- from: zorobabel/accompanies/josue-sumo-sacerdote@-536
+  to: josue-sumo-sacerdote/accompanies/zorobabel@-536
+  removed_on: '2026-09-29'
+  reason: Esd 3:2 nombra primero a Jesúa. Se queda su copia con las fuentes de las dos.
+- from: juan-apostol/accompanies/pedro/companion
+  to: pedro/accompanies/juan-apostol/companion
+  removed_on: '2026-09-29'
+  reason: Lu 22:8, Hch 3:1 y 8:14 nombran primero a Pedro. Se queda su copia con las fuentes de las dos.
+- from: santiago-hijo-de-zebedeo/accompanies/pedro
+  to: pedro/accompanies/santiago-hijo-de-zebedeo
+  removed_on: '2026-09-29'
+  reason: Lu 5:3-10 nombra primero a Simón; 5:10 dice que Santiago y Juan eran sus socios. Se queda la copia de Pedro, con
+    las fuentes de las dos.
+- from: agar/kin/abrahan/husband
+  to: abrahan/kin/agar/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- from: sara/kin/abrahan/husband
+  to: abrahan/kin/sara/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje de Gé 20:12 que solo decía la de Sara.
+- from: jezabel/kin/acab/husband
+  to: acab/kin/jezabel/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- from: eva/kin/adan/husband
+  to: adan/kin/eva/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- from: safira/kin/ananias-de-jerusalen/husband
+  to: ananias-de-jerusalen/kin/safira/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- from: elisabet/kin/zacarias-padre-de-juan/husband
+  to: zacarias-padre-de-juan/kin/elisabet/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- from: herodias/kin/herodes-antipas/husband
+  to: herodes-antipas/kin/herodias/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con el pasaje de Mr 6:17 que solo decía la de Herodías.
+- from: rebeca/kin/isaac/husband
+  to: isaac/kin/rebeca/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- from: lea/kin/jacob/husband
+  to: jacob/kin/lea/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- from: raquel/kin/jacob/husband
+  to: jacob/kin/raquel/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de Raquel.
+- from: maria-madre-de-jesus/kin/jose-esposo-de-maria/husband
+  to: jose-esposo-de-maria/kin/maria-madre-de-jesus/wife
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de María.
+- from: anas/kin/caifas/son_in_law
+  to: caifas/kin/anas/father_in_law
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del yerno. La otra copia no lleva nada más.
+- from: herodes-el-grande/kin/arquelao/son
+  to: arquelao/kin/herodes-el-grande/father
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- from: elisabet/kin/juan-el-bautista/son
+  to: juan-el-bautista/kin/elisabet/mother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, con el pasaje de Lu 1:57-60 que solo decía la de Elisabet.
+- from: herodes-agripa-i/kin/herodes-agripa-ii/son
+  to: herodes-agripa-ii/kin/herodes-agripa-i/father
+  removed_on: '2026-09-29'
+  reason: 'Va en la ficha del hijo. Es deducido: solo Perspicacia dice de quién era hijo Agripa II.'
+- from: herodes-el-grande/kin/herodes-antipas/son
+  to: herodes-antipas/kin/herodes-el-grande/father
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- from: jose-esposo-de-maria/kin/jesus/adopted_son
+  to: jesus/kin/jose-esposo-de-maria/adoptive_father
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- from: maria-madre-de-jesus/kin/jesus/son
+  to: jesus/kin/maria-madre-de-jesus/mother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- from: zacarias-padre-de-juan/kin/juan-el-bautista/son
+  to: juan-el-bautista/kin/zacarias-padre-de-juan/father
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- from: maria-madre-de-juan-marcos/kin/juan-marcos/son
+  to: juan-marcos/kin/maria-madre-de-juan-marcos/mother
+  removed_on: '2026-09-29'
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- from: julio/tie/pablo@58
+  to: pablo/tie/julio/custodian@58
+  removed_on: '2026-09-29'
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí.
+- from: elimas/tie/sergio-paulo
+  to: sergio-paulo/tie/elimas/adviser
+  removed_on: '2026-09-29'
+  reason: Va en la ficha de quien recibe el consejo, con la palabra adviser y la razón escrita desde allí.
+- from: amrafel/accompanies/kedorlaomer
+  to: amrafel/tie/kedorlaomer/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- from: arioc-de-elasar/accompanies/kedorlaomer
+  to: arioc-de-elasar/tie/kedorlaomer/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- from: tidal/accompanies/kedorlaomer
+  to: tidal/tie/kedorlaomer/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- from: aner/accompanies/abrahan
+  to: aner/tie/abrahan/ally
+  removed_on: '2026-09-29'
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- from: escol/accompanies/abrahan
+  to: escol/tie/abrahan/ally
+  removed_on: '2026-09-29'
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- from: mamre/accompanies/abrahan
+  to: mamre/tie/abrahan/ally
+  removed_on: '2026-09-29'
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- from: birsa/accompanies/bera
+  to: birsa/tie/bera/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- from: semeber/accompanies/bera
+  to: semeber/tie/bera/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- from: sinab/accompanies/bera
+  to: sinab/tie/bera/ally
+  removed_on: '2026-09-29'
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- from: agar/accompanies/sara
+  to: agar/tie/sara/mistress
+  removed_on: '2026-09-29'
+  reason: 'Gé 16:1: Agar era la sierva de Sarái. Sara es su señora, como Raquel lo es de Bilhá.'
+- from: debora-nodriza-de-rebeca/accompanies/rebeca
+  to: debora-nodriza-de-rebeca/tie/rebeca/mistress
+  removed_on: '2026-09-29'
+  reason: La nota de Gé 24:59 dice que la nodriza, que la había amamantado, era ya su sierva.
+- from: eliezer-de-damasco/accompanies/abrahan
+  to: eliezer-de-damasco/tie/abrahan/master
+  removed_on: '2026-09-29'
+  reason: 'Gé 15:2, 3: Eliezer era un siervo de la casa de Abrán. Abrahán es su señor.'
+- from: cuza/accompanies/herodes-antipas
+  to: cuza/tie/herodes-antipas/master
+  removed_on: '2026-09-29'
+  reason: 'Lu 8:3: Cuza era el encargado de la casa de Herodes. Herodes es su señor; el encargo va en la razón.'
+- from: ficol-de-tiempos-de-abrahan/accompanies/abimelec-de-tiempos-de-abrahan
+  to: ficol-de-tiempos-de-abrahan/tie/abimelec-de-tiempos-de-abrahan/master
+  removed_on: '2026-09-29'
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la razón.
+- from: ficol-de-tiempos-de-isaac/accompanies/abimelec-de-tiempos-de-isaac
+  to: ficol-de-tiempos-de-isaac/tie/abimelec-de-tiempos-de-isaac/master
+  removed_on: '2026-09-29'
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la razón.
+- from: ahuzat/accompanies/abimelec-de-tiempos-de-isaac
+  to: abimelec-de-tiempos-de-isaac/tie/ahuzat/adviser
+  removed_on: '2026-09-29'
+  reason: 'Gé 26:26: Ahuzat era el consejero de Abimélec. Va en la ficha de quien recibe el consejo.'
+- from: ahitofel/accompanies/david/companion
+  to: david/tie/ahitofel/adviser
+  removed_on: '2026-09-29'
+  reason: '2Sa 15:12: Ahitofel era consejero de David. Va en la ficha de quien recibe el consejo.'
+- from: bildad/accompanies/job/companion
+  to: bildad/tie/job/friend
+  removed_on: '2026-09-29'
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- from: elifaz-el-temanita/accompanies/job/companion
+  to: elifaz-el-temanita/tie/job/friend
+  removed_on: '2026-09-29'
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- from: zofar/accompanies/job/companion
+  to: zofar/tie/job/friend
+  removed_on: '2026-09-29'
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- from: hira/accompanies/juda-hijo-de-jacob/companion
+  to: hira/tie/juda-hijo-de-jacob/friend
+  removed_on: '2026-09-29'
+  reason: Gé 38:12 lo llama amigo de Judá. Es un trato de amistad, no una compañía.
+- from: elias-profeta/accompanies/eliseo
+  to: eliseo/tie/elias-profeta/master
+  removed_on: '2026-09-29'
+  reason: '1Re 19:21: Eliseo siguió a Elías y empezó a servirle; en 2Re 2:3, 5 Elías es su señor. Va en la ficha de Eliseo.'
+- from: eli/accompanies/samuel
+  to: samuel/tie/eli/custodian
+  removed_on: '2026-09-29'
+  reason: '1Sa 1:25 y 3:1: Ana llevó el niño a Elí, y Samuel servía bajo su supervisión. Elí es su custodio.'
+- from: samuel/accompanies/eli
+  to: samuel/tie/eli/custodian
+  removed_on: '2026-09-29'
+  reason: '1Sa 2:11: Samuel servía a Jehová a cargo de Elí. Es el mismo trato que el de custodio, escrito del otro lado;
+    «ayudante de» no es una palabra del vocabulario.'
+- from: maria-magdalena/accompanies/jesus
+  to: maria-magdalena/disciple_of/jesus
+  removed_on: '2026-09-29'
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- from: maria-esposa-de-clopas/accompanies/jesus
+  to: maria-esposa-de-clopas/disciple_of/jesus
+  removed_on: '2026-09-29'
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- from: salome-discipula/accompanies/jesus
+  to: salome-discipula/disciple_of/jesus
+  removed_on: '2026-09-29'
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- from: oholibama-hija-de-ana/same_as/judit
+  to: judit/same_as/oholibama-hija-de-ana
+  removed_on: '2026-09-29'
+  reason: La misma identidad queda escrita en la ficha de Judit, cuyo id va primero.
+- from: timna-hija-de-seir/same_as/timna-concubina-de-elifaz
+  to: timna-concubina-de-elifaz/same_as/timna-hija-de-seir
+  removed_on: '2026-09-29'
+  reason: La misma identidad queda escrita en la ficha de la concubina de Elifaz, cuyo id va primero.

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isvi-hijo-de-aser
+name: Isví
+names:
+- name: Isví
+perspicacia: 1200002223#1
+disambiguation: Isví hijo de Aser; no el hijo del rey Saúl.
+summary: Tercer hijo de Aser y fundador de la familia de los isvitas.
+reason: Perspicacia «Isví», núm. 1; Gé 46:17.
+sources:
+- it-isvi
+- genesis-46
+- numeros-26
+links:
+- title: 'Perspicacia: «Isví»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002223
+  type: perspicacia
+- title: Génesis 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/46
+  type: bible
+relations:
+- type: kin
+  person: aser-hijo-de-jacob
+  word: father
+  inferred: false
+  sources:
+  - genesis-46
+  - it-isvi
+  - numeros-26
+  reason: 'Gé 46:17: aparece entre los hijos de Aser.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - genesis-46
+  reason: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- isvi-hijo-de-saul

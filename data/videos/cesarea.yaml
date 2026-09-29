@@ -1,26 +1,26 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: cesarea
-generado: "2026-09-28"
+place: cesarea
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwbvod25_4_VIDEO"
-    titulo: "Paul Gillies: Aceptemos con gusto los cambios (Hech. 8:39)"
+    title: "Paul Gillies: Aceptemos con gusto los cambios (Hech. 8:39)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod25_4_VIDEO&appLanguage=S"
-    publicado: "2025-01-24"
-    menciones: 7
-    terminos:
+    published: "2025-01-24"
+    hits: 7
+    terms:
       "Cesarea": 7
   - docid: "pub-jwb_202005_11_VIDEO"
-    titulo: "David Schafer: Aprendamos a estar contentos con lo que tenemos (Heb. 13:5)"
+    title: "David Schafer: Aprendamos a estar contentos con lo que tenemos (Heb. 13:5)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwb_202005_11_VIDEO&appLanguage=S"
-    publicado: "2020-05-25"
-    menciones: 2
-    terminos:
+    published: "2020-05-25"
+    hits: 2
+    terms:
       "Cesarea": 2
   - docid: "pub-jwbvod24_3_VIDEO"
-    titulo: "Geoffrey Jackson: Demos honra a las autoridades superiores (Rom. 13:7)"
+    title: "Geoffrey Jackson: Demos honra a las autoridades superiores (Rom. 13:7)"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbvod24_3_VIDEO&appLanguage=S"
-    publicado: "2024-01-19"
-    menciones: 2
-    terminos:
+    published: "2024-01-19"
+    hits: 2
+    terms:
       "Cesarea": 2

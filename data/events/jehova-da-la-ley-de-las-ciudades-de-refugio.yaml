@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-da-la-ley-de-las-ciudades-de-refugio
+title: Jehová da la ley de las ciudades de refugio
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1473 a.e.c. (tiempo narrativo: en las llanuras de Moab, tras vencer a Sehón y a Og)'
+  note: 'Límites: la victoria sobre Og, hacia 1473 a.e.c. (Perspicacia «Basán», párr. 5), y el final de Números en las llanuras
+    de Moab, en 1473 (estudio 3), antes de los discursos de Dt 1:3.'
+narrative_order:
+  series: numeros
+  order: 35009
+places:
+- llanuras-deserticas-de-moab
+people:
+- moises
+passages:
+- Nú 35:9-34
+- Dt 19:1-13
+summary: Jehová manda apartar seis ciudades de refugio, tres a cada lado del Jordán, para quien mate sin querer. El asesino
+  debe morir; el homicida involuntario vive en la ciudad hasta que muera el sumo sacerdote.
+reason: 'Sigue a la orden de las ciudades levitas, en el mismo lugar y año (Nú 35:1; estudio 3). Perspicacia «Ciudades de refugio»:
+  Moisés designó tres y Josué las otras tres.'
+sources:
+- numeros-35
+- si-3
+- it-ciudades-de-refugio
+- it-vengador-de-la-sangre
+- it-basan
+links:
+- title: Números 35 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/35
+  type: bible
+- title: 'Perspicacia: «Ciudades de refugio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000979
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-canta-junto-al-mar-rojo
+title: Moisés y Míriam cantan a Jehová junto al mar
+date:
+  from: -1512
+  to: -1512
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1513 a.e.c.
+narrative_order:
+  series: exodo
+  order: 15001
+places:
+- cruce-del-mar-rojo
+people:
+- moises
+- miriam-hermana-de-moises
+passages:
+- Éx 15:1-21
+- Sl 106:12
+summary: Ya a salvo en la orilla, Moisés y los israelitas cantan la victoria de Jehová sobre el faraón. Míriam, profetisa
+  y hermana de Aarón, dirige a las mujeres con panderetas y danzas.
+reason: 'Perspicacia «Éxodo», último apartado sobre el paso, y «Míriam», núm. 1: cantan en la orilla oriental. Sigue al paso
+  del mar Rojo, en 1513 a.e.c. (estudio 3).'
+sources:
+- exodo-15
+- it-exodo
+- it-miriam
+- si-3
+links:
+- title: Éxodo 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

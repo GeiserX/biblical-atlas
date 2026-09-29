@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-gabaonitas-enganan-a-josue
+title: Los gabaonitas engañan a Josué y logran un pacto
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+narrative_order:
+  series: josue
+  order: 9003
+places:
+- guilgal
+- gabaon
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 9:3-15
+summary: Los de Gabaón llegan al campamento con ropa, sandalias, odres y pan viejos, fingiendo venir de muy lejos. Israel
+  no consulta a Jehová, y Josué y los jefes juran un pacto que les respeta la vida.
+reason: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal. Perspicacia «Gabaón», apartado «Relación con Josué».'
+sources:
+- josue-9
+- si-3
+- it-josue
+- it-gabaon
+- it-guilgal
+links:
+- title: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

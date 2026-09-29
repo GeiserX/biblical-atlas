@@ -1,0 +1,209 @@
+# Generado por scripts/videos/passages.py. No editar a mano.
+# Videos públicos de jw.org sobre este libro y sus capítulos; ver docs/investigacion/videos-jw.md.
+book: numeros
+generated_on: "2026-09-28"
+series:
+  - docid: "pub-nwtsv_40_VIDEO"
+    title: "Información sobre Números"
+    url: "https://www.jw.org/finder?wtlocale=S&lank=pub-nwtsv_40_VIDEO"
+    published: "2021-01-28"
+chapters:
+  6:
+    - docid: "pub-jwb-108_1_VIDEO"
+      title: "JW Broadcasting: Noviembre de 2023 (reunión anual del 2023, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_1_VIDEO"
+      published: "2023-11-06"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb-108_5_VIDEO"
+      title: "Gerrit Lösch: Cómo se mostró amor a Jehová en el pasado"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_5_VIDEO"
+      published: "2023-11-07"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-co-r22_101_VIDEO"
+      title: "Stephen Lett: Jehová es \"el Dios que da paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_101_VIDEO"
+      published: "2022-06-28"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-co-r22_1_VIDEO"
+      title: "Viernes mañana (parte 1) | Asamblea regional del 2022 \"Busquen la paz\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r22_1_VIDEO"
+      published: "2022-06-27"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbcov22_2_VIDEO"
+      title: "Jehová es “el Dios que da paz”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbcov22_2_VIDEO"
+      published: "2022-09-13"
+      matched_by: [subtitles]
+      citations: 1
+  9:
+    - docid: "pub-jwb_201711_10_VIDEO"
+      title: "Joel Dellinger: La cooperación contribuye a la unidad (Luc. 2:41)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201711_10_VIDEO"
+      published: "2017-11-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbgg_201609_1_VIDEO"
+      title: "Graduación de la clase 141 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201609_1_VIDEO"
+      published: "2016-12-06"
+      matched_by: [subtitles]
+      citations: 1
+  10:
+    - docid: "pub-jwb_201806_1_VIDEO"
+      title: "JW Broadcasting: junio de 2018 (graduación de la clase 144 de la Escuela de Galaad)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201806_1_VIDEO"
+      published: "2018-06-04"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201705_2_VIDEO"
+      title: "Geoffrey W. Jackson: Atesoremos los recordatorios de Jehová"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201705_2_VIDEO"
+      published: "2017-05-15"
+      matched_by: [subtitles]
+      citations: 1
+  11:
+    - docid: "pub-jwb_201709_10_VIDEO"
+      title: "Kenneth Flodin: ¿Seremos humildes o altivos? (Sant. 4:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201709_10_VIDEO"
+      published: "2017-09-18"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbmw_201605_1_VIDEO"
+      title: "David Schafer: Practiquemos la devoción piadosa en nuestra propia casa (1 Tim. 5:4)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201605_1_VIDEO"
+      published: "2016-05-05"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod24_39_VIDEO"
+      title: "Jonathan Smith: Nos esperan tiempos mejores (Ecl. 7:10)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod24_39_VIDEO"
+      published: "2024-10-18"
+      matched_by: [subtitles]
+      citations: 1
+  12:
+    - docid: "pub-jwb-089_14_VIDEO"
+      title: "Kenneth Flodin: La mansedumbre, una cualidad compleja (Núm. 12:3)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-089_14_VIDEO"
+      published: "2022-05-20"
+      matched_by: [title, subtitles]
+      citations: 2
+    - docid: "pub-co-r20_12_VIDEO"
+      title: "Domingo tarde (parte 2) | Asamblea regional del 2020 “¡Alégrense siempre!”"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_12_VIDEO"
+      published: "2020-08-24"
+      matched_by: [subtitles]
+      citations: 4
+    - docid: "pub-co-r20_148_VIDEO"
+      title: "David Splane: Haz de Jehová tu mayor alegría"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-co-r20_148_VIDEO"
+      published: "2020-12-01"
+      matched_by: [subtitles]
+      citations: 4
+    - docid: "pub-jwb_202104_9_VIDEO"
+      title: "William Turner: “Jehová levanta a los mansos” (Sal. 147:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_202104_9_VIDEO"
+      published: "2021-04-12"
+      matched_by: [subtitles]
+      citations: 3
+    - docid: "pub-jwb_201910_10_VIDEO"
+      title: "Stephen Lett: No seamos murmuradores (Sant. 3:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201910_10_VIDEO"
+      published: "2019-10-28"
+      matched_by: [subtitles]
+      citations: 1
+  13:
+    - docid: "pub-jwbmw_201612_1_VIDEO"
+      title: "Robert Luccioni: Que nada limite lo que usted puede dar (Amós 7:14)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbmw_201612_1_VIDEO"
+      published: "2016-12-19"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb-125_6_VIDEO"
+      title: "Jeremy Clarke: Acuérdense de Escol"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-125_6_VIDEO"
+      published: "2025-06-16"
+      matched_by: [subtitles]
+      citations: 1
+  14:
+    - docid: "pub-jwb_201810_5_VIDEO"
+      title: "Se presenta la Traducción del Nuevo Mundo en cuatro idiomas europeos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201810_5_VIDEO"
+      published: "2018-10-15"
+      matched_by: [subtitles]
+      citations: 1
+  15:
+    - docid: "pub-jwb_201909_9_VIDEO"
+      title: "Geoffrey Jackson: “Háganlo todo para la gloria de Dios” (1 Cor. 10:31)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201909_9_VIDEO"
+      published: "2019-09-23"
+      matched_by: [subtitles]
+      citations: 1
+  16:
+    - docid: "pub-jwb-096_14_VIDEO"
+      title: "Baltasar Perla: Nunca dejemos de ser humildes (1 Ped. 5:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-096_14_VIDEO"
+      published: "2023-05-19"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwban_201608_1_VIDEO"
+      title: "Ronald Curzan: \"Al que es leal tú le demuestras lealtad\""
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwban_201608_1_VIDEO"
+      published: "2016-08-15"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbgg_201703_1_VIDEO"
+      title: "Graduación de la clase 142 de la Escuela de Galaad: Parte 1. Bienvenida y discursos"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbgg_201703_1_VIDEO"
+      published: "2017-07-13"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwbvod26_30_VIDEO"
+      title: "Stephen Lett: No seamos arrogantes (1 Ped. 5:5)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwbvod26_30_VIDEO"
+      published: "2026-08-28"
+      matched_by: [subtitles]
+      citations: 1
+  18:
+    - docid: "pub-jwb-108_1_VIDEO"
+      title: "JW Broadcasting: Noviembre de 2023 (reunión anual del 2023, parte 1)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_1_VIDEO"
+      published: "2023-11-06"
+      matched_by: [subtitles]
+      citations: 1
+    - docid: "pub-jwb-108_5_VIDEO"
+      title: "Gerrit Lösch: Cómo se mostró amor a Jehová en el pasado"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-108_5_VIDEO"
+      published: "2023-11-07"
+      matched_by: [subtitles]
+      citations: 1
+  20:
+    - docid: "pub-jwb-081_9_VIDEO"
+      title: "Trent Lippold: Marquen su Meribá"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-081_9_VIDEO"
+      published: "2021-06-08"
+      matched_by: [subtitles]
+      citations: 2
+    - docid: "pub-jwb_201709_10_VIDEO"
+      title: "Kenneth Flodin: ¿Seremos humildes o altivos? (Sant. 4:6)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201709_10_VIDEO"
+      published: "2017-09-18"
+      matched_by: [subtitles]
+      citations: 1
+  22:
+    - docid: "pub-jwb_201712_4_VIDEO"
+      title: "Graduación de la clase 143 de la Escuela de Galaad: Discurso de conclusión y entrega de asignaciones"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb_201712_4_VIDEO"
+      published: "2017-12-25"
+      matched_by: [subtitles]
+      citations: 1
+  27:
+    - docid: "pub-jwb-084_10_VIDEO"
+      title: "Mark Noumair: Sigamos en las manos del Alfarero (Jos. 1:1, 2)"
+      url: "https://www.jw.org/finder?wtlocale=S&lank=pub-jwb-084_10_VIDEO"
+      published: "2021-11-22"
+      matched_by: [subtitles]
+      citations: 2

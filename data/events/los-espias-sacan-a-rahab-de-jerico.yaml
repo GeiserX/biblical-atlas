@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-espias-sacan-a-rahab-de-jerico
+title: Los espías ponen a salvo a Rahab y a su familia
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+narrative_order:
+  series: numeros
+  order: 206022
+places:
+- jerico
+people:
+- rahab
+- josue-hijo-de-nun
+passages:
+- Jos 6:22, 23, 25
+- Heb 11:31
+summary: Josué manda a los dos espías sacar de su casa a Rahab con sus padres, sus hermanos y los suyos, como le habían jurado.
+  Los dejan fuera del campamento y luego ella se queda a vivir entre los israelitas.
+reason: 'Perspicacia «Rahab», núm. 1: su casa, en la muralla, no cayó; la familia estuvo un tiempo aislada del campamento y
+  después vivió en Israel. Heb 11:31 dice que no murió con los desobedientes.'
+sources:
+- josue-6
+- it-rahab
+- it-jerico
+links:
+- title: Josué 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/6
+  type: bible
+- title: 'Perspicacia: «Rahab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003623
+  type: perspicacia
+search: Rahab salvada Jericó Josué 6
+checked_on: '2026-09-29'
+status: verified

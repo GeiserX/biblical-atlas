@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: punon
+name: Punón
+names:
+- name: Punón
+type: region
+lat: 30.62775
+lon: 35.493647
+precision: uncertain
+coord_source: openbible:a9ecc26
+coord_url: https://www.openbible.info/geo/ancient/a9ecc26/punon
+coord_note: Punto de OpenBible en Khirbet Faynan, con que se suele identificar, unos 30 km al sureste de ʽAin Husb. El mapa
+  B3 lo marca ahí.
+summary: Campamento de Israel entre Zalmoná y Obot, algún tiempo después de dejar el monte Hor. Se suele identificar con Feinan,
+  al este del Arabá.
+reason: 'Perspicacia «Punón»; Nú 33:42, 43. No se ha ubicado con seguridad. OpenBible: solo el punto.'
+sources:
+- it-punon
+- tnm-b3
+- openbible-geo
+- numeros-33
+links:
+- title: 'Perspicacia: «Punón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003582
+  type: perspicacia
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

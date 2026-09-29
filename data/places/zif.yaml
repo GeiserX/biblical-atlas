@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zif
+name: Zif
+names:
+- name: Zif
+- name: Desierto de Zif
+  note: El desierto que rodeaba la ciudad, donde se escondió David (Perspicacia «Zif», núm. 3).
+type: city
+lat: 31.47475
+lon: 35.13514
+precision: point
+coord_source: openbible:a9b852f
+coord_url: https://www.openbible.info/geo/ancient/a9b852f/ziph-1
+summary: Ciudad de las montañas de Judá, al sureste de Hebrón. David se escondió de Saúl en el desierto que la rodeaba,
+  y sus habitantes, los zifeos, lo delataron al rey dos veces.
+reason: 'Perspicacia «Zif», núm. 3: se la sitúa por lo común en Tell Zif, 6 km al sureste de Hebrón; 1Sa 23:19 y 26:1; encabezamiento
+  de Sal 54. OpenBible: solo el punto.'
+sources:
+- it-zif
+- openbible-geo
+- salmos-54
+- josue-15
+- 1-samuel-23
+- 1-samuel-26
+links:
+- title: 'Perspicacia: «Zif»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004742
+  type: perspicacia
+- title: Salmo 54 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/54
+  type: bible
+checked_on: '2026-09-29'
+status: verified

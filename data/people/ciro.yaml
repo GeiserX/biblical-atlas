@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ciro
+name: Ciro
+names:
+- name: Ciro
+- name: Ciro el Grande
+disambiguation: Ciro II el Grande, fundador del Imperio persa; no su abuelo Ciro I.
+date:
+  from: -538
+  to: -529
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 539-530 a.e.c.
+summary: Rey persa que unió a medos y persas, tomó Babilonia en 539 a.e.c. y permitió volver a los judíos. Isaías lo había
+  nombrado más de siglo y medio antes.
+reason: Perspicacia «Ciro», apartados «Conquista de Babilonia», «El decreto de Ciro…» y «Muerte e importancia profética»;
+  Is 45:1 y Esd 1:1-4. Se cree que murió en campaña en 530.
+sources:
+- it-ciro
+- it-persia
+- isaias-45
+- esdras-1
+links:
+- title: 'Perspicacia: «Ciro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
+  type: perspicacia
+- title: Esdras 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1
+  type: bible
+not_claimed:
+- 'Que Ciro se hiciera adorador de Jehová: Perspicacia dice que reconoció los hechos, no que se convirtiera.'
+relations: []
+checked_on: '2026-09-28'
+status: verified

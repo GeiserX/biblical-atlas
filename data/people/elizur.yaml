@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elizur
+name: Elizur
+names:
+- name: Elizur
+perspicacia: '1200001325'
+summary: Rubenita, hijo de Sedeur. Jefe de su tribu, ayudó a Moisés y a Aarón a contar a Israel en el Sinaí y mandaba el ejército
+  de Rubén, que acampaba al sur del tabernáculo.
+reason: Perspicacia «Elizur»; Nú 1:5, 16; 2:10.
+sources:
+- it-elizur
+- numeros-1
+- numeros-2
+- numeros-7
+- numeros-10
+links:
+- title: 'Perspicacia: «Elizur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001325
+  type: perspicacia
+relations:
+- type: kin
+  person: sedeur
+  word: father
+  inferred: false
+  sources:
+  - it-elizur
+  - numeros-1
+  - numeros-2
+  - numeros-7
+  - numeros-10
+  reason: Nú 1:5 y 2:10 lo llaman hijo de Sedeur.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: moises
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 5, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: aaron
+  word: companion
+  inferred: false
+  sources:
+  - numeros-1
+  reason: 'Nú 1:4, 5, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

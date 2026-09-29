@@ -1,0 +1,84 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juicios-profeticos-contra-efrain-y-juda
+title: Oseas anuncia los juicios de Jehová contra Efraín y Judá
+date:
+  from: -828
+  to: -739
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '829-740 a.e.c. (tiempo narrativo: durante la obra de Oseas, de Uzías y Jeroboán II hasta antes de caer Samaria)'
+narrative_order:
+  series: oseas
+  order: 4001
+places:
+- israel
+- juda
+people:
+- oseas
+present: []
+passages:
+- Os 4:1-14:9
+summary: 'Oseas transmite el pleito de Jehová contra Israel, al que llama también Efraín, y contra Judá: idolatría, sacerdotes
+  corruptos, violencia y alianzas con Asiria y Egipto traerán castigo. También anuncia su perdón si vuelven a él.'
+reason: Oseas profetizó desde Uzías (829, A6-A) y Jeroboán II hasta Ezequías; Perspicacia «Oseas, Libro de» cierra el libro
+  entre 745 y 740. «Tabor» pone Os 5:1 a mediados del siglo VIII. No dice dónde habló.
+sources:
+- oseas-4
+- oseas-5
+- oseas-6
+- oseas-7
+- oseas-8
+- oseas-9
+- oseas-10
+- oseas-11
+- oseas-12
+- oseas-13
+- oseas-14
+- si-oseas
+- it-oseas-libro
+- it-oseas
+- tnm-tabla
+- it-tabor
+- tnm-a6-a
+- w05-andemos-con-dios
+links:
+- title: Oseas 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/4
+  type: bible
+- title: Oseas 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/5
+  type: bible
+- title: Oseas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/6
+  type: bible
+- title: Oseas 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/7
+  type: bible
+- title: Oseas 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/8
+  type: bible
+- title: Oseas 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/9
+  type: bible
+- title: Oseas 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/10
+  type: bible
+- title: Oseas 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/11
+  type: bible
+- title: Oseas 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/12
+  type: bible
+- title: Oseas 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/13
+  type: bible
+- title: Oseas 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/14
+  type: bible
+- title: 'Perspicacia: «Oseas, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002087
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

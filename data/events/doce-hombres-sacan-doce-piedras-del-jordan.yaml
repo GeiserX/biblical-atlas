@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: doce-hombres-sacan-doce-piedras-del-jordan
+title: Doce hombres sacan doce piedras del Jordán
+date:
+  from: -1472
+  to: -1472
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c.
+  detail:
+    month: nisan
+    day: 10
+narrative_order:
+  series: numeros
+  order: 204001
+places:
+- rio-jordan
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 4:1-9
+summary: Con el pueblo ya al otro lado, un hombre de cada tribu saca una piedra del punto del cauce donde esperan los sacerdotes
+  con el Arca. Josué coloca otras doce en ese mismo sitio del río.
+reason: 'Pasa mientras cruza el pueblo, el día en que sube del Jordán: el 10 del primer mes, nisán, de 1473 a.e.c. (Jos 4:19;
+  estudio 3).'
+sources:
+- josue-4
+- si-3
+- it-guilgal
+links:
+- title: Josué 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/4
+  type: bible
+checked_on: '2026-09-29'
+status: verified

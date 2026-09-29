@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacur-padre-de-samua
+name: Zacur
+names:
+- name: Zacur
+perspicacia: 1200004651#1
+disambiguation: Zacur de Rubén, padre del espía Samúa; no los otros Zacures de Crónicas y Nehemías.
+summary: Rubenita, padre de Samúa, el jefe que representó a su tribu entre los doce espías enviados a Canaán.
+reason: Perspicacia «Zacur», núm. 1; Nú 13:4.
+sources:
+- it-zacur
+- numeros-13
+links:
+- title: 'Perspicacia: «Zacur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004651
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

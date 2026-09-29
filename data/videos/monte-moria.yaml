@@ -1,20 +1,20 @@
-# Generado por scripts/videos/indexar.py. No editar a mano.
+# Generado por scripts/videos/index.py. No editar a mano.
 # Videos públicos de jw.org que nombran este lugar; ver docs/investigacion/videos-jw.md.
-lugar: monte-moria
-generado: "2026-09-28"
+place: monte-moria
+generated_on: "2026-09-28"
 videos:
   - docid: "pub-jwbcov24_9_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús"
+    title: "Lecciones sobre la tierra en la que vivió Jesús"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov24_9_VIDEO&appLanguage=S"
-    publicado: "2025-01-20"
-    menciones: 3
-    terminos:
+    published: "2025-01-20"
+    hits: 3
+    terms:
       "Moria": 1
       "monte del templo": 2
   - docid: "pub-jwbcov25_7_VIDEO"
-    titulo: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
+    title: "Lecciones sobre la tierra en la que vivió Jesús. Lugares"
     url: "https://www.jw.org/es/biblioteca/videos/?item=pub-jwbcov25_7_VIDEO&appLanguage=S"
-    publicado: "2026-01-19"
-    menciones: 2
-    terminos:
+    published: "2026-01-19"
+    hits: 2
+    terms:
       "Moria": 2

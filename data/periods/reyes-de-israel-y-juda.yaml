@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: reyes-de-israel-y-juda
+name: Reyes de Israel y Judá
+type: era
+date:
+  from: -1116
+  to: -606
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1117-607 a.e.c.
+summary: Reinan Saúl, David y Salomón. En 997 a.e.c. el reino se parte en dos; Asiria acaba con Israel y Babilonia destruye
+  Jerusalén. Va de 1 Samuel a 2 Crónicas.
+reason: 'Cuadro del estudio 3: Samuel unge a Saúl en 1117 a.e.c. y el templo es arrasado en 607 a.e.c. Los párr. 6 y 7 explican
+  cómo se llega a 607 y a 997.'
+sources:
+- si-3
+search: reyes de Judá e Israel cronología
+checked_on: '2026-09-28'
+status: verified
+note: 'El año frontera se repite a propósito: es el último de una época y el primero de la siguiente.'

@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: meseta
+name: Meseta
+names:
+- name: Meseta
+- name: Altiplano
+  note: Otra traducción que da la nota de Jos 13:9.
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Hesbón y el Arnón
+  geometry:
+    type: zone
+    lat: 31.635806
+    lon: 35.814226
+    radius_km: 20
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-meseta
+  - openbible-geo
+  reason: 'Perspicacia: la meseta del este del mar Muerto llega a Hesbón por el norte y al valle del Arnón por el sur.'
+  coord_source: calculation
+  note: 'Centro nuestro: punto medio entre Hesbón (31,8008 N; 35,8091 E) y Aroer, en el Arnón (31,4708 N; 35,8194 E), de OpenBible.
+    El radio de 20 km también es nuestro.'
+summary: Altiplano al este del mar Muerto, entre Hesbón, al norte, y el valle del Arnón, al sur, con ciudades como Medebá
+  y Dibón. Fue del rey Sehón y después de Rubén.
+reason: Perspicacia «Meseta» y «Rubén», núm. 2; Jos 13:9, 15-17, 21. Zona calculada por nosotros.
+not_claimed:
+- No trazamos sus límites; la zona del mapa es solo una referencia.
+sources:
+- it-meseta
+- it-ruben
+- openbible-geo
+- josue-13
+links:
+- title: 'Perspicacia: «Meseta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004297
+  type: perspicacia
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

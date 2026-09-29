@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: informe-en-antioquia
+title: Pablo y Bernabé cuentan en Antioquía lo que Dios hizo
+date:
+  from: 48
+  to: 49
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 48 a primavera de 49 e.c.
+narrative_order:
+  series: hechos
+  order: 1426
+places:
+- antioquia-de-siria
+people:
+- pablo
+- bernabe
+passages:
+- Hch 14:26-28
+summary: De regreso en Antioquía de Siria, reúnen a la congregación y cuentan cómo Dios ha dado a las naciones la
+  oportunidad de creer. Se quedan allí bastante tiempo.
+reason: El estudio 3 (párr. 21) sitúa la vuelta en otoño de 48 y el invierno siguiente en Antioquía.
+sources:
+- si-3
+- hch-14
+- nota-hechos-14
+search: puerta de la fe naciones Antioquía
+checked_on: '2026-09-28'
+status: verified

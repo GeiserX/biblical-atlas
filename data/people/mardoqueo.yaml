@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mardoqueo
+name: Mardoqueo
+names:
+- name: Mardoqueo
+disambiguation: El primo de Ester; no el Mardoqueo de Esd 2:2, que regresó en 537 con Zorobabel.
+date:
+  from: -492
+  to: -474
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: de 493 a c. 475 a.e.c.
+summary: Benjamita al servicio del rey en Susa, primo mayor y tutor de Ester. Se negó a postrarse ante Hamán, lo sustituyó
+  como primer ministro y probablemente escribió el libro de Ester.
+reason: Perspicacia «Mardoqueo», núm. 2, y «Ester, Libro de», apartado «Escritor»; el estudio 3 dice que completó el libro
+  hacia 475 a.e.c.
+sources:
+- it-mardoqueo
+- it-ester-libro
+- si-3
+links:
+- title: 'Perspicacia: «Mardoqueo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003111
+  type: perspicacia
+- title: Ester 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/17/3
+  type: bible
+not_claimed:
+- 'Que el propio Mardoqueo fuera deportado en 617 a.e.c.: lo que da Est 2:5, 6 es su linaje.'
+relations:
+- type: lived_in
+  place: susa
+  date:
+    from: -492
+    to: -474
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: de 493 a c. 475 a.e.c.
+  inferred: false
+  sources:
+  - it-mardoqueo
+  - it-susa
+  - tnm-tabla
+  reason: 'Perspicacia «Mardoqueo»: estaba sentado en la puerta del rey en Susa. Años que abarca Ester en la Tabla de los libros:
+    493 a c. 475.'
+  checked_on: '2026-09-28'
+  status: verified
+checked_on: '2026-09-28'
+status: verified

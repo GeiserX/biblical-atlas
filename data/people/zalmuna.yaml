@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zalmuna
+name: Zalmuná
+names:
+- name: Zalmuná
+perspicacia: '1200004658'
+summary: Rey de Madián que, junto a Zébah, tuvo oprimido a Israel siete años, hasta que Gedeón fue juez. Gedeón puso en fuga
+  a sus tropas y los dos reyes acabaron capturados y muertos.
+reason: Perspicacia «Zalmuná» y «Zébah»; Jue 6:1, 33 y 8:4-21; Sl 83:11, 12.
+sources:
+- it-zalmuna
+- it-zebah
+- salmos-83
+- jueces-8
+links:
+- title: 'Perspicacia: «Zalmuná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004658
+  type: perspicacia
+- title: Salmo 83 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: accompanies
+  person: zebah
+  inferred: false
+  sources:
+  - jueces-8
+  reason: 'Jue 8:5, 12: los dos son los reyes de Madián y actúan siempre juntos.'
+  checked_on: '2026-09-29'
+  status: verified

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: queila
+name: Queilá
+names:
+- name: Queilá
+type: city
+lat: 31.6137
+lon: 35.0036
+precision: point
+coord_source: openbible:ad9df93
+coord_url: https://www.openbible.info/geo/ancient/ad9df93/keilah
+summary: Ciudad fortificada de Judá en la Sefelá, en Khirbet Qila, unos 14 km al noroeste de Hebrón. David la libró de los
+  filisteos y luego tuvo que salir de ella para no caer en manos de Saúl.
+reason: 'Perspicacia «Queilá»; Jos 15:44; 1Sa 23:1-13. OpenBible: solo el punto.'
+sources:
+- it-queila
+- openbible-geo
+- josue-15
+- 1-samuel-23
+links:
+- title: 'Perspicacia: «Queilá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002584
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

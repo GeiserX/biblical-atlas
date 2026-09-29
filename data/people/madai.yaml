@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: madai
+name: Madái
+names:
+- name: Madái
+- name: Madai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002823'
+summary: 'Tercer hijo de Jafet en la lista. Se le tiene por antepasado de los medos: en el resto de la Biblia su nombre hebreo
+  se traduce «medos» o «Media».'
+reason: Perspicacia «Madai»; Gé 10:2.
+sources:
+- it-madai
+- genesis-10
+links:
+- title: 'Perspicacia: «Madai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002823
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: jafet
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:2 lo nombra entre los hijos de Jafet.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

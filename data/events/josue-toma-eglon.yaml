@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-toma-eglon
+title: Josué toma Eglón
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+narrative_order:
+  series: josue
+  order: 10034
+places:
+- eglon
+- lakis
+people:
+- josue-hijo-de-nun
+passages:
+- Jos 10:34, 35
+summary: Desde Lakís, Josué acampa ante Eglón, la conquista ese mismo día y da muerte a todos sus habitantes, igual que en
+  Lakís.
+reason: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal.'
+sources:
+- josue-10
+- si-3
+- it-josue
+- it-eglon
+links:
+- title: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

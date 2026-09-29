@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ziclag
+name: Ziclag
+names:
+- name: Ziclag
+- name: Ziqlag
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.3912
+lon: 34.6816
+precision: uncertain
+coord_source: openbible:a0ed7ff
+coord_url: https://www.openbible.info/geo/ancient/a0ed7ff/ziklag
+coord_note: Tell esh-Shariʽah (Tel Seraʽ), primera identificación de OpenBible; es la que prefieren Aharoni y otros, según
+  Perspicacia.
+summary: 'Ciudad del sur de Judá que se dio a Simeón. Más tarde fue de los filisteos: Akís se la dio a David, que vivió allí
+  huyendo de Saúl, y desde entonces fue de los reyes de Judá.'
+reason: 'Perspicacia «Ziqlag»; Jos 15:31; 19:5; 1Sa 27:6. OpenBible: solo el punto.'
+sources:
+- it-ziqlag
+- openbible-geo
+- josue-15
+- josue-19
+- 1-samuel-27
+- 1-samuel-30
+links:
+- title: 'Perspicacia: «Ziqlag»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004731
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 1 Samuel 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/27
+  type: bible
+checked_on: '2026-09-29'
+status: verified

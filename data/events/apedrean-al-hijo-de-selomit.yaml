@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: apedrean-al-hijo-de-selomit
+title: Apedrean al hijo de Selomit por blasfemar
+date:
+  from: -1511
+  to: -1511
+  precision: month
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: abib (nisán) de 1512 a.e.c.
+  detail:
+    month: nisan
+  note: Mes aproximado, el más probable. Levítico cabe entre el 1 de nisán (Éx 40:17) y el 1 de ziv (Nú 1:1); solo Le 8-10
+    tienen día conocido.
+narrative_order:
+  series: levitico
+  order: 24010
+places:
+- desierto-de-sinai
+people:
+- moises
+passages:
+- Le 24:10-23
+summary: En el campamento, el hijo de una danita y un egipcio riñe con un israelita y maldice el nombre de Dios. Lo llevan
+  ante Moisés, preso hasta que Jehová decide, y el pueblo lo apedrea fuera del campamento.
+reason: 'Le 24:10-23. Perspicacia «Levítico, Libro de»: el campamento estaba en el desierto de Sinaí y el libro abarca como
+  mucho un mes desde que se montó el tabernáculo; la tabla de libros da 1512 a.e.c.'
+sources:
+- levitico-24
+- it-selomit
+- it-dibri
+- it-levitico-libro
+- tnm-tabla
+links:
+- title: Levítico 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/24
+  type: bible
+- title: 'Perspicacia: «Levítico, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002732
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

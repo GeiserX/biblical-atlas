@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-abinadab
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#2
+disambiguation: El hijo de Abinadab que guardó el Arca en Quiryat-Jearim; no Eleazar hijo de Aarón ni los demás Eleazar que
+  numera Perspicacia.
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-eliud
+summary: Hijo de Abinadab. Los de Quiryat-Jearim lo santificaron para que cuidara el Arca en la casa de su padre, cuando los
+  filisteos ya la habían devuelto.
+reason: Perspicacia «Eleazar», núm. 2; 1Sa 7:1.
+sources:
+- it-eleazar
+- 1-samuel-7
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
+  type: perspicacia
+- title: 1 Samuel 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/7
+  type: bible
+relations:
+- type: kin
+  person: abinadab-de-quiryat-jearim
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-7
+  reason: 1Sa 7:1 lo llama hijo de Abinadab.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: quiryat-jearim
+  inferred: false
+  sources:
+  - 1-samuel-7
+  - it-eleazar
+  reason: '1Sa 7:1: cuidaba el Arca en Quiryat-Jearim, en casa de Abinadab.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

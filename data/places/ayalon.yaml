@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ayalon
+name: Ayalón
+names:
+- name: Ayalón
+  note: Ayalón de Dan; no la de Zabulón (Jue 12:12).
+type: city
+lat: 31.841111
+lon: 35.023611
+precision: point
+coord_source: openbible:a1c600b
+coord_url: https://www.openbible.info/geo/ancient/a1c600b/aijalon-1
+coord_note: Punto de OpenBible en Yalo.
+summary: Ciudad de la Sefelá sobre una colina, en el extremo sur del valle de Ayalón, unos 21 km al ONO de Jerusalén. Se dio
+  a Dan y luego a los levitas qohatitas; Rehoboam la fortificó.
+reason: 'Perspicacia «Ayalón», núm. 1; Jos 19:42; 2Cr 11:10. OpenBible: solo el punto.'
+sources:
+- it-ayalon
+- openbible-geo
+- josue-19
+- josue-21
+- jueces-1
+- 1-samuel-14
+links:
+- title: 'Perspicacia: «Ayalón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000182
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tolomeo-toma-jerusalen
+title: Tolomeo I toma Jerusalén
+date:
+  from: -311
+  to: -311
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 312 a.e.c.
+places:
+- jerusalen
+people: []
+passages: []
+summary: Tolomeo I, que gobierna Egipto tras Alejandro, captura Jerusalén. Judá queda como provincia del Egipto tolemaico
+  durante más de un siglo.
+reason: Perspicacia «Egipto, egipcio» (apartado sobre Grecia y Roma) fecha la captura en 312 a.e.c. y el dominio egipcio
+  hasta 198 a.e.c.
+sources:
+- it-egipto
+search: Tolomeo Jerusalén
+checked_on: '2026-09-28'
+status: verified

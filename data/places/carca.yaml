@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: carca
+name: Carcá
+names:
+- name: Carcá
+- name: Qarqá
+  note: Grafía de Perspicacia; quizá significa «suelo».
+type: region
+lat: 30.666667
+lon: 34.366667
+precision: uncertain
+coord_source: openbible:a438f5e
+coord_url: https://www.openbible.info/geo/ancient/a438f5e/karka
+coord_note: Punto de ʽAin el-Qeseimeh, única identificación de OpenBible, que Perspicacia da a Azmón. Perspicacia habla de
+  un estanque unos 4 km al estesureste de ese manantial.
+summary: Punto de la frontera sur de Judá entre Addar y Azmón. No se sabe dónde estaba; hay quien lo pone en un estanque antiguo,
+  bien construido, cerca de donde se cree que estaba Azmón.
+reason: 'Perspicacia «Qarqá»; Jos 15:3. OpenBible: solo el punto.'
+sources:
+- it-qarqa
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Qarqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002574
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

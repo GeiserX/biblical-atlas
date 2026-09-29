@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: on-hijo-de-pelez
+name: 'On'
+names:
+- name: 'On'
+perspicacia: '1200003325'
+disambiguation: El rubenita de Nú 16:1; no la ciudad egipcia de On, Heliópolis, que Perspicacia «On» trata en la entrada núm.
+  2.
+summary: Rubenita importante, hijo de Pélez. Se unió al principio a la rebelión de Coré contra Moisés y Aarón, pero el relato
+  no lo vuelve a nombrar; quizá tuvo poco peso o se retiró.
+reason: Perspicacia «On», núm. 1; Nú 16:1, 2.
+sources:
+- it-on
+- numeros-16
+links:
+- title: 'Perspicacia: «On»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003325
+  type: perspicacia
+- title: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  type: bible
+relations:
+- type: kin
+  person: pelez-padre-de-on
+  word: father
+  inferred: false
+  sources:
+  - numeros-16
+  - it-on
+  - it-pelez
+  reason: 'Nú 16:1: On hijo de Pélez.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ruben-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-16
+  - it-on
+  reason: Nú 16:1 lo cuenta entre los hijos de Rubén; Perspicacia «On» lo llama hombre principal de esa tribu.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

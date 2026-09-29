@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: iye-abarim
+name: Iyé-Abarim
+names:
+- name: Iyé-Abarim
+  note: Perspicacia lo traduce como ruinas de los vados o de las regiones de más allá.
+- name: Iyim
+  note: Forma breve que usa Nú 33:45, según Perspicacia «Iyim», núm. 1.
+type: region
+lat: 30.955999
+lon: 35.77948
+precision: uncertain
+coord_source: openbible:a0574da
+coord_url: https://www.openbible.info/geo/ancient/a0574da/iye-abarim
+coord_note: Punto de OpenBible en el-Medeiyineh, junto al Zered. Perspicacia recoge esa propuesta sin darla por segura.
+summary: Campamento de Israel en el desierto frente a Moab, por el este, junto a su frontera sur y cerca del valle de Zered.
+  Quizá era el extremo sur de la región de Abarim.
+reason: 'Perspicacia «Iyé-abarim» y «Abarim»; Nú 21:11, 12. OpenBible: solo el punto.'
+sources:
+- it-iye-abarim
+- it-abarim
+- openbible-geo
+- numeros-21
+- it-iyim
+- tnm-b3
+- numeros-33
+links:
+- title: 'Perspicacia: «Iyé-abarim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002249
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+- title: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,76 @@
+# Nombres de personas que busca scripts/videos/index.py en los subtítulos: carril «persas».
+# Mismo formato que scripts/videos/place_names/pablo.yaml, con el id de data/people. Solo formas que no se confunden:
+# «Daniel» y «Ester» sueltos son nombres de pila frecuentes en las experiencias; «Josué» suelto es el hijo de Nun;
+# «Darío», «Asuero», «Artajerjes» y «Zacarías» nombran a varias personas. Van calificados.
+
+ciro:
+  names: [Ciro, Ciro el Grande]
+
+daniel:
+  names: [profeta Daniel, Beltsasar]
+
+zorobabel:
+  names: [Zorobabel]
+
+sesbazar:
+  names: [Sesbazar]
+
+josue-sumo-sacerdote:
+  names: [sumo sacerdote Josué, Jesúa]
+
+ageo:
+  names: [Ageo]
+
+zacarias-profeta:
+  names: [profeta Zacarías]
+
+esdras:
+  names: [Esdras]
+
+nehemias:
+  names: [Nehemías]
+
+malaquias:
+  names: [Malaquías]
+
+ester:
+  names: [reina Ester, Hadassá]
+
+mardoqueo:
+  names: [Mardoqueo]
+
+haman:
+  names: [Hamán]
+
+sanbalat:
+  names: [Sanbalat]
+
+belsasar:
+  names: [Belsasar]
+
+nabonido:
+  names: [Nabonido]
+
+dario-el-medo:
+  names: [Darío el medo]
+
+cambises-ii:
+  names: [Cambises]
+
+dario-i:
+  names: [Darío I, Darío Histaspes, Darío el Grande]
+
+jerjes-i:
+  names: [Jerjes]
+
+artajerjes-i:
+  names: [Artajerjes Longimano]
+
+sadrac:
+  names: [Sadrac]
+
+mesac:
+  names: [Mesac]
+
+abednego:
+  names: [Abednego]

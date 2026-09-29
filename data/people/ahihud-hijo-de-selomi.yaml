@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahihud-hijo-de-selomi
+name: Ahihud
+names:
+- name: Ahihud
+perspicacia: 1200000152#1
+disambiguation: Ahihud hijo de Selomí, el jefe de Aser; no Ahihud el benjamita, hermano de Uzá.
+summary: Jefe de la tribu de Aser, hijo de Selomí. Jehová lo eligió, con otros jefes, para ayudar a Eleazar y a Josué a dividir
+  Canaán en herencias.
+reason: Perspicacia «Ahihud», núm. 1; Nú 34:27.
+sources:
+- it-ahihud
+- numeros-34
+links:
+- title: 'Perspicacia: «Ahihud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000152
+  type: perspicacia
+- title: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  type: bible
+relations:
+- type: kin
+  person: selomi
+  word: father
+  inferred: false
+  sources:
+  - numeros-34
+  - it-ahihud
+  reason: Nú 34:27 lo llama hijo de Selomí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: aser-hijo-de-jacob
+  word: ancestor
+  inferred: false
+  sources:
+  - numeros-34
+  reason: 'Nú 34:27: era el jefe de la tribu de Aser.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

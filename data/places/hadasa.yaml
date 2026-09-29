@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hadasa
+name: Hadasá
+names:
+- name: Hadasá
+type: city
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Entre Lakís y Gat
+  geometry:
+    type: zone
+    lat: 31.626892
+    lon: 34.845729
+    radius_km: 10
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-hadasa
+  - openbible-geo
+  reason: El texto la pone en la Sefelá; OpenBible solo la sitúa en la región entre Lakís y Gat. Radio nuestro.
+  coord_source: openbible:a785680
+  coord_url: https://www.openbible.info/geo/ancient/a785680/hadashah
+summary: Ciudad de la Sefelá de Judá cuyo nombre significa «nueva». Hoy no se sabe dónde estaba.
+reason: Perspicacia «Hadasá»; Jos 15:37. OpenBible solo la sitúa entre Lakís y Gat.
+sources:
+- it-hadasa
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Hadasá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001801
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

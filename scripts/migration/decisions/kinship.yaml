@@ -1,0 +1,1666 @@
+# biblical-earth: decisiones de la migración sobre parentesco, tratos y compañía (K1 a K5, T1 y T2 de
+# docs/investigacion/modelo.md, sección 16). Cada entrada lleva sus fuentes y su razón; el código de su
+# decisión va en el comentario que la precede. Formato: la cabecera de scripts/migration/migrate.py.
+format: biblical-earth/migration-decisions/1
+decision: K1 K2 K3 K4 K5 T1 T2
+checked_on: '2026-09-29'
+entries:
+# K1
+- file: people/artajerjes-i
+  relation: artajerjes-i/kin/jerjes-i
+  set:
+    word: father
+    inferred: true
+  unset:
+  - caption
+  sources:
+  - it-artajerjes
+  reason: Perspicacia «Artajerjes», núm. 2, lo hace hijo de Jerjes I. La Biblia no dice de quién era hijo, así que
+    el dato es deducido.
+- file: people/jerjes-i
+  relation: jerjes-i/kin/dario-i
+  set:
+    word: father
+    inferred: true
+  unset:
+  - caption
+  sources:
+  - it-asuero
+  reason: Perspicacia «Asuero», núm. 3, lo da como hijo de Darío el Grande; ningún texto bíblico lo dice, así que
+    es deducido.
+- file: people/belsasar
+  relation: belsasar/kin/nabonido
+  set:
+    word: father
+    inferred: true
+  unset:
+  - caption
+  sources:
+  - it-belsasar
+  reason: Perspicacia «Belsasar» lo llama primogénito de Nabonido. Daniel 5 no nombra a Nabonido, así que el dato
+    es deducido.
+- file: people/aquila
+  relation: aquila/kin/priscila
+  set:
+    word: wife
+  sources:
+  - hch-18
+  reason: 'Hch 18:2: Priscila era la esposa de Áquila. Desde su ficha la palabra es wife; husband decía lo que era
+    él.'
+- file: people/felix
+  relation: felix/kin/drusila
+  set:
+    word: wife
+  sources:
+  - hch-24
+  reason: 'Hch 24:24: Drusila era la esposa de Félix. Desde su ficha la palabra es wife; husband decía lo que era
+    él.'
+- file: people/cambises-ii
+  add:
+    type: kin
+    person: ciro
+    word: father
+    inferred: true
+    sources:
+    - it-ciro
+    - it-persia
+    reason: 'Perspicacia «Ciro» y «Persia, persas»: era hijo de Ciro, fue su corregente y le sucedió como único
+      rey al morir. La Biblia no lo dice.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-ciro
+  reason: Va en la ficha del hijo, con la palabra father. Solo Perspicacia da el parentesco, así que es deducido.
+- file: people/ciro
+  relation: ciro/kin/cambises-ii
+  remove: true
+  redirect_to: cambises-ii/kin/ciro/father
+  sources:
+  - it-ciro
+  reason: Va en la ficha del hijo, con la palabra father. Solo Perspicacia da el parentesco, así que es deducido.
+- file: people/jerjes-i
+  add:
+    type: kin
+    person: ester
+    word: wife
+    inferred: false
+    sources:
+    - ester-2
+    - it-ester
+    - it-asuero
+    reason: 'Est 2:16, 17: Asuero se prendó de Ester y la coronó reina en vez de Vasti. Según Perspicacia «Asuero», núm.
+      3, se cree que era Jerjes I.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - ester-2
+  reason: Va en la ficha del esposo con la palabra wife; «esposa de Asuero» decía lo que era ella.
+- file: people/ester
+  relation: ester/kin/jerjes-i
+  remove: true
+  redirect_to: jerjes-i/kin/ester/wife
+  sources:
+  - ester-2
+  reason: Va en la ficha del esposo con la palabra wife; «esposa de Asuero» decía lo que era ella.
+- file: people/ester
+  relation: ester/kin/mardoqueo
+  set:
+    word: cousin
+  unset:
+  - caption
+  sources:
+  - ester-2
+  reason: 'Est 2:7, 15: Ester era hija de Abihail, tío de Mardoqueo, así que eran primos. La palabra cousin dice
+    lo mismo desde su ficha.'
+- file: people/ester
+  add:
+    type: kin
+    person: mardoqueo
+    word: adoptive_father
+    inferred: false
+    sources:
+    - ester-2
+    - it-ester
+    reason: 'Est 2:7, 15: cuando Ester quedó huérfana, Mardoqueo la tomó como hija y era su tutor.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - ester-2
+  reason: 'La crianza es un segundo hecho: el texto dice que Mardoqueo la adoptó. Va en la ficha de Ester, la más
+    joven.'
+# K2
+- file: people/timoteo
+  add:
+    type: kin
+    person: eunice
+    word: mother
+    inferred: false
+    sources:
+    - hch-16
+    - 2-timoteo-1
+    - it-eunice
+    reason: 'Hch 16:1: su madre era una judía creyente y su padre, griego. 2Ti 1:5 la llama Eunice.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - hch-16
+  reason: Va en la ficha del hijo, la persona más joven, con la palabra mother.
+- file: people/eunice
+  relation: eunice/kin/timoteo
+  remove: true
+  redirect_to: timoteo/kin/eunice/mother
+  sources:
+  - hch-16
+  reason: Va en la ficha del hijo, la persona más joven, con la palabra mother.
+- file: people/eunice
+  add:
+    type: kin
+    person: loida
+    word: mother
+    inferred: true
+    sources:
+    - it-loida
+    - it-eunice
+    reason: Perspicacia «Eunice» la llama hija de Loida; «Loida» se apoya en las versiones siriacas de 2Ti 1:5,
+      que la hacen abuela por parte de madre.
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-eunice
+  reason: Va en la ficha de la hija, con la palabra mother. Lo deduce la publicación, no el texto.
+- file: people/loida
+  relation: loida/kin/eunice
+  remove: true
+  redirect_to: eunice/kin/loida/mother
+  sources:
+  - it-eunice
+  reason: Va en la ficha de la hija, con la palabra mother. Lo deduce la publicación, no el texto.
+- file: people/timoteo
+  add:
+    type: kin
+    person: loida
+    word: grandmother
+    inferred: false
+    sources:
+    - 2-timoteo-1
+    - it-loida
+    reason: '2Ti 1:5: Pablo recuerda la fe de Loida, la abuela de Timoteo, y la de su madre Eunice.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - 2-timoteo-1
+  reason: Va en la ficha del nieto, la persona más joven, con la palabra grandmother.
+- file: people/loida
+  relation: loida/kin/timoteo
+  remove: true
+  redirect_to: timoteo/kin/loida/grandmother
+  sources:
+  - 2-timoteo-1
+  reason: Va en la ficha del nieto, la persona más joven, con la palabra grandmother.
+- file: people/bernabe
+  add:
+    type: kin
+    person: maria-madre-de-juan-marcos
+    word: aunt
+    inferred: true
+    sources:
+    - it-maria
+    - colosenses-4
+    reason: Col 4:10 llama a Marcos primo de Bernabé; Perspicacia «María», núm. 5, deduce que la madre de Marcos
+      era tía de Bernabé.
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - colosenses-4
+  reason: Va en la ficha del sobrino, la persona más joven, con la palabra aunt.
+- file: people/maria-madre-de-juan-marcos
+  relation: maria-madre-de-juan-marcos/kin/bernabe
+  remove: true
+  redirect_to: bernabe/kin/maria-madre-de-juan-marcos/aunt
+  sources:
+  - colosenses-4
+  reason: Va en la ficha del sobrino, la persona más joven, con la palabra aunt.
+- file: people/tiberio
+  add:
+    type: kin
+    person: augusto
+    word: stepfather
+    inferred: true
+    sources:
+    - it-tiberio
+    reason: 'Perspicacia «Tiberio»: nació en 42 a.e.c. y, cuando tenía unos tres años, Octavio (Augusto) se casó
+      con su madre, Livia. La Biblia no lo cuenta.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-tiberio
+  reason: «Hijastro e hijo adoptivo» eran dos hechos. El primero va en la ficha de Tiberio, el más joven; la fuente
+    da su edad, no el año, y un año calculado sería una fecha nuestra.
+- file: people/tiberio
+  add:
+    type: kin
+    person: augusto
+    word: adoptive_father
+    date:
+      from: 4
+      to: 4
+      precision: year
+      approx: false
+      type: anchored
+      chronology: tnm
+      text: 4 e.c.
+    inferred: true
+    sources:
+    - it-tiberio
+    reason: 'Perspicacia «Tiberio»: Augusto lo adoptó en 4 e.c. y más tarde lo escogió como sucesor. La Biblia no
+      lo cuenta.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-tiberio
+  reason: El segundo hecho, la adopción de 4 e.c., en la ficha de Tiberio. Solo lo da Perspicacia, así que es deducido.
+- file: people/augusto
+  relation: augusto/kin/tiberio
+  remove: true
+  redirect_to: tiberio/kin/augusto/adoptive_father@4
+  sources:
+  - it-tiberio
+  reason: El segundo hecho, la adopción de 4 e.c., en la ficha de Tiberio. Solo lo da Perspicacia, así que es deducido.
+- file: people/arquipo
+  relation: arquipo/kin/filemon
+  set:
+    word: father
+    status: pending
+    reason: 'Perspicacia «Filemón» cree posible que Arquipo fuera su hijo (Flm 2). Ni el texto ni la fuente lo afirman:
+      queda deducido y pendiente.'
+  unset:
+  - caption
+  sources:
+  - it-filemon
+  reason: 'Arquipo sería el hijo: Filemón es su padre. La duda va en inferred y en status pending, no en la palabra.'
+# K3
+- file: people/abrahan
+  relation: abrahan/kin/nacor-hijo-de-tare
+  set:
+    reason: 'Gé 11:26, 27: Abrán, Nacor y Harán son hijos de Taré. Gé 22:20-23 y 24:15 vuelven a nombrarlo hermano
+      de Abrahán.'
+  sources:
+  - genesis-22
+  - it-nacor
+  - genesis-24
+  reason: Gé 11:26, 27 nombra primero a Abrán. Se queda su copia con las fuentes de las dos.
+- file: people/nacor-hijo-de-tare
+  relation: nacor-hijo-de-tare/kin/abrahan
+  remove: true
+  redirect_to: abrahan/kin/nacor-hijo-de-tare/brother
+  sources:
+  - genesis-22
+  - it-nacor
+  - genesis-24
+  reason: Gé 11:26, 27 nombra primero a Abrán. Se queda su copia con las fuentes de las dos.
+- file: people/andres
+  relation: andres/kin/pedro
+  set:
+    reason: 'Jn 1:40-42: Andrés es hermano de Simón Pedro y lo lleva a Jesús. Mt 4:18 y Mr 1:16 los encuentran pescando
+      juntos.'
+  sources:
+  - it-pedro
+  - mateo-4
+  - marcos-1
+  reason: Jn 1:40 dice de Andrés que es hermano de Simón Pedro. Se queda su copia con las fuentes de las dos.
+- file: people/pedro
+  relation: pedro/kin/andres
+  remove: true
+  redirect_to: andres/kin/pedro/brother
+  sources:
+  - it-pedro
+  - juan-1
+  - mateo-4
+  - mateo-10
+  - marcos-1
+  - lucas-6
+  reason: Jn 1:40 dice de Andrés que es hermano de Simón Pedro. Se queda su copia con las fuentes de las dos.
+- file: people/elisabet
+  relation: elisabet/kin/maria-madre-de-jesus
+  remove: true
+  redirect_to: maria-madre-de-jesus/kin/elisabet/relative
+  sources:
+  - lucas-1
+  reason: 'Lu 1:36: Gabriel le dice a María que Elisabet es su pariente. Se queda la copia de María.'
+- file: people/isaac
+  relation: isaac/kin/ismael-hijo-de-abrahan
+  set:
+    reason: 'Gé 25:9: sus hijos Isaac e Ismael entierran a Abrahán; uno es hijo de Sara y otro de Agar (Gé 21:9,
+      10). Perspicacia «Isaac» e «Ismael» los llaman medios hermanos.'
+  sources:
+  - genesis-21
+  - it-ismael
+  reason: Gé 25:9 nombra primero a Isaac. Se queda su copia con las fuentes de las dos.
+- file: people/ismael-hijo-de-abrahan
+  relation: ismael-hijo-de-abrahan/kin/isaac
+  remove: true
+  redirect_to: isaac/kin/ismael-hijo-de-abrahan/half_brother
+  sources:
+  - genesis-21
+  - it-ismael
+  reason: Gé 25:9 nombra primero a Isaac. Se queda su copia con las fuentes de las dos.
+- file: people/judas-hermano-de-jesus
+  relation: judas-hermano-de-jesus/kin/jesus
+  remove: true
+  redirect_to: jesus/kin/judas-hermano-de-jesus/half_brother
+  sources:
+  - it-judas
+  - mateo-13
+  - marcos-6
+  reason: Mt 13:55 dice de Jesús que Judas es uno de sus hermanos. Se queda la copia de Jesús.
+- file: people/jesus
+  relation: jesus/kin/santiago-hermano-de-jesus
+  set:
+    reason: Mt 13:55 nombra a Santiago entre sus hermanos y Gál 1:19 lo llama hermano del Señor. Perspicacia «Santiago»
+      lo hace hijo de José y María, medio hermano de Jesús.
+  sources:
+  - it-santiago
+  - galatas-1
+  reason: Mt 13:55 dice de Jesús que Santiago es uno de sus hermanos. Se queda su copia con las fuentes de las dos.
+- file: people/santiago-hermano-de-jesus
+  relation: santiago-hermano-de-jesus/kin/jesus
+  remove: true
+  redirect_to: jesus/kin/santiago-hermano-de-jesus/half_brother
+  sources:
+  - it-santiago
+  - galatas-1
+  - marcos-6
+  reason: Mt 13:55 dice de Jesús que Santiago es uno de sus hermanos. Se queda su copia con las fuentes de las dos.
+- file: people/santiago-hijo-de-zebedeo
+  relation: santiago-hijo-de-zebedeo/kin/juan-apostol
+  set:
+    reason: Mt 10:2 nombra a Santiago, hijo de Zebedeo, y luego a Juan, su hermano. Perspicacia «Juan» cree que
+      Juan era el menor, porque Santiago suele ir primero (párr. 21).
+  sources:
+  - it-juan
+  - marcos-5
+  reason: Mt 10:2 nombra primero a Santiago y dice que Juan es su hermano. Se queda su copia con las fuentes de
+    las dos.
+- file: people/juan-apostol
+  relation: juan-apostol/kin/santiago-hijo-de-zebedeo
+  remove: true
+  redirect_to: santiago-hijo-de-zebedeo/kin/juan-apostol/brother
+  sources:
+  - it-juan
+  - it-santiago
+  - mateo-10
+  - marcos-3
+  - marcos-5
+  reason: Mt 10:2 nombra primero a Santiago y dice que Juan es su hermano. Se queda su copia con las fuentes de
+    las dos.
+- file: people/judas-hermano-de-jesus
+  relation: judas-hermano-de-jesus/kin/santiago-hermano-de-jesus
+  remove: true
+  redirect_to: santiago-hermano-de-jesus/kin/judas-hermano-de-jesus/brother
+  sources:
+  - it-judas
+  - judas-1
+  reason: Mt 13:55 nombra primero a Santiago, y Jud 1 dice de Judas que es su hermano. Se queda la copia de Santiago.
+- file: people/rebeca
+  relation: rebeca/kin/laban
+  set:
+    reason: 'Gé 24:29: Rebeca tenía un hermano llamado Labán. Gé 27:43 y 28:5 lo vuelven a presentar como hermano
+      de ella.'
+  sources:
+  - genesis-27
+  - genesis-28
+  reason: Gé 24:29 dice de Rebeca que tenía un hermano, Labán. Se queda su copia con las fuentes de las dos.
+- file: people/laban
+  relation: laban/kin/rebeca
+  remove: true
+  redirect_to: rebeca/kin/laban/brother
+  sources:
+  - genesis-27
+  - genesis-28
+  - it-laban
+  reason: Gé 24:29 dice de Rebeca que tenía un hermano, Labán. Se queda su copia con las fuentes de las dos.
+- file: people/lazaro
+  relation: lazaro/kin/maria-de-betania
+  set:
+    reason: 'Jn 11:1-3: Lázaro, de Betania, es hermano de María y de Marta, que mandan avisar a Jesús de que está
+      enfermo.'
+  sources:
+  - juan-11
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- file: people/maria-de-betania
+  relation: maria-de-betania/kin/lazaro
+  remove: true
+  redirect_to: lazaro/kin/maria-de-betania/sister
+  sources:
+  - juan-11
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- file: people/lazaro
+  relation: lazaro/kin/marta
+  set:
+    reason: 'Jn 11:1-3: Lázaro, de Betania, es hermano de Marta y de María, que mandan avisar a Jesús de que está
+      enfermo.'
+  sources:
+  - juan-11
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- file: people/marta
+  relation: marta/kin/lazaro
+  remove: true
+  redirect_to: lazaro/kin/marta/sister
+  sources:
+  - juan-11
+  reason: Jn 11:1 nombra primero a Lázaro. Se queda su copia, con la razón escrita desde su ficha.
+- file: people/maria-de-betania
+  relation: maria-de-betania/kin/marta
+  set:
+    reason: Jn 11:1 nombra a María y a su hermana Marta; Lu 10:38, 39 también las presenta como hermanas.
+  sources:
+  - lucas-10
+  reason: Jn 11:1 nombra primero a María y dice que Marta es su hermana. Se queda su copia con las fuentes de las
+    dos.
+- file: people/marta
+  relation: marta/kin/maria-de-betania
+  remove: true
+  redirect_to: maria-de-betania/kin/marta/sister
+  sources:
+  - juan-11
+  - lucas-10
+  reason: Jn 11:1 nombra primero a María y dice que Marta es su hermana. Se queda su copia con las fuentes de las
+    dos.
+- file: people/felipe-evangelizador
+  relation: felipe-evangelizador/accompanies/esteban
+  remove: true
+  redirect_to: esteban/accompanies/felipe-evangelizador
+  sources:
+  - it-felipe
+  - hechos-6
+  reason: Hch 6:5 nombra a Esteban antes que a Felipe. Se queda la copia de Esteban.
+- file: people/josue-sumo-sacerdote
+  relation: josue-sumo-sacerdote/accompanies/zorobabel
+  set:
+    reason: Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y de la obra del templo, que se acaba en 515
+      (estudio 3, tabla). Perspicacia «Jesúa» y «Zorobabel».
+  sources:
+  - it-zorobabel
+  reason: Esd 3:2 nombra primero a Jesúa. Se queda su copia con las fuentes de las dos.
+- file: people/zorobabel
+  relation: zorobabel/accompanies/josue-sumo-sacerdote
+  remove: true
+  redirect_to: josue-sumo-sacerdote/accompanies/zorobabel@-536
+  sources:
+  - it-zorobabel
+  - it-jesua
+  - esdras-3
+  reason: Esd 3:2 nombra primero a Jesúa. Se queda su copia con las fuentes de las dos.
+- file: people/pedro
+  relation: pedro/accompanies/juan-apostol
+  set:
+    reason: 'Lu 22:8: Jesús los envía juntos a preparar la Pascua; después van juntos al templo (Hch 3:1) y a Samaria
+      (Hch 8:14). Perspicacia «Pedro», párr. 7, y «Juan», párr. 30.'
+  sources:
+  - it-juan
+  - lucas-5
+  reason: Lu 22:8, Hch 3:1 y 8:14 nombran primero a Pedro. Se queda su copia con las fuentes de las dos.
+- file: people/juan-apostol
+  relation: juan-apostol/accompanies/pedro
+  remove: true
+  redirect_to: pedro/accompanies/juan-apostol/companion
+  sources:
+  - it-juan
+  - hechos-8
+  - lucas-5
+  reason: Lu 22:8, Hch 3:1 y 8:14 nombran primero a Pedro. Se queda su copia con las fuentes de las dos.
+- file: people/pedro
+  relation: pedro/accompanies/santiago-hijo-de-zebedeo
+  set:
+    reason: 'Lu 5:10: Santiago y Juan eran socios de Simón en la pesca. Con Juan, fueron los tres que Jesús llevó
+      a la transfiguración y a Getsemaní (Perspicacia «Pedro», párr. 3 y 7).'
+  sources:
+  - lucas-5
+  reason: Lu 5:10 dice de Santiago y Juan que eran socios de Simón. Se queda la copia de Pedro, con las fuentes
+    de las dos.
+- file: people/santiago-hijo-de-zebedeo
+  relation: santiago-hijo-de-zebedeo/accompanies/pedro
+  remove: true
+  redirect_to: pedro/accompanies/santiago-hijo-de-zebedeo
+  sources:
+  - it-santiago
+  - lucas-5
+  reason: Lu 5:3-10 nombra primero a Simón; 5:10 dice que Santiago y Juan eran sus socios. Se queda la copia de Pedro, con
+    las fuentes de las dos.
+# K4
+- file: people/agar
+  relation: agar/kin/abrahan
+  remove: true
+  redirect_to: abrahan/kin/agar/wife
+  sources:
+  - it-agar
+  - genesis-16
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- file: people/abrahan
+  relation: abrahan/kin/sara
+  set:
+    reason: 'Gé 11:29: la esposa de Abrán se llamaba Sarái. Gé 20:12: era hija de su padre, pero no de su madre.
+      Perspicacia «Sara» dice que se casaron en Ur.'
+  sources:
+  - genesis-16
+  - genesis-20
+  - genesis-23
+  - genesis-49
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje de Gé 20:12 que solo decía la de Sara.
+- file: people/sara
+  relation: sara/kin/abrahan
+  remove: true
+  redirect_to: abrahan/kin/sara/wife
+  sources:
+  - it-sara
+  - genesis-12
+  - genesis-16
+  - genesis-17
+  - genesis-20
+  - genesis-23
+  - genesis-49
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje de Gé 20:12 que solo decía la de Sara.
+- file: people/acab
+  relation: acab/kin/jezabel
+  set:
+    sources:
+    - it-acab
+    - 1-reyes-16
+    - it-jezabel
+  sources:
+  - it-jezabel
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/jezabel
+  relation: jezabel/kin/acab
+  remove: true
+  redirect_to: acab/kin/jezabel/wife
+  sources:
+  - it-jezabel
+  - 1-reyes-16
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/adan
+  relation: adan/kin/eva
+  set:
+    reason: 'Gé 2:22-25: Dios le lleva la mujer y el texto la llama su esposa. Perspicacia «Adán», párr. 7, y «Eva»,
+      párr. 3.'
+  sources:
+  - it-eva
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/eva
+  relation: eva/kin/adan
+  remove: true
+  redirect_to: adan/kin/eva/wife
+  sources:
+  - it-eva
+  - genesis-2
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/safira
+  relation: safira/kin/ananias-de-jerusalen
+  remove: true
+  redirect_to: ananias-de-jerusalen/kin/safira/wife
+  sources:
+  - it-safira
+  - hechos-5
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- file: people/elisabet
+  relation: elisabet/kin/zacarias-padre-de-juan
+  remove: true
+  redirect_to: zacarias-padre-de-juan/kin/elisabet/wife
+  sources:
+  - lucas-1
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- file: people/herodes-antipas
+  relation: herodes-antipas/kin/herodias
+  set:
+    reason: 'Mt 14:3, 4 y Mr 6:17: Juan le reprochaba tener por esposa a Herodías. Perspicacia «Herodes» (núm. 2)
+      cuenta la boda.'
+  sources:
+  - mateo-14
+  reason: Va en la ficha del esposo, con el pasaje de Mr 6:17 que solo decía la de Herodías.
+- file: people/herodias
+  relation: herodias/kin/herodes-antipas
+  remove: true
+  redirect_to: herodes-antipas/kin/herodias/wife
+  sources:
+  - marcos-6
+  reason: Va en la ficha del esposo, con el pasaje de Mr 6:17 que solo decía la de Herodías.
+- file: people/isaac
+  relation: isaac/kin/rebeca
+  set:
+    reason: 'Gé 24:67: Isaac tomó a Rebeca por esposa; Gé 25:20: tenía 40 años. Perspicacia «Rebeca», párr. 6.'
+  sources:
+  - it-rebeca
+  - genesis-26
+  - genesis-49
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/rebeca
+  relation: rebeca/kin/isaac
+  remove: true
+  redirect_to: isaac/kin/rebeca/wife
+  sources:
+  - it-rebeca
+  - genesis-24
+  - genesis-25
+  - genesis-26
+  - genesis-49
+  reason: Va en la ficha del esposo, con las fuentes de las dos.
+- file: people/lea
+  relation: lea/kin/jacob
+  remove: true
+  redirect_to: jacob/kin/lea/wife
+  sources:
+  - it-lea
+  - genesis-29
+  reason: Va en la ficha del esposo. La otra copia no lleva nada más.
+- file: people/jacob
+  relation: jacob/kin/raquel
+  set:
+    reason: 'Gé 29:18-28: Jacob sirvió siete años por ella y, una semana después de la boda con Lea, Labán se la
+      dio por esposa. Gé 46:19 la llama esposa de Jacob.'
+  sources:
+  - genesis-46
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de Raquel.
+- file: people/raquel
+  relation: raquel/kin/jacob
+  remove: true
+  redirect_to: jacob/kin/raquel/wife
+  sources:
+  - it-raquel
+  - genesis-29
+  - genesis-46
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de Raquel.
+- file: people/jose-esposo-de-maria
+  relation: jose-esposo-de-maria/kin/maria-madre-de-jesus
+  set:
+    reason: 'Mt 1:18 y Lu 1:27: María estaba comprometida con José; Mt 1:24: él se la llevó a su casa como esposa.'
+  sources:
+  - it-maria
+  - lucas-1
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de María.
+- file: people/maria-madre-de-jesus
+  relation: maria-madre-de-jesus/kin/jose-esposo-de-maria
+  remove: true
+  redirect_to: jose-esposo-de-maria/kin/maria-madre-de-jesus/wife
+  sources:
+  - mateo-1
+  - it-maria
+  - lucas-1
+  reason: Va en la ficha del esposo, con las fuentes de las dos y el pasaje que solo decía la de María.
+- file: people/anas
+  relation: anas/kin/caifas
+  remove: true
+  redirect_to: caifas/kin/anas/father_in_law
+  sources:
+  - juan-18
+  reason: Va en la ficha del yerno. La otra copia no lleva nada más.
+- file: people/arquelao
+  relation: arquelao/kin/herodes-el-grande
+  set:
+    reason: 'Mt 2:22: Arquelao ocupa el trono de Judea en lugar de su padre, Herodes. Perspicacia «Arquelao», párr.
+      2.'
+  sources:
+  - it-arquelao
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- file: people/herodes-el-grande
+  relation: herodes-el-grande/kin/arquelao
+  remove: true
+  redirect_to: arquelao/kin/herodes-el-grande/father
+  sources:
+  - mateo-2
+  - it-arquelao
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- file: people/juan-el-bautista
+  relation: juan-el-bautista/kin/elisabet
+  set:
+    reason: 'Lu 1:13, 57-60: Elisabet da a luz al hijo anunciado y le ponen por nombre Juan.'
+  sources:
+  - lucas-1
+  reason: Va en la ficha del hijo, con el pasaje de Lu 1:57-60 que solo decía la de Elisabet.
+- file: people/elisabet
+  relation: elisabet/kin/juan-el-bautista
+  remove: true
+  redirect_to: juan-el-bautista/kin/elisabet/mother
+  sources:
+  - lucas-1
+  reason: Va en la ficha del hijo, con el pasaje de Lu 1:57-60 que solo decía la de Elisabet.
+- file: people/herodes-agripa-ii
+  relation: herodes-agripa-ii/kin/herodes-agripa-i
+  set:
+    inferred: true
+    reason: Perspicacia «Herodes», núm. 4, lo presenta como hijo de Herodes Agripa I y de Cipros. La Biblia no dice
+      de quién era hijo.
+  sources:
+  - it-herodes
+  reason: 'Va en la ficha del hijo. Es deducido: solo Perspicacia dice de quién era hijo Agripa II.'
+- file: people/herodes-agripa-i
+  relation: herodes-agripa-i/kin/herodes-agripa-ii
+  remove: true
+  redirect_to: herodes-agripa-ii/kin/herodes-agripa-i/father
+  sources:
+  - it-herodes
+  reason: 'Va en la ficha del hijo. Es deducido: solo Perspicacia dice de quién era hijo Agripa II.'
+- file: people/herodes-el-grande
+  relation: herodes-el-grande/kin/herodes-antipas
+  remove: true
+  redirect_to: herodes-antipas/kin/herodes-el-grande/father
+  sources:
+  - it-herodes
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- file: people/jesus
+  relation: jesus/kin/jose-esposo-de-maria
+  set:
+    reason: Perspicacia «José» (núm. 8) lo llama padre adoptivo. La gente creía a Jesús hijo de José (Lu 3:23) y
+      lo llamaba el hijo del carpintero (Mt 13:55).
+  sources:
+  - mateo-13
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- file: people/jose-esposo-de-maria
+  relation: jose-esposo-de-maria/kin/jesus
+  remove: true
+  redirect_to: jesus/kin/jose-esposo-de-maria/adoptive_father
+  sources:
+  - it-jose
+  - mateo-13
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- file: people/maria-madre-de-jesus
+  relation: maria-madre-de-jesus/kin/jesus
+  remove: true
+  redirect_to: jesus/kin/maria-madre-de-jesus/mother
+  sources:
+  - lucas-2
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- file: people/zacarias-padre-de-juan
+  relation: zacarias-padre-de-juan/kin/juan-el-bautista
+  remove: true
+  redirect_to: juan-el-bautista/kin/zacarias-padre-de-juan/father
+  sources:
+  - lucas-1
+  reason: Va en la ficha del hijo. La otra copia no lleva nada más.
+- file: people/juan-marcos
+  relation: juan-marcos/kin/maria-madre-de-juan-marcos
+  set:
+    reason: Hch 12:12 habla de la casa de María, «madre de Juan, al que llamaban Marcos». Perspicacia «Marcos» y
+      «María», núm. 5.
+  sources:
+  - it-maria
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+- file: people/maria-madre-de-juan-marcos
+  relation: maria-madre-de-juan-marcos/kin/juan-marcos
+  remove: true
+  redirect_to: juan-marcos/kin/maria-madre-de-juan-marcos/mother
+  sources:
+  - it-maria
+  - hechos-12
+  reason: Va en la ficha del hijo, con las fuentes de las dos.
+# K5
+- file: people/matred
+  relation: matred/kin/mezahab
+  set:
+    word: parent
+  sources:
+  - genesis-36
+  reason: 'Gé 36:39: Matred era hija de Mezahab, y no se sabe si Mezahab era su padre o su madre: parent.'
+- file: people/ana-hijo-de-zibeon
+  relation: ana-hijo-de-zibeon/kin/seir
+  set:
+    word: ancestor
+  sources:
+  - it-anah
+  reason: 'Perspicacia «Anah» lee «hijos de Seír» como descendientes: Seír es su antepasado.'
+- file: people/dison
+  relation: dison/kin/seir
+  set:
+    word: ancestor
+  sources:
+  - it-dison
+  reason: Perspicacia «Disón» deja abierto si era hijo o descendiente de Seír; ancestor es verdad en los dos casos.
+- file: people/sealtiel
+  relation: sealtiel/kin/neri
+  set:
+    word: relative
+  sources:
+  - it-neri
+  reason: Lu 3:27 lo llama hijo de Nerí y Perspicacia cree posible que fuera su yerno. Pariente es verdad en los
+    dos casos; la razón dice las dos lecturas.
+- file: people/boaz
+  relation: boaz/kin/elimelec
+  set:
+    word: relative
+  sources:
+  - rut-2
+  reason: 'Rut 2:1, 3: era de la familia de Elimélec, sin decir el grado.'
+- file: people/job
+  relation: job/kin/abrahan
+  set:
+    word: relative
+  sources:
+  - it-job
+  reason: Perspicacia «Job» lo hace pariente de Abrahán sin decir el grado.
+- file: people/elihu-hijo-de-barakel
+  relation: elihu-hijo-de-barakel/kin/ram-antepasado-de-elihu
+  set:
+    word: ancestor
+  sources:
+  - it-ram
+  reason: Job 32:2 lo hace de la familia de Ram, y Perspicacia «Ram», núm. 3, llama a Ram fundador de esa familia.
+# T1
+- file: people/pablo
+  add:
+    type: tie
+    person: julio
+    word: custodian
+    date:
+      from: 58
+      to: 59
+      precision: range
+      approx: true
+      type: anchored
+      chronology: tnm
+      text: c. 58-59 e.c.
+    inferred: false
+    sources:
+    - it-julio
+    - hch-27
+    - si-3
+    reason: 'Hch 27:1, 3: lo entregan con otros presos a Julio, que lo lleva desde Cesarea y en Sidón le deja ver
+      a sus amigos. El viaje va de c. 58 a 59 (estudio 3, párr. 27).'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - hch-27
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí.
+- file: people/julio
+  relation: julio/tie/pablo
+  remove: true
+  redirect_to: pablo/tie/julio/custodian@58
+  sources:
+  - hch-27
+  reason: Va en la ficha de quien va custodiado, con la palabra custodian y la razón escrita desde allí.
+- file: people/sergio-paulo
+  add:
+    type: tie
+    person: elimas
+    word: adviser
+    inferred: true
+    sources:
+    - it-bar-jesus
+    - hch-13
+    reason: 'Hch 13:6-8: el hechicero Elimas estaba con el procónsul y trataba de apartarlo de la fe. Perspicacia
+      «Bar-Jesús» cree que era su consejero.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - hch-13
+  reason: Va en la ficha de quien recibe el consejo, con la palabra adviser y la razón escrita desde allí.
+- file: people/elimas
+  relation: elimas/tie/sergio-paulo
+  remove: true
+  redirect_to: sergio-paulo/tie/elimas/adviser
+  sources:
+  - hch-13
+  reason: Va en la ficha de quien recibe el consejo, con la palabra adviser y la razón escrita desde allí.
+# T2
+- file: people/amrafel
+  add:
+    type: tie
+    person: kedorlaomer
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/amrafel
+  relation: amrafel/accompanies/kedorlaomer
+  remove: true
+  redirect_to: amrafel/tie/kedorlaomer/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/arioc-de-elasar
+  add:
+    type: tie
+    person: kedorlaomer
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/arioc-de-elasar
+  relation: arioc-de-elasar/accompanies/kedorlaomer
+  remove: true
+  redirect_to: arioc-de-elasar/tie/kedorlaomer/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/tidal
+  add:
+    type: tie
+    person: kedorlaomer
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:1, 9: fue uno de los tres reyes aliados de Kedorlaomer.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/tidal
+  relation: tidal/accompanies/kedorlaomer
+  remove: true
+  redirect_to: tidal/tie/kedorlaomer/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:1, 9: los cuatro reyes del este hacen la guerra juntos. Es una alianza, no una compañía.'
+- file: people/aner
+  add:
+    type: tie
+    person: abrahan
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:13, 24: aliado de Abrán, fue con él a rescatar a Lot.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/aner
+  relation: aner/accompanies/abrahan
+  remove: true
+  redirect_to: aner/tie/abrahan/ally
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/escol
+  add:
+    type: tie
+    person: abrahan
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:13, 24: aliado de Abrán, fue con él a rescatar a Lot.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/escol
+  relation: escol/accompanies/abrahan
+  remove: true
+  redirect_to: escol/tie/abrahan/ally
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/mamre
+  add:
+    type: tie
+    person: abrahan
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:13, 24: aliado de Abrán, fue con él a rescatar a Lot.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/mamre
+  relation: mamre/accompanies/abrahan
+  remove: true
+  redirect_to: mamre/tie/abrahan/ally
+  sources:
+  - genesis-14
+  reason: Gé 14:13 dice que eran aliados de Abrán. Es una alianza, no una compañía.
+- file: people/birsa
+  add:
+    type: tie
+    person: bera
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:3, 8: unió sus fuerzas a las del rey de Sodoma y los demás rebeldes.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/birsa
+  relation: birsa/accompanies/bera
+  remove: true
+  redirect_to: birsa/tie/bera/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/semeber
+  add:
+    type: tie
+    person: bera
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:3, 8: unió sus fuerzas a las del rey de Sodoma y los demás rebeldes.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/semeber
+  relation: semeber/accompanies/bera
+  remove: true
+  redirect_to: semeber/tie/bera/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/sinab
+  add:
+    type: tie
+    person: bera
+    word: ally
+    inferred: false
+    sources:
+    - genesis-14
+    reason: 'Gé 14:3, 8: unió sus fuerzas a las del rey de Sodoma y los demás rebeldes.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/sinab
+  relation: sinab/accompanies/bera
+  remove: true
+  redirect_to: sinab/tie/bera/ally
+  sources:
+  - genesis-14
+  reason: 'Gé 14:2, 3: los cinco reyes unieron sus fuerzas contra Kedorlaomer. Es una alianza, no una compañía.'
+- file: people/agar
+  add:
+    type: tie
+    person: sara
+    word: mistress
+    inferred: false
+    sources:
+    - genesis-16
+    - it-agar
+    reason: 'Gé 16:1, 8: era sierva de Sarái.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-16
+  - it-agar
+  reason: 'Gé 16:1: Agar era la sierva de Sarái. Sara es su señora, como Raquel lo es de Bilhá.'
+- file: people/agar
+  relation: agar/accompanies/sara
+  remove: true
+  redirect_to: agar/tie/sara/mistress
+  sources:
+  - genesis-16
+  - it-agar
+  reason: 'Gé 16:1: Agar era la sierva de Sarái. Sara es su señora, como Raquel lo es de Bilhá.'
+- file: people/debora-nodriza-de-rebeca
+  add:
+    type: tie
+    person: rebeca
+    word: mistress
+    inferred: true
+    sources:
+    - it-debora
+    - genesis-24
+    - genesis-35
+    reason: 'Gé 24:59: la nodriza se fue con Rebeca, y su nota dice que ya era su sierva. Gé 35:8 la llama Débora,
+      nodriza de Rebeca.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-debora
+  - genesis-24
+  - genesis-35
+  reason: La nota de Gé 24:59 dice que la nodriza, que la había amamantado, era ya su sierva.
+- file: people/debora-nodriza-de-rebeca
+  relation: debora-nodriza-de-rebeca/accompanies/rebeca
+  remove: true
+  redirect_to: debora-nodriza-de-rebeca/tie/rebeca/mistress
+  sources:
+  - it-debora
+  - genesis-24
+  - genesis-35
+  reason: La nota de Gé 24:59 dice que la nodriza, que la había amamantado, era ya su sierva.
+- file: people/eliezer-de-damasco
+  add:
+    type: tie
+    person: abrahan
+    word: master
+    inferred: false
+    sources:
+    - genesis-15
+    - it-eliezer
+    reason: 'Gé 15:2, 3: siervo de la casa de Abrán y su heredero mientras no tuviera hijos.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-15
+  - it-eliezer
+  reason: 'Gé 15:2, 3: Eliezer era un siervo de la casa de Abrán. Abrahán es su señor.'
+- file: people/eliezer-de-damasco
+  relation: eliezer-de-damasco/accompanies/abrahan
+  remove: true
+  redirect_to: eliezer-de-damasco/tie/abrahan/master
+  sources:
+  - genesis-15
+  - it-eliezer
+  reason: 'Gé 15:2, 3: Eliezer era un siervo de la casa de Abrán. Abrahán es su señor.'
+- file: people/cuza
+  add:
+    type: tie
+    person: herodes-antipas
+    word: master
+    inferred: false
+    sources:
+    - lucas-8
+    - it-cuza
+    reason: 'Lu 8:3: era el mayordomo de la casa de Herodes y trabajaba a su servicio. Perspicacia «Cuza» y la nota
+      de estudio dicen que ese Herodes era Antipas.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - lucas-8
+  - it-cuza
+  reason: 'Lu 8:3: Cuza era el encargado de la casa de Herodes. Herodes es su señor; el encargo va en la razón.'
+- file: people/cuza
+  relation: cuza/accompanies/herodes-antipas
+  remove: true
+  redirect_to: cuza/tie/herodes-antipas/master
+  sources:
+  - lucas-8
+  - it-cuza
+  reason: 'Lu 8:3: Cuza era el encargado de la casa de Herodes. Herodes es su señor; el encargo va en la razón.'
+- file: people/ficol-de-tiempos-de-abrahan
+  add:
+    type: tie
+    person: abimelec-de-tiempos-de-abrahan
+    word: master
+    inferred: false
+    sources:
+    - genesis-21
+    - it-ficol
+    reason: 'Gé 21:22, 32: jefe del ejército de Abimélec, fue con él a ver a Abrahán.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-21
+  - it-ficol
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la
+    razón.
+- file: people/ficol-de-tiempos-de-abrahan
+  relation: ficol-de-tiempos-de-abrahan/accompanies/abimelec-de-tiempos-de-abrahan
+  remove: true
+  redirect_to: ficol-de-tiempos-de-abrahan/tie/abimelec-de-tiempos-de-abrahan/master
+  sources:
+  - genesis-21
+  - it-ficol
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la
+    razón.
+- file: people/ficol-de-tiempos-de-isaac
+  add:
+    type: tie
+    person: abimelec-de-tiempos-de-isaac
+    word: master
+    inferred: false
+    sources:
+    - it-ficol
+    - genesis-26
+    reason: 'Gé 26:26: jefe del ejército de Abimélec, fue con él a ver a Isaac.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-ficol
+  - genesis-26
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la
+    razón.
+- file: people/ficol-de-tiempos-de-isaac
+  relation: ficol-de-tiempos-de-isaac/accompanies/abimelec-de-tiempos-de-isaac
+  remove: true
+  redirect_to: ficol-de-tiempos-de-isaac/tie/abimelec-de-tiempos-de-isaac/master
+  sources:
+  - it-ficol
+  - genesis-26
+  reason: Ficol era el jefe del ejército de Abimélec (Gé 21:22; 26:26). Abimélec es su señor; el cargo va en la
+    razón.
+- file: people/abimelec-de-tiempos-de-isaac
+  add:
+    type: tie
+    person: ahuzat
+    word: adviser
+    inferred: false
+    sources:
+    - it-ahuzat
+    - genesis-26
+    reason: 'Gé 26:26: Ahuzat, su consejero personal, fue con él desde Guerar a ver a Isaac.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-ahuzat
+  - genesis-26
+  reason: 'Gé 26:26: Ahuzat era el consejero de Abimélec. Va en la ficha de quien recibe el consejo.'
+- file: people/ahuzat
+  relation: ahuzat/accompanies/abimelec-de-tiempos-de-isaac
+  remove: true
+  redirect_to: abimelec-de-tiempos-de-isaac/tie/ahuzat/adviser
+  sources:
+  - it-ahuzat
+  - genesis-26
+  reason: 'Gé 26:26: Ahuzat era el consejero de Abimélec. Va en la ficha de quien recibe el consejo.'
+- file: people/david
+  add:
+    type: tie
+    person: ahitofel
+    word: adviser
+    inferred: false
+    sources:
+    - it-ahitofel
+    - 2-samuel-15
+    - 2-samuel-16
+    reason: 2Sa 15:12 llama a Ahitofel consejero de David, y 16:23 dice que su consejo se tenía como si viniera
+      de Dios.
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-ahitofel
+  - 2-samuel-15
+  - 2-samuel-16
+  reason: '2Sa 15:12: Ahitofel era consejero de David. Va en la ficha de quien recibe el consejo.'
+- file: people/ahitofel
+  relation: ahitofel/accompanies/david
+  remove: true
+  redirect_to: david/tie/ahitofel/adviser
+  sources:
+  - it-ahitofel
+  - 2-samuel-15
+  - 2-samuel-16
+  reason: '2Sa 15:12: Ahitofel era consejero de David. Va en la ficha de quien recibe el consejo.'
+- file: people/bildad
+  add:
+    type: tie
+    person: job
+    word: friend
+    inferred: false
+    sources:
+    - job-2
+    - job-8
+    - job-12
+    - job-16
+    - job-19
+    - it-bildad
+    - job-25
+    - job-32
+    - job-42
+    reason: 'Job 2:11: uno de los tres amigos que fueron a consolarlo.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - job-2
+  - job-8
+  - job-12
+  - job-16
+  - job-19
+  - it-bildad
+  - job-25
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/bildad
+  relation: bildad/accompanies/job
+  remove: true
+  redirect_to: bildad/tie/job/friend
+  sources:
+  - job-2
+  - job-8
+  - job-12
+  - job-16
+  - job-19
+  - it-bildad
+  - job-25
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/elifaz-el-temanita
+  add:
+    type: tie
+    person: job
+    word: friend
+    inferred: false
+    sources:
+    - job-2
+    - job-4
+    - job-12
+    - job-16
+    - job-19
+    - it-elifaz
+    - job-32
+    - job-42
+    reason: 'Job 2:11: uno de los tres amigos que fueron a consolarlo.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - job-2
+  - job-4
+  - job-12
+  - job-16
+  - job-19
+  - it-elifaz
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/elifaz-el-temanita
+  relation: elifaz-el-temanita/accompanies/job
+  remove: true
+  redirect_to: elifaz-el-temanita/tie/job/friend
+  sources:
+  - job-2
+  - job-4
+  - job-12
+  - job-16
+  - job-19
+  - it-elifaz
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/zofar
+  add:
+    type: tie
+    person: job
+    word: friend
+    inferred: false
+    sources:
+    - job-2
+    - job-12
+    - job-16
+    - job-19
+    - it-zofar
+    - job-32
+    - job-42
+    reason: 'Job 2:11: uno de los tres amigos que fueron a consolarlo.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - job-2
+  - job-12
+  - job-16
+  - job-19
+  - it-zofar
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/zofar
+  relation: zofar/accompanies/job
+  remove: true
+  redirect_to: zofar/tie/job/friend
+  sources:
+  - job-2
+  - job-12
+  - job-16
+  - job-19
+  - it-zofar
+  - job-32
+  - job-42
+  reason: Job 2:11 los llama los tres amigos de Job. Es un trato de amistad, no una compañía.
+- file: people/hira
+  add:
+    type: tie
+    person: juda-hijo-de-jacob
+    word: friend
+    inferred: false
+    sources:
+    - genesis-38
+    reason: 'Gé 38:12, 20: el texto lo llama amigo de Judá, y va con él a Timná.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - genesis-38
+  reason: Gé 38:12 lo llama amigo de Judá. Es un trato de amistad, no una compañía.
+- file: people/hira
+  relation: hira/accompanies/juda-hijo-de-jacob
+  remove: true
+  redirect_to: hira/tie/juda-hijo-de-jacob/friend
+  sources:
+  - genesis-38
+  reason: Gé 38:12 lo llama amigo de Judá. Es un trato de amistad, no una compañía.
+- file: people/eliseo
+  add:
+    type: tie
+    person: elias-profeta
+    word: master
+    inferred: false
+    sources:
+    - it-elias
+    - 1-reyes-19
+    - 2-reyes-2
+    reason: '1Re 19:19-21: Eliseo deja el arado, sigue a Elías y empieza a servirle. En 2Re 2:3, 5 los hijos de
+      los profetas llaman a Elías su señor.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-elias
+  - 1-reyes-19
+  - 2-reyes-2
+  reason: '1Re 19:21: Eliseo siguió a Elías y empezó a servirle; en 2Re 2:3, 5 Elías es su señor. Va en la ficha
+    de Eliseo.'
+- file: people/elias-profeta
+  relation: elias-profeta/accompanies/eliseo
+  remove: true
+  redirect_to: eliseo/tie/elias-profeta/master
+  sources:
+  - it-elias
+  - 1-reyes-19
+  - 2-reyes-2
+  reason: '1Re 19:21: Eliseo siguió a Elías y empezó a servirle; en 2Re 2:3, 5 Elías es su señor. Va en la ficha
+    de Eliseo.'
+- file: people/samuel
+  add:
+    type: tie
+    person: eli
+    word: custodian
+    inferred: false
+    sources:
+    - it-eli
+    - 1-samuel-1
+    - 1-samuel-3
+    - it-samuel
+    reason: '1Sa 1:24-28: Ana lo lleva de niño a Elí, en Siló; 1Sa 3:1: servía a Jehová bajo su supervisión. Perspicacia
+      «Samuel» dice que lo dejó a su cuidado.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - it-eli
+  - 1-samuel-1
+  - 1-samuel-3
+  - it-samuel
+  reason: '1Sa 1:25 y 3:1: Ana llevó el niño a Elí, y Samuel servía bajo su supervisión. Elí es su custodio.'
+- file: people/eli
+  relation: eli/accompanies/samuel
+  remove: true
+  redirect_to: samuel/tie/eli/custodian
+  sources:
+  - it-eli
+  - 1-samuel-1
+  - 1-samuel-3
+  - it-samuel
+  reason: '1Sa 1:25 y 3:1: Ana llevó el niño a Elí, y Samuel servía bajo su supervisión. Elí es su custodio.'
+- file: people/samuel
+  relation: samuel/accompanies/eli
+  remove: true
+  redirect_to: samuel/tie/eli/custodian
+  sources:
+  - 1-samuel-2
+  - it-samuel
+  reason: '1Sa 2:11: Samuel servía a Jehová a cargo de Elí. Es el mismo trato que el de custodio, escrito del otro
+    lado; «ayudante de» no es una palabra del vocabulario.'
+- file: people/bartimeo
+  relation: bartimeo/accompanies/jesus
+  set:
+    date:
+      from: 33
+      to: 33
+      precision: season
+      approx: true
+      type: anchored
+      chronology: tnm
+      text: primavera de 33 e.c.
+      detail:
+        season: spring
+  sources:
+  - marcos-10
+  reason: 'Lo sigue por el camino tras recobrar la vista en Jericó: la fecha es la del suceso, la primavera de 33.'
+- file: people/abednego
+  relation: abednego/accompanies/daniel
+  set:
+    word: companion
+  sources:
+  - daniel-2
+  reason: Da 2:17 llama a Azarías compañero de Daniel; Da 1:7 dice que le pusieron el nombre de Abednego.
+- file: people/mesac
+  relation: mesac/accompanies/daniel
+  set:
+    word: companion
+  sources:
+  - daniel-2
+  reason: Da 2:17 llama a Misael compañero de Daniel; Da 1:7 dice que le pusieron el nombre de Mesac.
+- file: people/sadrac
+  relation: sadrac/accompanies/daniel
+  set:
+    word: companion
+  sources:
+  - daniel-2
+  reason: Da 2:17 llama a Hananías compañero de Daniel; Da 1:7 dice que le pusieron el nombre de Sadrac.
+- file: people/barac
+  relation: barac/accompanies/debora-profetisa
+  set:
+    word: female_companion
+  sources:
+  - jueces-4
+  reason: 'Jue 4:8-10: Barac solo va a la batalla si Débora va con él, y ella sube con él a Cedes.'
+- file: people/caleb-hijo-de-jefune
+  relation: caleb-hijo-de-jefune/accompanies/josue-hijo-de-nun
+  set:
+    word: companion
+  sources:
+  - numeros-13
+  - numeros-14
+  reason: 'Nú 13:6, 8 y 14:6-9: los dos fueron entre los doce espías y solo ellos animaron al pueblo a entrar.'
+- file: people/lot
+  relation: lot/accompanies/abrahan
+  set:
+    word: companion
+  sources:
+  - genesis-12
+  reason: 'Gé 12:4: Lot fue con Abrán cuando salió de Harán, y siguió con él en Canaán y en Egipto.'
+- file: people/maria-magdalena
+  add:
+    type: disciple_of
+    person: jesus
+    inferred: false
+    sources:
+    - lucas-8
+    - it-maria
+    - mateo-27
+    - marcos-15
+    - lucas-23
+    reason: Lu 8:1-3 la cuenta entre las mujeres que iban con Jesús y le servían con sus bienes.
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - lucas-8
+  - it-maria
+  - mateo-27
+  - marcos-15
+  - lucas-23
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- file: people/maria-magdalena
+  relation: maria-magdalena/accompanies/jesus
+  remove: true
+  redirect_to: maria-magdalena/disciple_of/jesus
+  sources:
+  - lucas-8
+  - it-maria
+  - mateo-27
+  - marcos-15
+  - lucas-23
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- file: people/maria-esposa-de-clopas
+  add:
+    type: disciple_of
+    person: jesus
+    inferred: false
+    sources:
+    - mateo-27
+    - marcos-15
+    reason: 'Mt 27:55, 56: es una de las mujeres que habían seguido a Jesús desde Galilea para servirle.'
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - mateo-27
+  - marcos-15
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- file: people/maria-esposa-de-clopas
+  relation: maria-esposa-de-clopas/accompanies/jesus
+  remove: true
+  redirect_to: maria-esposa-de-clopas/disciple_of/jesus
+  sources:
+  - mateo-27
+  - marcos-15
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- file: people/salome-discipula
+  add:
+    type: disciple_of
+    person: jesus
+    inferred: false
+    sources:
+    - marcos-15
+    - mateo-27
+    reason: Mr 15:40, 41 la cuenta entre las mujeres que lo habían seguido desde Galilea; Mt 27:55, 56 dice lo mismo
+      de la madre de los hijos de Zebedeo.
+    checked_on: '2026-09-29'
+    status: verified
+  sources:
+  - marcos-15
+  - mateo-27
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+- file: people/salome-discipula
+  relation: salome-discipula/accompanies/jesus
+  remove: true
+  redirect_to: salome-discipula/disciple_of/jesus
+  sources:
+  - marcos-15
+  - mateo-27
+  reason: 'Mt 27:55, 56 y Mr 15:40, 41: había seguido a Jesús desde Galilea para atenderle. Es una discípula.'
+# T1: la amistad la da la publicación, no el texto.
+- file: people/felipe-apostol
+  relation: felipe-apostol/tie/natanael
+  set:
+    inferred: true
+    reason: 'Jn 1:45 dice que Felipe encontró a Natanael; que era su amigo lo dice Perspicacia «Natanael», párr. 3.'
+  sources: [juan-1, it-natanael]
+  reason: Jn 1:45 solo cuenta que Felipe lo encontró; «amigo» sale de Perspicacia, así que es deducido.
+# Cobertura: los libros que llegaron de main después de estas decisiones citan en su tramo lo que ellas cambiaron.
+- file: coverage/numeros
+  chapter: 13
+  span: 4-16
+  entities: [relation:caleb-hijo-de-jefune/accompanies/josue-hijo-de-nun]
+  sources: [numeros-13]
+  reason: 'Nú 13:6, 8: Caleb y Hosea, al que Moisés llama Josué, van juntos entre los doce espías; el tramo ya tiene a los dos.'

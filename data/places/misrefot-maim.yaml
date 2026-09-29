@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: misrefot-maim
+name: Misrefot-Maim
+names:
+- name: Misrefot-Maim
+type: city
+lat: 33.08508
+lon: 35.10623
+precision: uncertain
+coord_source: openbible:a5bf0bd
+coord_url: https://www.openbible.info/geo/ancient/a5bf0bd/misrephoth-maim
+coord_note: Punto de Khirbet el-Musheirefeh, el sitio que Perspicacia propone con reservas. OpenBible pone primero el río
+  Litani.
+summary: Lugar hasta donde Israel persiguió a los reyes del norte tras la victoria de Merom. Al repartir la tierra, la zona
+  entre el Líbano y Misrefot-Maim seguía sin conquistar.
+reason: 'Perspicacia «Misrefot-maim»: quizá Khirbet el-Musheirefeh, unos 20 km al NNE de Aco, con fuentes termales cerca; Jos
+  11:8. OpenBible: solo el punto.'
+sources:
+- it-misrefot-maim
+- openbible-geo
+- josue-11
+- josue-13
+links:
+- title: 'Perspicacia: «Misrefot-maim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003086
+  type: perspicacia
+- title: Josué 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/11
+  type: bible
+- title: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

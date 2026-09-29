@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: sumo-sacerdocio-de-aaron
+name: Aarón, sumo sacerdote
+type: high_priest
+date:
+  from: -1511
+  to: -1473
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512-1474 a.e.c.
+places:
+- desierto-de-sinai
+- cades
+- monte-hor
+person: aaron
+summary: Primer sumo sacerdote de Israel. Empezó al instalarse el sacerdocio junto al Sinaí y terminó con su muerte en el
+  monte Hor, cuando su hijo Eleazar recibió sus ropas.
+reason: 'Perspicacia «Instalación» y «Sumo sacerdote»: instalación en nisán de 1512 a.e.c.; «Aarón», párr. 4 y 19: muere en
+  1474 a.e.c.; Nú 20:25-28.'
+sources:
+- it-aaron
+- it-instalacion
+- it-sumo-sacerdote
+- numeros-20
+search: Aarón sumo sacerdote
+checked_on: '2026-09-29'
+status: verified

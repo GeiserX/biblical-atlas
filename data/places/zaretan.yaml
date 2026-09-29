@@ -1,0 +1,74 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zaretan
+name: Zaretán
+names:
+- name: Zaretán
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Orilla oeste del Jordán, cerca de Adán
+  geometry:
+    type: zone
+    lat: 32.13
+    lon: 35.52
+    radius_km: 12
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-zaretan
+  - it-adan
+  reason: Perspicacia deduce de Jos 3:16 y 1Re 7:46 que quedaba al oeste del río, a poca distancia de Adán y de Sucot.
+  coord_source: calculation
+  note: 'Centro: unos 4 km al noroeste de Tell ed-Damiyeh, el punto de OpenBible para Adán, ya del lado oeste del río. Radio
+    nuestro.'
+- name: Qarn Sartaba, frente a Adán
+  geometry:
+    type: point
+    lat: 32.09583
+    lon: 35.46139
+  checked_on: '2026-09-29'
+  status: alternative
+  sources:
+  - it-zaretan
+  - openbible-geo
+  reason: 'Perspicacia recoge esta propuesta: un cerro al otro lado del río desde Adán. Encaja mal con 1Re 4:12, aunque Perspicacia
+    apunta cómo podría conciliarse.'
+  coord_source: openbible:afa84ca
+  coord_url: https://www.openbible.info/geo/ancient/afa84ca/zarethan
+  note: Identificación de OpenBible en Qarn Sartaba, su primera resolución.
+- name: Tell es-Saʽidiyeh, al este del Jordán
+  geometry:
+    type: point
+    lat: 32.26769
+    lon: 35.577241
+  checked_on: '2026-09-29'
+  status: rejected_level_1
+  sources:
+  - it-zaretan
+  - openbible-geo
+  reason: Primera identificación de OpenBible. Perspicacia dice que los sitios al este del río no encajan con el contexto,
+    aunque en este aparecieron muchos objetos de bronce.
+  coord_source: openbible:afa84ca
+  coord_url: https://www.openbible.info/geo/ancient/afa84ca/zarethan
+  note: Primera identificación de OpenBible, primera resolución.
+summary: Lugar del valle del Jordán que sirve para situar Adán, donde se represó el río, y el sitio donde se fundió el cobre
+  del templo. Perspicacia lo cree en la orilla oeste, sin sitio seguro.
+reason: 'Perspicacia «Zaretán»; Jos 3:16 y 1Re 7:46. Tres candidatos, porque Perspicacia no se decide por ningún sitio. OpenBible:
+  solo los puntos.'
+sources:
+- it-zaretan
+- openbible-geo
+- josue-3
+links:
+- title: 'Perspicacia: «Zaretán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004664
+  type: perspicacia
+- title: Josué 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

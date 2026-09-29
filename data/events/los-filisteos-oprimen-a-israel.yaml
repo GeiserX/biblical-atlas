@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-filisteos-oprimen-a-israel
+title: Los filisteos oprimen a Israel cuarenta años
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en días de Sansón, que empieza a librar a Israel de los filisteos)'
+narrative_order:
+  series: jueces
+  order: 13001
+places: []
+people: []
+present: []
+passages:
+- Jue 13:1
+summary: Israel vuelve a lo malo y Jehová lo deja cuarenta años bajo el dominio de los filisteos. En ese tiempo nace Sansón,
+  que empezará a salvar a su pueblo de ellos.
+reason: 'Perspicacia «Jueces, Libro de», recuadro, cuenta esta opresión entre las del libro; «Filistea, filisteos». jw.org no
+  da sus años: lleva los límites de Sansón, tras Jefté, c. 1173 («Jefté»), y antes de Saúl, 1117 (estudio 3).'
+sources:
+- jueces-13
+- it-jueces
+- it-filistea
+- it-sanson
+- it-jefte
+- si-3
+links:
+- title: Jueces 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/13
+  type: bible
+- title: 'Perspicacia: «Filistea, filisteos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003469
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

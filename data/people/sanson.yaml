@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sanson
+name: Sansón
+names:
+- name: Sansón
+summary: Juez de la tribu de Dan, hijo de Manóah, nazareo desde que nació. Luchó contra los filisteos. Dalila lo traicionó
+  y, ciego, derribó la casa de Dagón y murió con muchos filisteos tras juzgar veinte años.
+reason: Perspicacia «Sansón», párr. 2 y 9 a 11; Jue 13 a 16. Jue 16:21 dice que los filisteos lo bajaron a Gaza.
+sources:
+- it-sanson
+- jueces-15
+- jueces-16
+- jueces-13
+- it-zora
+- jueces-14
+links:
+- title: 'Perspicacia: «Sansón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003823
+  type: perspicacia
+- title: Jueces 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/16
+  type: bible
+relations:
+- type: died_in
+  place: gaza
+  inferred: true
+  sources:
+  - jueces-16
+  - it-sanson
+  - it-gaza
+  reason: 'Jue 16:21-30: lo bajaron a Gaza, y allí murió al derribar la casa de Dagón. Perspicacia «Sansón», párr. 10 y 11,
+    no nombra la ciudad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: manoah
+  word: father
+  inferred: false
+  sources:
+  - jueces-13
+  - it-manoah
+  - jueces-14
+  - it-sanson
+  - jueces-16
+  reason: 'Jue 13:2, 24: la esposa de Manóah da a luz a Sansón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: zora
+  inferred: true
+  sources:
+  - jueces-13
+  - it-zora
+  reason: 'Jue 13:2, 24: sus padres eran de Zorá. Perspicacia «Zorá» dice que nació allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: penasco-de-etam
+  inferred: false
+  sources:
+  - jueces-15
+  - it-etam
+  reason: 'Jue 15:8, 11: tras la matanza se instala en una cueva de ese peñasco, y allí lo buscan los de Judá; Perspicacia
+    «Etam», núm. 2, dice que vivió allí.'
+  checked_on: '2026-09-29'
+  status: verified
+perspicacia: '1200003823'
+checked_on: '2026-09-29'
+status: verified

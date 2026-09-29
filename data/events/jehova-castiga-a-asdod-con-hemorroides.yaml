@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-castiga-a-asdod-con-hemorroides
+title: Jehová castiga a Asdod con hemorroides
+date:
+  from: -1179
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1180 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
+narrative_order:
+  series: 1-samuel
+  order: 5006
+places:
+- asdod
+people: []
+passages:
+- 1Sa 5:6-8
+summary: Jehová hiere con hemorroides a los de Asdod y su comarca. Los asdoditas no quieren el Arca a su lado, reúnen
+  a los gobernantes filisteos y estos deciden mandarla a Gat.
+reason: '1Sa 5:6-8; Perspicacia «Hemorroides», párr. 2, y «Asdod», párr. 3. Fecha: 1 Samuel empieza hacia 1180 (tabla de libros)
+  y Saúl es ungido en 1117 (estudio 3); Perspicacia «Quiryat-jearim» pone la vuelta del Arca en el siglo XII.'
+sources:
+- 1-samuel-5
+- it-hemorroides
+- it-asdod
+- tnm-tabla
+- si-3
+- it-quiryat-jearim
+links:
+- title: 1 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/5
+  type: bible
+- title: 'Perspicacia: «Hemorroides»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003487
+  type: perspicacia
+- title: 'Perspicacia: «Asdod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000412
+  type: perspicacia
+search: Arca Asdod hemorroides
+checked_on: '2026-09-29'
+status: verified

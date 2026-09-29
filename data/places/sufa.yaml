@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sufa
+name: Sufá
+names:
+- name: Sufá
+type: region
+lat: 31.665609
+lon: 35.81749
+precision: uncertain
+coord_source: openbible:a88bcb2
+coord_url: https://www.openbible.info/geo/ancient/a88bcb2/suphah
+coord_note: Punto de OpenBible en Sufeh. Perspicacia solo dice que estaba, probablemente, cerca del Arnón.
+summary: Región o valle, probablemente junto al Arnón, donde la cita de Nú 21:14 sitúa Vaheb. Algunas versiones traducen la
+  palabra en lugar de leer un nombre.
+reason: 'Perspicacia «Sufá»; Nú 21:14. OpenBible: solo el punto.'
+sources:
+- it-sufa
+- openbible-geo
+- numeros-21
+links:
+- title: 'Perspicacia: «Sufá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004264
+  type: perspicacia
+- title: Números 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

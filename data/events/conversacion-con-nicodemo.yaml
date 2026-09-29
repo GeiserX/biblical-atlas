@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: conversacion-con-nicodemo
+title: Nicodemo visita a Jesús de noche
+date:
+  from: 30
+  to: 30
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: Pascua de 30 e.c.
+  detail:
+    month: nisan
+narrative_order:
+  series: a7
+  order: 16
+places:
+- jerusalen
+people:
+- jesus
+- nicodemo
+passages:
+- Jn 3:1-21
+summary: Nicodemo, fariseo del Sanedrín impresionado por los milagros, visita a Jesús por la noche. Jesús le explica que hay
+  que nacer del agua y del espíritu para entrar en el Reino.
+reason: 'A7-B, fila 6: Pascua de 30, Jerusalén. Perspicacia «Nicodemo» (párr. 2) sitúa la visita en esa Pascua y cree que eligió
+  la noche por miedo.'
+sources:
+- tnm-a7-b
+- juan-3
+- it-nicodemo
+- jy-cap-17
+checked_on: '2026-09-28'
+status: verified

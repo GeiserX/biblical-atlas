@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: libano
+name: Líbano
+names:
+- name: Líbano
+- name: Torre del Líbano
+  note: Can 7:4 la pone mirando hacia Damasco. Perspicacia cree posible que fuera una de las obras de Salomón en el Líbano;
+    otros piensan que es uno de sus picos.
+type: mountain
+lat: 33.54
+lon: 35.583611
+precision: zone
+coord_source: openbible:a730058
+coord_url: https://www.openbible.info/geo/ancient/a730058/lebanon
+coord_note: Punto representativo que OpenBible da a toda la cordillera.
+summary: La más occidental de las dos cordilleras del Líbano, junto al Mediterráneo y separada del Antilíbano por un valle.
+  Famosa por sus cedros, marcó el límite noroeste de la tierra de Israel.
+reason: 'Perspicacia «Líbano», párr. 1, 3, 4 y 5. Sl 29:5, 6: la nota del v. 6 lo toma por la cordillera. OpenBible: solo el
+  punto.'
+sources:
+- it-libano
+- openbible-geo
+- salmos-29
+- salmos-72
+- salmos-92
+- deuteronomio-1
+- deuteronomio-11
+- cantar-de-los-cantares-3
+- cantar-de-los-cantares-4
+- cantar-de-los-cantares-7
+- oseas-14
+- josue-1
+- josue-13
+links:
+- title: 'Perspicacia: «Líbano»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002705
+  type: perspicacia
+- title: Salmos 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/29
+  type: bible
+- title: Salmo 72 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72
+  type: bible
+- title: Salmo 92 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/92
+  type: bible
+checked_on: '2026-09-29'
+status: verified

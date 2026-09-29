@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mnason
+name: Mnasón
+names:
+- name: Mnasón
+perspicacia: '1200003096'
+date:
+  from: 56
+  to: 56
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 56 e.c.
+summary: Cristiano de Chipre que era discípulo desde los primeros tiempos. En su casa de Jerusalén se alojaron Pablo y sus
+  compañeros al volver del tercer viaje, hacia 56.
+reason: Perspicacia «Mnasón»; Hch 21:16 lo llama Mnasón de Chipre y uno de los primeros discípulos.
+sources:
+- it-mnason
+- hch-21
+links:
+- title: 'Perspicacia: «Mnasón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003096
+  type: perspicacia
+- title: Hechos 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/21
+  type: bible
+relations:
+- type: born_in
+  place: chipre
+  inferred: true
+  sources:
+  - it-mnason
+  - hch-21
+  reason: Hch 21:16 lo llama Mnasón de Chipre; Perspicacia lo da como nativo de la isla.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: 56
+    to: 56
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 56 e.c.
+  inferred: true
+  sources:
+  - it-mnason
+  - hch-21
+  reason: Perspicacia «Mnasón» entiende que los discípulos de Cesarea llevaron al grupo hasta su casa en Jerusalén (Hch 21:15-17).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

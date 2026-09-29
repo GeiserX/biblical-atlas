@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abida
+name: Abidá
+names:
+- name: Abidá
+perspicacia: '1200000032'
+summary: Uno de los cinco hijos de Madián, de la familia de Abrahán por Queturá.
+reason: Perspicacia «Abidá»; Gé 25:4.
+sources:
+- it-abida
+- genesis-25
+links:
+- title: 'Perspicacia: «Abidá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000032
+  type: perspicacia
+- title: Génesis 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
+  type: bible
+relations:
+- type: kin
+  person: madian
+  word: father
+  inferred: false
+  sources:
+  - it-abida
+  - genesis-25
+  reason: Gé 25:4.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

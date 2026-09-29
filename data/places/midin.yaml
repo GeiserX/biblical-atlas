@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: midin
+name: Midín
+names:
+- name: Midín
+type: city
+lat: 31.74153
+lon: 35.40589
+precision: uncertain
+coord_source: openbible:aec139c
+coord_url: https://www.openbible.info/geo/ancient/aec139c/middin
+coord_note: Khirbet Abu Tabaq, primera identificación de OpenBible, que Perspicacia ve posible.
+summary: Lugar del desierto de Judá. Quizá es Khirbet Abu Tabaq, en la llanura baja de el-Buqeiʽah, cerca del extremo noroeste
+  del mar Muerto.
+reason: 'Perspicacia «Midín»; Jos 15:61. OpenBible: solo el punto.'
+sources:
+- it-midin
+- openbible-geo
+- josue-15
+links:
+- title: 'Perspicacia: «Midín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003040
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

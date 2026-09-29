@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-pueblo-pide-carne
+title: El pueblo llora por carne y Moisés se queja a Jehová
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c.
+narrative_order:
+  series: numeros
+  order: 11004
+places:
+- quibrot-hataava
+people:
+- moises
+passages:
+- Nú 11:4-23
+- Dt 9:22
+- 1Co 10:6
+summary: Los extranjeros y los israelitas añoran la comida de Egipto y desprecian el maná. Moisés le dice a Jehová que no
+  puede cargar solo con el pueblo; Jehová promete carne para un mes y 70 ancianos que le ayuden.
+reason: Perspicacia «Quibrot-hataavá» pone allí el deseo egoísta del pueblo. Es el segundo año tras el éxodo de 1513 a.e.c.
+  (estudio 3), 1512 a.e.c., antes de llegar a Cadés (Perspicacia «Qadés»).
+sources:
+- numeros-11
+- it-quibrot-hataava
+- it-codorniz
+- it-mana
+- si-3
+- it-qades
+- 1-corintios-10
+links:
+- title: Números 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

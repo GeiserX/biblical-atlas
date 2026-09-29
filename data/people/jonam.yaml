@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonam
+name: Jonam
+names:
+- name: Jonam
+perspicacia: '1200002505'
+summary: Descendiente de David por Natán y antepasado de María. Perspicacia sugiere que quizá vivió en tiempos del rey Asá.
+reason: Perspicacia «Jonam»; Lu 3:30.
+sources:
+- it-jonam
+- lucas-3
+links:
+- title: 'Perspicacia: «Jonam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002505
+  type: perspicacia
+- title: Lucas 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/3
+  type: bible
+relations:
+- type: kin
+  person: eliaquim-hijo-de-melea
+  word: father
+  inferred: false
+  sources:
+  - lucas-3
+  reason: 'Lu 3:30: Jonam, hijo de Eliaquim.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

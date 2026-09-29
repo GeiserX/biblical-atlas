@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-angel-anima-a-pablo-en-la-tormenta
+title: Un ángel asegura a Pablo que nadie morirá
+date:
+  from: 58
+  to: 58
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: otoño de 58 e.c.
+  detail:
+    season: autumn
+narrative_order:
+  series: hechos
+  order: 2721
+places:
+- mar-de-adria
+- malta
+people:
+- pablo
+- lucas
+present: []
+passages:
+- Hch 27:21-26
+summary: 'Tras muchos días de temporal, Pablo se levanta ante los de a bordo: un ángel de Dios le dijo de noche que comparecerá
+  ante César y que todos vivirán. Solo se perderá el barco, junto a una isla.'
+reason: 'Hch 27:21-26; Perspicacia «César» une el mensaje a la apelación ante Nerón. Van a la deriva por el mar de Adria
+  (Hch 27:27) y la isla anunciada es Malta (referencia de 27:26), aún lejos: el suceso no sitúa a nadie.'
+sources:
+- hch-27
+- it-cesar
+- bt-26
+- nota-hechos-27
+links:
+- title: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  type: bible
+checked_on: '2026-09-29'
+status: verified

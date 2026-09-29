@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elihu-hijo-de-barakel
+name: Elihú
+names:
+- name: Elihú
+perspicacia: 1200001306#1
+disambiguation: El joven que habló a Job en Job 32-37. No es el antepasado de Samuel ni ninguno de los otros cuatro Elihú
+  que distingue Perspicacia.
+summary: Joven buzita, hijo de Barakel y de la familia de Ram. Esperó callado a que Job y sus tres compañeros terminaran;
+  luego corrigió a Job por justificarse y a ellos por culpar a Dios.
+reason: Perspicacia «Elihú», núm. 1; Job 32:1-37:24.
+sources:
+- it-elihu
+- it-job-libro
+- job-32
+- job-33
+- job-34
+- job-35
+- job-36
+- job-37
+links:
+- title: 'Perspicacia: «Elihú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001306
+  type: perspicacia
+relations:
+- type: kin
+  person: barakel
+  word: father
+  inferred: false
+  sources:
+  - job-32
+  reason: Job 32:2, 6 lo llama hijo de Barakel el buzita.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ram-antepasado-de-elihu
+  inferred: false
+  sources:
+  - job-32
+  - it-ram
+  reason: Job 32:2 lo hace de la familia de Ram; Perspicacia «Ram», núm. 3, llama a Ram fundador de esa familia.
+  checked_on: '2026-09-29'
+  word: ancestor
+  status: verified
+- type: kin
+  person: buz-hijo-de-nacor
+  word: ancestor
+  inferred: true
+  sources:
+  - it-elihu
+  - it-buz
+  - it-barakel
+  - job-32
+  reason: Job 32:2 llama buzita a su padre. Perspicacia «Elihú», núm. 1, lo da por descendiente de Buz, pero «Barakel» y «Buz»,
+    núm. 1, solo lo dan como probable, así que queda pendiente, igual que en su padre.
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elihu-hijo-de-tohu

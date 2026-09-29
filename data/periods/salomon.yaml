@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por periodo. Esquema en docs/investigacion/README.md.
+id: salomon
+name: Reinado de Salomón sobre todo Israel
+type: king
+person: salomon
+date:
+  from: -1036
+  to: -997
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037-998 a.e.c.
+places:
+- jerusalen
+summary: Cuarenta años de reinado sobre todo Israel desde Jerusalén; en su cuarto año empezó el templo.
+reason: B7 y Perspicacia «Salomón» (párr. 1) dan 1037-998; 1Re 11:42 le atribuye cuarenta años.
+sources:
+- tnm-b7
+- 1-reyes-6
+- it-salomon
+search: Salomón rey
+checked_on: '2026-09-28'
+status: verified

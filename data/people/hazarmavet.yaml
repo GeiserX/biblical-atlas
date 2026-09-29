@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hazarmavet
+name: Hazarmávet
+names:
+- name: Hazarmávet
+perspicacia: '1200001928'
+summary: Hijo de Joctán, de la línea de Sem. Se suele entender que sus descendientes poblaron Hadramaut, en el sur de Arabia,
+  región antigua del comercio de incienso.
+reason: Perspicacia «Hazarmávet»; Gé 10:26.
+sources:
+- it-hazarmavet
+- genesis-10
+links:
+- title: 'Perspicacia: «Hazarmávet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001928
+  type: perspicacia
+- title: Génesis 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
+  type: bible
+relations:
+- type: kin
+  person: joctan
+  word: father
+  inferred: false
+  sources:
+  - genesis-10
+  reason: Gé 10:26 lo cuenta entre los trece hijos de Joctán.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tercer-anuncio-de-su-muerte
+title: Anuncia su muerte por tercera vez
+date:
+  from: 33
+  to: 33
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: Principios de 33 e.c., antes de la llegada a Betania
+places:
+- perea
+people:
+- jesus
+passages:
+- Mt 20:17-19
+- Mr 10:32-34
+- Lu 18:31-34
+summary: Subiendo hacia Jerusalén, Jesús anuncia por tercera vez que lo entregarán, se burlarán de él, lo ejecutarán
+  y resucitará al tercer día.
+reason: 'A7-F lo pone tras la Dedicación del 32, probablemente en Perea, y A7-G antes de llegar a Betania. El año: jy cap.
+  98, que los hace ir por Perea hacia la Pascua del 33.'
+sources:
+- tnm-a7-f
+- mateo-20
+- marcos-10
+- lucas-18
+- jy-cap-98
+- tnm-a7-g
+narrative_order:
+  series: a7
+  order: 89
+search: Anuncia su muerte por tercera vez
+history:
+- date: '2026-09-29'
+  change: La razón atribuía el año 33 a la tabla A7-F, que solo da «después de la Dedicación del 32». El año sale de jy cap.
+    98; A7-G da el límite de Betania.
+  source: lucas-18
+checked_on: '2026-09-29'
+status: verified

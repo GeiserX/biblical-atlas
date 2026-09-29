@@ -1,0 +1,100 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: festo
+name: Festo
+names:
+- name: Festo
+- name: Porcio Festo
+date:
+  from: 58
+  to: 58
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 58 e.c. (llega como gobernador)
+summary: Porcio Festo, gobernador de Judea tras Félix, probablemente desde 58. Juzgó de nuevo a Pablo, que apeló
+  a César, y presentó el caso al rey Agripa.
+reason: Perspicacia «Festo» (párr. 1 y 2) y el recuadro del cap. 25 de «Testimonio completo»; Hch 25 y 26.
+sources:
+- it-festo
+- bt-25
+- hch-25
+- nota-hechos-25
+- hch-26
+links:
+- title: 'Perspicacia: «Festo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001512
+  type: perspicacia
+- title: Hechos 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/25
+  type: bible
+perspicacia: '1200001512'
+checked_on: '2026-09-29'
+status: verified
+relations:
+- type: succeeds
+  person: felix
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  inferred: false
+  sources:
+  - it-festo
+  - hch-24
+  reason: 'Hch 24:27: Félix tuvo por sucesor a Porcio Festo.'
+  checked_on: '2026-09-29'
+  office: governor
+  status: verified
+- type: lived_in
+  place: cesarea
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  inferred: false
+  sources:
+  - it-festo
+  - hch-25
+  reason: Llega a Cesarea y juzga allí a Pablo (Hch 25:1, 6).
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: pablo
+  caption: custodio
+  inverse_caption: custodiado por
+  date:
+    from: 58
+    to: 58
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 58 e.c.
+  inferred: false
+  sources:
+  - hch-25
+  - it-festo
+  reason: 'Hch 25:4, 21: al llegar dispone que Pablo siga preso en Cesarea y lo mantiene arrestado hasta mandarlo a César.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: judea
+  office: governor
+  inferred: false
+  sources:
+  - hch-24
+  - hch-25
+  - it-festo
+  reason: Sucedió a Félix (Hch 24:27) y tomó posesión de su puesto en la provincia (Hch 25:1). Perspicacia «Festo» lo llama
+    gobernador de Judea.
+  checked_on: '2026-09-29'
+  status: verified

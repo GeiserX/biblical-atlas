@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: julio
+name: Julio
+names:
+- name: Julio
+date:
+  from: 58
+  to: 59
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 58-59 e.c.
+summary: Oficial romano del regimiento de Augusto encargado de Pablo en el viaje a Roma. Lo trató con bondad y, en el naufragio,
+  impidió que mataran a los presos.
+reason: Perspicacia «Julio»; Hch 27:1-44. El viaje sale hacia 58 y llega a Roma hacia 59 (estudio 3, párr. 27).
+sources:
+- it-julio
+- hch-27
+- si-3
+links:
+- title: 'Perspicacia: «Julio»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002553
+  type: perspicacia
+- title: Hechos 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
+  type: bible
+perspicacia: '1200002553'
+history:
+- date: '2026-09-29'
+  change: «Banda de Augusto» pasa a «regimiento de Augusto», la forma de la TNM actual en Hch 27:1; Perspicacia «Julio» aún
+    usa la antigua.
+  source: hch-27
+checked_on: '2026-09-29'
+status: verified
+relations: []

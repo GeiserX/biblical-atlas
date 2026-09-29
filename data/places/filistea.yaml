@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: filistea
+name: Filistea
+names:
+- name: Filistea
+- name: Tierra de los filisteos
+  note: Así la llama Génesis 21.
+type: region
+lat: 31.663889
+lon: 34.545833
+precision: zone
+coord_source: openbible:ac71e65
+coord_url: https://www.openbible.info/geo/ancient/ac71e65/philistia
+coord_note: Punto representativo de OpenBible para la llanura costera de los filisteos.
+summary: Franja de la costa mediterránea, desde cerca de Jope hasta Gaza, tierra de los filisteos. Ya en tiempos de Abrahán
+  vivían filisteos en Guerar, con su rey Abimélec.
+reason: 'Perspicacia «Filistea, filisteos», párr. 1 y 3; Gé 21:32, 34. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-filistea
+- genesis-21
+- openbible-geo
+- joel-3
+- josue-13
+- 1-samuel-6
+- 1-samuel-27
+- 1-samuel-29
+- 1-samuel-31
+links:
+- title: 'Perspicacia: «Filistea, filisteos»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003469
+  type: perspicacia
+- title: Génesis 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

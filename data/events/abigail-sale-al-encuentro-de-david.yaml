@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abigail-sale-al-encuentro-de-david
+title: Abigaíl sale al encuentro de David y lo frena
+date:
+  from: -1089
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1090 y 1078 a.e.c. (tiempo narrativo: después de la muerte de Samuel y antes de la de Saúl)'
+narrative_order:
+  series: 1-samuel
+  order: 25014
+places:
+- carmelo-de-juda
+people:
+- abigail-esposa-de-david
+- david
+present: []
+passages:
+- 1Sa 25:14-35
+summary: Avisada por un siervo, Abigaíl carga burros con pan, vino, carne, grano y tortas de frutas y sale sin decírselo a
+  Nabal. Encuentra a David en la montaña, le ruega que no derrame sangre y él acepta el regalo.
+reason: '1Sa 25:14-35; Perspicacia «Abigail», núm. 1. Ladera sin nombre: no sitúa a nadie. Entre c. 1090, Rut completada por
+  Samuel (tabla de los libros), y 1078 a.e.c., muerte de Saúl (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-25
+- it-abigail
+- tnm-tabla
+- it-jonatan
+links:
+- title: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  type: bible
+checked_on: '2026-09-29'
+status: verified

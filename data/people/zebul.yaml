@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zebul
+name: Zebul
+names:
+- name: Zebul
+perspicacia: '1200004678'
+summary: Gobernador de Siquem a las órdenes de Abimélec. Le avisó en secreto de la revuelta de Gaal y le dijo cómo atacar;
+  luego retó a Gaal a salir a pelear y lo echó de la ciudad.
+reason: Perspicacia «Zebul»; Jue 9:28-41.
+sources:
+- it-zebul
+- jueces-9
+links:
+- title: 'Perspicacia: «Zebul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004678
+  type: perspicacia
+- title: Jueces 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/9
+  type: bible
+relations:
+- type: lived_in
+  place: siquem
+  inferred: false
+  sources:
+  - jueces-9
+  - it-zebul
+  reason: Jue 9:30 lo llama príncipe de la ciudad, y en Jue 9:36-41 está en Siquem junto a Gaal.
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: abimelec-hijo-de-gedeon
+  caption: representante de
+  inferred: false
+  sources:
+  - jueces-9
+  - it-zebul
+  - it-gaal
+  reason: 'Jue 9:28: Gaal lo llama representante de Abimélec. Perspicacia «Gaal» cree que Abimélec lo puso al frente de Siquem.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

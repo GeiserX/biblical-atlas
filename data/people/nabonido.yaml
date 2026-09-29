@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nabonido
+name: Nabonido
+names:
+- name: Nabonido
+date:
+  from: -555
+  to: -538
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 556-539 a.e.c.
+summary: Último rey supremo de Babilonia. Pasó años en el oasis de Temá y dejó a Belsasar el gobierno de la capital; tras
+  la caída de la ciudad en 539 a.e.c. quedó en manos de Ciro.
+reason: 'Perspicacia «Nabonido»: se cree que reinó unos 17 años (556-539); la Crónica de Nabonido lo pone en Temá y dice
+  que fue apresado al volver.'
+sources:
+- it-nabonido
+- it-belsasar
+links:
+- title: 'Perspicacia: «Nabonido»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003156
+  type: perspicacia
+not_claimed:
+- Que Nabonido estuviera en Babilonia la noche de su caída.
+checked_on: '2026-09-28'
+status: verified

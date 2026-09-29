@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: timna-de-la-region-montanosa
+name: Timná
+names:
+- name: Timná
+- name: Timnah
+  note: Otra grafía, en la nota de Gé 38:12 y en Perspicacia.
+type: city
+lat: 31.69405
+lon: 35.04906
+precision: uncertain
+coord_source: openbible:a17c178
+coord_url: https://www.openbible.info/geo/ancient/a17c178/timnah-3
+coord_note: 'Punto de Khirbet et-Tabbaneh, tercera identificación de OpenBible: el Khirbet et-Tabbana que algunos investigadores
+  proponen según Perspicacia, unos 3 km al noroeste de El Jabʽa.'
+summary: Ciudad de la región montañosa de Judá. Judá subía allí a esquilar sus ovejas cuando Tamar lo esperó en Enaim. No
+  es la Timnah de Sansón.
+reason: 'Perspicacia «Timnah», núm. 2: algunos la relacionan con Khirbet et-Tabbana; Gé 38:12-14. Coordenada de OpenBible:
+  solo tomamos el punto.'
+sources:
+- it-timnah
+- openbible-geo
+- genesis-38
+- josue-15
+links:
+- title: 'Perspicacia: «Timnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004411
+  type: perspicacia
+history:
+- date: '2026-09-29'
+  change: 'El punto era el centro de «a menos de 15 km de Tel Maʽin» en OpenBible, no el sitio que nombra Perspicacia. Pasa
+    a Khirbet et-Tabbaneh, identificación de la misma ficha. Antes: 31.409448.'
+  source: josue-15
+- date: '2026-09-29'
+  change: 'Mismo cambio de punto a Khirbet et-Tabbaneh. Antes: 35.133839.'
+  source: josue-15
+- date: '2026-09-29'
+  change: La nota dice ahora qué sitio es el punto.
+  source: josue-15
+checked_on: '2026-09-29'
+status: verified

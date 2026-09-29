@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bet-lebaot
+name: Bet-Lebaot
+names:
+- name: Bet-Lebaot
+- name: Lebaot
+  note: Así la llama Jos 15:32.
+- name: Bet-Birí
+  note: La pone en su lugar 1Cr 4:31; quizá su nombre después del destierro.
+type: city
+lat: 31.00669
+lon: 34.49181
+precision: uncertain
+coord_source: openbible:a289a5b
+coord_url: https://www.openbible.info/geo/ancient/a289a5b/beth-lebaoth
+coord_note: OpenBible la toma por otro nombre de Bet-Birí; el punto es Jebel el-Biri. Perspicacia no da sitio.
+summary: Enclave de Simeón en el Négueb, al parecer al oeste o suroeste de Beer-Seba. Jos 15:32 la llama Lebaot, y 1 Crónicas
+  pone en su lugar Bet-Birí, quizá su nombre posterior.
+reason: 'Perspicacia «Bet-lebaot»; Jos 15:32; 19:6; 1Cr 4:31. OpenBible: solo el punto.'
+sources:
+- it-bet-lebaot
+- openbible-geo
+- josue-19
+- it-lebaot
+- josue-15
+links:
+- title: 'Perspicacia: «Bet-lebaot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000693
+  type: perspicacia
+- title: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  type: bible
+- title: 'Perspicacia: «Lebaot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002706
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
