@@ -25,6 +25,7 @@ fuentes:
 - it-salome
 - it-herodes
 - mateo-14
+- marcos-6
 no_afirmamos:
 - 'Que la Biblia la llame Salomé: el nombre sale del historiador Josefo.'
 enlaces:
@@ -38,6 +39,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-14
+  - marcos-6
   razon: 'Mt 14:6, 8 y 11: es la hija de Herodías y le lleva la cabeza a su madre.'
   estado: verificado
 - tipo: pariente
@@ -47,6 +49,7 @@ relaciones:
   fuentes:
   - it-salome
   - it-herodes
+  - marcos-6
   razon: Perspicacia «Salomé» (núm. 2) y «Herodes» (núm. 5) la hacen hija de Herodes Filipo, el esposo de Herodías que nombra
     Mt 14:3.
   estado: verificado
@@ -56,6 +59,7 @@ relaciones:
   deducido: true
   fuentes:
   - it-salome
+  - marcos-6
   razon: 'Perspicacia «Salomé» (núm. 2): con la boda de Antipas y Herodías pasó a ser su hijastra (Mt 14:6).'
   estado: verificado
 consultado: '2026-09-29'

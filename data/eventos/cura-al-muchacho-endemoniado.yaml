@@ -17,8 +17,8 @@ pasajes:
 - Mt 17:14-20
 - Mr 9:14-29
 - Lu 9:37-43
-resumen: Al bajar de la montaña, Jesús expulsa el demonio de un muchacho que sus discípulos no habían podido curar,
-  y les explica que les faltaba fe.
+resumen: Al bajar de la montaña, Jesús expulsa el demonio de un muchacho que sus discípulos no habían podido curar. Les explica
+  que les faltaba fe y que esa clase de espíritu solo sale con oración.
 razon: La tabla A7-E da cuándo y dónde. jy cap. 61.
 fuentes:
 - tnm-a7-e
@@ -31,5 +31,9 @@ orden_relato:
   serie: a7
   orden: 59
 buscar: Cura a un muchacho endemoniado
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Se añade lo que cuenta Marcos: Jesús dice que esa clase de espíritu solo sale con oración (Mr 9:29).'
+  fuente: marcos-9
+consultado: '2026-09-29'
 estado: verificado

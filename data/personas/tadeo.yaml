@@ -17,6 +17,7 @@ fuentes:
 - it-tadeo
 - lucas-6
 - mateo-10
+- marcos-3
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -24,6 +25,7 @@ relaciones:
   deducido: false
   fuentes:
   - mateo-10
+  - marcos-3
   razon: Mt 10:3.
   estado: verificado
 enlaces:

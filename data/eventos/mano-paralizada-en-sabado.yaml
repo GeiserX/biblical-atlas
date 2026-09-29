@@ -15,6 +15,12 @@ orden_relato:
 lugares:
 - galilea
 - mar-de-galilea
+- judea
+- jerusalen
+- idumea
+- perea
+- tiro
+- sidon
 personas:
 - jesus
 pasajes:
@@ -32,5 +38,5 @@ fuentes:
 - lucas-6
 - jy-cap-32
 - jy-cap-33
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

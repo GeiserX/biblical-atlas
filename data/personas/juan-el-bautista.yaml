@@ -30,6 +30,9 @@ fuentes:
 - mateo-14
 - mateo-17
 - mateo-21
+- marcos-1
+- marcos-6
+- marcos-11
 relaciones:
 - tipo: pariente
   persona: zacarias-padre-de-juan
@@ -62,6 +65,7 @@ relaciones:
   fuentes:
   - mateo-14
   - tnm-a7-d
+  - marcos-6
   razon: La nota de Mt 14:3 cree más probable Tiberíades que Maqueronte, y A7-D pone allí su muerte.
   estado: verificado
 enlaces:
