@@ -2,6 +2,16 @@
 
 Propuestas para el grafo, las relaciones, la compilación y el estudio de un capítulo. Todo está medido y anclado sobre `main` en `caa8d3a` (PR 24), con `build.py --salida` fuera de `site/`: 722 personas, 306 lugares, 558 sucesos, 1435 relaciones.
 
+## Decidido
+
+Aceptamos las catorce propuestas y este documento manda sobre el modelo: lo que ya está leído se revisa contra él.
+
+- **El core va en inglés.** Claves de las fichas, tipos de relación y de suceso, valores cerrados, identificadores del vocabulario, prefijos de la cobertura, nombres de directorios y de scripts, y el código nuevo. Los nombres que este documento propone en español (`discipulo_de`, `trato`, `ejerce`, `cargo`, `certeza`, `hechos`, `estuvo_en`) reciben su nombre inglés en la especificación del modelo. Siguen en español los nombres, los textos, los ids de las fichas, la prosa de los documentos y todo lo que lee quien usa el sitio.
+- **La migración es un script determinista.** Se ejecuta en `main` y también en cada rama de libro antes de fusionarla, para que los dos lados hagan el mismo cambio y no choquen.
+- **`consultado` se exige en cada hecho anidado**, relaciones incluidas. La migración copia el del fichero a cada relación que no lo tenga.
+- **A-10 y el perfil «Una familia» se renombran** a varias personas ante una pantalla.
+- **Orden.** Primero el modelo (propuestas 1 a 6) con el core en inglés, el grafo (11 y 12) y las notas privadas (14). Después, sobre el modelo ya fusionado: la tabla de afirmaciones (7), el núcleo y el detalle (8), el índice por capítulo (9), el foco único (10), el capítulo por tramos (13) y las preguntas (14). Al final, la revisión de veracidad de todas las fichas.
+
 ## Las cinco más fuertes
 
 1. **Una tabla de afirmaciones compilada** (propuesta 7).
@@ -12,8 +22,8 @@ Propuestas para el grafo, las relaciones, la compilación y el estudio de un cap
 
 ## Reglas escritas que el sitio o los datos no cumplen
 
-- **A quién va dirigido.** El sitio no se presenta como ayuda «en familia»: quien estudia puede hacerlo solo. La frase seguía en la página «Acerca de», en decisiones.md, en la hoja de ruta y en el índice de esta carpeta; se quita en un PR aparte. Queda por decidir si A-10 «Modo familia» y el perfil «Una familia» del catálogo se renombran («varias personas ante una pantalla») o se quitan.
-- **`consultado` en los hechos anidados.** CLAUDE.md:26 y [investigacion/README.md:16-22](../investigacion/README.md) lo piden en cada hecho, relaciones incluidas, y docs/decisiones.md:32 dice que sin él no se valida. Es falso hoy: ninguna de las 1435 relaciones lo lleva y `validar_hecho` ([validate.py:185-192](../../scripts/validate.py)) no lo pide. Decide el dueño: (a) exigirlo y migrar con una pasada de `aplicar.py` que copie el `consultado` del fichero a cada relación, o (b) relajar la regla y reescribir los tres textos.
+- **A quién va dirigido.** El sitio no se presenta como ayuda «en familia»: quien estudia puede hacerlo solo. La frase seguía en la página «Acerca de», en decisiones.md, en la hoja de ruta y en el índice de esta carpeta; se quita en un PR aparte. A-10 «Modo familia» y el perfil «Una familia» del catálogo se renombran a varias personas ante una pantalla.
+- **`consultado` en los hechos anidados.** CLAUDE.md:26 y [investigacion/README.md:16-22](../investigacion/README.md) lo piden en cada hecho, relaciones incluidas, y docs/decisiones.md:32 dice que sin él no se valida. Es falso hoy: ninguna de las 1435 relaciones lo lleva y `validar_hecho` ([validate.py:185-192](../../scripts/validate.py)) no lo pide. Lo exigimos: la migración copia el `consultado` del fichero a cada relación y la validación lo pide.
 - **Cada arista lleva verbo, fecha y referencia.** Está en [pantallas-grafo-y-contexto.md:17](pantallas-grafo-y-contexto.md), no en CLAUDE.md. `aristasSel` ([grafo.js:107](../../site/js/grafo.js)) y `calcularAristas` ([persona.js:73](../../site/js/tipos/persona.js)) la cumplen; grafo.js:167 la rompe con «está aquí ahora» (`fuentes: [], ref: ''`). Añadirla junto a CLAUDE.md:26 y que esa arista tome la referencia de la estancia o no se dibuje (horas).
 
 ## Modelo conceptual
@@ -146,12 +156,10 @@ Hecho en el PR 24: cualquier selección en el centro (grafo.js:5-6, :97-159, :71
 - **Compactar `data.json` solo**: baja el fichero un 20 % y el gzip -9 un 5 % (de 460 a 437 KB).
 - **Todavía no**: grupos como nodos ([modelo-de-datos.md:97](modelo-de-datos.md)), planes de lectura (falta fecha por capítulo en Salmos y Proverbios), sin conexión (tras la 8) y «qué cambió entre dos fechas», que espera a las fechas aproximadas de la 7 (hoy 103 de 1435 relaciones tienen fecha).
 
-## Beads que saldrían de aquí
+## Beads
 
-Tipo y prioridad entre paréntesis; 20 beads en total.
-
-- **Reglas:** A-10 y el perfil «Una familia», renombrar o quitar (task, 3); `consultado` en relaciones, exigir o relajar, decide el dueño (task, 2); «está aquí ahora» con referencia (bug, 3).
-- **Modelo:** aviso de relaciones al revés y pares dobles una vez (task, 2); vocabulario cerrado con inversa (feature, 1); clave de relación con fecha (bug, 1); `discipulo_de` y `trato` (feature, 2); `cargo` y `certeza` (feature, 3); papel en sucesos y `estuvo_en`, dos beads (feature, 3).
-- **Pipeline:** tabla `hechos` e índices, la primera solo para `lugar.js` (feature, 1); núcleo y detalle a demanda, hija de be-oan (feature, 2); índice por capítulo y cobertura por libro (feature, 2).
-- **Frontal:** formas por tipo y prueba de los nodos (task, 3); un solo estado de foco (feature, 2); radial sin solapes y tacto (feature, 3); conexión con k caminos y opciones una vez (feature, 3).
-- **Estudio:** capítulo por tramos con grafo pequeño (feature, 2); preguntas y notas privadas, dos beads (feature, 3).
+- **Reglas:** A-10 y el perfil «Una familia» (be-isk.6); `consultado` en los hechos anidados (be-isk.7); «está aquí ahora» con referencia (be-u66.5).
+- **Modelo:** aviso de relaciones al revés y pares una vez (be-isk.8); vocabulario cerrado con inversa (be-isk.9); clave de relación con fecha (be-isk.10); discípulos y tratos (be-isk.11); cargo y certeza (be-isk.12); tipo y papeles en los sucesos (be-isk.13); estancias sin caso aparte de Pablo (be-isk.14); el core en inglés (be-isk.15); revisión de veracidad de todas las fichas (be-isk.16).
+- **Pipeline:** tabla de afirmaciones e índices (be-oan.1); núcleo y detalle a demanda (be-oan.2); índice por capítulo y cobertura por libro (be-oan.3).
+- **Frontal:** formas por tipo y prueba de los nodos (be-u66.6); un solo estado de foco (be-u66.7); radial sin solapes y tacto (be-u66.8); conexión con los caminos más sólidos (be-u66.9).
+- **Estudio** (be-bho): capítulo por tramos con grafo pequeño (be-bho.1); preguntas desde los datos (be-bho.2); notas privadas (be-bho.3).
