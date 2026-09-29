@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-padre-de-gedeon
+nombre: Joás
+nombres:
+- nombre: Joás
+perspicacia: 1200002474#3
+desambiguacion: Joás el abí-ezrita, padre del juez Gedeón; no los reyes Jehoás de Judá e Israel, a los que a veces se llama
+  Joás.
+no_confundir_con:
+- jehoas-de-juda
+- jehoas-de-israel
+resumen: Abí-ezrita de Manasés, padre del juez Gedeón y hombre influyente de Ofrá. Tenía un altar de Baal y un poste sagrado;
+  cuando Gedeón los derribó, lo defendió ante la ciudad y lo llamó Jerubaal. En su tumba enterraron a Gedeón.
+razon: Perspicacia «Joás», núm. 3; Jue 6:11, 25-32; 7:14; 8:13, 29, 32. Perspicacia deduce que era próspero por su altar,
+  su poste y sus siervos.
+fuentes:
+- it-joas
+- jueces-6
+- jueces-8
+enlaces:
+- titulo: 'Perspicacia: «Joás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002474
+  tipo: perspicacia
+- titulo: Jueces 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/6
+  tipo: biblia
+- titulo: Jueces 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/8
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: abi-ezer-hijo-de-galaad
+  relacion: antepasado
+  deducido: false
+  fuentes:
+  - jueces-6
+  - it-joas
+  - it-abi-ezer
+  - jueces-8
+  razon: 'Jue 6:11 lo llama Joás el abí-ezrita: era de la familia de Abí-Ézer, de la tribu de Manasés.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ofra-de-gedeon
+  deducido: false
+  fuentes:
+  - jueces-6
+  - it-ofra
+  - jueces-8
+  razon: 'Jue 6:11, 25-30: el árbol grande de Ofrá era suyo, allí tenía su altar de Baal y los hombres de la ciudad le piden
+    a su hijo.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

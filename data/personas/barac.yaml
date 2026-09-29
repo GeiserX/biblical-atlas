@@ -9,12 +9,16 @@ razon: Perspicacia «Barac», párr. 2 a 4; Jue 4:6-16.
 fuentes:
 - it-barac
 - jueces-4
+- jueces-5
 enlaces:
 - titulo: 'Perspicacia: «Barac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000559
   tipo: perspicacia
 - titulo: Jueces 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/4
+  tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
   tipo: biblia
 relaciones:
 - tipo: acompana
@@ -23,7 +27,29 @@ relaciones:
   fuentes:
   - it-barac
   - jueces-4
+  - jueces-5
   razon: 'Perspicacia «Barac», párr. 3: aceptó dirigir la lucha si Débora iba con él (Jue 4:8, 9).'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: abinoam
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-abinoam
+  - jueces-5
+  razon: 'Jue 4:6, 12: Barac hijo de Abinoam.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: quedes-de-neftali
+  deducido: true
+  fuentes:
+  - jueces-4
+  - it-barac
+  - it-quedes
+  razon: 'Jue 4:6: Débora lo manda llamar de Quedes de Neftalí; Perspicacia «Barac» y «Quedes», núm. 2, lo hacen vecino de
+    allí.'
+  estado: verificado
+perspicacia: '1200000559'
+consultado: '2026-09-29'
 estado: verificado

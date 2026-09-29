@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-angel-de-jehova-reprende-a-israel-en-bokim
+titulo: El ángel de Jehová reprende a Israel en Bokim
+fecha:
+  desde: -1466
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y 1117 a.e.c. (tiempo narrativo: tras el reparto de la tierra y antes del primer rey)'
+orden_relato:
+  serie: jueces
+  orden: 2001
+lugares:
+- bokim
+- guilgal
+personas: []
+presentes: []
+pasajes:
+- Jue 2:1-5
+resumen: El ángel de Jehová sube de Guilgal a Bokim y recuerda que Israel no debía pactar con los pueblos de la tierra ni
+  respetar sus altares. Como no obedeció, no los echará. El pueblo llora y ofrece sacrificios.
+razon: 'Perspicacia «Bokim» y «Guilgal», núm. 1: quizá es el mismo ángel que se apareció a Josué junto a Guilgal; Jue 2:1-5.
+  Límites: el reparto, en 1467 a.e.c., y 1117 a.e.c. (estudio 3).'
+fuentes:
+- jueces-2
+- it-bokim
+- it-guilgal
+- si-3
+enlaces:
+- titulo: Jueces 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/2
+  tipo: biblia
+- titulo: 'Perspicacia: «Bokim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000782
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

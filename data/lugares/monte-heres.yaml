@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-heres
+nombre: Monte Heres
+nombres:
+- nombre: Monte Heres
+  nota: El de Jue 1:35 (Perspicacia «Heres», núm. 1); no el paso de Heres de Jue 8:13, que es el núm. 2.
+- nombre: Heres
+  nota: Significa «sol», según Perspicacia.
+tipo: monte
+lat: 31.750621
+lon: 34.974744
+precision: incierto
+coord_fuente: openbible:aeea26d
+coord_url: https://www.openbible.info/geo/ancient/aeea26d/mount-heres
+coord_nota: OpenBible lo toma por Ir-Semes y le da el punto de Tel Bet Shemesh, el mismo de Bet-Semes. Perspicacia dice que
+  así lo identifica la mayoría de los investigadores.
+resumen: Monte donde los amorreos siguieron viviendo tras la conquista, al parecer en el territorio de Dan, hasta que la casa
+  de José los sometió a trabajos forzados. Muchos lo identifican con Ir-Semes, es decir, Bet-Semes.
+razon: 'Perspicacia «Heres», núm. 1, y «Bet-semes», núm. 1; Jue 1:34, 35. Va en ficha aparte de Bet-Semes porque Perspicacia
+  solo recoge la opinión de otros. OpenBible: solo el punto.'
+fuentes:
+- it-heres
+- it-bet-semes
+- openbible-geo
+- jueces-1
+enlaces:
+- titulo: 'Perspicacia: «Heres»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001993
+  tipo: perspicacia
+- titulo: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

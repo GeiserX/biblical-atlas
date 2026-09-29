@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ibzan-juzga-a-israel
+titulo: Ibzán juzga a Israel siete años
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: después de Jefté y antes de Saúl)'
+orden_relato:
+  serie: jueces
+  orden: 12008
+lugares:
+- belen-de-zabulon
+personas:
+- ibzan
+pasajes:
+- Jue 12:8-10
+resumen: Después de Jefté, Ibzán de Belén juzga a Israel siete años. Casa a sus 30 hijas fuera de su clan y trae 30 mujeres
+  para sus 30 hijos. Muere y lo entierran en Belén.
+razon: 'Jue 12:8-10; Perspicacia «Ibzán» y «Belén», núm. 2: probablemente la de Zabulón. Fecha: después de Jefté, que empieza
+  hacia 1173 a.e.c. («Jefté»), y antes de Saúl, 1117 (estudio 3).'
+fuentes:
+- jueces-12
+- it-ibzan
+- it-belen
+- it-jefte
+- si-3
+enlaces:
+- titulo: Jueces 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

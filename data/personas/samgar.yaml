@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: samgar
+nombre: Samgar
+nombres:
+- nombre: Samgar
+perspicacia: '1200003938'
+resumen: Hijo de Anat. Salvó a Israel entre los tiempos de Ehúd y los de Barac; de él solo se cuenta que acabó con 600 filisteos
+  usando una aguijada de bueyes.
+razon: Perspicacia «Samgar»; Jue 3:31.
+fuentes:
+- it-samgar
+- jueces-3
+- jueces-5
+enlaces:
+- titulo: 'Perspicacia: «Samgar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003938
+  tipo: perspicacia
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: anat
+  relacion: padre
+  deducido: false
+  fuentes:
+  - jueces-3
+  - it-anat
+  - jueces-5
+  razon: 'Jue 3:31: Samgar hijo de Anat.'
+  estado: verificado
+- tipo: sucede_a
+  persona: ehud-hijo-de-guera
+  deducido: false
+  fuentes:
+  - jueces-3
+  - it-samgar
+  razon: Jue 3:31 lo pone después de Ehúd; Perspicacia «Samgar» lo sitúa entre Ehúd y Barac.
+  estado: verificado
+no_afirmamos:
+- 'Que Samgar fuera de Bet-Anat, en Neftalí: Perspicacia solo apunta que el apelativo «hijo de Anat» podría indicarlo.'
+consultado: '2026-09-29'
+estado: verificado

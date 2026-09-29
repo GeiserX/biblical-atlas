@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: minit
+nombre: Minit
+nombres:
+- nombre: Minit
+tipo: ciudad
+lat: 31.820214
+lon: 35.874681
+precision: incierto
+coord_fuente: openbible:a222545
+coord_url: https://www.openbible.info/geo/ancient/a222545/minnith
+coord_nota: No se sabe dónde estaba. Entre las propuestas, Perspicacia nombra Khirbet Hanizeh (Umm el Hanafish), cerca de
+  Hesbón, que es la primera de OpenBible.
+resumen: Ciudad de los ammonitas hasta la que llegó Jefté al vencerlos, una de las veinte que sometió. Siglos después Tiro
+  comerciaba con su trigo.
+razon: 'Perspicacia «Minit»; Jue 11:33; Eze 27:17. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-minit
+- openbible-geo
+- jueces-11
+enlaces:
+- titulo: 'Perspicacia: «Minit»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003071
+  tipo: perspicacia
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

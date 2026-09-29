@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: miqueas-toma-a-un-levita-como-sacerdote
+titulo: Miqueas toma a un levita como sacerdote
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: poco antes de que los danitas tomaran Lais, en vida de Josué)'
+orden_relato:
+  serie: josue
+  orden: 19042
+lugares:
+- region-montanosa-de-efrain
+- belen
+personas:
+- miqueas-de-efrain
+- jonatan-levita
+pasajes:
+- Jue 17:7-13
+resumen: Un joven levita que vivía en Belén de Judá llega a casa de Miqueas buscando dónde asentarse. Miqueas le ofrece sueldo,
+  ropa y comida para que sea su sacerdote, y el levita se queda con él.
+razon: Jue 18 lo pone poco antes de tomar Lais, que Perspicacia «Jueces, Libro de», «Orden del libro», sitúa antes de morir
+  Josué, c. 1450; la conquista general acabó en 1467 (estudio 3). Va en la serie josue, antes de los-danitas-toman-lesem.
+fuentes:
+- jueces-17
+- it-miqueas
+- it-jonatan
+- si-3
+- it-jueces
+enlaces:
+- titulo: Jueces 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

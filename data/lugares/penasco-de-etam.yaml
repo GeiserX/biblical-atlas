@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: penasco-de-etam
+nombre: Peñasco de Etam
+nombres:
+- nombre: Peñasco de Etam
+tipo: monte
+lat: 31.763715
+lon: 35.025793
+precision: incierto
+coord_fuente: openbible:ae05348
+coord_url: https://www.openbible.info/geo/ancient/ae05348/etam-1
+coord_nota: 'ʽAraq Ismaʽin, primera identificación de OpenBible: una roca aislada con una cueva, unos 4 km al ESE de Zorá.
+  Perspicacia la propone con un «quizás».'
+resumen: Peñasco con una cueva donde se quedó Sansón después de vengarse de los filisteos. Allí bajaron 3.000 hombres de Judá
+  para atarlo y entregarlo. No se sabe con certeza dónde estaba.
+razon: 'Perspicacia «Etam», núm. 2; Jue 15:8-13. Quizá guarde relación con la Etam de Judá (núm. 3), que es otro lugar. OpenBible:
+  solo el punto.'
+fuentes:
+- it-etam
+- openbible-geo
+- jueces-15
+enlaces:
+- titulo: 'Perspicacia: «Etam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001432
+  tipo: perspicacia
+- titulo: Jueces 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

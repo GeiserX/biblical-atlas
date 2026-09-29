@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodo-de-isacar
+nombre: Dodó
+nombres:
+- nombre: Dodó
+perspicacia: 1200001207#1
+desambiguacion: Dodó de Isacar, padre de Pua; no el benjaminita padre de Eleazar ni el de Belén padre de Elhanán.
+resumen: Hombre de la tribu de Isacar, padre de Pua. Del juez Tolá era antepasado y, según Perspicacia, probablemente abuelo.
+razon: Perspicacia «Dodó», núm. 1, y «Puá», núm. 3; Jue 10:1.
+fuentes:
+- it-dodo
+- it-pua
+- jueces-10
+enlaces:
+- titulo: 'Perspicacia: «Dodó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001207
+  tipo: perspicacia
+- titulo: Jueces 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

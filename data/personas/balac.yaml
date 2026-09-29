@@ -23,6 +23,7 @@ fuentes:
 - numeros-23
 - numeros-24
 - josue-24
+- jueces-11
 enlaces:
 - titulo: 'Perspicacia: «Balac»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000546
@@ -39,6 +40,7 @@ relaciones:
   - numeros-22
   - it-zipor
   - josue-24
+  - jueces-11
   razon: 'Nú 22:2, 4: Balac hijo de Zipor.'
   estado: verificado
 - tipo: vivio_en
@@ -48,6 +50,7 @@ relaciones:
   - numeros-22
   - it-balac
   - josue-24
+  - jueces-11
   razon: 'Nú 22:4, 10: era rey de Moab.'
   estado: verificado
 consultado: '2026-09-29'

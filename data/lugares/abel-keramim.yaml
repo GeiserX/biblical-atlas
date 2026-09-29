@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abel-keramim
+nombre: Abel-Keramim
+nombres:
+- nombre: Abel-Keramim
+  nota: 'Perspicacia da el significado: cauce de viñedos.'
+tipo: ciudad
+lat: 31.87606
+lon: 35.928768
+precision: incierto
+coord_fuente: openbible:a957c5b
+coord_url: https://www.openbible.info/geo/ancient/a957c5b/abel-keramim
+coord_nota: Perspicacia la sitúa entre Hesbón y Rabá y dice que hoy se la suele identificar con Khirbet es-Suq; tomamos esa
+  identificación de OpenBible. Otros proponen Naʽur.
+resumen: Lugar entre Hesbón y Rabá, el más lejano hasta donde Jefté persiguió a los ammonitas al derrotarlos.
+razon: 'Perspicacia «Abel-keramim»; Jue 11:33. Coordenada de OpenBible: solo tomamos el punto.'
+fuentes:
+- it-abel-keramim
+- openbible-geo
+- jueces-11
+enlaces:
+- titulo: 'Perspicacia: «Abel-keramim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000020
+  tipo: perspicacia
+- titulo: Jueces 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

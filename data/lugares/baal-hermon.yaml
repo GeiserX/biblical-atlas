@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-hermon
+nombre: Baal-Hermón
+nombres:
+- nombre: Baal-Hermón
+- nombre: Monte Baal-Hermón
+  nota: Así lo nombra Jue 3:3.
+tipo: monte
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Monte Hermón
+  geometria:
+    tipo: punto
+    lat: 33.4
+    lon: 35.85
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-baal-hermon
+  razon: 'Perspicacia «Baal-hermón»: es la identificación más corriente.'
+  coord_fuente: openbible:ac8955e
+  coord_url: https://www.openbible.info/geo/ancient/ac8955e/mount-baal-hermon
+  nota: Primera resolución de OpenBible, que lo da como otro nombre del Hermón; es el mismo punto de la ficha monte-hermon.
+- nombre: Cordillera del Antilíbano
+  geometria:
+    tipo: zona
+    lat: 33.688889
+    lon: 36.031667
+    radio_km: 60
+  estado: alternativa
+  fuentes:
+  - it-baal-hermon
+  razon: Perspicacia «Baal-hermón» admite que el nombre abarque el Antilíbano entero o una parte.
+  coord_fuente: calculo
+  nota: Centro nuestro en el punto de la ficha antilibano; el radio cubre la cordillera, de unos 100 km.
+resumen: Monte del norte que marca un extremo de la zona de los heveos, a los que Israel no echó de los montes del Líbano.
+  Suele identificarse con el Hermón.
+razon: 'Perspicacia «Baal-hermón»: suele ser el Hermón, aunque puede aludir al Antilíbano o a parte de él; Jue 3:3. OpenBible:
+  solo el punto.'
+fuentes:
+- it-baal-hermon
+- openbible-geo
+- jueces-3
+enlaces:
+- titulo: 'Perspicacia: «Baal-hermón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000515
+  tipo: perspicacia
+- titulo: Jueces 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -16,6 +16,7 @@ fuentes:
 - numeros-31
 - josue-22
 - josue-24
+- jueces-20
 enlaces:
 - titulo: 'Perspicacia: «Finehás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003472
@@ -35,6 +36,7 @@ relaciones:
   - it-finehas
   - exodo-6
   - numeros-25
+  - jueces-20
   razon: 'Perspicacia «Finehás», núm. 1: era hijo de Eleazar y, por él, nieto de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -48,6 +50,7 @@ relaciones:
   - numeros-31
   - josue-22
   - josue-24
+  - jueces-20
   razon: 'Éx 6:25: hijo de Eleazar.'
   estado: verificado
 - tipo: pariente
@@ -66,6 +69,7 @@ relaciones:
   - josue-24
   - it-eleazar
   - it-finehas
+  - jueces-20
   razon: 'Perspicacia «Eleazar», núm. 1, y «Finehás», núm. 1: tras enterrar a su padre (Jos 24:33) fue sumo sacerdote; Jue
     20:27, 28 lo muestra en el cargo.'
   estado: verificado

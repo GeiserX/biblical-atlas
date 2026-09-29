@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-600-benjaminitas-se-refugian-en-el-penasco-de-rimon
+titulo: Los 600 benjaminitas se refugian en el peñasco de Rimón
+fecha:
+  desde: -1449
+  hasta: -1399
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
+orden_relato:
+  serie: jueces
+  orden: 20047
+lugares:
+- penasco-de-rimon
+personas: []
+pasajes:
+- Jue 20:47
+resumen: Solo 600 hombres de Benjamín logran escapar al desierto, hasta el peñasco de Rimón, y se quedan allí cuatro meses.
+razon: 'Perspicacia «Rimón», núm. 4: siguieron allí hasta la oferta de paz (Jue 21:13). Fecha: «Jueces, Libro de», «Orden
+  del libro»: poco después de morir Josué (c. 1450 a.e.c.); final, una generación: Finehás sigue de sumo sacerdote (Perspicacia
+  «Finehás»).'
+fuentes:
+- jueces-20
+- it-rimon
+- it-jueces
+- si-3
+- it-finehas
+enlaces:
+- titulo: Jueces 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/20
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

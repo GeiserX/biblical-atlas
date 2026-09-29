@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: juda-toma-y-quema-jerusalen
+titulo: Judá toma Jerusalén y la incendia
+fecha:
+  desde: -1472
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1473 y 1117 a.e.c. (tiempo narrativo: quizá durante la conquista; Jueces lo cuenta tras la muerte de Josué)'
+orden_relato:
+  serie: jueces
+  orden: 1008
+lugares:
+- jerusalen
+personas: []
+presentes: []
+pasajes:
+- Jue 1:8
+resumen: Los hombres de Judá atacan Jerusalén, la conquistan a espada y le prenden fuego. Después los jebuseos se quedan o
+  vuelven, y forman un foco que ni Judá ni Benjamín logran reducir.
+razon: 'Perspicacia «Jerusalén» (la conquista inicial fue de Judá) y «Jebús»: quizá fue tras la victoria de Josué en Gabaón,
+  entre 1473 y 1467 a.e.c. Jue 1:8 lo cuenta tras la muerte de Josué. Límite: 1117 a.e.c.'
+fuentes:
+- jueces-1
+- it-jerusalen
+- it-jebus
+- si-3
+enlaces:
+- titulo: Jueces 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

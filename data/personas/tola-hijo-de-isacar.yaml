@@ -4,7 +4,7 @@ nombre: Tolá
 nombres:
 - nombre: Tolá
 perspicacia: 1200004444#1
-desambiguacion: Tolá hijo de Isacar; no el juez de Israel hijo de Puá.
+desambiguacion: Tolá hijo de Isacar; no el juez de Israel hijo de Pua.
 resumen: Primer hijo de Isacar. Fue a Egipto con la casa de Jacob en 1728 a.e.c., y sus hijos y nietos formaron las familias
   tolaítas.
 razon: Perspicacia «Tolá», núm. 1; Gé 46:13.
@@ -37,5 +37,11 @@ relaciones:
   - genesis-46
   razon: 'Gé 46:8, 26, 27: figura en la lista de la casa de Jacob que se instaló en Egipto.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El padre del juez Tolá se escribe Pua en la TNM (Jue 10:1); Puá es la grafía de Perspicacia.
+  fuente: jueces-10
 consultado: '2026-09-29'
 estado: verificado
+no_confundir_con:
+- tola-hijo-de-pua

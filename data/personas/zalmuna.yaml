@@ -11,6 +11,7 @@ fuentes:
 - it-zalmuna
 - it-zebah
 - salmos-83
+- jueces-8
 enlaces:
 - titulo: 'Perspicacia: «Zalmuná»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004658
@@ -20,3 +21,11 @@ enlaces:
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: acompana
+  persona: zebah
+  deducido: false
+  fuentes:
+  - jueces-8
+  razon: 'Jue 8:5, 12: los dos son los reyes de Madián y actúan siempre juntos.'
+  estado: verificado

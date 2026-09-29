@@ -3,8 +3,12 @@ id: cison
 nombre: Cisón
 nombres:
 - nombre: Cisón
+- nombre: Arroyo de Cisón
+  nota: Así lo llaman Jue 4:7, 13 y Sl 83:9; la nota de Jue 4:7 da «wadi de Cisón».
 - nombre: Valle torrencial de Cisón
-  nota: Así lo llama Jue 4:7. Sl 83:9 dice «arroyo de Cisón»; su nota da «wadi».
+  nota: Así lo titula Perspicacia.
+- nombre: Aguas de Meguidó
+  nota: Jue 5:19. Perspicacia «Cisón» dice que se cree que la expresión se refiere a este torrente.
 tipo: rio
 lat: 32.816667
 lon: 35.033333
@@ -20,6 +24,8 @@ fuentes:
 - it-cison
 - openbible-geo
 - salmos-83
+- jueces-4
+- jueces-5
 enlaces:
 - titulo: 'Perspicacia: «Cisón, Valle torrencial de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002634
@@ -27,5 +33,10 @@ enlaces:
 - titulo: Salmo 83 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La nota de «Valle torrencial de Cisón» decía que así lo llama Jue 4:7, pero la TNM de estudio dice «arroyo de Cisón»
+    en 4:7 y 4:13. Se añade ese nombre.
+  fuente: jueces-4
 consultado: '2026-09-29'
 estado: verificado

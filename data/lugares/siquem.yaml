@@ -5,6 +5,18 @@ nombres:
 - nombre: Siquem
 - nombre: Dios, el Dios de Israel
   nota: Nombre que Jacob puso al altar que levantó junto a la ciudad (Gé 33:20).
+- nombre: Bet-Miló
+  nota: 'Casa de Miló: quizá una fortaleza de Siquem, y tal vez la misma torre de Siquem. Su gente ayudó a hacer rey a Abimélec
+    (Perspicacia «Miló»).'
+- nombre: Torre de Siquem
+  nota: Lugar fortificado de la ciudad. Sus líderes se escondieron en el templo de El-Berit y murieron en el incendio que
+    causó Abimélec.
+- nombre: Templo de Baal-Berit
+  nota: Casa del Baal de Siquem, llamado también El-Berit. Guardaba plata, y en su bóveda murieron unas mil personas (Perspicacia
+    «Baal-berit»).
+- nombre: Árbol grande de Meonenim
+  nota: Árbol que se veía desde Siquem. Su nombre significa practicantes de magia; quizá allí se practicaba (Perspicacia «Meonenim,
+    Árbol grande de»).
 tipo: ciudad
 lat: 32.213611
 lon: 35.281944
@@ -29,6 +41,11 @@ fuentes:
 - josue-20
 - josue-21
 - josue-24
+- jueces-8
+- jueces-9
+- it-milo
+- it-meonenim
+- it-baal-berit
 enlaces:
 - titulo: 'Perspicacia: «Siquem»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
