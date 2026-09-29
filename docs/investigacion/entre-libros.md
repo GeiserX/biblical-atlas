@@ -171,6 +171,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Las langostas de Joel 1 y 2.** Manda La Atalaya de abril de 2020 (`w20-ataque-del-norte`): son el ejército babilonio que tomó Jerusalén en 607 a.e.c., y no son las langostas de Ap 9. Los tramos Joel 1:2-4, 1:5-12, 2:1-11 y 2:18-27 llevan `destruccion-de-jerusalen-607` en `mentions`.
 - **Grecia.** `grecia` existe desde Joe 3:6 (OpenBible a4492a0, con Javán en `names`). Is 66:19, Ez 27:13, Da 8:21, 10:20, 11:2, Zac 9:13 y Hch 20:2 usan ese id cuando hablan de la tierra.
 - **El valle de Jehosafat y el de la Decisión** (Joe 3:2, 12, 14) no llevan ficha: Perspicacia «Jehosafat, Llanura baja de» y La Atalaya de 2007 los llaman lugar simbólico.
+- **Sitim.** `sitim` es Perspicacia «Sitim», núm. 1 (Nú 25:1; 33:49; Jos 2:1; 3:1; Miq 6:5) y `valle-de-las-acacias` el núm. 2 (Joe 3:18). Cada una dice en `not_claimed` que no es la otra.
 
 ## Para 2 Crónicas, Ezequiel y Zacarías (desde Joel)
 
@@ -189,11 +190,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 ## Para quien reabra los Evangelios (desde Josué)
 
 - **Queriyot-hezrón.** Existe `queriyot-hezron` (Jos 15:25). Perspicacia «Judas», núm. 4, solo ve probable que Judas Iscariote y su padre fueran de allí, y los Evangelios no lo dicen: `judas-iscariote` y `simon-iscariote` no llevan relación con ese lugar.
-
-## Para Miqueas (desde Josué)
-
-- **Maresá.** `maresa` existe desde Josué (Perspicacia «Maresá», núm. 3; OpenBible a5cda86, Tell Sandahannah). Miqueas funde su `maresa` con esta en una sola ficha.
-- **Zaanán y Marot.** `zenan` (Jos 15:37) y `maarat` (Jos 15:59) existen desde Josué. Muchos toman Zenán por la Zaanán de Miq 1:11 y algunos Maarat por la Marot de Miq 1:12, sin certeza. Miqueas añade a `zenan` y `maarat` un `not_claimed` que diga que no damos por hecho que sean `zaanan` y `marot`.
 
 ## Para Isaías, Jeremías y Nehemías
 
@@ -346,10 +342,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Isaac como pueblo.** La regla de `versiculos.md` sección 4 deja fuera de `mentions` al patriarca cuando su nombre designa al pueblo. Los tramos Amós 7:7-9 y 7:10-17 llevan `person:isaac` por «lugares altos de Isaac» y «casa de Isaac», el pueblo de Israel: sobra en los dos. «Dios de Jacob» (Sl 20) y «descendencia de Jacob» (Sl 22) nombran al hombre y se quedan.
 
-## Para Mateo y Lucas (desde Jonás, lo aplica la integración)
-
-- **Jonás en el pez y en Nínive.** Jonás crea `un-gran-pez-se-traga-a-jonas` (Jon 1:17-2:10) y `ninive-se-arrepiente` (Jon 3:5-10). Jesús los recuerda: la señal de Jonás y el pez en Mt 12:39, 40, 16:4 y Lu 11:29, 30; el arrepentimiento de Nínive en Mt 12:41 y Lu 11:32 (Perspicacia «Nínive» los cita). Los dos sucesos van a `mentions` de los tramos Mateo 12:38-42 y Lucas 11:29-36, y el pez a `mentions` de Mateo 16:1-4. No van a `passages`: esos versículos recuerdan los sucesos, no los narran, y la sección 6 de `versiculos.md` reserva `passages` para los versículos del suceso y sus relatos paralelos. La nota de Mateo 12:38-42 que dice que Jonás en Nínive aún no es un suceso se corrige. Jonás, por su parte, ya pone `senal-de-jonas-en-galilea` y `dedo-de-dios-y-senal-de-jonas` en `mentions` de Jon 1:1-3, 1:17 y 3:5-10.
-
 ## Para 2 Reyes (desde Jonás)
 
 - **Amitái.** `amitai` existe (clave `1200000231`), con `lived_in` `gat-hefer` deducido de Perspicacia «Amitai», y `jonas-profeta` lleva `kin` `amitai` con la palabra `father`. Las dos relaciones y la de `jonas-profeta` `lived_in` `gat-hefer` citan o pueden citar 2Re 14:25: el tramo de 2 Reyes 14 las lleva al cerrarse. La profecía de Jonás sobre Jeroboán II es un suceso de Reyes.
@@ -364,14 +356,14 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para 1 y 2 Reyes (desde Miqueas)
 
-- **Claves de Omrí y Acab.** `data/_proposals/miqueas.json` pone a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
+- **Claves de Omrí y Acab.** La integración de Miqueas puso a `omri` la clave `1200003324#3` y a `acab` la `1200000138#1`. Reyes no vuelve a proponerlas: un `cambiar` desde `null` chocaría.
 - **Tierra de Nemrod.** Está en `names` de `asiria` (Miq 5:6). El tramo Miqueas 5:5-6 no lleva `person:nemrod`: su nombre designa la tierra.
 
 ## Para 2 Reyes, 2 Crónicas y Esdras (desde Nahúm)
 
 - **Asurbanipal y Asnapar.** `asurbanipal` (clave `1200000430`) existe desde Na 3:8-10. Esa clave es a propósito la entrada «Asurbanipal» de Perspicacia, que solo remite a «Asnapar»: así la del artículo, `1200000404`, queda libre para `asnapar`. Perspicacia «Asnapar» solo ve muy probable que sea el Asnapar de Esd 4:10, así que Esdras crea `asnapar` (`1200000404`) con `same_as` `asurbanipal`, `inferred: true` y `status: pending`.
 - **Esar-Hadón.** No tiene ficha. Quien la cree (2Re 19:37; Esd 4:2) añade a `asurbanipal` la relación `kin` `esar-hadon` con la palabra `father`, con Perspicacia «Asnapar», párr. 2. `asurbanipal` ya lleva `senaquerib` como abuelo, deducido.
-- **Nabopolasar y Ciaxares.** `nabopolasar` y `ciaxares` existen, con `perspicacia: null` porque Perspicacia no les dedica artículo. `data/_proposals/nahum.json` pone a `nabucodonosor-ii` las relaciones `kin` `nabopolasar` con la palabra `father` y `succeeds` `nabopolasar`, y añade `nabopolasar` a `nabopolasar-funda-dinastia`. 2 Reyes, Jeremías y Daniel reutilizan esos ids.
+- **Nabopolasar y Ciaxares.** `nabopolasar` y `ciaxares` existen, con `perspicacia: null` porque Perspicacia no les dedica artículo. La integración de Nahúm puso a `nabucodonosor-ii` las relaciones `kin` `nabopolasar` con la palabra `father` y `succeeds` `nabopolasar`, y añadió `nabopolasar` a `nabopolasar-funda-dinastia`. 2 Reyes, Jeremías y Daniel reutilizan esos ids.
 
 ## Para Isaías, Jeremías y Ezequiel (desde Nahúm)
 
@@ -381,14 +373,14 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para Josué y Jueces (desde Habacuc)
 
-- **Sucesos que recuerda Habacuc 3.** La Atalaya del 1 de febrero de 2000 (`w00-gozosos-en-dios`) une la oración a la toma de Jericó (Jos 6), al sol que se detiene sobre Gabaón (Jos 10:12-14, la referencia de Hab 3:11) y a la crecida del Cisón contra Sísara (Jue 5:21). Cuando existan, Jericó va en `mentions` del tramo Habacuc 3:1-2 y los otros dos en el de Habacuc 3:8-11, sin añadir Hab 3 a sus `passages`, como ya se hizo con `israel-cruza-el-mar-rojo`, `entrada-en-canaan` e `israel-adora-al-baal-de-peor`.
+- **Sucesos que recuerda Habacuc 3.** La Atalaya del 1 de febrero de 2000 (`w00-gozosos-en-dios`) une la oración a la toma de Jericó (Jos 6), al sol que se detiene sobre Gabaón (Jos 10:12-14, la referencia de Hab 3:11) y a la crecida del Cisón contra Sísara (Jue 5:21). Jericó, Gabaón y el Cisón ya van en `mentions` de Habacuc 3:1-2 y 3:8-11.
 - **Cusán no es Cusán-risataim.** `cusan` (Hab 3:7) es un lugar sin punto, quizá otro nombre de Madián o un país vecino (Perspicacia «Cusán»). El rey de Jue 3:8-10 es una persona aparte, con su propio artículo.
 
 ## Para 2 Reyes, 2 Crónicas, Esdras, Nehemías, Jeremías y Zacarías (desde Sofonías)
 
 - **La reforma de Josías.** Aún no es un suceso. Perspicacia «Sofonías, Libro de» pone el libro antes de ella (hacia 648 a.e.c.), y la referencia de Sof 1:4 remite a 2Re 23:5. Cuando Reyes o Crónicas cree la reforma (2Re 23:4-14; 2Cr 34:3-7), va en `mentions` de los tramos Sofonías 1:1 y 1:4-6.
-- **Claves ya puestas.** `data/_proposals/sofonias.json` pone a `guedalias`, el gobernador, la clave `1200001632#4` y el `distinct_from` hacia `guedalias-hijo-de-amarias` (núm. 2), y a `ezequias` su `disambiguation`. Reyes y Jeremías no vuelven a proponerlas: un `cambiar` desde `null` chocaría.
-- **El Ezequías de Sof 1:1.** Es `ezequias-antepasado-de-sofonias` (Perspicacia «Ezequías», núm. 2), con `same_as` `ezequias` deducido y pendiente, porque Perspicacia solo dice «quizás» y «probablemente». Se funden solo si una publicación lo afirma. El de Esd 2:16 y Ne 7:21 es el núm. 3: otro id y `distinct_from` con los dos.
+- **Claves ya puestas.** La integración de Sofonías puso a `guedalias`, el gobernador, la clave `1200001632#4` y el `distinct_from` hacia `guedalias-hijo-de-amarias` (núm. 2), y a `ezequias` su `disambiguation`. Reyes y Jeremías no vuelven a proponerlas: un `cambiar` desde `null` chocaría.
+- **El Ezequías de Sof 1:1.** Es `ezequias-antepasado-de-sofonias` (Perspicacia «Ezequías», núm. 2), y la ficha `ezequias` lleva el `same_as` hacia él, deducido y con `certainty: possible`: Perspicacia «Ezequías», la publicación más reciente, dice «quizás». Se funden solo si una publicación lo afirma. El de Esd 2:16 y Ne 7:21 es el núm. 3: otro id y `distinct_from` con los dos.
 - **Otros Sofonías.** `sofonias-profeta` es el núm. 2 de Perspicacia. El sacerdote hijo de Maaseya (Jer 21:1; 29:25; 37:3; 2Re 25:18) es el núm. 3, el levita de 1Cr 6:36 el núm. 1 y el padre de Josías o Hen (Zac 6:10) el núm. 4: cada uno con su id y `distinct_from` con `sofonias-profeta`.
 - **Barrios y puertas.** Puerta del Pescado, Segundo Barrio y Mactés están en `names` de `jerusalen`. 2Re 22:14, 2Cr 33:14, 34:22 y Ne 3:3, 12:39 usan esa ficha.
 

@@ -50,11 +50,29 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: same_as
+  person: ezequias-antepasado-de-sofonias
+  certainty: possible
+  inferred: true
+  sources:
+  - sofonias-1
+  - it-ezequias
+  - it-amarias
+  - it-sofonias
+  - si-sofonias
+  reason: Perspicacia (1991), la más reciente, dice en «Ezequías», núm. 2, «quizás» el rey. «Toda Escritura» (1990), libro 36,
+    párr. 1, y Perspicacia «Amarías», núm. 6, dicen «probablemente». Sof 1:1 no lo llama rey.
+  checked_on: '2026-09-29'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Ezequías» y el estudio 3 daban 745-717 a.e.c.; A6-B, más reciente, da 746 para su comienzo y 716 para
     Manasés.
   source: tnm-a6-b
+- date: '2026-09-29'
+  change: Recibe el same_as con ezequias-antepasado-de-sofonias, que estaba en la otra ficha, deducido y pendiente. Va con
+    certainty possible, la palabra de Perspicacia «Ezequías».
+  source: it-ezequias
 perspicacia: 1200002011#1
 disambiguation: El rey de Judá, hijo de Acaz. Perspicacia registra aparte al antepasado de Sofonías (ezequias-antepasado-de-sofonias),
   que quizá sea él, y a otro cuyos descendientes volvieron del destierro.

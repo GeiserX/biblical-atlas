@@ -24,19 +24,10 @@ links:
 - title: Sofonías 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1
   type: bible
-relations:
-- type: same_as
-  person: ezequias
-  inferred: true
-  sources:
-  - sofonias-1
-  - it-ezequias
-  - it-amarias
-  - it-sofonias
-  - si-sofonias
-  reason: Perspicacia dice «quizás» y «probablemente» el rey Ezequías; «Toda Escritura», que Sofonías probablemente descendía
-    de él. Sof 1:1 no lo llama rey.
-  checked_on: '2026-09-29'
-  status: pending
+history:
+- date: '2026-09-29'
+  change: El same_as con ezequias pasa a la ficha del rey, cuyo id va primero, con certainty possible; aquí era deducido y
+    pendiente.
+  source: it-ezequias
 checked_on: '2026-09-29'
 status: verified

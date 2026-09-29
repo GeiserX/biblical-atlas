@@ -50,6 +50,7 @@ relations:
   - 2-reyes-13
   reason: Reinó en Siria al morir su padre (2Re 13:24).
   checked_on: '2026-09-29'
+  office: king
   status: verified
 - type: lived_in
   place: damasco

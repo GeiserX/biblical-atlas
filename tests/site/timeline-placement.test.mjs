@@ -15,6 +15,10 @@
 //  - Outside Acts, events and letters fall where the code before this change put them, except the changes listed in
 //    EXPECTED_CHANGES. This one is a record of this change only: it runs the code of REFERENCE_REV on today's data,
 //    and that code reads the data keys in Spanish. Delete it or pin it again when the schema migration renames them.
+//    It compares only the events and letters that existed at REFERENCE_REV. One added later (a new book, a new event
+//    of an old book) was never placed by that code, so where that code would put it records nothing about this change,
+//    and every new book turned the record red (Judges: 59 events). The added ones still take part in the placement:
+//    if one of them moves an event or letter that existed then, the record fails.
 //    It skips itself, with a message, where git does not have REFERENCE_REV (a shallow clone, a source archive).
 //  - During the baptism of Lydia the flag says Paul is in Philippi, on a desktop and on a phone.
 //
@@ -46,10 +50,8 @@ const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch:
 // Events and letters outside Acts that this change moves, and why. 1: a «tras» of the same series bounded the whole
 // group with the raw date of its target, so the group did not fit and fell back to its dates. 2: Paul was drawn on
 // the road while they happened at a stop of one moment. 3: the window differed from the event's own date only by the
-// cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»). 4: it names
-// Paul but `presentes` leaves him out (events of Romans and 1 and 2 Corinthians merged after this change), so his stops
-// no longer place it: it keeps its date or follows its series and its «tras». 5: its «tras» points at one of those and
-// it now starts where that one ends.
+// cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»).
+// Only events and letters that existed at REFERENCE_REV are listed: the record compares no other.
 const EXPECTED_CHANGES = {
   'evento:creacion-de-eva': 1, 'evento:pecado-de-adan-y-eva': 1, 'evento:juicio-en-eden': 1, 'evento:expulsion-del-eden': 1,
   'evento:nacimiento-de-cain': 1, 'evento:ofrendas-de-cain-y-abel': 1, 'evento:cain-mata-a-abel': 1, 'evento:cain-edifica-enoc': 1,
@@ -63,12 +65,7 @@ const EXPECTED_CHANGES = {
   'evento:dedo-de-dios-y-senal-de-jonas': 1, 'evento:come-con-un-fariseo': 1, 'evento:rico-insensato-y-mayordomo-fiel': 1,
   'evento:mujer-encorvada-y-grano-de-mostaza': 1,
   'evento:tito-trae-noticias-de-corinto': 2, 'evento:segundo-encierro-en-roma': 2, 'carta:2-corintios': 2, 'carta:2-timoteo': 2,
-  'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3, 'evento:joel-anuncia-el-dia-de-jehova': 3,
-  'evento:colecta-de-macedonia-y-acaya': 4, 'evento:pablo-escribe-una-carta-perdida-a-corinto': 4,
-  'evento:pablo-manda-expulsar-al-inmoral-de-corinto': 4,
-  'evento:pablo-predica-en-troas-y-no-encuentra-a-tito': 2, 'evento:pablo-escribe-2-corintios': 2,
-  'evento:pablo-pide-perdonar-al-expulsado-de-corinto': 4, 'evento:tito-vuelve-a-corinto-con-dos-hermanos': 4,
-  'evento:los-corintios-expulsan-al-inmoral': 5,
+  'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {
@@ -355,9 +352,12 @@ test('a «tras» that points at an event left with its whole year moves only its
 });
 
 test('outside Acts, events and letters fall where the code before this change put them, except the listed changes', async (t) => {
-  let code;
+  let code, existed;
   try {
     code = execFileSync('git', ['-C', HERE, 'show', `${REFERENCE_REV}:site/js/trayectorias.js`], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    // One file per event or letter, named by its id. Without --full-tree the paths are read from tests/site and the
+    // list comes back empty.
+    existed = execFileSync('git', ['-C', HERE, 'ls-tree', '--full-tree', '--name-only', REFERENCE_REV, 'data/eventos/', 'data/cartas/'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   } catch {
     t.skip(`git has no ${REFERENCE_REV} here (a shallow clone or a source archive): the record of this change cannot run`);
     return;
@@ -377,12 +377,14 @@ test('outside Acts, events and letters fall where the code before this change pu
   const refPage = await open('/ref');
   const before = await refPage.evaluate(collect);
   await refPage.context().close();
-  const moved = Object.keys(now).filter((k) => {
+  const then = new Set(existed.split('\n').map((f) => f.match(/^data\/(evento|carta)s\/(.+)\.yaml$/)).filter(Boolean).map((m) => `${m[1]}:${m[2]}`));
+  const record = Object.keys(now).filter((k) => then.has(k));
+  const moved = record.filter((k) => {
     const a = before[k], b = now[k];
     if (!a || !b) return !!a !== !!b;
     return Math.abs(a[0] - b[0]) > 1e-9 || Math.abs(a[1] - b[1]) > 1e-9;
   }).sort();
-  assert.ok(Object.keys(now).length > 300, 'events and letters outside Acts exist');
+  assert.ok(record.length > 300, `events and letters outside Acts that existed at ${REFERENCE_REV} exist (${record.length} of ${Object.keys(now).length})`);
   assert.deepEqual(moved, Object.keys(EXPECTED_CHANGES).sort(), 'exactly the listed events and letters move');
 });
 

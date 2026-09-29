@@ -10,7 +10,7 @@ date:
   chronology: tnm
   text: 'entre c. 1450 y c. 1400 a.e.c. (tiempo narrativo: pocos años después de morir Josué, con Finehás de sumo sacerdote)'
 narrative_order:
-  series: jueces
+  series: jueces-apendice
   order: 20001
 places:
 - mizpa-de-benjamin
@@ -38,5 +38,10 @@ links:
 - title: Jueces 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/21
   type: bible
+history:
+- date: '2026-09-29'
+  change: 'Pasa de la serie jueces a jueces-apendice. Perspicacia «Jueces, Libro de», «Orden del libro», pone los capítulos
+    19 a 21 poco después de morir Josué, aparte de los jueces; en su serie adelantaban Jue 1:8-11:3.'
+  source: it-jueces
 checked_on: '2026-09-29'
 status: verified
