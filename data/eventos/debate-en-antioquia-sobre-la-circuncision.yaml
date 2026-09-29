@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: debate-en-antioquia-sobre-la-circuncision
+titulo: Debate en Antioquía sobre la circuncisión
+fecha:
+  desde: 49
+  hasta: 49
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 49 e.c.
+orden_relato:
+  serie: hechos
+  orden: 1501
+lugares:
+- antioquia-de-siria
+personas:
+- pablo
+- bernabe
+pasajes:
+- Hch 15:1, 2
+resumen: Unos hombres venidos de Judea enseñan que sin circuncidarse según la Ley de Moisés nadie se salva. Pablo y Bernabé
+  se oponen, y se decide que suban con algunos más a consultar a los apóstoles y ancianos de Jerusalén.
+razon: Perspicacia «Pablo», párr. 13, pone la llegada de esos hombres hacia 49; la nota de Hch 15:2 sitúa la discusión entre
+  los hermanos de Antioquía de Siria.
+fuentes:
+- it-pablo
+- si-3
+- hch-15
+enlaces:
+- titulo: Hechos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/15
+  tipo: biblia
+buscar: hombres de Judea circuncisión Antioquía
+consultado: '2026-09-29'
+estado: verificado
