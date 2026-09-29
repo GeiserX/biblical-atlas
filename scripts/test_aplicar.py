@@ -197,6 +197,23 @@ class Prueba(unittest.TestCase):
         ops.parent.rmdir()
         self.iguales(a, b)
 
+    def test_cambiar_conserva_el_historial_anterior(self):
+        """Un cambiar con historial añade una entrada y no borra las que ya había."""
+        data = self.data("historial")
+        ana = (data / "personas" / "ana.yaml").read_text(encoding="utf-8").replace(
+            "consultado: '2026-01-01'",
+            "historial:\n- fecha: '2026-01-01'\n  cambio: Primera.\n  fuente: f-comun\n"
+            "- fecha: '2026-02-01'\n  cambio: Segunda.\n  fuente: f-comun\nconsultado: '2026-01-01'")
+        (data / "personas" / "ana.yaml").write_text(ana, encoding="utf-8")
+        p = propuesta(5, [{"op": "cambiar", "tipo": "personas", "id": "ana", "campo": "razon", "antes": "Prueba.",
+                           "despues": "Prueba 5.", "historial": {"fecha": "2026-09-29", "cambio": "Tercera.",
+                                                                 "fuente": "prueba-5"}},
+                          {"op": "crear", "tipo": "personas", "id": "x5",
+                           "datos": persona("x5", "1200000015", ["prueba-5"])}])
+        codigo, salida = self.correr(data, p)
+        self.assertEqual(codigo, 0, salida)
+        hist = aplicar.yaml.safe_load((data / "personas" / "ana.yaml").read_text(encoding="utf-8"))["historial"]
+        self.assertEqual([h["cambio"] for h in hist], ["Primera.", "Segunda.", "Tercera."])
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
