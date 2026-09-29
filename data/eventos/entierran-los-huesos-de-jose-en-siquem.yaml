@@ -10,8 +10,8 @@ fecha:
   cronologia: tnm
   texto: 'entre 1473 y 1450 a.e.c. (tiempo narrativo: ya en la Tierra Prometida y antes de acabar el libro de Josué)'
 orden_relato:
-  serie: numeros
-  orden: 224032
+  serie: josue
+  orden: 24032
 lugares:
 - siquem
 personas:
@@ -22,7 +22,7 @@ pasajes:
 resumen: Los huesos de José, que Israel trajo de Egipto, se entierran en Siquem, en la parcela que Jacob compró a los hijos
   de Hamor por cien piezas de dinero. El terreno pasa a ser herencia de los descendientes de José.
 razon: 'Perspicacia «Siquem», núm. 4: ya en la Tierra Prometida, Israel enterró allí los huesos. Límites: entrada en Canaán
-  (1473) y final del libro (hacia 1450; estudio 3). Serie numeros más 200000. No sitúa a nadie.'
+  (1473) y final del libro (hacia 1450; estudio 3). No sitúa a nadie.'
 fuentes:
 - josue-24
 - it-siquem
@@ -39,5 +39,10 @@ enlaces:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002515
   tipo: perspicacia
 buscar: huesos de José Siquem
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Pasa de la serie numeros a la serie josue, porque solo los cinco primeros capítulos de Josué van en la de
+    Números. No cambia su sitio en el tiempo.'
+  fuente: josue-24
 consultado: '2026-09-29'
 estado: verificado

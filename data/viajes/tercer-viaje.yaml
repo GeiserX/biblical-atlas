@@ -41,11 +41,17 @@ fuentes:
 - it-segundo
 - it-tiquico
 - it-trofimo
+- 2-corintios-2
+- it-troas
 historial:
 - fecha: '2026-09-29'
   cambio: 'Se añade Frigia (Hch 18:23). Las paradas que heredaban c. 52-56 se acotan con el estudio 3 y Perspicacia: 52 al
     salir, 55 en Macedonia y la primavera de 56 de Troas a Cesarea.'
   fuente: si-3
+- fecha: '2026-09-29'
+  cambio: 'Se añade la parada de Troas entre Éfeso y Macedonia: 2Co 2:12, 13 y Perspicacia «Troas», párr. 4. Las paradas 5
+    a 20 pasan a ser 6 a 21.'
+  fuente: 2-corintios-2
 consultado: '2026-09-29'
 estado: verificado
 paradas:
@@ -121,6 +127,25 @@ paradas:
   - si-3
   estado: verificado
 - orden: 5
+  lugar: troas
+  referencia: 2Co 2:12, 13
+  fecha:
+    desde: 55
+    hasta: 55
+    precision: año
+    aprox: true
+    tipo: anclada
+    cronologia: tnm
+    texto: c. 55 e.c.
+  nota: Predica; no encuentra a Tito.
+  razon: '2Co 2:12, 13: camino de Macedonia se detiene en Troas a predicar y, al no llegar Tito, sigue viaje. Perspicacia
+    «Troas», párr. 4, cuenta la parada; la salida de Éfeso es de 55 (estudio 3, párr. 26).'
+  fuentes:
+  - 2-corintios-2
+  - it-troas
+  - si-3
+  estado: verificado
+- orden: 6
   lugar: macedonia
   referencia: Hch 20:1, 2
   fecha:
@@ -139,7 +164,7 @@ paradas:
   - si-3
   - bt-21
   estado: verificado
-- orden: 6
+- orden: 7
   lugar: corinto
   referencia: Hch 20:2, 3
   fecha:
@@ -158,7 +183,7 @@ paradas:
   - si-3
   - it-romanos
   estado: verificado
-- orden: 7
+- orden: 8
   lugar: filipos
   referencia: Hch 20:3-6
   fecha:
@@ -175,7 +200,7 @@ paradas:
   - hch-20
   - si-3
   estado: verificado
-- orden: 8
+- orden: 9
   lugar: troas
   referencia: Hch 20:6-12
   fecha:
@@ -194,7 +219,7 @@ paradas:
   - it-troas
   - si-3
   estado: verificado
-- orden: 9
+- orden: 10
   lugar: ason
   referencia: Hch 20:13, 14
   fecha:
@@ -213,7 +238,7 @@ paradas:
   - si-3
   - it-quios
   estado: verificado
-- orden: 10
+- orden: 11
   lugar: mitilene
   referencia: Hch 20:14
   fecha:
@@ -231,7 +256,7 @@ paradas:
   - it-mitilene
   - it-quios
   estado: verificado
-- orden: 11
+- orden: 12
   lugar: quios
   referencia: Hch 20:15
   fecha:
@@ -248,7 +273,7 @@ paradas:
   - hch-20
   - it-quios
   estado: verificado
-- orden: 12
+- orden: 13
   lugar: samos
   referencia: Hch 20:15
   fecha:
@@ -266,7 +291,7 @@ paradas:
   - it-quios
   - it-samos
   estado: verificado
-- orden: 13
+- orden: 14
   lugar: mileto
   referencia: Hch 20:15-38
   fecha:
@@ -284,7 +309,7 @@ paradas:
   - it-mileto
   - it-quios
   estado: verificado
-- orden: 14
+- orden: 15
   lugar: cos
   referencia: Hch 21:1
   fecha:
@@ -301,7 +326,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 15
+- orden: 16
   lugar: rodas
   referencia: Hch 21:1
   fecha:
@@ -318,7 +343,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 16
+- orden: 17
   lugar: patara
   referencia: Hch 21:1, 2
   fecha:
@@ -335,7 +360,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 17
+- orden: 18
   lugar: tiro
   referencia: Hch 21:3-6
   fecha:
@@ -352,7 +377,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 18
+- orden: 19
   lugar: tolemaida
   referencia: Hch 21:7
   fecha:
@@ -369,7 +394,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 19
+- orden: 20
   lugar: cesarea
   referencia: Hch 21:8-14
   fecha:
@@ -386,7 +411,7 @@ paradas:
   - hch-21
   - si-3
   estado: verificado
-- orden: 20
+- orden: 21
   lugar: jerusalen
   referencia: Hch 21:15-17
   fecha:

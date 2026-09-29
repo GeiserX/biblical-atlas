@@ -511,16 +511,19 @@ function colocar(tanda, lo, hi, m) {
       fin = Math.min(corte, U);
       g.sig = Math.max(corte, h.L);
     }
-    let a = Math.max(inicio, g.L), b = fin;
+    let a = Math.max(inicio, g.L), b = fin, junto = false;
     inicio = g.sig ?? inicio;
     if (!(b - a > 2e-4) && g.hi < Infinity) {      // su límite propio de fin lo deja sin sitio: va junto a ese límite
       b = Math.min(g.hi, g.v[1]);
       a = Math.max(g.v[0], g.lo, b - Math.max(fin - a, DIA));
+      junto = true;
     }
     if (!(b - a > 2e-4)) return;                   // no cabe entre las anclas: cada uno se queda con su fecha
     const paso = (b - a) / g.xs.length;
     g.xs.forEach((x, k) => {
-      const corte = Math.min(1e-3, paso / 10);
+      // Junto a su límite, el último acaba en él y no un poco antes: ese límite puede ser el final del destino de su
+      // «tras» (la expulsión del inmoral, entre la visita de Estéfanas y 1 Corintios, que acaban juntas en Éfeso).
+      const corte = junto && k === g.xs.length - 1 ? 0 : Math.min(1e-3, paso / 10);
       const w = [a + k * paso, a + (k + 1) * paso - corte];
       // Solo cambia si se aparta de su fecha más que el corte del final.
       if (w[0] > x.v[0] + 1e-6 || w[1] < x.v[1] - corte - 1e-6) m.set(x.e, w);

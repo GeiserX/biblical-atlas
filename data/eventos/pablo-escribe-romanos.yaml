@@ -4,13 +4,11 @@ titulo: Pablo dicta a Tercio la carta a los Romanos
 fecha:
   desde: 56
   hasta: 56
-  precision: estación
+  precision: año
   aprox: true
   tipo: anclada
   cronologia: tnm
   texto: principios de 56 e.c.
-  detalle:
-    estacion: invierno
 orden_relato:
   serie: hechos
   orden: 2002
@@ -59,6 +57,10 @@ historial:
 - fecha: '2026-09-29'
   cambio: 'La serie romanos la ponía detrás del arresto y del juicio ante Félix, porque tras no ordena. Pasa a la serie hechos
     con el número de Hch 20:2, la llegada a Grecia.'
+  fuente: si-3
+- fecha: '2026-09-29'
+  cambio: 'El invierno de 56 empieza al final de ese año: la ponía tras el arresto. El estudio 3 (párr. 26) da el anterior,
+    antes de la Pascua de 56: queda el año y la sitúa la parada de Corinto.'
   fuente: si-3
 consultado: '2026-09-29'
 estado: verificado

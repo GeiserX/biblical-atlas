@@ -73,6 +73,16 @@ relaciones:
   razon: 'Lu 23:12: eran enemigos y, el día en que Pilato le mandó a Jesús, se hicieron amigos; Perspicacia «Herodes» (núm.
     2) lo cuenta.'
   estado: verificado
+- tipo: pariente
+  persona: aretas
+  relacion: suegro
+  deducido: true
+  fuentes:
+  - it-aretas
+  - it-arabia
+  razon: 'Perspicacia «Aretas», párr. 2, y «Arabia»: Antipas tomó por esposa a una hija de Aretas y la dejó después para unirse
+    a Herodías.'
+  estado: verificado
 resumen: Tetrarca de Galilea y Perea, nacido de Herodes el Grande. Hizo decapitar a Juan el Bautista y, el día en
   que murió Jesús, lo interrogó en Jerusalén y se burló de él.
 razon: Perspicacia «Herodes», apartado 2 (párrafos sobre Juan el Bautista y «Se burla de Jesús»); Lu 23:6-12 narra

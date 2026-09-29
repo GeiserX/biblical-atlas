@@ -26,6 +26,9 @@ historial:
 - fecha: '2026-09-29'
   cambio: 'Jos 13:21 dice que vivían en la tierra de Sehón que pasó a Rubén: ya lleva relación de lugar.'
   fuente: josue-13
+- fecha: '2026-09-29'
+  cambio: 'La relación con Sehón estaba al revés: es su vasallo, no su señor (Jos 13:21 y su nota).'
+  fuente: josue-13
 consultado: '2026-09-29'
 estado: verificado
 relaciones:
@@ -39,8 +42,8 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: sehon
-  relacion: señor
-  relacion_inversa: vasallo
+  relacion: vasallo
+  relacion_inversa: señor
   deducido: false
   fuentes:
   - josue-13
