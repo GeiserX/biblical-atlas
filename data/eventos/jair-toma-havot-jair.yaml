@@ -16,6 +16,7 @@ orden_relato:
   orden: 32041
 lugares:
 - havot-jair
+- argob
 personas:
 - jair-hijo-de-segub
 pasajes:
@@ -30,6 +31,8 @@ fuentes:
 - it-jair
 - si-3
 - it-basan
+- deuteronomio-3
+- it-argob
 enlaces:
 - titulo: Números 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32

@@ -114,6 +114,24 @@ fuentes:
 - numeros-34
 - numeros-35
 - numeros-36
+- deuteronomio-1
+- deuteronomio-2
+- deuteronomio-3
+- deuteronomio-4
+- deuteronomio-5
+- deuteronomio-6
+- deuteronomio-7
+- deuteronomio-8
+- deuteronomio-9
+- deuteronomio-10
+- deuteronomio-18
+- it-profeta
+- deuteronomio-27
+- deuteronomio-29
+- deuteronomio-30
+- deuteronomio-31
+- deuteronomio-32
+- deuteronomio-33
 enlaces:
 - titulo: 'Perspicacia: «Moisés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
@@ -136,6 +154,7 @@ relaciones:
   - numeros-20
   - numeros-26
   - numeros-27
+  - deuteronomio-32
   razon: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
   estado: verificado
 - tipo: pariente
@@ -199,6 +218,7 @@ relaciones:
   fuentes:
   - it-moises
   - deuteronomio-34
+  - deuteronomio-32
   razon: 'Perspicacia «Moisés», párr. 30: en 1473 a.e.c. subió al monte Nebo, vio la Tierra Prometida y murió (Dt 34:1-5).'
   estado: verificado
 - tipo: pariente
@@ -278,6 +298,17 @@ relaciones:
   - it-sinai
   razon: 'Nú 3:14, 38: acampaba al este del tabernáculo, en el desierto de Sinaí, donde Israel pasó casi un año, de 1513 a
     1512 a.e.c. (el estudio 3 y Perspicacia «Sinaí»).'
+  estado: verificado
+- tipo: vivio_en
+  lugar: llanuras-deserticas-de-moab
+  deducido: false
+  fuentes:
+  - deuteronomio-1
+  - it-moab
+  - deuteronomio-34
+  - it-moises
+  razon: 'Dt 1:1, 5: Moisés habla a Israel en la tierra de Moab, junto al Jordán; Perspicacia «Moab» pone allí sus últimos
+    discursos.'
   estado: verificado
 perspicacia: '1200003118'
 historial:

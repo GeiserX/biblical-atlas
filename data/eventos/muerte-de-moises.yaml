@@ -11,17 +11,36 @@ fecha:
   texto: 1473 a.e.c.
 lugares:
 - monte-nebo
+- pisga
+- moab
+- bet-peor
+- llanuras-deserticas-de-moab
 personas:
 - moises
 pasajes:
 - Dt 34:1-8
-resumen: En las llanuras de Moab, Moisés termina Deuteronomio y renueva el pacto. Luego sube al monte Nebo, ve la tierra
-  desde allí y muere.
-razon: El cuadro del estudio 3 pone en 1473 a.e.c. el pacto de Moab, la escritura de Deuteronomio y la muerte de Moisés
-  en el Nebo.
+resumen: Desde la cima de Pisgá, en el Nebo, Jehová muestra a Moisés la tierra prometida a los patriarcas. Muere allí, en
+  Moab, a los 120 años; Jehová lo entierra frente a Bet-Peor e Israel lo llora 30 días.
+razon: 'El estudio 3 pone su muerte en el Nebo en 1473 a.e.c. Perspicacia «Moisés», párr. 32 y 33: Jehová lo enterró donde
+  nunca se ha hallado, e Israel guardó 30 días de duelo. Va tras Números en su serie.'
 fuentes:
 - si-3
 - deuteronomio-34
+- it-moises
+- it-nebo
+- it-pisga
+- it-bet-peor
 buscar: muerte de Moisés
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen cuenta ahora lo que narra Dt 34:1-8 (la vista desde Pisgá, la edad, el entierro y el duelo); el pacto
+    de Moab tiene su propio suceso.
+  fuente: deuteronomio-34
+- fecha: '2026-09-29'
+  cambio: La razón añade el entierro y el duelo de Perspicacia «Moisés», que ahora recoge el resumen.
+  fuente: it-moises
+orden_relato:
+  serie: numeros
+  orden: 134001
+consultado: '2026-09-29'
 estado: verificado

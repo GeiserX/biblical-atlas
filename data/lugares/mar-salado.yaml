@@ -5,6 +5,8 @@ nombres:
 - nombre: Mar Salado
 - nombre: Mar Muerto
   nota: Nombre de hoy, que da la nota de Gé 14:3; según Perspicacia no se usó hasta el siglo II e.c.
+- nombre: Mar del Arabá
+  nota: Así lo llaman Dt 3:17 y 4:49, por la gran fosa del Arabá en la que está.
 tipo: mar
 lat: 31.5
 lon: 35.5
@@ -21,6 +23,9 @@ fuentes:
 - openbible-geo
 - genesis-14
 - numeros-34
+- deuteronomio-3
+- deuteronomio-4
+- it-araba
 enlaces:
 - titulo: 'Perspicacia: «Mar Salado»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813
