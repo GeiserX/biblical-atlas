@@ -45,7 +45,7 @@ Un tramo es una unidad de sentido: una escena, un discurso, una lista, un poema.
 - Jehová no lleva ficha: el atlas sitúa personas en la tierra y en el tiempo. Tampoco va en `menciona`.
 - Los personajes de una parábola, una alegoría o una visión (el hombre rico y Lázaro, Oholá y Oholibá) no son personas. Van en la `nota` del tramo.
 - Un pueblo o una tribu (moabitas, levitas, fariseos) no es una persona. Su territorio, si tiene nombre, es un lugar.
-- Alguien sin nombre («el faraón», «el eunuco etíope») no lleva ficha, salvo que jw.org le dé nombre.
+- Alguien sin nombre («el faraón», «el eunuco etíope») no lleva ficha, salvo que jw.org le dé nombre. Una referencia marginal que remite a otro pasaje no le da nombre: si el tramo la recoge, va en su `nota`, no en `menciona`.
 - Los ángeles con nombre y Satanás llevan ficha cuando actúan en un momento y un lugar del relato, como ya la tiene Gabriel.
 
 **Nombres que no son personas ni lugares.** La misma tabla vale para la sección 5:

@@ -33,15 +33,15 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Job](../../../data/cobertura/job.yaml) | 42 de 42 | 1070 de 1070 | 100 % |
 | [Salmos](../../../data/cobertura/salmos.yaml) | 150 de 150 | 2461 de 2461 | 100 % |
 | [Proverbios](../../../data/cobertura/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
-| Eclesiastés | 0 de 12 | 0 de 222 | 0 % |
-| El Cantar de los Cantares | 0 de 8 | 0 de 117 | 0 % |
+| [Eclesiastés](../../../data/cobertura/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
+| [El Cantar de los Cantares](../../../data/cobertura/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
 | Isaías | 0 de 66 | 0 de 1292 | 0 % |
 | Jeremías | 0 de 52 | 0 de 1364 | 0 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
-| Oseas | 0 de 14 | 0 de 197 | 0 % |
-| Joel | 0 de 3 | 0 de 73 | 0 % |
+| [Oseas](../../../data/cobertura/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
+| [Joel](../../../data/cobertura/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
 | Amós | 0 de 9 | 0 de 146 | 0 % |
 | Abdías | 0 de 1 | 0 de 21 | 0 % |
 | Jonás | 0 de 4 | 0 de 48 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 448 de 1189 | 12302 de 31062 | 40 % |
+| **Total** | 485 de 1189 | 12911 de 31062 | 42 % |
 
 ## Capítulos empezados
 
