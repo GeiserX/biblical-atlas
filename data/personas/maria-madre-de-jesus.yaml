@@ -26,6 +26,8 @@ fuentes:
 - lucas-2
 - lucas-3
 - lucas-8
+- juan-2
+- juan-19
 relaciones:
 - tipo: pariente
   persona: jose-esposo-de-maria
@@ -97,6 +99,13 @@ relaciones:
   - lucas-3
   - it-heli
   razon: 'Perspicacia «Helí» y la nota de Lu 3:23: Lucas sigue la línea de María, y Helí era su padre.'
+  estado: verificado
+- tipo: acompana
+  persona: juan-apostol
+  deducido: true
+  fuentes:
+  - juan-19
+  razon: 'Jn 19:26, 27: Jesús la confía al discípulo que amaba, que la acoge en su casa; la nota del v. 27 dice que era Juan.'
   estado: verificado
 enlaces:
 - titulo: 'Perspicacia: «María»'

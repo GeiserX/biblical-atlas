@@ -5,6 +5,8 @@ nombres:
 - nombre: Tadeo
 - nombre: Judas, hijo de Santiago
   nota: Así lo llaman Lu 6:16 y Hch 1:13.
+- nombre: Judas
+  nota: Así lo llama Jn 14:22, que lo distingue del Iscariote.
 desambiguacion: El apóstol Judas hijo de Santiago, «no el Iscariote» (Jn 14:22).
 no_confundir_con:
 - judas-iscariote
@@ -18,6 +20,7 @@ fuentes:
 - lucas-6
 - mateo-10
 - marcos-3
+- juan-14
 relaciones:
 - tipo: acompana
   persona: jesus
@@ -27,6 +30,7 @@ relaciones:
   - mateo-10
   - marcos-3
   - lucas-6
+  - juan-14
   razon: Mt 10:3.
   estado: verificado
 - tipo: pariente

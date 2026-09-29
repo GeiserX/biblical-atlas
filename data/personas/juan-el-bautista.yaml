@@ -38,6 +38,9 @@ fuentes:
 - lucas-9
 - lucas-11
 - lucas-20
+- juan-1
+- juan-3
+- juan-10
 relaciones:
 - tipo: pariente
   persona: zacarias-padre-de-juan

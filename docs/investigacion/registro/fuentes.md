@@ -485,6 +485,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-codorniz | [Codorniz](https://wol.jw.org/es/wol/d/r4/lp-s/1200003598) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-colosas | [Colosas](https://wol.jw.org/es/wol/d/r4/lp-s/1200001010) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-colosenses | [Colosenses, Carta a los](https://wol.jw.org/es/wol/d/r4/lp-s/1200001011) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-columnata-de-salomon | [Columnata de Salomón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001008) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-condicion-de-fugitivo | [Condición de fugitivo, Tierra de la](https://wol.jw.org/es/wol/d/r4/lp-s/1200001574) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-corazin | [Corazín](https://wol.jw.org/es/wol/d/r4/lp-s/1200000965) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-core | [Coré](https://wol.jw.org/es/wol/d/r4/lp-s/1200002648) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -575,6 +576,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-elon | [Elón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001333) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elqana | [Elqaná](https://wol.jw.org/es/wol/d/r4/lp-s/1200001326) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-emaus | [Emaús](https://wol.jw.org/es/wol/d/r4/lp-s/1200001353) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-empedrado | [Empedrado, El](https://wol.jw.org/es/wol/d/r4/lp-s/1200004237) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-en-dor | [En-dor](https://wol.jw.org/es/wol/d/r4/lp-s/1200001359) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-en-guedi | [En-guedí](https://wol.jw.org/es/wol/d/r4/lp-s/1200001365) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-enaim | [Enaim](https://wol.jw.org/es/wol/d/r4/lp-s/1200001354) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -636,6 +638,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-filistea | [Filistea, filisteos](https://wol.jw.org/es/wol/d/r4/lp-s/1200003469) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-finehas | [Finehás](https://wol.jw.org/es/wol/d/r4/lp-s/1200003472) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-frigia | [Frigia](https://wol.jw.org/es/wol/d/r4/lp-s/1200003477) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-fuente-de-jacob | [Fuente de Jacob](https://wol.jw.org/es/wol/d/r4/lp-s/1200002280) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-gabaon | [Gabaón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001682) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-gabriel | [Gabriel](https://wol.jw.org/es/wol/d/r4/lp-s/1200001582) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-gad | [Gad](https://wol.jw.org/es/wol/d/r4/lp-s/1200001583) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -670,6 +673,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-guedalias | [Guedalías](https://wol.jw.org/es/wol/d/r4/lp-s/1200001632) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-guera-i | [Guerá, I](https://wol.jw.org/es/wol/d/r4/lp-s/1200001656) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guerar | [Guerar](https://wol.jw.org/es/wol/d/r4/lp-s/1200001658) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-guerizim | [Guerizim, Monte](https://wol.jw.org/es/wol/d/r4/lp-s/1200001661) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guersom | [Guersom](https://wol.jw.org/es/wol/d/r4/lp-s/1200001662) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guerson | [Guersón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001663) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-gueter | [Guéter](https://wol.jw.org/es/wol/d/r4/lp-s/1200001670) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1039,6 +1043,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-proverbios-libro | [Proverbios, Libro de](https://wol.jw.org/es/wol/d/r4/lp-s/1200003569) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-pua | [Puá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003574) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-publio | [Publio](https://wol.jw.org/es/wol/d/r4/lp-s/1200003577) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-puerta | [Puerta, paso de entrada](https://wol.jw.org/es/wol/d/r4/lp-s/1200001617) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-purim | [Purim](https://wol.jw.org/es/wol/d/r4/lp-s/1200003588) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-put | [Put](https://wol.jw.org/es/wol/d/r4/lp-s/1200003591) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-puteoli | [Puteoli](https://wol.jw.org/es/wol/d/r4/lp-s/1200003592) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
@@ -1095,6 +1100,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-safira | [Safira](https://wol.jw.org/es/wol/d/r4/lp-s/1200003835) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-salamina | [Salamina](https://wol.jw.org/es/wol/d/r4/lp-s/1200003798) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-salem | [Salem](https://wol.jw.org/es/wol/d/r4/lp-s/1200003800) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-salim | [Salim](https://wol.jw.org/es/wol/d/r4/lp-s/1200003801) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-salmanasar | [Salmanasar](https://wol.jw.org/es/wol/d/r4/lp-s/1200003936) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-salmon | [Salmón](https://wol.jw.org/es/wol/d/r4/lp-s/1200003806) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-salmone | [Salmone](https://wol.jw.org/es/wol/d/r4/lp-s/1200003807) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
@@ -1461,6 +1467,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | jy-cap-66 | [La Fiesta de los Tabernáculos en Jerusalén](https://wol.jw.org/es/wol/d/r4/lp-s/1102014669) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |
 | jy-cap-67 | [“¡Nunca ha hablado así ningún hombre!”](https://wol.jw.org/es/wol/d/r4/lp-s/1102014670) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |
 | jy-cap-68 | [El Hijo de Dios es “la luz del mundo”](https://wol.jw.org/es/wol/d/r4/lp-s/1102014671) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |
+| jy-cap-69 | [¿Hijos de Abrahán, o del Diablo?](https://wol.jw.org/es/wol/d/r4/lp-s/1102014799) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-29 |
 | jy-cap-7 | [Unos astrólogos van a ver a Jesús](https://wol.jw.org/es/wol/d/r4/lp-s/1102014610) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |
 | jy-cap-70 | [Jesús cura a un hombre que nació ciego](https://wol.jw.org/es/wol/d/r4/lp-s/1102014790) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |
 | jy-cap-71 | [Los fariseos interrogan al hombre que nació ciego](https://wol.jw.org/es/wol/d/r4/lp-s/1102014791) | Jesús: el camino, la verdad y la vida | 1 | sin dato | 2026-09-28 |

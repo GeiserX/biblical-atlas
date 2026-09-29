@@ -4,7 +4,7 @@ nombre: Estanque de Siloam del siglo I
 lugar_hallazgo: estanque-de-siloam
 relaciona:
 - lugar:estanque-de-siloam
-- evento:luz-del-mundo-y-ciego-de-nacimiento
+- evento:sana-al-ciego-de-nacimiento
 fecha_objeto:
   desde: 1
   hasta: 100
@@ -19,5 +19,9 @@ razon: Perspicacia «Siloam» (párr. 2) describe la excavación y la fecha en e
 fuentes:
 - it-siloam
 - juan-9
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: La curación del ciego de Jn 9 tiene ahora su propio suceso, sana-al-ciego-de-nacimiento.
+  fuente: juan-9
+consultado: '2026-09-29'
 estado: verificado

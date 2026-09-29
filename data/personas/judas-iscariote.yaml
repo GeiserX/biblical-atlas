@@ -25,7 +25,21 @@ relaciones:
   - marcos-3
   - marcos-14
   - lucas-22
+  - juan-6
+  - juan-12
+  - juan-13
   razon: Lu 6:16 lo nombra entre los doce apóstoles, el último.
+  estado: verificado
+- tipo: pariente
+  persona: simon-iscariote
+  relacion: padre
+  deducido: false
+  fuentes:
+  - juan-6
+  - it-simon
+  - it-judas
+  - juan-13
+  razon: Jn 6:71 lo llama Judas hijo de Simón Iscariote.
   estado: verificado
 resumen: Apóstol, hijo de Simón Iscariote, que guardaba la caja del dinero y robaba de ella. Vendió a Jesús por
   30 piezas de plata, lo entregó en Getsemaní y después se quitó la vida.
@@ -40,6 +54,11 @@ fuentes:
 - marcos-14
 - lucas-6
 - lucas-22
+- juan-6
+- it-simon
+- juan-13
+- juan-17
+- juan-18
 enlaces:
 - titulo: 'Perspicacia: «Judas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002541

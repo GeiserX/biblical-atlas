@@ -18,6 +18,9 @@ nombres:
 - nombre: Torre de Siloam
   nota: Torre de la ciudad que cayó y mató a 18 personas (Lu 13:4). Perspicacia «Siloam» no conoce su sitio exacto; la nota
     de estudio la pone probablemente cerca del estanque de Siloam.
+- nombre: Puerta de las Ovejas
+  nota: Puerta del norte, cerca del templo, junto al estanque de Betzata (Jn 5:2). Perspicacia ve probable que sea la que
+    reconstruyeron los sacerdotes con Nehemías (Ne 3:1) u otra en el mismo sitio.
 tipo: ciudad
 lat: 31.776667
 lon: 35.234167
@@ -65,6 +68,14 @@ fuentes:
 - lucas-21
 - lucas-22
 - lucas-24
+- juan-2
+- juan-5
+- it-puerta
+- juan-7
+- juan-9
+- juan-10
+- juan-11
+- juan-12
 enlaces:
 - titulo: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

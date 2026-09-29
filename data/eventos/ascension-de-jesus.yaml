@@ -45,7 +45,7 @@ fuentes:
 - it-betania
 orden_relato:
   serie: a7
-  orden: 131
+  orden: 133
 enlaces:
 - titulo: 'Perspicacia: «Ascensión»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000402
@@ -58,5 +58,9 @@ historial:
 - fecha: '2026-09-29'
   cambio: orden 126 pasa a 131, tras las apariciones renumeradas (125-130).
   fuente: tnm-a7-h
+- fecha: '2026-09-29'
+  cambio: orden 131 pasa a 133, tras las tres apariciones que siguen al 16 de nisán, ahora numeradas 130-132 en el orden de
+    Jn 21:14 y de jy, cap. 135-137.
+  fuente: juan-21
 consultado: '2026-09-29'
 estado: verificado

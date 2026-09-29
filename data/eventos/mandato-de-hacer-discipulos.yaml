@@ -40,7 +40,7 @@ fuentes:
 - jy-cap-137
 orden_relato:
   serie: a7
-  orden: 130
+  orden: 132
 buscar: En Galilea manda hacer discípulos
 historial:
 - fecha: '2026-09-29'
@@ -51,5 +51,9 @@ historial:
   cambio: orden 125 pasa a 130 para dejar sitio a las cinco apariciones del 16 de nisán (125-129), que van tras la resurrección
     (124).
   fuente: tnm-a7-h
+- fecha: '2026-09-29'
+  cambio: 'orden 130 pasa a 132: Jn 21:14 hace de la aparición junto al mar la tercera al grupo, tras las dos de Jn 20, y
+    jy la pone antes del mandato (cap. 136 y 137).'
+  fuente: juan-21
 consultado: '2026-09-29'
 estado: verificado

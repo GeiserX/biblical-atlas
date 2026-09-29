@@ -13,6 +13,7 @@ fecha:
     mes: nisan
     dia: 14
 lugares:
+- empedrado
 - jerusalen
 personas:
 - jesus
@@ -25,7 +26,8 @@ pasajes:
 - Jn 18:39-19:16
 resumen: Pilato ofrece soltar a Jesús, pero la multitud pide a Barrabás. Tras hacerlo azotar, Pilato lo entrega
   para que lo ejecuten en un madero.
-razon: La tabla A7-H da el día y el lugar. Perspicacia «Pilato» (párr. 9-10) y «Barrabás».
+razon: La tabla A7-H da el día y el lugar. Perspicacia «Pilato» (párr. 9-10) y «Barrabás». Pilato ya estaba en el tribunal
+  (Mt 27:19), que Jn 19:13 y Perspicacia «Empedrado, El» ponen en el Empedrado.
 fuentes:
 - tnm-a7-h
 - mateo-27
@@ -38,9 +40,18 @@ fuentes:
 - jy-cap-130
 - it-pilato
 - it-barrabas
+- it-empedrado
 orden_relato:
   serie: a7
   orden: 120
 buscar: Prefieren a Barrabás
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El Empedrado va primero: Mt 27:19 pone a Pilato en el tribunal durante la elección de Barrabás y Jn 19:13 sitúa
+    ese tribunal allí. Como su ubicación es incierta, el suceso ya no sitúa a nadie.'
+  fuente: juan-19
+- fecha: '2026-09-29'
+  cambio: La razón explica por qué el primer lugar es el Empedrado.
+  fuente: juan-19
+consultado: '2026-09-29'
 estado: verificado

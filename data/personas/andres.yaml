@@ -16,6 +16,8 @@ fuentes:
 - marcos-3
 - marcos-13
 - lucas-6
+- juan-6
+- juan-12
 relaciones:
 - tipo: pariente
   persona: pedro
@@ -26,6 +28,7 @@ relaciones:
   - it-andres
   - mateo-10
   - lucas-6
+  - juan-6
   razon: Jn 1:40 lo llama hermano de Simón Pedro.
   estado: verificado
 - tipo: nacio_en
@@ -73,6 +76,8 @@ relaciones:
   - marcos-3
   - marcos-13
   - lucas-6
+  - juan-1
+  - juan-6
   razon: Mt 10:2 lo nombra entre los doce apóstoles.
   estado: verificado
 - tipo: pariente

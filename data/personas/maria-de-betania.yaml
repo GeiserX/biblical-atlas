@@ -35,6 +35,16 @@ relaciones:
   - juan-11
   razon: Jn 11:1 llama a Betania la aldea de María y de Marta.
   estado: verificado
+- tipo: acompana
+  persona: jesus
+  relacion: amigo
+  deducido: true
+  fuentes:
+  - juan-11
+  - it-betania
+  razon: Jn 11:5 cuenta el cariño de Jesús por ella y por sus dos hermanos; Perspicacia «Betania», núm. 1, párr. 2, llama
+    a los tres sus amigos íntimos.
+  estado: verificado
 resumen: Hermana de Marta y de Lázaro. Escuchaba a Jesús sentada a sus pies y, el 9 de nisán de 33, derramó sobre
   él un aceite de nardo muy costoso.
 razon: Perspicacia «María», apartado 2 (párr. 19-22); Lu 10:39 y Jn 12:3.
@@ -44,6 +54,7 @@ fuentes:
 - juan-12
 - mateo-26
 - marcos-14
+- juan-11
 enlaces:
 - titulo: 'Perspicacia: «María»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002918

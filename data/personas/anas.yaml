@@ -11,15 +11,7 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 6 a c. 15 e.c.
-relaciones:
-- tipo: pariente
-  persona: caifas
-  relacion: yerno
-  deducido: false
-  fuentes:
-  - juan-18
-  razon: Jn 18:13 lo llama suegro de Caifás.
-  estado: verificado
+relaciones: []
 resumen: 'Sumo sacerdote de c. 6 a c. 15 e.c. Roma lo destituyó, pero conservó mucho poder: cinco hijos y su yerno
   Caifás tuvieron el cargo. Interrogó a Jesús antes de mandarlo a Caifás.'
 razon: Perspicacia «Anás» (párr. 2) da las fechas y su influencia; Jn 18:13, 24 narra el interrogatorio.
@@ -34,5 +26,11 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/18
   tipo: biblia
 buscar: Anás
-consultado: '2026-09-28'
+perspicacia: '1200000284'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Sale la relación con Caifás como yerno: repetía al revés la de la ficha de Caifás (suegro), y entre generaciones
+    la relación va solo en la del más joven.'
+  fuente: juan-18
+consultado: '2026-09-29'
 estado: verificado
