@@ -38,7 +38,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El día de la salida.** Nú 33:3 dice que salieron de Ramesés el día 15. `exodo` se queda en el 14 de nisán: Perspicacia «Éxodo» pone el comienzo de la marcha hacia Sucot antes de que acabara el 14.
 - **Nadab y Abihú.** Levítico creó `muerte-de-nadab-y-abihu` (Le 10:1-11, con la ley del vino que sigue a la muerte) y la relación `murio_en` `desierto-de-sinai` de los dos, con `deducido: true`. Nú 3:4 y 26:61 añaden su pasaje al suceso; Nú 3:4 nombra el desierto de Sinaí, así que `numeros-3` va también en esas dos relaciones.
 - **Aarón y Eleazar.** A `eleazar-hijo-de-aaron` le falta la relación `sucede_a` `aaron` (Nú 20:25-28). No hay periodo del sumo sacerdocio de Aarón: si Números lo crea, empieza en `instalacion-del-sacerdocio` (Le 8, abib de 1512 a.e.c.) y acaba con su muerte en el monte Hor.
-- **Las leyes de Levítico.** Sus sucesos llevan la serie `levitico` y la fecha abib (nisán) de 1512 a.e.c., con `aprox: true` salvo los de Le 8-10, que tienen día. Nú 1:1 es el día 1 del mes segundo, así que los sucesos de Números van después.
+- **Las leyes de Levítico.** Sus sucesos llevan la serie `levitico` y la fecha abib (nisán) de 1512 a.e.c., todos con `aprox: true`; los de Le 8-10 llevan además el día en `fecha.detalle`. Nú 1:1 es el día 1 del mes segundo, así que los sucesos de Números van después.
 - **Cohat.** El `resumen` de `core-hijo-de-izhar` escribe «Qohat», la grafía de Perspicacia; la TNM escribe Cohat (Éx 6:16). Lo corrige Números, con su `historial`, cuando lea Nú 16.
 
 ## Para Deuteronomio
