@@ -235,8 +235,8 @@ relaciones:
   estado: verificado
 - tipo: se_aparece_a
   persona: esteban
-  relacion: Esteban lo ve en el cielo, en una visión
-  relacion_inversa: lo ve en una visión, de pie a la derecha de Dios
+  relacion: se le muestra en una visión, de pie a la derecha de Dios
+  relacion_inversa: lo ve en el cielo, en una visión
   deducido: false
   fuentes:
   - hechos-7
