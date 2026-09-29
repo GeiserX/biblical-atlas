@@ -113,7 +113,7 @@ capitulos:
     estado: completo
     revisado: 2026-09-29
     tramos:
-    - {v: 1-8, tipo: narracion, entidades: [evento:espigas-en-sabado, persona:jesus], menciona: [persona:david], nota: "Los fariseos acusan a los discípulos de trabajar en sábado. Jesús recuerda los panes que comió David (1Sa 21:1-6; lo cuenta Samuel, sin evento aún) y el trabajo de los sacerdotes en el templo."}
+    - {v: 1-8, tipo: narracion, entidades: [evento:espigas-en-sabado, persona:jesus, evento:david-recibe-el-pan-santo-en-nob], menciona: [persona:david], nota: "Los fariseos acusan a los discípulos de trabajar en sábado. Jesús recuerda los panes que comió David (1Sa 21:1-6) y el trabajo de los sacerdotes en el templo."}
     - {v: 9-14, tipo: narracion, entidades: [evento:mano-paralizada-en-sabado, persona:jesus], nota: "En una sinagoga sin nombre cura la mano de un hombre y razona con el ejemplo de la oveja caída en un hoyo. Los fariseos traman matarlo."}
     - {v: 15-21, tipo: narracion, entidades: [evento:mano-paralizada-en-sabado, persona:jesus], menciona: [persona:isaias], nota: "Se aparta, cura a los que lo siguen y les pide silencio. Mateo cita Isaías 42:1-4 sobre el siervo elegido que no gritará ni romperá la caña quebrada."}
     - {v: 22-24, tipo: narracion, entidades: [evento:pecado-sin-perdon, persona:jesus], menciona: [persona:david, persona:satanas], nota: "Cura a un endemoniado ciego y mudo, sin nombre. La gente pregunta si es el Hijo de David; los fariseos lo atribuyen a Belcebú, nombre que la nota aplica a Satanás."}

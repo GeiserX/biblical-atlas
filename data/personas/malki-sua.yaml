@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: malki-sua
+nombre: Malki-Súa
+nombres:
+- nombre: Malki-Súa
+perspicacia: '1200002868'
+resumen: Hijo del rey Saúl. Murió en Guilboa el mismo día que su padre y sus hermanos Jonatán y Abinadab, peleando con los
+  filisteos.
+razon: Perspicacia «Malki-súa»; 1Sa 14:49.
+fuentes:
+- it-malki-sua
+- 1-samuel-14
+- 1-samuel-31
+enlaces:
+- titulo: 'Perspicacia: «Malki-súa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002868
+  tipo: perspicacia
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+- titulo: 1 Samuel 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/31
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: saul
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-14
+  - it-malki-sua
+  - 1-samuel-31
+  razon: 1Sa 14:49 lo cuenta entre los hijos de Saúl.
+  estado: verificado
+- tipo: murio_en
+  lugar: monte-guilboa
+  deducido: false
+  fuentes:
+  - 1-samuel-31
+  - it-guilboa
+  - it-jonatan
+  razon: '1Sa 31:1, 2, 8: los filisteos lo mataron en el monte Guilboa, en la batalla de 1078 (Perspicacia «Jonatán», núm.
+    2).'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

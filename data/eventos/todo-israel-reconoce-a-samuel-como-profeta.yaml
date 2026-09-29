@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: todo-israel-reconoce-a-samuel-como-profeta
+titulo: Todo Israel reconoce a Samuel como profeta de Jehová
+fecha:
+  desde: -1179
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: antes de la batalla de Ebenézer en que muere Elí)'
+orden_relato:
+  serie: 1-samuel
+  orden: 3019
+lugares:
+- silo
+personas:
+- samuel
+pasajes:
+- 1Sa 3:19-21
+- 1Sa 4:1
+resumen: Samuel crece y Jehová hace que se cumpla todo lo que dice. Desde Dan hasta Beer-Seba el pueblo entiende que es profeta
+  de Jehová, que sigue revelándose en Siló, y su palabra llega a todo Israel.
+razon: '1Sa 3:19-4:1; Perspicacia «Samuel», párr. 4. Fecha: entre c. 1180, inicio de 1 Samuel (Tabla de los libros), y la
+  unción de Saúl en 1117 (estudio 3).'
+fuentes:
+- 1-samuel-3
+- 1-samuel-4
+- it-samuel
+- tnm-tabla
+- si-3
+enlaces:
+- titulo: 1 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/3
+  tipo: biblia
+- titulo: 'Perspicacia: «Samuel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003824
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

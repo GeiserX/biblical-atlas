@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bezec-cerca-de-siquem
+nombre: Bézec
+nombres:
+- nombre: Bézec
+  nota: La de 1Sa 11:8 (Perspicacia «Bézeq», núm. 2); no la ciudad de Adoni-Bézec, que es la núm. 1 y tiene ficha propia.
+- nombre: Bézeq
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.36884
+lon: 35.39736
+precision: incierto
+coord_fuente: openbible:a206291
+coord_url: https://www.openbible.info/geo/ancient/a206291/bezek-2
+coord_nota: Khirbet Ibziq, primera identificación de OpenBible. Perspicacia se inclina por ese sitio porque cae a una noche
+  de marcha de Jabés, pero no lo da por seguro.
+resumen: Lugar donde Saúl reunió y contó a los hombres de Israel y de Judá antes de ir a salvar Jabés de Galaad. Se propone
+  Khirbet Ibziq, unos 21 km al nordeste de Siquem, con un monte al oeste.
+razon: 'Perspicacia «Bézeq», núm. 2; 1Sa 11:8-11. No es la Bézeq de Adoni-Bézec (núm. 1). OpenBible: solo el punto.'
+fuentes:
+- it-bezeq
+- openbible-geo
+- 1-samuel-11
+enlaces:
+- titulo: 'Perspicacia: «Bézeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000722
+  tipo: perspicacia
+- titulo: 1 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/11
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahinoam-esposa-de-david
+nombre: Ahinoam
+nombres:
+- nombre: Ahinoam
+perspicacia: 1200000161#2
+desambiguacion: La esposa de David, de Jezreel; no Ahinoam hija de Ahimáaz, la esposa de Saúl.
+no_confundir_con:
+- ahinoam-hija-de-ahimaaz
+resumen: Mujer de Jezreel con quien David se casó antes que con Abigaíl. Fue con él a Filistea, la rescataron de los amalequitas
+  que la habían capturado y en Hebrón le dio a David su primogénito, Amnón.
+razon: Perspicacia «Ahinoam», núm. 2; 1Sa 25:43.
+fuentes:
+- it-ahinoam
+- 1-samuel-25
+- 1-samuel-27
+- 1-samuel-30
+enlaces:
+- titulo: 'Perspicacia: «Ahinoam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000161
+  tipo: perspicacia
+- titulo: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  tipo: biblia
+- titulo: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: jezreel-de-juda
+  deducido: true
+  fuentes:
+  - 1-samuel-25
+  - it-jezreel
+  - 1-samuel-27
+  - 1-samuel-30
+  razon: '1Sa 25:43: era de Jezreel. La referencia remite a la Jezreel de la montaña de Judá, y Perspicacia «Jezreel», núm.
+    3, lo da como probable.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gat
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-ahinoam
+  razon: '1Sa 27:3: las dos esposas de David viven con él en Gat.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ziclag
+  deducido: false
+  fuentes:
+  - 1-samuel-30
+  - it-ahinoam
+  razon: '1Sa 30:1-5: vivía en Ziclag con David cuando los amalequitas la llevaron cautiva.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

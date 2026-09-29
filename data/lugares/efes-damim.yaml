@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: efes-damim
+nombre: Efes-Damim
+nombres:
+- nombre: Efes-Damim
+- nombre: Pas-Damim
+  nota: Nombre de 1Cr 11:13; Perspicacia «Efes-damim» cree que es el mismo lugar.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Entre Socó y Azecá, en el valle de Elá
+  geometria:
+    tipo: zona
+    lat: 31.691213
+    lon: 34.955298
+    radio_km: 3
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-efes-damim
+  - it-soco
+  - it-azeqa
+  - openbible-geo
+  razon: Perspicacia lo sitúa entre Socó y Azecá y añade que hoy no se conoce el sitio exacto.
+  nota: 'Centro: punto medio entre los puntos de Socó y Azecá en OpenBible. Radio nuestro.'
+  coord_fuente: calculo
+resumen: Campamento filisteo situado entre Socó y Azecá; desde él Goliat salía a desafiar a Israel. Hoy se ignora su sitio
+  exacto.
+razon: Perspicacia «Efes-damim»; 1Sa 17:1, 4-10.
+fuentes:
+- it-efes-damim
+- openbible-geo
+- 1-samuel-17
+enlaces:
+- titulo: 'Perspicacia: «Efes-damim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001385
+  tipo: perspicacia
+- titulo: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

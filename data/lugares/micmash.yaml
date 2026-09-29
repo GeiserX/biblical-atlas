@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: micmash
+nombre: Micmash
+nombres:
+- nombre: Micmash
+- nombre: Micmás
+  nota: La otra forma del nombre que recoge el título de Perspicacia.
+- nombre: Desfiladero de Micmash
+  nota: El paso junto a la ciudad donde se apostaron los filisteos (1Sa 13:23); Perspicacia cree que es el Wadi Suweinit.
+tipo: ciudad
+lat: 31.872817
+lon: 35.276858
+precision: punto
+coord_fuente: openbible:adea06c
+coord_url: https://www.openbible.info/geo/ancient/adea06c/michmash
+coord_nota: Punto de OpenBible en Mukhmas, el sitio con que la identifica Perspicacia.
+resumen: Ciudad de Benjamín en una colina a 11 km de Jerusalén, hacia el norte, separada de Gueba por un barranco hondo. Allí
+  acamparon los filisteos contra Saúl, y allí empezó su derrota a manos de Jonatán.
+razon: 'Perspicacia «Micmás, Micmash», párr. 1 a 5; 1Sa 13:2, 5, 23; 14:31. OpenBible: solo el punto.'
+fuentes:
+- it-micmas
+- openbible-geo
+- 1-samuel-13
+- 1-samuel-14
+enlaces:
+- titulo: 'Perspicacia: «Micmás, Micmash»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003037
+  tipo: perspicacia
+- titulo: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

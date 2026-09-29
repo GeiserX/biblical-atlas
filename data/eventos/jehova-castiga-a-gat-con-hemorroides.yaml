@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-castiga-a-gat-con-hemorroides
+titulo: 'El Arca en Gat: Jehová castiga la ciudad'
+fecha:
+  desde: -1179
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1180 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
+orden_relato:
+  serie: 1-samuel
+  orden: 5008
+lugares:
+- gat
+- asdod
+personas: []
+pasajes:
+- 1Sa 5:8, 9
+resumen: 'Llevan el Arca de Asdod a Gat y allí también se extiende el pánico: Jehová castiga con hemorroides a todos sus habitantes,
+  pequeños y grandes.'
+razon: '1Sa 5:8, 9; Perspicacia «Gat», párr. 4. Fecha: 1 Samuel empieza hacia 1180 (tabla de libros) y Saúl es ungido en 1117
+  (estudio 3); Perspicacia «Quiryat-jearim» pone la vuelta del Arca en el siglo XII.'
+fuentes:
+- 1-samuel-5
+- it-gat
+- it-hemorroides
+- tnm-tabla
+- si-3
+- it-quiryat-jearim
+enlaces:
+- titulo: 1 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/5
+  tipo: biblia
+- titulo: 'Perspicacia: «Gat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001619
+  tipo: perspicacia
+buscar: Arca Gat hemorroides
+consultado: '2026-09-29'
+estado: verificado

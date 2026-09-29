@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-hijo-de-samuel
+nombre: Abías
+nombres:
+- nombre: Abías
+perspicacia: 1200000041#3
+desambiguacion: Segundo hijo del profeta Samuel; no Abías, el rey de Judá, ni el sacerdote que dio nombre a la octava división,
+  ni los demás de Perspicacia.
+no_confundir_con:
+- abias-de-juda
+- abias-de-tiempos-de-david
+resumen: Segundo hijo de Samuel. Con su hermano Joel fue juez en Beer-Seba, pero los dos se dejaron sobornar, y eso llevó
+  a los ancianos a pedir un rey.
+razon: Perspicacia «Abías», núm. 3; 1Sa 8:1-5.
+fuentes:
+- it-abias
+- 1-samuel-8
+enlaces:
+- titulo: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  tipo: perspicacia
+- titulo: 1 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/8
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: samuel
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-8
+  razon: 1Sa 8:2 lo nombra como el segundo hijo de Samuel.
+  estado: verificado
+- tipo: vivio_en
+  lugar: beer-seba
+  deducido: false
+  fuentes:
+  - 1-samuel-8
+  razon: '1Sa 8:2: era juez en Beer-Seba con su hermano.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

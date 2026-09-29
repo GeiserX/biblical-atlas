@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: racal
+nombre: Racal
+nombres:
+- nombre: Racal
+tipo: ciudad
+lat: 31.422876
+lon: 35.132952
+precision: incierto
+coord_fuente: openbible:a446973
+coord_url: https://www.openbible.info/geo/ancient/a446973/racal
+coord_nota: 'Punto de Khirbet el-Kirmil, el de Carmelo: OpenBible sigue a la Septuaginta, que lee Carmelo. Perspicacia no
+  la sitúa y solo dice que algunos hebraístas prefieren esa lectura.'
+resumen: Lugar de Judá al que David envió parte del botín de los amalequitas. La Septuaginta pone Carmelo en su lugar, y hay
+  hebraístas que creen que esa era la lectura original.
+razon: 'Perspicacia «Racal»; 1Sa 30:26, 29. OpenBible: solo el punto.'
+fuentes:
+- it-racal
+- openbible-geo
+- 1-samuel-30
+enlaces:
+- titulo: 'Perspicacia: «Racal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003619
+  tipo: perspicacia
+- titulo: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

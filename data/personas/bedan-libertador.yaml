@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bedan-libertador
+nombre: Bedán
+nombres:
+- nombre: Bedán
+perspicacia: 1200000600#1
+desambiguacion: El libertador que Samuel nombra en 1Sa 12:11 (Perspicacia, núm. 1); no el descendiente de Manasés (núm. 2).
+resumen: Libertador de Israel que Samuel nombra junto a Jerubaal, Jefté y él mismo. No sale en ningún otro pasaje ni fuera
+  de la Biblia. Puede que sea Barac, que es lo que leen la Septuaginta y la Peshitta.
+razon: Perspicacia «Bedán», núm. 1, y «Barac»; 1Sa 12:11. Otros lo toman por el juez Abdón.
+no_afirmamos:
+- 'Que Bedán sea con seguridad Barac: jw.org solo lo da como posible.'
+fuentes:
+- it-bedan
+- it-barac
+- 1-samuel-12
+enlaces:
+- titulo: 'Perspicacia: «Bedán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000600
+  tipo: perspicacia
+- titulo: 1 Samuel 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/12
+  tipo: biblia
+relaciones:
+- tipo: mismo_que
+  persona: barac
+  deducido: true
+  fuentes:
+  - it-bedan
+  - it-barac
+  - 1-samuel-12
+  razon: Perspicacia «Barac» dice que puede ser el Bedán de 1Sa 12:11; el contexto recuerda la opresión de Sísara.
+  estado: pendiente
+consultado: '2026-09-29'
+estado: verificado

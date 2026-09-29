@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: penina
+nombre: Peniná
+nombres:
+- nombre: Peniná
+perspicacia: '1200003429'
+resumen: La otra esposa de Elcaná. Tenía hijos e hijas y año tras año se burlaba de Ana por no tenerlos, sobre todo cuando
+  la familia subía a Siló.
+razon: Perspicacia «Peniná»; 1Sa 1:2-7.
+fuentes:
+- it-penina
+- 1-samuel-1
+enlaces:
+- titulo: 'Perspicacia: «Peniná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003429
+  tipo: perspicacia
+relaciones:
+- tipo: vivio_en
+  lugar: ramataim-zofim
+  deducido: true
+  fuentes:
+  - it-ana
+  - 1-samuel-1
+  razon: 'Perspicacia «Ana», núm. 1: vivía en Ramataim-Zofim con Elcaná y Ana. 1Sa 1:19 solo dice que la familia volvió a
+    Ramá.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

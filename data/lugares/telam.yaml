@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: telam
+nombre: Telam
+nombres:
+- nombre: Telam
+  nota: Lectura de doce manuscritos griegos; el texto hebreo masorético dice «desde hace mucho tiempo».
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Télem, en el sur de Judá
+  geometria:
+    tipo: zona
+    lat: 31.142053
+    lon: 34.91217
+    radio_km: 10
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-telam
+  - it-telem
+  - openbible-geo
+  razon: Perspicacia «Telam» la relaciona, al parecer, con Telaim y con Télem.
+  nota: 'Centro: punto de OpenBible para la Télem de Jos 15:24 (a6ef6a9, https://www.openbible.info/geo/ancient/a6ef6a9/telem).
+    OpenBible no tiene ficha para la Telam de 1Sa 27:8. Radio de 10 km nuestro.'
+  coord_fuente: calculo
+resumen: Sitio que marcaba un extremo del territorio de guesuritas, guirzitas y amalequitas, pueblos que David asaltaba desde
+  Ziclag. Quizá guarde relación con Telaim y con Télem, en el sur de Judá.
+razon: Perspicacia «Telam»; 1Sa 27:8. Sin punto seguro.
+fuentes:
+- it-telam
+- it-telem
+- openbible-geo
+- 1-samuel-27
+enlaces:
+- titulo: 'Perspicacia: «Telam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004349
+  tipo: perspicacia
+- titulo: 1 Samuel 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/27
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

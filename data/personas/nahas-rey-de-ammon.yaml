@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nahas-rey-de-ammon
+nombre: Nahás
+nombres:
+- nombre: Nahás
+perspicacia: 1200003167#1
+desambiguacion: El rey ammonita que sitió Jabés al empezar el reinado de Saúl (Perspicacia, núm. 1); no el padre de Abigail
+  ni el de Sobí (núm. 2 y 3).
+resumen: Rey de los ammonitas cuando Saúl empezó a reinar. Su amenaza empujó a Israel a pedir rey. Sitió Jabés de Galaad y
+  quiso sacar el ojo derecho a sus hombres, pero Saúl deshizo su ejército.
+razon: Perspicacia «Nahás», núm. 1, y «Samuel»; 1Sa 11:1-11; 12:12.
+no_afirmamos:
+- 'Que muriera en la batalla de Jabés: eso lo cuenta Josefo, no la Biblia.'
+- 'Que sea el mismo Nahás que después trató bien a David: Perspicacia ve posible que aquel fuera su hijo y sucesor.'
+fuentes:
+- it-nahas
+- 1-samuel-11
+- 1-samuel-12
+- it-samuel
+enlaces:
+- titulo: 'Perspicacia: «Nahás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003167
+  tipo: perspicacia
+- titulo: 1 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/11
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: ammon
+  deducido: false
+  fuentes:
+  - 1-samuel-11
+  - 1-samuel-12
+  - it-nahas
+  razon: 1Sa 11:1 lo llama el ammonita y 1Sa 12:12 lo presenta como rey de los ammonitas.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

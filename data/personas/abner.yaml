@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abner
+nombre: Abner
+nombres:
+- nombre: Abner
+perspicacia: '1200000057'
+resumen: Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-bóset en Mahanaim; más tarde
+  pactó con David, y Joab lo mató.
+razon: Perspicacia «Abner», párr. 1 a 4; 1Sa 14:50, 51.
+fuentes:
+- it-abner
+- 1-samuel-14
+- 1-samuel-17
+- 1-samuel-20
+- 1-samuel-26
+enlaces:
+- titulo: 'Perspicacia: «Abner»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000057
+  tipo: perspicacia
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+- titulo: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ner
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-14
+  - it-abner
+  - 1-samuel-26
+  razon: '1Sa 14:50, 51: Abner hijo de Ner.'
+  estado: verificado
+- tipo: acompana
+  persona: saul
+  relacion: jefe del ejército de
+  deducido: false
+  fuentes:
+  - 1-samuel-14
+  - it-abner
+  - 1-samuel-17
+  - 1-samuel-26
+  razon: '1Sa 14:50: era el jefe del ejército de Saúl.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

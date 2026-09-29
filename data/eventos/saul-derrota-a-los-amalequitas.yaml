@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-derrota-a-los-amalequitas
+titulo: Saúl derrota a los amalequitas y perdona a Agag
+fecha:
+  desde: -1116
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+orden_relato:
+  serie: 1-samuel
+  orden: 15005
+lugares:
+- amalec
+- havila-cerca-de-sur
+- sur
+personas:
+- saul
+- agag-de-tiempos-de-saul
+pasajes:
+- 1Sa 15:5-9
+resumen: Saúl avisa a los quenitas para que se aparten y bate a los amalequitas de Havilá a Sur. Captura vivo al rey
+  Agag y, con sus hombres, guarda lo mejor del ganado en lugar de destruirlo.
+razon: 'Perspicacia «Amaleq, amalequitas», párr. 5; «Agag», núm. 2; «Quenita» explica el aviso. Fecha: Saúl gobernó de 1117
+  a 1078 a.e.c. según Perspicacia «Agag», núm. 1; empezó con su unción en 1117 (estudio 3).'
+fuentes:
+- 1-samuel-15
+- it-amaleq
+- it-agag
+- it-quenita
+- it-havila
+- it-sur
+- si-3
+enlaces:
+- titulo: 'Perspicacia: «Agag»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000130
+  tipo: perspicacia
+- titulo: 1 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/15
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

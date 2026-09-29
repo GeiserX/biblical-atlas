@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: afec-cerca-de-jezreel
+nombre: Afec
+nombres:
+- nombre: Afec
+  nota: La de 1Sa 29:1 (Perspicacia «Afeq», núm. 4).
+- nombre: Afeq
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Llanura de Jezreel, entre Sunem y Jezreel
+  geometria:
+    tipo: zona
+    lat: 32.5817
+    lon: 35.3311
+    radio_km: 4
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-afeq
+  - openbible-geo
+  razon: 'Perspicacia «Afeq», núm. 4: probablemente estaba en la llanura de Jezreel, entre Sunem y Jezreel, pero no da el
+    sitio.'
+  coord_fuente: calculo
+  nota: 'Centro: punto medio entre los puntos de OpenBible de Sunem (Sulam) y Jezreel (Tel Yizreʽel), a unos 5 km uno de otro.
+    Radio nuestro.'
+- nombre: Ras el-ʽAin (Tel Afeq), en la llanura de Sarón
+  geometria:
+    tipo: punto
+    lat: 32.105
+    lon: 34.93042
+  estado: alternativa
+  fuentes:
+  - it-afeq
+  - openbible-geo
+  razon: Perspicacia «Afeq», núm. 4, recoge que algunos eruditos la igualan con la Afec de Sarón (núm. 3) porque leen el relato
+    fuera de orden. Punto de OpenBible.
+  coord_fuente: openbible:a7b2e63
+  coord_url: https://www.openbible.info/geo/ancient/a7b2e63/aphek-2
+resumen: Ciudad donde los filisteos juntaron su ejército antes de la batalla en que murió Saúl. Allí sus gobernantes vieron
+  a David con Akís y lo mandaron de vuelta. No se sabe dónde estaba.
+razon: 'Perspicacia «Afeq», núm. 4; 1Sa 29:1-11. No es la de Aser (núm. 2) ni la de Sarón, luego Antípatris (núm. 3). Sin
+  sitio seguro: dos candidatos.'
+fuentes:
+- it-afeq
+- openbible-geo
+- 1-samuel-29
+enlaces:
+- titulo: 'Perspicacia: «Afeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
+  tipo: perspicacia
+- titulo: 1 Samuel 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/29
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ana-madre-de-samuel
+nombre: Ana
+nombres:
+- nombre: Ana
+perspicacia: 1200001861#1
+desambiguacion: Ana, esposa de Elcaná y madre de Samuel; no Ana la profetisa, hija de Fanuel, ni Aná hijo de Zibeón.
+no_confundir_con:
+- ana-profetisa
+- ana-hijo-de-zibeon
+resumen: Esposa de Elcaná, estéril durante años y humillada por Peniná. En Siló pidió un hijo a Jehová y prometió dárselo.
+  Tuvo a Samuel, lo llevó al tabernáculo al destetarlo y después tuvo cinco hijos más.
+razon: Perspicacia «Ana», núm. 1; 1Sa 1:2-28; 2:1-11, 19-21.
+fuentes:
+- it-ana
+- 1-samuel-1
+- 1-samuel-2
+enlaces:
+- titulo: 'Perspicacia: «Ana»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001861
+  tipo: perspicacia
+- titulo: 1 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: ramataim-zofim
+  deducido: false
+  fuentes:
+  - 1-samuel-1
+  - it-ana
+  razon: '1Sa 1:19: volvió con su familia a su casa de Ramá. Perspicacia «Ana», núm. 1, la sitúa en Ramataim-Zofim.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

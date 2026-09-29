@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zuf
+nombre: Zuf
+nombres:
+- nombre: Zuf
+  nota: La tierra de 1Sa 9:5 (Perspicacia «Zuf», núm. 2); no el levita antepasado de Samuel, que es la núm. 1.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Alrededores de Ramá (Ramataim-Zofim)
+  geometria:
+    tipo: zona
+    lat: 32.028056
+    lon: 35.019444
+    radio_km: 10
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-rama
+  - it-zuf
+  - openbible-geo
+  razon: Perspicacia «Ramá», núm. 5, ve posible leer 1Sa 1:1 como que Elcaná era de Ramá y del distrito de Zuf, y remite
+    a 1Sa 9:5.
+  coord_fuente: calculo
+  nota: Centro en el punto de la ficha ramataim-zofim (OpenBible a90f6e1, Rantis), fuera de Benjamín. OpenBible pone Zuf a
+    unos 10 km de Ramataim-Zofim; tomamos ese radio.
+resumen: Comarca situada fuera de Benjamín a la que llegó Saúl buscando los burros de su padre. En una de sus ciudades, sin
+  nombre en el texto, conoció a Samuel, que lo ungió al día siguiente.
+razon: 'Perspicacia «Zuf», núm. 2, y «Ramá», núm. 5; 1Sa 9:5-27. No damos punto: el primero de OpenBible cae dentro de
+  Benjamín, lo que choca con Perspicacia. Zona candidata calculada alrededor de Ramá.'
+no_afirmamos:
+- 'Que la ciudad donde Saúl encontró a Samuel fuera Ramá: el relato no la nombra.'
+fuentes:
+- it-zuf
+- it-rama
+- openbible-geo
+- 1-samuel-9
+enlaces:
+- titulo: 'Perspicacia: «Zuf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004770
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Ramá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003630
+  tipo: perspicacia
+- titulo: 1 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

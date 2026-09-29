@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-prueba-la-miel-pese-al-juramento-de-saul
+titulo: Jonatán prueba la miel sin saber del juramento de Saúl
+fecha:
+  desde: -1116
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+orden_relato:
+  serie: 1-samuel
+  orden: 14024
+lugares:
+- micmash
+- ayalon
+personas:
+- jonatan-hijo-de-saul
+- saul
+presentes: []
+pasajes:
+- 1Sa 14:24-30
+resumen: Saúl ha maldecido a quien coma antes de la tarde y la tropa está agotada. En un bosque, Jonatán, que no oyó el juramento,
+  prueba miel con su vara, se reanima y critica la orden de su padre.
+razon: '1Sa 14:24-30; Perspicacia «Jonatán», núm. 2. El bosque, sin nombre, queda entre Micmash y Ayalón: no sitúa a nadie.
+  Fecha: tras la unción de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-14
+- it-saul
+- it-jonatan
+- si-3
+enlaces:
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

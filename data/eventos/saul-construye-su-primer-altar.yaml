@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-construye-su-primer-altar
+titulo: El pueblo come carne con sangre y Saúl construye su primer altar
+fecha:
+  desde: -1116
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+orden_relato:
+  serie: 1-samuel
+  orden: 14031
+lugares:
+- ayalon
+- micmash
+personas:
+- saul
+presentes: []
+pasajes:
+- 1Sa 14:31-35
+resumen: Tras perseguir a los filisteos de Micmash a Ayalón, los soldados, rendidos, degüellan el ganado del botín en el suelo
+  y comen carne con sangre. Saúl hace matar las reses sobre una gran piedra y alza su primer altar.
+razon: '1Sa 14:31-35; Perspicacia «Ayalón», núm. 1. No se dice dónde estaba la piedra: no sitúa a nadie. Fecha: tras la unción
+  de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-14
+- it-ayalon
+- it-saul
+- it-jonatan
+- si-3
+enlaces:
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

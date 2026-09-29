@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nabal
+nombre: Nabal
+nombres:
+- nombre: Nabal
+  nota: 'La nota de 1Sa 25:25 da su sentido: insensato o estúpido.'
+perspicacia: '1200003155'
+resumen: Ganadero rico de Maón, descendiente de Caleb, que en Carmelo tenía mil cabras y tres mil ovejas. Negó ayuda a David
+  y lo insultó; su esposa Abigaíl evitó la matanza, y a los diez días Jehová le quitó la vida.
+razon: Perspicacia «Nabal» y «Calebita»; 1Sa 25:2-38.
+fuentes:
+- it-nabal
+- it-calebita
+- 1-samuel-25
+- 1-samuel-27
+- 1-samuel-30
+enlaces:
+- titulo: 'Perspicacia: «Nabal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003155
+  tipo: perspicacia
+- titulo: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  tipo: biblia
+- titulo: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: abigail-esposa-de-david
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - 1-samuel-25
+  - 1-samuel-27
+  - 1-samuel-30
+  - it-nabal
+  razon: '1Sa 25:3: su esposa se llamaba Abigaíl.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: maon
+  deducido: false
+  fuentes:
+  - 1-samuel-25
+  - it-nabal
+  razon: '1Sa 25:2: hombre rico de Maón cuyos rebaños pastaban en Carmelo.'
+  estado: verificado
+- tipo: pariente
+  persona: caleb-hijo-de-jefune
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - 1-samuel-25
+  - it-calebita
+  razon: 1Sa 25:3 lo llama calebita, que Perspicacia «Calebita» explica como descendiente de Caleb; la referencia del versículo
+    remite al hijo de Jefuné.
+  estado: verificado
+- tipo: vivio_en
+  lugar: carmelo-de-juda
+  deducido: false
+  fuentes:
+  - 1-samuel-30
+  - it-nabal
+  razon: 1Sa 30:5 lo llama Nabal el carmelita. Según Perspicacia «Nabal», sus ovejas pastaban en Carmelo de Judá y allí se
+    esquilaban.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mical-ayuda-a-david-a-escapar
+titulo: Mical ayuda a David a escapar de los hombres de Saúl
+fecha:
+  desde: -1106
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+orden_relato:
+  serie: 1-samuel
+  orden: 19011
+lugares: []
+personas:
+- mical
+- david
+- saul
+pasajes:
+- 1Sa 19:11-17
+- Sl 59
+resumen: Saúl manda vigilar la casa de David para matarlo al amanecer. Mical lo descuelga por la ventana, pone un ídolo doméstico
+  en la cama y dice que está enfermo. Ante Saúl se excusa diciendo que David la amenazó.
+razon: '1Sa 19:11-17 y el encabezamiento del Sl 59 (referencia del v. 11); Perspicacia «Mical». Sin año en jw.org: tras nacer
+  David (1107, estudio 3) y antes de morir Jonatán (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-19
+- salmos-59
+- it-mical
+- si-3
+- it-jonatan
+enlaces:
+- titulo: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  tipo: biblia
+- titulo: 'Perspicacia: «Mical»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003036
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimelec-el-hitita
+nombre: Ahimélec
+nombres:
+- nombre: Ahimélec
+perspicacia: 1200000158#3
+desambiguacion: El hitita que estaba con David; no el sumo sacerdote de Nob, hijo de Ahitub, ni su nieto, hijo de Abiatar.
+no_confundir_con:
+- ahimelec-hijo-de-ahitub
+resumen: Hitita que andaba con David cuando huía de Saúl. David le preguntó quién bajaría con él al campamento del rey, pero
+  quien fue con él fue Abisái.
+razon: Perspicacia «Ahimélec», núm. 3; 1Sa 26:6, 7.
+fuentes:
+- it-ahimelec
+- 1-samuel-26
+enlaces:
+- titulo: 'Perspicacia: «Ahimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000158
+  tipo: perspicacia
+- titulo: 1 Samuel 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/26
+  tipo: biblia
+relaciones:
+- tipo: acompana
+  persona: david
+  deducido: false
+  fuentes:
+  - 1-samuel-26
+  - it-ahimelec
+  razon: '1Sa 26:6: estaba con David en el desierto de Zif, y David le propuso bajar con él al campamento.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

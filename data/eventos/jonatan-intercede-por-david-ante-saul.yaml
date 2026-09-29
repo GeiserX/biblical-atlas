@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-intercede-por-david-ante-saul
+titulo: Jonatán intercede por David ante Saúl
+fecha:
+  desde: -1106
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+orden_relato:
+  serie: 1-samuel
+  orden: 19001
+lugares: []
+personas:
+- jonatan-hijo-de-saul
+- saul
+- david
+pasajes:
+- 1Sa 19:1-7
+resumen: Saúl anuncia que quiere matar a David. Jonatán avisa a su amigo, sale al campo con su padre y le recuerda lo que
+  David arriesgó contra el filisteo. Saúl jura no matarlo y David vuelve a servirle.
+razon: '1Sa 19:1-7; Perspicacia «Jonatán», núm. 2, y «Saúl». El campo no tiene nombre. Sin año en jw.org: tras nacer David
+  (1107, estudio 3) y antes de morir Jonatán (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-19
+- it-saul
+- si-3
+- it-jonatan
+enlaces:
+- titulo: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  tipo: biblia
+- titulo: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

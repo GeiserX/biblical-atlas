@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-reprende-a-abner-y-habla-con-saul
+titulo: David reprende a Abner y habla con Saúl desde la montaña
+fecha:
+  desde: -1106
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+orden_relato:
+  serie: 1-samuel
+  orden: 26013
+lugares:
+- hakila
+personas:
+- david
+- abner
+- saul
+presentes:
+- saul
+- abner
+pasajes:
+- 1Sa 26:13-25
+resumen: Desde una cumbre al otro lado del valle, David echa en cara a Abner que no guardó al rey. Saúl reconoce su voz, admite
+  su pecado y lo bendice. Es la última vez que se ven.
+razon: 'Entre 1107, cuando nace David (estudio 3), y 1078, cuando muere Saúl (Perspicacia «Jonatán», núm. 2). «Abner», párr.
+  2, y «David»: último encuentro. Saúl y Abner, en el campamento; David, en una cima sin nombre.'
+fuentes:
+- 1-samuel-26
+- si-3
+- it-david
+- it-jonatan
+- it-abner
+enlaces:
+- titulo: 1 Samuel 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/26
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

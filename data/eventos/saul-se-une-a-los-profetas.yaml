@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-se-une-a-los-profetas
+titulo: Se cumplen las señales y Saúl habla como los profetas
+fecha:
+  desde: -1116
+  hasta: -1116
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1117 a.e.c.
+orden_relato:
+  serie: 1-samuel
+  orden: 10009
+lugares:
+- zelza
+- arbol-grande-de-tabor
+personas:
+- saul
+presentes: []
+pasajes:
+- 1Sa 10:9-13
+resumen: Al dejar a Samuel, Dios cambia el corazón de Saúl y ese día se cumplen las señales. En la colina del Dios verdadero
+  se une a un grupo de profetas y habla como ellos; de ahí sale un dicho.
+razon: '1Sa 10:2-13; Perspicacia «Saúl», apartado «Ungido por rey», y «Profeta». La colina, donde pasa lo principal, no tiene
+  ficha, así que nadie se sitúa. Año: el de la unción (estudio 3).'
+fuentes:
+- 1-samuel-10
+- it-saul
+- it-profeta
+- it-zelzah
+- it-tabor
+- si-3
+enlaces:
+- titulo: 1 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10
+  tipo: biblia
+- titulo: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

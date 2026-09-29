@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: becorat
+nombre: Becorat
+nombres:
+- nombre: Becorat
+perspicacia: '1200000597'
+resumen: Benjamita, antepasado del rey Saúl. En la genealogía de Quis es hijo de Afías y padre de Zeror.
+razon: Perspicacia «Becorat»; 1Sa 9:1.
+fuentes:
+- it-becorat
+- 1-samuel-9
+enlaces:
+- titulo: 'Perspicacia: «Becorat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000597
+  tipo: perspicacia
+- titulo: 1 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/9
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: afias
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-9
+  razon: 1Sa 9:1 lo llama hijo de Afías.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

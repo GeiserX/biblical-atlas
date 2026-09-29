@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-arca-queda-en-casa-de-abinadab
+titulo: El Arca queda en casa de Abinadab, en Quiryat-Jearim
+fecha:
+  desde: -1172
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: tras la pérdida del Arca y antes de reinar Saúl)'
+orden_relato:
+  serie: 1-samuel
+  orden: 7001
+lugares:
+- quiryat-jearim
+personas:
+- abinadab-de-quiryat-jearim
+- eleazar-hijo-de-abinadab
+pasajes:
+- 1Sa 7:1, 2
+resumen: Los de Quiryat-Jearim suben el Arca a la casa de Abinadab, en la colina, y santifican a su hijo Eleazar para cuidarla.
+  Pasan así veinte años mientras Israel se lamenta ante Jehová.
+razon: 'Fecha: Jefté juzga desde hacia 1173, con Samuel aún niño («Jefté»); Saúl es ungido en 1117 (estudio 3). El Arca vuelve
+  tras la muerte de Elí.'
+fuentes:
+- 1-samuel-7
+- it-abinadab
+- it-eleazar
+- it-quiryat-jearim
+- it-jefte
+- si-3
+enlaces:
+- titulo: 1 Samuel 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/7
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

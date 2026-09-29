@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-reune-a-israel-contra-nahas
+titulo: Saúl llama a Israel a salvar Jabés
+fecha:
+  desde: -1116
+  hasta: -1115
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+orden_relato:
+  serie: 1-samuel
+  orden: 11004
+lugares:
+- guibea-de-benjamin
+personas:
+- saul
+pasajes:
+- 1Sa 11:4-7
+resumen: Los mensajeros de Jabés llegan a Guibeá y el pueblo llora. Saúl, que vuelve del campo con el ganado, se llena del
+  espíritu de Dios, despedaza dos toros y manda los trozos por Israel para llamar a las tribus.
+razon: '1Sa 11:4-7; Perspicacia «Saúl», apartado «Sus primeras victorias». Fecha: la unción de Saúl es de 1117 (estudio 3)
+  y esto, un mes después (Perspicacia «Saúl»).'
+fuentes:
+- 1-samuel-11
+- it-saul
+- it-guibeah
+- si-3
+enlaces:
+- titulo: 1 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/11
+  tipo: biblia
+- titulo: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

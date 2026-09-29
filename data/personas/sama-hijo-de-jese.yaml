@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama-hijo-de-jese
+nombre: Samá
+nombres:
+- nombre: Samá
+- nombre: Samah
+  nota: Otra grafía que da la nota al pie de 1Sa 16:9.
+- nombre: Simeá
+  nota: Así lo llaman 1Cr 2:13 y 2Sa 13:3; Perspicacia «Samah», núm. 2, lo da por la misma persona.
+- nombre: Simeí
+  nota: Así lo llama 2Sa 21:21; Perspicacia «Samah», núm. 2, lo da por la misma persona.
+perspicacia: 1200003942#2
+desambiguacion: Samá, tercer hijo de Jesé y hermano de David; no el jeque edomita hijo de Reuel ni los guerreros de David
+  con ese nombre.
+no_confundir_con:
+- sama-hijo-de-reuel
+resumen: Tercer hijo de Jesé y hermano mayor de David, el tercero que Samuel descartó para rey. Estaba en el ejército de Saúl
+  cuando Goliat retaba a Israel. Jonatán, hijo suyo, acabó con uno de los gigantes filisteos.
+razon: Perspicacia «Samah», núm. 2; 1Sa 16:9; 17:13.
+fuentes:
+- it-samah
+- 1-samuel-16
+- 1-samuel-17
+enlaces:
+- titulo: 'Perspicacia: «Samah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003942
+  tipo: perspicacia
+- titulo: 1 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/16
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jese
+  relacion: padre
+  deducido: false
+  fuentes:
+  - 1-samuel-16
+  - it-samah
+  - 1-samuel-17
+  razon: '1Sa 16:9: Jesé lo presenta a Samuel; Perspicacia lo da como su tercer hijo.'
+  estado: verificado
+- tipo: pariente
+  persona: david
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - 1-samuel-16
+  - it-samah
+  - 1-samuel-17
+  razon: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

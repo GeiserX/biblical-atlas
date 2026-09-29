@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-suerte-senala-a-jonatan
+titulo: La suerte señala a Jonatán y el pueblo lo rescata
+fecha:
+  desde: -1116
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+orden_relato:
+  serie: 1-samuel
+  orden: 14036
+lugares:
+- ayalon
+personas:
+- jonatan-hijo-de-saul
+- saul
+- ahiya-hijo-de-ahitub
+presentes: []
+pasajes:
+- 1Sa 14:36-46
+resumen: Dios no contesta cuando Saúl pregunta si debe perseguir de noche a los filisteos. El Tumim y las suertes señalan
+  a Jonatán, que confiesa lo de la miel; Saúl lo condena, pero el pueblo lo rescata y cesa la persecución.
+razon: '1Sa 14:36-46; Perspicacia «Jonatán», núm. 2. El sacerdote es Ahíya (1Sa 14:18, 19). Sin lugar con nombre: no sitúa
+  a nadie. Fecha: tras la unción de Saúl (1117, estudio 3) y antes de su muerte (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-14
+- it-jonatan
+- it-saul
+- it-ahiya
+- si-3
+enlaces:
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

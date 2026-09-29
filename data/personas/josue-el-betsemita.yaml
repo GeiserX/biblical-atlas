@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josue-el-betsemita
+nombre: Josué
+nombres:
+- nombre: Josué
+perspicacia: 1200002523#2
+desambiguacion: Josué el betsemita, dueño del campo donde paró el Arca; no Josué hijo de Nun ni el sumo sacerdote Josué (Jesúa).
+no_confundir_con:
+- josue-hijo-de-nun
+- josue-sumo-sacerdote
+fecha:
+  desde: -1179
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1180 y 1117 a.e.c. (tiempo narrativo: en el siglo XII a.e.c., antes de que Saúl fuera ungido rey)'
+resumen: Vecino de Bet-Semes. En su campo se detuvo la carreta con el Arca que devolvían los filisteos, y allí quedó la gran
+  piedra sobre la que la pusieron.
+razon: 'Perspicacia «Josué», núm. 2; 1Sa 6:14, 18. Fecha: la del suceso, entre c. 1180 y 1117 a.e.c.'
+fuentes:
+- it-josue
+- 1-samuel-6
+enlaces:
+- titulo: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  tipo: perspicacia
+- titulo: 1 Samuel 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/6
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: bet-semes
+  deducido: false
+  fuentes:
+  - 1-samuel-6
+  - it-josue
+  razon: 1Sa 6:14, 18 lo llama el betsemita y pone su campo en Bet-Semes.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

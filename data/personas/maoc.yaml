@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maoc
+nombre: Maoc
+nombres:
+- nombre: Maoc
+perspicacia: '1200002894'
+resumen: Padre de Akís, el rey filisteo de Gat que acogió a David y a sus seiscientos hombres cuando huían de Saúl.
+razon: Perspicacia «Maoc»; 1Sa 27:2.
+no_afirmamos:
+- 'Que Maoc sea el Maacá padre de Akís en tiempos de Salomón: Perspicacia lo ve posible, pero no seguro.'
+fuentes:
+- it-maoc
+- 1-samuel-27
+enlaces:
+- titulo: 'Perspicacia: «Maoc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002894
+  tipo: perspicacia
+- titulo: 1 Samuel 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/27
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

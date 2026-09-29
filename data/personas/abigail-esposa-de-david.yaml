@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abigail-esposa-de-david
+nombre: Abigaíl
+nombres:
+- nombre: Abigaíl
+perspicacia: 1200000037#1
+desambiguacion: La esposa de Nabal y luego de David; no Abigaíl, la hermana de David (Perspicacia «Abigail», núm. 2).
+resumen: Mujer sensata y hermosa, casada con Nabal. Con comida abundante y una súplica humilde impidió que David se vengara
+  de su marido. Al enviudar, días después, se casó con David.
+razon: Perspicacia «Abigail», núm. 1; 1Sa 25:3, 14-42.
+fuentes:
+- it-abigail
+- 1-samuel-25
+- 1-samuel-27
+- 1-samuel-30
+enlaces:
+- titulo: 'Perspicacia: «Abigail»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000037
+  tipo: perspicacia
+- titulo: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  tipo: biblia
+- titulo: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  tipo: biblia
+relaciones:
+- tipo: vivio_en
+  lugar: carmelo-de-juda
+  deducido: false
+  fuentes:
+  - 1-samuel-25
+  - it-david
+  - 1-samuel-27
+  razon: '1Sa 25:40: los siervos de David van a buscarla a Carmelo; Perspicacia «David» la llama Abigaíl de Carmelo.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: gat
+  deducido: false
+  fuentes:
+  - 1-samuel-27
+  - it-abigail
+  razon: '1Sa 27:3: las dos esposas de David viven con él en Gat.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: ziclag
+  deducido: false
+  fuentes:
+  - 1-samuel-30
+  - it-abigail
+  razon: '1Sa 30:1-5: vivía en Ziclag con David cuando los amalequitas se la llevaron.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

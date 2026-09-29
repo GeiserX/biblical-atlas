@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-consulta-a-jehova-con-el-efod
+titulo: David consulta a Jehová con el efod que le trae Abiatar
+fecha:
+  desde: -1077
+  hasta: -1077
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1078 a.e.c.
+orden_relato:
+  serie: 1-samuel
+  orden: 30007
+lugares:
+- ziclag
+personas:
+- david
+- abiatar
+pasajes:
+- 1Sa 30:7, 8
+resumen: 'David pide al sacerdote Abiatar que le traiga el efod y pregunta a Jehová si debe perseguir a los saqueadores. La
+  respuesta es que sí: los alcanzará y lo recuperará todo.'
+razon: 1Sa 30:7, 8; Perspicacia «David», párr. 25, y «Abiatar», párr. 3. La escena sigue en Ziclag. Mismo año que la muerte
+  de Saúl y Jonatán, 1078 (Perspicacia «Jonatán», núm. 2).
+fuentes:
+- 1-samuel-30
+- it-david
+- it-abiatar
+- it-jonatan
+enlaces:
+- titulo: 1 Samuel 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/30
+  tipo: biblia
+- titulo: 'Perspicacia: «Abiatar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000030
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

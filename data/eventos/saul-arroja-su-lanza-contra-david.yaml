@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-arroja-su-lanza-contra-david
+titulo: Saúl arroja su lanza contra David
+fecha:
+  desde: -1106
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+orden_relato:
+  serie: 1-samuel
+  orden: 18010
+lugares: []
+personas:
+- saul
+- david
+pasajes:
+- 1Sa 18:10-16
+resumen: Dominado por un mal espíritu, Saúl lanza dos veces su lanza contra David mientras toca el arpa, y David la esquiva.
+  Con miedo, Saúl lo aparta haciéndolo jefe de mil; Israel y Judá lo aman.
+razon: '1Sa 18:10-16; Perspicacia «Saúl». Pasa en la casa, sin ciudad en el texto. Sin año en jw.org: tras nacer David (1107,
+  estudio 3) y antes de morir Jonatán (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-18
+- it-saul
+- si-3
+- it-jonatan
+enlaces:
+- titulo: 1 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/18
+  tipo: biblia
+- titulo: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-intenta-otra-vez-clavar-a-david
+titulo: Saúl intenta otra vez clavar a David en la pared
+fecha:
+  desde: -1106
+  hasta: -1077
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+orden_relato:
+  serie: 1-samuel
+  orden: 19008
+lugares: []
+personas:
+- saul
+- david
+pasajes:
+- 1Sa 19:8-10
+resumen: Después de otra victoria de David sobre los filisteos, un mal espíritu viene sobre Saúl mientras David toca el arpa.
+  La lanza se clava en la pared y David huye esa misma noche.
+razon: '1Sa 19:8-10; Perspicacia «David» y «Saúl» lo cuentan como la tercera lanza. Sin año en jw.org: tras nacer David (1107,
+  estudio 3) y antes de morir Jonatán (1078, Perspicacia «Jonatán», núm. 2).'
+fuentes:
+- 1-samuel-19
+- it-david
+- it-saul
+- si-3
+- it-jonatan
+enlaces:
+- titulo: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  tipo: biblia
+- titulo: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

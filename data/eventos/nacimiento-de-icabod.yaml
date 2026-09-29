@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nacimiento-de-icabod
+titulo: Nace Icabod y muere su madre
+fecha:
+  desde: -1179
+  hasta: -1116
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: el mismo día de la derrota junto a Ebenézer)'
+orden_relato:
+  serie: 1-samuel
+  orden: 4019
+lugares:
+- silo
+personas:
+- icabod
+presentes: []
+pasajes:
+- 1Sa 4:19-22
+resumen: 'La esposa de Finehás, embarazada, oye que el Arca fue tomada y que murieron su suegro y su esposo. Se pone de parto
+  de golpe y, muriéndose, llama al niño Icabod, pues dice que la gloria dejó a Israel.'
+razon: '1Sa 4:19-22; Perspicacia «Icabod». No dice dónde estaba ella: el suceso no sitúa a nadie. Fecha: entre c. 1180, inicio
+  de 1 Samuel (Tabla de los libros), y la unción de Saúl en 1117 (estudio 3).'
+fuentes:
+- 1-samuel-4
+- it-icabod
+- it-finehas
+- tnm-tabla
+- si-3
+enlaces:
+- titulo: 1 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4
+  tipo: biblia
+- titulo: 'Perspicacia: «Icabod»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002131
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

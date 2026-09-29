@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bozez
+nombre: Bozez
+nombres:
+- nombre: Bozez
+tipo: monte
+lat: 31.857165
+lon: 35.287147
+precision: incierto
+coord_fuente: openbible:abde10e
+coord_url: https://www.openbible.info/geo/ancient/abde10e/bozez
+coord_nota: 'Punto de OpenBible. Perspicacia dice que su identificación es una conjetura: una curva cerrada del Wadi Suweinit
+  entre Micmash y Gueba.'
+resumen: Peñasco dentado del lado norte del barranco, frente a Micmash. Jonatán pasó entre él y Sené para llegar al puesto
+  de avanzada de los filisteos.
+razon: 'Perspicacia «Bozez» y «Gueba», párr. 1; 1Sa 14:4, 5. OpenBible: solo el punto.'
+fuentes:
+- it-bozez
+- it-gueba
+- openbible-geo
+- 1-samuel-14
+enlaces:
+- titulo: 'Perspicacia: «Bozez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000806
+  tipo: perspicacia
+- titulo: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
