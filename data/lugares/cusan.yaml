@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cusan
+nombre: Cusán
+nombres:
+- nombre: Cusán
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Madián, si Cusán es otro nombre suyo
+  geometria:
+    tipo: zona
+    lat: 28.4947
+    lon: 35.0122
+    radio_km: 100
+  estado: alternativa
+  fuentes:
+  - it-cusan
+  - openbible-geo
+  razon: Perspicacia dice que, por ir en paralelo con la tierra de Madián, Cusán puede ser otro nombre de Madián.
+  nota: 'Centro: primera resolución de la primera identificación de OpenBible para Cushan, que es el punto de Madián. El radio
+    de 100 km es nuestro.'
+  coord_fuente: openbible:a567e0e
+  coord_url: https://www.openbible.info/geo/ancient/a567e0e/cushan
+- nombre: Tierra vecina de Madián, en Arabia
+  geometria:
+    tipo: zona
+    lat: 28.4947
+    lon: 35.0122
+    radio_km: 250
+  estado: alternativa
+  fuentes:
+  - it-cusan
+  - it-cus
+  - openbible-geo
+  razon: 'Perspicacia también lo ve como un país junto a Madián: algunos cusitas vivieron en Arabia y el nombre Kusi designó
+    a pueblos árabes.'
+  nota: 'Centro: el punto de Madián en OpenBible. El radio de 250 km, que abarca las tierras vecinas, es nuestro.'
+  coord_fuente: openbible:acc6d8e
+  coord_url: https://www.openbible.info/geo/ancient/acc6d8e/midian
+resumen: 'Tierra que Hab 3:7 nombra junto a Madián: sus tiendas se estremecen ante Jehová. Quizá sea otro nombre de Madián
+  o un país vecino, en Arabia.'
+razon: 'Perspicacia «Cusán» y «Cus», núm. 2; Hab 3:7. Su sitio no se sabe: los dos candidatos son de Perspicacia y el punto,
+  de OpenBible.'
+no_afirmamos:
+- 'Que Cusán sea la misma tierra que Madián: Perspicacia deja abierta también la opción de un país vecino.'
+fuentes:
+- it-cusan
+- it-cus
+- openbible-geo
+- habacuc-3
+enlaces:
+- titulo: 'Perspicacia: «Cusán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001090
+  tipo: perspicacia
+- titulo: Habacuc 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/35/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -321,7 +321,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para Sofonías (desde Nahúm)
 
 - **La caída de Nínive.** Nahúm la anuncia y no la narra, así que la pone en `menciona` de sus tramos, como Miqueas y Joel hacen con los sucesos que profetizan, y no toca sus `pasajes`, que siguen siendo «Na 3:1-7» y «Sof 2:13». Sofonías hace lo mismo con Sof 2:13-15. `data/_propuestas/nahum.json` le añade `nabopolasar`, `ciaxares` y `rio-tigris`.
-- **Fuente compartida.** `w07-nahum-habacuc-y-sofonias` (La Atalaya del 15 de noviembre de 2007) ya existe en `data/fuentes/cobertura-nahum.yaml`: Habacuc y Sofonías usan ese id.
+- **Fuente compartida.** `w07-nahum-habacuc-y-sofonias` (La Atalaya del 15 de noviembre de 2007) ya existe en `data/fuentes/cobertura-nahum.yaml`: Habacuc ya lo usa y Sofonías usa ese id.
 
 ## Para 2 Reyes, 2 Crónicas y Esdras (desde Nahúm)
 
@@ -335,3 +335,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Put como tierra.** `put` existe también como lugar (el pueblo y su tierra; la persona `put` es el hijo de Cam), con precisión incierta en el punto de Libia y un `no_afirmamos` porque Na 3:9 separa Put de los libios. Is 66:19, Jer 46:9 y Ez 27:10, 30:5 y 38:5 usan `lugar:put`, sin `persona:put`.
 - **Elqós.** `elqos` existe sin punto (Beit Jibrin favorecido; Galilea como alternativa, en el punto de El Kauzeh de OpenBible). La TNM solo da el gentilicio «elcosita»; Elqós es la única grafía del lugar en jw.org.
 
+## Para Josué y Jueces (desde Habacuc)
+
+- **Sucesos que recuerda Habacuc 3.** La Atalaya del 1 de febrero de 2000 (`w00-gozosos-en-dios`) une la oración a la toma de Jericó (Jos 6), al sol que se detiene sobre Gabaón (Jos 10:12-14, la referencia de Hab 3:11) y a la crecida del Cisón contra Sísara (Jue 5:21). Cuando existan, Jericó va en `menciona` del tramo Habacuc 3:1-2 y los otros dos en el de Habacuc 3:8-11, sin añadir Hab 3 a sus `pasajes`, como ya se hizo con `israel-cruza-el-mar-rojo`, `entrada-en-canaan` e `israel-adora-al-baal-de-peor`.
+- **Cusán no es Cusán-risataim.** `cusan` (Hab 3:7) es un lugar sin punto, quizá otro nombre de Madián o un país vecino (Perspicacia «Cusán»). El rey de Jue 3:8-10 es una persona aparte, con su propio artículo.

@@ -1,0 +1,157 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "habacuc",
+ "agente": "escritor-habacuc",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001789"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "resumen",
+   "antes": "Profeta de Judá, autor del libro de Habacuc. No se sabe con certeza si era músico levita.",
+   "despues": "Profeta de Judá que escribió el libro de Habacuc; su nombre quizá signifique «abrazo ardiente». Profetizó al comenzar el reinado de Jehoiaquim, antes de la batalla de Carquemis, y fue contemporáneo de Jeremías. No se sabe si era músico levita.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade cuándo profetizó (comienzo del reinado de Jehoiaquim, antes de Carquemis), que fue contemporáneo de Jeremías y el sentido de su nombre.",
+    "fuente": "si-habacuc"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "razon",
+   "antes": "Perspicacia «Habacuc», párr. 1; Hab 1:1. La Tabla de los libros pone «c. 628 (?)», con duda.",
+   "despues": "Perspicacia «Habacuc» y «Habacuc, Libro de»; «Toda Escritura», libro 35, párr. 2 y 3; Hab 1:1 y su nota al pie. La Tabla de los libros pone «c. 628 (?)», con duda.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita también «Habacuc, Libro de» y «Toda Escritura», de donde salen la fecha y el contexto del resumen.",
+    "fuente": "it-habacuc-libro"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "fuentes",
+   "valores": [
+    "it-habacuc-libro",
+    "si-habacuc",
+    "w07-nahum-habacuc-y-sofonias",
+    "w00-inicuos"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "enlaces",
+   "valores": [
+    {
+     "titulo": "Perspicacia: «Habacuc, Libro de»",
+     "url": "https://wol.jw.org/es/wol/d/r4/lp-s/1200001790",
+     "tipo": "perspicacia"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "juda",
+     "deducido": true,
+     "fuentes": [
+      "it-habacuc",
+      "si-habacuc",
+      "tnm-tabla",
+      "habacuc-1"
+     ],
+     "razon": "Perspicacia lo llama profeta hebreo de Judá, y la tabla de libros y «Toda Escritura» dicen que escribió allí. El libro no lo dice.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "libano",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "habacuc",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "teman",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-paran",
+   "campo": "nombres",
+   "valores": [
+    {
+     "nombre": "Monte Parán",
+     "nota": "Así lo llama Hab 3:3. Perspicacia lo compara con la región montañosa de Dt 33:2, la sección central del desierto, de 600 a 750 m."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "desierto-de-paran",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "madian",
+   "campo": "fuentes",
+   "valores": [
+    "habacuc-3"
+   ]
+  }
+ ],
+ "preguntas": []
+}
