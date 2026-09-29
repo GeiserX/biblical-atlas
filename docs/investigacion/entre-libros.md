@@ -189,24 +189,16 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para quien reabra Éxodo, Números o Deuteronomio
 
 - **El fin del maná.** Éx 16:35 no está en `cesa-el-mana` (Jos 5:12) porque Éxodo 16 ya estaba cerrado: al reabrirlo, se añade el pasaje y el suceso va al tramo.
-- **Pasaje ya puesto.** Jos 13:21, 22 está en `israel-se-venga-de-madian`: va en el tramo de Josué 13.
-- **Ids que ya existen.** `sitim` (Jos 2:1; 3:1), `zur-rey-de-madian`, `evi`, `requem-rey-de-madian`, `hur-rey-de-madian`, `reba` y `balaam` (Jos 13:21, 22), `peor` (Jos 22:17), las hijas de Zelofehad y los hijos de Galaad (Jos 17:1-6), y los lugares de la frontera sur de Nú 34 (`subida-de-acrabim`, `hazar-addar`, `azmon`, `torrente-de-egipto`, `desierto-de-zin`) para Jos 15:1-4.
-- **Reyes de Madián y Balaam sin lugar.** `evi`, `requem-rey-de-madian`, `zur-rey-de-madian`, `hur-rey-de-madian`, `reba` y `balaam` no llevan `vivio_en` ni `murio_en`: el punto de `madian` está al este de ʽAqaba y ellos vivían junto a Moab y Sehón. Si Josué 13 crea el territorio de Rubén o el reino de Sehón (Jos 13:21), les añade esas relaciones.
-- **Anac.** No tiene ficha: Perspicacia «Anaq» lo trata sobre todo como el nombre del pueblo. Jos 15:13 lo llama hijo de Arbá, así que Josué decide. `ahiman-hijo-de-anac`, `sesai` y `talmai-hijo-de-anac` ya existen.
-- **Sumo sacerdocio de Eleazar.** Existe `sumo-sacerdocio-de-aaron` (1512-1474 a.e.c.). El de Eleazar empieza en `muerte-de-aaron`; no se creó porque Perspicacia no fecha su muerte (Jos 24:33).
-- **Territorios de Gad y Rubén.** Nú 32 los reparte como tribus y no creó lugares `gad` ni `ruben`; si Josué 13 los necesita, los crea como `juda` o `manases`.
-- **Ciudades de refugio y de los levitas (Jos 20 y 21).** La ley está en `jehova-manda-dar-ciudades-a-los-levitas` y `jehova-da-la-ley-de-las-ciudades-de-refugio` (Nú 35).
-- **Orden de 1473 a.e.c.** Desde la victoria sobre Og hasta el Jordán, todo va en la serie `numeros`: Números con su capítulo y versículo (21021 a 36001), Deuteronomio con 100000 más (`muerte-de-moises` es 134001) y Josué con 200000 más (`entrada-en-canaan` es 203014). `build.py` ordena las series por su nombre, así que una serie `josue` saldría antes que Números. Los sucesos de Jos 1-5 siguen esa cuenta, que ya está en la sección 6 de `versiculos.md`.
-- **Lugares de Deuteronomio.** `astarot`, `edrei`, `saleca`, `argob`, `guesur` y `maaca` (Jos 12:4, 5; 13:11-13), `bet-peor` (Jos 13:20), `bezer`, `ramot-galaad` y `golan` (Jos 20:8; 21), `araba`, `sefela`, `monte-ebal` y `monte-guerizim` ya existen.
-- **La meseta.** Dt 3:10 y 4:43 la nombran y no tiene ficha: Perspicacia «Meseta» (documento 1200004297) la trata como término. Si Jos 13:9-17 o 20:8 necesitan situarla, Josué la crea.
-- **Ebal y Guerizim (Jos 8:30-35).** Josué crea el suceso, que cumple lo mandado en `moises-manda-escribir-la-ley-en-piedras-en-el-ebal` y `moises-anuncia-las-bendiciones-y-las-maldiciones` (Dt 11:29; 27:1-13): van en `menciona` de su tramo.
-- **Guilgal.** `guilgal-frente-a-guerizim-y-ebal` es el de Dt 11:30, porque Perspicacia no asegura que sea el núm. 2. El Guilgal del campamento (Jos 4:19) lleva otro id.
-- **Rabá.** `raba` es Rabá de los ammonitas («Rabá», núm. 1). La de Judá (Jos 15:60), núm. 2, lleva otro id.
-- **Ciudades de refugio del oeste.** Moisés apartó las del este (`moises-aparta-tres-ciudades-de-refugio`); Dt 19:1-13 está en `jehova-da-la-ley-de-las-ciudades-de-refugio`. Jos 20:7 nombra Hebrón, Siquem y Quedes.
-- **Josué y Moisés.** `jehova-comisiona-a-josue-en-la-tienda-de-reunion` (Dt 31:14-23) y `moises-nombra-a-josue-su-sucesor` (Nú 27; Dt 3:21-28; 34:9) ya existen: Jos 1:1-9 es otro suceso.
-- **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac; el tramo Dt 9:1-6 lo explica como pueblo. Si Josué 15:13, 14 crea la persona, la añade a `menciona` de ese tramo.
-- **Los huesos de José (Jos 24:32).** Hch 7:16 dice que los llevaron a Siquem. Cuando Josué cree ese entierro, añade «Hch 7:16» a sus pasajes y lo pone en el tramo 9-16 de Hechos 7.
-- **Queriyot-hezrón (Jos 15:25).** Perspicacia «Judas», núm. 4, dice que el apelativo Iscariote suele leerse como procedencia de ese lugar y que Judas y su padre probablemente eran de allí. Juan no lo nombra, así que `judas-iscariote` y `simon-iscariote` no llevan relación con él; Josué decide si la añade como deducida y pendiente.
+- **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac. Desde Josué existe la persona `anac` (Jos 15:13): al reabrir Deuteronomio, va en `menciona` del tramo Dt 9:1-6.
+
+## Para quien reabra los Evangelios (desde Josué)
+
+- **Queriyot-hezrón.** Existe `queriyot-hezron` (Jos 15:25). Perspicacia «Judas», núm. 4, solo ve probable que Judas Iscariote y su padre fueran de allí, y los Evangelios no lo dicen: `judas-iscariote` y `simon-iscariote` no llevan relación con ese lugar.
+
+## Para Miqueas (desde Josué)
+
+- **Maresá.** `maresa` existe desde Josué (Perspicacia «Maresá», núm. 3; OpenBible a5cda86, Tell Sandahannah). Miqueas funde su `maresa` con esta en una sola ficha.
+- **Zaanán y Marot.** `zenan` (Jos 15:37) y `maarat` (Jos 15:59) existen desde Josué. Muchos toman Zenán por la Zaanán de Miq 1:11 y algunos Maarat por la Marot de Miq 1:12, sin certeza. Miqueas añade a `zenan` y `maarat` un `no_afirmamos` que diga que no damos por hecho que sean `zaanan` y `marot`.
 
 ## Para Jueces
 
