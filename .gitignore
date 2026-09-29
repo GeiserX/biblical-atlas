@@ -43,6 +43,7 @@ vignettes/*.pdf
 __pycache__/
 *.pyc
 /site/data.json
+/site/stats.json
 .DS_Store
 /site/data.js
 /site/_local/
