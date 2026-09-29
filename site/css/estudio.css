@@ -103,6 +103,22 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .sector-punto--lugares { background: var(--node-lugar); }
 .sector-punto--cartas { background: var(--node-texto); }
 .sector-punto--hechos { background: var(--node-evento); }
+/* Formas por tipo de nodo (be-u66.6): en el tema claro persona y suceso son dos verdes, así que el tipo no va solo en el
+   color. En el grafo y en la conexión el relleno de cada nodo va en ::before, que toma la forma de su tipo (tokens.css)
+   y lleva los anillos de foco, así el anillo sigue la forma. La letra queda derecha encima. */
+:is(.vista-grafo, .vista-conexion) .be-node { position: relative; isolation: isolate; background: none; box-shadow: none; --node-fill: var(--ink-3); --node-ring: inset 0 0 0 2px rgba(255, 255, 255, .28); }
+:is(.vista-grafo, .vista-conexion) .be-node::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--node-fill); border-radius: var(--node-shape, 50%); transform: var(--node-turn, none); box-shadow: var(--node-ring); }
+:is(.vista-grafo, .vista-conexion) .be-node--persona { --node-color: var(--node-persona); --node-fill: var(--node-color); --node-shape: var(--node-shape-persona); --node-turn: var(--node-turn-persona); }
+:is(.vista-grafo, .vista-conexion) .be-node--lugar { --node-color: var(--node-lugar); --node-fill: var(--node-color); --node-shape: var(--node-shape-lugar); --node-turn: var(--node-turn-lugar); }
+:is(.vista-grafo, .vista-conexion) .be-node--evento { --node-color: var(--node-evento); --node-fill: var(--node-color); --node-shape: var(--node-shape-evento); --node-turn: var(--node-turn-evento); }
+:is(.vista-grafo, .vista-conexion) .be-node--periodo { --node-color: var(--node-periodo); --node-fill: var(--node-color); --node-shape: var(--node-shape-periodo); --node-turn: var(--node-turn-periodo); }
+:is(.vista-grafo, .vista-conexion) .be-node--hallazgo { --node-color: var(--node-hallazgo); --node-fill: var(--node-color); --node-shape: var(--node-shape-hallazgo); --node-turn: var(--node-turn-hallazgo); }
+:is(.vista-grafo, .vista-conexion) .be-node--texto { --node-color: var(--node-texto); --node-fill: var(--node-color); --node-shape: var(--node-shape-texto); --node-turn: var(--node-turn-texto); }
+.vista-grafo .gnodo-centro .be-node { --node-ring: 0 0 0 4px #fff, 0 0 0 6px var(--gold), var(--shadow-2); }
+/* Los puntos de los sectores (filtros y lista) llevan la forma de lo que agrupan. */
+.sector-punto--lugares { border-radius: var(--node-shape-lugar); transform: var(--node-turn-lugar); }
+.sector-punto--cartas { border-radius: var(--node-shape-texto); }
+.sector-punto--hechos { border-radius: 1px; transform: rotate(45deg) scale(.8); }
 .grafo-oculto { font-size: var(--fs-xs); }
 .grafo-lienzo { flex: none; margin: 0 8px; }
 .grafo-lienzo svg { pointer-events: none; }
@@ -114,18 +130,25 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .arista--futuro line { stroke: var(--line-2); stroke-dasharray: 9 6; }
 .arista--grupo { stroke: var(--line-2); stroke-width: 1.2; }
 .arista line.arista-toque { stroke: transparent; stroke-width: 14; stroke-dasharray: none; pointer-events: stroke; cursor: help; opacity: 1; }
-.gnodo { border: 0; background: none; padding: 2px; cursor: pointer; font: inherit; color: inherit; z-index: 1; max-width: 190px; }
+.gnodo { border: 0; background: none; padding: 2px; cursor: pointer; font: inherit; color: inherit; z-index: 1; max-width: 190px; min-width: 44px; min-height: 44px; }
 .gnodo:hover { z-index: 3; }
-.gnodo:hover .be-node, .gnodo:focus-visible .be-node { box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--gold), var(--shadow-2); }
+.gnodo:hover .be-node, .gnodo:focus-visible .be-node { --node-ring: 0 0 0 3px #fff, 0 0 0 5px var(--gold), var(--shadow-2); }
 .gnodo .be-gnode__label, .gnodo .be-gnode__meta { max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
 .gnodo--pasado, .gnodo--futuro { opacity: .5; }
 .gnodo--pasado:hover, .gnodo--futuro:hover, .gnodo--pasado:focus-visible, .gnodo--futuro:focus-visible { opacity: 1; }
-.gnodo--incierto .be-node { background: var(--surface); color: var(--zone); box-shadow: inset 0 0 0 2px var(--zone); outline: 2px dashed var(--zone); outline-offset: 2px; }
+.gnodo--incierto .be-node { --node-fill: var(--surface); --node-ring: inset 0 0 0 2px var(--zone); }
+/* Con .vista-grafo delante: en el modo reunión la letra oscura de los sucesos (más abajo) dejaba la letra de un suceso
+   incierto oscura sobre fondo oscuro, invisible. */
+.vista-grafo .gnodo--incierto .be-node { color: var(--zone); }
+.gnodo--incierto .be-node::before { outline: 2px dashed var(--zone); outline-offset: 2px; }
 .gnodo--nuevo { animation: gnodo-entra .45s ease-out; }
 @keyframes gnodo-entra { from { opacity: 0; transform: translate(-50%, -50%) scale(.6); } }
-.gnodo--grupo .burbuja { background: var(--surface); color: var(--ink-2); box-shadow: inset 0 0 0 1.5px var(--line-2); font-family: var(--font-sans); font-size: 11px; width: 34px; height: 34px; }
+.gnodo--compacto .be-gnode__label { display: none; }   /* sin sitio para su rótulo: el «+N» y su nombre accesible */
+.gnodo--grupo .burbuja { --node-fill: var(--surface); --node-ring: inset 0 0 0 1.5px var(--line-2); color: var(--ink-2); font-family: var(--font-sans); font-size: 11px; width: 34px; height: 34px; }
 .gnodo-centro { z-index: 2; pointer-events: none; }
 .gnodo-centro .be-gnode__label { font: 600 var(--fs-xl)/1.2 var(--font-serif); }
+/* Las aristas salen del círculo del centro y pasan por debajo de su nombre y su línea «en …»: las dos llevan fondo. */
+.gnodo-centro .be-gnode__meta { background: rgba(255, 253, 248, .92); padding: 0 6px; border-radius: var(--r-pill); }
 .sector-rotulo { position: absolute; transform: translate(-50%, -50%); color: var(--ink-3); font-size: var(--fs-2xs); pointer-events: none; }
 .grafo-vacio { position: absolute; left: 50%; top: 68%; transform: translateX(-50%); width: min(420px, 90%); text-align: center; }
 .grafo-vacio .fila-chips { justify-content: center; }
@@ -139,6 +162,23 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .lin--futuro { border-top: 2px dashed var(--line-2); }
 .grafo-tarjeta { z-index: 8; pointer-events: none; }
 .grafo-tarjeta .be-card__pad { padding: 12px 14px; }
+/* Tarjeta fijada (primer toque o Intro en un nodo, o la burbuja «+N»): recibe el dedo y lleva acciones. El nodo que la
+   abrió lleva un anillo, no solo un color. */
+.grafo-tarjeta--fija { pointer-events: auto; }
+/* El título de una fuente larga parte en líneas en vez de salirse de la tarjeta. */
+.grafo-tarjeta .be-tier { max-width: 100%; height: auto; min-height: 22px; padding-block: 2px; white-space: normal; }
+.gnodo[aria-expanded="true"] .be-node { --node-ring: 0 0 0 3px var(--surface), 0 0 0 6px var(--ink); }
+.grafo-tarjeta__acciones { display: flex; flex-direction: column; align-items: stretch; gap: 6px; margin-top: 8px; }
+.grafo-tarjeta__acciones .be-btn { height: auto; min-height: 44px; padding: 6px 12px; white-space: normal; line-height: 1.25; text-align: left; justify-content: flex-start; font-size: var(--fs-sm); }
+.grafo-tarjeta__pista { margin: 8px 0 0; font-size: var(--fs-xs); color: var(--ink-2); }
+.grafo-tarjeta__pista + .tarjeta-arista { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; }
+.etiqueta-sinpasaje { font-size: var(--fs-2xs); height: 20px; padding: 0 7px; color: var(--ink-2); }
+.grafo-resto { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.grafo-resto__fila { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px; padding: 4px 6px; border: 0; border-radius: var(--r-sm); background: none; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.grafo-resto__fila:hover { background: var(--paper-2); }
+.grafo-resto__texto { display: flex; flex-direction: column; min-width: 0; }
+.grafo-resto__nombre { font-size: var(--fs-sm); font-weight: 600; }
+.grafo-resto__meta { font-size: var(--fs-xs); color: var(--ink-2); overflow-wrap: anywhere; }
 .tarjeta-arista + .tarjeta-arista { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; }
 .tarjeta-verbo { font-size: var(--fs-sm); margin: 4px 0; }
 .tarjeta-razon { margin: 6px 0 4px; font-size: var(--fs-xs); color: var(--ink-2); line-height: 1.4; }
@@ -378,7 +418,15 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 /* Búsqueda: el trozo que coincide, en marcador ámbar con letra oscura (antes, amarillo claro con letra clara). */
 .be-reunion .be-result mark { background: #e8c983; color: #1b1813; }
 /* Fondos pastel fijos de las fichas, las etiquetas y los avisos. */
-.be-reunion .be-gnode__label { background: rgba(33, 29, 23, .92); }
+.be-reunion .be-gnode__label, .be-reunion .gnodo-centro .be-gnode__meta { background: rgba(33, 29, 23, .92); }
+/* Rellenos de nodo en el grafo y la conexión, donde la forma dice el tipo: 3:1 contra el fondo, la tarjeta y la leyenda,
+   y 4,5:1 con la letra blanca. Solo aquí: el resto del sitio (línea, mapa, ficha) guarda sus colores. */
+.be-reunion :is(.vista-grafo, .vista-conexion) { --node-persona: #b0482e; --node-lugar: #307277; --node-periodo: #716095; --node-texto: #566b84; }
+/* En las migas el fondo de la píldora es más claro que la vista: la forma lleva un borde claro para no bajar de 3:1. */
+.be-reunion .migas-grafo .be-node { --node-ring: inset 0 0 0 2px var(--ink-3); }
+/* Una cita bajo el ratón o con el foco: en el modo reunión el fondo claro de mapa.css dejaba su letra clara en 1,5:1.
+   La tarjeta fijada del grafo las hace alcanzables; aquí va el fondo oscuro de su familia. */
+.be-reunion :is(.vista-grafo, .vista-conexion) .be-ref:is(:hover, :focus-visible) { background: var(--tier1-line); }
 .be-reunion .be-date { background: var(--gold-soft); border-color: var(--gold-line); }
 .be-reunion .be-date__value { color: #efe7d8; }
 .be-reunion .be-note { background: #262d38; color: #cfd8e3; }
@@ -426,9 +474,9 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
   .estudio-menu { position: fixed; top: calc(var(--topbar-h) - 4px); right: 8px; width: min(300px, calc(100vw - 16px)); }
   .vista-grafo, .vista-conexion { width: 100%; border-right: 0; padding-bottom: 36vh; }
   .vista-grafo { padding-bottom: 92px; }   /* el grafo pliega la hoja: quedan su asa y la fila del suceso */
-  .vista-grafo .grafo-leyenda { display: none; }
+  /* La leyenda se queda, plegada en una línea: sin ella las formas de los nodos no se explican en el móvil. */
+  .vista-grafo .grafo-leyenda { margin: auto 8px 4px; }
   .grafo-lista { grid-template-columns: 1fr; }
-  .gnodo .be-gnode__meta { display: none; }
   .pregunta-fija { font-size: var(--fs-lg); }
   .casilla { width: 130px; }
   .cadena { flex-direction: column; align-items: stretch; }
@@ -477,13 +525,16 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .interruptor-grafo[aria-checked="true"] .interruptor-bola { left: 19px; background: var(--surface); }
 .interruptor-estado { min-width: 2ch; color: var(--ink-2); font-weight: 700; }
 @media (prefers-reduced-motion: reduce) { .interruptor-pista, .interruptor-bola { transition: none; } }
-details.grafo-leyenda { display: block; }
-.grafo-leyenda > summary { cursor: pointer; font-weight: 600; color: var(--ink-2); }
-.grafo-leyenda[open] > summary { margin-bottom: 6px; }
+details.grafo-leyenda { display: block; flex: none; }   /* no encoge: el círculo toma lo que queda (ajustarLienzo) */
+/* El resumen es lo único que abre la leyenda: 44 px de alto, con el relleno de la caja dentro de él. */
+details.grafo-leyenda { padding-block: 0; }
+details.grafo-leyenda[open] { padding-bottom: 8px; }
+.grafo-leyenda > summary { cursor: pointer; font-weight: 600; color: var(--ink-2); min-height: 44px; box-sizing: border-box; padding-block: 13px; line-height: 18px; }
 .grafo-leyenda__filas { display: flex; flex-direction: column; gap: 6px; }
 .grafo-leyenda__fila { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
 .grafo-leyenda__fila > .be-caps { min-width: 4.5em; }
-.leyenda-nodo { width: 14px; height: 14px; font-size: 0; box-shadow: none; }
+.leyenda-nodo { width: 16px; height: 16px; font-size: 0; }
+.grafo-leyenda .leyenda-nodo { --node-ring: none; }
 .grafo-lista { display: block; }
 .grafo-lista__cols { columns: 230px; column-gap: 12px; }
 .grafo-lista__sec { break-inside: auto; -webkit-box-decoration-break: clone; box-decoration-break: clone; margin: 0 0 12px; }
@@ -492,7 +543,12 @@ details.grafo-leyenda { display: block; }
 /* Lo de otras fechas se distingue por su palabra («ya pasó», «aún no») y un círculo más tenue, no por texto
    transparente: con opacidad .5 los nombres bajaban de 4,5:1. */
 .gnodo--pasado, .gnodo--futuro, .lista-fila--pasado, .lista-fila--futuro { opacity: 1; }
-.gnodo--pasado .be-node, .gnodo--futuro .be-node { opacity: .55; }
+/* La forma de lo de otras fechas no se atenúa con opacidad (bajaba de 3:1): conserva su borde con el color de su tipo y
+   se rellena más claro, con la letra en tinta. */
+.gnodo--pasado:not(.gnodo--incierto) .be-node, .gnodo--futuro:not(.gnodo--incierto) .be-node { --node-ring: inset 0 0 0 2.5px var(--node-color); --node-fill: color-mix(in srgb, var(--node-color) 22%, var(--paper)); color: var(--ink); }
+/* Después de la regla de otras fechas: el anillo de foco y el de la tarjeta fijada ganan también en ellas. */
+.gnodo:is(.gnodo--pasado, .gnodo--futuro):is(:hover, :focus-visible) .be-node { --node-ring: 0 0 0 3px #fff, 0 0 0 5px var(--gold), var(--shadow-2); }
+.gnodo:is(.gnodo--pasado, .gnodo--futuro)[aria-expanded="true"] .be-node { --node-ring: 0 0 0 3px var(--surface), 0 0 0 6px var(--ink); }
 .gnodo--pasado .be-gnode__label, .gnodo--futuro .be-gnode__label { color: var(--ink-2); font-weight: 500; }
 .lista-cuando { margin-left: 6px; font-size: var(--fs-2xs); font-weight: 700; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
 /* Las pestañas de los caminos parten en líneas en vez de desplazarse: su desplazamiento sacaba dos barras dentro de
@@ -522,9 +578,15 @@ details.grafo-leyenda { display: block; }
   .cadena-verbo, .cadena-fecha { background: var(--paper); position: relative; z-index: 1; padding: 0 4px; }
   .pregunta-fija { font-size: var(--fs-lg); }
   .pregunta-fija .casilla { flex: 1 1 130px; width: auto; min-width: 0; }
-  .gnodo .be-gnode__meta { display: none; }
 }
 /* En círculo y estrecho (pedido a mano), los rótulos más cortos se pisan menos entre vecinos. */
 @container (max-width: 480px) {
-  .gnodo, .gnodo .be-gnode__label { max-width: 104px; }
+  .gnodo:not(.gnodo--grupo), .gnodo .be-gnode__label, .gnodo .be-gnode__meta { max-width: 104px; }
+  .gnodo--grupo, .gnodo--grupo .be-gnode__label { max-width: none; }   /* la palabra entera: es lo que abre */
+  .gnodo--grupo .resto-num, .gnodo--grupo .resto-mas { display: none; }   /* «+12» ya está en el círculo */
+  .gnodo-centro .be-node--lg { width: 44px; height: 44px; font-size: 19px; }
+  .gnodo-centro .be-gnode__label { font-size: var(--fs-lg); }
+  .gnodo .gnodo-ref { display: block; }   /* el verbo en una línea y la referencia en la siguiente */
+  .gnodo .gnodo-sep { display: none; }
+  .gnodo-centro .be-gnode__label { white-space: normal; max-width: 150px; }   /* un nombre largo parte en dos líneas */
 }
