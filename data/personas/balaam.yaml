@@ -24,6 +24,7 @@ fuentes:
 - numeros-24
 - numeros-31
 - it-madian
+- deuteronomio-23
 enlaces:
 - titulo: 'Perspicacia: «Balaam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000543
@@ -45,6 +46,7 @@ relaciones:
   - numeros-22
   - it-beor
   - numeros-31
+  - deuteronomio-23
   razon: 'Nú 22:5: Balaam hijo de Beor.'
   estado: verificado
 - tipo: vivio_en
@@ -53,6 +55,7 @@ relaciones:
   fuentes:
   - numeros-22
   - it-petor
+  - deuteronomio-23
   razon: 'Nú 22:5: estaba en Petor, junto al Río, en su tierra natal.'
   estado: verificado
 - tipo: acompana
@@ -65,12 +68,20 @@ relaciones:
   estado: verificado
 - tipo: vivio_en
   lugar: mesopotamia
-  deducido: true
+  deducido: false
   fuentes:
+  - deuteronomio-23
   - numeros-23
+  - it-mesopotamia
+  - it-petor
   - it-aram
-  razon: 'Nú 23:7: Balac lo trajo de Aram, de las montañas del este. Perspicacia «Aram», núm. 5, lo sitúa en el norte de Mesopotamia,
-    en Aram-Naharaim.'
+  razon: Dt 23:4 lo llama Balaam de Petor de Mesopotamia (Aram-Naharaim en el hebreo, según Perspicacia «Petor»); Nú 23:7
+    dice que Balac lo trajo de Aram.
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La relación con Mesopotamia pasa de deducida a dicha por el texto: Dt 23:4 lo llama de Petor de Mesopotamia. Sus
+    relaciones con Beor y Petor citan también Dt 23.'
+  fuente: deuteronomio-23
 consultado: '2026-09-29'
 estado: verificado

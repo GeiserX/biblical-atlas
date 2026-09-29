@@ -4,6 +4,8 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para 1 y 2 Samuel
 
+- **Amalec (1Sa 15).** Dt 25:17-19 manda borrar a Amalec por lo de Refidim (`batalla-contra-amalec-en-refidim`); el suceso de Saúl lo pone en `menciona`.
+- **Rabá (2Sa 11:1; 12:26-31).** Es `raba`, con Filadelfia en `nombres`.
 - **David huye de Absalón.** Cuando 2 Samuel cree el suceso (2Sa 15:13-17:22), añade «Sl 3» a sus pasajes y ese suceso al tramo 1-8 de `data/cobertura/salmos.yaml`.
 - **La cueva del Salmo 142.** El encabezamiento remite a 1Sa 22:1 (Adulam) y a 1Sa 24:3 (En-guedí), y Perspicacia «Cueva» no elige. 1 Samuel decide a cuál de los dos sucesos se añade «Sl 142».
 - **Cus el benjaminita.** Existe (`cus-el-benjaminita`) desde el Salmo 7. Perspicacia duda entre la corte de Saúl y Simeí; si 1 o 2 Samuel lo aclara, se añade la relación.
@@ -30,15 +32,6 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Zorobabel.** Su relación con David es `antepasado` (antes decía «descendiente de David», al revés). Abiud va como antepasado suyo, no como hijo, porque Perspicacia «Abiud» lo deja abierto.
 - **Resá, Sealtiel y Nerí.** `resa` (Lu 3:27) va como descendiente de Zorobabel, con la relación `antepasado`, igual que Abiud. `sealtiel` lleva a `neri` como pariente sin grado, porque Perspicacia solo ve posible que fuera su yerno.
 - **Janai el gadita (1Cr 5:12).** Perspicacia «Janai» (`1200002318`) no es el Janaí de Lu 3:24, que ya existe como `janai-hijo-de-jose` (`1200002320`) con la fuente `it-janai-hijo-de-jose`. El gadita puede llevar `janai`, que queda libre; su propuesta añade `no_confundir_con` en las dos fichas.
-
-## Para Deuteronomio
-
-- **Pasajes paralelos ya puestos en sucesos de Éxodo.** Dt 5:4-27 en `diez-mandamientos`; Dt 9:9 en `primeros-cuarenta-dias-de-moises-en-el-sinai`; Dt 9:10, 11 en `dios-da-a-moises-las-tablas-del-testimonio`; Dt 9:12-14, 19, 26-29 en `moises-ruega-por-el-pueblo`; Dt 9:15-17, 21 en `moises-rompe-las-tablas`; Dt 9:16 en `becerro-de-oro`; Dt 9:20 en `moises-pide-perdon-por-el-pueblo`; Dt 9:18, 25 y Dt 10:1-5, 10 en `moises-recibe-las-segundas-tablas`, porque los 40 días postrado de Dt 9:18 y 9:25 son los segundos (Éx 34:28). Cada uno va en el tramo de su capítulo.
-- **Masá.** Dt 6:16, 9:22 y 33:8 hablan del sitio de Refidim: `masa`.
-- **Sucesos de Números con pasaje de Deuteronomio ya puesto.** Dt 1:22, 23 en `moises-envia-a-los-doce-espias`; Dt 1:24, 25 en `los-espias-recorren-canaan`; Dt 1:26-33 en `israel-se-niega-a-entrar-en-canaan`; Dt 1:34-40 en `jehova-condena-a-israel-a-40-anos-en-el-desierto`; Dt 1:41-46 en `israel-es-derrotado-hasta-horma`; Dt 2:26-36 en `israel-vence-a-sehon`; Dt 3:1-7 en `israel-vence-a-og`; Dt 3:12-20 en `moises-da-a-gad-y-ruben-la-tierra-al-este-del-jordan`; Dt 3:14 en `jair-toma-havot-jair`; Dt 3:15 en `los-hijos-de-makir-toman-galaad`; Dt 9:22 en `fuego-de-jehova-en-tabera` y `el-pueblo-pide-carne`; Dt 10:6 en `muerte-de-aaron`; Dt 11:6 en `la-tierra-se-traga-a-datan-y-abiram`; Dt 24:9 en `miriam-y-aaron-hablan-contra-moises`. Cada uno va en el tramo de su capítulo.
-- **Pasajes que aún no están en ningún suceso.** Dt 4:3 va a `israel-adora-al-baal-de-peor`; Dt 4:41-43 nombra ciudades de refugio (la ley es `jehova-da-la-ley-de-las-ciudades-de-refugio`); Dt 31:7, 8, 14, 23 decide si es un suceso propio o un pasaje más de `moises-nombra-a-josue-su-sucesor` (Nú 27:12-23).
-- **Orden de 1473 a.e.c.** Desde la victoria sobre Og, los sucesos de Números llevan c. 1473 y la serie `numeros` (21021 a 36001). `muerte-de-moises` y `entrada-en-canaan`, del mismo año, no tienen `orden_relato`, y `build.py` pone la serie vacía antes que `numeros`: la muerte de Moisés sale antes que Sehón. Deuteronomio les da un orden que los ponga detrás; `tras` solo no basta.
-- **Lugares de Números.** Tabera, Quibrot-Hataavá, Hazerot, Pisgá, Peor, Ezión-Guéber (Dt 2:8) y las llanuras de Moab ya existen: `tabera`, `quibrot-hataava`, `hazerot`, `pisga`, `peor`, `ezion-gueber`, `llanuras-deserticas-de-moab`. Moserá, Beerot Bene-Jaacán y Gudgodá (Dt 10:6, 7) son `moserot`, `bene-jaacan` y `hor-haguidgad`. `monte-nebo` ya no lleva Pisgá en `nombres`: Dt 3:27 y 34:1 citan las dos fichas.
 
 ## Para Nehemías, Hechos y Hebreos
 
@@ -88,6 +81,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 ## Para 1 y 2 Reyes
 
 - **Sarepta (1Re 17).** `sarepta` existe desde Lu 4:26. Faltan la relación `elias-profeta` `vivio_en` `sarepta` (1Re 17:9, 10) y el suceso de la viuda; cuando exista, va en `menciona` del tramo Lucas 4:23-27.
+- **Elat y Ramot-Galaad.** `elat` (Elot en `nombres`; 1Re 9:26; 2Re 14:22; 16:6) y `ramot-galaad` (1Re 22) ya existen.
 - **La reina de Saba (1Re 10).** Lu 11:31 y Mt 12:42 la llaman reina del sur. El lugar `saba` es el de Job 6:19. El reino de Saba (Perspicacia «Seba», núm. 6) ya existe como `reino-de-saba`, desde Sl 72 y Joe 3:8: 1 Reyes lo usa y lo añade a `menciona` de los tramos Lucas 11:29-36 y Mateo 12:38-42.
 - **Obras y riqueza de Salomón.** Ec 2:4-9 cuenta sus casas, viñas, estanques, siervos, oro y cantores, que narran 1Re 7:1-8, 9:17-19 y 10:14-29. Cuando 1 Reyes cree esos sucesos, añade «Ec 2:4-9» a sus `pasajes` y el suceso al tramo 1-11 de `data/cobertura/eclesiastes.yaml`. El único que ya existe, `flota-de-salomon-a-ofir`, lleva Ec 2:8 desde Eclesiastés.
 
@@ -189,6 +183,15 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **Sumo sacerdocio de Eleazar.** Existe `sumo-sacerdocio-de-aaron` (1512-1474 a.e.c.). El de Eleazar empieza en `muerte-de-aaron`; no se creó porque Perspicacia no fecha su muerte (Jos 24:33).
 - **Territorios de Gad y Rubén.** Nú 32 los reparte como tribus y no creó lugares `gad` ni `ruben`; si Josué 13 los necesita, los crea como `juda` o `manases`.
 - **Ciudades de refugio y de los levitas (Jos 20 y 21).** La ley está en `jehova-manda-dar-ciudades-a-los-levitas` y `jehova-da-la-ley-de-las-ciudades-de-refugio` (Nú 35).
+- **Orden de 1473 a.e.c.** Desde la victoria sobre Og hasta el Jordán, todo va en la serie `numeros`: Números con su capítulo y versículo (21021 a 36001), Deuteronomio con 100000 más (`muerte-de-moises` es 134001) y Josué con 200000 más (`entrada-en-canaan` es 203014). `build.py` ordena las series por su nombre, así que una serie `josue` saldría antes que Números. Los sucesos de Jos 1-5 siguen esa cuenta, que ya está en la sección 6 de `versiculos.md`.
+- **Lugares de Deuteronomio.** `astarot`, `edrei`, `saleca`, `argob`, `guesur` y `maaca` (Jos 12:4, 5; 13:11-13), `bet-peor` (Jos 13:20), `bezer`, `ramot-galaad` y `golan` (Jos 20:8; 21), `araba`, `sefela`, `monte-ebal` y `monte-guerizim` ya existen.
+- **La meseta.** Dt 3:10 y 4:43 la nombran y no tiene ficha: Perspicacia «Meseta» (documento 1200004297) la trata como término. Si Jos 13:9-17 o 20:8 necesitan situarla, Josué la crea.
+- **Ebal y Guerizim (Jos 8:30-35).** Josué crea el suceso, que cumple lo mandado en `moises-manda-escribir-la-ley-en-piedras-en-el-ebal` y `moises-anuncia-las-bendiciones-y-las-maldiciones` (Dt 11:29; 27:1-13): van en `menciona` de su tramo.
+- **Guilgal.** `guilgal-frente-a-guerizim-y-ebal` es el de Dt 11:30, porque Perspicacia no asegura que sea el núm. 2. El Guilgal del campamento (Jos 4:19) lleva otro id.
+- **Rabá.** `raba` es Rabá de los ammonitas («Rabá», núm. 1). La de Judá (Jos 15:60), núm. 2, lleva otro id.
+- **Ciudades de refugio del oeste.** Moisés apartó las del este (`moises-aparta-tres-ciudades-de-refugio`); Dt 19:1-13 está en `jehova-da-la-ley-de-las-ciudades-de-refugio`. Jos 20:7 nombra Hebrón, Siquem y Quedes.
+- **Josué y Moisés.** `jehova-comisiona-a-josue-en-la-tienda-de-reunion` (Dt 31:14-23) y `moises-nombra-a-josue-su-sucesor` (Nú 27; Dt 3:21-28; 34:9) ya existen: Jos 1:1-9 es otro suceso.
+- **Anac en Deuteronomio.** Dt 9:2 cita el dicho sobre los hijos de Anac; el tramo Dt 9:1-6 lo explica como pueblo. Si Josué 15:13, 14 crea la persona, la añade a `menciona` de ese tramo.
 
 ## Para Jueces
 

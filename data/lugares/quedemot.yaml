@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quedemot
+nombre: Quedemot
+nombres:
+- nombre: Quedemot
+  nota: De una raíz que significa «este», según Perspicacia.
+- nombre: Desierto de Quedemot
+  nota: La región desértica que rodeaba la ciudad, desde donde Moisés envió mensajeros a Sehón (Dt 2:26).
+tipo: ciudad
+lat: 31.61555
+lon: 35.87159
+precision: incierto
+coord_fuente: openbible:a416b43
+coord_url: https://www.openbible.info/geo/ancient/a416b43/kedemoth
+coord_nota: 'Punto de Qasr ez-Zaʽfaran, cuarta resolución de OpenBible: es el sitio que Perspicacia da como posible, unos
+  16 km al noreste de Dibón.'
+resumen: Ciudad al este del Jordán, cerca de donde empieza el valle del Arnón, que dio nombre al desierto de alrededor. Fue
+  de Rubén y después de los levitas de Merarí.
+razon: 'Perspicacia «Quedemot»; Dt 2:26. La ubicación es una propuesta de los eruditos que Perspicacia recoge. OpenBible:
+  solo el punto.'
+fuentes:
+- it-quedemot
+- openbible-geo
+- deuteronomio-2
+enlaces:
+- titulo: 'Perspicacia: «Quedemot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002581
+  tipo: perspicacia
+- titulo: Deuteronomio 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/2
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

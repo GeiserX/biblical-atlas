@@ -15,6 +15,7 @@ fuentes:
 - numeros-16
 - it-eliab
 - numeros-26
+- deuteronomio-11
 enlaces:
 - titulo: 'Perspicacia: «Abiram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000048
@@ -34,5 +35,6 @@ relaciones:
   - it-eliab
   - it-abiram
   - numeros-26
+  - deuteronomio-11
   razon: 'Nú 16:1, 12: Abiram es hijo de Eliab.'
   estado: verificado
