@@ -29,6 +29,7 @@ relaciones:
 - tipo: acompana
   persona: natanael
   relacion: amigo
+  relacion_inversa: amigo
   deducido: false
   fuentes:
   - juan-1

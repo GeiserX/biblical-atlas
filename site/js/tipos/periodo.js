@@ -43,7 +43,7 @@ function fichaPeriodo(id) {
         ${epoca && BE.sincronia ? `<button type="button" class="be-btn be-btn--sm" data-sinc-abrir="${esc(epoca.id)}">¿Quién había? Sincronía</button>` : ''}
       </div>
     </div><div class="be-card__foot">${BE.estadoHtml(p.estado)}</div></section>
-    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cuándo</h3>${BE.fechasHtml(p, tr ? tr[0] + 0.01 : null)}</div></section>
+    <section class="be-card ficha-sec"><div class="be-card__pad"><h3 class="be-card__eyebrow">Cuándo</h3>${BE.fechasHtml(p, tr ? BE.inicioPeriodo(p) + 0.01 : null)}</div></section>
     ${secciones.join('')}
     ${BE.porQueHtml(p, BE.notaHtml(p.nota))}`;
 }
@@ -53,18 +53,45 @@ BE.tipo('periodo', {
   nodo: 'periodo',
   existe: (id) => (BE.D.periodos || []).some((p) => p.id === id),
   nombre: (id) => buscaPeriodo(id).nombre,
+  // Sus lugares y lo que pasó en ellos mientras duró (be-64b.7): con Babilonia elegida, Nabucodonosor, Daniel llevado a
+  // Babilonia o su caída se resaltan y la reproducción se para en ellos, en lugar de pasar siglos sin que se vea nada.
   implicados(id, r) {
     const p = buscaPeriodo(id);
     r.claves.add(`periodo:${id}`); (p.lugares || []).forEach((x) => r.lugares.add(x));
+    // Los sucesos de su historia que no pasan en sus lugares los nombra el dato: la caída de Samaria es de Asiria.
+    (p.sucesos || []).forEach((e) => r.claves.add(`evento:${e}`));
+    const tr = BE.tramoPeriodo(p), a = BE.inicioPeriodo(p);
+    if (!tr || !(p.lugares || []).length) return;
+    for (const e of BE.D.eventos || []) {
+      const m = BE.momentoEvento(e);
+      if (m != null && m >= a && m < tr[1] && (e.lugares || []).some((x) => p.lugares.includes(x))) r.claves.add(`evento:${e.id}`);
+    }
   },
-  // Salta al principio del periodo. No cuenta cuando lo implica otra selección (un lugar no salta a su gobernador).
-  momento: (id) => { const tr = tramo(buscaPeriodo(id).fecha); return tr ? tr[0] + 0.01 : null; },
+  // Salta al principio de lo que sabemos del periodo (BE.inicioPeriodo), nunca a su fin. Si el cursor ya está dentro
+  // (Roma elegida en 49 e.c.), no se mueve, como con un lugar. No cuenta cuando lo implica otra selección (un lugar no
+  // salta a su gobernador).
+  momento: (id) => {
+    const p = buscaPeriodo(id), a = BE.inicioPeriodo(p), tr = BE.tramoPeriodo(p);
+    if (a == null) return null;
+    return tr && E.t >= a && E.t < tr[1] ? null : a + 0.01;
+  },
+  // Una era o una potencia se enseña entera en la línea al elegirla, desde ese principio: así la reproducción la recorre
+  // en un par de minutos. Lo pide base.js al seleccionar con el cursor (_local/tiempo/PATCH-base.md).
+  encuadre: (id) => {
+    const p = buscaPeriodo(id), tr = BE.tramoPeriodo(p);
+    // Roma dura hasta 476, pero la línea acaba en BE.T_MAX: el tramo se corta ahí, o la ventana se correría hacia atrás.
+    return tr && (p.tipo === 'era' || p.tipo === 'potencia') ? [BE.inicioPeriodo(p), Math.min(tr[1], BE.T_MAX)] : null;
+  },
   ficha: fichaPeriodo,
   buscar(q, nq, puntuar) {
     const out = [];
     for (const p of BE.D.periodos || []) {
       const pp = puntuar([p.nombre, p.buscar].filter(Boolean));
-      if (pp) out.push({ grupo: 'Periodos', sel: { tipo: 'periodo', id: p.id }, titulo: p.nombre, meta: `${TIPOS[p.tipo] || p.tipo} · ${p.fecha?.texto || ''}`, puntos: pp });
+      // Quien busca «Babilonia» suele querer también la potencia: va justo debajo del lugar que fue su sede (be-64b.7).
+      const sede = p.tipo === 'potencia' && BE.L[p.lugares?.[0]];
+      const ps = sede && puntuar([sede.nombre]);
+      if (ps) out.push({ grupo: 'Lugares', sel: { tipo: 'periodo', id: p.id }, titulo: p.nombre, meta: `potencia mundial con sede en ${sede.nombre}`, puntos: ps - 0.5 });
+      else if (pp) out.push({ grupo: 'Periodos', sel: { tipo: 'periodo', id: p.id }, titulo: p.nombre, meta: `${TIPOS[p.tipo] || p.tipo} · ${p.fecha?.texto || ''}`, puntos: pp });
     }
     return out;
   },

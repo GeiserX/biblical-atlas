@@ -490,9 +490,16 @@ function tramoPotencia(p) {
 }
 /** Tramo de cualquier periodo: el de su fecha, salvo las potencias con un extremo sin fecha (tramoPotencia). */
 const tramoPeriodo = (p) => (p?.tipo === 'potencia' ? tramoPotencia(p) : tramo(p?.fecha));
+/** Dónde empieza lo que sabemos de un periodo (be-64b.7): su principio con fecha; si no lo tiene, el año desde el que ya
+    consta (Asiria, 740 a.e.c.); si tampoco, el principio del tramo que se dibuja. Nunca su fin: elegir Asiria no lleva a 632. */
+function inicioPeriodo(p) {
+  const tr = tramoPeriodo(p);
+  if (!tr) return null;
+  return p.fecha?.desde ?? (p.consta_desde != null && p.consta_desde < tr[1] ? p.consta_desde : tr[0]);
+}
 
 Object.assign(BE, {
   prepararParadas: () => prepararParadas('pablo'), dondeEsta, viajeActual, ventanaPablo, ventanaCarta, ventanaEvento, momentoCarta, momentoEvento,
-  donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
+  donde, sucesoEn, ventana, estancias, presentes, personasConEstancias, edad, tramoPotencia, tramoPeriodo, inicioPeriodo, ventanaFecha, inicioMes, diaHebreo, anioHebreo, nombreMes, eventoEstimado, calendario, DIA, MES_LUNAR,
 });
 })();

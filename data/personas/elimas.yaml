@@ -39,6 +39,7 @@ relaciones:
 - tipo: acompana
   persona: sergio-paulo
   relacion: consejero
+  relacion_inversa: lo tenía de consejero
   deducido: true
   fuentes:
   - it-bar-jesus
