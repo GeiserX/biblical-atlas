@@ -56,6 +56,31 @@ fuentes:
 - exodo-39
 - exodo-40
 - exodo-28
+- levitico-1
+- levitico-4
+- levitico-5
+- levitico-6
+- levitico-7
+- levitico-8
+- levitico-9
+- levitico-10
+- levitico-11
+- levitico-12
+- levitico-13
+- levitico-14
+- levitico-15
+- levitico-16
+- levitico-17
+- levitico-18
+- levitico-19
+- levitico-20
+- levitico-21
+- levitico-22
+- levitico-23
+- levitico-24
+- levitico-25
+- levitico-26
+- levitico-27
 enlaces:
 - titulo: 'Perspicacia: «Moisés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003118
@@ -74,6 +99,7 @@ relaciones:
   - exodo-4
   - exodo-7
   - exodo-28
+  - levitico-16
   razon: 'Perspicacia «Moisés», párr. 2: Aarón era tres años mayor que él (Éx 6:20).'
   estado: verificado
 - tipo: pariente
@@ -83,7 +109,7 @@ relaciones:
   fuentes:
   - it-moises
   - exodo-6
-  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Qohat (Éx 6:16-20).'
+  razon: 'Perspicacia «Moisés», párr. 2: su padre Amram era nieto de Leví a través de Cohat (Éx 6:16-20).'
   estado: verificado
 - tipo: nacio_en
   lugar: egipto
@@ -195,5 +221,9 @@ relaciones:
   razon: 'Éx 2:21: se casa con la hija de Reuel, que la nota de 2:18 identifica con Jetró.'
   estado: verificado
 perspicacia: '1200003118'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Grafía: la razón de su parentesco con Leví escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
+  fuente: exodo-6
 consultado: '2026-09-29'
 estado: verificado

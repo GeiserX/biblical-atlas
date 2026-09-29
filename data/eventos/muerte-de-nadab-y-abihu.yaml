@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-nadab-y-abihu
+titulo: Muerte de Nadab y Abihú por ofrecer fuego no autorizado
+fecha:
+  desde: -1511
+  hasta: -1511
+  precision: día
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: 8 de abib (nisán) de 1512 a.e.c.
+  detalle:
+    mes: nisan
+    dia: 8
+orden_relato:
+  serie: levitico
+  orden: 10001
+lugares:
+- desierto-de-sinai
+personas:
+- nadab-hijo-de-aaron
+- abihu
+- aaron
+- moises
+- misael-hijo-de-uziel
+- elizafan-hijo-de-uziel
+- eleazar-hijo-de-aaron
+- itamar
+pasajes:
+- Le 10:1-11
+resumen: Nadab y Abihú ofrecen incienso con un fuego que Jehová no pidió, y un fuego suyo los mata. Misael y Elzafán sacan
+  los cuerpos; Aarón y sus otros hijos no guardan luto. Jehová veda el vino a quien sirve.
+razon: 'Perspicacia «Nadab», núm. 1, y «Abihú»: pasó probablemente antes de acabar el octavo día, que «Sacerdote» fecha el
+  8 de nisán de 1512 a.e.c., y la ley del vino vino justo después. «Levítico, Libro de» agrupa Le 10:1-11.'
+fuentes:
+- levitico-10
+- it-nadab
+- it-abihu
+- it-sacerdote
+- it-misael
+- it-elizafan
+- it-tabernaculo
+- it-levitico-libro
+enlaces:
+- titulo: Levítico 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/3/10
+  tipo: biblia
+- titulo: 'Perspicacia: «Abihú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000039
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Nadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

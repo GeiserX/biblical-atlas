@@ -26,6 +26,10 @@ fuentes:
 - it-abihu
 - exodo-24
 - exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Nadab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
@@ -45,6 +49,7 @@ relaciones:
   - exodo-6
   - it-nadab
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -65,6 +70,7 @@ relaciones:
   - it-nadab
   - it-abihu
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: Abihú, el siguiente hijo de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -74,6 +80,7 @@ relaciones:
   fuentes:
   - exodo-6
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: Eleazar es otro hijo de Aarón.'
   estado: verificado
 - tipo: pariente
@@ -83,6 +90,7 @@ relaciones:
   fuentes:
   - exodo-6
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: Itamar es otro hijo de Aarón.'
   estado: verificado
 - tipo: nacio_en
@@ -91,6 +99,23 @@ relaciones:
   fuentes:
   - it-nadab
   razon: 'Perspicacia «Nadab», núm. 1: nació en Egipto y salió con Israel en el éxodo.'
+  estado: verificado
+- tipo: murio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  deducido: true
+  fuentes:
+  - levitico-10
+  - it-nadab
+  - it-tabernaculo
+  razon: 'Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

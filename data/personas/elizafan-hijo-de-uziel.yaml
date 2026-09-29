@@ -9,10 +9,11 @@ perspicacia: 1200001324#1
 desambiguacion: Elizafán hijo de Uziel; no Elizafán hijo de Parnac, el principal de Zabulón.
 resumen: Levita, hijo de Uziel y primo de Aarón. Con Misael retiró los cadáveres de Nadab y Abihú, y fue cabeza de una familia
   de levitas.
-razon: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22.
+razon: Perspicacia «Elizafán, Elzafán», núm. 1; Éx 6:22; Le 10:4, 5.
 fuentes:
 - it-elizafan
 - exodo-6
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Elizafán, Elzafán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001324
@@ -28,7 +29,13 @@ relaciones:
   fuentes:
   - exodo-6
   - it-elizafan
+  - levitico-10
   razon: 'Éx 6:22: hijo de Uziel.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen cuenta que retiró los cuerpos de Nadab y Abihú y lo llama primo de Aarón, pero la ficha no citaba Le
+    10, de donde sale.
+  fuente: levitico-10
 consultado: '2026-09-29'
 estado: verificado

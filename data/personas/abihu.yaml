@@ -22,6 +22,10 @@ fuentes:
 - si-3
 - exodo-24
 - exodo-28
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Abihú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000039
@@ -41,6 +45,7 @@ relaciones:
   - exodo-6
   - it-abihu
   - exodo-28
+  - levitico-10
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -58,6 +63,23 @@ relaciones:
   fuentes:
   - it-abihu
   razon: 'Perspicacia «Abihú», párr. 1: nació en Egipto y era ya adulto en el éxodo.'
+  estado: verificado
+- tipo: murio_en
+  lugar: desierto-de-sinai
+  fecha:
+    desde: -1511
+    hasta: -1511
+    precision: año
+    aprox: false
+    tipo: anclada
+    cronologia: tnm
+    texto: 1512 a.e.c.
+  deducido: true
+  fuentes:
+  - levitico-10
+  - it-abihu
+  - it-tabernaculo
+  razon: 'Le 10:1, 2: murió ante Jehová, junto a la tienda de reunión, que se montó en el desierto de Sinaí (Perspicacia «Tabernáculo»).'
   estado: verificado
 consultado: '2026-09-29'
 estado: verificado

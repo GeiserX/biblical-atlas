@@ -4,7 +4,7 @@ nombre: Coré
 nombres:
 - nombre: Coré
 perspicacia: 1200002648#3
-resumen: Levita, hijo de Izhar y descendiente de Qohat. En el desierto encabezó con Datán y Abiram una rebelión contra Moisés
+resumen: Levita, hijo de Izhar y descendiente de Cohat. En el desierto encabezó con Datán y Abiram una rebelión contra Moisés
   y Aarón y murió en el fuego enviado por Jehová. Sus hijos sobrevivieron; de ellos salieron cantores del templo.
 razon: Perspicacia «Coré», núm. 3, y «Coreíta», párr. 1 y 3. Varios salmos, empezando por el 42, el 44 y el 45, se atribuyen
   en su encabezamiento a los hijos de Coré, o sea, a sus descendientes.
@@ -31,6 +31,10 @@ enlaces:
 - titulo: Éxodo 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Grafía: el resumen escribe Cohat, como Éx 6:16 en la TNM; Qohat es la grafía de Perspicacia.'
+  fuente: exodo-6
 consultado: '2026-09-29'
 estado: verificado
 relaciones:

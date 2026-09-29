@@ -12,6 +12,10 @@ fuentes:
 - exodo-6
 - exodo-28
 - exodo-38
+- levitico-8
+- it-instalacion
+- levitico-9
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Itamar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002236
@@ -32,6 +36,7 @@ relaciones:
   - it-itamar
   - exodo-28
   - exodo-38
+  - levitico-10
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente

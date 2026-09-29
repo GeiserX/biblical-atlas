@@ -8,10 +8,11 @@ desambiguacion: Uziel hijo de Cohat; no el benjaminita, los levitas de tiempos d
   de Nehemías.
 resumen: Levita, último hijo de Cohat en la lista y tío de Moisés y Aarón. Sus hijos Misael, Elzafán y Sitrí encabezaron familias
   de levitas.
-razon: Perspicacia «Uziel», núm. 1; Éx 6:18, 22.
+razon: Perspicacia «Uziel», núm. 1; Éx 6:18, 22; Le 10:4.
 fuentes:
 - it-uziel
 - exodo-6
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Uziel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004536
@@ -29,5 +30,9 @@ relaciones:
   - it-uziel
   razon: 'Éx 6:18: cuarto de los hijos de Cohat.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen lo llama tío de Aarón; Le 10:4 lo dice así y la ficha no lo citaba.
+  fuente: levitico-10
 consultado: '2026-09-29'
 estado: verificado
