@@ -14,7 +14,7 @@ fecha:
   tipo: anclada
   cronologia: tnm
   texto: c. 844-803 a.e.c.
-resumen: Hijo de Jehoás. Devolvió a Israel el límite desde Lebó-Hamat hasta el mar del Arabá, como había dicho Jonás. Hubo
+resumen: Hijo de Jehoás. Devolvió a Israel el límite desde Lebó-Hamat hasta el mar Salado, como había dicho Jonás. Hubo
   prosperidad, pero Amós y Oseas denunciaron la corrupción.
 razon: Perspicacia «Jeroboán», núm. 2, párr. 11-13; 2Re 14:23-29. Comienzo en A6-A; Perspicacia «Zacarías», núm. 14, y A6-B
   ponen su muerte en 803.
@@ -54,6 +54,9 @@ relaciones:
   estado: verificado
 perspicacia: 1200002431#2
 historial:
+- fecha: '2026-09-29'
+  cambio: El resumen deja de repetir la frase de 2Re 14:25 y dice «hasta el mar Salado».
+  fuente: it-jeroboan
 - fecha: '2026-09-29'
   cambio: 'El límite norte que recobró era Lebó-Hamat, no Hamat: así lo dice 2Re 14:25, y Am 6:14 usa el mismo par de límites.
     Hamat es la ciudad, que 2Re 14:28 trata aparte.'
