@@ -12,6 +12,7 @@ fuentes:
 - it-siquem
 - genesis-33
 - genesis-34
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Siquem»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003978
@@ -28,6 +29,7 @@ relaciones:
   - it-siquem
   - genesis-33
   - genesis-34
+  - josue-24
   razon: 'Gé 33:19: Hamor era padre de Siquem.'
   estado: verificado
 - tipo: vivio_en

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hesmon
+nombre: Hesmón
+nombres:
+- nombre: Hesmón
+tipo: ciudad
+lat: null
+lon: null
+precision: zona
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: A menos de 30 km de Bet-Pélet
+  geometria:
+    tipo: zona
+    lat: 31.30992
+    lon: 34.9078
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-hesmon
+  - openbible-geo
+  razon: El texto la nombra entre Hazar-Gadá y Bet-Pélet; OpenBible da este radio alrededor de Bet-Pélet.
+  coord_fuente: openbible:ad2d29f
+  coord_url: https://www.openbible.info/geo/ancient/ad2d29f/heshmon
+resumen: Ciudad del sur de Judá. Hoy no se puede señalar dónde estaba.
+razon: Perspicacia «Hesmón»; Jos 15:27. OpenBible solo la pone a menos de 30 km de Bet-Pélet.
+fuentes:
+- it-hesmon
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Hesmón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002007
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dilean
+nombre: Dileán
+nombres:
+- nombre: Dileán
+tipo: ciudad
+lat: 31.50259
+lon: 34.7583
+precision: incierto
+coord_fuente: openbible:aecc492
+coord_url: https://www.openbible.info/geo/ancient/aecc492/dilean
+coord_nota: Tel Nagila, primera identificación de OpenBible, que algunos geógrafos proponen según Perspicacia.
+resumen: Ciudad de la Sefelá de Judá. Su sitio es incierto; hay quien la pone en Tel Nagila, unos 10 km al suroeste de Lakís.
+razon: 'Perspicacia «Dileán»; Jos 15:38. OpenBible: solo el punto.'
+fuentes:
+- it-dilean
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Dileán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001177
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

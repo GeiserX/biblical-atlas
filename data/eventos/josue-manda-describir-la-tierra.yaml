@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-manda-describir-la-tierra
+titulo: Josué manda describir la tierra en siete partes
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras la conquista general y antes de la muerte de Josué)'
+lugares:
+- silo
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 18:2-9
+resumen: Siete tribus siguen sin herencia. Josué les reprocha la demora y envía tres hombres por tribu a recorrer la tierra;
+  vuelven al campamento de Siló con un libro que la divide en siete partes.
+razon: El estudio 3 cierra la conquista general en 1467 a.e.c. y pone hacia 1450 la muerte de Josué; el reparto en Siló cae
+  entre las dos (Perspicacia «Siló», párr. 3). Jos 18:2-9.
+fuentes:
+- josue-18
+- si-3
+- it-silo
+enlaces:
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+orden_relato:
+  serie: josue
+  orden: 18002
+consultado: '2026-09-29'
+estado: verificado

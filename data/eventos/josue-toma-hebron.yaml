@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josue-toma-hebron
+titulo: Josué toma Hebrón
+fecha:
+  desde: -1472
+  hasta: -1466
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+orden_relato:
+  serie: josue
+  orden: 10036
+lugares:
+- hebron
+- eglon
+personas:
+- josue-hijo-de-nun
+pasajes:
+- Jos 10:36, 37
+resumen: Josué sube de Eglón a Hebrón y la conquista con su rey y sus pueblos, sin dejar a nadie con vida. El rey que muere
+  aquí no se nombra; Hoham ya había caído en Maquedá.
+razon: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal.'
+fuentes:
+- josue-10
+- si-3
+- it-josue
+- it-hebron
+enlaces:
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

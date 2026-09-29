@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zaretan
+nombre: Zaretán
+nombres:
+- nombre: Zaretán
+tipo: ciudad
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Orilla oeste del Jordán, cerca de Adán
+  geometria:
+    tipo: zona
+    lat: 32.13
+    lon: 35.52
+    radio_km: 12
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-zaretan
+  - it-adan
+  razon: Perspicacia deduce de Jos 3:16 y 1Re 7:46 que quedaba al oeste del río, a poca distancia de Adán y de Sucot.
+  coord_fuente: calculo
+  nota: 'Centro: unos 4 km al noroeste de Tell ed-Damiyeh, el punto de OpenBible para Adán, ya del lado oeste del río. Radio
+    nuestro.'
+- nombre: Qarn Sartaba, frente a Adán
+  geometria:
+    tipo: punto
+    lat: 32.09583
+    lon: 35.46139
+  estado: alternativa
+  fuentes:
+  - it-zaretan
+  - openbible-geo
+  razon: 'Perspicacia recoge esta propuesta: un cerro al otro lado del río desde Adán. Encaja mal con 1Re 4:12, aunque Perspicacia
+    apunta cómo podría conciliarse.'
+  coord_fuente: openbible:afa84ca
+  coord_url: https://www.openbible.info/geo/ancient/afa84ca/zarethan
+  nota: Identificación de OpenBible en Qarn Sartaba, su primera resolución.
+- nombre: Tell es-Saʽidiyeh, al este del Jordán
+  geometria:
+    tipo: punto
+    lat: 32.26769
+    lon: 35.577241
+  estado: descartado_nivel_1
+  fuentes:
+  - it-zaretan
+  - openbible-geo
+  razon: Primera identificación de OpenBible. Perspicacia dice que los sitios al este del río no encajan con el contexto,
+    aunque en este aparecieron muchos objetos de bronce.
+  coord_fuente: openbible:afa84ca
+  coord_url: https://www.openbible.info/geo/ancient/afa84ca/zarethan
+  nota: Primera identificación de OpenBible, primera resolución.
+resumen: Lugar del valle del Jordán que sirve para situar Adán, donde se represó el río, y el sitio donde se fundió el cobre
+  del templo. Perspicacia lo cree en la orilla oeste, sin sitio seguro.
+razon: 'Perspicacia «Zaretán»; Jos 3:16 y 1Re 7:46. Tres candidatos, porque Perspicacia no se decide por ningún sitio. OpenBible:
+  solo los puntos.'
+fuentes:
+- it-zaretan
+- openbible-geo
+- josue-3
+enlaces:
+- titulo: 'Perspicacia: «Zaretán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004664
+  tipo: perspicacia
+- titulo: Josué 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/3
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

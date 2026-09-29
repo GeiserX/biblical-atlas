@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: racon
+nombre: Racón
+nombres:
+- nombre: Racón
+- nombre: Raqón
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 32.130826
+lon: 34.787262
+precision: incierto
+coord_fuente: openbible:aa3e5ae
+coord_url: https://www.openbible.info/geo/ancient/aa3e5ae/rakkon
+coord_nota: Punto de OpenBible en Tell er-Reqqeit.
+resumen: Ciudad de la frontera de Dan que se identifica con reservas con Tell er-Reqqeit, en la costa, un poco al norte de
+  Tel Aviv-Yafo.
+razon: 'Perspicacia «Raqón»; Jos 19:46. OpenBible: solo el punto.'
+fuentes:
+- it-raqon
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Raqón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003628
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

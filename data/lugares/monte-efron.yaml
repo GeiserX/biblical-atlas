@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: monte-efron
+nombre: Monte Efrón
+nombres:
+- nombre: Monte Efrón
+tipo: monte
+lat: 31.796944
+lon: 35.144167
+precision: incierto
+coord_fuente: openbible:a75aff4
+coord_url: https://www.openbible.info/geo/ancient/a75aff4/mount-ephron
+coord_nota: Al-Qastal, única identificación de OpenBible; Perspicacia no da sitio.
+resumen: Cordillera de la frontera norte de Judá, entre el manantial de Neftóah y Quiryat-Jearim. La frontera pasaba por sus
+  ciudades, que el texto no nombra.
+razon: 'Perspicacia «Efrón», núm. 2; Jos 15:9. No es Efrón el hitita. OpenBible: solo el punto.'
+fuentes:
+- it-efron
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Efrón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001408
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

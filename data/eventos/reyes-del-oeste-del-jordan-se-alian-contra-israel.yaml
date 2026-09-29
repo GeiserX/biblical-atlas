@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: reyes-del-oeste-del-jordan-se-alian-contra-israel
+titulo: Los reyes al oeste del Jordán se alían contra Israel
+fecha:
+  desde: -1472
+  hasta: -1466
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+orden_relato:
+  serie: josue
+  orden: 9001
+lugares:
+- rio-jordan
+- sefela
+- mar-grande
+- libano
+personas:
+- adoni-zedec
+presentes: []
+pasajes:
+- Jos 9:1, 2
+resumen: Al saber lo que Israel ha hecho, los reyes de la montaña, la Sefelá, la costa del mar Grande y la zona del Líbano,
+  de seis pueblos cananeos, se unen para luchar contra Josué.
+razon: 'Entre la entrada en Canaán (1473 a.e.c.) y el fin de la conquista general (1467 a.e.c.), estudio 3. Perspicacia «Josué»,
+  núm. 1: tras Hai y el Ebal. Perspicacia «Adoni-zédeq» pone a este rey al frente de la alianza.'
+fuentes:
+- josue-9
+- si-3
+- it-josue
+- it-adoni-zedeq
+enlaces:
+- titulo: Josué 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/9
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: nahalal
+nombre: Nahalal
+nombres:
+- nombre: Nahalal
+- nombre: Nahalol
+  nota: Así la llama Jue 1:30.
+tipo: ciudad
+lat: 32.67914
+lon: 35.19695
+precision: incierto
+coord_fuente: openbible:ac69561
+coord_url: https://www.openbible.info/geo/ancient/ac69561/nahalal
+coord_nota: Punto de OpenBible en Horbat Sefan. Perspicacia dice que su ubicación es incierta.
+resumen: Ciudad de Zabulón dada a los levitas meraritas. Zabulón no echó a sus cananeos, sino que los puso a trabajos forzados.
+  No se sabe dónde estaba.
+razon: 'Perspicacia «Nahalal»; Jos 19:15; Jue 1:30. OpenBible: solo el punto.'
+fuentes:
+- it-nahalal
+- openbible-geo
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Nahalal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003161
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

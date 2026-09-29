@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sema
+nombre: Sema
+nombres:
+- nombre: Sema
+tipo: ciudad
+lat: 31.276389
+lon: 34.990278
+precision: incierto
+coord_fuente: openbible:a55136c
+coord_url: https://www.openbible.info/geo/ancient/a55136c/shema
+coord_nota: 'Tel Yeshua, cuarta identificación de OpenBible: es el sitio que nombra Perspicacia. La primera la iguala con
+  Seba, en el punto de Beer-Seba.'
+resumen: Ciudad del sur de Judá. Quizá es la Seba que recibió Simeón; hay quien la iguala con Jesúa y la pone en Tel Yeshuʽa,
+  unos 15 km al estenoreste de Beer-Seba.
+razon: 'Perspicacia «Sema», núm. 5; Jos 15:26. OpenBible: solo el punto.'
+fuentes:
+- it-sema
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Sema»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003998
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

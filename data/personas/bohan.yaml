@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bohan
+nombre: Bohán
+nombres:
+- nombre: Bohán
+  nota: Quizá significa «pulgar» (Perspicacia).
+perspicacia: 1200000785#1
+resumen: Descendiente de Rubén cuyo nombre llevaba una piedra, mojón de la frontera de Judá con Benjamín, cerca del extremo
+  noroeste del mar Salado.
+razon: Perspicacia «Bohán», núm. 1 y 2; Jos 15:6; 18:17.
+fuentes:
+- it-bohan
+- josue-15
+- josue-18
+enlaces:
+- titulo: 'Perspicacia: «Bohán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000785
+  tipo: perspicacia
+- titulo: Josué 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/18
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: ruben-hijo-de-jacob
+  relacion: antepasado
+  deducido: true
+  fuentes:
+  - josue-15
+  - it-bohan
+  - josue-18
+  razon: Jos 15:6 lo llama hijo de Rubén; Perspicacia «Bohán», núm. 1, lo entiende como descendiente.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

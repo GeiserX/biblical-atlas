@@ -4,6 +4,8 @@ nombre: Hazar-Addar
 nombres:
 - nombre: Hazar-Addar
   nota: Quizá la misma Addar cercana a Cadés-Barnea (Perspicacia).
+- nombre: Addar
+  nota: Así la llama Jos 15:3, con Hezrón al lado; Perspicacia «Addar», núm. 2, ve en Hazar-Addar la unión de los dos nombres.
 tipo: ciudad
 lat: 30.648333
 lon: 34.422222
@@ -20,6 +22,8 @@ fuentes:
 - it-qades
 - openbible-geo
 - numeros-34
+- josue-15
+- it-addar
 enlaces:
 - titulo: 'Perspicacia: «Hazar-addar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001925
@@ -27,5 +31,8 @@ enlaces:
 - titulo: Números 34 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
   tipo: biblia
+- titulo: 'Perspicacia: «Addar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000094
+  tipo: perspicacia
 consultado: '2026-09-29'
 estado: verificado

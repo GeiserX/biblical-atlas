@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jarmut
+nombre: Jarmut
+nombres:
+- nombre: Jarmut
+tipo: ciudad
+lat: 31.7083
+lon: 34.975
+precision: punto
+coord_fuente: openbible:a539e01
+coord_url: https://www.openbible.info/geo/ancient/a539e01/jarmuth-1
+coord_nota: Khirbet Yarmuk (Tel Yarmut), el sitio que da Perspicacia.
+resumen: Ciudad amorrea de la Sefelá, en una colina unos 26 km al OSO de Jerusalén. Su rey Piram se alió contra Gabaón y murió
+  a manos de Josué. Pasó a Judá y se repobló tras el exilio.
+razon: 'Perspicacia «Jarmut», núm. 1; Jos 10:3-5, 23-26; 15:35. OpenBible: solo el punto. La Jarmut de Isacar es otra.'
+fuentes:
+- it-jarmut
+- openbible-geo
+- josue-10
+- josue-12
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Jarmut»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002332
+  tipo: perspicacia
+- titulo: Josué 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/10
+  tipo: biblia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

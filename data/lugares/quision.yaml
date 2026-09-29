@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quision
+nombre: Quisión
+nombres:
+- nombre: Quisión
+- nombre: Quedes
+  nota: Parece ser otro nombre de la ciudad (1Cr 6:72; Jos 12:22), según Perspicacia. No es la Quedes de Neftalí, ciudad
+    de refugio.
+tipo: ciudad
+lat: 32.661389
+lon: 35.393056
+precision: incierto
+coord_fuente: openbible:a20364a
+coord_url: https://www.openbible.info/geo/ancient/a20364a/kishion
+coord_nota: Punto de OpenBible en Tell Qisyon. Perspicacia no da sitio para Quisión; para la Quedes de 1Cr 6:72 menciona Tell
+  Abu Qedeis.
+resumen: Ciudad de la frontera de Isacar dada a los guersonitas. Parece ser la Quedes de 1Cr 6:72; si estaba junto a Meguidó,
+  también sería la Quedes cuyo rey derrotó Josué.
+razon: 'Perspicacia «Quisión» y «Quedes», núm. 3; Jos 19:20; 21:28; 1Cr 6:72. Jos 12:22 va aquí solo de forma condicional:
+  Perspicacia lo acepta si Quedes era Tell Abu Qedeis. OpenBible: solo el punto.'
+fuentes:
+- it-quision
+- it-quedes
+- openbible-geo
+- josue-12
+- josue-19
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Quisión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002633
+  tipo: perspicacia
+- titulo: Josué 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/12
+  tipo: biblia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: Se funde con la ficha de Quedes de Isacar, que era el mismo lugar según Perspicacia «Quedes», núm. 3; su cita de
+    Jos 12:22 pasa aquí.
+  fuente: it-quedes
+consultado: '2026-09-29'
+estado: verificado

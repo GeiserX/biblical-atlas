@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jabneel
+nombre: Jabneel
+nombres:
+- nombre: Jabneel
+tipo: ciudad
+lat: 31.866
+lon: 34.7463
+precision: punto
+coord_fuente: openbible:a7adb01
+coord_url: https://www.openbible.info/geo/ancient/a7adb01/jabneel-1
+coord_nota: Punto de Yibna, la actual Yavne, en OpenBible.
+resumen: Lugar de la frontera de Judá cerca del Mediterráneo, en la actual Yavne, unos 20 km al sur de Jope. Quizá es la Jabné
+  que el rey Uzías quitó a los filisteos.
+razon: 'Perspicacia «Jabneel», núm. 1; Jos 15:11; 2Cr 26:6. No es la Jabneel de Neftalí. OpenBible: solo el punto.'
+fuentes:
+- it-jabneel
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Jabneel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002273
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

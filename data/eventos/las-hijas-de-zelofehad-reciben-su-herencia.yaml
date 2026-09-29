@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-hijas-de-zelofehad-reciben-su-herencia
+titulo: Las hijas de Zelofehad reciben su herencia
+fecha:
+  desde: -1466
+  hasta: -1466
+  precision: año
+  aprox: false
+  tipo: anclada
+  cronologia: tnm
+  texto: 1467 a.e.c.
+orden_relato:
+  serie: josue
+  orden: 17003
+lugares:
+- guilgal
+- manases
+personas:
+- mahla-hija-de-zelofehad
+- noa
+- hogla
+- milca-hija-de-zelofehad
+- tirza
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+pasajes:
+- Jos 17:3-6
+resumen: Las cinco hijas de Zelofehad recuerdan a Eleazar, a Josué y a los jefes lo que Jehová había mandado a Moisés. Reciben
+  tierra entre los hermanos de su padre, y Manasés cuenta diez partes al oeste del Jordán.
+razon: Perspicacia «Zelofehad» enlaza este paso con lo que Jehová decidió en tiempos de Moisés. Pasa en Guilgal, donde empezó
+  el reparto («Guilgal», núm. 1), en 1467 a.e.c. («Isaac»).
+fuentes:
+- josue-17
+- it-zelofehad
+- it-guilgal
+- si-3
+- it-josue
+- it-isaac
+enlaces:
+- titulo: Josué 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
+  tipo: biblia
+- titulo: 'Perspicacia: «Zelofehad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004689
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

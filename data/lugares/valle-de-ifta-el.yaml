@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: valle-de-ifta-el
+nombre: Valle de Iftá-El
+nombres:
+- nombre: Valle de Iftá-El
+- nombre: Iftah-el
+  nota: Grafía de Perspicacia.
+tipo: valle
+lat: 32.771216
+lon: 35.143017
+precision: incierto
+coord_fuente: openbible:a3e0180
+coord_url: https://www.openbible.info/geo/ancient/a3e0180/valley-of-iphtahel
+coord_nota: Punto de OpenBible en Wadi el-Melek. Perspicacia dice que no se sabe dónde estaba.
+resumen: Valle del límite entre Zabulón y Aser, al noroeste de Nazaret. Se han propuesto varios sitios, pero no se sabe cuál
+  es.
+razon: 'Perspicacia «Iftah-el»; Jos 19:14, 27. OpenBible: solo el punto.'
+fuentes:
+- it-iftah-el
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Iftah-el»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002191
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

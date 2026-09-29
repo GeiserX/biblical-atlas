@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eltecon
+nombre: Eltecón
+nombres:
+- nombre: Eltecón
+- nombre: Elteqón
+  nota: Grafía de Perspicacia.
+tipo: ciudad
+lat: 31.690314
+lon: 35.101485
+precision: incierto
+coord_fuente: openbible:a26cd81
+coord_url: https://www.openbible.info/geo/ancient/a26cd81/eltekon
+coord_nota: Khirbet ed-Deir, primera identificación de OpenBible, que algunos eruditos proponen según Perspicacia.
+resumen: Ciudad de la montaña de Judá. No se puede situar con seguridad; algunos la ponen en Khirbet ed-Deir, unos 10 km al
+  oeste de Belén.
+razon: 'Perspicacia «Elteqón»; Jos 15:59. OpenBible: solo el punto.'
+fuentes:
+- it-elteqon
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Elteqón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001341
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

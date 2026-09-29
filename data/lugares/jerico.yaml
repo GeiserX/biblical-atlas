@@ -16,10 +16,10 @@ precision: punto
 coord_fuente: openbible:a231f80
 coord_url: https://www.openbible.info/geo/ancient/a231f80/jericho-1
 coord_nota: Punto de la ciudad antigua; la del siglo I estaba unos 2 km al sur.
-resumen: Ciudad del valle del Jordán, unos 250 m bajo el nivel del mar. En tiempos de Jesús había una ciudad nueva al sur
-  de la antigua; curó a Bartimeo en las afueras, quizá entre ambas, y se alojó con Zaqueo.
-razon: 'Perspicacia «Jericó» (párr. 2 y 13) y la nota de Mt 20:29 explican las dos ciudades; Lu 19:1-7. La coordenada
-  es de OpenBible: solo tomamos el punto.'
+resumen: Ciudad del valle del Jordán, unos 250 m bajo el nivel del mar. En 1473 a.e.c. fue la primera que Israel tomó al oeste
+  del río. En tiempos de Jesús había otra al sur; allí se alojó con Zaqueo.
+razon: 'Perspicacia «Jericó» (párr. 2 y 13) y la nota de Mt 20:29 explican las dos ciudades; Lu 19:1-7. El mismo artículo
+  fecha la toma en 1473 a.e.c. (Jos 6). OpenBible: solo el punto.'
 fuentes:
 - it-jerico
 - mateo-20
@@ -28,6 +28,12 @@ fuentes:
 - marcos-10
 - lucas-18
 - deuteronomio-34
+- josue-2
+- josue-5
+- josue-6
+- josue-12
+- josue-18
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Jericó»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002426
@@ -41,5 +47,12 @@ historial:
   cambio: El resumen ponía la curación de Bartimeo dentro de la ciudad nueva. La nota de Lu 18:35 y Perspicacia «Jericó» la
     ponen cerca, quizá camino de la judía a la romana.
   fuente: lucas-18
+- fecha: '2026-09-29'
+  cambio: El resumen no nombraba la toma de la ciudad por Josué, su hecho principal en la Biblia. Se añade con la fecha de
+    Perspicacia «Jericó»; Bartimeo queda en su suceso.
+  fuente: josue-6
+- fecha: '2026-09-29'
+  cambio: La razón cita ahora de dónde sale la fecha de la toma, que entra en el resumen.
+  fuente: josue-6
 consultado: '2026-09-29'
 estado: verificado

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: adami-nequeb
+nombre: Adamí-Néqueb
+nombres:
+- nombre: Adamí-Néqueb
+tipo: ciudad
+lat: 32.749167
+lon: 35.459167
+precision: punto
+coord_fuente: openbible:a2c780b
+coord_url: https://www.openbible.info/geo/ancient/a2c780b/adami-nekeb
+coord_nota: Punto de OpenBible en Khirbet et-Tell (Tel Adami).
+resumen: Lugar del sur de Neftalí, a medio camino entre Tiberíades y el Tabor. Desde allí se controlaba un paso del camino
+  que unía Galaad con la llanura de Akkó.
+razon: 'Perspicacia «Adamí-néqueb»; Jos 19:33. OpenBible: solo el punto.'
+fuentes:
+- it-adami-nequeb
+- openbible-geo
+- josue-19
+enlaces:
+- titulo: 'Perspicacia: «Adamí-néqueb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000091
+  tipo: perspicacia
+- titulo: Josué 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

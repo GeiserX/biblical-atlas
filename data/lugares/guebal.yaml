@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guebal
+nombre: Guebal
+nombres:
+- nombre: Guebal
+- nombre: Biblos
+  nota: Nombre griego de la ciudad, según Perspicacia.
+tipo: ciudad
+lat: 34.119167
+lon: 35.645833
+precision: punto
+coord_fuente: openbible:a9a2541
+coord_url: https://www.openbible.info/geo/ancient/a9a2541/gebal-1
+coord_nota: Punto de OpenBible en Biblos (Jebeil), donde la sitúa Perspicacia.
+resumen: Ciudad fenicia de la costa, la Biblos de los griegos, unos 28 km al norte de Beirut. Su tierra figuraba entre la
+  que faltaba por conquistar, pero Israel, por desobediente, nunca la tomó.
+razon: 'Perspicacia «Guebal, guebalitas», núm. 1; Jos 13:5. Es otro que guebal-del-sur (núm. 2). OpenBible: solo el punto.'
+fuentes:
+- it-guebal
+- openbible-geo
+- josue-13
+enlaces:
+- titulo: 'Perspicacia: «Guebal, guebalitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001628
+  tipo: perspicacia
+- titulo: Josué 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

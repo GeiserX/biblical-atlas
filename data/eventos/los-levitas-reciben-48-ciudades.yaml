@@ -1,0 +1,97 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-levitas-reciben-48-ciudades
+titulo: Los levitas reciben por sorteo 48 ciudades
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y c. 1450 a.e.c. (tiempo narrativo: tras el reparto de la tierra en Siló y antes de la muerte de Josué)'
+orden_relato:
+  serie: josue
+  orden: 21001
+lugares:
+- silo
+- hebron
+- libna
+- jatir
+- estemoa
+- holon
+- debir
+- asan
+- juta
+- bet-semes
+- gabaon
+- gueba
+- anatot
+- almon
+- siquem
+- guezer
+- quibzaim
+- bet-horon-alta
+- bet-horon-baja
+- elteque
+- guibeton
+- ayalon
+- gat-rimon-de-dan
+- taanac
+- gat-rimon-de-manases
+- golan
+- astarot
+- quision
+- daberat
+- remet
+- en-ganim-de-isacar
+- misal
+- abdon
+- helcat
+- rehob-de-aser
+- quedes-de-neftali
+- hammat
+- cartan
+- jocneam
+- carta
+- rimon-de-zabulon
+- nahalal
+- bezer
+- jahaz
+- quedemot
+- mefaat
+- ramot-galaad
+- mahanaim
+- hesbon
+- jazer
+personas:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+presentes:
+- eleazar-hijo-de-aaron
+- josue-hijo-de-nun
+pasajes:
+- Jos 21:1-42
+- 1Cr 6:54-81
+resumen: En Siló, los jefes levitas piden a Eleazar y a Josué las ciudades que Jehová había prometido por medio de Moisés.
+  Por sorteo reciben 48 con sus campos de pasto; 13 son para los sacerdotes, hijos de Aarón.
+razon: Jos 21:2 lo sitúa en Siló, adonde se llevó el tabernáculo tras la conquista general de 1467 a.e.c. (estudio 3); Josué
+  murió hacia 1450. 1Cr 6:54-81 da la lista paralela.
+fuentes:
+- josue-21
+- si-3
+- it-ciudades-levitas
+- it-ciudades-de-los-sacerdotes
+- it-silo
+- tnm-tabla
+enlaces:
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+- titulo: 'Perspicacia: «Ciudades levitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002730
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Ciudades de los sacerdotes»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003554
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

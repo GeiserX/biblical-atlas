@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: anac
+nombre: Anac
+nombres:
+- nombre: Anac
+- nombre: Anaq
+  nota: Grafía de Perspicacia; quizá significa «de cuello largo», por su estatura.
+perspicacia: '1200000260'
+resumen: Hijo de Arbá según Jos 15:13. De él toman nombre los anaquim, pueblo de gran estatura del que eran Sesái, Ahimán
+  y Talmái. Perspicacia no descarta que sea solo el nombre de la tribu.
+razon: Perspicacia «Anaq» y «Arbá»; Jos 15:13, 14.
+no_afirmamos:
+- 'No afirmamos que Anac fuera un hombre concreto: Perspicacia deja abierto que el nombre designe solo a la tribu.'
+- Perspicacia deja abierto si Anac fue una persona o solo el nombre de la tribu; seguimos el texto, que lo llama hijo de Arbá.
+fuentes:
+- it-anaq
+- it-arba
+- josue-15
+- josue-21
+enlaces:
+- titulo: 'Perspicacia: «Anaq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000260
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Arbá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000340
+  tipo: perspicacia
+- titulo: Josué 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/21
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: arba
+  relacion: padre
+  deducido: false
+  fuentes:
+  - josue-15
+  - it-anaq
+  - josue-21
+  - it-arba
+  razon: 'Jos 15:13: Arbá era el padre de Anac.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

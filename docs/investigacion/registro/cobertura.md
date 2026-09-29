@@ -18,7 +18,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Levítico](../../../data/cobertura/levitico.yaml) | 27 de 27 | 859 de 859 | 100 % |
 | [Números](../../../data/cobertura/numeros.yaml) | 36 de 36 | 1288 de 1288 | 100 % |
 | [Deuteronomio](../../../data/cobertura/deuteronomio.yaml) | 34 de 34 | 959 de 959 | 100 % |
-| Josué | 0 de 24 | 0 de 658 | 0 % |
+| [Josué](../../../data/cobertura/josue.yaml) | 24 de 24 | 658 de 658 | 100 % |
 | Jueces | 0 de 21 | 0 de 618 | 0 % |
 | [Rut](../../../data/cobertura/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
 | 1 Samuel | 0 de 31 | 0 de 810 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 613 de 1189 | 16865 de 31062 | 54 % |
+| **Total** | 637 de 1189 | 17523 de 31062 | 56 % |
 
 ## Capítulos empezados
 

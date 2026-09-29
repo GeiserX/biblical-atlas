@@ -5,6 +5,8 @@ nombres:
 - nombre: Sidón
 - nombre: Saida
   nota: Nombre actual de la ciudad.
+- nombre: Sidón la Grande
+  nota: Así la llama Jos 11:8.
 tipo: puerto
 lat: 33.56099
 lon: 35.37194
@@ -24,6 +26,8 @@ fuentes:
 - marcos-7
 - hechos-12
 - joel-3
+- josue-11
+- josue-19
 enlaces:
 - titulo: 'Perspicacia: «Sidón, sidonios»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113

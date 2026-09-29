@@ -25,6 +25,8 @@ fuentes:
 - numeros-31
 - it-madian
 - deuteronomio-23
+- josue-13
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Balaam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000543
@@ -47,6 +49,8 @@ relaciones:
   - it-beor
   - numeros-31
   - deuteronomio-23
+  - josue-13
+  - josue-24
   razon: 'Nú 22:5: Balaam hijo de Beor.'
   estado: verificado
 - tipo: vivio_en

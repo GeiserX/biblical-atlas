@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: caleb-echa-a-los-hijos-de-anac-de-hebron
+titulo: Caleb echa de Hebrón a los tres hijos de Anac
+fecha:
+  desde: -1466
+  hasta: -1449
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1467 y 1450 a.e.c. (tiempo narrativo: después del reparto de 1467 y antes de que se acabara el libro de Josué)'
+orden_relato:
+  serie: josue
+  orden: 15014
+lugares:
+- hebron
+personas:
+- caleb-hijo-de-jefune
+- sesai
+- ahiman-hijo-de-anac
+- talmai-hijo-de-anac
+pasajes:
+- Jos 15:13, 14
+- Jue 1:10, 20
+resumen: Caleb toma la ciudad que Josué le dio y expulsa de ella a Sesái, Ahimán y Talmái, descendientes de Anac. Los anaquim
+  la habían vuelto a ocupar mientras Israel luchaba en otras partes.
+razon: 'Perspicacia «Anaquim», párr. 2, y «Debir», núm. 2: Caleb tuvo que reconquistarla. Límites: la entrega de Hebrón, en
+  1467 a.e.c. (estudio 3), y el libro de Josué, acabado c. 1450 a.e.c. (tabla de libros).'
+fuentes:
+- josue-15
+- it-anaquim
+- it-debir
+- si-3
+- tnm-tabla
+enlaces:
+- titulo: Josué 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/15
+  tipo: biblia
+- titulo: 'Perspicacia: «Anaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000261
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: itnan
+nombre: Itnán
+nombres:
+- nombre: Itnán
+tipo: ciudad
+lat: 30.61274
+lon: 34.73251
+precision: incierto
+coord_fuente: openbible:ac333a2
+coord_url: https://www.openbible.info/geo/ancient/ac333a2/ithnan
+coord_nota: Mesudat Har Hemet, primera identificación de OpenBible; Perspicacia no la sitúa.
+resumen: Ciudad del extremo sur de Judá. No se sabe dónde estaba.
+razon: 'Perspicacia «Itnán»; Jos 15:23. OpenBible: solo el punto.'
+fuentes:
+- it-itnan
+- openbible-geo
+- josue-15
+enlaces:
+- titulo: 'Perspicacia: «Itnán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002240
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

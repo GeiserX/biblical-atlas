@@ -7,8 +7,8 @@ perspicacia: 1200001287#1
 desambiguacion: Hijo de Aarón y sumo sacerdote tras él; no el Eleazar de la genealogía de Jesús ni los otros que numera Perspicacia.
 no_confundir_con:
 - eleazar-hijo-de-eliud
-resumen: Tercer hijo de Aarón y Eliseba, sacerdote con su padre y, en el desierto, jefe principal de los levitas. Se casó
-  con una hija de Putiel, madre de Finehás, y sucedió a Aarón como sumo sacerdote.
+resumen: Tercer hijo de Aarón y Eliseba, jefe de los levitas en el desierto. Casado con una hija de Putiel, madre de Finehás,
+  sucedió a Aarón como sumo sacerdote. Lo enterraron en la colina de Finehás, en Efraín.
 razon: Perspicacia «Eleazar», núm. 1; Éx 6:23, 25; 28:1; Nú 3:32.
 fuentes:
 - it-eleazar
@@ -29,6 +29,11 @@ fuentes:
 - numeros-32
 - numeros-34
 - deuteronomio-10
+- josue-14
+- josue-17
+- josue-19
+- josue-21
+- josue-24
 enlaces:
 - titulo: 'Perspicacia: «Eleazar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
@@ -52,6 +57,7 @@ relaciones:
   - numeros-20
   - numeros-26
   - deuteronomio-10
+  - josue-24
   razon: 'Éx 6:23: hijo de Aarón y Eliseba.'
   estado: verificado
 - tipo: pariente
@@ -132,5 +138,8 @@ historial:
 - fecha: '2026-09-29'
   cambio: La razón cita Nú 3:32, de donde sale su cargo al frente de los levitas.
   fuente: numeros-3
+- fecha: '2026-09-29'
+  cambio: El resumen añade su muerte y su entierro en la colina de Finehás, en las montañas de Efraín (Jos 24:33).
+  fuente: josue-24
 consultado: '2026-09-29'
 estado: verificado
