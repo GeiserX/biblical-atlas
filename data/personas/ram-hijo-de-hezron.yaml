@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ram-hijo-de-hezron
+nombre: Ram
+nombres:
+- nombre: Ram
+- nombre: Arní
+  nota: Así lo llama Lucas en la genealogía de Jesús (Lu 3:33), según Perspicacia.
+perspicacia: 1200003629#1
+desambiguacion: Ram hijo de Hezrón, de Judá; no el hijo de Jerahmeel ni el antepasado de Elihú.
+resumen: Descendiente de Judá por Pérez y Hezrón; vivió cuando Israel estaba en Egipto. Fue padre de Aminadab y antepasado
+  de Nahsón, Boaz, David y Jesús.
+razon: Perspicacia «Ram», núm. 1; Rut 4:19.
+fuentes:
+- it-ram
+- rut-4
+enlaces:
+- titulo: 'Perspicacia: «Ram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003629
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: hezron-hijo-de-perez
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  razon: Rut 4:19.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

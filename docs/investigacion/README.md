@@ -38,7 +38,7 @@ Las fechas siguen el objeto `fecha` de [`docs/ideas/mockups/data/README.md`](../
 | Campo | Qué es |
 |---|---|
 | `tipo: derivada` | Cálculo nuestro, no de la fuente. Exige `fecha.nota` con la cuenta y `estado: pendiente` en el hecho. Los otros tipos son `anclada` y `narrativa`. |
-| `detalle` | Opcional: `{mes: nisan, dia: 14}` o `{estacion: otoño}`. El mes es un id de `data/calendario.yaml`; el día va de 1 a 30 y necesita mes; las estaciones son `primavera`, `verano`, `otoño` e `invierno`. |
+| `detalle` | Opcional: `{mes: nisan, dia: 14}` o `{estacion: otoño}`. El mes es un id de `data/calendario.yaml`; el día va de 1 a 30 y necesita mes; las estaciones son `primavera`, `verano`, `otoño` e `invierno`. Solo en una fecha de un año (`desde == hasta`): en un tramo de años el sitio leería el mes en el primero. |
 | `alternativas` | Opcional, en cualquier entidad: lista de `{fecha, fuentes, nota}` cuya `fecha` lleva `cronologia: secular`. Solo con una fuente que jw.org haya usado. |
 | `orden_relato` | Opcional, en eventos: `{serie: a7, orden: 57}` para ordenar sucesos sin fecha fina (la armonía de la tabla A7, los capítulos de Hechos). Con `tras: <id de evento>`, el suceso va después de ese otro aunque sea de otra serie: la elección de Matías (Hechos) va tras la ascensión (A7). |
 
@@ -63,7 +63,7 @@ Cada candidato dice de dónde sale su punto: `coord_fuente: openbible:<id>` con 
 
 Con `candidatos`, `lat`, `lon`, `coord_fuente` y `coord_url` pueden ser `null` y `precision` tiene que ser `zona` o `incierto`. Una lista de candidatos vacía solo vale con `estado: pendiente`. Sin candidatos, `lat` y `lon` son obligatorios. Si jw.org no sitúa un lugar y nadie lo sitúa con seguridad, van candidatos o una zona, nunca un punto inventado.
 
-**Personas.** `fecha` (actividad conocida, con fuente), `desambiguacion` (qué la distingue de sus homónimos), `no_confundir_con` (ids de personas), `no_afirmamos` (frases con lo que no decimos, como «Pedro murió en Roma») y `relaciones`:
+**Personas.** `perspicacia` (la clave de identidad: el documento de su artículo de Perspicacia y, si el artículo trata de varias personas, `#` y el número de la entrada, como `'1200003629#1'`; `null` si no tiene artículo; única entre las personas y obligatoria para las que salen en `entidades` de la cobertura), `fecha` (actividad conocida, con fuente), `desambiguacion` (qué la distingue de sus homónimos), `no_confundir_con` (ids de personas), `no_afirmamos` (frases con lo que no decimos, como «Pedro murió en Roma») y `relaciones`:
 
 ```yaml
 relaciones:
@@ -81,7 +81,7 @@ Una relación `pariente` escrita en la ficha X con `persona: Y` y `relacion: R` 
 
 **Cartas.** `escritor` es obligatorio (id de persona; las 14 de Pablo llevan `escritor: pablo`). Opcionales: `destinatarios.personas`, `portadores` y `personas` (las nombradas en la carta), listas de ids de personas que `build.py` comprueba. La comprobación de que una carta cae en una parada de Pablo solo mira las cartas de Pablo.
 
-**Eventos.** `lugares` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `presentes` es opcional: lista de ids de `personas` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `build.py` comprueba que cada id de `presentes` está también en `personas`. En un suceso de nacimiento («Nace…», «Nacimiento…») o de muerte («Muere…», «Muerte…») la primera de `personas` es quien nace o muere; las demás estaban presentes o intervinieron. El sitio calcula la edad solo con esa primera persona.
+**Eventos.** `lugares` va en orden: el primero es donde ocurre lo principal, y es el único donde el sitio sitúa a las personas del suceso. Si ese lugar no tiene punto (un lugar incierto), el suceso no sitúa a nadie. `presentes` es opcional: lista de ids de `personas` que estaban en ese primer lugar. Si está, solo ellas se sitúan allí y las demás solo se nombran, como Augusto en el nacimiento de Jesús. `presentes: []` es un suceso que no sitúa a nadie, porque pasa en un sitio que el texto no nombra (en el camino de Moab a Judá). `build.py` comprueba que cada id de `presentes` está también en `personas`. En un suceso de nacimiento («Nace…», «Nacimiento…») o de muerte («Muere…», «Muerte…») la primera de `personas` es quien nace o muere; las demás estaban presentes o intervinieron. El sitio calcula la edad solo con esa primera persona.
 
 **Periodos.** `tipo` es `emperador`, `gobernador`, `potencia`, `rey`, `era` o `sumo-sacerdote`. `persona` es opcional (id de persona). Una potencia sin fecha de ascenso (`fecha.desde: null`) puede llevar `consta_desde`, el año desde el que las fuentes ya la muestran mandando: Asiria al tomar Samaria en 740 a.e.c. Tiene que caer después del ascenso de la potencia anterior (las potencias van por `fecha.desde`). Antes de ese año el sitio dice «cambio sin fechar»; desde ese año, solo esa potencia. La `razon` del periodo dice de dónde sale.
 
@@ -116,7 +116,7 @@ Antes del exilio la Biblia solo nombra cuatro meses (Abib, Ziv, Etanim y Bul) y 
 ## Identificadores
 
 - Slug del nombre TNM más conocido, ASCII y en minúsculas: `mar-de-galilea`, `herodes-antipas`.
-- Los homónimos llevan el rasgo con que los distingue Perspicacia: `jehoram-de-juda`, `jehoram-de-israel`, `dario-el-medo`, `dario-i`, `zacarias-profeta`, `zacarias-padre-de-juan`, `felipe-apostol`.
+- Los homónimos llevan el rasgo con que los distingue Perspicacia: `jehoram-de-juda`, `jehoram-de-israel`, `dario-el-medo`, `dario-i`, `zacarias-profeta`, `zacarias-padre-de-juan`, `felipe-apostol`. Para las personas nuevas el rasgo es fijo, para que dos carriles elijan el mismo id: el reino en un rey, `<nombre>-hijo-de-<padre>` si se sabe el padre, y si no, el rasgo de Perspicacia ([`versiculos.md`](versiculos.md#4-personas), sección 4).
 - Un lugar lleva un solo id aunque tenga varios nombres. Los otros van en `nombres`, con `desde` y `hasta` si la fuente da la época.
 - Antes de crear un fichero se comprueba que no existe y se crea en modo exclusivo (`open(ruta, "x")`). Si otro carril ya lo creó, se cita su id y los añadidos van a propuestas.
 
@@ -126,7 +126,16 @@ Las entidades que varios carriles citan se crean antes con su id definitivo y un
 
 ## Propuestas sobre ficheros ajenos
 
-Un carril que quiere cambiar un fichero que no es suyo escribe la versión completa en `data/_propuestas/<carril>/<tipo>/<id>.yaml`. `build.py` y `validate.py` no leen esa carpeta porque solo recorren `data/fuentes/` y `data/<tipo>/`. Al integrar, con una sola propuesta se revisa el diff y se copia. Con varias se hace una fusión a tres bandas con `git merge-file`, usando como base el original de `main`. Al terminar, `data/_propuestas/` queda vacía y se borra.
+Un carril que quiere cambiar un fichero que no es suyo escribe la versión completa en `data/_propuestas/<carril>/<tipo>/<id>.yaml`. La lectura de la Biblia usa operaciones en vez de copias: `scripts/aplicar.py --paralelo` deja en `data/_propuestas/<libro>.json` los cambios a fichas ajenas (añadir fuentes, relaciones o pasajes, o cambiar un campo con su `antes`), y la integración los aplica con el mismo script, sin fusión a tres bandas. `build.py` y `validate.py` no leen esa carpeta porque solo recorren `data/fuentes/` y `data/<tipo>/`. Al integrar, con una sola propuesta se revisa el diff y se copia. Con varias se hace una fusión a tres bandas con `git merge-file`, usando como base el original de `main`. Al terminar, `data/_propuestas/` queda vacía y se borra.
+
+## Cobertura de la Biblia
+
+La meta es leer cada versículo de la TNM y dejarlo apuntado. `data/cobertura/<libro>.yaml` lo demuestra libro a libro: cada capítulo tiene `estado` (`pendiente` o `completo`) y una lista de `tramos` de versículos seguidos, cada uno con su `tipo` de pasaje, el día en que se leyó (`revisado`), las `entidades` que produjo o confirmó y lo que solo `menciona`. `data/libros.yaml` da el último versículo de cada capítulo (`versiculos`) y los que la TNM no incluye (`omitidos`), que nunca hacen falta.
+
+- El formato y las reglas que comprueba `scripts/validate.py` están en [`data/cobertura/README.md`](../../data/cobertura/README.md).
+- El protocolo para leer unos capítulos, qué se convierte en persona, lugar, evento o relación y cómo se devuelve una propuesta está en [`versiculos.md`](versiculos.md).
+- Cada entidad de `entidades` tiene que citar el capítulo, igual que la vería la página de ese capítulo en el sitio: el capítulo en sus `fuentes` (`rut-1`) o la cita escrita en su `razon` (en un evento, en `pasajes`).
+- [`scripts/build.py`](../../scripts/build.py) escribe el estado en [`registro/cobertura.md`](registro/cobertura.md) y un resumen en `cobertura` de `data.json`. [`scripts/cobertura.py`](../../scripts/cobertura.py) lo imprime; con `--faltan <libro>` lista lo que falta y con `--fallar` sale con código 1 si queda algún capítulo sin completar.
 
 ## Cuando cambia el entendimiento
 

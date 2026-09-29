@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: perez
+nombre: Pérez
+nombres:
+- nombre: Pérez
+perspicacia: '1200003438'
+resumen: Hijo de Judá y de Tamar, gemelo de Zérah. Nació primero y su casa fue la más conocida; por su línea vienen Boaz,
+  David y Jesús.
+razon: Perspicacia «Pérez», párr. 1 y 2; Rut 4:12 y 18.
+fuentes:
+- it-perez
+- rut-4
+enlaces:
+- titulo: 'Perspicacia: «Pérez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003438
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: juda-hijo-de-jacob
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  razon: 'Rut 4:12: Tamar se lo dio a luz a Judá.'
+  estado: verificado
+- tipo: pariente
+  persona: tamar-nuera-de-juda
+  relacion: madre
+  deducido: false
+  fuentes:
+  - rut-4
+  razon: Rut 4:12.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

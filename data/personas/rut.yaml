@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rut
+nombre: Rut
+nombres:
+- nombre: Rut
+perspicacia: '1200003776'
+resumen: Moabita, viuda de Mahlón. No quiso dejar a su suegra Noemí y la acompañó a Belén. Allí espigó en el campo de Boaz,
+  se casó con él y fue madre de Obed, abuelo de David.
+razon: Perspicacia «Rut», párr. 1-3 y último; Rut 1:4-4:17.
+fuentes:
+- it-rut
+- rut-1
+- rut-2
+- rut-3
+- rut-4
+enlaces:
+- titulo: 'Perspicacia: «Rut»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003776
+  tipo: perspicacia
+relaciones:
+- tipo: pariente
+  persona: noemi
+  relacion: suegra
+  deducido: false
+  fuentes:
+  - rut-1
+  razon: 'Rut 1:6-8, 14 y 22: nuera de Noemí.'
+  estado: verificado
+- tipo: nacio_en
+  lugar: moab
+  deducido: false
+  fuentes:
+  - rut-1
+  - rut-2
+  razon: 'Rut 2:11: dejó su tierra natal; 1:4 y 22 la llaman moabita.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: belen
+  deducido: false
+  fuentes:
+  - rut-1
+  - rut-2
+  razon: Rut 1:22 la lleva a Belén y 2:23 dice que siguió viviendo con su suegra.
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

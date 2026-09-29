@@ -21,6 +21,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import cobertura  # noqa: E402
+
 RAIZ = Path(__file__).resolve().parent.parent
 FORMATO = "biblical-earth/v0"
 TIPOS = ["lugares", "personas", "viajes", "cartas", "eventos", "periodos", "hallazgos", "recorridos"]
@@ -132,8 +135,8 @@ def fuente_capitulo(libro, cap):
 def cargar(data_dir):
     """Lee data/. Devuelve (datos, ficheros) donde ficheros[(tipo, id)] = ruta relativa.
 
-    Solo recorre data/fuentes/*.yaml, data/libros.yaml, data/calendario.yaml y data/<tipo>/*.yaml:
-    data/_propuestas/ y cualquier otra carpeta quedan fuera. Los errores de carga (fuentes repetidas con datos
+    Solo recorre data/fuentes/*.yaml, data/libros.yaml, data/calendario.yaml, data/<tipo>/*.yaml y
+    data/cobertura/*.yaml (que va a datos["cobertura"]): data/_propuestas/ y cualquier otra carpeta quedan fuera. Los errores de carga (fuentes repetidas con datos
     distintos) van a datos["_errores"] y los informa integridad().
     """
     data_dir = Path(data_dir)
@@ -155,6 +158,7 @@ def cargar(data_dir):
             obj["_nombre_fichero"] = ruta.stem
             datos[tipo].append(obj)
             ficheros[(tipo, obj.get("id"))] = obj["_fichero"]
+    datos["cobertura"] = cobertura.cargar(data_dir, errores)
 
     # Capítulos de la Biblia como fuentes implícitas: <slug>-<cap> que nadie ha escrito se crea desde libros.yaml.
     citadas = [fid for t in TIPOS for o in datos[t] for _, fid in fuentes_de(limpio(o))]
@@ -297,6 +301,7 @@ def integridad(datos):
                     sel = (p or {}).get("sel")
                     if not existe_sel(datos, sel, ids):
                         errores.append(f"{f}: paradas[{i}].sel '{sel}' no existe (formato tipo:id, p. ej. lugar:corinto)")
+    errores.extend(cobertura.errores_referencias(datos))
     return errores
 
 
@@ -330,6 +335,8 @@ def componer(datos, hoy):
         "hallazgos": [limpio(o) for o in sorted(datos["hallazgos"],
                                                 key=lambda o: clave_fecha(o, "fecha_objeto") + (o["id"],))],
         "recorridos": [limpio(o) for o in sorted(datos["recorridos"], key=lambda o: o["id"])],
+        # Resumen de data/cobertura/: solo los libros que tienen fichero. El sitio todavía no lo muestra.
+        "cobertura": cobertura.para_el_sitio(datos),
     }
 
 
@@ -499,7 +506,7 @@ NOTA_PUBLICADO = "«Publicado» es el año de la publicación cuando la página 
 REGISTROS = [  # (fichero, título)
     ("lugares", "Lugares"), ("personas", "Personas"), ("viajes", "Viajes y paradas"), ("cartas", "Cartas"),
     ("eventos", "Eventos"), ("periodos", "Periodos"), ("hallazgos", "Hallazgos"), ("recorridos", "Recorridos"),
-    ("libros", "Libros y calendario"), ("fuentes", "Fuentes"),
+    ("libros", "Libros y calendario"), ("cobertura", "Cobertura de la Biblia"), ("fuentes", "Fuentes"),
 ]
 
 
@@ -690,6 +697,15 @@ def registros(salida, datos):
     _seccion(out, "El calendario", filas)
     docs["libros"] = out
 
+    out = _cabeza("Cobertura")
+    out.extend(["Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.yaml`. Un capítulo cuenta "
+                "como completo cuando sus tramos cubren todos sus versículos, salvo los que la TNM no incluye. "
+                "El formato está en [data/cobertura/README.md](../../../data/cobertura/README.md) y el protocolo en "
+                "[../versiculos.md](../versiculos.md).", ""])
+    lineas, tot_cob = cobertura.informe(datos)
+    out.extend(lineas)
+    docs["cobertura"] = out
+
     out = _cabeza("Fuentes")
     out.extend(["Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escribió a mano los crea "
                 "`build.py` a partir de `data/libros.yaml` y salen marcados como «implícita».", "",
@@ -706,6 +722,7 @@ def registros(salida, datos):
                "cartas": len(salida["cartas"]), "eventos": len(salida["eventos"]), "periodos": len(salida["periodos"]),
                "hallazgos": len(salida["hallazgos"]), "recorridos": len(salida["recorridos"]),
                "libros": f"{len(salida['libros'])} libros, {len(salida['calendario'].get('meses') or [])} meses",
+               "cobertura": f"{tot_cob['completos']} de {tot_cob['capitulos']} capítulos completos",
                "fuentes": len(F)}
     indice = ["<!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->", "",
               "# Registro de investigación", "",
