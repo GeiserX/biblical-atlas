@@ -1,0 +1,89 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amram-hijo-de-cohat
+nombre: Amram
+nombres:
+- nombre: Amram
+perspicacia: 1200000251#1
+desambiguacion: Amram hijo de Cohat, padre de Moisés; no el israelita que en días de Esdras despidió a su esposa extranjera.
+resumen: Levita, hijo de Cohat y nieto de Leví. Se casó con Jokébed, hermana de su padre, y tuvo con ella a Míriam, Aarón
+  y Moisés. Vivió 137 años.
+razon: Perspicacia «Amram», núm. 1; Éx 2:1, que no da su nombre, y Éx 6:18, 20.
+fuentes:
+- it-amram
+- exodo-2
+- exodo-6
+enlaces:
+- titulo: 'Perspicacia: «Amram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000251
+  tipo: perspicacia
+- titulo: Éxodo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/2
+  tipo: biblia
+- titulo: Éxodo 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/6
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: jokebed
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-amram
+  - it-jokebed
+  - exodo-6
+  razon: 'Éx 2:1: el levita se casa con una hija de Leví; Perspicacia «Amram», núm. 1, y «Jokébed» dan sus nombres.'
+  estado: verificado
+- tipo: pariente
+  persona: cohat
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-amram
+  - exodo-6
+  razon: 'Perspicacia «Amram», núm. 1: nieto de Leví por medio de Cohat.'
+  estado: verificado
+- tipo: pariente
+  persona: levi-hijo-de-jacob
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-amram
+  razon: 'Éx 2:1 lo da como de la familia de Leví; Perspicacia «Amram», núm. 1: era su nieto.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-2
+  - it-aaron
+  - it-moises
+  razon: 'Éx 2:1-3: vivía en Egipto cuando nació Moisés.'
+  estado: verificado
+- tipo: pariente
+  persona: izhar-hijo-de-cohat
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:18: Izhar es otro de los hijos de Cohat.'
+  estado: verificado
+- tipo: pariente
+  persona: hebron-hijo-de-cohat
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:18: Hebrón es otro de los hijos de Cohat.'
+  estado: verificado
+- tipo: pariente
+  persona: uziel-hijo-de-cohat
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - exodo-6
+  razon: 'Éx 6:18: Uziel es otro de los hijos de Cohat.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

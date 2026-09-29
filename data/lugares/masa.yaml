@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: masa
+nombre: Masá
+nombres:
+- nombre: Masá
+  nota: Significa «prueba». Perspicacia lo escribe Masah.
+- nombre: Meribá
+  nota: Significa «riña». Hubo otro Meribá cerca de Cadés, sin el nombre Masá, que es un sitio distinto.
+- nombre: Masah
+  nota: Otra grafía, la de la nota de Éx 17:7 y de Perspicacia. Significa prueba.
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Junto a Refidim, en Wadi Refayied, al noroeste del Sinaí tradicional
+  geometria:
+    tipo: punto
+    lat: 28.623056
+    lon: 33.880278
+  estado: alternativa
+  fuentes:
+  - it-refidim
+  - it-masah
+  razon: Masá estaba cerca de Refidim. Perspicacia dice que muchos geógrafos ponen Refidim en Wadi Refayied, pero advierte
+    que no es seguro. Es el único sitio que menciona.
+  coord_fuente: openbible:a296e06
+  coord_url: https://www.openbible.info/geo/ancient/a296e06/massah
+resumen: Paraje cercano a Refidim donde Israel, falto de agua, riñó con Moisés y desafió a Jehová. Moisés golpeó una roca
+  y brotó agua; de ahí los nombres Masá y Meribá que recibió el sitio.
+razon: Perspicacia «Masah» y «Meribá», núm. 1. Sl 95:8 lo recuerda como aviso contra la terquedad; según Perspicacia, quizá
+  aluda también al Meribá de Cadés.
+no_afirmamos:
+- 'Que se sepa dónde estaba: Perspicacia dice que la situación de Refidim no es segura.'
+fuentes:
+- it-masah
+- it-meriba
+- it-refidim
+- openbible-geo
+- salmos-95
+- salmos-81
+- salmos-105
+- tnm-b3
+- exodo-17
+enlaces:
+- titulo: 'Perspicacia: «Masah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002925
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Meribá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002998
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Refidim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003698
+  tipo: perspicacia
+- titulo: Salmo 95 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/95
+  tipo: biblia
+- titulo: Éxodo 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado
+coord_nota: OpenBible le da el mismo punto que a Refidim, en Wadi Refayied. Perspicacia solo dice que estaba cerca de Refidim.

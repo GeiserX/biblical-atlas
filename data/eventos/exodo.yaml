@@ -14,14 +14,22 @@ fecha:
     dia: 14
 lugares:
 - egipto
+- rameses
+- sucot-de-egipto
 personas:
 - moises
 - aaron
 pasajes:
-- Éx 12:29-42
-- Éx 14:21-31
-resumen: Tras la Pascua, Israel sale libre de Egipto y cruza el mar Rojo. Terminan los 400 años de aflicción y los 430 años
-  contados desde Abrahán.
+- Éx 12:31-42
+- Éx 12:51
+- Sl 78:52
+- Sl 81:5
+- Sl 105:37, 38
+- Sl 105:43
+- Sl 114:1, 2
+- Sl 136:11, 12
+resumen: Tras la décima plaga, el faraón deja ir a Israel. El pueblo sale de Ramesés hacia Sucot con su ganado y con lo que
+  le dieron los egipcios. Ese día se cumplen los 430 años contados desde Abrahán.
 razon: Perspicacia «Pacto» da 1513 a.e.c., un 14 de nisán, como día de la liberación; el estudio 3 (párr. 8 a 10) cuadra
   ese año con 1 Reyes 6:1.
 fuentes:
@@ -29,10 +37,30 @@ fuentes:
 - it-exodo
 - si-3
 - exodo-12
+- salmos-105
 enlaces:
 - titulo: 'Perspicacia: «Éxodo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001458
   tipo: perspicacia
 buscar: éxodo 1513
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Quedan los versículos de Éxodo sobre la salida. La décima plaga y el paso del mar Rojo son escenas distintas: decima-plaga-mueren-los-primogenitos
+    e israel-cruza-el-mar-rojo.'
+  fuente: exodo-12
+- fecha: '2026-09-29'
+  cambio: El resumen deja el paso del mar Rojo, que ahora es israel-cruza-el-mar-rojo; el fin de los 400 años de aflicción
+    lo une el estudio 3 a esa liberación.
+  fuente: exodo-14
+- fecha: '2026-09-29'
+  cambio: La salida parte de Ramesés hacia Sucot (Éx 12:37). El sitio del paso del mar va con israel-cruza-el-mar-rojo.
+  fuente: exodo-12
+- fecha: '2026-09-29'
+  cambio: Los versículos de Salmos sobre el mar, las plagas y los primogénitos pasan a israel-cruza-el-mar-rojo y a los sucesos
+    de cada plaga; aquí quedan los de la salida.
+  fuente: exodo-12
+orden_relato:
+  serie: exodo
+  orden: 12031
+consultado: '2026-09-29'
 estado: verificado

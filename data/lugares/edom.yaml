@@ -20,12 +20,16 @@ fuentes:
 - openbible-geo
 - genesis-32
 - genesis-36
+- salmos-60
 enlaces:
 - titulo: 'Perspicacia: «Edom»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001258
   tipo: perspicacia
 - titulo: Génesis 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
+  tipo: biblia
+- titulo: Salmo 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/60
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado

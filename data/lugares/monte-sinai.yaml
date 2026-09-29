@@ -64,6 +64,18 @@ fuentes:
 - tnm-b3
 - exodo-19
 - openbible-geo
+- salmos-106
+- exodo-3
+- exodo-4
+- exodo-20
+- exodo-24
+- exodo-25
+- exodo-26
+- exodo-27
+- exodo-31
+- exodo-32
+- exodo-33
+- exodo-34
 enlaces:
 - titulo: 'Perspicacia: «Sinaí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
@@ -74,5 +86,5 @@ enlaces:
 - titulo: Éxodo 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
   tipo: biblia
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

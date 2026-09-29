@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sucot-de-egipto
+nombre: Sucot
+nombres:
+- nombre: Sucot
+  nota: 'No es el Sucot de Jacob, al este del Jordán (ficha sucot). Perspicacia los separa: este es el núm. 2.'
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Camino de Menfis a la cabecera del golfo de Suez
+  geometria:
+    tipo: zona
+    lat: 30.12
+    lon: 32.06
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-sucot
+  - it-exodo
+  razon: Perspicacia solo dice que estaba a un día de marcha, entre 32 y 48 km, del desierto de Ezam. «Éxodo» prefiere una
+    salida cerca de Menfis hacia el golfo de Suez.
+  coord_fuente: calculo
+  nota: 'Centro: unos 40 km al oeste del centro de la zona de Ezam (30,12; 32,48), hacia Menfis. Radio nuestro.'
+- nombre: Tell el-Maskhuta, en el uadi Tumilat
+  geometria:
+    tipo: punto
+    lat: 30.5527
+    lon: 32.099
+  estado: descartado_nivel_1
+  fuentes:
+  - it-exodo
+  - openbible-geo
+  razon: 'Es el punto de OpenBible. Perspicacia «Éxodo» descarta la ruta del uadi Tumilat: queda demasiado al norte de Menfis
+    para lo que pasó la noche de la salida.'
+  coord_fuente: openbible:aa28709
+  coord_url: https://www.openbible.info/geo/ancient/aa28709/succoth-2
+resumen: Primera parada de los israelitas al salir de Ramesés camino del mar Rojo. No se sabe dónde estaba, porque tampoco
+  se conocen los sitios de Ramesés ni de Ezam.
+razon: Perspicacia «Sucot», núm. 2, y «Éxodo», apartado «Ruta del éxodo»; Éx 12:37 y 13:20. El mapa B3 la marca con signo
+  de duda.
+fuentes:
+- it-sucot
+- it-exodo
+- tnm-b3
+- openbible-geo
+- exodo-12
+- exodo-13
+enlaces:
+- titulo: 'Perspicacia: «Sucot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004256
+  tipo: perspicacia
+- titulo: Éxodo 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/12
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

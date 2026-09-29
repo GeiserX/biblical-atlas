@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-parteras-desobedecen-al-faraon
+titulo: Las parteras Sifrá y Pua desobedecen al rey de Egipto
+fecha:
+  desde: -1596
+  hasta: -1592
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1597 y 1593 a.e.c. (tiempo narrativo: después de nacer Aarón y antes de nacer Moisés)'
+orden_relato:
+  serie: exodo
+  orden: 1015
+lugares:
+- egipto
+personas:
+- sifra
+- pua-partera
+pasajes:
+- Éx 1:15-21
+resumen: El rey de Egipto manda a las parteras hebreas Sifrá y Pua matar a cada varón al nacer. Por temor a Dios los dejan
+  vivir y alegan que las hebreas paren antes de que ellas lleguen. Dios les da familia.
+razon: 'Perspicacia «Éxodo», apartado «El decreto de Faraón»: al nacer Aarón en 1597 a.e.c. la orden al parecer no existía,
+  y Moisés, en 1593, ya nació bajo la del Nilo, que vino después.'
+fuentes:
+- exodo-1
+- it-exodo
+- it-sifra
+- it-pua
+- it-partera
+- si-3
+enlaces:
+- titulo: Éxodo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/1
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

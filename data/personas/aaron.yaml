@@ -18,6 +18,30 @@ fuentes:
 - it-aaron
 - exodo-6
 - numeros-20
+- salmos-77
+- salmos-99
+- salmos-105
+- salmos-106
+- salmos-133
+- exodo-4
+- exodo-5
+- exodo-7
+- exodo-8
+- exodo-9
+- exodo-10
+- exodo-11
+- exodo-12
+- exodo-16
+- exodo-17
+- exodo-18
+- exodo-24
+- exodo-27
+- exodo-28
+- exodo-29
+- exodo-30
+- exodo-32
+- exodo-34
+- exodo-40
 enlaces:
 - titulo: 'Perspicacia: «Aarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000005
@@ -50,5 +74,55 @@ relaciones:
   - it-aaron
   razon: 'Perspicacia «Aarón», párr. 2: nació en Egipto en 1597 a.e.c.'
   estado: verificado
-consultado: '2026-09-28'
+- tipo: acompana
+  persona: moises
+  relacion: compañero
+  deducido: false
+  fuentes:
+  - salmos-77
+  - salmos-105
+  - exodo-7
+  - it-aaron
+  razon: 'Sl 77:20: Dios guio a su pueblo como a un rebaño por mano de Moisés y Aarón.'
+  estado: verificado
+- tipo: pariente
+  persona: amram-hijo-de-cohat
+  relacion: padre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-amram
+  - it-aaron
+  razon: 'Éx 6:20: hijo de Amram.'
+  estado: verificado
+- tipo: pariente
+  persona: jokebed
+  relacion: madre
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-jokebed
+  - it-aaron
+  razon: 'Éx 6:20: hijo de Jokébed.'
+  estado: verificado
+- tipo: pariente
+  persona: eliseba
+  relacion: esposa
+  deducido: false
+  fuentes:
+  - exodo-6
+  - it-eliseba
+  - it-aaron
+  razon: 'Éx 6:23: se casó con Eliseba, hija de Aminadab.'
+  estado: verificado
+- tipo: vivio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-7
+  - it-aaron
+  razon: 'Perspicacia «Aarón», párr. 2 y 4: nació en Egipto y allí se enfrentó al faraón a los 83 años (Éx 7:7).'
+  estado: verificado
+perspicacia: '1200000005'
+consultado: '2026-09-29'
 estado: verificado

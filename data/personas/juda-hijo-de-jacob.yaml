@@ -19,6 +19,7 @@ fuentes:
 - genesis-44
 - genesis-46
 - genesis-49
+- exodo-1
 enlaces:
 - titulo: 'Perspicacia: «Judá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
@@ -95,6 +96,13 @@ relaciones:
   - it-gosen
   razon: 'Gé 47:4-6, 11: el faraón deja a los hermanos de José vivir en Gosén, la tierra de Ramesés, y José los instala allí
     con su padre.'
+  estado: verificado
+- tipo: murio_en
+  lugar: egipto
+  deducido: false
+  fuentes:
+  - exodo-1
+  razon: 'Éx 1:1, 6: llegó a Egipto con Jacob y allí murió, como sus hermanos y toda aquella generación.'
   estado: verificado
 perspicacia: 1200002538#1
 consultado: '2026-09-29'

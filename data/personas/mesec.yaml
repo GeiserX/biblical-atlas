@@ -3,7 +3,7 @@ id: mesec
 nombre: Mesec
 nombres:
 - nombre: Mesec
-perspicacia: '1200003008'
+perspicacia: 1200003008#1
 desambiguacion: El hijo de Jafet; no el Mesec que el texto masorético de Crónicas pone entre los hijos de Sem, donde Génesis
   dice Mas.
 resumen: Hijo de Jafet nacido tras el Diluvio. Su nombre pasó a sus descendientes y a su tierra, al norte de Palestina; Perspicacia
@@ -28,5 +28,9 @@ relaciones:
   - genesis-10
   razon: Gé 10:2 lo nombra entre los hijos de Jafet.
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: La clave apunta a la entrada 1 del artículo, que trata dos entradas.
+  fuente: it-mesec
 consultado: '2026-09-29'
 estado: verificado
