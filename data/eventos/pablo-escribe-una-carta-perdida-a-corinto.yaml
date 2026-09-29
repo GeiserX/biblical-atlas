@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-una-carta-perdida-a-corinto
+titulo: Pablo escribe a Corinto una carta que no se conserva
+fecha:
+  desde: 52
+  hasta: 55
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 52 y 55 e.c. (tiempo narrativo: después de su estancia en Corinto y antes de 1 Corintios)'
+orden_relato:
+  serie: 1-corintios
+  orden: 1000
+  tras: voto-en-cencreas
+lugares:
+- corinto
+personas:
+- pablo
+presentes: []
+pasajes:
+- 1Co 5:9
+resumen: Antes de 1 Corintios, Pablo ya había escrito a la congregación de Corinto para que dejaran de tratar con los inmorales.
+  Esa carta se ha perdido.
+razon: 'La nota de estudio de 1Co 5:9 la da por perdida. Límites: sale de Corinto en la primavera de 52 (estudio 3, párr.
+  25) y escribe 1 Corintios hacia 55 (Tabla de los libros). El texto no dice desde dónde.'
+fuentes:
+- 1-corintios-5
+- si-3
+- tnm-tabla
+enlaces:
+- titulo: 1 Corintios 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/5
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

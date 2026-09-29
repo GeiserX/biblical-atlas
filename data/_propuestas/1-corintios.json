@@ -1,0 +1,1981 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "1-corintios",
+ "agente": "escritor-1-corintios",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "1-corintios",
+   "campo": "personas",
+   "valores": [
+    "cloe"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "resumen",
+   "antes": "Presidente de la sinagoga de Corinto, quizás sucesor de Crispo. La multitud lo golpeó ante Galión. Tal vez es el hermano Sóstenes de 1 Corintios 1:1.",
+   "despues": "Presidente de la sinagoga de Corinto, quizás sucesor de Crispo. La multitud lo golpeó ante Galión. Tal vez es el hermano Sóstenes que estaba con Pablo en Éfeso y quizá le escribió al dictado 1 Corintios.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade lo que dicen la nota de estudio de 1Co 1:1 y Perspicacia «Corintios, Cartas a los»: estaba con Pablo en Éfeso y quizá escribió la carta que él dictaba.",
+    "fuente": "1-corintios-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "fuentes",
+   "valores": [
+    "tnm-tabla"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "fecha",
+   "antes": {
+    "desde": 51,
+    "hasta": 52,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 51-52 e.c."
+   },
+   "despues": {
+    "desde": 51,
+    "hasta": 55,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 51-55 e.c."
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fecha acababa en 52 y sus relaciones con Pablo y con Éfeso son de c. 55. Llega hasta 1 Corintios, porque la nota de 1Co 1:1 ve posible que sea el mismo Sóstenes.",
+    "fuente": "1-corintios-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "razon",
+   "antes": "Perspicacia «Sóstenes» (párr. 1 y 2); Hch 18:12-17. La fecha es la del proconsulado de Galión, del verano de 51 al de 52 (estudio 3, párr. 25).",
+   "despues": "Perspicacia «Sóstenes» (párr. 1 y 2); Hch 18:12-17; 1Co 1:1. Empieza con Galión, procónsul del verano de 51 al de 52 (estudio 3, párr. 25), y llega a 1 Corintios, c. 55 (Tabla), si es el mismo hermano, solo posible.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica que el final de la fecha depende de una identificación que Perspicacia y la nota de 1Co 1:1 solo dan como posible.",
+    "fuente": "1-corintios-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sostenes",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 55,
+      "hasta": 55,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 55 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-sostenes",
+      "1-corintios-1",
+      "it-corintios"
+     ],
+     "razon": "La nota de estudio de 1Co 1:1 y Perspicacia «Sóstenes» ven posible que, ya cristiano, acompañara a Pablo en Éfeso, desde donde se escribió la carta.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "crispo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "crispo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-1"
+     ],
+     "razon": "Presidía la sinagoga de Corinto (Hch 18:8).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gayo-de-corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1",
+    "si-3"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "gayo-de-corinto",
+   "campo": "fecha",
+   "antes": {
+    "desde": 56,
+    "hasta": 56,
+    "precision": "año",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 56 e.c. (fecha de Romanos)"
+   },
+   "despues": {
+    "desde": 50,
+    "hasta": 56,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 50-56 e.c."
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fecha solo tenía Romanos (c. 56). 1Co 1:14 dice que Pablo lo bautizó, lo que pasó en su estancia en Corinto de 50 a 52 (estudio 3, párr. 24 y 25).",
+    "fuente": "1-corintios-1"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "gayo-de-corinto",
+   "campo": "razon",
+   "antes": "Perspicacia «Gayo», núm. 3; 1Co 1:14 y Ro 16:23. La fecha es la de Romanos, escrita en Corinto hacia 56 según la Tabla de los libros.",
+   "despues": "Perspicacia «Gayo», núm. 3; 1Co 1:14 y Ro 16:23. La fecha va de su bautismo, en la estancia de Pablo en Corinto de 50 a 52 (estudio 3), a Romanos, escrita allí hacia 56 (Tabla de los libros).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica la fecha nueva, que empieza en su bautismo.",
+    "fuente": "1-corintios-1"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "gayo-de-corinto",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-1"
+     ],
+     "razon": "1Co 1:14: es de los corintios a los que Pablo bautizó en persona.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004229"
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-1"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "fecha",
+   "antes": {
+    "desde": 55,
+    "hasta": 55,
+    "precision": "año",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 55 e.c."
+   },
+   "despues": {
+    "desde": 50,
+    "hasta": 55,
+    "precision": "rango",
+    "aprox": true,
+    "tipo": "anclada",
+    "cronologia": "tnm",
+    "texto": "c. 50-55 e.c."
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La fecha solo tenía su visita a Éfeso. Perspicacia «Estéfanas» pone el bautismo de su familia unos cinco años antes, hacia 50.",
+    "fuente": "it-estefanas"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "razon",
+   "antes": "Perspicacia «Estéfanas»; 1Co 1:16; 16:15, 17.",
+   "despues": "Perspicacia «Estéfanas»: su familia se bautizó unos cinco años antes de su visita a Éfeso de c. 55; 1Co 1:16; 16:15, 17.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón explica de dónde sale el comienzo de la fecha.",
+    "fuente": "it-estefanas"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-1"
+     ],
+     "razon": "1Co 1:14-16: Pablo bautizó a su casa entre los corintios, y 16:15 la llama primicias de Acaya. Perspicacia lo pone en la congregación de Corinto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-2"
+     ],
+     "razon": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-llega-a-corinto",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 2:1-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-llega-a-corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 55,
+      "hasta": 55,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-3",
+      "it-apolos"
+     ],
+     "razon": "1Co 3:5-9: colaboradores de Dios en el mismo campo, en momentos distintos: Pablo plantó en Corinto y Apolos regó después. Hacia 55 están cerca, en Éfeso (1Co 16:12; Perspicacia «Apolos»).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "otoño de 50 a primavera de 52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-3"
+     ],
+     "razon": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-llega-a-corinto",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 3:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pablo-llega-a-corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "apolos-en-acaya",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 3:6"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "apolos-en-acaya",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": true,
+     "fuentes": [
+      "1-corintios-3"
+     ],
+     "razon": "Desde Éfeso pasa a Acaya y trabaja sobre todo en Corinto (Hch 18:27; 19:1).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 55,
+      "hasta": 55,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-4",
+      "it-apolos"
+     ],
+     "razon": "1Co 4:6: Pablo se pone con Apolos como ejemplo para que los corintios no tomen partido por uno contra otro.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "otoño de 50 a primavera de 52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-4"
+     ],
+     "razon": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 49,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-4"
+     ],
+     "razon": "Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "no_afirmamos",
+   "valores": [
+    "Que Pablo se casara alguna vez: en sus viajes no estaba casado (1Co 7:8), y la nota de estudio de 1Co 7:7 solo ve posible que fuera viudo."
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "corinto",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "corinto",
+   "campo": "resumen",
+   "antes": "Ciudad del istmo que une Grecia central con el Peloponeso; Pablo vivió allí unos 18 meses y escribió varias cartas.",
+   "despues": "Ciudad del istmo que une Grecia central con el Peloponeso, rehecha por Roma como colonia y famosa por su inmoralidad. Pablo vivió allí unos 18 meses y escribió varias cartas.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que Roma la reconstruyó como colonia y que era conocida por su inmoralidad, dos datos que 1 Corintios 7 da por sabidos en sus notas.",
+    "fuente": "1-corintios-7"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "lugares",
+   "id": "corinto",
+   "campo": "razon",
+   "antes": "Perspicacia («Corinto») describe el lugar; aparece en Hch 18:1-17. La coordenada es de OpenBible: solo tomamos el punto.",
+   "despues": "Perspicacia «Corinto» describe el lugar; en «Historia», Julio César la rehízo como colonia en 44 a.e.c. Aparece en Hch 18:1-17; las notas de 1Co 7:2 y 7:22 hablan de su inmoralidad y sus libertos. Coordenada de OpenBible: solo el punto.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita de dónde salen los dos datos nuevos del resumen: Perspicacia «Corinto» y las notas de estudio de 1 Corintios 7.",
+    "fuente": "1-corintios-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "matrimonio-y-divorcio",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 7:10, 11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "matrimonio-y-divorcio",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-7"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "cartas",
+   "id": "1-corintios",
+   "campo": "contexto_origen",
+   "antes": {
+    "resumen": "Tercer viaje: Pablo lleva tiempo en Éfeso y gente de la casa de Cloe le informa de divisiones en Corinto.",
+    "fuentes": [
+     "it-corintios"
+    ]
+   },
+   "despues": {
+    "resumen": "Tercer viaje: Pablo lleva tiempo en Éfeso. Los de la casa de Cloe le cuentan que hay divisiones en Corinto, y la congregación le escribe con preguntas (1Co 7:1).",
+    "fuentes": [
+     "it-corintios",
+     "1-corintios-7"
+    ]
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El contexto añade la carta con preguntas que la congregación de Corinto mandó a Pablo (1Co 7:1), que Perspicacia cuenta entre los motivos de la carta.",
+    "fuente": "1-corintios-7"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conversion-de-pablo",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 9:1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "conversion-de-pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "deducido": false,
+     "estado": "verificado",
+     "tipo": "se_aparece_a",
+     "persona": "pablo",
+     "relacion": "se le aparece camino de Damasco",
+     "relacion_inversa": "lo ve resucitado camino de Damasco",
+     "fuentes": [
+      "1-corintios-9"
+     ],
+     "razon": "En 1Co 9:1 Pablo alega que ha visto a Jesús; las referencias remiten a Hch 9:3-5."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "razon",
+   "antes": "Perspicacia «Pedro» da sus cinco nombres (párr. 2), su familia y su oficio (párr. 3 y 4) y su papel en Hechos (párr. 17 a 22); «Pedro, Cartas de» sitúa las cartas en Babilonia.",
+   "despues": "Perspicacia «Pedro» da sus cinco nombres (párr. 2), su familia y su oficio (párr. 3 y 4; casado según 1Co 9:5) y su papel en Hechos (párr. 17 a 22); «Pedro, Cartas de» sitúa las cartas en Babilonia.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón no citaba el texto que lo da por casado: 1Co 9:5, que Perspicacia «Pedro», párr. 4, usa como prueba en vez de deducirlo de la suegra.",
+    "fuente": "1-corintios-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "andres",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "juan-1",
+      "mateo-4",
+      "mateo-10",
+      "marcos-1",
+      "lucas-6"
+     ],
+     "razon": "Jn 1:40-42: Andrés lleva a su hermano Simón a Jesús. Perspicacia «Pedro», párr. 3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "suegra-de-pedro",
+     "relacion": "suegra",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "marcos-1",
+      "mateo-8",
+      "lucas-4"
+     ],
+     "razon": "Mr 1:29-31 menciona a su suegra; Perspicacia deduce de ahí que estaba casado (párr. 4).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-apostol",
+     "relacion": "compañero",
+     "relacion_inversa": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "hechos-3",
+      "hechos-8",
+      "lucas-22",
+      "juan-18"
+     ],
+     "razon": "Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia «Pedro», párr. 7.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "santiago-hijo-de-zebedeo",
+     "relacion": "socio en la pesca",
+     "relacion_inversa": "socio en la pesca",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "it-santiago"
+     ],
+     "razon": "Socios en la pesca y, con Juan, los tres que Jesús llevó a la transfiguración y a Getsemaní. Perspicacia «Pedro», párr. 3 y 7.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "marcos-1",
+      "lucas-4"
+     ],
+     "razon": "Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía casa con Andrés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "babilonia",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-pedro-cartas",
+      "bt-4",
+      "1-pedro-5"
+     ],
+     "razon": "1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto no lo aclara.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-marcos",
+     "relacion": "«Marcos mi hijo»",
+     "relacion_inversa": "Pedro lo llama «Marcos mi hijo»",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "razon": "Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "silas",
+     "relacion": "escribió 1 Pedro por medio de él",
+     "relacion_inversa": "amanuense de 1 Pedro",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "razon": "Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "juan-1"
+     ],
+     "razon": "Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de mudarse a Capernaúm.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4",
+      "mateo-10",
+      "mateo-17",
+      "mateo-19",
+      "mateo-26",
+      "marcos-1",
+      "marcos-3",
+      "marcos-5",
+      "marcos-9",
+      "marcos-10",
+      "marcos-11",
+      "marcos-13",
+      "marcos-14",
+      "lucas-5",
+      "lucas-6",
+      "lucas-8",
+      "lucas-9",
+      "lucas-12",
+      "lucas-18",
+      "lucas-22",
+      "juan-1",
+      "juan-6",
+      "juan-13",
+      "juan-18",
+      "juan-21",
+      "hechos-4"
+     ],
+     "razon": "Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-16",
+      "it-jonas",
+      "juan-1",
+      "juan-21",
+      "it-juan"
+     ],
+     "razon": "Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "galilea",
+     "deducido": false,
+     "fuentes": [
+      "marcos-14",
+      "lucas-22"
+     ],
+     "razon": "Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "simon-el-curtidor",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 36,
+      "hasta": 36,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "36 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "hechos-10",
+      "it-simon"
+     ],
+     "razon": "Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "andres",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "juan-1",
+      "mateo-4",
+      "mateo-10",
+      "marcos-1",
+      "lucas-6"
+     ],
+     "razon": "Jn 1:40-42: Andrés lleva a su hermano Simón a Jesús. Perspicacia «Pedro», párr. 3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "suegra-de-pedro",
+     "relacion": "suegra",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "marcos-1",
+      "mateo-8",
+      "lucas-4",
+      "1-corintios-9"
+     ],
+     "razon": "Mr 1:29-31 nombra a su suegra; Perspicacia «Pedro», párr. 4, da su matrimonio por 1Co 9:5.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-apostol",
+     "relacion": "compañero",
+     "relacion_inversa": "compañero",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "hechos-3",
+      "hechos-8",
+      "lucas-22",
+      "juan-18"
+     ],
+     "razon": "Tras la resurrección se le nombra casi siempre con Juan: juntos en el templo (Hch 3) y en Samaria (Hch 8). Perspicacia «Pedro», párr. 7.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "santiago-hijo-de-zebedeo",
+     "relacion": "socio en la pesca",
+     "relacion_inversa": "socio en la pesca",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "it-santiago"
+     ],
+     "razon": "Socios en la pesca y, con Juan, los tres que Jesús llevó a la transfiguración y a Getsemaní. Perspicacia «Pedro», párr. 3 y 7.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "capernaum",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "marcos-1",
+      "lucas-4"
+     ],
+     "razon": "Perspicacia «Pedro», párr. 3: primero vivía en Betsaida (Jn 1:44) y después en Capernaúm (Lu 4:31, 38), donde compartía casa con Andrés.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "babilonia",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": true,
+     "fuentes": [
+      "it-pedro-cartas",
+      "bt-4",
+      "1-pedro-5"
+     ],
+     "razon": "1Pe 5:13 manda saludos desde Babilonia. Perspicacia la toma por la ciudad del Éufrates, con muchos judíos; el texto no lo aclara.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "juan-marcos",
+     "relacion": "«Marcos mi hijo»",
+     "relacion_inversa": "Pedro lo llama «Marcos mi hijo»",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "razon": "Marcos estaba con él cuando escribió la primera carta (1Pe 5:13); Perspicacia «Pedro, Cartas de», párr. 3.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "silas",
+     "relacion": "escribió 1 Pedro por medio de él",
+     "relacion_inversa": "amanuense de 1 Pedro",
+     "fecha": {
+      "desde": 62,
+      "hasta": 64,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 62-64 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pedro-cartas",
+      "1-pedro-5"
+     ],
+     "razon": "Perspicacia («Pedro, Cartas de», párr. 1) dice que se valió de Silvano para escribir la primera carta (1Pe 5:12).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "betsaida",
+     "deducido": false,
+     "fuentes": [
+      "it-pedro",
+      "juan-1"
+     ],
+     "razon": "Jn 1:44 llama a Betsaida «la ciudad de Andrés y Pedro»; Perspicacia «Pedro», párr. 3, dice que vivió allí antes de mudarse a Capernaúm.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "jesus",
+     "relacion": "maestro",
+     "deducido": false,
+     "fuentes": [
+      "mateo-4",
+      "mateo-10",
+      "mateo-17",
+      "mateo-19",
+      "mateo-26",
+      "marcos-1",
+      "marcos-3",
+      "marcos-5",
+      "marcos-9",
+      "marcos-10",
+      "marcos-11",
+      "marcos-13",
+      "marcos-14",
+      "lucas-5",
+      "lucas-6",
+      "lucas-8",
+      "lucas-9",
+      "lucas-12",
+      "lucas-18",
+      "lucas-22",
+      "juan-1",
+      "juan-6",
+      "juan-13",
+      "juan-18",
+      "juan-21",
+      "hechos-4"
+     ],
+     "razon": "Mt 4:18-20: deja las redes para seguir a Jesús, que lo hará pescador de hombres.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "jonas-padre-de-pedro",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "mateo-16",
+      "it-jonas",
+      "juan-1",
+      "juan-21",
+      "it-juan"
+     ],
+     "razon": "Mt 16:17: Jesús lo llama «Simón hijo de Jonás». Perspicacia «Jonás», núm. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "galilea",
+     "deducido": false,
+     "fuentes": [
+      "marcos-14",
+      "lucas-22"
+     ],
+     "razon": "Mr 14:70: los que están en el patio lo reconocen como galileo, y el relato no lo desmiente.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "simon-el-curtidor",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 36,
+      "hasta": 36,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "36 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "hechos-10",
+      "it-simon"
+     ],
+     "razon": "Hch 9:43 y 10:6, 32: se queda bastantes días en Jope en casa de Simón; Perspicacia «Simón», núm. 9, lo pone en 36.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).",
+    "fuente": "1-corintios-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-9"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "resumen",
+   "antes": "Medio hermano de Jesús, hijo de José y María. No creía durante el ministerio, pero antes de Pentecostés oraba con los apóstoles. Fue columna de la congregación de Jerusalén y escribió la carta de Santiago.",
+   "despues": "Medio hermano de Jesús, hijo de José y María, y casado. No creía durante el ministerio, pero antes de Pentecostés oraba con los apóstoles. Fue columna de la congregación de Jerusalén y escribió la carta de Santiago.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen añade que estaba casado: Perspicacia «Santiago», apartado 4, lo lee en 1Co 9:5.",
+    "fuente": "1-corintios-9"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "santiago-hermano-de-jesus",
+   "campo": "razon",
+   "antes": "Perspicacia «Santiago», apartado 4 (párr. 10 a 14), y «Santiago, Carta de», que lo identifica como el escritor.",
+   "despues": "Perspicacia «Santiago», apartado 4 (párr. 10 a 14; en el 10 lee en 1Co 9:5 que estaba casado), y «Santiago, Carta de», que lo identifica como el escritor.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La razón cita de dónde sale que estaba casado.",
+    "fuente": "1-corintios-9"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "bernabe",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "1-corintios",
+   "campo": "personas",
+   "valores": [
+    "bernabe"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "deducido": false,
+     "estado": "verificado",
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fuentes": [
+      "1-corintios-9"
+     ],
+     "razon": "La nota de estudio de 1Co 9:24 cree probable que Pablo estuviera en Corinto durante los Juegos Ístmicos de 51."
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 10:1, 2"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "israel-cruza-el-mar-rojo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "codornices-y-mana-en-el-desierto-de-sin",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 10:3"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "codornices-y-mana-en-el-desierto-de-sin",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "agua-de-la-roca-en-horeb",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 10:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "agua-de-la-roca-en-horeb",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "becerro-de-oro",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 10:7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "becerro-de-oro",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-10"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "creacion-de-eva",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 11:8, 9, 12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "creacion-de-eva",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-14"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "invierno de 52-53 a 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-15"
+     ],
+     "razon": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pedro",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "adan",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entierro-de-jesus",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 15:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "entierro-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "resurreccion-de-jesus",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 15:4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "resurreccion-de-jesus",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "aparicion-a-santiago",
+   "campo": "orden_relato",
+   "antes": {
+    "serie": "a7",
+    "orden": 125
+   },
+   "despues": {
+    "serie": "a7",
+    "orden": 133
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "orden 125 la ponía entre las apariciones del 16 de nisán, aunque su fecha empieza el 17. 1Co 15:6, 7 la pone tras la de los 500 (el mandato, 132) y antes de la de todos los apóstoles: 133.",
+    "fuente": "1-corintios-15"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "ascension-de-jesus",
+   "campo": "orden_relato",
+   "antes": {
+    "serie": "a7",
+    "orden": 133
+   },
+   "despues": {
+    "serie": "a7",
+    "orden": 134
+   },
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "orden 133 pasa a 134 para dejar sitio a la aparición a Santiago, que 1Co 15:7 pone tras la de los 500 y antes de la de todos los apóstoles.",
+    "fuente": "1-corintios-15"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "saulo-persigue-a-la-congregacion",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 15:9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "saulo-persigue-a-la-congregacion",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pecado-de-adan-y-eva",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 15:21, 22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pecado-de-adan-y-eva",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "creacion-de-adan",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 15:45, 47"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "creacion-de-adan",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "1-corintios",
+   "campo": "personas",
+   "valores": [
+    "santiago-hermano-de-jesus"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "invierno de 52-53 a 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "efeso",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "colecta-de-macedonia-y-acaya",
+   "campo": "pasajes",
+   "valores": [
+    "1Co 16:1-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "colecta-de-macedonia-y-acaya",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "colecta-de-macedonia-y-acaya",
+   "campo": "lugares",
+   "valores": [
+    "galacia"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "colecta-de-macedonia-y-acaya",
+   "campo": "resumen",
+   "antes": "Las congregaciones de Macedonia y de Acaya dan de buena gana dinero para los cristianos pobres de Jerusalén. Pablo, que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.",
+   "despues": "Las congregaciones de Macedonia y de Acaya, y también las de Galacia, dan de buena gana dinero para los cristianos pobres de Jerusalén. Pablo, que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "1Co 16:1 dice que Pablo dio las mismas instrucciones a las congregaciones de Galacia, y Perspicacia «Colecta» lo recoge: Galacia entra en el resumen y en lugares.",
+    "fuente": "1-corintios-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "eventos",
+   "id": "colecta-de-macedonia-y-acaya",
+   "campo": "razon",
+   "antes": "Perspicacia «Colecta»: Pablo la dirigía y ya daba instrucciones hacia 55; Ro 15:26 la da por reunida en Romanos, de c. 56 (Tabla de los libros). Pasa en dos regiones: no sitúa a nadie.",
+   "despues": "Perspicacia «Colecta»: Pablo la dirigía y ya daba instrucciones hacia 55; Ro 15:26 la da por reunida en Romanos, de c. 56 (Tabla de los libros), y 1Co 16:1 suma Galacia. Pasa en tres regiones: no sitúa a nadie.",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "1Co 16:1 añade Galacia a sus lugares; la razón pasa de dos regiones a tres.",
+    "fuente": "1-corintios-16"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "galacia",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 49,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 49-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Se une en Listra y viaja con él; «Testimonio completo» (cap. 15, párr. 18) dice que trabajaron juntos muchos años. La Tabla de los libros fecha 2 Timoteo hacia 65.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "apolos",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Llega a Éfeso hacia 52 y parece estar allí o cerca cuando Pablo escribe 1 Corintios (1Co 16:12).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 55,
+      "hasta": 55,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16",
+      "it-apolos"
+     ],
+     "razon": "1Co 3:5-9: Pablo plantó y Apolos regó en Corinto; los dos sirven como ministros y colaboradores de Dios. Perspicacia «Apolos» dice que las facciones no los desunieron.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "estefanas",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "1Co 1:14-16: Pablo bautizó a su casa entre los corintios, y 16:15 la llama primicias de Acaya. Perspicacia lo pone en la congregación de Corinto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aquila",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aquila",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 50,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Hacen tiendas juntos en Corinto y viajan con él a Éfeso (Hch 18:3, 18, 19). Ro 16:3, 4 los llama colaboradores que arriesgaron la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "priscila",
+   "campo": "fuentes",
+   "valores": [
+    "1-corintios-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "priscila",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 50,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "1-corintios-16"
+     ],
+     "razon": "Trabaja con Pablo en Corinto y se embarca con él hacia Siria (Hch 18:3, 18). Ro 16:3, 4 la llama colaboradora que arriesgó la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "1-corintios",
+   "campo": "personas",
+   "valores": [
+    "fortunato",
+    "acaico"
+   ]
+  }
+ ],
+ "preguntas": []
+}
