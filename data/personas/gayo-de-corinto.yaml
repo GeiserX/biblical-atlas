@@ -4,13 +4,13 @@ nombre: Gayo de Corinto
 nombres:
 - nombre: Gayo
 fecha:
-  desde: 56
+  desde: 50
   hasta: 56
-  precision: año
+  precision: rango
   aprox: true
   tipo: anclada
   cronologia: tnm
-  texto: c. 56 e.c. (fecha de Romanos)
+  texto: c. 50-56 e.c.
 desambiguacion: El de Corinto (1Co 1:14; Ro 16:23). No es el macedonio del motín de Éfeso, ni el de Derbe, ni el de 3 Juan.
 no_confundir_con:
 - gayo-de-macedonia
@@ -18,12 +18,14 @@ no_confundir_con:
 - gayo-de-derbe
 resumen: Cristiano de Corinto bautizado por Pablo. Cuando Pablo escribió Romanos era su anfitrión y el de toda la
   congregación.
-razon: Perspicacia «Gayo», núm. 3; 1Co 1:14 y Ro 16:23. La fecha es la de Romanos, escrita en Corinto hacia 56 según la Tabla
-  de los libros.
+razon: Perspicacia «Gayo», núm. 3; 1Co 1:14 y Ro 16:23. La fecha va de su bautismo, en la estancia de Pablo en Corinto de
+  50 a 52 (estudio 3), a Romanos, escrita allí hacia 56 (Tabla de los libros).
 fuentes:
 - it-gayo
 - romanos-16
 - tnm-tabla
+- 1-corintios-1
+- si-3
 enlaces:
 - titulo: 'Perspicacia: «Gayo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001592
@@ -35,6 +37,13 @@ historial:
 - fecha: '2026-09-29'
   cambio: Se añade el Gayo de Derbe (Hch 20:4), núm. 2 de Perspicacia «Gayo», que ahora tiene ficha propia.
   fuente: hch-20
+- fecha: '2026-09-29'
+  cambio: La fecha solo tenía Romanos (c. 56). 1Co 1:14 dice que Pablo lo bautizó, lo que pasó en su estancia en Corinto de
+    50 a 52 (estudio 3, párr. 24 y 25).
+  fuente: 1-corintios-1
+- fecha: '2026-09-29'
+  cambio: La razón explica la fecha nueva, que empieza en su bautismo.
+  fuente: 1-corintios-1
 perspicacia: 1200001592#3
 consultado: '2026-09-29'
 estado: verificado
@@ -45,5 +54,6 @@ relaciones:
   fuentes:
   - it-gayo
   - romanos-16
+  - 1-corintios-1
   razon: Perspicacia cree que la congregación de Corinto se reunía en su casa (Ro 16:23).
   estado: verificado

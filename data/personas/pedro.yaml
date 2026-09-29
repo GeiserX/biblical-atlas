@@ -25,8 +25,8 @@ fecha:
   nota: 'Actividad conocida: desde que conoce a Jesús, en el otoño de 29, hasta su segunda carta, hacia 64.'
 resumen: Apóstol, hijo de Juan o Jonás y hermano de Andrés. Pescador en el mar de Galilea, casado. Portavoz en Pentecostés,
   abrió el camino a samaritanos y gentiles. Desde Babilonia escribió su primera carta y quizá la segunda.
-razon: Perspicacia «Pedro» da sus cinco nombres (párr. 2), su familia y su oficio (párr. 3 y 4) y su papel en Hechos
-  (párr. 17 a 22); «Pedro, Cartas de» sitúa las cartas en Babilonia.
+razon: Perspicacia «Pedro» da sus cinco nombres (párr. 2), su familia y su oficio (párr. 3 y 4; casado según 1Co 9:5) y su
+  papel en Hechos (párr. 17 a 22); «Pedro, Cartas de» sitúa las cartas en Babilonia.
 fuentes:
 - it-pedro
 - it-pedro-cartas
@@ -75,6 +75,8 @@ fuentes:
 - hechos-11
 - hechos-12
 - hch-15
+- 1-corintios-9
+- 1-corintios-15
 no_confundir_con:
 - simon-el-mago
 - simon-el-curtidor
@@ -112,7 +114,8 @@ relaciones:
   - marcos-1
   - mateo-8
   - lucas-4
-  razon: Mr 1:29-31 menciona a su suegra; Perspicacia deduce de ahí que estaba casado (párr. 4).
+  - 1-corintios-9
+  razon: Mr 1:29-31 nombra a su suegra; Perspicacia «Pedro», párr. 4, da su matrimonio por 1Co 9:5.
   estado: verificado
 - tipo: acompana
   persona: juan-apostol
@@ -299,5 +302,13 @@ historial:
   cambio: 'Symeón deja de figurar como forma hebrea: la nota de estudio de Mt 10:2, más reciente que Perspicacia, dice que
     es la forma griega de Simeón.'
   fuente: mateo-10
+- fecha: '2026-09-29'
+  cambio: 'La razón no citaba el texto que lo da por casado: 1Co 9:5, que Perspicacia «Pedro», párr. 4, usa como prueba en
+    vez de deducirlo de la suegra.'
+  fuente: 1-corintios-9
+- fecha: '2026-09-29'
+  cambio: La relación con su suegra decía que Perspicacia deduce de ella el matrimonio. Perspicacia «Pedro», párr. 4, lo da
+    por 1Co 9:5 y cuenta aparte lo de la suegra (Mr 1:29-31).
+  fuente: 1-corintios-9
 consultado: '2026-09-29'
 estado: verificado

@@ -2,6 +2,12 @@
 
 Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar o cerrar. El lector y el escritor de cada libro leen esta lista antes de empezar y quitan lo que cierran.
 
+## Para todos los libros
+
+- **Nombres que solo dan las notas de estudio.** Van en `menciona` cuando la nota los identifica con lo que dice el versículo: a quién se refiere, dónde o cuándo pasó, qué suceso recuerda (en 1Co 15:5-8, Tomás, Galilea y Damasco). No van los que la nota usa para explicar una palabra, comparar o poner ejemplos de otras historias, ni los escritores de los relatos paralelos.
+- **El autor de una cita.** Si el texto bíblico no lo nombra, se queda en la `nota` del tramo aunque la nota de estudio lo nombre (Elifaz en 1Co 3:19, Isaías en 1Co 14:21), como en Romanos. Si el texto lo nombra, va en `menciona`.
+- **Una identificación que la nota solo ve posible** («podría ser la misma ocasión») deja el suceso en `menciona`, sin añadirle el pasaje. Si la da por probable o «al parecer», el pasaje entra.
+
 ## Para 1 y 2 Samuel
 
 - **Amalec (1Sa 15).** Dt 25:17-19 manda borrar a Amalec por lo de Refidim (`batalla-contra-amalec-en-refidim`); el suceso de Saúl lo pone en `menciona`.
@@ -35,6 +41,10 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 - **El día de la salida.** Nú 33:3 dice que salieron de Ramesés el día 15. `exodo` se queda en el 14 de nisán: Perspicacia «Éxodo» pone el comienzo de la marcha hacia Sucot antes de que acabara el 14.
 - **La serpiente de cobre (Nú 21:8, 9).** Jn 3:14 la recuerda. Cuando Números cree el suceso, va en `menciona` del tramo Juan 3:11-21.
 
+## Para Números y 1 Corintios
+
+- **Los ejemplos de 1Co 10.** Números ya los tiene: `agua-del-penasco-en-meriba` «1Co 10:4»; `jehova-condena-a-israel-a-40-anos-en-el-desierto` «1Co 10:5» y «1Co 10:10» (Nú 14:36, 37); `el-pueblo-pide-carne` y `codornices-en-quibrot-hataava` «1Co 10:6»; `israel-adora-al-baal-de-peor` «1Co 10:8»; `moises-hace-la-serpiente-de-cobre` «1Co 10:9»; `israel-se-niega-a-entrar-en-canaan` y `aaron-detiene-la-plaga` «1Co 10:10». Quien integre el segundo de los dos libros añade a cada suceso su pasaje y la fuente `1-corintios-10`, y lo pone en `entidades` del tramo 1-5 (v. 4 y 5) o del 6-11 (los demás). En `menciona` del 6-11 van `lugar:sitim` (nota del v. 8), `rebelion-de-core` y `muerte-de-core` (nota del v. 10). Hasta entonces `validate.py` falla con los dos libros juntos, porque la razón de `israel-adora-al-baal-de-peor` ya cita 1Co 10:8. Ese suceso ya explica los 23.000 de 1Co 10:8 frente a los 24.000 de Nú 25:9.
+
 ## Para Deuteronomio
 
 - **Pasajes paralelos ya puestos en sucesos de Éxodo.** Dt 5:4-27 en `diez-mandamientos`; Dt 9:9 en `primeros-cuarenta-dias-de-moises-en-el-sinai`; Dt 9:10, 11 en `dios-da-a-moises-las-tablas-del-testimonio`; Dt 9:12-14, 19, 26-29 en `moises-ruega-por-el-pueblo`; Dt 9:15-17, 21 en `moises-rompe-las-tablas`; Dt 9:16 en `becerro-de-oro`; Dt 9:20 en `moises-pide-perdon-por-el-pueblo`; Dt 9:18, 25 y Dt 10:1-5, 10 en `moises-recibe-las-segundas-tablas`, porque los 40 días postrado de Dt 9:18 y 9:25 son los segundos (Éx 34:28). Cada uno va en el tramo de su capítulo.
@@ -56,6 +66,7 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para 2 Timoteo
 
+- **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`, y ya cita 1Co 16. 2Ti 4:19 añade su capítulo a las fuentes de esa relación, sin crear otra.
 - **Janes y Jambres.** Los magos del faraón (Éx 7:11, 22) no tienen ficha. Si 2Ti 3:8 los crea, el tramo 7:8-13 de Éxodo los puede poner en `menciona`.
 
 ## Para Jeremías y Ezequiel
@@ -226,17 +237,23 @@ Cosas que un libro deja decididas o a medias y que otro libro tiene que respetar
 
 ## Para Gálatas y 1 Corintios
 
-- **Pasajes ya puestos en sucesos de Hechos.** Gál 1:15, 16 y 1Co 15:8 en `conversion-de-pablo`; Gál 1:18, 19 en `pablo-visita-a-cefas`; Gál 2:1-10 en `concilio-de-jerusalen-49`; 1Co 1:14 en `crispo-cree`. Van en los tramos de esos capítulos. Hechos es el dueño de estos sucesos (sección 6 de `versiculos.md`).
+- **Pasajes ya puestos en sucesos de Hechos.** Gál 1:15, 16 en `conversion-de-pablo`; Gál 1:18, 19 en `pablo-visita-a-cefas`; Gál 2:1-10 en `concilio-de-jerusalen-49`. Van en los tramos de esos capítulos. Hechos es el dueño de estos sucesos (sección 6 de `versiculos.md`).
 
-## Para 1 Corintios, 2 Corintios y Hechos
+## Para 2 Corintios y Hechos
 
-- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1Co 16:1-4 y 2Co 8 y 9 añaden su pasaje con un `anadir` y ponen el suceso en su tramo. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
+- **La colecta para Jerusalén.** `colecta-de-macedonia-y-acaya` existe desde Ro 15:25-28, 31, que es su dueño porque Hechos solo la recuerda en un discurso (Hch 24:17). 1 Corintios ya añadió 1Co 16:1-4 y Galacia. 2Co 8 y 9 añaden su pasaje con un `anadir` y ponen el suceso en su tramo. Si se relee Hechos 24, «Hch 24:17» entra igual en el tramo 10-21.
 
 ## Para 2 Corintios y Filipenses
 
 - **Los antepasados de Pablo.** `pablo` lleva `pariente` `antepasado` hacia `abrahan` (Ro 4:1; 11:1), `isaac` (Ro 9:10) y `benjamin-hijo-de-jacob` (Ro 11:1). 2Co 11:22 y Flp 3:5 solo añaden su capítulo a las fuentes de esas relaciones, sin crear otras.
 
-## Para 1 Corintios y 2 Timoteo
+## Para 2 Corintios
 
+- **El expulsado de 1Co 5.** `pablo-manda-expulsar-al-inmoral-de-corinto` cita 2Co 2:1-11 en su `razon`, porque Perspicacia «Corintios, Cartas a los» lo identifica con el arrepentido al que 2Co 2:5-11 y 7:8-12 piden perdonar. El tramo de 2Co 2 que lo cuenta lo pone en `entidades` o en `menciona`, y 2 Corintios decide si el perdón es un suceso propio o un pasaje más de este.
+- **El peligro de Éfeso.** 1Co 15:32 (las fieras de Éfeso) quedó en `pablo-escribe-1-corintios`, sin suceso propio, porque la nota duda entre sentido literal y figurado. `motin-de-efeso` ya lleva «2Co 1:8» en sus pasajes: 2 Corintios decide si se queda ahí o pasa a un suceso propio de la tribulación en Asia, y en ese caso 1Co 15:32 puede ir en su `menciona`.
 - **Áquila y Priscila con Pablo.** Su relación `acompana` con `pablo` va de c. 50 a 65 (Ro 16:3, 4; Perspicacia «Prisca»), como `colaborador`. 1Co 16:19 y 2Ti 4:19 añaden su capítulo a las fuentes de esa relación, sin crear otra.
+
+## Para Tito
+
+- **Apolos y Pablo.** `apolos` lleva `acompana` `pablo` como `colaborador`, c. 55 (1Co 3, 4 y 16): trabajaron el mismo campo en momentos distintos y solo se les ve cerca al escribirse 1 Corintios. Tit 3:13 añade su capítulo a las fuentes de esa relación con un `anadir` y puede alargar su fecha con un `cambiar` sobre esa relación.
 

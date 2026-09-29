@@ -17,9 +17,10 @@ fecha:
   cronologia: tnm
   texto: c. 33-62 e.c.
   nota: Desde que ora con los apóstoles en 33 hasta antes de 62, fecha límite de su carta.
-resumen: Medio hermano de Jesús, hijo de José y María. No creía durante el ministerio, pero antes de Pentecostés
+resumen: Medio hermano de Jesús, hijo de José y María, y casado. No creía durante el ministerio, pero antes de Pentecostés
   oraba con los apóstoles. Fue columna de la congregación de Jerusalén y escribió la carta de Santiago.
-razon: Perspicacia «Santiago», apartado 4 (párr. 10 a 14), y «Santiago, Carta de», que lo identifica como el escritor.
+razon: Perspicacia «Santiago», apartado 4 (párr. 10 a 14; en el 10 lee en 1Co 9:5 que estaba casado), y «Santiago, Carta de»,
+  que lo identifica como el escritor.
 fuentes:
 - it-santiago
 - it-santiago-carta
@@ -31,6 +32,7 @@ fuentes:
 - hechos-12
 - hch-15
 - hch-21
+- 1-corintios-9
 no_confundir_con:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -129,5 +131,11 @@ historial:
 - fecha: '2026-09-29'
   cambio: 'La relación con Judas pasa a deducido: false, porque la afirman Mt 13:55 y Jud 1; la inversa ya lo decía así.'
   fuente: mateo-13
+- fecha: '2026-09-29'
+  cambio: 'El resumen añade que estaba casado: Perspicacia «Santiago», apartado 4, lo lee en 1Co 9:5.'
+  fuente: 1-corintios-9
+- fecha: '2026-09-29'
+  cambio: La razón cita de dónde sale que estaba casado.
+  fuente: 1-corintios-9
 consultado: '2026-09-29'
 estado: verificado

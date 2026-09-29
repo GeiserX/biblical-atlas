@@ -17,6 +17,8 @@ fecha:
 no_afirmamos:
 - 'Que Pablo llegara a España: Perspicacia dice que no se sabe (Ro 15:24).'
 - 'El año y el lugar exactos de su muerte: Perspicacia solo lo cree probable bajo Nerón, poco después de c. 65.'
+- 'Que Pablo se casara alguna vez: en sus viajes no estaba casado (1Co 7:8), y la nota de estudio de 1Co 7:7 solo ve posible
+  que fuera viudo.'
 resumen: Apóstol de Jesucristo, de la tribu de Benjamín, nacido en Tarso de Cilicia y ciudadano romano. Hizo tres
   viajes misionales y la Tabla de los libros le atribuye 14 cartas.
 razon: Perspicacia «Pablo» da su tribu, su origen y sus dos nombres; la Tabla de los libros lo pone como escritor
@@ -51,6 +53,16 @@ fuentes:
 - romanos-11
 - romanos-15
 - romanos-16
+- 1-corintios-1
+- 1-corintios-2
+- 1-corintios-3
+- 1-corintios-4
+- 1-corintios-5
+- 1-corintios-7
+- 1-corintios-9
+- 1-corintios-14
+- 1-corintios-15
+- 1-corintios-16
 enlaces:
 - titulo: 'Perspicacia: «Pablo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
@@ -130,6 +142,8 @@ relaciones:
   - it-pablo
   - si-3
   - hch-19
+  - 1-corintios-15
+  - 1-corintios-16
   razon: Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).
   estado: verificado
 - tipo: vivio_en
@@ -213,6 +227,10 @@ relaciones:
   - hch-18
   - si-3
   - it-pablo
+  - 1-corintios-2
+  - 1-corintios-3
+  - 1-corintios-4
+  - 1-corintios-9
   razon: 'Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.'
   estado: verificado
 - tipo: vivio_en

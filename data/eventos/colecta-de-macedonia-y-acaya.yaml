@@ -13,21 +13,24 @@ lugares:
 - macedonia
 - acaya
 - jerusalen
+- galacia
 personas:
 - pablo
 presentes: []
 pasajes:
 - Ro 15:25-28
 - Ro 15:31
-resumen: Las congregaciones de Macedonia y de Acaya dan de buena gana dinero para los cristianos pobres de Jerusalén. Pablo,
-  que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.
+- 1Co 16:1-4
+resumen: Las congregaciones de Macedonia y de Acaya, y también las de Galacia, dan de buena gana dinero para los cristianos
+  pobres de Jerusalén. Pablo, que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.
 razon: 'Perspicacia «Colecta»: Pablo la dirigía y ya daba instrucciones hacia 55; Ro 15:26 la da por reunida en Romanos, de
-  c. 56 (Tabla de los libros). Pasa en dos regiones: no sitúa a nadie.'
+  c. 56 (Tabla de los libros), y 1Co 16:1 suma Galacia. Pasa en tres regiones: no sitúa a nadie.'
 fuentes:
 - romanos-15
 - it-colecta
 - it-contribucion
 - tnm-tabla
+- 1-corintios-16
 enlaces:
 - titulo: Romanos 15 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15
@@ -35,5 +38,13 @@ enlaces:
 - titulo: 'Perspicacia: «Colecta»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001007
   tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: '1Co 16:1 dice que Pablo dio las mismas instrucciones a las congregaciones de Galacia, y Perspicacia «Colecta» lo
+    recoge: Galacia entra en el resumen y en lugares.'
+  fuente: 1-corintios-16
+- fecha: '2026-09-29'
+  cambio: 1Co 16:1 añade Galacia a sus lugares; la razón pasa de dos regiones a tres.
+  fuente: 1-corintios-16
 consultado: '2026-09-29'
 estado: verificado
