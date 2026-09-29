@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: se-reanuda-la-obra-del-templo-520
-titulo: Ageo y Zacarías animan a reanudar el templo
+titulo: Zorobabel, Josué y el pueblo reanudan el templo
 fecha:
   desde: -519
   hasta: -519
@@ -18,15 +18,13 @@ personas:
 - zorobabel
 - josue-sumo-sacerdote
 - ageo
-- zacarias-profeta
 pasajes:
-- Ag 1:1-15
+- Ag 1:12-15
 - Esd 5:1, 2
-- Zac 1:1
-resumen: En el segundo año de Darío I, el profeta Ageo y después Zacarías animaron al pueblo. Zorobabel y el sumo sacerdote
-  Josué volvieron a trabajar en el templo aunque la prohibición seguía vigente.
-razon: Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:1 fecha el primer mensaje el día 1 del sexto mes, y
-  Ag 1:15, el comienzo de la obra el día 24.
+resumen: El día 24 del sexto mes del segundo año de Darío I, movidos por los mensajes de Ageo, Zorobabel, el sumo sacerdote
+  Josué y el resto del pueblo empezaron a trabajar en el templo, aunque la prohibición seguía vigente.
+razon: Perspicacia «Ageo», «Zorobabel» y «Darío», núm. 2 (520); Ag 1:15 fecha el comienzo de la obra el día 24 del sexto mes.
+  Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»), así que no va en este día.
 fuentes:
 - it-ageo
 - it-zorobabel
@@ -39,5 +37,25 @@ enlaces:
 - titulo: Ageo 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
   tipo: biblia
-consultado: '2026-09-28'
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Ag 1:1-11 es el primer mensaje de Ageo, del 1 de elul, y pasa a primer-mensaje-de-ageo. Sale Zac 1:1: Zacarías
+    empezó en el mes octavo, no el día 24 de este suceso.'
+  fuente: ageo-1
+- fecha: '2026-09-29'
+  cambio: 'Se quita a zacarias-profeta: Ag 1:15 fecha el suceso el día 24 del sexto mes y Zac 1:1 sitúa el comienzo de Zacarías
+    en el mes octavo, unos dos meses más tarde (Perspicacia «Ageo»).'
+  fuente: ageo-1
+- fecha: '2026-09-29'
+  cambio: El título hablaba de Ageo y Zacarías; el suceso es el día 24 del sexto mes (Ag 1:14, 15), cuando los jefes y el
+    pueblo empiezan a trabajar y Zacarías aún no profetizaba (Zac 1:1).
+  fuente: ageo-1
+- fecha: '2026-09-29'
+  cambio: El resumen incluía a Zacarías, que empezó en el mes octavo (Zac 1:1); ahora cuenta solo lo del día 24 del sexto
+    mes (Ag 1:12-15).
+  fuente: ageo-1
+- fecha: '2026-09-29'
+  cambio: La razón explica ahora por qué Zacarías no figura en el suceso; el primer mensaje del día 1 tiene su propio suceso.
+  fuente: ageo-1
+consultado: '2026-09-29'
 estado: verificado

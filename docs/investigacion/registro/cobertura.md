@@ -49,7 +49,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | [Nahúm](../../../data/cobertura/nahum.yaml) | 3 de 3 | 47 de 47 | 100 % |
 | [Habacuc](../../../data/cobertura/habacuc.yaml) | 3 de 3 | 56 de 56 | 100 % |
 | [Sofonías](../../../data/cobertura/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
-| Ageo | 0 de 2 | 0 de 38 | 0 % |
+| [Ageo](../../../data/cobertura/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/cobertura/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/cobertura/<libro>.y
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 688 de 1189 | 18617 de 31062 | 60 % |
+| **Total** | 690 de 1189 | 18655 de 31062 | 60 % |
 
 ## Capítulos empezados
 

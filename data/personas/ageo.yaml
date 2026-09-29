@@ -19,6 +19,9 @@ fuentes:
 - it-ageo
 - ageo-1
 - si-3
+- ageo-2
+- it-ageo-libro
+- si-ageo
 enlaces:
 - titulo: 'Perspicacia: «Ageo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001812
@@ -63,5 +66,6 @@ relaciones:
   - esdras-5
   razon: 'Esd 5:1 y Perspicacia «Ageo»: Zacarías se unió a él unos dos meses después.'
   estado: verificado
-consultado: '2026-09-28'
+perspicacia: '1200001812'
+consultado: '2026-09-29'
 estado: verificado
