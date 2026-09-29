@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: golan
+nombre: Golán
+nombres:
+- nombre: Golán
+tipo: ciudad
+lat: 32.781111
+lon: 35.934722
+precision: punto
+coord_fuente: openbible:abb5c1e
+coord_url: https://www.openbible.info/geo/ancient/abb5c1e/golan
+coord_nota: OpenBible da este mismo punto a toda Basán.
+resumen: Ciudad de refugio de Manasés en Basán, al este del Jordán, una de las tres que apartó Moisés. Se dio a los levitas
+  guersonitas y dio nombre a la región del Golán.
+razon: 'Perspicacia «Golán»: la mayoría la identifica con Sahm el-Jolan, unos 28 km al este del mar de Galilea; Dt 4:43. OpenBible:
+  solo el punto.'
+fuentes:
+- it-golan
+- openbible-geo
+- deuteronomio-4
+enlaces:
+- titulo: 'Perspicacia: «Golán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001736
+  tipo: perspicacia
+- titulo: Deuteronomio 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/4
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

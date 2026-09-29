@@ -15,6 +15,7 @@ orden_relato:
 lugares:
 - macedonia
 - efeso
+- troas
 personas:
 - pablo
 pasajes:
@@ -35,5 +36,9 @@ enlaces:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/20
   tipo: biblia
 buscar: Pablo sale de Éfeso hacia Macedonia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Troas, que la razón nombra por 2Co 2:12, 13, pasa también a lugares.'
+  fuente: it-troas
 consultado: '2026-09-29'
 estado: verificado

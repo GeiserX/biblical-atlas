@@ -7,6 +7,8 @@ nombres:
   nota: Forma breve del nombre.
 - nombre: Padán-aram
   nota: Grafía de Perspicacia.
+- nombre: Territorio de Aram
+  nota: Así lo llama Os 12:12 (lit. «campo de Aram»); Perspicacia «Padán» lo toma, al parecer, por la misma región.
 tipo: region
 lat: 36.864444
 lon: 39.032778
@@ -27,6 +29,7 @@ fuentes:
 - genesis-35
 - genesis-46
 - genesis-48
+- oseas-12
 enlaces:
 - titulo: 'Perspicacia: «Padán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003357

@@ -3,6 +3,9 @@ id: libano
 nombre: Líbano
 nombres:
 - nombre: Líbano
+- nombre: Torre del Líbano
+  nota: Can 7:4 la pone mirando hacia Damasco. Perspicacia cree posible que fuera una de las obras de Salomón en el Líbano;
+    otros piensan que es uno de sus picos.
 tipo: monte
 lat: 33.54
 lon: 35.583611
@@ -20,6 +23,12 @@ fuentes:
 - salmos-29
 - salmos-72
 - salmos-92
+- deuteronomio-1
+- deuteronomio-11
+- cantar-de-los-cantares-3
+- cantar-de-los-cantares-4
+- cantar-de-los-cantares-7
+- oseas-14
 enlaces:
 - titulo: 'Perspicacia: «Líbano»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002705

@@ -26,13 +26,18 @@ relaciones:
   estado: verificado
 - tipo: acompana
   persona: felipe-evangelizador
-  relacion: discípulo de
+  relacion: compañero
+  relacion_inversa: compañero
   deducido: false
   fuentes:
   - hechos-8
   - it-simon
   razon: 'Hch 8:12, 13: creyó con la predicación de Felipe, se bautizó y desde entonces no se apartaba de él.'
   estado: verificado
+  historial:
+  - fecha: '2026-09-29'
+    cambio: 'La relación decía «discípulo de» Felipe; Hch 8:13 solo dice que creyó, se bautizó y no se apartaba de él.'
+    fuente: hechos-8
 enlaces:
 - titulo: 'Perspicacia: «Simón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004131

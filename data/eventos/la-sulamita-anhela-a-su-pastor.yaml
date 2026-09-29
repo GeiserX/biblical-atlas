@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-sulamita-anhela-a-su-pastor
+titulo: La sulamita anhela a su pastor
+fecha:
+  desde: -1036
+  hasta: -1019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 1020 a.e.c. (tiempo narrativo: a comienzos del reinado de Salomón, antes de que escribiera el Cantar)'
+orden_relato:
+  serie: cantar-de-los-cantares
+  orden: 2003
+lugares:
+- sunem
+personas:
+- sulamita
+pasajes:
+- Can 2:3-7
+- Can 2:16, 17
+- Can 3:1-5
+resumen: Ya sin el pastor, la sulamita lo compara con un manzano entre los árboles del bosque, pide a las damas de la corte,
+  bajo juramento, que no le provoquen otro amor, y ruega a su amado que vuelva pronto.
+razon: «Toda Escritura», libro 22, párr. 10; Perspicacia «Cantar de los Cantares, El», «Argumento». El recuerdo de Can 2:8-15
+  es otro suceso. Misma fecha y lugar que las escenas anteriores.
+fuentes:
+- cantar-de-los-cantares-2
+- cantar-de-los-cantares-3
+- it-cantar-de-los-cantares
+- si-cantar-de-los-cantares
+- it-sunem
+- si-3
+- tnm-tabla
+enlaces:
+- titulo: El Cantar de los Cantares 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/2
+  tipo: biblia
+- titulo: El Cantar de los Cantares 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/3
+  tipo: biblia
+- titulo: 'Perspicacia: «Cantar de los Cantares, El»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

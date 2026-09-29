@@ -9,6 +9,7 @@ razon: Perspicacia «Séred»; Gé 46:14.
 fuentes:
 - it-sered
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Séred»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003906
@@ -24,6 +25,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-sered
+  - numeros-26
   razon: 'Gé 46:14: aparece entre los hijos de Zabulón.'
   estado: verificado
 - tipo: vivio_en

@@ -7,10 +7,11 @@ perspicacia: 1200003078#1
 desambiguacion: Misael hijo de Uziel; no el compañero de Daniel, llamado Mesac, ni el que estuvo junto a Esdras al leer la
   Ley.
 resumen: Levita cohatita, hijo de Uziel. Con su hermano Elzafán sacó del campamento los cuerpos de Nadab y Abihú.
-razon: Perspicacia «Misael», núm. 1; Éx 6:22.
+razon: Perspicacia «Misael», núm. 1; Éx 6:22; Le 10:4, 5.
 fuentes:
 - it-misael
 - exodo-6
+- levitico-10
 enlaces:
 - titulo: 'Perspicacia: «Misael»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003078
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - exodo-6
   - it-misael
+  - levitico-10
   razon: 'Éx 6:22: hijo de Uziel.'
   estado: verificado
 - tipo: pariente
@@ -34,6 +36,7 @@ relaciones:
   deducido: false
   fuentes:
   - exodo-6
+  - levitico-10
   razon: 'Éx 6:22: Elzafán es otro hijo de Uziel.'
   estado: verificado
 - tipo: pariente
@@ -44,5 +47,9 @@ relaciones:
   - exodo-6
   razon: 'Éx 6:22: Sitrí es otro hijo de Uziel.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El resumen cuenta que sacó los cuerpos de Nadab y Abihú, pero la ficha no citaba Le 10, de donde sale.
+  fuente: levitico-10
 consultado: '2026-09-29'
 estado: verificado

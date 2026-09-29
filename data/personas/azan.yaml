@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azan
+nombre: Azán
+nombres:
+- nombre: Azán
+perspicacia: '1200000503'
+resumen: Padre de Paltiel, el jefe de Isacar en el reparto de la tierra de Canaán.
+razon: Perspicacia «Azán»; Nú 34:26.
+fuentes:
+- it-azan
+- numeros-34
+enlaces:
+- titulo: 'Perspicacia: «Azán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000503
+  tipo: perspicacia
+- titulo: Números 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/34
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

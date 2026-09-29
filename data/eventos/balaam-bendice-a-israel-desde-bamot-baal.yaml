@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: balaam-bendice-a-israel-desde-bamot-baal
+titulo: Balaam bendice a Israel desde Bamot-Baal
+fecha:
+  desde: -1472
+  hasta: -1472
+  precision: año
+  aprox: true
+  tipo: anclada
+  cronologia: tnm
+  texto: c. 1473 a.e.c.
+orden_relato:
+  serie: numeros
+  orden: 22041
+lugares:
+- bamot-baal
+personas:
+- balaam
+- balac
+presentes:
+- balaam
+- balac
+pasajes:
+- Nú 22:41-23:12
+- Dt 23:5
+resumen: Balac sube con Balaam a Bamot-Baal, desde donde se ve el pueblo. Levantan siete altares y ofrecen un toro y un carnero
+  en cada uno. Jehová pone su mensaje en boca de Balaam, que bendice a Israel.
+razon: 'Nú 22:41-23:12; Perspicacia «Balaam», párr. 5, y «Bamot-baal». Fecha: Perspicacia «Agag», núm. 1, hacia 1473 a.e.c.'
+fuentes:
+- numeros-22
+- numeros-23
+- it-balaam
+- it-bamot-baal
+- it-agag
+enlaces:
+- titulo: Números 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/22
+  tipo: biblia
+- titulo: Números 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/23
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

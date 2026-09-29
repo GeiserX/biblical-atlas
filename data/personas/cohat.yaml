@@ -13,6 +13,8 @@ fuentes:
 - it-qohat
 - genesis-46
 - exodo-6
+- numeros-3
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Qohat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002645
@@ -29,6 +31,8 @@ relaciones:
   - genesis-46
   - it-qohat
   - exodo-6
+  - numeros-3
+  - numeros-16
   razon: 'Gé 46:11: aparece entre los hijos de Leví.'
   estado: verificado
 - tipo: vivio_en

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: libna-del-desierto
+nombre: Libná
+nombres:
+- nombre: Libná
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Entre Rimón-Pérez y Risá, según el mapa B3
+  geometria:
+    tipo: zona
+    lat: 29.77
+    lon: 34.62
+    radio_km: 20
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-libna
+  - tnm-b3
+  razon: Perspicacia no sabe dónde estaba; el mapa B3 la marca con signo de duda entre Rimón-Pérez y Risá.
+  coord_fuente: calculo
+  nota: 'Centro: sitio de Libná en el mapa B3, calculado ajustando la imagen a dieciséis lugares del mapa con punto de OpenBible.
+    Radio nuestro.'
+resumen: Campamento de Israel en el desierto, entre Rimón-Pérez y Risá. No se sabe dónde estaba. No es la ciudad real cananea
+  de Libná que luego fue de Judá.
+razon: Perspicacia «Libná», núm. 1; Nú 33:20, 21.
+fuentes:
+- it-libna
+- tnm-b3
+- numeros-33
+enlaces:
+- titulo: 'Perspicacia: «Libná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002734
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

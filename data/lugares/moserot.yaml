@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: moserot
+nombre: Moserot
+nombres:
+- nombre: Moserot
+- nombre: Moserá
+  nota: Singular del mismo nombre, el que usa Dt 10:6 al hablar de la muerte de Aarón (Perspicacia).
+tipo: region
+lat: null
+lon: null
+precision: incierto
+coord_fuente: null
+coord_url: null
+candidatos:
+- nombre: Cerca del monte Hor
+  geometria:
+    tipo: zona
+    lat: 30.832057
+    lon: 35.056872
+    radio_km: 25
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-mosera
+  - it-hor
+  razon: 'Perspicacia: tenía que quedar próximo al monte Hor, lugar de la muerte de Aarón, aunque se desconoce el sitio exacto.'
+  coord_fuente: openbible:a88331e
+  coord_url: https://www.openbible.info/geo/ancient/a88331e/moseroth
+  nota: 'Centro: primer punto de la ficha «Moseroth» de OpenBible, que es el del monte Hor. Radio nuestro.'
+- nombre: En la ruta de Risá a Cadés, según el mapa B3
+  geometria:
+    tipo: zona
+    lat: 30.28
+    lon: 34.49
+    radio_km: 30
+  estado: favorecido_nivel_1
+  fuentes:
+  - it-mosera
+  - tnm-b3
+  razon: El mapa B3 agrupa con signo de duda nueve campamentos, de Quehelatá a Moserot, en la ruta de Risá a Cadés.
+  coord_fuente: calculo
+  nota: 'Centro: punto medio de las tres flechas con que el mapa B3 señala ese tramo, calculado ajustando la imagen a dieciséis
+    lugares con punto de OpenBible. Radio nuestro.'
+resumen: Campamento de Israel entre Hasmoná y Bene-Jaacán. Dt 10:6 dice que allí murió Aarón, y por eso Perspicacia lo pone
+  cerca del monte Hor. Israel quizá pasó dos veces. No se sabe el sitio.
+razon: Perspicacia «Moserá, Moserot» y «Bene-jaaqán»; Nú 33:30, 31, 38.
+fuentes:
+- it-mosera
+- it-bene-jaaqan
+- it-hor
+- tnm-b3
+- openbible-geo
+- numeros-33
+- deuteronomio-10
+enlaces:
+- titulo: 'Perspicacia: «Moserá, Moserot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003117
+  tipo: perspicacia
+- titulo: Números 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/33
+  tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'El resumen no decía lo principal de Moserá: que Israel acampaba allí cuando murió Aarón (Dt 10:6).'
+  fuente: deuteronomio-10
+consultado: '2026-09-29'
+estado: verificado

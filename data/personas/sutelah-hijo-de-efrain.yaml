@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sutelah-hijo-de-efrain
+nombre: Sutélah
+nombres:
+- nombre: Sutélah
+perspicacia: 1200004103#1
+desambiguacion: Sutélah hijo de Efraín; no el efraimita del mismo nombre que desciende de él en 1 Crónicas 7.
+resumen: Hijo de Efraín y cabeza de los sutelahítas. Su hijo Erán fundó la familia de los eranitas.
+razon: Perspicacia «Sutélah», núm. 1; Nú 26:35, 36.
+fuentes:
+- it-sutelah
+- numeros-26
+enlaces:
+- titulo: 'Perspicacia: «Sutélah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004103
+  tipo: perspicacia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: efrain
+  relacion: padre
+  deducido: false
+  fuentes:
+  - numeros-26
+  - it-sutelah
+  razon: Nú 26:35 lo cuenta entre los hijos de Efraín.
+  estado: verificado
+- tipo: pariente
+  persona: beker-hijo-de-efrain
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:35: Béker es otro de los hijos de Efraín.'
+  estado: verificado
+- tipo: pariente
+  persona: tahan
+  relacion: hermano
+  deducido: false
+  fuentes:
+  - numeros-26
+  razon: 'Nú 26:35: Tahán es otro de los hijos de Efraín.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

@@ -12,8 +12,8 @@ fecha:
   detalle:
     estacion: invierno
 orden_relato:
-  serie: romanos
-  orden: 16021
+  serie: hechos
+  orden: 2002
   tras: pablo-deja-efeso-hacia-macedonia
 lugares:
 - corinto
@@ -55,5 +55,10 @@ enlaces:
 - titulo: 'Perspicacia: «Romanos, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003762
   tipo: perspicacia
+historial:
+- fecha: '2026-09-29'
+  cambio: 'La serie romanos la ponía detrás del arresto y del juicio ante Félix, porque tras no ordena. Pasa a la serie hechos
+    con el número de Hch 20:2, la llegada a Grecia.'
+  fuente: si-3
 consultado: '2026-09-29'
 estado: verificado

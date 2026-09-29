@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rebelion-de-core
+titulo: Coré, Datán, Abiram y On se rebelan contra Moisés y Aarón
+fecha:
+  desde: -1511
+  hasta: -1473
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: tras la sentencia de Cadés y en vida de Aarón)'
+orden_relato:
+  serie: numeros
+  orden: 16001
+lugares: []
+personas:
+- core-hijo-de-izhar
+- datan
+- abiram-hijo-de-eliab
+- on-hijo-de-pelez
+- moises
+- aaron
+presentes: []
+pasajes:
+- Nú 16:1-17
+- Sl 106:16
+resumen: El levita Coré, con los rubenitas Datán, Abiram y On y 250 jefes, acusa a Moisés y a Aarón de ponerse por encima
+  del pueblo. Moisés los cita con incienso ante Jehová; Datán y Abiram se niegan a ir.
+razon: 'Nú 16:1-17. Perspicacia «Abiram», núm. 1: Coré quería el sacerdocio; los rubenitas, quitar el mando a Moisés. Fecha:
+  tras la sentencia de Cadés (1512 a.e.c., Perspicacia «Qadés») y antes de morir Aarón en 1474 (Perspicacia «Aarón»).'
+fuentes:
+- numeros-16
+- it-core
+- it-abiram
+- it-on
+- it-qades
+- it-aaron
+- si-3
+- tnm-tabla
+- salmos-106
+enlaces:
+- titulo: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  tipo: biblia
+- titulo: 'Perspicacia: «Coré»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002648
+  tipo: perspicacia
+- titulo: 'Perspicacia: «Abiram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000048
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

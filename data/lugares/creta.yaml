@@ -3,6 +3,8 @@ id: creta
 nombre: Creta
 nombres:
 - nombre: Creta
+- nombre: Caftor
+  nota: La nota de Dt 2:23 dice que Caftor es Creta, de donde salieron los caftorim.
 tipo: isla
 lat: 35.30972
 lon: 24.89333
@@ -18,6 +20,8 @@ fuentes:
 - tito-1
 - openbible-geo
 - hch-27
+- deuteronomio-2
+- it-caftor
 enlaces:
 - titulo: 'Perspicacia: «Creta, cretenses»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001071

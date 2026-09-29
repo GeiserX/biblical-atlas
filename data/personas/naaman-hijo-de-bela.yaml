@@ -11,6 +11,7 @@ razon: Perspicacia «Naamán», núm. 1; Gé 46:21.
 fuentes:
 - it-naaman
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Naamán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003149
@@ -22,20 +23,22 @@ relaciones:
 - tipo: pariente
   persona: bela-hijo-de-benjamin
   relacion: padre
-  deducido: true
+  deducido: false
   fuentes:
+  - numeros-26
   - genesis-46
   - it-naaman
-  razon: 'Perspicacia «Naamán», núm. 1: nieto de Benjamín por medio de Bela.'
+  razon: Nú 26:40 hace a Ard y a Naamán hijos de Bela.
   estado: verificado
 - tipo: pariente
   persona: benjamin-hijo-de-jacob
   relacion: abuelo
-  deducido: true
+  deducido: false
   fuentes:
+  - numeros-26
   - genesis-46
   - it-naaman
-  razon: Gé 46:21 lo pone entre los hijos de Benjamín; Perspicacia lo tiene por nieto.
+  razon: 'Nú 26:38, 40: hijo de Bela, el primogénito de Benjamín; Gé 46:21 lo contaba entre los hijos de Benjamín.'
   estado: verificado
 - tipo: vivio_en
   lugar: egipto
@@ -45,6 +48,10 @@ relaciones:
   razon: 'Gé 46:21, 26: figura en la lista de la casa de Jacob en Egipto. Perspicacia «Benjamín», núm. 1, admite que naciera
     allí antes de morir Jacob.'
   estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: 'Nú 26:40 dice que Naamán era hijo de Bela: esa relación deja de ser una deducción de Perspicacia y cita el capítulo.'
+  fuente: numeros-26
 consultado: '2026-09-29'
 estado: verificado
 no_confundir_con:

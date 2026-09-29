@@ -11,6 +11,7 @@ razon: Perspicacia «Simrón», núm. 1; Gé 46:13.
 fuentes:
 - it-simron
 - genesis-46
+- numeros-26
 enlaces:
 - titulo: 'Perspicacia: «Simrón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004054
@@ -26,6 +27,7 @@ relaciones:
   fuentes:
   - genesis-46
   - it-simron
+  - numeros-26
   razon: 'Gé 46:13: aparece entre los hijos de Isacar.'
   estado: verificado
 - tipo: vivio_en

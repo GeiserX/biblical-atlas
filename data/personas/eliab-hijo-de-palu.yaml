@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliab-hijo-de-palu
+nombre: Eliab
+nombres:
+- nombre: Eliab
+perspicacia: 1200001292#2
+desambiguacion: El rubenita padre de Datán y Abiram; no el principal de Zabulón hijo de Helón ni el hermano mayor de David,
+  que Perspicacia «Eliab» trata aparte.
+resumen: Rubenita, hijo de Palú. Sus hijos Datán y Abiram se sumaron a la rebelión de Coré y murieron con sus familias cuando
+  se abrió la tierra. Nú 26:9 le da otro hijo, Nemuel.
+razon: Perspicacia «Eliab», núm. 2; Nú 16:1, 12; 26:8, 9.
+fuentes:
+- it-eliab
+- numeros-16
+- numeros-26
+- deuteronomio-11
+enlaces:
+- titulo: 'Perspicacia: «Eliab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001292
+  tipo: perspicacia
+- titulo: Números 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/16
+  tipo: biblia
+- titulo: Números 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/26
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: palu
+  relacion: padre
+  deducido: false
+  fuentes:
+  - it-eliab
+  - numeros-26
+  razon: Perspicacia «Eliab», núm. 2, lo da como hijo de Palú, según el segundo censo del desierto.
+  estado: verificado
+- tipo: pariente
+  persona: ruben-hijo-de-jacob
+  relacion: abuelo
+  deducido: false
+  fuentes:
+  - numeros-26
+  - deuteronomio-11
+  razon: 'Nú 26:5, 8: Palú, su padre, era hijo de Rubén.'
+  estado: verificado
+historial:
+- fecha: '2026-09-29'
+  cambio: El otro hijo, Nemuel, lo da el propio texto (Nú 26:9), no Perspicacia.
+  fuente: numeros-26
+consultado: '2026-09-29'
+estado: verificado
+no_confundir_con:
+- eliab-hijo-de-helon
