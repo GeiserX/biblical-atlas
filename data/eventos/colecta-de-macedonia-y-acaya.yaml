@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: colecta-de-macedonia-y-acaya
+titulo: Macedonia y Acaya reúnen una colecta para Jerusalén
+fecha:
+  desde: 55
+  hasta: 56
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'c. 55-56 e.c. (tiempo narrativo: ya reunida cuando Pablo escribe Romanos)'
+lugares:
+- macedonia
+- acaya
+- jerusalen
+personas:
+- pablo
+presentes: []
+pasajes:
+- Ro 15:25-28
+- Ro 15:31
+resumen: Las congregaciones de Macedonia y de Acaya dan de buena gana dinero para los cristianos pobres de Jerusalén. Pablo,
+  que organiza la colecta, se dispone a llevarla él mismo antes de visitar Roma.
+razon: 'Perspicacia «Colecta»: Pablo la dirigía y ya daba instrucciones hacia 55; Ro 15:26 la da por reunida en Romanos, de
+  c. 56 (Tabla de los libros). Pasa en dos regiones: no sitúa a nadie.'
+fuentes:
+- romanos-15
+- it-colecta
+- it-contribucion
+- tnm-tabla
+enlaces:
+- titulo: Romanos 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/15
+  tipo: biblia
+- titulo: 'Perspicacia: «Colecta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001007
+  tipo: perspicacia
+consultado: '2026-09-29'
+estado: verificado

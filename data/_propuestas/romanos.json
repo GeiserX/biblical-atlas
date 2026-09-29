@@ -1,0 +1,2338 @@
+{
+ "formato": "biblical-earth/propuesta-cobertura/1",
+ "libro": "romanos",
+ "agente": "escritor-romanos",
+ "leido": "2026-09-29",
+ "cobertura": {},
+ "fuentes": {},
+ "cambios": [
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jesus",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "david",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-1"
+     ],
+     "razon": "Ro 1:3: como hombre, Jesús desciende de David.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "roma",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-1"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "abrahan",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sara",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-4"
+     ],
+     "razon": "Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como judío.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-4"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-los-animales-partidos",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 4:3, 9, 10, 18, 22"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pacto-de-la-circuncision",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 4:10-12, 17, 19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tres-angeles-visitan-a-abrahan",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 4:19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "adan",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-5"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "pecado-de-adan-y-eva",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 5:12, 14-19"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "juicio-en-eden",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 5:16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "diez-mandamientos",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 7:7",
+    "Ro 13:9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-8"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y suyo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:7: la descendencia de Abrahán vendría por medio de Isaac (Gé 21:12).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "sara",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:9: el hijo de la promesa es el que tendría Sara (Gé 18:10, 14).",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "isaac",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rebeca",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10: Rebeca concibió gemelos de un solo hombre, Isaac.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "sara",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rebeca",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10-13: Jacob es uno de los gemelos que Rebeca tuvo de Isaac.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jacob",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rebeca",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10-13: Jacob es uno de los gemelos que Rebeca concibió.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "padre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10-13: Esaú, el mayor de los gemelos que Rebeca tuvo de Isaac.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "rebeca",
+     "relacion": "madre",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10-13: Esaú, el mayor de los gemelos que Rebeca concibió.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "esau",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "jacob",
+     "relacion": "hermano gemelo",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:10-13: Esaú y Jacob son los gemelos de Rebeca; el mayor serviría al menor.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "isaac-destetado-e-ismael-se-burla",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 9:7"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "tres-angeles-visitan-a-abrahan",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 9:9"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "nacimiento-de-esau-y-jacob",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 9:10-12"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "moises-pide-ver-la-gloria-de-jehova",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 9:15"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "eventos",
+   "id": "septima-plaga-el-granizo",
+   "campo": "pasajes",
+   "valores": [
+    "Ro 9:17"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-11"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 11:1: Pablo se presenta como israelita y descendiente de Abrahán.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite con Flp 3:5.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-15",
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "febe",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200003474"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "andronico",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200000274"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "junias",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200002554"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "tercio",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200004371"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "gayo-de-corinto",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001592#3"
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "erasto-mayordomo-de-corinto",
+   "campo": "perspicacia",
+   "antes": null,
+   "despues": "1200001413#2"
+  },
+  {
+   "op": "anadir",
+   "tipo": "lugares",
+   "id": "cencreas",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "priscila",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "aquila",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "timoteo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16"
+     ],
+     "razon": "Ro 16:21: Pablo lo llama su colaborador y manda sus saludos desde Corinto.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "jason",
+   "campo": "fuentes",
+   "valores": [
+    "romanos-16"
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jason",
+   "campo": "resumen",
+   "antes": "Cristiano de Tesalónica que hospedó a Pablo y Silas. Una turba lo llevó ante los gobernantes de la ciudad y tuvo que dar fianza.",
+   "despues": "Cristiano de Tesalónica que hospedó a Pablo y Silas; una turba lo llevó ante los gobernantes y tuvo que dar fianza. Perspicacia deja abierto que sea el pariente que saluda desde Corinto (Ro 16:21).",
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El resumen no decía que Ro 16:21 lo nombra; ahora lo cuenta como posibilidad, porque Perspicacia «Jasón» no afirma que sea el mismo.",
+    "fuente": "romanos-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "jason",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "tesalonica",
+     "deducido": false,
+     "fuentes": [
+      "it-jason",
+      "hch-17"
+     ],
+     "razon": "La turba va a su casa de Tesalónica a buscar a Pablo (Hch 17:5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "pablo",
+     "relacion": "pariente",
+     "deducido": true,
+     "fuentes": [
+      "it-jason",
+      "romanos-16"
+     ],
+     "razon": "Si es el Jasón de Ro 16:21, Pablo lo llama pariente; Perspicacia deja abierto si era de sangre o paisano.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "tesalonica",
+     "deducido": false,
+     "fuentes": [
+      "it-jason",
+      "hch-17"
+     ],
+     "razon": "La turba va a su casa de Tesalónica a buscar a Pablo (Hch 17:5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "pablo",
+     "deducido": true,
+     "fuentes": [
+      "it-jason",
+      "romanos-16"
+     ],
+     "razon": "Ro 16:21 llama pariente de Pablo a un Jasón. Perspicacia no afirma que sea el de Tesalónica; la palabra puede ser paisano, pero su sentido principal es familiar de sangre.",
+     "estado": "pendiente"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo repetía el tipo en «relacion» y daba por segura la identidad con el Jasón de Ro 16:21. Queda sin grado y pendiente, porque Perspicacia solo la plantea como posibilidad.",
+    "fuente": "romanos-16"
+   }
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "gayo-de-corinto",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 56,
+      "hasta": 56,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-gayo",
+      "tnm-tabla"
+     ],
+     "razon": "Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla de los libros.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "erasto-mayordomo-de-corinto",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "cuarto",
+     "relacion": "hermano",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-cuarto"
+     ],
+     "razon": "Ro 16:23 dice «su hermano Cuarto»; la nota de estudio deja abierto si era hermano de sangre o hermano en la fe.",
+     "estado": "pendiente"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "rufo-hijo-de-simon",
+   "campo": "no_confundir_con",
+   "valores": [
+    "rufo-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lucio-de-cirene",
+   "campo": "no_confundir_con",
+   "valores": [
+    "lucio-pariente-de-pablo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "lucas",
+   "campo": "no_confundir_con",
+   "valores": [
+    "lucio-pariente-de-pablo"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-jesus",
+   "campo": "no_confundir_con",
+   "valores": [
+    "maria-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-de-betania",
+   "campo": "no_confundir_con",
+   "valores": [
+    "maria-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-magdalena",
+   "campo": "no_confundir_con",
+   "valores": [
+    "maria-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-esposa-de-clopas",
+   "campo": "no_confundir_con",
+   "valores": [
+    "maria-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "maria-madre-de-juan-marcos",
+   "campo": "no_confundir_con",
+   "valores": [
+    "maria-de-roma"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "cartas",
+   "id": "romanos",
+   "campo": "personas",
+   "valores": [
+    "epeneto",
+    "maria-de-roma",
+    "ampliato",
+    "urbano",
+    "estaquis",
+    "apeles",
+    "aristobulo",
+    "herodion",
+    "narciso",
+    "trifena",
+    "trifosa",
+    "persida",
+    "rufo-de-roma",
+    "asincrito",
+    "flegonte",
+    "hermes",
+    "patrobas",
+    "hermas",
+    "filologo",
+    "julia",
+    "nereo",
+    "olimpas",
+    "lucio-pariente-de-pablo",
+    "sosipatro",
+    "cuarto"
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andronico",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "compañero de prisión",
+     "relacion_inversa": "compañero de prisión",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-andronico"
+     ],
+     "razon": "Ro 16:7 lo llama compañero de prisión de Pablo. Ni el texto ni Perspicacia dicen dónde ni cuándo estuvieron presos juntos.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "junias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "compañero de prisión",
+     "relacion_inversa": "compañero de prisión",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-junias"
+     ],
+     "razon": "Ro 16:7 lo cuenta, con Andrónico, entre los compañeros de prisión de Pablo. Ni el texto ni Perspicacia dicen dónde ni cuándo.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "andronico",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "pablo",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-andronico"
+     ],
+     "razon": "Ro 16:7: Pablo lo llama pariente suyo. Perspicacia «Andrónico» cree que el contexto apunta a un familiar de sangre y no solo a un paisano.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "anadir",
+   "tipo": "personas",
+   "id": "junias",
+   "campo": "relaciones",
+   "valores": [
+    {
+     "tipo": "pariente",
+     "persona": "pablo",
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-junias"
+     ],
+     "razon": "Ro 16:7: Pablo lo llama pariente suyo, junto con Andrónico. Perspicacia «Junias» da como sentido principal el de familiar de sangre.",
+     "estado": "verificado"
+    }
+   ]
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "pablo",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "tarso",
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-tarso",
+      "hch-22"
+     ],
+     "razon": "Él mismo dice que nació en Tarso de Cilicia (Hch 21:39; 22:3); Perspicacia «Pablo», párr. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "tarso",
+     "fecha": {
+      "desde": 36,
+      "hasta": 46,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "entre c. 36 y c. 46 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-tarso",
+      "hch-9",
+      "hechos-11"
+     ],
+     "razon": "Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "fecha": {
+      "desde": 46,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "c. 46-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-siria",
+      "hechos-11"
+     ],
+     "razon": "Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "invierno de 52-53 a 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "si-3",
+      "hch-19"
+     ],
+     "razon": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "hch-28",
+      "si-3"
+     ],
+     "razon": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "gamaliel-fariseo",
+     "relacion": "discípulo de",
+     "deducido": false,
+     "fuentes": [
+      "hch-22",
+      "it-gamaliel",
+      "it-pablo",
+      "w96-gamaliel"
+     ],
+     "razon": "Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel» (apartado 2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "andronico",
+     "relacion": "pariente",
+     "deducido": true,
+     "fuentes": [
+      "it-andronico",
+      "romanos-16"
+     ],
+     "razon": "Ro 16:7 llama a Andrónico y a Junias «mis parientes»; Perspicacia cree que el contexto apunta a parentesco de sangre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "junias",
+     "relacion": "pariente",
+     "deducido": true,
+     "fuentes": [
+      "it-junias",
+      "romanos-16"
+     ],
+     "razon": "Mismo versículo que Andrónico (Ro 16:7); Perspicacia da como sentido principal el de pariente de sangre.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "damasco",
+     "fecha": {
+      "desde": 34,
+      "hasta": 36,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "entre c. 34 y 36 e.c. (tiempo narrativo: de la conversión a la huida de Damasco)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "it-damasco",
+      "bt-8",
+      "hch-26"
+     ],
+     "razon": "Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la ciudad desde Arabia.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "judas-de-damasco",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 34,
+      "hasta": 34,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 34 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "it-recta",
+      "it-judas"
+     ],
+     "razon": "Hch 9:11: Ananías lo encuentra en casa de Judas; Perspicacia «Recta» dice que se alojó allí un tiempo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "otoño de 50 a primavera de 52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "si-3",
+      "it-pablo"
+     ],
+     "razon": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "hch-22",
+      "it-pablo",
+      "hch-26"
+     ],
+     "razon": "Hch 22:3: se crió y se formó en Jerusalén con Gamaliel; Perspicacia «Pablo» (párr. 2) lo repite.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "cesarea",
+     "fecha": {
+      "desde": 56,
+      "hasta": 58,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56-58 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-23",
+      "hch-24",
+      "si-3",
+      "hch-25"
+     ],
+     "razon": "Preso en Cesarea, en el palacio de Herodes, desde su llegada hasta que Festo releva a Félix dos años más tarde (Hch 23:33-35; 24:27). El estudio 3 (párr. 27) da 56-58.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-4",
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como judío.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y suyo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite con Flp 3:5.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "gayo-de-corinto",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 56,
+      "hasta": 56,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-gayo",
+      "tnm-tabla"
+     ],
+     "razon": "Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla de los libros.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "nacio_en",
+     "lugar": "tarso",
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-tarso",
+      "hch-22"
+     ],
+     "razon": "Él mismo dice que nació en Tarso de Cilicia (Hch 21:39; 22:3); Perspicacia «Pablo», párr. 2.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "tarso",
+     "fecha": {
+      "desde": 36,
+      "hasta": 46,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "entre c. 36 y c. 46 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-tarso",
+      "hch-9",
+      "hechos-11"
+     ],
+     "razon": "Lo envían a Tarso desde Cesarea y Bernabé va allí a buscarlo años después (Hch 9:30; 11:25).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "antioquia-de-siria",
+     "fecha": {
+      "desde": 46,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "c. 46-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "it-siria",
+      "hechos-11"
+     ],
+     "razon": "Trabaja un año en Antioquía con Bernabé y la usa después como base de sus viajes (Hch 11:26; 14:26; 18:22).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "invierno de 52-53 a 55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "si-3",
+      "hch-19"
+     ],
+     "razon": "Unos tres años en Éfeso durante el tercer viaje (Hch 19:10; 20:31).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "fecha": {
+      "desde": 59,
+      "hasta": 61,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 59-61 e.c. (primer encierro en Roma)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-pablo",
+      "hch-28",
+      "si-3"
+     ],
+     "razon": "Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "gamaliel-fariseo",
+     "relacion": "discípulo de",
+     "deducido": false,
+     "fuentes": [
+      "hch-22",
+      "it-gamaliel",
+      "it-pablo",
+      "w96-gamaliel"
+     ],
+     "razon": "Hch 22:3 dice que se educó en Jerusalén a los pies de Gamaliel. Perspicacia «Pablo» (párr. 2) y «Gamaliel» (apartado 2) lo repiten; La Atalaya de 1996, apartado «Cómo enseñaba», describe esa enseñanza.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "damasco",
+     "fecha": {
+      "desde": 34,
+      "hasta": 36,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "narrativa",
+      "cronologia": "tnm",
+      "texto": "entre c. 34 y 36 e.c. (tiempo narrativo: de la conversión a la huida de Damasco)"
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "it-damasco",
+      "bt-8",
+      "hch-26"
+     ],
+     "razon": "Se queda con los discípulos de Damasco y predica allí hasta que huye (Hch 9:19-25); Gál 1:17 añade que volvió a la ciudad desde Arabia.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "judas-de-damasco",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 34,
+      "hasta": 34,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 34 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-9",
+      "it-recta",
+      "it-judas"
+     ],
+     "razon": "Hch 9:11: Ananías lo encuentra en casa de Judas; Perspicacia «Recta» dice que se alojó allí un tiempo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "otoño de 50 a primavera de 52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "si-3",
+      "it-pablo"
+     ],
+     "razon": "Hch 18:3, 11: se aloja con Áquila y Priscila y se queda un año y seis meses. El estudio 3, párr. 24 y 25, lo fecha.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "jerusalen",
+     "deducido": false,
+     "fuentes": [
+      "hch-22",
+      "it-pablo",
+      "hch-26"
+     ],
+     "razon": "Hch 22:3: se crió y se formó en Jerusalén con Gamaliel; Perspicacia «Pablo» (párr. 2) lo repite.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "cesarea",
+     "fecha": {
+      "desde": 56,
+      "hasta": 58,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56-58 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-23",
+      "hch-24",
+      "si-3",
+      "hch-25"
+     ],
+     "razon": "Preso en Cesarea, en el palacio de Herodes, desde su llegada hasta que Festo releva a Félix dos años más tarde (Hch 23:33-35; 24:27). El estudio 3 (párr. 27) da 56-58.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "abrahan",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-4",
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 4:1: Pablo llama a Abrahán nuestro antepasado, y la nota al pie precisa que lo es según la carne; habla como judío.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "isaac",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-9"
+     ],
+     "razon": "Ro 9:3, 4, 10: Pablo llama a los israelitas sus parientes carnales e incluye a Isaac como antepasado de ellos y suyo.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "pariente",
+     "persona": "benjamin-hijo-de-jacob",
+     "relacion": "antepasado",
+     "deducido": false,
+     "fuentes": [
+      "romanos-11",
+      "it-pablo"
+     ],
+     "razon": "Ro 11:1 lo sitúa en la tribu de Benjamín, que desciende del hijo de Jacob; Perspicacia «Pablo», párr. 1, lo repite con Flp 3:5.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "gayo-de-corinto",
+     "relacion": "huésped de",
+     "fecha": {
+      "desde": 56,
+      "hasta": 56,
+      "precision": "año",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 56 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "romanos-16",
+      "it-gayo",
+      "tnm-tabla"
+     ],
+     "razon": "Ro 16:23: Gayo lo hospeda a él y a toda la congregación de Corinto cuando escribe Romanos, hacia 56 según la Tabla de los libros.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "El parentesco con Andrónico y Junias pasa a las fichas de ellos, sin grado y como dato del texto (Ro 16:7), igual que el de Herodión, Lucio y Sosípatro.",
+    "fuente": "romanos-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "aquila",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "priscila",
+     "relacion": "esposo",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hch 18:2 presenta a Priscila como su esposa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "romanos-16",
+      "hch-18",
+      "it-claudio"
+     ],
+     "razon": "Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hacen tiendas juntos en Corinto y viajan con él hasta Éfeso (Hch 18:3, 18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "ponto",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "priscila",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hch 18:2 presenta a Priscila como su esposa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "romanos-16",
+      "hch-18",
+      "it-claudio"
+     ],
+     "razon": "Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hacen tiendas juntos en Corinto y viajan con él hasta Éfeso (Hch 18:3, 18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "ponto",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Priscila decía «esposo»; en la ficha del esposo va «esposa», porque dice qué es Priscila para Áquila (Hch 18:2).",
+    "fuente": "hch-18"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "aquila",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "pariente",
+     "persona": "priscila",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hch 18:2 presenta a Priscila como su esposa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "romanos-16",
+      "hch-18",
+      "it-claudio"
+     ],
+     "razon": "Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hacen tiendas juntos en Corinto y viajan con él hasta Éfeso (Hch 18:3, 18, 19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "ponto",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "pariente",
+     "persona": "priscila",
+     "relacion": "esposa",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Hch 18:2 presenta a Priscila como su esposa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Pablo los encuentra en Corinto recién llegados de Italia y se aloja con ellos (Hch 18:2, 3).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18"
+     ],
+     "razon": "Se quedan en Éfeso al menos hasta que Pablo escribe 1 Corintios; la congregación se reúne en su casa (1Co 16:19).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "romanos-16",
+      "hch-18",
+      "it-claudio"
+     ],
+     "razon": "Hch 18:2: vivía en Roma hasta el decreto de Claudio, de 49 o principios de 50. Hacia 56 había vuelto, con una congregación en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 50,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "it-aquila",
+      "hch-18",
+      "romanos-16",
+      "it-prisca"
+     ],
+     "razon": "Hacen tiendas juntos en Corinto y viajan con él a Éfeso (Hch 18:3, 18, 19). Ro 16:3, 4 los llama colaboradores que arriesgaron la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "nacio_en",
+     "lugar": "ponto",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2 lo llama natural del Ponto; Perspicacia «Áquila» dice que era oriundo de allí.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: acababa de llegar de Italia porque Claudio había echado de Roma a los judíos.",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo iba solo de 50 a 52. Ro 16:3, 4 los llama colaboradores hacia 56, y Perspicacia «Prisca» la alarga hasta la muerte de Pablo, unos quince años después.",
+    "fuente": "romanos-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "priscila",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: llegó de Italia con su esposo tras el decreto de Claudio contra los judíos de Roma.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2, 3: Pablo la encuentra en Corinto con Áquila y vive en su casa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:3, 18: trabaja con Pablo en Corinto y se embarca con él hacia Siria.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-claudio"
+     ],
+     "razon": "Hch 18:2: vivía en Roma con Áquila hasta que Claudio mandó salir a los judíos, en 49 o principios de 50.",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: llegó de Italia con su esposo tras el decreto de Claudio contra los judíos de Roma.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2, 3: Pablo la encuentra en Corinto con Áquila y vive en su casa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:3, 18: trabaja con Pablo en Corinto y se embarca con él hacia Siria.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-claudio",
+      "romanos-16",
+      "it-prisca"
+     ],
+     "razon": "Hch 18:2: vivía en Roma con Áquila hasta que Claudio mandó salir a los judíos, en 49 o principios de 50. Hacia 56 había vuelto y la congregación se reunía en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Roma solo hablaba de antes del decreto de Claudio; ahora cuenta también la vuelta hacia 56, con la congregación en su casa (Ro 16:3-5; Perspicacia «Prisca»).",
+    "fuente": "romanos-16"
+   }
+  },
+  {
+   "op": "cambiar",
+   "tipo": "personas",
+   "id": "priscila",
+   "campo": "relaciones",
+   "antes": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: llegó de Italia con su esposo tras el decreto de Claudio contra los judíos de Roma.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2, 3: Pablo la encuentra en Corinto con Áquila y vive en su casa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:3, 18: trabaja con Pablo en Corinto y se embarca con él hacia Siria.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-claudio",
+      "romanos-16",
+      "it-prisca"
+     ],
+     "razon": "Hch 18:2: vivía en Roma con Áquila hasta que Claudio mandó salir a los judíos, en 49 o principios de 50. Hacia 56 había vuelto y la congregación se reunía en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    }
+   ],
+   "despues": [
+    {
+     "tipo": "vivio_en",
+     "lugar": "italia",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "it-italia"
+     ],
+     "razon": "Hch 18:2: llegó de Italia con su esposo tras el decreto de Claudio contra los judíos de Roma.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "corinto",
+     "fecha": {
+      "desde": 50,
+      "hasta": 52,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-52 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:2, 3: Pablo la encuentra en Corinto con Áquila y vive en su casa.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "efeso",
+     "fecha": {
+      "desde": 52,
+      "hasta": 55,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 52-55 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila"
+     ],
+     "razon": "Hch 18:18, 19, 26: se queda en Éfeso con Áquila; Perspicacia «Áquila» los sitúa allí hasta hacia 55.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "acompana",
+     "persona": "pablo",
+     "relacion": "colaborador",
+     "relacion_inversa": "colaborador",
+     "fecha": {
+      "desde": 50,
+      "hasta": 65,
+      "precision": "rango",
+      "aprox": true,
+      "tipo": "anclada",
+      "cronologia": "tnm",
+      "texto": "c. 50-65 e.c."
+     },
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-aquila",
+      "romanos-16",
+      "it-prisca"
+     ],
+     "razon": "Trabaja con Pablo en Corinto y se embarca con él hacia Siria (Hch 18:3, 18). Ro 16:3, 4 la llama colaboradora que arriesgó la vida por él; Perspicacia «Prisca» alarga el trato hasta su muerte.",
+     "estado": "verificado"
+    },
+    {
+     "tipo": "vivio_en",
+     "lugar": "roma",
+     "deducido": false,
+     "fuentes": [
+      "hch-18",
+      "it-claudio",
+      "romanos-16",
+      "it-prisca"
+     ],
+     "razon": "Hch 18:2: vivía en Roma con Áquila hasta que Claudio mandó salir a los judíos, en 49 o principios de 50. Hacia 56 había vuelto y la congregación se reunía en su casa (Ro 16:3-5).",
+     "estado": "verificado"
+    }
+   ],
+   "historial": {
+    "fecha": "2026-09-29",
+    "cambio": "La relación con Pablo iba solo de 50 a 52. Ro 16:3, 4 los llama colaboradores hacia 56, y Perspicacia «Prisca» la alarga hasta la muerte de Pablo, unos quince años después.",
+    "fuente": "romanos-16"
+   }
+  }
+ ],
+ "preguntas": []
+}
