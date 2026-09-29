@@ -18,6 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build  # noqa: E402
+import cobertura  # noqa: E402
 
 ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 DIA = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -60,6 +61,8 @@ REQ_PARADA = ["orden", "lugar", "referencia", "fecha", "nota", "razon", "fuentes
 REQ_PARADA_RECORRIDO = ["sel", "t", "texto", "pasajes"]
 REQ_FUENTE = ["titulo", "obra", "url", "nivel", "publicado", "consultado"]
 ESTRUCTURA_LIBRO = {"slug", "num", "nombre", "abr", "formas", "habladas", "capitulos"}
+# Estructura opcional: el último versículo de cada capítulo y los que la TNM no incluye. No son hechos: sin fuentes.
+ESTRUCTURA_LIBRO_OPCIONAL = {"versiculos", "omitidos"}
 HECHOS_LIBRO = {"escritor", "lugar", "fecha", "abarca"}
 ESTRUCTURA_MES = {"id", "orden", "nombre", "otros_nombres", "nombres"}
 CAMPOS_NOMBRE_MES = {"nombre", "desde", "hasta", "nota", "fuentes", "razon"}
@@ -138,6 +141,9 @@ def validar_fecha(f, donde, err, meses=(), estado=None):
         err(f"{donde}: fecha.texto «{texto}» da un solo año, pero desde/hasta son {d}/{h}; "
             f"pon desde == hasta, aprox: true o el tramo en el texto")
     det = f.get("detalle")
+    if det is not None and _entero(d) and _entero(h) and d != h:
+        err(f"{donde}: fecha.detalle solo vale en una fecha de un año (desde == hasta); en un tramo {d}/{h} el sitio "
+            f"leería el mes en el primer año. Pon el mes en la razon")
     if det is not None:
         if not isinstance(det, dict) or not det:
             err(f"{donde}: fecha.detalle debe ser un objeto como {{mes: nisan, dia: 14}} o {{estacion: otoño}}")
@@ -367,7 +373,8 @@ def validar_libros(datos, err, meses):
             if fm in formas:
                 err(f"{donde}: la forma de búsqueda '{fm}' ya es de {formas[fm]}")
             formas[fm] = l.get("slug")
-        extra = set(l) - ESTRUCTURA_LIBRO
+        cobertura.validar_libro(l, donde, err)
+        extra = set(l) - ESTRUCTURA_LIBRO - ESTRUCTURA_LIBRO_OPCIONAL
         if extra - HECHOS_LIBRO - {"fuentes", "razon", "consultado", "estado", "historial", "nota"}:
             err(f"{donde}: campos desconocidos {sorted(extra - HECHOS_LIBRO - {'fuentes', 'razon', 'consultado', 'estado', 'historial', 'nota'})}")
         if extra:
@@ -779,9 +786,9 @@ def validar(datos):
                         err(f"{donde}: {k} debe ser una lista de ids de personas")
                 if "personas" in (limpio.get("destinatarios") or {}) and not isinstance(limpio["destinatarios"]["personas"], list):
                     err(f"{donde}: destinatarios.personas debe ser una lista de ids de personas")
-            if tipo == "eventos" and "presentes" in limpio and not (
-                    isinstance(limpio["presentes"], list) and limpio["presentes"]):
-                err(f"{donde}: presentes debe ser una lista no vacía de ids de personas")
+            # presentes: [] es un suceso que no sitúa a nadie (en el camino, sin lugar nombrado).
+            if tipo == "eventos" and "presentes" in limpio and not isinstance(limpio["presentes"], list):
+                err(f"{donde}: presentes debe ser una lista de ids de personas ([] si el suceso no sitúa a nadie)")
             if tipo == "periodos" and "consta_desde" in limpio:
                 cd, fd = limpio["consta_desde"], limpio.get("fecha") or {}
                 if limpio.get("tipo") != "potencia" or fd.get("desde") is not None:
@@ -796,9 +803,13 @@ def validar(datos):
                 validar_recorrido(limpio, donde, err)
     validar_consta_desde(datos, err)
     validar_padres_hijos(datos, err)
+    validar_claves_perspicacia(datos, err)
     errores.extend(build.integridad(datos))
     errores.extend(pablo_en_su_sitio(datos))
     errores.extend(meses_en_su_anio(datos))
+    errores.extend(cobertura.comprobar(datos))
+    for slug, obj in (datos.get("cobertura") or {}).items():
+        textos_largos(build.limpio(obj), obj["_fichero"], err)
     return errores
 
 
@@ -824,6 +835,44 @@ def validar_padres_hijos(datos, err):
         if (px in PALABRAS_PADRE) == (py in PALABRAS_PADRE):
             err(f"{fx}: {x} llama a {y} «{px}» y {fy} llama a {x} «{py}»; una relación pariente dice «persona es "
                 f"el R de esta ficha», así que un lado lleva palabra de padre y el otro de hijo")
+
+
+RE_PERSPICACIA = re.compile(r"^(\d{10})(?:#([1-9]\d?))?$")
+
+
+def validar_claves_perspicacia(datos, err):
+    """perspicacia: la clave de identidad de una persona, «<documento>#<entrada>» del artículo de Perspicacia
+    (1200003629#1 es Ram, núm. 1), o solo el documento si el artículo trata de una sola persona. null dice que
+    Perspicacia no tiene artículo. Dos personas con la misma clave son la misma: se funden en una ficha."""
+    vistas = {}
+    for o in datos["personas"]:
+        if "perspicacia" not in o:
+            continue
+        v = o["perspicacia"]
+        if v is None:
+            continue
+        m = RE_PERSPICACIA.match(str(v)) if isinstance(v, str) else None
+        if not m:
+            err(f"{o['_fichero']}: perspicacia '{v}' debe ser '<documento de 10 cifras>' o '<documento>#<número de la "
+                f"entrada>' (1200003629#1), o null si Perspicacia no tiene artículo")
+            continue
+        urls = [str(e.get("url") or "") for e in o.get("enlaces") or [] if isinstance(e, dict)]
+        urls += [str((datos["fuentes"].get(f) or {}).get("url") or "") for f in o.get("fuentes") or []]
+        if not any(u.rstrip("/").endswith("/" + m.group(1)) for u in urls):
+            err(f"{o['_fichero']}: perspicacia '{v}': ningún enlace ni fuente de la ficha lleva al documento {m.group(1)}")
+        if v in vistas:
+            err(f"{o['_fichero']}: perspicacia '{v}' es también la clave de {vistas[v]}; son la misma persona, "
+                f"se funden en una sola ficha")
+        else:
+            vistas[v] = o["_fichero"]
+    por_doc = {}
+    for v in vistas:
+        doc, _, n = v.partition("#")
+        por_doc.setdefault(doc, set()).add(bool(n))
+    for doc, formas in por_doc.items():
+        if formas == {True, False}:
+            err(f"data/personas: el documento {doc} sale como clave sin número y con número; si el artículo trata de "
+                f"varias personas, todas llevan su número de entrada")
 
 
 def validar_consta_desde(datos, err):
@@ -896,8 +945,9 @@ def main(argv=None):
         print("ERROR", e)
     n = sum(len(datos[t]) for t in build.TIPOS)
     n_impl = sum(1 for f in datos["fuentes"].values() if f.get("implicita"))
-    print(f"validate: {n} ficheros de entidades, {len(datos['fuentes'])} fuentes ({n_impl} capítulos implícitos) y "
-          f"{len(datos['libros'])} libros; {len(errores)} errores de esquema.")
+    print(f"validate: {n} ficheros de entidades, {len(datos['fuentes'])} fuentes ({n_impl} capítulos implícitos), "
+          f"{len(datos['libros'])} libros y {len(datos.get('cobertura') or {})} ficheros de cobertura; "
+          f"{len(errores)} errores de esquema.")
     fallos = []
     if args.links:
         lista = urls(datos)

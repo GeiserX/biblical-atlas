@@ -36,6 +36,8 @@ python3 scripts/validate.py --links    # esquema y, además, cada URL
 
 Comprueba los campos obligatorios, la forma de cada `fecha` (`desde` no puede ser posterior a `hasta`, el año del texto tiene que coincidir con `desde` o `hasta`, un texto de un solo año pide `desde == hasta` o `aprox: true`, una fecha `derivada` necesita su cuenta y `estado: pendiente`), que cada candidato dice de dónde sale su punto (`openbible:<id>`, o `calculo` con la cuenta en `nota`), que los identificadores son slugs ASCII en minúsculas iguales al nombre del fichero, que ningún hecho tiene `fuentes` ni `razon` vacías y que todas las referencias existen: relaciones, candidatos, escritores, portadores, hallazgos y paradas de recorridos. También marca cualquier `resumen`, `razon`, `nota`, `texto` u otro campo de texto (`cambio`, `explicacion`, `desambiguacion`, `no_sabemos`, `donde_hoy` en los hallazgos, y `clima` y `campo` en los meses) de más de 40 palabras: un texto tan largo suele ser una cita, y aquí solo escribimos resúmenes propios. El esquema completo está en [`docs/investigacion/README.md`](../docs/investigacion/README.md).
 
+También comprueba que `fecha.detalle` solo va en una fecha de un año, que la clave `perspicacia` de cada persona tiene la forma `<documento>` o `<documento>#<entrada>`, lleva a un enlace o una fuente de la ficha y no se repite, y las reglas de la cobertura de la Biblia ([`data/cobertura/README.md`](../data/cobertura/README.md#reglas)), en las dos direcciones.
+
 Con `--links` pide cada URL una vez, con medio segundo entre peticiones, y falla si alguna no responde 200.
 
 Sale con código 1 ante cualquier error. `--data DIR` valida otra copia de los datos. Así se valida un cambio sin el trabajo a medias de otros:
@@ -46,6 +48,19 @@ git archive HEAD data | tar -x -C "$T"
 rsync -a --relative <tus ficheros bajo data/> "$T/"
 python3 scripts/validate.py --data "$T/data"
 ```
+
+## Aplicar las propuestas de lectura
+
+```bash
+python3 scripts/aplicar.py --seco propuestas/*.json       # qué escribiría, sin escribir
+python3 scripts/aplicar.py propuestas/*.json              # un solo libro en marcha
+python3 scripts/aplicar.py --paralelo propuestas/*.json   # varios libros a la vez
+python3 scripts/test_aplicar.py                           # sus pruebas
+```
+
+[`aplicar.py`](aplicar.py) es el escritor de un libro: aplica las propuestas JSON de los lectores (formato en [`docs/investigacion/versiculos.md`](../docs/investigacion/versiculos.md#11-la-propuesta)) en orden de capítulo. Crea las fichas nuevas en modo exclusivo, funde un `crear` repetido o con una clave `perspicacia` que ya tiene otra persona, une listas y relaciones, y no aplica un `cambiar` cuyo `antes` ya no coincide. En `data/cobertura/<libro>.yaml` sustituye solo los capítulos que traen las propuestas, y une las fuentes en `data/fuentes/cobertura-<libro>.yaml`: un id que ya existe con otros datos es un error y entonces no escribe nada. Una ficha que ya existía cambia solo en las líneas de los campos que cambian.
+
+Con `--paralelo` no toca ninguna ficha que ya existía: esos cambios van a `data/_propuestas/<libro>.json`, que se aplica después con el mismo script. Sale con 0 si todo fue bien, 2 si hubo choques (lo demás se aplica) y 1 si hubo un error. No usa la red.
 
 ## Revisar lo antiguo
 

@@ -9,6 +9,15 @@
 #   formas:    lo que acepta el buscador del sitio, sin tildes, espacios ni puntos.
 #   habladas:  formas escritas en los subtítulos de los vídeos («Hechos», «Hech.»).
 #   capitulos: número de capítulos.
+#   versiculos: número del último versículo de cada capítulo, en orden (tantos como capitulos).
+#   omitidos:  {"<capítulo>": [versículos]} de la numeración tradicional que la TNM no trae como texto,
+#              porque solo aparecen en manuscritos posteriores. Se detectan en el HTML de cada capítulo de
+#              wol.jw.org (nwtsty/<num>/<capítulo>), cuyas anclas son v<num>-<capítulo>-<versículo>-<parte>:
+#              el ancla existe pero su texto es solo «--» (Mateo 17:21) o falta el número en la secuencia
+#              (Juan 8:1-11). Los versículos que hay que leer son 1..versiculos menos omitidos.
+#   Suma de versiculos: 31089. La numeración tradicional da 31102; la diferencia son 13 versículos con los que
+#   la TNM no llega a numerar el capítulo: Marcos 16 acaba en el 8 (sin 9-20) y Juan 7 en el 52 (sin 53).
+#   Los encabezamientos de los Salmos llevan ancla 0 y no cuentan. Consultado el 2026-09-29.
 #
 # Hechos de cada libro (escritor, lugar, fecha, abarca), de la Tabla de los libros de la Biblia de estudio:
 # campos opcionales, con fuentes, razon, consultado y estado.
@@ -20,6 +29,7 @@ libros:
   formas: [ge, gen, genesis]
   habladas: [Génesis, Gén.]
   capitulos: 50
+  versiculos: [31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 21, 16, 27, 33, 38, 18, 34, 24, 20, 67, 34, 35, 46, 22, 35, 43, 55, 32, 20, 31, 29, 43, 36, 30, 23, 23, 57, 38, 34, 34, 28, 34, 31, 22, 33, 26]
   escritor: Moisés
   lugar: Desierto
   fecha:
@@ -50,6 +60,7 @@ libros:
   formas: [ex, exodo]
   habladas: [Éxodo, Éx.]
   capitulos: 40
+  versiculos: [22, 25, 22, 31, 23, 30, 25, 32, 35, 29, 10, 51, 22, 31, 27, 36, 16, 27, 25, 26, 36, 31, 33, 18, 40, 37, 21, 43, 46, 38, 18, 35, 23, 35, 35, 38, 29, 31, 43, 38]
   escritor: Moisés
   lugar: Desierto
   fecha:
@@ -80,6 +91,7 @@ libros:
   formas: [le, lev, levitico]
   habladas: [Levítico, Lev.]
   capitulos: 27
+  versiculos: [17, 16, 17, 35, 19, 30, 38, 36, 24, 20, 47, 8, 59, 57, 33, 34, 16, 30, 37, 27, 24, 33, 44, 23, 55, 46, 34]
   escritor: Moisés
   lugar: Desierto
   fecha:
@@ -110,6 +122,7 @@ libros:
   formas: [nu, num, numeros]
   habladas: [Números, Núm.]
   capitulos: 36
+  versiculos: [54, 34, 51, 49, 31, 27, 89, 26, 23, 36, 35, 16, 33, 45, 41, 50, 13, 32, 22, 29, 35, 41, 30, 25, 18, 65, 23, 31, 40, 16, 54, 42, 56, 29, 34, 13]
   escritor: Moisés
   lugar: Desierto y llanuras de Moab
   fecha:
@@ -140,6 +153,7 @@ libros:
   formas: [dt, deut, deuteronomio]
   habladas: [Deuteronomio, Deut.]
   capitulos: 34
+  versiculos: [46, 37, 29, 49, 33, 25, 26, 20, 29, 22, 32, 32, 18, 29, 23, 22, 20, 22, 21, 20, 23, 30, 25, 22, 19, 19, 26, 68, 29, 20, 30, 52, 29, 12]
   escritor: Moisés
   lugar: Llanuras de Moab
   fecha:
@@ -170,6 +184,7 @@ libros:
   formas: [jos, josue]
   habladas: [Josué, Jos.]
   capitulos: 24
+  versiculos: [18, 24, 17, 24, 15, 27, 26, 35, 27, 43, 23, 24, 33, 15, 63, 10, 18, 28, 51, 9, 45, 34, 16, 33]
   escritor: Josué
   lugar: Canaán
   fecha:
@@ -200,6 +215,7 @@ libros:
   formas: [jue, juec, jueces]
   habladas: [Jueces, Juec.]
   capitulos: 21
+  versiculos: [36, 23, 31, 24, 31, 40, 25, 35, 57, 18, 40, 15, 25, 20, 20, 31, 13, 31, 30, 48, 25]
   escritor: Samuel
   lugar: Israel
   fecha:
@@ -230,6 +246,7 @@ libros:
   formas: [rut]
   habladas: [Rut]
   capitulos: 4
+  versiculos: [22, 23, 18, 22]
   escritor: Samuel
   lugar: Israel
   fecha:
@@ -253,6 +270,7 @@ libros:
   formas: ["1sa", "1sam", "1samuel"]
   habladas: ["1 Samuel", "1 Sam."]
   capitulos: 31
+  versiculos: [28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 35, 23, 58, 30, 24, 42, 15, 23, 29, 22, 44, 25, 12, 25, 11, 31, 13]
   escritor: Samuel; Gad; Natán
   lugar: Israel
   fecha:
@@ -283,6 +301,7 @@ libros:
   formas: ["2sa", "2sam", "2samuel"]
   habladas: ["2 Samuel", "2 Sam."]
   capitulos: 24
+  versiculos: [27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33, 43, 26, 22, 51, 39, 25]
   escritor: Gad; Natán
   lugar: Israel
   fecha:
@@ -313,6 +332,7 @@ libros:
   formas: ["1re", "1rey", "1reyes"]
   habladas: ["1 Reyes", "1 Rey."]
   capitulos: 22
+  versiculos: [53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46, 21, 43, 29, 53]
   escritor: Jeremías
   lugar: Judá
   fecha:
@@ -343,6 +363,7 @@ libros:
   formas: ["2re", "2rey", "2reyes"]
   habladas: ["2 Reyes", "2 Rey."]
   capitulos: 25
+  versiculos: [18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37, 37, 21, 26, 20, 37, 20, 30]
   escritor: Jeremías
   lugar: Judá y Egipto
   fecha:
@@ -373,6 +394,7 @@ libros:
   formas: ["1cr", "1cron", "1cronicas"]
   habladas: ["1 Crónicas", "1 Crón."]
   capitulos: 29
+  versiculos: [54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 29, 43, 27, 17, 19, 8, 30, 19, 32, 31, 31, 32, 34, 21, 30]
   escritor: Esdras
   lugar: Jerusalén (?)
   fecha:
@@ -404,6 +426,7 @@ libros:
   formas: ["2cr", "2cron", "2cronicas"]
   habladas: ["2 Crónicas", "2 Crón."]
   capitulos: 36
+  versiculos: [17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34, 11, 37, 20, 12, 21, 27, 28, 23, 9, 27, 36, 27, 21, 33, 25, 33, 27, 23]
   escritor: Esdras
   lugar: Jerusalén (?)
   fecha:
@@ -434,6 +457,7 @@ libros:
   formas: [esd, esdras]
   habladas: [Esdras, Esd.]
   capitulos: 10
+  versiculos: [11, 70, 13, 24, 17, 22, 28, 36, 15, 44]
   escritor: Esdras
   lugar: Jerusalén
   fecha:
@@ -464,6 +488,7 @@ libros:
   formas: [ne, neh, nehemias]
   habladas: [Nehemías, Neh.]
   capitulos: 13
+  versiculos: [11, 20, 32, 23, 19, 19, 73, 18, 38, 39, 36, 47, 31]
   escritor: Nehemías
   lugar: Jerusalén
   fecha:
@@ -494,6 +519,7 @@ libros:
   formas: [est, ester]
   habladas: [Ester, Est.]
   capitulos: 10
+  versiculos: [22, 23, 15, 17, 14, 14, 10, 17, 32, 3]
   escritor: Mardoqueo
   lugar: Susa, Elam
   fecha:
@@ -524,6 +550,7 @@ libros:
   formas: [job]
   habladas: [Job]
   capitulos: 42
+  versiculos: [22, 13, 26, 21, 27, 30, 21, 22, 35, 22, 20, 25, 28, 22, 35, 22, 16, 21, 29, 29, 34, 30, 17, 25, 6, 14, 23, 28, 25, 31, 40, 22, 33, 37, 16, 33, 24, 41, 30, 24, 34, 17]
   escritor: Moisés
   lugar: Desierto
   fecha:
@@ -554,6 +581,7 @@ libros:
   formas: [sl, sal, salmos]
   habladas: [Salmos, Salmo, Sal.]
   capitulos: 150
+  versiculos: [6, 12, 8, 8, 12, 10, 17, 9, 20, 18, 7, 8, 6, 7, 5, 11, 15, 50, 14, 9, 13, 31, 6, 10, 22, 12, 14, 9, 11, 12, 24, 11, 22, 22, 28, 12, 40, 22, 13, 17, 13, 11, 5, 26, 17, 11, 9, 14, 20, 23, 19, 9, 6, 7, 23, 13, 11, 11, 17, 12, 8, 12, 11, 10, 13, 20, 7, 35, 36, 5, 24, 20, 28, 23, 10, 12, 20, 72, 13, 19, 16, 8, 18, 12, 13, 17, 7, 18, 52, 17, 16, 15, 5, 23, 11, 13, 12, 9, 9, 5, 8, 28, 22, 35, 45, 48, 43, 13, 31, 7, 10, 10, 9, 8, 18, 19, 2, 29, 176, 7, 8, 9, 4, 8, 5, 6, 5, 6, 8, 8, 3, 18, 3, 3, 21, 26, 9, 8, 24, 13, 10, 7, 12, 15, 21, 10, 20, 14, 9, 6]
   escritor: David y otros
   fecha:
     desde: -459
@@ -575,6 +603,7 @@ libros:
   formas: [pr, prov, proverbios]
   habladas: [Proverbios, Prov.]
   capitulos: 31
+  versiculos: [33, 22, 35, 27, 23, 35, 27, 36, 18, 32, 31, 28, 25, 35, 33, 33, 28, 24, 29, 30, 31, 29, 35, 34, 28, 28, 27, 28, 27, 33, 31]
   escritor: Salomón; Agur; Lemuel
   lugar: Jerusalén
   fecha:
@@ -597,6 +626,7 @@ libros:
   formas: [ec, ecl, eclesiastes]
   habladas: [Eclesiastés, Ecl.]
   capitulos: 12
+  versiculos: [18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14]
   escritor: Salomón
   lugar: Jerusalén
   fecha:
@@ -619,6 +649,7 @@ libros:
   formas: [can, cant, elcantardeloscantares, cantares]
   habladas: [El Cantar de los Cantares, Cantar de los Cantares, Cant.]
   capitulos: 8
+  versiculos: [17, 17, 11, 16, 16, 13, 13, 14]
   escritor: Salomón
   lugar: Jerusalén
   fecha:
@@ -641,6 +672,7 @@ libros:
   formas: [is, isaias]
   habladas: [Isaías, Is., Isa., Isa]
   capitulos: 66
+  versiculos: [31, 22, 26, 6, 30, 13, 25, 22, 21, 34, 16, 6, 22, 32, 9, 14, 14, 7, 25, 6, 17, 25, 18, 23, 12, 21, 13, 29, 24, 33, 9, 20, 24, 17, 10, 22, 38, 22, 8, 31, 29, 25, 28, 28, 25, 13, 15, 22, 26, 11, 23, 15, 12, 17, 13, 12, 21, 14, 21, 22, 11, 12, 19, 12, 25, 24]
   escritor: Isaías
   lugar: Jerusalén
   fecha:
@@ -671,6 +703,7 @@ libros:
   formas: [jer, jeremias]
   habladas: [Jeremías, Jer.]
   capitulos: 52
+  versiculos: [19, 37, 25, 31, 31, 30, 34, 22, 26, 25, 23, 17, 27, 22, 21, 21, 27, 23, 15, 18, 14, 30, 40, 10, 38, 24, 22, 17, 32, 24, 40, 44, 26, 22, 19, 32, 21, 28, 18, 16, 18, 22, 13, 30, 5, 28, 7, 47, 39, 46, 64, 34]
   escritor: Jeremías
   lugar: Judá; Egipto
   fecha:
@@ -701,6 +734,7 @@ libros:
   formas: [lam, lamentaciones]
   habladas: [Lamentaciones, Lam.]
   capitulos: 5
+  versiculos: [22, 22, 66, 22, 22]
   escritor: Jeremías
   lugar: Cerca de Jerusalén
   fecha:
@@ -723,6 +757,7 @@ libros:
   formas: [eze, ezeq, ezequiel]
   habladas: [Ezequiel, Ezeq.]
   capitulos: 48
+  versiculos: [28, 10, 27, 17, 17, 14, 27, 18, 11, 22, 25, 28, 23, 23, 8, 63, 24, 32, 14, 49, 32, 31, 49, 27, 17, 21, 36, 26, 21, 26, 18, 32, 33, 31, 15, 38, 28, 23, 29, 49, 26, 20, 27, 31, 25, 24, 23, 35]
   escritor: Ezequiel
   lugar: Babilonia
   fecha:
@@ -753,6 +788,7 @@ libros:
   formas: [da, dan, daniel]
   habladas: [Daniel, Dan.]
   capitulos: 12
+  versiculos: [21, 49, 30, 37, 31, 28, 28, 27, 27, 21, 45, 13]
   escritor: Daniel
   lugar: Babilonia
   fecha:
@@ -783,6 +819,7 @@ libros:
   formas: [os, oseas]
   habladas: [Oseas, Os.]
   capitulos: 14
+  versiculos: [11, 23, 5, 19, 15, 11, 16, 14, 17, 15, 12, 14, 16, 9]
   escritor: Oseas
   lugar: Samaria (distrito)
   fecha:
@@ -813,6 +850,7 @@ libros:
   formas: [joe, joel]
   habladas: [Joel]
   capitulos: 3
+  versiculos: [20, 32, 21]
   escritor: Joel
   lugar: Judá
   fecha:
@@ -836,6 +874,7 @@ libros:
   formas: [am, amos]
   habladas: [Amós]
   capitulos: 9
+  versiculos: [15, 16, 15, 13, 27, 14, 17, 14, 15]
   escritor: Amós
   lugar: Judá
   fecha:
@@ -858,6 +897,7 @@ libros:
   formas: [abd, abdias]
   habladas: [Abdías, Abd.]
   capitulos: 1
+  versiculos: [21]
   escritor: Abdías
   fecha:
     desde: -606
@@ -879,6 +919,7 @@ libros:
   formas: [jon, jonas]
   habladas: [Jonás, Jon.]
   capitulos: 4
+  versiculos: [17, 10, 10, 11]
   escritor: Jonás
   fecha:
     desde: -843
@@ -900,6 +941,7 @@ libros:
   formas: [miq, miqueas]
   habladas: [Miqueas, Miq.]
   capitulos: 7
+  versiculos: [16, 13, 12, 13, 15, 16, 20]
   escritor: Miqueas
   lugar: Judá
   fecha:
@@ -930,6 +972,7 @@ libros:
   formas: [na, nah, nahum]
   habladas: [Nahúm, Nah.]
   capitulos: 3
+  versiculos: [15, 13, 19]
   escritor: Nahúm
   lugar: Judá
   fecha:
@@ -952,6 +995,7 @@ libros:
   formas: [hab, habacuc]
   habladas: [Habacuc, Hab.]
   capitulos: 3
+  versiculos: [17, 20, 19]
   escritor: Habacuc
   lugar: Judá
   fecha:
@@ -975,6 +1019,7 @@ libros:
   formas: [sof, sofonias]
   habladas: [Sofonías, Sof.]
   capitulos: 3
+  versiculos: [18, 15, 20]
   escritor: Sofonías
   lugar: Judá
   fecha:
@@ -997,6 +1042,7 @@ libros:
   formas: [ag, ageo]
   habladas: [Ageo]
   capitulos: 2
+  versiculos: [15, 23]
   escritor: Ageo
   lugar: Jerusalén
   fecha:
@@ -1027,6 +1073,7 @@ libros:
   formas: [zac, zacarias]
   habladas: [Zacarías, Zac.]
   capitulos: 14
+  versiculos: [21, 13, 10, 14, 11, 15, 14, 23, 17, 12, 17, 14, 9, 21]
   escritor: Zacarías
   lugar: Jerusalén
   fecha:
@@ -1057,6 +1104,7 @@ libros:
   formas: [mal, malaquias]
   habladas: [Malaquías, Mal.]
   capitulos: 4
+  versiculos: [14, 17, 18, 6]
   escritor: Malaquías
   lugar: Jerusalén
   fecha:
@@ -1079,6 +1127,8 @@ libros:
   formas: [mt, mat, mateo]
   habladas: [Mateo, Mat.]
   capitulos: 28
+  versiculos: [25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 39, 28, 27, 35, 30, 34, 46, 46, 39, 51, 46, 75, 66, 20]
+  omitidos: {"17": [21], "18": [11], "23": [14]}
   escritor: Mateo
   lugar: Israel
   fecha:
@@ -1109,6 +1159,8 @@ libros:
   formas: [mr, mar, marcos]
   habladas: [Marcos, Mar.]
   capitulos: 16
+  versiculos: [45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 47, 8]
+  omitidos: {"7": [16], "9": [44, 46], "11": [26], "15": [28]}
   escritor: Marcos
   lugar: Roma
   fecha:
@@ -1139,6 +1191,8 @@ libros:
   formas: [lu, luc, lucas]
   habladas: [Lucas, Luc.]
   capitulos: 24
+  versiculos: [80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 32, 31, 37, 43, 48, 47, 38, 71, 56, 53]
+  omitidos: {"17": [36], "23": [17]}
   escritor: Lucas
   lugar: Cesarea
   fecha:
@@ -1169,6 +1223,8 @@ libros:
   formas: [jn, juan]
   habladas: [Juan]
   capitulos: 21
+  versiculos: [51, 25, 36, 54, 47, 71, 52, 59, 41, 42, 57, 50, 38, 31, 27, 33, 26, 40, 42, 31, 25]
+  omitidos: {"5": [4], "8": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}
   escritor: Apóstol Juan
   lugar: Éfeso o cerca
   fecha:
@@ -1200,6 +1256,8 @@ libros:
   formas: [hch, hech, hechos, he]
   habladas: [Hechos, Hech.]
   capitulos: 28
+  versiculos: [26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 41, 40, 34, 28, 41, 38, 40, 30, 35, 27, 27, 32, 44, 31]
+  omitidos: {"8": [37], "15": [34], "24": [7], "28": [29]}
   escritor: Lucas
   lugar: Roma
   fecha:
@@ -1230,6 +1288,8 @@ libros:
   formas: [ro, rom, romanos]
   habladas: [Romanos, Rom.]
   capitulos: 16
+  versiculos: [32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 33, 27]
+  omitidos: {"16": [24]}
   escritor: Pablo
   lugar: Corinto
   fecha:
@@ -1252,6 +1312,7 @@ libros:
   formas: ["1co", "1cor", "1corintios"]
   habladas: ["1 Corintios", "1 Cor."]
   capitulos: 16
+  versiculos: [31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24]
   escritor: Pablo
   lugar: Éfeso
   fecha:
@@ -1274,6 +1335,7 @@ libros:
   formas: ["2co", "2cor", "2corintios"]
   habladas: ["2 Corintios", "2 Cor."]
   capitulos: 13
+  versiculos: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14]
   escritor: Pablo
   lugar: Macedonia
   fecha:
@@ -1296,6 +1358,7 @@ libros:
   formas: [gal, galatas, ga]
   habladas: [Gálatas, Gál.]
   capitulos: 6
+  versiculos: [24, 21, 29, 31, 26, 18]
   escritor: Pablo
   lugar: Corinto o Antioquía de Siria
   fecha:
@@ -1318,6 +1381,7 @@ libros:
   formas: [ef, efes, efesios, efe]
   habladas: [Efesios, Efes.]
   capitulos: 6
+  versiculos: [23, 22, 21, 32, 33, 24]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1340,6 +1404,7 @@ libros:
   formas: [flp, filip, filipenses, fil]
   habladas: [Filipenses, Filip.]
   capitulos: 4
+  versiculos: [30, 30, 21, 23]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1362,6 +1427,7 @@ libros:
   formas: [col, colosenses]
   habladas: [Colosenses, Col.]
   capitulos: 4
+  versiculos: [29, 23, 25, 18]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1384,6 +1450,7 @@ libros:
   formas: ["1te", "1tes", "1tesalonicenses", "1ts"]
   habladas: ["1 Tesalonicenses", "1 Tes."]
   capitulos: 5
+  versiculos: [10, 20, 13, 18, 28]
   escritor: Pablo
   lugar: Corinto
   fecha:
@@ -1406,6 +1473,7 @@ libros:
   formas: ["2te", "2tes", "2tesalonicenses", "2ts"]
   habladas: ["2 Tesalonicenses", "2 Tes."]
   capitulos: 3
+  versiculos: [12, 17, 18]
   escritor: Pablo
   lugar: Corinto
   fecha:
@@ -1428,6 +1496,7 @@ libros:
   formas: ["1ti", "1tim", "1timoteo"]
   habladas: ["1 Timoteo", "1 Tim."]
   capitulos: 6
+  versiculos: [20, 15, 16, 16, 25, 21]
   escritor: Pablo
   lugar: Macedonia
   fecha:
@@ -1450,6 +1519,7 @@ libros:
   formas: ["2ti", "2tim", "2timoteo"]
   habladas: ["2 Timoteo", "2 Tim."]
   capitulos: 4
+  versiculos: [18, 26, 17, 22]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1472,6 +1542,7 @@ libros:
   formas: [tit, tito]
   habladas: [Tito]
   capitulos: 3
+  versiculos: [16, 15, 15]
   escritor: Pablo
   lugar: Macedonia (?)
   fecha:
@@ -1494,6 +1565,7 @@ libros:
   formas: [flm, filem, filemon]
   habladas: [Filemón, Filem.]
   capitulos: 1
+  versiculos: [25]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1516,6 +1588,7 @@ libros:
   formas: [heb, hebreos]
   habladas: [Hebreos, Heb.]
   capitulos: 13
+  versiculos: [14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25]
   escritor: Pablo
   lugar: Roma
   fecha:
@@ -1538,6 +1611,7 @@ libros:
   formas: [snt, sant, santiago]
   habladas: [Santiago, Sant.]
   capitulos: 5
+  versiculos: [27, 26, 18, 17, 20]
   escritor: Santiago (hermano de Jesús)
   lugar: Jerusalén
   fecha:
@@ -1560,6 +1634,7 @@ libros:
   formas: ["1pe", "1ped", "1pedro"]
   habladas: ["1 Pedro", "1 Ped."]
   capitulos: 5
+  versiculos: [25, 25, 22, 19, 14]
   escritor: Pedro
   lugar: Babilonia
   fecha:
@@ -1582,6 +1657,7 @@ libros:
   formas: ["2pe", "2ped", "2pedro"]
   habladas: ["2 Pedro", "2 Ped."]
   capitulos: 3
+  versiculos: [21, 22, 18]
   escritor: Pedro
   lugar: Babilonia (?)
   fecha:
@@ -1604,6 +1680,7 @@ libros:
   formas: ["1jn", "1juan"]
   habladas: ["1 Juan"]
   capitulos: 5
+  versiculos: [10, 29, 24, 21, 21]
   escritor: Apóstol Juan
   lugar: Éfeso o cerca
   fecha:
@@ -1626,6 +1703,7 @@ libros:
   formas: ["2jn", "2juan"]
   habladas: ["2 Juan"]
   capitulos: 1
+  versiculos: [13]
   escritor: Apóstol Juan
   lugar: Éfeso o cerca
   fecha:
@@ -1648,6 +1726,7 @@ libros:
   formas: ["3jn", "3juan"]
   habladas: ["3 Juan"]
   capitulos: 1
+  versiculos: [14]
   escritor: Apóstol Juan
   lugar: Éfeso o cerca
   fecha:
@@ -1670,6 +1749,7 @@ libros:
   formas: [jud, judas]
   habladas: [Judas, Jud.]
   capitulos: 1
+  versiculos: [25]
   escritor: Judas (hermano de Jesús)
   lugar: Israel (?)
   fecha:
@@ -1692,6 +1772,7 @@ libros:
   formas: [ap, apoc, apocalipsis]
   habladas: [Apocalipsis, Apoc., Revelación, Rev., Rev]
   capitulos: 22
+  versiculos: [20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 8, 21, 18, 24, 21, 15, 27, 21]
   escritor: Apóstol Juan
   lugar: Patmos
   fecha:

@@ -50,5 +50,13 @@ relaciones:
   - 2-samuel-5
   razon: Hizo de Jerusalén su capital y gobernó allí 33 años (2Sa 5:5-9).
   estado: verificado
-consultado: '2026-09-28'
+- tipo: pariente
+  persona: jese
+  relacion: padre
+  deducido: false
+  fuentes:
+  - rut-4
+  razon: Rut 4:17 y 22.
+  estado: verificado
+consultado: '2026-09-29'
 estado: verificado
