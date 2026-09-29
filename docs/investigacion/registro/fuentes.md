@@ -120,6 +120,9 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | daniel-5 | [Daniel 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-9 | [Daniel 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | deuteronomio-34 | [Deuteronomio 34](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/5/34) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| eclesiastes-1 | [Eclesiastés 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| eclesiastes-12 | [Eclesiastés 12](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/12) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| eclesiastes-2 | [Eclesiastés 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | efesios-3 | [Efesios 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | esdras-1 | [Esdras 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-2 | [Esdras 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -538,6 +541,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ebal | [Ebal](https://wol.jw.org/es/wol/d/r4/lp-s/1200001244) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-eber | [Éber](https://wol.jw.org/es/wol/d/r4/lp-s/1200001249) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ecbatana | [Ecbátana](https://wol.jw.org/es/wol/d/r4/lp-s/1200001254) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-eclesiastes-libro | [Eclesiastés, Libro de](https://wol.jw.org/es/wol/d/r4/lp-s/1200001255) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-eden | [Edén](https://wol.jw.org/es/wol/d/r4/lp-s/1200001256) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-eder | [Éder](https://wol.jw.org/es/wol/d/r4/lp-s/1200001257) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-edom | [Edom](https://wol.jw.org/es/wol/d/r4/lp-s/1200001258) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1665,6 +1669,7 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | santiago-1 | [Santiago 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/59/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | si-3 | [Estudio número 3: Sucesos fechados en la corriente del tiempo](https://wol.jw.org/es/wol/d/r4/lp-s/1101990130) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-27 |
 | si-9 | [Estudio número 9: La arqueología y el registro inspirado](https://wol.jw.org/es/wol/d/r4/lp-s/1101990136) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-28 |
+| si-eclesiastes | [Libro bíblico número 21: Eclesiastés](https://wol.jw.org/es/wol/d/r4/lp-s/1101990082) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-proverbios | [Libro bíblico número 20: Proverbios](https://wol.jw.org/es/wol/d/r4/lp-s/1101990081) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | sofonias-1 | [Sofonías 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/36/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | tito-1 | [Tito 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/56/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
