@@ -21,6 +21,7 @@ personas:
 - timoteo
 - silas
 - tito
+- aretas
 contexto_origen:
   resumen: Pablo salió de Éfeso, no encontró a Tito en Troas y siguió a Macedonia, donde Tito le trajo noticias
     de Corinto.
@@ -46,5 +47,7 @@ enlaces:
 - titulo: 2 Corintios 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/47/2
   tipo: biblia
-consultado: '2026-09-28'
+portadores:
+- tito
+consultado: '2026-09-29'
 estado: verificado
