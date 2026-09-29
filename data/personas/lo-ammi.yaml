@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: lo-ammi
+nombre: Lo-Ammí
+nombres:
+- nombre: Lo-Ammí
+perspicacia: '1200002758'
+resumen: Segundo hijo varón de Gómer, nacido cuando ella ya había destetado a Lo-Ruhamá. Su nombre, «no mi pueblo», mostraba
+  que Jehová rechazaba al Israel infiel.
+razon: Perspicacia «Lo-ammí»; Os 1:8, 9.
+no_afirmamos:
+- 'No lo damos por hijo de Oseas: el texto no lo dice y hay quien lo cree fruto del adulterio de Gómer.'
+fuentes:
+- it-lo-ammi
+- oseas-1
+enlaces:
+- titulo: 'Perspicacia: «Lo-ammí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002758
+  tipo: perspicacia
+- titulo: Oseas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/28/1
+  tipo: biblia
+relaciones:
+- tipo: pariente
+  persona: gomer-hija-de-diblaim
+  relacion: madre
+  deducido: false
+  fuentes:
+  - oseas-1
+  - it-lo-ammi
+  razon: 'Os 1:8: nació de Gómer después de Lo-Ruhamá.'
+  estado: verificado
+consultado: '2026-09-29'
+estado: verificado

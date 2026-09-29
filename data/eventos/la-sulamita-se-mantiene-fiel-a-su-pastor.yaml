@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-sulamita-se-mantiene-fiel-a-su-pastor
+titulo: La sulamita se mantiene fiel a su pastor
+fecha:
+  desde: -1036
+  hasta: -1019
+  precision: rango
+  aprox: true
+  tipo: narrativa
+  cronologia: tnm
+  texto: 'entre 1037 y 1020 a.e.c. (tiempo narrativo: al principio del reinado de Salomón, antes de escribirse El Cantar)'
+orden_relato:
+  serie: cantar-de-los-cantares
+  orden: 7010
+lugares:
+- jerusalen
+personas:
+- sulamita
+pasajes:
+- Can 7:10-13
+- Can 8:1-4
+resumen: Tras los elogios del rey, la sulamita dice que es de su amado, lo llama a salir al campo y pide de nuevo a las damas
+  de la corte que no despierten en ella un amor no querido.
+razon: 'Perspicacia «Cantar de los Cantares, El», «Argumento», y «Toda Escritura», párr. 14: sigue en Jerusalén, ante Salomón.
+  Fecha: Perspicacia pone el poema al principio del reinado (1037-998 a.e.c.); la tabla de libros, hacia 1020 a.e.c.'
+fuentes:
+- cantar-de-los-cantares-7
+- it-cantar-de-los-cantares
+- si-cantar-de-los-cantares
+- tnm-tabla
+- cantar-de-los-cantares-8
+enlaces:
+- titulo: El Cantar de los Cantares 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/7
+  tipo: biblia
+- titulo: 'Perspicacia: «Cantar de los Cantares, El»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004181
+  tipo: perspicacia
+- titulo: El Cantar de los Cantares 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/8
+  tipo: biblia
+consultado: '2026-09-29'
+estado: verificado

@@ -3,15 +3,19 @@ id: hesbon
 nombre: Hesbón
 nombres:
 - nombre: Hesbón
+- nombre: Bat-Rabim
+  nota: Puerta de Hesbón cerca de sus estanques (Can 7:4). Perspicacia duda entre una puerta orientada hacia Rabá y un nombre
+    dado por el gentío que pasaba por ella.
 tipo: ciudad
 lat: 31.800811
 lon: 35.809062
 precision: punto
 coord_fuente: openbible:abf2fc1
 coord_url: https://www.openbible.info/geo/ancient/abf2fc1/heshbon
-resumen: Ciudad al este del Jordán, a medio camino entre el Arnón y el Jaboc. Sehón se la quitó a Moab y la hizo su capital;
-  Israel la tomó y luego la reconstruyó Rubén.
-razon: 'Perspicacia «Hesbón»; Nú 21:25-30, 34. Se identifica con las ruinas de Hisban. OpenBible: solo el punto.'
+resumen: Ciudad al este del Jordán, entre el Arnón y el Jaboq, hoy las ruinas de Hisban. Sehón, rey amorreo, se la quitó a
+  Moab; tras la conquista fue de Rubén y luego ciudad levita de Gad. Tenía estanques.
+razon: 'Perspicacia «Hesbón», párr. 1-4, y «Bat-rabim»; Nú 21:25-30, 34; Can 7:4 compara los ojos de la sulamita con sus estanques.
+  Se identifica con las ruinas de Hisban. OpenBible: solo el punto.'
 fuentes:
 - it-hesbon
 - openbible-geo
@@ -21,6 +25,8 @@ fuentes:
 - deuteronomio-2
 - deuteronomio-3
 - deuteronomio-4
+- it-bat-rabim
+- cantar-de-los-cantares-7
 enlaces:
 - titulo: 'Perspicacia: «Hesbón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002006
@@ -30,6 +36,12 @@ enlaces:
   tipo: biblia
 - titulo: Números 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
+  tipo: biblia
+- titulo: 'Perspicacia: «Bat-rabim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000580
+  tipo: perspicacia
+- titulo: El Cantar de los Cantares 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/7
   tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
