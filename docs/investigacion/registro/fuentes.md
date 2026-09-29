@@ -188,7 +188,11 @@ Las fuentes de `data/fuentes/*.yaml`. Los capítulos de la Biblia que nadie escr
 | eclesiastes-1 | [Eclesiastés 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-12 | [Eclesiastés 12](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/12) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-2 | [Eclesiastés 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-1 | [Efesios 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-2 | [Efesios 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | efesios-3 | [Efesios 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| efesios-4 | [Efesios 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-6 | [Efesios 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-1 | [Esdras 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-2 | [Esdras 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-3 | [Esdras 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |

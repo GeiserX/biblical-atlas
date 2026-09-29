@@ -84,6 +84,10 @@ fuentes:
 - galatas-5
 - galatas-6
 - it-marca
+- efesios-1
+- efesios-3
+- efesios-4
+- efesios-6
 enlaces:
 - titulo: 'Perspicacia: «Pablo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003406
@@ -184,6 +188,8 @@ relaciones:
   - it-pablo
   - hch-28
   - si-3
+  - efesios-3
+  - efesios-6
   razon: Dos años en una casa alquilada, vigilado por un soldado (Hch 28:16, 30).
   estado: verificado
 - tipo: acompana
