@@ -11,6 +11,9 @@ nombres:
   nota: Forma abreviada de Efrata, según Perspicacia; así la llama Gé 35:16, 19.
 - nombre: Ciudad de David
   nota: Así la llama Lu 2:4, 11 por ser la patria de David, según la nota de estudio; no es la Ciudad de David de Jerusalén.
+- nombre: Belén de Judá
+  nota: Así la llaman Jue 17:7-9 y 19:1, 2, 18, para distinguirla de la Belén de Zabulón, según Perspicacia «Belén», núm.
+    1.
 tipo: ciudad
 lat: 31.704306
 lon: 35.207639
@@ -33,6 +36,8 @@ fuentes:
 - it-efrata
 - salmos-132
 - lucas-2
+- jueces-17
+- jueces-19
 enlaces:
 - titulo: 'Perspicacia: «Belén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000694

@@ -8,6 +8,7 @@ nombres:
 desambiguacion: Rey de Judá, hijo de Ocozías; su tocayo Jehoás, nieto de Jehú, reinó en Israel.
 no_confundir_con:
 - jehoas-de-israel
+- joas-padre-de-gedeon
 fecha:
   desde: -897
   hasta: -857
@@ -49,5 +50,5 @@ relaciones:
   - 2-reyes-11
   razon: Lo coronaron y Atalía fue ejecutada (2Re 11:12-16).
   estado: verificado
-consultado: '2026-09-28'
+consultado: '2026-09-29'
 estado: verificado

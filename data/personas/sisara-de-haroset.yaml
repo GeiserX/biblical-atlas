@@ -11,6 +11,8 @@ desambiguacion: No es el otro Sísara, de cuya familia salieron netineos que reg
 fuentes:
 - it-sisara
 - salmos-83
+- jueces-4
+- jueces-5
 enlaces:
 - titulo: 'Perspicacia: «Sísara»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004147
@@ -18,5 +20,36 @@ enlaces:
 - titulo: Salmo 83 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
   tipo: biblia
+- titulo: Jueces 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/5
+  tipo: biblia
 consultado: '2026-09-29'
 estado: verificado
+relaciones:
+- tipo: vivio_en
+  lugar: haroset
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-sisara
+  - it-haroset
+  razon: 'Jue 4:2: vivía en Haróset de las naciones; Perspicacia «Sísara», núm. 1, subraya que no en Hazor.'
+  estado: verificado
+- tipo: acompana
+  persona: jabin-rey-de-canaan
+  relacion: jefe del ejército de
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-sisara
+  razon: 'Jue 4:2, 7: mandaba el ejército de Jabín, rey de Canaán.'
+  estado: verificado
+- tipo: murio_en
+  lugar: zaananim
+  deducido: true
+  fuentes:
+  - jueces-4
+  - it-zaananim
+  - it-jael
+  razon: 'Jue 4:17-21: muere en la tienda de Jael; Perspicacia «Zaananim» la pone junto a ese árbol, como dice Jue 4:11.'
+  estado: verificado

@@ -3,6 +3,8 @@ id: mizpa-de-galaad
 nombre: Mizpá
 nombres:
 - nombre: Mizpá
+- nombre: Mizpé de Galaad
+  nota: Así la llama Jue 11:29; Perspicacia la trata en «Mizpá, Mizpé», núm. 4.
 tipo: ciudad
 lat: 32.118511
 lon: 35.77702
@@ -22,6 +24,8 @@ fuentes:
 - it-tabor
 - openbible-geo
 - oseas-5
+- jueces-10
+- jueces-11
 enlaces:
 - titulo: 'Perspicacia: «Mizpá, Mizpé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003093

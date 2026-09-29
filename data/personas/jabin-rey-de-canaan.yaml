@@ -11,6 +11,7 @@ desambiguacion: No es el Jabín rey de Hazor al que venció Josué (Perspicacia,
 fuentes:
 - it-jabin
 - salmos-83
+- jueces-4
 enlaces:
 - titulo: 'Perspicacia: «Jabín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002272
@@ -31,3 +32,11 @@ relaciones:
   - it-jabin
   razon: 'Perspicacia «Jabín», núm. 2: reinó en la Hazor reconstruida y quizá descendía del rey vencido por Josué.'
   estado: pendiente
+- tipo: vivio_en
+  lugar: hazor
+  deducido: false
+  fuentes:
+  - jueces-4
+  - it-jabin
+  razon: Jue 4:2 dice que reinaba en Hazor, y el v. 17 lo llama rey de Hazor.
+  estado: verificado

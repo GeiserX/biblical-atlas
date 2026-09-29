@@ -4,8 +4,10 @@ nombre: Afec
 nombres:
 - nombre: Afec
   nota: Afec de Aser (Perspicacia «Afeq», núm. 2).
+- nombre: Afic
+  nota: Así la llama Jue 1:31 en la TNM.
 - nombre: Afiq
-  nota: Así la llama Jue 1:31.
+  nota: Grafía de Perspicacia para el nombre de Jue 1:31.
 tipo: ciudad
 lat: 32.8461
 lon: 35.1119
@@ -13,13 +15,14 @@ precision: punto
 coord_fuente: openbible:ac4f712
 coord_url: https://www.openbible.info/geo/ancient/ac4f712/aphek-1
 coord_nota: Punto de OpenBible en Tell Kurdaneh (Tel Afeq).
-resumen: Ciudad del territorio de Aser que la tribu no llegó a conquistar; Jue 1:31 la llama Afiq. Está unos 8 km al SSE de
+resumen: Ciudad del territorio de Aser que la tribu no llegó a conquistar; Jue 1:31 la llama Afic. Está unos 8 km al SSE de
   Akkó.
 razon: 'Perspicacia «Afeq», núm. 2; Jos 19:30; Jue 1:31. OpenBible: solo el punto.'
 fuentes:
 - it-afeq
 - openbible-geo
 - josue-19
+- jueces-1
 enlaces:
 - titulo: 'Perspicacia: «Afeq»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
@@ -27,5 +30,13 @@ enlaces:
 - titulo: Josué 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
   tipo: biblia
+historial:
+- fecha: '2026-09-29'
+  cambio: La TNM escribe Afic en Jue 1:31, no Afiq, que es la grafía de Perspicacia. Se añade Afic y Afiq queda como grafía
+    de Perspicacia.
+  fuente: jueces-1
+- fecha: '2026-09-29'
+  cambio: El nombre de Jue 1:31 es Afic en la TNM; Afiq es la grafía de Perspicacia.
+  fuente: jueces-1
 consultado: '2026-09-29'
 estado: verificado
