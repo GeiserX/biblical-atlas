@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tercer-mensaje-de-ageo
+title: Ageo pregunta a los sacerdotes sobre lo impuro
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de kislev de 520 a.e.c.
+  detail:
+    month: kislev
+    day: 24
+narrative_order:
+  series: ageo
+  order: 2010
+places:
+- jerusalen
+people:
+- ageo
+passages:
+- Ag 2:10-19
+summary: 'Con dos preguntas a los sacerdotes, Ageo muestra que la santidad no se contagia y la impureza sí: por abandonar
+  el templo, el pueblo y sus ofrendas eran impuros. Desde ese día, Jehová los bendeciría.'
+reason: 'Ag 2:10 da el día 24 del noveno mes, kislev, del segundo año de Darío: 520 a.e.c. según Perspicacia «Ageo, Libro de».
+  «Toda Escritura», párr. 11, cuenta dos meses y tres días desde el mensaje anterior.'
+sources:
+- ageo-2
+- it-ageo-libro
+- si-ageo
+- it-dario
+- w07-ageo-y-zacarias
+links:
+- title: 'Perspicacia: «Ageo, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001813
+  type: perspicacia
+- title: Ageo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

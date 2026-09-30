@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: segundo-mensaje-de-ageo
+title: Ageo anuncia que la gloria del templo será mayor
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 21 de tisri de 520 a.e.c.
+  detail:
+    month: tisri
+    day: 21
+narrative_order:
+  series: ageo
+  order: 2001
+places:
+- jerusalen
+people:
+- ageo
+- zorobabel
+- josue-sumo-sacerdote
+passages:
+- Ag 2:1-9
+summary: 'A quienes veían el nuevo templo como poca cosa frente al de Salomón, Jehová les pide valor y trabajo: sacudirá a
+  las naciones, llenará de gloria su casa y la hará superior a la primera.'
+reason: Perspicacia «Ageo, Libro de», año y lugar de los mensajes; «Jesúa», núm. 4, y «Toda Escritura», párr. 10. Ag 2:1 da
+  el día 21 del séptimo mes, tisri, de 520 a.e.c.
+sources:
+- ageo-2
+- it-ageo-libro
+- it-jesua
+- si-ageo
+- w07-ageo-y-zacarias
+links:
+- title: 'Perspicacia: «Ageo, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001813
+  type: perspicacia
+- title: Ageo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified
