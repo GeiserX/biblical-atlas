@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-david
+title: Muerte de David
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 2010
+places:
+- jerusalen
+people:
+- david
+- salomon
+present:
+- david
+type: death
+roles:
+  david: died
+passages:
+- 1Re 2:10, 11
+summary: David muere tras reinar cuarenta años sobre Israel, siete en Hebrón y treinta y tres en Jerusalén, y lo entierran
+  en la Ciudad de David. Salomón ocupa su trono.
+reason: '1Re 2:10-12; Perspicacia «David», apartado «Fin del reinado». Estudio 3, párr. 4: Salomón empezó a reinar antes de
+  nisán de 1037 y David murió poco después.'
+sources:
+- 1-reyes-2
+- it-david
+- si-3
+links:
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: elon-bet-hanan
+name: Elón-Bet-Hanán
+names:
+- name: Elón-Bet-Hanán
+type: city
+lat: 31.746288
+lon: 34.997106
+precision: uncertain
+coord_source: openbible:a8e6824
+coord_url: https://www.openbible.info/geo/ancient/a8e6824/elonbeth-hanan
+coord_note: Primer punto de OpenBible (Khirbet Wadi Illin), que la da como otro nombre de Elón. Perspicacia no la sitúa.
+summary: Ciudad del distrito del comisario hijo de Déquer, junto a Macaz, Saalbim y Bet-Semes. Algunos eruditos la creen la
+  Elón de Dan; Perspicacia no lo afirma ni la sitúa.
+reason: 'Perspicacia «Elón-bet-hanán» y «Elón», núm. 4; 1Re 4:9. OpenBible: solo el punto.'
+sources:
+- it-elon-bet-hanan
+- it-elon
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Elón-bet-hanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001334
+  type: perspicacia
+not_claimed:
+- 'Que sea la misma ciudad que Elón de Dan: Perspicacia solo dice que algunos eruditos lo creen.'
+checked_on: '2026-09-30'
+status: verified

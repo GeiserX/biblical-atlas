@@ -7,6 +7,7 @@ perspicacia: 1200000156#2
 disambiguation: Ahimáaz hijo del sacerdote Sadoc; no Ahimáaz el padre de Ahinoam, la esposa de Saúl.
 distinct_from:
 - ahimaaz-padre-de-ahinoam
+- ahimaaz-esposo-de-basemat
 summary: Hijo del sacerdote Sadoc. Durante la rebelión de Absalón, él y Jonatán, el hijo de Abiatar, hacían de enlace para
   llevar a David lo que se sabía en Jerusalén.
 reason: Perspicacia «Ahimáaz», núm. 2; 2Sa 15:27, 36.
@@ -40,5 +41,5 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

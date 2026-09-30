@@ -3,6 +3,8 @@ id: zaretan
 name: Zaretán
 names:
 - name: Zaretán
+- name: Zeredá
+  note: Nombre que da 2Cr 4:17 en el pasaje paralelo a 1Re 7:46; Perspicacia «Zaretán» cree que quizá es otra grafía.
 type: city
 lat: null
 lon: null
@@ -63,6 +65,8 @@ sources:
 - it-zaretan
 - openbible-geo
 - josue-3
+- 1-reyes-4
+- 1-reyes-7
 links:
 - title: 'Perspicacia: «Zaretán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004664
@@ -70,5 +74,5 @@ links:
 - title: Josué 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/3
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

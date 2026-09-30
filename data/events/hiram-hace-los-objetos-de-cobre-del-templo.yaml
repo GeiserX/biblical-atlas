@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hiram-hace-los-objetos-de-cobre-del-templo
+title: Hiram hace los objetos de cobre del templo
+date:
+  from: -1033
+  to: -1026
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1034 y 1027 a.e.c. (tiempo narrativo: durante la obra del templo)'
+narrative_order:
+  series: 1-reyes
+  order: 7013
+places:
+- distrito-del-jordan
+- monte-moria
+- sucot
+- zaretan
+people:
+- hiram-artesano
+- salomon
+present:
+- hiram-artesano
+passages:
+- 1Re 7:13-47
+- 2Cr 2:13, 14
+- 2Cr 3:15-17
+- 2Cr 4:1-18
+summary: Hiram, traído de Tiro, funde en el distrito del Jordán las columnas Jakín y Boaz, el Mar sobre doce toros, diez carritos
+  con sus palanganas y los demás utensilios de cobre para la casa de Jehová.
+reason: 1Re 7:13-47. Perspicacia «Salomón» dice que 7:13-51 vuelve a la obra del templo, que el estudio 3 sitúa entre 1034
+  y 1027 a.e.c.; Perspicacia «Zaretán» sitúa la fundición en esa zona del valle.
+sources:
+- 1-reyes-7
+- it-hiram
+- it-salomon
+- si-3
+- it-zaretan
+- it-distrito-del-jordan
+links:
+- title: 1 Reyes 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/7
+  type: bible
+checked_on: '2026-09-30'
+status: verified

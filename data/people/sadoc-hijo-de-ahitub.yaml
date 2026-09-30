@@ -19,6 +19,9 @@ sources:
 - 2-samuel-17
 - 2-samuel-19
 - 2-samuel-20
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Sadoc»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004652
@@ -55,9 +58,22 @@ relations:
   - 2-samuel-17
   - 2-samuel-19
   - 2-samuel-20
+  - 1-reyes-1
+  - 1-reyes-2
+  - 1-reyes-4
   reason: '2Sa 8:17: Sadoc y Ahimélec eran los sacerdotes de David.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+- type: succeeds
+  person: abiatar
+  office: high_priest
+  inferred: false
+  sources:
+  - 1-reyes-2
+  - it-sadoc
+  reason: '1Re 2:35: Salomón pone a Sadoc en el puesto de Abiatar; Perspicacia «Sadoc», núm. 1, dice que lo hizo sumo sacerdote.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

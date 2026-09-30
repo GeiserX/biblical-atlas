@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tamar
+name: Tamar
+names:
+- name: Tamar
+type: city
+lat: 30.8087
+lon: 35.2459
+precision: uncertain
+coord_source: openbible:ab066d7
+coord_url: https://www.openbible.info/geo/ancient/ab066d7/tamar-1
+coord_note: Punto de ʽEn Hazeva (ʽAin Husb), primera identificación de OpenBible. Perspicacia solo recoge que Aharoni la pone
+  allí.
+summary: Ciudad del desierto, dentro del territorio de Israel, que Salomón reconstruyó o fortificó. Aharoni la identifica
+  con ʽEn Hazeva, al sudoeste del mar Muerto. No es la Tadmor que nombra 2 Crónicas.
+reason: 'Perspicacia «Tamar», núm. 4; 1Re 9:17-19. Perspicacia cree que 2Cr 8:4 habla de otra ciudad, Tadmor. OpenBible: solo
+  el punto.'
+sources:
+- it-tamar
+- openbible-geo
+- 1-reyes-9
+links:
+- title: 'Perspicacia: «Tamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004313
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

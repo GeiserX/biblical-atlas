@@ -55,5 +55,7 @@ history:
   change: Perspicacia «Amón» daba 661-660 a.e.c.; A6-B, más reciente, empieza el reinado de Josías en 659.
   source: tnm-a6-b
 perspicacia: 1200000244#2
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- amon-jefe-de-samaria

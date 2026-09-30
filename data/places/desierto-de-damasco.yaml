@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-damasco
+name: Desierto de Damasco
+names:
+- name: Desierto de Damasco
+type: desert
+lat: 33.511112
+lon: 36.30639
+precision: zone
+coord_source: openbible:a69c1d4
+coord_url: https://www.openbible.info/geo/ancient/a69c1d4/damascus
+coord_note: Punto de Damasco en OpenBible, el mismo que la ficha de la ciudad; el desierto no tiene punto propio.
+summary: Tierra seca junto a Damasco. Jehová mandó a Elías volver allí para ungir a Hazael como rey de Siria. Perspicacia
+  «Damasco» sitúa al este de la ciudad el desierto siroarábigo.
+reason: '1Re 19:15; Perspicacia «Damasco», párr. 1. Punto de OpenBible de la ciudad: solo tomamos el punto.'
+sources:
+- it-damasco
+- openbible-geo
+- 1-reyes-19
+links:
+- title: 'Perspicacia: «Damasco»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001114
+  type: perspicacia
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

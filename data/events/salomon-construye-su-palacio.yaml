@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-construye-su-palacio
+title: Salomón construye su palacio y la Casa del Bosque del Líbano
+date:
+  from: -1026
+  to: -1013
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1027-1014 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 7001
+  after: templo-de-salomon-terminado
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 7:1-12
+- 1Re 9:10
+- Ec 2:4-9
+summary: En los trece años que siguen al templo, Salomón levanta su palacio, la Casa del Bosque del Líbano, la Sala de las
+  Columnas, la del Trono y una casa para la hija del faraón.
+reason: Perspicacia «Casa del Bosque del Líbano», párr. 1, fecha estas obras en 1027-1014 a.e.c. y las sitúa al sur del templo.
+  Perspicacia «Salomón» lee 1Re 7:1-8 como un paréntesis del relato del templo.
+sources:
+- 1-reyes-7
+- it-casa-del-bosque-del-libano
+- it-salomon
+- eclesiastes-2
+links:
+- title: 'Perspicacia: «Casa del Bosque del Líbano»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002096
+  type: perspicacia
+- title: 1 Reyes 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/7
+  type: bible
+checked_on: '2026-09-30'
+status: verified

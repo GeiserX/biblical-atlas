@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: macaz
+name: Macaz
+names:
+- name: Macaz
+- name: Maqaz
+  note: Grafía de Perspicacia.
+type: city
+lat: 31.803139
+lon: 34.811181
+precision: uncertain
+coord_source: openbible:ac2bb0c
+coord_url: https://www.openbible.info/geo/ancient/ac2bb0c/makaz
+coord_note: Punto de Khirbet el-Mukheizin, el sitio que propone Perspicacia; OpenBible pone primero Deir Muheisin.
+summary: Lugar del distrito del comisario hijo de Déquer en tiempos de Salomón. Perspicacia lo identifica, con reservas, con
+  Khirbet el-Mukheizin, unos 5 km al noroeste de Eqrón.
+reason: 'Perspicacia «Maqaz»; 1Re 4:9. OpenBible: solo el punto.'
+sources:
+- it-maqaz
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Maqaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002856
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

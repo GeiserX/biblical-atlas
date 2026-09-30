@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanani-vidente
+name: Hananí
+names:
+- name: Hananí
+perspicacia: 1200001852#2
+disambiguation: El vidente de tiempos de Asá; no el hijo de Hemán, el sacerdote de Esdras, el hermano de Nehemías ni el músico
+  de Ne 12.
+summary: Vidente que echó en cara a Asá haber buscado la ayuda siria sin apoyarse en Jehová; el rey lo metió en el cepo. Al
+  parecer era el padre del profeta Jehú.
+reason: Perspicacia «Hananí», núm. 2; 1Re 16:1, 7; 2Cr 16:7-10.
+sources:
+- it-hanani
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Hananí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001852
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+checked_on: '2026-09-30'
+status: verified

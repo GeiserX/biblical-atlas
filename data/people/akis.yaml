@@ -19,6 +19,7 @@ sources:
 - 1-samuel-27
 - 1-samuel-28
 - 1-samuel-29
+- 1-reyes-2
 links:
 - title: 'Perspicacia: «Akís»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000078
@@ -34,7 +35,7 @@ history:
   change: El resumen escribía Ziqlag, la grafía de Perspicacia; la TNM y el lugar del atlas dicen Ziclag. Se añade que Akís
     nombró a David su guardaespaldas (1Sa 28:2).
   source: 1-samuel-28
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - abimelec-hijo-de-gedeon
@@ -46,8 +47,9 @@ relations:
   - 1-samuel-21
   - it-akis
   - 1-samuel-27
+  - 1-reyes-2
   reason: '1Sa 21:10 y 12: el rey Akís de Gat.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: maoc
@@ -59,4 +61,28 @@ relations:
   - it-akis
   reason: '1Sa 27:2: Akís hijo de Maoc, rey de Gat.'
   checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maaca-padre-de-akis
+  word: father
+  inferred: true
+  sources:
+  - 1-reyes-2
+  - it-akis
+  - it-maaca
+  - it-maoc
+  reason: '1Re 2:39: Akís hijo de Maacá. Que sea el Akís de 1 Samuel lo dice Perspicacia «Akís», hijo de «Maoc o Maacá»; «Maoc»
+    y «Maacá», núm. 8, solo ven posible que sean un mismo hombre.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  place: gat
+  office: king
+  inferred: false
+  sources:
+  - 1-reyes-2
+  - it-akis
+  - it-gat
+  reason: 1Re 2:39 lo llama rey de Gat en tiempos de Salomón; Perspicacia «Gat» cree que sería un príncipe vasallo.
+  checked_on: '2026-09-30'
   status: verified

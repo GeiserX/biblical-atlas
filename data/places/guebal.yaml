@@ -12,13 +12,15 @@ precision: point
 coord_source: openbible:a9a2541
 coord_url: https://www.openbible.info/geo/ancient/a9a2541/gebal-1
 coord_note: Punto de OpenBible en Biblos (Jebeil), donde la sitúa Perspicacia.
-summary: Ciudad fenicia de la costa, la Biblos de los griegos, unos 28 km al norte de Beirut. Su tierra figuraba entre la
-  que faltaba por conquistar, pero Israel, por desobediente, nunca la tomó.
-reason: 'Perspicacia «Guebal, guebalitas», núm. 1; Jos 13:5. Es otro que guebal-del-sur (núm. 2). OpenBible: solo el punto.'
+summary: Ciudad fenicia de la costa, la Biblos de los griegos, unos 28 km al norte de Beirut. Israel, por desobediente, nunca
+  la tomó; en el siglo XI a.e.c. sus hombres ayudaron a preparar la madera y la piedra del templo.
+reason: 'Perspicacia «Guebal, guebalitas», núm. 1; Jos 13:5; 1Re 5:18. Es otro que guebal-del-sur (núm. 2). OpenBible: solo
+  el punto.'
 sources:
 - it-guebal
 - openbible-geo
 - josue-13
+- 1-reyes-5
 links:
 - title: 'Perspicacia: «Guebal, guebalitas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001628
@@ -26,5 +28,13 @@ links:
 - title: Josué 13 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/13
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Se añade que los guebalitas trabajaron en los materiales del templo de Salomón (1Re 5:18; Perspicacia «Guebal»,
+    núm. 1).
+  source: 1-reyes-5
+- date: '2026-09-30'
+  change: La razón cita también 1Re 5:18.
+  source: 1-reyes-5
+checked_on: '2026-09-30'
 status: verified

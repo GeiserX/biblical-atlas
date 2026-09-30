@@ -26,6 +26,7 @@ sources:
 - salmos-83
 - jueces-4
 - jueces-5
+- 1-reyes-18
 links:
 - title: 'Perspicacia: «Cisón, Valle torrencial de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002634
@@ -38,5 +39,5 @@ history:
   change: La nota de «Valle torrencial de Cisón» decía que así lo llama Jue 4:7, pero la TNM de estudio dice «arroyo de Cisón»
     en 4:7 y 4:13. Se añade ese nombre.
   source: jueces-4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -12,7 +12,7 @@ date:
   chronology: tnm
   text: c. 940-920 a.e.c.
 summary: Hijo de Omrí. Casado con Jezabel, llevó a Israel a adorar a Baal. Elías le anunció la sequía y lo condenó por la
-  viña de Nabot. Murió herido en Ramot-galaad.
+  viña de Nabot. Murió herido en Ramot-Galaad.
 reason: Perspicacia «Acab», núm. 1, párr. 1-4, 8 y 9; 1Re 16:29-33, 21 y 22.
 sources:
 - it-acab
@@ -21,6 +21,11 @@ sources:
 - tnm-a6-a
 - miqueas-6
 - si-miqueas
+- 1-reyes-17
+- 1-reyes-18
+- 1-reyes-19
+- 1-reyes-20
+- 1-reyes-22
 links:
 - title: 'Perspicacia: «Acab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000138
@@ -57,9 +62,63 @@ relations:
   - it-acab
   - 1-reyes-16
   - it-jezabel
+  - 1-reyes-21
   reason: Se casó con Jezabel, hija de Etbaal (1Re 16:31).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-acab
+  - 1-reyes-20
+  - 1-reyes-21
+  - 1-reyes-22
+  reason: '1Re 16:29: reinó 22 años sobre Israel desde Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jezreel
+  inferred: false
+  sources:
+  - 1-reyes-21
+  - it-acab
+  reason: '1Re 21:1: tenía un palacio en Jezreel, junto a la viña de Nabot.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: elias-profeta
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-21
+  reason: '1Re 21:20: Acab recibe a Elías llamándolo «enemigo mío».'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: ramot-galaad
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-acab
+  reason: '1Re 22:34-37: una flecha lo hiere en la batalla de Ramot-Galaad y muere en su carro al atardecer.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: micaya-hijo-de-imla
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-micaya
+  reason: '1Re 22:8: Acab dice que odia a Micaya porque solo le profetiza cosas malas.'
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200000138#1
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Ramot-Galaad se escribe como en la TNM (1Re 22:3) y en la ficha del lugar.
+  source: 1-reyes-22
+checked_on: '2026-09-30'
 status: verified

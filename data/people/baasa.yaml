@@ -11,7 +11,7 @@ date:
   type: anchored
   chronology: tnm
   text: c. 975-952 a.e.c.
-summary: De la tribu de Isacar, hijo de Ahías. Mató a Nadab y a la casa de Jeroboán, pero mantuvo los becerros. Fortificó
+summary: De la tribu de Isacar, hijo de Ahíya. Mató a Nadab y a la casa de Jeroboán, pero mantuvo los becerros. Fortificó
   Ramá contra Judá hasta que Siria lo obligó a dejarla.
 reason: Perspicacia «Baasá»; 1Re 15:27-16:7.
 sources:
@@ -37,5 +37,49 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: ahiya-padre-de-baasa
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-ahiya
+  - 1-reyes-21
+  reason: '1Re 15:27, 33: Baasá hijo de Ahíya.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: tirza
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - 1-reyes-16
+  - it-tirza
+  reason: '1Re 15:21, 33: se hizo rey en Tirzá y volvió allí al dejar Ramá; 16:6 lo entierran en ella.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: tirza
+  inferred: true
+  sources:
+  - 1-reyes-16
+  reason: 1Re 16:6 da su sepultura en Tirzá, no el sitio de su muerte; tomamos el del entierro, la ciudad donde reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ben-hadad-hijo-de-tabrimon
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-ben-hadad
+  reason: '1Re 15:19, 20: Ben-Hadad tenía un pacto con Baasá y lo rompe a petición de Asá.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200000528'
+history:
+- date: '2026-09-30'
+  change: El padre se escribe Ahíya, como en la TNM (1Re 15:27, 33) y en Perspicacia «Ahíya», núm. 8; decía Ahías.
+  source: 1-reyes-15
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,19 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mahol
+name: Mahol
+names:
+- name: Mahol
+perspicacia: '1200002853'
+summary: Hombre cuyos hijos Hemán, Calcol y Dardá fueron sabios, aunque no tanto como Salomón. Hay quien entiende «hijos de
+  Mahol» como un grupo de músicos y danzantes.
+reason: Perspicacia «Mahol» y «Hemán», núm. 1; 1Re 4:31.
+sources:
+- it-mahol
+- it-heman
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Mahol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002853
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

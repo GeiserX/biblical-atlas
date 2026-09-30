@@ -32,7 +32,9 @@ links:
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003288
   type: perspicacia
 perspicacia: 1200003287#8
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 not_claimed:
 - 'Dónde nació, dónde vivió ni de qué tribu era: «Toda Escritura» dice que el libro no da ninguno de esos datos.'
+distinct_from:
+- abdias-mayordomo-de-acab

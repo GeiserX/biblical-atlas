@@ -16,6 +16,9 @@ sources:
 - 2-samuel-8
 - 2-samuel-20
 - 2-samuel-23
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Benaya»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000632
@@ -36,9 +39,12 @@ relations:
   - 2-samuel-20
   - it-jehoiada
   - 2-samuel-23
+  - 1-reyes-1
+  - 1-reyes-2
+  - 1-reyes-4
   reason: '2Sa 8:18: Benaya hijo de Jehoiadá.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: tie
   person: david
@@ -49,11 +55,23 @@ relations:
   - 2-samuel-8
   - it-peletitas
   - 2-samuel-20
+  - 1-reyes-1
   reason: '2Sa 8:18; 20:23: mandaba a keretitas y peletitas, que según Perspicacia «Peletitas» servían al rey aparte del ejército
     de Joab. 23:23: David le confió el mando de su guardia.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - 1-reyes-2
+  - it-benaya
+  reason: '1Re 2:35; 4:4: Salomón lo pone al mando del ejército en lugar de Joab.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - benaya-el-piratonita

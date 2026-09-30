@@ -12,7 +12,7 @@ date:
   chronology: tnm
   text: 997-980 a.e.c.
 summary: Hijo de Salomón y de la ammonita Naamá. Lo coronaron en Siquem, pero su dureza hizo que diez tribus se fueran con
-  Jeroboán. En su quinto año Sisaq saqueó el templo.
+  Jeroboán. En su quinto año Sisac saqueó el templo.
 reason: Perspicacia «Rehoboam», párr. 1, 2 y 6; 1Re 12:1-20 y 14:21-26.
 sources:
 - it-rehoboam
@@ -20,6 +20,8 @@ sources:
 - 1-reyes-14
 - tnm-a6-a
 - mateo-1
+- 1-reyes-11
+- 1-reyes-15
 links:
 - title: 'Perspicacia: «Rehoboam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003680
@@ -36,8 +38,9 @@ relations:
   - it-rehoboam
   - 1-reyes-11
   - mateo-1
+  - 1-reyes-14
   reason: 1Re 11:43 lo presenta como hijo y sucesor de Salomón.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: salomon
@@ -50,6 +53,71 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: naama-esposa-de-salomon
+  word: mother
+  sources:
+  - 1-reyes-14
+  - it-naama
+  - it-rehoboam
+  reason: '1Re 14:21, 31: su madre se llamaba Naamá la ammonita.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  sources:
+  - 1-reyes-14
+  - it-rehoboam
+  reason: '1Re 14:21: reinó diecisiete años en Jerusalén.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  sources:
+  - 1-reyes-14
+  reason: 1Re 14:31 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
+    reinaba.
+  inferred: true
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jeroboan-i
+  word: enemy
+  date:
+    from: -996
+    to: -979
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 997-980 a.e.c.
+  sources:
+  - 1-reyes-14
+  - it-rehoboam
+  - tnm-a6-a
+  - 1-reyes-15
+  reason: '1Re 14:30: hubo guerra entre Rehoboam y Jeroboán durante todo su reinado; fechas de A6-A.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: wife
+  inferred: true
+  sources:
+  - it-maaca
+  - it-abias
+  - 1-reyes-15
+  reason: 'Perspicacia «Maacá», núm. 9, y «Abías», núm. 5: su esposa preferida (2Cr 11:20-22). 1Re 15:2 la da como madre de
+    Abiyam.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: '1200003680'
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: La TNM escribe Sisac (1Re 11:40; 14:25); Sisaq es la forma de Perspicacia.
+  source: 1-reyes-14
+checked_on: '2026-09-30'
 status: verified

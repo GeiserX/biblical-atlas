@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tierra-de-cabul
+name: Tierra de Cabul
+names:
+- name: Tierra de Cabul
+type: region
+lat: 32.868333
+lon: 35.211389
+precision: zone
+coord_source: openbible:a08144e
+coord_url: https://www.openbible.info/geo/ancient/a08144e/cabul-2
+coord_note: OpenBible da al distrito el punto de la ciudad de Cabul, en Aser. Perspicacia no lo sitúa; recoge que Josefo ponía
+  estas ciudades cerca de Tiro.
+summary: Distrito galileo de veinte ciudades que Salomón regaló a Hiram, rey de Tiro. Como a Hiram no le gustaron, se lo llamó
+  así; el nombre quizá quiera decir «como nada».
+reason: 'Perspicacia «Cabul», núm. 2; 1Re 9:10-13 y la nota del v. 13. No es la ciudad de Cabul de Aser. OpenBible: solo el
+  punto.'
+sources:
+- it-cabul
+- openbible-geo
+- 1-reyes-9
+links:
+- title: 'Perspicacia: «Cabul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000851
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

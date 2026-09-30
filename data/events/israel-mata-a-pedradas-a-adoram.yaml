@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-mata-a-pedradas-a-adoram
+title: Israel mata a pedradas a Adoram y Rehoboam huye a Jerusalén
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 12018
+  after: division-del-reino
+places:
+- siquem
+- jerusalen
+people:
+- adoniram
+- rehoboam
+present: []
+roles:
+  adoniram: died
+passages:
+- 1Re 12:18, 19
+- 2Cr 10:18, 19
+summary: Rehoboam manda a Adoram, jefe de los reclutados para el trabajo obligatorio, a las tribus sublevadas, que lo matan
+  a pedradas. El rey logra subir a su carro y escapa a Jerusalén.
+reason: Perspicacia «Adoniram» y «Rehoboam», párr. 4, lo ponen en la sublevación de 997 a.e.c. contra Rehoboam en Siquem.
+  El texto no dice dónde lo apedrearon, así que no sitúa a nadie.
+sources:
+- 1-reyes-12
+- it-adoniram
+- it-rehoboam
+- si-3
+links:
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

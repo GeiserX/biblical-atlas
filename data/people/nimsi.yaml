@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nimsi
+name: Nimsí
+names:
+- name: Nimsí
+perspicacia: '1200003260'
+summary: Abuelo del rey Jehú de Israel y padre de Jehosafat, que no es el rey de Judá de ese nombre. Su nombre se ha leído
+  en un trozo de cerámica hallado en Samaria.
+reason: Perspicacia «Nimsí»; 1Re 19:16; 2Re 9:2, 14.
+sources:
+- it-nimsi
+- 1-reyes-19
+links:
+- title: 'Perspicacia: «Nimsí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003260
+  type: perspicacia
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

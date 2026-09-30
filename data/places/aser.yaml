@@ -26,20 +26,6 @@ candidates:
   note: 'Centro calculado por nosotros: punto medio entre Dor (32,617 N; 34,916 E) y Sidón (33,561 N; 35,372 E) de OpenBible.
     El radio de 30 km también es nuestro.'
   coord_source: calculation
-- name: Llanura de la costa, del Carmelo a Sidón
-  geometry:
-    type: zone
-    lat: 32.971667
-    lon: 35.109722
-    radius_km: 40
-  checked_on: '2026-09-29'
-  status: favored_level_1
-  sources:
-  - it-aser
-  - openbible-geo
-  reason: Perspicacia extiende su territorio por la costa, desde más abajo de Dor, al sur del Carmelo, hasta Sidón.
-  coord_source: calculation
-  note: 'Centro calculado por nosotros: punto medio entre el monte Carmelo y Tiro de OpenBible. El radio también es nuestro.'
 not_claimed:
 - No trazamos sus fronteras; la zona del mapa es solo una referencia dentro del territorio.
 summary: Territorio de la tribu de Aser, en la llanura de la costa norte, de tierra muy fértil. Lindaba con Manasés al sur;
@@ -52,6 +38,7 @@ sources:
 - josue-19
 - jueces-6
 - jueces-7
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Aser»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000414
@@ -62,5 +49,10 @@ links:
 - title: Josué 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Quedaba dos veces el mismo candidato, la llanura de la costa de Dor a Sidón, con otras palabras y otro centro; se
+    deja uno solo, con las mismas fuentes.
+  source: it-aser
+checked_on: '2026-09-30'
 status: verified

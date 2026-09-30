@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-ora-y-jehova-envia-la-lluvia
+title: Elías ora en el Carmelo, llueve y corre delante de Acab hasta Jezreel
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 18041
+places:
+- monte-carmelo
+- jezreel
+people:
+- elias-profeta
+- acab
+present:
+- elias-profeta
+- acab
+passages:
+- 1Re 18:41-46
+- Snt 5:18
+summary: En la cima del Carmelo, Elías ora con la cara entre las rodillas. A la séptima vez su ayudante ve subir del mar una
+  nube pequeña; cae un aguacero y Elías corre delante del carro de Acab hasta Jezreel.
+reason: 'Perspicacia «Elías», núm. 1, párr. 5: la carrera fue de unos 30 km; «Acab», núm. 1, párr. 4. Santiago 5:18 recuerda
+  la oración. Reinado de Acab (A6-A).'
+sources:
+- 1-reyes-18
+- it-elias
+- it-acab
+- tnm-a6-a
+links:
+- title: 1 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: omri-toma-tirza-y-muere-zimri
+title: Omrí toma Tirzá y Zimrí muere en el palacio
+date:
+  from: -950
+  to: -950
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 16017
+type: death
+places:
+- tirza
+- guibeton
+people:
+- zimri-de-israel
+- omri
+present:
+- zimri-de-israel
+- omri
+roles:
+  zimri-de-israel: died
+passages:
+- 1Re 16:17-20
+summary: Omrí sube desde Guibetón con todo Israel y cerca Tirzá. Al ver tomada la ciudad, Zimrí se encierra en la torre del
+  palacio, le prende fuego y muere dentro, tras siete días de reinado.
+reason: '1Re 16:17-20; Perspicacia «Zimrí», núm. 3, y «Omrí», núm. 3: murió en el año 27 de Asá, c. 951 a.e.c.'
+sources:
+- 1-reyes-16
+- it-zimri
+- it-omri
+- tnm-a6-a
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Omrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003324
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

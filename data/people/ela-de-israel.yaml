@@ -47,5 +47,27 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: lived_in
+  place: tirza
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-elah
+  reason: '1Re 16:8, 9: reinó en Tirzá y allí estaba cuando lo mataron.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: tirza
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-elah
+  reason: '1Re 16:9, 10: Zimrí lo mató en Tirzá, en casa de Arzá.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200001273#3
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- ela-padre-de-simei
+- ela-jeque-de-edom

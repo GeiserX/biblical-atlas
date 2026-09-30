@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: las-esposas-extranjeras-desvian-a-salomon
+title: Las esposas extranjeras desvían a Salomón hacia otros dioses
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: Salomón ya viejo, después de la segunda aparición de Jehová)'
+narrative_order:
+  series: 1-reyes
+  order: 11001
+places:
+- monte-de-los-olivos
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 11:1-8
+summary: Ya anciano, Salomón, con 700 esposas y 300 concubinas de naciones prohibidas, sigue a Astoret y a Milcom y levanta
+  lugares altos a Kemós y a Mólek en el monte que da a Jerusalén.
+reason: '1Re 11:4: Salomón ya era viejo; 11:9: se apartó del Dios que se le había aparecido dos veces, la segunda en 1014
+  (Perspicacia «Salomón»). Muere hacia 998 («Jeroboán»). «Olivos, Monte de los» sitúa allí esos lugares altos.'
+sources:
+- 1-reyes-11
+- it-salomon
+- it-jeroboan
+- it-olivos
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

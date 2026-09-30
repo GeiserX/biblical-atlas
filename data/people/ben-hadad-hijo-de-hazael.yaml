@@ -61,5 +61,8 @@ relations:
   reason: Perspicacia «Ben-hadad», núm. 3, lee sus torres de Am 1:4 como los palacios reales de Damasco.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- ben-hadad-hijo-de-tabrimon
+- ben-hadad-ii
