@@ -276,9 +276,8 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Cus el benjaminita.** Existe (`cus-el-benjaminita`) desde el Salmo 7. Perspicacia duda entre la corte de Saúl y Simeí, y 2 Samuel no lo aclara: ningún tramo lo nombra. Si otro libro lo decide, se añade la relación.
 
-## Para Isaías, Jeremías y Ezequiel (desde 2 Samuel)
+## Para Jeremías y Ezequiel (desde 2 Samuel)
 
-- **Monte Perazim (Is 28:21).** `baal-perazim` y `david-vence-a-los-filisteos-en-baal-perazim` van en `mentions` del tramo.
 - **Kimham (Jer 41:17).** Perspicacia no sabe si el alojamiento de Kimham es de `kimham`: lo decide Jeremías.
 - **Berotá (Ez 47:16).** Reutiliza `berota`.
 

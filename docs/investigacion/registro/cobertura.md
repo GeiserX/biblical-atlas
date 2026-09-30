@@ -35,7 +35,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Proverbios](../../../data/coverage/proverbios.yaml) | 31 de 31 | 915 de 915 | 100 % |
 | [Eclesiastés](../../../data/coverage/eclesiastes.yaml) | 12 de 12 | 222 de 222 | 100 % |
 | [El Cantar de los Cantares](../../../data/coverage/cantar-de-los-cantares.yaml) | 8 de 8 | 117 de 117 | 100 % |
-| [Isaías](../../../data/coverage/isaias.yaml) | 65 de 66 | 1292 de 1292 | 100 % |
+| [Isaías](../../../data/coverage/isaias.yaml) | 66 de 66 | 1292 de 1292 | 100 % |
 | Jeremías | 0 de 52 | 0 de 1364 | 0 % |
 | Lamentaciones | 0 de 5 | 0 de 154 | 0 % |
 | Ezequiel | 0 de 48 | 0 de 1273 | 0 % |
@@ -79,8 +79,8 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 870 de 1189 | 23037 de 31062 | 74 % |
+| **Total** | 871 de 1189 | 23037 de 31062 | 74 % |
 
 ## Capítulos empezados
 
-- Isaías 28: faltan ninguno (falta marcarlo completo)
+Ninguno.
