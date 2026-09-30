@@ -402,9 +402,12 @@ let hold = null;
 let desdeFranja = false, ultimaSel = '';
 function pintarLineaFija() {
   const svg = $('#linea-svg');
-  const pista = $('#pista');
+  const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
   anchoLinea = pista.clientWidth || 800;
   cabAlto = pista.offsetHeight || EJE;
+  // Todo lo que el pintado necesita medir del panel se lee aquí, antes de escribir nada: leerlo después de poner los
+  // altos de los carriles obligaría al navegador a recolocar la página otra vez.
+  const med = medidasPanel(cuerpo);
   const focoAntes = document.activeElement?.closest?.('#linea-filas .m') || null;
   const s = span(), pxAnio = anchoLinea / s;
   svg.setAttribute('width', anchoLinea); svg.setAttribute('height', cabAlto);
@@ -416,7 +419,7 @@ function pintarLineaFija() {
   rejilla = [];
   const regla = [defsRegla(), `<g class="eje">${marcasEje(pxAnio)}</g>`, densidad(), selEnRegla(), reglaEnRegla(), bucleEnRegla(), pintarMarcadores(), '<g id="linea-cursor"></g>'];
   svg.innerHTML = regla.join('');
-  pintarFilas(V);
+  pintarFilas(V, med);
   // La marca con el foco cuyo carril se quitó o se escondió (una persona soltada con Esc): el foco no cae a la página,
   // pasa a la parada del tabulador de la franja.
   if (focoAntes && (!focoAntes.isConnected || focoAntes.closest('[hidden]'))) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
@@ -443,7 +446,11 @@ const DEFS_MESES = '<defs><pattern id="p-hebreo" width="6" height="6" patternUni
 
 /** Todas las filas: reparte cada carril (linea-filas.js), da a cada uno su alto, pinta el fondo y pone en la página las
     marcas cercanas a lo que se ve. Un carril sin nada en la vista no ocupa sitio y se nombra en la línea del final. */
-function pintarFilas(V) {
+/** Lo que se mide del panel para colocar las marcas y el botón de la marca elegida. */
+function medidasPanel(cuerpo = $('#linea-cuerpo')) {
+  return { vh: cuerpo.clientHeight, top: cuerpo.scrollTop, cab: cuerpo.offsetTop, wCar: $('#carriles').offsetWidth, hLinea: $('#linea').clientHeight };
+}
+function pintarFilas(V, med) {
   const view = { v0: E.vista[0], span: span() };
   const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
   const vacios = [];
@@ -489,15 +496,15 @@ function pintarFilas(V) {
   vac.textContent = vacios.length ? `Sin nada en esta vista: ${vacios.join(', ')}.` : '';
   vac.hidden = !vacios.length;
   pintarFondo();
-  ventanaMarcas(true, V, selT);
+  ventanaMarcas(true, V, selT, med);
   // Una selección que llega de fuera de la franja (la búsqueda, una ficha, el grafo, la dirección) baja los carriles
   // hasta su marca, una vez. Un clic en una marca nunca los mueve.
   if (selT !== ultimaSel) {
-    if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) verFila(it); }
+    if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) { verFila(it); med = null; } }
     ultimaSel = selT;
   }
   desdeFranja = false;
-  pintarIrSel();
+  pintarIrSel(med);
 }
 
 /** El fondo, detrás de las marcas y del alto de todos los carriles. */
@@ -611,15 +618,15 @@ function pintarMarca(it, top, selT, V) {
   it.labEl.classList.toggle('fuera', !it._labOnFill);
   const elegida = it.sel === selT;
   el.setAttribute('aria-pressed', String(elegida));
-  el.className = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}`;
+  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}`;
+  if (el.className !== clase) el.className = clase;
 }
 /** Solo van en la página las marcas de las filas cercanas a lo que se ve (una altura del panel por arriba y otra por
     abajo): a escala de milenios los carriles miden miles de píxeles y todas sus marcas a la vez harían lento el
     arrastre. Las filas y los altos son los de verdad, así que al bajar cada nombre está donde debe. */
-function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = BE.selTexto(E.sel)) {
-  const cuerpo = $('#linea-cuerpo');
-  const vh = cuerpo.clientHeight || 300;
-  const y0 = cuerpo.scrollTop - vh, y1 = cuerpo.scrollTop + 2 * vh;
+function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = BE.selTexto(E.sel), med = medidasPanel()) {
+  const vh = med.vh || 300;
+  const y0 = med.top - vh, y1 = med.top + 2 * vh;
   const conFoco = document.activeElement;
   let perdioFoco = false;
   for (const c of carrilesVista) {
@@ -724,7 +731,7 @@ function elegirMarca(it, tSeñalado) {
 // ---------------------------------------------------------------------------
 // La marca elegida fuera de la vista: un botón la trae sin cambiar la escala ni el cursor
 // ---------------------------------------------------------------------------
-function pintarIrSel() {
+function pintarIrSel(med) {
   const b = $('#linea-ir-sel');
   if (!b) return;
   const selT = BE.selTexto(E.sel);
@@ -736,15 +743,15 @@ function pintarIrSel() {
   b.hidden = true;
   if (!it) return;
   const lo = it.shape === 'moment' ? it.w0 : it.start, hi = it.shape === 'moment' ? it.w1 : it.end;
-  const cuerpo = $('#linea-cuerpo'), linea = $('#linea');
-  const cab = cuerpo.offsetTop;
+  const m = med || medidasPanel();
+  const cab = m.cab;
   let lado = null;
   if (hi <= E.vista[0]) lado = 'izq';
   else if (lo >= E.vista[1]) lado = 'der';
   else if (c.out?.visible.includes(it)) {
     const y = topDe(it, c);
-    if (y + G.row <= cuerpo.scrollTop) lado = 'arriba';
-    else if (y >= cuerpo.scrollTop + cuerpo.clientHeight - cabAlto) lado = 'abajo';
+    if (y + G.row <= m.top) lado = 'arriba';
+    else if (y >= m.top + m.vh - cabAlto) lado = 'abajo';
   }
   if (!lado) return;
   b.hidden = false;
@@ -752,12 +759,12 @@ function pintarIrSel() {
   b.textContent = { izq: `← ${it.name}`, der: `${it.name} →`, arriba: `↑ ${it.name}`, abajo: `↓ ${it.name}` }[lado];
   b.setAttribute('aria-label', `Llevar la vista a ${it.name}`);
   b.style.left = b.style.right = b.style.top = b.style.bottom = '';
-  const wCar = $('#carriles').offsetWidth;
+  const wCar = m.wCar;
   if (lado === 'izq') { b.style.left = `${wCar + 4}px`; b.style.top = `${cab + 2}px`; }
   else if (lado === 'der') { b.style.right = '6px'; b.style.top = `${cab + 2}px`; }
   // Arriba y abajo, en la columna de los nombres de carril: ahí no tapa ninguna marca.
   else if (lado === 'arriba') { b.style.left = '4px'; b.style.top = `${cab + cabAlto + 4}px`; }
-  else { b.style.left = '4px'; b.style.bottom = `${linea.clientHeight - cab - cuerpo.clientHeight + 6}px`; }
+  else { b.style.left = '4px'; b.style.bottom = `${m.hLinea - cab - m.vh + 6}px`; }
   b.classList.toggle('en-rotulos', lado === 'arriba' || lado === 'abajo');
   b._it = it;
 }
