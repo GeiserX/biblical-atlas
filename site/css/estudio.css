@@ -409,7 +409,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .portada-aviso { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; margin-top: 12px; color: var(--ink-2); font-size: var(--fs-md); }
 .portada-aviso:empty { display: none; }
 .portada-aviso .be-btn { min-height: 44px; cursor: pointer; }
-[aria-busy="true"] { cursor: progress; }
+.vista-portada [aria-busy="true"] { cursor: progress; }
 
 /* ---------- Tres preguntas, tres maneras de mirar ---------- */
 .portada-preguntas { padding: 8px 0 20px; }

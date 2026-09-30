@@ -97,11 +97,6 @@ function cerrarHoja({ foco = true } = {}) {
   soltarEspera();
   if (foco) $('#inicio')?.focus({ preventScroll: true });
 }
-/** «Explorar» de siempre (menú, llamadas de otros módulos): la vista de detrás tal como está. */
-function cerrar() {
-  if (!abierta) return;
-  BE.historia.entrar(() => { cerrarHoja(); BE.guardarHash(); });
-}
 
 const anunciar = (texto) => { estado.textContent = ''; setTimeout(() => { estado.textContent = texto; }, 30); };
 function clave(el) { return el?.closest?.('[data-p]')?.dataset.p || null; }
@@ -293,7 +288,8 @@ pintarAjustes();
 // ---------------------------------------------------------------------------
 function pintarSeguir() {
   const u = ultima(), caja = $('#portada-seguir');
-  if (!vueltaValida(u)) { caja.hidden = true; caja.innerHTML = ''; raiz.classList.remove('be-vuelve'); return; }
+  // Con los datos se comprueba también que lo guardado siga existiendo (una persona renombrada, un capítulo quitado).
+  if (!vueltaValida(u) || (BE.D && !destinoExiste(u.hash))) { caja.hidden = true; caja.innerHTML = ''; raiz.classList.remove('be-vuelve'); return; }
   caja.innerHTML = `<a class="portada-seguir__ir" href="${esc(u.hash)}" data-p="seguir"><span>Seguir donde lo dejaste</span><b>${esc(u.texto || 'tu última vista')}</b></a><button type="button" class="portada-seguir__olvidar" data-p="olvidar">Olvidar</button>`;
   caja.hidden = false;
 }
@@ -363,7 +359,8 @@ function pintarDatos() {
   $('#portada-cifras').textContent = partes.length
     ? `${partes.length > 1 ? `${partes.slice(0, -1).join(', ')} y ${partes[partes.length - 1]}` : partes[0]}.${fuentes ? ` ${fuentes.toLocaleString('es')} fuentes citadas.` : ''}` : '';
   if (D.generado) $('#portada-generado').textContent = ` · Datos del ${BE.fmtDia(D.generado)}`;
-  // Un destino escrito a mano que ya no está en los datos no se ofrece.
+  // Un destino escrito a mano, o guardado en «Seguir», que ya no está en los datos no se ofrece.
+  pintarSeguir();
   for (const a of hoja.querySelectorAll('.portada-ejemplos a, .portada-tarjetas a, .portada-mas a')) {
     if (!destinoExiste(a.getAttribute('href'))) a.closest('li').hidden = true;
   }
@@ -390,5 +387,5 @@ if (abierta) {
   hoja.focus({ preventScroll: true });
 }
 
-BE.portada = { abrir, cerrar, get abierta() { return abierta; }, reglas };
+BE.portada = { abrir, get abierta() { return abierta; }, reglas };
 })();

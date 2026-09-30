@@ -218,7 +218,7 @@ function pintarMenu() {
   if (!m) return;
   const on = (c) => raiz.classList.contains(`be-${c}`);
   m.innerHTML = `<div class="be-caps menu-titulo">Estudiar</div>
-    <button type="button" role="menuitem" data-menu="portada">Portada: épocas y recorridos</button>
+    <button type="button" role="menuitem" data-menu="portada">Portada</button>
     <button type="button" role="menuitem" data-menu="lectura">Modo lectura</button>
     <button type="button" role="menuitem" data-menu="grafo">Grafo de personas</button>
     <button type="button" role="menuitem" data-menu="conexion">¿Cómo se relacionan dos?</button>
