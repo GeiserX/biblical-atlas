@@ -18,15 +18,13 @@ places:
 - ararat
 people:
 - senaquerib
-- adramelec
+- adramelec-hijo-de-senaquerib
 - sarezer-hijo-de-senaquerib
 - esar-hadon
-- adramelec-hijo-de-senaquerib
 present:
 - senaquerib
-- adramelec
-- sarezer-hijo-de-senaquerib
 - adramelec-hijo-de-senaquerib
+- sarezer-hijo-de-senaquerib
 roles:
   senaquerib: died
 passages:
