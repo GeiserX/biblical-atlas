@@ -1,0 +1,100 @@
+/* biblical-earth · the date panel (datepicker.js): a popover under the date on a wide screen, a sheet from the bottom on
+   a narrow one. Only tokens of kit/tokens.css, so the light theme and the meeting theme (.be-reunion, dark) both work.
+   Chosen options carry a check mark and a thicker border, never only a colour. */
+
+.date-picker { position: fixed; margin: 0; padding: 0; inset: auto; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); box-shadow: var(--shadow-3); overflow: hidden; font: var(--fs-sm)/var(--lh-snug) var(--font-sans); }
+.date-picker[open] { display: flex; flex-direction: column; }
+.date-picker::backdrop { background: transparent; }
+.date-picker__inner { overflow: auto; overscroll-behavior: contain; padding: 4px 16px 16px; display: flex; flex-direction: column; gap: 14px; }
+.date-picker__top { position: sticky; top: 0; z-index: 1; display: flex; flex-direction: column; gap: 4px; margin: 0 -16px; padding: 8px 8px 8px 16px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.date-picker__top-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+/* The row that jumps to each part: «Elegir una fecha» is far down, and this says it is there. */
+.date-picker__nav { display: flex; flex-wrap: wrap; gap: 6px; }
+.date-picker__jump { min-height: 32px; padding: 2px 10px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font: 600 var(--fs-xs) var(--font-sans); cursor: pointer; }
+.date-picker__jump:hover { border-color: var(--gold-ink); background: var(--gold-soft); }
+.date-picker__heading:focus { outline: none; }
+.date-picker__heading:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.date-picker__title { margin: 0; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); outline: none; }
+.date-picker__close { width: 36px; height: 36px; border: 0; border-radius: var(--r-md); background: none; color: var(--ink-2); font-size: 22px; line-height: 1; cursor: pointer; }
+.date-picker__close:hover { background: var(--paper-2); color: var(--ink); }
+
+.date-picker__part { display: flex; flex-direction: column; gap: 8px; }
+.date-picker__part + .date-picker__part { border-top: 1px solid var(--line); padding-top: 14px; }
+.date-picker__heading { margin: 0; font: 600 var(--fs-lg)/1.2 var(--font-serif); color: var(--ink); }
+.date-picker__subheading { margin: 4px 0 0; font-size: var(--fs-2xs); font-weight: 700; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-3); }
+.date-picker__side { margin: 2px 0 0; font-size: var(--fs-xs); font-weight: 700; color: var(--ink-2); }
+.date-picker__age-date, .date-picker__hint { font-weight: 500; color: var(--ink-3); }
+
+/* 1. Esta fecha */
+.date-picker__date { margin: 0; font: 600 var(--fs-2xl)/1.15 var(--font-serif); color: var(--gold-ink); }
+.date-picker__date i { font-style: italic; }
+.date-picker__meaning { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; color: var(--ink-2); }
+.date-picker__meaning li { display: grid; grid-template-columns: minmax(46px, max-content) 1fr; gap: 8px; align-items: baseline; }
+.date-picker__term { font-weight: 700; color: var(--gold-ink); background: var(--gold-soft); border: 1px solid var(--gold-line); border-radius: var(--r-sm); padding: 0 6px; text-align: center; white-space: nowrap; }
+.date-picker__links { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.date-picker__link { display: inline-flex; align-items: center; min-height: 32px; padding: 0; border: 0; background: none; color: var(--link); font: 600 var(--fs-sm) var(--font-sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+/* 2. Ir a un momento */
+.date-picker__moments { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.date-picker__moments--milestones { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.date-picker__age { display: flex; flex-direction: column; gap: 4px; }
+.date-picker__moment { width: 100%; min-height: 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1px; padding: 5px 10px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface-2); color: var(--ink); text-align: left; cursor: pointer; }
+.date-picker__moment:hover { border-color: var(--gold-ink); background: var(--gold-soft); }
+.date-picker__moment-title { font-weight: 600; }
+.date-picker__moment-date { font-size: var(--fs-xs); color: var(--ink-3); }
+
+/* 3. Elegir una fecha */
+.date-picker__year { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.date-picker__era { display: inline-flex; gap: 4px; }
+.date-picker__year-value { margin: 0; font: 600 var(--fs-2xl)/1 var(--font-serif); color: var(--gold-ink); font-variant-numeric: tabular-nums; }
+.date-picker__steps { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.date-picker__steps-side { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
+.date-picker__step { min-width: 0; height: 36px; padding: 0 2px; border: 1px solid var(--line-2); border-radius: var(--r-md); background: var(--surface); color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer; }
+.date-picker__step:hover:not([disabled]) { border-color: var(--gold-ink); }
+.date-picker__step[disabled] { opacity: .45; cursor: default; }
+.date-picker__grid { display: grid; gap: 4px; }
+.date-picker__grid--months { grid-template-columns: repeat(3, 1fr); }
+.date-picker__days { display: flex; flex-direction: column; gap: 4px; }
+.date-picker__grid--days { grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); }
+.date-picker__run { margin: 4px 0 0; font-size: var(--fs-xs); font-weight: 600; color: var(--ink-2); }
+.date-picker__option { position: relative; min-height: 36px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 3px 6px; border: 1px solid var(--line-2); border-radius: var(--r-md); background: var(--surface); color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer; }
+.date-picker__option:hover:not([disabled]) { border-color: var(--gold-ink); }
+.date-picker__option--whole { grid-column: 1 / -1; flex-direction: row; }
+.date-picker__option-name--anachronic { font-style: italic; }
+.date-picker__option-sub { font-size: var(--fs-2xs); font-weight: 500; color: var(--ink-3); }
+.date-picker__note { margin: 0; font-size: var(--fs-xs); color: var(--ink-3); }
+/* Chosen: a check mark and a border of two pixels, on top of the colour. */
+.date-picker__option[aria-checked="true"] { border: 2px solid var(--gold-ink); background: var(--gold-soft); color: var(--gold-ink); padding: 2px 5px; }
+.date-picker__option[aria-checked="true"] .date-picker__option-sub { color: var(--gold-ink); }
+/* The mark has an empty alternative text: a screen reader already hears «checked», and the name stays «a.e.c.». */
+.date-picker__option[aria-checked="true"]::before { content: "✓" / ""; position: absolute; top: 1px; left: 5px; font-size: var(--fs-2xs); font-weight: 700; }
+.date-picker__era .date-picker__option { min-width: 64px; }
+.date-picker__option[disabled] { opacity: .45; cursor: default; }
+.date-picker__go { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 4px; }
+.date-picker__choice { margin: 0; color: var(--ink-2); }
+.date-picker__choice strong { color: var(--ink); }
+.date-picker__go-button { min-width: 88px; }
+
+.date-picker :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* Narrow screens: a sheet from the bottom, over a dimmed page. Every target is at least 44 px. */
+@media (max-width: 760px) {
+  .date-picker { inset: auto 0 0 0; width: 100%; max-width: none; max-height: 86dvh; border-radius: 18px 18px 0 0; border-bottom: 0; }
+  .date-picker::backdrop { background: rgba(20, 16, 10, .38); }
+  .date-picker__inner { padding: 0 14px calc(16px + env(safe-area-inset-bottom)); }
+  .date-picker__top { margin: 0 -14px; padding: 6px 4px 4px 14px; }
+}
+@media (max-width: 760px), (any-pointer: coarse) {
+  .date-picker__jump, .date-picker__close, .date-picker__step, .date-picker__option, .date-picker__moment, .date-picker__link, .date-picker__go-button { min-height: 44px; }
+  .date-picker__close { width: 44px; height: 44px; }
+  .date-picker__option { min-width: 44px; }
+  .date-picker__grid--days { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); }
+}
+/* On a phone the eight year steps go in two rows of four (minus above, plus below), so each stays wider than 44 px. */
+@media (max-width: 480px) {
+  .date-picker__steps { grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .date-picker__steps-side { display: contents; }
+}
+@media (max-width: 380px) {
+  .date-picker__moments--milestones { grid-template-columns: 1fr; }
+}

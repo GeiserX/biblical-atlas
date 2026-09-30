@@ -44,14 +44,14 @@ a { color: var(--link); }
   .be-date__value { font-size: 19px; }
 }
 
-/* ---------- Fecha de la barra: se ve que se puede escribir ---------- */
-/* Un lápiz y «Ir a» al lado de la fecha, y el borde que se marca al pasar: es un campo, no un rótulo (linea.js, editarFecha). */
+/* ---------- Fecha de la barra: se ve que abre algo ---------- */
+/* Un calendario e «Ir a otra fecha» al lado de la fecha, y el borde que se marca al pasar: es un botón, no un rótulo.
+   Abre el panel de la fecha (datepicker.js, estilos en datepicker.css). */
 .fecha-ir { display: inline-flex; align-items: center; gap: 4px; align-self: center; margin-left: 2px; padding: 2px 8px 2px 6px; border-radius: var(--r-pill); border: 1px solid var(--gold-line); color: var(--gold-ink); background: var(--surface); font-size: var(--fs-xs); font-weight: 600; line-height: 1.3; }
 .fecha-ir .be-i { width: 13px; height: 13px; }
 #fecha { cursor: pointer; transition: border-color .15s, box-shadow .15s; }
 #fecha:hover, #fecha:focus-visible { border-color: var(--gold-ink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--gold-ink) 14%, transparent); }
 #fecha:hover .be-date__value { text-decoration: underline dotted 1.5px; text-underline-offset: 4px; }
-#fecha.editando .fecha-ir { visibility: hidden; }
 @media (max-width: 1439px) { .fecha-ir__texto { display: none; } .fecha-ir { padding: 3px; } }   /* el texto, solo con sitio de sobra */
 
 /* ---------- Modo reunión: botón propio en la barra ---------- */
@@ -108,8 +108,7 @@ a { color: var(--link); }
   .logo-text, .be-date__hint, #compartir, .acerca-texto { display: none !important; }
   .acerca-enlace { width: 30px; padding: 0; justify-content: center; }
   #fecha { gap: 5px; }
-  .fecha-ir { border: 0; background: none; padding: 0; margin-left: 0; }   /* solo el lápiz: la búsqueda necesita el sitio */
-  #fecha.editando { min-width: 186px; }   /* al escribir, la fecha toma el sitio de la búsqueda: su ejemplo se lee entero */
+  .fecha-ir { border: 0; background: none; padding: 0; margin-left: 0; }   /* solo el icono: la búsqueda necesita el sitio */
   .buscador { min-width: 44px; }   /* y la búsqueda se queda en su lupa, entera */
   .be-topbar > .be-spacer { display: none; }
   .be-date { padding: 4px 10px; }
