@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: luhit
+name: Luhit
+names:
+- name: Luhit
+- name: Cuesta de Luhit
+  note: Así la nombra Is 15:5.
+type: city
+lat: 31.051399
+lon: 35.586239
+precision: uncertain
+coord_source: openbible:a91d516
+coord_url: https://www.openbible.info/geo/ancient/a91d516/luhith
+coord_note: Segunda identificación de OpenBible, Rujm Madinat er-Ras, unos 20 km al suroeste de Karak, que Perspicacia recoge
+  por Eusebio y Jerónimo; cerca está Khirbet Fas.
+summary: Lugar de Moab con una subida por la que los fugitivos van llorando (Is 15:5; Jer 48:5). Unos lo creen una ciudad
+  al final de la cuesta; otros, solo el nombre de la ladera.
+reason: 'Perspicacia «Luhit»; Is 15:5. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Luhit fuera una ciudad: Perspicacia recoge que quizá solo nombra una pendiente.'
+sources:
+- it-luhit
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Luhit»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002789
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

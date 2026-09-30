@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriya-sacerdote-de-acaz
+name: Uriya
+names:
+- name: Uriya
+- name: Urías
+  note: Así lo escribe Is 8:2. Perspicacia «Urías», núm. 2, remite a «Uriya», núm. 1.
+perspicacia: 1200004523#1
+disambiguation: Sacerdote en tiempos de Acaz; no el profeta hijo de Semaya ni el sacerdote padre de Meremot, y tampoco Urías
+  el hitita.
+distinct_from:
+- urias-el-hitita
+summary: Sacerdote en el reinado de Acaz. Fue testigo de lo que Isaías escribió en una tablilla grande, y construyó para el
+  rey un altar copiado del que este vio en Damasco. Perspicacia supone que era el sumo sacerdote.
+reason: Perspicacia «Uriya», núm. 1, y «Urías», núm. 2; Is 8:2; 2Re 16:10-16.
+sources:
+- it-uriya
+- it-urias
+- isaias-8
+- 2-reyes-16
+links:
+- title: 'Perspicacia: «Uriya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
+  type: perspicacia
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
+  type: bible
+relations:
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - isaias-8
+  - it-uriya
+  reason: Is 8:2 lo llama «el sacerdote Urías»; 2Re 16:10-16 lo muestra sirviendo en el templo a las órdenes de Acaz.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -11,7 +11,8 @@ date:
   text: 525 a.e.c.
 places:
 - egipto
-people: []
+people:
+- cambises-ii
 passages: []
 summary: Cambises II, hijo de Ciro, somete Egipto, que pasa a ser parte del Imperio persa. Tebas empieza a decaer. Siguen
   quedando judíos en el país.
@@ -21,5 +22,5 @@ sources:
 - it-egipto
 - g10-egipto
 search: Cambises Egipto
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

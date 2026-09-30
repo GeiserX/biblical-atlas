@@ -56,6 +56,23 @@ names:
 - name: Bet-Merhac
   note: Sitio donde se detuvo David al dejar la ciudad huyendo de Absalón (2Sa 15:17). Perspicacia «Bet-merhaq» cree que quizá
     fuera la última casa del lado del monte de los Olivos.
+- name: Estanque superior
+  note: Estanque con un conducto que llegaba al lado de la calzada que iba al campo del lavandero (Is 7:3; 36:2; 2Re 18:17).
+    Perspicacia «Estanque» dice que no se sabe bien dónde estaba.
+- name: Siloé
+  note: Canal que llevaba el agua de la fuente de Guihón por el Cedrón hasta un estanque del sur. Is 8:6 usa sus aguas tranquilas
+    en sentido figurado (Perspicacia «Siloé»).
+- name: Estanque inferior
+  note: Is 22:9. Según Perspicacia «Estanque», los eruditos suelen situarlo en Birket el-Hamra, al sur del valle del Tiropeón;
+    quizá sea el estanque del Canal de Ne 3:15.
+- name: Estanque viejo
+  note: Is 22:11. Perspicacia «Estanque» dice que la Biblia no permite saber dónde estaba respecto a la ciudad.
+- name: Ofel
+  note: Colina amurallada de Jerusalén que salía hacia el este desde el ángulo sudeste del monte del templo, sobre el Cedrón
+    (2Cr 27:3; Ne 3:26). Is 32:14 anuncia que quedaría desierta. Perspicacia «Ofel».
+- name: Escalera de Acaz
+  note: Escalones por los que bajaba la sombra del sol; Jehová la hizo retroceder diez como señal para Ezequías (Is 38:8;
+    2Re 20:11). Perspicacia «Sol» recoge, con Josefo, que estaba en el palacio y quizá medía las horas.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -180,6 +197,42 @@ sources:
 - 1-reyes-12
 - 1-reyes-14
 - 1-reyes-15
+- isaias-1
+- isaias-2
+- isaias-3
+- isaias-4
+- isaias-5
+- isaias-7
+- it-estanque
+- isaias-8
+- it-siloe
+- isaias-10
+- isaias-22
+- isaias-24
+- isaias-27
+- isaias-28
+- it-piedra-angular
+- isaias-29
+- it-ariel
+- isaias-31
+- isaias-32
+- it-ofel
+- isaias-33
+- isaias-35
+- isaias-36
+- isaias-37
+- isaias-38
+- it-sol
+- isaias-40
+- isaias-44
+- isaias-49
+- isaias-51
+- isaias-52
+- isaias-60
+- isaias-62
+- isaias-64
+- isaias-65
+- isaias-66
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

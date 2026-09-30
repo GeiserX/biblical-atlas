@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-ora-ante-las-cartas-de-senaquerib
+title: Ezequías ora ante las cartas de Senaquerib
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: isaias
+  order: 37008
+places:
+- jerusalen
+- libna
+people:
+- ezequias
+- senaquerib
+- tirhaca
+present:
+- ezequias
+passages:
+- Is 37:8-20
+- 2Re 19:8-19
+summary: Senaquerib, que ya lucha contra Libná, oye que Tirhacá de Etiopía sale contra él y escribe a Ezequías que ningún
+  dios salvó a las naciones. El rey extiende las cartas ante Jehová y le pide que los salve.
+reason: Is 37:8-20 sigue a la visita a Isaías, en 732 a.e.c. (estudio 3). Perspicacia «Libná» pone allí al rey asirio, que
+  no estaba en Jerusalén; Ezequías ora en el templo (Is 37:14).
+sources:
+- isaias-37
+- si-3
+- it-libna
+- it-tirhaqa
+- ip1-29
+- 2-reyes-19
+links:
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+- title: 'Perspicacia: «Libná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002734
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

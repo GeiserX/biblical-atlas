@@ -1,0 +1,19 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-padre-de-eliaquim
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#3
+disambiguation: Hilquías padre de Eliaquim, el mayordomo de Ezequías; no el sumo sacerdote de Josías ni el padre de Jeremías.
+summary: Padre de Eliaquim, el funcionario que Jehová puso sobre la casa del rey Ezequías en lugar de Sebná.
+reason: Perspicacia «Hilquías», núm. 3; Is 22:20; 36:3, 22; 2Re 18:18, 37.
+sources:
+- it-hilquias
+- isaias-22
+- isaias-36
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002026
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

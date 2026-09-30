@@ -22,6 +22,7 @@ roles:
   pablo: spoke
 passages:
 - Hch 13:14-43
+- Is 55:3
 summary: Un sábado, tras la lectura de la Ley y los Profetas, Pablo repasa la historia de Israel hasta Jesús, muerto y resucitado.
   Al salir, les piden que vuelvan a hablar y muchos judíos y prosélitos los siguen.
 reason: Hch 13:14-43 y sus notas de estudio (13:15, 13:20, 13:43); Perspicacia «Pablo» (párr. 12).
@@ -29,6 +30,7 @@ sources:
 - hch-13
 - nota-hechos-13
 - it-pablo
+- isaias-55
 search: Antioquía de Pisidia sinagoga Pablo
 history:
 - date: '2026-09-29'
@@ -40,5 +42,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora los versículos y las notas del suceso recortado.
   source: hch-13
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

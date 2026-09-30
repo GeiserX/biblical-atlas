@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: iva
+name: Ivá
+names:
+- name: Ivá
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En Siria
+  geometry:
+    type: zone
+    lat: 34.684722
+    lon: 36.690556
+    radius_km: 100
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hena
+  - it-iva
+  - openbible-geo
+  reason: Perspicacia «Hená» recoge que varios estudiosos ponen Ivá, con Hená y Sefarvaim, en Siria; «Ivá» no da ningún sitio.
+  note: 'Centro: punto de OpenBible en Kafr Aya, la primera identificación de su ficha. El radio es nuestro.'
+  coord_source: openbible:a9ac5f9
+  coord_url: https://www.openbible.info/geo/ancient/a9ac5f9/ivvah
+summary: Ciudad conquistada por los asirios; Senaquerib recordó a Ezequías que su rey no se había salvado. Quizá sea la Avá
+  de donde Asiria llevó colonos a Samaria.
+reason: Perspicacia «Ivá»; Is 37:13; 2Re 18:34; 19:13.
+not_claimed:
+- 'Que sea sin duda Avá (2Re 17:24): Perspicacia solo lo ve probable, así que Avá no va en sus nombres.'
+sources:
+- it-iva
+- it-hena
+- openbible-geo
+- isaias-37
+links:
+- title: 'Perspicacia: «Ivá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002248
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified

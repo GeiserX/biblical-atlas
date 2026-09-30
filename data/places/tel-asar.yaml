@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tel-asar
+name: Tel-Asar
+names:
+- name: Tel-Asar
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bit-Adini, junto al alto Éufrates
+  geometry:
+    type: zone
+    lat: 36.7014
+    lon: 38.0865
+    radius_km: 60
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-tel-asar
+  - openbible-geo
+  reason: 'Perspicacia «Tel-asar»: por la mención de los hijos de Edén se la suele unir al pequeño reino de Bit-Adini, aunque
+    la identificación sigue siendo incierta.'
+  note: Punto de OpenBible en Til Barsip, la primera identificación de su ficha. El radio de 60 km es nuestro, como en bet-eden.
+  coord_source: openbible:a0e11c1
+  coord_url: https://www.openbible.info/geo/ancient/a0e11c1/telassar
+- name: Til-Ashuri, hacia la frontera de Asiria con Elam
+  geometry:
+    type: point
+    lat: 35.111944
+    lon: 45.686389
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-tel-asar
+  - openbible-geo
+  reason: 'Perspicacia «Tel-asar»: Tiglat-Piléser III y Esar-Hadón nombran un Til-Ashuri, que se pone junto a la raya entre
+    Asiria y Elam.'
+  note: Punto de OpenBible en Til Assuri, otra identificación de la misma ficha.
+  coord_source: openbible:a0e11c1
+  coord_url: https://www.openbible.info/geo/ancient/a0e11c1/telassar
+summary: Lugar donde vivía la gente de Edén, uno de los pueblos que, según Senaquerib, sus antepasados habían vencido. Estaría
+  en el norte de Mesopotamia, pero su sitio es incierto.
+reason: Perspicacia «Tel-asar»; Is 37:12; 2Re 19:12. Dos candidatos, porque Perspicacia deja abierta la identificación.
+sources:
+- it-tel-asar
+- openbible-geo
+- isaias-37
+links:
+- title: 'Perspicacia: «Tel-asar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004350
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified

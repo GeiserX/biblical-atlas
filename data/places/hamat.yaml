@@ -24,6 +24,9 @@ sources:
 - amos-6
 - zacarias-9
 - 2-samuel-8
+- isaias-10
+- isaias-11
+- isaias-36
 links:
 - title: 'Perspicacia: «Hamat, hamateo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001834
@@ -39,5 +42,5 @@ history:
   change: 'La razón y las fuentes añaden 2Sa 8:9, 10: Toi, rey de Hamat, envía a su hijo a felicitar a David por vencer a
     Hadadézer.'
   source: 2-samuel-8
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

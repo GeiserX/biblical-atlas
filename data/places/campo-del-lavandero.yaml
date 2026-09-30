@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: campo-del-lavandero
+name: Campo del lavandero
+names:
+- name: Campo del lavandero
+type: region
+lat: 31.767198
+lon: 35.235985
+precision: uncertain
+coord_source: openbible:a84c559
+coord_url: https://www.openbible.info/geo/ancient/a84c559/washers-field
+coord_note: 'Primera identificación de OpenBible: a menos de 500 m de Bir Ayyub, En-Roguel, cerca de donde Perspicacia cree
+  que podía estar. Punto aproximado de una zona.'
+summary: Zona de las afueras de Jerusalén donde al parecer trabajaban los lavanderos, junto a una calzada y al conducto del
+  estanque superior. Allí salió Isaías al encuentro de Acaz; después hablaron desde allí los enviados de Senaquerib.
+reason: 'Perspicacia «Campo del lavandero»; Is 7:3; 36:2; 2Re 18:17. OpenBible: solo tomamos el punto.'
+sources:
+- it-campo-del-lavandero
+- openbible-geo
+- isaias-7
+- isaias-36
+links:
+- title: 'Perspicacia: «Campo del lavandero»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002692
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -12,13 +12,18 @@ date:
 places:
 - lakis
 - jerusalen
+- libna
 people:
 - senaquerib
 - ezequias
 - isaias
+- eliaquim-hijo-de-hilquias
+- sebna
+- tirhaca
+- joa-hijo-de-asaf
 passages:
-- 2Re 18:13-19:37
-- Is 36:1-37:38
+- 2Re 18:13-19:36
+- Is 36:1-37:37
 summary: En el año 14 de Ezequías, Senaquerib toma ciudades de Judá y desde Lakís exige la rendición de Jerusalén. Isaías
   anima al rey; un ángel mata a 185.000 asirios.
 reason: El estudio 3 fecha la invasión en 732; Perspicacia «Ezequías», párr. 11, 14 y 16, y «Lakís», párr. 5.
@@ -27,6 +32,10 @@ sources:
 - it-ezequias
 - it-lakis
 - 2-reyes-18
+- ip1-29
+- it-rabsaque
+- isaias-37
+- it-libna
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
@@ -38,5 +47,16 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
   type: bible
 search: Senaquerib Ezequías Rabsaqué
-checked_on: '2026-09-28'
+present:
+- senaquerib
+history:
+- date: '2026-09-30'
+  change: Sin present, el sitio ponía a Ezequías e Isaías en Lakís, el primer lugar. Is 36:2 deja a Ezequías en Jerusalén;
+    en Lakís solo estaba Senaquerib.
+  source: isaias-36
+- date: '2026-09-30'
+  change: 'Salen 2Re 19:37 e Is 37:38: el asesinato de Senaquerib ocurrió años después de 732 (Perspicacia «Senaquerib»; «Las
+    profecías de Isaías I», cap. 29, párr. 22) y es otro suceso, de Reyes.'
+  source: isaias-37
+checked_on: '2026-09-30'
 status: verified

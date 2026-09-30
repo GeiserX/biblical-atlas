@@ -20,6 +20,7 @@ people:
 - eunuco-etiope
 passages:
 - Hch 8:26-39
+- Is 53:7, 8
 summary: Un ángel envía a Felipe al camino del desierto que baja de Jerusalén a Gaza. Allí alcanza el carro de un
   funcionario etíope que lee a Isaías, le explica que habla de Jesús y lo bautiza.
 reason: Perspicacia «Felipe» (párr. 8) y «Etiopía» (párr. 5); capítulo 7 de «Testimonio completo», párr. 14 y 15.
@@ -28,6 +29,7 @@ sources:
 - it-etiopia
 - hechos-8
 - bt-7
+- isaias-53
 note: El encuentro fue en algún punto del camino entre Jerusalén y Gaza; el lugar exacto del bautismo no se sabe.
 search: Felipe y el eunuco etíope
 present: []
@@ -36,5 +38,5 @@ history:
   change: El encuentro y el bautismo pasan en un punto del camino que el texto no nombra (Hch 8:26, 36); con Jerusalén primero,
     el sitio ponía allí a Felipe y al etíope.
   source: hechos-8
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

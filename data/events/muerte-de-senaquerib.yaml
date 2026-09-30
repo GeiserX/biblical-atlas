@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-senaquerib
+title: Muerte de Senaquerib
+date:
+  from: -731
+  to: -683
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara Tebas)'
+narrative_order:
+  series: isaias
+  order: 37038
+places:
+- ninive
+- ararat
+people:
+- senaquerib
+- adramelec-hijo-de-senaquerib
+- sarezer-hijo-de-senaquerib
+- esar-hadon
+type: death
+roles:
+  senaquerib: died
+present:
+- senaquerib
+- adramelec-hijo-de-senaquerib
+- sarezer-hijo-de-senaquerib
+passages:
+- Is 37:38
+- 2Re 19:37
+summary: Sus hijos Adramélec y Sarézer lo matan en Nínive mientras adora a su dios Nisroc, y escapan a Ararat. Reina en su
+  lugar Esar-Hadón, otro de sus hijos.
+reason: 'Perspicacia «Senaquerib»: la Biblia no dice que muriera nada más volver, y los registros asirios, poco fiables, hablan
+  de unos veinte años. Su nieto Asurbanipal ya tomó Tebas hacia 684 (Perspicacia «Cus»).'
+sources:
+- isaias-37
+- it-senaquerib
+- it-esar-hadon
+- it-adramelec
+- it-cus
+- 2-reyes-19
+links:
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+- title: 'Perspicacia: «Senaquerib»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003897
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

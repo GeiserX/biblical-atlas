@@ -1,0 +1,19 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baladan
+name: Baladán
+names:
+- name: Baladán
+perspicacia: '1200000544'
+summary: Padre de Merodac-Baladán, el rey de Babilonia que mandó mensajeros a Ezequías. La Biblia solo lo nombra para identificar
+  a su hijo; su nombre significa «Dios ha dado un hijo».
+reason: Perspicacia «Baladán»; Is 39:1 y 2Re 20:12.
+sources:
+- it-baladan
+- isaias-39
+- 2-reyes-20
+links:
+- title: 'Perspicacia: «Baladán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000544
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

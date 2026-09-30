@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sinim
+name: Sinim
+names:
+- name: Sinim
+- name: País de Sinim
+  note: Forma completa de Is 49:12 y título del artículo de Perspicacia.
+type: country
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Siene, en el extremo sur de Egipto (Asuán)
+  geometry:
+    type: point
+    lat: 24.088919
+    lon: 32.899731
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sinim
+  - openbible-geo
+  reason: Perspicacia «Sinim, País de» cuenta que ciertos eruditos lo igualan con la Siene de Ez 30:6, pero no lo da por bueno.
+  note: Punto de Asuán, la única identificación de la ficha Syene de OpenBible, que asigna Is 49:12 a ese sitio.
+  coord_source: openbible:a8a6a5b
+  coord_url: https://www.openbible.info/geo/ancient/a8a6a5b/syene
+- name: Elam, en la tierra de los persas
+  geometry:
+    type: point
+    lat: 32.18922
+    lon: 48.25778
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sinim
+  - openbible-geo
+  reason: 'Perspicacia «Sinim, País de»: donde el hebreo dice Sinim, la Septuaginta pone la tierra de los persas, que abarcaría
+    Elam, cuyo nombre en acadio antiguo era Si-nim.'
+  note: Punto de Susa, el mismo que usa elam como representativo del país.
+  coord_source: openbible:a7e3a59
+  coord_url: https://www.openbible.info/geo/ancient/a7e3a59/elam
+summary: País del que, según Is 49:12, volverían israelitas dispersos. Como el versículo nombra aparte el norte y el oeste,
+  Perspicacia lo supone al sur o al este de Israel; su sitio sigue sin saberse.
+reason: Perspicacia «Sinim, País de»; Is 49:12. El mapa solo muestra los dos candidatos que recoge ese artículo.
+not_claimed:
+- 'Que Sinim sea Siene o Elam: Perspicacia solo recoge esas dos propuestas y deja su ubicación como incierta.'
+sources:
+- it-sinim
+- openbible-geo
+- isaias-49
+links:
+- title: 'Perspicacia: «Sinim, País de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004139
+  type: perspicacia
+- title: Isaías 49 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/49
+  type: bible
+checked_on: '2026-09-30'
+status: verified

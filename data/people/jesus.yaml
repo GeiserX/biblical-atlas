@@ -8,6 +8,8 @@ names:
 - name: la Palabra
   note: Título que Juan da a Jesús (Jn 1:1, 14; Ap 19:13). Según la nota de estudio, lo llevó como portavoz de Dios en el
     cielo, en la tierra y tras volver al cielo.
+- name: Emmanuel
+  note: Título profético de Is 7:14 y 8:8, «con nosotros está Dios», que Mt 1:23 aplica a Jesús (Perspicacia «Emmanuel»).
 date:
   from: 29
   to: 33
@@ -120,6 +122,7 @@ sources:
 - 1-corintios-15
 - filipenses-2
 - colosenses-1
+- it-emmanuel
 not_claimed:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -417,6 +420,18 @@ relations:
   reason: 'Lu 23:5-7: lo acusan de haber empezado en Galilea; Pilato pregunta si es galileo y, al saberlo, lo manda a Herodes.'
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: jese
+  word: ancestor
+  inferred: true
+  sources:
+  - isaias-11
+  - it-jese
+  - si-isaias
+  reason: Is 11:1 y 10 anuncian una ramita y una raíz de Jesé. Perspicacia «Jesé» y «Toda Escritura», libro 23, párr. 35,
+    lo ven cumplido en Jesús, que mantiene viva esa línea.
+  checked_on: '2026-09-30'
+  status: verified
 links:
 - title: 'Perspicacia: «Jesucristo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002451
@@ -430,7 +445,7 @@ history:
   change: La razón de vivio_en capernaum citaba Mt 9:1 como «su propia ciudad»; la TNM de estudio dice «su ciudad».
   source: mateo-9
 disambiguation: Jesucristo; no Jesús hijo de Eliezer, antepasado suyo en la genealogía de Lucas.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer

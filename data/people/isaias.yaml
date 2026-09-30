@@ -20,6 +20,20 @@ sources:
 - isaias-6
 - tnm-tabla
 - si-3
+- isaias-2
+- si-isaias
+- it-isaias-libro
+- ip1-8
+- isaias-7
+- isaias-8
+- isaias-13
+- isaias-16
+- ip1-15
+- isaias-20
+- isaias-37
+- ip1-29
+- isaias-38
+- isaias-39
 links:
 - title: 'Perspicacia: «Isaías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002204
@@ -34,9 +48,49 @@ relations:
   sources:
   - it-isaias
   - isaias-7
+  - isaias-37
   reason: 'Actuaba en Jerusalén: allí salió al encuentro de Acaz (Is 7:3) y lo consultó Ezequías (Is 37:2).'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: amoz
+  word: father
+  inferred: false
+  sources:
+  - isaias-1
+  - isaias-2
+  - it-amoz
+  - isaias-13
+  - isaias-20
+  - isaias-37
+  - isaias-38
+  reason: Is 1:1 y 2:1 lo llaman Isaías hijo de Amoz.
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: prophet
+  date:
+    from: -777
+    to: -731
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 778-732 a.e.c.
+  inferred: false
+  sources:
+  - isaias-1
+  - isaias-6
+  - isaias-37
+  - isaias-38
+  - isaias-39
+  - it-isaias
+  - si-isaias
+  - tnm-tabla
+  reason: 'Is 6:8, 9: Jehová lo envía a hablar al pueblo; Is 37:2, 38:1 y 39:3 lo llaman el profeta. Perspicacia «Isaías»
+    fecha su obra de c. 778 a poco después de 732.'
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200002204'
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

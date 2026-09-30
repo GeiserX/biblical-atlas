@@ -36,8 +36,9 @@ relations:
   - it-jotan
   - 2-reyes-15
   - mateo-1
+  - isaias-7
   reason: Hijo de Uzías y Jerusá (2Re 15:32-33).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: uzias
@@ -51,7 +52,7 @@ relations:
   status: verified
 perspicacia: 1200002529#3
 disambiguation: Rey de Judá, hijo de Uzías; no el hijo menor del juez Gedeón ni el descendiente de Judá llamado hijo de Jahdai.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jotan-hijo-de-gedeon

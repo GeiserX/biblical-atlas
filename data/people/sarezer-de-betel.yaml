@@ -40,5 +40,7 @@ relations:
     el destierro.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- sarezer-hijo-de-senaquerib

@@ -23,6 +23,7 @@ sources:
 - tnm-a6-a
 - tnm-a6-b
 - mateo-1
+- isaias-6
 links:
 - title: 'Perspicacia: «Uzías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004535
@@ -65,7 +66,7 @@ history:
   change: Perspicacia «Uzías» cerraba su reinado en 778 a.e.c.; A6-B, más reciente, empieza el de Jotán en 777.
   source: tnm-a6-a
 perspicacia: 1200004535#3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - azarias-hijo-de-natan

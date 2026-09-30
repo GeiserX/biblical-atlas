@@ -51,7 +51,8 @@ relations:
   office: king
   status: verified
 disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud, antepasado de Jesús.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - eliaquim-hijo-de-abiud
+- eliaquim-hijo-de-hilquias

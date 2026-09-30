@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eglat-selisiya
+name: Eglat-Selisiyá
+names:
+- name: Eglat-Selisiyá
+  note: Perspicacia cree que quiere decir tercera Eglat; «Las profecías de Isaías I» sugiere novilla de tres años.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Cerca de Zóar, al sureste del mar Salado
+  geometry:
+    type: zone
+    lat: 31.036904
+    lon: 35.487657
+    radius_km: 15
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-eglat-selisiya
+  - openbible-geo
+  - isaias-15
+  reason: 'Is 15:5 la nombra junto a Zóar como refugio de los fugitivos. jw.org no la sitúa: el mapa solo muestra la zona.'
+  coord_source: calculation
+  note: 'Centro: primer punto de la ficha af7eb92 de OpenBible (Eglath-shelishiyah), junto a es-Safi. El radio de 15 km es
+    nuestro.'
+summary: Lugar de Moab adonde huyen sus fugitivos, junto a Zóar (Is 15:5; Jer 48:34). Algunos pensaron en tres ciudades vecinas
+  con el mismo nombre. Nunca se ha podido saber dónde estaba.
+reason: Perspicacia «Eglat-selisiyá»; «Las profecías de Isaías I», cap. 15, párr. 10; Is 15:5.
+not_claimed:
+- 'Que sea un nombre de lugar: muchos eruditos lo traducen como una novilla de tres años, figura de la Moab vencida, y Perspicacia
+  lo recoge.'
+sources:
+- it-eglat-selisiya
+- ip1-15
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Eglat-selisiyá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001263
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

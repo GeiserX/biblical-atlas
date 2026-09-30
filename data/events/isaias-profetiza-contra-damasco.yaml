@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-profetiza-contra-damasco
+title: Isaías profetiza contra Damasco y Efraín
+date:
+  from: -777
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 778 y 746 a.e.c. (tiempo narrativo: antes de que Asiria tomara Damasco en días de Acaz)'
+narrative_order:
+  series: isaias
+  order: 17001
+places:
+- damasco
+- israel
+- siria
+people:
+- isaias
+present: []
+passages:
+- Is 17:1-14
+summary: Isaías anuncia que Damasco acabará en ruinas y sin reino, y que Efraín, su aliado, perderá sus plazas fuertes y quedará
+  como un campo rebuscado. Pocos volverán la vista a su Hacedor.
+reason: Is 17 no da fecha. Empezó a profetizar hacia 778 (estudio 3), y Asiria tomó Damasco reinando Acaz, que murió en 746
+  (Perspicacia «Isaías, Libro de», párr. 4 y 7; «Damasco», apartado de los juicios).
+sources:
+- isaias-17
+- si-3
+- it-isaias
+- it-isaias-libro
+- it-damasco
+- ip1-15
+links:
+- title: Isaías 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/17
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

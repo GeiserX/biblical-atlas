@@ -35,6 +35,7 @@ sources:
 - 1-samuel-26
 - 2-samuel-21
 - 2-samuel-23
+- isaias-10
 links:
 - title: 'Perspicacia: «Guibeah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001679
@@ -53,5 +54,5 @@ history:
 - date: '2026-09-29'
   change: La nota de Guibeá de Saúl añade 1Sa 11:4, donde sale ese nombre por primera vez.
   source: 1-samuel-11
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-compone-una-cancion-tras-sanar
+title: Ezequías compone una canción al recuperarse de su enfermedad
+type: writing
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 732 a.e.c.
+narrative_order:
+  series: isaias
+  order: 38009
+places:
+- jerusalen
+present: []
+people:
+- ezequias
+roles:
+  ezequias: wrote
+passages:
+- Is 38:9-20
+summary: 'Ya sano, el rey pone por escrito lo que vivió: temía bajar a la Tumba a mitad de su vida, pero Jehová lo libró.
+  Promete alabarlo con música en su casa todos sus días.'
+reason: 'Perspicacia «Ezequías», apartados «Contribuciones literarias» y «Prolongación milagrosa de la vida de Ezequías»:
+  enfermó cuando Senaquerib amenazaba Jerusalén, en su año 14 (732). Is 38:9 pone la canción tras la curación y no dice dónde
+  la escribió.'
+sources:
+- isaias-38
+- it-ezequias
+- ip1-29
+links:
+- title: Isaías 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/38
+  type: bible
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

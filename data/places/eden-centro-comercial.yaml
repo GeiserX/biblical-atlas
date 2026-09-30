@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eden-centro-comercial
+name: Edén
+names:
+- name: Edén
+  note: El de Is 37:12, 2Re 19:12 y Ez 27:23 (Perspicacia «Edén», núm. 2); no es la región del jardín, que es eden.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Bit-Adini, entre el Éufrates y el Balij
+  geometry:
+    type: zone
+    lat: 36.7014
+    lon: 38.0865
+    radius_km: 60
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-eden
+  - it-bet-eden
+  - openbible-geo
+  reason: 'Perspicacia «Edén», núm. 2: se la cree una forma corta de Bet-Edén, y algunos la ponen en el distrito de Bit-Adini,
+    en el curso medio del Éufrates.'
+  note: OpenBible trata Edén 2 como otro nombre de Bet-Edén y le da su punto. El radio de 60 km es nuestro, como en bet-eden.
+  coord_source: openbible:a7409b9
+  coord_url: https://www.openbible.info/geo/ancient/a7409b9/eden-2
+summary: Centro comercial que vendía a Tiro ropa de lujo, alfombras y sogas. Su gente, que vivía en Tel-Asar, estaba entre
+  los pueblos vencidos por Asiria según Senaquerib.
+reason: Perspicacia «Edén», núm. 2, y «Bet-edén», último párr.; Is 37:12; 2Re 19:12; Ez 27:23.
+not_claimed:
+- 'Que sea Bet-Edén (Am 1:5): Perspicacia lo cree o lo ve posible, pero no lo afirma, así que van en dos fichas.'
+sources:
+- it-eden
+- it-bet-eden
+- openbible-geo
+- isaias-37
+links:
+- title: 'Perspicacia: «Edén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
+  type: perspicacia
+- title: 'Perspicacia: «Bet-edén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000681
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified
