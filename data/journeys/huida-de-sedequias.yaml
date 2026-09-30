@@ -1,0 +1,136 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-sedequias
+name: Huida de Sedequías
+person: sedequias
+reference: 2Re 25:1-7; Jer 39:2-7; 52:6-11
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+companions: []
+summary: Abierta la brecha en la muralla, Sedequías huye de noche por el camino del Arabá. Los caldeos lo alcanzan junto a
+  Jericó y lo llevan a Riblá, donde matan a sus hijos, lo ciegan y lo envían a Babilonia.
+reason: 2Re 25:1-7, Jer 39:2-7 y 52:6-11 dan las paradas. Fechas de los sucesos sedequias-huye-y-lo-capturan-cerca-de-jerico
+  y nabucodonosor-juzga-a-sedequias-en-ribla, 607 a.e.c.
+sources:
+- 2-reyes-25
+- jeremias-39
+- jeremias-52
+- it-sedequias
+- it-araba
+- it-ribla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 25:1-4; Jer 39:2-4
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+    detail:
+      month: tamuz
+      day: 9
+  note: Escapa de noche por una puerta entre los dos muros, cerca del jardín real.
+  reason: '2Re 25:3, 4 y Jer 39:2: el día 9 del cuarto mes se abre la brecha y huye. Suceso sedequias-huye-y-lo-capturan-cerca-de-jerico.'
+  sources:
+  - 2-reyes-25
+  - jeremias-39
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: araba
+  reference: 2Re 25:4; Jer 39:4; 52:7
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+    detail:
+      month: tamuz
+      day: 9
+  note: Toma el camino del Arabá.
+  reason: '2Re 25:4: se va por el camino del Arabá. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-25
+  - jeremias-39
+  - jeremias-52
+  - it-araba
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: llanuras-deserticas-de-jerico
+  reference: 2Re 25:5; Jer 39:5; 52:8
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+    detail:
+      month: tamuz
+      day: 9
+  note: Sus soldados se dispersan.
+  reason: '2Re 25:5: el ejército caldeo lo alcanza en las llanuras desérticas de Jericó. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-25
+  - jeremias-39
+  - jeremias-52
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: ribla
+  reference: 2Re 25:6, 7; Jer 39:5-7; 52:9-11
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Allí matan a sus hijos ante él y luego lo ciegan.
+  reason: '2Re 25:6, 7: lo llevan ante Nabucodonosor en Riblá, que lo juzga. Suceso nabucodonosor-juzga-a-sedequias-en-ribla.'
+  sources:
+  - 2-reyes-25
+  - jeremias-39
+  - jeremias-52
+  - it-ribla
+  - it-sedequias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: babilonia
+  reference: 2Re 25:7; Jer 52:11
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  note: Preso hasta su muerte.
+  reason: '2Re 25:7 y Jer 52:11: lo llevan encadenado a Babilonia y lo tienen preso hasta morir. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-25
+  - jeremias-52
+  - it-sedequias
+  checked_on: '2026-09-30'
+  status: verified

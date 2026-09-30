@@ -1,0 +1,86 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jehoacaz-llevado-a-egipto
+name: Jehoacaz, llevado a Egipto
+person: jehoacaz-de-juda
+reference: 2Re 23:31-34; 2Cr 36:1-4; Jer 22:10-12
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628 a.e.c.
+companions: []
+summary: A los tres meses de reinar en Jerusalén, Jehoacaz queda preso de Nekó en Riblá. El faraón se lo lleva a Egipto, y
+  allí muere sin volver a ver su tierra, como dijo Jeremías.
+reason: 2Re 23:31-34 y 2Cr 36:1-4 dan Jerusalén, Riblá y Egipto; Jer 22:10-12 lo llama Salum. Fecha del suceso neko-destrona-a-jehoacaz,
+  628 a.e.c.
+sources:
+- 2-reyes-23
+- 2-cronicas-36
+- jeremias-22
+- it-jehoacaz
+- it-ribla
+- it-neko
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 23:31; 2Cr 36:2, 3
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Reina tres meses.
+  reason: '2Re 23:31: reina tres meses en Jerusalén. Suceso neko-destrona-a-jehoacaz.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-36
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ribla
+  reference: 2Re 23:33
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: En la tierra de Hamat.
+  reason: '2Re 23:33: Nekó lo encarcela en Riblá. Suceso neko-destrona-a-jehoacaz.'
+  sources:
+  - 2-reyes-23
+  - it-ribla
+  - it-jehoacaz
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: egipto
+  reference: 2Re 23:34; 2Cr 36:4; Jer 22:11, 12
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Muere allí.
+  reason: '2Re 23:34 y Jer 22:11, 12: se lo llevan a Egipto y muere en el destierro. Suceso neko-destrona-a-jehoacaz.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-36
+  - jeremias-22
+  - it-jehoacaz
+  checked_on: '2026-09-30'
+  status: verified

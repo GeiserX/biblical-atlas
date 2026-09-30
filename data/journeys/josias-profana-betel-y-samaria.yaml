@@ -1,0 +1,100 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: josias-profana-betel-y-samaria
+name: Josías profana Betel y las ciudades de Samaria
+person: josias
+reference: 2Re 23:4-20
+date:
+  from: -641
+  to: -641
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 642 a.e.c.
+companions: []
+summary: Tras limpiar Jerusalén de ídolos, Josías derriba el altar de Betel y quema en él huesos de las tumbas, salvo los
+  del hombre de Dios de Judá. Hace lo mismo en las ciudades de Samaria y vuelve.
+reason: '2Re 23:4-20 da el orden: Jerusalén, Betel, las ciudades de Samaria y la vuelta. Sus sucesos van fechados en c. 642
+  a.e.c.'
+sources:
+- 2-reyes-23
+- it-josias
+- it-betel
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josias
+  order: 1
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Re 23:4-14
+  date:
+    from: -641
+    to: -641
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 642 a.e.c.
+  note: Salida.
+  reason: '2Re 23:4-14: limpia el templo y los alrededores de Jerusalén. Suceso josias-limpia-juda-de-idolatria.'
+  sources:
+  - 2-reyes-23
+  - it-josias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: 2Re 23:15-18
+  date:
+    from: -641
+    to: -641
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 642 a.e.c.
+  note: Respeta la tumba del profeta de Judá, junto al que vino de Samaria.
+  reason: '2Re 23:15-18: derriba y quema el altar de Betel. Suceso josias-profana-el-altar-de-betel.'
+  sources:
+  - 2-reyes-23
+  - it-betel
+  - it-josias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: israel
+  reference: 2Re 23:19, 20
+  date:
+    from: -641
+    to: -641
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 642 a.e.c.
+  note: Las ciudades de Samaria, sin nombres; el suceso usa también israel.
+  reason: '2Re 23:19, 20: quita los lugares altos de las ciudades de Samaria. Suceso josias-quita-los-lugares-altos-de-samaria.'
+  sources:
+  - 2-reyes-23
+  - it-josias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerusalen
+  reference: 2Re 23:20
+  date:
+    from: -641
+    to: -641
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 642 a.e.c.
+  note: null
+  reason: '2Re 23:20: después regresa a Jerusalén. Mismo suceso ancla, que la incluye.'
+  sources:
+  - 2-reyes-23
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: amos-a-betel
+name: Amós profetiza en Betel
+person: amos-profeta
+reference: Am 1:1; 7:10-17
+date:
+  from: -828
+  to: -803
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 829-804 a.e.c.
+companions: []
+summary: Jehová saca a Amós de sus rebaños en Tecoa, en Judá, y lo manda a profetizar a Israel. En Betel, el sacerdote Amasías
+  lo acusa ante Jeroboán II y le ordena irse a Judá.
+reason: Am 1:1 y 7:10-17 dan Tecoa y Betel. Fechas de los sucesos amos-profetiza-contra-israel (c. 829-804 a.e.c., estudio
+  3) y amasias-intenta-echar-a-amos-de-betel.
+sources:
+- amos-1
+- amos-7
+- it-amos
+- it-betel
+- it-teqoa
+- si-amos
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: tecoa
+  reference: Am 1:1; 7:14, 15
+  date:
+    from: -828
+    to: -803
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 829-804 a.e.c.
+  note: Criador de ovejas y cuidador de sicómoros cuando Jehová lo llama.
+  reason: Am 1:1 lo hace pastor de Tecoa y Am 7:14, 15 cuenta que Jehová lo llamó cuidando el rebaño. Suceso amos-profetiza-contra-israel.
+  sources:
+  - amos-1
+  - amos-7
+  - it-amos
+  - it-teqoa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: betel
+  reference: Am 7:10-17
+  date:
+    from: -828
+    to: -803
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 829 y 804 a.e.c. (tiempo narrativo: mientras Amós profetizaba, con Jeroboán II en el trono)'
+  note: El texto no cuenta la vuelta a Judá.
+  reason: 'Am 7:10-13: Amasías, sacerdote de Betel, lo denuncia y le manda huir. Suceso amasias-intenta-echar-a-amos-de-betel.'
+  sources:
+  - amos-7
+  - it-betel
+  - it-amos
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: adramelec-y-sarezer-huyen-a-ararat
+name: Adramélec y Sarézer huyen a Ararat
+person: adramelec-hijo-de-senaquerib
+reference: 2Re 19:37; Is 37:38
+date:
+  from: -731
+  to: -683
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara Tebas)'
+companions:
+- sarezer-hijo-de-senaquerib
+summary: Adramélec y Sarézer matan a espada a su padre Senaquerib mientras él se inclina ante Nisroc en Nínive, y escapan
+  a la tierra de Ararat. Esar-Hadón reina en su lugar.
+reason: 2Re 19:37 e Is 37:38 dan Nínive y Ararat. Fecha del suceso muerte-de-senaquerib, entre la vuelta a Nínive (732) y
+  la toma de Tebas por Asurbanipal.
+sources:
+- 2-reyes-19
+- isaias-37
+- it-adramelec
+- it-sarezer
+- it-ararat
+- it-senaquerib
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ninive
+  reference: 2Re 19:37; Is 37:38
+  date:
+    from: -731
+    to: -683
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara
+      Tebas)'
+  note: En el templo de su dios Nisroc.
+  reason: '2Re 19:36, 37: el crimen ocurre en Nínive, donde el rey se había quedado. Suceso muerte-de-senaquerib.'
+  sources:
+  - 2-reyes-19
+  - isaias-37
+  - it-adramelec
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ararat
+  reference: 2Re 19:37; Is 37:38
+  date:
+    from: -731
+    to: -683
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara
+      Tebas)'
+  note: null
+  reason: '2Re 19:37: los dos huyen a la tierra de Ararat. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-19
+  - isaias-37
+  - it-ararat
+  - it-sarezer
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: hazael-contra-gat-y-jerusalen
+name: Hazael contra Gat y Jerusalén
+person: hazael
+reference: 2Re 12:17, 18; 2Cr 24:23, 24
+date:
+  from: -875
+  to: -857
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 876 y 858 a.e.c. (tiempo narrativo: poco después del año 23 de Jehoás y antes de su muerte)'
+companions: []
+summary: Hazael, rey de Siria, conquista Gat y se dispone a subir contra Jerusalén. Jehoás de Judá le envía las ofrendas santas
+  y el oro del templo y del palacio, y el sirio se retira.
+reason: 2Re 12:17, 18 da Gat y luego Jerusalén; 2Cr 24:23, 24 cuenta la invasión de Judá. Fecha del suceso hazael-toma-gat-y-jehoas-le-entrega-el-oro-del-templo.
+sources:
+- 2-reyes-12
+- 2-cronicas-24
+- it-hazael
+- it-gat
+- it-jehoas
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: gat
+  reference: 2Re 12:17
+  date:
+    from: -875
+    to: -857
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 876 y 858 a.e.c. (tiempo narrativo: poco después del año 23 de Jehoás y antes de su muerte)'
+  note: null
+  reason: '2Re 12:17: sube, pelea contra Gat y la toma. Suceso hazael-toma-gat-y-jehoas-le-entrega-el-oro-del-templo.'
+  sources:
+  - 2-reyes-12
+  - it-gat
+  - it-hazael
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 2Re 12:17, 18; 2Cr 24:23, 24
+  date:
+    from: -875
+    to: -857
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 876 y 858 a.e.c. (tiempo narrativo: poco después del año 23 de Jehoás y antes de su muerte)'
+  note: 2Cr 24:23 dice que el botín fue enviado al rey en Damasco.
+  reason: '2Re 12:17, 18: decide atacar Jerusalén y se retira de ella al recibir el tesoro. Mismo suceso ancla.'
+  sources:
+  - 2-reyes-12
+  - 2-cronicas-24
+  - it-jehoas
+  checked_on: '2026-09-30'
+  status: verified

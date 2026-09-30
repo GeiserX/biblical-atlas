@@ -1,0 +1,109 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jehu-marcha-sobre-jezreel-y-samaria
+name: Jehú marcha sobre Jezreel y Samaria
+person: jehu-de-israel
+reference: 2Re 9:1-10:28
+date:
+  from: -904
+  to: -904
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905 a.e.c.
+companions: []
+summary: Ungido en Ramot-Galaad, Jehú corre a Jezreel y mata a Jehoram, a Jezabel y a la casa de Acab. Camino de Samaria mata
+  a los hermanos de Ocozías y recoge a Jehonadab; allí extermina a los adoradores de Baal.
+reason: 2Re 9 y 10 cuentan la marcha en este orden. Todos sus sucesos van fechados en c. 905 a.e.c. (estudio 3; tabla A6-A).
+sources:
+- 2-reyes-9
+- 2-reyes-10
+- it-jehu
+- it-jehonadab
+- it-casa-para-atar-de-los-pastores
+- si-3
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ramot-galaad
+  reference: 2Re 9:1-14
+  date:
+    from: -904
+    to: -904
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905 a.e.c.
+  note: Un hijo de los profetas enviado por Eliseo lo unge en un cuarto apartado.
+  reason: '2Re 9:1-14: lo ungen rey en Ramot-Galaad y los jefes lo aclaman. Suceso jehu-es-ungido-rey-en-ramot-galaad, c.
+    905.'
+  sources:
+  - 2-reyes-9
+  - it-jehu
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jezreel
+  reference: 2Re 9:16-10:11
+  date:
+    from: -904
+    to: -904
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905 a.e.c.
+  note: Su oficial Bidcar va con él en el carro (2Re 9:25). Allí recibe las cabezas de los 70 hijos de Acab.
+  reason: '2Re 9:16-37 y 10:1-11: en Jezreel mata a Jehoram y a Jezabel y acaba con la casa de Acab. Sucesos jehu-mata-a-jehoram-en-el-terreno-de-nabot
+    y muerte-de-jezabel.'
+  sources:
+  - 2-reyes-9
+  - 2-reyes-10
+  - it-jehu
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: casa-para-atar-de-los-pastores
+  reference: 2Re 10:12-14
+  date:
+    from: -904
+    to: -904
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905 a.e.c.
+  note: Mata junto a su cisterna a 42 hermanos de Ocozías.
+  reason: '2Re 10:12-14: el lugar está en el camino a Samaria. Suceso jehu-mata-a-los-hermanos-de-ocozias.'
+  sources:
+  - 2-reyes-10
+  - it-casa-para-atar-de-los-pastores
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: samaria
+  reference: 2Re 10:15-28
+  date:
+    from: -904
+    to: -904
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905 a.e.c.
+  note: Jehonadab hijo de Recab sube a su carro al salir de la casa para atar (2Re 10:15, 16).
+  reason: '2Re 10:17-28: llega a Samaria, acaba con lo que quedaba de Acab y con los adoradores de Baal. Sucesos jehonadab-se-une-a-jehu
+    y jehu-acaba-con-los-adoradores-de-baal.'
+  sources:
+  - 2-reyes-10
+  - it-jehu
+  - it-jehonadab
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

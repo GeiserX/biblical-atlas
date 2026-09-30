@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-simeonitas-van-a-guedor
+name: Los simeonitas van a Guedor
+person: mesobab
+reference: 1Cr 4:34-41
+date:
+  from: -745
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
+companions: []
+summary: En días de Ezequías, Mesobab y otros doce jefes de Simeón con familias numerosas buscan pastos. Junto a Guedor, al
+  este del valle, hallan tierra buena y tranquila, acaban con camitas y meunim y se quedan allí.
+reason: '1Cr 4:34-41; Perspicacia «Mesobab». No hay suceso en data/events: fecha por el reinado de Ezequías (tabla A6-B),
+  que nombra el texto (1Cr 4:41).'
+sources:
+- 1-cronicas-4
+- it-mesobab
+- it-guedor
+- it-ezequias
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: pending
+stops:
+- order: 1
+  place: simeon
+  reference: 1Cr 4:28-33
+  date:
+    from: -745
+    to: -715
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
+  note: Sus ciudades, de Beer-Seba a Asán, con sus poblados.
+  reason: '1Cr 4:28-33 da las ciudades donde vivían antes de salir. Sin suceso: fecha por el reinado de Ezequías.'
+  sources:
+  - 1-cronicas-4
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: guedor-de-simeon
+  reference: 1Cr 4:39-41
+  date:
+    from: -745
+    to: -715
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 746 y 716 a.e.c. (tiempo narrativo: en los días de Ezequías)'
+  note: La Septuaginta lee Guerar. No es la Guedor de la montaña de Judá. Los otros jefes van sin ficha.
+  reason: '1Cr 4:39-41: llegan a la entrada de Guedor y se establecen allí; Perspicacia «Guedor», núm. 5. Sin suceso: fecha
+    por el reinado de Ezequías.'
+  sources:
+  - 1-cronicas-4
+  - it-guedor
+  - it-mesobab
+  - it-ezequias
+  checked_on: '2026-09-30'
+  status: pending

@@ -1,0 +1,102 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: destierro-de-beera
+name: Destierro de Beerá
+person: beera-hijo-de-baal
+reference: 1Cr 5:6, 26; 2Re 15:29
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+companions: []
+summary: Beerá, jefe de los rubenitas, es uno de los que Tiglat-Piléser III destierra con los rubenitas, los gaditas y la
+  mitad de Manasés. El texto nombra Halá, Habor, Hará y el río Gozán como destinos.
+reason: 1Cr 5:6 y 5:26; Perspicacia «Beerah» sitúa el destierro al parecer bajo Pécah. Fecha del suceso tiglat-pileser-deporta-al-norte-de-israel.
+sources:
+- 1-cronicas-5
+- 2-reyes-15
+- it-beerah
+- it-pul
+- it-halah
+- it-habor
+- it-gozan
+- it-tiglat-pileser
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: pending
+stops:
+- order: 1
+  place: ruben
+  reference: 1Cr 5:3-10
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: Los rubenitas vivían de Aroer a Nebo y hacia el Éufrates.
+  reason: 1Cr 5:6 lo hace jefe de los rubenitas; que saliera del territorio de Rubén se deduce. Suceso tiglat-pileser-deporta-al-norte-de-israel.
+  sources:
+  - 1-cronicas-5
+  - it-beerah
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: hala
+  reference: 1Cr 5:26
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: 'Destinos de todo el destierro, no una ruta: el texto no dice a cuál llegó Beerá.'
+  reason: 1Cr 5:26 nombra Halá como destino de las tribus del este. Mismo suceso ancla.
+  sources:
+  - 1-cronicas-5
+  - it-halah
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: habor
+  reference: 1Cr 5:26
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: Hará, que el texto nombra después, no tiene ubicación conocida.
+  reason: 1Cr 5:26 nombra Habor como destino de las tribus del este. Mismo suceso ancla.
+  sources:
+  - 1-cronicas-5
+  - it-habor
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: gozan
+  reference: 1Cr 5:26
+  date:
+    from: -761
+    to: -757
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+  note: El río Gozán.
+  reason: 1Cr 5:26 nombra el río Gozán como destino de las tribus del este. Mismo suceso ancla.
+  sources:
+  - 1-cronicas-5
+  - it-gozan
+  checked_on: '2026-09-30'
+  status: pending

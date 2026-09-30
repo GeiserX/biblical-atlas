@@ -1,0 +1,128 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: neko-sube-al-eufrates
+name: Nekó sube al Éufrates
+person: neko
+reference: 2Re 23:29-35; 2Cr 35:20-36:4
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628 a.e.c.
+companions: []
+summary: Nekó sube desde Egipto hacia el Éufrates para ayudar al rey de Asiria. En Meguidó mata a Josías; después encarcela
+  a Jehoacaz en Riblá, pone a Jehoiaquim en el trono y se lleva a Jehoacaz a Egipto.
+reason: 2Re 23:29-35 y 2Cr 35:20-36:4 dan las paradas. Fechas de los sucesos muerte-de-josias y neko-destrona-a-jehoacaz,
+  los dos de 628 a.e.c.
+sources:
+- 2-reyes-23
+- 2-cronicas-35
+- 2-cronicas-36
+- it-neko
+- it-carquemis
+- it-meguido
+- it-ribla
+- si-3
+- tnm-a6-b
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: egipto
+  reference: 2Re 23:29
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Salida.
+  reason: 2Re 23:29 lo llama rey de Egipto y 2Cr 35:20 dice que subió. Fecha del suceso muerte-de-josias.
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-35
+  - it-neko
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: meguido
+  reference: 2Re 23:29; 2Cr 35:22-24
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Antes de la batalla manda mensajeros a Josías.
+  reason: '2Re 23:29 y 2Cr 35:22: se enfrenta a Josías en Meguidó. Suceso muerte-de-josias.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-35
+  - it-meguido
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: carquemis
+  reference: 2Cr 35:20
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Junto al Éufrates. No es la batalla de 625 (suceso batalla-de-carquemis).
+  reason: 2Cr 35:20 da Carquemis como meta de la campaña, pero ni el texto ni Perspicacia «Carquemis» dicen que llegara. Parada
+    deducida.
+  sources:
+  - 2-cronicas-35
+  - it-carquemis
+  - it-neko
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: ribla
+  reference: 2Re 23:33
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: En la tierra de Hamat; allí encarcela a Jehoacaz.
+  reason: '2Re 23:33: mete en prisión a Jehoacaz en Riblá; Perspicacia «Nekó» lo pone unos tres meses después de Meguidó.
+    Suceso neko-destrona-a-jehoacaz.'
+  sources:
+  - 2-reyes-23
+  - it-ribla
+  - it-neko
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: egipto
+  reference: 2Re 23:34; 2Cr 36:4
+  date:
+    from: -627
+    to: -627
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628 a.e.c.
+  note: Se lleva preso a Jehoacaz.
+  reason: '2Re 23:34 y 2Cr 36:4: se lleva a Jehoacaz a Egipto. Suceso neko-destrona-a-jehoacaz.'
+  sources:
+  - 2-reyes-23
+  - 2-cronicas-36
+  - it-neko
+  checked_on: '2026-09-30'
+  status: verified

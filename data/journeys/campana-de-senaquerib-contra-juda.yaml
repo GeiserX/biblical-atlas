@@ -1,0 +1,117 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-senaquerib-contra-juda
+name: Campaña de Senaquerib contra Judá
+person: senaquerib
+reference: 2Re 18:13-19:37; 2Cr 32:1-22; Is 36:1-37:38
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+companions: []
+summary: En el año 14 de Ezequías, Senaquerib toma las ciudades fortificadas de Judá, cobra tributo desde Lakís y lucha contra
+  Libná mientras amenaza Jerusalén. Cuando el ángel mata a 185.000 de sus soldados, vuelve a Nínive.
+reason: 2 Reyes 18 y 19, 2 Crónicas 32 e Isaías 36 y 37 dan las paradas en orden. Todos sus sucesos van fechados en 732 a.e.c.
+  (estudio 3).
+sources:
+- 2-reyes-18
+- 2-reyes-19
+- 2-cronicas-32
+- isaias-36
+- isaias-37
+- it-senaquerib
+- it-lakis
+- it-libna
+- it-ninive
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: juda
+  reference: 2Re 18:13; 2Cr 32:1; Is 36:1
+  date:
+    from: -731
+    to: -731
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 732 a.e.c.
+  note: El texto no nombra las ciudades fortificadas que toma.
+  reason: '2Re 18:13 y 2Cr 32:1: sube contra las ciudades fortificadas de Judá. Suceso ezequias-paga-tributo-a-senaquerib,
+    732.'
+  sources:
+  - 2-reyes-18
+  - 2-cronicas-32
+  - isaias-36
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: lakis
+  reference: 2Re 18:14-17; 2Cr 32:9; Is 36:2
+  date:
+    from: -731
+    to: -731
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 732 a.e.c.
+  note: Desde allí manda al tartán, al rabsarís y al rabsaqué a Jerusalén.
+  reason: 2Re 18:14, 17 y 2Cr 32:9 lo sitúan en Lakís. Sucesos ezequias-paga-tributo-a-senaquerib y el-rabsaque-desafia-a-jerusalen,
+    732.
+  sources:
+  - 2-reyes-18
+  - 2-cronicas-32
+  - isaias-36
+  - it-lakis
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: libna
+  reference: 2Re 19:8-13; Is 37:8-13
+  date:
+    from: -731
+    to: -731
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 732 a.e.c.
+  note: Se entera de que Tirhacá de Etiopía sale contra él y escribe de nuevo a Ezequías.
+  reason: '2Re 19:8: se ha ido de Lakís y pelea contra Libná. Suceso senaquerib-envia-cartas-a-ezequias, 732.'
+  sources:
+  - 2-reyes-19
+  - isaias-37
+  - it-libna
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: ninive
+  reference: 2Re 19:36; 2Cr 32:21; Is 37:37
+  date:
+    from: -731
+    to: -731
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 732 a.e.c.
+  note: Vuelve humillado y se queda allí.
+  reason: '2Re 19:36: tras la muerte de 185.000 asirios regresa a Nínive. Suceso el-angel-de-jehova-mata-a-185000-asirios,
+    732.'
+  sources:
+  - 2-reyes-19
+  - 2-cronicas-32
+  - isaias-37
+  - it-ninive
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
