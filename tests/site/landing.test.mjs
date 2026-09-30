@@ -138,6 +138,20 @@ test('the box answers with the shape, the type word and the date of each result'
   assert.equal((await rows(page))[0].tit, 'Jerusalén en 33 e.c.');
 });
 
+test('a book row shows one date, and choosing it lands on that date', async () => {
+  for (const [q, fecha, anio] of [['Romanos', 'c. 56 e.c.', 56], ['éxodo', '1657 a.e.c. - 1512 a.e.c.', -1656], ['Hechos', 'c. 33-61 e.c.', 33]]) {
+    const page = await openPage();
+    await type(page, q);
+    const r = (await rows(page))[0];
+    assert.equal(r.forma, '#f-texto', q);
+    assert.equal(r.fecha, fecha, `${q}: pill ${r.fecha}`);
+    assert.doesNotMatch(r.meta, /e\.c\./, `${q}: the line repeats a date: ${r.meta}`);
+    await page.keyboard.press('Enter');
+    await page.waitForFunction(() => window.BE.E.sel?.tipo === 'libro');
+    assert.equal(Math.floor((await state(page)).t), anio, q);
+  }
+});
+
 test('the keyboard: arrows move, Escape closes the list and then clears the box, and neither enters the map', async () => {
   const page = await openPage();
   await type(page, 'Pablo');

@@ -270,7 +270,7 @@ function objetoSel(sel) {
 }
 function fechaSel(sel) {
   const o = objetoSel(sel);
-  const f = o?.fecha || o?.fecha_objeto;
+  const f = sel.tipo === 'libro' ? BE.fechaLibro?.(o) : o?.fecha || o?.fecha_objeto;
   if (f && (f.desde != null || f.hasta != null)) return fechaCorta(f);
   if (sel.tipo === 'recorrido' && o?.paradas?.length) { const ts = o.paradas.map((p) => Math.floor(p.t)); return fechaCorta({ desde: Math.min(...ts), hasta: Math.max(...ts) }); }
   return '';

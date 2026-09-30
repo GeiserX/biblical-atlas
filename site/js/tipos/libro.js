@@ -78,10 +78,13 @@ function fichaLibro(id) {
     ${tieneHechos(lib) ? BE.porQueHtml(lib) : ''}`;
 }
 
-/** Momento de un libro: el principio de lo que abarca; si no, lo primero que cuenta. */
+/** La fecha de un libro en las listas y al elegirlo, una sola: lo que abarca y, si no se sabe, cuándo se terminó. */
+const fechaLibro = (lib) => (lib && tramo(lib.abarca) ? lib.abarca : lib?.fecha) || null;
+/** Momento de un libro: el principio de su fecha (fechaLibro); si no tiene, lo primero que cuenta. Romanos, que no
+    abarca un tramo, va a cuando se escribió (c. 56 e.c.) y no al primer nombre que cita (Adán). */
 function momentoLibro(id) {
   const lib = libroPorSlug(id);
-  const tr = lib && tramo(lib.abarca);
+  const tr = tramo(fechaLibro(lib));
   if (tr) return tr[0] + 0.01;
   const r = { claves: new Set(), lugares: new Set() };
   implicadosLibro(id, r);
@@ -102,7 +105,8 @@ BE.tipo('libro', {
     for (const l of BE.LIBROS || []) {
       if (!l.slug) continue;
       const pp = puntuar([l.nombre, l.abr]);
-      if (pp >= 60) out.push({ grupo: 'Libros', sel: { tipo: 'libro', id: l.slug }, titulo: l.nombre, meta: [l.capitulos ? `${l.capitulos} capítulos` : '', l.escritor ? `escribió ${l.escritor}` : '', l.fecha ? fechaCorta(l.fecha) : ''].filter(Boolean).join(' · '), puntos: pp });
+      // La fecha va aparte (fechaSel, con fechaLibro): la misma a la que lleva elegirlo.
+      if (pp >= 60) out.push({ grupo: 'Libros', sel: { tipo: 'libro', id: l.slug }, titulo: l.nombre, meta: [l.capitulos ? `${l.capitulos} capítulos` : '', l.escritor ? `escribió ${l.escritor}` : ''].filter(Boolean).join(' · '), puntos: pp });
     }
     return out;
   },
@@ -124,5 +128,5 @@ function verTramo(a, z) {
   BE.programar();
 }
 
-Object.assign(BE, { libroPorSlug, capitulosConDatos, hechosLibroHtml, verTramo, citaDelLibro });
+Object.assign(BE, { libroPorSlug, fechaLibro, capitulosConDatos, hechosLibroHtml, verTramo, citaDelLibro });
 })();
