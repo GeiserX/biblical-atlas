@@ -563,7 +563,7 @@ function iniciarMarcos() {
   const alto = $('#linea-alto');
   if (alto) {
     arrastrarMarco(alto, 'linea');
-    alto.addEventListener('click', () => BE.ponerGrande?.(!BE.lineaEstado?.grande));
+    alto.addEventListener('click', () => BE.alternarGrande?.());
     alto.addEventListener('keydown', (e) => teclaMarco(e, 'linea', false));
   }
   const recalcular = () => { for (const k of Object.keys(MARCOS)) aplicarMarco(k); };

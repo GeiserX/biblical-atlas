@@ -530,6 +530,25 @@ test('1440: the sincronía lies above the strip: its place picker takes the clic
   }
 });
 
+test('1440: with the graph open, T and the menu change what the strip shows, both ways', async () => {
+  const p = await open(DESKTOP, 't=50.5&v=8&sel=persona:pablo&grafo=pablo');
+  const h = () => p.evaluate(() => document.querySelector('#linea').offsetHeight);
+  await p.evaluate(() => document.activeElement?.blur());
+  const h0 = await h();
+  await p.keyboard.press('t'); await frames(p, 4);
+  const h1 = await h();
+  await p.keyboard.press('t'); await frames(p, 4);
+  const h2 = await h();
+  await p.evaluate(() => document.querySelector('#linea-menu-boton, [data-linea="menu"]')?.click());
+  await frames(p);
+  const label = await p.evaluate(() => document.querySelector('#linea-menu [data-linea="grande"]')?.textContent.trim() || null);
+  note(`1440 graph open: strip ${h0} px, T → ${h1} px, T → ${h2} px; menu says «${label}»`);
+  assert.ok(h1 > h0 + 100, `T did not raise the strip (${h0} → ${h1})`);
+  assert.equal(h2, h0);
+  if (label) assert.match(label, /^Ampliar/);
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

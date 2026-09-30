@@ -28,6 +28,7 @@ const L = {
   regla: null,            // [a, b] medidos con la regla (T-15)
   bucle: null,            // [a, b] que la reproducción repite (T-12)
   grande: false,          // línea alta (tecla T); en la pantalla ancha es como abre
+  pedida: false,          // alta pedida con la T, el botón o el menú: gana también al grafo abierto
   modoRegla: false,
   meses: null,            // «ambos», «nuestros» o «hebreos»; null: lo de siempre, ambos
   vel: null,              // velocidad elegida a mano: índice de VELOCIDADES; null: según la escala
@@ -1358,13 +1359,21 @@ function encuadrarTiempo(a, b, ocupa = 1 / 1.08) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
-function ponerGrande(on) {
+/** Con el grafo o la conexión encima del mapa, la línea alta de inicio les deja su sitio (linea.css); pedida con la T,
+    el botón o el menú, se ve alta también con ellos. */
+const grafoEncima = () => !!document.querySelector('.mapa > :is(.vista-grafo, .vista-conexion):not([hidden])');
+const grandeVista = () => L.grande && (L.pedida || !grafoEncima());
+function ponerGrande(on, pedida = false) {
   L.grande = on;
+  L.pedida = on && pedida;
   $('#app').classList.toggle('linea-grande', on);
+  $('#app').classList.toggle('linea-pedida', L.pedida);
   const b = $('[data-linea="grande"]');
-  if (b) b.setAttribute('aria-pressed', String(on));
+  if (b) b.setAttribute('aria-pressed', String(grandeVista()));
   BE.guardarHash();
 }
+/** La tecla T, el botón de alto y el menú cambian lo que se ve: alta si se ve normal, normal si se ve alta. */
+const alternarGrande = () => ponerGrande(!grandeVista(), true);
 function fijar(id) {
   const i = L.fijados.indexOf(id);
   if (i >= 0) L.fijados.splice(i, 1); else L.fijados.push(id);
@@ -1426,7 +1435,7 @@ function abrirMenu(seccion = 'todo') {
   const personas = personasConCarril().filter((p) => !L.fijados.includes(p.id) && p.id !== 'pablo');
   menuEl.innerHTML = `
     ${seccion === 'todo' ? `<div class="be-card__eyebrow">Línea de tiempo</div>
-    ${boton('grande', `${L.grande ? 'Reducir' : 'Ampliar'} la línea <kbd class="be-kbd">T</kbd>`)}
+    ${boton('grande', `${grandeVista() ? 'Reducir' : 'Ampliar'} la línea <kbd class="be-kbd">T</kbd>`)}
     ${BE.sincronia ? boton('sincronia', sinc ? 'Cerrar la sincronía' : '¿Quién había en un lugar? (sincronía)') : ''}
     <div class="menu-sub">Velocidad al reproducir</div>
     <div class="velocidad menu-velocidad${L.vel != null ? ' manual' : ''}" role="group" aria-label="Velocidad de reproducción">${botonesVelocidad()}</div>
@@ -1476,7 +1485,7 @@ function clicMenu(e) {
   if (que === 'vel-auto') { L.vel = b.checked ? null : VELOCIDADES.indexOf(velocidadAuto()); pintarVelocidad(); BE.guardarHash(); abrirMenu(menuAbierto()); return; }
   if (que === 'secular') { ponerSecular(b.checked); return; }
   cerrarMenu();
-  if (que === 'grande') ponerGrande(!L.grande);
+  if (que === 'grande') alternarGrande();
   else if (que === 'sincronia') BE.sincronia.alternar();
   else if (que === 'regla') { if (L.regla) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); } else { L.modoRegla = true; $('#pista').classList.add('modo-regla'); BE.avisar('Arrastra sobre la línea entre las dos fechas.'); } }
   else if (que === 'bucle') ponerBucle();
@@ -1730,7 +1739,7 @@ function montarBarra() {
   });
   document.addEventListener('keydown', (e) => {
     if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
-    if (e.key === 't' || e.key === 'T') { e.preventDefault(); ponerGrande(!L.grande); }
+    if (e.key === 't' || e.key === 'T') { e.preventDefault(); alternarGrande(); }
     if (e.key === 'Escape') { cerrarMenu(); if (L.modoRegla) { L.modoRegla = false; $('#pista').classList.remove('modo-regla'); } }
   });
 }
@@ -1981,7 +1990,7 @@ BE.parametros.push(
 );
 
 Object.assign(BE, {
-  pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
+  pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, alternarGrande, colorPotencia, fmtMes,
   lineaEstado: L, SPAN_MIN,
 });
 })();
