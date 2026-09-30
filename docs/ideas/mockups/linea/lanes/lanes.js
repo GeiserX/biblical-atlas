@@ -715,7 +715,7 @@
         : S.expanded.has(L.lane.id) ? `<button type="button" class="head-btn" data-collapse="${L.lane.id}">Recoger</button>` : '';
       heads.push(`<div class="head" style="top:${L.top}px;height:${L.h}px"><div class="head-name"><span class="head-sw" style="--c:${color}"></span>${esc(L.lane.name)}</div><div class="head-info">${info}</div>${btn}</div>`);
       deco.push(`<div class="lane-sep" style="top:${L.top}px"></div>`);
-      if (L.band) deco.push(`<div class="band" style="top:${L.top}px"><span>${esc(L.lane.name)}</span><span class="band-info">${info}</span></div>`);
+      if (L.band) deco.push(`<div class="band" style="top:${L.top}px"><span>${esc(L.lane.name)}</span><span class="band-info">${info}</span>${!L.grouped && S.expanded.has(L.lane.id) ? `<button type="button" class="band-btn" data-collapse="${L.lane.id}">Recoger</button>` : ''}</div>`);
       for (const it of L.items) {
         const top = L.top + L.band + 4 + it.row * f.row;
         clips.push(clipHTML(it, top, color));
@@ -943,7 +943,7 @@
   function setupTrack() {
     const lanesEl = $('#lanes'), track = $('#track');
     lanesEl.addEventListener('pointerdown', (e) => {
-      if (e.target.closest('.head')) return;
+      if (e.target.closest('.head, .band-btn')) return;
       if (e.pointerType === 'mouse' && e.button !== 0) return;
       pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       if (pointers.size === 1) drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, a0: S.a, moved: false, type: e.pointerType };
@@ -993,6 +993,7 @@
     lanesEl.addEventListener('pointercancel', end);
     track.addEventListener('click', (e) => {
       if (suppressClick) { suppressClick = false; return; }
+      if (e.target.closest('.band-btn')) { onExpandClick(e); return; }
       const el = e.target.closest('.clip');
       if (!el) { if (e.detail > 0) deselect(); return; }
       const px = e.detail > 0 ? trackX(e) : null;
@@ -1136,6 +1137,11 @@
       else if (clear) deselect();
       else if (ex) { S.expanded.add(ex.dataset.expand); schedule(); }
       else if (back) selectBundle(back.dataset.back.split('|'), back.dataset.lane, undefined);
+      // La ficha se pinta de nuevo y el botón pulsado ya no existe: el foco va a algo que sigue ahí.
+      if (!document.activeElement || document.activeElement === document.body) {
+        const to = back ? $('#card-list button') : pick ? $('#inspector .card-title') : clear ? $('#track .clip[tabindex="0"]') : null;
+        if (to) { if (pick) to.tabIndex = -1; to.focus({ preventScroll: true }); }
+      }
     });
     document.addEventListener('keydown', (e) => {
       if (e.target.closest && e.target.closest('input, textarea, select')) return;

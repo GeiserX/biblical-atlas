@@ -234,6 +234,8 @@ a { color: var(--link); }
 .touch .band { display: flex; position: absolute; left: 0; right: 0; height: 24px; align-items: center; gap: 6px; padding: 0 10px; background: var(--surface-2);
   border-top: 1px solid var(--line); font-size: var(--fs-xs); font-weight: 700; color: var(--ink); pointer-events: none; }
 .touch .band .band-info { font-weight: 500; color: var(--ink-3); }
+.touch .band .band-btn { pointer-events: auto; margin-left: auto; min-height: 22px; padding: 0 10px; border-radius: var(--r-sm); border: 1px solid var(--line-2);
+  background: var(--surface); color: var(--ink-2); font: inherit; font-weight: 600; }
 .touch .tb-btn { min-height: 44px; }
 .touch .tb-icon { min-width: 44px; }
 .touch .top-links a { min-height: 44px; }
