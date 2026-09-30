@@ -142,6 +142,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 3-juan-1 | [3 Juan 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/64/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | abdias-1 | [Abdías 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/31/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | ageo-1 | [Ageo 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| ageo-2 | [Ageo 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | amos-1 | [Amós 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | amos-2 | [Amós 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | amos-3 | [Amós 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -462,6 +463,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-agag | [Agag](https://wol.jw.org/es/wol/d/r4/lp-s/1200000130) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-agar | [Agar](https://wol.jw.org/es/wol/d/r4/lp-s/1200001811) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-ageo | [Ageo](https://wol.jw.org/es/wol/d/r4/lp-s/1200001812) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-ageo-libro | [Ageo, Libro de](https://wol.jw.org/es/wol/d/r4/lp-s/1200001813) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-agur | [Agur](https://wol.jw.org/es/wol/d/r4/lp-s/1200000137) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahava | [Ahavá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000143) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-ahiezer | [Ahiézer](https://wol.jw.org/es/wol/d/r4/lp-s/1200000151) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1306,6 +1308,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jehova-nisi | [Jehová-nisí](https://wol.jw.org/es/wol/d/r4/lp-s/1200002395) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jehova-salom | [Jehová-salom](https://wol.jw.org/es/wol/d/r4/lp-s/1200002398) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jehova-yire | [Jehová-yiré](https://wol.jw.org/es/wol/d/r4/lp-s/1200002394) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-jehozadaq | [Jehozadaq](https://wol.jw.org/es/wol/d/r4/lp-s/1200002400) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jehu | [Jehú](https://wol.jw.org/es/wol/d/r4/lp-s/1200002401) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-jehud | [Jehúd](https://wol.jw.org/es/wol/d/r4/lp-s/1200002404) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jemima | [Jemimá](https://wol.jw.org/es/wol/d/r4/lp-s/1200002411) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2701,6 +2704,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | si-3 | [Estudio número 3: Sucesos fechados en la corriente del tiempo](https://wol.jw.org/es/wol/d/r4/lp-s/1101990130) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-27 |
 | si-9 | [Estudio número 9: La arqueología y el registro inspirado](https://wol.jw.org/es/wol/d/r4/lp-s/1101990136) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-28 |
 | si-abdias | [Libro bíblico número 31: Abdías](https://wol.jw.org/es/wol/d/r4/lp-s/1101990092) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
+| si-ageo | [Libro bíblico número 37: Ageo](https://wol.jw.org/es/wol/d/r4/lp-s/1101990098) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-amos | [Libro bíblico número 30: Amós](https://wol.jw.org/es/wol/d/r4/lp-s/1101990091) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-cantar-de-los-cantares | [Libro bíblico número 22: El Cantar de los Cantares](https://wol.jw.org/es/wol/d/r4/lp-s/1101990083) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-eclesiastes | [Libro bíblico número 21: Eclesiastés](https://wol.jw.org/es/wol/d/r4/lp-s/1101990082) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
@@ -2753,6 +2757,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w06-salmos-libro-2 | [Puntos sobresalientes del libro segundo de los Salmos](https://wol.jw.org/es/wol/d/r4/lp-s/2006402) | La Atalaya (1 de junio de 2006) | 1 | 2006 | 2026-09-29 |
 | w06-salmos-libros-3-4 | [Puntos sobresalientes de los libros tercero y cuarto de los Salmos](https://wol.jw.org/es/wol/d/r4/lp-s/2006523) | La Atalaya (15 de julio de 2006) | 1 | 2006 | 2026-09-29 |
 | w07-abdias-jonas-y-miqueas | [Puntos sobresalientes de los libros de Abdías, Jonás y Miqueas](https://wol.jw.org/es/wol/d/r4/lp-s/2007803) | La Atalaya (1 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
+| w07-ageo-y-zacarias | [Puntos sobresalientes de los libros de Ageo y Zacarías](https://wol.jw.org/es/wol/d/r4/lp-s/2007882) | La Atalaya (1 de diciembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w07-joel-y-amos | [Puntos sobresalientes de los libros de Joel y Amós](https://wol.jw.org/es/wol/d/r4/lp-s/2007722) | La Atalaya (1 de octubre de 2007) | 1 | 2007 | 2026-09-29 |
 | w07-nahum-habacuc-y-sofonias | [Puntos sobresalientes de los libros de Nahúm, Habacuc y Sofonías](https://wol.jw.org/es/wol/d/r4/lp-s/2007842) | La Atalaya (15 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w08-escritura-cuneiforme | [La escritura cuneiforme y la Biblia](https://wol.jw.org/es/wol/d/r4/lp-s/2008924) | La Atalaya (15 de diciembre de 2008) | 1 | 2008 | 2026-09-28 |
