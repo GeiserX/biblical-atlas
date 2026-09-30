@@ -72,7 +72,7 @@ relations:
   sources:
   - 2-reyes-16
   - it-acaz
-  reason: 2Re 16:20 solo dice que lo enterraron en la Ciudad de David; el lugar de la muerte se deduce del entierro.
+  reason: 2Re 16:20 solo habla de su sepultura en la Ciudad de David; el lugar de la muerte se deduce del entierro.
   checked_on: '2026-09-30'
   status: verified
 - type: tie
