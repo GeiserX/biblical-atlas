@@ -77,10 +77,9 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: absalon
-  caption: jefe del ejército de
-  inverse_caption: su jefe del ejército
+  word: master
   inferred: false
   sources:
   - 2-samuel-17
@@ -88,10 +87,9 @@ relations:
   reason: '2Sa 17:25: Absalón pone a Amasá al frente del ejército en lugar de Joab.'
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: david
-  caption: jefe del ejército de
-  inverse_caption: su jefe del ejército
+  word: master
   inferred: false
   sources:
   - 2-samuel-19
