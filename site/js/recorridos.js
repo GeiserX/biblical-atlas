@@ -12,7 +12,14 @@ const busca = (id) => (BE.D.recorridos || []).find((r) => r.id === id);
 const CLAVE_PASO = 'biblical-atlas:recorrido:';
 const R = { id: null, paso: 0, pasoHash: null, respuestas: {}, play: 0, marcas: [] };
 const pasoDe = (id) => (R.id === id ? R.paso : (R.pasoHash ?? guardado(id)));
-function guardado(id) { try { return Math.max(0, +(localStorage.getItem(CLAVE_PASO + id) || 0)); } catch { return 0; } }
+// El paso guardado es un entero desde 0; un valor que no es un número (una copia estropeada) cuenta como el primero.
+// Quien lo usa lo recorta al número de paradas.
+function guardado(id) {
+  try {
+    const n = Number(localStorage.getItem(CLAVE_PASO + id));
+    return Number.isFinite(n) ? Math.max(0, Math.floor(n)) : 0;
+  } catch { return 0; }
+}
 function guardar() { try { localStorage.setItem(CLAVE_PASO + R.id, String(R.paso)); } catch { /* sin almacenamiento */ } }
 
 /** Texto de la fecha de una parada: la de su selección si la tiene; si no, el año de la parada. */
