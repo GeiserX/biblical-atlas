@@ -669,6 +669,27 @@ test('430: with «Letra grande» a name on several lines keeps its lines apart a
   await p.context().close();
 });
 
+test('1440: lanes alternate their background among the lanes shown, and every mark box lies inside its track', async () => {
+  const p = await open(DESKTOP, 't=50.5&v=8');
+  for (const [t, s] of [[50.5, 8], [50.5, 40], [-1512.5, 0.12], [-1512.5, 4125]]) {
+    await goTo(p, t, s);
+    const r = await p.evaluate(() => {
+      const lanes = [...document.querySelectorAll('#linea-filas .carril:not([hidden])')];
+      const same = [];
+      for (let i = 1; i < lanes.length; i++) if (getComputedStyle(lanes[i]).backgroundColor === getComputedStyle(lanes[i - 1]).backgroundColor) same.push(`${lanes[i - 1].dataset.carril}|${lanes[i].dataset.carril}`);
+      const out = [];
+      for (const b of document.querySelectorAll('#linea-filas .m')) {
+        const r = b.getBoundingClientRect(), pr = b.closest('.carril-pista').getBoundingClientRect();
+        if (r.left < pr.left - 0.5 || r.right > pr.right + 0.5) out.push(`${b.dataset.id} ${Math.round(r.left - pr.left)}..${Math.round(r.right - pr.left)}`);
+      }
+      return { same, out, n: lanes.length };
+    });
+    note(`1440 ${t}/${s}: ${r.n} lanes, ${r.same.length} neighbours with one background, ${r.out.length} mark boxes out of their track`);
+    assert.deepEqual(r.same, []); assert.deepEqual(r.out.slice(0, 5), []);
+  }
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

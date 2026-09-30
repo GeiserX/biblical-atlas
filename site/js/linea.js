@@ -579,7 +579,10 @@ function mascara(el, l, r) {
 function pintarMarca(it, top, selT, V) {
   const el = it.el || crearMarca(it);
   colorear(it);
-  const [h0, h1] = it._hit;
+  // La caja del botón se queda dentro de la pista, a 2 px del borde: así el anillo del foco se ve entero. El dibujo y el
+  // nombre van en su sitio de siempre, y lo que sale de la pista lo recorta la pista.
+  let h0 = Math.max(it._hit[0], 2), h1 = Math.min(it._hit[1], anchoLinea - 2);
+  if (h1 - h0 < 4) [h0, h1] = it._hit;
   el.style.left = `${h0}px`; el.style.width = `${h1 - h0}px`;
   el.style.top = `${top}px`; el.style.height = `${G.row}px`;
   if (it.barEl) {
