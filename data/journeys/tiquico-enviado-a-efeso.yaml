@@ -1,0 +1,62 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: tiquico-enviado-a-efeso
+name: Tíquico, enviado otra vez a Éfeso
+person: tiquico
+reference: 2Ti 4:12
+date:
+  from: 65
+  to: 65
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 65 e.c.
+narrative_order:
+  series: tiquico
+  order: 2
+companions: []
+summary: Preso en Roma por segunda vez, Pablo envía a Tíquico a Éfeso, probablemente para que ocupe el lugar de Timoteo y
+  este pueda ir a verlo.
+reason: Perspicacia «Tíquico» y la nota de estudio de 2Ti 4:12; suceso segundo-encierro-en-roma, c. 65.
+sources:
+- 2-timoteo-4
+- it-tiquico
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: roma
+  reference: 2Ti 4:12
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: null
+  reason: 'El texto no nombra la salida: Pablo, que lo envía, escribe desde Roma (regla 2b). Suceso segundo-encierro-en-roma.'
+  sources:
+  - 2-timoteo-4
+  - it-tiquico
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: efeso
+  reference: 2Ti 4:12
+  date:
+    from: 65
+    to: 65
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 65 e.c.
+  note: La nota de 2Ti 4:12 lo ve como sustituto de Timoteo.
+  reason: '2Ti 4:12: lo envié a Éfeso. Suceso segundo-encierro-en-roma, c. 65.'
+  sources:
+  - 2-timoteo-4
+  - it-tiquico
+  checked_on: '2026-09-30'
+  status: verified

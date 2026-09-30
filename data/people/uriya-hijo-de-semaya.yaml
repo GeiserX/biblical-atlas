@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uriya-hijo-de-semaya
+name: Uriya
+names:
+- name: Uriya
+perspicacia: 1200004523#2
+disambiguation: El profeta de Quiryat-Jearim, hijo de Semaya; no el sacerdote de Acaz ni el padre de Meremot.
+distinct_from:
+- uriya-sacerdote-de-acaz
+date:
+  from: -627
+  to: -617
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)'
+summary: Profeta de Quiryat-Jearim que anunció contra Judá lo mismo que Jeremías. Huyó a Egipto cuando Jehoiaquim quiso matarlo,
+  pero lo trajeron de vuelta y el rey lo ejecutó.
+reason: Perspicacia «Uriya», núm. 2; Jer 26:20-23. Años del reinado de Jehoiaquim según la tabla A6-B.
+sources:
+- it-uriya
+- jeremias-26
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Uriya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
+  type: perspicacia
+- title: Jeremías 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/26
+  type: bible
+relations:
+- type: holds_office
+  office: prophet
+  date:
+    from: -627
+    to: -617
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 628 y 618 a.e.c. (tiempo narrativo: reinado de Jehoiaquim)'
+  inferred: false
+  sources:
+  - jeremias-26
+  - it-uriya
+  reason: 'Jer 26:20: profetizaba en nombre de Jehová en los días de Jehoiaquim.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: quiryat-jearim
+  inferred: false
+  sources:
+  - jeremias-26
+  - it-uriya
+  reason: Jer 26:20 dice que era de Quiryat-Jearim.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

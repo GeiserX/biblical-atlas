@@ -1,0 +1,63 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-onesimo
+name: Onésimo huye de Colosas a Roma
+person: onesimo
+reference: Flm 10-16, 18; Col 4:9
+date:
+  from: 59
+  to: 61
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 59 y 61 e.c. (tiempo narrativo: dentro del primer encierro de Pablo en Roma)'
+companions: []
+summary: Onésimo, esclavo del cristiano Filemón, se escapa de Colosas y acaba en Roma. Allí trata a Pablo, que está preso,
+  y se hace cristiano.
+reason: 'Perspicacia «Onésimo» cuenta la huida de Colosas a Roma. Pasa durante el primer encierro de Pablo: entre los sucesos
+  llegada-a-roma (59) y pablo-queda-libre (61).'
+sources:
+- filemon-1
+- colosenses-4
+- it-onesimo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: colosas
+  reference: Col 4:9; Flm 10
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 59 y 61 e.c. (tiempo narrativo: dentro del primer encierro de Pablo en Roma)'
+  note: Perspicacia cree posible que robara a su amo para pagarse el viaje (Flm 18).
+  reason: Col 4:9 lo cuenta entre los de Colosas y Perspicacia dice que huyó de allí. Tiempo narrativo entre los sucesos llegada-a-roma
+    y pablo-queda-libre.
+  sources:
+  - colosenses-4
+  - it-onesimo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: roma
+  reference: Flm 10-16
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 59 y 61 e.c. (tiempo narrativo: dentro del primer encierro de Pablo en Roma)'
+  note: 'Pablo lo llama hijo suyo: se hizo cristiano estando con él.'
+  reason: Flm 10 no nombra la ciudad; Perspicacia «Onésimo» dice que viajó a Roma y conoció allí a Pablo (regla 2a). Tiempo
+    narrativo del primer encierro.
+  sources:
+  - filemon-1
+  - it-onesimo
+  checked_on: '2026-09-30'
+  status: pending

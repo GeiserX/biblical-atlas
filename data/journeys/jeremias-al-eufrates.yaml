@@ -1,0 +1,54 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jeremias-al-eufrates
+name: Jeremías esconde el cinturón junto al Éufrates
+person: jeremias-profeta
+reference: Jer 13:1-7
+date: &id001
+  from: -646
+  to: -606
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 647 y 607 a.e.c. (tiempo narrativo: dentro del ministerio de Jeremías)'
+narrative_order:
+  series: jeremias-profeta
+  order: 1
+companions: []
+summary: Jehová manda a Jeremías esconder un cinturón de lino en una grieta junto al Éufrates y, mucho después, volver a sacarlo.
+  Estropeado, ilustra cómo acabará el orgullo de Judá y de Jerusalén.
+reason: 'Nadie fecha el episodio: queda entre el nombramiento de Jeremías (647 a.e.c.) y la caída de Jerusalén (607 a.e.c.),
+  sucesos jeremias-comisionado y destruccion-de-jerusalen-607 (estudio 3).'
+sources:
+- it-eufrates
+- it-jeremias
+- jeremias-13
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Jer 13:1-3
+  date: *id001
+  note: null
+  reason: 'El texto no nombra la salida. Perspicacia («Éufrates») cuenta el viaje desde Jerusalén: regla 2a, deducción de
+    jw.org.'
+  sources:
+  - jeremias-13
+  - it-eufrates
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: rio-eufrates
+  reference: Jer 13:4-7
+  date: *id001
+  note: Fue dos veces, a esconderlo y a sacarlo. Perspicacia descarta la lectura Pará, junto a Anatot, y piensa en el tramo
+    del río al sur de Carquemis, a más de 500 km.
+  reason: 'Jer 13:4-7: lo esconde junto al Éufrates y vuelve allí a buscarlo. Perspicacia («Éufrates») defiende que es el
+    río. Fecha narrativa del ministerio de Jeremías.'
+  sources:
+  - jeremias-13
+  - it-eufrates
+  checked_on: '2026-09-30'
+  status: verified

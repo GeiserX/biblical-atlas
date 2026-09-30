@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: timoteo-y-erasto-a-macedonia
+name: Timoteo y Erasto a Macedonia
+person: timoteo
+reference: Hch 19:21, 22; 1Co 4:17; 16:10, 11; 2Co 1:1
+date:
+  from: 55
+  to: 55
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 55 e.c.
+narrative_order:
+  series: timoteo
+  order: 2
+companions:
+- erasto-colaborador-de-pablo
+summary: Pablo se queda un tiempo más en Asia y manda por delante hacia Macedonia a Timoteo y a Erasto, que le servían. Cuando
+  escribe 2 Corintios desde allí, Timoteo ya está con él.
+reason: Sucesos pablo-envia-a-timoteo-y-erasto-a-macedonia y pablo-escribe-2-corintios, c. 55. Perspicacia «Timoteo» no sabe
+  si llegó a pasar por Corinto (1Co 16:10).
+sources:
+- hch-19
+- 1-corintios-4
+- 1-corintios-16
+- 2-corintios-1
+- it-timoteo
+- it-erasto
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: efeso
+  reference: Hch 19:21, 22
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: Pablo se queda un tiempo más en la provincia de Asia.
+  reason: 'Hch 19:21, 22: estando en Éfeso, Pablo manda a Macedonia a Timoteo y a Erasto. Suceso pablo-envia-a-timoteo-y-erasto-a-macedonia,
+    c. 55.'
+  sources:
+  - hch-19
+  - it-timoteo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: macedonia
+  reference: Hch 19:22; 2Co 1:1
+  date:
+    from: 55
+    to: 55
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 55 e.c.
+  note: La visita a Corinto que anuncia 1Co 4:17 y 16:10 no consta; si la hubo, fue antes de salir de Éfeso.
+  reason: Hch 19:22 da el destino, y 2Co 1:1 pone a Timoteo con Pablo en Macedonia al escribir esa carta. Suceso pablo-escribe-2-corintios,
+    c. 55.
+  sources:
+  - hch-19
+  - 2-corintios-1
+  - it-timoteo
+  checked_on: '2026-09-30'
+  status: verified

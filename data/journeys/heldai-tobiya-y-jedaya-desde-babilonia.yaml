@@ -1,0 +1,57 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: heldai-tobiya-y-jedaya-desde-babilonia
+name: Heldái, Tobiya y Jedayá traen el donativo de los desterrados
+person: heldai-de-la-corona
+reference: Zac 6:9-14
+date: &id001
+  from: -518
+  to: -517
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+companions:
+- tobiya-de-la-corona
+- jedaya-de-la-corona
+summary: Tres judíos llegan de Babilonia con la plata y el oro que enviaron los desterrados. Con ese donativo, Zacarías hace
+  una corona para el sumo sacerdote Josué en casa de Josías hijo de Sofonías.
+reason: 'Zac 6:10 dice que vinieron de Babilonia. La fecha es la del suceso zacarias-corona-a-josue: después de las visiones
+  de sebat de 519 a.e.c. y antes de Zac 7, de 518.'
+sources:
+- it-heldai
+- it-tobiya
+- it-jedaya
+- w17-visiones-de-zacarias
+- w17-cuatro-carros-y-una-corona
+- si-zacarias
+- zacarias-6
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: babilonia
+  reference: Zac 6:10
+  date: *id001
+  note: null
+  reason: 'Zac 6:10: traen lo que dio el pueblo en el destierro y vienen de Babilonia. Fecha del suceso zacarias-corona-a-josue
+    (tiempo narrativo).'
+  sources:
+  - zacarias-6
+  - it-heldai
+  - si-zacarias
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Zac 6:10, 11
+  date: *id001
+  note: Entran en casa de Josías hijo de Sofonías. Zac 6:14 llama Hélem a Heldái.
+  reason: 'Zac 6:10, 11: Zacarías recibe su donativo y corona a Josué, que servía en el templo de Jerusalén. El suceso zacarias-corona-a-josue
+    pasa allí.'
+  sources:
+  - zacarias-6
+  - it-heldai
+  - w17-cuatro-carros-y-una-corona
+  checked_on: '2026-09-30'
+  status: verified

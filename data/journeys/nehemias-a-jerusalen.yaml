@@ -1,0 +1,72 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: nehemias-a-jerusalen
+name: Nehemías va a Jerusalén
+person: nehemias
+reference: Ne 2:1-11
+date:
+  from: -454
+  to: -454
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 455 a.e.c. (sale en nisán)
+companions: []
+summary: Nehemías, que sirve el vino al rey Artajerjes, pide permiso para reconstruir Jerusalén. Sale de Susa con cartas para
+  los gobernadores del oeste del Éufrates y una escolta, y a los tres días de llegar revisa la muralla.
+reason: Ne 2:1 pone la petición en nisán del año 20 de Artajerjes. El estudio 3 fecha en 455 a.e.c. la obra de la muralla
+  (suceso muros-de-jerusalen-455), que empieza el 4 de ab.
+sources:
+- si-3
+- it-nehemias
+- it-artajerjes
+- it-susa
+- nehemias-1
+- nehemias-2
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: susa
+  reference: Ne 1:1; 2:1-8
+  date:
+    from: -454
+    to: -454
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: nisán de 455 a.e.c.
+    detail:
+      month: nisan
+  note: El rey le pregunta cuánto tiempo estará fuera y le da las cartas que pide.
+  reason: Ne 1:1 lo pone en el castillo de Susa y Ne 2:1-8 cuenta la audiencia en nisán. Año del suceso muros-de-jerusalen-455
+    (estudio 3).
+  sources:
+  - nehemias-1
+  - nehemias-2
+  - it-susa
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: Ne 2:9-11
+  date:
+    from: -454
+    to: -454
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 455 a.e.c.
+  note: Por el camino entrega las cartas a los gobernadores del oeste del Éufrates, región que el atlas no tiene como lugar.
+    Van con él jefes militares y jinetes del rey.
+  reason: 'Ne 2:11: llega a Jerusalén y a los tres días sale de noche a ver la muralla. La obra empieza el 4 de ab de 455
+    a.e.c. (suceso muros-de-jerusalen-455).'
+  sources:
+  - nehemias-2
+  - si-3
+  - it-nehemias
+  checked_on: '2026-09-30'
+  status: verified

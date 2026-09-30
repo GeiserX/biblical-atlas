@@ -1,0 +1,50 @@
+# biblical-atlas: fuentes del carril viajes-profetas-cartas, por identificador. Esquema en docs/investigacion/README.md.
+it-baruc:
+  title: Baruc
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000571
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-crescente:
+  title: Crescente
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001070
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-elasa:
+  title: Elasá
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001276
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-guemarias:
+  title: Guemarías
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001645
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-rehum:
+  title: Rehúm
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003684
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-simsai:
+  title: Simsai
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004057
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-tahpanhes:
+  title: Tahpanés, Tahpanhés, Tehafnehés
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004305
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
