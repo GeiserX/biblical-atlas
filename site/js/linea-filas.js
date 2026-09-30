@@ -191,7 +191,8 @@ function rescueEdges(vis, w, G) {
 }
 /** Una marca cuyo nombre no se lee entero en su fila (pegada a un borde, sin sitio al lado) baja a una fila del borde,
     al final del carril, donde su nombre cabe al otro lado de su dibujo. Si su dibujo ni se ve, no está en la vista.
-    Nunca se corta un nombre. `holdEdge`: durante un arrastre, lo que ya cambió de fila se queda en ella. */
+    Nunca se corta un nombre. `holdEdge`: durante un arrastre, lo que ya cambió de fila se queda en ella mientras tenga
+    sitio. */
 function edgeRows(vis, w, G, holdEdge) {
   const occ = new Map();   // fila (clave) -> intervalos ocupados
   const free = (k, a, b) => !(occ.get(k) || []).some(([x, y]) => a < y + G.gap && x < b + G.gap);
@@ -202,7 +203,11 @@ function edgeRows(vis, w, G, holdEdge) {
     it._key = it.row;
     it._gone = false;
     const pin = holdEdge && holdEdge.has(it.id);
-    if (!pin && it._lx >= 0 && it._lx + lw <= w) { take(it.row, it._hit[0], it._hit[1]); continue; }
+    const fits = it._lx >= 0 && it._lx + lw <= w;
+    if (!pin && fits) { take(it.row, it._hit[0], it._hit[1]); continue; }
+    // Una marca retenida en una fila del borde que ya cabe en su fila del mundo guarda ese sitio, por si su fila del
+    // borde se llena.
+    it._world = fits ? { lx: it._lx, inside: it._in } : null;
     const d0 = it.shape === 'moment' ? it._dot - G.dotR : it._g[0], d1 = it.shape === 'moment' ? it._dot + G.dotR : it._g[1];
     if (d1 < 0 || d0 > w) { it._gone = true; continue; }
     // Una barra que solo asoma unos píxeles por un borde todavía no está en la vista: aparece al arrastrar un poco. Una
@@ -222,6 +227,19 @@ function edgeRows(vis, w, G, holdEdge) {
   unfit.sort((a, b) => (holdEdge && holdEdge.has(b.id) ? 1 : 0) - (holdEdge && holdEdge.has(a.id) ? 1 : 0));
   for (const it of unfit) {
     let k = holdEdge && holdEdge.has(it.id) ? holdEdge.get(it.id) : null;
+    // Durante un arrastre, una marca se queda en su fila del borde mientras tenga sitio en ella. Si otra marca llega a
+    // ese sitio, vuelve a su fila del mundo si allí cabe, o va a otra fila libre: nunca encima de otra.
+    if (k != null && !free(k, it._hit[0], it._hit[1])) {
+      k = null;
+      holdEdge.delete(it.id);
+      const back = it._world;
+      if (back) {
+        const edge = [it._lx, it._in];
+        it._lx = back.lx; it._in = back.inside; hitOf(it, w, G);
+        if (free(it.row, it._hit[0], it._hit[1])) { take(it.row, it._hit[0], it._hit[1]); it._key = it.row; continue; }
+        [it._lx, it._in] = edge; hitOf(it, w, G);
+      }
+    }
     if (k == null) {
       k = rowsSeen.find((r) => free(r, it._hit[0], it._hit[1]));
       for (let e = 0; k == null; e++) if (free(100000 + e, it._hit[0], it._hit[1])) k = 100000 + e;
@@ -234,7 +252,8 @@ function edgeRows(vis, w, G, holdEdge) {
 
 /** Todo un carril en la vista { v0, span }. geom = { w, t0, G, key }: ancho de la franja, origen del mundo, geometría y
     la clave de la letra (si cambia, se vuelven a repartir las filas). hold = null, o { rows, edge } mientras se arrastra:
-    ninguna marca cambia de fila, un carril no encoge, y una fila que aparece va abajo del todo.
+    ninguna marca cambia de fila salvo para no quedar encima de otra, un carril no encoge, y una fila que aparece va
+    abajo del todo.
     Devuelve { visible, nRows }: las marcas que se ven, cada una con su fila en pantalla (_drow), y cuántas filas hay. */
 function layoutLane(lane, view, geom, hold) {
   const { w, t0, G } = geom;

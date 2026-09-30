@@ -147,22 +147,42 @@ test('T5c a name pushed against the right edge never covers its own dot or bar',
   }
 });
 
-test('T6 while dragging no mark changes row and no lane shrinks; after release the rows pack again', () => {
-  const lane = syntheticLane(19);
-  const span = 8, w = 800;
-  let v0 = 46;
-  const hold = { rows: new Map(), edge: new Map() };
-  let prev = F.layoutLane(lane, { v0, span }, geom(w), hold);
-  let prevRows = new Map(prev.visible.map((it) => [it.id, it._drow]));
-  for (let step = 0; step < 20; step++) {
-    v0 += (20 / w) * span;
-    const out = F.layoutLane(lane, { v0, span }, geom(w), hold);
-    assert.ok(out.nRows >= prev.nRows, `step ${step}: the lane shrank from ${prev.nRows} to ${out.nRows} rows`);
-    for (const it of out.visible) if (prevRows.has(it.id)) assert.equal(it._drow, prevRows.get(it.id), `step ${step}: «${it.name}» changed row`);
-    prev = out; prevRows = new Map(out.visible.map((it) => [it.id, it._drow]));
+/** Pairs of marks of one row whose boxes overlap. */
+function overlaps(out) {
+  const bad = [], byRow = new Map();
+  for (const it of out.visible) { if (!byRow.has(it._drow)) byRow.set(it._drow, []); byRow.get(it._drow).push(it); }
+  for (const list of byRow.values()) {
+    list.sort((a, b) => a._hit[0] - b._hit[0]);
+    for (let i = 1; i < list.length; i++) if (list[i - 1]._hit[1] - list[i]._hit[0] > 0.5) bad.push(`«${list[i - 1].name}» / «${list[i].name}»`);
   }
-  const released = F.layoutLane(lane, { v0, span }, geom(w));
-  assert.ok(released.nRows <= prev.nRows, 'after release the lane packs again');
+  return bad;
+}
+
+test('T6 while dragging no lane shrinks, no name covers another, and a mark changes row only to get out of the way', () => {
+  for (const [seed, span, from, dir] of [[19, 8, 46, 1], [19, 8, 52, -1], [31, 40, 30, 1], [37, 40, 60, -1], [41, 1.5, 49.5, 1]]) {
+    const lane = syntheticLane(seed);
+    const w = 800;
+    let v0 = from;
+    const hold = { rows: new Map(), edge: new Map() };
+    let prev = F.layoutLane(lane, { v0, span }, geom(w), hold);
+    let prevRows = new Map(prev.visible.map((it) => [it.id, it._drow]));
+    let moved = 0, kept = 0;
+    for (let step = 0; step < 60; step++) {
+      v0 += dir * (7 / w) * span;
+      const out = F.layoutLane(lane, { v0, span }, geom(w), hold);
+      assert.ok(out.nRows >= prev.nRows, `seed ${seed}, step ${step}: the lane shrank from ${prev.nRows} to ${out.nRows} rows`);
+      assert.deepEqual(overlaps(out), [], `seed ${seed}, span ${span}, step ${step}: names cover each other while dragging`);
+      for (const it of out.visible) if (prevRows.has(it.id)) { if (it._drow === prevRows.get(it.id)) kept++; else moved++; }
+      prev = out; prevRows = new Map(out.visible.map((it) => [it.id, it._drow]));
+    }
+    assert.ok(moved <= kept / 50, `seed ${seed}: ${moved} row changes against ${kept} marks that kept their row`);
+  }
+  const lane = syntheticLane(19);
+  const span = 8, w = 800, hold = { rows: new Map(), edge: new Map() };
+  let held = null;
+  for (let v0 = 46; v0 < 50; v0 += 0.1) held = F.layoutLane(lane, { v0, span }, geom(w), hold);
+  const released = F.layoutLane(lane, { v0: 50, span }, geom(w));
+  assert.ok(released.nRows <= held.nRows, 'after release the lane packs again');
   const used = new Set(released.visible.map((it) => it._drow));
   assert.equal(used.size <= released.nRows, true);
 });
