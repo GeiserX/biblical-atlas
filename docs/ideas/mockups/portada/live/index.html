@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · La Biblia en el mapa y en el tiempo</title>
+<meta name="description" content="Un atlas para estudiar la Biblia en español: cada relato en su lugar y en su fecha, con la fuente de cada dato.">
+<link rel="icon" type="image/svg+xml" href="../assets/kit/favicon.svg">
+<link rel="preload" href="../assets/kit/fonts/EBGaramond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/kit/fonts/Inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Dónde está el sitio y el aviso si no carga: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="live.css">
+<script>
+  // Modo reunión y letra grande antes del primer pintado, con las mismas claves que el sitio (comparten el navegador).
+  // ?tema=reunion o ?tema=claro lo fuerzan para probar sin tocar lo guardado.
+  (function () {
+    var h = document.documentElement, q = new URLSearchParams(location.search), tema = q.get('tema');
+    try {
+      if (tema === 'reunion' || (tema !== 'claro' && localStorage.getItem('biblical-earth:pref:reunion') === '1')) h.classList.add('be-reunion');
+      if (localStorage.getItem('biblical-earth:pref:letra-grande') === '1') h.classList.add('be-letra-grande');
+    } catch (e) { /* sin almacenamiento */ }
+    h.classList.add('js');
+  })();
+</script>
+<script src="data.js" defer></script>
+<script src="extract.js" defer></script>
+<script src="live.js" defer></script>
+</head>
+<body>
+
+
+<div class="cinta" id="cinta" role="region" aria-label="Qué es este sitio" hidden>
+  <p><span id="cinta-texto">Estás viendo una vista compartida</span> en <b>biblical-earth</b>, la Biblia en el mapa y en el tiempo.</p>
+  <button type="button" class="btn btn--fino" id="cinta-portada">Ver la portada</button>
+  <button type="button" class="btn btn--icono btn--fino" id="cinta-cerrar" aria-label="Cerrar este aviso"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div>
+
+<aside class="vuelve" id="vuelve" aria-labelledby="vuelve-tit" hidden>
+  <div class="vuelve-cab">
+    <p class="vuelve-tit" id="vuelve-tit">La Biblia en el mapa y en el tiempo</p>
+    <button type="button" class="btn btn--icono btn--fino" id="vuelve-plegar" aria-label="Plegar esta tarjeta" aria-expanded="true" aria-controls="vuelve"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <button type="button" class="btn btn--primario btn--seguir" id="vuelve-seguir" hidden><span class="btn-linea1">Seguir donde lo dejé</span><span class="btn-linea2" id="vuelve-seguir-texto"></span></button>
+  <form class="busca" role="search" data-busca>
+    <label class="caps" for="q2">Busca</label>
+    <div class="campo"><svg class="lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q2" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="Persona, lugar, capítulo o año" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sug2">
+      <button type="submit" class="btn btn--icono" aria-label="Buscar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+    <div class="sugerencias" id="sug2" role="listbox" aria-label="Resultados" hidden></div>
+    <p class="busca-estado" aria-live="polite"></p>
+  </form>
+  <button type="button" class="enlace" id="vuelve-mas">Más maneras de empezar</button>
+</aside>
+<button type="button" class="btn vuelve-plegada" id="vuelve-plegada" aria-controls="vuelve" aria-expanded="false" hidden>Por dónde empezar</button>
+
+<main class="portada" id="portada">
+  <section class="primera" aria-labelledby="titulo">
+    <div class="palabras" id="palabras">
+      <header class="cab">
+        <a class="nombre" href="./" id="nombre"><svg class="nombre-marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path class="nm-hojas" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/><path class="nm-tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/><circle class="nm-oliva" cx="20.5" cy="47" r="6"/><circle class="nm-oliva" cx="31" cy="31.5" r="6"/><circle class="nm-oliva" cx="47.5" cy="13.5" r="6"/></svg>biblical-earth</a>
+        <span class="espacio"></span>
+        <button type="button" class="btn btn--icono btn--fino" id="reunion" aria-pressed="false" aria-label="Modo reunión: fondo oscuro y sin animaciones" title="Modo reunión: fondo oscuro y sin animaciones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A7.5 7.5 0 0 1 9.5 4.5a7.5 7.5 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+      </header>
+
+      <h1 class="titulo" id="titulo">La Biblia en el mapa y en el tiempo</h1>
+      <p class="sub">Un atlas para estudiar, en español. Una sola fecha mueve el mapa, la línea de tiempo y la ficha, y cada dato lleva su fuente.</p>
+
+      <section class="escena" aria-labelledby="escena-tit">
+        <h2 class="caps escena-tit" id="escena-tit"><span class="solo-ancho">Al lado</span><span class="solo-estrecho">Arriba</span>, el sitio de verdad, funcionando solo</h2>
+        <p class="escena-que" id="escena-que">Recorrido «De Babilonia a Jerusalén», tres de sus ocho paradas.</p>
+        <ol class="pasos" id="pasos"></ol>
+        <div class="escena-control">
+          <button type="button" class="btn" id="control" aria-describedby="escena-estado"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Pausar</span></button>
+          <p class="escena-estado" id="escena-estado">Preparando el mapa…</p>
+        </div>
+      </section>
+
+      <div class="accion">
+        <button type="button" class="btn btn--primario btn--grande" id="tomar">Tomar el mando<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="ayuda">El mapa queda en tus manos tal como está. Atrás te devuelve aquí.</p>
+      </div>
+
+      <button type="button" class="btn btn--seguir" id="seguir" hidden><span class="btn-linea1">Seguir donde lo dejé</span><span class="btn-linea2" id="seguir-texto"></span></button>
+
+      <form class="busca" role="search" data-busca>
+        <label class="caps" for="q">O busca directamente</label>
+        <div class="campo"><svg class="lupa" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="q" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="Persona, lugar, capítulo o año" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sug1">
+          <button type="submit" class="btn btn--icono" aria-label="Buscar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        <div class="sugerencias" id="sug1" role="listbox" aria-label="Resultados" hidden></div>
+        <p class="busca-estado" aria-live="polite"></p>
+      </form>
+
+      <a class="mas" href="#recorridos">Más maneras de empezar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v13m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+
+    <div class="vivo" id="vivo">
+      <picture>
+        <source media="(max-width: 1199px)" srcset="img/captura-movil.webp" data-reunion="img/captura-movil-reunion.webp">
+        <img class="captura" id="captura" src="img/captura-escritorio.webp" data-reunion="img/captura-escritorio-reunion.webp" alt="" fetchpriority="high" decoding="async">
+      </picture>
+      <iframe class="marco" id="marco" title="biblical-earth: el mapa, la línea de tiempo y la ficha" tabindex="-1" inert allow="fullscreen; clipboard-write"></iframe>
+      <div class="cubre" id="cubre" aria-hidden="true"></div>
+      <button type="button" class="velo" id="velo" aria-label="Tomar el mando del mapa"><span class="velo-pista" aria-hidden="true">Pulsa para tomar el mando</span></button>
+      <div class="barra-vivo">
+        <p class="rotulo" id="rotulo" aria-hidden="true"></p>
+        <button type="button" class="btn btn--fino" id="control2" aria-describedby="escena-estado"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Pausar</span></button>
+      </div>
+      <p class="credito">Relieve: Natural Earth y datos de elevación de Mapzen</p>
+    </div>
+  </section>
+
+  <section class="zona" id="recorridos" aria-labelledby="recorridos-tit">
+    <div class="zona-cab"><h2 id="recorridos-tit">Recorridos guiados</h2><p>Como el de arriba: cada parada mueve la fecha, el mapa y la ficha. Van a tu paso y se guarda por dónde vas.</p></div>
+    <div class="recorridos" id="lista-recorridos"></div>
+    <p class="credito-zona">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a data-sitio="acerca.html#gracias" href="#">Créditos</a></p>
+  </section>
+
+  <section class="zona" id="preguntas" aria-labelledby="preguntas-tit">
+    <div class="zona-cab"><h2 id="preguntas-tit">Empieza por una pregunta</h2><p>Cada una abre el mapa en su lugar y en su fecha.</p></div>
+    <div class="preguntas" id="lista-preguntas"></div>
+  </section>
+
+  <section class="zona" id="epocas" aria-labelledby="epocas-tit">
+    <div class="zona-cab"><h2 id="epocas-tit">Las épocas, a escala real</h2><p>De la creación de Adán al año 100. Toca una fecha o una época y el mapa se pone en ella.</p></div>
+    <div class="linea-fechas" id="linea-fechas"></div>
+    <p class="fecha-pie" id="fecha-pie" aria-hidden="true">&nbsp;</p>
+    <ol class="eras" id="lista-eras"></ol>
+    <button type="button" class="enlace" id="linea-completa">Ver la línea de tiempo completa</button>
+  </section>
+
+  <section class="zona" id="dato" aria-labelledby="dato-tit">
+    <div class="zona-cab"><h2 id="dato-tit">Cada dato, con su fuente</h2><p>Un ejemplo de lo que lleva cada ficha del sitio.</p></div>
+    <div class="dato" id="caja-dato"></div>
+  </section>
+</main>
+
+<footer class="pie" id="pie">
+  <p><span>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen</span> · <span>Coordenadas: OpenBible.info (CC BY 4.0)</span> · <a data-sitio="acerca.html#gracias" href="#">Créditos</a></p>
+  <p><span>En español</span> · <span>Sitio estático, sin cuentas</span> · <a data-sitio="acerca.html#licencia" href="#">Código libre, GPL-3.0</a> · <a data-sitio="calendario.html" href="#">El calendario de la Biblia</a> · <a data-sitio="acerca.html" href="#">Qué es biblical-earth</a> · <span id="pie-fecha">Datos del 29 de septiembre de 2026</span></p>
+  <p><button type="button" class="enlace" id="letra" aria-pressed="false">Letra grande</button></p>
+</footer>
+
+<!-- Del prototipo, no del diseño: al final para que el tabulador empiece por la portada. -->
+<nav class="proto" aria-label="Prototipo: los seis diseños">
+  <details>
+    <summary>Diseños</summary>
+    <ul>
+      <li><a href="../veil/">El velo</a></li>
+      <li><a href="../fullbleed/">Pantalla completa</a></li>
+      <li><a href="../time/">El tiempo</a></li>
+      <li><a href="../question/">La pregunta</a></li>
+      <li><a href="../live/" aria-current="page">El sitio, funcionando</a></li>
+      <li><a href="../tuned/">La de hoy, afinada</a></li>
+    </ul>
+    <p>Ver este diseño como</p>
+    <ul>
+      <li><a href="?estado=nuevo" data-proto-estado>Primera visita</a></li>
+      <li><a href="?estado=vuelve" data-proto-estado>Quien vuelve</a></li>
+      <li><a href="?estado=nuevo&amp;cinta=1#sel=persona:pedro&amp;t=30.5000&amp;mapa=antiguo" data-proto-estado>Un enlace compartido</a></li>
+    </ul>
+  </details>
+</nav>
+<p class="sr-only" id="anuncio" aria-live="polite"></p>
+<noscript><p class="sin-js">Esta portada necesita JavaScript para enseñar el sitio funcionando. <a href="../../../../../site/">Abrir biblical-earth</a>.</p></noscript>
+</body>
+</html>

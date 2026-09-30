@@ -1,0 +1,179 @@
+/* biblical-earth · portada: fondos a pantalla completa y sus tratamientos.
+   Un fondo es una capa de la familia del banner: el relieve propio (una imagen de img/ o el mapa vivo) con un velo de
+   papel encima. Todo color sale de site/kit/tokens.css, así que en modo reunión (.be-reunion) se oscurece solo.
+
+   Estructura (el orden de los hijos no importa; manda el z-index):
+     <div class="be-backdrop t-paper bd-paul-journeys">
+       <picture> … <img class="be-backdrop__media" alt=""> </picture>   o el contenedor del mapa vivo, con inert
+       <div class="be-backdrop__tint"></div>
+       <div class="be-backdrop__veil"></div>
+       <div class="be-backdrop__content"> título, búsqueda… </div>
+       <p class="be-backdrop__credit">Relieve: … · <a href="…/acerca.html#gracias">Créditos</a></p>
+     </div>
+
+   Tratamientos: .t-paper (papel hacia el texto, como el banner), .t-sage (lavado de salvia), .t-vignette (viñeta con el
+   texto en el centro) y .t-engraving (grabado: relieve en gris verdoso, como una marca de agua).
+   Variables que se pueden cambiar en línea: --veil-dir (hacia dónde se abre el velo en pantallas anchas; por defecto el
+   texto va al principio de la línea), --veil-dir-narrow (en estrechas; por defecto el texto va arriba),
+   --backdrop-focus (object-position de la imagen) y --vignette-at (centro de la viñeta). */
+
+/* ---------- Estructura común ---------- */
+.be-backdrop {
+  --veil: var(--surface);
+  --veil-dir: to right;
+  --veil-dir-narrow: to bottom;
+  --backdrop-tint: #4a6f57;            /* salvia del modo claro (--accent), fijo: en reunión --accent es terracota */
+  --media-filter: saturate(1);
+  --media-opacity: 1;
+  --vignette-edge: var(--ink);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  container: backdrop / inline-size;
+  background-color: var(--backdrop-fallback, var(--paper-2));
+}
+/* Mientras llega la imagen: su color medio y una miniatura de 32 px desenfocada (unos 130 bytes, en línea). */
+.be-backdrop::before {
+  content: "";
+  position: absolute;
+  inset: -48px;
+  z-index: 0;
+  background: var(--backdrop-lqip, none) center / cover no-repeat;
+  filter: blur(28px) var(--media-filter);
+  opacity: var(--media-opacity);
+}
+.be-backdrop__media {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+  object-position: var(--backdrop-focus, 50% 50%);
+  filter: var(--media-filter);
+  opacity: var(--media-opacity);
+  transition: opacity .5s ease;
+}
+/* Solo con JavaScript: quien carga pone data-loading y lo quita al decodificar. Sin JavaScript la imagen sale sin más. */
+.be-backdrop[data-loading] .be-backdrop__media { opacity: 0; }
+.be-backdrop picture { display: contents; }
+.be-backdrop__tint,
+.be-backdrop__veil { position: absolute; inset: 0; pointer-events: none; }
+.be-backdrop__tint { z-index: 2; }
+.be-backdrop__veil { z-index: 3; --dir: var(--veil-dir); }
+.be-backdrop__content { position: relative; z-index: 4; }
+@container backdrop (max-width: 760px) {
+  .be-backdrop__veil { --dir: var(--veil-dir-narrow); }
+}
+
+/* Crédito del relieve: lo piden los datos de elevación. Chip de papel para que se lea sobre cualquier zona. */
+.be-backdrop__credit {
+  position: absolute;
+  z-index: 4;
+  right: 12px;
+  bottom: 10px;
+  margin: 0;
+  padding: 3px 8px;
+  border-radius: var(--r-sm, 6px);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  color: var(--ink-3);
+  font: 500 var(--fs-2xs)/1.35 var(--font-sans);
+}
+.be-backdrop__credit a { position: relative; color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+/* Zona de toque de 44 px alrededor del enlace, sin agrandar la letra. */
+.be-backdrop__credit a::after { content: ""; position: absolute; inset: -16px -8px; }
+
+/* ---------- 1. Papel hacia el texto (el banner) ---------- */
+/* El relieve se funde en el papel por el lado del texto; al otro lado se ve casi entero. */
+.t-paper { --media-filter: saturate(.82) brightness(1.03); }
+.t-paper .be-backdrop__veil {
+  background: linear-gradient(var(--dir),
+    var(--veil) 0 30%,
+    color-mix(in srgb, var(--veil) 72%, transparent) 44%,
+    color-mix(in srgb, var(--veil) 38%, transparent) 64%,
+    color-mix(in srgb, var(--veil) 18%, transparent) 100%);
+}
+
+/* ---------- 2. Lavado de salvia ---------- */
+/* El pergamino toma el tono de la paleta (mezcla «color»: el tono de la salvia, la luz del relieve) y un velo más
+   parejo; el mapa queda en segundo plano en toda la pantalla. */
+.t-sage .be-backdrop__tint { background: var(--backdrop-tint); mix-blend-mode: color; opacity: .62; }
+.t-sage .be-backdrop__veil {
+  background: linear-gradient(var(--dir),
+    color-mix(in srgb, var(--veil) 90%, transparent) 0 28%,
+    color-mix(in srgb, var(--veil) 62%, transparent) 58%,
+    color-mix(in srgb, var(--veil) 42%, transparent) 100%);
+}
+
+/* ---------- 3. Viñeta ---------- */
+/* Un claro de papel donde va el texto y el relieve alrededor, con los bordes apenas oscurecidos. */
+.t-vignette .be-backdrop__veil {
+  background:
+    radial-gradient(ellipse 58% 60% at var(--vignette-at, 50% 46%),
+      var(--veil) 0 36%,
+      color-mix(in srgb, var(--veil) 74%, transparent) 58%,
+      color-mix(in srgb, var(--veil) 0%, transparent) 100%),
+    radial-gradient(ellipse 125% 115% at 50% 50%, transparent 58%, color-mix(in srgb, var(--vignette-edge) 16%, transparent) 100%);
+}
+@container backdrop (max-width: 760px) {
+  .t-vignette .be-backdrop__veil {
+    background:
+      radial-gradient(ellipse 110% 46% at var(--vignette-at, 50% 34%),
+        var(--veil) 0 45%,
+        color-mix(in srgb, var(--veil) 70%, transparent) 70%,
+        color-mix(in srgb, var(--veil) 0%, transparent) 100%),
+      radial-gradient(ellipse 140% 110% at 50% 50%, transparent 60%, color-mix(in srgb, var(--vignette-edge) 16%, transparent) 100%);
+  }
+}
+
+/* ---------- 4. Grabado ---------- */
+/* El relieve en gris, a poca opacidad sobre el papel y teñido de salvia: una marca de agua que no compite con nada. */
+.t-engraving { --media-filter: grayscale(1) contrast(1.25) brightness(1.02); --media-opacity: .42; background-color: var(--veil); }
+/* Multiplicar por --accent-soft deja el papel en el verde claro de la paleta y las sombras en gris verdoso. */
+.t-engraving .be-backdrop__tint { background: #e1ebe3; mix-blend-mode: multiply; }
+.t-engraving .be-backdrop__veil {
+  background: linear-gradient(var(--dir),
+    color-mix(in srgb, var(--veil) 60%, transparent) 0 26%,
+    color-mix(in srgb, var(--veil) 0%, transparent) 70%);
+}
+
+/* ---------- Movimiento lento (opcional) ---------- */
+/* Un desplazamiento de 90 s que sugiere un mapa vivo. Se para con prefers-reduced-motion y en modo reunión. */
+.be-backdrop--drift .be-backdrop__media { animation: be-backdrop-drift 90s ease-in-out infinite alternate; }
+@keyframes be-backdrop-drift {
+  from { transform: scale(1.06) translate(-1.2%, .6%); }
+  to { transform: scale(1.06) translate(1.2%, -.6%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .be-backdrop__media { transition: none; animation: none !important; }
+}
+
+/* ---------- Modo reunión (oscuro) ---------- */
+/* El velo pasa a --paper (el fondo cálido oscuro); el relieve se apaga como el mapa del sitio en reunión, algo más
+   porque aquí va texto encima; la salvia se aclara para seguir viéndose sobre el oscuro. */
+.be-reunion .be-backdrop,
+.be-backdrop.be-reunion {
+  --veil: var(--paper);
+  --backdrop-tint: #6f927a;
+  --vignette-edge: #000;
+  --media-filter: brightness(.58) saturate(.72);
+  background-color: color-mix(in srgb, var(--backdrop-fallback, var(--paper-2)) 32%, var(--paper));
+}
+.be-reunion .t-paper, .t-paper.be-reunion { --media-filter: brightness(.6) saturate(.7); }
+.be-reunion .t-engraving, .t-engraving.be-reunion { --media-filter: grayscale(1) contrast(1.1) brightness(.85); --media-opacity: .3; background-color: var(--paper); }
+.be-reunion .t-engraving .be-backdrop__tint, .t-engraving.be-reunion .be-backdrop__tint { background: var(--backdrop-tint); mix-blend-mode: color; opacity: .4; }
+
+/* ---------- Candidatos ---------- */
+/* Color medio de cada imagen y su miniatura de 32 px (32 × 18 la ancha, 14 × 30 la alta), para mientras carga. */
+.bd-bible-lands { --backdrop-fallback: #d7cfb5; --backdrop-lqip: url("data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASogABIAPtFYo0uoJSMhsAgBABoJY2VuTLZUCgP/+A7d4Sbe4RUYJKs80AD+7p5DLToqphtwkL8Pg7seJZoLLDwohvBvwwmfY0UalI+6cCpSkuAgUaQLSwZ/3qcN6eJrX5lKRLcvnOzMAAAA"); }
+.bd-paul-journeys { --backdrop-fallback: #c6c9b9; --backdrop-lqip: url("data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASogABIAPtFcpk6oJSMiKAqpABoJY2DrTtrlkOs+L2H+o+fh7hUuQzgA/u287IoO2MIaD2VdcISAgf8V7FIZiyum5PWOpy422LjhWMJMtzqQdwGzvAXFRZ4j/e/Hej9wtVuGK6sZX9pAPtAA"); }
+.bd-galilee-judea { --backdrop-fallback: #d9d2b8; --backdrop-lqip: url("data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASogABIAPtFcpU0oJSOiMBgIAQAaCWVoTU/wCUaddvZ/zJ+amAAA/u7OBjQLn76WNGxG0CMcQAdfKeHka59QfVm//xx9ZWzcFv8bin1UsiAgQqakyXvHnZMNDqmmgAAA"); }
+.bd-jerusalem { --backdrop-fallback: #d7c7a5; --backdrop-lqip: url("data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwBACdASogABIAPtFeqE+oJKOiKAgBABoJZQDCgBFB2K9S5ER2Lo6jgXivNCjbHYgA/t7+6c2SaOq5AhHLPBI2iBWUXe5aKRNQ9kgVBD/Cg5xqjwBXYIms0VeuSt1qIieDyFSNGfTMVDhLB1AYt1FGzwUQ8i241tLlsTS3yjYuwAAA"); }
+@media (max-width: 760px) and (orientation: portrait) {
+  .bd-bible-lands { --backdrop-lqip: url("data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQBACdASoOAB4APtFUo0uoJKMhsAgBABoJQBOja/gLCoB6BCN2AxBUDdMAAP7rIcxwQ7YdSRbZwJdbE+25jjmZwv4Glnx6EsmWQB3TyP6OeCZQbxCmDXqjDB54X9gm6cPQziaTBUbLAAAA"); }
+  .bd-paul-journeys { --backdrop-lqip: url("data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoOAB4APtFUo0uoJKMhsAgBABoJQBOmUGMADR9V7P3LqgAA/u3GnFiuB6sqVh0n92lqbUuSpqb5q5FR+/ySxEDRq5g1mfYCwhPijRpKls4zyMJwAAA="); }
+  .bd-galilee-judea { --backdrop-lqip: url("data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoOAB4APtFUo0uoJKMhsAgBABoJQBOkGQBgb8k6DpNctD7gAAD+3trS0wFl7cktc23kE1+/APB34F5tDBxnjik9cb4dmIJjkosxMOCjd37cCq6NA9mAA4xKziAAAA=="); }
+  .bd-jerusalem { --backdrop-lqip: url("data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAwCdASoOAB4APtFUo0uoJKMhsAgBABoJY12AADdJbI3hyAAA/u28Fndm7gS4gMQXAkBJ/0l0uQ32ydq+PmlMB1BbsX0qk5iZ5IY7xEvG09X4FX9kaE6uwP7YIAUwJiVoFUzBCpP/9D5e4AAAAA=="); }
+}

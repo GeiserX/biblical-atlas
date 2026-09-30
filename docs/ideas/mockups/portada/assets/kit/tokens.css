@@ -1,0 +1,136 @@
+/* biblical-earth · tokens de diseño (modo claro)
+   Sobrio, cálido y editorial. Todo color, tamaño o sombra de las maquetas sale de aquí. */
+@import url("./fonts.css");
+
+:root {
+  /* ---------- Tipografía ---------- */
+  --font-serif: "EB Garamond", "Iowan Old Style", Georgia, serif;   /* topónimos, titulares, fechas grandes */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; /* interfaz */
+  --font-hebrew: "Noto Serif Hebrew", "EB Garamond", serif;          /* nombres originales en hebreo */
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-2xs: 10.5px;
+  --fs-xs: 11.5px;
+  --fs-sm: 12.5px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 19px;
+  --fs-2xl: 24px;
+  --fs-3xl: 30px;
+  --fs-4xl: 40px;
+  --lh-tight: 1.15;
+  --lh-snug: 1.3;
+  --lh-body: 1.5;
+  --tracking-caps: 0.08em;
+
+  /* ---------- Papel y tinta ---------- */
+  --paper: #eef2ec;        /* fondo de la aplicación */
+  --paper-2: #e2e8e0;      /* fondos hundidos, carriles */
+  --surface: #fbfcfa;      /* tarjetas y paneles */
+  --surface-2: #f4f7f2;    /* filas alternas, cabeceras */
+  --ink: #18221c;          /* texto principal */
+  --ink-2: #3c4a41;        /* texto secundario */
+  --ink-3: #5b6a60;        /* texto terciario, ejes */
+  --ink-4: #97a59b;        /* marcas desactivadas */
+  --line: #d8e0d7;         /* líneas finas */
+  --line-2: #c1ccc2;       /* líneas marcadas */
+  --focus: #2c6a78;
+
+  /* ---------- Acentos ---------- */
+  --accent: #4a6f57;       /* verde salvia: sujeto activo (Pablo, ruta en curso) */
+  --accent-2: #6f927a;
+  --accent-soft: #e1ebe3;
+  --gold: #1f3b30;         /* el color del tiempo: cursor, fecha activa, cartas y sucesos (verde pino) */
+  --gold-soft: #e3ece4;
+  --gold-ink: #1f3b30;      /* texto sobre --gold-soft: fechas y píldoras TNM */
+  --gold-line: #c6d6c9;     /* borde de las píldoras de fecha */
+  --gold-hint: #5b6a60;     /* texto secundario de la fecha */
+  --gold-wash: #eef3ef;     /* fondo del punto de un lugar con carta */
+  --sea: #4f7b8a;          /* tramos por mar */
+  --sea-soft: #dde9ec;
+  --link: #2a5d78;
+
+  /* ---------- Fuentes por niveles ---------- */
+  --tier1: #2a5d78;        /* nivel 1: Biblia (TNM) y publicaciones de wol.jw.org */
+  --tier1-soft: #e0eaf0;
+  --tier1-line: #c4d6e2;
+  --tier2: #86601c;        /* nivel 2: arqueología, papers, investigación */
+  --tier2-soft: #f5ebd5;
+  --secular: #56657a;      /* cronología secular cuando difiere */
+  --secular-soft: #e5e9ef;
+  --unverified: #9b3d5a;   /* dato sin verificar */
+  --unverified-soft: #f6e2e8;
+
+  /* ---------- Tipos de nodo del grafo ---------- */
+  --node-persona: var(--accent);
+  --node-lugar: #2a5d78;
+  --node-evento: var(--gold);
+  --node-periodo: #6a5a8c;
+  --node-hallazgo: #62743a;
+  --node-texto: #4b5d73;
+  /* Forma de cada tipo: el tipo no va solo en el color (en claro, persona y suceso son dos verdes). Radio del borde y
+     transformación del relleno; los anillos de foco siguen la forma. */
+  --node-shape-persona: 50%;                        /* círculo */
+  --node-turn-persona: none;
+  --node-shape-lugar: 50% 50% 50% 0;                /* chincheta de mapa, con la punta abajo */
+  --node-turn-lugar: rotate(-45deg) scale(.78);
+  --node-shape-evento: 3px;                         /* rombo */
+  --node-turn-evento: rotate(45deg) scale(.76);
+  --node-shape-periodo: 5px;                        /* barra: un tramo de tiempo */
+  --node-turn-periodo: scale(1.16, .68);
+  --node-shape-hallazgo: 50% 50% 2px 2px / 36% 36% 2px 2px;   /* estela, con la parte de arriba redonda */
+  --node-turn-hallazgo: scale(.82, 1);
+  --node-shape-texto: 2px;                          /* cuadrado: una página */
+  --node-turn-texto: scale(.9);
+
+  /* ---------- Imperios (carriles y zonas) ---------- */
+  --emp-egipto: #a8863c;
+  --emp-asiria: #9a5b3e;
+  --emp-babilonia: #3f5e8c;
+  --emp-persia: #6f5aa0;
+  --emp-grecia: #2f7f8a;
+  --emp-roma: #4f5d6e;
+  --emp-israel: #4f7a3a;
+
+  /* ---------- Mapa ---------- */
+  --map-label: #2b2419;
+  --map-label-halo: rgba(250, 245, 233, 0.92);
+  --map-region: #6b5a45;
+  --map-sea-label: #4f6f78;
+  --route-done: var(--accent);
+  --route-todo: var(--accent);
+  --rejilla: rgba(193, 204, 194, .45);   /* líneas de la rejilla de la línea de tiempo */
+  --route-sea: var(--sea);
+  --route-letter: var(--gold);
+  --zone: #7a5c8e;
+
+  /* ---------- Viajes y cartas: los lee site/js/mapa.js en este orden ---------- */
+  --viajes: #b34962, #357589, #805da8, #6b445c, #a75733, #2f5085, #756f19, #654b2f, #803b37, #91615b;
+  --cartas: #1f3b30, #b34962, #a75733, #805da8, #6b445c, #756f19, #2f5085;
+
+  /* ---------- Forma ---------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  --shadow-1: 0 1px 0 rgba(20, 40, 25, 0.04), 0 1px 3px rgba(20, 40, 25, 0.08);
+  --shadow-2: 0 1px 2px rgba(20, 40, 25, 0.06), 0 6px 18px rgba(20, 40, 25, 0.10);
+  --shadow-3: 0 2px 6px rgba(20, 40, 25, 0.08), 0 18px 48px rgba(20, 40, 25, 0.18);
+  --blur-glass: saturate(1.2) blur(10px);
+
+  /* ---------- Maquetación ---------- */
+  --topbar-h: 60px;
+  --panel-w: 400px;
+  --timeline-h: 212px;
+}
