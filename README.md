@@ -26,7 +26,7 @@
   <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/fuentes/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.fuentes&label=fuentes&style=flat-square&labelColor=1f3b30&color=76937b" alt="Fuentes"></a>
 </p>
 
-<p align="center">Un mapa y una línea de tiempo movidos por una sola fecha, para estudiar la Biblia en familia con cada relato en su lugar y en su tiempo, y cada dato enlazado a su fuente en wol.jw.org.</p>
+<p align="center">Un mapa y una línea de tiempo movidos por una sola fecha, para estudiar la Biblia en familia con cada relato en su lugar y en su tiempo, y cada dato enlazado a su fuente en jw.org.</p>
 
 <p align="center"><a href="https://biblical-atlas.geiser.cloud/">Aplicación</a> · <a href="https://biblical-atlas.geiser.cloud/docs/">Documentación</a> · <a href="https://biblical-atlas.geiser.cloud/acerca.html">Acerca de</a> · <a href="https://biblical-atlas.geiser.cloud/docs/hoja-de-ruta/">Hoja de ruta</a> · <a href="https://biblical-atlas.geiser.cloud/docs/decisiones/">Decisiones</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
 
@@ -41,7 +41,7 @@
 - Grafo de personas en el que cada arista lleva su verbo y el pasaje que la sostiene, y una vista que conecta a dos personas cualesquiera.
 - Los lugares inciertos se dibujan como zonas o como candidatos, nunca como un punto seguro.
 - Cuatro recorridos guiados, modo lectura, modo presentación y una página con el calendario de la Biblia y sus meses.
-- Cada hecho lleva su fuente, su razón y su fecha de consulta. De jw.org y wol.jw.org se enlaza, nunca se copia.
+- Cada hecho lleva su fuente, su razón y su fecha de consulta. De jw.org se enlaza, nunca se copia.
 - Sitio estático con MapLibre GL, sin servidor ni paso de compilación: abre incluso desde `file://`.
 - Los mismos datos salen en SQLite (`dist/biblical-atlas.sqlite`) para consultarlos fuera del sitio.
 
