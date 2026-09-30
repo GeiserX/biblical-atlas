@@ -93,9 +93,7 @@ function cerrarHoja({ foco = true } = {}) {
   abierta = false;
   cerrarLista();
   mostrar(false);
-  esperando?.removeAttribute('aria-busy');
-  esperando = null;
-  aviso.textContent = '';
+  soltarEspera();
   if (foco) $('#inicio')?.focus({ preventScroll: true });
 }
 /** «Explorar» de siempre (menú, llamadas de otros módulos): la vista de detrás tal como está. */
@@ -127,6 +125,14 @@ function entrarEn(href, desde) {
   esperando?.setAttribute('aria-busy', 'true');
   aviso.textContent = 'Abriendo el mapa…';
 }
+/** El control pulsado antes de los datos deja de esperar: al llegar los datos, al quitar la hoja o con Atrás. */
+function soltarEspera() {
+  esperando?.removeAttribute('aria-busy');
+  esperando = null;
+  aviso.textContent = '';
+}
+// Atrás antes de los datos: la dirección vuelve a la portada y el arranque la leerá; aquí solo se quita la espera.
+window.addEventListener('popstate', () => { if (!BE.D && esperando) soltarEspera(); });
 function avisarFallo() {
   esperando?.removeAttribute('aria-busy');
   aviso.innerHTML = '<span>No se ha podido abrir el mapa.</span><button type="button" class="be-btn" data-p="reintentar">Volver a intentarlo</button>';
@@ -355,7 +361,8 @@ function pintarDatos() {
   }
   if (document.activeElement === input && input.value.trim()) actualizar();   // lo escrito antes de los datos
 }
-BE.inicios.push(() => { if (abierta) pintarDatos(); });
+// Con los datos, nada sigue «Abriendo el mapa…»: si la dirección es un destino, el arranque quita la hoja al leerla.
+BE.inicios.push(() => { soltarEspera(); if (abierta) pintarDatos(); });
 
 // ---------------------------------------------------------------------------
 // La dirección: #portada=1 es la portada, con su propia entrada de historial
