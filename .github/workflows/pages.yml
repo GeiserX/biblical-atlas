@@ -22,6 +22,10 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Este trabajo no hace push y deploy-pages usa el token OIDC; un token persistido lo leerían pip
+          # y cualquier plugin de MkDocs.
+          persist-credentials: false
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
