@@ -195,7 +195,7 @@
 .carril { --fondo: var(--surface); }
 .carril:nth-child(even) { --fondo: var(--surface-2); }
 .m-nombre.fuera .t { background: var(--fondo); padding: 0 2px; margin: 0 -2px; border-radius: 3px; }
-.m-nombre.varias .t { white-space: normal; line-height: 14px; }
+.m-nombre.varias .t { white-space: normal; line-height: 1.12; }
 .m:hover .m-nombre .t { text-decoration: underline; text-underline-offset: 3px; }
 .m.activo .m-barra { box-shadow: 0 0 0 1.5px var(--surface), 0 0 0 3px var(--accent); }
 /* Lo elegido: un marco de tinta alrededor de su dibujo y su nombre, que no depende del color. */

@@ -653,6 +653,22 @@ test('430: a pinch that starts during a drag, and the ruler used with a finger, 
   await p.context().close();
 });
 
+test('430: with «Letra grande» a name on several lines keeps its lines apart and inside its row', async () => {
+  const p = await open(PHONE, 't=50.5&v=8');
+  await p.evaluate(() => document.documentElement.classList.add('be-letra-grande'));
+  await frames(p, 4);
+  const bad = [];
+  for (const [t, s] of [[50.5, 8], [-1512.5, 4125]]) {
+    await goTo(p, t, s);
+    const r = await p.evaluate(() => [...document.querySelectorAll('#linea-filas .m-nombre.varias .t')].filter((x) => parseFloat(getComputedStyle(x).lineHeight) < parseFloat(getComputedStyle(x).fontSize)).map((x) => x.textContent));
+    const walk = await walkLanes(p);
+    bad.push(...r.map((x) => `${t}/${s}: «${x}» lines overlap`), ...walk.problems.map((x) => `${t}/${s}: ${x}`));
+  }
+  note(`430 letra grande: ${bad.length} problems`);
+  assert.deepEqual(bad.slice(0, 10), []);
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

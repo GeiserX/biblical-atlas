@@ -382,7 +382,8 @@ function prepararLetra() {
   if (clave === claveLetra) return;
   claveLetra = clave;
   const fs = parseFloat(cs.fontSize) || 12.5;
-  Object.assign(G, { coarse, row: coarse ? 44 : Math.max(22, Math.ceil(fs * 1.75)), dotR: coarse ? 6 : 5, maxLabel });
+  // Con el dedo un nombre va en tres líneas como mucho (interlínea 1,12 en linea.css): la fila las cabe con cualquier letra.
+  Object.assign(G, { coarse, row: coarse ? Math.max(44, Math.ceil(3 * 1.12 * fs) + 2) : Math.max(22, Math.ceil(fs * 1.75)), dotR: coarse ? 6 : 5, maxLabel });
   lienzo = lienzo || document.createElement('canvas').getContext('2d');
   lienzo.font = fName;
   const space = lienzo.measureText(' ').width;
