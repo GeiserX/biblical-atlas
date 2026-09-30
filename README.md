@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/banner.svg" alt="biblical-atlas, la Biblia en el mapa y en el tiempo: el nombre, la rama de olivo sobre el mar del Mediterráneo oriental y una línea del tiempo de 4026 a.e.c. al año 100" width="900">
+  <img src="docs/images/banner.svg" alt="biblical-atlas, la Biblia en el mapa y en el tiempo: la rama de olivo, el nombre, el relieve del Mediterráneo oriental y una línea del tiempo de 4026 a.e.c. al año 100" width="900">
 </p>
 
 <h1 align="center">biblical-atlas</h1>
