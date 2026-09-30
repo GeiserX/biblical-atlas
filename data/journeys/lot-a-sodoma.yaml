@@ -1,0 +1,91 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: lot-a-sodoma
+name: Lot se va al distrito del Jordán
+person: lot
+reference: Gé 13:5-13; 14:12
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+companions: []
+summary: Las peleas entre los pastores de Lot y los de Abrán obligan a separarse. Lot elige el distrito del Jordán, bien regado,
+  lleva su campamento al este y acaba poniendo su tienda cerca de Sodoma.
+reason: Gé 13:5-13 cuenta la elección y el traslado, y Gé 14:12 dice que Lot ya vivía en Sodoma. Fecha narrativa del suceso
+  «Abrán y Lot se separan».
+sources:
+- genesis-13
+- genesis-14
+- it-lot
+- it-betel
+- it-distrito-del-jordan
+- it-sodoma
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: lot
+  order: 1
+stops:
+- order: 1
+  place: betel
+  reference: Gé 13:3-9
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Elige desde el campamento de Abrán, entre Betel y Hai.
+  reason: Gé 13:3-9 sitúa la disputa y la propuesta de Abrán en el campamento junto a Betel. Fecha narrativa del suceso «Abrán
+    y Lot se separan».
+  sources:
+  - genesis-13
+  - it-betel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: distrito-del-jordan
+  reference: Gé 13:10, 11
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Una región con mucha agua, antes de que Sodoma fuera destruida.
+  reason: Gé 13:11 dice que Lot escogió todo el distrito del Jordán y se fue hacia el este. Misma fecha narrativa.
+  sources:
+  - genesis-13
+  - it-distrito-del-jordan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: sodoma
+  reference: Gé 13:12, 13; 14:12
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: 'Sodoma no tiene punto seguro: el mapa no la dibuja.'
+  reason: Gé 13:12 lo acerca a Sodoma y Gé 14:12 lo muestra viviendo ya en ella. Misma fecha narrativa.
+  sources:
+  - genesis-13
+  - genesis-14
+  - it-sodoma
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

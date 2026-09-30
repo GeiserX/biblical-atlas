@@ -1,0 +1,119 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abrahan-de-haran-a-canaan
+name: De Harán a la tierra de Canaán
+person: abrahan
+reference: Gé 12:4-9; Hch 7:4; Heb 11:8, 9
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1943 a.e.c. y los años siguientes (antes de 1933 a.e.c.)
+companions:
+- sara
+- lot
+summary: A los 75 años, muerto ya Taré, Abrán deja Harán con Sarái, Lot y sus siervos. En Siquem Jehová le promete el país;
+  después acampa entre Betel y Hai y va bajando hacia el Négueb.
+reason: Gé 12:4-9 da las etapas en orden. Perspicacia «Pacto» pone en 1943 a.e.c. el cruce del Éufrates, y el estudio 3 cuenta
+  desde ahí; Betel y el Négueb no tienen año propio.
+sources:
+- genesis-12
+- hechos-7
+- hebreos-11
+- it-abrahan
+- it-pacto
+- si-3
+- it-siquem
+- it-more
+- it-betel
+- it-hai
+- it-negueb
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abrahan
+  order: 2
+stops:
+- order: 1
+  place: haran
+  reference: Gé 12:4, 5; Hch 7:4
+  date:
+    from: -1942
+    to: -1942
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1943 a.e.c.
+  note: Al salir cruza el Éufrates; Perspicacia «Pacto» fecha ese cruce el 14 de nisán.
+  reason: Gé 12:4 dice que Abrán tenía 75 años al dejar Harán. Fecha del suceso «Entra en vigor el pacto con Abrahán».
+  sources:
+  - genesis-12
+  - hechos-7
+  - it-pacto
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: siquem
+  reference: Gé 12:6, 7
+  date:
+    from: -1942
+    to: -1942
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1943 a.e.c.
+  note: Junto a los árboles grandes de Moré levanta un altar.
+  reason: Gé 12:6, 7 lleva a Abrán a la región de Siquem, donde Jehová se le aparece. Fecha del suceso «Jehová se aparece
+    a Abrán en Siquem».
+  sources:
+  - genesis-12
+  - it-siquem
+  - it-more
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: betel
+  reference: Gé 12:8
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Planta su tienda en las montañas entre Betel, al oeste, y Hai, al este. Hai no tiene punto en el mapa.
+  reason: 'Gé 12:8 lo pone al este de Betel. Sin año propio: fecha del suceso «Abrán acampa entre Betel y Hai», dentro de
+    los diez años de Gé 16:3.'
+  sources:
+  - genesis-12
+  - it-betel
+  - it-hai
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: negueb
+  reference: Gé 12:9
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Avanza por etapas, levantando el campamento una y otra vez.
+  reason: Gé 12:9 dice que siguió hacia el Négueb acampando de un sitio a otro. Misma fecha narrativa que la parada anterior.
+  sources:
+  - genesis-12
+  - it-negueb
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

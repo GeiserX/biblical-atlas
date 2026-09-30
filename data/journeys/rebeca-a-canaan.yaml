@@ -1,0 +1,76 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rebeca-a-canaan
+name: Rebeca viaja para casarse con Isaac
+person: rebeca
+reference: Gé 24:10-67
+date:
+  from: -1877
+  to: -1877
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1878 a.e.c.
+companions:
+- debora-nodriza-de-rebeca
+summary: El siervo de Abrahán va con diez camellos a la ciudad de Nacor y encuentra a Rebeca junto al pozo. Ella acepta ir
+  con él, y la caravana baja al Négueb, donde Isaac la recibe como esposa.
+reason: Gé 24 cuenta la ida del siervo y la vuelta con Rebeca; Gé 24:59 y 35:8 dan a su nodriza el nombre de Débora. El estudio
+  3 fecha la boda en 1878 a.e.c., con Isaac de 40 años (Gé 25:20).
+sources:
+- genesis-24
+- genesis-25
+- genesis-35
+- it-rebeca
+- it-isaac
+- it-mesopotamia
+- it-negueb
+- it-beer-lahai-roi
+- it-debora
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ciudad-de-nacor
+  reference: Gé 24:10-61
+  date:
+    from: -1877
+    to: -1877
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1878 a.e.c.
+  note: En Mesopotamia; la ciudad no tiene punto seguro. El siervo ora junto al pozo y Rebeca da de beber a sus camellos.
+  reason: Gé 24:10 lleva al siervo a la ciudad de Nacor, y Gé 24:61 hace salir de allí a Rebeca. Fecha del suceso «El siervo
+    de Abrahán encuentra esposa para Isaac».
+  sources:
+  - genesis-24
+  - it-rebeca
+  - it-mesopotamia
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: negueb
+  reference: Gé 24:62-67
+  date:
+    from: -1877
+    to: -1877
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1878 a.e.c.
+  note: Isaac, que venía del camino de Beer-Lahái-Roí, sale al campo al anochecer y la ve llegar.
+  reason: Gé 24:62 dice que Isaac vivía en el Négueb, y allí la lleva a la tienda de Sara. Fecha del suceso «Isaac se casa
+    con Rebeca».
+  sources:
+  - genesis-24
+  - genesis-25
+  - it-negueb
+  - it-beer-lahai-roi
+  - it-isaac
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

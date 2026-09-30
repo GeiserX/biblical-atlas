@@ -1,0 +1,136 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abrahan-en-egipto
+name: Abrán baja a Egipto por el hambre
+person: abrahan
+reference: Gé 12:10–13:18
+date:
+  from: -1942
+  to: -1932
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+companions:
+- sara
+- lot
+summary: El hambre empuja a Abrán a Egipto, donde el faraón se lleva a Sarái y luego la devuelve. Abrán sube al Négueb, vuelve
+  a su altar entre Betel y Hai y, tras separarse de Lot, se asienta en Mamré.
+reason: Gé 12:10 a 13:18 cuenta la bajada, la vuelta y el traslado a Mamré sin pausa de años. Todos sus sucesos van dentro
+  de los diez primeros años en Canaán (Gé 16:3; estudio 3).
+sources:
+- genesis-12
+- genesis-13
+- genesis-16
+- it-abrahan
+- it-sara
+- it-egipto
+- it-negueb
+- it-betel
+- it-mamre
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abrahan
+  order: 3
+stops:
+- order: 1
+  place: negueb
+  reference: Gé 12:9, 10
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Sale de allí porque el hambre aprieta en el país.
+  reason: Gé 12:9, 10 lo deja en el Négueb cuando llega el hambre. Fecha narrativa del suceso «Abrán y Sarái en Egipto».
+  sources:
+  - genesis-12
+  - it-negueb
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: egipto
+  reference: Gé 12:10-20
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Presenta a Sarái como su hermana; el faraón la toma y, tras las plagas, los despide.
+  reason: Gé 12:10-20 cuenta la estancia en Egipto. Fecha del suceso «Abrán y Sarái en Egipto».
+  sources:
+  - genesis-12
+  - it-egipto
+  - it-sara
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: negueb
+  reference: Gé 13:1, 2
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Sube con Sarái, con Lot y con mucho ganado, plata y oro.
+  reason: Gé 13:1 dice que salió de Egipto hacia el Négueb. Fecha del suceso «Abrán vuelve de Egipto a su campamento entre
+    Betel y Hai».
+  sources:
+  - genesis-13
+  - it-negueb
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: betel
+  reference: Gé 13:3-17
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: Vuelve al sitio de su altar, entre Betel y Hai. Allí se separa de Lot y Jehová le promete todo el país.
+  reason: Gé 13:3, 4 lo lleva por etapas del Négueb a Betel, y Gé 13:5-17 pone allí la separación. Fecha de los sucesos de
+    la vuelta y de la separación.
+  sources:
+  - genesis-13
+  - it-betel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: mamre
+  reference: Gé 13:18
+  date:
+    from: -1942
+    to: -1932
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1943 y 1933 a.e.c. (tiempo narrativo: en los primeros diez años de Abrán en Canaán)'
+  note: En Hebrón; levanta allí otro altar.
+  reason: Gé 13:18 dice que se fue a vivir junto a los árboles de Mamré, en Hebrón. Fecha del suceso «Abrán se instala en
+    Mamré, junto a Hebrón».
+  sources:
+  - genesis-13
+  - it-mamre
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

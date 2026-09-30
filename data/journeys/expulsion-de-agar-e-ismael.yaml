@@ -1,0 +1,76 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: expulsion-de-agar-e-ismael
+name: Agar e Ismael, despedidos al desierto
+person: agar
+reference: Gé 21:14-21; Gál 4:30
+date:
+  from: -1912
+  to: -1842
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1913 a.e.c. (Ismael vive después en Parán, antes de 1843 a.e.c.)
+companions:
+- ismael-hijo-de-abrahan
+summary: Abrahán despide a Agar y a Ismael con pan y un odre de agua. Perdidos en el desierto de Beer-Seba, Dios les muestra
+  un pozo; el muchacho crece, se hace arquero y vive en el desierto de Parán.
+reason: Gé 21:14-21 da las dos etapas. El estudio 3 fecha el despido en 1913 a.e.c.; la vida en Parán no tiene año, y Gé 25:9
+  vuelve a mostrar a Ismael en el entierro de Abrahán.
+sources:
+- genesis-21
+- genesis-25
+- galatas-4
+- it-agar
+- it-ismael
+- it-beer-seba
+- it-paran
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: agar
+  order: 2
+stops:
+- order: 1
+  place: desierto-de-beer-seba
+  reference: Gé 21:14-19
+  date:
+    from: -1912
+    to: -1912
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1913 a.e.c.
+  note: Se acaba el agua; Dios oye al muchacho y le hace ver a Agar un pozo.
+  reason: Gé 21:14 hace vagar a Agar por el desierto de Beer-Seba. Fecha del suceso «Abrahán despide a Agar e Ismael; Dios
+    los salva en el desierto».
+  sources:
+  - genesis-21
+  - it-beer-seba
+  - it-ismael
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: desierto-de-paran
+  reference: Gé 21:20, 21
+  date:
+    from: -1912
+    to: -1842
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1913 y 1843 a.e.c. (tiempo narrativo: tras el despido y antes del entierro de Abrahán)'
+  note: Ismael se hace arquero y su madre le busca una esposa egipcia.
+  reason: 'Gé 21:21 instala a Ismael en el desierto de Parán. Sin año propio: después del despido y antes de que Abrahán muriera
+    (1843 a.e.c.), cuando reaparece.'
+  sources:
+  - genesis-21
+  - genesis-25
+  - it-paran
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

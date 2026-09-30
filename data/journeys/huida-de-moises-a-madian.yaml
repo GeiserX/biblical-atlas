@@ -1,0 +1,70 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-moises-a-madian
+name: Huida de Moisés a Madián
+person: moises
+reference: Éx 2:11-22; Hch 7:23-29
+date:
+  from: -1552
+  to: -1552
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1553 a.e.c.
+companions: []
+summary: Con cuarenta años, Moisés mata a un egipcio que golpeaba a un hebreo. Cuando el faraón intenta matarlo, huye a Madián,
+  defiende a las hijas de Reuel junto a un pozo y se queda allí, casado con Ziporá.
+reason: Éx 2:11-22 y Hch 7:23-29 dan la huida y la llegada, y Hch 7:23 le da cuarenta años. El estudio 3 fecha la huida a
+  Madián en 1553 a.e.c.
+sources:
+- exodo-2
+- hechos-7
+- si-3
+- it-moises
+- it-madian
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 1
+stops:
+- order: 1
+  place: egipto
+  reference: Éx 2:11-14
+  date:
+    from: -1552
+    to: -1552
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1553 a.e.c.
+  note: Al día siguiente descubre que lo que hizo ya se sabe.
+  reason: Éx 2:11-14 pone la muerte del egipcio entre los hebreos de Egipto. Fecha del suceso «Moisés mata a un egipcio para
+    defender a un hebreo».
+  sources:
+  - exodo-2
+  - hechos-7
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: madian
+  reference: Éx 2:15-22; Hch 7:29
+  date:
+    from: -1552
+    to: -1552
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1553 a.e.c.
+  note: Junto a un pozo defiende a las siete hijas del sacerdote Reuel; se casa con Ziporá y nace Guersom.
+  reason: Éx 2:15 dice que huyó del faraón y se instaló en la tierra de Madián. Fecha del suceso «Moisés huye a Madián».
+  sources:
+  - exodo-2
+  - hechos-7
+  - it-madian
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

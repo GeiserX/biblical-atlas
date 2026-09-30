@@ -1,0 +1,198 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: vuelta-de-jacob
+name: Jacob vuelve de Harán a Canaán
+person: jacob
+reference: Gé 31:17–33:20; Os 12:3, 4
+date:
+  from: -1760
+  to: -1750
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1761 a.e.c. y los años siguientes (antes de 1751 a.e.c.)
+companions:
+- lea
+- raquel
+- bilha
+- zilpa
+- ruben-hijo-de-jacob
+- simeon-hijo-de-jacob
+- levi-hijo-de-jacob
+- juda-hijo-de-jacob
+- dan-hijo-de-jacob
+- neftali-hijo-de-jacob
+- gad-hijo-de-jacob
+- aser-hijo-de-jacob
+- isacar-hijo-de-jacob
+- zabulon-hijo-de-jacob
+- jose-hijo-de-jacob
+- dina
+summary: Tras veinte años con Labán, Jacob sale sin avisar con su familia y sus rebaños, pacta con él en Galaad, lucha con
+  un ángel junto al Jaboc, se reconcilia con Esaú y se asienta en Sucot y en Siquem.
+reason: Gé 31:17 a 33:20 da las etapas en orden, y Os 12:3, 4 recuerda la lucha. Los sucesos del camino son de 1761 a.e.c.;
+  la llegada a Siquem va antes de nacer Benjamín, sin año propio.
+sources:
+- genesis-31
+- genesis-32
+- genesis-33
+- oseas-12
+- it-jacob
+- it-galaad
+- it-galeed
+- it-mahanaim
+- it-jaboq
+- it-penuel
+- it-sucot
+- it-siquem
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jacob
+  order: 2
+stops:
+- order: 1
+  place: haran
+  reference: Gé 31:17-21
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1761 a.e.c.
+  note: Cruza el Río. El texto habla de Padán-Aram, la región donde está Harán.
+  reason: Gé 31:18 lo hace salir de Padán-Aram, y Perspicacia «Jacob» mide el camino desde Harán. Fecha del suceso «Jacob
+    sale de Padán-Aram hacia Canaán sin avisar a Labán».
+  sources:
+  - genesis-31
+  - it-jacob
+  - it-haran
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: galaad
+  reference: Gé 31:21-55
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1761 a.e.c.
+  note: Labán lo alcanza; levantan el montón de Galeed y hacen un pacto.
+  reason: Gé 31:21 dice que se dirigió a la región montañosa de Galaad, y allí lo alcanza Labán. Fecha de los sucesos del
+    encuentro y del pacto.
+  sources:
+  - genesis-31
+  - it-galaad
+  - it-galeed
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: mahanaim
+  reference: Gé 32:1-21
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1761 a.e.c.
+  note: Ve a los ángeles de Dios y manda por delante regalos para Esaú.
+  reason: Gé 32:1, 2 da nombre a Mahanaim por los ángeles. Fecha de los sucesos «Jacob ve a los ángeles de Dios en Mahanaim»
+    y «Jacob se prepara para encontrarse con Esaú».
+  sources:
+  - genesis-32
+  - it-mahanaim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: rio-jaboc
+  reference: Gé 32:22, 23
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1761 a.e.c.
+  note: Pasa de noche por el vado con sus esposas, sus siervas y sus once hijos.
+  reason: Gé 32:22, 23 le hace cruzar el Jaboc por la parte menos honda. Fecha del suceso «Jacob lucha con un ángel y recibe
+    el nombre de Israel».
+  sources:
+  - genesis-32
+  - it-jaboq
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: penuel
+  reference: Gé 32:24–33:16
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1761 a.e.c.
+  note: Lucha con un ángel hasta el amanecer y recibe el nombre de Israel; después se encuentra con Esaú.
+  reason: Gé 32:30, 31 llama Peniel y Penuel al lugar de la lucha, y Gé 33:1-16 sigue allí con Esaú. Fecha de los sucesos
+    de la lucha y de la reconciliación.
+  sources:
+  - genesis-32
+  - genesis-33
+  - oseas-12
+  - it-penuel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: sucot
+  reference: Gé 33:17
+  date:
+    from: -1760
+    to: -1760
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1761 a.e.c.
+  note: Se hace una casa y refugios para el ganado.
+  reason: Gé 33:17 lleva a Jacob a Sucot y explica su nombre. Fecha del suceso «Jacob se establece en Sucot».
+  sources:
+  - genesis-33
+  - it-sucot
+  - it-jacob
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: siquem
+  reference: Gé 33:18-20
+  date:
+    from: -1760
+    to: -1750
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1761 y 1751 a.e.c. (tiempo narrativo: tras la vuelta de Jacob a Canaán y antes de nacer Benjamín)'
+  note: Compra a los hijos de Hamor el campo donde acampa y levanta un altar.
+  reason: Gé 33:18 dice que llegó sano y salvo a Siquem, en Canaán. Fecha narrativa del suceso «Jacob compra un campo junto
+    a Siquem».
+  sources:
+  - genesis-33
+  - it-siquem
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

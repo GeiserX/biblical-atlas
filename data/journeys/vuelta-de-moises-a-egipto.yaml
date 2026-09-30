@@ -1,0 +1,116 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: vuelta-de-moises-a-egipto
+name: Moisés vuelve de Madián a Egipto
+person: moises
+reference: Éx 3:1–4:31; Hch 7:30-35
+date:
+  from: -1513
+  to: -1512
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1514-1513 a.e.c. (de la zarza a la vuelta, antes del éxodo)
+companions: []
+summary: Pastoreando el rebaño de Jetró junto a Horeb, Moisés oye a Jehová en la zarza. Vuelve a despedirse de Jetró, sale
+  hacia Egipto con su familia y, en la montaña de Dios, Aarón le sale al encuentro.
+reason: Éx 3:1 a 4:31 da las etapas en orden. El estudio 3 pone la zarza hacia 1514 a.e.c.; lo demás va después y antes del
+  éxodo de 1513, sin año propio.
+sources:
+- exodo-3
+- exodo-4
+- hechos-7
+- si-3
+- it-moises
+- it-horeb
+- it-jetro
+- it-zipora
+- it-aaron
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 2
+stops:
+- order: 1
+  place: monte-sinai
+  reference: Éx 3:1–4:17
+  date:
+    from: -1513
+    to: -1513
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1514 a.e.c.
+  note: El texto lo llama Horeb, la montaña del Dios verdadero. Su punto no es seguro y el mapa no lo dibuja.
+  reason: Éx 3:1 lleva a Moisés con el rebaño hasta Horeb, donde oye a Jehová. Fecha del suceso «Jehová llama a Moisés desde
+    la zarza ardiente».
+  sources:
+  - exodo-3
+  - it-horeb
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: madian
+  reference: Éx 4:18-23
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: Jetró lo deja ir en paz; sube a su esposa y a sus hijos a un burro.
+  reason: Éx 4:18-20 lo hace volver a Jetró y salir de Madián hacia Egipto. Fecha narrativa del suceso «Moisés deja Madián
+    y vuelve a Egipto».
+  sources:
+  - exodo-4
+  - it-jetro
+  - it-zipora
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-sinai
+  reference: Éx 4:24-28
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: En un alto del camino, sin nombre, Ziporá circuncida a su hijo. Luego Aarón lo encuentra en la montaña de Dios.
+  reason: Éx 4:27 pone el encuentro con Aarón en la montaña del Dios verdadero, que Éx 3:1 llama Horeb. Fecha narrativa del
+    suceso «Aarón sale al encuentro de Moisés en la montaña de Dios».
+  sources:
+  - exodo-3
+  - exodo-4
+  - it-aaron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: egipto
+  reference: Éx 4:29-31
+  date:
+    from: -1513
+    to: -1512
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1514 y 1513 a.e.c. (tiempo narrativo: después de la zarza y antes del éxodo)'
+  note: Reúnen a los ancianos, y el pueblo cree al ver las señales.
+  reason: Éx 4:29-31 los muestra ya con los ancianos de Israel en Egipto. Fecha narrativa del suceso «Moisés y Aarón muestran
+    las señales a los ancianos de Israel».
+  sources:
+  - exodo-4
+  - it-moises
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

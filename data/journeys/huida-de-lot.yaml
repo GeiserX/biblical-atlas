@@ -1,0 +1,72 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-lot
+name: Lot huye de Sodoma a Zóar
+person: lot
+reference: Gé 19:12-30
+date:
+  from: -1918
+  to: -1918
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1919 a.e.c.
+companions: []
+summary: Al amanecer, los ángeles sacan de Sodoma a Lot con su mujer y sus dos hijas. Lot pide quedarse en Zóar; su esposa
+  mira atrás. Después, con miedo, sube con sus hijas a una cueva de las montañas.
+reason: Gé 19:12-30 da la salida, el refugio en Zóar y la subida a las montañas. El estudio 3 fecha el juicio de Sodoma en
+  1919 a.e.c.
+sources:
+- genesis-19
+- it-lot
+- it-zoar
+- it-sodoma
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: lot
+  order: 2
+stops:
+- order: 1
+  place: sodoma
+  reference: Gé 19:12-17
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1919 a.e.c.
+  note: 'Sodoma no tiene punto seguro: el mapa no la dibuja.'
+  reason: Gé 19:15, 16 cuenta cómo los ángeles los sacan de la ciudad de la mano. Fecha del suceso «Lot sale de Sodoma y huye
+    a Zóar».
+  sources:
+  - genesis-19
+  - it-sodoma
+  - it-lot
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: zoar
+  reference: Gé 19:18-23, 30
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1919 a.e.c.
+  note: Pequeña ciudad que se salva por su ruego. Luego se van a vivir a una cueva de las montañas, sin nombre. Zóar no tiene
+    punto en el mapa.
+  reason: Gé 19:22, 23 lo hace llegar a Zóar al salir el sol, y Gé 19:30 lo saca de allí por miedo. Fecha de los sucesos de
+    la huida y de la destrucción.
+  sources:
+  - genesis-19
+  - it-zoar
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

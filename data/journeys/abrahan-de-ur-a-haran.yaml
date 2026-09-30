@@ -1,0 +1,83 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abrahan-de-ur-a-haran
+name: De Ur a Harán
+person: abrahan
+reference: Gé 11:31, 32; Hch 7:2-4
+date:
+  from: -1947
+  to: -1942
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1948-1943 a.e.c. (salida de Ur calculada; en Harán hasta la salida hacia Canaán)
+  note: 'Taré tenía 130 años al nacer Abrahán en 2018 a.e.c. y unos 200 al salir de Ur: 2018 menos 70 da 1948. La estancia
+    acaba en 1943, con el pacto.'
+companions:
+- tare
+- sara
+- lot
+summary: Dios llama a Abrán en Ur. Taré sale con Abrán, Sarái y Lot rumbo a Canaán, pero la familia se asienta en Harán y
+  allí se queda hasta que muere Taré.
+reason: Gé 11:31, 32 cuenta la salida de Ur y la estancia en Harán; Hch 7:2-4 pone la llamada antes de Harán. La fecha es
+  una cuenta nuestra sobre Perspicacia «Abrahán», como el suceso de la salida.
+sources:
+- genesis-11
+- hechos-7
+- it-abrahan
+- it-tare
+- it-ur
+- it-haran
+- si-3
+checked_on: '2026-09-30'
+status: pending
+narrative_order:
+  series: abrahan
+  order: 1
+stops:
+- order: 1
+  place: ur
+  reference: Gé 11:28, 31; Hch 7:2
+  date:
+    from: -1947
+    to: -1947
+    precision: year
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1948 a.e.c.
+    note: 'Taré tenía 130 años al nacer Abrahán en 2018 a.e.c. y unos 200 al salir de Ur: 2018 menos 70 da 1948.'
+  note: Ur de los caldeos, donde había muerto Harán, el hermano de Abrán.
+  reason: Gé 11:31 pone la salida en Ur de los caldeos, y Hch 7:2 sitúa allí la primera llamada. Fecha calculada del suceso
+    «Taré sale de Ur y se establece en Harán».
+  sources:
+  - genesis-11
+  - hechos-7
+  - it-tare
+  - it-ur
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: haran
+  reference: Gé 11:31, 32; Hch 7:4
+  date:
+    from: -1947
+    to: -1942
+    precision: range
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1948-1943 a.e.c.
+    note: Llegada en la fecha calculada de la salida de Ur (1948); la estancia acaba en 1943, cuando Abrán cruza el Éufrates.
+  note: Viven allí hasta que muere Taré, con 205 años.
+  reason: Gé 11:31, 32 dice que se quedaron a vivir en Harán y que Taré murió allí; Hch 7:4 hace salir a Abrahán después de
+    esa muerte.
+  sources:
+  - genesis-11
+  - hechos-7
+  - it-haran
+  - it-abrahan
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

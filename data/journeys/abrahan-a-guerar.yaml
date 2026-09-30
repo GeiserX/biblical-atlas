@@ -1,0 +1,95 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: abrahan-a-guerar
+name: Abrahán se traslada al Négueb y vive en Guerar
+person: abrahan
+reference: Gé 20:1-18
+date:
+  from: -1918
+  to: -1918
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1919 a.e.c.
+companions:
+- sara
+summary: El año de la destrucción de Sodoma, Abrahán deja Mamré y se instala en el Négueb, entre Cadés y Sur. En Guerar vuelve
+  a decir que Sara es su hermana, y el rey Abimélec se la devuelve.
+reason: Gé 18:1 y 19:27 lo dejan en Mamré, y Gé 20:1 lo lleva al Négueb y a Guerar. Perspicacia «Abimélec» pone la estancia
+  en Guerar hacia 1919 a.e.c.
+sources:
+- genesis-18
+- genesis-19
+- genesis-20
+- it-abrahan
+- it-abimelec
+- it-mamre
+- it-negueb
+- it-guerar
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: abrahan
+  order: 5
+stops:
+- order: 1
+  place: mamre
+  reference: Gé 18:1; 19:27
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1919 a.e.c.
+  note: Allí lo visitan los tres ángeles.
+  reason: Gé 18:1 pone la visita de los ángeles en Mamré, y Gé 19:27 lo muestra en esa zona la mañana de la destrucción. Fecha
+    del suceso «Tres ángeles visitan a Abrahán en Mamré».
+  sources:
+  - genesis-18
+  - genesis-19
+  - it-mamre
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: negueb
+  reference: Gé 20:1
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1919 a.e.c.
+  note: Vive entre Cadés y Sur.
+  reason: Gé 20:1 dice que mudó su campamento al Négueb. Fecha del suceso «Abimélec se lleva a Sara en Guerar y se la devuelve
+    a Abrahán».
+  sources:
+  - genesis-20
+  - it-negueb
+  - it-abimelec
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guerar
+  reference: Gé 20:1-18
+  date:
+    from: -1918
+    to: -1918
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1919 a.e.c.
+  note: Guerar tiene dos candidatos y no sale en el mapa.
+  reason: Gé 20:1, 2 lo muestra viviendo en Guerar, donde el rey toma a Sara. Misma fecha que la parada anterior.
+  sources:
+  - genesis-20
+  - it-guerar
+  - it-abimelec
+  checked_on: '2026-09-30'
+  status: verified
