@@ -27,7 +27,7 @@ const L = {
   pausa: true,            // pausa en los sucesos al reproducir (T-11)
   regla: null,            // [a, b] medidos con la regla (T-15)
   bucle: null,            // [a, b] que la reproducción repite (T-12)
-  grande: false,          // línea alta (tecla T); en la pantalla ancha es como abre
+  grande: false,          // línea alta (tecla T); en la pantalla ancha y alta es como abre
   pedida: false,          // alta pedida con la T, el botón o el menú: gana también al grafo abierto
   modoRegla: false,
   meses: null,            // «ambos», «nuestros» o «hebreos»; null: lo de siempre, ambos
@@ -1359,6 +1359,8 @@ function encuadrarTiempo(a, b, ocupa = 1 / 1.08) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
+/** La línea abre alta en la pantalla ancha si al mapa le quedan unos 260 px; en una pantalla baja abre normal. */
+const altaDeInicio = () => !estrecha() && innerHeight >= 840;
 /** Con el grafo o la conexión encima del mapa, la línea alta de inicio les deja su sitio (linea.css); pedida con la T,
     el botón o el menú, se ve alta también con ellos. */
 const grafoEncima = () => !!document.querySelector('.mapa > :is(.vista-grafo, .vista-conexion):not([hidden])');
@@ -1981,10 +1983,10 @@ BE.parametros.push(
   { nombre: 'vel', escribir: () => (L.vel != null ? claveVel(VELOCIDADES[L.vel]) : null), leer: (v) => { const i = VELOCIDADES.findIndex((x) => claveVel(x) === v); L.vel = i >= 0 ? i : null; } },
   { nombre: 'regla', escribir: () => rango(L.regla), leer: (v) => { L.regla = leerRango(v); } },
   { nombre: 'bucle', escribir: () => rango(L.bucle), leer: (v) => { L.bucle = leerRango(v); } },
-  // La línea alta es como abre en la pantalla ancha: la dirección solo lo dice cuando no es lo de siempre («linea=normal»
-  // en la ancha, «linea=grande» en el móvil).
-  { nombre: 'linea', escribir: () => (L.grande === !estrecha() ? null : L.grande ? 'grande' : 'normal'),
-    leer: (v) => { const on = v === 'grande' ? true : v === 'normal' ? false : !estrecha(); if (on !== $('#app').classList.contains('linea-grande')) ponerGrande(on); else L.grande = on; } },
+  // La línea alta es como abre en la pantalla ancha y alta: la dirección solo lo dice cuando no es lo de siempre
+  // («linea=normal» en esa pantalla, «linea=grande» en el móvil o en una pantalla baja).
+  { nombre: 'linea', escribir: () => (L.grande === altaDeInicio() ? null : L.grande ? 'grande' : 'normal'),
+    leer: (v) => { const on = v === 'grande' ? true : v === 'normal' ? false : altaDeInicio(); if (on !== $('#app').classList.contains('linea-grande')) ponerGrande(on); else L.grande = on; } },
   // Sin «meses» en la dirección vale lo de siempre: ambos, también en el móvil.
   { nombre: 'meses', escribir: () => L.meses, leer: (v) => { L.meses = MODOS_MESES.some(([k]) => k === v) ? v : null; } },
 );

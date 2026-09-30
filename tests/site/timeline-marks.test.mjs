@@ -508,6 +508,21 @@ test('1440: the panel opens tall, the splitter shrinks it and the size survives 
   assert.ok(Math.abs(h1 - (h0 - 200)) <= 4);
   assert.ok(Math.abs(h2 - h1) <= 2);
   await context.close();
+  // On a low screen the strip opens at its normal height, so the map keeps its room; T still raises it.
+  const low = await browser.newContext({ deviceScaleFactor: 1, viewport: { width: 1366, height: 768 } });
+  const q = await low.newPage();
+  q.on('pageerror', (e) => errors.push(`panel 768 pageerror: ${e.message}`));
+  await q.goto(`${base}#t=50.5&v=8`);
+  await q.waitForFunction(() => window.BE?.lineaMarcas && document.querySelector('#linea-filas .m'), null, { timeout: 25000 });
+  await frames(q);
+  const l0 = await q.evaluate(() => document.querySelector('#linea').offsetHeight);
+  await q.evaluate(() => document.activeElement?.blur());
+  await q.keyboard.press('t'); await frames(q, 4);
+  const l1 = await q.evaluate(() => document.querySelector('#linea').offsetHeight);
+  note(`1366x768 panel: opens at ${l0} px, T → ${l1} px; hash «${await q.evaluate(() => location.hash)}»`);
+  assert.ok(l0 <= 260, `opens at ${l0}`);
+  assert.ok(l1 > l0 + 100);
+  await low.close();
 });
 
 test('1440: the sincronía lies above the strip: its place picker takes the click and «Cerrar» closes it', async () => {

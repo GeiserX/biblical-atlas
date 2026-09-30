@@ -119,7 +119,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `secular` | `0` | Oculta las fechas seculares |
 | `pausa` | `0` | No se para en los sucesos al reproducir |
 | `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
-| `linea` | `normal`, `grande` | Alto de la línea de tiempo cuando no es el de siempre: en la pantalla ancha abre alta y `normal` la baja; en el móvil `grande` la sube |
+| `linea` | `normal`, `grande` | Alto de la línea de tiempo cuando no es el de siempre: en la pantalla ancha de 840 px de alto o más abre alta y `normal` la baja; en el móvil o en una pantalla más baja `grande` la sube |
 | `meses` | `ambos`, `nuestros`, `hebreos` | Filas de meses de la línea a escala de meses y de días, y qué fecha va primero arriba. Sin él, ambos |
 | `ahora`, `sinc` | `1`; `<lugar>~<periodo>` | Vista «Ahora mismo»; sincronía de un lugar en un periodo |
 | `grafo`, `gvista`, `gtodo` | ids unidos por `.`; una persona va por su id y lo demás con su tipo (`pablo.lugar:listra.evento:concilio-de-jerusalen-49`); `lista` o `grafo`; `1` | Grafo (el último es el centro; cualquier selección puede serlo, y con el grafo abierto lo seleccionado pasa al centro), su vista y si enseña todas las fechas |
@@ -226,7 +226,7 @@ BE.tipo('lugar', {
 
 ### Marcos que cambian de tamaño
 
-Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-earth:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana. En la pantalla ancha la línea abre alta (`min(62vh, 600px)`); un alto arrastrado en esta sesión gana al recargar.
+Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-earth:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana. En la pantalla ancha la línea abre alta (`min(62vh, 600px)`) si la ventana mide 840 px de alto o más, para que al mapa le queden unos 260 px; en una pantalla más baja abre con su alto normal y la T, el botón o el separador la suben. Con el grafo o la conexión abiertos, la línea alta de inicio les deja su sitio; pedida con la T, se ve alta también con ellos. Un alto arrastrado en esta sesión gana al recargar.
 
 ### Móvil, tableta y dedo
 
