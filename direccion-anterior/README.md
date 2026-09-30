@@ -27,7 +27,7 @@ El sitio vivía en `https://biblical-earth.geiser.cloud/` y ahora vive en `https
 
 ## Publicarlo
 
-1. `npx wrangler deploy` desde esta carpeta, con una sesión de `wrangler login` que pueda publicar Workers en la zona `geiser.cloud`. La ruta de `wrangler.toml` ya es `biblical-earth.geiser.cloud/*`: la dirección nueva sirve el sitio desde el 30 de septiembre de 2026 y el registro DNS anterior ya pasa por el proxy de Cloudflare, así que hasta que el Worker se publique la dirección anterior contesta 404.
+1. Antes de unir a main el cambio que trae `site/js/traer.js`: sin el Worker, cada carga del sitio nuevo pide `/puente.html`, recibe un 404 y lo vuelve a pedir en la carga siguiente. Desde esta carpeta, `npx wrangler deploy --dry-run --outdir "$(mktemp -d)"` tiene que construir sin errores y dejar `puente.html` y `puente.js` como módulos de texto; después, `npx wrangler deploy` con una sesión de `wrangler login` que pueda publicar Workers en la zona `geiser.cloud`. La ruta de `wrangler.toml` ya es `biblical-earth.geiser.cloud/*`: la dirección nueva sirve el sitio desde el 30 de septiembre de 2026 y el registro DNS anterior ya pasa por el proxy de Cloudflare, así que hasta que el Worker se publique la dirección anterior contesta 404.
 2. Comprobar que `/data.json` acaba en 200 en la dirección nueva, que `/acerca.html?x=1` conserva ruta y consulta y que `/puente.html` contesta 200 con su cabecera `content-security-policy`.
 3. Con el puente probado en los dos dominios, `REDIRECCION` pasa de 302 a 301. Un 301 equivocado se queda en la caché del navegador, por eso va al final.
 
