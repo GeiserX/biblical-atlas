@@ -16,6 +16,8 @@ sources:
 - it-colosas
 - colosenses-1
 - openbible-geo
+- colosenses-2
+- colosenses-4
 links:
 - title: 'Perspicacia: «Colosas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001010
@@ -23,5 +25,5 @@ links:
 - title: Colosenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
   type: bible
-checked_on: '2026-09-27'
+checked_on: '2026-09-29'
 status: verified

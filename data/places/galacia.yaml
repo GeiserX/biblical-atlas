@@ -18,6 +18,8 @@ sources:
 - openbible-geo
 - hch-16
 - 1-corintios-16
+- galatas-1
+- galatas-4
 links:
 - title: 'Perspicacia: «Galacia»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001594
@@ -25,5 +27,6 @@ links:
 - title: Hechos 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/18
   type: bible
+coord_note: Punto representativo de OpenBible para toda la provincia romana; no es una ciudad.
 checked_on: '2026-09-29'
 status: verified

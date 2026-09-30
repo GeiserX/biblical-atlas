@@ -33,6 +33,7 @@ sources:
 - hch-15
 - hch-21
 - 1-corintios-9
+- galatas-2
 distinct_from:
 - santiago-hijo-de-zebedeo
 - santiago-hijo-de-alfeo
@@ -71,6 +72,7 @@ relations:
   - galatas-1
   - hechos-12
   - hch-21
+  - galatas-2
   reason: Perspicacia «Santiago, Carta de» dice que residía en Jerusalén (Gál 1:18, 19).
   checked_on: '2026-09-29'
   status: verified
