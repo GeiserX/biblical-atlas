@@ -227,6 +227,16 @@ function preguntas(q) {
     // Sin ese nombre en los datos no se adivina otro parecido: se ofrece la fecha, que ya enseña quién había.
     else if (y2 != null && enRango(y2)) out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y2)}`, meta: 'ese nombre no está en los datos como lugar ni persona; la fecha enseña quién había', puntos: 900, accion: () => saltarA(y2 + 0.5) });
   }
+  // «Jerusalén 33», «Babilonia 539 a.e.c.», «Pablo 51»: lo mismo sin «en», solo con un lugar o una persona. Si lo
+  // primero es un libro, es un capítulo («Juan 3», «1 Corintios 13») y lo contesta el tipo pasaje.
+  if (!out.some((r) => r.grupo === 'Preguntas')) {
+    m = nq.match(/^(.+?)\s+((?:c\.?\s*)?\d{1,4}(?:\s*[a-z][a-z.\s]*)?)$/);
+    const y3 = m ? leerAnio(m[2]) : null;
+    if (y3 != null && !BE.libro(m[1])) {
+      const a = entidad(m[1], ['lugar', 'persona']);
+      if (a) out.push({ grupo: 'Preguntas', titulo: `${a.titulo} en ${fmtAnio(y3)}`, meta: `abre la ficha con el cursor en ${fmtAnio(y3)}`, puntos: 950, sel: a.sel, accion: () => saltarA(y3 + 0.5, a.sel) });
+    }
+  }
   return out;
 }
 
@@ -294,6 +304,23 @@ function sugerencias(q) {
 // ---------------------------------------------------------------------------
 // Lista de resultados
 // ---------------------------------------------------------------------------
+/** La forma de cada tipo en las listas de resultados (el símbolo #f-<forma> de index.html): la forma y la palabra
+    dicen el tipo; el color solo acompaña. */
+const FORMA_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'suceso', periodo: 'periodo', pasaje: 'texto', libro: 'texto', carta: 'texto',
+  viaje: 'ruta', recorrido: 'ruta', parada: 'ruta', hallazgo: 'hallazgo' };
+const TIPO_GRUPO = { Fechas: 'fecha', 'Meses hebreos': 'mes hebreo', Preguntas: 'pregunta' };
+/** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
+    título, la etiqueta, el resto de la línea y la fecha (si la línea no la dice ya). */
+function filaResultado(r) {
+  const deTipo = !!(r.sel && !r.accion);
+  let forma;
+  if (r.accion && !r.sel) forma = r.grupo === 'Preguntas' ? 'conexion' : 'anio';
+  else if (r.accion && r.grupo === 'Preguntas' && /^¿Cómo se relaciona/.test(r.titulo)) forma = 'conexion';
+  else forma = FORMA_TIPO[r.sel?.tipo] || 'texto';
+  const tipo = deTipo ? (TIPO_TEXTO[r.sel.tipo] || '') : (TIPO_GRUPO[r.grupo] || '');
+  const fecha = r.fechaTexto && !norm(r.meta || '').includes(norm(r.fechaTexto)) ? r.fechaTexto : '';
+  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta: r.meta || '', fecha };
+}
 let resultados = [], activo = 0, previa = false;
 function pintarResultados() {
   const caja = $('#resultados'), q = $('#q');
@@ -309,10 +336,11 @@ function pintarResultados() {
       grupo = r.grupo;
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
       const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
+      const f = filaResultado(r);
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
-        <span class="res-texto"><span class="be-result__title">${marcar(r.titulo)}${r.etiqueta ? ` <span class="res-etiqueta">${esc(r.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${r.sel && TIPO_TEXTO[r.sel.tipo] && !r.accion ? `${TIPO_TEXTO[r.sel.tipo]}${r.meta ? ' · ' : ''}` : ''}${esc(r.meta || '')}</span></span>
-        ${r.fechaTexto && !norm(r.meta || '').includes(norm(r.fechaTexto)) ? `<span class="res-fecha">${esc(r.fechaTexto)}</span>` : ''}</div>`;
+        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${f.deTipo && f.tipo ? `${f.tipo}${f.meta ? ' · ' : ''}` : ''}${esc(f.meta)}</span></span>
+        ${f.fecha ? `<span class="res-fecha">${esc(f.fecha)}</span>` : ''}</div>`;
     }).join('');
   }
   caja.hidden = false;
@@ -321,8 +349,9 @@ function pintarResultados() {
   $('#caja-busqueda').classList.add('be-search--focus');
   vistaPrevia();
 }
-function marcar(titulo) {
-  const nq = norm($('#q').value).trim();
+/** El título con lo escrito subrayado (<mark>), para las dos listas. */
+function marcar(titulo, q) {
+  const nq = norm(q).trim();
   const n = norm(titulo);
   const i = nq ? n.indexOf(nq) : -1;
   if (i < 0) return esc(titulo);
@@ -348,6 +377,11 @@ function elegir(i) {
   if (!r) return;
   $('#q').value = r.titulo;
   cerrarResultados();
+  elegirResultado(r);
+  $('#q').blur();
+}
+/** Lo que hace un resultado elegido, en cualquiera de las dos cajas. */
+function elegirResultado(r) {
   if (r.accion) r.accion();
   else {
     // Con «¿Cómo se relaciona?» abierto, lo buscado entra en la pregunta; con el grafo abierto, pasa al centro al
@@ -355,7 +389,6 @@ function elegir(i) {
     BE.conexion?.rellenar?.(BE.selTexto(r.sel));
     seleccionar(r.sel);
   }
-  $('#q').blur();
 }
 function iniciarBusqueda() {
   const q = $('#q');
@@ -405,6 +438,9 @@ const historia = (() => {
   return {
     /** Un salto de fecha que merece su entrada (un año buscado, una parada): se guarda la vista de antes. */
     marcar() { if (clave !== null && !(navegando > performance.now())) { empujar(); marcado = true; setTimeout(() => { marcado = false; }, 100); } },
+    /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino. Se guarda la de la portada y, durante
+        el mismo margen que Atrás, ni el pintor ni marcar() crean otra; fn pone el destino. */
+    entrar(fn) { empujar(); navegando = performance.now() + 600; marcado = false; fn(); },
   };
 })();
 
@@ -464,5 +500,6 @@ function anunciar() {
 }
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
-Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, objetoSel, fechaSel, historia, textoCita });
+Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, objetoSel, fechaSel, historia, textoCita,
+  filaResultado, marcar, elegirResultado, sugerencias });
 })();
