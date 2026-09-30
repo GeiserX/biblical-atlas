@@ -29,6 +29,8 @@
   }
 }
 </script>
+<!-- Primero de los que leen el almacenamiento: copia las claves guardadas con el prefijo anterior. -->
+<script src="js/migrar-claves.js"></script>
 <script>
   // Modo reunión antes del primer pintado: sin esto la página sale clara un instante y luego se oscurece.
   try { if (localStorage.getItem('biblical-earth:pref:reunion') === '1') document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }
