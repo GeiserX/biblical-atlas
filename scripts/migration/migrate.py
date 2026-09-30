@@ -117,7 +117,8 @@ MAP_PATH = HERE / "map.yaml"
 # Las decisiones de este script: las que se aplican si el checkout que se migra no trae las suyas.
 DECISIONS_DIR = HERE / "decisions"
 LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
-DECISIONS_FORMAT = "biblical-earth/migration-decisions/1"
+DECISIONS_FORMAT = "biblical-atlas/migration-decisions/1"
+DECISIONS_FORMATS = (DECISIONS_FORMAT, "biblical-earth/migration-decisions/1")  # nombre-fijo: decisiones escritas antes
 REPORT_FORMAT = "biblical-earth/migration-report/1"
 DATE_KEYS = ("consultado", "checked_on")
 STATUS_KEYS = ("estado", "status")
@@ -1017,7 +1018,7 @@ class Migration:
         self.decision_files = len(files)
         for p in files:
             d = load(p)
-            if not isinstance(d, dict) or d.get("format") != DECISIONS_FORMAT:
+            if not isinstance(d, dict) or d.get("format") not in DECISIONS_FORMATS:
                 self.stop(f"{p.name}: format no es {DECISIONS_FORMAT}")
                 continue
             if not re.match(r"^\d{4}-\d{2}-\d{2}$", iso(d.get("checked_on") or "")):

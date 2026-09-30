@@ -15,7 +15,8 @@ const { esc } = BE;
 
 const STORAGE_KEY = 'biblical-earth:notes';
 const UNREADABLE_PREFIX = 'biblical-earth:notes:unreadable';
-const FORMAT = 'biblical-earth-notes';
+const FORMAT = 'biblical-atlas-notes';
+const FORMATS = [FORMAT, 'biblical-earth-notes'];   // nombre-fijo: files and stores written before keep importing
 const VERSION = 1;
 const MAX_TEXT = 10000;   // what the note box lets a person type; text already stored or imported is never cut
 const LIMIT_MSG = 'Has llegado al máximo de 10 000 caracteres.';
@@ -102,7 +103,7 @@ function readEntries(entries) {
 /** Checks a parsed store or export file. Returns { notes, rest, skipped }, or { error } with a message for the reader
     (plus the notes it could read, when they come from a newer version of the site). */
 function validate(obj) {
-  if (!obj || typeof obj !== 'object' || obj.format !== FORMAT || typeof obj.notes !== 'object' || !obj.notes || Array.isArray(obj.notes)) {
+  if (!obj || typeof obj !== 'object' || !FORMATS.includes(obj.format) || typeof obj.notes !== 'object' || !obj.notes || Array.isArray(obj.notes)) {
     return { error: 'Este fichero no son notas de biblical-earth.' };
   }
   if (!Number.isInteger(obj.version) || obj.version < 1) return { error: 'Este fichero no son notas de biblical-earth.' };

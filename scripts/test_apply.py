@@ -200,6 +200,14 @@ class Prueba(unittest.TestCase):
         x2 = read_yaml(a / "people" / "x2.yaml")
         self.assertEqual(x2["relations"][0]["word"], "father")
 
+    def test_a_proposal_with_the_previous_format_applies(self):
+        a, b = self.data("a"), self.data("b")
+        antes = dict(P1, formato="biblical-earth/propuesta-cobertura/1")  # nombre-fijo: propuestas escritas antes
+        self.assertEqual(self.correr(a, antes)[0], 0)
+        self.assertEqual(self.correr(b, P1)[0], 0)
+        self.iguales(a, b)
+        self.assertNotEqual(self.correr(self.data("c"), dict(P1, formato="otra-cosa/1"))[0], 0)
+
     def test_solo_cambian_las_lineas_tocadas(self):
         a = self.data("a")
         self.correr(a, P1)

@@ -53,7 +53,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "migration"))
 import migrate  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
-FORMATO = "biblical-earth/propuesta-cobertura/1"
+FORMATO = "biblical-atlas/propuesta-cobertura/1"
+FORMATOS = (FORMATO, "biblical-earth/propuesta-cobertura/1")  # nombre-fijo: propuestas escritas antes
 SINGULAR = {"places": "lugar", "people": "persona", "journeys": "viaje", "letters": "carta", "events": "evento",
             "periods": "periodo", "finds": "hallazgo", "tours": "recorrido"}
 CLAVE = re.compile(r"^([^\s#\-][^:]*):(?:\s|$)")
@@ -635,7 +636,7 @@ class Escritor:
     def aplicar(self, props):
         por_libro = {}
         for p in props:
-            if p.get("formato") != FORMATO:
+            if p.get("formato") not in FORMATOS:
                 raise Error(f"{p.get('_ruta')}: formato '{p.get('formato')}', se esperaba '{FORMATO}'")
             for k in ("libro", "leido"):
                 if not p.get(k):

@@ -452,13 +452,23 @@ class Proposal(Base):
 
 
 class Decisions(Base):
-    def decide(self, entradas, nombre="K1.yaml"):
+    def decide(self, entradas, nombre="K1.yaml", formato="biblical-earth/migration-decisions/1"):
         d = Path(self.tmp.name) / "decisiones"
         d.mkdir(exist_ok=True)
-        (d / nombre).write_text(yaml.safe_dump({"format": "biblical-earth/migration-decisions/1", "decision": "K1",
+        (d / nombre).write_text(yaml.safe_dump({"format": formato, "decision": "K1",
                                                 "checked_on": "2026-09-29", "entries": entradas},
                                                allow_unicode=True, sort_keys=False), encoding="utf-8")
         return run_migrate("--data", str(self.data), "--decisions", str(d))
+
+    def test_decisions_written_with_the_previous_format_apply(self):
+        antes = "biblical-earth/migration-decisions/1"  # nombre-fijo: decisiones escritas antes
+        code, out = self.decide([{"file": "people/sesbazar", "relation": "sesbazar/same_as/zorobabel",
+                                  "set": {"certainty": "possible"}, "sources": ["hch-16"], "reason": "Prueba."}],
+                                formato=antes)
+        self.assertEqual(code, 0, out)
+        self.assertEqual(self.yaml("people/sesbazar.yaml")["relations"][0]["certainty"], "possible")
+        code, out = self.decide([], nombre="K2.yaml", formato="otra-cosa/migration-decisions/1")
+        self.assertNotEqual(code, 0, out)
 
     def test_set_add_remove_and_redirect(self):
         code, out = self.decide([

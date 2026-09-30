@@ -376,6 +376,26 @@ test('importing a file that is not notes fails with a message in Spanish and cha
   } finally { await context.close(); }
 });
 
+test('a store and a file written with the previous format identifier are read, and the next save writes the current one', { timeout: 90000 }, async () => {
+  const context = await newContext();
+  try {
+    const page = await openSite(context, 'sel=persona:pablo');
+    const before = 'biblical-earth-notes';   // nombre-fijo: the identifier of stores and files written before
+    await setStore(page, JSON.stringify({ format: before, version: 1, notes: { 'persona:pablo': note('Nota de antes', '2026-01-01T00:00:00.000Z', 'Pablo') } }));
+    assert.equal(await page.evaluate(() => Object.keys(localStorage).filter((k) => k.includes(':notes:unreadable')).length), 0, 'the store went aside');
+    await openMyNotes(page);
+    assert.deepEqual(await page.locator('#notes-list .notes-item-text').allTextContents(), ['Nota de antes']);
+    await importFile(page, 'notas-de-antes.json', JSON.stringify({ format: before, version: 1, notes: { 'chapter:44:16': note('Importada de antes') } }));
+    assert.match(await page.locator('#notes-list .notes-message').textContent(), /1 nota nueva/);
+    await page.locator('#notes-list [data-notes-close]').click();
+    await writeNote(page, '#panel-cuerpo .note-pencil', 'Nota de antes, otra vez');
+    const saved = await page.evaluate((k) => JSON.parse(localStorage.getItem(k)), KEY);
+    assert.equal(saved.format, JSON.parse(store({})).format);
+    assert.deepEqual(Object.keys(saved.notes).sort(), ['chapter:44:16', 'persona:pablo']);
+    assert.deepEqual(page.pageErrors, []);
+  } finally { await context.close(); }
+});
+
 test('an import never silently overwrites a newer note: the person chooses, and joining keeps both texts whole', { timeout: 90000 }, async () => {
   const context = await newContext();
   try {
