@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josias-quita-los-lugares-altos-de-samaria
+title: Josías quita los lugares altos de las ciudades de Samaria
+date:
+  from: -641
+  to: -641
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 642 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 23019
+places:
+- israel
+- jerusalen
+people:
+- josias
+passages:
+- 2Re 23:19-20
+summary: En las ciudades del antiguo reino del norte, Josías destruye los templos de los lugares altos, sacrifica sobre sus
+  altares a los sacerdotes idólatras y quema allí huesos. Después vuelve a Jerusalén.
+reason: Perspicacia «Betel» pone esta campaña durante o después del año 18 de Josías (642); «Samaria», núm. 2, explica que
+  esas ciudades eran las de las diez tribus.
+sources:
+- 2-reyes-23
+- it-betel
+- it-samaria
+- it-josias
+links:
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+- title: 'Perspicacia: «Samaria»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

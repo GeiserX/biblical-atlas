@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merodac-baladan
+name: Merodac-Baladán
+names:
+- name: Merodac-Baladán
+- name: Berodac-Baladán
+  note: Así en 2Re 20:12. Perspicacia lo atribuye a un error de copia o a cómo se transcribió un sonido acadio.
+perspicacia: '1200003002'
+summary: Rey caldeo de Babilonia, hijo de Baladán, que mandó cartas y un regalo a Ezequías al saber que había estado enfermo.
+  Luchó contra Sargón II y Senaquerib, que acabaron echándolo de Babilonia.
+reason: Perspicacia «Merodac-baladán»; 2Re 20:12.
+sources:
+- it-merodac-baladan
+- 2-reyes-20
+links:
+- title: 'Perspicacia: «Merodac-baladán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003002
+  type: perspicacia
+- title: 2 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/20
+  type: bible
+relations:
+- type: kin
+  person: baladan
+  word: father
+  sources:
+  - 2-reyes-20
+  - it-baladan
+  reason: 2Re 20:12 lo llama hijo de Baladán.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: king
+  place: babilonia
+  sources:
+  - 2-reyes-20
+  - it-merodac-baladan
+  reason: 2Re 20:12 lo llama rey de Babilonia; Perspicacia «Merodac-baladán» cuenta sus dos reinados allí.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

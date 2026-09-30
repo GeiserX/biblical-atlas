@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sarezer-hijo-de-senaquerib
+name: Sarézer
+names:
+- name: Sarézer
+perspicacia: 1200003954#1
+disambiguation: El hijo de Senaquerib; no el Sarézer que Betel envió a Jerusalén después del destierro.
+summary: Hijo del rey asirio Senaquerib. Junto con Adramélec mató a espada a su padre en el templo de Nisroc y escapó a Ararat.
+reason: Perspicacia «Sarézer», núm. 1; 2Re 19:37.
+sources:
+- it-sarezer
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Sarézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003954
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: senaquerib
+  word: father
+  sources:
+  - 2-reyes-19
+  - it-sarezer
+  reason: 2Re 19:37 lo da como hijo de Senaquerib.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sefarvaim
+name: Sefarvaim
+names:
+- name: Sefarvaim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En Siria, entre Damasco y Hamat
+  geometry:
+    type: point
+    lat: 34.401068
+    lon: 36.636361
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sefarvaim
+  - openbible-geo
+  reason: Perspicacia la ve probable en Siria o en Babilonia, porque el texto la nombra con lugares de esas zonas.
+  note: Primera identificación de OpenBible, que la une a Sibraim; solo tomamos el punto.
+  coord_source: openbible:a282c15
+  coord_url: https://www.openbible.info/geo/ancient/a282c15/sepharvaim
+- name: En Babilonia
+  geometry:
+    type: point
+    lat: 33.058829
+    lon: 44.252153
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sefarvaim
+  - openbible-geo
+  reason: La otra zona que admite Perspicacia es Babilonia.
+  note: Segunda identificación de OpenBible, Sippar; solo tomamos el punto. Perspicacia no nombra Sippar.
+  coord_source: openbible:a282c15
+  coord_url: https://www.openbible.info/geo/ancient/a282c15/sepharvaim
+summary: Ciudad desde donde Asiria llevó pobladores a las ciudades de Samaria. Sus hombres quemaban a sus hijos en honor de
+  Adramélec y Anamélec, sus dioses.
+reason: Perspicacia «Sefarvaim»; 2Re 17:24, 31 y 18:34. Estaba probablemente en Siria o en Babilonia; no se sabe dónde.
+sources:
+- it-sefarvaim
+- openbible-geo
+- 2-reyes-17
+- 2-reyes-18
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Sefarvaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003901
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

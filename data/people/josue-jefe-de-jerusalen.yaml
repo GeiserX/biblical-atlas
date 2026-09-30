@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josue-jefe-de-jerusalen
+name: Josué
+names:
+- name: Josué
+perspicacia: 1200002523#3
+disambiguation: El jefe de Jerusalén de 2Re 23:8; no Josué hijo de Nun, ni Josué el betsemita, ni el sumo sacerdote Josué
+  (Jesúa).
+distinct_from:
+- josue-hijo-de-nun
+- josue-el-betsemita
+- josue-sumo-sacerdote
+summary: Jefe de la ciudad de Jerusalén en días de Josías. Junto a la puerta que llevaba su nombre había lugares altos, y
+  el rey los derribó.
+reason: Perspicacia «Josué», núm. 3; 2Re 23:8.
+sources:
+- it-josue
+- 2-reyes-23
+links:
+- title: 'Perspicacia: «Josué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002523
+  type: perspicacia
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-reyes-23
+  - it-josue
+  reason: 2Re 23:8 lo llama jefe de la ciudad; Perspicacia «Josué», núm. 3, dice que la ciudad era Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

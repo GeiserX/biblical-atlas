@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jecolias
+name: Jecolías
+names:
+- name: Jecolías
+perspicacia: '1200002354'
+summary: Mujer de Jerusalén, madre del rey Uzías, también llamado Azarías, y esposa del rey Amasías. Perspicacia pone el nacimiento
+  de su hijo hacia 845 a.e.c.
+reason: Perspicacia «Jecolías»; 2Re 15:2.
+sources:
+- it-jecolias
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Jecolías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002354
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-jecolias
+  reason: 2Re 15:2 la llama Jecolías de Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

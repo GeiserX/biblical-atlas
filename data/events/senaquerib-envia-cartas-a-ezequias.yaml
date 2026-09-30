@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: senaquerib-envia-cartas-a-ezequias
+title: Desde Libná, Senaquerib amenaza por carta a Ezequías
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 19008
+places:
+- libna
+- lakis
+- jerusalen
+people:
+- senaquerib
+- ezequias
+- tirhaca
+present:
+- senaquerib
+passages:
+- 2Re 19:8-13
+- Is 37:8-13
+summary: 'El rabsaqué encuentra a su rey atacando Libná, ya lejos de Lakís. Ante el aviso de que Tirhacá de Etiopía viene
+  contra él, Senaquerib escribe a Ezequías: ningún dios libró a las naciones que Asiria arrasó.'
+reason: 'Estudio 3: la invasión es de 732 a.e.c. Perspicacia «Rabsaqué», párr. 3, y «Tirhaqá» cuentan la retirada de Lakís
+  y el aviso.'
+sources:
+- 2-reyes-19
+- si-3
+- it-rabsaque
+- it-tirhaca
+- it-senaquerib
+links:
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

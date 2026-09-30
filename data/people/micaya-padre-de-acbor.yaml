@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micaya-padre-de-acbor
+name: Micaya
+names:
+- name: Micaya
+- name: Miqueas
+  note: Así lo llama 2Cr 34:20; Perspicacia «Micaya», núm. 4.
+perspicacia: 1200003034#4
+disambiguation: El padre de Acbor; no es Micaya hijo de Imlá, el profeta de los días de Acab.
+distinct_from:
+- micaya-hijo-de-imla
+summary: Padre de Acbor, uno de los cinco hombres que Josías mandó a consultar a Jehová por medio de Huldá.
+reason: Perspicacia «Micaya», núm. 4; 2Re 22:12.
+sources:
+- it-micaya
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Micaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003034
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

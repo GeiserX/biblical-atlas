@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safan
+name: Safán
+names:
+- name: Safán
+perspicacia: '1200003949'
+summary: Secretario del rey Josías, hijo de Azalías. En 642 a.e.c. recibió de Hilquías el libro de la Ley, se lo leyó al rey
+  y fue con los enviados a consultar a Huldá.
+reason: Perspicacia «Safán»; 2Re 22:3-14.
+sources:
+- it-safan
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Safán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003949
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+relations:
+- type: kin
+  person: azalias
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-safan
+  reason: 2Re 22:3 lo llama Safán, hijo de Azalías.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: josias
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-safan
+  reason: '2Re 22:3, 9, 10: el secretario al que Josías envía al templo y que le rinde cuentas.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

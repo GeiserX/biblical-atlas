@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rezef
+name: Rézef
+names:
+- name: Rézef
+type: city
+lat: 35.627778
+lon: 38.756389
+precision: uncertain
+coord_source: openbible:aefdac1
+coord_url: https://www.openbible.info/geo/ancient/aefdac1/rezeph
+coord_note: Punto de Resafa (Rusafa), primera identificación de OpenBible y el sitio que nombra Perspicacia, que no da su
+  ubicación por segura.
+summary: Lugar que Senaquerib cuenta entre las naciones arruinadas por los reyes de Asiria. Había varios con ese nombre; uno
+  se identifica con Rusafa, al oeste del Éufrates y a unos 145 km al sur de Harán.
+reason: 'Perspicacia «Rézef»; 2Re 19:12. OpenBible: solo el punto.'
+sources:
+- it-rezef
+- openbible-geo
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Rézef»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003720
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

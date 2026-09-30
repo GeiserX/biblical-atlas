@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asiria-repuebla-las-ciudades-de-samaria
+title: Asiria repuebla las ciudades de Samaria con extranjeros
+date:
+  from: -739
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 740 y 661 a.e.c. (tiempo narrativo: desde la caída de Samaria hasta Esar-Hadón, que tuvo por vasallo a Manasés)'
+narrative_order:
+  series: 2-reyes
+  order: 17024
+places:
+- israel
+- babilonia
+- cuta
+- ava
+- hamat
+- sefarvaim
+people: []
+present: []
+passages:
+- 2Re 17:24
+- 2Re 17:29-41
+summary: Asiria lleva a las ciudades que dejaron los israelitas pobladores de Cutá, Babilonia, Avá, Hamat y Sefarvaim. Cada
+  pueblo sigue con sus dioses aunque también adora a Jehová.
+reason: Empieza tras la deportación de 740 (Perspicacia «Ezequías», «Samaritano»). Perspicacia «Esar-hadón» y Esd 4:2 la alargan
+  hasta ese rey, que tuvo a Manasés por vasallo; Manasés reinó hasta 661 (A6-B). El texto no nombra al rey.
+sources:
+- 2-reyes-17
+- it-ezequias
+- it-samaritano
+- it-cut
+- it-esar-hadon
+- tnm-a6-b
+links:
+- title: 2 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

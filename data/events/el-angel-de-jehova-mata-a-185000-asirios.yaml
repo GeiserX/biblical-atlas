@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-angel-de-jehova-mata-a-185000-asirios
+title: El ángel de Jehová mata a 185.000 asirios y Senaquerib vuelve a Nínive
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 19035
+places:
+- jerusalen
+- ninive
+people:
+- senaquerib
+present: []
+passages:
+- 2Re 19:35, 36
+- Is 37:36, 37
+- 2Cr 32:21
+summary: Esa misma noche, el ángel de Jehová acaba con 185.000 hombres del campamento asirio. Al amanecer aparecen los cadáveres,
+  y Senaquerib se retira a Nínive y se queda allí.
+reason: 'Estudio 3: 732 a.e.c. Perspicacia «Senaquerib», «Jehová derrota al ejército». El texto no dice dónde estaba el campamento:
+  Jerusalén es la ciudad librada y el suceso no sitúa a nadie.'
+sources:
+- 2-reyes-19
+- si-3
+- it-senaquerib
+links:
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

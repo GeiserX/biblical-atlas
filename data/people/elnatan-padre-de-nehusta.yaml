@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elnatan-padre-de-nehusta
+name: Elnatán
+names:
+- name: Elnatán
+perspicacia: 1200001331#1
+disambiguation: El padre de Nehustá; no ninguno de los tres Elnatán de Esd 8:16.
+summary: Hombre de Jerusalén, padre de Nehustá y, por ella, abuelo materno del rey Joaquín.
+reason: Perspicacia «Elnatán», núm. 1; 2Re 24:8.
+sources:
+- it-elnatan
+- 2-reyes-24
+links:
+- title: 'Perspicacia: «Elnatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001331
+  type: perspicacia
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+not_claimed:
+- 'Que sea con seguridad Elnatán hijo de Acbor (Jer 26:22; 36:12): Perspicacia solo dice que quizás es el mismo.'
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-24
+  reason: 2Re 24:8 lo llama Elnatán de Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adramelec
+name: Adramélec
+names:
+- name: Adramélec
+perspicacia: 1200000118#1
+disambiguation: El hijo de Senaquerib; Perspicacia registra aparte a un dios de los sefarvitas con el mismo nombre.
+summary: Hijo del rey asirio Senaquerib. Con su hermano Sarézer mató a su padre mientras este se postraba ante su dios Nisroc,
+  en Nínive, y huyó a la tierra de Ararat.
+reason: Perspicacia «Adramélec», núm. 1; 2Re 19:37.
+sources:
+- it-adramelec
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Adramélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000118
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: senaquerib
+  word: father
+  sources:
+  - 2-reyes-19
+  - it-adramelec
+  reason: 2Re 19:37 lo da como hijo de Senaquerib.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: sarezer-hijo-de-senaquerib
+  word: brother
+  inferred: true
+  sources:
+  - it-adramelec
+  - 2-reyes-19
+  reason: 2Re 19:37 da a los dos como hijos de Senaquerib; Perspicacia «Adramélec», núm. 1, llama a Sarézer su hermano.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

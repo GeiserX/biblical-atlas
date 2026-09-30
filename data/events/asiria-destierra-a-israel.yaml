@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asiria-destierra-a-israel
+title: Asiria lleva a Israel al destierro
+date:
+  from: -739
+  to: -739
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 740 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 17006
+places:
+- asiria
+- hala
+- habor
+- gozan
+- media
+- samaria
+people: []
+present: []
+passages:
+- 2Re 17:6
+- 2Re 17:23
+- 2Re 18:11, 12
+summary: Tras tomar Samaria, el rey de Asiria deporta a los israelitas y los reparte por Halá, por Habor a orillas del Gozán
+  y por ciudades de Media. Acaba el reino del norte.
+reason: 'Perspicacia «Hosea», núm. 4: en 740 cae Samaria y sus habitantes van al exilio (estudio 3). El texto no nombra al
+  rey ni a nadie: people y present vacíos.'
+sources:
+- 2-reyes-17
+- 2-reyes-18
+- it-hosea
+- si-3
+- it-halah
+- it-habor
+- it-gozan
+links:
+- title: 2 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

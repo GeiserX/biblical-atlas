@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cuta
+name: Cutá
+names:
+- name: Cutá
+- name: Cut
+  note: Así la llama 2Re 17:30.
+type: city
+lat: 32.760028
+lon: 44.612861
+precision: point
+coord_source: openbible:a538831
+coord_url: https://www.openbible.info/geo/ancient/a538831/cuth
+coord_note: Tell Ibrahim, la identificación que Perspicacia recoge de muchos geógrafos, unos 50 km al noreste de Babilonia.
+summary: Ciudad de Mesopotamia de la que Asiria llevó gente a las ciudades de Samaria tras el destierro de Israel. Sus hombres
+  adoraban a Nergal.
+reason: 'Perspicacia «Cut, Cutá», párr. 1 y 2; 2Re 17:24, 30. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-cut
+- openbible-geo
+- 2-reyes-17
+links:
+- title: 'Perspicacia: «Cut, Cutá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001095
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

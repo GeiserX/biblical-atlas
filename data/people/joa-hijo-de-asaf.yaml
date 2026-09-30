@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joa-hijo-de-asaf
+name: Joá
+names:
+- name: Joá
+- name: Joah
+  note: Grafía de Perspicacia.
+perspicacia: 1200002470#3
+disambiguation: Funcionario de Ezequías, hijo de Asaf; no es el levita Joah hijo de Zimá ni el registrador de Josías.
+summary: Hijo de Asaf y funcionario de Ezequías, probablemente el registrador. Con Eliaquim y Sebná pidió al rabsaqué que
+  hablara en arameo y llevó sus amenazas al rey.
+reason: 'Perspicacia «Joah», núm. 3: la frase no aclara quién era el registrador, pero ve más probable que fuera Joah; 2Re
+  18:18, 26, 37.'
+sources:
+- it-joah
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Joah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002470
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+relations:
+- type: kin
+  person: asaf-padre-de-joa
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-joah
+  reason: '2Re 18:18, 37: Joá hijo de Asaf.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ezequias
+  word: master
+  inferred: true
+  sources:
+  - 2-reyes-18
+  - it-joah
+  reason: 'Perspicacia «Joah», núm. 3: era del grupo que Ezequías envió a oír al rabsaqué (2Re 18:18, 36, 37).'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

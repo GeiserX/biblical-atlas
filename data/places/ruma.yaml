@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ruma
+name: Rumá
+names:
+- name: Rumá
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Horvat Ruma (Khirbet er-Rumeh), al norte de Nazaret
+  geometry:
+    type: point
+    lat: 32.78892
+    lon: 35.29321
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-ruma
+  - openbible-geo
+  reason: Perspicacia «Rumá» recoge, con reservas, esta identificación por el parecido del nombre; el sitio queda unos 10
+    km al norte de Nazaret.
+  note: Primera identificación de la ficha Rumah de OpenBible (Horbat Rumah); solo tomamos el punto.
+  coord_source: openbible:a0009b3
+  coord_url: https://www.openbible.info/geo/ancient/a0009b3/rumah
+- name: Arumá, cerca de Siquem
+  geometry:
+    type: point
+    lat: 32.147556
+    lon: 35.321583
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-ruma
+  - it-aruma
+  - openbible-geo
+  reason: Perspicacia «Rumá» dice que otros la relacionan con la Arumá de Jue 9:41, que se cree próxima a Siquem.
+  note: Punto de OpenBible para Arumá (Khirbet Urmah), el mismo de la ficha arumá; solo tomamos el punto.
+  coord_source: openbible:af536fb
+  coord_url: https://www.openbible.info/geo/ancient/af536fb/arumah
+summary: Localidad de Pedaya, padre de Zebidá, la madre del rey Jehoiaquim. Su ubicación no se conoce con certeza.
+reason: 'Perspicacia «Rumá»; 2Re 23:36. jw.org solo propone sitios con reservas. OpenBible: solo los puntos.'
+not_claimed:
+- 'Que sea la Arumá de Jue 9:41: Perspicacia solo dice que hay quien lo propone.'
+sources:
+- it-ruma
+- openbible-geo
+- 2-reyes-23
+links:
+- title: 'Perspicacia: «Rumá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003772
+  type: perspicacia
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+checked_on: '2026-09-30'
+status: verified

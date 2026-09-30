@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pascua-de-josias
+title: Josías celebra la Pascua
+date:
+  from: -641
+  to: -641
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 642 a.e.c.
+  detail:
+    month: nisan
+    day: 14
+narrative_order:
+  series: 2-reyes
+  order: 23021
+places:
+- jerusalen
+people:
+- josias
+passages:
+- 2Re 23:21-23
+- 2Cr 35:1-19
+summary: Siguiendo el libro del pacto, Josías manda celebrar en Jerusalén una Pascua como no se había visto desde los tiempos
+  de los jueces ni en todo el periodo de los reyes.
+reason: 2Re 23:23 la pone en el año 18 de Josías, que Perspicacia «Betel» fecha en 642; «Josías», núm. 1, da el 14 de nisán.
+sources:
+- 2-reyes-23
+- it-josias
+- it-betel
+links:
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+- title: 'Perspicacia: «Josías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

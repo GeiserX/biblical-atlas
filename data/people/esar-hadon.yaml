@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esar-hadon
+name: Esar-Hadón
+names:
+- name: Esar-Hadón
+- name: Esar-hadón
+  note: Grafía de Perspicacia.
+perspicacia: '1200001416'
+summary: Uno de los hijos más jóvenes de Senaquerib y su sucesor en el trono de Asiria. Reconstruyó Babilonia, conquistó
+  Egipto frente a Tirhacá y tuvo a Manasés de Judá entre sus vasallos. Le sucedió su hijo Asurbanipal.
+reason: Perspicacia «Esar-hadón»; 2Re 19:37.
+sources:
+- it-esar-hadon
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Esar-hadón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001416
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: senaquerib
+  word: father
+  sources:
+  - 2-reyes-19
+  - it-esar-hadon
+  reason: 2Re 19:37 lo llama hijo de Senaquerib.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: senaquerib
+  office: king
+  sources:
+  - 2-reyes-19
+  - it-esar-hadon
+  reason: '2Re 19:37: tras el asesinato de su padre, Esar-Hadón pasa a reinar en Asiria.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliaquim-hijo-de-hilquias
+name: Eliaquim
+names:
+- name: Eliaquim
+perspicacia: 1200001295#1
+disambiguation: Administrador de la casa del rey Ezequías; no es el rey Jehoiaquim, que antes se llamaba Eliaquim, ni los
+  antepasados de Jesús.
+distinct_from:
+- jehoiaquim
+- eliaquim-hijo-de-abiud
+- eliaquim-hijo-de-melea
+summary: Hijo de Hilquías. Estaba a cargo de la casa del rey Ezequías en 732 a.e.c. y fue con Sebná y Joá a oír al rabsaqué,
+  cuyas palabras llevó al rey.
+reason: Perspicacia «Eliaquim», núm. 1; 2Re 18:18, 26, 37.
+sources:
+- it-eliaquim
+- 2-reyes-18
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Eliaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001295
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: hilquias-padre-de-eliaquim
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-eliaquim
+  reason: '2Re 18:18, 37: Eliaquim hijo de Hilquías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ezequias
+  word: master
+  inferred: true
+  sources:
+  - 2-reyes-18
+  - it-eliaquim
+  - 2-reyes-19
+  reason: 'Perspicacia «Eliaquim», núm. 1: administraba la casa de Ezequías. 2Re 18:18, 37: estaba a cargo de la casa e informó
+    al rey.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

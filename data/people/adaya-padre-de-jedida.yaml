@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adaya-padre-de-jedida
+name: Adaya
+names:
+- name: Adaya
+perspicacia: 1200000087#4
+disambiguation: Adaya de Bozcat, abuelo materno de Josías; Perspicacia registra otros siete hombres con este nombre.
+summary: Hombre de Bozcat, ciudad de la Sefelá de Judá. Su hija Jedidá fue la madre del rey Josías.
+reason: Perspicacia «Adaya», núm. 4; 2Re 22:1.
+sources:
+- it-adaya
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Adaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000087
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+relations:
+- type: lived_in
+  place: bozcat
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-adaya
+  reason: 2Re 22:1 lo llama Adaya de Bozcat.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: somer-padre-de-jehozabad
+name: Somer
+names:
+- name: Somer
+perspicacia: 1200004081#2
+disambiguation: El padre, o quizá el abuelo, de Jehozabad; no es Somer, el descendiente de Aser.
+summary: Hombre al que 2 Reyes nombra como padre de Jehozabad, uno de los asesinos de Jehoás. Perspicacia recoge que quizá
+  fuera el padre de Simrit, la madre de Jehozabad, y entonces su abuelo.
+reason: Perspicacia «Somer», núm. 2; 2Re 12:21 y 2Cr 24:26.
+sources:
+- it-somer
+- 2-reyes-12
+links:
+- title: 'Perspicacia: «Somer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004081
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

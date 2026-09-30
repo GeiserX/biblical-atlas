@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sedequias-huye-y-lo-capturan-cerca-de-jerico
+title: Los caldeos abren brecha y capturan a Sedequías cerca de Jericó
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+  detail:
+    month: tamuz
+    day: 9
+narrative_order:
+  series: 2-reyes
+  order: 25003
+places:
+- llanuras-deserticas-de-jerico
+- jerusalen
+- araba
+people:
+- sedequias
+passages:
+- 2Re 25:3-5
+- Jer 39:2-4
+- Jer 52:6-8
+summary: Tras unos dieciocho meses de asedio y sin comida en la ciudad, los caldeos rompen la muralla. De noche Sedequías
+  y sus soldados salen hacia el Arabá, pero lo alcanzan en las llanuras de Jericó.
+reason: '2Re 25:2-4 y Jer 39:2: la brecha fue el día 9 del mes cuarto (tamuz) del año 11 de Sedequías, 607 a.e.c. según el
+  estudio 3 y Perspicacia «Sedequías», núm. 4.'
+sources:
+- 2-reyes-25
+- si-3
+- it-sedequias
+- it-jardin
+links:
+- title: 'Perspicacia: «Sedequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+checked_on: '2026-09-30'
+status: verified

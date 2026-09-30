@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoas-vence-tres-veces-a-ben-hadad
+title: Jehoás vence tres veces a Ben-Hadad y recobra las ciudades de Israel
+date:
+  from: -861
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 862 y c. 844 a.e.c. (tiempo narrativo: reinando Jehoás en Israel, tras la muerte de Hazael)'
+narrative_order:
+  series: 2-reyes
+  order: 13024
+places:
+- israel
+- afec-al-este-del-mar-de-galilea
+people:
+- jehoas-de-israel
+- ben-hadad-hijo-de-hazael
+- hazael
+present:
+- jehoas-de-israel
+roles:
+  hazael: died
+passages:
+- 2Re 13:24, 25
+summary: Muerto Hazael, reina su hijo Ben-Hadad. Jehoás lo derrota en tres ocasiones y le quita las ciudades que Siria había
+  arrebatado a su padre, Jehoacaz, como había dicho Eliseo.
+reason: 2Re 13:19, 24, 25; Perspicacia «Ben-hadad», núm. 3, y «Afeq», núm. 5, que ve probable que Afec sea el escenario anunciado.
+  Reinado de Jehoás, c. 862-844 (A6-A).
+sources:
+- 2-reyes-13
+- it-ben-hadad
+- it-afeq
+- it-jehoas
+- tnm-a6-a
+links:
+- title: 2 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/13
+  type: bible
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

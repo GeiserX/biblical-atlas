@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hazael-mata-a-ben-hadad-y-reina-en-siria
+title: Hazael mata a Ben-Hadad y reina en Siria
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 8007
+places:
+- damasco
+people:
+- eliseo
+- hazael
+- ben-hadad-ii
+present:
+- eliseo
+- hazael
+- ben-hadad-ii
+roles:
+  ben-hadad-ii: died
+passages:
+- 2Re 8:7-15
+summary: Ben-Hadad, enfermo, manda a Hazael con cuarenta camellos de regalos a preguntar a Eliseo si sanará. Eliseo llora
+  por el mal que Hazael hará a Israel y le anuncia que reinará. Al día siguiente Hazael asfixia al rey.
+reason: 2Re 8:7-15; Perspicacia «Hazael», párr. 1-3, y «Ben-hadad», núm. 2. Hazael subió al trono cuando Jehoram reinaba
+  en Israel (hacia 917-905, según A6-A).
+sources:
+- 2-reyes-8
+- it-hazael
+- it-ben-hadad
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  type: bible
+- title: 'Perspicacia: «Hazael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001923
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

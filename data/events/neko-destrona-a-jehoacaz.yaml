@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: neko-destrona-a-jehoacaz
+title: Nekó destrona a Jehoacaz y pone a Jehoiaquim
+date:
+  from: -627
+  to: -627
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 628 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 23031
+places:
+- ribla
+- egipto
+- jerusalen
+people:
+- neko
+- jehoacaz-de-juda
+- jehoiaquim
+present:
+- neko
+- jehoacaz-de-juda
+passages:
+- 2Re 23:31-35
+- 2Cr 36:2-4
+summary: A los tres meses de reinar, Nekó encierra a Jehoacaz en Riblá, cobra a Judá cien talentos de plata y uno de oro,
+  cambia el nombre de Eliaquim por Jehoiaquim y se lleva a Jehoacaz a Egipto.
+reason: 'El estudio 3 y A6-B ponen en 628 el reinado de Jehoacaz y la subida de Jehoiaquim; Perspicacia «Jehoacaz», núm. 3.
+  Jehoacaz muere en Egipto sin fecha: queda en su relación died_in, sin papel aquí.'
+sources:
+- 2-reyes-23
+- si-3
+- tnm-a6-b
+- it-jehoacaz
+- it-neko
+links:
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+- title: 'Perspicacia: «Nekó, Nekoh»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003203
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

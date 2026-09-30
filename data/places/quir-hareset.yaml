@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quir-hareset
+name: Quir-Haréset
+names:
+- name: Quir-Haréset
+- name: Quir de Moab
+  note: Así la llama Is 15:1. Perspicacia «Quir-haréset» da los dos nombres, al parecer, por la misma ciudad.
+- name: Quir-Heres
+  note: Forma de Jer 48:31, 36. El Targum arameo la iguala con Quir de Moab, según Perspicacia «Quir de Moab».
+type: city
+lat: 31.180556
+lon: 35.701389
+precision: point
+coord_source: openbible:ab55371
+coord_url: https://www.openbible.info/geo/ancient/ab55371/kir-hareseth
+coord_note: Karak, con la que Perspicacia dice que se la suele identificar. Es el mismo punto que representa todo Moab.
+summary: Ciudad fortificada de Moab, quizá su antigua capital, sobre una meseta al sur de Dibón. En ella quedó cercado el
+  rey Mesá cuando Israel, Judá y Edom devastaron el país.
+reason: 'Perspicacia «Quir-haréset» y «Quir de Moab», párr. 1 y 2; 2Re 3:25-27. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que la ciudad cayera: Perspicacia «Quir de Moab» dice que no se conquistó, y los aliados se retiraron tras el sacrificio
+  (2Re 3:27).'
+sources:
+- it-quir-hareset
+- it-quir-de-moab
+- openbible-geo
+- 2-reyes-3
+links:
+- title: 'Perspicacia: «Quir de Moab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002630
+  type: perspicacia
+- title: 'Perspicacia: «Quir-haréset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002620
+  type: perspicacia
+- title: 2 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/3
+  type: bible
+checked_on: '2026-09-30'
+status: verified

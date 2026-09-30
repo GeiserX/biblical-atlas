@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedida
+name: Jedidá
+names:
+- name: Jedidá
+perspicacia: '1200002358'
+summary: Hija de Adaya, de Bozcat. Casada con el rey Amón, fue madre de Josías, nacido en 667 a.e.c. según Perspicacia.
+reason: Perspicacia «Jedidá»; 2Re 22:1.
+sources:
+- it-jedida
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Jedidá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002358
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+relations:
+- type: kin
+  person: adaya-padre-de-jedida
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-jedida
+  reason: 2Re 22:1 la llama Jedidá hija de Adaya.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

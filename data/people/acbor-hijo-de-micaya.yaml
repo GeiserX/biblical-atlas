@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: acbor-hijo-de-micaya
+name: Acbor
+names:
+- name: Acbor
+- name: Abdón
+  note: Así lo llama 2Cr 34:20; Perspicacia «Acbor», núm. 2.
+perspicacia: 1200000076#2
+disambiguation: Oficial del rey Josías; no es Acbor el edomita, padre de Baal-Hanán.
+distinct_from:
+- acbor-padre-de-baal-hanan
+summary: Oficial de confianza de Josías, hijo de Micaya. Fue con los enviados a consultar a Huldá. Su hijo Elnatán sirvió
+  en la corte de Jehoiaquim.
+reason: Perspicacia «Acbor», núm. 2; 2Re 22:12-14.
+sources:
+- it-acbor
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Acbor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000076
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+relations:
+- type: kin
+  person: micaya-padre-de-acbor
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-acbor
+  reason: 2Re 22:12 lo llama Acbor hijo de Micaya.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

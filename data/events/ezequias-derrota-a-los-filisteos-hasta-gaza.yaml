@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-derrota-a-los-filisteos-hasta-gaza
+title: Ezequías se rebela contra Asiria y vence a los filisteos hasta Gaza
+date:
+  from: -745
+  to: -731
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 732 a.e.c. (tiempo narrativo: en el reinado de Ezequías, antes de la invasión de Senaquerib)'
+narrative_order:
+  series: 2-reyes
+  order: 18007
+places:
+- filistea
+- gaza
+people:
+- ezequias
+present: []
+passages:
+- 2Re 18:7, 8
+summary: Ezequías deja de servir al rey de Asiria y vence a los filisteos hasta Gaza, en todos sus lugares, poblados o no.
+reason: 'Perspicacia «Ezequías»: se rebeló poco después de empezar a reinar; las ciudades filisteas quizá eran aliadas de
+  Asiria. «Senaquerib» une la rebelión a la campaña de 732. present vacío: no consta dónde estaba el rey.'
+sources:
+- 2-reyes-18
+- it-ezequias
+- it-senaquerib
+- tnm-a6-b
+- si-3
+links:
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+checked_on: '2026-09-30'
+status: verified

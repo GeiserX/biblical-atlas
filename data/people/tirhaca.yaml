@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tirhaca
+name: Tirhacá
+names:
+- name: Tirhacá
+- name: Tirhaqá
+  note: Grafía de Perspicacia.
+perspicacia: '1200004422'
+summary: Rey etíope de Egipto que salió a pelear contra Senaquerib en tiempos de Ezequías. Suele identificarse con el faraón
+  Taharka, cuyas fechas seglares no encajan con la cronología bíblica.
+reason: Perspicacia «Tirhaqá»; 2Re 19:9.
+sources:
+- it-tirhaca
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Tirhaqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004422
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: holds_office
+  office: king
+  place: etiopia
+  sources:
+  - 2-reyes-19
+  - it-tirhaca
+  reason: 2Re 19:9 lo llama rey de Etiopía; Perspicacia «Tirhaqá» dice que era el monarca etíope de Egipto.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

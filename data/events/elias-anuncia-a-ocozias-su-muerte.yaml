@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-anuncia-a-ocozias-su-muerte
+title: Elías anuncia a Ocozías su muerte, y el rey muere
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 1015
+places:
+- samaria
+people:
+- ocozias-de-israel
+- elias-profeta
+- jehoram-de-israel
+present:
+- ocozias-de-israel
+- elias-profeta
+roles:
+  ocozias-de-israel: died
+passages:
+- 2Re 1:15-18
+summary: Por orden del ángel, Elías baja con el tercer jefe y repite al rey en persona la sentencia de Jehová. Ocozías muere
+  sin hijos, y reina en su lugar su hermano Jehoram.
+reason: '2Re 1:15-17: Jehoram empieza a reinar en el segundo año de Jehoram de Judá, c. 917 según A6-A y Perspicacia «Jehoram»,
+  núm. 2.'
+sources:
+- 2-reyes-1
+- tnm-a6-a
+- it-jehoram
+- it-ocozias
+links:
+- title: 2 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

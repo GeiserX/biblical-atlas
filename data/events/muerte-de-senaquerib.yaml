@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-senaquerib
+title: Adramélec y Sarézer matan a Senaquerib en Nínive
+type: death
+date:
+  from: -731
+  to: -711
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 712 a.e.c. (tiempo narrativo: algún tiempo después de volver de Judá)'
+narrative_order:
+  series: 2-reyes
+  order: 19037
+places:
+- ninive
+- ararat
+people:
+- senaquerib
+- adramelec
+- sarezer-hijo-de-senaquerib
+- esar-hadon
+present:
+- senaquerib
+- adramelec
+- sarezer-hijo-de-senaquerib
+roles:
+  senaquerib: died
+passages:
+- 2Re 19:37
+- Is 37:38
+- 2Cr 32:21
+summary: Mientras Senaquerib se postra ante Nisroc en el templo de ese dios, sus hijos Adramélec y Sarézer lo matan a espada
+  y escapan a la tierra de Ararat. Otro hijo, Esar-Hadón, pasa a reinar.
+reason: 'Perspicacia «Senaquerib»: el texto no dice que muriera nada más volver; registros asirios de fiabilidad dudosa lo
+  ponen unos veinte años después de 732. «Rabsaqué» dice algún tiempo después.'
+sources:
+- 2-reyes-19
+- it-senaquerib
+- it-rabsaque
+- it-esar-hadon
+- it-nisroc
+- si-3
+links:
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

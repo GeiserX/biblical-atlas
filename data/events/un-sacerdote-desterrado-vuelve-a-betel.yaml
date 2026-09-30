@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-sacerdote-desterrado-vuelve-a-betel
+title: Jehová envía leones y un sacerdote desterrado vuelve a Betel
+date:
+  from: -739
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 740 y 661 a.e.c. (tiempo narrativo: desde la caída de Samaria hasta Esar-Hadón, que tuvo por vasallo a Manasés)'
+narrative_order:
+  series: 2-reyes
+  order: 17025
+places:
+- betel
+- israel
+people: []
+present: []
+passages:
+- 2Re 17:25-28
+summary: Los recién llegados no adoran a Jehová y los leones matan a algunos. El rey de Asiria manda volver a uno de los sacerdotes
+  deportados, que se instala en Betel y les enseña.
+reason: Mismo margen que la repoblación (2Re 17:24), de 740 hasta Esar-Hadón (Perspicacia «Esar-hadón»; Esd 4:2), que
+  tuvo por vasallo a Manasés, rey hasta 661 (A6-B). Según Perspicacia «Samaritano», el sacerdote era del sacerdocio de Jeroboán.
+sources:
+- 2-reyes-17
+- it-samaritano
+- it-cut
+- it-esar-hadon
+- it-ezequias
+- tnm-a6-b
+links:
+- title: 2 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

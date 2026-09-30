@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebna
+name: Sebná
+names:
+- name: Sebná
+- name: Sebnah
+  note: Otra grafía, según la nota de 2Re 18:18.
+perspicacia: '1200003975'
+summary: Funcionario del rey Ezequías. Había estado sobre la casa real, pero Isaías anunció que Eliaquim ocuparía su puesto;
+  en 732 a.e.c. era el secretario y oyó al rabsaqué.
+reason: Perspicacia «Sebná, Sebnah»; Is 22:15-24; 2Re 18:18, 26, 37.
+sources:
+- it-sebna
+- 2-reyes-18
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Sebná, Sebnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: tie
+  person: ezequias
+  word: master
+  inferred: true
+  sources:
+  - 2-reyes-18
+  - it-sebna
+  - 2-reyes-19
+  reason: Perspicacia «Sebná» lo llama oficial del rey Ezequías; 2Re 18:18, 37 lo da como secretario que informa al rey.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

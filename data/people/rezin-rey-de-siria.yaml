@@ -1,0 +1,88 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rezin-rey-de-siria
+name: Rezín
+names:
+- name: Rezín
+perspicacia: 1200003721#1
+disambiguation: Rey de Siria en Damasco; no es el cabeza de la familia de netineos que volvió de Babilonia.
+date:
+  from: -776
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y c. 758 a.e.c. (tiempo narrativo: reinaba en días de Jotán y de Acaz)'
+summary: Rey de Siria con sede en Damasco. Aliado de Pécah, atacó Judá, sitió Jerusalén en días de Acaz y devolvió Elat a
+  Edom. Tiglat-Piléser III tomó Damasco y lo mató.
+reason: Perspicacia «Rezín», núm. 1; 2Re 15:37 y 16:5-9. Los años van del reinado de Jotán (desde 777) a la muerte de Pécah,
+  hacia 758 (A6-B).
+sources:
+- it-rezin
+- 2-reyes-15
+- 2-reyes-16
+- tnm-a6-b
+links:
+- title: 'Perspicacia: «Rezín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003721
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+relations:
+- type: holds_office
+  place: siria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - 2-reyes-16
+  - it-rezin
+  reason: 2Re 15:37 y 16:5 lo llaman rey de Siria.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: pecah
+  word: ally
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-rezin
+  - it-peqah
+  - 2-reyes-16
+  reason: '2Re 15:37: Jehová empieza a mandar a Rezín y a Pécah contra Judá. Perspicacia «Péqah» habla de su alianza.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: acaz
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-16
+  - it-rezin
+  reason: '2Re 16:5, 7: cerca a Acaz en Jerusalén, y Acaz pide ayuda contra él.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: damasco
+  inferred: true
+  sources:
+  - it-rezin
+  - 2-reyes-16
+  reason: Perspicacia «Rezín», núm. 1, dice que gobernaba en Damasco; 2Re 16:9 cae con ella.
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: damasco
+  inferred: true
+  sources:
+  - 2-reyes-16
+  - it-rezin
+  reason: '2Re 16:9: el rey asirio toma Damasco y mata a Rezín; el texto no dice el sitio exacto de su muerte.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-y-eliseo-van-de-betel-a-jerico
+title: Elías y Eliseo van de Betel a Jericó
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 2004
+places:
+- jerico
+people:
+- elias-profeta
+- eliseo
+present:
+- elias-profeta
+- eliseo
+passages:
+- 2Re 2:4, 5
+summary: Otra vez Elías le pide que se quede y Eliseo se niega. En Jericó, otros hijos de los profetas le repiten el aviso,
+  y él les pide que no hablen de eso.
+reason: 2Re 2:4, 5. Perspicacia «Jericó» dice que allí vivían hijos de los profetas. Mismo día que la partida de Elías, c.
+  917 (Perspicacia «Eliseo», párr. 5).
+sources:
+- 2-reyes-2
+- it-jerico
+- it-eliseo
+links:
+- title: 2 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

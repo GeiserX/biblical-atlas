@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeroboan-ii-recobra-la-frontera-de-israel
+title: Jeroboán II recobra la frontera de Israel, como anunció Jonás
+date:
+  from: -843
+  to: -802
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 844 y c. 803 a.e.c. (tiempo narrativo: reinado de Jeroboán II)'
+narrative_order:
+  series: 2-reyes
+  order: 14025
+places:
+- israel
+- lebo-hamat
+- mar-salado
+- damasco
+- hamat
+people:
+- jeroboan-ii
+- jonas-profeta
+present: []
+passages:
+- 2Re 14:25-28
+summary: Jehová había anunciado por Jonás, de Gat-Héfer, que Israel se libraría de su aflicción. Jeroboán II devuelve a Israel
+  sus límites, de Lebó-Hamat al mar Salado, y somete Damasco y Hamat.
+reason: 2Re 14:25-28; Perspicacia «Jeroboán», núm. 2, y «Jonás», núm. 1, que pone al profeta en ese reinado. Jeroboán II reina
+  de c. 844 a c. 803 (A6-A y A6-B).
+sources:
+- 2-reyes-14
+- it-jeroboan
+- it-jonas
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Jeroboán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

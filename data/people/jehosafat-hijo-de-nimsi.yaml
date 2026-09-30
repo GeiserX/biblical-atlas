@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehosafat-hijo-de-nimsi
+name: Jehosafat
+names:
+- name: Jehosafat
+perspicacia: 1200002383#4
+disambiguation: Padre del rey Jehú de Israel e hijo de Nimsí; no es el rey Jehosafat de Judá.
+distinct_from:
+- jehosafat
+- jehosafat-hijo-de-ahilud
+- jehosafat-hijo-de-parua
+summary: Hijo de Nimsí y padre de Jehú, el jefe militar que Eliseo mandó ungir como rey de Israel. Solo se le nombra en la
+  genealogía de su hijo.
+reason: Perspicacia «Jehosafat», núm. 4, y «Nimsí»; 2Re 9:2, 14.
+sources:
+- it-jehosafat
+- it-nimsi
+- 2-reyes-9
+links:
+- title: 'Perspicacia: «Jehosafat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
+  type: perspicacia
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+relations:
+- type: kin
+  person: nimsi
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-9
+  - it-nimsi
+  reason: '2Re 9:2, 14: Jehú es hijo de Jehosafat, hijo de Nimsí; Perspicacia «Nimsí» lo da como padre de Jehosafat.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

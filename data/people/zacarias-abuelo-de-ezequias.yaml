@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-abuelo-de-ezequias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#16
+disambiguation: Padre de Abías, la madre del rey Ezequías; no es el rey Zacarías de Israel, ni el profeta, ni el hijo de Jehoiadá,
+  ni el padre de Juan.
+distinct_from:
+- zacarias-de-israel
+- zacarias-profeta
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+summary: Padre de Abías, la esposa del rey Acaz. Por ella fue el abuelo materno del rey Ezequías.
+reason: Perspicacia «Zacarías», núm. 16; 2Re 18:2.
+sources:
+- it-zacarias
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

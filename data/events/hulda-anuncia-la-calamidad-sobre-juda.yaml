@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hulda-anuncia-la-calamidad-sobre-juda
+title: La profetisa Huldá anuncia la calamidad sobre Judá
+date:
+  from: -641
+  to: -641
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 642 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 22014
+type: speech
+roles:
+  hulda: spoke
+places:
+- jerusalen
+people:
+- hulda
+- hilquias-hijo-de-salum
+- ahicam
+- acbor-hijo-de-micaya
+- safan
+- asaya-siervo-del-rey
+- josias
+present:
+- hulda
+- hilquias-hijo-de-salum
+- ahicam
+- acbor-hijo-de-micaya
+- safan
+- asaya-siervo-del-rey
+passages:
+- 2Re 22:14-20
+- 2Cr 34:22-28
+summary: Los cinco enviados de Josías visitan a Huldá en el Segundo Barrio. Ella anuncia que caerán sobre Judá las maldiciones
+  del libro, pero que Josías, por haberse humillado, morirá en paz antes de verlas.
+reason: '2Re 22:14-20; Perspicacia «Huldá». Año 18 de Josías (2Re 22:3), que Perspicacia «Safán» y «Asaya», núm. 3, ponen
+  en 642 a.e.c. Josías no está presente: recibe la respuesta.'
+sources:
+- 2-reyes-22
+- 2-cronicas-34
+- it-hulda
+- it-safan
+- it-asaya
+links:
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+- title: 'Perspicacia: «Huldá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002101
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

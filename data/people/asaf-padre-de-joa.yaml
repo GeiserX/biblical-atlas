@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: asaf-padre-de-joa
+name: Asaf
+names:
+- name: Asaf
+perspicacia: 1200000400#3
+disambiguation: Padre de Joá, funcionario de Ezequías; Perspicacia lo registra aparte del levita cantor Asaf, hijo de Berekías.
+distinct_from:
+- asaf-hijo-de-berekias
+summary: Padre de Joá, uno de los funcionarios del rey Ezequías. La mayoría entiende que el registrador era Joá y no él.
+reason: Perspicacia «Asaf», núm. 3; 2Re 18:18, 37.
+not_claimed:
+- 'Que sea el cantor de David: solo algunos lo opinan, porque «hijo» puede significar descendiente.'
+sources:
+- it-asaf
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Asaf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000400
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified
