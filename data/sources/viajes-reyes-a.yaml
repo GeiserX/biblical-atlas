@@ -1,0 +1,15 @@
+# biblical-atlas: fuentes del carril «viajes-reyes-a» (viajes de 1 Reyes y 2 Crónicas 1-20). Esquema en docs/investigacion/README.md.
+it-beraca:
+  title: Beracá
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000648
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-zefata:
+  title: Zefata
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004699
+  level: 1
+  published: null
+  checked_on: '2026-09-30'

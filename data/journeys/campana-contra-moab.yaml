@@ -1,0 +1,105 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-contra-moab
+name: Tres reyes contra Moab
+person: jehoram-de-israel
+reference: 2Re 3:4-27
+date:
+  from: -916
+  to: -912
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 917 y 913 a.e.c.
+narrative_order:
+  series: jehoram-de-israel
+  order: 1
+companions:
+- jehosafat
+summary: Moab se rebela tras la muerte de Acab. Jehoram sale de Samaria con Jehosafat y el rey de Edom; tras siete días por
+  el desierto de Edom sin agua, Eliseo anuncia que llegará. Entran en Moab y cercan Quir-Haréset.
+reason: '2Re 3:6-27 da el orden: Samaria, el camino de Edom, Moab y Quir-Haréset. Fechas de los sucesos tres-reyes-marchan-contra-moab
+  y mesa-sacrifica-a-su-primogenito-en-quir-hareset.'
+sources:
+- 2-reyes-3
+- it-jehoram
+- it-jehosafat
+- it-mesa
+- it-quir-hareset
+- it-eliseo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 2Re 3:6, 7
+  date:
+    from: -916
+    to: -912
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 917 y 913 a.e.c.
+  note: Jehosafat se une a la marcha; el rey de Edom no tiene nombre.
+  reason: '2Re 3:6: Jehoram sale de Samaria. Fecha del suceso tres-reyes-marchan-contra-moab.'
+  sources:
+  - 2-reyes-3
+  - it-jehoram
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: edom
+  reference: 2Re 3:8-20
+  date:
+    from: -916
+    to: -912
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 917 y 913 a.e.c.
+  note: Por el camino del desierto de Edom, nombre que ya tiene la ficha. Allí consultan a Eliseo.
+  reason: '2Re 3:8, 9, 20: rodeo de siete días y agua que llega desde Edom. Fecha del suceso tres-reyes-marchan-contra-moab.'
+  sources:
+  - 2-reyes-3
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: moab
+  reference: 2Re 3:21-25
+  date:
+    from: -916
+    to: -912
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 917 y 913 a.e.c.
+  note: null
+  reason: '2Re 3:24: los israelitas entran en Moab. Fecha del suceso tres-reyes-marchan-contra-moab.'
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: quir-de-moab
+  reference: 2Re 3:25-27
+  date:
+    from: -916
+    to: -912
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 917 y 913 a.e.c.
+  note: Quir-Haréset. Tras el sacrificio de Mesá, vuelven a su tierra.
+  reason: 2Re 3:25 los deja ante Quir-Haréset. Fecha del suceso mesa-sacrifica-a-su-primogenito-en-quir-hareset.
+  sources:
+  - 2-reyes-3
+  - it-quir-hareset
+  - it-mesa
+  checked_on: '2026-09-30'
+  status: verified

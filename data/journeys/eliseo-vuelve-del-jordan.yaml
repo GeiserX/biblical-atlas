@@ -1,0 +1,128 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: eliseo-vuelve-del-jordan
+name: Eliseo vuelve del Jordán
+person: eliseo
+reference: 2Re 2:12-25
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: eliseo
+  order: 1
+companions: []
+summary: Con la prenda oficial de Elías, Eliseo divide el Jordán y se queda en Jericó, donde sanea el agua. Camino de Betel,
+  unas osas atacan a los niños que se burlan de él. Luego va al Carmelo y a Samaria.
+reason: 2Re 2:13-25 da las etapas en orden. Fechas de los sucesos elias-llevado-en-la-tempestad, los-hijos-de-los-profetas-buscan-a-elias,
+  eliseo-sanea-el-agua-de-jerico y dos-osas-atacan-a-los-ninos-que-se-burlan-de-eliseo.
+sources:
+- 2-reyes-2
+- it-eliseo
+- it-jerico
+- it-betel
+- it-carmelo
+- it-samaria
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: rio-jordan
+  reference: 2Re 2:12-14
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: Vuelve a cruzar el río.
+  reason: '2Re 2:13, 14: golpea el agua y cruza. Fecha del suceso elias-llevado-en-la-tempestad.'
+  sources:
+  - 2-reyes-2
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerico
+  reference: 2Re 2:15-22
+  date:
+    from: -916
+    to: -916
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 917 a.e.c.
+  note: Espera tres días a los que buscan a Elías y purifica el agua de la ciudad.
+  reason: 2Re 2:15-18 lo deja en Jericó. Fechas de los sucesos los-hijos-de-los-profetas-buscan-a-elias y eliseo-sanea-el-agua-de-jerico.
+  sources:
+  - 2-reyes-2
+  - it-jerico
+  - it-eliseo
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: betel
+  reference: 2Re 2:23, 24
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+  note: Unos niños se burlan de él por el camino.
+  reason: '2Re 2:23: sube de Jericó hacia Betel. Fecha del suceso dos-osas-atacan-a-los-ninos-que-se-burlan-de-eliseo.'
+  sources:
+  - 2-reyes-2
+  - it-betel
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: monte-carmelo
+  reference: 2Re 2:25
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+  note: null
+  reason: '2Re 2:25: de allí va al monte Carmelo. Sin suceso propio: tiempo narrativo entre la partida de Elías y el final
+    del reinado de Jehoram de Israel (tabla A6-A).'
+  sources:
+  - 2-reyes-2
+  - it-carmelo
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: samaria
+  reference: 2Re 2:25
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+  note: null
+  reason: '2Re 2:25: después vuelve a Samaria. Sin suceso propio: tiempo narrativo entre la partida de Elías y el final del
+    reinado de Jehoram de Israel (tabla A6-A).'
+  sources:
+  - 2-reyes-2
+  - it-samaria
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

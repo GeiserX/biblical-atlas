@@ -1,0 +1,68 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: hiram-el-artesano-va-a-jerusalen
+name: Hiram el artesano va a Jerusalén
+person: hiram-artesano
+reference: 1Re 7:13-47; 2Cr 2:13, 14; 4:11-17
+date:
+  from: -1036
+  to: -1026
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1027 a.e.c. (tiempo narrativo: del pacto con el rey de Tiro al final del templo)'
+companions: []
+summary: Salomón hace venir de Tiro a Hiram, experto en cobre de madre israelita, que el rey de Tiro le envía. En Jerusalén
+  hace las columnas, el Mar, los carritos y los utensilios del templo.
+reason: 1Re 7:13, 14 y 2Cr 2:13, 14 dicen de dónde viene; 1Re 7:40-45 y 2Cr 4:11-16, qué hizo. Fechas de los sucesos hiram-y-salomon-pactan-la-madera-del-templo
+  e hiram-hace-los-objetos-de-cobre-del-templo.
+sources:
+- 1-reyes-7
+- 2-cronicas-2
+- 2-cronicas-4
+- it-hiram
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: tiro
+  reference: 1Re 7:13; 2Cr 2:13
+  date:
+    from: -1036
+    to: -1033
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1037 y 1034 a.e.c. (tiempo narrativo: al comienzo del reinado de Salomón, antes de empezar el templo)'
+  note: Lo envía el rey de Tiro, que en 2Cr 2:13 lo llama Hiram-Abí.
+  reason: 1Re 7:13 dice que Salomón lo trajo desde Tiro. Fecha del suceso hiram-y-salomon-pactan-la-madera-del-templo, paralelo
+    de 2Cr 2, donde el rey de Tiro lo ofrece.
+  sources:
+  - 1-reyes-7
+  - 2-cronicas-2
+  - it-hiram
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 1Re 7:14, 40-45; 2Cr 4:11-16
+  date:
+    from: -1033
+    to: -1026
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1034 y 1027 a.e.c. (tiempo narrativo: durante la obra del templo)'
+  note: Hace las piezas de cobre del templo; la fundición, en el distrito del Jordán, la manda el rey.
+  reason: 1Re 7:14, 40-45 lo pone ante Salomón y enumera su obra. Fecha del suceso hiram-hace-los-objetos-de-cobre-del-templo.
+  sources:
+  - 1-reyes-7
+  - 2-cronicas-4
+  - it-hiram
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,91 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: simei-sale-a-gat
+name: Simeí sale a Gat
+person: simei-hijo-de-guera
+reference: 1Re 2:36-46
+date:
+  from: -1033
+  to: -1033
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1034 a.e.c.
+  note: 'Tres años después del confinamiento (1Re 2:39), que el estudio 3 pone al empezar el reinado de Salomón, en 1037:
+    1037 menos 3 da 1034.'
+companions: []
+summary: Salomón obliga a Simeí a vivir en Jerusalén sin cruzar el Cedrón. Tres años más tarde, Simeí va en burro a Gat por
+  dos esclavos fugados; a su regreso, el rey ordena su muerte.
+reason: '1Re 2:36-46 cuenta la salida y la vuelta. Fecha de los sucesos simei-va-a-gat-a-buscar-a-sus-esclavos y salomon-manda-matar-a-simei:
+  cuenta nuestra de tres años desde 1037, por eso va pendiente.'
+sources:
+- 1-reyes-2
+- it-simei
+- it-akis
+- si-3
+checked_on: '2026-09-30'
+status: pending
+stops:
+- order: 1
+  place: jerusalen
+  reference: 1Re 2:36-38
+  date:
+    from: -1033
+    to: -1033
+    precision: year
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1034 a.e.c.
+    note: 'Tres años después del confinamiento (1Re 2:39), que el estudio 3 pone al empezar el reinado de Salomón, en 1037:
+      1037 menos 3 da 1034.'
+  note: 'Confinado por orden de Salomón: si cruza el valle de Cedrón, morirá.'
+  reason: 1Re 2:36-38 lo confina en Jerusalén y 2:40 cuenta que salió. Fecha del suceso simei-va-a-gat-a-buscar-a-sus-esclavos,
+    cuenta nuestra.
+  sources:
+  - 1-reyes-2
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: gat
+  reference: 1Re 2:39, 40
+  date:
+    from: -1033
+    to: -1033
+    precision: year
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1034 a.e.c.
+    note: 'Tres años después del confinamiento (1Re 2:39), que el estudio 3 pone al empezar el reinado de Salomón, en 1037:
+      1037 menos 3 da 1034.'
+  note: Recupera a dos esclavos que habían huido junto al rey Akís.
+  reason: 1Re 2:39, 40 nombra Gat, donde reinaba Akís. Fecha del suceso simei-va-a-gat-a-buscar-a-sus-esclavos, cuenta nuestra.
+  sources:
+  - 1-reyes-2
+  - it-akis
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: jerusalen
+  reference: 1Re 2:40-46
+  date:
+    from: -1033
+    to: -1033
+    precision: year
+    approx: true
+    type: derived
+    chronology: tnm
+    text: c. 1034 a.e.c.
+    note: 'Tres años después del confinamiento (1Re 2:39), que el estudio 3 pone al empezar el reinado de Salomón, en 1037:
+      1037 menos 3 da 1034.'
+  note: Benaya lo ejecuta por orden del rey.
+  reason: '1Re 2:40-46: vuelve de Gat y Salomón lo manda matar. Fecha del suceso salomon-manda-matar-a-simei, cuenta nuestra.'
+  sources:
+  - 1-reyes-2
+  - it-simei
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

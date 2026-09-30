@@ -1,0 +1,86 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ultima-campana-de-acab
+name: Última campaña de Acab
+person: acab
+reference: 1Re 22:1-40
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: acab
+  order: 2
+companions: []
+summary: Acab sale de Samaria para recuperar Ramot-Galaad de manos de Siria. Entra disfrazado en la batalla, una flecha lanzada
+  al azar lo hiere y muere al caer la tarde. Lo llevan a Samaria y lo entierran allí.
+reason: 1Re 22:10-38 da la salida, la batalla y la vuelta del cuerpo. Fechas de los sucesos acab-y-jehosafat-consultan-a-los-profetas
+  y muerte-de-acab.
+sources:
+- 1-reyes-22
+- it-acab
+- it-ramot-galaad
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: samaria
+  reference: 1Re 22:10-28
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920 a.e.c.
+  note: Los profetas hablan ante los dos reyes en la puerta de la ciudad.
+  reason: 1Re 22:10 sienta a Acab en la era de la puerta de Samaria. Fecha del suceso acab-y-jehosafat-consultan-a-los-profetas.
+  sources:
+  - 1-reyes-22
+  - it-acab
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ramot-galaad
+  reference: 1Re 22:29-36
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920 a.e.c.
+  note: Herido, lo sostienen en el carro hasta que muere.
+  reason: 1Re 22:29-35 lo lleva a la batalla de Ramot-Galaad. Fecha del suceso muerte-de-acab.
+  sources:
+  - 1-reyes-22
+  - it-ramot-galaad
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: samaria
+  reference: 1Re 22:37, 38
+  date:
+    from: -919
+    to: -919
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 920 a.e.c.
+  note: Los perros lamen su sangre junto al estanque.
+  reason: 1Re 22:37 dice que lo trajeron muerto a Samaria y lo enterraron. Fecha del suceso muerte-de-acab.
+  sources:
+  - 1-reyes-22
+  - it-acab
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

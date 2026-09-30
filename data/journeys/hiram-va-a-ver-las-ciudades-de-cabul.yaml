@@ -1,0 +1,60 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: hiram-va-a-ver-las-ciudades-de-cabul
+name: Hiram va a ver las ciudades de Cabul
+person: hiram-rey-de-tiro
+reference: 1Re 9:10-14
+date:
+  from: -1013
+  to: -1013
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1014 a.e.c.
+companions: []
+summary: Salomón paga a Hiram, rey de Tiro, con veinte ciudades de Galilea. Hiram sale de Tiro a verlas y le disgustan; por
+  eso aquella zona se llama Tierra de Cabul.
+reason: 1Re 9:11-13 cuenta la salida desde Tiro y la visita. Fecha del suceso salomon-da-a-hiram-veinte-ciudades-de-galilea.
+sources:
+- 1-reyes-9
+- it-hiram
+- it-cabul
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: tiro
+  reference: 1Re 9:11, 12
+  date:
+    from: -1013
+    to: -1013
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1014 a.e.c.
+  note: null
+  reason: '1Re 9:12: Hiram sale de Tiro. Fecha del suceso salomon-da-a-hiram-veinte-ciudades-de-galilea.'
+  sources:
+  - 1-reyes-9
+  - it-hiram
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: tierra-de-cabul
+  reference: 1Re 9:12, 13
+  date:
+    from: -1013
+    to: -1013
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1014 a.e.c.
+  note: Las veinte ciudades no le gustan; de ahí el nombre de la zona.
+  reason: 1Re 9:12, 13 lo lleva a las ciudades de Galilea que luego se llamaron Tierra de Cabul. Fecha del suceso salomon-da-a-hiram-veinte-ciudades-de-galilea.
+  sources:
+  - 1-reyes-9
+  - it-cabul
+  checked_on: '2026-09-30'
+  status: verified

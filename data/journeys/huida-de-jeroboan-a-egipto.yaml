@@ -1,0 +1,67 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-jeroboan-a-egipto
+name: Jeroboán huye a Egipto
+person: jeroboan-i
+reference: 1Re 11:26-40
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: al final del reinado de Salomón)'
+narrative_order:
+  series: jeroboan-i
+  order: 1
+companions: []
+summary: Al salir de Jerusalén, Jeroboán se encuentra con el profeta Ahíya, que rasga un manto nuevo en doce trozos y le da
+  diez. Salomón quiere matarlo y él huye a Egipto, junto al rey Sisac.
+reason: 1Re 11:29-40 cuenta la salida, el encuentro y la huida. Fechas de los sucesos ahiya-rasga-su-manto-en-doce-pedazos
+  y jeroboan-huye-a-egipto.
+sources:
+- 1-reyes-11
+- it-jeroboan
+- it-sisaq
+- it-ahiya
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: 1Re 11:26-39
+  date:
+    from: -1013
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: al final del reinado de Salomón, ya construido el Montículo)'
+  note: Ahíya lo encuentra en el camino, fuera de la ciudad.
+  reason: '1Re 11:29: Jeroboán sale de Jerusalén. Fecha del suceso ahiya-rasga-su-manto-en-doce-pedazos.'
+  sources:
+  - 1-reyes-11
+  - it-jeroboan
+  - it-ahiya
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: egipto
+  reference: 1Re 11:40; 12:2
+  date:
+    from: -1013
+    to: -997
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de la profecía de Ahíya y antes de morir Salomón)'
+  note: Vive allí, con Sisac, hasta la muerte de Salomón.
+  reason: 1Re 11:40 lo lleva a Egipto. Fecha del suceso jeroboan-huye-a-egipto.
+  sources:
+  - 1-reyes-11
+  - 1-reyes-12
+  - it-sisaq
+  checked_on: '2026-09-30'
+  status: verified

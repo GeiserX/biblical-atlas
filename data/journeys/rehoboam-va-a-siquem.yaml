@@ -1,0 +1,65 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: rehoboam-va-a-siquem
+name: Rehoboam va a Siquem
+person: rehoboam
+reference: 1Re 12:1-24; 2Cr 10:1–11:4
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+companions: []
+summary: Rehoboam va a Siquem para que Israel lo proclame rey. No quiere aligerar la carga del pueblo, y diez tribus se separan.
+  Matan a pedradas a Adoram y él escapa en su carro a Jerusalén.
+reason: 1Re 12:1-24 y 2Cr 10:1-11:4 cuentan la ida, la ruptura y la huida. Fechas de los sucesos division-del-reino e israel-mata-a-pedradas-a-adoram.
+sources:
+- 1-reyes-12
+- 2-cronicas-10
+- 2-cronicas-11
+- it-rehoboam
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: siquem
+  reference: 1Re 12:1-18; 2Cr 10:1-18
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 997 a.e.c.
+  note: null
+  reason: '1Re 12:1: Rehoboam va a Siquem. Fecha del suceso division-del-reino.'
+  sources:
+  - 1-reyes-12
+  - 2-cronicas-10
+  - it-rehoboam
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: jerusalen
+  reference: 1Re 12:18-24; 2Cr 10:18; 11:1-4
+  date:
+    from: -996
+    to: -996
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 997 a.e.c.
+  note: Reúne a Judá y a Benjamín para la guerra, pero Semaya se lo impide.
+  reason: 1Re 12:18, 21 lo lleva a Jerusalén. Fecha del suceso israel-mata-a-pedradas-a-adoram.
+  sources:
+  - 1-reyes-12
+  - 2-cronicas-11
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

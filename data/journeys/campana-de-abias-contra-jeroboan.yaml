@@ -1,0 +1,108 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-abias-contra-jeroboan
+name: Abías contra Jeroboán
+person: abias-de-juda
+reference: 2Cr 13:2-20
+date:
+  from: -979
+  to: -977
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+companions: []
+summary: Abías habla a Jeroboán y a su ejército desde el monte Zemaraim. Pese a una emboscada, Judá vence, y Abías, en la
+  persecución, le quita Betel, Jesaná y Efrén con sus pueblos.
+reason: '2Cr 13:4-19 da el orden: el discurso en Zemaraim, la batalla y la persecución. Sin suceso en data/events: fecha del
+  periodo abias-de-juda (tabla A6-A), por eso va pendiente.'
+sources:
+- 2-cronicas-13
+- it-abias
+- it-zemaraim
+- it-jesana
+- it-efron
+- it-efrain
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: pending
+stops:
+- order: 1
+  place: monte-zemaraim
+  reference: 2Cr 13:4-17
+  date:
+    from: -979
+    to: -977
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+  note: La ciudad de Benjamín del mismo nombre es otra ficha, zemaraim.
+  reason: '2Cr 13:4 sitúa el discurso en el monte Zemaraim, dentro de la región montañosa de Efraín. Fecha: el reinado de
+    Abías (periodo abias-de-juda, tabla A6-A), sin suceso propio.'
+  sources:
+  - 2-cronicas-13
+  - it-zemaraim
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: betel
+  reference: 2Cr 13:19
+  date:
+    from: -979
+    to: -977
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+  note: null
+  reason: '2Cr 13:19: primera ciudad que toma en la persecución. Fecha: el reinado de Abías (periodo abias-de-juda, tabla
+    A6-A), sin suceso propio.'
+  sources:
+  - 2-cronicas-13
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: jesana
+  reference: 2Cr 13:19
+  date:
+    from: -979
+    to: -977
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+  note: null
+  reason: '2Cr 13:19: segunda ciudad tomada. Fecha: el reinado de Abías (periodo abias-de-juda, tabla A6-A), sin suceso propio.'
+  sources:
+  - 2-cronicas-13
+  - it-jesana
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: efrain
+  reference: 2Cr 13:19
+  date:
+    from: -979
+    to: -977
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 980 y 978 a.e.c. (tiempo narrativo: reinado de Abías)'
+  note: Efrén. Perspicacia cree que quizás sea la Efraín de Jn 11:54, la ficha que ya existe.
+  reason: '2Cr 13:19 nombra Efrén; Perspicacia «Efrén» y «Efrón», núm. 3, la relacionan con Efraín. Fecha: el reinado de Abías
+    (periodo abias-de-juda, tabla A6-A), sin suceso propio.'
+  sources:
+  - 2-cronicas-13
+  - it-efron
+  - it-efrain
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: pending

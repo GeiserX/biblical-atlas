@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: salomon-va-a-ezion-gueber
+name: Salomón va a Ezión-Guéber y Elot
+person: salomon
+reference: 1Re 9:26-28; 2Cr 8:17, 18
+date:
+  from: -1036
+  to: -997
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037-998 a.e.c., en el reinado de Salomón
+narrative_order:
+  series: salomon
+  order: 2
+companions: []
+summary: Salomón baja a Ezión-Guéber y a Elot, en la costa del mar Rojo, donde tiene su flota. Sus siervos, con marineros
+  que envía Hiram, navegan a Ofir y le traen oro.
+reason: 2Cr 8:17 dice que Salomón fue en persona a los dos puertos; 1Re 9:26-28, que allí hizo la flota. Fecha del suceso
+  flota-de-salomon-a-ofir, que abarca todo su reinado.
+sources:
+- 1-reyes-9
+- 1-reyes-10
+- 2-cronicas-8
+- 2-cronicas-9
+- it-ofir
+- it-ezion-gueber
+- it-salomon
+- tnm-b7
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ezion-gueber
+  reference: 1Re 9:26; 2Cr 8:17
+  date:
+    from: -1036
+    to: -997
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1037-998 a.e.c., en el reinado de Salomón
+  note: 'Allí construye la flota. Salomón no navega: sus siervos y los marineros de Hiram van a Ofir.'
+  reason: 1Re 9:26 y 2Cr 8:17 nombran Ezión-Guéber, junto a Elot. Fecha del suceso flota-de-salomon-a-ofir.
+  sources:
+  - 1-reyes-9
+  - 2-cronicas-8
+  - it-ezion-gueber
+  - tnm-b7
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: elat
+  reference: 2Cr 8:17
+  date:
+    from: -1036
+    to: -997
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1037-998 a.e.c., en el reinado de Salomón
+  note: Elot, otro nombre que ya recoge la ficha de Elat.
+  reason: 2Cr 8:17 nombra Elot tras Ezión-Guéber. Fecha del suceso flota-de-salomon-a-ofir.
+  sources:
+  - 2-cronicas-8
+  - tnm-b7
+  checked_on: '2026-09-30'
+  status: verified

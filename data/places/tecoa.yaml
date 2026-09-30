@@ -5,6 +5,9 @@ names:
 - name: Tecoa
 - name: Teqoa
   note: Grafía que usa Perspicacia.
+- name: Desierto de Tecoa
+  note: Nombre de 2Cr 20:20 para el desierto al este de la ciudad, que Perspicacia «Teqoa» cuenta, al parecer, dentro del desierto
+    de Judá. Allí salió Jehosafat contra Ammón y Moab.
 type: city
 lat: 31.63247
 lon: 35.21048
@@ -14,7 +17,7 @@ coord_url: https://www.openbible.info/geo/ancient/a2e3aa0/tekoa
 summary: Ciudad de Judá, 16 km al sur de Jerusalén, junto al desierto. De allí trajo Joab a la mujer astuta que pidió a David
   el regreso de Absalón. Allí vivía Amós, que cuidaba ganado antes de ser profeta.
 reason: 'Perspicacia «Teqoa» (grafía antigua), párr. 1: se identifica con Khirbet et-Tuquʽ; «Amós», núm. 1, párr. 2; Am 1:1.
-  OpenBible: solo el punto.'
+  2Cr 20:20, desierto de Tecoa. OpenBible: solo el punto.'
 sources:
 - it-teqoa
 - it-amos
@@ -22,6 +25,7 @@ sources:
 - amos-1
 - 2-samuel-14
 - 2-samuel-23
+- 2-cronicas-20
 links:
 - title: 'Perspicacia: «Teqoa»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004344

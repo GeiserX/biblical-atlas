@@ -1,0 +1,106 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: elias-vuelve-ante-acab
+name: Elías vuelve ante Acab
+person: elias-profeta
+reference: 1Re 18:1-46
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: tercer año de la sequía, en el reinado de Acab)'
+narrative_order:
+  series: elias-profeta
+  order: 2
+companions: []
+summary: Al tercer año de sequía, Jehová envía a Elías ante Acab. En el monte Carmelo desafía a los profetas de Baal y los
+  mata en el Cisón; luego ora por lluvia y corre delante del carro del rey hasta Jezreel.
+reason: '1Re 18:19-46 da el orden: Carmelo, Cisón, la cima del Carmelo y Jezreel. Fechas de los sucesos elias-en-el-carmelo,
+  elias-mata-a-los-profetas-de-baal-en-el-cison y elias-ora-y-jehova-envia-la-lluvia.'
+sources:
+- 1-reyes-18
+- santiago-5
+- it-elias
+- it-carmelo
+- it-cison
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: monte-carmelo
+  reference: 1Re 18:19-39
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: c. 940-920 a.e.c. (reinado de Acab)
+  note: El primer encuentro con Abdías y con Acab es en un sitio que no se nombra.
+  reason: 1Re 18:19, 20 reúne a Israel y a los profetas en el Carmelo. Fecha del suceso elias-en-el-carmelo.
+  sources:
+  - 1-reyes-18
+  - it-carmelo
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: cison
+  reference: 1Re 18:40
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+  note: Baja allí a los profetas de Baal.
+  reason: '1Re 18:40: los mata junto al arroyo de Cisón. Fecha del suceso elias-mata-a-los-profetas-de-baal-en-el-cison.'
+  sources:
+  - 1-reyes-18
+  - it-cison
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-carmelo
+  reference: 1Re 18:41-44
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+  note: Sube a la cima a orar; su ayudante ve la nube.
+  reason: '1Re 18:42: vuelve a subir a la cima del Carmelo. Fecha del suceso elias-ora-y-jehova-envia-la-lluvia.'
+  sources:
+  - 1-reyes-18
+  - it-carmelo
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jezreel
+  reference: 1Re 18:45, 46
+  date:
+    from: -939
+    to: -919
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+  note: Llega corriendo por delante del carro de Acab.
+  reason: '1Re 18:46: corre hasta Jezreel. Fecha del suceso elias-ora-y-jehova-envia-la-lluvia.'
+  sources:
+  - 1-reyes-18
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified

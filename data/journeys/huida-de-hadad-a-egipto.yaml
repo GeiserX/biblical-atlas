@@ -1,0 +1,99 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-hadad-a-egipto
+name: Hadad huye a Egipto
+person: hadad-el-edomita
+reference: 1Re 11:14-22
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+companions: []
+summary: Cuando Joab mata a los varones de Edom, el niño Hadad, de sangre real, escapa con siervos de su padre. Pasan por
+  Madián y Parán, donde se les unen hombres, y el faraón lo acoge en Egipto.
+reason: 1Re 11:15-18 da las etapas en orden. Fecha del suceso hadad-el-edomita-huye-a-egipto.
+sources:
+- 1-reyes-11
+- it-hadad
+- it-paran
+- it-madian
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: edom
+  reference: 1Re 11:15-17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+  note: Huye de la matanza que hace Joab.
+  reason: '1Re 11:15-17: la huida empieza en Edom. Fecha del suceso hadad-el-edomita-huye-a-egipto.'
+  sources:
+  - 1-reyes-11
+  - it-hadad
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: madian
+  reference: 1Re 11:18
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+  note: null
+  reason: '1Re 11:18: salen de Madián. Fecha del suceso hadad-el-edomita-huye-a-egipto.'
+  sources:
+  - 1-reyes-11
+  - it-madian
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: desierto-de-paran
+  reference: 1Re 11:18
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+  note: Allí se les unen algunos hombres.
+  reason: '1Re 11:18: llegan a Parán y se llevan hombres de allí. Fecha del suceso hadad-el-edomita-huye-a-egipto.'
+  sources:
+  - 1-reyes-11
+  - it-paran
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: egipto
+  reference: 1Re 11:18-22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+  note: El faraón le da casa, comida y tierras, y lo casa con la hermana de la reina Tahpenés.
+  reason: '1Re 11:18-22: llega ante el faraón y vive en Egipto. Fecha del suceso hadad-el-edomita-huye-a-egipto.'
+  sources:
+  - 1-reyes-11
+  - it-hadad
+  checked_on: '2026-09-30'
+  status: verified

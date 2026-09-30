@@ -1,0 +1,83 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: asa-contra-zerah
+name: Asá contra Zérah el etíope
+person: asa
+reference: 2Cr 14:9-15
+date:
+  from: -966
+  to: -966
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 967 a.e.c.
+companions: []
+summary: Zérah el etíope invade Judá con un ejército enorme. Asá le sale al encuentro junto a Maresá, ora a Jehová y vence;
+  persigue a los etíopes hasta Guerar, saquea sus alrededores y vuelve a Jerusalén.
+reason: '2Cr 14:9-15 da el orden: Zefata, Guerar y la vuelta. Perspicacia «Zérah», núm. 6, y «Zefata» dan el año 967.'
+sources:
+- 2-cronicas-14
+- it-zerah
+- it-zefata
+- it-maresa
+- it-guerar
+- it-asa
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: valle-de-zefata
+  reference: 2Cr 14:9-12
+  date:
+    from: -966
+    to: -966
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 967 a.e.c.
+  note: Junto a Maresá, donde forman para la batalla.
+  reason: 2Cr 14:10 nombra el valle de Zefata, junto a Maresá. Perspicacia «Zefata» fecha la victoria en 967.
+  sources:
+  - 2-cronicas-14
+  - it-zefata
+  - it-maresa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: guerar
+  reference: 2Cr 14:13, 14
+  date:
+    from: -966
+    to: -966
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 967 a.e.c.
+  note: Atacan y saquean las ciudades de alrededor.
+  reason: 2Cr 14:13 dice que los persiguieron hasta Guerar. Año de Perspicacia «Zérah», núm. 6.
+  sources:
+  - 2-cronicas-14
+  - it-guerar
+  - it-zerah
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Cr 14:15
+  date:
+    from: -966
+    to: -966
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 967 a.e.c.
+  note: Vuelven con rebaños y camellos.
+  reason: '2Cr 14:15: después regresan a Jerusalén. Año de Perspicacia «Zérah», núm. 6.'
+  sources:
+  - 2-cronicas-14
+  - it-zerah
+  checked_on: '2026-09-30'
+  status: verified

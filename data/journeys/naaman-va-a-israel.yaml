@@ -1,0 +1,108 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: naaman-va-a-israel
+name: Naamán va a Israel
+person: naaman-el-sirio
+reference: 2Re 5:1-27; Lu 4:27
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+companions: []
+summary: Naamán, general sirio con lepra, lleva al rey de Israel una carta de su señor. Eliseo le manda bañarse siete veces
+  en el Jordán; curado, vuelve a darle las gracias y se va con tierra de Israel.
+reason: '2Re 5:1-19 da el orden: Siria, Samaria, el Jordán y la vuelta. Fechas de los sucesos naaman-lleva-al-rey-de-israel-una-carta-de-siria,
+  eliseo-cura-a-naaman-de-la-lepra y naaman-vuelve-a-eliseo-y-promete-servir-a-jehova.'
+sources:
+- 2-reyes-5
+- lucas-4
+- it-naaman
+- it-abana
+- it-farpar
+- it-guehazi
+- it-ofel
+- tnm-a6-a
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: siria
+  reference: 2Re 5:1-5, 12
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: El texto dice Siria; Naamán habla del Abaná y el Farpar, ríos de Damasco.
+  reason: '2Re 5:1-5: sale de Siria con la carta de su rey. Fecha del suceso naaman-lleva-al-rey-de-israel-una-carta-de-siria.'
+  sources:
+  - 2-reyes-5
+  - it-naaman
+  - it-abana
+  - it-farpar
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: samaria
+  reference: 2Re 5:6-12
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: Ante el rey y luego a la puerta de la casa de Eliseo.
+  reason: 2Re 5:3 pone al profeta en Samaria y 5:6-9 lleva allí a Naamán. Fecha del suceso naaman-lleva-al-rey-de-israel-una-carta-de-siria.
+  sources:
+  - 2-reyes-5
+  - it-naaman
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: rio-jordan
+  reference: 2Re 5:14
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: Se sumerge siete veces y queda limpio.
+  reason: '2Re 5:14: baja al Jordán. Fecha del suceso eliseo-cura-a-naaman-de-la-lepra.'
+  sources:
+  - 2-reyes-5
+  - lucas-4
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: samaria
+  reference: 2Re 5:15-27
+  date:
+    from: -916
+    to: -904
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+  note: Vuelve a Eliseo. Ya de camino, Guehazí lo alcanza y esconde lo recibido en Ofel.
+  reason: 2Re 5:15 lo devuelve ante Eliseo. Fecha del suceso naaman-vuelve-a-eliseo-y-promete-servir-a-jehova.
+  sources:
+  - 2-reyes-5
+  - it-guehazi
+  - it-ofel
+  - tnm-a6-a
+  checked_on: '2026-09-30'
+  status: verified
