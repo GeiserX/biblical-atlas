@@ -178,6 +178,8 @@ def main():
     journeys = by_id(D["viajes"])
     for v in D["viajes"]:
         w = wjo[v["id"]]
+        if not w["w"]:
+            continue
         who = v.get("persona") or "pablo"
         stop_places = []
         for s in sorted(stops_by_journey.get(v["id"], []), key=lambda s: s["order"]):
