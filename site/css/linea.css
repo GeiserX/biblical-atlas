@@ -188,6 +188,8 @@
 .m-nombre i { font-style: italic; font-weight: 400; }
 .m-nombre.en-barra { color: #fff; }
 .m-nombre.en-barra.sobre-claro { color: #18221c; }
+/* Sobre la barra clara de una fecha secular, su nombre va en el color secular, como el contorno. */
+.m--secular .m-nombre.en-barra { color: var(--secular); }
 .carril { --fondo: var(--surface); }
 .carril:nth-child(even) { --fondo: var(--surface-2); }
 .m-nombre.fuera .t { background: var(--fondo); padding: 0 2px; margin: 0 -2px; border-radius: 3px; }

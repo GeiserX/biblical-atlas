@@ -563,7 +563,9 @@ function colorear(it) {
   forma.style.borderColor = hueca ? c : '';
   forma.style.background = hueca ? 'var(--surface)' : c;
   if (it.winEl) it.winEl.style.color = c;
-  it.labEl.classList.toggle('sobre-claro', !!tonos(c).texto);
+  // Una fecha secular se pinta clara con contorno de trazos (linea.css): su nombre va en el color secular, no según c.
+  const tn = it.secular ? { texto: '', forma: '' } : tonos(c);
+  it.labEl.classList.toggle('sobre-claro', !!tn.texto);
 }
 function mascara(el, l, r) {
   const v = l || r ? `linear-gradient(90deg, transparent 0, #000 ${l}px, #000 calc(100% - ${r}px), transparent 100%)` : '';
