@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mesa-sacrifica-a-su-primogenito-en-quir-hareset
+title: Israel devasta Moab y Mesá sacrifica a su primogénito en Quir-Haréset
+date:
+  from: -916
+  to: -912
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 917 y 913 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 3021
+places:
+- quir-de-moab
+- moab
+present:
+- mesa-rey-de-moab
+people:
+- mesa-rey-de-moab
+- jehoram-de-israel
+- jehosafat
+roles: {}
+passages:
+- 2Re 3:21-27
+summary: Los moabitas toman el agua roja por sangre, creen muertos a los reyes y van al saqueo, pero huyen. Israel arrasa
+  Moab; cercado en Quir-Haréset, Mesá quema a su primogénito en la muralla y el ejército se retira.
+reason: Perspicacia «Eliseo» fecha la campaña entre 917 y 913 a.e.c.; «Quir de Moab», a fines del siglo X. El hijo muerto
+  no tiene ficha ni papel; el texto no dice qué reyes llegaron a la ciudad.
+sources:
+- 2-reyes-3
+- it-eliseo
+- it-quir-de-moab
+- it-mesa
+- it-moab
+links:
+- title: 2 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/3
+  type: bible
+- title: 'Perspicacia: «Quir de Moab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002630
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

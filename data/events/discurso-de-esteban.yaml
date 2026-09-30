@@ -22,6 +22,7 @@ roles:
   esteban: spoke
 passages:
 - Hch 6:8–7:53
+- Is 66:1, 2
 summary: Esteban hace milagros y gana las discusiones con judíos de varias sinagogas. Con testigos falsos lo llevan
   al Sanedrín, donde repasa la historia de Israel desde Abrahán y denuncia a sus jueces.
 reason: Perspicacia «Esteban» (párr. 5 y 6), el capítulo 6 de «Testimonio completo» y la nota de estudio de Hch 7:1,
@@ -32,8 +33,9 @@ sources:
 - hechos-7
 - hechos-6
 - si-3
+- isaias-66
 note: 'Las fuentes no dan año: el tramo sale del orden del relato entre dos sucesos fechados por el estudio 3 (Pentecostés
   de 33 y la conversión de Saulo en 34).'
 search: discurso de Esteban
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

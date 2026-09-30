@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hosea-se-alia-con-so-y-salmanasar-lo-encarcela
+title: Hosea busca a So de Egipto y Salmanasar lo encarcela
+date:
+  from: -747
+  to: -741
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 748 y 742 a.e.c. (tiempo narrativo: desde que Hosea reina del todo hasta el sitio de Samaria)'
+narrative_order:
+  series: 2-reyes
+  order: 17003
+places:
+- israel
+- egipto
+people:
+- hosea-de-israel
+- salmanasar-v
+- so
+present: []
+passages:
+- 2Re 17:3, 4
+summary: Salmanasar hace a Hosea su vasallo y le impone tributo. Hosea deja de pagarlo y envía mensajeros a So, rey de Egipto;
+  al descubrirlo, el rey asirio lo encarcela.
+reason: 'A6-B da a Hosea como rey pleno hacia 748; el sitio empieza en 742 (Perspicacia «Ezequías»). «Hosea», núm. 4, pone
+  la prisión antes del sitio. El texto no dice dónde: el suceso no sitúa a nadie.'
+sources:
+- 2-reyes-17
+- it-hosea
+- it-salmanasar
+- it-so
+- it-ezequias
+- tnm-a6-b
+links:
+- title: 2 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

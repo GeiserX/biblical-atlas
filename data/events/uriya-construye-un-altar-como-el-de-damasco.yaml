@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: uriya-construye-un-altar-como-el-de-damasco
+title: Uriya construye un altar como el de Damasco
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras el viaje de Acaz a Damasco)'
+narrative_order:
+  series: 2-reyes
+  order: 16013
+  after: acaz-va-a-damasco-a-ver-a-tiglat-pileser
+places:
+- jerusalen
+- monte-moria
+people:
+- uriya-sacerdote-de-acaz
+- acaz
+present:
+- uriya-sacerdote-de-acaz
+- acaz
+passages:
+- 2Re 16:11-16
+summary: Uriya acaba el altar antes de que vuelva Acaz, que presenta ofrendas en él. El rey aparta el altar de cobre al lado
+  norte y manda hacer en el nuevo todas las ofrendas.
+reason: '2Re 16:11-16; Perspicacia «Uriya», núm. 1, y «Acaz», núm. 1. Sin año: tras el viaje a Damasco, en el reinado de Acaz
+  (762-746 a.e.c., A6-B).'
+sources:
+- 2-reyes-16
+- it-uriya
+- it-acaz
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Uriya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

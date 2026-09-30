@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoiada-sumo-sacerdote
+name: Jehoiadá
+names:
+- name: Jehoiadá
+perspicacia: 1200002376#3
+disambiguation: El sumo sacerdote que coronó a Jehoás y derrocó a Atalía; no es Jehoiadá, el padre de Benaya, de tiempos de
+  David.
+distinct_from:
+- jehoiada-padre-de-benaya
+date:
+  from: -912
+  to: -857
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '913-858 a.e.c. (tiempo narrativo: sumo sacerdote en los reinados de Jehoram, Ocozías, Atalía y Jehoás de Judá)'
+summary: Sumo sacerdote casado con Jehoseba, hija del rey Jehoram. Protegió al niño Jehoás, lo coronó al séptimo año, mandó
+  ejecutar a Atalía y renovó el pacto con Jehová. Instruyó a Jehoás y organizó la reparación del templo.
+reason: Perspicacia «Jehoiadá», núm. 3; 2Re 11:4-20 y 12:2, 7-10. Los límites de la fecha son el reinado de Jehoram de Judá
+  (desde 913) y el de Jehoás (hasta 858), según la tabla A6-A.
+sources:
+- it-jehoiada
+- 2-reyes-11
+- 2-reyes-12
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehoiadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002376
+  type: perspicacia
+- title: 2 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/11
+  type: bible
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+relations:
+- type: kin
+  person: jehoseba
+  word: wife
+  inferred: false
+  sources:
+  - 2-cronicas-22
+  - it-jehoseba
+  reason: 2Cr 22:11 la presenta como esposa del sacerdote Jehoiadá; en 2Re 11:2, 3 ella esconde a Jehoás en la casa de Jehová.
+    Perspicacia «Jehoseba».
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  place: jerusalen
+  office: high_priest
+  inferred: true
+  sources:
+  - it-jehoiada
+  - 2-reyes-11
+  - 2-reyes-12
+  reason: 2Re 11:9 y 12:7 lo llaman sacerdote y 12:10 habla del sumo sacerdote; Perspicacia «Jehoiadá», núm. 3, lo tiene por
+    sumo sacerdote. Servía en la casa de Jehová, en Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

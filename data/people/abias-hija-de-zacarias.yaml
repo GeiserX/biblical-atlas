@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-hija-de-zacarias
+name: Abías
+names:
+- name: Abías
+- name: Abí
+  note: Forma abreviada de Abías que usa 2Re 18:2, según su nota al pie.
+perspicacia: 1200000041#7
+disambiguation: Madre del rey Ezequías; no es Abías, rey de Judá, ni ninguno de los otros Abías de Perspicacia.
+distinct_from:
+- abias-de-juda
+- abias-de-tiempos-de-david
+- abias-hijo-de-jeroboan
+- abias-hijo-de-samuel
+summary: Hija de Zacarías. Se casó con Acaz, rey de Judá, y fue la madre de su hijo y sucesor Ezequías.
+reason: Perspicacia «Abías», núm. 7, y «Abí»; 2Re 18:1, 2.
+sources:
+- it-abias
+- it-abi
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+relations:
+- type: kin
+  person: zacarias-abuelo-de-ezequias
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-abias
+  reason: '2Re 18:2: Abí hija de Zacarías.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

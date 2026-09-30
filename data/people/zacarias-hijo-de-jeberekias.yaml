@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zacarias-hijo-de-jeberekias
+name: Zacarías
+names:
+- name: Zacarías
+perspicacia: 1200004681#15
+disambiguation: Testigo de Isaías en tiempos de Acaz, hijo de Jeberekías; no el abuelo de Ezequías, ni el rey de Israel, ni
+  el profeta, ni el padre de Juan el Bautista.
+distinct_from:
+- zacarias-profeta
+- zacarias-de-israel
+- zacarias-hijo-de-jehoiada
+- zacarias-padre-de-juan
+- zacarias-abuelo-de-ezequias
+summary: Hijo de Jeberekías. Isaías lo tomó, con el sacerdote Urías, como testigo fiel de que escribía en una tablilla grande
+  el nombre de Maher-Salal-Has-Baz.
+reason: Perspicacia «Zacarías», núm. 15, y «Jeberekías»; Is 8:1, 2.
+sources:
+- it-zacarias
+- it-jeberekias
+- isaias-8
+links:
+- title: 'Perspicacia: «Zacarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004681
+  type: perspicacia
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
+  type: bible
+relations:
+- type: kin
+  person: jeberekias
+  word: father
+  inferred: false
+  sources:
+  - isaias-8
+  - it-jeberekias
+  reason: Is 8:2 lo llama Zacarías hijo de Jeberekías.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

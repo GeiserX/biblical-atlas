@@ -9,6 +9,7 @@ disambiguation: Rey de Judá, hijo de Josías; no es Jehoacaz de Israel, hijo de
 distinct_from:
 - jehoacaz-de-israel
 - salum-de-israel
+- salum-hijo-de-ticva
 date:
   from: -627
   to: -627
@@ -62,5 +63,56 @@ relations:
   reason: Nekó lo llevó a Egipto y allí murió (2Re 23:34).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: hamutal
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-hamutal
+  reason: '2Re 23:31: su madre se llamaba Hamutal.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-23
+  reason: '2Re 23:31: reinó tres meses en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: neko
+  word: custodian
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-jehoacaz
+  reason: '2Re 23:33, 34: Nekó lo encerró en Riblá y luego se lo llevó a Egipto.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoiaquim
+  word: half_brother
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-jehoiaquim
+  - it-sedequias
+  reason: Los dos son hijos de Josías, de madres distintas, Hamutal y Zebidá (2Re 23:30-36). Perspicacia «Jehoiaquim» hace
+    a Eliaquim el mayor.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: sedequias
+  word: brother
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-sedequias
+  reason: Los dos son hijos de Josías y Hamutal (2Re 23:31; 24:18). Perspicacia «Sedequías», núm. 4, lo llama su hermano carnal.
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200002372#3
+checked_on: '2026-09-30'
 status: verified

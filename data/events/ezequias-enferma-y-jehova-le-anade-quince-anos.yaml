@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-enferma-y-jehova-le-anade-quince-anos
+title: Jehová cura a Ezequías y le añade quince años de vida
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 732 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 18015
+places:
+- jerusalen
+people:
+- ezequias
+- isaias
+present:
+- ezequias
+- isaias
+passages:
+- 2Re 20:1-11
+- Is 38:1-8
+- Is 38:21, 22
+- 2Cr 32:24
+summary: Ezequías enferma de muerte y llora ante Jehová, que por medio de Isaías le promete sanarlo y darle 15 años más. Le
+  ponen una masa de higos, y como señal la sombra retrocede diez escalones en la escalera de Acaz.
+reason: Enfermó hacia cuando Senaquerib atacó Judá, su año 14 (732) (Perspicacia «Ezequías»; «Las profecías de Isaías I»,
+  cap. 29, párr. 23). Va antes de la liberación, porque Is 38:6 aún la promete. Is 38:21, 22 van con 2Re 20:7, 8.
+sources:
+- isaias-38
+- it-ezequias
+- it-sol
+- ip1-29
+- si-3
+- 2-reyes-20
+links:
+- title: Isaías 38 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/38
+  type: bible
+- title: 'Perspicacia: «Ezequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
+  type: perspicacia
+- title: 2 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/20
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso de 2 Reyes, dueño del relato: toma su título y su resumen y suma 2Cr 32:24. Pasa a la serie
+    de 2 Reyes tras el tributo y antes del rabsaqué, donde Isaías lo ponía.'
+  source: 2-reyes-20
+checked_on: '2026-09-30'
+status: verified

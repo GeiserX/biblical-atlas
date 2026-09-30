@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: conspiradores-matan-a-amasias-en-lakis
+title: Unos conspiradores matan a Amasías en Lakís
+date:
+  from: -828
+  to: -828
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 829 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 14017
+type: death
+places:
+- lakis
+- jerusalen
+people:
+- amasias
+present:
+- amasias
+roles:
+  amasias: died
+passages:
+- 2Re 14:17-20
+- 2Cr 25:25-28
+summary: Quince años después de la muerte de Jehoás de Israel, se trama en Jerusalén una conspiración contra Amasías. Huye
+  a Lakís, pero allí lo matan; lo llevan a caballo y lo entierran en la Ciudad de David.
+reason: 2Re 14:17-20; Perspicacia «Amasías», núm. 2. El estudio 3 y la tabla A6-A ponen en 829 a.e.c. el comienzo de Uzías,
+  su sucesor; Perspicacia «Lakís» decía hacia 830.
+sources:
+- 2-reyes-14
+- it-amasias
+- it-lakis
+- si-3
+- tnm-a6-a
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

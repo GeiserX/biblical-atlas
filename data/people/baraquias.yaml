@@ -19,7 +19,18 @@ links:
 - title: Mateo 23 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/23
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: same_as
+  person: jehoiada-sumo-sacerdote
+  certainty: possible
+  inferred: true
+  sources:
+  - it-baraquias
+  reason: Perspicacia «Baraquías» ve posible que fuera otro nombre del sumo sacerdote Jehoiadá, padre del Zacarías de 2Cr
+    24:20 (Mt 23:35).
+  checked_on: '2026-09-30'
+  status: verified
 distinct_from:
 - berekias-hijo-de-ido

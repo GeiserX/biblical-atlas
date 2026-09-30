@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: manases-llena-juda-de-idolatria
+title: Manasés llena Judá de idolatría
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+narrative_order:
+  series: 2-reyes
+  order: 21002
+places:
+- jerusalen
+- juda
+people:
+- manases-de-juda
+passages:
+- 2Re 21:2-9
+- 2Re 21:16
+- 2Cr 33:2-9
+summary: Manasés rehace los lugares altos, alza altares a Baal y a los astros hasta en dos patios del templo, mete en él el
+  poste sagrado, quema a su hijo, recurre a médiums y adivinos y derrama mucha sangre inocente.
+reason: 2Re 21:2-9, 16; Perspicacia «Manasés», núm. 4, párr. 1. Pasa en su reinado, de 716 a 661 a.e.c. (tabla A6-B), antes
+  de su cautiverio y su arrepentimiento (2Cr 33:11-13).
+sources:
+- 2-reyes-21
+- 2-cronicas-33
+- it-manases
+- tnm-a6-b
+links:
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+- title: 'Perspicacia: «Manasés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

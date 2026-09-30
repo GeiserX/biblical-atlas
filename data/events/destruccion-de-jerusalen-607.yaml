@@ -14,25 +14,26 @@ date:
     day: 10
 places:
 - jerusalen
-- ribla
 - babilonia
 people:
+- nebuzaradan
 - nabucodonosor-ii
-- sedequias
 - jeremias-profeta
 present:
-- sedequias
+- nebuzaradan
 - jeremias-profeta
 passages:
-- 2Re 25:1-21
-- Jer 52:4-30
+- 2Re 25:8-17
+- Jer 39:8-10
+- Jer 52:12-23
 - 2Cr 36:17-21
 - Sl 79:1-3
 - Sl 137:7
 - Abd 11-14
-summary: El 9 de tamuz los babilonios abren brecha en el muro. Sedequías huye, lo capturan y en Riblá lo ciegan. El 10 de
-  ab queman el templo y la ciudad y se llevan cautivo al pueblo.
-reason: Estudio 3, párr. 6 y cuadro (607); Perspicacia «Jerusalén», párr. 35, y «Sedequías», núm. 4, párr. 17; Jer 52:12-14.
+summary: Un mes después de la toma llega Nebuzaradán. Queman el templo, el palacio y las casas, derriban las murallas, se
+  llevan el cobre y los utensilios del templo y deportan a Babilonia a casi todos los que quedaban.
+reason: 'Estudio 3, párr. 6 y cuadro (607, mes quinto); Perspicacia «Nebuzaradán»: llegó el 7 de ab y el día 10 quemó el templo
+  (2Re 25:8; Jer 52:12, 13); «Jerusalén», párr. 35.'
 sources:
 - si-3
 - it-jerusalen
@@ -44,6 +45,7 @@ sources:
 - it-abdias-libro
 - si-abdias
 - it-edom
+- it-nebuzaradan
 alternatives:
 - date:
     from: -586
@@ -72,5 +74,30 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
   type: bible
 search: destrucción de Jerusalén 607
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'Riblá sale de los lugares: el juicio de Sedequías y la ejecución de los principales son sucesos aparte (2Re 25:6,
+    7, 18-21).'
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: Entra Nebuzaradán, que dirigió la destrucción (2Re 25:8-11); sale Sedequías, que ya estaba preso en Riblá o camino
+    de Babilonia (2Re 25:6, 7).
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: 'Sedequías no estaba en Jerusalén cuando la quemaron: lo habían llevado a Riblá (2Re 25:6-8; Perspicacia «Nebuzaradán»).'
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: El suceso queda en la quema y el saqueo de ab; el asedio, la captura y el juicio de Sedequías y las ejecuciones
+    de Riblá son sucesos aparte.
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: El resumen cuenta solo la destrucción de ab; la brecha, la huida y el juicio de Sedequías pasan a sus propios sucesos.
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: La razón cita a Perspicacia «Nebuzaradán», que explica los días 7 y 10 de ab.
+  source: 2-reyes-25
+narrative_order:
+  series: 2-reyes
+  order: 25008
+checked_on: '2026-09-30'
 status: verified

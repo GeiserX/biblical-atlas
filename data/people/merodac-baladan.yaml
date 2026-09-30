@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: merodac-baladan
+name: Merodac-Baladán
+names:
+- name: Merodac-Baladán
+- name: Berodac-Baladán
+  note: Forma de 2Re 20:12. Perspicacia cree que es un error de copia o el intento de escribir una consonante acadia entre
+    la m y la b.
+perspicacia: '1200003002'
+summary: Rey de Babilonia, hijo de Baladán. Cuando supo que Ezequías se había curado, le mandó cartas y un regalo, y el rey
+  de Judá enseñó a sus mensajeros todos sus tesoros.
+reason: Perspicacia «Merodac-baladán», párr. 1 y 4; Is 39:1, 2 y 2Re 20:12, 13.
+sources:
+- it-merodac-baladan
+- 2-reyes-20
+- isaias-39
+links:
+- title: 'Perspicacia: «Merodac-baladán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003002
+  type: perspicacia
+- title: 2 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/20
+  type: bible
+- title: Isaías 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/39
+  type: bible
+relations:
+- type: kin
+  person: baladan
+  word: father
+  sources:
+  - 2-reyes-20
+  - it-baladan
+  - isaias-39
+  reason: Is 39:1 y 2Re 20:12 lo llaman hijo de Baladán.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: king
+  place: babilonia
+  sources:
+  - 2-reyes-20
+  - it-merodac-baladan
+  - isaias-39
+  reason: Is 39:1 lo llama rey de Babilonia. Perspicacia cuenta un reinado de unos doce años, que empezó cuando Sargón II
+    subió al trono asirio, y otro de nueve meses.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+not_claimed:
+- 'Que buscara una alianza de Judá contra Asiria: Perspicacia solo dice que algunos historiadores, como Josefo, lo creen.'

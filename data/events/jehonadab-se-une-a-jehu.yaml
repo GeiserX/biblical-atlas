@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehonadab-se-une-a-jehu
+title: Jehonadab sube al carro de Jehú
+date:
+  from: -904
+  to: -904
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 10015
+places:
+- samaria
+present:
+- jehu-de-israel
+- jehonadab-hijo-de-recab
+people:
+- jehu-de-israel
+- jehonadab-hijo-de-recab
+passages:
+- 2Re 10:15-17
+summary: Jehonadab sale al encuentro de Jehú, le asegura su lealtad y le da la mano. Jehú lo sube a su carro; al llegar a
+  Samaria extermina a los últimos parientes de Acab.
+reason: Mismo viaje de Jezreel a Samaria, hacia 905 a.e.c. (estudio 3). Perspicacia «Jehonadab», núm. 2, y «Jehú», núm. 3,
+  párr. 10. El encuentro es en el camino, sin nombre; la matanza, en Samaria.
+sources:
+- 2-reyes-10
+- si-3
+- it-jehonadab
+- it-jehu
+links:
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
+  type: bible
+- title: 'Perspicacia: «Jehonadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002379
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

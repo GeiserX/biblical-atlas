@@ -20,6 +20,9 @@ sources:
 - 2-cronicas-28
 - tnm-a6-b
 - mateo-1
+- isaias-7
+- ip1-9
+- isaias-14
 links:
 - title: 'Perspicacia: «Acaz»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000144
@@ -36,8 +39,9 @@ relations:
   - it-acaz
   - 2-reyes-16
   - mateo-1
+  - isaias-7
   reason: Hijo del rey Jotán (2Re 16:1).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: jotan
@@ -49,10 +53,90 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-reyes-16
+  - isaias-7
+  - ip1-9
+  reason: 2Re 16:2 llama a David su antepasado; Is 7:2, 13 hablan a Acaz como la casa de David.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-16
+  reason: '2Re 16:2: reinó 16 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-reyes-16
+  - it-acaz
+  reason: 2Re 16:20 solo habla de su sepultura en la Ciudad de David; el lugar de la muerte se deduce del entierro.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: tiglat-pileser-iii
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-16
+  - it-acaz
+  reason: '2Re 16:7: Acaz se declara siervo del rey de Asiria. Perspicacia «Acaz» habla de su vasallaje.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: abias-hija-de-zacarias
+  word: wife
+  inferred: true
+  sources:
+  - 2-reyes-18
+  - it-abias
+  reason: Perspicacia «Abías», núm. 7, la llama esposa de Acaz; 2Re 18:1, 2 da a Ezequías por hijo de Acaz y de Abí.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: rezin-rey-de-siria
+  word: enemy
+  inferred: false
+  sources:
+  - isaias-7
+  - it-rezin
+  - 2-reyes-16
+  reason: 'Is 7:1: en días de Acaz, Rezín subió con Pécah a pelear contra Jerusalén, y Acaz temió su furia (Is 7:2, 4); 2Re
+    16:5 cuenta que lo cercó en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: pecah
+  word: enemy
+  inferred: false
+  sources:
+  - isaias-7
+  - it-peqah
+  - 2-reyes-16
+  reason: 'Is 7:1, 5, 6: Pécah se alió con Rezín contra Acaz para poner en su lugar al hijo de Tabeel; 2Re 16:5 cuenta que
+    lo cercó en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: El estudio 3 ponía su comienzo hacia 761 a.e.c.; A6-B, más reciente, da 762.
   source: tnm-a6-b
+- date: '2026-09-30'
+  change: 'El parentesco con David deja de ser deducido: 2Re 16:2 lo llama su antepasado. Is 7:2, 13 hablan a Acaz como la
+    casa de David.'
+  source: 2-reyes-16
+- date: '2026-09-30'
+  change: Las enemistades con Pécah y con Rezín, que 2 Reyes apuntó también en las fichas de ellos, quedan solo aquí y suman
+    2Re 16:5.
+  source: 2-reyes-16
 perspicacia: 1200000144#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

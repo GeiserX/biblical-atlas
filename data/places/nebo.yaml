@@ -17,6 +17,7 @@ sources:
 - it-nebo
 - openbible-geo
 - numeros-32
+- isaias-15
 links:
 - title: 'Perspicacia: «Nebo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003199
@@ -24,5 +25,5 @@ links:
 - title: Números 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hefziba
+name: Hefziba
+names:
+- name: Hefziba
+perspicacia: '1200001991#1'
+summary: Esposa del rey Ezequías y madre de Manasés, que subió al trono de Judá con doce años.
+reason: Perspicacia «Hefziba», núm. 1; 2Re 21:1.
+sources:
+- it-hefziba
+- 2-reyes-21
+links:
+- title: 'Perspicacia: «Hefziba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001991
+  type: perspicacia
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: malaquias-reprende-a-sacerdotes-y-pueblo
+title: Malaquías reprende a los sacerdotes y al pueblo
+date:
+  from: -442
+  to: -442
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: después de 443 a.e.c.
+narrative_order:
+  series: malaquias
+  order: 1001
+  after: nehemias-vuelve-a-la-corte-443
+places:
+- jerusalen
+- juda
+- edom
+people:
+- malaquias
+present: []
+passages:
+- Mal 1:1-4:6
+summary: Tras la reconstrucción del templo, Malaquías censura a sacerdotes que ofrecen animales defectuosos y a un pueblo
+  que se divorcia y no paga el diezmo. Anuncia al mensajero, la venida de Jehová a su templo y su gran día.
+reason: 'Perspicacia «Malaquías, Libro de», «Cuándo se escribió», y «Toda Escritura», libro 39, párr. 3: tras 443, con Nehemías
+  de vuelta. «Toda Escritura» y la tabla: escrito en Jerusalén; el texto no dice dónde habló y no sitúa a nadie.'
+sources:
+- malaquias-1
+- malaquias-2
+- it-malaquias-libro
+- si-malaquias
+- tnm-tabla
+- si-3
+- w07-malaquias
+- w02-requisitos-divinos
+- w02-jehova-odia-la-traicion
+- it-edom
+- malaquias-3
+- it-mensajero
+- malaquias-4
+- it-horeb
+- it-elias
+- it-juan
+links:
+- title: Malaquías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/1
+  type: bible
+- title: Malaquías 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/2
+  type: bible
+- title: Malaquías 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/3
+  type: bible
+- title: Malaquías 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/4
+  type: bible
+- title: 'Perspicacia: «Malaquías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002861
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

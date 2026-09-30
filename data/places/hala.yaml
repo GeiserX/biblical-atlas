@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hala
+name: Halá
+names:
+- name: Halá
+- name: Halah
+  note: Grafía de Perspicacia.
+type: region
+lat: 36.43173
+lon: 43.19459
+precision: uncertain
+coord_source: openbible:abf176f
+coord_url: https://www.openbible.info/geo/ancient/abf176f/halah
+coord_note: Primera identificación de OpenBible, la zona de Al Abbasiyah. Perspicacia dice que no se sabe dónde estaba y recoge
+  que hay quien la une a la Hallahu de los textos acadios.
+summary: Lugar de Asiria adonde los reyes asirios llevaron a israelitas desterrados. No se conoce su emplazamiento.
+reason: 'Perspicacia «Halah»; 2Re 17:6 y 18:11. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-halah
+- openbible-geo
+- 2-reyes-17
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Halah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001825
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

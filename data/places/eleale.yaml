@@ -17,6 +17,8 @@ sources:
 - it-eleale
 - openbible-geo
 - numeros-32
+- isaias-15
+- isaias-16
 links:
 - title: 'Perspicacia: «Elealé»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001285
@@ -24,5 +26,5 @@ links:
 - title: Números 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

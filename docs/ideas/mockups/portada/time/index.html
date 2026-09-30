@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · Entra por el tiempo (prototipo de portada)</title>
+<meta name="description" content="La Biblia en el mapa y en el tiempo. Elige una fecha y entra en el mapa en ese momento.">
+<link rel="icon" type="image/svg+xml" href="../assets/kit/favicon.svg">
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="time.css">
+<script>
+  // Modo reunión antes del primer pintado, con la misma preferencia que el sitio.
+  try { if (localStorage.getItem('biblical-earth:pref:reunion') === '1') document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }
+</script>
+<!-- Dónde está el sitio, el aviso si no carga y la letra grande: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<script defer src="data.js"></script>
+<script defer src="compact.js"></script>
+<script defer src="time.js"></script>
+</head>
+<body>
+<a class="saltar" href="#linea-cursor">Saltar a la línea del tiempo</a>
+
+<!-- Detrás: el sitio de verdad. Mientras la portada está puesta no recibe ni el teclado ni el puntero (inert). -->
+<div class="fondo" id="fondo">
+  <img class="fondo__img" id="fondo-img" alt="" fetchpriority="high" decoding="async">
+  <iframe class="fondo__sitio" id="sitio" title="biblical-earth: el mapa y la línea de tiempo" tabindex="-1" inert></iframe>
+  <div class="fondo__velo" aria-hidden="true"></div>
+</div>
+
+<div class="portada" id="portada">
+  <nav class="proto" aria-label="Otros diseños del prototipo">
+    <details>
+      <summary><span class="proto__tag">Prototipo</span> Diseño 3 de 6</summary>
+      <ul>
+        <li><a href="../veil/">1 · El velo</a></li>
+        <li><a href="../fullbleed/">2 · A pantalla completa</a></li>
+        <li><a href="../time/" aria-current="page">3 · Entra por el tiempo</a></li>
+        <li><a href="../question/">4 · Una pregunta</a></li>
+        <li><a href="../live/">5 · El mapa vivo</a></li>
+        <li><a href="../tuned/">6 · Afinado</a></li>
+      </ul>
+    </details>
+  </nav>
+
+  <header class="cab">
+    <a class="marca" href="./" aria-label="biblical-earth, portada">
+      <svg class="marca__rama" viewBox="0 0 64 64" aria-hidden="true"><path class="hoja" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/><path class="tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/><circle class="oliva" cx="20.5" cy="47" r="6"/><circle class="oliva" cx="31" cy="31.5" r="6"/><circle class="oliva" cx="47.5" cy="13.5" r="6"/></svg>
+      <span class="marca__nombre">biblical-earth</span>
+    </a>
+    <span class="cab__hueco"></span>
+    <button type="button" class="boton-icono boton-letra" id="letra" aria-pressed="false" title="Letra grande"><span aria-hidden="true">Aa</span><span class="sr-only">Letra grande</span></button>
+    <button type="button" class="boton-icono" id="reunion" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span class="sr-only">Modo reunión: fondo oscuro y sin animaciones</span>
+    </button>
+    <a class="cab__enlace" id="enlace-acerca" href="#">Qué es</a>
+  </header>
+
+  <main id="principal">
+    <section class="heroe" aria-labelledby="titulo">
+      <div class="heroe__texto">
+        <p class="lema">La Biblia en el mapa y en el tiempo</p>
+        <h1 id="titulo">Cada relato de la Biblia, en su lugar y en su tiempo</h1>
+        <p class="guia"><span class="guia__larga">Mueve la fecha en la línea de abajo. El mapa enseña dónde pasó y quién vivía entonces.</span><span class="guia__corta">Mueve la fecha de abajo y mira el mapa.</span></p>
+
+        <div class="momento" id="momento">
+          <p class="momento__anio" id="momento-anio" aria-hidden="true">c. 50 e.c.</p>
+          <p class="momento__epoca" id="momento-epoca"></p>
+          <p class="momento__frase" id="momento-frase"></p>
+          <p class="momento__viven" id="momento-viven"></p>
+        </div>
+
+        <div class="seguir" id="seguir" hidden>
+          <button type="button" class="seguir__boton" id="seguir-boton">
+            <span class="seguir__etiqueta">Seguir donde lo dejé</span>
+            <span class="seguir__que" id="seguir-que"></span>
+          </button>
+          <p class="seguir__nota">Guardado solo en este navegador.</p>
+        </div>
+
+        <form class="busca" id="busca" role="search" autocomplete="off">
+          <label class="busca__caja">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span class="sr-only">O busca una persona, un lugar, un capítulo o un año</span>
+            <input id="q" name="q" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sugerencias" placeholder="O busca una persona, un lugar o un capítulo" spellcheck="false">
+          </label>
+          <ul class="busca__lista" id="sugerencias" role="listbox" aria-label="Resultados" hidden></ul>
+          <p class="busca__ejemplos"><span>Por ejemplo:</span>
+            <button type="button" class="ejemplo" data-ejemplo="Pedro">Pedro</button>
+            <button type="button" class="ejemplo" data-ejemplo="Hechos 16">Hechos 16</button>
+            <button type="button" class="ejemplo" data-anio="-606">607 a.e.c.</button>
+          </p>
+        </form>
+      </div>
+      <p class="credito-mapa" id="credito-mapa"><span class="largo">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0)</span><span class="corto">Relieve: Natural Earth y Mapzen · Lugares: OpenBible.info</span></p>
+    </section>
+
+    <!-- La línea del banner hecha control. Se queda pegada abajo al bajar la página: es la acción de toda la portada. -->
+    <section class="barra" id="barra" aria-label="La línea del tiempo">
+      <div class="barra__dentro">
+        <div class="barra__cab">
+          <div class="escala" role="group" aria-label="Escala de la línea">
+            <button type="button" class="escala__op" data-escala="real" aria-pressed="true">A escala real</button>
+            <button type="button" class="escala__op" data-escala="iguales" aria-pressed="false">A partes iguales</button>
+          </div>
+          <p class="barra__pista" id="barra-pista">Arrastra el cursor o toca una fecha</p>
+        </div>
+
+        <div class="linea" id="linea">
+          <div class="linea__ref" id="linea-ref" aria-hidden="true"><span class="linea__ref-eje"></span><span class="linea__ref-cursor" id="ref-cursor"></span><span class="linea__ref-nota">a escala real</span></div>
+          <div class="linea__pista" id="pista">
+            <div class="linea__banda" id="banda" hidden></div>
+            <div class="linea__eje"></div>
+            <div id="marcas"></div>
+            <div class="linea__guardada" id="guardada" hidden aria-hidden="true"><span>Lo dejaste aquí</span></div>
+            <div class="cursor" id="linea-cursor" role="slider" tabindex="0" aria-label="Fecha" aria-valuemin="-4025" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50 e.c." aria-describedby="momento-frase">
+              <span class="cursor__asta"></span><span class="cursor__bandera" id="cursor-bandera">50 e.c.</span>
+            </div>
+          </div>
+          <div class="linea__fechas" id="fechas" role="group" aria-label="Seis fechas para empezar"></div>
+        </div>
+
+        <div class="barra__accion">
+          <button type="button" class="escala-corta" id="escala-corta" aria-pressed="false">A escala real</button>
+          <button type="button" class="entrar" id="entrar"><span id="entrar-texto">Entrar en 50 e.c.</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <p class="entrar__nota" id="entrar-nota"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="hoja" id="hoja">
+      <section class="zona" aria-labelledby="z-preguntas">
+        <h2 id="z-preguntas">Empieza por una pregunta</h2>
+        <p class="zona__nota">Cada pregunta lleva el cursor a su fecha. Púlsala otra vez, o «Entrar», para verla en el mapa.</p>
+        <ol class="preguntas" id="preguntas"></ol>
+      </section>
+
+      <section class="zona" aria-labelledby="z-epocas">
+        <div class="zona__cab">
+          <h2 id="z-epocas">Nueve épocas</h2>
+          <p class="zona__nota">Con los libros que las cuentan y la potencia mundial de cada momento. Cada una abre donde ocurrió.</p>
+        </div>
+        <div class="regla" id="regla" aria-hidden="true"></div>
+        <div class="potencias" id="potencias" aria-hidden="true"></div>
+        <p class="potencias-lista" id="potencias-lista"></p>
+        <ol class="epocas" id="epocas"></ol>
+        <button type="button" class="enlace" id="linea-completa">Ver toda la línea de tiempo, de 4026 a.e.c. a 100 e.c.</button>
+      </section>
+
+      <section class="zona" aria-labelledby="z-recorridos">
+        <h2 id="z-recorridos">Recorridos guiados</h2>
+        <p class="zona__nota">Cada uno marca en la línea las fechas que recorre.</p>
+        <ul class="recorridos" id="recorridos"></ul>
+      </section>
+
+      <section class="zona zona--fuentes" aria-labelledby="z-fuentes">
+        <h2 id="z-fuentes">De dónde sale cada dato</h2>
+        <p class="cuentas" id="cuentas"></p>
+        <ul class="niveles">
+          <li><span class="nivel nivel--1">Nivel 1</span> La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</li>
+          <li><span class="nivel nivel--2">Nivel 2</span> Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</li>
+          <li><span class="nivel nivel--sin">Sin verificar</span> Se ve marcado, nunca escondido.</li>
+        </ul>
+        <p><a class="enlace" id="enlace-datos" href="#">Cómo trabajamos con los datos</a></p>
+      </section>
+
+      <footer class="pie">
+        <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a id="enlace-creditos" href="#">Créditos</a></p>
+        <p>En español · Sitio estático, sin cuentas · Código libre, GPL-3.0 · <a id="enlace-calendario" href="#">El calendario de la Biblia</a> · <a id="enlace-acerca-pie" href="#">Qué es biblical-earth</a> · <span id="pie-datos"></span></p>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<div class="sr-only" id="anuncio" role="status" aria-live="polite"></div>
+</body>
+</html>

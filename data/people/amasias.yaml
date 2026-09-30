@@ -11,7 +11,7 @@ date:
   type: anchored
   chronology: tnm
   text: 858-829 a.e.c.
-summary: Hijo de Jehoás. Venció a Edom en el valle de la Sal, pero adoró sus dioses. Retó a Jehoás de Israel, perdió en Bet-semes
+summary: Hijo de Jehoás. Venció a Edom en el valle de la Sal, pero adoró sus dioses. Retó a Jehoás de Israel, perdió en Bet-Semes
   y murió a manos de conspiradores en Lakís.
 reason: Perspicacia «Amasías», núm. 2; 2Re 14:1-20 y 2Cr 25.
 sources:
@@ -19,6 +19,7 @@ sources:
 - 2-reyes-14
 - 2-cronicas-25
 - tnm-a6-a
+- 2-reyes-12
 links:
 - title: 'Perspicacia: «Amasías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
@@ -34,8 +35,9 @@ relations:
   sources:
   - it-amasias
   - 2-reyes-14
+  - 2-reyes-12
   reason: Hijo de Jehoás (2Re 14:1).
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: jehoas-de-juda
@@ -56,9 +58,70 @@ relations:
   reason: Huyó a Lakís y allí lo mataron (2Re 14:19).
   checked_on: '2026-09-28'
   status: verified
+- type: kin
+  person: jehoadin
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-14
+  - it-jehoadin
+  - it-amasias
+  reason: '2Re 14:2: su madre se llamaba Jehoadín.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-reyes-14
+  reason: 2Re 14:3 llama a David su antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-14
+  reason: '2Re 14:2: reinó veintinueve años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoas-de-israel
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-14
+  - it-amasias
+  reason: '2Re 14:8-13: Amasías reta a Jehoás de Israel, que lo vence y lo captura en Bet-Semes.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: ocozias-de-juda
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-reyes-14
+  reason: 2Re 14:13 lo llama hijo de Jehoás, hijo de Ocozías.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jecolias
+  word: wife
+  inferred: true
+  sources:
+  - it-jecolias
+  - 2-reyes-15
+  reason: Perspicacia «Jecolías» la llama esposa de Amasías; 2Re 15:1, 2 la da como madre de su hijo Azarías.
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200000224#2
 disambiguation: Rey de Judá, hijo de Jehoás; no es el sacerdote de Betel que se enfrentó al profeta Amós.
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Bet-Semes con la grafía de la TNM (2Re 14:11, 13), la misma del nombre de su ficha.
+  source: 2-reyes-14
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - amasias-sacerdote-de-betel

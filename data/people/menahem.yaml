@@ -36,9 +36,28 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: gadi
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-gadi
+  reason: 2Re 15:14, 17 lo llaman hijo de Gadí.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:17: reinó 10 años en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Menahem» daba c. 790-781 a.e.c.; A6-B, más reciente, da c. 791-780.
   source: tnm-a6-b
-checked_on: '2026-09-28'
+perspicacia: '1200002978'
+checked_on: '2026-09-30'
 status: verified

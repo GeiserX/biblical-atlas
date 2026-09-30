@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: azarias-reconstruye-elat
+title: Azarías reconstruye Elat y la devuelve a Judá
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: reinando Azarías, después de la muerte de su padre)'
+narrative_order:
+  series: 2-reyes
+  order: 14022
+places:
+- elat
+people:
+- uzias
+present: []
+passages:
+- 2Re 14:22
+- 2Cr 26:2
+summary: Después de que su padre Amasías muere, Azarías reedifica Elat, en la cabecera del golfo de ʽAqaba, y la vuelve a
+  poner en manos de Judá.
+reason: 2Re 14:22 y su nota; Perspicacia «Uzías», núm. 3, y «Elat». Cae en su reinado, desde 829 hasta que Jotán lo sucede
+  en 777 (A6-A y A6-B).
+sources:
+- 2-reyes-14
+- it-uzias
+- it-elat
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Elat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001277
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-sunamita-se-va-a-filistea-por-el-hambre
+title: La sunamita se va a Filistea por el hambre
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 4045
+places:
+- filistea
+people:
+- eliseo
+present: []
+passages:
+- 2Re 8:1, 2
+summary: Eliseo avisa a la madre del niño que resucitó de que vendrán siete años de hambre. Ella se marcha con su familia
+  a la tierra de los filisteos y vive allí mientras dura.
+reason: '2Re 8:1, 2; Perspicacia «Sunamita»: la mujer, sin nombre; sin ficha nadie queda situado. Reinado de Jehoram
+  (A6-A). Va antes de la lepra de Guehazí: según Perspicacia «Eliseo», el libro lo hace leproso antes de que charle con el rey.'
+sources:
+- 2-reyes-8
+- it-sunamita
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  type: bible
+- title: 'Perspicacia: «Sunamita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004096
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sela-de-la-profecia-contra-moab
+name: Sela
+names:
+- name: Sela
+  note: Perspicacia la trata como Sela núm. 3, distinta en su artículo de la de Jue 1:36 y de la de Edom.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: es-Selaʽ, si es la Sela de Edom
+  geometry:
+    type: point
+    lat: 30.78087
+    lon: 35.574455
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sela
+  - openbible-geo
+  reason: Perspicacia no sabe si es la Sela edomita que tomó Amasías; para esa, los eruditos prefieren hoy es-Selaʽ, unos
+    4 km al nor-noroeste de Bozrá.
+  coord_source: openbible:a6343cc
+  coord_url: https://www.openbible.info/geo/ancient/a6343cc/sela-3
+- name: Umm el-Biyara, si es la Sela de Edom
+  geometry:
+    type: point
+    lat: 30.326749
+    lon: 35.433999
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sela
+  - openbible-geo
+  reason: 'Otra identificación de la Sela edomita que recoge Perspicacia: una meseta rocosa que domina el llano de Petra.'
+  coord_source: openbible:a6343cc
+  coord_url: https://www.openbible.info/geo/ancient/a6343cc/sela-3
+summary: Lugar desde el que Moab debe mandar un carnero, por el desierto, al que gobierna en Sion (Is 16:1). Perspicacia no
+  sabe si es la ciudad edomita del mismo nombre.
+reason: 'Perspicacia «Sela», núm. 3 y núm. 2; Is 16:1. OpenBible: solo los puntos.'
+not_claimed:
+- 'Que sea la Sela de Edom que Amasías llamó Jocteel (2Re 14:7): Perspicacia no lo sabe con certeza.'
+sources:
+- it-sela
+- openbible-geo
+- isaias-16
+links:
+- title: 'Perspicacia: «Sela»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003886
+  type: perspicacia
+- title: Isaías 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/16
+  type: bible
+checked_on: '2026-09-30'
+status: verified

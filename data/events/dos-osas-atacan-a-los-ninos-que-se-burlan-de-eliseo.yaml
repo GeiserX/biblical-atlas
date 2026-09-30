@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: dos-osas-atacan-a-los-ninos-que-se-burlan-de-eliseo
+title: Dos osas atacan a los niños que se burlan de Eliseo
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 2023
+places:
+- betel
+people:
+- eliseo
+present:
+- eliseo
+passages:
+- 2Re 2:23, 24
+summary: Subiendo hacia Betel, unos niños salen de la ciudad y le gritan «calvo». Eliseo los maldice en el nombre de Jehová,
+  y dos osas salen del bosque y despedazan a 42 de ellos.
+reason: '2Re 2:23, 24; Perspicacia «Eliseo», párr. 10: sube de Jericó a Betel. Tiempo narrativo como el del agua de Jericó.'
+sources:
+- 2-reyes-2
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,336 @@
+/* biblical-earth · portada «Una imagen a pantalla completa» (prototipo).
+   Todo color sale de site/kit/tokens.css; el modo reunión repite aquí las variables que el sitio pone en
+   site/css/estudio.css (.be-reunion), porque esta página no carga estudio.css.
+   Capas de la primera pantalla, de atrás adelante: el mapa vivo (#fb-marco, z 1), la imagen (z 2), el velo de papel
+   (z 3) y las palabras (z 4). Ningún antecesor crea un contexto de apilamiento, así que el mapa vivo, que vive fuera de
+   la portada, cae entre el papel del cuerpo y la imagen. */
+
+.be-reunion { color-scheme: dark;
+  --paper: #1b1813; --paper-2: #24201a; --surface: #211d17; --surface-2: #28231c;
+  --ink: #efe7d8; --ink-2: #cfc4b1; --ink-3: #b1a58d; --ink-4: #9c907c; --line: #3a3328; --line-2: #5a5042; --focus: #6cb8bd;
+  --accent: #a3432b; --accent-2: #c7684d; --accent-soft: #3b2a22; --accent-ink: #e0856c;
+  --gold: #b8892f; --gold-soft: #3a3020; --gold-ink: #e8c983; --gold-line: #6b5629; --gold-hint: #cdb27a;
+  --tier1: #86c7ab; --tier1-soft: #1f322b; --tier1-line: #2e4a3f; --tier2: #d9b36a; --tier2-soft: #36301f;
+  --unverified: #e59ab0; --unverified-soft: #3a222b; --link: #8fb8d3;
+  --shadow-1: 0 1px 0 rgba(0, 0, 0, .2), 0 1px 3px rgba(0, 0, 0, .3); --shadow-2: 0 1px 2px rgba(0, 0, 0, .25), 0 6px 18px rgba(0, 0, 0, .35); --shadow-3: 0 2px 6px rgba(0, 0, 0, .3), 0 18px 48px rgba(0, 0, 0, .45); }
+.be-reunion *, .be-reunion *::before, .be-reunion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+
+:root {
+  --fs-2xs: 11.5px;                        /* ninguna letra de la portada baja de 11,5 px */
+  --hero-h: max(520px, 82svh);             /* entre el 78 y el 85 % del alto: la zona siguiente asoma debajo */
+  --band-h: max(236px, 38svh);             /* en el teléfono, una franja */
+  --col: min(560px, 42vw);                 /* la columna de las palabras */
+  --gutter: max(24px, 4.4vw);
+  --accent-text: var(--accent);
+}
+.be-reunion { --accent-text: var(--accent-ink); }
+html { scroll-padding-bottom: 96px; }
+body { background: var(--paper); color: var(--ink); }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+a { color: var(--link); }
+button { font: inherit; color: inherit; }
+.fb-caps { margin: 0; font: 600 var(--fs-xs)/1.3 var(--font-sans); text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   1. La imagen
+   --------------------------------------------------------------------------------------------------------------- */
+.fb-heroe { position: relative; height: var(--hero-h); display: grid; grid-template-rows: 1fr auto; }
+.fb-heroe__fondo { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+/* El lienzo tiene la forma de la imagen (16:9) y cubre todo el alto. Un punto de la imagen queda fijo en la pantalla:
+   en «bible-lands», la longitud 47 E (entre Babilonia y Susa) cae al 96 % del ancho, así que Egipto queda en el paso
+   del papel al relieve y Mesopotamia entera a la derecha. Las mismas cuentas encuadran el mapa vivo (fullbleed.js). */
+.fb-lienzo {
+  --anchor-f: .8857; --anchor-x: 96%; --mark-x: 39.64%; --mark-y: 34.96%;
+  position: absolute; z-index: 2; top: 50%; left: var(--anchor-x);
+  width: max(calc(var(--hero-h) * 16 / 9), 75vw); aspect-ratio: 16 / 9;
+  transform: translate(calc(var(--anchor-f) * -100%), -50%);
+  background: #d7cfb5 url("data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQBACdASogABIAPtFYo0uoJSMhsAgBABoJY2VuTLZUCgP/+A7d4Sbe4RUYJKs80AD+7p5DLToqphtwkL8Pg7seJZoLLDwohvBvwwmfY0UalI+6cCpSkuAgUaQLSwZ/3qcN6eJrX5lKRLcvnOzMAAAA") center / cover;
+}
+.fb-heroe[data-img="paul-journeys"] .fb-lienzo {
+  --anchor-f: .976; --anchor-x: 97%; --mark-x: 61.6%; --mark-y: 68.31%;
+  background: #c6c9b9 url("data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASogABIAPtFcpk6oJSMiKAqpABoJY2DrTtrlkOs+L2H+o+fh7hUuQzgA/u287IoO2MIaD2VdcISAgf8V7FIZiyum5PWOpy422LjhWMJMtzqQdwGzvAXFRZ4j/e/Hej9wtVuGK6sZX9pAPtAA") center / cover;
+}
+.fb-lienzo__img { display: block; width: 100%; height: 100%; filter: saturate(.82) brightness(1.03); transition: opacity .4s ease; }
+.fb-vivo .fb-lienzo__img { opacity: 0; }              /* el mapa vivo, ya listo y en el mismo encuadre, la sustituye */
+.fb-vivo .fb-lienzo { background: none; }
+.fb-marca { position: absolute; z-index: 3; left: var(--mark-x); top: var(--mark-y); width: clamp(84px, 8.4vw, 128px); height: auto; transform: translate(-50%, -50%); opacity: .38; }
+.fb-marca__hojas { fill: #76937b; }
+.fb-marca__tallo { stroke: #34473b; }
+.fb-marca__oliva { fill: #4e6d57; }
+.be-reunion .fb-marca__tallo { stroke: #efe8da; }       /* los colores oscuros del favicon: el tallo #34473b desaparece */
+.be-reunion .fb-marca__oliva { fill: #9fbfa6; }
+.be-reunion .fb-marca { opacity: .62; }                    /* sobre el mar oscurecido, al 38 % casi no se veía */
+
+/* El velo: papel pleno bajo las palabras, fundido hacia el relieve, y papel otra vez al pie para la línea de fechas. */
+.fb-heroe__velo {
+  position: absolute; inset: 0; z-index: 3;
+  background:
+    linear-gradient(to top, color-mix(in srgb, var(--paper) 96%, transparent) 0, color-mix(in srgb, var(--paper) 86%, transparent) 84px, color-mix(in srgb, var(--paper) 0%, transparent) 210px),
+    linear-gradient(to right, var(--paper) 0, var(--paper) calc(var(--gutter) + var(--col) - 40px),
+      color-mix(in srgb, var(--paper) 70%, transparent) calc(var(--gutter) + var(--col) + 60px),
+      color-mix(in srgb, var(--paper) 34%, transparent) calc(var(--gutter) + var(--col) + 260px),
+      color-mix(in srgb, var(--paper) 28%, transparent) 100%);
+}
+.be-reunion .fb-lienzo__img { filter: brightness(.6) saturate(.7); }
+/* El sitio ya oscurece su mapa en reunión (brightness .72, saturate .8); esto lo deja igual que la imagen. */
+.be-reunion .fb-marco:not(.fb-marco--entero) { filter: brightness(.833) saturate(.875); }
+
+.fb-heroe__arriba { position: absolute; z-index: 5; top: 12px; right: 12px; display: flex; gap: 8px; }
+.fb-icono { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--ink-2); cursor: pointer; }
+.fb-icono svg { width: 20px; height: 20px; }
+.fb-icono--letra span[aria-hidden] { font: 700 15px/1 var(--font-serif); }
+.fb-icono[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.fb-heroe__palabras { position: relative; z-index: 6; align-self: center; width: var(--col); margin-left: var(--gutter); padding-top: 24px; }
+.fb-nombre { margin: 0; font: 400 clamp(54px, 6.4vw, 98px)/1 var(--font-serif); letter-spacing: -.012em; color: var(--ink); }
+.fb-regla { display: block; width: 64px; height: 2px; margin: 22px 0 16px; background: var(--accent); }
+.fb-lema { margin: 0; font: 600 clamp(13px, 1.05vw, 15px)/1.4 var(--font-sans); text-transform: uppercase; letter-spacing: .16em; color: var(--ink-3); }
+
+/* La acción: la búsqueda y «Entrar al mapa», juntas. */
+.fb-accion { position: relative; display: flex; gap: 8px; margin-top: 30px; }
+.fb-busca { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 14px; border: 1px solid var(--line-2); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); color: var(--ink-3); }
+.fb-busca:focus-within { border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 22%, transparent); outline: 2px solid var(--focus); outline-offset: 1px; }
+.fb-busca__lupa { width: 20px; height: 20px; flex: none; }
+.fb-busca input { flex: 1; min-width: 0; height: 100%; border: 0; background: none; color: var(--ink); font: 400 var(--fs-lg)/1 var(--font-sans); outline: none; }
+.fb-busca input::placeholder { color: var(--ink-3); opacity: 1; }
+.fb-busca input::-webkit-search-cancel-button { cursor: pointer; }
+.fb-entrar { flex: none; height: 52px; padding: 0 20px; border: 1px solid var(--ink); border-radius: var(--r-lg); background: var(--ink); color: var(--paper); font: 600 var(--fs-lg)/1 var(--font-sans); cursor: pointer; white-space: nowrap; }
+.fb-entrar:hover { background: color-mix(in srgb, var(--ink) 88%, var(--accent)); }
+.fb-que { margin: 10px 0 0; max-width: 34em; font-size: var(--fs-md); line-height: 1.45; color: var(--ink-2); }
+.fb-ejemplos { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 10px 0 0; }
+.fb-ejemplos__k { margin-right: 2px; font-size: var(--fs-sm); color: var(--ink-3); }
+.fb-ejemplo { min-height: 44px; padding: 0 12px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: color-mix(in srgb, var(--surface) 92%, transparent); color: var(--ink); font: 500 var(--fs-md)/1 var(--font-sans); cursor: pointer; }
+.fb-ejemplo:hover { border-color: var(--ink-3); }
+.fb-destino { margin: 8px 0 0; font-size: var(--fs-sm); color: var(--ink-2); }
+.fb-primera { margin: 10px 0 0; font-size: var(--fs-md); }
+.fb-primera a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+.fb-primera a:hover { text-decoration-color: currentColor; }
+
+.fb-lista { position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; right: 0; max-height: min(360px, 50vh); overflow: auto; padding: 6px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-3); }
+.fb-lista__grupo { padding: 8px 10px 4px; }
+.fb-op { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 6px 10px; border-radius: var(--r-sm); cursor: pointer; }
+.fb-op[aria-selected="true"] { background: var(--gold-soft); box-shadow: inset 3px 0 0 var(--gold); }
+.fb-op__tit { font-weight: 600; }
+.fb-op__meta { margin-left: auto; color: var(--ink-3); font-size: var(--fs-sm); text-align: right; font-variant-numeric: tabular-nums; }
+.fb-op mark { background: none; color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; }
+
+/* La línea de seis fechas del banner, a escala real (4026 a.e.c. a 100 e.c.). */
+.fb-fechas { position: relative; z-index: 4; padding: 0 var(--gutter) 14px; }
+.fb-fechas__pie { margin: 0 0 2px; min-height: 1.4em; font-size: var(--fs-sm); color: var(--ink-2); }
+.fb-fechas__pie b { color: var(--ink); font-weight: 600; }
+.fb-fechas__linea { position: relative; height: 100px; }
+.fb-fechas__eje { position: absolute; left: 0; right: 0; top: 50px; height: 1.3px; border-radius: 1px; background: var(--ink-4); }
+.fb-tic { position: absolute; top: 50.6px; width: 1.2px; height: 7px; margin-left: -.6px; transform: translateY(-50%); background: var(--ink-4); pointer-events: none; }
+.fb-tic--mayor { width: 2px; height: 13px; margin-left: -1px; background: var(--gold); }
+.fb-tic--activa { width: 3px; height: 17px; margin-left: -1.5px; }
+.fb-fecha { position: absolute; top: 57px; height: 44px; min-width: 44px; padding: 0 6px; border: 0; border-radius: var(--r-sm); background: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font: 500 15px/1 var(--font-sans); color: var(--ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fb-fecha--arriba { top: 1px; }
+.fb-fecha span { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; }
+.fb-fecha:hover span, .fb-fecha:focus-visible span { text-decoration-color: currentColor; color: var(--ink); }
+
+.fb-credito { position: absolute; z-index: 5; right: 12px; bottom: 132px; margin: 0; padding: 3px 8px; border-radius: var(--r-sm); background: color-mix(in srgb, var(--surface) 88%, transparent); color: var(--ink-3); font: 500 var(--fs-2xs)/1.35 var(--font-sans); }
+.fb-credito a { position: relative; color: inherit; text-underline-offset: 2px; }
+.fb-credito a::after { content: ""; position: absolute; inset: -16px -10px; }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   El sitio de verdad, detrás (#fb-marco). En la portada ocupa la imagen y no recibe teclado ni puntero; al entrar
+   ocupa toda la ventana y es el sitio.
+   --------------------------------------------------------------------------------------------------------------- */
+.fb-marco { position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: var(--hero-h); pointer-events: none; filter: saturate(.82) brightness(1.03); }
+.fb-marco iframe { display: block; width: 100%; height: 100%; border: 0; background: transparent; }
+.fb-marco--entero { position: fixed; z-index: 50; inset: 0; width: 100vw; height: 100vh; height: 100dvh; pointer-events: auto; filter: none; }
+.fb-dentro { overflow: hidden; }
+.fb-dentro .fb, .fb-dentro .fb-proto { visibility: hidden; }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   2. La página de abajo
+   --------------------------------------------------------------------------------------------------------------- */
+.fb-zonas { position: relative; z-index: 4; background: var(--paper); max-width: 1180px; margin: 0 auto; padding: 22px var(--gutter) 40px; }
+@media (min-width: 1280px) { .fb-zonas { padding-left: 40px; padding-right: 40px; } }
+.fb-zona { margin: 0 0 64px; }
+.fb-zona__cab { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 18px; }
+.fb-titulo { margin: 0; font: 600 var(--fs-3xl)/1.15 var(--font-serif); letter-spacing: -.01em; }
+.fb-sub { margin: 6px 0 0; max-width: 62ch; color: var(--ink-2); font: 400 var(--fs-lg)/1.45 var(--font-serif); }
+.fb-enlace { border: 0; background: none; padding: 0; color: var(--link); font: 600 var(--fs-md)/1.3 var(--font-sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.fb-enlace--44 { display: inline-flex; align-items: center; min-height: 44px; }
+.fb-boton { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--line-2); border-radius: var(--r-md); background: var(--surface); color: var(--ink); font: 600 var(--fs-md)/1 var(--font-sans); cursor: pointer; }
+.fb-boton--primario { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+/* Quien vuelve (G1): la primera zona, solo con historial. */
+.fb-vuelves { margin-bottom: 44px; }
+.fb-vuelves .fb-caps { margin-bottom: 10px; }
+.fb-vuelves__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.fb-seguir { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2px 14px; width: 100%; min-height: 72px; padding: 12px 16px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--r-md); background: var(--surface); text-align: left; cursor: pointer; box-shadow: var(--shadow-1); }
+.fb-seguir:hover { box-shadow: var(--shadow-2); }
+.fb-seguir__que { grid-column: 1; color: var(--ink-3); font: 600 var(--fs-xs)/1.3 var(--font-sans); text-transform: uppercase; letter-spacing: .08em; }
+.fb-seguir__tit { grid-column: 1; font: 600 var(--fs-xl)/1.2 var(--font-serif); }
+.fb-seguir__meta { grid-column: 1; color: var(--ink-2); font-size: var(--fs-sm); }
+.fb-seguir__ir { grid-column: 2; grid-row: 1 / span 3; color: var(--accent-text); font-weight: 700; }
+.fb-vuelves__extra { margin-top: 4px; }
+.fb-vuelves__nota { margin: 8px 0 0; color: var(--ink-3); font-size: var(--fs-sm); }
+.fb-vuelves__nota .fb-enlace { font-size: var(--fs-sm); color: var(--ink-2); min-height: 44px; }
+
+/* Una pregunta (E, en su forma más corta). */
+.fb-pregunta .fb-titulo { margin-bottom: 14px; }
+.fb-preg { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; width: 100%; padding: 22px 24px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); text-align: left; cursor: pointer; }
+.fb-preg:hover { box-shadow: var(--shadow-2); }
+.fb-preg__texto { flex: 1 1 420px; font: 500 clamp(22px, 2.2vw, 28px)/1.25 var(--font-serif); }
+.fb-pildora { display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: var(--r-pill); background: var(--gold-soft); border: 1px solid var(--gold-line); color: var(--gold-ink); font: 600 var(--fs-sm)/1 var(--font-sans); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fb-preg__ir { color: var(--accent-text); font-weight: 700; white-space: nowrap; }
+.fb-mas { margin-top: 8px; }
+.fb-mas summary { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); font-weight: 600; cursor: pointer; }
+.fb-mas ul { list-style: none; margin: 0; padding: 0; }
+.fb-mas button { display: flex; justify-content: space-between; gap: 16px; width: 100%; min-height: 48px; padding: 10px 4px; border: 0; border-top: 1px solid var(--line); background: none; text-align: left; font: 600 var(--fs-lg)/1.3 var(--font-sans); cursor: pointer; }
+.fb-mas button span:last-child { color: var(--ink-3); font-weight: 500; font-size: var(--fs-sm); white-space: nowrap; }
+
+/* Las épocas como recortes del relieve (D3), cada una abre donde ocurrió (D1). Una sola tinta: número, nombre, fechas. */
+.fb-epocas__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.fb-epoca { display: flex; flex-direction: column; width: 100%; height: 100%; padding: 0; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; background: var(--surface); text-align: left; cursor: pointer; box-shadow: var(--shadow-1); }
+.fb-epoca:hover { box-shadow: var(--shadow-2); }
+.fb-epoca:hover .fb-epoca__nombre, .fb-epoca:focus-visible .fb-epoca__nombre { text-decoration: underline; text-underline-offset: 3px; }
+.fb-recorte { position: relative; aspect-ratio: 3 / 2; background-repeat: no-repeat; background-color: var(--paper-2); filter: saturate(.82) brightness(1.03); }
+.be-reunion .fb-recorte { filter: brightness(.7) saturate(.75); }
+.fb-punto { position: absolute; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: #fbfcfa; box-shadow: 0 0 0 2px #3c4a41, 0 0 0 3.5px rgba(251, 252, 250, .8); }
+/* Los puntos numerados: el número es el de su nombre en la línea de debajo. */
+.fb-punto.fb-punto--n { width: 17px; height: 17px; margin: -8.5px 0 0 -8.5px; font: 600 11.5px/17px var(--font-sans); color: #18221c; text-align: center; font-variant-numeric: tabular-nums; }
+.fb-epoca__k { display: inline-block; min-width: 1.5em; margin-right: .3em; border-radius: 50%; box-shadow: inset 0 0 0 1.5px currentColor; font-weight: 600; line-height: 1.5em; text-align: center; font-variant-numeric: tabular-nums; }
+.fb-epoca__texto { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; padding: 12px 14px 14px; }
+.fb-epoca__n { grid-row: 1 / span 3; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--line-2); display: grid; place-items: center; font: 600 var(--fs-sm)/1 var(--font-sans); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.fb-epoca__nombre { font: 600 var(--fs-xl)/1.2 var(--font-serif); }
+.fb-epoca__fecha { color: var(--gold-ink); font: 600 var(--fs-sm)/1.3 var(--font-sans); font-variant-numeric: tabular-nums; }
+.fb-epoca__lugares { color: var(--ink-3); font-size: var(--fs-sm); }
+.fb-epoca--sin-libro .fb-epoca__n { border-style: dashed; }
+
+/* Recorridos (F, sin la ruta dibujada): fechas, paradas, una frase y el avance guardado. */
+.fb-recorridos__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.fb-rec { position: relative; display: flex; flex-direction: column; gap: 8px; height: 100%; padding: 16px 16px 12px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); }
+.fb-rec:hover { box-shadow: var(--shadow-2); }
+.fb-rec__tit { margin: 0; font: 600 var(--fs-xl)/1.2 var(--font-serif); }
+.fb-rec__texto { margin: 0; color: var(--ink-2); font-size: var(--fs-md); }
+.fb-rec__pie { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 0 12px; }
+.fb-rec__ir { border: 0; background: none; padding: 0; min-height: 44px; color: var(--accent-text); font: 700 var(--fs-md)/1 var(--font-sans); cursor: pointer; }
+.fb-rec__ir::after { content: ""; position: absolute; inset: 0; border-radius: var(--r-lg); }   /* toda la tarjeta es el botón */
+.fb-rec__ir:focus-visible { outline: none; }
+.fb-rec:has(.fb-rec__ir:focus-visible) { outline: 2px solid var(--focus); outline-offset: 2px; }
+.fb-rec__desde { position: relative; z-index: 1; min-height: 44px; font-size: var(--fs-sm); color: var(--ink-2); }
+.fb-avance { height: 4px; border-radius: 2px; background: var(--paper-2); overflow: hidden; }
+.fb-avance span { display: block; height: 100%; background: var(--accent); }
+
+/* Un dato con su fuente, y las cifras del atlas (L1). */
+.fb-dato__cuerpo { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 16px; }
+.fb-dato__ficha { padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-1); }
+.fb-dato__ficha h3 { margin: 10px 0 6px; font: 600 var(--fs-2xl)/1.2 var(--font-serif); }
+.fb-dato__ficha p { margin: 0 0 12px; color: var(--ink-2); }
+.fb-refs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+.fb-refs a { display: inline-flex; align-items: center; min-height: 32px; padding: 0 10px; border-radius: var(--r-pill); border: 1px solid var(--tier1-line); background: var(--tier1-soft); color: var(--tier1); font: 600 var(--fs-sm)/1 var(--font-sans); text-decoration: none; }
+.fb-refs a:hover { text-decoration: underline; }
+.fb-refs a { position: relative; }
+.fb-refs a { min-height: 44px; }                         /* 44 px de alto, no solo de zona de toque */
+.fb-refs { gap: 12px 6px; }
+.fb-fuente { display: flex; gap: 10px; align-items: baseline; padding-top: 12px; border-top: 1px solid var(--line); font-size: var(--fs-sm); color: var(--ink-2); }
+.fb-fuente a { font-weight: 600; padding-block: 11px; }   /* un enlace en línea con 44 px de zona de toque */
+.fb-otra { margin: 10px 0 0 !important; font-size: var(--fs-sm); color: var(--ink-3) !important; }
+.fb-dato__acciones { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.fb-nivel { display: inline-block; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--tier1); }
+.fb-nivel--2 { background: transparent; box-shadow: inset 0 0 0 2px var(--tier2); }
+.fb-nivel--x { border-radius: 2px; background: transparent; box-shadow: inset 0 0 0 2px var(--unverified); }
+.fb-dato__niveles { padding: 20px 22px; border-radius: var(--r-lg); background: var(--surface-2); border: 1px solid var(--line); }
+.fb-dato__niveles p { display: flex; gap: 10px; align-items: baseline; margin: 10px 0 0; font-size: var(--fs-md); color: var(--ink-2); }
+
+.fb-pie { padding: 20px 0 8px; color: var(--ink-3); font-size: var(--fs-sm); }
+.fb-pie p { margin: 0; }
+.fb-pie a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   El primer paseo (A8), sobre el mapa vivo.
+   --------------------------------------------------------------------------------------------------------------- */
+.fb-paseo { position: fixed; z-index: 60; top: 72px; left: 16px; width: min(380px, calc(100vw - 32px)); padding: 16px 18px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-3); }
+.fb-paseo__tit { margin: 4px 0 6px; font: 600 var(--fs-2xl)/1.2 var(--font-serif); outline: none; }
+.fb-paseo__texto { margin: 0 0 12px; color: var(--ink-2); }
+.fb-paseo__botones { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   Prototipo: el paso a los otros diseños y los estados. No es parte del diseño.
+   --------------------------------------------------------------------------------------------------------------- */
+.fb-proto { position: fixed; z-index: 70; top: 8px; left: 8px; font-size: var(--fs-sm); }
+.fb-proto summary { display: inline-flex; align-items: center; min-height: 32px; padding: 0 10px; border: 1px dashed var(--line-2); border-radius: var(--r-pill); background: color-mix(in srgb, var(--surface) 90%, transparent); color: var(--ink-3); cursor: pointer; }
+.fb-proto[open] summary, .fb-proto details[open] summary { color: var(--ink); }
+.fb-proto ul { list-style: none; margin: 0; padding: 0; }
+.fb-proto details[open] { width: 290px; padding: 0 0 8px; border-radius: var(--r-md); background: var(--surface); box-shadow: var(--shadow-3); }
+.fb-proto details[open] summary { border-style: solid; border-color: transparent; width: 100%; }
+.fb-proto a { display: flex; align-items: center; min-height: 36px; padding: 0 12px; color: var(--ink); text-decoration: none; }
+.fb-proto a:hover { background: var(--surface-2); }
+.fb-proto a[aria-current] { font-weight: 700; }
+.fb-proto a[aria-current]::after { content: " (este)"; font-weight: 400; color: var(--ink-3); margin-left: 4px; }
+.fb-proto__cab { margin: 8px 12px 2px; color: var(--ink-3); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: var(--fs-2xs); }
+.fb-proto__nota { margin: 6px 12px 0; color: var(--ink-3); font-size: var(--fs-xs); }
+.fb-proto__nota:empty { display: none; }
+
+/* ---------------------------------------------------------------------------------------------------------------
+   Pantallas medianas
+   --------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .fb-recorridos__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 1020px) and (min-width: 761px) {
+  :root { --col: min(480px, 52vw); }
+  .fb-epocas__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fb-dato__cuerpo { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------
+   El teléfono (N1): el relieve arriba en una franja, el texto debajo y nunca encima, la acción abajo al pulgar.
+   --------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 760px) {
+  :root { --hero-h: var(--band-h); --col: auto; --gutter: 18px; }
+  html { scroll-padding-bottom: 84px; }
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .fb-heroe { height: auto; display: block; padding-top: var(--band-h); }
+  .fb-heroe__fondo { bottom: auto; height: var(--band-h); }
+  .fb-lienzo { --anchor-f: .5821; --anchor-x: 50%; width: max(calc(var(--band-h) * 16 / 9), 100vw); }
+  .fb-heroe[data-img="paul-journeys"] .fb-lienzo { --anchor-f: .596; --anchor-x: 50%; }
+  .fb-marca { width: 64px; }
+  .fb-heroe__velo { background: linear-gradient(to bottom, color-mix(in srgb, var(--paper) 18%, transparent) 0, color-mix(in srgb, var(--paper) 18%, transparent) 60%, var(--paper) 100%); }
+  .fb-heroe__arriba { top: 8px; right: 8px; }
+  /* Sin contexto de apilamiento propio: la barra fija de la acción tiene que quedar por encima de las zonas. */
+  .fb-heroe__palabras { position: static; z-index: auto; width: auto; margin: 0; padding: 4px var(--gutter) 0; }
+  .fb-nombre { font-size: clamp(40px, 11.6vw, 54px); }
+  .fb-regla { margin: 12px 0 10px; }
+  .fb-lema { font-size: 12.5px; letter-spacing: .13em; }
+  .fb-primera { margin-top: 2px; }
+  .fb-que { margin-top: 8px; font-size: var(--fs-sm); }
+  .fb-ejemplos { margin-top: 6px; }
+  /* La barra al pulgar: búsqueda y «Entrar al mapa», fija abajo. */
+  .fb-accion { position: fixed; z-index: 40; left: 0; right: 0; bottom: 0; margin: 0; gap: 8px; padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -6px 18px rgba(20, 40, 25, .08); }
+  .fb-busca { height: 50px; padding: 0 12px; box-shadow: none; }
+  .fb-busca input { font-size: 16px; }             /* 16 px: iOS no amplía la página al enfocar */
+  .fb-entrar { height: 50px; padding: 0 14px; font-size: var(--fs-md); }
+  .fb-lista { top: auto; bottom: calc(100% + 6px); left: 8px; right: 8px; max-height: 52vh; }
+  .fb-fechas { padding: 10px var(--gutter) 6px; }
+  .fb-fechas__pie { font-size: var(--fs-sm); }
+  .fb-fecha { font-size: 15px; }
+  .fb-credito { top: calc(var(--band-h) - 30px); bottom: auto; right: 8px; }
+  .fb-marco:not(.fb-marco--entero) { height: var(--band-h); }
+  .fb-zonas { padding-top: 18px; }
+  .fb-zona { margin-bottom: 44px; }
+  .fb-titulo { font-size: var(--fs-2xl); }
+  .fb-sub { font-size: var(--fs-md); }
+  .fb-preg { padding: 16px; }
+  .fb-preg__texto { flex-basis: 100%; font-size: 22px; }
+  .fb-epocas__lista, .fb-recorridos__lista, .fb-dato__cuerpo { grid-template-columns: 1fr; gap: 10px; }
+  .fb-epoca { flex-direction: row; align-items: stretch; }
+  .fb-epoca .fb-recorte { flex: none; width: 124px; aspect-ratio: auto; min-height: 88px; }
+  .fb-epoca__texto { align-content: center; padding: 10px 12px; }
+  .fb-epoca__nombre { font-size: var(--fs-lg); }
+  .fb-punto { width: 8px; height: 8px; margin: -4px 0 0 -4px; }
+  /* En el recorte pequeño del teléfono los números se tapan entre sí: puntos sin número, y la línea sin números. */
+  .fb-punto.fb-punto--n { width: 8px; height: 8px; margin: -4px 0 0 -4px; font-size: 0; }
+  .fb-epoca__k { display: none; }
+  .fb-paseo { top: auto; bottom: calc(12px + env(safe-area-inset-bottom)); }
+  .fb-proto summary { min-height: 30px; font-size: var(--fs-xs); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fb-lienzo__img { transition: none; }
+}

@@ -1,0 +1,160 @@
+# Sitio de documentación de biblical-atlas. Se publica dentro del mismo artefacto de GitHub Pages que la
+# aplicación, en https://biblical-atlas.geiser.cloud/docs/: pages.yml compila los datos, construye este
+# sitio en site/docs/ y sube site/ entero. site_dir está fijado aquí para que un `mkdocs build` suelto
+# nunca borre la aplicación (mkdocs vacía site_dir antes de escribir).
+site_name: biblical-atlas
+site_url: https://biblical-atlas.geiser.cloud/docs/
+site_description: Mapa y línea de tiempo para estudiar la Biblia en familia, con cada dato enlazado a su fuente en jw.org
+repo_url: https://github.com/GeiserX/biblical-atlas
+repo_name: GeiserX/biblical-atlas
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site/docs
+
+# Un aviso es un enlace roto, una página que falta o una página a la que nadie llega. Todos tiran la
+# compilación, en local y en CI, para que nadie tenga que acordarse de --strict.
+strict: true
+
+theme:
+  name: material
+  language: es
+  logo: images/logo.svg
+  favicon: images/icon.svg
+  # Claro primero: el banner y la aplicación son claros (papel #fbfcfa). La cabecera lleva el verde pino
+  # del banner y el modo oscuro usa la tinta de la aplicación.
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar al modo oscuro
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar al modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+# MkDocs informa de la mayoría de los problemas de enlaces como `info`, que --strict ignora. Cada línea
+# sube uno de ellos a aviso para que la compilación falle:
+#   nav.omitted_files   un .md de docs/ que no está en el nav ni en exclude_docs;
+#   nav.not_found       una entrada del nav cuyo fichero no existe;
+#   links.not_found     un enlace relativo a una página o fichero que no existe;
+#   links.anchors       un enlace a un encabezado que no existe;
+#   links.absolute_links  un enlace escrito como /ruta/ (se rompe bajo /docs/);
+#   links.unrecognized_links  un enlace relativo que sale de docs/ (../README.md). Los ficheros del
+#                       repositorio se enlazan con su URL absoluta de GitHub.
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path:
+        - .
+        - docs
+      check_paths: true
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  # Las anclas conservan las tildes (#qué-queda), igual que en GitHub. El slugify de serie de
+  # Python-Markdown las quita y el enlace fallaría en --strict.
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/GeiserX/biblical-atlas
+      name: Código en GitHub
+    - icon: material/map-search-outline
+      link: https://biblical-atlas.geiser.cloud/
+      name: La aplicación
+
+extra_css:
+  - stylesheets/theme.css
+
+# Lo que hay en docs/ y no es una página del sitio. MkDocs publica todo fichero de docs/ que no esté
+# aquí, sea .md o no. Con mayúscula (README.md, CREDITS.md) es una nota que se lee en GitHub. ideas/,
+# logo/ y verde/ son las maquetas y la identidad visual (50 MB de imágenes, fuentes y prototipos), y los
+# cuatro documentos de investigacion/ son el esquema y el protocolo de lectura, para quien contribuye:
+# se leen en GitHub y las páginas del sitio los enlazan con su URL absoluta.
+exclude_docs: |
+  [A-Z]*.md
+  ideas/
+  logo/
+  verde/
+  images/social.png
+  investigacion/modelo.md
+  investigacion/versiculos.md
+  investigacion/entre-libros.md
+  investigacion/videos-jw.md
+  requirements-docs.txt
+
+# El título de cada entrada es el H1 de la página. Las páginas de Registro las escribe scripts/build.py.
+nav:
+  - Inicio: index.md
+  - Empezar:
+    - Primeros pasos: getting-started.md
+    - Uso: usage.md
+    - Cómo funciona: how-it-works.md
+  - Registro:
+    - Registro de investigación: investigacion/registro/index.md
+    - Lugares: investigacion/registro/lugares.md
+    - Personas: investigacion/registro/personas.md
+    - Viajes y paradas: investigacion/registro/viajes.md
+    - Cartas: investigacion/registro/cartas.md
+    - Eventos: investigacion/registro/eventos.md
+    - Periodos: investigacion/registro/periodos.md
+    - Hallazgos: investigacion/registro/hallazgos.md
+    - Recorridos: investigacion/registro/recorridos.md
+    - Libros y calendario: investigacion/registro/libros.md
+    - Cobertura de la Biblia: investigacion/registro/cobertura.md
+    - Fuentes: investigacion/registro/fuentes.md
+  - Proyecto:
+    - Decisiones: decisiones.md
+    - Hoja de ruta: hoja-de-ruta.md
+    - Desarrollo: development.md

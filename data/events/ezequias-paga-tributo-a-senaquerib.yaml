@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-paga-tributo-a-senaquerib
+title: Ezequías paga tributo a Senaquerib, que está en Lakís
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 18014
+places:
+- lakis
+- juda
+- jerusalen
+people:
+- senaquerib
+- ezequias
+present:
+- senaquerib
+passages:
+- 2Re 18:13-16
+- Is 36:1
+- 2Cr 32:1
+summary: Senaquerib toma las ciudades fortificadas de Judá. Ezequías le pide que se retire; él exige 300 talentos de plata
+  y 30 de oro, y el rey vacía el tesoro y despoja las puertas del templo.
+reason: Año 14 de Ezequías, 732 a.e.c. (estudio 3; Perspicacia «Ezequías» y «Senaquerib»). Senaquerib estaba en Lakís (2Re
+  18:14); Ezequías, en Jerusalén (18:17).
+sources:
+- 2-reyes-18
+- si-3
+- it-ezequias
+- it-senaquerib
+- it-lakis
+links:
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+checked_on: '2026-09-30'
+status: verified

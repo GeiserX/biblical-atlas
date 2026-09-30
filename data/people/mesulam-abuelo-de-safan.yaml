@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulam-abuelo-de-safan
+name: Mesulam
+names:
+- name: Mesulam
+perspicacia: 1200003014#3
+disambiguation: El de la ascendencia de Safán; Perspicacia registra más de veinte hombres llamados Mesulam.
+summary: Padre de Azalías. Perspicacia lo da como abuelo, o antepasado más lejano, de Safán, el secretario de Josías.
+reason: Perspicacia «Mesulam», núm. 3; 2Re 22:3.
+sources:
+- it-mesulam
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Mesulam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003014
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

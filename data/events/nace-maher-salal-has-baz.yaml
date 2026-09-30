@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nace-maher-salal-has-baz
+title: Nace Maher-Salal-Has-Baz, hijo de Isaías
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 758 a.e.c. (tiempo narrativo: tras la tablilla y antes del fin de Pécah)'
+narrative_order:
+  series: isaias
+  order: 8003
+places: []
+people:
+- maher-salal-has-baz
+- isaias
+type: birth
+roles:
+  maher-salal-has-baz: born
+present: []
+passages:
+- Is 8:3, 4
+summary: 'La profetisa, esposa de Isaías, da a luz un hijo. Jehová manda llamarlo Maher-Salal-Has-Baz: antes de que aprenda
+  a decir «papá» y «mamá», Asiria despojará a Damasco y a Samaria.'
+reason: 'Perspicacia «Maher-salal-has-baz»: Tiglat-Piléser III saqueó Israel en el reinado de Pécah, que acabó c. 758 (A6-B),
+  y la tablilla se escribió durante el asedio («Las profecías de Isaías I», cap. 9, párr. 23). El texto no dice dónde nació.'
+sources:
+- isaias-8
+- it-maher-salal-has-baz
+- ip1-9
+- tnm-a6-b
+links:
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
+  type: bible
+- title: 'Perspicacia: «Maher-salal-has-baz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002848
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

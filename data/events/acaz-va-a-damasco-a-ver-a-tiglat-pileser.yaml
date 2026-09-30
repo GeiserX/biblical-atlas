@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acaz-va-a-damasco-a-ver-a-tiglat-pileser
+title: Acaz va a Damasco a ver a Tiglat-Piléser III
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: tras la toma de Damasco, en el reinado de Acaz)'
+narrative_order:
+  series: 2-reyes
+  order: 16012
+  after: tiglat-pileser-toma-damasco
+places:
+- damasco
+people:
+- acaz
+- tiglat-pileser-iii
+- uriya-sacerdote-de-acaz
+present:
+- acaz
+- tiglat-pileser-iii
+passages:
+- 2Re 16:10
+summary: Acaz va a Damasco a presentarse ante el rey de Asiria. Allí ve un altar y manda al sacerdote Uriya un plano con su
+  diseño y su forma de construcción.
+reason: '2Re 16:10; Perspicacia «Acaz», núm. 1, cree que fue como rey vasallo a rendir homenaje. Sin año: después de la toma
+  de Damasco, en el reinado de Acaz (762-746 a.e.c., A6-B).'
+sources:
+- 2-reyes-16
+- it-acaz
+- it-tiglat-pileser
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Acaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000144
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

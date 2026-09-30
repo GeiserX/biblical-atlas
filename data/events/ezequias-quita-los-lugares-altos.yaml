@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-quita-los-lugares-altos
+title: Ezequías quita los lugares altos y tritura la serpiente de cobre
+date:
+  from: -745
+  to: -744
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 746 y 745 a.e.c. (tiempo narrativo: al empezar el reinado de Ezequías, tras su Pascua)'
+narrative_order:
+  series: 2-reyes
+  order: 18004
+places:
+- juda
+- jerusalen
+people:
+- ezequias
+present: []
+passages:
+- 2Re 18:4
+- 2Cr 31:1
+summary: Ezequías quita los lugares altos, rompe las columnas y derriba el poste sagrado. Tritura también la serpiente de
+  cobre de Moisés, que el pueblo adoraba con el nombre de Nehustán.
+reason: 'A6-B abre su reinado en 746; Perspicacia «Ezequías» cuenta su primer año desde nisán de 745 y pone la destrucción
+  tras la Pascua de ese año (2Cr 31:1). El texto no dice dónde: no sitúa a nadie.'
+sources:
+- 2-reyes-18
+- it-ezequias
+- it-serpiente-de-cobre
+- tnm-a6-b
+links:
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -45,8 +45,8 @@ names:
   note: Solo en Zac 14:10, como límite de la ciudad. Perspicacia «Puerta» recoge que unos la igualan con la Puerta de la Ciudad
     Vieja y otros con la de Efraín.
 - name: Puerta de la Esquina
-  note: En el ángulo noroeste de la muralla, al oeste de la Puerta de Efraín; Uzías levantó una torre junto a ella (2Re 14:13;
-    2Cr 26:9; Zac 14:10).
+  note: En el ángulo noroeste de la muralla, sobre el valle de Hinón, al oeste de la de Efraín. Jehoás de Israel derribó
+    el muro hasta ella y Uzías le levantó una torre al lado (2Re 14:13; 2Cr 26:9; Zac 14:10).
 - name: Torre de Hananel
   note: Torre del muro norte, cerca de la Torre de Meah y de la Puerta de las Ovejas; se reconstruyó con Nehemías (Zac 14:10;
     Jer 31:38; Ne 3:1; 12:39). Perspicacia «Torre».
@@ -56,6 +56,38 @@ names:
 - name: Bet-Merhac
   note: Sitio donde se detuvo David al dejar la ciudad huyendo de Absalón (2Sa 15:17). Perspicacia «Bet-merhaq» cree que quizá
     fuera la última casa del lado del monte de los Olivos.
+- name: Silá
+  note: Lugar de la antigua Jerusalén al que bajaba el camino de la casa del Montículo, donde mataron a Jehoás (2Re 12:20).
+    Perspicacia «Silá» solo lo conoce por ese versículo.
+- name: Puerta de Efraín
+  note: Puerta del Muro Ancho, en el norte, que daba hacia Efraín, unos 400 codos al este de la otra puerta que nombra 2Re
+    14:13. Perspicacia «Puerta».
+- name: Puerta superior de la casa de Jehová
+  note: Puerta del templo que construyó Jotán (2Re 15:35). Perspicacia cree que daba al patio interior y que quizá sea la
+    puerta nueva que nombra Jeremías.
+- name: Estanque superior
+  note: Estanque con un conducto que llegaba al lado de la calzada que iba al campo del lavandero (Is 7:3; 36:2; 2Re 18:17).
+    Perspicacia «Estanque» dice que no se sabe bien dónde estaba.
+- name: Escalera de Acaz
+  note: Escalones por los que bajaba la sombra del sol; Jehová la hizo retroceder diez como señal para Ezequías (Is 38:8;
+    2Re 20:11). Perspicacia «Sol» recoge, con Josefo, que estaba en el palacio y quizá medía las horas.
+- name: Puerta de Josué
+  note: Puerta que llevaba el nombre de Josué, jefe de la ciudad; a su entrada había lugares altos que Josías derribó (2Re
+    23:8).
+- name: Jardín del rey
+  note: Junto a la puerta entre las dos murallas por la que huyeron Sedequías y sus soldados (2Re 25:4; Ne 3:15). Perspicacia
+    «Jardín» lo pone probablemente fuera del muro sudeste.
+- name: Siloé
+  note: Canal que llevaba el agua de la fuente de Guihón por el Cedrón hasta un estanque del sur. Is 8:6 usa sus aguas tranquilas
+    en sentido figurado (Perspicacia «Siloé»).
+- name: Estanque inferior
+  note: Is 22:9. Según Perspicacia «Estanque», los eruditos suelen situarlo en Birket el-Hamra, al sur del valle del Tiropeón;
+    quizá sea el estanque del Canal de Ne 3:15.
+- name: Estanque viejo
+  note: Is 22:11. Perspicacia «Estanque» dice que la Biblia no permite saber dónde estaba respecto a la ciudad.
+- name: Ofel
+  note: Colina amurallada de Jerusalén que salía hacia el este desde el ángulo sudeste del monte del templo, sobre el Cedrón
+    (2Cr 27:3; Ne 3:26). Is 32:14 anuncia que quedaría desierta. Perspicacia «Ofel».
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -179,6 +211,59 @@ sources:
 - 1-reyes-12
 - 1-reyes-14
 - 1-reyes-15
+- 2-reyes-9
+- 2-reyes-11
+- 2-reyes-12
+- it-sila
+- 2-reyes-14
+- 2-reyes-15
+- 2-reyes-16
+- 2-reyes-18
+- 2-reyes-19
+- 2-reyes-20
+- 2-reyes-21
+- 2-reyes-22
+- 2-reyes-23
+- 2-reyes-24
+- 2-reyes-25
+- it-jardin
+- malaquias-2
+- isaias-1
+- isaias-2
+- isaias-3
+- isaias-4
+- isaias-5
+- isaias-7
+- it-estanque
+- isaias-8
+- it-siloe
+- isaias-10
+- isaias-22
+- isaias-24
+- isaias-27
+- isaias-28
+- it-piedra-angular
+- isaias-29
+- it-ariel
+- isaias-31
+- isaias-32
+- it-ofel
+- isaias-33
+- isaias-35
+- isaias-36
+- isaias-37
+- isaias-38
+- it-sol
+- isaias-40
+- isaias-44
+- isaias-49
+- isaias-51
+- isaias-52
+- isaias-60
+- isaias-62
+- isaias-64
+- isaias-65
+- isaias-66
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

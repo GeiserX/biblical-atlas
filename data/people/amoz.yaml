@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amoz
+name: Amoz
+names:
+- name: Amoz
+perspicacia: '1200000248'
+disambiguation: 'Padre del profeta Isaías. No es el profeta Amós: «Toda Escritura», libro 23, párr. 3, advierte que son dos
+  personas.'
+distinct_from:
+- amos-profeta
+summary: Padre del profeta Isaías. Su nombre significa «fuerte»; la Biblia no cuenta nada más de él.
+reason: Perspicacia «Amoz»; Is 1:1, 2:1, 13:1, 20:2, 37:2, 21 y 38:1 lo nombran como padre de Isaías.
+sources:
+- it-amoz
+- 2-reyes-19
+- 2-reyes-20
+- isaias-1
+- isaias-2
+- si-isaias
+- isaias-13
+- isaias-20
+- isaias-37
+- isaias-38
+links:
+- title: 'Perspicacia: «Amoz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000248
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+- title: Isaías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

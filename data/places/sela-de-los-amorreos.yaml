@@ -3,7 +3,8 @@ id: sela-de-los-amorreos
 name: Sela
 names:
 - name: Sela
-  note: La de Jue 1:36 (Perspicacia «Sela», núm. 1); no la ciudad edomita de 2Re 14:7, la núm. 2.
+  note: La de Jue 1:36 (Perspicacia «Sela», núm. 1); no la ciudad edomita de 2Re 14:7, la núm. 2, ni la de Is
+    16:1, la núm. 3.
 type: region
 lat: null
 lon: null
@@ -54,5 +55,10 @@ links:
 - title: Jueces 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/7/1
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: La nota del nombre la separa también de la Sela de Is 16:1, que Perspicacia «Sela» trata aparte como núm. 3 y que
+    ahora tiene su propia ficha.
+  source: isaias-16
+checked_on: '2026-09-30'
 status: verified

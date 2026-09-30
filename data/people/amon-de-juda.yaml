@@ -21,6 +21,7 @@ sources:
 - 2-cronicas-33
 - tnm-a6-b
 - mateo-1
+- 2-reyes-22
 links:
 - title: 'Perspicacia: «Amón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000244
@@ -49,6 +50,34 @@ relations:
   reason: Reinó al morir su padre (2Re 21:18).
   checked_on: '2026-09-29'
   office: king
+  status: verified
+- type: kin
+  person: mesulemet
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-21
+  - it-mesulemet
+  reason: 2Re 21:19 da a Mesulémet como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-21
+  reason: '2Re 21:19: reinó dos años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jedida
+  word: wife
+  inferred: true
+  sources:
+  - it-jedida
+  - 2-reyes-22
+  reason: Perspicacia «Jedidá» la da como esposa de Amón y madre de Josías (2Re 22:1).
+  checked_on: '2026-09-30'
   status: verified
 history:
 - date: '2026-09-28'

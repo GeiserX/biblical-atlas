@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arie
+name: Arié
+names:
+- name: Arié
+- name: Arieh
+  note: Grafía de Perspicacia.
+perspicacia: '1200000360'
+summary: Nombrado junto a Argob cuando Pécah mató al rey Pecahías en la torre del palacio de Samaria, hacia 778 a.e.c. Perspicacia
+  ve posible que muriera con el rey.
+reason: Perspicacia «Arieh»; 2Re 15:25.
+sources:
+- it-arieh
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Arieh»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000360
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+not_claimed:
+- 'Que Arié muriera con Pecahías: el texto solo lo nombra con el rey y Perspicacia lo da como posible.'
+checked_on: '2026-09-30'
+status: verified

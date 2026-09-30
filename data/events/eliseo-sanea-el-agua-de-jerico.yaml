@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eliseo-sanea-el-agua-de-jerico
+title: Eliseo sanea el agua de Jericó
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: tras la partida de Elías, en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 2019
+places:
+- jerico
+people:
+- eliseo
+present:
+- eliseo
+passages:
+- 2Re 2:19-22
+summary: Los hombres de Jericó se quejan de que su agua es mala y su tierra estéril. Eliseo echa sal de un tazón nuevo en
+  el manantial y anuncia de parte de Jehová que el agua ya está sana.
+reason: 2Re 2:19-22; Perspicacia «Jericó», que recoge la tradición de que era ʽAin es-Sultan, y «Eliseo», párr. 9. Pasa tras
+  la partida de Elías (c. 917), cuando Jehoram reinaba en Israel (hacia 917-905, según A6-A).
+sources:
+- 2-reyes-2
+- it-jerico
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

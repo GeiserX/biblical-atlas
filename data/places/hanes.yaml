@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hanes
+name: Hanés
+names:
+- name: Hanés
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Egipto, adonde bajan los que buscan ayuda
+  geometry:
+    type: zone
+    lat: 30.129444
+    lon: 31.3075
+    radius_km: 250
+  status: favored_level_1
+  sources:
+  - isaias-30
+  - it-hanes
+  - openbible-geo
+  reason: Is 30:2-4 la nombra con Zoan al hablar de quienes bajan a Egipto por ayuda. Perspicacia no conoce su sitio.
+  checked_on: '2026-09-30'
+  note: 'Centro: punto de la ficha af301ca de OpenBible, Egipto. El radio de 250 km es nuestro y abarca el delta y el Egipto
+    medio.'
+  coord_source: calculation
+summary: 'Lugar de Is 30:4, en el aviso contra los que bajan a Egipto en busca de ayuda: allí han llegado unos mensajeros.
+  No se sabe con seguridad dónde estaba.'
+reason: 'Perspicacia «Hanés»; Is 30:1-5. Sin punto: jw.org no la sitúa y el mapa solo muestra la zona que da el texto.'
+not_claimed:
+- 'Que Hanés sea Heracleópolis ni otro sitio concreto: Perspicacia dice que su ubicación no se conoce con seguridad.'
+- 'De quién eran los mensajeros: Perspicacia recoge que unos los creen judíos y otros enviados del faraón.'
+sources:
+- it-hanes
+- openbible-geo
+- isaias-30
+links:
+- title: 'Perspicacia: «Hanés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001859
+  type: perspicacia
+- title: Isaías 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/30
+  type: bible
+checked_on: '2026-09-30'
+status: verified

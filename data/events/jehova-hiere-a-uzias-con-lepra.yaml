@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-hiere-a-uzias-con-lepra
+title: Jehová hiere a Uzías con lepra
+date:
+  from: -828
+  to: -776
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 829 y 777 a.e.c. (tiempo narrativo: durante el reinado de Uzías)'
+narrative_order:
+  series: 2-reyes
+  order: 15005
+places:
+- jerusalen
+- monte-moria
+people:
+- uzias
+- jotan
+present:
+- uzias
+passages:
+- 2Re 15:5
+- 2Cr 26:16-21
+summary: Uzías queda leproso hasta su muerte y vive apartado; Jotán, su hijo, lleva el palacio y juzga al pueblo. Crónicas
+  cuenta que le pasó al quemar incienso en el templo.
+reason: '2Re 15:5; 2Cr 26:16-21 y Perspicacia «Uzías», núm. 3: la lepra le salió en el templo. Sin año; cae en su reinado,
+  829-777 a.e.c. (A6-A y A6-B).'
+sources:
+- 2-reyes-15
+- it-uzias
+- 2-cronicas-26
+- tnm-a6-a
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Uzías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004535
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

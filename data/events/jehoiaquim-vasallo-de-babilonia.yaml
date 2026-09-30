@@ -31,5 +31,8 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
   type: bible
 search: Jehoiaquim vasallo Nabucodonosor
-checked_on: '2026-09-28'
+narrative_order:
+  series: 2-reyes
+  order: 24001
+checked_on: '2026-09-30'
 status: verified

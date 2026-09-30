@@ -10,6 +10,7 @@ disambiguation: Elisúa hijo de David; 1Cr 3:6 lo llama Elisamá, pero no es su 
 distinct_from:
 - elisama-hijo-de-david
 - elisama-hijo-de-amihud
+- elisama-abuelo-de-ismael
 summary: Hijo de David nacido en Jerusalén. 1Cr 3:6 lo llama Elisamá; Perspicacia cree que Elisúa es la forma buena, porque
   ese nombre vuelve a salir en 1Cr 3:8 para otro hermano.
 reason: 'Perspicacia «Elisúa» y «Elisamá», núm. 3; 2Sa 5:15. En Crónicas: 1Cr 14:5.'
@@ -38,5 +39,5 @@ relations:
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

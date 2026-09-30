@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: habor
+name: Habor
+names:
+- name: Habor
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Río Jabur, afluente del Éufrates
+  geometry:
+    type: point
+    lat: 35.130298
+    lon: 40.427284
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-habor
+  - openbible-geo
+  reason: Perspicacia recoge que algunos leen «Habor, río de Gozán» y lo identifican con el Jabur, que cruza el sureste de
+    Turquía y el noreste de Siria.
+  note: Punto de OpenBible para el río Jabur; solo tomamos el punto.
+  coord_source: openbible:af19252
+  coord_url: https://www.openbible.info/geo/ancient/af19252/habor
+- name: Abhar, en el noroeste de Irán
+  geometry:
+    type: zone
+    lat: 35.69
+    lon: 49.07
+    radius_km: 100
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-habor
+  reason: Perspicacia recoge que hay eruditos que lo relacionan con Abhar, localidad del noroeste de Irán situada sobre el
+    Qezel Ouzan, a 210 km de Teherán hacia el oeste.
+  coord_source: calculation
+  note: 'Centro: Teherán (35,69 N; 51,39 E) desplazado 210 km al oeste (2,32 grados de longitud). «Al O.» es aproximado: un
+    rumbo desviado 25 grados mueve el punto unos 90 km, así que el radio es de 100 km.'
+summary: Ciudad o distrito junto al río Gozán adonde los asirios llevaron a israelitas del reino del norte. Perspicacia recoge
+  dos propuestas de sitio y no elige.
+reason: Perspicacia «Habor» y «Gozán»; 2Re 17:6 y 18:11. La TNM lee «Habor, junto al río Gozán», de acuerdo con 1Cr 5:26.
+sources:
+- it-habor
+- it-gozan
+- openbible-geo
+- 2-reyes-17
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Habor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001792
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

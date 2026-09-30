@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jabes
+name: Jabés
+names:
+- name: Jabés
+perspicacia: 1200002269#2
+disambiguation: Padre del rey Salum de Israel; no es la ciudad de Jabés de Galaad, que Perspicacia trata en el mismo artículo.
+summary: Padre de Salum, el hombre que mató al rey Zacarías y reinó un mes en Samaria.
+reason: Perspicacia «Jabés», núm. 2; 2Re 15:10, 13, 14.
+sources:
+- it-jabes
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Jabés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002269
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: salum-hijo-de-ticva
+name: Salum
+names:
+- name: Salum
+perspicacia: 1200003933#8
+disambiguation: El marido de Huldá; no es Salum, rey de Israel, ni Salum hijo de Josías, llamado también Jehoacaz.
+distinct_from:
+- salum-de-israel
+- jehoacaz-de-juda
+summary: Esposo de la profetisa Huldá, hijo de Ticvá y nieto de Harhás. Estaba encargado del guardarropa, quizá de los sacerdotes
+  o del rey.
+reason: Perspicacia «Salum», núm. 8; 2Re 22:14.
+sources:
+- it-salum
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Salum»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003933
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+relations:
+- type: kin
+  person: hulda
+  word: wife
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-hulda
+  reason: '2Re 22:14: Huldá era la esposa de Salum.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: ticva-hijo-de-harhas
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-salum
+  reason: 2Re 22:14 lo llama Salum hijo de Ticvá.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

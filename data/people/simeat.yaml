@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simeat
+name: Simeat
+names:
+- name: Simeat
+perspicacia: '1200004045'
+summary: Mujer ammonita, madre de Jozacar, uno de los dos siervos que asesinaron al rey Jehoás de Judá.
+reason: Perspicacia «Simeat»; 2Re 12:21 y 2Cr 24:26, que la llama la ammonita.
+sources:
+- it-simeat
+- 2-reyes-12
+links:
+- title: 'Perspicacia: «Simeat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004045
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

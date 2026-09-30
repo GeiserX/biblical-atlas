@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: patros
+name: Patrós
+names:
+- name: Patrós
+type: region
+lat: 24.1
+lon: 32.7
+precision: zone
+coord_source: openbible:aab30ec
+coord_url: https://www.openbible.info/geo/ancient/aab30ec/pathros
+coord_note: Punto representativo de OpenBible para el Alto Egipto, la región que Perspicacia identifica con Patrós.
+summary: 'El Alto Egipto: el valle del Nilo al sur de Menfis, hasta Siene, hoy Asuán, en la frontera con Cus. Isaías la cuenta
+  entre las tierras de donde Jehová recogería al resto de su pueblo.'
+reason: 'Perspicacia «Patrós», párr. 1: el nombre se relaciona con «Tierra del Sur», y el orden Egipto, Patrós y Cus de Is
+  11:11 lo confirma. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-patros
+- isaias-11
+- openbible-geo
+links:
+- title: 'Perspicacia: «Patrós»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003400
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: seraya-hijo-de-tanhumet
+name: Seraya
+names:
+- name: Seraya
+disambiguation: El jefe militar hijo de Tanhúmet; no es el sacerdote principal Seraya.
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+perspicacia: 1200003904#7
+summary: Jefe militar que quedó en Judá tras la deportación de 607 a.e.c. Apoyó a Guedalías y le avisó del peligro; muerto
+  el gobernador, fue de los que llevaron a Egipto a los judíos que quedaban.
+reason: Perspicacia «Seraya», núm. 7; 2Re 25:23, 26; también Jer 40:8, 13-16 y 43:4-7.
+sources:
+- it-seraya
+- 2-reyes-25
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003904
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+relations:
+- type: kin
+  person: tanhumet
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-seraya
+  reason: '2Re 25:23: Seraya hijo de Tanhúmet.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - 2-reyes-25
+  - it-seraya
+  reason: '2Re 25:26: los jefes del ejército se fueron a Egipto; Perspicacia «Seraya», núm. 7, lo cuenta entre los que llevaron
+    allí al pueblo.'
+  checked_on: '2026-09-30'
+  status: verified
+distinct_from:
+- seraya-hijo-de-azarias
+- seraya-secretario-de-david
+checked_on: '2026-09-30'
+status: verified

@@ -17,6 +17,11 @@ reason: 'Perspicacia «Medos, Media», apartados «Geografía» y «Pierden la h
 sources:
 - it-medos
 - openbible-geo
+- 2-reyes-17
+- 2-reyes-18
+- isaias-13
+- isaias-21
+- ip1-17
 links:
 - title: 'Perspicacia: «Medos, Media»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002956
@@ -24,5 +29,5 @@ links:
 - title: Daniel 5 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/5
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

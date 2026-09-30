@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-hace-rey-a-sedequias
+title: Nabucodonosor hace rey a Sedequías
+date:
+  from: -616
+  to: -616
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 617 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 24017
+places:
+- jerusalen
+people:
+- nabucodonosor-ii
+- sedequias
+passages:
+- 2Re 24:17
+- 2Cr 36:10
+- Jer 37:1
+summary: En lugar de Joaquín, Nabucodonosor pone en el trono a Matanías, tío del rey desterrado, le cambia el nombre por el
+  de Sedequías y lo compromete con juramento a servirle.
+reason: El estudio 3 pone en 617 la subida de Sedequías; Perspicacia «Sedequías», núm. 4, párr. 1 y 4, habla de su juramento
+  como rey vasallo (2Cr 36:13; Eze 17:13).
+sources:
+- 2-reyes-24
+- si-3
+- it-sedequias
+links:
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+- title: 'Perspicacia: «Sedequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

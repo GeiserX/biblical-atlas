@@ -19,6 +19,9 @@ sources:
 - salmos-120
 - openbible-geo
 - cantar-de-los-cantares-1
+- isaias-21
+- isaias-42
+- isaias-60
 links:
 - title: 'Perspicacia: «Quedar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002579
@@ -30,5 +33,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita Can 1:5, el versículo del que Perspicacia saca las tiendas de pelo negro de cabra.
   source: cantar-de-los-cantares-1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: remalias
+name: Remalías
+names:
+- name: Remalías
+perspicacia: '1200003688'
+summary: Padre de Pécah, rey de Israel. Isaías se refiere a Pécah como «el hijo de Remalías», sin darle su nombre.
+reason: Perspicacia «Remalías»; Is 7:1, 4, 5, 9; 2Re 15:25.
+sources:
+- it-remalias
+- 2-reyes-15
+- isaias-7
+links:
+- title: 'Perspicacia: «Remalías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003688
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

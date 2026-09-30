@@ -37,6 +37,7 @@ relations:
   sources:
   - 1-reyes-16
   - it-etbaal
+  - 2-reyes-9
   reason: '1Re 16:31: Jezabel hija de Etbaal.'
   checked_on: '2026-09-30'
   status: verified

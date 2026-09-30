@@ -20,6 +20,7 @@ sources:
 - genesis-11
 - openbible-geo
 - genesis-14
+- isaias-11
 links:
 - title: 'Perspicacia: «Sinar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004060
@@ -27,5 +28,5 @@ links:
 - title: Génesis 10 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

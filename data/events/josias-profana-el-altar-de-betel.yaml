@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: josias-profana-el-altar-de-betel
+title: Josías profana el altar de Betel
+date:
+  from: -641
+  to: -641
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 642 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 23015
+places:
+- betel
+people:
+- josias
+passages:
+- 2Re 23:15-18
+summary: Josías derriba el altar y el lugar alto de Jeroboán en Betel y quema sobre el altar huesos de las tumbas, como había
+  anunciado el hombre de Dios de Judá. Respeta la tumba de ese hombre y la del profeta.
+reason: Perspicacia «Betel» lo pone durante o después del año 18 de Josías (642) y lo ve como cumplimiento de lo que anunció
+  el hombre de Dios de Judá.
+sources:
+- 2-reyes-23
+- it-betel
+- it-josias
+links:
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+- title: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

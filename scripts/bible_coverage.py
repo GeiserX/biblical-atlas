@@ -717,7 +717,8 @@ def informe(datos):
     out = ["## Por libro", "",
            "| Libro | Capítulos completos | Versículos leídos | Porcentaje |", "|---|---|---|---|"]
     for f in filas:
-        nombre = f"[{f['nombre']}](../../../data/coverage/{f['slug']}.yaml)" if f["con_fichero"] else f["nombre"]
+        nombre = (f"[{f['nombre']}](https://github.com/GeiserX/biblical-atlas/blob/main/data/coverage/{f['slug']}.yaml)"
+                  if f["con_fichero"] else f["nombre"])
         leidos = f"{f['leidos']} de {f['versiculos']}" if f["versiculos"] is not None else "sin recuento"
         out.append(f"| {nombre} | {f['completos']} de {f['capitulos']} | {leidos} | "
                    f"{porcentaje(f['leidos'], f['versiculos'])} |")
