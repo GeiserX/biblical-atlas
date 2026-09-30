@@ -701,17 +701,33 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
   .vista-grafo *, .vista-conexion *, .vista-lectura *, .vista-portada * { transition: none !important; scroll-behavior: auto !important; }
 }
 
+/* ---------- Cinta de quien llega por un enlace compartido (portada.js) ----------
+   Va encima del sitio, fuera de su rejilla: mientras se ve, el sitio mide 44 px menos y nada de dentro se mueve. */
+.cinta { display: flex; align-items: center; gap: 4px; height: 44px; padding: 0 4px 0 16px; background: var(--surface-2); border-bottom: 1px solid var(--line); }
+.cinta[hidden] { display: none; }
+.be-cinta { --cinta-h: 44px; }
+.be-cinta .be-app { height: calc(100vh - var(--cinta-h)); }
+.cinta__texto { flex: 1; min-width: 0; margin: 0; font-size: var(--fs-sm); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cinta__texto b { font-family: var(--font-serif); font-size: 15px; color: var(--ink); }
+.cinta__corto { display: none; }
+.cinta__ir { flex: none; min-height: 44px; padding: 0 12px; border: 0; background: none; color: var(--link); font: 600 var(--fs-sm)/1 var(--font-sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.cinta__cerrar { flex: none; width: 44px; height: 44px; border: 0; background: none; color: var(--ink-2); font-size: 20px; cursor: pointer; border-radius: var(--r-md); }
+.cinta__cerrar:hover { background: var(--surface); }
+.cinta :focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+
 /* ---------- Pantallas estrechas ---------- */
 @media (max-width: 760px) {
+  .cinta__largo { display: none; }
+  .cinta__corto { display: inline; }
   #q-kbd, .filtro { display: none !important; }
   .buscador { flex: 1; }
-  .resultados { position: fixed; top: calc(var(--topbar-h) - 6px); left: 12px; right: 12px; width: auto; }
+  .resultados { position: fixed; top: calc(var(--cinta-h, 0px) + var(--topbar-h) - 6px); left: 12px; right: 12px; width: auto; }
   .be-search input { font-size: 15px; }
   #estudio-boton { padding: 0 4px; width: 30px; }
   .estudio-texto { display: none; }
   .capitulos--lectura { flex-wrap: nowrap; overflow-x: auto; max-height: none; padding-bottom: 4px; }
   .capitulos--lectura .cap { flex: none; }
-  .estudio-menu { position: fixed; top: calc(var(--topbar-h) - 4px); right: 8px; width: min(300px, calc(100vw - 16px)); }
+  .estudio-menu { position: fixed; top: calc(var(--cinta-h, 0px) + var(--topbar-h) - 4px); right: 8px; width: min(300px, calc(100vw - 16px)); }
   .vista-grafo, .vista-conexion { width: 100%; border-right: 0; padding-bottom: 36vh; }
   .vista-grafo { padding-bottom: 92px; }   /* el grafo pliega la hoja: quedan su asa y la fila del suceso */
   /* La leyenda se queda, plegada en una línea: sin ella las formas de los nodos no se explican en el móvil. */
