@@ -1230,6 +1230,8 @@ def parents_children(hacia, words, err):
 # ---------------------------------------------------------------- sucesos (modelo.md, sección 7)
 
 RE_PASAJE = re.compile(r"^\s*((?:[123]\s?)?[^\d\s][^\d]*?)\.?\s+(\d[\d:,;\s–-]*)$")
+# Un tramo entre comas y puntos y comas: «v», «c:v», «v-v», «c:v-v» o «c:v-c:v». Nada vacío ni de más.
+RE_TRAMO = re.compile(r"^\s*(\d+)(?::(\d+))?(?:\s*-\s*(\d+)(?::(\d+))?)?\s*$")
 _FORMAS_LIBRO = {}
 
 
@@ -1249,24 +1251,28 @@ def check_passages(o, donde, err, libros):
         if not libro:
             err(f"{pd}: no se entiende como «<libro> <capítulo>:<versículos>» de data/books.yaml")
             continue
+        items = [item for seg in m.group(2).replace("–", "-").split(";") for item in seg.split(",")]
+        malos = [item.strip() for item in items if not RE_TRAMO.match(item)]
+        if malos:
+            err(f"{pd}: {', '.join(f'«{x}»' for x in malos)} no es un tramo «v», «c:v», «v-v», «c:v-v» ni «c:v-c:v» "
+                f"(sin huecos entre comas y puntos y comas, ni dos puntos o guiones de más)")
+            continue
         n, versos = int(libro.get("chapters") or 0), libro.get("verses")
-        solo_caps = n > 1 and ":" not in m.group(2).split(",")[0].split(";")[0].split("-")[0].replace("–", "-")
+        tramos = [RE_TRAMO.match(item).groups() for item in items]
+        solo_caps = n > 1 and tramos[0][1] is None
         cap = 1 if n == 1 else None
         puntos = []
-        for seg in m.group(2).replace("–", "-").split(";"):
-            for item in seg.split(","):
-                for j, x in enumerate(item.split("-")[:2]):
-                    x = x.strip()
-                    if not x:
-                        continue
-                    if ":" in x:
-                        c, _, v = x.partition(":")
-                        cap = int(c)
-                        puntos.append((cap, int(v)))
-                    elif solo_caps:
-                        puntos.append((int(x), None))
-                    elif cap is not None:
-                        puntos.append((cap, int(x)))
+        for x1, y1, x2, y2 in tramos:
+            for x, y in ((x1, y1), (x2, y2)):
+                if x is None:
+                    continue
+                if y is not None:
+                    cap = int(x)
+                    puntos.append((cap, int(y)))
+                elif solo_caps:
+                    puntos.append((int(x), None))
+                elif cap is not None:
+                    puntos.append((cap, int(x)))
         for c, v in puntos:
             if not 1 <= c <= n:
                 err(f"{pd}: {libro.get('name')} no tiene capítulo {c} (tiene {n})")

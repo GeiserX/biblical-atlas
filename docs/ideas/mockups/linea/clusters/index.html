@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupos que se abren · línea de tiempo</title>
+<link rel="stylesheet" href="../../kit/fonts.css">
+<link rel="stylesheet" href="clusters.css">
+<script>
+  // Igual en los cinco prototipos: el tema de la dirección y, si no dice nada, el del sistema.
+  (function () {
+    var m = /(?:^|[#&])tema=(claro|oscuro)/.exec(location.hash);
+    var oscuro = m ? m[1] === 'oscuro' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.tema = oscuro ? 'oscuro' : 'claro';
+  })();
+</script>
+</head>
+<body>
+<a class="saltar" href="#lienzo" id="saltar">Saltar a la línea de tiempo</a>
+<header class="cabecera">
+  <div class="cabecera__fila">
+    <h1>Grupos que se abren</h1>
+    <nav class="otros" aria-label="Los cinco diseños">
+      <a href="../lanes/" data-lleva>Carriles con nombre</a>
+      <a href="../overview/" data-lleva>Panorama y detalle</a>
+      <a href="../list/" data-lleva>Cronología que se lee</a>
+      <a href="../clusters/" data-lleva aria-current="page">Grupos que se abren</a>
+      <a href="../minimal/" data-lleva>La de hoy, arreglada</a>
+      <a href="../">Índice</a>
+    </nav>
+  </div>
+  <p class="como">Donde las marcas se amontonan, un grupo dice cuántas son, de cuándo y cómo se llaman las primeras; se abre ahí mismo con todos los nombres, sin mover nada ni cambiar la escala.</p>
+  <p class="como">Arrastra para ir antes o después; la escala va con los botones, Ctrl + rueda o dos dedos; la regla pone el cursor. Teclado: Tab a la franja, flechas de marca en marca, Intro elige o abre, Esc cierra.</p>
+  <p class="cursor-regla"><b>Al pulsar una marca</b> se elige y su ficha dice qué es; la escala y la vista no cambian. El cursor solo se mueve si estaba fuera de la marca, y va a su punto más cercano que se ve en pantalla.</p>
+</header>
+
+<div class="barra">
+  <div class="barra__mandos" role="toolbar" aria-label="Moverse por el tiempo">
+    <div class="barra__grupo">
+      <button type="button" class="boton" id="antes" aria-label="Ir antes: media pantalla hacia atrás"><span aria-hidden="true">‹</span> Antes</button>
+      <button type="button" class="boton" id="despues" aria-label="Ir después: media pantalla hacia delante">Después <span aria-hidden="true">›</span></button>
+    </div>
+    <div class="escalas" role="group" aria-label="Escala" id="escalas"></div>
+    <div class="barra__grupo" role="group" aria-label="Mover el cursor un paso">
+      <button type="button" class="boton" id="paso-atras"></button>
+      <button type="button" class="boton" id="paso-adelante"></button>
+    </div>
+  </div>
+  <form class="ir" id="ir" autocomplete="off">
+    <label for="ir-fecha" class="oculto">Ir a una fecha</label>
+    <input id="ir-fecha" type="text" inputmode="text" placeholder="Ir a: 607 a.e.c." aria-describedby="ir-ayuda">
+    <span id="ir-ayuda" class="oculto">Escribe un año, por ejemplo 33 o 607 a.e.c., o un día, como 14 nisán 33. El cursor va allí y la escala no cambia.</span>
+    <button type="submit" class="boton">Ir</button>
+  </form>
+  <output class="fecha-cursor" id="fecha-cursor"></output>
+  <button type="button" class="boton" id="tema" aria-pressed="false" aria-label="Tema oscuro"><span class="largo">Tema oscuro</span></button>
+</div>
+
+<main class="zona">
+  <section class="franja" id="franja" aria-label="Línea de tiempo">
+    <div class="regla" id="regla" role="slider" tabindex="0" aria-label="Cursor de tiempo: flechas para moverlo" aria-valuemin="-4025" aria-valuemax="101"></div>
+    <div class="lienzo" id="lienzo" role="group" aria-label="Marcas de la ventana visible" aria-describedby="ayuda-franja"></div>
+    <p id="ayuda-franja" class="oculto">Flechas izquierda y derecha: marca anterior o siguiente. Arriba y abajo: otra fila. Intro: elegir la marca o abrir el grupo. Esc: cerrar el grupo o quitar la selección. Más y menos: cambiar la escala. Re Pág y Av Pág: moverse media pantalla.</p>
+  </section>
+  <aside class="ficha" id="ficha" aria-label="Ficha de la marca elegida"></aside>
+</main>
+<p class="oculto" id="vivo" aria-live="polite"></p>
+
+<script src="../comun.js"></script>
+<script src="../datos.js"></script>
+<script src="clusters.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · ¿Dónde y cuándo pasó lo que estás leyendo?</title>
+<meta name="description" content="La Biblia en el mapa y en el tiempo. Pregunta por una persona, un lugar, un capítulo o un año, y el mapa se pone en su sitio y en su fecha.">
+<link rel="icon" type="image/svg+xml" href="../assets/kit/favicon.svg">
+<script>
+  // Modo reunión antes del primer pintado, con la misma preferencia que el sitio. ?tema=reunion o ?tema=claro la fuerzan.
+  try {
+    const tema = new URLSearchParams(location.search).get('tema');
+    if (tema === 'reunion' || (tema !== 'claro' && localStorage.getItem('biblical-earth:pref:reunion') === '1')) document.documentElement.classList.add('be-reunion');
+  } catch { /* sin almacenamiento */ }
+</script>
+<link rel="preload" href="../assets/kit/fonts/EBGaramond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/kit/fonts/Inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="../assets/treatments.css">
+<link rel="stylesheet" href="style.css">
+<!-- Dónde está el sitio, el aviso si no carga y la letra grande: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<script defer src="data.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- Prototipo: el paso entre los seis diseños. No es parte del diseño. -->
+<nav class="proto" aria-label="Prototipo: los seis diseños de la portada">
+  <details>
+    <summary><span class="proto__tag">Prototipo</span><span>Diseño 4 de 6</span></summary>
+    <div class="proto__panel">
+      <ul class="proto__list">
+        <li><a href="../veil/">Velo</a></li>
+        <li><a href="../fullbleed/">Pantalla completa</a></li>
+        <li><a href="../time/">El tiempo</a></li>
+        <li><a href="../question/" aria-current="page">Entra por una pregunta</a></li>
+        <li><a href="../live/">Vivo</a></li>
+        <li><a href="../tuned/">Afinado</a></li>
+      </ul>
+      <p class="proto__caps">Estados de este diseño</p>
+      <ul class="proto__list">
+        <li><a href="./?estado=nuevo">Primera visita</a></li>
+        <li><a href="./?estado=vuelve">Quien vuelve</a></li>
+        <li><a href="./?compartido=sel%3Dpersona%3Apedro%26t%3D30.5000%26v%3D40%26mapa%3Dantiguo&amp;cinta=siempre">Llega por un enlace</a></li>
+        <li><a href="./?tema=reunion">Modo reunión</a></li>
+        <li><a href="./?tema=claro">Modo claro</a></li>
+      </ul>
+    </div>
+  </details>
+</nav>
+
+<!-- El sitio real, detrás. Mientras la portada está arriba no recibe ni teclado ni puntero. -->
+<div class="site" id="site" inert aria-hidden="true">
+  <div class="ribbon" id="ribbon" hidden>
+    <p class="ribbon__text" id="ribbon-text"></p>
+    <button type="button" class="ribbon__btn" data-landing>Ver la portada</button>
+    <button type="button" class="ribbon__close" data-ribbon-close aria-label="Cerrar este aviso"><span aria-hidden="true">×</span></button>
+  </div>
+  <div class="invite" id="invite" role="region" aria-labelledby="invite-caps" hidden>
+    <p class="invite__caps" id="invite-caps">Ahora tú</p>
+    <p class="invite__text" id="invite-text" aria-live="polite"></p>
+    <div class="invite__actions">
+      <a class="btn btn--primary" id="invite-go" href="#">Llévame allí</a>
+      <button type="button" class="btn" data-landing>Volver a la portada</button>
+      <button type="button" class="btn btn--icon" data-invite-close aria-label="Cerrar la invitación"><span aria-hidden="true">×</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="landing" id="landing">
+  <header class="band be-backdrop t-paper bd-bible-lands" data-loading>
+    <picture>
+      <source media="(max-width: 760px) and (orientation: portrait)" srcset="../assets/img/bible-lands-tall.webp">
+      <img class="be-backdrop__media" src="../assets/img/bible-lands-wide-1280.webp"
+        srcset="../assets/img/bible-lands-wide-1280.webp 1280w, ../assets/img/bible-lands-wide.webp 2560w" sizes="(min-width: 1024px) 72vw, 100vw"
+        alt="" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <div class="be-backdrop__tint"></div>
+    <div class="be-backdrop__veil band__veil"></div>
+    <div class="be-backdrop__content band__in">
+      <div class="top">
+        <a class="logo" href="./" aria-label="biblical-earth, portada">
+          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <path class="logo__leaf" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/>
+            <path class="logo__stem" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/>
+            <circle class="logo__olive" cx="20.5" cy="47" r="6"/><circle class="logo__olive" cx="31" cy="31.5" r="6"/><circle class="logo__olive" cx="47.5" cy="13.5" r="6"/>
+          </svg>
+          <span class="logo__name">biblical-earth</span>
+        </a>
+        <span class="spacer"></span>
+        <a class="top__link" href="#" data-enter-plain>Abrir el mapa <span aria-hidden="true">→</span></a>
+        <button type="button" class="top__icon top__icon--letra" id="letra" aria-pressed="false" title="Letra grande"><span aria-hidden="true">Aa</span><span class="sr-only">Letra grande</span></button>
+        <button type="button" class="top__icon" id="theme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span class="sr-only">Modo reunión: fondo oscuro y sin movimiento</span>
+        </button>
+      </div>
+
+      <div class="hero">
+        <p class="motto">La Biblia en el mapa y en el tiempo</p>
+        <span class="motto__rule" aria-hidden="true"></span>
+        <h1 id="title" tabindex="-1">¿Dónde y cuándo pasó lo que estás leyendo?</h1>
+        <p class="sub">Escribe una persona, un lugar, un capítulo o un año: el mapa se pone en su sitio y en su fecha<span class="sub__more">, y cada dato lleva su fuente</span>.</p>
+
+        <form class="search" id="search" role="search" autocomplete="off">
+          <label class="sr-only" for="q">Pregunta por una persona, un lugar, un capítulo o un año</label>
+          <div class="search__box">
+            <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" name="q" type="text" inputmode="search" enterkeyhint="go" spellcheck="false"
+              placeholder="Pedro, Babilonia, Hechos 16, 607 a.e.c."
+              role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggest" aria-describedby="search-help">
+            <button class="search__go" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20Z M9 4v13.5 M15 6.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span class="search__go-long">Ver en el mapa</span><span class="search__go-short" aria-hidden="true">Mapa</span>
+            </button>
+          </div>
+          <ul class="suggest" id="suggest" role="listbox" aria-label="Sugerencias" hidden></ul>
+          <p class="sr-only" id="search-help">Las sugerencias salen al escribir. Flechas para elegir, Intro para ir.</p>
+          <p class="sr-only" id="search-status" aria-live="polite"></p>
+        </form>
+
+        <div class="examples">
+          <span class="examples__lead" id="examples-lead">Prueba con</span>
+          <ul class="examples__list" id="examples" aria-labelledby="examples-lead"></ul>
+        </div>
+      </div>
+
+      <aside class="mine" id="mine" aria-labelledby="mine-caps" hidden>
+        <p class="mine__caps" id="mine-caps">Para ti, en este navegador</p>
+        <ul class="mine__list" id="mine-list"></ul>
+      </aside>
+    </div>
+    <p class="be-backdrop__credit band__credit">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a data-site-href="acerca.html#gracias" href="#">Créditos</a></p>
+  </header>
+
+  <main id="main">
+    <section class="asks" aria-labelledby="asks-title">
+      <div class="wrap">
+        <div class="asks__head">
+          <h2 class="asks__title" id="asks-title">Tres preguntas, tres maneras de mirar</h2>
+          <p class="asks__lead">Cada una abre el sitio en su respuesta: el mapa en una fecha, las relaciones entre personas o un capítulo con el mapa al lado.</p>
+        </div>
+        <ol class="cards" id="cards"></ol>
+        <details class="more" id="more">
+          <summary>Más preguntas</summary>
+          <ul class="more__list" id="more-list"></ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="zone" aria-labelledby="eras-title">
+      <div class="wrap">
+        <h2 class="zone__title" id="eras-title">¿En qué época pasó?</h2>
+        <p class="zone__lead">Nueve épocas, de Adán a la congregación cristiana, con los libros que las cuentan. Elige una y el mapa se pone en su principio.</p>
+        <ol class="eras" id="eras"></ol>
+      </div>
+    </section>
+
+    <section class="zone" aria-labelledby="tours-title">
+      <div class="wrap">
+        <h2 class="zone__title" id="tours-title">¿Prefieres que te lo cuenten paso a paso?</h2>
+        <p class="zone__lead">Recorridos guiados: cada parada mueve la fecha, el mapa y la ficha, y el relato se lee en wol.jw.org.</p>
+        <ul class="tours" id="tours"></ul>
+      </div>
+    </section>
+
+    <section class="zone" aria-labelledby="week-title">
+      <div class="wrap wrap--narrow">
+        <h2 class="zone__title" id="week-title">¿Qué lees esta semana?</h2>
+        <p class="zone__lead">Escríbelo tú y la portada te lo guardará aquí, con el mapa a un paso. Se guarda solo en este navegador.</p>
+        <form class="week" id="week-form" autocomplete="off">
+          <label class="week__label" for="week-input">Libro y capítulos</label>
+          <div class="week__row">
+            <input class="week__input" id="week-input" type="text" placeholder="Por ejemplo, Hechos 16 o Isaías 40-42" aria-describedby="week-msg">
+            <button class="btn btn--primary" type="submit">Guardar</button>
+          </div>
+          <p class="week__msg" id="week-msg" aria-live="polite"></p>
+        </form>
+        <div class="week-card" id="week-card" hidden></div>
+      </div>
+    </section>
+
+    <section class="zone" aria-labelledby="chance-title">
+      <div class="wrap">
+        <h2 class="zone__title" id="chance-title">¿Y si empiezas por cualquier momento?</h2>
+        <p class="zone__lead">Un suceso de los datos, con su fecha y su lugar. Nada salta solo al mapa: tú decides.</p>
+        <div class="chance">
+          <article class="moment" aria-labelledby="moment-caps">
+            <p class="caps" id="moment-caps">Un momento cualquiera</p>
+            <div class="moment__body" id="moment" aria-live="polite"></div>
+            <div class="moment__actions">
+              <a class="btn btn--primary" id="moment-go" href="#">Verlo en el mapa</a>
+              <button type="button" class="btn" id="moment-next">Otro momento</button>
+            </div>
+          </article>
+          <article class="moment moment--season" id="season" aria-labelledby="season-caps" hidden>
+            <p class="caps" id="season-caps">Por estas fechas</p>
+            <div class="moment__body" id="season-body"></div>
+            <div class="moment__actions">
+              <a class="btn btn--primary" id="season-go" href="#">Verlo en el mapa</a>
+              <a class="btn" data-site-href="calendario.html" href="#">El calendario de la Biblia</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="zone" aria-labelledby="quiz-title">
+      <div class="wrap wrap--narrow">
+        <h2 class="zone__title" id="quiz-title">¿Sabrías contestar esta?</h2>
+        <p class="zone__lead">Una pregunta de los recorridos, con tres respuestas y su fuente. Sin puntos: es para pensar.</p>
+        <div class="quiz" id="quiz"></div>
+      </div>
+    </section>
+
+    <section class="zone zone--quiet" aria-labelledby="sources-title">
+      <div class="wrap">
+        <h2 class="zone__title zone__title--small" id="sources-title">¿De dónde sale cada dato?</h2>
+        <ul class="sources">
+          <li><span class="tier tier--1" role="img" aria-label="Nivel 1"></span><span><b>La Traducción del Nuevo Mundo y wol.jw.org.</b> Enlazamos; no copiamos sus textos.</span></li>
+          <li><span class="tier tier--2" role="img" aria-label="Nivel 2"></span><span><b>Arqueología e investigación</b>, solo cuando jw.org las usa, y siempre con su fuente.</span></li>
+          <li><span class="tier tier--x" role="img" aria-label="Sin verificar"></span><span><b>Sin verificar:</b> se ve marcado, nunca escondido.</span></li>
+        </ul>
+        <p class="sources__count" id="counts"></p>
+        <p><a class="link" data-site-href="acerca.html#datos" href="#">Cómo trabajamos con las fuentes</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · Las miniaturas son capturas del propio sitio · <a data-site-href="acerca.html#gracias" href="#">Créditos</a></p>
+      <p><span>En español</span> · <span>Sitio estático, sin cuentas</span> · <a data-site-href="acerca.html#licencia" href="#">Código libre, GPL-3.0</a> · <a data-site-href="calendario.html" href="#">El calendario de la Biblia</a> · <a data-site-href="acerca.html" href="#">Qué es biblical-earth</a> · <span id="generated"></span></p>
+    </div>
+  </footer>
+</div>
+
+<p class="sr-only" id="announce" aria-live="polite"></p>
+</body>
+</html>

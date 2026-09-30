@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portada · fondos a pantalla completa y tratamientos</title>
+<link rel="icon" type="image/svg+xml" href="kit/favicon.svg">
+<!-- Dónde está el sitio (site/ al lado, o el publicado): el mismo guion que usan los seis prototipos. -->
+<script src="sitio.js"></script>
+<link rel="stylesheet" href="kit/tokens.css">
+<link rel="stylesheet" href="kit/components.css">
+<link rel="stylesheet" href="kit/reunion.css">
+<link rel="stylesheet" href="treatments.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 var(--fs-md)/1.5 var(--font-sans); }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  a { color: var(--link); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* ---------- Galería ---------- */
+  .galeria { max-width: 1320px; margin: 0 auto; padding: 32px 28px 64px; }
+  .galeria > header h1 { font: 600 var(--fs-4xl)/1.1 var(--font-serif); margin: 0 0 10px; }
+  .galeria > header p { max-width: 820px; color: var(--ink-2); margin: 0 0 10px; }
+  .pesos { border-collapse: collapse; margin: 18px 0 8px; font-variant-numeric: tabular-nums; }
+  .pesos th, .pesos td { border-bottom: 1px solid var(--line); padding: 8px 14px 8px 0; text-align: left; }
+  .pesos td.n { text-align: right; }
+  .pesos caption { text-align: left; font-weight: 600; padding-bottom: 6px; }
+  pre { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 12px 14px; overflow: auto; font: 12.5px/1.5 var(--font-mono); max-width: 980px; }
+  .ajustes { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin: 18px 0 0; }
+  .ajustes label { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+  .ajustes input { width: 20px; height: 20px; accent-color: var(--accent); }
+  .tratamiento { margin-top: 48px; }
+  .tratamiento > h2 { font: 600 var(--fs-3xl)/1.15 var(--font-serif); margin: 0 0 4px; }
+  .tratamiento > p { margin: 0 0 12px; color: var(--ink-2); max-width: 820px; }
+  .tratamiento h3 { font: 600 var(--fs-sm)/1.2 var(--font-sans); text-transform: uppercase; letter-spacing: var(--tracking-caps); color: var(--ink-3); margin: 22px 0 8px; }
+  .vivo { margin: 6px 0 0; }
+  .vivo a { display: inline-flex; align-items: center; min-height: 44px; }
+  .rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+  .rejilla--alta { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .muestra { margin: 0; }
+  .muestra a { display: block; border-radius: var(--r-md); text-decoration: none; color: inherit; }
+  .muestra a:hover .marco { box-shadow: var(--shadow-2); }
+  .marco { position: relative; overflow: hidden; border-radius: var(--r-md); border: 1px solid var(--line-2); aspect-ratio: 16 / 9; background: var(--paper-2); }
+  .rejilla--alta .marco { aspect-ratio: 430 / 900; }
+  .pantalla { position: absolute; top: 0; left: 0; width: 1280px; height: 720px; transform-origin: 0 0; transform: scale(var(--k, .25)); }
+  .rejilla--alta .pantalla { width: 430px; height: 900px; }
+  .muestra figcaption { font-size: var(--fs-sm); color: var(--ink-2); padding: 6px 2px 0; }
+  .muestra figcaption b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Contenido de ejemplo sobre el fondo (el mismo en la galería y a pantalla completa) ---------- */
+  .be-backdrop { width: 100%; height: 100%; }
+  .heroe { height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 6cqw; max-width: 58%; }
+  .heroe-antetitulo { color: var(--tier1); margin: 0; }
+  .heroe-titulo { font: 600 clamp(34px, 4.4cqw, 60px)/1.05 var(--font-serif); letter-spacing: -.01em; margin: 12px 0 14px; color: var(--ink); }
+  .heroe-sub { font: 400 clamp(17px, 1.5cqw, 21px)/1.5 var(--font-serif); color: var(--ink-2); margin: 0 0 22px; max-width: 600px; }
+  .heroe-busca { display: flex; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-lg); padding: 6px 6px 6px 14px; box-shadow: var(--shadow-1); max-width: 600px; }
+  .heroe-busca input, .heroe-busca .falso { flex: 1; min-width: 0; height: 44px; border: 0; background: none; font: 400 var(--fs-lg)/44px var(--font-sans); color: var(--ink); }
+  .heroe-busca .falso { color: var(--ink-3); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .heroe-busca input::placeholder { color: var(--ink-3); }
+  .heroe-busca .be-btn { height: 44px; padding: 0 18px; font-size: var(--fs-md); cursor: pointer; }
+  .heroe-entrar { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: 10px; font: 600 var(--fs-md)/1.2 var(--font-sans); color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  .t-vignette .heroe { margin: 0 auto; max-width: 760px; padding: 0 24px; align-items: center; text-align: center; }
+  .t-vignette .heroe-busca { width: 100%; }
+  .t-vignette .heroe-entrar { align-self: center; }
+  @container backdrop (max-width: 760px) {
+    .heroe, .t-vignette .heroe { max-width: none; justify-content: flex-start; padding: 64px 22px 0; }
+    .heroe-titulo { font-size: 34px; }
+    .heroe-sub { font-size: 17px; }
+  }
+
+  /* ---------- Vista a pantalla completa ---------- */
+  .previa { position: fixed; inset: 0; z-index: 10; }
+  .previa .be-backdrop { position: absolute; inset: 0; }
+  .previa-barra { position: absolute; z-index: 6; top: 10px; right: 12px; display: flex; gap: 8px; align-items: center; }
+  .previa-barra a, .previa-barra span { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 22px; background: color-mix(in srgb, var(--surface) 90%, transparent); border: 1px solid var(--line); color: var(--ink); font: 600 var(--fs-sm)/1 var(--font-sans); text-decoration: none; }
+  .previa-barra span { font-weight: 500; color: var(--ink-2); }
+  @media (max-width: 760px) { .previa-barra span { display: none; } }
+  iframe.be-backdrop__media { pointer-events: none; }
+  body.en-previa .galeria { display: none; }
+</style>
+</head>
+<body>
+<main class="galeria" id="galeria">
+  <header>
+    <h1>Fondos a pantalla completa para la portada</h1>
+    <p>Cuatro encuadres del mapa antiguo del sitio, capturados del mapa real sin la interfaz, y cuatro maneras de ponerles texto encima sin perder la calma del banner. Cada muestra lleva el título y la búsqueda de la portada de hoy para juzgar el contraste. Pulsa una muestra para verla a tamaño real; <kbd>Esc</kbd> vuelve aquí.</p>
+    <p>Todo sale de nuestro relieve (Natural Earth y datos de elevación de Mapzen), sin fotografías ni ilustraciones ajenas. Los créditos que debe llevar cada imagen están en <a href="CREDITS.md">CREDITS.md</a>; los tratamientos, en <a href="treatments.css">treatments.css</a>.</p>
+    <table class="pesos">
+      <caption>Lo que pesa cada imagen (WebP, calidad 80)</caption>
+      <thead><tr><th scope="col">Encuadre</th><th scope="col">Ancha 2560 × 1440</th><th scope="col">Ancha 1280 × 720</th><th scope="col">Alta 860 × 1800 (móvil)</th></tr></thead>
+      <tbody id="pesos"></tbody>
+    </table>
+    <p>Un portátil corriente (1× de densidad) descarga la de 1280; una pantalla de 2× o de 1440 píxeles, la de 2560; un móvil en vertical, la alta. Mientras llega, se ve el color medio de la imagen y una miniatura desenfocada de unos 130 bytes que va dentro del CSS, con el velo y el texto ya pintados.</p>
+    <details>
+      <summary>Cómo se monta</summary>
+<pre><code>&lt;div class="be-backdrop t-paper bd-paul-journeys"&gt;
+  &lt;picture&gt;
+    &lt;source media="(max-width: 760px) and (orientation: portrait)" srcset="img/paul-journeys-tall.webp"&gt;
+    &lt;img class="be-backdrop__media" alt="" fetchpriority="high" decoding="async"
+         srcset="img/paul-journeys-wide-1280.webp 1280w, img/paul-journeys-wide.webp 2560w" sizes="100vw"&gt;
+  &lt;/picture&gt;
+  &lt;div class="be-backdrop__tint"&gt;&lt;/div&gt;
+  &lt;div class="be-backdrop__veil"&gt;&lt;/div&gt;
+  &lt;div class="be-backdrop__content"&gt;… título, búsqueda …&lt;/div&gt;
+  &lt;p class="be-backdrop__credit"&gt;Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · &lt;a href="acerca.html#gracias"&gt;Créditos&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      <p>Sobre el mapa vivo, el <code>&lt;img&gt;</code> se cambia por el contenedor del mapa con <code>inert</code>: el velo y el tinte son capas encima y funcionan igual.</p>
+    </details>
+    <details>
+      <summary>Imagen o mapa vivo: lo que cuesta en un móvil lento</summary>
+      <p>Carga en frío en un móvil de 430 píxeles con red 4G lenta (1,6 Mbit/s, 150 ms de latencia) y la CPU cuatro veces más lenta, con el servidor comprimiendo como GitHub Pages:</p>
+      <table class="pesos">
+        <thead><tr><th scope="col">Portada</th><th scope="col">Descarga</th><th scope="col">Texto visible</th><th scope="col">Fondo completo</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Imagen a pantalla completa</th><td class="n">234 KB</td><td class="n">antes de 1 s</td><td class="n">2,0 s</td></tr>
+          <tr><th scope="row">Mapa vivo tras un velo</th><td class="n">3,7 MB</td><td class="n">antes de 1 s</td><td class="n">20,4 s</td></tr>
+          <tr><th scope="row">Portada de hoy</th><td class="n">3,6 MB</td><td class="n">9,4 s</td><td class="n">(tapa el mapa)</td></tr>
+        </tbody>
+      </table>
+      <p>El mapa vivo necesita data.json (845 KB comprimido), MapLibre (309 KB) y el relieve de las cuatro extensiones (1,8 MB) antes de pintarse. Una imagen puede hacer de fondo mientras tanto y dejar paso al mapa cuando esté listo.</p>
+      <p><img src="previews/load-filmstrip.webp" alt="Tres filas de capturas a 0,5, 1, 2, 4, 8 y 16 segundos: la imagen se ve entera a los 2 segundos; con el mapa vivo, la mitad de abajo sigue vacía a los 16; la portada de hoy muestra un armazón vacío hasta los 9 segundos." style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:var(--r-md)" loading="lazy"></p>
+    </details>
+    <div class="ajustes">
+      <label><input type="checkbox" id="movimiento"> Movimiento lento del fondo (se para con «reducir movimiento» y en modo reunión)</label>
+    </div>
+  </header>
+  <div id="tratamientos"></div>
+</main>
+<div class="previa" id="previa" hidden></div>
+
+<script>
+'use strict';
+const CANDIDATES = [
+  { id: 'bible-lands', name: 'Las tierras de la Biblia', detail: 'De Egipto a Mesopotamia', kb: [111, 43, 96] },
+  { id: 'paul-journeys', name: 'Los viajes de Pablo', detail: 'El Mediterráneo oriental', kb: [178, 64, 82] },
+  { id: 'galilee-judea', name: 'Galilea y Judea', detail: 'Del mar de Galilea al mar Muerto', kb: [70, 30, 65] },
+  { id: 'jerusalem', name: 'Jerusalén y sus alrededores', detail: 'El relieve de la ciudad y sus valles', kb: [75, 31, 31] },
+];
+const TREATMENTS = [
+  { id: 'paper', name: 'Papel hacia el texto', text: 'Como el banner: el relieve se funde en el papel por el lado del texto y se ve casi entero al otro lado.' },
+  { id: 'sage', name: 'Lavado de salvia', text: 'El pergamino toma el tono salvia de la paleta y un velo parejo lo deja en segundo plano en toda la pantalla.' },
+  { id: 'vignette', name: 'Viñeta', text: 'Un claro de papel en el centro para el título y la búsqueda; el relieve enmarca alrededor.' },
+  { id: 'engraving', name: 'Grabado', text: 'El relieve en gris verdoso y a poca opacidad, como una marca de agua. El más tranquilo; el mapa se intuye más que se ve.' },
+];
+const THEMES = [{ id: 'claro', name: 'Claro' }, { id: 'oscuro', name: 'Oscuro (modo reunión)' }];
+const SITE = window.PORTADA_SITIO.base;
+const LIVE_HASH = 'mapa=antiguo&ocultas=viajes,cartas,inciertos,hallazgos,pendientes';
+const CREDIT = `Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="${SITE}acerca.html#gracias">Créditos</a>`;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function heroe({ real }) {
+  const busca = real
+    ? `<form class="heroe-busca" role="search" action="${SITE}index.html"><label class="sr-only" for="q">Buscar</label><input id="q" name="q" type="search" autocomplete="off" placeholder="Busca una persona, un lugar, un capítulo o un año"><button class="be-btn be-btn--primary" type="submit">Explorar</button></form>`
+    : `<div class="heroe-busca"><span class="falso">Busca una persona, un lugar, un capítulo o un año</span><span class="be-btn be-btn--primary">Explorar</span></div>`;
+  const entrar = real ? `<a class="heroe-entrar" href="${SITE}index.html">Entrar en el mapa <span aria-hidden="true">→</span></a>` : `<span class="heroe-entrar">Entrar en el mapa <span aria-hidden="true">→</span></span>`;
+  return `<div class="be-backdrop__content heroe">
+    <p class="be-caps heroe-antetitulo">Para estudiar la Biblia</p>
+    <${real ? 'h1' : 'p'} class="heroe-titulo">Cada relato de la Biblia, en su lugar y en su tiempo</${real ? 'h1' : 'p'}>
+    <p class="heroe-sub">Un mapa y una línea de tiempo movidos por una sola fecha. Elige un momento y verás quién vivía, dónde estaba y qué pasaba alrededor.</p>
+    ${busca}${entrar}</div>`;
+}
+function fondo({ cand, tr, tema, forma, real }) {
+  const clases = `be-backdrop t-${tr} bd-${cand}${tema === 'oscuro' ? ' be-reunion' : ''}${document.getElementById('movimiento')?.checked ? ' be-backdrop--drift' : ''}`;
+  let media;
+  if (cand === 'live') media = `<iframe class="be-backdrop__media" title="" aria-hidden="true" tabindex="-1" inert src="${SITE}index.html#${LIVE_HASH}"></iframe>`;
+  else if (real) media = `<picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="img/${cand}-tall.webp"><img class="be-backdrop__media" alt="" fetchpriority="high" decoding="async" srcset="img/${cand}-wide-1280.webp 1280w, img/${cand}-wide.webp 2560w" sizes="100vw"></picture>`;
+  else media = `<img class="be-backdrop__media" alt="" loading="lazy" decoding="async" src="img/${cand}-${forma === 'alta' ? 'tall' : 'wide-1280'}.webp">`;
+  return `<div class="${clases}"${real ? ' data-loading' : ''}>${media}<div class="be-backdrop__tint"></div><div class="be-backdrop__veil"></div>${heroe({ real })}<p class="be-backdrop__credit">${real ? CREDIT : CREDIT.replace(/<a [^>]*>(.*?)<\/a>/, '$1')}</p></div>`;
+}
+
+function pintarGaleria() {
+  document.getElementById('pesos').innerHTML = CANDIDATES.map((c) => `<tr><th scope="row">${esc(c.name)}<br><span style="color:var(--ink-3);font-weight:400">${esc(c.detail)}</span></th>${c.kb.map((k) => `<td class="n">${k} KB</td>`).join('')}</tr>`).join('');
+  document.getElementById('tratamientos').innerHTML = TREATMENTS.map((t) => `<section class="tratamiento" aria-labelledby="t-${t.id}">
+    <h2 id="t-${t.id}">${esc(t.name)}</h2><p>${esc(t.text)}</p>
+    <p class="vivo">Sobre el mapa vivo: ${THEMES.map((th) => `<a href="#ver=live/${t.id}/${th.id}">${esc(th.name.toLowerCase())}</a>`).join(' · ')}</p>
+    ${THEMES.map((th) => `<h3>${esc(th.name)} · pantalla ancha</h3><div class="rejilla">${CANDIDATES.map((c) => muestra(c, t, th, 'ancha')).join('')}</div>`).join('')}
+    <h3>Móvil, claro y oscuro</h3><div class="rejilla rejilla--alta">${THEMES.map((th) => CANDIDATES.map((c) => muestra(c, t, th, 'alta')).join('')).join('')}</div>
+  </section>`).join('');
+  escalar();
+}
+function muestra(c, t, th, forma) {
+  const etiqueta = `${c.name}, ${t.name.toLowerCase()}, ${th.name.toLowerCase()}${forma === 'alta' ? ', móvil' : ''}`;
+  return `<figure class="muestra"><a href="#ver=${c.id}/${t.id}/${th.id}" aria-label="Ver a pantalla completa: ${esc(etiqueta)}"><div class="marco"><div class="pantalla" aria-hidden="true" inert>${fondo({ cand: c.id, tr: t.id, tema: th.id, forma })}</div></div></a>
+    <figcaption><b>${esc(c.name)}</b>${forma === 'alta' ? ` · ${th.id}` : ''} · ${forma === 'alta' ? c.kb[2] : c.kb[1]} KB</figcaption></figure>`;
+}
+const ro = new ResizeObserver((es) => { for (const e of es) { const p = e.target.querySelector('.pantalla'); if (p) p.style.setProperty('--k', e.contentRect.width / p.offsetWidth); } });
+function escalar() { document.querySelectorAll('.marco').forEach((m) => ro.observe(m)); }
+
+// ---------- Vista a pantalla completa: #ver=<encuadre|live>/<tratamiento>/<claro|oscuro> ----------
+window.__medidas = {};
+let ultimaVista = '';
+function mostrarPrevia() {
+  const m = /^#ver=([a-z-]+)\/([a-z]+)\/(claro|oscuro)$/.exec(location.hash);
+  const previa = document.getElementById('previa');
+  if (!m) {
+    const abierta = !previa.hidden;
+    previa.hidden = true; previa.innerHTML = ''; document.body.classList.remove('en-previa'); document.title = 'Portada · fondos a pantalla completa y tratamientos';
+    // De vuelta en la galería, el foco vuelve a la muestra que se abrió.
+    if (abierta && ultimaVista) document.querySelector(`#galeria a[href="${ultimaVista}"]`)?.focus();
+    return;
+  }
+  ultimaVista = location.hash;
+  const [, cand, tr, tema] = m;
+  const c = CANDIDATES.find((x) => x.id === cand), t = TREATMENTS.find((x) => x.id === tr);
+  if ((!c && cand !== 'live') || !t) { location.hash = ''; return; }
+  const nombre = `${c ? c.name : 'Mapa vivo'} · ${t.name} · ${tema}`;
+  document.title = `${nombre} · portada`;
+  document.body.classList.add('en-previa');
+  previa.hidden = false;
+  previa.innerHTML = `<nav class="previa-barra${tema === 'oscuro' ? ' be-reunion' : ''}" aria-label="Muestra"><span>${esc(nombre)}</span><a href="#" id="volver">Volver a la galería</a></nav>${fondo({ cand, tr, tema, forma: 'real', real: true })}`;
+  const bd = previa.querySelector('.be-backdrop');
+  const media = bd.querySelector('.be-backdrop__media');
+  const listo = (clave) => { if (!window.__medidas[clave]) window.__medidas[clave] = performance.now(); bd.removeAttribute('data-loading'); };
+  if (media.tagName === 'IMG') {
+    const fin = () => media.decode().catch(() => {}).then(() => listo('imagen'));
+    if (media.complete && media.naturalWidth) fin(); else media.addEventListener('load', fin, { once: true });
+    media.addEventListener('error', () => bd.removeAttribute('data-loading'), { once: true });
+  } else {
+    media.addEventListener('load', () => {
+      const d = media.contentDocument;
+      const s = d.createElement('style');
+      s.textContent = 'body > *:not(#app), #app > *:not(#mapa), #mapa > *:not(#mapa-gl) { display: none !important; } #mapa-gl { position: fixed !important; inset: 0 !important; } .maplibregl-marker, .maplibregl-control-container { display: none !important; }';
+      d.head.append(s);
+      const esperar = () => {
+        const gl = media.contentWindow.BE?.mapa?.gl;
+        if (!gl) { setTimeout(esperar, 100); return; }
+        gl.resize();
+        if (gl.loaded()) listo('mapa'); else gl.once('idle', () => listo('mapa'));
+      };
+      esperar();
+    }, { once: true });
+  }
+  document.getElementById('volver').focus();
+}
+addEventListener('keydown', (e) => { if (e.key === 'Escape' && !document.getElementById('previa').hidden) location.hash = ''; });
+addEventListener('hashchange', mostrarPrevia);
+document.getElementById('movimiento').addEventListener('change', (e) => {
+  document.querySelectorAll('.be-backdrop').forEach((b) => b.classList.toggle('be-backdrop--drift', e.target.checked));
+});
+pintarGaleria();
+mostrarPrevia();
+</script>
+</body>
+</html>

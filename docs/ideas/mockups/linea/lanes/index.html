@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carriles con nombre · línea de tiempo</title>
+<link rel="stylesheet" href="../../kit/fonts.css">
+<link rel="stylesheet" href="lanes.css">
+<script>
+  // El tema se decide antes de pintar: la dirección manda; si no dice nada, el del sistema.
+  (function () {
+    var m = /(?:^|[#&])tema=(claro|oscuro)/.exec(location.hash);
+    var oscuro = m ? m[1] === 'oscuro' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.theme = oscuro ? 'oscuro' : 'claro';
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#track" id="saltar">Saltar a las marcas</a>
+<a class="skip" href="#ruler" id="saltar-regla">Saltar a la regla del cursor</a>
+<header class="top">
+  <div class="top-main">
+    <h1 class="top-title">Carriles con nombre</h1>
+    <button type="button" id="btn-tema" aria-pressed="false">Tema oscuro</button>
+    <nav class="top-links" aria-label="Los cinco diseños">
+      <a href="../lanes/" data-lleva aria-current="page">Carriles con nombre</a>
+      <a href="../overview/" data-lleva>Panorama y detalle</a>
+      <a href="../list/" data-lleva>Cronología que se lee</a>
+      <a href="../clusters/" data-lleva>Grupos que se abren</a>
+      <a href="../minimal/" data-lleva>La de hoy, arreglada</a>
+      <a href="../">Índice</a>
+    </nav>
+  </div>
+  <p class="top-how">Cada marca es una pieza con su nombre entero, en el carril de su tipo, como los clips de un editor de vídeo. Donde los nombres chocan, el carril crece en filas; si llega al límite de filas de esa escala, lo que sobra se junta en un grupo que dice cuántos son y cómo se llaman.</p>
+  <p class="top-how">Arrastra la franja para moverte en el tiempo; los botones de escala, Ctrl + rueda o el pellizco cambian la escala; «Ir a» lleva el cursor a una fecha escrita. Con el teclado: Tab hasta las marcas, flechas para recorrerlas, Intro para elegir, Esc para soltar.</p>
+  <p class="top-how corto">Cada marca lleva su nombre entero; si no caben, el carril crece en filas y lo que sobra forma un grupo con sus nombres. Arrastra para moverte; pellizca o usa la escala para acercarte.</p>
+  <p class="top-rule" id="regla-clic"><span class="largo"><b>Al pulsar una marca</b>, queda elegida y la ficha dice qué es; el cursor se pone en el punto de la marca que señalas (con el teclado, en el punto de la marca más cercano a donde estaba). La escala y la vista no se mueven.</span><span class="corto"><b>Al tocar una marca</b>, queda elegida y el cursor va al punto que tocas. La escala y la vista no se mueven.</span></p>
+</header>
+
+<div class="shell" id="shell">
+<div class="toolbar">
+  <div class="tb-bar" role="toolbar" aria-label="Escala y vista">
+    <div class="scales" role="group" aria-label="Escala">
+      <button type="button" class="tb-btn scale-btn" data-scale="milenios">Milenios</button>
+      <button type="button" class="tb-btn scale-btn" data-scale="siglos">Siglos</button>
+      <button type="button" class="tb-btn scale-btn" data-scale="decadas">Décadas</button>
+      <button type="button" class="tb-btn scale-btn" data-scale="anos">Años</button>
+      <button type="button" class="tb-btn scale-btn" data-scale="meses">Meses</button>
+      <button type="button" class="tb-btn scale-btn" data-scale="dias">Días</button>
+    </div>
+    <div class="moves" role="group" aria-label="Mover la vista">
+      <button type="button" class="tb-btn tb-icon" id="btn-antes" aria-label="Antes: mueve la vista media pantalla atrás" title="Antes (Mayús + ←)">◀</button>
+      <button type="button" class="tb-btn tb-icon" id="btn-despues" aria-label="Después: mueve la vista media pantalla adelante" title="Después (Mayús + →)">▶</button>
+      <button type="button" class="tb-btn tb-icon" id="btn-alejar" aria-label="Alejar: una escala más amplia" title="Alejar (−)">−</button>
+      <button type="button" class="tb-btn tb-icon" id="btn-acercar" aria-label="Acercar: una escala más fina" title="Acercar (+)">+</button>
+    </div>
+    <div class="moves" role="group" aria-label="Mover el cursor un paso">
+      <button type="button" class="tb-btn tb-paso" id="paso-atras"></button>
+      <button type="button" class="tb-btn tb-paso" id="paso-adelante"></button>
+    </div>
+  </div>
+  <form class="ir" id="ir" autocomplete="off">
+    <label class="visually-hidden" for="ir-fecha">Ir a una fecha</label>
+    <input id="ir-fecha" type="text" inputmode="text" placeholder="Ir a: 607 a.e.c." aria-describedby="ir-ayuda">
+    <span id="ir-ayuda" class="visually-hidden">Escribe un año, como 33 o 607 a.e.c., o un día, como 14 nisán 33. El cursor va allí y la escala no cambia.</span>
+    <button type="submit" class="tb-btn">Ir</button>
+  </form>
+  <p class="readout"><span class="readout-label">Cursor</span> <b id="cursor-texto">50 e.c.</b> <span class="readout-span" id="span-texto"></span></p>
+</div>
+
+<main class="app">
+  <section class="strip" aria-label="Línea de tiempo">
+    <div class="ruler-row">
+      <div class="corner" aria-hidden="true"></div>
+      <div class="ruler" id="ruler" role="slider" tabindex="0" aria-label="Cursor de tiempo. Flechas: mover el cursor"
+           aria-valuemin="-4025" aria-valuemax="101" aria-valuenow="50" aria-valuetext="50 e.c."></div>
+    </div>
+    <div class="lanes" id="lanes">
+      <div class="lanes-inner" id="lanes-inner">
+        <div class="heads" id="heads"></div>
+        <div class="track" id="track"></div>
+      </div>
+    </div>
+    <p class="strip-foot" id="strip-foot"></p>
+  </section>
+  <aside class="inspector" id="inspector" aria-label="Ficha"></aside>
+</main>
+</div>
+<p class="visually-hidden" id="vivo" aria-live="polite"></p>
+
+<script src="../comun.js"></script>
+<script src="../datos.js"></script>
+<script src="lanes.js"></script>
+</body>
+</html>
