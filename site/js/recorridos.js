@@ -300,7 +300,9 @@ function salir() {
 }
 BE.inicios.push(iniciar);
 BE.pintores.push(seguirSeleccion);
-BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id ? String(R.paso + 1) : null),
+// La parada solo va en la dirección mientras el recorrido está elegido: al quitarlo (Atrás a la portada, otra
+// selección) no se queda colgada hasta el fotograma que lo cierra.
+BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id && E.sel?.tipo === 'recorrido' && E.sel.id === R.id ? String(R.paso + 1) : null),
   leer(v) { const n = v ? Math.max(0, (+v || 1) - 1) : null; if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n; } });
 
 BE.recorridos = { ficha: fichaRecorrido, irA, pasoDe, salir, presentar, avanzar };
