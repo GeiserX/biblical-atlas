@@ -48,5 +48,6 @@ relations:
   status: verified
 distinct_from:
 - sofonias-profeta
+- sofonias-padre-de-josias
 checked_on: '2026-09-30'
 status: verified

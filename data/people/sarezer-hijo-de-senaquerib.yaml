@@ -5,6 +5,8 @@ names:
 - name: Sarézer
 perspicacia: 1200003954#1
 disambiguation: El hijo de Senaquerib; no el Sarézer que Betel envió a Jerusalén después del destierro.
+distinct_from:
+- sarezer-de-betel
 summary: Hijo del rey asirio Senaquerib. Junto con Adramélec mató a espada a su padre en el templo de Nisroc y escapó a Ararat.
 reason: Perspicacia «Sarézer», núm. 1; 2Re 19:37.
 sources:
