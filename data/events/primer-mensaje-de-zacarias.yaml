@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primer-mensaje-de-zacarias
+title: Zacarías llama al pueblo a volver a Jehová
+type: speech
+date:
+  from: -519
+  to: -519
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: hesván de 520 a.e.c.
+  detail:
+    month: hesvan
+narrative_order:
+  series: zacarias
+  order: 1001
+places:
+- jerusalen
+people:
+- zacarias-profeta
+present:
+- zacarias-profeta
+roles:
+  zacarias-profeta: spoke
+passages:
+- Zac 1:1-6
+summary: Zacarías empieza a profetizar. Recuerda que Jehová castigó a los antepasados que no escucharon a los profetas y pide
+  al pueblo que vuelva a él, para que él vuelva a ellos.
+reason: Zac 1:1 da el mes octavo del año segundo de Darío, que Perspicacia «Zacarías, Libro de» sitúa en octubre y noviembre
+  de 520 a.e.c. La Tabla de los libros pone el libro en Jerusalén.
+sources:
+- zacarias-1
+- it-zacarias-libro
+- it-zacarias
+- it-dario
+- tnm-tabla
+- w07-ageo-y-zacarias
+links:
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+- title: Zacarías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

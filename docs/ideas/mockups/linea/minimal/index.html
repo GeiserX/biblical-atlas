@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Línea de tiempo · La de hoy, arreglada</title>
+<link rel="stylesheet" href="../../kit/fonts.css">
+<link rel="stylesheet" href="linea.css">
+</head>
+<body>
+<a class="saltar" href="#carriles" id="saltar">Saltar a las marcas</a>
+<header class="cabecera">
+  <div class="cabecera-texto">
+    <h1>La de hoy, arreglada</h1>
+    <p>La línea de hoy con sus carriles, su regla y sus mandos. Cada carril crece en filas para que ningún nombre se tape ni se corte.</p>
+    <p>Arrastra la franja para ir en el tiempo y baja por los carriles con la rueda o el dedo. La escala solo cambia con sus botones, Ctrl + rueda o pellizcando; «Carriles» muestra u oculta cada carril. Teclado: Tab a las marcas, flechas izquierda y derecha por una fila, arriba y abajo de fila en fila, Intro elige.</p>
+    <p class="regla-clic"><b>Al pulsar una marca</b> se elige y se abre su ficha. El cursor entra en la marca por el punto que señalas (con el teclado, por el más cercano). La escala y la vista no se mueven.</p>
+  </div>
+  <nav class="otros" aria-label="Los cinco diseños">
+    <a href="../lanes/" data-lleva>Carriles con nombre</a>
+    <a href="../overview/" data-lleva>Panorama y detalle</a>
+    <a href="../list/" data-lleva>Cronología que se lee</a>
+    <a href="../clusters/" data-lleva>Grupos que se abren</a>
+    <a href="../minimal/" data-lleva aria-current="page">La de hoy, arreglada</a>
+    <a href="../">Índice</a>
+  </nav>
+</header>
+
+<main class="escena">
+  <section class="linea" id="linea" aria-label="Línea de tiempo">
+    <div class="barra">
+     <div class="mandos" role="toolbar" aria-label="Mandos de la línea de tiempo">
+      <div class="grupo">
+        <button type="button" class="icono" id="anterior" aria-label="Marca anterior" title="Marca anterior (Mayús + ←)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5 9 12l10 7z"/></svg></button>
+        <button type="button" class="icono reproducir" id="reproducir" aria-label="Reproducir" aria-pressed="false" title="Reproducir"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="p-play" d="M8 5v14l11-7z"/><path class="p-pausa" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
+        <button type="button" class="icono" id="siguiente" aria-label="Marca siguiente" title="Marca siguiente (Mayús + →)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l10 7-10 7z"/></svg></button>
+      </div>
+      <div class="escalas" role="group" aria-label="Escala">
+        <!-- botones de escala: los pone linea.js -->
+      </div>
+      <div class="grupo" role="group" aria-label="Mover el cursor un paso">
+        <button type="button" class="paso" id="paso-atras"></button>
+        <button type="button" class="paso" id="paso-adelante"></button>
+      </div>
+     </div>
+      <label class="escala-movil"><span class="sr">Escala</span><select id="escala-select" aria-label="Escala"></select></label>
+      <form class="ir" id="ir" autocomplete="off">
+        <label class="sr" for="ir-fecha">Ir a una fecha</label>
+        <input id="ir-fecha" type="text" inputmode="text" placeholder="Ir a: 607 a.e.c." aria-describedby="ir-ayuda">
+        <span id="ir-ayuda" class="sr">Escribe un año, como 33 o 607 a.e.c., o un día, como 14 nisán 33. El cursor va allí y la escala no cambia.</span>
+        <button type="submit">Ir</button>
+      </form>
+      <details class="menu-carriles" id="menu-carriles">
+        <summary>Carriles</summary>
+        <div class="menu-lista" id="menu-lista" role="group" aria-label="Carriles que se ven"></div>
+      </details>
+      <p class="lectura" id="lectura"></p>
+      <div class="minimapa" id="minimapa" role="slider" tabindex="0" aria-label="Posición de la vista en toda la historia" aria-valuemin="-4025" aria-valuemax="100"></div>
+      <button type="button" class="tema" id="tema" aria-pressed="false">Tema oscuro</button>
+    </div>
+    <div class="cuerpo" id="cuerpo">
+      <div class="regla" id="regla">
+        <div class="regla-esquina">Carriles</div>
+        <div class="regla-pista" id="regla-pista" tabindex="0" role="slider" aria-label="Cursor de fecha: flechas para moverlo, Mayús + flechas para mover la vista, + y − para la escala" aria-valuemin="-4025" aria-valuemax="100"></div>
+      </div>
+      <div class="carriles" id="carriles" role="group" aria-label="Marcas de la vista. Flechas: izquierda y derecha por una fila, arriba y abajo de fila en fila. Intro: elegir."></div>
+      <p class="sin-nada" id="sin-nada"></p>
+      <div class="cursor-linea" id="cursor-linea" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <aside class="ficha" id="ficha" aria-label="Ficha de la marca elegida">
+    <div class="ficha-vacia" id="ficha-vacia">
+      <p class="ficha-tipo">Nada elegido</p>
+      <p>Pulsa una marca de la franja para ver qué es. La escala y la vista se quedan donde están.</p>
+    </div>
+    <div class="ficha-llena" id="ficha-llena" hidden></div>
+  </aside>
+</main>
+<p class="sr" id="vivo" aria-live="polite"></p>
+
+<script src="../comun.js"></script>
+<script src="../datos.js"></script>
+<script src="linea.js"></script>
+</body>
+</html>

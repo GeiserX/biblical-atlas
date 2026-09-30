@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: josias-hijo-de-sofonias
+name: Josías (hijo de Sofonías)
+names:
+- name: Josías
+perspicacia: 1200002525#2
+disambiguation: El hijo de Sofonías que vivía en Jerusalén después del destierro; no el rey Josías de Judá, hijo de Amón.
+distinct_from:
+- josias
+date:
+  from: -518
+  to: -517
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+summary: Hijo de Sofonías que vivía en Jerusalén tras el destierro. Zacarías tenía que entrar en su casa con los que llegaban
+  de Babilonia. Perspicacia lo da como probablemente el mismo Hen.
+reason: Perspicacia «Josías», núm. 2; Zac 6:10.
+sources:
+- it-josias
+- zacarias-6
+links:
+- title: 'Perspicacia: «Josías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
+  type: perspicacia
+- title: Zacarías 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/6
+  type: bible
+relations:
+- type: kin
+  person: sofonias-padre-de-josias
+  word: father
+  inferred: false
+  sources:
+  - zacarias-6
+  - it-sofonias
+  reason: Zac 6:10 lo llama Josías hijo de Sofonías.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - it-josias
+  - zacarias-6
+  reason: 'Perspicacia «Josías», núm. 2: residía en Jerusalén después del exilio. Zac 6:10 solo nombra su casa.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

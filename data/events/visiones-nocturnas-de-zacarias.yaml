@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: visiones-nocturnas-de-zacarias
+title: Zacarías recibe ocho visiones
+date:
+  from: -518
+  to: -518
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de sebat de 519 a.e.c. (la primera visión)
+  detail:
+    month: sebat
+    day: 24
+narrative_order:
+  series: zacarias
+  order: 1007
+places:
+- jerusalen
+people:
+- zacarias-profeta
+present:
+- zacarias-profeta
+passages:
+- Zac 1:7-6:8
+summary: 'Un ángel muestra y explica a Zacarías ocho visiones, de los jinetes entre los mirtos a los cuatro carros. Josué
+  recibe ropa limpia frente a Satanás y Zorobabel acabará el templo: Jehová respalda la obra.'
+reason: Zac 1:7 fecha la primera el 24 de sebat del año segundo de Darío, 519 según Perspicacia «Zacarías, Libro de», y no
+  da otra fecha hasta 7:1; las ocho llegan a 6:8. Jerusalén se deduce de Esd 5:1.
+sources:
+- zacarias-1
+- it-zacarias-libro
+- w07-ageo-y-zacarias
+- it-mirto
+- it-cuerno
+- it-dario
+- tnm-tabla
+- zacarias-2
+- zacarias-3
+- zacarias-4
+- zacarias-5
+- zacarias-6
+- si-zacarias
+- w22-lo-que-zacarias-vio
+- w17-visiones-de-zacarias
+- w17-cuatro-carros-y-una-corona
+- it-jesua
+- it-rama-brote
+- it-zacarias
+- esdras-5
+links:
+- title: 'Perspicacia: «Zacarías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004682
+  type: perspicacia
+- title: Zacarías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

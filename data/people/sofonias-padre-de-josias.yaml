@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sofonias-padre-de-josias
+name: Sofonías (padre de Josías)
+names:
+- name: Sofonías
+perspicacia: 1200004696#4
+disambiguation: El padre de Josías, o Hen, en días de Zacarías; no el profeta Sofonías, hijo de Cusí, ni el sacerdote hijo
+  de Maaseya.
+distinct_from:
+- sofonias-profeta
+summary: Judío de la época del regreso del destierro, conocido solo como padre de Josías, a quien Zac 6:14 llama probablemente
+  Hen. Su hijo aportó metales para la corona de Josué.
+reason: Perspicacia «Sofonías», núm. 4; Zac 6:10, 14.
+sources:
+- it-sofonias
+- zacarias-6
+links:
+- title: 'Perspicacia: «Sofonías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004696
+  type: perspicacia
+- title: Zacarías 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jedaya-de-la-corona
+name: Jedayá
+names:
+- name: Jedayá
+perspicacia: 1200002356#8
+disambiguation: El desterrado que volvió y aportó oro y plata para la corona de Josué. Perspicacia no lo identifica con ninguno
+  de los sacerdotes llamados igual.
+date:
+  from: -518
+  to: -517
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+summary: Uno de los desterrados que volvieron de Babilonia con Heldái y Tobiya. Con su oro y su plata se hizo la corona que
+  Zacarías puso a Josué, el sumo sacerdote, y que quedó en el templo como recuerdo.
+reason: Perspicacia «Jedayá», núm. 8; Zac 6:10, 11, 14. La Atalaya de octubre de 2017 lo pone entre los que acababan de llegar
+  de Babilonia.
+sources:
+- it-jedaya
+- zacarias-6
+- w17-cuatro-carros-y-una-corona
+links:
+- title: 'Perspicacia: «Jedayá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002356
+  type: perspicacia
+- title: Zacarías 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/6
+  type: bible
+relations:
+- type: lived_in
+  place: babilonia
+  inferred: true
+  sources:
+  - zacarias-6
+  - it-jedaya
+  reason: 'Zac 6:10: viene de Babilonia con lo que dio el pueblo desterrado. Perspicacia «Jedayá», núm. 8, lo cuenta entre
+    los exiliados que volvieron.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: heldai-de-la-corona
+  word: companion
+  date:
+    from: -518
+    to: -517
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+  inferred: false
+  sources:
+  - zacarias-6
+  reason: 'Zac 6:10: Heldái, Tobiya y Jedayá traen juntos de Babilonia lo que dieron los desterrados.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

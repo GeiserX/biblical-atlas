@@ -38,6 +38,18 @@ names:
 - name: Mactés
   note: Al parecer, un sector cerca de la Puerta del Pescado y del Segundo Barrio (Sof 1:11). Significa «mortero». Perspicacia
     recoge que suele situarse en el valle del Tiropeón, quizá en su parte alta, no en el Cedrón.
+- name: Puerta de Benjamín
+  note: Puerta que daba hacia Benjamín (Jer 37:13; 38:7; Zac 14:10). Perspicacia «Puerta» recoge que unos la igualan con la
+    de las Ovejas y otros con la de la Inspección.
+- name: Primera Puerta
+  note: Solo en Zac 14:10, como límite de la ciudad. Perspicacia «Puerta» recoge que unos la igualan con la Puerta de la Ciudad
+    Vieja y otros con la de Efraín.
+- name: Puerta de la Esquina
+  note: En el ángulo noroeste de la muralla, al oeste de la Puerta de Efraín; Uzías levantó una torre junto a ella (2Re 14:13;
+    2Cr 26:9; Zac 14:10).
+- name: Torre de Hananel
+  note: Torre del muro norte, cerca de la Torre de Meah y de la Puerta de las Ovejas; se reconstruyó con Nehemías (Zac 14:10;
+    Jer 31:38; Ne 3:1; 12:39). Perspicacia «Torre».
 - name: Montículo
   note: Construcción de la Ciudad de David, dentro de ella o junto a ella, desde la que David edificó (2Sa 5:9). La nota la
     llama también Miló. Perspicacia no sabe qué era exactamente.
@@ -139,6 +151,13 @@ sources:
 - it-mactes
 - sofonias-3
 - it-sofonias-libro
+- zacarias-1
+- zacarias-2
+- zacarias-7
+- zacarias-8
+- zacarias-9
+- zacarias-12
+- zacarias-14
 - it-monticulo
 - 2-samuel-6
 - 2-samuel-11
