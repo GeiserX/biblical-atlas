@@ -69,6 +69,12 @@ after(async () => { await browser?.close(); server?.close(); if (tmp) fs.rmSync(
 async function openPage(screen = DESKTOP, { hash = '', storage = null, route = null, wait = true } = {}) {
   const context = await browser.newContext({ deviceScaleFactor: 1, ...screen });
   context.setDefaultTimeout(8000);
+  // A slow device on demand: with window.__lento = ms, every frame is painted that much later (the map loading, a
+  // mid-range phone).
+  await context.addInitScript(() => {
+    const raf = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = (cb) => raf(() => { if (window.__lento) setTimeout(() => cb(performance.now()), window.__lento); else cb(performance.now()); });
+  });
   if (storage) await context.addInitScript((s) => { if (!sessionStorage.getItem('be-init')) { for (const [k, v] of Object.entries(s)) localStorage.setItem(k, v); sessionStorage.setItem('be-init', '1'); } }, storage);
   const page = await context.newPage();
   page.pageErrors = [];
@@ -92,7 +98,13 @@ async function type(page, text) {
   await q.pressSequentially(text, { delay: 5 });
   await page.waitForTimeout(100);
 }
-async function settle(page) { await page.waitForTimeout(900); }
+/** Waits for the page to settle after a press or a Back: two painted frames (every painter, the history's too, has seen
+    the change) and base.js's address written. It waits on those, never on a fixed time; the assertions come after. */
+async function settle(page) {
+  // Two frames asked for now run after the frames the press already asked for, slow or not.
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
+  await page.waitForFunction(() => window.BE?.D && location.hash === `#${window.BE.textoHash()}`, null, { timeout: 3000 }).catch(() => {});
+}
 
 test('a cold open shows the landing over an inert site; an address opens its view and no landing', async () => {
   const page = await openPage();
@@ -284,10 +296,84 @@ test('a search row enters with one entry; Back gives the box back with its text,
   }
 });
 
+test('clicking or tapping any row enters that row, not the first', async () => {
+  for (const screen of [DESKTOP, PHONE]) {
+    const page = await openPage(screen);
+    await type(page, 'Corin');
+    const r = (await rows(page))[1];
+    const row = page.locator('#portada-lista [data-i="1"]');
+    if (screen === PHONE) await row.tap(); else await row.click();
+    await settle(page);
+    const s = await state(page);
+    assert.equal(s.up, false);
+    assert.equal(await page.evaluate(() => window.BE.nombreSel(window.BE.E.sel)), r.tit, `${screen === PHONE ? 'tap' : 'click'} on row 2`);
+  }
+});
+
+test('on a slow device one press still adds one entry, and one Back returns', async () => {
+  // Every frame 1 s late: the first frame of the destination comes long after the press, as with the map loading.
+  const cases = [
+    ['ej-pedro', (s) => s.sel === 'persona:pedro'],
+    ['tarjeta-1', (s) => s.sel === 'lugar:jerusalen'],
+    ['tarjeta-2', (s) => /conexion=persona:loida~persona:pablo/.test(s.hash)],
+    ['era-destierro-y-regreso', (s) => s.sel === 'periodo:destierro-y-regreso'],
+    ['rec-pedro', (s) => s.sel === 'recorrido:pedro' && /paso=1/.test(s.hash)],
+    ['q:Pedro', (s) => s.sel === 'persona:pedro'],
+  ];
+  for (const [p, ok] of cases) {
+    const page = await openPage(PHONE);
+    const before = await state(page);
+    await page.evaluate(() => { window.__lento = 1000; });
+    if (p.startsWith('q:')) { await type(page, p.slice(2)); await page.keyboard.press('Enter'); }
+    else await page.locator(`[data-p="${p}"]`).tap();
+    await settle(page);
+    const s = await state(page);
+    assert.ok(ok(s), `${p} landed on ${JSON.stringify(s)}`);
+    assert.equal(s.hist, before.hist + 1, `${p} added ${s.hist - before.hist} entries`);
+    await page.goBack();
+    await settle(page);
+    assert.equal((await state(page)).up, true, `${p}: one Back did not return to the landing`);
+    assert.deepEqual(page.pageErrors, [], p);
+  }
+  // The logo from a view with a selection: one entry, and one Back gives the selection again.
+  const page = await openPage(DESKTOP, { hash: 'sel=persona:pablo&t=34.5000' });
+  const before = await state(page);
+  await page.evaluate(() => { window.__lento = 1000; });
+  await page.locator('#inicio').click();
+  await settle(page);
+  assert.equal((await state(page)).up, true);
+  assert.equal((await state(page)).hist, before.hist + 1, 'the logo added more than one entry');
+  await page.goBack();
+  await settle(page);
+  const b = await state(page);
+  assert.deepEqual([b.up, b.sel], [false, 'persona:pablo']);
+});
+
+test('Back before the data: the landing comes back without «Abriendo el mapa…», and nothing throws', async () => {
+  let release;
+  const gate = new Promise((ok) => { release = ok; });
+  const page = await openPage(DESKTOP, { wait: false, route: async (r) => { await gate; await r.continue(); } });
+  await page.locator('[data-p="ej-pedro"]').click();
+  assert.match(await page.locator('#portada-aviso').textContent(), /Abriendo el mapa/);
+  await page.goBack();
+  await page.waitForFunction(() => /portada=1/.test(location.hash));
+  await page.evaluate(() => new Promise((ok) => requestAnimationFrame(() => requestAnimationFrame(ok))));
+  assert.deepEqual(page.pageErrors, [], 'Back before the data applied an address with no data');
+  assert.equal(await page.locator('#portada-aviso').textContent(), '');
+  assert.equal(await page.locator('[aria-busy="true"]').count(), 0);
+  release();
+  await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
+  await settle(page);
+  const s = await state(page);
+  assert.deepEqual([s.up, s.sel], [true, null]);
+  assert.equal(await page.locator('#portada-aviso').textContent(), '');
+  assert.deepEqual(page.pageErrors, []);
+});
+
 test('«Seguir donde lo dejaste» holds the last view, applies it exactly, and «Olvidar» forgets it', async () => {
   const page = await openPage(DESKTOP, { hash: 'sel=lugar:corinto&t=50.5000' });
   await page.evaluate(() => { window.BE.seleccionar({ tipo: 'persona', id: 'pablo' }, { mover: false, encuadrar: false }); });
-  await page.waitForTimeout(1000);
+  await page.waitForFunction(() => /sel=persona:pablo/.test(localStorage.getItem('biblical-earth:ultima') || ''));
   const guardado = JSON.parse(await page.evaluate(() => localStorage.getItem('biblical-earth:ultima')));
   assert.match(guardado.hash, /sel=persona:pablo/);
   assert.match(guardado.texto, /Pablo/);
