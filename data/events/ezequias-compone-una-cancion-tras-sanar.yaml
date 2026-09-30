@@ -11,8 +11,8 @@ date:
   chronology: tnm
   text: c. 732 a.e.c.
 narrative_order:
-  series: isaias
-  order: 38009
+  series: 2-reyes
+  order: 20011
 places:
 - jerusalen
 present: []
@@ -38,5 +38,10 @@ links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
   type: perspicacia
+history:
+- date: '2026-09-30'
+  change: 'Pasa a la serie de 2 Reyes, con el orden 20011, para seguir entre la muerte de los 185.000 y la visita de Babilonia:
+    los sucesos de Isaías 36-39 van ahora en esa serie.'
+  source: 2-reyes-20
 checked_on: '2026-09-30'
 status: verified
