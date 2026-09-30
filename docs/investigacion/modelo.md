@@ -458,7 +458,7 @@ Los dos verbos salen ya resueltos, con los nombres y el cargo puestos: «su padr
 
 Que Bartolomé y Natanael salgan como alias en el grafo es trabajo del carril del grafo. Esta ola le deja el dato: `type: same_as`, `certainty` y su verbo.
 
-El [registro](registro/README.md) escribe cada relación con su verbo en español y con su propio `checked_on`.
+El [registro](registro/index.md) escribe cada relación con su verbo en español y con su propio `checked_on`.
 
 ## 12. Enlaces compartidos
 

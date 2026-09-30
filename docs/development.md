@@ -1,0 +1,59 @@
+# Desarrollo
+
+Cómo compilar, validar y proponer un cambio. Las reglas de la casa, completas, están en [CONTRIBUTING.md](https://github.com/GeiserX/biblical-atlas/blob/main/CONTRIBUTING.md); aquí va lo que se ejecuta.
+
+## Compilar y comprobar
+
+Python 3.12 o más nuevo y PyYAML:
+
+```bash
+pip install -r requirements.txt
+python3 scripts/build.py          # data/ -> site/data.json, site/data.js, site/stats.json, dist/ y docs/investigacion/registro/
+python3 scripts/validate.py       # esquema, fuentes, fechas, calendario; debe dar 0 errores
+python3 scripts/validate.py --links   # y además cada URL (lento: medio segundo por petición)
+python3 scripts/review.py --fail  # lo que lleva más de un año sin releer
+python3 -m http.server -d site    # y abrir http://localhost:8000
+```
+
+Las pruebas de los scripts:
+
+```bash
+python3 scripts/test_build.py
+python3 scripts/test_apply.py
+python3 scripts/test_validate.py
+python3 scripts/migration/test_migrate.py
+python3 scripts/videos/test_videos.py
+python3 scripts/bible_coverage.py
+```
+
+`build.py --out DIR` escribe en otra carpeta sin tocar `site/`, `dist/` ni `docs/`; `build.py --data DIR` y `validate.py --data DIR` leen otra copia de `data/`. El sitio carga esa copia con `index.html?datos=_local/<nombre>/data.json`. Cada script está explicado en [`scripts/README.md`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/README.md).
+
+## Esta documentación
+
+Es un sitio [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) que se publica en `/docs/` del mismo artefacto que la aplicación. `mkdocs.yml` fija `site_dir` en `site/docs`, así que una compilación suelta nunca borra la aplicación.
+
+```bash
+pip install -r docs/requirements-docs.txt
+python3 scripts/build.py     # el registro de investigación lo escribe build.py
+mkdocs build --strict        # escribe site/docs/; un enlace roto falla
+mkdocs serve                 # http://127.0.0.1:8000/docs/
+```
+
+Las páginas del registro (`docs/investigacion/registro/`) las genera `build.py`: para cambiarlas se cambia el YAML o `build.py`, nunca el `.md`. El esquema, el protocolo de lectura y las notas de trabajo (`docs/investigacion/modelo.md`, `versiculos.md`, `entre-libros.md`, `videos-jw.md`, `docs/ideas/`, `docs/logo/`, `docs/verde/`) se leen en GitHub y no se publican en el sitio.
+
+## Contribuir
+
+Lo que más ayuda es corregir o ampliar datos con su fuente. Lo segundo, mejorar el sitio.
+
+1. Los datos viven en `data/`, un YAML por entidad. Las claves y los valores cerrados van en inglés; los nombres, los textos y los ids, en español con tildes.
+2. Cada hecho lleva `sources`, `reason`, `checked_on` y `status`, y cada hecho anidado también. Una fuente externa solo entra si jw.org la ha usado, marcada `level: 2` y junto a la de nivel 1 que la cita.
+3. Resúmenes cortos, con tus palabras: la validación rechaza más de 40 palabras y la revisión comprueba que no hay ocho palabras seguidas de la fuente.
+4. Un lugar sin ubicación segura lleva `candidates`, no un punto. Una fecha calculada lleva `type: derived`, la cuenta en `note` y `status: pending`.
+5. Si añades un lugar o una persona, añade también cómo se nombra en los vídeos (`scripts/videos/place_names/`, `scripts/videos/people_names/`).
+6. Antes del PR: `build.py`, `validate.py --links` y las pruebas de arriba. En cada PR el CI compila, valida el esquema y construye esta documentación en modo estricto; los enlaces se comprueban en `main` y cada semana.
+
+Lo que no entra: texto, mapas o imágenes copiados de jw.org; subtítulos de vídeos; datos de otras confesiones; fechas sin fuente; nombres de personas reales, direcciones o rutas de máquinas. Los commits siguen Conventional Commits y explican el porqué. Antes de proponer algo que contradiga lo decidido, lee [Decisiones](decisiones.md); lo que queda por hacer está en la [Hoja de ruta](hoja-de-ruta.md).
+
+## Publicar
+
+`pages.yml` corre en cada push a `main`: instala las dependencias, compila los datos, construye la documentación con `mkdocs build --strict`, comprueba que cada fichero de `site/` sigue en su sitio y que `site/docs/index.html` existe, y sube `site/` a GitHub Pages. `validar.yml` corre en cada PR, en `main` y cada lunes (con `--links` y `review.py --fail`). `docs.yml` corre en cada PR y construye la documentación en modo estricto.

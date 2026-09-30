@@ -1,9 +1,14 @@
+---
+search:
+  exclude: true
+---
+
 <!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->
 
-# Registro de investigación: fuentes
+# Fuentes
 
 > Este fichero lo genera `scripts/build.py` a partir de `data/`. No lo edites a mano: cambia el YAML y vuelve a generarlo.
-> El método está en [../README.md](../README.md) y el índice del registro en [README.md](README.md).
+> Registro de investigación. El método está en [docs/investigacion/README.md](https://github.com/GeiserX/biblical-atlas/blob/main/docs/investigacion/README.md) y el índice del registro en [index.md](index.md).
 
 «Publicado» es el año de la publicación cuando la página de wol.jw.org lo muestra; si no lo muestra, pone «sin dato».
 

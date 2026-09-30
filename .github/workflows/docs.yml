@@ -1,0 +1,40 @@
+name: docs
+
+# Comprueba en cada pull request que la documentación compila en modo estricto: un enlace roto, una
+# página que falta o una página a la que nadie llega paran el PR antes de llegar al sitio. La
+# publicación la hace pages.yml, que construye la documentación en site/docs/ junto a la aplicación.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build (strict)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Este trabajo nunca hace push; un token persistido lo leerían pip y cualquier plugin de MkDocs.
+          persist-credentials: false
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            docs/requirements-docs.txt
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt -r docs/requirements-docs.txt
+
+      # El registro de investigación lo escribe build.py: se regenera antes de compilar el sitio.
+      - name: Compilar los datos
+        run: python3 scripts/build.py
+
+      # mkdocs.yml ya lleva `strict: true`; la opción aquí lo mantiene aunque alguien quite esa línea.
+      - name: Compilar la documentación
+        run: mkdocs build --strict
