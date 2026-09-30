@@ -1,0 +1,165 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: barac-contra-sisara
+name: Barac contra Sísara
+person: barac
+reference: Jue 4:6-22
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+companions: []
+summary: Débora llama a Barac desde Quedes y va con él. Con 10.000 hombres baja del Tabor contra los carros de Sísara junto
+  al Cisón, persigue al ejército hasta Haróset y halla a Sísara muerto en la tienda de Jael.
+reason: 'Jueces 4:6-22 da las etapas y Jueces 5 las canta. Sin año propio: entre la muerte de Josué y el comienzo de Jefté,
+  como los sucesos del capítulo.'
+sources:
+- jueces-4
+- jueces-5
+- si-3
+- it-barac
+- it-debora
+- it-sisara
+- it-cison
+- it-tabor
+- it-haroset
+- it-jefte
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: quedes-de-neftali
+  reference: Jue 4:6
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: null
+  reason: 'Jue 4:6: Débora manda llamar a Barac desde Quedes de Neftalí. Fecha del suceso «Débora manda llamar a Barac».'
+  sources:
+  - jueces-4
+  - it-barac
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: region-montanosa-de-efrain
+  reference: Jue 4:5-9
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: Débora juzgaba bajo su palmera, entre Ramá y Betel.
+  reason: Jue 4:5 sitúa a Débora en la región montañosa de Efraín, y 4:9 dice que de allí se fue con Barac a Quedes. Fecha
+    del suceso «Débora manda llamar a Barac».
+  sources:
+  - jueces-4
+  - it-debora
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: quedes-de-neftali
+  reference: Jue 4:9, 10
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: Llama a Zabulón y a Neftalí; Débora va con él.
+  reason: 'Jue 4:10: Barac convoca a sus tribus en Quedes. Fecha del suceso «Barac reúne en Quedes a 10.000 hombres».'
+  sources:
+  - jueces-4
+  - it-barac
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: monte-tabor
+  reference: Jue 4:12, 14
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: null
+  reason: Jue 4:12 dice a Sísara que Barac está en el monte Tabor, y 4:14 lo hace bajar de allí. Fecha del suceso «Barac derrota
+    al ejército de Sísara junto al Cisón».
+  sources:
+  - jueces-4
+  - it-tabor
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: cison
+  reference: Jue 4:13-15; 5:21
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: Sísara baja del carro y huye a pie.
+  reason: Jue 4:13 lleva los carros de Sísara al arroyo de Cisón, y 5:21 canta que el Cisón los arrastró. Fecha del suceso
+    «Barac derrota al ejército de Sísara junto al Cisón».
+  sources:
+  - jueces-4
+  - jueces-5
+  - it-cison
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: haroset
+  reference: Jue 4:16
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: No queda ni un soldado de Sísara.
+  reason: 'Jue 4:16: Barac persigue a los carros y al ejército hasta Haróset. Fecha del suceso «Barac derrota al ejército
+    de Sísara junto al Cisón».'
+  sources:
+  - jueces-4
+  - it-haroset
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: zaananim
+  reference: Jue 4:22
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: tras la muerte de Josué y antes de que Jefté empiece a juzgar)'
+  note: La tienda de Jael.
+  reason: 'Jue 4:22: Barac llega buscando a Sísara y Jael se lo muestra muerto; 4:11 pone la tienda de Héber junto al árbol
+    de Zaananim. Fecha del suceso «Jael mata a Sísara en su tienda».'
+  sources:
+  - jueces-4
+  - it-zaananim
+  checked_on: '2026-09-30'
+  status: verified

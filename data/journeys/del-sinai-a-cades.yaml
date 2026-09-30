@@ -1,0 +1,168 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: del-sinai-a-cades
+name: Del Sinaí a Cadés
+person: moises
+reference: Nú 10:11–14:45; Nú 33:16-18; Dt 1:6-46
+date:
+  from: -1511
+  to: -1511
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1512 a.e.c. (desde el 20 de iyar)
+companions:
+- aaron
+- miriam-hermana-de-moises
+- josue-hijo-de-nun
+summary: Casi un año después de llegar al Sinaí, la nube se levanta e Israel se pone en marcha. Pasa por Taberá, Quibrot-Hataavá
+  y Hazerot y, cruzando el desierto de Parán, llega a Cadés, desde donde salen los espías.
+reason: Números 10 a 14 da las etapas en orden, y Nú 33:16-18 las repite como lista. El estudio 3 fecha la marcha en 1512
+  a.e.c. y Nú 10:11 da el día de salida.
+sources:
+- numeros-10
+- numeros-11
+- numeros-12
+- numeros-13
+- numeros-14
+- numeros-33
+- deuteronomio-1
+- si-3
+- it-qades
+- tnm-b3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 4
+stops:
+- order: 1
+  place: desierto-de-sinai
+  reference: Nú 10:11-13
+  date:
+    from: -1511
+    to: -1511
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 20 de ziv (iyar) de 1512 a.e.c.
+    detail:
+      month: iyar
+      day: 20
+  note: La nube se alza sobre el tabernáculo y las tribus parten en el orden fijado.
+  reason: 'Nú 10:11, 12: el día 20 del segundo mes del segundo año la nube se mueve y el pueblo deja el desierto de Sinaí.
+    Fecha del suceso «Israel sale del desierto de Sinaí».'
+  sources:
+  - numeros-10
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: tabera
+  reference: Nú 10:33–11:3; Dt 9:22
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Tras tres días de marcha, un fuego de Jehová alcanza las afueras del campamento. La lista de Nú 33 no la nombra.
+  reason: Nú 10:33 cuenta tres días de camino desde la montaña, y Nú 11:3 da nombre a Taberá. Fecha del suceso «Un fuego de
+    Jehová arde en Taberá».
+  sources:
+  - numeros-10
+  - numeros-11
+  - deuteronomio-9
+  - it-tabera
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: quibrot-hataava
+  reference: Nú 11:4-34; Nú 33:16
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Piden carne; llegan codornices y una plaga. Jehová da de su espíritu a setenta ancianos.
+  reason: Nú 11:34 pone nombre al lugar tras la plaga, y Nú 33:16 lo da como primera etapa desde el Sinaí. Fecha del suceso
+    «Codornices y plaga en Quibrot-Hataavá».
+  sources:
+  - numeros-11
+  - numeros-33
+  - it-quibrot-hataava
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: hazerot
+  reference: Nú 11:35–12:15; Nú 33:17
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Míriam y Aarón hablan contra Moisés; Míriam pasa siete días fuera del campamento.
+  reason: Nú 11:35 y 33:17 llevan al pueblo de Quibrot-Hataavá a Hazerot, y allí esperan hasta que Míriam vuelve (12:15).
+    Fecha del suceso «Israel acampa en Hazerot».
+  sources:
+  - numeros-11
+  - numeros-12
+  - numeros-33
+  - it-hazerot
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: desierto-de-paran
+  reference: Nú 12:16
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: null
+  reason: 'Nú 12:16: dejan Hazerot y acampan en el desierto de Parán. Fecha del suceso «Israel deja Hazerot y acampa en el
+    desierto de Parán».'
+  sources:
+  - numeros-12
+  - it-paran
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: cades
+  reference: Nú 13:1–14:45; Dt 1:19-46
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Salen los doce espías. Tras su informe, Jehová condena al pueblo a 40 años de desierto; los que suben sin permiso
+    son derrotados hasta Hormá.
+  reason: Nú 13:26 pone el campamento en Cadés, en Parán, y Dt 1:19 lo llama Cadés-Barnea. Sucesos  «Moisés envía a los doce
+    espías a Canaán» y «Jehová condena a Israel a 40 años en el desierto».
+  sources:
+  - numeros-13
+  - numeros-14
+  - deuteronomio-1
+  - it-qades
+  - it-espias
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,258 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-del-sur-de-josue
+name: Campaña de Josué en el sur
+person: josue-hijo-de-nun
+reference: Jos 10:6-43
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+companions: []
+summary: Josué sale de noche de Guilgal en ayuda de Gabaón, persigue a los cinco reyes por Bet-Horón hasta Azecá y Maquedá
+  y conquista Libná, Lakís, Eglón, Hebrón y Debir. Luego vuelve a Guilgal.
+reason: 'Josué 10 da las etapas en orden. Sin año propio: va entre la toma de Hai, en 1473 a.e.c., y el fin de la conquista
+  general, que el estudio 3 pone en 1467 a.e.c.'
+sources:
+- josue-10
+- si-3
+- it-josue
+- it-gabaon
+- it-bet-horon
+- it-azeqa
+- it-maqueda
+- it-guilgal
+- tnm-b4
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josue-hijo-de-nun
+  order: 3
+stops:
+- order: 1
+  place: guilgal
+  reference: Jos 10:6-9
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Los gabaonitas piden ayuda; Josué marcha toda la noche.
+  reason: 'Jos 10:7, 9: Josué sube desde Guilgal y marcha de noche. Fecha del suceso «Josué derrota a los cinco reyes en Gabaón».'
+  sources:
+  - josue-10
+  - it-guilgal
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: gabaon
+  reference: Jos 10:10-14
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Derrota a los cinco reyes amorreos.
+  reason: Jos 10:10 cuenta la matanza en Gabaón y 10:12-14 el día en que el sol se detuvo. Fecha de los sucesos «Josué derrota
+    a los cinco reyes en Gabaón» y «El sol se detiene sobre Gabaón».
+  sources:
+  - josue-10
+  - it-gabaon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: bet-horon-alta
+  reference: Jos 10:10
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: La subida de Bet-Horón.
+  reason: Jos 10:10 nombra la subida de Bet-Horón en la persecución. Que lleve a Bet-Horón Alta es deducción nuestra, por
+    la situación que da Perspicacia «Bet-horón». Fecha del suceso «Josué derrota a los cinco reyes en Gabaón».
+  sources:
+  - josue-10
+  - it-bet-horon
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: bet-horon-baja
+  reference: Jos 10:11
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: En la bajada caen grandes piedras de granizo.
+  reason: 'Jos 10:11: en la bajada de Bet-Horón cae el granizo. Perspicacia «Bet-horón» dice que algunos la entienden como
+    el camino de la Alta a la Baja. Fecha del suceso «Josué derrota a los cinco reyes en Gabaón».'
+  sources:
+  - josue-10
+  - it-bet-horon
+  checked_on: '2026-09-30'
+  status: pending
+- order: 5
+  place: azeca
+  reference: Jos 10:10, 11
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: null
+  reason: Jos 10:10, 11 lleva la persecución y el granizo hasta Azecá. Fecha del suceso «Josué derrota a los cinco reyes en
+    Gabaón».
+  sources:
+  - josue-10
+  - it-azeqa
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: maqueda
+  reference: Jos 10:16-28
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Los cinco reyes se esconden en la cueva y mueren allí.
+  reason: Jos 10:21 pone el campamento en Maquedá y 10:28 cuenta su toma. Fecha de los sucesos «Josué ejecuta a los cinco
+    reyes en Maquedá» y «Josué toma Maquedá».
+  sources:
+  - josue-10
+  - it-maqueda
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: libna
+  reference: Jos 10:29, 30
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: null
+  reason: 'Jos 10:29: de Maquedá pasan a Libná. Fecha del suceso «Josué toma Libná».'
+  sources:
+  - josue-10
+  - it-libna
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: lakis
+  reference: Jos 10:31-33
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Horam, rey de Guézer, acude en ayuda de Lakís y cae; Josué no va a Guézer.
+  reason: 'Jos 10:31: de Libná van a Lakís y la sitian. Fecha del suceso «Josué toma Lakís y vence a Horam de Guézer».'
+  sources:
+  - josue-10
+  - it-lakis
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: eglon
+  reference: Jos 10:34, 35
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: null
+  reason: 'Jos 10:34: de Lakís pasan a Eglón. Fecha del suceso «Josué toma Eglón».'
+  sources:
+  - josue-10
+  - it-eglon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: hebron
+  reference: Jos 10:36, 37
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: null
+  reason: 'Jos 10:36: de Eglón suben a Hebrón. Fecha del suceso «Josué toma Hebrón».'
+  sources:
+  - josue-10
+  - it-hebron
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: debir
+  reference: Jos 10:38, 39
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: null
+  reason: 'Jos 10:38: Josué se vuelve hacia Debir y la ataca. Fecha del suceso «Josué toma Debir».'
+  sources:
+  - josue-10
+  - it-debir
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: guilgal
+  reference: Jos 10:43
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Jos 10:15 anuncia la vuelta antes de tiempo; contamos una sola, la de 10:43.
+  reason: 'Jos 10:43: Josué regresa con todo Israel al campamento de Guilgal. Fecha del suceso «Josué conquista el sur de
+    Canaán y vuelve a Guilgal».'
+  sources:
+  - josue-10
+  - it-guilgal
+  checked_on: '2026-09-30'
+  status: verified

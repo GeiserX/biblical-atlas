@@ -1,0 +1,147 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-de-balaam
+name: Balaam va de Petor a Moab
+person: balaam
+reference: Nú 22:5–24:25; Dt 23:4
+date:
+  from: -1472
+  to: -1472
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1473 a.e.c.
+companions: []
+summary: Balac, rey de Moab, llama a Balaam para que maldiga a Israel. Balaam viaja desde Petor, junto al Éufrates, y desde
+  tres alturas que Balac le muestra bendice a Israel en lugar de maldecirlo.
+reason: Números 22 a 24 cuenta el viaje y las tres bendiciones, y Dt 23:4 da Petor de Mesopotamia como su ciudad. Los sucesos
+  del relato llevan c. 1473 a.e.c., el año de la llegada a Moab.
+sources:
+- numeros-22
+- numeros-23
+- numeros-24
+- deuteronomio-23
+- it-balaam
+- it-balac
+- it-petor
+- it-agag
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: petor
+  reference: Nú 22:5-21; Dt 23:4
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Recibe dos veces a los enviados de Balac; a la segunda se va con ellos y con dos siervos.
+  reason: Nú 22:5 sitúa a Balaam en Petor, junto al Río, y 22:21 cuenta su salida con los príncipes de Moab. Fecha del suceso
+    «Balac manda llamar a Balaam para maldecir a Israel».
+  sources:
+  - numeros-22
+  - deuteronomio-23
+  - it-petor
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: arnon
+  reference: Nú 22:22-38
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Antes, en un camino sin nombre, habla la burra y el ángel le cierra el paso.
+  reason: 'Nú 22:36: Balac sale a su encuentro en la ciudad de Moab junto al Arnón, en la frontera. Fecha del suceso «Balac
+    sale a recibir a Balaam junto al Arnón».'
+  sources:
+  - numeros-22
+  - it-arnon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: quiryat-huzot
+  reference: Nú 22:39, 40
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Balac sacrifica reses y le manda parte de la carne.
+  reason: 'Nú 22:39: Balaam va con Balac a Quiryat-Huzot. Fecha del suceso «Balac ofrece sacrificios en Quiryat-Huzot».'
+  sources:
+  - numeros-22
+  - it-quiryat-huzot
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: bamot-baal
+  reference: Nú 22:41–23:12
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Primera bendición.
+  reason: 'Nú 22:41: por la mañana Balac lo sube a Bamot-Baal. Fecha del suceso «Balaam bendice a Israel desde Bamot-Baal».'
+  sources:
+  - numeros-22
+  - numeros-23
+  - it-bamot-baal
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: zofim
+  reference: Nú 23:13-26
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Segunda bendición.
+  reason: 'Nú 23:14: Balac lo lleva al campo de Zofim, en lo alto del Pisgá. Fecha del suceso «Balaam vuelve a bendecir a
+    Israel desde Pisgá».'
+  sources:
+  - numeros-23
+  - it-zofim
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: peor
+  reference: Nú 23:27–24:25
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c.
+  note: Tercera bendición y anuncio de la estrella de Jacob. Después se va a su lugar; más tarde muere entre los madianitas
+    (Nú 31:8).
+  reason: Nú 23:28 lo sube a la cima de Peor, frente a Jesimón. Fecha de los sucesos «Balaam bendice a Israel desde la cima
+    de Peor» y «Balaam anuncia la estrella que saldrá de Jacob».
+  sources:
+  - numeros-23
+  - numeros-24
+  - numeros-31
+  - it-peor
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,444 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: treinta-y-ocho-anos-en-el-desierto
+name: Treinta y ocho años por el desierto
+person: moises
+reference: Nú 14:25; 33:18-36; 20:1; Dt 1:46–2:1, 14
+date:
+  from: -1511
+  to: -1473
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1512-1474 a.e.c. (de la salida de Cadés a la vuelta, en nisán)
+companions:
+- aaron
+- miriam-hermana-de-moises
+- josue-hijo-de-nun
+- caleb-hijo-de-jefune
+summary: Tras negarse a entrar en Canaán, Israel deja Cadés y cambia de campamento dieciocho veces, de Ritmá a Ezión-Guéber,
+  hasta volver a Cadés el primer mes del año cuarenta.
+reason: Nú 33:18-36 da las etapas y Dt 2:14 cuenta 38 años de Cadés-Barnea al Zered. Perspicacia «Qadés» cuenta dieciocho
+  etapas desde Hazerot, y Nú 20:1 fecha la vuelta en el primer mes.
+sources:
+- numeros-14
+- numeros-20
+- numeros-33
+- deuteronomio-1
+- deuteronomio-2
+- it-qades
+- si-3
+- tnm-b3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: moises
+  order: 5
+stops:
+- order: 1
+  place: cades
+  reference: Nú 14:25; Dt 1:46–2:1
+  date:
+    from: -1511
+    to: -1511
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1512 a.e.c.
+  note: Se quedan mucho tiempo y después, por orden de Jehová, se internan otra vez en el desierto.
+  reason: Nú 14:25 les ordena volver al desierto hacia el mar Rojo, y Dt 1:46–2:1 cuenta la larga estancia y la salida. Fecha
+    del suceso «Jehová condena a Israel a 40 años en el desierto».
+  sources:
+  - numeros-14
+  - deuteronomio-1
+  - deuteronomio-2
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ritma
+  reference: Nú 33:18, 19
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: Nú 33:18 la pone tras Hazerot y no nombra Cadés. Perspicacia «Qadés» recoge la opinión de que Ritmá y Cadés sean el
+    mismo sitio.
+  reason: 'Nú 33:18 nombra Ritmá como la etapa que sigue a Hazerot. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: rimon-perez
+  reference: Nú 33:19, 20
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:19 nombra Rimón-Pérez como la etapa que sigue a Ritmá. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: libna-del-desierto
+  reference: Nú 33:20, 21
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:20 nombra Libná como la etapa que sigue a Rimón-Pérez. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: risa
+  reference: Nú 33:21, 22
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:21 nombra Risá como la etapa que sigue a Libná. Sin año propio: fecha del suceso «Israel anda errante por
+    el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: quehelata
+  reference: Nú 33:22, 23
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:22 nombra Quehelatá como la etapa que sigue a Risá. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: monte-sefer
+  reference: Nú 33:23, 24
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:23 nombra el monte Séfer como la etapa que sigue a Quehelatá. Sin año propio: fecha del suceso «Israel anda
+    errante por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: harada
+  reference: Nú 33:24, 25
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:24 nombra Haradá como la etapa que sigue a el monte Séfer. Sin año propio: fecha del suceso «Israel anda
+    errante por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: maquelot
+  reference: Nú 33:25, 26
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:25 nombra Maquelot como la etapa que sigue a Haradá. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: tahat
+  reference: Nú 33:26, 27
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:26 nombra Táhat como la etapa que sigue a Maquelot. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: tare
+  reference: Nú 33:27, 28
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:27 nombra Taré como la etapa que sigue a Táhat. Sin año propio: fecha del suceso «Israel anda errante por
+    el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: mitca
+  reference: Nú 33:28, 29
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:28 nombra Mitcá como la etapa que sigue a Taré. Sin año propio: fecha del suceso «Israel anda errante por
+    el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 13
+  place: hasmona
+  reference: Nú 33:29, 30
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:29 nombra Hasmoná como la etapa que sigue a Mitcá. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 14
+  place: moserot
+  reference: Nú 33:30, 31
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: Dt 10:6 pone en Moserá la muerte de Aarón, que Nú 33:38 sitúa en el monte Hor.
+  reason: 'Nú 33:30 nombra Moserot como la etapa que sigue a Hasmoná. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  - deuteronomio-10
+  checked_on: '2026-09-30'
+  status: verified
+- order: 15
+  place: bene-jaacan
+  reference: Nú 33:31, 32; Dt 10:6
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: Dt 10:6 la llama Beerot Bene-Jaacán.
+  reason: 'Nú 33:31 nombra Bene-Jaacán como la etapa que sigue a Moserot. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  - deuteronomio-10
+  checked_on: '2026-09-30'
+  status: verified
+- order: 16
+  place: hor-haguidgad
+  reference: Nú 33:32, 33
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:32 nombra Hor-Haguidgad como la etapa que sigue a Bene-Jaacán. Sin año propio: fecha del suceso «Israel anda
+    errante por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 17
+  place: jotbata
+  reference: Nú 33:33, 34
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:33 nombra Jotbatá como la etapa que sigue a Hor-Haguidgad. Sin año propio: fecha del suceso «Israel anda
+    errante por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 18
+  place: abrona
+  reference: Nú 33:34, 35
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: null
+  reason: 'Nú 33:34 nombra Abroná como la etapa que sigue a Jotbatá. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 19
+  place: ezion-gueber
+  reference: Nú 33:35, 36
+  date:
+    from: -1511
+    to: -1473
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1512 y 1474 a.e.c. (tiempo narrativo: de la salida de Cadés tras el informe de los espías a la vuelta a Cadés
+      el año cuarenta)'
+  note: Última etapa antes de volver al desierto de Zin.
+  reason: 'Nú 33:35 nombra Ezión-Guéber como la etapa que sigue a Abroná. Sin año propio: fecha del suceso «Israel anda errante
+    por el desierto», entre las dos estancias en Cadés.'
+  sources:
+  - numeros-33
+  - it-qades
+  checked_on: '2026-09-30'
+  status: verified
+- order: 20
+  place: cades
+  reference: Nú 20:1; Nú 33:36
+  date:
+    from: -1473
+    to: -1473
+    precision: month
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: nisán de 1474 a.e.c. (primer mes del año cuadragésimo)
+    detail:
+      month: nisan
+  note: Allí muere Míriam.
+  reason: Nú 33:36 los lleva de Ezión-Guéber al desierto de Zin, a Cadés, y Nú 20:1 lo fecha en el primer mes. Fecha del suceso
+    «Israel vuelve a Cadés, donde muere Míriam».
+  sources:
+  - numeros-20
+  - numeros-33
+  - it-qades
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

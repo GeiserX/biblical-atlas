@@ -1,0 +1,182 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-central-de-josue
+name: Campaña de Josué del Jordán a Hai
+person: josue-hijo-de-nun
+reference: Jos 3:1–9:6
+date:
+  from: -1472
+  to: -1466
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 1473 a.e.c. (la vuelta a Guilgal, antes de 1467 a.e.c.)
+companions: []
+summary: Israel sale de Sitim, cruza el Jordán en seco y acampa en Guilgal. Desde allí toma Jericó y, tras la derrota causada
+  por Acán, Hai. Josué lee la Ley entre el Ebal y el Guerizim.
+reason: Josué 3 a 9 da las etapas en orden. El estudio 3 fecha en 1473 a.e.c. la entrada en Canaán, y Jos 4:19 pone el cruce
+  el día 10 del primer mes.
+sources:
+- josue-3
+- josue-4
+- josue-5
+- josue-6
+- josue-7
+- josue-8
+- josue-9
+- si-3
+- it-josue
+- it-jerico
+- it-hai
+- it-guilgal
+- tnm-b4
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: josue-hijo-de-nun
+  order: 2
+stops:
+- order: 1
+  place: sitim
+  reference: Jos 3:1
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  note: Salen de madrugada y pasan la noche junto al río.
+  reason: 'Jos 3:1: Josué y el pueblo dejan Sitim y llegan al Jordán. Fecha del suceso «Israel sale de Sitim y acampa junto
+    al Jordán».'
+  sources:
+  - josue-3
+  - it-sitim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: rio-jordan
+  reference: Jos 3:1-17; 4:1-18
+  date:
+    from: -1472
+    to: -1472
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 10 de nisán de 1473 a.e.c.
+    detail:
+      month: nisan
+      day: 10
+  note: Las aguas se detienen a la altura de Adán y el pueblo pasa en seco frente a Jericó.
+  reason: Jos 3:16, 17 cuenta el paso y Jos 4:19 lo fecha el día 10 del primer mes. Fecha del suceso «Israel entra en Canaán».
+  sources:
+  - josue-3
+  - josue-4
+  - si-3
+  - it-jordan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: guilgal
+  reference: Jos 4:19–5:12
+  date:
+    from: -1472
+    to: -1472
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: nisán de 1473 a.e.c.
+    detail:
+      month: nisan
+  note: 'Primer campamento al oeste del Jordán: las doce piedras, la circuncisión y la Pascua del día 14.'
+  reason: Jos 4:19 pone el campamento en Guilgal, al este de Jericó, y Jos 5:10 celebra allí la Pascua. Fecha de los sucesos
+    «Josué levanta en Guilgal las doce piedras del Jordán» y «Israel celebra la Pascua en Guilgal».
+  sources:
+  - josue-4
+  - josue-5
+  - it-guilgal
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: jerico
+  reference: Jos 5:13–6:27
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  note: Siete días de vueltas a la ciudad; el séptimo caen las murallas.
+  reason: Jos 6 cuenta el cerco y la toma de Jericó desde el campamento. Fecha del suceso «Caen las murallas de Jericó».
+  sources:
+  - josue-6
+  - it-jerico
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: hai
+  reference: Jos 7:2–8:29
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1473 a.e.c.
+  note: Dos ataques; entre ellos, Acán muere en el valle de Acor.
+  reason: Jos 7:2-5 cuenta la derrota en Hai y Jos 8:1-29 la toma. Fecha de los sucesos «Israel es derrotado en Hai» e «Israel
+    toma Hai con una emboscada».
+  sources:
+  - josue-7
+  - josue-8
+  - it-hai
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: monte-ebal
+  reference: Jos 8:30-35
+  date:
+    from: -1472
+    to: -1472
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1473 a.e.c. (poco después de la toma de Hai)
+  note: Media nación mira al Guerizim y media al Ebal.
+  reason: Jos 8:30 pone el altar de Josué en el monte Ebal, y 8:33-35 la lectura de la Ley. Fecha del suceso «En el Ebal,
+    Josué levanta un altar y lee la Ley».
+  sources:
+  - josue-8
+  - it-ebal-monte
+  - it-guerizim
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: guilgal
+  reference: Jos 9:6
+  date:
+    from: -1472
+    to: -1466
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1473 y 1467 a.e.c. (tiempo narrativo: tras la toma de Hai y antes del final de la conquista general)'
+  note: Allí lo encuentran los gabaonitas.
+  reason: 'Jos 9:6 vuelve a situar a Josué en el campamento de Guilgal; el regreso desde el Ebal no se cuenta. Sin año propio:
+    fecha del suceso «Los gabaonitas engañan a Josué y logran un pacto».'
+  sources:
+  - josue-9
+  - it-guilgal
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending
