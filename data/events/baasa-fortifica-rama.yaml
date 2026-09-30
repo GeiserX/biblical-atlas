@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: baasa-fortifica-rama
+title: Baasá fortifica Ramá contra Judá
+date:
+  from: -961
+  to: -961
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 962 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 15016
+places:
+- rama-de-benjamin
+people:
+- baasa
+passages:
+- 1Re 15:16, 17
+- 2Cr 16:1
+summary: En guerra con Asá, Baasá sube contra Judá y empieza a fortificar Ramá, junto al camino de Jerusalén, para que nadie
+  pueda entrar ni salir del reino del sur.
+reason: 1Re 15:16, 17; Perspicacia «Ramá», núm. 1, y «Asá», núm. 1. Perspicacia «Ben-hadad», núm. 1, pone la campaña hacia
+  962 a.e.c., el año 36 desde la división (2Cr 16:1).
+sources:
+- 1-reyes-15
+- it-rama
+- it-asa
+- it-ben-hadad
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: baasa-mata-a-nadab-en-guibeton
+title: Baasá mata a Nadab en Guibetón
+date:
+  from: -974
+  to: -974
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 975 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 15027
+type: death
+places:
+- guibeton
+people:
+- nadab-de-israel
+- baasa
+roles:
+  nadab-de-israel: died
+passages:
+- 1Re 15:27, 28
+summary: Mientras Nadab e Israel cercan Guibetón, que estaba en manos filisteas, Baasá, de la tribu de Isacar, conspira contra
+  él, lo mata allí y se hace rey en el tercer año de Asá.
+reason: 1Re 15:27, 28; Perspicacia «Nadab», núm. 4, y «Guibetón». La tabla A6-A empieza el reinado de Baasá hacia 975 a.e.c.
+sources:
+- 1-reyes-15
+- it-nadab
+- it-guibeton
+- tnm-a6-a
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Nadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

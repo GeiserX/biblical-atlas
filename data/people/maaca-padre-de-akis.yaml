@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-padre-de-akis
+name: Maacá
+names:
+- name: Maacá
+perspicacia: 1200002803#8
+disambiguation: El padre de Akís, rey de Gat (1Re 2:39); no Maacá hija de Talmái, madre de Absalón, ni Maacá hijo de Nacor,
+  ni el reino de Maacá.
+distinct_from:
+- maaca-hija-de-talmai
+- maaca-hijo-de-nacor
+summary: Padre de Akís, el rey de Gat al que huyeron dos esclavos de Simeí en los primeros años de Salomón. Perspicacia ve
+  posible que sea Maoc, el padre de Akís en tiempos de Saúl.
+reason: Perspicacia «Maacá», núm. 8, y «Maoc»; 1Re 2:39.
+sources:
+- it-maaca
+- it-maoc
+- 1-reyes-2
+links:
+- title: 'Perspicacia: «Maacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002803
+  type: perspicacia
+- title: 'Perspicacia: «Maoc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002894
+  type: perspicacia
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+relations:
+- type: same_as
+  person: maoc
+  certainty: possible
+  inferred: true
+  sources:
+  - it-maaca
+  - it-maoc
+  - 1-reyes-2
+  reason: Perspicacia «Maacá», núm. 8, y «Maoc» ven posible que Maacá, padre de Akís en 1Re 2:39, sea Maoc por lo parecido
+    del nombre, sin darlo por seguro.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

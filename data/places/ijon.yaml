@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ijon
+name: Ijón
+names:
+- name: Ijón
+type: city
+lat: 33.345278
+lon: 35.59
+precision: point
+coord_source: openbible:a062b95
+coord_url: https://www.openbible.info/geo/ancient/a062b95/ijon
+coord_note: 'Tell Dibbine, primera identificación de OpenBible: el Tell ed-Dibbin que da Perspicacia.'
+summary: Ciudad del norte de Israel, unos 15 km al nornoroeste de Dan. La tomó el ejército de Ben-Hadad I en días de Baasá,
+  y casi dos siglos después Tiglat-Piléser III, que desterró a su gente.
+reason: 'Perspicacia «Ijón»; 1Re 15:20; 2Re 15:29. OpenBible: solo el punto.'
+sources:
+- it-ijon
+- openbible-geo
+- 1-reyes-15
+links:
+- title: 'Perspicacia: «Ijón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002143
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

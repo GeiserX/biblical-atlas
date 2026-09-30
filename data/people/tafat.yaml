@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tafat
+name: Tafat
+names:
+- name: Tafat
+perspicacia: '1200004320'
+summary: Hija del rey Salomón. Se casó con el hijo de Abinadab, comisario de su padre en las laderas de Dor.
+reason: Perspicacia «Tafat»; 1Re 4:11.
+sources:
+- it-tafat
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Tafat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004320
+  type: perspicacia
+relations:
+- type: kin
+  person: salomon
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-tafat
+  reason: '1Re 4:11: Tafat, hija de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: baasa-acaba-con-la-casa-de-jeroboan
+title: Baasá acaba con la casa de Jeroboán
+date:
+  from: -974
+  to: -974
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 975 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 15029
+places:
+- tirza
+people:
+- baasa
+present: []
+passages:
+- 1Re 15:29, 30
+summary: Nada más reinar, Baasá extermina a la familia de Jeroboán, sin dejar a nadie con vida. Así se cumple lo que Jehová
+  había anunciado por boca de Ahíya el silonita.
+reason: '1Re 15:29, 30; Perspicacia «Baasá». El texto no dice dónde: Tirzá era la residencia de Jeroboán (Perspicacia «Tirzá»,
+  núm. 2), y el suceso no sitúa a nadie. Fecha: inicio del reinado de Baasá, c. 975 (A6-A).'
+sources:
+- 1-reyes-15
+- it-baasa
+- it-tirza
+- tnm-a6-a
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Baasá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000528
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

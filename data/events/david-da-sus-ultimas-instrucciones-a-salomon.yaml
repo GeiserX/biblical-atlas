@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-da-sus-ultimas-instrucciones-a-salomon
+title: David da sus últimas instrucciones a Salomón
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 2001
+places:
+- jerusalen
+people:
+- david
+- salomon
+- joab-hijo-de-zeruya
+- simei-hijo-de-guera
+- barzilai-el-galaadita
+present:
+- david
+- salomon
+type: speech
+roles:
+  david: spoke
+passages:
+- 1Re 2:1-9
+summary: A punto de morir, David pide a Salomón que cumpla la Ley de Moisés para que Jehová mantenga su promesa. Le encarga
+  castigar a Joab y a Simeí y tratar con amor leal a los hijos de Barzilái.
+reason: '1Re 2:1-9; Perspicacia «Salomón», apartado «La exhortación de David a Salomón». El texto no nombra el sitio; David
+  muere y es enterrado en la Ciudad de David (2:10). Fecha: 1037 (estudio 3, párr. 4).'
+sources:
+- 1-reyes-2
+- it-salomon
+- si-3
+links:
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-hadad-hijo-de-tabrimon
+name: Ben-Hadad
+names:
+- name: Ben-Hadad
+- name: Ben-Hadad I
+  note: Número que le da Perspicacia para distinguirlo de los otros dos reyes sirios con ese nombre.
+perspicacia: 1200000636#1
+disambiguation: El primer Ben-Hadad de la Biblia, de los días de Asá y Baasá; no el rey sirio de tiempos de Acab ni el hijo
+  de Hazael.
+distinct_from:
+- ben-hadad-hijo-de-hazael
+- ben-hadad-ii
+summary: Rey de Siria que vivía en Damasco, hijo de Tabrimón. Hacia 962 a.e.c. aceptó los tesoros de Asá, rompió su pacto
+  con Baasá y mandó su ejército contra las ciudades del norte de Israel.
+reason: Perspicacia «Ben-hadad», núm. 1; 1Re 15:18-20.
+sources:
+- it-ben-hadad
+- it-tabrimon
+- 1-reyes-15
+links:
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+relations:
+- type: kin
+  person: tabrimon
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-tabrimon
+  reason: '1Re 15:18: Ben-Hadad, hijo de Tabrimón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: damasco
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-ben-hadad
+  reason: '1Re 15:18: el rey de Siria residía en Damasco.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  place: siria
+  office: king
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-ben-hadad
+  reason: 1Re 15:18 lo llama rey de Siria.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

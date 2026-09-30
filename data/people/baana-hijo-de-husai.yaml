@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-hijo-de-husai
+name: Baaná
+names:
+- name: Baaná
+perspicacia: 1200000524#2
+disambiguation: Baaná hijo de Husái, comisario de Salomón; no Baaná hijo de Ahilud, otro comisario, ni el hijo de Rimón ni
+  el netofatita.
+distinct_from:
+- baana-hijo-de-ahilud
+- baana-hijo-de-rimon
+- baana-el-netofatita
+summary: Hijo de Husái, el amigo de David. Comisario de Salomón en Aser y Bealot, en el norte del país.
+reason: Perspicacia «Baaná», núm. 2; 1Re 4:7, 16.
+sources:
+- it-baana
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Baaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000524
+  type: perspicacia
+relations:
+- type: kin
+  person: husai
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-baana
+  reason: '1Re 4:16: Baaná hijo de Husái; Perspicacia dice que es Husái el compañero de David.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 16: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

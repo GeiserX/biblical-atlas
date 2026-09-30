@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: afec-al-este-del-mar-de-galilea
+name: Afec
+names:
+- name: Afec
+  note: La de 1Re 20:26 (Perspicacia «Afeq», núm. 5).
+- name: Afeq
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Fiq, al este del mar de Galilea
+  geometry:
+    type: point
+    lat: 32.766667
+    lon: 35.7
+  status: alternative
+  sources:
+  - it-afeq
+  - openbible-geo
+  reason: 'Perspicacia «Afeq», núm. 5: algunos la ponen en Afiq o Fiq, unos 5 km al este del mar de Galilea, aunque allí no
+    se han hallado restos previos al siglo IV a.e.c. Punto de OpenBible.'
+  coord_source: openbible:a6fc60d
+  coord_url: https://www.openbible.info/geo/ancient/a6fc60d/aphek-3
+  checked_on: '2026-09-30'
+- name: Tel Ein Gev, en la orilla oriental del mar de Galilea
+  geometry:
+    type: point
+    lat: 32.783679
+    lon: 35.63729
+  status: alternative
+  sources:
+  - it-afeq
+  - openbible-geo
+  reason: Perspicacia «Afeq», núm. 5, nombra la cercana ʽEn Gev, donde se hallaron restos urbanos de entre los siglos X y
+    VIII a.e.c. Es la primera identificación de OpenBible.
+  coord_source: openbible:a6fc60d
+  coord_url: https://www.openbible.info/geo/ancient/a6fc60d/aphek-3
+  checked_on: '2026-09-30'
+summary: Ciudad donde Israel derrotó a Ben-Hadad II; su muralla cayó sobre 27.000 sirios. Parece ser también la de la última
+  profecía de Eliseo a Jehoás. Estaría al este del mar de Galilea; el sitio no se sabe.
+reason: 'Perspicacia «Afeq», núm. 5, y «Ben-hadad», núm. 2, párr. 2; 1Re 20:26-30; 2Re 13:17. Sin sitio seguro: dos candidatos
+  de OpenBible.'
+sources:
+- it-afeq
+- it-ben-hadad
+- openbible-geo
+- 1-reyes-20
+links:
+- title: 'Perspicacia: «Afeq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000300
+  type: perspicacia
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: verified

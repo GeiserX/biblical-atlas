@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-ejercito-hace-rey-a-omri-en-guibeton
+title: El ejército hace rey a Omrí en Guibetón
+date:
+  from: -950
+  to: -950
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 16015
+places:
+- guibeton
+people:
+- omri
+passages:
+- 1Re 16:15, 16
+summary: Las tropas que cercan Guibetón, en poder de los filisteos, oyen que Zimrí ha matado al rey. Ese mismo día, en el
+  campamento, proclaman rey a Omrí, el jefe del ejército.
+reason: 1Re 16:15, 16; Perspicacia «Omrí», núm. 3, y «Guibetón». Año 27 de Asá, c. 951 a.e.c. (Perspicacia «Omrí»; A6-A).
+sources:
+- 1-reyes-16
+- it-omri
+- it-guibeton
+- tnm-a6-a
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Omrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003324
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

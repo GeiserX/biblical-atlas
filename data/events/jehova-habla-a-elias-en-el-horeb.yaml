@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-habla-a-elias-en-el-horeb
+title: Jehová habla a Elías en el Horeb
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 19009
+places:
+- monte-sinai
+people:
+- elias-profeta
+- hazael
+- jehu-de-israel
+- eliseo
+present:
+- elias-profeta
+passages:
+- 1Re 19:9-18
+- Ro 11:2-4
+summary: 'En una cueva del Horeb, Elías dice que solo queda él. Tras viento, terremoto y fuego, Jehová le habla con voz calmada:
+  debe ungir a Hazael, a Jehú y a Eliseo, y aún quedan 7.000 fieles.'
+reason: 'Perspicacia «Elías», núm. 1, apartado «Huye de Jezabel»; «Jehú», núm. 3, párr. 1; «Hazael», párr. 2. Ro 11:2-4 recuerda
+  la queja y los 7.000. Fecha: tras el Carmelo, en el reinado de Acab (A6-A).'
+sources:
+- 1-reyes-19
+- it-elias
+- it-jehu
+- it-hazael
+- tnm-a6-a
+links:
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

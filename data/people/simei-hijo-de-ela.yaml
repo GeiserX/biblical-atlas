@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: simei-hijo-de-ela
+name: Simeí
+names:
+- name: Simeí
+perspicacia: null
+disambiguation: 'Simeí hijo de Elá, comisario de Salomón en Benjamín. Perspicacia no le da entrada propia: en «Simeí», núm.
+  11, lo ve probable en el partidario de David. No es Simeí hijo de Guerá ni Simeí hijo de Guersón.'
+distinct_from:
+- simei-hijo-de-guera
+- simei-hijo-de-guerson
+summary: Hijo de Elá y comisario de Salomón en Benjamín. Perspicacia cree probable que sea el Simeí que se mantuvo fiel a
+  David cuando Adonías quiso el trono.
+reason: Perspicacia «Simeí», núm. 11; 1Re 4:7, 18.
+sources:
+- it-simei
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Simeí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004047
+  type: perspicacia
+relations:
+- type: kin
+  person: ela-padre-de-simei
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-ela
+  reason: '1Re 4:18: Simeí hijo de Elá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 18: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: same_as
+  person: simei-partidario-de-david
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-reyes-4
+  - it-simei
+  reason: Perspicacia «Simeí», núm. 11, ve probable que el comisario hijo de Elá (1Re 4:18) sea el Simeí que no apoyó a Adonías.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

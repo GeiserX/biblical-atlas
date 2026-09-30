@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-hombre-de-dios-anuncia-el-fin-del-altar-de-betel
+title: Un hombre de Dios anuncia el fin del altar de Betel
+date:
+  from: -996
+  to: -975
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 997 y c. 976 a.e.c. (tiempo narrativo: poco después de que Jeroboán instituyera su culto en Betel)'
+narrative_order:
+  series: 1-reyes
+  order: 13001
+places:
+- betel
+people:
+- jeroboan-i
+present:
+- jeroboan-i
+passages:
+- 1Re 13:1-10
+summary: Mientras Jeroboán quema incienso, un hombre de Dios llegado de Judá anuncia que Josías, de la casa de David, profanará
+  ese altar. El altar se raja, la mano del rey se seca y sana cuando el profeta ora por él.
+reason: '1Re 13:1 lo pone junto al altar de la fiesta de Jeroboán en Betel; según Perspicacia «Betel», Jehová condenó pronto
+  ese altar. Límites: la división (997, estudio 3) y el fin del reinado (c. 976, A6-A).'
+sources:
+- 1-reyes-13
+- it-betel
+- it-jeroboan
+- it-josias
+- si-3
+- tnm-a6-a
+links:
+- title: 1 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/13
+  type: bible
+- title: 'Perspicacia: «Betel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
+  type: perspicacia
+search: hombre de Dios altar de Betel Jeroboán
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amon-jefe-de-samaria
+name: Amón
+names:
+- name: Amón
+perspicacia: 1200000244#1
+disambiguation: Jefe de Samaria en tiempos de Acab; no es Amón, rey de Judá.
+distinct_from:
+- amon-de-juda
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 940-920 a.e.c.
+summary: Jefe de la ciudad de Samaria en tiempos de Acab. El rey le entregó a Micaya para que lo tuviera preso, a poco pan
+  y poca agua, hasta volver de Ramot-Galaad.
+reason: Perspicacia «Amón», núm. 1; 1Re 22:26, 27 y 2Cr 18:25, 26.
+sources:
+- it-amon
+- 1-reyes-22
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Amón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000244
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

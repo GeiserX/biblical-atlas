@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: semaya-impide-la-guerra-contra-israel
+title: Semaya impide que Rehoboam pelee contra Israel
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 12021
+places:
+- jerusalen
+people:
+- rehoboam
+- semaya-profeta
+present:
+- rehoboam
+roles:
+  semaya-profeta: spoke
+passages:
+- 1Re 12:21-24
+- 2Cr 11:1-4
+summary: Rehoboam junta en Jerusalén 180.000 guerreros de Judá y Benjamín para recuperar el reino. Por medio de Semaya, Jehová
+  les manda no luchar contra sus hermanos, y cada uno vuelve a casa.
+reason: Perspicacia «Semaya», núm. 6, y «Rehoboam», párr. 4, lo ponen tras la sublevación de 997 a.e.c. El texto no dice dónde
+  recibió Semaya el mensaje.
+sources:
+- 1-reyes-12
+- it-semaya
+- it-rehoboam
+- si-3
+links:
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

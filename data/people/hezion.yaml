@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezion
+name: Hezión
+names:
+- name: Hezión
+perspicacia: '1200002012'
+not_claimed:
+- 'Que Hezión sea el Rezón de 1Re 11:23: Perspicacia solo recoge que hay quien lo piensa.'
+summary: Abuelo del rey sirio Ben-Hadad I, por su hijo Tabrimón. La Biblia solo lo nombra en esa genealogía.
+reason: Perspicacia «Hezión»; 1Re 15:18.
+sources:
+- it-hezion
+- 1-reyes-15
+links:
+- title: 'Perspicacia: «Hezión»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002012
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

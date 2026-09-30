@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hesed
+name: Hésed
+names:
+- name: Hésed
+perspicacia: '1200002005'
+summary: Israelita cuyo hijo fue comisario de Salomón en Arubot, con Socó y toda la tierra de Héfer.
+reason: Perspicacia «Hésed»; 1Re 4:7, 10.
+sources:
+- it-hesed
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Hésed»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002005
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

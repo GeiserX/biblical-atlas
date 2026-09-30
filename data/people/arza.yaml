@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arza
+name: Arzá
+names:
+- name: Arzá
+perspicacia: '1200000396'
+summary: Mayordomo del rey Elá en Tirzá. El rey se estaba emborrachando en su casa cuando Zimrí lo mató.
+reason: Perspicacia «Arzá»; 1Re 16:9, 10.
+sources:
+- it-arza
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Arzá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000396
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: tie
+  person: ela-de-israel
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-arza
+  reason: '1Re 16:9: Arzá llevaba la casa real de Elá en Tirzá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: tirza
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-arza
+  reason: '1Re 16:9: tenía casa en Tirzá, y allí estaba bebiendo el rey.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

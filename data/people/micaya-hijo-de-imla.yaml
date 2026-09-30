@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: micaya-hijo-de-imla
+name: Micaya
+names:
+- name: Micaya
+perspicacia: 1200003034#2
+disambiguation: Profeta de tiempos de Acab, hijo de Imlá; no es Miqueas de Moréset, el del libro.
+distinct_from:
+- miqueas-profeta
+summary: Profeta de Jehová en Israel, hijo de Imlá, al que Acab odiaba. Ante Acab y Jehosafat anunció que Israel quedaría
+  sin pastor y que Acab caería en Ramot-Galaad, y por eso lo encarcelaron.
+reason: Perspicacia «Micaya», núm. 2; 1Re 22:8-28 y 2Cr 18:7-27.
+sources:
+- it-micaya
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Micaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003034
+  type: perspicacia
+relations:
+- type: kin
+  person: imla
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-micaya
+  reason: '1Re 22:8, 9: Micaya hijo de Imlá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-micaya
+  reason: '1Re 22:7, 8: Jehosafat pide un profeta de Jehová y Acab nombra a Micaya.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: amon-jefe-de-samaria
+  word: custodian
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-amon
+  reason: '1Re 22:26, 27: Acab manda entregarlo a Amón, jefe de la ciudad, para tenerlo preso.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: joas-hijo-del-rey
+  word: custodian
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-joas
+  reason: '1Re 22:26, 27: Acab manda entregarlo también a Joás, el hijo del rey, para tenerlo preso.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

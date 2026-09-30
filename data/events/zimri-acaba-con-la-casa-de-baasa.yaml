@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zimri-acaba-con-la-casa-de-baasa
+title: Zimrí acaba con la casa de Baasá
+date:
+  from: -950
+  to: -950
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 16011
+places:
+- tirza
+people:
+- zimri-de-israel
+passages:
+- 1Re 16:11-13
+summary: Nada más sentarse en el trono, Zimrí mata a todos los varones de la familia de Baasá, parientes y amigos incluidos.
+  Así se cumple lo que Jehová había anunciado por medio de Jehú.
+reason: 1Re 16:11-13; Perspicacia «Zimrí», núm. 3, y «Baasá». Pasa en Tirzá, donde reinaba (16:15), hacia 951 a.e.c. (A6-A).
+sources:
+- 1-reyes-16
+- it-zimri
+- it-baasa
+- tnm-a6-a
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Zimrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004737
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

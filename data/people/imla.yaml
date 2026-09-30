@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: imla
+name: Imlá
+names:
+- name: Imlá
+perspicacia: '1200002151'
+summary: Padre de Micaya, el profeta que anunció a Acab su derrota en Ramot-Galaad.
+reason: Perspicacia «Imlá»; 1Re 22:8, 9 y 2Cr 18:7, 8.
+sources:
+- it-imla
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Imlá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002151
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

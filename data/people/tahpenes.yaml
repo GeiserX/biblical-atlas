@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tahpenes
+name: Tahpenés
+names:
+- name: Tahpenés
+perspicacia: '1200004306'
+summary: Esposa del faraón de Egipto en días de David y Salomón. Su hermana se casó con Hadad el edomita, y ella crio al hijo
+  de ambos, Guenubat, en la casa del faraón.
+reason: Perspicacia «Tahpenés»; 1Re 11:19, 20. La nota al pie dice que era una reina que no gobernaba.
+sources:
+- it-tahpenes
+- 1-reyes-11
+links:
+- title: 'Perspicacia: «Tahpenés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004306
+  type: perspicacia
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+relations:
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-tahpenes
+  reason: '1Re 11:19, 20: esposa del faraón, crio a Guenubat en la casa real de Egipto.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

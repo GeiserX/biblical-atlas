@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hiel
+name: Hiel
+names:
+- name: Hiel
+perspicacia: '1200002019'
+summary: Hombre de Betel que en tiempos de Acab volvió a levantar Jericó. Le costó la vida de sus hijos Abiram y Segub, como
+  había jurado Josué unos cinco siglos antes.
+reason: Perspicacia «Hiel, II»; 1Re 16:34.
+sources:
+- it-hiel
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Hiel, II»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002019
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: lived_in
+  place: betel
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-hiel
+  reason: 1Re 16:34 lo llama Hiel el betelita.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

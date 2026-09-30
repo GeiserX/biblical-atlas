@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-soborna-a-ben-hadad
+title: Asá compra la ayuda de Ben-Hadad
+date:
+  from: -961
+  to: -961
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 962 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 15018
+places:
+- jerusalen
+- damasco
+people:
+- asa
+- ben-hadad-hijo-de-tabrimon
+present:
+- asa
+passages:
+- 1Re 15:18, 19
+- 2Cr 16:2, 3
+summary: Asá vacía lo que queda en los tesoros del templo y del palacio y se lo manda a Ben-Hadad, a Damasco, para que rompa
+  su pacto con Baasá.
+reason: 1Re 15:18, 19; Perspicacia «Asá», núm. 1, y «Ben-hadad», núm. 1, que lo fecha hacia 962 a.e.c. Los tesoros salen de
+  Jerusalén; el rey sirio residía en Damasco.
+sources:
+- 1-reyes-15
+- it-asa
+- it-ben-hadad
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

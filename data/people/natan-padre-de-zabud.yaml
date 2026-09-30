@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natan-padre-de-zabud
+name: Natán
+names:
+- name: Natán
+perspicacia: null
+disambiguation: El padre de Zabud y, según Perspicacia, también de Azarías (1Re 4:5); quizá el profeta Natán, pero no Natán
+  hijo de David ni Natán de Zobá.
+distinct_from:
+- natan-hijo-de-david
+- natan-de-zoba
+summary: Padre de Zabud, el sacerdote amigo de Salomón, y de Azarías, jefe de los comisarios. Perspicacia no le da entrada
+  propia y ve posible que fuera el profeta Natán.
+reason: Perspicacia «Zabud» y «Natán», núm. 2, que no lo numera aparte; 1Re 4:5.
+sources:
+- it-zabud
+- it-natan
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Zabud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004648
+  type: perspicacia
+relations:
+- type: same_as
+  person: natan-profeta
+  certainty: possible
+  inferred: true
+  sources:
+  - 1-reyes-4
+  - it-zabud
+  - it-natan
+  reason: 1Re 4:5 nombra a Natán como padre de Azarías y de Zabud; Perspicacia «Zabud» y «Natán», núm. 2, dicen que quizá
+    fuera el profeta, sin afirmarlo.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

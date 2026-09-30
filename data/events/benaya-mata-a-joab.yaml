@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: benaya-mata-a-joab
+title: Benaya mata a Joab junto al altar
+date:
+  from: -1036
+  to: -1034
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1037-1035 a.e.c. (tiempo narrativo: al principio del reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 2028
+places:
+- jerusalen
+people:
+- joab-hijo-de-zeruya
+- benaya-hijo-de-jehoiada
+- salomon
+- sadoc-hijo-de-ahitub
+- abiatar
+present:
+- salomon
+roles:
+  joab-hijo-de-zeruya: died
+passages:
+- 1Re 2:28-35
+summary: Joab huye a la tienda de Jehová y se agarra al altar. Por orden de Salomón, Benaya lo mata allí y lo entierran junto
+  a su casa, en el desierto. Benaya asume el ejército y Sadoc sustituye a Abiatar.
+reason: '1Re 2:28-35; Perspicacia «Joab», núm. 2, y «Sadoc», núm. 1. Nadie dice dónde estaba la tienda (2:28 remite a 1Cr
+  21:29, Gabaón): Joab y Benaya no se sitúan; Salomón manda desde Jerusalén. Fecha: 1037 (estudio 3).'
+sources:
+- 1-reyes-2
+- it-joab
+- it-sadoc
+- it-benaya
+- si-3
+links:
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maaca-hija-de-uriel
+name: Maacá
+names:
+- name: Maacá
+- name: Micaya
+  note: Así la llama 2Cr 13:2, según Perspicacia «Maacá», núm. 9.
+perspicacia: 1200002803#9
+disambiguation: La madre del rey Abiyam y abuela de Asá; no Maacá hija de Talmái, la madre de Absalón, ni las demás Maacá
+  de Perspicacia.
+distinct_from:
+- maaca-hija-de-talmai
+- maaca-hijo-de-nacor
+summary: Nieta de Absalón y la esposa preferida de Rehoboam, madre del rey Abiyam. Como reina madre hizo un ídolo para el
+  poste sagrado, y su nieto Asá la quitó del puesto.
+reason: Perspicacia «Maacá», núm. 9, y «Uriel», núm. 3, que la da por hija de Uriel; 1Re 15:2, 10, 13.
+sources:
+- it-maaca
+- it-uriel
+- 1-reyes-15
+links:
+- title: 'Perspicacia: «Maacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002803
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+relations:
+- type: kin
+  person: absalon
+  word: grandfather
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-maaca
+  reason: '1Re 15:2, 10: nieta de Abisalom, que es Absalón (Perspicacia «Maacá», núm. 9).'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

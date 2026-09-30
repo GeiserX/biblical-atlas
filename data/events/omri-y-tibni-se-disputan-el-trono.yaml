@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: omri-y-tibni-se-disputan-el-trono
+title: Omrí y Tibní se disputan el trono
+date:
+  from: -950
+  to: -946
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 951-947 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 16021
+places:
+- tirza
+people:
+- tibni
+- omri
+present:
+- omri
+roles:
+  tibni:
+    role: died
+    date:
+      from: -946
+      to: -946
+      precision: year
+      approx: true
+      type: anchored
+      chronology: tnm
+      text: c. 947 a.e.c.
+passages:
+- 1Re 16:21, 22
+summary: 'El pueblo se parte en dos: unos quieren rey a Tibní, hijo de Guinat, y otros siguen a Omrí. Tras unos cuatro años
+  vencen los de Omrí; Tibní muere y Omrí reina solo.'
+reason: '1Re 16:21-23; Perspicacia «Omrí», núm. 3, y «Tibní»: la división dura unos cuatro años, de c. 951 a la muerte de
+  Tibní hacia 947, año 31 de Asá. Omrí reinaba en Tirzá; de Tibní no se dice dónde.'
+sources:
+- 1-reyes-16
+- it-omri
+- it-tibni
+- tnm-a6-a
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Tibní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004400
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

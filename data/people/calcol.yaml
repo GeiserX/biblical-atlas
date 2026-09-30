@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: calcol
+name: Calcol
+names:
+- name: Calcol
+perspicacia: '1200000862'
+summary: Sabio de gran fama, uno de los hijos de Mahol, al que Salomón superó en sabiduría. Perspicacia ve posible que sea
+  el descendiente de Zérah, de Judá, de 1Cr 2:6.
+reason: Perspicacia «Calcol»; 1Re 4:31.
+sources:
+- it-calcol
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Calcol»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000862
+  type: perspicacia
+relations:
+- type: kin
+  person: mahol
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-mahol
+  reason: 1Re 4:31 llama a Hemán, Calcol y Dardá hijos de Mahol.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

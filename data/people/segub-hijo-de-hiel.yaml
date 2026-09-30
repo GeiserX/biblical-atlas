@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: segub-hijo-de-hiel
+name: Segub
+names:
+- name: Segub
+perspicacia: 1200003883#2
+disambiguation: El hijo menor de Hiel; no Segub hijo de Hezrón, el padre de Jaír.
+summary: Hijo menor de Hiel de Betel. Murió cuando su padre colocó las puertas de Jericó, en cumplimiento de la maldición
+  de Josué.
+reason: Perspicacia «Segub», núm. 2; 1Re 16:34.
+sources:
+- it-segub
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Segub»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003883
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: kin
+  person: hiel
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-segub
+  reason: '1Re 16:34: Segub era el hijo menor de Hiel.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
