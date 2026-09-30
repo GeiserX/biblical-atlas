@@ -510,6 +510,26 @@ test('1440: the panel opens tall, the splitter shrinks it and the size survives 
   await context.close();
 });
 
+test('1440: the sincronía lies above the strip: its place picker takes the click and «Cerrar» closes it', async () => {
+  for (const hash of ['t=50.5&v=8', 't=50.5&v=8&linea=normal']) {
+    const p = await open(DESKTOP, hash);
+    await p.evaluate(() => window.BE.sincronia.alternar());
+    await frames(p, 4);
+    const sel = await p.evaluate(() => { const r = document.querySelector('#vista-sincronia select[data-sinc="lugar"]').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
+    const before = await state(p);
+    await p.mouse.click(sel[0], sel[1]); await frames(p);
+    const after = await state(p);
+    const focus = await p.evaluate(() => document.activeElement?.tagName);
+    const cerrar = await p.evaluate(() => { const r = document.querySelector('#vista-sincronia [data-sinc="cerrar"]').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
+    await p.keyboard.press('Escape');
+    await p.mouse.click(cerrar[0], cerrar[1]); await frames(p);
+    const closed = await p.evaluate(() => document.querySelector('#vista-sincronia').hidden);
+    note(`1440 sincronía (${hash}): click on the place picker ${after.t === before.t ? 'kept' : 'moved'} the cursor, focus ${focus}; «Cerrar» ${closed ? 'closed it' : 'did not close it'}`);
+    assert.equal(after.t, before.t); assert.equal(focus, 'SELECT'); assert.ok(closed);
+    await p.context().close();
+  }
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);
