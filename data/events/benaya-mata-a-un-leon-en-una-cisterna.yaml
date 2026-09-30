@@ -2,13 +2,15 @@
 id: benaya-mata-a-un-leon-en-una-cisterna
 title: Benaya mata a un león en una cisterna
 date:
-  from: -1106
+  from: -1076
   to: -1039
   precision: range
   approx: true
-  type: narrative
+  type: derived
   chronology: tnm
-  text: 'entre 1107 y c. 1040 a.e.c. (tiempo narrativo: entre las hazañas de los guerreros de David)'
+  text: 'entre 1077 y c. 1040 a.e.c. (cálculo nuestro: en el reinado de David)'
+  note: 'Cuenta nuestra: 1Cr 11:10 los presenta como quienes apoyaron a David en su reinado, y 2Sa 23:9, 11 muestran al ejército
+    de Israel en campaña. Desde 1077, David rey (estudio 3), hasta el fin de 2 Samuel (c. 1040).'
 narrative_order:
   series: 2-samuel
   order: 23020
@@ -22,16 +24,17 @@ passages:
 - 1Cr 11:22
 summary: Un día de nieve, Benaya se mete en una cisterna y mata allí a un león.
 reason: '2Sa 23:20; «Benaya», núm. 1. Cabzeel: así lee la TNM, pero Perspicacia «Qabzeel» admite otras lecturas; no sitúa
-  a nadie. El único límite anclado va del nacimiento de David (1107) al fin de 2 Samuel (c. 1040), estudio 3.'
+  a nadie. Sin año: en el reinado de David, por 1Cr 11:10; la cuenta va en la nota de la fecha.'
 sources:
 - 2-samuel-23
 - it-benaya
 - it-qabzeel
 - si-3
 - tnm-tabla
+- 1-cronicas-11
 links:
 - title: 2 Samuel 23 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/23
   type: bible
 checked_on: '2026-09-29'
-status: verified
+status: pending
