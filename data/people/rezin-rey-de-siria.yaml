@@ -66,16 +66,6 @@ relations:
   reason: 'Is 7:1, 2, 5: Siria se unió a Efraín, y Rezín subió con Pécah contra Jerusalén.'
   checked_on: '2026-09-30'
   status: verified
-- type: tie
-  person: acaz
-  word: enemy
-  inferred: false
-  sources:
-  - 2-reyes-16
-  - it-rezin
-  reason: '2Re 16:5, 7: cerca a Acaz en Jerusalén, y Acaz pide ayuda contra él.'
-  checked_on: '2026-09-30'
-  status: verified
 - type: lived_in
   place: damasco
   inferred: true
