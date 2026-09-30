@@ -572,6 +572,50 @@ test('1440: with the graph open, T and the menu change what the strip shows, bot
   await p.context().close();
 });
 
+test('1440: names on bars read in both themes and faint bars carry a border', async () => {
+  const p = await open(DESKTOP, 't=50.5&v=8');
+  for (const theme of ['claro', 'reunión']) {
+    await p.evaluate((dark) => document.documentElement.classList.toggle('be-reunion', dark), theme === 'reunión');
+    let low = [], unbordered = [], names = 0;
+    for (const [t, s] of [[-1512.5, 4125], [-480, 400], [50.5, 8]]) {
+      await goTo(p, t, s);
+      const r = await p.evaluate(async () => {
+        const rgb = (c) => (c.match(/[\d.]+/g) || []).slice(0, 3).map(Number);
+        const lum = (c) => { const [r, g, b] = c.map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+        const ratio = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+        const cuerpo = document.querySelector('#linea-cuerpo');
+        const raf = () => new Promise((res) => requestAnimationFrame(() => requestAnimationFrame(res)));
+        const low = [], unb = []; let n = 0;
+        for (let y = 0, g = 0; g < 200; g++, y += cuerpo.clientHeight) {
+          cuerpo.scrollTop = y; await raf();
+          for (const b of document.querySelectorAll('#linea-filas .carril:not([hidden]) .m')) {
+            const bar = b.querySelector('.m-barra'); if (!bar) continue;
+            const bg = getComputedStyle(bar).backgroundColor;
+            const lab = b.querySelector('.m-nombre');
+            if (lab.classList.contains('en-barra')) { n++; const c = ratio(rgb(getComputedStyle(lab).color), rgb(bg)); if (c < 4.5) low.push(`${lab.textContent} ${c.toFixed(2)}`); }
+            if (!b.matches('.m--hueca, .m--secular, .atenuado')) {
+              // The background the bar sits on: the first ancestor with an opaque one.
+              let el = b.closest('.carril'), fondo = 'rgba(0, 0, 0, 0)';
+              while (el && /rgba\(.*, 0\)$|transparent/.test(fondo = getComputedStyle(el).backgroundColor)) el = el.parentElement;
+              const f = rgb(fondo);
+              if (ratio(rgb(bg), f) < 3 && !bar.classList.contains('con-borde')) unb.push(`${lab.textContent} ${ratio(rgb(bg), f).toFixed(2)}`);
+            }
+          }
+          if (y + cuerpo.clientHeight >= cuerpo.scrollHeight) break;
+        }
+        return { low: [...new Set(low)], unb: [...new Set(unb)], n };
+      });
+      low.push(...r.low); unbordered.push(...r.unb); names += r.n;
+    }
+    low = [...new Set(low)]; unbordered = [...new Set(unbordered)];
+    note(`1440 theme ${theme}: ${names} names on bars, ${low.length} under 4.5:1${low.length ? ` (${low.slice(0, 4).join('; ')})` : ''}; ${unbordered.length} faint bars without border`);
+    assert.deepEqual(low.slice(0, 10), []);
+    assert.deepEqual(unbordered.slice(0, 10), []);
+  }
+  await p.evaluate(() => document.documentElement.classList.remove('be-reunion'));
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

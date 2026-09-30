@@ -82,12 +82,12 @@ const luz = (rgb) => { const [r, g, b] = rgb.map((v) => { v /= 255; return v <= 
 const contraste = (a, b) => { const x = luz(a), y = luz(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
 const BLANCO = [255, 255, 255], TINTA = [24, 34, 28];
 /** Clases del texto y de la forma de una barra de ese color: «sobre-claro» si la tinta oscura lee mejor que el blanco;
-    «con-borde» si la barra y el fondo de la línea no llegan a 3:1. */
+    «con-borde» si la barra y el fondo de la línea no llegan a 3:1 en alguno de los dos fondos de los carriles. */
 function tonos(color) {
   const c = rgbDe(color);
   if (!c) return { texto: '', forma: '' };
-  const fondo = rgbDe('var(--surface)') || BLANCO;
-  return { texto: contraste(c, BLANCO) >= contraste(c, TINTA) ? '' : ' sobre-claro', forma: contraste(c, fondo) < 3 ? ' con-borde' : '' };
+  const fondos = [rgbDe('var(--surface)') || BLANCO, rgbDe('var(--surface-2)') || BLANCO];
+  return { texto: contraste(c, BLANCO) >= contraste(c, TINTA) ? '' : ' sobre-claro', forma: fondos.some((f) => contraste(c, f) < 3) ? ' con-borde' : '' };
 }
 /** El color mezclado con negro en la fracción f: el segundo tono de las eras, para que dos vecinas no se fundan. */
 function oscurecer(color, f) {
@@ -566,6 +566,8 @@ function colorear(it) {
   // Una fecha secular se pinta clara con contorno de trazos (linea.css): su nombre va en el color secular, no según c.
   const tn = it.secular ? { texto: '', forma: '' } : tonos(c);
   it.labEl.classList.toggle('sobre-claro', !!tn.texto);
+  // Una forma llena que casi no se distingue del fondo de la línea lleva borde (be-64b.1).
+  forma.classList.toggle('con-borde', !hueca && !!tn.forma);
 }
 function mascara(el, l, r) {
   const v = l || r ? `linear-gradient(90deg, transparent 0, #000 ${l}px, #000 calc(100% - ${r}px), transparent 100%)` : '';
