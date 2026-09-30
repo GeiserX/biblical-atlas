@@ -173,6 +173,7 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | `js/lectura.js` | Modo lectura de cualquier capítulo con datos |
 | `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
 | `js/portada.js` | Portada con épocas, recorridos y preguntas guía |
+| `js/traer.js` | El último: la primera vez que alguien entra en la dirección nueva, trae lo que guardó en la anterior a través de su puente, sin pisar nada de aquí ([`direccion-anterior/`](../direccion-anterior/README.md)). Fuera de esa dirección no hace nada |
 | `js/tipos/*.js` | Un fichero por tipo de entidad: `lugar`, `persona`, `viaje`, `parada`, `carta`, `evento`, `periodo`, `hallazgo`, `recorrido`, `libro` y `pasaje` |
 
 La aplicación son scripts clásicos con `defer`, no módulos ES. Desde `file://` el navegador bloquea los `import` locales, y el sitio tiene que abrir con doble clic. `index.html` los carga en un orden fijo y todos comparten un solo objeto, `window.BE`. [`js/base.js`](js/base.js) va primero y crea `BE`. El arranque espera a `DOMContentLoaded`, que llega cuando ya se han ejecutado todos los scripts, así que un fichero puede usar cualquier función de otro siempre que la llame a través de `BE` en el momento de usarla.

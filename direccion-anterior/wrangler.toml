@@ -1,0 +1,14 @@
+# biblical-atlas · la dirección anterior. Se publica con `npx wrangler deploy` desde esta carpeta.
+name = "biblical-atlas-direccion-anterior"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+
+# La ruta se añade el día del cambio, cuando la dirección nueva ya sirve el sitio (README.md).
+# routes = [{ pattern = "biblical-earth.geiser.cloud/*", zone_name = "geiser.cloud" }]
+
+# puente.html y puente.js se importan como texto: el Worker los sirve tal cual.
+[[rules]]
+type = "Text"
+globs = ["puente.html", "puente.js"]
+fallthrough = false
