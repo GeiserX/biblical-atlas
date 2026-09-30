@@ -352,7 +352,8 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .portada-icono { flex: none; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 50%; background: var(--surface); color: var(--ink-2); cursor: pointer; }
 .portada-icono svg { width: 20px; height: 20px; }
 .portada-icono--letra span[aria-hidden] { font: 700 15px/1 var(--font-serif); }
-.portada-icono[aria-pressed="true"] { background: var(--surface-2); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-2); }
+/* Pulsado se ve lleno, con el color de la tinta, en los dos temas: un fondo casi igual no se distinguía. */
+.portada-icono[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
 
 /* «Seguir donde lo dejaste», la primera línea para quien vuelve. El sitio queda reservado desde la cabecera (be-vuelve)
    para que nada salte al rellenarlo. */
@@ -452,7 +453,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .portada-mini__ruta i { position: absolute; display: grid; place-items: center; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); font: 700 var(--fs-xs)/1 var(--font-sans); font-style: normal; color: var(--ink); }
 /* En reunión el relieve se apaga como el mapa del sitio; los dibujos ya van con los colores de reunión. */
 .be-reunion.be-con-portada .portada-banda__relieve, .be-reunion.be-con-portada .portada-mini--mapa .portada-mini__relieve { filter: brightness(.6) saturate(.7); }
-.be-reunion .portada-mini__pin { color: #1b1813; }
+.be-reunion .portada-mini__pin { color: var(--ink); text-shadow: 0 0 3px #14110d, 0 0 3px #14110d, 0 0 6px #14110d; }
 
 .portada-mas { margin-top: 14px; }
 .portada-mas summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 4px; cursor: pointer; font: 600 var(--fs-md)/1 var(--font-sans); color: var(--ink-2); }
