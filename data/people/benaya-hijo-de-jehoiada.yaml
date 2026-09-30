@@ -60,24 +60,15 @@ relations:
     de Joab. 23:23: David le confió el mando de su guardia.'
   checked_on: '2026-09-30'
   status: verified
-- type: accompanies
-  person: salomon
-  caption: jefe del ejército de
-  inverse_caption: su jefe del ejército
-  inferred: false
-  sources:
-  - 1-reyes-2
-  - it-benaya
-  reason: '1Re 2:35: Salomón pone a Benaya al mando del ejército en lugar de Joab.'
-  checked_on: '2026-09-30'
-  status: verified
 - type: tie
   person: salomon
   word: master
   inferred: false
   sources:
   - 1-reyes-4
-  reason: '1Re 4:4: estaba al mando del ejército de Salomón.'
+  - 1-reyes-2
+  - it-benaya
+  reason: '1Re 2:35; 4:4: Salomón lo pone al mando del ejército en lugar de Joab.'
   checked_on: '2026-09-30'
   status: verified
 checked_on: '2026-09-30'

@@ -49,8 +49,7 @@ relations:
   status: verified
 - type: tie
   person: salomon
-  caption: rey para el que hizo la obra de cobre del templo
-  inverse_caption: artesano que le hizo la obra de cobre del templo
+  word: master
   sources:
   - 1-reyes-7
   - it-hiram
