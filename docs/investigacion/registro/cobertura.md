@@ -51,7 +51,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Sofonías](../../../data/coverage/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
 | [Ageo](../../../data/coverage/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
 | [Zacarías](../../../data/coverage/zacarias.yaml) | 14 de 14 | 211 de 211 | 100 % |
-| Malaquías | 0 de 4 | 0 de 55 | 0 % |
+| [Malaquías](../../../data/coverage/malaquias.yaml) | 4 de 4 | 55 de 55 | 100 % |
 | [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
 | [Marcos](../../../data/coverage/marcos.yaml) | 16 de 16 | 661 de 661 | 100 % |
 | [Lucas](../../../data/coverage/lucas.yaml) | 24 de 24 | 1149 de 1149 | 100 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 801 de 1189 | 21690 de 31062 | 70 % |
+| **Total** | 805 de 1189 | 21745 de 31062 | 70 % |
 
 ## Capítulos empezados
 

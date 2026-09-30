@@ -1697,6 +1697,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-mena | [Mená](https://wol.jw.org/es/wol/d/r4/lp-s/1200002980) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-menahem | [Menahem](https://wol.jw.org/es/wol/d/r4/lp-s/1200002978) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-menfis | [Menfis](https://wol.jw.org/es/wol/d/r4/lp-s/1200002976) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mensajero | [Mensajero](https://wol.jw.org/es/wol/d/r4/lp-s/1200003017) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-meonenim | [Meonenim, Árbol grande de](https://wol.jw.org/es/wol/d/r4/lp-s/1200002983) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-merab | [Merab](https://wol.jw.org/es/wol/d/r4/lp-s/1200002987) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-merari | [Merarí](https://wol.jw.org/es/wol/d/r4/lp-s/1200002990) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2727,6 +2728,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | lucas-7 | [Lucas 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | lucas-8 | [Lucas 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | lucas-9 | [Lucas 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/42/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| malaquias-1 | [Malaquías 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| malaquias-2 | [Malaquías 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| malaquias-3 | [Malaquías 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| malaquias-4 | [Malaquías 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/39/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | marcos-1 | [Marcos 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | marcos-10 | [Marcos 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | marcos-11 | [Marcos 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/41/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -2940,6 +2945,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | si-habacuc | [Libro bíblico número 35: Habacuc](https://wol.jw.org/es/wol/d/r4/lp-s/1101990096) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-joel | [Libro bíblico número 29: Joel](https://wol.jw.org/es/wol/d/r4/lp-s/1101990090) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-jonas | [Libro bíblico número 32: Jonás](https://wol.jw.org/es/wol/d/r4/lp-s/1101990093) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
+| si-malaquias | [Libro bíblico número 39: Malaquías](https://wol.jw.org/es/wol/d/r4/lp-s/1101990100) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-30 |
 | si-miqueas | [Libro bíblico número 33: Miqueas](https://wol.jw.org/es/wol/d/r4/lp-s/1101990094) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-nahum | [Libro bíblico número 34: Nahúm](https://wol.jw.org/es/wol/d/r4/lp-s/1101990095) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
 | si-oseas | [Libro bíblico número 28: Oseas](https://wol.jw.org/es/wol/d/r4/lp-s/1101990089) | “Toda Escritura es inspirada de Dios y provechosa” | 1 | sin dato | 2026-09-29 |
@@ -2976,6 +2982,8 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w00-gozosos-en-dios | [Gozosos en el Dios de nuestra salvación](https://wol.jw.org/es/wol/d/r4/lp-s/2000085) | La Atalaya (1 de febrero de 2000) | 1 | 2000 | 2026-09-29 |
 | w00-inicuos | [¿Cuánto tiempo les queda a los inicuos?](https://wol.jw.org/es/wol/d/r4/lp-s/2000083) | La Atalaya (1 de febrero de 2000) | 1 | 2000 | 2026-09-29 |
 | w00-jehova-no-tardara | [Jehová no tardará](https://wol.jw.org/es/wol/d/r4/lp-s/2000084) | La Atalaya (1 de febrero de 2000) | 1 | 2000 | 2026-09-29 |
+| w02-jehova-odia-la-traicion | [Jehová odia la traición](https://wol.jw.org/es/wol/d/r4/lp-s/2002324) | La Atalaya (1 de mayo de 2002) | 1 | 2002 | 2026-09-30 |
+| w02-requisitos-divinos | [Satisfacer los requisitos divinos engrandece a Jehová](https://wol.jw.org/es/wol/d/r4/lp-s/2002323) | La Atalaya (1 de mayo de 2002) | 1 | 2002 | 2026-09-30 |
 | w03-andaremos-en-el-nombre | [Andaremos en el nombre de Jehová para siempre](https://wol.jw.org/es/wol/d/r4/lp-s/2003603) | La Atalaya (15 de agosto de 2003) | 1 | 2003 | 2026-09-29 |
 | w03-esperanza-verdadera | [Los siervos de Jehová tenemos una esperanza verdadera](https://wol.jw.org/es/wol/d/r4/lp-s/2003602) | La Atalaya (15 de agosto de 2003) | 1 | 2003 | 2026-09-29 |
 | w03-que-espera-jehova | [¿Qué espera Jehová de nosotros?](https://wol.jw.org/es/wol/d/r4/lp-s/2003604) | La Atalaya (15 de agosto de 2003) | 1 | 2003 | 2026-09-29 |
@@ -2989,6 +2997,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | w07-abdias-jonas-y-miqueas | [Puntos sobresalientes de los libros de Abdías, Jonás y Miqueas](https://wol.jw.org/es/wol/d/r4/lp-s/2007803) | La Atalaya (1 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w07-ageo-y-zacarias | [Puntos sobresalientes de los libros de Ageo y Zacarías](https://wol.jw.org/es/wol/d/r4/lp-s/2007882) | La Atalaya (1 de diciembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w07-joel-y-amos | [Puntos sobresalientes de los libros de Joel y Amós](https://wol.jw.org/es/wol/d/r4/lp-s/2007722) | La Atalaya (1 de octubre de 2007) | 1 | 2007 | 2026-09-29 |
+| w07-malaquias | [Puntos sobresalientes del libro de Malaquías](https://wol.jw.org/es/wol/d/r4/lp-s/2007927) | La Atalaya (15 de diciembre de 2007) | 1 | 2007 | 2026-09-30 |
 | w07-nahum-habacuc-y-sofonias | [Puntos sobresalientes de los libros de Nahúm, Habacuc y Sofonías](https://wol.jw.org/es/wol/d/r4/lp-s/2007842) | La Atalaya (15 de noviembre de 2007) | 1 | 2007 | 2026-09-29 |
 | w08-escritura-cuneiforme | [La escritura cuneiforme y la Biblia](https://wol.jw.org/es/wol/d/r4/lp-s/2008924) | La Atalaya (15 de diciembre de 2008) | 1 | 2008 | 2026-09-28 |
 | w08-salmo-83 | [La respuesta de Jehová a una oración ferviente](https://wol.jw.org/es/wol/d/r4/lp-s/2008763) | La Atalaya (15 de octubre de 2008) | 1 | 2008 | 2026-09-29 |

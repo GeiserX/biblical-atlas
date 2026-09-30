@@ -132,6 +132,8 @@ Las series `a7` y `hechos` ya tienen su propia numeración.
 
 Los años van en numeración astronómica: 537 a.e.c. es −536, y 1 a.e.c. es 0.
 
+**El suceso de todo un libro profético no sitúa a nadie.** Va sin `type` ni `roles` y con `present: []`, aunque la tabla diga dónde se escribió; la residencia deducida del profeta va en su relación `lived_in`. Solo un mensaje que el texto fecha y sitúa, como los de Zacarías, lleva `type: speech`, el papel `spoke` y `present`.
+
 ## 7. Relaciones
 
 Se apunta cada relación que el texto afirma, con el capítulo en sus `sources` y el pasaje en su `reason`. Sin un pasaje, la relación no se dibuja en el sitio.

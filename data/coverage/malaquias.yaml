@@ -1,0 +1,34 @@
+# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+book: malaquias
+chapters:
+  1:
+    status: complete
+    reviewed_on: 2026-09-30
+    spans:
+    - {v: "1", type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo, person:malaquias, relation:malaquias/holds_office/-], mentions: [relation:malaquias/lived_in/jerusalen, person:nehemias, event:nehemias-vuelve-a-la-corte-443], note: "Encabezamiento: declaración de Jehová para Israel por medio de Malaquías, nombre que la nota traduce «mi mensajero». «Toda Escritura» lo pone cuando Nehemías regresó a Jerusalén, pasado el año 443."}
+    - {v: 2-5, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo, person:esau, person:jacob, relation:esau/kin/jacob, place:edom], mentions: [event:nacimiento-de-esau-y-jacob, person:nabonido, place:israel], note: "Jehová amó a Jacob y odió a su hermano Esaú (Ro 9:13); desde el v. 3 los dos nombres son Edom e Israel como pueblos. Nabonido ya asoló Edom, según Perspicacia «Edom»; si reconstruye, Jehová lo derribará."}
+    - {v: 6-9, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Los sacerdotes desprecian el nombre de Jehová: ponen en su altar animales ciegos, cojos o enfermos que ni el gobernador aceptaría. El texto no lo nombra; «Toda Escritura», libro 39, párr. 3, deduce que era Nehemías."}
+    - {v: 10-14, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Ni cierran las puertas del templo ni encienden el altar gratis, según la nota y La Atalaya de 2007. Jehová rechaza sus ofrendas; su nombre será grande entre las naciones. Maldice a quien le da un animal defectuoso."}
+  2:
+    status: complete
+    reviewed_on: 2026-09-30
+    spans:
+    - {v: 1-4, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [event:se-monta-el-tabernaculo, event:instalacion-del-sacerdocio], note: "Mandato a los sacerdotes: si no honran el nombre de Jehová, sus bendiciones serán maldiciones y el estiércol de sus fiestas les caerá encima. Perspicacia «Pacto» fecha en 1512 el pacto con la tribu de Leví."}
+    - {v: 5-9, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [event:levitas-matan-a-los-idolatras, event:nehemias-vuelve-a-la-corte-443], note: "Ese pacto traía vida y paz a una tribu que temía a Jehová y enseñaba la verdad: el sacerdote es su mensajero. Estos lo arruinaron y hacen tropezar a muchos. Las referencias remiten a Éx 32:26 y Ne 13:29."}
+    - {v: 10-12, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo, place:israel, place:jerusalen], mentions: [event:nehemias-vuelve-a-la-corte-443], note: "Tienen un solo padre, Jehová (La Atalaya de 2002), y se traicionan. En Israel y Jerusalén, Judá se casa con adoradoras de un dios extranjero (Ne 13:23); Jehová quitará al culpable de las tiendas de Jacob, el pueblo."}
+    - {v: 13-16, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Las lágrimas que cubren el altar son, según La Atalaya de 2007, de esposas judías abandonadas. Jehová fue testigo del pacto con la esposa de la juventud: odia el divorcio y la violencia."}
+    - {v: "17", type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Cansan a Jehová cuando dicen que él favorece a quien obra mal o preguntan dónde está el Dios de la justicia."}
+  3:
+    status: complete
+    reviewed_on: 2026-09-30
+    spans:
+    - {v: 1-5, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [person:juan-el-bautista, person:jesus, person:levi-hijo-de-jacob, place:juda, place:jerusalen, event:juan-comienza-su-ministerio, event:higuera-maldita-y-limpieza-del-templo, event:nacimiento-de-juan-el-bautista, event:juan-envia-discipulos], note: "Jehová enviará a su mensajero y vendrá a su templo con el mensajero del pacto para refinar a los hijos de Leví. Son Juan el Bautista y Jesús, que limpió el templo el 10 de nisán de 33 (Atalaya 2007)."}
+    - {v: 6-12, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [person:jacob, event:nehemias-vuelve-a-la-corte-443], note: "Jehová no cambia, y los hijos de Jacob siguen en pie. Le roban en diezmos y contribuciones; si llevan el diezmo entero al almacén, los colmará de bendiciones. «Toda Escritura» liga estos versículos con Ne 13:10-12."}
+    - {v: 13-18, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Algunos dicen que servir a Dios no compensa. Quienes lo temen hablan entre sí, Jehová los escucha y se escribe ante él un libro de recuerdo; serán su propiedad especial."}
+  4:
+    status: complete
+    reviewed_on: 2026-09-30
+    spans:
+    - {v: 1-3, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], note: "Viene un día ardiente como un horno que no dejará a los malvados raíz ni rama. Sobre quienes honran el nombre de Jehová brillará el sol de la justicia, que los curará."}
+    - {v: "4", type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [person:moises, place:desierto-de-sinai, event:pacto-de-la-ley], note: "Recordar la Ley que Jehová dio a todo Israel por medio de Moisés en Horeb. Perspicacia «Horeb» pone este versículo entre los que usan el nombre para la región del Sinaí."}
+    - {v: 5-6, type: prophecy, entities: [event:malaquias-reprende-a-sacerdotes-y-pueblo], mentions: [person:elias-profeta, person:juan-el-bautista, event:juan-comienza-su-ministerio, event:anuncio-a-zacarias, event:juan-envia-discipulos, event:transfiguracion], note: "Antes del gran día de Jehová vendrá el profeta Elías y volverá los corazones de padres e hijos. Jesús y el ángel lo aplican a Juan el Bautista (Mt 17:10-13; Lu 1:17); «Toda Escritura» espera otro cumplimiento."}

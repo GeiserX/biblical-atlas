@@ -1,0 +1,36 @@
+# biblical-earth: fuentes de la cobertura de malaquias. Esquema en docs/investigacion/README.md.
+si-malaquias:
+  title: 'Libro bíblico número 39: Malaquías'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990100
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+w07-malaquias:
+  title: Puntos sobresalientes del libro de Malaquías
+  work: La Atalaya (15 de diciembre de 2007)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2007927
+  level: 1
+  published: 2007
+  checked_on: '2026-09-30'
+w02-requisitos-divinos:
+  title: Satisfacer los requisitos divinos engrandece a Jehová
+  work: La Atalaya (1 de mayo de 2002)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2002323
+  level: 1
+  published: 2002
+  checked_on: '2026-09-30'
+w02-jehova-odia-la-traicion:
+  title: Jehová odia la traición
+  work: La Atalaya (1 de mayo de 2002)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2002324
+  level: 1
+  published: 2002
+  checked_on: '2026-09-30'
+it-mensajero:
+  title: Mensajero
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003017
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
