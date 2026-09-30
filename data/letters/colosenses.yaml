@@ -30,6 +30,9 @@ people:
 - lucas
 - demas
 - arquipo
+- bernabe
+- jesus-justo
+- ninfa
 context_origin:
   summary: Hacia el final del primer encarcelamiento en Roma; Epafras le había informado del estado de la congregación.
   sources:
@@ -49,6 +52,8 @@ sources:
 - it-onesimo
 - it-epafras
 - it-aristarco
+- colosenses-4
+- it-laodicea
 links:
 - title: 'Perspicacia: «Colosenses, Carta a los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001011
@@ -56,5 +61,5 @@ links:
 - title: Colosenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified

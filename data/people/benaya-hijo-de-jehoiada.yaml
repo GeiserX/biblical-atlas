@@ -40,26 +40,17 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
-  person: david
-  caption: jefe de los keretitas y los peletitas de
-  inverse_caption: su jefe de keretitas y peletitas
-  sources:
-  - 2-samuel-8
-  - it-peletitas
-  - 2-samuel-20
-  reason: '2Sa 8:18; 20:23: Benaya mandaba a keretitas y peletitas. Perspicacia «Peletitas»: servían al rey aparte del ejército
-    de Joab.'
-  inferred: false
-  checked_on: '2026-09-29'
-  status: verified
 - type: tie
   person: david
   word: master
   inferred: false
   sources:
   - 2-samuel-23
-  reason: '2Sa 23:23: David le confió el mando de su guardia.'
+  - 2-samuel-8
+  - it-peletitas
+  - 2-samuel-20
+  reason: '2Sa 8:18; 20:23: mandaba a keretitas y peletitas, que según Perspicacia «Peletitas» servían al rey aparte del ejército
+    de Joab. 23:23: David le confió el mando de su guardia.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

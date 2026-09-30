@@ -36,16 +36,15 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-- type: accompanies
+- type: tie
   person: david
-  caption: registrador de
-  inverse_caption: su registrador
+  word: master
+  inferred: false
   sources:
   - 2-samuel-8
   - it-jehosafat
   - 2-samuel-20
   reason: '2Sa 8:16; 20:24: era el registrador de David.'
-  inferred: false
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

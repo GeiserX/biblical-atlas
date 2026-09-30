@@ -9,8 +9,8 @@ lon: 29.127375
 precision: point
 coord_source: openbible:a11bbbe
 coord_url: https://www.openbible.info/geo/ancient/a11bbbe/hierapolis
-summary: Ciudad de la provincia de Asia, en el valle del Lico, a unos 10 km de Laodicea. Pablo al parecer no la
-  visitó; el cristianismo llegó allí por el esfuerzo de Epafras.
+summary: Ciudad de la provincia de Asia, en el valle del Lico, a unos 10 km de Laodicea. Pablo al parecer no la visitó; parece
+  que el cristianismo llegó allí por el esfuerzo de Epafras.
 reason: 'Perspicacia «Hierápolis» (párr. 1 y 2); Col 4:12, 13. Coordenada de OpenBible: solo tomamos el punto.'
 sources:
 - it-hierapolis
@@ -23,5 +23,10 @@ links:
 - title: Colosenses 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-29'
+  change: El resumen daba por seguro que Epafras llevó allí el cristianismo; Perspicacia «Hierápolis», párr. 2, solo lo presenta
+    como probable (Col 4:12, 13).
+  source: colosenses-4
+checked_on: '2026-09-29'
 status: verified

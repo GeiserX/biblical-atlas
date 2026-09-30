@@ -9,16 +9,31 @@ names:
 - name: Era de Kidón
   note: Así la llama 1Cr 13:9. Perspicacia «Nacón» ve probable que un nombre sea el del sitio y el otro el de su dueño.
 type: region
-lat: 31.776667
-lon: 35.234167
+lat: null
+lon: null
 precision: uncertain
-coord_source: openbible:ae67841
-coord_url: https://www.openbible.info/geo/ancient/ae67841/perez-uzzah
-coord_note: 'Punto de OpenBible, que la pone a menos de 1 km de Jerusalén: es el centro de la ciudad, no la era. Perspicacia
-  no conoce el sitio; el texto la pone en el camino, antes de llegar.'
+coord_source: null
+coord_url: null
+candidates:
+- name: En el camino de Quiryat-Jearim a Jerusalén
+  geometry:
+    type: zone
+    lat: 31.793
+    lon: 35.169
+    radius_km: 6.4
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-perez-uzah
+  - 2-samuel-6
+  - openbible-geo
+  reason: Perspicacia no conoce el sitio. 2Sa 6:2-8 pone la era en el camino del Arca hacia Jerusalén, antes de llegar.
+  coord_source: calculation
+  note: 'Centro: punto medio entre los puntos de OpenBible de Quiryat-Jearim y Jerusalén. Radio nuestro, la mitad de esa distancia.'
 summary: Era en el camino del Arca de Quiryat-Jearim a Jerusalén, donde Jehová mató a Uzá por sujetar el Arca. David la llamó
   Pérez-Uzá. Hoy no se sabe dónde estaba.
-reason: 'Perspicacia «Pérez-uzah» y «Nacón»; 2Sa 6:6-8; 1Cr 13:9-11. Coordenada de OpenBible: solo tomamos el punto.'
+reason: 'Perspicacia «Pérez-uzah» y «Nacón»; 2Sa 6:6-8; 1Cr 13:9-11. Perspicacia no sitúa la era: sin punto, con una zona
+  calculada.'
 sources:
 - it-perez-uzah
 - it-nacon

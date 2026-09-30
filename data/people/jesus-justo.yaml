@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jesus-justo
+name: Jesús Justo
+names:
+- name: Jesús
+- name: Justo
+  note: Así lo llamaban (Col 4:11). Perspicacia lo trata en «Jesús», núm. 4, y en «Justo», núm. 3.
+perspicacia: 1200002450#4
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c. (fecha de Colosenses)
+disambiguation: Colaborador judío de Pablo en Roma (Col 4:11). No es Jesucristo ni Jesús hijo de Eliezer, ni Ticio Justo ni
+  José Barsabás, que también se llamaba Justo.
+distinct_from:
+- jesus
+- jesus-hijo-de-eliezer
+- ticio-justo
+- jose-barsabas
+summary: Cristiano judío que estuvo con Pablo durante su primer encierro en Roma. Con Aristarco y Marcos, era de los pocos
+  colaboradores circuncisos que lo consolaban, y mandó saludos a los colosenses.
+reason: Perspicacia «Jesús», núm. 4, y «Justo», núm. 3; Col 4:10, 11. La fecha es la de Colosenses, hacia 60-61 según la Tabla
+  de los libros.
+sources:
+- it-jesus
+- it-justo
+- colosenses-4
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Jesús»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002450
+  type: perspicacia
+- title: 'Perspicacia: «Justo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002561
+  type: perspicacia
+- title: Colosenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
+  type: bible
+relations:
+- type: accompanies
+  person: pablo
+  word: fellow_worker
+  date:
+    from: 60
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 60-61 e.c.
+  inferred: false
+  sources:
+  - colosenses-4
+  - it-justo
+  - tnm-tabla
+  reason: 'Col 4:11: con Aristarco y Marcos, es de los únicos colaboradores judíos de Pablo, que le dan consuelo en su prisión
+    de Roma (Perspicacia «Justo», núm. 3).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

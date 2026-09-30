@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: primer-mensaje-de-ageo
+title: Ageo da su primer mensaje sobre el templo
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1 de elul de 520 a.e.c.
+  detail:
+    month: elul
+    day: 1
+narrative_order:
+  series: ageo
+  order: 1001
+places:
+- jerusalen
+people:
+- ageo
+- zorobabel
+- josue-sumo-sacerdote
+passages:
+- Ag 1:1-11
+summary: Por medio de Ageo, Jehová reprocha al gobernador Zorobabel, al sumo sacerdote Josué y al pueblo que cuiden sus casas
+  mientras el templo sigue en ruinas, y les manda traer madera para edificarlo.
+reason: 'Perspicacia «Ageo, Libro de»: los cuatro mensajes se dieron en Jerusalén en 520 a.e.c., año segundo de Darío Histaspes.
+  Ag 1:1 fecha este el día 1 del sexto mes, elul.'
+sources:
+- ageo-1
+- it-ageo-libro
+- it-ageo
+- si-ageo
+- it-dario
+links:
+- title: 'Perspicacia: «Ageo, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001813
+  type: perspicacia
+- title: Ageo 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

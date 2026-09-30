@@ -79,5 +79,15 @@ class PairCopies(unittest.TestCase):
         self.assertEqual(keep.get("reference"), "Lu 3:23; Mt 13:55")
 
 
+class Summary(unittest.TestCase):
+    def test_counts_every_type_the_site_shows(self):
+        salida = {"generado": "2026-09-30", "lugares": {"a": 1, "b": 2}, "personas": {"p": 1}, "eventos": [1, 2, 3],
+                  "periodos": [], "cartas": [1], "viajes": [], "hallazgos": [1, 2], "recorridos": [1],
+                  "fuentes": {"s": 1, "t": 2, "u": 3}, "libros": [1] * 66}
+        self.assertEqual(build.resumen(salida), {"generado": "2026-09-30", "lugares": 2, "personas": 1, "eventos": 3,
+                                                 "periodos": 0, "cartas": 1, "viajes": 0, "hallazgos": 2,
+                                                 "recorridos": 1, "fuentes": 3, "libros": 66})
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

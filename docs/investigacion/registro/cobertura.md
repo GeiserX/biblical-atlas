@@ -49,7 +49,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Nahúm](../../../data/coverage/nahum.yaml) | 3 de 3 | 47 de 47 | 100 % |
 | [Habacuc](../../../data/coverage/habacuc.yaml) | 3 de 3 | 56 de 56 | 100 % |
 | [Sofonías](../../../data/coverage/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
-| Ageo | 0 de 2 | 0 de 38 | 0 % |
+| [Ageo](../../../data/coverage/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
@@ -60,10 +60,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Romanos](../../../data/coverage/romanos.yaml) | 16 de 16 | 432 de 432 | 100 % |
 | [1 Corintios](../../../data/coverage/1-corintios.yaml) | 16 de 16 | 437 de 437 | 100 % |
 | [2 Corintios](../../../data/coverage/2-corintios.yaml) | 13 de 13 | 257 de 257 | 100 % |
-| Gálatas | 0 de 6 | 0 de 149 | 0 % |
-| Efesios | 0 de 6 | 0 de 155 | 0 % |
-| Filipenses | 0 de 4 | 0 de 104 | 0 % |
-| Colosenses | 0 de 4 | 0 de 95 | 0 % |
+| [Gálatas](../../../data/coverage/galatas.yaml) | 6 de 6 | 149 de 149 | 100 % |
+| [Efesios](../../../data/coverage/efesios.yaml) | 6 de 6 | 155 de 155 | 100 % |
+| [Filipenses](../../../data/coverage/filipenses.yaml) | 4 de 4 | 104 de 104 | 100 % |
+| [Colosenses](../../../data/coverage/colosenses.yaml) | 4 de 4 | 95 de 95 | 100 % |
 | 1 Tesalonicenses | 0 de 5 | 0 de 89 | 0 % |
 | 2 Tesalonicenses | 0 de 3 | 0 de 47 | 0 % |
 | 1 Timoteo | 0 de 6 | 0 de 113 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 743 de 1189 | 20122 de 31062 | 65 % |
+| **Total** | 765 de 1189 | 20663 de 31062 | 67 % |
 
 ## Capítulos empezados
 
