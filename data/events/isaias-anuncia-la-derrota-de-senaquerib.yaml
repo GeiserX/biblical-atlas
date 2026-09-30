@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: isaias-anuncia-la-derrota-de-senaquerib
-title: Isaías anuncia la derrota de Senaquerib
+title: Isaías anuncia que el rey de Asiria no entrará en Jerusalén
 date:
   from: -731
   to: -731
@@ -10,8 +10,8 @@ date:
   chronology: tnm
   text: 732 a.e.c.
 narrative_order:
-  series: isaias
-  order: 37021
+  series: 2-reyes
+  order: 19020
 places:
 - jerusalen
 people:
@@ -24,10 +24,10 @@ roles:
 present:
 - ezequias
 passages:
-- Is 37:21-35
 - 2Re 19:20-34
-summary: 'Isaías manda decir a Ezequías que Jehová oyó su oración: Sion se ríe del asirio, que no entrará en la ciudad ni
-  le lanzará una flecha y volverá por donde vino. Jehová la defenderá por él y por David.'
+- Is 37:21-35
+summary: 'Jehová responde por Isaías: el soberbio rey asirio, que desafió al Santo de Israel, volverá por su camino sin atacar
+  la ciudad. Judá recibe una señal y un resto que volverá a echar raíces.'
 reason: Responde a la oración de Is 37:14-20, en 732 a.e.c. (estudio 3). El texto dice que Isaías envió el mensaje, no dónde
   estaba él; Ezequías seguía en Jerusalén.
 sources:
@@ -35,9 +35,19 @@ sources:
 - si-3
 - ip1-29
 - 2-reyes-19
+- it-rabsaque
+- it-ezequias
 links:
 - title: Isaías 37 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
   type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso de 2 Reyes, dueño del relato: toma su título, su resumen y su orden. Isaías sigue fuera
+    de los presentes: el texto dice que envió el mensaje, no dónde estaba.'
+  source: 2-reyes-19
 checked_on: '2026-09-30'
 status: verified
