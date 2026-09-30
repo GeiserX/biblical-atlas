@@ -6,7 +6,7 @@ La aplicación vive en [biblical-atlas.geiser.cloud](https://biblical-atlas.geis
 
 La primera vez, el sitio abre en la portada: las épocas de la Biblia, los cuatro recorridos guiados y unas preguntas guía. Cualquiera de ellas lleva al mapa con la fecha ya puesta.
 
-![La portada: las épocas, los recorridos guiados y las preguntas guía](images/screenshots/portada.png)
+![La portada: la caja que busca una persona, un lugar, un capítulo o un año, y tres preguntas con su respuesta](images/screenshots/portada.png)
 
 Con una dirección que ya lleva una vista (por ejemplo, un enlace que te han pasado) el sitio abre directamente en el mapa. Para volver a la portada, pulsa el nombre de arriba a la izquierda.
 

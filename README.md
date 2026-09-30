@@ -31,7 +31,7 @@
 <p align="center"><a href="https://biblical-atlas.geiser.cloud/">Aplicación</a> · <a href="https://biblical-atlas.geiser.cloud/docs/">Documentación</a> · <a href="https://biblical-atlas.geiser.cloud/acerca.html">Acerca de</a> · <a href="https://biblical-atlas.geiser.cloud/docs/hoja-de-ruta/">Hoja de ruta</a> · <a href="https://biblical-atlas.geiser.cloud/docs/decisiones/">Decisiones</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
 
 <p align="center">
-  <a href="https://biblical-atlas.geiser.cloud/#t=50.3000&v=40&mapa=antiguo"><img src="docs/images/screenshots/mapa.png" alt="El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de Samotracia con su pasaje y su fuente, y la línea de tiempo con los carriles de Pablo, las cartas, los sucesos y los emperadores" width="900"></a>
+  <a href="https://biblical-atlas.geiser.cloud/#t=50.3000&v=40&mapa=antiguo"><img src="docs/images/screenshots/mapa.png" alt="El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de Samotracia con su pasaje, y la línea de tiempo con las eras, los emperadores, los gobernadores, los sumos sacerdotes y los viajes de Pablo, cada nombre entero" width="900"></a>
 </p>
 
 ## Funcionalidades
