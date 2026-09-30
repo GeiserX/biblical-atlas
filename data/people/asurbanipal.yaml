@@ -24,6 +24,7 @@ sources:
 - it-asiria
 - it-no-amon
 - nahum-3
+- it-esar-hadon
 links:
 - title: 'Perspicacia: «Asurbanipal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000430
@@ -50,5 +51,16 @@ relations:
   reason: En Nínive estaban su palacio y su biblioteca (Perspicacia «Nínive», párr. 2, y «Asnapar», párr. 4).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: esar-hadon
+  word: father
+  inferred: true
+  sources:
+  - it-asnapar
+  - it-esar-hadon
+  reason: Perspicacia «Asnapar», párr. 2, dice que su padre fue Esar-Hadón, el rey de Esd 4:2, y «Esar-hadón», último párr.,
+    que este lo nombró heredero.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

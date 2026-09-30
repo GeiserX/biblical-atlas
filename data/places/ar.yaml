@@ -20,6 +20,7 @@ sources:
 - openbible-geo
 - numeros-21
 - deuteronomio-2
+- isaias-15
 links:
 - title: 'Perspicacia: «Ar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000321
@@ -27,5 +28,5 @@ links:
 - title: Números 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/21
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

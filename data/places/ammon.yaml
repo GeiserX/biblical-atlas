@@ -28,6 +28,8 @@ sources:
 - sofonias-2
 - 2-samuel-10
 - 2-samuel-12
+- isaias-11
+- ip1-13
 links:
 - title: 'Perspicacia: «Ammonitas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000240
@@ -38,5 +40,5 @@ links:
 - title: Salmo 83 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/83
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

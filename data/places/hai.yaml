@@ -3,6 +3,9 @@ id: hai
 name: Hai
 names:
 - name: Hai
+- name: Ayat
+  note: Forma femenina del nombre en Is 10:28. En tiempos de Isaías, Hai o una ciudad vecina estaba poblada y sería la primera
+    que tomaría el rey de Asiria camino de Jerusalén (Perspicacia «Hai»).
 type: city
 lat: null
 lon: null
@@ -51,9 +54,10 @@ sources:
 - josue-7
 - josue-8
 - josue-12
+- isaias-10
 links:
 - title: 'Perspicacia: «Hai»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000178
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

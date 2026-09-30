@@ -5,6 +5,8 @@ names:
 - name: Edén
 - name: Jardín de Edén
   note: El jardín ocupaba solo una parte de la región, hacia el este (Gé 2:8).
+- name: Jardín de Jehová
+  note: Así llama Is 51:3 al jardín de Edén, según Perspicacia «Edén», núm. 1; Ez 28:13 lo llama jardín de Dios.
 type: region
 lat: null
 lon: null
@@ -69,6 +71,7 @@ sources:
 - genesis-2
 - openbible-geo
 - genesis-3
+- isaias-51
 links:
 - title: 'Perspicacia: «Edén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001256
@@ -76,5 +79,5 @@ links:
 - title: Génesis 2 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/2
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

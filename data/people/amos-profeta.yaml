@@ -50,7 +50,8 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200000246#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - amos-hijo-de-nahum
+- amoz

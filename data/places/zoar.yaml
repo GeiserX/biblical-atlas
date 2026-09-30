@@ -63,6 +63,7 @@ sources:
 - genesis-13
 - genesis-14
 - genesis-19
+- isaias-15
 links:
 - title: 'Perspicacia: «Zóar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004755
@@ -70,5 +71,5 @@ links:
 - title: Génesis 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/19
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -19,6 +19,7 @@ sources:
 - 2-reyes-15
 - 2-reyes-16
 - tnm-a6-b
+- isaias-7
 links:
 - title: 'Perspicacia: «Péqah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003415
@@ -37,5 +38,25 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: remalias
+  word: father
+  inferred: false
+  sources:
+  - isaias-7
+  - it-remalias
+  reason: Is 7:1 lo llama Pécah hijo de Remalías, igual que 2Re 15:25.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: true
+  sources:
+  - isaias-7
+  - it-peqah
+  reason: 'Is 7:9: el hijo de Remalías es la cabeza de Samaria, y la nota dice «rey»; Samaria era la capital de Israel.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200003415'
+checked_on: '2026-09-30'
 status: verified

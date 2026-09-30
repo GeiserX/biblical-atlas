@@ -13,8 +13,8 @@ date:
   type: anchored
   chronology: tnm
   text: 2018-1843 a.e.c.
-summary: Hijo de Taré, natural de Ur. Por fe dejó su tierra y vivió en tiendas en Canaán. Dios pactó con él que por su descendencia
-  se bendecirían las naciones. Padre de Ismael e Isaac, murió a los 175 años.
+summary: Hijo de Taré, de Ur. Por fe dejó su tierra y vivió en tiendas en Canaán. Dios pactó con él bendecir a las naciones
+  por su descendencia y lo llamó amigo. Padre de Ismael e Isaac; murió con 175 años.
 reason: 'Perspicacia «Abrahán», párr. 3, 4, 8, 13, 14 y 17: nace en 2018 y muere en 1843 a.e.c. El cuadro del estudio 3 da
   los mismos años.'
 sources:
@@ -42,6 +42,8 @@ sources:
 - galatas-3
 - galatas-4
 - josue-24
+- isaias-41
+- isaias-51
 links:
 - title: 'Perspicacia: «Abrahán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000060
@@ -243,5 +245,10 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200000060'
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: El resumen añade que Jehová lo llama su amigo (Is 41:8), dato que la ficha no tenía; para caber en 40 palabras se
+    acorta el origen en Ur.
+  source: isaias-41
+checked_on: '2026-09-30'
 status: verified

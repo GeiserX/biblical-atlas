@@ -29,6 +29,7 @@ passages:
 - Sl 66:6
 - Jos 4:10-18
 - Jos 24:11
+- Is 43:16
 summary: Cuarenta años después del éxodo, los sacerdotes que llevan el Arca entran en el Jordán desbordado. El agua se detiene
   río arriba, en Adán, y la nación pasa en seco frente a Jericó. Empieza la conquista.
 reason: El cuadro del estudio 3 fecha la entrada en 1473 a.e.c.; Josué 4:19 da el día 10 del primer mes, que desde el éxodo
@@ -41,6 +42,8 @@ sources:
 - it-jordan
 - it-adan
 - tnm-b4
+- isaias-43
+- ip2-4
 links:
 - title: 'Perspicacia: «Canaán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000874
@@ -54,5 +57,5 @@ history:
   change: 'El resumen cuenta ahora cómo se cruzó: el Arca en el río crecido, el agua represada en Adán y el paso frente a
     Jericó (Jos 3:14-17). La llegada a Guilgal tiene su propio suceso.'
   source: josue-3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

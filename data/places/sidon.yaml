@@ -31,6 +31,7 @@ sources:
 - jueces-1
 - zacarias-9
 - 2-samuel-24
+- isaias-23
 links:
 - title: 'Perspicacia: «Sidón, sidonios»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004113
@@ -46,5 +47,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el pasaje de Marcos que añade el resumen.
   source: marcos-7
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

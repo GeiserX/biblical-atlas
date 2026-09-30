@@ -22,6 +22,12 @@ sources:
 - it-persia
 - isaias-45
 - esdras-1
+- isaias-44
+- ip2-5
+- it-isaias-libro
+- ip2-6
+- isaias-46
+- ip2-7
 links:
 - title: 'Perspicacia: «Ciro»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001102
@@ -31,6 +37,18 @@ links:
   type: bible
 not_claimed:
 - 'Que Ciro se hiciera adorador de Jehová: Perspicacia dice que reconoció los hechos, no que se convirtiera.'
-relations: []
-checked_on: '2026-09-28'
+relations:
+- type: lived_in
+  place: persia
+  inferred: true
+  sources:
+  - isaias-46
+  - it-ciro
+  - ip2-7
+  reason: 'Is 46:11: Jehová llama desde el este a un ave rapaz, de un país lejano. Perspicacia «Ciro» la identifica con Ciro,
+    llamado desde Persia, donde levantó Pasargada, su capital preferida.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200001102'
+checked_on: '2026-09-30'
 status: verified

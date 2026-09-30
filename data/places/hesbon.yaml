@@ -12,8 +12,8 @@ lon: 35.809062
 precision: point
 coord_source: openbible:abf2fc1
 coord_url: https://www.openbible.info/geo/ancient/abf2fc1/heshbon
-summary: Ciudad al este del Jordán, entre el Arnón y el Jaboq, hoy las ruinas de Hisban. Sehón, rey amorreo, se la quitó a
-  Moab; tras la conquista fue de Rubén y luego ciudad levita de Gad. Tenía estanques.
+summary: Ciudad al este del Jordán, entre el Arnón y el Jaboq, hoy Hisban. Sehón, rey amorreo, se la quitó a Moab; luego fue
+  de Rubén y ciudad levita de Gad. Tenía estanques. Siglos después volvió a Moab.
 reason: 'Perspicacia «Hesbón», párr. 1-4, y «Bat-rabim»; Nú 21:25-30, 34; Can 7:4 compara los ojos de la sulamita con sus estanques.
   Se identifica con las ruinas de Hisban. OpenBible: solo el punto.'
 sources:
@@ -31,6 +31,8 @@ sources:
 - josue-13
 - josue-21
 - jueces-11
+- isaias-15
+- isaias-16
 links:
 - title: 'Perspicacia: «Hesbón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002006
@@ -47,5 +49,10 @@ links:
 - title: El Cantar de los Cantares 7 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/7
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'Añade que más tarde fue de Moab: Isaías y Jeremías la nombran en sus profecías contra Moab (Perspicacia «Hesbón»,
+    párr. 4).'
+  source: isaias-15
+checked_on: '2026-09-30'
 status: verified

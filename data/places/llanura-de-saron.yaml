@@ -12,8 +12,8 @@ precision: zone
 coord_source: openbible:a83fd43
 coord_url: https://www.openbible.info/geo/ancient/a83fd43/sharon-1
 coord_note: Punto representativo de la llanura.
-summary: Llanura fértil de la costa, de unos 60 km, del río Crocodilon a la zona de Jope. Al curar Pedro a Eneas,
-  los de Lida y de Sarón se volvieron al Señor.
+summary: Llanura fértil de la costa, de unos 60 km, del río Crocodilon a Jope; al parecer la invasión asiria la desoló en
+  buena parte (Is 33:9). Al curar Pedro a Eneas, los de Lida y Sarón se volvieron al Señor.
 reason: 'Perspicacia «Sarón», apartado 1 (párr. 2 y 3); Hch 9:35. La coordenada es de OpenBible: solo tomamos el
   punto.'
 sources:
@@ -21,6 +21,8 @@ sources:
 - hch-9
 - openbible-geo
 - cantar-de-los-cantares-2
+- isaias-33
+- isaias-65
 links:
 - title: 'Perspicacia: «Sarón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003955
@@ -28,5 +30,10 @@ links:
 - title: Hechos 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'Se añade lo que Perspicacia «Sarón», núm. 1, dice de Is 33:9: gran parte de la llanura quedó desolada en la invasión
+    asiria del siglo VIII a.e.c.'
+  source: isaias-33
+checked_on: '2026-09-30'
 status: verified

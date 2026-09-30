@@ -21,6 +21,11 @@ sources:
 - tnm-a6-b
 - mateo-1
 - proverbios-25
+- isaias-36
+- isaias-37
+- ip1-29
+- isaias-38
+- isaias-39
 links:
 - title: 'Perspicacia: «Ezequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002011
@@ -64,6 +69,37 @@ relations:
     párr. 1, y Perspicacia «Amarías», núm. 6, dicen «probablemente». Sof 1:1 no lo llama rey.
   checked_on: '2026-09-29'
   status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - isaias-36
+  - isaias-37
+  - isaias-38
+  reason: 'Is 36:2: el ejército asirio va a Jerusalén, donde estaba el rey Ezequías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: senaquerib
+  word: enemy
+  inferred: false
+  sources:
+  - isaias-36
+  - it-senaquerib
+  - isaias-37
+  reason: 'Is 36:1, 5: Senaquerib ataca Judá y el rabsaqué reprocha a Ezequías que se rebelara contra el rey de Asiria (2Re
+    18:7).'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - isaias-38
+  reason: 'Is 38:5: Jehová, el Dios de su antepasado David, le responde por medio de Isaías.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Ezequías» y el estudio 3 daban 745-717 a.e.c.; A6-B, más reciente, da 746 para su comienzo y 716 para
@@ -76,5 +112,5 @@ history:
 perspicacia: 1200002011#1
 disambiguation: El rey de Judá, hijo de Acaz. Perspicacia registra aparte al antepasado de Sofonías (ezequias-antepasado-de-sofonias),
   que quizá sea él, y a otro cuyos descendientes volvieron del destierro.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

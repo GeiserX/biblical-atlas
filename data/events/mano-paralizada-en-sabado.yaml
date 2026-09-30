@@ -27,6 +27,7 @@ passages:
 - Mt 12:9-21
 - Mr 3:1-12
 - Lu 6:6-11
+- Is 42:1-4
 summary: En una sinagoga, Jesús cura en sábado a un hombre con la mano derecha seca. Fariseos y partidarios de Herodes traman
   matarlo; él se retira al mar y le sigue una multitud a la que cura.
 reason: 'A7-C, fila 12: Galilea y mar de Galilea. El libro jy (cap. 32 y 33) enlaza la curación con la retirada al lago y la
@@ -38,5 +39,5 @@ sources:
 - lucas-6
 - jy-cap-32
 - jy-cap-33
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

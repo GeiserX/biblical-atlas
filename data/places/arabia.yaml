@@ -19,6 +19,8 @@ sources:
 - galatas-1
 - openbible-geo
 - galatas-4
+- isaias-21
+- ip1-17
 links:
 - title: 'Perspicacia: «Arabia»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000327
@@ -33,5 +35,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita también el párrafo de Perspicacia «Arabia» sobre el Sinaí y Gál 4:25.
   source: galatas-4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -11,6 +11,10 @@ sources:
 - 2-reyes-18
 - 2-reyes-19
 - si-3
+- it-sargon
+- isaias-36
+- ip1-29
+- isaias-37
 links:
 - title: 'Perspicacia: «Senaquerib»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003897
@@ -25,8 +29,65 @@ relations:
   sources:
   - it-senaquerib
   - 2-reyes-19
-  reason: Lo mataron sus hijos en la casa de su dios Nisroc, en Nínive (2Re 19:36-37).
-  checked_on: '2026-09-28'
+  - isaias-37
+  reason: 'Is 37:37, 38 y 2Re 19:36, 37: ya de vuelta en Nínive, sus hijos lo matan mientras adora a Nisroc, su dios.'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: sargon
+  word: father
+  inferred: true
+  sources:
+  - it-sargon
+  reason: 'Perspicacia «Sargón», último párr.: al morir Sargón, el rey de Is 20:1, reinó su hijo Senaquerib.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: sargon
+  office: king
+  inferred: true
+  sources:
+  - it-sargon
+  - si-isaias
+  reason: 'Perspicacia «Sargón», último párr., y «Toda Escritura», libro 23, párr. 15: Sargón (Is 20:1) reinó en Asiria antes
+    que Senaquerib.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: king
+  place: asiria
+  inferred: false
+  sources:
+  - isaias-36
+  - it-senaquerib
+  - isaias-37
+  reason: Is 36:1 lo llama rey de Asiria, y el rabsaqué, «el gran rey» (Is 36:4, 13). Perspicacia «Senaquerib» lo da como
+    hijo y heredero de Sargón II.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: tirhaca
+  word: enemy
+  inferred: false
+  sources:
+  - isaias-37
+  - it-tirhaqa
+  reason: 'Is 37:8, 9: mientras Senaquerib atacaba Libná, le avisaron de que Tirhacá, rey de Etiopía, venía a pelear contra
+    él.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: ninive
+  inferred: false
+  sources:
+  - isaias-37
+  reason: 'Is 37:37: tras perder su ejército volvió a Nínive y se quedó a vivir allí.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200003897'
+history:
+- date: '2026-09-30'
+  change: 'La razón de died_in ninive se escribe con palabras propias: repetía nueve seguidas de Perspicacia «Adramélec».'
+  source: isaias-37
+checked_on: '2026-09-30'
 status: verified
