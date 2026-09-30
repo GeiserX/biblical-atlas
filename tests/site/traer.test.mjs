@@ -24,12 +24,12 @@ const NUEVO = 'https://biblical-atlas.geiser.cloud';
 const ANTERIOR = 'https://biblical-earth.geiser.cloud';
 const TERCERO = 'https://tercero.example';
 
-// traer.js en una página que no está en la dirección nueva: no arranca nada y deja ver `fundir`.
+// fundir-claves.js y traer.js en una página que no está en la dirección nueva: no arranca nada y deja ver `fundir`.
 function cargarTraer() {
   const ctx = { location: { origin: 'http://127.0.0.1:8000' } };
   ctx.window = ctx;
   vm.createContext(ctx);
-  vm.runInContext(fs.readFileSync(path.join(SITE_DIR, 'js', 'traer.js'), 'utf8'), ctx);
+  for (const f of ['fundir-claves.js', 'traer.js']) vm.runInContext(fs.readFileSync(path.join(SITE_DIR, 'js', f), 'utf8'), ctx);
   return ctx.traerAnterior;
 }
 // worker.js con sus dos importaciones de texto cambiadas por el contenido de los ficheros, como hace wrangler.

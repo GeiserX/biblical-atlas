@@ -29,7 +29,9 @@
   }
 }
 </script>
-<!-- Primero de los que leen el almacenamiento: copia las claves guardadas con el prefijo anterior. -->
+<!-- Primero de los que leen el almacenamiento: junta las claves guardadas con el prefijo anterior. fundir-claves.js es la
+     regla para juntar, la misma que usa traer.js. -->
+<script src="js/fundir-claves.js"></script>
 <script src="js/migrar-claves.js"></script>
 <script>
   // Modo reunión antes del primer pintado: sin esto la página sale clara un instante y luego se oscurece.

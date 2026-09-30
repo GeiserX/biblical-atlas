@@ -33,4 +33,4 @@ El sitio vivía en `https://biblical-earth.geiser.cloud/` y ahora vive en `https
 
 ## Apagarlo
 
-Después de `HASTA`, `traer.js` ya no pide nada. Entonces se borran `site/js/traer.js`, `site/js/migrar-claves.js`, sus etiquetas en `index.html` y sus pruebas, y el Worker se queda solo con la redirección.
+Después de `HASTA`, `traer.js` ya no pide nada. Entonces se borran `site/js/traer.js`, `site/js/migrar-claves.js`, `site/js/fundir-claves.js`, sus etiquetas en `index.html` y sus pruebas, y el Worker se queda solo con la redirección.
