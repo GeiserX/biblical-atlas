@@ -33,6 +33,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-reyes-10 | [1 Reyes 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-11 | [1 Reyes 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-12 | [1 Reyes 12](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-13 | [1 Reyes 13](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/13) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-14 | [1 Reyes 14](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/14) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-15 | [1 Reyes 15](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-16 | [1 Reyes 16](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -40,10 +41,15 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-reyes-18 | [1 Reyes 18](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-19 | [1 Reyes 19](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-2 | [1 Reyes 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-20 | [1 Reyes 20](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-21 | [1 Reyes 21](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/21) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-22 | [1 Reyes 22](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-3 | [1 Reyes 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-4 | [1 Reyes 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-5 | [1 Reyes 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-6 | [1 Reyes 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-7 | [1 Reyes 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-reyes-8 | [1 Reyes 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-reyes-9 | [1 Reyes 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-1 | [1 Samuel 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-samuel-10 | [1 Samuel 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -105,6 +111,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 2-cronicas-27 | [2 Crónicas 27](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/27) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-28 | [2 Crónicas 28](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/28) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-29 | [2 Crónicas 29](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/29) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 2-cronicas-3 | [2 Crónicas 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-33 | [2 Crónicas 33](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/33) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-cronicas-35 | [2 Crónicas 35](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/14/35) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 2-juan-1 | [2 Juan 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/63/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -415,6 +422,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | isaias-7 | [Isaías 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | it-aaron | [Aarón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000005) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-abarim | [Abarim](https://wol.jw.org/es/wol/d/r4/lp-s/1200000010) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-abda | [Abdá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000012) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-abdias | [Abdías](https://wol.jw.org/es/wol/d/r4/lp-s/1200003287) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-abdias-libro | [Abdías, Libro de](https://wol.jw.org/es/wol/d/r4/lp-s/1200003288) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-abdon | [Abdón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000016) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -442,6 +450,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-abinadab | [Abinadab](https://wol.jw.org/es/wol/d/r4/lp-s/1200000046) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-abinoam | [Abinoam](https://wol.jw.org/es/wol/d/r4/lp-s/1200000047) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-abiram | [Abiram](https://wol.jw.org/es/wol/d/r4/lp-s/1200000048) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-abisag | [Abisag](https://wol.jw.org/es/wol/d/r4/lp-s/1200000049) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-abisai | [Abisai](https://wol.jw.org/es/wol/d/r4/lp-s/1200000050) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-abital | [Abital](https://wol.jw.org/es/wol/d/r4/lp-s/1200000054) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-abiud | [Abiud](https://wol.jw.org/es/wol/d/r4/lp-s/1200000056) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -499,11 +508,13 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ahimaaz | [Ahimáaz](https://wol.jw.org/es/wol/d/r4/lp-s/1200000156) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahiman | [Ahimán](https://wol.jw.org/es/wol/d/r4/lp-s/1200000157) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahimelec | [Ahimélec](https://wol.jw.org/es/wol/d/r4/lp-s/1200000158) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ahinadab | [Ahinadab](https://wol.jw.org/es/wol/d/r4/lp-s/1200000160) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-ahinoam | [Ahinoam](https://wol.jw.org/es/wol/d/r4/lp-s/1200000161) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahio | [Ahió](https://wol.jw.org/es/wol/d/r4/lp-s/1200000162) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahira | [Ahirá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000163) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahiram | [Ahiram](https://wol.jw.org/es/wol/d/r4/lp-s/1200000164) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahisamac | [Ahisamac](https://wol.jw.org/es/wol/d/r4/lp-s/1200000166) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ahisar | [Ahisar](https://wol.jw.org/es/wol/d/r4/lp-s/1200000168) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-ahitofel | [Ahitofel](https://wol.jw.org/es/wol/d/r4/lp-s/1200000169) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahitub | [Ahitub](https://wol.jw.org/es/wol/d/r4/lp-s/1200000170) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ahiya | [Ahíya](https://wol.jw.org/es/wol/d/r4/lp-s/1200000153) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -519,6 +530,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-alejandria | [Alejandría](https://wol.jw.org/es/wol/d/r4/lp-s/1200000193) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-alejandro | [Alejandro](https://wol.jw.org/es/wol/d/r4/lp-s/1200000192) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-alfeo | [Alfeo](https://wol.jw.org/es/wol/d/r4/lp-s/1200000209) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-algum | [Algum](https://wol.jw.org/es/wol/d/r4/lp-s/1200000194) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-almodad | [Almodad](https://wol.jw.org/es/wol/d/r4/lp-s/1200000202) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-almon | [Almón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000203) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-almon-diblataim | [Almón-diblataim](https://wol.jw.org/es/wol/d/r4/lp-s/1200000205) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -615,7 +627,9 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-arqueologia | [Arqueología](https://wol.jw.org/es/wol/d/r4/lp-s/1200000344) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-arquipo | [Arquipo](https://wol.jw.org/es/wol/d/r4/lp-s/1200000348) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-artajerjes | [Artajerjes](https://wol.jw.org/es/wol/d/r4/lp-s/1200000389) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-arubot | [Arubot](https://wol.jw.org/es/wol/d/r4/lp-s/1200000392) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-aruma | [Arumá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000393) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-arza | [Arzá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000396) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-asa | [Asá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000397) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-asaf | [Asaf](https://wol.jw.org/es/wol/d/r4/lp-s/1200000400) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-asahel | [Asahel](https://wol.jw.org/es/wol/d/r4/lp-s/1200000398) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -658,12 +672,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-aya | [Ayá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000179) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ayalon | [Ayalón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000182) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azan | [Azán](https://wol.jw.org/es/wol/d/r4/lp-s/1200000503) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-azarias | [Azarías](https://wol.jw.org/es/wol/d/r4/lp-s/1200000486) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-azazel | [Azazel](https://wol.jw.org/es/wol/d/r4/lp-s/1200000488) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azeqa | [Azeqá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000491) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azmavet | [Azmávet](https://wol.jw.org/es/wol/d/r4/lp-s/1200000496) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azmon | [Azmón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000497) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-aznot-tabor | [Aznot-tabor](https://wol.jw.org/es/wol/d/r4/lp-s/1200000498) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-azor | [Azor](https://wol.jw.org/es/wol/d/r4/lp-s/1200000499) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-azuba | [Azubá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000502) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-baal-berit | [Baal-berit](https://wol.jw.org/es/wol/d/r4/lp-s/1200000509) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baal-de-peor | [Baal de Peor](https://wol.jw.org/es/wol/d/r4/lp-s/1200000518) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baal-gad | [Baal-gad](https://wol.jw.org/es/wol/d/r4/lp-s/1200000511) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -678,6 +694,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-baala | [Baalá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000506) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baalat | [Baalat](https://wol.jw.org/es/wol/d/r4/lp-s/1200000507) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baalat-beer | [Baalat-beer](https://wol.jw.org/es/wol/d/r4/lp-s/1200000508) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-baana | [Baaná](https://wol.jw.org/es/wol/d/r4/lp-s/1200000524) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-baanah | [Baanah](https://wol.jw.org/es/wol/d/r4/lp-s/1200000525) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-baasa | [Baasá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000528) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-babel | [Babel](https://wol.jw.org/es/wol/d/r4/lp-s/1200000529) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -811,6 +828,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-cain | [Caín](https://wol.jw.org/es/wol/d/r4/lp-s/1200000857) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-cainan | [Cainán](https://wol.jw.org/es/wol/d/r4/lp-s/1200000858) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-calah | [Cálah](https://wol.jw.org/es/wol/d/r4/lp-s/1200000860) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-calcol | [Calcol](https://wol.jw.org/es/wol/d/r4/lp-s/1200000862) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-caldea | [Caldea, caldeo](https://wol.jw.org/es/wol/d/r4/lp-s/1200000917) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-caleb | [Caleb](https://wol.jw.org/es/wol/d/r4/lp-s/1200000863) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-calebita | [Calebita](https://wol.jw.org/es/wol/d/r4/lp-s/1200000865) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -829,6 +847,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-carmi | [Carmí](https://wol.jw.org/es/wol/d/r4/lp-s/1200000894) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-carquemis | [Carquemis](https://wol.jw.org/es/wol/d/r4/lp-s/1200000889) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-casa-de-arbel | [Arbel, Casa de](https://wol.jw.org/es/wol/d/r4/lp-s/1200000342) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-casa-del-bosque-del-libano | [Casa del Bosque del Líbano](https://wol.jw.org/es/wol/d/r4/lp-s/1200002096) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-casluhim | [Casluhim](https://wol.jw.org/es/wol/d/r4/lp-s/1200000902) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-cauda | [Cauda](https://wol.jw.org/es/wol/d/r4/lp-s/1200000906) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-cebada | [Cebada](https://wol.jw.org/es/wol/d/r4/lp-s/1200000565) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -901,6 +920,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-dan-jaan | [Dan-jaán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001120) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-dana | [Daná](https://wol.jw.org/es/wol/d/r4/lp-s/1200001121) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-daniel | [Daniel](https://wol.jw.org/es/wol/d/r4/lp-s/1200001117) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-darda | [Dará, Dardá](https://wol.jw.org/es/wol/d/r4/lp-s/1200001122) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-dario | [Darío](https://wol.jw.org/es/wol/d/r4/lp-s/1200001124) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-datan | [Datán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001127) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-david | [David](https://wol.jw.org/es/wol/d/r4/lp-s/1200001130) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -910,6 +930,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-dedan | [Dedán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001143) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-demas | [Demas](https://wol.jw.org/es/wol/d/r4/lp-s/1200001151) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-demetrio | [Demetrio](https://wol.jw.org/es/wol/d/r4/lp-s/1200001152) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-dequer | [Déquer](https://wol.jw.org/es/wol/d/r4/lp-s/1200001147) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-derbe | [Derbe](https://wol.jw.org/es/wol/d/r4/lp-s/1200001158) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-desierto-de-juda | [Judá, Desierto de](https://wol.jw.org/es/wol/d/r4/lp-s/1200002539) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-deuel | [Deuel](https://wol.jw.org/es/wol/d/r4/lp-s/1200001162) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -976,6 +997,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ehud | [Ehúd](https://wol.jw.org/es/wol/d/r4/lp-s/1200001268) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-ejercito | [Ejército](https://wol.jw.org/es/wol/d/r4/lp-s/1200000376) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-el-paran | [El-parán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001338) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ela | [Elá](https://wol.jw.org/es/wol/d/r4/lp-s/1200001272) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-elah | [Elah](https://wol.jw.org/es/wol/d/r4/lp-s/1200001273) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-elam | [Elam](https://wol.jw.org/es/wol/d/r4/lp-s/1200001274) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-elasar | [Elasar](https://wol.jw.org/es/wol/d/r4/lp-s/1200001328) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -997,6 +1019,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-eliezer | [Eliezer](https://wol.jw.org/es/wol/d/r4/lp-s/1200001304) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elifaz | [Elifaz](https://wol.jw.org/es/wol/d/r4/lp-s/1200001313) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elifelet | [Elifélet](https://wol.jw.org/es/wol/d/r4/lp-s/1200001315) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-elihoref | [Elihóref](https://wol.jw.org/es/wol/d/r4/lp-s/1200001305) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-elihu | [Elihú](https://wol.jw.org/es/wol/d/r4/lp-s/1200001306) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elim | [Elim](https://wol.jw.org/es/wol/d/r4/lp-s/1200001309) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elimas | [Elimas](https://wol.jw.org/es/wol/d/r4/lp-s/1200001345) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1013,6 +1036,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-elizur | [Elizur](https://wol.jw.org/es/wol/d/r4/lp-s/1200001325) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elmadam | [Elmadam](https://wol.jw.org/es/wol/d/r4/lp-s/1200001329) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elon | [Elón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001333) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-elon-bet-hanan | [Elón-bet-hanán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001334) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-elqana | [Elqaná](https://wol.jw.org/es/wol/d/r4/lp-s/1200001326) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elqosita | [Elqosita](https://wol.jw.org/es/wol/d/r4/lp-s/1200001327) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-elteqon | [Elteqón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001341) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1069,6 +1093,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-etam | [Etam](https://wol.jw.org/es/wol/d/r4/lp-s/1200001432) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-etan | [Etán](https://wol.jw.org/es/wol/d/r4/lp-s/1200001434) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-etanim | [Etanim](https://wol.jw.org/es/wol/d/r4/lp-s/1200001435) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-etbaal | [Etbaal](https://wol.jw.org/es/wol/d/r4/lp-s/1200001436) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-eter | [Éter](https://wol.jw.org/es/wol/d/r4/lp-s/1200001437) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-etiopia | [Etiopía](https://wol.jw.org/es/wol/d/r4/lp-s/1200001438) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-eufrates | [Éufrates](https://wol.jw.org/es/wol/d/r4/lp-s/1200001446) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1157,6 +1182,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-gudgoda | [Gudgoda](https://wol.jw.org/es/wol/d/r4/lp-s/1200001777) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-gueba | [Gueba](https://wol.jw.org/es/wol/d/r4/lp-s/1200001627) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guebal | [Guebal, guebalitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200001628) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-gueber | [Guéber](https://wol.jw.org/es/wol/d/r4/lp-s/1200001629) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-guedalias | [Guedalías](https://wol.jw.org/es/wol/d/r4/lp-s/1200001632) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-gueder | [Guéder](https://wol.jw.org/es/wol/d/r4/lp-s/1200001633) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guedera | [Guederá](https://wol.jw.org/es/wol/d/r4/lp-s/1200001634) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1165,6 +1191,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-guedor | [Guedor](https://wol.jw.org/es/wol/d/r4/lp-s/1200001639) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guelilot | [Guelilot](https://wol.jw.org/es/wol/d/r4/lp-s/1200001643) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guemali | [Guemalí](https://wol.jw.org/es/wol/d/r4/lp-s/1200001644) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-guenubat | [Guenubat](https://wol.jw.org/es/wol/d/r4/lp-s/1200001655) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-guera-i | [Guerá, I](https://wol.jw.org/es/wol/d/r4/lp-s/1200001656) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guerar | [Guerar](https://wol.jw.org/es/wol/d/r4/lp-s/1200001658) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guerizim | [Guerizim, Monte](https://wol.jw.org/es/wol/d/r4/lp-s/1200001661) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1186,6 +1213,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-guilboa | [Guilboa](https://wol.jw.org/es/wol/d/r4/lp-s/1200001693) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-guilgal | [Guilgal](https://wol.jw.org/es/wol/d/r4/lp-s/1200001695) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guilo | [Guiló](https://wol.jw.org/es/wol/d/r4/lp-s/1200001703) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-guinat | [Guinat](https://wol.jw.org/es/wol/d/r4/lp-s/1200001707) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-guirgaseos | [Guirgaseos](https://wol.jw.org/es/wol/d/r4/lp-s/1200001711) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guirzitas | [Guirzitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200001712) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-guitaim | [Guitaim](https://wol.jw.org/es/wol/d/r4/lp-s/1200001714) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1214,6 +1242,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-hamor | [Hamor](https://wol.jw.org/es/wol/d/r4/lp-s/1200001845) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hamot-dor | [Hamot-dor](https://wol.jw.org/es/wol/d/r4/lp-s/1200001841) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hamul | [Hamul](https://wol.jw.org/es/wol/d/r4/lp-s/1200001847) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hanani | [Hananí](https://wol.jw.org/es/wol/d/r4/lp-s/1200001852) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-hanaton | [Hanatón](https://wol.jw.org/es/wol/d/r4/lp-s/1200001862) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-haniel | [Haniel](https://wol.jw.org/es/wol/d/r4/lp-s/1200001863) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hanok | [Hanok](https://wol.jw.org/es/wol/d/r4/lp-s/1200001864) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1268,13 +1297,16 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-herodias | [Herodías](https://wol.jw.org/es/wol/d/r4/lp-s/1200002002) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-herodion | [Herodión](https://wol.jw.org/es/wol/d/r4/lp-s/1200002003) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hesbon | [Hesbón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002006) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hesed | [Hésed](https://wol.jw.org/es/wol/d/r4/lp-s/1200002005) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-hesmon | [Hesmón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002007) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-het | [Het](https://wol.jw.org/es/wol/d/r4/lp-s/1200002009) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-heveos | [Heveos](https://wol.jw.org/es/wol/d/r4/lp-s/1200002041) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hezion | [Hezión](https://wol.jw.org/es/wol/d/r4/lp-s/1200002012) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-hezro | [Hezró](https://wol.jw.org/es/wol/d/r4/lp-s/1200002014) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hezron | [Hezrón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002015) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hidai | [Hidai](https://wol.jw.org/es/wol/d/r4/lp-s/1200002017) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hidequel | [Hidequel](https://wol.jw.org/es/wol/d/r4/lp-s/1200002018) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-hiel | [Hiel, II](https://wol.jw.org/es/wol/d/r4/lp-s/1200002019) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-hierapolis | [Hierápolis](https://wol.jw.org/es/wol/d/r4/lp-s/1200002020) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-hilel | [Hilel](https://wol.jw.org/es/wol/d/r4/lp-s/1200002028) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-hinon | [Hinón, Valle de](https://wol.jw.org/es/wol/d/r4/lp-s/1200002031) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1314,11 +1346,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-icabod | [Icabod](https://wol.jw.org/es/wol/d/r4/lp-s/1200002131) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-iconio | [Iconio](https://wol.jw.org/es/wol/d/r4/lp-s/1200002132) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-idala | [Idalá](https://wol.jw.org/es/wol/d/r4/lp-s/1200002133) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ido | [Idó](https://wol.jw.org/es/wol/d/r4/lp-s/1200002135) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-idumea | [Idumea](https://wol.jw.org/es/wol/d/r4/lp-s/1200002138) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-iftah | [Iftah](https://wol.jw.org/es/wol/d/r4/lp-s/1200002190) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-iftah-el | [Iftah-el](https://wol.jw.org/es/wol/d/r4/lp-s/1200002191) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-igal | [Igal](https://wol.jw.org/es/wol/d/r4/lp-s/1200002140) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ijon | [Ijón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002143) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-ilirico | [Ilírico](https://wol.jw.org/es/wol/d/r4/lp-s/1200002148) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-imla | [Imlá](https://wol.jw.org/es/wol/d/r4/lp-s/1200002151) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-imnah | [Imnah](https://wol.jw.org/es/wol/d/r4/lp-s/1200002157) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-inauguracion | [Inauguración](https://wol.jw.org/es/wol/d/r4/lp-s/1200002163) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-inscripcion | [Inscripción](https://wol.jw.org/es/wol/d/r4/lp-s/1200003676) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1458,6 +1493,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-jonatan | [Jonatán](https://wol.jw.org/es/wol/d/r4/lp-s/1200002506) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-jope | [Jope](https://wol.jw.org/es/wol/d/r4/lp-s/1200002507) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-joqdeam | [Joqdeam](https://wol.jw.org/es/wol/d/r4/lp-s/1200002495) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-joqmeam | [Joqmeam](https://wol.jw.org/es/wol/d/r4/lp-s/1200002497) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-joqneam | [Joqneam](https://wol.jw.org/es/wol/d/r4/lp-s/1200002498) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-joqteel | [Joqteel](https://wol.jw.org/es/wol/d/r4/lp-s/1200002501) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-joram | [Joram](https://wol.jw.org/es/wol/d/r4/lp-s/1200002510) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1491,8 +1527,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-kefar-amoni | [Kefar-amoní](https://wol.jw.org/es/wol/d/r4/lp-s/1200000940) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kefira | [Kefirá](https://wol.jw.org/es/wol/d/r4/lp-s/1200000941) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kemos | [Kemós](https://wol.jw.org/es/wol/d/r4/lp-s/1200000936) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-kenaana | [Kenaaná](https://wol.jw.org/es/wol/d/r4/lp-s/1200000937) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-keran | [Kerán](https://wol.jw.org/es/wol/d/r4/lp-s/1200000942) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-keretitas | [Keretitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200000943) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-kerit | [Kerit, Valle torrencial de](https://wol.jw.org/es/wol/d/r4/lp-s/1200000944) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-kesalon | [Kesalón](https://wol.jw.org/es/wol/d/r4/lp-s/1200000946) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kesed | [Késed](https://wol.jw.org/es/wol/d/r4/lp-s/1200000947) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-kesil | [Kesil](https://wol.jw.org/es/wol/d/r4/lp-s/1200000948) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1579,6 +1617,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-mahla | [Mahlá](https://wol.jw.org/es/wol/d/r4/lp-s/1200002849) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mahli | [Mahlí](https://wol.jw.org/es/wol/d/r4/lp-s/1200002850) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mahlon | [Mahlón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002852) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-mahol | [Mahol](https://wol.jw.org/es/wol/d/r4/lp-s/1200002853) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-maki | [Makí](https://wol.jw.org/es/wol/d/r4/lp-s/1200002818) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-makir | [Makir](https://wol.jw.org/es/wol/d/r4/lp-s/1200002819) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-malaquias | [Malaquías](https://wol.jw.org/es/wol/d/r4/lp-s/1200002860) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1596,6 +1635,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-manoah | [Manóah](https://wol.jw.org/es/wol/d/r4/lp-s/1200002889) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maoc | [Maoc](https://wol.jw.org/es/wol/d/r4/lp-s/1200002894) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maon | [Maón](https://wol.jw.org/es/wol/d/r4/lp-s/1200002895) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-maqaz | [Maqaz](https://wol.jw.org/es/wol/d/r4/lp-s/1200002856) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-maqhelot | [Maqhelot](https://wol.jw.org/es/wol/d/r4/lp-s/1200002857) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-maqueda | [Maquedá](https://wol.jw.org/es/wol/d/r4/lp-s/1200002858) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mar-de-galilea | [Galilea, Mar de](https://wol.jw.org/es/wol/d/r4/lp-s/1200001599) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1663,6 +1703,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-mibzar | [Mibzar](https://wol.jw.org/es/wol/d/r4/lp-s/1200003030) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mica | [Micá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003031) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-mical | [Mical](https://wol.jw.org/es/wol/d/r4/lp-s/1200003036) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-micaya | [Micaya](https://wol.jw.org/es/wol/d/r4/lp-s/1200003034) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-micmas | [Micmás, Micmash](https://wol.jw.org/es/wol/d/r4/lp-s/1200003037) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-micmetat | [Micmetat](https://wol.jw.org/es/wol/d/r4/lp-s/1200003038) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-midin | [Midín](https://wol.jw.org/es/wol/d/r4/lp-s/1200003040) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1709,6 +1750,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-naara | [Naará](https://wol.jw.org/es/wol/d/r4/lp-s/1200003152) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nabal | [Nabal](https://wol.jw.org/es/wol/d/r4/lp-s/1200003155) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nabonido | [Nabonido](https://wol.jw.org/es/wol/d/r4/lp-s/1200003156) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-nabot | [Nabot](https://wol.jw.org/es/wol/d/r4/lp-s/1200003157) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-nabucodonosor | [Nabucodonosor, Nabucodorosor](https://wol.jw.org/es/wol/d/r4/lp-s/1200003200) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nacon | [Nacón](https://wol.jw.org/es/wol/d/r4/lp-s/1200003158) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nacor | [Nacor](https://wol.jw.org/es/wol/d/r4/lp-s/1200003170) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1735,6 +1777,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-nazaret | [Nazaret](https://wol.jw.org/es/wol/d/r4/lp-s/1200003190) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nea | [Neá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003192) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-neapolis | [Neápolis](https://wol.jw.org/es/wol/d/r4/lp-s/1200003193) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
+| it-nebat | [Nebat](https://wol.jw.org/es/wol/d/r4/lp-s/1200003198) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-nebayot | [Nebayot](https://wol.jw.org/es/wol/d/r4/lp-s/1200003196) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nebo | [Nebo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003199) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nefeg | [Néfeg](https://wol.jw.org/es/wol/d/r4/lp-s/1200003222) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1762,6 +1805,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-niger | [Niger](https://wol.jw.org/es/wol/d/r4/lp-s/1200003252) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nilo | [Nilo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003255) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nimra | [Nimrá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003257) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-nimsi | [Nimsí](https://wol.jw.org/es/wol/d/r4/lp-s/1200003260) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-ninfa | [Ninfa](https://wol.jw.org/es/wol/d/r4/lp-s/1200003284) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ninive | [Nínive](https://wol.jw.org/es/wol/d/r4/lp-s/1200003261) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nisan | [Nisán](https://wol.jw.org/es/wol/d/r4/lp-s/1200003262) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1821,6 +1865,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-parnac | [Parnac](https://wol.jw.org/es/wol/d/r4/lp-s/1200003386) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-partera | [Partera](https://wol.jw.org/es/wol/d/r4/lp-s/1200003042) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-partos | [Partos](https://wol.jw.org/es/wol/d/r4/lp-s/1200003390) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-parua | [Parúah](https://wol.jw.org/es/wol/d/r4/lp-s/1200003392) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-pas-damim | [Pas-damim](https://wol.jw.org/es/wol/d/r4/lp-s/1200003394) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-pascua | [Pascua](https://wol.jw.org/es/wol/d/r4/lp-s/1200003397) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-patara | [Pátara](https://wol.jw.org/es/wol/d/r4/lp-s/1200003399) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
@@ -1951,6 +1996,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-rehoboam | [Rehoboam](https://wol.jw.org/es/wol/d/r4/lp-s/1200003680) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-rehobot | [Rehobot](https://wol.jw.org/es/wol/d/r4/lp-s/1200003681) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-rehobot-ir | [Rehobot-Ir](https://wol.jw.org/es/wol/d/r4/lp-s/1200003682) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-rei | [Reí](https://wol.jw.org/es/wol/d/r4/lp-s/1200003685) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-remet | [Rémet](https://wol.jw.org/es/wol/d/r4/lp-s/1200003689) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-requem | [Réquem](https://wol.jw.org/es/wol/d/r4/lp-s/1200003686) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-resa | [Resá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003724) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1961,6 +2007,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-reuel | [Reuel](https://wol.jw.org/es/wol/d/r4/lp-s/1200003714) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-reuma | [Reumá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003715) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-revelacion-a-juan | [Revelación a Juan, Una](https://wol.jw.org/es/wol/d/r4/lp-s/1200003717) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-rezon | [Rezón](https://wol.jw.org/es/wol/d/r4/lp-s/1200003722) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-ribai | [Ribai](https://wol.jw.org/es/wol/d/r4/lp-s/1200003728) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ribla | [Riblá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003729) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-rifat | [Rifat](https://wol.jw.org/es/wol/d/r4/lp-s/1200003741) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2057,6 +2104,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sefela | [Sefelá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004014) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sefer | [Séfer, Monte](https://wol.jw.org/es/wol/d/r4/lp-s/1200004015) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sefo | [Sefó](https://wol.jw.org/es/wol/d/r4/lp-s/1200004018) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-segub | [Segub](https://wol.jw.org/es/wol/d/r4/lp-s/1200003883) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-segundo | [Segundo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003879) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-sehon | [Sehón](https://wol.jw.org/es/wol/d/r4/lp-s/1200004117) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-seir | [Seír](https://wol.jw.org/es/wol/d/r4/lp-s/1200003884) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2070,8 +2118,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-selumiel | [Selumiel](https://wol.jw.org/es/wol/d/r4/lp-s/1200003996) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-sem | [Sem](https://wol.jw.org/es/wol/d/r4/lp-s/1200003997) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-sema | [Sema](https://wol.jw.org/es/wol/d/r4/lp-s/1200003998) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-semaya | [Semaya](https://wol.jw.org/es/wol/d/r4/lp-s/1200004000) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-semeber | [Seméber](https://wol.jw.org/es/wol/d/r4/lp-s/1200004002) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-semein | [Semeín](https://wol.jw.org/es/wol/d/r4/lp-s/1200003893) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-semer | [Sémer](https://wol.jw.org/es/wol/d/r4/lp-s/1200004004) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-semida | [Semidá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004005) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-semuel | [Semuel](https://wol.jw.org/es/wol/d/r4/lp-s/1200004009) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-senaquerib | [Senaquerib](https://wol.jw.org/es/wol/d/r4/lp-s/1200003897) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2104,6 +2154,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-sikeron | [Sikerón](https://wol.jw.org/es/wol/d/r4/lp-s/1200004034) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-silas | [Silas, Silvano](https://wol.jw.org/es/wol/d/r4/lp-s/1200004118) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-silem | [Silem](https://wol.jw.org/es/wol/d/r4/lp-s/1200004037) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-silhi | [Silhí](https://wol.jw.org/es/wol/d/r4/lp-s/1200004035) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-silhim | [Silhim](https://wol.jw.org/es/wol/d/r4/lp-s/1200004036) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-silo | [Siló](https://wol.jw.org/es/wol/d/r4/lp-s/1200004039) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-siloam | [Siloam](https://wol.jw.org/es/wol/d/r4/lp-s/1200004121) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -2167,11 +2218,14 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tabera | [Taberá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004294) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tabernaculo | [Tabernáculo](https://wol.jw.org/es/wol/d/r4/lp-s/1200004295) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tabor | [Tabor](https://wol.jw.org/es/wol/d/r4/lp-s/1200004298) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-tabrimon | [Tabrimón](https://wol.jw.org/es/wol/d/r4/lp-s/1200004299) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tadeo | [Tadeo](https://wol.jw.org/es/wol/d/r4/lp-s/1200004374) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-tafat | [Tafat](https://wol.jw.org/es/wol/d/r4/lp-s/1200004320) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tahan | [Tahán, tahanitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200004301) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tahas | [Tahas](https://wol.jw.org/es/wol/d/r4/lp-s/1200004302) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tahat | [Táhat](https://wol.jw.org/es/wol/d/r4/lp-s/1200004303) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tahkemonita | [Tahkemonita](https://wol.jw.org/es/wol/d/r4/lp-s/1200004304) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-tahpenes | [Tahpenés](https://wol.jw.org/es/wol/d/r4/lp-s/1200004306) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tahtim-hodsi | [Tahtim-hodsí](https://wol.jw.org/es/wol/d/r4/lp-s/1200004308) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-talmai | [Talmai](https://wol.jw.org/es/wol/d/r4/lp-s/1200004311) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tamar | [Tamar](https://wol.jw.org/es/wol/d/r4/lp-s/1200004313) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2205,6 +2259,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tibni | [Tibní](https://wol.jw.org/es/wol/d/r4/lp-s/1200004400) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tidal | [Tidal](https://wol.jw.org/es/wol/d/r4/lp-s/1200004401) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tienda-de-reunion | [Tienda de reunión](https://wol.jw.org/es/wol/d/r4/lp-s/1200004365) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-tifsah | [Tifsah](https://wol.jw.org/es/wol/d/r4/lp-s/1200004419) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tiglat-pileser | [Tiglat-piléser III](https://wol.jw.org/es/wol/d/r4/lp-s/1200004402) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-timeo | [Timeo](https://wol.jw.org/es/wol/d/r4/lp-s/1200004406) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-timna | [Timná](https://wol.jw.org/es/wol/d/r4/lp-s/1200004410) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2219,6 +2274,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-tiras | [Tirás](https://wol.jw.org/es/wol/d/r4/lp-s/1200004420) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-tiro | [Tiro](https://wol.jw.org/es/wol/d/r4/lp-s/1200004498) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-tirza | [Tirzá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004426) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-tisbita | [Tisbita](https://wol.jw.org/es/wol/d/r4/lp-s/1200004427) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-tito | [Tito, Carta a](https://wol.jw.org/es/wol/d/r4/lp-s/1200004432) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-tito-persona | [Tito](https://wol.jw.org/es/wol/d/r4/lp-s/1200004431) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-tob | [Tob](https://wol.jw.org/es/wol/d/r4/lp-s/1200004435) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2247,6 +2303,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-urbano | [Urbano](https://wol.jw.org/es/wol/d/r4/lp-s/1200004519) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-uri | [Urí](https://wol.jw.org/es/wol/d/r4/lp-s/1200004520) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-urias | [Urías](https://wol.jw.org/es/wol/d/r4/lp-s/1200004521) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-uriel | [Uriel](https://wol.jw.org/es/wol/d/r4/lp-s/1200004522) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-uz | [Uz](https://wol.jw.org/es/wol/d/r4/lp-s/1200004527) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-uzah | [Uzah](https://wol.jw.org/es/wol/d/r4/lp-s/1200004531) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-uzal | [Uzal](https://wol.jw.org/es/wol/d/r4/lp-s/1200004529) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2266,6 +2323,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zaananim | [Zaananim](https://wol.jw.org/es/wol/d/r4/lp-s/1200004641) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zaavan | [Zaaván](https://wol.jw.org/es/wol/d/r4/lp-s/1200004642) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zabdi | [Zabdí](https://wol.jw.org/es/wol/d/r4/lp-s/1200004646) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zabud | [Zabud](https://wol.jw.org/es/wol/d/r4/lp-s/1200004648) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-zabulon | [Zabulón](https://wol.jw.org/es/wol/d/r4/lp-s/1200004679) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zacarias | [Zacarías](https://wol.jw.org/es/wol/d/r4/lp-s/1200004681) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zacur | [Zacur](https://wol.jw.org/es/wol/d/r4/lp-s/1200004651) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2294,9 +2352,11 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zer | [Zer](https://wol.jw.org/es/wol/d/r4/lp-s/1200004703) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zerah | [Zérah](https://wol.jw.org/es/wol/d/r4/lp-s/1200004704) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zered | [Zered, Valle torrencial de](https://wol.jw.org/es/wol/d/r4/lp-s/1200004707) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zereda | [Zeredá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004708) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-zerera | [Zererá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004709) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zeret-sahar | [Zéret-sáhar](https://wol.jw.org/es/wol/d/r4/lp-s/1200004712) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zeror | [Zeror](https://wol.jw.org/es/wol/d/r4/lp-s/1200004714) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zerua | [Zeruá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004715) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-zeruya | [Zeruyá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004717) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ziba | [Zibá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004724) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zibeon | [Zibeón](https://wol.jw.org/es/wol/d/r4/lp-s/1200004725) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -2320,6 +2380,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-zofar | [Zofar](https://wol.jw.org/es/wol/d/r4/lp-s/1200004764) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zofim | [Zofim](https://wol.jw.org/es/wol/d/r4/lp-s/1200004765) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zohar | [Zóhar](https://wol.jw.org/es/wol/d/r4/lp-s/1200004759) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-zohelet | [Zohélet](https://wol.jw.org/es/wol/d/r4/lp-s/1200004760) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-30 |
 | it-zora | [Zorá](https://wol.jw.org/es/wol/d/r4/lp-s/1200004766) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-zorobabel | [Zorobabel](https://wol.jw.org/es/wol/d/r4/lp-s/1200004716) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-zuar | [Zuar](https://wol.jw.org/es/wol/d/r4/lp-s/1200004769) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
