@@ -12,7 +12,6 @@ date:
 places:
 - samaria
 people:
-- hosea-de-israel
 - salmanasar-v
 present:
 - salmanasar-v
@@ -32,6 +31,7 @@ sources:
 - 2-reyes-17
 - it-sargon
 - 2-reyes-18
+- it-hosea
 links:
 - title: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
@@ -61,6 +61,10 @@ history:
 - date: '2026-09-30'
   change: 'Ezequías no actúa en la escena: 2Re 18:9, 10 solo fecha el sitio por sus años de reinado.'
   source: 2-reyes-18
+- date: '2026-09-30'
+  change: Hosea sale de quienes actúan. Salmanasar lo encerró antes de sitiar Samaria (2Re 17:4, 5; Perspicacia «Hosea»),
+    y 2Re 17:6 y 18:10 solo fechan la toma por sus años de reinado.
+  source: it-hosea
 narrative_order:
   series: 2-reyes
   order: 17005
