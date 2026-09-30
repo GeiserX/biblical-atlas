@@ -1229,7 +1229,53 @@ def parents_children(hacia, words, err):
 
 # ---------------------------------------------------------------- sucesos (modelo.md, sección 7)
 
+RE_PASAJE = re.compile(r"^\s*((?:[123]\s?)?[^\d\s][^\d]*?)\.?\s+(\d[\d:,;\s–-]*)$")
+_FORMAS_LIBRO = {}
+
+
+def check_passages(o, donde, err, libros):
+    """Cada pasaje de passages cae en un capítulo del libro y en un versículo de ese capítulo (verses de
+    data/books.yaml): «Mal 3:19» es un error, porque Malaquías 3 tiene 18. Formas: «Rut 1:1-5», «1Sa 15:32, 33»,
+    «Joe 1:1-3:21», «Mt 26:30, 36-56», «Abd 11-14» (libro de un capítulo) y «Sl 34» (capítulos enteros)."""
+    clave = id(libros)
+    if clave not in _FORMAS_LIBRO:
+        _FORMAS_LIBRO.clear()
+        _FORMAS_LIBRO[clave] = bible_coverage.Citas(libros).por_forma
+    por_forma = _FORMAS_LIBRO[clave]
+    for i, pasaje in enumerate(o.get("passages") or []):
+        pd = f"{donde} passages[{i}] «{pasaje}»"
+        m = RE_PASAJE.match(str(pasaje))
+        libro = por_forma.get(bible_coverage._norm(m.group(1))) if m else None
+        if not libro:
+            err(f"{pd}: no se entiende como «<libro> <capítulo>:<versículos>» de data/books.yaml")
+            continue
+        n, versos = int(libro.get("chapters") or 0), libro.get("verses")
+        solo_caps = n > 1 and ":" not in m.group(2).split(",")[0].split(";")[0].split("-")[0].replace("–", "-")
+        cap = 1 if n == 1 else None
+        puntos = []
+        for seg in m.group(2).replace("–", "-").split(";"):
+            for item in seg.split(","):
+                for j, x in enumerate(item.split("-")[:2]):
+                    x = x.strip()
+                    if not x:
+                        continue
+                    if ":" in x:
+                        c, _, v = x.partition(":")
+                        cap = int(c)
+                        puntos.append((cap, int(v)))
+                    elif solo_caps:
+                        puntos.append((int(x), None))
+                    elif cap is not None:
+                        puntos.append((cap, int(x)))
+        for c, v in puntos:
+            if not 1 <= c <= n:
+                err(f"{pd}: {libro.get('name')} no tiene capítulo {c} (tiene {n})")
+            elif v is not None and isinstance(versos, list) and len(versos) == n and not 1 <= v <= versos[c - 1]:
+                err(f"{pd}: {libro.get('name')} {c} no tiene versículo {v} (tiene {versos[c - 1]})")
+
+
 def check_event(o, donde, err, warn, datos, meses):
+    check_passages(o, donde, err, datos["books"])
     voc = datos["vocabulary"]
     event_types, event_roles = voc.get("event_types") or {}, voc.get("event_roles") or {}
     places = {p.get("id") for p in datos["places"]}
