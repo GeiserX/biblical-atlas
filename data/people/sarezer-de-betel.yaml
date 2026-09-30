@@ -6,6 +6,8 @@ names:
 perspicacia: 1200003954#2
 disambiguation: El enviado de Betel en tiempos de Darío I; no es el hijo de Senaquerib que mató a su padre (Perspicacia «Sarézer»,
   núm. 1).
+distinct_from:
+- sarezer-hijo-de-senaquerib
 date:
   from: -517
   to: -517
@@ -40,5 +42,7 @@ relations:
     el destierro.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- sarezer-hijo-de-senaquerib

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-se-lleva-a-joaquin-a-babilonia
+title: Joaquín se rinde y Nabucodonosor lo lleva a Babilonia
+date:
+  from: -616
+  to: -616
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 617 a.e.c.
+  detail:
+    month: adar
+narrative_order:
+  series: 2-reyes
+  order: 24010
+places:
+- jerusalen
+- babilonia
+people:
+- nabucodonosor-ii
+- joaquin
+- nehusta
+passages:
+- 2Re 24:10-16
+- 2Cr 36:9, 10
+- Jer 52:28
+summary: Los siervos de Nabucodonosor cercan Jerusalén y el rey llega en persona. Joaquín se entrega con su madre y su corte;
+  Nabucodonosor saca los tesoros del templo y del palacio y destierra a 10.000 personas.
+reason: El estudio 3 fecha en 617 los primeros cautivos. Perspicacia «Nabucodonosor» (párr. 7) y «Joaquín» (párr. 2) ponen
+  la rendición en adar; el sitio pudo empezar en vida de Jehoiaquim.
+sources:
+- 2-reyes-24
+- si-3
+- it-nabucodonosor
+- it-joaquin
+- it-jehoiaquim
+- it-nehusta
+links:
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+- title: 'Perspicacia: «Joaquín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002375
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

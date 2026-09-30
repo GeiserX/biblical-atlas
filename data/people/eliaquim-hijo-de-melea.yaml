@@ -8,6 +8,7 @@ disambiguation: Eliaquim hijo de Meleá (Lu 3:30, 31); no Eliaquim hijo de Abiud
 distinct_from:
 - eliaquim-hijo-de-abiud
 - jehoiaquim
+- eliaquim-hijo-de-hilquias
 summary: Antepasado de María, madre de Jesús, en la línea de Natán. Lucas lo llama hijo de Meleá y padre de Jonam.
 reason: Perspicacia «Eliaquim», núm. 5; Lu 3:30.
 sources:
@@ -30,5 +31,5 @@ relations:
   reason: 'Lu 3:30, 31: Eliaquim, hijo de Meleá.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

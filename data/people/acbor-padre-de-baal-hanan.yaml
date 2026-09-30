@@ -17,5 +17,7 @@ links:
 - title: Génesis 36 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/36
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- acbor-hijo-de-micaya

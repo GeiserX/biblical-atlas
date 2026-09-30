@@ -1,0 +1,91 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rezin-rey-de-siria
+name: Rezín
+names:
+- name: Rezín
+perspicacia: 1200003721#1
+disambiguation: Rey de Siria en tiempos de Jotán y Acaz; no el antepasado de una familia de netineos que volvió de Babilonia.
+date:
+  from: -776
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y c. 758 a.e.c. (tiempo narrativo: reinaba en días de Jotán y de Acaz)'
+summary: Rey de Siria que gobernaba desde Damasco. Aliado de Pécah de Israel, hostigó a Judá y sitió Jerusalén para poner
+  en el trono al hijo de Tabeel, sin lograrlo. Tiglat-Piléser III tomó Damasco y lo mató.
+reason: Perspicacia «Rezín», núm. 1; Is 7:1-9 y 8:6; 2Re 15:37 y 16:5-9. Los años van del reinado de Jotán (desde 777) a la
+  muerte de Pécah, hacia 758 (A6-B).
+sources:
+- it-rezin
+- 2-reyes-15
+- 2-reyes-16
+- tnm-a6-b
+- isaias-7
+- isaias-9
+links:
+- title: 'Perspicacia: «Rezín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003721
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: Isaías 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/7
+  type: bible
+- title: Isaías 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/9
+  type: bible
+relations:
+- type: holds_office
+  place: siria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - 2-reyes-16
+  - it-rezin
+  - isaias-7
+  reason: Is 7:1 lo llama «el rey Rezín de Siria».
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: pecah
+  word: ally
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-rezin
+  - it-peqah
+  - 2-reyes-16
+  - isaias-7
+  reason: 'Is 7:1, 2, 5: Siria se unió a Efraín, y Rezín subió con Pécah contra Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: damasco
+  inferred: true
+  sources:
+  - it-rezin
+  - 2-reyes-16
+  - isaias-7
+  - it-damasco
+  reason: Is 7:8 lo pone a la cabeza de Damasco, capital de Siria; Perspicacia «Rezín» dice que reinó allí.
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: damasco
+  inferred: true
+  sources:
+  - 2-reyes-16
+  - it-rezin
+  - it-damasco
+  reason: '2Re 16:9: el rey de Asiria tomó Damasco y dio muerte a Rezín. Perspicacia «Rezín» lo cuenta igual.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

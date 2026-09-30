@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-promete-a-jehu-cuatro-generaciones-en-el-trono
+title: Jehová promete a Jehú cuatro generaciones en el trono
+date:
+  from: -904
+  to: -875
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 905 y 876 a.e.c. (tiempo narrativo: en el reinado de Jehú)'
+narrative_order:
+  series: 2-reyes
+  order: 10029
+places:
+- israel
+present: []
+people:
+- jehu-de-israel
+passages:
+- 2Re 10:29-31
+summary: Por haber ejecutado el juicio contra la casa de Acab, Jehová le promete que cuatro generaciones de sus hijos reinarán
+  en Israel. Pero Jehú mantiene los becerros de Betel y Dan.
+reason: Durante el reinado de Jehú, c. 905-876 a.e.c. (A6-A), después de acabar con Baal. Perspicacia «Jehú», núm. 3, párr.
+  12 y 13. El texto no dice dónde, así que no sitúa a nadie.
+sources:
+- 2-reyes-10
+- tnm-a6-a
+- it-jehu
+links:
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
+  type: bible
+- title: 'Perspicacia: «Jehú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

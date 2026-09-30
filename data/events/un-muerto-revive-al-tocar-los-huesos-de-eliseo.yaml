@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-muerto-revive-al-tocar-los-huesos-de-eliseo
+title: Un muerto revive al tocar los huesos de Eliseo
+date:
+  from: -861
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 862 y c. 844 a.e.c. (tiempo narrativo: tras la muerte de Eliseo, reinando Jehoás en Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 13020
+places:
+- israel
+people:
+- eliseo
+present: []
+roles:
+  eliseo: died
+passages:
+- 2Re 13:20, 21
+summary: Eliseo muere y lo entierran. Más tarde, al ver venir una banda de saqueadores moabitas, unos hombres echan a un difunto
+  en su sepultura; al tocar sus huesos, el hombre vuelve a vivir.
+reason: '2Re 13:20, 21; Perspicacia «Eliseo»: murió de muerte natural en el reinado de Jehoás de Israel, c. 862-844 (A6-A).
+  El resucitado no tiene nombre, y el texto no dice dónde estaba la sepultura.'
+sources:
+- 2-reyes-13
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/13
+  type: bible
+- title: 'Perspicacia: «Eliseo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

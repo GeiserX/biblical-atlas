@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tabeel-de-tiempos-de-acaz
+name: Tabeel
+names:
+- name: Tabeel
+perspicacia: 1200004293#1
+disambiguation: Padre del candidato de Siria e Israel al trono de Judá; no el que firmó la carta contra los judíos enviada
+  a Artajerjes.
+summary: Padre de un hombre sin nombre al que Rezín y Pécah pensaban hacer rey de Judá en lugar de Acaz. Perspicacia fecha
+  el intento en los años 762-759 a.e.c.
+reason: Perspicacia «Tabeel», núm. 1; Is 7:6.
+sources:
+- it-tabeel
+- isaias-7
+links:
+- title: 'Perspicacia: «Tabeel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004293
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: calno
+name: Calnó
+names:
+- name: Calnó
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Kullani, en el norte de Siria (quizá Kullanköy)
+  geometry:
+    type: point
+    lat: 36.292571
+    lon: 37.205535
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-calno
+  - it-calne
+  - openbible-geo
+  reason: 'Perspicacia «Calnó»: nombrarla junto a Carquemis cuadra con la Kullani de las inscripciones asirias, que tomó Tiglat-Piléser
+    III. «Calné», núm. 2, la pone cerca de Arpad, hacia el sureste.'
+  note: Punto de Kullan Köy, la segunda identificación de la ficha de OpenBible que junta la Calné de Amós y esta Calnó; solo
+    tomamos el punto.
+  coord_source: openbible:a7be664
+  coord_url: https://www.openbible.info/geo/ancient/a7be664/calneh-2
+summary: Ciudad que el rey de Asiria, en la profecía de Isaías, pone junto a Carquemis entre las que ya dominaba. Según Perspicacia,
+  la mayoría la tiene por la Calné de Amós, en el norte de Siria.
+reason: 'Perspicacia «Calnó»; Is 10:9. Ficha aparte de la Calné de Amós: jw.org solo recoge que la mayoría de los eruditos
+  ven en Calnó otra forma de Calné.'
+not_claimed:
+- 'Que sea la Calné de Am 6:2: Perspicacia «Calné», núm. 2, lo ve posible solo si aquella era Kullani.'
+sources:
+- it-calno
+- it-calne
+- openbible-geo
+- isaias-10
+links:
+- title: 'Perspicacia: «Calnó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000869
+  type: perspicacia
+- title: 'Perspicacia: «Calné»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000868
+  type: perspicacia
+- title: Isaías 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

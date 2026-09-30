@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hosea-mata-a-pecah
+title: Hosea mata a Pécah y se hace rey
+date:
+  from: -757
+  to: -757
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 758 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 16011
+type: death
+places:
+- israel
+people:
+- pecah
+- hosea-de-israel
+present: []
+roles:
+  pecah: died
+passages:
+- 2Re 15:30
+summary: Hosea hijo de Elá conspira contra Pécah, lo ataca, lo mata y ocupa el trono. Los anales de Tiglat-Piléser III dicen
+  que fue él quien puso a Hosea.
+reason: 2Re 15:30; Perspicacia «Hosea», núm. 4, y «Tiglat-piléser III». A6-B da c. 758 a.e.c. Va tras el sitio de Jerusalén
+  por Rezín y Pécah, vivo aún, y tras la toma de Damasco. No dice dónde murió.
+sources:
+- 2-reyes-15
+- it-hosea
+- it-tiglat-pileser
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Hosea»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002090
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

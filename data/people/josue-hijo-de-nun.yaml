@@ -19,6 +19,7 @@ disambiguation: Josué hijo de Nun, sucesor de Moisés; no Josué (Jesúa), el s
 distinct_from:
 - josue-sumo-sacerdote
 - josue-el-betsemita
+- josue-jefe-de-jerusalen
 summary: Efraimita, servidor de Moisés desde joven. Mandó a Israel contra Amalec, fue uno de los dos espías fieles y sucedió
   a Moisés. Llevó al pueblo a cruzar el Jordán y a conquistar Canaán. Murió a los 110 años.
 reason: 'Perspicacia «Josué», núm. 1, párr. 2, 3, 7, 9 y 19: en 1513 a.e.c. mandaba contra Amaleq; el cuadro del estudio
@@ -187,5 +188,5 @@ history:
 - date: '2026-09-29'
   change: Amaleq es la grafía de Perspicacia; la Traducción del Nuevo Mundo escribe Amalec (Éx 17:8-13).
   source: exodo-17
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

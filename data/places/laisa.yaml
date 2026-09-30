@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: laisa
+name: Laisa
+names:
+- name: Laisa
+type: city
+lat: 31.798611
+lon: 35.248333
+precision: uncertain
+coord_source: openbible:a7e39d2
+coord_url: https://www.openbible.info/geo/ancient/a7e39d2/laishah
+coord_note: 'ʽIsawiya, primera identificación de OpenBible: es el sitio que propone F.-M. Abel según Perspicacia, a unos 2,5
+  km del monte del Templo, hacia el nornordeste.'
+summary: Población de Benjamín, cerca de Jerusalén, a la que Isaías manda estar atenta porque el ejército asirio avanza de
+  pueblo en pueblo.
+reason: 'Perspicacia «Laisa»; Is 10:30. OpenBible: solo el punto.'
+not_claimed:
+- 'Que sea Lais, el nombre antiguo de Dan: Perspicacia la trata aparte.'
+sources:
+- it-laisa
+- openbible-geo
+- isaias-10
+links:
+- title: 'Perspicacia: «Laisa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002668
+  type: perspicacia
+- title: Isaías 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: esar-hadon
+name: Esar-Hadón
+names:
+- name: Esar-Hadón
+- name: Esar-hadón
+  note: Grafía de Perspicacia.
+perspicacia: '1200001416'
+summary: Rey de Asiria, uno de los hijos menores de Senaquerib, a quien sucedió tras su asesinato. Reconstruyó Babilonia,
+  venció a Tirhacá y tomó Menfis; murió en Harán cuando volvía a Egipto a sofocar una revuelta.
+reason: Perspicacia «Esar-hadón», párr. 1 y 2 y apartado «La conquista de Egipto»; Is 37:38; 2Re 19:37; Esd 4:2.
+sources:
+- it-esar-hadon
+- 2-reyes-19
+- isaias-37
+links:
+- title: 'Perspicacia: «Esar-hadón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001416
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+relations:
+- type: kin
+  person: senaquerib
+  word: father
+  sources:
+  - 2-reyes-19
+  - it-esar-hadon
+  - isaias-37
+  reason: Is 37:38 lo llama hijo de Senaquerib.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: senaquerib
+  office: king
+  sources:
+  - 2-reyes-19
+  - it-esar-hadon
+  - isaias-37
+  reason: 'Is 37:38: pasó a reinar cuando mataron a su padre. Perspicacia añade que ya estaba nombrado heredero.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

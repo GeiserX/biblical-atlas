@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tiglat-pileser-toma-damasco
+title: Tiglat-Piléser III toma Damasco y mata a Rezín
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+narrative_order:
+  series: 2-reyes
+  order: 16009
+places:
+- damasco
+- quir
+people:
+- tiglat-pileser-iii
+- rezin-rey-de-siria
+present:
+- tiglat-pileser-iii
+- rezin-rey-de-siria
+roles:
+  rezin-rey-de-siria: died
+passages:
+- 2Re 16:9
+summary: Atendiendo a Acaz, el rey de Asiria sube contra Damasco, la conquista, destierra a sus habitantes a Quir y mata a
+  Rezín. Siria queda bajo el dominio asirio.
+reason: 2Re 16:9; Perspicacia «Damasco», «Rezín», núm. 1, y «Quir». Asiria atacó en cuanto recibió el soborno, y antes de
+  que Hosea matara a Pécah, hacia 758 a.e.c. (A6-B).
+sources:
+- 2-reyes-16
+- it-damasco
+- it-rezin
+- it-quir
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Damasco»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001114
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

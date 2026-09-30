@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-jehoas-de-juda
+title: Muerte de Jehoás de Judá
+date:
+  from: -857
+  to: -857
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 858 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 12020
+places:
+- jerusalen
+people:
+- jehoas-de-juda
+- jozacar
+- jehozabad-hijo-de-somer
+- amasias
+present:
+- jehoas-de-juda
+- jozacar
+- jehozabad-hijo-de-somer
+type: death
+roles:
+  jehoas-de-juda: died
+passages:
+- 2Re 12:20, 21
+- 2Cr 24:25-27
+summary: Dos siervos de Jehoás, Jozacar y Jehozabad, conspiran contra él y lo matan en la casa del Montículo. Lo sepultan
+  en la Ciudad de David, junto a sus antepasados, y reina en su lugar su hijo Amasías.
+reason: '2Re 12:20, 21; Perspicacia «Jehoás», núm. 1, último párrafo: tenía 47 años. La tabla A6-A cierra su reinado en 858
+  a.e.c.'
+sources:
+- 2-reyes-12
+- it-jehoas
+- it-jozacar
+- it-jehozabad
+- tnm-a6-a
+links:
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+- title: 'Perspicacia: «Jehoás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

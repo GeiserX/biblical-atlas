@@ -1,0 +1,66 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adramelec-hijo-de-senaquerib
+name: Adramélec
+names:
+- name: Adramélec
+perspicacia: 1200000118#1
+disambiguation: El hijo de Senaquerib (Perspicacia «Adramélec», núm. 1). El núm. 2 es un dios de los sefarvitas, no una persona.
+summary: Hijo del rey asirio Senaquerib. Junto con Sarézer mató a espada a su padre cuando este adoraba a Nisroc, y los dos
+  se refugiaron en la tierra de Ararat.
+reason: Perspicacia «Adramélec», núm. 1; Is 37:38; 2Re 19:37. Según una inscripción de Esar-Hadón, este venció después a los
+  asesinos en la tierra adonde huyeron.
+sources:
+- it-adramelec
+- isaias-37
+- 2-reyes-19
+links:
+- title: 'Perspicacia: «Adramélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000118
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: senaquerib
+  word: father
+  inferred: false
+  sources:
+  - isaias-37
+  - it-adramelec
+  - 2-reyes-19
+  reason: 'Is 37:38: Adramélec y Sarézer eran hijos de Senaquerib.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: sarezer-hijo-de-senaquerib
+  word: brother
+  inferred: true
+  sources:
+  - it-adramelec
+  - isaias-37
+  - 2-reyes-19
+  reason: Is 37:38 da a los dos como hijos de Senaquerib; Perspicacia «Adramélec», núm. 1, llama a Sarézer su hermano.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: esar-hadon
+  word: brother
+  inferred: true
+  sources:
+  - it-adramelec
+  - isaias-37
+  reason: Is 37:38 hace hijos de Senaquerib a los dos; Perspicacia «Adramélec», núm. 1, presenta a Esar-Hadón como otro hijo
+    del rey.
+  checked_on: '2026-09-30'
+  status: verified
+history:
+- date: '2026-09-30'
+  change: 'Se une con la ficha adramelec que creó 2 Reyes: suma 2Re 19:37 a sus fuentes. La desambiguación deja de citar 2Re
+    17:31, que habla del dios y no de él.'
+  source: 2-reyes-19
+checked_on: '2026-09-30'
+status: verified

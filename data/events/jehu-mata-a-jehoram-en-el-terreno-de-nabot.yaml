@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehu-mata-a-jehoram-en-el-terreno-de-nabot
+title: Jehú mata a Jehoram en el terreno de Nabot
+date:
+  from: -904
+  to: -904
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 9014
+places:
+- jezreel
+present:
+- jehu-de-israel
+- jehoram-de-israel
+- ocozias-de-juda
+- bidcar
+people:
+- jehu-de-israel
+- jehoram-de-israel
+- ocozias-de-juda
+- bidcar
+type: death
+roles:
+  jehoram-de-israel: died
+passages:
+- 2Re 9:14-26
+summary: Jehú corre en su carro a Jezreel. Jehoram y Ocozías salen a su encuentro y lo hallan en el terreno de Nabot; Jehú
+  atraviesa a Jehoram con una flecha y Bidcar echa allí su cuerpo.
+reason: El estudio 3 fecha hacia 905 a.e.c. que Jehú sucede a Jehoram (2Re 9:24). Perspicacia «Jehú», núm. 3, párr. 7. El
+  terreno de Nabot estaba junto a Jezreel.
+sources:
+- 2-reyes-9
+- si-3
+- tnm-a6-a
+- it-jehu
+- it-jehoram
+links:
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+- title: 'Perspicacia: «Jehú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -15,15 +15,16 @@ people:
 - elias-profeta
 - eliseo
 passages:
-- 2Re 2:1-14
-summary: Junto al Jordán, un carro de fuego separa a Elías de Eliseo y una tempestad se lo lleva. Eliseo recoge su manto y
-  empieza a actuar como su sucesor.
+- 2Re 2:6-14
+summary: Elías golpea el Jordán con su prenda oficial y lo cruzan en seco. Un carro de fuego lo separa de Eliseo y una tempestad
+  se lo lleva; Eliseo recoge la prenda y divide las aguas al volver.
 reason: Perspicacia «Eliseo», párr. 5, fecha el comienzo de su obra hacia 917; «Elías», núm. 1, párr. 9-10, aclara que Elías
   no murió entonces.
 sources:
 - it-eliseo
 - it-elias
 - 2-reyes-2
+- it-jordan
 links:
 - title: 'Perspicacia: «Eliseo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
@@ -35,5 +36,17 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
   type: bible
 search: Elías tempestad Eliseo manto
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: El suceso empezaba en 2Re 2:1. El paso por Betel y Jericó (2:1-5) tiene ahora sus propios sucesos, y este empieza
+    cuando Elías se dirige al Jordán.
+  source: 2-reyes-2
+- date: '2026-09-30'
+  change: El resumen no contaba que Elías y después Eliseo dividen las aguas del Jordán (2Re 2:8, 14), dos milagros que Perspicacia
+    «Elías» y «Jordán» recogen.
+  source: 2-reyes-2
+narrative_order:
+  series: 2-reyes
+  order: 2006
+checked_on: '2026-09-30'
 status: verified

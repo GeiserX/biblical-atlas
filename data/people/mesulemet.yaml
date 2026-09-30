@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesulemet
+name: Mesulémet
+names:
+- name: Mesulémet
+perspicacia: '1200003015'
+summary: Mujer de Manasés, rey de Judá, y madre de su sucesor Amón. Su padre era Haruz, de Jotbá.
+reason: Perspicacia «Mesulémet»; 2Re 21:19.
+sources:
+- it-mesulemet
+- 2-reyes-21
+links:
+- title: 'Perspicacia: «Mesulémet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003015
+  type: perspicacia
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+relations:
+- type: kin
+  person: haruz
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-21
+  - it-mesulemet
+  reason: 2Re 21:19 la llama Mesulémet hija de Haruz.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

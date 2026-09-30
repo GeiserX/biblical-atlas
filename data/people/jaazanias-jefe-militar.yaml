@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jaazanias-jefe-militar
+name: Jaazanías
+names:
+- name: Jaazanías
+- name: Jezanías
+  note: Otra forma de su nombre, según Perspicacia (Jer 40:8; 42:1).
+disambiguation: El jefe militar hijo del maacatita; Perspicacia registra otros tres hombres llamados Jaazanías.
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+perspicacia: 1200002264#4
+summary: Jefe militar de Judá, hijo de un maacatita, que se unió a Guedalías en Mizpá tras 607 a.e.c. Después persiguió a
+  Ismael y ayudó a llevar a Egipto al resto del pueblo.
+reason: Perspicacia «Jaazanías», núm. 4; 2Re 25:23, 26; Jer 40:7, 8; 41:11-16; 43:1-5.
+sources:
+- it-jaazanias
+- 2-reyes-25
+links:
+- title: 'Perspicacia: «Jaazanías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002264
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+relations:
+- type: lived_in
+  place: egipto
+  inferred: true
+  sources:
+  - 2-reyes-25
+  - it-jaazanias
+  reason: '2Re 25:26: los jefes del ejército se fueron a Egipto; Perspicacia «Jaazanías», núm. 4, dice que él fue uno de ellos.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -3,6 +3,8 @@ id: neko
 name: Nekó
 names:
 - name: Nekó
+- name: Nekoh
+  note: Otra grafía, según la nota de 2Re 23:29 y el título de Perspicacia «Nekó, Nekoh».
 summary: Faraón de Egipto. En su marcha para ayudar a Asiria mató a Josías en Meguidó; después destronó a Jehoacaz y puso
   a Jehoiaquim. Nabucodonosor lo derrotó en Carquemis.
 reason: Perspicacia «Nekó, Nekoh», párr. 1-2, y «Carquemis», párr. 4; 2Re 23:29-35 y Jer 46:2.
@@ -17,5 +19,17 @@ links:
 - title: 2 Reyes 23 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200003203'
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: holds_office
+  place: egipto
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-neko
+  reason: 2Re 23:29 lo llama el faraón Nekó, rey de Egipto.
+  checked_on: '2026-09-30'
+  status: verified

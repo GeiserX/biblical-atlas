@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: eglaim
+name: Eglaim
+names:
+- name: Eglaim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Rujm el-Jilimeh
+  geometry:
+    type: point
+    lat: 31.180849
+    lon: 35.712631
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-eglaim
+  - openbible-geo
+  reason: Perspicacia ve posible que el nombre sobreviva aquí, en la zona donde Eusebio ponía Agallim, al sur de Rabat-Moab.
+  coord_source: openbible:aacbcf0
+  coord_url: https://www.openbible.info/geo/ancient/aacbcf0/eglaim
+- name: Khirbet Jeljul
+  geometry:
+    type: point
+    lat: 31.127769
+    lon: 35.67775
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-eglaim
+  - openbible-geo
+  reason: Otra posibilidad que recoge Perspicacia, unos 7 km más al sur; el sitio es de época nabatea y romana.
+  coord_source: openbible:aacbcf0
+  coord_url: https://www.openbible.info/geo/ancient/aacbcf0/eglaim
+- name: Mazraʽ
+  geometry:
+    type: point
+    lat: 31.26895
+    lon: 35.516739
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-eglaim
+  - openbible-geo
+  reason: Yohanan Aharoni la pone en este oasis al nordeste de la península de El-Lisan (Perspicacia «Eglaim»).
+  coord_source: openbible:aacbcf0
+  coord_url: https://www.openbible.info/geo/ancient/aacbcf0/eglaim
+summary: Lugar de Moab, quizá en uno de sus límites, hasta donde llega el llanto por la ruina del país (Is 15:8). No se sabe
+  dónde estaba.
+reason: 'Perspicacia «Eglaim»; Is 15:8. OpenBible: solo los puntos.'
+sources:
+- it-eglaim
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Eglaim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001262
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

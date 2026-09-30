@@ -3,20 +3,20 @@
 # Registro de investigación
 
 > Lo genera `scripts/build.py` a partir de `data/`, un fichero por tipo. No se edita a mano.
-> El método y el esquema están en [../README.md](../README.md).
+> El método y el esquema están en [docs/investigacion/README.md](https://github.com/GeiserX/biblical-atlas/blob/main/docs/investigacion/README.md).
 
 Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó, por qué la asociamos y su estado.
 
 | Registro | Cuántos |
 |---|---|
-| [Lugares](lugares.md) | 883 |
-| [Personas](personas.md) | 1216 |
+| [Lugares](lugares.md) | 927 |
+| [Personas](personas.md) | 1300 |
 | [Viajes y paradas](viajes.md) | 8 (95 paradas) |
 | [Cartas](cartas.md) | 22 |
-| [Eventos](eventos.md) | 1304 |
+| [Eventos](eventos.md) | 1439 |
 | [Periodos](periodos.md) | 89 |
 | [Hallazgos](hallazgos.md) | 7 |
 | [Recorridos](recorridos.md) | 4 |
 | [Libros y calendario](libros.md) | 66 libros, 13 meses |
-| [Cobertura de la Biblia](cobertura.md) | 805 de 1189 capítulos completos |
-| [Fuentes](fuentes.md) | 3027 |
+| [Cobertura de la Biblia](cobertura.md) | 896 de 1189 capítulos completos |
+| [Fuentes](fuentes.md) | 3274 |

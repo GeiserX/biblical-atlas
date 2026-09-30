@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nehusta
+name: Nehustá
+names:
+- name: Nehustá
+perspicacia: '1200003216'
+summary: Esposa del rey Jehoiaquim e hija de Elnatán, un hombre de Jerusalén. Madre de Joaquín, fue desterrada con él a Babilonia
+  en 617 a.e.c., donde probablemente se quedó.
+reason: Perspicacia «Nehustá»; 2Re 24:8, 12, 15.
+sources:
+- it-nehusta
+- 2-reyes-24
+links:
+- title: 'Perspicacia: «Nehustá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003216
+  type: perspicacia
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+relations:
+- type: kin
+  person: elnatan-padre-de-nehusta
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-nehusta
+  reason: 2Re 24:8 la llama hija de Elnatán de Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: babilonia
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-nehusta
+  reason: '2Re 24:12, 15: la madre del rey salió con él y fue llevada al destierro en Babilonia.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ezequias-ora-ante-las-cartas-de-senaquerib
+title: Ezequías extiende las cartas ante Jehová y ora
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 732 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 19014
+places:
+- monte-moria
+- jerusalen
+people:
+- ezequias
+present:
+- ezequias
+passages:
+- 2Re 19:14-19
+- Is 37:14-20
+- 2Cr 32:20
+summary: Ezequías lee las cartas, sube al templo y las despliega ante Jehová. Le pide que salve a su pueblo para que todos
+  los reinos reconozcan que solo él es Dios.
+reason: 'Estudio 3: 732 a.e.c. Perspicacia «Ezequías», núm. 1, apartado «Fracaso de Senaquerib en Jerusalén», y «Rabsaqué»,
+  párr. 3. Ezequías ora en el templo (Is 37:14); las cartas se escribieron en Libná, en el suceso anterior.'
+sources:
+- isaias-37
+- si-3
+- ip1-29
+- 2-reyes-19
+- it-ezequias
+- it-rabsaque
+links:
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+- title: 'Perspicacia: «Libná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002734
+  type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso de 2 Reyes, dueño del relato, que separa dos escenas: queda la oración en el templo (2Re
+    19:14-19; Is 37:14-20), y las cartas desde Libná son senaquerib-envia-cartas-a-ezequias.'
+  source: 2-reyes-19
+checked_on: '2026-09-30'
+status: verified

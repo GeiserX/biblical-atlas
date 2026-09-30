@@ -25,6 +25,8 @@ sources:
 - it-tisbita
 - 1-reyes-19
 - 1-reyes-21
+- 2-reyes-1
+- 2-reyes-2
 links:
 - title: 'Perspicacia: «Elías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001307
@@ -58,6 +60,7 @@ relations:
   - it-tisbita
   - it-elias
   - 1-reyes-17
+  - 2-reyes-1
   reason: 'Perspicacia «Elías», núm. 1, párr. 1, y «Tisbita»: su hogar debió de estar en Tisbe, de donde le viene llamarse
     tisbita (1Re 17:1).'
   checked_on: '2026-09-30'

@@ -1,0 +1,86 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-la-indignacion-y-las-bendiciones-de-dios
+title: Isaías anuncia la indignación y las bendiciones de Dios
+date:
+  from: -777
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 778 y 716 a.e.c. (tiempo narrativo: durante la obra de Isaías)'
+narrative_order:
+  series: isaias
+  order: 28001
+places:
+- jerusalen
+- juda
+- samaria
+- egipto
+- israel
+- asiria
+- edom
+- bozra
+- libano
+- llanura-de-saron
+- basan
+- monte-carmelo
+people:
+- isaias
+present: []
+passages:
+- Is 28:1-35:10
+summary: Isaías avisa a Efraín y a los jefes de Jerusalén, que se fían de Egipto y de pactos humanos, de que serán castigados.
+  Jehová defenderá Sion de Asiria y arrasará Edom, y promete a un resto un rey justo.
+reason: '«Toda Escritura», libro 23, párr. 18-20, agrupa Is 28:1-35:10. Sin fecha: la obra de Isaías va de c. 778 al reinado
+  de Ezequías (716, A6-B), e Is 28:1-4 precede a la caída de Samaria (740). Sin lugar.'
+sources:
+- isaias-28
+- si-isaias
+- tnm-a6-b
+- tnm-tabla
+- it-isaias
+- it-isaias-libro
+- ip1-22
+- w06-isaias-1
+- isaias-29
+- ip1-23
+- isaias-30
+- isaias-31
+- isaias-32
+- ip1-24
+- ip1-25
+- isaias-33
+- isaias-34
+- si-3
+- ip1-26
+- ip1-27
+- isaias-35
+- ip1-28
+links:
+- title: Isaías 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/28
+  type: bible
+- title: Isaías 29 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/29
+  type: bible
+- title: Isaías 30 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/30
+  type: bible
+- title: Isaías 31 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/31
+  type: bible
+- title: Isaías 32 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/32
+  type: bible
+- title: Isaías 33 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/33
+  type: bible
+- title: Isaías 34 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/34
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

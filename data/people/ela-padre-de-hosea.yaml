@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ela-padre-de-hosea
+name: Elá
+names:
+- name: Elá
+- name: Elah
+  note: Otra forma que da la nota de 2Re 15:30; es el título del artículo de Perspicacia.
+perspicacia: 1200001273#4
+disambiguation: Padre del rey Hosea; no es Elá hijo de Baasá, rey de Israel, ni los demás Elá.
+distinct_from:
+- ela-de-israel
+- ela-padre-de-simei
+- ela-jeque-de-edom
+summary: Padre de Hosea, el último rey del reino de Israel.
+reason: Perspicacia «Elah», núm. 4; 2Re 15:30.
+sources:
+- it-elah
+- 2-reyes-15
+- 2-reyes-17
+- 2-reyes-18
+links:
+- title: 'Perspicacia: «Elah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001273
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

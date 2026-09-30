@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-ocozias-de-juda
+title: Muere Ocozías, rey de Judá
+date:
+  from: -904
+  to: -904
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 905 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 9038
+places:
+- meguido
+- gur
+- ibleam
+- samaria
+- jerusalen
+present:
+- ocozias-de-juda
+people:
+- ocozias-de-juda
+- jehu-de-israel
+type: death
+roles:
+  ocozias-de-juda: died
+passages:
+- 2Re 9:27-29
+- 2Cr 22:7-9
+summary: Ocozías huye de Jezreel y se esconde en Samaria. Lo llevan ante Jehú, cerca de Ibleam; lo hieren en su carro subiendo
+  hacia Gur, llega a Meguidó y muere allí. Lo entierran en Jerusalén.
+reason: 'Hacia 905 a.e.c., como la muerte de Jehoram (estudio 3). Perspicacia «Ocozías», núm. 2, párr. 2, junta los dos relatos:
+  Jehú siguió a Jezreel y a Ocozías lo prendieron después; por eso va tras la muerte de Jezabel.'
+sources:
+- 2-reyes-9
+- 2-cronicas-22
+- si-3
+- it-ocozias
+- it-gur
+- it-ibleam
+links:
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+- title: 'Perspicacia: «Ocozías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

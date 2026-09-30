@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eliseo-sanea-el-guisado-en-guilgal
+title: Eliseo quita el veneno del guisado en Guilgal
+date:
+  from: -916
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 917 y c. 844 a.e.c. (tiempo narrativo: durante la obra de Eliseo como sucesor de Elías)'
+narrative_order:
+  series: 2-reyes
+  order: 4038
+places:
+- guilgal-cerca-de-betel
+people:
+- eliseo
+passages:
+- 2Re 4:38-41
+summary: En un tiempo de hambre, uno de los hijos de los profetas echa calabazas silvestres en la olla. Al probar el guisado
+  gritan que hay muerte en ella; Eliseo echa harina y ya no hace daño.
+reason: 'Perspicacia «Eliseo» avisa de que 2 Reyes no sigue un orden estricto: queda entre su sucesión de Elías, c. 917, y
+  su muerte bajo Jehoás de Israel, hasta c. 844 (A6-A). «Guilgal», núm. 2, la pone cerca de Betel.'
+sources:
+- 2-reyes-4
+- it-eliseo
+- it-guilgal
+- tnm-a6-a
+links:
+- title: 2 Reyes 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/4
+  type: bible
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sela-de-edom
+name: Sela
+names:
+- name: Sela
+  note: La de 2Re 14:7 (Perspicacia «Sela», núm. 2); no la Sela del límite amorreo de Jue 1:36.
+- name: Jocteel
+  note: Nombre que le puso Amasías al conquistarla (2Re 14:7). No es la Jocteel de la Sefelá de Judá (Jos 15:38).
+- name: Joqteel
+  note: Grafía de Perspicacia.
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: es-Selaʽ, al norte de Bozrá
+  geometry:
+    type: point
+    lat: 30.78087
+    lon: 35.574455
+  status: alternative
+  sources:
+  - it-sela
+  - openbible-geo
+  reason: 'Perspicacia «Sela», núm. 2: es el sitio que los eruditos prefieren últimamente, unos 4 km al NNO de Bozrá. Primera
+    identificación de OpenBible.'
+  coord_source: openbible:af8ce6a
+  coord_url: https://www.openbible.info/geo/ancient/af8ce6a/sela-2
+  checked_on: '2026-09-30'
+- name: Umm el-Biyara, junto a Petra
+  geometry:
+    type: point
+    lat: 30.326749
+    lon: 35.433999
+  status: alternative
+  sources:
+  - it-sela
+  - openbible-geo
+  reason: Perspicacia «Sela», núm. 2, recoge que hay quien la pone en esta meseta rocosa sobre la llanura de Petra. Segunda
+    identificación de OpenBible.
+  coord_source: openbible:af8ce6a
+  coord_url: https://www.openbible.info/geo/ancient/af8ce6a/sela-2
+  checked_on: '2026-09-30'
+summary: Ciudad importante de Edom. El rey Amasías de Judá la tomó en su guerra contra los edomitas y le cambió el nombre
+  por Jocteel. No se sabe con certeza dónde estaba.
+reason: 'Perspicacia «Sela», núm. 2, y «Joqteel», núm. 2; 2Re 14:7. Perspicacia recoge dos sitios sin elegir: dos candidatos
+  de OpenBible.'
+not_claimed:
+- 'Que sea la Sela de la profecía de Isaías contra Moab: Perspicacia «Sela», núm. 3, no lo sabe con certeza.'
+sources:
+- it-sela
+- it-joqteel
+- openbible-geo
+- 2-reyes-14
+links:
+- title: 'Perspicacia: «Sela»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003886
+  type: perspicacia
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+checked_on: '2026-09-30'
+status: verified

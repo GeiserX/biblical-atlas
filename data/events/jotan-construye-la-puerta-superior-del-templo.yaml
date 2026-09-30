@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jotan-construye-la-puerta-superior-del-templo
+title: Jotán construye la puerta superior del templo
+date:
+  from: -776
+  to: -761
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y 762 a.e.c. (tiempo narrativo: durante el reinado de Jotán)'
+narrative_order:
+  series: 2-reyes
+  order: 15035
+places:
+- jerusalen
+- monte-moria
+people:
+- jotan
+passages:
+- 2Re 15:35
+- 2Cr 27:3
+summary: Jotán edifica la puerta superior del templo de Jehová. Perspicacia cree que daba al patio interior y que quizá sea
+  la puerta nueva de la que habla Jeremías.
+reason: 2Re 15:35; 2Cr 27:3; Perspicacia «Jotán», núm. 3, y «Puerta, paso de entrada». Sin año; cae en su reinado, 777-762
+  a.e.c. (A6-B).
+sources:
+- 2-reyes-15
+- it-jotan
+- it-puerta
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Jotán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002529
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

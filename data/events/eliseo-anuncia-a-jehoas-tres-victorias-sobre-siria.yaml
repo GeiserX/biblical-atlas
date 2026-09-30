@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eliseo-anuncia-a-jehoas-tres-victorias-sobre-siria
+title: Eliseo, ya enfermo, anuncia a Jehoás tres victorias sobre Siria
+date:
+  from: -861
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 862 y c. 844 a.e.c. (tiempo narrativo: reinando Jehoás en Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 13014
+places:
+- israel
+people:
+- eliseo
+- jehoas-de-israel
+present: []
+passages:
+- 2Re 13:14-19
+summary: Jehoás llora junto a Eliseo, enfermo de muerte. El profeta le hace disparar una flecha hacia el este y golpear el
+  suelo; como el rey solo golpea tres veces, solo vencerá a Siria tres veces.
+reason: 2Re 13:14-19; Perspicacia «Eliseo», apartado final, y «Jehoás», núm. 2. Pasa en el reinado de Jehoás, c. 862-844 según
+  A6-A, aunque el texto cuenta antes su muerte. No dice dónde estaba Eliseo.
+sources:
+- 2-reyes-13
+- it-eliseo
+- it-jehoas
+- tnm-a6-a
+links:
+- title: 2 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/13
+  type: bible
+- title: 'Perspicacia: «Eliseo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

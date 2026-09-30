@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-salisa
+name: Baal-Salisá
+names:
+- name: Baal-Salisá
+  note: El nombre significa «dueño de Salisá».
+type: city
+lat: 32.1525
+lon: 35.044167
+precision: uncertain
+coord_source: openbible:ad3d9fc
+coord_url: https://www.openbible.info/geo/ancient/ad3d9fc/baal-shalishah
+coord_note: Kafr Thulth, en las estribaciones de Efraín, que Perspicacia da como posible ubicación. Es otra identificación
+  de la ficha de OpenBible, cuya primera es Khirbet Sirisye; mismo punto que Salisá.
+summary: Lugar de donde un hombre llevó a Eliseo, en Guilgal y en tiempo de hambre, veinte panes de cebada de primicias. Quizá
+  quedaba en la tierra de Salisá, no lejos de Guilgal.
+reason: 'Perspicacia «Baal-salisá»; 2Re 4:42-44. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-baal-salisa
+- openbible-geo
+- 2-reyes-4
+links:
+- title: 'Perspicacia: «Baal-salisá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000520
+  type: perspicacia
+- title: 2 Reyes 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/4
+  type: bible
+checked_on: '2026-09-30'
+status: verified

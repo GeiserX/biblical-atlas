@@ -40,6 +40,10 @@ passages:
 - Am 9:7
 - Miq 6:4
 - Jos 24:5, 6
+- 2Re 17:7
+- 2Re 17:36
+- Is 11:16
+- Is 51:9, 10
 summary: Tras la décima plaga, el faraón deja ir a Israel. El pueblo sale de Ramesés hacia Sucot con su ganado y con lo que
   le dieron los egipcios. Ese día se cumplen los 430 años contados desde Abrahán.
 reason: Perspicacia «Pacto» da 1513 a.e.c., un 14 de nisán, como día de la liberación; el estudio 3 (párr. 8 a 10) cuadra
@@ -51,6 +55,7 @@ sources:
 - exodo-12
 - salmos-105
 - w03-que-espera-jehova
+- 2-reyes-17
 links:
 - title: 'Perspicacia: «Éxodo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001458
@@ -72,8 +77,11 @@ history:
   change: Los versículos de Salmos sobre el mar, las plagas y los primogénitos pasan a israel-cruza-el-mar-rojo y a los sucesos
     de cada plaga; aquí quedan los de la salida.
   source: exodo-12
+- date: '2026-09-30'
+  change: Se quita el pasaje «Nú 33:3-5», que estaba repetido en la lista.
+  source: numeros-33
 narrative_order:
   series: exodo
   order: 12031
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

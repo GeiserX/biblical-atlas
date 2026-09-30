@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: guebim
+name: Guebim
+names:
+- name: Guebim
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En la ruta asiria de Is 10:28-32, entre Hai y Nob
+  geometry:
+    type: zone
+    lat: 31.854722
+    lon: 35.252639
+    radius_km: 8
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-guebim
+  - openbible-geo
+  - isaias-10
+  reason: Perspicacia «Guebim» pone a sus habitantes huyendo del ejército asirio que marchaba hacia Sion, pero no sabe dónde
+    estaba.
+  coord_source: calculation
+  note: 'Centro: punto medio entre los puntos de OpenBible de Hai (et-Tell) y Nob (Ras el-Mesharif), primera y última etapa
+    de la marcha. Radio nuestro, para cubrir las dos.'
+summary: Lugar cuyos habitantes buscan refugio ante el ejército asirio que avanza hacia Sion, según Perspicacia seguramente
+  en días de Ezequías. No se sabe dónde estaba.
+reason: 'Perspicacia «Guebim»; Is 10:31. Sin sitio: una zona sobre la ruta que da el texto.'
+sources:
+- it-guebim
+- openbible-geo
+- isaias-10
+links:
+- title: 'Perspicacia: «Guebim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001630
+  type: perspicacia
+- title: Isaías 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

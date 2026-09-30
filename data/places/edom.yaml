@@ -8,6 +8,9 @@ names:
 - name: Región montañosa de Esaú
   note: Así la llama Abdías (Abd 8, 9, 19, 21), en paralelo con Edom. «Toda Escritura» recuerda que su tierra se llamaba también
     monte Seír.
+- name: Desierto de Edom
+  note: '2Re 3:8: el camino por el que los tres reyes rodearon el sur del mar Muerto hacia Moab, según Perspicacia «Moab,
+    moabitas».'
 type: country
 lat: 30.745843
 lon: 35.603919
@@ -33,9 +36,18 @@ sources:
 - it-abdias-libro
 - si-abdias
 - josue-15
-- malaquias-1
 - 2-samuel-8
 - 1-reyes-11
+- 2-reyes-3
+- 2-reyes-8
+- 2-reyes-14
+- malaquias-1
+- isaias-11
+- ip1-13
+- isaias-21
+- ip1-17
+- isaias-34
+- isaias-63
 links:
 - title: 'Perspicacia: «Edom»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001258

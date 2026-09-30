@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasias-ejecuta-a-los-asesinos-de-su-padre
+title: Amasías ejecuta a los asesinos de su padre
+date:
+  from: -857
+  to: -828
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y 829 a.e.c. (tiempo narrativo: reinando Amasías, ya afianzado en el trono)'
+narrative_order:
+  series: 2-reyes
+  order: 14005
+places:
+- jerusalen
+people:
+- amasias
+passages:
+- 2Re 14:5, 6
+- 2Cr 25:3, 4
+summary: Con el reino ya firme en su mano, Amasías hace matar a los siervos que asesinaron a su padre, Jehoás, pero respeta
+  la Ley de Moisés y deja con vida a sus hijos.
+reason: 2Re 14:5, 6; Perspicacia «Amasías», núm. 2. Su reinado va de 858 a 829 a.e.c. (tabla A6-A); el texto no fecha la ejecución
+  con más detalle.
+sources:
+- 2-reyes-14
+- it-amasias
+- tnm-a6-a
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

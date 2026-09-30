@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehozabad-hijo-de-somer
+name: Jehozabad
+names:
+- name: Jehozabad
+perspicacia: 1200002399#3
+disambiguation: El siervo que mató al rey Jehoás de Judá; no es el portero hijo de Obed-Edom ni el jefe benjamita del ejército
+  de Jehosafat.
+date:
+  from: -857
+  to: -857
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 858 a.e.c.
+summary: Siervo del rey Jehoás de Judá que lo mató junto con Jozacar. El texto lo llama hijo de Somer; 2 Crónicas nombra a
+  su madre, Simrit la moabita. Amasías lo ejecutó después.
+reason: 'Perspicacia «Jehozabad», núm. 3; 2Re 12:20, 21 y 2Cr 24:26. Año: el final del reinado de Jehoás, 858 a.e.c. (tabla
+  A6-A).'
+sources:
+- it-jehozabad
+- 2-reyes-12
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jehozabad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002399
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+relations:
+- type: kin
+  person: somer-padre-de-jehozabad
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-12
+  - it-somer
+  reason: 2Re 12:21 lo llama hijo de Somer. Perspicacia «Somer», núm. 2, deja abierto que Somer fuera el padre de su madre
+    y él, su nieto.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoas-de-juda
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-12
+  reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

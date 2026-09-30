@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hilquias-hijo-de-salum
+name: Hilquías
+names:
+- name: Hilquías
+perspicacia: 1200002026#4
+disambiguation: El sumo sacerdote de Josías; no es Hilquías de Anatot, el padre de Jeremías, ni el padre de Eliaquim.
+summary: Sumo sacerdote en el reinado de Josías. Mientras se reparaba el templo halló el libro de la Ley y encabezó a los
+  enviados que consultaron a la profetisa Huldá.
+reason: Perspicacia «Hilquías», núm. 4, que lo da por hijo de Salum; 2Re 22:4, 8-14.
+sources:
+- it-hilquias
+- 2-reyes-22
+- 2-reyes-23
+links:
+- title: 'Perspicacia: «Hilquías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002026
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+relations:
+- type: holds_office
+  place: jerusalen
+  office: high_priest
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-hilquias
+  - 2-reyes-23
+  reason: 2Re 22:4, 8 lo llama sumo sacerdote.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+distinct_from:
+- hilquias-padre-de-eliaquim

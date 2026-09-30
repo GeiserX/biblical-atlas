@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: argob
+name: Argob
+names:
+- name: Argob
+perspicacia: 1200000357#1
+disambiguation: Hombre de la corte de Samaria en días de Pecahías; no es la región de Argob, en Basán, que trata el mismo
+  artículo.
+summary: Nombrado junto a Arié cuando Pécah mató al rey Pecahías en la torre del palacio de Samaria, hacia 778 a.e.c. Perspicacia
+  ve posible que los dos murieran con el rey.
+reason: Perspicacia «Argob», núm. 1; 2Re 15:25.
+sources:
+- it-argob
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Argob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000357
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+not_claimed:
+- 'Que Argob muriera con Pecahías: el texto solo lo nombra con el rey y Perspicacia lo da como posible.'
+checked_on: '2026-09-30'
+status: verified

@@ -34,7 +34,18 @@ sources:
 - nahum-3
 - it-medos
 - sofonias-2
+- 2-reyes-17
+- 2-reyes-18
+- 2-reyes-19
 - zacarias-10
+- isaias-10
+- isaias-11
+- isaias-19
+- ip1-15
+- isaias-20
+- isaias-27
+- isaias-30
+- isaias-52
 links:
 - title: 'Perspicacia: «Asiria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000447
@@ -45,5 +56,5 @@ links:
 - title: Génesis 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

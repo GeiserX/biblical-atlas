@@ -11,7 +11,7 @@ coord_source: openbible:a095b6e
 coord_url: https://www.openbible.info/geo/ancient/a095b6e/jazer
 coord_note: Punto de OpenBible en Khirbet Sara. Perspicacia dice que no se conoce el sitio exacto.
 summary: Ciudad amorrea con pueblos dependientes al este del Jordán, junto a la frontera de Ammón. Moisés la mandó espiar
-  e Israel la tomó; luego fue de Gad y de los levitas.
+  e Israel la tomó; luego fue de Gad y de los levitas. Hacia el siglo VIII a.e.c. era moabita.
 reason: 'Perspicacia «Jazer»; Nú 21:24, 32. OpenBible: solo el punto.'
 sources:
 - it-jazer
@@ -21,6 +21,7 @@ sources:
 - josue-13
 - josue-21
 - 2-samuel-24
+- isaias-16
 links:
 - title: 'Perspicacia: «Jazer»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002346
@@ -31,5 +32,10 @@ links:
 - title: Números 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/4/32
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Añade que en tiempos de Isaías Jazer era de Moab y tenía fama por su vino (Perspicacia «Jazer», párr. 2; Is 16:8,
+    9).
+  source: isaias-16
+checked_on: '2026-09-30'
 status: verified

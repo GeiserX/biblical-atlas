@@ -11,8 +11,8 @@ lon: 35.334306
 precision: point
 coord_source: openbible:ac86af5
 coord_url: https://www.openbible.info/geo/ancient/ac86af5/shunem
-summary: Ciudad de Isacar, cerca de Jezreel y del monte Guilboa, identificada con Sulam. Allí acamparon los filisteos antes
-  de la batalla en que murió Saúl. Era la tierra de la sulamita, y junto a ella acampó Salomón en el Cantar.
+summary: Ciudad de Isacar cerca de Jezreel, identificada con Sulam. Allí acamparon los filisteos antes de morir Saúl, y junto
+  a ella Salomón en el Cantar. Era la tierra de la sulamita; Eliseo se alojaba allí y resucitó a un niño.
 reason: 'Perspicacia «Sunem», párr. 1 y 2; 1Sa 28:4. La sulamita es campesina de Sunem según «Cantar de los Cantares, El»,
   párr. 1, y «Toda Escritura», libro 22, párr. 5, que sitúa el drama cerca; «Sulamita»: probablemente. OpenBible: solo el
   punto.'
@@ -29,6 +29,7 @@ sources:
 - josue-19
 - 1-samuel-28
 - 1-reyes-1
+- 2-reyes-4
 links:
 - title: 'Perspicacia: «Sunem»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004097
@@ -42,5 +43,9 @@ history:
   change: El resumen no decía que allí acamparon los filisteos antes de la muerte de Saúl, lo primero que cuenta Perspicacia
     «Sunem» de la ciudad (1Sa 28:4).
   source: 1-samuel-28
+- date: '2026-09-30'
+  change: 'El resumen añade lo que cuenta 2Re 4:8-37: Eliseo se alojaba en Sunem y allí resucitó al hijo de una mujer (Perspicacia
+    «Sunem», párr. 2). Se acortó lo demás para caber en 40 palabras.'
+  source: 2-reyes-4
 checked_on: '2026-09-30'
 status: verified

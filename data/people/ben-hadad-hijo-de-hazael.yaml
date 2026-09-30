@@ -24,6 +24,7 @@ sources:
 - it-ben-hadad
 - amos-1
 - tnm-a6-a
+- 2-reyes-13
 links:
 - title: 'Perspicacia: «Ben-hadad»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
@@ -60,6 +61,16 @@ relations:
   - amos-1
   reason: Perspicacia «Ben-hadad», núm. 3, lee sus torres de Am 1:4 como los palacios reales de Damasco.
   checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: siria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-13
+  - it-ben-hadad
+  reason: '2Re 13:24: al morir Hazael, rey de Siria, su hijo Ben-Hadad reinó en su lugar.'
+  checked_on: '2026-09-30'
   status: verified
 checked_on: '2026-09-30'
 status: verified

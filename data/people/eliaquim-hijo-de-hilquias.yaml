@@ -1,0 +1,76 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliaquim-hijo-de-hilquias
+name: Eliaquim
+names:
+- name: Eliaquim
+perspicacia: 1200001295#1
+disambiguation: Eliaquim hijo de Hilquías, mayordomo de Ezequías; no el rey Jehoiaquim, ni el sacerdote de Ne 12:41, ni los
+  antepasados de Jesús de Mateo y Lucas.
+distinct_from:
+- jehoiaquim
+- eliaquim-hijo-de-abiud
+- eliaquim-hijo-de-melea
+summary: Siervo de Jehová que sustituyó a Sebná al frente de la casa del rey Ezequías, con la llave de la casa real de David.
+  En 732 a.e.c. encabezó a los enviados que hablaron con el rabsaqué.
+reason: Perspicacia «Eliaquim», núm. 1; Is 22:20-24; 2Re 18:18, 26, 37; Is 36:3.
+sources:
+- it-eliaquim
+- 2-reyes-18
+- 2-reyes-19
+- isaias-22
+- ip1-18
+- isaias-36
+- ip1-29
+- isaias-37
+links:
+- title: 'Perspicacia: «Eliaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001295
+  type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+relations:
+- type: kin
+  person: hilquias-padre-de-eliaquim
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-eliaquim
+  - isaias-22
+  - isaias-36
+  reason: Is 22:20 lo llama Eliaquim hijo de Hilquías.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ezequias
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-eliaquim
+  - 2-reyes-19
+  - isaias-22
+  - isaias-36
+  - isaias-37
+  reason: 'Is 37:2, 5: Ezequías lo envía a Isaías, y el texto lo cuenta entre los siervos del rey. Is 22:20-22 le da el cargo
+    de Sebná sobre la casa.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - isaias-22
+  - it-eliaquim
+  - isaias-36
+  - ip1-29
+  reason: 'Is 22:21: sería un padre para los habitantes de Jerusalén; según Perspicacia salió de la ciudad a hablar con el
+    rabsaqué (2Re 18:17, 18).'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -9,9 +9,10 @@ lon: 36.30639
 precision: point
 coord_source: openbible:a69c1d4
 coord_url: https://www.openbible.info/geo/ancient/a69c1d4/damascus
-summary: Ciudad antigua de Siria al pie del Antilíbano; Pablo se convirtió camino de ella y empezó a predicar allí.
-reason: 'Perspicacia («Damasco») describe el lugar; aparece en Hch 9:1-19. La coordenada es de OpenBible: solo tomamos
-  el punto.'
+summary: Ciudad antigua de Siria al pie del Antilíbano, sede del rey Rezín hasta que Asiria la tomó. Pablo se convirtió camino
+  de ella y empezó a predicar allí.
+reason: 'Perspicacia «Damasco» describe el lugar y, en «Los juicios de Jehová sobre Damasco», su caída ante Asiria (2Re 16:9;
+  Is 10:9). Hch 9:1-19. La coordenada es de OpenBible: solo tomamos el punto.'
 sources:
 - it-damasco
 - hch-9
@@ -27,6 +28,13 @@ sources:
 - 1-reyes-11
 - 1-reyes-15
 - 1-reyes-20
+- 2-reyes-8
+- 2-reyes-14
+- 2-reyes-16
+- isaias-7
+- isaias-10
+- isaias-17
+- ip1-15
 links:
 - title: 'Perspicacia: «Damasco»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001114
@@ -34,5 +42,17 @@ links:
 - title: Hechos 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/9
   type: bible
+history:
+- date: '2026-09-30'
+  change: El resumen solo hablaba de Pablo; añade que fue la capital de los reyes sirios y que Asiria la tomó (2Re 16:9; Perspicacia
+    «Damasco»).
+  source: 2-reyes-16
+- date: '2026-09-30'
+  change: El resumen, solo del siglo I, añade que fue la sede de Rezín hasta que Asiria la tomó (Perspicacia «Damasco»; Is
+    10:9).
+  source: isaias-10
+- date: '2026-09-30'
+  change: La razón cita la caída ante Asiria (2Re 16:9; Is 10:9).
+  source: isaias-10
 checked_on: '2026-09-30'
 status: verified

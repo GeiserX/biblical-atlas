@@ -1,0 +1,96 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-que-sion-sera-consolada
+title: Isaías anuncia que Sion será consolada
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras el aviso a Ezequías sobre Babilonia, en su reinado)'
+narrative_order:
+  series: isaias
+  order: 49001
+places:
+- jerusalen
+- babilonia
+people:
+- isaias
+present: []
+passages:
+- Is 49:1-59:21
+summary: 'Consuelo para Sion: el siervo de Jehová será luz de las naciones y morirá por los pecados de muchos, y Jerusalén,
+  como esposa abandonada, volverá a llenarse de hijos. Jehová reprueba la idolatría y promete un Recomprador.'
+reason: '«Toda Escritura», libro 23, párr. 26-29, agrupa Is 49:1-59:21, escrito tras avisar a Ezequías («Las profecías de
+  Isaías I», cap. 30, párr. 3). Perspicacia «Isaías» cierra su obra poco después de 732; 716 (A6-B: muere Ezequías) es el
+  tope.'
+sources:
+- isaias-49
+- si-isaias
+- it-isaias
+- ip2-10
+- tnm-tabla
+- tnm-a6-b
+- it-isaias-libro
+- isaias-50
+- ip2-11
+- isaias-51
+- ip1-30
+- it-merodac-baladan
+- ip2-12
+- isaias-52
+- ip2-13
+- ip2-14
+- isaias-53
+- isaias-54
+- ip2-15
+- isaias-55
+- ip2-16
+- isaias-56
+- ip2-17
+- isaias-57
+- ip2-18
+- isaias-58
+- ip2-19
+- isaias-59
+- ip2-20
+links:
+- title: Isaías 49 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/49
+  type: bible
+- title: Isaías 50 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/50
+  type: bible
+- title: Isaías 51 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/51
+  type: bible
+- title: Isaías 52 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/52
+  type: bible
+- title: Isaías 53 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/53
+  type: bible
+- title: Isaías 54 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/54
+  type: bible
+- title: Isaías 55 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/55
+  type: bible
+- title: Isaías 56 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/56
+  type: bible
+- title: Isaías 57 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/57
+  type: bible
+- title: Isaías 58 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/58
+  type: bible
+- title: Isaías 59 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/59
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

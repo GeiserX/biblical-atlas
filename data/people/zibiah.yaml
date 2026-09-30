@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zibiah
+name: Zibíah
+names:
+- name: Zibíah
+perspicacia: '1200004727'
+summary: Madre del rey Jehoás de Judá, natural de Beer-Seba. Perspicacia la ve como esposa del rey Ocozías y, por tanto, nuera
+  de Atalía; no dice si sufrió la matanza de la familia real.
+reason: Perspicacia «Zibíah»; 2Re 12:1 y 2Cr 24:1.
+sources:
+- it-zibiah
+- 2-reyes-12
+links:
+- title: 'Perspicacia: «Zibíah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004727
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+relations:
+- type: born_in
+  place: beer-seba
+  inferred: true
+  sources:
+  - 2-reyes-12
+  - it-zibiah
+  reason: 2Re 12:1 la llama Zibíah de Beer-Seba; Perspicacia «Zibíah» dice que había nacido allí.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: atalia
+  word: mother_in_law
+  inferred: true
+  sources:
+  - it-zibiah
+  - 2-reyes-12
+  reason: 'Perspicacia «Zibíah»: si era esposa de Ocozías, como parece por 2Re 12:1, era nuera de Atalía.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

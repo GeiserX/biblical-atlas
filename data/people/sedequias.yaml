@@ -22,6 +22,7 @@ sources:
 - 2-reyes-24
 - jeremias-52
 - tnm-a6-b
+- 2-reyes-25
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
@@ -58,6 +59,52 @@ relations:
   - jeremias-52
   reason: Lo tuvieron preso en Babilonia hasta su muerte (Jer 52:11).
   checked_on: '2026-09-28'
+  status: verified
+- type: kin
+  person: hamutal
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-hamutal
+  reason: '2Re 24:18: su madre se llamaba Hamutal.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-24
+  reason: '2Re 24:18: reinó once años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  date:
+    from: -616
+    to: -608
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 617-609 a.e.c.
+  inferred: true
+  sources:
+  - 2-reyes-24
+  - it-sedequias
+  reason: Nabucodonosor lo puso en el trono (2Re 24:17) y, según Perspicacia «Sedequías», núm. 4, lo hizo rey vasallo con
+    juramento; se rebeló hacia 609 (2Re 24:20).
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: babilonia
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-sedequias
+  reason: '2Re 25:7: ciego y encadenado, se lo llevaron a Babilonia; Jer 52:11 dice que allí siguió preso hasta su muerte.'
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200004685#4
 checked_on: '2026-09-30'

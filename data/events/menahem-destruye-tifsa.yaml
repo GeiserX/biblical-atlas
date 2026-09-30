@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: menahem-destruye-tifsa
+title: Menahem destruye Tifsá
+date:
+  from: -790
+  to: -790
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 791 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 15016
+places:
+- tifsa-cerca-de-tirza
+- tirza
+people:
+- menahem
+passages:
+- 2Re 15:16
+summary: Menahem sale de Tirzá contra Tifsá y su territorio. Como la ciudad no le abre las puertas, la arrasa y raja el vientre
+  de las embarazadas.
+reason: 2Re 15:16 lo pone entonces, al tomar el trono; Perspicacia «Menahem» dice que debió de ser al principio de su reinado,
+  que A6-B empieza hacia 791 a.e.c.
+sources:
+- 2-reyes-15
+- it-menahem
+- it-tifsah
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Tifsah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004419
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified
