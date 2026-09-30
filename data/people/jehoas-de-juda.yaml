@@ -9,6 +9,7 @@ disambiguation: Rey de Judá, hijo de Ocozías; su tocayo Jehoás, nieto de Jeh�
 distinct_from:
 - jehoas-de-israel
 - joas-padre-de-gedeon
+- joas-hijo-del-rey
 date:
   from: -897
   to: -857
@@ -53,5 +54,5 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

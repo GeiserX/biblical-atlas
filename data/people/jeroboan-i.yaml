@@ -14,14 +14,18 @@ date:
   type: anchored
   chronology: tnm
   text: 997-c. 976 a.e.c.
-summary: Efraimita, hijo de Nebat. Ahías le anunció que reinaría sobre diez tribus. Rey tras la división, edificó Siquem y
-  puso becerros de oro en Betel y Dan para que nadie subiera a Jerusalén.
+summary: Efraimita, hijo de Nebat. Ahíya le anunció que reinaría sobre diez tribus. Rey tras la división, reconstruyó Siquem
+  y puso becerros de oro en Betel y Dan para que nadie subiera a Jerusalén.
 reason: Perspicacia «Jeroboán», núm. 1, párr. 2-6 y 10; 1Re 11:26-40 y 12:20-33.
 sources:
 - it-jeroboan
 - 1-reyes-12
 - 1-reyes-14
 - tnm-a6-a
+- 1-reyes-11
+- 1-reyes-13
+- 1-reyes-15
+- 1-reyes-16
 links:
 - title: 'Perspicacia: «Jeroboán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002431
@@ -36,8 +40,8 @@ relations:
   sources:
   - it-jeroboan
   - 1-reyes-12
-  reason: Edificó Siquem y al parecer gobernó desde allí al principio (1Re 12:25).
-  checked_on: '2026-09-28'
+  reason: Reconstruyó Siquem y se quedó a vivir allí (1Re 12:25); al parecer gobernó desde allí al principio.
+  checked_on: '2026-09-30'
   status: verified
 - type: lived_in
   place: tirza
@@ -48,10 +52,82 @@ relations:
   reason: Su casa estaba luego en Tirzá (1Re 14:17).
   checked_on: '2026-09-28'
   status: verified
+- type: kin
+  person: nebat
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-nebat
+  - 1-reyes-15
+  - 1-reyes-16
+  - 1-reyes-21
+  - 1-reyes-22
+  reason: '1Re 11:26: Jeroboán hijo de Nebat.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: zerua
+  word: mother
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-zerua
+  reason: '1Re 11:26: su madre, viuda, se llamaba Zeruá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: born_in
+  place: zereda
+  inferred: true
+  sources:
+  - 1-reyes-11
+  - it-zereda
+  reason: 1Re 11:26 lo llama efraimita de Zeredá; Perspicacia «Zeredá», núm. 1, dice que era su ciudad natal.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-jeroboan
+  reason: '1Re 11:26, 28: siervo de Salomón, que lo puso sobre el trabajo obligatorio de la casa de José.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - 1-reyes-12
+  - it-jeroboan
+  reason: '1Re 11:40 y 12:2: huyó a Egipto y vivió allí hasta la muerte de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: sisaq
+  word: host
+  inferred: true
+  sources:
+  - 1-reyes-11
+  - it-jeroboan
+  - it-sisaq
+  reason: '1Re 11:40: huyó a Egipto, junto a Sisac; Perspicacia «Jeroboán», núm. 1, dice que se quedó bajo su protección.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jeroboán» pone su muerte cerca de 977 a.e.c.; A6-A, más reciente, empieza el reinado de Nadab hacia
     976.
   source: tnm-a6-a
-checked_on: '2026-09-28'
+- date: '2026-09-30'
+  change: 1Re 12:25 dice que reconstruyó Siquem, no que la edificara; la nota da también «fortificó».
+  source: 1-reyes-12
+- date: '2026-09-30'
+  change: El profeta se llama Ahíya, no Ahías (1Re 11:29; Perspicacia «Ahíya», núm. 7). 1Re 12:25 dice que reconstruyó Siquem;
+    la nota da también «fortificó».
+  source: 1-reyes-11
+perspicacia: 1200002431#1
+checked_on: '2026-09-30'
 status: verified

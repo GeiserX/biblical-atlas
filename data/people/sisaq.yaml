@@ -1,8 +1,11 @@
 # biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: sisaq
-name: Sisaq
+name: Sisac
 names:
+- name: Sisac
+  note: Forma de la TNM (1Re 11:40; 14:25).
 - name: Sisaq
+  note: Forma de Perspicacia.
 - name: Sesonq I
   note: Nombre en los registros egipcios.
 summary: Rey de Egipto que acogió a Jeroboán. En el quinto año de Rehoboam invadió Judá y se llevó los tesoros del templo.
@@ -13,6 +16,7 @@ sources:
 - 1-reyes-14
 - 2-cronicas-12
 - si-3
+- 1-reyes-11
 links:
 - title: 'Perspicacia: «Sisaq»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004069
@@ -20,5 +24,25 @@ links:
 - title: 1 Reyes 14 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/14
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200004069'
+history:
+- date: '2026-09-30'
+  change: La TNM escribe Sisac (1Re 11:40; 14:25; 2Cr 12:2); Sisaq, la forma de Perspicacia, queda en los nombres.
+  source: 1-reyes-11
+- date: '2026-09-30'
+  change: Sisac, la grafía de la TNM, pasa a ser el primer nombre; Sisaq se conserva como la de Perspicacia.
+  source: 1-reyes-11
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: holds_office
+  place: egipto
+  office: king
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-sisaq
+  - 1-reyes-14
+  reason: 1Re 11:40 lo llama Sisac, el rey de Egipto.
+  checked_on: '2026-09-30'
+  status: verified

@@ -14,11 +14,17 @@ date:
 places:
 - jerusalen
 summary: Primer rey del reino de Judá. Diecisiete años en Jerusalén.
-reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 12.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Reina sobre Judá desde 1Re 12:17; los
+  17 años los da 1Re 14:21.
 sources:
 - tnm-a6-a
 - 1-reyes-12
 - it-rehoboam
+- 1-reyes-14
 search: Rehoboam rey
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: '1 Reyes 12 cuenta el comienzo del reinado, pero no cuánto duró: los 17 años están en 1Re 14:21.'
+  source: 1-reyes-12
+checked_on: '2026-09-30'
 status: verified

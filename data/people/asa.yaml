@@ -49,10 +49,76 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: grandmother
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-maaca
+  reason: 1Re 15:10, 13 llama a Maacá su abuela.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-reyes-15
+  reason: 1Re 15:11, 24 llama a David su antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-reyes-15
+  reason: '1Re 15:10: reinó 41 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: baasa
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-asa
+  reason: '1Re 15:16, 32: siempre hubo guerra entre Asá y Baasá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-reyes-15
+  reason: 1Re 15:24 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
+    reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: azuba-hija-de-silhi
+  word: wife
+  inferred: true
+  sources:
+  - 1-reyes-22
+  - it-silhi
+  reason: 1Re 22:41, 42 da a Azubá como madre de Jehosafat, hijo de Asá; Perspicacia «Silhí» la llama esposa de Asá.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ben-hadad-hijo-de-tabrimon
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-ben-hadad
+  reason: '1Re 15:18, 19: Asá le recuerda a Ben-Hadad el pacto que hay entre los dos y le manda plata y oro.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Asá» daba 977-937 a.e.c.; la tabla A6-A, más reciente, empieza su reinado en 978.
   source: tnm-a6-a
 perspicacia: 1200000397#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

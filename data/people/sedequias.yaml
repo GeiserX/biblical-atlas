@@ -59,5 +59,8 @@ relations:
   reason: Lo tuvieron preso en Babilonia hasta su muerte (Jer 52:11).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+perspicacia: 1200004685#4
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- sedequias-hijo-de-kenaana

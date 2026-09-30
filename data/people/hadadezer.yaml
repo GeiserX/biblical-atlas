@@ -11,6 +11,7 @@ sources:
 - it-hadadezer
 - 2-samuel-8
 - 2-samuel-10
+- 1-reyes-11
 not_claimed:
 - 'Que la derrota de Hadadézer en 2Sa 8 sea la misma guerra que la de los sirios aliados de los ammonitas: Perspicacia «Zobá»
   solo lo ve posible.'
@@ -57,5 +58,5 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

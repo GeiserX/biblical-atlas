@@ -18,6 +18,7 @@ sources:
 - it-jonatan
 - 2-samuel-15
 - 2-samuel-17
+- 1-reyes-1
 links:
 - title: 'Perspicacia: «Jonatán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
@@ -35,9 +36,10 @@ relations:
   sources:
   - 2-samuel-15
   - it-jonatan
+  - 1-reyes-1
   reason: 2Sa 15:27 y 36 lo llaman Jonatán hijo de Abiatar.
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: accompanies
   person: ahimaaz-hijo-de-sadoc
@@ -49,5 +51,5 @@ relations:
   reason: '2Sa 17:17-21: los dos esperan en En-Roguel, se esconden en el mismo pozo y juntos avisan a David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

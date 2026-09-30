@@ -12,7 +12,7 @@ date:
   type: anchored
   chronology: tnm
   text: c. 905-876 a.e.c.
-summary: Jefe militar ungido en Ramot-galaad por orden de Eliseo. Mató a Jehoram, a Ocozías de Judá, a Jezabel y a la casa
+summary: Jefe militar ungido en Ramot-Galaad por orden de Eliseo. Mató a Jehoram, a Ocozías de Judá, a Jezabel y a la casa
   de Acab, y acabó con el culto a Baal, aunque no con los becerros.
 reason: Perspicacia «Jehú», núm. 3, párr. 3, 7-11 y 15; 2Re 9-10.
 sources:
@@ -21,6 +21,8 @@ sources:
 - 2-reyes-10
 - tnm-a6-a
 - oseas-1
+- 1-reyes-19
+- it-nimsi
 links:
 - title: 'Perspicacia: «Jehú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
@@ -39,10 +41,26 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: nimsi
+  word: grandfather
+  sources:
+  - 1-reyes-19
+  - it-nimsi
+  - it-jehu
+  reason: 1Re 19:16 lo llama nieto de Nimsí; también 2Re 9:2, 14.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehú» daba c. 904-877 a.e.c.; A6-A, más reciente, da c. 905-876.
   source: tnm-a6-a
+- date: '2026-09-30'
+  change: Ramot-Galaad, como la escribe la TNM (1Re 22:3).
+  source: 1-reyes-19
 perspicacia: 1200002401#3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- jehu-hijo-de-hanani

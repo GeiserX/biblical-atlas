@@ -45,6 +45,7 @@ sources:
 - openbible-geo
 - 1-reyes-19
 - jueces-7
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Abel-meholá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000022
@@ -60,5 +61,5 @@ history:
 - date: '2026-09-29'
   change: Se añade Jue 7:22, que Perspicacia usa para situar la ciudad al oeste del Jordán.
   source: jueces-7
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -17,6 +17,7 @@ sources:
 - it-ezrahita
 - w06-salmos-libros-3-4
 - salmos-89
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Etán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001434
@@ -31,14 +32,19 @@ relations:
 - type: kin
   person: zerah-hijo-de-juda
   word: ancestor
-  inferred: false
+  inferred: true
   sources:
   - salmos-89
   - it-ezrahita
   - it-etan
-  reason: 1Cr 2:6 lo pone entre los descendientes de Zérah, hijo de Judá. El encabezamiento de Sl 89 lo llama ezrahíta, que para
-    Perspicacia equivale a zerahíta.
-  checked_on: '2026-09-29'
+  - 1-reyes-4
+  reason: 1Cr 2:6 da a un Etán por hijo de Zérah; Perspicacia «Etán», núm. 1, cree probable que sea el ezrahíta de 1Re 4:31,
+    y «Ezrahíta» iguala ezrahíta a zerahíta.
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'La descendencia de Zérah es deducción de Perspicacia, que solo la da por probable: inferred pasa a true.'
+  source: 1-reyes-4
+checked_on: '2026-09-30'
 status: verified

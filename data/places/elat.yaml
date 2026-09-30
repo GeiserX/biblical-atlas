@@ -19,6 +19,7 @@ sources:
 - it-elat
 - openbible-geo
 - deuteronomio-2
+- 1-reyes-9
 links:
 - title: 'Perspicacia: «Elat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001277
@@ -31,5 +32,5 @@ history:
   change: La precisión pasa de zona a punto. Perspicacia sitúa Elat en ʽAqaba o a su lado, y el punto es el de ʽAqaba, primera
     identificación de OpenBible.
   source: it-elat
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -26,6 +26,9 @@ sources:
 - 2-samuel-20
 - 2-samuel-23
 - 2-samuel-24
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-11
 links:
 - title: 'Perspicacia: «Joab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
@@ -56,8 +59,10 @@ relations:
   - 2-samuel-14
   - 2-samuel-17
   - 2-samuel-23
+  - 1-reyes-1
+  - 1-reyes-2
   reason: 1Sa 26:6 llama a Abisái hijo de Zeruyá y hermano de Joab; Perspicacia «Zeruyá» la da por madre de los dos.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: asahel-hijo-de-zeruya
@@ -82,9 +87,10 @@ relations:
   - 2-samuel-24
   - 2-samuel-8
   - 2-samuel-20
+  - 1-reyes-1
   reason: '2Sa 2:13, 30: sale al frente de los siervos de David (Perspicacia «Joab», núm. 2); en 14:19, 20, 22 se presenta
     como siervo del rey. 8:16 y 20:23: era el jefe de su ejército.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -14,6 +14,7 @@ sources:
 - 2-samuel-17
 - 2-samuel-19
 - 2-samuel-20
+- 1-reyes-2
 links:
 - title: 'Perspicacia: «Amasá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000220
@@ -32,8 +33,9 @@ relations:
   sources:
   - 2-samuel-17
   - it-itra
+  - 1-reyes-2
   reason: 2Sa 17:25 lo hace hijo de Itrá el israelita.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: abigail-hija-de-nahas
@@ -95,8 +97,9 @@ relations:
   - 2-samuel-19
   - 2-samuel-20
   - it-amasa
+  - 1-reyes-2
   reason: '2Sa 19:13: David le promete el mando del ejército en lugar de Joab; 20:4, 5: le manda convocar a Judá.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

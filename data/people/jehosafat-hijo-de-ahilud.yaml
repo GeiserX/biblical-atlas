@@ -8,12 +8,14 @@ disambiguation: El registrador de David y de Salomón, hijo de Ahilud; no el rey
   de Salomón hijo de Parúah.
 distinct_from:
 - jehosafat
+- jehosafat-hijo-de-parua
 summary: Hijo de Ahilud. Fue el registrador de la corte durante los reinados de David y de Salomón.
 reason: Perspicacia «Jehosafat», núm. 1; 2Sa 8:16; 1Cr 18:15.
 sources:
 - it-jehosafat
 - 2-samuel-8
 - 2-samuel-20
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
@@ -32,9 +34,10 @@ relations:
   - 2-samuel-8
   - it-ahilud
   - 2-samuel-20
+  - 1-reyes-4
   reason: '2Sa 8:16: Jehosafat hijo de Ahilud.'
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: tie
   person: david
@@ -47,5 +50,14 @@ relations:
   reason: '2Sa 8:16; 20:24: era el registrador de David.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:3: era el registrador del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified
