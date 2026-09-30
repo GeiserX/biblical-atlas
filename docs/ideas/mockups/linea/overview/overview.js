@@ -432,12 +432,11 @@
   /** Filas de un carril en píxeles del mundo (desde el principio de la historia, a la escala de ahora): el nombre va
       donde empieza la marca, así que la fila de cada marca no depende de dónde está la vista y arrastrar no la cambia.
       Se calcula una vez por escala. */
-  const worldCache = new Map();
-  let worldKey = '';
+  const worldCache = new Map();   // carril -> { key, res }: cada carril guarda su clave, porque «todas las filas» es de un carril
   function worldRows(id, items) {
     const key = `${S.span}|${detW}|${phone}|${S.openWide.has(id)}`;
-    if (key !== worldKey) { worldCache.clear(); worldKey = key; }
-    if (worldCache.has(id)) return worldCache.get(id);
+    const hit = worldCache.get(id);
+    if (hit && hit.key === key) return hit.res;
     const ppy = detW / S.span, X = (t) => (t - R0) * ppy;
     const geo = items.map((o) => geom(o, X, detW, true));
     const when = (o) => (o.span ? o.start : o.at);
@@ -449,7 +448,7 @@
       ends[r] = g.e1; g.row = r;
     }
     const res = { byId: new Map(geo.map((g) => [g.o.id, g])), rows: ends.length };
-    worldCache.set(id, res);
+    worldCache.set(id, { key, res });
     return res;
   }
   function geom(o, X, W, world) {
@@ -734,15 +733,13 @@
   function select(id) {
     const o = BY_ID.get(id);
     if (!o) return;
-    const before = S.t, v1 = S.v0 + S.span;
+    const before = S.t;
     // La marca es [lo, hi): su final es el primer instante de lo que viene después, así que el cursor no se queda en él.
     const hiE = o.hi > o.lo ? o.hi - Math.min((o.hi - o.lo) / 200, DAY / 24) : o.hi;
     let t = S.t, how;
     if (t >= o.lo && (t < o.hi || o.hi <= o.lo)) how = 'dentro';
     else if (t < o.lo) { t = o.lo; how = 'principio'; }
     else { t = hiE; how = 'final'; }
-    const a = Math.max(o.lo, S.v0), b = Math.min(hiE, v1);
-    if (a <= b && how !== 'dentro') t = clamp(t, a, b);
     S.t = t;
     if (S.list && !S.list.ids.includes(id)) S.list = null;
     S.sel = id;
