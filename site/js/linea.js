@@ -1857,6 +1857,8 @@ function iniciarLinea() {
   filas.addEventListener('pointerdown', (e) => {
     const pistaC = e.target.closest('.carril-pista');
     if (!pistaC || e.button > 0) return;
+    // La regla no cuenta como dedo: si se contara, el siguiente arrastre de un dedo sería una pinza.
+    if (!punteros.size && (e.altKey || L.modoRegla)) { empezarRegla(e, filas); return; }
     punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
     tragarClic = false;
     if (punteros.size === 2) {
@@ -1868,7 +1870,6 @@ function iniciarLinea() {
       if (hold) { hold = null; sucio.linea = true; programar(); }
       return;
     }
-    if (e.altKey || L.modoRegla) { empezarRegla(e, filas); return; }
     arrastre = { id: e.pointerId, x0: e.clientX, y0: e.clientY, v0: E.vista[0], movido: false, pista: pistaC, marca: e.target.closest('.m'), raton: e.pointerType === 'mouse' };
   });
   window.addEventListener('pointermove', (e) => {
@@ -1908,7 +1909,7 @@ function iniciarLinea() {
     return mejor && { it: mejor, t: tDe(clamp(x, mejor._hit[0], mejor._hit[1])) };
   };
   const fin = (e) => {
-    if (regla?.el === filas) { acabarRegla(); return; }
+    if (regla?.el === filas) { punteros.delete(e.pointerId); acabarRegla(); return; }
     if (!punteros.has(e.pointerId)) return;
     punteros.delete(e.pointerId);
     if (pinza) { if (!punteros.size) pinza = null; return; }

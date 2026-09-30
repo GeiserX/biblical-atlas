@@ -616,6 +616,43 @@ test('1440: names on bars read in both themes and faint bars carry a border', as
   await p.context().close();
 });
 
+test('430: a pinch that starts during a drag, and the ruler used with a finger, leave the strip as it was', async () => {
+  const p = await open(PHONE, 't=50.5&v=8');
+  const cdp = await p.context().newCDPSession(p);
+  const r = await p.evaluate(() => { const c = document.querySelector('#linea-cuerpo').getBoundingClientRect(), pr = document.querySelector('#pista').getBoundingClientRect(); return { x: pr.left + 60, y: c.top + c.height * 0.6 }; });
+  const T = (type, pts) => cdp.send('Input.dispatchTouchEvent', { type, touchPoints: pts });
+  await T('touchStart', [{ x: r.x, y: r.y, id: 1 }]);
+  for (let i = 1; i <= 8; i++) await T('touchMove', [{ x: r.x + i * 10, y: r.y, id: 1 }]);
+  await T('touchStart', [{ x: r.x + 80, y: r.y, id: 1 }, { x: r.x + 160, y: r.y + 10, id: 2 }]);
+  await T('touchMove', [{ x: r.x + 70, y: r.y, id: 1 }, { x: r.x + 180, y: r.y + 10, id: 2 }]);
+  await T('touchEnd', []);
+  await frames(p, 4);
+  const dragging = await p.evaluate(() => document.querySelector('#linea-filas').classList.contains('arrastrando'));
+  await goTo(p, -1499.5, 40);
+  const lanes = await p.evaluate(() => window.BE.lineaCarriles().filter((l) => ['pablo', 'cartas'].includes(l.id)).map((l) => `${l.id}:${l.alto}`));
+  note(`430 drag then pinch: «arrastrando» ${dragging ? 'stays' : 'gone'}; at 1500 a.e.c. ${lanes.join(' ')}`);
+  assert.equal(dragging, false);
+  assert.ok(lanes.every((x) => x.endsWith(':0')), lanes.join(' '));
+  // The ruler with a finger, then a one-finger drag: it moves time and keeps the scale.
+  await goTo(p, 50.5, 8);
+  await p.evaluate(() => { window.BE.lineaEstado.modoRegla = true; document.querySelector('#pista').classList.add('modo-regla'); });
+  await T('touchStart', [{ x: r.x, y: r.y, id: 3 }]);
+  for (let i = 1; i <= 6; i++) await T('touchMove', [{ x: r.x + i * 15, y: r.y, id: 3 }]);
+  await T('touchEnd', []);
+  await frames(p, 4);
+  const a = await state(p);
+  await T('touchStart', [{ x: r.x, y: r.y, id: 4 }]);
+  for (let i = 1; i <= 12; i++) await T('touchMove', [{ x: r.x + i * 12, y: r.y + 1, id: 4 }]);
+  await T('touchEnd', []);
+  await frames(p, 4);
+  const b = await state(p);
+  const s0 = a.vista[1] - a.vista[0], s1 = b.vista[1] - b.vista[0];
+  note(`430 ruler with a finger, then a drag: span ${s0} → ${s1}, view moved ${(a.vista[0] - b.vista[0]).toFixed(3)} years`);
+  assert.ok(Math.abs(s1 - s0) < 1e-9, `the drag changed the scale ${s0} → ${s1}`);
+  assert.ok(a.vista[0] - b.vista[0] > 0.5);
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);
