@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: recab-hijo-de-rimon
+name: Recab
+names:
+- name: Recab
+perspicacia: 1200003662#1
+disambiguation: El asesino de Is-Bóset; no Recab, el quenita antepasado de los recabitas.
+summary: Benjamita, hijo de Rimón de Beerot y jefe de una banda de saqueadores de Is-Bóset. Lo asesinó con su hermano Baaná,
+  y David mandó ejecutarlos por matar a un hombre justo.
+reason: Perspicacia «Recab», núm. 1; 2Sa 4:2-12.
+sources:
+- it-recab
+- 2-samuel-4
+links:
+- title: 'Perspicacia: «Recab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003662
+  type: perspicacia
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+relations:
+- type: kin
+  person: rimon-de-beerot
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-recab
+  reason: '2Sa 4:2, 5: hijo de Rimón el beerotita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: is-boset
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-recab
+  reason: '2Sa 4:2: mandaba una de las bandas de saqueadores del hijo de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-recab
+  reason: '2Sa 4:12: los hombres de David lo matan y lo cuelgan junto al estanque de Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

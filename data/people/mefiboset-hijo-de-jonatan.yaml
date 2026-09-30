@@ -1,0 +1,107 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mefiboset-hijo-de-jonatan
+name: Mefibóset
+names:
+- name: Mefibóset
+perspicacia: 1200002986#2
+disambiguation: Mefibóset hijo de Jonatán, cojo desde niño; no Mefibóset hijo de Saúl y de Rizpá.
+summary: Hijo de Jonatán y nieto de Saúl. Quedó cojo de los dos pies a los cinco años, cuando su nodriza huyó con él. David
+  le devolvió las tierras de Saúl y lo sentó a su mesa.
+reason: Perspicacia «Mefibóset», núm. 2; 2Sa 4:4.
+sources:
+- it-mefiboset
+- 2-samuel-4
+- 2-samuel-9
+- 2-samuel-16
+- 2-samuel-19
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Mefibóset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002986
+  type: perspicacia
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+- title: 2 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/9
+  type: bible
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: kin
+  person: jonatan-hijo-de-saul
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-mefiboset
+  - 2-samuel-9
+  - 2-samuel-21
+  reason: '2Sa 4:4: su padre era Jonatán, el hijo de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: saul
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-mefiboset
+  - 2-samuel-9
+  - 2-samuel-16
+  - 2-samuel-19
+  - 2-samuel-21
+  reason: '2Sa 4:4: hijo de Jonatán, el hijo de Saúl; Perspicacia lo llama nieto del rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: lo-debar
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-mefiboset
+  reason: '2Sa 9:4, 5: vivía en casa de Makir, en Lo-Debar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-mefiboset
+  - 2-samuel-16
+  reason: '2Sa 9:13: se queda a vivir en Jerusalén porque come siempre a la mesa del rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: makir-hijo-de-amiel
+  word: host
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-makir
+  reason: '2Sa 9:4, 5: estaba en casa de Makir hijo de Amiel cuando David lo buscó.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: host
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-mefiboset
+  reason: '2Sa 9:7, 10, 11, 13: David lo sienta a su mesa para siempre, como a uno de sus propios hijos.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+not_claimed:
+- 'Que sea el Merib-baal de 1 Crónicas 8 y 9: Perspicacia lo da solo como probable.'
+- 'Que se quedara en Jerusalén esperando recobrar el reino de Saúl: Perspicacia «Zibá» y «Mefibóset», núm. 2, lo tienen por
+  una calumnia de Zibá.'
+distinct_from:
+- mefiboset-hijo-de-saul

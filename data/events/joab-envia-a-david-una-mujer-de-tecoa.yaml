@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joab-envia-a-david-una-mujer-de-tecoa
+title: Joab envía a David una mujer astuta de Tecoa
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 14001
+places:
+- jerusalen
+- tecoa
+people:
+- joab-hijo-de-zeruya
+- david
+- absalon
+present:
+- david
+- joab-hijo-de-zeruya
+passages:
+- 2Sa 14:1-20
+summary: Joab ve que David añora a Absalón y trae de Tecoa a una mujer que, de luto, le cuenta un caso inventado. El rey jura
+  proteger al hijo; ella lo aplica a Absalón y David descubre a Joab detrás.
+reason: 'Sin año en las fuentes: entre el pacto con David, hacia 1070 según B7, y el final de 2 Samuel, c. 1040 (tabla de
+  libros). Perspicacia «Joab», núm. 2. La escena es ante el rey, en Jerusalén (14:23).'
+sources:
+- 2-samuel-14
+- it-joab
+- it-absalon
+- it-teqoa
+- tnm-b7
+- tnm-tabla
+links:
+- title: 2 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/14
+  type: bible
+- title: 'Perspicacia: «Joab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

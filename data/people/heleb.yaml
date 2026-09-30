@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: heleb
+name: Héleb
+names:
+- name: Héleb
+- name: Héled
+  note: Así lo llama 1Cr 11:30, según Perspicacia.
+perspicacia: '1200001968'
+summary: Hijo de Baaná el netofatita y uno de los treinta guerreros de David. Perspicacia lo cree probablemente el Heldai
+  de 1Cr 27:15.
+reason: Perspicacia «Héleb» y «Netofá»; 2Sa 23:29.
+sources:
+- it-heleb
+- it-netofa
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Héleb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001968
+  type: perspicacia
+relations:
+- type: kin
+  person: baana-el-netofatita
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:29: Héleb, hijo de Baaná.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: netofa
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-netofa
+  reason: 'Perspicacia «Netofá»: Héleb era netofatita, como su padre (2Sa 23:29).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:29: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

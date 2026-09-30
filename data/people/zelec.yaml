@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zelec
+name: Zélec
+names:
+- name: Zélec
+- name: Zéleq
+  note: Grafía de Perspicacia.
+perspicacia: '1200004688'
+summary: Ammonita que formó parte de los guerreros de David.
+reason: Perspicacia «Zéleq»; 2Sa 23:37.
+sources:
+- it-zeleq
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Zéleq»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004688
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:37: Zélec el ammonita, uno de los treinta de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

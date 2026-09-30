@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-somete-a-los-filisteos
+title: David somete a los filisteos y les quita Meteg-Amá
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 8001
+places:
+- filistea
+- meteg-ama
+- gat
+people:
+- david
+passages:
+- 2Sa 8:1
+- 1Cr 18:1
+summary: David vence y somete a los filisteos y les arrebata Meteg-Amá. El relato de Crónicas dice que les quitó Gat y los
+  pueblos que dependían de ella.
+reason: 2Sa 8:1; 1Cr 18:1; Perspicacia «Meteg-amá». Después del pacto (c. 1070, lámina B7; Perspicacia «David», párr. 25)
+  y antes de acabarse el libro (c. 1040, estudio 3).
+sources:
+- 2-samuel-8
+- it-meteg-ama
+- it-david
+- tnm-b7
+- si-3
+links:
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

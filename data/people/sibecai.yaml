@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sibecai
+name: Sibecái
+names:
+- name: Sibecái
+- name: Sibecai
+  note: Grafía de Perspicacia.
+perspicacia: '1200004106'
+summary: Husatita, uno de los guerreros poderosos de David. Cuando Israel combatía a los filisteos en Gob, acabó con Saf,
+  un gigante de los refaím. Más tarde estuvo al frente de la octava división del ejército.
+reason: Perspicacia «Sibecai» y «Husatita»; 2Sa 21:18, 22; 1Cr 27:11.
+sources:
+- it-sibecai
+- it-husatita
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Sibecai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004106
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-sibecai
+  reason: '2Sa 21:15, 22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Sibecái.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

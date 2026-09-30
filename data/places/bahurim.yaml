@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bahurim
+name: Bahurim
+names:
+- name: Bahurim
+type: city
+lat: 31.7912
+lon: 35.25694
+precision: point
+coord_source: openbible:a9ed5a4
+coord_url: https://www.openbible.info/geo/ancient/a9ed5a4/bahurim
+coord_note: Ras Tumeim, primera identificación de OpenBible; es el Ras et-Tmim con que Perspicacia la identifica.
+summary: Pueblo junto al monte de los Olivos, al norte del viejo camino a Jericó. Hasta allí siguió Paltiel a Mical llorando;
+  más tarde Simeí maldijo allí a David, que huía de Absalón.
+reason: 'Perspicacia «Bahurim»: suele identificarse con Ras et-Tmim, unos 2 km al nordeste del monte del Templo; 2Sa 3:16.
+  OpenBible: solo el punto.'
+sources:
+- it-bahurim
+- openbible-geo
+- 2-samuel-3
+- 2-samuel-16
+- 2-samuel-17
+- 2-samuel-19
+- it-baharumita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Bahurim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000538
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

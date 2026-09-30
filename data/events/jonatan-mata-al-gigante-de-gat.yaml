@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-mata-al-gigante-de-gat
+title: Jonatán, sobrino de David, mata a un gigante en Gat
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: después de tomar Rabá, en los últimos años del reinado de David)'
+narrative_order:
+  series: 2-samuel
+  order: 21020
+places:
+- gat
+people:
+- jonatan-hijo-de-sama
+roles: {}
+passages:
+- 2Sa 21:20-22
+- 1Cr 20:6-8
+summary: En Gat, un gigante de los refaím con seis dedos en manos y pies reta a Israel sin parar, y Jonatán, hijo de Simeí,
+  lo mata. Los cuatro gigantes caen a manos de David y sus siervos.
+reason: '2Sa 21:20-22; Perspicacia «Jonatán», núm. 4. El gigante no tiene nombre ni papel. Fecha: tras la toma de Rabá (1Cr
+  20:4), en los últimos sucesos del reinado (Perspicacia «Samuel, Libros de»); 2 Samuel acaba c. 1040.'
+sources:
+- 2-samuel-21
+- it-jonatan
+- it-refaim
+- it-gat
+- it-samuel-libros
+- tnm-b7
+- tnm-tabla
+- si-3
+links:
+- title: 2 Samuel 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

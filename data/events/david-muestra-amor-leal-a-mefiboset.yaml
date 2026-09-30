@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-muestra-amor-leal-a-mefiboset
+title: David muestra amor leal a Mefibóset
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 9001
+places:
+- jerusalen
+- lo-debar
+people:
+- david
+- ziba
+- mefiboset-hijo-de-jonatan
+- makir-hijo-de-amiel
+- mica-hijo-de-mefiboset
+present:
+- david
+- ziba
+- mefiboset-hijo-de-jonatan
+passages:
+- 2Sa 9:1-13
+summary: David busca a algún superviviente de la familia de Saúl. Zibá le habla de Mefibóset, que vive en Lo-Debar. El rey
+  le devuelve las tierras de Saúl, pone a Zibá a cultivarlas y lo sienta siempre a su mesa.
+reason: '2Sa 9:13 lo sitúa en Jerusalén, a la mesa del rey. Fecha: después de 1070, cuando David ya reina en Jerusalén, y
+  antes de acabarse 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-9
+- si-3
+- it-mefiboset
+- it-ziba
+links:
+- title: 2 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

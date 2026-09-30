@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: igal-hijo-de-natan
+name: Igal
+names:
+- name: Igal
+perspicacia: 1200002140#2
+disambiguation: Igal hijo de Natán de Zobá, guerrero de David; no el espía de Isacar ni el descendiente de David.
+distinct_from:
+- igal-hijo-de-jose
+summary: Hijo de Natán de Zobá y uno de los treinta guerreros de David.
+reason: Perspicacia «Igal», núm. 2; 2Sa 23:36.
+sources:
+- it-igal
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Igal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002140
+  type: perspicacia
+relations:
+- type: kin
+  person: natan-de-zoba
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:36: Igal, hijo de Natán de Zobá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:36: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

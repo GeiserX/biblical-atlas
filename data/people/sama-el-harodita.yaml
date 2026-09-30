@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama-el-harodita
+name: Samá
+names:
+- name: Samá
+- name: Samot
+  note: Grafía de 1Cr 11:27, según Perspicacia «Samah», núm. 4.
+- name: Samhut
+  note: Grafía de 1Cr 27:8, que lo pone al frente de la quinta división.
+perspicacia: 1200003942#4
+disambiguation: Samá el harodita, uno de los treinta de David; no Samá hijo de Agué, ni el hermano de David, ni el hijo de
+  Reuel.
+distinct_from:
+- sama-hijo-de-ague
+- sama-hijo-de-jese
+- sama-hijo-de-reuel
+summary: Harodita, uno de los treinta guerreros de David. Más tarde estuvo al frente de la división que servía el quinto mes.
+reason: Perspicacia «Samah», núm. 4, y «Harodita»; 2Sa 23:25.
+sources:
+- it-samah
+- it-harodita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Samah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003942
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:25: Samá el harodita, uno de los treinta de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="css/linea.css">
 <link rel="stylesheet" href="css/estudio.css">
 <link rel="stylesheet" href="css/notes.css">
+<link rel="stylesheet" href="css/datepicker.css">
 <link rel="stylesheet" href="css/tactil.css">
 <!-- MapLibre GL JS 6.11.2 (solo módulos ES). El mapa de importación fija la versión y la huella SRI de cada módulo. -->
 <script type="importmap">
@@ -51,6 +52,7 @@
 <script defer src="js/mapa.js"></script>
 <script defer src="js/trayectorias.js"></script>
 <script defer src="js/linea.js"></script>
+<script defer src="js/datepicker.js"></script>
 <script defer src="js/ahora.js"></script>
 <script defer src="js/buscar.js"></script>
 <script defer src="js/grafo.js"></script>
@@ -85,7 +87,7 @@
     </div>
     <button class="filtro" id="filtro" type="button" hidden></button>
     <div class="be-spacer"></div>
-    <div class="be-date fecha" id="fecha" aria-live="polite"><span class="be-date__value" id="fecha-valor" title="Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para escribir otra fecha.">c. 50 e.c.</span><span class="sr-only">, pulsa para escribir otra fecha</span><span class="fecha-ir" aria-hidden="true"><svg class="be-i be-i--sm" viewBox="0 0 24 24"><path d="M14.5 5.5l4 4M4.5 19.5l1-4.5L15.8 4.7a1.8 1.8 0 0 1 2.5 0l1 1a1.8 1.8 0 0 1 0 2.5L9 18.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="fecha-ir__texto">Ir a…</span></span></div>
+    <div class="be-date fecha" id="fecha" role="button" tabindex="0" aria-haspopup="dialog" aria-expanded="false" aria-live="polite"><span class="be-date__value" id="fecha-valor" title="Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para ir a otra fecha.">c. 50 e.c.</span><span class="sr-only">, pulsa para ir a otra fecha</span><span class="fecha-ir" aria-hidden="true"><svg class="be-i be-i--sm" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="fecha-ir__texto">Ir a otra fecha</span></span></div>
     <div class="be-seg modos" role="radiogroup" aria-label="Mapa base">
       <button class="be-seg__opt" type="button" role="radio" data-mapa="antiguo" title="Mapa antiguo"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5 9 4l6 2.5L20 4v13.5L15 20l-6-2.5L4 20Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Mapa antiguo</button>
       <button class="be-seg__opt" type="button" role="radio" data-mapa="actual" title="Mapa actual"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h16M12 4c2.5 2.5 2.5 13.5 0 16M12 4c-2.5 2.5-2.5 13.5 0 16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Actual</button>

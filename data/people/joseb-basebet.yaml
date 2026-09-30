@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joseb-basebet
+name: Joseb-Basébet
+names:
+- name: Joseb-Basébet
+- name: Jasobeam
+  note: Así lo llama 1Cr 11:11; Perspicacia cree que quizá es la forma más correcta del nombre.
+perspicacia: '1200002521'
+summary: Tahkemonita, jefe de los tres guerreros más destacados de David. En una ocasión abatió con su lanza a 800 hombres,
+  y fue uno de los tres que llevaron a David agua de Belén.
+reason: Perspicacia «Joseb-basébet» y «Jasobeam», núm. 2; 2Sa 23:8, 13-17.
+sources:
+- it-joseb-basebet
+- it-jasobeam
+- it-tahkemonita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Joseb-basébet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002521
+  type: perspicacia
+- title: 'Perspicacia: «Jasobeam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002336
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:8: encabeza la lista de los guerreros poderosos de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: helam
+name: Helam
+names:
+- name: Helam
+type: city
+lat: 32.75
+lon: 36.240833
+precision: uncertain
+coord_source: openbible:aeb09c0
+coord_url: https://www.openbible.info/geo/ancient/aeb09c0/helam
+coord_note: Primera identificación de OpenBible, ʽAlma, el sitio que Perspicacia da como posible, unos 55 km al este del mar
+  de Galilea.
+summary: Lugar al este del Jordán donde David derrotó al ejército sirio de Hadadézer. Su jefe, Sobac, murió allí.
+reason: 'Perspicacia «Helam»; 2Sa 10:16-18. OpenBible: solo el punto.'
+sources:
+- it-helam
+- openbible-geo
+- 2-samuel-10
+links:
+- title: 'Perspicacia: «Helam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001964
+  type: perspicacia
+- title: 2 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

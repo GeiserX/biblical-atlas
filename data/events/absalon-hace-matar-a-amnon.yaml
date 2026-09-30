@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: absalon-hace-matar-a-amnon
+title: Absalón hace matar a Amnón en Baal-Hazor
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 13023
+type: death
+places:
+- baal-hazor
+- jerusalen
+people:
+- amnon-hijo-de-david
+- absalon
+- david
+- jehonadab-hijo-de-simea
+present:
+- amnon-hijo-de-david
+- absalon
+roles:
+  amnon-hijo-de-david: died
+passages:
+- 2Sa 13:23-36
+summary: Dos años después, Absalón invita a los hijos del rey al esquileo en Baal-Hazor y sus siervos matan a Amnón cuando
+  está bebido. A David le dicen que han muerto todos; Jehonadab lo corrige y los demás vuelven llorando.
+reason: 'Sin año en las fuentes: entre el pacto con David, hacia 1070 según B7, y el final de 2 Samuel, c. 1040 (tabla de
+  libros). Perspicacia «Absalón»: banquete en Baal-Hazor; los demás hijos vuelven a Jerusalén.'
+sources:
+- 2-samuel-13
+- it-absalon
+- it-amnon
+- it-baal-hazor
+- tnm-b7
+- tnm-tabla
+links:
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+- title: 'Perspicacia: «Absalón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000063
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

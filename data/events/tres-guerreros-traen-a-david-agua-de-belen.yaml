@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tres-guerreros-traen-a-david-agua-de-belen
+title: Tres guerreros traen a David agua de Belén
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+narrative_order:
+  series: 2-samuel
+  order: 5018
+places:
+- adulam
+- belen
+- valle-de-refaim
+people:
+- david
+- joseb-basebet
+- eleazar-hijo-de-dodo
+- sama-hijo-de-ague
+present:
+- david
+- joseb-basebet
+- eleazar-hijo-de-dodo
+- sama-hijo-de-ague
+passages:
+- 2Sa 23:13-17
+- 1Cr 11:15-19
+summary: Con los filisteos en el valle de Refaím y en Belén, David, en la cueva de Adulam, desea agua de la cisterna de Belén.
+  Tres de sus guerreros se la traen, pero él la derrama ante Jehová.
+reason: '2Sa 23:13-17. Perspicacia «Adulam»: David, ya rey, usó la cueva como base contra los filisteos (2Sa 5:17, 18); va
+  con la primera batalla de Refaím (c. 1070, «Baal-perazim»). «Jasobeam», núm. 2, y «Samah», núm. 3, nombran a los tres.'
+sources:
+- 2-samuel-23
+- it-adulam
+- it-jasobeam
+- it-samah
+- si-3
+- it-baal-perazim
+links:
+- title: 2 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

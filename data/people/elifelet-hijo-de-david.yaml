@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelet-hijo-de-david
+name: Elifélet
+names:
+- name: Elifélet
+perspicacia: 1200001315#3
+disambiguation: Elifélet núm. 3 de Perspicacia, el último de la lista de 2Sa 5:16; no el hermano anterior, llamado también
+  Elpélet, ni el guerrero hijo de Ahasbai.
+summary: Hijo de David nacido en Jerusalén, el último de la lista de 2Sa 5:16. Como Crónicas pone antes a otro Elifélet, hay
+  quien cree que este nació cuando aquel ya había muerto.
+reason: 'Perspicacia «Elifélet», núm. 3; 2Sa 5:16. En Crónicas: 1Cr 3:8 y 14:7.'
+sources:
+- it-elifelet
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001315
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elifelet-hijo-de-ahasbai

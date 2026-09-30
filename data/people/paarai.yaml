@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paarai
+name: Paarái
+names:
+- name: Paarái
+- name: Paarai
+  note: Grafía de Perspicacia.
+perspicacia: '1200003356'
+summary: Arbita, uno de los treinta guerreros de David. Perspicacia ve posible que sea el Naarai de 1Cr 11:37.
+reason: Perspicacia «Paarai» y «Arab»; 2Sa 23:35.
+sources:
+- it-paarai
+- it-arab
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Paarai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003356
+  type: perspicacia
+relations:
+- type: lived_in
+  place: arab
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-arab
+  reason: '2Sa 23:35: Paarái el arbita; Perspicacia «Arab» dice que de allí era probablemente.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:35: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

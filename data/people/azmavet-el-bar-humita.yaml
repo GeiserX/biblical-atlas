@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azmavet-el-bar-humita
+name: Azmávet
+names:
+- name: Azmávet
+perspicacia: 1200000496#1
+disambiguation: Azmávet el bar-humita, guerrero de David; no el tesorero hijo de Adiel ni el descendiente de Saúl.
+summary: Bar-humita, es decir, de Bahurim, y uno de los treinta guerreros de David. Perspicacia ve posible que sea el padre
+  de Jeziel y Pélet.
+reason: Perspicacia «Azmávet», núm. 1, «Baharumita» y «Bar-humita»; 2Sa 23:31.
+sources:
+- it-azmavet
+- it-baharumita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Azmávet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000496
+  type: perspicacia
+relations:
+- type: lived_in
+  place: bahurim
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-baharumita
+  reason: '2Sa 23:31: Azmávet el bar-humita; Perspicacia «Baharumita» dice que era de Bahurim.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:31: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

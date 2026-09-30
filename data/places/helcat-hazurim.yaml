@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: helcat-hazurim
+name: Helcat-Hazurim
+names:
+- name: Helcat-Hazurim
+  note: 'La nota de 2Sa 2:16 da su sentido: campo de cuchillos de pedernal.'
+- name: Helqat-hazurim
+  note: Grafía de Perspicacia.
+type: plain
+lat: 31.847451
+lon: 35.183351
+precision: zone
+coord_source: openbible:ac722b9
+coord_url: https://www.openbible.info/geo/ancient/ac722b9/helkath-hazzurim
+coord_note: OpenBible lo pone a menos de 500 m de Gabaón y le da el punto de la ciudad; el campo no tiene punto propio.
+summary: Campo junto al estanque de Gabaón donde doce hombres de Is-Bóset y doce de David se mataron entre sí. El nombre le
+  quedó por aquel combate.
+reason: 'Perspicacia «Helqat-hazurim»; 2Sa 2:12-16. OpenBible: solo el punto.'
+sources:
+- it-helqat-hazurim
+- openbible-geo
+- 2-samuel-2
+links:
+- title: 'Perspicacia: «Helqat-hazurim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001977
+  type: perspicacia
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

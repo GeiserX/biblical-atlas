@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itream
+name: Itream
+names:
+- name: Itream
+perspicacia: '1200002243'
+summary: Sexto hijo de David, que le dio en Hebrón su esposa Eglá.
+reason: Perspicacia «Itream»; 2Sa 3:5.
+sources:
+- it-itream
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Itream»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002243
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-itream
+  reason: '2Sa 3:5: el sexto hijo de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: egla
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-itream
+  reason: '2Sa 3:5: hijo de Eglá, esposa de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-itream
+  reason: '2Sa 3:5: nacido en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -50,6 +50,12 @@ names:
 - name: Torre de Hananel
   note: Torre del muro norte, cerca de la Torre de Meah y de la Puerta de las Ovejas; se reconstruyó con Nehemías (Zac 14:10;
     Jer 31:38; Ne 3:1; 12:39). Perspicacia «Torre».
+- name: Montículo
+  note: Construcción de la Ciudad de David, dentro de ella o junto a ella, desde la que David edificó (2Sa 5:9). La nota la
+    llama también Miló. Perspicacia no sabe qué era exactamente.
+- name: Bet-Merhac
+  note: Sitio donde se detuvo David al dejar la ciudad huyendo de Absalón (2Sa 15:17). Perspicacia «Bet-merhaq» cree que quizá
+    fuera la última casa del lado del monte de los Olivos.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -152,6 +158,17 @@ sources:
 - zacarias-9
 - zacarias-12
 - zacarias-14
+- it-monticulo
+- 2-samuel-6
+- 2-samuel-11
+- 2-samuel-12
+- 2-samuel-14
+- 2-samuel-15
+- it-bet-merhaq
+- 2-samuel-16
+- 2-samuel-19
+- 2-samuel-20
+- 2-samuel-24
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
@@ -170,6 +187,9 @@ links:
   type: perspicacia
 - title: 'Perspicacia: «Torre»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004459
+  type: perspicacia
+- title: 'Perspicacia: «Montículo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003124
   type: perspicacia
 history:
 - date: '2026-09-29'

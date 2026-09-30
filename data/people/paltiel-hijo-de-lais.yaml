@@ -19,6 +19,7 @@ sources:
 - it-paltiel
 - it-palti
 - 1-samuel-25
+- 2-samuel-3
 links:
 - title: 'Perspicacia: «Paltiel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003371
@@ -33,6 +34,7 @@ relations:
   inferred: false
   sources:
   - 1-samuel-25
+  - 2-samuel-3
   reason: '1Sa 25:44: Paltí hijo de Lais.'
   checked_on: '2026-09-29'
   status: verified
@@ -43,6 +45,7 @@ relations:
   sources:
   - 1-samuel-25
   - it-paltiel
+  - 2-samuel-3
   reason: '1Sa 25:44: Saúl le había dado a su hija Mical, que era esposa de David.'
   checked_on: '2026-09-29'
   status: verified

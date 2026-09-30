@@ -6,6 +6,9 @@ names:
 - name: Congregador
   note: Título con que se presenta en Eclesiastés (Ec 1:1, 12; 7:27; 12:8-10), del hebreo Qohéleth. Perspicacia «Eclesiastés,
     Libro de» dice que es Salomón.
+- name: Jedidías
+  note: Nombre que Jehová le hizo poner por medio de Natán (2Sa 12:25); quiere decir «amado de Jah». Perspicacia dice que
+    se le conoció mucho menos por él.
 date:
   from: -1036
   to: -997
@@ -45,6 +48,8 @@ sources:
 - cantar-de-los-cantares-6
 - cantar-de-los-cantares-7
 - cantar-de-los-cantares-8
+- 2-samuel-5
+- it-jedidias
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -67,7 +72,8 @@ relations:
   - salmos-72
   - proverbios-1
   - eclesiastes-1
-  reason: Hijo de David y Bat-Seba (2Sa 12:24).
+  - 2-samuel-5
+  reason: '2Sa 12:24: David y Bat-Seba tienen a Salomón.'
   checked_on: '2026-09-29'
   status: verified
 - type: succeeds
@@ -87,7 +93,8 @@ relations:
   sources:
   - mateo-1
   - it-bat-seba
-  reason: Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.
+  - 2-samuel-12
+  reason: '2Sa 12:24: Bat-Seba, ya esposa de David, da a luz a Salomón. Mt 1:6 la llama la esposa de Urías.'
   checked_on: '2026-09-29'
   status: verified
 - type: lived_in
@@ -103,6 +110,15 @@ relations:
   - si-cantar-de-los-cantares
   reason: 'Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia
     «Eclesiastés, Libro de» dice que es Salomón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  - 2-samuel-12
+  reason: 2Sa 5:13, 14 lo pone en la lista de hijos que David tuvo en Jerusalén.
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200004178'
@@ -136,5 +152,9 @@ history:
 - date: '2026-09-29'
   change: La razón cita Can 1:1 y el artículo de Perspicacia que le atribuye El Cantar de los Cantares.
   source: it-cantar-de-los-cantares
+- date: '2026-09-29'
+  change: 'Las razones de su madre y de su padre citan 2Sa 12:24, donde Bat-Seba da a luz a Salomón; la del padre, con palabras
+    nuestras.'
+  source: 2-samuel-12
 checked_on: '2026-09-29'
 status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-ahitofel
+title: Ahitofel se quita la vida en su pueblo
+type: death
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 17023
+places:
+- guilo
+people:
+- ahitofel
+roles:
+  ahitofel: died
+passages:
+- 2Sa 17:23
+summary: Al ver rechazado su consejo, Ahitofel vuelve en burro a su casa, deja dispuestos los asuntos de su familia y se ahorca.
+  Lo entierran en la tumba de sus antepasados.
+reason: '2Sa 17:23; su pueblo es Guiló, según Perspicacia «Ahitofel» y «Guiló». Fecha: después del pacto con David (después
+  de 1070) y antes de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-17
+- it-ahitofel
+- it-guilo
+- si-3
+links:
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

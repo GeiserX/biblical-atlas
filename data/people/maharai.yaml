@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: maharai
+name: Maharái
+names:
+- name: Maharái
+- name: Maharai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002844'
+summary: Netofatita descendiente de Zérah, uno de los treinta guerreros de David. Tuvo a su cargo la división del décimo mes.
+reason: Perspicacia «Maharai» y «Netofá»; 2Sa 23:28.
+sources:
+- it-maharai
+- it-netofa
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Maharai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002844
+  type: perspicacia
+relations:
+- type: lived_in
+  place: netofa
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - it-netofa
+  reason: '2Sa 23:28: Maharái el netofatita; Perspicacia «Netofá».'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:28: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

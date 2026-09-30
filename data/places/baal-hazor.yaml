@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-hazor
+name: Baal-Hazor
+names:
+- name: Baal-Hazor
+- name: Baal-hazor
+  note: Grafía de Perspicacia.
+type: mountain
+lat: 31.978611
+lon: 35.286111
+precision: point
+coord_source: openbible:a366989
+coord_url: https://www.openbible.info/geo/ancient/a366989/baal-hazor
+coord_note: Primera identificación de OpenBible, Jebel Asur, el mismo monte que nombra Perspicacia.
+summary: Lugar cerca de Efraín donde Absalón esquiló sus ovejas y dio el banquete en que mandó matar a Amnón. Se identifica
+  con el monte Jebel ʽAsur, de unos 1.030 m, a unos 8 km al noreste de Betel.
+reason: 'Perspicacia «Baal-hazor»; 2Sa 13:23, 28. Coordenada de OpenBible: solo tomamos el punto.'
+sources:
+- it-baal-hazor
+- openbible-geo
+- 2-samuel-13
+links:
+- title: 'Perspicacia: «Baal-hazor»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000514
+  type: perspicacia
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

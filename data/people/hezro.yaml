@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hezro
+name: Hezró
+names:
+- name: Hezró
+perspicacia: '1200002014'
+summary: Carmelita, uno de los treinta guerreros de David.
+reason: Perspicacia «Hezró» y «Carmelita»; 2Sa 23:35.
+sources:
+- it-hezro
+- it-carmelita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Hezró»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002014
+  type: perspicacia
+relations:
+- type: lived_in
+  place: carmelo-de-juda
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-carmelita
+  - it-carmelo
+  reason: '2Sa 23:35: Hezró el carmelita; Perspicacia «Carmelita» remite a Carmelo, la ciudad de Judá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:35: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

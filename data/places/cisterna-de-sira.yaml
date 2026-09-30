@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: cisterna-de-sira
+name: Cisterna de Sirá
+names:
+- name: Cisterna de Sirá
+type: lake
+lat: 31.541919
+lon: 35.098819
+precision: uncertain
+coord_source: openbible:a63b8c7
+coord_url: https://www.openbible.info/geo/ancient/a63b8c7/sirah
+coord_note: 'ʽAin Sarah, primera identificación de OpenBible: un manantial o pozo unos 2,5 km al noroeste de Hebrón, que Perspicacia
+  solo ve posible.'
+summary: Cisterna o pozo cerca de Hebrón. Allí alcanzaron a Abner los mensajeros de Joab y lo hicieron volver a la ciudad,
+  donde Joab lo mató.
+reason: 'Perspicacia «Sirá, Cisterna de»; 2Sa 3:26, 27. OpenBible: solo el punto.'
+sources:
+- it-cisterna-de-sira
+- openbible-geo
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Sirá, Cisterna de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004145
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-da-gracias-a-jehova-por-el-pacto
+title: David da gracias a Jehová por el pacto
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1070 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 7018
+type: speech
+places:
+- jerusalen
+people:
+- david
+roles:
+  david: spoke
+passages:
+- 2Sa 7:18-29
+- 1Cr 17:16-27
+summary: 'David se sienta ante Jehová y ora: se pregunta quién es él para recibir tanto, alaba a Dios como único y a Israel
+  como su pueblo rescatado, y le pide que su casa sea bendita para siempre.'
+reason: 2Sa 7:18-29, justo después del mensaje de Natán, que la lámina B7 fecha hacia 1070. Se sienta delante de Jehová, ante
+  el Arca, en la tienda de Jerusalén.
+sources:
+- 2-samuel-7
+- tnm-b7
+- it-david
+links:
+- title: 2 Samuel 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/7
+  type: bible
+checked_on: '2026-09-29'
+status: verified

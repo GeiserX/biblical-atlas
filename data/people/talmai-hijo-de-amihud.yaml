@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: talmai-hijo-de-amihud
+name: Talmái
+names:
+- name: Talmái
+- name: Talmai
+  note: Grafía de Perspicacia.
+perspicacia: 1200004311#2
+disambiguation: Talmái el rey de Guesur, abuelo de Absalón; no Talmái el anaquita de Hebrón.
+distinct_from:
+- talmai-hijo-de-anac
+summary: Rey de Guesur, hijo de Amihud. Su hija Maacá se casó con David y le dio a Absalón, que años después se refugió con
+  su abuelo.
+reason: Perspicacia «Talmai», núm. 2; 2Sa 3:3.
+sources:
+- it-talmai
+- 2-samuel-3
+- 2-samuel-13
+links:
+- title: 'Perspicacia: «Talmai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004311
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+relations:
+- type: holds_office
+  place: guesur
+  office: king
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-talmai
+  - 2-samuel-13
+  reason: 2Sa 3:3 lo llama rey de Guesur.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amihud-padre-de-talmai
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-talmai
+  reason: '2Sa 13:37: Talmái hijo de Amihud.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: helez-el-paltita
+name: Hélez
+names:
+- name: Hélez
+perspicacia: 1200001973#1
+disambiguation: Hélez el paltita, guerrero de David; no el descendiente de Judá hijo de Azarías.
+summary: Paltita, uno de los treinta guerreros de David; 1 Crónicas lo llama pelonita. Estuvo al frente de la división del
+  séptimo mes.
+reason: Perspicacia «Hélez», núm. 1, y «Paltita»; 2Sa 23:26.
+sources:
+- it-helez
+- it-paltita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Hélez»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001973
+  type: perspicacia
+relations:
+- type: lived_in
+  place: bet-pelet
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-paltita
+  reason: 'Perspicacia «Paltita»: el gentilicio de 2Sa 23:26 suele entenderse como natural de Bet-Pélet.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:26: Hélez el paltita, uno de los treinta de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

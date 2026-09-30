@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jonatan-y-ahimaaz-se-esconden-en-un-pozo-de-bahurim
+title: Jonatán y Ahimáaz se esconden en un pozo de Bahurim
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 17015
+places:
+- bahurim
+- en-roguel
+- jerusalen
+people:
+- jonatan-hijo-de-abiatar
+- ahimaaz-hijo-de-sadoc
+- husai
+- sadoc-hijo-de-ahitub
+- abiatar
+- absalon
+present:
+- jonatan-hijo-de-abiatar
+- ahimaaz-hijo-de-sadoc
+passages:
+- 2Sa 17:15-20
+summary: Husái cuenta los dos planes a Sadoc y Abiatar. Una sierva lleva el aviso a Jonatán y Ahimáaz en En-Roguel; descubiertos,
+  huyen a Bahurim, donde una mujer los oculta en un pozo y despista a los siervos de Absalón.
+reason: '2Sa 17:15-20; Perspicacia «Bahurim» y «Jonatán», núm. 3. Fecha: después del pacto con David (después de 1070) y antes
+  de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-17
+- it-bahurim
+- it-jonatan
+- it-ahimaaz
+- si-3
+links:
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hidai
+name: Hidái
+names:
+- name: Hidái
+- name: Hurai
+  note: Así se transcribe en 1Cr 11:32, según Perspicacia.
+perspicacia: '1200002017'
+summary: Uno de los treinta de David, de los torrentes de Gaas, en la región montañosa de Efraín. 1 Crónicas escribe su nombre
+  Hurai.
+reason: Perspicacia «Hidai» y «Gaas»; 2Sa 23:30.
+sources:
+- it-hidai
+- it-gaas
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Hidai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002017
+  type: perspicacia
+relations:
+- type: lived_in
+  place: monte-gaas
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-gaas
+  reason: 2Sa 23:30 dice «de los torrentes de Gaas»; Perspicacia «Gaas» los pone junto al monte de ese nombre.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:30: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

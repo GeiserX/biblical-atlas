@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-urias
+title: Muerte de Urías el hitita ante Rabá
+type: death
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 11014
+places:
+- raba
+- jerusalen
+people:
+- urias-el-hitita
+- joab-hijo-de-zeruya
+- david
+present:
+- urias-el-hitita
+- joab-hijo-de-zeruya
+roles:
+  urias-el-hitita: died
+passages:
+- 2Sa 11:14-25
+- 2Sa 12:9
+summary: Urías lleva a Joab una carta de David que ordena dejarlo solo en lo peor del combate. Muere junto a la muralla de
+  Rabá, y un mensajero de Joab da la noticia al rey.
+reason: 'El estudio 3 pone la llegada del Arca a Jerusalén después de 1070 y el final de 2 Samuel hacia 1040. Perspicacia
+  «Urías», núm. 1, y «Rabá», núm. 1: una flecha lo alcanzó junto al muro.'
+sources:
+- 2-samuel-11
+- 2-samuel-12
+- si-3
+- it-urias
+- it-raba
+links:
+- title: 2 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

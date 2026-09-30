@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: isbi-benob
+name: Isbí-Benob
+names:
+- name: Isbí-Benob
+- name: Isbí-benob
+  note: Grafía de Perspicacia.
+perspicacia: '1200002210'
+summary: Gigante de los refaím que luchaba con los filisteos. Armado con una lanza de cobre de unos 3,4 kg y una espada sin
+  estrenar, intentó acabar con David, que estaba agotado, pero Abisái llegó a tiempo y lo mató.
+reason: Perspicacia «Isbí-benob»; 2Sa 21:15-17, 22.
+sources:
+- it-isbi-benob
+- it-refaim
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Isbí-benob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002210
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

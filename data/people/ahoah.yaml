@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahoah
+name: Ahoah
+names:
+- name: Ahoah
+- name: Ahohí
+  note: Así lo llama 2Sa 23:9.
+perspicacia: '1200000173'
+summary: Descendiente de Benjamín por la familia de Bela. De él venían los ahohítas, entre ellos guerreros notables de David
+  como Eleazar y Zalmón.
+reason: Perspicacia «Ahoah, Ahohí, ahohíta»; 2Sa 23:9, 28.
+sources:
+- it-ahoah
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Ahoah, Ahohí, ahohíta»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000173
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

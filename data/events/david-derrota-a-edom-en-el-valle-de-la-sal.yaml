@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-derrota-a-edom-en-el-valle-de-la-sal
+title: David vence a Edom en el valle de la Sal
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 8013
+places:
+- valle-de-la-sal
+- edom
+people:
+- david
+- joab-hijo-de-zeruya
+- abisai
+passages:
+- 2Sa 8:13, 14
+- 1Cr 18:12, 13
+- Sl 60
+summary: A su vuelta, David gana fama al abatir en el valle de la Sal a 18.000 edomitas. Pone guarniciones por todo Edom,
+  y los edomitas quedan sometidos a él.
+reason: '2Sa 8:13, 14. Perspicacia «Edom»: Crónicas da la victoria a Abisái y el Sl 60 a Joab, porque David mandaba, Joab
+  dirigía el ejército y Abisái una división. Tras el pacto (c. 1070) y antes de c. 1040.'
+sources:
+- 2-samuel-8
+- it-edom
+- it-valle-de-la-sal
+- tnm-b7
+- si-3
+- salmos-60
+links:
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

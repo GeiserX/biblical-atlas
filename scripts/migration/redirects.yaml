@@ -348,3 +348,41 @@
   to: pablo/tie/pedro/host
   removed_on: '2026-09-29'
   reason: 'Gál 1:18: Pablo se quedó 15 días con Cefas. Pedro fue su anfitrión, no un compañero.'
+- from: joab-hijo-de-zeruya/accompanies/david
+  to: joab-hijo-de-zeruya/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 8:16; 20:23: jefe del ejército de David. Como Abner con Saúl, es tie con master y el encargo va en la razón.
+    Se queda el tie que ya había, con las fuentes de los dos.'
+- from: benaya-hijo-de-jehoiada/accompanies/david
+  to: benaya-hijo-de-jehoiada/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 8:18; 20:23: jefe de keretitas y peletitas. Es tie con master y el encargo va en la razón. Se queda el tie
+    que ya había, con las fuentes de los dos.'
+- from: amasa-hijo-de-itra/accompanies/absalon
+  to: amasa-hijo-de-itra/tie/absalon/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 17:25: jefe del ejército de Absalón. Es tie con master y el encargo va en la razón.'
+- from: amasa-hijo-de-itra/accompanies/david
+  to: amasa-hijo-de-itra/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 19:13; 20:4, 5: jefe del ejército de David. Es tie con master y el encargo va en la razón.'
+- from: sobac/accompanies/hadadezer
+  to: sobac/tie/hadadezer/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 10:16: jefe del ejército de Hadadézer. Es tie con master y el encargo va en la razón.'
+- from: jehosafat-hijo-de-ahilud/accompanies/david
+  to: jehosafat-hijo-de-ahilud/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 8:16; 20:24: registrador de David. Es tie con master y el encargo va en la razón.'
+- from: seraya-secretario-de-david/accompanies/david
+  to: seraya-secretario-de-david/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 8:17: secretario de David. Es tie con master y el encargo va en la razón.'
+- from: seva-secretario-de-david/accompanies/david
+  to: seva-secretario-de-david/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 20:25: secretario de David. Es tie con master y el encargo va en la razón.'
+- from: adoniram/accompanies/david
+  to: adoniram/tie/david/master
+  removed_on: '2026-09-30'
+  reason: '2Sa 20:24: encargado del trabajo obligatorio de David. Es tie con master y el encargo va en la razón.'

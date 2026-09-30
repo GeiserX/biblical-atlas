@@ -1,0 +1,86 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amnon-hijo-de-david
+name: Amnón
+names:
+- name: Amnón
+perspicacia: 1200000242#1
+disambiguation: El primogénito de David; no Amnón, hijo de Simón, de la tribu de Judá.
+summary: Primogénito de David, nacido en Hebrón de Ahinoam de Jezreel. Violó a su media hermana Tamar, y dos años más tarde
+  los siervos de Absalón lo mataron en una fiesta.
+reason: Perspicacia «Amnón», núm. 1; 2Sa 3:2.
+sources:
+- it-amnon
+- 2-samuel-3
+- 2-samuel-13
+links:
+- title: 'Perspicacia: «Amnón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000242
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-amnon
+  - 2-samuel-13
+  reason: '2Sa 3:2: el primero de los hijos que David tuvo en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahinoam-esposa-de-david
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-amnon
+  reason: '2Sa 3:2: hijo de Ahinoam de Jezreel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-amnon
+  reason: '2Sa 3:2: nació en Hebrón, primogénito de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: jehonadab-hijo-de-simea
+  word: friend
+  inferred: false
+  sources:
+  - 2-samuel-13
+  reason: '2Sa 13:3: Amnón tenía por amigo a Jehonadab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: jehonadab-hijo-de-simea
+  word: cousin
+  inferred: true
+  sources:
+  - it-amnon
+  - it-jehonadab
+  - 2-samuel-13
+  reason: '2Sa 13:3: Jehonadab era hijo de Simeá, hermano de David. Perspicacia «Amnón», núm. 1, lo llama su primo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: baal-hazor
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-baal-hazor
+  reason: '2Sa 13:23, 28, 29: los siervos de Absalón lo matan en el banquete del esquileo en Baal-Hazor.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

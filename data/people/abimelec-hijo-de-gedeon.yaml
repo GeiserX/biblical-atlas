@@ -17,6 +17,7 @@ sources:
 - it-abimelec
 - jueces-8
 - jueces-9
+- 2-samuel-11
 links:
 - title: 'Perspicacia: «Abimélec»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000045
@@ -36,6 +37,7 @@ relations:
   - jueces-8
   - it-abimelec
   - jueces-9
+  - 2-samuel-11
   reason: 'Jue 8:31: la concubina de Gedeón en Siquem le dio este hijo.'
   checked_on: '2026-09-29'
   status: verified

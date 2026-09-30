@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dan-jaan
+name: Dan-Jaán
+names:
+- name: Dan-Jaán
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Dan o sus afueras
+  geometry:
+    type: zone
+    lat: 33.249
+    lon: 35.652
+    radius_km: 3
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-dan-jaan
+  - openbible-geo
+  reason: Perspicacia «Dan-jaán» ve posible que el nombre aluda a Dan o a un barrio cercano a esa ciudad.
+  coord_source: calculation
+  note: 'Centro: punto de Dan (Tel Dan) en OpenBible. Radio nuestro.'
+summary: Lugar del extremo norte por donde pasaron los hombres de Joab con el censo antes de girar hacia Sidón. Quizá era
+  Dan o un barrio a sus afueras.
+reason: Perspicacia «Dan-jaán»; 2Sa 24:6. OpenBible no tiene ficha propia para él.
+sources:
+- it-dan-jaan
+- openbible-geo
+- 2-samuel-24
+links:
+- title: 'Perspicacia: «Dan-jaán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001120
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
