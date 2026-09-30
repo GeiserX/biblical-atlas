@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panorama y detalle · Línea de tiempo · biblical-earth</title>
+<link rel="stylesheet" href="../../kit/fonts.css">
+<link rel="stylesheet" href="overview.css">
+<script>
+  // Igual en los cinco prototipos: el tema de la dirección y, si no dice nada, el del sistema.
+  (function () {
+    var m = /(?:^|[#&])tema=(claro|oscuro)/.exec(location.hash);
+    var oscuro = m ? m[1] === 'oscuro' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.tema = oscuro ? 'oscuro' : 'claro';
+  })();
+</script>
+</head>
+<body>
+<a class="saltar" href="#carriles" id="saltar">Saltar a las marcas</a>
+<header class="cab">
+  <div class="cab-fila">
+    <h1>Panorama y detalle</h1>
+    <nav class="disenos" aria-label="Los cinco diseños">
+      <a href="../lanes/" data-lleva>Carriles con nombre</a>
+      <a href="../overview/" data-lleva aria-current="page">Panorama y detalle</a>
+      <a href="../list/" data-lleva>Cronología que se lee</a>
+      <a href="../clusters/" data-lleva>Grupos que se abren</a>
+      <a href="../minimal/" data-lleva>La de hoy, arreglada</a>
+      <a href="../">Índice</a>
+    </nav>
+  </div>
+  <p class="regla" id="regla"><span class="largo"><b>Al pulsar una marca</b> se selecciona y su ficha dice qué es. La escala y la vista no se mueven. El cursor da el paso más corto para quedar dentro de las fechas de la marca; si ya estaba dentro, no se mueve.</span><span class="corto"><b>Al tocar una marca</b> se elige; la escala y la vista no se mueven.</span></p>
+  <details class="uso" id="uso" open>
+    <summary>Cómo se usa</summary>
+    <p>Arriba, toda la historia en una franja fija con una ventana: arrástrala o pulsa otra época para ir allí, y estira sus bordes para cambiar la escala.</p>
+    <p>Abajo, esa ventana en detalle con el nombre entero de cada cosa: arrastra para moverte, pulsa una marca para verla y usa la rueda con Ctrl, el pellizco o las escalas para acercarte. Un grupo «+N» abre su lista en la ficha; «Ir a» lleva el cursor a una fecha escrita.</p>
+  </details>
+</header>
+
+<main class="app" id="app">
+  <div class="barra">
+    <div class="fecha" aria-live="off">
+      <span class="fecha-valor" id="fecha">50 e.c.</span>
+      <span class="fecha-pista">cursor</span>
+    </div>
+    <div class="mandos" role="toolbar" aria-label="Escala y cursor">
+      <div class="escalas" id="escalas" role="group" aria-label="Escala"></div>
+      <div class="pasos" role="group" aria-label="Mover el cursor un paso">
+        <button type="button" class="btn" id="paso-atras"></button>
+        <button type="button" class="btn" id="paso-adelante"></button>
+      </div>
+    </div>
+    <form class="ir" id="ir" autocomplete="off">
+      <label class="aviso-vivo" for="ir-fecha">Ir a una fecha</label>
+      <input id="ir-fecha" type="text" inputmode="text" placeholder="Ir a: 607 a.e.c." aria-describedby="ir-ayuda">
+      <span id="ir-ayuda" class="aviso-vivo">Escribe un año, como 33 o 607 a.e.c., o un día, como 14 nisán 33. El cursor va allí y la escala no cambia.</span>
+      <button type="submit" class="btn">Ir</button>
+    </form>
+    <span class="ventana-txt" id="ventana-txt"></span>
+    <button type="button" class="btn" id="tema" aria-pressed="false">Tema oscuro</button>
+  </div>
+
+  <section class="pano" id="pano" aria-label="Panorama: toda la historia">
+    <div class="pano-cab"><span>Toda la historia</span><span id="pano-rango">4026 a.e.c. - 100 e.c.</span></div>
+    <div class="pano-pista" id="pano-pista">
+      <svg class="pano-svg" id="pano-svg" aria-hidden="true"></svg>
+      <div class="pano-cursor" id="pano-cursor" aria-hidden="true"></div>
+      <div class="pano-sel" id="pano-sel" aria-hidden="true" hidden></div>
+      <div class="pano-ventana" id="pano-ventana" role="slider" tabindex="0" aria-label="Ventana de la franja de detalle"
+           aria-valuemin="-4025" aria-valuemax="100">
+        <span class="pano-borde pano-borde--i" data-borde="i" aria-hidden="true"></span>
+        <span class="pano-borde pano-borde--d" data-borde="d" aria-hidden="true"></span>
+      </div>
+    </div>
+    <svg class="lupa" id="lupa" aria-hidden="true"></svg>
+  </section>
+
+  <section class="detalle" id="detalle" aria-label="Detalle de la ventana">
+    <div class="regla-eje" id="eje">
+      <div class="eje-arriba" id="eje-arriba" aria-hidden="true"></div>
+      <div class="eje-abajo" id="eje-abajo" aria-hidden="true"></div>
+      <div class="cursor-bandera" id="bandera" role="slider" tabindex="0" aria-label="Cursor de tiempo"></div>
+    </div>
+    <div class="carriles" id="carriles">
+      <div class="cursor-linea" id="cursor-linea" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <aside class="ficha" id="ficha" aria-label="Ficha de la selección" tabindex="-1"></aside>
+  <div class="aviso-vivo" id="vivo" aria-live="polite"></div>
+</main>
+
+<script src="../comun.js"></script>
+<script src="../datos.js"></script>
+<script src="overview.js"></script>
+</body>
+</html>
