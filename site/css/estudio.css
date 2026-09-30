@@ -590,3 +590,42 @@ details.grafo-leyenda[open] { padding-bottom: 8px; }
   .gnodo .gnodo-sep { display: none; }
   .gnodo-centro .be-gnode__label { white-space: normal; max-width: 150px; }   /* un nombre largo parte en dos líneas */
 }
+/* Sucesos y paradas en el grafo: el título entero, en varias líneas, del ancho que da el lienzo (--ancho-suceso, que
+   pone grafo.js); debajo, qué es la línea («ocurre aquí», «presente») y cuándo es frente al cursor («3 meses antes»). */
+/* max-content: un nodo cerca del borde del lienzo no encoge su título a la anchura que le queda hasta el borde. */
+.gnodo.gnodo--suceso { width: max-content; max-width: var(--ancho-suceso, 200px); }
+.gnodo.gnodo--suceso .be-gnode__label { box-sizing: border-box; width: max-content; white-space: normal; max-width: var(--ancho-suceso, 200px); overflow: visible; text-overflow: clip; text-align: center; line-height: 1.25; border-radius: var(--r-sm); overflow-wrap: break-word; }
+.gnodo .be-gnode__meta:has(.gnodo-verbo) { display: flex; flex-direction: column; align-items: center; white-space: normal; overflow: visible; text-overflow: clip; text-align: center; line-height: 1.25; margin-top: 0; }
+.gnodo.gnodo--suceso .be-gnode__meta { max-width: var(--ancho-suceso, 200px); }
+.gnodo-verbo { color: var(--ink-2); }
+.gnodo-cuando { font-weight: 700; color: var(--ink); }
+.gnodo-centro--suceso .be-gnode__label { width: max-content; white-space: normal; max-width: min(280px, 60cqw); text-align: center; border-radius: var(--r-sm); }
+.tarjeta-cuando { font-size: var(--fs-xs); font-weight: 700; color: var(--ink); }
+.lista-fila--suceso .lista-cuando { text-transform: none; letter-spacing: 0; font-size: var(--fs-xs); }
+.lista-mas { margin-top: 8px; }
+.lista-mas > summary { cursor: pointer; font-size: var(--fs-sm); font-weight: 600; color: var(--ink-2); min-height: 44px; display: flex; align-items: center; }
+.lista-mas > summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: var(--r-sm); }
+/* La palabra de la línea lleva el mismo fondo que el rótulo: la propia arista del nodo pasa por debajo. */
+.gnodo .be-gnode__meta:has(.gnodo-verbo) { background: rgba(255, 253, 248, .92); padding: 0 6px; border-radius: var(--r-sm); }
+.be-reunion .gnodo .be-gnode__meta:has(.gnodo-verbo) { background: rgba(33, 29, 23, .92); }
+.tarjeta-suceso { font-size: var(--fs-xs); color: var(--ink-2); }
+/* Las migas de un paseo por sucesos: los títulos largos de las anteriores no llenan la cabecera (el círculo perdía un
+   cuarto de su alto); el nombre entero va en su «title» y en su texto. La actual parte en líneas. */
+.miga:not(.miga--actual) .miga-nombre { max-width: 14em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.2; }
+.miga--actual .miga-nombre { white-space: normal; line-height: 1.2; }
+/* Lo plegado («+N» y «N sucesos más»), en grupos: ahora, sin fecha, antes y después, cada uno del más cercano al cursor. */
+.resto-grupo { margin: 10px 0 0; font-size: var(--fs-2xs); color: var(--ink-2); }
+.resto-grupo:first-child { margin-top: 6px; }
+/* «Lo que dura»: en una fecha en la que no oculta nada, queda inerte (lo dice su nota al lado) sin perder contraste. */
+.interruptor-grafo--inerte { border-style: dashed; cursor: default; }
+.interruptor-grafo--inerte:hover { border-color: var(--line-2); }
+/* Un lienzo estrecho (el móvil con el grafo pedido a mano) no tiene alto para dos líneas bajo cada nodo: cada línea más
+   dejaba fuera del círculo casi todos los vecinos. La palabra de la línea («ocurre aquí», «presente», «habló») queda en
+   la tarjeta y en el nombre accesible de cada nodo; un suceso conserva bajo su título cuándo es frente al cursor, y una
+   persona o un lugar unidos por un suceso no llevan línea bajo el nombre. Un suceso en el centro: su título en más
+   líneas y del ancho de siempre. */
+@container (max-width: 480px) {
+  .gnodo-centro--suceso .be-gnode__label { max-width: 150px; font-size: var(--fs-md); line-height: 1.25; }
+  .gnodo.gnodo--suceso .gnodo-verbo { display: none; }
+  .gnodo:not(.gnodo--suceso):not(.gnodo--grupo) .be-gnode__meta:has(.gnodo-verbo) { display: none; }
+}
