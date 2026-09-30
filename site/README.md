@@ -127,7 +127,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `conexion`, `camino` | `<tipo>:<id>~<tipo>:<id>`; número | Conexión entre dos y el camino elegido |
 | `leer`, `pas` | `<libro>-<capítulo>`; número | Modo lectura y pasaje |
 | `paso` | número | Parada del recorrido guiado |
-| `portada` | `1` | Portada. Sin nada en la dirección, el sitio abre en ella |
+| `portada` | `1` | Portada, con su propia entrada de historial. Sin nada en la dirección, el sitio abre en ella |
 
 ## Teclado
 
@@ -171,7 +171,7 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | `js/grafo.js` | Grafo de personas y conexión entre dos |
 | `js/lectura.js` | Modo lectura de cualquier capítulo con datos |
 | `js/recorridos.js` | Recorridos guiados, preguntas de repaso, hoja de impresión, modo presentación, modo reunión y letra grande |
-| `js/portada.js` | Portada con épocas, recorridos y preguntas guía |
+| `js/portada.js` | Portada «Entra por una pregunta»: la caja que contesta, entrar en cada destino, «Seguir donde lo dejaste», épocas y recorridos |
 | `js/tipos/*.js` | Un fichero por tipo de entidad: `lugar`, `persona`, `viaje`, `parada`, `carta`, `evento`, `periodo`, `hallazgo`, `recorrido`, `libro` y `pasaje` |
 
 La aplicación son scripts clásicos con `defer`, no módulos ES. Desde `file://` el navegador bloquea los `import` locales, y el sitio tiene que abrir con doble clic. `index.html` los carga en un orden fijo y todos comparten un solo objeto, `window.BE`. [`js/base.js`](js/base.js) va primero y crea `BE`. El arranque espera a `DOMContentLoaded`, que llega cuando ya se han ejecutado todos los scripts, así que un fichero puede usar cualquier función de otro siempre que la llame a través de `BE` en el momento de usarla.
@@ -218,7 +218,7 @@ BE.tipo('lugar', {
 
 `trayectorias.js`, `linea.js` y `ahora.js` publican además `BE.estancias(persona)`, `BE.sucesoEn(persona, t)` (el suceso del que sale el lugar que da `BE.donde`; de ahí sale el de «Mientras tanto»), `BE.presentes(t)`, `BE.edad(persona, t)`, `BE.ventanaFecha(fecha)`, `BE.diaHebreo(t)`, `BE.anioHebreo(y)` (los 12 o 13 meses del año hebreo que empieza en la primavera de `y`), `BE.nombreMes(mes, y)` (el nombre del mes en esa época), `BE.fmtMes(t, fino)` (como `fmtCursor`, con la duración real de nuestros meses), `BE.irA(t, escala)`, `BE.encuadrarTiempo(a, b)`, `BE.inicioPeriodo(p)` (el principio conocido de un periodo: su `desde`; si no tiene, `consta_desde`; si tampoco, el principio del tramo dibujado), `BE.resumenAhora(t)`, `BE.fraseAhora(t)` y `BE.sincronia.alternar(on, { lugar, periodo })`.
 
-`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas, la portada y los carriles: punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
+`ficha.js` publica `BE.marcaNivel(n)`, la marca del tipo de fuente que usan las fichas y los carriles (la portada escribe las mismas en su HTML): punto lleno para la Biblia y jw.org, aro para otra fuente que jw.org ha usado. El nombre va en el texto emergente y para los lectores de pantalla.
 
 `window.__be` expone lo necesario para las pruebas en Chrome sin interfaz: `E`, `P`, `D`, `BE`, `dondeEsta`, `donde`, `ventana`, `ventanaCarta`, `ventanaEvento`, `setT`, `seleccionar`, `ponerMapa` y `map`.
 
@@ -234,11 +234,24 @@ El sitio se prueba a 390 × 844 y 430 × 932 (móvil) y a 768 × 1024 y 1024 × 
 - **Con el dedo** (`@media (pointer: coarse)`, `css/tactil.css`). Cada control ofrece una diana de al menos 44 × 44 px: crece, o un `::after` transparente agranda la zona que recibe el toque sin cambiar el dibujo (los puntos del mapa, las píldoras, los enlaces sueltos). La raya de 10 px entre el mapa y la línea se sustituye por un asa de 44 px en la barra de la línea (`#linea-alto`): se arrastra igual y, pulsada, amplía la línea o la devuelve. En la línea, un toque elige la forma que hay bajo el dedo o la más cercana con diana de 44 px, y un arrastre mueve el cursor aunque empiece encima de una forma (`itemCercano`, `linea.js`).
 - `BE.ajustarAyuda(input, ...cortos)` (`buscar.js`) pone en una caja de búsqueda el texto de ayuda más largo que quepa entero, en vez de cortarlo a media palabra.
 
-Lo que queda por debajo de 44 px tiene su equivalente de 44: «Carriles +N» y «¿Qué meses son estos?» están en el menú (…) de la línea, la barra de épocas de la portada repite las tarjetas de debajo, y los tramos del progreso de un recorrido tienen «anterior» y «siguiente». Los puntos del mapa muy juntos se pisan sus zonas: se separan al acercar el mapa.
+Lo que queda por debajo de 44 px tiene su equivalente de 44: «Carriles +N» y «¿Qué meses son estos?» están en el menú (…) de la línea, y los tramos del progreso de un recorrido tienen «anterior» y «siguiente». Los puntos del mapa muy juntos se pisan sus zonas: se separan al acercar el mapa.
 
 ### Puntos de montaje
 
-`index.html` trae, vacíos y con `hidden`, los contenedores de las vistas: `#vista-grafo`, `#vista-conexion`, `#vista-recorrido` y `#vista-ahora` dentro del mapa; `#vista-sincronia` dentro de la línea de tiempo; `#vista-lectura` y `#vista-portada` dentro de `#app`. Las rellenan `grafo.js` (grafo y conexión), `recorridos.js`, `lectura.js`, `portada.js` y `ahora.js` («Ahora mismo» y sincronía), cada una desde su fichero. Si necesita otro sitio en la página, su módulo la mueve con JavaScript, sin tocar `index.html`.
+`index.html` trae, vacíos y con `hidden`, los contenedores de las vistas: `#vista-grafo`, `#vista-conexion`, `#vista-recorrido` y `#vista-ahora` dentro del mapa; `#vista-sincronia` dentro de la línea de tiempo; `#vista-lectura` dentro de `#app`. Las rellenan `grafo.js` (grafo y conexión), `recorridos.js`, `lectura.js` y `ahora.js` («Ahora mismo» y sincronía), cada una desde su fichero. Si necesita otro sitio en la página, su módulo la mueve con JavaScript, sin tocar `index.html`. `#vista-portada` es la excepción: ver «Portada».
+
+### Portada
+
+La portada es la hoja `#vista-portada`, dentro de `#app`, y la mueve [`js/portada.js`](js/portada.js). Su primera pantalla (título, caja, ejemplos, las tres preguntas y «Más preguntas») está escrita en `index.html`, con las formas de cada tipo en un solo `<svg>` (`#f-persona`, `#f-lugar`…), y pinta antes que los guiones y que `data.json`. La enseña la clase `be-con-portada` de `<html>`, que pone el guion de la cabecera cuando la dirección está vacía o lleva `portada=1`; ese guion pone también `be-reunion`, `be-letra-grande` y `be-vuelve` antes del primer pintado. Mientras está puesta, lo demás de `#app` va `inert`. El relieve (`maps/portada-relieve.webp`) solo se descarga cuando la portada sale.
+
+- **Cada control es un enlace** a una dirección que el sitio ya entiende (`#sel=persona:pedro`, `#leer=hch-16`…), así que Ctrl o Cmd lo abren aparte. Un clic normal entra con `BE.historia.entrar(fn)` (`buscar.js`): una sola entrada de historial y la dirección aplicada con `BE.aplicarHash(false)`, como un enlace compartido. Un Atrás vuelve a la portada con el foco en lo que se pulsó, el mismo desplazamiento y lo escrito en la caja.
+- **La caja** usa la búsqueda del sitio: `BE.buscar`, `BE.filaResultado` (forma, palabra del tipo, título, línea y fecha), `BE.marcar`, `BE.elegirResultado` y `BE.sugerencias`. La lista de la portada es plana y va por puntos (`BE.portada.reglas.ordenPortada`); la de arriba sigue por grupos.
+- **Antes de los datos**, un año ya contesta y un nombre dice «Cargando los nombres…». Un control pulsado deja la portada con «Abriendo el mapa…» y el arranque lee su dirección. Si la carga falla, `base.js` llama a `BE.alFallar(err)` y la portada dice «No se ha podido abrir el mapa.» con un botón para volver a intentarlo.
+- **«Seguir donde lo dejaste»** lee `biblical-earth:ultima` (`{ hash, texto }`), que se escribe 400 ms después de cada vista con algo elegido o con el modo lectura, con `BE.textoHash()`. «Olvidar» lo borra.
+- **«Aa» y la luna** llaman a `BE.ponerPreferencia(nombre, on)` (`base.js`), la única que escribe `biblical-earth:pref:letra-grande` y `:reunion`; el menú «Estudio» y la luna de la barra también pasan por ella.
+- **Las épocas, los recorridos y las cifras** se pintan con los datos. Cada época abre con el cursor en su principio y la línea con toda la época, así que el mapa se encuadra en su fecha; su línea es la última frase de su resumen que nombra un libro.
+
+[`portada-reglas.test.mjs`](../tests/site/portada-reglas.test.mjs) y [`portada-destinos.test.mjs`](../tests/site/portada-destinos.test.mjs) van sin navegador, también en [`validar.yml`](../.github/workflows/validar.yml). [`landing.test.mjs`](../tests/site/landing.test.mjs) usa Chromium. El encuadre del mapa de cada época se comprueba a mano, con el mapa cargado: «Destierro y regreso» abre sobre Mesopotamia y Judá.
 
 ### Datos de prueba
 
