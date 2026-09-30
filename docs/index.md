@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - toc
 ---
 
 # biblical-atlas { .ba-visually-hidden }

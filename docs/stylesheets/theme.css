@@ -131,8 +131,8 @@
   }
 }
 
-/* Las cuatro tarjetas de la portada van de dos en dos: sin la tabla de contenidos la columna es ancha y
-   el reparto automático deja tres arriba y una sola abajo. */
+/* Las cuatro tarjetas de la portada van de dos en dos: en una columna ancha el reparto automático
+   deja tres arriba y una sola abajo. */
 @media screen and (min-width: 45em) {
   .md-typeset .grid.ba-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
