@@ -11,14 +11,17 @@ date:
   text: 1034 a.e.c.
   detail:
     month: iyar
+    day: 2
 places:
 - jerusalen
+- monte-moria
 people:
 - salomon
 passages:
 - 1Re 6:1
 - 2Cr 3:1-2
 - Hch 7:47
+- 1Re 6:37
 summary: En el mes de Ziv del cuarto año de su reinado, Salomón pone en marcha la obra del templo en el monte Moria, con piedras
   ya cortadas a medida.
 reason: El estudio 3 (párr. 8) fecha el comienzo en abril-mayo de 1034; Perspicacia «Salomón», párr. 12. Ziv es el segundo
@@ -27,6 +30,7 @@ sources:
 - si-3
 - it-salomon
 - 1-reyes-6
+- 2-cronicas-3
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -35,5 +39,12 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
   type: bible
 search: construcción del templo de Salomón
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'Se añade el día: 2Cr 3:2 pone el comienzo el día dos del segundo mes (ziv, iyar).'
+  source: 2-cronicas-3
+narrative_order:
+  series: 1-reyes
+  order: 6001
+checked_on: '2026-09-30'
 status: verified

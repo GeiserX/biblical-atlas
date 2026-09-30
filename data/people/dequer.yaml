@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dequer
+name: Déquer
+names:
+- name: Déquer
+perspicacia: '1200001147'
+summary: Padre de un comisario de Salomón cuyo distrito, con Macaz, Saalbim, Bet-Semes y Elón-Bet-Hanán, estaba al parecer
+  en el sur de Dan.
+reason: Perspicacia «Déquer»; 1Re 4:7, 9.
+sources:
+- it-dequer
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Déquer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001147
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

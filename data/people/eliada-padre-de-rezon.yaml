@@ -1,0 +1,23 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliada-padre-de-rezon
+name: Eliadá
+names:
+- name: Eliadá
+perspicacia: 1200001293#2
+disambiguation: Eliadá, el padre de Rezón (núm. 2 de Perspicacia); no el hijo de David ni el oficial benjamita de Jehosafat.
+distinct_from:
+- eliada-hijo-de-david
+summary: Padre de Rezón, el que se hizo rey en Damasco y fue enemigo de Salomón. El texto solo lo nombra ahí.
+reason: Perspicacia «Eliadá», núm. 2; 1Re 11:23.
+sources:
+- it-eliada
+- 1-reyes-11
+links:
+- title: 'Perspicacia: «Eliadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001293
+  type: perspicacia
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

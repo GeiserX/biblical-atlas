@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abiram-hijo-de-hiel
+name: Abiram
+names:
+- name: Abiram
+perspicacia: 1200000048#2
+disambiguation: El hijo mayor de Hiel; no Abiram hijo de Eliab, el rebelde del desierto.
+distinct_from:
+- abiram-hijo-de-eliab
+summary: Primogénito de Hiel de Betel. Murió cuando su padre puso los cimientos de Jericó, como anunciaba el juramento de
+  Josué.
+reason: Perspicacia «Abiram», núm. 2; 1Re 16:34.
+sources:
+- it-abiram
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Abiram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000048
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: kin
+  person: hiel
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-abiram
+  reason: '1Re 16:34: Abiram era el hijo mayor de Hiel.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: segub-hijo-de-hiel
+  word: brother
+  inferred: false
+  sources:
+  - 1-reyes-16
+  reason: '1Re 16:34: Abiram era el mayor y Segub el menor de los hijos de Hiel.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

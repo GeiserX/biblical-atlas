@@ -12,7 +12,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-11, type: poetry, entities: [person:salomon, relation:salomon/lived_in/jerusalen, event:flota-de-salomon-a-ofir], mentions: [place:jerusalen, period:salomon], note: "Salomón prueba la risa, el vino y las grandes obras: casas, viñas, jardines, estanques, siervos, ganado, plata, oro, cantores y muchas mujeres. Todo le parece vano. Esas obras las narra 1 Reyes (1Re 7:1-8; 9:17-19; 10:14-29), que crea sus sucesos."}
+    - {v: 1-11, type: poetry, entities: [person:salomon, relation:salomon/lived_in/jerusalen, event:flota-de-salomon-a-ofir], mentions: [place:jerusalen, period:salomon, event:salomon-construye-su-palacio, event:salomon-construye-ciudades-en-todo-su-reino, event:riqueza-de-salomon], note: "Salomón prueba la risa, el vino y las grandes obras: casas, viñas, jardines, estanques, siervos, ganado, plata, oro, cantores y muchas mujeres. Todo le parece vano. Esas obras las narra 1 Reyes (1Re 7:1-8; 9:17-19; 10:14-29)."}
     - {v: 12-16, type: poetry, note: "Compara sabiduría y locura: la primera aventaja a la segunda como la luz a la oscuridad, pero el sabio muere igual que el necio y los dos acaban olvidados."}
     - {v: 17-23, type: poetry, note: "Llega a odiar su trabajo porque lo heredará quien venga detrás, sea sabio o necio. Las referencias del v. 19 remiten a Rehoboam, su hijo y sucesor (1Re 12:6, 8). La fatiga no deja dormir."}
     - {v: 24-26, type: poetry, note: "Lo mejor es comer, beber y disfrutar del propio trabajo, algo que viene de la mano de Dios. A quien le agrada le da sabiduría y alegría; el pecador acumula para otro."}

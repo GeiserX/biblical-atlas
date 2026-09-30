@@ -10,21 +10,27 @@ date:
   chronology: tnm
   text: 1037 a.e.c.
 places:
+- manantial-de-guihon
 - jerusalen
 people:
 - salomon
 - david
 - natan-profeta
+- sadoc-hijo-de-ahitub
+- benaya-hijo-de-jehoiada
 passages:
 - 1Re 1:32-40
 - 1Re 2:12
-summary: Cuando Adonías intenta quedarse con el trono, David manda ungir a Salomón. Natán y el sacerdote Sadoc lo ungen y
-  el pueblo lo aclama.
-reason: El estudio 3 fecha la sucesión en 1037 y explica el año de ascenso (párr. 4); Perspicacia «Natán», núm. 2, párr. 4.
+summary: Cuando Adonías intenta quedarse con el trono, David manda ungir a Salomón. En el manantial de Guihon, Sadoc lo unge
+  con Natán, Benaya y la guardia presentes, y el pueblo sube tras él a Jerusalén aclamándolo.
+reason: 1Re 1:32-40; 2:12. El estudio 3 fecha la sucesión en 1037 y explica el año de ascenso (párr. 4); Perspicacia «Natán»,
+  núm. 2, párr. 4, y «Guihón», núm. 2, que sitúa allí la unción.
 sources:
 - si-3
 - it-natan
 - 1-reyes-1
+- it-guihon
+- it-salomon
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003184
@@ -33,5 +39,24 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
   type: bible
 search: Salomón ungido rey
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: La unción fue en el manantial de Guihon, fuera de la ciudad (1Re 1:33, 38, 45); Jerusalén pasa a segundo lugar,
+    adonde sube la comitiva.
+  source: 1-reyes-1
+- date: '2026-09-30'
+  change: 'El resumen dice dónde fue la unción, Guihon, y quién estaba: Sadoc, Natán, Benaya y la guardia (1Re 1:38-40).'
+  source: 1-reyes-1
+- date: '2026-09-30'
+  change: La razón cita los versículos y el artículo de Perspicacia que sitúa la unción en Guihon.
+  source: 1-reyes-1
+present:
+- salomon
+- sadoc-hijo-de-ahitub
+- natan-profeta
+- benaya-hijo-de-jehoiada
+narrative_order:
+  series: 1-reyes
+  order: 1032
+checked_on: '2026-09-30'
 status: verified

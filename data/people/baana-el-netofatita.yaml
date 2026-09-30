@@ -23,7 +23,9 @@ relations:
   reason: '2Sa 23:29: Baaná el netofatita.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - baana-hijo-de-rimon
+- baana-hijo-de-ahilud
+- baana-hijo-de-husai

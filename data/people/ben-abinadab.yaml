@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-abinadab
+name: Ben-Abinadab
+names:
+- name: Ben-Abinadab
+  note: Nombre que le da Perspicacia; la TNM dice «el hijo de Abinadab» (1Re 4:11).
+perspicacia: null
+summary: Comisario de Salomón en todas las laderas de Dor, uno de los doce que por turnos mensuales daban alimento a la casa
+  real. Se casó con Tafat, hija de Salomón.
+reason: Perspicacia «Abinadab», núm. 4, que lo llama Ben-Abinadab; 1Re 4:7, 11.
+sources:
+- it-abinadab
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Abinadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000046
+  type: perspicacia
+relations:
+- type: kin
+  person: abinadab-padre-de-ben-abinadab
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-abinadab
+  reason: '1Re 4:11: el hijo de Abinadab.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: tafat
+  word: wife
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-tafat
+  reason: '1Re 4:11: se casó con Tafat, una hija de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 11: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

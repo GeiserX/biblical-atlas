@@ -9,6 +9,8 @@ disambiguation: Simeí hijo de Guerá, el benjaminita que maldijo a David; no Si
 distinct_from:
 - simei-hijo-de-guerson
 - sama-hijo-de-jese
+- simei-partidario-de-david
+- simei-hijo-de-ela
 summary: Benjaminita de Bahurim, de una familia de la casa de Saúl. Maldijo y apedreó a David cuando huía de Absalón, y David
   no dejó que Abisái lo matara. Salomón lo mandó ejecutar años después.
 reason: Perspicacia «Simeí», núm. 12; 2Sa 16:5-13.
@@ -16,6 +18,7 @@ sources:
 - it-simei
 - 2-samuel-16
 - 2-samuel-19
+- 1-reyes-2
 not_claimed:
 - 'Que sea el Cus benjaminita del encabezamiento del Salmo 7: Perspicacia «Cus», núm. 3, solo lo ve como una alusión posible.'
 links:
@@ -37,9 +40,10 @@ relations:
   - it-simei
   - 2-samuel-19
   - it-guera-i
+  - 1-reyes-2
   reason: 2Sa 16:5 lo llama Simeí hijo de Guerá.
   inferred: false
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: saul
@@ -59,8 +63,18 @@ relations:
   - it-simei
   - 2-samuel-19
   - it-bahurim
+  - 1-reyes-2
   reason: 2Sa 19:16 lo llama el benjaminita de Bahurim, y en 16:5 sale de allí al paso de David.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-reyes-2
+  - it-simei
+  reason: '1Re 2:36-38: Salomón le manda hacerse una casa en Jerusalén y no salir, y Simeí se queda allí.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-cuervos-alimentan-a-elias-en-el-valle-de-kerit
+title: Los cuervos alimentan a Elías junto al valle de Kerit
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 17003
+places:
+- valle-de-kerit
+people:
+- elias-profeta
+present:
+- elias-profeta
+passages:
+- 1Re 17:2-7
+summary: Jehová manda a Elías esconderse al este del Jordán, junto al valle de Kerit. Allí bebe del arroyo y los cuervos le
+  llevan pan y carne mañana y tarde, hasta que el arroyo se seca.
+reason: 'Perspicacia «Kerit, Valle torrencial de» y «Elías», núm. 1, párr. 3. Sin año propio: la fecha es el reinado de Acab
+  según A6-A.'
+sources:
+- 1-reyes-17
+- it-kerit
+- it-elias
+- tnm-a6-a
+links:
+- title: 1 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

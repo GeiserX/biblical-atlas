@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-levanta-y-adorna-el-templo
+title: Salomón levanta y adorna el templo
+date:
+  from: -1033
+  to: -1026
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1034-1027 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 6002
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+present:
+- salomon
+passages:
+- 1Re 6:2-10
+- 1Re 6:14-36
+- 2Cr 3:3-14
+summary: Salomón levanta una casa de 60 por 20 codos con pórtico y tres plantas de cuartos laterales, sin ruido de herramientas.
+  Reviste de cedro y oro el Santo y el Santísimo, pone dos querubines y cerca el patio interior.
+reason: 1Re 6:2-36; Perspicacia «Templo», apartados de plano y materiales. La obra va de ziv de 1034 a bul de 1027 (estudio
+  3, párr. 8 y tabla). Se levantó en el monte Moria, en Jerusalén (2Cr 3:1).
+sources:
+- 1-reyes-6
+- it-templo
+- it-salomon
+- si-3
+- 2-cronicas-3
+links:
+- title: 1 Reyes 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
+  type: bible
+checked_on: '2026-09-30'
+status: verified

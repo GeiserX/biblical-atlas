@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: bealot-junto-a-aser
+name: Bealot
+names:
+- name: Bealot
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+coord_note: 'Sin punto: el de OpenBible cae en el Négueb, en la Bealot de Judá. La zona se calcula junto a Aser.'
+candidates:
+- name: Junto al territorio de Aser
+  geometry:
+    type: zone
+    lat: 33.0892
+    lon: 35.1442
+    radius_km: 40
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-bealot
+  - openbible-geo
+  - 1-reyes-4
+  reason: 1Re 4:16 lo pone con Aser en el distrito de Baaná; Perspicacia lo llama distrito próximo a Aser.
+  note: 'Centro calculado por nosotros: el de la zona de Aser en su ficha. El radio de 40 km también es nuestro.'
+  coord_source: calculation
+summary: Distrito vecino de Aser que administraba Baaná hijo de Husái, comisario de Salomón. No se sabe dónde estaba.
+reason: Perspicacia «Bealot», núm. 2; 1Re 4:16.
+sources:
+- it-bealot
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Bealot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000588
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

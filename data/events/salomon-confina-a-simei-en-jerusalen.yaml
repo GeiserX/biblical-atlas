@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-confina-a-simei-en-jerusalen
+title: Salomón confina a Simeí en Jerusalén
+date:
+  from: -1036
+  to: -1034
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1037-1035 a.e.c. (tiempo narrativo: al principio del reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 2036
+places:
+- jerusalen
+- valle-de-cedron
+people:
+- salomon
+- simei-hijo-de-guera
+present:
+- salomon
+- simei-hijo-de-guera
+passages:
+- 1Re 2:36-38
+summary: 'Salomón manda a Simeí construirse una casa en Jerusalén y no salir nunca de la ciudad: el día que cruce el valle
+  de Cedrón, morirá. Simeí lo acepta y vive allí.'
+reason: '1Re 2:36-38; Perspicacia «Simeí», núm. 12, y «Cedrón, Valle torrencial de». Fecha: al principio del reinado de Salomón,
+  que empieza en 1037 (estudio 3), unos tres años antes de que Simeí saliera.'
+sources:
+- 1-reyes-2
+- it-simei
+- it-cedron
+- si-3
+links:
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahisar
+name: Ahisar
+names:
+- name: Ahisar
+perspicacia: '1200000168'
+summary: Alto funcionario de Salomón que estaba a cargo de su casa, el personal del palacio.
+reason: Perspicacia «Ahisar»; 1Re 4:6.
+sources:
+- it-ahisar
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Ahisar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000168
+  type: perspicacia
+relations:
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:6: estaba a cargo de la casa del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

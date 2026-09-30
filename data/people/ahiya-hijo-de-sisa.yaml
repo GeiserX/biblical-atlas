@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-hijo-de-sisa
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#6
+disambiguation: Ahíya hijo de Sisá, secretario de Salomón; no el bisnieto de Elí, ni el profeta de Siló, ni los demás Ahíya
+  de Perspicacia.
+distinct_from:
+- ahiya-hijo-de-ahitub
+- ahiya-profeta
+- ahiya-padre-de-baasa
+summary: Secretario del rey Salomón, como su hermano Elihóref; los dos eran hijos de Sisá.
+reason: Perspicacia «Ahíya», núm. 6; 1Re 4:3.
+sources:
+- it-ahiya
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000153
+  type: perspicacia
+relations:
+- type: kin
+  person: sisa
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:3: Elihóref y Ahíya, hijos de Sisá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:3: secretario del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

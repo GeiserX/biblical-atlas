@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: safat-padre-de-eliseo
+name: Safat
+names:
+- name: Safat
+perspicacia: 1200003950#3
+disambiguation: Padre del profeta Eliseo; no es Safat hijo de Horí, el espía de Simeón, ni los otros tres hombres de ese nombre
+  que registra Perspicacia.
+distinct_from:
+- safat-hijo-de-hori
+summary: Padre del profeta Eliseo, de Abel-Meholá. Cuando Elías llamó a su hijo, Eliseo pidió despedirse de él y de su madre
+  antes de seguir al profeta.
+reason: Perspicacia «Safat», núm. 3; 1Re 19:16, 19, 20; 2Re 3:11; 6:31.
+sources:
+- it-safat
+- 1-reyes-19
+links:
+- title: 'Perspicacia: «Safat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003950
+  type: perspicacia
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+relations:
+- type: lived_in
+  place: abel-mehola
+  inferred: true
+  sources:
+  - 1-reyes-19
+  - it-elias
+  reason: '1Re 19:16, 20: su hijo era de Abel-Meholá y allí se despidió de sus padres; Perspicacia «Elías», apartado «Nombra
+    a Eliseo como sucesor», la llama ciudad natal de Eliseo.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

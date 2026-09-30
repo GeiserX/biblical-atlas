@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: piedra-de-zohelet
+name: Piedra de Zohélet
+names:
+- name: Piedra de Zohélet
+type: region
+lat: 31.767198
+lon: 35.235985
+precision: uncertain
+coord_source: openbible:a8bb3d8
+coord_url: https://www.openbible.info/geo/ancient/a8bb3d8/serpents-stone
+coord_note: 'Es una piedra: «región» es el tipo más cercano. OpenBible la pone a menos de 100 m de En-Roguel, con el punto
+  de Bir Ayyub que usa nuestra ficha de En-Roguel.'
+summary: Piedra al lado de En-Roguel, al sur de Jerusalén, cuyo sitio exacto no se conoce. Allí sacrificó Adonías cuando quiso
+  que lo proclamaran rey. El nombre viene de una raíz que significa «reptil».
+reason: 'Perspicacia «Zohélet»; 1Re 1:9. OpenBible: solo el punto.'
+sources:
+- it-zohelet
+- openbible-geo
+- 1-reyes-1
+links:
+- title: 'Perspicacia: «Zohélet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004760
+  type: perspicacia
+- title: 1 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

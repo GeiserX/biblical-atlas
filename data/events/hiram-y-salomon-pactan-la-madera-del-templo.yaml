@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hiram-y-salomon-pactan-la-madera-del-templo
+title: Hiram y Salomón pactan la madera del templo
+date:
+  from: -1036
+  to: -1033
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1034 a.e.c. (tiempo narrativo: al comienzo del reinado de Salomón, antes de empezar el templo)'
+narrative_order:
+  series: 1-reyes
+  order: 5001
+places:
+- jerusalen
+- tiro
+- libano
+people:
+- hiram-rey-de-tiro
+- salomon
+present:
+- salomon
+passages:
+- 1Re 5:1-12
+- 2Cr 2:3-16
+summary: Al saber que Salomón ya reina, Hiram le envía siervos. Salomón le pide cedro del Líbano para la casa de Jehová; Hiram
+  lo manda en balsas a cambio de trigo y aceite, y los dos reyes pactan la paz.
+reason: 1Re 5:1-12; Perspicacia «Hiram», núm. 1. Tras la subida de Salomón al trono (1037) y antes del comienzo de la obra,
+  en ziv de 1034 (estudio 3, párr. 4 y 8). Salomón gobernaba desde Jerusalén.
+sources:
+- 1-reyes-5
+- it-hiram
+- si-3
+links:
+- title: 1 Reyes 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/5
+  type: bible
+checked_on: '2026-09-30'
+status: verified

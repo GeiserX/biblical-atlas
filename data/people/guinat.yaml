@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guinat
+name: Guinat
+names:
+- name: Guinat
+perspicacia: '1200001707'
+summary: Padre de Tibní, el que disputó a Omrí el trono de Israel y perdió.
+reason: Perspicacia «Guinat»; 1Re 16:21, 22.
+sources:
+- it-guinat
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Guinat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001707
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+checked_on: '2026-09-30'
+status: verified

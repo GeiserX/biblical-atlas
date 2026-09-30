@@ -386,3 +386,8 @@
   to: adoniram/tie/david/master
   removed_on: '2026-09-30'
   reason: '2Sa 20:24: encargado del trabajo obligatorio de David. Es tie con master y el encargo va en la razón.'
+- from: benaya-hijo-de-jehoiada/accompanies/salomon
+  to: benaya-hijo-de-jehoiada/tie/salomon/master
+  removed_on: '2026-09-30'
+  reason: '1Re 2:35; 4:4: jefe del ejército de Salomón. Es tie con master y el encargo va en la razón. Se queda el tie que
+    ya había, con las fuentes de los dos.'

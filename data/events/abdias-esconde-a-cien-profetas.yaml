@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abdias-esconde-a-cien-profetas
+title: Jezabel mata a los profetas de Jehová y Abdías esconde a cien
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 17002
+places:
+- israel
+people:
+- jezabel
+- abdias-mayordomo-de-acab
+present: []
+passages:
+- 1Re 18:4, 13
+summary: Jezabel hace matar a los profetas de Jehová. Abdías, el mayordomo de Acab, oculta a cien de ellos en dos cuevas,
+  cincuenta en cada una, y les lleva pan y agua.
+reason: '1Re 18:4, 13 lo cuenta como ya pasado; Perspicacia «Jezabel», núm. 1, párr. 3, lo une a la huida de Elías (17:2,
+  3), tras anunciar la sequía: de ahí el orden. Sin lugar nombrado: present vacío. Reinado de Acab (A6-A).'
+sources:
+- 1-reyes-18
+- it-jezabel
+- it-abdias
+- tnm-a6-a
+links:
+- title: 1 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
+  type: bible
+checked_on: '2026-09-30'
+status: verified

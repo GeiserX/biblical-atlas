@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-quita-los-idolos-de-juda
+title: Asá limpia Judá de ídolos
+date:
+  from: -977
+  to: -962
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 978 y 963 a.e.c. (tiempo narrativo: primeros años de Asá, antes de la asamblea de su año 15)'
+narrative_order:
+  series: 1-reyes
+  order: 15011
+places:
+- juda
+- jerusalen
+people:
+- asa
+passages:
+- 1Re 15:11, 12, 14
+- 2Cr 14:2-5
+- 2Cr 15:17
+summary: Asá expulsa de Judá a los prostitutos de templo, retira los ídolos que habían hecho sus antepasados. Los lugares
+  altos siguen en pie, pero él se mantiene fiel a Jehová toda su vida.
+reason: '1Re 15:11-14; Perspicacia «Asá», núm. 1: su celo trajo paz en sus diez primeros años, antes del pacto del año 15
+  (963 a.e.c.). El reinado empieza en 978 (tabla A6-A).'
+sources:
+- 1-reyes-15
+- it-asa
+- tnm-a6-a
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Asá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

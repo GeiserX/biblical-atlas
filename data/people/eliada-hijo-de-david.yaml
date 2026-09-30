@@ -34,5 +34,7 @@ relations:
   reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- eliada-padre-de-rezon

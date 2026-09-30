@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jezabel-hace-matar-a-nabot
+title: Jezabel hace matar a Nabot
+date:
+  from: -923
+  to: -920
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 924 y c. 921 a.e.c. (tiempo narrativo: en los tres años de paz tras Afec, unos tres años antes de morir
+    Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 21005
+places:
+- jezreel
+present:
+- nabot
+people:
+- nabot
+- jezabel
+- acab
+type: death
+roles:
+  nabot: died
+passages:
+- 1Re 21:5-14
+- 2Re 9:26
+summary: Jezabel escribe cartas con el sello de Acab a los ancianos de Jezreel. Convocan un ayuno, dos hombres inútiles lo
+  acusan de haber maldecido a Dios y al rey; luego lo apedrean fuera de la ciudad.
+reason: 'Perspicacia «Acab», núm. 1: en la tregua de tres años tras Afec, c. 924. «Elías», núm. 1: Acab muere unos tres años
+  después de la viña, c. 920 (A6-A). Jezabel no está en Jezreel: manda cartas.'
+sources:
+- 1-reyes-21
+- it-acab
+- it-ben-hadad
+- tnm-a6-a
+- it-nabot
+- it-jezabel
+- it-elias
+links:
+- title: 1 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/21
+  type: bible
+checked_on: '2026-09-30'
+status: verified

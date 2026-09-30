@@ -52,8 +52,9 @@ relations:
   reason: '1Sa 16:13: Samuel unge a David delante de sus hermanos.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - abinadab-de-quiryat-jearim
 - abinadab-hijo-de-saul
+- abinadab-padre-de-ben-abinadab

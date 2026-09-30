@@ -15,6 +15,7 @@ sources:
 - it-ezrahita
 - it-salmos-libro
 - salmos-88
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Hemán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001982
@@ -29,14 +30,31 @@ relations:
 - type: kin
   person: zerah-hijo-de-juda
   word: ancestor
-  inferred: false
+  inferred: true
   sources:
   - salmos-88
   - it-ezrahita
   - it-heman
-  reason: 1Cr 2:6 lo pone entre los descendientes de Zérah, hijo de Judá. El encabezamiento de Sl 88 lo llama ezrahíta, que para
-    Perspicacia equivale a zerahíta.
-  checked_on: '2026-09-29'
+  - 1-reyes-4
+  - it-etan
+  reason: 1Cr 2:6 da a un Hemán por hijo de Zérah; Perspicacia «Etán», núm. 1, cree probable que sean los de 1Re 4:31, y «Ezrahíta»
+    iguala ezrahíta a zerahíta.
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: mahol
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-heman
+  - it-mahol
+  reason: 1Re 4:31 llama a Hemán, Calcol y Dardá hijos de Mahol; Perspicacia «Hemán» recoge que algunos lo leen como un sobrenombre.
+  checked_on: '2026-09-30'
+  status: verified
+history:
+- date: '2026-09-30'
+  change: 'La descendencia de Zérah es deducción de Perspicacia, que solo la da por probable: inferred pasa a true.'
+  source: 1-reyes-4
+checked_on: '2026-09-30'
 status: verified

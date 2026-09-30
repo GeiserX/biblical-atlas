@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: manantial-de-guihon
+name: Guihon
+names:
+- name: Guihon
+- name: Guihón
+  note: Grafía de Perspicacia, que da su nombre actual, Ha Guihón. No es el río Guihon de Edén.
+type: lake
+lat: 31.772919
+lon: 35.236383
+precision: point
+coord_source: openbible:a2a303c
+coord_url: https://www.openbible.info/geo/ancient/a2a303c/gihon-2
+coord_note: 'Punto del manantial de Guihón en OpenBible. Es una fuente: «lago» es el tipo más cercano de la lista.'
+summary: Manantial que nace en una cueva del valle de Cedrón, al este de la Ciudad de David, en Jerusalén. Allí ungieron a
+  Salomón como rey, a unos 700 m de En-Roguel, donde festejaba Adonías.
+reason: 'Perspicacia «Guihón», núm. 2; 1Re 1:33, 38, 45. OpenBible: solo el punto.'
+sources:
+- it-guihon
+- openbible-geo
+- 1-reyes-1
+links:
+- title: 'Perspicacia: «Guihón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001691
+  type: perspicacia
+- title: 1 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

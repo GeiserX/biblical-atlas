@@ -21,6 +21,7 @@ sources:
 - tnm-a6-b
 - mateo-1
 - sofonias-1
+- 1-reyes-13
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
@@ -58,7 +59,7 @@ history:
   source: tnm-a6-b
 perspicacia: 1200002525#1
 disambiguation: El rey de Judá, hijo de Amón; no Josías hijo de Sofonías, que vivía en Jerusalén después del destierro.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - josias-hijo-de-sofonias

@@ -51,6 +51,7 @@ sources:
 - it-tarsis
 - jonas-1
 - openbible-geo
+- 1-reyes-10
 links:
 - title: 'Perspicacia: «Tarsis»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004325
@@ -58,5 +59,5 @@ links:
 - title: Jonás 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/32/1
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

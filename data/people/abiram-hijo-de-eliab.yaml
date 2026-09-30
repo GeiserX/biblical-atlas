@@ -23,7 +23,7 @@ links:
 - title: Salmo 106 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/106
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 relations:
 - type: kin
@@ -39,3 +39,5 @@ relations:
   reason: 'Nú 16:1, 12: Abiram es hijo de Eliab.'
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- abiram-hijo-de-hiel

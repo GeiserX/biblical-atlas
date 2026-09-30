@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: micaya-anuncia-la-derrota-de-acab
+title: Micaya anuncia la derrota de Acab
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 22013
+places:
+- samaria
+present:
+- micaya-hijo-de-imla
+- acab
+- jehosafat
+- sedequias-hijo-de-kenaana
+people:
+- micaya-hijo-de-imla
+- acab
+- jehosafat
+- sedequias-hijo-de-kenaana
+- amon-jefe-de-samaria
+- joas-hijo-del-rey
+type: speech
+roles:
+  micaya-hijo-de-imla: spoke
+passages:
+- 1Re 22:13-28
+- 2Cr 18:12-27
+summary: Llamado porque Jehosafat insiste, Micaya ve a Israel disperso como ovejas sin pastor y cuenta que un espíritu engañoso
+  habla por los profetas. Sedequías lo abofetea y Acab lo manda a prisión.
+reason: A6-A cierra el reinado de Acab y abre el de Ocozías hacia 920 a.e.c., en el año 17 de Jehosafat (1Re 22:51), que empezó
+  en 937. Amón y Joás no están en la era.
+sources:
+- 1-reyes-22
+- tnm-a6-a
+- it-micaya
+links:
+- title: 1 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acab-y-jehosafat-consultan-a-los-profetas
+title: Acab y Jehosafat consultan a los profetas sobre Ramot-Galaad
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 22001
+places:
+- samaria
+present:
+- acab
+- jehosafat
+- sedequias-hijo-de-kenaana
+people:
+- acab
+- jehosafat
+- sedequias-hijo-de-kenaana
+passages:
+- 1Re 22:1-12
+- 2Cr 18:1-11
+summary: En el tercer año de paz con Siria, Jehosafat visita a Acab y promete ir con él a recuperar Ramot-Galaad. En la era
+  de la puerta de Samaria, unos 400 profetas anuncian victoria; Sedequías se hace cuernos de hierro.
+reason: A6-A cierra el reinado de Acab y abre el de Ocozías hacia 920 a.e.c., en el año 17 de Jehosafat (1Re 22:51), que empezó
+  en 937.
+sources:
+- 1-reyes-22
+- tnm-a6-a
+- it-acab
+- it-jehosafat
+links:
+- title: 1 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

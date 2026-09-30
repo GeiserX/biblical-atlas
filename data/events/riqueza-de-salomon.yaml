@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: riqueza-de-salomon
+title: La riqueza y la gloria de Salomón
+date:
+  from: -1036
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 998 a.e.c. (tiempo narrativo: durante el reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 10014
+places:
+- jerusalen
+people:
+- salomon
+present:
+- salomon
+passages:
+- 1Re 10:14-21
+- 1Re 10:23-29
+- 2Cr 1:14-17
+- 2Cr 9:13-20
+- 2Cr 9:22-28
+- Ec 2:4-9
+summary: Salomón recibe cada año 666 talentos de oro, hace escudos de oro para la Casa del Bosque del Líbano y un trono de
+  marfil. Reúne carros y caballos de Egipto y hace la plata tan común como las piedras.
+reason: Perspicacia «Salomón», apartado «Sus riquezas y gloria», sin años. Los escudos se pusieron en la Casa del Bosque del
+  Líbano al acabarla, en 1014 a.e.c. según su artículo; lo demás abarca el reinado, 1037-998 a.e.c.
+sources:
+- 1-reyes-10
+- it-salomon
+- it-casa-del-bosque-del-libano
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

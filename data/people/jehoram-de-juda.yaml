@@ -26,6 +26,7 @@ sources:
 - 2-cronicas-21
 - tnm-a6-a
 - mateo-1
+- 1-reyes-22
 links:
 - title: 'Perspicacia: «Jehoram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002381
@@ -42,8 +43,9 @@ relations:
   - it-jehoram
   - 2-cronicas-21
   - mateo-1
+  - 1-reyes-22
   reason: Era el primogénito de Jehosafat (2Cr 21:1-3).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: atalia
@@ -61,10 +63,11 @@ relations:
   sources:
   - it-jehoram
   - 2-reyes-8
+  - 1-reyes-22
   reason: Llegó a ser rey aún en vida de Jehosafat (2Re 8:16).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   office: king
   status: verified
 perspicacia: 1200002381#3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

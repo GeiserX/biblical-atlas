@@ -46,8 +46,18 @@ relations:
   reason: Murió en el palacio incendiado de Tirzá (1Re 16:18).
   checked_on: '2026-09-29'
   status: verified
+- type: tie
+  person: ela-de-israel
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-zimri
+  reason: '1Re 16:9: Zimrí era siervo de Elá, jefe de la mitad de sus carros.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200004737#3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - zimri-hijo-de-salu

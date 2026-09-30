@@ -1,0 +1,99 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ben-hadad-ii
+name: Ben-Hadad
+names:
+- name: Ben-Hadad
+- name: Ben-Hadad II
+  note: Número que le da Perspicacia para distinguirlo de los otros dos reyes sirios así llamados.
+perspicacia: 1200000636#2
+disambiguation: El Ben-Hadad de los días de Acab y de Jehoram de Israel, al que mató Hazael; no es Ben-Hadad hijo de Tabrimón,
+  de los días de Asá, ni Ben-Hadad hijo de Hazael.
+distinct_from:
+- ben-hadad-hijo-de-hazael
+- ben-hadad-hijo-de-tabrimon
+date:
+  from: -939
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 905 a.e.c. (tiempo narrativo: reinaba en días de Acab y murió en los de Jehoram de Israel)'
+summary: Rey de Siria en días de Acab. Sitió Samaria con 32 reyes y fue vencido; al año siguiente perdió en Afec, y Acab le
+  perdonó la vida a cambio de un pacto. Hazael lo asfixió y reinó.
+reason: Perspicacia «Ben-hadad», núm. 2; 1Re 20; 2Re 8:7-15. Reinaba en días de Acab (desde c. 940, A6-A) y murió reinando
+  Jehoram de Israel (hasta c. 905, A6-A).
+sources:
+- it-ben-hadad
+- it-damasco
+- it-hazael
+- 1-reyes-20
+- tnm-a6-a
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Ben-hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
+  type: perspicacia
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+relations:
+- type: holds_office
+  office: king
+  place: siria
+  sources:
+  - 1-reyes-20
+  - it-ben-hadad
+  reason: '1Re 20:1: el rey Ben-Hadad de Siria.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: ben-hadad-hijo-de-tabrimon
+  office: king
+  inferred: true
+  sources:
+  - it-damasco
+  - it-ben-hadad
+  - 1-reyes-20
+  reason: Perspicacia «Damasco», apartado «Se opone a Israel», párr. 2, lo llama sucesor de Ben-Hadad I. En 1Re 20:34 habla
+    de su padre; «Ben-hadad», núm. 2, duda si era su padre o su predecesor.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: acab
+  word: enemy
+  sources:
+  - 1-reyes-20
+  - it-acab
+  reason: '1Re 20:1-30: sitia Samaria y al año siguiente vuelve contra Acab en Afec; Perspicacia «Acab», núm. 1, párr. 6 y
+    7.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: acab
+  word: ally
+  sources:
+  - 1-reyes-20
+  - it-acab
+  reason: '1Re 20:32-34: Acab lo llama su hermano, le perdona la vida y hace un pacto con él; Perspicacia «Acab», núm. 1,
+    párr. 7.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: damasco
+  inferred: true
+  sources:
+  - 1-reyes-20
+  - it-hazael
+  - it-damasco
+  reason: '1Re 20:34: ofrece a Acab mercados en Damasco. Perspicacia «Hazael», párr. 3: enfermo, mandó a Hazael desde Damasco,
+    la ciudad principal de Siria (2Re 8:7).'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+not_claimed:
+- 'No decimos si era hijo o solo sucesor del Ben-Hadad de los días de Asá: Perspicacia deja abierto el parentesco.'

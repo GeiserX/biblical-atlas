@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: israel-derrota-a-ben-hadad-en-afec
+title: Israel derrota a Ben-Hadad en Afec
+date:
+  from: -923
+  to: -923
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 924 a.e.c.
+  detail:
+    season: spring
+  note: 'Cuenta nuestra: la primavera del año siguiente al sitio de Samaria (c. 925 a.e.c.; Perspicacia «Ben-hadad», núm.
+    2). La nota de 1Re 20:26 lee «a principios de año» como primavera.'
+narrative_order:
+  series: 1-reyes
+  order: 20022
+places:
+- afec-al-este-del-mar-de-galilea
+people:
+- acab
+- ben-hadad-ii
+present:
+- acab
+- ben-hadad-ii
+passages:
+- 1Re 20:22-30
+summary: Sus consejeros convencen a Ben-Hadad de que Jehová es Dios de montañas. En primavera vuelve y acampa junto a Afec;
+  en un día Israel mata 100.000 sirios y la muralla cae sobre otros 27.000.
+reason: 'Perspicacia «Ben-hadad», núm. 2, párr. 2; «Acab», núm. 1, párr. 7; «Afeq», núm. 5. Fecha: cuenta nuestra, primavera
+  del año siguiente al sitio.'
+sources:
+- 1-reyes-20
+- it-ben-hadad
+- it-acab
+- it-afeq
+- tnm-a6-a
+links:
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: pending

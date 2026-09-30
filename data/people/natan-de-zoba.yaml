@@ -8,6 +8,7 @@ disambiguation: Natán de Zobá, padre de Igal; no el profeta Natán ni Natán h
 distinct_from:
 - natan-profeta
 - natan-hijo-de-david
+- natan-padre-de-zabud
 summary: Hombre de Zobá. Su hijo Igal y su hermano Joel estuvieron entre los guerreros de David.
 reason: Perspicacia «Natán», núm. 3; 2Sa 23:36.
 sources:
@@ -26,5 +27,5 @@ relations:
   reason: '2Sa 23:36: Natán de Zobá.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

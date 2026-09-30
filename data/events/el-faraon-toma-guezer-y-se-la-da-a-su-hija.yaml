@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-faraon-toma-guezer-y-se-la-da-a-su-hija
+title: El faraón toma Guézer y se la da a su hija
+date:
+  from: -1036
+  to: -1026
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1027 a.e.c. (tiempo narrativo: la dote de la boda de Salomón con la hija del faraón)'
+narrative_order:
+  series: 1-reyes
+  order: 3001
+places:
+- guezer
+people: []
+present: []
+passages:
+- 1Re 9:16
+summary: Un faraón de Egipto ataca Guézer, la incendia y mata a los cananeos que viven en ella. Luego la regala a su hija,
+  que se había casado con Salomón, cuando ella deja Egipto.
+reason: '1Re 9:16 y su nota: fue la dote de la hija del faraón, como dice Perspicacia «Guézer», párr. 2. Lleva la fecha de
+  la boda: Salomón ya reinaba (1037) y el templo seguía sin acabar (1027, estudio 3).'
+sources:
+- 1-reyes-9
+- it-guezer
+- it-faraon
+- it-salomon
+- si-3
+links:
+- title: 'Perspicacia: «Guézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001673
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

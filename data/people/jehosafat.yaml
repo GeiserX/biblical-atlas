@@ -12,7 +12,7 @@ date:
   chronology: tnm
   text: 937-913 a.e.c.
 summary: Hijo de Asá. Mandó enseñar la Ley por las ciudades de Judá y mejoró los tribunales. Casó a su hijo con Atalía, hija
-  de Acab, y casi murió con él en Ramot-galaad.
+  de Acab, y en Ramot-Galaad, luchando al lado de Acab, casi perdió la vida.
 reason: Perspicacia «Jehosafat», núm. 3, párr. 3, 5, 6 y 9; 1Re 22:41-50 y 2Cr 17-20.
 sources:
 - it-jehosafat
@@ -20,6 +20,7 @@ sources:
 - 2-cronicas-17
 - tnm-a6-a
 - mateo-1
+- 1-reyes-15
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
@@ -36,8 +37,9 @@ relations:
   - it-jehosafat
   - 1-reyes-22
   - mateo-1
-  reason: Hijo de Asá y de Azubá (1Re 22:42).
-  checked_on: '2026-09-29'
+  - 1-reyes-15
+  reason: '1Re 22:41: Jehosafat hijo de Asá; 22:42 nombra a su madre, Azubá.'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: asa
@@ -49,12 +51,65 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: tie
+  person: acab
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-jehosafat
+  reason: '1Re 22:2-4, 29: se une a Acab contra Ramot-Galaad; 22:44 dice que vivió en paz con el rey de Israel.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: azuba-hija-de-silhi
+  word: mother
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-azuba
+  reason: '1Re 22:42 nombra a su madre: Azubá, hija de Silhí.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-reyes-22
+  reason: '1Re 22:50: lo entierran en la Ciudad de David, su antepasado.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-reyes-22
+  reason: '1Re 22:42: reinó 25 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-reyes-22
+  reason: 1Re 22:50 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
+    reinaba.
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehosafat» y el estudio 3 daban 936 a.e.c.; la tabla A6-A, más reciente, da 937.
   source: tnm-a6-a
+- date: '2026-09-30'
+  change: La razón de la relación con Asá citaba 22:42, que nombra a la madre; el padre está en 1Re 22:41.
+  source: 1-reyes-22
+- date: '2026-09-30'
+  change: «Casi murió con él» podía leerse como con su hijo; fue al lado de Acab (1Re 22:29-33). Ramot-Galaad, como la TNM.
+  source: 1-reyes-22
 perspicacia: 1200002383#3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jehosafat-hijo-de-ahilud
+- jehosafat-hijo-de-parua

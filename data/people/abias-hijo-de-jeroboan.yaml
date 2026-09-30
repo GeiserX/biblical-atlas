@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abias-hijo-de-jeroboan
+name: Abías
+names:
+- name: Abías
+perspicacia: 1200000041#6
+disambiguation: Hijo de Jeroboán que murió joven; no Abías (Abiyam), rey de Judá, ni los demás Abías de Perspicacia.
+distinct_from:
+- abias-de-juda
+- abias-de-tiempos-de-david
+- abias-hijo-de-samuel
+summary: Hijo de Jeroboán. Enfermó de gravedad y su madre fue disfrazada a consultar a Ahíya. Murió cuando ella volvió a Tirzá,
+  y fue el único de su casa sepultado con honra, porque Jehová vio en él algo bueno.
+reason: Perspicacia «Abías», núm. 6; 1Re 14:1-18.
+sources:
+- it-abias
+- 1-reyes-14
+links:
+- title: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  type: perspicacia
+- title: 1 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/14
+  type: bible
+relations:
+- type: kin
+  person: jeroboan-i
+  word: father
+  sources:
+  - 1-reyes-14
+  - it-abias
+  reason: '1Re 14:1: Abías, hijo de Jeroboán.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: tirza
+  sources:
+  - 1-reyes-14
+  - it-abias
+  reason: '1Re 14:17: murió al llegar su madre al umbral de la casa en Tirzá.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
