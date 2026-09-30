@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ibhar
+name: Ibhar
+names:
+- name: Ibhar
+perspicacia: '1200002123'
+summary: Hijo de David nacido en Jerusalén, cuando David ya había dejado Hebrón.
+reason: 'Perspicacia «Ibhar»; 2Sa 5:13-15. En Crónicas: 1Cr 14:4 y 5.'
+sources:
+- it-ibhar
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Ibhar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002123
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

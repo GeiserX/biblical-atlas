@@ -1,0 +1,111 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: is-boset
+name: Is-Bóset
+names:
+- name: Is-Bóset
+  note: Perspicacia escribe Is-bóset y le da el sentido de «hombre de vergüenza».
+- name: Is-bóset
+  note: Grafía de Perspicacia.
+perspicacia: '1200002211'
+summary: Hijo de Saúl. Muerto su padre, Abner lo llevó a Mahanaim y lo hizo rey de todas las tribus salvo Judá. Tenía 40 años
+  y reinó dos; al final lo asesinaron dos de sus capitanes.
+reason: Perspicacia «Is-bóset», párr. 1, 3 y 4; 2Sa 2:8-10; 4:5-7.
+sources:
+- it-is-boset
+- 2-samuel-2
+- it-abner
+- it-david
+- 2-samuel-3
+- 2-samuel-4
+links:
+- title: 'Perspicacia: «Is-bóset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002211
+  type: perspicacia
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+relations:
+- type: kin
+  person: saul
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-is-boset
+  - 2-samuel-3
+  - 2-samuel-4
+  reason: 2Sa 2:8, 10, 12 lo llaman hijo de Saúl.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: mahanaim
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-mahanaim
+  - it-is-boset
+  reason: '2Sa 2:8, 12: Abner lo lleva a Mahanaim, y de allí salen sus siervos. Perspicacia «Mahanaim» la llama capital de
+    su reino.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: israel
+  office: king
+  date:
+    from: -1077
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1078-1075 a.e.c. (tiempo narrativo: dos años de reinado)'
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-is-boset
+  - it-david
+  - si-3
+  reason: '2Sa 2:9, 10: rey de Israel, sobre todas las tribus menos Judá, durante dos años. Perspicacia «Is-bóset», párr.
+    3, cree que empezó poco después de morir Saúl (1078), y «David», párr. 20, lo hace morir hacia 1075.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: saul
+  office: king
+  inferred: true
+  sources:
+  - 2-samuel-2
+  - it-is-boset
+  reason: 'Perspicacia «Is-bóset», párr. 1, lo llama sucesor de Saúl en el trono; 2Sa 2:8-10: muerto su padre, Abner lo hace
+    rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abner
+  word: great_uncle
+  inferred: true
+  sources:
+  - 2-samuel-3
+  - it-is-boset
+  - it-abner
+  reason: Perspicacia «Abner» lo hace hermano de Quis, abuelo de Is-Bóset (1Cr 8:33; 9:39); «Is-bóset» lo llama su pariente
+    al contar la disputa por Rizpá (2Sa 3:6-11).
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: mahanaim
+  inferred: true
+  sources:
+  - 2-samuel-4
+  - it-mahanaim
+  reason: 2Sa 4:5-7 lo matan en su casa; Perspicacia «Mahanaim» cree que fue en esa ciudad, su capital.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

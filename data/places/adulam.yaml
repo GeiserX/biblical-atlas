@@ -11,8 +11,8 @@ lon: 35.001667
 precision: point
 coord_source: openbible:af82614
 coord_url: https://www.openbible.info/geo/ancient/af82614/adullam
-summary: Ciudad de la Sefelá de Judá, entre Belén y Lakís. De allí era Hirá, amigo de Judá; siglos después David se escondió
-  en una cueva de la zona.
+summary: Ciudad de la Sefelá de Judá, entre Belén y Lakís. De allí era Hirá, amigo de Judá. Siglos después David se escondió
+  en una cueva de la zona y, ya rey, la usó de base contra los filisteos.
 reason: 'Perspicacia «Adulam», párr. 1 a 3: Tell esh-Sheikh Madhkur, 26 km al OSO de Jerusalén; Gé 38:1, 12. Coordenada de
   OpenBible: solo tomamos el punto.'
 sources:
@@ -24,9 +24,15 @@ sources:
 - josue-15
 - 1-samuel-22
 - it-cueva
+- 2-samuel-5
+- 2-samuel-23
 links:
 - title: 'Perspicacia: «Adulam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000122
   type: perspicacia
+history:
+- date: '2026-09-29'
+  change: Perspicacia «Adulam», párr. 3, identifica con este lugar el refugio al que baja David en 2Sa 5:17.
+  source: 2-samuel-5
 checked_on: '2026-09-29'
 status: verified

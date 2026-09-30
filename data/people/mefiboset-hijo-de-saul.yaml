@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mefiboset-hijo-de-saul
+name: Mefibóset
+names:
+- name: Mefibóset
+perspicacia: 1200002986#1
+disambiguation: Mefibóset hijo de Saúl y Rizpá, entrada núm. 1 de Perspicacia «Mefibóset»; no su sobrino, el hijo cojo de
+  Jonatán.
+distinct_from:
+- mefiboset-hijo-de-jonatan
+summary: Hijo del rey Saúl y de su concubina Rizpá. Fue uno de los siete de la casa de Saúl que David entregó a los gabaonitas;
+  lo mataron en Guibeá al empezar la siega de la cebada.
+reason: Perspicacia «Mefibóset», núm. 1; 2Sa 21:8, 9.
+sources:
+- it-mefiboset
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Mefibóset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002986
+  type: perspicacia
+relations:
+- type: kin
+  person: saul
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-mefiboset
+  reason: '2Sa 21:8: hijo que Rizpá tuvo con Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rizpa
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-mefiboset
+  reason: '2Sa 21:8: uno de los dos hijos de Rizpá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: guibea-de-benjamin
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-mefiboset
+  reason: '2Sa 21:6, 9: los gabaonitas lo mataron y colgaron su cuerpo en el monte, en Guibeá de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

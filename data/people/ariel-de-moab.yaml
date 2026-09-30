@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ariel-de-moab
+name: Ariel
+names:
+- name: Ariel
+perspicacia: 1200000361#1
+disambiguation: Ariel de Moab; no el cabeza que envió Esdras junto al río Ahavá.
+summary: Moabita cuyos dos hijos mató Benaya, el guerrero de David.
+reason: Perspicacia «Ariel», núm. 1; 2Sa 23:20.
+sources:
+- it-ariel
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Ariel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000361
+  type: perspicacia
+relations:
+- type: lived_in
+  place: moab
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:20: Ariel de Moab.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

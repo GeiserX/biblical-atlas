@@ -40,3 +40,15 @@ checked_on: '2026-09-29'
 status: verified
 distinct_from:
 - natan-hijo-de-david
+- natan-de-zoba
+relations:
+- type: holds_office
+  office: prophet
+  sources:
+  - 2-samuel-7
+  - it-natan
+  - 2-samuel-12
+  reason: 2Sa 7:2 lo llama el profeta Natán; en 7:4-17 transmite a David el mensaje de Jehová.
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified

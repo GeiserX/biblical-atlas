@@ -9,6 +9,7 @@ disambiguation: El hijo de Abinadab que guardó el Arca en Quiryat-Jearim; no El
 distinct_from:
 - eleazar-hijo-de-aaron
 - eleazar-hijo-de-eliud
+- eleazar-hijo-de-dodo
 summary: Hijo de Abinadab. Los de Quiryat-Jearim lo santificaron para que cuidara el Arca en la casa de su padre, cuando los
   filisteos ya la habían devuelto.
 reason: Perspicacia «Eleazar», núm. 2; 1Sa 7:1.
@@ -39,6 +40,15 @@ relations:
   - 1-samuel-7
   - it-eleazar
   reason: '1Sa 7:1: cuidaba el Arca en Quiryat-Jearim, en casa de Abinadab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: uza-hijo-de-abinadab
+  word: brother
+  inferred: true
+  sources:
+  - it-abinadab
+  reason: 'Perspicacia «Abinadab», núm. 1: Uzá, muerto en 2Sa 6:7, era otro de los hijos de Abinadab.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: naharai
+name: Naharái
+names:
+- name: Naharái
+- name: Naharai
+  note: Grafía de Perspicacia.
+perspicacia: '1200003166'
+summary: Beerotita, escudero de Joab y uno de los treinta guerreros de David.
+reason: Perspicacia «Naharai»; 2Sa 23:37.
+sources:
+- it-naharai
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Naharai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003166
+  type: perspicacia
+relations:
+- type: lived_in
+  place: beerot
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:37: Naharái el beerotita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: joab-hijo-de-zeruya
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:37: era el escudero de Joab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:37: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

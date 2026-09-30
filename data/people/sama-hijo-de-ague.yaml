@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sama-hijo-de-ague
+name: Samá
+names:
+- name: Samá
+- name: Samah
+  note: Otra grafía, que da la nota de 2Sa 23:11 y usa Perspicacia.
+perspicacia: 1200003942#3
+disambiguation: Samá hijo de Agué, uno de los tres primeros guerreros de David; no Samá el harodita, ni el hermano de David,
+  ni el hijo de Reuel.
+distinct_from:
+- sama-el-harodita
+- sama-hijo-de-jese
+- sama-hijo-de-reuel
+summary: Hararita, uno de los tres primeros guerreros de David. En Lehí defendió solo un campo de lentejas frente a los filisteos.
+  Perspicacia cree que es el Sagué de 1 Crónicas, padre de Jonatán.
+reason: Perspicacia «Samah», núm. 3; 2Sa 23:11-17, 33.
+sources:
+- it-samah
+- it-hararita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Samah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003942
+  type: perspicacia
+relations:
+- type: kin
+  person: ague
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:11: Samá, hijo de Agué el hararita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:11, 12: figura entre los tres guerreros poderosos de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

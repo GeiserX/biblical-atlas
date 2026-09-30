@@ -12,6 +12,13 @@ reason: Perspicacia «Absalón», párr. 1, 3, 4 y apartados sobre la sublevaci�
 sources:
 - it-absalon
 - salmos-3
+- 2-samuel-3
+- 2-samuel-13
+- 2-samuel-14
+- 2-samuel-15
+- 2-samuel-16
+- 2-samuel-17
+- 2-samuel-18
 links:
 - title: 'Perspicacia: «Absalón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000063
@@ -24,6 +31,9 @@ relations:
   sources:
   - salmos-3
   - it-absalon
+  - 2-samuel-3
+  - 2-samuel-15
+  - 2-samuel-16
   reason: El encabezamiento de Sal 3 lo llama hijo de David; 2Sa 3:3 lo pone entre los hijos nacidos en Hebrón.
   checked_on: '2026-09-29'
   status: verified
@@ -32,7 +42,112 @@ relations:
   inferred: false
   sources:
   - it-absalon
+  - 2-samuel-3
   reason: 'Perspicacia «Absalón», párr. 1: fue el tercero de los hijos que David tuvo en Hebrón (2Sa 3:2, 3).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: maaca-hija-de-talmai
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-maaca
+  reason: '2Sa 3:3: hijo de Maacá, hija de Talmái.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: talmai-hijo-de-amihud
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-talmai
+  - 2-samuel-13
+  - it-guesur
+  reason: '2Sa 3:3: su madre era hija de Talmái; Perspicacia «Talmai», núm. 2, lo llama su abuelo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tamar-hija-de-david
+  word: sister
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-tamar
+  reason: '2Sa 13:1, 4, 20, 22: Tamar era su hermana. Perspicacia «Tamar», núm. 2, la da por hermana de padre y madre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amnon-hijo-de-david
+  word: half_brother
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-amnon
+  reason: '2Sa 13:4, 20, 26: los dos se llaman hermanos. Perspicacia «Amnón», núm. 1, los da por medio hermanos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: guesur
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - 2-samuel-14
+  - it-guesur
+  - 2-samuel-15
+  - it-absalon
+  reason: '2Sa 13:37, 38: huyó a Guesur y se quedó allí tres años; 14:23, 32: Joab lo trae de allí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-14
+  - it-absalon
+  reason: '2Sa 14:23, 24, 28: Joab lo trae a Jerusalén, donde vive dos años en su casa sin ver al rey.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: ahitofel
+  word: adviser
+  sources:
+  - 2-samuel-16
+  - it-ahitofel
+  - 2-samuel-17
+  reason: '2Sa 16:20-23: Absalón pide consejo a Ahitofel y lo sigue, como antes lo hacía David.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: husai
+  word: adviser
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-husai
+  reason: '2Sa 17:5-14: Absalón le pide consejo y lo sigue, aunque Husái trabajaba para David (Perspicacia «Husai»).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: amasa-hijo-de-itra
+  word: cousin
+  inferred: true
+  sources:
+  - 2-samuel-17
+  - it-amasa
+  reason: '2Sa 17:25: pone al frente a Amasá, hijo de una hermana de David; Perspicacia «Amasá», núm. 1, lo llama primo de
+    Absalón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: bosque-de-efrain
+  inferred: false
+  sources:
+  - 2-samuel-18
+  - it-absalon
+  reason: '2Sa 18:9-17: Joab y sus escuderos lo matan en el bosque de Efraín, y allí lo echan a un hoyo.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

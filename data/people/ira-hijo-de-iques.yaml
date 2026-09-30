@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ira-hijo-de-iques
+name: Irá
+names:
+- name: Irá
+perspicacia: 1200002193#2
+disambiguation: Irá hijo de Iqués, de Tecoa; no Irá el jairita, sacerdote de David, ni Irá el itrita.
+distinct_from:
+- ira-el-itrita
+- ira-el-jairita
+summary: Hijo de Iqués el tecoíta y uno de los treinta guerreros de David.
+reason: Perspicacia «Irá», núm. 2; 2Sa 23:26.
+sources:
+- it-ira
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Irá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002193
+  type: perspicacia
+relations:
+- type: kin
+  person: iques
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:26: Irá, hijo de Iqués el tecoíta.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:26: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

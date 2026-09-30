@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mebunai
+name: Mebunái
+names:
+- name: Mebunái
+- name: Mebunai
+  note: Grafía de Perspicacia.
+perspicacia: '1200002950'
+summary: Husatita, uno de los treinta guerreros de David. Perspicacia cree que es el mismo Sibecai que mató al gigante Saf.
+reason: Perspicacia «Mebunai», «Sibecai» y «Husatita»; 2Sa 23:27.
+sources:
+- it-mebunai
+- it-husatita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Mebunai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002950
+  type: perspicacia
+relations:
+- type: same_as
+  person: sibecai
+  certainty: probable
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-mebunai
+  - it-sibecai
+  reason: 'Perspicacia «Mebunai» y «Sibecai»: al parecer 2Sa 23:27 llama Mebunái a Sibecai, el husatita de 1Cr 11:29.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:27: Mebunái el husatita, uno de los treinta de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

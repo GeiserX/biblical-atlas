@@ -12,6 +12,9 @@ reason: Perspicacia «Urías», núm. 1; Mt 1:6 y su nota.
 sources:
 - it-urias
 - mateo-1
+- 2-samuel-11
+- 2-samuel-12
+- 2-samuel-23
 links:
 - title: 'Perspicacia: «Urías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004521
@@ -23,7 +26,8 @@ relations:
   inferred: false
   sources:
   - mateo-1
-  reason: Mt 1:6 la llama la esposa de Urías.
+  - 2-samuel-11
+  reason: 2Sa 11:3 la presenta como esposa de Urías, y Mt 1:6 la nombra por él.
   checked_on: '2026-09-29'
   status: verified
 - type: lived_in
@@ -31,8 +35,33 @@ relations:
   inferred: true
   sources:
   - it-urias
+  - 2-samuel-11
   reason: 'Perspicacia «Urías» (núm. 1): vivía en Jerusalén, cerca del palacio.'
   checked_on: '2026-09-29'
   status: verified
+- type: died_in
+  place: raba
+  inferred: false
+  sources:
+  - 2-samuel-11
+  - it-urias
+  - it-raba
+  reason: '2Sa 11:16, 17: muere en el combate contra los hombres que salen de Rabá, junto a la muralla.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-11
+  - 2-samuel-23
+  reason: '2Sa 11:9, 21, 24: duerme con los siervos de su señor, y Joab y el mensajero lo llaman siervo del rey.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: La razón cita 2Sa 11:3, que da a Bat-Seba como esposa de Urías.
+  source: 2-samuel-11
 checked_on: '2026-09-29'
 status: verified

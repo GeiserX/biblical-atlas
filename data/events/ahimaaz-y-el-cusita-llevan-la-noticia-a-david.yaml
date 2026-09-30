@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ahimaaz-y-el-cusita-llevan-la-noticia-a-david
+title: Ahimáaz y un cusita llevan a David la noticia de la batalla
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 18019
+places:
+- mahanaim
+- distrito-del-jordan
+- bosque-de-efrain
+people:
+- ahimaaz-hijo-de-sadoc
+- joab-hijo-de-zeruya
+- david
+present:
+- ahimaaz-hijo-de-sadoc
+- david
+passages:
+- 2Sa 18:19-32
+summary: Joab manda a un cusita a informar al rey. Ahimáaz insiste en correr también, lo adelanta por el camino del Distrito
+  y anuncia la victoria sin hablar de Absalón. El cusita llega después y da a entender su muerte.
+reason: '2Sa 18:19-32; Perspicacia «Ahimáaz», núm. 2, «Cusita» y «Absalón»: David esperaba en Mahanaim. Fecha: después del
+  pacto con David (después de 1070) y antes de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-18
+- it-ahimaaz
+- it-cusita
+- it-absalon
+- si-3
+links:
+- title: 2 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mica-hijo-de-mefiboset
+name: Micá
+names:
+- name: Micá
+- name: Miqueas
+  note: Otra forma del nombre, según Perspicacia «Micá», núm. 1.
+perspicacia: 1200003031#1
+disambiguation: El hijo de Mefibóset (Perspicacia «Micá», núm. 1); no los levitas de ese nombre de días de Nehemías.
+summary: 'Hijo pequeño de Mefibóset cuando David acogió a su padre. Con él la familia de Saúl duró una generación más: sus
+  hijos fueron Pitón, Mélec, Tarea y Acaz.'
+reason: Perspicacia «Micá», núm. 1, y «Mefibóset», núm. 2; 2Sa 9:12.
+sources:
+- it-mica
+- it-mefiboset
+- 2-samuel-9
+links:
+- title: 'Perspicacia: «Micá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003031
+  type: perspicacia
+- title: 2 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/9
+  type: bible
+relations:
+- type: kin
+  person: mefiboset-hijo-de-jonatan
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-mica
+  reason: '2Sa 9:12: Mefibóset tenía un hijo pequeño llamado Micá.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- miqueas-de-efrain
+- miqueas-profeta

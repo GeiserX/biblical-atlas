@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoiada-padre-de-benaya
+name: Jehoiadá
+names:
+- name: Jehoiadá
+perspicacia: 1200002376#1
+disambiguation: El padre de Benaya, en tiempos de David; no su probable nieto, el consejero de David, ni el sumo sacerdote
+  que derrocó a Atalía.
+summary: 'Padre de Benaya, el jefe de keretitas y peletitas. Estaba ligado al sacerdocio: lo llaman sacerdote principal y
+  caudillo de los descendientes de Aarón, y estuvo en Hebrón cuando hicieron rey a David.'
+reason: Perspicacia «Jehoiadá», núm. 1; 2Sa 8:18; 1Cr 12:27; 27:5.
+sources:
+- it-jehoiada
+- 2-samuel-8
+- 2-samuel-20
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Jehoiadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002376
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified
+relations: []

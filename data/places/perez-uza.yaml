@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: perez-uza
+name: Pérez-Uzá
+names:
+- name: Pérez-Uzá
+  note: Significa «brecha de Uzá» (nota de 2Sa 6:8). Nombre que recibió la era tras la muerte de Uzá.
+- name: Era de Nacón
+  note: Nombre de la era en 2Sa 6:6.
+- name: Era de Kidón
+  note: Así la llama 1Cr 13:9. Perspicacia «Nacón» ve probable que un nombre sea el del sitio y el otro el de su dueño.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: En el camino de Quiryat-Jearim a Jerusalén
+  geometry:
+    type: zone
+    lat: 31.793
+    lon: 35.169
+    radius_km: 6.4
+  checked_on: '2026-09-29'
+  status: favored_level_1
+  sources:
+  - it-perez-uzah
+  - 2-samuel-6
+  - openbible-geo
+  reason: Perspicacia no conoce el sitio. 2Sa 6:2-8 pone la era en el camino del Arca hacia Jerusalén, antes de llegar.
+  coord_source: calculation
+  note: 'Centro: punto medio entre los puntos de OpenBible de Quiryat-Jearim y Jerusalén. Radio nuestro, la mitad de esa distancia.'
+summary: Era en el camino del Arca de Quiryat-Jearim a Jerusalén, donde Jehová mató a Uzá por sujetar el Arca. David la llamó
+  Pérez-Uzá. Hoy no se sabe dónde estaba.
+reason: 'Perspicacia «Pérez-uzah» y «Nacón»; 2Sa 6:6-8; 1Cr 13:9-11. Perspicacia no sitúa la era: sin punto, con una zona
+  calculada.'
+sources:
+- it-perez-uzah
+- it-nacon
+- openbible-geo
+- 2-samuel-6
+links:
+- title: 'Perspicacia: «Pérez-uzah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003439
+  type: perspicacia
+- title: 'Perspicacia: «Nacón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003158
+  type: perspicacia
+- title: 2 Samuel 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

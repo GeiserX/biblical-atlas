@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: toi-envia-a-joram-a-felicitar-a-david
+title: Toi de Hamat envía a su hijo Joram a felicitar a David
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 8009
+places:
+- hamat
+people:
+- toi
+- joram-hijo-de-toi
+- david
+present: []
+passages:
+- 2Sa 8:9-12
+- 1Cr 18:9-11
+summary: Al saber que David venció a Hadadézer, su enemigo, el rey Toi de Hamat le manda a su hijo Joram con felicitaciones
+  y objetos de plata, oro y cobre. David los dedica a Jehová con el botín de las naciones.
+reason: '2Sa 8:9-12; Perspicacia «Toi, Tou» y «Hamat». El texto no dice dónde recibió David a Joram: nadie queda situado en
+  Hamat. Tras el pacto (c. 1070) y antes de c. 1040.'
+sources:
+- 2-samuel-8
+- it-toi
+- it-hamat
+- it-joram
+- tnm-b7
+- si-3
+links:
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

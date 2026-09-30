@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mefiboset-sale-al-encuentro-de-david
+title: Mefibóset sale al encuentro del rey
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 19024
+places:
+- jerusalen
+people:
+- mefiboset-hijo-de-jonatan
+- david
+- ziba
+present: []
+passages:
+- 2Sa 19:24-30
+summary: Mefibóset, sin asearse desde la huida del rey, le explica que Zibá lo engañó y lo calumnió. David manda repartir
+  las tierras entre los dos, y Mefibóset renuncia a ellas.
+reason: '2Sa 19:24-30. La nota del v. 25 admite «de Jerusalén»: el sitio del encuentro es dudoso y nadie se sitúa. Fecha:
+  desde 1070 (estudio 3) hasta hacia 1040, final de 2 Samuel (tabla de los libros).'
+sources:
+- 2-samuel-19
+- it-mefiboset
+- it-ziba
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

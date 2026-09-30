@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nefeg-hijo-de-david
+name: Néfeg
+names:
+- name: Néfeg
+perspicacia: 1200003222#2
+disambiguation: Néfeg hijo de David (núm. 2 de Perspicacia); no el levita hijo de Izhar.
+distinct_from:
+- nefeg-hijo-de-izhar
+summary: Hijo de David nacido en Jerusalén. Solo sale en las listas de sus hijos.
+reason: 'Perspicacia «Néfeg», núm. 2; 2Sa 5:13-15. En Crónicas: 1Cr 3:7 y 14:6.'
+sources:
+- it-nefeg
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Néfeg»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003222
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

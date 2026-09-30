@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: combate-junto-al-estanque-de-gabaon
+title: Los hombres de David vencen a los de Abner junto al estanque de Gabaón
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 2012
+places:
+- gabaon
+- helcat-hazurim
+people:
+- abner
+- joab-hijo-de-zeruya
+passages:
+- 2Sa 2:12-17
+summary: Los de Abner y los de Joab se sientan a ambos lados del estanque de Gabaón. Doce de cada bando luchan y mueren todos
+  en Helcat-Hazurim; en la batalla que sigue vence el bando de David.
+reason: 2Sa 2:12-17; Perspicacia «Gabaón», «Joab», núm. 2, y «Helqat-hazurim». David es ungido en 1077 (estudio 3) e Is-Bóset
+  muere unos dos años después (Perspicacia «David», párr. 20).
+sources:
+- 2-samuel-2
+- it-gabaon
+- it-joab
+- it-helqat-hazurim
+- it-david
+- si-3
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 'Perspicacia: «Gabaón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001682
+  type: perspicacia
+- title: 'Perspicacia: «Joab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

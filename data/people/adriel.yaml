@@ -11,6 +11,7 @@ sources:
 - it-adriel
 - it-meholatita
 - 1-samuel-18
+- 2-samuel-21
 links:
 - title: 'Perspicacia: «Adriel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000121
@@ -46,6 +47,16 @@ relations:
   - 1-samuel-18
   - it-meholatita
   reason: El sobrenombre meholatita de 1Sa 18:19 indica, según Perspicacia «Meholatita», que casi seguro era natural de Abel-meholá.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: barzilai-meholatita
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-barzilai
+  reason: '2Sa 21:8: Adriel hijo de Barzilái el meholatita.'
   checked_on: '2026-09-29'
   status: verified
 checked_on: '2026-09-29'

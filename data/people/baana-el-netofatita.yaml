@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-el-netofatita
+name: Baaná
+names:
+- name: Baaná
+perspicacia: 1200000525#2
+disambiguation: Baaná el netofatita, padre de Héleb; no el hijo de Rimón que mató a Is-Bóset ni los comisarios de Salomón.
+summary: Netofatita, padre de Héleb, uno de los guerreros de David.
+reason: Perspicacia «Baanah», núm. 2; 2Sa 23:29.
+sources:
+- it-baanah
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Baanah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000525
+  type: perspicacia
+relations:
+- type: lived_in
+  place: netofa
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:29: Baaná el netofatita.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- baana-hijo-de-rimon

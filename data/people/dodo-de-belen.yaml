@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: dodo-de-belen
+name: Dodó
+names:
+- name: Dodó
+perspicacia: 1200001207#3
+disambiguation: Dodó de Belén, padre de Elhanán; no el benjaminita padre de Eleazar ni el antepasado de Tolá.
+distinct_from:
+- dodo-de-isacar
+- dodo-hijo-de-ahohi
+summary: Hombre de Belén, padre de Elhanán, que estuvo entre los treinta guerreros de David.
+reason: Perspicacia «Dodó», núm. 3; 2Sa 23:24.
+sources:
+- it-dodo
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Dodó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001207
+  type: perspicacia
+relations:
+- type: lived_in
+  place: belen
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - it-dodo
+  reason: '2Sa 23:24: Dodó de Belén; Perspicacia «Dodó», núm. 3.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

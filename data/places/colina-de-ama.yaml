@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: colina-de-ama
+name: Colina de Amá
+names:
+- name: Colina de Amá
+- name: Amá
+  note: Perspicacia le da, quizá, el sentido de «codo».
+type: mountain
+lat: 31.841047
+lon: 35.279535
+precision: uncertain
+coord_source: openbible:a8e4a15
+coord_url: https://www.openbible.info/geo/ancient/a8e4a15/ammah
+coord_note: OpenBible solo la pone en la región al este de Gabaón. Perspicacia la cree probablemente al este de la ciudad,
+  sin saber qué colina era.
+summary: Colina situada ante Guíah, camino del desierto de Gabaón. Allí se agruparon los benjaminitas con Abner, y este convenció
+  a Joab de que dejara de perseguirlos.
+reason: 'Perspicacia «Amá»; 2Sa 2:24-28. OpenBible: solo el punto.'
+sources:
+- it-ama
+- openbible-geo
+- 2-samuel-2
+links:
+- title: 'Perspicacia: «Amá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000232
+  type: perspicacia
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

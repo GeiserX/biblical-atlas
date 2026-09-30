@@ -1,0 +1,34 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rizpa
+name: Rizpá
+names:
+- name: Rizpá
+perspicacia: '1200003748'
+summary: Concubina de Saúl, hija de Ayá. Is-Bóset acusó a Abner de acostarse con ella. Años después veló durante meses los
+  cuerpos de sus dos hijos, ejecutados por los gabaonitas.
+reason: Perspicacia «Rizpá»; 2Sa 3:7.
+sources:
+- it-rizpa
+- 2-samuel-3
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Rizpá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003748
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+relations:
+- type: kin
+  person: aya-padre-de-rizpa
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-rizpa
+  - 2-samuel-21
+  reason: '2Sa 3:7: Rizpá, hija de Ayá.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

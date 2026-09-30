@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: desierto-de-gabaon
+name: Desierto de Gabaón
+names:
+- name: Desierto de Gabaón
+type: desert
+lat: 31.847451
+lon: 35.183351
+precision: zone
+coord_source: openbible:aede336
+coord_url: https://www.openbible.info/geo/ancient/aede336/gibeon
+coord_note: Punto de Gabaón en OpenBible, el mismo que la ficha de la ciudad; el desierto no tiene punto propio.
+summary: Tierra seca cercana a Gabaón. La colina de Amá quedaba en el camino hacia ella, y hacia el desierto se retiraron
+  los hombres de Abner tras su derrota.
+reason: '2Sa 2:24; Perspicacia «Amá» y «Abner», párr. 4. Punto de OpenBible de la ciudad: solo tomamos el punto.'
+sources:
+- it-ama
+- it-abner
+- openbible-geo
+- 2-samuel-2
+links:
+- title: 'Perspicacia: «Amá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000232
+  type: perspicacia
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

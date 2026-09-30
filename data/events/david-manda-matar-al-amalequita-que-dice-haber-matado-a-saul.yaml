@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-manda-matar-al-amalequita-que-dice-haber-matado-a-saul
+title: David manda matar al amalequita que dice haber matado a Saúl
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 1001
+places:
+- ziclag
+people:
+- david
+roles: {}
+passages:
+- 2Sa 1:1-16
+summary: Al tercer día de volver a Ziclag, llega un amalequita con la corona y el brazalete de Saúl y presume de haberlo rematado.
+  David y sus hombres lloran y ayunan; luego David ordena que lo maten.
+reason: '2Sa 1:1-16; Perspicacia «David», párr. 18: el amalequita mintió, porque Saúl se echó sobre su espada. No tiene nombre
+  ni ficha, así que su muerte no lleva papel. Saúl murió hacia 1078 (Perspicacia «Jonatán», núm. 2).'
+sources:
+- 2-samuel-1
+- it-david
+- it-saul
+- it-jonatan
+links:
+- title: 2 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/1
+  type: bible
+- title: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

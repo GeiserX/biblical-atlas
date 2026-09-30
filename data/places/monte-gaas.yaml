@@ -3,6 +3,8 @@ id: monte-gaas
 name: Monte Gaas
 names:
 - name: Monte Gaas
+- name: Valles torrenciales de Gaas
+  note: Barrancos junto al monte, tierra de Hidái (2Sa 23:30); así los entiende Perspicacia «Gaas».
 type: mountain
 lat: null
 lon: null
@@ -35,6 +37,7 @@ sources:
 - it-timnat-serah
 - josue-24
 - jueces-2
+- 2-samuel-23
 links:
 - title: 'Perspicacia: «Gaas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001579

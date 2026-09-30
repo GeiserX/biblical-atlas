@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joab-reprende-a-david-por-llorar-a-absalon
+title: Joab reprende a David por llorar a Absalón
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 19001
+places:
+- mahanaim
+people:
+- david
+- joab-hijo-de-zeruya
+present:
+- david
+- joab-hijo-de-zeruya
+passages:
+- 2Sa 19:1-8
+summary: La victoria se vuelve luto porque el rey llora a su hijo. Joab le echa en cara que avergüenza a quienes lo salvaron,
+  y David sale a sentarse a la puerta de la ciudad.
+reason: '2Sa 19:1-8. La ciudad es Mahanaim, donde estaba el rey (v. 32). Fecha: desde 1070 (estudio 3) hasta hacia 1040, final
+  de 2 Samuel (tabla de los libros).'
+sources:
+- 2-samuel-19
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

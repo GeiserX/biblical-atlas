@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amnon-viola-a-tamar
+title: Amnón viola a su medio hermana Tamar
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 13001
+places:
+- jerusalen
+people:
+- amnon-hijo-de-david
+- tamar-hija-de-david
+- jehonadab-hijo-de-simea
+- david
+- absalon
+passages:
+- 2Sa 13:1-22
+summary: Por consejo de Jehonadab, Amnón se finge enfermo y pide que Tamar le cocine. A solas la viola y luego la echa. Absalón
+  la acoge en su casa; David se enfurece y Absalón empieza a odiar a Amnón.
+reason: 'Sin año en las fuentes: entre el pacto con David, hacia 1070 según B7, y el final de 2 Samuel, c. 1040 (tabla de
+  libros). Pasa en la corte: Perspicacia «Absalón» dice que los hijos del rey volvieron a Jerusalén.'
+sources:
+- 2-samuel-13
+- it-amnon
+- it-tamar
+- it-absalon
+- tnm-b7
+- tnm-tabla
+links:
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+- title: 'Perspicacia: «Amnón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000242
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

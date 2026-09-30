@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: barzilai-el-galaadita
+name: Barzilái
+names:
+- name: Barzilái
+- name: Barzilai
+  note: Grafía de Perspicacia.
+perspicacia: 1200000572#2
+disambiguation: El galaadita rico de Roguelim que ayudó a David; no Barzilái el meholatita, padre de Adriel, ni el sacerdote
+  que tomó su nombre.
+distinct_from:
+- barzilai-meholatita
+summary: Galaadita rico de Roguelim. Con Sobí y Makir llevó víveres a David en Mahanaim durante la rebelión de Absalón. A
+  sus ochenta años lo despidió en el Jordán y no quiso vivir en la corte.
+reason: Perspicacia «Barzilai», núm. 2; 2Sa 17:27-29.
+sources:
+- it-barzilai
+- it-roguelim
+- 2-samuel-17
+- 2-samuel-19
+links:
+- title: 'Perspicacia: «Barzilai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000572
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: lived_in
+  place: roguelim
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-roguelim
+  - 2-samuel-19
+  reason: '2Sa 17:27: Barzilái el galaadita, de Roguelim.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: friend
+  inferred: true
+  sources:
+  - it-roguelim
+  - 2-samuel-17
+  - 2-samuel-19
+  reason: Perspicacia «Roguelim» lo llama amigo de David; en 2Sa 17:27-29 le lleva comida a Mahanaim.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

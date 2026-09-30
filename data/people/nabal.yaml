@@ -14,6 +14,8 @@ sources:
 - 1-samuel-25
 - 1-samuel-27
 - 1-samuel-30
+- 2-samuel-2
+- 2-samuel-3
 links:
 - title: 'Perspicacia: «Nabal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003155
@@ -34,6 +36,8 @@ relations:
   - 1-samuel-27
   - 1-samuel-30
   - it-nabal
+  - 2-samuel-2
+  - 2-samuel-3
   reason: '1Sa 25:3: su esposa se llamaba Abigaíl.'
   checked_on: '2026-09-29'
   status: verified
@@ -63,6 +67,8 @@ relations:
   sources:
   - 1-samuel-30
   - it-nabal
+  - 2-samuel-2
+  - 2-samuel-3
   reason: 1Sa 30:5 lo llama Nabal el carmelita. Según Perspicacia «Nabal», sus ovejas pastaban en Carmelo de Judá y allí se
     esquilaban.
   checked_on: '2026-09-29'

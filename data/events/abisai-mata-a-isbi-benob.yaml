@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abisai-mata-a-isbi-benob
+title: Abisái mata a Isbí-Benob y salva a David
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: últimos sucesos del reinado de David)'
+narrative_order:
+  series: 2-samuel
+  order: 21015
+places: []
+present: []
+people:
+- isbi-benob
+- abisai
+- david
+roles:
+  isbi-benob: died
+passages:
+- 2Sa 21:15-17
+summary: En otra guerra con los filisteos, David se agota y el gigante Isbí-Benob intenta matarlo. Abisái lo salva y mata
+  al gigante; sus hombres juran que el rey no volverá a salir a la batalla.
+reason: '2Sa 21:15-17; Perspicacia «Isbí-benob». Sin lugar en el texto. Fecha: últimos sucesos del reinado, ya en Jerusalén
+  (1070), según Perspicacia «Samuel, Libros de»; 2 Samuel acaba c. 1040.'
+sources:
+- 2-samuel-21
+- it-isbi-benob
+- it-refaim
+- it-samuel-libros
+- tnm-b7
+- tnm-tabla
+- si-3
+links:
+- title: 2 Samuel 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

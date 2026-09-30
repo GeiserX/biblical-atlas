@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: baal-perazim
+name: Baal-Perazim
+names:
+- name: Baal-Perazim
+  note: Significa «amo de las brechas» (nota de 2Sa 5:20). David le dio el nombre tras la victoria.
+- name: Monte Perazim
+  note: Perspicacia «Baal-perazim» supone que es el monte Perazim de Is 28:21, que recuerda esta victoria.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Sheikh Bedr, al oeste-noroeste del monte del templo
+  geometry:
+    type: point
+    lat: 31.785217
+    lon: 35.204735
+  status: favored_level_1
+  sources:
+  - it-baal-perazim
+  - openbible-geo
+  reason: 'Perspicacia «Baal-perazim», párr. 3: por Is 28:21 y la huida hacia Gabaón y Guézer, algunos lo ponen al noroeste,
+    quizá en Sheikh Bedr. Punto de OpenBible.'
+  coord_source: openbible:a6bf059
+  coord_url: https://www.openbible.info/geo/ancient/a6bf059/baal-perazim
+  checked_on: '2026-09-29'
+- name: Junto a la llanura baja de Refaím
+  geometry:
+    type: zone
+    lat: 31.763203
+    lon: 35.219122
+    radius_km: 3
+  status: alternative
+  sources:
+  - it-baal-perazim
+  - openbible-geo
+  reason: 'Perspicacia «Baal-perazim», párr. 3: otros eruditos lo sitúan cerca de ese valle, al suroeste del monte del templo.'
+  note: 'Centro: el punto de OpenBible del valle de Refaím. Radio nuestro.'
+  coord_source: calculation
+  checked_on: '2026-09-29'
+summary: Lugar cercano a Jerusalén donde David venció a los filisteos, que dejaron allí sus ídolos. Lo llamó así porque Jehová
+  abrió brecha en el enemigo como la abren las aguas.
+reason: 'Perspicacia «Baal-perazim», párr. 1 y 3; 2Sa 5:17-21; 1Cr 14:11. No se sabe el sitio: dos candidatos.'
+sources:
+- it-baal-perazim
+- openbible-geo
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Baal-perazim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000519
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified
