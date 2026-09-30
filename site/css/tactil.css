@@ -75,8 +75,6 @@
   /* Menús: una fila de 44 px por opción; el − y el + de la velocidad, de 44 × 44. */
   .menu-fila, .estudio-menu button { min-height: 44px; }
   .vel-boton { width: 44px; height: 44px; }
-  /* La fecha que se escribe ocupa toda la caja de la fecha. */
-  .fecha-entrada { inset: -1px; width: calc(100% + 2px); }
   /* Sincronía: filas de 44 px, con la barra en medio y su zona de toque de alto a alto. */
   .sinc-fila { min-height: 44px; }
   .sinc-fila:not(.sinc-eje) .sinc-barra, .sinc-fila:not(.sinc-eje) .sinc-rombo { top: 12px; }
