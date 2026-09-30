@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: hena
+name: Hená
+names:
+- name: Hená
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Aná, en el Éufrates medio
+  geometry:
+    type: point
+    lat: 34.368611
+    lon: 41.981944
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hena
+  - openbible-geo
+  reason: 'Perspicacia «Hená»: la Versión de los Setenta pone Aná, una población a orillas del Éufrates, en su tramo central.'
+  note: Punto de OpenBible en Anah, la primera identificación de su ficha.
+  coord_source: openbible:aab9a5e
+  coord_url: https://www.openbible.info/geo/ancient/aab9a5e/hena
+- name: En Siria, cerca de Hamat
+  geometry:
+    type: zone
+    lat: 35.1365
+    lon: 36.75
+    radius_km: 75
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hena
+  - openbible-geo
+  reason: Perspicacia «Hená» recoge que varios estudiosos prefieren poner Hená, Sefarvaim e Ivá en Siria.
+  note: Zona de la segunda identificación de OpenBible, a menos de 75 km de Hamat, con centro en su punto de Hama.
+  coord_source: openbible:aab9a5e
+  coord_url: https://www.openbible.info/geo/ancient/aab9a5e/hena
+summary: Ciudad o región que los asirios conquistaron y que Senaquerib nombró junto a Sefarvaim e Ivá para asustar a Ezequías.
+  No se sabe si estaba en el Éufrates medio o en Siria.
+reason: Perspicacia «Hená»; Is 37:13; 2Re 18:34; 19:13. Dos candidatos, porque Perspicacia no elige entre ellos.
+sources:
+- it-hena
+- openbible-geo
+- isaias-37
+links:
+- title: 'Perspicacia: «Hená»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001986
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified

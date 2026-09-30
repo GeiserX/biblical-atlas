@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gozan
+name: Gozán
+names:
+- name: Gozán
+type: region
+lat: 36.826785
+lon: 40.03967
+precision: uncertain
+coord_source: openbible:a924b16
+coord_url: https://www.openbible.info/geo/ancient/a924b16/gozan
+coord_note: Punto de OpenBible en Tell Halaf, junto al alto Jabur. Perspicacia recoge que muchos eruditos ligan Gozán a la
+  Guzana asiria, que se suele poner allí, pero no lo da por seguro.
+summary: Tierra del norte de Mesopotamia cuyos habitantes vencieron los reyes de Asiria, según presumió Senaquerib ante Ezequías.
+  En los relatos del destierro de Israel, el mismo nombre parece ser el de un río.
+reason: 'Perspicacia «Gozán», párr. 1 y 2; Is 37:12; 2Re 19:12. Allí es más que una ciudad, porque sus habitantes cuentan
+  entre las naciones vencidas. OpenBible: solo el punto.'
+not_claimed:
+- 'Dónde corría el río Gozán de 2Re 17:6: Perspicacia menciona el Qezel Ouzan, en el noroeste de Irán, y otra opinión que
+  lo pone en Mesopotamia.'
+sources:
+- it-gozan
+- openbible-geo
+- isaias-37
+links:
+- title: 'Perspicacia: «Gozán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001751
+  type: perspicacia
+- title: Isaías 37 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
+  type: bible
+checked_on: '2026-09-30'
+status: verified

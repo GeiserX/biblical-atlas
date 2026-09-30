@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: quir-de-moab
+name: Quir de Moab
+names:
+- name: Quir de Moab
+- name: Quir-Haréset
+  note: Así la llama Is 16:7, 11. Perspicacia la da por otro nombre de la misma ciudad, como hace el Targum, y «Profecía de
+    Isaías» escribe Quir o Quir-haréset.
+type: city
+lat: 31.180556
+lon: 35.701389
+precision: point
+coord_source: openbible:a1a57d0
+coord_url: https://www.openbible.info/geo/ancient/a1a57d0/kir-2
+coord_note: Punto de OpenBible en Karak, con que se suele identificar la ciudad. Es el mismo punto que representa a todo Moab.
+summary: Ciudad principal de Moab, quizá su antigua capital, que se suele identificar con Karak, en una meseta unos 35 km
+  al sur de Dibón. Isaías anuncia que quedará en silencio y que Moab llorará por sus tortas de pasas.
+reason: 'Perspicacia «Quir de Moab» y «Quir-haréset»; Is 15:1; 16:7, 11. «Profecía de Isaías», cap. 15, párr. 10. OpenBible:
+  solo el punto.'
+not_claimed:
+- 'Que sea la Quir adonde fueron desterrados los arameos (Am 1:5; 9:7): Perspicacia la trata en otro artículo.'
+sources:
+- it-quir-de-moab
+- it-quir-hareset
+- ip1-15
+- openbible-geo
+- isaias-15
+- isaias-16
+links:
+- title: 'Perspicacia: «Quir de Moab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002630
+  type: perspicacia
+- title: 'Perspicacia: «Quir-haréset»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002620
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+- title: Isaías 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/16
+  type: bible
+checked_on: '2026-09-30'
+status: verified

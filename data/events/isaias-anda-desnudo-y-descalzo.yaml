@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anda-desnudo-y-descalzo
+title: Isaías anda desnudo y descalzo como señal
+date:
+  from: -739
+  to: -728
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 740 y 729 a.e.c. (tiempo narrativo: empieza el año en que cae Asdod y dura tres años)'
+narrative_order:
+  series: isaias
+  order: 20002
+places:
+- egipto
+- etiopia
+people:
+- isaias
+present: []
+passages:
+- Is 20:2-6
+summary: 'Jehová manda a Isaías quitarse la tela de saco y las sandalias, y él anda así tres años. Es un aviso: Asiria llevará
+  cautivos a egipcios y etíopes, y confiar en ellos no salvará a nadie.'
+reason: Is 20:2 lo sitúa cuando cae Asdod; el v. 3 da los tres años. No dice dónde anduvo; Egipto y Etiopía son a quienes
+  apunta la señal. La profecía de Isaías cree que quizá solo se quitó la prenda exterior.
+sources:
+- isaias-20
+- ip1-16
+- si-isaias
+- it-sargon
+- si-3
+links:
+- title: Isaías 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/20
+  type: bible
+checked_on: '2026-09-30'
+status: verified

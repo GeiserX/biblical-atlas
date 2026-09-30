@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-la-desolacion-de-moab
+title: Isaías anuncia la desolación de Moab
+date:
+  from: -745
+  to: -745
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 746 a.e.c.
+narrative_order:
+  series: isaias
+  order: 15001
+places:
+- moab
+people:
+- isaias
+present: []
+passages:
+- Is 15:1-16:14
+summary: 'Isaías anuncia la ruina de Moab: sus ciudades lloran, los fugitivos huyen hacia el sur y se secan las viñas de Sibmá
+  y Jazer. En tres años su gloria caería. Promete también un trono firme en la tienda de David.'
+reason: Perspicacia «Moab, moabitas», apartado «Moab en la profecía», pone Is 15 y 16 hacia la muerte de Acaz, que «Isaías,
+  Libro de» fecha en 746. El texto no dice dónde habló el profeta.
+sources:
+- isaias-15
+- isaias-16
+- it-moab
+- it-isaias-libro
+- ip1-15
+- si-3
+links:
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+- title: Isaías 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/16
+  type: bible
+- title: 'Perspicacia: «Moab, moabitas»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003097
+  type: perspicacia
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

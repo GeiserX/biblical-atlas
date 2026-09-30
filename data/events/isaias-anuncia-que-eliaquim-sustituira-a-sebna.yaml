@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-que-eliaquim-sustituira-a-sebna
+title: Isaías anuncia que Eliaquim sustituirá a Sebná
+date:
+  from: -745
+  to: -731
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: '746-732 a.e.c. (tiempo narrativo: en el reinado de Ezequías, antes de que Senaquerib amenazara Jerusalén)'
+narrative_order:
+  series: isaias
+  order: 22015
+places:
+- jerusalen
+people:
+- isaias
+- sebna
+- eliaquim-hijo-de-hilquias
+present: []
+passages:
+- Is 22:15-25
+summary: 'Jehová manda a Isaías reprender a Sebná, mayordomo de la casa real, por labrarse un sepulcro de lujo: perderá el
+  puesto, y Eliaquim hijo de Hilquías recibirá su túnica, su autoridad y la llave de la casa real de David.'
+reason: 'Perspicacia «Sebná» y «Eliaquim»: sirvieron a Ezequías (reinó desde 746, tabla A6-B), y en 732, cuando llegó Rabsaqué,
+  Eliaquim ya era mayordomo. El texto no dice dónde habló Isaías.'
+sources:
+- isaias-22
+- it-sebna
+- it-eliaquim
+- ip1-18
+- tnm-a6-b
+links:
+- title: Isaías 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/22
+  type: bible
+- title: 'Perspicacia: «Sebná, Sebnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

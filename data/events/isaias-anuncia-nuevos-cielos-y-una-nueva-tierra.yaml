@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-nuevos-cielos-y-una-nueva-tierra
+title: Isaías anuncia nuevos cielos y una nueva tierra
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras el aviso a Ezequías sobre Babilonia, en su reinado)'
+narrative_order:
+  series: isaias
+  order: 65001
+places:
+- jerusalen
+- llanura-de-saron
+- valle-de-acor
+- tarsis
+- pul
+- lud
+- tubal
+- grecia
+people:
+- isaias
+present: []
+passages:
+- Is 65:1-66:24
+summary: 'Jehová anuncia castigo para quienes lo dejan por otros dioses y bendición para sus siervos: creará nuevos cielos
+  y una nueva tierra, alegrará a Jerusalén, hará nacer a Sion de golpe y enviará mensajeros a naciones lejanas.'
+reason: '«Toda Escritura», libro 23, párr. 32 y 33, agrupa Is 65:1-66:24, escrito tras avisar a Ezequías (ip-1, cap. 30,
+  párr. 3). Perspicacia «Isaías» cierra su obra poco después de 732; 716 (fin de Ezequías, A6-B) solo es el tope.'
+sources:
+- isaias-65
+- isaias-66
+- si-isaias
+- it-isaias
+- ip1-30
+- it-merodac-baladan
+- tnm-a6-b
+- it-isaias-libro
+- ip2-26
+- ip2-27
+- ip2-28
+links:
+- title: Isaías 65 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/65
+  type: bible
+- title: Isaías 66 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/66
+  type: bible
+checked_on: '2026-09-30'
+status: verified

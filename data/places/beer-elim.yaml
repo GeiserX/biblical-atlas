@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: beer-elim
+name: Beer-Elim
+names:
+- name: Beer-Elim
+  note: Perspicacia lo traduce como pozo de los árboles grandes.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Wadi Thamad, al norte del Arnón
+  geometry:
+    type: point
+    lat: 31.571944
+    lon: 35.893333
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-beer-elim
+  - it-beer
+  - openbible-geo
+  reason: Muchos estudiosos lo relacionan con el Beer de Nú 21:16, que Perspicacia sitúa probablemente en Wadi Thamad.
+  coord_source: openbible:ac401ea
+  coord_url: https://www.openbible.info/geo/ancient/ac401ea/beer-elim
+summary: Lugar de Moab hasta donde llega el llanto por la desolación del país (Is 15:8). No se sabe dónde estaba.
+reason: 'Perspicacia «Beer-elim» y «Beer», núm. 1; Is 15:8. OpenBible: solo el punto.'
+not_claimed:
+- 'Que Beer-Elim sea el Beer de Nú 21:16: muchos lo creen, pero Perspicacia no lo afirma.'
+sources:
+- it-beer-elim
+- it-beer
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Beer-elim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000609
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

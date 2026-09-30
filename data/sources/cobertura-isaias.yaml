@@ -1,0 +1,820 @@
+# biblical-earth: fuentes de la cobertura de isaias. Esquema en docs/investigacion/README.md.
+it-amoz:
+  title: Amoz
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000248
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-isaias-libro:
+  title: Isaías, Libro de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+si-isaias:
+  title: 'Libro bíblico número 23: Isaías'
+  work: “Toda Escritura es inspirada de Dios y provechosa”
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1101990084
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-1:
+  title: Un profeta de antaño con un mensaje actual
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000021
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-2:
+  title: Un padre con hijos rebeldes
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000022
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-3:
+  title: “Enderecemos los asuntos”
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000023
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-5:
+  title: Jehová humilla a los que se ensalzan
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000025
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-7:
+  title: ¡Ay de la viña infiel!
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000027
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-4:
+  title: Se alza la casa de Jehová
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000024
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-6:
+  title: Jehová Dios tiene misericordia de un resto
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000026
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-8:
+  title: Jehová Dios está en su santo templo
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000028
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-serafines:
+  title: Serafines
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003905
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-9:
+  title: Confianza en Jehová frente a la adversidad
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000029
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-tabeel:
+  title: Tabeel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004293
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-rezin:
+  title: Rezín
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003721
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-remalias:
+  title: Remalías
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003688
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sear-jasub:
+  title: Sear-jasub
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003969
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-emmanuel:
+  title: Emmanuel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002152
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-campo-del-lavandero:
+  title: Campo del lavandero
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002692
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-estanque:
+  title: Estanque
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003522
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-13:
+  title: El reinado del Mesías, tiempo de salvación y regocijo
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000033
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-maher-salal-has-baz:
+  title: Maher-salal-has-baz
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002848
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-uriya:
+  title: Uriya
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004523
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-jeberekias:
+  title: Jeberekías
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002351
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-siloe:
+  title: Siloé
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004038
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-calno:
+  title: Calnó
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000869
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-arpad:
+  title: Arpad
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000385
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-laisa:
+  title: Laisa
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002668
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-madmena:
+  title: Madmená
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002826
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-guebim:
+  title: Guebim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001630
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-patros:
+  title: Patrós
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003400
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-resplandeciente:
+  title: Resplandeciente
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004061
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-montana-de-reunion:
+  title: Montaña de reunión
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003126
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-14:
+  title: Jehová humilla a una ciudad arrogante
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000034
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-15:
+  title: El consejo de Jehová contra las naciones
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000035
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-17:
+  title: ‘¡Babilonia ha caído!’
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000037
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-19:
+  title: Jehová profana el orgullo de Tiro
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000039
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-quir-de-moab:
+  title: Quir de Moab
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002630
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-quir-hareset:
+  title: Quir-haréset
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002620
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-eglat-selisiya:
+  title: Eglat-selisiyá
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001263
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-luhit:
+  title: Luhit
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002789
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-horonaim:
+  title: Horonaim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002081
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-nimrim:
+  title: Nimrim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003258
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-eglaim:
+  title: Eglaim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001262
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-beer-elim:
+  title: Beer-elim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000609
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-dimon:
+  title: Dimón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001180
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sargon:
+  title: Sargón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003842
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-tartan:
+  title: Tartán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004328
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-16:
+  title: Acudamos a Jehová en busca de guía y protección
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000036
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-18:
+  title: Lecciones que extraemos de la infidelidad
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000038
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sebna:
+  title: Sebná, Sebnah
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-hilquias:
+  title: Hilquías
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002026
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-casa-del-bosque-del-libano:
+  title: Casa del Bosque del Líbano
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002096
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-20:
+  title: Jehová es Rey
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000040
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+w06-isaias-1:
+  title: Puntos sobresalientes del libro de Isaías (parte 1)
+  work: La Atalaya (1 de diciembre de 2006)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2006882
+  level: 1
+  published: 2006
+  checked_on: '2026-09-30'
+ip1-21:
+  title: La mano de Jehová llega a estar elevada
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000041
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-22:
+  title: Isaías predice el ‘hecho extraño’ de Jehová
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000042
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-piedra-angular:
+  title: Piedra angular
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001043
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-perazim-monte:
+  title: Perazim, Monte
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003435
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-23:
+  title: Mantengámonos en expectativa de Jehová
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000043
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-24:
+  title: Ninguna ayuda de este mundo
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000044
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-25:
+  title: El rey y sus príncipes
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000045
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-26:
+  title: '“Ningún residente dirá: ‘Estoy enfermo’”'
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000046
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-27:
+  title: La indignación de Jehová se abate sobre las naciones
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000047
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-ariel:
+  title: Ariel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000361
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-hanes:
+  title: Hanés
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001859
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-ofel:
+  title: Ofel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003335
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-28:
+  title: ¡Se restaura el Paraíso!
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000048
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-29:
+  title: Un rey ve recompensada su fe
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000049
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-joah:
+  title: Joah
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002470
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-tirhaqa:
+  title: Tirhaqá
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004422
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sefarvaim:
+  title: Sefarvaim
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003901
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-rabsaque:
+  title: Rabsaqué
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003618
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-esar-hadon:
+  title: Esar-hadón
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001416
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-adramelec:
+  title: Adramélec
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000118
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-gozan:
+  title: Gozán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001751
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-rezef:
+  title: Rézef
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003720
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-tel-asar:
+  title: Tel-asar
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004350
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-hena:
+  title: Hená
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001986
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-iva:
+  title: Ivá
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002248
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sol:
+  title: Sol
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004260
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-merodac-baladan:
+  title: Merodac-baladán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003002
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-baladan:
+  title: Baladán
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000544
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip1-30:
+  title: “Consuelen a mi pueblo”
+  work: Las profecías de Isaías, una luz para toda la humanidad I
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102000050
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-2:
+  title: Confortadoras palabras proféticas que nos conciernen
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001022
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-3:
+  title: “Mi escogido, a quien mi alma ha aprobado”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001023
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-4:
+  title: “Ustedes son mis testigos”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001024
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+w07-isaias-2:
+  title: Puntos sobresalientes del libro de Isaías (parte 2)
+  work: La Atalaya (15 de enero de 2007)
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/2007042
+  level: 1
+  published: 2007
+  checked_on: '2026-09-30'
+ip2-5:
+  title: El Dios verdadero predice liberación
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001025
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-jesurun:
+  title: Jesurún
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002447
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-6:
+  title: Jehová, “un Dios justo y un Salvador”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001026
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-astrologos:
+  title: Astrólogos
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000448
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-8:
+  title: El anuncio del fin catastrófico de la religión falsa
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001028
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-9:
+  title: Jehová nos enseña para nuestro bien
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001029
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-7:
+  title: Se adora a Jehová de nuevo
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001027
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-bel:
+  title: Bel
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000621
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-10:
+  title: “Tiempo de buena voluntad”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001030
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-sinim:
+  title: Sinim, País de
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004139
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-11:
+  title: “No cifren su confianza en nobles”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001031
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-12:
+  title: Consuelo para el pueblo de Dios
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001032
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-13:
+  title: ¡“Clamen gozosamente a una”!
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001033
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-14:
+  title: Jehová ensalza a su Siervo Mesiánico
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001034
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-15:
+  title: La mujer estéril se regocija
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001035
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-16:
+  title: Mensaje de esperanza para los desalentados cautivos
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001036
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-17:
+  title: Extranjeros reunidos en la casa de oración de Dios
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001037
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-18:
+  title: Jehová revivifica el espíritu de los humildes
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001038
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-19:
+  title: Denuncia de la hipocresía
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001039
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-20:
+  title: “La mano de Jehová no se ha acortado”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001040
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-21:
+  title: La expansión mundial de la adoración verdadera
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001041
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-22:
+  title: La justicia brota en Sión
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001042
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-23:
+  title: “Un nombre nuevo”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001043
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-24:
+  title: Jehová se hace un nombre hermoso
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001044
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-25:
+  title: Oración de arrepentimiento
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001045
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-26:
+  title: “Estén gozosos para siempre en lo que voy a crear”
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001046
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-27:
+  title: Jehová bendice la adoración pura
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001047
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+ip2-28:
+  title: Luz para las naciones
+  work: Las profecías de Isaías, una luz para toda la humanidad II
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1102001048
+  level: 1
+  published: null
+  checked_on: '2026-09-30'
+it-pul:
+  title: Pul
+  work: Perspicacia para comprender las Escrituras
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003579
+  level: 1
+  published: null
+  checked_on: '2026-09-30'

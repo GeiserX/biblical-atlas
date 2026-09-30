@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mensajeros-de-babilonia-visitan-a-ezequias
+title: Mensajeros de Babilonia visitan a Ezequías
+date:
+  from: -731
+  to: -731
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 732 a.e.c.
+narrative_order:
+  series: isaias
+  order: 39001
+places:
+- jerusalen
+people:
+- ezequias
+- merodac-baladan
+- isaias
+present:
+- ezequias
+- isaias
+passages:
+- Is 39:1-8
+- 2Re 20:12-19
+summary: Merodac-Baladán, rey de Babilonia, envía cartas y un regalo a Ezequías al saber que sanó. El rey enseña a los mensajeros
+  todos sus tesoros, e Isaías le anuncia que todo irá a Babilonia, y algunos de sus hijos también.
+reason: 'Perspicacia «Merodac-baladán» pone la visita en el año 14 de Ezequías (732 a.e.c.) o poco después. Merodac-Baladán
+  no va en present: envió a sus mensajeros desde Babilonia.'
+sources:
+- isaias-39
+- it-merodac-baladan
+- it-ezequias
+- ip1-29
+- 2-reyes-20
+links:
+- title: Isaías 39 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/39
+  type: bible
+- title: 'Perspicacia: «Merodac-baladán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003002
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

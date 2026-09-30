@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-sale-al-encuentro-de-acaz
+title: Isaías sale al encuentro de Acaz junto al campo del lavandero
+date:
+  from: -761
+  to: -758
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 762-759 a.e.c.
+narrative_order:
+  series: isaias
+  order: 7003
+places:
+- campo-del-lavandero
+- jerusalen
+people:
+- isaias
+- sear-jasub
+- acaz
+type: speech
+roles:
+  isaias: spoke
+present:
+- isaias
+- sear-jasub
+- acaz
+passages:
+- Is 7:3-25
+summary: Con Siria e Israel en guerra contra Judá, Isaías y su hijo Sear-Jasub encuentran a Acaz fuera de la muralla. Le dice
+  que no tema; el rey rehúsa pedir una señal, y Jehová da la de Emmanuel.
+reason: Perspicacia «Tabeel», núm. 1, fecha el plan de Is 7:5, 6 en los años 762-759 a.e.c. ip-1, cap. 9, párr. 6 y 10, sitúa
+  a Acaz fuera de la muralla y sigue la conversación hasta el v. 25.
+sources:
+- isaias-7
+- it-tabeel
+- it-campo-del-lavandero
+- ip1-9
+- it-isaias-libro
+links:
+- title: Isaías 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/7
+  type: bible
+- title: 'Perspicacia: «Tabeel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004293
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

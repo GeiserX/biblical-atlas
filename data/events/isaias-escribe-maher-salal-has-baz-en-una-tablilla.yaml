@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-escribe-maher-salal-has-baz-en-una-tablilla
+title: Isaías escribe Maher-Salal-Has-Baz en una tablilla ante testigos
+date:
+  from: -761
+  to: -758
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 759 a.e.c. (tiempo narrativo: durante el asedio de Rezín y Pécah)'
+narrative_order:
+  series: isaias
+  order: 8001
+places: []
+people:
+- isaias
+- uriya-sacerdote-de-acaz
+- zacarias-hijo-de-jeberekias
+present: []
+passages:
+- Is 8:1, 2
+summary: Por orden de Jehová, Isaías escribe Maher-Salal-Has-Baz en una tablilla grande, y dos testigos, Urías, que era sacerdote,
+  y Zacarías, hijo de Jeberekías, dan fe. El niño aún no ha sido concebido.
+reason: 'ip-1, cap. 9, párr. 23: la coalición aún sitiaba Jerusalén; Perspicacia «Tabeel» fecha ese intento en los años 762-759.
+  Según Perspicacia «Isaías», el nombre se dio antes de la concepción. El texto no dice dónde.'
+sources:
+- isaias-8
+- ip1-9
+- it-tabeel
+- it-isaias
+- it-maher-salal-has-baz
+links:
+- title: Isaías 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/8
+  type: bible
+- title: 'Perspicacia: «Maher-salal-has-baz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002848
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

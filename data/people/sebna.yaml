@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sebna
+name: Sebná
+names:
+- name: Sebná
+perspicacia: '1200003975'
+summary: Mayordomo de la casa real en tiempos de Ezequías. Isaías le anunció que perdería el puesto por labrarse un sepulcro
+  llamativo; en 732 a.e.c. seguía sirviendo al rey como secretario.
+reason: Perspicacia «Sebná, Sebnah»; Is 22:15-19; 2Re 18:18, 37; Is 36:3.
+not_claimed:
+- 'Que Sebná muriera desterrado: el libro de Isaías dice que no consta cómo se cumplió Is 22:18.'
+sources:
+- it-sebna
+- isaias-22
+- ip1-18
+- isaias-36
+- ip1-29
+- isaias-37
+links:
+- title: 'Perspicacia: «Sebná, Sebnah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
+  type: perspicacia
+relations:
+- type: tie
+  person: ezequias
+  word: master
+  inferred: false
+  sources:
+  - it-sebna
+  - isaias-22
+  - isaias-36
+  - isaias-37
+  reason: 'Is 37:2, 5: Ezequías lo envía a Isaías, y el texto lo cuenta entre los siervos del rey. Perspicacia lo llama oficial
+    de Ezequías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - isaias-22
+  - ip1-18
+  - isaias-36
+  - ip1-29
+  reason: 'Is 22:15, 16: estaba sobre la casa real y se labraba allí su sepulcro; el libro de Isaías sitúa esa tumba en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

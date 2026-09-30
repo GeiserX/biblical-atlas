@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeberekias
+name: Jeberekías
+names:
+- name: Jeberekías
+perspicacia: '1200002351'
+summary: Padre de Zacarías, uno de los dos testigos fieles que confirmaron lo que Isaías escribió en una tablilla grande.
+reason: Perspicacia «Jeberekías»; Is 8:2.
+sources:
+- it-jeberekias
+- isaias-8
+links:
+- title: 'Perspicacia: «Jeberekías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002351
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

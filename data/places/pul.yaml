@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: pul
+name: Pul
+names:
+- name: Pul
+  note: La Septuaginta lee Put. Perspicacia se queda con Pul, la forma que traen el texto masorético, el rollo de Isaías hallado
+    en Qumrán y la Peshitta.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates: []
+summary: País o pueblo lejano que solo nombra Is 66:19, junto a Tarsis y Lud, entre las naciones adonde Jehová enviaría a
+  proclamar su gloria. Parece que destacaba por sus arqueros. No se sabe dónde estaba.
+reason: Perspicacia «Pul», núm. 2; Is 66:19. Ni jw.org ni OpenBible le dan un sitio, así que queda sin punto.
+not_claimed:
+- 'Que Pul sea Put: la Septuaginta lo lee así, pero Perspicacia se queda con Pul, la lectura del texto hebreo.'
+- 'Que Pul sea la isla de Filé, en el Nilo: Perspicacia solo recoge que algunos eruditos lo creen.'
+- 'Que tenga que ver con Pul, el rey asirio Tiglat-piléser III: Perspicacia los trata como dos entradas distintas.'
+sources:
+- it-pul
+- isaias-66
+links:
+- title: 'Perspicacia: «Pul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003579
+  type: perspicacia
+- title: Isaías 66 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/66
+  type: bible
+checked_on: '2026-09-30'
+status: pending

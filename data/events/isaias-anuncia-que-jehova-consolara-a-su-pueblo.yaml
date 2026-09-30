@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-que-jehova-consolara-a-su-pueblo
+title: Isaías anuncia que Jehová consolará a su pueblo
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras el aviso a Ezequías sobre Babilonia, en su reinado)'
+narrative_order:
+  series: isaias
+  order: 40001
+places:
+- jerusalen
+- babilonia
+- juda
+people:
+- isaias
+present: []
+passages:
+- Is 40:1-44:28
+summary: 'Mensaje de consuelo para los que irán desterrados a Babilonia: su culpa quedará saldada y Jehová, Creador sin igual,
+  les abrirá el camino de vuelta. Jerusalén volverá a poblarse y su templo se reconstruirá.'
+reason: '«Toda Escritura», libro 23, párr. 24, agrupa Is 40:1-44:28; ip-1, cap. 30, párr. 3, la pone tras avisar a Ezequías
+  del destierro. Perspicacia «Isaías» cierra su obra poco después de 732; 716 (fin de Ezequías, A6-B) solo es el tope.'
+sources:
+- isaias-40
+- si-isaias
+- ip1-30
+- it-merodac-baladan
+- tnm-a6-b
+- it-isaias-libro
+- isaias-41
+- isaias-42
+- it-isaias
+- ip2-2
+- ip2-3
+- isaias-43
+- ip2-4
+- w07-isaias-2
+- isaias-44
+- ip2-5
+- it-jesurun
+links:
+- title: Isaías 40 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/40
+  type: bible
+- title: Isaías 41 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/41
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,72 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-desolaciones-a-las-naciones
+title: Isaías anuncia la desolación de las naciones
+date:
+  from: -777
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 778 y 716 a.e.c. (tiempo narrativo: durante la obra de Isaías)'
+narrative_order:
+  series: isaias
+  order: 14027
+places:
+- filistea
+- moab
+- damasco
+- etiopia
+- egipto
+- babilonia
+- edom
+- arabia
+- jerusalen
+- tiro
+- sidon
+- fenicia
+- tarsis
+- chipre
+people:
+- isaias
+present: []
+passages:
+- Is 14:28-23:18
+summary: 'Isaías anuncia juicios de Jehová contra los pueblos vecinos: Filistea, Moab, Damasco, Etiopía y Egipto, Babilonia,
+  Edom, las tribus árabes y Tiro, y también contra la Jerusalén que confía en sus defensas y no en Dios.'
+reason: «Toda Escritura», libro 23, párr. 15 y 16, agrupa Is 14:28-23:18. Is 14:28 es de 746, pero el mensaje contra Damasco
+  precede a su caída, en días de Acaz. El resto no lleva fecha; el libro acaba con Ezequías (716).
+sources:
+- isaias-21
+- isaias-22
+- si-isaias
+- tnm-a6-b
+- tnm-tabla
+- it-isaias
+- isaias-23
+- it-isaias-libro
+- it-tiro
+- ip1-19
+- isaias-14
+- isaias-15
+- isaias-16
+- isaias-17
+- isaias-18
+- isaias-19
+- isaias-20
+- ip1-15
+- ip1-16
+- ip1-17
+- ip1-18
+links:
+- title: Isaías 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/21
+  type: bible
+- title: Isaías 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/23
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

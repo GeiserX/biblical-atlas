@@ -1,0 +1,64 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-la-venganza-sobre-babilonia
+title: Isaías anuncia la venganza sobre Babilonia
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras el aviso a Ezequías sobre Babilonia, en su reinado)'
+narrative_order:
+  series: isaias
+  order: 45001
+places:
+- babilonia
+- jerusalen
+- caldea
+people:
+- isaias
+present: []
+passages:
+- Is 45:1-48:22
+summary: Jehová anuncia que Ciro, su ungido, tomará Babilonia y soltará a los desterrados para reconstruir Jerusalén. Bel
+  y Nebo caerán con la ciudad, que acabará humillada, y a Israel le reprocha su terquedad.
+reason: '«Toda Escritura», libro 23, párr. 25, agrupa Is 45:1-48:22; ip-1, cap. 30, párr. 3, la pone tras avisar a Ezequías
+  del destierro. Perspicacia «Isaías» cierra su obra poco después de 732; 716 (fin de Ezequías, A6-B) solo es el tope.'
+sources:
+- isaias-45
+- si-isaias
+- it-isaias
+- it-isaias-libro
+- ip1-30
+- tnm-a6-b
+- ip2-6
+- it-ciro
+- isaias-47
+- it-astrologos
+- ip2-8
+- isaias-48
+- ip2-9
+- it-merodac-baladan
+- isaias-46
+- ip2-7
+- it-bel
+- it-nebo
+links:
+- title: Isaías 45 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/45
+  type: bible
+- title: Isaías 47 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/47
+  type: bible
+- title: Isaías 48 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/48
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+- title: Isaías 46 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/46
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tubal
+name: Tubal
+names:
+- name: Tubal
+  note: Pueblo y tierra; la persona tubal es el hijo de Jafet.
+type: region
+lat: 37.295556
+lon: 36.253611
+precision: zone
+coord_source: openbible:aaaaead
+coord_url: https://www.openbible.info/geo/ancient/aaaaead/tubal
+coord_note: Punto de OpenBible en Tabal, al noreste de Cilicia, zona donde Perspicacia cree que estaba la tierra de Tubal;
+  representa toda la región.
+summary: Pueblo y tierra del norte, casi siempre nombrado junto a Mesec, que vendía a Tiro esclavos y objetos de cobre. Is
+  66:19 lo pone entre las naciones que oirían de la gloria de Jehová.
+reason: 'Perspicacia «Tubal», núm. 2: la mayoría lo iguala con los tabali de las inscripciones asirias, en el este de Asia
+  Menor. Is 66:19. OpenBible: solo el punto.'
+sources:
+- it-tubal
+- isaias-66
+- openbible-geo
+links:
+- title: 'Perspicacia: «Tubal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004488
+  type: perspicacia
+- title: Isaías 66 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/66
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: lud
+name: Lud
+names:
+- name: Lud
+  note: Pueblo de arqueros que Perspicacia vincula con el Lud camita, descendiente de Mizraim, y no con Lud hijo de Sem.
+type: region
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Norte de África
+  geometry:
+    type: zone
+    lat: 32.8999
+    lon: 13.1757
+    radius_km: 500
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-lud
+  - openbible-geo
+  reason: 'Perspicacia «Lud, ludim», núm. 2: los versículos que hablan del Lud camita apuntan al norte de África, sin un sitio
+    más exacto.'
+  coord_source: calculation
+  note: 'Centro y radio: segunda identificación de la ficha a359997 de OpenBible (Lud 2), unos 500 km alrededor de Trípoli.
+    Solo marca la región.'
+summary: Pueblo de hábiles arqueros, al parecer del norte de África, que sirvió en el ejército egipcio. Is 66:19 lo cuenta
+  entre las naciones lejanas que oirían de la gloria de Jehová.
+reason: 'Perspicacia «Lud, ludim», núm. 2: el Lud que estira el arco en Is 66:19 parece el camita, por ser una nación lejana
+  de Israel. El mapa solo muestra esa región del norte de África.'
+not_claimed:
+- 'Que Lud estuviera junto a Libia: Perspicacia dice que esa idea cambia sin base una letra del nombre.'
+- 'Que sea Lidia, en Asia Menor: esa es la tierra que Josefo da a los descendientes de Lud hijo de Sem.'
+sources:
+- it-lud
+- openbible-geo
+- isaias-66
+links:
+- title: 'Perspicacia: «Lud, ludim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002787
+  type: perspicacia
+- title: Isaías 66 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/66
+  type: bible
+checked_on: '2026-09-30'
+status: verified

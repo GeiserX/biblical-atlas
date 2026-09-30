@@ -1,0 +1,71 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: isaias-anuncia-que-jehova-hermoseara-a-sion
+title: Isaías anuncia que Jehová hermoseará a Sion
+date:
+  from: -731
+  to: -715
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 732 y 716 a.e.c. (tiempo narrativo: tras el aviso a Ezequías sobre Babilonia, en su reinado)'
+narrative_order:
+  series: isaias
+  order: 60001
+places:
+- jerusalen
+- madian
+- reino-de-saba
+- quedar
+- edom
+- babilonia
+people:
+- isaias
+present: []
+passages:
+- Is 60:1-64:12
+summary: 'Isaías anuncia que la gloria de Jehová alumbrará a Sion: sus hijos volverán y las naciones le llevarán riquezas.
+  Un ungido proclamará libertad, la ciudad recibirá un nombre nuevo, Edom será juzgada y el pueblo pide perdón.'
+reason: '«Toda Escritura», libro 23, párr. 30 y 31, agrupa Is 60:1-64:12, escrito tras avisar a Ezequías (ip-1, cap. 30,
+  párr. 3). Perspicacia «Isaías» cierra su obra poco después de 732; 716 (fin de Ezequías, A6-B) solo es el tope.'
+sources:
+- isaias-60
+- si-isaias
+- it-isaias
+- ip2-21
+- tnm-tabla
+- tnm-a6-b
+- isaias-61
+- isaias-62
+- ip2-22
+- ip2-23
+- ip1-30
+- it-merodac-baladan
+- it-isaias-libro
+- isaias-63
+- ip2-24
+- ip2-25
+- w07-isaias-2
+- it-edom
+- isaias-64
+links:
+- title: Isaías 60 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/60
+  type: bible
+- title: Isaías 61 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/61
+  type: bible
+- title: Isaías 62 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/62
+  type: bible
+- title: Isaías 63 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/63
+  type: bible
+- title: Isaías 64 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/64
+  type: bible
+- title: 'Perspicacia: «Isaías, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002205
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

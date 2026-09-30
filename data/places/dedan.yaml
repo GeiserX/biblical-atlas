@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dedan
+name: Dedán
+names:
+- name: Dedán
+type: region
+lat: 26.65
+lon: 37.91667
+precision: zone
+coord_source: openbible:a3a2a75
+coord_url: https://www.openbible.info/geo/ancient/a3a2a75/dedan
+coord_note: Punto de OpenBible en Al Khuraybah, junto al oasis de al-Ula, con el que según Perspicacia los eruditos relacionan
+  Dedán.
+summary: Tierra de una tribu árabe de caravaneros, cerca de Temá y en un extremo de Edom. Isaías anuncia que sus caravanas
+  tendrán que pasar la noche escondidas en el bosque.
+reason: 'Perspicacia «Dedán», núm. 2, párr. 2 y 3; Is 21:13; Jer 25:23; Eze 25:13. OpenBible: solo el punto.'
+not_claimed:
+- 'Que los dedanitas de Is 21:13 desciendan con seguridad de Dedán hijo de Jocsán: Perspicacia solo dice que su trato con
+  Edom y Temá parece apuntar a esa línea.'
+sources:
+- it-dedan
+- isaias-21
+- openbible-geo
+links:
+- title: 'Perspicacia: «Dedán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001143
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

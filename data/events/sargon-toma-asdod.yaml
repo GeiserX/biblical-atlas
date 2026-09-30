@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sargon-toma-asdod
+title: El tartán de Sargón conquista Asdod
+date:
+  from: -739
+  to: -731
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 740 y 732 a.e.c. (tiempo narrativo: reinado de Sargón, entre la caída de Samaria y la invasión de Senaquerib)'
+narrative_order:
+  series: isaias
+  order: 20001
+places:
+- asdod
+people:
+- sargon
+present: []
+passages:
+- Is 20:1
+summary: Sargón, rey de Asiria, envía al tartán, el jefe de su ejército, contra la ciudad filistea de Asdod, que cae tras
+  luchar. Así quedaba abierto el camino de la costa hacia Egipto.
+reason: 'Perspicacia «Sargón»: reinó desde la caída de Samaria (740, estudio 3), y su hijo Senaquerib invadió Judá en 732.
+  La profecía de Isaías ve probable la campaña contra la revuelta de Asdod. Sin ficha del tartán, nadie queda situado.'
+sources:
+- isaias-20
+- it-sargon
+- it-asdod
+- it-tartan
+- ip1-16
+- si-3
+links:
+- title: Isaías 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/20
+  type: bible
+checked_on: '2026-09-30'
+status: verified

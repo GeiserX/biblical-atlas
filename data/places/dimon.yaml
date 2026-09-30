@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: dimon
+name: Dimón
+names:
+- name: Dimón
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Dibón (Dhiban)
+  geometry:
+    type: point
+    lat: 31.502236
+    lon: 35.776574
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-dimon
+  - it-dibon
+  - openbible-geo
+  reason: Unos creen que Dimón es Dibón escrito para sonar como sangre en hebreo; los Rollos del mar Muerto leen Dibón en
+    Is 15:9.
+  coord_source: openbible:ae8badb
+  coord_url: https://www.openbible.info/geo/ancient/ae8badb/dibon-3
+- name: Dimná, la Madmén de Jer 48:2
+  geometry:
+    type: point
+    lat: 31.291821
+    lon: 35.704811
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-dimon
+  - openbible-geo
+  reason: Otros lo toman por Madmén, que se sitúa en Dimná, cerca de Rabat-Moab y sobre unas aguas. Perspicacia dice que así
+    encaja mejor con el contexto.
+  coord_source: openbible:ae8badb
+  coord_url: https://www.openbible.info/geo/ancient/ae8badb/dibon-3
+summary: Lugar de Moab cuyas aguas, anuncia Isaías, se llenarán de la sangre de los moabitas muertos (Is 15:9). Unos lo tienen
+  por Dibón y otros por Madmén; las dos son conjeturas.
+reason: 'Perspicacia «Dimón» y «Dibón», núm. 1; «Profecía de Isaías», cap. 15, párr. 10; Is 15:9. OpenBible: solo los puntos.'
+not_claimed:
+- 'Que Dimón sea Dibón o Madmén: Perspicacia llama conjeturas a las dos explicaciones.'
+sources:
+- it-dimon
+- it-dibon
+- ip1-15
+- openbible-geo
+- isaias-15
+links:
+- title: 'Perspicacia: «Dimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001180
+  type: perspicacia
+- title: Isaías 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified
