@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kimham
+name: Kimham
+names:
+- name: Kimham
+perspicacia: '1200000957'
+summary: Hombre que Barzilái, ya anciano, envió con David en su lugar. Cruzó el Jordán con el rey y, al parecer, se quedó
+  en la corte. Perspicacia lo cree probablemente hijo de Barzilái.
+reason: Perspicacia «Kimham»; 2Sa 19:37-40; 1Re 2:7.
+sources:
+- it-kimham
+- 2-samuel-19
+links:
+- title: 'Perspicacia: «Kimham»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000957
+  type: perspicacia
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: kin
+  person: barzilai-el-galaadita
+  word: father
+  inferred: true
+  status: pending
+  sources:
+  - it-kimham
+  - 2-samuel-19
+  reason: Perspicacia «Kimham» solo lo ve probable; 2Sa 19:37 lo presenta como siervo de Barzilái, sin decir que fuera su
+    hijo.
+  checked_on: '2026-09-29'
+- type: accompanies
+  person: david
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+  sources:
+  - 2-samuel-19
+  - it-kimham
+  reason: '2Sa 19:37, 38, 40: cruza el Jordán con el rey hacia Guilgal, por petición de Barzilái.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

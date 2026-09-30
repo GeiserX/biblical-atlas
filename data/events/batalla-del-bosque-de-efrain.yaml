@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: batalla-del-bosque-de-efrain
+title: Batalla del bosque de Efraín
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 18006
+places:
+- bosque-de-efrain
+people:
+- joab-hijo-de-zeruya
+- abisai
+- ittai-el-guitita
+- absalon
+passages:
+- 2Sa 18:6-8
+summary: Los hombres de David derrotan a los de Israel en el bosque de Efraín. Mueren 20.000, y el bosque, por el que se extiende
+  la lucha, mata a más que la espada.
+reason: '2Sa 18:2-9; Perspicacia «Efraín», núm. 4. Salen los tres jefes y Absalón está en el bosque. Fecha: después del pacto
+  con David (después de 1070) y antes de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-18
+- it-efrain
+- it-absalon
+- si-3
+links:
+- title: 2 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

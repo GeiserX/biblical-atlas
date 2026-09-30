@@ -11,7 +11,7 @@ precision: point
 coord_source: openbible:ae5bfe9
 coord_url: https://www.openbible.info/geo/ancient/ae5bfe9/mahanaim
 summary: Lugar al este del Jordán donde unos ángeles salieron al encuentro de Jacob cuando volvía de Harán. Más tarde hubo
-  allí una ciudad, capital de Is-bóset y refugio de David.
+  allí una ciudad, capital de Is-Bóset y refugio de David.
 reason: 'Perspicacia «Mahanaim», párr. 1 y 2; Gé 32:1, 2. OpenBible: solo el punto.'
 sources:
 - it-mahanaim
@@ -19,6 +19,11 @@ sources:
 - genesis-32
 - josue-13
 - josue-21
+- 2-samuel-2
+- 2-samuel-4
+- 2-samuel-17
+- 2-samuel-18
+- 2-samuel-19
 links:
 - title: 'Perspicacia: «Mahanaim»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002842
@@ -26,5 +31,9 @@ links:
 - title: Génesis 32 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/32
   type: bible
+history:
+- date: '2026-09-29'
+  change: Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12.
+  source: 2-samuel-2
 checked_on: '2026-09-29'
 status: verified

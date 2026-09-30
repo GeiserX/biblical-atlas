@@ -1,0 +1,59 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: benaya-hijo-de-jehoiada
+name: Benaya
+names:
+- name: Benaya
+perspicacia: 1200000632#1
+disambiguation: El hijo de Jehoiadá que mandaba a keretitas y peletitas; no Benaya el piratonita, de los poderosos de David,
+  ni los levitas y sacerdotes de ese nombre.
+summary: Hijo del sacerdote Jehoiadá y guerrero muy valiente de David. Mandaba a los keretitas y los peletitas, fieles al
+  rey en las rebeliones. Con Salomón ejecutó a Adonías, Joab y Simeí, y dirigió el ejército.
+reason: Perspicacia «Benaya», núm. 1, y «Peletitas»; 2Sa 8:18; 1Cr 18:17.
+sources:
+- it-benaya
+- it-peletitas
+- it-keretitas
+- 2-samuel-8
+- 2-samuel-20
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Benaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000632
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+relations:
+- type: kin
+  person: jehoiada-padre-de-benaya
+  word: father
+  sources:
+  - 2-samuel-8
+  - it-benaya
+  - 2-samuel-20
+  - it-jehoiada
+  - 2-samuel-23
+  reason: '2Sa 8:18: Benaya hijo de Jehoiadá.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - 2-samuel-8
+  - it-peletitas
+  - 2-samuel-20
+  reason: '2Sa 8:18; 20:23: mandaba a keretitas y peletitas, que según Perspicacia «Peletitas» servían al rey aparte del ejército
+    de Joab. 23:23: David le confió el mando de su guardia.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- benaya-el-piratonita

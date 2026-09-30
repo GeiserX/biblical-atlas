@@ -1,6 +1,6 @@
 # biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: david-rey-de-todo-israel
-title: David, rey de todo Israel, toma Jerusalén
+title: Las tribus hacen a David rey de todo Israel en Hebrón
 date:
   from: -1069
   to: -1069
@@ -11,16 +11,16 @@ date:
   text: 1070 a.e.c.
 places:
 - hebron
-- jerusalen
 people:
 - david
 passages:
-- 2Sa 5:1-10
-- 1Cr 11:1-9
-summary: Las tribus van a Hebrón y hacen a David rey de todo Israel. Después toma a los jebuseos la fortaleza de Sion y hace
-  de Jerusalén su capital.
-reason: El estudio 3 fecha el suceso en 1070; Perspicacia «Jerusalén», párr. 21-22, explica el traslado de la capital y la
-  toma de la fortaleza.
+- 2Sa 5:1-3
+- 1Cr 11:1-3
+- 1Cr 12:23-40
+summary: Los ancianos de todas las tribus van a Hebrón, recuerdan que David ya dirigía a Israel en tiempos de Saúl, hacen
+  un pacto con él ante Jehová y lo ungen rey de todo Israel.
+reason: El estudio 3 fecha en 1070 su subida al trono de todo Israel (2Sa 5:3). Perspicacia «David», párr. 20, añade la fuerza
+  que se le unió (1Cr 12:23-40).
 sources:
 - si-3
 - it-jerusalen
@@ -36,10 +36,33 @@ links:
 - title: 2 Samuel 5 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
   type: bible
-search: David toma Jerusalén jebuseos
+search: David rey de todo Israel Hebrón
 history:
 - date: '2026-09-29'
   change: «Sión» pasa a «Sion», la grafía de la TNM en 2Sa 5:7.
   source: 2-samuel-5
+- date: '2026-09-29'
+  change: 'El suceso juntaba dos escenas: el pacto y la unción en Hebrón (2Sa 5:1-3) y la toma de Sion (5:6-10), que pasa
+    a david-toma-la-fortaleza-de-sion.'
+  source: 2-samuel-5
+- date: '2026-09-29'
+  change: 'Jerusalén sale: la toma de Sion es ahora su propio suceso.'
+  source: 2-samuel-5
+- date: '2026-09-29'
+  change: 2Sa 5:6-10 y 1Cr 11:4-9 pasan a la toma de Sion. Entra 1Cr 12:23-40, que Perspicacia «David», párr. 20, junta con
+    esta unción.
+  source: 2-samuel-5
+- date: '2026-09-29'
+  change: El resumen deja la toma de Sion, que es otro suceso, y cuenta el pacto de 2Sa 5:1-3.
+  source: 2-samuel-5
+- date: '2026-09-29'
+  change: La razón citaba la toma de la fortaleza, que pasa a su propio suceso.
+  source: 2-samuel-5
+- date: '2026-09-29'
+  change: La búsqueda era la de la toma de Jerusalén, que pasa a su propio suceso.
+  source: 2-samuel-5
+narrative_order:
+  series: 2-samuel
+  order: 5001
 checked_on: '2026-09-29'
 status: verified

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: sobi-makir-y-barzilai-abastecen-a-david-en-mahanaim
+title: Sobí, Makir y Barzilái abastecen a David en Mahanaim
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 17027
+places:
+- mahanaim
+people:
+- david
+- sobi
+- makir-hijo-de-amiel
+- barzilai-el-galaadita
+passages:
+- 2Sa 17:27-29
+summary: Al llegar David a Mahanaim, Sobí de Rabá, Makir de Lo-Debar y Barzilái de Roguelim le traen camas, vasijas, grano,
+  legumbres, miel, ovejas y queso para su gente cansada y hambrienta.
+reason: '2Sa 17:27-29; Perspicacia «Sobí», «Makir», núm. 2, y «Barzilai», núm. 2. Fecha: después del pacto con David (después
+  de 1070) y antes de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-17
+- it-sobi
+- it-makir
+- it-barzilai
+- si-3
+links:
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+checked_on: '2026-09-29'
+status: verified

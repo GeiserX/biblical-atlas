@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: barzilai-se-despide-de-david-en-el-jordan
+title: Barzilái se despide de David en el Jordán
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 19031
+places:
+- rio-jordan
+- roguelim
+- mahanaim
+people:
+- barzilai-el-galaadita
+- david
+- kimham
+present:
+- barzilai-el-galaadita
+- david
+- kimham
+passages:
+- 2Sa 19:31-39
+summary: Barzilái, de 80 años, que había sustentado al rey en Mahanaim, lo escolta hasta el Jordán. Rechaza ir a Jerusalén
+  y le confía a Kimham; David lo besa, lo bendice y él vuelve a casa.
+reason: '2Sa 19:31-39; Perspicacia «Barzilai», núm. 2. Fecha: desde 1070 (estudio 3) hasta hacia 1040, final de 2 Samuel (tabla
+  de los libros).'
+sources:
+- 2-samuel-19
+- it-barzilai
+- it-kimham
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abner-vuelve-a-mahanaim
+title: Abner vuelve de noche a Mahanaim por el Arabá
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 2029
+places:
+- mahanaim
+- araba
+- rio-jordan
+present:
+- abner
+people:
+- abner
+passages:
+- 2Sa 2:29
+summary: Abner y sus hombres caminan toda la noche por el Arabá, cruzan el Jordán, atraviesan el barranco y llegan a Mahanaim.
+  Perspicacia calcula una marcha de 80 km o más.
+reason: 2Sa 2:29; Perspicacia «Abner», párr. 5, y «Mahanaim». Misma fecha que el combate de Gabaón.
+sources:
+- 2-samuel-2
+- it-abner
+- it-mahanaim
+- it-david
+- si-3
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 'Perspicacia: «Abner»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000057
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

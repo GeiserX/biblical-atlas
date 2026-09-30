@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sefatias-hijo-de-david
+name: Sefatías
+names:
+- name: Sefatías
+perspicacia: 1200004013#2
+disambiguation: El hijo de David; no los otros Sefatías que numera Perspicacia, como el príncipe que echó a Jeremías a la
+  cisterna.
+summary: Quinto hijo de David, nacido en Hebrón mientras reinaba allí. Su madre era Abital.
+reason: Perspicacia «Sefatías», núm. 2; 2Sa 3:4.
+sources:
+- it-sefatias
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Sefatías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004013
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-sefatias
+  reason: '2Sa 3:4: el quinto hijo de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abital
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-sefatias
+  reason: '2Sa 3:4: hijo de Abital.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-sefatias
+  reason: '2Sa 3:4, 5: nacido en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

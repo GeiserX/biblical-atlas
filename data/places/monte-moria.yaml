@@ -16,6 +16,8 @@ names:
     capítulo 4). OpenBible solo le da el punto de Jerusalén.
 - name: Montaña de la Casa
   note: Así llama Miq 3:12 al monte del templo, como aclara su nota; Perspicacia «Sion» sitúa el recinto del templo en Moria.
+- name: Era de Arauna
+  note: La era que David compró a Arauna el jebuseo para el altar (2Sa 24:18-25); luego se levantó allí el templo.
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -59,6 +61,8 @@ sources:
 - hch-21
 - hch-22
 - miqueas-3
+- 2-samuel-24
+- it-arauna
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114

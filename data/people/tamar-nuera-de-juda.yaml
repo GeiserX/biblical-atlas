@@ -29,3 +29,6 @@ relations:
   reason: 'Gé 38:11, 13, 24: Judá es su suegro y ella, su nuera.'
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- tamar-hija-de-david
+- tamar-hija-de-absalon

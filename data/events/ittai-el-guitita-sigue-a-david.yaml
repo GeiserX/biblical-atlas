@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ittai-el-guitita-sigue-a-david
+title: Ittái el guitita jura seguir a David
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 15018
+places:
+- jerusalen
+- valle-de-cedron
+people:
+- david
+- ittai-el-guitita
+present:
+- david
+- ittai-el-guitita
+passages:
+- 2Sa 15:18-22
+summary: Mientras desfilan ante el rey sus siervos, los keretitas, los peletitas y 600 guititas venidos de Gat, David anima
+  a Ittái a volverse. Él jura seguirlo, vivo o muerto, y pasa con los suyos.
+reason: '2Sa 15:17-22; Perspicacia «Ittai», núm. 1, y «Bet-merhaq», que sitúa allí la revista. Fecha: tras el pacto con David
+  (c. 1070) y antes de acabarse 2 Samuel (c. 1040, tabla de libros); lámina B7.'
+sources:
+- 2-samuel-15
+- it-ittai
+- it-bet-merhaq
+- tnm-b7
+- it-absalon
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Ittai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002245
+  type: perspicacia
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

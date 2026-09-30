@@ -13,6 +13,8 @@ sources:
 - 1-samuel-25
 - 1-samuel-27
 - 1-samuel-30
+- 2-samuel-2
+- 2-samuel-3
 links:
 - title: 'Perspicacia: «Abigail»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000037
@@ -52,5 +54,16 @@ relations:
   reason: '1Sa 30:1-5: vivía en Ziclag con David cuando los amalequitas se la llevaron.'
   checked_on: '2026-09-29'
   status: verified
+- type: lived_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-abigail
+  reason: '2Sa 2:2, 3: sube con David a Hebrón y se quedan a vivir allí.'
+  checked_on: '2026-09-29'
+  status: verified
 checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- abigail-hija-de-nahas

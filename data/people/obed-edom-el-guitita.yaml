@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: obed-edom-el-guitita
+name: Obed-Edom
+names:
+- name: Obed-Edom
+perspicacia: 1200003291#1
+disambiguation: Obed-Edom el guitita (núm. 1 de Perspicacia), el de la casa donde estuvo el Arca.
+summary: Guitita en cuya casa estuvo el Arca tres meses tras la muerte de Uzá. Jehová lo bendijo a él y a su casa, y David
+  lo vio como señal para subir el Arca. Perspicacia deduce que era levita de Gat-Rimón.
+reason: 'Perspicacia «Obed-edom», núm. 1; 2Sa 6:10-12. Paralelos: 1Cr 13:13, 14 y 15:25.'
+sources:
+- it-obed-edom
+- 2-samuel-6
+links:
+- title: 'Perspicacia: «Obed-edom»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003291
+  type: perspicacia
+not_claimed:
+- 'No damos por hecho que sea el músico o el portero Obed-Edom de la procesión del Arca en Crónicas: Perspicacia solo lo ve
+  posible.'
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: natan-reprende-a-david
+title: Natán reprende a David por lo de Bat-Seba y Urías
+type: speech
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: con el Arca ya en Jerusalén y antes de terminarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 12001
+places:
+- jerusalen
+people:
+- natan-profeta
+- david
+roles:
+  natan-profeta: spoke
+passages:
+- 2Sa 12:1-15
+- Sl 51
+summary: 'Jehová envía a Natán, que cuenta la parábola del rico que roba la ovejita del pobre. «Tú eres ese hombre»: la espada
+  no dejará su casa. David confiesa su pecado; será perdonado, pero el niño morirá.'
+reason: El estudio 3 pone la llegada del Arca a Jerusalén después de 1070 y el final de 2 Samuel hacia 1040. El encabezamiento
+  del Salmo 51 lo sitúa aquí; Perspicacia «Natán», núm. 2, y «David».
+sources:
+- 2-samuel-12
+- salmos-51
+- si-3
+- it-natan
+- it-david
+links:
+- title: 2 Samuel 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/12
+  type: bible
+checked_on: '2026-09-29'
+status: verified

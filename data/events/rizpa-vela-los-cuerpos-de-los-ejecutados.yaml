@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rizpa-vela-los-cuerpos-de-los-ejecutados
+title: Rizpá vela los cuerpos de los ejecutados
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: últimos sucesos del reinado de David)'
+narrative_order:
+  series: 2-samuel
+  order: 21010
+places:
+- guibea-de-benjamin
+present:
+- rizpa
+people:
+- rizpa
+passages:
+- 2Sa 21:10, 11
+summary: Rizpá extiende tela de saco sobre la roca y, de día y de noche, aparta a las aves y a las fieras de los cuerpos hasta
+  que llueve. Se lo cuentan a David.
+reason: '2Sa 21:10, 11; Perspicacia «Rizpá»: quizá cinco o seis meses, hasta las lluvias de otoño. Fecha: últimos sucesos
+  del reinado, ya en Jerusalén (1070), según Perspicacia «Samuel, Libros de»; 2 Samuel acaba c. 1040.'
+sources:
+- 2-samuel-21
+- it-rizpa
+- it-samuel-libros
+- tnm-b7
+- tnm-tabla
+- si-3
+links:
+- title: 2 Samuel 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

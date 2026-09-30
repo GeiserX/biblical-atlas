@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: tamar-hija-de-absalon
+name: Tamar
+names:
+- name: Tamar
+perspicacia: 1200004313#3
+disambiguation: La hija de Absalón; no su tía, la hija de David, ni la nuera de Judá.
+distinct_from:
+- tamar-nuera-de-juda
+- tamar-hija-de-david
+summary: Única hija de Absalón, muy hermosa, que llevaba el nombre de su tía. Perspicacia ve posible que se casara con Uriel
+  y fuera la madre de Maacá, esposa de Rehoboam.
+reason: Perspicacia «Tamar», núm. 3; 2Sa 14:27.
+sources:
+- it-tamar
+- 2-samuel-14
+links:
+- title: 'Perspicacia: «Tamar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004313
+  type: perspicacia
+- title: 2 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/14
+  type: bible
+relations:
+- type: kin
+  person: absalon
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-14
+  - it-tamar
+  reason: '2Sa 14:27: de los cuatro hijos de Absalón, la única hija se llamaba Tamar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: tamar-hija-de-david
+  word: aunt
+  inferred: true
+  sources:
+  - it-tamar
+  - 2-samuel-14
+  reason: Perspicacia «Tamar», núm. 3, dice que le pusieron el nombre de su tía, la hermana de Absalón (2Sa 14:27).
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

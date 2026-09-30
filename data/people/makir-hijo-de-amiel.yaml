@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: makir-hijo-de-amiel
+name: Makir
+names:
+- name: Makir
+perspicacia: 1200002819#2
+disambiguation: Makir hijo de Amiel, de Lo-Debar (Perspicacia, núm. 2); no Makir hijo de Manasés.
+distinct_from:
+- makir-hijo-de-manases
+summary: Hombre de Lo-Debar, al este del Jordán. Tuvo en su casa a Mefibóset hasta que David lo mandó traer, y en la rebelión
+  de Absalón llevó comida y provisiones al rey y a su gente.
+reason: Perspicacia «Makir», núm. 2, y «Amiel», núm. 2; 2Sa 9:4, 5.
+sources:
+- it-makir
+- it-amiel
+- 2-samuel-9
+- it-lo-debar
+- 2-samuel-17
+links:
+- title: 'Perspicacia: «Makir»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002819
+  type: perspicacia
+- title: 2 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/9
+  type: bible
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: kin
+  person: amiel-padre-de-makir
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-amiel
+  - 2-samuel-17
+  - it-makir
+  reason: 2Sa 9:4, 5 lo llama Makir hijo de Amiel.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: lo-debar
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-makir
+  - it-lo-debar
+  - 2-samuel-17
+  reason: '2Sa 9:4, 5: su casa estaba en Lo-Debar.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

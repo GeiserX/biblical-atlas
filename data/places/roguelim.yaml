@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: roguelim
+name: Roguelim
+names:
+- name: Roguelim
+type: city
+lat: 32.532758
+lon: 35.772297
+precision: uncertain
+coord_source: openbible:a7d0e71
+coord_url: https://www.openbible.info/geo/ancient/a7d0e71/rogelim
+coord_note: 'Tell Barsina, segunda identificación de OpenBible: es la Bersinya que Perspicacia da con reservas. La primera
+  es Zaharet.'
+summary: Pueblo de Galaad donde vivía Barzilái, que ayudó a David. Hay quien lo pone, sin seguridad, en Bersinya, unos 7 km
+  al oeste-suroeste de Irbid.
+reason: 'Perspicacia «Roguelim»; 2Sa 17:27. OpenBible: solo el punto.'
+sources:
+- it-roguelim
+- openbible-geo
+- 2-samuel-17
+- 2-samuel-19
+links:
+- title: 'Perspicacia: «Roguelim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003757
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

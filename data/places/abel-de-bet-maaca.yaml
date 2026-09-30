@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: abel-de-bet-maaca
+name: Abel de Bet-Maacá
+names:
+- name: Abel de Bet-Maacá
+- name: Abel-Bet-Maacá
+  note: Forma de 1Re 15:20 que Perspicacia da junto a la otra.
+- name: Abel
+  note: Forma corta de 2Sa 20:18.
+- name: Abel-Maim
+  note: Otro nombre, por sus campos bien regados, según Perspicacia (2Cr 16:4).
+type: city
+lat: 33.258051
+lon: 35.581007
+precision: point
+coord_source: openbible:abffcaa
+coord_url: https://www.openbible.info/geo/ancient/abffcaa/abel-beth-maacah
+coord_note: 'Tel Abel Beth Maacah, primera identificación de OpenBible: el Tell Abil que da Perspicacia. Es también el punto
+  de la ficha de Maacá.'
+summary: Ciudad fortificada de Neftalí, unos 7 km al ONO de Dan, en el cruce de caminos de Hazor al norte y de Damasco a Tiro.
+  Allí se refugió Seba y allí lo decapitaron sus vecinos.
+reason: 'Perspicacia «Abel-bet-maacá, Abel de Bet-maacá», párr. 1 y 2; 2Sa 20:14-22. OpenBible: solo el punto.'
+sources:
+- it-abel-bet-maaca
+- openbible-geo
+- 2-samuel-20
+links:
+- title: 'Perspicacia: «Abel-bet-maacá, Abel de Bet-maacá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000019
+  type: perspicacia
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

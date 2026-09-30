@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahitub-hijo-de-amarias
+name: Ahitub
+names:
+- name: Ahitub
+perspicacia: 1200000170#2
+disambiguation: El padre del sacerdote Sadoc, de la línea de Eleazar; no Ahitub hijo de Finehás y nieto de Elí, ni el sacerdote
+  posterior del mismo nombre.
+distinct_from:
+- ahitub-hijo-de-finehas
+summary: 'Hijo de Amarías, de la línea de Eleazar, hijo de Aarón, y padre del sacerdote Sadoc. No consta que fuera sumo sacerdote:
+  entonces el cargo seguía en la línea de Itamar.'
+reason: Perspicacia «Ahitub», núm. 2; 2Sa 8:17; 1Cr 6:3-8.
+sources:
+- it-ahitub
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Ahitub»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000170
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

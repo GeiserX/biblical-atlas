@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bani-el-gadita
+name: Baní
+names:
+- name: Baní
+perspicacia: 1200000553#2
+disambiguation: Baní el gadita, guerrero de David; no el levita antepasado de Etán ni los cabezas de familia de tiempos de
+  Esdras y Nehemías.
+summary: Gadita, uno de los treinta guerreros de David.
+reason: Perspicacia «Baní», núm. 2; 2Sa 23:36.
+sources:
+- it-bani
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Baní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000553
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:36: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

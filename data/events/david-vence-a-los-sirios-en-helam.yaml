@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-vence-a-los-sirios-en-helam
+title: David vence a los sirios en Helam
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: David ya reina en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 10015
+places:
+- helam
+- rio-jordan
+- rio-eufrates
+people:
+- david
+- sobac
+- hadadezer
+present:
+- david
+- sobac
+roles:
+  sobac: died
+passages:
+- 2Sa 10:15-19
+- 1Cr 19:16-19
+summary: Hadadézer junta sirios de la región del Éufrates bajo Sobac. David cruza el Jordán, los derrota en Helam y hiere
+  a Sobac, que muere allí. Los reyes que servían a Hadadézer hacen la paz con Israel.
+reason: 'Perspicacia «Helam» y «Hadadézer». Fecha: entre 1070 y c. 1040, fin de 2 Samuel (estudio 3).'
+sources:
+- 2-samuel-10
+- si-3
+- it-helam
+- it-hadadezer
+- it-sobac
+links:
+- title: 2 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ittai-el-guitita
+name: Ittái
+names:
+- name: Ittái
+- name: Ittai
+  note: Grafía de Perspicacia.
+perspicacia: 1200002245#1
+disambiguation: Ittái el guitita, que siguió a David en la huida ante Absalón; no Ittái hijo de Ribai, el benjaminita de Guibeá,
+  uno de los hombres poderosos de David.
+summary: Guerrero guitita, extranjero desterrado y, según Perspicacia, probablemente de Gat. Recién llegado, no quiso dejar
+  a David cuando huía de Absalón y juró seguirlo hasta la muerte. Después mandó un tercio del ejército.
+reason: Perspicacia «Ittai», núm. 1; 2Sa 15:19-22.
+sources:
+- it-ittai
+- 2-samuel-15
+- 2-samuel-18
+links:
+- title: 'Perspicacia: «Ittai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002245
+  type: perspicacia
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+- title: 2 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/18
+  type: bible
+relations:
+- type: accompanies
+  person: david
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  sources:
+  - 2-samuel-15
+  - it-ittai
+  reason: '2Sa 15:19-22: David le pide que se vuelva, pero él jura estar donde esté el rey y pasa con sus hombres y sus familias.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-18
+  - it-ittai
+  reason: '2Sa 18:2, 5, 12: David le da el mando de un tercio de sus hombres y le ordena tratar bien a Absalón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: gat
+  inferred: true
+  sources:
+  - it-ittai
+  - 2-samuel-18
+  reason: '2Sa 18:2 lo llama guitita; Perspicacia «Ittai», núm. 1, cree que probablemente era natural de Gat. Pendiente: solo
+    es probable.'
+  checked_on: '2026-09-29'
+  status: pending
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- ittai-hijo-de-ribai

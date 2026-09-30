@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hiram-envia-cedro-y-artesanos-a-david
+title: Hiram de Tiro envía cedro y artesanos a David
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes del pacto con David)'
+  note: 'Límites: la toma de Sion, en 1070 (estudio 3), y el pacto con David, hacia 1070 (lámina B7), cuando David ya vivía
+    en su casa de cedro.'
+narrative_order:
+  series: 2-samuel
+  order: 5011
+places:
+- jerusalen
+- tiro
+people:
+- david
+- hiram-rey-de-tiro
+present:
+- david
+passages:
+- 2Sa 5:11, 12
+- 1Cr 14:1, 2
+summary: El rey Hiram manda mensajeros, madera de cedro, carpinteros y albañiles para levantar la casa de David. David entiende
+  que Jehová ha afianzado su reino por el bien de su pueblo Israel.
+reason: Perspicacia «Hiram», núm. 1, lo pone después de tomar la fortaleza de Sion, en 1070 (estudio 3); la lámina B7 fecha
+  el pacto con David hacia 1070.
+sources:
+- 2-samuel-5
+- si-3
+- tnm-b7
+- it-hiram
+links:
+- title: 'Perspicacia: «Hiram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002035
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisua
+name: Elisúa
+names:
+- name: Elisúa
+- name: Elisamá
+  note: Así lo llaman 1Cr 3:6 y la TNM, que sigue al texto masorético; Perspicacia lo ve quizá un error de copia.
+perspicacia: '1200001321'
+disambiguation: Elisúa hijo de David; 1Cr 3:6 lo llama Elisamá, pero no es su hermano Elisamá de 2Sa 5:16.
+distinct_from:
+- elisama-hijo-de-david
+- elisama-hijo-de-amihud
+summary: Hijo de David nacido en Jerusalén. 1Cr 3:6 lo llama Elisamá; Perspicacia cree que Elisúa es la forma buena, porque
+  ese nombre vuelve a salir en 1Cr 3:8 para otro hermano.
+reason: 'Perspicacia «Elisúa» y «Elisamá», núm. 3; 2Sa 5:15. En Crónicas: 1Cr 14:5.'
+sources:
+- it-elisua
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Elisúa»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001321
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

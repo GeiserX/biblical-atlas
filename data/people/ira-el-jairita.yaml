@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ira-el-jairita
+name: Irá
+names:
+- name: Irá
+perspicacia: 1200002193#1
+disambiguation: Irá el jairita, funcionario de David; no Irá hijo de Iqués el teqoíta ni Irá el itrita, dos de sus valientes.
+summary: Jairita que llegó a ser funcionario principal de David; el texto dice literalmente sacerdote. Quizás descendía de
+  Jaír, hijo de Manasés, y entonces el título sería de ministro o príncipe.
+reason: Perspicacia «Irá», núm. 1; 2Sa 20:26 y su nota al pie.
+sources:
+- it-ira
+- 2-samuel-20
+links:
+- title: 'Perspicacia: «Irá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002193
+  type: perspicacia
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+relations:
+- type: tie
+  person: david
+  word: master
+  sources:
+  - 2-samuel-20
+  - it-ira
+  reason: '2Sa 20:26: llegó a ser funcionario principal de David.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- ira-el-itrita
+- ira-hijo-de-iques

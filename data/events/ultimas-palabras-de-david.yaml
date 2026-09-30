@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ultimas-palabras-de-david
+title: Últimas palabras de David
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: lo último que dijo David como rey)'
+narrative_order:
+  series: 2-samuel
+  order: 23001
+places: []
+people:
+- david
+present: []
+type: speech
+roles:
+  david: spoke
+passages:
+- 2Sa 23:1-7
+summary: 'David, hijo de Jesé, deja sus últimas palabras inspiradas: quien gobierna con justicia y respeto a Dios es como
+  la luz de un amanecer, y Dios pactó con su casa un pacto eterno.'
+reason: '2Sa 23:1-7. El texto no dice dónde las pronunció, así que no sitúa a nadie. Fecha: con David rey de todo Israel (1070)
+  y antes de acabarse 2 Samuel (c. 1040), estudio 3.'
+sources:
+- 2-samuel-23
+- si-3
+- it-david
+links:
+- title: 2 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

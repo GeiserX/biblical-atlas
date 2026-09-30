@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: adonias-hijo-de-david
+name: Adonías
+names:
+- name: Adonías
+perspicacia: 1200000110#1
+disambiguation: El hijo de David que quiso ser rey; no el levita enviado por Jehosafat ni el cabeza del pueblo de Nehemías.
+summary: Cuarto hijo de David, nacido en Hebrón de Haguit. En la vejez de su padre intentó hacerse rey; Salomón lo perdonó,
+  pero lo mandó ejecutar cuando pidió por esposa a Abisag.
+reason: Perspicacia «Adonías», núm. 1; 2Sa 3:4.
+sources:
+- it-adonias
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Adonías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000110
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-adonias
+  reason: '2Sa 3:4: el cuarto hijo de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: haguit
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-adonias
+  reason: '2Sa 3:4: hijo de Haguit.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-adonias
+  reason: '2Sa 3:4, 5: nacido en Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

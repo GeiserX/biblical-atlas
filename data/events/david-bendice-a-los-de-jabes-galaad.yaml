@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-bendice-a-los-de-jabes-galaad
+title: David bendice a los de Jabés-Galaad por enterrar a Saúl
+date:
+  from: -1076
+  to: -1076
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1077 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 2004
+places:
+- hebron
+- jabes-galaad
+present:
+- david
+people:
+- david
+passages:
+- 2Sa 2:4-7
+summary: 'Al saber que los de Jabés-Galaad enterraron a Saúl, David les manda mensajeros desde Hebrón: agradece su lealtad,
+  promete tratarlos bien y les anuncia que Judá lo ha ungido rey.'
+reason: '2Sa 2:4-7; Perspicacia «Jabés-galaad», párr. 4: poco después de que lo ungieran rey de Judá, en 1077 según el estudio
+  3.'
+sources:
+- 2-samuel-2
+- it-jabes-galaad
+- si-3
+links:
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 'Perspicacia: «Jabés-galaad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002270
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified
