@@ -1745,7 +1745,7 @@ function montarBarra() {
     if (e.target.matches?.('#linea-menu select[data-linea="persona"]') && e.target.value) { fijar(e.target.value); }
   });
   document.addEventListener('keydown', (e) => {
-    if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
+    if (BE.portada?.abierta || e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
     if (e.key === 't' || e.key === 'T') { e.preventDefault(); ponerGrande(!L.grande); }
     if (e.key === 'Escape') { cerrarMenu(); if (L.modoRegla) { L.modoRegla = false; $('#pista').classList.remove('modo-regla'); } }
   });

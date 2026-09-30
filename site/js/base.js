@@ -407,6 +407,7 @@ function iniciarEventos() {
     }
   });
   document.addEventListener('keydown', (e) => {
+    if (BE.portada?.abierta) return;   // con la portada puesta, el sitio de detrás no recibe teclas
     const t = e.target;
     const enCampo = t.matches?.('input, textarea, select');
     if (e.key === 'Escape') { limpiarSeleccion(); return; }

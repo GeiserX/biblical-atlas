@@ -316,6 +316,7 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .be-con-portada #app > :not(#vista-portada) { visibility: hidden; }
 .formas-svg { position: absolute; width: 0; height: 0; overflow: hidden; }
 .vista-portada :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.vista-portada:focus { outline: none; }   /* la hoja recibe el foco al abrir para desplazarse con el teclado */
 .vista-portada .forma { width: 16px; height: 16px; flex: none; display: inline-block; }
 .portada { position: relative; min-height: 100%; }
 .portada-wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }

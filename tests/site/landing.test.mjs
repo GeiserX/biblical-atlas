@@ -112,6 +112,18 @@ test('a cold open shows the landing over an inert site; an address opens its vie
   assert.deepEqual([...page.pageErrors, ...shared.pageErrors], []);
 });
 
+test('on a cold open the keys scroll the landing and never drive the site behind it', async () => {
+  const page = await openPage();
+  const t0 = (await state(page)).t;
+  assert.equal(await page.evaluate(() => document.activeElement?.id), 'vista-portada');
+  await page.keyboard.press('PageDown');
+  await page.waitForFunction(() => document.querySelector('#vista-portada').scrollTop > 0);
+  for (const k of ['Space', 'ArrowRight', 't', 'Escape']) await page.keyboard.press(k);
+  await page.waitForTimeout(300);
+  const s = await page.evaluate(() => ({ play: window.BE.E.play, t: window.BE.E.t, grande: /linea=grande/.test(location.hash), up: document.documentElement.classList.contains('be-con-portada') }));
+  assert.deepEqual(s, { play: false, t: t0, grande: false, up: true });
+});
+
 test('the box answers with the shape, the type word and the date of each result', async () => {
   const page = await openPage();
   await type(page, 'Corin');

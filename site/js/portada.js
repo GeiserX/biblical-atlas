@@ -373,9 +373,12 @@ BE.parametros.push({ nombre: 'portada', historia: true, escribir: () => (abierta
 $('#inicio').addEventListener('click', () => { if (BE.D && !abierta) BE.historia.entrar(() => abrir()); });
 
 // Al abrir sin dirección, la entrada de la portada lleva #portada=1: Atrás desde el mapa vuelve a ella.
+// El foco va a la hoja (sin mover la página ni sacar el teclado del teléfono): Av Pág, las flechas y el espacio la
+// desplazan a ella, y las teclas del sitio de detrás no se disparan.
 if (abierta) {
   if (!location.hash || location.hash === '#') history.replaceState(null, '', '#portada=1');
   mostrar(true);
+  hoja.focus({ preventScroll: true });
 }
 
 BE.portada = { abrir, cerrar, get abierta() { return abierta; }, reglas };
