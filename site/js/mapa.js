@@ -467,14 +467,15 @@ function imagenRayado(color, estado) {
 // Viajes (M-09): el que Pablo recorre en esta fecha se parte en hecho y falta; los demás, de cualquier persona,
 // se ven como rastro: en color si están ocurriendo, gris claro si ya pasaron y más claro si aún no han empezado.
 // ---------------------------------------------------------------------------
-/** Tramo de los viajes de una persona, de la primera salida a la última llegada. Fuera de él (con un año de margen al
-    final), el mapa no dibuja sus viajes ni los explica en la leyenda, salvo que se seleccione el viaje o la persona. */
-function tramoViajes(persona) {
-  if (persona === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
-  const trs = BE.D.viajes.filter((v) => (v.persona || 'pablo') === persona).map((v) => tramo(v.fecha)).filter(Boolean);
-  return trs.length ? [Math.min(...trs.map((x) => x[0])), Math.max(...trs.map((x) => x[1]))] : null;
+/** Ventana en la que la capa «Viajes» dibuja un viaje: para Pablo, el tramo de todos sus viajes (de la primera salida a
+    la última llegada); para cualquier otra persona, solo la del propio viaje, porque con Moisés o Pedro el tramo entero
+    llenaría el mapa de rastros. Fuera de ella (con un año de margen al final) no se dibuja ni se explica en la leyenda,
+    salvo que se seleccione el viaje o la persona. */
+function ventanaViaje(v) {
+  if ((v.persona || 'pablo') === 'pablo' && BE.P.length) return [BE.P[0].a, BE.P.at(-1).b];
+  return tramo(v.fecha);
 }
-const viajesEnEpoca = (persona, t) => { const tr = tramoViajes(persona); return !!tr && t >= tr[0] && t < tr[1] + 1; };
+const viajeEnEpoca = (v, t) => { const tr = ventanaViaje(v); return !!tr && t >= tr[0] && t < tr[1] + 1; };
 function geoRutas(w) {
   const V = BE.viajeActual(w);
   const hecho = [], falta = [], rastro = [];
@@ -502,7 +503,7 @@ function geoRutas(w) {
     if (v === V) continue;
     const quien = v.persona || 'pablo';
     const ver = (E.sel?.tipo === 'viaje' && E.sel.id === v.id) || (selPersona && (selPersona === quien || (v.companeros || []).includes(selPersona)))
-      || (F.capas.viajes && viajesEnEpoca(quien, E.t));
+      || (F.capas.viajes && viajeEnEpoca(v, E.t));
     if (!ver) continue;
     const pts = [...(v.paradas || [])].sort((a, b) => a.orden - b.orden).map((p) => BE.L[p.lugar]).filter(conPunto).map(coord);
     if (pts.length < 2) continue;
