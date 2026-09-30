@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joab-pasa-seis-meses-matando-a-los-varones-de-edom
+title: Joab pasa seis meses en Edom matando a sus varones
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+narrative_order:
+  series: 1-reyes
+  order: 11015
+  after: david-derrota-a-edom-en-el-valle-de-la-sal
+places:
+- edom
+people:
+- joab-hijo-de-zeruya
+passages:
+- 1Re 11:15, 16
+summary: Después de la derrota de Edom, Joab, jefe del ejército de David, sube a enterrar a los caídos. Él y las tropas de
+  Israel se quedan seis meses y matan a todos los varones edomitas.
+reason: 1Re 11:15, 16 lo cuenta al presentar a Hadad. Perspicacia «Edom» lo relaciona con la victoria de David en el valle
+  de la Sal, fechada entre 1070 y c. 1040 a.e.c.; el libro vuelve atrás.
+sources:
+- 1-reyes-11
+- it-edom
+- it-hadad
+- si-3
+- tnm-b7
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

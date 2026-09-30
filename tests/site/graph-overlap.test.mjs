@@ -4,9 +4,13 @@
 // at 1440 x 900 (mouse) and 430 x 932 (touch, graph view requested by hand), with "Solo lo vigente" on and off. In
 // every view no two nodes, labels, meta lines or sector labels may overlap, and nothing may fall outside the canvas or
 // under another element (the folded sheet on the phone). No edge may run through another node's shape, name or meta
-// line, or through a sector label (more than 3 px inside its box). The meta line (verb and reference) goes only on
-// nodes whose edge is strong and current; nodes of other dates carry «ya pasó» or «aún no». No meta line and no «+N»
-// label may be cut with an ellipsis.
+// line, or through a sector label (more than 3 px inside its box). The meta line (verb and reference) goes on nodes
+// whose edge is strong and current. A line that touches an event carries its word instead (a few words: «presente»,
+// «estuvo aquí», «ocurre aquí»), and an event or a stop says also when it is against the cursor («ocurre ahora»,
+// «3 meses antes»), which the rule for events asks for (events are shown by their distance to the cursor, not by the
+// switch); so does a line between a person and a place that comes from an event. Any other node carries no meta line;
+// nodes of other dates carry «ya pasó» or «aún no», or the time words of their event. No meta line and no «+N» label
+// may be cut with an ellipsis.
 //
 // Run from the repository root:
 //   node --test --test-concurrency=1 tests/site/graph-*.test.mjs
@@ -133,16 +137,25 @@ function measure() {
       if (inside(x1, y1, x2, y2, p)) crossings.push(`edge to ${parts.find((q) => q.owner === end && !q.el.classList.contains('be-node'))?.text || end} × ${p.text}`);
     }
   }
-  // The meta line: strong and current edges only; other dates say so in words.
+  // The meta line: strong and current edges; the word of a line that touches an event; an event's distance to the
+  // cursor; other dates say so in words.
   const metas = [];
+  const WHEN = /^(ocurre ahora|(menos de un día|\d+ (día|días|semanas|meses|año|años)|un siglo|unos \d+ siglos) (antes|después))$/;
   canvas.querySelectorAll('.gnodo[data-gnodo]').forEach((n) => {
     const meta = n.querySelector('.be-gnode__meta')?.textContent.trim() || '';
+    const word = n.querySelector('.be-gnode__meta .gnodo-verbo')?.textContent.trim() || '';
+    const when = n.querySelector('.be-gnode__meta .gnodo-cuando')?.textContent.trim() || '';
     const strong = !!canvas.querySelector(`svg g[data-arista="${n.dataset.gnodo}"].arista--fuerte`);
     const name = n.querySelector('.be-gnode__label')?.textContent.trim();
-    if (n.classList.contains('gnodo--pasado') || n.classList.contains('gnodo--futuro')) {
-      const word = n.classList.contains('gnodo--pasado') ? 'ya pasó' : 'aún no';
-      if (meta !== word) metas.push(`«${name}» of another date says «${meta}», not «${word}»`);
-    } else if (strong !== !!meta) metas.push(`«${name}»: ${strong ? 'a strong edge without its meta line' : `a meta line «${meta}» on an edge that is not strong`}`);
+    if (n.classList.contains('gnodo--suceso')) {
+      if (!word) metas.push(`event «${name}» without the word of its line`);
+      if (!WHEN.test(when)) metas.push(`event «${name}» does not say when it is against the cursor: «${when}»`);
+    } else if (n.classList.contains('gnodo--pasado') || n.classList.contains('gnodo--futuro')) {
+      const past = n.classList.contains('gnodo--pasado'), other = past ? 'ya pasó' : 'aún no';
+      const eventWords = word && WHEN.test(when) && when.endsWith(past ? ' antes' : ' después');
+      if (meta !== other && when !== other && !eventWords) metas.push(`«${name}» of another date says «${meta}», not «${other}» nor when its event was`);
+    } else if (strong) { if (!meta) metas.push(`«${name}»: a strong edge without its meta line`); }
+    else if (meta && !(word && meta === word + when && word.split(/\s+/).length <= 4 && (!when || WHEN.test(when)))) metas.push(`«${name}»: a meta line «${meta}» on an edge that is not strong and is not the word of an event's line`);
   });
   const cut = [...canvas.querySelectorAll('.be-gnode__meta, .gnodo--grupo .be-gnode__label')]
     .filter((el) => el.checkVisibility() && el.scrollWidth > el.clientWidth + 1).map((el) => el.textContent.trim().slice(0, 40));

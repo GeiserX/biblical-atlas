@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ebenezer
+name: Ebenézer
+names:
+- name: Ebenézer
+  note: No es la piedra que Samuel levantó y llamó así más de veinte años después, entre Mizpá y Jesaná (1Sa 7:12; Perspicacia
+    «Ebenézer», núm. 2).
+type: city
+lat: 32.080844
+lon: 34.956936
+precision: uncertain
+coord_source: openbible:abfdefc
+coord_url: https://www.openbible.info/geo/ancient/abfdefc/ebenezer-1
+coord_note: Segunda identificación de OpenBible, Majdel Yaba, que Perspicacia propone con reservas, a unos 4 km al sureste
+  de Afec. La primera de OpenBible es Izbet Sartah.
+summary: Lugar junto al que acampó Israel frente a los filisteos, que estaban en Afec. Allí Israel perdió dos batallas, murieron
+  Hofní y Finehás y el Arca cayó en manos filisteas.
+reason: 'Perspicacia «Ebenézer», núm. 1, y 1Sa 4:1-11. OpenBible: solo el punto.'
+sources:
+- it-ebenezer
+- 1-samuel-4
+- openbible-geo
+- 1-samuel-5
+links:
+- title: 'Perspicacia: «Ebenézer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001248
+  type: perspicacia
+- title: 1 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/4
+  type: bible
+- title: 1 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

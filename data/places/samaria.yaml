@@ -5,6 +5,9 @@ names:
 - name: Samaria
 - name: Sebaste
   note: Nombre griego que le dio Herodes el Grande en honor de Augusto.
+- name: Montaña de Samaria
+  note: Así llama Amós al monte de la ciudad (Am 4:1; 6:1). Monte y ciudad llevaban el nombre de Sémer, su dueño antes de
+    Omrí (Perspicacia «Samaria», núm. 1).
 type: city
 lat: 32.276111
 lon: 35.195
@@ -23,6 +26,15 @@ sources:
 - oseas-7
 - oseas-8
 - oseas-13
+- amos-3
+- it-amos-libro
+- amos-4
+- amos-6
+- amos-8
+- miqueas-1
+- 1-reyes-20
+- it-ben-hadad
+- 1-reyes-22
 links:
 - title: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
@@ -30,5 +42,5 @@ links:
 - title: 1 Reyes 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -5,6 +5,8 @@ names:
 - name: Quiryat-Arbá
   note: Nombre antiguo de la ciudad.
 - name: Hebrón
+- name: Estanque de Hebrón
+  note: Junto a él colgaron a los asesinos de Is-Bóset; OpenBible no lo sitúa aparte.
 type: city
 lat: 31.525087
 lon: 35.10222
@@ -34,6 +36,11 @@ sources:
 - josue-21
 - jueces-1
 - jueces-16
+- 1-samuel-30
+- 2-samuel-3
+- 2-samuel-4
+- 2-samuel-5
+- 2-samuel-15
 links:
 - title: 'Perspicacia: «Hebrón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001956

@@ -38,6 +38,10 @@ sources:
 - oseas-5
 - oseas-10
 - oseas-12
+- amos-3
+- amos-4
+- amos-5
+- amos-7
 - josue-8
 - josue-12
 - josue-16
@@ -46,6 +50,10 @@ sources:
 - jueces-1
 - jueces-20
 - jueces-21
+- 1-samuel-7
+- 1-samuel-13
+- 1-reyes-12
+- 1-reyes-13
 links:
 - title: 'Perspicacia: «Betel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000682
@@ -64,5 +72,5 @@ history:
   change: 'Se decide Luz: su límite se queda en 1473 a.e.c., cuando el relato vuelve a llamar Betel a la ciudad. La toma
     por la casa de José (Jue 1:22-26), que según Perspicacia pone fin al nombre Luz, no tiene año.'
   source: it-betel
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

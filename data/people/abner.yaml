@@ -1,0 +1,107 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abner
+name: Abner
+names:
+- name: Abner
+perspicacia: '1200000057'
+summary: Benjamita, hijo de Ner y tío de Saúl, jefe de su ejército. Muerto Saúl, hizo rey a Is-Bóset en Mahanaim; más tarde
+  pactó con David, y Joab lo mató en Hebrón.
+reason: Perspicacia «Abner», párr. 1 a 4; 1Sa 14:50, 51.
+sources:
+- it-abner
+- 1-samuel-14
+- 1-samuel-17
+- 1-samuel-20
+- 1-samuel-26
+- 2-samuel-2
+- 2-samuel-3
+- 2-samuel-4
+- 1-reyes-2
+links:
+- title: 'Perspicacia: «Abner»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000057
+  type: perspicacia
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+- title: 1 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/17
+  type: bible
+relations:
+- type: kin
+  person: ner
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-14
+  - it-abner
+  - 1-samuel-26
+  - 2-samuel-2
+  - 2-samuel-3
+  - 1-reyes-2
+  reason: '1Sa 14:50, 51: Abner hijo de Ner.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: saul
+  word: master
+  inferred: false
+  sources:
+  - 1-samuel-14
+  - it-abner
+  - 1-samuel-17
+  - 1-samuel-26
+  - 2-samuel-2
+  reason: '1Sa 14:50: era el jefe del ejército de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: is-boset
+  word: master
+  inferred: true
+  sources:
+  - 2-samuel-2
+  - it-joab
+  - it-is-boset
+  reason: '2Sa 2:8, 12: lo hace rey y sale a Gabaón con sus siervos. Perspicacia «Joab», núm. 2, dice que mandaba sus fuerzas.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: ally
+  date:
+    from: -1076
+    to: -1074
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-abner
+  - it-david
+  - it-is-boset
+  reason: '2Sa 3:12, 13, 21: Abner propone un pacto a David, que lo acepta; Perspicacia «Abner» dice que se pasó a su lado.
+    Fecha como su muerte («David», párr. 20).'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-abner
+  reason: '2Sa 3:27, 32: Joab lo mata en la puerta de Hebrón, donde lo entierran.'
+  checked_on: '2026-09-29'
+  status: verified
+history:
+- date: '2026-09-29'
+  change: Is-bóset pasa a Is-Bóset, la grafía de la TNM en 2Sa 2:8-12.
+  source: 2-samuel-2
+- date: '2026-09-29'
+  change: 'Se dice dónde lo mató Joab: en Hebrón (2Sa 3:27).'
+  source: 2-samuel-3
+checked_on: '2026-09-30'
+status: verified

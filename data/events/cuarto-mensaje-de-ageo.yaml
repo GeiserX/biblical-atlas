@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: cuarto-mensaje-de-ageo
+title: Ageo promete a Zorobabel el favor de Jehová
+date:
+  from: -519
+  to: -519
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 24 de kislev de 520 a.e.c.
+  detail:
+    month: kislev
+    day: 24
+narrative_order:
+  series: ageo
+  order: 2020
+places:
+- jerusalen
+people:
+- ageo
+- zorobabel
+passages:
+- Ag 2:20-23
+summary: El mismo día, Ageo comunica a Zorobabel que Jehová derribará los reinos de las naciones y que a él, a quien eligió,
+  lo hará como un anillo de sellar.
+reason: Ag 2:20 lo pone el mismo día 24 que el mensaje anterior. «Toda Escritura», párr. 12, y el recuadro de Perspicacia «Ageo,
+  Libro de» lo describen como el cuarto mensaje, dirigido a Zorobabel.
+sources:
+- ageo-2
+- it-ageo-libro
+- si-ageo
+- it-zorobabel
+- w07-ageo-y-zacarias
+links:
+- title: 'Perspicacia: «Ageo, Libro de»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001813
+  type: perspicacia
+- title: Ageo 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/37/2
+  type: bible
+checked_on: '2026-09-29'
+status: verified

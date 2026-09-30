@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elhanan-derriba-a-un-gigante-en-gob
+title: Elhanán derriba a un gigante en Gob
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: después de tomar Rabá, en los últimos años del reinado de David)'
+narrative_order:
+  series: 2-samuel
+  order: 21019
+places:
+- gob
+people:
+- elhanan-hijo-de-jair
+roles: {}
+passages:
+- 2Sa 21:19
+- 1Cr 20:5
+summary: En otra guerra en Gob, Elhanán derriba a un gigante con una lanza de asta enorme. El texto dice Goliat el guitita;
+  1Cr 20:5 dice Lahmí, hermano de Goliat.
+reason: '2Sa 21:19; Perspicacia «Lahmí»: probablemente murió Lahmí, sin ficha, así que nadie lleva papel. Fecha: tras la toma
+  de Rabá (1Cr 20:4), en los últimos sucesos del reinado (Perspicacia «Samuel, Libros de»); 2 Samuel acaba c. 1040.'
+sources:
+- 2-samuel-21
+- it-elhanan
+- it-lahmi
+- it-goliat
+- it-samuel-libros
+- tnm-b7
+- tnm-tabla
+- si-3
+links:
+- title: 2 Samuel 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/21
+  type: bible
+checked_on: '2026-09-29'
+status: verified

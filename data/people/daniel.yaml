@@ -51,5 +51,7 @@ relations:
   reason: 'Perspicacia «Daniel», núm. 2: sirvió en la corte de Babilonia desde su llegada hasta el tercer año de Ciro.'
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified
+distinct_from:
+- kileab

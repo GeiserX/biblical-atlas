@@ -30,5 +30,10 @@ relations:
   reason: 'Éx 6:17: segundo hijo de Guersón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- simei-hijo-de-guera
+- sama-hijo-de-jese
+- simei-partidario-de-david
+- simei-hijo-de-ela

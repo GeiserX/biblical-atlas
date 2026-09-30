@@ -1502,6 +1502,15 @@ entries:
   - 1-samuel-3
   - it-samuel
   reason: '1Sa 1:25 y 3:1: Ana llevó el niño a Elí, y Samuel servía bajo su supervisión. Elí es su custodio.'
+- file: people/samuel
+  relation: samuel/accompanies/eli
+  remove: true
+  redirect_to: samuel/tie/eli/custodian
+  sources:
+  - 1-samuel-2
+  - it-samuel
+  reason: '1Sa 2:11: Samuel servía a Jehová a cargo de Elí. Es el mismo trato que el de custodio, escrito del otro
+    lado; «ayudante de» no es una palabra del vocabulario.'
 - file: people/bartimeo
   relation: bartimeo/accompanies/jesus
   set:

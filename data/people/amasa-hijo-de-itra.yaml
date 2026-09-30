@@ -1,0 +1,105 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amasa-hijo-de-itra
+name: Amasá
+names:
+- name: Amasá
+perspicacia: 1200000220#1
+disambiguation: Amasá hijo de Itrá y de Abigaíl, jefe del ejército de Absalón; no Amasá hijo de Hadlai, el efraimita de 2
+  Crónicas 28.
+summary: Sobrino de David y primo de Absalón y de Joab. Absalón le dio el mando de su ejército en lugar de Joab; vencida la
+  rebelión, David le ofreció ese puesto, pero Joab lo mató a traición.
+reason: Perspicacia «Amasá», núm. 1; 2Sa 17:25; 1Cr 2:16, 17.
+sources:
+- it-amasa
+- 2-samuel-17
+- 2-samuel-19
+- 2-samuel-20
+- 1-reyes-2
+links:
+- title: 'Perspicacia: «Amasá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000220
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: kin
+  person: itra
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-itra
+  - 1-reyes-2
+  reason: 2Sa 17:25 lo hace hijo de Itrá el israelita.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: abigail-hija-de-nahas
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-abigail
+  reason: '2Sa 17:25: su padre tuvo relaciones con Abigaíl hija de Nahás; Perspicacia «Abigail», núm. 2, la da por su madre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: joab-hijo-de-zeruya
+  word: cousin
+  inferred: true
+  sources:
+  - 2-samuel-17
+  - it-amasa
+  - 2-samuel-20
+  reason: '2Sa 17:25: su madre era hermana de Zeruyá, la madre de Joab. Perspicacia «Amasá», núm. 1, los llama primos.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: uncle
+  inferred: true
+  sources:
+  - 2-samuel-17
+  - it-abigail
+  - it-amasa
+  - 2-samuel-19
+  reason: 2Sa 17:25 da a Abigaíl por su madre y 1Cr 2:16, 17 la hace hermana de David; Perspicacia duda si era media hermana.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: gabaon
+  sources:
+  - 2-samuel-20
+  - it-amasa
+  reason: '2Sa 20:8-10: Joab lo mata junto a la gran piedra de Gabaón.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: absalon
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-amasa
+  reason: '2Sa 17:25: Absalón pone a Amasá al frente del ejército en lugar de Joab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-19
+  - 2-samuel-20
+  - it-amasa
+  - 1-reyes-2
+  reason: '2Sa 19:13: David le promete el mando del ejército en lugar de Joab; 20:4, 5: le manda convocar a Judá.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

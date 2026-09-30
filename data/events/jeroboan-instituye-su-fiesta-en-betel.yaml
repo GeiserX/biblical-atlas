@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeroboan-instituye-su-fiesta-en-betel
+title: Jeroboán instituye su propia fiesta y sacerdocio en Betel
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 15 hesván 997 a.e.c.
+  detail:
+    month: hesvan
+    day: 15
+narrative_order:
+  series: 1-reyes
+  order: 12031
+places:
+- betel
+people:
+- jeroboan-i
+passages:
+- 1Re 12:31-33
+summary: Jeroboán hace templos en lugares altos y nombra sacerdotes que no son levitas. Fija una fiesta el día 15 del octavo
+  mes, parecida a la de Judá, y sube al altar de Betel a ofrecer sacrificios a los becerros.
+reason: El estudio 3, párr. 7, dice que en 997 a.e.c. Jeroboán rompió con la casa de David y apartó a Israel de Jehová (2Re
+  17:21). El octavo mes es hesván (Bul). Perspicacia «Betel» y «Jeroboán», núm. 1, párr. 5.
+sources:
+- 1-reyes-12
+- si-3
+- it-jeroboan
+- it-betel
+links:
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

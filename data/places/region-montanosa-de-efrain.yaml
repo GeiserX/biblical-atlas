@@ -29,6 +29,10 @@ sources:
 - jueces-17
 - jueces-18
 - jueces-19
+- 1-samuel-9
+- 1-samuel-14
+- 2-samuel-20
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Efraín»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001401
@@ -36,5 +40,5 @@ links:
 - title: Josué 17 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/17
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

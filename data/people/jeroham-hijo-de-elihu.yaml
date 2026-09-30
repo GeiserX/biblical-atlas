@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeroham-hijo-de-elihu
+name: Jeroham
+names:
+- name: Jeroham
+perspicacia: 1200002432#1
+disambiguation: Jeroham padre de Elcaná y abuelo de Samuel; no los otros seis Jeroham que distingue Perspicacia.
+summary: Levita descendiente de Cohat, hijo de Elihú, padre de Elcaná y abuelo del profeta Samuel.
+reason: Perspicacia «Jeroham», núm. 1; 1Sa 1:1.
+sources:
+- it-jeroham
+- 1-samuel-1
+links:
+- title: 'Perspicacia: «Jeroham»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002432
+  type: perspicacia
+relations:
+- type: kin
+  person: elihu-hijo-de-tohu
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-1
+  reason: '1Sa 1:1: Jeroham era hijo de Elihú.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

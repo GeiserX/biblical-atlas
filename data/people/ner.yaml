@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ner
+name: Ner
+names:
+- name: Ner
+perspicacia: '1200003226'
+summary: Benjamita, hijo de Abiel y padre de Abner. Perspicacia, con 1 Crónicas, lo hace también padre de Quis y, por tanto,
+  abuelo del rey Saúl.
+reason: Perspicacia «Ner»; 1Sa 14:50, 51.
+sources:
+- it-ner
+- 1-samuel-14
+links:
+- title: 'Perspicacia: «Ner»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003226
+  type: perspicacia
+- title: 1 Samuel 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/14
+  type: bible
+relations:
+- type: kin
+  person: abiel-hijo-de-zeror
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-14
+  - it-ner
+  - it-abiel
+  reason: '1Sa 14:51: Ner era hijo de Abiel.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

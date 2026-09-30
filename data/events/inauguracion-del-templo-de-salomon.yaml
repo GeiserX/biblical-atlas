@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: inauguracion-del-templo-de-salomon
+title: Salomón inaugura el templo con sacrificios y fiesta
+date:
+  from: -1025
+  to: -1025
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1026 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: 1-reyes
+  order: 8062
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 8:62-66
+- 2Cr 7:4-10
+summary: Salomón ofrece 22.000 reses y 120.000 ovejas, santifica el centro del patio porque el altar de cobre no basta y celebra
+  catorce días de fiesta con gente venida de Lebó-Hamat al torrente de Egipto.
+reason: 'Perspicacia «Salomón», apartado «Inauguración del templo»: fue en Etanim (1Re 8:2) de 1026 a.e.c.; habían pasado
+  once meses desde el final de la obra (bul de 1027). Descarta 1014, la fecha que sugiere la Septuaginta.'
+sources:
+- 1-reyes-8
+- it-salomon
+- it-etanim
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/8
+  type: bible
+checked_on: '2026-09-30'
+status: verified

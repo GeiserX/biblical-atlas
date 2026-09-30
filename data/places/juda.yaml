@@ -29,9 +29,15 @@ sources:
 - it-oseas-libro
 - si-oseas
 - joel-3
+- amos-2
+- miqueas-1
+- nahum-1
 - josue-15
 - josue-19
 - jueces-15
+- 1-samuel-30
+- sofonias-1
+- 1-reyes-12
 links:
 - title: 'Perspicacia: «Judá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002538
@@ -68,5 +74,5 @@ candidates:
   note: 'Centro: media de los puntos de OpenBible de Jerusalén, Hebrón y Belén. El radio de 50 km es nuestro, una referencia
     y no la frontera.'
   coord_source: calculation
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

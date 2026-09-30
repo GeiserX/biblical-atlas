@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: etbaal
+name: Etbaal
+names:
+- name: Etbaal
+perspicacia: '1200001436'
+summary: Padre de Jezabel y rey de los sidonios. Al casarla con Acab se alió con Israel. Perspicacia lo iguala con el Itobal
+  que, según Menandro, era sacerdote de Astarté.
+reason: Perspicacia «Etbaal»; 1Re 16:31.
+sources:
+- it-etbaal
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Etbaal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001436
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: holds_office
+  place: sidon
+  office: king
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-etbaal
+  - it-jezabel
+  reason: 1Re 16:31 lo llama rey de los sidonios; Perspicacia «Acab», núm. 1, y «Jezabel», núm. 1, lo hacen rey de Sidón.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

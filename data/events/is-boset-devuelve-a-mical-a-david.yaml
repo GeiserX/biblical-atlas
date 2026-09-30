@@ -1,0 +1,49 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: is-boset-devuelve-a-mical-a-david
+title: Is-Bóset devuelve a Mical a David
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: al final de los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 3014
+places:
+- bahurim
+people:
+- david
+- is-boset
+- mical
+- paltiel-hijo-de-lais
+- abner
+present:
+- mical
+- paltiel-hijo-de-lais
+- abner
+passages:
+- 2Sa 3:14-16
+summary: David pide a Is-Bóset su esposa Mical, por la que pagó cien prepucios de filisteos. Is-Bóset se la quita a Paltiel,
+  que la sigue llorando hasta Bahurim, donde Abner lo manda volver.
+reason: '2Sa 3:14-16; Perspicacia «Bahurim» y «Paltiel», núm. 2. Bahurim es el único lugar que nombra el texto. Fecha: Perspicacia
+  «David» e «Is-bóset»; «Hebrón» la retrasaría hasta c. 1070.'
+sources:
+- 2-samuel-3
+- it-bahurim
+- it-paltiel
+- it-mical
+- si-3
+- it-david
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

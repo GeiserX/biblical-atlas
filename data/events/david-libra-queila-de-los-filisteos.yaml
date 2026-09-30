@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-libra-queila-de-los-filisteos
+title: David libra Queilá de los filisteos
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David huye de Saúl, que muere en 1078)'
+narrative_order:
+  series: 1-samuel
+  order: 23001
+places:
+- queila
+people:
+- david
+present:
+- david
+passages:
+- 1Sa 23:1-5
+summary: 'Los filisteos saquean las eras de Queilá. David consulta dos veces a Jehová, porque sus hombres tienen miedo, y
+  baja a luchar: los derrota, se lleva su ganado y salva a la ciudad.'
+reason: 1Sa 23:1-5; Perspicacia «Queilá». Entre 1107 (nace David, estudio 3) y 1078 a.e.c. (muere Saúl, Perspicacia «Jonatán»,
+  núm. 2).
+sources:
+- 1-samuel-23
+- it-queila
+- si-3
+- it-jonatan
+- it-david
+links:
+- title: 1 Samuel 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/23
+  type: bible
+checked_on: '2026-09-29'
+status: verified

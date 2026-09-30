@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-fortifica-gueba-y-mizpa
+title: Asá fortifica Gueba y Mizpá con lo que Baasá dejó en Ramá
+date:
+  from: -961
+  to: -961
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 962 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 15021
+places:
+- rama-de-benjamin
+- gueba
+- mizpa-de-benjamin
+- tirza
+people:
+- asa
+- baasa
+present:
+- asa
+passages:
+- 1Re 15:21, 22
+- 2Cr 16:5, 6
+summary: Al saber del ataque sirio, Baasá abandona Ramá y se queda en Tirzá. Asá convoca a todo Judá, se lleva de Ramá la
+  piedra y la madera y con ellas fortifica Gueba y Mizpá.
+reason: 1Re 15:21, 22; Perspicacia «Ramá», núm. 1, «Gueba» y «Asá», núm. 1. La fecha, hacia 962 a.e.c., es la del ataque sirio
+  (Perspicacia «Ben-hadad», núm. 1).
+sources:
+- 1-reyes-15
+- it-rama
+- it-gueba
+- it-mizpa
+- it-asa
+- it-ben-hadad
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Asá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joas-hijo-del-rey
+name: Joás
+names:
+- name: Joás
+perspicacia: 1200002474#6
+disambiguation: El «hijo del rey» al que Acab entregó a Micaya; no es Joás, padre de Gedeón, ni los reyes Jehoás.
+distinct_from:
+- joas-padre-de-gedeon
+- jehoas-de-juda
+- jehoas-de-israel
+summary: Hombre de la corte de Acab, llamado el hijo del rey, que recibió con Amón la orden de encarcelar a Micaya.
+reason: Perspicacia «Joás», núm. 6; 1Re 22:26, 27 y 2Cr 18:25, 26.
+sources:
+- it-joas
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Joás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002474
+  type: perspicacia
+not_claimed:
+- 'No decimos que fuera hijo de Acab: Perspicacia deja abierto si era su hijo, un oficial de sangre real o alguien muy unido
+  a la familia del rey.'
+checked_on: '2026-09-30'
+status: verified

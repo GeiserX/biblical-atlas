@@ -49,10 +49,8 @@
 .minimapa .be-minimap__win { top: -4px; bottom: -4px; min-width: 4px; border-width: 1.5px; background: rgba(255, 255, 255, .45); pointer-events: none; }
 .minimapa-cursor { position: absolute; top: -5px; bottom: -5px; width: 2px; margin-left: -1px; background: var(--gold); pointer-events: none; }
 
-/* Fecha de la barra superior: se puede escribir (T-20). */
-#fecha { cursor: text; position: relative; }
-#fecha.editando .be-date__value, #fecha.editando .be-date__hint, #fecha.editando .fecha-otra { visibility: hidden; }
-.fecha-entrada { position: absolute; inset: 3px 6px; width: calc(100% - 12px); border: 1px solid var(--gold); border-radius: var(--r-sm); padding: 0 8px; font: 600 var(--fs-md) var(--font-sans); color: var(--ink); background: var(--surface); outline: none; }
+/* Fecha de la barra superior: abre el panel de la fecha (datepicker.css). */
+#fecha { position: relative; }
 
 /* Carriles */
 .carriles-eje { height: 26px; border-bottom: 1px solid var(--line); display: flex; align-items: center; padding: 0 6px 0 12px; }

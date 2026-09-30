@@ -40,3 +40,5 @@ relations:
   reason: Lu 2:37 dice que no se apartaba del templo; Perspicacia «Ana» (núm. 2) cree que pasaba allí el día entero.
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- ana-madre-de-samuel

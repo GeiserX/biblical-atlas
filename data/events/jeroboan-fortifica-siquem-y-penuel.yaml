@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeroboan-fortifica-siquem-y-penuel
+title: Jeroboán fortifica Siquem y Penuel
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 12025
+places:
+- siquem
+- penuel
+- region-montanosa-de-efrain
+people:
+- jeroboan-i
+passages:
+- 1Re 12:25
+summary: Ya rey, Jeroboán reconstruye Siquem, ciudad de la serranía de Efraín, y vive en ella. Después sale y reconstruye
+  Penuel, al este del Jordán. La nota admite «fortificó» en los dos casos.
+reason: 'Perspicacia «Jeroboán», núm. 1, párr. 5: lo hizo en cuanto lo nombraron rey, en 997 a.e.c. (estudio 3, párr. 7);
+  «Penuel», núm. 3, y «Siquem».'
+sources:
+- 1-reyes-12
+- it-jeroboan
+- it-penuel
+- it-siquem
+- si-3
+links:
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

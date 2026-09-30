@@ -1,0 +1,74 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hofni
+name: Hofní
+names:
+- name: Hofní
+perspicacia: '1200002069'
+summary: Hijo mayor del sumo sacerdote Elí y sacerdote en Siló con su hermano Finehás. Robaba carne de los sacrificios y se
+  acostaba con las mujeres que servían en el tabernáculo. Murió el día en que los filisteos tomaron el Arca.
+reason: Perspicacia «Hofní» y «Finehás», núm. 2, que llama a Finehás el menor; 1Sa 1:3 y 2:12-17, 22-25, 34.
+sources:
+- it-hofni
+- it-finehas
+- 1-samuel-1
+- 1-samuel-2
+- 1-samuel-4
+links:
+- title: 'Perspicacia: «Hofní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002069
+  type: perspicacia
+relations:
+- type: kin
+  person: eli
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-4
+  reason: '1Sa 1:3: Hofní y Finehás eran los dos hijos de Elí.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: finehas-hijo-de-eli
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  - it-finehas
+  - 1-samuel-4
+  reason: 1Sa 1:3 y 2:34 nombran juntos a los dos hijos de Elí.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: silo
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - it-hofni
+  - it-silo
+  - 1-samuel-4
+  reason: '1Sa 1:3: servía de sacerdote a Jehová en Siló.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: silo
+  office: priest
+  inferred: false
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  reason: '1Sa 1:3: Hofní y Finehás servían de sacerdotes a Jehová en Siló; 1Sa 2:12-17 cuenta cómo trataban las ofrendas.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: ebenezer
+  inferred: true
+  sources:
+  - it-ebenezer
+  - 1-samuel-4
+  reason: 'Perspicacia «Ebenézer», núm. 1: cayó en la derrota cerca de Ebenézer (1Sa 4:10, 11).'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

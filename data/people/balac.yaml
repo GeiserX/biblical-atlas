@@ -22,6 +22,7 @@ sources:
 - numeros-22
 - numeros-23
 - numeros-24
+- miqueas-6
 - josue-24
 - jueces-11
 links:
@@ -50,6 +51,7 @@ relations:
   sources:
   - numeros-22
   - it-balac
+  - miqueas-6
   - josue-24
   - jueces-11
   reason: 'Nú 22:4, 10: era rey de Moab.'

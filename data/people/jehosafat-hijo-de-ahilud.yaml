@@ -1,0 +1,63 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehosafat-hijo-de-ahilud
+name: Jehosafat
+names:
+- name: Jehosafat
+perspicacia: 1200002383#1
+disambiguation: El registrador de David y de Salomón, hijo de Ahilud; no el rey Jehosafat de Judá, hijo de Asá, ni el comisario
+  de Salomón hijo de Parúah.
+distinct_from:
+- jehosafat
+- jehosafat-hijo-de-parua
+summary: Hijo de Ahilud. Fue el registrador de la corte durante los reinados de David y de Salomón.
+reason: Perspicacia «Jehosafat», núm. 1; 2Sa 8:16; 1Cr 18:15.
+sources:
+- it-jehosafat
+- 2-samuel-8
+- 2-samuel-20
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Jehosafat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+relations:
+- type: kin
+  person: ahilud
+  word: father
+  sources:
+  - 2-samuel-8
+  - it-ahilud
+  - 2-samuel-20
+  - 1-reyes-4
+  reason: '2Sa 8:16: Jehosafat hijo de Ahilud.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-8
+  - it-jehosafat
+  - 2-samuel-20
+  reason: '2Sa 8:16; 20:24: era el registrador de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:3: era el registrador del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

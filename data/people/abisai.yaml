@@ -1,0 +1,108 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abisai
+name: Abisái
+names:
+- name: Abisái
+- name: Abisai
+  note: Grafía de Perspicacia.
+perspicacia: '1200000050'
+summary: 'Guerrero valiente y leal a David, su tío, aunque impulsivo: quiso matar a Saúl dormido y, años después, a Simeí.
+  Su madre era Zeruyá y sus hermanos, Joab y Asahel.'
+reason: Perspicacia «Abisai», párr. 1 y 3; 1Sa 26:6-9.
+sources:
+- it-abisai
+- 1-samuel-26
+- 2-samuel-2
+- 2-samuel-3
+- 2-samuel-10
+- 2-samuel-16
+- 2-samuel-18
+- 2-samuel-19
+- 2-samuel-20
+- 2-samuel-21
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Abisai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000050
+  type: perspicacia
+- title: 1 Samuel 26 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/26
+  type: bible
+relations:
+- type: kin
+  person: zeruya
+  word: mother
+  inferred: false
+  sources:
+  - 1-samuel-26
+  - it-abisai
+  - 2-samuel-2
+  - 2-samuel-3
+  - 2-samuel-16
+  - 2-samuel-18
+  - 2-samuel-19
+  - 2-samuel-21
+  - 2-samuel-23
+  reason: 1Sa 26:6 lo llama hijo de Zeruyá.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: joab-hijo-de-zeruya
+  word: brother
+  inferred: false
+  sources:
+  - 1-samuel-26
+  - it-abisai
+  - 2-samuel-2
+  - 2-samuel-3
+  - 2-samuel-10
+  - 2-samuel-18
+  - 2-samuel-20
+  - 2-samuel-23
+  reason: 1Sa 26:6 lo presenta como hermano de Joab.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: uncle
+  inferred: false
+  sources:
+  - it-abisai
+  - it-zeruya
+  reason: 'Perspicacia «Abisai»: su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:15, 16), a quien apoyó con
+    lealtad.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: david
+  word: companion
+  inferred: false
+  sources:
+  - 1-samuel-26
+  - it-abisai
+  - 2-samuel-21
+  reason: '1Sa 26:6, 7: se ofrece a bajar con David al campamento de Saúl y entra con él de noche.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: asahel-hijo-de-zeruya
+  word: brother
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-asahel
+  - 2-samuel-3
+  reason: 2Sa 2:18 nombra a Abisái y a Asahel entre los tres hijos de Zeruyá.
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:18, 19: jefe de otros tres guerreros de David; mató a 300 hombres con su lanza.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

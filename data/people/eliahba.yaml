@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliahba
+name: Eliahbá
+names:
+- name: Eliahbá
+perspicacia: '1200001294'
+summary: Saalbonita, uno de los treinta guerreros de David; quizá era de Saalbim.
+reason: Perspicacia «Eliahbá» y «Saalbonita»; 2Sa 23:32.
+sources:
+- it-eliahba
+- it-saalbonita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Eliahbá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001294
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:32: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -13,6 +13,22 @@ reason: Perspicacia «Joab», núm. 2; 2Sa 8:16 y 1Re 2:28-34. Según el encabez
 sources:
 - it-joab
 - salmos-60
+- 2-samuel-2
+- 2-samuel-3
+- 2-samuel-8
+- 2-samuel-10
+- 2-samuel-11
+- 2-samuel-12
+- 2-samuel-14
+- 2-samuel-17
+- 2-samuel-18
+- 2-samuel-19
+- 2-samuel-20
+- 2-samuel-23
+- 2-samuel-24
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-11
 links:
 - title: 'Perspicacia: «Joab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002469
@@ -30,5 +46,51 @@ relations:
   reason: Su madre, Zeruyá, era hermana o media hermana de David (1Cr 2:13-16; Perspicacia «Joab», núm. 2).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: zeruya
+  word: mother
+  inferred: false
+  sources:
+  - 1-samuel-26
+  - it-zeruya
+  - 2-samuel-2
+  - 2-samuel-3
+  - 2-samuel-8
+  - 2-samuel-14
+  - 2-samuel-17
+  - 2-samuel-23
+  - 1-reyes-1
+  - 1-reyes-2
+  reason: 1Sa 26:6 llama a Abisái hijo de Zeruyá y hermano de Joab; Perspicacia «Zeruyá» la da por madre de los dos.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: asahel-hijo-de-zeruya
+  word: brother
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-asahel
+  - 2-samuel-3
+  - 2-samuel-23
+  reason: '2Sa 2:18, 22: Joab, Abisái y Asahel son los tres hijos de Zeruyá, y Abner llama a Joab hermano de Asahel.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-2
+  - it-joab
+  - 2-samuel-14
+  - 2-samuel-24
+  - 2-samuel-8
+  - 2-samuel-20
+  - 1-reyes-1
+  reason: '2Sa 2:13, 30: sale al frente de los siervos de David (Perspicacia «Joab», núm. 2); en 14:19, 20, 22 se presenta
+    como siervo del rey. 8:16 y 20:23: era el jefe de su ejército.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

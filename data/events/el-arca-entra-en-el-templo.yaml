@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-arca-entra-en-el-templo
+title: Los sacerdotes llevan el Arca al templo de Salomón
+date:
+  from: -1025
+  to: -1025
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1026 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: 1-reyes
+  order: 8001
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 8:1-11
+- 2Cr 5:2-14
+summary: En la fiesta del mes de Etanim, los sacerdotes suben el Arca desde la Ciudad de David y la dejan en el Santísimo,
+  bajo los querubines. Una nube llena la casa y deja fuera a los sacerdotes.
+reason: 'Perspicacia «Salomón», apartado «Inauguración del templo»: fue en Etanim (1Re 8:2) de 1026 a.e.c.; habían pasado
+  once meses desde el final de la obra (bul de 1027). Descarta 1014, la fecha que sugiere la Septuaginta.'
+sources:
+- 1-reyes-8
+- it-salomon
+- it-etanim
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/8
+  type: bible
+checked_on: '2026-09-30'
+status: verified

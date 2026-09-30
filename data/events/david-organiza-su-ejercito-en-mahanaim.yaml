@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-organiza-su-ejercito-en-mahanaim
+title: David organiza su ejército en Mahanaim
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 18001
+places:
+- mahanaim
+people:
+- david
+- joab-hijo-de-zeruya
+- abisai
+- ittai-el-guitita
+- absalon
+present:
+- david
+- joab-hijo-de-zeruya
+- abisai
+- ittai-el-guitita
+passages:
+- 2Sa 18:1-5
+summary: David cuenta a sus hombres y los reparte en tres cuerpos, bajo Joab, Abisái e Ittái. A petición de ellos se queda
+  en la ciudad, y ordena a los jefes tratar con cuidado al joven Absalón.
+reason: '2Sa 18:1-5; Perspicacia «Absalón» y «Mahanaim»: la ciudad es Mahanaim. Fecha: después del pacto con David (después
+  de 1070) y antes de que Gad y Natán acabaran 2 Samuel, c. 1040 (estudio 3).'
+sources:
+- 2-samuel-18
+- it-absalon
+- it-mahanaim
+- it-ittai
+- si-3
+links:
+- title: 2 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/18
+  type: bible
+checked_on: '2026-09-29'
+status: verified

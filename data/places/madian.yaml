@@ -26,6 +26,8 @@ sources:
 - hechos-7
 - numeros-25
 - numeros-31
+- habacuc-3
+- 1-reyes-11
 links:
 - title: 'Perspicacia: «Madián, madianitas»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003041
@@ -48,5 +50,5 @@ history:
   source: it-madian
   change: Devuelve al resumen las cautelas de Perspicacia, que da la zona de Aqaba como lo que se cree y a los madianitas de
     junto a Moab como lo que parece.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

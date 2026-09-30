@@ -18,6 +18,8 @@ sources:
 - it-omri
 - 1-reyes-16
 - tnm-a6-a
+- miqueas-6
+- si-miqueas
 links:
 - title: 'Perspicacia: «Omrí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003324
@@ -45,5 +47,23 @@ relations:
   reason: Edificó Samaria y trasladó allí la capital (1Re 16:24).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+- type: lived_in
+  place: tirza
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-omri
+  reason: '1Re 16:23: reinó seis años en Tirzá antes de fundar Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: true
+  sources:
+  - 1-reyes-16
+  reason: 1Re 16:28 da su sepultura en Samaria, no el sitio de su muerte; tomamos el del entierro, la ciudad donde reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200003324#3
+checked_on: '2026-09-30'
 status: verified

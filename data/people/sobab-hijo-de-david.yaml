@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sobab-hijo-de-david
+name: Sobab
+names:
+- name: Sobab
+perspicacia: 1200004074#2
+disambiguation: Sobab hijo de David (núm. 2 de Perspicacia); no el hijo de Caleb, de la tribu de Judá.
+summary: Hijo de David y de Bat-Seba nacido en Jerusalén. Solo aparece en las listas de los hijos de David.
+reason: 'Perspicacia «Sobab», núm. 2; 2Sa 5:14. En Crónicas: 1Cr 3:5 y 14:4.'
+sources:
+- it-sobab
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Sobab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004074
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13, 14: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: bat-seba
+  word: mother
+  inferred: false
+  sources:
+  - it-sobab
+  reason: 1Cr 3:5 da a Bat-Seba como madre de Simeá, Sobab, Natán y Salomón.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

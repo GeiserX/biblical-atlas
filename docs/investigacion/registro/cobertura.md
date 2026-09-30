@@ -21,9 +21,9 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Josué](../../../data/coverage/josue.yaml) | 24 de 24 | 658 de 658 | 100 % |
 | [Jueces](../../../data/coverage/jueces.yaml) | 21 de 21 | 618 de 618 | 100 % |
 | [Rut](../../../data/coverage/rut.yaml) | 4 de 4 | 85 de 85 | 100 % |
-| 1 Samuel | 0 de 31 | 0 de 810 | 0 % |
-| 2 Samuel | 0 de 24 | 0 de 695 | 0 % |
-| 1 Reyes | 0 de 22 | 0 de 816 | 0 % |
+| [1 Samuel](../../../data/coverage/1-samuel.yaml) | 31 de 31 | 810 de 810 | 100 % |
+| [2 Samuel](../../../data/coverage/2-samuel.yaml) | 24 de 24 | 695 de 695 | 100 % |
+| [1 Reyes](../../../data/coverage/1-reyes.yaml) | 22 de 22 | 816 de 816 | 100 % |
 | 2 Reyes | 0 de 25 | 0 de 719 | 0 % |
 | 1 Crónicas | 0 de 29 | 0 de 942 | 0 % |
 | 2 Crónicas | 0 de 36 | 0 de 822 | 0 % |
@@ -42,14 +42,14 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | Daniel | 0 de 12 | 0 de 357 | 0 % |
 | [Oseas](../../../data/coverage/oseas.yaml) | 14 de 14 | 197 de 197 | 100 % |
 | [Joel](../../../data/coverage/joel.yaml) | 3 de 3 | 73 de 73 | 100 % |
-| Amós | 0 de 9 | 0 de 146 | 0 % |
-| Abdías | 0 de 1 | 0 de 21 | 0 % |
-| Jonás | 0 de 4 | 0 de 48 | 0 % |
-| Miqueas | 0 de 7 | 0 de 105 | 0 % |
-| Nahúm | 0 de 3 | 0 de 47 | 0 % |
-| Habacuc | 0 de 3 | 0 de 56 | 0 % |
-| Sofonías | 0 de 3 | 0 de 53 | 0 % |
-| Ageo | 0 de 2 | 0 de 38 | 0 % |
+| [Amós](../../../data/coverage/amos.yaml) | 9 de 9 | 146 de 146 | 100 % |
+| [Abdías](../../../data/coverage/abdias.yaml) | 1 de 1 | 21 de 21 | 100 % |
+| [Jonás](../../../data/coverage/jonas.yaml) | 4 de 4 | 48 de 48 | 100 % |
+| [Miqueas](../../../data/coverage/miqueas.yaml) | 7 de 7 | 105 de 105 | 100 % |
+| [Nahúm](../../../data/coverage/nahum.yaml) | 3 de 3 | 47 de 47 | 100 % |
+| [Habacuc](../../../data/coverage/habacuc.yaml) | 3 de 3 | 56 de 56 | 100 % |
+| [Sofonías](../../../data/coverage/sofonias.yaml) | 3 de 3 | 53 de 53 | 100 % |
+| [Ageo](../../../data/coverage/ageo.yaml) | 2 de 2 | 38 de 38 | 100 % |
 | Zacarías | 0 de 14 | 0 de 211 | 0 % |
 | Malaquías | 0 de 4 | 0 de 55 | 0 % |
 | [Mateo](../../../data/coverage/mateo.yaml) | 28 de 28 | 1068 de 1068 | 100 % |
@@ -60,10 +60,10 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [Romanos](../../../data/coverage/romanos.yaml) | 16 de 16 | 432 de 432 | 100 % |
 | [1 Corintios](../../../data/coverage/1-corintios.yaml) | 16 de 16 | 437 de 437 | 100 % |
 | [2 Corintios](../../../data/coverage/2-corintios.yaml) | 13 de 13 | 257 de 257 | 100 % |
-| Gálatas | 0 de 6 | 0 de 149 | 0 % |
-| Efesios | 0 de 6 | 0 de 155 | 0 % |
-| Filipenses | 0 de 4 | 0 de 104 | 0 % |
-| Colosenses | 0 de 4 | 0 de 95 | 0 % |
+| [Gálatas](../../../data/coverage/galatas.yaml) | 6 de 6 | 149 de 149 | 100 % |
+| [Efesios](../../../data/coverage/efesios.yaml) | 6 de 6 | 155 de 155 | 100 % |
+| [Filipenses](../../../data/coverage/filipenses.yaml) | 4 de 4 | 104 de 104 | 100 % |
+| [Colosenses](../../../data/coverage/colosenses.yaml) | 4 de 4 | 95 de 95 | 100 % |
 | 1 Tesalonicenses | 0 de 5 | 0 de 89 | 0 % |
 | 2 Tesalonicenses | 0 de 3 | 0 de 47 | 0 % |
 | 1 Timoteo | 0 de 6 | 0 de 113 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 658 de 1189 | 18141 de 31062 | 58 % |
+| **Total** | 787 de 1189 | 21479 de 31062 | 69 % |
 
 ## Capítulos empezados
 

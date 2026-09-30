@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-hace-los-utensilios-de-oro-del-templo
+title: Salomón hace los utensilios de oro del templo
+date:
+  from: -1033
+  to: -1026
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1034 y 1027 a.e.c. (tiempo narrativo: durante la obra del templo)'
+narrative_order:
+  series: 1-reyes
+  order: 7048
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+passages:
+- 1Re 7:48-50
+- 2Cr 4:19-22
+summary: Salomón manda hacer de oro el altar, la mesa del pan de la presencia, los diez candelabros, las lámparas, los demás
+  utensilios y las bisagras de las puertas del Santísimo y del Santo.
+reason: 1Re 7:48-50. Es parte de la obra del templo, que el estudio 3 pone entre 1034 y 1027 a.e.c.; Perspicacia «Salomón»
+  lee 7:13-51 como la vuelta al relato del templo.
+sources:
+- 1-reyes-7
+- si-3
+- it-salomon
+links:
+- title: 1 Reyes 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/7
+  type: bible
+checked_on: '2026-09-30'
+status: verified

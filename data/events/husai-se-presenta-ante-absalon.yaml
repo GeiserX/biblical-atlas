@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: husai-se-presenta-ante-absalon
+title: Absalón entra en Jerusalén y Husái se ofrece a servirle
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 16015
+places:
+- jerusalen
+people:
+- absalon
+- husai
+- ahitofel
+- david
+present:
+- absalon
+- husai
+- ahitofel
+passages:
+- 2Sa 15:37
+- 2Sa 16:15-19
+summary: Absalón ocupa Jerusalén con los hombres de Israel y con Ahitofel. Husái lo aclama como rey y, ante su burla, responde
+  que servirá al que eligieron Jehová y el pueblo, como sirvió a David.
+reason: '2Sa 15:37; 16:15-19; Perspicacia «Husai» y «Absalón». Fecha: tras el pacto con David (c. 1070) y antes de acabarse
+  2 Samuel (c. 1040, tabla de libros); lámina B7.'
+sources:
+- 2-samuel-15
+- 2-samuel-16
+- it-husai
+- tnm-b7
+- it-absalon
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Husai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002114
+  type: perspicacia
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+checked_on: '2026-09-29'
+status: verified

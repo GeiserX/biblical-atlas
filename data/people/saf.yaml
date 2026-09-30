@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: saf
+name: Saf
+names:
+- name: Saf
+- name: Sipai
+  note: Así lo llama 1Cr 20:4; Perspicacia da los dos nombres.
+perspicacia: '1200003834'
+summary: Gigante de los refaím que peleó con los filisteos contra Israel. Sibecái el husatita lo mató en Gob.
+reason: Perspicacia «Saf»; 2Sa 21:18, 22.
+sources:
+- it-saf
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Saf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003834
+  type: perspicacia
+relations:
+- type: died_in
+  place: gob
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-saf
+  reason: '2Sa 21:18: Sibecái lo mató en la guerra de Gob.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

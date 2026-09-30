@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: bicri
+name: Bicrí
+names:
+- name: Bicrí
+perspicacia: '1200000725'
+summary: Benjaminita, padre o antepasado de Seba, el que se sublevó contra David. De él toman nombre los bicritas que siguieron
+  a Seba hasta Abel de Bet-Maacá.
+reason: Perspicacia «Bicrí»; 2Sa 20:1, 14.
+sources:
+- it-bicri
+- 2-samuel-20
+links:
+- title: 'Perspicacia: «Bicrí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000725
+  type: perspicacia
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

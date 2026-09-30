@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-se-aparece-a-salomon-por-segunda-vez
+title: Jehová se aparece a Salomón por segunda vez
+date:
+  from: -1013
+  to: -1013
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1014 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 9001
+places:
+- jerusalen
+people:
+- salomon
+present: []
+passages:
+- 1Re 9:1-9
+- 2Cr 7:11-22
+summary: Acabados el templo y el palacio, Jehová le dice a Salomón que ha oído su oración. Si es fiel como David, su trono
+  durará; si Israel sirve a otros dioses, el templo quedará en ruinas.
+reason: 'Perspicacia «Salomón», apartado «Inauguración del templo»: la aparición fue en su año 24, 1014 a.e.c., al acabar
+  los veinte años de obras. El texto habla del templo de Jerusalén, pero no dice dónde estaba Salomón.'
+sources:
+- 1-reyes-9
+- it-salomon
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

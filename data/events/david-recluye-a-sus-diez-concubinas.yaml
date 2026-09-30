@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-recluye-a-sus-diez-concubinas
+title: David recluye a sus diez concubinas
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 20003
+places:
+- jerusalen
+people:
+- david
+present:
+- david
+passages:
+- 2Sa 20:3
+summary: De vuelta en su casa de Jerusalén, David pone bajo guardia a las diez concubinas que había dejado allí. Las mantiene,
+  pero no vuelve a tener relaciones con ellas; viven como viudas hasta morir.
+reason: '2Sa 20:3; sus referencias recuerdan por qué las dejó y lo que Absalón hizo con ellas. Fecha: desde 1070 (estudio
+  3) hasta hacia 1040, final de 2 Samuel (tabla de los libros).'
+sources:
+- 2-samuel-20
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

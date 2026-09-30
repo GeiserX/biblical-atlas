@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: omri-funda-samaria
+title: Omrí compra el monte de Samaria y funda la ciudad
+date:
+  from: -944
+  to: -944
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 945 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 16023
+places:
+- samaria
+people:
+- omri
+- semer-de-samaria
+present:
+- omri
+passages:
+- 1Re 16:23, 24
+summary: Tras seis años en Tirzá, Omrí compra a Sémer por dos talentos de plata la montaña de Samaria, edifica en ella una
+  ciudad y la llama Samaria por el nombre de su antiguo dueño.
+reason: '1Re 16:23, 24; Perspicacia «Sémer», núm. 3, pone hacia 945 a.e.c. el comienzo de su gobierno desde allí; «Omrí»,
+  núm. 3: a mitad de su reinado.'
+sources:
+- 1-reyes-16
+- it-semer
+- it-omri
+- it-samaria
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Sémer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004004
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uri-padre-de-gueber
+name: Urí
+names:
+- name: Urí
+perspicacia: 1200004520#2
+disambiguation: Urí, padre de Guéber; no el padre de Bezalel ni el portero levita de tiempos de Esdras.
+distinct_from:
+- uri-hijo-de-hur
+summary: Padre de Guéber, el comisario de Salomón en la tierra de Galaad.
+reason: Perspicacia «Urí», núm. 2; 1Re 4:19.
+sources:
+- it-uri
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Urí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004520
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

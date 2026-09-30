@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jasen
+name: Jasén
+names:
+- name: Jasén
+- name: Hasem
+  note: Así lo llama 1Cr 11:34.
+perspicacia: '1200002335'
+summary: Hombre cuyos hijos figuran en la lista de los guerreros de David. En la lista paralela se llama Hasem el guizonita.
+reason: Perspicacia «Jasén»; 2Sa 23:32.
+sources:
+- it-jasen
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Jasén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002335
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

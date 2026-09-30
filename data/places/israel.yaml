@@ -9,6 +9,12 @@ names:
   from: -996
   note: Nombre que Oseas alterna con Israel para el reino de diez tribus, por Efraín, su tribu más influyente (Os 13:1; 14:8).
     Lo usan también Isaías y Jeremías.
+- name: José
+  note: Amós llama así al reino del norte, por José, padre de Efraín y Manasés (Am 5:6, 15; 6:6). Perspicacia «José» dice
+    que el nombre designa a veces a todas las tribus.
+- name: Samaria
+  note: Nombre de la capital aplicado a todo el reino del norte (Perspicacia «Samaria», núm. 2). Así se lee «el campo de Samaria»
+    de Abd 19, cuyas referencias remiten a 2Re 17:24 y Jer 31:5.
 type: country
 lat: null
 lon: null
@@ -54,11 +60,23 @@ sources:
 - oseas-9
 - oseas-13
 - oseas-14
+- amos-1
+- amos-2
+- amos-3
+- amos-4
+- amos-5
+- it-jose
+- amos-6
+- amos-7
+- amos-9
+- abdias-1
+- it-samaria
 - jueces-6
 - jueces-19
+- 1-reyes-12
 links:
 - title: 'Perspicacia: «Israel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002227
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

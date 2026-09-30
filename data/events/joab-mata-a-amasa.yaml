@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: joab-mata-a-amasa
+title: Joab mata a Amasá en Gabaón
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 20004
+places:
+- gabaon
+- jerusalen
+people:
+- amasa-hijo-de-itra
+- joab-hijo-de-zeruya
+- abisai
+- david
+present:
+- amasa-hijo-de-itra
+- joab-hijo-de-zeruya
+- abisai
+roles:
+  amasa-hijo-de-itra: died
+passages:
+- 2Sa 20:4-13
+- 1Re 2:5, 32
+summary: Amasá tarda en reunir a Judá y David manda a Abisái tras Seba. Junto a la gran piedra de Gabaón, Joab saluda a Amasá
+  como a un hermano y lo mata de una estocada; la tropa sigue a Joab.
+reason: '2Sa 20:4-13; Perspicacia «Amasá», núm. 1. David da las órdenes desde Jerusalén. Fecha: desde 1070 (estudio 3) hasta
+  hacia 1040, final de 2 Samuel (tabla de los libros).'
+sources:
+- 2-samuel-20
+- it-amasa
+- 1-reyes-2
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

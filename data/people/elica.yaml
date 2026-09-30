@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elica
+name: Elicá
+names:
+- name: Elicá
+- name: Eliqá
+  note: Grafía de Perspicacia.
+perspicacia: '1200001308'
+summary: Harodita, uno de los treinta guerreros de David. Al parecer era de un lugar llamado Harod.
+reason: Perspicacia «Eliqá» y «Harodita»; 2Sa 23:25.
+sources:
+- it-eliqa
+- it-harodita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Eliqá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001308
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:25: Elicá el harodita, uno de los treinta de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

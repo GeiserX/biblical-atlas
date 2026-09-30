@@ -22,15 +22,21 @@ sources:
 - salmos-68
 - salmos-135
 - salmos-136
+- amos-4
+- w07-joel-y-amos
 - numeros-21
 - numeros-32
 - deuteronomio-1
 - deuteronomio-3
 - deuteronomio-4
+- miqueas-7
+- w03-que-espera-jehova
+- nahum-1
 - josue-12
 - josue-13
 - josue-17
 - josue-22
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Basán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000574
@@ -47,5 +53,5 @@ links:
 - title: Salmo 136 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/136
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

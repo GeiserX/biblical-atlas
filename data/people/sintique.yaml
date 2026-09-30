@@ -24,7 +24,8 @@ links:
 - title: Filipenses 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200004283'
+checked_on: '2026-09-29'
 status: verified
 relations:
 - type: lived_in
@@ -32,6 +33,28 @@ relations:
   inferred: false
   sources:
   - it-sintique
+  - filipenses-4
   reason: Perspicacia la llama cristiana filipense.
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: pablo
+  caption: colaboradora
+  inverse_caption: colaborador
+  inferred: false
+  sources:
+  - filipenses-4
+  - it-sintique
+  reason: 'Flp 4:3: se esforzó con Pablo a favor de las buenas noticias. Perspicacia «Síntique» no dice dónde ni cuándo.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: accompanies
+  person: clemente
+  caption: colaboradora
+  inverse_caption: colaborador
+  inferred: false
+  sources:
+  - filipenses-4
+  reason: 'Flp 4:3: Síntique se esforzó por las buenas noticias junto a Pablo y también junto a Clemente.'
+  checked_on: '2026-09-29'
   status: verified

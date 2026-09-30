@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimelec-hijo-de-abiatar
+name: Ahimélec
+names:
+- name: Ahimélec
+perspicacia: 1200000158#2
+disambiguation: El sacerdote hijo de Abiatar y nieto del Ahimélec de Nob; no su abuelo, el sumo sacerdote al que mató Doeg,
+  ni Ahimélec el hitita.
+distinct_from:
+- ahimelec-hijo-de-ahitub
+- ahimelec-el-hitita
+summary: Sacerdote en los días de David, hijo de Abiatar, con el nombre de su abuelo. Junto con Sadoc sirvió a David, que
+  al final de su reinado organizó con ellos los turnos sacerdotales.
+reason: Perspicacia «Ahimélec», núm. 2, y «Sadoc», núm. 1; 2Sa 8:17; 1Cr 18:16; 24:3, 6.
+sources:
+- it-ahimelec
+- it-sadoc
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Ahimélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000158
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+relations:
+- type: kin
+  person: abiatar
+  word: father
+  sources:
+  - 2-samuel-8
+  - it-ahimelec
+  reason: '2Sa 8:17: Ahimélec hijo de Abiatar.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahimelec-hijo-de-ahitub
+  word: grandfather
+  inferred: true
+  sources:
+  - it-ahimelec
+  reason: 'Perspicacia «Ahimélec», núm. 2: nieto del sumo sacerdote que mató Doeg. 2Sa 8:17 solo da el padre, Abiatar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - 2-samuel-8
+  - it-ahimelec
+  reason: '2Sa 8:17: Sadoc y Ahimélec eran los sacerdotes de David.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

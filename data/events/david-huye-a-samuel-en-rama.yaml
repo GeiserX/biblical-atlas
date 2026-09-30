@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-huye-a-samuel-en-rama
+title: David huye a Ramá y se queda con Samuel en Nayot
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+narrative_order:
+  series: 1-samuel
+  order: 19018
+places:
+- ramataim-zofim
+people:
+- david
+- samuel
+passages:
+- 1Sa 19:18, 19
+summary: David escapa a Ramá y le cuenta a Samuel lo que le ha hecho Saúl. Los dos se van a Nayot y se quedan allí, y alguien
+  informa a Saúl de dónde está.
+reason: '1Sa 19:18, 19; Perspicacia «Samuel», «Nayot» y «Ramá», núm. 5. Sin año en jw.org: tras nacer David (1107, estudio
+  3) y antes de morir Jonatán (1078, Perspicacia «Jonatán», núm. 2).'
+sources:
+- 1-samuel-19
+- it-samuel
+- it-nayot
+- it-rama
+- si-3
+- it-jonatan
+links:
+- title: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  type: bible
+- title: 'Perspicacia: «Nayot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003176
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

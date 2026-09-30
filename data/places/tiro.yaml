@@ -24,7 +24,11 @@ sources:
 - marcos-7
 - hechos-12
 - joel-3
+- amos-1
 - josue-19
+- 2-samuel-24
+- 1-reyes-5
+- 1-reyes-7
 links:
 - title: 'Perspicacia: «Tiro»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004498
@@ -40,5 +44,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora el pasaje de Marcos que añade el resumen.
   source: marcos-7
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

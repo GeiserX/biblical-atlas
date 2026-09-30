@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abinadab-de-quiryat-jearim
+name: Abinadab
+names:
+- name: Abinadab
+perspicacia: 1200000046#1
+disambiguation: 'El vecino de Quiryat-Jearim que tuvo el Arca en su casa; Perspicacia distingue a otros tres Abinadab: un
+  hijo de Jesé, un hijo de Saúl y el padre de un comisario de Salomón.'
+summary: Habitante de Quiryat-Jearim. Cuando el Arca volvió de tierra filistea, la subieron a su casa, en la colina, y allí
+  se quedó muchos años, hasta que David la trasladó.
+reason: Perspicacia «Abinadab», núm. 1; 1Sa 7:1, 2.
+sources:
+- it-abinadab
+- 1-samuel-7
+- 2-samuel-6
+links:
+- title: 'Perspicacia: «Abinadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000046
+  type: perspicacia
+- title: 1 Samuel 7 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/7
+  type: bible
+relations:
+- type: lived_in
+  place: quiryat-jearim
+  inferred: false
+  sources:
+  - 1-samuel-7
+  - it-abinadab
+  - 2-samuel-6
+  reason: '1Sa 7:1: el Arca llegó a su casa, en Quiryat-Jearim.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+distinct_from:
+- abinadab-hijo-de-jese
+- abinadab-hijo-de-saul
+- abinadab-padre-de-ben-abinadab

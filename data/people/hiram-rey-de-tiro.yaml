@@ -1,0 +1,72 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hiram-rey-de-tiro
+name: Hiram
+names:
+- name: Hiram
+perspicacia: 1200002035#1
+disambiguation: Hiram rey de Tiro (núm. 1 de Perspicacia); no el artesano del mismo nombre que trabajó en el templo de Salomón.
+summary: Rey de Tiro en el siglo XI a.e.c. Tras la toma de Sion mandó a David cedro y artesanos para su casa; después ayudó
+  a Salomón con los materiales del templo.
+reason: Perspicacia «Hiram», núm. 1; 2Sa 5:11; 1Re 5:1-12.
+sources:
+- it-hiram
+- 2-samuel-5
+- 1-reyes-5
+- 1-reyes-9
+- 1-reyes-10
+links:
+- title: 'Perspicacia: «Hiram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002035
+  type: perspicacia
+relations:
+- type: lived_in
+  place: tiro
+  inferred: false
+  sources:
+  - 2-samuel-5
+  - it-hiram
+  - 1-reyes-5
+  - 1-reyes-9
+  reason: 2Sa 5:11 lo llama rey de Tiro.
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  place: tiro
+  office: king
+  inferred: false
+  sources:
+  - 2-samuel-5
+  - it-hiram
+  - 1-reyes-5
+  - 1-reyes-9
+  reason: '2Sa 5:11: el rey Hiram de Tiro.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: david
+  word: friend
+  inferred: false
+  sources:
+  - 2-samuel-5
+  - it-hiram
+  - 1-reyes-5
+  reason: '2Sa 5:11: envía a David mensajeros, cedro y artesanos; 1Re 5:1 dice que siempre fue amigo de David.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: ally
+  sources:
+  - 1-reyes-5
+  - it-hiram
+  - 1-reyes-9
+  - 1-reyes-10
+  reason: '1Re 5:12: Hiram y Salomón hacen un pacto y hay paz entre ellos; Perspicacia lo llama pacto de amistad entre las
+    dos naciones.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+distinct_from:
+- hiram-artesano

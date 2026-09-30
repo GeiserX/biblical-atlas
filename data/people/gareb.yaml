@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gareb
+name: Gareb
+names:
+- name: Gareb
+perspicacia: 1200001609#1
+summary: Itrita de la tribu de Judá, uno de los treinta guerreros de David.
+reason: Perspicacia «Gareb», núm. 1, e «Itrita»; 2Sa 23:38.
+sources:
+- it-gareb
+- it-itrita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Gareb»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001609
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:38: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

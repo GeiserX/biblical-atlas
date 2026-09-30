@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: rimon-de-beerot
+name: Rimón
+names:
+- name: Rimón
+perspicacia: 1200003734#1
+disambiguation: El padre de los asesinos de Is-Bóset; no las ciudades llamadas Rimón ni el dios sirio.
+summary: Benjamita de Beerot, padre de Recab y Baaná, los que asesinaron a Is-Bóset.
+reason: Perspicacia «Rimón», núm. 1; 2Sa 4:2, 5, 9.
+sources:
+- it-rimon
+- 2-samuel-4
+links:
+- title: 'Perspicacia: «Rimón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003734
+  type: perspicacia
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+relations:
+- type: lived_in
+  place: beerot
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-rimon
+  reason: '2Sa 4:2: Rimón el beerotita; Perspicacia «Rimón», núm. 1, dice que era de Beerot.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

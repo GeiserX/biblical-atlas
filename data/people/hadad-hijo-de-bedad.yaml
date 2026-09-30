@@ -57,5 +57,7 @@ relations:
   reason: Reinó en Edom tras Husam (Gé 36:31, 35).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- hadad-el-edomita

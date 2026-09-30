@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: afias
+name: Afías
+names:
+- name: Afías
+perspicacia: '1200000302'
+summary: Benjamita, el antepasado más lejano del rey Saúl que nombra la genealogía de Quis.
+reason: Perspicacia «Afías»; 1Sa 9:1.
+sources:
+- it-afias
+- 1-samuel-9
+links:
+- title: 'Perspicacia: «Afías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000302
+  type: perspicacia
+- title: 1 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/9
+  type: bible
+checked_on: '2026-09-29'
+status: verified

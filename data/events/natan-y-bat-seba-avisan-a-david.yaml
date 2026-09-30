@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: natan-y-bat-seba-avisan-a-david
+title: Natán y Bat-Seba avisan a David de lo de Adonías
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 1011
+places:
+- jerusalen
+people:
+- natan-profeta
+- bat-seba
+- david
+- abisag
+- salomon
+- adonias-hijo-de-david
+present:
+- natan-profeta
+- bat-seba
+- david
+- abisag
+passages:
+- 1Re 1:11-31
+summary: Natán aconseja a Bat-Seba que recuerde al rey su juramento de dar el trono a Salomón. Ella se lo dice a David en
+  su cuarto, Natán entra y lo confirma, y David jura que ese mismo día cumplirá.
+reason: '1Re 1:11-31; Perspicacia «Salomón», apartado «Entronización de Salomón», y «Bat-seba». Abisag atiende al rey (1:15).
+  Fecha: 1037, año en que Salomón sucede a David (estudio 3).'
+sources:
+- 1-reyes-1
+- it-salomon
+- it-bat-seba
+- it-natan
+- si-3
+links:
+- title: 1 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

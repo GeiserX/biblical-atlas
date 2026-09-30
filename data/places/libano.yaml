@@ -29,8 +29,12 @@ sources:
 - cantar-de-los-cantares-4
 - cantar-de-los-cantares-7
 - oseas-14
+- nahum-1
 - josue-1
 - josue-13
+- habacuc-2
+- 1-reyes-5
+- 1-reyes-9
 links:
 - title: 'Perspicacia: «Líbano»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002705
@@ -44,5 +48,5 @@ links:
 - title: Salmo 92 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/92
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

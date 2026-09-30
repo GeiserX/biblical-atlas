@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abi-albon
+name: Abí-Albón
+names:
+- name: Abí-Albón
+- name: Abiel
+  note: Nombre de la lista paralela de 1Cr 11:32; Perspicacia lo da por la misma persona.
+perspicacia: '1200000028'
+summary: Benjaminita, uno de los treinta y siete guerreros más valientes de David. Lo llaman arbatita, quizá porque era de
+  Bet-Arabá.
+reason: Perspicacia «Abí-albón», «Abiel», núm. 2, y «Arbatita»; 2Sa 23:31.
+sources:
+- it-abi-albon
+- it-abiel
+- it-arbatita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Abí-albón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000028
+  type: perspicacia
+relations:
+- type: lived_in
+  place: bet-araba
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-arbatita
+  reason: '2Sa 23:31: el arbatita. Perspicacia «Arbatita» lo hace vecino de Bet-Arabá; «Abí-albón» dice que quizá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:31: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- abiel-hijo-de-zeror

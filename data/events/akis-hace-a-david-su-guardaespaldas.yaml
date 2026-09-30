@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: akis-hace-a-david-su-guardaespaldas
+title: Akís hace a David su guardaespaldas
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 28001
+places:
+- filistea
+present: []
+people:
+- akis
+- david
+passages:
+- 1Sa 28:1, 2
+summary: Mientras los filisteos juntan su ejército contra Israel, Akís avisa a David de que irá con él a la guerra. David
+  responde con ambigüedad y el rey lo nombra su guardaespaldas para siempre.
+reason: Días antes de la batalla en que mueren Saúl y Jonatán, en 1078 (Perspicacia «Jonatán», núm. 2; el estudio 3 cierra
+  1 Samuel hacia 1078). El texto no dice dónde hablaron.
+sources:
+- 1-samuel-28
+- it-akis
+- it-david
+- it-jonatan
+- si-3
+links:
+- title: 1 Samuel 28 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/28
+  type: bible
+- title: 'Perspicacia: «Akís»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000078
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

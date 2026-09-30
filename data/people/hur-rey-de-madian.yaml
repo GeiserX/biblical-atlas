@@ -8,6 +8,7 @@ disambiguation: Hur, rey de Madián; no el compañero de Moisés ni el abuelo de
 distinct_from:
 - hur-companero-de-moises
 - hur-hijo-de-caleb
+- hur-padre-del-comisario-de-efrain
 summary: Rey de Madián que dependía del amorreo Sehón hasta que Israel lo venció. Perspicacia cree que luego se alió con Balac;
   murió en la guerra de Israel contra Madián, junto con Balaam.
 reason: Perspicacia «Hur», núm. 3; Nú 31:8; Jos 13:21. Según «Madián, madianitas», núm. 3, vivían al parecer junto a Moab y
@@ -32,7 +33,7 @@ history:
 - date: '2026-09-29'
   change: 'La relación con Sehón estaba al revés: es su vasallo, no su señor (Jos 13:21 y su nota).'
   source: josue-13
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 relations:
 - type: lived_in

@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-confirmado-rey-en-guilgal
+title: Israel confirma a Saúl como rey en Guilgal
+date:
+  from: -1116
+  to: -1115
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1116 a.e.c. (tiempo narrativo: un mes después de que Saúl fuera elegido rey)'
+narrative_order:
+  series: 1-samuel
+  order: 11014
+places:
+- guilgal
+people:
+- saul
+- samuel
+passages:
+- 1Sa 11:14, 15
+summary: A propuesta de Samuel, todo el pueblo va a Guilgal y allí, delante de Jehová, vuelve a hacer rey a Saúl. Ofrecen
+  sacrificios de paz y Saúl y los israelitas lo celebran con mucha alegría.
+reason: '1Sa 11:14, 15; Perspicacia «Guilgal», núm. 1, y «Samuel». Fecha: la unción de Saúl es de 1117 (estudio 3) y esto,
+  un mes después (Perspicacia «Saúl»).'
+sources:
+- 1-samuel-11
+- it-guilgal
+- it-samuel
+- it-saul
+- si-3
+links:
+- title: 1 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/11
+  type: bible
+- title: 'Perspicacia: «Guilgal»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

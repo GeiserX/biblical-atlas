@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ramataim-zofim
+name: Ramá
+names:
+- name: Ramá
+  note: Forma corta que usa el relato desde 1Sa 1:19; Perspicacia la trata como Ramá, núm. 5.
+- name: Ramataim-Zofim
+  note: Nombre largo de 1Sa 1:1. La nota al pie permite leer «de Ramá, un zufita»; Perspicacia lo da por la misma ciudad.
+- name: Nayot
+  note: 'Nayot de Ramá (1Sa 19:18-24): sitio donde al parecer vivían profetas; Perspicacia «Nayot» cree que era un barrio
+    o paraje de esta ciudad.'
+type: city
+lat: 32.028056
+lon: 35.019444
+precision: uncertain
+coord_source: openbible:a90f6e1
+coord_url: https://www.openbible.info/geo/ancient/a90f6e1/ramah-4
+coord_note: Rantis, sexta identificación de OpenBible. Perspicacia nombra Rentis como el sitio de una tradición antigua recogida
+  por Eusebio, sin darlo por seguro. Es el mismo punto de Arimatea.
+summary: Ciudad de la región montañosa de Efraín, llamada también Ramataim-Zofim. Allí vivían Elcaná y Ana, allí nació Samuel
+  y desde su casa en ella juzgó él más tarde a Israel.
+reason: 'Perspicacia «Ramá», núm. 5, y «Ramataim-zofim»; 1Sa 1:1, 19; 2:11. No es la Ramá de Benjamín. OpenBible: solo el punto.'
+sources:
+- it-rama
+- it-ramataim-zofim
+- openbible-geo
+- 1-samuel-1
+- 1-samuel-2
+- 1-samuel-7
+- 1-samuel-8
+- 1-samuel-15
+- 1-samuel-16
+- it-nayot
+- 1-samuel-19
+- 1-samuel-25
+- 1-samuel-28
+links:
+- title: 'Perspicacia: «Ramá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003630
+  type: perspicacia
+- title: 'Perspicacia: «Ramataim-zofim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003631
+  type: perspicacia
+- title: 1 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/1
+  type: bible
+- title: 'Perspicacia: «Nayot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003176
+  type: perspicacia
+- title: 1 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/19
+  type: bible
+not_claimed:
+- 'Que fuera la Arimatea de José: Perspicacia solo dice que Rentis encajaría con las dos.'
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elhanan-hijo-de-dodo
+name: Elhanán
+names:
+- name: Elhanán
+perspicacia: 1200001289#2
+disambiguation: Elhanán hijo de Dodó de Belén; no Elhanán hijo de Jaír, que abatió a Lahmí.
+summary: Hijo de Dodó, de Belén, y uno de los treinta guerreros de David.
+reason: Perspicacia «Elhanán», núm. 2; 2Sa 23:24.
+sources:
+- it-elhanan
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Elhanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001289
+  type: perspicacia
+relations:
+- type: kin
+  person: dodo-de-belen
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:24: Elhanán, hijo de Dodó de Belén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:24: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elhanan-hijo-de-jair

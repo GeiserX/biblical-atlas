@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeroboan-huye-a-egipto
+title: Jeroboán huye a Egipto, junto a Sisac
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de la profecía de Ahíya y antes de morir Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 11040
+places:
+- egipto
+people:
+- jeroboan-i
+- sisaq
+- salomon
+present:
+- jeroboan-i
+- sisaq
+passages:
+- 1Re 11:40
+- 1Re 12:2
+summary: Salomón intenta matar a Jeroboán, quizá al conocer la promesa de Ahíya. Jeroboán escapa a Egipto, donde reina Sisac,
+  y se queda allí hasta la muerte de Salomón.
+reason: 1Re 11:40 y 12:2; Perspicacia «Jeroboán», núm. 1, párr. 3, y «Sisaq». Sigue a la profecía de Ahíya, posterior a los
+  veinte años de obras, acabados en 1014 (Perspicacia «Salomón»), y dura hasta la muerte de Salomón, hacia 998 a.e.c.
+sources:
+- 1-reyes-11
+- 1-reyes-12
+- it-jeroboan
+- it-sisaq
+- it-salomon
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

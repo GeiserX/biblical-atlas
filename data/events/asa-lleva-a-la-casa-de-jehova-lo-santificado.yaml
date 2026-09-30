@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-lleva-a-la-casa-de-jehova-lo-santificado
+title: Asá lleva al templo lo que había santificado
+date:
+  from: -977
+  to: -962
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 978 y 963 a.e.c. (tiempo narrativo: hasta la asamblea del año 15 de Asá)'
+narrative_order:
+  series: 1-reyes
+  order: 15015
+places:
+- jerusalen
+people:
+- asa
+passages:
+- 1Re 15:15
+- 2Cr 15:18
+summary: Asá entrega a la casa de Jehová la plata, el oro y los utensilios que él y su padre Abiyam habían dedicado.
+reason: 1Re 15:15. 2Cr 15:18 lo pone junto a la asamblea del año 15 de Asá, que Perspicacia «Asá», núm. 1, fecha en 963 a.e.c.
+  El reinado empieza en 978 (A6-A).
+sources:
+- 1-reyes-15
+- it-asa
+- tnm-a6-a
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Asá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

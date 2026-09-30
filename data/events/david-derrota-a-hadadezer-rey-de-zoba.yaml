@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-derrota-a-hadadezer-rey-de-zoba
+title: David derrota a Hadadézer de Zobá y a los sirios de Damasco
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 8003
+places:
+- hamat
+- zoba
+- damasco
+- betah
+- berota
+- jerusalen
+people:
+- david
+- hadadezer
+present:
+- david
+- hadadezer
+passages:
+- 2Sa 8:3-8
+- 1Cr 18:3-8
+- Sl 60
+summary: David vence a Hadadézer, rey de Zobá, y a los sirios de Damasco que acuden a ayudarlo. Pone guarniciones en Damasco
+  y lleva a Jerusalén los escudos de oro y mucho cobre de Bétah y Berotái.
+reason: 2Sa 8:3-8 no dice dónde; 1Cr 18:3 y Perspicacia «Tibhat» la ponen junto a Hamat, primer lugar. La recuerda el Sl 60;
+  «Zobá» ve posible que sea la guerra ammonita. Tras el pacto (c. 1070), antes de c. 1040.
+sources:
+- 2-samuel-8
+- it-hadadezer
+- it-zoba
+- it-david
+- tnm-b7
+- si-3
+- salmos-60
+- it-tibhat
+links:
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

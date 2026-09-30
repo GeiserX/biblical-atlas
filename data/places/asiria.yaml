@@ -3,6 +3,9 @@ id: asiria
 name: Asiria
 names:
 - name: Asiria
+- name: Tierra de Nemrod
+  note: Así llama Miq 5:6 a Asiria (La Atalaya de 1976). Perspicacia «Nemrod» y «Asiria» lo comparan con las ciudades que
+    Nemrod construyó allí (Gé 10:11, 12).
 type: country
 lat: 36.3594
 lon: 43.1528
@@ -24,6 +27,13 @@ sources:
 - oseas-7
 - oseas-8
 - oseas-9
+- miqueas-5
+- it-nemrod
+- w76-hacha
+- nahum-1
+- nahum-3
+- it-medos
+- sofonias-2
 links:
 - title: 'Perspicacia: «Asiria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000447

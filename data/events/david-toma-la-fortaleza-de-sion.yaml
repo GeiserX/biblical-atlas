@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-toma-la-fortaleza-de-sion
+title: David toma la fortaleza de Sion
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1070 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 5006
+places:
+- jerusalen
+people:
+- david
+passages:
+- 2Sa 5:6-10
+- 1Cr 11:4-9
+summary: David y sus hombres atacan a los jebuseos, que se burlaban de él, y toman la fortaleza de Sion. David vive en ella,
+  la llama Ciudad de David y construye alrededor, desde el Montículo.
+reason: El estudio 3 pone en 1070 que David hace de Jerusalén su capital (2Sa 5:3-7). Perspicacia «Jerusalén», párr. 21-22,
+  y «Montículo».
+sources:
+- 2-samuel-5
+- si-3
+- it-jerusalen
+- it-david
+- it-monticulo
+links:
+- title: 'Perspicacia: «Jerusalén»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436
+  type: perspicacia
+- title: 'Perspicacia: «Montículo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003124
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+search: David toma Jerusalén jebuseos
+checked_on: '2026-09-29'
+status: verified

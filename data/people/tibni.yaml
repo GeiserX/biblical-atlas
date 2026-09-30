@@ -24,5 +24,27 @@ links:
 - title: 1 Reyes 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200004400'
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: kin
+  person: guinat
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-guinat
+  reason: '1Re 16:21, 22: Tibní hijo de Guinat.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: omri
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-tibni
+  reason: '1Re 16:21, 22: el pueblo se dividió entre Tibní y Omrí, y los de Omrí vencieron.'
+  checked_on: '2026-09-30'
+  status: verified

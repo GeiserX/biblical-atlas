@@ -4,7 +4,7 @@ name: Abías
 names:
 - name: Abías
 - name: Abiyam
-  note: Así lo llama 1 Reyes 15.
+  note: Así lo llaman 1Re 14:31 y 15:1-8; la nota de 14:31 dice que también se llamaba Abías.
 disambiguation: Segundo rey de Judá; no es el hijo de Jeroboán que murió joven ni el sacerdote de tiempos de David que dio
   nombre a una división.
 date:
@@ -24,6 +24,7 @@ sources:
 - 1-reyes-15
 - tnm-a6-a
 - mateo-1
+- 1-reyes-14
 links:
 - title: 'Perspicacia: «Abías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
@@ -40,8 +41,10 @@ relations:
   - it-abias
   - 2-cronicas-11
   - mateo-1
+  - 1-reyes-14
+  - 1-reyes-15
   reason: Rehoboam lo prefirió entre sus hijos para sucederle (2Cr 11:20-22).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: rehoboam
@@ -53,12 +56,72 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: maaca-hija-de-uriel
+  word: mother
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-maaca
+  reason: 1Re 15:2 da a Maacá, nieta de Abisalom, como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 1-reyes-15
+  reason: 1Re 15:3 llama a David su antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 1-reyes-15
+  reason: '1Re 15:2: reinó tres años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jeroboan-i
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-abias
+  reason: '1Re 15:7: hubo guerra entre Abiyam y Jeroboán; 2Cr 13 cuenta la batalla.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-reyes-15
+  reason: 1Re 15:8 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
+    reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: tabrimon
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-15
+  reason: '1Re 15:19: Asá habla del pacto que hubo entre su padre, Abiyam, y Tabrimón, el padre de Ben-Hadad.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200000041#5
 history:
 - date: '2026-09-29'
   change: Se añade el sacerdote Abías de Lu 1:5 (Perspicacia «Abías», núm. 4) entre sus homónimos.
   source: lucas-1
-checked_on: '2026-09-29'
+- date: '2026-09-30'
+  change: 1Re 14:31 ya lo llama Abiyam; la nota solo citaba el capítulo 15.
+  source: 1-reyes-14
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - abias-de-tiempos-de-david
+- abias-hijo-de-samuel
+- abias-hijo-de-jeroboan

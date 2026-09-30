@@ -1,0 +1,79 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sadoc-hijo-de-ahitub
+name: Sadoc
+names:
+- name: Sadoc
+perspicacia: 1200004652#1
+disambiguation: El sacerdote de David, hijo de Ahitub y de la línea de Eleazar; no Sadoc hijo de Azor, antepasado de José,
+  ni los demás Sadoc que numera Perspicacia.
+distinct_from:
+- sadoc-hijo-de-azor
+summary: Sacerdote de la línea de Eleazar, también llamado vidente, leal a David desde que lo hicieron rey. No apoyó a Adonías;
+  ungió a Salomón, que lo puso de sumo sacerdote en lugar de Abiatar.
+reason: Perspicacia «Sadoc», núm. 1, y «Ahitub», núm. 2; 2Sa 8:17; 1Cr 18:16.
+sources:
+- it-sadoc
+- it-ahitub
+- 2-samuel-8
+- 2-samuel-15
+- 2-samuel-17
+- 2-samuel-19
+- 2-samuel-20
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Sadoc»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004652
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: kin
+  person: ahitub-hijo-de-amarias
+  word: father
+  sources:
+  - 2-samuel-8
+  - it-ahitub
+  reason: '2Sa 8:17: Sadoc hijo de Ahitub; Perspicacia «Ahitub», núm. 2.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  office: priest
+  sources:
+  - 2-samuel-8
+  - it-sadoc
+  - 2-samuel-15
+  - 2-samuel-17
+  - 2-samuel-19
+  - 2-samuel-20
+  - 1-reyes-1
+  - 1-reyes-2
+  - 1-reyes-4
+  reason: '2Sa 8:17: Sadoc y Ahimélec eran los sacerdotes de David.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: succeeds
+  person: abiatar
+  office: high_priest
+  inferred: false
+  sources:
+  - 1-reyes-2
+  - it-sadoc
+  reason: '1Re 2:35: Salomón pone a Sadoc en el puesto de Abiatar; Perspicacia «Sadoc», núm. 1, dice que lo hizo sumo sacerdote.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -29,8 +29,8 @@ candidates:
     de Saná. Radio nuestro.'
   coord_source: openbible:a81ab85
   coord_url: https://www.openbible.info/geo/ancient/a81ab85/sheba-1
-summary: Reino próspero del suroeste de Arabia, conocido por su oro, sus perfumes y su incienso. Sl 72:10, 15 pone a sus reyes
-  entre los que llevarán regalos y oro al rey.
+summary: Reino próspero del suroeste de Arabia, conocido por su oro, sus perfumes y su incienso. Su reina visitó a Salomón
+  en Jerusalén, y Sl 72:10, 15 pone a sus reyes entre los que llevarán regalos al rey.
 reason: Perspicacia «Seba», núm. 6, que cita Sl 72:10, 15. No es la Saba de los viajeros del libro de Job, que Perspicacia
   «Sabeos», núm. 1, no sabe de qué Seba venían.
 sources:
@@ -39,6 +39,7 @@ sources:
 - openbible-geo
 - salmos-72
 - joel-3
+- 1-reyes-10
 links:
 - title: 'Perspicacia: «Seba»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003970
@@ -46,5 +47,9 @@ links:
 - title: Salmo 72 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/72
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: Se añade la visita de su reina a Salomón, que Perspicacia «Seba», núm. 6, pone en este reino del suroeste de Arabia.
+  source: 1-reyes-10
+checked_on: '2026-09-30'
 status: verified

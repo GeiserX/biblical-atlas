@@ -54,3 +54,6 @@ relations:
   status: verified
 checked_on: '2026-09-28'
 status: verified
+distinct_from:
+- azarias-hijo-de-natan
+- azarias-hijo-de-sadoc

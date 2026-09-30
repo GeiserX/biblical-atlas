@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: nabot
+name: Nabot
+names:
+- name: Nabot
+perspicacia: '1200003157'
+summary: Jezreelita dueño de una viña pegada al palacio de Acab. No quiso vendérsela porque era herencia de su familia; Jezabel
+  lo hizo acusar con testigos falsos y lo mataron a pedradas.
+reason: Perspicacia «Nabot»; 1Re 21:1-16. Según 2Re 9:26, también mataron a sus hijos.
+sources:
+- it-nabot
+- 1-reyes-21
+links:
+- title: 'Perspicacia: «Nabot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003157
+  type: perspicacia
+relations:
+- type: lived_in
+  place: jezreel
+  inferred: false
+  sources:
+  - 1-reyes-21
+  - it-nabot
+  reason: '1Re 21:1, 8: su viña estaba en Jezreel, su ciudad, y lo llaman el jezreelita.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jezreel
+  inferred: false
+  sources:
+  - 1-reyes-21
+  - it-nabot
+  reason: '1Re 21:13: lo apedrearon a las afueras de su ciudad, Jezreel.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

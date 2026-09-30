@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acab-levanta-un-templo-a-baal-en-samaria
+title: Acab levanta un templo a Baal en Samaria
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 940 y c. 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 16031
+places:
+- samaria
+people:
+- acab
+- jezabel
+present:
+- acab
+passages:
+- 1Re 16:31-33
+summary: 'Casado con Jezabel, hija del rey de los sidonios, Acab se pone a servir a Baal: le construye un templo en Samaria
+  con su altar y hace el poste sagrado.'
+reason: '1Re 16:31-33; Perspicacia «Acab», núm. 1, y «Jezabel», núm. 1, que ven en la boda el origen de ese culto. Fecha:
+  el reinado de Acab, c. 940-920 (A6-A).'
+sources:
+- 1-reyes-16
+- it-acab
+- it-jezabel
+- tnm-a6-a
+links:
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+- title: 'Perspicacia: «Acab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000138
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

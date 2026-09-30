@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: arubot
+name: Arubot
+names:
+- name: Arubot
+type: city
+lat: 32.404444
+lon: 35.203333
+precision: uncertain
+coord_source: openbible:a30e7ea
+coord_url: https://www.openbible.info/geo/ancient/a30e7ea/arubboth
+coord_note: Punto de ʽArraba, el sitio con que la relaciona Perspicacia; OpenBible pone primero Khirbet el-Hamam.
+summary: Ciudad desde la que el hijo de Hésed, comisario de Salomón, administraba Socó y la tierra de Héfer. Perspicacia la
+  relaciona con ʽArraba, cerca de Dotán, unos 14 km al norte de Samaria.
+reason: 'Perspicacia «Arubot»; 1Re 4:10. OpenBible: solo el punto.'
+sources:
+- it-arubot
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Arubot»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000392
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

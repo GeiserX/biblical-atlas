@@ -5,6 +5,9 @@ names:
 - name: Valle de Savé
 - name: Valle del Rey
   note: Otro nombre que le da Gé 14:17; Perspicacia cree que es el mismo valle de 2Sa 18:18.
+- name: Monumento de Absalón
+  note: Columna que Absalón se levantó en este valle por no tener hijo varón (2Sa 18:18; Perspicacia «Absalón»). No es otro
+    nombre del valle.
 type: valley
 lat: null
 lon: null
@@ -28,15 +31,21 @@ candidates:
   coord_source: openbible:a402ee4
   coord_url: https://www.openbible.info/geo/ancient/a402ee4/valley-of-shaveh
 summary: Valle donde el rey de Sodoma salió al encuentro de Abrán tras su victoria y donde Melquisedec lo bendijo. Estaba,
-  probablemente, cerca de Jerusalén.
+  probablemente, cerca de Jerusalén. Absalón se levantó allí una columna con su nombre.
 reason: Perspicacia «Savé, Llanura baja de»; Gé 14:17, 18. Hoy no se puede fijar el sitio exacto.
 sources:
 - it-save
 - openbible-geo
 - genesis-14
+- it-absalon
+- 2-samuel-18
 links:
 - title: 'Perspicacia: «Savé, Llanura baja de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003962
   type: perspicacia
+history:
+- date: '2026-09-29'
+  change: El resumen añade la columna de Absalón en el valle del Rey (2Sa 18:18; Perspicacia «Absalón»).
+  source: 2-samuel-18
 checked_on: '2026-09-29'
 status: verified

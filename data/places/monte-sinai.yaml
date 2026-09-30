@@ -5,6 +5,8 @@ names:
 - name: Monte Sinaí
 - name: Horeb
   note: Al parecer, otro nombre del monte o de la zona montañosa que lo rodea (Éx 3:1).
+- name: Montaña del Dios verdadero
+  note: Así llama 1Re 19:8 al Horeb, adonde llegó Elías huyendo de Jezabel.
 type: mountain
 lat: null
 lon: null
@@ -57,10 +59,10 @@ candidates:
     1999, párr. 5).
   coord_source: openbible:abfba2a
   coord_url: https://www.openbible.info/geo/ancient/abfba2a/mount-sinai
-summary: Monte donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad; lo más citado es un macizo
-  de dos cumbres en el sur de la península del Sinaí.
-reason: Perspicacia «Sinaí» (párr. 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin Bishar no aparecen
-  en wol.jw.org, así que no los incluimos.
+summary: Monte de Arabia, según Gál 4:25, donde Israel acampó casi un año y recibió la Ley. No se sabe cuál es con seguridad;
+  lo más citado es un macizo de dos cumbres en el sur de la península del Sinaí.
+reason: Perspicacia «Sinaí» (párr. 1, con Gál 4:25, y 3-6) y «Horeb» (párr. 3); el mapa B3 lo dibuja. Har Karkom y Jebel Sin
+  Bishar no aparecen en wol.jw.org, así que no los incluimos.
 sources:
 - it-sinai
 - it-horeb
@@ -89,6 +91,8 @@ sources:
 - deuteronomio-4
 - deuteronomio-5
 - deuteronomio-9
+- galatas-4
+- 1-reyes-19
 links:
 - title: 'Perspicacia: «Sinaí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
@@ -99,5 +103,12 @@ links:
 - title: Éxodo 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/19
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-29'
+  change: Añade que Pablo lo llama montaña de Arabia (Gál 4:25), con lo que abre Perspicacia «Sinaí», párr. 1.
+  source: galatas-4
+- date: '2026-09-29'
+  change: La razón cita el párr. 1 de Perspicacia «Sinaí», que apoya lo de Arabia.
+  source: galatas-4
+checked_on: '2026-09-30'
 status: verified

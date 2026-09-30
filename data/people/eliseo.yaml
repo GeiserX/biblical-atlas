@@ -4,17 +4,17 @@ name: Eliseo
 names:
 - name: Eliseo
 date:
-  from: -916
+  from: -939
   to: -843
   precision: range
   approx: true
   type: anchored
   chronology: tnm
-  text: desde c. 917 a.e.c. hasta el reinado de Jehoás de Israel
+  text: c. 940-844 a.e.c. (desde el reinado de Acab hasta el de Jehoás de Israel)
 summary: Hijo de Safat, de Abel-Meholá. Sirvió a Elías y lo sucedió hacia 917 con una doble porción de su espíritu. Profetizó
   unos sesenta años y murió en tiempos de Jehoás de Israel.
-reason: Perspicacia «Eliseo», párr. 1, 3, 5 y 26. Murió durante el reinado de Jehoás de Israel; el rango acaba donde A6-A cierra
-  ese reinado (c. 844), como tope.
+reason: Perspicacia «Eliseo», párr. 1, 3, 5 y 26. Siguió a Elías en días de Acab (1Re 19:19-21), cuyo reinado empieza c. 940
+  (A6-A), y murió reinando Jehoás de Israel, que acaba c. 844 (A6-A).
 sources:
 - it-eliseo
 - 2-reyes-2
@@ -71,6 +71,25 @@ relations:
     como profeta.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: safat-padre-de-eliseo
+  word: father
+  sources:
+  - 1-reyes-19
+  - it-safat
+  - it-eliseo
+  reason: '1Re 19:16, 19: Eliseo hijo de Safat.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: '1200001316'
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: La fecha empezaba en c. 917, cuando sucedió a Elías, pero Eliseo ya lo seguía y servía en días de Acab (1Re 19:19-21;
+    Perspicacia «Eliseo», párr. 3).
+  source: 1-reyes-19
+- date: '2026-09-30'
+  change: 'La razón explica el nuevo comienzo de la fecha: el reinado de Acab, cuando Eliseo empezó a seguir a Elías.'
+  source: 1-reyes-19
+checked_on: '2026-09-30'
 status: verified

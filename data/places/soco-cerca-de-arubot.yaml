@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: soco-cerca-de-arubot
+name: Socó
+names:
+- name: Socó
+- name: Socoh
+  note: Otra forma que da la nota de 1Re 4:10.
+type: city
+lat: 32.3421
+lon: 35.03202
+precision: uncertain
+coord_source: openbible:a64ff72
+coord_url: https://www.openbible.info/geo/ancient/a64ff72/socoh-3
+coord_note: Punto de Khirbet Shuweiket er-Ras, el sitio que Perspicacia recoge como propuesta.
+summary: Lugar del distrito del hijo de Hésed, comisario de Salomón, junto a Arubot y la tierra de Héfer. Se ha propuesto
+  Khirbet Shuweiket er-Ras, unos 15 km al oeste-noroeste de Samaria.
+reason: 'Perspicacia «Socó, Socoh», núm. 3; 1Re 4:10 y su nota. OpenBible: solo el punto.'
+sources:
+- it-soco
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Socó, Socoh»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004174
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

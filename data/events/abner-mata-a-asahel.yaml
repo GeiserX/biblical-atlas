@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: abner-mata-a-asahel
+title: Abner mata a Asahel, que lo perseguía
+type: death
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 2018
+places:
+- gabaon
+present: []
+people:
+- asahel-hijo-de-zeruya
+- abner
+roles:
+  asahel-hijo-de-zeruya: died
+passages:
+- 2Sa 2:18-23
+summary: Asahel, veloz como una gacela, persigue a Abner sin desviarse. Abner le pide dos veces que lo deje y, como no le
+  hace caso, lo atraviesa con el extremo trasero de su lanza. Muere allí mismo.
+reason: '2Sa 2:18-23; Perspicacia «Asahel», núm. 1. El texto no dice dónde: la persecución salía de Gabaón, y Perspicacia
+  «Gabaón» lo cuenta entre sus bajas. Misma fecha que el combate.'
+sources:
+- 2-samuel-2
+- it-asahel
+- it-gabaon
+- it-david
+- si-3
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 'Perspicacia: «Asahel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000398
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

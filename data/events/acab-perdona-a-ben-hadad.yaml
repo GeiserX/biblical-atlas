@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acab-perdona-a-ben-hadad
+title: Acab perdona a Ben-Hadad y hace un pacto con él
+date:
+  from: -923
+  to: -923
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 924 a.e.c.
+  detail:
+    season: spring
+  note: 'Cuenta nuestra: la primavera del año siguiente al sitio de Samaria (c. 925 a.e.c.; Perspicacia «Ben-hadad», núm.
+    2). La nota de 1Re 20:26 lee «a principios de año» como primavera.'
+narrative_order:
+  series: 1-reyes
+  order: 20031
+places:
+- afec-al-este-del-mar-de-galilea
+people:
+- ben-hadad-ii
+- acab
+present:
+- ben-hadad-ii
+- acab
+passages:
+- 1Re 20:31-34
+summary: Escondido en Afec, Ben-Hadad manda a sus siervos con sacos y sogas a pedir clemencia. Acab lo llama hermano, lo sube
+  a su carro y lo suelta a cambio de ciudades y de mercados en Damasco.
+reason: Perspicacia «Acab», núm. 1, párr. 7, y «Ben-hadad», núm. 2, párr. 2. Sigue a la batalla de Afec; fecha por cuenta
+  nuestra.
+sources:
+- 1-reyes-20
+- it-acab
+- it-ben-hadad
+- tnm-a6-a
+links:
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: pending

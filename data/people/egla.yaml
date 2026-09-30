@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: egla
+name: Eglá
+names:
+- name: Eglá
+perspicacia: '1200001261'
+summary: Esposa de David y madre de Itream, el sexto de los hijos que le nacieron en Hebrón.
+reason: Perspicacia «Eglá»; 2Sa 3:5.
+sources:
+- it-egla
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Eglá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001261
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

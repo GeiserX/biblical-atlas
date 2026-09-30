@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ziba
+name: Zibá
+names:
+- name: Zibá
+perspicacia: '1200004724'
+summary: Siervo de la casa de Saúl. David le encargó, con sus 15 hijos y 20 siervos, las tierras de Mefibóset. En la rebelión
+  de Absalón lo calumnió ante el rey, que al final repartió el campo entre los dos.
+reason: Perspicacia «Zibá»; 2Sa 9:2-12.
+sources:
+- it-ziba
+- 2-samuel-9
+- 2-samuel-16
+- 2-samuel-19
+links:
+- title: 'Perspicacia: «Zibá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004724
+  type: perspicacia
+- title: 2 Samuel 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/9
+  type: bible
+- title: 2 Samuel 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/16
+  type: bible
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+relations:
+- type: tie
+  person: saul
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-ziba
+  - 2-samuel-16
+  - 2-samuel-19
+  reason: '2Sa 9:2, 9: era siervo de la casa de Saúl, y David lo llama sirviente de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: mefiboset-hijo-de-jonatan
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-9
+  - it-ziba
+  - 2-samuel-16
+  - 2-samuel-19
+  - it-mefiboset
+  reason: '2Sa 9:9-12: el rey da a Mefibóset lo que era de Saúl, y todos los de la casa de Zibá pasan a servirle.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-construye-ciudades-en-todo-su-reino
+title: Salomón construye ciudades en todo su reino
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: acabadas las obras de Jerusalén y antes de morir Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 9015
+places:
+- jerusalen
+- hazor
+- meguido
+- guezer
+- bet-horon-baja
+- baalat
+- tamar
+- libano
+people:
+- salomon
+present:
+- salomon
+passages:
+- 1Re 9:15-24
+- 2Cr 8:3-11
+- Ec 2:4-9
+summary: Salomón pone a trabajar como esclavos a los descendientes de los cananeos, no a los israelitas. Levanta la muralla
+  de Jerusalén y el Montículo, fortifica Hazor, Meguidó y Guézer y construye Bet-Horón Baja, Baalat, Tamar y ciudades de almacenes.
+reason: 'Perspicacia «Salomón», apartado «Edificación a escala nacional»: estas obras siguen a los edificios oficiales, que
+  «Casa del Bosque del Líbano» fecha en 1027-1014 a.e.c. Salomón murió en 998. 1Re 9:24: la hija del faraón se muda a su casa.'
+sources:
+- 1-reyes-9
+- it-salomon
+- it-casa-del-bosque-del-libano
+- it-tamar
+- it-guezer
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

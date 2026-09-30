@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: sual
+name: Sual
+names:
+- name: Sual
+  note: La tierra de Sual (1Sa 13:17); no Sual, el cabeza aserita.
+type: region
+lat: 31.954444
+lon: 35.300278
+precision: zone
+coord_source: openbible:ad16b1e
+coord_url: https://www.openbible.info/geo/ancient/ad16b1e/shual
+coord_note: OpenBible la pone a menos de 10 km de Taybeh, el mismo punto que lleva Ofrá. jw.org no conoce su sitio exacto;
+  solo la liga a Ofrá, al norte de Micmash.
+summary: Región relacionada con Ofrá, probablemente al norte de Micmash. Hacia ella se dirigió uno de los tres grupos de saqueadores
+  filisteos en tiempos de Saúl. No se sabe dónde estaba exactamente.
+reason: 'Perspicacia «Sual», núm. 2; 1Sa 13:17. OpenBible: solo el punto.'
+sources:
+- it-sual
+- openbible-geo
+- 1-samuel-13
+links:
+- title: 'Perspicacia: «Sual»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004089
+  type: perspicacia
+- title: 1 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

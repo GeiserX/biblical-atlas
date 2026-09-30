@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hadad-el-edomita
+name: Hadad
+names:
+- name: Hadad
+perspicacia: 1200001797#4
+disambiguation: El edomita de sangre real que se opuso a Salomón (núm. 4 de Perspicacia); no el hijo de Ismael ni los reyes
+  Hadad de Edom.
+distinct_from:
+- hadad-hijo-de-bedad
+- hadad-hijo-de-ismael
+- hadar
+summary: Príncipe edomita. Siendo niño escapó a Egipto de la matanza de Joab en Edom; el faraón le dio casa, tierras y a su
+  cuñada por esposa. Muertos David y Joab, volvió a su tierra y hostigó a Salomón.
+reason: Perspicacia «Hadad», núm. 4; 1Re 11:14-22, 25.
+sources:
+- it-hadad
+- 1-reyes-11
+links:
+- title: 'Perspicacia: «Hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001797
+  type: perspicacia
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+relations:
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-hadad
+  reason: '1Re 11:17-22: llegó de niño a Egipto, donde el faraón le dio casa y tierras, y vivió allí hasta la muerte de David.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: edom
+  inferred: true
+  sources:
+  - it-hadad
+  - 1-reyes-11
+  - it-edom
+  reason: 'Perspicacia «Hadad», núm. 4: regresó a Edom cuando supo de la muerte de David y de Joab (1Re 11:21, 22, 25).'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

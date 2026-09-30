@@ -1,0 +1,56 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zabud
+name: Zabud
+names:
+- name: Zabud
+perspicacia: '1200004648'
+summary: Hijo de Natán, sacerdote y amigo del rey Salomón. Perspicacia lo llama su consejero sacerdotal.
+reason: Perspicacia «Zabud»; 1Re 4:5.
+sources:
+- it-zabud
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Zabud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004648
+  type: perspicacia
+relations:
+- type: kin
+  person: natan-padre-de-zabud
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-zabud
+  reason: '1Re 4:5: Zabud hijo de Natán.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-zabud
+  reason: '1Re 4:5: Zabud era sacerdote.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: friend
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-zabud
+  reason: 1Re 4:5 lo llama amigo del rey; Perspicacia entiende que era su consejero.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:2, 5: está entre los altos funcionarios de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

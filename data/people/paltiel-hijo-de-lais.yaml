@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: paltiel-hijo-de-lais
+name: Paltiel
+names:
+- name: Paltí
+  note: Forma breve de 1Sa 25:44; Perspicacia «Paltí», núm. 2, remite a «Paltiel», núm. 2.
+- name: Paltiel
+  note: Así lo llama 2Sa 3:15.
+perspicacia: 1200003371#2
+disambiguation: Paltí o Paltiel hijo de Lais, de Galim, segundo marido de Mical; no Paltí hijo de Rafú, el espía, ni Paltiel
+  hijo de Azán.
+distinct_from:
+- palti-hijo-de-rafu
+- paltiel-hijo-de-azan
+summary: Hijo de Lais, de Galim. Saúl le entregó a Mical como esposa mientras David huía. Cuando David, ya rey, la reclamó,
+  Paltiel la acompañó un trecho entre lágrimas, hasta que Abner le ordenó volverse.
+reason: Perspicacia «Paltiel», núm. 2, y «Paltí», núm. 2; 1Sa 25:44; 2Sa 3:13-16.
+sources:
+- it-paltiel
+- it-palti
+- 1-samuel-25
+- 2-samuel-3
+links:
+- title: 'Perspicacia: «Paltiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003371
+  type: perspicacia
+- title: 1 Samuel 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/25
+  type: bible
+relations:
+- type: kin
+  person: lais-de-galim
+  word: father
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - 2-samuel-3
+  reason: '1Sa 25:44: Paltí hijo de Lais.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: mical
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-paltiel
+  - 2-samuel-3
+  reason: '1Sa 25:44: Saúl le había dado a su hija Mical, que era esposa de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: galim
+  inferred: false
+  sources:
+  - 1-samuel-25
+  - it-galim
+  reason: 1Sa 25:44 lo da como de Galim, y Perspicacia «Galim» dice que vivía allí.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

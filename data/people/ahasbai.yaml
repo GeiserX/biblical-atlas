@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahasbai
+name: Ahasbái
+names:
+- name: Ahasbái
+- name: Ahasbai
+  note: Grafía de Perspicacia.
+perspicacia: '1200000141'
+summary: Maacatita, padre de Elifélet, guerrero de David. Perspicacia no sabe si era de Abel-Bet-Maacá o del reino arameo
+  de Maacá.
+reason: Perspicacia «Ahasbai» y «Maacatita»; 2Sa 23:34.
+sources:
+- it-ahasbai
+- it-maacatita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Ahasbai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000141
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

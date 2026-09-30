@@ -41,13 +41,14 @@ candidates:
   - openbible-geo
   reason: Perspicacia «Havilá», núm. 2, deja abierto que ocupara un área mucho mayor. El punto es la primera resolución de
     OpenBible para Havilá 2 (Gé 25:18); el radio es nuestro.
-summary: Tierra que marcaba un extremo del territorio de los ismaelitas, cerca de Sur. Abarcaba al menos el noroeste de la
-  península arábiga y quizá llegaba hasta el Sinaí.
-reason: Perspicacia «Havilá», núm. 2; Gé 25:18. Perspicacia no da un sitio; va una zona.
+summary: Tierra cerca de Sur que marcaba un extremo del territorio de los ismaelitas y de la zona donde Saúl batió a los amalequitas.
+  Abarcaba al menos el noroeste de Arabia y quizá llegaba al Sinaí.
+reason: Perspicacia «Havilá», núm. 2; Gé 25:18; 1Sa 15:7. Perspicacia no da un sitio; va una zona.
 sources:
 - it-havila
 - openbible-geo
 - genesis-25
+- 1-samuel-15
 links:
 - title: 'Perspicacia: «Havilá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001921
@@ -55,5 +56,9 @@ links:
 - title: Génesis 25 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/25
   type: bible
+history:
+- date: '2026-09-29'
+  change: 'El resumen añade 1Sa 15:7: Saúl batió a Amalec desde Havilá hasta Sur (Perspicacia «Havilá», núm. 2).'
+  source: 1-samuel-15
 checked_on: '2026-09-29'
 status: verified

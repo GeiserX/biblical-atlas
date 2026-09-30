@@ -20,6 +20,8 @@ sources:
 - 2-reyes-23
 - tnm-a6-b
 - mateo-1
+- sofonias-1
+- 1-reyes-13
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
@@ -36,6 +38,7 @@ relations:
   - it-josias
   - 2-reyes-22
   - mateo-1
+  - sofonias-1
   reason: Hijo de Amón y de Jedidá (2Re 21:26; 22:1).
   checked_on: '2026-09-29'
   status: verified
@@ -55,5 +58,5 @@ history:
     estudio 3.
   source: tnm-a6-b
 perspicacia: 1200002525#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

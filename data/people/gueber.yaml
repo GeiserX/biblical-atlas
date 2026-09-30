@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gueber
+name: Guéber
+names:
+- name: Guéber
+perspicacia: '1200001629'
+disambiguation: Guéber hijo de Urí, comisario de Salomón en Galaad (1Re 4:19). Perspicacia cree probable que sea también el
+  padre del comisario de Ramot-Galaad (1Re 4:13).
+summary: Hijo de Urí. Comisario de Salomón en la tierra de Galaad, la de Sehón y Og. Perspicacia cree probable que su hijo
+  fuera el comisario de Ramot-Galaad.
+reason: Perspicacia «Guéber»; 1Re 4:7, 19.
+sources:
+- it-gueber
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Guéber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001629
+  type: perspicacia
+relations:
+- type: kin
+  person: uri-padre-de-gueber
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-uri
+  reason: '1Re 4:19: Guéber hijo de Urí.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 19: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: same_as
+  person: gueber-padre-del-comisario-de-ramot-galaad
+  certainty: probable
+  inferred: true
+  sources:
+  - 1-reyes-4
+  - it-gueber
+  reason: 1Re 4:13 nombra al hijo de Guéber como comisario en Ramot-Galaad; Perspicacia «Guéber» cree probable que su padre
+    sea Guéber hijo de Urí.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saul-elegido-rey-en-mizpa
+title: La suerte elige a Saúl como rey en Mizpá
+date:
+  from: -1116
+  to: -1116
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1117 a.e.c.
+narrative_order:
+  series: 1-samuel
+  order: 10017
+places:
+- mizpa-de-benjamin
+people:
+- saul
+- samuel
+present:
+- saul
+- samuel
+passages:
+- 1Sa 10:17-25
+summary: Samuel reúne al pueblo en Mizpá. Las suertes señalan a Benjamín, a los matritas y a Saúl, que se había escondido
+  entre el equipaje. El pueblo lo aclama como rey y Samuel pone por escrito los derechos del rey.
+reason: El estudio 3 fecha en 1117 a.e.c. que Samuel hace rey a Saúl, con 1Sa 10:24; Perspicacia «Saúl», apartado «Ungido por
+  rey», y «Samuel».
+sources:
+- 1-samuel-10
+- si-3
+- it-saul
+- it-samuel
+- it-mizpa
+links:
+- title: 1 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/10
+  type: bible
+- title: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

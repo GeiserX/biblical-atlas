@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: amihud-padre-de-talmai
+name: Amihud
+names:
+- name: Amihud
+perspicacia: 1200000234#4
+disambiguation: Amihud el padre de Talmái, rey de Guesur; no el efraimita, el simeonita, el neftalita ni el de Judá.
+distinct_from:
+- amihud-hijo-de-ladan
+- amihud-padre-de-semuel
+- amihud-padre-de-pedahel
+summary: Padre de Talmái, rey de Guesur. Por su nieta Maacá, esposa de David, era bisabuelo de Absalón.
+reason: Perspicacia «Amihud», núm. 4; 2Sa 13:37.
+sources:
+- it-amihud
+- 2-samuel-13
+links:
+- title: 'Perspicacia: «Amihud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000234
+  type: perspicacia
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: zuf
+name: Zuf
+names:
+- name: Zuf
+- name: Zofai
+  note: Otra grafía del mismo nombre en 1Cr 6:26, según Perspicacia «Zuf», núm. 1.
+perspicacia: 1200004770#1
+disambiguation: Zuf, el levita antepasado de Samuel; no la tierra de Zuf por la que pasó Saúl buscando las asnas.
+summary: Levita de la familia de Cohat, antepasado del profeta Samuel por medio de Tohu, Elihú, Jeroham y Elcaná.
+reason: Perspicacia «Zuf», núm. 1; 1Sa 1:1.
+sources:
+- it-zuf
+- 1-samuel-1
+links:
+- title: 'Perspicacia: «Zuf»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004770
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

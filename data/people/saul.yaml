@@ -5,22 +5,45 @@ names:
 - name: Saúl
 date:
   from: -1116
-  to: -1076
+  to: -1077
   precision: range
-  approx: false
+  approx: true
   type: anchored
   chronology: tnm
-  text: 1117-1077 a.e.c.
-summary: Benjamita, hijo de Quis. Samuel lo ungió como primer rey de Israel. Desobedeció a Jehová y fue rechazado; cayó en
-  la batalla del monte Guilboa, frente a los filisteos.
-reason: Perspicacia «Saúl», párr. 1, 3 y 16; 1Sa 10:1, 24. El estudio 3 fecha su unción en 1117 y Hch 13:21 da los cuarenta
-  años.
+  text: 1117-c. 1078 a.e.c.
+summary: Benjamita, hijo de Quis. Samuel lo ungió como primer rey de Israel. Desobedeció a Jehová y fue rechazado; la víspera
+  de caer ante los filisteos en el monte Guilboa, consultó a una médium en En-Dor.
+reason: Perspicacia «Saúl», párr. 1, 3 y 16; 1Sa 10:1, 24; 28:7-25. El estudio 3 fecha su unción en 1117 y pone hacia 1078
+  el final de 1 Samuel; Jonatán muere con él en 1078 (Perspicacia «Jonatán», núm. 2).
 sources:
 - it-saul
 - 1-samuel-10
 - hch-13
 - si-3
 - salmos-59
+- 1-samuel-9
+- 1-samuel-11
+- 1-samuel-12
+- 1-samuel-13
+- 1-samuel-14
+- 1-samuel-15
+- 1-samuel-16
+- 1-samuel-17
+- 1-samuel-18
+- 1-samuel-19
+- 1-samuel-20
+- 1-samuel-22
+- 1-samuel-23
+- 1-samuel-24
+- 1-samuel-25
+- 1-samuel-26
+- 1-samuel-27
+- 1-samuel-28
+- it-jonatan
+- 1-samuel-31
+- 2-samuel-1
+- 2-samuel-3
+- 2-samuel-21
 links:
 - title: 'Perspicacia: «Saúl»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
@@ -35,6 +58,12 @@ relations:
   sources:
   - it-saul
   - it-guibeah
+  - 1-samuel-10
+  - 1-samuel-11
+  - 1-samuel-15
+  - 1-samuel-22
+  - 1-samuel-23
+  - 1-samuel-26
   reason: Perspicacia «Guibeah», núm. 2, dice que era su hogar (1Sa 10:26).
   checked_on: '2026-09-29'
   status: verified
@@ -45,9 +74,69 @@ relations:
   sources:
   - hch-13
   - it-quis
+  - 1-samuel-9
+  - 1-samuel-10
+  - 1-samuel-14
   reason: Hch 13:21 lo llama Saúl hijo de Quis; Perspicacia «Quis», núm. 3.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: ahinoam-hija-de-ahimaaz
+  word: wife
+  inferred: false
+  sources:
+  - 1-samuel-14
+  - it-ahinoam
+  reason: '1Sa 14:50: la esposa de Saúl era Ahinoam.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: abner
+  word: uncle
+  inferred: true
+  sources:
+  - 1-samuel-14
+  - it-abner
+  reason: 1Sa 14:50 llama a Abner tío de Saúl; Perspicacia «Abner» lo confirma con 1 Crónicas, que hace a Quis hermano de Abner.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: monte-guilboa
+  inferred: false
+  sources:
+  - 1-samuel-31
+  - it-saul
+  - it-jonatan
+  - 2-samuel-1
+  reason: '1Sa 31:1-6: herido por los arqueros, se echó sobre su propia espada en el monte Guilboa. Perspicacia «Jonatán»,
+    núm. 2, fecha la batalla en 1078.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rizpa
+  word: concubine
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-rizpa
+  - 2-samuel-21
+  reason: '2Sa 3:7: Saúl había tenido una concubina llamada Rizpá.'
+  checked_on: '2026-09-29'
+  status: verified
 perspicacia: '1200003847'
+history:
+- date: '2026-09-29'
+  change: Se añade la consulta a la médium de En-Dor (1Sa 28:7-25), que 1Cr 10:13 da como una de las causas de su muerte.
+  source: 1-samuel-28
+- date: '2026-09-29'
+  change: La fecha acababa en 1077, el año en que David empieza a reinar. Saúl murió antes, en la batalla en que cayó Jonatán
+    en 1078 (Perspicacia «Jonatán», núm. 2); el estudio 3 cierra 1 Samuel hacia 1078.
+  source: it-jonatan
+- date: '2026-09-29'
+  change: La razón cita ahora de dónde sale el final de la fecha (1078) y la consulta de En-Dor.
+  source: it-jonatan
 checked_on: '2026-09-29'
 status: verified
+not_claimed:
+- 'Que un amalequita matara a Saúl: el relato dice que se echó sobre su espada, y Perspicacia «Saúl» llama mentira a lo que
+  aquel contó a David.'

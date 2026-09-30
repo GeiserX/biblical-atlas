@@ -3,14 +3,16 @@ id: tecoa
 name: Tecoa
 names:
 - name: Tecoa
+- name: Teqoa
+  note: Grafía que usa Perspicacia.
 type: city
 lat: 31.63247
 lon: 35.21048
 precision: point
 coord_source: openbible:a2e3aa0
 coord_url: https://www.openbible.info/geo/ancient/a2e3aa0/tekoa
-summary: Ciudad de Judá unos 16 km al sur de Jerusalén, al borde del desierto. Allí vivía Amós, que cuidaba ganado antes de
-  ser profeta.
+summary: Ciudad de Judá, 16 km al sur de Jerusalén, junto al desierto. De allí trajo Joab a la mujer astuta que pidió a David
+  el regreso de Absalón. Allí vivía Amós, que cuidaba ganado antes de ser profeta.
 reason: 'Perspicacia «Teqoa» (grafía antigua), párr. 1: se identifica con Khirbet et-Tuquʽ; «Amós», núm. 1, párr. 2; Am 1:1.
   OpenBible: solo el punto.'
 sources:
@@ -18,6 +20,8 @@ sources:
 - it-amos
 - openbible-geo
 - amos-1
+- 2-samuel-14
+- 2-samuel-23
 links:
 - title: 'Perspicacia: «Teqoa»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004344
@@ -28,5 +32,9 @@ links:
 - title: Amós 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
   type: bible
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-29'
+  change: El resumen añade a la mujer de Tecoa que Joab mandó ante David (2Sa 14:2-20).
+  source: 2-samuel-14
+checked_on: '2026-09-29'
 status: verified

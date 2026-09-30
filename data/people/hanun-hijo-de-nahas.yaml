@@ -1,0 +1,62 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hanun-hijo-de-nahas
+name: Hanún
+names:
+- name: Hanún
+perspicacia: 1200001866#1
+disambiguation: El rey de Ammón (Perspicacia, núm. 1); no los dos Hanún que repararon el muro de Jerusalén con Nehemías.
+summary: Rey de Ammón, hijo y sucesor de Nahás. Creyó a sus príncipes que los consoladores de David eran espías, los humilló
+  y pagó a los sirios para luchar contra Israel, que venció a todos.
+reason: Perspicacia «Hanún», núm. 1; 2Sa 10:1-14.
+sources:
+- it-hanun
+- 2-samuel-10
+links:
+- title: 'Perspicacia: «Hanún»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001866
+  type: perspicacia
+- title: 2 Samuel 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/10
+  type: bible
+relations:
+- type: kin
+  person: nahas-rey-de-ammon
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-hanun
+  reason: '2Sa 10:1, 2: Hanún hijo de Nahás sucede a su padre.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: succeeds
+  person: nahas-rey-de-ammon
+  office: king
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-hanun
+  reason: '2Sa 10:1: muere el rey de los ammonitas y su hijo Hanún reina en su lugar.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: ammon
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-hanun
+  reason: '2Sa 10:1-3: rey de los ammonitas y señor de sus príncipes.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: enemy
+  inferred: false
+  sources:
+  - 2-samuel-10
+  - it-hanun
+  reason: '2Sa 10:4-6: humilla a los enviados de David y, al ver que se ha ganado su odio, contrata sirios contra él.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

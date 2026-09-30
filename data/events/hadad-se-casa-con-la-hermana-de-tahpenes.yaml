@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hadad-se-casa-con-la-hermana-de-tahpenes
+title: Hadad se casa con la hermana de la reina Tahpenés
+date:
+  from: -1069
+  to: -1037
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y 1038 a.e.c. (tiempo narrativo: después de huir a Egipto y antes de la muerte de David)'
+narrative_order:
+  series: 1-reyes
+  order: 11019
+  after: hadad-el-edomita-huye-a-egipto
+places:
+- egipto
+people:
+- hadad-el-edomita
+- tahpenes
+- guenubat
+roles:
+  guenubat: born
+passages:
+- 1Re 11:19, 20
+summary: El faraón aprecia tanto a Hadad que le da por esposa a una hermana de su esposa, Tahpenés. De esa unión nace Guenubat,
+  al que Tahpenés cría en palacio con los hijos del faraón.
+reason: 1Re 11:19, 20; Perspicacia «Tahpenés» y «Guenubat». Pasa en Egipto después de la huida y antes de que Hadad sepa que
+  David ha muerto, en 1037 a.e.c. (estudio 3, párr. 4).
+sources:
+- 1-reyes-11
+- it-tahpenes
+- it-guenubat
+- it-hadad
+- si-3
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -21,6 +21,8 @@ sources:
 - 1-reyes-16
 - cantar-de-los-cantares-6
 - josue-12
+- 1-reyes-14
+- 1-reyes-15
 links:
 - title: 'Perspicacia: «Tirzá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004426
@@ -35,5 +37,5 @@ history:
 - date: '2026-09-29'
   change: El resumen añade que Josué venció a su rey cananeo (Jos 12:24; Perspicacia «Tirzá», núm. 2).
   source: josue-12
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-rechaza-a-saul-como-rey
+title: Jehová rechaza a Saúl como rey
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: en el reinado de Saúl, antes de la unción de David)'
+narrative_order:
+  series: 1-samuel
+  order: 15010
+places:
+- guilgal
+people:
+- saul
+- samuel
+passages:
+- 1Sa 15:10-31
+summary: Jehová dice a Samuel que Saúl lo ha desobedecido. En Guilgal, Saúl culpa al pueblo; Samuel le dice que obedecer vale
+  más que sacrificar y que Jehová lo rechaza. La túnica rasgada anuncia que perderá el reino.
+reason: 'Perspicacia «Guilgal», núm. 1, pone allí el rechazo (1Sa 15:12-28), y «Samuel» lo cuenta como su segunda censura a
+  Saúl. Fecha: Saúl gobernó de 1117 a 1078 a.e.c. (Perspicacia «Agag»).'
+sources:
+- 1-samuel-15
+- it-guilgal
+- it-samuel
+- it-saul
+- it-agag
+- si-3
+links:
+- title: 'Perspicacia: «Saúl»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
+  type: perspicacia
+- title: 1 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eleazar-hijo-de-dodo
+name: Eleazar
+names:
+- name: Eleazar
+perspicacia: 1200001287#3
+disambiguation: Eleazar hijo de Dodó, uno de los tres primeros guerreros de David; no el hijo de Aarón ni los demás Eleazar
+  que numera Perspicacia.
+distinct_from:
+- eleazar-hijo-de-aaron
+- eleazar-hijo-de-abinadab
+- eleazar-hijo-de-eliud
+summary: Ahohíta, uno de los tres guerreros más destacados de David. Cuando los israelitas se retiraron, él siguió abatiendo
+  filisteos hasta que ya no podía soltar la espada.
+reason: Perspicacia «Eleazar», núm. 3; 2Sa 23:9, 10, 16.
+sources:
+- it-eleazar
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Eleazar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001287
+  type: perspicacia
+relations:
+- type: kin
+  person: dodo-hijo-de-ahohi
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:9: Eleazar, hijo de Dodó.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:9: estaba con David entre sus tres guerreros más fuertes.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

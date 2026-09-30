@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: arauna
+name: Arauna
+names:
+- name: Arauna
+- name: Ornán
+  note: Así lo llama 1 Crónicas, según Perspicacia «Arauna».
+perspicacia: '1200000339'
+summary: Jebuseo dueño de la era que David le compró para levantar un altar a Jehová y detener la epidemia. En ese lugar se
+  construyó después el templo.
+reason: Perspicacia «Arauna» y «Moria»; 2Sa 24:16-25.
+sources:
+- it-arauna
+- it-moria
+- 2-samuel-24
+links:
+- title: 'Perspicacia: «Arauna»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000339
+  type: perspicacia
+relations: []
+checked_on: '2026-09-29'
+status: verified

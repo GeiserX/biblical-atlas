@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-ataca-a-guesuritas-guirzitas-y-amalequitas
+title: David ataca a guesuritas, guirzitas y amalequitas y engaña a Akís
+date:
+  from: -1079
+  to: -1077
+  precision: range
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 1080-1078 a.e.c.
+  note: 'Cuenta nuestra: David vivió entre los filisteos un año y cuatro meses (1Sa 27:7), hasta la muerte de Saúl en 1078
+    (estudio 3; Perspicacia «Jonatán», núm. 2). Contando hacia atrás, llegó a finales de 1080 o en 1079.'
+narrative_order:
+  series: 1-samuel
+  order: 27008
+places:
+- negueb
+- amalec
+- telam
+- sur
+- gat
+people:
+- david
+- akis
+present:
+- david
+passages:
+- 1Sa 27:8-12
+summary: David sale a saquear a los pueblos que vivían de Telam a Sur, hacia Egipto, sin dejar a nadie vivo. A Akís le cuenta
+  que ha atacado el sur de Judá, y el rey cree que Israel ya lo detesta.
+reason: 'Perspicacia «Akís», párr. 2; «Guirzitas»; «Guesuritas», núm. 2; «Jerahmeelitas»; «Négueb»: amalequitas del Négueb.
+  Fecha: cuenta nuestra, dieciséis meses (1Sa 27:7) hasta la muerte de Saúl en 1078 (estudio 3; Perspicacia «Jonatán», núm.
+  2).'
+sources:
+- 1-samuel-27
+- it-akis
+- it-guirzitas
+- it-guesuritas
+- it-jerahmeelitas
+- it-negueb
+- it-telam
+- it-amaleq
+- si-3
+- it-jonatan
+links:
+- title: 1 Samuel 27 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/9/27
+  type: bible
+checked_on: '2026-09-29'
+status: pending

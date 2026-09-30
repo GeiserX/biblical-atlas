@@ -22,6 +22,9 @@ sources:
 - 1-reyes-18
 - tnm-a6-a
 - lucas-4
+- it-tisbita
+- 1-reyes-19
+- 1-reyes-21
 links:
 - title: 'Perspicacia: «Elías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001307
@@ -39,6 +42,35 @@ relations:
   reason: En el Carmelo se presenta como el único profeta de Jehová que queda (1Re 18:22).
   checked_on: '2026-09-29'
   status: verified
+- type: lived_in
+  place: galaad
+  inferred: false
+  sources:
+  - 1-reyes-17
+  - it-elias
+  reason: 1Re 17:1 lo presenta como un habitante de Galaad.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: tisbe
+  inferred: true
+  sources:
+  - it-tisbita
+  - it-elias
+  - 1-reyes-17
+  reason: 'Perspicacia «Elías», núm. 1, párr. 1, y «Tisbita»: su hogar debió de estar en Tisbe, de donde le viene llamarse
+    tisbita (1Re 17:1).'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: sarepta
+  inferred: false
+  sources:
+  - 1-reyes-17
+  - it-elias
+  reason: '1Re 17:9, 10, 19, 20: Jehová lo manda quedarse en Sarepta, y se hospeda en la habitación de la azotea de la viuda.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200001307#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

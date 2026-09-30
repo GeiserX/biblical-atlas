@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: region-de-jocmeam
+name: Jocmeam
+names:
+- name: Jocmeam
+- name: Joqmeam
+  note: Grafía de Perspicacia.
+type: region
+lat: 32.664099
+lon: 35.108266
+precision: uncertain
+coord_source: openbible:ab2e402
+coord_url: https://www.openbible.info/geo/ancient/ab2e402/jokmeam-1
+coord_note: Punto de Jocneam (Tell Qeimun), la identificación que Perspicacia ve posible; OpenBible pone primero un sitio
+  del valle del Jordán.
+summary: Región vecina del distrito de Baaná hijo de Ahilud, comisario de Salomón, que iba de Bet-Seán a Abel-Meholá. Perspicacia
+  ve posible que sea Jocneam.
+reason: 'Perspicacia «Joqmeam», núm. 2; 1Re 4:12. OpenBible: solo el punto.'
+sources:
+- it-joqmeam
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Joqmeam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002497
+  type: perspicacia
+not_claimed:
+- 'Que sea Jocneam: Perspicacia solo lo ve posible.'
+- 'Que sea la Jocmeam levita de Efraín: Perspicacia la numera aparte.'
+checked_on: '2026-09-30'
+status: verified

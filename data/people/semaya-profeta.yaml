@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semaya-profeta
+name: Semaya
+names:
+- name: Semaya
+perspicacia: 1200004000#6
+disambiguation: Semaya, profeta de Jehová en el reinado de Rehoboam (núm. 6 de Perspicacia); no el falso profeta de Nehelam
+  ni los demás Semaya.
+summary: Profeta en días de Rehoboam. En 997 a.e.c. le prohibió pelear contra las diez tribus, y en 993, cuando Sisac invadió
+  Judá, anunció que Jehová los había dejado. Escribió una crónica de aquel reinado.
+reason: Perspicacia «Semaya», núm. 6; 1Re 12:22-24; 2Cr 11:2-4 y 12:5-15.
+sources:
+- it-semaya
+- 1-reyes-12
+links:
+- title: 'Perspicacia: «Semaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004000
+  type: perspicacia
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+relations:
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - 1-reyes-12
+  - it-semaya
+  reason: 1Re 12:22 lo llama hombre del Dios verdadero, y 2Cr 12:5, el profeta Semaya.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

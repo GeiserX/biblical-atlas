@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jonatan-hijo-de-sague
+name: Jonatán
+names:
+- name: Jonatán
+perspicacia: 1200002506#5
+disambiguation: Jonatán hijo de Sagué el hararita, guerrero de David; no el hijo de Saúl, ni el sobrino de David, ni los otros
+  Jonatán.
+distinct_from:
+- jonatan-hijo-de-saul
+- jonatan-levita
+- jonatan-hijo-de-abiatar
+- jonatan-hijo-de-sama
+summary: Hararita, uno de los treinta guerreros de David. Perspicacia lo hace hijo de Sagué, que sería Samá hijo de Agué.
+reason: Perspicacia «Jonatán», núm. 5, «Samah», núm. 3, y «Sagué»; 2Sa 23:32, 33.
+sources:
+- it-jonatan
+- it-samah
+- 2-samuel-23
+- it-sague
+links:
+- title: 'Perspicacia: «Jonatán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002506
+  type: perspicacia
+- title: 'Perspicacia: «Sagué»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003928
+  type: perspicacia
+relations:
+- type: kin
+  person: sama-hijo-de-ague
+  word: father
+  inferred: true
+  sources:
+  - 2-samuel-23
+  - it-samah
+  - it-jonatan
+  - it-sague
+  reason: 'Perspicacia «Samah», núm. 3, y «Sagué»: en 2Sa 23:32, 33 se perdió «hijo de», y Samá sería el Sagué de 1Cr 11:34,
+    padre de Jonatán.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:32: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

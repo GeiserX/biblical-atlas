@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azuba-hija-de-silhi
+name: Azubá
+names:
+- name: Azubá
+perspicacia: 1200000502#2
+disambiguation: La madre de Jehosafat; no es Azubá, la esposa de Caleb hijo de Hezrón (1Cr 2:18).
+summary: Hija de Silhí, esposa del rey Asá y madre de Jehosafat, rey de Judá.
+reason: Perspicacia «Azubá», núm. 2, y «Silhí»; 1Re 22:42 y 2Cr 20:31.
+sources:
+- it-azuba
+- it-silhi
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Azubá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000502
+  type: perspicacia
+relations:
+- type: kin
+  person: silhi
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-azuba
+  reason: '1Re 22:42: Azubá hija de Silhí.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

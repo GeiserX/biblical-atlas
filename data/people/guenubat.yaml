@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guenubat
+name: Guenubat
+names:
+- name: Guenubat
+perspicacia: '1200001655'
+summary: Hijo de Hadad el edomita y de una hermana de la reina Tahpenés, nacido en Egipto. Se crio en la casa del faraón junto
+  con los hijos de este.
+reason: Perspicacia «Guenubat»; 1Re 11:20. La nota al pie admite que Tahpenés lo destetara en lugar de criarlo.
+sources:
+- it-guenubat
+- 1-reyes-11
+links:
+- title: 'Perspicacia: «Guenubat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001655
+  type: perspicacia
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+relations:
+- type: kin
+  person: hadad-el-edomita
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-guenubat
+  reason: '1Re 11:20: la hermana de Tahpenés le da un hijo a Hadad, Guenubat.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: tahpenes
+  word: aunt
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-tahpenes
+  reason: '1Re 11:20: su madre era hermana de Tahpenés, que lo crio.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: born_in
+  place: egipto
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-guenubat
+  reason: '1Re 11:19, 20: nace del matrimonio que el faraón concertó para Hadad en Egipto.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: egipto
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-guenubat
+  reason: '1Re 11:20: se crio en el palacio del faraón, entre los hijos del rey.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

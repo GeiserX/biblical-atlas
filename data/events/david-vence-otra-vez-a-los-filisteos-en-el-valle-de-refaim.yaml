@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-vence-otra-vez-a-los-filisteos-en-el-valle-de-refaim
+title: David vuelve a vencer a los filisteos en el valle de Refaím
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: 'Límites: Perspicacia «Baal-perazim» lo pone algún tiempo después de tomar Sion, en 1070 (estudio 3), y «David», párr.
+    22-23, antes de subir el Arca, después de 1070.'
+narrative_order:
+  series: 2-samuel
+  order: 5022
+places:
+- valle-de-refaim
+- gueba
+- guezer
+people:
+- david
+passages:
+- 2Sa 5:22-25
+- 1Cr 14:13-17
+summary: Los filisteos vuelven al valle de Refaím. Jehová manda a David rodearlos y atacar por detrás, junto a los arbustos
+  bacá, cuando oiga pasos en las copas. David los derrota desde Gueba hasta Guézer.
+reason: 'Perspicacia «David», párr. 22: un enfrentamiento posterior al de Baal-Perazim, con otra estrategia; «Guézer»: David
+  venció a los filisteos de Gueba a Guézer.'
+sources:
+- 2-samuel-5
+- si-3
+- it-david
+- it-guezer
+- it-baal-perazim
+links:
+- title: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified
