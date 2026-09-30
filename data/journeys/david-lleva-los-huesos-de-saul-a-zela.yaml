@@ -1,0 +1,74 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-lleva-los-huesos-de-saul-a-zela
+name: David lleva los huesos de Saúl y Jonatán a Zelá
+person: david
+reference: 2Sa 21:12-14
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: últimos sucesos del reinado de David)'
+companions: []
+summary: Tras la ejecución de siete descendientes de Saúl, David va por los huesos de Saúl y de Jonatán, que guardaban los
+  de Jabés-Galaad, y los entierra en la tumba de Quis, en Zelá de Benjamín.
+reason: '2Sa 21:12-14: David fue a buscarlos y se los trajo de allí. Perspicacia «Zelá, Zelah» y «Jonatán», núm. 2. Sin año:
+  de los últimos años del reinado, entre 1070 y c. 1040 a.e.c.'
+sources:
+- 2-samuel-21
+- it-jonatan
+- it-zela
+- tnm-b7
+- tnm-tabla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 13
+stops:
+- order: 1
+  place: jabes-galaad
+  reference: 2Sa 21:12, 13
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: últimos sucesos del reinado de David)'
+  note: Los líderes de la ciudad los habían sacado de Bet-San.
+  reason: '2Sa 21:12, 13: los huesos estaban en manos de los líderes de Jabés-Galaad, y David se los trae de allí. Fecha:
+    la del suceso david-entierra-en-zela-los-huesos-de-saul-y-jonatan.'
+  sources:
+  - 2-samuel-21
+  - it-jonatan
+  - tnm-b7
+  - tnm-tabla
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: zela
+  reference: 2Sa 21:14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: últimos sucesos del reinado de David)'
+  note: En Benjamín, en la tumba de Quis, padre de Saúl.
+  reason: '2Sa 21:14: los entierran en Zelá; Perspicacia «Zelá, Zelah». Fecha: la del suceso david-entierra-en-zela-los-huesos-de-saul-y-jonatan.'
+  sources:
+  - 2-samuel-21
+  - it-zela
+  - tnm-b7
+  - tnm-tabla
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,132 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-persigue-a-los-amalequitas
+name: David persigue a los amalequitas
+person: david
+reference: 1Sa 30:1-31
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+companions: []
+summary: Con Ziclag quemada, David consulta a Jehová y sale con 600 hombres. Deja a 200 agotados en el torrente de Besor,
+  un egipcio lo guía hasta los saqueadores y lo recupera todo. De vuelta, reparte el botín por igual.
+reason: 1Sa 30:1-26 da las etapas en orden; Perspicacia «Besor, Valle torrencial de» y «David», párr. 18. Todo en 1078, el
+  año de Guilboa (Perspicacia «Jonatán», núm. 2).
+sources:
+- 1-samuel-30
+- it-amaleq
+- it-abigail
+- it-besor
+- it-ziqlag
+- it-david
+- it-jonatan
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 4
+stops:
+- order: 1
+  place: ziclag
+  reference: 1Sa 30:1-8
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Consulta a Jehová con el efod que le trae Abiatar.
+  reason: '1Sa 30:1-8: en Ziclag saqueada, David pregunta a Jehová si debe salir tras la banda. Fecha: la del suceso los-amalequitas-saquean-ziclag.'
+  sources:
+  - 1-samuel-30
+  - it-ziqlag
+  - it-david
+  - it-jonatan
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: torrente-de-besor
+  reference: 1Sa 30:9, 10
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Se quedan 200 hombres, demasiado cansados para cruzar.
+  reason: '1Sa 30:9, 10: llega al torrente de Besor y sigue con 400 hombres. Fecha: la del suceso david-deja-200-hombres-en-el-torrente-de-besor.'
+  sources:
+  - 1-samuel-30
+  - it-besor
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: negueb
+  reference: 1Sa 30:11-20
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: El campamento amalequita, que el texto no nombra.
+  reason: '1Sa 30:11-20 no nombra el sitio de la batalla; Perspicacia «Besor» dice que los saqueadores volvían al sur, al
+    Négueb, de donde eran. Fecha: la del suceso david-derrota-a-los-amalequitas-y-recupera-a-los-cautivos.'
+  sources:
+  - 1-samuel-30
+  - it-besor
+  - it-amaleq
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: pending
+- order: 4
+  place: torrente-de-besor
+  reference: 1Sa 30:21-25
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Da parte del botín también a los que se quedaron.
+  reason: '1Sa 30:21: David vuelve adonde esperaban los 200 hombres. Fecha: la del suceso david-reparte-el-botin-por-igual.'
+  sources:
+  - 1-samuel-30
+  - it-besor
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: ziclag
+  reference: 1Sa 30:26-31
+  date:
+    from: -1077
+    to: -1077
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1078 a.e.c.
+  note: Manda una porción de lo capturado a los ancianos de Judá.
+  reason: '1Sa 30:26: David regresa a Ziclag. Fecha: la del suceso david-envia-botin-a-los-ancianos-de-juda.'
+  sources:
+  - 1-samuel-30
+  - it-ziqlag
+  - it-jonatan
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,90 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ahimaaz-lleva-la-noticia
+name: Ahimáaz lleva la noticia a Mahanaim
+person: ahimaaz-hijo-de-sadoc
+reference: 2Sa 18:19-32
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+    2 Samuel)'
+companions: []
+summary: Muerto Absalón, Joab manda a un cusita con la noticia. Ahimáaz insiste en correr también, toma el camino del Distrito,
+  adelanta al cusita y llega primero ante David, pero no le dice que su hijo ha muerto.
+reason: '2Sa 18:19-32; David esperaba en Mahanaim (17:24, 27). Perspicacia «Ahimáaz», núm. 2, y «Mahanaim». Sin año: entre
+  1070 y c. 1040 a.e.c. (estudio 3).'
+sources:
+- 2-samuel-17
+- 2-samuel-18
+- it-ahimaaz
+- it-mahanaim
+- si-3
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: bosque-de-efrain
+  reference: 2Sa 18:19-23
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Sale desde donde está Joab, tras la batalla.
+  reason: '2Sa 18:6, 19-23: Ahimáaz pide correr desde el campo de la batalla del bosque de Efraín. Fecha: la del suceso ahimaaz-y-el-cusita-llevan-la-noticia-a-david.'
+  sources:
+  - 2-samuel-18
+  - it-ahimaaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: distrito-del-jordan
+  reference: 2Sa 18:23
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Por este camino adelanta al cusita.
+  reason: '2Sa 18:23: corre por el camino del distrito del Jordán. Fecha: la del suceso ahimaaz-y-el-cusita-llevan-la-noticia-a-david.'
+  sources:
+  - 2-samuel-18
+  - it-ahimaaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: mahanaim
+  reference: 2Sa 18:24-32
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: El rey está sentado entre las dos puertas.
+  reason: '2Sa 17:24, 27 y 18:24: David esperaba en Mahanaim; Perspicacia «Mahanaim». Fecha: la del suceso ahimaaz-y-el-cusita-llevan-la-noticia-a-david.'
+  sources:
+  - 2-samuel-17
+  - 2-samuel-18
+  - it-mahanaim
+  - it-ahimaaz
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

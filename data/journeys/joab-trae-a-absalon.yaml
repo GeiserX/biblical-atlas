@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: joab-trae-a-absalon
+name: Joab trae a Absalón de Guesur
+person: joab-hijo-de-zeruya
+reference: 2Sa 14:21-24
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+companions: []
+summary: Tras la visita de la mujer de Tecoa, el rey permite volver a Absalón. Joab va a Guesur y lo trae a Jerusalén, pero
+  David no quiere verlo.
+reason: '2Sa 14:21-24. Perspicacia «Joab», núm. 2, y «Absalón». Sin año: entre 1070 (lámina B7) y c. 1040 a.e.c. (tabla de
+  los libros).'
+sources:
+- 2-samuel-14
+- it-absalon
+- it-joab
+- it-guesur
+- tnm-b7
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: joab-hijo-de-zeruya
+  order: 3
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 14:21, 22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: El rey le da permiso.
+  reason: '2Sa 14:21, 22: el rey manda a Joab traer a Absalón. Fecha: la del suceso joab-trae-a-absalon-de-guesur.'
+  sources:
+  - 2-samuel-14
+  - it-joab
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: guesur
+  reference: 2Sa 14:23
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: null
+  reason: '2Sa 14:23: Joab va a Guesur. Fecha: la del suceso joab-trae-a-absalon-de-guesur.'
+  sources:
+  - 2-samuel-14
+  - it-guesur
+  - it-absalon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 2Sa 14:23, 24
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+  note: Vuelve con Absalón, que no ve al rey.
+  reason: '2Sa 14:23, 24: regresa con Absalón, al que el rey no recibe. Fecha: la del suceso joab-trae-a-absalon-de-guesur.'
+  sources:
+  - 2-samuel-14
+  - it-joab
+  - it-absalon
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified

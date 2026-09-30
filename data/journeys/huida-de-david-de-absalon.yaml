@@ -1,0 +1,161 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-david-de-absalon
+name: David huye de Absalón
+person: david
+reference: 2Sa 15:13–17:29
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+companions: []
+summary: Avisado de la rebelión, David deja Jerusalén, cruza el valle de Cedrón y sube llorando el monte de los Olivos. En
+  Bahurim lo maldice Simeí. Avisado de noche, cruza el Jordán y llega a Mahanaim.
+reason: '2Sa 15:13–17:29 da las etapas en orden. Perspicacia «Absalón», párr. 14, y «David», párr. 28, que pone aquí el Salmo
+  3. Sin año: entre 1070 (lámina B7) y c. 1040 a.e.c.'
+sources:
+- 2-samuel-15
+- 2-samuel-16
+- 2-samuel-17
+- salmos-3
+- it-bet-merhaq
+- it-absalon
+- it-david
+- it-husai
+- it-simei
+- it-bahurim
+- it-mahanaim
+- tnm-b7
+- tnm-tabla
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 11
+stops:
+- order: 1
+  place: jerusalen
+  reference: 2Sa 15:13-17
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Deja a diez concubinas; se detienen en Bet-Merhac, la última casa.
+  reason: '2Sa 15:14-17: el rey sale con su casa y se detienen en Bet-Merhac. Fecha: la del suceso david-huye-de-absalon.'
+  sources:
+  - 2-samuel-15
+  - it-bet-merhaq
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: valle-de-cedron
+  reference: 2Sa 15:18-29
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Ittái el guitita se le une; Sadoc y Abiatar devuelven el Arca a la ciudad.
+  reason: '2Sa 15:23: el rey está junto al valle de Cedrón mientras su gente lo cruza hacia el desierto. Fecha: la del suceso
+    david-devuelve-el-arca-a-jerusalen.'
+  sources:
+  - 2-samuel-15
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: monte-de-los-olivos
+  reference: 2Sa 15:30–16:4
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Sube descalzo y llorando; manda a Husai de vuelta, y Zibá le lleva provisiones.
+  reason: '2Sa 15:30, 32 y 16:1: David sube el monte de los Olivos y pasa la cima. Fecha: la del suceso david-envia-a-husai-a-jerusalen.'
+  sources:
+  - 2-samuel-15
+  - 2-samuel-16
+  - it-husai
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: bahurim
+  reference: 2Sa 16:5-14
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+  note: Simeí lo maldice y le tira piedras; Abisái quiere matarlo.
+  reason: '2Sa 16:5: al llegar el rey a Bahurim, Simeí sale a maldecirlo. Fecha: la del suceso simei-maldice-a-david.'
+  sources:
+  - 2-samuel-16
+  - it-simei
+  - it-bahurim
+  - tnm-b7
+  - tnm-tabla
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: rio-jordan
+  reference: 2Sa 17:16, 21, 22
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Esperaba en los lugares de paso del desierto; al amanecer ya han cruzado todos.
+  reason: '2Sa 17:21, 22: avisado por Jonatán y Ahimáaz, David cruza el Jordán con su gente. Fecha: la del suceso david-cruza-el-jordan-y-llega-a-mahanaim.'
+  sources:
+  - 2-samuel-17
+  - it-absalon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: mahanaim
+  reference: 2Sa 17:24-29
+  date:
+    from: -1069
+    to: -1039
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, tras el pacto con David y antes de acabarse
+      2 Samuel)'
+  note: Sobí, Makir y Barzilái le llevan comida.
+  reason: '2Sa 17:24, 27: David llega a Mahanaim. Fecha: la del suceso david-cruza-el-jordan-y-llega-a-mahanaim.'
+  sources:
+  - 2-samuel-17
+  - it-mahanaim
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
