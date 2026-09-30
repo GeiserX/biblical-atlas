@@ -28,8 +28,8 @@ relations:
   inferred: true
   sources:
   - it-baraquias
-  reason: Perspicacia «Baraquías» ve posible que fuera otro nombre del sumo sacerdote Jehoiadá de 2Re 11, padre del Zacarías
-    de 2Cr 24:20.
+  reason: Perspicacia «Baraquías» ve posible que fuera otro nombre del sumo sacerdote Jehoiadá, padre del Zacarías de 2Cr
+    24:20 (Mt 23:35).
   checked_on: '2026-09-30'
   status: verified
 distinct_from:
