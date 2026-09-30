@@ -1,7 +1,7 @@
-# biblical-earth: decisiones de la migración sobre parentesco, tratos y compañía (K1 a K5, T1 y T2 de
+# biblical-atlas: decisiones de la migración sobre parentesco, tratos y compañía (K1 a K5, T1 y T2 de
 # docs/investigacion/modelo.md, sección 16). Cada entrada lleva sus fuentes y su razón; el código de su
 # decisión va en el comentario que la precede. Formato: la cabecera de scripts/migration/migrate.py.
-format: biblical-earth/migration-decisions/1
+format: biblical-atlas/migration-decisions/1
 decision: K1 K2 K3 K4 K5 T1 T2
 checked_on: '2026-09-29'
 entries:

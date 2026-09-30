@@ -53,7 +53,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "migration"))
 import migrate  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
-FORMATO = "biblical-earth/propuesta-cobertura/1"
+FORMATO = "biblical-atlas/propuesta-cobertura/1"
+FORMATOS = (FORMATO, "biblical-earth/propuesta-cobertura/1")  # nombre-fijo: propuestas escritas antes
 SINGULAR = {"places": "lugar", "people": "persona", "journeys": "viaje", "letters": "carta", "events": "evento",
             "periods": "periodo", "finds": "hallazgo", "tours": "recorrido"}
 CLAVE = re.compile(r"^([^\s#\-][^:]*):(?:\s|$)")
@@ -82,7 +83,7 @@ def _texto(v):
 
 
 def cabecera(tipo):
-    return f"# biblical-earth: un fichero por {SINGULAR[tipo]}. Esquema en docs/investigacion/README.md.\n"
+    return f"# biblical-atlas: un fichero por {SINGULAR[tipo]}. Esquema en docs/investigacion/README.md.\n"
 
 
 # ---------------------------------------------------------------- reescribir una ficha sin tocar lo que no cambia
@@ -246,7 +247,7 @@ def _escalar(v):
 
 
 def texto_cobertura(libro, obj):
-    lineas = ["# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.", f"book: {libro}"]
+    lineas = ["# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.", f"book: {libro}"]
     if obj.get("note"):
         lineas.append(f"note: {_escalar(obj['note'])}")
     lineas.append("chapters:")
@@ -635,7 +636,7 @@ class Escritor:
     def aplicar(self, props):
         por_libro = {}
         for p in props:
-            if p.get("formato") != FORMATO:
+            if p.get("formato") not in FORMATOS:
                 raise Error(f"{p.get('_ruta')}: formato '{p.get('formato')}', se esperaba '{FORMATO}'")
             for k in ("libro", "leido"):
                 if not p.get(k):
@@ -792,7 +793,7 @@ class Escritor:
                         continue
                 actual[fid] = f
             if actual != (leer_yaml(ruta) or {}):
-                salida.append((ruta, f"# biblical-earth: fuentes de la cobertura de {libro}. Esquema en "
+                salida.append((ruta, f"# biblical-atlas: fuentes de la cobertura de {libro}. Esquema en "
                                      f"docs/investigacion/README.md.\n" + volcar(actual), False))
         solo = self.affected()
         for libro, caps in cob.items():

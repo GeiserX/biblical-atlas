@@ -1,4 +1,4 @@
-/* biblical-earth · estilos base: marco de la página, barra superior, ficha como contenedor y avisos.
+/* biblical-atlas · estilos base: marco de la página, barra superior, ficha como contenedor y avisos.
    Parte de kit/tokens.css y kit/components.css (copiados de las maquetas). Congelado durante el reparto. */
 
 :root { --panel-w: 400px; --timeline-h: 250px; --topbar-h: 60px; }

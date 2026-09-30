@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «lugar»: ficha, búsqueda y lo que implica seleccionar un lugar. La ficha cambia con el cursor
+/* biblical-atlas · tipo «lugar»: ficha, búsqueda y lo que implica seleccionar un lugar. La ficha cambia con el cursor
    (G-11): qué pasaba aquí en esta fecha, lo de antes y lo de después con su distancia en años, y una tira con toda la
    historia del lugar (F-02). Los lugares inciertos enseñan sus candidatos con su base (C-07). Dueño: app-mapa. */
 'use strict';

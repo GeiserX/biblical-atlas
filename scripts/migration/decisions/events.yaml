@@ -1,7 +1,7 @@
-# biblical-earth: decisiones de la migración sobre sucesos (E1 a E6 de docs/investigacion/modelo.md, sección 16).
+# biblical-atlas: decisiones de la migración sobre sucesos (E1 a E6 de docs/investigacion/modelo.md, sección 16).
 # El formato está en la cabecera de scripts/migration/migrate.py. Cada entrada pone el tipo y los papeles de un suceso,
 # o corrige lo que haría falso un papel, con las fuentes que lo sostienen y la razón en palabras nuestras.
-format: biblical-earth/migration-decisions/1
+format: biblical-atlas/migration-decisions/1
 decision: E1-E6
 checked_on: '2026-09-29'
 entries:

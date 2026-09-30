@@ -56,7 +56,8 @@ SALIDAS = {
     "lugar": ("data/places", "data/videos", "site/videos.json"),
     "persona": ("data/people", "data/videos-people", "site/videos-personas.json"),
 }
-CACHE = ".biblical-earth-videos-cache.json"
+CACHE = ".biblical-atlas-videos-cache.json"
+CACHE_ANTERIOR = ".biblical-earth-videos-cache.json"  # nombre-fijo: la caché de antes se renombra al usarla
 
 MINIMO = 2  # menciones mínimas para que un video entre en el índice
 MAXIMO = 12  # videos por lugar
@@ -285,6 +286,9 @@ class Resolutor:
 
     def __init__(self, carpeta: Path, sin_red: bool = False):
         self.ruta = carpeta / CACHE
+        anterior = carpeta / CACHE_ANTERIOR
+        if not self.ruta.exists() and anterior.exists():
+            os.replace(anterior, self.ruta)  # sin volver a pedir nada a jw.org
         self.cache = json.loads(self.ruta.read_text(encoding="utf-8")) if self.ruta.exists() else {}
         self.peticiones = 0
         self.sin_red = sin_red

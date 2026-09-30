@@ -114,9 +114,9 @@ async function importFile(page, name, content) {
 const storage = (page) => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.entries(localStorage).sort())));
 const token = () => `nota${Math.random().toString(36).slice(2, 10)}`;
 
-const KEY = 'biblical-earth:notes';
+const KEY = 'biblical-atlas:notes';
 const note = (text, when = '2026-01-01T00:00:00.000Z', label = '') => ({ text, label, created: when, updated: when });
-const store = (notes, version = 1) => JSON.stringify({ format: 'biblical-earth-notes', version, notes });
+const store = (notes, version = 1) => JSON.stringify({ format: 'biblical-atlas-notes', version, notes });
 /** Puts a store in localStorage and reloads, so the site reads it as it would on a later visit. */
 async function setStore(page, raw) { await page.evaluate(([k, v]) => localStorage.setItem(k, v), [KEY, raw]); await reload(page); }
 const stored = (page) => page.evaluate((k) => JSON.parse(localStorage.getItem(k) || 'null')?.notes || null, KEY);
@@ -364,8 +364,8 @@ test('importing a file that is not notes fails with a message in Spanish and cha
     await openMyNotes(page);
     const message = page.locator('#notes-list .notes-message');
     for (const [name, content, expected] of [
-      ['datos.json', JSON.stringify({ personas: { pablo: { nombre: 'Pablo' } } }), /Este fichero no son notas de biblical-earth\. No ha cambiado nada\./],
-      ['otro.json', JSON.stringify({ format: 'otra-cosa', version: 1, notes: {} }), /Este fichero no son notas de biblical-earth\. No ha cambiado nada\./],
+      ['datos.json', JSON.stringify({ personas: { pablo: { nombre: 'Pablo' } } }), /Este fichero no son notas de biblical-atlas\. No ha cambiado nada\./],
+      ['otro.json', JSON.stringify({ format: 'otra-cosa', version: 1, notes: {} }), /Este fichero no son notas de biblical-atlas\. No ha cambiado nada\./],
       ['texto.json', 'esto no es JSON', /No se pudo leer el fichero: no es un fichero de notas\. No ha cambiado nada\./],
     ]) {
       await importFile(page, name, content);
@@ -373,6 +373,26 @@ test('importing a file that is not notes fails with a message in Spanish and cha
       assert.equal(await storage(page), before, `importing ${name} changed the storage`);
     }
     assert.equal(await page.locator('#notes-list .notes-item').count(), 1);
+  } finally { await context.close(); }
+});
+
+test('a store and a file written with the previous format identifier are read, and the next save writes the current one', { timeout: 90000 }, async () => {
+  const context = await newContext();
+  try {
+    const page = await openSite(context, 'sel=persona:pablo');
+    const before = 'biblical-earth-notes';   // nombre-fijo: the identifier of stores and files written before
+    await setStore(page, JSON.stringify({ format: before, version: 1, notes: { 'persona:pablo': note('Nota de antes', '2026-01-01T00:00:00.000Z', 'Pablo') } }));
+    assert.equal(await page.evaluate(() => Object.keys(localStorage).filter((k) => k.includes(':notes:unreadable')).length), 0, 'the store went aside');
+    await openMyNotes(page);
+    assert.deepEqual(await page.locator('#notes-list .notes-item-text').allTextContents(), ['Nota de antes']);
+    await importFile(page, 'notas-de-antes.json', JSON.stringify({ format: before, version: 1, notes: { 'chapter:44:16': note('Importada de antes') } }));
+    assert.match(await page.locator('#notes-list .notes-message').textContent(), /1 nota nueva/);
+    await page.locator('#notes-list [data-notes-close]').click();
+    await writeNote(page, '#panel-cuerpo .note-pencil', 'Nota de antes, otra vez');
+    const saved = await page.evaluate((k) => JSON.parse(localStorage.getItem(k)), KEY);
+    assert.equal(saved.format, JSON.parse(store({})).format);
+    assert.deepEqual(Object.keys(saved.notes).sort(), ['chapter:44:16', 'persona:pablo']);
+    assert.deepEqual(page.pageErrors, []);
   } finally { await context.close(); }
 });
 
@@ -508,7 +528,7 @@ test('with the site in two tabs, a save in one never silently overwrites the oth
     await a.locator('#note-text').press('End');
     await a.locator('#note-text').pressSequentially(' y más', { delay: 1 });
     const again = `Otra vez desde B ${token()}`;
-    await b.evaluate(([k, t]) => localStorage.setItem(k, JSON.stringify({ format: 'biblical-earth-notes', version: 1,
+    await b.evaluate(([k, t]) => localStorage.setItem(k, JSON.stringify({ format: 'biblical-atlas-notes', version: 1,
       notes: { 'persona:pablo': { text: t, label: 'Pablo', created: new Date().toISOString(), updated: new Date().toISOString() } } })), [KEY, again]);
     await a.waitForFunction(() => /otra pestaña/.test(document.getElementById('note-status').textContent), null, { timeout: 3000 }).catch(() => {});
     const text = (await stored(a))['persona:pablo'].text;
@@ -605,8 +625,8 @@ test('an unreadable store goes aside under its own date, a second one never repl
   const context = await newContext();
   try {
     const page = await openSite(context, 'sel=persona:pablo');
-    for (const raw of ['{"format":"biblical-earth-notes","version":1,"notes":{"persona:pablo":{"text":"ROTO-1 con notas', 'ROTO-2 {']) await setStore(page, raw);
-    const copies = await page.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith('biblical-earth:notes:unreadable')).map((k) => localStorage.getItem(k)));
+    for (const raw of ['{"format":"biblical-atlas-notes","version":1,"notes":{"persona:pablo":{"text":"ROTO-1 con notas', 'ROTO-2 {']) await setStore(page, raw);
+    const copies = await page.evaluate(() => Object.keys(localStorage).filter((k) => k.startsWith('biblical-atlas:notes:unreadable')).map((k) => localStorage.getItem(k)));
     assert.equal(copies.length, 2, `copies kept aside: ${copies.length}`);
     assert.ok(copies.some((c) => c.includes('ROTO-1')) && copies.some((c) => c.includes('ROTO-2')));
     assert.equal(await page.evaluate((k) => localStorage.getItem(k), KEY), null);
@@ -641,10 +661,10 @@ test('an unreadable store is never destroyed, even with no room to keep a copy a
   try {
     await context.addInitScript(() => {
       const set = Storage.prototype.setItem;
-      Storage.prototype.setItem = function (key, v) { if (String(key).startsWith('biblical-earth:notes:unreadable')) throw new DOMException('full', 'QuotaExceededError'); return set.call(this, key, v); };
+      Storage.prototype.setItem = function (key, v) { if (String(key).startsWith('biblical-atlas:notes:unreadable')) throw new DOMException('full', 'QuotaExceededError'); return set.call(this, key, v); };
     });
     const page = await openSite(context, 'sel=persona:pablo');
-    const raw = '{"format":"biblical-earth-notes","version":1,"notes":{"persona:pablo":{"text":"ROTO sin sitio';
+    const raw = '{"format":"biblical-atlas-notes","version":1,"notes":{"persona:pablo":{"text":"ROTO sin sitio';
     await setStore(page, raw);
     await page.locator('#panel-cuerpo .note-pencil').first().click();
     await page.evaluate(() => { const t = document.getElementById('note-text'); t.value = 'nueva'; t.dispatchEvent(new Event('input', { bubbles: true })); });

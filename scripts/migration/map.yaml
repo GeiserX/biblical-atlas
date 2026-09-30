@@ -1,4 +1,4 @@
-# biblical-earth: mapa de renombres del núcleo al inglés. Lo lee scripts/migration/migrate.py (de español a
+# biblical-atlas: mapa de renombres del núcleo al inglés. Lo lee scripts/migration/migrate.py (de español a
 # inglés, una vez por rama) y scripts/build.py (de inglés a español, al compilar lo que el sitio ya lee).
 # La especificación está en docs/investigacion/modelo.md. Aquí solo hay cambios mecánicos: lo que pide leer el
 # texto está en la sección «Decisiones que necesita la migración» de ese documento.
@@ -7,7 +7,7 @@
 # Las rutas de `at` y de `id_maps` son rutas del esquema antiguo, que es el que lee la migración: la carpeta o el
 # fichero raíz sin extensión, las claves separadas por puntos, `[]` por cada lista y `<id>` por cada clave de un mapa
 # de ids. `at` es una expresión regular sobre esa ruta.
-format: biblical-earth/migration-map/1
+format: biblical-atlas/migration-map/1
 measured_on: 14b6c01
 checked_on: '2026-09-29'
 
@@ -100,7 +100,7 @@ references:
 not_renamed:
   - path: site/data.json, site/data.js, site/videos*.json
     why: Es lo que lee el sitio; build.py y los scripts de vídeos lo siguen escribiendo con la forma de hoy.
-  - path: dist/data.json, dist/biblical-earth.sqlite
+  - path: dist/data.json, dist/biblical-atlas.sqlite
     why: >-
       dist/data.json es el mismo fichero que site/data.json. La base SQLite conserva sus tablas y sus columnas
       de hoy y gana las columnas de `compiled.sqlite`; su esquema pasa al inglés con la tabla de afirmaciones.
@@ -646,7 +646,7 @@ events:
 # En esta ola solo se escribe el formato 1, que es el que escriben los carriles en marcha. Su sobre no cambia.
 # apply.py traduce lo que la propuesta lleva de una ficha antes de aplicarla.
 proposal:
-  format: biblical-earth/propuesta-cobertura/1
+  format: biblical-atlas/propuesta-cobertura/1
   envelope_unchanged:
     [formato, libro, capitulos, agente, leido, cobertura, fuentes, cambios, op, tipo, id, datos, campo, valores,
      antes, despues, historial, preguntas]

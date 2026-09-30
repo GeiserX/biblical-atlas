@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «libro»: un libro de la Biblia («libro:hechos») con sus datos de la Tabla de los libros
+/* biblical-atlas · tipo «libro»: un libro de la Biblia («libro:hechos») con sus datos de la Tabla de los libros
    (escritor, lugar, fecha, tiempo que abarca), sus capítulos y lo que cuentan. Pone la lista de libros de data.json
    en el buscador y en las citas, y la URL de capítulo de la Biblia de estudio (nwtsty). Dueño durante el reparto: app-estudio. */
 'use strict';

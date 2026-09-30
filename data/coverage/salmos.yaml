@@ -1,4 +1,4 @@
-# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
 book: salmos
 note: "Criterios: el autor de un encabezamiento va en entidades en el salmo que crea su ficha y en menciona en los demás; Jacob, José, Leví o Aarón, en menciona solo si el texto nombra al hombre y no al pueblo."
 chapters:

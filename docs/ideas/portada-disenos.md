@@ -1,6 +1,10 @@
 # La portada: seis diseños para elegir
 
+<<<<<<< HEAD
 La portada es lo primero que ve quien abre biblical-earth sin una dirección concreta. Aquí hay seis diseños que funcionan, cada uno con el sitio de verdad detrás, y un catálogo de ideas por zona para mezclarlos. El dueño eligió el diseño 4, «Entra por una pregunta», y es la portada del sitio: cómo funciona está en [site/README.md](../../site/README.md#portada). Los seis prototipos se quedan aquí como referencia.
+=======
+La portada es lo primero que ve quien abre biblical-atlas sin una dirección concreta. Aquí hay seis diseños que funcionan, cada uno con el sitio de verdad detrás, y un catálogo de ideas por zona para mezclarlos. Nada de esto cambia el sitio todavía: son prototipos para elegir.
+>>>>>>> origin/main
 
 Todas las cifras de esta página están medidas en un navegador real, a 1440x900 con ratón y a 430x900 con pantalla táctil.
 

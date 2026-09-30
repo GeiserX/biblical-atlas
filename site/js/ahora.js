@@ -1,4 +1,4 @@
-/* biblical-earth · «Ahora mismo» y sincronía. Sin nada seleccionado, la ficha enseña dónde está Pablo (v0) o, si los
+/* biblical-atlas · «Ahora mismo» y sincronía. Sin nada seleccionado, la ficha enseña dónde está Pablo (v0) o, si los
    datos no lo sitúan, quién está dónde en la fecha del cursor (T-09). La frase de contexto de la línea (T-23). La vista
    «Ahora mismo» (#vista-ahora) sobre el mapa, y la sincronía por lugar (#vista-sincronia, A-12): ¿quién había en un
    lugar en una época? Dueño durante el reparto: app-tiempo. */

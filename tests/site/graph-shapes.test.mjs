@@ -80,7 +80,7 @@ async function openGraph(screen, theme, hash) {
   page.pageErrors = [];
   page.on('pageerror', (e) => page.pageErrors.push(e.message));
   // Meeting mode is a saved preference, read before the first paint.
-  if (theme.meeting) await page.addInitScript(() => localStorage.setItem('biblical-earth:pref:reunion', '1'));
+  if (theme.meeting) await page.addInitScript(() => localStorage.setItem('biblical-atlas:pref:reunion', '1'));
   // Only the local site: map tiles and fonts from other hosts are not needed to lay out the graph.
   await page.route((url) => !url.href.startsWith(base.slice(0, base.lastIndexOf('/'))), (route) => route.abort());
   await page.goto(`${base}#${hash}`);
