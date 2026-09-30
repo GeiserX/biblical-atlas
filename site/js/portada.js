@@ -156,8 +156,7 @@ const maxFilas = () => (estrecha() ? 4 : 6);
 function filasDe(q) {
   todas = 0;
   if (!BE.D) {
-    let y = BE.leerAnio(q);
-    if (y != null && y > BE.T_MAX && /^\s*\d{1,4}\s*$/.test(q)) y = 1 - y;   // como la búsqueda del sitio: «607» es a.e.c.
+    const y = BE.anioPregunta(q);   // la misma regla que la búsqueda del sitio: «607» es a.e.c.
     return y == null ? [] : [{ anio: y, titulo: `Ir a ${BE.fmtAnio(y)}`, forma: 'anio', tipo: 'fecha', meta: 'mueve el cursor de tiempo y enseña quién había' }];
   }
   const rs = ordenPortada(BE.buscar(q), normal(q).trim().replace(/\s+/g, ' '));

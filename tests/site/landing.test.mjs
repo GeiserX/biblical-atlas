@@ -129,6 +129,13 @@ test('the box answers with the shape, the type word and the date of each result'
   assert.deepEqual([(await rows(page))[0].tit, (await rows(page))[0].forma], ['Juan 3', '#f-texto']);
   await type(page, '607');
   assert.equal((await rows(page))[0].tit, 'Ir a 607 a.e.c.');
+  // A place with a year and no era: the year is before Christ when it only fits there, as the bare year.
+  for (const q of ['Jerusalén en 607', 'Jerusalén 607']) {
+    await type(page, q);
+    assert.equal((await rows(page))[0].tit, 'Jerusalén en 607 a.e.c.', q);
+  }
+  await type(page, 'Jerusalén en 33');
+  assert.equal((await rows(page))[0].tit, 'Jerusalén en 33 e.c.');
 });
 
 test('the keyboard: arrows move, Escape closes the list and then clears the box, and neither enters the map', async () => {

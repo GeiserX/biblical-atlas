@@ -85,6 +85,14 @@ function leerAnio(s) {
   return n;
 }
 const enRango = (y) => y >= BE.T_MIN - 1 && y <= BE.T_MAX;
+/** El año de una pregunta. Sin «a.e.c.» ni «e.c.», un número que no cabe después de Cristo y sí antes es de antes:
+    «607» es 607 a.e.c., solo y en «Jerusalén en 607» o «Jerusalén 607». La portada lo usa también antes de los datos. */
+function anioPregunta(s) {
+  const y = leerAnio(s);
+  if (y == null) return null;
+  const conEra = /\d\s*[a-z]/.test(norm(s).trim());
+  return !conEra && !enRango(y) && enRango(1 - y) ? 1 - y : y;
+}
 /** Una entidad por su nombre, exacto o por el principio hasta el final de una palabra: persona, lugar, periodo o suceso. */
 function entidad(texto, tipos = ['persona', 'lugar', 'periodo', 'evento', 'libro']) {
   const rs = resultadosTipos(texto, puntuadorEstricto).filter((r) => tipos.includes(r.sel.tipo) && r.puntos >= 90);
@@ -154,7 +162,7 @@ function preguntasMes(nq) {
   const q = nq.replace(/\b(?:segundo\s+adar|adar\s+segundo|adar\s+ii)\b/, 'veadar');
   const r = q.replace(/^(?:el\s+)?(?:mes\s+)?(?:de\s+)?/, '').match(/^(?:(\d{1,2})\s+(?:de\s+)?)?([a-z]+)(?:\s+(?:de\s+|del\s+(?:ano\s+)?|en\s+)?(.+))?$/);
   if (!r) return [];
-  const dia = r[1] ? +r[1] : null, anio = r[3] != null ? leerAnio(r[3]) : null;
+  const dia = r[1] ? +r[1] : null, anio = r[3] != null ? anioPregunta(r[3]) : null;
   if (r[3] != null && anio == null) return [];
   if (dia != null && (dia < 1 || dia > 30)) return [];
   const { meses, exacto } = mesesPorNombre(r[2]);
@@ -194,9 +202,8 @@ function preguntas(q) {
   const nq = norm(q).trim().replace(/[¿?]/g, '').replace(/\s+/g, ' ');
   out.push(...preguntasMes(nq));
   if (out.length && out.some((r) => r.puntos >= 900)) return out;
-  // Un año suelto. Un número sin «a.e.c.» ni «e.c.» que no cabe después de Cristo es antes: «607» es 607 a.e.c.
-  let y = leerAnio(q);
-  if (y != null && !enRango(y) && /^\s*\d{1,4}\s*$/.test(q) && enRango(1 - y)) y = 1 - y;
+  // Un año suelto: «607» es 607 a.e.c. (anioPregunta).
+  const y = anioPregunta(q);
   if (y != null) {
     out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y)}`, meta: enRango(y) ? 'mueve el cursor de tiempo y enseña quién había' : 'fuera del tramo que cubre la línea de tiempo', puntos: 900, accion: () => saltarA(y + 0.5) });
     return out;
@@ -223,7 +230,7 @@ function preguntas(q) {
   // «Babilonia en 30», «quién había en Judá en 520 a.e.c.», «dónde estaba Pablo en 51»
   m = nq.match(/^(?:que pasaba en |quien habia en |quienes habia en |quien estaba en |donde estaba )?(.+?) en (?:el (?:ano )?)?(.+)$/);
   if (m) {
-    const a = entidad(m[1]), y2 = leerAnio(m[2]);
+    const a = entidad(m[1]), y2 = anioPregunta(m[2]);
     if (a && y2 != null) out.push({ grupo: 'Preguntas', titulo: `${a.titulo} en ${fmtAnio(y2)}`, meta: `abre la ficha con el cursor en ${fmtAnio(y2)}`, puntos: 950, sel: a.sel, accion: () => saltarA(y2 + 0.5, a.sel) });
     // Sin ese nombre en los datos no se adivina otro parecido: se ofrece la fecha, que ya enseña quién había.
     else if (y2 != null && enRango(y2)) out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y2)}`, meta: 'ese nombre no está en los datos como lugar ni persona; la fecha enseña quién había', puntos: 900, accion: () => saltarA(y2 + 0.5) });
@@ -232,7 +239,7 @@ function preguntas(q) {
   // primero es un libro, es un capítulo («Juan 3», «1 Corintios 13») y lo contesta el tipo pasaje.
   if (!out.some((r) => r.grupo === 'Preguntas')) {
     m = nq.match(/^(.+?)\s+((?:c\.?\s*)?\d{1,4}(?:\s*[a-z][a-z.\s]*)?)$/);
-    const y3 = m ? leerAnio(m[2]) : null;
+    const y3 = m ? anioPregunta(m[2]) : null;
     if (y3 != null && !BE.libro(m[1])) {
       const a = entidad(m[1], ['lugar', 'persona']);
       if (a) out.push({ grupo: 'Preguntas', titulo: `${a.titulo} en ${fmtAnio(y3)}`, meta: `abre la ficha con el cursor en ${fmtAnio(y3)}`, puntos: 950, sel: a.sel, accion: () => saltarA(y3 + 0.5, a.sel) });
@@ -511,6 +518,6 @@ function anunciar() {
 }
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
-Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, objetoSel, fechaSel, historia, textoCita,
+Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, anioPregunta, objetoSel, fechaSel, historia, textoCita,
   filaResultado, marcar, elegirResultado, sugerencias });
 })();
