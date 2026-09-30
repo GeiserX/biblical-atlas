@@ -1,0 +1,113 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: de-nazaret-a-belen
+name: De Nazaret a Belén por el censo
+person: jose-esposo-de-maria
+reference: Lu 2:1-39; Mt 2:1, 11
+date:
+  from: -1
+  to: 1
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: entre c. 2 a.e.c. y 1 e.c.
+narrative_order:
+  series: jose-esposo-de-maria
+  order: 1
+companions:
+- maria-madre-de-jesus
+summary: Por el censo de Augusto, José sube con María de Nazaret a Belén, la ciudad de David. Allí nace Jesús, lo presentan
+  en el templo de Jerusalén y la familia sigue en Belén cuando llegan los astrólogos.
+reason: Lu 2:4-38 da las tres primeras paradas; Mt 2:1, 11 la última. Fechas de los sucesos nacimiento-de-jesus, pastores-visitan-a-jesus,
+  presentacion-en-el-templo y astrologos-en-belen.
+sources:
+- lucas-2
+- mateo-2
+- tnm-a7-a
+- jy-cap-5
+- jy-cap-6
+- jy-cap-7
+- it-belen
+- it-jose
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: nazaret
+  reference: Lu 2:4
+  date:
+    from: -1
+    to: -1
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 2 a.e.c.
+  note: Sale de Galilea hacia Judea.
+  reason: 'Lu 2:4: José sube de la ciudad de Nazaret a Belén para inscribirse. Año del suceso nacimiento-de-jesus.'
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: belen
+  reference: Lu 2:4-21
+  date:
+    from: -1
+    to: -1
+    precision: day
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1 de octubre de 2 a.e.c.
+    detail:
+      month: tisri
+  note: Nace Jesús; lo visitan unos pastores y lo circuncidan al octavo día.
+  reason: Lu 2:6-21 cuenta en Belén el nacimiento, la visita de los pastores y la circuncisión. Fecha de los sucesos nacimiento-de-jesus
+    y pastores-visitan-a-jesus.
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  - jy-cap-5
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Lu 2:22-38
+  date:
+    from: -1
+    to: -1
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: 2 a.e.c.
+  note: Lo presentan en el templo; Simeón y Ana hablan de él.
+  reason: Lu 2:22 los hace subir a Jerusalén al acabar los días de la purificación. Fecha del suceso presentacion-en-el-templo.
+  sources:
+  - lucas-2
+  - tnm-a7-a
+  - jy-cap-6
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: belen
+  reference: Mt 2:1, 11
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Viven ya en una casa cuando llegan los astrólogos.
+  reason: Mt 2:11 los encuentra en una casa de Belén. Las notas de estudio de Lu 2:39 y Mt 2:11 ponen esa visita después de
+    la presentación. Fecha del suceso astrologos-en-belen.
+  sources:
+  - mateo-2
+  - lucas-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: bernabe-y-marcos-a-chipre
+name: Bernabé y Marcos a Chipre
+person: bernabe
+reference: Hch 15:36-39
+date:
+  from: 49
+  to: 49
+  precision: season
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: finales del verano de 49 e.c.
+  detail: &id001
+    season: summer
+narrative_order:
+  series: bernabe
+  order: 2
+companions:
+- juan-marcos
+summary: 'Pablo no quiere llevar a Marcos, que los dejó en Panfilia, y discute con Bernabé. Se separan: Bernabé se embarca
+  hacia Chipre con Marcos, su primo.'
+reason: Hch 15:39 da la salida y el destino. Fecha del suceso pablo-y-bernabe-se-separan, que sigue el estudio 3.
+sources:
+- hch-15
+- si-3
+- it-bernabe
+- it-marcos
+- it-chipre
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: antioquia-de-siria
+  reference: Hch 15:36-39
+  date:
+    from: 49
+    to: 49
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: finales del verano de 49 e.c.
+    detail: *id001
+  note: null
+  reason: Hch 15:35, 36 los deja en Antioquía cuando Pablo propone volver a visitar a los hermanos. Fecha del suceso pablo-y-bernabe-se-separan.
+  sources:
+  - hch-15
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: chipre
+  reference: Hch 15:39
+  date:
+    from: 49
+    to: 49
+    precision: season
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: finales del verano de 49 e.c.
+    detail: *id001
+  note: Hechos no dice nada más de este viaje.
+  reason: 'Hch 15:39: Bernabé se lleva a Marcos y se embarca hacia Chipre. Fecha del suceso pablo-y-bernabe-se-separan.'
+  sources:
+  - hch-15
+  - it-bernabe
+  - it-chipre
+  checked_on: '2026-09-30'
+  status: verified

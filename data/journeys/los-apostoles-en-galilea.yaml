@@ -1,0 +1,143 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: los-apostoles-en-galilea
+name: Los apóstoles van a Galilea tras la resurrección
+person: pedro
+reference: Mt 28:7-10, 16-20; Jn 21:1-23; Lu 24:50-53; Hch 1:4-14
+date:
+  from: 33
+  to: 33
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: del 16 de nisán al 25 de iyar de 33 e.c.
+narrative_order:
+  series: pedro
+  order: 1
+companions:
+- andres
+- santiago-hijo-de-zebedeo
+- juan-apostol
+- felipe-apostol
+- bartolome
+- tomas
+- mateo
+- santiago-hijo-de-alfeo
+- tadeo
+- simon-el-cananita
+summary: Jesús manda a los once a Galilea. Siete de ellos lo ven en la orilla del lago tras una noche de pesca, y en un monte
+  reciben el encargo de hacer discípulos. Ya en Jerusalén, lo ven subir al cielo.
+reason: Mateo 28, Juan 21, Lucas 24 y Hechos 1 dan las paradas. Pedro va como persona porque encabeza Jn 21:3. Fechas de los
+  sucesos aparicion-a-tomas, aparicion-junto-al-mar-de-galilea, mandato-de-hacer-discipulos, manda-esperar-en-jerusalen y
+  ascension-de-jesus.
+sources:
+- mateo-28
+- juan-20
+- juan-21
+- lucas-24
+- hechos-1
+- tnm-a7-h
+- jy-cap-135
+- jy-cap-136
+- jy-cap-137
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Mt 28:10; Jn 20:19-29
+  date:
+    from: 33
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: entre el 17 de nisán y el 25 de iyar de 33 e.c.
+  note: Jesús se les aparece dos veces antes de que salgan.
+  reason: Jn 20:19-29 los mantiene en Jerusalén ocho días, y Mt 28:10 les manda ir a Galilea. Fecha del suceso aparicion-a-tomas.
+  sources:
+  - juan-20
+  - mateo-28
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: mar-de-galilea
+  reference: Jn 21:1-23
+  date:
+    from: 33
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: entre el 17 de nisán y el 25 de iyar de 33 e.c.
+  note: Pedro, Tomás, Natanael, los hijos de Zebedeo y otros dos salen a pescar.
+  reason: 'Jn 21:1-3: Jesús se aparece junto al mar de Tiberíades después de que Pedro sale a pescar. Fecha del suceso aparicion-junto-al-mar-de-galilea.'
+  sources:
+  - juan-21
+  - tnm-a7-h
+  - jy-cap-136
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: galilea
+  reference: Mt 28:16-20
+  date:
+    from: 33
+    to: 33
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: entre el 17 de nisán y el 25 de iyar de 33 e.c.
+  note: La montaña donde se reúnen no tiene nombre.
+  reason: 'Mt 28:16: los once van a Galilea, a la montaña que Jesús les había indicado. Fecha del suceso mandato-de-hacer-discipulos.'
+  sources:
+  - mateo-28
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: monte-de-los-olivos
+  reference: Lu 24:50; Hch 1:9-12
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 25 de iyar de 33 e.c.
+    detail: &id001
+      month: iyar
+      day: 25
+  note: Lucas dice que los llevó hasta Betania, en ese monte.
+  reason: Hch 1:12 dice que vuelven desde el monte de los Olivos tras verlo subir al cielo. Fecha del suceso ascension-de-jesus.
+  sources:
+  - hechos-1
+  - lucas-24
+  - tnm-a7-h
+  - jy-cap-137
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: jerusalen
+  reference: Hch 1:12-14
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 25 de iyar de 33 e.c.
+    detail: *id001
+  note: Suben al cuarto de arriba donde se alojaban.
+  reason: 'Hch 1:12, 13: regresan a Jerusalén, a un camino de sábado del monte. Fecha del suceso ascension-de-jesus.'
+  sources:
+  - hechos-1
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified

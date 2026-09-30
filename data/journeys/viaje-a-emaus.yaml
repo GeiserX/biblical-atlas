@@ -1,0 +1,88 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-a-emaus
+name: Cleopas camino de Emaús
+person: cleopas
+reference: Lu 24:13-35
+date:
+  from: 33
+  to: 33
+  precision: day
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 16 de nisán de 33 e.c.
+  detail: &id001
+    month: nisan
+    day: 16
+companions: []
+summary: El día de la resurrección, Cleopas y otro discípulo van a pie hasta Emaús. Jesús camina con ellos sin que lo reconozcan;
+  al partir el pan lo conocen, y esa misma noche vuelven a Jerusalén.
+reason: Lu 24:13, 18 y 33 dan la salida, la llegada y la vuelta en el mismo día. Fecha del suceso camino-de-emaus (tabla A7-H).
+sources:
+- lucas-24
+- nota-lucas-24
+- tnm-a7-h
+- jy-cap-135
+- it-cleopas
+- it-emaus
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Lu 24:13
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 16 de nisán de 33 e.c.
+    detail: *id001
+  note: El otro discípulo no se nombra.
+  reason: Lu 24:13 dice que Emaús estaba a unos 11 km de Jerusalén, de donde salen. Fecha del suceso camino-de-emaus.
+  sources:
+  - lucas-24
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: emaus
+  reference: Lu 24:13-31
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 16 de nisán de 33 e.c.
+    detail: *id001
+  note: Lo reconocen al partir el pan. El lugar no tiene punto en el mapa.
+  reason: 'Lu 24:13, 28-31: llegan a la aldea de Emaús y Jesús se sienta a la mesa con ellos. Lugar y fecha del suceso camino-de-emaus.'
+  sources:
+  - lucas-24
+  - tnm-a7-h
+  - it-emaus
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Lu 24:33-35
+  date:
+    from: 33
+    to: 33
+    precision: day
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 16 de nisán de 33 e.c.
+    detail: *id001
+  note: Encuentran reunidos a los once.
+  reason: 'Lu 24:33: en ese mismo momento vuelven a Jerusalén. Fecha del suceso camino-de-emaus.'
+  sources:
+  - lucas-24
+  - tnm-a7-h
+  checked_on: '2026-09-30'
+  status: verified

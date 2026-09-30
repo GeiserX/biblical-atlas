@@ -1,0 +1,139 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: por-fenicia-y-la-decapolis
+name: Por Fenicia y la Decápolis
+person: jesus
+reference: Mr 7:1–8:12; Mt 15:1–16:4
+date:
+  from: 32
+  to: 32
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 32 e.c., tras la Pascua
+narrative_order:
+  series: jesus
+  order: 10
+companions: []
+summary: Sale de Galilea hacia la región de Tiro, donde cura a la hija de una mujer sirofenicia. Vuelve al lago por Sidón
+  y la Decápolis, da de comer a 4.000 hombres y cruza en barca a Magadán.
+reason: Marcos 7 y 8 dan las etapas en orden. Fechas de los sucesos tradiciones-humanas, sirofenicia-y-4000 y senal-de-jonas-en-magadan
+  (tabla A7-D).
+sources:
+- marcos-7
+- marcos-8
+- mateo-15
+- mateo-16
+- tnm-a7-d
+- jy-cap-56
+- jy-cap-57
+- jy-cap-58
+- it-fenicia
+- it-tiro
+- it-sidon
+- it-decapolis
+- it-magadan
+- it-dalmanuta
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mr 7:1-23; Mt 15:1-20
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Denuncia las tradiciones humanas.
+  reason: Mr 7:1-23 no nombra el lugar; la tabla A7-D pone «probablemente Capernaúm». Fecha del suceso tradiciones-humanas.
+  sources:
+  - marcos-7
+  - mateo-15
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: pending
+- order: 2
+  place: tiro
+  reference: Mr 7:24-30; Mt 15:21-28
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: La región de Tiro y Sidón, en Fenicia; cura a la hija de una mujer sirofenicia.
+  reason: Mr 7:24 lo lleva a la región de Tiro y Sidón, y Mr 7:31 dice que vuelve desde la de Tiro. Fecha del suceso sirofenicia-y-4000.
+  sources:
+  - marcos-7
+  - mateo-15
+  - tnm-a7-d
+  - it-tiro
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: sidon
+  reference: Mr 7:31
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: null
+  reason: 'Mr 7:31: regresa al mar de Galilea pasando por Sidón. Fecha del suceso sirofenicia-y-4000.'
+  sources:
+  - marcos-7
+  - tnm-a7-d
+  - it-sidon
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: decapolis
+  reference: Mr 7:31–8:9; Mt 15:29-38
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Cura a un sordo y da de comer a 4.000 hombres.
+  reason: Mr 7:31 lo hace cruzar la región de la Decápolis camino del lago. Fecha del suceso sirofenicia-y-4000.
+  sources:
+  - marcos-7
+  - marcos-8
+  - mateo-15
+  - tnm-a7-d
+  - it-decapolis
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: magadan
+  reference: Mt 15:39–16:4; Mr 8:10-12
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 32 e.c., tras la Pascua
+  note: Marcos dice Dalmanuta, un nombre de la misma ficha. Le piden una señal.
+  reason: Mt 15:39 lo lleva en barca a la región de Magadán, y Mr 8:10 a la de Dalmanuta. Fecha del suceso senal-de-jonas-en-magadan.
+  sources:
+  - mateo-15
+  - marcos-8
+  - tnm-a7-d
+  - it-magadan
+  - it-dalmanuta
+  checked_on: '2026-09-30'
+  status: verified

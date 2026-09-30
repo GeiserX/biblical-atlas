@@ -1,0 +1,94 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: subida-a-la-fiesta-de-los-tabernaculos
+name: Subida a la Fiesta de los Tabernáculos de 32
+person: jesus
+reference: Jn 7:1-10; Lu 9:51-62; Mt 8:19-22
+date:
+  from: 32
+  to: 32
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: septiembre u octubre de 32 e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: jesus
+  order: 12
+companions: []
+summary: Sus hermanos lo animan a ir a Judea y él sube después, sin llamar la atención. Una aldea samaritana no lo recibe
+  y siguen a otra; en Jerusalén enseña en el templo y cura a un ciego de nacimiento.
+reason: Jn 7 y Lu 9:51-56 dan el camino. Fechas de los sucesos sus-hermanos-lo-animan-a-ir-a-judea, dejarlo-todo-por-el-reino,
+  fiesta-de-los-tabernaculos-32, invita-a-los-sedientos-a-beber y sana-al-ciego-de-nacimiento (tabla A7-E).
+sources:
+- juan-7
+- lucas-9
+- mateo-8
+- tnm-a7-e
+- jy-cap-65
+- jy-cap-66
+- jy-cap-67
+- jy-cap-68
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: galilea
+  reference: Jn 7:1-9
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: septiembre u octubre de 32 e.c.
+  note: Sus hermanos le dicen que vaya a Judea.
+  reason: Jn 7:1, 9 lo deja en Galilea antes de la fiesta. Fecha del suceso sus-hermanos-lo-animan-a-ir-a-judea.
+  sources:
+  - juan-7
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: region-de-samaria
+  reference: Lu 9:52-56
+  date:
+    from: 32
+    to: 32
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: septiembre u octubre de 32 e.c.
+  note: Aldeas de samaritanos sin nombre; la primera no lo recibe.
+  reason: 'Lu 9:51-56: decidido a ir a Jerusalén, manda mensajeros a una aldea samaritana y siguen a otra. Fecha del suceso
+    dejarlo-todo-por-el-reino, que lo sitúa en Galilea y Samaria.'
+  sources:
+  - lucas-9
+  - tnm-a7-e
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Jn 7:10–10:21
+  date:
+    from: 32
+    to: 32
+    precision: month
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: Fiesta de los Tabernáculos de 32 e.c.
+    detail:
+      month: tisri
+  note: Enseña en el templo y cura a un ciego de nacimiento.
+  reason: 'Jn 7:10, 14: sube a la fiesta y a mitad de ella enseña en el templo. Fecha de los sucesos fiesta-de-los-tabernaculos-32
+    y sana-al-ciego-de-nacimiento.'
+  sources:
+  - juan-7
+  - tnm-a7-e
+  - jy-cap-66
+  checked_on: '2026-09-30'
+  status: verified

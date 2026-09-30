@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: judas-y-silas-llevan-la-carta
+name: Judas y Silas llevan la carta a Antioquía
+person: judas-barsabas
+reference: Hch 15:22-34
+date:
+  from: 49
+  to: 49
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 49 e.c.
+companions:
+- silas
+summary: Los apóstoles y los ancianos eligen a Judas Barsabás y a Silas para llevar su carta a Antioquía con Pablo y Bernabé.
+  Animan a los hermanos con sus discursos, y después los despiden en paz.
+reason: Hch 15:22, 30 y 33 dan la ida y la vuelta. Fechas de los sucesos concilio-de-jerusalen-49 y la-carta-de-jerusalen-llega-a-antioquia,
+  que siguen el estudio 3.
+sources:
+- hch-15
+- si-3
+- it-judas
+- it-silas
+- bt-15
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: jerusalen
+  reference: Hch 15:22-29
+  date:
+    from: 49
+    to: 49
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 49 e.c.
+  note: null
+  reason: 'Hch 15:22: la congregación de Jerusalén elige a Judas y a Silas. Fecha del suceso concilio-de-jerusalen-49.'
+  sources:
+  - hch-15
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: antioquia-de-siria
+  reference: Hch 15:30-33
+  date:
+    from: 49
+    to: 49
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 49 e.c.
+  note: Leen la carta y animan a los hermanos.
+  reason: 'Hch 15:30: bajan a Antioquía y entregan la carta. Fecha del suceso la-carta-de-jerusalen-llega-a-antioquia.'
+  sources:
+  - hch-15
+  - it-judas
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: Hch 15:33
+  date:
+    from: 49
+    to: 49
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 49 e.c.
+  note: Hch 15:34 no está en la TNM. Silas vuelve a estar en Antioquía en Hch 15:40.
+  reason: Hch 15:33 dice que los hermanos los mandan de vuelta a quienes los enviaron, en Jerusalén. Fecha del suceso la-carta-de-jerusalen-llega-a-antioquia.
+  sources:
+  - hch-15
+  - it-silas
+  checked_on: '2026-09-30'
+  status: verified

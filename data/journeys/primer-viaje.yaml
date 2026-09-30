@@ -13,7 +13,6 @@ date:
   text: c. 47-48 e.c. (primavera de 47 a otoño de 48; invierno siguiente en Antioquía)
 companions:
 - bernabe
-- juan-marcos
 summary: Pablo y Bernabé salen de Antioquía de Siria, recorren Chipre y el sur de Galacia y vuelven por el mismo
   camino. Juan Marcos los deja en Perga.
 reason: El estudio 3 (párr. 21) fecha la gira de la primavera de 47 al otoño de 48; Hechos 13 y 14 dan las paradas
@@ -28,6 +27,9 @@ history:
   change: 'Paradas 2 a 4 (Seleucia, Salamina y Pafos) pasan de heredar c. 47-48 a c. 47 anclada, como los sucesos de Chipre:
     la nota de estudio de Hch 13:4 y Perspicacia «Paulo» dan el año 47.'
   source: nota-hechos-13
+- date: '2026-09-30'
+  change: 'Juan Marcos sale de companions: solo va de Antioquía a Perga, y su vuelta a Jerusalén es ahora el viaje juan-marcos-vuelve-a-jerusalen.'
+  source: hch-13
 checked_on: '2026-09-29'
 status: verified
 stops:

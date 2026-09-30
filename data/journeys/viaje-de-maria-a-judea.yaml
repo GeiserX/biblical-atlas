@@ -1,0 +1,82 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: viaje-de-maria-a-judea
+name: María visita a Elisabet
+person: maria-madre-de-jesus
+reference: Lu 1:39-56
+date:
+  from: -1
+  to: -1
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. principios de 2 a.e.c.
+companions: []
+summary: Poco después de la visita de Gabriel, María deja Nazaret con prisa, sube a una ciudad de la región montañosa de Judá,
+  pasa unos tres meses con Elisabet y regresa a su casa.
+reason: Lu 1:26, 39, 40 y 56 dan la salida, la llegada y la vuelta. La fecha es la de los sucesos anuncio-a-maria y maria-visita-a-elisabet,
+  que siguen la tabla A7-A.
+sources:
+- lucas-1
+- tnm-a7-a
+- jy-cap-2
+- it-maria
+- it-elisabet
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: nazaret
+  reference: Lu 1:26-39
+  date:
+    from: -1
+    to: -1
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. principios de 2 a.e.c.
+  note: Sale después del anuncio del ángel.
+  reason: Lu 1:26 pone el anuncio en Nazaret, y el 39 dice que María se pone en camino poco después. Fecha del suceso anuncio-a-maria.
+  sources:
+  - lucas-1
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: judea
+  reference: Lu 1:39-56
+  date:
+    from: -1
+    to: -1
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. principios de 2 a.e.c.
+  note: Una ciudad de Judá sin nombre. La nota de Lu 1:39 calcula tres o cuatro días de camino.
+  reason: 'Lu 1:39, 40: entra en casa de Zacarías, en la región montañosa de Judá. Mismo lugar y misma fecha que el suceso
+    maria-visita-a-elisabet.'
+  sources:
+  - lucas-1
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: nazaret
+  reference: Lu 1:56
+  date:
+    from: -1
+    to: -1
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. principios de 2 a.e.c.
+  note: Unos tres meses después.
+  reason: Lu 1:56 dice que vuelve a su casa, que Lu 1:26, 27 sitúa en Nazaret. Fecha del suceso maria-visita-a-elisabet.
+  sources:
+  - lucas-1
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified

@@ -1,0 +1,119 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: travesia-a-gadara
+name: Cruce a la región de Gadara
+person: jesus
+reference: Mr 4:1–5:43; Mt 8:18, 23-34; 9:18-34; 13:1-53; Lu 8:4-56
+date:
+  from: 31
+  to: 32
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 31 o 32 e.c.
+narrative_order:
+  series: jesus
+  order: 7
+companions: []
+summary: Tras enseñar en parábolas desde una barca, cruza el lago al anochecer y calma una tormenta. En la región de Gadara
+  libera a un endemoniado, y a la vuelta resucita a la hija de Jairo.
+reason: Marcos 4 y 5 dan el orden. Fechas de los sucesos parabolas-del-reino, calma-la-tormenta, demonios-a-los-cerdos, hija-de-jairo
+  y dos-ciegos-y-un-mudo (tabla A7-D).
+sources:
+- marcos-4
+- marcos-5
+- mateo-8
+- mateo-9
+- mateo-13
+- lucas-8
+- tnm-a7-d
+- jy-cap-43
+- jy-cap-44
+- jy-cap-45
+- jy-cap-46
+- jy-cap-47
+- it-gadarenos
+- it-gerasenos
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: capernaum
+  reference: Mt 13:1-53; Mr 4:1-34
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Enseña desde una barca, junto al mar.
+  reason: Mr 4:1 lo pone enseñando a la orilla del mar. Lugar y fecha del suceso parabolas-del-reino, que lo sitúa en Capernaúm
+    y el mar de Galilea.
+  sources:
+  - marcos-4
+  - mateo-13
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: mar-de-galilea
+  reference: Mr 4:35-41; Lu 8:22-25
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Calma la tormenta.
+  reason: Mr 4:35 dice que al anochecer cruzan a la otra orilla. Fecha del suceso calma-la-tormenta.
+  sources:
+  - marcos-4
+  - lucas-8
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: gadara
+  reference: Mr 5:1-20; Lu 8:26-39
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Marcos y Lucas dicen región de los gerasenos, un nombre de la misma ficha.
+  reason: Mr 5:1 los hace llegar a la región de los gerasenos, al otro lado del mar. Fecha del suceso demonios-a-los-cerdos.
+  sources:
+  - marcos-5
+  - lucas-8
+  - tnm-a7-d
+  - it-gadarenos
+  - it-gerasenos
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: capernaum
+  reference: Mr 5:21-43; Lu 8:40-56; Mt 9:18-34
+  date:
+    from: 31
+    to: 32
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 31 o 32 e.c.
+  note: Cura a una mujer, resucita a la hija de Jairo y cura a dos ciegos.
+  reason: Mr 5:21 lo devuelve a la otra orilla sin nombrar la ciudad; la tabla A7-D pone «probablemente Capernaúm». Fechas
+    de los sucesos hija-de-jairo y dos-ciegos-y-un-mudo.
+  sources:
+  - marcos-5
+  - mateo-9
+  - tnm-a7-d
+  checked_on: '2026-09-30'
+  status: pending

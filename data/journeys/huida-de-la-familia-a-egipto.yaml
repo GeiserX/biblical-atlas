@@ -1,0 +1,71 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: huida-de-la-familia-a-egipto
+name: Huida a Egipto
+person: jose-esposo-de-maria
+reference: Mt 2:13-18
+date:
+  from: 0
+  to: 1
+  precision: range
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: entre 1 a.e.c. y 1 e.c.
+narrative_order:
+  series: jose-esposo-de-maria
+  order: 2
+companions:
+- maria-madre-de-jesus
+- jesus
+summary: Un ángel avisa a José en un sueño de que Herodes busca al niño. Esa misma noche sale de Belén con Jesús y María hacia
+  Egipto, y allí se quedan hasta que muere el rey.
+reason: Mt 2:13-15 da la salida y la llegada. Fecha de los sucesos huida-a-egipto y matanza-de-los-ninos-de-belen, que siguen
+  la tabla A7-A.
+sources:
+- mateo-2
+- tnm-a7-a
+- jy-cap-8
+- it-egipto
+- it-herodes
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: belen
+  reference: Mt 2:13, 14
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: Salen de noche. La nota de Mt 2:13 dice que podían ir hacia el suroeste sin cruzar Jerusalén.
+  reason: 'Mt 2:13, 14 sigue a la visita de los astrólogos en Belén: José se levanta de noche y se lleva al niño y a su madre.
+    Fecha del suceso huida-a-egipto.'
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: egipto
+  reference: Mt 2:14, 15
+  date:
+    from: 0
+    to: 1
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: entre 1 a.e.c. y 1 e.c.
+  note: La nota de Mt 2:14 cuenta al menos 120 km desde Belén.
+  reason: Mt 2:14, 15 los lleva a Egipto y los deja allí hasta la muerte de Herodes. Fecha de los sucesos huida-a-egipto y
+    matanza-de-los-ninos-de-belen.
+  sources:
+  - mateo-2
+  - tnm-a7-a
+  - jy-cap-8
+  checked_on: '2026-09-30'
+  status: verified
