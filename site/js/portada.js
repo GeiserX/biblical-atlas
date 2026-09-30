@@ -170,10 +170,9 @@ function pintarLista() {
   let html;
   if (filas.length) {
     html = filas.map((f, i) => {
-      // La fecha va siempre en su píldora, y no se repite en la línea.
-      const fecha = f.fecha || f.r?.fechaTexto || '';
-      const resto = f.meta.split(' · ').filter((x) => !fecha || normal(x.trim()) !== normal(fecha)).join(' · ');
-      const meta = [resto && normal(resto).startsWith(normal(f.tipo)) ? '' : f.tipo, f.etiqueta, resto].filter(Boolean).join(' · ');
+      // La fecha va en su píldora y no se repite en la línea (BE.filaResultado ya la quita de ahí).
+      const fecha = f.fecha || '';
+      const meta = [f.meta && normal(f.meta).startsWith(normal(f.tipo)) ? '' : f.tipo, f.etiqueta, f.meta].filter(Boolean).join(' · ');
       return `<li role="option" id="portada-op-${i}" class="portada-op${i === activa ? ' portada-op--activa' : ''}" aria-selected="${i === activa}" data-i="${i}">
         <svg class="forma" aria-hidden="true"><use href="#f-${f.forma}"/></svg><span class="portada-op__texto"><span class="portada-op__tit">${BE.marcar(f.titulo, q)}</span><span class="portada-op__meta">${esc(meta)}</span></span>${fecha ? `<span class="portada-fecha">${esc(fecha)}</span>` : ''}</li>`;
     }).join('');

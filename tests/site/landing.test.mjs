@@ -123,6 +123,13 @@ test('the box answers with the shape, the type word and the date of each result'
   assert.ok(rs.some((r) => r.fecha), 'no row has a date');
   assert.match(await page.locator('#portada-estado').textContent(), /^\d+ sugerencias?$/);
   assert.equal(await page.locator('#portada-q').getAttribute('aria-expanded'), 'true');
+  // The date goes once, in its pill: an event's line does not repeat it in other words («36 e.c.» and «c. 36 e.c.»).
+  for (const q of ['Pedro', 'última plaga']) {
+    await type(page, q);
+    const sucesos = (await rows(page)).filter((r) => /^suceso/.test(r.meta));
+    assert.ok(sucesos.length, `${q}: no event rows`);
+    for (const r of sucesos) { assert.ok(r.fecha, `${r.tit} has no pill`); assert.doesNotMatch(r.meta, /\d/, `${r.tit}: «${r.meta}» and «${r.fecha}»`); }
+  }
   await type(page, 'Jerusalén 33');
   assert.equal((await rows(page))[0].tit, 'Jerusalén en 33 e.c.');
   await type(page, 'Juan 3');

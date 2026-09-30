@@ -331,8 +331,15 @@ function sugerencias(q) {
 const FORMA_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'suceso', periodo: 'periodo', pasaje: 'texto', libro: 'texto', carta: 'texto',
   viaje: 'ruta', recorrido: 'ruta', parada: 'ruta', hallazgo: 'hallazgo' };
 const TIPO_GRUPO = { Fechas: 'fecha', 'Meses hebreos': 'mes hebreo', Preguntas: 'pregunta' };
+/** Un trozo de línea que no es más que una fecha: «36 e.c.», «c. 49-50 e.c.», «entre 1514 y 1513 a.e.c.». */
+function esFecha(x) {
+  const t = String(x || '').trim();
+  return /\d/.test(t) && /e\.c\.$/.test(t) && /^(?:(?:c\.|entre|hacia|y|[-–]|\d+(?:[-–]\d+)?|a\.e\.c\.|e\.c\.)\s*)+$/.test(t);
+}
 /** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
-    título, la etiqueta, el resto de la línea y la fecha (si la línea no la dice ya). */
+    título, la etiqueta, el resto de la línea y la fecha. La fecha va una sola vez, en su píldora: se quita de la línea
+    lo que es la fecha del resultado, dicha como sea, y si la línea la decía tal cual la dan los datos («36 e.c.»,
+    «entre 1514 y 1513 a.e.c.»), esa es la de la píldora, más exacta que la corta. */
 function filaResultado(r) {
   const deTipo = !!(r.sel && !r.accion);
   let forma;
@@ -340,8 +347,16 @@ function filaResultado(r) {
   else if (r.accion && r.grupo === 'Preguntas' && /^¿Cómo se relaciona/.test(r.titulo)) forma = 'conexion';
   else forma = FORMA_TIPO[r.sel?.tipo] || 'texto';
   const tipo = deTipo ? (TIPO_TEXTO[r.sel.tipo] || '') : (TIPO_GRUPO[r.grupo] || '');
-  const fecha = r.fechaTexto && !norm(r.meta || '').includes(norm(r.fechaTexto)) ? r.fechaTexto : '';
-  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta: r.meta || '', fecha };
+  let fecha = r.fechaTexto || '', meta = r.meta || '';
+  if (fecha) {
+    const o = objetoSel(r.sel), f = o?.fecha || o?.fecha_objeto;
+    const suya = [f?.texto, fecha].filter(Boolean).map((x) => norm(x));
+    const trozos = meta.split(' · ');
+    const propia = trozos.find((x) => esFecha(x) && suya.includes(norm(x.trim())));
+    meta = trozos.filter((x) => !esFecha(x) && !suya.includes(norm(x.trim()))).join(' · ');
+    if (propia) fecha = propia.trim();
+  }
+  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta, fecha };
 }
 let resultados = [], activo = 0, previa = false;
 function pintarResultados() {
