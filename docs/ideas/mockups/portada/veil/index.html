@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>biblical-earth · La Biblia en el mapa y en el tiempo</title>
+<meta name="description" content="Un atlas para estudiar la Biblia en español: cada relato en su lugar y en su fecha, con su fuente.">
+<link rel="icon" href="../assets/kit/favicon.svg" type="image/svg+xml">
+<!-- El modo reunión se pone antes de pintar, como en el sitio (site/index.html). -->
+<script>try { if (localStorage.getItem('biblical-earth:pref:reunion') === '1') document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }</script>
+<!-- Dónde está el sitio, el aviso si no carga y la letra grande: lo comparten los seis prototipos. -->
+<script src="../assets/sitio.js"></script>
+<link rel="preload" href="../assets/kit/fonts/EBGaramond-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/kit/fonts/Inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/kit/tokens.css">
+<link rel="stylesheet" href="veil.css">
+</head>
+<body>
+<!-- Solo del prototipo: cambiar entre los seis diseños y el modo reunión. No es parte del diseño. -->
+<div class="proto-tools">
+  <details class="proto-switch">
+    <summary>Diseño: el velo</summary>
+    <nav aria-label="Diseños de la portada">
+      <a href="../veil/" aria-current="page">El mapa detrás del velo</a>
+      <a href="../fullbleed/">A pantalla completa</a>
+      <a href="../time/">El tiempo</a>
+      <a href="../question/">La pregunta</a>
+      <a href="../live/">El mapa vivo</a>
+      <a href="../tuned/">La de hoy, afinada</a>
+    </nav>
+  </details>
+  <button type="button" class="proto-moon proto-letra" id="letra" aria-pressed="false" aria-label="Letra grande" title="Letra grande"><span aria-hidden="true">Aa</span></button>
+  <button type="button" class="proto-moon" id="meeting" aria-pressed="false" aria-label="Modo reunión: fondo oscuro, sin animaciones" title="Modo reunión: fondo oscuro, sin animaciones"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.5A7.5 7.5 0 0 1 9.5 4.5a7.5 7.5 0 1 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+</div>
+
+<div class="landing" id="landing">
+  <header class="lead" id="lead">
+    <div class="resume" id="resume" hidden></div>
+    <h1 class="lead__name" id="title" tabindex="-1">biblical-earth</h1>
+    <hr class="lead__rule">
+    <p class="lead__motto">La Biblia en el mapa y en el tiempo</p>
+    <p class="lead__text">Un atlas para estudiar la Biblia en español. Busca a una persona, un lugar, un capítulo o un año, y míralo donde y cuando ocurrió.</p>
+
+    <form class="search" id="search" role="search" autocomplete="off">
+      <label class="sr-only" for="q">Buscar en el atlas</label>
+      <div class="search__box">
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" name="q" type="search" enterkeyhint="search" spellcheck="false" placeholder="Busca una persona, un lugar, un capítulo o un año"
+          role="combobox" aria-expanded="false" aria-controls="suggestions" aria-autocomplete="list" aria-describedby="search-status">
+        <button class="search__go" type="submit">Buscar</button>
+      </div>
+      <ul class="search__list" id="suggestions" role="listbox" aria-label="Sugerencias" hidden></ul>
+      <p class="search__status" id="search-status" aria-live="polite"></p>
+      <div class="examples" id="examples">
+        <span class="examples__label" id="try-label">Prueba:</span>
+      </div>
+    </form>
+  </header>
+
+  <!-- El mapa de detrás: primero la imagen del mismo encuadre, luego el sitio vivo en un marco. Todo lo que hay aquí
+       se pinta sobre el mapa; el orden del teclado sigue al de la primera pantalla. -->
+  <div class="stage" id="stage">
+    <picture class="stage__capture-box">
+      <source media="(max-width: 819px)" srcset="../assets/img/paul-journeys-tall.webp">
+      <img class="stage__capture" id="capture" alt="" fetchpriority="high" decoding="async"
+        srcset="../assets/img/paul-journeys-wide-1280.webp 1280w, ../assets/img/paul-journeys-wide.webp 2560w"
+        sizes="max(100vw, 177.78vh)" src="../assets/img/paul-journeys-wide-1280.webp">
+    </picture>
+    <iframe class="stage__site" id="site" title="El mapa de biblical-earth" tabindex="-1" aria-hidden="true" inert></iframe>
+    <div class="stage__veil" aria-hidden="true"></div>
+    <div class="stage__wash" aria-hidden="true"></div>
+    <svg class="stage__mark" id="mark" viewBox="0 0 64 64" aria-hidden="true" hidden>
+      <path class="mark-leaf" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/>
+      <path class="mark-stem" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <circle class="mark-olive" cx="20.5" cy="47" r="6"/><circle class="mark-olive" cx="31" cy="31.5" r="6"/><circle class="mark-olive" cx="47.5" cy="13.5" r="6"/>
+    </svg>
+    <button type="button" class="map-hit" id="map-hit" tabindex="-1" aria-hidden="true" data-go="enter"></button>
+    <div class="map-ui">
+      <p class="map-caption" id="map-caption"><span class="map-caption__k" id="caption-k">En el mapa</span> <span id="caption-v"></span></p>
+      <button type="button" class="map-enter" id="enter" data-go="enter">Entrar al mapa <span aria-hidden="true">→</span></button>
+      <div class="places" id="places" role="group" aria-labelledby="places-title">
+        <h2 class="sr-only" id="places-title">O toca un lugar del mapa</h2>
+      </div>
+      <p class="map-credit" id="credit">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Lugares: OpenBible.info · <a href="../../../../../site/acerca.html#gracias">Créditos</a></p>
+    </div>
+  </div>
+
+  <main class="zones" id="zones">
+    <section class="zone" aria-labelledby="z-questions">
+      <h2 id="z-questions">Empieza por una pregunta</h2>
+      <ul class="rows" id="questions"></ul>
+    </section>
+    <section class="zone" aria-labelledby="z-eras">
+      <h2 id="z-eras">Elige una época</h2>
+      <p class="zone__hint">El mapa abre donde ocurrió. La raya va a escala real, de 4026 a.e.c. a 100 e.c.</p>
+      <svg class="dates" id="dates" aria-hidden="true"></svg>
+      <ul class="eras" id="eras"></ul>
+      <p class="zone__more"><button type="button" class="link" data-go="timeline">Ver la línea de tiempo completa <span aria-hidden="true">→</span></button></p>
+    </section>
+    <section class="zone" aria-labelledby="z-tours">
+      <h2 id="z-tours">Sigue un recorrido</h2>
+      <ul class="rows" id="tours"></ul>
+    </section>
+    <footer class="foot" id="footer">
+      <h2 class="foot__title">De dónde salen los datos</h2>
+      <ul class="foot__tiers">
+        <li><span class="tier tier--1">Nivel 1</span> La Traducción del Nuevo Mundo y wol.jw.org. Enlazamos; no copiamos sus textos.</li>
+        <li><span class="tier tier--2">Nivel 2</span> Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</li>
+        <li><span class="tier tier--x">Sin verificar</span> Se ve marcado, nunca escondido.</li>
+      </ul>
+      <p class="foot__count" id="counts"></p>
+      <p class="foot__links">
+        <a href="../../../../../site/acerca.html">Qué es biblical-earth</a>
+        <a href="../../../../../site/acerca.html#datos">Cómo trabajamos con las fuentes</a>
+        <a href="../../../../../site/acerca.html#gracias">Créditos</a>
+        <a href="../../../../../site/acerca.html#licencia">Código libre, GPL-3.0</a>
+      </p>
+      <p class="foot__credit">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · En español · Sitio estático, sin cuentas</p>
+    </footer>
+  </main>
+</div>
+<p class="sr-only" id="announcer" role="status" aria-live="polite"></p>
+<noscript><p class="no-js">Esta portada necesita JavaScript para abrir el mapa. <a href="../../../../../site/index.html#t=50.3000&amp;v=40&amp;mapa=antiguo">Entrar al mapa</a>.</p></noscript>
+<script src="data.js"></script>
+<script src="shared.js"></script>
+<script src="veil.js"></script>
+</body>
+</html>
