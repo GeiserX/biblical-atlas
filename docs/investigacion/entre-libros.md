@@ -350,15 +350,9 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **El campo de Samaria.** Abd 19 lleva `israel` en `entities`, con «Samaria» en sus `names` (Perspicacia «Samaria», núm. 2: el nombre de la capital cubrió todo el reino), y `samaria` en `mentions`. Las referencias de Abd 19 remiten a 2Re 17:24 y Jer 31:5, que Perspicacia pone en ese mismo núm. 2: Jeremías 31 usa el mismo criterio.
 - **Edom y Nabonido.** Perspicacia «Edom» y «Toda Escritura» ven cumplido Abd 7 en la conquista de Edom por Nabonido, que no es un suceso del relato. Abdías pone `nabonido` en `mentions`; Jer 49:7-22, Ez 25:12-14 y 35 y Mal 1:3, 4 pueden hacer lo mismo.
 
-<<<<<<< HEAD
-## Para Deuteronomio, Josué, Jueces, 1 Reyes, 1 Crónicas, 2 Crónicas y Jeremías (desde Abdías)
+## Para Deuteronomio, Josué, Jueces, 1 Crónicas, 2 Crónicas y Jeremías (desde Abdías)
 
-- **Sefelá.** `sefela` existe desde Abd 19 (OpenBible af084cf). Usan ese id los pasajes que cita Perspicacia «Sefelá»: Deuteronomio 1:7; Josué 9:1, 10:40, 11:2 y 12:8, más 15:33-44, que da sus ciudades; Jueces 1:9; 1 Reyes 10:27; 1 Crónicas 27:28; 2 Crónicas 1:15, 9:27, 26:10 y 28:18; y Jeremías 17:26, 32:44 y 33:13. Jos 11:16 nombra además la Sefelá de la región montañosa de Israel, que Perspicacia sitúa quizá entre Samaria y Sarón: Josué decide si es otra ficha.
-=======
-## Para Deuteronomio, Josué, Jueces, 1 Crónicas, 2 Crónicas, Jeremías y Zacarías (desde Abdías)
-
-- **Sefelá.** `sefela` existe desde Abd 19 (OpenBible af084cf). Usan ese id los pasajes que cita Perspicacia «Sefelá»: Deuteronomio 1:7; Josué 9:1, 10:40, 11:2 y 12:8, más 15:33-44, que da sus ciudades; Jueces 1:9; 1 Crónicas 27:28; 2 Crónicas 1:15, 9:27, 26:10 y 28:18; Jeremías 17:26, 32:44 y 33:13, y Zacarías 7:7. Jos 11:16 nombra además la Sefelá de la región montañosa de Israel, que Perspicacia sitúa quizá entre Samaria y Sarón: Josué decide si es otra ficha.
->>>>>>> origin/main
+- **Sefelá.** `sefela` existe desde Abd 19 (OpenBible af084cf). Usan ese id los pasajes que cita Perspicacia «Sefelá»: Deuteronomio 1:7; Josué 9:1, 10:40, 11:2 y 12:8, más 15:33-44, que da sus ciudades; Jueces 1:9; 1 Crónicas 27:28; 2 Crónicas 1:15, 9:27, 26:10 y 28:18; y Jeremías 17:26, 32:44 y 33:13. Jos 11:16 nombra además la Sefelá de la región montañosa de Israel, que Perspicacia sitúa quizá entre Samaria y Sarón: Josué decide si es otra ficha.
 - **Benjamín en Abd 19.** «Benjamín conquistará Galaad» nombra a la tribu como pueblo, sin persona; su territorio no tiene ficha, mientras que `juda` sí va en `mentions` de Abd 10-14. Cuando Josué (18:11-28) cree `territorio-de-benjamin`, lo añade a `mentions` del tramo Abdías 1:19-20.
 - **Región montañosa de Esaú.** Está en `names` de `edom` (Abd 8, 9, 19, 21). `seir` sigue siendo la región montañosa de Gé 14:6 y 36:8.
 - **Sefarad.** `sefarad` (Abd 20) no tiene punto: un solo candidato, Saparda de Media, que Perspicacia da como probable.
@@ -409,9 +403,6 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 - **Otros Sofonías.** `sofonias-profeta` es el núm. 2 de Perspicacia. El sacerdote hijo de Maaseya (Jer 21:1; 29:25; 37:3; 2Re 25:18) es el núm. 3, el levita de 1Cr 6:36 el núm. 1 y el padre de Josías o Hen (Zac 6:10) el núm. 4, que ya es `sofonias-padre-de-josias`: cada uno con su id y `distinct_from` con `sofonias-profeta`.
 - **Barrios y puertas.** Puerta del Pescado, Segundo Barrio y Mactés están en `names` de `jerusalen`. 2Re 22:14, 2Cr 33:14, 34:22 y Ne 3:3, 12:39 usan esa ficha.
 
-<<<<<<< HEAD
-## Para Esdras, Nehemías, 1 Crónicas, 2 Reyes, Daniel y Hebreos (desde Ageo)
-=======
 ## Para 1 Crónicas y 2 Crónicas (desde 1 Reyes)
 
 - **Sucesos de 1 Reyes con su pasaje de Crónicas.** Ya llevan en `passages` el relato paralelo; el tramo de Crónicas los pone en `entities` y no los crea otra vez: `jehova-se-aparece-a-salomon-en-gabaon` (2Cr 1), `hiram-y-salomon-pactan-la-madera-del-templo` y `salomon-recluta-trabajadores-para-el-templo` (2Cr 2), `salomon-levanta-y-adorna-el-templo` y `templo-de-salomon-empieza` (2Cr 3), `hiram-hace-los-objetos-de-cobre-del-templo` y `salomon-hace-los-utensilios-de-oro-del-templo` (2Cr 2-4), `templo-de-salomon-terminado` y `el-arca-entra-en-el-templo` (2Cr 5), `oracion-de-salomon-en-la-inauguracion-del-templo` (2Cr 6), `inauguracion-del-templo-de-salomon` y `jehova-se-aparece-a-salomon-por-segunda-vez` (2Cr 7), `salomon-da-a-hiram-veinte-ciudades-de-galilea` y `salomon-construye-ciudades-en-todo-su-reino` (2Cr 8), `la-reina-de-saba-visita-a-salomon`, `flota-de-salomon-a-ofir`, `las-naves-de-tarsis-traen-riquezas-a-salomon`, `riqueza-de-salomon` y `muerte-de-salomon` (2Cr 1 y 9), `israel-mata-a-pedradas-a-adoram` (2Cr 10), `semaya-impide-la-guerra-contra-israel` (2Cr 11), los de Asá y Baasá (2Cr 14-16), los de Acab y Micaya (2Cr 18) y `las-naves-de-jehosafat-se-destrozan-en-ezion-gueber` (2Cr 20).
@@ -424,8 +415,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 - **Elías.** `elias-resucita-al-hijo-de-la-viuda-de-sarepta` lleva «Heb 11:35» en `passages`: va en el tramo de Heb 11 que lo recuerda. `elias-anuncia-la-sequia-a-acab` y `elias-ora-y-jehova-envia-la-lluvia` llevan «Snt 5:17» y «Snt 5:18»: van en el tramo de Santiago 5.
 
-## Para Esdras, Nehemías, Zacarías, 1 Crónicas, 2 Reyes, Daniel y Hebreos (desde Ageo)
->>>>>>> origin/main
+## Para Esdras, Nehemías, 1 Crónicas, 2 Reyes, Daniel y Hebreos (desde Ageo)
 
 - **Un suceso por mensaje.** Ageo lleva cuatro sucesos anclados al día en 520 a.e.c., serie `ageo`: `primer-mensaje-de-ageo` (1 de elul, Ag 1:1-11), `segundo-mensaje-de-ageo` (21 de tisri, Ag 2:1-9), `tercer-mensaje-de-ageo` y `cuarto-mensaje-de-ageo` (24 de kislev, Ag 2:10-19 y 2:20-23).
 - **`se-reanuda-la-obra-del-templo-520` es de Esdras.** Desde Ageo es solo el 24 de elul de 520 (Ag 1:12-15): el título y el resumen hablan de Zorobabel, Josué y el pueblo, y `people` ya no lleva a `zacarias-profeta` ni `passages` a Zac 1:1, porque Zacarías empezó en el mes octavo (Zac 1:1; Perspicacia «Ageo»). Esdras (Esd 5:1, 2) lo pone en `entities` de su tramo; el primer mensaje de Zacarías es otro suceso, `primer-mensaje-de-zacarias`. El tramo Ageo 2:15-19 lo lleva en `mentions`: la referencia de Ag 2:18 remite a Esd 5:2.
