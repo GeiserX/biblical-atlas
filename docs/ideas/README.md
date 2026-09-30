@@ -121,7 +121,6 @@ Las respuestas a las preguntas de la primera ronda (permiso, licencia, coordenad
 - **No podemos mostrar el texto bíblico.** La TNM no se puede copiar, así que cada versículo abre en wol.jw.org en otra pestaña, y la lectura «versículo a versículo» se hace con el pasaje en una ventana y el mapa en otra. ¿Pedimos permiso a la organización para incrustar el texto, o diseñamos la lectura a dos ventanas desde el principio, con el mapa siguiendo al capítulo que se lee?
 - **¿Dibujamos fronteras de imperios?** Un polígono por año es caro, discutible y casi nunca lo da jw.org. La alternativa es una «esfera» difuminada con la lista de provincias que jw.org sí nombra, y fronteras solo en los años en que una publicación las describe. ¿Basta con eso para «quién mandaba aquí en tal año»?
 - **¿Para qué dispositivo diseñamos el estudio en grupo?** Un portátil en la mesa, una tablet que pasa de mano en mano o el televisor con mando. Cada uno pide tamaños, gestos y navegación distintos, y el modo presentación solo tiene sentido en el tercero.
-- **¿Nombre del proyecto?** El repo es `biblical-atlas`. Para el sitio, en español, proponemos «Tierra Bíblica» o «Cada relato en su lugar». Queda por elegir.
 
 ## Siguiente paso
 
