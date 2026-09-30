@@ -571,6 +571,14 @@ function iniciarMarcos() {
   window.addEventListener('resize', recalcular);
   iniciarReunion();
 }
+/** Una preferencia de lectura (be-reunion, be-letra-grande): la clase en <html> y su clave en este navegador. Es la única
+    que las escribe: la luna de la barra, el menú «Estudio» y la portada pasan por aquí. Sin datos todavía (la portada
+    puede cambiarlas antes), no hay nada que repintar. */
+function ponerPreferencia(nombre, on) {
+  document.documentElement.classList.toggle(`be-${nombre}`, on);
+  try { localStorage.setItem(`biblical-earth:pref:${nombre}`, on ? '1' : '0'); } catch { /* sin almacenamiento */ }
+  if (BE.D) { sucio.etiquetas = sucio.panel = sucio.linea = sucio.mapa = true; programar(); }
+}
 /** Modo reunión (D-02): solo el botón de la barra lo pone y lo quita (be-68c.2). recorridos.js lee la preferencia al arrancar. */
 function iniciarReunion() {
   const b = $('#reunion-boton'), raiz = document.documentElement;
@@ -581,9 +589,7 @@ function iniciarReunion() {
   };
   b.addEventListener('click', () => {
     const on = !raiz.classList.contains('be-reunion');
-    raiz.classList.toggle('be-reunion', on);
-    try { localStorage.setItem('biblical-earth:pref:reunion', on ? '1' : '0'); } catch { /* sin almacenamiento */ }
-    sucio.etiquetas = sucio.panel = sucio.linea = true; programar();
+    ponerPreferencia('reunion', on);
     avisar(on ? 'Modo reunión: fondo oscuro y sin animaciones.' : 'Fondo claro de nuevo.', 2000);
   });
   new MutationObserver(pintarBoton).observe(raiz, { attributes: true, attributeFilter: ['class'] });
@@ -601,6 +607,9 @@ async function iniciar() {
     [BE.D, BE.VIDEOS] = await Promise.all([cargarDatos(), cargarVideos()]);
   } catch (err) {
     $('#panel-cuerpo').innerHTML = `<section class="be-card"><div class="be-card__pad"><h2 class="be-card__title">No se pudieron cargar los datos</h2><p class="be-card__body">${esc(err.message)} Mira site/README.md para abrir el sitio en local.</p></div></section>`;
+    // La portada, si está puesta, lo dice en su sitio y ofrece volver a intentarlo (portada.js).
+    BE.fallo = err;
+    BE.alFallar?.(err);
     return;
   }
   const D = BE.D;
@@ -628,7 +637,7 @@ Object.assign(BE, {
   E, tipo, tipos: TIPOS, existe, parseSel, selTexto, implicados, momentoDe, nombreSel, seleccionar, limpiarSeleccion,
   // cursor, reproducción, dirección y pintado
   sucio, programar, setT, span, asegurarVisible, reproducir, saltar, guardarHash, textoHash, aplicarHash, parametros,
-  pintarPanel, pintores, inicios, avisar,
+  pintarPanel, pintores, inicios, avisar, ponerPreferencia,
 });
 // Con defer, DOMContentLoaded llega cuando ya se han ejecutado todos los scripts de site/js/: todos los tipos están registrados.
 document.addEventListener('DOMContentLoaded', iniciar);

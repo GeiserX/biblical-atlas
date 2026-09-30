@@ -187,7 +187,7 @@ function pref(nombre, valor) {
   try { localStorage.setItem(PREF + nombre, valor ? '1' : '0'); } catch { /* sin almacenamiento */ }
   return valor;
 }
-function ponerClase(nombre, on) { raiz.classList.toggle(`be-${nombre}`, on); pref(nombre, on); BE.sucio.etiquetas = BE.sucio.panel = BE.sucio.linea = BE.sucio.mapa = true; BE.programar(); pintarMenu(); }
+function ponerClase(nombre, on) { BE.ponerPreferencia(nombre, on); pintarMenu(); }
 function avanzar(d) {
   if (R.id) { irA(R.paso + d); return; }
   if (BE.lectura?.abierta && BE.lectura.mover(d)) return;
