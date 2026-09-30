@@ -276,14 +276,28 @@ function fechaSel(sel) {
   return '';
 }
 
+/** Un resultado se llama exactamente como lo escrito: su título, o su título hasta la primera coma («Juan, el apóstol»). */
+const esExacta = (r, nq) => !!r.sel && (norm(r.titulo) === nq || norm(r.titulo.split(',')[0]).trim() === nq);
+/** Cuántos hechos implica una selección, para desempatar entre los que se llaman igual. Se calcula solo al desempatar. */
+function pesador() {
+  const hechos = new Map();
+  return (r) => {
+    if (!r.sel) return 0;
+    const k = BE.selTexto(r.sel);
+    if (!hechos.has(k)) hechos.set(k, BE.existe(r.sel.tipo, r.sel.id) ? BE.implicados(r.sel).claves.size : 0);
+    return hechos.get(k);
+  };
+}
 function buscar(q) {
   const out = [...preguntas(q), ...resultadosTipos(q)];
   for (const r of out) if (r.sel && r.fechaTexto == null) r.fechaTexto = fechaSel(r.sel);
   const orden = (r) => (r.alFinal ? ORDEN_GRUPOS.length + 1 : ordenGrupo(r.grupo));
   // Lo que se llama exactamente como lo escrito va primero: «Jerusalén» es la ciudad, no «Ananías de Jerusalén»,
   // aunque las personas vayan antes que los lugares; con el grafo abierto, Intro lo pone en el centro (be-u66.1).
-  const nq = norm(q).trim(), exacta = (r) => (r.sel && norm(r.titulo) === nq ? 0 : 1);
-  out.sort((a, b) => exacta(a) - exacta(b) || orden(a) - orden(b) || b.puntos - a.puntos || a.titulo.localeCompare(b.titulo, 'es'));
+  // Entre los que se llaman así, primero el que más hechos tiene: «Juan» es el apóstol, no el gobernante de Hch 4:6.
+  const nq = norm(q).trim(), exacta = (r) => (esExacta(r, nq) ? 0 : 1), peso = pesador();
+  out.sort((a, b) => exacta(a) - exacta(b) || orden(a) - orden(b) || b.puntos - a.puntos
+    || (exacta(a) ? 0 : peso(b) - peso(a)) || a.titulo.localeCompare(b.titulo, 'es'));
   const cuenta = {};   // máximo 6 por grupo
   return out.filter((r) => (cuenta[r.grupo] = (cuenta[r.grupo] || 0) + 1) <= 6);
 }
@@ -519,5 +533,5 @@ function anunciar() {
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
 Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, anioPregunta, objetoSel, fechaSel, historia, textoCita,
-  filaResultado, marcar, elegirResultado, sugerencias });
+  filaResultado, marcar, elegirResultado, sugerencias, esExacta, pesador });
 })();

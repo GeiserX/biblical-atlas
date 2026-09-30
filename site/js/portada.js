@@ -12,13 +12,14 @@ const BE = window.BE;
 // Reglas puras: sin DOM, para poder probarlas en Node
 // ---------------------------------------------------------------------------
 const normal = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-/** La lista de la portada es plana: primero lo que se llama exactamente así, después por puntos y, a igualdad, en el
-    orden de grupos del sitio (el que trae BE.buscar). Así «Corin» da primero el lugar Corinto (empieza así) y no una
-    persona con una palabra que empieza así. */
-function ordenPortada(resultados, nq) {
-  const exacta = (r) => (r.sel && normal(r.titulo) === nq ? 0 : 1);
-  return resultados.map((r, i) => ({ r, i }))
-    .sort((a, b) => exacta(a.r) - exacta(b.r) || (b.r.puntos || 0) - (a.r.puntos || 0) || a.i - b.i)
+/** La lista de la portada es plana: primero lo que se llama exactamente así (el título, o el título hasta la primera
+    coma: «Juan, el apóstol» es «Juan»), y entre ellos el que más hechos tiene (peso); después por puntos y, a igualdad,
+    en el orden de grupos del sitio (el que trae BE.buscar). Así «Corin» da primero el lugar Corinto (empieza así) y no
+    una persona con una palabra que empieza así, y «Juan» da el apóstol y el libro antes que el gobernante de Hch 4:6. */
+function ordenPortada(resultados, nq, peso = () => 0) {
+  const exacta = (r) => (r.sel && (normal(r.titulo) === nq || normal(r.titulo.split(',')[0]).trim() === nq) ? 0 : 1);
+  return resultados.map((r, i) => ({ r, i, e: exacta(r) }))
+    .sort((a, b) => a.e - b.e || (a.e ? (b.r.puntos || 0) - (a.r.puntos || 0) : peso(b.r) - peso(a.r)) || a.i - b.i)
     .map((x) => x.r);
 }
 const t4 = (t) => t.toFixed(4);
@@ -159,7 +160,7 @@ function filasDe(q) {
     const y = BE.anioPregunta(q);   // la misma regla que la búsqueda del sitio: «607» es a.e.c.
     return y == null ? [] : [{ anio: y, titulo: `Ir a ${BE.fmtAnio(y)}`, forma: 'anio', tipo: 'fecha', meta: 'mueve el cursor de tiempo y enseña quién había' }];
   }
-  const rs = ordenPortada(BE.buscar(q), normal(q).trim().replace(/\s+/g, ' '));
+  const rs = ordenPortada(BE.buscar(q), normal(q).trim().replace(/\s+/g, ' '), BE.pesador());
   todas = rs.length;
   return rs.slice(0, maxFilas()).map((r) => ({ r, ...BE.filaResultado(r) }));
 }

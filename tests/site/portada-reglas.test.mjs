@@ -37,6 +37,22 @@ test('the landing list: the exact name first, then points, then the site order',
   assert.equal(R.ordenPortada(exacta, 'jerusalen')[0].titulo, 'Jerusalén');
 });
 
+test('«Juan»: the name up to its first comma is exact too, and among exact names the one with more facts goes first', () => {
+  // As BE.buscar returns «Juan» (every one of these has «Juan» among its names, so all score 100); weights are the
+  // number of facts each selection implies.
+  const rs = [
+    { grupo: 'Personas', titulo: 'Juan', sel: { tipo: 'persona', id: 'juan-gobernante-judio' }, puntos: 100 },
+    { grupo: 'Personas', titulo: 'Juan el Bautista', sel: { tipo: 'persona', id: 'juan-el-bautista' }, puntos: 100 },
+    { grupo: 'Personas', titulo: 'Juan, el apóstol', sel: { tipo: 'persona', id: 'juan-apostol' }, puntos: 100 },
+    { grupo: 'Libros', titulo: 'Juan', sel: { tipo: 'libro', id: 'juan' }, puntos: 100 },
+  ];
+  const hechos = { 'juan-gobernante-judio': 2, 'juan-el-bautista': 30, 'juan-apostol': 60, juan: 40 };
+  const orden = R.ordenPortada(rs, 'juan', (r) => hechos[r.sel.id] || 0).map((r) => r.sel.id);
+  assert.deepEqual(orden, ['juan-apostol', 'juan', 'juan-gobernante-judio', 'juan-el-bautista']);
+  // Without weights the exact ones keep the site's order.
+  assert.deepEqual(R.ordenPortada(rs, 'juan').map((r) => r.sel.id), ['juan-gobernante-judio', 'juan-apostol', 'juan', 'juan-el-bautista']);
+});
+
 test('the addresses of an era, a tour and the whole line', () => {
   const era = { id: 'destierro-y-regreso', fecha: { desde: -606, hasta: -442 } };
   assert.equal(R.dirPeriodo(era, -4025, 100), 'sel=periodo:destierro-y-regreso&t=-605.9900&v=275');
