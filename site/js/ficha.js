@@ -1,4 +1,4 @@
-/* biblical-earth · ayudas de ficha: citas, fuentes, estado, «por qué lo decimos», insignias de nivel, historial,
+/* biblical-atlas · ayudas de ficha: citas, fuentes, estado, «por qué lo decimos», insignias de nivel, historial,
    «Proponer una corrección», «lo que el texto no dice», nombres, enlaces, vídeos y las piezas comunes (fila con botón,
    migas, cerrar). Las usan las fichas de todos los tipos. Dueño durante el reparto: app-mapa. */
 'use strict';
@@ -6,7 +6,7 @@
 const BE = window.BE;
 const { E, esc, citas, fmtDia, fmtAnio, EXTERNO, ES_FILE } = BE;
 
-const REPO = 'https://github.com/GeiserX/biblical-earth';
+const REPO = 'https://github.com/GeiserX/biblical-atlas';
 const CARPETA = { lugar: 'lugares', persona: 'personas', viaje: 'viajes', carta: 'cartas', evento: 'eventos', periodo: 'periodos', hallazgo: 'hallazgos', recorrido: 'recorridos' };
 
 /** Filtro «solo nivel 1» (C-09). Lo guarda la dirección (mapa.js); aquí solo se lee. */

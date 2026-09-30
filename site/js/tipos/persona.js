@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «persona»: ficha (F-01), búsqueda con homónimos (G-12), lo que implica seleccionarla (B-01) y
+/* biblical-atlas · tipo «persona»: ficha (F-01), búsqueda con homónimos (G-12), lo que implica seleccionarla (B-01) y
    sus conexiones con fecha y referencia, que usan el grafo y la conexión entre dos (aristas). Dueño durante el reparto: app-estudio. */
 'use strict';
 (() => {

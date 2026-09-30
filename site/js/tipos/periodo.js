@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «periodo»: ficha, búsqueda y lo que implica seleccionar un periodo (era, imperio, emperador, rey,
+/* biblical-atlas · tipo «periodo»: ficha, búsqueda y lo que implica seleccionar un periodo (era, imperio, emperador, rey,
    gobernador, sumo sacerdote). La ficha de una era o un imperio (F-09) da sus fechas, sus gobernantes en orden, las
    personas y los sucesos de ese tiempo, y abre la sincronía (A-12). Dueño durante el reparto: app-tiempo. */
 'use strict';

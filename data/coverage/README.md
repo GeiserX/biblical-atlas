@@ -7,7 +7,7 @@ El protocolo para leer un capítulo y rellenar su entrada está en [`docs/invest
 ## Formato
 
 ```yaml
-# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
 book: filemon
 chapters:
   1:

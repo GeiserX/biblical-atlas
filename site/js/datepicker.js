@@ -1,4 +1,4 @@
-/* biblical-earth · the date panel. Touching the date at the top (#fecha) opens a panel: a popover under the date on a
+/* biblical-atlas · the date panel. Touching the date at the top (#fecha) opens a panel: a popover under the date on a
    wide screen, a sheet from the bottom on a narrow one. There is nothing to type in it. It has three parts, and a row of
    buttons under its title jumps to each one:
    1. «Esta fecha»: the date of the cursor in full, and what its precision means in words.

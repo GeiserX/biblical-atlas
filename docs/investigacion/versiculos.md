@@ -196,7 +196,7 @@ Lo que necesita una ficha nueva para pasar [`scripts/validate.py`](../../scripts
 **Persona**, con sus relaciones:
 
 ```yaml
-# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: elimelec
 name: Elimélec
 names:
@@ -254,7 +254,7 @@ status: verified
 **Lugar**:
 
 ```yaml
-# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
 id: moab
 name: Moab
 names:
@@ -286,7 +286,7 @@ status: verified
 **Suceso** con fecha narrativa:
 
 ```yaml
-# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: elimelec-se-va-a-moab
 title: Elimélec se va a Moab con su familia
 date:
@@ -349,7 +349,7 @@ it-elimelec:
 **Entrada de cobertura** (recortada al primer tramo):
 
 ```yaml
-# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
 book: rut
 chapters:
   1:
@@ -367,7 +367,7 @@ El sobre de la propuesta tiene sus propias claves, que no cambian: `formato`, `l
 
 ```json
 {
-  "formato": "biblical-earth/propuesta-cobertura/1",
+  "formato": "biblical-atlas/propuesta-cobertura/1",
   "libro": "rut",
   "capitulos": [1],
   "agente": "rut-1-2",
@@ -424,7 +424,7 @@ El sobre de la propuesta tiene sus propias claves, que no cambian: `formato`, `l
 
 | Campo | Qué es |
 |---|---|
-| `formato` | Siempre `biblical-earth/propuesta-cobertura/1`. |
+| `formato` | Siempre `biblical-atlas/propuesta-cobertura/1`. |
 | `libro`, `capitulos` | El slug del libro y los capítulos leídos. |
 | `agente`, `leido` | Quién leyó y el día de la lectura. `apply.py` pone ese día en el `checked_on` de lo que toca. |
 | `cobertura` | Las entradas de sus capítulos, con la misma forma que en `data/coverage/<libro>.yaml` y el capítulo como texto. |

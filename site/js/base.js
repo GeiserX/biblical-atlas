@@ -1,4 +1,4 @@
-/* biblical-earth · base: utilidades, estado, carga, registro de tipos, selección, cursor, reproducción, dirección,
+/* biblical-atlas · base: utilidades, estado, carga, registro de tipos, selección, cursor, reproducción, dirección,
    bucle de pintado, teclado y arranque. Todos los ficheros de site/js/ comparten un solo objeto, window.BE.
    Scripts clásicos con defer, sin módulos ES: así el sitio abre también desde file://.
    Congelado durante el reparto: ver la tabla de dueños en site/README.md. */
@@ -120,9 +120,9 @@ async function cargarDatos() {
   const ruta = rutaDatos();
   if (ES_FILE) {
     const js = ruta.replace(/\.json$/, '.js');
-    if (!window.BIBLICAL_EARTH_DATA) await cargarScript(js);
-    if (!window.BIBLICAL_EARTH_DATA) throw new Error(`No encuentro ${js} junto a index.html.`);
-    return window.BIBLICAL_EARTH_DATA;
+    if (!window.BIBLICAL_ATLAS_DATA) await cargarScript(js);
+    if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a index.html.`);
+    return window.BIBLICAL_ATLAS_DATA;
   }
   const r = await fetch(ruta, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`${ruta} respondió ${r.status}`);
@@ -465,7 +465,7 @@ const MARCOS = {
   hoja: { var: '--hoja-h', medir: () => $('#panel').offsetHeight, min: () => 96,
     max: () => Math.max(96, innerHeight - 56 - altoLinea() - 40), propio: () => false },
 };
-const CLAVE_MARCO = 'biblical-earth:marco:';
+const CLAVE_MARCO = 'biblical-atlas:marco:';
 // Con la línea y la ficha muy grandes, el mapa se queda sin sitio para la tarjeta del suceso y la leyenda a la vez: ni
 // una encima de la otra (unos 400 px de alto) ni una al lado de la otra (unos 720 de ancho). Entonces la tarjeta se quita
 // (mapa.css, .mapa-bajo): lo que cuenta ya está en la línea y en la ficha, y la leyenda hace falta para leer el mapa.
@@ -584,7 +584,7 @@ function iniciarReunion() {
   b.addEventListener('click', () => {
     const on = !raiz.classList.contains('be-reunion');
     raiz.classList.toggle('be-reunion', on);
-    try { localStorage.setItem('biblical-earth:pref:reunion', on ? '1' : '0'); } catch { /* sin almacenamiento */ }
+    try { localStorage.setItem('biblical-atlas:pref:reunion', on ? '1' : '0'); } catch { /* sin almacenamiento */ }
     sucio.etiquetas = sucio.panel = sucio.linea = true; programar();
     avisar(on ? 'Modo reunión: fondo oscuro y sin animaciones.' : 'Fondo claro de nuevo.', 2000);
   });

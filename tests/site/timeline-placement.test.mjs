@@ -128,7 +128,7 @@ function variant(name, change) {
   const dir = path.join(tmp, name);
   fs.mkdirSync(dir);
   fs.writeFileSync(path.join(dir, 'data.json'), JSON.stringify(D));
-  fs.writeFileSync(path.join(dir, 'data.js'), `window.BIBLICAL_EARTH_DATA = ${JSON.stringify(D)};\n`);
+  fs.writeFileSync(path.join(dir, 'data.js'), `window.BIBLICAL_ATLAS_DATA = ${JSON.stringify(D)};\n`);
   variants[name] = { data: dir };
 }
 

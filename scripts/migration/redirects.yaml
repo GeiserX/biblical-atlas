@@ -1,4 +1,4 @@
-# biblical-earth: claves de relación que desaparecen y la que queda. Una fila por clave: {from, to, removed_on, reason}.
+# biblical-atlas: claves de relación que desaparecen y la que queda. Una fila por clave: {from, to, removed_on, reason}.
 # Formato en docs/investigacion/modelo.md, sección 5. Lo leen apply.py y bible_coverage.py.
 - from: ciro/kin/cambises-ii
   to: cambises-ii/kin/ciro/father

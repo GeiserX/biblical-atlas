@@ -1,4 +1,4 @@
-/* biblical-earth · modo lectura (pantalla 12, #vista-lectura): cualquier capítulo de cualquier libro con datos, al lado
+/* biblical-atlas · modo lectura (pantalla 12, #vista-lectura): cualquier capítulo de cualquier libro con datos, al lado
    del mapa (A-02). Índice de pasajes con título nuestro, el mapa que sigue la lectura con las paradas numeradas,
    capítulos leídos guardados solo en este navegador (A-09), enlaces a wol.jw.org con las notas de estudio (B-18) y los
    vídeos de jw.org que citan el capítulo. El texto bíblico no está aquí: se lee en wol.jw.org.
@@ -8,7 +8,7 @@
 const BE = window.BE;
 const { E, esc, $, EXTERNO, fechaCorta } = BE;
 
-const CLAVE_LEIDOS = 'biblical-earth:leidos';
+const CLAVE_LEIDOS = 'biblical-atlas:leidos';
 function leidos() { try { return new Set(JSON.parse(localStorage.getItem(CLAVE_LEIDOS) || '[]')); } catch { return new Set(); } }
 function marcarLeido(lib, cap, si = true) {
   const s = leidos();

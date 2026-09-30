@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «parada»: cada parada de un viaje de Pablo: su ficha y lo que implica. Dueño durante el reparto: app-tiempo. */
+/* biblical-atlas · tipo «parada»: cada parada de un viaje de Pablo: su ficha y lo que implica. Dueño durante el reparto: app-tiempo. */
 'use strict';
 (() => {
 const BE = window.BE;

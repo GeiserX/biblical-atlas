@@ -38,7 +38,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# biblical-earth: derivados de scripts/build.py y basura de Python
+# biblical-atlas: derivados de scripts/build.py y basura de Python
 /dist/
 __pycache__/
 *.pyc

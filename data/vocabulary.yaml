@@ -1,4 +1,4 @@
-# biblical-earth: vocabulario cerrado de las relaciones, los cargos, la certeza y los papeles de un suceso.
+# biblical-atlas: vocabulario cerrado de las relaciones, los cargos, la certeza y los papeles de un suceso.
 # La especificación está en docs/investigacion/modelo.md. Los identificadores van en inglés; lo que lee quien usa
 # el sitio (es, verb, inverse_verb, caption) va en español.
 #
@@ -22,7 +22,7 @@
 #   target       en la ficha del destino, con la palabra inversa: escrita aquí está en la ficha que no manda
 #   first_named  en la ficha del primero que nombra el texto, o de quien el texto lo dice
 #   first_id     en la ficha cuyo id va primero por orden alfabético
-format: biblical-earth/vocabulary/1
+format: biblical-atlas/vocabulary/1
 
 types:
   kin:
