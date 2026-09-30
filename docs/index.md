@@ -50,7 +50,7 @@ hide:
 
 ## La aplicación
 
-![El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de un lugar con su pasaje y su fuente, y la línea de tiempo con los carriles de Pablo, las cartas, los sucesos y los emperadores](images/screenshots/mapa.png)
+![El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de Samotracia con su pasaje, y la línea de tiempo con las eras, los emperadores, los gobernadores, los sumos sacerdotes y los viajes de Pablo, cada nombre entero](images/screenshots/mapa.png)
 
 <div class="ba-phone-gallery" markdown>
 <figure markdown>
@@ -58,8 +58,8 @@ hide:
 <figcaption>En el móvil</figcaption>
 </figure>
 <figure markdown>
-![La ficha de Filipos: pasajes, «Por qué lo decimos», fuentes y vídeos de jw.org](images/screenshots/ficha-mobile.png)
-<figcaption>Una ficha con sus fuentes</figcaption>
+![La ficha de Filipos en la hoja inferior, bajo el mapa](images/screenshots/ficha-mobile.png)
+<figcaption>Una ficha</figcaption>
 </figure>
 <figure markdown>
 ![El modo lectura de Hechos 16, con el mapa siguiendo el capítulo](images/screenshots/lectura-mobile.png)

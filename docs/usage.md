@@ -21,7 +21,7 @@ Todo lo que hace la aplicación, vista a vista. La regla de la casa: **una fecha
 
 Un lugar, una persona, un suceso, una carta, un viaje, un periodo, un hallazgo o un capítulo abren su ficha.
 
-![La ficha de Filipos: los nombres, los pasajes, «Por qué lo decimos», las fuentes con su marca y los vídeos de jw.org](images/screenshots/ficha.png)
+![La ficha de Filipos: qué fue, sus pasajes, su fuente con su marca y qué pasaba allí en el año 50](images/screenshots/ficha.png)
 
 - **Pasajes.** Cada cita lleva a su capítulo en wol.jw.org. Nada se copia.
 - **Por qué lo decimos.** Qué pasaje o qué párrafo sostiene cada dato. La marca dice de qué fuente es: punto lleno, la Biblia o una publicación de jw.org; aro, otra fuente que jw.org ha usado, que acompaña y nunca corrige a la primera.
