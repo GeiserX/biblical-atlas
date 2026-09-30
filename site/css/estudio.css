@@ -311,6 +311,9 @@ span.etiqueta-deducido, span.etiqueta-incierto, span.etiqueta-texto { border-rad
 .vista-portada { display: none; }
 .be-con-portada .vista-portada { display: block; position: absolute; inset: 0; z-index: 30; overflow: auto; background: var(--paper); color: var(--ink); scroll-padding-bottom: 16px; --portada-h1: clamp(36px, 3.7vw, 54px); }
 .be-letra-grande .vista-portada { --portada-h1: clamp(40px, 4.2vw, 60px); }
+/* Lo de detrás, tapado e inert mientras la portada está puesta, tampoco se pinta: el sitio que arranca debajo (la ficha
+   que crece al llegar los datos) no cuenta como un salto de la página. */
+.be-con-portada #app > :not(#vista-portada) { visibility: hidden; }
 .formas-svg { position: absolute; width: 0; height: 0; overflow: hidden; }
 .vista-portada :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .vista-portada .forma { width: 16px; height: 16px; flex: none; display: inline-block; }
