@@ -24,6 +24,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | 1-corintios-7 | [1 Corintios 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-8 | [1 Corintios 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-corintios-9 | [1 Corintios 9](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/46/9) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| 1-cronicas-11 | [1 Crónicas 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/13/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-cronicas-2 | [1 Crónicas 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/13/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-juan-2 | [1 Juan 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/62/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | 1-pedro-1 | [1 Pedro 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/60/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
