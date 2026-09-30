@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cronología que se lee · línea de tiempo</title>
+<link rel="stylesheet" href="../../kit/fonts.css">
+<link rel="stylesheet" href="list.css">
+<script>
+  // Igual en los cinco prototipos: el tema de la dirección y, si no dice nada, el del sistema.
+  (function () {
+    var m = /(?:^|[#&])tema=(claro|oscuro)/.exec(location.hash);
+    var oscuro = m ? m[1] === 'oscuro' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.tema = oscuro ? 'oscuro' : 'claro';
+  })();
+</script>
+<script src="../comun.js" defer></script>
+<script src="../datos.js" defer></script>
+<script src="list.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#list" id="saltar">Saltar a la lista</a>
+<header class="top">
+  <div class="top-t">
+    <h1>Cronología que se lee</h1>
+    <nav class="otros" aria-label="Los cinco diseños">
+      <a href="../lanes/" data-lleva>Carriles con nombre</a>
+      <a href="../overview/" data-lleva>Panorama y detalle</a>
+      <a href="../list/" data-lleva aria-current="page">Cronología que se lee</a>
+      <a href="../clusters/" data-lleva>Grupos que se abren</a>
+      <a href="../minimal/" data-lleva>La de hoy, arreglada</a>
+      <a href="../">Índice</a>
+    </nav>
+  </div>
+  <p class="how">La historia se lee de arriba abajo: una línea por marca, con su nombre entero, su fecha y su tipo, agrupada por la unidad de la escala.<br>
+  Desplaza la lista o arrastra la regla para moverte en el tiempo; la línea dorada es el cursor. «Mostrar» deja solo un carril.</p>
+  <p class="rule"><b>Al elegir una marca</b> se abre su ficha y no se mueve nada: el cursor es la línea de lectura y solo avanza cuando tú desplazas.</p>
+</header>
+
+<main class="app" id="app">
+  <div class="bar">
+    <div class="escalas" role="toolbar" aria-label="Escala">
+      <!-- list.js pone un botón por escala -->
+    </div>
+    <div class="bar-2">
+      <p class="fecha" aria-live="off"><span class="fecha-l">Cursor</span> <b id="fecha">50 e.c.</b></p>
+      <label class="filtro"><span class="filtro-l">Mostrar</span>
+        <select id="filtro" aria-label="Mostrar solo un carril">
+          <option value="">Todo</option>
+          <option value="period">Eras e imperios</option>
+          <option value="ruler">Reyes y gobernantes</option>
+          <option value="pablo">Pablo: viajes, paradas y cartas</option>
+          <option value="event">Sucesos</option>
+        </select>
+      </label>
+      <form class="ir" id="ir" role="search">
+        <label class="sr" for="ir-t">Ir a un año</label>
+        <input id="ir-t" name="t" inputmode="text" autocomplete="off" placeholder="Ir a: 607 a.e.c.">
+        <button type="submit">Ir</button>
+      </form>
+      <button type="button" class="tema" id="tema" aria-pressed="false" aria-label="Tema oscuro">Tema <span>oscuro</span></button>
+    </div>
+  </div>
+
+  <div class="now" id="now" role="region" aria-labelledby="now-l">
+    <button type="button" class="now-t" id="now-t" aria-expanded="false" aria-controls="now-c">En curso</button>
+    <span class="now-l" id="now-l">En curso<span class="lg"> en la fecha del cursor</span></span>
+    <div class="now-c" id="now-c"></div>
+  </div>
+
+  <div class="stage" id="stage">
+    <div class="list" id="list" aria-label="Cronología">
+      <div class="inner" id="inner"></div>
+    </div>
+    <div class="ruler" id="ruler" role="slider" tabindex="0" aria-label="Regla del tiempo: mueve la línea de lectura. Sus columnas, de izquierda a derecha: eras e imperios, reyes y gobernantes, Pablo, cartas y sucesos"
+         aria-valuemin="-4025" aria-valuemax="100" aria-valuenow="50" aria-orientation="vertical">
+      <svg id="ruler-svg" aria-hidden="true"></svg>
+      <p class="ruler-ley" aria-hidden="true"><span style="--kc:var(--k-period)">Eras</span><span style="--kc:var(--k-ruler)">Reyes</span><span style="--kc:var(--k-pablo)">Pablo</span><span style="--kc:var(--k-letter)">Cartas</span><span style="--kc:var(--k-event)">Sucesos</span></p>
+    </div>
+    <div class="line" aria-hidden="true"></div>
+  </div>
+
+  <aside class="card" id="card" aria-label="Ficha de la marca elegida"></aside>
+</main>
+<div class="sr" id="live" aria-live="polite"></div>
+</body>
+</html>
