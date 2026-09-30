@@ -57,7 +57,8 @@ relations:
   checked_on: '2026-09-29'
   certainty: probable
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - hur-rey-de-madian
+- hur-padre-del-comisario-de-efrain

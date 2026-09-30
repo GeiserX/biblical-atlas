@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gueber-padre-del-comisario-de-ramot-galaad
+name: Guéber
+names:
+- name: Guéber
+perspicacia: null
+disambiguation: 'Guéber, padre del comisario de Salomón en Ramot-Galaad (1Re 4:13). Perspicacia no le da entrada propia: en
+  «Guéber» lo cree probablemente Guéber hijo de Urí.'
+summary: Padre del comisario de Salomón que tenía a su cargo Ramot-Galaad, las aldeas de Jaír y la región de Argob. El texto
+  no da el nombre del hijo.
+reason: Perspicacia «Guéber»; 1Re 4:7, 13.
+sources:
+- it-gueber
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Guéber»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001629
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

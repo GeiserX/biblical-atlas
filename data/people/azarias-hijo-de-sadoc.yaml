@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-sadoc
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#4
+disambiguation: Azarías hijo de Sadoc, funcionario de Salomón; no Azarías hijo de Natán, jefe de los comisarios, ni los demás
+  Azarías que numera Perspicacia.
+distinct_from:
+- azarias-hijo-de-natan
+- uzias
+- ocozias-de-juda
+- abednego
+summary: Hijo del sacerdote Sadoc y uno de los altos funcionarios de Salomón; el texto lo llama el sacerdote. Perspicacia
+  ve posible que fuera hermano de Ahimáaz.
+reason: Perspicacia «Azarías», núm. 4; 1Re 4:2.
+sources:
+- it-azarias
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000486
+  type: perspicacia
+relations:
+- type: kin
+  person: sadoc-hijo-de-ahitub
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-azarias
+  reason: '1Re 4:2: Azarías hijo de Sadoc.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: priest
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:2: Azarías era el sacerdote.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:1, 2: está entre los altos funcionarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

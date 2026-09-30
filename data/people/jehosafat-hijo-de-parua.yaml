@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehosafat-hijo-de-parua
+name: Jehosafat
+names:
+- name: Jehosafat
+perspicacia: 1200002383#2
+disambiguation: Jehosafat hijo de Parúah, comisario de Salomón; no el registrador hijo de Ahilud, ni el rey de Judá, ni el
+  padre de Jehú.
+distinct_from:
+- jehosafat-hijo-de-ahilud
+- jehosafat
+summary: Hijo de Parúah. Comisario de Salomón en el territorio de Isacar, con su mes de turno para dar alimento a la casa
+  real.
+reason: Perspicacia «Jehosafat», núm. 2; 1Re 4:7, 17.
+sources:
+- it-jehosafat
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Jehosafat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
+  type: perspicacia
+relations:
+- type: kin
+  person: parua
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-parua
+  reason: '1Re 4:17: Jehosafat hijo de Parúah.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 17: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

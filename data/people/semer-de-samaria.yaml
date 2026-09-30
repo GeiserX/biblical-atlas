@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: semer-de-samaria
+name: Sémer
+names:
+- name: Sémer
+perspicacia: 1200004004#3
+disambiguation: El dueño de la montaña de Samaria; no el aserita ni el levita merarita del mismo nombre.
+summary: Dueño de la montaña que Omrí le compró por dos talentos de plata para edificar Samaria, que tomó su nombre. Perspicacia
+  ve posible que fuera un clan más que un hombre.
+reason: Perspicacia «Sémer», núm. 3; 1Re 16:24 y su nota.
+sources:
+- it-semer
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Sémer»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004004
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+checked_on: '2026-09-30'
+status: verified

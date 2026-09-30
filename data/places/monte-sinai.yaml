@@ -5,6 +5,8 @@ names:
 - name: Monte Sinaí
 - name: Horeb
   note: Al parecer, otro nombre del monte o de la zona montañosa que lo rodea (Éx 3:1).
+- name: Montaña del Dios verdadero
+  note: Así llama 1Re 19:8 al Horeb, adonde llegó Elías huyendo de Jezabel.
 type: mountain
 lat: null
 lon: null
@@ -90,6 +92,7 @@ sources:
 - deuteronomio-5
 - deuteronomio-9
 - galatas-4
+- 1-reyes-19
 links:
 - title: 'Perspicacia: «Sinaí»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004135
@@ -107,5 +110,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita el párr. 1 de Perspicacia «Sinaí», que apoya lo de Arabia.
   source: galatas-4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

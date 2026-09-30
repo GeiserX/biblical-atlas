@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-se-aparece-a-salomon-en-gabaon
+title: Jehová se aparece a Salomón en Gabaón
+date:
+  from: -1036
+  to: -1033
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1034 a.e.c. (tiempo narrativo: al principio del reinado, antes de empezar el templo)'
+narrative_order:
+  series: 1-reyes
+  order: 3004
+places:
+- gabaon
+- jerusalen
+people:
+- salomon
+present:
+- salomon
+passages:
+- 1Re 3:4-15
+- 2Cr 1:3-13
+summary: Salomón ofrece mil sacrificios en Gabaón, el lugar alto principal. En sueños Jehová le dice que pida; él pide un
+  corazón obediente para juzgar, y recibe sabiduría, riquezas y gloria. Vuelve a Jerusalén y sacrifica ante el arca.
+reason: '1Re 3:4-15; Perspicacia «Salomón», apartado «La sabia solicitud de Salomón», y «Gabaón»: al principio de su reinado.
+  Reinaba desde 1037 y la obra del templo empezó en 1034 (estudio 3, párr. 4 y 8).'
+sources:
+- 1-reyes-3
+- it-salomon
+- it-gabaon
+- si-3
+links:
+- title: 1 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3
+  type: bible
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 'Perspicacia: «Gabaón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001682
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

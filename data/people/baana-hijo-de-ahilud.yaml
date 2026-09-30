@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-hijo-de-ahilud
+name: Baaná
+names:
+- name: Baaná
+perspicacia: 1200000524#1
+disambiguation: Baaná hijo de Ahilud, comisario de Salomón; no Baaná hijo de Husái, otro comisario, ni el hijo de Rimón ni
+  el netofatita.
+distinct_from:
+- baana-hijo-de-husai
+- baana-hijo-de-rimon
+- baana-el-netofatita
+summary: 'Comisario de Salomón en Taanac, Meguidó y todo Bet-Seán, hasta Abel-Meholá: sobre todo los valles fértiles de Meguidó
+  y Jezreel. Perspicacia ve posible que fuera hermano del registrador Jehosafat.'
+reason: Perspicacia «Baaná», núm. 1, y «Ahilud»; 1Re 4:7, 12.
+sources:
+- it-baana
+- it-ahilud
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Baaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000524
+  type: perspicacia
+relations:
+- type: kin
+  person: ahilud
+  word: father
+  inferred: true
+  sources:
+  - 1-reyes-4
+  - it-ahilud
+  reason: '1Re 4:12: Baaná hijo de Ahilud. Perspicacia «Ahilud» da por probable que sea el mismo Ahilud padre de Jehosafat.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 12: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

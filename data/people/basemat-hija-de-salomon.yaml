@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: basemat-hija-de-salomon
+name: Basemat
+names:
+- name: Basemat
+perspicacia: 1200000573#3
+disambiguation: Basemat hija de Salomón; no las dos esposas de Esaú, hijas de Elón y de Ismael.
+distinct_from:
+- basemat-hija-de-elon
+- basemat-hija-de-ismael
+summary: Hija del rey Salomón y esposa de Ahimáaz, su comisario en Neftalí.
+reason: Perspicacia «Basemat», núm. 3; 1Re 4:15.
+sources:
+- it-basemat
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Basemat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000573
+  type: perspicacia
+relations:
+- type: kin
+  person: salomon
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-basemat
+  reason: '1Re 4:15: Basemat, otra hija de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

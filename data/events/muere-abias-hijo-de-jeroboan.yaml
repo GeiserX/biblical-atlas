@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muere-abias-hijo-de-jeroboan
+title: Muere Abías, hijo de Jeroboán
+date:
+  from: -979
+  to: -975
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 980 y c. 976 a.e.c. (tiempo narrativo: tras la guerra con Abías de Judá y poco antes de morir Jeroboán)'
+narrative_order:
+  series: 1-reyes
+  order: 14017
+type: death
+roles:
+  abias-hijo-de-jeroboan: died
+places:
+- tirza
+people:
+- abias-hijo-de-jeroboan
+present:
+- abias-hijo-de-jeroboan
+passages:
+- 1Re 14:17, 18
+summary: Cuando su madre pisa el umbral de la casa en Tirzá, el muchacho muere, como dijo Ahíya. Todo Israel lo llora y lo
+  entierra; nadie más de la casa de Jeroboán tendría sepultura.
+reason: 1Re 14:12, 13, 17, 18 y Perspicacia «Abías», núm. 6. Pasa el mismo día que la consulta a Ahíya, y lleva su fecha.
+sources:
+- 1-reyes-14
+- it-abias
+- it-jeroboan
+- tnm-a6-a
+links:
+- title: 1 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/14
+  type: bible
+- title: 'Perspicacia: «Abías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000041
+  type: perspicacia
+search: Abías hijo de Jeroboán muere
+checked_on: '2026-09-30'
+status: verified

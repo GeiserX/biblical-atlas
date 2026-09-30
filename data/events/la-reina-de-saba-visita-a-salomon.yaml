@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: la-reina-de-saba-visita-a-salomon
+title: La reina de Saba visita a Salomón
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de muchas obras de Salomón y antes de su muerte)'
+narrative_order:
+  series: 1-reyes
+  order: 10001
+places:
+- jerusalen
+- reino-de-saba
+people:
+- salomon
+present:
+- salomon
+passages:
+- 1Re 10:1-10
+- 1Re 10:13
+- 2Cr 9:1-9
+- 2Cr 9:12
+summary: Por la fama de Salomón, la reina de Saba llega a Jerusalén con una gran caravana y lo prueba con preguntas. Admirada
+  de su sabiduría, alaba a Jehová, le regala oro y aceite balsámico y vuelve a su país.
+reason: 'Perspicacia «Seba», núm. 6: vino algún tiempo después de que Salomón acabara muchas obras, cuyos veinte años terminaron
+  en 1014 a.e.c. según «Salomón». Venía del reino del suroeste de Arabia. La reina no tiene nombre ni ficha.'
+sources:
+- 1-reyes-10
+- it-seba
+- it-salomon
+links:
+- title: 'Perspicacia: «Seba»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003970
+  type: perspicacia
+- title: 1 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

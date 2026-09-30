@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-acab
+title: Muerte de Acab en Ramot-Galaad
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 22029
+places:
+- ramot-galaad
+- samaria
+present:
+- acab
+- jehosafat
+people:
+- acab
+- jehosafat
+- ben-hadad-ii
+type: death
+roles:
+  acab: died
+passages:
+- 1Re 22:29-40
+- 2Cr 18:28-34
+summary: Acab entra disfrazado en la batalla y los sirios acosan a Jehosafat, vestido de rey. Una flecha al azar hiere a Acab,
+  que muere en su carro al atardecer; lo entierran en Samaria y los perros lamen su sangre.
+reason: A6-A cierra el reinado de Acab y abre el de Ocozías hacia 920 a.e.c., en el año 17 de Jehosafat (1Re 22:51), que empezó
+  en 937. El rey de Siria es, al parecer, Ben-Hadad II (Perspicacia «Ben-hadad», núm. 2).
+sources:
+- 1-reyes-22
+- tnm-a6-a
+- it-acab
+- it-ben-hadad
+links:
+- title: 1 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

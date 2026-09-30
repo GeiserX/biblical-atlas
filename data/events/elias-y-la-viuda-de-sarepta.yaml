@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-y-la-viuda-de-sarepta
+title: 'Elías y la viuda de Sarepta: la harina y el aceite no se acaban'
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 17008
+places:
+- sarepta
+people:
+- elias-profeta
+present:
+- elias-profeta
+passages:
+- 1Re 17:8-16
+- Lu 4:25, 26
+summary: Jehová envía a Elías a Sarepta, de Sidón. Una viuda que iba a guisar su última comida le hace antes un pan, y durante
+  la sequía no se le terminan ni la harina ni el aceite.
+reason: 'Perspicacia «Elías», núm. 1, párr. 3, y «Sarepta»; Jesús lo recuerda en Lu 4:25, 26. La viuda no tiene nombre. Fecha:
+  reinado de Acab (A6-A).'
+sources:
+- 1-reyes-17
+- it-elias
+- it-sarepta
+- lucas-4
+- tnm-a6-a
+links:
+- title: 1 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

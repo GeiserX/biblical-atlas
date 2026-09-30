@@ -9,6 +9,7 @@ perspicacia: 1200001273#1
 disambiguation: Elá, jeque de Edom; no Elá, rey de Israel.
 distinct_from:
 - ela-de-israel
+- ela-padre-de-simei
 summary: Jeque de Edom del linaje de Esaú; parece que se asentó en Elat.
 reason: Perspicacia «Elah», núm. 1; Gé 36:41.
 sources:
@@ -41,5 +42,5 @@ relations:
   reason: 'Gé 36:43: jeques de Edom, según las regiones que ocuparon.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

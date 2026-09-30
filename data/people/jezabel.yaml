@@ -3,13 +3,16 @@ id: jezabel
 name: Jezabel
 names:
 - name: Jezabel
-summary: Hija de Etbaal, rey de Sidón, y esposa de Acab. Promovió el culto a Baal, mandó matar a los profetas de Jehová y
-  amenazó a Elías. Jehú la hizo arrojar por una ventana en Jezreel.
+summary: Hija de Etbaal, rey de Sidón, y esposa de Acab. Promovió el culto a Baal, mandó matar a los profetas de Jehová, amenazó
+  a Elías y tramó la muerte de Nabot. Jehú la hizo arrojar por una ventana en Jezreel.
 reason: Perspicacia «Jezabel», núm. 1, párr. 1-3; 1Re 16:31, 18:4, 19:2 y 2Re 9:30-37.
 sources:
 - it-jezabel
 - 1-reyes-16
 - 2-reyes-9
+- 1-reyes-18
+- 1-reyes-19
+- 1-reyes-21
 links:
 - title: 'Perspicacia: «Jezabel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002463
@@ -27,5 +30,31 @@ relations:
   reason: Murió al ser arrojada desde una ventana en Jezreel (2Re 9:30-33).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: etbaal
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-etbaal
+  reason: '1Re 16:31: Jezabel hija de Etbaal.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: elias-profeta
+  word: enemy
+  sources:
+  - 1-reyes-19
+  - it-jezabel
+  reason: '1Re 19:1, 2: jura por sus dioses matar a Elías, que huye para salvar la vida; Perspicacia «Jezabel», núm. 1, párr.
+    3.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200002463#1
+history:
+- date: '2026-09-30'
+  change: El resumen no decía que tramó la muerte de Nabot con cartas en nombre de Acab (1Re 21:5-15).
+  source: 1-reyes-21
+checked_on: '2026-09-30'
 status: verified

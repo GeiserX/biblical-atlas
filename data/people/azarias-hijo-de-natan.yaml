@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: azarias-hijo-de-natan
+name: Azarías
+names:
+- name: Azarías
+perspicacia: 1200000486#5
+disambiguation: Azarías hijo de Natán, jefe de los comisarios de Salomón; no Azarías hijo de Sadoc ni los demás Azarías de
+  Perspicacia.
+distinct_from:
+- azarias-hijo-de-sadoc
+- uzias
+- ocozias-de-juda
+- abednego
+summary: Hijo de Natán y jefe de los doce comisarios que abastecían la casa del rey Salomón.
+reason: Perspicacia «Azarías», núm. 5, y «Natán», núm. 2; 1Re 4:5, 7, 19.
+sources:
+- it-azarias
+- it-natan
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Azarías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000486
+  type: perspicacia
+relations:
+- type: kin
+  person: natan-padre-de-zabud
+  word: father
+  inferred: true
+  sources:
+  - 1-reyes-4
+  - it-natan
+  reason: 1Re 4:5 lo llama hijo de Natán. Perspicacia «Natán», núm. 2, da a Azarías y a Zabud por hijos del mismo Natán, quizá
+    el profeta.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:5: estaba al mando de los comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

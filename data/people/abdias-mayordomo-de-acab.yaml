@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abdias-mayordomo-de-acab
+name: Abdías
+names:
+- name: Abdías
+perspicacia: 1200003287#4
+disambiguation: El mayordomo de la casa de Acab; no el profeta Abdías, escritor del libro, ni los otros once de Perspicacia.
+distinct_from:
+- abdias-profeta
+summary: Encargado de la casa del rey Acab, que temía mucho a Jehová. Cuando Jezabel mataba a los profetas, escondió a cien
+  en cuevas y los sustentó. En la sequía se encontró con Elías y avisó al rey.
+reason: Perspicacia «Abdías», núm. 4; 1Re 18:3-16.
+sources:
+- it-abdias
+- 1-reyes-18
+links:
+- title: 'Perspicacia: «Abdías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003287
+  type: perspicacia
+- title: 1 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
+  type: bible
+relations:
+- type: tie
+  person: acab
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-18
+  - it-abdias
+  reason: '1Re 18:3, 8-10: llevaba la casa de Acab y lo llama su señor; Perspicacia «Abdías», núm. 4, llama a Acab su amo.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

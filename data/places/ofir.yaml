@@ -58,8 +58,8 @@ candidates:
   note: 'Centro: punto de Sopara en OpenBible; Perspicacia habla de la India sin nombrar un sitio. Radio nuestro.'
   coord_source: openbible:a104820
   coord_url: https://www.openbible.info/geo/ancient/a104820/ophir
-summary: Tierra famosa por su oro fino, adonde iban desde Ezión-guéber las naves de Salomón. De allí llegaban también madera
-  de algum y piedras preciosas. Hoy no se sabe dónde estaba.
+summary: Tierra famosa por su oro fino, adonde iban desde Ezión-Guéber las naves de Salomón. De allí llegaban también madera
+  de sándalo y piedras preciosas. Hoy no se sabe dónde estaba.
 reason: Perspicacia «Ofir» (párr. 4-9), La Atalaya «¿Lo sabía?» de 2010 (párr. 5-8) y 1Re 9:26-28. Las tres opciones eran accesibles
   por mar desde Ezión-guéber.
 sources:
@@ -69,6 +69,8 @@ sources:
 - openbible-geo
 - job-22
 - job-28
+- 1-reyes-10
+- it-algum
 links:
 - title: 'Perspicacia: «Ofir»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003336
@@ -76,10 +78,14 @@ links:
 - title: 1 Reyes 9 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia llama opinión general al suroeste de Arabia; La Atalaya de 2010 da Arabia, las costas de África y la
     India como posibles sin preferir ninguna. Seguimos la más reciente.
   source: w10-ofir
+- date: '2026-09-30'
+  change: «Madera de algum» pasa a «madera de sándalo», como dice la TNM en 1Re 10:11, 12; Perspicacia «Algum» recoge esa
+    identificación tradicional. Ezión-Guéber, con la grafía de la TNM.
+  source: 1-reyes-10

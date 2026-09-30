@@ -1,0 +1,18 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: kenaana-padre-de-sedequias
+name: Kenaaná
+names:
+- name: Kenaaná
+perspicacia: 1200000937#1
+disambiguation: El padre del profeta Sedequías; no es el benjamita Kenaaná de 1Cr 7:10.
+summary: Padre de Sedequías, el profeta falso que animó a Acab a atacar Ramot-Galaad.
+reason: Perspicacia «Kenaaná», núm. 1; 1Re 22:11, 24 y 2Cr 18:10, 23.
+sources:
+- it-kenaana
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Kenaaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000937
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

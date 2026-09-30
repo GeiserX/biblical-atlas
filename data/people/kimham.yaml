@@ -6,7 +6,7 @@ names:
 perspicacia: '1200000957'
 summary: Hombre que Barzilái, ya anciano, envió con David en su lugar. Cruzó el Jordán con el rey y, al parecer, se quedó
   en la corte. Perspicacia lo cree probablemente hijo de Barzilái.
-reason: Perspicacia «Kimham»; 2Sa 19:37-40; 1Re 2:7.
+reason: Perspicacia «Kimham», que por las instrucciones de David a Salomón lo cree en la corte; 2Sa 19:37-40.
 sources:
 - it-kimham
 - 2-samuel-19
@@ -46,5 +46,9 @@ relations:
   inferred: false
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: '1Re 2:7 habla de los hijos de Barzilái sin nombrarlo: que Kimham siguiera en la corte es lectura de Perspicacia.'
+  source: 1-reyes-2
+checked_on: '2026-09-30'
 status: verified

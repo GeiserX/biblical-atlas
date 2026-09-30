@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-profeta-condena-a-acab-por-soltar-a-ben-hadad
+title: Un profeta condena a Acab por soltar a Ben-Hadad
+date:
+  from: -923
+  to: -923
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 924 a.e.c.
+  detail:
+    season: spring
+  note: 'Cuenta nuestra: la primavera del año siguiente al sitio de Samaria (c. 925 a.e.c.; Perspicacia «Ben-hadad», núm.
+    2). La nota de 1Re 20:26 lee «a principios de año» como primavera.'
+narrative_order:
+  series: 1-reyes
+  order: 20035
+places:
+- samaria
+people:
+- acab
+present: []
+passages:
+- 1Re 20:35-43
+summary: 'Un hijo de los profetas se hace herir, se venda los ojos y espera a Acab en el camino. Con un caso inventado le
+  hace dictar su propia sentencia: morirá por haber soltado a Ben-Hadad. Acab vuelve a Samaria abatido.'
+reason: 'Perspicacia «Acab», núm. 1, párr. 7. El encuentro es junto a un camino sin nombre; Samaria, adonde vuelve el rey
+  después, no sitúa a nadie. Fecha: cuenta nuestra, tras la batalla de Afec.'
+sources:
+- 1-reyes-20
+- it-acab
+- it-ben-hadad
+- tnm-a6-a
+links:
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: pending

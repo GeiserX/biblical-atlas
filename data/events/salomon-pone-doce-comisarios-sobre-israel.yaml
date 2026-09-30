@@ -1,0 +1,75 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-pone-doce-comisarios-sobre-israel
+title: Salomón pone doce comisarios sobre Israel
+date:
+  from: -1036
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 998 a.e.c. (tiempo narrativo: durante el reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 4007
+places:
+- region-montanosa-de-efrain
+- macaz
+- saalbim
+- bet-semes
+- elon-bet-hanan
+- arubot
+- soco-cerca-de-arubot
+- hefer
+- dor
+- taanac
+- meguido
+- bet-sean
+- zaretan
+- jezreel
+- abel-mehola
+- region-de-jocmeam
+- ramot-galaad
+- havot-jair
+- argob
+- basan
+- mahanaim
+- neftali
+- aser
+- bealot-junto-a-aser
+- isacar
+- benjamin
+- galaad
+people:
+- salomon
+- azarias-hijo-de-natan
+- ben-abinadab
+- baana-hijo-de-ahilud
+- gueber
+- ahinadab
+- ahimaaz-esposo-de-basemat
+- baana-hijo-de-husai
+- jehosafat-hijo-de-parua
+- simei-hijo-de-ela
+present: []
+passages:
+- 1Re 4:7-19
+- 1Re 4:27, 28
+summary: Doce comisarios, cada uno con su distrito, abastecen por turnos de un mes la mesa del rey y llevan cebada y paja
+  para sus caballos. Azarías hijo de Natán está al frente de todos.
+reason: '1Re 4:7-19, 27, 28; Perspicacia «Salomón»: los distritos seguían las zonas agrícolas y no las tribus. Durante su
+  reinado, 1037-998 (tabla B7). Abarca todo el país y el texto no dice dónde se nombraron: no sitúa a nadie.'
+sources:
+- 1-reyes-4
+- it-salomon
+- it-azarias
+- tnm-b7
+links:
+- title: 1 Reyes 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/4
+  type: bible
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

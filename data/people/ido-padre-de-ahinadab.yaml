@@ -1,0 +1,19 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ido-padre-de-ahinadab
+name: Idó
+names:
+- name: Idó
+perspicacia: 1200002135#2
+disambiguation: Idó, padre de Ahinadab; no el hombre de visiones cuyos escritos consultó Crónicas, ni el abuelo del profeta
+  Zacarías, ni los demás Idó de Perspicacia.
+summary: Padre de Ahinadab, comisario de Salomón en Mahanaim.
+reason: Perspicacia «Idó», núm. 2; 1Re 4:14.
+sources:
+- it-ido
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Idó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002135
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

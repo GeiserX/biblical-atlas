@@ -50,9 +50,29 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: jezabel
+  word: mother
+  inferred: true
+  sources:
+  - 1-reyes-22
+  - it-ocozias
+  - it-jezabel
+  reason: 1Re 22:52 habla de su madre sin nombrarla; Perspicacia «Ocozías», núm. 1, lo hace hijo de Acab y Jezabel.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 1-reyes-22
+  reason: '1Re 22:51: reinó sobre Israel en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Ocozías» y el estudio 3 dan su comienzo hacia 919 a.e.c.; A6-A, más reciente, lo pone hacia 920.
   source: tnm-a6-a
-checked_on: '2026-09-28'
+perspicacia: 1200000145#1
+checked_on: '2026-09-30'
 status: verified

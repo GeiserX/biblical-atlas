@@ -15,16 +15,21 @@ places:
 - siquem
 - tirza
 summary: Primer rey del reino de diez tribus; veintidós años.
-reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 1 Reyes 12.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Lo hacen rey en 1Re 12:20; los 22 años
+  los da 1Re 14:20.
 sources:
 - tnm-a6-a
 - 1-reyes-12
 - it-jeroboan
+- 1-reyes-14
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jeroboán» pone su muerte cerca de 977 a.e.c.; A6-A, más reciente, empieza el reinado de Nadab hacia
     976.
   source: tnm-a6-a
+- date: '2026-09-30'
+  change: '1 Reyes 12 cuenta cómo lo hicieron rey, pero no cuánto reinó: los 22 años están en 1Re 14:20.'
+  source: 1-reyes-12
 search: Jeroboán rey
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

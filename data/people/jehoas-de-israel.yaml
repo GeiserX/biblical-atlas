@@ -9,6 +9,7 @@ disambiguation: Rey de Israel, nieto de Jehú; no es Jehoás de Judá, hijo de O
 distinct_from:
 - jehoas-de-juda
 - joas-padre-de-gedeon
+- joas-hijo-del-rey
 date:
   from: -861
   to: -843
@@ -54,5 +55,5 @@ relations:
   office: king
   status: verified
 perspicacia: 1200002373#2
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

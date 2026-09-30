@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimaaz-esposo-de-basemat
+name: Ahimáaz
+names:
+- name: Ahimáaz
+perspicacia: 1200000156#3
+disambiguation: Ahimáaz, comisario de Salomón en Neftalí; Perspicacia lo numera aparte del hijo de Sadoc y del padre de Ahinoam.
+distinct_from:
+- ahimaaz-hijo-de-sadoc
+- ahimaaz-padre-de-ahinoam
+summary: Comisario de Salomón en Neftalí y esposo de Basemat, hija del rey. Hay quien lo cree el hijo del sacerdote Sadoc;
+  Perspicacia no lo afirma.
+reason: Perspicacia «Ahimáaz», núm. 3; 1Re 4:7, 15.
+sources:
+- it-ahimaaz
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Ahimáaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000156
+  type: perspicacia
+not_claimed:
+- 'Que sea Ahimáaz hijo de Sadoc: Perspicacia solo dice que algunos lo piensan.'
+relations:
+- type: kin
+  person: basemat-hija-de-salomon
+  word: wife
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-basemat
+  reason: '1Re 4:15: se casó con Basemat, hija de Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salomon
+  word: master
+  inferred: false
+  sources:
+  - 1-reyes-4
+  reason: '1Re 4:7, 15: uno de los doce comisarios del rey Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

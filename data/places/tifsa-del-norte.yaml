@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tifsa-del-norte
+name: Tifsá
+names:
+- name: Tifsá
+- name: Tifsah
+  note: Grafía de Perspicacia.
+type: city
+lat: 35.95
+lon: 38.16667
+precision: uncertain
+coord_source: openbible:aab8f2d
+coord_url: https://www.openbible.info/geo/ancient/aab8f2d/tiphsah-1
+coord_note: Punto de Dibseh, el sitio que Perspicacia recoge como propuesta.
+summary: Lugar en el límite norte del dominio de Salomón, a este lado del Éufrates. Hay quien lo identifica, con reservas,
+  con Dibseh, junto al río, unos 90 km al este-sureste de Alepo.
+reason: 'Perspicacia «Tifsah», núm. 1; 1Re 4:24. OpenBible: solo el punto.'
+sources:
+- it-tifsah
+- openbible-geo
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Tifsah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004419
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

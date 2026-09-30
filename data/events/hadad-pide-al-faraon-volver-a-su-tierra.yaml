@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hadad-pide-al-faraon-volver-a-su-tierra
+title: Hadad pide al faraón volver a su tierra
+date:
+  from: -1036
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 998 a.e.c. (tiempo narrativo: muertos David y Joab, en el reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 11021
+places:
+- egipto
+- edom
+people:
+- hadad-el-edomita
+present:
+- hadad-el-edomita
+passages:
+- 1Re 11:21, 22, 25
+summary: Al saber que David y Joab han muerto, Hadad insiste en que el faraón lo deje marcharse, aunque nada le falta. Según
+  Perspicacia, vuelve a Edom y se opone a Salomón.
+reason: 1Re 11:21, 22, 25; Perspicacia «Hadad», núm. 4. David muere hacia 1037 a.e.c. (estudio 3, párr. 4) y Joab al comienzo
+  del reinado de Salomón, que acaba en 998.
+sources:
+- 1-reyes-11
+- it-hadad
+- si-3
+- it-salomon
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

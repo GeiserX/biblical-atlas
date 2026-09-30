@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acab-derrota-a-ben-hadad-junto-a-samaria
+title: Acab derrota a Ben-Hadad junto a Samaria
+date:
+  from: -924
+  to: -924
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 925 a.e.c.
+  note: 'Cuenta nuestra: Perspicacia «Ben-hadad», núm. 2, pone el sitio un lustro antes de que Acab muriera, y A6-A cierra
+    su reinado hacia 920 a.e.c.; 920 + 5 = 925.'
+narrative_order:
+  series: 1-reyes
+  order: 20013
+places:
+- samaria
+people:
+- acab
+- ben-hadad-ii
+present:
+- acab
+- ben-hadad-ii
+passages:
+- 1Re 20:13-21
+summary: Un profeta anuncia a Acab que vencerá con los 232 ayudantes de los jefes de provincia. Salen a mediodía mientras
+  Ben-Hadad bebe con los reyes; los sirios huyen y él escapa a caballo con unos jinetes.
+reason: Perspicacia «Ben-hadad», núm. 2, párr. 1, y «Acab», núm. 1, párr. 6. Mismo año que el sitio; fecha por cuenta nuestra.
+sources:
+- 1-reyes-20
+- it-ben-hadad
+- it-acab
+- tnm-a6-a
+links:
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: pending

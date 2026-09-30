@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sisa
+name: Sisá
+names:
+- name: Sisá
+perspicacia: '1200004068'
+summary: Padre de los dos secretarios de Salomón, Elihóref y Ahíya. Perspicacia cree que es el secretario de David llamado
+  también Seraya, Sevá y Savsá, salvo que el cargo cambiara mucho de manos.
+reason: Perspicacia «Sisá» y «Seraya», núm. 2; 1Re 4:3.
+sources:
+- it-sisa
+- it-seraya
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Sisá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004068
+  type: perspicacia
+- title: 'Perspicacia: «Seraya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003904
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-juzga-entre-dos-prostitutas
+title: Salomón juzga entre dos prostitutas
+date:
+  from: -1036
+  to: -1033
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1034 a.e.c. (tiempo narrativo: poco después del sueño de Gabaón)'
+narrative_order:
+  series: 1-reyes
+  order: 3016
+places:
+- jerusalen
+people:
+- salomon
+present: []
+passages:
+- 1Re 3:16-28
+summary: Dos prostitutas se disputan un niño vivo. Salomón manda partirlo en dos; la verdadera madre prefiere cederlo, y el
+  rey se lo entrega. Todo Israel ve que Dios le ha dado sabiduría para juzgar.
+reason: '1Re 3:16-28. Perspicacia «Salomón» lo pone poco después del sueño de Gabaón. El texto no dice dónde juzgó: el rey
+  residía en Jerusalén, pero el suceso no sitúa a nadie.'
+sources:
+- 1-reyes-3
+- it-salomon
+- si-3
+links:
+- title: 1 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/3
+  type: bible
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

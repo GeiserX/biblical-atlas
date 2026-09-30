@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: adonias-intenta-hacerse-rey
+title: Adonías intenta hacerse rey
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 1005
+places:
+- piedra-de-zohelet
+- en-roguel
+people:
+- adonias-hijo-de-david
+- joab-hijo-de-zeruya
+- abiatar
+- david
+- salomon
+- sadoc-hijo-de-ahitub
+- benaya-hijo-de-jehoiada
+- natan-profeta
+- simei-partidario-de-david
+- rei
+present:
+- adonias-hijo-de-david
+- joab-hijo-de-zeruya
+- abiatar
+passages:
+- 1Re 1:5-10
+summary: Adonías, hijo de Haguit, presume de que será rey y se hace con carruaje, jinetes y escolta. Joab y el sacerdote Abiatar
+  lo apoyan. Junto a la piedra de Zohélet ofrece sacrificios e invita a sus hermanos, salvo a Salomón.
+reason: '1Re 1:5-10; Perspicacia «Adonías», núm. 1, y «Zohélet». Sadoc, Benaya, Natán, Simeí, Reí y los guerreros de David
+  no lo siguen. Joab y Abiatar están en el banquete (1:19, 25, 41). Fecha: 1037 (estudio 3).'
+sources:
+- 1-reyes-1
+- it-adonias
+- it-zohelet
+- it-en-roguel
+- si-3
+links:
+- title: 1 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

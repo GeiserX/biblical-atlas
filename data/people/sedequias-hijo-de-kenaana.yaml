@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: sedequias-hijo-de-kenaana
+name: Sedequías
+names:
+- name: Sedequías
+perspicacia: 1200004685#1
+disambiguation: Profeta falso de la corte de Acab; no es el último rey de Judá ni el Sedequías hijo de Maaseya de Jer 29.
+distinct_from:
+- sedequias
+summary: Uno de los profetas de Acab. Con unos cuernos de hierro le prometió que vencería a los sirios en Ramot-Galaad, y
+  abofeteó a Micaya cuando este anunció la derrota.
+reason: Perspicacia «Sedequías», núm. 1; 1Re 22:11, 24 y 2Cr 18:10, 23.
+sources:
+- it-sedequias
+- 1-reyes-22
+links:
+- title: 'Perspicacia: «Sedequías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
+  type: perspicacia
+relations:
+- type: kin
+  person: kenaana-padre-de-sedequias
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-22
+  - it-sedequias
+  reason: '1Re 22:11, 24: Sedequías hijo de Kenaaná.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: asa-quita-a-maaca-de-reina-madre
+title: Asá destituye a su abuela Maacá y quema su ídolo
+date:
+  from: -977
+  to: -962
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 978 y 963 a.e.c. (tiempo narrativo: primeros años de Asá, antes de la asamblea de su año 15)'
+narrative_order:
+  series: 1-reyes
+  order: 15013
+places:
+- valle-de-cedron
+- jerusalen
+people:
+- asa
+- maaca-hija-de-uriel
+present:
+- asa
+passages:
+- 1Re 15:13
+- 2Cr 15:16
+summary: Maacá había hecho un ídolo obsceno para el culto del poste sagrado. Su nieto Asá la aparta del puesto de reina madre,
+  echa abajo el ídolo y lo quema en el valle de Cedrón.
+reason: 1Re 15:13. Perspicacia «Asá», núm. 1, lo cuenta dentro de su celo inicial, antes del pacto del año 15 (963 a.e.c.);
+  «Maacá», núm. 9. Asá empieza a reinar en 978 (A6-A).
+sources:
+- 1-reyes-15
+- it-asa
+- it-maaca
+- tnm-a6-a
+links:
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+- title: 'Perspicacia: «Asá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000397
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

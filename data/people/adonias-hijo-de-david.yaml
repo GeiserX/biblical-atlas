@@ -11,6 +11,9 @@ reason: Perspicacia «Adonías», núm. 1; 2Sa 3:4.
 sources:
 - it-adonias
 - 2-samuel-3
+- 1-reyes-1
+- it-salomon
+- 1-reyes-2
 links:
 - title: 'Perspicacia: «Adonías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000110
@@ -26,8 +29,9 @@ relations:
   sources:
   - 2-samuel-3
   - it-adonias
+  - 1-reyes-1
   reason: '2Sa 3:4: el cuarto hijo de David.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: haguit
@@ -36,8 +40,10 @@ relations:
   sources:
   - 2-samuel-3
   - it-adonias
+  - 1-reyes-1
+  - 1-reyes-2
   reason: '2Sa 3:4: hijo de Haguit.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: born_in
   place: hebron
@@ -48,5 +54,50 @@ relations:
   reason: '2Sa 3:4, 5: nacido en Hebrón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: absalon
+  word: half_brother
+  inferred: false
+  sources:
+  - 1-reyes-1
+  - it-adonias
+  reason: '1Re 1:6: nació después de Absalón, otro hijo de David; Perspicacia «Adonías», núm. 1, recuerda que eran de distinta
+    madre.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: salomon
+  word: half_brother
+  inferred: false
+  sources:
+  - 1-reyes-1
+  - it-salomon
+  - it-bat-seba
+  - 1-reyes-2
+  reason: 1Re 1:10 llama a Salomón su hermano; Perspicacia «Salomón» y «Bat-seba» lo llaman su medio hermano mayor.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: joab-hijo-de-zeruya
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-1
+  - it-adonias
+  - 1-reyes-2
+  reason: '1Re 1:7: Joab hijo de Zeruyá le ofrece su ayuda y su apoyo.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: abiatar
+  word: ally
+  inferred: false
+  sources:
+  - 1-reyes-1
+  - it-adonias
+  - 1-reyes-2
+  reason: '1Re 1:7: el sacerdote Abiatar le ofrece su ayuda y su apoyo.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

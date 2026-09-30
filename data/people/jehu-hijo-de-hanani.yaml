@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehu-hijo-de-hanani
+name: Jehú
+names:
+- name: Jehú
+perspicacia: 1200002401#2
+disambiguation: El profeta hijo de Hananí; no Jehú, el rey de Israel hijo de Jehosafat, ni los demás Jehú de Perspicacia.
+distinct_from:
+- jehu-de-israel
+summary: Profeta, hijo de Hananí. Anunció a Baasá que su casa acabaría como la de Jeroboán. Un profeta de su nombre, quizá
+  él mismo, reprendió después a Jehosafat por ayudar a Acab.
+reason: Perspicacia «Jehú», núm. 2; 1Re 16:1-7, 12.
+sources:
+- it-jehu
+- 1-reyes-16
+links:
+- title: 'Perspicacia: «Jehú»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
+  type: perspicacia
+- title: 1 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/16
+  type: bible
+relations:
+- type: kin
+  person: hanani-vidente
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-hanani
+  reason: '1Re 16:1, 7: Jehú hijo de Hananí. Perspicacia «Hananí», núm. 2, ve en él, al parecer, al vidente de tiempos de
+    Asá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: prophet
+  inferred: false
+  sources:
+  - 1-reyes-16
+  - it-jehu
+  reason: 1Re 16:7 lo llama el profeta Jehú.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
