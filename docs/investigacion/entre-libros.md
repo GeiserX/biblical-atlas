@@ -465,7 +465,7 @@ Los campos, los tipos de relación y sus palabras se nombran como en el esquema 
 
 ## Para Esdras y Nehemías (desde Isaías)
 
-- **La madera de Tiro (Esd 3:7).** «Las profecías de Isaías» ve cumplido Is 23:18 en el cedro que Tiro vende para el templo. Cuando Esdras cree ese suceso, va en `mentions` del tramo Isaías 23:15-18.
+- **La madera de Tiro (Esd 3:7).** «Las profecías de Isaías I» ve cumplido Is 23:18 en el cedro que Tiro vende para el templo. Cuando Esdras cree ese suceso, va en `mentions` del tramo Isaías 23:15-18.
 
 ## Para Daniel (desde Isaías)
 
