@@ -21,6 +21,7 @@ sources:
 - hch-13
 - marcos-14
 - hechos-12
+- colosenses-4
 links:
 - title: 'Perspicacia: «Marcos»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002902
@@ -37,6 +38,10 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora Mr 14:51, 52, de donde sale lo del joven que huyó.
   source: marcos-14
+- date: '2026-09-29'
+  change: La relación con Pablo de 60-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de
+    la lista no cambia.
+  source: colosenses-4
 checked_on: '2026-09-29'
 status: verified
 relations:
@@ -77,6 +82,7 @@ relations:
   status: verified
 - type: accompanies
   person: pablo
+  word: fellow_worker
   date:
     from: 60
     to: 61
@@ -89,7 +95,7 @@ relations:
   sources:
   - it-marcos
   - colosenses-4
-  reason: Está con Pablo en Roma y saluda a Colosas y a Filemón (Col 4:10; Flm 24).
+  reason: Está con Pablo en Roma, es uno de sus colaboradores judíos y saluda a Colosas y a Filemón (Col 4:10, 11; Flm 24).
   checked_on: '2026-09-29'
   status: verified
 - type: kin

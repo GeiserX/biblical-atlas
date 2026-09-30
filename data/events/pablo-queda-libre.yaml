@@ -14,7 +14,8 @@ places:
 people:
 - pablo
 passages:
-- Flp 1:12-14
+- Flp 1:19, 25, 26
+- Flp 2:24
 - Flm 22
 summary: 'Hechos no lo cuenta, pero al parecer lo declaran inocente. Había estado unos cuatro años preso: dos en
   Cesarea y dos en Roma.'
@@ -24,6 +25,14 @@ sources:
 - nota-hechos-28
 - bt-27
 - it-pablo
+- it-filipenses
+- filipenses-1
+- filipenses-2
 search: Pablo liberado Roma
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-29'
+  change: Flp 1:12-14 habla de cómo su encierro difunde las buenas noticias, no de la liberación. Entran Flp 1:19, 25, 26
+    y 2:24, donde Pablo confía en salir libre y volver a Filipos.
+  source: filipenses-1
+checked_on: '2026-09-29'
 status: verified

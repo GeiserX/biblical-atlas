@@ -51,6 +51,7 @@ const PHONE = { viewport: { width: 430, height: 932 }, isMobile: true, hasTouch:
 // group with the raw date of its target, so the group did not fit and fell back to its dates. 2: Paul was drawn on
 // the road while they happened at a stop of one moment. 3: the window differed from the event's own date only by the
 // cut at its end, so it no longer counts as moved by the account (it keeps its date and is not «estimated»).
+// 4: Gálatas anchored the event to c. 49 by the study note on Gál 2:12 (commit c6bf8f0).
 // Only events and letters that existed at REFERENCE_REV are listed: the record compares no other.
 const EXPECTED_CHANGES = {
   'evento:creacion-de-eva': 1, 'evento:pecado-de-adan-y-eva': 1, 'evento:juicio-en-eden': 1, 'evento:expulsion-del-eden': 1,
@@ -66,6 +67,7 @@ const EXPECTED_CHANGES = {
   'evento:mujer-encorvada-y-grano-de-mostaza': 1,
   'evento:tito-trae-noticias-de-corinto': 2, 'evento:segundo-encierro-en-roma': 2, 'carta:2-corintios': 2, 'carta:2-timoteo': 2,
   'evento:muere-isaac': 3, 'evento:hombres-de-ezequias-copian-proverbios-de-salomon': 3,
+  'evento:pablo-corrige-a-pedro-en-antioquia': 4,
 };
 // Deaths named by the id of their event, not by the rule of the code: the person dies in that event.
 const DEATHS = {

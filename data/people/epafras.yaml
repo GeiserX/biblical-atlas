@@ -14,14 +14,16 @@ date:
 disambiguation: El de Colosas. No es Epafrodito de Filipos.
 distinct_from:
 - epafrodito
-summary: Predicó a los colosenses y quizás fundó su congregación. Fue a Roma con buenas noticias de Colosas mientras
-  Pablo estaba preso y se esforzó también por Laodicea y Hierápolis.
+summary: Predicó a los colosenses, y es muy probable que su congregación surgiera de su trabajo. Fue a Roma con buenas noticias
+  de Colosas mientras Pablo estaba preso y se esforzó también por Laodicea y Hierápolis.
 reason: Perspicacia «Epafras»; Col 1:7, 8; 4:12, 13; Flm 23. Fecha de Colosenses y Filemón, hacia 60-61 según la Tabla de los
   libros.
 sources:
 - it-epafras
 - colosenses-1
 - tnm-tabla
+- it-colosas
+- colosenses-4
 links:
 - title: 'Perspicacia: «Epafras»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001379
@@ -29,7 +31,13 @@ links:
 - title: Colosenses 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200001379'
+history:
+- date: '2026-09-29'
+  change: '«Quizás fundó» se quedaba corto: Perspicacia «Epafras» lo ve muy probable, «Colosas» (párr. 3) llama a la congregación
+    fruto de su obra y la nota de Col 1:7 lo ve probable.'
+  source: colosenses-1
+checked_on: '2026-09-29'
 status: verified
 relations:
 - type: lived_in
@@ -56,6 +64,27 @@ relations:
   - it-epafras
   - filemon-1
   - tnm-tabla
+  - colosenses-1
+  - colosenses-4
   reason: Pablo lo llama su compañero en cautiverio (Flm 23). La Tabla de los libros fecha Filemón hacia 60-61.
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: roma
+  date:
+    from: 59
+    to: 61
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 59-61 e.c. (primer encierro de Pablo en Roma)
+  inferred: true
+  sources:
+  - it-epafras
+  - colosenses-1
+  - colosenses-4
+  reason: 'Perspicacia «Epafras»: llegó a Roma con noticias de Colosas en el primer encierro de Pablo (Col 1:8) y parece que
+    se quedó allí un tiempo; sigue con él al escribir (Col 4:12, 13).'
+  checked_on: '2026-09-29'
   status: verified

@@ -1,0 +1,55 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-filipenses
+title: Pablo escribe preso en Roma la carta a los Filipenses
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+narrative_order:
+  series: hechos
+  order: 2839
+places:
+- roma
+- filipos
+people:
+- pablo
+- timoteo
+- epafrodito
+present:
+- pablo
+- timoteo
+- epafrodito
+passages:
+- Flp 1:1
+- Flp 1:7
+- Flp 1:12-14
+- Flp 4:21, 22
+summary: 'Encadenado en Roma y con Timoteo a su lado, Pablo escribe a la congregación de Filipos: agradece su ayuda, cuenta
+  que su prisión difunde las buenas noticias, pide unidad y humildad y advierte contra los judaizantes.'
+reason: 'Perspicacia «Filipenses, Carta a los»: la guardia pretoriana (Flp 1:13) la pone en el primer encierro en Roma, y la
+  escribe tras la llegada y la enfermedad de Epafrodito, hacia 60 o 61. La Tabla de los libros coincide.'
+sources:
+- filipenses-1
+- it-filipenses
+- tnm-tabla
+- si-3
+- it-pablo
+- filipenses-4
+- it-epafrodito
+links:
+- title: Filipenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/1
+  type: bible
+- title: 'Perspicacia: «Filipenses, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003468
+  type: perspicacia
+- title: Filipenses 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4
+  type: bible
+search: Pablo escribe carta Filipenses Roma
+checked_on: '2026-09-29'
+status: verified
