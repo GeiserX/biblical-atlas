@@ -1,0 +1,279 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: campana-de-gedeon
+name: Campaña de Gedeón contra Madián
+person: gedeon
+reference: Jue 6:34–8:29
+date:
+  from: -1449
+  to: -1172
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+companions: []
+summary: Gedeón reúne a las tribus desde Ofrá, vence a Madián junto a Moré con 300 hombres, cruza el Jordán tras los reyes
+  Zébah y Zalmuná, los apresa en Carcor y castiga a Sucot y Penuel antes de volver.
+reason: 'Jueces 6 a 8 dan las paradas en orden. Sin año en jw.org: el libro cubre desde c. 1450 (estudio 3, tabla de libros)
+  y Gedeón es anterior a Jefté, que empieza hacia 1173 (Perspicacia «Jefté»).'
+sources:
+- jueces-6
+- jueces-7
+- jueces-8
+- si-3
+- it-gedeon
+- it-jueces
+- it-jefte
+- it-bet-sita
+- it-zerera
+- it-tabat
+- it-abel-mehola
+- it-qarqor
+- it-nobah
+- it-jogbeha
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ofra-de-gedeon
+  reference: Jue 6:11-35
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Salida. Aquí el ángel lo comisiona; desde aquí llama a las tribus.
+  reason: 'Jue 6:11, 24 ponen a Gedeón en Ofrá, y 6:34, 35 cuentan que convoca desde allí a Abí-Ézer y a cuatro tribus. Suceso
+    ancla: gedeon-convoca-a-las-tribus-contra-madian (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-6
+  - it-gedeon
+  - it-ofra
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: harod
+  reference: Jue 7:1-8
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Junto al manantial, Jehová deja el ejército en 300 hombres.
+  reason: 'Jue 7:1 dice que Gedeón y su gente acampan junto al manantial de Harod. Suceso ancla: jehova-reduce-el-ejercito-de-gedeon-a-300
+    (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-7
+  - it-harod
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: colina-de-more
+  reference: Jue 7:9-22
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Baja de noche con Purá al campamento enemigo, que está junto a la colina.
+  reason: 'Jue 7:1, 9-15: el campamento madianita está en la llanura junto a Moré; Gedeón baja hasta su borde y luego lo ataca.
+    Suceso ancla: gedeon-derrota-a-madian-con-300-hombres (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-7
+  - it-more
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: rio-jordan
+  reference: Jue 7:22–8:4
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Madián huye hacia Bet-Sitá, Zererá y Abel-Meholá; los de Efraín cierran los pasos hasta Bet-Bará.
+  reason: 'Jue 8:4: Gedeón llega al Jordán y lo cruza con sus 300 hombres, cansados pero sin dejar la persecución. Suceso
+    ancla: gedeon-derrota-a-madian-con-300-hombres (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-7
+  - jueces-8
+  - it-gedeon
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: sucot
+  reference: Jue 8:5-7
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Los príncipes de la ciudad le niegan pan.
+  reason: 'Jue 8:5-7 cuenta que pide pan a los de Sucot y ellos se burlan. Suceso ancla: sucot-niega-pan-a-gedeon (antes de
+    Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-sucot
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: penuel
+  reference: Jue 8:8, 9
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Tampoco le dan pan; promete derribar su torre.
+  reason: 'Jue 8:8 dice que de Sucot sube a Penuel y recibe la misma respuesta. Suceso ancla: penuel-niega-pan-a-gedeon (antes
+    de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-penuel
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: jogbeha
+  reference: Jue 8:11
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Sube por el camino de los nómadas, pasando al este de Nóbah y de Jogbehá.
+  reason: 'Jue 8:11 sitúa su ruta al este de Nóbah y Jogbehá; el texto no dice que entrara en la ciudad. Suceso ancla: gedeon-captura-a-zebah-y-zalmuna
+    (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-jogbeha
+  - it-nobah
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 8
+  place: carcor
+  reference: Jue 8:10-12
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Sorprende al resto del ejército oriental y apresa a Zébah y a Zalmuná.
+  reason: 'Jue 8:10-12: los reyes de Madián están en Carcor con unos 15.000 hombres cuando Gedeón cae sobre ellos. Suceso
+    ancla: gedeon-captura-a-zebah-y-zalmuna (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-qarqor
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 9
+  place: paso-de-heres
+  reference: Jue 8:13
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Vuelve de la batalla por la subida de Heres.
+  reason: 'Jue 8:13 nombra el paso de Heres como camino de regreso. Suceso ancla: gedeon-castiga-a-los-ancianos-de-sucot (antes
+    de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-heres
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 10
+  place: sucot
+  reference: Jue 8:14-16
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Castiga a los 77 príncipes y ancianos que lo habían despreciado.
+  reason: 'Jue 8:14-16: un joven de Sucot le da los nombres y Gedeón cumple su aviso. Suceso ancla: gedeon-castiga-a-los-ancianos-de-sucot
+    (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-sucot
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 11
+  place: penuel
+  reference: Jue 8:17
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Derriba la torre y mata a los hombres de la ciudad.
+  reason: 'Jue 8:17 cuenta el castigo de Penuel tras el de Sucot. Suceso ancla: gedeon-derriba-la-torre-de-penuel (antes de
+    Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-penuel
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 12
+  place: ofra-de-gedeon
+  reference: Jue 8:27, 29
+  date:
+    from: -1449
+    to: -1172
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1450 y c. 1173 a.e.c. (tiempo narrativo: antes de que Jefté empezara a juzgar)'
+  note: Llegada. Con el oro del botín hace un efod para su ciudad.
+  reason: 'Jue 8:27 pone el efod en Ofrá, su ciudad, y 8:29 dice que Jerubaal vuelve a su casa y se queda allí. Suceso ancla:
+    gedeon-pone-un-efod-en-ofra (antes de Jefté, c. 1173, según Perspicacia «Jefté»).'
+  sources:
+  - jueces-8
+  - it-ofra
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

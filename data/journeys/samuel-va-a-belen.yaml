@@ -1,0 +1,91 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: samuel-va-a-belen
+name: Samuel va a Belén a ungir a David
+person: samuel
+reference: 1Sa 15:34–16:13
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+companions: []
+summary: Jehová manda a Samuel, que aún llora por Saúl, de Ramá a la casa de Jesé en Belén. Con un sacrificio como motivo,
+  unge al hijo menor, David, y vuelve a Ramá.
+reason: '1 Samuel 15:34 a 16:13 da las paradas. Sin año en jw.org: después del nacimiento de David (1107) y en vida de Saúl,
+  que muere en 1078 (estudio 3).'
+sources:
+- 1-samuel-15
+- 1-samuel-16
+- si-3
+- it-samuel
+- it-david
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: samuel
+  order: 2
+stops:
+- order: 1
+  place: ramataim-zofim
+  reference: 1Sa 15:34; 16:1
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Salida. Aún está de luto por Saúl cuando Jehová lo envía.
+  reason: '1Sa 15:34 deja a Samuel en Ramá y 16:1 lo envía de allí a Belén; lleva la fecha de la unción. Suceso ancla: samuel-unge-a-david (entre el nacimiento de David, 1107, y la muerte de Saúl, 1078; estudio 3).'
+  sources:
+  - 1-samuel-15
+  - 1-samuel-16
+  - it-samuel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: belen
+  reference: 1Sa 16:4-13
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Con un sacrificio como motivo, unge a David, el menor de los hijos de Jesé.
+  reason: '1Sa 16:4-13 cuenta la llegada a Belén y la unción delante de sus hermanos. Suceso ancla: samuel-unge-a-david (entre
+    el nacimiento de David, 1107, y la muerte de Saúl, 1078; estudio 3).'
+  sources:
+  - 1-samuel-16
+  - it-samuel
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ramataim-zofim
+  reference: 1Sa 16:13
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Llegada.
+  reason: '1Sa 16:13 dice que después Samuel se va a Ramá. Suceso ancla: samuel-unge-a-david (entre el nacimiento de David,
+    1107, y la muerte de Saúl, 1078; estudio 3).'
+  sources:
+  - 1-samuel-16
+  - it-samuel
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

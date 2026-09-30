@@ -1,0 +1,117 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: sanson-en-gaza-y-sorec
+name: Sansón en Gaza y en el valle de Sorec
+person: sanson
+reference: Jue 16:1-31
+date:
+  from: -1172
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+companions: []
+summary: Sansón se lleva las puertas de Gaza a un monte frente a Hebrón. En el valle de Sorec, Dalila lo entrega; lo llevan
+  ciego a Gaza, donde derriba el templo de Dagón y muere con los filisteos.
+reason: 'Jueces 16 da las paradas en orden. Sin año en jw.org: al final de sus 20 años de juez, después de Jefté (c. 1173,
+  Perspicacia «Jefté») y antes de Saúl (1117, estudio 3).'
+sources:
+- jueces-16
+- it-sanson
+- it-gaza
+- it-dalila
+- it-soreq
+- it-jefte
+- it-jueces
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: sanson
+  order: 3
+stops:
+- order: 1
+  place: gaza
+  reference: Jue 16:1-3
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Salida. A medianoche arranca las puertas de la ciudad.
+  reason: 'Jue 16:1-3: Sansón pasa la noche en Gaza y se lleva las puertas, los postes y la barra. Suceso ancla: sanson-se-lleva-las-puertas-de-gaza
+    (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-16
+  - it-gaza
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: hebron
+  reference: Jue 16:3
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Deja las puertas en la cima de un monte que mira a Hebrón, no en la ciudad.
+  reason: 'Jue 16:3 dice que carga con ellas hasta la cima frente a Hebrón. La ficha es la ciudad; el monte no tiene nombre
+    ni punto propio. Suceso ancla: sanson-se-lleva-las-puertas-de-gaza (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-16
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: pending
+- order: 3
+  place: valle-de-sorec
+  reference: Jue 16:4-20
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Dalila, que vive allí, lo engaña cuatro veces y le hace cortar las trenzas.
+  reason: 'Jue 16:4 dice que Dalila era del valle de Sorec, y allí lo apresan los filisteos. Suceso ancla: dalila-entrega-a-sanson-a-los-filisteos
+    (tras Jefté, c. 1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-16
+  - it-dalila
+  - it-soreq
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: gaza
+  reference: Jue 16:21-30
+  date:
+    from: -1172
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1173 y 1117 a.e.c. (tiempo narrativo: en vida de Sansón, después de Jefté)'
+  note: Llegada. Ciego y preso, derriba la casa de Dagón. Sus hermanos lo entierran entre Zorá y Estaol (Jue 16:31).
+  reason: 'Jue 16:21 dice que lo bajan a Gaza, y 16:23-30 cuenta su muerte allí. Suceso ancla: muere-sanson (tras Jefté, c.
+    1173, y antes de Saúl, 1117).'
+  sources:
+  - jueces-16
+  - it-gaza
+  - it-sanson
+  - it-jefte
+  checked_on: '2026-09-30'
+  status: verified

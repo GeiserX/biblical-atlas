@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: david-va-al-valle-de-ela
+name: David lleva provisiones a sus hermanos y vence a Goliat
+person: david
+reference: 1Sa 17:12-54
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+companions: []
+summary: Jesé envía a David desde Belén al campamento del valle de Elá con comida para sus hermanos. Allí oye el desafío de
+  Goliat, lo derriba con una piedra y lleva luego su cabeza a Jerusalén.
+reason: '1 Samuel 17 da las paradas. Sin año en jw.org: entre el nacimiento de David (1107, estudio 3) y el fin del reinado
+  de Saúl (1078); Perspicacia «Azeqá» lo pone en ese reinado.'
+sources:
+- 1-samuel-17
+- si-3
+- it-david
+- it-goliat
+- it-elah
+- it-azeqa
+- wcg-se-enfrento-a-un-gigante
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: david
+  order: 1
+stops:
+- order: 1
+  place: belen
+  reference: 1Sa 17:12-20
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Salida. Su padre le da grano tostado, panes y quesos para sus hermanos y su jefe.
+  reason: '1Sa 17:12, 15-20: David cuida las ovejas de Jesé en Belén y madruga para llevar las provisiones. Suceso ancla:
+    david-mata-a-goliat (entre el nacimiento de David, 1107, y la muerte de Saúl, 1078; estudio 3).'
+  sources:
+  - 1-samuel-17
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: valle-de-ela
+  reference: 1Sa 17:20-53
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Oye a Goliat y lo mata con la honda. Israel persigue luego a los filisteos hasta Gat y Ecrón.
+  reason: '1Sa 17:2, 19, 20 ponen el campamento de Israel en el valle de Elá, adonde llega David. Suceso ancla: david-mata-a-goliat
+    (entre el nacimiento de David, 1107, y la muerte de Saúl, 1078; estudio 3).'
+  sources:
+  - 1-samuel-17
+  - it-elah
+  - it-goliat
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: jerusalen
+  reference: 1Sa 17:54
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: David ya ha nacido y Saúl aún reina)'
+  note: Llegada. El texto no dice cuándo llevó la cabeza allí.
+  reason: '1Sa 17:54: David lleva la cabeza de Goliat a Jerusalén; no dice cuándo, así que ponerlo en este viaje es deducción. Suceso ancla: david-mata-a-goliat (entre el nacimiento de David, 1107, y la muerte de Saúl, 1078; estudio
+    3).'
+  sources:
+  - 1-samuel-17
+  - it-david
+  - si-3
+  checked_on: '2026-09-30'
+  status: pending

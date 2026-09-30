@@ -1,0 +1,73 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-va-a-nayot
+name: Saúl va a Nayot tras David
+person: saul
+reference: 1Sa 19:19-24
+date:
+  from: -1106
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+companions: []
+summary: Después de mandar tres grupos de mensajeros que acaban profetizando, Saúl va él mismo a Ramá. En la cisterna de Secú
+  pregunta por David, y camino de Nayot también empieza a portarse como profeta.
+reason: '1 Samuel 19:19-24 da las paradas. Sin año en jw.org: tras la victoria sobre Goliat y en vida de Saúl, entre 1107
+  y 1078 (estudio 3).'
+sources:
+- 1-samuel-19
+- it-nayot
+- it-secu
+- it-rama
+- it-samuel
+- it-saul
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 5
+stops:
+- order: 1
+  place: secu
+  reference: 1Sa 19:22
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+  note: Junto a la gran cisterna pregunta dónde están Samuel y David.
+  reason: '1Sa 19:22: tras mandar tres veces mensajeros, Saúl va él mismo hacia Ramá y llega a la cisterna de Secú. Suceso
+    ancla: saul-y-sus-mensajeros-profetizan-en-nayot (1107-1078, estudio 3).'
+  sources:
+  - 1-samuel-19
+  - it-secu
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: ramataim-zofim
+  reference: 1Sa 19:22-24
+  date:
+    from: -1106
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1107 y 1078 a.e.c. (tiempo narrativo: tras la victoria sobre Goliat, en vida de Saúl, Jonatán y Samuel)'
+  note: Nayot, en Ramá. Se comporta como profeta todo el camino y queda tendido allí un día y una noche.
+  reason: '1Sa 19:23, 24 lo lleva hasta Nayot de Ramá; la ficha ramataim-zofim lleva Nayot entre sus nombres. Suceso ancla:
+    saul-y-sus-mensajeros-profetizan-en-nayot.'
+  sources:
+  - 1-samuel-19
+  - it-nayot
+  - it-rama
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified

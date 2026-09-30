@@ -1,0 +1,93 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: ana-sube-con-samuel-a-silo
+name: Ana lleva a Samuel a Siló
+person: ana-madre-de-samuel
+reference: 1Sa 1:21–2:11
+date:
+  from: -1179
+  to: -1116
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: después de destetar a Samuel, en días de Elí)'
+companions:
+- elcana-hijo-de-jeroham
+summary: Cuando desteta a Samuel, Ana sube con él y con ofrendas de Ramá a Siló, lo entrega a Elí para que sirva a Jehová
+  toda la vida y canta su oración. Luego vuelven a Ramá sin el niño.
+reason: '1 Samuel 1:21 a 2:11 da las paradas. Sin año en jw.org: después del nacimiento de Samuel (c. 1180, tabla de libros)
+  y antes de la unción de Saúl (1117, estudio 3).'
+sources:
+- 1-samuel-1
+- 1-samuel-2
+- tnm-tabla
+- si-3
+- it-ana
+- it-samuel
+- it-eli
+- it-silo
+checked_on: '2026-09-30'
+status: verified
+stops:
+- order: 1
+  place: ramataim-zofim
+  reference: 1Sa 1:21-23
+  date:
+    from: -1179
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: después de destetar a Samuel, en días de Elí)'
+  note: Salida. Se había quedado en casa hasta destetar al niño.
+  reason: '1Sa 1:21-23: Ana no sube con los demás hasta que Samuel deja el pecho; la casa es la de Ramá (1:19). Suceso ancla:
+    ana-lleva-a-samuel-a-silo (entre el nacimiento de Samuel, c. 1180, y 1117).'
+  sources:
+  - 1-samuel-1
+  - it-ana
+  - it-samuel
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: silo
+  reference: 1Sa 1:24–2:10
+  date:
+    from: -1179
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: después de destetar a Samuel, en días de Elí)'
+  note: Deja a Samuel con Elí para servir en la casa de Jehová y canta su oración.
+  reason: '1Sa 1:24 dice que sube con el niño y ofrendas a Siló. Suceso ancla: cantico-de-ana (entre el nacimiento de Samuel,
+    c. 1180, y 1117).'
+  sources:
+  - 1-samuel-1
+  - 1-samuel-2
+  - it-ana
+  - it-silo
+  - it-samuel
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: ramataim-zofim
+  reference: 1Sa 2:11
+  date:
+    from: -1179
+    to: -1116
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre c. 1180 y 1117 a.e.c. (tiempo narrativo: después de destetar a Samuel, en días de Elí)'
+  note: Llegada. El versículo nombra solo a Elcaná; el niño se queda en Siló.
+  reason: '1Sa 2:11 dice que Elcaná vuelve a su casa de Ramá; que Ana volviera con él es deducción (2:19, 20 cuenta los regresos
+    de los años siguientes). Suceso ancla: ana-lleva-a-samuel-a-silo (entre el nacimiento de Samuel, c. 1180, y 1117).'
+  sources:
+  - 1-samuel-2
+  - it-ana
+  - it-samuel
+  checked_on: '2026-09-30'
+  status: pending

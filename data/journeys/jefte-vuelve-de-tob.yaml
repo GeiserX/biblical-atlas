@@ -1,0 +1,69 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: jefte-vuelve-de-tob
+name: Jefté vuelve de Tob
+person: jefte
+reference: Jue 11:3-11
+date:
+  from: -1172
+  to: -1172
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1173 a.e.c.
+companions: []
+summary: Echado por sus hermanos, Jefté vive en Tob. Cuando Ammón ataca, los ancianos de Galaad lo van a buscar allí, y en
+  Mizpá lo nombran jefe del pueblo.
+reason: Jueces 11:3-11 da la salida y la llegada. Perspicacia «Jefté» sitúa el comienzo de sus seis años como juez alrededor
+  de 1173 a.e.c.
+sources:
+- jueces-11
+- it-jefte
+- it-tob
+- it-mizpa
+- tnm-tabla
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: jefte
+  order: 1
+stops:
+- order: 1
+  place: tob
+  reference: Jue 11:3-10
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Salida. Vivía aquí con una banda de desocupados; el texto no nombra la casa de la que lo echaron.
+  reason: 'Jue 11:3 lo pone en Tob tras huir de sus hermanos, y 11:5-10 cuenta que los ancianos de Galaad van allí a buscarlo.
+    Suceso ancla: los-ancianos-de-galaad-hacen-jefe-a-jefte (c. 1173).'
+  sources:
+  - jueces-11
+  - it-jefte
+  - it-tob
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: mizpa-de-galaad
+  reference: Jue 11:11
+  date:
+    from: -1172
+    to: -1172
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 1173 a.e.c.
+  note: Llegada. El pueblo lo hace jefe y él repite su trato delante de Jehová.
+  reason: 'Jue 11:11: Jefté va con los ancianos y en Mizpá lo nombran caudillo. Suceso ancla: los-ancianos-de-galaad-hacen-jefe-a-jefte (c. 1173, Perspicacia «Jefté»).'
+  sources:
+  - jueces-11
+  - it-jefte
+  - it-mizpa
+  checked_on: '2026-09-30'
+  status: verified

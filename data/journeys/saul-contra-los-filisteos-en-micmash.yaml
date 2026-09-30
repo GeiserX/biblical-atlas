@@ -1,0 +1,179 @@
+# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
+id: saul-contra-los-filisteos-en-micmash
+name: Saúl contra los filisteos en Micmash
+person: saul
+reference: 1Sa 13:2–14:46
+date:
+  from: -1116
+  to: -1077
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+companions:
+- jonatan-hijo-de-saul
+summary: Tras el golpe de Jonatán en Gueba, Saúl baja a Guilgal y sacrifica sin esperar a Samuel. Vuelve a Gueba, aguarda
+  en Migrón y, tras la hazaña de Jonatán, persigue a los filisteos desde Micmash hasta Ayalón.
+reason: '1 Samuel 13 y 14 dan las paradas en orden. Sin año en jw.org: al comienzo del reinado de Saúl, que el estudio 3 fecha
+  de 1117 a 1078 a.e.c.'
+sources:
+- 1-samuel-13
+- 1-samuel-14
+- it-micmas
+- it-bet-aven
+- it-migron
+- it-gueba
+- it-ayalon
+- it-guilgal
+- it-jonatan
+- it-saul
+- si-3
+checked_on: '2026-09-30'
+status: verified
+narrative_order:
+  series: saul
+  order: 3
+stops:
+- order: 1
+  place: micmash
+  reference: 1Sa 13:2
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: Salida. Tiene consigo 2.000 hombres, repartidos entre Micmash y los montes de Betel.
+  reason: '1Sa 13:2 lo sitúa en Micmash mientras Jonatán está en Guibeá. Suceso ancla: jonatan-derrota-a-la-guarnicion-filistea-de-gueba
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-13
+  - it-micmas
+  - it-saul
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 2
+  place: guilgal
+  reference: 1Sa 13:4-15
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: Espera siete días a Samuel y ofrece él mismo el sacrificio.
+  reason: '1Sa 13:4, 7-12 lo ponen en Guilgal; Perspicacia «Saúl» dice que se retiró allí desde Micmash. Suceso ancla: saul-ofrece-el-sacrificio-sin-esperar-a-samuel
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-13
+  - it-saul
+  - it-guilgal
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 3
+  place: gueba
+  reference: 1Sa 13:16
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: Gueba de Benjamín, con unos 600 hombres, frente al campamento filisteo.
+  reason: '1Sa 13:15, 16: Saúl cuenta a los que le quedan y se queda en Gueba con Jonatán. Suceso ancla: los-filisteos-salen-a-saquear-desde-micmash
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-13
+  - it-gueba
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 4
+  place: migron
+  reference: 1Sa 14:2
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: A las afueras de Guibeá, bajo un granado.
+  reason: '1Sa 14:2 lo sitúa en Migrón mientras Jonatán cruza al puesto filisteo. Suceso ancla: israel-derrota-a-los-filisteos-en-micmash
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-14
+  - it-migron
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 5
+  place: micmash
+  reference: 1Sa 14:15-23
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: Ataca el campamento, donde los filisteos se matan entre sí.
+  reason: '1Sa 14:20 dice que Saúl y los suyos van a la batalla contra el campamento de Micmash. Suceso ancla: israel-derrota-a-los-filisteos-en-micmash
+    (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-14
+  - it-micmas
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 6
+  place: bet-aven
+  reference: 1Sa 14:23
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: La lucha se extiende hasta aquí.
+  reason: '1Sa 14:23 lleva la batalla hasta Bet-Aven; Perspicacia «Bet-aven», núm. 1, la pone al este de Betel y al oeste
+    de Micmash. Suceso ancla: israel-derrota-a-los-filisteos-en-micmash (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-14
+  - it-bet-aven
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
+- order: 7
+  place: ayalon
+  reference: 1Sa 14:31-46
+  date:
+    from: -1116
+    to: -1077
+    precision: range
+    approx: true
+    type: narrative
+    chronology: tnm
+    text: 'entre 1117 y 1078 a.e.c. (tiempo narrativo: al comienzo del reinado de Saúl)'
+  note: Llegada. El pueblo come carne con sangre; Saúl hace su primer altar y la suerte señala a Jonatán.
+  reason: '1Sa 14:31 dice que persiguen a los filisteos de Micmash a Ayalón; lo que sigue ocurre al final de esa jornada.
+    Suceso ancla: saul-construye-su-primer-altar (reinado de Saúl, 1117-1078, estudio 3).'
+  sources:
+  - 1-samuel-14
+  - it-ayalon
+  - si-3
+  checked_on: '2026-09-30'
+  status: verified
