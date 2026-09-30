@@ -1675,7 +1675,7 @@ def comprobar_enlaces(lista):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(description="Valida los datos de biblical-earth.")
+    ap = argparse.ArgumentParser(description="Valida los datos de biblical-atlas.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
     ap.add_argument("--links", action="store_true", help="comprueba que cada URL responde 200")
     ap.add_argument("--strict", action="store_true", help="los avisos también hacen fallar")

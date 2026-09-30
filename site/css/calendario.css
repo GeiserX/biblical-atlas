@@ -1,4 +1,4 @@
-/* biblical-earth · página «El calendario»: una columna de lectura con los tokens del kit, como «Acerca de». */
+/* biblical-atlas · página «El calendario»: una columna de lectura con los tokens del kit, como «Acerca de». */
 html { background: var(--paper); }
 body { margin: 0; font: 400 var(--fs-lg)/1.6 var(--font-sans); color: var(--ink); background: var(--paper); }
 a { color: var(--link); }

@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="docs/images/banner.svg" alt="biblical-earth, la Biblia en el mapa y en el tiempo: el nombre, la rama de olivo sobre el mar del Mediterráneo oriental y una línea del tiempo de 4026 a.e.c. al año 100" width="900">
+  <img src="docs/images/banner.svg" alt="biblical-atlas, la Biblia en el mapa y en el tiempo: el nombre, la rama de olivo sobre el mar del Mediterráneo oriental y una línea del tiempo de 4026 a.e.c. al año 100" width="900">
 </p>
 
-<h1 align="center">biblical-earth</h1>
+<h1 align="center">biblical-atlas</h1>
 
 <p align="center"><b>La Biblia en el mapa y en el tiempo</b></p>
 
 <p align="center">
-  <a href="https://github.com/GeiserX/biblical-earth/actions/workflows/validar.yml"><img src="https://img.shields.io/github/actions/workflow/status/GeiserX/biblical-earth/validar.yml?style=flat-square&label=validar&labelColor=1f3b30" alt="Validación de los datos"></a>
-  <a href="https://github.com/GeiserX/biblical-earth/actions/workflows/pages.yml"><img src="https://img.shields.io/github/actions/workflow/status/GeiserX/biblical-earth/pages.yml?style=flat-square&label=publicar&labelColor=1f3b30" alt="Publicación del sitio"></a>
+  <a href="https://github.com/GeiserX/biblical-atlas/actions/workflows/validar.yml"><img src="https://img.shields.io/github/actions/workflow/status/GeiserX/biblical-atlas/validar.yml?style=flat-square&label=validar&labelColor=1f3b30" alt="Validación de los datos"></a>
+  <a href="https://github.com/GeiserX/biblical-atlas/actions/workflows/pages.yml"><img src="https://img.shields.io/github/actions/workflow/status/GeiserX/biblical-atlas/pages.yml?style=flat-square&label=publicar&labelColor=1f3b30" alt="Publicación del sitio"></a>
   <a href="https://biblical-earth.geiser.cloud/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fbiblical-earth.geiser.cloud%2F&style=flat-square&label=sitio&labelColor=1f3b30&up_color=4e6d57&up_message=en%20l%C3%ADnea&down_message=ca%C3%ADdo" alt="Sitio"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/GeiserX/biblical-earth?style=flat-square&label=licencia&labelColor=1f3b30&color=4e6d57" alt="Licencia"></a>
-  <a href="https://github.com/GeiserX/biblical-earth/commits/main"><img src="https://img.shields.io/github/last-commit/GeiserX/biblical-earth?style=flat-square&label=%C3%BAltimo%20cambio&labelColor=1f3b30&color=4e6d57" alt="Último cambio"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/GeiserX/biblical-atlas?style=flat-square&label=licencia&labelColor=1f3b30&color=4e6d57" alt="Licencia"></a>
+  <a href="https://github.com/GeiserX/biblical-atlas/commits/main"><img src="https://img.shields.io/github/last-commit/GeiserX/biblical-atlas?style=flat-square&label=%C3%BAltimo%20cambio&labelColor=1f3b30&color=4e6d57" alt="Último cambio"></a>
 </p>
 
 <p align="center">
@@ -43,7 +43,7 @@
 - Cuatro recorridos guiados, modo lectura, modo presentación y una página con el calendario de la Biblia y sus meses.
 - Cada hecho lleva su fuente, su razón y su fecha de consulta. De jw.org y wol.jw.org se enlaza, nunca se copia.
 - Sitio estático con MapLibre GL, sin servidor ni paso de compilación: abre incluso desde `file://`.
-- Los mismos datos salen en SQLite (`dist/biblical-earth.sqlite`) para consultarlos fuera del sitio.
+- Los mismos datos salen en SQLite (`dist/biblical-atlas.sqlite`) para consultarlos fuera del sitio.
 
 ## Inicio rápido
 

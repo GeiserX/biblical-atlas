@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «viaje»: ficha, búsqueda y lo que implica seleccionar un viaje. Dueño durante el reparto: app-tiempo. */
+/* biblical-atlas · tipo «viaje»: ficha, búsqueda y lo que implica seleccionar un viaje. Dueño durante el reparto: app-tiempo. */
 'use strict';
 (() => {
 const BE = window.BE;

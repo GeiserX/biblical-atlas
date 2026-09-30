@@ -1,4 +1,4 @@
-/* biblical-earth · búsqueda y enlaces: la caja de arriba y su lista de resultados. Cada tipo registrado aporta sus
+/* biblical-atlas · búsqueda y enlaces: la caja de arriba y su lista de resultados. Cada tipo registrado aporta sus
    resultados con buscar(q, nq, puntuar); aquí se añaden los años («607 a.e.c.», B-03), las preguntas de forma fija
    («Babilonia en 30», «Loida y Pablo», B-04), la vista previa del resultado activo (B-01), las fechas de cada
    resultado (B-06) y las sugerencias cuando no hay nada. También viven aquí atrás y adelante de verdad (B-15),
@@ -419,7 +419,7 @@ function textoCita(sel) {
   let wol = '';
   const c = BE.citas(refs)[0] || (sel.tipo === 'pasaje' ? { libro: BE.pasajeDeId(sel.id).libro, cap: BE.pasajeDeId(sel.id).cap } : null);
   if (c) wol = BE.urlCapitulo(c.libro, c.cap);
-  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en wol.jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-earth: ${location.href}`].filter(Boolean).join('\n');
+  return [`${nombre}${o.resumen ? `: ${o.resumen}` : ''}`, refs && `Referencias: ${refs}.`, wol && `Leer en wol.jw.org: ${wol}`, fuentes.length && `Fuentes: ${fuentes.join('; ')}.`, `Vista en biblical-atlas: ${location.href}`].filter(Boolean).join('\n');
 }
 function accionesFicha() {
   const cuerpo = $('#panel-cuerpo');

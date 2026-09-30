@@ -1,6 +1,6 @@
 # Catálogo de ideas: interfaz, experiencia, navegación y enlaces
 
-Este documento reúne todas las ideas que tenemos para que biblical-earth sea fácil de usar y enseñe de verdad. No es un plan cerrado. Es el banco de ideas del que sacamos cada corte.
+Este documento reúne todas las ideas que tenemos para que biblical-atlas sea fácil de usar y enseñe de verdad. No es un plan cerrado. Es el banco de ideas del que sacamos cada corte.
 
 La aplicación tiene tres piezas: un **mapa**, una **línea de tiempo con zoom** y un **panel lateral**. Las tres obedecen a un único **cursor de tiempo**. Debajo hay un grafo: personas, lugares, hechos, viajes, cartas y hallazgos, unidos por relaciones con fecha y con fuente.
 

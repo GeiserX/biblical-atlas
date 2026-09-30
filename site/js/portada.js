@@ -1,4 +1,4 @@
-/* biblical-earth · portada (pantalla 15, #vista-portada): qué es esto y tres maneras de empezar (buscar, elegir una
+/* biblical-atlas · portada (pantalla 15, #vista-portada): qué es esto y tres maneras de empezar (buscar, elegir una
    época, seguir un recorrido), las preguntas guía, la barra de las épocas a escala real y «seguir donde lo dejé».
    Sale al abrir el sitio sin dirección (#…) y desde el logo o el menú «Estudio». Dueño durante el reparto: app-estudio. */
 'use strict';
@@ -6,7 +6,7 @@
 const BE = window.BE;
 const { E, esc, $, fmtAnio, fechaCorta, tramo } = BE;
 
-const CLAVE_ULTIMA = 'biblical-earth:ultima';
+const CLAVE_ULTIMA = 'biblical-atlas:ultima';
 let abierta = false;
 const COLORES = ['#8a7a5c', '#c29a3b', '#b8733a', '#5b7d3a', '#8e4b3a', '#7a5c8e', '#b5a98f', '#a23b2e', '#a3432b'];
 
@@ -34,7 +34,7 @@ function pintar() {
   v.hidden = false;
   document.documentElement.classList.add('be-con-portada');
   v.innerHTML = `<div class="portada">
-    <header class="portada-cab"><span class="be-logo"><span class="be-logo__mark" aria-hidden="true"></span><span>biblical-earth</span></span><span class="be-spacer"></span>
+    <header class="portada-cab"><span class="be-logo"><span class="be-logo__mark" aria-hidden="true"></span><span>biblical-atlas</span></span><span class="be-spacer"></span>
       <button type="button" class="be-btn be-btn--sm be-btn--ghost" data-portada-explorar>Explorar el mapa</button></header>
     <section class="portada-heroe">
       <div class="be-caps portada-eyebrow">Para estudiar la Biblia</div>
@@ -61,7 +61,7 @@ function pintar() {
         <p>${BE.marcaNivel(2)} Arqueología e investigación, solo cuando jw.org las usa, y siempre con su fuente.</p>
         <p><span class="be-tier be-tier--unverified">Sin verificar</span> Se ve marcado, nunca escondido.</p></div></div>
     </section>
-    <footer class="portada-pie"><span>Código libre, GPL-3.0</span><span class="be-spacer"></span><a href="acerca.html">Qué es biblical-earth y a quién damos las gracias</a></footer>
+    <footer class="portada-pie"><span>Código libre, GPL-3.0</span><span class="be-spacer"></span><a href="acerca.html">Qué es biblical-atlas y a quién damos las gracias</a></footer>
   </div>`;
   BE.ajustarAyuda?.(v.querySelector('input[name="q"]'), 'Persona, lugar, capítulo o año', 'Persona, lugar o año', 'Buscar');
 }
@@ -104,7 +104,7 @@ function iniciar() {
     const pr = t.closest('[data-portada-pregunta]');
     if (pr) { const q = preguntas()[+pr.dataset.portadaPregunta]; cerrar(); BE.seleccionar(BE.parseSel(q.sel), { mover: false, encuadrar: true }); BE.setT(q.t); BE.asegurarVisible(BE.E.t, true); return; }
     const rc = t.closest('[data-portada-recorrido]');
-    if (rc) { cerrar(); try { localStorage.setItem(`biblical-earth:recorrido:${rc.dataset.portadaRecorrido}`, '0'); } catch { /* sin almacenamiento */ } BE.seleccionar({ tipo: 'recorrido', id: rc.dataset.portadaRecorrido }); return; }
+    if (rc) { cerrar(); try { localStorage.setItem(`biblical-atlas:recorrido:${rc.dataset.portadaRecorrido}`, '0'); } catch { /* sin almacenamiento */ } BE.seleccionar({ tipo: 'recorrido', id: rc.dataset.portadaRecorrido }); return; }
     if (t.closest('[data-portada-completa]')) { cerrar(); BE.E.vista = [BE.T_MIN, BE.T_MAX]; BE.sucio.linea = true; BE.programar(); return; }
     if (t.closest('[data-portada-seguir]')) { const u = ultima(); cerrar(); if (u?.hash) location.hash = u.hash; }
   });

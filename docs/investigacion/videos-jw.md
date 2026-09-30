@@ -42,7 +42,7 @@ El script [`scripts/videos/index.py`](../../scripts/videos/index.py) usa Python 
 4. Descarta el vídeo si el buscador lleva a la portada de jw.org, porque eso quiere decir que ya no está publicado.
 5. Guarda los 12 vídeos con más menciones de cada lugar y de cada persona. Si el mismo vídeo aparece con y sin audiodescripciones, se queda uno: el de más menciones y, si empatan, el que no lleva audiodescripciones.
 
-El script guarda las respuestas de jw.org en la caché `.biblical-earth-videos-cache.json`, dentro de la carpeta privada. Una segunda ejecución no hace peticiones de red.
+El script guarda las respuestas de jw.org en la caché `.biblical-atlas-videos-cache.json`, dentro de la carpeta privada. Una segunda ejecución no hace peticiones de red.
 
 [`scripts/videos/passages.py`](../../scripts/videos/passages.py) usa Python 3.12 y PyYAML, como [`build.py`](../../scripts/build.py), y no usa la red. El catálogo de medios de jw.org (`S.json`, que la herramienta de descarga deja en la misma carpeta) es la lista de lo publicado: da el título y la fecha, y un vídeo que ya no está en él no se enlaza. El enlace es el buscador público `https://www.jw.org/finder?wtlocale=S&lank=<clave>` (o `&docid=<docid>`), que lleva a la página del vídeo. Este script no añade ninguna consulta a jw.org.
 

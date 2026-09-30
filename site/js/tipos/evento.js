@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «evento»: ficha, búsqueda y lo que implica seleccionar un suceso. Aquí viven también las tarjetas
+/* biblical-atlas · tipo «evento»: ficha, búsqueda y lo que implica seleccionar un suceso. Aquí viven también las tarjetas
    de fecha que comparten las fichas de sucesos y periodos: cronología TNM principal, fecha secular como nota (C-02, C-04),
    cálculo nuestro sin verificar y la marca de precisión (C-05). Dueño durante el reparto: app-tiempo. */
 'use strict';

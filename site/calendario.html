@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>El calendario de la Biblia · biblical-earth</title>
+<title>El calendario de la Biblia · biblical-atlas</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="Cómo se contaban los meses y los años en la Biblia, qué nombres tenían en cada época y cómo los pone la línea de tiempo de biblical-earth. Cada dato enlaza a su fuente en wol.jw.org.">
+<meta name="description" content="Cómo se contaban los meses y los años en la Biblia, qué nombres tenían en cada época y cómo los pone la línea de tiempo de biblical-atlas. Cada dato enlaza a su fuente en wol.jw.org.">
 <link rel="stylesheet" href="kit/tokens.css">
 <link rel="stylesheet" href="kit/components.css">
 <link rel="stylesheet" href="css/calendario.css">
 </head>
 <body>
 <header class="cal-cab">
-  <a class="be-logo" href="index.html" data-volver aria-label="biblical-earth, volver al mapa"><span class="be-logo__mark" aria-hidden="true"></span><span class="cal-logo-texto">biblical-earth</span></a>
+  <a class="be-logo" href="index.html" data-volver aria-label="biblical-atlas, volver al mapa"><span class="be-logo__mark" aria-hidden="true"></span><span class="cal-logo-texto">biblical-atlas</span></a>
   <span class="be-spacer"></span>
   <a class="be-btn be-btn--sm" href="index.html" data-volver>Volver al mapa</a>
 </header>
@@ -30,11 +30,11 @@
 
 <footer class="cal-pie">
   <a href="index.html" data-volver>Volver al mapa</a>
-  <a href="acerca.html" data-acerca>Acerca de biblical-earth</a>
+  <a href="acerca.html" data-acerca>Acerca de biblical-atlas</a>
 </footer>
 
 <script>
-/* biblical-earth · página «El calendario»: la explicación y la tabla de los meses salen de data.json (calendario.explicacion
+/* biblical-atlas · página «El calendario»: la explicación y la tabla de los meses salen de data.json (calendario.explicacion
    y calendario.meses). Script clásico, sin módulos: la página también abre desde file://, donde carga data.js. */
 'use strict';
 (() => {
@@ -64,8 +64,8 @@ async function cargar() {
   if (location.protocol === 'file:') {
     const js = ruta.replace(/\.json$/, '.js');
     await new Promise((ok) => { const s = document.createElement('script'); s.src = js; s.onload = ok; s.onerror = ok; document.head.appendChild(s); });
-    if (!window.BIBLICAL_EARTH_DATA) throw new Error(`No encuentro ${js} junto a calendario.html.`);
-    return window.BIBLICAL_EARTH_DATA;
+    if (!window.BIBLICAL_ATLAS_DATA) throw new Error(`No encuentro ${js} junto a calendario.html.`);
+    return window.BIBLICAL_ATLAS_DATA;
   }
   const r = await fetch(ruta, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`${ruta} respondió ${r.status}`);

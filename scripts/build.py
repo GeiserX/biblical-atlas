@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Compila data/ en dist/data.json, site/data.json, site/data.js, dist/biblical-earth.sqlite
+"""Compila data/ en dist/data.json, site/data.json, site/data.js, dist/biblical-atlas.sqlite
 y el registro de investigación de docs/investigacion/registro/.
 
 Uso:  python3 scripts/build.py [--data DIR] [--out DIR]
 
-Con --out DIR (alias --salida) escribe data.json, data.js, biblical-earth.sqlite y registro/ dentro de DIR y no
+Con --out DIR (alias --salida) escribe data.json, data.js, biblical-atlas.sqlite y registro/ dentro de DIR y no
 toca site/, dist/ ni docs/. Sirve para probar datos sin pisar lo que compila otro.
 
 Los YAML de data/ tienen el núcleo en inglés (docs/investigacion/modelo.md). build.py hace de adaptador: lo que el
@@ -846,7 +846,7 @@ def escribir_json(salida, rutas, ruta_js):
         r.write_text(texto, encoding="utf-8")
     # Desde file:// el navegador no deja leer data.json; la web carga esta copia.
     js = ("// Copia de data.json para abrir el sitio desde file://. La genera scripts/build.py.\n"
-          "window.BIBLICAL_EARTH_DATA = " + json.dumps(salida, ensure_ascii=False) + ";\n")
+          "window.BIBLICAL_ATLAS_DATA = " + json.dumps(salida, ensure_ascii=False) + ";\n")
     ruta_js.parent.mkdir(parents=True, exist_ok=True)
     ruta_js.write_text(js, encoding="utf-8")
 
@@ -1298,7 +1298,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Compila data/ en dist/, site/data.json, site/data.js y el registro de investigación.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
     ap.add_argument("--out", "--salida", dest="out", default=None,
-                    help="escribe data.json, data.js, stats.json, biblical-earth.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
+                    help="escribe data.json, data.js, stats.json, biblical-atlas.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
     args = ap.parse_args(argv)
     datos, _ = cargar(args.data)
     errores = integridad(datos)
@@ -1314,13 +1314,13 @@ def main(argv=None):
         destino = Path(args.out).resolve()
         escribir_json(salida, [destino / "data.json"], destino / "data.js")
         escribir_resumen(salida, destino / "stats.json")
-        n_hf = escribir_sqlite(salida, destino / "biblical-earth.sqlite")
+        n_hf = escribir_sqlite(salida, destino / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, destino / "registro")
         donde = f" en {destino}"
     else:
         escribir_json(salida, [RAIZ / "dist" / "data.json", RAIZ / "site" / "data.json"], RAIZ / "site" / "data.js")
         escribir_resumen(salida, RAIZ / "site" / "stats.json")
-        n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-earth.sqlite")
+        n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-atlas.sqlite")
         escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
         donde = ""
     n_impl = sum(1 for f in salida["fuentes"].values() if f.get("implicita"))

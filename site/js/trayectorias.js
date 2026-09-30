@@ -1,4 +1,4 @@
-/* biblical-earth · trayectorias: dónde está cada persona en cada momento y en qué ventana de tiempo cae cada carta o suceso.
+/* biblical-atlas · trayectorias: dónde está cada persona en cada momento y en qué ventana de tiempo cae cada carta o suceso.
    Quien tiene viajes (hoy, Pablo) sigue sus paradas, y sus sucesos y cartas se colocan en ellas (colocarEnParadas).
    Cualquier otra persona se sitúa con sus viajes, los sucesos que la nombran con lugar y sus relaciones fechadas
    (vivio_en, nacio_en, murio_en). Nunca se inventa una posición: fuera de lo que dicen los datos, BE.donde devuelve

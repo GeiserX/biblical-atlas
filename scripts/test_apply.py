@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import apply  # noqa: E402
 
 # Una ficha escrita a mano: líneas cortadas a otro ancho y lista en línea. yaml.safe_dump no la reproduce.
-ANA = """# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+ANA = """# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: ana
 name: Ana
 names:
@@ -40,7 +40,7 @@ relations:
 checked_on: '2026-01-01'
 status: verified
 """
-FUENTES = """# biblical-earth: fuentes comunes.
+FUENTES = """# biblical-atlas: fuentes comunes.
 f-comun:
   title: Común
   work: Prueba
@@ -50,7 +50,7 @@ f-comun:
   checked_on: '2026-01-01'
 """
 # Lucas con un solo tramo junto a Pablo, y dos coberturas que lo citan con la forma corta.
-LUCAS = """# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+LUCAS = """# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.
 id: lucas
 name: Lucas
 summary: Prueba.
@@ -75,7 +75,7 @@ relations:
 checked_on: '2026-01-01'
 status: verified
 """
-HECHOS = """# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+HECHOS = """# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
 book: hechos
 chapters:
   16:
@@ -84,7 +84,7 @@ chapters:
     spans:
     - {v: 10-17, type: narration, entities: [person:lucas, relation:lucas/accompanies/pablo]}
 """
-OTRO_LIBRO = """# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.
+OTRO_LIBRO = """# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.
 book: filemon
 chapters:
   1:

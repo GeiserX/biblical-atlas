@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «carta»: ficha, búsqueda y lo que implica seleccionar una carta, más las ayudas de cartas que
+/* biblical-atlas · tipo «carta»: ficha, búsqueda y lo que implica seleccionar una carta, más las ayudas de cartas que
    usan el mapa y la línea. Cartas de cualquier escritor, con portadores (G-10), destinatarios personas, lugares de
    escritura posibles (M-11) y «lo que el texto no dice» (C-11). Dueño durante el reparto: app-mapa. */
 'use strict';

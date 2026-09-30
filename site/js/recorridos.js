@@ -1,4 +1,4 @@
-/* biblical-earth · recorridos guiados (pantalla 14, A-01) con sus preguntas de repaso (A-04) y su hoja de impresión
+/* biblical-atlas · recorridos guiados (pantalla 14, A-01) con sus preguntas de repaso (A-04) y su hoja de impresión
    (A-16); modo presentación (A-11), modo reunión (D-02), letra grande (D-11) y movimiento reducido (D-10), con el menú
    «Estudio» de la barra superior que abre también la lectura, el grafo, la conexión y la portada.
    Dueño durante el reparto: app-estudio. */
@@ -9,7 +9,7 @@ const { E, esc, $, EXTERNO, fmtAnio, fechaCorta } = BE;
 
 const reducido = () => matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('be-reunion');
 const busca = (id) => (BE.D.recorridos || []).find((r) => r.id === id);
-const CLAVE_PASO = 'biblical-earth:recorrido:';
+const CLAVE_PASO = 'biblical-atlas:recorrido:';
 const R = { id: null, paso: 0, pasoHash: null, respuestas: {}, play: 0, marcas: [] };
 const pasoDe = (id) => (R.id === id ? R.paso : (R.pasoHash ?? guardado(id)));
 function guardado(id) { try { return Math.max(0, +(localStorage.getItem(CLAVE_PASO + id) || 0)); } catch { return 0; } }
@@ -168,7 +168,7 @@ function hojaImpresion(id) {
   let h = document.getElementById('hoja-recorrido');
   if (!h) { h = document.createElement('div'); h.id = 'hoja-recorrido'; h.className = 'hoja-impresion'; document.body.appendChild(h); }
   h.innerHTML = `<h1>${esc(rc.titulo)}</h1>${rc.resumen ? `<p>${esc(rc.resumen)}</p>` : ''}
-    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · fechas según jw.org · biblical-earth</p>
+    <p class="hoja-meta">${rc.paradas.length} paradas · ${esc(fechaCorta({ desde: Math.floor(a), hasta: Math.floor(z) }))} · fechas según jw.org · biblical-atlas</p>
     ${escala}
     <ol class="hoja-paradas">${rc.paradas.map((p) => { const s = BE.parseSel(p.sel); return `<li><b>${esc(s ? BE.nombreSel(s) : p.sel)}</b> <span class="hoja-fecha">${esc(fechaParada(p))}</span><br>${esc(p.texto)}${(p.pasajes || []).length ? `<br><i>${esc(p.pasajes.join('; '))}</i>` : ''}${p.no_sabemos ? `<br>No sabemos: ${esc(p.no_sabemos)}` : ''}</li>`; }).join('')}</ol>
     ${qs.length ? `<h2>Preguntas</h2><ol class="hoja-preguntas">${qs.map(({ p }) => `<li>${esc(p.pregunta.texto)} <span class="hoja-opciones">(${esc(p.pregunta.opciones.join(' · '))})</span></li>`).join('')}</ol>
@@ -180,7 +180,7 @@ function hojaImpresion(id) {
 // ---------------------------------------------------------------------------
 // Presentación (A-11), reunión (D-02), letra grande (D-11)
 // ---------------------------------------------------------------------------
-const PREF = 'biblical-earth:pref:';
+const PREF = 'biblical-atlas:pref:';
 const raiz = document.documentElement;
 function pref(nombre, valor) {
   if (valor === undefined) { try { return localStorage.getItem(PREF + nombre) === '1'; } catch { return false; } }

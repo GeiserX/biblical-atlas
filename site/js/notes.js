@@ -1,4 +1,4 @@
-/* biblical-earth · private notes (proposal 14 of the ideas on the graph and relations). A pencil on every card and on
+/* biblical-atlas · private notes (proposal 14 of the ideas on the graph and relations). A pencil on every card and on
    every chapter of the reading opens a small editor for a note about that entity or chapter; «Mis notas» in the Estudio
    menu lists them, opens the entity of each, exports them to a JSON file and imports them back.
    Notes live only in this browser's localStorage. They never go into the address bar, the shared link, a request or
@@ -13,8 +13,8 @@
 const BE = window.BE;
 const { esc } = BE;
 
-const STORAGE_KEY = 'biblical-earth:notes';
-const UNREADABLE_PREFIX = 'biblical-earth:notes:unreadable';
+const STORAGE_KEY = 'biblical-atlas:notes';
+const UNREADABLE_PREFIX = 'biblical-atlas:notes:unreadable';
 const FORMAT = 'biblical-atlas-notes';
 const FORMATS = [FORMAT, 'biblical-earth-notes'];   // nombre-fijo: files and stores written before keep importing
 const VERSION = 1;
@@ -104,9 +104,9 @@ function readEntries(entries) {
     (plus the notes it could read, when they come from a newer version of the site). */
 function validate(obj) {
   if (!obj || typeof obj !== 'object' || !FORMATS.includes(obj.format) || typeof obj.notes !== 'object' || !obj.notes || Array.isArray(obj.notes)) {
-    return { error: 'Este fichero no son notas de biblical-earth.' };
+    return { error: 'Este fichero no son notas de biblical-atlas.' };
   }
-  if (!Number.isInteger(obj.version) || obj.version < 1) return { error: 'Este fichero no son notas de biblical-earth.' };
+  if (!Number.isInteger(obj.version) || obj.version < 1) return { error: 'Este fichero no son notas de biblical-atlas.' };
   // Older versions would be migrated here, one step at a time, before reading them. Version 1 is the first.
   const r = readEntries(obj.notes);
   if (obj.version > VERSION) return { ...r, error: 'Estas notas vienen de una versión más nueva del sitio: recarga la página y vuelve a probar.', newer: true };
@@ -566,7 +566,7 @@ function download(name, text) {
 function exportNotes() {
   const notes = all();
   const day = new Date().toISOString().slice(0, 10);
-  const name = `biblical-earth-notas-${day}.json`;
+  const name = `biblical-atlas-notas-${day}.json`;
   if (blockedRaw) {
     // Notes this version cannot write (a newer version, or unreadable with no room for a copy) go out exactly as stored.
     download(name, blockedRaw);
@@ -583,7 +583,7 @@ function downloadRaw(key) {
   let raw = null;
   try { raw = localStorage.getItem(key); } catch { raw = null; }
   if (raw == null) return;
-  const name = `biblical-earth-notas-sin-leer-${(key.slice(UNREADABLE_PREFIX.length + 1) || 'copia').slice(0, 10)}.json`;
+  const name = `biblical-atlas-notas-sin-leer-${(key.slice(UNREADABLE_PREFIX.length + 1) || 'copia').slice(0, 10)}.json`;
   download(name, raw);
   IMP.message = `Copia descargada al fichero ${name}.`;
   paintList();

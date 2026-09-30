@@ -10,7 +10,7 @@ Cada propuesta tiene tres archivos SVG escritos a mano:
 - `horizontal.svg`: la marca con el nombre al lado, en las mismas proporciones que la cabecera: marca de 28 px, texto de 22 px y 10 px de separación.
 - `monocromo.svg`: lo mismo a una sola tinta. Los huecos son transparentes, así que funciona sobre cualquier fondo.
 
-El nombre está convertido en trazos de EB Garamond 600, la misma letra de la cabecera, así que no depende de ninguna fuente instalada. Dice «biblical-earth» porque el nombre del sitio aún no está decidido. Si al final es «Tierra Bíblica» u otro, cambia el texto y la marca sigue igual. Los candidatos están en las [preguntas abiertas](../ideas/README.md#preguntas-abiertas).
+El nombre está convertido en trazos de EB Garamond 600, la misma letra de la cabecera, así que no depende de ninguna fuente instalada. Dice «biblical-atlas» porque el nombre del sitio aún no está decidido. Si al final es «Tierra Bíblica» u otro, cambia el texto y la marca sigue igual. Los candidatos están en las [preguntas abiertas](../ideas/README.md#preguntas-abiertas).
 
 ## Las seis de un vistazo
 

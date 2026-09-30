@@ -83,7 +83,7 @@ def _texto(v):
 
 
 def cabecera(tipo):
-    return f"# biblical-earth: un fichero por {SINGULAR[tipo]}. Esquema en docs/investigacion/README.md.\n"
+    return f"# biblical-atlas: un fichero por {SINGULAR[tipo]}. Esquema en docs/investigacion/README.md.\n"
 
 
 # ---------------------------------------------------------------- reescribir una ficha sin tocar lo que no cambia
@@ -247,7 +247,7 @@ def _escalar(v):
 
 
 def texto_cobertura(libro, obj):
-    lineas = ["# biblical-earth: cobertura de un libro. Formato en data/coverage/README.md.", f"book: {libro}"]
+    lineas = ["# biblical-atlas: cobertura de un libro. Formato en data/coverage/README.md.", f"book: {libro}"]
     if obj.get("note"):
         lineas.append(f"note: {_escalar(obj['note'])}")
     lineas.append("chapters:")
@@ -793,7 +793,7 @@ class Escritor:
                         continue
                 actual[fid] = f
             if actual != (leer_yaml(ruta) or {}):
-                salida.append((ruta, f"# biblical-earth: fuentes de la cobertura de {libro}. Esquema en "
+                salida.append((ruta, f"# biblical-atlas: fuentes de la cobertura de {libro}. Esquema en "
                                      f"docs/investigacion/README.md.\n" + volcar(actual), False))
         solo = self.affected()
         for libro, caps in cob.items():

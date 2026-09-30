@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «pasaje»: un capítulo de la Biblia («pasaje:hch-16»): ficha, búsqueda («Hch 16»), lo que cuenta
+/* biblical-atlas · tipo «pasaje»: un capítulo de la Biblia («pasaje:hch-16»): ficha, búsqueda («Hch 16»), lo que cuenta
    en el mapa y la línea, «aparece en» (todo lo que cita el capítulo) y los vídeos de jw.org que lo citan.
    Dueño durante el reparto: app-estudio. */
 'use strict';
