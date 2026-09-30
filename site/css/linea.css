@@ -4,6 +4,8 @@
 /* ---------- Línea de tiempo ---------- */
 .linea { grid-template-columns: 150px 1fr; --carril-w: 150px; }
 .app.linea-grande, .app.con-sincronia { --timeline-h: min(62vh, 600px); }
+/* La línea abre alta en la pantalla ancha; con el grafo o la conexión encima del mapa les deja su sitio (alto de siempre). */
+.app.linea-grande:not(.con-sincronia):has(.mapa > :is(.vista-grafo, .vista-conexion):not([hidden])) { --timeline-h: inherit; }
 .linea-barra { gap: 12px; }
 .be-play__main, .be-play__btn { border: 0; cursor: pointer; }
 .be-play__btn { background: none; }
