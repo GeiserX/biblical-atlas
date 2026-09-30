@@ -495,6 +495,14 @@ test('1440: the panel opens tall, the splitter shrinks it and the size survives 
   await p.waitForFunction(() => window.BE?.lineaMarcas && document.querySelector('#linea-filas .m'), null, { timeout: 25000 });
   await frames(p);
   const h0 = await p.evaluate(() => document.querySelector('#linea').offsetHeight);
+  // The map is framed once, with the tall strip already in place: it does not jump when its style and marks load.
+  const centre = () => p.evaluate(() => { const c = window.__be.map.getCenter(); return [c.lng, c.lat, window.__be.map.loaded()]; });
+  const c0 = await centre();
+  await p.waitForFunction(() => window.__be.map.loaded() && document.querySelectorAll('.maplibregl-marker').length > 0, null, { timeout: 30000 });
+  await new Promise((r) => setTimeout(r, 1500));
+  const c1 = await centre();
+  note(`1440 map on load: centre ${c0.slice(0, 2).map((x) => x.toFixed(3))} (loaded ${c0[2]}) → ${c1.slice(0, 2).map((x) => x.toFixed(3))}`);
+  assert.ok(Math.abs(c0[0] - c1[0]) < 1e-6 && Math.abs(c0[1] - c1[1]) < 1e-6, 'the map jumped after loading');
   const sep = await p.evaluate(() => { const r = document.querySelector('#sep-linea').getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; });
   await p.mouse.move(sep[0], sep[1]); await p.mouse.down(); await p.mouse.move(sep[0], sep[1] + 200, { steps: 8 }); await p.mouse.up();
   await frames(p);

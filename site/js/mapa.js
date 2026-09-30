@@ -1742,7 +1742,14 @@ function iniciar() {
   });
 }
 
-BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
+/** Primer encuadre, al arrancar, con la dirección ya leída y el alto de la línea ya puesto: si Pablo queda fuera, el mapa
+    se centra en él antes de pintar nada, en vez de saltar al cargar el estilo (la línea alta deja menos mapa). */
+function encuadreDeInicio() {
+  if (!map) return;
+  map.resize();
+  mostrarPablo();
+}
+BE.mapa = { resaltar, encuadrar: encuadrarLugares, volverAlInicio, iniciar, encuadreDeInicio, enfocarCandidato, get candidatoFoco() { return candFoco; }, get gl() { return map; } };
 Object.assign(BE, {
   ponerMapa, pintarMapa, pintarEtiquetas, seguirPablo, cartaVisible, cartaEnMapa, estadoCarta, colorViaje, colorEscritor, colorPersona,
   nombreHoy, nombreEn, candidatosDe, candidatosVisibles, CANDIDATO: CAND, ventanaDeCarta,

@@ -616,6 +616,7 @@ async function iniciar() {
   for (const f of inicios) f();
   if (matchMedia('(max-width: 760px)').matches) E.vista = [E.t - 5, E.t + 7];
   aplicarHash(true);
+  BE.mapa.encuadreDeInicio?.();
   setTimeout(() => { for (const st of Object.values(marco)) st.arranque = false; }, 0);
   window.__be = {
     E, P: BE.P, D, BE, dondeEsta: BE.dondeEsta, donde: BE.donde, ventana: BE.ventana, ventanaCarta: BE.ventanaCarta, ventanaEvento: BE.ventanaEvento,
