@@ -577,7 +577,7 @@ function iniciarMarcos() {
     puede cambiarlas antes), no hay nada que repintar. */
 function ponerPreferencia(nombre, on) {
   document.documentElement.classList.toggle(`be-${nombre}`, on);
-  try { localStorage.setItem(`biblical-earth:pref:${nombre}`, on ? '1' : '0'); } catch { /* sin almacenamiento */ }
+  try { localStorage.setItem(`biblical-atlas:pref:${nombre}`, on ? '1' : '0'); } catch { /* sin almacenamiento */ }
   if (BE.D) { sucio.etiquetas = sucio.panel = sucio.linea = sucio.mapa = true; programar(); }
 }
 /** Modo reunión (D-02): solo el botón de la barra lo pone y lo quita (be-68c.2). recorridos.js lee la preferencia al arrancar. */
@@ -590,13 +590,7 @@ function iniciarReunion() {
   };
   b.addEventListener('click', () => {
     const on = !raiz.classList.contains('be-reunion');
-<<<<<<< HEAD
     ponerPreferencia('reunion', on);
-=======
-    raiz.classList.toggle('be-reunion', on);
-    try { localStorage.setItem('biblical-atlas:pref:reunion', on ? '1' : '0'); } catch { /* sin almacenamiento */ }
-    sucio.etiquetas = sucio.panel = sucio.linea = true; programar();
->>>>>>> origin/main
     avisar(on ? 'Modo reunión: fondo oscuro y sin animaciones.' : 'Fondo claro de nuevo.', 2000);
   });
   new MutationObserver(pintarBoton).observe(raiz, { attributes: true, attributeFilter: ['class'] });

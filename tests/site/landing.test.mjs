@@ -373,8 +373,8 @@ test('Back before the data: the landing comes back without «Abriendo el mapa…
 test('«Seguir donde lo dejaste» holds the last view, applies it exactly, and «Olvidar» forgets it', async () => {
   const page = await openPage(DESKTOP, { hash: 'sel=lugar:corinto&t=50.5000' });
   await page.evaluate(() => { window.BE.seleccionar({ tipo: 'persona', id: 'pablo' }, { mover: false, encuadrar: false }); });
-  await page.waitForFunction(() => /sel=persona:pablo/.test(localStorage.getItem('biblical-earth:ultima') || ''));
-  const guardado = JSON.parse(await page.evaluate(() => localStorage.getItem('biblical-earth:ultima')));
+  await page.waitForFunction(() => /sel=persona:pablo/.test(localStorage.getItem('biblical-atlas:ultima') || ''));
+  const guardado = JSON.parse(await page.evaluate(() => localStorage.getItem('biblical-atlas:ultima')));
   assert.match(guardado.hash, /sel=persona:pablo/);
   assert.match(guardado.texto, /Pablo/);
   const back = await page.context().newPage();
@@ -391,7 +391,7 @@ test('«Seguir donde lo dejaste» holds the last view, applies it exactly, and �
   await back.goBack();
   await settle(back);
   await back.locator('[data-p="olvidar"]').click();
-  assert.equal(await back.evaluate(() => localStorage.getItem('biblical-earth:ultima')), null);
+  assert.equal(await back.evaluate(() => localStorage.getItem('biblical-atlas:ultima')), null);
   assert.equal(await back.locator('#portada-seguir').isVisible(), false);
 });
 
@@ -399,7 +399,7 @@ test('«Aa» and the moon share their keys with the site, both ways', async () =
   const page = await openPage();
   await page.locator('#portada-letra').click();
   await page.locator('#portada-reunion').click();
-  const k = await page.evaluate(() => [localStorage.getItem('biblical-earth:pref:letra-grande'), localStorage.getItem('biblical-earth:pref:reunion'), document.documentElement.className]);
+  const k = await page.evaluate(() => [localStorage.getItem('biblical-atlas:pref:letra-grande'), localStorage.getItem('biblical-atlas:pref:reunion'), document.documentElement.className]);
   assert.deepEqual(k.slice(0, 2), ['1', '1']);
   assert.match(k[2], /be-letra-grande/); assert.match(k[2], /be-reunion/);
   assert.equal(await page.locator('#portada-letra').getAttribute('aria-pressed'), 'true');
@@ -411,7 +411,7 @@ test('«Aa» and the moon share their keys with the site, both ways', async () =
   await settle(page);
   assert.equal(await page.locator('#portada-reunion').getAttribute('aria-pressed'), 'false');
   // The first frame of the next visit already has them.
-  const next = await openPage(DESKTOP, { storage: { 'biblical-earth:pref:letra-grande': '1' }, wait: false });
+  const next = await openPage(DESKTOP, { storage: { 'biblical-atlas:pref:letra-grande': '1' }, wait: false });
   assert.match(await next.evaluate(() => document.documentElement.className), /be-letra-grande/);
 });
 

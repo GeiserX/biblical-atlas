@@ -3,11 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<<<<<<< HEAD
-<title>biblical-earth · ¿Dónde y cuándo pasó lo que estás leyendo?</title>
-=======
-<title>biblical-atlas · Cada relato de la Biblia, en su lugar y en su tiempo</title>
->>>>>>> origin/main
+<title>biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente en wol.jw.org.">
@@ -38,23 +34,18 @@
 <script src="js/fundir-claves.js"></script>
 <script src="js/migrar-claves.js"></script>
 <script>
-<<<<<<< HEAD
   // Antes del primer pintado: el modo reunión, la letra grande y si sale la portada. Sin esto la página sale clara un
   // instante y luego se oscurece, o enseña el mapa vacío antes de la portada.
   (() => {
     const r = document.documentElement;
     try {
-      if (localStorage.getItem('biblical-earth:pref:reunion') === '1') r.classList.add('be-reunion');
-      if (localStorage.getItem('biblical-earth:pref:letra-grande') === '1') r.classList.add('be-letra-grande');
-      if (localStorage.getItem('biblical-earth:ultima')) r.classList.add('be-vuelve');
+      if (localStorage.getItem('biblical-atlas:pref:reunion') === '1') r.classList.add('be-reunion');
+      if (localStorage.getItem('biblical-atlas:pref:letra-grande') === '1') r.classList.add('be-letra-grande');
+      if (localStorage.getItem('biblical-atlas:ultima')) r.classList.add('be-vuelve');
     } catch { /* sin almacenamiento */ }
     // Sin dirección, o con #portada=1, el sitio abre en la portada (portada.js). Con dirección, en esa vista.
     if (!location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash)) r.classList.add('be-con-portada');
   })();
-=======
-  // Modo reunión antes del primer pintado: sin esto la página sale clara un instante y luego se oscurece.
-  try { if (localStorage.getItem('biblical-atlas:pref:reunion') === '1') document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }
->>>>>>> origin/main
 </script>
 <script>
   // Desde file:// el navegador no deja crear el worker de MapLibre a partir de un blob; lo cargamos con una URL data:.
@@ -199,7 +190,7 @@
                 <path class="portada-logo__tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/>
                 <circle class="portada-logo__oliva" cx="20.5" cy="47" r="6"/><circle class="portada-logo__oliva" cx="31" cy="31.5" r="6"/><circle class="portada-logo__oliva" cx="47.5" cy="13.5" r="6"/>
               </svg>
-              <span class="portada-logo__nombre">biblical-earth</span>
+              <span class="portada-logo__nombre">biblical-atlas</span>
             </span>
             <span class="be-spacer"></span>
             <a class="portada-abrir" href="#t=50.3000" data-p="abrir">Abrir el mapa (c. 50 e.c.) <span aria-hidden="true">→</span></a>
@@ -322,7 +313,7 @@
       <footer class="portada-pie">
         <div class="portada-wrap">
           <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a href="acerca.html#gracias">Créditos</a></p>
-          <p><span>En español</span> · <span>Sitio estático, sin cuentas</span> · <a href="acerca.html#licencia">Código libre, GPL-3.0</a> · <a href="calendario.html">El calendario de la Biblia</a> · <a href="acerca.html">Qué es biblical-earth</a><span id="portada-generado"></span></p>
+          <p><span>En español</span> · <span>Sitio estático, sin cuentas</span> · <a href="acerca.html#licencia">Código libre, GPL-3.0</a> · <a href="calendario.html">El calendario de la Biblia</a> · <a href="acerca.html">Qué es biblical-atlas</a><span id="portada-generado"></span></p>
         </div>
       </footer>
     </div>
