@@ -187,10 +187,16 @@ function pintarLista() {
   }
   lista.innerHTML = html;
   lista.hidden = false;
-  input.setAttribute('aria-expanded', 'true');
+  // Sin opciones la caja no ofrece lista: el aviso (y sus botones de «¿Querías decir…?») se ve igual, pero no es un
+  // listbox, y la caja no apunta a ninguna opción.
   const n = lista.querySelectorAll('[role="option"]').length;
-  input.setAttribute('aria-activedescendant', n ? (activa === filas.length ? 'portada-op-todo' : `portada-op-${activa}`) : '');
-  const texto = filas.length ? `${todas || filas.length} ${(todas || filas.length) === 1 ? 'sugerencia' : 'sugerencias'}` : (BE.D ? `No encontramos «${q.trim()}».` : 'Cargando los nombres…');
+  lista.setAttribute('role', n ? 'listbox' : 'none');
+  input.setAttribute('aria-expanded', String(n > 0));
+  if (n) input.setAttribute('aria-activedescendant', activa === filas.length ? 'portada-op-todo' : `portada-op-${activa}`);
+  else input.removeAttribute('aria-activedescendant');
+  // Lo que se anuncia es lo que se ofrece: en el teléfono, sin la fila «Ver los…», «4 de 14 sugerencias».
+  const total = todas || filas.length, sinTodo = filas.length < total && n === filas.length;
+  const texto = filas.length ? `${sinTodo ? `${filas.length} de ${total}` : total} ${total === 1 ? 'sugerencia' : 'sugerencias'}` : (BE.D ? `No encontramos «${q.trim()}».` : 'Cargando los nombres…');
   if (texto !== estado.textContent) estado.textContent = texto;
 }
 function cerrarLista() {
@@ -225,12 +231,15 @@ input.addEventListener('keydown', (e) => {
     else if (input.value) { e.preventDefault(); input.value = ''; }
   }
 });
-input.addEventListener('blur', () => setTimeout(() => { if (!lista.contains(document.activeElement)) cerrarLista(); }, 150));
+input.addEventListener('blur', () => setTimeout(() => { if (document.activeElement !== input && !lista.contains(document.activeElement)) cerrarLista(); }, 150));
 let tragarClic = false;
 document.addEventListener('click', (e) => { if (tragarClic) { tragarClic = false; e.preventDefault(); e.stopPropagation(); } }, true);
+const probarSugerencia = (s) => { input.value = s.dataset.sugerencia; actualizar(); input.focus(); };
+// «¿Querías decir…?» también con el teclado (Tab hasta el botón e Intro).
+lista.addEventListener('click', (e) => { const s = e.target.closest('[data-sugerencia]'); if (s && !e.detail) probarSugerencia(s); });
 lista.addEventListener('pointerdown', (e) => {
   const s = e.target.closest('[data-sugerencia]');
-  if (s) { e.preventDefault(); input.value = s.dataset.sugerencia; actualizar(); input.focus(); return; }
+  if (s) { e.preventDefault(); probarSugerencia(s); return; }
   const o = e.target.closest('[data-i], [data-todo]');
   if (!o) return;
   e.preventDefault();

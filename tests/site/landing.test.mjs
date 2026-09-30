@@ -192,6 +192,28 @@ test('the keyboard: arrows move, Escape closes the list and then clears the box,
   assert.match(await page.locator('#portada-lista').textContent(), /No encontramos «zzzz»/);
 });
 
+test('the list is a real listbox: the active option exists, no options is no listbox, and the phone counts what it shows', async () => {
+  const page = await openPage();
+  await type(page, 'Pablo');
+  await page.keyboard.press('ArrowDown');
+  const id = await page.locator('#portada-q').getAttribute('aria-activedescendant');
+  assert.equal(await page.locator(`#${id}[role="option"][aria-selected="true"]`).count(), 1, id);
+  await type(page, 'zzzz');
+  assert.equal(await page.locator('#portada-q').getAttribute('aria-activedescendant'), null);
+  assert.equal(await page.locator('#portada-q').getAttribute('aria-expanded'), 'false');
+  assert.equal(await page.locator('#portada-lista').getAttribute('role'), 'none');
+  // Leaving the box and coming back before the blur timer ends keeps the list open.
+  await type(page, 'Corin');
+  await page.keyboard.press('Tab'); await page.keyboard.press('Shift+Tab'); await page.keyboard.type('t');
+  await page.waitForTimeout(300);
+  assert.ok(await page.locator('#portada-lista').isVisible());
+  assert.equal(await page.locator('#portada-q').getAttribute('aria-expanded'), 'true');
+  const phone = await openPage(PHONE);
+  await type(phone, 'Corin');
+  const n = await phone.locator('#portada-lista [role="option"]').count();
+  assert.match(await phone.locator('#portada-estado').textContent(), new RegExp(`^${n} de \\d+ sugerencias$`));
+});
+
 test('each example chip gives what typing it and pressing Enter gives', async () => {
   for (const [p, text] of [['ej-pedro', 'Pedro'], ['ej-hechos-16', 'Hechos 16'], ['ej-607', '607 a.e.c.']]) {
     const a = await openPage();
