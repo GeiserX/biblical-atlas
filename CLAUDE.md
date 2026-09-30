@@ -1,4 +1,4 @@
-# biblical-earth: instrucciones para agentes
+# biblical-atlas: instrucciones para agentes
 
 Atlas bíblico en español: mapa y línea de tiempo. Sitio estático en `site/`, datos en YAML en `data/`, publicado en GitHub Pages.
 

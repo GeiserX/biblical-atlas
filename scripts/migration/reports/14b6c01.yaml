@@ -1,5 +1,5 @@
-# biblical-earth: informe de la migración al esquema en inglés, desde 14b6c01.
-format: biblical-earth/migration-report/1
+# biblical-atlas: informe de la migración al esquema en inglés, desde 14b6c01.
+format: biblical-atlas/migration-report/1
 from_commit: 14b6c01
 counts:
   checked_on en calendario.meses[].fiestas[]: 11

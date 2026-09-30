@@ -77,6 +77,14 @@ class VideoScripts(unittest.TestCase):
         self.assertEqual(libro["chapters"][16][0]["matched_by"], ["title", "subtitles"])
         self.assertFalse(OLD_KEYS & (keys_of(lugar, set()) | keys_of(libro, set())))
 
+    def test_the_previous_cache_file_is_renamed_on_first_use(self):
+        with tempfile.TemporaryDirectory() as t:
+            carpeta = Path(t)
+            (carpeta / ".biblical-earth-videos-cache.json").write_text('{"pub-x": {"ok": false}}', encoding="utf-8")  # nombre-fijo: la caché de antes
+            r = index.Resolutor(carpeta, sin_red=True)
+            self.assertEqual(r.cache, {"pub-x": {"ok": False}})
+            self.assertEqual(sorted(p.name for p in carpeta.iterdir()), [index.CACHE])
+
     def test_no_old_path_or_flag_left(self):
         viejos = [*MAP["directories"], *MAP["files"], *MAP["scripts"]]
         viejos = [v for v in viejos if MAP["directories"].get(v, MAP["files"].get(v, MAP["scripts"].get(v))) != v]

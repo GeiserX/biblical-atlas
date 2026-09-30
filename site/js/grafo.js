@@ -1,4 +1,4 @@
-/* biblical-earth · grafo de personas (pantalla 07, #vista-grafo) y conexión entre dos (pantalla 10, #vista-conexion).
+/* biblical-atlas · grafo de personas (pantalla 07, #vista-grafo) y conexión entre dos (pantalla 10, #vista-conexion).
    El grafo pone una persona en el centro y sus conexiones alrededor, por sectores (G-02), según la fecha del cursor
    (G-03), con migas de los saltos (G-04), verbo, fecha y referencia en cada arista (G-06), grupos plegados (G-07),
    líneas según lo firme que es la relación (G-14), vista de lista (G-16) y el mapa resaltando lo que se toca (G-17).

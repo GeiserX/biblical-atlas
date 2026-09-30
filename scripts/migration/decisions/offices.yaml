@@ -1,4 +1,4 @@
-# biblical-earth: decisiones O1 a O6 de docs/investigacion/modelo.md (cargos e identidades). Las aplica
+# biblical-atlas: decisiones O1 a O6 de docs/investigacion/modelo.md (cargos e identidades). Las aplica
 # scripts/migration/migrate.py después de la migración mecánica, sobre los datos ya en inglés.
 #
 # O1  El cargo de cada una de las 57 sucesiones, con el reino dicho en la razón. Una corrige su razón: Jehoiaquim.
@@ -12,7 +12,7 @@
 # O6  Los cargos de Samuel, Melquisedec, Elí, Esdras y Débora, uno por relación. Quedan fuera «copista» (Esdras), que
 #     no es un cargo del vocabulario, y «juez» para Débora: el texto dice que juzgaba, Perspicacia «Jueces» no la
 #     cuenta entre los doce y el vocabulario no tiene la forma femenina.
-format: biblical-earth/migration-decisions/1
+format: biblical-atlas/migration-decisions/1
 decision: O1-O6
 checked_on: '2026-09-29'
 entries:

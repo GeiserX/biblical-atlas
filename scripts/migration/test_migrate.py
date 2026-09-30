@@ -20,7 +20,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import migrate  # noqa: E402
 
-BOOKS = """# biblical-earth: los 66 libros de la Biblia (aquí, dos).
+BOOKS = """# biblical-atlas: los 66 libros de la Biblia (aquí, dos).
 libros:
 - slug: rut
   num: 8
@@ -35,7 +35,7 @@ libros:
   formas: [hch, hechos]
   capitulos: 28
 """
-CALENDAR = """# biblical-earth: los meses del calendario hebreo. Esquema en docs/investigacion/README.md.
+CALENDAR = """# biblical-atlas: los meses del calendario hebreo. Esquema en docs/investigacion/README.md.
 #
 # Un comentario que no se toca: fecha.detalle.mes.
 meses:
@@ -58,7 +58,7 @@ meses:
   razon: Prueba de mes.
   consultado: '2026-09-28'
 """
-SOURCES = """# biblical-earth: fuentes de prueba.
+SOURCES = """# biblical-atlas: fuentes de prueba.
 f-comun:
   titulo: Común
   obra: Prueba
@@ -77,7 +77,7 @@ hch-16:
 
 
 def person_file(pid, relaciones="", dia="2026-09-20", extra=""):
-    return (f"# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.\n"
+    return (f"# biblical-atlas: un fichero por persona. Esquema en docs/investigacion/README.md.\n"
             f"id: {pid}\nnombre: {pid.capitalize()}\nnombres:\n- nombre: {pid.capitalize()}\n{extra}"
             f"resumen: Prueba.\nrazon: Prueba.\nfuentes:\n- f-comun\nconsultado: '{dia}'\nestado: verificado\n"
             + (f"relaciones:\n{relaciones}" if relaciones else ""))
@@ -114,7 +114,7 @@ FILES = {
     # comillas y un comentario dentro de la ficha, que tienen que sobrevivir
     "personas/david.yaml": person_file("david", "# un comentario entre relaciones\n" + relation_text("pariente", "jese", "'padre'")
                                    + relation_text("vivio_en", "belen", clave="lugar"), extra="no_confundir_con: []\n"),
-    "lugares/belen.yaml": """# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+    "lugares/belen.yaml": """# biblical-atlas: un fichero por lugar. Esquema en docs/investigacion/README.md.
 id: belen
 nombre: Belén
 tipo: ciudad
@@ -134,7 +134,7 @@ razon: Prueba.
 consultado: '2026-09-15'
 estado: verificado
 """,
-    "viajes/primer-viaje.yaml": """# biblical-earth: un fichero por viaje. Esquema en docs/investigacion/README.md.
+    "viajes/primer-viaje.yaml": """# biblical-atlas: un fichero por viaje. Esquema en docs/investigacion/README.md.
 id: primer-viaje
 nombre: Primer viaje
 persona: pablo
@@ -151,7 +151,7 @@ paradas:
   fuentes: [f-comun]
   estado: pendiente
 """,
-    "eventos/muere-isaac.yaml": """# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+    "eventos/muere-isaac.yaml": """# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muere-isaac
 titulo: Muere Isaac
 personas:
@@ -163,7 +163,7 @@ razon: Prueba.
 consultado: '2026-09-29'
 estado: verificado
 """,
-    "cobertura/hechos.yaml": """# biblical-earth: cobertura de un libro. Formato en data/cobertura/README.md.
+    "cobertura/hechos.yaml": """# biblical-atlas: cobertura de un libro. Formato en data/cobertura/README.md.
 libro: hechos
 capitulos:
   16:
@@ -176,7 +176,7 @@ capitulos:
     tramos:
     - {v: 5, tipo: narracion, entidades: [relacion:lucas/acompana/pablo], menciona: [lugar:belen]}
 """,
-    "recorridos/pedro.yaml": """# biblical-earth: un fichero por recorrido.
+    "recorridos/pedro.yaml": """# biblical-atlas: un fichero por recorrido.
 id: pedro
 titulo: Pedro
 paradas:
@@ -185,7 +185,7 @@ paradas:
   texto: Prueba.
   pasajes: [Jn 1:35-42]
 """,
-    "hallazgos/cilindro.yaml": """# biblical-earth: un fichero por hallazgo.
+    "hallazgos/cilindro.yaml": """# biblical-atlas: un fichero por hallazgo.
 id: cilindro
 nombre: Cilindro
 lugar_hallazgo: belen
@@ -280,7 +280,7 @@ class Migration(Base):
     def test_comments_quotes_and_order(self):
         self.migrate_data()
         cal = self.read_text("calendar.yaml")
-        self.assertTrue(cal.startswith("# biblical-earth: los meses del calendario hebreo."))
+        self.assertTrue(cal.startswith("# biblical-atlas: los meses del calendario hebreo."))
         self.assertIn("# Un comentario que no se toca: fecha.detalle.mes.", cal)
         david = self.read_text("people/david.yaml")
         self.assertIn("# un comentario entre relaciones\n", david)
@@ -413,7 +413,7 @@ class BookBranch(Base):
 class Proposal(Base):
     def test_translates_the_file_data_it_carries(self):
         self.migrate_data()
-        p = {"formato": "biblical-earth/propuesta-cobertura/1", "libro": "hechos", "capitulos": [16], "agente": "x",
+        p = {"formato": "biblical-atlas/propuesta-cobertura/1", "libro": "hechos", "capitulos": [16], "agente": "x",
              "leido": "2026-09-29",
              "cobertura": {"16": {"estado": "completo", "revisado": "2026-09-29", "tramos": [
                  {"v": "1-3", "tipo": "narracion",
@@ -452,13 +452,23 @@ class Proposal(Base):
 
 
 class Decisions(Base):
-    def decide(self, entradas, nombre="K1.yaml"):
+    def decide(self, entradas, nombre="K1.yaml", formato="biblical-atlas/migration-decisions/1"):
         d = Path(self.tmp.name) / "decisiones"
         d.mkdir(exist_ok=True)
-        (d / nombre).write_text(yaml.safe_dump({"format": "biblical-earth/migration-decisions/1", "decision": "K1",
+        (d / nombre).write_text(yaml.safe_dump({"format": formato, "decision": "K1",
                                                 "checked_on": "2026-09-29", "entries": entradas},
                                                allow_unicode=True, sort_keys=False), encoding="utf-8")
         return run_migrate("--data", str(self.data), "--decisions", str(d))
+
+    def test_decisions_written_with_the_previous_format_apply(self):
+        antes = "biblical-earth/migration-decisions/1"  # nombre-fijo: decisiones escritas antes
+        code, out = self.decide([{"file": "people/sesbazar", "relation": "sesbazar/same_as/zorobabel",
+                                  "set": {"certainty": "possible"}, "sources": ["hch-16"], "reason": "Prueba."}],
+                                formato=antes)
+        self.assertEqual(code, 0, out)
+        self.assertEqual(self.yaml("people/sesbazar.yaml")["relations"][0]["certainty"], "possible")
+        code, out = self.decide([], nombre="K2.yaml", formato="otra-cosa/migration-decisions/1")
+        self.assertNotEqual(code, 0, out)
 
     def test_set_add_remove_and_redirect(self):
         code, out = self.decide([
@@ -590,7 +600,7 @@ class WholeCheckout(Base):
         propias = root / "decisiones-del-script"
         propias.mkdir()
         (propias / "O2.yaml").write_text(yaml.safe_dump(
-            {"format": "biblical-earth/migration-decisions/1", "decision": "O2", "checked_on": "2026-09-29",
+            {"format": "biblical-atlas/migration-decisions/1", "decision": "O2", "checked_on": "2026-09-29",
              "entries": [{"file": "people/sesbazar", "relation": "sesbazar/same_as/zorobabel",
                           "set": {"certainty": "possible"}, "sources": ["hch-16"], "reason": "Prueba del respaldo."}]},
             allow_unicode=True, sort_keys=False), encoding="utf-8")

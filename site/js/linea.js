@@ -1,4 +1,4 @@
-/* biblical-earth · línea de tiempo (SVG propio): de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen
+/* biblical-atlas · línea de tiempo (SVG propio): de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen
    de los datos (eras, imperios, reyes, personas, cartas, sucesos, meses hebreos, fechas seculares), densidad, minimapa,
    regla, bucle, marcadores, pausa en los sucesos, escribir la fecha y gestos (rueda, arrastre, pinza).
    Dueño durante el reparto: app-tiempo. */
@@ -1141,7 +1141,7 @@ function pintarBucle(partes) {
     partes.push(`<path d="M${x + lado * 6} ${EJE - 8}h${-lado * 6}v${altoPista - EJE + 8}" class="bucle-marca"><title>Bucle de ${esc(textoFecha(a))} a ${esc(textoFecha(b))}</title></path>`);
   }
 }
-const CLAVE_MARCAS = 'biblical-earth:marcadores';
+const CLAVE_MARCAS = 'biblical-atlas:marcadores';
 function marcadores() { try { return JSON.parse(localStorage.getItem(CLAVE_MARCAS) || '[]'); } catch { return []; } }
 function guardarMarcadores(ms) { try { localStorage.setItem(CLAVE_MARCAS, JSON.stringify(ms)); } catch { BE.avisar('Este navegador no deja guardar marcadores.'); } }
 function nuevoMarcador() {

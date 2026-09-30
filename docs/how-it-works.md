@@ -20,7 +20,7 @@ flowchart LR
     B[scripts/build.py]
     J[site/data.json y data.js]
     S[site/stats.json]
-    Q[dist/biblical-earth.sqlite]
+    Q[dist/biblical-atlas.sqlite]
     R[docs/investigacion/registro/]
     A[La aplicación: site/]
     D[Esta documentación: site/docs/]

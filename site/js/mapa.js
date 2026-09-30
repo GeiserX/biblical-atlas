@@ -1,4 +1,4 @@
-/* biblical-earth · mapa: MapLibre, relieve antiguo y actual en cuatro extensiones (mundo, Mediterráneo, Israel,
+/* biblical-atlas · mapa: MapLibre, relieve antiguo y actual en cuatro extensiones (mundo, Mediterráneo, Israel,
    Jerusalén), cortina, rutas de todos los viajes, arcos de cartas con un color por escritor, lugares inciertos como zonas
    y candidatos, hallazgos, marcas de lugar con nombre por época, filtradas por fecha y agrupadas, marcador de Pablo,
    etiquetas sin solapes, capas y filtros guardados en la dirección, nombres del encuadre, mapa de situación, leyenda y

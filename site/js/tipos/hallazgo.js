@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «hallazgo» (F-07): qué es, dónde se encontró, qué fecha tiene el objeto, con qué conecta y lo que
+/* biblical-atlas · tipo «hallazgo» (F-07): qué es, dónde se encontró, qué fecha tiene el objeto, con qué conecta y lo que
    no afirmamos (F-08). `identificacion: incierta` pone la insignia; `no_afirmamos` (lista de frases, como en personas)
    va a «Lo que el texto no dice»; `donde_hoy`, si está, sale como «Dónde está hoy». Una fuente de nivel 2 solo acompaña a una de nivel 1. Dueño durante el reparto: app-mapa. */
 'use strict';

@@ -1,4 +1,4 @@
-/* biblical-earth · tipo «recorrido»: un recorrido guiado («recorrido:de-babilonia-a-jerusalen»). La ficha es la historia
+/* biblical-atlas · tipo «recorrido»: un recorrido guiado («recorrido:de-babilonia-a-jerusalen»). La ficha es la historia
    parada a parada (pantalla 14); la lleva js/recorridos.js. Dueño durante el reparto: app-estudio. */
 'use strict';
 (() => {

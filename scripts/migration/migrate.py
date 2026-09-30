@@ -56,7 +56,7 @@ FICHEROS DE DECISIONES (scripts/migration/decisions/*.yaml)
 Lo que pide leer el texto (sección 16 de modelo.md) no está en el mapa: va en un fichero por decisión. Se aplican
 después de la migración mecánica, por orden de nombre de fichero y de entrada, sobre los datos ya en inglés:
 
-  format: biblical-earth/migration-decisions/1
+  format: biblical-atlas/migration-decisions/1
   decision: K1                       # el código de la decisión en docs/investigacion/modelo.md
   checked_on: '2026-09-29'           # día en que se leyeron las fuentes de esta decisión
   entries:
@@ -117,8 +117,9 @@ MAP_PATH = HERE / "map.yaml"
 # Las decisiones de este script: las que se aplican si el checkout que se migra no trae las suyas.
 DECISIONS_DIR = HERE / "decisions"
 LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
-DECISIONS_FORMAT = "biblical-earth/migration-decisions/1"
-REPORT_FORMAT = "biblical-earth/migration-report/1"
+DECISIONS_FORMAT = "biblical-atlas/migration-decisions/1"
+DECISIONS_FORMATS = (DECISIONS_FORMAT, "biblical-earth/migration-decisions/1")  # nombre-fijo: decisiones escritas antes
+REPORT_FORMAT = "biblical-atlas/migration-report/1"
 DATE_KEYS = ("consultado", "checked_on")
 STATUS_KEYS = ("estado", "status")
 # Hechos anidados (sección 4): la ruta antigua y de dónde copian la fecha.
@@ -1017,7 +1018,7 @@ class Migration:
         self.decision_files = len(files)
         for p in files:
             d = load(p)
-            if not isinstance(d, dict) or d.get("format") != DECISIONS_FORMAT:
+            if not isinstance(d, dict) or d.get("format") not in DECISIONS_FORMATS:
                 self.stop(f"{p.name}: format no es {DECISIONS_FORMAT}")
                 continue
             if not re.match(r"^\d{4}-\d{2}-\d{2}$", iso(d.get("checked_on") or "")):
@@ -1493,7 +1494,7 @@ def checkout_steps(model, root, run):
     red = root / "scripts" / "migration" / "redirects.yaml"
     if not red.exists():
         rows = run.redirects
-        writes.append((red, "# biblical-earth: claves de relación que desaparecen y la que queda. Una fila por clave: "
+        writes.append((red, "# biblical-atlas: claves de relación que desaparecen y la que queda. Una fila por clave: "
                             "{from, to, removed_on, reason}.\n# Formato en docs/investigacion/modelo.md, sección 5. "
                             "Lo leen apply.py y bible_coverage.py.\n" + (dump(rows) if rows else "[]\n")))
     return writes, moves
@@ -1799,7 +1800,7 @@ def main(argv=None):
             print(f"\nEl informe {rpath} ya existe y no se pisa.")
         else:
             rpath.parent.mkdir(parents=True, exist_ok=True)
-            rpath.write_text(f"# biblical-earth: informe de la migración al esquema en inglés, desde {commit}.\n"
+            rpath.write_text(f"# biblical-atlas: informe de la migración al esquema en inglés, desde {commit}.\n"
                              + dump(report), encoding="utf-8")
             print(f"\nInforme: {rpath}")
     if run.redirects and not whole:
