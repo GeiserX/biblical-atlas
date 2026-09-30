@@ -272,7 +272,7 @@ test('every kind of control lands where it says, adds one entry, and one Back re
     assert.equal(b.focus, p, `${p}: focus on ${b.focus}`);
     assert.equal(b.q, 'texto', p);
     assert.equal(b.inert, before.inert, p);
-    if (p === 'rec-pedro') assert.match(await (await openPage(DESKTOP, { hash: 'sel=recorrido:pedro&paso=1' })).locator('body').innerText(), /[Pp]arada 1 de \d+/);
+    if (p === 'rec-pedro') await (await openPage(DESKTOP, { hash: 'sel=recorrido:pedro&paso=1' })).waitForFunction(() => /parada 1 de \d+/i.test(document.body.innerText));
     assert.deepEqual(page.pageErrors, [], p);
   }
 });
