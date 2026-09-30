@@ -1564,10 +1564,10 @@ def translate_proposal(p, run):
             ch["datos"] = tr(ch["datos"], tipo)
         if "campo" in ch:
             old = m.old_key(ch["campo"])
-            if old not in m.keys:
+            if old not in m.keys and old not in (m.map["new_keys"].get(ch["tipo"]) or []):
                 run.stop(f"propuesta: el campo «{ch['campo']}» no está en el mapa")
                 continue
-            ch["campo"] = m.keys[old]
+            ch["campo"] = m.keys.get(old, old)     # una clave nueva del modelo (new_keys) no tiene nombre antiguo
             path = f"{tipo}.{old}"
             if "valores" in ch:
                 ch["valores"] = tr(ch["valores"], path)
