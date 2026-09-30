@@ -4,11 +4,12 @@ main = "worker.js"
 compatibility_date = "2026-09-01"
 workers_dev = false
 
-# La ruta se añade el día del cambio, cuando la dirección nueva ya sirve el sitio (README.md).
-# routes = [{ pattern = "biblical-earth.geiser.cloud/*", zone_name = "geiser.cloud" }]
+# La dirección nueva sirve el sitio desde el 30 de septiembre de 2026: el Worker atiende toda la dirección anterior.
+routes = [{ pattern = "biblical-earth.geiser.cloud/*", zone_name = "geiser.cloud" }]
 
-# puente.html y puente.js se importan como texto: el Worker los sirve tal cual.
+# puente.html y puente.js se importan como texto: el Worker los sirve tal cual. Los globs llevan `**/` porque wrangler
+# compara la ruta entera del fichero, y `fallthrough` deja que worker.js siga siendo un módulo normal.
 [[rules]]
 type = "Text"
-globs = ["puente.html", "puente.js"]
-fallthrough = false
+globs = ["**/puente.html", "**/puente.js"]
+fallthrough = true
