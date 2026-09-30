@@ -1864,6 +1864,8 @@ function iniciarLinea() {
       const x = (p.x + q.x) / 2 - pista.getBoundingClientRect().left;
       pinza = { d0: Math.hypot(p.x - q.x, p.y - q.y), s0: span(), t: tDe(x), x };
       arrastre = null; tragarClic = true;
+      // Un arrastre que se vuelve pinza suelta las filas congeladas: si no, nadie las soltaría.
+      if (hold) { hold = null; sucio.linea = true; programar(); }
       return;
     }
     if (e.altKey || L.modoRegla) { empezarRegla(e, filas); return; }
