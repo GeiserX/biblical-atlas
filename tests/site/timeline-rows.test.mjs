@@ -128,6 +128,25 @@ test('T5b a short bar wholly inside the view shows with its whole name, even whe
   for (const o of out.visible) if (o !== bar && o._drow === bar._drow) assert.ok(o._hit[1] <= bar._hit[0] || bar._hit[1] <= o._hit[0], `«${o.name}» and the bar overlap`);
 });
 
+test('T5c a name pushed against the right edge never covers its own dot or bar', () => {
+  // The Job case on the phone: a moment 180 px from the right edge, with a neighbour just on its left, and a name of
+  // 175 px. Its name fits neither on its right nor on its left; pressed against the edge, it would sit on its own dot.
+  for (const g of [G, GC]) {
+    const items = [
+      { id: 'a', name: 'Antes', cert: 'exact', shape: 'span', start: 10.5, end: 16, group: 0 },
+      { id: 'j', name: 'Satanás pone en duda', cert: 'approx', shape: 'moment', start: 16.2, end: 16.2, anchor: 16.2, w0: 16.2, w1: 16.2, group: 0 },
+    ];
+    F.measure(items, MEAS, g);
+    const w = 800;
+    const out = F.layoutLane({ id: 'j', items }, { v0: 10, span: 8 }, geom(w, g));
+    const it = out.visible.find((x) => x.id === 'j');
+    assert.ok(it, 'the moment is drawn');
+    const lw = F.lwOf(it);
+    assert.ok(it._lx >= it._dot + g.dotR || it._lx + lw <= it._dot - g.dotR, `its name [${it._lx.toFixed(1)}, ${(it._lx + lw).toFixed(1)}] covers its dot at ${it._dot.toFixed(1)}`);
+    assert.ok(it._lx >= 0 && it._lx + lw <= w, 'its name is inside the track');
+  }
+});
+
 test('T6 while dragging no mark changes row and no lane shrinks; after release the rows pack again', () => {
   const lane = syntheticLane(19);
   const span = 8, w = 800;

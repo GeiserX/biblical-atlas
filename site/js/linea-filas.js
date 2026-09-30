@@ -171,11 +171,14 @@ function rescueEdges(vis, w, G) {
         const prevRight = i > 0 ? list[i - 1]._hit[1] : -Infinity;
         // Primero al otro lado del dibujo, si se ve; si no, pegado al borde, en el sitio libre de la fila.
         const drawL = it.shape === 'moment' ? it._dot - G.dotR - 4 : it._g[0] - 4;
-        const drawIn = it.shape === 'moment' ? it._dot >= 0 && it._dot <= w : it._g[1] >= 0 && it._g[0] <= w;
+        const drawIn = it.shape === 'moment' ? it._dot + G.dotR >= 0 && it._dot - G.dotR <= w : it._g[1] >= 0 && it._g[0] <= w;
         if (drawIn && !it._in && drawL - lw >= Math.max(4, prevRight + G.gap)) { it._lx = drawL - lw; hitOf(it, w, G); }
         else {
+          // Pegado al borde, pero nunca encima de su propio dibujo: el nombre taparía el punto o la barra. Si no cabe sin
+          // taparlo, edgeRows lo lleva a otra fila, al otro lado del dibujo.
           const nx = Math.max(w - lw - 4, prevRight + G.gap);
-          if (nx < it._lx) { it._lx = nx; hitOf(it, w, G); }
+          const drawR = it.shape === 'moment' ? it._dot + G.dotR : it._g[1];
+          if (nx < it._lx && (it._in || !drawIn || nx >= drawR + 4)) { it._lx = nx; hitOf(it, w, G); }
         }
       }
       if (it._lx < 2) {

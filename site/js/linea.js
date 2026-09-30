@@ -374,11 +374,14 @@ function prepararLetra() {
     esperaLetra = Promise.all([document.fonts.load(fName), document.fonts.load(fTag)]).catch(() => null)
       .then(() => { esperaLetra = null; sucio.linea = true; programar(); });
   }
-  const clave = `${fName}|${fTag}|${coarse}|${lista}`;
+  // Con el dedo, un nombre de varias líneas no pasa de la mitad de la pista menos su punto: así cabe entero a un lado
+  // del punto, esté donde esté, y nunca lo tapa.
+  const maxLabel = coarse ? Math.max(100, Math.floor((anchoLinea - 24) / 2) - 8) : 0;
+  const clave = `${fName}|${fTag}|${coarse}|${lista}|${maxLabel}`;
   if (clave === claveLetra) return;
   claveLetra = clave;
   const fs = parseFloat(cs.fontSize) || 12.5;
-  Object.assign(G, { coarse, row: coarse ? 44 : Math.max(22, Math.ceil(fs * 1.75)), dotR: coarse ? 6 : 5, maxLabel: coarse ? 160 : 0 });
+  Object.assign(G, { coarse, row: coarse ? 44 : Math.max(22, Math.ceil(fs * 1.75)), dotR: coarse ? 6 : 5, maxLabel });
   lienzo = lienzo || document.createElement('canvas').getContext('2d');
   lienzo.font = fName;
   const space = lienzo.measureText(' ').width;

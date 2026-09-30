@@ -92,7 +92,7 @@ function walkLanes(p) {
   return p.evaluate(async () => {
     const cuerpo = document.querySelector('#linea-cuerpo');
     const raf = () => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-    const seen = new Map(), problems = [];
+    const seen = new Map(), problems = [], overLong = new Set();
     const row = parseFloat(getComputedStyle(document.querySelector('#linea-filas')).getPropertyValue('--fila')) || 22;
     for (let y = 0, guard = 0; guard < 400; guard++, y += Math.max(120, cuerpo.clientHeight)) {
       cuerpo.scrollTop = y;
@@ -103,6 +103,12 @@ function walkLanes(p) {
         for (const m of marks) {
           seen.set(m.id, m.text);
           if (m.l.left < pr.left - 2.5 || m.l.right > pr.right + 2.5) problems.push(`${lane.dataset.carril}: «${m.text}» is cut by the track edge (${Math.round(m.l.left - pr.left)}..${Math.round(m.l.right - pr.left)} of ${Math.round(pr.width)})`);
+          const dot = m.b.querySelector('.m-punto')?.getBoundingClientRect();
+          // A name never covers its own dot. The one case left: on a phone, a name so long that three lines of half the
+          // track do not hold it has no side of its dot where it fits whole; it is counted, not hidden.
+          if (dot && dot.width && Math.min(m.l.right, dot.right) - Math.max(m.l.left, dot.left) > 1 && Math.min(m.l.bottom, dot.bottom) - Math.max(m.l.top, dot.top) > 1) {
+            if (m.l.width - 4 > (pr.width - 24) / 2) overLong.add(m.id); else problems.push(`${lane.dataset.carril}: «${m.text}» covers its own dot`);
+          }
           if (m.l.height > row + 1) problems.push(`${lane.dataset.carril}: «${m.text}» is taller (${m.l.height}) than its row (${row})`);
           for (const o of marks) {
             if (o === m || Math.abs(o.r.top - m.r.top) > 1) continue;
@@ -115,7 +121,7 @@ function walkLanes(p) {
     }
     cuerpo.scrollTop = 0;
     await raf();
-    return { seen: [...seen], problems };
+    return { seen: [...seen], problems, overLong: overLong.size };
   });
 }
 /** What the timeline says it draws (BE.lineaMarcas) and what a mark in view is, measured from the data alone. */
@@ -173,7 +179,7 @@ for (const screen of [DESKTOP, PHONE]) {
       const approx = h.visible.filter((x) => x.cert === 'approx');
       const approxOk = approx.filter((x) => seen.get(x.id)?.endsWith(' aprox.')).length;
       const plainWithTag = h.visible.filter((x) => (x.cert === 'exact' || x.cert === 'computed') && / aprox\.$|¿\?$/.test(seen.get(x.id) || '')).length;
-      note(`${screen.name} ${dname} span ${s}: ${h.visible.length} marks in view, ${seen.size} drawn, ${h.missing.length} missing, ${notDrawn.length} not drawn, ${walk.problems.length} overlap/cut, ${calc.length} «cálculo», ${approxOk}/${approx.length} «aprox.», lanes ${h.lanes.filter((l) => l.alto).length} shown`);
+      note(`${screen.name} ${dname} span ${s}: ${h.visible.length} marks in view, ${seen.size} drawn, ${h.missing.length} missing, ${notDrawn.length} not drawn, ${walk.problems.length} overlap/cut, ${walk.overLong} over-long names beside their dot, ${calc.length} «cálculo», ${approxOk}/${approx.length} «aprox.», lanes ${h.lanes.filter((l) => l.alto).length} shown`);
       all.push(...h.missing.map((x) => `${dname} ${s}: missing ${x}`), ...notDrawn.map((x) => `${dname} ${s}: not drawn ${x}`), ...walk.problems.map((x) => `${dname} ${s}: ${x}`),
         ...wrongText.map((x) => `${dname} ${s}: ${x}`), ...calc.map((x) => `${dname} ${s}: says cálculo: ${x}`));
       if (approxOk !== approx.length) all.push(`${dname} ${s}: ${approx.length - approxOk} approximate marks lack «aprox.»`);
