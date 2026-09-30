@@ -10,6 +10,8 @@ names:
 - name: Mar oriental
   note: Así lo llama Joe 2:20, porque cerraba por el este la tierra de Israel, frente al mar occidental (Perspicacia «Mar
     Salado», apartado «Nombre»).
+- name: Mar del este
+  note: Así lo llama Zac 14:8; la nota al pie aclara que es el mar Muerto.
 type: sea
 lat: 31.5
 lon: 35.5
@@ -33,6 +35,7 @@ sources:
 - josue-3
 - josue-15
 - josue-18
+- zacarias-14
 links:
 - title: 'Perspicacia: «Mar Salado»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003813

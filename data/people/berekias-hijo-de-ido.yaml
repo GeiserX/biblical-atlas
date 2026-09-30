@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: berekias-hijo-de-ido
+name: Berekías
+names:
+- name: Berekías
+perspicacia: 1200000650#7
+disambiguation: Padre del profeta Zacarías. No es Baraquías, padre del Zacarías que nombra Jesús, ni ninguno de los otros
+  Berekías que numera Perspicacia.
+distinct_from:
+- baraquias
+summary: Hijo de Idó y padre del profeta Zacarías, que da este linaje al fechar sus mensajes del segundo año de Darío. Otros
+  pasajes nombran a Zacarías solo por su abuelo.
+reason: Perspicacia «Berekías», núm. 7, y «Zacarías», núm. 20; Zac 1:1, 7.
+sources:
+- it-berekias
+- it-zacarias
+- zacarias-1
+links:
+- title: 'Perspicacia: «Berekías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000650
+  type: perspicacia
+- title: Zacarías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/1
+  type: bible
+relations:
+- type: kin
+  person: ido-padre-de-berekias
+  word: father
+  sources:
+  - zacarias-1
+  - it-berekias
+  - it-ido
+  reason: 'Zac 1:1, 7: Zacarías es hijo de Berekías, y este, de Idó.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

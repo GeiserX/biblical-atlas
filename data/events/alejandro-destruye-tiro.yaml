@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: alejandro-destruye-tiro
+title: Alejandro Magno destruye Tiro
+date:
+  from: -331
+  to: -331
+  precision: season
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: verano (julio) de 332 a.e.c.
+  detail:
+    season: summer
+narrative_order:
+  series: alejandro
+  order: 1
+places:
+- tiro
+people: []
+passages: []
+summary: Tras siete meses de asedio, Alejandro llega a la Tiro de la isla por un terraplén hecho con las ruinas de la ciudad
+  de tierra firme y la arrasa. Miles de tirios mueren o acaban vendidos como esclavos.
+reason: Perspicacia «Alejandro», núm. 1, fecha la caída en julio de 332 a.e.c. «Tiro» y «Toda Escritura», libro 38, párr.
+  4, la dan por cumplimiento de Zac 9:3, 4 y de Eze 26:4, 12.
+sources:
+- it-alejandro
+- it-tiro
+- si-zacarias
+links:
+- title: 'Perspicacia: «Alejandro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000192
+  type: perspicacia
+- title: 'Perspicacia: «Tiro»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004498
+  type: perspicacia
+search: Alejandro Magno Tiro
+checked_on: '2026-09-29'
+status: verified
