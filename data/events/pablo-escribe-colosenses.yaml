@@ -1,0 +1,67 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-colosenses
+title: Pablo escribe preso en Roma la carta a los Colosenses
+date:
+  from: 60
+  to: 61
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 60-61 e.c.
+narrative_order:
+  series: hechos
+  order: 2832
+places:
+- roma
+- colosas
+people:
+- pablo
+- timoteo
+- aristarco
+- juan-marcos
+- jesus-justo
+- epafras
+- lucas
+- demas
+- tiquico
+- onesimo
+present:
+- pablo
+- timoteo
+- aristarco
+- juan-marcos
+- jesus-justo
+- epafras
+- lucas
+- demas
+- tiquico
+- onesimo
+passages:
+- Col 1:1, 2
+- Col 1:24
+- Col 2:1, 5
+- Col 4:3
+- Col 4:10-14
+- Col 4:18
+summary: Preso en Roma y con Timoteo a su lado, Pablo escribe a la congregación de Colosas, que no lo conocía. Resalta el
+  lugar de Cristo y previene contra filosofías humanas, la vuelta a la Ley y el culto a ángeles.
+reason: 'Tabla de los libros y estudio 3: Roma, c. 60-61. Perspicacia «Colosenses, Carta a los»: al final del primer encierro,
+  tras el informe de Epafras. La nota de Col 1:1 pone allí a Timoteo y da 59-61, más amplio.'
+sources:
+- colosenses-1
+- tnm-tabla
+- si-3
+- it-colosenses
+- colosenses-2
+- colosenses-4
+links:
+- title: Colosenses 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1
+  type: bible
+- title: 'Perspicacia: «Colosenses, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001011
+  type: perspicacia
+search: Pablo escribe carta Colosenses Roma
+checked_on: '2026-09-29'
+status: verified

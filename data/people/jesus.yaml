@@ -118,6 +118,8 @@ sources:
 - hch-23
 - romanos-1
 - 1-corintios-15
+- filipenses-2
+- colosenses-1
 not_claimed:
 - 'Que Jesús naciera el 25 de diciembre: Perspicacia lo descarta porque los pastores pasaban la noche al raso.'
 - 'Un día exacto de nacimiento: las fuentes dicen hacia el 1 de octubre.'
@@ -332,6 +334,7 @@ relations:
   sources:
   - mateo-1
   - lucas-3
+  - galatas-3
   reason: 'Mt 1:1, 2 y 17: la genealogía empieza en Abrahán.'
   checked_on: '2026-09-29'
   status: verified
@@ -431,3 +434,4 @@ checked_on: '2026-09-29'
 status: verified
 distinct_from:
 - jesus-hijo-de-eliezer
+- jesus-justo
