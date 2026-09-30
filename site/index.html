@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>biblical-atlas · Cada relato de la Biblia, en su lugar y en su tiempo</title>
+<title>biblical-atlas · ¿Dónde y cuándo pasó lo que estás leyendo?</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="description" content="La Biblia en el mapa y en el tiempo. Cada relato en su lugar y en su fecha, con cada dato enlazado a su fuente en wol.jw.org.">
@@ -34,8 +34,18 @@
 <script src="js/fundir-claves.js"></script>
 <script src="js/migrar-claves.js"></script>
 <script>
-  // Modo reunión antes del primer pintado: sin esto la página sale clara un instante y luego se oscurece.
-  try { if (localStorage.getItem('biblical-atlas:pref:reunion') === '1') document.documentElement.classList.add('be-reunion'); } catch { /* sin almacenamiento */ }
+  // Antes del primer pintado: el modo reunión, la letra grande y si sale la portada. Sin esto la página sale clara un
+  // instante y luego se oscurece, o enseña el mapa vacío antes de la portada.
+  (() => {
+    const r = document.documentElement;
+    try {
+      if (localStorage.getItem('biblical-atlas:pref:reunion') === '1') r.classList.add('be-reunion');
+      if (localStorage.getItem('biblical-atlas:pref:letra-grande') === '1') r.classList.add('be-letra-grande');
+      if (localStorage.getItem('biblical-atlas:ultima')) r.classList.add('be-vuelve');
+    } catch { /* sin almacenamiento */ }
+    // Sin dirección, o con #portada=1, el sitio abre en la portada (portada.js). Con dirección, en esa vista.
+    if (!location.hash || location.hash === '#' || /[#&]portada=1(&|$)/.test(location.hash)) r.classList.add('be-con-portada');
+  })();
 </script>
 <script>
   // Desde file:// el navegador no deja crear el worker de MapLibre a partir de un blob; lo cargamos con una URL data:.
@@ -169,7 +179,159 @@
   <div class="separador separador--panel" id="sep-panel" role="separator" aria-orientation="vertical" aria-controls="panel" aria-label="Ancho de la ficha" tabindex="0" title="Arrastra para cambiar el ancho de la ficha (flechas izquierda y derecha; doble clic, el de siempre)"></div>
   <div class="separador separador--linea" id="sep-linea" role="separator" aria-orientation="horizontal" aria-controls="linea" aria-label="Alto de la línea de tiempo" tabindex="0" title="Arrastra para subir o bajar la línea de tiempo y ver más carriles (flechas arriba y abajo; doble clic, el de siempre)"></div>
   <section class="vista vista-lectura" id="vista-lectura" aria-label="Modo lectura" hidden></section>
-  <section class="vista vista-portada" id="vista-portada" aria-label="Portada" hidden></section>
+  <section class="vista vista-portada" id="vista-portada" aria-label="Portada" tabindex="-1">
+    <!-- Formas de cada tipo, una sola vez: las usan la portada y su lista de sugerencias (<use href="#f-…">). -->
+    <svg class="formas-svg" aria-hidden="true" focusable="false">
+      <symbol id="f-persona" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5" style="fill:var(--node-persona)"/></symbol>
+      <symbol id="f-lugar" viewBox="0 0 16 16"><path d="M8 15s5-5.2 5-8.8A5 5 0 0 0 3 6.2C3 9.8 8 15 8 15Z" style="fill:var(--node-lugar)"/><circle cx="8" cy="6.3" r="1.8" style="fill:var(--surface)"/></symbol>
+      <symbol id="f-suceso" viewBox="0 0 16 16"><rect x="3.6" y="3.6" width="8.8" height="8.8" rx="1.2" transform="rotate(45 8 8)" style="fill:var(--node-evento)"/></symbol>
+      <symbol id="f-periodo" viewBox="0 0 16 16"><rect x="1.5" y="5" width="13" height="6" rx="3" style="fill:var(--node-periodo)"/></symbol>
+      <symbol id="f-texto" viewBox="0 0 16 16"><rect x="3.5" y="2" width="9" height="12" rx="1.3" style="fill:var(--node-texto)"/><path d="M5.8 6h4.4M5.8 8.5h4.4M5.8 11h2.8" style="stroke:var(--surface)" stroke-width="1.1" stroke-linecap="round"/></symbol>
+      <symbol id="f-ruta" viewBox="0 0 16 16"><path d="M2.5 12.5 7 6.5l3 4 3.5-7" fill="none" style="stroke:var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2.2 1.8"/><circle cx="2.5" cy="12.5" r="1.8" style="fill:var(--accent)"/><circle cx="13.5" cy="3.5" r="1.8" style="fill:var(--accent)"/></symbol>
+      <symbol id="f-anio" viewBox="0 0 16 16"><path d="M6 1.5v13" style="stroke:var(--gold)" stroke-width="1.8" stroke-linecap="round"/><path d="M6 2h7l-2 2.5 2 2.5H6Z" style="fill:var(--gold)"/></symbol>
+      <symbol id="f-conexion" viewBox="0 0 16 16"><circle cx="3.5" cy="8" r="2.8" style="fill:var(--node-persona)"/><circle cx="12.5" cy="8" r="2.8" style="fill:var(--node-persona)"/><path d="M6.3 8h3.4" style="stroke:var(--node-persona)" stroke-width="1.6"/></symbol>
+      <symbol id="f-hallazgo" viewBox="0 0 16 16"><path d="M4 14.5V6.5a4 4 0 0 1 8 0v8Z" style="fill:var(--node-hallazgo)"/></symbol>
+    </svg>
+    <div class="portada">
+      <header class="portada-banda">
+        <div class="portada-banda__relieve" aria-hidden="true"></div>
+        <div class="portada-banda__in">
+          <div class="portada-top">
+            <span class="portada-logo">
+              <svg class="portada-logo__marca" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <path class="portada-logo__hoja" d="M14 53Q15.2 40.2 3.5 34.7Q2.3 47.6 14 53Z M25.5 40Q33.8 49.9 45.9 45.5Q37.6 35.6 25.5 40Z M38 23Q40 11.4 29.4 6.1Q27.5 17.7 38 23Z M46.5 15.5Q52.5 23.5 61.9 20Q55.9 12 46.5 15.5Z"/>
+                <path class="portada-logo__tallo" d="M8 57C18 50 24 42 30 33C36 24 44 14 57 8" fill="none" stroke-width="5" stroke-linecap="round"/>
+                <circle class="portada-logo__oliva" cx="20.5" cy="47" r="6"/><circle class="portada-logo__oliva" cx="31" cy="31.5" r="6"/><circle class="portada-logo__oliva" cx="47.5" cy="13.5" r="6"/>
+              </svg>
+              <span class="portada-logo__nombre">biblical-atlas</span>
+            </span>
+            <span class="be-spacer"></span>
+            <a class="portada-abrir" href="#t=50.3000" data-p="abrir">Abrir el mapa (c. 50 e.c.) <span aria-hidden="true">→</span></a>
+            <button type="button" class="portada-icono portada-icono--letra" id="portada-letra" data-p="letra" aria-pressed="false" title="Letra grande"><span aria-hidden="true">Aa</span><span class="sr-only">Letra grande</span></button>
+            <button type="button" class="portada-icono" id="portada-reunion" data-p="reunion" aria-pressed="false" title="Modo reunión: fondo oscuro y sin movimiento">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span class="sr-only">Modo reunión: fondo oscuro y sin movimiento</span>
+            </button>
+          </div>
+          <!-- «Seguir donde lo dejaste»: lo rellena portada.js con la última vista guardada en este navegador. -->
+          <div class="portada-seguir" id="portada-seguir" hidden></div>
+          <div class="portada-heroe">
+            <p class="portada-lema">La Biblia en el mapa y en el tiempo</p>
+            <span class="portada-lema__raya" aria-hidden="true"></span>
+            <h1 class="portada-titulo" id="portada-titulo" tabindex="-1">¿Dónde y cuándo pasó lo que estás leyendo?</h1>
+            <p class="portada-sub">Un atlas para estudiar la Biblia en español: escribe una persona, un lugar, un capítulo o un año, y el mapa se pone en su sitio y en su fecha.</p>
+            <form class="portada-busca" id="portada-busca" role="search" action="#t=50.3000" autocomplete="off">
+              <label class="sr-only" for="portada-q">Pregunta por una persona, un lugar, un capítulo o un año</label>
+              <div class="portada-busca__caja">
+                <svg class="portada-busca__icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <input id="portada-q" name="q" type="text" inputmode="search" enterkeyhint="go" spellcheck="false" autocomplete="off"
+                  placeholder="Pedro, Babilonia, Hechos 16, 607 a.e.c."
+                  role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="portada-lista" aria-describedby="portada-ayuda">
+                <button class="portada-busca__ir" type="submit" data-p="ir">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20Z M9 4v13.5 M15 6.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  <span class="portada-busca__largo">Ver en el mapa</span><span class="portada-busca__corto">Mapa</span>
+                </button>
+              </div>
+              <ul class="portada-lista" id="portada-lista" role="listbox" aria-label="Sugerencias" hidden></ul>
+              <p class="sr-only" id="portada-ayuda">Las sugerencias salen al escribir. Flechas para elegir, Intro para ir.</p>
+            </form>
+            <div class="portada-ejemplos">
+              <span class="portada-ejemplos__lema" id="portada-ejemplos-lema">Prueba con</span>
+              <ul class="portada-ejemplos__lista" aria-labelledby="portada-ejemplos-lema">
+                <li><a class="portada-chip" href="#sel=persona:pedro" data-p="ej-pedro" aria-label="Pedro, una persona"><svg class="forma" aria-hidden="true"><use href="#f-persona"/></svg><span>Pedro</span></a></li>
+                <li><a class="portada-chip" href="#sel=pasaje:hch-16" data-p="ej-hechos-16" aria-label="Hechos 16, un capítulo"><svg class="forma" aria-hidden="true"><use href="#f-texto"/></svg><span>Hechos 16</span></a></li>
+                <li><a class="portada-chip" href="#t=-605.5000" data-p="ej-607" aria-label="607 a.e.c., un año"><svg class="forma" aria-hidden="true"><use href="#f-anio"/></svg><span>607 a.e.c.</span></a></li>
+              </ul>
+            </div>
+            <div class="portada-aviso" id="portada-aviso" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+        <p class="portada-credito">Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · <a href="acerca.html#gracias">Créditos</a></p>
+      </header>
+
+      <main class="portada-cuerpo">
+        <section class="portada-preguntas" aria-labelledby="portada-preguntas-tit">
+          <div class="portada-wrap">
+            <div class="portada-preguntas__cab">
+              <h2 class="portada-preguntas__tit" id="portada-preguntas-tit">Tres preguntas, tres maneras de mirar</h2>
+              <p class="portada-preguntas__lema">Cada una abre el sitio en su respuesta: el mapa en una fecha, las relaciones entre personas o un capítulo con el mapa al lado.</p>
+            </div>
+            <ol class="portada-tarjetas">
+              <li><a class="portada-tarjeta" href="#sel=lugar:jerusalen&amp;t=-518.5000" data-p="tarjeta-1">
+                <span class="portada-mini portada-mini--mapa" aria-hidden="true"><span class="portada-mini__relieve"></span><span class="portada-mini__pin"><svg class="forma"><use href="#f-lugar"/></svg>Jerusalén</span><span class="portada-mini__fecha">c. 520 a.e.c.</span></span>
+                <div class="portada-tarjeta__cuerpo">
+                  <span class="portada-tarjeta__fila"><span class="portada-fecha">c. 520 a.e.c.</span><span class="portada-tarjeta__vista">El mapa en una fecha</span></span>
+                  <h3 class="portada-tarjeta__q">¿Quién había en Judá con los medos y persas?</h3>
+                  <span class="portada-tarjeta__linea" id="portada-linea-1">Jerusalén en 520 a.e.c.: Zorobabel gobierna, Josué es sumo sacerdote, Ageo y Zacarías viven allí y se reanuda el templo.</span>
+                  <span class="portada-tarjeta__ir" aria-hidden="true">Ver la respuesta</span>
+                </div></a></li>
+              <li><a class="portada-tarjeta" href="#conexion=persona:loida~persona:pablo&amp;t=49.5000" data-p="tarjeta-2">
+                <span class="portada-mini portada-mini--grafo" aria-hidden="true"><span class="portada-mini__cadena"><span class="portada-mini__nodo">L<small>Loida</small></span><span class="portada-mini__paso"><i>1</i></span><span class="portada-mini__nodo">T<small>Timoteo</small></span><span class="portada-mini__paso"><i>2</i></span><span class="portada-mini__nodo">P<small>Pablo</small></span></span></span>
+                <div class="portada-tarjeta__cuerpo">
+                  <span class="portada-tarjeta__fila"><span class="portada-fecha">c. 49-65 e.c.</span><span class="portada-tarjeta__vista">Las relaciones</span></span>
+                  <h3 class="portada-tarjeta__q">¿Qué une a Loida con Pablo?</h3>
+                  <span class="portada-tarjeta__linea" id="portada-linea-2">Dos pasos con su referencia: Loida es la abuela de Timoteo, y Timoteo viaja con Pablo.</span>
+                  <span class="portada-tarjeta__ir" aria-hidden="true">Ver la respuesta</span>
+                </div></a></li>
+              <li><a class="portada-tarjeta" href="#leer=hch-16" data-p="tarjeta-3">
+                <span class="portada-mini portada-mini--lectura" aria-hidden="true"><span class="portada-mini__pagina"><b>Hechos 16</b><span class="portada-mini__caps"><i>14</i><i>15</i><i class="on">16</i><i>17</i><i>18</i></span></span><span class="portada-mini__ruta"><svg viewBox="0 0 120 80" preserveAspectRatio="none"><path d="M100 70 C80 60 70 40 52 36 S24 20 14 10" fill="none" stroke-width="2" stroke-dasharray="4 4"/></svg><i style="left:83%;top:88%">1</i><i style="left:43%;top:45%">2</i><i style="left:12%;top:12%">3</i></span></span>
+                <div class="portada-tarjeta__cuerpo">
+                  <span class="portada-tarjeta__fila"><span class="portada-fecha">c. 49-50 e.c.</span><span class="portada-tarjeta__vista">Un capítulo y su mapa</span></span>
+                  <h3 class="portada-tarjeta__q">¿Por dónde pasó Pablo en Hechos 16?</h3>
+                  <span class="portada-tarjeta__linea" id="portada-linea-3">El capítulo pasaje a pasaje, de Derbe a Filipos, con cada parada numerada en el mapa.</span>
+                  <span class="portada-tarjeta__ir" aria-hidden="true">Ver la respuesta</span>
+                </div></a></li>
+            </ol>
+            <details class="portada-mas">
+              <summary>Más preguntas (2)</summary>
+              <ul class="portada-mas__lista">
+                <li><a class="portada-mas__item" href="#sel=lugar:babilonia&amp;t=30.5000" data-p="mas-1"><span class="portada-fecha">c. 30 e.c.</span><span class="portada-mas__q">¿Qué pasaba en Babilonia en tiempos de Jesús?</span><span class="portada-mas__linea">Babilonia en 30 e.c.: allí vive una colonia judía, a unos 870 km de Jerusalén.</span></a></li>
+                <li><a class="portada-mas__item" href="#sel=carta:1-tesalonicenses&amp;cartas=todas" data-p="mas-2"><span class="portada-fecha">c. 50-65 e.c.</span><span class="portada-mas__q">¿Desde dónde escribió Pablo cada carta?</span><span class="portada-mas__linea">Cada carta como un arco, de la ciudad donde se escribe a la que la recibe.</span></a></li>
+              </ul>
+            </details>
+          </div>
+        </section>
+
+        <section class="portada-zona" aria-labelledby="portada-epocas-tit">
+          <div class="portada-wrap">
+            <h2 class="portada-zona__tit" id="portada-epocas-tit">¿En qué época pasó?</h2>
+            <p class="portada-zona__lema">Nueve épocas, de Adán a la congregación cristiana. Elige una y el mapa se pone en su principio.</p>
+            <ol class="portada-epocas" id="portada-epocas"></ol>
+            <p class="portada-epocas__todo"><a class="portada-enlace" id="portada-linea-completa" href="#t=50.3000" data-p="linea-completa">Ver la línea de tiempo completa</a></p>
+          </div>
+        </section>
+
+        <section class="portada-zona" aria-labelledby="portada-recorridos-tit">
+          <div class="portada-wrap">
+            <h2 class="portada-zona__tit" id="portada-recorridos-tit">¿Prefieres que te lo cuenten paso a paso?</h2>
+            <p class="portada-zona__lema">Recorridos guiados: cada parada mueve la fecha, el mapa y la ficha, y el relato se lee en wol.jw.org.</p>
+            <ul class="portada-recorridos" id="portada-recorridos"></ul>
+          </div>
+        </section>
+
+        <section class="portada-zona portada-zona--quieta" aria-labelledby="portada-fuentes-tit">
+          <div class="portada-wrap">
+            <h2 class="portada-zona__tit portada-zona__tit--peq" id="portada-fuentes-tit">¿De dónde sale cada dato?</h2>
+            <ul class="portada-fuentes">
+              <li><span class="marca-nivel marca-nivel--1" role="img" title="Biblia o publicación de jw.org" aria-label="Biblia o publicación de jw.org"></span><span><b>La Traducción del Nuevo Mundo y wol.jw.org.</b> Enlazamos; no copiamos sus textos.</span></li>
+              <li><span class="marca-nivel marca-nivel--2" role="img" title="Otra fuente que jw.org ha usado" aria-label="Otra fuente que jw.org ha usado"></span><span><b>Arqueología e investigación</b>, solo cuando jw.org las usa, y siempre con su fuente.</span></li>
+              <li><span class="portada-sin-verificar" role="img" aria-label="Sin verificar"></span><span><b>Sin verificar:</b> se ve marcado, nunca escondido.</span></li>
+            </ul>
+            <p class="portada-fuentes__cifras" id="portada-cifras"></p>
+            <p><a class="portada-enlace" href="acerca.html#datos">Cómo trabajamos con las fuentes</a></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="portada-pie">
+        <div class="portada-wrap">
+          <p>Relieve: Natural Earth, USGS, NOAA, Copernicus, Mapzen · Coordenadas: OpenBible.info (CC BY 4.0) · <a href="acerca.html#gracias">Créditos</a></p>
+          <p><span>En español</span> · <span>Sitio estático, sin cuentas</span> · <a href="acerca.html#licencia">Código libre, GPL-3.0</a> · <a href="calendario.html">El calendario de la Biblia</a> · <a href="acerca.html">Qué es biblical-atlas</a><span id="portada-generado"></span></p>
+        </div>
+      </footer>
+    </div>
+    <p class="sr-only" id="portada-estado" aria-live="polite"></p>
+  </section>
 </div>
 <noscript><p class="sin-js">Este sitio necesita JavaScript para dibujar el mapa y la línea de tiempo.</p></noscript>
 </body>

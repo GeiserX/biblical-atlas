@@ -259,6 +259,8 @@ Reglas comunes:
 
 *HTML: [`mockups/src/15-portada.html`](mockups/src/15-portada.html)*
 
+Esta fue la primera propuesta. La portada del sitio es ahora el diseño 4 de [La portada: seis diseños para elegir](portada-disenos.md#4-entra-por-una-pregunta).
+
 **Pregunta que responde.** ¿Qué es esto y por dónde empiezo?
 
 **Qué se ve.**

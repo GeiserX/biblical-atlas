@@ -1562,6 +1562,7 @@ function lugaresEpocaEn(t) {
 }
 /** Encuadra la época de t (lugaresDeEpoca). Con siVisible, no mueve el mapa si todo eso ya se ve. */
 function encuadrarEpoca(t, { siVisible = false } = {}) {
+  if (!map) return;   // sin MapLibre (unpkg caído) la línea y las fichas siguen: no hay nada que encuadrar
   const pts = lugaresDeEpoca(t).flatMap(puntosDe);
   if (!pts.length) return;
   // Como encuadrarLugares, pero sin dejar nada bajo la tarjeta «Mientras tanto» (arriba a la derecha en escritorio).
@@ -1576,7 +1577,7 @@ function encuadrarEpoca(t, { siVisible = false } = {}) {
 /** Al abrir sin selección, si Pablo queda fuera de la vista o bajo la hoja inferior, centra el mapa en él. Si los datos
     no lo sitúan en esta fecha, encuadra la época (encuadrarEpoca). */
 function mostrarPablo() {
-  if (E.sel) return;
+  if (E.sel || !map) return;
   const w = BE.dondeEsta(E.t);
   if (!w) { encuadrarEpoca(E.t, { siVisible: true }); return; }
   const hoja = altoHoja();

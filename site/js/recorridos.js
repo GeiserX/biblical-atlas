@@ -194,7 +194,7 @@ function pref(nombre, valor) {
   try { localStorage.setItem(PREF + nombre, valor ? '1' : '0'); } catch { /* sin almacenamiento */ }
   return valor;
 }
-function ponerClase(nombre, on) { raiz.classList.toggle(`be-${nombre}`, on); pref(nombre, on); BE.sucio.etiquetas = BE.sucio.panel = BE.sucio.linea = BE.sucio.mapa = true; BE.programar(); pintarMenu(); }
+function ponerClase(nombre, on) { BE.ponerPreferencia(nombre, on); pintarMenu(); }
 function avanzar(d) {
   if (R.id) { irA(R.paso + d); return; }
   if (BE.lectura?.abierta && BE.lectura.mover(d)) return;
@@ -225,7 +225,7 @@ function pintarMenu() {
   if (!m) return;
   const on = (c) => raiz.classList.contains(`be-${c}`);
   m.innerHTML = `<div class="be-caps menu-titulo">Estudiar</div>
-    <button type="button" role="menuitem" data-menu="portada">Portada: épocas y recorridos</button>
+    <button type="button" role="menuitem" data-menu="portada">Portada</button>
     <button type="button" role="menuitem" data-menu="lectura">Modo lectura</button>
     <button type="button" role="menuitem" data-menu="grafo">Grafo de personas</button>
     <button type="button" role="menuitem" data-menu="conexion">¿Cómo se relacionan dos?</button>
@@ -307,7 +307,9 @@ function salir() {
 }
 BE.inicios.push(iniciar);
 BE.pintores.push(seguirSeleccion);
-BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id ? String(R.paso + 1) : null),
+// La parada solo va en la dirección mientras el recorrido está elegido: al quitarlo (Atrás a la portada, otra
+// selección) no se queda colgada hasta el fotograma que lo cierra.
+BE.parametros.push({ nombre: 'paso', historia: true, escribir: () => (R.id && E.sel?.tipo === 'recorrido' && E.sel.id === R.id ? String(R.paso + 1) : null),
   leer(v) { const n = v ? Math.max(0, (+v || 1) - 1) : null; if (R.id && n != null && n !== R.paso) irA(n, { historia: false }); else R.pasoHash = n; } });
 
 BE.recorridos = { ficha: fichaRecorrido, irA, pasoDe, salir, presentar, avanzar };
