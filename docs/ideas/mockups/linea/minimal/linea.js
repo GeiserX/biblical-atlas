@@ -308,6 +308,7 @@
   const X = (t) => (t - S.v0) * ppyNow();
   const T = (x) => S.v0 + x / ppyNow();
   const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
   function makeEl(it) {
     const b = document.createElement('button');
@@ -639,7 +640,7 @@
       const it = BY_ID.get(S.sel);
       const a = X(it.shape === 'moment' ? it.w0 : it.start), b = X(it.shape === 'moment' ? it.w1 : it.end);
       const x0 = clamp(a, -4, w + 4), x1 = clamp(Math.max(b, a + 3), -4, w + 4);
-      if (x1 > 0 && x0 < w) html += `<div class="sel-regla" style="left:${x0}px;width:${Math.max(3, x1 - x0)}px" title="${it.name}"></div>`;
+      if (x1 > 0 && x0 < w) html += `<div class="sel-regla" style="left:${x0}px;width:${Math.max(3, x1 - x0)}px" title="${esc(it.name)}"></div>`;
     }
     const x = X(S.t);
     const txt = cursorText(S.t);
@@ -768,7 +769,6 @@
     empty.hidden = !!it; full.hidden = !it;
     if (!it) { carriles.style.paddingBottom = ''; return; }
     const m = it.m || {};
-    const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const c = colorOf(it);
     const sample = it.shape === 'moment'
       ? `<span class="muestra punto" style="${hollow(it) ? `border:2px solid ${c}` : `background:${c}`}"></span>`
