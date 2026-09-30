@@ -10,6 +10,9 @@ names:
 - name: Manantial de Jezreel
   note: Fuente junto a la que acampó Israel antes de la batalla contra los filisteos (1Sa 29:1). Perspicacia duda entre ʽAin
     Jalud y ʽAin el-Meiyiteh.
+- name: Llanura de Meguidó
+  note: Así llama Zac 12:11 a esta llanura; Perspicacia «Meguidó», párr. 2, la da por la parte occidental del valle, la llanura
+    de Esdrelón (también 2Cr 35:22).
 type: valley
 lat: 32.596389
 lon: 35.241944
@@ -29,6 +32,8 @@ sources:
 - jueces-6
 - jueces-7
 - 1-samuel-29
+- zacarias-12
+- it-meguido
 links:
 - title: 'Perspicacia: «Jezreel»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002467

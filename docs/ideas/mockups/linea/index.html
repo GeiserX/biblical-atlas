@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Línea de tiempo: cinco diseños para elegir</title>
+<link rel="stylesheet" href="../kit/fonts.css">
+<script>
+  (function () {
+    var m = /(?:^|[#&])tema=(claro|oscuro)/.exec(location.hash);
+    var oscuro = m ? m[1] === 'oscuro' : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.dataset.tema = oscuro ? 'oscuro' : 'claro';
+  })();
+</script>
+<style>
+  :root { --paper: #eef2ec; --surface: #fbfcfa; --ink: #18221c; --ink-2: #3c4a41; --line: #c1ccc2; --link: #2a5d78; --focus: #2c6a78; color-scheme: light; }
+  :root[data-tema="oscuro"] { --paper: #1b1813; --surface: #211d17; --ink: #efe7d8; --ink-2: #cfc4b1; --line: #5a5042; --link: #8fb8d3; --focus: #6cb8bd; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.5 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; }
+  h1 { font: 600 30px/1.15 "EB Garamond", "Iowan Old Style", Georgia, serif; margin: 0 0 8px; }
+  h2 { font: 600 21px/1.2 "EB Garamond", "Iowan Old Style", Georgia, serif; margin: 28px 0 6px; }
+  p { margin: 8px 0; color: var(--ink-2); }
+  ol { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 10px; }
+  li a { display: block; min-height: 44px; padding: 12px 16px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  li a b { display: block; font-size: 17px; color: var(--link); }
+  li a span { color: var(--ink-2); font-size: 14.5px; }
+  li a:hover b { text-decoration: underline; }
+  a:focus-visible { outline: 2.5px solid var(--focus); outline-offset: 2px; }
+  code { font: 13.5px ui-monospace, "SF Mono", Menlo, monospace; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 1px 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Línea de tiempo: cinco diseños para elegir</h1>
+  <p>Cinco formas de dibujar y usar la línea de tiempo, con los mismos datos del sitio. Ninguna cambia el sitio. Todas cumplen lo mismo: pulsar una marca la elige y dice qué es, sin cambiar la escala ni mover la vista, y el nombre de cada marca se lee entero.</p>
+  <p>Los enlaces de arriba de cada diseño abren el siguiente en la misma fecha, la misma escala y con la misma marca elegida, para compararlos sin volver a buscar.</p>
+  <ol>
+    <li><a href="lanes/"><b>Carriles con nombre</b><span>Los carriles de hoy. Cada marca es una pieza con su nombre entero; lo que no cabe en las filas de una escala forma un grupo que dice su primer nombre.</span></a></li>
+    <li><a href="overview/"><b>Panorama y detalle</b><span>Arriba toda la historia con una ventana; abajo esa ventana, carril por carril, con el nombre debajo de cada marca.</span></a></li>
+    <li><a href="list/"><b>Cronología que se lee</b><span>El tiempo baja por la página: una línea por marca, con su nombre, su fecha y su tipo. Elegir no mueve nada.</span></a></li>
+    <li><a href="clusters/"><b>Grupos que se abren</b><span>Cuatro bandas. Donde las marcas se amontonan, un grupo dice cuántas son, de cuándo y cómo se llaman, y se abre ahí mismo.</span></a></li>
+    <li><a href="minimal/"><b>La de hoy, arreglada</b><span>La línea de hoy con sus mandos. Cada carril crece en filas hasta que cabe todo: nada se agrupa.</span></a></li>
+  </ol>
+  <h2>Los datos</h2>
+  <p>Los cinco leen <code>datos.js</code>, que sale de los datos del sitio: 1159 marcas (945 sucesos, 95 paradas de Pablo, 74 reyes, emperadores, gobernadores y sumos sacerdotes, 22 cartas, 15 eras e imperios y 8 viajes), con la fecha y el lugar en el tiempo que les da el sitio. Los sucesos de un mismo día van en el orden del relato, deducido de sus pasajes.</p>
+  <h2>Cómo se abren</h2>
+  <p>Sirviendo la carpeta <code>docs/ideas</code> entera, para que los prototipos encuentren la letra del kit, desde la raíz del repositorio: <code>python3 -m http.server 8000 --bind 127.0.0.1 -d docs/ideas</code>, y después <code>http://127.0.0.1:8000/mockups/linea/</code>.</p>
+</main>
+<script src="comun.js"></script>
+</body>
+</html>

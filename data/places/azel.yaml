@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: azel
+name: Azel
+names:
+- name: Azel
+type: valley
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+coord_note: 'Sin punto propio. El tipo valley sale del valle candidato: el texto no dice qué clase de lugar era Azel y el
+  esquema no tiene tipo neutro.'
+candidates:
+- name: Wadi Yasol (Nahal Azal)
+  geometry:
+    type: point
+    lat: 31.760833
+    lon: 35.231667
+  checked_on: '2026-09-30'
+  status: favored_level_1
+  sources:
+  - it-azel
+  - openbible-geo
+  reason: 'Perspicacia «Azel», núm. 2: lo pone cerca de Jerusalén y ve cierto parecido entre su nombre y el de este valle,
+    sin identificarlos.'
+  coord_source: openbible:ad041dd
+  coord_url: https://www.openbible.info/geo/ancient/ad041dd/azal
+  note: Punto de Nahal Azal (Wadi Yasol), primera identificación de OpenBible.
+summary: Lugar cercano a Jerusalén hasta donde llegaría el valle abierto al partirse el monte de los Olivos. Su nombre suena
+  parecido al de un valle que nace en ese monte y baja al Cedrón.
+reason: 'Perspicacia «Azel», núm. 2; Zac 14:5. Sin punto seguro: el valle que recuerda el nombre va como candidato, con el punto de OpenBible.'
+not_claimed:
+- 'Que Azel sea el Wadi Yasol: Perspicacia solo nota cierto parecido entre los dos nombres.'
+sources:
+- it-azel
+- openbible-geo
+- zacarias-14
+links:
+- title: 'Perspicacia: «Azel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000492
+  type: perspicacia
+- title: Zacarías 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/14
+  type: bible
+checked_on: '2026-09-30'
+status: verified

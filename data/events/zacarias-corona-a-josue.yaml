@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: zacarias-corona-a-josue
+title: Zacarías corona al sumo sacerdote Josué
+date:
+  from: -518
+  to: -517
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 519 y 518 a.e.c. (tiempo narrativo: tras las visiones del 24 de sebat de 519)'
+narrative_order:
+  series: zacarias
+  order: 6009
+places:
+- jerusalen
+people:
+- zacarias-profeta
+- josue-sumo-sacerdote
+- heldai-de-la-corona
+- tobiya-de-la-corona
+- jedaya-de-la-corona
+- josias-hijo-de-sofonias
+- hen
+present:
+- zacarias-profeta
+- josue-sumo-sacerdote
+- heldai-de-la-corona
+- tobiya-de-la-corona
+- jedaya-de-la-corona
+- josias-hijo-de-sofonias
+passages:
+- Zac 6:9-15
+summary: Con la plata y el oro que Heldái, Tobiya y Jedayá traen de los desterrados, Zacarías hace una corona y la pone a
+  Josué. Anuncia al Brote, rey y sacerdote, que construirá el templo.
+reason: Va tras las visiones de 519 y antes del mensaje de 518. La Atalaya de 2017 dice que se le coronó a la vista de otros;
+  la de 2007, que no fue rey y prefiguraba al Mesías.
+sources:
+- zacarias-6
+- it-zacarias-libro
+- si-zacarias
+- w07-ageo-y-zacarias
+- w17-cuatro-carros-y-una-corona
+- it-heldai
+- it-josias
+links:
+- title: Zacarías 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

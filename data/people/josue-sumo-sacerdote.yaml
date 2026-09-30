@@ -25,6 +25,14 @@ sources:
 - si-3
 - it-jehozadaq
 - ageo-2
+- zacarias-3
+- si-zacarias
+- zacarias-4
+- w22-lo-que-zacarias-vio
+- zacarias-6
+- w07-ageo-y-zacarias
+- w17-cuatro-carros-y-una-corona
+- it-rama-brote
 links:
 - title: 'Perspicacia: «Jesúa»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002446
@@ -70,6 +78,8 @@ relations:
   - ageo-1
   - ageo-2
   - it-zorobabel
+  - zacarias-4
+  - w22-lo-que-zacarias-vio
   reason: Esd 3:2, 8 y 5:2 los nombran juntos al frente del altar y de la obra del templo, que se acaba en 515 (estudio 3,
     tabla). Perspicacia «Jesúa» y «Zorobabel».
   checked_on: '2026-09-29'
@@ -82,6 +92,7 @@ relations:
   - ageo-1
   - it-jehozadaq
   - ageo-2
+  - zacarias-6
   reason: Ag 1:1, 12, 14 lo llaman hijo de Jehozadac.
   checked_on: '2026-09-29'
   status: verified
@@ -100,3 +111,6 @@ distinct_from:
 - josue-el-betsemita
 - josue-hijo-de-nun
 - josue-jefe-de-jerusalen
+not_claimed:
+- 'Que Josué llegara a ser rey: no venía de la línea de David, y su corona era figura del Brote, el Mesías (La Atalaya de
+  2007 y de 2017).'

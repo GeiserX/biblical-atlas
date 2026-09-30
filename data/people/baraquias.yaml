@@ -32,3 +32,5 @@ relations:
     de 2Cr 24:20.
   checked_on: '2026-09-30'
   status: verified
+distinct_from:
+- berekias-hijo-de-ido

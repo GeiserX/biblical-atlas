@@ -124,5 +124,8 @@ history:
     1, lo deja en el camino o al llegar.
   source: 2-reyes-23
 perspicacia: 1200002525#1
+disambiguation: El rey de Judá, hijo de Amón; no Josías hijo de Sofonías, que vivía en Jerusalén después del destierro.
 checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- josias-hijo-de-sofonias

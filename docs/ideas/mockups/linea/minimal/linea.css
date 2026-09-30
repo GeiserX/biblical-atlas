@@ -1,0 +1,198 @@
+/* La de hoy, arreglada. Colores y letra del kit del sitio (site/kit/tokens.css) y del tema oscuro del sitio
+   (.be-reunion en site/css/estudio.css), copiados aquí porque el prototipo se sirve desde docs/ideas. */
+:root {
+  --font-serif: "EB Garamond", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --paper: #eef2ec; --paper-2: #e2e8e0; --surface: #fbfcfa; --surface-2: #f4f7f2;
+  --ink: #18221c; --ink-2: #3c4a41; --ink-3: #5b6a60; --ink-4: #97a59b;
+  --line: #d8e0d7; --line-2: #c1ccc2; --focus: #2c6a78;
+  --accent: #4a6f57; --accent-soft: #e1ebe3;
+  --gold: #1f3b30; --gold-soft: #e3ece4; --gold-ink: #1f3b30; --gold-line: #c6d6c9;
+  --link: #2a5d78;
+  --rejilla: rgba(193, 204, 194, .45);
+  --shadow-2: 0 1px 2px rgba(20, 40, 25, .06), 0 6px 18px rgba(20, 40, 25, .10);
+  --r-sm: 6px; --r-md: 10px; --r-pill: 999px;
+  --fila: 22px;          /* alto de una fila de un carril */
+  --nombres: 156px;      /* ancho de la columna de nombres de carril */
+  --regla-h: 40px;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --paper: #1b1813; --paper-2: #24201a; --surface: #211d17; --surface-2: #28231c;
+  --ink: #efe7d8; --ink-2: #cfc4b1; --ink-3: #b1a58d; --ink-4: #9c907c;
+  --line: #3a3328; --line-2: #5a5042; --focus: #6cb8bd;
+  --accent: #a3432b; --accent-soft: #3b2a22;
+  --gold: #b8892f; --gold-soft: #3a3020; --gold-ink: #e8c983; --gold-line: #6b5629;
+  --link: #8fb8d3;
+  --rejilla: rgba(211, 198, 176, .16);
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, .25), 0 6px 18px rgba(0, 0, 0, .35);
+  color-scheme: dark;
+}
+@media (pointer: coarse) { :root { --fila: 44px; --nombres: 100px; --regla-h: 45px; } }
+@media (max-width: 700px) { :root { --nombres: 100px; } }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--paper); color: var(--ink); font: 400 14px/1.45 var(--font-sans); display: flex; flex-direction: column; overflow: hidden; }
+button, select { font: inherit; color: inherit; }
+a { color: var(--link); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.saltar { position: absolute; left: 12px; top: -60px; z-index: 40; background: var(--surface); color: var(--link); font-weight: 700; padding: 12px 14px; border-radius: var(--r-md); box-shadow: var(--shadow-2); }
+.saltar:focus { top: 8px; }
+:focus-visible { outline: 2.5px solid var(--focus); outline-offset: 2px; }
+
+/* ---------- Cabecera del prototipo ---------- */
+.cabecera { display: flex; gap: 24px; align-items: flex-start; justify-content: space-between; padding: 10px 18px 8px; border-bottom: 1px solid var(--line); background: var(--surface); flex: none; }
+.cabecera h1 { font: 600 22px/1.15 var(--font-serif); margin: 0 0 2px; }
+.cabecera p { margin: 0; font-size: 12.5px; color: var(--ink-2); max-width: 1040px; }
+.cabecera .regla-clic { margin-top: 3px; color: var(--ink); }
+.otros { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: flex-end; font-size: 12.5px; max-width: 360px; }
+.otros a { padding: 2px 0; }
+.otros a[aria-current] { color: var(--ink); font-weight: 600; text-decoration: none; }
+
+/* ---------- Escena: línea a la izquierda, ficha a la derecha (fija: abrirla no cambia el ancho de la franja) ---------- */
+.escena { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
+.linea { display: flex; flex-direction: column; min-height: 0; min-width: 0; border-right: 1px solid var(--line); }
+
+/* ---------- Barra de mandos ---------- */
+.barra { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; padding: 6px 12px; border-bottom: 1px solid var(--line); background: var(--surface); flex: none; min-height: 50px; }
+.mandos { display: flex; gap: 10px; align-items: center; flex: none; }
+.grupo { display: flex; gap: 2px; align-items: center; }
+.paso { border: 1px solid var(--line-2); background: transparent; border-radius: var(--r-pill); padding: 0 10px; min-height: 32px; font-size: 12.5px; cursor: pointer; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.paso:hover { background: var(--paper-2); }
+.ir { display: flex; gap: 4px; align-items: center; flex: none; }
+.ir input { width: 130px; min-height: 32px; padding: 0 10px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: var(--surface); color: var(--ink); font: 500 12.5px var(--font-sans); }
+.ir input::placeholder { color: var(--ink-3); }
+.ir button { min-height: 32px; min-width: 44px; padding: 0 12px; border: 1px solid var(--line-2); border-radius: var(--r-pill); background: transparent; cursor: pointer; font-size: 12.5px; }
+.menu-carriles { position: relative; flex: none; }
+.menu-carriles summary { list-style: none; min-height: 32px; display: flex; align-items: center; padding: 0 12px; border: 1px solid var(--line-2); border-radius: var(--r-pill); cursor: pointer; font-size: 12.5px; }
+.menu-carriles summary::-webkit-details-marker { display: none; }
+.menu-carriles summary::after { content: " ▾"; margin-left: 4px; }
+.menu-lista { position: absolute; top: calc(100% + 4px); left: 0; z-index: 30; width: 300px; max-height: 60vh; overflow: auto; background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--r-md); box-shadow: var(--shadow-2); padding: 6px; }
+.menu-opcion { display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 6px; font-size: 13px; cursor: pointer; border-radius: var(--r-sm); }
+.menu-opcion:hover { background: var(--paper-2); }
+.menu-opcion small { margin-left: auto; color: var(--ink-3); font-size: 11.5px; }
+.menu-opcion input { width: 20px; height: 20px; margin: 0; flex: none; }   /* el blanco es la fila entera, de 44 px en táctil */
+.sin-nada { margin: 0; padding: 8px 12px; font-size: 12px; color: var(--ink-3); }
+.icono { width: 36px; height: 36px; border-radius: var(--r-pill); border: 0; background: transparent; display: grid; place-items: center; cursor: pointer; }
+.icono:hover { background: var(--paper-2); }
+.icono svg { width: 18px; height: 18px; fill: currentColor; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+.reproducir { width: 40px; height: 40px; background: var(--accent); color: #fff; }
+.reproducir:hover { background: var(--accent); filter: brightness(1.1); }
+.reproducir svg { stroke: none; }
+.reproducir .p-pausa, .reproducir[aria-pressed="true"] .p-play { display: none; }
+.reproducir[aria-pressed="true"] .p-pausa { display: inline; }
+.escalas { display: flex; background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 2px; }
+.escalas button { border: 0; background: transparent; padding: 5px 11px; border-radius: var(--r-pill); font-size: 12.5px; cursor: pointer; color: var(--ink-2); min-height: 30px; }
+.escalas button:hover { color: var(--ink); }
+.escalas button[aria-pressed="true"] { background: var(--gold); color: var(--surface); font-weight: 600; }
+:root[data-theme="dark"] .escalas button[aria-pressed="true"] { color: #1b1813; }
+.escala-movil { display: none; }
+.escala-movil select { height: 44px; border-radius: var(--r-pill); border: 1px solid var(--line-2); background: var(--paper-2); padding: 0 12px; font-weight: 600; }
+.lectura { margin: 0; font-size: 12px; color: var(--ink-3); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.minimapa { position: relative; width: 190px; height: 22px; border-radius: 4px; background: var(--paper-2); border: 1px solid var(--line); flex: none; cursor: pointer; overflow: hidden; touch-action: none; }
+.minimapa .mm-era { position: absolute; top: 3px; bottom: 3px; opacity: .8; }
+.minimapa .mm-marco { position: absolute; top: 0; bottom: 0; min-width: 3px; border: 2px solid var(--ink); border-radius: 2px; background: rgba(255, 255, 255, .25); }
+.minimapa .mm-cursor { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--gold); }
+.tema { border: 1px solid var(--line-2); background: transparent; border-radius: var(--r-pill); padding: 0 12px; height: 32px; font-size: 12.5px; cursor: pointer; flex: none; }
+
+/* ---------- Cuerpo: regla pegada arriba, carriles que bajan ---------- */
+.cuerpo { position: relative; flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; background: var(--surface); overscroll-behavior: contain; }
+.regla { position: sticky; top: 0; z-index: 6; display: flex; height: var(--regla-h); background: var(--surface); border-bottom: 1px solid var(--line-2); }
+.regla-esquina { width: var(--nombres); flex: none; padding: 12px 10px 0; font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); border-right: 1px solid var(--line); }
+.regla-pista { position: relative; flex: 1; min-width: 0; overflow: hidden; cursor: ew-resize; touch-action: none; }
+.marca-eje { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--line-2); }
+.marca-eje span { position: absolute; left: 4px; bottom: 5px; font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+.marca-eje.menor { top: auto; height: 7px; }
+.marca-eje.menor span { display: none; }
+.sel-regla { position: absolute; bottom: 0; height: 4px; background: var(--ink); border-radius: 2px; }
+.bandera { position: absolute; top: 3px; transform: translateX(-50%); background: var(--gold); color: var(--surface); font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 5px; white-space: nowrap; z-index: 2; pointer-events: none; }
+:root[data-theme="dark"] .bandera { color: #1b1813; }
+.bandera.fuera { transform: none; }
+.cursor-linea { position: absolute; top: 0; width: 2px; background: var(--gold); pointer-events: none; z-index: 4; }
+
+.carril { display: flex; border-bottom: 1px solid var(--line); }
+.carril[hidden], .sin-nada[hidden] { display: none; }
+.carril:nth-child(even) .carril-pista { background: var(--surface-2); }
+.carril-nombre { width: var(--nombres); flex: none; border-right: 1px solid var(--line); background: var(--surface); position: relative; }
+.carril-rotulo { position: sticky; top: var(--regla-h); display: block; width: 100%; padding: 3px 8px 3px 10px; min-height: var(--fila); font-size: 12.5px; font-weight: 600; color: var(--ink-2); line-height: 1.25; hyphens: manual; overflow-wrap: normal; word-break: normal; }
+.carril-rotulo small { display: block; font-weight: 400; font-size: 11px; color: var(--ink-3); }
+.carril-pista { position: relative; flex: 1; min-width: 0; overflow: hidden; touch-action: pan-y; cursor: grab; }
+.carril-pista.arrastrando { cursor: grabbing; }
+.rejilla { position: absolute; top: 0; bottom: 0; border-left: 1px solid var(--rejilla); pointer-events: none; }
+
+/* ---------- Marcas: un botón por marca (dibujo + nombre) ---------- */
+/* Las marcas van por encima de la rejilla: ninguna raya de la regla tacha un nombre. */
+.m { position: absolute; z-index: 1; padding: 0; margin: 0; border: 0; background: transparent; cursor: pointer; text-align: left; color: var(--ink); font-size: 12px; }
+.m:focus-visible { outline: 2.5px solid var(--focus); outline-offset: 0; border-radius: 4px; z-index: 3; }
+.m > * { position: absolute; pointer-events: none; }
+.m-barra { top: calc(50% - 8px); height: 16px; border-radius: 3px; }
+.m-barra.hueca { border: 1.5px solid; }
+.m-ventana { top: calc(50% - 5px); height: 10px; }
+.m-ventana::before { content: ""; position: absolute; left: 0; right: 0; top: 4px; height: 2px; background: currentColor; opacity: .75; }
+.m-ventana.topes { border-left: 2px solid currentColor; border-right: 2px solid currentColor; }
+.m-punto { top: calc(50% - 5px); width: 10px; height: 10px; border-radius: 50%; }
+.m-punto.hueco { border: 2px solid; }
+.m-nombre { top: 0; height: 100%; display: flex; align-items: center; white-space: nowrap; font-weight: 500; letter-spacing: 0; }
+.m-nombre i { font-style: italic; font-weight: 400; }
+.carril-pista { --fondo: var(--surface); }
+.carril:nth-child(even) .carril-pista { --fondo: var(--surface-2); }
+.m-nombre.fuera .t { background: var(--fondo); padding: 0 2px; margin: 0 -2px; border-radius: 3px; }
+.m[aria-pressed="true"] { z-index: 2; }
+/* Los meses son la regla del calendario: un contorno los separa del fondo, que su relleno casi no se distingue. */
+.carril[data-lane="meses"] .m-barra { box-shadow: inset 0 0 0 1px var(--ink-3); }
+.m[aria-pressed="true"]::after { content: ""; position: absolute; inset: 1px -3px; border: 2px solid var(--ink); border-radius: 5px; background: var(--gold-soft); z-index: -1; }
+.m[aria-pressed="true"] .m-nombre { text-decoration: underline 2px; text-underline-offset: 3px; }
+@media (pointer: coarse) {
+  .m-barra { top: calc(50% - 11px); height: 22px; }
+  .m-punto { top: calc(50% - 6px); width: 12px; height: 12px; }
+  .m-ventana { top: calc(50% - 6px); height: 12px; }
+  .m-ventana::before { top: 5px; }
+}
+
+/* ---------- Ficha ---------- */
+.ficha { background: var(--surface); overflow-y: auto; padding: 16px 18px; min-height: 0; }
+.ficha-tipo { font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 4px; padding-right: 40px; }
+.ficha h2 { font: 600 21px/1.2 var(--font-serif); margin: 0 0 10px; padding-right: 36px; }
+.ficha dl { margin: 0 0 10px; display: grid; grid-template-columns: 84px 1fr; gap: 4px 10px; font-size: 13px; }
+.ficha dt { color: var(--ink-3); }
+.ficha dd { margin: 0; }
+.ficha .resumen { font-size: 14px; margin: 10px 0; }
+.ficha .clic { font-size: 12.5px; color: var(--ink-2); background: var(--paper-2); border-radius: var(--r-sm); padding: 8px 10px; margin-top: 12px; }
+.ficha-llena { position: relative; }
+.cerrar { position: absolute; top: -6px; right: -6px; width: 44px; height: 44px; border: 0; background: transparent; border-radius: 50%; font-size: 22px; cursor: pointer; color: var(--ink-2); }
+.cerrar:hover { background: var(--paper-2); }
+.muestra { display: inline-block; vertical-align: middle; margin-right: 6px; }
+.muestra.punto { width: 10px; height: 10px; border-radius: 50%; }
+.muestra.barra { width: 26px; height: 10px; border-radius: 2px; }
+.agarre { display: none; }
+
+/* ---------- Teléfono: la ficha es una hoja que tapa la parte de abajo; la franja no cambia de ancho ---------- */
+@media (max-width: 700px) {
+  .cabecera { flex-direction: column; gap: 4px; padding: 8px 12px 6px; }
+  .cabecera h1 { font-size: 19px; }
+  .cabecera p { font-size: 11.5px; line-height: 1.35; }
+  .cabecera p:nth-of-type(2) { display: none; }
+  .otros { justify-content: flex-start; max-width: none; gap: 0 4px; font-size: 12.5px; flex-wrap: wrap; width: 100%; }
+  .otros a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 0 6px; white-space: nowrap; }
+  .escena { grid-template-columns: minmax(0, 1fr); }
+  .linea { border-right: 0; }
+  .barra { gap: 6px; padding: 4px 8px; flex-wrap: wrap; }
+  .mandos { flex-wrap: wrap; gap: 6px; }
+  .paso, .ir input, .ir button, .menu-carriles summary { min-height: 44px; }
+  .ir input { font-size: 16px; width: 150px; }
+  .menu-lista { position: fixed; left: 8px; right: 8px; top: auto; width: auto; }
+  .menu-opcion { min-height: 44px; }
+  .escalas, .minimapa, .lectura { display: none; }
+  .escala-movil { display: block; flex: 1; }
+  .escala-movil select { width: 100%; }
+  .icono { width: 44px; height: 44px; }
+  .reproducir { width: 44px; height: 44px; }
+  .tema { height: 44px; }
+  .ficha { position: fixed; left: 0; right: 0; bottom: 0; max-height: 46vh; border-top: 1px solid var(--line-2); border-radius: 14px 14px 0 0; box-shadow: 0 -8px 24px rgba(0, 0, 0, .18); z-index: 20; padding: 14px 16px 18px; }
+  .ficha.arriba { top: 0; bottom: auto; border-top: 0; border-bottom: 1px solid var(--line-2); border-radius: 0 0 14px 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, .18); }
+  .ficha.vacia { display: none; }
+  .ficha h2 { font-size: 19px; }
+}
+@media (max-width: 700px) { .carril-rotulo { font-size: 11.5px; padding: 3px 6px 3px 8px; } }
+.m-nombre.varias .t { white-space: normal; line-height: 13.5px; }

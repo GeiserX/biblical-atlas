@@ -1,0 +1,27 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ido-padre-de-berekias
+name: Idó
+names:
+- name: Idó
+perspicacia: 1200002135#4
+disambiguation: Abuelo del profeta Zacarías. No es el Idó de las visiones que consultó el compilador de Crónicas ni el jefe
+  de los netineos de Casifía.
+summary: Abuelo del profeta Zacarías por su hijo Berekías. Zacarías lo incluye en su linaje al fechar sus mensajes.
+reason: Perspicacia «Idó», núm. 4; Zac 1:1, 7.
+not_claimed:
+- 'Que sea el sacerdote Idó que volvió con Zorobabel en 537 a.e.c.: Perspicacia «Idó» lo ve posible, no seguro.'
+- 'Que Idó fuera profeta: Perspicacia «Berekías», núm. 7, lo llama así, pero «Idó» y «Zacarías», núm. 20, dan el título a
+  su nieto.'
+sources:
+- it-ido
+- zacarias-1
+- it-berekias
+links:
+- title: 'Perspicacia: «Idó»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002135
+  type: perspicacia
+- title: Zacarías 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/38/1
+  type: bible
+checked_on: '2026-09-29'
+status: verified

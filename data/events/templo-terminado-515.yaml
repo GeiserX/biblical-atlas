@@ -21,6 +21,7 @@ people:
 - zacarias-profeta
 passages:
 - Esd 6:13-22
+- Zac 4:9, 10
 summary: El templo reconstruido se terminó en el sexto año de Darío I, con el apoyo de los profetas y del rey. Los judíos
   lo inauguraron y celebraron la Pascua; estuvo en pie casi quinientos años.
 reason: Perspicacia «Templo», apartado «El templo edificado por Zorobabel», y «Darío», núm. 2; Esd 6:15 da el día 3 de adar.
@@ -30,6 +31,8 @@ sources:
 - it-templo
 - it-dario
 - esdras-6
+- zacarias-4
+- it-plomada
 links:
 - title: 'Perspicacia: «Templo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004359
@@ -37,5 +40,5 @@ links:
 - title: Esdras 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/6
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-29'
 status: verified
