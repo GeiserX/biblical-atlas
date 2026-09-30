@@ -1,0 +1,61 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: uza-hijo-de-abinadab
+name: Uzá
+names:
+- name: Uzá
+- name: Uzah
+  note: Otra forma que da la nota de 2Sa 6:3; es la del artículo de Perspicacia.
+perspicacia: 1200004531#2
+disambiguation: Uzá hijo de Abinadab (Perspicacia «Uzah», núm. 2); no el levita merarita ni los Uzá del artículo «Uzá».
+summary: Hijo de Abinadab, seguramente levita. Con su hermano Ahió llevaba la carreta del Arca; cuando los toros casi la vuelcan,
+  la sujetó y Jehová lo mató allí por esa falta de respeto.
+reason: Perspicacia «Uzah», núm. 2; 2Sa 6:3-8, con su paralelo 1Cr 13:7-11.
+sources:
+- it-uzah
+- 2-samuel-6
+links:
+- title: 'Perspicacia: «Uzah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004531
+  type: perspicacia
+relations:
+- type: kin
+  person: abinadab-de-quiryat-jearim
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-6
+  - it-uzah
+  reason: '2Sa 6:3: el texto llama a los dos hijos de Abinadab; ellos conducen la carreta del Arca.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: ahio-hijo-de-abinadab
+  word: brother
+  inferred: false
+  sources:
+  - 2-samuel-6
+  - it-uzah
+  reason: 2Sa 6:3 los nombra juntos como hijos de Abinadab; Perspicacia «Uzah», núm. 2, llama a Ahió su hermano.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: quiryat-jearim
+  inferred: true
+  sources:
+  - 2-samuel-6
+  - it-abinadab
+  reason: '2Sa 6:2, 3: el Arca sale de la casa de su padre, en la colina de Baale-Judá, que es Quiryat-Jearim.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: perez-uza
+  inferred: false
+  sources:
+  - 2-samuel-6
+  - it-uzah
+  - it-perez-uzah
+  reason: '2Sa 6:6-8: murió junto al Arca en la era de Nacón, que desde entonces se llamó Pérez-Uzá.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -19,6 +19,7 @@ sources:
 - it-nadab
 - 1-reyes-15
 - tnm-a6-a
+- 1-reyes-14
 links:
 - title: 'Perspicacia: «Nadab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003159
@@ -34,8 +35,9 @@ relations:
   sources:
   - it-nadab
   - 1-reyes-14
+  - 1-reyes-15
   reason: Hijo de Jeroboán (1Re 14:20).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: jeroboan-i
@@ -47,8 +49,17 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: died_in
+  place: guibeton
+  inferred: false
+  sources:
+  - 1-reyes-15
+  - it-nadab
+  reason: '1Re 15:27: Baasá lo mató en Guibetón mientras la cercaba.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200003159#4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - nadab-hijo-de-aaron

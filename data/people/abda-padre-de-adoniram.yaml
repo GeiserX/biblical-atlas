@@ -1,0 +1,19 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abda-padre-de-adoniram
+name: Abdá
+names:
+- name: Abdá
+perspicacia: 1200000012#1
+disambiguation: Abdá, padre de Adoniram; no el levita descendiente de Jedutún que volvió de Babilonia (Perspicacia, núm. 2).
+summary: Padre de Adoniram, el jefe de los reclutados para trabajo obligatorio. Perspicacia deduce que vivió en tiempos del
+  rey David.
+reason: Perspicacia «Abdá», núm. 1; 1Re 4:6.
+sources:
+- it-abda
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Abdá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000012
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

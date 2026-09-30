@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-salomon
+title: Muere Salomón y reina Rehoboam
+type: death
+date:
+  from: -997
+  to: -996
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 998-997 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 11041
+places:
+- jerusalen
+people:
+- salomon
+- rehoboam
+roles:
+  salomon: died
+passages:
+- 1Re 11:41-43
+- 2Cr 9:29-31
+summary: Tras reinar 40 años en Jerusalén sobre todo Israel, Salomón muere y lo entierran en la Ciudad de David. Su hijo Rehoboam
+  ocupa el trono. Sus hechos y su sabiduría quedaron escritos en un registro de su reinado.
+reason: Perspicacia «Jeroboán», núm. 1, pone la muerte hacia 998 a.e.c.; el estudio 3 (párr. 8 y tabla) acaba en 997 el último
+  año de Salomón y fecha allí la sucesión de Rehoboam (1Re 11:42, 43).
+sources:
+- 1-reyes-11
+- si-3
+- it-jeroboan
+- it-salomon
+- tnm-a6-a
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

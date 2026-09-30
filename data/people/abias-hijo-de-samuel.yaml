@@ -9,6 +9,7 @@ disambiguation: Segundo hijo del profeta Samuel; no Abías, el rey de Judá, ni 
 distinct_from:
 - abias-de-juda
 - abias-de-tiempos-de-david
+- abias-hijo-de-jeroboan
 summary: Segundo hijo de Samuel. Con su hermano Joel fue juez en Beer-Seba, pero los dos se dejaron sobornar, y eso llevó
   a los ancianos a pedir un rey.
 reason: Perspicacia «Abías», núm. 3; 1Sa 8:1-5.
@@ -41,5 +42,5 @@ relations:
   reason: '1Sa 8:2: era juez en Beer-Seba con su hermano.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

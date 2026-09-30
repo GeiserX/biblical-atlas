@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-anuncia-la-sequia-a-acab
+title: Elías anuncia a Acab que no lloverá
+type: speech
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 17001
+places:
+- israel
+people:
+- elias-profeta
+- acab
+present: []
+roles:
+  elias-profeta: spoke
+passages:
+- 1Re 17:1
+- Lu 4:25
+- Snt 5:17
+summary: Elías, un tisbita de Galaad, jura ante Acab por el Dios de Israel que en esos años no habrá rocío ni lluvia sin su
+  palabra. La sequía duró tres años y seis meses.
+reason: 'El texto no dice dónde hablaron: israel es la tierra de la sequía y present va vacío. Duración: Perspicacia «Acab»,
+  núm. 1, párr. 4 (Lu 4:25; Snt 5:17). Reinado de Acab: A6-A.'
+sources:
+- 1-reyes-17
+- it-acab
+- it-elias
+- tnm-a6-a
+links:
+- title: 1 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

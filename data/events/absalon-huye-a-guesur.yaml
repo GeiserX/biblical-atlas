@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: absalon-huye-a-guesur
+title: Absalón huye a Guesur, junto a su abuelo Talmái
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 13037
+places:
+- guesur
+people:
+- absalon
+- talmai-hijo-de-amihud
+- david
+present:
+- absalon
+- talmai-hijo-de-amihud
+passages:
+- 2Sa 13:37-39
+summary: Absalón escapa a Guesur, donde reina su abuelo Talmái, y vive allí tres años. David llora a Amnón mucho tiempo, hasta
+  que se consuela y empieza a añorar a Absalón.
+reason: 'Sin año en las fuentes: entre el pacto con David, hacia 1070 según B7, y el final de 2 Samuel, c. 1040 (tabla de
+  libros). Perspicacia «Guesur», núm. 1, y «Talmai», núm. 2.'
+sources:
+- 2-samuel-13
+- it-absalon
+- it-guesur
+- it-talmai
+- tnm-b7
+- tnm-tabla
+links:
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+- title: 'Perspicacia: «Guesur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001667
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

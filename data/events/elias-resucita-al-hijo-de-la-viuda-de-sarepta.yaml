@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-resucita-al-hijo-de-la-viuda-de-sarepta
+title: Elías devuelve la vida al hijo de la viuda de Sarepta
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: durante el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 17017
+places:
+- sarepta
+people:
+- elias-profeta
+present:
+- elias-profeta
+roles: {}
+passages:
+- 1Re 17:17-24
+- Heb 11:35
+summary: El hijo de la viuda enferma y deja de respirar. Elías lo sube a su cuarto de la azotea, se tiende sobre él tres veces
+  y ruega a Jehová, que lo revive. La madre reconoce al hombre de Dios.
+reason: 'Perspicacia «Elías», núm. 1, párr. 3 y 12: primera resurrección registrada; Heb 11:35 debe de aludir a ella. El niño
+  no tiene ficha, así que roles va vacío. Fecha: reinado de Acab (A6-A).'
+sources:
+- 1-reyes-17
+- it-elias
+- tnm-a6-a
+links:
+- title: 1 Reyes 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/17
+  type: bible
+checked_on: '2026-09-30'
+status: verified

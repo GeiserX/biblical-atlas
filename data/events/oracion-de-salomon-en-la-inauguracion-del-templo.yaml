@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: oracion-de-salomon-en-la-inauguracion-del-templo
+title: Oración de Salomón en la inauguración del templo
+date:
+  from: -1025
+  to: -1025
+  precision: month
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1026 a.e.c.
+  detail:
+    month: tisri
+narrative_order:
+  series: 1-reyes
+  order: 8012
+places:
+- monte-moria
+- jerusalen
+people:
+- salomon
+type: speech
+roles:
+  salomon: spoke
+passages:
+- 1Re 8:12-61
+- 2Cr 6:1-42
+summary: De pie ante el altar, Salomón bendice al pueblo, recuerda la promesa hecha a David y pide a Jehová que escuche desde
+  el cielo a quien ore hacia esa casa, sea israelita o extranjero.
+reason: 'Perspicacia «Salomón», apartados «Inauguración del templo» y «La oración de Salomón»: fue en Etanim (1Re 8:2) de
+  1026 a.e.c., cuando habían pasado once meses desde el final de la obra (bul de 1027).'
+sources:
+- 1-reyes-8
+- it-salomon
+links:
+- title: 'Perspicacia: «Salomón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
+  type: perspicacia
+- title: 1 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/8
+  type: bible
+checked_on: '2026-09-30'
+status: verified

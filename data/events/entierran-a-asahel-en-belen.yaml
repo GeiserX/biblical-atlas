@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: entierran-a-asahel-en-belen
+title: Entierran a Asahel en Belén, y Joab vuelve a Hebrón
+date:
+  from: -1076
+  to: -1074
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1077-1075 a.e.c. (tiempo narrativo: en los dos años de reinado de Is-Bóset)'
+  note: «David», párr. 20, e «Is-bóset», párr. 3, ponen la muerte de Is-Bóset unos dos años después de 1077; «Hebrón», núm.
+    3, párr. 5, pone el paso de Abner a David hacia el final del reinado en Hebrón (1070).
+narrative_order:
+  series: 2-samuel
+  order: 2030
+places:
+- belen
+- hebron
+present:
+- joab-hijo-de-zeruya
+people:
+- joab-hijo-de-zeruya
+- asahel-hijo-de-zeruya
+passages:
+- 2Sa 2:30-32
+summary: Tras la batalla faltan diecinueve hombres de David, además de Asahel; del lado de Abner murieron 360. Entierran a
+  Asahel en la tumba de su padre en Belén, y Joab y los suyos caminan de noche hasta Hebrón.
+reason: 2Sa 2:30-32; Perspicacia «Abner», párr. 5, que ve posible el entierro al día siguiente, y «Zeruyá». Misma fecha que
+  el combate de Gabaón.
+sources:
+- 2-samuel-2
+- it-abner
+- it-zeruya
+- it-david
+- si-3
+- it-is-boset
+- it-hebron
+links:
+- title: 2 Samuel 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/2
+  type: bible
+- title: 'Perspicacia: «Abner»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000057
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

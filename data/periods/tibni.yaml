@@ -11,15 +11,21 @@ date:
   type: anchored
   chronology: tnm
   text: c. 951-947 a.e.c.
-places:
-- tirza
+places: []
 summary: Rey rival de Omrí durante cuatro años; los dos periodos se solapan.
 reason: 'A6-A cuenta «Omrí y Tibní: 4 años» desde c. 951; Perspicacia «Omrí» sitúa la muerte de Tibní hacia 947, año 31 de
-  Asá.'
+  Asá. Ni el texto ni Perspicacia sitúan a Tibní: el periodo no lleva lugar.'
 sources:
 - tnm-a6-a
 - 1-reyes-16
 - it-tibni
 search: Tibní rey
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: Tirzá era la sede de Omrí (1Re 16:23); ni el texto ni Perspicacia «Tibní» dicen dónde estaba Tibní.
+  source: 1-reyes-16
+- date: '2026-09-30'
+  change: La razón dice por qué el periodo no lleva lugar.
+  source: 1-reyes-16
+checked_on: '2026-09-30'
 status: verified

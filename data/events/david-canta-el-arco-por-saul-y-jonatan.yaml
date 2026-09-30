@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-canta-el-arco-por-saul-y-jonatan
+title: David canta «El arco», su endecha por Saúl y Jonatán
+date:
+  from: -1077
+  to: -1077
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1078 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 1017
+places:
+- ziclag
+people:
+- david
+passages:
+- 2Sa 1:17-27
+summary: David compone una endecha por Saúl y Jonatán, llamada «El arco», y manda enseñarla a los de Judá; quedó escrita en
+  el libro de Jasar. Pide que no llueva en Guilboa y llora a Jonatán como a un hermano.
+reason: '2Sa 1:17-27; Perspicacia «David», párr. 19. El texto no dice dónde la compuso: David seguía en Ziclag (2Sa 1:1) hasta
+  que subió a Hebrón. Días después de morir Saúl, hacia 1078.'
+sources:
+- 2-samuel-1
+- it-david
+- it-jonatan
+links:
+- title: 2 Samuel 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/1
+  type: bible
+- title: 'Perspicacia: «David»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001130
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

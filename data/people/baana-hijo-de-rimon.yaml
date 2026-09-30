@@ -1,0 +1,69 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: baana-hijo-de-rimon
+name: Baaná
+names:
+- name: Baaná
+- name: Baanah
+  note: Otra forma que da la nota de 2 Samuel 4:2; es la de Perspicacia.
+perspicacia: 1200000525#1
+disambiguation: El asesino de Is-Bóset, hijo de Rimón; no el netofatita padre de Héleb ni los Baaná de los tiempos de Salomón
+  y del regreso.
+summary: Benjamita, hijo de Rimón de Beerot, jefe de una banda de saqueadores de Is-Bóset. Con su hermano Recab mató al rey
+  dormido y llevó su cabeza a David, que los hizo ejecutar.
+reason: Perspicacia «Baanah», núm. 1; 2Sa 4:2-12.
+sources:
+- it-baanah
+- 2-samuel-4
+links:
+- title: 'Perspicacia: «Baanah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000525
+  type: perspicacia
+- title: 2 Samuel 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/4
+  type: bible
+relations:
+- type: kin
+  person: rimon-de-beerot
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-baanah
+  reason: '2Sa 4:2: hijo de Rimón el beerotita.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: recab-hijo-de-rimon
+  word: brother
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-baanah
+  reason: '2Sa 4:2, 6: Baaná y su hermano Recab.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: is-boset
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-baanah
+  reason: '2Sa 4:2: mandaba una de las bandas de saqueadores del hijo de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: hebron
+  inferred: false
+  sources:
+  - 2-samuel-4
+  - it-baanah
+  reason: '2Sa 4:12: los hombres de David lo matan y lo cuelgan junto al estanque de Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+distinct_from:
+- baana-el-netofatita
+- baana-hijo-de-ahilud
+- baana-hijo-de-husai

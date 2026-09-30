@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gob
+name: Gob
+names:
+- name: Gob
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Lugar sin identificar cerca de Guézer
+  geometry:
+    type: zone
+    lat: 31.859167
+    lon: 34.919167
+    radius_km: 10
+  status: alternative
+  sources:
+  - it-gob
+  - it-guezer
+  reason: Perspicacia «Gob» recoge que, para algunos, era un sitio cercano a Guézer, porque 1Cr 20:4 pone allí el primer combate.
+  coord_source: calculation
+  note: Centro en el punto de la ficha guezer (Tel Gezer, OpenBible aed6538); radio de 10 km elegido por nosotros.
+  checked_on: '2026-09-29'
+- name: Gat, si Gob es un error de copia
+  geometry:
+    type: point
+    lat: 31.69972
+    lon: 34.84694
+  status: alternative
+  sources:
+  - it-gob
+  - it-gat
+  - openbible-geo
+  reason: 'Perspicacia «Gob» dice que muchos eruditos leen Gat, la ciudad del tercer combate (2Sa 21:20). Punto del candidato
+    de la ficha gat: Tell es-Safi, de OpenBible.'
+  coord_source: openbible:a18873f
+  coord_url: https://www.openbible.info/geo/ancient/a18873f/gath-1
+  checked_on: '2026-09-29'
+summary: 'Lugar donde los guerreros de David vencieron dos veces a gigantes que luchaban con los filisteos. No se sabe dónde
+  estaba: unos lo toman por un error de copia por Gat y otros, por un sitio junto a Guézer.'
+reason: 'Perspicacia «Gob»; 2Sa 21:18, 19; 1Cr 20:4. Ni jw.org ni nadie lo sitúa con seguridad: dos candidatos.'
+sources:
+- it-gob
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Gob»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001728
+  type: perspicacia
+checked_on: '2026-09-29'
+status: verified

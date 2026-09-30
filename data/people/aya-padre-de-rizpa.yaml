@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: aya-padre-de-rizpa
+name: Ayá
+names:
+- name: Ayá
+perspicacia: 1200000179#2
+disambiguation: El padre de Rizpá; no Ayá hijo de Zibeón, el jeque heveo.
+distinct_from:
+- aya-hijo-de-zibeon
+summary: Padre de Rizpá, que fue concubina del rey Saúl. Los gabaonitas ejecutaron a los dos hijos que ella tuvo con el rey
+  (2Sa 21:8, 9).
+reason: Perspicacia «Ayá», núm. 2; 2Sa 3:7.
+sources:
+- it-aya
+- 2-samuel-3
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Ayá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000179
+  type: perspicacia
+- title: 2 Samuel 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/3
+  type: bible
+checked_on: '2026-09-29'
+status: verified

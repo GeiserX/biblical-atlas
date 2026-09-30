@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahiya-padre-de-baasa
+name: Ahíya
+names:
+- name: Ahíya
+perspicacia: 1200000153#8
+disambiguation: El padre del rey Baasá; no el profeta Ahíya de Siló ni el sacerdote hijo de Ahitub.
+distinct_from:
+- ahiya-hijo-de-ahitub
+- ahiya-profeta
+- ahiya-hijo-de-sisa
+summary: Hombre de la tribu de Isacar, padre de Baasá, el que mató al rey Nadab y se quedó con el trono de Israel.
+reason: Perspicacia «Ahíya», núm. 8; 1Re 15:27, 33.
+sources:
+- it-ahiya
+- 1-reyes-15
+- 1-reyes-21
+links:
+- title: 'Perspicacia: «Ahíya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000153
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

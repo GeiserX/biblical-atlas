@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: itra
+name: Itrá
+names:
+- name: Itrá
+- name: Jéter
+  note: Nombre que le dan 1Re 2:5, 32 y 1Cr 2:17, donde se le llama ismaelita (Perspicacia «Jéter», núm. 6).
+perspicacia: '1200002241'
+disambiguation: El padre de Amasá; no Jéter, el primogénito de Gedeón, ni los demás Jéter que numera Perspicacia.
+distinct_from:
+- jeter-hijo-de-gedeon
+- jetro
+summary: Israelita, padre de Amasá con Abigaíl, hermana de David. 1 Crónicas lo llama Jéter el ismaelita, tal vez porque vivió
+  una temporada entre los ismaelitas.
+reason: Perspicacia «Itrá» y «Jéter», núm. 6; 2Sa 17:25; 1Cr 2:17.
+sources:
+- it-itra
+- it-jeter
+- 2-samuel-17
+- 1-reyes-2
+links:
+- title: 'Perspicacia: «Itrá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002241
+  type: perspicacia
+- title: 'Perspicacia: «Jéter»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002452
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: kin
+  person: abigail-hija-de-nahas
+  word: wife
+  inferred: true
+  sources:
+  - 2-samuel-17
+  - it-abigail
+  reason: 2Sa 17:25 dice que tuvo relaciones con Abigaíl; Perspicacia «Abigail», núm. 2, lo llama su esposo.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

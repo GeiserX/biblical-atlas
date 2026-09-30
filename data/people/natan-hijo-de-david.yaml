@@ -7,12 +7,15 @@ perspicacia: 1200003184#4
 disambiguation: Natán hijo de David (Lu 3:31); no el profeta Natán.
 distinct_from:
 - natan-profeta
+- natan-de-zoba
+- natan-padre-de-zabud
 summary: Nació en Jerusalén, hijo de David y de Bat-Seba. Lucas sigue por él la línea de María, mientras Mateo va por Salomón.
   En las Escrituras Griegas solo sale aquí.
 reason: Perspicacia «Natán», núm. 4, y la nota de estudio de Lu 3:31.
 sources:
 - it-natan
 - lucas-3
+- 2-samuel-5
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003184
@@ -27,6 +30,7 @@ relations:
   inferred: false
   sources:
   - lucas-3
+  - 2-samuel-5
   reason: 'Lu 3:31: Natán, hijo de David.'
   checked_on: '2026-09-29'
   status: verified
@@ -45,8 +49,9 @@ relations:
   inferred: false
   sources:
   - it-natan
+  - 2-samuel-5
   reason: 'Perspicacia «Natán» (núm. 4): nació en Jerusalén.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

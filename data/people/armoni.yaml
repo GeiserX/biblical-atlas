@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: armoni
+name: Armoní
+names:
+- name: Armoní
+perspicacia: '1200000372'
+summary: Hijo de Saúl y de su concubina Rizpá. David lo entregó a los gabaonitas junto con otros seis descendientes de Saúl,
+  y ellos los mataron y expusieron sus cuerpos en Guibeá.
+reason: Perspicacia «Armoní»; 2Sa 21:6-9.
+sources:
+- it-armoni
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Armoní»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000372
+  type: perspicacia
+relations:
+- type: kin
+  person: saul
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-armoni
+  reason: '2Sa 21:8: uno de los dos hijos que Rizpá tuvo con Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rizpa
+  word: mother
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-armoni
+  reason: '2Sa 21:8: hijo de Rizpá hija de Ayá.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: mefiboset-hijo-de-saul
+  word: brother
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-rizpa
+  reason: 2Sa 21:8 lo nombra junto a Mefibóset, el otro hijo de Rizpá y Saúl.
+  checked_on: '2026-09-29'
+  status: verified
+- type: died_in
+  place: guibea-de-benjamin
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-armoni
+  reason: '2Sa 21:6, 9: los gabaonitas los mataron y colgaron en el monte, en Guibeá de Saúl.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

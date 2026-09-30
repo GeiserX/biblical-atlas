@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: darda
+name: Dardá
+names:
+- name: Dardá
+- name: Dará
+  note: Forma de 1Cr 2:6; Perspicacia trata los dos nombres como el mismo hombre.
+perspicacia: '1200001122'
+summary: Sabio de Judá, descendiente de Zérah y uno de los hijos de Mahol. Tuvo mucha sabiduría, pero no igualó la de Salomón.
+reason: Perspicacia «Dará, Dardá»; 1Re 4:31; 1Cr 2:6.
+sources:
+- it-darda
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Dará, Dardá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001122
+  type: perspicacia
+relations:
+- type: kin
+  person: mahol
+  word: father
+  inferred: false
+  sources:
+  - 1-reyes-4
+  - it-mahol
+  reason: 1Re 4:31 llama a Hemán, Calcol y Dardá hijos de Mahol.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: zerah-hijo-de-juda
+  word: ancestor
+  inferred: true
+  sources:
+  - it-darda
+  reason: Perspicacia «Dará, Dardá» lo da por el Dará hijo de Zérah de 1Cr 2:6, de la tribu de Judá.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

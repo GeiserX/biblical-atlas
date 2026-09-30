@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: adonias-se-refugia-en-el-altar
+title: Adonías se agarra al altar y Salomón lo perdona
+date:
+  from: -1036
+  to: -1036
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 1037 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 1050
+places:
+- jerusalen
+people:
+- adonias-hijo-de-david
+- salomon
+present:
+- adonias-hijo-de-david
+- salomon
+passages:
+- 1Re 1:50-53
+summary: Por miedo a Salomón, Adonías se agarra a los cuernos del altar y pide que el rey jure no matarlo. Salomón le promete
+  respetarlo mientras se porte bien, lo hace bajar y lo manda a su casa.
+reason: '1Re 1:50-53; Perspicacia «Adonías», núm. 1, que lo hace huir al patio del tabernáculo sin situarlo, y «Altar». Luego
+  se presenta ante el rey (1:53), en la ciudad. Fecha: 1037 (estudio 3).'
+sources:
+- 1-reyes-1
+- it-adonias
+- it-altar
+- si-3
+links:
+- title: 1 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

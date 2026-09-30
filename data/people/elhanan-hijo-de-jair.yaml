@@ -1,0 +1,50 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elhanan-hijo-de-jair
+name: Elhanán
+names:
+- name: Elhanán
+perspicacia: 1200001289#1
+disambiguation: Elhanán que derribó a un gigante en Gob, entrada núm. 1 de Perspicacia «Elhanán»; no Elhanán hijo de Dodó,
+  de Belén, uno de los guerreros de David.
+summary: Israelita que derribó a un gigante en una guerra con los filisteos en Gob. 2Sa 21:19 lo llama hijo de Jaaré-Oreguim
+  y nombra a Goliat; 1Cr 20:5, hijo de Jaír y vencedor de Lahmí, hermano de Goliat.
+reason: Perspicacia «Elhanán», núm. 1, «Lahmí» y «Jaír», núm. 4; 2Sa 21:19, 22.
+sources:
+- it-elhanan
+- it-lahmi
+- it-jair
+- 2-samuel-21
+links:
+- title: 'Perspicacia: «Elhanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001289
+  type: perspicacia
+not_claimed:
+- 'Que Elhanán matara al Goliat que venció David: Perspicacia «Lahmí» cree probable un error de copia y lee, como 1Cr 20:5,
+  que mató a Lahmí, su hermano.'
+- 'Que fuera de Belén: Perspicacia «Lahmí» cree que la palabra betlemita de 2Sa 21:19 es una mala lectura de Lahmí.'
+relations:
+- type: kin
+  person: jaare-oreguim
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-jaare-oreguim
+  reason: 2Sa 21:19 lo llama hijo de Jaaré-Oreguim; Perspicacia «Jaír», núm. 4, cree que el nombre es un error por Jaír (1Cr
+    20:5).
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-21
+  - it-elhanan
+  reason: '2Sa 21:22: los gigantes cayeron a manos de David y de sus siervos, entre ellos Elhanán.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elhanan-hijo-de-dodo

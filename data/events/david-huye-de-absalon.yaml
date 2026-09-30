@@ -1,0 +1,57 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-huye-de-absalon
+title: David huye de Jerusalén ante la rebelión de Absalón
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: la rebelión de Absalón, en el reinado de David en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 15013
+places:
+- jerusalen
+- valle-de-cedron
+- monte-de-los-olivos
+- bahurim
+people:
+- david
+- absalon
+- ittai-el-guitita
+- sadoc-hijo-de-ahitub
+- abiatar
+- ahimaaz-hijo-de-sadoc
+- jonatan-hijo-de-abiatar
+- husai
+- ziba
+- simei-hijo-de-guera
+- abisai
+present:
+- david
+passages:
+- 2Sa 15:13-17:22
+- Sl 3
+summary: Al saber que Israel sigue a Absalón, David deja Jerusalén con su casa y sus siervos, se detiene en Bet-Merhac, cruza
+  el Cedrón, sube llorando el monte de los Olivos y sigue hacia el desierto.
+reason: '2Sa 15:13-17, 23, 30; 16:5, 14. Perspicacia «Absalón» pone el Salmo 3 en esta huida. Fecha: tras el pacto con David
+  (c. 1070) y antes de acabarse 2 Samuel (c. 1040, tabla de libros); lámina B7.'
+sources:
+- 2-samuel-15
+- 2-samuel-16
+- salmos-3
+- it-bet-merhaq
+- tnm-b7
+- it-absalon
+- tnm-tabla
+links:
+- title: 'Perspicacia: «Absalón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000063
+  type: perspicacia
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+checked_on: '2026-09-29'
+status: verified

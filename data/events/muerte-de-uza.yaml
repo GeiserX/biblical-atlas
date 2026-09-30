@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte-de-uza
+title: Muerte de Uzá junto al Arca
+type: death
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: unos tres meses antes de que el Arca llegara a Jerusalén)'
+  note: 'Límites: el Arca llega a Jerusalén después de 1070 (estudio 3) y unos tres meses después de este intento (Perspicacia
+    «David», párr. 23); Jerusalén es la capital desde 1070.'
+narrative_order:
+  series: 2-samuel
+  order: 6001
+places:
+- perez-uza
+- quiryat-jearim
+people:
+- uza-hijo-de-abinadab
+- david
+- ahio-hijo-de-abinadab
+- obed-edom-el-guitita
+roles:
+  uza-hijo-de-abinadab: died
+passages:
+- 2Sa 6:1-11
+- 1Cr 13:1-14
+summary: David va con 30.000 hombres a Baale-Judá por el Arca y la llevan en una carreta nueva. En la era de Nacón, Uzá la
+  sujeta y Jehová lo mata. David, con miedo, la deja tres meses en casa de Obed-Edom.
+reason: El estudio 3 pone la llegada del Arca a Jerusalén después de 1070 (2Sa 6:15); Perspicacia «David», párr. 23, y «Arca
+  del pacto» cuentan este primer intento unos tres meses antes.
+sources:
+- 2-samuel-6
+- si-3
+- it-david
+- it-arca-del-pacto
+- it-uzah
+- it-perez-uzah
+- it-nacon
+links:
+- title: 'Perspicacia: «Uzah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004531
+  type: perspicacia
+- title: 2 Samuel 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

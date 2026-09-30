@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahio-hijo-de-abinadab
+name: Ahió
+names:
+- name: Ahió
+perspicacia: 1200000162#3
+disambiguation: Ahió hijo de Abinadab (núm. 3 de Perspicacia); no los dos benjaminitas de 1 Crónicas.
+summary: Hijo de Abinadab, de Quiryat-Jearim. Iba delante del Arca cuando la llevaban en la carreta nueva, antes de que muriera
+  su hermano Uzá.
+reason: Perspicacia «Ahió», núm. 3; 2Sa 6:3, 4, con su paralelo 1Cr 13:7-10.
+sources:
+- it-ahio
+- 2-samuel-6
+links:
+- title: 'Perspicacia: «Ahió»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000162
+  type: perspicacia
+relations:
+- type: kin
+  person: abinadab-de-quiryat-jearim
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-6
+  - it-ahio
+  reason: '2Sa 6:3: el texto llama a los dos hijos de Abinadab; ellos conducen la carreta del Arca.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: quiryat-jearim
+  inferred: true
+  sources:
+  - 2-samuel-6
+  - it-ahio
+  reason: '2Sa 6:2-4: el Arca sale de la casa de su padre en Baale-Judá; Perspicacia «Ahió», núm. 3, lo da como natural de
+    Quiryat-jearim.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

@@ -13,20 +13,23 @@ date:
     month: hesvan
 places:
 - jerusalen
+- monte-moria
 people:
 - salomon
 passages:
 - 1Re 6:37-38
-- 1Re 8:1-66
+- 1Re 7:51
+- 2Cr 5:1
 - Hch 7:47
-summary: Tras siete años y medio, el templo queda acabado en el mes de Bul. Salomón lo inaugura después, en la fiesta de las
-  cabañas, con una larga oración.
+summary: Tras siete años y medio, el templo queda acabado en el mes de Bul. Salomón guarda en sus tesoros lo que David había
+  santificado; lo inaugura once meses después, en la fiesta de las cabañas.
 reason: El estudio 3 fecha la terminación en 1027; Perspicacia «Salomón», párr. 13 y 17. Bul es el octavo mes, hesván en el
   calendario.
 sources:
 - si-3
 - it-salomon
 - 1-reyes-6
+- 1-reyes-7
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -34,6 +37,21 @@ links:
 - title: 1 Reyes 6 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/6
   type: bible
-search: inauguración del templo de Salomón
-checked_on: '2026-09-29'
+search: templo de Salomón terminado
+narrative_order:
+  series: 1-reyes
+  order: 6037
+history:
+- date: '2026-09-30'
+  change: 'Sale 1Re 8:1-66: Perspicacia «Salomón» pone la inauguración en Etanim de 1026 a.e.c., pasados once meses desde
+    el final de la obra, y ya es un suceso propio. Entra 1Re 7:51 (2Cr 5:1), el final de la obra.'
+  source: it-salomon
+- date: '2026-09-30'
+  change: El resumen recoge 1Re 7:51 y dice cuándo fue la inauguración, que ahora es otro suceso (Perspicacia «Salomón», apartado
+    «Inauguración del templo»).
+  source: 1-reyes-7
+- date: '2026-09-30'
+  change: La inauguración es ahora su propio suceso (1 Reyes 8); la búsqueda apunta al final de la obra.
+  source: 1-reyes-7
+checked_on: '2026-09-30'
 status: verified

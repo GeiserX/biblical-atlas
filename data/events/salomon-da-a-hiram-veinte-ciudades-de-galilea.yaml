@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-da-a-hiram-veinte-ciudades-de-galilea
+title: Salomón da a Hiram veinte ciudades de Galilea
+date:
+  from: -1013
+  to: -1013
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 1014 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 9010
+places:
+- tierra-de-cabul
+- galilea
+- tiro
+people:
+- salomon
+- hiram-rey-de-tiro
+present:
+- hiram-rey-de-tiro
+passages:
+- 1Re 9:10-14
+- 2Cr 8:1, 2
+summary: Acabadas las obras, Salomón regala a Hiram veinte ciudades de Galilea. Hiram sale de Tiro a verlas y no le agradan,
+  y por eso se las llama Tierra de Cabul. Hiram envía a Salomón 120 talentos de oro.
+reason: 1Re 9:10 lo pone al cumplirse los veinte años de obras, que según Perspicacia «Salomón» acabaron en su año 24, 1014
+  a.e.c. Perspicacia «Hiram», núm. 1, y «Cabul», núm. 2.
+sources:
+- 1-reyes-9
+- it-salomon
+- it-hiram
+- it-cabul
+links:
+- title: 'Perspicacia: «Cabul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000851
+  type: perspicacia
+- title: 1 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahimaaz-hijo-de-sadoc
+name: Ahimáaz
+names:
+- name: Ahimáaz
+perspicacia: 1200000156#2
+disambiguation: Ahimáaz hijo del sacerdote Sadoc; no Ahimáaz el padre de Ahinoam, la esposa de Saúl.
+distinct_from:
+- ahimaaz-padre-de-ahinoam
+- ahimaaz-esposo-de-basemat
+summary: Hijo del sacerdote Sadoc. Durante la rebelión de Absalón, él y Jonatán, el hijo de Abiatar, hacían de enlace para
+  llevar a David lo que se sabía en Jerusalén.
+reason: Perspicacia «Ahimáaz», núm. 2; 2Sa 15:27, 36.
+sources:
+- it-ahimaaz
+- 2-samuel-15
+- 2-samuel-17
+- 2-samuel-18
+links:
+- title: 'Perspicacia: «Ahimáaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000156
+  type: perspicacia
+- title: 2 Samuel 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/15
+  type: bible
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+- title: 2 Samuel 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/18
+  type: bible
+relations:
+- type: kin
+  person: sadoc-hijo-de-ahitub
+  word: father
+  sources:
+  - 2-samuel-15
+  - it-ahimaaz
+  - 2-samuel-18
+  reason: 2Sa 15:27 le dice a Sadoc «tu hijo Ahimáaz», y 15:36 lo llama hijo de Sadoc.
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

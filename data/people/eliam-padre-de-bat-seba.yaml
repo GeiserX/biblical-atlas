@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliam-padre-de-bat-seba
+name: Eliam
+names:
+- name: Eliam
+- name: Amiel
+  note: Así lo llama 1Cr 3:5. Perspicacia «Amiel», núm. 3, explica que es el mismo nombre con sus dos partes invertidas.
+perspicacia: 1200001296#1
+disambiguation: El padre de Bat-Seba; no Amiel el espía danita. Quizás es Eliam hijo de Ahitofel, uno de los valientes de
+  David (2Sa 23:34).
+distinct_from:
+- amiel-hijo-de-guemali
+- amiel-padre-de-makir
+summary: Padre de Bat-Seba, esposa de Urías el hitita y luego del rey David; Crónicas lo llama Amiel. Perspicacia «Eliam»
+  ve posible, y «Amiel», núm. 3, probable, que su padre fuera Ahitofel.
+reason: Perspicacia «Eliam», núm. 1 y 2, y «Amiel», núm. 3; 2Sa 11:3; 1Cr 3:5.
+sources:
+- it-eliam
+- it-amiel
+- 2-samuel-11
+links:
+- title: 'Perspicacia: «Eliam»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001296
+  type: perspicacia
+- title: 'Perspicacia: «Amiel»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000233
+  type: perspicacia
+- title: 2 Samuel 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/11
+  type: bible
+checked_on: '2026-09-29'
+status: verified

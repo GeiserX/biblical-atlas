@@ -23,6 +23,7 @@ sources:
 - tnm-b7
 - si-3
 - salmos-51
+- 1-reyes-1
 links:
 - title: 'Perspicacia: «Natán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003184
@@ -36,7 +37,20 @@ history:
   change: Grafía «Bat-seba» cambiada a «Bat-Seba», la de la TNM revisada en el encabezamiento de Sal 51 y la del nombre de
     su ficha.
   source: salmos-51
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - natan-hijo-de-david
+- natan-de-zoba
+relations:
+- type: holds_office
+  office: prophet
+  sources:
+  - 2-samuel-7
+  - it-natan
+  - 2-samuel-12
+  - 1-reyes-1
+  reason: 2Sa 7:2 lo llama el profeta Natán; en 7:4-17 transmite a David el mensaje de Jehová.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified

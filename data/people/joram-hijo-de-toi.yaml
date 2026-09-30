@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: joram-hijo-de-toi
+name: Joram
+names:
+- name: Joram
+- name: Hadoram
+  note: Nombre del relato paralelo de 1Cr 18:10; Perspicacia «Hadoram», núm. 2, es la misma persona.
+perspicacia: 1200002510#1
+disambiguation: El hijo del rey Toi de Hamat; no los reyes Jehoram de Israel y de Judá, a los que a veces se llama Joram,
+  ni Hadoram hijo de Joctán.
+distinct_from:
+- hadoram-hijo-de-joctan
+- jehoram-de-israel
+- jehoram-de-juda
+- adoniram
+summary: Hijo de Toi, rey de Hamat. Su padre lo envió a saludar a David y felicitarlo por vencer a Hadadézer, con objetos
+  de plata, oro y cobre que David dedicó a Jehová.
+reason: Perspicacia «Joram», núm. 1, y «Hadoram», núm. 2; 2Sa 8:9-11; 1Cr 18:9-11.
+sources:
+- it-joram
+- it-hadoram
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Joram»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002510
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+relations:
+- type: kin
+  person: toi
+  word: father
+  sources:
+  - 2-samuel-8
+  - it-joram
+  reason: '2Sa 8:10: Toi le mandó a David a su hijo Joram.'
+  inferred: false
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

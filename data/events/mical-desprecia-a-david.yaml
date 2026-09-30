@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: mical-desprecia-a-david
+title: Mical desprecia a David por bailar ante el Arca
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: después de 1070 a.e.c.
+narrative_order:
+  series: 2-samuel
+  order: 6016
+places:
+- jerusalen
+people:
+- mical
+- david
+passages:
+- 2Sa 6:16
+- 2Sa 6:20-23
+- 1Cr 15:29
+summary: Mical, hija de Saúl, ve desde la ventana a David bailando y lo desprecia. Luego le reprocha que se descubriera ante
+  las esclavas; David responde que celebraba ante Jehová, que lo eligió. Mical no tuvo hijos.
+reason: El mismo día en que el Arca llega a Jerusalén, después de 1070 (estudio 3). Perspicacia «David», párr. 23, y «Mical».
+sources:
+- 2-samuel-6
+- si-3
+- it-david
+- it-mical
+links:
+- title: 'Perspicacia: «Mical»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003036
+  type: perspicacia
+- title: 2 Samuel 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/6
+  type: bible
+checked_on: '2026-09-29'
+status: verified

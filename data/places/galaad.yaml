@@ -47,6 +47,10 @@ sources:
 - jueces-12
 - jueces-20
 - zacarias-10
+- 2-samuel-17
+- 2-samuel-24
+- 1-reyes-4
+- 1-reyes-17
 links:
 - title: 'Perspicacia: «Galaad»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001694
@@ -57,5 +61,5 @@ links:
 - title: Génesis 31 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/31
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

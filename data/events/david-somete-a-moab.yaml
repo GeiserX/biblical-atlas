@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-somete-a-moab
+title: David vence a Moab y lo hace tributario
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras el pacto con David y antes de acabarse 2 Samuel)'
+narrative_order:
+  series: 2-samuel
+  order: 8002
+places:
+- moab
+people:
+- david
+passages:
+- 2Sa 8:2
+- 1Cr 18:2
+summary: 'David derrota a los moabitas y mide a los cautivos tendidos en el suelo con una cuerda: dos largos mueren y uno
+  vive. Moab queda sometido a David y le paga tributo.'
+reason: 2Sa 8:2; 1Cr 18:2. Después del pacto (c. 1070, lámina B7; Perspicacia «David», párr. 25) y antes de acabarse el libro
+  (c. 1040, estudio 3).
+sources:
+- 2-samuel-8
+- it-david
+- tnm-b7
+- si-3
+links:
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

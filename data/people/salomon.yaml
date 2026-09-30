@@ -6,6 +6,9 @@ names:
 - name: Congregador
   note: Título con que se presenta en Eclesiastés (Ec 1:1, 12; 7:27; 12:8-10), del hebreo Qohéleth. Perspicacia «Eclesiastés,
     Libro de» dice que es Salomón.
+- name: Jedidías
+  note: Nombre que Jehová le hizo poner por medio de Natán (2Sa 12:25); quiere decir «amado de Jah». Perspicacia dice que
+    se le conoció mucho menos por él.
 date:
   from: -1036
   to: -997
@@ -45,6 +48,18 @@ sources:
 - cantar-de-los-cantares-6
 - cantar-de-los-cantares-7
 - cantar-de-los-cantares-8
+- 2-samuel-5
+- it-jedidias
+- 1-reyes-1
+- 1-reyes-2
+- 1-reyes-3
+- 1-reyes-4
+- 1-reyes-5
+- 1-reyes-7
+- 1-reyes-8
+- 1-reyes-9
+- 1-reyes-10
+- 1-reyes-14
 links:
 - title: 'Perspicacia: «Salomón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004178
@@ -67,8 +82,17 @@ relations:
   - salmos-72
   - proverbios-1
   - eclesiastes-1
-  reason: Hijo de David y Bat-Seba (2Sa 12:24).
-  checked_on: '2026-09-29'
+  - 2-samuel-5
+  - 1-reyes-1
+  - 1-reyes-2
+  - 1-reyes-3
+  - 1-reyes-5
+  - 1-reyes-6
+  - 1-reyes-7
+  - 1-reyes-8
+  - 1-reyes-9
+  reason: '2Sa 12:24: David y Bat-Seba tienen a Salomón.'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: david
@@ -76,8 +100,12 @@ relations:
   sources:
   - it-salomon
   - 1-reyes-1
+  - 1-reyes-2
+  - 1-reyes-3
+  - 1-reyes-5
+  - 1-reyes-8
   reason: Fue ungido y puesto en el trono antes de morir David (1Re 1:39).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   office: king
   status: verified
 - type: kin
@@ -87,8 +115,11 @@ relations:
   sources:
   - mateo-1
   - it-bat-seba
-  reason: Mt 1:6 da como madre a la esposa de Urías; la nota del versículo dice que es Bat-Seba.
-  checked_on: '2026-09-29'
+  - 2-samuel-12
+  - 1-reyes-1
+  - 1-reyes-2
+  reason: '2Sa 12:24: Bat-Seba, ya esposa de David, da a luz a Salomón. Mt 1:6 la llama la esposa de Urías.'
+  checked_on: '2026-09-30'
   status: verified
 - type: lived_in
   place: jerusalen
@@ -101,9 +132,81 @@ relations:
   - eclesiastes-2
   - cantar-de-los-cantares-3
   - si-cantar-de-los-cantares
+  - 1-reyes-3
+  - 1-reyes-8
+  - 1-reyes-10
   reason: 'Ec 1:1, 12 y 1Re 11:42: el congregador fue rey de Israel en Jerusalén y Salomón reinó allí 40 años; Perspicacia
     «Eclesiastés, Libro de» dice que es Salomón.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  - 2-samuel-12
+  reason: 2Sa 5:13, 14 lo pone en la lista de hijos que David tuvo en Jerusalén.
   checked_on: '2026-09-29'
+  status: verified
+- type: holds_office
+  place: jerusalen
+  office: coregent
+  date:
+    from: -1036
+    to: -1036
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 1037 a.e.c.
+  inferred: true
+  sources:
+  - 1-reyes-1
+  - it-adonias
+  - si-3
+  reason: '1Re 1:34, 35: David lo hace ungir y sentar en su trono estando aún vivo; Perspicacia «Adonías», núm. 1, dice que
+    lo ungió como corregente. Estudio 3: 1037.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: hadad-el-edomita
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-hadad
+  reason: '1Re 11:14: Jehová le levanta un enemigo, Hadad el edomita.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: rezon
+  word: enemy
+  inferred: false
+  sources:
+  - 1-reyes-11
+  - it-rezon
+  reason: '1Re 11:23, 25: Rezón es otro enemigo de Salomón mientras este vive.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 1-reyes-11
+  reason: 1Re 11:43 da su sepultura en la Ciudad de David, no el sitio de su muerte; tomamos el del entierro, la ciudad donde
+    reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: naama-esposa-de-salomon
+  word: wife
+  inferred: true
+  sources:
+  - 1-reyes-14
+  - it-naama
+  reason: 1Re 14:21 da a Naamá la ammonita como madre de Rehoboam, hijo de Salomón; Perspicacia «Naamá», núm. 2, la llama
+    su esposa.
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200004178'
 history:
@@ -136,5 +239,9 @@ history:
 - date: '2026-09-29'
   change: La razón cita Can 1:1 y el artículo de Perspicacia que le atribuye El Cantar de los Cantares.
   source: it-cantar-de-los-cantares
-checked_on: '2026-09-29'
+- date: '2026-09-29'
+  change: 'Las razones de su madre y de su padre citan 2Sa 12:24, donde Bat-Seba da a luz a Salomón; la del padre, con palabras
+    nuestras.'
+  source: 2-samuel-12
+checked_on: '2026-09-30'
 status: verified

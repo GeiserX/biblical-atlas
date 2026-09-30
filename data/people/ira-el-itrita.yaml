@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ira-el-itrita
+name: Irá
+names:
+- name: Irá
+perspicacia: 1200002193#3
+disambiguation: Irá el itrita, guerrero de David; no Irá hijo de Iqués ni el jairita sacerdote de David.
+distinct_from:
+- ira-hijo-de-iques
+- ira-el-jairita
+summary: Itrita, de una familia de Judá ligada a Quiryat-Jearim, y uno de los treinta guerreros de David.
+reason: Perspicacia «Irá», núm. 3, e «Itrita»; 2Sa 23:38.
+sources:
+- it-ira
+- it-itrita
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Irá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002193
+  type: perspicacia
+relations:
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:38: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

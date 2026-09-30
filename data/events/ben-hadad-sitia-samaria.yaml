@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: ben-hadad-sitia-samaria
+title: Ben-Hadad sitia Samaria y exige a Acab sus riquezas
+date:
+  from: -924
+  to: -924
+  precision: year
+  approx: true
+  type: derived
+  chronology: tnm
+  text: c. 925 a.e.c.
+  note: 'Cuenta nuestra: Perspicacia «Ben-hadad», núm. 2, pone el sitio un lustro antes de que Acab muriera, y A6-A cierra
+    su reinado hacia 920 a.e.c.; 920 + 5 = 925.'
+narrative_order:
+  series: 1-reyes
+  order: 20001
+places:
+- samaria
+people:
+- ben-hadad-ii
+- acab
+present:
+- ben-hadad-ii
+- acab
+passages:
+- 1Re 20:1-12
+summary: Ben-Hadad II rodea Samaria con su ejército y 32 reyes. Acab acepta darle su plata, su oro, sus esposas y sus hijos,
+  pero cuando el sirio quiere saquear las casas, los ancianos le aconsejan negarse.
+reason: 'Perspicacia «Ben-hadad», núm. 2, párr. 1, y «Acab», núm. 1, párr. 6. Fecha: cuenta nuestra, un lustro antes de que
+  muriera Acab.'
+sources:
+- 1-reyes-20
+- it-ben-hadad
+- it-acab
+- tnm-a6-a
+links:
+- title: 1 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/20
+  type: bible
+checked_on: '2026-09-30'
+status: pending

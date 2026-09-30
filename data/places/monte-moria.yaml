@@ -16,6 +16,17 @@ names:
     capítulo 4). OpenBible solo le da el punto de Jerusalén.
 - name: Montaña de la Casa
   note: Así llama Miq 3:12 al monte del templo, como aclara su nota; Perspicacia «Sion» sitúa el recinto del templo en Moria.
+- name: Era de Arauna
+  note: La era que David compró a Arauna el jebuseo para el altar (2Sa 24:18-25); luego se levantó allí el templo.
+- name: Casa del Bosque del Líbano
+  note: Edificio de cedro de Salomón al sur del templo (1Re 7:2; Perspicacia «Casa del Bosque del Líbano»), en la ladera
+    que baja del templo hacia la Ciudad de David (Perspicacia «Salomón»). Is 22:8 lo llama arsenal.
+- name: Sala de las Columnas
+  note: Parte de los edificios de Salomón junto a su palacio, en la ladera que baja del templo hacia la Ciudad de David (1Re
+    7:6; Perspicacia «Salomón»).
+- name: Sala del Trono
+  note: Donde Salomón juzgaba, por eso también Sala de Juicio (1Re 7:7). Perspicacia «Salomón» la pone junto a su palacio,
+    en la ladera que baja del templo hacia la Ciudad de David.
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -60,6 +71,13 @@ sources:
 - hch-22
 - miqueas-3
 - zacarias-11
+- 2-samuel-24
+- it-arauna
+- 1-reyes-6
+- 1-reyes-7
+- it-casa-del-bosque-del-libano
+- it-salomon
+- 1-reyes-8
 links:
 - title: 'Perspicacia: «Moria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003114
@@ -72,5 +90,5 @@ history:
 - date: '2026-09-29'
   change: Se añade el sacrificio de Isaac de Génesis 22, que Perspicacia «Abrahán» (párr. 17) y «Moria» ponen en este monte.
   source: genesis-22
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

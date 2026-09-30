@@ -1,0 +1,25 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ahilud
+name: Ahilud
+names:
+- name: Ahilud
+perspicacia: '1200000155'
+summary: Padre de Jehosafat, el registrador de David. Perspicacia cree probable que fuera también el padre de Baaná, uno de
+  los comisarios que abastecían a Salomón.
+reason: Perspicacia «Ahilud»; 2Sa 8:16; 1Cr 18:15.
+sources:
+- it-ahilud
+- 2-samuel-8
+- 2-samuel-20
+links:
+- title: 'Perspicacia: «Ahilud»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000155
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+- title: 2 Samuel 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/20
+  type: bible
+checked_on: '2026-09-29'
+status: verified

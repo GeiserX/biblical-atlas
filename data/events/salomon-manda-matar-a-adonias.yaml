@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-manda-matar-a-adonias
+title: Salomón manda matar a Adonías
+date:
+  from: -1036
+  to: -1034
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1037-1035 a.e.c. (tiempo narrativo: al principio del reinado de Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 2013
+places:
+- jerusalen
+people:
+- adonias-hijo-de-david
+- bat-seba
+- salomon
+- benaya-hijo-de-jehoiada
+- abisag
+present:
+- adonias-hijo-de-david
+- bat-seba
+- salomon
+- benaya-hijo-de-jehoiada
+roles:
+  adonias-hijo-de-david: died
+passages:
+- 1Re 2:13-25
+summary: Adonías pide a Bat-Seba que le consiga por esposa a Abisag. Salomón sienta a su madre en un trono a su derecha, pero
+  ve en la petición un intento de quedarse con el reino y manda a Benaya matarlo.
+reason: '1Re 2:13-25; Perspicacia «Adonías», núm. 1, y «Abisag». Fecha: poco después de morir David (Perspicacia «Salomón»),
+  al principio del reinado que empieza en 1037 (estudio 3).'
+sources:
+- 1-reyes-2
+- it-adonias
+- it-abisag
+- it-salomon
+- si-3
+links:
+- title: 1 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

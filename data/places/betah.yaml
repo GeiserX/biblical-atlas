@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: betah
+name: Bétah
+names:
+- name: Bétah
+- name: Tibhat
+  note: Así la llama el relato paralelo de 1Cr 18:8; Perspicacia «Tibhat» la da, al parecer, por la misma ciudad.
+type: city
+lat: 34.008889
+lon: 36.145278
+precision: uncertain
+coord_source: openbible:a7cdf52
+coord_url: https://www.openbible.info/geo/ancient/a7cdf52/tibhath
+coord_note: Identificación de OpenBible en el valle de la Becá, entre el Líbano y el Antilíbano, donde Perspicacia «Tibhat»
+  ve probable que estuviera. El sitio exacto no se conoce.
+summary: Ciudad aramea del reino de Hadadézer de Zobá, de donde David se llevó mucho cobre. No se sabe dónde estaba; probablemente
+  en el valle entre el Líbano y el Antilíbano.
+reason: 'Perspicacia «Bétah», «Tibhat» y «Hadadézer», párr. 4; 2Sa 8:8; 1Cr 18:8. Coordenada de OpenBible: solo tomamos el
+  punto.'
+sources:
+- it-betah
+- it-tibhat
+- it-hadadezer
+- openbible-geo
+- 2-samuel-8
+links:
+- title: 'Perspicacia: «Bétah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000665
+  type: perspicacia
+- title: 'Perspicacia: «Tibhat»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004399
+  type: perspicacia
+- title: 2 Samuel 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
+  type: bible
+checked_on: '2026-09-29'
+status: verified

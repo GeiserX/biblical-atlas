@@ -32,5 +32,7 @@ relations:
   reason: Éx 31:2 da a Urí como hijo de Hur.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- uri-padre-de-gueber

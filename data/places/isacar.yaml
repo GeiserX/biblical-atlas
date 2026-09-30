@@ -51,6 +51,7 @@ sources:
 - openbible-geo
 - josue-17
 - josue-19
+- 1-reyes-4
 links:
 - title: 'Perspicacia: «Isacar»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002230
@@ -61,5 +62,5 @@ links:
 - title: Josué 19 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/19
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

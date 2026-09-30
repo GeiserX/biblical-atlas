@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elifelet-hijo-de-ahasbai
+name: Elifélet
+names:
+- name: Elifélet
+perspicacia: 1200001315#1
+disambiguation: Elifélet hijo de Ahasbái, guerrero de David; no los hijos de David con ese nombre ni los demás Elifélet.
+summary: Hijo de Ahasbái el maacatita y uno de los treinta guerreros de David. Perspicacia ve posible que sea el Elifal de
+  1Cr 11:35.
+reason: Perspicacia «Elifélet», núm. 1; 2Sa 23:34.
+sources:
+- it-elifelet
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Elifélet»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001315
+  type: perspicacia
+relations:
+- type: kin
+  person: ahasbai
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:34: Elifélet, hijo de Ahasbái.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: tie
+  person: david
+  word: master
+  inferred: false
+  sources:
+  - 2-samuel-23
+  reason: '2Sa 23:34: uno de los treinta guerreros de David.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified
+distinct_from:
+- elifelet-hijo-de-david

@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-vence-a-los-filisteos-en-baal-perazim
+title: David vence a los filisteos en Baal-Perazim
+date:
+  from: -1069
+  to: -1069
+  precision: year
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'c. 1070 a.e.c. (tiempo narrativo: tras tomar Sion y antes de subir el Arca)'
+  note: 'Límites: Perspicacia «Baal-perazim» lo pone algún tiempo después de tomar Sion, en 1070 (estudio 3), y «David», párr.
+    22-23, antes de subir el Arca, después de 1070.'
+narrative_order:
+  series: 2-samuel
+  order: 5017
+places:
+- baal-perazim
+- valle-de-refaim
+- adulam
+people:
+- david
+passages:
+- 2Sa 5:17-21
+- 1Cr 14:8-12
+summary: Al saber que David es rey de Israel, los filisteos suben y se despliegan por el valle de Refaím. Jehová le dice que
+  ataque; David los vence y se lleva los ídolos que abandonan, que luego se queman.
+reason: 'Perspicacia «Baal-perazim» y «David», párr. 22-23: después de tomar Sion y antes del traslado del Arca. «Adulam»,
+  párr. 3: David usaba aquel lugar como base en estas guerras.'
+sources:
+- 2-samuel-5
+- si-3
+- it-baal-perazim
+- it-david
+- it-adulam
+links:
+- title: 'Perspicacia: «Baal-perazim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000519
+  type: perspicacia
+- title: 2 Samuel 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/5
+  type: bible
+checked_on: '2026-09-29'
+status: verified

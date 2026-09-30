@@ -3,7 +3,7 @@ id: naama-hija-de-lamec
 name: Naamá
 names:
 - name: Naamá
-disambiguation: Naamá hija de Lamec, de la línea de Caín; no Naamá la amonita, esposa de Salomón, ni la ciudad de Judá.
+disambiguation: Naamá hija de Lamec, de la línea de Caín; no Naamá la ammonita, esposa de Salomón, ni la ciudad de Judá.
 perspicacia: 1200003148#1
 summary: Hija de Lamec y Zilá y hermana de Tubal-Caín, de la línea de Caín. Como el resto de esa familia, no sobrevivió al
   Diluvio.
@@ -40,5 +40,11 @@ relations:
   reason: 'Perspicacia «Naamá», núm. 1: hija de Zilá (Gé 4:22).'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: La TNM escribe «ammonita» (1Re 14:21, 31); la desambiguación decía «amonita».
+  source: 1-reyes-14
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- naama-esposa-de-salomon

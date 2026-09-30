@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: un-angel-alimenta-a-elias-en-el-desierto
+title: Elías huye al desierto y un ángel lo alimenta
+date:
+  from: -939
+  to: -919
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 940 y 920 a.e.c. (tiempo narrativo: después del Carmelo, en el reinado de Acab)'
+narrative_order:
+  series: 1-reyes
+  order: 19003
+places:
+- beer-seba
+- monte-sinai
+people:
+- elias-profeta
+present:
+- elias-profeta
+passages:
+- 1Re 19:3-8
+summary: Con miedo, Elías huye hasta Beer-Seba, en Judá, deja allí a su ayudante y camina un día por el desierto. Pide morir
+  bajo una retama; un ángel le da de comer dos veces y así llega al Horeb.
+reason: 'Perspicacia «Elías», núm. 1, apartado «Huye de Jezabel», y «Horeb», párr. 3. Elías estuvo en Beer-Seba; la retama
+  queda a un día de camino, en un desierto sin nombre. Fecha: tras el Carmelo, en el reinado de Acab (A6-A).'
+sources:
+- 1-reyes-19
+- it-elias
+- it-horeb
+- tnm-a6-a
+links:
+- title: 1 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/19
+  type: bible
+checked_on: '2026-09-30'
+status: verified

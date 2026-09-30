@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: salomon-recluta-trabajadores-para-el-templo
+title: Salomón recluta trabajadores para el templo
+date:
+  from: -1036
+  to: -1026
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1037 y 1027 a.e.c. (tiempo narrativo: mientras se preparan los materiales y se levanta el templo)'
+narrative_order:
+  series: 1-reyes
+  order: 5013
+places:
+- libano
+people:
+- salomon
+- adoniram
+present: []
+passages:
+- 1Re 5:13-18
+- 2Cr 2:2
+- 2Cr 2:17, 18
+summary: Salomón recluta a 30.000 israelitas que suben al Líbano por turnos de 10.000 al mes, bajo Adoniram. Otros 150.000
+  cargan y labran piedra, y los obreros de Hiram y los guebalitas preparan madera y piedras.
+reason: '1Re 5:13-18; Perspicacia «Salomón» y «Templo», apartados de edificación y trabajadores: cargadores y picapedreros
+  no eran israelitas. Entre 1037 y el fin de la obra en 1027 (estudio 3). El texto no dice quién estuvo en el Líbano.'
+sources:
+- 1-reyes-5
+- it-salomon
+- it-templo
+- it-adoniram
+- it-guebal
+- si-3
+links:
+- title: 1 Reyes 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/5
+  type: bible
+checked_on: '2026-09-30'
+status: verified

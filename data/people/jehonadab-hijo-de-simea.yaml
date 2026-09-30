@@ -1,0 +1,58 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehonadab-hijo-de-simea
+name: Jehonadab
+names:
+- name: Jehonadab
+- name: Jonadab
+  note: Forma abreviada del nombre; según Perspicacia, el hebreo usa las dos para este hombre.
+perspicacia: 1200002379#1
+disambiguation: El sobrino de David, amigo de Amnón; no Jehonadab hijo de Recab, el que acompañó a Jehú.
+summary: Hijo de Simeá, hermano de David, y amigo de Amnón. Muy astuto, le sugirió fingirse enfermo para tener cerca a Tamar.
+  Ante la noticia de la matanza, aseguró a David que solo Amnón había muerto.
+reason: Perspicacia «Jehonadab», núm. 1; 2Sa 13:3-5, 32-35.
+sources:
+- it-jehonadab
+- 2-samuel-13
+links:
+- title: 'Perspicacia: «Jehonadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002379
+  type: perspicacia
+- title: 2 Samuel 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/13
+  type: bible
+relations:
+- type: kin
+  person: sama-hijo-de-jese
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-jehonadab
+  reason: 2Sa 13:3, 32 lo llaman hijo de Simeá, hermano de David; Perspicacia «Samah», núm. 2, da Simeá como otro nombre de
+    Samá.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: david
+  word: uncle
+  inferred: false
+  sources:
+  - 2-samuel-13
+  - it-jehonadab
+  reason: '2Sa 13:3: su padre era hermano de David. Perspicacia «Jehonadab», núm. 1, lo llama sobrino de David.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: same_as
+  person: jonatan-hijo-de-sama
+  inferred: true
+  sources:
+  - 2-samuel-13
+  - 2-samuel-21
+  - it-jehonadab
+  reason: Perspicacia «Jehonadab», núm. 1, ve posible que sea el Jonatán de 2Sa 21:21, hijo también del hermano de David (2Sa
+    13:3).
+  checked_on: '2026-09-29'
+  certainty: possible
+  status: verified
+checked_on: '2026-09-29'
+status: verified

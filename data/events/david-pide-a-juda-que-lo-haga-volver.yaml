@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: david-pide-a-juda-que-lo-haga-volver
+title: David pide a los ancianos de Judá que lo hagan volver
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la rebelión de Absalón, con David ya rey en Jerusalén)'
+narrative_order:
+  series: 2-samuel
+  order: 19008
+places:
+- mahanaim
+- jerusalen
+people:
+- david
+- sadoc-hijo-de-ahitub
+- abiatar
+- amasa-hijo-de-itra
+present:
+- david
+passages:
+- 2Sa 19:8-14
+summary: Las tribus discuten si traer de vuelta al rey. David manda a Sadoc y Abiatar que animen a los ancianos de Judá y
+  promete a Amasá el mando del ejército; Judá le pide que vuelva.
+reason: '2Sa 19:8-14. El rey sigue en Mahanaim; los sacerdotes estaban en Jerusalén (Perspicacia «Sadoc», núm. 1). Fecha:
+  desde 1070 (estudio 3) hasta hacia 1040, final de 2 Samuel (tabla de los libros).'
+sources:
+- 2-samuel-19
+- it-sadoc
+- it-amasa
+- si-3
+- tnm-tabla
+links:
+- title: 2 Samuel 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/19
+  type: bible
+checked_on: '2026-09-29'
+status: verified

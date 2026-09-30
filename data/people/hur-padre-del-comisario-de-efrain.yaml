@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: hur-padre-del-comisario-de-efrain
+name: Hur
+names:
+- name: Hur
+perspicacia: 1200002108#4
+disambiguation: Hur, padre de un comisario de Salomón; no el compañero de Moisés, ni el abuelo de Bezalel, ni el rey de Madián,
+  ni el padre de Refayá.
+distinct_from:
+- hur-companero-de-moises
+- hur-hijo-de-caleb
+- hur-rey-de-madian
+summary: Padre del comisario de Salomón en la región montañosa de Efraín, uno de los doce que por turnos mensuales daban alimento
+  a la casa real. El texto no da el nombre del hijo.
+reason: Perspicacia «Hur», núm. 4; 1Re 4:7, 8.
+sources:
+- it-hur
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Hur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002108
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

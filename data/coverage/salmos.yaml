@@ -18,7 +18,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: poetry, entities: [person:david, person:absalon, relation:absalon/kin/david], note: "El encabezamiento lo sitúa cuando David huía de su hijo Absalón, suceso de 2Sa 15 que crea 2 Samuel. Rodeado de enemigos, David confía en que Jehová lo salvará y duerme tranquilo."}
+    - {v: 1-8, type: poetry, entities: [person:david, person:absalon, relation:absalon/kin/david, event:david-huye-de-absalon], note: "El encabezamiento lo sitúa cuando David huía de su hijo Absalón, suceso de 2Sa 15. Rodeado de enemigos, David confía en que Jehová lo salvará y duerme tranquilo."}
   4:
     status: complete
     reviewed_on: 2026-09-29
@@ -98,7 +98,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: poetry, mentions: [person:david, person:saul], note: "Encabezamiento: David cantó esto a Jehová cuando lo libró de sus enemigos, Saúl incluido. Es casi el mismo canto de 2Sa 22; ese suceso lo crea Samuel."}
+    - {v: 1-6, type: poetry, entities: [event:david-canta-a-jehova-que-lo-libro-de-sus-enemigos], mentions: [person:david, person:saul], note: "Encabezamiento: David cantó esto a Jehová cuando lo libró de sus enemigos, Saúl incluido. Es casi el mismo canto de 2Sa 22."}
     - {v: 7-19, type: poetry, note: "Dios responde con una tormenta: tiembla la tierra, baja montado en un querubín entre nubes, granizo y rayos, y saca al salmista de las aguas profundas."}
     - {v: 20-30, type: poetry, note: "Jehová paga según la rectitud: es leal con el leal y astuto con el retorcido. Su camino es perfecto y protege a quien se refugia en él."}
     - {v: 31-42, type: poetry, note: "No hay otra roca como Dios: fortalece al salmista para la guerra, y este persigue a sus enemigos hasta acabar con ellos."}
@@ -304,7 +304,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: poetry, entities: [person:david, person:bat-seba, person:natan-profeta], note: "Encabezamiento: salmo de David después de que el profeta Natán fuera a verlo por su adulterio con Bat-Seba. Es el suceso de 2Sa 12:1-15; lo crea Samuel. David pide perdón y reconoce su pecado."}
+    - {v: 1-6, type: poetry, entities: [person:david, person:bat-seba, person:natan-profeta, event:natan-reprende-a-david], note: "Encabezamiento: salmo de David después de que el profeta Natán fuera a verlo por su adulterio con Bat-Seba. Es el suceso de 2Sa 12:1-15. David pide perdón y reconoce su pecado."}
     - {v: 7-12, type: poetry, note: "Pide que Dios lo limpie con hisopo, le cree un corazón puro y un espíritu nuevo, no le quite su espíritu santo y le devuelva la alegría."}
     - {v: 13-19, type: poetry, mentions: [place:jerusalen], note: "Promete enseñar a los pecadores y alabar a Dios. Lo que agrada a Dios es un corazón destrozado, no solo ofrendas. Pide el bien para Sion y que se levanten las murallas de Jerusalén."}
   52:
@@ -329,7 +329,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: poetry, mentions: [person:david], note: "Encabezamiento: maskil de David, con instrumentos de cuerda. Angustiado por el enemigo, desea tener alas de paloma para huir al desierto. Las referencias remiten a la huida ante Absalón (2Sa 15:14)."}
+    - {v: 1-8, type: poetry, mentions: [person:david, event:david-huye-de-absalon], note: "Encabezamiento: maskil de David, con instrumentos de cuerda. Angustiado por el enemigo, desea tener alas de paloma para huir al desierto. Las referencias remiten a la huida ante Absalón (2Sa 15:14)."}
     - {v: 9-11, type: poetry, note: "Pide a Jehová que confunda a los enemigos, porque ve violencia, opresión y engaño en la ciudad, día y noche, sobre sus murallas y en su plaza."}
     - {v: 12-15, type: poetry, entities: [person:ahitofel], note: "No lo insulta un enemigo, sino un compañero íntimo con quien iba a la casa de Dios. Perspicacia cree que alude a la traición de Ahitofel. Pide que bajen vivos a la Tumba."}
     - {v: 16-23, type: poetry, note: "Llama a Dios mañana, tarde y noche. El antiguo amigo rompió su pacto con palabras suaves como aceite. Arroja tu carga sobre Jehová: él sostiene al justo y hundirá a los sanguinarios."}
@@ -362,7 +362,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: poetry, entities: [person:david, person:joab-hijo-de-zeruya, place:mesopotamia, place:zoba, place:valle-de-la-sal, place:edom], note: "Encabezamiento: miktam didáctico de David, de su guerra con Aram-Naharaim y Aram-Zobá, cuando Joab venció a Edom en el valle de la Sal. Suceso de 2Sa 8:3-14 y 1Cr 18; lo crea Samuel."}
+    - {v: 1-5, type: poetry, entities: [person:david, person:joab-hijo-de-zeruya, place:mesopotamia, place:zoba, place:valle-de-la-sal, place:edom, event:david-derrota-a-hadadezer-rey-de-zoba, event:david-derrota-a-edom-en-el-valle-de-la-sal], note: "Encabezamiento: miktam didáctico de David, de su guerra con Aram-Naharaim y Aram-Zobá, cuando Joab venció a Edom en el valle de la Sal. Sucesos de 2Sa 8:3-14 y 1Cr 18."}
     - {v: 6-8, type: poetry, entities: [place:sucot, place:manases, place:territorio-de-efrain], mentions: [place:siquem, place:galaad, place:juda, place:moab, place:edom, place:filistea], note: "Dios anuncia que reparte la tierra como suya: Siquem, el valle de Sucot, Galaad, Manasés, Efraín y Judá; y que somete a Moab, Edom y Filistea. Aquí Manasés, Efraín y Judá son territorios de tribus."}
     - {v: 9-12, type: poetry, mentions: [place:edom], note: "¿Quién lo llevará a la ciudad sitiada y hasta Edom? Solo Dios, porque la salvación humana no sirve. Con él vencerán. Los versículos 5 a 12 reaparecen en Sl 108:6-13."}
   61:
@@ -380,7 +380,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-8, type: poetry, entities: [person:david, place:desierto-de-juda], note: "Encabezamiento: David en el desierto de Judá. La referencia remite a 1Sa 23:14, huyendo de Saúl; La Atalaya de 1986 piensa en la rebelión de Absalón. Sin suceso: ninguno de 1 Samuel encaja solo."}
+    - {v: 1-8, type: poetry, entities: [person:david, place:desierto-de-juda], mentions: [event:david-huye-de-absalon], note: "Encabezamiento: David en el desierto de Judá. La referencia remite a 1Sa 23:14, huyendo de Saúl; La Atalaya de 1986 piensa en la rebelión de Absalón. Ninguna se da por segura: la huida va en mención."}
     - {v: 9-11, type: poetry, note: "Los que quieren matarlo caerán a espada y serán comida de chacales; el rey se alegrará en Dios y los mentirosos callarán."}
   64:
     status: complete
@@ -606,7 +606,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-6, type: poetry, mentions: [event:pacto-con-david], note: "Canción nueva: Jehová es más grande que los dioses inútiles de los pueblos. El salmo coincide casi entero con 1Cr 16:23-33, el canto del día en que el Arca llegó a Jerusalén; el suceso ya existe."}
+    - {v: 1-6, type: poetry, mentions: [event:david-sube-el-arca-a-la-ciudad-de-david], note: "Canción nueva: Jehová es más grande que los dioses inútiles de los pueblos. El salmo coincide casi entero con 1Cr 16:23-33, el canto del día en que el Arca llegó a Jerusalén; el suceso ya existe."}
     - {v: 7-13, type: poetry, note: "Las familias de los pueblos deben dar gloria a Jehová, que reina y viene a juzgar la tierra con justicia; cielos, mar, campos y bosques se alegran."}
   97:
     status: complete
@@ -663,7 +663,7 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-7, type: poetry, mentions: [person:abrahan, person:jacob, event:pacto-con-david], note: "Llamada a dar gracias y recordar las obras de Jehová, dirigida a la descendencia de Abrahán y a los hijos de Jacob. Los versículos 1-15 coinciden casi del todo con 1Cr 16:8-22."}
+    - {v: 1-7, type: poetry, mentions: [person:abrahan, person:jacob, event:david-sube-el-arca-a-la-ciudad-de-david], note: "Llamada a dar gracias y recordar las obras de Jehová, dirigida a la descendencia de Abrahán y a los hijos de Jacob. Los versículos 1-15 coinciden casi del todo con 1Cr 16:8-22."}
     - {v: 8-15, type: poetry, entities: [person:abrahan, person:isaac, person:jacob, place:canaan, relation:abrahan/lived_in/canaan, relation:isaac/lived_in/canaan, relation:jacob/lived_in/canaan], mentions: [event:pacto-con-abrahan, event:abran-y-sarai-en-egipto, event:abimelec-devuelve-a-sara], note: "Dios recuerda su pacto con Abrahán, su juramento a Isaac y su decreto a Jacob: la tierra de Canaán. Cuando eran pocos y extranjeros, reprendió a reyes por ellos (Gé 12:17; 20:3)."}
     - {v: 16-22, type: poetry, entities: [person:jose-hijo-de-jacob, relation:jose-hijo-de-jacob/lived_in/egipto, event:empiezan-los-siete-anos-de-hambre, event:sus-hermanos-venden-a-jose, event:jose-encarcelado-en-egipto, event:jose-gobernador-de-egipto], note: "Hambre en el país. José, vendido como esclavo, sufre grilletes, detalle que solo da este salmo; el rey lo libera y lo pone al frente de su casa. Son sucesos de Gé 37-41."}
     - {v: 23-25, type: poetry, entities: [event:jacob-entra-en-egipto, person:jacob, place:egipto, relation:jacob/lived_in/egipto], note: "Israel entra en Egipto, la tierra de Cam; el pueblo se multiplica y los egipcios llegan a odiarlo (Éx 1)."}
@@ -685,7 +685,7 @@ chapters:
     - {v: 32-33, type: poetry, entities: [place:meriba-de-cades, person:moises, event:agua-del-penasco-en-meriba], note: "En las aguas de Meribá, junto a Cadés, el pueblo irrita a Dios y Moisés habla sin pensar (Nú 20)."}
     - {v: 34-39, type: poetry, mentions: [place:canaan], note: "No acaban con los pueblos de la tierra, adoptan sus ídolos y sacrifican a sus hijos a los ídolos de Canaán."}
     - {v: 40-46, type: poetry, note: "Dios los entrega una y otra vez a las naciones y los rescata cuando claman; las referencias remiten a los jueces. Sin sucesos concretos."}
-    - {v: 47-48, type: poetry, mentions: [event:pacto-con-david], note: "Súplica para que los reúna de entre las naciones y bendición que cierra el libro cuarto. 1Cr 16:35, 36 las pone en el canto del día en que llegó el Arca."}
+    - {v: 47-48, type: poetry, mentions: [event:david-sube-el-arca-a-la-ciudad-de-david], note: "Súplica para que los reúna de entre las naciones y bendición que cierra el libro cuarto. 1Cr 16:35, 36 las pone en el canto del día en que llegó el Arca."}
   107:
     status: complete
     reviewed_on: 2026-09-29
@@ -853,8 +853,8 @@ chapters:
     status: complete
     reviewed_on: 2026-09-29
     spans:
-    - {v: 1-5, type: poetry, entities: [person:david], mentions: [person:jacob], note: "Canción de las subidas. David juró al Poderoso de Jacob no descansar hasta hallar una residencia para Jehová (2Sa 7:2)."}
-    - {v: 6-10, type: poetry, entities: [event:pacto-con-david, place:belen], mentions: [person:david], note: "Oyen del Arca en Efrata, que Perspicacia identifica con Belén, y la hallan en la región del bosque; por las referencias sería Quiryat-jearim (1Sa 7:1), que el texto no nombra."}
+    - {v: 1-5, type: poetry, entities: [person:david], mentions: [person:jacob, event:david-quiere-construir-una-casa-para-jehova], note: "Canción de las subidas. David juró al Poderoso de Jacob no descansar hasta hallar una residencia para Jehová (2Sa 7:2)."}
+    - {v: 6-10, type: poetry, entities: [event:david-sube-el-arca-a-la-ciudad-de-david, place:belen], mentions: [person:david], note: "Oyen del Arca en Efrata, que Perspicacia identifica con Belén, y la hallan en la región del bosque; por las referencias sería Quiryat-jearim (1Sa 7:1), que el texto no nombra."}
     - {v: 11-18, type: poetry, entities: [event:pacto-con-david, person:david, place:jerusalen], note: "Jehová juró a David poner en su trono a uno de sus descendientes y eligió Sion como su lugar de descanso para siempre."}
   133:
     status: complete

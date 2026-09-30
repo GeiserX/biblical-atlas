@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: tisbe
+name: Tisbe
+names:
+- name: Tisbe
+  note: La Biblia solo lo nombra por su gentilicio, tisbita, que las seis veces se dice de Elías (Perspicacia «Tisbita»).
+type: city
+lat: null
+lon: null
+precision: uncertain
+coord_source: null
+coord_url: null
+candidates:
+- name: Tierra de Galaad, al este del Jordán
+  geometry:
+    type: zone
+    lat: 32.187016
+    lon: 35.69211
+    radius_km: 30
+  status: favored_level_1
+  sources:
+  - it-tisbita
+  - it-elias
+  - openbible-geo
+  reason: Perspicacia «Tisbita» lo tiene, al parecer, por una aldea de Galaad al este del Jordán; «Elías», núm. 1, párr. 1,
+    lo atribuye a ciertos eruditos.
+  coord_source: calculation
+  note: 'Centro: el punto representativo de Galaad en OpenBible (ficha galaad). El radio de 30 km es nuestro.'
+  checked_on: '2026-09-30'
+summary: Pueblo del que era, según parece, el profeta Elías, al que la Biblia llama el tisbita. Se cree que estaba en Galaad,
+  al este del Jordán; su sitio no se conoce.
+reason: Perspicacia «Tisbita» y «Elías», núm. 1, párr. 1; 1Re 17:1. La primera identificación de OpenBible no tiene punto;
+  las otras, como Listib, jw.org no las nombra. Solo damos una zona.
+sources:
+- it-tisbita
+- it-elias
+- openbible-geo
+- 1-reyes-17
+links:
+- title: 'Perspicacia: «Tisbita»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004427
+  type: perspicacia
+- title: 'Perspicacia: «Elías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001307
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

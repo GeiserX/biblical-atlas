@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abinadab-padre-de-ben-abinadab
+name: Abinadab
+names:
+- name: Abinadab
+perspicacia: 1200000046#4
+disambiguation: Abinadab, padre de un comisario de Salomón; no el de Quiryat-Jearim, ni el hijo de Jesé, ni el hijo de Saúl.
+distinct_from:
+- abinadab-de-quiryat-jearim
+- abinadab-hijo-de-jese
+- abinadab-hijo-de-saul
+summary: Padre de Ben-Abinadab, el comisario de Salomón en las laderas de Dor que se casó con Tafat, hija del rey.
+reason: Perspicacia «Abinadab», núm. 4; 1Re 4:7, 11.
+sources:
+- it-abinadab
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Abinadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000046
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

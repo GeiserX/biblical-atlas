@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hadad-el-edomita-huye-a-egipto
+title: Hadad el edomita huye a Egipto
+date:
+  from: -1069
+  to: -1039
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1070 y c. 1040 a.e.c. (tiempo narrativo: tras la victoria de David sobre Edom)'
+narrative_order:
+  series: 1-reyes
+  order: 11017
+  after: joab-pasa-seis-meses-matando-a-los-varones-de-edom
+places:
+- egipto
+- madian
+- desierto-de-paran
+- edom
+people:
+- hadad-el-edomita
+passages:
+- 1Re 11:14, 17, 18
+summary: Aún niño, Hadad, de la familia real de Edom, escapa con siervos de su padre. Pasan por Madián y Parán, donde se les
+  unen algunos hombres, y en Egipto el faraón le da casa, comida y tierras.
+reason: '1Re 11:17, 18; Perspicacia «Hadad», núm. 4, y «Parán»: huía de la matanza de Joab en Edom, de la misma época que
+  la victoria de David (entre 1070 y c. 1040 a.e.c.).'
+sources:
+- 1-reyes-11
+- it-hadad
+- it-paran
+- it-madian
+- si-3
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+- title: 'Perspicacia: «Hadad»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001797
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

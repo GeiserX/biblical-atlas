@@ -1,0 +1,46 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: abigail-hija-de-nahas
+name: Abigaíl
+names:
+- name: Abigaíl
+perspicacia: 1200000037#2
+disambiguation: La hermana de David, hija de Nahás y madre de Amasá; no Abigaíl de Carmelo, la viuda de Nabal que se casó
+  con David.
+distinct_from:
+- abigail-esposa-de-david
+summary: Hermana, o quizá media hermana, de David y de Zeruyá. Era hija de Nahás y tuvo con Itrá a Amasá, su único hijo conocido.
+reason: Perspicacia «Abigail», núm. 2, y «Nahás», núm. 2; 2Sa 17:25; 1Cr 2:16, 17.
+sources:
+- it-abigail
+- it-nahas
+- 2-samuel-17
+links:
+- title: 'Perspicacia: «Abigail»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000037
+  type: perspicacia
+- title: 2 Samuel 17 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/17
+  type: bible
+relations:
+- type: kin
+  person: nahas-padre-de-abigail
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-nahas
+  reason: 2Sa 17:25 la llama hija de Nahás.
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: zeruya
+  word: sister
+  inferred: false
+  sources:
+  - 2-samuel-17
+  - it-abigail
+  reason: 2Sa 17:25 la presenta como hermana de Zeruyá, la madre de Joab.
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

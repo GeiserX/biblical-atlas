@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ribai
+name: Ribái
+names:
+- name: Ribái
+- name: Ribai
+  note: Grafía de Perspicacia.
+perspicacia: '1200003728'
+summary: Benjaminita de Guibeá, padre de Ittái, uno de los treinta de David.
+reason: Perspicacia «Ribai»; 2Sa 23:29.
+sources:
+- it-ribai
+- 2-samuel-23
+links:
+- title: 'Perspicacia: «Ribai»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003728
+  type: perspicacia
+relations:
+- type: lived_in
+  place: guibea-de-benjamin
+  inferred: false
+  sources:
+  - 2-samuel-23
+  - it-ribai
+  reason: '2Sa 23:29: Ribái de Guibeá de los benjaminitas; Perspicacia «Ribai».'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-29'
+status: verified

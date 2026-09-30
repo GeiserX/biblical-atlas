@@ -104,7 +104,7 @@ chapters:
     reviewed_on: 2026-09-29
     note: "Parte doctrinal de la carta, sin sucesos propios."
     spans:
-    - {v: 1-6, type: letter, entities: [letter:romanos, person:pablo, relation:pablo/kin/abrahan, relation:pablo/kin/benjamin-hijo-de-jacob], mentions: [person:abrahan, person:benjamin-hijo-de-jacob, person:elias-profeta], note: "Dios no rechazó a su pueblo: queda un resto, como en la queja de Elías y los 7.000 fieles (1Re 19:10, 14, 18). Suceso de 1 Reyes, aún sin crear. Baal es un dios cananeo, sin ficha."}
+    - {v: 1-6, type: letter, entities: [letter:romanos, person:pablo, relation:pablo/kin/abrahan, relation:pablo/kin/benjamin-hijo-de-jacob], mentions: [person:abrahan, person:benjamin-hijo-de-jacob, person:elias-profeta, event:jehova-habla-a-elias-en-el-horeb], note: "Dios no rechazó a su pueblo: queda un resto, como en la queja de Elías y los 7.000 fieles (1Re 19:10, 14, 18). Baal es un dios cananeo, sin ficha."}
     - {v: 7-10, type: letter, mentions: [person:david], note: "Solo los escogidos logran lo que Israel buscaba; los demás quedan insensibles, según Dt 29:4 e Is 29:10. David lo había dicho en Sl 69:22, 23."}
     - {v: 11-16, type: letter, entities: [person:pablo], mentions: [event:ananias-devuelve-la-vista-a-saulo], note: "El tropiezo de Israel abre la salvación a las naciones y busca darle celos. Pablo, apóstol enviado a los gentiles (Hch 9:15, según la nota del v. 13), estima mucho su ministerio. Primicias y raíz santas."}
     - {v: 17-24, type: letter, note: "Ejemplo del olivo: se cortan ramas naturales, los judíos sin fe, y se injertan ramas silvestres, los cristianos gentiles. Pablo les advierte que no se crean superiores. Ilustración, sin personas."}

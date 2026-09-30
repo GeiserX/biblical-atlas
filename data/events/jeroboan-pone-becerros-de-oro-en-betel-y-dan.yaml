@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jeroboan-pone-becerros-de-oro-en-betel-y-dan
+title: Jeroboán pone becerros de oro en Betel y en Dan
+date:
+  from: -996
+  to: -996
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 997 a.e.c.
+narrative_order:
+  series: 1-reyes
+  order: 12026
+places:
+- betel
+- dan
+people:
+- jeroboan-i
+passages:
+- 1Re 12:26-30
+summary: Temiendo que el pueblo vuelva a Rehoboam si sigue subiendo al templo de Jerusalén, Jeroboán hace dos becerros de
+  oro y los presenta como el Dios que sacó a Israel de Egipto. Pone uno en Betel y otro en Dan.
+reason: El estudio 3, párr. 7, dice que en 997 a.e.c. Jeroboán rompió con la casa de David y apartó a Israel de Jehová (2Re
+  17:21). Perspicacia «Jeroboán», núm. 1, párr. 5, y «Betel».
+sources:
+- 1-reyes-12
+- si-3
+- it-jeroboan
+- it-betel
+- it-dan
+links:
+- title: 1 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/12
+  type: bible
+checked_on: '2026-09-30'
+status: verified

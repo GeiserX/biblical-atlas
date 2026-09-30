@@ -11,15 +11,19 @@ date:
   text: 1037-998 a.e.c., en el reinado de Salomón
 places:
 - ofir
+- ezion-gueber
 people:
 - salomon
+- hiram-rey-de-tiro
 passages:
 - 1Re 9:26-28
 - 1Re 10:11
 - 2Cr 8:17, 18
 - Ec 2:8
-summary: Desde Ezión-guéber, en el golfo de Aqaba, la flota de Salomón sale con marinos de Hiram hacia Ofir y vuelve con
-  oro, madera de algum y piedras preciosas.
+- 1Re 10:12
+- 2Cr 9:10, 11
+summary: Desde Ezión-Guéber, en el golfo de Aqaba, la flota de Salomón sale con marinos de Hiram hacia Ofir y vuelve con oro,
+  madera de sándalo y piedras preciosas.
 reason: Perspicacia «Salomón» («Sus riquezas y gloria») y «Ofir» cuentan estos viajes sin darles año. B7 los pone en su
   mapa del reino, dentro del reinado de Salomón, 1037-998 a.e.c.
 sources:
@@ -28,10 +32,17 @@ sources:
 - tnm-b7
 - 1-reyes-9
 - 1-reyes-10
+- it-algum
+- it-hiram
 links:
 - title: 'Perspicacia: «Ofir»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003336
   type: perspicacia
 search: Ofir oro naves de Salomón
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: «Madera de algum» pasa a «madera de sándalo», la palabra de la TNM en 1Re 10:11, 12 y 2Cr 9:10, 11; Perspicacia
+    «Algum» dice que el árbol se identifica tradicionalmente con el sándalo. Ezión-Guéber, con la grafía de la TNM.
+  source: 1-reyes-10
+checked_on: '2026-09-30'
 status: verified

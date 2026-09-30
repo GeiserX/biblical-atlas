@@ -41,6 +41,9 @@ sources:
 - 1-samuel-28
 - it-jonatan
 - 1-samuel-31
+- 2-samuel-1
+- 2-samuel-3
+- 2-samuel-21
 links:
 - title: 'Perspicacia: «Saúl»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003847
@@ -104,8 +107,20 @@ relations:
   - 1-samuel-31
   - it-saul
   - it-jonatan
+  - 2-samuel-1
   reason: '1Sa 31:1-6: herido por los arqueros, se echó sobre su propia espada en el monte Guilboa. Perspicacia «Jonatán»,
     núm. 2, fecha la batalla en 1078.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: kin
+  person: rizpa
+  word: concubine
+  inferred: false
+  sources:
+  - 2-samuel-3
+  - it-rizpa
+  - 2-samuel-21
+  reason: '2Sa 3:7: Saúl había tenido una concubina llamada Rizpá.'
   checked_on: '2026-09-29'
   status: verified
 perspicacia: '1200003847'

@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-anuncia-a-salomon-que-le-quitara-el-reino
+title: Jehová anuncia a Salomón que le quitará el reino
+date:
+  from: -1013
+  to: -997
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 1014 y 998 a.e.c. (tiempo narrativo: después de la segunda aparición de Jehová y antes de morir Salomón)'
+narrative_order:
+  series: 1-reyes
+  order: 11009
+places:
+- jerusalen
+people:
+- salomon
+present: []
+passages:
+- 1Re 11:9-13
+summary: Enojado por su infidelidad, Jehová le dice a Salomón que dará el reino a uno de sus siervos. Por David no lo hará
+  en vida de Salomón, y a su hijo le dejará una tribu.
+reason: 1Re 11:9, 10 lo pone después de las dos apariciones de Jehová; la segunda fue en el año 24 del reinado, 1014 a.e.c.
+  (Perspicacia «Salomón»). Muere hacia 998 («Jeroboán»). No dice dónde se lo comunicó; Jerusalén no sitúa a nadie.
+sources:
+- 1-reyes-11
+- it-salomon
+- it-jeroboan
+links:
+- title: 1 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/11
+  type: bible
+checked_on: '2026-09-30'
+status: verified

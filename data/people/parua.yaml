@@ -1,0 +1,17 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: parua
+name: Parúah
+names:
+- name: Parúah
+perspicacia: '1200003392'
+summary: Padre de Jehosafat, el comisario de Salomón en Isacar.
+reason: Perspicacia «Parúah»; 1Re 4:17.
+sources:
+- it-parua
+- 1-reyes-4
+links:
+- title: 'Perspicacia: «Parúah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003392
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

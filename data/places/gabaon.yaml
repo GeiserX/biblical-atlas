@@ -3,6 +3,9 @@ id: gabaon
 name: Gabaón
 names:
 - name: Gabaón
+- name: Estanque de Gabaón
+  note: Allí se enfrentaron los hombres de Abner y los de Joab (2Sa 2:13). Perspicacia no asegura que sea el gran pozo excavado
+    en el-Jib.
 type: city
 lat: 31.847451
 lon: 35.183351
@@ -22,6 +25,8 @@ sources:
 - josue-10
 - josue-18
 - josue-21
+- 2-samuel-2
+- 2-samuel-20
 links:
 - title: 'Perspicacia: «Gabaón»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001682

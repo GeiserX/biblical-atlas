@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: eliada-hijo-de-david
+name: Eliadá
+names:
+- name: Eliadá
+- name: Beeliadá
+  note: Nombre que le da 1Cr 14:7, según Perspicacia «Eliadá», núm. 1.
+perspicacia: 1200001293#1
+disambiguation: Eliadá hijo de David (núm. 1 de Perspicacia); no el padre de Rezón ni el oficial benjamita de Jehosafat.
+summary: Hijo de David nacido en Jerusalén. 1Cr 14:7 lo llama Beeliadá.
+reason: 'Perspicacia «Eliadá», núm. 1; 2Sa 5:13-16. En Crónicas: 1Cr 3:5-8 y 14:7.'
+sources:
+- it-eliada
+- 2-samuel-5
+links:
+- title: 'Perspicacia: «Eliadá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001293
+  type: perspicacia
+relations:
+- type: kin
+  person: david
+  word: father
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: uno de los hijos que David tuvo en Jerusalén.'
+  checked_on: '2026-09-29'
+  status: verified
+- type: born_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-samuel-5
+  reason: '2Sa 5:13-16: nació en Jerusalén, después de que David dejara Hebrón.'
+  checked_on: '2026-09-29'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+distinct_from:
+- eliada-padre-de-rezon

@@ -12,6 +12,7 @@ reason: Perspicacia «Abinadab», núm. 1; 1Sa 7:1, 2.
 sources:
 - it-abinadab
 - 1-samuel-7
+- 2-samuel-6
 links:
 - title: 'Perspicacia: «Abinadab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000046
@@ -26,11 +27,13 @@ relations:
   sources:
   - 1-samuel-7
   - it-abinadab
+  - 2-samuel-6
   reason: '1Sa 7:1: el Arca llegó a su casa, en Quiryat-Jearim.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - abinadab-hijo-de-jese
 - abinadab-hijo-de-saul
+- abinadab-padre-de-ben-abinadab

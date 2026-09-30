@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: distrito-de-kineret
+name: Kinéret
+names:
+- name: Kinéret
+  note: '«Todo Kinéret» de 1Re 15:20: la región, no la ciudad ni el lago del mismo nombre.'
+type: region
+lat: null
+lon: null
+precision: zone
+coord_source: null
+coord_url: null
+candidates:
+- name: Llanura de Genesaret
+  geometry:
+    type: point
+    lat: 32.860556
+    lon: 35.507222
+  sources:
+  - it-kineret
+  - openbible-geo
+  reason: 'Perspicacia «Kinéret», núm. 2: se suele pensar que es la fértil llanura de Genesaret. Punto de OpenBible de esa
+    llanura.'
+  coord_source: openbible:a7de69e
+  coord_url: https://www.openbible.info/geo/ancient/a7de69e/gennesaret
+  checked_on: '2026-09-30'
+  status: favored_level_1
+summary: Distrito de Israel junto al mar de Galilea que atacó Ben-Hadad I hacia 962 a.e.c., a instancias de Asá. Suele identificarse
+  con la llanura de Genesaret.
+reason: Perspicacia «Kinéret», núm. 2; 1Re 15:20. La identificación con Genesaret no es segura, por eso va como candidato.
+sources:
+- it-kineret
+- openbible-geo
+- 1-reyes-15
+links:
+- title: 'Perspicacia: «Kinéret»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000958
+  type: perspicacia
+- title: 1 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified
