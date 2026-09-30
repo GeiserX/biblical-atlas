@@ -422,26 +422,36 @@ function buscarTexto(texto) {
 // Atrás y adelante de verdad (B-15). base.js escribe la dirección con replaceState; justo antes de que lo haga,
 // guardamos una copia de la entrada actual con pushState. Así la escritura siguiente sustituye la copia y la
 // entrada anterior queda en el historial con la vista de antes.
+// Nada depende del reloj: lo que tarde en pintarse la vista (el mapa cargando, un teléfono lento) no crea entradas.
 // ---------------------------------------------------------------------------
 const historia = (() => {
-  let clave = null, navegando = 0, marcado = false;
+  // clave: la vista que ya tiene su entrada. quieto: tras entrar desde la portada o tras Atrás y Adelante, cada cambio
+  // de vista que sigue es parte del mismo paso (un recorrido pone su parada un fotograma después), hasta que la persona
+  // vuelve a pulsar o a teclear después de verlo pintado. absorber: marcar() ya guardó la entrada; el siguiente
+  // fotograma solo apunta la clave nueva.
+  let clave = null, quieto = false, pintado = false, absorber = false;
   const claveActual = () => [BE.selTexto(E.sel), ...BE.parametros.filter((x) => x.historia).map((x) => x.escribir() ?? '')].join('|');
   function empujar() { history.pushState(null, '', location.href); }
+  function quedarse() { quieto = true; pintado = false; absorber = false; }
   BE.pintores.push(() => {
     const k = claveActual();
     if (clave === null) { clave = k; return; }   // arranque: la primera vista no crea entrada
+    if (quieto || absorber) { clave = k; pintado = true; absorber = false; return; }
     if (k === clave) return;
     clave = k;
-    if (navegando > performance.now() || marcado) { marcado = false; return; }
     empujar();
   });
-  window.addEventListener('popstate', () => { navegando = performance.now() + 600; BE.aplicarHash(false); });
+  const despertar = () => { if (quieto && pintado) quieto = false; };
+  window.addEventListener('pointerdown', despertar, true);
+  window.addEventListener('keydown', despertar, true);
+  // Antes de los datos no hay vista que poner: el arranque lee la dirección cuando llegan.
+  window.addEventListener('popstate', () => { quedarse(); if (BE.D) BE.aplicarHash(false); });
   return {
     /** Un salto de fecha que merece su entrada (un año buscado, una parada): se guarda la vista de antes. */
-    marcar() { if (clave !== null && !(navegando > performance.now())) { empujar(); marcado = true; setTimeout(() => { marcado = false; }, 100); } },
-    /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino. Se guarda la de la portada y, durante
-        el mismo margen que Atrás, ni el pintor ni marcar() crean otra; fn pone el destino. */
-    entrar(fn) { empujar(); navegando = performance.now() + 600; marcado = false; fn(); },
+    marcar() { if (clave !== null && !quieto) { empujar(); absorber = true; BE.programar(); } },
+    /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
+        la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
+    entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
   };
 })();
 

@@ -362,8 +362,9 @@ BE.inicios.push(() => { if (abierta) pintarDatos(); });
 // ---------------------------------------------------------------------------
 BE.parametros.push({ nombre: 'portada', historia: true, escribir: () => (abierta ? '1' : null),
   leer(v) { if (v === '1') { if (!abierta) abrir({ desdeHash: true }); } else if (abierta) cerrarHoja(); } });
-// El logo lleva a la portada (base.js ya vuelve al inicio del mapa detrás).
-$('#inicio').addEventListener('click', () => setTimeout(() => abrir(), 0));
+// El logo lleva a la portada, y base.js vuelve al inicio del mapa detrás (su escucha va después de esta): las dos
+// cosas son un solo paso, con una sola entrada nueva, y Atrás vuelve a la vista de antes.
+$('#inicio').addEventListener('click', () => { if (BE.D && !abierta) BE.historia.entrar(() => abrir()); });
 
 // Al abrir sin dirección, la entrada de la portada lleva #portada=1: Atrás desde el mapa vuelve a ella.
 if (abierta) {
