@@ -4,8 +4,10 @@ name: Quir de Moab
 names:
 - name: Quir de Moab
 - name: Quir-Haréset
-  note: Así la llama Is 16:7, 11. Perspicacia la da por otro nombre de la misma ciudad, como hace el Targum, y «Las profecías
+  note: Así la llaman 2Re 3:25 e Is 16:7, 11. Perspicacia la da por otro nombre de la misma ciudad, como hace el Targum, y «Las profecías
     de Isaías I» escribe Quir o Quir-haréset.
+- name: Quir-Heres
+  note: Forma de Jer 48:31, 36. El Targum arameo la iguala con Quir de Moab, según Perspicacia «Quir de Moab».
 type: city
 lat: 31.180556
 lon: 35.701389
@@ -13,12 +15,14 @@ precision: point
 coord_source: openbible:a1a57d0
 coord_url: https://www.openbible.info/geo/ancient/a1a57d0/kir-2
 coord_note: Punto de OpenBible en Karak, con que se suele identificar la ciudad. Es el mismo punto que representa a todo Moab.
-summary: Ciudad principal de Moab, quizá su antigua capital, que se suele identificar con Karak, en una meseta unos 35 km
-  al sur de Dibón. Isaías anuncia que quedará en silencio y que Moab llorará por sus tortas de pasas.
-reason: 'Perspicacia «Quir de Moab» y «Quir-haréset»; Is 15:1; 16:7, 11. «Las profecías de Isaías I», cap. 15, párr. 10. OpenBible:
-  solo el punto.'
+summary: Ciudad principal de Moab, quizá su antigua capital, que se suele identificar con Karak, unos 35 km al sur de Dibón.
+  En ella quedó cercado el rey Mesá (2Re 3:25-27), e Isaías anuncia que quedará en silencio.
+reason: 'Perspicacia «Quir de Moab» y «Quir-haréset»; 2Re 3:25-27; Is 15:1; 16:7, 11. «Las profecías de Isaías I», cap. 15,
+  párr. 10. OpenBible: solo el punto.'
 not_claimed:
 - 'Que sea la Quir adonde fueron desterrados los arameos (Am 1:5; 9:7): Perspicacia la trata en otro artículo.'
+- 'Que la ciudad cayera: Perspicacia «Quir de Moab» dice que no se conquistó, y los aliados se retiraron tras el sacrificio
+  (2Re 3:27).'
 sources:
 - it-quir-de-moab
 - it-quir-hareset
@@ -26,6 +30,7 @@ sources:
 - openbible-geo
 - isaias-15
 - isaias-16
+- 2-reyes-3
 links:
 - title: 'Perspicacia: «Quir de Moab»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002630
@@ -39,5 +44,13 @@ links:
 - title: Isaías 16 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/16
   type: bible
+- title: 2 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/3
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'Se une con la ficha quir-hareset que creó 2 Reyes para la misma ciudad: suma el nombre Quir-Heres, el cerco de
+    Mesá de 2Re 3 y la ciudad que no cayó.'
+  source: 2-reyes-3
 checked_on: '2026-09-30'
 status: verified

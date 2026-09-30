@@ -4,9 +4,6 @@ name: Bet-Edén
 names:
 - name: Bet-Edén
   note: Casa de Edén, según Perspicacia, que escribe Bet-edén.
-- name: Edén
-  note: 'Forma breve del nombre según Perspicacia «Edén», núm. 2: los hijos de Edén que vencieron los asirios (2Re 19:12)
-    y el mercado que abastecía a Tiro (Ez 27:23).'
 type: region
 lat: null
 lon: null
@@ -39,8 +36,6 @@ sources:
 - it-bet-eden
 - openbible-geo
 - amos-1
-- it-eden
-- 2-reyes-19
 links:
 - title: 'Perspicacia: «Bet-edén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000681
@@ -48,5 +43,5 @@ links:
 - title: Amós 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
   type: bible
-checked_on: '2026-09-30'
+checked_on: '2026-09-29'
 status: verified
