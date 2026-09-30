@@ -1234,7 +1234,7 @@ function pintarCursor() {
     otra.title = !txt ? '' : modoMeses() === 'nuestros' ? `Fecha hebrea aproximada.${fc.anacronicoSegunda ? ` ${CURSIVA_CHIP}` : ''}` : 'Nuestros meses, aproximados: el calendario gregoriano es de 1582 y aquí solo orienta';
   }
   // La cronología va en el texto emergente de la fecha, no en una pista visible: es jerga para quien lee.
-  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para escribir otra fecha.`;
+  const ayuda = `${pw?.estimada ? 'Fecha estimada: sabemos el orden del relato, no el día. ' : ''}${fc.anacronico ? `${CURSIVA_CHIP} ` : ''}Fechas según la cronología de la Traducción del Nuevo Mundo y de jw.org. Pulsa para ir a otra fecha.`;
   if ($('#fecha-valor').title !== ayuda) $('#fecha-valor').title = ayuda;
   $('#linea-estado').textContent = BE.fraseAhora ? BE.fraseAhora(E.t) : '';
   // Edad en la fecha, solo con base (T-18).
@@ -1247,55 +1247,8 @@ function pintarCursor() {
 }
 
 // ---------------------------------------------------------------------------
-// Escribir la fecha (T-20)
+// Ir a una fecha (el panel de la fecha, datepicker.js, llama a BE.irA)
 // ---------------------------------------------------------------------------
-/** «607 a», «607 a.e.c.», «51», «c. 50», «51 e.c.», «14 nisán 33» → año decimal, o null si no se entiende. */
-function leerFecha(texto) {
-  let s = norm(texto).trim().replace(/^(c\.|ca\.|hacia|alrededor de|circa)\s*/, '');
-  const hebreo = s.match(/^(\d{1,2})\s+(?:de\s+)?([a-z]+)\s+(?:de\s+)?(-?\d{1,4})\s*(.*)$/);
-  if (hebreo) {
-    const mes = BE.calendario().meses.find((m) => norm(m.nombre) === hebreo[2] || (m.otros_nombres || []).some((o) => norm(o) === hebreo[2]));
-    const y = anioDe(hebreo[3], hebreo[4]);
-    if (mes && y != null) return BE.inicioMes(y, mes.id) + (+hebreo[1] - 0.5) * BE.DIA;
-  }
-  const m = s.match(/^(-?\d{1,4})\s*(.*)$/);
-  if (!m) return null;
-  const y = anioDe(m[1], m[2]);
-  return y == null ? null : y + 0.5;
-}
-function anioDe(num, era) {
-  let n = +num;
-  const e = era.replace(/[\s.]/g, '');
-  if (n < 0) return 1 + n;   // «-607»: se lee como 607 a.e.c.
-  if (!n) return null;
-  if (/^(a|aec|ac|antes|antesdecristo|bc|bce|adc)$/.test(e) || /^a(ntes)?(de)?(la)?(era)?(comun)?$/.test(e)) return 1 - n;
-  if (e === '' || /^(ec|dc|d|ad|ce|despues|era|eracomun)/.test(e)) return n;
-  return null;
-}
-function editarFecha() {
-  const caja = $('#fecha');
-  if (caja.querySelector('input')) return;
-  const input = document.createElement('input');
-  input.type = 'text'; input.className = 'fecha-entrada'; input.value = '';
-  input.placeholder = '607 a.e.c. · 51 · 14 nisán 33';
-  input.setAttribute('aria-label', 'Escribe una fecha: 607 a.e.c., 51, c. 50 o 14 nisán 33');
-  caja.appendChild(input);
-  caja.classList.add('editando');
-  // En una caja estrecha (el móvil), un ejemplo más corto que se lea entero.
-  if (input.clientWidth < 210) input.placeholder = '607 a.e.c. · 14 nisán 33';
-  input.focus();
-  const cerrar = () => { input.remove(); caja.classList.remove('editando'); };
-  input.addEventListener('keydown', (e) => {
-    e.stopPropagation();
-    if (e.key === 'Escape') { cerrar(); return; }
-    if (e.key !== 'Enter') return;
-    const t = leerFecha(input.value);
-    if (t == null || t < BE.T_MIN - 1 || t > BE.T_MAX + 1) { BE.avisar('No entiendo esa fecha. Prueba «607 a.e.c.», «51» o «14 nisán 33».'); return; }
-    cerrar();
-    irA(t);
-  });
-  input.addEventListener('blur', () => setTimeout(cerrar, 150));
-}
 /** Lleva el cursor a t y, si la escala es muy lejana, acerca a décadas (o a días si la fecha es de un día). */
 function irA(t, escala) {
   setT(t);
@@ -1769,10 +1722,12 @@ function montarBarra() {
   mm.addEventListener('pointermove', (e) => { if (arrastrando) irMinimapa(e); });
   mm.addEventListener('pointerup', () => { arrastrando = false; });
   $('#linea-menu-boton').addEventListener('click', (e) => { e.stopPropagation(); if (menuAbierto()) cerrarMenu(); else abrirMenu('todo'); });
-  $('#fecha').addEventListener('click', editarFecha);
-  $('#fecha').setAttribute('title', 'Pulsa para escribir una fecha: 607 a.e.c., 51 o 14 nisán 33');
-  $('#fecha').setAttribute('role', 'button'); $('#fecha').setAttribute('tabindex', '0');
-  $('#fecha').addEventListener('keydown', (e) => { if (e.key === 'Enter' && e.target === $('#fecha')) editarFecha(); });
+  // La fecha abre el panel de la fecha (datepicker.js): qué quiere decir y cómo ir a otra, sin nada que escribir.
+  $('#fecha').addEventListener('click', () => BE.datePicker?.open());
+  $('#fecha').setAttribute('title', 'Pulsa para ir a otra fecha o ver qué quiere decir esta');
+  $('#fecha').addEventListener('keydown', (e) => {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target === $('#fecha')) { e.preventDefault(); BE.datePicker?.open(); }
+  });
   document.addEventListener('pointerdown', (e) => {
     if (menuAbierto() && !e.target.closest('#linea-menu, #linea-menu-boton, .carriles-boton')) cerrarMenu();
     if (ayudaFechas && !ayudaFechas.hidden && !e.target.closest('#fechas-ayuda, #fechas-boton, #linea-menu')) cerrarAyudaFechas();
@@ -2012,7 +1967,7 @@ BE.parametros.push(
 );
 
 Object.assign(BE, {
-  pintarLineaFija, pintarCursor, iniciarLinea, leerFecha, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
+  pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
   lineaEstado: L, SPAN_MIN,
 });
 })();
