@@ -1,0 +1,31 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: gur
+name: Gur
+names:
+- name: Gur
+type: city
+lat: 32.44411
+lon: 35.2966
+precision: uncertain
+coord_source: openbible:a878fea
+coord_url: https://www.openbible.info/geo/ancient/a878fea/gur
+coord_note: Punto de Khirbet en Najjar, primera identificación de OpenBible, que jw.org no nombra. Perspicacia «Gur» da su
+  ubicación por incierta.
+summary: Lugar próximo a Ibleam. Subiendo hacia Gur, los hombres de Jehú hirieron en su carro al rey Ocozías de Judá, que
+  aún logró huir hasta Meguidó.
+reason: 'Perspicacia «Gur» y «Ocozías», núm. 2, párr. 2; 2Re 9:27. OpenBible: solo el punto, con precisión incierta porque
+  jw.org no da el sitio.'
+sources:
+- it-gur
+- it-ocozias
+- openbible-geo
+- 2-reyes-9
+links:
+- title: 'Perspicacia: «Gur»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001785
+  type: perspicacia
+- title: 2 Reyes 9 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+  type: bible
+checked_on: '2026-09-30'
+status: verified

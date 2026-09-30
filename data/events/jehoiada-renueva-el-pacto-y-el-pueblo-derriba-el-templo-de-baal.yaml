@@ -1,0 +1,48 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoiada-renueva-el-pacto-y-el-pueblo-derriba-el-templo-de-baal
+title: Jehoiadá renueva el pacto y el pueblo derriba el templo de Baal
+date:
+  from: -897
+  to: -897
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 898 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 11017
+places:
+- jerusalen
+- monte-moria
+people:
+- jehoiada-sumo-sacerdote
+- jehoas-de-juda
+- matan-sacerdote-de-baal
+present:
+- jehoiada-sumo-sacerdote
+- jehoas-de-juda
+- matan-sacerdote-de-baal
+roles:
+  matan-sacerdote-de-baal: died
+passages:
+- 2Re 11:17, 18
+- 2Cr 23:16-19
+summary: Jehoiadá hace un pacto entre Jehová, el rey y el pueblo, y otro entre el rey y el pueblo. Después la gente va al
+  templo de Baal, lo derriba, rompe altares e imágenes y ejecuta a Matán, su sacerdote.
+reason: 2Re 11:17, 18; Perspicacia «Matán», núm. 1, y «Jehoiadá», núm. 3. Sucede el año en que coronan a Jehoás, 898 a.e.c.
+  (estudio 3). El templo de Baal estaba en la ciudad; el pacto se hizo en el templo.
+sources:
+- 2-reyes-11
+- it-matan
+- it-jehoiada
+- si-3
+links:
+- title: 2 Reyes 11 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/11
+  type: bible
+- title: 'Perspicacia: «Matán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002929
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

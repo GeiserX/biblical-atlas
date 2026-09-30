@@ -50,8 +50,9 @@ relations:
   reason: 'Nú 1:4, 10, 44: fue uno de los doce jefes que estuvieron con Moisés y Aarón para registrar a Israel.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - elisama-hijo-de-david
 - elisua
+- elisama-abuelo-de-ismael

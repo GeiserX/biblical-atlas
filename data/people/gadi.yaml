@@ -1,0 +1,20 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: gadi
+name: Gadí
+names:
+- name: Gadí
+perspicacia: '1200001588'
+summary: Padre de Menahem, rey de Israel.
+reason: Perspicacia «Gadí»; 2Re 15:14, 17.
+sources:
+- it-gadi
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Gadí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001588
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,65 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: evil-merodac
+name: Evil-Merodac
+names:
+- name: Evil-Merodac
+- name: Evil-merodac
+  note: Grafía de Perspicacia.
+- name: Awel-Marduk
+  note: Nombre babilonio que recoge Perspicacia, también escrito Amil-Marduk.
+date:
+  from: -580
+  to: -580
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 581 a.e.c.
+perspicacia: '1200001453'
+summary: Rey de Babilonia que sucedió a Nabucodonosor en 581 a.e.c. Ese mismo año liberó a Joaquín, rey de Judá, lo trató
+  con bondad y lo puso por encima de los demás reyes cautivos.
+reason: 'Perspicacia «Evil-merodac»; 2Re 25:27-30 (paralelo: Jer 52:31-34).'
+sources:
+- it-evil-merodac
+- 2-reyes-25
+links:
+- title: 'Perspicacia: «Evil-merodac»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001453
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+relations:
+- type: succeeds
+  person: nabucodonosor-ii
+  office: king
+  inferred: true
+  sources:
+  - it-evil-merodac
+  - 2-reyes-25
+  reason: 'Perspicacia «Evil-merodac»: sucedió a Nabucodonosor en 581. 2Re 25:27 solo dice que acababa de hacerse rey.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: nabucodonosor-ii
+  word: father
+  inferred: true
+  sources:
+  - it-nabucodonosor
+  - it-evil-merodac
+  - 2-reyes-25
+  reason: 2Re 25:27 no nombra a su padre; Perspicacia «Nabucodonosor», párr. 1, lo hace hijo de este, y «Evil-merodac» cita
+    un jarrón de cerca de Susa que dice lo mismo.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: babilonia
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-evil-merodac
+  reason: '2Re 25:27, 28: rey de Babilonia, donde tenía presos a Joaquín y a otros reyes.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

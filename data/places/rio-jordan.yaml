@@ -40,6 +40,11 @@ sources:
 - 2-samuel-17
 - 2-samuel-19
 - 2-samuel-24
+- 2-reyes-2
+- 2-reyes-5
+- 2-reyes-6
+- 2-reyes-7
+- 2-reyes-10
 links:
 - title: 'Perspicacia: «Jordán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002511
@@ -47,5 +52,5 @@ links:
 - title: Mateo 3 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/40/3
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

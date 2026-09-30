@@ -1,0 +1,33 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jerusa
+name: Jerusá
+names:
+- name: Jerusá
+- name: Jerusah
+  note: Grafía que Perspicacia pone junto a la otra en el título del artículo.
+perspicacia: '1200002437'
+summary: Madre del rey Jotán de Judá. Era hija de Sadoc y esposa del rey Uzías.
+reason: Perspicacia «Jerusá, Jerusah»; 2Re 15:33.
+sources:
+- it-jerusa
+- 2-reyes-15
+links:
+- title: 'Perspicacia: «Jerusá, Jerusah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002437
+  type: perspicacia
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+relations:
+- type: kin
+  person: sadoc-abuelo-de-jotan
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-jerusa
+  reason: 2Re 15:33 la llama hija de Sadoc.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

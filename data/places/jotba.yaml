@@ -1,0 +1,29 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: jotba
+name: Jotbá
+names:
+- name: Jotbá
+type: city
+lat: 32.831944
+lon: 35.278139
+precision: point
+coord_source: openbible:adbbb54
+coord_url: https://www.openbible.info/geo/ancient/adbbb54/jotbah
+coord_note: 'Khirbet Shifat, primera identificación de OpenBible: es la Khirbet Jefat (Horvat Yodefat) con que Perspicacia
+  suele identificarla.'
+summary: Pueblo de Haruz, abuelo materno del rey Amón. Se la sitúa en Galilea, en Khirbet Jefat, al norte de Nazaret. No es
+  Jotbatá, el campamento del desierto.
+reason: 'Perspicacia «Jotbá»; 2Re 21:19. OpenBible: solo el punto.'
+sources:
+- it-jotba
+- openbible-geo
+- 2-reyes-21
+links:
+- title: 'Perspicacia: «Jotbá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002527
+  type: perspicacia
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+checked_on: '2026-09-30'
+status: verified

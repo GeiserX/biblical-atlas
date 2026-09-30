@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-pone-a-guedalias-al-mando
+title: Nabucodonosor pone a Guedalías al mando de los que quedan en Judá
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 25022
+places:
+- mizpa-de-benjamin
+people:
+- guedalias
+- nabucodonosor-ii
+- ismael-hijo-de-netanias
+- johanan-hijo-de-carea
+- seraya-hijo-de-tanhumet
+- jaazanias-jefe-militar
+present:
+- guedalias
+- ismael-hijo-de-netanias
+- johanan-hijo-de-carea
+- seraya-hijo-de-tanhumet
+- jaazanias-jefe-militar
+passages:
+- 2Re 25:22-24
+- Jer 40:7-12
+summary: Nabucodonosor pone a Guedalías, hijo de Ahicam, al frente de los judíos que quedan. Los jefes del ejército acuden
+  a él en Mizpá, y Guedalías les jura que si sirven al rey de Babilonia les irá bien.
+reason: 'Estudio 3, párr. 6, y Perspicacia «Guedalías», núm. 4: después de la quema de Jerusalén en ab de 607 y antes de su
+  asesinato en el mes séptimo.'
+sources:
+- 2-reyes-25
+- si-3
+- it-guedalias
+- it-ismael
+- it-johanan
+- it-seraya
+- it-jaazanias
+links:
+- title: 'Perspicacia: «Guedalías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001632
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+checked_on: '2026-09-30'
+status: verified

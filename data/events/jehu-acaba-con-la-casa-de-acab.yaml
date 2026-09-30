@@ -14,35 +14,56 @@ places:
 - samaria
 people:
 - jehu-de-israel
-- jehoram-de-israel
-- ocozias-de-juda
-- jezabel
-- eliseo
 type: death
-roles:
-  jehoram-de-israel: died
-  ocozias-de-juda:
-    role: died
-    place: meguido
-  jezabel: died
+roles: {}
 passages:
-- 2Re 9:1-37
-- 2Re 10:1-28
-summary: Ungido por un enviado de Eliseo, Jehú mata a Jehoram de Israel y a Ocozías de Judá, hace arrojar a Jezabel en Jezreel
-  y elimina a los hijos de Acab y el culto a Baal.
-reason: El estudio 3 pone el reinado de Jehú hacia 905; Perspicacia «Jehú», núm. 3, párr. 7-11.
+- 2Re 10:1-11
+summary: Jehú reta por carta a los jefes de Samaria a coronar a un hijo de Acab. Asustados, le mandan a Jezreel las cabezas
+  de los 70 hijos, y él mata a los de Acab que quedan allí.
+reason: El estudio 3 pone hacia 905 a.e.c. que Jehú sucede a Jehoram, y A6-A abre su reinado ese año. Perspicacia «Jehú»,
+  núm. 3, párr. 9. No hay nombre para los 70 hijos, así que no llevan papel.
 sources:
 - si-3
 - it-jehu
-- 2-reyes-9
-- it-ocozias
+- 2-reyes-10
+- tnm-a6-a
 links:
 - title: 'Perspicacia: «Jehú»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002401
   type: perspicacia
-- title: 2 Reyes 9 (TNM)
-  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/9
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
   type: bible
 search: Jehú Jezabel casa de Acab
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'El suceso juntaba muchas escenas de 2Re 9 y 10: la unción, las muertes de Jehoram, Ocozías y Jezabel, los hermanos
+    de Ocozías y el templo de Baal. Cada una tiene su suceso; este se queda con 2Re 10:1-11.'
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: Jehoram, Ocozías, Jezabel y Eliseo pasan a sus propios sucesos de 2Re 9; en 2Re 10:1-11 solo actúa Jehú.
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: Las muertes de Jehoram, Ocozías y Jezabel pasan a sus sucesos de 2Re 9. Los 70 hijos de Acab no tienen nombre ni
+    ficha.
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: El resumen cuenta solo 2Re 10:1-11, que es lo que cita ahora el suceso.
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: La razón cita el párrafo de Perspicacia que cuenta esta escena y explica por qué no hay papeles.
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: Salen 2 Reyes 9 y Perspicacia «Ocozías», que sostenían las escenas que ahora son otros sucesos; entran 2 Reyes 10
+    y A6-A.
+  source: 2-reyes-10
+- date: '2026-09-30'
+  change: El enlace a la Biblia pasa de 2 Reyes 9 a 2 Reyes 10, el capítulo que cuenta ahora el suceso.
+  source: 2-reyes-10
+present:
+- jehu-de-israel
+narrative_order:
+  series: 2-reyes
+  order: 10001
+checked_on: '2026-09-30'
 status: verified

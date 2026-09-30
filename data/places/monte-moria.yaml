@@ -27,6 +27,9 @@ names:
 - name: Sala del Trono
   note: Donde Salomón juzgaba, por eso también Sala de Juicio (1Re 7:7). Perspicacia «Salomón» la pone junto a su palacio,
     en la ladera que baja del templo hacia la Ciudad de David.
+- name: Puerta del Fundamento
+  note: Puerta del templo, de sitio incierto, donde Jehoiadá puso a un tercio de la guardia el día de la coronación de Jehoás
+    (2Re 11:6; Perspicacia «Puerta»).
 type: mountain
 lat: 31.777778
 lon: 35.235556
@@ -78,6 +81,10 @@ sources:
 - it-casa-del-bosque-del-libano
 - it-salomon
 - 1-reyes-8
+- 2-reyes-11
+- it-puerta
+- 2-reyes-12
+- 2-reyes-19
 - isaias-22
 links:
 - title: 'Perspicacia: «Moria»'

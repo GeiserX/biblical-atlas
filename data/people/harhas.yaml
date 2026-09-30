@@ -1,0 +1,22 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: harhas
+name: Harhás
+names:
+- name: Harhás
+- name: Hasrá
+  note: Forma del texto masorético en 2Cr 34:22, según Perspicacia; la TNM pone allí Harhás.
+perspicacia: '1200001878'
+summary: Abuelo paterno de Salum, marido de la profetisa Huldá, por medio de su hijo Ticvá.
+reason: Perspicacia «Harhás»; 2Re 22:14.
+sources:
+- it-harhas
+- 2-reyes-22
+links:
+- title: 'Perspicacia: «Harhás»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001878
+  type: perspicacia
+- title: 2 Reyes 22 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/22
+  type: bible
+checked_on: '2026-09-30'
+status: verified

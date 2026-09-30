@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: elias-y-eliseo-bajan-de-guilgal-a-betel
+title: Elías y Eliseo bajan de Guilgal a Betel
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 2001
+places:
+- betel
+- guilgal-cerca-de-betel
+people:
+- elias-profeta
+- eliseo
+present:
+- elias-profeta
+- eliseo
+passages:
+- 2Re 2:1-3
+summary: Elías pide a Eliseo que se quede, pero él jura no dejarlo y bajan juntos a Betel. Allí los hijos de los profetas
+  avisan a Eliseo de que Jehová se llevará hoy a su señor.
+reason: '2Re 2:1-3. Es el día en que Elías es llevado, c. 917: Perspicacia «Eliseo», párr. 5, fecha entonces el comienzo de
+  su obra. Es la Guilgal cercana a Betel (Perspicacia «Guilgal», núm. 2).'
+sources:
+- 2-reyes-2
+- it-eliseo
+- it-guilgal
+- it-elias
+links:
+- title: 2 Reyes 2 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/2
+  type: bible
+checked_on: '2026-09-30'
+status: verified

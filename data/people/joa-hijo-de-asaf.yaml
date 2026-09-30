@@ -11,16 +11,18 @@ disambiguation: Joá hijo de Asaf, funcionario de Ezequías; no el portero hijo 
 summary: Funcionario de Ezequías, hijo de Asaf y probablemente su registrador. Con Eliaquim y Sebná fue a oír al rabsaqué,
   calló por orden del rey y le llevó el informe con la ropa rasgada.
 reason: Perspicacia «Joah», núm. 3; Is 36:3, 11, 21, 22; 2Re 18:18, 26, 37.
-not_claimed:
-- 'Que el cargo de registrador fuera seguro suyo y no de su padre: la frase no lo aclara, y Perspicacia solo lo ve más probable.'
 sources:
 - it-joah
+- 2-reyes-18
 - isaias-36
 - ip1-29
 links:
 - title: 'Perspicacia: «Joah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002470
   type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
 - title: Isaías 36 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/36
   type: bible
@@ -30,8 +32,9 @@ relations:
   word: father
   inferred: false
   sources:
-  - isaias-36
+  - 2-reyes-18
   - it-joah
+  - isaias-36
   reason: Is 36:3, 22 lo llaman Joá hijo de Asaf.
   checked_on: '2026-09-30'
   status: verified
@@ -40,8 +43,9 @@ relations:
   word: master
   inferred: false
   sources:
-  - isaias-36
+  - 2-reyes-18
   - it-joah
+  - isaias-36
   reason: 'Is 36:21, 22: calla por orden del rey y le informa; Perspicacia lo pone en el grupo que envió Ezequías.'
   checked_on: '2026-09-30'
   status: verified
@@ -57,3 +61,5 @@ relations:
   status: verified
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Que el cargo de registrador fuera seguro suyo y no de su padre: la frase no lo aclara, y Perspicacia solo lo ve más probable.'

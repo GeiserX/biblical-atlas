@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: hazael-toma-gat-y-jehoas-le-entrega-el-oro-del-templo
+title: Hazael toma Gat y Jehoás le entrega el oro del templo
+date:
+  from: -875
+  to: -857
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 876 y 858 a.e.c. (tiempo narrativo: poco después del año 23 de Jehoás y antes de su muerte)'
+narrative_order:
+  series: 2-reyes
+  order: 12017
+places:
+- jerusalen
+- gat
+people:
+- hazael
+- jehoas-de-juda
+present:
+- jehoas-de-juda
+passages:
+- 2Re 12:17, 18
+- 2Cr 24:23, 24
+summary: El rey sirio Hazael conquista Gat y se dispone a subir contra Jerusalén. Jehoás le manda las ofrendas santas de sus
+  antepasados y el oro del templo y del palacio, y Hazael se aparta de la ciudad.
+reason: 2Re 12:17, 18; Perspicacia «Hazael», apartado «Hazael oprime a Israel», y «Gat», que pone la toma poco después del
+  año 23 de Jehoás (876 a.e.c.). Jehoás murió en 858 (tabla A6-A).
+sources:
+- 2-reyes-12
+- it-hazael
+- it-gat
+- tnm-a6-a
+links:
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+- title: 'Perspicacia: «Hazael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001923
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

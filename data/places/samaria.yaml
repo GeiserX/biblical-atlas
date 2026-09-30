@@ -8,6 +8,9 @@ names:
 - name: Montaña de Samaria
   note: Así llama Amós al monte de la ciudad (Am 4:1; 6:1). Monte y ciudad llevaban el nombre de Sémer, su dueño antes de
     Omrí (Perspicacia «Samaria», núm. 1).
+- name: Ofel
+  note: Lugar de Samaria, quizá una colina o una fortificación, donde Guehazí guardó lo que obtuvo de Naamán (2Re 5:24; Perspicacia
+    «Ofel», párr. 4).
 type: city
 lat: 32.276111
 lon: 35.195
@@ -35,6 +38,18 @@ sources:
 - 1-reyes-20
 - it-ben-hadad
 - 1-reyes-22
+- 2-reyes-1
+- 2-reyes-3
+- 2-reyes-5
+- it-ofel
+- 2-reyes-6
+- 2-reyes-7
+- 2-reyes-10
+- 2-reyes-13
+- 2-reyes-14
+- 2-reyes-15
+- 2-reyes-17
+- 2-reyes-18
 - isaias-9
 - isaias-10
 - isaias-28

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: ismael-hijo-de-netanias
+name: Ismael
+names:
+- name: Ismael
+disambiguation: El que asesinó a Guedalías; no es el hijo de Abrahán.
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+perspicacia: 1200002215#5
+summary: Jefe militar de linaje real que quedó en Judá tras 607 a.e.c. De acuerdo con Baalís, rey de Ammón, mató en Mizpá
+  al gobernador Guedalías y a quienes lo acompañaban, y escapó a Ammón.
+reason: Perspicacia «Ismael», núm. 5; 2Re 25:23-25; Jer 40:13-41:15.
+sources:
+- it-ismael
+- 2-reyes-25
+links:
+- title: 'Perspicacia: «Ismael»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002215
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+relations:
+- type: kin
+  person: netanias-hijo-de-elisama
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-ismael
+  reason: '2Re 25:23, 25: Ismael hijo de Netanías.'
+  checked_on: '2026-09-30'
+  status: verified
+distinct_from:
+- ismael-hijo-de-abrahan
+checked_on: '2026-09-30'
+status: verified

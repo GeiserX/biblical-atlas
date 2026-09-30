@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: haruz
+name: Haruz
+names:
+- name: Haruz
+perspicacia: '1200001897'
+summary: Hombre de Jotbá cuya hija Mesulémet se casó con el rey Manasés; por ella fue abuelo del rey Amón.
+reason: Perspicacia «Haruz»; 2Re 21:19.
+sources:
+- it-haruz
+- 2-reyes-21
+links:
+- title: 'Perspicacia: «Haruz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001897
+  type: perspicacia
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+relations:
+- type: lived_in
+  place: jotba
+  inferred: false
+  sources:
+  - 2-reyes-21
+  - it-haruz
+  reason: 2Re 21:19 lo llama Haruz de Jotbá.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

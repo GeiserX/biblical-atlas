@@ -1,0 +1,52 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jozacar
+name: Jozacar
+names:
+- name: Jozacar
+- name: Zabad
+  note: Otro nombre suyo, el de 2Cr 24:26, según Perspicacia.
+perspicacia: '1200002533'
+date:
+  from: -857
+  to: -857
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 858 a.e.c.
+summary: Siervo del rey Jehoás de Judá, hijo de la ammonita Simeat. Con Jehozabad mató al rey; Perspicacia lo pone como venganza
+  por la muerte de Zacarías, hijo de Jehoiadá. Amasías lo ejecutó después.
+reason: 'Perspicacia «Jozacar»; 2Re 12:20, 21 y 2Cr 24:25, 26. Año: el final del reinado de Jehoás, 858 a.e.c. (tabla A6-A).'
+sources:
+- it-jozacar
+- 2-reyes-12
+- tnm-a6-a
+links:
+- title: 'Perspicacia: «Jozacar»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002533
+  type: perspicacia
+- title: 2 Reyes 12 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/12
+  type: bible
+relations:
+- type: kin
+  person: simeat
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-12
+  - it-simeat
+  reason: 2Re 12:21 lo llama hijo de Simeat; Perspicacia «Simeat» dice que era una mujer ammonita.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoas-de-juda
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-12
+  reason: '2Re 12:20, 21: era uno de los siervos de Jehoás.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

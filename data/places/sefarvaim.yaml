@@ -12,6 +12,34 @@ coord_url: null
 candidates:
 - name: En Siria, entre Damasco y Hamat
   geometry:
+    type: point
+    lat: 34.401068
+    lon: 36.636361
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sefarvaim
+  - openbible-geo
+  reason: Perspicacia la ve probable en Siria o en Babilonia, porque el texto la nombra con lugares de esas zonas.
+  note: Primera identificación de OpenBible, que la une a Sibraim; solo tomamos el punto.
+  coord_source: openbible:a282c15
+  coord_url: https://www.openbible.info/geo/ancient/a282c15/sepharvaim
+- name: En Babilonia
+  geometry:
+    type: point
+    lat: 33.058829
+    lon: 44.252153
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-sefarvaim
+  - openbible-geo
+  reason: La otra zona que admite Perspicacia es Babilonia.
+  note: Segunda identificación de OpenBible, Sippar; solo tomamos el punto. Perspicacia no nombra Sippar.
+  coord_source: openbible:a282c15
+  coord_url: https://www.openbible.info/geo/ancient/a282c15/sepharvaim
+- name: En Siria, entre Damasco y Hamat
+  geometry:
     type: zone
     lat: 34.401068
     lon: 36.636361
@@ -46,19 +74,25 @@ summary: Ciudad vencida por Asiria antes de 732 a.e.c., de la que el rey asirio 
   la usó para decir que ningún dios libraba de Asiria.
 reason: 'Perspicacia «Sefarvaim»; 2Re 17:24; Is 36:19; 37:13. No se sabe dónde estaba: el mapa muestra las dos zonas que Perspicacia
   ve probables.'
-not_claimed:
-- 'Un sitio concreto: Perspicacia solo dice que probablemente estaba en Siria o en Babilonia.'
 sources:
 - it-sefarvaim
 - openbible-geo
+- 2-reyes-17
+- 2-reyes-18
+- 2-reyes-19
 - isaias-36
 - isaias-37
 links:
 - title: 'Perspicacia: «Sefarvaim»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003901
   type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
 - title: Isaías 36 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/36
   type: bible
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Un sitio concreto: Perspicacia solo dice que probablemente estaba en Siria o en Babilonia.'

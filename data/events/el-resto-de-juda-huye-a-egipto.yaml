@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-resto-de-juda-huye-a-egipto
+title: El resto de Judá huye a Egipto
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 25026
+places:
+- egipto
+people:
+- johanan-hijo-de-carea
+- seraya-hijo-de-tanhumet
+- jaazanias-jefe-militar
+- jeremias-profeta
+passages:
+- 2Re 25:26
+- Jer 43:4-7
+summary: Por miedo a los caldeos después de la muerte de Guedalías, Johanán y los otros jefes del ejército se llevan a Egipto
+  a todo el pueblo que quedaba, pequeños y grandes, y también a Jeremías.
+reason: 'Estudio 3, párr. 6: tras el asesinato del mes séptimo huyeron, y hacia el 1 de octubre de 607 la tierra ya estaba
+  desolada. Perspicacia «Johanán», núm. 5.'
+sources:
+- 2-reyes-25
+- si-3
+- it-johanan
+- it-seraya
+- it-jaazanias
+- jeremias-43
+links:
+- title: 'Perspicacia: «Johanán»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002488
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+checked_on: '2026-09-30'
+status: verified

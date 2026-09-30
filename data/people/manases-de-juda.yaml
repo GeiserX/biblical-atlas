@@ -21,6 +21,7 @@ sources:
 - 2-cronicas-33
 - tnm-a6-b
 - mateo-1
+- 2-reyes-20
 links:
 - title: 'Perspicacia: «Manasés»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
@@ -37,8 +38,9 @@ relations:
   - it-manases
   - 2-reyes-20
   - mateo-1
+  - 2-reyes-21
   reason: Hijo y sucesor de Ezequías (2Re 20:21).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: ezequias
@@ -50,8 +52,36 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: hefziba
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-21
+  - it-hefziba
+  reason: 2Re 21:1 da a Hefziba como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-21
+  reason: '2Re 21:1: reinó 55 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: mesulemet
+  word: wife
+  inferred: true
+  sources:
+  - it-mesulemet
+  - 2-reyes-21
+  reason: Perspicacia «Mesulémet» la da como esposa de Manasés; 2Re 21:19 la hace madre de Amón, hijo suyo.
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200002882#4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - manases-hijo-de-jose

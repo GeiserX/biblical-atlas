@@ -25,6 +25,8 @@ sources:
 - it-naaman
 - lucas-4
 - tnm-a6-a
+- 2-reyes-5
+- it-eliseo
 links:
 - title: 'Perspicacia: «Naamán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003149
@@ -39,8 +41,21 @@ relations:
   sources:
   - lucas-4
   - it-naaman
+  - 2-reyes-5
   reason: Lu 4:27 lo llama el sirio; Perspicacia «Naamán», núm. 2, lo hace jefe del ejército de Siria.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
-checked_on: '2026-09-29'
+- type: tie
+  person: ben-hadad-ii
+  word: master
+  inferred: true
+  sources:
+  - 2-reyes-5
+  - it-naaman
+  - it-ben-hadad
+  reason: '2Re 5:1, 6, 18: el rey de Siria es su señor y lo llama su siervo. Perspicacia «Naamán», núm. 2, dice que ese rey
+    era Ben-Hadad II.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

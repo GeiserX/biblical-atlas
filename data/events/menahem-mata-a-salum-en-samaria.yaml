@@ -1,0 +1,45 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: menahem-mata-a-salum-en-samaria
+title: Menahem mata a Salum en Samaria
+date:
+  from: -790
+  to: -790
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 791 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 15013
+type: death
+places:
+- samaria
+- tirza
+people:
+- salum-de-israel
+- menahem
+present:
+- salum-de-israel
+- menahem
+roles:
+  salum-de-israel: died
+passages:
+- 2Re 15:13-15
+summary: Al mes de reinar Salum, Menahem hijo de Gadí sube desde Tirzá a Samaria, lo mata y ocupa el trono.
+reason: 2Re 15:13, 14; Perspicacia «Menahem» y «Salum», núm. 5. A6-B da el mes de Salum y el comienzo de Menahem hacia 791
+  a.e.c.
+sources:
+- 2-reyes-15
+- it-menahem
+- it-salum
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Menahem»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002978
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

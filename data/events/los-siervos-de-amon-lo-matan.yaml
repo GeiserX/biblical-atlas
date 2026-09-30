@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: los-siervos-de-amon-lo-matan
+title: Los siervos de Amón lo matan en su casa
+date:
+  from: -658
+  to: -658
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 659 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 21023
+type: death
+roles:
+  amon-de-juda: died
+places:
+- jerusalen
+people:
+- amon-de-juda
+- josias
+present: []
+passages:
+- 2Re 21:23, 24
+- 2Cr 33:24, 25
+summary: A los dos años de reinar, sus siervos conspiran contra Amón y lo matan en su casa. La gente del país ejecuta a los
+  conspiradores y pone en el trono a su hijo Josías.
+reason: 2Re 21:19, 23, 24; Perspicacia «Amón», núm. 2. La tabla A6-B empieza a Josías en 659 a.e.c. El texto no dice dónde
+  estaba la casa, así que el suceso no sitúa a nadie.
+sources:
+- 2-reyes-21
+- 2-cronicas-33
+- it-amon
+- tnm-a6-b
+links:
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+- title: 'Perspicacia: «Amón»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000244
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,70 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: mesa-rey-de-moab
+name: Mesá
+names:
+- name: Mesá
+perspicacia: 1200003006#2
+disambiguation: Rey de Moab en días de Acab y Jehoram de Israel. No es el primogénito de Caleb ni el benjaminita hijo de Saharaim,
+  ni el lugar Mesá de la tabla de las naciones.
+date:
+  from: -939
+  to: -912
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 940 y 913 a.e.c. (tiempo narrativo: reinaba en Moab desde Acab hasta la campaña de Jehoram y Jehosafat)'
+summary: Rey de Moab y criador de ovejas que pagaba a Israel un tributo enorme de corderos y carneros. Se rebeló al morir
+  Acab; cercado por Israel, Judá y Edom, sacrificó a su primogénito sobre la muralla.
+reason: Perspicacia «Mesá», núm. 2, y «Moab, moabitas», apartado «Hasta el exilio de Judá», párr. 2 y 3; 2Re 3:4-27. La fecha
+  va del reinado de Acab (A6-A) a la campaña, entre 917 y 913 según «Eliseo».
+not_claimed:
+- 'Que ofreciera al hijo del rey de Edom: Perspicacia «Mesá» y «Moab, moabitas» lo ven poco probable, aunque hay quien lo
+  lee así por Am 2:1.'
+sources:
+- it-mesa
+- it-moab
+- it-eliseo
+- tnm-a6-a
+- 2-reyes-3
+links:
+- title: 'Perspicacia: «Mesá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003006
+  type: perspicacia
+- title: 2 Reyes 3 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/3
+  type: bible
+relations:
+- type: holds_office
+  place: moab
+  office: king
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  reason: '2Re 3:4: Mesá, el rey de Moab.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: moab
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  reason: '2Re 3:4, 26: rey de Moab, donde criaba sus rebaños.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: acab
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  - it-moab
+  reason: '2Re 3:4, 5: pagaba tributo al rey de Israel y se rebeló al morir Acab; Perspicacia «Mesá», núm. 2, dice que era
+    Acab quien lo recibía.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

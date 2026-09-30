@@ -25,6 +25,12 @@ sources:
 - 2-reyes-3
 - 2-reyes-9
 - tnm-a6-a
+- 2-reyes-1
+- 2-reyes-5
+- 2-reyes-6
+- it-eliseo
+- 2-reyes-7
+- 2-reyes-8
 links:
 - title: 'Perspicacia: «Jehoram»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002381
@@ -40,8 +46,11 @@ relations:
   sources:
   - it-jehoram
   - 2-reyes-3
+  - 2-reyes-6
+  - 2-reyes-8
+  - 2-reyes-9
   reason: Hijo de Acab (2Re 3:1).
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: ocozias-de-israel
@@ -62,5 +71,71 @@ relations:
   reason: Jehú lo mató junto a Jezreel y lo echó al campo de Nabot (2Re 9:24-26).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: jezabel
+  word: mother
+  sources:
+  - 2-reyes-3
+  - it-jehoram
+  - 2-reyes-9
+  reason: 2Re 3:2, 13 habla de su madre y de los profetas de ella; Perspicacia «Jehoram», núm. 2, lo llama hijo de Acab y
+    Jezabel.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  sources:
+  - 2-reyes-3
+  - 2-reyes-6
+  - it-samaria
+  - 2-reyes-7
+  - it-eliseo
+  reason: '2Re 3:1, 6: reinó en Samaria y salió de allí a reunir el ejército.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehosafat
+  word: ally
+  sources:
+  - 2-reyes-3
+  - it-jehoram
+  reason: '2Re 3:7: Jehosafat le responde que irá con él contra Moab, su pueblo con el suyo y sus caballos con los suyos.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: mesa-rey-de-moab
+  word: enemy
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  reason: '2Re 3:5-7, 24-27: Mesá se rebela contra el rey de Israel, que sale a pelear contra él.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: atalia
+  word: sister
+  inferred: true
+  sources:
+  - it-atalia-reina
+  - 2-reyes-8
+  reason: 'Perspicacia «Atalía», núm. 1: hija de Acab y hermana del rey Jehoram de Israel (2Re 8:16, 18).'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: hazael
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-8
+  - it-hazael
+  - 2-reyes-9
+  reason: '2Re 8:28, 29: combate a Hazael, rey sirio, en Ramot-Galaad y sale herido.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200002381#2
+checked_on: '2026-09-30'
 status: verified

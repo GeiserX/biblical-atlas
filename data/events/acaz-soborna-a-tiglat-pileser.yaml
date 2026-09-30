@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acaz-soborna-a-tiglat-pileser
+title: Acaz compra la ayuda de Tiglat-Piléser III
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: entre el sitio de Jerusalén y la toma de Damasco)'
+narrative_order:
+  series: 2-reyes
+  order: 16007
+places:
+- jerusalen
+people:
+- acaz
+- tiglat-pileser-iii
+present:
+- acaz
+passages:
+- 2Re 16:7, 8
+- 2Cr 28:16, 20, 21
+summary: Acaz se declara siervo del rey de Asiria y le pide que lo libre de Siria y de Israel. Le manda de soborno la plata
+  y el oro del templo y del palacio.
+reason: 2Re 16:7, 8; Perspicacia «Acaz», núm. 1, y «Tiglat-piléser III». Después del sitio de Jerusalén, que siguió a 762
+  a.e.c., y antes de la toma de Damasco, anterior a la muerte de Pécah, hacia 758 (A6-B).
+sources:
+- 2-reyes-16
+- it-acaz
+- it-tiglat-pileser
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Tiglat-piléser III»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004402
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

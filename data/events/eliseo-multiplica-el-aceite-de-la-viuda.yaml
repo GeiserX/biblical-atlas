@@ -1,0 +1,37 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: eliseo-multiplica-el-aceite-de-la-viuda
+title: Eliseo multiplica el aceite de una viuda
+date:
+  from: -916
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 917 y c. 844 a.e.c. (tiempo narrativo: durante la obra de Eliseo como sucesor de Elías)'
+narrative_order:
+  series: 2-reyes
+  order: 4001
+places: []
+present: []
+people:
+- eliseo
+passages:
+- 2Re 4:1-7
+summary: Un acreedor quiere llevarse como esclavos a los dos hijos de la viuda de un hijo de los profetas. Eliseo le manda
+  pedir recipientes; su jarra de aceite los llena todos, y con la venta paga la deuda.
+reason: 'Perspicacia «Eliseo» avisa de que 2 Reyes no sigue un orden estricto: queda entre su sucesión de Elías, c. 917, y
+  su muerte bajo Jehoás de Israel, hasta c. 844 (A6-A). El texto no dice dónde vivía la viuda.'
+sources:
+- 2-reyes-4
+- it-eliseo
+- tnm-a6-a
+links:
+- title: 2 Reyes 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/4
+  type: bible
+- title: 'Perspicacia: «Eliseo»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

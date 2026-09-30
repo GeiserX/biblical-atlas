@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: pedaya-padre-de-zebida
+name: Pedaya
+names:
+- name: Pedaya
+perspicacia: 1200003414#2
+disambiguation: El de Rumá, abuelo materno de Jehoiaquim; no Pedaya hijo de Joaquín, el padre de Zorobabel.
+summary: Hombre de Rumá cuya hija Zebidá fue madre del rey Jehoiaquim.
+reason: Perspicacia «Pedaya», núm. 2; 2Re 23:36.
+sources:
+- it-pedaya
+- 2-reyes-23
+links:
+- title: 'Perspicacia: «Pedaya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003414
+  type: perspicacia
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+relations:
+- type: lived_in
+  place: ruma
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-pedaya
+  - it-ruma
+  reason: 2Re 23:36 lo llama Pedaya de Rumá; Perspicacia dice que vivía allí.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

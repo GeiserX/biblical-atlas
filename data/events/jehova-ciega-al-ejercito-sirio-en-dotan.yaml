@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-ciega-al-ejercito-sirio-en-dotan
+title: Jehová ciega al ejército sirio que rodea Dotán
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 6013
+places:
+- dotan
+people:
+- eliseo
+- ben-hadad-ii
+present:
+- eliseo
+passages:
+- 2Re 6:13-19
+summary: El rey sirio manda un ejército a Dotán para prender a Eliseo. Su sirviente ve los montes llenos de caballos y carros
+  de fuego; Jehová ciega a los sirios y Eliseo los guía.
+reason: 'Perspicacia «Dotán», párr. 3, y «Eliseo»: la ceguera fue mental, no física. Reinado de Jehoram de Israel (A6-A, c.
+  917-905).'
+sources:
+- 2-reyes-6
+- it-dotan
+- it-eliseo
+- it-ben-hadad
+- tnm-a6-a
+links:
+- title: 2 Reyes 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/6
+  type: bible
+checked_on: '2026-09-30'
+status: verified

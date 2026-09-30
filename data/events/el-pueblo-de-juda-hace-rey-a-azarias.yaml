@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-pueblo-de-juda-hace-rey-a-azarias
+title: El pueblo de Judá hace rey a Azarías
+date:
+  from: -828
+  to: -828
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 829 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 14021
+places:
+- juda
+people:
+- uzias
+present: []
+passages:
+- 2Re 14:21
+- 2Cr 26:1
+summary: Muerto Amasías, todo el pueblo de Judá pone en el trono a su hijo Azarías, también llamado Uzías, que tiene dieciséis
+  años.
+reason: 2Re 14:21; Perspicacia «Uzías», núm. 3, párr. 2. El estudio 3 y la tabla A6-A empiezan su reinado en 829 a.e.c. El
+  texto no dice en qué lugar lo proclamaron.
+sources:
+- 2-reyes-14
+- it-uzias
+- si-3
+- tnm-a6-a
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Uzías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004535
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

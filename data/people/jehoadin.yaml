@@ -1,0 +1,32 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehoadin
+name: Jehoadín
+names:
+- name: Jehoadín
+- name: Jehoadán
+  note: Así la llama 2Cr 25:1; Perspicacia dice que una nota marginal del texto hebreo pide leerlo así también en Reyes.
+perspicacia: '1200002371'
+summary: Mujer de Jerusalén, esposa del rey Jehoás de Judá y madre de su hijo y sucesor, el rey Amasías.
+reason: Perspicacia «Jehoadín»; 2Re 14:1, 2.
+sources:
+- it-jehoadin
+- 2-reyes-14
+links:
+- title: 'Perspicacia: «Jehoadín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002371
+  type: perspicacia
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+relations:
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-14
+  - it-jehoadin
+  reason: 2Re 14:2 la llama Jehoadín de Jerusalén.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

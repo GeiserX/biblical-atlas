@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehoram-y-ocozias-luchan-contra-hazael-en-ramot-galaad
+title: Jehoram y Ocozías luchan contra Hazael en Ramot-Galaad
+date:
+  from: -905
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 906 y 905 a.e.c. (tiempo narrativo: en el único año de Ocozías de Judá)'
+narrative_order:
+  series: 2-reyes
+  order: 8028
+places:
+- ramot-galaad
+- jezreel
+people:
+- jehoram-de-israel
+- ocozias-de-juda
+- hazael
+present:
+- jehoram-de-israel
+- ocozias-de-juda
+passages:
+- 2Re 8:28, 29
+- 2Re 9:14, 15
+- 2Cr 22:5, 6
+summary: Ocozías de Judá va con su tío Jehoram de Israel a luchar contra Hazael de Siria en Ramot-Galaad. Los sirios hieren
+  a Jehoram, que vuelve a Jezreel para curarse, y Ocozías baja allí a verlo.
+reason: '2Re 8:28, 29; 2Cr 22:5, 6; Perspicacia «Ocozías», núm. 2, y «Hazael», apartado «Hazael oprime a Israel». Ramá es
+  Ramot-Galaad. Fecha: el año de Ocozías, c. 906-905 (A6-A).'
+sources:
+- 2-reyes-8
+- 2-reyes-9
+- it-ocozias
+- it-hazael
+- tnm-a6-a
+links:
+- title: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  type: bible
+- title: 'Perspicacia: «Ocozías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

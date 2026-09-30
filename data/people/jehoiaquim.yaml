@@ -50,7 +50,87 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: zebida
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-zebida
+  reason: '2Re 23:36: su madre se llamaba Zebidá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-23
+  reason: '2Re 23:36: reinó once años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: neko
+  word: master
+  date:
+    from: -627
+    to: -624
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 628-625 a.e.c.
+  inferred: true
+  sources:
+  - 2-reyes-23
+  - it-neko
+  - it-jehoiaquim
+  reason: Nekó lo puso en el trono y le cobró el tributo (2Re 23:34, 35). Perspicacia «Nekó» dice que lo hizo su vasallo;
+    «Jehoiaquim» dice que lo fue hasta Carquemis (625).
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: master
+  date:
+    from: -619
+    to: -617
+    precision: range
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 620-618 a.e.c.
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - si-3
+  - it-joaquin
+  reason: '2Re 24:1: fue su siervo tres años y luego se rebeló. El estudio 3 fecha el vasallaje en 620; Perspicacia «Joaquín»,
+    párr. 2, fecha la rebelión en 618.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: nehusta
+  word: wife
+  inferred: true
+  sources:
+  - 2-reyes-24
+  - it-nehusta
+  reason: Madre de Joaquín, hijo de Jehoiaquim (2Re 24:6, 8). Perspicacia «Nehustá» la llama esposa del rey.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: sedequias
+  word: half_brother
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-sedequias
+  reason: Hijos de Josías de madres distintas, Zebidá y Hamutal (2Re 23:36; 24:18). Perspicacia «Sedequías», núm. 4, los llama
+    medio hermanos.
+  checked_on: '2026-09-30'
+  status: verified
 disambiguation: Rey de Judá, hijo de Josías, que antes se llamaba Eliaquim. No es Eliaquim hijo de Abiud, antepasado de Jesús.
+perspicacia: '1200002377'
 checked_on: '2026-09-30'
 status: verified
 distinct_from:

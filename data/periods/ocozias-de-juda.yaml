@@ -14,11 +14,17 @@ date:
 places:
 - jerusalen
 summary: Un año en Jerusalén.
-reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 9.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Un año según 2Re 8:26; 2Re 9:29 lo hace
+  empezar en el año 11 de Jehoram de Israel.
 sources:
 - tnm-a6-a
 - 2-reyes-9
 - it-ocozias
+- 2-reyes-8
 search: Ocozías rey
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: '2 Reyes 9 no da la duración del reinado: el año de reinado está en 2Re 8:26, y 9:29 da su comienzo.'
+  source: 2-reyes-8
+checked_on: '2026-09-30'
 status: verified

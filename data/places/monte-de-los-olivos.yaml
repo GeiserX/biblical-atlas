@@ -3,6 +3,9 @@ id: monte-de-los-olivos
 name: Monte de los Olivos
 names:
 - name: Monte de los Olivos
+- name: Monte de Arruinamiento
+  note: Su cumbre del sur, llamada también monte de la Ofensa. Salomón levantó allí lugares altos que Josías dejó inservibles
+    (1Re 11:7; 2Re 23:13 y su nota).
 type: mountain
 lat: 31.777946
 lon: 35.245686
@@ -30,6 +33,7 @@ sources:
 - 2-samuel-15
 - 2-samuel-16
 - 1-reyes-11
+- 2-reyes-23
 links:
 - title: 'Perspicacia: «Olivos, Monte de los»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003318
