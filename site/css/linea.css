@@ -151,8 +151,9 @@
 .carril { display: grid; grid-template-columns: var(--carril-w) minmax(0, 1fr); border-bottom: 1px solid var(--line); box-sizing: border-box; }
 .carril[hidden] { display: none; }
 /* El fondo de cada carril va en el carril, que no está posicionado: así queda debajo del fondo de la línea (cursor,
-   rejilla, noches), que va debajo de las marcas. */
-.carril:nth-child(even) { background: var(--surface-2); }
+   rejilla, noches), que va debajo de las marcas. El fondo alterno (par) lo pone linea.js contando solo los carriles que
+   se ven. */
+.carril.par { background: var(--surface-2); }
 .carril-rotulo { background: var(--surface-2); border-right: 1px solid var(--line); min-width: 0; }
 /* El nombre del carril se queda a la vista mientras se baja por un carril alto. */
 .carril-rotulo .be-lane-label { position: sticky; top: 27px; height: 26px; }
@@ -193,7 +194,7 @@
 /* Una forma llena que casi no se distingue del fondo de la línea (menos de 3:1) lleva borde (be-64b.1). */
 .m-barra.con-borde, .m-punto.con-borde { box-shadow: inset 0 0 0 1px var(--ink-3); }
 .carril { --fondo: var(--surface); }
-.carril:nth-child(even) { --fondo: var(--surface-2); }
+.carril.par { --fondo: var(--surface-2); }
 .m-nombre.fuera .t { background: var(--fondo); padding: 0 2px; margin: 0 -2px; border-radius: 3px; }
 .m-nombre.varias .t { white-space: normal; line-height: 1.12; }
 .m:hover .m-nombre .t { text-decoration: underline; text-underline-offset: 3px; }

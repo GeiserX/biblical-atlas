@@ -443,7 +443,7 @@ function pintarFilas(V) {
   const view = { v0: E.vista[0], span: span() };
   const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
   const vacios = [];
-  let top = 0;
+  let top = 0, shownN = 0;
   const selT = BE.selTexto(E.sel);
   let resaltadoVisto = false, atenuadoVisto = false;
   for (const c of carrilesVista) {
@@ -470,6 +470,7 @@ function pintarFilas(V) {
       }
     }
     x.el.hidden = !c.alto;
+    x.el.classList.toggle('par', !!c.alto && shownN++ % 2 === 1);   // el fondo alterno cuenta solo los carriles que se ven
     x.el.style.height = `${c.alto}px`;
     top += c.alto;
   }
