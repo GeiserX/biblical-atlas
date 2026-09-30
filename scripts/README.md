@@ -16,7 +16,7 @@ python3 scripts/test_build.py                # sus pruebas: lo que compila de un
 
 Lee [`data/`](../data/) (las fuentes de `data/sources/*.yaml`, `data/books.yaml`, `data/calendar.yaml` y una carpeta por tipo; `data/_proposals/` no) y escribe:
 
-- `dist/data.json`: todos los datos en un fichero, con el formato `biblical-earth/v0`. Además de las entidades lleva `libros` (la lista de `data/books.yaml`) y `calendario`.
+- `dist/data.json`: todos los datos en un fichero, con el formato `biblical-atlas/v0`. Además de las entidades lleva `libros` (la lista de `data/books.yaml`) y `calendario`.
 - `site/data.json`: el mismo contenido, que es lo que lee la web.
 - `site/stats.json`: cuántas fichas hay de cada tipo y la fecha de compilación. Lo leen las insignias del README, así que los números de la portada del repositorio nunca se quedan atrás.
 - `site/data.js`: el mismo objeto envuelto en `window.BIBLICAL_ATLAS_DATA = …;`, para abrir la web desde `file://`.

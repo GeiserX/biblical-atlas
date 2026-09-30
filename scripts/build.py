@@ -31,7 +31,7 @@ import bible_coverage as cov  # noqa: E402
 RAIZ = Path(__file__).resolve().parent.parent
 MAP_PATH = RAIZ / "scripts" / "migration" / "map.yaml"
 VOCABULARY = "vocabulary.yaml"
-FORMATO = "biblical-earth/v0"  # nombre-fijo: los lectores de data.json comprueban este identificador
+FORMATO = "biblical-atlas/v0"  # el servidor MCP acepta este identificador y el anterior
 TYPES = ["places", "people", "journeys", "letters", "events", "periods", "finds", "tours"]
 # Tipo de cada carpeta en singular, tal como va en las selecciones de los YAML (person:ciro).
 SINGULAR = {"places": "place", "people": "person", "journeys": "journey", "letters": "letter", "events": "event",
