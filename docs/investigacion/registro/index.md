@@ -3,7 +3,7 @@
 # Registro de investigación
 
 > Lo genera `scripts/build.py` a partir de `data/`, un fichero por tipo. No se edita a mano.
-> El método y el esquema están en [../README.md](../README.md).
+> El método y el esquema están en [docs/investigacion/README.md](https://github.com/GeiserX/biblical-atlas/blob/main/docs/investigacion/README.md).
 
 Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó, por qué la asociamos y su estado.
 

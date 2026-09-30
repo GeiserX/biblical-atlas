@@ -21,7 +21,7 @@ Lee [`data/`](../data/) (las fuentes de `data/sources/*.yaml`, `data/books.yaml`
 - `site/stats.json`: cuántas fichas hay de cada tipo y la fecha de compilación. Lo leen las insignias del README, así que los números de la portada del repositorio nunca se quedan atrás.
 - `site/data.js`: el mismo objeto envuelto en `window.BIBLICAL_EARTH_DATA = …;`, para abrir la web desde `file://`.
 - `dist/biblical-earth.sqlite`: las mismas tablas en SQLite, más `hechos_fuentes(tipo, id, fuente_id)` para saber qué fuente sostiene cada hecho.
-- [`docs/investigacion/registro/`](../docs/investigacion/registro/README.md): el registro de investigación, un fichero por tipo de entidad. Borra los `.md` que ya no genera.
+- [`docs/investigacion/registro/`](../docs/investigacion/registro/index.md): el registro de investigación, un fichero por tipo de entidad. Borra los `.md` que ya no genera.
 
 Con `--out DIR` escribe `data.json`, `data.js`, `stats.json`, `biblical-earth.sqlite` y `registro/` dentro de `DIR`. Sirve para probar datos sin pisar lo que compila otro: el sitio carga ese `data.json` con `index.html?datos=_local/<nombre>/data.json` si `DIR` es `site/_local/<nombre>/`. `--data DIR` compila otra copia de los datos.
 
