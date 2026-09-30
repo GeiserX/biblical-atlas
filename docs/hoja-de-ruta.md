@@ -4,24 +4,7 @@ Construimos por rebanadas completas y publicamos cada una cuando está entera. v
 
 ## Lo que hay ahora
 
-Cifras del 28 de septiembre de 2026, sacadas de `python3 scripts/build.py` y de las carpetas de [`data/`](../data/):
-
-| Tipo | Ficheros |
-|---|---|
-| Lugares | 170, de ellos 29 con candidatos en vez de un punto |
-| Personas | 274, con 485 relaciones entre ellas y con lugares |
-| Sucesos | 316 |
-| Periodos | 87: 52 reinados, 11 emperadores, 9 eras, 6 potencias, 5 gobernadores y 4 sumos sacerdotes |
-| Cartas | 22: las 14 de Pablo y 8 de otros escritores |
-| Viajes | 8 |
-| Hallazgos | 7 |
-| Recorridos guiados | 4 |
-| Libros de la Biblia | 66, cada uno con escritor y fecha |
-| Meses hebreos | 13, con 18 nombres por época |
-| Hechos del calendario | 14, los de la página «El calendario» |
-| Fuentes | 984, de ellas 282 capítulos de la Biblia que se crean solos |
-
-Quedan 7 hechos en `pending`, cada uno con su motivo (ver [Qué queda](#qué-queda)).
+Las cifras cambian con cada compilación, así que no se copian aquí. La portada del [registro de investigación](investigacion/registro/index.md) cuenta las fichas de cada tipo en cada `python3 scripts/build.py`, y las insignias del README las leen de `stats.json` del sitio. Lo que sigue en `pending` está marcado en la columna «Estado» de cada registro y explicado en [Qué queda](#qué-queda).
 
 ## v0: los viajes y las cartas de Pablo (hecha)
 
@@ -57,15 +40,15 @@ Quedan 7 hechos en `pending`, cada uno con su motivo (ver [Qué queda](#qué-que
 - **Recorridos guiados.** Son cuatro: «De Babilonia a Jerusalén», «La última semana», «Pedro» y «Cartas y ciudades». Cada uno tiene preguntas de repaso, paradas de «no sabemos» y una hoja para imprimir.
 - **Modo presentación.** Pantalla completa, letra grande y avance con flechas o con mando, para tablet o televisor. Hay también un modo reunión.
 - **El marco.** Nueve eras, de Adán a la congregación cristiana, las seis potencias de Daniel 2 y los once emperadores de Augusto a Domiciano.
-- **Vídeos por pasaje y por persona.** Además de los lugares, cada capítulo enlaza a los vídeos de jw.org que lo citan, en su ficha y en el modo lectura. La ficha de persona enseña también los suyos. El método está en [videos-jw.md](investigacion/videos-jw.md).
+- **Vídeos por pasaje y por persona.** Además de los lugares, cada capítulo enlaza a los vídeos de jw.org que lo citan, en su ficha y en el modo lectura. La ficha de persona enseña también los suyos. El método está en [videos-jw.md](https://github.com/GeiserX/biblical-atlas/blob/main/docs/investigacion/videos-jw.md).
 
 ## La página «Acerca de» y el calendario (hecho)
 
 - **La portada del mapa, sin jerga.** Arriba solo queda lo que hace falta para leer. En el mapa, la atribución que piden las licencias, corta y con un enlace «Créditos». Las marcas «Nivel 1» y «N1» pasan a ser un punto lleno (la Biblia o jw.org) o un aro (otra fuente que jw.org ha usado), con el nombre en el texto emergente. «Cronología TNM» pasa a la ayuda de la fecha. Las fuentes y «Por qué lo decimos» siguen en cada ficha.
-- **[`acerca.html`](../site/acerca.html).** Qué es el proyecto y qué no es, cómo se lee, cómo tratamos las fuentes (enlazar y no copiar, lo más reciente de jw.org gana, por qué cada dato lleva su razón) y las gracias a quienes ponen los datos y los enlaces: wol.jw.org y jw.org, OpenBible.info, Natural Earth, los datos de elevación, OpenFreeMap, OpenMapTiles, OpenStreetMap, MapLibre y las letras, cada uno con su licencia. Cierra con la licencia GPL-3.0 y cómo proponer una corrección.
+- **[`acerca.html`](https://biblical-atlas.geiser.cloud/acerca.html).** Qué es el proyecto y qué no es, cómo se lee, cómo tratamos las fuentes (enlazar y no copiar, lo más reciente de jw.org gana, por qué cada dato lleva su razón) y las gracias a quienes ponen los datos y los enlaces: wol.jw.org y jw.org, OpenBible.info, Natural Earth, los datos de elevación, OpenFreeMap, OpenMapTiles, OpenStreetMap, MapLibre y las letras, cada uno con su licencia. Cierra con la licencia GPL-3.0 y cómo proponer una corrección.
 - **Nuestros meses y los hebreos, a la vez.** A escala de meses y de días la línea de tiempo enseña dos filas alineadas: nuestros meses (el calendario gregoriano aplicado hacia atrás, solo para orientar) y los meses hebreos, de luna nueva a luna nueva, con Veadar los años que lo llevan. A escala de días hay además una fila de fiestas. Un selector elige «Ambos», «Nuestros» o «Hebreos», y la fecha de arriba da las dos: «c. 14 de nisán de 33 e.c. · marzo-abril».
 - **Los nombres de los meses cambian con la época.** Antes del exilio la línea dice Abib, Ziv, Etanim y Bul; después, Nisán, Iyar, Tisri y Hesván. Los meses que la Biblia de antes del exilio solo numera van en cursiva, con la nota.
-- **[`calendario.html`](../site/calendario.html).** El mes lunar y Veadar, el año sagrado desde Nisán y el civil desde Tisri, el año antes del éxodo, el día de puesta a puesta de sol, los calendarios juliano y gregoriano, y los de Egipto y Babilonia, que la Biblia nombra. Cada hecho lleva su fuente y «Por qué lo decimos». Una tabla da los trece meses con sus nombres por época, su equivalencia aproximada, sus fiestas y el tiempo del campo.
+- **[`calendario.html`](https://biblical-atlas.geiser.cloud/calendario.html).** El mes lunar y Veadar, el año sagrado desde Nisán y el civil desde Tisri, el año antes del éxodo, el día de puesta a puesta de sol, los calendarios juliano y gregoriano, y los de Egipto y Babilonia, que la Biblia nombra. Cada hecho lleva su fuente y «Por qué lo decimos». Una tabla da los trece meses con sus nombres por época, su equivalencia aproximada, sus fiestas y el tiempo del campo.
 
 ## Qué queda
 
@@ -74,9 +57,9 @@ Quedan 7 hechos en `pending`, cada uno con su motivo (ver [Qué queda](#qué-que
 
 ### Ideas que dejamos fuera, y por qué
 
-Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de esta tanda. Los motivos son estos:
+Del [catálogo de ideas](https://github.com/GeiserX/biblical-atlas/blob/main/docs/ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de esta tanda. Los motivos son estos:
 
-- **jw.org no da el dato.** Fronteras y tinte de imperio (M-04, M-05) y costas antiguas (M-06). Un polígono inventado rompe la regla de no dibujar lo que no sabemos, y la pregunta de las fronteras sigue abierta en [ideas](ideas/README.md#preguntas-abiertas).
+- **jw.org no da el dato.** Fronteras y tinte de imperio (M-04, M-05) y costas antiguas (M-06). Un polígono inventado rompe la regla de no dibujar lo que no sabemos, y la pregunta de las fronteras sigue abierta en [ideas](https://github.com/GeiserX/biblical-atlas/blob/main/docs/ideas/README.md#preguntas-abiertas).
 - **Dependen de ritmos supuestos o de datos que no tenemos.** Distancias y días de viaje (M-18, M-19, A-13), temporada de navegación (M-21), perfil de altitud (M-22) y vista inclinada (M-24).
 - **Licencia sin confirmar.** Las calzadas de Itiner-e (M-08) y las imágenes con crédito (F-13), que piden revisar foto a foto.
 - **Piden un tipo o una relación nueva con fuentes delicadas.** Genealogías en árbol (G-08), profecía y cumplimiento (G-13), y congregaciones como nodos (G-15, G-18, G-19). La ficha de lugar ya cubre en parte G-19 con su bloque de congregación.
@@ -88,12 +71,12 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 - **Lo urgente ya está cubierto.** Plegar tramos vacíos (T-21) y la línea vertical en el móvil (T-22), porque el minimapa y la densidad resuelven lo más urgente.
 - **Aplazadas sin otro motivo.** Fichas apiladas y comparación (F-15, F-16), QR (B-14, que añade una dependencia), paleta de órdenes (B-16), búsqueda por rango y región (B-17), presupuesto de carga (D-05, que solo medimos) y D-14, D-15 y D-16.
 - **Falta que el sitio lo lea.** Los discursos en su lugar (A-18) necesitan que un suceso diga que es un discurso. El esquema ya lo dice con `type: speech` y el papel `spoke`; falta tipar esos sucesos y que el sitio los lea.
-- **Son del proceso, no del producto.** P-03, P-05, P-07, P-08, P-09, P-10 y P-11. P-10 ya está en [CONTRIBUTING.md](../CONTRIBUTING.md).
+- **Son del proceso, no del producto.** P-03, P-05, P-07, P-08, P-09, P-10 y P-11. P-10 ya está en [CONTRIBUTING.md](https://github.com/GeiserX/biblical-atlas/blob/main/CONTRIBUTING.md).
 
 ### Trabajo sin terminar
 
-- **El modelo de relaciones.** El núcleo está en inglés y cada relación tiene su vocabulario, su clave con fecha y su `checked_on`. Quedan avisos de dos códigos de `validate.py`: 62 relaciones sin pasaje (`no_reference`) y 2 compañías sin palabra ni fecha (`bare_company`: Itiel y Ucal, decisión T2). Cada uno se resuelve leyendo, con las decisiones de la sección 16 de [`modelo.md`](investigacion/modelo.md#16-decisiones-que-necesita-la-migración). Los demás códigos están a 0 y pueden pasar a error, porque un código pasa a error cuando `main` llega a 0.
-- **Después del modelo.** La tabla de afirmaciones, el núcleo y el detalle a demanda, el índice por capítulo, el foco único y el capítulo por tramos, en el orden de [`grafo-y-relaciones.md`](ideas/grafo-y-relaciones.md).
+- **El modelo de relaciones.** El núcleo está en inglés y cada relación tiene su vocabulario, su clave con fecha y su `checked_on`. Quedan avisos de dos códigos de `validate.py`: 62 relaciones sin pasaje (`no_reference`) y 2 compañías sin palabra ni fecha (`bare_company`: Itiel y Ucal, decisión T2). Cada uno se resuelve leyendo, con las decisiones de la sección 16 de [`modelo.md`](https://github.com/GeiserX/biblical-atlas/blob/main/docs/investigacion/modelo.md#16-decisiones-que-necesita-la-migración). Los demás códigos están a 0 y pueden pasar a error, porque un código pasa a error cuando `main` llega a 0.
+- **Después del modelo.** La tabla de afirmaciones, el núcleo y el detalle a demanda, el índice por capítulo, el foco único y el capítulo por tramos, en el orden de [`grafo-y-relaciones.md`](https://github.com/GeiserX/biblical-atlas/blob/main/docs/ideas/grafo-y-relaciones.md).
 - La ficha de hallazgo no enseña `kept_at`. El esquema y la validación lo aceptan, pero ningún hallazgo lo usa todavía.
 - La base SQLite no guarda todavía los nombres de los meses por época ni los hechos de «El calendario». Están en `data.json` y en el registro.
 
@@ -161,4 +144,4 @@ Del [catálogo de ideas](ideas/catalogo-de-ideas.md), 50 ideas quedaron fuera de
 
 ### Revisión anual
 
-Una vez al año, lo que [`scripts/review.py`](../scripts/review.py) marque como leído hace más de un año se vuelve a leer, y los índices de vídeos se regeneran con los subtítulos nuevos.
+Una vez al año, lo que [`scripts/review.py`](https://github.com/GeiserX/biblical-atlas/blob/main/scripts/review.py) marque como leído hace más de un año se vuelve a leer, y los índices de vídeos se regeneran con los subtítulos nuevos.
