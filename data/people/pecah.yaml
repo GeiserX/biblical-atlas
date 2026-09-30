@@ -43,20 +43,36 @@ relations:
   word: father
   inferred: false
   sources:
-  - isaias-7
+  - 2-reyes-15
   - it-remalias
+  - isaias-7
   reason: Is 7:1 lo llama Pécah hijo de Remalías, igual que 2Re 15:25.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: pecahias
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-peqah
+  reason: 2Re 15:25 lo llama oficial de Pecahías; Perspicacia, su adjutor.
   checked_on: '2026-09-30'
   status: verified
 - type: lived_in
   place: samaria
-  inferred: true
+  inferred: false
   sources:
+  - 2-reyes-15
   - isaias-7
   - it-peqah
-  reason: 'Is 7:9: el hijo de Remalías es la cabeza de Samaria, y la nota dice «rey»; Samaria era la capital de Israel.'
+  reason: '2Re 15:27: reinó 20 años en Samaria; Is 7:9 lo pone a la cabeza de la ciudad.'
   checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200003415'
+history:
+- date: '2026-09-30'
+  change: 'Su residencia en Samaria deja de ser deducida: 2Re 15:27 dice que reinó allí 20 años.'
+  source: 2-reyes-15
 checked_on: '2026-09-30'
 status: verified

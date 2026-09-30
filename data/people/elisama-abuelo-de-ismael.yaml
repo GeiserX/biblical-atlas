@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: elisama-abuelo-de-ismael
+name: Elisamá
+names:
+- name: Elisamá
+disambiguation: El abuelo de Ismael; no es el hijo de Amihud ni el hijo de David.
+perspicacia: 1200001318#7
+summary: Padre de Netanías y abuelo de Ismael, el que asesinó al gobernador Guedalías tras la caída de Jerusalén.
+reason: Perspicacia «Elisamá», núm. 7; 2Re 25:25; Jer 41:1.
+sources:
+- it-elisama
+- 2-reyes-25
+links:
+- title: 'Perspicacia: «Elisamá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001318
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+relations: []
+distinct_from:
+- elisama-hijo-de-amihud
+- elisama-hijo-de-david
+- elisua
+checked_on: '2026-09-30'
+status: verified

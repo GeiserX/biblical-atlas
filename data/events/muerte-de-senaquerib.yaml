@@ -1,6 +1,7 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-senaquerib
-title: Muerte de Senaquerib
+title: Adramélec y Sarézer matan a Senaquerib en Nínive
+type: death
 date:
   from: -731
   to: -683
@@ -10,8 +11,8 @@ date:
   chronology: tnm
   text: 'entre 732 y 684 a.e.c. (tiempo narrativo: después de volver a Nínive y antes de que su nieto Asurbanipal tomara Tebas)'
 narrative_order:
-  series: isaias
-  order: 37038
+  series: 2-reyes
+  order: 19037
 places:
 - ninive
 - ararat
@@ -20,33 +21,44 @@ people:
 - adramelec-hijo-de-senaquerib
 - sarezer-hijo-de-senaquerib
 - esar-hadon
-type: death
-roles:
-  senaquerib: died
 present:
 - senaquerib
 - adramelec-hijo-de-senaquerib
 - sarezer-hijo-de-senaquerib
+roles:
+  senaquerib: died
 passages:
-- Is 37:38
 - 2Re 19:37
-summary: Sus hijos Adramélec y Sarézer lo matan en Nínive mientras adora a su dios Nisroc, y escapan a Ararat. Reina en su
-  lugar Esar-Hadón, otro de sus hijos.
+- Is 37:38
+- 2Cr 32:21
+summary: Mientras Senaquerib se postra ante Nisroc en el templo de ese dios, sus hijos Adramélec y Sarézer lo matan a espada
+  y escapan a la tierra de Ararat. Otro hijo, Esar-Hadón, pasa a reinar.
 reason: 'Perspicacia «Senaquerib»: la Biblia no dice que muriera nada más volver, y los registros asirios, poco fiables, hablan
   de unos veinte años. Su nieto Asurbanipal ya tomó Tebas hacia 684 (Perspicacia «Cus»).'
 sources:
-- isaias-37
+- 2-reyes-19
 - it-senaquerib
+- it-rabsaque
 - it-esar-hadon
+- it-nisroc
+- si-3
+- isaias-37
 - it-adramelec
 - it-cus
-- 2-reyes-19
 links:
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
 - title: Isaías 37 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
   type: bible
 - title: 'Perspicacia: «Senaquerib»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003897
   type: perspicacia
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
+    2 Reyes. La fecha sigue hasta 684, que sostiene Perspicacia «Cus»; 712 no tenía fuente.'
+  source: 2-reyes-19
 checked_on: '2026-09-30'
 status: verified

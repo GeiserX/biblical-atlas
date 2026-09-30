@@ -1,0 +1,30 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: ava
+name: Avá
+names:
+- name: Avá
+type: city
+lat: 34.684722
+lon: 36.690556
+precision: uncertain
+coord_source: openbible:a4b500d
+coord_url: https://www.openbible.info/geo/ancient/a4b500d/avva
+coord_note: Primera identificación de OpenBible, que la une a Ivá en Kafr Aya. Perspicacia solo dice que estaba en el norte
+  de Siria.
+summary: Ciudad del norte de Siria bajo dominio asirio en el siglo VIII a.e.c. De allí llevó Asiria gente a poblar las ciudades
+  de Samaria.
+reason: 'Perspicacia «Avá» e «Ivá»; 2Re 17:24, 31. Coordenada de OpenBible: solo tomamos el punto.'
+not_claimed:
+- 'Que sea la Ivá que el rabsaqué y las cartas de Senaquerib cuentan entre las ciudades vencidas: Perspicacia lo ve probable,
+  no seguro, así que son dos fichas.'
+sources:
+- it-ava
+- it-iva
+- openbible-geo
+- 2-reyes-17
+links:
+- title: 'Perspicacia: «Avá»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000476
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

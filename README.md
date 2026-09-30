@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/banner.svg" alt="biblical-atlas, la Biblia en el mapa y en el tiempo: la rama de olivo, el nombre, el relieve del Mediterráneo oriental y una línea del tiempo de 4026 a.e.c. al año 100" width="900">
+  <img src="docs/images/banner.svg" alt="biblical-atlas, la Biblia en el mapa y en el tiempo" width="900">
 </p>
 
 <h1 align="center">biblical-atlas</h1>
@@ -15,23 +15,23 @@
 </p>
 
 <p align="center">
-  <a href="docs/investigacion/registro/lugares.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.lugares&label=lugares&style=flat-square&labelColor=1f3b30&color=76937b" alt="Lugares"></a>
-  <a href="docs/investigacion/registro/personas.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.personas&label=personas&style=flat-square&labelColor=1f3b30&color=76937b" alt="Personas"></a>
-  <a href="docs/investigacion/registro/eventos.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.eventos&label=sucesos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Sucesos"></a>
-  <a href="docs/investigacion/registro/periodos.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.periodos&label=periodos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Periodos"></a>
-  <a href="docs/investigacion/registro/cartas.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.cartas&label=cartas&style=flat-square&labelColor=1f3b30&color=76937b" alt="Cartas"></a>
-  <a href="docs/investigacion/registro/viajes.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.viajes&label=viajes&style=flat-square&labelColor=1f3b30&color=76937b" alt="Viajes"></a>
-  <a href="docs/investigacion/registro/hallazgos.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.hallazgos&label=hallazgos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Hallazgos"></a>
-  <a href="docs/investigacion/registro/recorridos.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.recorridos&label=recorridos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Recorridos"></a>
-  <a href="docs/investigacion/registro/fuentes.md"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.fuentes&label=fuentes&style=flat-square&labelColor=1f3b30&color=76937b" alt="Fuentes"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/lugares/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.lugares&label=lugares&style=flat-square&labelColor=1f3b30&color=76937b" alt="Lugares"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/personas/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.personas&label=personas&style=flat-square&labelColor=1f3b30&color=76937b" alt="Personas"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/eventos/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.eventos&label=sucesos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Sucesos"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/periodos/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.periodos&label=periodos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Periodos"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/cartas/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.cartas&label=cartas&style=flat-square&labelColor=1f3b30&color=76937b" alt="Cartas"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/viajes/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.viajes&label=viajes&style=flat-square&labelColor=1f3b30&color=76937b" alt="Viajes"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/hallazgos/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.hallazgos&label=hallazgos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Hallazgos"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/recorridos/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.recorridos&label=recorridos&style=flat-square&labelColor=1f3b30&color=76937b" alt="Recorridos"></a>
+  <a href="https://biblical-atlas.geiser.cloud/docs/investigacion/registro/fuentes/"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbiblical-atlas.geiser.cloud%2Fstats.json&query=%24.fuentes&label=fuentes&style=flat-square&labelColor=1f3b30&color=76937b" alt="Fuentes"></a>
 </p>
 
 <p align="center">Un mapa y una línea de tiempo movidos por una sola fecha, para estudiar la Biblia en familia con cada relato en su lugar y en su tiempo, y cada dato enlazado a su fuente en wol.jw.org.</p>
 
-<p align="center"><a href="https://biblical-atlas.geiser.cloud/">Sitio</a> · <a href="https://biblical-atlas.geiser.cloud/acerca.html">Acerca de</a> · <a href="docs/hoja-de-ruta.md">Hoja de ruta</a> · <a href="docs/decisiones.md">Decisiones</a> · <a href="docs/investigacion/">Investigación</a> · <a href="docs/ideas/">Ideas y maquetas</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
+<p align="center"><a href="https://biblical-atlas.geiser.cloud/">Aplicación</a> · <a href="https://biblical-atlas.geiser.cloud/docs/">Documentación</a> · <a href="https://biblical-atlas.geiser.cloud/acerca.html">Acerca de</a> · <a href="https://biblical-atlas.geiser.cloud/docs/hoja-de-ruta/">Hoja de ruta</a> · <a href="https://biblical-atlas.geiser.cloud/docs/decisiones/">Decisiones</a> · <a href="CONTRIBUTING.md">Contribuir</a></p>
 
 <p align="center">
-  <a href="https://biblical-atlas.geiser.cloud/#t=50.3000&v=40&mapa=antiguo"><img src="docs/images/mapa.png" alt="El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de Samotracia con su pasaje y su fuente, y la línea de tiempo con los carriles de Pablo, las cartas, los sucesos y los emperadores" width="900"></a>
+  <a href="https://biblical-atlas.geiser.cloud/#t=50.3000&v=40&mapa=antiguo"><img src="docs/images/screenshots/mapa.png" alt="El mapa en el año 50: el segundo viaje misional de Pablo, la ficha de Samotracia con su pasaje y su fuente, y la línea de tiempo con los carriles de Pablo, las cartas, los sucesos y los emperadores" width="900"></a>
 </p>
 
 ## Funcionalidades
@@ -54,15 +54,20 @@ python3 scripts/validate.py
 cd site && python3 -m http.server 8080
 ```
 
-Abre <http://localhost:8080>. `site/index.html` también abre con doble clic, pero sin cortina ni vídeos: el navegador no deja leer ficheros locales. Los datos son un YAML por entidad en [`data/`](data/); las claves y los valores cerrados van en inglés y los nombres y los textos en español.
+Abre <http://localhost:8080>. `site/index.html` también abre con doble clic, pero sin cortina ni vídeos: el navegador no deja leer ficheros locales. Los datos son un YAML por entidad en [`data/`](data/); las claves y los valores cerrados van en inglés y los nombres y los textos en español. El camino largo está en [Primeros pasos](https://biblical-atlas.geiser.cloud/docs/getting-started/).
 
 ## Documentación
 
-- [`site/README.md`](site/README.md): la aplicación, partida en scripts clásicos que comparten `window.BE`, vista a vista.
-- [`scripts/README.md`](scripts/README.md): la compilación a `data.json`, `stats.json` y SQLite, la validación de esquema y enlaces, la revisión anual y los índices de vídeos.
-- [`docs/investigacion/`](docs/investigacion/): el modelo de datos, el protocolo de investigación y el registro que la compilación escribe, con cada ficha y su fuente.
-- [`docs/decisiones.md`](docs/decisiones.md) y [`docs/hoja-de-ruta.md`](docs/hoja-de-ruta.md): lo decidido, lo hecho y lo que queda.
-- [`docs/ideas/`](docs/ideas/): las ideas y las maquetas de las que salió el sitio; [`docs/logo/`](docs/logo/) y [`docs/verde/`](docs/verde/): la identidad visual y cómo se eligió.
+La documentación vive en <https://biblical-atlas.geiser.cloud/docs/>.
+
+- [Primeros pasos](https://biblical-atlas.geiser.cloud/docs/getting-started/): la portada, el primer minuto en el mapa y cómo servir la aplicación desde tu ordenador.
+- [Uso](https://biblical-atlas.geiser.cloud/docs/usage/): el mapa, la línea de tiempo, las fichas, la búsqueda, el grafo, el modo lectura, los recorridos, la dirección de la página y el teclado.
+- [Cómo funciona](https://biblical-atlas.geiser.cloud/docs/how-it-works/): las reglas de las fuentes, del YAML al mapa y cómo está montada la aplicación.
+- [Registro de investigación](https://biblical-atlas.geiser.cloud/docs/investigacion/registro/): cada afirmación con su fichero, su fuente, el día en que se leyó y por qué la asociamos; un registro por tipo.
+- [Decisiones](https://biblical-atlas.geiser.cloud/docs/decisiones/) y [Hoja de ruta](https://biblical-atlas.geiser.cloud/docs/hoja-de-ruta/): lo decidido, lo hecho y lo que queda.
+- [Desarrollo](https://biblical-atlas.geiser.cloud/docs/development/): compilar, validar, las pruebas, esta documentación y cómo contribuir.
+
+Para quien contribuye, en el repositorio: [`site/README.md`](site/README.md) (los módulos del sitio), [`scripts/README.md`](scripts/README.md) (la compilación y la validación), [`docs/investigacion/`](docs/investigacion/) (el esquema y el protocolo de lectura) y [`docs/ideas/`](docs/ideas/), [`docs/logo/`](docs/logo/) y [`docs/verde/`](docs/verde/) (las maquetas y la identidad visual).
 
 ## Fuentes
 

@@ -1,0 +1,26 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: zair
+name: Zaír
+names:
+- name: Zaír
+type: city
+lat: 31.036904
+lon: 35.487657
+precision: uncertain
+coord_source: openbible:a74c453
+coord_url: https://www.openbible.info/geo/ancient/a74c453/zair
+coord_note: 'Punto de Al Safi, primera identificación de OpenBible, que la toma por Zoar. Perspicacia no conoce el sitio:
+  solo dice que estaba en Edom o cerca.'
+summary: Lugar de Edom o de sus alrededores. Allí Jehoram de Judá, rodeado por los edomitas, los atacó de noche. No se sabe
+  dónde estaba.
+reason: 'Perspicacia «Zaír»; 2Re 8:21. OpenBible: solo el punto.'
+sources:
+- it-zair
+- openbible-geo
+- 2-reyes-8
+links:
+- title: 'Perspicacia: «Zaír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004654
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

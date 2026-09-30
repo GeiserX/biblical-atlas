@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: mensajeros-de-babilonia-visitan-a-ezequias
-title: Mensajeros de Babilonia visitan a Ezequías
+title: Ezequías enseña su tesoro a los enviados de Babilonia
 date:
   from: -731
   to: -731
@@ -10,10 +10,11 @@ date:
   chronology: tnm
   text: c. 732 a.e.c.
 narrative_order:
-  series: isaias
-  order: 39001
+  series: 2-reyes
+  order: 20012
 places:
 - jerusalen
+- babilonia
 people:
 - ezequias
 - merodac-baladan
@@ -22,24 +23,33 @@ present:
 - ezequias
 - isaias
 passages:
-- Is 39:1-8
 - 2Re 20:12-19
-summary: Merodac-Baladán, rey de Babilonia, envía cartas y un regalo a Ezequías al saber que sanó. El rey enseña a los mensajeros
-  todos sus tesoros, e Isaías le anuncia que todo irá a Babilonia, y algunos de sus hijos también.
-reason: 'Perspicacia «Merodac-baladán» pone la visita en el año 14 de Ezequías (732 a.e.c.) o poco después. Merodac-Baladán
-  no va en present: envió a sus mensajeros desde Babilonia.'
+- Is 39:1-8
+- 2Cr 32:31
+summary: Merodac-Baladán, rey de Babilonia, manda cartas y un regalo a Ezequías, que enseña a sus enviados todos sus tesoros
+  y su arsenal. Isaías anuncia que todo irá a Babilonia y que algunos de sus hijos servirán en aquel palacio.
+reason: 'Perspicacia «Merodac-baladán», apartado «Envía una delegación a Ezequías»: la embajada pudo llegar en el año 14 de
+  Ezequías, 732 a.e.c., o poco después. Merodac-Baladán no se sitúa en Jerusalén: mandó a sus enviados desde Babilonia.'
 sources:
-- isaias-39
+- 2-reyes-20
 - it-merodac-baladan
 - it-ezequias
+- isaias-39
 - ip1-29
-- 2-reyes-20
 links:
+- title: 2 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/20
+  type: bible
 - title: Isaías 39 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/39
   type: bible
 - title: 'Perspicacia: «Merodac-baladán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003002
   type: perspicacia
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso igual de 2 Reyes, dueño del relato: toma su título, su resumen y su orden en la serie de
+    2 Reyes, y suma Babilonia, desde donde llegaron los enviados.'
+  source: 2-reyes-20
 checked_on: '2026-09-30'
 status: verified

@@ -12,7 +12,7 @@ date:
   type: anchored
   chronology: tnm
   text: 607 a.e.c.
-summary: Hijo de Ahiqam. Nabucodonosor lo nombró gobernador de los que quedaron en Judá tras 607. Vivía en Mizpá, donde Ismael
+summary: Hijo de Ahicam. Nabucodonosor lo nombró gobernador de los que quedaron en Judá tras 607. Vivía en Mizpá, donde Ismael
   lo asesinó; entonces el resto huyó a Egipto.
 reason: Perspicacia «Guedalías», núm. 4, párr. 4 y 5; 2Re 25:22-26 y Jer 40-41. El estudio 3 sitúa su muerte en el séptimo
   mes de 607.
@@ -35,8 +35,9 @@ relations:
   sources:
   - it-guedalias
   - jeremias-40
+  - 2-reyes-25
   reason: Estableció su residencia en Mizpá (Jer 40:6-8).
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-30'
   status: verified
 - type: died_in
   place: mizpa-de-benjamin
@@ -44,11 +45,46 @@ relations:
   sources:
   - it-guedalias
   - jeremias-41
+  - 2-reyes-25
   reason: Ismael lo mató en Mizpá (Jer 41:1-3).
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: ahicam
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-guedalias
+  reason: '2Re 25:22: Guedalías, hijo de Ahicam, hijo de Safán.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  place: juda
+  office: governor
+  date:
+    from: -606
+    to: -606
+    precision: year
+    approx: false
+    type: anchored
+    chronology: tnm
+    text: 607 a.e.c.
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-guedalias
+  - si-3
+  reason: '2Re 25:22: Nabucodonosor lo puso al mando de los que quedaron en Judá; Perspicacia «Guedalías», núm. 4, lo llama
+    gobernador.'
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200001632#4
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: El nombre del padre va con la grafía de la TNM, Ahicam (2Re 25:22); Ahiqam es la de Perspicacia.
+  source: 2-reyes-25
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - guedalias-hijo-de-amarias

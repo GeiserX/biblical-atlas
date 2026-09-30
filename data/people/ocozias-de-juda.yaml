@@ -28,6 +28,9 @@ sources:
 - 2-reyes-9
 - 2-cronicas-22
 - tnm-a6-a
+- 2-reyes-8
+- 2-reyes-10
+- 2-reyes-11
 links:
 - title: 'Perspicacia: «Ocozías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000145
@@ -53,8 +56,9 @@ relations:
   sources:
   - it-ocozias
   - 2-reyes-8
+  - 2-reyes-11
   reason: Su madre fue Atalía (2Re 8:26).
-  checked_on: '2026-09-28'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: jehoram-de-juda
@@ -66,5 +70,73 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-8
+  reason: '2Re 8:26: reinó un año en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoram-de-israel
+  word: uncle
+  inferred: true
+  sources:
+  - it-ocozias
+  - 2-reyes-8
+  reason: 'Perspicacia «Ocozías», núm. 2: Jehoram de Israel era su tío por parte de madre (2Re 8:26, 28).'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: acab
+  word: grandfather
+  inferred: true
+  sources:
+  - it-eliseo
+  - 2-reyes-8
+  reason: Su madre Atalía era hija de Acab (2Re 8:18, 26, 27); Perspicacia «Eliseo», apartado «Hazael y Jehú nombrados reyes»,
+    lo llama nieto de Acab.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoram-de-israel
+  word: ally
+  inferred: false
+  sources:
+  - 2-reyes-8
+  - it-ocozias
+  reason: '2Re 8:28: acompañó a Jehoram, hijo de Acab, a la guerra contra Hazael en Ramot-Galaad.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: hazael
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-8
+  reason: '2Re 8:28: combatió al rey sirio Hazael en Ramot-Galaad.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: meguido
+  inferred: false
+  sources:
+  - 2-reyes-9
+  - it-ocozias
+  reason: '2Re 9:27: herido cerca de Ibleam, huyó hasta Meguidó y murió allí; Perspicacia «Ocozías», núm. 2, párr. 2.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: zibiah
+  word: wife
+  inferred: true
+  sources:
+  - it-zibiah
+  - 2-reyes-12
+  reason: Perspicacia «Zibíah» la ve como su esposa, pues era la madre de su hijo Jehoás (2Re 12:1).
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200000145#2
+checked_on: '2026-09-30'
 status: verified

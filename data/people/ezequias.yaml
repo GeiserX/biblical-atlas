@@ -21,6 +21,9 @@ sources:
 - tnm-a6-b
 - mateo-1
 - proverbios-25
+- 2-reyes-19
+- 2-reyes-20
+- 2-reyes-21
 - isaias-36
 - isaias-37
 - ip1-29
@@ -42,8 +45,9 @@ relations:
   - it-ezequias
   - 2-reyes-16
   - mateo-1
+  - 2-reyes-18
   reason: Hijo y sucesor de Acaz (2Re 16:20).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: acaz
@@ -69,10 +73,34 @@ relations:
     párr. 1, y Perspicacia «Amarías», núm. 6, dicen «probablemente». Sof 1:1 no lo llama rey.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: abias-hija-de-zacarias
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-abias
+  reason: '2Re 18:2: su madre se llamaba Abí, forma breve de Abías.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-ezequias
+  - 2-reyes-20
+  - isaias-38
+  reason: 'Is 38:5: Jehová, el Dios de su antepasado David, le responde por medio de Isaías.'
+  checked_on: '2026-09-30'
+  status: verified
 - type: lived_in
   place: jerusalen
   inferred: false
   sources:
+  - 2-reyes-18
+  - it-ezequias
   - isaias-36
   - isaias-37
   - isaias-38
@@ -84,20 +112,23 @@ relations:
   word: enemy
   inferred: false
   sources:
-  - isaias-36
+  - 2-reyes-18
+  - it-ezequias
   - it-senaquerib
+  - isaias-36
   - isaias-37
   reason: 'Is 36:1, 5: Senaquerib ataca Judá y el rabsaqué reprocha a Ezequías que se rebelara contra el rey de Asiria (2Re
     18:7).'
   checked_on: '2026-09-30'
   status: verified
 - type: kin
-  person: david
-  word: ancestor
-  inferred: false
+  person: hefziba
+  word: wife
+  inferred: true
   sources:
-  - isaias-38
-  reason: 'Is 38:5: Jehová, el Dios de su antepasado David, le responde por medio de Isaías.'
+  - it-hefziba
+  - 2-reyes-21
+  reason: Perspicacia «Hefziba», núm. 1, la da como esposa de Ezequías; 2Re 21:1, 3 la hace madre de Manasés, hijo de Ezequías.
   checked_on: '2026-09-30'
   status: verified
 history:

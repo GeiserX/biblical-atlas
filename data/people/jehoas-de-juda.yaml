@@ -26,6 +26,8 @@ sources:
 - 2-reyes-12
 - 2-cronicas-24
 - tnm-a6-a
+- 2-reyes-11
+- it-jehoseba
 links:
 - title: 'Perspicacia: «Jehoás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
@@ -54,5 +56,114 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: atalia
+  word: grandmother
+  inferred: true
+  sources:
+  - it-jehoas
+  - 2-reyes-11
+  reason: '2Re 11:1, 2: Atalía era la madre de Ocozías, su padre; Perspicacia «Jehoás», núm. 1, la llama su abuela.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoseba
+  word: aunt
+  inferred: true
+  sources:
+  - it-jehoas
+  - it-jehoseba
+  - 2-reyes-11
+  reason: '2Re 11:2: Jehoseba era hermana de Ocozías, su padre; Perspicacia «Jehoás», núm. 1, y «Jehoseba» la llaman su tía.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: monte-moria
+  inferred: false
+  sources:
+  - 2-reyes-11
+  - si-3
+  date:
+    from: -904
+    to: -897
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905-898 a.e.c.
+  reason: '2Re 11:2, 3: lo tuvieron escondido seis años en la casa de Jehová mientras reinaba Atalía, de la usurpación hacia
+    905 a la coronación en 898 (estudio 3).'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: zibiah
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-12
+  - it-zibiah
+  reason: 2Re 12:1 da a Zibíah de Beer-Seba como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoiada-sumo-sacerdote
+  word: adviser
+  inferred: false
+  sources:
+  - 2-reyes-12
+  - it-jehoas
+  reason: '2Re 12:2: obró bien mientras lo instruyó Jehoiadá; Perspicacia «Jehoás», núm. 1, dice que le sirvió de padre y
+    consejero.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoram-de-juda
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-reyes-12
+  reason: '2Re 12:18 lo cuenta entre sus antepasados: Jehoram fue padre de Ocozías, el padre de Jehoás.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehosafat
+  word: great_grandfather
+  inferred: false
+  sources:
+  - 2-reyes-12
+  reason: '2Re 12:18 lo cuenta entre sus antepasados: Jehosafat fue padre de Jehoram, abuelo de Jehoás.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-12
+  reason: '2Re 12:1: reinó cuarenta años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-reyes-12
+  - it-monticulo
+  - it-sila
+  reason: '2Re 12:20: lo mataron en la casa del Montículo, junto al camino hacia Silá; Perspicacia «Montículo» y «Silá» sitúan
+    los dos en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoadin
+  word: wife
+  inferred: true
+  sources:
+  - 2-reyes-14
+  - it-jehoadin
+  - it-jehoas
+  reason: 2Re 14:1, 2 da a Jehoadín como madre de Amasías, hijo de Jehoás; Perspicacia «Jehoadín» la llama esposa de Jehoás.
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200002373#1
 checked_on: '2026-09-30'
 status: verified

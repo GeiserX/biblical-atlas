@@ -17,9 +17,10 @@ sources:
 - it-dotan
 - openbible-geo
 - genesis-37
+- 2-reyes-6
 links:
 - title: 'Perspicacia: «Dotán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001215
   type: perspicacia
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

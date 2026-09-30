@@ -27,6 +27,8 @@ sources:
 - oseas-12
 - amos-4
 - amos-5
+- 2-reyes-2
+- 2-reyes-4
 links:
 - title: 'Perspicacia: «Guilgal»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001695
@@ -45,5 +47,5 @@ history:
   change: 'La duda se extiende a Am 4:4 y 5:5: Perspicacia «Guilgal», núm. 2, los cita en el mismo párrafo que la duda sobre
     qué Guilgal fue centro de culto falso.'
   source: amos-4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

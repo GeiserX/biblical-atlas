@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: saqueadores-contra-juda-en-dias-de-jehoiaquim
+title: Bandas de saqueadores atacan Judá
+date:
+  from: -617
+  to: -617
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 618 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 24002
+places:
+- juda
+people:
+- jehoiaquim
+present: []
+passages:
+- 2Re 24:2-4
+summary: Tras la rebelión de Jehoiaquim, Jehová envía contra Judá bandas de caldeos, sirios, moabitas y ammonitas, como castigo
+  por los pecados de Manasés y la sangre inocente que derramó.
+reason: '2Re 24:2 las pone tras la rebelión, que Perspicacia «Joaquín», párr. 2, fecha en 618; «Jehoiaquim», párr. 1, las
+  sitúa en su reinado. El texto no dice dónde estaba el rey: el suceso no sitúa a nadie.'
+sources:
+- 2-reyes-24
+- it-joaquin
+- it-jehoiaquim
+links:
+- title: 2 Reyes 24 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/24
+  type: bible
+- title: 'Perspicacia: «Jehoiaquim»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002377
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

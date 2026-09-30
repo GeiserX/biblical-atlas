@@ -6,6 +6,7 @@ names:
 disambiguation: Rey de Israel; no es Salum, otro nombre de Jehoacaz de Judá.
 distinct_from:
 - jehoacaz-de-juda
+- salum-hijo-de-ticva
 date:
   from: -790
   to: -790
@@ -38,5 +39,32 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: jabes
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-jabes
+  reason: 2Re 15:10, 13, 14 lo llaman hijo de Jabés.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:13: reinó un mes en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:14: Menahem lo mató en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200003933#5
+checked_on: '2026-09-30'
 status: verified

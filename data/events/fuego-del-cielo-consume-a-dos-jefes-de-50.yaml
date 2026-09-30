@@ -1,0 +1,36 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: fuego-del-cielo-consume-a-dos-jefes-de-50
+title: Fuego del cielo consume a dos jefes de cincuenta y a sus hombres
+date:
+  from: -916
+  to: -916
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 917 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 1009
+places:
+- samaria
+people:
+- elias-profeta
+- ocozias-de-israel
+present: []
+passages:
+- 2Re 1:9-14
+summary: El rey manda a un jefe con 50 hombres a traer a Elías, sentado en la cima de un monte. Por dos veces cae fuego del
+  cielo sobre ellos; el tercer jefe se arrodilla, suplica y se salva.
+reason: 2Re 1:9-14. El monte no tiene nombre; Samaria es de donde salen los enviados, así que el suceso no sitúa a nadie.
+  Perspicacia «Elías», núm. 1, cuenta los dos fuegos entre sus milagros. Fecha como la consulta.
+sources:
+- 2-reyes-1
+- it-elias
+- tnm-a6-a
+links:
+- title: 2 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

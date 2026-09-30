@@ -1,0 +1,40 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: menahem-paga-tributo-a-pul
+title: Menahem paga tributo a Pul de Asiria
+date:
+  from: -790
+  to: -779
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre c. 791 y c. 780 a.e.c. (tiempo narrativo: durante el reinado de Menahem)'
+narrative_order:
+  series: 2-reyes
+  order: 15019
+places:
+- israel
+people:
+- menahem
+- tiglat-pileser-iii
+passages:
+- 2Re 15:19, 20
+summary: Pul, rey de Asiria, entra en Israel. Para tener su apoyo y afianzar el trono, Menahem le da mil talentos de plata,
+  cobrando cincuenta siclos a cada hombre rico. Pul se retira.
+reason: '2Re 15:19, 20; Perspicacia «Pul», núm. 1, y «Tiglat-piléser III»: Pul es Tiglat-Piléser III. Sin año; cae en el reinado
+  de Menahem, c. 791-780 a.e.c. (A6-B).'
+sources:
+- 2-reyes-15
+- it-pul
+- it-tiglat-pileser
+- it-menahem
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Pul»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003579
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

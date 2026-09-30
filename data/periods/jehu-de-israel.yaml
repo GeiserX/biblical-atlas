@@ -14,15 +14,20 @@ date:
 places:
 - samaria
 summary: Veintiocho años en Samaria; su dinastía reinó cuatro generaciones.
-reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Duración según 2 Reyes 9.
+reason: Fechas de la tabla A6-A; el reinado se cierra cuando empieza el del sucesor. Empieza con la unción de 2Re 9; los 28
+  años en Samaria están en 2Re 10:36.
 sources:
 - tnm-a6-a
 - 2-reyes-9
 - it-jehu
+- 2-reyes-10
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehú» daba c. 904-877 a.e.c.; A6-A, más reciente, da c. 905-876.
   source: tnm-a6-a
+- date: '2026-09-30'
+  change: Los 28 años de reinado no están en 2 Reyes 9 sino en 2Re 10:36.
+  source: 2-reyes-10
 search: Jehú rey
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

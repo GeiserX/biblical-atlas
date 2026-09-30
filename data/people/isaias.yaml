@@ -20,6 +20,8 @@ sources:
 - isaias-6
 - tnm-tabla
 - si-3
+- 2-reyes-19
+- 2-reyes-20
 - isaias-2
 - si-isaias
 - it-isaias-libro
@@ -55,16 +57,17 @@ relations:
 - type: kin
   person: amoz
   word: father
-  inferred: false
   sources:
+  - 2-reyes-19
+  - it-amoz
   - isaias-1
   - isaias-2
-  - it-amoz
   - isaias-13
   - isaias-20
   - isaias-37
   - isaias-38
   reason: Is 1:1 y 2:1 lo llaman Isaías hijo de Amoz.
+  inferred: false
   checked_on: '2026-09-30'
   status: verified
 - type: holds_office
@@ -87,10 +90,16 @@ relations:
   - it-isaias
   - si-isaias
   - tnm-tabla
-  reason: 'Is 6:8, 9: Jehová lo envía a hablar al pueblo; Is 37:2, 38:1 y 39:3 lo llaman el profeta. Perspicacia «Isaías»
-    fecha su obra de c. 778 a poco después de 732.'
+  - 2-reyes-19
+  - 2-reyes-20
+  reason: 'Is 6:8, 9: Jehová lo envía a hablar al pueblo; Is 37:2, 38:1, 39:3 y 2Re 19:2, 20:1 lo llaman el profeta. Perspicacia
+    «Isaías» fecha su obra de c. 778 a poco después de 732.'
   checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200002204'
+history:
+- date: '2026-09-30'
+  change: Su cargo de profeta, que 2 Reyes apuntó por segunda vez sin fecha, queda en una sola relación con 2Re 19:2 y 20:1.
+  source: 2-reyes-19
 checked_on: '2026-09-30'
 status: verified

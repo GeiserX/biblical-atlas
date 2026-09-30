@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rezin-y-pecah-sitian-jerusalen
+title: Rezín y Pécah sitian Jerusalén
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: ya reina Acaz y vive aún Pécah)'
+narrative_order:
+  series: 2-reyes
+  order: 16005
+places:
+- jerusalen
+people:
+- rezin-rey-de-siria
+- pecah
+- acaz
+present:
+- rezin-rey-de-siria
+- pecah
+- acaz
+passages:
+- 2Re 16:5
+- Is 7:1
+summary: Rezín de Siria y Pécah de Israel suben contra Jerusalén y cercan a Acaz, pero no consiguen tomar la ciudad.
+reason: '2Re 16:5; Is 7:1; Perspicacia «Rezín», núm. 1, y «Péqah»: fue después de que Acaz empezara a reinar, en el año 17
+  de Pécah (762 a.e.c., A6-B), y antes de la muerte de Pécah, hacia 758.'
+sources:
+- 2-reyes-16
+- it-rezin
+- it-peqah
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Rezín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003721
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

@@ -1020,7 +1020,7 @@ def _celda(s):
 def _fila(afirmacion, fichero, ids, fuentes, consultado, razon, estado):
     enlaces = ", ".join(f"[{i}]({fuentes[i]['url']})" if i in fuentes else i for i in ids or [])
     pub = sorted({str(fuentes[i]["publicado"]) for i in ids or [] if i in fuentes and fuentes[i].get("publicado")})
-    fich = f"[{fichero.removeprefix('data/')}](../../../{fichero})"
+    fich = f"[{fichero.removeprefix('data/')}]({GITHUB}{fichero})"
     return "| " + " | ".join(_celda(x) for x in (afirmacion, fich, enlaces, ", ".join(pub) or "sin dato",
                                                    consultado, razon, estado)) + " |"
 
@@ -1031,6 +1031,10 @@ def _texto_fecha(f):
 
 CABECERA = "| Afirmación | Fichero | Fuente | Publicado | Consultado | Por qué lo asociamos | Estado |\n|---|---|---|---|---|---|---|"
 NOTA_PUBLICADO = "«Publicado» es el año de la publicación cuando la página de wol.jw.org lo muestra; si no lo muestra, pone «sin dato»."
+# Los enlaces del registro a ficheros del repositorio son URL absolutas de GitHub: el registro se publica
+# también en el sitio de la documentación (mkdocs), donde un enlace relativo fuera de docs/ no resuelve.
+GITHUB = "https://github.com/GeiserX/biblical-atlas/blob/main/"
+METODO = f"{GITHUB}docs/investigacion/README.md"
 REGISTROS = [  # (fichero, título)
     ("lugares", "Lugares"), ("personas", "Personas"), ("viajes", "Viajes y paradas"), ("cartas", "Cartas"),
     ("eventos", "Eventos"), ("periodos", "Periodos"), ("hallazgos", "Hallazgos"), ("recorridos", "Recorridos"),
@@ -1040,11 +1044,14 @@ ESTADOS_LEGADO = {"verified": "verificado", "pending": "pendiente"}
 
 
 def _cabeza(titulo):
-    return ["<!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->", "",
-            f"# Registro de investigación: {titulo.lower()}", "",
+    # El bloque de cabecera saca la página del buscador del sitio: las tablas suman varios MB.
+    return ["---", "search:", "  exclude: true", "---", "",
+            "<!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->", "",
+            f"# {titulo}", "",
             "> Este fichero lo genera `scripts/build.py` a partir de `data/`. No lo edites a mano: cambia el YAML y "
             "vuelve a generarlo.",
-            "> El método está en [../README.md](../README.md) y el índice del registro en [README.md](README.md).", "",
+            f"> Registro de investigación. El método está en [docs/investigacion/README.md]({METODO}) y el índice "
+            "del registro en [index.md](index.md).", "",
             NOTA_PUBLICADO, ""]
 
 
@@ -1060,7 +1067,7 @@ def _revisar(out, tipo, objs):
     out.extend(["## Qué revisar dentro de un año", "",
                 "Una búsqueda en wol.jw.org por cada entidad, para ver si hay material más reciente. "
                 "Si una publicación nueva dice otra cosa, gana la más reciente y el cambio se anota en `history` "
-                "(ver [../README.md](../README.md)).", ""])
+                f"(ver [docs/investigacion/README.md]({METODO})).", ""])
     for o in objs:
         t = _legacy_term(o)
         out.append(f"- {o.get('nombre') or o.get('libro') or o.get('titulo')}: [buscar «{t}»]({buscar_url(t)})")
@@ -1241,8 +1248,8 @@ def registros(salida, legado, datos):
     out = _cabeza("Cobertura")
     out.extend(["Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.yaml`. Un capítulo cuenta "
                 "como completo cuando sus tramos cubren todos sus versículos, salvo los que la TNM no incluye. "
-                "El formato está en [data/coverage/README.md](../../../data/coverage/README.md) y el protocolo en "
-                "[../versiculos.md](../versiculos.md).", ""])
+                f"El formato está en [data/coverage/README.md]({GITHUB}data/coverage/README.md) y el protocolo en "
+                f"[docs/investigacion/versiculos.md]({GITHUB}docs/investigacion/versiculos.md).", ""])
     lineas, tot_cob = cov.informe(datos)
     out.extend(lineas)
     docs["cobertura"] = out
@@ -1268,13 +1275,13 @@ def registros(salida, legado, datos):
     indice = ["<!-- Generado por scripts/build.py a partir de data/. No editar a mano. -->", "",
               "# Registro de investigación", "",
               "> Lo genera `scripts/build.py` a partir de `data/`, un fichero por tipo. No se edita a mano.",
-              "> El método y el esquema están en [../README.md](../README.md).", "",
+              f"> El método y el esquema están en [docs/investigacion/README.md]({METODO}).", "",
               "Cada fila es una afirmación con su fichero, su fuente, el día en que se leyó, por qué la asociamos "
               "y su estado.", "",
               "| Registro | Cuántos |", "|---|---|"]
     indice += [f"| [{titulo}]({nombre}.md) | {cuentas[nombre]} |" for nombre, titulo in REGISTROS]
     indice.append("")
-    docs["README"] = indice
+    docs["index"] = indice
     return {nombre: "\n".join(lineas) for nombre, lineas in docs.items()}
 
 

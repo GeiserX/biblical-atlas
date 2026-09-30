@@ -10,15 +10,19 @@ date:
   chronology: tnm
   text: 898 a.e.c.
 places:
+- monte-moria
 - jerusalen
 people:
 - jehoas-de-juda
 - atalia
+- jehoiada-sumo-sacerdote
 roles:
   atalia: died
 passages:
-- 2Re 11:4-21
-- 2Cr 23:1-21
+- 2Re 11:4-16
+- 2Re 11:19-21
+- 2Cr 23:1-15
+- 2Cr 23:20, 21
 summary: A sus siete años, el sumo sacerdote Jehoiadá corona a Jehoás en el patio del templo con guardias armados. Atalía
   grita que es una conspiración y la ejecutan.
 reason: El estudio 3 fecha en 898 el comienzo de Jehoás; Perspicacia «Jehoás», núm. 1, párr. 3, y «Atalía», núm. 1, párr. 3.
@@ -27,6 +31,7 @@ sources:
 - it-jehoas
 - it-atalia-reina
 - 2-reyes-11
+- it-jehoiada
 links:
 - title: 'Perspicacia: «Jehoás»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002373
@@ -38,5 +43,16 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/11
   type: bible
 search: Jehoás coronado Jehoiadá
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: 'El sitio principal pasa a ser el monte Moria: la coronación fue en el patio del templo (2Re 11:11-13), como los
+    demás sucesos del templo.'
+  source: 2-reyes-11
+- date: '2026-09-30'
+  change: Los pasajes del pacto y del templo de Baal (2Re 11:17, 18; 2Cr 23:16-19) pasan a su propio suceso.
+  source: 2-reyes-11
+narrative_order:
+  series: 2-reyes
+  order: 11004
+checked_on: '2026-09-30'
 status: verified

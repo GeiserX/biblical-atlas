@@ -11,8 +11,8 @@ lon: 35.235
 precision: point
 coord_source: openbible:a294859
 coord_url: https://www.openbible.info/geo/ancient/a294859/siloam
-summary: Estanque del sur de Jerusalén adonde Jesús mandó a lavarse a un ciego de nacimiento, que así recobró la
-  vista. Se ha excavado un estanque del siglo I que se alimentaba del manantial de Guihón.
+summary: Estanque del sur de Jerusalén al que Ezequías llevó por un túnel el agua del manantial de Guihón. Allí mandó Jesús
+  a lavarse a un ciego de nacimiento, que recobró la vista. Se ha excavado un estanque del siglo I.
 reason: 'Perspicacia «Siloam» (párr. 2), Jn 9:7 y «Jerusalén y el templo que Jesús conoció» (párr. 3). La coordenada
   es de OpenBible: solo tomamos el punto.'
 sources:
@@ -20,6 +20,8 @@ sources:
 - juan-9
 - vbt-jerusalen-templo
 - openbible-geo
+- 2-reyes-20
+- it-ezequias
 links:
 - title: 'Perspicacia: «Siloam»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004121
@@ -28,5 +30,10 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/43/9
   type: bible
 search: Estanque de Siloam
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: Añade el acueducto de Ezequías que acababa en el estanque (2Re 20:20; Perspicacia «Ezequías», núm. 1); la referencia
+    de 2Re 20:20 remite a Jn 9:11.
+  source: 2-reyes-20
+checked_on: '2026-09-30'
 status: verified

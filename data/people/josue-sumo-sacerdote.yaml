@@ -105,11 +105,12 @@ history:
 - date: '2026-09-29'
   change: La desambiguación se escribe con palabras propias; repetía ocho palabras seguidas de una nota de estudio.
   source: it-josue
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - josue-el-betsemita
 - josue-hijo-de-nun
+- josue-jefe-de-jerusalen
 not_claimed:
 - 'Que Josué llegara a ser rey: no venía de la línea de David, y su corona era figura del Brote, el Mesías (La Atalaya de
   2007 y de 2017).'

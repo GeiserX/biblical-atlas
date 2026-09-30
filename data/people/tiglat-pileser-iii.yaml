@@ -30,5 +30,17 @@ links:
 - title: 2 Reyes 15 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200004402'
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: holds_office
+  place: asiria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-tiglat-pileser
+  reason: 2Re 15:19, 29 lo llaman rey de Asiria, primero con el nombre de Pul.
+  checked_on: '2026-09-30'
+  status: verified

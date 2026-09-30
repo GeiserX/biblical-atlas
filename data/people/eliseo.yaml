@@ -21,6 +21,13 @@ sources:
 - 2-reyes-13
 - tnm-a6-a
 - lucas-4
+- 2-reyes-3
+- 2-reyes-4
+- 2-reyes-5
+- 2-reyes-6
+- 2-reyes-7
+- 2-reyes-8
+- 2-reyes-9
 links:
 - title: 'Perspicacia: «Eliseo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001316
@@ -57,9 +64,11 @@ relations:
   - it-elias
   - 1-reyes-19
   - 2-reyes-2
+  - 2-reyes-3
+  - it-eliseo
   reason: '1Re 19:19-21: Eliseo deja el arado, sigue a Elías y empieza a servirle. En 2Re 2:3, 5 los hijos de los profetas
     llaman a Elías su señor.'
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: holds_office
   office: prophet
@@ -67,9 +76,10 @@ relations:
   sources:
   - 1-reyes-19
   - it-eliseo
+  - 2-reyes-3
   reason: Jehová mandó a Elías ungirlo como profeta (1Re 19:16); Perspicacia «Eliseo» cuenta unos sesenta años de servicio
     como profeta.
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: safat-padre-de-eliseo
@@ -78,8 +88,31 @@ relations:
   - 1-reyes-19
   - it-safat
   - it-eliseo
+  - 2-reyes-3
+  - 2-reyes-6
   reason: '1Re 19:16, 19: Eliseo hijo de Safat.'
   inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: disciple_of
+  person: elias-profeta
+  inferred: false
+  sources:
+  - 2-reyes-2
+  reason: '2Re 2:3, 5: los hijos de los profetas le avisan de que Jehová le va a quitar a su maestro.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-2
+  - 2-reyes-5
+  - 2-reyes-6
+  - it-eliseo
+  - it-samaria
+  reason: '2Re 2:25: vuelve a Samaria. Tenía casa allí: la niña habla del profeta de Samaria y Naamán para ante su puerta
+    (5:3, 9); en 6:32 está sentado en ella durante el sitio.'
   checked_on: '2026-09-30'
   status: verified
 perspicacia: '1200001316'

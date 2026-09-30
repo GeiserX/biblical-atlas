@@ -9,11 +9,14 @@ summary: Padre de Merodac-Baladán, el rey de Babilonia que mandó mensajeros a 
 reason: Perspicacia «Baladán»; Is 39:1 y 2Re 20:12.
 sources:
 - it-baladan
-- isaias-39
 - 2-reyes-20
+- isaias-39
 links:
 - title: 'Perspicacia: «Baladán»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000544
   type: perspicacia
+- title: 2 Reyes 20 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/20
+  type: bible
 checked_on: '2026-09-30'
 status: verified

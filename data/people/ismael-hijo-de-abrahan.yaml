@@ -65,5 +65,7 @@ relations:
   checked_on: '2026-09-29'
   status: verified
 perspicacia: 1200002215#1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- ismael-hijo-de-netanias

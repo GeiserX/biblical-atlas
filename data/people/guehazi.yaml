@@ -1,0 +1,60 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: guehazi
+name: Guehazí
+names:
+- name: Guehazí
+perspicacia: '1200001641'
+summary: Sirviente del profeta Eliseo. Hizo ver que la sunamita no tenía hijos y llevó el bastón del profeta a su niño muerto.
+  Luego, por codicia, pidió regalos a Naamán y quedó leproso.
+reason: Perspicacia «Guehazí»; 2Re 4:12-37; 5:20-27; 8:4, 5. La fecha es el reinado de Jehoram de Israel (A6-A).
+sources:
+- it-guehazi
+- 2-reyes-4
+- tnm-a6-a
+- 2-reyes-5
+- it-naaman
+- 2-reyes-8
+links:
+- title: 'Perspicacia: «Guehazí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001641
+  type: perspicacia
+- title: 2 Reyes 4 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/4
+  type: bible
+- title: 2 Reyes 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/5
+  type: bible
+relations:
+- type: tie
+  person: eliseo
+  word: master
+  sources:
+  - 2-reyes-4
+  - it-guehazi
+  - 2-reyes-5
+  - 2-reyes-8
+  reason: '2Re 4:12: Eliseo habla a su sirviente Guehazí; Perspicacia lo llama servidor del profeta.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: true
+  sources:
+  - 2-reyes-5
+  - it-guehazi
+  - it-ofel
+  reason: '2Re 5:24: guarda lo recibido en la casa, en Ofel, que la nota sitúa en Samaria; Perspicacia «Guehazí» dice que
+    lo dejó en su casa.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'

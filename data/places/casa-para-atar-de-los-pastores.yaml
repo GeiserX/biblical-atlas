@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: casa-para-atar-de-los-pastores
+name: Casa para atar de los pastores
+names:
+- name: Casa para atar de los pastores
+type: city
+lat: 32.4697
+lon: 35.3563
+precision: point
+coord_source: openbible:a7abec7
+coord_url: https://www.openbible.info/geo/ancient/a7abec7/beth-eked
+coord_note: 'Punto de Beit Qad, unos 6 km al ENE de Jenin: el sitio con el que Perspicacia la identifica por lo general.'
+summary: Lugar del camino de Jezreel a Samaria; su nombre parece aludir a un sitio donde se ataba a las ovejas para esquilarlas.
+  Junto a su cisterna Jehú mató a 42 hermanos del rey Ocozías.
+reason: 'Perspicacia «Casa para atar de los pastores»; 2Re 10:12-14 y su nota. OpenBible: solo el punto.'
+sources:
+- it-casa-para-atar-de-los-pastores
+- openbible-geo
+- 2-reyes-10
+links:
+- title: 'Perspicacia: «Casa para atar de los pastores»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000742
+  type: perspicacia
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

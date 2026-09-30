@@ -1,6 +1,6 @@
 # Investigación: cómo sabemos lo que afirmamos
 
-Cada dato del mapa dice de dónde sale, por qué lo asociamos y cuándo lo comprobamos. Esta carpeta explica el método y es el esquema que citan las cabeceras de los YAML. El registro completo, dato a dato, está en [`registro/`](registro/README.md), un fichero por tipo. La especificación del modelo, con cada regla de las relaciones, los sucesos y los cargos, está en [`modelo.md`](modelo.md).
+Cada dato del mapa dice de dónde sale, por qué lo asociamos y cuándo lo comprobamos. Esta carpeta explica el método y es el esquema que citan las cabeceras de los YAML. El registro completo, dato a dato, está en [`registro/`](registro/index.md), un fichero por tipo. La especificación del modelo, con cada regla de las relaciones, los sucesos y los cargos, está en [`modelo.md`](modelo.md).
 
 ## Núcleo en inglés, contenido en español
 
@@ -16,7 +16,7 @@ Tres nombres propios no se traducen: `perspicacia`, `tnm` y `openbible`, porque 
 - [`data/vocabulary.yaml`](../../data/vocabulary.yaml): el vocabulario cerrado de las relaciones, los cargos, la certeza y los papeles de un suceso, con el texto en español de cada valor.
 - `data/places/`, `data/people/`, `data/journeys/`, `data/letters/`, `data/events/`, `data/periods/`, `data/finds/`, `data/tours/`: un YAML por entidad. El nombre del fichero es su identificador.
 - `data/_proposals/`: cambios propuestos a ficheros de otro carril. `build.py` y `validate.py` no la leen.
-- [`registro/`](registro/README.md): el registro. Lo genera [`scripts/build.py`](../../scripts/build.py) y nadie lo edita a mano.
+- [`registro/`](registro/index.md): el registro. Lo genera [`scripts/build.py`](../../scripts/build.py) y nadie lo edita a mano.
 
 ## Qué lleva cada afirmación
 
@@ -243,7 +243,7 @@ Cuando dos fuentes de nivel 1 no coinciden, manda la publicación más reciente.
 
 Una vez al año (el flujo `validar` también lo hace cada lunes):
 
-1. [`scripts/review.py`](../../scripts/review.py) lista lo que lleva 365 días o más sin releer, con una búsqueda en wol.jw.org para cada entidad. Mira el `checked_on` de cada fichero y el de cada uno de sus hechos anidados, y da una línea por fichero con la fecha más antigua. Con `--fail` sale con código 1 si la lista no está vacía. Las mismas búsquedas están al final de cada fichero de [`registro/`](registro/README.md).
+1. [`scripts/review.py`](../../scripts/review.py) lista lo que lleva 365 días o más sin releer, con una búsqueda en wol.jw.org para cada entidad. Mira el `checked_on` de cada fichero y el de cada uno de sus hechos anidados, y da una línea por fichero con la fecha más antigua. Con `--fail` sale con código 1 si la lista no está vacía. Las mismas búsquedas están al final de cada fichero de [`registro/`](registro/index.md).
 2. Se abre cada búsqueda. Si hay material más reciente, se lee y, si cambia algo, se sigue el procedimiento de arriba.
 3. Se actualiza `checked_on` de lo que se ha releído, en el fichero y en cada hecho anidado releído, aunque no haya cambiado nada.
 4. `python3 scripts/validate.py --links` comprueba que todas las URL siguen respondiendo.

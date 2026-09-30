@@ -4,9 +4,14 @@ name: Valle de Hinón
 names:
 - name: Valle de Hinón
 - name: Valle del Hijo de Hinón
-  note: Otra forma del nombre (Jos 15:8; 2Re 23:10).
+  note: Otra forma del nombre (Jos 15:8).
+- name: Valle de los Hijos de Hinón
+  note: Forma que da la TNM en 2Re 23:10.
 - name: Gehena
   note: Forma griega del nombre hebreo. Jesús la usa como imagen de la destrucción total (Mt 5:22, 29, 30).
+- name: Tófet
+  note: Lugar del valle, quizá cerca de la Puerta de los Tiestos, donde se sacrificaba a niños en el fuego; Josías lo inutilizó
+    (2Re 23:10; Perspicacia «Tófet»).
 type: valley
 lat: 31.769167
 lon: 35.228056
@@ -25,6 +30,8 @@ sources:
 - openbible-geo
 - josue-15
 - josue-18
+- 2-reyes-23
+- it-tofet
 links:
 - title: 'Perspicacia: «Hinón, Valle de»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002031
@@ -39,5 +46,9 @@ history:
 - date: '2026-09-29'
   change: 'La TNM escribe «Hijo» con mayúscula en Jos 15:8: «valle del Hijo de Hinón».'
   source: josue-15
-checked_on: '2026-09-29'
+- date: '2026-09-30'
+  change: '2Re 23:10 dice «valle de los Hijos de Hinón», no «del Hijo»: la nota se corrige y se añaden esa forma y Tófet,
+    el lugar del valle que Josías inutilizó.'
+  source: 2-reyes-23
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: siria-oprime-a-israel-en-dias-de-jehoacaz
+title: Siria oprime a Israel en días de Jehoacaz
+date:
+  from: -875
+  to: -858
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: 876-c. 859 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 13003
+places:
+- israel
+- siria
+people:
+- jehoacaz-de-israel
+- hazael
+- ben-hadad-hijo-de-hazael
+present:
+- jehoacaz-de-israel
+passages:
+- 2Re 13:3-7
+- 2Re 13:22, 23
+summary: Por los pecados de Israel, Hazael y su hijo Ben-Hadad lo castigan hasta dejar a Jehoacaz con un ejército mínimo.
+  El rey suplica a Jehová, que por su pacto con los patriarcas envía un libertador.
+reason: '2Re 13:3-7, 22, 23; Perspicacia «Jehoacaz», núm. 2. Dura todo su reinado: de 876 a c. 859 a.e.c. según la tabla A6-A.'
+sources:
+- 2-reyes-13
+- it-jehoacaz
+- it-ben-hadad
+- tnm-a6-a
+links:
+- title: 2 Reyes 13 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/13
+  type: bible
+- title: 'Perspicacia: «Jehoacaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002372
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

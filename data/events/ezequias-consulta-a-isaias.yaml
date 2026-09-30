@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: ezequias-consulta-a-isaias
-title: Ezequías consulta a Isaías
+title: Ezequías, vestido de saco, manda consultar a Isaías
 date:
   from: -731
   to: -731
@@ -10,10 +10,11 @@ date:
   chronology: tnm
   text: 732 a.e.c.
 narrative_order:
-  series: isaias
-  order: 37001
+  series: 2-reyes
+  order: 19001
 places:
 - jerusalen
+- monte-moria
 people:
 - ezequias
 - eliaquim-hijo-de-hilquias
@@ -28,10 +29,10 @@ present:
 - sebna
 - isaias
 passages:
-- Is 37:1-7
 - 2Re 19:1-7
-summary: 'Vestido de saco, Ezequías entra en la casa de Jehová y manda a Eliaquim, Sebná y los sacerdotes mayores a Isaías.
-  El profeta responde que no teman: el rey asirio volverá a su tierra y caerá allí.'
+- Is 37:1-7
+summary: 'Angustiado por los insultos del rabsaqué, Ezequías se viste de saco, va al templo y manda a Eliaquim, a Sebná y
+  a sacerdotes ancianos a Isaías. Jehová contesta que no teman: el rey asirio volverá a su tierra.'
 reason: Is 37:1-7 sigue a las palabras del rabsaqué, en 732 a.e.c. (estudio 3; Perspicacia «Ezequías»). Isaías vivía en Jerusalén;
   el texto no dice en qué parte de la ciudad recibió a los enviados.
 sources:
@@ -40,9 +41,19 @@ sources:
 - it-ezequias
 - ip1-29
 - 2-reyes-19
+- it-eliaquim
+- it-sebna
 links:
 - title: Isaías 37 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
   type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
+history:
+- date: '2026-09-30'
+  change: 'Se funde con el suceso de 2 Reyes, dueño del relato: toma su título, su resumen y su orden, y suma el monte Moria,
+    donde Ezequías entró en la casa de Jehová.'
+  source: 2-reyes-19
 checked_on: '2026-09-30'
 status: verified

@@ -19,10 +19,11 @@ sources:
 - tnm-a6-a
 - 1-reyes-22
 - it-ocozias
+- 2-reyes-1
 history:
 - date: '2026-09-28'
   change: Perspicacia «Ocozías» y el estudio 3 dan su comienzo hacia 919 a.e.c.; A6-A, más reciente, lo pone hacia 920.
   source: tnm-a6-a
 search: Ocozías rey
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

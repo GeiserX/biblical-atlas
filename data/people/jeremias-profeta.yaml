@@ -39,5 +39,7 @@ relations:
   reason: Jer 1:1 lo presenta entre los sacerdotes de Anatot.
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- jeremias-de-libna

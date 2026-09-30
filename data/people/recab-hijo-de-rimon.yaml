@@ -48,5 +48,7 @@ relations:
   reason: '2Sa 4:12: los hombres de David lo matan y lo cuelgan junto al estanque de Hebrón.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- recab-padre-de-jehonadab

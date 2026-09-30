@@ -66,7 +66,31 @@ relations:
   inferred: false
   sources:
   - 1-reyes-22
+  - 2-reyes-1
   reason: '1Re 22:51: reinó sobre Israel en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehoram-de-israel
+  word: brother
+  inferred: false
+  sources:
+  - 2-reyes-1
+  - it-jehoram
+  - it-ocozias
+  reason: '2Re 1:17 y su nota: como Ocozías no tuvo hijos, reina Jehoram, su hermano. Perspicacia «Jehoram», núm. 2, da a
+    Ocozías como el mayor.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: true
+  sources:
+  - 2-reyes-1
+  - it-ocozias
+  - it-samaria
+  reason: '2Re 1:2, 4, 17: se hiere en su casa de Samaria y muere sin levantarse de la cama. Al contar la muerte el texto
+    no repite la ciudad.'
   checked_on: '2026-09-30'
   status: verified
 history:

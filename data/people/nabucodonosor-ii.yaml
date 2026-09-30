@@ -22,6 +22,7 @@ sources:
 - 2-reyes-24
 - daniel-4
 - si-3
+- 2-reyes-25
 links:
 - title: 'Perspicacia: «Nabucodonosor, Nabucodorosor»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003200
@@ -60,5 +61,6 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-29'
+perspicacia: '1200003200'
+checked_on: '2026-09-30'
 status: verified

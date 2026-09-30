@@ -1,0 +1,53 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: tiglat-pileser-deporta-al-norte-de-israel
+title: Tiglat-Piléser III toma el norte de Israel y deporta a su gente
+date:
+  from: -761
+  to: -757
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y c. 758 a.e.c. (tiempo narrativo: tras el soborno de Acaz y antes de la muerte de Pécah)'
+narrative_order:
+  series: 2-reyes
+  order: 16010
+places:
+- ijon
+- abel-de-bet-maaca
+- janoah-del-norte
+- quedes-de-neftali
+- hazor
+- galaad
+- galilea
+- neftali
+- asiria
+people:
+- tiglat-pileser-iii
+- pecah
+present: []
+passages:
+- 2Re 15:29
+- 1Cr 5:6, 26
+summary: En días de Pécah, Tiglat-Piléser III conquista Galaad, Galilea y todo Neftalí, con Ijón, Abel-Bet-Maacá, Janóah,
+  Quedes y Hazor, y deporta a Asiria a sus habitantes.
+reason: 2Re 15:29. Perspicacia «Péqah» lo pone al parecer en la campaña que siguió al soborno de Acaz, rey desde 762 (A6-B);
+  Pécah muere hacia 758. El libro se adelanta; va tras la toma de Damasco. Nadie queda situado.
+sources:
+- 2-reyes-15
+- it-peqah
+- it-tiglat-pileser
+- it-janoah
+- it-hazor
+- it-galaad
+- it-neftali
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Tiglat-piléser III»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004402
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

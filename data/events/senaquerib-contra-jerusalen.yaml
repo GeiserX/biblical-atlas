@@ -32,6 +32,7 @@ sources:
 - it-ezequias
 - it-lakis
 - 2-reyes-18
+- 2-reyes-19
 - ip1-29
 - it-rabsaque
 - isaias-37
@@ -58,5 +59,8 @@ history:
   change: 'Salen 2Re 19:37 e Is 37:38: el asesinato de Senaquerib ocurrió años después de 732 (Perspicacia «Senaquerib»; «Las
     profecías de Isaías I», cap. 29, párr. 22) y es otro suceso, de Reyes.'
   source: isaias-37
+narrative_order:
+  series: 2-reyes
+  order: 18013
 checked_on: '2026-09-30'
 status: verified

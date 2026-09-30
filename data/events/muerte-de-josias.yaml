@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte-de-josias
-title: Josías muere en Meguidó
+title: Josías cae herido de muerte en Meguidó
 date:
   from: -627
   to: -627
@@ -19,15 +19,16 @@ people:
 passages:
 - 2Re 23:29-30
 - 2Cr 35:20-25
-summary: El faraón Nekó marcha hacia el Éufrates para ayudar a Asiria. Josías sale a detenerlo en Meguidó, cae herido y muere;
-  el pueblo pone en el trono a su hijo Jehoacaz.
-reason: A6-B y el estudio 3 ponen el comienzo de Jehoacaz en 628; Perspicacia «Josías», núm. 1, párr. 9, y «Meguidó», párr.
-  8.
+summary: El faraón Nekó marcha hacia el Éufrates para ayudar a Asiria. Josías sale a detenerlo en Meguidó y cae herido de
+  muerte; muere camino de Jerusalén o al llegar, y el pueblo corona a su hijo Jehoacaz.
+reason: 'A6-B y el estudio 3 ponen el comienzo de Jehoacaz en 628; Perspicacia «Josías», núm. 1, párr. 9, y «Meguidó», párr.
+  8. El papel no lleva sitio: 2Re 23:29 dice Meguidó y 2Cr 35:24, Jerusalén.'
 type: death
 roles:
   josias: died
 present:
 - neko
+- josias
 sources:
 - tnm-a6-b
 - si-3
@@ -40,6 +41,20 @@ history:
   change: Perspicacia «Josías» y «Carquemis» fechaban la muerte hacia 629 a.e.c.; A6-B, más reciente, pone a su sucesor en
     628, como el estudio 3.
   source: tnm-a6-b
+- date: '2026-09-30'
+  change: 'Josías salió a luchar contra Nekó y cayó en Meguidó (2Re 23:29): estaba allí, y present no lo llevaba.'
+  source: 2-reyes-23
+- date: '2026-09-30'
+  change: El título lo hacía morir en Meguidó; 2Cr 35:24 dice que murió en Jerusalén, y Perspicacia «Josías» deja abierto
+    si en el camino o al llegar.
+  source: 2-reyes-23
+- date: '2026-09-30'
+  change: El resumen decía que Josías moría en Meguidó. 2Re 23:29, 30 y 2Cr 35:23, 24 no coinciden en el sitio; se dice solo
+    lo que dan los dos.
+  source: 2-cronicas-35
+- date: '2026-09-30'
+  change: 'La razón explica por qué el papel died no lleva lugar: los dos relatos no dan el mismo sitio de la muerte.'
+  source: 2-reyes-23
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
@@ -51,5 +66,8 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
   type: bible
 search: muerte de Josías Meguidó Nekó
-checked_on: '2026-09-29'
+narrative_order:
+  series: 2-reyes
+  order: 23029
+checked_on: '2026-09-30'
 status: verified

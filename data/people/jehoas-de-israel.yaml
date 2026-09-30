@@ -54,6 +54,45 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-13
+  reason: '2Re 13:10: reinó dieciséis años en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: true
+  sources:
+  - 2-reyes-13
+  - 2-reyes-14
+  - it-jehoas
+  reason: 2Re 13:13 y 14:16 dan su entierro en Samaria con los reyes de Israel, no el sitio de su muerte; tomamos el del entierro,
+    la ciudad donde reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ben-hadad-hijo-de-hazael
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-13
+  - it-ben-hadad
+  - it-jehoas
+  reason: '2Re 13:25: lo derrotó tres veces y le recuperó las ciudades de Israel.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehu-de-israel
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-reyes-14
+  reason: 2Re 14:8 lo llama hijo de Jehoacaz, hijo de Jehú.
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200002373#2
 checked_on: '2026-09-30'
 status: verified

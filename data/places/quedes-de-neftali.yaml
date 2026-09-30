@@ -24,6 +24,7 @@ sources:
 - josue-20
 - josue-21
 - jueces-4
+- 2-reyes-15
 links:
 - title: 'Perspicacia: «Quedes»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002582
@@ -41,5 +42,5 @@ history:
 - date: '2026-09-29'
   change: El nombre decía Quedes-Neftalí, pero la TNM de Jue 4:6 escribe «Quedes de Neftalí».
   source: jueces-4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

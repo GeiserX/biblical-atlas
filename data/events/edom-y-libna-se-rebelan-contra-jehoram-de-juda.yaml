@@ -1,0 +1,44 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: edom-y-libna-se-rebelan-contra-jehoram-de-juda
+title: Edom y Libná se rebelan contra Jehoram de Judá
+date:
+  from: -912
+  to: -905
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 913 y 906 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Judá)'
+narrative_order:
+  series: 2-reyes
+  order: 8020
+places:
+- zair
+- edom
+- libna
+people:
+- jehoram-de-juda
+present:
+- jehoram-de-juda
+passages:
+- 2Re 8:20-22
+- 2Cr 21:8-10
+summary: Edom se rebela contra Judá y pone rey propio. Jehoram cruza a Zaír con sus carros y de noche rompe el cerco edomita,
+  pero Edom sigue libre. En esa época se rebela también Libná.
+reason: '2Re 8:20-22 y 2Cr 21:8-10; Perspicacia «Edom», «Zaír» y «Jehoram», núm. 3. Fecha: el reinado de Jehoram de Judá,
+  913-c. 906 (A6-A).'
+sources:
+- 2-reyes-8
+- it-edom
+- it-zair
+- it-jehoram
+- tnm-a6-a
+links:
+- title: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  type: bible
+- title: 'Perspicacia: «Zaír»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004654
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

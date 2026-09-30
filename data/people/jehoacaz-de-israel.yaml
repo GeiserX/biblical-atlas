@@ -21,6 +21,7 @@ sources:
 - it-jehoacaz
 - 2-reyes-13
 - tnm-a6-a
+- 2-reyes-10
 links:
 - title: 'Perspicacia: «Jehoacaz»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002372
@@ -49,9 +50,47 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-13
+  reason: '2Re 13:1: reinó diecisiete años en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: true
+  sources:
+  - 2-reyes-13
+  - it-jehoacaz
+  reason: 2Re 13:9 da su entierro en Samaria, no el sitio de su muerte; tomamos el del entierro, la ciudad donde reinaba.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: hazael
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-13
+  - it-jehoacaz
+  reason: '2Re 13:3, 22: Hazael, rey de Siria, oprimió a Israel durante todo su reinado.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: ben-hadad-hijo-de-hazael
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-13
+  - it-ben-hadad
+  reason: '2Re 13:3, 25: Ben-Hadad, con su padre Hazael, le quitó ciudades de Israel en la guerra.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehoacaz» cerraba su reinado hacia 860 a.e.c.; A6-A, más reciente, da c. 859.
   source: tnm-a6-a
-checked_on: '2026-09-28'
+perspicacia: 1200002372#2
+checked_on: '2026-09-30'
 status: verified

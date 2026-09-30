@@ -1,0 +1,35 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jeremias-de-libna
+name: Jeremías
+names:
+- name: Jeremías
+perspicacia: 1200002421#5
+disambiguation: Jeremías de Libná, abuelo materno de Jehoacaz y Sedequías; no el profeta Jeremías de Anatot.
+distinct_from:
+- jeremias-profeta
+summary: Hombre de Libná, ciudad de sacerdotes, padre de Hamutal. Por ella fue abuelo de dos reyes de Judá, Jehoacaz y Sedequías.
+reason: Perspicacia «Jeremías», núm. 5; 2Re 23:31; 24:18.
+sources:
+- it-jeremias
+- 2-reyes-23
+- 2-reyes-24
+links:
+- title: 'Perspicacia: «Jeremías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002421
+  type: perspicacia
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+relations:
+- type: lived_in
+  place: libna
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - 2-reyes-24
+  - it-jeremias
+  reason: 2Re 23:31 y 24:18 lo llaman Jeremías de Libná; Perspicacia lo da como natural de esa ciudad sacerdotal.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

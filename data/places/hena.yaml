@@ -10,6 +10,34 @@ precision: uncertain
 coord_source: null
 coord_url: null
 candidates:
+- name: Aná, en el curso medio del Éufrates
+  geometry:
+    type: point
+    lat: 34.368611
+    lon: 41.981944
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hena
+  - openbible-geo
+  reason: La Versión de los Setenta lee Aná, una población del curso medio del Éufrates (Perspicacia «Hená»).
+  note: Primera identificación de OpenBible, Anah; solo tomamos el punto.
+  coord_source: openbible:aab9a5e
+  coord_url: https://www.openbible.info/geo/ancient/aab9a5e/hena
+- name: En Siria, cerca de Hamat
+  geometry:
+    type: point
+    lat: 35.1365
+    lon: 36.75
+  checked_on: '2026-09-30'
+  status: alternative
+  sources:
+  - it-hena
+  - openbible-geo
+  reason: Varios investigadores, según Perspicacia, la ven más probable en Siria, como Sefarvaim e Ivá.
+  note: Segunda identificación de OpenBible, a menos de 75 km de Hama; solo tomamos el punto.
+  coord_source: openbible:aab9a5e
+  coord_url: https://www.openbible.info/geo/ancient/aab9a5e/hena
 - name: Aná, en el Éufrates medio
   geometry:
     type: point
@@ -45,11 +73,16 @@ reason: Perspicacia «Hená»; Is 37:13; 2Re 18:34; 19:13. Dos candidatos, porqu
 sources:
 - it-hena
 - openbible-geo
+- 2-reyes-18
+- 2-reyes-19
 - isaias-37
 links:
 - title: 'Perspicacia: «Hená»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001986
   type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
 - title: Isaías 37 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/37
   type: bible

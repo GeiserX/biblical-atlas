@@ -1,0 +1,41 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: amasias-derrota-a-edom-en-el-valle-de-la-sal
+title: Amasías derrota a Edom en el valle de la Sal y toma Sela
+date:
+  from: -857
+  to: -843
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 858 y c. 844 a.e.c. (tiempo narrativo: reinando Amasías, antes de su batalla con Jehoás de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 14007
+places:
+- valle-de-la-sal
+- sela-de-edom
+- edom
+people:
+- amasias
+passages:
+- 2Re 14:7
+- 2Cr 25:11, 12
+summary: En el valle de la Sal, Amasías derrota a Edom y toma Sela, que llama Jocteel. 2 Reyes da diez mil edomitas muertos;
+  2 Crónicas añade otros diez mil capturados y despeñados.
+reason: 2Re 14:7; Perspicacia «Amasías», núm. 2, y «Sela», núm. 2. Va entre 858, cuando empieza a reinar (A6-A), y la batalla
+  contra Jehoás de Israel, que murió c. 844.
+sources:
+- 2-reyes-14
+- it-amasias
+- it-sela
+- tnm-a6-a
+links:
+- title: 2 Reyes 14 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/14
+  type: bible
+- title: 'Perspicacia: «Amasías»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000224
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

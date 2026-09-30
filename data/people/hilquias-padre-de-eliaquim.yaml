@@ -9,6 +9,7 @@ summary: Padre de Eliaquim, el funcionario que Jehová puso sobre la casa del re
 reason: Perspicacia «Hilquías», núm. 3; Is 22:20; 36:3, 22; 2Re 18:18, 37.
 sources:
 - it-hilquias
+- 2-reyes-18
 - isaias-22
 - isaias-36
 links:
@@ -17,3 +18,5 @@ links:
   type: perspicacia
 checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- hilquias-hijo-de-salum

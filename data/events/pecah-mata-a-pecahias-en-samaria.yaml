@@ -1,0 +1,51 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pecah-mata-a-pecahias-en-samaria
+title: Pécah mata al rey Pecahías en Samaria
+date:
+  from: -777
+  to: -777
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 778 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 15025
+type: death
+places:
+- samaria
+people:
+- pecahias
+- pecah
+- argob
+- arie
+present:
+- pecahias
+- pecah
+- argob
+- arie
+roles:
+  pecahias: died
+passages:
+- 2Re 15:25
+summary: Pécah hijo de Remalías, oficial del rey, conspira con cincuenta hombres de Galaad y mata a Pecahías en la torre fortificada
+  del palacio. Nombra con el rey a Argob y Arié.
+reason: '2Re 15:23-26; Perspicacia «Peqahías», «Péqah», «Argob», núm. 1, y «Arieh», que ve posible que Argob y Arié murieran
+  con el rey. A6-B: Pécah reina hacia 778 a.e.c.'
+sources:
+- 2-reyes-15
+- it-peqahias
+- it-peqah
+- it-argob
+- it-arieh
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Péqah»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003415
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

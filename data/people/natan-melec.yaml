@@ -1,0 +1,21 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: natan-melec
+name: Natán-Mélec
+names:
+- name: Natán-Mélec
+perspicacia: '1200003186'
+summary: Funcionario de la corte de Judá con un cuarto en los pórticos del templo. Por allí entraban los caballos dedicados
+  al sol hasta que Josías lo impidió.
+reason: Perspicacia «Natán-mélec»; 2Re 23:11. La nota de la TNM da «comedor» como otra lectura de «cuarto».
+sources:
+- it-natan-melec
+- 2-reyes-23
+links:
+- title: 'Perspicacia: «Natán-mélec»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003186
+  type: perspicacia
+- title: 2 Reyes 23 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/23
+  type: bible
+checked_on: '2026-09-30'
+status: verified

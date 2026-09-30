@@ -58,8 +58,9 @@ relations:
   sources:
   - it-joaquin
   - 2-reyes-24
+  - 2-reyes-25
   reason: Pasó el resto de su vida desterrado en Babilonia (2Re 24:15; 25:27-30).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: kin
   person: josias
@@ -70,6 +71,55 @@ relations:
   reason: Mt 1:11 hace a Josías padre de Jeconías; la nota explica que era su abuelo, por medio de Jehoiaquim.
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: nehusta
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-nehusta
+  reason: '2Re 24:8: su madre se llamaba Nehustá.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-24
+  reason: '2Re 24:8: reinó tres meses en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: nabucodonosor-ii
+  word: custodian
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-joaquin
+  reason: '2Re 24:12, 15: Nabucodonosor lo tomó cautivo y lo desterró a Babilonia.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: sedequias
+  word: uncle
+  inferred: false
+  sources:
+  - 2-reyes-24
+  - it-sedequias
+  reason: 2Re 24:17 llama a Matanías, luego Sedequías, tío de Joaquín.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: evil-merodac
+  word: host
+  inferred: false
+  sources:
+  - 2-reyes-25
+  - it-evil-merodac
+  reason: '2Re 25:28-30: Evil-Merodac lo sacó de la prisión, le dio un trono de honor y lo sentó a su mesa el resto de su
+    vida.'
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: '1200002375'
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

@@ -1,0 +1,54 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: jehonadab-hijo-de-recab
+name: Jehonadab
+names:
+- name: Jehonadab
+perspicacia: 1200002379#2
+disambiguation: Hijo de Recab y compañero de Jehú; no es Jehonadab hijo de Simeá, sobrino de David.
+distinct_from:
+- jehonadab-hijo-de-simea
+summary: Hijo de Recab. Fue por su cuenta al encuentro de Jehú, le dio la mano y subió a su carro; en Samaria entró con él
+  en el templo de Baal. Sus descendientes, los recabitas, guardaron sus normas.
+reason: Perspicacia «Jehonadab», núm. 2; 2Re 10:15-23; Jer 35:6-19.
+sources:
+- it-jehonadab
+- 2-reyes-10
+links:
+- title: 'Perspicacia: «Jehonadab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002379
+  type: perspicacia
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
+  type: bible
+relations:
+- type: kin
+  person: recab-padre-de-jehonadab
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-10
+  - it-recab
+  reason: 2Re 10:15, 23 lo llaman hijo de Recab; Perspicacia «Recab», núm. 2, admite que fuera su padre o un antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: accompanies
+  person: jehu-de-israel
+  word: companion
+  date:
+    from: -904
+    to: -904
+    precision: year
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 905 a.e.c.
+  inferred: false
+  sources:
+  - 2-reyes-10
+  - it-jehonadab
+  reason: '2Re 10:15, 16, 23: sube al carro de Jehú, va con él a Samaria y entra a su lado en el templo de Baal; Perspicacia
+    «Jehonadab», núm. 2, lo llama su compañero.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
+status: verified

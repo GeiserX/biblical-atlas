@@ -16,6 +16,7 @@ distinct_from:
 - zacarias-profeta
 - zacarias-padre-de-juan
 - zacarias-hijo-de-jehoiada
+- zacarias-abuelo-de-ezequias
 - zacarias-hijo-de-jeberekias
 summary: Hijo de Jeroboán II y último rey de la dinastía de Jehú. Su reinado solo se confirmó hacia 792; seis meses después
   lo mató Salum.
@@ -39,8 +40,9 @@ relations:
   sources:
   - it-zacarias
   - 2-reyes-14
+  - 2-reyes-15
   reason: Hijo de Jeroboán II (2Re 14:29).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   status: verified
 - type: succeeds
   person: jeroboan-ii
@@ -52,5 +54,23 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:8: reinó sobre Israel en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: ibleam
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-ibleam
+  reason: '2Re 15:10: Salum lo mató en Ibleam.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: 1200004681#14
 checked_on: '2026-09-30'
 status: verified

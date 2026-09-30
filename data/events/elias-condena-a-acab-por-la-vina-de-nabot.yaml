@@ -18,15 +18,20 @@ places:
 present:
 - elias-profeta
 - acab
+- jehu-de-israel
+- bidcar
 people:
 - elias-profeta
 - acab
 - jezabel
+- jehu-de-israel
+- bidcar
 type: speech
 roles:
   elias-profeta: spoke
 passages:
 - 1Re 21:15-26
+- 2Re 9:25, 26
 summary: 'Acab baja a quedarse con la viña y allí lo encuentra Elías: los perros lamerán su sangre donde lamieron la de Nabot,
   su casa acabará como la de Jeroboán y los perros comerán a Jezabel en Jezreel.'
 reason: 'Perspicacia «Acab», núm. 1: en la tregua de tres años tras Afec, c. 924. «Elías», núm. 1: Acab muere unos tres años
@@ -39,6 +44,8 @@ sources:
 - it-nabot
 - it-jezabel
 - it-elias
+- it-jehu
+- 2-reyes-9
 links:
 - title: 1 Reyes 21 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/21

@@ -1,0 +1,39 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acaz-quema-a-su-hijo
+title: Acaz quema a su hijo en el fuego
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: durante el reinado de Acaz)'
+narrative_order:
+  series: 2-reyes
+  order: 16003
+places:
+- valle-de-hinon
+people:
+- acaz
+passages:
+- 2Re 16:3
+- 2Cr 28:3
+summary: 'Acaz imita a los reyes de Israel y a las naciones expulsadas: quema a su propio hijo en el fuego y hace sacrificios
+  en los lugares altos y bajo los árboles frondosos.'
+reason: 2Re 16:3, 4; 2Cr 28:3; Perspicacia «Acaz», núm. 1, pone esas ofrendas de sus hijos en el valle de Hinón. Sin año;
+  cae en su reinado, 762-746 a.e.c. (A6-B).
+sources:
+- 2-reyes-16
+- it-acaz
+- 2-cronicas-28
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Acaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000144
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

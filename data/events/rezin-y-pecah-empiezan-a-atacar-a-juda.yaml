@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: rezin-y-pecah-empiezan-a-atacar-a-juda
+title: Rezín y Pécah empiezan a atacar a Judá
+date:
+  from: -776
+  to: -761
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 777 y 762 a.e.c. (tiempo narrativo: a finales del reinado de Jotán)'
+narrative_order:
+  series: 2-reyes
+  order: 15037
+places:
+- juda
+people:
+- rezin-rey-de-siria
+- pecah
+- jotan
+present: []
+passages:
+- 2Re 15:37
+summary: En los últimos años de Jotán, Jehová empieza a mandar contra Judá a Rezín, rey de Siria, y a Pécah, rey de Israel.
+  La guerra sigue con Acaz.
+reason: '2Re 15:37; Perspicacia «Rezín», núm. 1, «Péqah» y «Jotán», núm. 3: el acoso empieza a finales del reinado de Jotán
+  (777-762 a.e.c., A6-B) y sigue bajo Acaz.'
+sources:
+- 2-reyes-15
+- it-rezin
+- it-peqah
+- it-jotan
+- tnm-a6-b
+links:
+- title: 2 Reyes 15 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/15
+  type: bible
+- title: 'Perspicacia: «Rezín»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003721
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

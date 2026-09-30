@@ -24,7 +24,8 @@ relations:
   reason: Mt 1:14.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - sadoc-hijo-de-ahitub
+- sadoc-abuelo-de-jotan

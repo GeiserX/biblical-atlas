@@ -30,6 +30,11 @@ sources:
 - 1-reyes-20
 - tnm-a6-a
 - 1-reyes-22
+- 2-reyes-5
+- it-naaman
+- 2-reyes-6
+- 2-reyes-8
+- it-eliseo
 links:
 - title: 'Perspicacia: «Ben-hadad»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000636
@@ -44,6 +49,8 @@ relations:
   sources:
   - 1-reyes-20
   - it-ben-hadad
+  - 2-reyes-6
+  - 2-reyes-8
   reason: '1Re 20:1: el rey Ben-Hadad de Siria.'
   inferred: false
   checked_on: '2026-09-30'
@@ -87,12 +94,41 @@ relations:
   inferred: true
   sources:
   - 1-reyes-20
-  - it-hazael
+  - 2-reyes-8
+  - it-eliseo
   - it-damasco
-  reason: '1Re 20:34: ofrece a Acab mercados en Damasco. Perspicacia «Hazael», párr. 3: enfermo, mandó a Hazael desde Damasco,
-    la ciudad principal de Siria (2Re 8:7).'
+  reason: '1Re 20:34: ofrece a Acab mercados en Damasco. En 2Re 8:7 Eliseo va a Damasco, donde el rey está enfermo; Perspicacia
+    «Eliseo» sitúa allí al rey moribundo.'
   checked_on: '2026-09-30'
   status: verified
+- type: tie
+  person: jehoram-de-israel
+  word: enemy
+  inferred: true
+  sources:
+  - 2-reyes-6
+  - it-ben-hadad
+  - it-jehoram
+  reason: '2Re 6:8, 24: el rey de Siria pelea contra Israel y sitia Samaria. Perspicacia «Ben-hadad», núm. 2, y «Jehoram»,
+    núm. 2, nombran a los dos reyes.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: damasco
+  inferred: true
+  sources:
+  - 2-reyes-8
+  - it-eliseo
+  - it-hazael
+  reason: '2Re 8:7-15: enfermo en Damasco, donde lo sitúa Perspicacia «Eliseo», Hazael lo asfixia con una colcha mojada al
+    día siguiente.'
+  checked_on: '2026-09-30'
+  status: verified
+history:
+- date: '2026-09-30'
+  change: La razón de lived_in damasco decía que el rey mandó a Hazael desde Damasco; Perspicacia «Hazael» dice que lo mandó
+    a Damasco. Se cita 2Re 8:7.
+  source: it-hazael
 checked_on: '2026-09-30'
 status: verified
 not_claimed:

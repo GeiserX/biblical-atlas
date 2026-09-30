@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: el-rey-devuelve-a-la-sunamita-su-casa-y-su-campo
+title: El rey devuelve a la sunamita su casa y su campo
+date:
+  from: -916
+  to: -904
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 917 y 905 a.e.c. (tiempo narrativo: en el reinado de Jehoram de Israel)'
+narrative_order:
+  series: 2-reyes
+  order: 4046
+places:
+- israel
+- filistea
+people:
+- jehoram-de-israel
+- guehazi
+present: []
+passages:
+- 2Re 8:3-6
+summary: Pasados los siete años, la mujer vuelve y pide al rey su casa y su campo. Guehazí le contaba justo cómo Eliseo resucitó
+  al hijo de ella, y el rey manda devolverle todo con lo que dio el campo.
+reason: '2Re 8:3-6; Perspicacia «Eliseo» nombra al rey, Jehoram (A6-A). Sin ciudad, nadie queda situado. Va antes de la lepra
+  de Guehazí; Perspicacia «Eliseo» lo pone como ejemplo de que el libro no sigue el orden de los hechos.'
+sources:
+- 2-reyes-8
+- it-eliseo
+- it-guehazi
+- it-sunamita
+- tnm-a6-a
+links:
+- title: 2 Reyes 8 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/8
+  type: bible
+- title: 'Perspicacia: «Guehazí»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001641
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

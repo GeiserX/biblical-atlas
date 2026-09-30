@@ -21,6 +21,7 @@ sources:
 - tnm-a6-a
 - mateo-1
 - 1-reyes-15
+- 2-reyes-3
 links:
 - title: 'Perspicacia: «Jehosafat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002383
@@ -97,6 +98,16 @@ relations:
     reinaba.
   checked_on: '2026-09-30'
   status: verified
+- type: tie
+  person: mesa-rey-de-moab
+  word: enemy
+  sources:
+  - 2-reyes-3
+  - it-mesa
+  reason: '2Re 3:7, 24: acepta ir a pelear contra el rey de Moab, que se había rebelado.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Jehosafat» y el estudio 3 daban 936 a.e.c.; la tabla A6-A, más reciente, da 937.
@@ -108,8 +119,11 @@ history:
   change: «Casi murió con él» podía leerse como con su hijo; fue al lado de Acab (1Re 22:29-33). Ramot-Galaad, como la TNM.
   source: 1-reyes-22
 perspicacia: 1200002383#3
+disambiguation: Rey de Judá, hijo de Asá; no es el padre de Jehú, ni el registrador hijo de Ahilud, ni el comisario hijo de
+  Parúah.
 checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jehosafat-hijo-de-ahilud
 - jehosafat-hijo-de-parua
+- jehosafat-hijo-de-nimsi

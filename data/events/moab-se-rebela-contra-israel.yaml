@@ -1,0 +1,38 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: moab-se-rebela-contra-israel
+title: Moab se rebela contra Israel
+date:
+  from: -919
+  to: -919
+  precision: year
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 920 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 1001
+places:
+- moab
+people:
+- mesa-rey-de-moab
+passages:
+- 2Re 1:1
+- 2Re 3:4, 5
+summary: Muerto Acab, Mesá, rey de Moab y criador de ovejas, deja de pagar a Israel su tributo de corderos y carneros. Ocozías,
+  que reina entonces, no hace nada por someterlo.
+reason: '2Re 1:1 la pone tras la muerte de Acab, cuando empieza Ocozías (c. 920, A6-A), y 2Re 3:4, 5 la vuelve a contar con
+  Mesá. Perspicacia «Ocozías», núm. 1: el rey no sometió a Moab.'
+sources:
+- 2-reyes-1
+- 2-reyes-3
+- tnm-a6-a
+- it-ocozias
+- it-moab
+- it-mesa
+links:
+- title: 2 Reyes 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/1
+  type: bible
+checked_on: '2026-09-30'
+status: verified

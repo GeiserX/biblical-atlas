@@ -21,6 +21,7 @@ sources:
 - openbible-geo
 - josue-4
 - josue-5
+- 2-reyes-25
 links:
 - title: 'Perspicacia: «Arabá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000325
@@ -28,5 +29,5 @@ links:
 - title: Josué 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/6/4
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

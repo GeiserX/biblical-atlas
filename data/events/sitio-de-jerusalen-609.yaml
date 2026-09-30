@@ -23,6 +23,8 @@ passages:
 - 2Re 25:1-2
 - Eze 24:1-2
 - Jer 39:1
+- 2Re 24:20
+- Jer 52:4-5
 summary: Sedequías se rebela y busca ayuda en Egipto. Nabucodonosor vuelve por tercera vez contra Judá y cerca Jerusalén el
   día 10 del mes décimo; parece que dirige la campaña desde Riblá.
 reason: El estudio 3 fecha el sitio en 609; Perspicacia «Sedequías», núm. 4, párr. 11, y «Riblá», núm. 2, párr. 3. El mes décimo
@@ -32,6 +34,7 @@ sources:
 - it-sedequias
 - it-ribla
 - 2-reyes-25
+- 2-reyes-24
 links:
 - title: 'Perspicacia: «Sedequías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004685
@@ -43,5 +46,8 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
   type: bible
 search: sitio de Jerusalén 609 Sedequías
-checked_on: '2026-09-28'
+narrative_order:
+  series: 2-reyes
+  order: 25001
+checked_on: '2026-09-30'
 status: verified

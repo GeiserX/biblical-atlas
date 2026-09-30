@@ -1,0 +1,24 @@
+# biblical-earth: un fichero por persona. Esquema en docs/investigacion/README.md.
+id: recab-padre-de-jehonadab
+name: Recab
+names:
+- name: Recab
+perspicacia: 1200003662#2
+disambiguation: Quenita, padre o antepasado de Jehonadab y de los recabitas; no es Recab hijo de Rimón, el asesino de Is-Bóset.
+distinct_from:
+- recab-hijo-de-rimon
+summary: Quenita del que toman nombre los recabitas. Fue padre de Jehonadab, el que acompañó a Jehú, o quizá un antepasado
+  suyo.
+reason: Perspicacia «Recab», núm. 2; 2Re 10:15, 23; 1Cr 2:55; Jer 35:6.
+sources:
+- it-recab
+- 2-reyes-10
+links:
+- title: 'Perspicacia: «Recab»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003662
+  type: perspicacia
+- title: 2 Reyes 10 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/10
+  type: bible
+checked_on: '2026-09-30'
+status: verified

@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: nabucodonosor-ejecuta-en-ribla-a-los-principales-de-jerusalen
+title: Nabucodonosor ejecuta en Riblá a los principales de Jerusalén
+date:
+  from: -606
+  to: -606
+  precision: year
+  approx: false
+  type: anchored
+  chronology: tnm
+  text: 607 a.e.c.
+narrative_order:
+  series: 2-reyes
+  order: 25018
+places:
+- ribla
+people:
+- seraya-hijo-de-azarias
+- sofonias-hijo-de-maaseya
+- nebuzaradan
+- nabucodonosor-ii
+type: death
+roles:
+  seraya-hijo-de-azarias: died
+  sofonias-hijo-de-maaseya: died
+passages:
+- 2Re 25:18-21
+- Jer 52:24-27
+summary: Nebuzaradán lleva a Riblá al sacerdote principal Seraya, al segundo sacerdote Sofonías, a tres porteros, a varios
+  oficiales del rey y a sesenta hombres del pueblo. Nabucodonosor los manda matar allí.
+reason: Perspicacia «Riblá», núm. 2, pone su muerte poco después del juicio de Sedequías; «Seraya», núm. 6, la fecha en 607
+  a.e.c.
+sources:
+- 2-reyes-25
+- it-ribla
+- it-seraya
+- it-sofonias
+- it-nebuzaradan
+links:
+- title: 'Perspicacia: «Seraya»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003904
+  type: perspicacia
+- title: 2 Reyes 25 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
+  type: bible
+checked_on: '2026-09-30'
+status: verified

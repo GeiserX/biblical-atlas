@@ -1,6 +1,6 @@
 # biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: asesinato-de-guedalias
-title: Asesinan a Guedalías y el resto huye a Egipto
+title: Ismael asesina a Guedalías en Mizpá
 date:
   from: -606
   to: -606
@@ -13,26 +13,24 @@ date:
     month: tisri
 places:
 - mizpa-de-benjamin
-- egipto
 people:
 - guedalias
-- jeremias-profeta
+- ismael-hijo-de-netanias
 type: death
 roles:
   guedalias: died
 passages:
-- 2Re 25:22-26
+- 2Re 25:25
 - Jer 41:1-3
-- Jer 43:4-7
-summary: En el mes séptimo, Ismael mata en Mizpá al gobernador Guedalías. Por miedo a Babilonia, los judíos que quedaban huyen
-  a Egipto y se llevan a Jeremías.
-reason: 'Estudio 3, párr. 6: desde entonces, hacia el 1 de octubre de 607, la tierra quedó desolada. Perspicacia «Guedalías»,
-  núm. 4, párr. 4-5. El séptimo mes es tisri.'
+summary: En el mes séptimo, Ismael, de linaje real, llega a Mizpá con diez hombres. Durante una comida matan al gobernador
+  Guedalías y a los judíos y soldados caldeos que lo acompañaban.
+reason: 'Estudio 3, párr. 6: el asesinato fue en el mes séptimo de 607, tisri. Perspicacia «Guedalías», núm. 4, e «Ismael»,
+  núm. 5.'
 sources:
 - si-3
 - it-guedalias
+- it-ismael
 - 2-reyes-25
-- jeremias-43
 - jeremias-41
 links:
 - title: 'Perspicacia: «Guedalías»'
@@ -42,5 +40,30 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/25
   type: bible
 search: Guedalías asesinado Mizpá
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: La huida a Egipto pasa a su propio suceso, el-resto-de-juda-huye-a-egipto (2Re 25:26; Jer 43:4-7).
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: Egipto pasa al suceso de la huida.
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: Entra Ismael, que lo mató (2Re 25:25); Jeremías pasa a la huida a Egipto, donde lo nombra Jer 43:6.
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: '2Re 25:22-24 es el nombramiento de Guedalías, y 2Re 25:26 con Jer 43:4-7 la huida: sucesos aparte.'
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: El resumen cuenta solo el asesinato; la huida a Egipto es otro suceso.
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: La razón deja la desolación de la tierra al suceso de la huida y cita a Perspicacia «Ismael».
+  source: 2-reyes-25
+- date: '2026-09-30'
+  change: Sale jeremias-43, que pasa a la huida a Egipto; entra it-ismael.
+  source: 2-reyes-25
+narrative_order:
+  series: 2-reyes
+  order: 25025
+checked_on: '2026-09-30'
 status: verified

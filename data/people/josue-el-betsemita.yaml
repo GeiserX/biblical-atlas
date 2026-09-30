@@ -8,6 +8,7 @@ disambiguation: Josué el betsemita, dueño del campo donde paró el Arca; no Jo
 distinct_from:
 - josue-hijo-de-nun
 - josue-sumo-sacerdote
+- josue-jefe-de-jerusalen
 date:
   from: -1179
   to: -1116
@@ -39,5 +40,5 @@ relations:
   reason: 1Sa 6:14, 18 lo llama el betsemita y pone su campo en Bet-Semes.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

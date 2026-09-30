@@ -47,6 +47,7 @@ __pycache__/
 .DS_Store
 /site/data.js
 /site/_local/
+/site/docs/
 
 # Beads / Dolt files (added by bd init)
 .dolt/

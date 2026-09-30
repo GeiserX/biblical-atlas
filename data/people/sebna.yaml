@@ -3,14 +3,16 @@ id: sebna
 name: Sebná
 names:
 - name: Sebná
+- name: Sebnah
+  note: Otra grafía, según la nota de 2Re 18:18.
 perspicacia: '1200003975'
 summary: Mayordomo de la casa real en tiempos de Ezequías. Isaías le anunció que perdería el puesto por labrarse un sepulcro
   llamativo; en 732 a.e.c. seguía sirviendo al rey como secretario.
 reason: Perspicacia «Sebná, Sebnah»; Is 22:15-19; 2Re 18:18, 37; Is 36:3.
-not_claimed:
-- 'Que Sebná muriera desterrado: «Las profecías de Isaías I» dice que no consta cómo se cumplió Is 22:18.'
 sources:
 - it-sebna
+- 2-reyes-18
+- 2-reyes-19
 - isaias-22
 - ip1-18
 - isaias-36
@@ -20,13 +22,21 @@ links:
 - title: 'Perspicacia: «Sebná, Sebnah»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003975
   type: perspicacia
+- title: 2 Reyes 18 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/18
+  type: bible
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
 relations:
 - type: tie
   person: ezequias
   word: master
   inferred: false
   sources:
+  - 2-reyes-18
   - it-sebna
+  - 2-reyes-19
   - isaias-22
   - isaias-36
   - isaias-37
@@ -48,3 +58,5 @@ relations:
   status: verified
 checked_on: '2026-09-30'
 status: verified
+not_claimed:
+- 'Que Sebná muriera desterrado: «Las profecías de Isaías I» dice que no consta cómo se cumplió Is 22:18.'

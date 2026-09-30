@@ -1,0 +1,28 @@
+# biblical-earth: un fichero por lugar. Esquema en docs/investigacion/README.md.
+id: rio-abana
+name: Río Abaná
+names:
+- name: Río Abaná
+type: river
+lat: 33.513542
+lon: 36.305
+precision: zone
+coord_source: openbible:aea17b7
+coord_url: https://www.openbible.info/geo/ancient/aea17b7/abana
+coord_note: Punto representativo de OpenBible para el Barada, el río con el que Perspicacia lo identifica.
+summary: Río de Damasco que, con el Farpar, Naamán tenía por mejor que el Jordán. Suele identificarse con el Barada, que baja
+  del Antilíbano, pasa por la ciudad y riega su oasis.
+reason: 'Perspicacia «Abaná», párr. 1 y 2; 2Re 5:12. OpenBible: solo tomamos el punto.'
+sources:
+- it-abana
+- openbible-geo
+- 2-reyes-5
+links:
+- title: 'Perspicacia: «Abaná»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000009
+  type: perspicacia
+- title: 2 Reyes 5 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/5
+  type: bible
+checked_on: '2026-09-30'
+status: verified

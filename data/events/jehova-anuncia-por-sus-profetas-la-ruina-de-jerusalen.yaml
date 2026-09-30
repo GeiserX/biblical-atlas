@@ -1,0 +1,43 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: jehova-anuncia-por-sus-profetas-la-ruina-de-jerusalen
+title: Jehová anuncia por sus profetas la ruina de Jerusalén
+date:
+  from: -715
+  to: -660
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 716 y 661 a.e.c. (tiempo narrativo: durante el reinado de Manasés)'
+narrative_order:
+  series: 2-reyes
+  order: 21010
+type: speech
+roles: {}
+places:
+- jerusalen
+- juda
+people:
+- manases-de-juda
+present: []
+passages:
+- 2Re 21:10-15
+- 2Cr 33:10
+summary: Por los pecados de Manasés, Jehová avisa por medio de sus profetas que medirá Jerusalén como a Samaria y a la casa
+  de Acab, la vaciará como un tazón y dejará al resto de su pueblo en manos enemigas.
+reason: '2Re 21:10-15. Los profetas no tienen nombre, así que nadie lleva el papel de hablar y el suceso no sitúa a nadie.
+  Perspicacia «Manasés», núm. 4: el rey no les hizo caso.'
+sources:
+- 2-reyes-21
+- 2-cronicas-33
+- it-manases
+- tnm-a6-b
+links:
+- title: 2 Reyes 21 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/21
+  type: bible
+- title: 'Perspicacia: «Manasés»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002882
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

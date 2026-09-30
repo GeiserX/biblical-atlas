@@ -9,10 +9,9 @@ perspicacia: '1200004422'
 summary: Rey etíope que gobernaba Egipto en tiempos de Ezequías y salió a luchar contra Senaquerib cuando este atacaba Libná.
   «Las profecías de Isaías I» lo da como el faraón del que se burla el rabsaqué.
 reason: Perspicacia «Tirhaqá»; Is 37:9; 2Re 19:9. «Las profecías de Isaías I», cap. 29, párr. 8, sobre Is 36:6.
-not_claimed:
-- 'Que sea con seguridad el Taharka de los historiadores: Perspicacia dice que las fechas que ellos le dan no cuadran con
-  la cronología bíblica.'
 sources:
+- it-tirhaca
+- 2-reyes-19
 - it-tirhaqa
 - ip1-29
 - isaias-36
@@ -21,19 +20,27 @@ links:
 - title: 'Perspicacia: «Tirhaqá»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200004422
   type: perspicacia
+- title: 2 Reyes 19 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/19
+  type: bible
 - title: Isaías 36 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/23/36
   type: bible
-checked_on: '2026-09-30'
-status: verified
 relations:
 - type: holds_office
-  place: etiopia
   office: king
-  inferred: false
+  place: etiopia
   sources:
+  - 2-reyes-19
+  - it-tirhaca
   - isaias-37
   - it-tirhaqa
   reason: Is 37:9 lo llama rey de Etiopía; Perspicacia «Tirhaqá» añade que era el soberano etíope que gobernaba Egipto.
+  inferred: false
   checked_on: '2026-09-30'
   status: verified
+checked_on: '2026-09-30'
+status: verified
+not_claimed:
+- 'Que sea con seguridad el Taharka de los historiadores: Perspicacia dice que las fechas que ellos le dan no cuadran con
+  la cronología bíblica.'

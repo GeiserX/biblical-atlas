@@ -1,0 +1,42 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: acaz-desmonta-objetos-del-templo
+title: Acaz desmonta objetos del templo
+date:
+  from: -761
+  to: -745
+  precision: range
+  approx: true
+  type: narrative
+  chronology: tnm
+  text: 'entre 762 y 746 a.e.c. (tiempo narrativo: durante el reinado de Acaz)'
+narrative_order:
+  series: 2-reyes
+  order: 16017
+places:
+- jerusalen
+- monte-moria
+people:
+- acaz
+- tiglat-pileser-iii
+present:
+- acaz
+passages:
+- 2Re 16:17, 18
+- 2Cr 28:24
+summary: Por causa del rey de Asiria, Acaz despieza los carritos del templo y les quita las palanganas, pone el Mar sobre
+  un suelo de piedra y retira la estructura del sábado y la entrada del rey.
+reason: '2Re 16:17, 18; 2Cr 28:24; Perspicacia «Acaz», núm. 1: quizá para pagar el tributo o esconder riquezas de los asirios.
+  Sin año; cae en su reinado (762-746 a.e.c., A6-B).'
+sources:
+- 2-reyes-16
+- it-acaz
+- tnm-a6-b
+links:
+- title: 2 Reyes 16 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/16
+  type: bible
+- title: 'Perspicacia: «Acaz»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000144
+  type: perspicacia
+checked_on: '2026-09-30'
+status: verified

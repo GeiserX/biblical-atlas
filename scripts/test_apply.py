@@ -515,6 +515,55 @@ class Prueba(unittest.TestCase):
         cob = read_yaml(a / "coverage" / "prueba.yaml")["chapters"][1]["spans"][0]["entities"]
         self.assertEqual(cob, ["person:ciro", "relation:cambises-ii/kin/ciro"])
 
+    # -- claves nuevas del modelo (new_keys de scripts/migration/map.yaml), que no tienen nombre antiguo
+    EVENTO = """# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: muerte
+title: Muere Ana
+places:
+- aldea
+people:
+- ana
+roles: {}
+summary: Prueba.
+reason: Prueba.
+sources: [f-comun]
+checked_on: '2026-01-01'
+status: verified
+"""
+
+    def roles_proposal(self, tipo, ficha, campo):
+        return propuesta(1, [{"op": "cambiar", "tipo": tipo, "id": ficha, "campo": campo, "antes": {},
+                              "despues": {"ana": "died"},
+                              "historial": {"fecha": "2026-09-30", "cambio": "Ana muere en la escena.",
+                                            "fuente": "f-comun"}}], leido="2026-09-30")
+
+    def test_change_of_roles_on_an_event_applies(self):
+        a = self.data("a")
+        (a / "events").mkdir()
+        for tipo in ("eventos", "events"):
+            with self.subTest(tipo=tipo):
+                (a / "events" / "muerte.yaml").write_text(self.EVENTO, encoding="utf-8")
+                codigo, salida = self.correr(a, self.roles_proposal(tipo, "muerte", "roles"))
+                self.assertEqual(codigo, 0, salida)
+                ev = read_yaml(a / "events" / "muerte.yaml")
+                self.assertEqual(ev["roles"], {"ana": "died"})
+                self.assertEqual(ev["history"], [{"date": "2026-09-30", "change": "Ana muere en la escena.",
+                                                  "source": "f-comun"}])
+
+    def test_a_wrong_new_key_still_stops(self):
+        """El control de la anterior: una clave que no está en el mapa, o una clave nueva en una carpeta que no la
+        tiene, sigue parando la propuesta sin escribir nada."""
+        a = self.data("a")
+        (a / "events").mkdir()
+        (a / "events" / "muerte.yaml").write_text(self.EVENTO, encoding="utf-8")
+        for tipo, ficha, campo in (("eventos", "muerte", "rolez"), ("personas", "ana", "roles")):
+            with self.subTest(campo=campo, tipo=tipo):
+                codigo, salida = self.correr(a, self.roles_proposal(tipo, ficha, campo))
+                self.assertEqual(codigo, 1, salida)
+                self.assertIn(f"el campo «{campo}» no está en el mapa", salida)
+                self.assertEqual((a / "events" / "muerte.yaml").read_text(encoding="utf-8"), self.EVENTO)
+                self.assertEqual((a / "people" / "ana.yaml").read_text(encoding="utf-8"), ANA)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
