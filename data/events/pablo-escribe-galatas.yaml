@@ -1,0 +1,47 @@
+# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+id: pablo-escribe-galatas
+title: Pablo escribe de su mano la carta a los Gálatas
+date:
+  from: 50
+  to: 52
+  precision: range
+  approx: true
+  type: anchored
+  chronology: tnm
+  text: c. 50-52 e.c.
+narrative_order:
+  series: hechos
+  order: 1811
+places:
+- corinto
+- antioquia-de-siria
+- galacia
+people:
+- pablo
+present: []
+passages:
+- Gál 1:1, 2
+- Gál 6:11
+summary: 'Pablo, con los hermanos que lo acompañan, escribe a las congregaciones de Galacia para frenar a quienes les exigían
+  circuncidarse. Esta vez no dicta a un secretario: según la nota de 6:11, la escribe él mismo.'
+reason: 'Tabla: en Corinto o en Antioquía de Siria, c. 50-52. Perspicacia «Gálatas» prefiere Corinto (otoño de 50 a primavera de
+  52; estudio 3, párr. 24: principios de 52), admite Antioquía hacia 52 y ve improbable Éfeso. No situamos a nadie.'
+sources:
+- galatas-1
+- galatas-6
+- tnm-tabla
+- it-galatas
+- si-3
+links:
+- title: Gálatas 1 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1
+  type: bible
+- title: Gálatas 6 (TNM)
+  url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/6
+  type: bible
+- title: 'Perspicacia: «Gálatas, Carta a los»'
+  url: https://wol.jw.org/es/wol/d/r4/lp-s/1200001595
+  type: perspicacia
+search: Pablo escribe carta Gálatas
+checked_on: '2026-09-29'
+status: verified

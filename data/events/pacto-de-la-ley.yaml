@@ -17,8 +17,10 @@ passages:
 - Éx 24:3-8
 - Gál 3:17
 - Dt 5:2, 3
-summary: Al pie del Sinaí, Israel acepta el pacto de la Ley con Moisés como mediador. Se cumplen justo 430 años desde que
-  entró en vigor el pacto con Abrahán.
+- Gál 3:19
+- Gál 4:24, 25
+summary: Al pie del Sinaí, en el tercer mes tras salir de Egipto, Israel acepta el pacto de la Ley con Moisés como mediador.
+  El plazo de 430 años desde el pacto con Abrahán se cumplió el día del éxodo.
 reason: El cuadro del estudio 3 pone el pacto de la Ley en 1513 a.e.c.; Perspicacia «Pacto» explica los 430 años de Gálatas
   3:17 y el papel de Moisés.
 sources:
@@ -26,9 +28,15 @@ sources:
 - it-pacto
 - exodo-24
 - deuteronomio-5
+- galatas-3
 search: pacto de la Ley Sinaí
 narrative_order:
   series: exodo
   order: 24003
+history:
+- date: '2026-09-29'
+  change: Decía que el pacto de la Ley cumplía justo 430 años. La nota de Gál 3:17 cierra ese plazo el 14 de nisán, día del
+    éxodo, y Perspicacia «Pacto» pone el pacto en el tercer mes.
+  source: galatas-3
 checked_on: '2026-09-29'
 status: verified

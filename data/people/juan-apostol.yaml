@@ -57,6 +57,7 @@ sources:
 - hechos-4
 - hechos-5
 - hechos-8
+- galatas-2
 distinct_from:
 - juan-el-bautista
 - juan-marcos
@@ -196,6 +197,25 @@ relations:
   - it-juan
   reason: Jn 1:35-40 no da el nombre del otro discípulo de Juan que siguió a Jesús; la nota del v. 40 y Perspicacia «Juan»,
     núm. 3 (párr. 23), creen que era él.
+  checked_on: '2026-09-29'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  date:
+    from: 33
+    to: 49
+    precision: range
+    approx: true
+    type: anchored
+    chronology: tnm
+    text: c. 33-49 e.c.
+  inferred: true
+  sources:
+  - it-juan
+  - galatas-2
+  - si-3
+  reason: 'Perspicacia «Juan», párr. 30: cuando se dispersa a los discípulos tras la muerte de Esteban, él y los apóstoles
+    siguen en Jerusalén; hacia 49 es una de las columnas de aquella congregación (Gál 2:9).'
   checked_on: '2026-09-29'
   status: verified
 links:

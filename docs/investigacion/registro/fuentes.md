@@ -183,6 +183,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | cantar-de-los-cantares-7 | [El Cantar de los Cantares 7](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/7) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | cantar-de-los-cantares-8 | [El Cantar de los Cantares 8](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/22/8) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | colosenses-1 | [Colosenses 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| colosenses-2 | [Colosenses 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | colosenses-4 | [Colosenses 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-1 | [Daniel 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | daniel-10 | [Daniel 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/27/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -228,7 +229,11 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | eclesiastes-1 | [Eclesiastés 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-12 | [Eclesiastés 12](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/12) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | eclesiastes-2 | [Eclesiastés 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/21/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-1 | [Efesios 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-2 | [Efesios 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | efesios-3 | [Efesios 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
+| efesios-4 | [Efesios 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| efesios-6 | [Efesios 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/49/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-1 | [Esdras 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-2 | [Esdras 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | esdras-3 | [Esdras 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/15/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -286,6 +291,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | filemon-1 | [Filemón](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/57/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | filipenses-1 | [Filipenses 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | filipenses-2 | [Filipenses 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| filipenses-3 | [Filipenses 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | filipenses-4 | [Filipenses 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/50/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | g10-egipto | [Un libro digno de confianza. Primera parte](https://wol.jw.org/es/wol/d/r4/lp-s/102010407) | ¡Despertad! (noviembre de 2010) | 1 | 2010 | 2026-09-28 |
 | g90-meroe | [Meroe: testimonio de una grandeza olvidada](https://wol.jw.org/es/wol/d/r4/lp-s/101990450) | ¡Despertad! (22 de junio de 1990) | 1 | 1990 | 2026-09-29 |
@@ -293,6 +299,10 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | g99-monte-sinai | [El monte Sinaí: una joya en el desierto](https://wol.jw.org/es/wol/d/r4/lp-s/101999285) | ¡Despertad! (1999) | 1 | 1999 | 2026-09-28 |
 | galatas-1 | [Gálatas 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | 2026-09-27 |
 | galatas-2 | [Gálatas 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/2) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-3 | [Gálatas 3](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/3) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-4 | [Gálatas 4](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/4) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-5 | [Gálatas 5](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/5) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
+| galatas-6 | [Gálatas 6](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/48/6) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-1 | [Génesis 1](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/1) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-10 | [Génesis 10](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/10) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
 | genesis-11 | [Génesis 11](https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/11) | La Biblia. Traducción del Nuevo Mundo (edición de estudio) | 1 | sin dato | implícita |
@@ -790,6 +800,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-ciudades-levitas | [Ciudades levitas](https://wol.jw.org/es/wol/d/r4/lp-s/1200002730) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-claudio | [Claudio](https://wol.jw.org/es/wol/d/r4/lp-s/1200000987) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-claudio-lisias | [Claudio Lisias](https://wol.jw.org/es/wol/d/r4/lp-s/1200000988) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
+| it-clemente | [Clemente](https://wol.jw.org/es/wol/d/r4/lp-s/1200000991) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-cleopas | [Cleopas](https://wol.jw.org/es/wol/d/r4/lp-s/1200000992) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-cloe | [Cloe](https://wol.jw.org/es/wol/d/r4/lp-s/1200000964) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-clopas | [Clopas](https://wol.jw.org/es/wol/d/r4/lp-s/1200000993) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
@@ -1484,6 +1495,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-mar-rojo | [Mar Rojo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003669) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mar-salado | [Mar Salado](https://wol.jw.org/es/wol/d/r4/lp-s/1200003813) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-marah | [Marah](https://wol.jw.org/es/wol/d/r4/lp-s/1200002897) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-marca | [Marca](https://wol.jw.org/es/wol/d/r4/lp-s/1200002903) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-marcos | [Marcos](https://wol.jw.org/es/wol/d/r4/lp-s/1200002902) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-27 |
 | it-mardoqueo | [Mardoqueo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003111) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-mareal | [Mareal](https://wol.jw.org/es/wol/d/r4/lp-s/1200002899) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
@@ -1634,6 +1646,7 @@ Las fuentes de `data/sources/*.yaml`. Los capítulos de la Biblia que nadie escr
 | it-niger | [Niger](https://wol.jw.org/es/wol/d/r4/lp-s/1200003252) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nilo | [Nilo](https://wol.jw.org/es/wol/d/r4/lp-s/1200003255) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-nimra | [Nimrá](https://wol.jw.org/es/wol/d/r4/lp-s/1200003257) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
+| it-ninfa | [Ninfa](https://wol.jw.org/es/wol/d/r4/lp-s/1200003284) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |
 | it-ninive | [Nínive](https://wol.jw.org/es/wol/d/r4/lp-s/1200003261) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-nisan | [Nisán](https://wol.jw.org/es/wol/d/r4/lp-s/1200003262) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-28 |
 | it-no-amon | [No, No-amón](https://wol.jw.org/es/wol/d/r4/lp-s/1200003264) | Perspicacia para comprender las Escrituras | 1 | sin dato | 2026-09-29 |

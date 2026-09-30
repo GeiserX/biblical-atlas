@@ -851,6 +851,21 @@ def escribir_json(salida, rutas, ruta_js):
     ruta_js.write_text(js, encoding="utf-8")
 
 
+CONTADOS = ("lugares", "personas", "eventos", "periodos", "cartas", "viajes", "hallazgos", "recorridos", "fuentes", "libros")
+
+
+def resumen(salida):
+    """Cuántas fichas hay de cada tipo. Lo leen las insignias del README a través de site/stats.json."""
+    r = {"generado": salida["generado"]}
+    r.update({k: len(salida[k]) for k in CONTADOS})
+    return r
+
+
+def escribir_resumen(salida, ruta):
+    ruta.parent.mkdir(parents=True, exist_ok=True)
+    ruta.write_text(json.dumps(resumen(salida), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def _fecha_cols(f):
     f = f or {}
     return (f.get("desde"), f.get("hasta"), f.get("precision"), int(bool(f.get("aprox"))), f.get("tipo"), f.get("texto"))
@@ -1283,7 +1298,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Compila data/ en dist/, site/data.json, site/data.js y el registro de investigación.")
     ap.add_argument("--data", default=str(RAIZ / "data"), help="directorio de datos (por defecto data/)")
     ap.add_argument("--out", "--salida", dest="out", default=None,
-                    help="escribe data.json, data.js, biblical-earth.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
+                    help="escribe data.json, data.js, stats.json, biblical-earth.sqlite y registro/ en DIR en vez de site/, dist/ y docs/")
     args = ap.parse_args(argv)
     datos, _ = cargar(args.data)
     errores = integridad(datos)
@@ -1298,11 +1313,13 @@ def main(argv=None):
     if args.out:
         destino = Path(args.out).resolve()
         escribir_json(salida, [destino / "data.json"], destino / "data.js")
+        escribir_resumen(salida, destino / "stats.json")
         n_hf = escribir_sqlite(salida, destino / "biblical-earth.sqlite")
         escribir_registro(salida, legado, datos, destino / "registro")
         donde = f" en {destino}"
     else:
         escribir_json(salida, [RAIZ / "dist" / "data.json", RAIZ / "site" / "data.json"], RAIZ / "site" / "data.js")
+        escribir_resumen(salida, RAIZ / "site" / "stats.json")
         n_hf = escribir_sqlite(salida, RAIZ / "dist" / "biblical-earth.sqlite")
         escribir_registro(salida, legado, datos, RAIZ / "docs" / "investigacion" / "registro")
         donde = ""

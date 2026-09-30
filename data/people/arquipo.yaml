@@ -23,7 +23,13 @@ links:
 - title: Colosenses 4 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/51/4
   type: bible
-checked_on: '2026-09-28'
+perspicacia: '1200000348'
+history:
+- date: '2026-09-29'
+  change: 'La relación con Filemón decía «quizás hijo», que en esta ficha hacía a Filemón hijo de Arquipo. Perspicacia «Filemón»
+    ve posible lo contrario: pasa a «quizás padre». La de Colosas cita Col 4:17.'
+  source: it-filemon
+checked_on: '2026-09-29'
 status: verified
 relations:
 - type: lived_in
@@ -31,8 +37,9 @@ relations:
   inferred: true
   sources:
   - it-arquipo
-  reason: Perspicacia deduce de las dos cartas que vivía en Colosas o cerca.
-  checked_on: '2026-09-28'
+  - colosenses-4
+  reason: Perspicacia deduce de las dos cartas que vivía en Colosas o cerca (Col 4:17; Flm 2).
+  checked_on: '2026-09-29'
   status: verified
 - type: kin
   person: filemon
