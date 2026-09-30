@@ -1,4 +1,4 @@
-/* biblical-earth · filas de la línea de tiempo: cada marca reserva el sitio de su dibujo y de su nombre, y la primera
+/* biblical-atlas · filas de la línea de tiempo: cada marca reserva el sitio de su dibujo y de su nombre, y la primera
    fila libre de su carril se la queda. Ningún nombre se tapa ni se corta. Sin DOM: todo lo que usa llega como argumento,
    así que se prueba en node (tests/site/timeline-rows.test.mjs). linea.js lo usa a través de BE.filas.
 

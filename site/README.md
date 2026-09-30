@@ -229,11 +229,7 @@ BE.tipo('lugar', {
 
 ### Marcos que cambian de tamaño
 
-<<<<<<< HEAD
-Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-earth:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana. En la pantalla ancha la línea abre alta (`min(62vh, 600px)`) si la ventana mide 840 px de alto o más, para que al mapa le queden unos 260 px; en una pantalla más baja abre con su alto normal y la T, el botón o el separador la suben. Con el grafo o la conexión abiertos, la línea alta de inicio les deja su sitio; pedida con la T, se ve alta también con ellos. Un alto arrastrado en esta sesión gana al recargar.
-=======
-Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-atlas:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana.
->>>>>>> origin/main
+Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-atlas:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana. En la pantalla ancha la línea abre alta (`min(62vh, 600px)`) si la ventana mide 840 px de alto o más, para que al mapa le queden unos 260 px; en una pantalla más baja abre con su alto normal y la T, el botón o el separador la suben. Con el grafo o la conexión abiertos, la línea alta de inicio les deja su sitio; pedida con la T, se ve alta también con ellos. Un alto arrastrado en esta sesión gana al recargar.
 
 ### Móvil, tableta y dedo
 

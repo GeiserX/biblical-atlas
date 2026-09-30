@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-/* biblical-earth · línea de tiempo: de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen de los datos
+/* biblical-atlas · línea de tiempo: de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen de los datos
    (eras, imperios, reyes, personas, cartas, sucesos, meses hebreos, fechas seculares), densidad, minimapa, regla, bucle,
    marcadores, pausa en los sucesos, escribir la fecha y gestos (rueda, arrastre, pinza). Cada carril crece en filas para
    que todo nombre se lea entero (linea-filas.js); cada marca es un botón. Pulsar una marca la elige y el cursor entra en
    ella por el punto señalado: ni la escala ni la vista se mueven.
-=======
-/* biblical-atlas · línea de tiempo (SVG propio): de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen
-   de los datos (eras, imperios, reyes, personas, cartas, sucesos, meses hebreos, fechas seculares), densidad, minimapa,
-   regla, bucle, marcadores, pausa en los sucesos, escribir la fecha y gestos (rueda, arrastre, pinza).
->>>>>>> origin/main
    Dueño durante el reparto: app-tiempo. */
 'use strict';
 (() => {
