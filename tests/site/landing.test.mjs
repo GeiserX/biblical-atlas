@@ -370,36 +370,6 @@ test('Back before the data: the landing comes back without «Abriendo el mapa…
   assert.deepEqual(page.pageErrors, []);
 });
 
-test('a shared link gets one line saying what it shows, once per session, with the landing one press away', async () => {
-  for (const screen of [DESKTOP, PHONE]) {
-    const page = await openPage(screen, { hash: 'sel=persona:pedro&t=30.5000' });
-    const cinta = page.locator('#cinta');
-    await cinta.waitFor();
-    assert.match(await cinta.innerText(), screen === PHONE ? /biblical-earth · Pedro, 30 e\.c\./ : /Estás viendo a Pedro en 30 e\.c\. en biblical-earth/);
-    for (const b of await cinta.locator('button').all()) assert.ok((await b.boundingBox()).height >= 44);
-    // The site below keeps its layout, 44 px shorter: the top bar starts under the line.
-    assert.equal(Math.round((await page.locator('.be-topbar').boundingBox()).y), 44);
-    const before = await state(page);
-    await cinta.getByText('Ver la portada').click();
-    await settle(page);
-    const s = await state(page);
-    assert.deepEqual([s.up, s.hist, await cinta.isVisible()], [true, before.hist + 1, false]);
-    await page.goBack();
-    await settle(page);
-    assert.deepEqual([(await state(page)).up, (await state(page)).sel], [false, 'persona:pedro']);
-    // Once per session: the same tab opening another link does not show it again.
-    await page.evaluate(() => { location.hash = '#sel=lugar:corinto'; location.reload(); });
-    await page.waitForFunction(() => window.BE?.D && window.__be, null, { timeout: 30000 });
-    await settle(page);
-    assert.equal(await page.locator('#cinta').isVisible(), false);
-    assert.deepEqual(page.pageErrors, []);
-  }
-  // A cold open shows the landing, never the line.
-  const cold = await openPage();
-  await settle(cold);
-  assert.equal(await cold.locator('#cinta').isVisible(), false);
-});
-
 test('«Seguir donde lo dejaste» holds the last view, applies it exactly, and «Olvidar» forgets it', async () => {
   const page = await openPage(DESKTOP, { hash: 'sel=lugar:corinto&t=50.5000' });
   await page.evaluate(() => { window.BE.seleccionar({ tipo: 'persona', id: 'pablo' }, { mover: false, encuadrar: false }); });

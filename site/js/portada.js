@@ -77,7 +77,6 @@ function mostrar(on) {
 function abrir({ desdeHash = false } = {}) {
   if (abierta) return;
   abierta = true;
-  quitarCinta();
   mostrar(true);
   pintarDatos();
   if (!desdeHash) BE.guardarHash();
@@ -368,31 +367,7 @@ function pintarDatos() {
   if (document.activeElement === input && input.value.trim()) actualizar();   // lo escrito antes de los datos
 }
 // Con los datos, nada sigue «Abriendo el mapa…»: si la dirección es un destino, el arranque quita la hoja al leerla.
-// Sin la portada (se llegó por un enlace), la cinta se pone cuando el arranque ya ha leído la dirección.
-BE.inicios.push(() => { soltarEspera(); if (abierta) pintarDatos(); else setTimeout(ponerCinta, 0); });
-
-// ---------------------------------------------------------------------------
-// Quien llega por un enlace compartido: una línea que dice qué está viendo y dónde está la portada, una vez por sesión
-// ---------------------------------------------------------------------------
-const CLAVE_CINTA = 'biblical-earth:cinta';
-const cinta = $('#cinta');
-function quitarCinta() { cinta.hidden = true; raiz.classList.remove('be-cinta'); }
-function ponerCinta() {
-  if (abierta) return;
-  try { if (sessionStorage.getItem(CLAVE_CINTA)) return; sessionStorage.setItem(CLAVE_CINTA, '1'); } catch { return; }
-  const leer = !E.sel && BE.lectura?.abierta && new URLSearchParams(location.hash.slice(1)).get('leer');
-  const p = leer && BE.pasajeDeId?.(leer);
-  const nombre = E.sel ? BE.nombreSel(E.sel) : (p ? `${p.libro.nombre} ${p.cap}` : '');
-  const anio = BE.fmtAnio(Math.floor(E.t));
-  const que = nombre ? `${E.sel?.tipo === 'persona' ? 'a ' : ''}${nombre} en ${anio}` : `el mapa en ${anio}`;
-  $('#cinta-texto').innerHTML = `<span class="cinta__largo">Estás viendo ${esc(que)} en <b>biblical-earth</b>, la Biblia en el mapa y en el tiempo.</span><span class="cinta__corto"><b>biblical-earth</b> · ${esc(nombre ? `${nombre}, ${anio}` : anio)}</span>`;
-  cinta.hidden = false;
-  raiz.classList.add('be-cinta');
-}
-cinta.addEventListener('click', (e) => {
-  if (e.target.closest('[data-cinta="portada"]')) abrir();
-  else if (e.target.closest('[data-cinta="cerrar"]')) { quitarCinta(); $('#inicio')?.focus({ preventScroll: true }); }
-});
+BE.inicios.push(() => { soltarEspera(); if (abierta) pintarDatos(); });
 
 // ---------------------------------------------------------------------------
 // La dirección: #portada=1 es la portada, con su propia entrada de historial
