@@ -516,7 +516,7 @@ class Prueba(unittest.TestCase):
         self.assertEqual(cob, ["person:ciro", "relation:cambises-ii/kin/ciro"])
 
     # -- claves nuevas del modelo (new_keys de scripts/migration/map.yaml), que no tienen nombre antiguo
-    EVENTO = """# biblical-earth: un fichero por evento. Esquema en docs/investigacion/README.md.
+    EVENTO = """# biblical-atlas: un fichero por evento. Esquema en docs/investigacion/README.md.
 id: muerte
 title: Muere Ana
 places:
