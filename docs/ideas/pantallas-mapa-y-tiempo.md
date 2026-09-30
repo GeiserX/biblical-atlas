@@ -56,7 +56,7 @@ Reglas que cumplen todas las láminas:
 | Silas, Timoteo, Lucas | Grafo centrado en esa persona, en esta fecha (pantalla 07) [G-01]. |
 | Pestañas del panel | «Viaje 21» da la lista de paradas (en el móvil, la 06b). «Conexiones 12» abre el grafo. «Fuentes 5» lista las fuentes por nivel [C-06]. |
 | Conmutador «Mapa antiguo / Actual / Cortina» | Pantalla 02 [M-01, M-02]. |
-| Carriles de la línea de tiempo | Pulsar un tramo mueve el cursor a su principio. Mantener pulsado fija el carril para compararlo [T-08]. |
+| Carriles de la línea de tiempo | Pulsar una marca la elige y abre su ficha. El cursor entra en la marca por el punto pulsado, y ni la escala ni la vista se mueven. Fijar un carril lo sube arriba para compararlo [T-08]. |
 
 **Estados alternativos.**
 
@@ -211,7 +211,7 @@ Reglas que cumplen todas las láminas:
 **Qué se ve.** La misma línea de tiempo en tres zooms. Las marcas numeradas remiten a la leyenda de abajo.
 
 1. **Milenios.** Toda la historia, de Adán (4026 a.e.c.) al siglo I, en una línea. Las eras son la propia línea, sin una banda de episodios encima que repita lo mismo. Debajo van el carril «Imperio (Dn 2)» (Babilonia desde 632, Medopersia, Grecia, Roma), los hitos y la densidad de hechos. Los hitos que no caben se agrupan en píldoras: «Éxodo 1513 · Canaán 1473», «Reinos 997 · 740», «607 · 539 +2». El marco dorado es lo que muestra el zoom siguiente, y una lupa lo une con él.
-2. **Décadas, época medopersa** (575-425 a.e.c.). La era «Regreso bajo Persia» se abre en carriles de reyes, de Babilonia y Susa, de Jerusalén, de profetas y de hechos. Aparecen Ciro, Cambises, Darío I, Jerjes I y Artajerjes I; Daniel en Babilonia; Ester y Mardoqueo en Susa; Zorobabel y Josué; Ageo y Zacarías; Esdras desde 468; Nehemías desde 455; Malaquías después de 443. Los años de Ester y del decreto de Hamán (489-484) son un cálculo nuestro y salen rayados, con la etiqueta «cálculo nuestro». La subida de Artajerjes lleva la nota secular «465» sin mover el cursor. A la derecha, el panel «Ahora mismo» contesta en tres líneas quién está dónde en 455 a.e.c.
+2. **Décadas, época medopersa** (575-425 a.e.c.). La era «Regreso bajo Persia» se abre en carriles de reyes, de Babilonia y Susa, de Jerusalén, de profetas y de hechos. Aparecen Ciro, Cambises, Darío I, Jerjes I y Artajerjes I; Daniel en Babilonia; Ester y Mardoqueo en Susa; Zorobabel y Josué; Ageo y Zacarías; Esdras desde 468; Nehemías desde 455; Malaquías después de 443. Los años de Ester y del decreto de Hamán (489-484) son un cálculo nuestro y salen huecos; su ficha explica la cuenta. La subida de Artajerjes lleva la nota secular «465» sin mover el cursor. A la derecha, el panel «Ahora mismo» contesta en tres líneas quién está dónde en 455 a.e.c.
 3. **Días, primavera del 33 e.c.** El eje pasa a los meses hebreos: nisán, iyar, siván. Jesús llega a Betania el 8 de nisán y entra en Jerusalén el 9. Muere el 14 de nisán y resucita el 16. Pasa 40 días apareciéndose (un tramo hueco que va del 16 de nisán al 25 de iyar) y sube al cielo el 25 de iyar. El 6 de siván es Pentecostés.
 
 **Cómo se llega.** Es la franja inferior de todas las pantallas de escritorio. Se abre a pantalla completa con la tecla `T` o arrastrando su borde superior. Buscar un año («455 a.e.c.») la lleva al zoom de décadas con el cursor en ese año [B-03, T-20].
@@ -220,13 +220,13 @@ Reglas que cumplen todas las láminas:
 
 | Elemento | Qué hace |
 |---|---|
-| Era (p. ej. «Reino dividido») | Acerca el zoom a esa era [T-02]. |
+| Era (p. ej. «Reino dividido») | La elige y abre su ficha, con el cursor en el punto pulsado. La escala no cambia. Para verla entera, su ficha tiene el botón «Ver este tramo en la línea» [T-02]. |
 | Píldora agrupada («607 · 539 +2») | Despliega los hitos que contiene [T-03]. |
 | Marco dorado | Se arrastra para mover el zoom siguiente [T-04]. |
 | Escala «Milenios … Semanas» | Cambia el zoom. La velocidad de reproducción se ajusta sola: 20 años, 1 año o 1 día por segundo [T-10]. |
 | Flechas ⏮ ⏭ | Saltan al hecho anterior o siguiente, no al año siguiente [T-13]. En el panel se ven como «468 · Esdras» y «443 · a la corte». |
 | Tramo de persona o de rey | Ficha de la persona o del periodo [F-01, F-09]. |
-| Rayado «cálculo nuestro» | Explica cómo se calculó el año y por qué no está verificado [C-03]. |
+| Marca hueca (cálculo nuestro) | Su ficha explica cómo se calculó el año y por qué no está verificado [C-03]. |
 | Chip «secular: 465» | Muestra las dos cronologías, con sus fuentes [C-02, C-04]. |
 | «Ne 2:1», «Perspicacia ↗» | Vista previa y enlace a wol.jw.org ([Nehemías 2](https://wol.jw.org/es/wol/b/r4/lp-s/nwt/16/2)). |
 
@@ -283,7 +283,7 @@ Reglas que cumplen todas las láminas:
 
 | Elemento | Qué hace |
 |---|---|
-| Línea de tiempo compacta | Arrastrar mueve el cursor. Un toque en un tramo va a su principio. Pellizcar cambia el zoom. |
+| Línea de tiempo compacta | Arrastrar de lado mueve el tiempo y arriba y abajo recorre los carriles. Un toque en una marca la elige, con el cursor en el punto tocado, sin cambiar la escala ni la vista. Pellizcar cambia el zoom. |
 | «1 mes/s · Años» | Menú de velocidad y de zoom. |
 | Parada de la lista vertical (06b) | Mueve el cursor a esa parada y baja la hoja a media altura para ver el mapa. |
 | Referencia | Vista previa en una hoja secundaria, con «Leer en wol.jw.org ↗». |

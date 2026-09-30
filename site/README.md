@@ -121,7 +121,7 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 | `secular` | `0` | Oculta las fechas seculares |
 | `pausa` | `0` | No se para en los sucesos al reproducir |
 | `regla`, `bucle` | `a~b` | Regla entre dos fechas; tramo que se repite al reproducir |
-| `linea` | `grande` | Línea de tiempo ampliada |
+| `linea` | `normal`, `grande` | Alto de la línea de tiempo cuando no es el de siempre: en la pantalla ancha de 840 px de alto o más abre alta y `normal` la baja; en el móvil o en una pantalla más baja `grande` la sube |
 | `meses` | `ambos`, `nuestros`, `hebreos` | Filas de meses de la línea a escala de meses y de días, y qué fecha va primero arriba. Sin él, ambos |
 | `ahora`, `sinc` | `1`; `<lugar>~<periodo>` | Vista «Ahora mismo»; sincronía de un lugar en un periodo |
 | `grafo`, `gvista`, `gtodo` | ids unidos por `.`; una persona va por su id y lo demás con su tipo (`pablo.lugar:listra.evento:concilio-de-jerusalen-49`); `lista` o `grafo`; `1` | Grafo (el último es el centro; cualquier selección puede serlo, y con el grafo abierto lo seleccionado pasa al centro), su vista y si enseña todas las fechas |
@@ -137,13 +137,15 @@ Los demás parámetros solo aparecen cuando no valen lo de siempre:
 |---|---|
 | `/` | Ir a la búsqueda |
 | Espacio | Reproducir o pausar |
-| ← → | Mover el cursor un paso (depende del zoom de la línea) |
+| ← → | Mover el cursor un paso (depende del zoom de la línea). Con el foco en una marca de la línea, ir a la marca de al lado sin mover el cursor |
+| ↑ ↓, Inicio, Fin | Con el foco en una marca de la línea: a la fila de arriba o de abajo, a la primera o a la última de su fila |
+| Intro | Con el foco en una marca de la línea: elegirla; el cursor entra en ella por el punto más cercano |
 | Mayúsculas + ← → | Saltar a la parada o carta anterior o siguiente |
 | Esc | Borrar la búsqueda y la selección |
 | `T` | Ampliar o reducir la línea de tiempo |
 | Alt + arrastrar sobre la línea | Regla entre dos fechas |
 
-La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Mayúsculas, o con un gesto horizontal en el trackpad, la desplaza.
+Las marcas de la línea son una sola parada del tabulador. La rueda sobre los carriles los recorre de arriba abajo; con Ctrl o ⌘, o sobre la regla, cambia la escala, de milenios a días; con Mayúsculas, o con un gesto horizontal en el trackpad, desplaza la vista. Arrastrar los carriles mueve el tiempo; pulsar o arrastrar en la regla mueve el cursor.
 
 ## Ficheros
 
@@ -168,7 +170,8 @@ La rueda sobre la línea de tiempo cambia la escala, de milenios a días. Con Ma
 | `js/mapa.js` | MapLibre, relieve en cuatro extensiones, cortina, rutas, arcos de cartas, lugares inciertos, hallazgos, etiquetas, capas, leyenda y «Mientras tanto» |
 | `js/ficha.js` | Piezas comunes de las fichas: citas, fuentes y su marca (punto o aro), estado, «Por qué lo decimos», historial, «Proponer una corrección», nombres y vídeos |
 | `js/trayectorias.js` | Dónde está cada persona en cada momento, ventanas de fecha de cartas y sucesos, y el calendario hebreo: meses de luna nueva a luna nueva, Veadar y nombres por época |
-| `js/linea.js` | Línea de tiempo en seis escalas, carriles, filas de nuestros meses, meses hebreos y fiestas, selector «Meses», densidad, minimapa, regla, bucle y marcadores |
+| `js/linea-filas.js` | Filas de la línea de tiempo, sin DOM: cada marca reserva el sitio de su dibujo y de su nombre entero, la primera fila libre de su carril se la queda, y ningún nombre se tapa ni se corta. También dónde entra el cursor al pulsar una marca, la certeza de una fecha y el orden del relato de los sucesos del mismo día (`BE.filas`) |
+| `js/linea.js` | Línea de tiempo en seis escalas: carriles que crecen en filas, una marca por botón, filas de nuestros meses, meses hebreos y fiestas, selector «Meses», densidad, minimapa, regla, bucle y marcadores |
 | `js/datepicker.js` | El panel de la fecha de arriba: qué quiere decir esta fecha, sucesos cercanos y momentos clave, y elegir era, año, mes hebreo y día sin escribir |
 | `js/ahora.js` | «Ahora mismo», la frase de contexto de la línea y la sincronía por lugar |
 | `js/buscar.js` | Búsqueda, preguntas de forma fija, años y atrás y adelante |
@@ -198,7 +201,6 @@ BE.tipo('lugar', {
   implicados(id, r) { … },              // añade claves («carta:romanos») a r.claves e ids a r.lugares
   momento: (id) => …,                   // fecha a la que salta el cursor al elegirlo; si falta, la primera de lo implicado
   momentoImplicado: (id) => …,          // su fecha cuando lo implica otra selección; si falta, no cuenta
-  encuadre: (id) => [a, b],             // tramo que la línea enseña entero al elegirlo; si falta, la escala no cambia
   ficha: (id) => '<html>',              // la ficha del panel
   buscar: (q, nq, puntuar) => [ … ],    // resultados { grupo, sel, titulo, meta, puntos }
 });
@@ -228,14 +230,14 @@ BE.tipo('lugar', {
 
 ### Marcos que cambian de tamaño
 
-Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-atlas:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana.
+Dos separadores (`base.js`, `iniciarMarcos`): `#sep-panel` entre el mapa y la ficha cambia `--panel-w`, y `#sep-linea` entre el mapa y la línea cambia `--timeline-h`. Se arrastran, se mueven con las flechas (20 px; 80 con Mayúsculas; Inicio y Fin, el mínimo y el máximo) y vuelven a su tamaño con doble clic o Intro. En el móvil el asa de la hoja cambia su alto (`--hoja-h`) y, pulsada, la pliega. Los tamaños se guardan en la sesión, en `biblical-atlas:marco:panel`, `:linea` y `:hoja`, y se recortan a lo que cabe al cambiar la ventana. En la pantalla ancha la línea abre alta (`min(62vh, 600px)`) si la ventana mide 840 px de alto o más, para que al mapa le queden unos 260 px; en una pantalla más baja abre con su alto normal y la T, el botón o el separador la suben. Con el grafo o la conexión abiertos, la línea alta de inicio les deja su sitio; pedida con la T, se ve alta también con ellos. Un alto arrastrado en esta sesión gana al recargar.
 
 ### Móvil, tableta y dedo
 
 El sitio se prueba a 390 × 844 y 430 × 932 (móvil) y a 768 × 1024 y 1024 × 768 (tableta), con toque. La página no se desplaza nunca: cada marco desplaza lo suyo.
 
 - **Por ancho.** Hasta 760 px la ficha es una hoja inferior sobre el mapa, con su asa arriba y, justo debajo, la fila del suceso de esta fecha y el botón «Leyenda»; las seis escalas de la línea van en un desplegable (`#zoom-select`, `linea.js`). Hasta 900 px los tres mapas y el modo reunión bajan a la esquina del mapa, el grafo y la conexión tapan el mapa entero, y la lectura va encima de la ficha para que el mapa la siga. El grafo y la conexión miden su propia vista (consultas `@container`), no la ventana: estrechos, la cadena va de arriba abajo y el grafo sale en lista salvo que se pida en círculo.
-- **Con el dedo** (`@media (pointer: coarse)`, `css/tactil.css`). Cada control ofrece una diana de al menos 44 × 44 px: crece, o un `::after` transparente agranda la zona que recibe el toque sin cambiar el dibujo (los puntos del mapa, las píldoras, los enlaces sueltos). La raya de 10 px entre el mapa y la línea se sustituye por un asa de 44 px en la barra de la línea (`#linea-alto`): se arrastra igual y, pulsada, amplía la línea o la devuelve. En la línea, un toque elige la forma que hay bajo el dedo o la más cercana con diana de 44 px, y un arrastre mueve el cursor aunque empiece encima de una forma (`itemCercano`, `linea.js`).
+- **Con el dedo** (`@media (pointer: coarse)`, `css/tactil.css`). Cada control ofrece una diana de al menos 44 × 44 px: crece, o un `::after` transparente agranda la zona que recibe el toque sin cambiar el dibujo (los puntos del mapa, las píldoras, los enlaces sueltos). La raya de 10 px entre el mapa y la línea se sustituye por un asa de 44 px en la barra de la línea (`#linea-alto`): se arrastra igual y, pulsada, amplía la línea o la devuelve. En la línea las filas miden 44 px y ninguna marca mide menos de 44 de ancho; un nombre largo va en dos o tres líneas. Un toque elige la marca que hay bajo el dedo o la de esa fila a menos de 12 px; un arrastre de lado mueve el tiempo aunque empiece encima de una marca, y uno vertical recorre los carriles (`linea.js`).
 - `BE.ajustarAyuda(input, ...cortos)` (`buscar.js`) pone en una caja de búsqueda el texto de ayuda más largo que quepa entero, en vez de cortarlo a media palabra.
 
 Lo que queda por debajo de 44 px tiene su equivalente de 44: «Carriles +N» y «¿Qué meses son estos?» están en el menú (…) de la línea, y los tramos del progreso de un recorrido tienen «anterior» y «siguiente». Los puntos del mapa muy juntos se pisan sus zonas: se separan al acercar el mapa.
@@ -273,7 +275,7 @@ El sitio está partido en módulos para que varias personas puedan trabajar en �
 |---|---|
 | `js/base.js`, `css/base.css`, `index.html` | Congelados |
 | `js/mapa.js`, `js/ficha.js`, `js/tipos/lugar.js`, `js/tipos/carta.js`, `js/tipos/hallazgo.js`, `css/mapa.css`, `maps/*` | Mapa |
-| `js/trayectorias.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | Tiempo |
+| `js/trayectorias.js`, `js/linea-filas.js`, `js/linea.js`, `js/ahora.js`, `js/tipos/viaje.js`, `js/tipos/parada.js`, `js/tipos/evento.js`, `js/tipos/periodo.js`, `css/linea.css` | Tiempo |
 | `js/buscar.js`, `js/grafo.js`, `js/lectura.js`, `js/recorridos.js`, `js/portada.js`, `js/tipos/persona.js`, `js/tipos/pasaje.js`, `js/tipos/libro.js`, `js/tipos/recorrido.js`, `css/estudio.css` | Estudio |
 
 `data.json`, `data.js` y los tres índices de vídeos son derivados y nadie los edita a mano.

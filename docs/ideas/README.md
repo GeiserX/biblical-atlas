@@ -25,7 +25,7 @@ La fuente principal (nivel 1) es la Traducción del Nuevo Mundo (TNM) y wol.jw.o
 
 1. **Una fecha manda.** El cursor gobierna el mapa, la línea, el grafo y el panel. Nunca enseñan fechas distintas.
 2. **Nunca el grafo entero.** Siempre una vista centrada, filtrada por fecha y con un límite de vecinos.
-3. **La incertidumbre se dibuja.** Un lugar incierto es una zona o un abanico de candidatos, cada uno con su base. Una fecha incierta tiene los bordes difuminados. Un cálculo nuestro va rayado y rotulado. Nunca ponemos un punto falso.
+3. **La incertidumbre se dibuja.** Un lugar incierto es una zona o un abanico de candidatos, cada uno con su base. Una fecha incierta tiene los bordes difuminados. Un cálculo nuestro se ve distinto. En la línea de tiempo va hueco, y su ficha dice «cálculo nuestro, sin verificar» y explica la cuenta. Nunca ponemos un punto falso.
 4. **Cada dato tiene su fuente a un clic.** Nivel 1 o nivel 2, con enlace. Lo que no tiene fuente dice «sin verificar».
 5. **Leemos en la fuente, no la copiamos.** Referencias como «Hch 16:12-15», resúmenes nuestros y el botón «Leer en wol.jw.org ↗».
 6. **Lo antiguo y lo moderno a la vez.** Cada nombre de la época lleva su equivalente actual, a un clic o con cortina.

@@ -202,12 +202,12 @@ function seleccionar(sel, { mover = true, encuadrar = true } = {}) {
   } else {
     filtro.hidden = true;
   }
+  // Elegir algo desde fuera de la línea (la búsqueda, una ficha, el grafo, un recorrido) lleva el cursor a su momento,
+  // pero la escala no cambia y la vista solo se mueve si ese momento queda fuera. Una marca de la línea no pasa por
+  // aquí con `mover`: linea.js pone el cursor donde se pulsó.
   if (sel && mover) {
     const t = momentoDe(sel);
-    if (t != null) { setT(t); asegurarVisible(t, true); }
-    // Un tipo puede pedir que la línea enseñe un tramo entero al elegirlo (una era o una potencia: tipos/periodo.js).
-    const tv = TIPOS.get(sel.tipo)?.encuadre?.(sel.id);
-    if (tv) BE.encuadrarTiempo(tv[0], tv[1]);
+    if (t != null) { setT(t); asegurarVisible(t, false); }
   }
   pintarPanel(true);
   if (sel && encuadrar) BE.mapa.encuadrar([...E.resaltado.lugares]);   // después de la ficha: en móvil su alto cuenta
@@ -394,7 +394,8 @@ function iniciarEventos() {
     const cerrar = e.target.closest('[data-accion="cerrar"]');
     if (cerrar) { limpiarSeleccion(); return; }
     const s = e.target.closest('[data-sel]');
-    if (s && !s.closest('#resultados')) {
+    // Las marcas de la línea de tiempo las elige linea.js: el cursor entra por donde se pulsó y un segundo clic no suelta.
+    if (s && !s.closest('#resultados') && !s.matches('#linea-filas .m')) {
       const sel = parseSel(s.dataset.sel);
       if (sel) {
         e.preventDefault();
@@ -412,7 +413,6 @@ function iniciarEventos() {
     const enCampo = t.matches?.('input, textarea, select');
     if (e.key === 'Escape') { limpiarSeleccion(); return; }
     if (enCampo) return;
-    if (e.key === 'Enter' && t.matches?.('g[data-sel]')) { e.preventDefault(); t.dispatchEvent(new MouseEvent('click', { bubbles: true })); return; }
     if (e.key === '/' ) { e.preventDefault(); $('#q').focus(); return; }
     if (t.closest?.('.maplibregl-map') && !t.closest('.maplibregl-marker')) return;   // el mapa usa sus flechas
     if (e.key === ' ' || e.code === 'Space') {
@@ -480,14 +480,16 @@ const vigilarTapas = () => {
 };
 const tapasObs = new ResizeObserver(vigilarTapas);
 tapasObs.observe($('#mapa')); tapasObs.observe($('#leyenda'));
-const marco = Object.fromEntries(Object.keys(MARCOS).map((k) => [k, { propio: false, manda: 'nuestro' }]));
+// arranque: al cargar la página, un tamaño arrastrado en esta sesión gana a la clase (la línea abre alta en la pantalla
+// ancha, y recargar no debe tirar lo que se arrastró). Después, poner o quitar la clase vuelve a mandar, como siempre.
+const marco = Object.fromEntries(Object.keys(MARCOS).map((k) => [k, { propio: false, manda: 'nuestro', arranque: true }]));
 function leerMarco(k) { try { const v = parseFloat(sessionStorage.getItem(CLAVE_MARCO + k)); return Number.isFinite(v) ? v : null; } catch { return null; } }
 function guardarMarco(k, v) { try { if (v == null) sessionStorage.removeItem(CLAVE_MARCO + k); else sessionStorage.setItem(CLAVE_MARCO + k, String(Math.round(v))); } catch { /* sin almacenamiento */ } }
 /** Pone en #app el tamaño guardado, salvo que mande el de una clase, y actualiza el separador. */
 function aplicarMarco(k) {
   const m = MARCOS[k], app = $('#app'), st = marco[k];
   const propio = m.propio();
-  if (propio !== st.propio) { st.propio = propio; st.manda = propio ? 'clase' : 'nuestro'; }
+  if (propio !== st.propio) { st.propio = propio; st.manda = propio && !(st.arranque && leerMarco(k) != null) ? 'clase' : 'nuestro'; }
   const v = leerMarco(k);
   if (v == null || st.manda === 'clase') app.style.removeProperty(m.var);
   else app.style.setProperty(m.var, `${Math.round(clamp(v, m.min(), m.max()))}px`);
@@ -562,7 +564,7 @@ function iniciarMarcos() {
   const alto = $('#linea-alto');
   if (alto) {
     arrastrarMarco(alto, 'linea');
-    alto.addEventListener('click', () => BE.ponerGrande?.(!BE.lineaEstado?.grande));
+    alto.addEventListener('click', () => BE.alternarGrande?.());
     alto.addEventListener('keydown', (e) => teclaMarco(e, 'linea', false));
   }
   const recalcular = () => { for (const k of Object.keys(MARCOS)) aplicarMarco(k); };
@@ -624,6 +626,8 @@ async function iniciar() {
   for (const f of inicios) f();
   if (matchMedia('(max-width: 760px)').matches) E.vista = [E.t - 5, E.t + 7];
   aplicarHash(true);
+  BE.mapa.encuadreDeInicio?.();
+  setTimeout(() => { for (const st of Object.values(marco)) st.arranque = false; }, 0);
   window.__be = {
     E, P: BE.P, D, BE, dondeEsta: BE.dondeEsta, donde: BE.donde, ventana: BE.ventana, ventanaCarta: BE.ventanaCarta, ventanaEvento: BE.ventanaEvento,
     setT, seleccionar, ponerMapa: BE.ponerMapa, get map() { return BE.mapa.gl; },

@@ -1,6 +1,8 @@
-/* biblical-atlas · línea de tiempo (SVG propio): de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen
-   de los datos (eras, imperios, reyes, personas, cartas, sucesos, meses hebreos, fechas seculares), densidad, minimapa,
-   regla, bucle, marcadores, pausa en los sucesos, escribir la fecha y gestos (rueda, arrastre, pinza).
+/* biblical-atlas · línea de tiempo: de Adán (4026 a.e.c.) al año 100 en seis escalas, carriles que salen de los datos
+   (eras, imperios, reyes, personas, cartas, sucesos, meses hebreos, fechas seculares), densidad, minimapa, regla, bucle,
+   marcadores, pausa en los sucesos, escribir la fecha y gestos (rueda, arrastre, pinza). Cada carril crece en filas para
+   que todo nombre se lea entero (linea-filas.js); cada marca es un botón. Pulsar una marca la elige y el cursor entra en
+   ella por el punto señalado: ni la escala ni la vista se mueven.
    Dueño durante el reparto: app-tiempo. */
 'use strict';
 (() => {
@@ -16,6 +18,7 @@ const ZOOMS = [
   { n: 'Años', c: 'Año', s: 8 }, { n: 'Meses', c: 'Mes', s: 1.5 }, { n: 'Días', c: 'Día', s: 0.12 },
 ];
 const EJE = 26, CARRIL = 30;
+const FIL = BE.filas;
 
 // Estado propio de la línea. Lo que se comparte va en la dirección (BE.parametros).
 const L = {
@@ -24,9 +27,9 @@ const L = {
   pausa: true,            // pausa en los sucesos al reproducir (T-11)
   regla: null,            // [a, b] medidos con la regla (T-15)
   bucle: null,            // [a, b] que la reproducción repite (T-12)
-  grande: false,          // línea ampliada (tecla T)
+  grande: false,          // línea alta (tecla T); en la pantalla ancha y alta es como abre
+  pedida: false,          // alta pedida con la T, el botón o el menú: gana también al grafo abierto
   modoRegla: false,
-  grupo: null,            // sucesos de la última píldora pulsada: { claves, trs, sel }. Van resaltados, nunca atenuados
   meses: null,            // «ambos», «nuestros» o «hebreos»; null: lo de siempre, ambos
   vel: null,              // velocidad elegida a mano: índice de VELOCIDADES; null: según la escala
 };
@@ -79,12 +82,12 @@ const luz = (rgb) => { const [r, g, b] = rgb.map((v) => { v /= 255; return v <= 
 const contraste = (a, b) => { const x = luz(a), y = luz(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
 const BLANCO = [255, 255, 255], TINTA = [24, 34, 28];
 /** Clases del texto y de la forma de una barra de ese color: «sobre-claro» si la tinta oscura lee mejor que el blanco;
-    «con-borde» si la barra y el fondo de la línea no llegan a 3:1. */
+    «con-borde» si la barra y el fondo de la línea no llegan a 3:1 en alguno de los dos fondos de los carriles. */
 function tonos(color) {
   const c = rgbDe(color);
   if (!c) return { texto: '', forma: '' };
-  const fondo = rgbDe('var(--surface)') || BLANCO;
-  return { texto: contraste(c, BLANCO) >= contraste(c, TINTA) ? '' : ' sobre-claro', forma: contraste(c, fondo) < 3 ? ' con-borde' : '' };
+  const fondos = [rgbDe('var(--surface)') || BLANCO, rgbDe('var(--surface-2)') || BLANCO];
+  return { texto: contraste(c, BLANCO) >= contraste(c, TINTA) ? '' : ' sobre-claro', forma: fondos.some((f) => contraste(c, f) < 3) ? ' con-borde' : '' };
 }
 /** El color mezclado con negro en la fracción f: el segundo tono de las eras, para que dos vecinas no se fundan. */
 function oscurecer(color, f) {
@@ -99,104 +102,139 @@ function colorPeriodo(c, p) {
   return { reyes: 'var(--emp-persia)', sacerdotes: 'var(--tier1)', gobernadores: 'var(--node-periodo)' }[k] || 'var(--emp-roma)';
 }
 
-let anchoLinea = 800, altoPista = 200;
-/** Rótulos de los elementos. Van en una capa encima de todas las formas, cada uno en un <g> con el data-sel de su
-    elemento, así que pulsar el texto selecciona lo que nombra y nunca lo que queda debajo. */
-let rotulos = [];
-function rotulo(sel, clases, texto, extra = '') {
-  if (texto) rotulos.push(`<g class="item-texto${clases}" data-sel="${esc(sel)}"${extra} aria-hidden="true">${texto}</g>`);
-}
+let anchoLinea = 800, altoFilas = 0, cabAlto = EJE;
 const xDe = (t) => ((t - E.vista[0]) / span()) * anchoLinea;
 const tDe = (x) => E.vista[0] + (x / anchoLinea) * span();
 const anchoTexto = (s, px = 10.5) => s.length * px * 0.6 + 4;
 const visible = (tr) => tr && tr[1] > E.vista[0] && tr[0] < E.vista[1];
 function nivelFuentes(ids) { return Math.min(...(ids || []).map((id) => BE.D.fuentes[id]?.nivel || 2)); }
 function dim(clave) {
-  if (L.grupo?.claves.has(clave)) return ' resaltado';
   const r = E.resaltado;
   if (!r) return '';
   return r.claves.has(clave) ? ' resaltado' : ' atenuado';
 }
-/** Año corto para etiquetas: «607» a.e.c. y «49» e.c.; con era si el tramo cruza el cero o todo es a.e.c. */
-const anioCorto = (t) => { const y = Math.floor(t); return y > 0 ? String(y) : String(1 - y); };
-/** Borde difuminado según la precisión (T-16): «a» ambos, «i» hacia atrás (antes de), «d» hacia delante (después de, fin abierto). */
-function difuso(f) {
-  if (!f) return '';
-  const tx = norm(f.texto || '');
-  const antes = f.desde == null || /^a\.\s|^antes de/.test(tx);
-  const despues = f.hasta == null || /^d\.\s|^despues de|fin sin fecha|al menos hasta/.test(tx);
-  if (antes && !despues) return 'i';
-  if (despues && !antes) return 'd';
-  if (f.aprox || (antes && despues)) return 'a';
-  return '';
-}
-const mascara = (k) => (k ? ` mask="url(#m-difuso${k === 'a' ? '' : `-${k}`})"` : '');
-/** Tramo que se dibuja: un final abierto se alarga un poco y se difumina, sin inventar su fin. */
-function tramoDibujo(f) {
-  const tr = BE.ventanaFecha(f) || tramo(f);
-  if (!tr) return null;
-  if (f.hasta == null && f.desde != null) return [tr[0], tr[1] + Math.max(1, span() * 0.04)];
-  if (f.desde == null && f.hasta != null) return [tr[0] - Math.max(1, span() * 0.04), tr[1]];
-  return tr;
-}
-
-/** Tramo que se dibuja de un periodo. Una potencia con un extremo sin fecha llega hasta la vecina (BE.tramoPotencia). */
-const tramoDibujoPeriodo = (p) => (p.tipo === 'potencia' && BE.tramoPotencia(p)?.abierto ? BE.tramoPotencia(p) : tramoDibujo(p.fecha));
 
 // ---------------------------------------------------------------------------
-// Carriles: cuáles hay, cuántas filas ocupa cada uno y cómo se dibujan
+// Marcas: lo que dibuja cada carril, sacado de los datos una vez por carga. Cada una es un momento (un punto con la
+// línea de las fechas entre las que pudo ser) o un tramo (una barra). linea-filas.js las reparte en filas.
 // ---------------------------------------------------------------------------
 const periodosDe = (tipo) => (BE.D.periodos || []).filter((p) => p.tipo === tipo);
-/** Reparte en filas los tramos que se solapan (máximo `max`). Devuelve Map(obj → fila) y el número de filas.
-    Un solape de un año o menos no cuenta: el sucesor empieza el año en que acaba su predecesor (Claudio 41-54, Nerón 54-68).
-    Las corregencias de varios años sí van en otra fila. */
-function filasSinSolape(lista, trDe, max = 2) {
-  const fin = [], fila = new Map();
-  for (const o of [...lista].sort((a, b) => (trDe(a)?.[0] ?? 0) - (trDe(b)?.[0] ?? 0))) {
-    const tr = trDe(o);
-    if (!tr) continue;
-    let i = fin.findIndex((f) => f <= tr[0] + 1 + 1e-6);
-    if (i < 0 && fin.length < max) i = fin.length;
-    if (i < 0) i = fin.indexOf(Math.min(...fin));
-    fin[i] = Math.max(fin[i] ?? -Infinity, tr[1]);
-    fila.set(o, i);
-  }
-  return { fila, n: Math.max(1, fin.length) };
+const TIPO_PERIODO = { era: 'Era', potencia: 'Potencia mundial', rey: 'Rey', emperador: 'Emperador', gobernador: 'Gobernador', 'sumo-sacerdote': 'Sumo sacerdote' };
+/** Un momento: un punto en medio de la ventana en que lo sitúa el sitio, con la línea de las fechas entre las que pudo
+    ser (esa ventana y lo que dice su fecha). */
+function momentoMarca(o, win, dicho) {
+  const w0 = Math.min(win[0], dicho ? dicho[0] : win[0]), w1 = Math.max(win[1], dicho ? dicho[1] : win[1]);
+  return { group: 0, ...o, shape: 'moment', start: win[0], end: win[1], anchor: (win[0] + win[1]) / 2, w0, w1 };
 }
+/** Un tramo: una barra de su principio a su fin, de un día como mínimo. */
+function tramoMarca(o, tr) {
+  return { group: 0, ...o, shape: 'span', start: tr[0], end: Math.max(tr[1], tr[0] + BE.DIA) };
+}
+/** Extremo sin fecha: «end» o «start». Ese lado se difumina en vez de acabar en seco. */
+function extremoAbierto(f, tr) {
+  if (tr?.abierto === 'd') return 'end';
+  if (tr?.abierto === 'i') return 'start';
+  if (f && f.desde != null && f.hasta == null) return 'end';
+  if (f && f.hasta != null && f.desde == null) return 'start';
+  return null;
+}
+const textoFechaDe = (f) => (f ? f.texto || fechaCorta(f) : '');
+function marcasSucesos() {
+  const out = [];
+  for (const e of BE.D.eventos || []) {
+    const win = BE.ventanaEvento(e);
+    if (!win) continue;
+    out.push(momentoMarca({ id: `evento:${e.id}`, sel: `evento:${e.id}`, name: e.titulo, cert: FIL.certainty(e.fecha), tipo: 'Suceso', fechaTipo: e.fecha?.tipo,
+      fecha: textoFechaDe(e.fecha), color: 'var(--gold)', passages: e.pasajes || [] }, win, BE.ventanaFecha(e.fecha) || tramo(e.fecha)));
+  }
+  FIL.storyOrder(out);   // los del mismo día, en el orden del relato
+  return out;
+}
+function marcasCartas() {
+  return BE.cartasOrdenadas().map((c) => {
+    const win = BE.ventanaCarta(c);
+    return win && momentoMarca({ id: `carta:${c.id}`, sel: `carta:${c.id}`, name: c.libro, cert: FIL.certainty(c.fecha), tipo: 'Carta', fechaTipo: c.fecha?.tipo,
+      fecha: textoFechaDe(c.fecha), color: 'var(--tier2)' }, win, tramo(c.fecha));
+  }).filter(Boolean);
+}
+/** Una parada de un viaje o una estancia de una persona: tramo si dura, momento si no. La que sale del orden del relato
+    es un cálculo, salvo que ya sea dudosa. */
+function marcaEstancia(s, color, group, tipo) {
+  const f = s.fecha || s.p?.fecha || null;
+  let cert = FIL.certainty(f || {});
+  if (s.narrativa && cert !== 'uncertain') cert = 'computed';
+  const o = { id: `${s.sel}#${s.key}`, sel: s.sel, name: s.lugar.nombre, titulo: s.titulo && s.titulo !== s.lugar.nombre ? s.titulo : '',
+    cert, tipo, fecha: f ? textoFechaDe(f) : '', fechaTipo: f?.tipo === 'derivada' ? 'derivada' : s.narrativa ? 'narrativa' : f?.tipo, color, group };
+  return s.b > s.a ? tramoMarca(o, [s.a, s.b]) : momentoMarca(o, [s.a, s.b]);
+}
+/** Pablo: un tramo por viaje y, en filas propias debajo, sus paradas. */
+function marcasPablo() {
+  const out = [];
+  for (const v of BE.D.viajes) {
+    const ps = BE.P.filter((x) => x.viaje === v);
+    if (!ps.length) continue;
+    const color = BE.colorViaje(v.id);
+    out.push(tramoMarca({ id: `viaje:${v.id}`, sel: `viaje:${v.id}`, name: v.nombre, cert: FIL.certainty(v.fecha), tipo: 'Viaje',
+      fecha: textoFechaDe(v.fecha), color }, [ps[0].a, ps.at(-1).b]));
+    for (const s of ps) out.push(marcaEstancia(s, color, 1, 'Parada de un viaje'));
+  }
+  return out;
+}
+function marcasPeriodos(c) {
+  return c.ps.map((p) => {
+    const tr = BE.tramoPeriodo(p);
+    if (!tr) return null;
+    return tramoMarca({ id: `periodo:${p.id}`, sel: `periodo:${p.id}`, name: p.nombre, cert: FIL.certainty(p.fecha, tr.abierto),
+      openEnd: extremoAbierto(p.fecha, tr), tipo: TIPO_PERIODO[p.tipo] || 'Periodo', fechaTipo: p.fecha?.tipo, fecha: textoFechaDe(p.fecha), color: () => colorPeriodo(c, p) }, tr);
+  }).filter(Boolean);
+}
+/** Fechas seculares como nota (C-02, C-04): contorno de trazos; no mueven el cursor. */
+function marcasSecular(c) {
+  const out = [];
+  for (const o of c.conAlt) (o.alternativas || []).forEach((alt, i) => {
+    const tr = tramo(alt.fecha);
+    if (!tr) return;
+    const tipo = BE.D.eventos.includes(o) ? 'evento' : (BE.D.periodos.includes(o) ? 'periodo' : 'persona');
+    out.push(tramoMarca({ id: `${tipo}:${o.id}#secular${i}`, sel: `${tipo}:${o.id}`, name: o.titulo || o.nombre, cert: 'exact',
+      tipo: 'Fecha secular, solo como nota', fecha: textoFechaDe(alt.fecha), color: 'var(--secular)', secular: true, sinCursor: true }, tr));
+  });
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// Carriles: cuáles hay y en qué orden
+// ---------------------------------------------------------------------------
 let cacheCat = null;
-/** Catálogo de carriles posibles con estos datos. Se calcula una vez por carga de datos. */
+/** Catálogo de carriles posibles con estos datos. Se calcula una vez por carga de datos. El orden de arriba abajo es el
+    de `orden`: los que más crecen (Pablo, Cartas, Sucesos) van los últimos, así su crecimiento no empuja a nadie. */
 function catalogo() {
   if (cacheCat && cacheCat.D === BE.D) return cacheCat.lista;
   const D = BE.D;
   const lista = [];
-  const lanePeriodos = (id, nombre, icono, ps, extra = {}) => {
+  const lanePeriodos = (id, nombre, icono, ps, orden, extra = {}) => {
     if (!ps.length) return;
-    const max = extra.maxFilas || 2;
-    lista.push({ id, nombre, icono, tipo: 'periodos', ps, fila: new Map(), filas: 1, ...extra,
-      // Las filas se reparten con lo que se ve: un solape fuera de la vista no gasta una fila.
-      medir() { const r = filasSinSolape(ps.filter((p) => visible(tramoDibujoPeriodo(p))), tramoDibujoPeriodo, max); this.fila = r.fila; this.filas = r.n; },
-      hay: () => ps.some((p) => visible(BE.tramoPeriodo(p))),
-      n2: ps.every((p) => nivelFuentes(p.fuentes) > 1) });
+    const c = { id, nombre, icono, tipo: 'periodos', ps, orden, n2: ps.every((p) => nivelFuentes(p.fuentes) > 1), ...extra };
+    c.marcas = () => marcasPeriodos(c);
+    lista.push(c);
   };
   if (D.calendario?.meses?.length) lista.push({ id: 'meses', nombre: 'Meses', icono: 'calendario', tipo: 'meses', filas: 1, orden: 0, hay: () => span() < 2.5,
-    prio: () => 88, medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
-  lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), { orden: 1, prio: () => (span() >= 150 ? 92 : 30), clase: 'era', maxFilas: 1 });
-  lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), { orden: 2, prio: () => (span() >= 60 ? 86 : 35), clase: 'potencia', maxFilas: 1 });
-  // Pablo y las cartas son detalle del siglo I: a escala de siglos o milenios ceden el sitio a las eras y los imperios.
-  lista.push({ id: 'pablo', nombre: 'Pablo', icono: 'persona', tipo: 'pablo', filas: 1, orden: 4, prio: () => (span() >= 300 ? 40 : 80),
-    hay: () => BE.P.length && BE.P.at(-1).b > E.vista[0] && BE.P[0].a < E.vista[1] });
-  if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', filas: 2, nombres: ['Cartas', 'Más cartas'], orden: 6, prio: () => (span() >= 300 ? 38 : 70),
-    hay: () => D.cartas.some((c) => visible(tramo(c.fecha))) });
-  lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', filas: 1, orden: 7, prio: () => 75, medir: medirSucesos,
-    hay: () => (D.eventos || []).some((e) => visible(BE.ventanaEvento(e))) });
-  lanePeriodos('emperadores', 'Emperadores', 'corona', periodosDe('emperador'), { orden: 8, prio: () => 60 });
-  for (const { k, nombre, ps } of reinos()) lanePeriodos(k ? `reyes-${k}` : 'reyes', nombre, 'corona', ps, { orden: 9, prio: () => 66 });
-  lanePeriodos('gobernadores', 'Gobernadores', 'corona', periodosDe('gobernador'), { orden: 10, prio: () => 55 });
-  lanePeriodos('sacerdotes', 'Sumos sacerdotes', 'templo', periodosDe('sumo-sacerdote'), { orden: 11, prio: () => 50 });
+    medir: medirMeses, ayuda: 'Nuestros meses y los meses hebreos, alineados. Las equivalencias son aproximadas.' });
+  lanePeriodos('eras', 'Eras', 'reloj2', periodosDe('era'), 1, { clase: 'era' });
+  lanePeriodos('imperios', 'Imperio (Dn 2)', 'corona', periodosDe('potencia'), 2, { clase: 'potencia' });
+  lista.push({ id: 'pablo', nombre: 'Pablo', icono: 'persona', tipo: 'pablo', orden: 20, marcas: marcasPablo });
+  if (D.cartas.length) lista.push({ id: 'cartas', nombre: 'Cartas', icono: 'carta', tipo: 'cartas', orden: 21, marcas: marcasCartas });
+  lista.push({ id: 'sucesos', nombre: 'Sucesos', icono: 'reloj', tipo: 'sucesos', orden: 22, marcas: marcasSucesos });
+  lanePeriodos('emperadores', 'Emperadores', 'corona', periodosDe('emperador'), 3);
+  for (const { k, nombre, ps } of reinos()) lanePeriodos(k ? `reyes-${k}` : 'reyes', nombre, 'corona', ps, 4);
+  lanePeriodos('gobernadores', 'Gobernadores', 'corona', periodosDe('gobernador'), 5);
+  lanePeriodos('sacerdotes', 'Sumos sacerdotes', 'templo', periodosDe('sumo-sacerdote'), 6);
   const conAlt = [...(D.eventos || []), ...(D.periodos || []), ...Object.values(D.personas || {})].filter((o) => o.alternativas?.length);
-  if (conAlt.length) lista.push({ id: 'secular', nombre: 'Secular · nota', icono: 'secular', tipo: 'secular', filas: 1, orden: 12, prio: () => 45, conAlt,
-    hay: () => L.secular && conAlt.some((o) => o.alternativas.some((a) => visible(tramo(a.fecha)))),
-    ayuda: 'Fechas de la cronología secular cuando difiere. Solo como nota: no mueven el cursor.' });
+  if (conAlt.length) {
+    const c = { id: 'secular', nombre: 'Secular · nota', icono: 'secular', tipo: 'secular', orden: 7, conAlt,
+      ayuda: 'Fechas de la cronología secular cuando difiere. Solo como nota: no mueven el cursor.' };
+    c.marcas = () => marcasSecular(c);
+    lista.push(c);
+  }
   cacheCat = { D, lista };
   return lista;
 }
@@ -227,16 +265,21 @@ function reinos() {
     return { k, nombre: nombres.length ? `Reyes · ${nombres.join(' y ')}` : 'Reyes', ps };
   });
 }
-/** Carril de una persona (T-06): su actividad, sus estancias con lugar y los caminos entre ellas. */
+const cachePersona = new Map();
+/** Carril de una persona (T-06): sus estancias con lugar, nombradas por el lugar. Su actividad y los caminos entre
+    estancias van de adorno en una franja fina arriba del carril, nunca en las filas. */
 function carrilPersona(id) {
   if (id === 'pablo') return catalogo().find((c) => c.id === 'pablo');
   const p = BE.PERS[id];
   if (!p) return null;
+  const guardado = cachePersona.get(id);
+  if (guardado && guardado.D === BE.D) return guardado.c;
   const est = BE.estancias(id);
-  const act = p.fecha ? tramoDibujo(p.fecha) : null;
-  if (!est.length && !act) return null;
-  return { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, filas: 1, orden: 5, prio: () => 94, est, act,
-    hay: () => visible(act) || est.some((s) => s.b > E.vista[0] && s.a < E.vista[1]) };
+  const act = p.fecha ? tramo(p.fecha) : null;
+  const c = !est.length && !act ? null : { id, nombre: p.nombre, icono: 'persona', tipo: 'persona', persona: id, orden: 19, est, act,
+    marcas: () => est.map((s) => marcaEstancia(s, BE.colorPersona(id), 0, 'Estancia')) };
+  cachePersona.set(id, { D: BE.D, c });
+  return c;
 }
 const carrilPorId = (id) => catalogo().find((c) => c.id === id) || carrilPersona(id);
 /** Personas que pueden tener carril: con estancias o con fecha de actividad. */
@@ -245,118 +288,141 @@ function personasConCarril() {
   for (const p of Object.values(BE.PERS)) if (p.fecha && tramo(p.fecha)) ids.add(p.id);
   return [...ids].map((id) => BE.PERS[id]).filter(Boolean).sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
 }
-/** Carriles que se ven ahora: los fijados siempre; después, por prioridad, los que tienen algo en la vista, hasta llenar el alto. */
-let carrilesVista = [], ocultos = [];
+/** Carriles de la línea, en su orden: los fijados arriba en el orden en que se fijaron; después los meses (solo a
+    escala de meses y días) y el resto del catálogo. La persona elegida tiene su carril justo antes de Pablo. Sin tope
+    ni prioridades: cada carril con algo en la vista enseña todas sus filas, y uno sin nada no ocupa sitio. */
+let carrilesVista = [];
 function elegirCarriles() {
-  const cap = Math.max(2, Math.floor((altoPista - EJE + 4) / CARRIL));   // el último carril puede perder un par de píxeles, como en v0
-  const fijos = L.fijados.map(carrilPorId).filter(Boolean);
+  const fijos = L.fijados.map(carrilPorId).filter((c) => c && (c.tipo !== 'secular' || L.secular));
   const ids = new Set(fijos.map((c) => c.id));
-  const auto = [];
-  if (E.sel?.tipo === 'persona' && !ids.has(E.sel.id)) { const c = carrilPersona(E.sel.id); if (c) auto.push(c); }
-  for (const c of catalogo()) if (!ids.has(c.id) && !auto.includes(c) && c.hay()) auto.push(c);
-  for (const c of [...fijos, ...auto]) c.medir?.();
-  auto.sort((a, b) => b.prio() - a.prio());
-  const elegidos = [...fijos];
-  let filas = fijos.reduce((n, c) => n + c.filas, 0);
-  ocultos = [];
-  for (const c of auto) {
-    if (filas + c.filas > cap && c.tipo === 'sucesos' && cap > filas) c.medir(cap - filas);   // menos filas antes que ninguna
-    if (filas + c.filas <= cap) { elegidos.push(c); filas += c.filas; } else ocultos.push(c);
+  const resto = [];
+  if (E.sel?.tipo === 'persona' && !ids.has(E.sel.id)) { const c = carrilPersona(E.sel.id); if (c && c.id !== 'pablo') resto.push(c); }
+  for (const c of catalogo()) {
+    if (ids.has(c.id) || (c.tipo === 'meses' && !c.hay()) || (c.tipo === 'secular' && !L.secular)) continue;
+    resto.push(c);
   }
-  // Orden vertical estable: los fijados arriba en su orden; el resto en el orden del catálogo.
-  const resto = elegidos.slice(fijos.length).sort((a, b) => a.orden - b.orden);
+  resto.sort((a, b) => a.orden - b.orden);
   carrilesVista = [...fijos, ...resto];
-  let y = EJE;
-  for (const c of carrilesVista) { c.y = y; y += c.filas * CARRIL; }
+  for (const c of carrilesVista) c.medir?.();
   return carrilesVista;
 }
+/** Las marcas de un carril, hechas una vez: { id, items, packKey, medida }. */
+function marcasDe(c) {
+  if (!c.lane) c.lane = { id: c.id, items: c.marcas ? c.marcas() : [], packKey: null, medida: null };
+  return c.lane;
+}
+function rotuloHtml(c) {
+  const fijo = L.fijados.includes(c.id);
+  const n2 = c.n2 ? BE.marcaNivel(2) : '';
+  const pin = `<button type="button" class="carril-pin${fijo ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${fijo}" aria-label="${fijo ? 'Soltar' : 'Fijar'} el carril ${esc(c.nombre)}" title="${fijo ? 'Soltar este carril' : 'Fijar este carril arriba'}">${ICONOS.alfiler}</button>`;
+  const nombres = c.nombres || [c.nombre];
+  return nombres.map((nm, i) => {
+    const ayuda = c.ayudas?.[i] || c.ayuda;
+    const icono = c.iconos ? (ICONOS[c.iconos[i]] || '') : (ICONOS[c.icono] || '');
+    const clase = c.clases?.[i] ? ` ${c.clases[i]}` : '';
+    const mas = c.tipo === 'meses' && i === Math.max(0, (c.tiposFila || []).indexOf('hebreos')) ? enlaceCalendario('carril-ayuda', '?', '¿Qué meses son estos?') : '';
+    const texto = c.cortos?.[i] ? `<span class="nombre-largo">${esc(nm)}</span><span class="nombre-corto" aria-hidden="true">${esc(c.cortos[i])}</span>` : esc(nm);
+    return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}"${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
+  }).join('');
+}
+/** Un elemento por carril: su nombre a la izquierda y su franja, donde van las marcas. Se conservan entre pintados, así
+    que una marca que tiene el foco del teclado lo sigue teniendo. */
+const carrilEls = new Map();
 let claveEtiquetas = '';
 function pintarCarriles() {
-  const clave = carrilesVista.map((c) => `${c.id}:${c.filas}:${L.fijados.includes(c.id)}:${(c.nombres || []).join('/')}`).join('|') + `|${ocultos.length}`;
+  const clave = carrilesVista.map((c) => `${c.id}:${L.fijados.includes(c.id)}:${(c.nombres || []).join('/')}`).join('|');
   if (clave === claveEtiquetas) return;
   claveEtiquetas = clave;
-  const n = ocultos.length;
-  $('#carriles').innerHTML = `<div class="carriles-eje"><button type="button" class="carriles-boton" data-linea="carriles" aria-label="Elegir carriles${n ? `: ${n} sin sitio` : ''}" title="Elegir y fijar carriles">Carriles${n ? `<b> +${n}</b>` : ''}</button></div>${carrilesVista.map((c) => {
-    const fijo = L.fijados.includes(c.id);
-    const n2 = c.n2 ? BE.marcaNivel(2) : '';
-    const pin = `<button type="button" class="carril-pin${fijo ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${fijo}" aria-label="${fijo ? 'Soltar' : 'Fijar'} el carril ${esc(c.nombre)}" title="${fijo ? 'Soltar este carril' : 'Fijar este carril arriba'}">${ICONOS.alfiler}</button>`;
-    const nombres = c.nombres || [c.nombre];
-    const alto = c.nombres ? '' : (c.filas > 1 ? ` style="height:${c.filas * CARRIL}px"` : '');
-    return nombres.map((nm, i) => {
-      const ayuda = c.ayudas?.[i] || c.ayuda;
-      const icono = c.iconos ? (ICONOS[c.iconos[i]] || '') : (ICONOS[c.icono] || '');
-      const clase = c.clases?.[i] ? ` ${c.clases[i]}` : '';
-      const mas = c.tipo === 'meses' && i === Math.max(0, (c.tiposFila || []).indexOf('hebreos')) ? enlaceCalendario('carril-ayuda', '?', '¿Qué meses son estos?') : '';
-      const texto = c.cortos?.[i] ? `<span class="nombre-largo">${esc(nm)}</span><span class="nombre-corto" aria-hidden="true">${esc(c.cortos[i])}</span>` : esc(nm);
-      return `<div class="be-lane-label${c.persona ? ' carril-persona' : ''}${clase}"${alto}${ayuda ? ` title="${esc(ayuda)}"` : ''}>${icono}${c.persona ? `<button type="button" class="carril-nombre enlace-titulo" data-sel="persona:${esc(c.persona)}">${esc(nm)}</button><span class="edad" data-edad="${esc(c.persona)}"></span>` : `<span>${texto}</span>`}${mas}${i === 0 ? `${n2}${pin}` : ''}</div>`;
-    }).join('');
-  }).join('')}`;
+  const filas = $('#linea-filas');
+  if (!$('#carriles .carriles-boton')) $('#carriles').innerHTML = '<button type="button" class="carriles-boton" data-linea="carriles" aria-label="Elegir y fijar carriles" title="Elegir y fijar carriles">Carriles</button>';
+  const vivos = new Set();
+  for (const c of carrilesVista) {
+    let x = carrilEls.get(c.id);
+    if (x && x.c !== c) { x.el.remove(); carrilEls.delete(c.id); x = null; }   // otra carga de datos: marcas nuevas
+    if (!x) {
+      const el = document.createElement('div');
+      el.className = `carril carril--${c.tipo}`;
+      el.dataset.carril = c.id;
+      el.innerHTML = `<div class="carril-rotulo"></div><div class="carril-pista">${c.tipo === 'meses' ? '<svg class="meses-svg" aria-hidden="false"></svg>' : ''}</div>`;
+      x = { c, el, rotulo: el.firstElementChild, pista: el.lastElementChild, shown: new Set() };
+      carrilEls.set(c.id, x);
+    }
+    x.rotulo.innerHTML = rotuloHtml(c);
+    filas.insertBefore(x.el, $('#linea-medida'));   // en su orden, antes de la medida de la letra
+    vivos.add(c.id);
+  }
+  for (const [id, x] of carrilEls) if (!vivos.has(id)) x.el.remove();
 }
 
 // ---------------------------------------------------------------------------
-// Dibujo de la línea
+// Dibujo de la línea: la regla arriba (fija al bajar por los carriles), los carriles con sus marcas y, detrás de ellas,
+// un fondo con la línea del cursor, las noches, la regla, el bucle y las bandas «juntos».
 // ---------------------------------------------------------------------------
-function defs() {
-  const grad = (id, a, b, c, d) => `<linearGradient id="${id}" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="${a}"/><stop offset=".06" stop-color="#fff" stop-opacity="${b}"/><stop offset=".94" stop-color="#fff" stop-opacity="${c}"/><stop offset="1" stop-color="#fff" stop-opacity="${d}"/></linearGradient>`;
-  return `<defs>
-    ${grad('g-difuso', 0, 1, 1, 0)}${grad('g-difuso-i', 0, 1, 1, 1)}${grad('g-difuso-d', 1, 1, 1, 0)}
-    <mask id="m-difuso" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-difuso)"/></mask>
-    <mask id="m-difuso-i" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-difuso-i)"/></mask>
-    <mask id="m-difuso-d" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-difuso-d)"/></mask>
-    <linearGradient id="g-cambio-d" x1="0" x2="1"><stop offset=".04" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    <linearGradient id="g-cambio-i" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".96" stop-color="#fff" stop-opacity="1"/></linearGradient>
-    <mask id="m-cambio-d" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-cambio-d)"/></mask>
-    <mask id="m-cambio-i" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#g-cambio-i)"/></mask>
-    <pattern id="p-rayas" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="8" fill="rgba(122,92,142,.13)"/></pattern>
-    <pattern id="p-rayas-claras" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(255,255,255,.45)"/></pattern>
-    <pattern id="p-rayas-grises" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="2.5" height="7" fill="var(--ink-3)" fill-opacity=".35"/></pattern>
-    <pattern id="p-hebreo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="6" fill="rgba(74,65,54,.16)"/></pattern>
-    <pattern id="p-calculo" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="7" fill="rgba(155,61,90,.18)"/></pattern>
-  </defs>`;
+/** Geometría de las marcas. La fila crece con la letra («Letra grande»); con el dedo, filas y dianas de 44 px. */
+const G = { row: 22, dotR: 5, pad: 6, fade: 14, fadeOpen: 36, gap: 10, maxLabel: 0, coarse: false };
+let claveLetra = '', medida = null, lienzo = null, esperaLetra = null;
+const tactil = () => matchMedia('(pointer: coarse)').matches;
+/** Lee la letra de verdad de los nombres (la de .m-nombre, con los --fs-* del tema) y prepara cómo medirlos. Solo cambia
+    con la letra, el modo táctil o la carga de las fuentes: entonces los nombres se vuelven a medir y las filas a repartir. */
+function prepararLetra() {
+  const probe = $('#linea-medida');
+  const cs = getComputedStyle(probe), ci = getComputedStyle(probe.firstElementChild);
+  const fuente = (s) => `${s.fontStyle} ${s.fontWeight} ${s.fontSize} ${s.fontFamily}`;
+  const fName = fuente(cs), fTag = fuente(ci), coarse = tactil();
+  // Solo cuenta la letra de las marcas: que cargue otra (la de la ficha) no puede repartir de nuevo las filas.
+  const lista = !document.fonts || (document.fonts.check(fName) && document.fonts.check(fTag));
+  if (!lista && !esperaLetra) {
+    esperaLetra = Promise.all([document.fonts.load(fName), document.fonts.load(fTag)]).catch(() => null)
+      .then(() => { esperaLetra = null; sucio.linea = true; programar(); });
+  }
+  // Con el dedo, un nombre de varias líneas no pasa de la mitad de la pista menos su punto: así cabe entero a un lado
+  // del punto, esté donde esté, y nunca lo tapa.
+  const maxLabel = coarse ? Math.max(100, Math.floor((anchoLinea - 24) / 2) - 8) : 0;
+  const clave = `${fName}|${fTag}|${coarse}|${lista}|${maxLabel}`;
+  if (clave === claveLetra) return;
+  claveLetra = clave;
+  const fs = parseFloat(cs.fontSize) || 12.5;
+  // Con el dedo un nombre va en tres líneas como mucho (interlínea 1,12 en linea.css): la fila las cabe con cualquier letra.
+  Object.assign(G, { coarse, row: coarse ? Math.max(44, Math.ceil(3 * 1.12 * fs) + 2) : Math.max(22, Math.ceil(fs * 1.75)), dotR: coarse ? 6 : 5, maxLabel });
+  lienzo = lienzo || document.createElement('canvas').getContext('2d');
+  lienzo.font = fName;
+  const space = lienzo.measureText(' ').width;
+  medida = {
+    space,
+    name: (s) => { lienzo.font = fName; return lienzo.measureText(s).width; },
+    tag: (s) => { lienzo.font = fTag; return lienzo.measureText(s).width; },
+  };
+  for (const c of carrilesVista) if (c.lane) c.lane.medida = null;
 }
+const altoRotulo = () => (G.coarse ? 44 : 26);
+const decorDe = (c) => (c.tipo === 'persona' ? 8 : 2);   // la franja de adorno de una persona, arriba de sus filas
+
+/** Mientras se arrastra la franja, las filas se congelan: ninguna marca cambia de fila y ningún carril encoge. */
+let hold = null;
+let desdeFranja = false, ultimaSel = '';
 function pintarLineaFija() {
   const svg = $('#linea-svg');
-  const pista = $('#pista');
+  const pista = $('#pista'), cuerpo = $('#linea-cuerpo');
   anchoLinea = pista.clientWidth || 800;
-  altoPista = pista.clientHeight || 200;
-  svg.setAttribute('width', anchoLinea); svg.setAttribute('height', altoPista);
-  svg.setAttribute('viewBox', `0 0 ${anchoLinea} ${altoPista}`);
+  cabAlto = pista.offsetHeight || EJE;
+  // Todo lo que el pintado necesita medir del panel se lee aquí, antes de escribir nada: leerlo después de poner los
+  // altos de los carriles obligaría al navegador a recolocar la página otra vez.
+  const med = medidasPanel(cuerpo);
+  const focoAntes = document.activeElement?.closest?.('#linea-filas .m') || null;
   const s = span(), pxAnio = anchoLinea / s;
+  svg.setAttribute('width', anchoLinea); svg.setAttribute('height', cabAlto);
+  svg.setAttribute('viewBox', `0 0 ${anchoLinea} ${cabAlto}`);
+  prepararLetra();
   elegirCarriles();
   pintarCarriles();
-  const partes = [defs()];
-  carrilesVista.forEach((c) => { for (let k = 0; k < c.filas; k++) if (((c.y - EJE) / CARRIL + k) % 2) partes.push(`<rect class="fila-par" x="0" y="${c.y + k * CARRIL}" width="${anchoLinea}" height="${CARRIL}"/>`); });
-  partes.push(noches());
-  partes.push(`<g class="eje">${marcasEje(pxAnio)}</g>`);
-  partes.push(densidad());
   const V = BE.viajeActual(BE.dondeEsta(E.t));
-  if (eleccion && eleccion.vista !== E.vista.join('~')) cerrarEleccion();
-  if (L.grupo && (L.grupo.sel !== BE.selTexto(E.sel) || !L.grupo.trs.some(visible))) L.grupo = null;   // la lista señala un punto que ya se ha movido
-  rotulos = [];
-  for (const c of carrilesVista) {
-    if (c.tipo === 'pablo') pintarPablo(partes, c.y, V, pxAnio);
-    else if (c.tipo === 'cartas') pintarCartas(partes, c.y);
-    else if (c.tipo === 'sucesos') pintarSucesos(partes, c);
-    else if (c.tipo === 'periodos') pintarPeriodos(partes, c);
-    else if (c.tipo === 'persona') pintarPersona(partes, c);
-    else if (c.tipo === 'meses') pintarMeses(partes, c);
-    else if (c.tipo === 'secular') pintarSecular(partes, c);
-  }
-  pintarJuntos(partes);
-  partes.push(`<g class="capa-rotulos">${rotulos.join('')}</g>`);
-  rotulos = [];
-  pintarRegla(partes);
-  pintarBucle(partes);
-  pintarMarcadores(partes);
-  partes.push('<g id="linea-cursor"></g>');
-  // El SVG se reescribe entero: el elemento que tenía el foco del teclado lo recupera (el mismo data-sel), si sigue.
-  const conFoco = svg.contains(document.activeElement), foco = conFoco ? document.activeElement.closest('g.item[data-sel]')?.dataset.sel : null;
-  svg.innerHTML = partes.join('');
-  // Atenuar solo tiene sentido si en la vista hay algo que resaltar: si nada de lo que se ve tiene que ver con la
-  // selección (Edén en 1473 a.e.c.), todo va a opacidad plena en vez de quedar gris.
-  svg.classList.toggle('sin-foco', !![...svg.querySelectorAll('.item.atenuado')].length && ![...svg.querySelectorAll('.item.resaltado')].some((g) => { const b = g.getBBox(); return b.x + b.width > 0 && b.x < anchoLinea; }));
-  marcarElegido(svg);
-  if (conFoco) ((foco && svg.querySelector(`g.item[data-sel="${CSS.escape(foco)}"]`)) || pista).focus({ preventScroll: true });
+  rejilla = [];
+  const regla = [defsRegla(), `<g class="eje">${marcasEje(pxAnio)}</g>`, densidad(), selEnRegla(), reglaEnRegla(), bucleEnRegla(), pintarMarcadores(), '<g id="linea-cursor"></g>'];
+  svg.innerHTML = regla.join('');
+  pintarFilas(V, med);
+  // La marca con el foco cuyo carril se quitó o se escondió (una persona soltada con Esc): el foco no cae a la página,
+  // pasa a la parada del tabulador de la franja.
+  if (focoAntes && (!focoAntes.isConnected || focoAntes.closest('[hidden]'))) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
   sucio.cursor = true;
   pintarVelocidad();
   let zon = '';
@@ -373,398 +439,408 @@ function pintarLineaFija() {
   ajustarBarra();
   pintarLineaFija.claveV = V?.id;
 }
+function defsRegla() {
+  return '<defs><pattern id="p-rayas" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="3" height="8" fill="rgba(122,92,142,.13)"/></pattern></defs>';
+}
+const DEFS_MESES = '<defs><pattern id="p-hebreo" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.4" height="6" fill="rgba(74,65,54,.16)"/></pattern></defs>';
 
-/** Lo seleccionado se distingue de todo lo demás (be-64b.1): un anillo de tinta alrededor de su forma, con un hueco,
-    que no depende del color. */
-function marcarElegido(svg) {
-  if (!E.sel) return;
-  for (const g of svg.querySelectorAll(`g.item[data-sel="${CSS.escape(BE.selTexto(E.sel))}"]`)) {
-    const b = g.getBBox();
-    if (!b.width && !b.height) continue;
-    g.classList.add('elegido');
-    const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    r.setAttribute('class', 'anillo-elegido');
-    r.setAttribute('x', b.x - 4); r.setAttribute('y', b.y - 4); r.setAttribute('width', b.width + 8); r.setAttribute('height', b.height + 8); r.setAttribute('rx', 8);
-    g.insertBefore(r, g.querySelector('title')?.nextSibling || g.firstChild);   // el título sigue siendo el primer hijo
+/** Todas las filas: reparte cada carril (linea-filas.js), da a cada uno su alto, pinta el fondo y pone en la página las
+    marcas cercanas a lo que se ve. Un carril sin nada en la vista no ocupa sitio y se nombra en la línea del final. */
+/** Lo que se mide del panel para colocar las marcas y el botón de la marca elegida. */
+function medidasPanel(cuerpo = $('#linea-cuerpo')) {
+  return { vh: cuerpo.clientHeight, top: cuerpo.scrollTop, cab: cuerpo.offsetTop, wCar: $('#carriles').offsetWidth, hLinea: $('#linea').clientHeight };
+}
+function pintarFilas(V, med) {
+  const view = { v0: E.vista[0], span: span() };
+  const geom = { w: anchoLinea, t0: BE.T_MIN, G, key: `${claveLetra}|${G.row}` };
+  const vacios = [];
+  let top = 0, shownN = 0;
+  const selT = BE.selTexto(E.sel);
+  let resaltadoVisto = false, atenuadoVisto = false;
+  for (const c of carrilesVista) {
+    const x = carrilEls.get(c.id);
+    c.top = top;
+    if (c.tipo === 'meses') {
+      c.alto = Math.max(1, c.filas || 1) * CARRIL;
+      const partes = [DEFS_MESES];
+      pintarMeses(partes, { y: 0, tiposFila: c.tiposFila });
+      x.pista.firstElementChild.setAttribute('width', anchoLinea);
+      x.pista.firstElementChild.setAttribute('height', c.alto);
+      x.pista.firstElementChild.innerHTML = partes.join('');
+    } else {
+      const lane = marcasDe(c);
+      if (lane.medida !== claveLetra) { FIL.measure(lane.items, medida, G); lane.medida = claveLetra; lane.packKey = null; }
+      c.decor = decorDe(c);
+      c.out = FIL.layoutLane(lane, view, geom, hold);
+      c.alto = c.out.nRows ? Math.max(c.out.nRows * G.row + c.decor + 3, altoRotulo()) : 0;
+      if (!c.alto) vacios.push(c.nombre);
+      for (const it of c.out.visible) {
+        it._clase = dim(it.sel);
+        if (it._clase === ' resaltado' && it._hit[1] > 0 && it._hit[0] < anchoLinea) resaltadoVisto = true;
+        if (it._clase === ' atenuado') atenuadoVisto = true;
+      }
+    }
+    x.el.hidden = !c.alto;
+    x.el.classList.toggle('par', !!c.alto && shownN++ % 2 === 1);   // el fondo alterno cuenta solo los carriles que se ven
+    x.el.style.height = `${c.alto}px`;
+    top += c.alto;
   }
+  altoFilas = top;
+  const filas = $('#linea-filas');
+  filas.style.setProperty('--fila', `${G.row}px`);
+  filas.classList.toggle('arrastrando', !!hold);
+  // Atenuar solo tiene sentido si en la vista hay algo que resaltar: si nada de lo que se ve tiene que ver con la
+  // selección (Edén en 1473 a.e.c.), todo va a opacidad plena en vez de quedar gris.
+  filas.classList.toggle('sin-foco', atenuadoVisto && !resaltadoVisto);
+  const vac = $('#linea-vacios');
+  vac.textContent = vacios.length ? `Sin nada en esta vista: ${vacios.join(', ')}.` : '';
+  vac.hidden = !vacios.length;
+  pintarFondo();
+  ventanaMarcas(true, V, selT, med);
+  // Una selección que llega de fuera de la franja (la búsqueda, una ficha, el grafo, la dirección) baja los carriles
+  // hasta su marca, una vez. Un clic en una marca nunca los mueve.
+  if (selT !== ultimaSel) {
+    if (selT && !desdeFranja) { const it = marcasDeSel(selT)[0]; if (it) { verFila(it); med = null; } }
+    ultimaSel = selT;
+  }
+  desdeFranja = false;
+  pintarIrSel(med);
 }
 
-/** Pablo: un tramo por viaje, con sus paradas como marcas (v0). */
-function pintarPablo(partes, yP, V, pxAnio) {
-  for (const v of BE.D.viajes) {
-    const ps = BE.P.filter((x) => x.viaje === v);
-    if (!ps.length) continue;
-    const a = ps[0].a, b = ps[ps.length - 1].b;
-    if (b < E.vista[0] || a > E.vista[1]) continue;
-    const x0 = xDe(a), x1 = Math.max(xDe(b), x0 + 4);
-    const algunaRes = E.resaltado && ps.some((x) => E.resaltado.claves.has(`parada:${x.key}`));
-    const cls = E.resaltado ? (E.resaltado.claves.has(`viaje:${v.id}`) || algunaRes ? ' resaltado' : ' atenuado') : '';
-    const w = x1 - x0;
-    const color = BE.colorViaje(v.id), tn = tonos(color);
-    const etiqueta = recortar(`${v.nombre} · ${fechaCorta(v.fecha)}`, w - 14);
-    // El tramo del viaje es el fondo de sus paradas: un clic en una parada no pregunta si se quería el viaje.
-    partes.push(`<g class="item viaje${v === V ? ' activo' : ''}${cls}" data-sel="viaje:${esc(v.id)}" data-fondo="1" tabindex="0" role="button" aria-label="${esc(v.nombre)}, ${esc(fechaCorta(v.fecha))}">
-      <rect x="${x0}" y="${yP + 5}" width="${w}" height="20" rx="5" class="barra-viaje${tn.forma}" style="fill:${color}"${v.fecha?.aprox ? ' mask="url(#m-difuso)"' : ''}/></g>`);
-    if (etiqueta) rotulo(`viaje:${v.id}`, cls, `<text x="${x0 + Math.min(12, w * 0.06) + 4}" y="${yP + 19}" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(etiqueta)}</text>`);
-    if (pxAnio > 45) {
-      for (const st of ps) {
-        const x = xDe(st.a);
-        // Una parada solo pasa a gris si su viaje también: sobre la barra de color, el gris no se leería.
-        const c2 = cls === ' atenuado' ? dim(`parada:${st.key}`) : dim(`parada:${st.key}`).replace(' atenuado', '');
-        // En los bordes difuminados de un viaje con fecha aproximada la barra casi no pinta: ahí el contorno blanco se
-        // perdería sobre el fondo, así que va en el color de la tinta (be-64b.1).
-        const f = w > 0 ? (x - x0) / w : 0.5;
-        const enBorde = v.fecha?.aprox && Math.min(f, 1 - f) < 0.06 * 0.7 ? ' en-borde' : '';
-        partes.push(`<g class="item parada${c2}" data-sel="parada:${esc(st.key)}"><title>${esc(st.lugar.nombre)} · ${esc(st.p.referencia)}</title>
-          <rect x="${x - 1}" y="${yP + 7}" width="${Math.max(2, xDe(st.b) - x + 2)}" height="16" rx="1" class="marca-parada${st.narrativa ? ' narrativa' : ''}${enBorde}"/></g>`);
+/** El fondo, detrás de las marcas y del alto de todos los carriles. */
+let rejilla = [];
+function pintarFondo() {
+  const f = $('#linea-fondo');
+  const h = Math.max(1, altoFilas);
+  f.setAttribute('width', anchoLinea); f.setAttribute('height', h);
+  f.setAttribute('viewBox', `0 0 ${anchoLinea} ${h}`);
+  f.style.height = `${h}px`;
+  const partes = [defsRegla()];
+  partes.push(noches(h));
+  partes.push(`<g class="rejilla-lineas">${rejilla.map((x) => `<line x1="${x}" x2="${x}" y1="0" y2="${h}" class="rejilla"/>`).join('')}</g>`);
+  partes.push(adornosPersonas());
+  partes.push(pintarJuntos());
+  partes.push(reglaEnFondo(h));
+  partes.push(bucleEnFondo(h));
+  partes.push('<g id="fondo-cursor"></g>');
+  f.innerHTML = partes.join('');
+}
+
+// ---------------------------------------------------------------------------
+// Marcas: un botón por marca, con su dibujo y su nombre
+// ---------------------------------------------------------------------------
+const colorDe = (it) => (typeof it.color === 'function' ? it.color() : it.color);
+const CERT_ARIA = { exact: 'fecha de la fuente', approx: 'fecha aproximada', computed: 'fecha calculada', uncertain: 'fecha dudosa' };
+function crearMarca(it) {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}`;
+  b.dataset.sel = it.sel;
+  b.dataset.id = it.id;
+  b.tabIndex = -1;
+  // Lo calculado lo dice el nombre accesible con palabras: «situada por el orden del relato» si sale de él.
+  const cert = it.cert === 'computed' && /narrativa/.test(it.fechaTipo || '') ? 'situada por el orden del relato' : CERT_ARIA[it.cert];
+  b.setAttribute('aria-label', `${it.titulo ? `${it.titulo}, ` : ''}${it.name}. ${it.tipo}, ${it.shape === 'moment' ? 'momento' : 'tramo'}, ${cert}${it.fecha ? `. ${it.fecha}` : ''}`);
+  b.setAttribute('aria-pressed', 'false');
+  if (it.shape === 'span') {
+    it.barEl = document.createElement('span');
+    it.barEl.className = 'm-barra';
+    b.appendChild(it.barEl);
+  } else {
+    it.winEl = document.createElement('span');
+    it.winEl.className = `m-ventana${it.cert === 'exact' ? ' topes' : ''}`;
+    it.dotEl = document.createElement('span');
+    it.dotEl.className = 'm-punto';
+    b.append(it.winEl, it.dotEl);
+  }
+  const lab = document.createElement('span');
+  lab.className = 'm-nombre';
+  const txt = document.createElement('span');
+  txt.className = 't';
+  txt.textContent = it.name;
+  const tag = FIL.TAG[it.cert];
+  if (tag) { const i = document.createElement('i'); i.textContent = tag; txt.append(' ', i); }
+  lab.appendChild(txt);
+  b.appendChild(lab);
+  it.labEl = lab;
+  it.el = b;
+  return b;
+}
+/** Colores de la marca, que dependen del tema: se vuelven a poner al cambiarlo. */
+function colorear(it) {
+  const tema = document.documentElement.className;
+  if (it._tema === tema) return;
+  it._tema = tema;
+  const c = colorDe(it), hueca = FIL.hollow(it);
+  const forma = it.barEl || it.dotEl;
+  forma.style.borderColor = hueca ? c : '';
+  forma.style.background = hueca ? 'var(--surface)' : c;
+  if (it.winEl) it.winEl.style.color = c;
+  // Una fecha secular se pinta clara con contorno de trazos (linea.css): su nombre va en el color secular, no según c.
+  const tn = it.secular ? { texto: '', forma: '' } : tonos(c);
+  it.labEl.classList.toggle('sobre-claro', !!tn.texto);
+  // Una forma llena que casi no se distingue del fondo de la línea lleva borde (be-64b.1).
+  forma.classList.toggle('con-borde', !hueca && !!tn.forma);
+}
+function mascara(el, l, r) {
+  const v = l || r ? `linear-gradient(90deg, transparent 0, #000 ${l}px, #000 calc(100% - ${r}px), transparent 100%)` : '';
+  el.style.maskImage = v; el.style.webkitMaskImage = v;
+}
+/** Pone una marca en su sitio: caja, dibujo, nombre y estado (elegida, resaltada, atenuada). */
+function pintarMarca(it, top, selT, V) {
+  const el = it.el || crearMarca(it);
+  colorear(it);
+  // La caja del botón se queda dentro de la pista, a 2 px del borde: así el anillo del foco se ve entero. El dibujo y el
+  // nombre van en su sitio de siempre, y lo que sale de la pista lo recorta la pista.
+  let h0 = Math.max(it._hit[0], 2), h1 = Math.min(it._hit[1], anchoLinea - 2);
+  if (h1 - h0 < 4) [h0, h1] = it._hit;
+  el.style.left = `${h0}px`; el.style.width = `${h1 - h0}px`;
+  el.style.top = `${top}px`; el.style.height = `${G.row}px`;
+  if (it.barEl) {
+    const [bx, bw, fl, fr] = it._bar;
+    it.barEl.style.left = `${bx - h0}px`; it.barEl.style.width = `${bw}px`;
+    if (it._fl !== fl || it._fr !== fr) { mascara(it.barEl, fl, fr); it._fl = fl; it._fr = fr; }
+  }
+  if (it.winEl) {
+    if (it._win) {
+      const [wx, ww, fl, fr] = it._win;
+      it.winEl.hidden = false;
+      it.winEl.style.left = `${wx - h0}px`; it.winEl.style.width = `${ww}px`;
+      if (it._fl !== fl || it._fr !== fr) { mascara(it.winEl, fl, fr); it._fl = fl; it._fr = fr; }
+    } else it.winEl.hidden = true;
+    it.dotEl.style.left = `${it._dot - G.dotR - h0}px`;
+  }
+  it.labEl.style.left = `${it._lx - h0}px`;
+  const varias = it.lines > 1 && !it._in;
+  it.labEl.classList.toggle('varias', varias);
+  it.labEl.style.width = varias ? `${it.labelW}px` : '';
+  it.labEl.classList.toggle('en-barra', it._labOnFill);
+  it.labEl.classList.toggle('fuera', !it._labOnFill);
+  const elegida = it.sel === selT;
+  el.setAttribute('aria-pressed', String(elegida));
+  const clase = `m${it.secular ? ' m--secular' : ''}${FIL.hollow(it) ? ' m--hueca' : ''}${it._clase || ''}${V && it.sel === `viaje:${V.id}` ? ' activo' : ''}`;
+  if (el.className !== clase) el.className = clase;
+}
+/** Solo van en la página las marcas de las filas cercanas a lo que se ve (una altura del panel por arriba y otra por
+    abajo): a escala de milenios los carriles miden miles de píxeles y todas sus marcas a la vez harían lento el
+    arrastre. Las filas y los altos son los de verdad, así que al bajar cada nombre está donde debe. */
+function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = BE.selTexto(E.sel), med = medidasPanel()) {
+  const vh = med.vh || 300;
+  const y0 = med.top - vh, y1 = med.top + 2 * vh;
+  const conFoco = document.activeElement;
+  let perdioFoco = false;
+  for (const c of carrilesVista) {
+    const x = carrilEls.get(c.id);
+    if (!x || c.tipo === 'meses') continue;
+    const keep = new Set();
+    if (c.alto) {
+      for (const it of c.out.visible) {
+        const top = c.decor + it._drow * G.row;
+        const y = c.top + top;
+        // La marca con el foco se queda en la página aunque la rueda la saque de la ventana: el foco no salta a otra.
+        if ((y + G.row < y0 || y > y1) && !(it.el && it.el === conFoco)) continue;
+        keep.add(it);
+        const nueva = !it.el || it.el.parentNode !== x.pista;
+        if (nueva || repintar) pintarMarca(it, top, selT, V);
+        if (nueva) x.pista.appendChild(it.el);
       }
     }
+    for (const it of x.shown) if (!keep.has(it) && it.el) { perdioFoco ||= it.el === document.activeElement; it.el.remove(); }
+    x.shown = keep;
+  }
+  tabuladores();
+  // Una marca con el foco que sale de la ventana se quita como las demás (si no, quedaría pintada donde ya no está);
+  // el foco pasa a la marca que ahora es la parada del tabulador, sin mover nada.
+  if (perdioFoco) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
+}
+const marcasVisibles = () => carrilesVista.flatMap((c) => (c.alto && c.out ? c.out.visible.map((it) => ({ it, c })) : []));
+const marcasDeSel = (selT) => marcasVisibles().filter(({ it }) => it.sel === selT).map(({ it }) => it);
+const carrilDe = (it) => carrilesVista.find((c) => c.out && c.out.visible.includes(it));
+const topDe = (it, c = carrilDe(it)) => c.top + c.decor + it._drow * G.row;
+/** Baja o sube los carriles lo justo para que se vea la fila de la marca. */
+function verFila(it) {
+  const cuerpo = $('#linea-cuerpo');
+  const y = topDe(it), alto = cuerpo.clientHeight - cabAlto, m = 4;
+  if (y - m < cuerpo.scrollTop) cuerpo.scrollTop = Math.max(0, y - m);
+  else if (y + G.row + m > cuerpo.scrollTop + alto) cuerpo.scrollTop = y + G.row + m - alto;
+}
+
+// ---------------------------------------------------------------------------
+// Teclado: la franja es una sola parada del tabulador; las flechas van de marca en marca sin mover el cursor
+// ---------------------------------------------------------------------------
+let focoId = null;
+/** Filas de marcas de arriba abajo, carril por carril; cada una de izquierda a derecha, solo lo que cae en la franja. */
+function filasTeclado() {
+  const out = [];
+  for (const c of carrilesVista) {
+    if (!c.alto || !c.out) continue;
+    const porFila = new Map();
+    for (const it of c.out.visible) if (it._hit[1] > 0 && it._hit[0] < anchoLinea) { if (!porFila.has(it._drow)) porFila.set(it._drow, []); porFila.get(it._drow).push(it); }
+    for (const r of [...porFila.keys()].sort((a, b) => a - b)) out.push(porFila.get(r).sort((a, b) => a._hit[0] - b._hit[0]));
+  }
+  return out;
+}
+/** Solo una marca lleva tabindex 0: la que tuvo el foco, la elegida o la primera. */
+function tabuladores() {
+  const todas = marcasVisibles().filter(({ it }) => it.el?.isConnected).map(({ it }) => it);
+  const selT = BE.selTexto(E.sel);
+  const objetivo = todas.find((it) => it.id === focoId) || todas.find((it) => it.sel === selT) || filasTeclado().flat().find((it) => it.el?.isConnected);
+  for (const it of todas) it.el.tabIndex = it === objetivo ? 0 : -1;
+}
+function enfocar(it) {
+  focoId = it.id;
+  verFila(it);
+  ventanaMarcas(false);
+  it.el?.focus({ preventScroll: true });
+}
+function teclaMarca(e) {
+  const b = e.target.closest('.m');
+  if (!b || e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) return;
+  const k = e.key;
+  if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(k)) return;
+  e.preventDefault(); e.stopPropagation();   // las flechas de una marca no mueven el cursor (base.js)
+  const rows = filasTeclado();
+  const ri = rows.findIndex((r) => r.some((it) => it.id === b.dataset.id));
+  if (ri < 0) return;
+  const row = rows[ri], i = row.findIndex((it) => it.id === b.dataset.id), it = row[i];
+  if (k === 'ArrowRight' || k === 'ArrowLeft') { const n = row[i + (k === 'ArrowRight' ? 1 : -1)]; if (n) enfocar(n); }
+  else if (k === 'Home' || k === 'End') enfocar(row[k === 'Home' ? 0 : row.length - 1]);
+  else {
+    const next = rows[ri + (k === 'ArrowDown' ? 1 : -1)];
+    if (!next) return;
+    const cx = (it._hit[0] + it._hit[1]) / 2;
+    let best = next[0];
+    for (const c of next) if (Math.abs((c._hit[0] + c._hit[1]) / 2 - cx) < Math.abs((best._hit[0] + best._hit[1]) / 2 - cx)) best = c;
+    enfocar(best);
   }
 }
-/** Cartas: las que comparten fechas van juntas. Tramo si la fecha abarca varios años; si no, rombo en el momento en que
-    el modelo pone al escritor donde la escribió. Los rombos a menos de 24 px se funden en uno. Dos filas sin solapes. */
-function pintarCartas(partes, y0) {
-  const grupos = new Map(), rombos = [];
-  for (const c of BE.cartasOrdenadas()) {
-    const tr = tramo(c.fecha);
-    if (!tr) continue;
-    if (tr[1] - tr[0] > 1) {
-      const k = `${tr[0]}|${tr[1]}`;
-      if (!grupos.has(k)) grupos.set(k, { tr, cartas: [] });
-      grupos.get(k).cartas.push(c);
-    } else rombos.push({ tr, x: xDe(BE.momentoCarta(c)), c });
-  }
-  rombos.sort((a, b) => a.x - b.x);
-  const gruposRombo = [];
-  for (const r of rombos) {
-    const g = gruposRombo.at(-1);
-    if (g && r.x - g.x < 24) g.cartas.push(r.c);
-    else gruposRombo.push({ tr: r.tr, x: r.x, cartas: [r.c] });
-  }
-  const items = [...grupos.values(), ...gruposRombo].map(({ tr, cartas, x }) => {
-    const esTramo = x == null;
-    const cortas = cartas.map(BE.abrCarta).join(' · ');
-    const nombre = cartas.length > 1 ? cortas : cartas[0].libro;
-    const etiqueta = `${nombre}${esTramo ? ` · ${fechaCorta(cartas[0].fecha).replace(' e.c.', '')}` : ''}`;
-    const x0 = esTramo ? xDe(tr[0]) : x - 7;
-    const x1 = esTramo ? Math.max(xDe(tr[1]), x0 + 6) : x0 + 14;
-    const lx = esTramo ? Math.max(x0, 0) + 8 : x0 + 19;
-    return { tr, cartas, esTramo, etiqueta, corto: cortas, x0, x1, lx, lw: anchoTexto(etiqueta) };
-  }).filter((it) => it.x1 > -300 && it.x0 < anchoLinea + 50);
-  empaquetar(items, [0, 1]);
-  for (const it of items) {
-    const y = y0 + it.fila * CARRIL;
-    const sel = E.sel?.tipo === 'carta' && it.cartas.some((c) => c.id === E.sel.id);
-    const principal = sel ? it.cartas.find((c) => c.id === E.sel.id) : it.cartas[0];
-    const res = E.resaltado ? (it.cartas.some((c) => E.resaltado.claves.has(`carta:${c.id}`)) ? ' resaltado' : ' atenuado') : '';
-    const cls = `item carta${sel ? ' seleccionada' : ''}${res}`;
-    const nombres = it.cartas.map((c) => c.libro).join(', ');
-    const aria = `aria-label="${esc(nombres)}, ${esc(fechaCorta(principal.fecha))}"`;
-    const forma = it.esTramo
-      ? `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-carta"/>`
-      : `<rect x="${it.x0 + 1}" y="${y + 9}" width="12" height="12" rx="2" transform="rotate(45 ${it.x0 + 7} ${y + 15})" class="rombo"/>`;
-    partes.push(`<g class="${cls}" data-sel="carta:${esc(principal.id)}" tabindex="0" role="button" ${aria}><title>${esc(nombres)} · ${esc(fechaCorta(principal.fecha))}</title>${forma}</g>`);
-    rotulo(`carta:${principal.id}`, res, textoItem(it, y, it.esTramo ? 'texto-carta' : 'texto-punto'));
-  }
+const vivo = (texto) => { const v = $('#linea-vivo'); if (v) v.textContent = texto; };
+
+/** Elegir una marca: el cursor entra en ella por el punto señalado (con el teclado, por el más cercano) y la marca se
+    elige y abre su ficha. Ni la escala, ni la vista, ni los carriles se mueven. Una fecha secular no mueve el cursor. */
+function elegirMarca(it, tSeñalado) {
+  const t = it.sinCursor ? null : FIL.clickTarget(it, tSeñalado, E.t, { v0: E.vista[0], span: span() }, BE.DIA);
+  if (t != null) setT(t);
+  desdeFranja = true;
+  const sel = BE.parseSel(it.sel);
+  if (sel && BE.selTexto(E.sel) !== it.sel) BE.seleccionar(sel, { mover: false });
+  else { sucio.linea = true; programar(); }
+  vivo(`Elegido: ${it.name}.${it.fecha ? ` ${it.fecha}.` : ''}`);
 }
-/** Sucesos: un tramo por suceso y un rombo si es un punto a esta escala. Los que se amontonan se agrupan en una píldora
-    («4 sucesos · 1473-1467», o «4 · 1473-1467» si no hay sitio) que acerca el zoom a su tramo (T-03). Lo calculado por nosotros va hueco y rosa (C-03). Van en dos
-    filas (tres con la línea ampliada) para que se pisen menos; lo que aún se pisa se elige al pulsar (elegirEntre). */
-function itemsSucesos() {
-  const s = span();
-  const base = (BE.D.eventos || []).map((e) => {
-    const tr = BE.ventanaEvento(e);
-    if (!tr) return null;
-    let x0 = xDe(tr[0]), x1 = Math.max(xDe(tr[1]), x0 + 6);
-    const punto = x1 - x0 < 9;
-    // Un rombo ocupa su diagonal, más que su tramo: se reparte y se rotula por lo que mide de verdad.
-    if (punto) { const cx = (x0 + x1) / 2; x0 = cx - 9; x1 = cx + 9; }
-    const lib = citas((e.pasajes || []).join('; '))[0]?.libro;
-    const lugar = BE.L[(e.lugares || [])[0]]?.nombre;
-    const corto = lib && lib.num !== 44 && lib.num >= 45 ? lib.abr : `${lugar || e.titulo.split(/[\s:,]/)[0]} ${anioCorto(tr[0])}`;
-    // Un suceso que ocupa buena parte de la vista es el fondo de su fila: los cortos van encima y no le quitan una fila.
-    const fondo = !punto && x1 - x0 > anchoLinea * 0.4;
-    return { e, tr, x0, x1, lx: punto ? x1 + 2 : Math.max(x0, 0) + 7, etiqueta: e.titulo, corto, lw: anchoTexto(e.titulo), punto, fondo };
-  }).filter((it) => it && it.x1 > -300 && it.x0 < anchoLinea + 50).sort((a, b) => a.x0 - b.x0);
-  // Agrupar lo que se pisa cuando la escala es de siglos o más. Una píldora ocupa lo que mide su texto, así que se
-  // repite hasta que ninguna forma pisa a la siguiente.
-  // Se agrupa con la etiqueta corta; rotular la alarga a «N sucesos · …» si cabe antes del siguiente de su fila.
-  const rotularGrupo = (g) => {
-    const n = g.grupo.length, ts = g.grupo.map((x) => x.tr[0]);
-    g.anios = rangoAnios(Math.min(...ts), Math.max(...ts));
-    g.etiqueta = `${n} · ${g.anios}`;
-    g.largo = `${n} sucesos · ${g.anios}`;
-    g.minimo = `${n} sucesos`;
-    g.lw = anchoTexto(g.etiqueta) + 12;
-    g.x1 = Math.max(g.xf, g.x0 + g.lw);
-    g.lx = g.x0 + 8; g.corto = g.etiqueta;
-  };
-  let items = base;
-  if (s > 60) {
-    for (let cambio = true; cambio;) {
-      cambio = false;
-      const out = [];
-      for (const it of items) {
-        const g = out.at(-1);
-        if (g && it.x0 < (g.grupo ? g.x1 : Math.max(g.x1, g.x0 + 14)) + 6) {
-          const miembros = [...(g.grupo || [g]), ...(it.grupo || [it])];
-          const nuevo = { grupo: miembros, x0: g.x0, xf: Math.max(g.xf ?? g.x1, it.xf ?? it.x1), tr: [Math.min(g.tr[0], it.tr[0]), Math.max(g.tr[1], it.tr[1])] };
-          rotularGrupo(nuevo);
-          out[out.length - 1] = nuevo;
-          cambio = true;
-        } else out.push(it);
-      }
-      items = out;
+
+// ---------------------------------------------------------------------------
+// La marca elegida fuera de la vista: un botón la trae sin cambiar la escala ni el cursor
+// ---------------------------------------------------------------------------
+function pintarIrSel(med) {
+  const b = $('#linea-ir-sel');
+  if (!b) return;
+  const selT = BE.selTexto(E.sel);
+  let it = null, c = null;
+  if (selT) {
+    const todas = carrilesVista.flatMap((x) => (x.lane && x.alto !== undefined ? x.lane.items.filter((y) => y.sel === selT).map((y) => [y, x]) : []));
+    if (todas.length === 1) [it, c] = todas[0];
+  }
+  b.hidden = true;
+  if (!it) return;
+  const lo = it.shape === 'moment' ? it.w0 : it.start, hi = it.shape === 'moment' ? it.w1 : it.end;
+  const m = med || medidasPanel();
+  const cab = m.cab;
+  let lado = null;
+  if (hi <= E.vista[0]) lado = 'izq';
+  else if (lo >= E.vista[1]) lado = 'der';
+  else if (c.out?.visible.includes(it)) {
+    const y = topDe(it, c);
+    if (y + G.row <= m.top) lado = 'arriba';
+    else if (y >= m.top + m.vh - cabAlto) lado = 'abajo';
+  }
+  if (!lado) return;
+  b.hidden = false;
+  b.dataset.lado = lado;
+  b.textContent = { izq: `← ${it.name}`, der: `${it.name} →`, arriba: `↑ ${it.name}`, abajo: `↓ ${it.name}` }[lado];
+  b.setAttribute('aria-label', `Llevar la vista a ${it.name}`);
+  b.style.left = b.style.right = b.style.top = b.style.bottom = '';
+  const wCar = m.wCar;
+  if (lado === 'izq') { b.style.left = `${wCar + 4}px`; b.style.top = `${cab + 2}px`; }
+  else if (lado === 'der') { b.style.right = '6px'; b.style.top = `${cab + 2}px`; }
+  // Arriba y abajo, en la columna de los nombres de carril: ahí no tapa ninguna marca.
+  else if (lado === 'arriba') { b.style.left = '4px'; b.style.top = `${cab + cabAlto + 4}px`; }
+  else { b.style.left = '4px'; b.style.bottom = `${m.hLinea - cab - m.vh + 6}px`; }
+  b.classList.toggle('en-rotulos', lado === 'arriba' || lado === 'abajo');
+  b._it = it;
+}
+function irASel(b) {
+  const it = b._it;
+  if (!it) return;
+  const lado = b.dataset.lado;
+  if (lado === 'arriba' || lado === 'abajo') { verFila(it); ventanaMarcas(false); pintarIrSel(); return; }
+  // Mueve la vista lo justo para que se vea la marca entera, o su comienzo si no cabe; la escala no cambia.
+  const s = span(), m = s * 0.05;
+  const lo = it.shape === 'moment' ? it.w0 : it.start, hi = it.shape === 'moment' ? it.w1 : it.end;
+  let v0 = lado === 'izq' ? lo - m : hi + m - s;
+  if (hi - lo > s - 2 * m) v0 = lo - m;
+  v0 = clamp(v0, BE.T_MIN, BE.T_MAX - s);
+  E.vista = [v0, v0 + s];
+  sucio.linea = true; programar();
+}
+
+/** Lo que dibuja la línea, para las pruebas (tests/site/timeline-marks.test.mjs): cada marca de los carriles que hay,
+    con su sitio si se ve. Solo lectura. */
+BE.lineaMarcas = () => {
+  const out = [];
+  for (const c of carrilesVista) {
+    if (!c.lane) continue;
+    const vis = new Set(c.alto && c.out ? c.out.visible : []);
+    for (const it of c.lane.items) {
+      const v = vis.has(it);
+      out.push({ id: it.id, sel: it.sel, lane: c.id, name: it.name, label: FIL.labelText(it), cert: it.cert, shape: it.shape, hollow: FIL.hollow(it),
+        t0: it.shape === 'moment' ? it.w0 : it.start, t1: it.shape === 'moment' ? it.w1 : it.end, anchor: it.anchor ?? null,
+        visible: v, row: v ? it._drow : null, x: v ? it._hit[0] : null, w: v ? it._hit[1] - it._hit[0] : null, top: v ? topDe(it, c) : null,
+        labelX: v ? it._lx : null, labelW: v ? FIL.lwOf(it) : null, secular: !!it.secular });
     }
   }
-  return items;
-}
-/** Años de una píldora: «1473-1467», «1473» si es uno solo y, si cruza el cambio de era, «4 a.e.c.-33 e.c.». */
-function rangoAnios(a, b) {
-  const ya = Math.floor(a), yb = Math.floor(b);
-  if (ya === yb) return anioCorto(a);
-  return (ya > 0) === (yb > 0) ? `${anioCorto(a)}-${anioCorto(b)}` : `${fmtAnio(ya)}-${fmtAnio(yb)}`;
-}
-/** Filas del carril de sucesos: las que de verdad hacen falta, hasta dos (tres con la línea ampliada). */
-function medirSucesos(max = L.grande ? 3 : 2) {
-  this.items = itemsSucesos();
-  empaquetar(this.items, [...Array(max).keys()]);
-  this.filas = Math.max(1, ...this.items.map((it) => it.fila + 1));
-}
-function pintarSucesos(partes, c) {
-  let items = c.items;
-  if (!items) { items = itemsSucesos(); empaquetar(items, [...Array(c.filas).keys()]); }
-  items.sort((a, b) => !!b.fondo - !!a.fondo);
-  c.items = null;
-  for (const it of items) {
-    const y = c.y + it.fila * CARRIL;
-    if (it.grupo) {
-      const tiene = (claves) => it.grupo.some((x) => claves.has(`evento:${x.e.id}`));
-      const res = L.grupo && tiene(L.grupo.claves) ? ' resaltado' : E.resaltado ? (tiene(E.resaltado.claves) ? ' resaltado' : ' atenuado') : '';
-      const nombres = it.grupo.map((x) => `${x.e.fecha?.texto || ''} · ${x.e.titulo}`).join('\n');
-      const primero = it.grupo.reduce((m, x) => (x.tr[0] < m.tr[0] ? x : m));
-      const rango = `data-rango="${it.tr[0]}~${it.tr[1]}" data-grupo="${esc(it.grupo.map((x) => x.e.id).join(','))}" data-primero="${esc(primero.e.id)}"`;
-      partes.push(`<g class="item grupo-sucesos${res}" ${rango} tabindex="0" role="button" aria-label="${it.grupo.length} sucesos, ${esc(it.anios)}: acercar"><title>${it.grupo.length} sucesos · ${esc(it.anios)}\n${esc(nombres)}\nPulsa para acercar</title>
-        <rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="9" class="pildora"/><text x="${it.x0 + 8}" y="${y + 19}" class="texto-pildora">${esc(it.etiqueta)}</text></g>`);
-      continue;
-    }
-    const e = it.e;
-    const calc = e.fecha?.tipo === 'derivada';
-    const est = BE.eventoEstimado(e);
-    const titulo = `${e.titulo} · ${e.fecha?.texto || ''}${calc ? ' · cálculo nuestro, sin verificar' : ''}`;
-    let forma;
-    if (it.punto) {
-      const cx = (it.x0 + it.x1) / 2;
-      forma = `<rect x="${cx - 6}" y="${y + 9}" width="12" height="12" rx="2" transform="rotate(45 ${cx} ${y + 15})" class="rombo-evento${calc ? ' calculo' : ''}"/>`;
-    } else {
-      forma = `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-evento${calc ? ' calculo' : ''}"${est && !calc ? mascara(difuso(e.fecha) || 'a') : ''}/>${calc ? `<rect x="${it.x0}" y="${y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" fill="url(#p-calculo)" pointer-events="none"/>` : ''}`;
-    }
-    if (calc && it.texto) it.texto = `${it.texto}${it.texto === it.etiqueta ? ' · cálculo nuestro' : ''}`;
-    const d = dim(`evento:${e.id}`);
-    partes.push(`<g class="item evento${calc ? ' evento-calculo' : ''}${it.fondo ? ' evento-fondo' : ''}${d}" data-sel="evento:${esc(e.id)}"${it.fondo ? ' data-fondo="1"' : ''} tabindex="0" role="button" aria-label="${esc(titulo)}"><title>${esc(titulo)}</title>
-      ${forma}</g>`);
-    rotulo(`evento:${e.id}`, d, textoItem(it, y, calc ? 'texto-calculo' : 'texto-evento'));
-  }
-}
-/** Periodos (eras, imperios, emperadores, reyes, gobernadores, sumos sacerdotes). Las eras y los imperios llevan su
-    nombre dentro y, si no cabe, al lado (T-03). Pulsar una era o un imperio acerca el zoom a él (T-02). */
-function pintarPeriodos(partes, c) {
-  const items = [];
-  for (const p of c.ps) {
-    const tr = tramoDibujoPeriodo(p);
-    if (!visible(tr)) continue;
-    const fila = c.fila.get(p) || 0;
-    items.push({ p, tr, fila, x0: xDe(tr[0]), x1: xDe(tr[1]), abierto: tr.abierto || '' });
-  }
-  items.sort((a, b) => a.x0 - b.x0);
-  items.forEach((it, i) => {
-    const { p, fila } = it;
-    const y = c.y + fila * CARRIL;
-    const x0 = it.x0, x1 = Math.max(it.x1, x0 + 3);
-    const texto = `${p.nombre}${c.clase === 'era' || c.clase === 'potencia' ? '' : ` · ${String(p.fecha.texto || fechaCorta(p.fecha)).replace(' e.c.', '')}`}`;
-    // Cambio sin fechar entre dos potencias: las dos barras se funden en el mismo tramo. La que se va lleva el nombre a
-    // la izquierda y la que llega, a la derecha; cada una usa como mucho su mitad.
-    const pareja = (o) => it.abierto && o.abierto && o.abierto !== it.abierto && o.x0 < x1 && o.x1 > x0;
-    const cruce = items.some((o) => o !== it && o.fila === fila && pareja(o));
-    const sig = items.slice(i + 1).find((o) => o.fila === fila && !pareja(o));
-    const fin = Math.min(sig && sig.x0 < x1 ? sig.x0 : x1, anchoLinea);   // el siguiente de la fila se dibuja encima: el texto acaba antes
-    const medio = (x0 + x1) / 2;
-    const color = colorPeriodo(c, p), tn = tonos(color);
-    let etiqueta = '';
-    if (cruce && it.abierto === 'i') {
-      const t2 = recortar(texto, fin - 8 - Math.max(medio, 0) - 6);
-      if (t2) etiqueta = `<text x="${fin - 8}" y="${y + 19}" text-anchor="end" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(t2)}</text>`;
-    } else {
-      const xi = Math.max(x0, 0) + 8;
-      const ancho = (cruce ? Math.min(medio, fin) : fin) - xi - 6;
-      const conCambio = cruce ? `${texto} · cambio sin fechar →` : '';
-      const dentro = conCambio && recortar(conCambio, ancho) === conCambio ? conCambio : recortar(texto, ancho);
-      if (dentro && (dentro === texto || dentro.length > 6)) etiqueta = `<text x="${xi}" y="${y + 19}" class="texto-barra${tn.texto}" style="stroke:${color}">${esc(dentro)}</text>`;
-      else if (!cruce) {
-        const libre = (sig ? sig.x0 : anchoLinea + 400) - x1 - 10;
-        const fuera = recortar(p.nombre, libre);
-        if (fuera) etiqueta = `<text x="${x1 + 5}" y="${y + 19}" class="texto-fuera">${esc(fuera)}</text>`;
-      }
-    }
-    const trP = BE.tramoPeriodo(p);
-    const rango = c.clase === 'era' || c.clase === 'potencia' ? ` data-rango="${trP[0]}~${trP[1]}"` : '';
-    const narr = p.fecha?.tipo === 'narrativa';
-    const cambio = it.abierto ? ` · cambio sin fechar: ${it.abierto === 'd' ? 'no sabemos cuándo dejó de ser la potencia mundial' : 'no sabemos cuándo pasó a ser la potencia mundial'}` : '';
-    const mk = it.abierto ? ` mask="url(#m-cambio-${it.abierto})"` : mascara(difuso(p.fecha));
-    const d = dim(`periodo:${p.id}`);
-    partes.push(`<g class="item periodo periodo--${c.clase || c.id.replace(/-.*/, '')}${d}${narr ? ' narrativa' : ''}" data-sel="periodo:${esc(p.id)}"${rango} tabindex="0" role="button" aria-label="${esc(p.nombre)}, ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}"><title>${esc(p.nombre)} · ${esc(p.fecha.texto || fechaCorta(p.fecha))}${esc(cambio)}</title>
-      <rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" class="barra-periodo${tn.forma}" style="fill:${color}"${mk}/>${narr ? `<rect x="${x0}" y="${y + 5}" width="${Math.max(x1 - x0 - 1, 3)}" height="20" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
-    rotulo(`periodo:${p.id}`, d, etiqueta, rango);
-  });
-}
-/** Carril de una persona: su actividad de fondo, sus estancias (rayadas si la fecha es estimada) y el camino entre ellas. */
-function pintarPersona(partes, c) {
-  const y = c.y, color = BE.colorPersona(c.persona);   // un solo color por persona: el del mapa (mapa.js)
-  if (c.act && visible(c.act)) {
-    const x0 = xDe(c.act[0]), x1 = Math.max(xDe(c.act[1]), x0 + 3);
-    const f = BE.PERS[c.persona].fecha;
-    partes.push(`<g class="item actividad${dim(`persona:${c.persona}`)}" data-sel="persona:${esc(c.persona)}" data-fondo="1"><title>${esc(BE.PERS[c.persona].nombre)}: activo ${esc(f.texto || fechaCorta(f))}</title>
-      <rect x="${x0}" y="${y + 24}" width="${x1 - x0}" height="4" rx="2" class="barra-actividad" style="fill:${color}"${mascara(difuso(f))}/></g>`);
-  }
-  const est = c.est.filter((s) => s.b > E.vista[0] - span() && s.a < E.vista[1] + span());
-  // Camino entre dos estancias cercanas: línea discontinua (no sabemos por dónde ni cuándo exactamente).
-  for (let i = 0; i + 1 < est.length; i++) {
-    const a = est[i], b = est[i + 1];
-    if (b.a <= a.b || b.a - a.b > 0.25 || a.lugar.id === b.lugar.id) continue;
-    partes.push(`<line x1="${xDe(a.b)}" x2="${xDe(b.a)}" y1="${y + 15}" y2="${y + 15}" class="camino" style="stroke:${color}"><title>De ${esc(a.lugar.nombre)} a ${esc(b.lugar.nombre)}: tramo sin fecha</title></line>`);
-  }
-  const items = est.map((s) => {
-    const x0 = xDe(s.a), x1 = Math.max(xDe(s.b), x0 + 5);
-    return { s, x0, x1, lx: x0 + 6, etiqueta: s.lugar.nombre, corto: s.lugar.nombre.slice(0, 3), lw: anchoTexto(s.lugar.nombre) };
-  }).filter((it) => it.x1 > -300 && it.x0 < anchoLinea + 50);
-  // Las estancias largas («vivió en») van debajo y las cortas encima. Las etiquetas se ponen al final, en el hueco que
-  // dejan las cortas: nunca debajo de otra forma.
-  items.sort((a, b) => (b.s.b - b.s.a) - (a.s.b - a.s.a));
-  const cortas = items.filter((it) => !it.s.larga);
-  for (const it of items) {
-    const s = it.s, w = it.x1 - it.x0;
-    const tn = tonos(color);
-    const cls = `item estancia${s.larga ? ' larga' : ''}${s.narrativa ? ' estimada' : ''}${dim(s.sel)}`;
-    let lx = Math.max(it.x0, 0) + 5, fin = Math.min(it.x1, anchoLinea) - 5;
-    if (s.larga) for (const o of cortas) if (o.x0 <= lx + 4 && o.x1 >= lx - 2 && o.x1 < fin) lx = o.x1 + 4;
-    const dentro = fin - lx > 22 ? recortar(s.lugar.nombre, fin - lx) : '';
-    partes.push(`<g class="${cls}" data-sel="${esc(s.sel)}"${s.larga ? ' data-fondo="1"' : ''} tabindex="0" role="button" aria-label="${esc(s.titulo)}, ${esc(s.lugar.nombre)}"><title>${esc(s.titulo)} · ${esc(s.lugar.nombre)}${s.referencia ? ` · ${esc(s.referencia)}` : ''}${s.narrativa ? ' · fecha estimada' : ''}</title>
-      <rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" class="barra-estancia${s.larga ? '' : tn.forma}" style="${s.larga ? `stroke:${color}` : `fill:${color}`}"/>${s.narrativa ? `<rect x="${it.x0}" y="${y + (s.larga ? 7 : 5)}" width="${w}" height="${s.larga ? 16 : 20}" rx="4" fill="url(#p-rayas-claras)" pointer-events="none"/>` : ''}</g>`);
-    if (dentro && (s.larga || w > 40)) rotulo(s.sel, dim(s.sel), `<text x="${lx}" y="${y + 19}" class="${s.larga ? 'texto-estancia-larga' : `texto-barra${tn.texto}`}"${s.larga ? '' : ` style="stroke:${color}"`}>${esc(dentro)}</text>`);
-  }
-}
+  return out;
+};
+BE.lineaCarriles = () => carrilesVista.map((c) => ({ id: c.id, nombre: c.nombre, tipo: c.tipo, alto: c.alto || 0, top: c.top || 0, filas: c.out?.nRows ?? null }));
+
 /** Donde dos carriles de persona vecinos coinciden en el mismo lugar a la vez, una banda los une (T-06). */
-function pintarJuntos(partes) {
-  const ps = carrilesVista.filter((c) => c.tipo === 'persona' || c.tipo === 'pablo');
+function pintarJuntos() {
+  const ps = carrilesVista.filter((c) => c.alto && (c.tipo === 'persona' || c.tipo === 'pablo'));
+  const out = [];
   for (let i = 0; i + 1 < ps.length; i++) {
     const A = ps[i], B = ps[i + 1];
-    if (B.y !== A.y + A.filas * CARRIL) continue;
+    if (Math.abs(B.top - (A.top + A.alto)) > 0.5) continue;   // solo si van seguidos
     const ea = BE.estancias(A.id === 'pablo' ? 'pablo' : A.persona), eb = BE.estancias(B.id === 'pablo' ? 'pablo' : B.persona);
     for (const a of ea) for (const b of eb) {
       if (a.lugar.id !== b.lugar.id) continue;
       const t0 = Math.max(a.a, b.a), t1 = Math.min(a.b, b.b);
       if (t1 <= t0 || t1 < E.vista[0] || t0 > E.vista[1]) continue;
       const x0 = xDe(t0), x1 = Math.max(xDe(t1), x0 + 3);
-      partes.push(`<rect x="${x0}" y="${A.y + 20}" width="${x1 - x0}" height="${B.y - A.y}" class="banda-juntos"><title>Juntos en ${esc(a.lugar.nombre)}</title></rect>`);
+      out.push(`<rect x="${x0}" y="${A.top}" width="${x1 - x0}" height="${A.alto + B.alto}" class="banda-juntos"><title>Juntos en ${esc(a.lugar.nombre)}</title></rect>`);
     }
   }
+  return out.join('');
 }
-/** Fechas seculares como nota (C-02, C-04): contorno discontinuo, no mueven el cursor. */
-function pintarSecular(partes, c) {
-  const items = [];
-  for (const o of c.conAlt) for (const alt of o.alternativas) {
-    const tr = tramoDibujo(alt.fecha);
-    if (!visible(tr)) continue;
-    const tipo = BE.D.eventos.includes(o) ? 'evento' : (BE.D.periodos.includes(o) ? 'periodo' : 'persona');
-    const nombre = o.titulo || o.nombre;
-    const etiqueta = `${alt.fecha.texto || fechaCorta(alt.fecha)} · ${nombre}`;
-    const x0 = xDe(tr[0]), x1 = Math.max(xDe(tr[1]), x0 + 8);
-    items.push({ o, alt, tipo, x0, x1, lx: Math.max(x0, 0) + 6, etiqueta, corto: `secular: ${alt.fecha.texto || ''}`, lw: anchoTexto(etiqueta) });
-  }
-  empaquetar(items, [0]);
-  for (const it of items) {
-    rotulo(`${it.tipo}:${it.o.id}`, dim(`${it.tipo}:${it.o.id}`), textoItem(it, c.y, 'texto-secular'));
-    partes.push(`<g class="item secular${dim(`${it.tipo}:${it.o.id}`)}" data-sel="${it.tipo}:${esc(it.o.id)}" tabindex="0" role="button" aria-label="Fecha secular de ${esc(it.o.titulo || it.o.nombre)}: ${esc(it.alt.fecha.texto || '')}"><title>Fecha secular, solo como nota: ${esc(it.alt.fecha.texto || '')}${it.alt.nota ? `\n${esc(it.alt.nota)}` : ''}</title>
-      <rect x="${it.x0}" y="${c.y + 6}" width="${it.x1 - it.x0}" height="18" rx="5" class="tramo-secular"/></g>`);
-  }
-}
-/** Reparte elementos en filas: primero la fila libre; si no hay, la menos ocupada. Luego calcula cuánto sitio tiene cada etiqueta. */
-function empaquetar(items, filas) {
-  items.sort((a, b) => a.x0 - b.x0);
-  const finTodo = filas.map(() => -1e9), finForma = filas.map(() => -1e9);
-  for (const it of items) {
-    if (it.fondo) { it.fila = filas[0]; continue; }   // no ocupa sitio: lo corto se dibuja encima
-    let i = finTodo.findIndex((f) => f <= it.x0 - 3);
-    if (i < 0) i = finForma.findIndex((f) => f <= it.x0 - 3);
-    if (i < 0) i = finForma.indexOf(Math.min(...finForma));
-    it.fila = filas[i];
-    finForma[i] = it.x1;
-    finTodo[i] = Math.max(it.x1, it.lx + it.lw);
-  }
-  rotular(items);
-}
-/** Coloca la etiqueta de cada elemento sin pisar a sus vecinos de fila (T-03). Por orden: entera a la derecha, entera a la
-    izquierda, recortada si queda sitio para algo legible, el código corto a un lado o dentro de su propio tramo y, si no
-    cabe nada, recortada en el hueco mayor. */
-function rotular(items) {
-  const libre = new Map();
-  // Textos ya puestos por fila: un tramo largo rotulado por dentro no para en el siguiente elemento, que puede empezar
-  // dentro de él. Ninguna opción puede pisar un texto ya colocado.
-  const puestos = new Map();
-  const pisa = (fila, a, b) => (puestos.get(fila) || []).some(([c, d]) => a < d + 4 && b > c - 4);
-  // Un rótulo tampoco tapa la forma de otro elemento de su fila: va en la capa de arriba y se quedaría con sus clics.
-  // Las de fondo no cuentan, porque lo demás ya va encima de ellas.
-  const formas = new Map();
-  for (const o of items) if (!o.fondo) { if (!formas.has(o.fila)) formas.set(o.fila, []); formas.get(o.fila).push(o); }
-  const tapa = (it, a, b) => (formas.get(it.fila) || []).some((o) => o !== it && a < o.x1 && b > o.x0);
-  const hueco = (it, texto, lado) => {
-    const w = anchoTexto(texto);
-    if (lado === 'izq') return [it.x0 - 5 - w, it.x0 - 5];
-    if (lado === 'dentro') return [(it.x0 + it.x1) / 2 - w / 2, (it.x0 + it.x1) / 2 + w / 2];
-    return [it.lx, it.lx + w];
-  };
-  items.forEach((it, i) => {
-    if (it.grupo) {
-      const sig = items.slice(i + 1).find((o) => o.fila === it.fila);
-      const x1Largo = Math.max(it.xf, it.x0 + anchoTexto(it.largo) + 12);
-      if (x1Largo <= (sig ? sig.x0 - 6 : anchoLinea)) { it.etiqueta = it.largo; it.x1 = x1Largo; }
-      else if (!sig && it.x0 + anchoTexto(it.etiqueta) + 12 > anchoLinea) { it.etiqueta = it.minimo; it.x1 = Math.max(it.xf, it.x0 + anchoTexto(it.minimo) + 12); }   // en el borde derecho, sin años: van en el título
-      libre.set(it.fila, it.x1); it.texto = it.etiqueta;
-      if (!puestos.has(it.fila)) puestos.set(it.fila, []);
-      puestos.get(it.fila).push([it.x0, it.x1]);
-      return;
+/** Adorno de un carril de persona, en su franja fina de arriba: su actividad y el camino (sin fecha) entre dos
+    estancias cercanas. No son marcas: no se pulsan y no ocupan filas. */
+function adornosPersonas() {
+  const out = [];
+  for (const c of carrilesVista) {
+    if (c.tipo !== 'persona' || !c.alto) continue;
+    const color = BE.colorPersona(c.persona);
+    if (c.act && visible(c.act)) {
+      const x0 = xDe(c.act[0]), x1 = Math.max(xDe(c.act[1]), x0 + 3);
+      out.push(`<rect x="${x0}" y="${c.top + 2}" width="${x1 - x0}" height="3" rx="1.5" class="barra-actividad" style="fill:${color}"/>`);
     }
-    const sig = items.slice(i + 1).find((o) => o.fila === it.fila);
-    const desde = libre.get(it.fila) ?? -Infinity;
-    const der = (sig ? sig.x0 - 6 : Infinity) - it.lx;
-    const finIzq = it.x0 - 5;
-    const izq = finIzq - Math.max(desde + 6, 0);
-    const ancho = (t) => anchoTexto(t);
-    const opciones = it.fondo ? [[it.etiqueta, der, 'der'], [it.etiqueta, der, 'der', true], ...(it.corto ? [[it.corto, der, 'der']] : [])] : [
-      [it.etiqueta, der, 'der'], [it.etiqueta, izq, 'izq'],
-      ...(Math.max(der, izq) >= 60 ? [[it.etiqueta, Math.max(der, izq), der >= izq ? 'der' : 'izq', true]] : []),
-      ...(it.corto ? [[it.corto, der, 'der'], [it.corto, izq, 'izq'], [it.corto, it.x1 - it.x0, 'dentro']] : []),
-      [it.etiqueta, Math.max(der, izq), der >= izq ? 'der' : 'izq', true],
-    ];
-    it.texto = ''; it.lado = 'der';
-    for (const [t, px, lado, cortar] of opciones) {
-      const texto = cortar ? recortar(t, px) : (ancho(t) <= px ? t : '');
-      if (texto && !pisa(it.fila, ...hueco(it, texto, lado)) && !tapa(it, ...hueco(it, texto, lado))) { it.texto = texto; it.lado = lado; break; }
+    const est = c.est.filter((s) => s.b > E.vista[0] - span() && s.a < E.vista[1] + span());
+    for (let i = 0; i + 1 < est.length; i++) {
+      const a = est[i], b = est[i + 1];
+      if (b.a <= a.b || b.a - a.b > 0.25 || a.lugar.id === b.lugar.id) continue;
+      out.push(`<line x1="${xDe(a.b)}" x2="${xDe(b.a)}" y1="${c.top + 6}" y2="${c.top + 6}" class="camino" style="stroke:${color}"/>`);
     }
-    if (it.texto) {
-      if (!puestos.has(it.fila)) puestos.set(it.fila, []);
-      puestos.get(it.fila).push(hueco(it, it.texto, it.lado));
-    }
-    const finTexto = it.texto && it.lado === 'der' ? it.lx + ancho(it.texto) : -Infinity;
-    if (!it.fondo) libre.set(it.fila, Math.max(it.x1, finTexto));
-  });
+  }
+  return out.join('');
 }
-function textoItem(it, y, clase) {
-  if (!it.texto) return '';
-  if (it.lado === 'izq') return `<text x="${it.x0 - 5}" y="${y + 19}" text-anchor="end" class="${clase}">${esc(it.texto)}</text>`;
-  if (it.lado === 'dentro') return `<text x="${(it.x0 + it.x1) / 2}" y="${y + 19}" text-anchor="middle" class="${clase}">${esc(it.texto)}</text>`;
-  return `<text x="${it.lx}" y="${y + 19}" class="${clase}">${esc(it.texto)}</text>`;
-}
+/** Recorta un texto a lo que cabe en px (los meses: tres letras o la inicial si no cabe más). */
 function recortar(texto, px) {
   if (!(px >= 24)) return px === Infinity ? texto : '';
   const max = Math.floor(px / 6.3);
@@ -834,7 +910,7 @@ function medirMeses() {
 /** Sombra de las horas entre la puesta de sol y nuestra medianoche, a escala de días: el día hebreo iba de una puesta
     de sol a la siguiente (Perspicacia «Día»), así que esas horas ya son el día hebreo siguiente y todavía nuestra fecha
     anterior. La puesta se pone a las 18:00: las horas de luz iban más o menos de seis a seis (el mismo artículo). */
-function noches() {
+function noches(h) {
   if (!(span() < 0.35) || !BE.calendario().meses.length || modoMeses() === 'nuestros') return '';
   const pxDia = (anchoLinea / span()) * BE.DIA;
   if (pxDia < 4) return '';
@@ -844,7 +920,7 @@ function noches() {
     for (let k = k0; k <= k1; k++) {
       const a = y + (k + 0.75) * BE.DIA, b = Math.min(y + (k + 1) * BE.DIA, y + 1);
       if (b < E.vista[0] || a > E.vista[1] || b <= a) continue;
-      out.push(`<rect x="${xDe(a)}" y="${EJE}" width="${Math.max(1, xDe(b) - xDe(a))}" height="${altoPista - EJE}"/>`);
+      out.push(`<rect x="${xDe(a)}" y="0" width="${Math.max(1, xDe(b) - xDe(a))}" height="${h}"/>`);
     }
   }
   return `<g class="noche-hebrea" aria-hidden="true">${out.join('')}</g>`;
@@ -977,7 +1053,8 @@ function marcasEje(pxAnio) {
   const mayorTick = (x, texto) => {
     const cabe = x + 5 >= finRotulo + 6;
     if (cabe) finRotulo = x + 5 + texto.length * 5.6;
-    out.push(`<line x1="${x}" x2="${x}" y1="0" y2="${EJE}" class="tick-mayor"/><line x1="${x}" x2="${x}" y1="${EJE}" y2="${altoPista}" class="rejilla"/>${cabe ? `<text x="${x + 5}" y="16" class="tick-texto">${esc(texto)}</text>` : ''}`);
+    rejilla.push(x);
+    out.push(`<line x1="${x}" x2="${x}" y1="0" y2="${EJE}" class="tick-mayor"/>${cabe ? `<text x="${x + 5}" y="16" class="tick-texto">${esc(texto)}</text>` : ''}`);
   };
   const menorTick = (x) => out.push(`<line x1="${x}" x2="${x}" y1="${EJE - 6}" y2="${EJE}" class="tick-menor"/>`);
   if (span() < 0.35 && BE.calendario().meses.length) {
@@ -1119,27 +1196,53 @@ function ajustar(t) {
   return Math.round(t / BE.DIA) * BE.DIA;
 }
 const textoFecha = (t) => { const s = span(); return s > 20 ? fmtAnio(Math.round(t)) : fmtMes(t + 1e-6, true); };
-function pintarRegla(partes) {
-  if (!L.regla) return;
+/** Lo medido con la regla, si cae en la vista: [a, b]. */
+function reglaVista() {
+  if (!L.regla) return null;
   const [a, b] = [Math.min(...L.regla), Math.max(...L.regla)];
-  if (b < E.vista[0] || a > E.vista[1]) return;
-  const x0 = xDe(a), x1 = xDe(b);
-  const texto = `${textoFecha(a)} → ${textoFecha(b)}: ${duracion(b - a)}`;
+  return b < E.vista[0] || a > E.vista[1] ? null : [a, b];
+}
+/** La banda de lo medido, detrás de las marcas y de arriba abajo de los carriles. */
+function reglaEnFondo(h) {
+  const r = reglaVista();
+  if (!r) return '';
+  const x0 = xDe(r[0]), x1 = xDe(r[1]);
+  return `<g class="regla"><rect x="${x0}" y="0" width="${Math.max(1, x1 - x0)}" height="${h}" class="regla-banda"/>
+    <line x1="${x0}" x2="${x0}" y1="0" y2="${h}" class="regla-borde"/><line x1="${x1}" x2="${x1}" y1="0" y2="${h}" class="regla-borde"/></g>`;
+}
+/** Lo que mide, en la regla de arriba, con su botón para quitarla. */
+function reglaEnRegla() {
+  const r = reglaVista();
+  if (!r) return '';
+  const x0 = xDe(r[0]), x1 = xDe(r[1]);
+  const texto = `${textoFecha(r[0])} → ${textoFecha(r[1])}: ${duracion(r[1] - r[0])}`;
   const w = anchoTexto(texto) + 30;
   const lx = clamp((x0 + x1) / 2 - w / 2, 2, anchoLinea - w - 2);
-  partes.push(`<g class="regla"><rect x="${x0}" y="${EJE}" width="${Math.max(1, x1 - x0)}" height="${altoPista - EJE}" class="regla-banda"/>
-    <line x1="${x0}" x2="${x0}" y1="${EJE}" y2="${altoPista}" class="regla-borde"/><line x1="${x1}" x2="${x1}" y1="${EJE}" y2="${altoPista}" class="regla-borde"/>
-    <rect x="${lx}" y="${EJE + 3}" width="${w}" height="20" rx="10" class="regla-etiqueta"/><text x="${lx + 10}" y="${EJE + 17}" class="regla-texto">${esc(texto)}</text>
-    <g class="regla-quitar" data-linea="quitar-regla" role="button" tabindex="0" aria-label="Quitar la regla"><title>Quitar la regla</title><circle cx="${lx + w - 11}" cy="${EJE + 13}" r="7"/><path d="M${lx + w - 14} ${EJE + 10}l6 6m0-6-6 6"/></g></g>`);
+  return `<g class="regla"><rect x="${lx}" y="3" width="${w}" height="20" rx="10" class="regla-etiqueta"/><text x="${lx + 10}" y="17" class="regla-texto">${esc(texto)}</text>
+    <g class="regla-quitar" data-linea="quitar-regla" role="button" tabindex="0" aria-label="Quitar la regla"><title>Quitar la regla</title><circle cx="${lx + w - 11}" cy="13" r="7"/><path d="M${lx + w - 14} 10l6 6m0-6-6 6"/></g></g>`;
 }
-function pintarBucle(partes) {
-  if (!L.bucle) return;
-  const [a, b] = L.bucle;
-  for (const [t, lado] of [[a, 1], [b, -1]]) {
-    if (t < E.vista[0] || t > E.vista[1]) continue;
-    const x = xDe(t);
-    partes.push(`<path d="M${x + lado * 6} ${EJE - 8}h${-lado * 6}v${altoPista - EJE + 8}" class="bucle-marca"><title>Bucle de ${esc(textoFecha(a))} a ${esc(textoFecha(b))}</title></path>`);
+const bordesBucle = () => (L.bucle ? [[L.bucle[0], 1], [L.bucle[1], -1]].filter(([t]) => t >= E.vista[0] && t <= E.vista[1]) : []);
+function bucleEnRegla() {
+  return bordesBucle().map(([t, lado]) => { const x = xDe(t); return `<path d="M${x + lado * 6} ${EJE - 8}h${-lado * 6}v8" class="bucle-marca"><title>Bucle de ${esc(textoFecha(L.bucle[0]))} a ${esc(textoFecha(L.bucle[1]))}</title></path>`; }).join('');
+}
+function bucleEnFondo(h) {
+  return bordesBucle().map(([t]) => { const x = xDe(t); return `<line x1="${x}" x2="${x}" y1="0" y2="${h}" class="bucle-marca"/>`; }).join('');
+}
+/** El tramo de lo elegido, como una raya al pie de la regla: se ve aunque su carril quede más abajo. */
+function selEnRegla() {
+  const selT = BE.selTexto(E.sel);
+  if (!selT) return '';
+  const out = [];
+  for (const c of carrilesVista) {
+    if (c.tipo === 'meses') continue;
+    for (const it of marcasDe(c).items) {
+      if (it.sel !== selT) continue;
+      const a = xDe(it.shape === 'moment' ? it.w0 : it.start), b = xDe(it.shape === 'moment' ? it.w1 : it.end);
+      const x0 = clamp(a, -4, anchoLinea + 4), x1 = clamp(Math.max(b, a + 3), -4, anchoLinea + 4);
+      if (x1 > 0 && x0 < anchoLinea) out.push(`<rect x="${x0}" y="${EJE - 4}" width="${Math.max(3, x1 - x0)}" height="4" rx="2" class="sel-regla"/>`);
+    }
   }
+  return out.join('');
 }
 const CLAVE_MARCAS = 'biblical-atlas:marcadores';
 function marcadores() { try { return JSON.parse(localStorage.getItem(CLAVE_MARCAS) || '[]'); } catch { return []; } }
@@ -1159,12 +1262,12 @@ function irAMarcador(i) {
   if (sel && BE.selTexto(sel) !== BE.selTexto(E.sel)) BE.seleccionar(sel, { mover: false });
   setT(m.t); BE.asegurarVisible(m.t, true);
 }
-function pintarMarcadores(partes) {
-  marcadores().forEach((m, i) => {
-    if (m.t < E.vista[0] || m.t > E.vista[1]) return;
+function pintarMarcadores() {
+  return marcadores().map((m, i) => {
+    if (m.t < E.vista[0] || m.t > E.vista[1]) return '';
     const x = xDe(m.t);
-    partes.push(`<path d="M${x - 5} 0h10l-5 7z" class="marcador" data-marcador="${i}" role="button" tabindex="0" aria-label="Marcador: ${esc(m.nombre)}"><title>Marcador: ${esc(m.nombre)}</title></path>`);
-  });
+    return `<path d="M${x - 5} 0h10l-5 7z" class="marcador" data-marcador="${i}" role="button" tabindex="0" aria-label="Marcador: ${esc(m.nombre)}"><title>Marcador: ${esc(m.nombre)}</title></path>`;
+  }).join('');
 }
 
 // ---------------------------------------------------------------------------
@@ -1201,7 +1304,6 @@ function pintarCursor() {
   // La bandera dice de quién es el lugar: la persona elegida o, si no, Pablo. Sale de BE.donde, como «Ahora mismo».
   const quien = E.sel?.tipo === 'persona' && BE.PERS[E.sel.id] ? E.sel.id : 'pablo';
   const w = BE.donde(quien, E.t);
-  const alto = altoPista;
   const fino = span() < 4;
   // «Juan, el apóstol en Patmos» se lee mal: la aclaración va entre paréntesis.
   const nombre = (BE.PERS[quien]?.nombre || 'Pablo').replace(/^([^,]+), (.+)$/, '$1 ($2)');
@@ -1213,9 +1315,12 @@ function pintarCursor() {
   let banda = '';
   if (w?.estimada && w.banda) {
     const b0 = xDe(w.banda[0]), b1 = xDe(w.banda[1]);
-    banda = `<rect x="${b0}" y="${EJE}" width="${Math.max(0, b1 - b0)}" height="${alto - EJE}" fill="url(#p-rayas)" class="banda-incierta"><title>Tiempo narrativo: sabemos el orden, no la fecha exacta</title></rect>`;
+    banda = `<rect x="${b0}" y="0" width="${Math.max(0, b1 - b0)}" height="${Math.max(1, altoFilas)}" fill="url(#p-rayas)" class="banda-incierta"><title>Tiempo narrativo: sabemos el orden, no la fecha exacta</title></rect>`;
   }
-  g.innerHTML = `${banda}<line x1="${x}" x2="${x}" y1="0" y2="${alto}" class="cursor-linea"/>
+  // En el fondo, la línea del cursor de arriba abajo de los carriles (detrás de las marcas); en la regla, su bandera.
+  const gf = $('#fondo-cursor');
+  if (gf) gf.innerHTML = `${banda}<line x1="${x}" x2="${x}" y1="0" y2="${Math.max(1, altoFilas)}" class="cursor-linea"/>`;
+  g.innerHTML = `<line x1="${x}" x2="${x}" y1="0" y2="${cabAlto}" class="cursor-linea"/>
     <rect x="${bx}" y="3" width="${anchoB}" height="20" rx="5" class="cursor-bandera"/><text x="${bx + anchoB / 2}" y="17" text-anchor="middle" class="cursor-texto${tonos('var(--gold)').texto}">${esc(bandera)}</text>`;
   const pista = $('#pista');
   pista.setAttribute('aria-valuenow', E.t.toFixed(2));
@@ -1238,7 +1343,7 @@ function pintarCursor() {
   if ($('#fecha-valor').title !== ayuda) $('#fecha-valor').title = ayuda;
   $('#linea-estado').textContent = BE.fraseAhora ? BE.fraseAhora(E.t) : '';
   // Edad en la fecha, solo con base (T-18).
-  document.querySelectorAll('#carriles [data-edad]').forEach((el) => {
+  document.querySelectorAll('#linea-filas [data-edad]').forEach((el) => {
     const e = BE.edad(el.dataset.edad, E.t);
     const txt = e ? ` · ${e.texto}` : '';
     if (el.textContent !== txt) { el.textContent = txt; el.title = e ? `Según su nacimiento: ${e.nacimiento}` : ''; }
@@ -1276,13 +1381,23 @@ function encuadrarTiempo(a, b, ocupa = 1 / 1.08) {
   E.vista = [v0, v0 + s];
   sucio.linea = true; programar();
 }
-function ponerGrande(on) {
+/** La línea abre alta en la pantalla ancha si al mapa le quedan unos 260 px; en una pantalla baja abre normal. */
+const altaDeInicio = () => !estrecha() && innerHeight >= 840;
+/** Con el grafo o la conexión encima del mapa, la línea alta de inicio les deja su sitio (linea.css); pedida con la T,
+    el botón o el menú, se ve alta también con ellos. */
+const grafoEncima = () => !!document.querySelector('.mapa > :is(.vista-grafo, .vista-conexion):not([hidden])');
+const grandeVista = () => L.grande && (L.pedida || !grafoEncima());
+function ponerGrande(on, pedida = false) {
   L.grande = on;
+  L.pedida = on && pedida;
   $('#app').classList.toggle('linea-grande', on);
+  $('#app').classList.toggle('linea-pedida', L.pedida);
   const b = $('[data-linea="grande"]');
-  if (b) b.setAttribute('aria-pressed', String(on));
+  if (b) b.setAttribute('aria-pressed', String(grandeVista()));
   BE.guardarHash();
 }
+/** La tecla T, el botón de alto y el menú cambian lo que se ve: alta si se ve normal, normal si se ve alta. */
+const alternarGrande = () => ponerGrande(!grandeVista(), true);
 function fijar(id) {
   const i = L.fijados.indexOf(id);
   if (i >= 0) L.fijados.splice(i, 1); else L.fijados.push(id);
@@ -1344,7 +1459,7 @@ function abrirMenu(seccion = 'todo') {
   const personas = personasConCarril().filter((p) => !L.fijados.includes(p.id) && p.id !== 'pablo');
   menuEl.innerHTML = `
     ${seccion === 'todo' ? `<div class="be-card__eyebrow">Línea de tiempo</div>
-    ${boton('grande', `${L.grande ? 'Reducir' : 'Ampliar'} la línea <kbd class="be-kbd">T</kbd>`)}
+    ${boton('grande', `${grandeVista() ? 'Reducir' : 'Ampliar'} la línea <kbd class="be-kbd">T</kbd>`)}
     ${BE.sincronia ? boton('sincronia', sinc ? 'Cerrar la sincronía' : '¿Quién había en un lugar? (sincronía)') : ''}
     <div class="menu-sub">Velocidad al reproducir</div>
     <div class="velocidad menu-velocidad${L.vel != null ? ' manual' : ''}" role="group" aria-label="Velocidad de reproducción">${botonesVelocidad()}</div>
@@ -1360,7 +1475,7 @@ function abrirMenu(seccion = 'todo') {
     <div class="menu-meses"><div class="be-seg meses-seg" role="radiogroup" aria-label="Meses">${MODOS_MESES.map(([k, t]) => `<button type="button" class="be-seg__opt${modoMeses() === k ? ' be-seg__opt--on' : ''}" role="radio" aria-checked="${modoMeses() === k}" data-meses="${k}">${t}</button>`).join('')}</div>${enlaceCalendario('meses-que', '¿Qué meses son estos?', 'Qué meses son estos: el calendario de la Biblia, explicado')}</div>` : ''}
     <div class="be-card__eyebrow">Carriles</div>
     <p class="menu-ayuda">Los fijados van arriba y no se van al cambiar de escala. Los demás salen cuando tienen algo a la vista.</p>
-    ${lanes.map((c) => { const on = L.fijados.includes(c.id); return `<button type="button" class="menu-fila menu-carril${on ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${on}">${ICONOS.alfiler}<span>${esc(c.nombre)}</span>${carrilesVista.includes(c) ? '<small>a la vista</small>' : ''}</button>`; }).join('')}
+    ${lanes.map((c) => { const on = L.fijados.includes(c.id); return `<button type="button" class="menu-fila menu-carril${on ? ' on' : ''}" data-fijar="${esc(c.id)}" aria-pressed="${on}">${ICONOS.alfiler}<span>${esc(c.nombre)}</span>${carrilesVista.includes(c) && c.alto ? '<small>a la vista</small>' : ''}</button>`; }).join('')}
     ${L.fijados.filter((id) => BE.PERS[id] && id !== 'pablo').map((id) => `<button type="button" class="menu-fila menu-carril on" data-fijar="${esc(id)}" aria-pressed="true">${ICONOS.alfiler}<span>${esc(BE.PERS[id].nombre)}</span></button>`).join('')}
     ${personas.length ? `<label class="menu-fila menu-persona"><span>Añadir persona</span><select data-linea="persona"><option value="">Elige…</option>${personas.map((p) => `<option value="${esc(p.id)}">${esc(p.nombre)}</option>`).join('')}</select></label>` : ''}`;
   menuEl.hidden = false;
@@ -1394,7 +1509,7 @@ function clicMenu(e) {
   if (que === 'vel-auto') { L.vel = b.checked ? null : VELOCIDADES.indexOf(velocidadAuto()); pintarVelocidad(); BE.guardarHash(); abrirMenu(menuAbierto()); return; }
   if (que === 'secular') { ponerSecular(b.checked); return; }
   cerrarMenu();
-  if (que === 'grande') ponerGrande(!L.grande);
+  if (que === 'grande') alternarGrande();
   else if (que === 'sincronia') BE.sincronia.alternar();
   else if (que === 'regla') { if (L.regla) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); } else { L.modoRegla = true; $('#pista').classList.add('modo-regla'); BE.avisar('Arrastra sobre la línea entre las dos fechas.'); } }
   else if (que === 'bucle') ponerBucle();
@@ -1433,10 +1548,13 @@ function abrirAyudaFechas(origen) {
   ayudaFechas.innerHTML = `<div class="fa-cabecera"><h2 class="be-card__eyebrow" id="fechas-ayuda-titulo">Sobre las fechas</h2><button type="button" class="menu-x" data-fa="cerrar" aria-label="Cerrar">×</button></div>
     <p class="fa-texto">Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de las publicaciones de jw.org.</p>
     <ul class="fa-lista">
-      <li><span class="fa-c">c.</span><span>Fecha aproximada: la fuente da el año más o menos, la sacamos del orden del relato, o es un mes o un día de un calendario que solo podemos aproximar.</span></li>
-      <li>${muestra('<defs><pattern id="fa-rayas" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><rect width="2.4" height="6" fill="rgba(255,255,255,.55)"/></pattern><linearGradient id="fa-dif"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff"/></linearGradient><mask id="fa-m"><rect width="34" height="14" fill="url(#fa-dif)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-m)"/><rect x="1" y="2" width="32" height="10" rx="3" fill="url(#fa-rayas)"/>')}<span>Rayado o con el borde difuminado: sabemos el orden, no la fecha exacta, o no sabemos cuándo empezó o acabó.</span></li>
+      <li><span class="fa-c">c.</span><span>Junto a la fecha de arriba: fecha aproximada. La fuente da el año más o menos, la sacamos del orden del relato, o es un mes o un día de un calendario que solo podemos aproximar.</span></li>
+      <li>${muestra('<rect x="3" y="6" width="28" height="2" fill="var(--gold)" opacity=".75"/><rect x="2" y="3" width="2" height="8" fill="var(--gold)"/><rect x="30" y="3" width="2" height="8" fill="var(--gold)"/><circle cx="17" cy="7" r="4.5" fill="var(--gold)"/>')}<span>Un punto es algo que pasó en un momento. La línea fina de debajo marca entre qué fechas pudo ser.</span></li>
+      <li>${muestra('<rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)"/>')}<span>Una barra es algo que duró, de su principio a su fin.</span></li>
+      <li>${muestra('<defs><linearGradient id="fa-dif"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".3" stop-color="#fff"/><stop offset=".7" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="fa-m"><rect width="34" height="14" fill="url(#fa-dif)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-m)"/>')}<span>Con los extremos que se desvanecen y la palabra «aprox.»: fecha aproximada.</span></li>
+      <li>${muestra('<rect x="1.75" y="2.75" width="30.5" height="8.5" rx="3" fill="var(--surface)" stroke="var(--emp-persia)" stroke-width="1.5"/>')}<span>Hueca: la fecha la calculamos nosotros o sale del orden del relato. La ficha explica la cuenta.</span></li>
+      <li>${muestra('<defs><linearGradient id="fa-dud"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="fa-md"><rect width="34" height="14" fill="url(#fa-dud)"/></mask></defs><rect x="1" y="2" width="32" height="10" rx="3" fill="var(--emp-persia)" mask="url(#fa-md)"/>')}<span>Desvanecida y con «¿?»: fecha dudosa, o de la que no sabemos cuándo empezó o acabó.</span></li>
       <li>${muestra('<rect x="1.5" y="2.5" width="31" height="9" rx="3" fill="var(--secular-soft)" stroke="var(--secular)" stroke-width="1.2" stroke-dasharray="4 3"/>')}<span>Borde de trazos gris azulado: fecha de la historia secular cuando difiere. Va solo como nota y no mueve el cursor.</span></li>
-      <li>${muestra('<rect x="1.5" y="2.5" width="31" height="9" rx="3" fill="var(--unverified-soft)" stroke="var(--unverified)" stroke-width="1.2" stroke-dasharray="4 3"/>')}<span>Rosa y de trazos: un cálculo nuestro, sin verificar. La ficha explica la cuenta.</span></li>
     </ul>
     <label class="menu-fila fa-casilla"><input type="checkbox" data-fa="secular"${L.secular ? ' checked' : ''}> Enseñar las fechas seculares como nota</label>
     <a class="fa-mas" href="acerca.html#datos">Cómo tratamos las fuentes y las fechas</a>`;
@@ -1459,106 +1577,6 @@ function cerrarAyudaFechas() {
   if (dentro) ((origenAyuda && origenAyuda.offsetParent && origenAyuda) || $('#linea-menu-boton'))?.focus();
 }
 
-// ---------------------------------------------------------------------------
-// Elementos que se solapan: al pulsar un punto donde hay varios, se elige de una lista
-// ---------------------------------------------------------------------------
-/** Elementos de la línea bajo un punto de la pantalla, sin repetir y sin los rótulos. Si alguno no es de fondo, los de
-    fondo no cuentan: el tramo de un viaje bajo sus paradas, la actividad y las estancias largas de una persona. */
-/** La forma más cercana al dedo cuya diana de 44 × 44 px alrededor de su centro (o su caja, si es mayor) contiene el
-    punto. Las de fondo (eras e imperios bajo otras) solo cuentan si no hay otra. */
-function itemCercano(x, y) {
-  let mejor = null, dMejor = Infinity;
-  const pr = $('#pista').getBoundingClientRect();
-  for (const g of document.querySelectorAll('#linea-svg g.item[data-sel]')) {
-    const r = g.getBoundingClientRect();
-    if (!r.width || r.right < pr.left || r.left > pr.right || r.bottom < pr.top || r.top > pr.bottom) continue;
-    const mx = Math.max(0, (44 - r.width) / 2), my = Math.max(0, (44 - r.height) / 2);
-    const dx = Math.max(0, r.left - x, x - r.right), dy = Math.max(0, r.top - y, y - r.bottom);
-    if (dx > mx || dy > my) continue;
-    const d = Math.hypot(dx, dy) + (g.dataset.fondo ? 1000 : 0);
-    if (d < dMejor) { dMejor = d; mejor = g; }
-  }
-  return mejor;
-}
-function itemsEn(x, y) {
-  const vistos = new Map();
-  for (const el of document.elementsFromPoint(x, y)) {
-    const g = el.closest?.('#linea-svg g.item[data-sel]');
-    if (g && !vistos.has(g.dataset.sel)) vistos.set(g.dataset.sel, g);
-  }
-  const todos = [...vistos.values()];
-  const delante = todos.filter((g) => !g.dataset.fondo);
-  return delante.length ? delante : todos;
-}
-let eleccion = null;
-function cerrarEleccion(foco) {
-  if (!eleccion) return;
-  const { el, origen } = eleccion;
-  const dentro = el.contains(document.activeElement);
-  eleccion = null;
-  el.remove();
-  if (foco || dentro) (document.contains(origen) ? origen : $('#pista'))?.focus();
-}
-/** Lista pequeña con los elementos que se pisan en ese punto, por orden de fecha. Cada fila es un botón data-sel: la
-    selección la hace base.js como con cualquier otro. Flechas para moverse, Esc para cerrar. */
-function elegirEntre(gs, x, y, origen) {
-  cerrarEleccion();
-  const filas = gs.map((g) => {
-    const t = (g.querySelector('title')?.textContent || g.getAttribute('aria-label') || '').split('\n')[0];
-    const i = t.indexOf(' · ');
-    return { sel: g.dataset.sel, nombre: i > 0 ? t.slice(0, i) : t, resto: i > 0 ? t.slice(i + 3) : '', x: g.getBoundingClientRect().left };
-  }).sort((a, b) => a.x - b.x);
-  const el = document.createElement('div');
-  el.className = 'linea-eleccion be-card';
-  el.setAttribute('role', 'dialog');
-  el.setAttribute('aria-label', `${filas.length} elementos en este punto: elige uno`);
-  el.innerHTML = `<div class="be-card__eyebrow">${filas.length} en este punto</div>${filas.map((f) => `<button type="button" class="menu-fila menu-boton eleccion-fila" data-sel="${esc(f.sel)}"><span>${esc(f.nombre)}</span>${f.resto ? `<small>${esc(f.resto)}</small>` : ''}</button>`).join('')}`;
-  document.body.appendChild(el);
-  const w = Math.min(340, window.innerWidth - 16);
-  el.style.width = `${w}px`;
-  el.style.left = `${clamp(x - w / 2, 8, window.innerWidth - w - 8)}px`;
-  el.style.bottom = `${window.innerHeight - y + 14}px`;
-  el.style.maxHeight = `${Math.max(140, y - 24)}px`;
-  eleccion = { el, origen, vista: E.vista.join('~') };
-  const botones = () => [...el.querySelectorAll('button')];
-  el.addEventListener('keydown', (e) => {
-    const bs = botones(), i = bs.indexOf(document.activeElement);
-    if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); cerrarEleccion(true); return; }
-    const mover = { ArrowDown: i + 1, ArrowUp: i - 1, Home: 0, End: bs.length - 1 }[e.key];
-    if (mover != null) { e.preventDefault(); e.stopPropagation(); bs[(mover + bs.length) % bs.length].focus(); return; }
-    if (e.key === 'Tab') { e.preventDefault(); bs[(i + (e.shiftKey ? -1 : 1) + bs.length) % bs.length].focus(); return; }
-    if (e.key !== 'Enter' && e.key !== ' ') e.stopPropagation();   // las flechas y el espacio no mueven el cursor detrás
-  });
-  el.addEventListener('click', (e) => {
-    const b = e.target.closest('[data-sel]');
-    if (!b) return;
-    const sel = b.dataset.sel;
-    setTimeout(() => {   // después de que base.js seleccione
-      cerrarEleccion();
-      requestAnimationFrame(() => ($(`#linea-svg g.item[data-sel="${CSS.escape(sel)}"]`) || $('#pista'))?.focus({ preventScroll: true }));
-    }, 0);
-  });
-  botones()[0]?.focus();
-}
-
-// ---------------------------------------------------------------------------
-// Reproducción: pausa en los sucesos (T-11) y bucle (T-12)
-// ---------------------------------------------------------------------------
-/** Píldora de sucesos agrupados: su tramo ocupa el 60 % de la vista, centrado; el cursor va al primero de ellos y todos
-    quedan resaltados, aunque la selección sea otra, hasta que cambia la selección o dejan de verse. Si así la vista no
-    se acercaría (en el móvil, a escala de milenios, todo es una píldora), pulsar acerca a un cuarto de la
-    vista desde el primero: cada clic acerca, nunca deja la vista igual. */
-function abrirGrupo(g) {
-  const [a, b] = g.dataset.rango.split('~').map(Number);
-  const evs = g.dataset.grupo.split(',').map((id) => BE.D.eventos.find((x) => x.id === id)).filter(Boolean);
-  L.grupo = { claves: new Set(evs.map((x) => `evento:${x.id}`)), trs: evs.map(BE.ventanaEvento).filter(Boolean), sel: BE.selTexto(E.sel) };
-  const m = BE.momentoEvento(evs.find((x) => x.id === g.dataset.primero) || evs[0]);
-  if (m != null) setT(m);
-  if ((b - a) / 0.6 < span() * 0.9) { encuadrarTiempo(a, b, 0.6); return; }
-  const s = Math.max(span() / 4, SPAN_MIN), v0 = clamp(Math.max(a, BE.T_MIN) - s * 0.2, BE.T_MIN, BE.T_MAX - s);
-  E.vista = [v0, v0 + s];
-  sucio.linea = true; programar();
-}
 // Velocidad (be-64b.2): cuánto tiempo pasa en cada segundo de reproducción, dicho con palabras. Sin elegir, sigue a la
 // escala (la línea entera en unos 160 s, redondeado al escalón más cercano); con − y +, queda fija aunque cambie la escala.
 const DIA1 = 1 / 365.2425, HORA1 = DIA1 / 24;
@@ -1732,9 +1750,8 @@ function montarBarra() {
   document.addEventListener('pointerdown', (e) => {
     if (menuAbierto() && !e.target.closest('#linea-menu, #linea-menu-boton, .carriles-boton')) cerrarMenu();
     if (ayudaFechas && !ayudaFechas.hidden && !e.target.closest('#fechas-ayuda, #fechas-boton, #linea-menu')) cerrarAyudaFechas();
-    if (eleccion && !e.target.closest('.linea-eleccion')) cerrarEleccion();
   });
-  $('#carriles').addEventListener('click', (e) => {
+  $('#linea-cuerpo').addEventListener('click', (e) => {
     const f = e.target.closest('[data-fijar]');
     if (f) { e.stopPropagation(); fijar(f.dataset.fijar); return; }
     if (e.target.closest('.carriles-boton')) { e.stopPropagation(); if (menuAbierto() === 'carriles') cerrarMenu(); else abrirMenu('carriles'); return; }
@@ -1747,7 +1764,7 @@ function montarBarra() {
   });
   document.addEventListener('keydown', (e) => {
     if (BE.portada?.abierta || e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
-    if (e.key === 't' || e.key === 'T') { e.preventDefault(); ponerGrande(!L.grande); }
+    if (e.key === 't' || e.key === 'T') { e.preventDefault(); alternarGrande(); }
     if (e.key === 'Escape') { cerrarMenu(); if (L.modoRegla) { L.modoRegla = false; $('#pista').classList.remove('modo-regla'); } }
   });
 }
@@ -1787,147 +1804,177 @@ function ponerEscala(s) {
   const v0 = clamp(E.t - s * 0.4, BE.T_MIN, BE.T_MAX - s);
   E.vista = [v0, v0 + s]; sucio.linea = true; programar();
 }
-
 function iniciarLinea() {
   montarBarra();
-  const pista = $('#pista');
+  const pista = $('#pista'), cuerpo = $('#linea-cuerpo'), filas = $('#linea-filas');
   pista.setAttribute('aria-valuemin', String(BE.T_MIN));
   pista.setAttribute('aria-valuemax', String(BE.T_MAX));
-  const punteros = new Map();
-  let arrastre = null, pinza = null, regla = null;
-  pista.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    const r = pista.getBoundingClientRect();
-    if (Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey) {
-      const d = (e.shiftKey && !e.deltaX ? e.deltaY : e.deltaX) / anchoLinea * span();
-      const v0 = clamp(E.vista[0] + d, BE.T_MIN, BE.T_MAX - span());
-      E.vista = [v0, v0 + span()]; sucio.linea = true; programar();
-    } else {
-      zoomEn(Math.exp(e.deltaY * (e.ctrlKey ? 0.01 : 0.0015)), tDe(e.clientX - r.left));
+  const moverVista = (v0) => { v0 = clamp(v0, BE.T_MIN, BE.T_MAX - span()); E.vista = [v0, v0 + span()]; sucio.linea = true; programar(); };
+  // Rueda: arriba y abajo bajan por los carriles (lo hace el navegador); con Ctrl o ⌘, o sobre la regla, cambia la
+  // escala; de lado o con Mayúsculas mueve la vista.
+  cuerpo.addEventListener('wheel', (e) => {
+    const x = clamp(e.clientX - pista.getBoundingClientRect().left, 0, anchoLinea);
+    if (e.ctrlKey || e.metaKey || e.target.closest('#pista')) {
+      e.preventDefault();
+      zoomEn(Math.exp((e.deltaY || e.deltaX) * (e.ctrlKey ? 0.01 : 0.0015)), tDe(x));
+    } else if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+      e.preventDefault();
+      moverVista(E.vista[0] + ((e.shiftKey && !e.deltaX ? e.deltaY : e.deltaX) / anchoLinea) * span());
     }
   }, { passive: false });
-  let toqueMes = null, toqueItem = null, tragarClic = 0;
-  pista.addEventListener('click', (e) => { if (performance.now() < tragarClic) { tragarClic = 0; e.stopPropagation(); e.preventDefault(); } }, true);
+  let scrollPendiente = false;
+  cuerpo.addEventListener('scroll', () => {
+    if (scrollPendiente) return;
+    scrollPendiente = true;
+    requestAnimationFrame(() => { scrollPendiente = false; ventanaMarcas(false); pintarIrSel(); });
+  });
+
+  // La regla: pulsar o arrastrar mueve el cursor; la vista no se mueve. Con Alt (o el modo regla), mide.
+  let enRegla = null, regla = null;
+  const empezarRegla = (e, el) => {
+    const t = ajustar(tDe(e.clientX - pista.getBoundingClientRect().left));
+    regla = { a: t, el };
+    L.regla = [t, t];
+    try { el.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
+    sucio.linea = true; programar();
+  };
+  const moverRegla = (e) => { L.regla = [regla.a, ajustar(tDe(e.clientX - pista.getBoundingClientRect().left))]; sucio.linea = true; programar(); };
+  const acabarRegla = () => {
+    if (Math.abs(L.regla[1] - L.regla[0]) < 1e-6) L.regla = null;
+    regla = null; L.modoRegla = false; pista.classList.remove('modo-regla');
+    sucio.linea = true; programar(); BE.guardarHash();
+  };
   pista.addEventListener('pointerdown', (e) => {
-    const r = pista.getBoundingClientRect();
-    punteros.set(e.pointerId, e.clientX);
-    if (punteros.size === 2) {
-      const xs = [...punteros.values()];
-      pinza = { d: Math.abs(xs[0] - xs[1]), s: span(), t: tDe((xs[0] + xs[1]) / 2 - r.left) };
-      arrastre = null; regla = null; toqueMes = null; return;   // una pinza nunca es un toque sobre un mes
-    }
-    // Con el dedo (be-f1w): la forma que hay justo bajo el dedo o, si no hay, la más cercana con una diana de 44 px (un
-    // rombo mide 17). Lo decide esta línea, no el navegador, que ajusta el toque a su manera y a veces a otra forma. Si
-    // el dedo se mueve, es un arrastre del cursor aunque empiece encima de una forma: en el móvil los carriles van
-    // llenos y casi todo arrastre empezaba encima de algo y no hacía nada.
-    toqueItem = null;
-    const FORMA = '[data-sel], [data-rango], [data-linea], [data-marcador]';
-    if (e.pointerType !== 'mouse' && !e.altKey && !L.modoRegla) {
-      const bajo = document.elementFromPoint(e.clientX, e.clientY)?.closest?.(FORMA);
-      const g = (bajo && pista.contains(bajo) ? bajo : null) || itemCercano(e.clientX, e.clientY);
-      if (g) { toqueItem = { g, x: e.clientX, y: e.clientY, id: e.pointerId }; return; }
-    } else if (e.target.closest(FORMA)) return;   // con ratón, lo gestionan los clics
-    const mes = e.target.closest?.('g.mes[data-aviso]');
-    toqueMes = mes ? { texto: mes.dataset.aviso, x: e.clientX, y: e.clientY, lejos: 0 } : null;
-    if (e.altKey || L.modoRegla) {
-      const t = ajustar(tDe(e.clientX - r.left));
-      regla = { a: t };
-      L.regla = [t, t];
-      try { pista.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
-      sucio.linea = true; programar();
-      return;
-    }
-    arrastre = { x: e.clientX };
+    if (e.button > 0 || e.target.closest('[data-marcador], [data-linea]')) return;
+    if (e.altKey || L.modoRegla) { empezarRegla(e, pista); return; }
+    enRegla = e.pointerId;
     try { pista.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
-    setT(tDe(e.clientX - r.left));
+    setT(tDe(e.clientX - pista.getBoundingClientRect().left));
   });
   pista.addEventListener('pointermove', (e) => {
-    const r = pista.getBoundingClientRect();
-    if (punteros.has(e.pointerId)) punteros.set(e.pointerId, e.clientX);
-    // Lo más lejos que llegó el dedo: un arrastre que vuelve a donde empezó no es un toque.
-    if (toqueMes) toqueMes.lejos = Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y));
-    if (toqueItem && toqueItem.id === e.pointerId && Math.hypot(e.clientX - toqueItem.x, e.clientY - toqueItem.y) >= 8) {
-      toqueItem = null;
-      arrastre = { x: e.clientX };
-      tragarClic = performance.now() + 600;   // un arrastre corto sobre una forma no la elige además
-      try { pista.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
-    }
-    if (pinza && punteros.size === 2) {
-      const xs = [...punteros.values()];
-      const d = Math.max(10, Math.abs(xs[0] - xs[1]));
-      const s = clamp(pinza.s * pinza.d / d, SPAN_MIN, spanMax());
-      zoomEn(s / span(), pinza.t);
-      return;
-    }
-    if (regla) { L.regla = [regla.a, ajustar(tDe(e.clientX - r.left))]; sucio.linea = true; programar(); return; }
-    if (arrastre) setT(tDe(e.clientX - r.left));
+    if (regla?.el === pista) moverRegla(e);
+    else if (enRegla === e.pointerId) setT(tDe(e.clientX - pista.getBoundingClientRect().left));
   });
-  const fin = (e) => {
-    punteros.delete(e.pointerId);
-    // Un toque sin arrastre: el clic va a la forma elegida (bajo el dedo o la más cercana), y el clic que da después el
-    // navegador no cuenta, porque puede caer en el hueco (el navegador ajusta el toque a la forma en pointerdown, no
-    // siempre en el clic).
-    if (toqueItem?.g && toqueItem.id === e.pointerId && e.type === 'pointerup' && !pinza) {
-      const { g, x, y } = toqueItem, r = g.getBoundingClientRect();
-      const dentro = x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
-      g.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, detail: 1, clientX: dentro ? x : r.left + r.width / 2, clientY: dentro ? y : r.top + r.height / 2 }));
-    }
-    if (e.pointerType !== 'mouse' && e.type === 'pointerup') tragarClic = performance.now() + 600;   // el clic del navegador ya no cuenta
-    toqueItem = null;
-    if (punteros.size < 2) pinza = null;
-    if (regla) {
-      if (Math.abs(L.regla[1] - L.regla[0]) < 1e-6) L.regla = null;
-      regla = null; L.modoRegla = false; pista.classList.remove('modo-regla');
-      sucio.linea = true; programar(); BE.guardarHash();
-    }
-    arrastre = null;
-    // Un toque (no un arrastre) sobre un mes con el nombre cortado lo nombra entero.
-    if (toqueMes && e.type === 'pointerup' && Math.max(toqueMes.lejos, Math.hypot(e.clientX - toqueMes.x, e.clientY - toqueMes.y)) < 8 && !pinza && !L.regla) BE.avisar(toqueMes.texto, 6000);
-    toqueMes = null;
-  };
-  pista.addEventListener('pointerup', fin);
-  pista.addEventListener('pointercancel', (e) => { punteros.delete(e.pointerId); pinza = null; arrastre = null; regla = null; toqueItem = null; });
-  // Píldoras de sucesos agrupados, eras e imperios: acercan el zoom a su tramo. Regla y marcadores.
-  $('#linea-svg').addEventListener('click', (e) => {
-    // Un clic de ratón o de dedo sobre una forma bajo la que hay otras: se elige de una lista. Un rótulo nunca
-    // pregunta: nombra un solo elemento. Enter desde el teclado (detail 0) elige el que tiene el foco.
-    const item = e.target.closest('g.item[data-sel]');
-    if (item && e.detail > 0) {
-      const gs = itemsEn(e.clientX, e.clientY);
-      if (gs.length > 1) { e.stopPropagation(); e.preventDefault(); elegirEntre(gs, e.clientX, e.clientY, item); return; }
-    }
-    const q = e.target.closest('[data-linea="quitar-regla"]');
-    if (q) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); return; }
+  const soltarRegla = () => { enRegla = null; if (regla?.el === pista) acabarRegla(); };
+  pista.addEventListener('pointerup', soltarRegla);
+  pista.addEventListener('pointercancel', soltarRegla);
+  pista.addEventListener('click', (e) => {
+    if (e.target.closest('[data-linea="quitar-regla"]')) { L.regla = null; sucio.linea = true; programar(); BE.guardarHash(); return; }
     const m = e.target.closest('[data-marcador]');
-    if (m) { irAMarcador(+m.dataset.marcador); return; }
-    const g = e.target.closest('[data-rango]');
-    if (g?.dataset.grupo) { abrirGrupo(g); return; }
-    if (g) {
-      const [a, b] = g.dataset.rango.split('~').map(Number);
-      setTimeout(() => encuadrarTiempo(a, b), 0);   // después de la selección, que centra el cursor
-    }
+    if (m) irAMarcador(+m.dataset.marcador);
   });
-  // Pasar sobre un rótulo marca su elemento, como pasar sobre la forma.
-  let encima = null;
-  const marcarEncima = (sel) => {
-    if (encima?.dataset.sel === sel) return;
-    encima?.classList.remove('encima');
-    encima = sel ? $(`#linea-svg g.item[data-sel="${CSS.escape(sel)}"]`) : null;
-    encima?.classList.add('encima');
-  };
-  $('#linea-svg').addEventListener('pointerover', (e) => marcarEncima(e.target.closest?.('.item-texto')?.dataset.sel || null));
-  $('#linea-svg').addEventListener('pointerleave', () => marcarEncima(null));
-  $('#linea-svg').addEventListener('keydown', (e) => {
-    const g = e.target.closest?.('[data-rango]:not([data-sel]), [data-marcador], [data-linea]');
+  pista.addEventListener('keydown', (e) => {
+    const g = e.target.closest?.('[data-marcador], [data-linea]');
     if (g && e.key === 'Enter') { e.preventDefault(); g.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
   });
+
+  // Los carriles: arrastrar mueve el tiempo; un clic en una marca la elige; un clic en un hueco suelta la selección o,
+  // sin selección, pone el cursor ahí. Con el dedo: arriba y abajo baja por los carriles, de lado mueve el tiempo, dos
+  // dedos cambian la escala, y un toque a menos de 12 px de una marca de esa fila la elige.
+  const punteros = new Map();
+  let arrastre = null, pinza = null, tragarClic = false;
+  filas.addEventListener('pointerdown', (e) => {
+    const pistaC = e.target.closest('.carril-pista');
+    if (!pistaC || e.button > 0) return;
+    // La regla no cuenta como dedo: si se contara, el siguiente arrastre de un dedo sería una pinza.
+    if (!punteros.size && (e.altKey || L.modoRegla)) { empezarRegla(e, filas); return; }
+    punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    tragarClic = false;
+    if (punteros.size === 2) {
+      const [p, q] = [...punteros.values()];
+      const x = (p.x + q.x) / 2 - pista.getBoundingClientRect().left;
+      pinza = { d0: Math.hypot(p.x - q.x, p.y - q.y), s0: span(), t: tDe(x), x };
+      arrastre = null; tragarClic = true;
+      // Un arrastre que se vuelve pinza suelta las filas congeladas: si no, nadie las soltaría.
+      if (hold) { hold = null; sucio.linea = true; programar(); }
+      return;
+    }
+    arrastre = { id: e.pointerId, x0: e.clientX, y0: e.clientY, v0: E.vista[0], movido: false, pista: pistaC, marca: e.target.closest('.m'), raton: e.pointerType === 'mouse' };
+  });
+  window.addEventListener('pointermove', (e) => {
+    if (regla?.el === filas) { moverRegla(e); return; }
+    if (!punteros.has(e.pointerId)) return;
+    punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pinza && punteros.size >= 2) {
+      const [p, q] = [...punteros.values()];
+      const d = Math.hypot(p.x - q.x, p.y - q.y);
+      if (d > 10) {
+        const s = clamp(pinza.s0 * pinza.d0 / d, SPAN_MIN, spanMax());
+        const v0 = clamp(pinza.t - (pinza.x / anchoLinea) * s, BE.T_MIN, BE.T_MAX - s);
+        E.vista = [v0, v0 + s]; sucio.linea = true; programar();
+      }
+      return;
+    }
+    if (!arrastre || arrastre.id !== e.pointerId) return;
+    const dx = e.clientX - arrastre.x0, dy = e.clientY - arrastre.y0;
+    if (!arrastre.movido && Math.abs(dx) > (arrastre.raton ? 6 : 10) && Math.abs(dx) > Math.abs(dy)) {
+      arrastre.movido = true; tragarClic = true;
+      hold = { rows: new Map(), edge: new Map() };
+      try { filas.setPointerCapture(e.pointerId); } catch { /* puntero sintético */ }
+    }
+    if (arrastre.movido) moverVista(arrastre.v0 - (dx / anchoLinea) * span());
+  });
+  const tocarCerca = (e, pistaC) => {
+    const c = carrilesVista.find((x) => carrilEls.get(x.id)?.pista === pistaC);
+    if (!c || !c.out) return null;
+    const r = pistaC.getBoundingClientRect();
+    const x = e.clientX - r.left, fila = Math.floor((e.clientY - r.top - c.decor) / G.row);
+    let mejor = null, d = 13;
+    for (const it of c.out.visible) {
+      if (it._drow !== fila) continue;
+      const dd = x < it._hit[0] ? it._hit[0] - x : x > it._hit[1] ? x - it._hit[1] : 0;
+      if (dd < d) { d = dd; mejor = it; }
+    }
+    return mejor && { it: mejor, t: tDe(clamp(x, mejor._hit[0], mejor._hit[1])) };
+  };
+  const fin = (e) => {
+    if (regla?.el === filas) { punteros.delete(e.pointerId); acabarRegla(); return; }
+    if (!punteros.has(e.pointerId)) return;
+    punteros.delete(e.pointerId);
+    if (pinza) { if (!punteros.size) pinza = null; return; }
+    const a = arrastre;
+    if (!a || a.id !== e.pointerId) return;
+    arrastre = null;
+    if (a.movido) { hold = null; sucio.linea = true; programar(); return; }
+    if (e.type !== 'pointerup' || a.cancelado) return;
+    // Con el dedo decide esta línea, no el navegador, que ajusta el toque a su manera y a veces a la marca de al lado: la
+    // marca bajo el dedo o, si no hay, la de esa fila a menos de 12 px. El clic que da después el navegador no cuenta.
+    if (!a.raton) {
+      const it = a.marca && marcasVisibles().find(({ it: x }) => x.id === a.marca.dataset.id)?.it;
+      const cerca = it ? { it, t: tDe(e.clientX - pista.getBoundingClientRect().left) } : tocarCerca(e, a.pista);
+      if (cerca) { tragarClic = true; elegirMarca(cerca.it, cerca.t); return; }
+    }
+    if (a.marca) return;   // con el ratón, una marca la elige su clic
+    // Un mes con el nombre cortado lo nombra entero.
+    const mes = e.target.closest?.('g.mes[data-aviso]');
+    if (mes && !E.sel) { BE.avisar(mes.dataset.aviso, 6000); return; }
+    if (E.sel) { BE.limpiarSeleccion(); vivo('Nada elegido.'); }
+    else setT(tDe(e.clientX - pista.getBoundingClientRect().left));
+  };
+  window.addEventListener('pointerup', fin);
+  window.addEventListener('pointercancel', (e) => { if (arrastre?.id === e.pointerId) arrastre.cancelado = true; fin(e); });
+  filas.addEventListener('click', (e) => {
+    const b = e.target.closest('.m');
+    if (!b) return;
+    if (tragarClic) { tragarClic = false; e.preventDefault(); e.stopPropagation(); return; }
+    const it = marcasVisibles().find(({ it: x }) => x.id === b.dataset.id)?.it;
+    if (it) elegirMarca(it, e.detail === 0 ? null : tDe(e.clientX - pista.getBoundingClientRect().left));
+  });
+  filas.addEventListener('dblclick', (e) => { if (e.target.closest('.carril-pista')) e.preventDefault(); });
+  filas.addEventListener('keydown', teclaMarca);
+  filas.addEventListener('keydown', (e) => { if (e.key === 'Escape' && E.sel && e.target.closest('.m')) vivo('Nada elegido.'); });
+  filas.addEventListener('focusin', (e) => { const b = e.target.closest('.m'); if (b) focoId = b.dataset.id; });
+  $('#linea-ir-sel').addEventListener('click', (e) => irASel(e.currentTarget));
+
   document.querySelectorAll('[data-zoom]').forEach((b) => b.addEventListener('click', () => ponerEscala(+b.dataset.zoom)));
   $('#reproducir').addEventListener('click', () => reproducir(!E.play));
   $('#anterior').addEventListener('click', () => saltar(-1));
   $('#siguiente').addEventListener('click', () => saltar(1));
   new ResizeObserver(() => { sucio.linea = true; programar(); }).observe(pista);
+  new ResizeObserver(() => { ventanaMarcas(false); pintarIrSel(); }).observe(cuerpo);
   new MutationObserver(() => { sucio.linea = sucio.cursor = true; programar(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-  document.fonts?.ready.then(() => { claveBarra = ''; ajustarBarra(); });   // con la letra ya cargada, los anchos cambian
+  // Con la letra ya cargada, los anchos cambian: la barra se vuelve a ajustar y los nombres se vuelven a medir.
+  document.fonts?.ready.then(() => { claveBarra = ''; ajustarBarra(); sucio.linea = true; programar(); });
   BE.pintores.push(() => vigilarReproduccion());
 }
 
@@ -1962,13 +2009,16 @@ BE.parametros.push(
   { nombre: 'vel', escribir: () => (L.vel != null ? claveVel(VELOCIDADES[L.vel]) : null), leer: (v) => { const i = VELOCIDADES.findIndex((x) => claveVel(x) === v); L.vel = i >= 0 ? i : null; } },
   { nombre: 'regla', escribir: () => rango(L.regla), leer: (v) => { L.regla = leerRango(v); } },
   { nombre: 'bucle', escribir: () => rango(L.bucle), leer: (v) => { L.bucle = leerRango(v); } },
-  { nombre: 'linea', escribir: () => (L.grande ? 'grande' : null), leer: (v) => { if ((v === 'grande') !== L.grande) ponerGrande(v === 'grande'); } },
+  // La línea alta es como abre en la pantalla ancha y alta: la dirección solo lo dice cuando no es lo de siempre
+  // («linea=normal» en esa pantalla, «linea=grande» en el móvil o en una pantalla baja).
+  { nombre: 'linea', escribir: () => (L.grande === altaDeInicio() ? null : L.grande ? 'grande' : 'normal'),
+    leer: (v) => { const on = v === 'grande' ? true : v === 'normal' ? false : altaDeInicio(); if (on !== $('#app').classList.contains('linea-grande')) ponerGrande(on); else L.grande = on; } },
   // Sin «meses» en la dirección vale lo de siempre: ambos, también en el móvil.
   { nombre: 'meses', escribir: () => L.meses, leer: (v) => { L.meses = MODOS_MESES.some(([k]) => k === v) ? v : null; } },
 );
 
 Object.assign(BE, {
-  pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, colorPotencia, fmtMes,
+  pintarLineaFija, pintarCursor, iniciarLinea, irA, encuadrarTiempo, duracion, ponerGrande, alternarGrande, colorPotencia, fmtMes,
   lineaEstado: L, SPAN_MIN,
 });
 })();

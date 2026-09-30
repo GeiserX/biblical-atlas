@@ -65,6 +65,7 @@
 <script defer src="js/ficha.js"></script>
 <script defer src="js/mapa.js"></script>
 <script defer src="js/trayectorias.js"></script>
+<script defer src="js/linea-filas.js"></script>
 <script defer src="js/linea.js"></script>
 <script defer src="js/datepicker.js"></script>
 <script defer src="js/ahora.js"></script>
@@ -156,10 +157,22 @@
       <button class="be-btn be-btn--icon be-btn--ghost linea-alto" id="linea-alto" type="button" aria-label="Alto de la línea de tiempo: arrastra hacia arriba o hacia abajo; pulsa para ampliarla o volver" title="Arrastra hacia arriba o hacia abajo para ver más o menos carriles; pulsa para ampliar la línea o volver"><svg class="be-i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       <span class="cronologia" role="img" title="Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de jw.org. Si una fecha secular difiere, sale solo como nota." aria-label="Las fechas siguen la cronología de la Traducción del Nuevo Mundo y de jw.org"><svg class="be-i be-i--sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7.8" r="1.2" fill="currentColor"/></svg><span class="cronologia-texto">Fechas</span></span>
     </div>
-    <div class="be-timeline__labels linea-carriles" id="carriles"></div>
-    <div class="be-timeline__track linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo" aria-valuemin="-4025" aria-valuemax="100" aria-valuenow="50.3">
-      <svg id="linea-svg" class="linea-svg" aria-hidden="false"></svg>
+    <!-- Un solo desplazamiento: la regla queda arriba y los carriles bajan debajo (linea.js, linea-filas.js). -->
+    <div class="linea-cuerpo" id="linea-cuerpo">
+      <div class="linea-cabeza">
+        <div class="linea-carriles carriles-eje" id="carriles"></div>
+        <div class="linea-pista" id="pista" tabindex="0" role="slider" aria-label="Cursor de tiempo: pulsa o arrastra en la regla, o usa las flechas" aria-valuemin="-4025" aria-valuemax="100" aria-valuenow="50.3">
+          <svg id="linea-svg" class="linea-svg" aria-hidden="false"></svg>
+        </div>
+      </div>
+      <div class="linea-filas" id="linea-filas" role="group" aria-label="Marcas de la línea de tiempo. Flechas izquierda y derecha: por una fila. Arriba y abajo: de fila en fila. Intro: elegir.">
+        <svg id="linea-fondo" class="linea-fondo" aria-hidden="true"></svg>
+        <span class="m-nombre linea-medida" id="linea-medida" aria-hidden="true">Medida <i>aprox.</i></span>
+      </div>
+      <p class="linea-vacios" id="linea-vacios" hidden></p>
     </div>
+    <button type="button" class="linea-ir-sel" id="linea-ir-sel" hidden></button>
+    <p class="sr-only" id="linea-vivo" aria-live="polite"></p>
     <section class="vista vista-sincronia" id="vista-sincronia" aria-label="Sincronía" hidden></section>
   </section>
   <!-- Separadores: arrastrar, flechas del teclado o doble clic para volver al tamaño de siempre (base.js, marcos). -->
