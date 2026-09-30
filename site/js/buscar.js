@@ -194,8 +194,9 @@ function preguntas(q) {
   const nq = norm(q).trim().replace(/[¿?]/g, '').replace(/\s+/g, ' ');
   out.push(...preguntasMes(nq));
   if (out.length && out.some((r) => r.puntos >= 900)) return out;
-  // Un año suelto
-  const y = leerAnio(q);
+  // Un año suelto. Un número sin «a.e.c.» ni «e.c.» que no cabe después de Cristo es antes: «607» es 607 a.e.c.
+  let y = leerAnio(q);
+  if (y != null && !enRango(y) && /^\s*\d{1,4}\s*$/.test(q) && enRango(1 - y)) y = 1 - y;
   if (y != null) {
     out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y)}`, meta: enRango(y) ? 'mueve el cursor de tiempo y enseña quién había' : 'fuera del tramo que cubre la línea de tiempo', puntos: 900, accion: () => saltarA(y + 0.5) });
     return out;
