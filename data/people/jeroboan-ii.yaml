@@ -51,9 +51,18 @@ relations:
   sources:
   - it-jeroboan
   - 2-reyes-14
+  - 2-reyes-13
   reason: Reinó al morir su padre (2Re 14:16).
-  checked_on: '2026-09-29'
+  checked_on: '2026-09-30'
   office: king
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-14
+  reason: '2Re 14:23: reinó cuarenta y un años en Samaria.'
+  checked_on: '2026-09-30'
   status: verified
 perspicacia: 1200002431#2
 history:
@@ -64,5 +73,5 @@ history:
   change: 'El límite norte que recobró era Lebó-Hamat, no Hamat: así lo dice 2Re 14:25, y Am 6:14 usa el mismo par de límites.
     Hamat es la ciudad, que 2Re 14:28 trata aparte.'
   source: 2-reyes-14
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

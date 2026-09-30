@@ -53,6 +53,7 @@ sources:
 - it-ararat
 - genesis-8
 - openbible-geo
+- 2-reyes-19
 links:
 - title: 'Perspicacia: «Ararat»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000338
@@ -60,5 +61,5 @@ links:
 - title: Génesis 8 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/1/8
   type: bible
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

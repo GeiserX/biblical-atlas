@@ -20,6 +20,7 @@ sources:
 - 2-reyes-11
 - 2-cronicas-22
 - tnm-a6-a
+- 2-reyes-8
 links:
 - title: 'Perspicacia: «Atalía»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000457
@@ -57,9 +58,30 @@ relations:
   checked_on: '2026-09-29'
   office: queen
   status: verified
+- type: kin
+  person: omri
+  word: grandfather
+  inferred: false
+  sources:
+  - 2-reyes-8
+  - it-atalia-reina
+  reason: '2Re 8:26: Atalía, nieta del rey Omrí de Israel; la nota dice que el hebreo pone «hija».'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-11
+  - it-atalia-reina
+  reason: '2Re 11:15, 16, 20: la sacan del templo y la matan junto a la casa del rey, en la ciudad; Perspicacia «Atalía»,
+    núm. 1, en la entrada de los caballos del palacio.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-29'
   change: 'La desambiguación ya no cita el versículo de Hechos del puerto: esa cita ponía a la reina en la página de ese capítulo.'
   source: it-atalia
-checked_on: '2026-09-29'
+perspicacia: 1200000457#1
+checked_on: '2026-09-30'
 status: verified

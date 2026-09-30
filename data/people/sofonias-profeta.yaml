@@ -53,7 +53,7 @@ history:
   change: 'La fecha pasa de anclada a narrativa: nadie da ese rango; queda entre dos años anclados, 659 (Josías, A6-B) y 648
     (estudio 3), como el evento del libro.'
   source: sofonias-1
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 relations:
 - type: kin
@@ -78,3 +78,5 @@ relations:
     conoce Jerusalén.
   checked_on: '2026-09-29'
   status: verified
+distinct_from:
+- sofonias-hijo-de-maaseya

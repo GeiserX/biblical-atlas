@@ -17,6 +17,10 @@ events:
 - caida-de-samaria
 - senaquerib-contra-jerusalen
 - caida-de-ninive
+- hosea-se-alia-con-so-y-salmanasar-lo-encarcela
+- asiria-repuebla-las-ciudades-de-samaria
+- ezequias-paga-tributo-a-senaquerib
+- el-rabsaque-exige-la-rendicion-de-jerusalen
 summary: Imperio del norte de Mesopotamia, con capital en Nínive. Tomó Samaria en 740 a.e.c. e invadió Judá en 732. Cayó
   ante babilonios, medos y escitas. No tenemos fecha de su ascenso.
 reason: 'Perspicacia «Asiria» y «Veamos “la buena tierra”» fechan la caída de Nínive en 632 a.e.c. «Asiria» (apartado
@@ -26,5 +30,5 @@ sources:
 - lbt-imperios
 - it-babilonia
 search: Asiria potencia mundial
-checked_on: '2026-09-28'
+checked_on: '2026-09-30'
 status: verified

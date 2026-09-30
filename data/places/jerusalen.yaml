@@ -44,6 +44,33 @@ names:
 - name: Bet-Merhac
   note: Sitio donde se detuvo David al dejar la ciudad huyendo de Absalón (2Sa 15:17). Perspicacia «Bet-merhaq» cree que quizá
     fuera la última casa del lado del monte de los Olivos.
+- name: Silá
+  note: Lugar de la antigua Jerusalén al que bajaba el camino de la casa del Montículo, donde mataron a Jehoás (2Re 12:20).
+    Perspicacia «Silá» solo lo conoce por ese versículo.
+- name: Puerta de Efraín
+  note: Puerta del Muro Ancho, en el norte, que daba hacia Efraín, unos 400 codos al este de la otra puerta que nombra 2Re
+    14:13. Perspicacia «Puerta».
+- name: Puerta de la Esquina
+  note: Puerta del ángulo noroeste de la muralla, sobre el valle de Hinón. Jehoás de Israel derribó el muro desde la de Efraín
+    hasta ella (2Re 14:13). Perspicacia «Puerta».
+- name: Puerta superior de la casa de Jehová
+  note: Puerta del templo que construyó Jotán (2Re 15:35). Perspicacia cree que daba al patio interior y que quizá sea la
+    puerta nueva que nombra Jeremías.
+- name: Estanque superior
+  note: Estanque de las afueras junto a cuyo acueducto se pararon los enviados de Senaquerib (2Re 18:17). Perspicacia «Estanque»
+    dice que no hay acuerdo sobre su sitio.
+- name: Campo del lavandero
+  note: Zona de las afueras donde trabajaban los lavanderos, con una calzada al alcance de la voz desde la muralla; quizá
+    en el valle del Cedrón, cerca de En-Roguel (Perspicacia).
+- name: Escalera de Acaz
+  note: Escalones donde la sombra retrocedió diez peldaños (2Re 20:11). La nota ve posible que midieran el tiempo; Perspicacia
+    «Sol» recoge que quizá formaban parte del palacio.
+- name: Puerta de Josué
+  note: Puerta que llevaba el nombre de Josué, jefe de la ciudad; a su entrada había lugares altos que Josías derribó (2Re
+    23:8).
+- name: Jardín del rey
+  note: Junto a la puerta entre las dos murallas por la que huyeron Sedequías y sus soldados (2Re 25:4; Ne 3:15). Perspicacia
+    «Jardín» lo pone probablemente fuera del muro sudeste.
 type: city
 lat: 31.776667
 lon: 35.234167
@@ -160,6 +187,22 @@ sources:
 - 1-reyes-12
 - 1-reyes-14
 - 1-reyes-15
+- 2-reyes-9
+- 2-reyes-11
+- 2-reyes-12
+- it-sila
+- 2-reyes-14
+- 2-reyes-15
+- 2-reyes-16
+- 2-reyes-18
+- 2-reyes-19
+- 2-reyes-20
+- 2-reyes-21
+- 2-reyes-22
+- 2-reyes-23
+- 2-reyes-24
+- 2-reyes-25
+- it-jardin
 links:
 - title: 'Perspicacia: «Jerusalén»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002436

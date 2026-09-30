@@ -9,6 +9,7 @@ disambiguation: Eliaquim hijo de Abiud; no el administrador de Ezequías, el rey
 distinct_from:
 - jehoiaquim
 - eliaquim-hijo-de-melea
+- eliaquim-hijo-de-hilquias
 summary: Antepasado de José, el esposo de María, en la línea posterior al destierro. Mateo lo da como hijo de Abiud y padre
   de Azor.
 reason: Perspicacia «Eliaquim», núm. 4; Mt 1:13.
@@ -29,5 +30,5 @@ relations:
   reason: Mt 1:13.
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

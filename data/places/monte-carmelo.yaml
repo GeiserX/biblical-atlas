@@ -10,7 +10,7 @@ precision: point
 coord_source: openbible:a3e21c6
 coord_url: https://www.openbible.info/geo/ancient/a3e21c6/mount-carmel
 summary: Cordillera de unos 50 km que baja hasta el Mediterráneo y cierra por el suroeste el valle de Jezreel. Allí se enfrentó
-  Elías a los profetas de Baal.
+  Elías a los profetas de Baal, y allí fue la sunamita a buscar a Eliseo.
 reason: 'Perspicacia «Carmelo», núm. 1, párr. 2-4; 1Re 18:19-40. OpenBible: solo el punto.'
 sources:
 - it-carmelo
@@ -20,6 +20,7 @@ sources:
 - amos-9
 - nahum-1
 - josue-19
+- 2-reyes-4
 links:
 - title: 'Perspicacia: «Carmelo»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000892
@@ -27,5 +28,10 @@ links:
 - title: 1 Reyes 18 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/11/18
   type: bible
-checked_on: '2026-09-29'
+history:
+- date: '2026-09-30'
+  change: El resumen añade a Eliseo, a quien la sunamita buscó en el Carmelo cuando murió su hijo (2Re 4:25; Perspicacia «Carmelo»,
+    núm. 1).
+  source: 2-reyes-4
+checked_on: '2026-09-30'
 status: verified

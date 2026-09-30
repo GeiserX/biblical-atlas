@@ -28,5 +28,26 @@ relations:
   reason: Lo mataron sus hijos en la casa de su dios Nisroc, en Nínive (2Re 19:36-37).
   checked_on: '2026-09-28'
   status: verified
-checked_on: '2026-09-28'
+- type: holds_office
+  place: asiria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-18
+  - it-senaquerib
+  - 2-reyes-19
+  reason: 2Re 18:13 lo llama rey de Asiria.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: ninive
+  sources:
+  - 2-reyes-19
+  - it-senaquerib
+  reason: '2Re 19:36: tras la derrota regresó a Nínive y se quedó allí; Perspicacia «Senaquerib» dice que le devolvió la capitalidad.'
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200003897'
+checked_on: '2026-09-30'
 status: verified

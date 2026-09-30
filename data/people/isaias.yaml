@@ -20,6 +20,8 @@ sources:
 - isaias-6
 - tnm-tabla
 - si-3
+- 2-reyes-19
+- 2-reyes-20
 links:
 - title: 'Perspicacia: «Isaías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002204
@@ -37,6 +39,26 @@ relations:
   reason: 'Actuaba en Jerusalén: allí salió al encuentro de Acaz (Is 7:3) y lo consultó Ezequías (Is 37:2).'
   checked_on: '2026-09-29'
   status: verified
+- type: kin
+  person: amoz
+  word: father
+  sources:
+  - 2-reyes-19
+  - it-amoz
+  reason: 2Re 19:2, 20 lo llaman hijo de Amoz.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: holds_office
+  office: prophet
+  sources:
+  - 2-reyes-19
+  - 2-reyes-20
+  - it-isaias
+  reason: 2Re 19:2 y 20:1, 11 lo llaman el profeta Isaías.
+  inferred: false
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: '1200002204'
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

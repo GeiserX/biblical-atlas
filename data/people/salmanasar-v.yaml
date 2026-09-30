@@ -21,5 +21,17 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
   type: bible
 perspicacia: 1200003936#2
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+relations:
+- type: holds_office
+  place: asiria
+  office: king
+  inferred: false
+  sources:
+  - 2-reyes-17
+  - 2-reyes-18
+  - it-salmanasar
+  reason: 2Re 17:3 lo llama rey de Asiria; 2Re 18:9 da su nombre con ese título.
+  checked_on: '2026-09-30'
+  status: verified

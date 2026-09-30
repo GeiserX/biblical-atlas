@@ -45,5 +45,22 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
-checked_on: '2026-09-28'
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:23: reinó dos años en Samaria.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:25: Pécah lo mató en Samaria, en la torre del palacio.'
+  checked_on: '2026-09-30'
+  status: verified
+perspicacia: '1200003416'
+checked_on: '2026-09-30'
 status: verified

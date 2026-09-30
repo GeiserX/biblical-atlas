@@ -39,6 +39,7 @@ sources:
 - openbible-geo
 - amos-9
 - amos-1
+- 2-reyes-16
 links:
 - title: 'Perspicacia: «Quir»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002619
@@ -49,5 +50,5 @@ links:
 - title: Amós 1 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/30/1
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

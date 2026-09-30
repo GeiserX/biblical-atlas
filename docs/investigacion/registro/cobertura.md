@@ -24,7 +24,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | [1 Samuel](../../../data/coverage/1-samuel.yaml) | 31 de 31 | 810 de 810 | 100 % |
 | [2 Samuel](../../../data/coverage/2-samuel.yaml) | 24 de 24 | 695 de 695 | 100 % |
 | [1 Reyes](../../../data/coverage/1-reyes.yaml) | 22 de 22 | 816 de 816 | 100 % |
-| 2 Reyes | 0 de 25 | 0 de 719 | 0 % |
+| [2 Reyes](../../../data/coverage/2-reyes.yaml) | 25 de 25 | 719 de 719 | 100 % |
 | 1 Crónicas | 0 de 29 | 0 de 942 | 0 % |
 | 2 Crónicas | 0 de 36 | 0 de 822 | 0 % |
 | Esdras | 0 de 10 | 0 de 280 | 0 % |
@@ -79,7 +79,7 @@ Qué versículos de la TNM se han leído y apuntado en `data/coverage/<libro>.ya
 | 3 Juan | 0 de 1 | 0 de 14 | 0 % |
 | Judas | 0 de 1 | 0 de 25 | 0 % |
 | Apocalipsis | 0 de 22 | 0 de 404 | 0 % |
-| **Total** | 787 de 1189 | 21479 de 31062 | 69 % |
+| **Total** | 812 de 1189 | 22198 de 31062 | 71 % |
 
 ## Capítulos empezados
 

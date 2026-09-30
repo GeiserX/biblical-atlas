@@ -58,5 +58,7 @@ links:
 - title: Salmo 75 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/75
   type: bible
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
+distinct_from:
+- asaf-padre-de-joa

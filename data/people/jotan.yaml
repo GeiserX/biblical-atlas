@@ -49,9 +49,44 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: jerusa
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-jerusa
+  reason: 2Re 15:33 da a Jerusá hija de Sadoc como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: 2Re 15:38 llama a David su antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-15
+  reason: '2Re 15:33: reinó 16 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: jerusalen
+  inferred: true
+  sources:
+  - 2-reyes-15
+  reason: 2Re 15:38 solo dice que lo enterraron en la Ciudad de David; el lugar de la muerte se deduce del entierro.
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200002529#3
 disambiguation: Rey de Judá, hijo de Uzías; no el hijo menor del juez Gedeón ni el descendiente de Judá llamado hijo de Jahdai.
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
 distinct_from:
 - jotan-hijo-de-gedeon

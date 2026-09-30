@@ -50,5 +50,15 @@ relations:
   reason: En Nínive estaban su palacio y su biblioteca (Perspicacia «Nínive», párr. 2, y «Asnapar», párr. 4).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+- type: kin
+  person: esar-hadon
+  word: father
+  inferred: true
+  sources:
+  - it-asnapar
+  - it-esar-hadon
+  reason: 'Perspicacia «Asnapar», párr. 2, y «Esar-hadón», último párrafo: hijo de Esar-Hadón, que lo nombró heredero.'
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

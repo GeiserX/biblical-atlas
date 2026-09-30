@@ -21,6 +21,8 @@ sources:
 - josue-10
 - josue-12
 - josue-15
+- 2-reyes-14
+- 2-reyes-19
 links:
 - title: 'Perspicacia: «Lakís»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002659
@@ -35,5 +37,5 @@ history:
 - date: '2026-09-29'
   change: La razón cita ahora la conquista de Josué y el párrafo de Perspicacia que la cuenta.
   source: josue-10
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

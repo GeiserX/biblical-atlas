@@ -10,6 +10,7 @@ distinct_from:
 - zacarias-profeta
 - zacarias-padre-de-juan
 - zacarias-de-israel
+- zacarias-abuelo-de-ezequias
 date:
   from: -897
   to: -857
@@ -61,5 +62,5 @@ relations:
     estudio.'
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

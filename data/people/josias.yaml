@@ -12,7 +12,7 @@ date:
   chronology: tnm
   text: 659-628 a.e.c.
 summary: Hijo de Amón, rey a los ocho años. Limpió Judá y parte del antiguo Israel de idolatría, reparó el templo y celebró
-  una Pascua sin igual. Murió en Meguidó frente al faraón Nekó.
+  una Pascua sin igual. Cayó herido de muerte en Meguidó frente al faraón Nekó.
 reason: Perspicacia «Josías», núm. 1, párr. 3-5, 7 y 9; 2Re 22-23 y 2Cr 34-35.
 sources:
 - it-josias
@@ -22,6 +22,7 @@ sources:
 - mateo-1
 - sofonias-1
 - 1-reyes-13
+- 2-reyes-21
 links:
 - title: 'Perspicacia: «Josías»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002525
@@ -52,11 +53,76 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: jedida
+  word: mother
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - it-jedida
+  reason: 2Re 22:1 da a Jedidá como su madre.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: david
+  word: ancestor
+  inferred: false
+  sources:
+  - 2-reyes-22
+  reason: 2Re 22:2 llama a David su antepasado.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: jerusalen
+  inferred: false
+  sources:
+  - 2-reyes-22
+  - 2-reyes-23
+  reason: '2Re 22:1: reinó 31 años en Jerusalén.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: hamutal
+  word: wife
+  inferred: true
+  sources:
+  - 2-reyes-23
+  - it-hamutal
+  - it-josias
+  reason: Madre de Jehoacaz, hijo de Josías (2Re 23:30, 31). Perspicacia «Hamutal» y «Josías», núm. 1, la llaman su esposa.
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: zebida
+  word: wife
+  inferred: true
+  sources:
+  - 2-reyes-23
+  - it-josias
+  - it-zebida
+  reason: Madre de Jehoiaquim, hijo de Josías (2Re 23:34, 36). Perspicacia «Josías» la cuenta entre sus esposas; «Zebidá»
+    dice esposa o concubina.
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: neko
+  word: enemy
+  inferred: false
+  sources:
+  - 2-reyes-23
+  - it-neko
+  reason: '2Re 23:29: Josías salió a luchar contra Nekó, que lo mató en Meguidó.'
+  checked_on: '2026-09-30'
+  status: verified
 history:
 - date: '2026-09-28'
   change: Perspicacia «Josías» cerraba su reinado en 629 a.e.c.; A6-B, más reciente, empieza el de Jehoacaz en 628, como el
     estudio 3.
   source: tnm-a6-b
+- date: '2026-09-30'
+  change: Decía que murió en Meguidó; 2Cr 35:24 dice que lo llevaron a Jerusalén y allí murió, y Perspicacia «Josías», núm.
+    1, lo deja en el camino o al llegar.
+  source: 2-reyes-23
 perspicacia: 1200002525#1
 checked_on: '2026-09-30'
 status: verified

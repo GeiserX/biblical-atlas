@@ -48,8 +48,57 @@ relations:
   - 1-reyes-19
   - it-nimsi
   - it-jehu
+  - 2-reyes-9
   reason: 1Re 19:16 lo llama nieto de Nimsí; también 2Re 9:2, 14.
   inferred: false
+  checked_on: '2026-09-30'
+  status: verified
+- type: kin
+  person: jehosafat-hijo-de-nimsi
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-9
+  - it-jehosafat
+  reason: '2Re 9:2, 14: Jehú hijo de Jehosafat, hijo de Nimsí; Perspicacia «Jehosafat», núm. 4.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: acab
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-9
+  - it-jehu
+  reason: '2Re 9:7: el mensajero le habla de la casa de su señor Acab; en 9:25 Jehú recuerda que iba detrás de él.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: jehoram-de-israel
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-9
+  - 2-reyes-10
+  reason: '2Re 9:11, 14: vuelve con los siervos de su señor y conspira contra Jehoram; en 10:9 dice que conspiró contra su
+    señor y lo mató.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: died_in
+  place: samaria
+  inferred: true
+  sources:
+  - 2-reyes-10
+  reason: '2Re 10:35: fue sepultado en Samaria. El texto da el entierro, no el lugar de la muerte.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-10
+  - it-jehu
+  reason: '2Re 10:36: reinó 28 años sobre Israel desde Samaria.'
   checked_on: '2026-09-30'
   status: verified
 history:

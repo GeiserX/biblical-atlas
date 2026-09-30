@@ -90,5 +90,15 @@ relations:
   reason: La carta de Artajerjes lo llama el sacerdote Esdras, copista de la Ley (Esd 7:11, 12).
   checked_on: '2026-09-29'
   status: verified
-checked_on: '2026-09-28'
+- type: kin
+  person: seraya-hijo-de-azarias
+  word: ancestor
+  inferred: true
+  sources:
+  - esdras-7
+  - it-seraya
+  reason: Esd 7:1 lo llama hijo de Seraya; Perspicacia «Seraya», núm. 6, ve al menos dos generaciones sin nombrar entre ellos.
+  checked_on: '2026-09-30'
+  status: verified
+checked_on: '2026-09-30'
 status: verified

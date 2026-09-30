@@ -63,6 +63,10 @@ relations:
   - 1-reyes-16
   - 1-reyes-21
   - 1-reyes-22
+  - 2-reyes-3
+  - 2-reyes-9
+  - 2-reyes-10
+  - 2-reyes-17
   reason: '1Re 11:26: Jeroboán hijo de Nebat.'
   checked_on: '2026-09-30'
   status: verified

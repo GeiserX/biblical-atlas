@@ -14,16 +14,15 @@ places:
 people:
 - hosea-de-israel
 - salmanasar-v
-- ezequias
 present:
 - salmanasar-v
 passages:
-- 2Re 17:1-6
-- 2Re 18:9-12
-summary: Tras un sitio de tres años que empezó en 742, Asiria toma Samaria y destierra a sus habitantes. Termina el reino
-  de diez tribus, que había durado 257 años.
-reason: Estudio 3 (740); Perspicacia «Ezequías», párr. 10 (sitio desde 742, sexto año de Ezequías) y «Salmanasar», párr. 15
-  (257 años). A6-B da el mismo año.
+- 2Re 17:5, 6
+- 2Re 18:9, 10
+summary: Tras un sitio de tres años que empezó en 742, Asiria toma Samaria. Con su caída acaba el reino de diez tribus, que
+  había durado 257 años.
+reason: Estudio 3 (740); Perspicacia «Ezequías», párr. 10 (sitio desde 742) y «Salmanasar», párr. 15 (257 años). Sitió Salmanasar
+  V (2Re 18:9); «Sargón» ve probable que la toma fuera suya. A6-B da el mismo año.
 sources:
 - si-3
 - it-samaria
@@ -31,6 +30,8 @@ sources:
 - it-salmanasar
 - tnm-a6-b
 - 2-reyes-17
+- it-sargon
+- 2-reyes-18
 links:
 - title: 'Perspicacia: «Samaria»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200003816
@@ -45,5 +46,23 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/12/17
   type: bible
 search: caída de Samaria 740
-checked_on: '2026-09-28'
+history:
+- date: '2026-09-30'
+  change: 'Se decide la duda de Oseas: Salmanasar V sigue presente. Sitió la ciudad (2Re 18:9) y Perspicacia «Sargón» tiene
+    por jactancia la toma que Sargón se atribuye.'
+  source: it-sargon
+- date: '2026-09-30'
+  change: El vasallaje y la cárcel de Hosea (2Re 17:3, 4) y el destierro (2Re 17:6; 18:11, 12) son ahora sucesos propios;
+    este se queda con el sitio y la toma.
+  source: 2-reyes-17
+- date: '2026-09-30'
+  change: El destierro de los israelitas pasa a asiria-destierra-a-israel; el resumen cuenta solo el sitio y la toma.
+  source: 2-reyes-17
+- date: '2026-09-30'
+  change: 'Ezequías no actúa en la escena: 2Re 18:9, 10 solo fecha el sitio por sus años de reinado.'
+  source: 2-reyes-18
+narrative_order:
+  series: 2-reyes
+  order: 17005
+checked_on: '2026-09-30'
 status: verified

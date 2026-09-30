@@ -22,6 +22,7 @@ sources:
 - 2-reyes-15
 - 2-reyes-17
 - tnm-a6-b
+- 2-reyes-18
 links:
 - title: 'Perspicacia: «Hosea»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200002090
@@ -40,6 +41,48 @@ relations:
   checked_on: '2026-09-29'
   office: king
   status: verified
+- type: kin
+  person: ela-padre-de-hosea
+  word: father
+  inferred: false
+  sources:
+  - 2-reyes-15
+  - it-elah
+  - 2-reyes-17
+  - 2-reyes-18
+  reason: 2Re 15:30 lo llama Hosea hijo de Elá.
+  checked_on: '2026-09-30'
+  status: verified
+- type: lived_in
+  place: samaria
+  inferred: false
+  sources:
+  - 2-reyes-17
+  - it-hosea
+  reason: '2Re 17:1: reinó sobre Israel desde Samaria nueve años.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: salmanasar-v
+  word: master
+  inferred: false
+  sources:
+  - 2-reyes-17
+  - it-salmanasar
+  reason: '2Re 17:3: se hizo siervo de Salmanasar y le pagaba tributo.'
+  checked_on: '2026-09-30'
+  status: verified
+- type: tie
+  person: so
+  word: ally
+  inferred: true
+  sources:
+  - 2-reyes-17
+  - it-salmanasar
+  - it-so
+  reason: 2Re 17:4 habla de sus mensajeros a So. Perspicacia «Salmanasar», núm. 2, dice que se alió con él contra Asiria.
+  checked_on: '2026-09-30'
+  status: verified
 perspicacia: 1200002090#4
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
