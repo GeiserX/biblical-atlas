@@ -29,6 +29,8 @@ passages:
 - Lu 3:1-18
 - Jn 1:6-8
 - Hch 13:24
+- Mal 3:1
+- Mal 4:5, 6
 summary: En el año 15 de Tiberio, Juan empieza a predicar en el desierto de Judea que el Reino se ha acercado, y bautiza en
   el Jordán a los judíos que se arrepienten.
 reason: 'A7-A, fila 10: c. abril de 29, desierto y río Jordán. La nota de Lu 3:1 cuenta el año 15 de Tiberio y sitúa el comienzo
@@ -42,11 +44,18 @@ sources:
 - it-juan
 - jy-cap-11
 - it-desierto-de-juda
+- malaquias-3
+- it-mensajero
+- it-malaquias-libro
+- malaquias-4
+- it-elias
+- si-malaquias
+- w07-malaquias
 present:
 - juan-el-bautista
 history:
 - date: '2026-09-29'
   change: 'Se añade presentes: sin ellos el sitio ponía también a Tiberio en Judea. Solo Juan estaba allí.'
   source: lucas-3
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified

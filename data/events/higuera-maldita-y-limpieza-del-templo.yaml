@@ -23,6 +23,7 @@ passages:
 - Mt 21:12, 13
 - Mr 11:12-17
 - Lu 19:45, 46
+- Mal 3:1
 summary: Camino de Jerusalén maldice una higuera sin fruto. En el templo echa a los que compran y venden, porque
   habían convertido la casa de oración en una cueva de ladrones.
 reason: La tabla A7-G da el día y el lugar. Perspicacia «Betania» (párr. 4) sitúa la higuera en el camino desde Betania;
@@ -37,6 +38,9 @@ sources:
 - jy-cap-105
 - tnm-b12-a
 - it-betania
+- malaquias-3
+- it-mensajero
+- w07-malaquias
 narrative_order:
   series: a7
   order: 95
@@ -46,5 +50,5 @@ history:
   change: 'Jerusalén pasa a primer lugar: la limpieza del templo es lo principal (Mt 21:12, 13), y el mapa situaba a Jesús
     en Betania.'
   source: mateo-21
-checked_on: '2026-09-29'
+checked_on: '2026-09-30'
 status: verified
