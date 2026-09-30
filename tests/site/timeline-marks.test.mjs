@@ -690,6 +690,27 @@ test('1440: lanes alternate their background among the lanes shown, and every ma
   await p.context().close();
 });
 
+test('1440: the focus never falls out of the strip: a person released with Esc, the wheel over a focused mark', async () => {
+  const p = await open(DESKTOP, 't=50.5&v=8');
+  await p.evaluate(() => window.BE.seleccionar({ tipo: 'persona', id: 'silas' }, { mover: false }));
+  await frames(p);
+  const id = await p.evaluate(() => { const b = document.querySelector('#linea-filas .carril[data-carril="silas"] .m'); b.scrollIntoView({ block: 'center' }); b.focus(); return b.dataset.id; });
+  await frames(p);
+  await p.keyboard.press('Escape'); await frames(p, 4);
+  const esc = await p.evaluate(() => ({ sel: window.BE.selTexto(window.BE.E.sel), silas: !!document.querySelector('#linea-filas .carril[data-carril="silas"]:not([hidden])'), focus: document.activeElement?.closest('#linea-filas .m') ? document.activeElement.dataset.id : document.activeElement?.tagName }));
+  note(`1440 Esc on «${id}» of Silas: selection «${esc.sel}», Silas lane ${esc.silas ? 'still there' : 'gone'}, focus on ${esc.focus}`);
+  assert.ok(!['BODY', 'HTML', undefined].includes(esc.focus), `the focus fell to ${esc.focus}`);
+  await goTo(p, -1512.5, 4125);
+  const first = await p.evaluate(() => { const b = document.querySelector('#linea-filas .m[tabindex="0"]'); b.focus(); return b.dataset.id; });
+  const r = await p.evaluate(() => { const c = document.querySelector('#linea-cuerpo').getBoundingClientRect(); return [c.left + 400, c.top + c.height / 2]; });
+  await p.mouse.move(r[0], r[1]);
+  const ids = new Set();
+  for (let i = 0; i < 12; i++) { await p.mouse.wheel(0, 400); await frames(p); ids.add(await p.evaluate(() => document.activeElement?.dataset?.id || document.activeElement?.tagName)); }
+  note(`1440 wheel ×12 with the focus on «${first}»: focus on ${[...ids].join(', ')}`);
+  assert.deepEqual([...ids], [first]);
+  await p.context().close();
+});
+
 test('no console error, no page error and no failed request in the whole run', () => {
   assert.deepEqual(errors, []);
   assert.deepEqual(failed, []);

@@ -405,6 +405,7 @@ function pintarLineaFija() {
   const pista = $('#pista');
   anchoLinea = pista.clientWidth || 800;
   cabAlto = pista.offsetHeight || EJE;
+  const focoAntes = document.activeElement?.closest?.('#linea-filas .m') || null;
   const s = span(), pxAnio = anchoLinea / s;
   svg.setAttribute('width', anchoLinea); svg.setAttribute('height', cabAlto);
   svg.setAttribute('viewBox', `0 0 ${anchoLinea} ${cabAlto}`);
@@ -416,6 +417,9 @@ function pintarLineaFija() {
   const regla = [defsRegla(), `<g class="eje">${marcasEje(pxAnio)}</g>`, densidad(), selEnRegla(), reglaEnRegla(), bucleEnRegla(), pintarMarcadores(), '<g id="linea-cursor"></g>'];
   svg.innerHTML = regla.join('');
   pintarFilas(V);
+  // La marca con el foco cuyo carril se quitó o se escondió (una persona soltada con Esc): el foco no cae a la página,
+  // pasa a la parada del tabulador de la franja.
+  if (focoAntes && (!focoAntes.isConnected || focoAntes.closest('[hidden]'))) $('#linea-filas .m[tabindex="0"]')?.focus({ preventScroll: true });
   sucio.cursor = true;
   pintarVelocidad();
   let zon = '';
@@ -616,6 +620,7 @@ function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = B
   const cuerpo = $('#linea-cuerpo');
   const vh = cuerpo.clientHeight || 300;
   const y0 = cuerpo.scrollTop - vh, y1 = cuerpo.scrollTop + 2 * vh;
+  const conFoco = document.activeElement;
   let perdioFoco = false;
   for (const c of carrilesVista) {
     const x = carrilEls.get(c.id);
@@ -625,7 +630,8 @@ function ventanaMarcas(repintar, V = BE.viajeActual(BE.dondeEsta(E.t)), selT = B
       for (const it of c.out.visible) {
         const top = c.decor + it._drow * G.row;
         const y = c.top + top;
-        if (y + G.row < y0 || y > y1) continue;
+        // La marca con el foco se queda en la página aunque la rueda la saque de la ventana: el foco no salta a otra.
+        if ((y + G.row < y0 || y > y1) && !(it.el && it.el === conFoco)) continue;
         keep.add(it);
         const nueva = !it.el || it.el.parentNode !== x.pista;
         if (nueva || repintar) pintarMarca(it, top, selT, V);
