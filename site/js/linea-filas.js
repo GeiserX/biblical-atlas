@@ -202,8 +202,10 @@ function edgeRows(vis, w, G, holdEdge) {
     if (!pin && it._lx >= 0 && it._lx + lw <= w) { take(it.row, it._hit[0], it._hit[1]); continue; }
     const d0 = it.shape === 'moment' ? it._dot - G.dotR : it._g[0], d1 = it.shape === 'moment' ? it._dot + G.dotR : it._g[1];
     if (d1 < 0 || d0 > w) { it._gone = true; continue; }
-    // Una barra que solo asoma unos píxeles por un borde todavía no está en la vista: aparece al arrastrar un poco.
-    if (it.shape === 'span' && Math.min(d1, w) - Math.max(d0, 0) < 24) { it._gone = true; continue; }
+    // Una barra que solo asoma unos píxeles por un borde todavía no está en la vista: aparece al arrastrar un poco. Una
+    // barra corta que está entera dentro sí está en la vista, por estrecha que sea: su nombre busca otro sitio. Los 3 px
+    // de margen son el ancho mínimo de una barra, que puede pasar del borde aunque sus fechas estén dentro.
+    if (it.shape === 'span' && (d0 < -3 || d1 > w + 3) && Math.min(d1, w) - Math.max(d0, 0) < 24) { it._gone = true; continue; }
     it._in = false;
     const lw2 = lwOf(it);
     if (d0 - 4 - lw2 >= 2) it._lx = d0 - 4 - lw2;

@@ -111,6 +111,23 @@ test('T5 a bar that only peeks in under 24 px and whose name does not fit there 
   assert.equal(wide.visible.length, 1, 'a bar with 50 px in view shows');
 });
 
+test('T5b a short bar wholly inside the view shows with its whole name, even when the name does not fit on its right', () => {
+  // 800 px for 8 years: a bar of 8 px that ends 60 px from the right edge, with a name far wider than 60 px, right after
+  // a bar of the same world row, so its name fits neither on its right nor between the two.
+  const items = [
+    { id: 'a', name: 'Aquí', cert: 'exact', shape: 'span', start: 16, end: 17.2, group: 0 },
+    { id: 'b', name: 'Tito, emperador de Roma', cert: 'exact', shape: 'span', start: 17.32, end: 17.4, group: 0 },
+  ];
+  F.measure(items, MEAS, G);
+  const out = F.layoutLane({ id: 'b', items }, { v0: 10, span: 8 }, geom(800));
+  assert.equal(items[0].row, items[1].row, 'both bars share a world row');
+  const bar = out.visible.find((x) => x.id === 'b');
+  assert.ok(bar, 'the short bar is in the layout');
+  const lw = F.lwOf(bar);
+  assert.ok(bar._lx >= 0 && bar._lx + lw <= 800, `its name [${bar._lx}, ${bar._lx + lw}] is inside the track`);
+  for (const o of out.visible) if (o !== bar && o._drow === bar._drow) assert.ok(o._hit[1] <= bar._hit[0] || bar._hit[1] <= o._hit[0], `«${o.name}» and the bar overlap`);
+});
+
 test('T6 while dragging no mark changes row and no lane shrinks; after release the rows pack again', () => {
   const lane = syntheticLane(19);
   const span = 8, w = 800;

@@ -127,8 +127,9 @@ function hookView(p) {
     const missing = [];
     for (const it of all) {
       if (it.visible) continue;
-      // A moment whose dot is in view, or a bar with at least 24 px in view, is a mark in view: it must be drawn.
-      const inView = it.shape === 'moment' ? it.anchor >= v0 + 6 / ppy && it.anchor <= v1 - 6 / ppy : (Math.min(it.t1, v1) - Math.max(it.t0, v0)) * ppy >= 24;
+      // A moment whose dot is in view, a bar wholly inside the view however short, or a bar with at least 24 px in view is
+      // a mark in view: it must be drawn.
+      const inView = it.shape === 'moment' ? it.anchor >= v0 + 6 / ppy && it.anchor <= v1 - 6 / ppy : (it.t0 >= v0 && it.t1 <= v1) || (Math.min(it.t1, v1) - Math.max(it.t0, v0)) * ppy >= 24;
       if (inView) missing.push(`${it.lane}: ${it.name}`);
     }
     return { visible: all.filter((x) => x.visible), missing, lanes, vac: document.querySelector('#linea-vacios').textContent };
