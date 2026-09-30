@@ -623,7 +623,7 @@
     if (below >= Math.min(needed, 220) || below >= above) { pos = `top:${(e.top + chipH + 6).toFixed(1)}px`; maxH = below - 2; }
     else { maxH = above - 2; pos = `bottom:${(H - e.top + 6).toFixed(1)}px`; }
     const leftPx = clamp(e.g.left, 8, W - width - 8);
-    const sig = e.key + '|' + S.sel + '|' + width;
+    const sig = e.key + '|' + S.sel + '|' + width + '|' + e.g.title + '|' + ms.map((m) => m.id).join(',');   // la clave de un grupo sigue igual aunque cambien sus marcas
     // Elegir un nombre de la lista la vuelve a pintar: se guarda dónde estaba su desplazamiento para no saltar arriba.
     const old = nodes.get('abierto');
     const oldList = old && old._shown === e.key ? old.querySelector('.abierto__lista') : null;
@@ -855,6 +855,8 @@
       clampView();
     }
     render();
+    // La nota de la ficha habla del último clic y la ficha dice dónde está el cursor: al moverlo, las dos se ponen al día.
+    if (S.sel) { S.note = null; renderCard(); }
   }
 
   // ---------------------------------------------------------------------------
@@ -961,6 +963,8 @@
     drag = { id: ev.pointerId, x: ev.clientX, y: ev.clientY, v0: S.v0, moved: false };
   });
   franja.addEventListener('pointermove', (ev) => {
+    // Un ratón soltado fuera de la franja no manda pointerup aquí: sin botón pulsado, el gesto ya terminó.
+    if (ev.pointerType === 'mouse' && !ev.buttons && pointers.has(ev.pointerId)) endPointer(ev);
     if (!pointers.has(ev.pointerId)) {
       const el = ev.target.closest('.marca, .miembro');
       const id = el ? (el.dataset.id || el.dataset.k.slice(2)) : null;
@@ -1055,6 +1059,7 @@
     S.t = clamp(t, T_MIN, T_MAX);
     if (px(S.t) < 0 || px(S.t) > W) S.v0 = S.t - 0.4 * S.span;
     clampView();
+    S.note = null;
     render();
     renderCard();
   });
