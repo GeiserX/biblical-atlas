@@ -19,6 +19,7 @@ sources:
 - it-aristarco
 - hch-27
 - si-3
+- colosenses-4
 links:
 - title: 'Perspicacia: «Aristarco»'
   url: https://wol.jw.org/es/wol/d/r4/lp-s/1200000365
@@ -27,6 +28,11 @@ links:
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/44/27
   type: bible
 perspicacia: '1200000365'
+history:
+- date: '2026-09-29'
+  change: La relación con Pablo de 58-61 pasa a decir colaborador en los dos sentidos, como lo llama Col 4:11; el resto de
+    la lista no cambia.
+  source: colosenses-4
 checked_on: '2026-09-29'
 status: verified
 relations:
@@ -61,6 +67,7 @@ relations:
   status: verified
 - type: accompanies
   person: pablo
+  word: fellow_worker
   date:
     from: 58
     to: 61
@@ -75,7 +82,7 @@ relations:
   - hch-27
   - colosenses-4
   - si-3
-  reason: Embarca con él en Cesarea y en Roma es su compañero de prisión (Hch 27:2; Col 4:10). Salida hacia 58 y encierro en
-    Roma hasta cerca de 61 (estudio 3, párr. 27).
+  reason: Embarca con él en Cesarea; en Roma es su compañero de prisión y uno de sus colaboradores judíos (Hch 27:2; Col 4:10,
+    11). Salida hacia 58 y encierro en Roma hasta cerca de 61 (estudio 3, párr. 27).
   checked_on: '2026-09-29'
   status: verified

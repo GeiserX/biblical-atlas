@@ -344,6 +344,10 @@
   to: ciaxares/tie/nabopolasar/ally
   removed_on: '2026-09-29'
   reason: 'Perspicacia «Medos, Media», párr. 12: se alió con Nabopolasar contra Asiria. Es una alianza, no una compañía.'
+- from: pablo/accompanies/pedro
+  to: pablo/tie/pedro/host
+  removed_on: '2026-09-29'
+  reason: 'Gál 1:18: Pablo se quedó 15 días con Cefas. Pedro fue su anfitrión, no un compañero.'
 - from: joab-hijo-de-zeruya/accompanies/david
   to: joab-hijo-de-zeruya/tie/david/master
   removed_on: '2026-09-30'

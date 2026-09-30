@@ -77,6 +77,8 @@ sources:
 - hch-15
 - 1-corintios-9
 - 1-corintios-15
+- galatas-1
+- galatas-2
 distinct_from:
 - simon-el-mago
 - simon-el-curtidor
@@ -115,6 +117,7 @@ relations:
   - hechos-8
   - lucas-22
   - juan-18
+  - galatas-2
   - it-juan
   - lucas-5
   - juan-20
