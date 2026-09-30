@@ -27,6 +27,8 @@ jobs:
       - run: python3 scripts/migration/test_migrate.py
       - run: python3 scripts/videos/test_videos.py
       - run: python3 scripts/bible_coverage.py
+      # La portada: sus reglas y sus destinos escritos a mano contra los datos recién compilados. Sin navegador.
+      - run: BE_DATA_FILE=site/data.json node --test tests/site/portada-reglas.test.mjs tests/site/portada-destinos.test.mjs
       - name: Enlaces (solo en main y en la revisión semanal)
         if: github.event_name != 'pull_request'
         run: python3 scripts/validate.py --links

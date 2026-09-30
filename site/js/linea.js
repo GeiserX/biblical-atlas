@@ -1700,8 +1700,9 @@ function montarBarra() {
     const a = e.target.closest?.('a[data-calendario]');
     const b = e.target.closest?.('a[href^="acerca.html"]');
     if (!a && !b) return;
-    // La vista se lee ahora, no de location.hash, que se escribe con un cuarto de segundo de retraso.
-    const vista = BE.textoHash();
+    // La vista se lee ahora, no de location.hash, que se escribe con un cuarto de segundo de retraso. Sin la portada:
+    // su botón dice «Volver al mapa» y lleva al mapa de detrás; Atrás sigue volviendo a la portada.
+    const vista = BE.textoHash().split('&').filter((x) => x !== 'portada=1').join('&');
     if (a) a.href = `calendario.html${location.search}#desde=${encodeURIComponent(vista)}`;
     if (b) {
       b.dataset.ancla ??= b.getAttribute('href').split('#')[1] || '';
@@ -1745,7 +1746,7 @@ function montarBarra() {
     if (e.target.matches?.('#linea-menu select[data-linea="persona"]') && e.target.value) { fijar(e.target.value); }
   });
   document.addEventListener('keydown', (e) => {
-    if (e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
+    if (BE.portada?.abierta || e.target.matches?.('input, textarea, select') || e.metaKey || e.ctrlKey) return;
     if (e.key === 't' || e.key === 'T') { e.preventDefault(); ponerGrande(!L.grande); }
     if (e.key === 'Escape') { cerrarMenu(); if (L.modoRegla) { L.modoRegla = false; $('#pista').classList.remove('modo-regla'); } }
   });

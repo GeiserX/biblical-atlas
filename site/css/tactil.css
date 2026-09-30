@@ -43,10 +43,10 @@
      dibujo no cambia; el dedo acierta aunque caiga junto al texto. (La base: ::before en .be-wol, que ya usa ::after
      para su flecha.) */
   :is(.be-ref, .enlace-titulo, .enlace-texto, .be-btn--sm, .be-chip, .miga, .interruptor-grafo, .be-tab, .carril-ayuda,
-      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .pregunta-guia, .candidato,
+      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .candidato,
       .grafo-leyenda > summary, .be-wol, .lectura-libro select, .casilla, .menu-fila, .be-result, .meses-que):not(.maplibregl-marker) { position: relative; }
   :is(.be-ref, .enlace-titulo, .enlace-texto, .be-btn--sm, .be-chip, .miga, .interruptor-grafo, .be-tab, .carril-ayuda,
-      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .pregunta-guia, .candidato,
+      .menu-x, .progreso-tramo, .insignia summary, .cap, .opcion, .cadena-nodo, .fila-boton, .candidato,
       .grafo-leyenda > summary, .menu-fila, .be-result, .meses-que, .sinc-rombo)::after,
   /* Estos ya van posicionados (marcadores del mapa, la cortina, las barras de la sincronía): solo el ::after. */
   :is(.pildora-carta, .proxima, .cortina-tag, .cortina-asa, .sinc-barra)::after,
@@ -55,6 +55,8 @@
     left: min(0px, calc(50% - 22px)); right: min(0px, calc(50% - 22px));
     top: min(0px, calc(50% - 22px)); bottom: min(0px, calc(50% - 22px));
   }
+  /* Portada: los enlaces del pie, dentro de una frase, reciben el toque en 44 px de alto. */
+  .portada-pie a { display: inline-block; padding: 13px 0; }
   /* Lo que recorta su propio contenido (texto cortado con «…») no puede sacar su zona fuera: crece de verdad. */
   .tira-suceso, .leyenda-boton { height: 44px; }
   .mientras-titulo { min-height: 44px; display: flex; align-items: center; }

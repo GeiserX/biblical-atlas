@@ -119,13 +119,13 @@ test('touching the date opens a named dialog, and there is no text input in the 
   const d = await page.evaluate(() => {
     const dlg = document.querySelector('#date-picker[open]');
     const name = dlg && document.getElementById(dlg.getAttribute('aria-labelledby'))?.textContent.trim();
-    const text = [...document.querySelectorAll('input')].filter((i) => ['text', 'search', ''].includes(i.getAttribute('type') || '') && !i.closest('#buscador')).length;
+    const text = [...document.querySelectorAll('input')].filter((i) => ['text', 'search', ''].includes(i.getAttribute('type') || '') && !i.closest('#buscador, #vista-portada')).length;
     const parts = [...dlg.querySelectorAll('.date-picker__heading')].map((h) => h.textContent.trim());
     return { tag: dlg.tagName, name, text, parts, expanded: document.querySelector('#fecha').getAttribute('aria-expanded'), haspopup: document.querySelector('#fecha').getAttribute('aria-haspopup') };
   });
   assert.equal(d.tag, 'DIALOG');
   assert.ok(d.name, 'the dialog has a name');
-  assert.equal(d.text, 0, 'no text input outside the search box');
+  assert.equal(d.text, 0, 'no text input outside the two search boxes (the top bar and the landing)');
   assert.equal(await page.locator('#fecha input').count(), 0, 'no input inside the date');
   assert.deepEqual(d.parts, ['Esta fecha', 'Ir a un momento', 'Elegir una fecha']);
   assert.equal(d.expanded, 'true');
@@ -258,7 +258,7 @@ test('on a phone: a sheet from the bottom, 44 px targets, a milestone moves the 
   const sheet = await page.evaluate(() => {
     const r = document.querySelector('#date-picker').getBoundingClientRect();
     const small = [...document.querySelectorAll('#date-picker button, #date-picker a')].filter((b) => { const q = b.getBoundingClientRect(); return q.width && (q.width < 44 || q.height < 44); }).map((b) => b.textContent.trim());
-    return { left: r.left, right: r.right, bottom: r.bottom, top: r.top, small, text: document.querySelectorAll('input:not(#q)').length };
+    return { left: r.left, right: r.right, bottom: r.bottom, top: r.top, small, text: document.querySelectorAll('input:not(#q):not(#portada-q)').length };
   });
   assert.equal(sheet.text, 0, 'no input besides the search box');
   assert.ok(sheet.left <= 0.5 && sheet.right >= PHONE.width - 0.5 && Math.abs(sheet.bottom - PHONE.height) < 1, `the sheet spans the bottom: ${JSON.stringify(sheet)}`);

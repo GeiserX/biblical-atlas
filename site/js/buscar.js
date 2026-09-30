@@ -85,6 +85,14 @@ function leerAnio(s) {
   return n;
 }
 const enRango = (y) => y >= BE.T_MIN - 1 && y <= BE.T_MAX;
+/** El año de una pregunta. Sin «a.e.c.» ni «e.c.», un número que no cabe después de Cristo y sí antes es de antes:
+    «607» es 607 a.e.c., solo y en «Jerusalén en 607» o «Jerusalén 607». La portada lo usa también antes de los datos. */
+function anioPregunta(s) {
+  const y = leerAnio(s);
+  if (y == null) return null;
+  const conEra = /\d\s*[a-z]/.test(norm(s).trim());
+  return !conEra && !enRango(y) && enRango(1 - y) ? 1 - y : y;
+}
 /** Una entidad por su nombre, exacto o por el principio hasta el final de una palabra: persona, lugar, periodo o suceso. */
 function entidad(texto, tipos = ['persona', 'lugar', 'periodo', 'evento', 'libro']) {
   const rs = resultadosTipos(texto, puntuadorEstricto).filter((r) => tipos.includes(r.sel.tipo) && r.puntos >= 90);
@@ -154,7 +162,7 @@ function preguntasMes(nq) {
   const q = nq.replace(/\b(?:segundo\s+adar|adar\s+segundo|adar\s+ii)\b/, 'veadar');
   const r = q.replace(/^(?:el\s+)?(?:mes\s+)?(?:de\s+)?/, '').match(/^(?:(\d{1,2})\s+(?:de\s+)?)?([a-z]+)(?:\s+(?:de\s+|del\s+(?:ano\s+)?|en\s+)?(.+))?$/);
   if (!r) return [];
-  const dia = r[1] ? +r[1] : null, anio = r[3] != null ? leerAnio(r[3]) : null;
+  const dia = r[1] ? +r[1] : null, anio = r[3] != null ? anioPregunta(r[3]) : null;
   if (r[3] != null && anio == null) return [];
   if (dia != null && (dia < 1 || dia > 30)) return [];
   const { meses, exacto } = mesesPorNombre(r[2]);
@@ -194,8 +202,8 @@ function preguntas(q) {
   const nq = norm(q).trim().replace(/[¿?]/g, '').replace(/\s+/g, ' ');
   out.push(...preguntasMes(nq));
   if (out.length && out.some((r) => r.puntos >= 900)) return out;
-  // Un año suelto
-  const y = leerAnio(q);
+  // Un año suelto: «607» es 607 a.e.c. (anioPregunta).
+  const y = anioPregunta(q);
   if (y != null) {
     out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y)}`, meta: enRango(y) ? 'mueve el cursor de tiempo y enseña quién había' : 'fuera del tramo que cubre la línea de tiempo', puntos: 900, accion: () => saltarA(y + 0.5) });
     return out;
@@ -222,10 +230,20 @@ function preguntas(q) {
   // «Babilonia en 30», «quién había en Judá en 520 a.e.c.», «dónde estaba Pablo en 51»
   m = nq.match(/^(?:que pasaba en |quien habia en |quienes habia en |quien estaba en |donde estaba )?(.+?) en (?:el (?:ano )?)?(.+)$/);
   if (m) {
-    const a = entidad(m[1]), y2 = leerAnio(m[2]);
+    const a = entidad(m[1]), y2 = anioPregunta(m[2]);
     if (a && y2 != null) out.push({ grupo: 'Preguntas', titulo: `${a.titulo} en ${fmtAnio(y2)}`, meta: `abre la ficha con el cursor en ${fmtAnio(y2)}`, puntos: 950, sel: a.sel, accion: () => saltarA(y2 + 0.5, a.sel) });
     // Sin ese nombre en los datos no se adivina otro parecido: se ofrece la fecha, que ya enseña quién había.
     else if (y2 != null && enRango(y2)) out.push({ grupo: 'Fechas', titulo: `Ir a ${fmtAnio(y2)}`, meta: 'ese nombre no está en los datos como lugar ni persona; la fecha enseña quién había', puntos: 900, accion: () => saltarA(y2 + 0.5) });
+  }
+  // «Jerusalén 33», «Babilonia 539 a.e.c.», «Pablo 51»: lo mismo sin «en», solo con un lugar o una persona. Si lo
+  // primero es un libro, es un capítulo («Juan 3», «1 Corintios 13») y lo contesta el tipo pasaje.
+  if (!out.some((r) => r.grupo === 'Preguntas')) {
+    m = nq.match(/^(.+?)\s+((?:c\.?\s*)?\d{1,4}(?:\s*[a-z][a-z.\s]*)?)$/);
+    const y3 = m ? anioPregunta(m[2]) : null;
+    if (y3 != null && !BE.libro(m[1])) {
+      const a = entidad(m[1], ['lugar', 'persona']);
+      if (a) out.push({ grupo: 'Preguntas', titulo: `${a.titulo} en ${fmtAnio(y3)}`, meta: `abre la ficha con el cursor en ${fmtAnio(y3)}`, puntos: 950, sel: a.sel, accion: () => saltarA(y3 + 0.5, a.sel) });
+    }
   }
   return out;
 }
@@ -252,20 +270,34 @@ function objetoSel(sel) {
 }
 function fechaSel(sel) {
   const o = objetoSel(sel);
-  const f = o?.fecha || o?.fecha_objeto;
+  const f = sel.tipo === 'libro' ? BE.fechaLibro?.(o) : o?.fecha || o?.fecha_objeto;
   if (f && (f.desde != null || f.hasta != null)) return fechaCorta(f);
   if (sel.tipo === 'recorrido' && o?.paradas?.length) { const ts = o.paradas.map((p) => Math.floor(p.t)); return fechaCorta({ desde: Math.min(...ts), hasta: Math.max(...ts) }); }
   return '';
 }
 
+/** Un resultado se llama exactamente como lo escrito: su título, o su título hasta la primera coma («Juan, el apóstol»). */
+const esExacta = (r, nq) => !!r.sel && (norm(r.titulo) === nq || norm(r.titulo.split(',')[0]).trim() === nq);
+/** Cuántos hechos implica una selección, para desempatar entre los que se llaman igual. Se calcula solo al desempatar. */
+function pesador() {
+  const hechos = new Map();
+  return (r) => {
+    if (!r.sel) return 0;
+    const k = BE.selTexto(r.sel);
+    if (!hechos.has(k)) hechos.set(k, BE.existe(r.sel.tipo, r.sel.id) ? BE.implicados(r.sel).claves.size : 0);
+    return hechos.get(k);
+  };
+}
 function buscar(q) {
   const out = [...preguntas(q), ...resultadosTipos(q)];
   for (const r of out) if (r.sel && r.fechaTexto == null) r.fechaTexto = fechaSel(r.sel);
   const orden = (r) => (r.alFinal ? ORDEN_GRUPOS.length + 1 : ordenGrupo(r.grupo));
   // Lo que se llama exactamente como lo escrito va primero: «Jerusalén» es la ciudad, no «Ananías de Jerusalén»,
   // aunque las personas vayan antes que los lugares; con el grafo abierto, Intro lo pone en el centro (be-u66.1).
-  const nq = norm(q).trim(), exacta = (r) => (r.sel && norm(r.titulo) === nq ? 0 : 1);
-  out.sort((a, b) => exacta(a) - exacta(b) || orden(a) - orden(b) || b.puntos - a.puntos || a.titulo.localeCompare(b.titulo, 'es'));
+  // Entre los que se llaman así, primero el que más hechos tiene: «Juan» es el apóstol, no el gobernante de Hch 4:6.
+  const nq = norm(q).trim(), exacta = (r) => (esExacta(r, nq) ? 0 : 1), peso = pesador();
+  out.sort((a, b) => exacta(a) - exacta(b) || orden(a) - orden(b) || b.puntos - a.puntos
+    || (exacta(a) ? 0 : peso(b) - peso(a)) || a.titulo.localeCompare(b.titulo, 'es'));
   const cuenta = {};   // máximo 6 por grupo
   return out.filter((r) => (cuenta[r.grupo] = (cuenta[r.grupo] || 0) + 1) <= 6);
 }
@@ -294,6 +326,38 @@ function sugerencias(q) {
 // ---------------------------------------------------------------------------
 // Lista de resultados
 // ---------------------------------------------------------------------------
+/** La forma de cada tipo en las listas de resultados (el símbolo #f-<forma> de index.html): la forma y la palabra
+    dicen el tipo; el color solo acompaña. */
+const FORMA_TIPO = { persona: 'persona', lugar: 'lugar', evento: 'suceso', periodo: 'periodo', pasaje: 'texto', libro: 'texto', carta: 'texto',
+  viaje: 'ruta', recorrido: 'ruta', parada: 'ruta', hallazgo: 'hallazgo' };
+const TIPO_GRUPO = { Fechas: 'fecha', 'Meses hebreos': 'mes hebreo', Preguntas: 'pregunta' };
+/** Un trozo de línea que no es más que una fecha: «36 e.c.», «c. 49-50 e.c.», «entre 1514 y 1513 a.e.c.». */
+function esFecha(x) {
+  const t = String(x || '').trim();
+  return /\d/.test(t) && /e\.c\.$/.test(t) && /^(?:(?:c\.|entre|hacia|y|[-–]|\d+(?:[-–]\d+)?|a\.e\.c\.|e\.c\.)\s*)+$/.test(t);
+}
+/** Lo que enseña una fila de resultados, para la lista de arriba y la de la portada: la forma, la palabra del tipo, el
+    título, la etiqueta, el resto de la línea y la fecha. La fecha va una sola vez, en su píldora: se quita de la línea
+    lo que es la fecha del resultado, dicha como sea, y si la línea la decía tal cual la dan los datos («36 e.c.»,
+    «entre 1514 y 1513 a.e.c.»), esa es la de la píldora, más exacta que la corta. */
+function filaResultado(r) {
+  const deTipo = !!(r.sel && !r.accion);
+  let forma;
+  if (r.accion && !r.sel) forma = r.grupo === 'Preguntas' ? 'conexion' : 'anio';
+  else if (r.accion && r.grupo === 'Preguntas' && /^¿Cómo se relaciona/.test(r.titulo)) forma = 'conexion';
+  else forma = FORMA_TIPO[r.sel?.tipo] || 'texto';
+  const tipo = deTipo ? (TIPO_TEXTO[r.sel.tipo] || '') : (TIPO_GRUPO[r.grupo] || '');
+  let fecha = r.fechaTexto || '', meta = r.meta || '';
+  if (fecha) {
+    const o = objetoSel(r.sel), f = o?.fecha || o?.fecha_objeto;
+    const suya = [f?.texto, fecha].filter(Boolean).map((x) => norm(x));
+    const trozos = meta.split(' · ');
+    const propia = trozos.find((x) => esFecha(x) && suya.includes(norm(x.trim())));
+    meta = trozos.filter((x) => !esFecha(x) && !suya.includes(norm(x.trim()))).join(' · ');
+    if (propia) fecha = propia.trim();
+  }
+  return { forma, tipo, deTipo, titulo: r.titulo, etiqueta: r.etiqueta || '', meta, fecha };
+}
 let resultados = [], activo = 0, previa = false;
 function pintarResultados() {
   const caja = $('#resultados'), q = $('#q');
@@ -309,10 +373,11 @@ function pintarResultados() {
       grupo = r.grupo;
       const tipoNodo = r.sel ? (BE.tipo(r.sel.tipo)?.nodo || 'evento') : 'evento';
       const inicial = r.accion && !r.sel ? (r.grupo === 'Fechas' || r.grupo === 'Meses hebreos' ? '◷' : '?') : r.titulo[0];
+      const f = filaResultado(r);
       return `${cab}<div class="be-result${i === activo ? ' be-result--active' : ''}" role="option" id="res-${i}" aria-selected="${i === activo}" data-i="${i}">
         <span class="be-node be-node--${tipoNodo} be-node--sm" aria-hidden="true">${esc(inicial)}</span>
-        <span class="res-texto"><span class="be-result__title">${marcar(r.titulo)}${r.etiqueta ? ` <span class="res-etiqueta">${esc(r.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${r.sel && TIPO_TEXTO[r.sel.tipo] && !r.accion ? `${TIPO_TEXTO[r.sel.tipo]}${r.meta ? ' · ' : ''}` : ''}${esc(r.meta || '')}</span></span>
-        ${r.fechaTexto && !norm(r.meta || '').includes(norm(r.fechaTexto)) ? `<span class="res-fecha">${esc(r.fechaTexto)}</span>` : ''}</div>`;
+        <span class="res-texto"><span class="be-result__title">${marcar(f.titulo, q.value)}${f.etiqueta ? ` <span class="res-etiqueta">${esc(f.etiqueta)}</span>` : ''}</span><span class="be-row__meta">${f.deTipo && f.tipo ? `${f.tipo}${f.meta ? ' · ' : ''}` : ''}${esc(f.meta)}</span></span>
+        ${f.fecha ? `<span class="res-fecha">${esc(f.fecha)}</span>` : ''}</div>`;
     }).join('');
   }
   caja.hidden = false;
@@ -321,8 +386,9 @@ function pintarResultados() {
   $('#caja-busqueda').classList.add('be-search--focus');
   vistaPrevia();
 }
-function marcar(titulo) {
-  const nq = norm($('#q').value).trim();
+/** El título con lo escrito subrayado (<mark>), para las dos listas. */
+function marcar(titulo, q) {
+  const nq = norm(q).trim();
   const n = norm(titulo);
   const i = nq ? n.indexOf(nq) : -1;
   if (i < 0) return esc(titulo);
@@ -348,6 +414,11 @@ function elegir(i) {
   if (!r) return;
   $('#q').value = r.titulo;
   cerrarResultados();
+  elegirResultado(r);
+  $('#q').blur();
+}
+/** Lo que hace un resultado elegido, en cualquiera de las dos cajas. */
+function elegirResultado(r) {
   if (r.accion) r.accion();
   else {
     // Con «¿Cómo se relaciona?» abierto, lo buscado entra en la pregunta; con el grafo abierto, pasa al centro al
@@ -355,7 +426,6 @@ function elegir(i) {
     BE.conexion?.rellenar?.(BE.selTexto(r.sel));
     seleccionar(r.sel);
   }
-  $('#q').blur();
 }
 function iniciarBusqueda() {
   const q = $('#q');
@@ -388,23 +458,36 @@ function buscarTexto(texto) {
 // Atrás y adelante de verdad (B-15). base.js escribe la dirección con replaceState; justo antes de que lo haga,
 // guardamos una copia de la entrada actual con pushState. Así la escritura siguiente sustituye la copia y la
 // entrada anterior queda en el historial con la vista de antes.
+// Nada depende del reloj: lo que tarde en pintarse la vista (el mapa cargando, un teléfono lento) no crea entradas.
 // ---------------------------------------------------------------------------
 const historia = (() => {
-  let clave = null, navegando = 0, marcado = false;
+  // clave: la vista que ya tiene su entrada. quieto: tras entrar desde la portada o tras Atrás y Adelante, cada cambio
+  // de vista que sigue es parte del mismo paso (un recorrido pone su parada un fotograma después), hasta que la persona
+  // vuelve a pulsar o a teclear después de verlo pintado. absorber: marcar() ya guardó la entrada; el siguiente
+  // fotograma solo apunta la clave nueva.
+  let clave = null, quieto = false, pintado = false, absorber = false;
   const claveActual = () => [BE.selTexto(E.sel), ...BE.parametros.filter((x) => x.historia).map((x) => x.escribir() ?? '')].join('|');
   function empujar() { history.pushState(null, '', location.href); }
+  function quedarse() { quieto = true; pintado = false; absorber = false; }
   BE.pintores.push(() => {
     const k = claveActual();
     if (clave === null) { clave = k; return; }   // arranque: la primera vista no crea entrada
+    if (quieto || absorber) { clave = k; pintado = true; absorber = false; return; }
     if (k === clave) return;
     clave = k;
-    if (navegando > performance.now() || marcado) { marcado = false; return; }
     empujar();
   });
-  window.addEventListener('popstate', () => { navegando = performance.now() + 600; BE.aplicarHash(false); });
+  const despertar = () => { if (quieto && pintado) quieto = false; };
+  window.addEventListener('pointerdown', despertar, true);
+  window.addEventListener('keydown', despertar, true);
+  // Antes de los datos no hay vista que poner: el arranque lee la dirección cuando llegan.
+  window.addEventListener('popstate', () => { quedarse(); if (BE.D) BE.aplicarHash(false); });
   return {
     /** Un salto de fecha que merece su entrada (un año buscado, una parada): se guarda la vista de antes. */
-    marcar() { if (clave !== null && !(navegando > performance.now())) { empujar(); marcado = true; setTimeout(() => { marcado = false; }, 100); } },
+    marcar() { if (clave !== null && !quieto) { empujar(); absorber = true; BE.programar(); } },
+    /** Entrar desde la portada: una sola entrada nueva, sea cual sea el destino y tarde lo que tarde. Se guarda la de
+        la portada; fn pone el destino, y lo que cambie después sin que la persona toque nada es parte de él. */
+    entrar(fn) { empujar(); quedarse(); fn(); BE.programar(); },
   };
 })();
 
@@ -464,5 +547,6 @@ function anunciar() {
 }
 BE.pintores.push((c) => { if (c.cursor || c.panel) anunciar(); });
 
-Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, objetoSel, fechaSel, historia, textoCita });
+Object.assign(BE, { buscar, cerrarResultados, iniciarBusqueda, buscarTexto, leerAnio, anioPregunta, objetoSel, fechaSel, historia, textoCita,
+  filaResultado, marcar, elegirResultado, sugerencias, esExacta, pesador });
 })();
