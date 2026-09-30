@@ -33,5 +33,10 @@ links:
 - title: 2 Samuel 8 (TNM)
   url: https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/10/8
   type: bible
+history:
+- date: '2026-09-29'
+  change: 'La razón y las fuentes añaden 2Sa 8:9, 10: Toi, rey de Hamat, envía a su hijo a felicitar a David por vencer a
+    Hadadézer.'
+  source: 2-samuel-8
 checked_on: '2026-09-29'
 status: verified
